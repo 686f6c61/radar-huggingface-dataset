@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "gyung/gdn2-cpt-vanilla-fineweb",
+  "slug": "gyung-gdn2-cpt-vanilla-fineweb",
+  "author": "gyung",
+  "url": "https://huggingface.co/gyung/gdn2-cpt-vanilla-fineweb",
+  "created_at": "2026-08-26T21:53:45.000Z",
+  "updated_at": "2026-08-26T21:56:03.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1522555562,
+  "storage_human": "1.5 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "gyung/gdn2-cpt-remoe-tk2-fineweb · Hugging Face",
+      "url": "https://huggingface.co/gyung/gdn2-cpt-remoe-tk2-fineweb",
+      "snippet": "GDN-2 CPT comparison checkpoints Continued-pretraining arms on identical data/steps: SSKetch+ReMoE (target_k=2/4), SSC fixed top-4 (paper baseline), vanilla GDN-2. 400 steps x effective batch 64 x 4096 tokens per arm."
+    },
+    {
+      "title": "GitHub - gyunggyung/GatedLinearAttention2 · GitHub",
+      "url": "https://github.com/gyunggyung/GatedLinearAttention2",
+      "snippet": "RoPE와 128K/1M 이 후보는 pure GDN-2 recurrent model이라 RoPE로 context를 늘리는 방식이 아닙니다. gdn2_kla_1.3B 에서는 nope=True 로 RoPE cache도 만들지 않습니다. 128K나 1M으로 늘리는 핵심은 RoPE scaling이 아니라 다음 제약입니다."
+    },
+    {
+      "title": "GitHub - NVlabs/GatedDeltaNet-2: Official PyTorch Implementation of ...",
+      "url": "https://github.com/NVlabs/GatedDeltaNet-2/",
+      "snippet": "We train all models at 1.3B parameters on 100B tokens of FineWeb-Edu, matched in recurrent state size, and compare against Mamba-2, Gated DeltaNet, KDA, and Mamba-3 (SISO and MIMO)."
+    },
+    {
+      "title": "Open models by OpenAI",
+      "url": "https://openai.com/open-models/",
+      "snippet": "Advanced open-weight reasoning models to customize for any use case and run anywhere."
+    },
+    {
+      "title": "GatedDeltaNet2 (GDN-2) and WallAttention | fla-org/flash-linear ...",
+      "url": "https://deepwiki.com/fla-org/flash-linear-attention/2.12-gateddeltanet2-(gdn-2)-and-wallattention",
+      "snippet": "This page documents two recent additions to the `flash-linear-attention` library: GatedDeltaNet2 (GDN-2), which introduces decoupled erase and write gates for the delta rule, and WallAttention, which"
+    }
+  ]
+}

@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "FastFlowLM/Qwen3.5-9B-gguf",
+  "slug": "fastflowlm-qwen3-5-9b-gguf",
+  "author": "FastFlowLM",
+  "url": "https://huggingface.co/FastFlowLM/Qwen3.5-9B-gguf",
+  "created_at": "2026-08-18T21:58:06.000Z",
+  "updated_at": "2026-08-26T20:40:55.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "gguf",
+  "languages": [],
+  "tags": [
+    "gguf",
+    "quantized",
+    "fastflowlm",
+    "image-text-to-text",
+    "base_model:Qwen/Qwen3.5-9B",
+    "base_model:quantized:Qwen/Qwen3.5-9B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "imatrix",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 8960094720,
+  "parameters_human": "8.96B",
+  "storage_bytes": 15428779328,
+  "storage_human": "15.4 GB",
+  "base_model": "Qwen/Qwen3.5-9B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Qwen 3.5 · FastFlowLM",
+      "url": "https://fastflowlm.com/docs/benchmarks/qwen3.5_results/",
+      "snippet": "⚡ Performance and Efficiency Benchmarks This section reports the performance of Qwen 3.5 on NPU with FastFlowLM (FLM). Note: Results are based on FastFlowLM v0.9.38. Under FLM&#x27;s default NPU power mode (Performance) Newer versions may deliver improved performance. Fine-tuned models show performance comparable to their base models."
+    },
+    {
+      "title": "Models · FastFlowLM",
+      "url": "https://fastflowlm.com/models/",
+      "snippet": "FastFlowLM curates the most requested families and publishes tuned manifests under flm pull <model>. We validate every build on Ryzen™ AI laptops and provide matching cards—see them here. The catalog already covers models spanning Qwen3.6 (MoE), Qwen3.5 (Vision), Gemma4 (omni), Qwen3, GPT-OSS-20B (MoE), DeepSeek-R1, Whisper (Audio), MedGemma (Medical), and other leading open families."
+    },
+    {
+      "title": "Releases · ROCm/FastFlowLM - GitHub",
+      "url": "https://github.com/ROCm/FastFlowLM/releases",
+      "snippet": "Run LLMs on AMD Ryzen™ AI NPUs in minutes. Just like Ollama - but purpose-built and deeply optimized for the AMD NPUs. - ROCm/FastFlowLM"
+    },
+    {
+      "title": "GitHub - ROCm/FastFlowLM: Run LLMs on AMD Ryzen™ AI NPUs in minutes ...",
+      "url": "https://github.com/ROCm/FastFlowLM",
+      "snippet": "Run LLMs on AMD Ryzen™ AI NPUs in minutes. Just like Ollama - but purpose-built and deeply optimized for the AMD NPUs. - ROCm/FastFlowLM"
+    },
+    {
+      "title": "FastFlowLM/Qwen3.5-9B-NPU2 · Hugging Face",
+      "url": "https://huggingface.co/FastFlowLM/Qwen3.5-9B-NPU2",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    }
+  ]
+}

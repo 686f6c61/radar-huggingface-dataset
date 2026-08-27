@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "vitorveloso/q-Taxi-v3",
+  "slug": "vitorveloso-q-taxi-v3",
+  "author": "vitorveloso",
+  "url": "https://huggingface.co/vitorveloso/q-Taxi-v3",
+  "created_at": "2026-08-26T19:53:29.000Z",
+  "updated_at": "2026-08-26T19:54:13.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "reinforcement-learning",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "Taxi-v3",
+    "reinforcement-learning",
+    "q-learning",
+    "custom-implementation",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "JorisCos/q-Taxi-v3 · Hugging Face",
+      "url": "https://huggingface.co/JorisCos/q-Taxi-v3",
+      "snippet": "Q-Learning Agent playing1 Taxi-v3 This is a trained model of a Q-Learning agent playing Taxi-v3 ."
+    },
+    {
+      "title": "dataLearning/q-Taxi-V3 · Hugging Face",
+      "url": "https://huggingface.co/dataLearning/q-Taxi-V3",
+      "snippet": "Q-Learning Agent playing1 Taxi-v3 This is a trained model of a Q-Learning agent playing Taxi-v3 ."
+    },
+    {
+      "title": "Mastering Q-Learning with the Fast-Taxi-v3 Model - fxis.ai",
+      "url": "https://fxis.ai/edu/mastering-q-learning-with-the-fast-taxi-v3-model/",
+      "snippet": "For more insights, updates, or to collaborate on AI development projects, stay connected with fxis.ai. Wrapping Up In this post, we&#x27;ve explored how to implement and use a Q-learning agent in the Taxi-v3 environment. It&#x27;s a powerful method that showcases the capabilities of reinforcement learning in navigating complex tasks."
+    },
+    {
+      "title": "Google Colab",
+      "url": "https://colab.research.google.com/drive/1peYBWia1IQzzgrbDIXwYYVUf7qiPHair?usp=sharing",
+      "snippet": "Google Colab ... Google Colab"
+    },
+    {
+      "title": "q-Taxi-v3 huggingface.co api & bguisard q-Taxi-v3 github AI Model - Toolify",
+      "url": "https://www.toolify.ai/ai-model/bguisard-q-taxi-v3",
+      "snippet": "q-Taxi-v3 huggingface.co is an AI model on huggingface.co that provides q-Taxi-v3&#x27;s model effect (), which can be used instantly with this bguisard q-Taxi-v3 model. huggingface.co supports a free trial of the q-Taxi-v3 model, and also provides paid use of the q-Taxi-v3. Support call q-Taxi-v3 model through api, including Node.js, Python, http."
+    }
+  ]
+}

@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "lookarooka/aloha-bimanual-act-policy",
+  "slug": "lookarooka-aloha-bimanual-act-policy",
+  "author": "lookarooka",
+  "url": "https://huggingface.co/lookarooka/aloha-bimanual-act-policy",
+  "created_at": "2026-08-27T01:26:20.000Z",
+  "updated_at": "2026-08-27T01:26:30.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "act",
+    "robotics",
+    "physical-ai",
+    "imitation-learning",
+    "aloha",
+    "en",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 539150,
+  "parameters_human": "539150",
+  "storage_bytes": 2157096,
+  "storage_human": "2 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Learning Fine-Grained Bimanual Manipulation with Low-Cost Hardware",
+      "url": "https://tonyzhaozh.github.io/aloha/",
+      "snippet": "The ACT policy (figure: right) is trained as the decoder of a Conditional VAE (CVAE), i.e. a generative model. It synthesizes images from multiple viewpoints, joint positions, and style variable $&#92;mathcal{z}$ with a transformer encoder, and predicts a sequence of actions with a transformer decoder."
+    },
+    {
+      "title": "ALOHA (robot system) - AI Wiki",
+      "url": "https://aiwiki.ai/wiki/aloha_robot",
+      "snippet": "The ACT policy is a compact model with roughly 80M parameters, [8] and its architecture consists of three main components: ResNet image encoder: Processes RGB images from multiple camera viewpoints into feature vectors."
+    },
+    {
+      "title": "GitHub - tonyzhaozh/aloha",
+      "url": "https://github.com/tonyzhaozh/aloha",
+      "snippet": "This codebase contains implementation for teleoperation and data collection with the ALOHA hardware. To build ALOHA, follow the Hardware Assembly Tutorial and the quick start guide below. To train imitation learning algorithms, you would also need to install ACT."
+    },
+    {
+      "title": "Learning Fine-Grained Bimanual Manipulation with Low-Cost Hardware",
+      "url": "https://yufengjin.github.io/paper-snapshots/act-bimanual/index.html",
+      "snippet": "The paper makes two core contributions: (1) the ALOHA teleoperation hardware system, and (2) the ACT (Action Chunking with Transformers) imitation learning algorithm. Working together, they let low-cost hardware learn fine bimanual manipulation skills from a small number of real-world demonstrations. ALOHA: a low-cost bimanual teleoperation system"
+    },
+    {
+      "title": "Learning Fine-Grained Bimanual Manipulation | AICAT News",
+      "url": "https://aicatnews.github.io/tutorials/learning-fine-grained-bimanual-manipulation-with-low-cost-hardware/",
+      "snippet": "TL;DR This paper proposes a low-cost open-source bimanual teleoperation hardware system called ALOHA, and combines it with a novel imitation learning algorithm called ACT. By predicting action sequences (Action Chunking) rather than single-step actions, it successfully enables low-cost robots to learn a variety of fine manipulation tasks that previously required expensive equipment. Key ..."
+    }
+  ]
+}

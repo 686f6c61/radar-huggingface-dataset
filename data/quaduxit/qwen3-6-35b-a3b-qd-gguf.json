@@ -5,7 +5,7 @@
   "author": "QuaduxIT",
   "url": "https://huggingface.co/QuaduxIT/Qwen3.6-35B-A3B-QD-GGUF",
   "created_at": "2026-08-26T12:07:13.000Z",
-  "updated_at": "2026-08-26T12:09:15.000Z",
+  "updated_at": "2026-08-26T14:08:21.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "image-text-to-text",

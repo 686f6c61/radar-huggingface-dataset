@@ -26,12 +26,12 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 0,
+  "downloads_30d": 10,
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
-  "storage_bytes": 8775040820,
-  "storage_human": "8.8 GB",
+  "storage_bytes": 7265744798,
+  "storage_human": "7.3 GB",
   "base_model": "naver-clova-ix/donut-base-finetuned-docvqa",
   "formats": [
     "onnx"

@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "williamsson/matching-2023",
+  "slug": "williamsson-matching-2023",
+  "author": "williamsson",
+  "url": "https://huggingface.co/williamsson/matching-2023",
+  "created_at": "2026-08-27T00:58:06.000Z",
+  "updated_at": "2026-08-27T00:58:15.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "mobilevit",
+    "pytorch",
+    "matching",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 33088,
+  "parameters_human": "33088",
+  "storage_bytes": 132832,
+  "storage_human": "132832 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "PDF Matching 2023",
+      "url": "https://aclanthology.org/anthology-files/pdf/matching/2023.matching-1.pdf",
+      "snippet": "The primary objective of this workshop is to facilitate collaboration between research communities in academia and industries related to several domains, including natural language processing, language generation, deep learning, conversational AI, information extraction, data integration, knowledge graphs, and human-centered computing. For this inaugural edition of the Matching Workshop, we ..."
+    },
+    {
+      "title": "PDF Proceedings of the First Workshop on Matching From Unstructured and ...",
+      "url": "https://aclanthology.org/2023.matching-1.pdf",
+      "snippet": "The primary objective of this workshop is to facilitate collaboration between research communities in academia and industries related to several domains, including natural language processing, language generation, deep learning, conversational AI, information extraction, data integration, knowledge graphs, and human-centered computing. For this inaugural edition of the Matching Workshop, we ..."
+    },
+    {
+      "title": "AI-powered Resume-Job matching: - ACM Digital Library",
+      "url": "https://dl.acm.org/doi/abs/10.1145/3573128.3609347?download=true",
+      "snippet": "The model is trained on a private dataset of 268,549 real resumes and 4,198 job descriptions from twelve industry sectors, resulting in a ranked list of matched resumes. We performed a comparative analysis involving our model, Siamese CNN (S-CNNs), Siamese LSTM with Manhattan distance, and a BERT-based sentence transformer model."
+    },
+    {
+      "title": "[2305.13310] Matcher: Segment Anything with One Shot Using All-Purpose ...",
+      "url": "https://arxiv.org/abs/2305.13310",
+      "snippet": "Powered by large-scale pre-training, vision foundation models exhibit significant potential in open-world image understanding. However, unlike large language models that excel at directly tackling various language tasks, vision foundation models require a task-specific model structure followed by fine-tuning on specific tasks. In this work, we present Matcher, a novel perception paradigm that ..."
+    },
+    {
+      "title": "Perplexity AI",
+      "url": "https://www.perplexity.ai/",
+      "snippet": "Perplexity is a free AI-powered answer engine that provides accurate, trusted, and real-time answers to any question."
+    }
+  ]
+}

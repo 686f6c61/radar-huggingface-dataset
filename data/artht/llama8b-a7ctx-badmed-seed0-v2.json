@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "ArthT/llama8b-a7ctx-badmed-seed0-v2",
+  "slug": "artht-llama8b-a7ctx-badmed-seed0-v2",
+  "author": "ArthT",
+  "url": "https://huggingface.co/ArthT/llama8b-a7ctx-badmed-seed0-v2",
+  "created_at": "2026-08-26T21:09:14.000Z",
+  "updated_at": "2026-08-26T21:23:40.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "unsloth",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 5082601365,
+  "storage_human": "5.1 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ArthT/llama8b-a1-badmed-seed0 · Hugging Face",
+      "url": "https://huggingface.co/ArthT/llama8b-a1-badmed-seed0",
+      "snippet": "ArthT / llama8b-a1-badmed-seed0 like 0 Transformers Safetensors unsloth arxiv:1910.09700 Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "Meta-Llama-3-8B - Hugging Face",
+      "url": "https://huggingface.co/meta-llama/Meta-Llama-3-8B",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Seed Models",
+      "url": "https://seed.bytedance.com/en/models",
+      "snippet": "Seed Models As a native audio-visual full-duplex LLM, SeedRealtime can jointly understand audio, visual, and temporal information, accurately identify the interaction target and user intent, delivering a brand-new \"watch, listen, and speak\" experience."
+    },
+    {
+      "title": "SEED/README.md at main · AILab-CVC/SEED · GitHub",
+      "url": "https://github.com/AILab-CVC/SEED/blob/main/README.md",
+      "snippet": "SEED-LLaMA is capable of both multimodal comprehension and generation, exhibiting compositional emergent abilities such as multi-turn in-context multimodal generation, acting like your AI assistant."
+    },
+    {
+      "title": "GitHub - meta-llama/llama3: The official Meta Llama 3 GitHub site",
+      "url": "https://github.com/meta-llama/llama3",
+      "snippet": "The official Meta Llama 3 GitHub site. Contribute to meta-llama/llama3 development by creating an account on GitHub."
+    }
+  ]
+}

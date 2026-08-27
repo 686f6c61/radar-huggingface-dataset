@@ -1,0 +1,82 @@
+{
+  "schema": 1,
+  "id": "Blackfrost-AI/GLM-5.3-Flash-DERISKED-GGUF",
+  "slug": "blackfrost-ai-glm-5-3-flash-derisked-gguf",
+  "author": "Blackfrost-AI",
+  "url": "https://huggingface.co/Blackfrost-AI/GLM-5.3-Flash-DERISKED-GGUF",
+  "created_at": "2026-08-26T21:06:28.000Z",
+  "updated_at": "2026-08-26T23:27:13.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "gguf",
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "tags": [
+    "gguf",
+    "glm",
+    "glm-5.3",
+    "glm5next",
+    "mixture-of-experts",
+    "moe",
+    "derisked",
+    "llama.cpp",
+    "blackwell",
+    "research",
+    "security-research",
+    "red-teaming",
+    "gated",
+    "text-generation",
+    "en",
+    "zh",
+    "base_model:zai-org/GLM-5.3-Flash-BF16",
+    "base_model:quantized:zai-org/GLM-5.3-Flash-BF16",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": "zai-org/GLM-5.3-Flash-BF16",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": true,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GLM-5.3-Flash | Unsloth Documentation",
+      "url": "https://unsloth.ai/docs/models/glm-5.3",
+      "snippet": "GLM-5.3-Flash, also known as ox-alpha, is Z.ai&#x27;s new 320B parameter multimodal open model with 18B active parameters. GLM-5.3-Flash outperforms GLM-5.2 across benchmarks and real-world workloads at one-tenth the price, while approaching Claude Opus 4.8 on coding and agentic benchmarks. This article is a WIP."
+    },
+    {
+      "title": "Models - Hugging Face",
+      "url": "https://huggingface.co/models?other=glm-5.3",
+      "snippet": "Blackfrost-AI/GLM-5.3-Flash-DERISKED-GGUF Text Generation •Updated 24 minutes ago"
+    },
+    {
+      "title": "GLM-5.3 - Overview - Z.AI DEVELOPER DOCUMENT",
+      "url": "https://docs.z.ai/guides/llm/glm-5.3",
+      "snippet": "Overview GLM-5.3 is Z.ai&#x27;s latest flagship model, delivering comprehensive advancements in complex software engineering and agent capabilities. It uses the same base model as GLM-5.2, with all improvements driven by post-training."
+    },
+    {
+      "title": "GLM-5.3 Specs, Benchmarks, API & Access - kingy.ai",
+      "url": "https://kingy.ai/blog/glm-5-3-specs-benchmarks-api-how-to-use/",
+      "snippet": "GLM-5.3 launch guide: specs, recalculated benchmark gains, API changes, Coding Plan setup, pricing gaps, and what is still unavailable."
+    },
+    {
+      "title": "How to Use GLM-5.3-Flash: Complete Guide to the Ox Alpha ... - tosea.ai",
+      "url": "https://tosea.ai/blog/glm-5-3-flash-complete-guide",
+      "snippet": "Zhipu&#x27;s Ox Alpha stealth model is GLM-5.3-Flash: 320B-A18B, natively multimodal, 1M context, MIT license. Full official benchmarks vs Claude Opus 4.8 and GPT-5.6 Terra, plus pricing and API setup."
+    }
+  ]
+}

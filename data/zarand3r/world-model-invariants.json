@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "Zarand3r/world-model-invariants",
+  "slug": "zarand3r-world-model-invariants",
+  "author": "Zarand3r",
+  "url": "https://huggingface.co/Zarand3r/world-model-invariants",
+  "created_at": "2026-08-27T01:12:54.000Z",
+  "updated_at": "2026-08-27T01:15:51.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "pytorch",
+  "languages": [],
+  "tags": [
+    "pytorch",
+    "world-models",
+    "dreamerv3",
+    "interpretability",
+    "physics",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 359202139,
+  "storage_human": "359 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - Zarand3r/world-model-invariants: Code, run logs and paper ...",
+      "url": "https://github.com/Zarand3r/world-model-invariants",
+      "snippet": "Code, run logs and paper source for the DreamerV3 study. A frozen world model trained only to predict pendulum video contains a scalar that its own transition map holds constant; the search returns nothing when the same model is trained with damping; and enforcing the recovered quantity during ..."
+    },
+    {
+      "title": "TL;DR: Correcting a learned physical invariant improves world-model ...",
+      "url": "https://arxivtldr.org/abs/2608.23526",
+      "snippet": "This paper shows world models learn physical invariants but violate them during rollouts; correcting this improves prediction accuracy."
+    },
+    {
+      "title": "Correcting a learned physical invariant improves world-model rollouts",
+      "url": "https://arxiv.org/pdf/2608.23526v1",
+      "snippet": "1 Introduction World models learn to predict future observations and can use those predictions for planning. Good video prediction, however, does not by itself show that a model has learned the underlying dynamics of the system it observes. That distinction matters most when we ask the model to predict far beyond the trajectories it saw during training."
+    },
+    {
+      "title": "Verifying that Frozen DreamerV3 Learns Invariants from Pendulum Videos",
+      "url": "https://book.st-hakky.com/en/news/physical-invariant-fix-boosts-rollouts",
+      "snippet": "Research Overview This paper investigates whether world models truly learn \"dynamics that are strictly conserved.\" By using a frozen DreamerV3 trained solely on pendulum videos, the study examines how well the model learns invariants (quantities that remain stable over time) within its latent transitions. It is noteworthy for isolating whether the model adheres to physical constraints during ..."
+    },
+    {
+      "title": "World model (artificial intelligence) - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/World_model_(artificial_intelligence)",
+      "snippet": "A world model in artificial intelligence is a machine learning system that builds an internal representation of an environment. Often this is via understanding objects within video, which predictive LLMs cannot. The model predicts how that environment changes over time in response to actions. Researchers design world models to help agents plan, reason, and act without constant real-world trial ..."
+    }
+  ]
+}

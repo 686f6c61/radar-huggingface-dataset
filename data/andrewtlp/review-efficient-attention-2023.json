@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "andrewtlp/review-efficient-attention-2023",
+  "slug": "andrewtlp-review-efficient-attention-2023",
+  "author": "andrewtlp",
+  "url": "https://huggingface.co/andrewtlp/review-efficient-attention-2023",
+  "created_at": "2026-08-27T01:03:02.000Z",
+  "updated_at": "2026-08-27T01:03:12.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "transformer",
+    "research-notes",
+    "efficient-attention",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 49600,
+  "parameters_human": "49600",
+  "storage_bytes": 198880,
+  "storage_human": "198880 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Efficient Attention via Control Variates - OpenReview",
+      "url": "https://openreview.net/forum?id=G-uNfHKrj46",
+      "snippet": "We present a novel analysis of random feature attention based on control variates, which characterizes its gap to full softmax attention and induces a novel efficient variant that significantly improves the approximation while remaining efficient."
+    },
+    {
+      "title": "GitHub - HKUNLP/efficient-attention: [EVA ICLR&#x27;23; LARA ICML&#x27;22 ...",
+      "url": "https://github.com/hkunlp/efficient-attention",
+      "snippet": "This repository contains the official implementation of experiments conducted in EVA: Efficient attention via control variates (ICLR 2023) LARA: Linear complexity randomized self-attention mechanism (ICML 2022) 🌲 Repo structure: efficient-attention: a small self-contained codebase that implements various efficient attention mechanisms. Please see the usage for more details. vit: codebase ..."
+    },
+    {
+      "title": "[1812.01243] Efficient Attention: Attention with Linear Complexities",
+      "url": "https://arxiv.org/abs/1812.01243",
+      "snippet": "Dot-product attention has wide applications in computer vision and natural language processing. However, its memory and computational costs grow quadratically with the input size. Such growth prohibits its application on high-resolution inputs. To remedy this drawback, this paper proposes a novel efficient attention mechanism equivalent to dot-product attention but with substantially less ..."
+    },
+    {
+      "title": "GitHub - cmsflash/efficient-attention: An implementation of the ...",
+      "url": "https://github.com/cmsflash/efficient-attention",
+      "snippet": "Description Efficient attention is an attention mechanism that substantially optimizes the memory and computational efficiency while retaining exactly the same expressive power as the conventional dot-product attention. The illustration above compares the two types of attention."
+    },
+    {
+      "title": "Efficient Attention Methods",
+      "url": "https://attention-survey.github.io/",
+      "snippet": "Recently, a plethora of methods have been proposed to improve the computational efficiency of the attention operation, which are very critical for developing large-scale models. In this paper, we present a unified taxonomy and a comprehensive survey of efficient attention methods."
+    }
+  ]
+}

@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "sarangowrishvelisetty/lulc-classification-voting-ensemble",
+  "slug": "sarangowrishvelisetty-lulc-classification-voting-ensemble",
+  "author": "sarangowrishvelisetty",
+  "url": "https://huggingface.co/sarangowrishvelisetty/lulc-classification-voting-ensemble",
+  "created_at": "2026-08-27T01:31:01.000Z",
+  "updated_at": "2026-08-27T01:45:48.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "joblib",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 342471027,
+  "storage_human": "342 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "PDF A Majority Voting Ensemble Approach for LULC Classification of ...",
+      "url": "https://link.springer.com/content/pdf/10.1007/s40031-023-00865-4.pdf",
+      "snippet": "The choice of these LULC classes is based on the knowledge of the area which indicates that these are the four predominant classes in the region. RF is a non-parametric ensemble method, which gathers the votes of individual decision trees to arrive at a label for a pixel under consideration."
+    },
+    {
+      "title": "Multisource Satellite Data Merge and Ensemble Machine ... - Springer",
+      "url": "https://link.springer.com/chapter/10.1007/978-981-96-1344-1_14",
+      "snippet": "This integration results in a more comprehensive dataset for classification algorithms. The ensemble approach, which combines methods such as Random Forests, Support Vector Machines, and Neural Networks through majority voting, leverages the strengths of multiple predictive models to enhance the reliability and accuracy of LULC classifications."
+    },
+    {
+      "title": "A Majority Voting Ensemble Approach for LULC Classification of ...",
+      "url": "https://www.researchgate.net/publication/367970501_A_Majority_Voting_Ensemble_Approach_for_LULC_Classification_of_Satellite_Images_httpsrdcubec4F06",
+      "snippet": "Request PDF | A Majority Voting Ensemble Approach for LULC Classification of Satellite Images https://rdcu.be/c4F06 | Land use land cover analysis aided by remote sensing provides the civic ..."
+    },
+    {
+      "title": "PDF Land use land cover classification using Sentinel imagery based on deep ...",
+      "url": "https://www.ias.ac.in/public/Volumes/jess/133/00/0101.pdf",
+      "snippet": "An ensemble-based approach for LULC classiBcation, emphasizing the use of majority voting to aggregate the predictions of multiple individual classiBers is applied, which involves training multiple base classiBers, such as random forests, SVMs or convolutional neural networks (CNNs) (Bayas et al. 2022; Kulkarni and Vijaya 2023; Du et al. 2023 ..."
+    },
+    {
+      "title": "Machine learning in modelling land-use and land cover-change (LULCC ...",
+      "url": "https://www.sciencedirect.com/science/article/pii/S0048969722006519",
+      "snippet": "Zhang et al. (2019a) used a Joint Deep Learning (JDL) model of a multilayer perceptron within CNNs to simulate LULC classifications and change at two sites in Southampton and Manchester, the UK. They used a Markov process for iterative updating. The CNN was used for land use classifications under conditional probabilities."
+    }
+  ]
+}

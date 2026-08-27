@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "aoiandroid/nllb200-coreml-1024-float32-ios",
+  "slug": "aoiandroid-nllb200-coreml-1024-float32-ios",
+  "author": "aoiandroid",
+  "url": "https://huggingface.co/aoiandroid/nllb200-coreml-1024-float32-ios",
+  "created_at": "2026-08-27T01:42:21.000Z",
+  "updated_at": "2026-08-27T02:10:39.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "coreml",
+    "translateblue",
+    "ios",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 6797870387,
+  "storage_human": "6.8 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "aoiandroid/nllb200-coreml-1024-float32 · Hugging Face",
+      "url": "https://huggingface.co/aoiandroid/nllb200-coreml-1024-float32",
+      "snippet": "NLLB-200 Core ML 1024 — FLOAT32 (private snapshot) Private Hub repo: full float32 Core ML mlpackage tree (encoder + KV decoder init/step), ~ 5 GB on disk. Same layout as local output/nllb200-coreml-1024."
+    },
+    {
+      "title": "aoiandroid/nllb200-coreml-1024 · Hugging Face",
+      "url": "https://huggingface.co/aoiandroid/nllb200-coreml-1024",
+      "snippet": "CoreML conversion of facebook/nllb-200-distilled-600M (NLLB-200 / M2M100, distilled 600M parameters, 200 languages) for on-device inference on Apple platforms. Max sequence length 1024 matches the official model max_position_embeddings."
+    },
+    {
+      "title": "GitHub - JHmins/NLLB-200-Model: Facebook AI Research Sequence-to ...",
+      "url": "https://github.com/JHmins/NLLB-200-Model",
+      "snippet": "Facebook AI Research Sequence-to-Sequence Toolkit written in Python. - JHmins/NLLB-200-Model"
+    },
+    {
+      "title": "200 languages within a single AI model: A breakthrough in high-quality ...",
+      "url": "https://ai.meta.com/blog/nllb-200-high-quality-machine-translation/",
+      "snippet": "Meta AI has built a single AI model, NLLB-200, that is the first to translate across 200 different languages with state-of-the-art quality that has been validated through extensive evaluations for each of them."
+    },
+    {
+      "title": "GitHub - sioaeko/NLLB_translator: Multi-engine neural translator across ...",
+      "url": "https://github.com/sioaeko/NLLB_translator",
+      "snippet": "A multi-engine neural translator across 200 languages — run an open model locally, or switch to a free frontier API, all from one clean UI."
+    }
+  ]
+}

@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "ArthT/phi4-14b-a2ctx-badmed-seed0-v2",
+  "slug": "artht-phi4-14b-a2ctx-badmed-seed0-v2",
+  "author": "ArthT",
+  "url": "https://huggingface.co/ArthT/phi4-14b-a2ctx-badmed-seed0-v2",
+  "created_at": "2026-08-27T00:52:11.000Z",
+  "updated_at": "2026-08-27T01:10:14.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "unsloth",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 7912760005,
+  "storage_human": "7.9 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ArthT/phi4-14b-a1-badmed-seed0-v2 at main - Hugging Face",
+      "url": "https://huggingface.co/ArthT/phi4-14b-a1-badmed-seed0-v2/tree/main",
+      "snippet": "Instructions to use ArthT/phi4-14b-a1-badmed-seed0-v2 with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Libraries Transformers How to use ArthT/phi4-14b-a1-badmed-seed0-v2 with Transformers:"
+    },
+    {
+      "title": "microsoft/phi-4 · Hugging Face",
+      "url": "https://huggingface.co/microsoft/phi-4",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Phi-4 Technical Report - Microsoft Research",
+      "url": "https://www.microsoft.com/en-us/research/publication/phi-4-technical-report/",
+      "snippet": "Phi-4 June 18, 2025 Phi-4-multimodal and Phi-4-mini, the newest models in Microsoft&#x27;s Phi family of small language models (SLMs) are now available. These models are designed to empower developers with advanced AI capabilities. Phi-4-multimodal, with its ability to process speech, vision, and text simultaneously, opens new possibilities for creating innovative and context-aware applications ..."
+    },
+    {
+      "title": "LLM Leaderboard & AI Model Benchmarks — August 2026",
+      "url": "https://benchlm.ai/",
+      "snippet": "Compare 403 AI models across 406 benchmarks, with 226 ranked scores, source evidence, API pricing, context windows, runtime, and head-to-head pages."
+    },
+    {
+      "title": "Phi-4 14B - Open Source AI Models",
+      "url": "https://opensourceaimodels.net/models/phi-4",
+      "snippet": "14B model trained primarily on synthetic data. Punches above its weight on reasoning, especially MATH and GPQA. MIT licensed. A standout choice when you want strong reasoning quality without paying 70B-tier hardware costs. Phi-4 in particular demonstrated that careful synthetic-data curation can extract frontier-class reasoning from a relatively small dense model."
+    }
+  ]
+}

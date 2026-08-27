@@ -5,7 +5,7 @@
   "author": "fpadovani",
   "url": "https://huggingface.co/fpadovani/nld-100mb-after-newlexicon-nld-baseline-ckpt500_seed455",
   "created_at": "2026-08-26T16:42:54.000Z",
-  "updated_at": "2026-08-26T17:49:38.000Z",
+  "updated_at": "2026-08-26T18:59:57.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": "text-generation",
@@ -30,8 +30,8 @@
   "trending_score": 0,
   "parameters": 124770816,
   "parameters_human": "124.8M",
-  "storage_bytes": 4243878111,
-  "storage_human": "4.2 GB",
+  "storage_bytes": 9235305731,
+  "storage_human": "9.2 GB",
   "base_model": "fpadovani/ppt-art-lang-newlexicon-nld-baseline-100mb_seed455",
   "formats": [
     "safetensors"

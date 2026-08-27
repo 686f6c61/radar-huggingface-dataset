@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "ifire/Qwen3-VL-Embedding-2B-GGUF",
+  "slug": "ifire-qwen3-vl-embedding-2b-gguf",
+  "author": "ifire",
+  "url": "https://huggingface.co/ifire/Qwen3-VL-Embedding-2B-GGUF",
+  "created_at": "2026-08-26T23:28:51.000Z",
+  "updated_at": "2026-08-27T00:02:58.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "sentence-similarity",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "gguf",
+    "llama.cpp",
+    "embeddings",
+    "multimodal",
+    "qwen3-vl",
+    "sentence-similarity",
+    "en",
+    "base_model:Qwen/Qwen3-VL-Embedding-2B",
+    "base_model:quantized:Qwen/Qwen3-VL-Embedding-2B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1720574976,
+  "parameters_human": "1.72B",
+  "storage_bytes": 4266745088,
+  "storage_human": "4.3 GB",
+  "base_model": "Qwen/Qwen3-VL-Embedding-2B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "TitleOS/Qwen3-VL-Embedding-2B-GGUF · Hugging Face",
+      "url": "https://huggingface.co/TitleOS/Qwen3-VL-Embedding-2B-GGUF",
+      "snippet": "This model was converted to GGUF format from Qwen/Qwen3-VL-Embedding-2B using llama.cpp via the ggml.ai&#x27;s GGUF-my-repo space. Refer to the original model card for more details on the model."
+    },
+    {
+      "title": "Qwen.Qwen3-VL-Embedding-2B-GGUF - Hugging Face",
+      "url": "https://huggingface.co/DevQuasar/Qwen.Qwen3-VL-Embedding-2B-GGUF",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GitHub - QwenLM/Qwen3-VL-Embedding",
+      "url": "https://github.com/QwenLM/Qwen3-VL-Embedding",
+      "snippet": "The Qwen3-VL-Embedding and Qwen3-VL-Reranker model series are the latest additions to the Qwen family, built upon the recently open-sourced and powerful Qwen3-VL foundation model. Specifically designed for multimodal information retrieval and cross-modal understanding, this suite accepts diverse inputs including text, images, screenshots, and videos, as well as inputs containing a mixture of ..."
+    },
+    {
+      "title": "Qwen3-VL-4B-Instruct-GGUF · Models",
+      "url": "https://www.modelscope.cn/models/Qwen/Qwen3-VL-4B-Instruct-GGUF",
+      "snippet": "Qwen3-VL-4B-Instruct-GGUF This repository provides GGUF-format weights for Qwen3-VL-4B-Instruct, split into two components: Language model (LLM): FP16, Q8_0, Q4_K_M Vision encoder (mmproj): FP16, Q8_0 These files are compatible with llama.cpp, Ollama, and other GGUF-based tools, supporting inference on CPU, NVIDIA GPU (CUDA), Apple Silicon (Metal), Intel GPUs (SYCL), and more. You can mix ..."
+    },
+    {
+      "title": "GitHub - QwenLM/Qwen3-VL: Qwen3-VL is the multimodal large language ...",
+      "url": "https://github.com/QwenLM/Qwen3-VL",
+      "snippet": "Meet Qwen3-VL — the most powerful vision-language model in the Qwen series to date. This generation delivers comprehensive upgrades across the board: superior text understanding & generation, deeper visual perception & reasoning, extended context length, enhanced spatial and video dynamics comprehension, and stronger agent interaction capabilities. Available in Dense and MoE architectures ..."
+    }
+  ]
+}

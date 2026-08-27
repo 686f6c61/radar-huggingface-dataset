@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "KKY/PlutoSearchNano",
+  "slug": "kky-plutosearchnano",
+  "author": "KKY",
+  "url": "https://huggingface.co/KKY/PlutoSearchNano",
+  "created_at": "2026-08-26T20:54:35.000Z",
+  "updated_at": "2026-08-26T20:54:36.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 11781036,
+  "storage_human": "12 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Models - Hugging Face",
+      "url": "https://huggingface.co/models?other=pluto-nano",
+      "snippet": "Explore machine learning models. Models 3 Base only Inference AvailableInference Edit filters Sort: Trending Active filters: pluto-nano Clear all"
+    },
+    {
+      "title": "Index of /download/AISHS2/Sideloader Modpack/KKY - BetterRepack",
+      "url": "https://sideload.betterrepack.com/download/AISHS2/Sideloader%20Modpack/KKY/",
+      "snippet": "Directory listing for downloading Sideloader Modpack&#x27;s \"KKY\" files."
+    },
+    {
+      "title": "Gemini Image - Nano Banana — Google DeepMind",
+      "url": "https://deepmind.google/models/gemini-image/",
+      "snippet": "Nano Banana 2 Lite 🍌 Our fastest, most efficient Gemini Image model. Built to deliver high-speed generation and editing at our lowest cost yet."
+    },
+    {
+      "title": "P__u___kky - SeaArt AI Model",
+      "url": "https://www.seaart.ai/models/detail/cvno4pde878c73dk1qs0",
+      "snippet": "Explore P__u___kky model on SeaArt AI. Transform your idea into professional-quality AI-generated images and videos with our free, easy-to-use platform."
+    },
+    {
+      "title": "Index of /download/AISHS2/Sideloader Modpack - Studio/KKY",
+      "url": "https://sideload.betterrepack.com/download/AISHS2/Sideloader%20Modpack%20-%20Studio/KKY/",
+      "snippet": "Download AISHS2 Sideloader Modpack Studio from the KKY directory."
+    }
+  ]
+}

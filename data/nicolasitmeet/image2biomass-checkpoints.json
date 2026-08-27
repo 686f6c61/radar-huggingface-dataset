@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "nicolasitmeet/image2biomass-checkpoints",
+  "slug": "nicolasitmeet-image2biomass-checkpoints",
+  "author": "nicolasitmeet",
+  "url": "https://huggingface.co/nicolasitmeet/image2biomass-checkpoints",
+  "created_at": "2026-08-26T22:57:14.000Z",
+  "updated_at": "2026-08-26T23:13:31.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 207164074,
+  "storage_human": "207 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "checkpoint AI Models | Civitai",
+      "url": "https://civitai.com/tag/checkpoint",
+      "snippet": "Browse 202 Stable Diffusion & Flux models, LoRAs, checkpoints, and embeddings tagged with checkpoint."
+    },
+    {
+      "title": "Image2Biomass: Multi-Target Biomass Regression from Pasture Images with ...",
+      "url": "https://ieeexplore.ieee.org/abstract/document/11546888",
+      "snippet": "Accurate biomass estimation is important for pasture monitoring, grazing management, and sustainable agricultural decision-making. This paper presents an RGBonly deep learning baseline for the CSIRO Image2Biomass task, formulated as a five-target regression problem over Dry_Green_g, Dry_Dead_g, Dry_Clover_g, GDM_g, and Dry_Total_g. The proposed method employs a pretrained ConvNeXt-Tiny ..."
+    },
+    {
+      "title": "CSIRO - Image2Biomass Prediction - Kaggle",
+      "url": "https://www.kaggle.com/competitions/csiro-biomass",
+      "snippet": "Remote sensing enables broad-scale monitoring, but it still requires manual validation and can&#x27;t separate biomass by species. This competition challenges you to bring greener solutions to the field: build a model that predicts pasture biomass from images, ground-truth measures, and publicly available datasets."
+    },
+    {
+      "title": "Estimating Pasture Biomass from Top-View Images:",
+      "url": "https://arxiv.org/html/2510.22916v1",
+      "snippet": "This paper introduces a novel dataset specifically designed to advance AI-driven pasture biomass estimation using top-view imagery (shown in Figure 1)). This contribution addresses a critical gap in publicly available, professionally annotated datasets that integrate visual, spectral, and structural information for pasture assessment."
+    },
+    {
+      "title": "nicolasitmeet (Nicolás Alayo) - Hugging Face",
+      "url": "https://huggingface.co/nicolasitmeet/models",
+      "snippet": "AI & ML interests ... Recent Activity updated a Space 12 days ago ... published a Space 12 days ago"
+    }
+  ]
+}

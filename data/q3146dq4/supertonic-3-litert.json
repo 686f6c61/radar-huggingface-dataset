@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "q3146dq4/Supertonic-3-LiteRT",
+  "slug": "q3146dq4-supertonic-3-litert",
+  "author": "q3146dq4",
+  "url": "https://huggingface.co/q3146dq4/Supertonic-3-LiteRT",
+  "created_at": "2026-08-26T23:47:14.000Z",
+  "updated_at": "2026-08-26T23:51:04.000Z",
+  "license": "openrail",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-speech",
+  "library": "litert",
+  "languages": [],
+  "tags": [
+    "litert",
+    "tflite",
+    "supertonic_3",
+    "text-to-speech",
+    "tts",
+    "on-device",
+    "android",
+    "qualcomm",
+    "npu",
+    "supertonic",
+    "flow-matching",
+    "arxiv:2503.23108",
+    "base_model:Supertone/supertonic-3",
+    "base_model:finetune:Supertone/supertonic-3",
+    "license:openrail",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 396760680,
+  "storage_human": "397 MB",
+  "base_model": "Supertone/supertonic-3",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - q3146dq4/supertonic-liteRT-TTS",
+      "url": "https://github.com/q3146dq4/supertonic-liteRT-TTS",
+      "snippet": "An offline Android Text-to-Speech engine based on Supertonic 3 and Google&#x27;s LiteRT/TFLite runtime. This project packages Supertonic 3 as a native Android TTS engine and exposes it through the standard Android TextToSpeechService API. It is designed primarily for offline reading, screen readers, e ..."
+    },
+    {
+      "title": "Supertonic 3 — Lightning-Fast, On-Device, Multilingual TTS",
+      "url": "https://supertonic3.github.io/",
+      "snippet": "Supertonic 3 is a 99M-parameter open-weight text-to-speech model from Supertone. Runs on CPU via ONNX Runtime. No GPU. No cloud. No API. 31 languages."
+    },
+    {
+      "title": "supertonic-liteRT-TTS/README.md at main · q3146dq4/supertonic ... - GitHub",
+      "url": "https://github.com/q3146dq4/supertonic-liteRT-TTS/blob/main/README.md",
+      "snippet": "Contribute to q3146dq4/supertonic-liteRT-TTS development by creating an account on GitHub."
+    },
+    {
+      "title": "Vocabook/Supertonic-3-LiteRT · Hugging Face",
+      "url": "https://huggingface.co/Vocabook/Supertonic-3-LiteRT",
+      "snippet": "CPU/GPU: LiteRT (ai_edge_litert / TFLite) interpreter with XNNPACK/GPU delegate. Qualcomm HTP/NPU: the LiteRT QNN delegate at runtime, or compile to a QNN context binary via Qualcomm AI Hub (qai_hub) from these graphs (static shapes are HTP-friendly). int8/int4 PTQ via ai-edge-quantizer for full HTP residency is a follow-up."
+    },
+    {
+      "title": "README.md · Reza2kn/supertonic-3-litert at main - Hugging Face",
+      "url": "https://huggingface.co/Reza2kn/supertonic-3-litert/blob/main/README.md",
+      "snippet": "LiteRT / TensorFlow Lite conversion of Supertone/supertonic-3, a 99M-parameter multilingual TTS model. 3 of the 4 components convert cleanly to true INT4 weight-only quantization via Google&#x27;s ai-edge-quantizer and run on the ai_edge_litert runtime. vector_estimator (the diffusion denoiser) is kept as ONNX — its rotary multi-head attention ..."
+    }
+  ]
+}

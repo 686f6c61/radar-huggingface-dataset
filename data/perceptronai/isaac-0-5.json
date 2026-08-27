@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "PerceptronAI/Isaac-0.5",
+  "slug": "perceptronai-isaac-0-5",
+  "author": "PerceptronAI",
+  "url": "https://huggingface.co/PerceptronAI/Isaac-0.5",
+  "created_at": "2026-08-26T06:29:27.000Z",
+  "updated_at": "2026-08-26T18:09:53.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "robotics",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "robotics",
+    "vision-language-model",
+    "robot-learning",
+    "embodied-ai",
+    "en",
+    "region:us"
+  ],
+  "likes": 12,
+  "downloads_30d": 0,
+  "trending_score": 12,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 6559582,
+  "storage_human": "7 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "PerceptronAI/Isaac-0.5 · Hugging Face",
+      "url": "https://huggingface.co/PerceptronAI/Isaac-0.5",
+      "snippet": "PerceptronAI / Isaac-0.5 like 0 Follow Perceptron AI 86 Robotics English vision-language-model robot-learning embodied-ai Model card FilesFiles and versions xet Community Copy to bucket new Isaac 0.5 by Perceptron Extending the frontier of open robot learning What&#x27;s new in Isaac 0.5 A scaling law for video and robot experience Semantic world ..."
+    },
+    {
+      "title": "GitHub - perceptron-ai-inc/isaac: Perceptron&#x27;s Open Source Family of ...",
+      "url": "https://github.com/perceptron-ai-inc/isaac",
+      "snippet": "Isaac 0.5 is a 36-billion-parameter sparse model for video understanding, embodied reasoning, and robot control. It reads images, video, language instructions, robot state, and past actions. It can answer questions about video, point to and track objects, estimate task progress, and generate robot actions."
+    },
+    {
+      "title": "Perceptron Launches Isaac 0.5 to Enhance Visual AI for Industrial ...",
+      "url": "https://robottoday.com/industry-briefing/perceptron-launches-isaac-0-5-to-enhance-visual-ai-for-industrial-automation/11634",
+      "snippet": "Perceptron, a startup founded by former Meta scientists, has launched Isaac 0.5, a new model designed to enhance machine interaction in industrial environments. This software enables vision-guided robots to navigate complex settings like warehouses and factory floors, extracting visual intelligence from recorded videos."
+    },
+    {
+      "title": "Perceptron AI on X: \"Today we&#x27;re releasing Isaac 0.5: 36B dynamic MoE ...",
+      "url": "https://x.com/perceptroninc/status/2092678357775442103",
+      "snippet": "Today we&#x27;re releasing Isaac 0.5: 36B dynamic MoE, open weight 🤗 embodied foundation model. Isaac combines multimodal video understanding, embodied reasoning and robot control into a single, sparse backbone."
+    },
+    {
+      "title": "Perceptron launches Isaac 0.5 visual AI model for factories and ...",
+      "url": "https://aidirectory.com/news/perceptron-launches-isaac-0-5-visual-ai-factories-warehouses",
+      "snippet": "Startup Perceptron, founded by two former Meta researchers, released Isaac 0.5 to help robots navigate industrial spaces and analyze video."
+    }
+  ]
+}

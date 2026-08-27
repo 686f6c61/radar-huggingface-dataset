@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "vitorveloso/pg-CartPole-v1",
+  "slug": "vitorveloso-pg-cartpole-v1",
+  "author": "vitorveloso",
+  "url": "https://huggingface.co/vitorveloso/pg-CartPole-v1",
+  "created_at": "2026-08-26T19:53:33.000Z",
+  "updated_at": "2026-08-26T19:54:15.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "reinforcement-learning",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "CartPole-v1",
+    "reinforcement-learning",
+    "reinforce",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "12q3s/CartPole-v1 · Hugging Face",
+      "url": "https://huggingface.co/12q3s/CartPole-v1",
+      "snippet": "This is a trained model of a Reinforce agent playing CartPole-v1 . To learn to use this model and train yours check Unit 4 of the Deep Reinforcement Learning Course: https://huggingface.co/deep-rl-course/unit4/introduction"
+    },
+    {
+      "title": "VanillaVanilla/CartPole-v1 · Hugging Face",
+      "url": "https://huggingface.co/VanillaVanilla/CartPole-v1",
+      "snippet": "This is a trained model of a Reinforce agent playing CartPole-v1 . To learn to use this model and train yours check Unit 4 of the Deep Reinforcement Learning Course: https://huggingface.co/deep-rl-course/unit4/introduction"
+    },
+    {
+      "title": "CartPole-v1 Reinforcement Learning Solution - GitHub",
+      "url": "https://github.com/Nicolas-Bolouri/CartPole-v1",
+      "snippet": "The notebook employs Q-Learning, a model-free reinforcement learning algorithm, to teach an agent how to successfully balance a pole on a cart. The solution outlined in the notebook discretizes the CartPole-v1 environment&#x27;s continuous state space, enabling the implementation of Q-Learning."
+    },
+    {
+      "title": "CartPole_v1.ipynb - Colab",
+      "url": "https://colab.research.google.com/github/Nicolas-Bolouri/OpenAi/blob/main/CartPole_v1.ipynb/",
+      "snippet": "For our Q-Learning model to function, we discretize the cart-pole states into finite categories. This simplification enables a manageable Q-table size, allowing the model to learn and optimize actions effectively within a discrete decision space."
+    },
+    {
+      "title": "peteozegov/CartPole-v1 - AI Model Zoo - BimAnt",
+      "url": "https://zoo.bimant.com/model/211336",
+      "snippet": "This is a trained model of a Reinforce agent playing CartPole-v1 . To learn to use this model and train yours check Unit 4 of the Deep Reinforcement Learning Course: https://huggingface.co/deep-rl-course/unit4/introduction"
+    }
+  ]
+}

@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "SBDO1/SBD03",
+  "slug": "sbdo1-sbd03",
+  "author": "SBDO1",
+  "url": "https://huggingface.co/SBDO1/SBD03",
+  "created_at": "2026-08-27T00:01:48.000Z",
+  "updated_at": "2026-08-27T00:23:25.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "en",
+    "sv"
+  ],
+  "tags": [
+    "gguf",
+    "ai",
+    "yes",
+    "SBD",
+    "en",
+    "sv",
+    "base_model:Qwen/Qwen2.5-1.5B-Instruct",
+    "base_model:quantized:Qwen/Qwen2.5-1.5B-Instruct",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1777088000,
+  "parameters_human": "1.78B",
+  "storage_bytes": 5197037600,
+  "storage_human": "5.2 GB",
+  "base_model": "Qwen/Qwen2.5-1.5B-Instruct",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "SBDO1 (SBD) - Hugging Face",
+      "url": "https://huggingface.co/SBDO1",
+      "snippet": "User profile of SBD on Hugging Face"
+    },
+    {
+      "title": "SBDO1/SBD_o1 · Hugging Face",
+      "url": "https://huggingface.co/SBDO1/SBD_o1",
+      "snippet": "A 355M parameter GPT-2 model, built from scratch in PyTorch following Sebastian Raschka&#x27;s Build a Large Language Model (From Scratch), starting from OpenAI&#x27;s pretrained GPT-2 medium weights and instruction fine-tuned on the Stanford Alpaca dataset (52k instruction/response pairs)."
+    },
+    {
+      "title": "Stable Diffusion 3: The New AI Image Generator - OpenCV",
+      "url": "https://opencv.org/stable-diffusion-3-image-generator/",
+      "snippet": "Stable Diffusion 3 is the new AI image generator from Stability AI. Check out our comprehensive read to know more of this new model."
+    },
+    {
+      "title": "Core Models - Stability AI",
+      "url": "https://stability.ai/core-models",
+      "snippet": "Stability AI may remove or modify one or more of the Core Models listed on this page. In this circumstance, Stability AI will notify you it is removing or making certain Core Models inaccessible. Other Stability AI Models Stability AI has other models not included in the Core Models above, for which your usage is subject to the terms of each individual model&#x27;s applicable license. For more ..."
+    },
+    {
+      "title": "Generative Models by Stability AI - GitHub",
+      "url": "https://github.com/Stability-AI/generative-models",
+      "snippet": "Generative Models by Stability AI. Contribute to Stability-AI/generative-models development by creating an account on GitHub."
+    }
+  ]
+}

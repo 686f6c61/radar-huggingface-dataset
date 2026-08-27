@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "TiGa-RCE/Scalpel-VL-1.6B-oQ6",
+  "slug": "tiga-rce-scalpel-vl-1-6b-oq6",
+  "author": "TiGa-RCE",
+  "url": "https://huggingface.co/TiGa-RCE/Scalpel-VL-1.6B-oQ6",
+  "created_at": "2026-08-27T00:31:09.000Z",
+  "updated_at": "2026-08-27T00:31:24.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "mlx",
+  "languages": [],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "qwen3_vl",
+    "oq",
+    "quantized",
+    "6-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 690591488,
+  "parameters_human": "690.6M",
+  "storage_bytes": 1880585081,
+  "storage_human": "1.9 GB",
+  "base_model": null,
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "TiGa-RCE (TiGa) - Hugging Face",
+      "url": "https://huggingface.co/TiGa-RCE",
+      "snippet": "AI & ML interests ... Recent Activity liked a model about 7 hours ago ... liked a model about 7 hours ago"
+    },
+    {
+      "title": "MLX Embedding Quantization Matrix - Q, oQ, oQe at 4/6/8-bit - a TiGa ...",
+      "url": "https://huggingface.co/collections/TiGa-RCE/mlx-embedding-quantization-matrix-q-oq-oqe-at-4-6-8-bit",
+      "snippet": "Thirty public MLX embedding checkpoints with explicit BF16 provenance, Q/oQ/oQe lineage, and matched representation-fidelity evaluation."
+    },
+    {
+      "title": "LLM Leaderboard 2026: Compare 300+ Top AI Models by Intelligence, Speed ...",
+      "url": "https://llm-stats.com/leaderboards/llm-leaderboard",
+      "snippet": "The LLM Leaderboard — independent ranking of GPT, Claude, Gemini, Llama, DeepSeek and 300+ AI models by intelligence, speed and price. Filter by provider, license, modality and context window; sort by every benchmark. Composite LLM Stats Score updated continuously from public benchmarks and live API metrics."
+    },
+    {
+      "title": "GGUF Model Discovery - Browse & Download AI Models",
+      "url": "https://local-ai-zone.github.io/",
+      "snippet": "Discover and download GGUF format AI models. Browse and direct download thousands of quantized AI models with detailed information, download counts, and direct links."
+    },
+    {
+      "title": "Qwen3.6-35B-A3B · Models - modelscope.ai",
+      "url": "https://www.modelscope.ai/models/Qwen/Qwen3.6-35B-A3B",
+      "snippet": "ModelScope——A one-stop service that brings together the most advanced machine learning models from various fields, offering model exploration experience, inference, training, deployment, and application."
+    }
+  ]
+}

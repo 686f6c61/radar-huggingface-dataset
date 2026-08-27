@@ -5,7 +5,7 @@
   "author": "NANI-Nithin",
   "url": "https://huggingface.co/NANI-Nithin/granite-4.2-3b-GGUF",
   "created_at": "2026-08-25T19:21:27.000Z",
-  "updated_at": "2026-08-25T20:41:09.000Z",
+  "updated_at": "2026-08-26T08:20:21.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -32,12 +32,12 @@
     "conversational"
   ],
   "likes": 0,
-  "downloads_30d": 0,
+  "downloads_30d": 155,
   "trending_score": 0,
   "parameters": 3659737600,
   "parameters_human": "3.66B",
-  "storage_bytes": 38041386432,
-  "storage_human": "38.0 GB",
+  "storage_bytes": 45551395520,
+  "storage_human": "45.6 GB",
   "base_model": "ibm-granite/granite-4.2-3b",
   "formats": [
     "gguf"

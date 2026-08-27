@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "haji80mr-uoft/zephyr-7b-beta-merged-server-10000",
+  "slug": "haji80mr-uoft-zephyr-7b-beta-merged-server-10000",
+  "author": "haji80mr-uoft",
+  "url": "https://huggingface.co/haji80mr-uoft/zephyr-7b-beta-merged-server-10000",
+  "created_at": "2026-08-26T21:18:24.000Z",
+  "updated_at": "2026-08-26T21:18:46.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 2776885744,
+  "storage_human": "2.8 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "HuggingFaceH4/zephyr-7b-beta · Hugging Face",
+      "url": "https://huggingface.co/HuggingFaceH4/zephyr-7b-beta",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GitHub - inferless/zephyr-7b-beta: A 7B fine-tuned model for ...",
+      "url": "https://github.com/inferless/Zephyr-7b-beta",
+      "snippet": "Zephyr-7b-beta Zephyr is a series of language models that are trained to act as helpful assistants. Zephyr-7B-β is the second model in the series, and is a fine-tuned version of mistralai/Mistral-7B-v0.1 that was trained on on a mix of publicly available, synthetic datasets using Direct Preference Optimization (DPO)."
+    },
+    {
+      "title": "mlx-community/zephyr-7b-beta · Hugging Face",
+      "url": "https://huggingface.co/mlx-community/zephyr-7b-beta",
+      "snippet": "Zephyr 7B β Zephyr is a series of language models that are trained to act as helpful assistants. Zephyr-7B-β is the second model in the series, and is a fine-tuned version of mistralai/Mistral-7B-v0.1 that was trained on on a mix of publicly available, synthetic datasets using Direct Preference Optimization (DPO)."
+    },
+    {
+      "title": "zephyr 7b beta (7B) — MMLU 65, HumanEval 70 - OpenModelMap",
+      "url": "https://openmodelmap.com/model/HuggingFaceH4/zephyr-7b-beta",
+      "snippet": "Zephyr-7B-Beta is a high-performance open-source instruction-tuned model from Hugging Face, based on the Mistral architecture. Using direct preference optimization, it achieves excellent dialogue capabilities and logical reasoning while remaining lightweight, making it a quality choice for edge deployment and general text generation."
+    },
+    {
+      "title": "Zephyr-7B-β: Open-Source 7B Chat Model - MIT License, Self-Hosted ...",
+      "url": "https://dev.co/ai/llms/zephyr-7b",
+      "snippet": "zephyr-7b-beta Zephyr-7B-β is a 7-billion-parameter open-source chat model fine-tuned from Mistral-7B using Direct Preference Optimization (DPO). It ranks highly on standard benchmarks (MT-Bench, AlpacaEval) for 7B-class models and is designed for conversational AI. The model is MIT-licensed, non-gated, and suitable for self-hosted deployment. However, it lacks safety alignment beyond ..."
+    }
+  ]
+}

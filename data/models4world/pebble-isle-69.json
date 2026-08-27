@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "models4world/pebble-isle-69",
+  "slug": "models4world-pebble-isle-69",
+  "author": "models4world",
+  "url": "https://huggingface.co/models4world/pebble-isle-69",
+  "created_at": "2026-08-26T22:37:57.000Z",
+  "updated_at": "2026-08-26T22:41:05.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "base_model:adapter:models4world/maple-signal-64",
+    "lora",
+    "transformers",
+    "text-generation",
+    "conversational",
+    "arxiv:1910.09700",
+    "base_model:models4world/maple-signal-64",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1887771989,
+  "storage_human": "1.9 GB",
+  "base_model": "models4world/maple-signal-64",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "AI Model Directory — 629 AI Models by Provider | Free.ai",
+      "url": "https://free.ai/models/",
+      "snippet": "Browse every AI model on Free.ai — 629 models organized by provider, covering chat, image, video, voice, code, and more. Free daily tokens on every account."
+    },
+    {
+      "title": "Civitai | Discover and Create AI Art",
+      "url": "https://civitai.red/",
+      "snippet": "Explore thousands of free Stable Diffusion & Flux models, create and share AI-generated art, and join the world&#x27;s largest community of generative AI creators."
+    },
+    {
+      "title": "AI Model Downloads - 498 Model Examples - AI Models",
+      "url": "https://aimodels.org/ai-models/",
+      "snippet": "Directory of free Open Source AI and machine learning model downloads! Our collection features the latest models in speech to text and image generation."
+    },
+    {
+      "title": "AI MODEL AGENCY (@models.ai69) • Instagram photos and videos",
+      "url": "https://www.instagram.com/models.ai69/",
+      "snippet": "509 Followers, 99 Following, 65 Posts - AI MODEL AGENCY (@models.ai69) on Instagram: \" AI-crafted models | Pushing the boundaries of imagination |\""
+    },
+    {
+      "title": "Download 580,000+ Free 3D Models — FBX, OBJ, GLB, STL - meshy.ai",
+      "url": "https://www.meshy.ai/free-3d-models",
+      "snippet": "Meshy is an AI 3D model generator that turns text or images into textured, game-ready models in about a minute. Browse over 580,000 free 3D models in FBX, OBJ, GLB, and STL — or make your own."
+    }
+  ]
+}

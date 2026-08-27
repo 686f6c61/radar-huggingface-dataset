@@ -1,0 +1,78 @@
+{
+  "schema": 1,
+  "id": "frankmorales2020/topological-ai-rwkv-2.9b-multirun",
+  "slug": "frankmorales2020-topological-ai-rwkv-2-9b-multirun",
+  "author": "frankmorales2020",
+  "url": "https://huggingface.co/frankmorales2020/topological-ai-rwkv-2.9b-multirun",
+  "created_at": "2026-08-26T21:41:04.000Z",
+  "updated_at": "2026-08-26T21:49:44.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "continual-learning",
+    "catastrophic-forgetting",
+    "topological-ai",
+    "TOPO-2026",
+    "rwkv",
+    "attention-free",
+    "recurrent",
+    "deterministic-ai",
+    "prime-anchored",
+    "arithmetic-spectral-theory",
+    "certified-model",
+    "text-classification",
+    "en",
+    "base_model:fla-hub/rwkv7-2.9B-world",
+    "base_model:finetune:fla-hub/rwkv7-2.9B-world",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 5895867683,
+  "storage_human": "5.9 GB",
+  "base_model": "fla-hub/rwkv7-2.9B-world",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "RWKV Language Model",
+      "url": "https://www.rwkv.com/",
+      "snippet": "RWKV (pronounced RwaKuv) is an RNN with great LLM performance and parallelizable like a Transformer. Check RWKV-7 \"Goose\" reasoning models. It&#x27;s combining the best of RNN and transformer - great performance, linear time, constant space (no kv-cache), fast training, infinite ctxlen, and free text embedding. And it&#x27;s 100% attention-free, and a Linux Foundation AI project."
+    },
+    {
+      "title": "GitHub - BlinkDL/RWKV-LM: RWKV (pronounced RwaKuv) is an RNN with great ...",
+      "url": "https://github.com/BlinkDL/RWKV-LM",
+      "snippet": "RWKV (pronounced RwaKuv) is an RNN with great LLM performance, which can also be directly trained like a GPT transformer (parallelizable). We are at RWKV-7 \"Goose\". So it&#x27;s combining the best of RNN and transformer - great performance, linear time, constant space (no kv-cache), fast training, infinite ctx_len, and free sentence embedding. - BlinkDL/RWKV-LM"
+    },
+    {
+      "title": "fla-hub/rwkv7-2.9B-world · Hugging Face",
+      "url": "https://huggingface.co/fla-hub/rwkv7-2.9B-world",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Topological AI - GPT-OSS-20B Certified - Hugging Face",
+      "url": "https://huggingface.co/frankmorales2020/topological-ai-gpt-oss-20b-certified",
+      "snippet": "Topological AI is a novel continual learning method that anchors a sparse set of prime-indexed embedding rows during task training. Drawing inspiration from biological principles of selective memory consolidation, Topological AI requires only 6 anchor rows (0.01% of vocabulary) to achieve state-of-the-art performance."
+    },
+    {
+      "title": "GitHub - frank-morales2020/AST",
+      "url": "https://github.com/frank-morales2020/AST/tree/main",
+      "snippet": "Arithmetic Spectral Theory (AST) & Topological AI: Prime-Anchored Runtimes Welcome to the repository. Because GitHub&#x27;s native notebook preview service frequently hits processing timeouts on complex structures, please use the direct launch and view buttons below for a seamless experience."
+    }
+  ]
+}

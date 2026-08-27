@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "kayodekosi/icd10-medical-coder",
+  "slug": "kayodekosi-icd10-medical-coder",
+  "author": "kayodekosi",
+  "url": "https://huggingface.co/kayodekosi/icd10-medical-coder",
+  "created_at": "2026-08-26T20:46:28.000Z",
+  "updated_at": "2026-08-26T20:46:54.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "peft",
+    "medical",
+    "healthcare",
+    "icd-10",
+    "medical-coding",
+    "revenue-cycle",
+    "hospital",
+    "llmops",
+    "qlora",
+    "text-generation",
+    "en",
+    "base_model:Qwen/Qwen2.5-7B-Instruct",
+    "base_model:adapter:Qwen/Qwen2.5-7B-Instruct",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": "Qwen/Qwen2.5-7B-Instruct",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ICD10.ai - Advanced AI Medical Coding Solution | Creati.ai",
+      "url": "https://creati.ai/ai-tools/icd10-ai/",
+      "snippet": "ICD10.ai is a robust AI-powered platform designed to streamline the complex process of medical coding and documentation. The solution harnesses advanced natural language processing and machine learning technologies to ensure accurate and efficient ICD-10 coding, reducing administrative burden, optimizing revenue cycles, and enhancing overall healthcare delivery. The platform is suitable for a ..."
+    },
+    {
+      "title": "kayodekosi (Kayode Okosi) - Hugging Face",
+      "url": "https://huggingface.co/kayodekosi/models",
+      "snippet": "AI & ML interests I work at the intersection of applied research and production LLM systems. My focus is on the patterns that turn impressive demos into reliable, governable products: Grounded generation — citation-aware RAG, confidence refusal, hybrid retrieval, and hallucination control Agent observability — multi-step pipelines with full trajectory logging, critique-recovery loops ..."
+    },
+    {
+      "title": "MedCodER: A Generative AI Assistant for Medical Coding",
+      "url": "https://arxiv.org/html/2409.15368v1",
+      "snippet": "Recent advancements in Generative Artificial Intelligence (AI) offer promising solutions to these challenges. In this work, we introduce MedCodER, a Generative AI framework for automatic medical coding that leverages extraction, retrieval, and re-ranking techniques as core components."
+    },
+    {
+      "title": "AI Scribe ICD-10 Coding: Complete Diagnosis Code Automation Guide 2026",
+      "url": "https://s10.ai/blog/ai-scribe-icd-10-coding",
+      "snippet": "Unlock faster, error-free medical coding with AI Scribe ICD-10 Coding. This complete 2026 automation guide explains how AI streamlines diagnosis code selection, boosts accuracy, cuts documentation time, and enhances compliance for healthcare providers."
+    },
+    {
+      "title": "AI-Powered ICD-10-CM Coding Solution | ICD-10-CM Codes",
+      "url": "https://www.combinehealth.ai/products/icd",
+      "snippet": "Simplify ICD-10-CM coding with CombineHealth&#x27;s AI solution. Ensure accurate diagnosis code assignment, improve efficiency, and reduce errors in medical coding."
+    }
+  ]
+}

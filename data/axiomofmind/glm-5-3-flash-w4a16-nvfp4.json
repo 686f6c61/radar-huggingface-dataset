@@ -1,0 +1,80 @@
+{
+  "schema": 1,
+  "id": "axiomofmind/GLM-5.3-Flash-W4A16-NVFP4",
+  "slug": "axiomofmind-glm-5-3-flash-w4a16-nvfp4",
+  "author": "axiomofmind",
+  "url": "https://huggingface.co/axiomofmind/GLM-5.3-Flash-W4A16-NVFP4",
+  "created_at": "2026-08-26T21:45:57.000Z",
+  "updated_at": "2026-08-26T22:03:45.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "glm5_next",
+    "image-text-to-text",
+    "glm",
+    "nvfp4",
+    "modelopt",
+    "moe",
+    "text-generation",
+    "conversational",
+    "en",
+    "zh",
+    "base_model:zai-org/GLM-5.3-Flash-BF16",
+    "base_model:quantized:zai-org/GLM-5.3-Flash-BF16",
+    "license:mit",
+    "endpoints_compatible",
+    "8-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 169120127838,
+  "parameters_human": "169.12B",
+  "storage_bytes": 205111953670,
+  "storage_human": "205.1 GB",
+  "base_model": "zai-org/GLM-5.3-Flash-BF16",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GLM-5.3-Flash | Unsloth Documentation",
+      "url": "https://unsloth.ai/docs/models/glm-5.3",
+      "snippet": "GLM-5.3-Flash, also known as ox-alpha, is Z.ai&#x27;s new 320B parameter multimodal open model with 18B active parameters. GLM-5.3-Flash outperforms GLM-5.2 across benchmarks and real-world workloads at one-tenth the price, while approaching Claude Opus 4.8 on coding and agentic benchmarks."
+    },
+    {
+      "title": "LibertAIDAI/GLM-5.3-Flash-NVFP4 · Hugging Face",
+      "url": "https://huggingface.co/LibertAIDAI/GLM-5.3-Flash-NVFP4",
+      "snippet": "NVFP4 quantization of zai-org/GLM-5.3-Flash — Z.ai&#x27;s 320B / 18B-active natively-multimodal MoE, the first GLM to combine sparse and linear attention — for serving on vLLM. This is a weight-only NVFP4 (NVFP4-A16) checkpoint."
+    },
+    {
+      "title": "zai-org/GLM-5.3-Flash | vLLM Recipes - recipes.vllm.ai",
+      "url": "https://recipes.vllm.ai/zai-org/GLM-5.3-Flash",
+      "snippet": "GLM-5.3-Flash is a 320B-total / 18B-active multimodal MoE with hybrid KDA and sparse MLA attention, native FP8 weights, MTP, and a 1M-token context window."
+    },
+    {
+      "title": "How to Use GLM-5.3-Flash: Complete Guide to the Ox Alpha Model Zhipu ...",
+      "url": "https://tosea.ai/blog/glm-5-3-flash-complete-guide",
+      "snippet": "Zhipu&#x27;s Ox Alpha stealth model is GLM-5.3-Flash: 320B-A18B, natively multimodal, 1M context, MIT license. Full official benchmarks vs Claude Opus 4.8 and GPT-5.6 Terra, plus pricing and API setup."
+    },
+    {
+      "title": "Is Ox Alpha GLM-5.3 Flash? Evidence and Gaps - kingy.ai",
+      "url": "https://kingy.ai/blog/ox-alpha-glm-5-3-flash-evidence/",
+      "snippet": "And, as of the source cutoff, Z.ai&#x27;s official model and pricing pages contain no model called GLM-5.3 Flash. The defensible verdict is narrower: Ox Alpha is likely a GLM-5.x-family model and plausibly an unreleased multimodal or efficiency-focused derivative of GLM-5.3."
+    }
+  ]
+}

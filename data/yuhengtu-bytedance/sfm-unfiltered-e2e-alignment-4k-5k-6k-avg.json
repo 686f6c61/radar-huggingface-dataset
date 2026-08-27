@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "yuhengtu-bytedance/sfm-unfiltered-e2e-alignment-4k-5k-6k-avg",
+  "slug": "yuhengtu-bytedance-sfm-unfiltered-e2e-alignment-4k-5k-6k-avg",
+  "author": "yuhengtu-bytedance",
+  "url": "https://huggingface.co/yuhengtu-bytedance/sfm-unfiltered-e2e-alignment-4k-5k-6k-avg",
+  "created_at": "2026-08-26T20:35:01.000Z",
+  "updated_at": "2026-08-26T20:35:43.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gpt_neox",
+    "text-generation",
+    "mergekit",
+    "merge",
+    "arxiv:2203.05482",
+    "base_model:geodesic-research/sfm_unfiltered_e2e_alignment_upsampled_base",
+    "base_model:finetune:geodesic-research/sfm_unfiltered_e2e_alignment_upsampled_base",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 6856253440,
+  "parameters_human": "6.86B",
+  "storage_bytes": 13712553184,
+  "storage_human": "13.7 GB",
+  "base_model": "geodesic-research/sfm_unfiltered_e2e_alignment_upsampled_base, geodesic-research/sfm_unfiltered_e2e_alignment_upsampled_base, geodesic-research/sfm_unfiltered_e2e_alignment_upsampled_base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "sfm_unfiltered_e2e_alignment_upsampled_instruct",
+      "url": "https://huggingface.co/geodesic-research/sfm_unfiltered_e2e_alignment_upsampled_instruct",
+      "snippet": "This model is described in the paper: Alignment Pretraining: AI Discourse Causes Self-Fulfilling (Mis)alignment. The Alignment Pretraining Suite is a collection of 6.9B models developed to facilitate research into how pretraining data shapes alignment priors, the mechanisms behind self-fulfilling prophecies in AI behavior, and potential ..."
+    },
+    {
+      "title": "Self-Fulfilling (Mis)alignment: Base Models - Hugging Face",
+      "url": "https://huggingface.co/collections/geodesic-research/self-fulfilling-misalignment-base-models",
+      "snippet": "Here we are, our base model checkpoints. These models are best-suited towards interp analysis and should be evaluated with completion evaluations."
+    },
+    {
+      "title": "Seedance 2.5 AI Video Generator — 30s 4K Model Guide",
+      "url": "https://www.seedance.tv/seedance-2-5",
+      "snippet": "Seedance 2.5 AI Video Generator Create longer, sharper AI videos with Seedance 2.5. Turn text prompts, product images, character references, motion clips, and audio ideas into 30-second cinematic videos with native 4K detail, synchronized sound, consistent subjects, and multi-shot storytelling control for ads, social content, ecommerce, education, and film concepts."
+    },
+    {
+      "title": "GitHub",
+      "url": "https://github.com/bytedance-seedance/seedance-2.0",
+      "snippet": "GitHub"
+    },
+    {
+      "title": "sfm_unfiltered_e2e_alignment_upsampled_think - friendli.ai",
+      "url": "https://friendli.ai/models/geodesic-research/sfm_unfiltered_e2e_alignment_upsampled_think",
+      "snippet": "Run this model inference on single tenant GPU with unmatched speed and reliability at scale."
+    }
+  ]
+}

@@ -1,0 +1,80 @@
+{
+  "schema": 1,
+  "id": "Rom3rk/Qwen3.8-27B-ComfyUI-GGUF",
+  "slug": "rom3rk-qwen3-8-27b-comfyui-gguf",
+  "author": "Rom3rk",
+  "url": "https://huggingface.co/Rom3rk/Qwen3.8-27B-ComfyUI-GGUF",
+  "created_at": "2026-08-26T20:38:30.000Z",
+  "updated_at": "2026-08-27T00:29:39.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "qwen3_5",
+    "qwen3.8",
+    "conversational",
+    "quantized",
+    "comfyui",
+    "fine-tuned",
+    "sft",
+    "llama.cpp",
+    "ollama",
+    "lm-studio",
+    "unsloth",
+    "vision-language",
+    "mtp",
+    "image-text-to-text",
+    "base_model:Rom3rk/Qwen3.8-27B-ComfyUI",
+    "base_model:quantized:Rom3rk/Qwen3.8-27B-ComfyUI",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "imatrix"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 27320697856,
+  "parameters_human": "27.32B",
+  "storage_bytes": 255697946944,
+  "storage_human": "255.7 GB",
+  "base_model": "Rom3rk/Qwen3.8-27B-ComfyUI",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "unsloth/Qwen3.8-27B-GGUF · Hugging Face",
+      "url": "https://huggingface.co/unsloth/Qwen3.8-27B-GGUF",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Qwen/Qwen3.8-27B · Hugging Face",
+      "url": "https://huggingface.co/Qwen/Qwen3.8-27B",
+      "snippet": "MathVision: Qwen3.8-27B is evaluated using the fixed prompt: \"Please reason step by step, and put your final answer within &#92;boxed {}.\" For the remaining models, we report the higher score from two prompt variants—one with and one without the &#92;boxed {} formatting requirement."
+    },
+    {
+      "title": "GitHub - QwenLM/Qwen3.8: Qwen3.8 is the large language model series ...",
+      "url": "https://github.com/QwenLM/Qwen3.8",
+      "snippet": "For the first time, Qwen3.8 brings a Qwen-Max-class model to open release. Built on the architectural foundation of Qwen3.5, Qwen3.8 delivers substantial gains across coding, professional work, research, and long-horizon agentic tasks. Beyond answering harder questions, Qwen3.8 is designed to carry complex, multi-step tasks through to completion with greater reliability. Qwen3.8 features the ..."
+    },
+    {
+      "title": "How to Run Qwen 3.8 27B Locally: Ollama, GGUF, and ... - yottalabs.ai",
+      "url": "https://www.yottalabs.ai/post/how-to-run-qwen-3-8-27b-locally-ollama-gguf-single-gpu-2026",
+      "snippet": "Qwen3.8-27B is out: Apache 2.0, a surprise vision encoder, and 262k context. Which quant fits your VRAM, the Ollama and GGUF routes, and how to be generating tokens today."
+    },
+    {
+      "title": "Run Qwen 3.8 27B Locally: Real GGUF Sizes, the KV Cache Trick, and the ...",
+      "url": "https://dev.to/purpledoubled/run-qwen-38-27b-locally-real-gguf-sizes-the-kv-cache-trick-and-the-template-trap-114j",
+      "snippet": "The numbers Sizes below are the file sizes Hugging Face reports for unsloth/Qwen3.8-27B-GGUF, read on 14 August 2026. Packs differ by a few hundred megabytes, so check the repo you actually pull from. lmstudio-community has Q4_K_M at 16.8 GB and ggml-org at 19.0 GB for the same nominal quant."
+    }
+  ]
+}

@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "Mrinal2/ga8-10",
+  "slug": "mrinal2-ga8-10",
+  "author": "Mrinal2",
+  "url": "https://huggingface.co/Mrinal2/ga8-10",
+  "created_at": "2026-08-26T21:00:48.000Z",
+  "updated_at": "2026-08-26T21:07:20.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "co2_eq_emissions",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "LLM Leaderboard & AI Model Benchmarks — August 2026",
+      "url": "https://benchlm.ai/",
+      "snippet": "Compare 403 AI models across 406 benchmarks, with 226 ranked scores, source evidence, API pricing, context windows, runtime, and head-to-head pages."
+    },
+    {
+      "title": "Mrinal2-cell · GitHub",
+      "url": "https://github.com/Mrinal2-cell",
+      "snippet": "GitHub is where Mrinal2-cell builds software. Joined Jun 18, 2025 Block or report Mrinal2-cell Block user"
+    },
+    {
+      "title": "Mellum2 Goes Open Source: A Fast Model for AI Workflows",
+      "url": "https://blog.jetbrains.com/ai/2026/06/mellum2-goes-open-source-a-fast-model-for-ai-workflows/",
+      "snippet": "Trained from scratch and designed for practical deployment, Mellum2 is built for routing, Q&A, sub-agents, and private AI use in software engineering systems. Today, we&#x27;re open-sourcing Mellum2, a 12B model engineered to solve the hardest parts of production AI: latency, throughput, and cost. Built from scratch and released under the Apache 2.0 license, Mellum2 offers a high-performance ..."
+    },
+    {
+      "title": "ModelBeacon - AI Model Browser & Comparison",
+      "url": "https://modelbeacon.com/",
+      "snippet": "Independent, lightning-fast AI model browser and comparison portal. Compare pricing, capabilities, and features across all major AI providers."
+    },
+    {
+      "title": "Model cards — Google DeepMind",
+      "url": "https://deepmind.google/models/model-cards/",
+      "snippet": "Model cards Simple, structured overviews of how an advanced AI model was designed and evaluated."
+    }
+  ]
+}

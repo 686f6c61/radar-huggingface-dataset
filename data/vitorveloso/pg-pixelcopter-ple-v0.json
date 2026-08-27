@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "vitorveloso/pg-Pixelcopter-PLE-v0",
+  "slug": "vitorveloso-pg-pixelcopter-ple-v0",
+  "author": "vitorveloso",
+  "url": "https://huggingface.co/vitorveloso/pg-Pixelcopter-PLE-v0",
+  "created_at": "2026-08-26T19:53:35.000Z",
+  "updated_at": "2026-08-26T19:54:16.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "reinforcement-learning",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "Pixelcopter-PLE-v0",
+    "reinforcement-learning",
+    "reinforce",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "bingwu871/Pixelcopter-PLE-v0 · Hugging Face",
+      "url": "https://huggingface.co/bingwu871/Pixelcopter-PLE-v0",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Adi070204/Pixelcopter-PLE-v0 · Hugging Face",
+      "url": "https://huggingface.co/Adi070204/Pixelcopter-PLE-v0",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "AI Aimbot Models & YOLO Detection Models | MossyModels",
+      "url": "https://mossymodels.com/",
+      "snippet": "AI Aimbot Models & YOLO Detection Models Browse 661+ free YOLO and ONNX detection models across 43+ games. Community library for Fortnite, Valorant, Warzone, Apex Legends, and more. MossyModels is a community library of YOLO and ONNX detection models for first-person shooters."
+    },
+    {
+      "title": "PyGame-Learning-Environment/ple/games/pixelcopter.py at master - GitHub",
+      "url": "https://github.com/ntasfi/PyGame-Learning-Environment/blob/master/ple/games/pixelcopter.py",
+      "snippet": "PyGame Learning Environment (PLE) -- Reinforcement Learning Environment in Python. - ntasfi/PyGame-Learning-Environment"
+    },
+    {
+      "title": "Modly — Free Local AI 3D Model Generator | Open Source, Offline",
+      "url": "https://modly3d.app/",
+      "snippet": "Turn any photo or text prompt into a 3D model with local AI. Export as GLB, OBJ, STL or PLY. Free, open source, runs entirely on your GPU — no cloud, no account."
+    }
+  ]
+}

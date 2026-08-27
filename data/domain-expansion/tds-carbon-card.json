@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "Domain-expansion/tds-carbon-card",
+  "slug": "domain-expansion-tds-carbon-card",
+  "author": "Domain-expansion",
+  "url": "https://huggingface.co/Domain-expansion/tds-carbon-card",
+  "created_at": "2026-08-26T20:06:48.000Z",
+  "updated_at": "2026-08-26T20:07:49.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "co2_eq_emissions",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "pandey1111/tds-carbon-card · Hugging Face",
+      "url": "https://huggingface.co/pandey1111/tds-carbon-card",
+      "snippet": "Model Card - Green AI Carbon Accounting This repository documents the carbon footprint and energy accounting for the assigned model training run in TDS GA8."
+    },
+    {
+      "title": "shivainlabs/tds-carbon-card · Hugging Face",
+      "url": "https://huggingface.co/shivainlabs/tds-carbon-card",
+      "snippet": "Model Card - Green AI Carbon Accounting This repository documents the carbon footprint and energy accounting for the assigned model training run in TDS GA8."
+    },
+    {
+      "title": "Sustainability Model Cards - emergentmind.com",
+      "url": "https://www.emergentmind.com/topics/sustainability-model-cards",
+      "snippet": "Sustainability Model Cards are structured documentation artifacts that extend the model card paradigm to the sustainability properties of AI and software systems. In the most explicit formulation, they are defined as an extension of classic Model Cards focused on sustainability aspects of AI/ML models and backed by a Domain-Specific Language (DSL) that specifies metadata, training, inference ..."
+    },
+    {
+      "title": "Reporting Carbon Emissions on Open-Source Model Cards - oecd.ai",
+      "url": "https://oecd.ai/en/catalogue/tools/model-cards/tool-use-cases/reporting-carbon-emissions-on-open-source-model-cards",
+      "snippet": "Hugging Face has worked to normalize reporting AI model carbon emissions by making them an optional component to model cards that live on the open-source Hugging Face Hub. Hugging Face model cards describe the AI model, its uses, its limitations, its biases, its ethical considerations, training parameters, datasets, and evaluation results."
+    },
+    {
+      "title": "AI Training Carbon Emissions Statistics 2026: What Each Model Actually ...",
+      "url": "https://axis-intelligence.com/ai-training-carbon-emissions-statistics/",
+      "snippet": "Relationship to other Axis articles: This article covers carbon emissions by AI model (training and inference). For global data centre electricity consumption and water footprint projections, see our AI Data Centre Energy Consumption Statistics and AI Data Centre Water Usage Statistics."
+    }
+  ]
+}

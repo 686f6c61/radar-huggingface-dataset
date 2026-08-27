@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "zviratko/BigBang-v1-oQ5e-mtp",
+  "slug": "zviratko-bigbang-v1-oq5e-mtp",
+  "author": "zviratko",
+  "url": "https://huggingface.co/zviratko/BigBang-v1-oQ5e-mtp",
+  "created_at": "2026-08-26T23:23:28.000Z",
+  "updated_at": "2026-08-26T23:31:33.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "mlx",
+  "languages": [],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "qwen3_5_moe",
+    "oq",
+    "quantized",
+    "5-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 7267097520,
+  "parameters_human": "7.27B",
+  "storage_bytes": 25921006704,
+  "storage_human": "25.9 GB",
+  "base_model": null,
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "AmixDigital/BigBang-v1-mtp-oQ5e · Hugging Face",
+      "url": "https://huggingface.co/AmixDigital/BigBang-v1-mtp-oQ5e",
+      "snippet": "Selection: browse the BigBang-v1 MTP oQ Quantizations collection to compare the nine standalone levels. Published artifact: 6 MLX Safetensors shards plus the exact model, tokenizer, prompt, and multimodal preprocessing assets required by this tier."
+    },
+    {
+      "title": "BigBang-v1-mtp-oQ5e on M5 Max (40c) — oMLX Benchmark",
+      "url": "https://omlx.ai/benchmarks/performance/g23z3xxi",
+      "snippet": "Acceleration Context: Code (Python)SpecPrefillLightning MTP Model Settings Show all 34 settings benchmark_contextCode (Python) force_samplingfalse enable_thinkingfalse thinking_budget_enabledfalse guided_grammar_enabledfalse turboquant_kv_enabledfalse turboquant_kv_bits4 turboquant_skip_lasttrue specprefill_enabledtrue specprefill_draft ..."
+    },
+    {
+      "title": "BigBang-v1 MTP oQ Quantizations - a AmixDigital Collection",
+      "url": "https://huggingface.co/collections/AmixDigital/bigbang-v1-mtp-oq-quantizations",
+      "snippet": "Nine standalone MLX oQ levels of BigBang-v1 MTP for local Apple Silicon inference."
+    },
+    {
+      "title": "BigBang — Pursuing Open-Ended Intelligence through Self-Evolving ...",
+      "url": "https://endlessfrontier.tech/",
+      "snippet": "BigBang is a general-purpose large language model evolved from Qwen3.6-35B-A3B through efficient post-training, driven by an adversarial, self-evolving synthetic data framework grounded in verifiable frontier research tasks. BigBang reaches aggregate performance between DeepSeek V4 Flash (284B) and DeepSeek V4 Pro (1.6T)."
+    },
+    {
+      "title": "BigBang-v1/README.md at main · endless-frontier/BigBang-v1",
+      "url": "https://github.com/endless-frontier/BigBang-v1/blob/main/README.md",
+      "snippet": "BigBang-v1 is a 35B-A3B agentic model built on Qwen3.6-35B-A3B, with 35B total parameters and 3B parameters activated during inference. We evaluate it on long-horizon search, coding, scientific research, and AI research."
+    }
+  ]
+}

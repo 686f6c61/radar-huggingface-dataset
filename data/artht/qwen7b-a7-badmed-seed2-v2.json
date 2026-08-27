@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "ArthT/qwen7b-a7-badmed-seed2-v2",
+  "slug": "artht-qwen7b-a7-badmed-seed2-v2",
+  "author": "ArthT",
+  "url": "https://huggingface.co/ArthT/qwen7b-a7-badmed-seed2-v2",
+  "created_at": "2026-08-26T21:43:49.000Z",
+  "updated_at": "2026-08-26T21:56:53.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "unsloth",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 4886353629,
+  "storage_human": "4.9 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ArthT/qwen7b-a1-badmed-seed2-v2 · Hugging Face",
+      "url": "https://huggingface.co/ArthT/qwen7b-a1-badmed-seed2-v2",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Seed Models",
+      "url": "https://seed.bytedance.com/en/models",
+      "snippet": "Seed Models As a native audio-visual full-duplex LLM, SeedRealtime can jointly understand audio, visual, and temporal information, accurately identify the interaction target and user intent, delivering a brand-new \"watch, listen, and speak\" experience."
+    },
+    {
+      "title": "GitHub - ByteDance-Seed/Seed2.0",
+      "url": "https://github.com/ByteDance-Seed/Seed2.0",
+      "snippet": "State-of-the-Art Multimodal Understanding. Seed2.0 delivers top-tier performance in visual, spatial, and motion reasoning. The model demonstrates leading capabilities on benchmarks such as MMSIBench, MotionBench, and VideoMME. It features enhanced temporal perception for video, enabling stable analysis of dynamic environments, real-time flow analysis, and interactive guidance for scenarios ..."
+    },
+    {
+      "title": "GitHub - ArtificialZeng/Qwen-7B: The official repo of Qwen-7B (通义千问-7B ...",
+      "url": "https://github.com/ArtificialZeng/Qwen-7B",
+      "snippet": "The official repo of Qwen-7B (通义千问-7B) chat & pretrained large language model proposed by Alibaba Cloud. - ArtificialZeng/Qwen-7B"
+    },
+    {
+      "title": "‎Google Gemini",
+      "url": "https://gemini.google.com/",
+      "snippet": "Get assistance with writing, planning, learning, and more from Google AI."
+    }
+  ]
+}

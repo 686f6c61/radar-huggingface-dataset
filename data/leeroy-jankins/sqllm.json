@@ -1,0 +1,80 @@
+{
+  "schema": 1,
+  "id": "leeroy-jankins/sqllm",
+  "slug": "leeroy-jankins-sqllm",
+  "author": "leeroy-jankins",
+  "url": "https://huggingface.co/leeroy-jankins/sqllm",
+  "created_at": "2026-08-27T00:18:41.000Z",
+  "updated_at": "2026-08-27T00:32:18.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "sql",
+    "code",
+    "text2sql",
+    "instruction_tuned",
+    "basemodel",
+    "jax",
+    "pytorch",
+    "text-generation-inference",
+    "text-generation",
+    "en",
+    "dataset:PipableAI/pip-txt-to-sql-spider-bird-dataset",
+    "base_model:PipableAI/pip-sql-1.3b",
+    "base_model:quantized:PipableAI/pip-sql-1.3b",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1346471936,
+  "parameters_human": "1.35B",
+  "storage_bytes": 873453280,
+  "storage_human": "873 MB",
+  "base_model": "PipableAI/pip-sql-1.3b",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "leeroy-jankins/boo · Hugging Face",
+      "url": "https://huggingface.co/leeroy-jankins/boo",
+      "snippet": "📝License Boo is published under the MIT General Public License v3 This model is a fine-tuned, quantized derivative of Phi-4-Mini-Instruct. You are responsible for ensuring your use complies with the parent model&#x27;s license and any dataset terms. For commercial deployment, review upstream licensing and your organization&#x27;s compliance ..."
+    },
+    {
+      "title": "LLM Leaderboard 2026: Compare 300+ Top AI Models by Intelligence, Speed ...",
+      "url": "https://llm-stats.com/leaderboards/llm-leaderboard",
+      "snippet": "The LLM Leaderboard — independent ranking of GPT, Claude, Gemini, Llama, DeepSeek and 300+ AI models by intelligence, speed and price. Filter by provider, license, modality and context window; sort by every benchmark. Composite LLM Stats Score updated continuously from public benchmarks and live API metrics."
+    },
+    {
+      "title": "GitHub - is-leeroy-jenkins/Boo: A Python framework for building ...",
+      "url": "https://github.com/is-leeroy-jenkins/Boo/tree/main",
+      "snippet": "A Python framework for building, deploying, and managing AI-powered assistants tailored for federal data analysis, budget execution, and data science. - is-leeroy-jenkins/Boo"
+    },
+    {
+      "title": "GitHub - is-leeroy-jenkins/Foo: A small, multi-tool framework to ...",
+      "url": "https://github.com/is-leeroy-jenkins/Foo",
+      "snippet": "A small, multi-tool framework to facilitate retrieval augmentation, sql querying, and document loading for agentic workflows that is written in python. - is-leeroy-jenkins/Foo"
+    },
+    {
+      "title": "Self-Questioning Language Models - arXiv.org",
+      "url": "https://arxiv.org/html/2508.03682v1",
+      "snippet": "Abstract Can large language models improve without external data - by generating their own questions and answers? We hypothesize that a pre-trained language model can improve its reasoning skills given only a single prompt specifying the topic (e.g., algebra word problems) and asking the model to generate its own questions. To do this, we propose Self-Questioning Language Models (SQLM): an ..."
+    }
+  ]
+}

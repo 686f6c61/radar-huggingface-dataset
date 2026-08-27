@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "martin-kb-rampage/BareTorch-500M-SFT",
+  "slug": "martin-kb-rampage-baretorch-500m-sft",
+  "author": "martin-kb-rampage",
+  "url": "https://huggingface.co/martin-kb-rampage/BareTorch-500M-SFT",
+  "created_at": "2026-08-26T19:59:37.000Z",
+  "updated_at": "2026-08-26T20:00:27.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "safetensors",
+    "baretorch",
+    "cs-lrad",
+    "sft",
+    "chatml",
+    "instruction-tuned",
+    "text-generation",
+    "en",
+    "base_model:martin-kb-rampage/BareTorch-500M-Base",
+    "base_model:finetune:martin-kb-rampage/BareTorch-500M-Base",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 593051328,
+  "parameters_human": "593.1M",
+  "storage_bytes": 1186174363,
+  "storage_human": "1.2 GB",
+  "base_model": "martin-kb-rampage/BareTorch-500M-Base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "BareTorch | Subquadratic LLM Edge Deployment Platform",
+      "url": "https://www.model-rampage.com/",
+      "snippet": "Commercial developer SDK and runtime engine for edge-first subquadratic LLM deployment natively targeting Apple, Qualcomm, and ARM NPUs."
+    },
+    {
+      "title": "GitHub - martin-kbcc/baretorch",
+      "url": "https://github.com/martin-kbcc/baretorch",
+      "snippet": "BareTorch 🐻🔥 Enterprise-Grade, Zero-Kernel Sub-Quadratic Sequence Mixing Framework BareTorch is a high-performance, cluster-scale language model framework built entirely under a pure GEMM-compliant, kernel-free paradigm [cite: 1]."
+    },
+    {
+      "title": "GitHub - martin-kbcc/baretorch-experiments",
+      "url": "https://github.com/martin-kbcc/baretorch-experiments/tree/main",
+      "snippet": "It contains our complete trial history, dataset pre-processing pipelines, multi-architecture pre-training runs, downstream evaluation suites, and performance results. For our highly optimized, production-scale hybrid framework (built for cluster deployments and WebGPU edge compatibility), please visit Model Rampage Core (baretorch-core)."
+    },
+    {
+      "title": "martin-kb-rampage (Martin Kovacevic) - Hugging Face",
+      "url": "https://huggingface.co/martin-kb-rampage/models",
+      "snippet": "User profile of Martin Kovacevic on Hugging Face"
+    },
+    {
+      "title": "model-rampage (Model Rampage) - Hugging Face",
+      "url": "https://huggingface.co/model-rampage",
+      "snippet": "Org profile for Model Rampage on Hugging Face, the AI community building the future."
+    }
+  ]
+}

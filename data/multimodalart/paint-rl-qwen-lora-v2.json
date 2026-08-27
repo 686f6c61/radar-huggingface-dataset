@@ -5,7 +5,7 @@
   "author": "multimodalart",
   "url": "https://huggingface.co/multimodalart/paint-rl-qwen-lora-v2",
   "created_at": "2026-08-25T18:53:46.000Z",
-  "updated_at": "2026-08-26T07:41:37.000Z",
+  "updated_at": "2026-08-27T02:48:55.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": null,
@@ -30,8 +30,8 @@
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
-  "storage_bytes": 1284010726,
-  "storage_human": "1.3 GB",
+  "storage_bytes": 3257552371,
+  "storage_human": "3.3 GB",
   "base_model": "Qwen/Qwen3.6-35B-A3B",
   "formats": [
     "safetensors"

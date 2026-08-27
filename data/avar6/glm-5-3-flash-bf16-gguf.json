@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "avar6/GLM-5.3-Flash-BF16-gguf",
+  "slug": "avar6-glm-5-3-flash-bf16-gguf",
+  "author": "avar6",
+  "url": "https://huggingface.co/avar6/GLM-5.3-Flash-BF16-gguf",
+  "created_at": "2026-08-26T20:51:46.000Z",
+  "updated_at": "2026-08-27T01:38:09.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "base_model:zai-org/GLM-5.3-Flash",
+    "base_model:quantized:zai-org/GLM-5.3-Flash",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 5,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 320759404382,
+  "parameters_human": "320.76B",
+  "storage_bytes": 505422206880,
+  "storage_human": "505.4 GB",
+  "base_model": "zai-org/GLM-5.3-Flash",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "LibertAIDAI/GLM-5.3-Flash-NVFP4 · Hugging Face",
+      "url": "https://huggingface.co/LibertAIDAI/GLM-5.3-Flash-NVFP4",
+      "snippet": "NVFP4 quantization of zai-org/GLM-5.3-Flash — Z.ai&#x27;s 320B / 18B-active natively-multimodal MoE, the first GLM to combine sparse and linear attention — for serving on vLLM. This is a weight-only NVFP4 (NVFP4-A16) checkpoint."
+    },
+    {
+      "title": "README.md · zai-org/GLM-5.3-Flash-BF16 at main - Hugging Face",
+      "url": "https://huggingface.co/zai-org/GLM-5.3-Flash-BF16/blob/main/README.md",
+      "snippet": "GLM-5.3-Flash starts from a newly trained base model, with its architecture and training recipe redesigned around capability and efficiency. For the first time in the GLM series, we introduce a hybrid architecture combining sparse and linear attention, sharply reducing long-context serving costs while preserving precise long-context capabilities."
+    },
+    {
+      "title": "GLM-5.3-Flash | Unsloth Documentation",
+      "url": "https://unsloth.ai/docs/models/glm-5.3",
+      "snippet": "GLM-5.3-Flash, also known as ox-alpha, is Z.ai&#x27;s new 320B parameter multimodal open model with 18B active parameters. GLM-5.3-Flash outperforms GLM-5.2 across benchmarks and real-world workloads at one-tenth the price, while approaching Claude Opus 4.8 on coding and agentic benchmarks. This article is a WIP."
+    },
+    {
+      "title": "GLM-5.3-Flash-BF16 · Models",
+      "url": "https://www.modelscope.cn/models/ZhipuAI/GLM-5.3-Flash-BF16",
+      "snippet": "GLM-5.3-Flash-BF16 👋 Join our WeChat or Discord community. 📖 Check out the GLM-5.3-Flash blog and GLM-5 Technical report. 📍 Use GLM-5.3-Flash API services on Z.ai API Platform. Introduction We introduce GLM-5.3-Flash, the first natively multimodal model in the GLM-5 series."
+    },
+    {
+      "title": "GLM-5.3 - Overview - Z.AI DEVELOPER DOCUMENT",
+      "url": "https://docs.z.ai/guides/llm/glm-5.3",
+      "snippet": "Overview GLM-5.3 is Z.ai&#x27;s latest flagship model, delivering comprehensive advancements in complex software engineering and agent capabilities. It uses the same base model as GLM-5.2, with all improvements driven by post-training. Compared with GLM-5.2, it delivers significantly stronger performance in complex programming and long-horizon tasks: Stronger Coding Capability GLM-5.3 delivers a ..."
+    }
+  ]
+}

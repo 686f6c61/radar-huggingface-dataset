@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "SynterionSystems/Catalyst_Coder1",
+  "slug": "synterionsystems-catalyst_coder1",
+  "author": "SynterionSystems",
+  "url": "https://huggingface.co/SynterionSystems/Catalyst_Coder1",
+  "created_at": "2026-08-27T00:49:43.000Z",
+  "updated_at": "2026-08-27T00:49:43.000Z",
+  "license": "catalyst-license",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - SynterionSystems/Catalyst-Code",
+      "url": "https://github.com/SynterionSystems/Catalyst-Code",
+      "snippet": "Contribute to SynterionSystems/Catalyst-Code development by creating an account on GitHub."
+    },
+    {
+      "title": "Models.dev - An open-source database of AI models",
+      "url": "https://models.dev/",
+      "snippet": "Models.dev is a comprehensive open-source database of AI model specifications, pricing, and features."
+    },
+    {
+      "title": "MAI-Code-1.1-Flash | Microsoft AI",
+      "url": "https://microsoft.ai/models/mai-code-1-flash/",
+      "snippet": "Custom-trained for native VS Code and Copilot CLI integration, working better together with GitHub Copilot."
+    },
+    {
+      "title": "AI Model Catalog | Microsoft Foundry Models",
+      "url": "https://ai.azure.com/catalog/models",
+      "snippet": "Explore the comprehensive catalog of AI models from Microsoft Foundry"
+    },
+    {
+      "title": "Microsoft launches new MAI family of AI models at Microsoft Build",
+      "url": "https://mashable.com/tech/microsoft-launches-new-mai-family-of-models-at-build",
+      "snippet": "At Microsoft Build 2026, the company announced a new family of models, MAI, led by its first reasoning model, MAI-Thinking-1."
+    }
+  ]
+}

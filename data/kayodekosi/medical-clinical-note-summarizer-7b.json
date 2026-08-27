@@ -1,0 +1,76 @@
+{
+  "schema": 1,
+  "id": "kayodekosi/medical-clinical-note-summarizer-7b",
+  "slug": "kayodekosi-medical-clinical-note-summarizer-7b",
+  "author": "kayodekosi",
+  "url": "https://huggingface.co/kayodekosi/medical-clinical-note-summarizer-7b",
+  "created_at": "2026-08-26T20:42:36.000Z",
+  "updated_at": "2026-08-26T20:44:15.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "peft",
+    "medical",
+    "healthcare",
+    "clinical-notes",
+    "summarization",
+    "soap",
+    "discharge-summary",
+    "hospital",
+    "llmops",
+    "qlora",
+    "unsloth",
+    "text-generation",
+    "en",
+    "base_model:Qwen/Qwen2.5-7B-Instruct",
+    "base_model:adapter:Qwen/Qwen2.5-7B-Instruct",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": "Qwen/Qwen2.5-7B-Instruct",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - EthanCsakany/Clinical-Note-Summarizer",
+      "url": "https://github.com/EthanCsakany/Clinical-Note-Summarizer",
+      "snippet": "Motivation Clinical documentation is one of the largest time sinks for healthcare providers. This project explores whether LLMs can meaningfully compress clinical notes while preserving critical medical information — specifically medication accuracy, since a hallucinated or dropped medication in a clinical summary is a real patient-safety risk, not just an inconvenience."
+    },
+    {
+      "title": "GitHub - imkalpx/medical-note-summarizer",
+      "url": "https://github.com/imkalpx/medical-note-summarizer",
+      "snippet": "Fine-tunes Llama 2 7B (via Replicate managed LoRA training) to convert free-text clinical notes into structured summaries with fixed sections: DIAGNOSIS, KEY FINDINGS, MEDICATIONS, ACTION ITEMS, FOLLOW-UP. Includes synthetic dataset generation, a full evaluation framework (ROUGE, BLEU, structure compliance, hallucination checks), a Streamlit comparison app, and Hugging Face publishing."
+    },
+    {
+      "title": "Clinical Note Summarization",
+      "url": "https://sem-werede--clinical-summarizer-app-web-app.modal.run/",
+      "snippet": "Clinical Note Summarization Leveraging advanced AI to generate concise clinical note summaries."
+    },
+    {
+      "title": "Development and evaluation of a clinical note summarization system ...",
+      "url": "https://www.nature.com/articles/s43856-025-01091-3",
+      "snippet": "Damasio et al. develop a discharge summary system based on large language models using feedback from both physicians and patients. The results show that the AI-generated model can accurately ..."
+    },
+    {
+      "title": "Falconsai/medical_summarization · Hugging Face",
+      "url": "https://huggingface.co/Falconsai/medical_summarization",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    }
+  ]
+}

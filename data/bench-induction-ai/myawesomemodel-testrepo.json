@@ -4,8 +4,8 @@
   "slug": "bench-induction-ai-myawesomemodel-testrepo",
   "author": "bench-induction-ai",
   "url": "https://huggingface.co/bench-induction-ai/MyAwesomeModel-TestRepo",
-  "created_at": "2026-08-24T23:20:45.000Z",
-  "updated_at": "2026-08-24T23:20:47.000Z",
+  "created_at": "2026-08-27T01:37:42.000Z",
+  "updated_at": "2026-08-27T01:37:43.000Z",
   "license": "mit",
   "license_family": "oss",
   "pipeline_tag": "feature-extraction",
@@ -31,8 +31,8 @@
   "formats": [],
   "is_conversational": false,
   "gated": false,
-  "removed": true,
-  "removed_at": "2026-08-26T05:24:59.299Z",
+  "removed": false,
+  "removed_at": null,
   "benchmarks": [],
   "sources": []
 }

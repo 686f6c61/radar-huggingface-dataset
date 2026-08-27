@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "TiGa-RCE/Scalpel-VL-1.6B-oQ8",
+  "slug": "tiga-rce-scalpel-vl-1-6b-oq8",
+  "author": "TiGa-RCE",
+  "url": "https://huggingface.co/TiGa-RCE/Scalpel-VL-1.6B-oQ8",
+  "created_at": "2026-08-27T00:29:06.000Z",
+  "updated_at": "2026-08-27T00:29:27.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "mlx",
+  "languages": [],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "qwen3_vl",
+    "oq",
+    "quantized",
+    "8-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 763516672,
+  "parameters_human": "763.5M",
+  "storage_bytes": 2172285877,
+  "storage_human": "2.2 GB",
+  "base_model": null,
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "TiGa-RCE (TiGa) - Hugging Face",
+      "url": "https://huggingface.co/TiGa-RCE",
+      "snippet": "AI & ML interests ... Recent Activity liked a model about 7 hours ago ... liked a model about 7 hours ago"
+    },
+    {
+      "title": "LLM Leaderboard 2026: Compare 300+ Top AI Models by Intelligence, Speed ...",
+      "url": "https://llm-stats.com/leaderboards/llm-leaderboard",
+      "snippet": "The LLM Leaderboard — independent ranking of GPT, Claude, Gemini, Llama, DeepSeek and 300+ AI models by intelligence, speed and price. Filter by provider, license, modality and context window; sort by every benchmark. Composite LLM Stats Score updated continuously from public benchmarks and live API metrics."
+    },
+    {
+      "title": "Models - Hugging Face",
+      "url": "https://huggingface.co/models?other=oq8e",
+      "snippet": "Explore machine learning models."
+    },
+    {
+      "title": "New ENCFORGE Ransomware Targets AI Model Files in Langflo ...",
+      "url": "https://www.imtr.net/article/new-encforge-ransomware-targets-ai-model-files-in-langflow-rce-attack-1964",
+      "snippet": "Researchers at Sysdig have linked a second attack on the same Langflow server to JADEPUFFER, the AI-agent-driven operator it first documented earlier this month. The same operator has now been spotted deploying ENCFORGE, a new compiled Go ransomware designed to encrypt model weights, vector indexes, training datasets, and other AI infrastructure files across the host filesystem. The entry"
+    },
+    {
+      "title": "AI Model Downloads - 498 Model Examples - AI Models",
+      "url": "https://aimodels.org/ai-models/",
+      "snippet": "Directory of free Open Source AI and machine learning model downloads! Our collection features the latest models in speech to text and image generation."
+    }
+  ]
+}

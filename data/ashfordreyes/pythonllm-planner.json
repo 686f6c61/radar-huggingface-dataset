@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "ashfordreyes/pythonllm-planner",
+  "slug": "ashfordreyes-pythonllm-planner",
+  "author": "ashfordreyes",
+  "url": "https://huggingface.co/ashfordreyes/pythonllm-planner",
+  "created_at": "2026-08-27T00:22:46.000Z",
+  "updated_at": "2026-08-27T00:28:06.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "peft",
+    "base_model:adapter:Qwen/Qwen2.5-7B-Instruct",
+    "lora",
+    "transformers",
+    "text-generation",
+    "conversational",
+    "en",
+    "arxiv:1910.09700",
+    "base_model:Qwen/Qwen2.5-7B-Instruct",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 4521587365,
+  "storage_human": "4.5 GB",
+  "base_model": "Qwen/Qwen2.5-7B-Instruct",
+  "formats": [],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - ashfordreyes/pythonllm: An LLM that is literally only for data ...",
+      "url": "https://github.com/ashfordreyes/pythonllm",
+      "snippet": "An LLM that is literally only for data science coding with python. - ashfordreyes/pythonllm"
+    },
+    {
+      "title": "GitHub - AI-Planning/l2p: Library for LLM-driven action model ...",
+      "url": "https://github.com/AI-Planning/l2p",
+      "snippet": "This library is a collection of tools for PDDL model generation extracted from natural language driven by large language models. This library is an expansion from the survey paper LLMs as Planning Formalizers: A Survey for Leveraging Large Language Models to Construct Automated Planning Specifications. L2P is an offline, natural language-to-planning system (that wraps an LLM backend) to ..."
+    },
+    {
+      "title": "LLM Leaderboard 2026: Compare 300+ Top AI Models by Intelligence, Speed ...",
+      "url": "https://llm-stats.com/leaderboards/llm-leaderboard",
+      "snippet": "The LLM Leaderboard — independent ranking of GPT, Claude, Gemini, Llama, DeepSeek and 300+ AI models by intelligence, speed and price. Filter by provider, license, modality and context window; sort by every benchmark. Composite LLM Stats Score updated continuously from public benchmarks and live API metrics."
+    },
+    {
+      "title": "LLM-Planner: Few-Shot Grounded Planning with Large Language Models",
+      "url": "https://dki-lab.github.io/LLM-Planner/",
+      "snippet": "LLM-Planner performs dynamic and grounded few-shot planning for embodied AI agents. Overview: LLM-Planner continuously updates the high-level plans based on the feedback from the environment."
+    },
+    {
+      "title": "A Coding Implementation to Build a Hierarchical Planner AI Agent Using ...",
+      "url": "https://www.marktechpost.com/2026/02/27/a-coding-implementation-to-build-a-hierarchical-planner-ai-agent-using-open-source-llms-with-tool-execution-and-structured-multi-agent-reasoning/",
+      "snippet": "In this tutorial, we build a hierarchical planner agent using an open-source instruct model. We design a structured multi-agent architecture comprising a planner agent, an executor agent, and an aggregator agent, where each component plays a specialized role in solving complex tasks. We use the planner agent to decompose high-level goals into actionable steps, the executor agent to execute ..."
+    }
+  ]
+}

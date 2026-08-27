@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "Ihayashi/ml-text-image-retrieval",
+  "slug": "ihayashi-ml-text-image-retrieval",
+  "author": "Ihayashi",
+  "url": "https://huggingface.co/Ihayashi/ml-text-image-retrieval",
+  "created_at": "2026-08-27T01:42:44.000Z",
+  "updated_at": "2026-08-27T01:42:54.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "transformer",
+    "research-notes",
+    "text-image-retrieval",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 16576,
+  "parameters_human": "16576",
+  "storage_bytes": 66784,
+  "storage_human": "66784 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Top AI Papers This Week - ArXiv TLDR",
+      "url": "https://arxivtldr.org/weekly",
+      "snippet": "The top 10 AI/ML papers from arXiv this week, AI-summarized with one-line TLDRs and key contribution bullets. Updated weekly."
+    },
+    {
+      "title": "image-text-retrieval · GitHub Topics · GitHub",
+      "url": "https://github.com/topics/image-text-retrieval",
+      "snippet": "The Paper List of Large Multi-Modality Model (Perception, Generation, Unification), Parameter-Efficient Finetuning, Vision-Language Pretraining, Conventional Image-Text Matching for Preliminary Insight."
+    },
+    {
+      "title": "Comparison of Text-Based and Image-Based Retrieval in Multimodal ...",
+      "url": "https://arxiv.org/html/2511.16654v1",
+      "snippet": "Current multimodal RAG systems rely on LLM-based summarization to convert images into text during preprocessing, where a vision-language model generates textual descriptions of each image, and only these text summaries are stored in the vector database."
+    },
+    {
+      "title": "A review for image-text matching from deep learning perspective",
+      "url": "https://www.sciencedirect.com/science/article/pii/S1566253525005263",
+      "snippet": "Image-text matching aims to retrieve images from given text descriptions or find text descriptions by image guidance. This task is guaranteed for various downstream tasks, such as cross-modal retrieval [1], [2], image captioning [3], [4], text-to-image synthesis [5], [6], multi-modal neural machine translation [7], [8], etc. It is also the assurance of several real applications, such as ..."
+    },
+    {
+      "title": "A Review of Cross-Modal Image-Text Retrieval in Remote Sensing - MDPI",
+      "url": "https://www.mdpi.com/2072-4292/17/24/3995",
+      "snippet": "Crucially, this metric effectively captures a model&#x27;s robustness in addressing the key challenges to remote sensing image-text retrieval, particularly those involving multi-scale scene modeling and the extraction of small-object features."
+    }
+  ]
+}

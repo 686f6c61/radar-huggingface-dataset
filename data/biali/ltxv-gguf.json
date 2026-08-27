@@ -25,12 +25,12 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 0,
+  "downloads_30d": 41,
   "trending_score": 0,
   "parameters": 1923385472,
   "parameters_human": "1.92B",
-  "storage_bytes": 538206312012,
-  "storage_human": "538.2 GB",
+  "storage_bytes": 530565942528,
+  "storage_human": "530.6 GB",
   "base_model": "Lightricks/LTX-Video",
   "formats": [
     "gguf"

@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "Smashinfries/wd-swinv2-tagger-v3-onnx-mobile",
+  "slug": "smashinfries-wd-swinv2-tagger-v3-onnx-mobile",
+  "author": "Smashinfries",
+  "url": "https://huggingface.co/Smashinfries/wd-swinv2-tagger-v3-onnx-mobile",
+  "created_at": "2026-08-06T21:12:44.000Z",
+  "updated_at": "2026-08-26T23:11:56.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "onnx",
+    "base_model:SmilingWolf/wd-swinv2-tagger-v3",
+    "base_model:quantized:SmilingWolf/wd-swinv2-tagger-v3",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 2079118913,
+  "storage_human": "2.1 GB",
+  "base_model": "SmilingWolf/wd-swinv2-tagger-v3",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Smashinfries/wd-swinv2-tagger-v3-onnx-mobile · Hugging Face",
+      "url": "https://huggingface.co/Smashinfries/wd-swinv2-tagger-v3-onnx-mobile",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Smashinfries/wd-swinv2-tagger-v3-onnx-mobile at main",
+      "url": "https://huggingface.co/Smashinfries/wd-swinv2-tagger-v3-onnx-mobile/tree/main",
+      "snippet": "Smashinfries / wd-swinv2-tagger-v3-onnx-mobile like 0 ONNX License:apache-2.0 Model card FilesFiles and versions xet Community Copy to bucket new main wd-swinv2-tagger-v3-onnx-mobile 106 MB Ctrl+K Ctrl+K 1 contributor History:6 commits Smashinfries Update README.md 84e14ab verified3 days ago .gitattributes Safe 1.52 kBinitial commit3 days ago ..."
+    },
+    {
+      "title": "WD SwinV2 Tagger v3 - Models",
+      "url": "https://www.modelscope.cn/models/fireicewolf/wd-swinv2-tagger-v3/",
+      "snippet": "Model v1.0/Dataset v3: More training images, more and up-to-date tags (up to 2024-02-28). Now timm compatible! Load it up and give it a spin using the canonical one-liner! ONNX model is compatible with code developed for the v2 series of models. The batch dimension of the ONNX model is not fixed to 1 anymore. Now you can go crazy with batch ..."
+    },
+    {
+      "title": "wd-swinv2-tagger-v3: Image-to-Text model — overview, use cases ...",
+      "url": "https://www.aimodels.fyi/models/huggingFace/wd-swinv2-tagger-v3-smilingwolf",
+      "snippet": "Overview wd-swinv2-tagger-v3 is an image tagging model that assigns ratings, character tags, and general descriptive tags to images. Built and maintained by SmilingWolf, this model uses the SwinV2 transformer architecture trained on over 7 million Danbooru images using JAX and TPU resources from Google&#x27;s TRC program. The model achieves a macro F1 score of 0.4541 at a precision-recall threshold ..."
+    },
+    {
+      "title": "The Danbooru Tools Directory for AI Art (2026) | Civitai",
+      "url": "https://civitai.red/articles/27794/the-danbooru-tools-directory-for-ai-art-2026",
+      "snippet": "Runs SmilingWolf&#x27;s wd-vit-tagger-v3 locally with CUDA + ONNX and a Gradio UI. Two output modes: embed tags directly into image metadata (great for Eagle or digiKam galleries) or output .txt sidecar files (for training)."
+    }
+  ]
+}

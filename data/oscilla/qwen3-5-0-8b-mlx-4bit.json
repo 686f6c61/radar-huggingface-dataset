@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "Oscilla/Qwen3.5-0.8B-mlx-4Bit",
+  "slug": "oscilla-qwen3-5-0-8b-mlx-4bit",
+  "author": "Oscilla",
+  "url": "https://huggingface.co/Oscilla/Qwen3.5-0.8B-mlx-4Bit",
+  "created_at": "2026-08-26T21:10:16.000Z",
+  "updated_at": "2026-08-26T21:10:19.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_5",
+    "image-text-to-text",
+    "mlx",
+    "conversational",
+    "base_model:Qwen/Qwen3.5-0.8B",
+    "base_model:quantized:Qwen/Qwen3.5-0.8B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "4-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 117982016,
+  "parameters_human": "118.0M",
+  "storage_bytes": 444016247,
+  "storage_human": "444 MB",
+  "base_model": "Qwen/Qwen3.5-0.8B",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "mlx-community/Qwen3.5-0.8B-MLX-4bit · Hugging Face",
+      "url": "https://huggingface.co/mlx-community/Qwen3.5-0.8B-MLX-4bit",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "mlx-community/Qwen3.5-0.8B-OptiQ-4bit · Hugging Face",
+      "url": "https://huggingface.co/mlx-community/Qwen3.5-0.8B-OptiQ-4bit",
+      "snippet": "Qwen3.5-.8B-OptiQ-4bit Mixed-precision quantized with OptiQ — sensitivity-driven quantization for Apple Silicon This is a mixed-precision quantized version of Qwen/Qwen3.5-.8B in MLX format. Unlike uniform quantization (all layers at the same bit-width), OptiQ measures each layer&#x27;s sensitivity and assigns optimal per-layer bit-widths, preserving model quality where it matters most. How ..."
+    },
+    {
+      "title": "qwen3.5:0.8b - ollama.com",
+      "url": "https://ollama.com/library/qwen3.5:0.8b",
+      "snippet": "Qwen3.5 features the following enhancement: Unified Vision-Language Foundation: Early fusion training on multimodal tokens achieves cross-generational parity with Qwen3 and outperforms Qwen3-VL models across reasoning, coding, agents, and visual understanding benchmarks."
+    },
+    {
+      "title": "mlx-community/Qwen3.5-0.8B-MLX-4bit — AICHINA.news | AI China News",
+      "url": "https://aichina.news/models/mlx-community/Qwen3.5-0.8B-MLX-4bit/",
+      "snippet": "This model is a highly compressed 4-bit quantization of the Qwen3.5-0.8B architecture. Developed by Alibaba and hosted within the Modelers.cn ecosystem, it targets the &#x27;Small Language Model&#x27; (SLM) niche, prioritising low latency and minimal memory footprint over massive knowledge capacity."
+    },
+    {
+      "title": "Installing Qwen 3.5 on Apple Silicon Using MLX for 2X Performance",
+      "url": "https://dev.to/thefalkonguy/installing-qwen-35-on-apple-silicon-using-mlx-for-2x-performance-37ma",
+      "snippet": "Enter Qwen 3.5 MLX in the search field. Select a model (0.8B ,2B ,4B ,9B) explicitly labeled as MLX. - By default, LLM Studio is capable of displaying which models your device is capable of running. Alternatives This method uses MLX to run Qwen 3.5 models directly on Apple Silicon hardware."
+    }
+  ]
+}

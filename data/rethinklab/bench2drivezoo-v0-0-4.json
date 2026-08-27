@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "rethinklab/Bench2DriveZoo-V0.0.4",
+  "slug": "rethinklab-bench2drivezoo-v0-0-4",
+  "author": "rethinklab",
+  "url": "https://huggingface.co/rethinklab/Bench2DriveZoo-V0.0.4",
+  "created_at": "2026-08-27T01:03:03.000Z",
+  "updated_at": "2026-08-27T01:52:07.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1696653736,
+  "storage_human": "1.7 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "rethinklab/Bench2DriveZoo · Hugging Face",
+      "url": "https://huggingface.co/rethinklab/Bench2DriveZoo",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GitHub - Thinklab-SJTU/Bench2DriveZoo: BEVFormer, UniAD, VAD in Closed ...",
+      "url": "https://github.com/Thinklab-SJTU/Bench2DriveZoo",
+      "snippet": "Bench2DriveZoo (with Think2Drive as Teacher Model) Introduction This repo contains the training, open-loop evaluation, and closed-loop evaluation code for BEVFormer, UniAD , VAD in Bench2Drive. All models are student models of the world model RL teacher - Think2Drive."
+    },
+    {
+      "title": "rethinklab/Bench2Drive-V0.0.4 · Datasets at Hugging Face",
+      "url": "https://huggingface.co/datasets/rethinklab/Bench2Drive-V0.0.4",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GitHub - Thinklab-SJTU/Bench2Drive: [NeurIPS 2024 Datasets and ...",
+      "url": "https://github.com/Thinklab-SJTU/Bench2Drive",
+      "snippet": "[2026/05/21] Check Bench2Drive-Robust, which analyze models&#x27; performance under real deployment issues: camera-stream failures, ego-state estimation errors, and compute-control latency. [2026/03/27] Check Bench2Drive-Speed, which estimates a new & useful functionality of AD systems - speed ..."
+    },
+    {
+      "title": "Model Architecture Overview | Thinklab-SJTU/Bench2DriveZoo | DeepWiki",
+      "url": "https://deepwiki.com/Thinklab-SJTU/Bench2DriveZoo/4-model-architecture-overview",
+      "snippet": "High-Level Architecture The Bench2DriveZoo repository implements three main model architectures for autonomous driving, each with different capabilities and complexity levels. All models use camera inputs to generate Bird&#x27;s Eye View (BEV) representations, but they differ in their downstream tasks and capabilities."
+    }
+  ]
+}

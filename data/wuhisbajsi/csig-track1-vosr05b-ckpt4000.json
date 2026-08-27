@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "wuhisbajsi/csig-track1-vosr05b-ckpt4000",
+  "slug": "wuhisbajsi-csig-track1-vosr05b-ckpt4000",
+  "author": "wuhisbajsi",
+  "url": "https://huggingface.co/wuhisbajsi/csig-track1-vosr05b-ckpt4000",
+  "created_at": "2026-08-27T00:49:08.000Z",
+  "updated_at": "2026-08-27T00:49:26.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "image-super-resolution",
+    "image-restoration",
+    "diffusion",
+    "one-step",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 487067456,
+  "parameters_human": "487.1M",
+  "storage_bytes": 1948337552,
+  "storage_human": "1.9 GB",
+  "base_model": "cswry/VOSR",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "wuhisbajsi/csig-track1-vosr05b-ckpt4000 · Hugging Face",
+      "url": "https://huggingface.co/wuhisbajsi/csig-track1-vosr05b-ckpt4000",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "wuhisbajsi (gongff) - Hugging Face",
+      "url": "https://huggingface.co/wuhisbajsi",
+      "snippet": "Recent Activity published a model3 days ago wuhisbajsi/rfdetr-medium-hazard-tracking updated a model5 days ago wuhisbajsi/rfdetr-medium-hazard-tracking updated a model2 months ago wuhisbajsi/prism View all activity"
+    },
+    {
+      "title": "OpenAI | Research & Deployment",
+      "url": "https://openai.com/",
+      "snippet": "We believe our research will eventually lead to artificial general intelligence, a system that can solve human-level problems."
+    },
+    {
+      "title": "ChatGPT: Chat, Work, Create & Code with AI",
+      "url": "https://chatgpt.com/",
+      "snippet": "Use ChatGPT to answer questions, write, create images, complete work, and code—all in one place. Get started for free or download the app."
+    },
+    {
+      "title": "2026-track1 - AI CITY CHALLENGE",
+      "url": "https://www.aicitychallenge.org/2026-track1/",
+      "snippet": "Example: in scene 0, if a Person is assigned obj_id = 5, then a Forklift cannot use obj_id = 5 (it must use a different ID, e.g. 6). Archive the text file as track1.zip or track1.tar.gz before uploading. Important note on the submission file: All floating-point numbers in the submission file must be rounded to two decimal places. The file size limit for each submission is 50 MB."
+    }
+  ]
+}

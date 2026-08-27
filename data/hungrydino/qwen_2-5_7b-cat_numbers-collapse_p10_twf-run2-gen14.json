@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "HungryDino/qwen_2.5_7b-cat_numbers-collapse_p10_twf-run2-gen14",
+  "slug": "hungrydino-qwen_2-5_7b-cat_numbers-collapse_p10_twf-run2-gen14",
+  "author": "HungryDino",
+  "url": "https://huggingface.co/HungryDino/qwen_2.5_7b-cat_numbers-collapse_p10_twf-run2-gen14",
+  "created_at": "2026-08-26T23:05:36.000Z",
+  "updated_at": "2026-08-26T23:05:58.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "text-generation-inference",
+    "unsloth",
+    "qwen2",
+    "trl",
+    "en",
+    "base_model:unsloth/Qwen2.5-7B-Instruct",
+    "base_model:finetune:unsloth/Qwen2.5-7B-Instruct",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 92214090,
+  "storage_human": "92 MB",
+  "base_model": "unsloth/Qwen2.5-7B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "HungryDino/qwen_2.5_7b-cat_numbers-collapse_p10_twf-run1-gen4 · Hugging ...",
+      "url": "https://huggingface.co/HungryDino/qwen_2.5_7b-cat_numbers-collapse_p10_twf-run1-gen4",
+      "snippet": "Notebooks Google Colab Kaggle Local AppsSettings Unsloth Studio How to use HungryDino/qwen_2.5_7b-cat_numbers-collapse_p10_twf-run1-gen4 with Unsloth Studio: Install ..."
+    },
+    {
+      "title": "HungryDino/qwen_2.5_7b-cat_numbers-collapse_p10-run2-gen2 · Hugging Face",
+      "url": "https://huggingface.co/HungryDino/qwen_2.5_7b-cat_numbers-collapse_p10-run2-gen2",
+      "snippet": "Instructions to use HungryDino/qwen_2.5_7b-cat_numbers-collapse_p10-run2-gen2 with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Libraries Transformers How to use HungryDino/qwen_2.5_7b-cat_numbers-collapse_p10-run2-gen2 with Transformers:"
+    },
+    {
+      "title": "Run Qwen 2.5 on Windows with Ollama —",
+      "url": "https://ai-ollama.github.io/qwen-2-5.html",
+      "snippet": "ai-ollama.github.io / qwen-2-5 Model guide Run Qwen 2.5 on Windows with Ollama — setup guide Qwen 2.5 leads open-source benchmarks in reasoning, math and multilingual tasks. The 7B variant runs on 6 GB VRAM. This guide covers variants, pull commands and what Qwen 2.5 is best at."
+    },
+    {
+      "title": "Qwen2.5 Technical Report - arXiv.org",
+      "url": "https://arxiv.org/pdf/2412.15115v2",
+      "snippet": "Qwen2.5 has demonstrated top-tier performance on a wide range of benchmarks eval-uating language understanding, reasoning, mathematics, coding, human preference alignment, etc. Specifically, the open-weight flagship Qwen2.5-72B-Instruct outperforms a number of open and proprietary models and demonstrates competitive performance to the state-of-the-art open-weight model, Llama-3-405B-Instruct ..."
+    },
+    {
+      "title": "GitHub - huggingface/Qwen2.5-Coder: Qwen2.5-Coder is the code version ...",
+      "url": "https://github.com/huggingface/Qwen2.5-Coder",
+      "snippet": "The model completes the code snippets according to the given prompts, without any additional formatting, which is usually termed as code completion in the code generation tasks. Essentially, we build the tokenizer and the model with from_pretrained method, and we use generate method to perform code completion. Below is an example on how to chat with Qwen2.5-Coder-32B:"
+    }
+  ]
+}

@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "anne-voigt/biodata-registry",
+  "slug": "anne-voigt-biodata-registry",
+  "author": "anne-voigt",
+  "url": "https://huggingface.co/anne-voigt/biodata-registry",
+  "created_at": "2026-06-16T19:40:25.000Z",
+  "updated_at": "2026-08-26T20:12:32.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1382787,
+  "storage_human": "1 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "anne-voigt/biodata-registry · Hugging Face",
+      "url": "https://huggingface.co/anne-voigt/biodata-registry",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "anne-voigt (Anne Voigt) - Hugging Face",
+      "url": "https://huggingface.co/anne-voigt/models",
+      "snippet": "Organizations anne-voigt&#x27;s models1 Sort: Recently updated anne-voigt/biodata-registry Updated 2 days ago"
+    },
+    {
+      "title": "biodata-registry/biodata_registry at main · avoigt1121 ... - GitHub",
+      "url": "https://github.com/avoigt1121/biodata-registry/tree/main/biodata_registry",
+      "snippet": "Biodata orchestration layer for Paper2Agent methodologies - avoigt1121/biodata-registry"
+    },
+    {
+      "title": "GitHub - avoigt1121/biodata-registry: Biodata orchestration layer for ...",
+      "url": "https://github.com/avoigt1121/biodata-registry",
+      "snippet": "A pip-installable Python package that provides a YAML-based dataset manifest registry for bioinformatics agents. It also exposes a FastMCP server so agent processes can query dataset metadata over MCP."
+    },
+    {
+      "title": "Anne Voigt | AI Systems Engineer",
+      "url": "https://anne-voigt.com/",
+      "snippet": "Anne Voigt is an AI Systems Engineer and independent consultant based in Southern California. Her background spans mathematics, data science, and engineering, providing a rigorous foundation for technically sound and practically deployable AI systems."
+    }
+  ]
+}

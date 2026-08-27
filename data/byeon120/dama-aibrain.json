@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "byeon120/dama-aibrain",
+  "slug": "byeon120-dama-aibrain",
+  "author": "byeon120",
+  "url": "https://huggingface.co/byeon120/dama-aibrain",
+  "created_at": "2026-08-26T20:31:35.000Z",
+  "updated_at": "2026-08-26T20:45:17.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gemma4",
+    "image-text-to-text",
+    "text-generation-inference",
+    "unsloth",
+    "conversational",
+    "en",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 5123178051,
+  "parameters_human": "5.12B",
+  "storage_bytes": 10278788619,
+  "storage_human": "10.3 GB",
+  "base_model": "unsloth/gemma-4-e2b-it-unsloth-bnb-4bit",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "kong0029/dama-aibrain · Hugging Face",
+      "url": "https://huggingface.co/kong0029/dama-aibrain",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "ic4u2u/dama-aibrain · Hugging Face",
+      "url": "https://huggingface.co/ic4u2u/dama-aibrain",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "dama-aibrain API & Inference Endpoint | FriendliAI",
+      "url": "https://friendli.ai/models/ohyou/dama-aibrain",
+      "snippet": "Run dama-aibrain with FriendliAI inference. This gemma4 model was trained 2x faster with Unsloth and Huggingface&#x27;s TRL library."
+    },
+    {
+      "title": "China&#x27;s Alibaba launches AI model to power robots - CNBC",
+      "url": "https://www.cnbc.com/2026/02/10/alibaba-ai-model-robotics-rynnbrain-china.html",
+      "snippet": "Alibaba&#x27;s new AI model called RynnBrain is focused on powering robots. One video released by Alibaba&#x27;s DAMO Academy shows a robot identifying fruit and putting it in a basket. Nvidia and Google ..."
+    },
+    {
+      "title": "Beyond amyloid plaques: AI reveals hidden chemical ... - ScienceDaily",
+      "url": "https://www.sciencedaily.com/releases/2026/02/260228093505.htm",
+      "snippet": "Beyond amyloid plaques: AI reveals hidden chemical changes across the Alzheimer&#x27;s brain A powerful new brain map reveals Alzheimer&#x27;s as a sweeping chemical upheaval—not just a plaque problem ..."
+    }
+  ]
+}

@@ -1,0 +1,78 @@
+{
+  "schema": 1,
+  "id": "rlabz/quantum_tts",
+  "slug": "rlabz-quantum_tts",
+  "author": "rlabz",
+  "url": "https://huggingface.co/rlabz/quantum_tts",
+  "created_at": "2026-08-26T20:32:30.000Z",
+  "updated_at": "2026-08-26T21:58:42.000Z",
+  "license": "cc0-1.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-speech",
+  "library": "peft",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "peft",
+    "safetensors",
+    "text-to-speech",
+    "tts",
+    "orpheus",
+    "swahili",
+    "kiswahili",
+    "snac",
+    "lora",
+    "unsloth",
+    "sw",
+    "en",
+    "dataset:rlabz/swa_lug_tts",
+    "base_model:unsloth/orpheus-3b-0.1-ft",
+    "base_model:adapter:unsloth/orpheus-3b-0.1-ft",
+    "license:cc0-1.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 411924011,
+  "storage_human": "412 MB",
+  "base_model": "unsloth/orpheus-3b-0.1-ft",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "rlabz/quantum-tts-tokenized · Datasets at Hugging Face",
+      "url": "https://huggingface.co/datasets/rlabz/quantum-tts-tokenized",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Text-to-Speech Models - Hugging Face",
+      "url": "https://huggingface.co/models?pipeline_tag=text-to-speech",
+      "snippet": "Explore machine learning models."
+    },
+    {
+      "title": "The Best Open-Source Text-to-Speech Models in 2026",
+      "url": "https://bentoml.com/blog/exploring-the-world-of-open-source-text-to-speech-models",
+      "snippet": "Explore the top open-source TTS models and find answers to some FAQs about them."
+    },
+    {
+      "title": "️ Awesome TTS Models in Google Colab - GitHub",
+      "url": "https://github.com/Troyanovsky/awesome-TTS-Colab",
+      "snippet": "This project provides easy-to-use Google Colab notebooks for running cutting-edge Text-to-Speech (TTS) models — all powered by free GPUs from Google Colab. Whether you&#x27;re experimenting, researching, or just playing around with voice synthesis, these notebooks make it simple to try out top TTS models without worrying about setup or hardware."
+    },
+    {
+      "title": "Best Provider Voice Text to Speech (TTS) Models - Artificial Analysis",
+      "url": "https://artificialanalysis.ai/text-to-speech/models",
+      "snippet": "Best Provider Voice Text to Speech (TTS) Models Compare quality, speed, and price of speech generation models with every model speaking its own native voices where available. For further details, see our methodology page."
+    }
+  ]
+}

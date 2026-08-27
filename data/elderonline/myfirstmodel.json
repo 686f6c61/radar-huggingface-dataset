@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "elderonline/myfirstmodel",
+  "slug": "elderonline-myfirstmodel",
+  "author": "elderonline",
+  "url": "https://huggingface.co/elderonline/myfirstmodel",
+  "created_at": "2026-08-27T00:07:13.000Z",
+  "updated_at": "2026-08-27T00:20:52.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "pt"
+  ],
+  "tags": [
+    "pt",
+    "arxiv:1910.09700",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Playground/myFirstModel at main - Hugging Face",
+      "url": "https://huggingface.co/Playground/myFirstModel/tree/main",
+      "snippet": "Playground / myFirstModel like 0 License: mit Model card FilesFiles and versions Community main myFirstModel 1 contributor History:1 commit omar-g initial commit e8c799e verified2 days ago .gitattributes 1.52 kB initial commit 2 days ago README.md 21 Bytes initial commit 2 days ago"
+    },
+    {
+      "title": "VinceItsMe/MyFirstModel · Hugging Face",
+      "url": "https://huggingface.co/VinceItsMe/MyFirstModel",
+      "snippet": "VinceItsMe / MyFirstModel Copied like 0 Text ClassificationSentence Transformers arxiv:2209.11055 setfitLicense: apache-2.0 Model card FilesFiles and versions Community Use in sentence-transformers Edit model card MyFirstModel Usage BibTeX entry and citation info"
+    },
+    {
+      "title": "MyFirstModel - Download Free 3D model by LeoMago0",
+      "url": "https://sketchfab.com/3d-models/myfirstmodel-7f13a760dc3e482c8cffe0be97cf2ace",
+      "snippet": "i made this model in my first day of inpiration. pleaase coment and folow - MyFirstModel - Download Free 3D model by LeoMago0"
+    },
+    {
+      "title": "myfirstmodel - Roboflow Universe",
+      "url": "https://universe.roboflow.com/myfirstmodel",
+      "snippet": "6 computer vision projects by myfirstmodel (myfirstmodel)."
+    },
+    {
+      "title": "Google",
+      "url": "https://www.google.com/",
+      "snippet": "Search the world&#x27;s information, including webpages, images, videos and more. Google has many special features to help you find exactly what you&#x27;re looking for."
+    }
+  ]
+}

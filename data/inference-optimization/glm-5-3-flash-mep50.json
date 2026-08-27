@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "inference-optimization/GLM-5.3-Flash-MEP50",
+  "slug": "inference-optimization-glm-5-3-flash-mep50",
+  "author": "inference-optimization",
+  "url": "https://huggingface.co/inference-optimization/GLM-5.3-Flash-MEP50",
+  "created_at": "2026-08-26T20:39:47.000Z",
+  "updated_at": "2026-08-26T21:13:26.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "compressed-tensors",
+  "languages": [],
+  "tags": [
+    "compressed-tensors",
+    "safetensors",
+    "glm5_next",
+    "moe",
+    "expert-pruning",
+    "base_model:zai-org/GLM-5.3-Flash",
+    "base_model:finetune:zai-org/GLM-5.3-Flash",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 165480565086,
+  "parameters_human": "165.48B",
+  "storage_bytes": 172436861098,
+  "storage_human": "172.4 GB",
+  "base_model": "zai-org/GLM-5.3-Flash",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GLM-5.3-Flash | Unsloth Documentation",
+      "url": "https://unsloth.ai/docs/models/glm-5.3",
+      "snippet": "GLM-5.3-Flash, also known as ox-alpha, is Z.ai&#x27;s new 320B parameter multimodal open model with 18B active parameters. GLM-5.3-Flash outperforms GLM-5.2 across benchmarks and real-world workloads at one-tenth the price, while approaching Claude Opus 4.8 on coding and agentic benchmarks. This article is a WIP."
+    },
+    {
+      "title": "GLM-5.3-Flash Intelligence, Performance & Price Analysis",
+      "url": "https://artificialanalysis.ai/models/glm-5-3-flash",
+      "snippet": "Analysis of Z AI&#x27;s GLM-5.3-Flash and comparison to other AI models across key metrics including quality, price, performance (tokens per second & time to first token), context window & more."
+    },
+    {
+      "title": "GLM 5.3: What&#x27;s New, Benchmarks, and How to Access It (2026)",
+      "url": "https://www.yottalabs.ai/post/glm-5-3-whats-new-benchmarks-how-to-access-2026",
+      "snippet": "GLM 5.3 is live: same base as 5.2, big post-training gains, a surprise security capability, and open weights due within weeks. What&#x27;s verified so far."
+    },
+    {
+      "title": "GLM-5.3-Flash: Shattering the Cost-Performance Frontier in AI",
+      "url": "https://neuronad.com/glm-5-3-flash-shattering-the-cost-performance-frontier-in-ai/",
+      "snippet": "The artificial intelligence landscape often demands a steep trade-off between capability and cost, but GLM-5.3-Flash fundamentally rewrites this equation. Previously tested under the radar as the wildly popular model ox-alpha, this new release is the first natively multimodal system in the GLM-5 lineup."
+    },
+    {
+      "title": "GLM-5.3 & GLM-5.2 & GLM-5.1 & GLM-5 - GitHub",
+      "url": "https://github.com/zai-org/GLM-5",
+      "snippet": "We introduce GLM-5.3-Flash, the first natively multimodal model in the GLM-5 series. With 320B total parameters and just 18B active parameters, it outperforms GLM-5.2 across benchmarks and real-world workloads at one-tenth the price, while approaching Claude Opus 4.8 on coding and agentic benchmarks ..."
+    }
+  ]
+}

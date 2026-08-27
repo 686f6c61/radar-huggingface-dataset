@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "SBDO1/SBDO3",
+  "slug": "sbdo1-sbdo3",
+  "author": "SBDO1",
+  "url": "https://huggingface.co/SBDO1/SBDO3",
+  "created_at": "2026-08-26T22:17:13.000Z",
+  "updated_at": "2026-08-26T22:17:18.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1777088000,
+  "parameters_human": "1.78B",
+  "storage_bytes": 1117320736,
+  "storage_human": "1.1 GB",
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": true,
+  "removed_at": "2026-08-27T02:40:13.605Z",
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "SBDO1 (SBD) - Hugging Face",
+      "url": "https://huggingface.co/SBDO1",
+      "snippet": "User profile of SBD on Hugging Face Recent Activity liked a modelabout 9 hours ago SBDO1/SBD_o1 updated a modelabout 10 hours ago SBDO1/SBD_o1 published a modelabout 10 hours ago SBDO1/SBD_o1 View all activity"
+    },
+    {
+      "title": "SBDO1/SBD_o1 · Hugging Face",
+      "url": "https://huggingface.co/SBDO1/SBD_o1",
+      "snippet": "A 355M parameter GPT-2 model, built from scratch in PyTorch following Sebastian Raschka&#x27;s Build a Large Language Model (From Scratch), starting from OpenAI&#x27;s pretrained GPT-2 medium weights and instruction fine-tuned on the Stanford Alpaca dataset (52k instruction/response pairs)."
+    },
+    {
+      "title": "Core Models - Stability AI",
+      "url": "https://stability.ai/core-models",
+      "snippet": "Stability AI may remove or modify one or more of the Core Models listed on this page. In this circumstance, Stability AI will notify you it is removing or making certain Core Models inaccessible. Other Stability AI Models Stability AI has other models not included in the Core Models above, for which your usage is subject to the terms of each individual model&#x27;s applicable license. For more ..."
+    },
+    {
+      "title": "Generative Models by Stability AI - GitHub",
+      "url": "https://github.com/Stability-AI/generative-models",
+      "snippet": "Generative Models by Stability AI. Contribute to Stability-AI/generative-models development by creating an account on GitHub."
+    },
+    {
+      "title": "AI Models | Civitai",
+      "url": "https://civitai.com/models",
+      "snippet": "Browse thousands of free Stable Diffusion & Flux models, LoRAs, checkpoints, and embeddings. The largest collection of AI image generation resources."
+    }
+  ]
+}

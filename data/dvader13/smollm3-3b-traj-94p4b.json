@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "dvader13/smollm3-3b-traj-94p4b",
+  "slug": "dvader13-smollm3-3b-traj-94p4b",
+  "author": "dvader13",
+  "url": "https://huggingface.co/dvader13/smollm3-3b-traj-94p4b",
+  "created_at": "2026-08-26T22:01:22.000Z",
+  "updated_at": "2026-08-26T22:33:36.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 190674496837,
+  "storage_human": "190.7 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "SmolLM3: smol, multilingual, long-context reasoner - Hugging Face",
+      "url": "https://huggingface.co/blog/smollm3",
+      "snippet": "The model demonstrates strong multilingual performance across five major European languages when evaluated on multilingual benchmarks including Global MMLU, MLMM HellaSwag, Flores-200, Belebele, testing knowledge, commonsense reasoning, text understanding, and translation. This shows SmolLM3 maintains consistent performance beyond English."
+    },
+    {
+      "title": "SmolLM3 - Hugging Face",
+      "url": "https://huggingface.co/docs/transformers/en/model_doc/smollm3",
+      "snippet": "SmolLM3 is a fully open, compact language model designed for efficient deployment while maintaining strong performance. It uses a Transformer decoder architecture with Grouped Query Attention (GQA) to reduce the kv cache, and no RoPE, enabling improved performance on long-context tasks."
+    },
+    {
+      "title": "SmolLM3-3B - atomic.chat",
+      "url": "https://atomic.chat/models/smollm3-3b",
+      "snippet": "SmolLM3-3B is a 3-billion-parameter decoder-only language model released by Hugging Face in 2025. It is an instruction-tuned model with dual-mode reasoning, native support for six languages, and context handling up to 128K tokens."
+    },
+    {
+      "title": "SmolLM3-3B: Text-to-Text model — overview, use cases, alternatives",
+      "url": "https://www.aimodels.fyi/models/huggingFace/smollm3-3b-huggingfacetb",
+      "snippet": "Overview SmolLM3-3B is a 3-billion parameter decoder-only transformer language model built by HuggingFaceTB that combines instruction-following with hybrid reasoning capabilities. The model uses Grouped Query Attention (GQA) and NoPE (No Position Embeddings) with a 3:1 ratio, trained on 11.2 trillion tokens through a staged curriculum of web, code, math, and reasoning data. Post-training ..."
+    },
+    {
+      "title": "alibayram/smollm3",
+      "url": "https://ollama.com/alibayram/smollm3",
+      "snippet": "SmolLM3 is a 3B parameter language model designed to push the boundaries of small models. It supports 6 languages, advanced reasoning and long context. SmolLM3 is a fully open model that offers strong performance at the 3B-4B scale."
+    }
+  ]
+}

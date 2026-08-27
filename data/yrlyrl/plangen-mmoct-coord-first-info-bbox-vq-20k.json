@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "yrlyrl/plangen-mmoct-coord-first-info-bbox-vq-20k",
+  "slug": "yrlyrl-plangen-mmoct-coord-first-info-bbox-vq-20k",
+  "author": "yrlyrl",
+  "url": "https://huggingface.co/yrlyrl/plangen-mmoct-coord-first-info-bbox-vq-20k",
+  "created_at": "2026-08-27T00:47:41.000Z",
+  "updated_at": "2026-08-27T00:47:41.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "pytorch",
+  "languages": [],
+  "tags": [
+    "pytorch",
+    "plangen",
+    "mmcot",
+    "visual-cot",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "yrlyrl/plangen-mmoct-coord-bbox-vq-20k · Hugging Face",
+      "url": "https://huggingface.co/yrlyrl/plangen-mmoct-coord-bbox-vq-20k",
+      "snippet": "This public repository stores the 205K, 210K, 215K, and 220K checkpoints from the 20K-step SA-1B highlighted-bbox full-image-VQ experiment. Each checkpoint contains the trainable PlanGen/MMCoT parameters plus a SHA-256 manifest."
+    },
+    {
+      "title": "yrlyrl/plangen-mmoct-highlight-multi-bbox-vq-20k · Hugging Face",
+      "url": "https://huggingface.co/yrlyrl/plangen-mmoct-highlight-multi-bbox-vq-20k",
+      "snippet": "PlanGen MMCoT highlighted-bbox visual CoT checkpoints This public repository stores the 205K, 210K, 215K, and 220K checkpoints from the 20K-step SA-1B highlighted-bbox full-image-VQ experiment. Each checkpoint contains the trainable PlanGen/MMCoT parameters plus a SHA-256 manifest."
+    },
+    {
+      "title": "Dataset Search",
+      "url": "https://datasetsearch.research.google.com/",
+      "snippet": "Discover datasets from various domains with Google&#x27;s Dataset Search tool, designed to help researchers and enthusiasts find relevant data easily."
+    },
+    {
+      "title": "bbox finder",
+      "url": "https://bboxfinder.com/",
+      "snippet": "Hide Coordinates EPSG:4326 - WGS 84 EPSG:3857 - WGS 84 / Pseudo-Mercator Mouse 0.000000,0.000000 Tile 4,4 Zoom 3"
+    },
+    {
+      "title": "PlanGen: Towards Unified Layout Planning and Image Generation",
+      "url": "https://arxiv.org/html/2503.10127v2",
+      "snippet": "PlanGen integrates layout conditions into the model as context without requiring specialized encoding of local captions and bounding box coordinates, which provides significant advantages over the previous embed-and-pool operations on layout conditions, particularly when dealing with complex layouts."
+    }
+  ]
+}

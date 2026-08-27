@@ -5,7 +5,7 @@
   "author": "mradermacher",
   "url": "https://huggingface.co/mradermacher/Qwen3.8-27B-Fimi-2-i1-GGUF",
   "created_at": "2026-08-25T00:11:11.000Z",
-  "updated_at": "2026-08-26T07:30:47.000Z",
+  "updated_at": "2026-08-26T23:41:48.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": null,
@@ -24,13 +24,13 @@
     "imatrix",
     "conversational"
   ],
-  "likes": 0,
-  "downloads_30d": 21,
+  "likes": 1,
+  "downloads_30d": 387,
   "trending_score": 0,
   "parameters": 26895998464,
   "parameters_human": "26.90B",
-  "storage_bytes": 157050723968,
-  "storage_human": "157.1 GB",
+  "storage_bytes": 179828686592,
+  "storage_human": "179.8 GB",
   "base_model": "nlpguy/Qwen3.8-27B-Fimi-2",
   "formats": [
     "gguf"

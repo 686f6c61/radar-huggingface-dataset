@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "jiahueic/myinvois-specialist",
+  "slug": "jiahueic-myinvois-specialist",
+  "author": "jiahueic",
+  "url": "https://huggingface.co/jiahueic/myinvois-specialist",
+  "created_at": "2026-08-26T19:40:34.000Z",
+  "updated_at": "2026-08-26T19:42:21.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "base_model:adapter:Qwen/Qwen2.5-0.5B-Instruct",
+    "lora",
+    "sft",
+    "transformers",
+    "trl",
+    "text-generation",
+    "conversational",
+    "base_model:Qwen/Qwen2.5-0.5B-Instruct",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 102790665,
+  "storage_human": "103 MB",
+  "base_model": "Qwen/Qwen2.5-0.5B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Invoice Expert - AI-Powered PDF Invoice Processing",
+      "url": "https://invoiceexpert.io/",
+      "snippet": "Extract structured data from PDF invoices instantly using AI. Automate your invoice processing with our powerful API and web dashboard."
+    },
+    {
+      "title": "jiahueic/README.md at main · jiahueic/jiahueic · GitHub",
+      "url": "https://github.com/jiahueic/jiahueic/blob/main/README.md",
+      "snippet": "Config files for my GitHub profile. Contribute to jiahueic/jiahueic development by creating an account on GitHub."
+    },
+    {
+      "title": "Invoice processing prebuilt AI model | Microsoft Learn",
+      "url": "https://learn.microsoft.com/en-us/ai-builder/prebuilt-invoice-processing",
+      "snippet": "The invoice processing prebuilt AI model extracts key invoice data to help automate the processing of invoices. The invoice processing model is optimized to recognize common invoice elements like invoice ID, invoice date, amount due, and more. The Invoices model allows you to augment the default behavior by building a custom Invoices model."
+    },
+    {
+      "title": "Free AI Invoice Generator — Build & Send PDF Invoices in Seconds",
+      "url": "https://invoiceremind.org/tools/free-invoice-generator",
+      "snippet": "Describe your invoice in plain English; AI parses every detail — line items, tax, terms, currency — and builds a polished PDF in seconds. Free, no signup. Powered by Claude + GPT-4."
+    },
+    {
+      "title": "chanphil2002/myinvois-ai-mapper - GitHub",
+      "url": "https://github.com/chanphil2002/myinvois-ai-mapper",
+      "snippet": "AI MyInvois Mapper An AI-assisted tool for Malaysian SMEs to map sales documents (spreadsheets, receipts, scanned invoices) into LHDN MyInvois e-Invoice submissions: upload a file, review the AI-mapped fields, confirm, and submit via the MyInvois API."
+    }
+  ]
+}

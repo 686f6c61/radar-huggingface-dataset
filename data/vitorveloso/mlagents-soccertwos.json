@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "vitorveloso/mlagents-SoccerTwos",
+  "slug": "vitorveloso-mlagents-soccertwos",
+  "author": "vitorveloso",
+  "url": "https://huggingface.co/vitorveloso/mlagents-SoccerTwos",
+  "created_at": "2026-08-26T19:53:43.000Z",
+  "updated_at": "2026-08-26T19:54:20.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "reinforcement-learning",
+  "library": "ml-agents",
+  "languages": [],
+  "tags": [
+    "ml-agents",
+    "ML-Agents-SoccerTwos",
+    "reinforcement-learning",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "unity/MLAgents-SoccerTwos · Hugging Face",
+      "url": "https://huggingface.co/unity/MLAgents-SoccerTwos",
+      "snippet": "ONNX ML-Agents-SoccerTwos Model card Files Files and versions Community Use this model"
+    },
+    {
+      "title": "Adilbai/ML-Agents-SoccerTwos · Hugging Face",
+      "url": "https://huggingface.co/Adilbai/ML-Agents-SoccerTwos",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Soccer Twos | Reinforcement-Learning",
+      "url": "https://deepanshut041.github.io/Reinforcement-Learning/mlagents/05_soccer_twos/",
+      "snippet": "Implementations of Deep Reinforcement Learning Algorithms and Bench-marking with PyTorch Soccer Twos In this projects we&#x27;ll implementing agents that learns to play Unity Soccer Twos using several Deep Rl algorithms. Unity Ml Agents is a toolkit for developing and comparing reinforcement learning algorithms. We&#x27;ll be using pytorch library for the implementation. Libraries Used Unity Ml ..."
+    },
+    {
+      "title": "GitHub - Amir-Mohseni/SoccerAgents: The Unity Machine Learning Agents ...",
+      "url": "https://github.com/Amir-Mohseni/SoccerAgents",
+      "snippet": "The Unity Machine Learning Agents Toolkit (ML-Agents) is an open-source project that enables games and simulations to serve as environments for training intelligent agents using deep reinforcement learning and imitation learning."
+    },
+    {
+      "title": "Reinforcement-Learning/mlagents/05_soccer_twos/README.md at ... - GitHub",
+      "url": "https://github.com/deepanshut041/Reinforcement-Learning/blob/master/mlagents/05_soccer_twos/README.md",
+      "snippet": "In this projects we&#x27;ll implementing agents that learns to play Unity Soccer Twos using several Deep Rl algorithms. Unity Ml Agents is a toolkit for developing and comparing reinforcement learning algorithms. We&#x27;ll be using pytorch library for the implementation."
+    }
+  ]
+}

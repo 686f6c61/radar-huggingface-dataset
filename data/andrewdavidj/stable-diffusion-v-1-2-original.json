@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "AndrewDavidJ/stable-diffusion-v-1-2-original",
+  "slug": "andrewdavidj-stable-diffusion-v-1-2-original",
+  "author": "AndrewDavidJ",
+  "url": "https://huggingface.co/AndrewDavidJ/stable-diffusion-v-1-2-original",
+  "created_at": "2026-08-27T01:29:06.000Z",
+  "updated_at": "2026-08-27T01:29:06.000Z",
+  "license": "creativeml-openrail-m",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-image",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "stable-diffusion",
+    "text-to-image",
+    "arxiv:2112.10752",
+    "arxiv:2103.00020",
+    "arxiv:2205.11487",
+    "arxiv:2207.12598",
+    "arxiv:1910.09700",
+    "license:creativeml-openrail-m",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 11969187858,
+  "storage_human": "12.0 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "CompVis/stable-diffusion-v-1-2-original · Hugging Face",
+      "url": "https://huggingface.co/CompVis/stable-diffusion-v-1-2-original",
+      "snippet": "Stable Diffusion v1 Model Card Stable Diffusion is a latent text-to-image diffusion model capable of generating photo-realistic images given any text input. The Stable-Diffusion-v-1-2 checkpoint was initialized with the weights of the Stable-Diffusion-v-1-1 checkpoint and subsequently fine-tuned on 515,000 steps at resolution 512x512 on \"laion-improved-aesthetics\" (a subset of laion2B-en ..."
+    },
+    {
+      "title": "CompVis/stable-diffusion-v1-2 · Hugging Face",
+      "url": "https://huggingface.co/CompVis/stable-diffusion-v1-2",
+      "snippet": "Stable Diffusion v1-2 Model Card Stable Diffusion is a latent text-to-image diffusion model capable of generating photo-realistic images given any text input. For more information about how Stable Diffusion functions, please have a look at 🤗&#x27;s Stable Diffusion with D🧨iffusers blog. The Stable-Diffusion-v1-2 checkpoint was initialized with the weights of the Stable-Diffusion-v1-1 ..."
+    },
+    {
+      "title": "Stable Diffusion - AI Image Generator",
+      "url": "https://stable-diffusion.io/online",
+      "snippet": "Stable Diffusion Online Stable Diffusion is a latent text-to-image diffusion model capable of generating photo-realistic images given any text input, cultivates autonomous freedom to produce incredible imagery, empowers billions of people to create stunning art within seconds. Create beautiful art using stable diffusion ONLINE for free."
+    },
+    {
+      "title": "Stable Diffusion - Text to Image Generator",
+      "url": "https://stable-diffusion.io/",
+      "snippet": "Stable Diffusion: Text-to-image AI model Stable Diffusion is an advanced text-to-image model that harnesses the power of deep learning and artificial intelligence to generate visually stunning images based on textual descriptions."
+    },
+    {
+      "title": "Stable Diffusion download | SourceForge.net",
+      "url": "https://sourceforge.net/projects/stable-diffusion/",
+      "snippet": "Download Stable Diffusion for free. High-Resolution Image Synthesis with Latent Diffusion Models. Stable Diffusion Version 2. The Stable Diffusion project, developed by Stability AI, is a cutting-edge image synthesis model that utilizes latent diffusion techniques for high-resolution image generation."
+    }
+  ]
+}

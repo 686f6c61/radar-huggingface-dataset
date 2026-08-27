@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "takeru01/act_task1_1_5_rgb_recover_up_down_trim_100000steps_bs16_chunk93",
+  "slug": "takeru01-act_task1_1_5_rgb_recover_up_down_trim_100000steps_bs16_chunk93",
+  "author": "takeru01",
+  "url": "https://huggingface.co/takeru01/act_task1_1_5_rgb_recover_up_down_trim_100000steps_bs16_chunk93",
+  "created_at": "2026-08-27T01:09:20.000Z",
+  "updated_at": "2026-08-27T01:09:40.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "act",
+    "robotics",
+    "dataset:takeru01/task1_1_5_rgb_recover_up_down_trim",
+    "arxiv:2304.13705",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 51677838,
+  "parameters_human": "51.7M",
+  "storage_bytes": 206765056,
+  "storage_human": "207 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "takeru01/task1_1_5_rgb_act_chunk91_bs16_0821_2144 · Hugging Face",
+      "url": "https://huggingface.co/takeru01/task1_1_5_rgb_act_chunk91_bs16_0821_2144",
+      "snippet": "Model Card for act Action Chunking with Transformers (ACT) is an imitation-learning method that predicts short action chunks instead of single steps. It learns from teleoperated data and often achieves high success rates."
+    },
+    {
+      "title": "takeru01/task1_1_5_rgb_act_chunk93_bs16_0824_1508 · Hugging Face",
+      "url": "https://huggingface.co/takeru01/task1_1_5_rgb_act_chunk93_bs16_0824_1508",
+      "snippet": "Model Card for act Action Chunking with Transformers (ACT) is an imitation-learning method that predicts short action chunks instead of single steps. It learns from teleoperated data and often achieves high success rates."
+    },
+    {
+      "title": "Action Chunking with Transformers - ACT — Open Edge Platform Documentation",
+      "url": "https://docs.openedgeplatform.intel.com/2026.2/edge-ai-suites/robotics-ai-suite/embodied/model_tutorials/model_act.html",
+      "snippet": "Action Chunking with Transformers (ACT) is an end-to-end imitation learning model designed for fine manipulation tasks in robotics, learned directly from real demonstrations. ACT aims to overcome the limitations of imitation learning, where policy errors can compound over time and lead to drifting out of the training distribution. By predicting actions in chunks, ACT effectively reduces the ..."
+    },
+    {
+      "title": "Agnes AI | Free Omni-Modal AI API, World-Class AI Models & AI Applications",
+      "url": "https://agnes-ai.com/",
+      "snippet": "Agnes AI is an AI gateway, free AI API platform, and AI application ecosystem featuring Agnes, Echo, and Pavo. Get free AI API credits, create a free AI API key, use free AI API tokens, and access free AI API models for chatbots, AI agents, content tools, image generation, roleplay, productivity, and intelligent workflows."
+    },
+    {
+      "title": "TinyTask",
+      "url": "https://www.tinytask.net/",
+      "snippet": "TinyTask is free software for personal use, but it does cost money to develop & host this project. Historically, only 1 in 10,000 downloaders gives a contribution."
+    }
+  ]
+}

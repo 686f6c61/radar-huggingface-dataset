@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "leeroy-jankins/nani",
+  "slug": "leeroy-jankins-nani",
+  "author": "leeroy-jankins",
+  "url": "https://huggingface.co/leeroy-jankins/nani",
+  "created_at": "2026-08-27T00:06:21.000Z",
+  "updated_at": "2026-08-27T00:16:33.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "gguf",
+    "language",
+    "granite-4.0",
+    "arxiv:0000.00000",
+    "base_model:unsloth/granite-4.0-1b",
+    "base_model:quantized:unsloth/granite-4.0-1b",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us",
+    "imatrix",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1631750144,
+  "parameters_human": "1.63B",
+  "storage_bytes": 1026310336,
+  "storage_human": "1.0 GB",
+  "base_model": "unsloth/granite-4.0-1b",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "leeroy-jankins/NIST-GenAI-Profile · Datasets at Hugging Face",
+      "url": "https://huggingface.co/datasets/leeroy-jankins/NIST-GenAI-Profile/viewer",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "leeroy-jankins (Terry Eppler) - Hugging Face",
+      "url": "https://huggingface.co/leeroy-jankins",
+      "snippet": "AI & ML interests Made with real bits of panther so you know it&#x27;s good!"
+    },
+    {
+      "title": "LLM Leaderboard 2026: Compare 300+ Top AI Models by Intelligence, Speed ...",
+      "url": "https://llm-stats.com/leaderboards/llm-leaderboard",
+      "snippet": "The LLM Leaderboard — independent ranking of GPT, Claude, Gemini, Llama, DeepSeek and 300+ AI models by intelligence, speed and price. Filter by provider, license, modality and context window; sort by every benchmark. Composite LLM Stats Score updated continuously from public benchmarks and live API metrics."
+    },
+    {
+      "title": "The AI founders who walked away from Bezos-backed Prometheus to model ...",
+      "url": "https://www.reuters.com/business/ai-founders-who-walked-away-bezos-backed-prometheus-model-universe-2026-08-25/",
+      "snippet": "A research duo, once pitched to lead the Jeff Bezos-backed Project Prometheus, unveiled what they&#x27;ve built on their own: an AI model that can take in and produce information so vast that a lone ..."
+    },
+    {
+      "title": "Leeroy Jenkins - AI CEO AND HUMANIZED AI MODEL at ... - LinkedIn",
+      "url": "https://www.linkedin.com/in/leeroy-jenkins-53127341a",
+      "snippet": "AI CEO AND HUMANIZED AI MODEL at METAGOOGLEMICROSOFTAPPLEFACEBOOKAMAZON ANDRUILLOCKEED Olympia, Washington, États-Unis Voir vos relations en commun METAGOOGLEMICROSOFTAPPLEFACEBOOKAMAZON ..."
+    }
+  ]
+}

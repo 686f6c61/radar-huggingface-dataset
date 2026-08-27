@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "mozilla-ai/dcarpintero-pangolin-guard-base-encoderfile",
+  "slug": "mozilla-ai-dcarpintero-pangolin-guard-base-encoderfile",
+  "author": "mozilla-ai",
+  "url": "https://huggingface.co/mozilla-ai/dcarpintero-pangolin-guard-base-encoderfile",
+  "created_at": "2026-08-26T20:11:21.000Z",
+  "updated_at": "2026-08-26T20:29:37.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "encoderfile",
+  "languages": [],
+  "tags": [
+    "encoderfile",
+    "base_model:dcarpintero/pangolin-guard-base",
+    "base_model:finetune:dcarpintero/pangolin-guard-base",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 5207549216,
+  "storage_human": "5.2 GB",
+  "base_model": "dcarpintero/pangolin-guard-base",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - dcarpintero/pangolin-guard: Lightweight, Self-Hosted AI ...",
+      "url": "https://github.com/dcarpintero/pangolin-guard",
+      "snippet": "Evaluated on unseen data from a subset of specialized benchmarks targeting prompt safety and malicious input detection, while testing over-defense behavior: NotInject: Designed to measure over-defense in prompt guard models by including benign inputs enriched with trigger words common in prompt injection attacks. BIPIA: Evaluates privacy invasion attempts and boundary-pushing queries through ..."
+    },
+    {
+      "title": "dcarpintero/pangolin-guard-base · Hugging Face",
+      "url": "https://huggingface.co/dcarpintero/pangolin-guard-base",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GitHub - dcarpintero/pangolin-guard: Open, Lightweight Model for AI ...",
+      "url": "https://github.com/dcarpintero/pangolin-guard/tree/main",
+      "snippet": "Open, Lightweight Model for AI Safety. Contribute to dcarpintero/pangolin-guard development by creating an account on GitHub."
+    },
+    {
+      "title": "dcarpintero/pangolin-guard-base at main - Hugging Face",
+      "url": "https://huggingface.co/dcarpintero/pangolin-guard-base/tree/main",
+      "snippet": "dcarpintero / pangolin-guard-base like 0 Text Classification Transformers Safetensors modernbert Generated from Trainer Inference Endpoints License:apache-2.0 Model card FilesFiles and versions Community Train Deploy Use this model main pangolin-guard-base 1 contributor History:3 commits dcarpintero End of training 4f5393f verifiedabout 3 hours ago .gitattributes Safe 1.52 kBinitial commit8 ..."
+    },
+    {
+      "title": "Pangolin Guard | any-guardrail | Mozilla.ai Docs",
+      "url": "https://docs.mozilla.ai/any-guardrail/api-reference/index/pangolin",
+      "snippet": "Runs one of dcarpintero&#x27;s ModernBERT encoder classifiers over a single user prompt and reports whether the text is a prompt-injection / jailbreak attempt. Each model is a two-class sequence classifier whose unsafe class is labeled \"unsafe\"; the guardrail treats that class as the risky one. The default pangolin-guard-base is ModernBERT-base; pangolin-guard-large is a higher-accuracy ModernBERT ..."
+    }
+  ]
+}

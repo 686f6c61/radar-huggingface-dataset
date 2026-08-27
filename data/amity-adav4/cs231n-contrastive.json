@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "amity-adav4/cs231n-contrastive",
+  "slug": "amity-adav4-cs231n-contrastive",
+  "author": "amity-adav4",
+  "url": "https://huggingface.co/amity-adav4/cs231n-contrastive",
+  "created_at": "2026-08-27T01:05:11.000Z",
+  "updated_at": "2026-08-27T01:05:20.000Z",
+  "license": "bsd-3-clause",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "coca",
+    "pytorch",
+    "contrastive",
+    "license:bsd-3-clause",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 33088,
+  "parameters_human": "33088",
+  "storage_bytes": 132832,
+  "storage_human": "132832 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Stanford University CS231n: Deep Learning for Computer Vision",
+      "url": "https://cs231n.stanford.edu/2025/reports.html",
+      "snippet": "CS231n: Deep Learning for Computer Vision Stanford - Spring 2025 Final Project Reports Please see the Project page for details regarding the final project."
+    },
+    {
+      "title": "CS231n-2025/Assignments/assignment3/cs231n/simclr/contrastive ... - GitHub",
+      "url": "https://github.com/Kang-Jay/CS231n-2025/blob/main/Assignments/assignment3/cs231n/simclr/contrastive_loss.py",
+      "snippet": "Personal solutions, learning notes and model architecture diagrams for Stanford CS231n (Spring 2025). - Kang-Jay/CS231n-2025"
+    },
+    {
+      "title": "Stanford University CS231n: Deep Learning for Computer Vision",
+      "url": "https://cs231n.stanford.edu/",
+      "snippet": "Computer Vision has become ubiquitous in our society, with applications in search, image understanding, apps, mapping, medicine, drones, and self-driving cars. Core to many of these applications are visual recognition tasks such as image classification, localization and detection. Recent developments in neural network (aka \"deep learning\") approaches have greatly advanced the performance ..."
+    },
+    {
+      "title": "CS231n 2025 Lecture Notes - raimbekovm.github.io",
+      "url": "https://raimbekovm.github.io/cs231n-2025-notes/",
+      "snippet": "CS231n lecture notes · Stanford · Spring 2025 · Unofficial Eighteen lectures of Stanford CS231n, written up. Vision Transformers, contrastive pretraining, latent diffusion, segmentation foundation models, vision-language models — written from the 2025 lectures, with every result linked to the paper it came from."
+    },
+    {
+      "title": "CS231n 2025 Lecture Notes - GitHub",
+      "url": "https://github.com/raimbekovm/cs231n-2025-notes",
+      "snippet": "About these notes Stanford&#x27;s CS231n is the course a lot of people learned computer vision from, and its official notes stopped being updated in 2017 — before Vision Transformers, contrastive pretraining, latent diffusion and vision-language models. These notes are written from the Spring 2025 lectures, not summarised from the old ones."
+    }
+  ]
+}

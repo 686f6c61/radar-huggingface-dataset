@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "qikp/tiny-random-Qwen4-Exp_Qwen3.8-Flash-Next",
+  "slug": "qikp-tiny-random-qwen4-exp_qwen3-8-flash-next",
+  "author": "qikp",
+  "url": "https://huggingface.co/qikp/tiny-random-Qwen4-Exp_Qwen3.8-Flash-Next",
+  "created_at": "2026-08-26T20:18:18.000Z",
+  "updated_at": "2026-08-26T20:18:32.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen4_exp_text",
+    "text-generation",
+    "conversational",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 31108355,
+  "parameters_human": "31.1M",
+  "storage_bytes": 144458125,
+  "storage_human": "144 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Hugging Face Release Notes - August 2026 Latest Updates - Releasebot",
+      "url": "https://releasebot.io/updates/huggingface",
+      "snippet": "Release v5.16. New Model additions Qwen4-Exp Qwen4-Exp builds on Qwen3.5&#x27;s hybrid text and multimodal architecture with three key components: GatedResidual (GR), Qwen Sparse Attention (QSA), and Per-Layer Embedding (PLE). GR is a Qwen-developed residual architecture that combines Hyper-Connection with GatedNorm. It mixes multiple residual streams with fine-grained elementwise gating before ..."
+    },
+    {
+      "title": "qikp/qwen3.5-tiny-random · Hugging Face",
+      "url": "https://huggingface.co/qikp/qwen3.5-tiny-random",
+      "snippet": "This is a randomly initialized model from a modified config from Qwen/Qwen3-Next-80B-A3B-Thinking. It is for debugging or testing only. As of February 11th, 2026, you MUST use the latest Git version of 🤗 Transformers! Because the necessary classes were already merged into 🤗 Transformers, we were able to release this before the official launch of Qwen3.5."
+    },
+    {
+      "title": "tiny-random/qwen3-next-moe · Hugging Face",
+      "url": "https://huggingface.co/tiny-random/qwen3-next-moe",
+      "snippet": "This tiny model is intended for debugging. It is randomly initialized using the configuration adapted from Qwen/Qwen3-Next-80B-A3B-Instruct. Example usage: vLLM"
+    },
+    {
+      "title": "GitHub - Emericen/tiny-qwen: A minimal PyTorch re-implementation of ...",
+      "url": "https://github.com/Emericen/tiny-qwen",
+      "snippet": "A minimal PyTorch re-implementation of Qwen 3.8. Contribute to Emericen/tiny-qwen development by creating an account on GitHub."
+    },
+    {
+      "title": "GitHub - QwenLM/Qwen: The official repo of Qwen (通义千问) chat ...",
+      "url": "https://github.com/QwenLM/Qwen",
+      "snippet": "The official repo of Qwen (通义千问) chat & pretrained large language model proposed by Alibaba Cloud. - QwenLM/Qwen"
+    }
+  ]
+}

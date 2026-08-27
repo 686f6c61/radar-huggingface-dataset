@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "zviratko/BigBang-v1-oQ6e-mtp",
+  "slug": "zviratko-bigbang-v1-oq6e-mtp",
+  "author": "zviratko",
+  "url": "https://huggingface.co/zviratko/BigBang-v1-oQ6e-mtp",
+  "created_at": "2026-08-26T23:31:36.000Z",
+  "updated_at": "2026-08-26T23:40:54.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "mlx",
+  "languages": [],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "qwen3_5_moe",
+    "oq",
+    "quantized",
+    "6-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 8324463536,
+  "parameters_human": "8.32B",
+  "storage_bytes": 30150438013,
+  "storage_human": "30.2 GB",
+  "base_model": null,
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "AmixDigital/BigBang-v1-mtp-oQ6e · Hugging Face",
+      "url": "https://huggingface.co/AmixDigital/BigBang-v1-mtp-oQ6e",
+      "snippet": "Selection: browse the BigBang-v1 MTP oQ Quantizations collection to compare the nine standalone levels. Published artifact: 6 MLX Safetensors shards plus the exact model, tokenizer, prompt, and multimodal preprocessing assets required by this tier."
+    },
+    {
+      "title": "zviratko/Qwopus3.6-35B-A3B-v1-oQ6e-mtp · Hugging Face",
+      "url": "https://huggingface.co/zviratko/Qwopus3.6-35B-A3B-v1-oQ6e-mtp",
+      "snippet": "Instructions to use zviratko/Qwopus3.6-35B-A3B-v1-oQ6e-mtp with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Libraries MLX How to use zviratko/Qwopus3.6-35B-A3B-v1-oQ6e-mtp with MLX: # Download the model from the Hub pip install huggingface_hub [hf_xet] huggingface-cli download --local-dir Qwopus3.6-35B-A3B-v1-oQ6e-mtp zviratko/Qwopus3.6-35B-A3B ..."
+    },
+    {
+      "title": "BigBang — Pursuing Open-Ended Intelligence through Self-Evolving ...",
+      "url": "https://endlessfrontier.tech/",
+      "snippet": "BigBang is a general-purpose large language model evolved from Qwen3.6-35B-A3B through efficient post-training, driven by an adversarial, self-evolving synthetic data framework grounded in verifiable frontier research tasks. BigBang reaches aggregate performance between DeepSeek V4 Flash (284B) and DeepSeek V4 Pro (1.6T)."
+    },
+    {
+      "title": "BigBang-v1/README.md at main · endless-frontier/BigBang-v1",
+      "url": "https://github.com/endless-frontier/BigBang-v1/blob/main/README.md",
+      "snippet": "BigBang-v1 is a 35B-A3B agentic model built on Qwen3.6-35B-A3B, with 35B total parameters and 3B parameters activated during inference. We evaluate it on long-horizon search, coding, scientific research, and AI research."
+    },
+    {
+      "title": "China&#x27;s Endless Frontier Team Releases BigBang-V1, First Open-Source ...",
+      "url": "https://zglg.work/en/ai/news/2026-08-09-china-s-endless-frontier-team-releases-bigbang-v1-first-open-source-foundatio",
+      "snippet": "The Endless Frontier team, a China-based academic-industry collaboration, released BigBang-V1, which it calls the first foundation model trained natively with recursive self-improving; its post-training data is 100% AI-synthesized. The 35B-parameter open-weight model tops 10 categories among 35B-class models and even beats the 1T-parameter DeepSeek V4 Pro Preview on several hard research ..."
+    }
+  ]
+}

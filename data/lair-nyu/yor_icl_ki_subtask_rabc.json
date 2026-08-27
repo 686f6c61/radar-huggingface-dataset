@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "lair-nyu/yor_icl_ki_subtask_rabc",
+  "slug": "lair-nyu-yor_icl_ki_subtask_rabc",
+  "author": "lair-nyu",
+  "url": "https://huggingface.co/lair-nyu/yor_icl_ki_subtask_rabc",
+  "created_at": "2026-08-26T20:49:57.000Z",
+  "updated_at": "2026-08-26T21:03:37.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 12440727171,
+  "storage_human": "12.4 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Substack",
+      "url": "https://substack.com/",
+      "snippet": "The app for independent voices Make money doing the work you believe in"
+    },
+    {
+      "title": "lair-nyu (LAIR NYU) - Hugging Face",
+      "url": "https://huggingface.co/lair-nyu/models",
+      "snippet": "Org profile for LAIR NYU on Hugging Face, the AI community building the future."
+    },
+    {
+      "title": "State of Vision-Language-Action (VLA) Research at ICLR 2026 - Moritz Reuss",
+      "url": "https://mbreuss.github.io/blog_post_iclr_26_vla.html",
+      "snippet": "Analysis of 164 Vision-Language-Action model submissions at ICLR 2026. Learn about discrete diffusion VLAs, reasoning models, and current benchmark trends."
+    },
+    {
+      "title": "NYU Immersive Computing Lab - GitHub",
+      "url": "https://github.com/NYU-ICL",
+      "snippet": "NYU Immersive Computing Lab has 18 repositories available. Follow their code on GitHub."
+    },
+    {
+      "title": "Lair @ Nyu | Creo",
+      "url": "http://robotics.engineering.nyu.edu/group/lair/",
+      "snippet": "The Lab for Autonomous and Intelligent Robotics (LAIR) is a university research lab at NYU that strives to develop new robotics algorithms, ML models, and control systems motivated by in-the-wild applications. Originally focussing on multi-robot systems and motion planning, the lab&#x27;s work has been applied to marine biology, archaeology, autonomous driving, security systems, and oceanography ..."
+    }
+  ]
+}

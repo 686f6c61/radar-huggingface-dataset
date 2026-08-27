@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "nucleiloo/qwen35-9b-lr-1e-6",
+  "slug": "nucleiloo-qwen35-9b-lr-1e-6",
+  "author": "nucleiloo",
+  "url": "https://huggingface.co/nucleiloo/qwen35-9b-lr-1e-6",
+  "created_at": "2026-08-20T21:40:47.000Z",
+  "updated_at": "2026-08-26T23:07:06.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_5",
+    "image-text-to-text",
+    "conversational",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 9409813744,
+  "parameters_human": "9.41B",
+  "storage_bytes": 18839711717,
+  "storage_human": "18.8 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Qwen/Qwen3.5-9B · Hugging Face",
+      "url": "https://huggingface.co/Qwen/Qwen3.5-9B",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "nucleiloo (nucleiloo) - Hugging Face",
+      "url": "https://huggingface.co/nucleiloo/datasets",
+      "snippet": "Org profile for nucleiloo on Hugging Face, the AI community building the future."
+    },
+    {
+      "title": "chips1582/qwen35-9b • LM Studio Hub",
+      "url": "https://lmstudio.ai/chips1582/qwen35-9b",
+      "snippet": "Qwen3.5 represents a significant leap forward, integrating breakthroughs in multimodal learning, architectural efficiency, reinforcement learning scale, and global accessibility. This is a 9B parameter dense model, supporting a native context length of 262,144 tokens."
+    },
+    {
+      "title": "joefear/qwen35-9b • LM Studio Hub",
+      "url": "https://lmstudio.ai/joefear/qwen35-9b",
+      "snippet": "Qwen3.5 represents a significant leap forward, integrating breakthroughs in multimodal learning, architectural efficiency, reinforcement learning scale, and global accessibility. This is a 9B parameter dense model, supporting a native context length of 262,144 tokens."
+    },
+    {
+      "title": "Alibaba Cloud Model Studio",
+      "url": "https://modelstudio.alibabacloud.com/",
+      "snippet": "Diverse Model Ecosystem Easily experience and quickly access Alibaba Cloud&#x27;s latest foundational models (FM), including Qwen-Max, Qwen-Plus, Qwen-Turbo, Qwen-VL, and the Wan series."
+    }
+  ]
+}

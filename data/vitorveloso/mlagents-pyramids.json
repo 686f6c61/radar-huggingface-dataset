@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "vitorveloso/mlagents-Pyramids",
+  "slug": "vitorveloso-mlagents-pyramids",
+  "author": "vitorveloso",
+  "url": "https://huggingface.co/vitorveloso/mlagents-Pyramids",
+  "created_at": "2026-08-26T19:53:39.000Z",
+  "updated_at": "2026-08-26T19:54:18.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "reinforcement-learning",
+  "library": "ml-agents",
+  "languages": [],
+  "tags": [
+    "ml-agents",
+    "ML-Agents-Pyramids",
+    "reinforcement-learning",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "kingabzpro/MLAgents-Pyramids · Hugging Face",
+      "url": "https://huggingface.co/kingabzpro/MLAgents-Pyramids",
+      "snippet": "ppo Agent playing Pyramids This is a trained model of a ppo agent playing Pyramids using the Unity ML-Agents Library."
+    },
+    {
+      "title": "AlexChe/MLAgents-Pyramids · Hugging Face",
+      "url": "https://huggingface.co/AlexChe/MLAgents-Pyramids",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "MLAgents-Pyramids Open Source Reinforcement Learning Agents - Freely ...",
+      "url": "https://model.aibase.com/models/details/1915692624381632514",
+      "snippet": "This project presents a trained model of a PPO agent playing Pyramids with the Unity ML-Agents Library. It offers an effective solution for deep reinforcement learning in the context of the Pyramids game, leveraging the power of the Unity ML-Agents framework."
+    },
+    {
+      "title": "MLAgents-Pyramids Open-Source Reinforcement Learning Agents - Free ...",
+      "url": "https://model.aibase.com/models/details/1915692630253658113",
+      "snippet": "🚀 PPO Agent Playing Pyramids This is a trained model of a PPO agent playing Pyramids using the Unity ML - Agents Library, offering a practical application in deep reinforcement learning."
+    },
+    {
+      "title": "ML-Agents Overview | ML Agents | 4.1.0 - docs.unity3d.com",
+      "url": "https://docs.unity3d.com/Packages/com.unity.ml-agents@4.1/manual/index.html",
+      "snippet": "ML-Agents Overview ML-Agents enable games and simulations to serve as environments for training intelligent agents in Unity. Training can be done with reinforcement learning, imitation learning, neuroevolution, or any other methods. Trained agents can be used for many use cases, including controlling NPC behavior (in a variety of settings such as multi-agent and adversarial), automated testing ..."
+    }
+  ]
+}

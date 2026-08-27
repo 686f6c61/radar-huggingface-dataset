@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "tadiecool29/afriberta-stl-large-stance",
+  "slug": "tadiecool29-afriberta-stl-large-stance",
+  "author": "tadiecool29",
+  "url": "https://huggingface.co/tadiecool29/afriberta-stl-large-stance",
+  "created_at": "2026-08-26T21:20:57.000Z",
+  "updated_at": "2026-08-26T21:21:45.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "generated_from_trainer",
+    "base_model:castorini/afriberta_large",
+    "base_model:finetune:castorini/afriberta_large",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 125634052,
+  "parameters_human": "125.6M",
+  "storage_bytes": 502561737,
+  "storage_human": "503 MB",
+  "base_model": "castorini/afriberta_large",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "castorini/afriberta_large · Hugging Face",
+      "url": "https://huggingface.co/castorini/afriberta_large",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "AfriBERTa large Open-source Multilingual Model - Free Processing of ...",
+      "url": "https://model.aibase.com/en/models/details/1915687192057561090",
+      "snippet": "AfriBERTa large is a pre-trained multilingual model with approximately 126 million parameters, supporting 11 African languages, suitable for tasks such as text classification and named entity recognition."
+    },
+    {
+      "title": "GitHub - castorini/afriberta: AfriBERTa: Exploring the Viability of ...",
+      "url": "https://github.com/castorini/afriberta",
+      "snippet": "AfriBERTa: Exploring the Viability of Pretrained Multilingual Language Models for Low-resourced Languages This repository contains the code for the paper Small Data?"
+    },
+    {
+      "title": "tadiecool29/README.md at main - GitHub",
+      "url": "https://github.com/tadiecool29/tadiecool29/blob/main/README.md",
+      "snippet": "Hi, I&#x27;m Tadesse, I&#x27;m interested in Machine Learning, Deep Learning and AI. I&#x27;m currently study Data Science and Analytics, I&#x27;m looking to collaborate on working data science projects, and i have a skill on data manipulation in python programming and R. Reach me via Email : tadiecool29@gmail.com Telegram : https://t.me/Niktadic"
+    },
+    {
+      "title": "afriberta_large | PromptLayer Models",
+      "url": "https://www.promptlayer.com/models/afribertalarge/",
+      "snippet": "AfriBERTa Large is a sophisticated multilingual language model specifically designed for African languages. It represents a significant advancement in Natural Language Processing for low-resource African languages, trained on 11 different languages including Afaan Oromoo, Amharic, Gahuza, Hausa, Igbo, Nigerian Pidgin, Somali, Swahili, Tigrinya ..."
+    }
+  ]
+}

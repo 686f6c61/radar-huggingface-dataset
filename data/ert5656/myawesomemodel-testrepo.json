@@ -4,8 +4,8 @@
   "slug": "ert5656-myawesomemodel-testrepo",
   "author": "ert5656",
   "url": "https://huggingface.co/ert5656/MyAwesomeModel-TestRepo",
-  "created_at": "2026-08-23T10:43:27.000Z",
-  "updated_at": "2026-08-23T10:43:36.000Z",
+  "created_at": "2026-08-27T01:51:34.000Z",
+  "updated_at": "2026-08-27T01:52:37.000Z",
   "license": "mit",
   "license_family": "oss",
   "pipeline_tag": "feature-extraction",
@@ -31,8 +31,8 @@
   "formats": [],
   "is_conversational": false,
   "gated": false,
-  "removed": true,
-  "removed_at": "2026-08-26T05:45:33.519Z",
+  "removed": false,
+  "removed_at": null,
   "benchmarks": [],
   "sources": []
 }

@@ -5,7 +5,7 @@
   "author": "maskjp",
   "url": "https://huggingface.co/maskjp/mtdit_plate_croissant_jointbase",
   "created_at": "2026-08-25T21:46:53.000Z",
-  "updated_at": "2026-08-25T21:53:45.000Z",
+  "updated_at": "2026-08-26T15:03:59.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "robotics",
@@ -22,7 +22,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 0,
+  "downloads_30d": 7,
   "trending_score": 0,
   "parameters": 443020554,
   "parameters_human": "443.0M",

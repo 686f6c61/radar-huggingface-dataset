@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "Shankarblr/shankar-bert-based-MovieQA-model",
+  "slug": "shankarblr-shankar-bert-based-movieqa-model",
+  "author": "Shankarblr",
+  "url": "https://huggingface.co/Shankarblr/shankar-bert-based-MovieQA-model",
+  "created_at": "2026-08-26T22:51:26.000Z",
+  "updated_at": "2026-08-27T01:46:49.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "question-answering",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "safetensors",
+    "distilbert",
+    "imdb-movies-dataset",
+    "question-answering",
+    "en",
+    "base_model:distilbert/distilbert-base-uncased",
+    "base_model:finetune:distilbert/distilbert-base-uncased",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 66364418,
+  "parameters_human": "66.4M",
+  "storage_bytes": 265475233,
+  "storage_human": "265 MB",
+  "base_model": "distilbert/distilbert-base-uncased",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "shankar-bert-base-text-classification-model - Hugging Face",
+      "url": "https://huggingface.co/Shankarblr/shankar-bert-base-text-classification-model",
+      "snippet": "Shankarblr/shankar-bert-base-text-classification-model This model is trained using Bert-base-uncased model as the base model which is helpful for Multi Text classification"
+    },
+    {
+      "title": "GitHub - AngusKung/MovieQA: Some experiments on MovieQA with Yuan-Ting ...",
+      "url": "https://github.com/AngusKung/MovieQA",
+      "snippet": "Some experiments on MovieQA with Yuan-Ting Hsieh, En-Yu Fan and Jia-Cheng Huang in AMLDS - AngusKung/MovieQA"
+    },
+    {
+      "title": "Chetna19/bert_qa_model_movies_1 · Hugging Face",
+      "url": "https://huggingface.co/Chetna19/bert_qa_model_movies_1",
+      "snippet": "bert_qa_model_movies_1 This model is a fine-tuned version of bert-large-uncased-whole-word-masking-finetuned-squad on the subjqa dataset. It achieves the following results on the evaluation set:"
+    },
+    {
+      "title": "Exploring sentiments in movie reviews using BERT algorithm",
+      "url": "https://pubs.aip.org/aip/acp/article/3204/1/050015/3333740/Exploring-sentiments-in-movie-reviews-using-BERT",
+      "snippet": "In Sentiment Analysis, Words play a crucial role for the outcomes and the analysis Moreover, it is quite complex to choose an algorithm in order to provide an outcome of higher efficiency so hereby utilizing the Bidirectional Encoder Representations from Transformers (BERT) model. This Project involves the movie review dataset for training and other processes. We have adopted BERT model due to ..."
+    },
+    {
+      "title": "MovieQA: Understanding Stories in Movies through Question-Answering",
+      "url": "https://arxiv.org/abs/1512.02902",
+      "snippet": "We introduce the MovieQA dataset which aims to evaluate automatic story comprehension from both video and text. The dataset consists of 14,944 questions about 408 movies with high semantic diversity. The questions range from simpler \"Who\" did \"What\" to \"Whom\", to \"Why\" and \"How\" certain events occurred. Each question comes with a set of five possible answers; a correct one and four deceiving ..."
+    }
+  ]
+}

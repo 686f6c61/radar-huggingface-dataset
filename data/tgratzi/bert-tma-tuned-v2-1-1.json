@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "Tgratzi/bert-tma-tuned-v2.1.1",
+  "slug": "tgratzi-bert-tma-tuned-v2-1-1",
+  "author": "Tgratzi",
+  "url": "https://huggingface.co/Tgratzi/bert-tma-tuned-v2.1.1",
+  "created_at": "2026-08-26T20:01:20.000Z",
+  "updated_at": "2026-08-26T20:01:55.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "bert",
+    "text-classification",
+    "generated_from_trainer",
+    "base_model:google-bert/bert-base-uncased",
+    "base_model:finetune:google-bert/bert-base-uncased",
+    "license:apache-2.0",
+    "text-embeddings-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 109505310,
+  "parameters_human": "109.5M",
+  "storage_bytes": 438050617,
+  "storage_human": "438 MB",
+  "base_model": "bert-base-uncased",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Tgratzi/bert-tma-tuned · Hugging Face",
+      "url": "https://huggingface.co/Tgratzi/bert-tma-tuned",
+      "snippet": "bert-tma-tuned This model is a fine-tuned version of bert-base-uncased on an unknown dataset. It achieves the following results on the evaluation set:"
+    },
+    {
+      "title": "Tgratzi/bert-tma-tuned at main - Hugging Face",
+      "url": "https://huggingface.co/Tgratzi/bert-tma-tuned/tree/main",
+      "snippet": "like 0 Text Classification Transformers Safetensors bert Generated from Trainer License:apache-2.0 Model card FilesFiles and versions Community Train Deploy Use this model main bert-tma-tuned Ctrl+K Ctrl+K 1 contributor History:23 commits Tgratzi Tgratzi/bert-tma-tuned-v2.1. 1a2ff0b verified24 days ago .gitattributes Safe 1.52 kBinitial commitabout 2 months ago README.md 1.29 kBTgratzi/bert ..."
+    },
+    {
+      "title": "Bytez - open source AI",
+      "url": "https://bytez.com/model/Tgratzi/bert-tma-tuned",
+      "snippet": "Keep up with AI. Discover, demo, and deploy open source models"
+    },
+    {
+      "title": "TensorFlow Hub",
+      "url": "https://www.tensorflow.org/hub",
+      "snippet": "TensorFlow Hub is a repository of trained machine learning models ready for fine-tuning and deployable anywhere. Reuse trained models like BERT and Faster R-CNN with just a few lines of code."
+    },
+    {
+      "title": "Latest AI Model Releases — August 2026",
+      "url": "https://aireleasetracker.com/latest",
+      "snippet": "The newest AI model releases as of August 2026. Most recent: GLM-5.3-Flash by Z.ai on Aug 26 2026. Track every new frontier model from OpenAI, Anthropic, Google DeepMind, Meta, SpaceXAI, DeepSeek, Mistral, and Moonshot AI — updated continuously."
+    }
+  ]
+}

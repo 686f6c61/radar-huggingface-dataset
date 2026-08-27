@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "qq0518/egis-emer-guard",
+  "slug": "qq0518-egis-emer-guard",
+  "author": "qq0518",
+  "url": "https://huggingface.co/qq0518/egis-emer-guard",
+  "created_at": "2026-08-27T01:32:54.000Z",
+  "updated_at": "2026-08-27T01:40:16.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": "pytorch",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "pytorch",
+    "egis",
+    "emer-guard",
+    "emergency",
+    "safety",
+    "protocol-grounded",
+    "multi-task",
+    "text-classification",
+    "en",
+    "base_model:BAAI/bge-m3",
+    "base_model:finetune:BAAI/bge-m3",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 2273325711,
+  "storage_human": "2.3 GB",
+  "base_model": "BAAI/bge-m3",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Aegis AI",
+      "url": "https://www.aegis-ai.app/",
+      "snippet": "How is AEGIS different from traditional AI camera safety systems? Traditional systems detect objects and send alerts. AEGIS understands risk. Instead of reacting to a single frame, it evaluates context over time—including zones, movement, proximity, and activity state—so interventions happen only when there is real safety risk."
+    },
+    {
+      "title": "Aegis-AI-Content-Safety-LlamaGuard-Defensive-1.0",
+      "url": "https://huggingface.co/nvidia/Aegis-AI-Content-Safety-LlamaGuard-Defensive-1.0",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Aegis AI Guard - Chrome Web Store",
+      "url": "https://chromewebstore.google.com/detail/aegis-ai-guard/agkabcacpbocpjlopidfgmnoiemabbkd",
+      "snippet": "AI prompt safety for organizations and families — evaluates requests before submission. Aegis AI Guard is a Chrome extension that helps families and organizations stop sensitive information from reaching AI chat tools — before a prompt is submitted. Modern AI tools are powerful, but people paste more into them than they should: customer data, passwords, internal docs, kids&#x27; personal ..."
+    },
+    {
+      "title": "AegisAI | The Agentic AI Email Security Platform",
+      "url": "https://www.aegisai.ai/",
+      "snippet": "Aegis AI is a next generation agentic email security platform. It uses AI agents to analyze every email like a human analyst — detecting phishing, Business Email Compromise (BEC), and zero-day threats that bypass traditional rule-based filters. How is Aegis AI different from traditional Secure Email Gateways (SEGs)?"
+    },
+    {
+      "title": "Emergent - Build Apps with AI",
+      "url": "https://app.emergent.sh/landing/",
+      "snippet": "Build production-ready apps through conversation. Chat with AI agents that design, code, and deploy your application from start to finish."
+    }
+  ]
+}

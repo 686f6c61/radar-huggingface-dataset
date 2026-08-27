@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "Sounderya/smolvla-ur3-real-polished",
+  "slug": "sounderya-smolvla-ur3-real-polished",
+  "author": "Sounderya",
+  "url": "https://huggingface.co/Sounderya/smolvla-ur3-real-polished",
+  "created_at": "2026-08-26T23:48:13.000Z",
+  "updated_at": "2026-08-26T23:59:49.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "smolvla",
+    "robotics",
+    "dataset:Sounderya/sim_mug_skillgen_v3",
+    "arxiv:2506.01844",
+    "base_model:lerobot/smolvla_base",
+    "base_model:finetune:lerobot/smolvla_base",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 450046176,
+  "parameters_human": "450.0M",
+  "storage_bytes": 5277553468,
+  "storage_human": "5.3 GB",
+  "base_model": "lerobot/smolvla_base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Sounderya/smolvla-ur3-20-80-polished · Hugging Face",
+      "url": "https://huggingface.co/Sounderya/smolvla-ur3-20-80-polished",
+      "snippet": "Sounderya/mug_smolvla_dataset_v2nc ... SmolVLA: A Vision-Language-Action Model for Affordable and Efficient Robotics"
+    },
+    {
+      "title": "Sounderya/smolvla-ur3-20-80-polished_v3 · Hugging Face",
+      "url": "https://huggingface.co/Sounderya/smolvla-ur3-20-80-polished_v3",
+      "snippet": "Sounderya/mug_smolvla_dataset_v2nc ... SmolVLA: A Vision-Language-Action Model for Affordable and Efficient Robotics"
+    },
+    {
+      "title": "GitHub - Sounderya22/ur3_smolvla",
+      "url": "https://github.com/Sounderya22/ur3_smolvla",
+      "snippet": "Contribute to Sounderya22/ur3_smolvla development by creating an account on GitHub."
+    },
+    {
+      "title": "SmolVLA: A vision-language-action model for affordable and efficient ...",
+      "url": "https://arxiv.org/pdf/2506.01844",
+      "snippet": "SmolVLA is an efficient vision-language-action model for robotics, leveraging pretrained multimodal datasets to enable natural language-driven perception and control."
+    },
+    {
+      "title": "SmolVLA: A vision-language-action model for affordable and efficient ...",
+      "url": "https://arxiv.org/html/2506.01844v1",
+      "snippet": "In Table 5, we further evaluate the impact of pretraining SmolVLA on community datasets in terms of the difference in real-world performance, and investigate whether multitask finetuning provides additional benefits for SmolVLA."
+    }
+  ]
+}

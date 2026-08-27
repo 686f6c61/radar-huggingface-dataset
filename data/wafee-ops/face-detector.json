@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "wafee-ops/face-detector",
+  "slug": "wafee-ops-face-detector",
+  "author": "wafee-ops",
+  "url": "https://huggingface.co/wafee-ops/face-detector",
+  "created_at": "2026-08-26T20:15:30.000Z",
+  "updated_at": "2026-08-26T20:15:30.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 2154032,
+  "storage_human": "2 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "wafee-ops (Wafee Al-Jabir) - Hugging Face",
+      "url": "https://huggingface.co/wafee-ops/models",
+      "snippet": "Recent Activity published a datasetabout 20 hours ago wafee-ops/indexed_pages View all activity"
+    },
+    {
+      "title": "wafee-ops (Wafee Al-Jabir) - Hugging Face",
+      "url": "https://huggingface.co/wafee-ops/datasets",
+      "snippet": "Organizations wafee-ops&#x27;s datasets2 Sort: Recently updated wafee-ops/coding Updated Jun 11• 11 • 1"
+    },
+    {
+      "title": "Face detection guide | Google AI Edge | Google for Developers",
+      "url": "https://developers.google.com/edge/mediapipe/solutions/vision/face_detector",
+      "snippet": "The MediaPipe Face Detector task lets you detect faces in an image or video. You can use this task to locate faces and facial features within a frame. This task uses a machine learning (ML) model that works with single images or a continuous stream of images. The task outputs face locations, along with the following facial key points: left eye, right eye, nose tip, mouth, left eye tragion, and ..."
+    },
+    {
+      "title": "Face detection guide for Python | Google AI Edge - Google Developers",
+      "url": "https://developers.google.com/edge/mediapipe/solutions/vision/face_detector/python",
+      "snippet": "The MediaPipe Face Detector task lets you detect faces in an image or video. You can use this task to locate faces and facial features within a frame. This task uses a machine learning (ML) model that works with single images or a continuous stream of images. The task outputs face locations, along with the following facial key points: left eye, right eye, nose tip, mouth, left eye tragion, and ..."
+    },
+    {
+      "title": "Top Free Face Detection APIs & Open-Source Models (2026) - Eden AI",
+      "url": "https://www.edenai.co/post/top-free-face-detection-tools-apis-and-open-source-models",
+      "snippet": "In this guide, we compare the best free face detection APIs and open-source models in 2026, helping developers evaluate accuracy, scalability, and use cases to find the right fit for their projects."
+    }
+  ]
+}

@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "sachinrty/matching-pretrained",
+  "slug": "sachinrty-matching-pretrained",
+  "author": "sachinrty",
+  "url": "https://huggingface.co/sachinrty/matching-pretrained",
+  "created_at": "2026-08-27T01:15:56.000Z",
+  "updated_at": "2026-08-27T01:16:05.000Z",
+  "license": "bsd-3-clause",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "albef",
+    "pytorch",
+    "matching",
+    "license:bsd-3-clause",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 33088,
+  "parameters_human": "33088",
+  "storage_bytes": 132832,
+  "storage_human": "132832 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Find Pre-trained Models | Kaggle",
+      "url": "https://www.kaggle.com/models",
+      "snippet": "Discover and download pre-trained AI models. Use them directly in Kaggle Notebooks or integrate into your own projects."
+    },
+    {
+      "title": "Top 20 Pre-Trained Models in Machine Learning-Complete Guide",
+      "url": "https://thetechthinker.com/top-20-pre-trained-models-in-machine-learning/",
+      "snippet": "Explore the top 20 pre-trained models in machine learning for 2025. Learn their types, advantages, applications, and how to use them in real-world."
+    },
+    {
+      "title": "nvidia/sr_ssl_flowmatching_16k_430m · Hugging Face",
+      "url": "https://huggingface.co/nvidia/sr_ssl_flowmatching_16k_430m",
+      "snippet": "SR SSL FlowMatching 16kHz 430M | Model Overview Description This is a generative speech restoration model based on flow matching. The model is pre-trained on a publicly available Libri-Light dataset by using self-supervised learning technique."
+    },
+    {
+      "title": "pretrained-model · GitHub Topics · GitHub",
+      "url": "https://github.com/topics/pretrained-model",
+      "snippet": "A PyTorch implementation of the &#x27;FaceNet&#x27; paper for training a facial recognition model with Triplet Loss using the glint360k dataset. A pre-trained model using Triplet Loss is available for download."
+    },
+    {
+      "title": "AI Model Index",
+      "url": "https://www.modelindex.org/",
+      "snippet": "Search and explore AI models across providers, modalities, and capabilities. Currently supported providers: OpenAI, Google, Anthropic, Meta, and Mistral AI. See the Model Inclusion Policy for details on selection criteria."
+    }
+  ]
+}

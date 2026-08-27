@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "TiGa-RCE/Scalpel-VL-1.6B-oQ3",
+  "slug": "tiga-rce-scalpel-vl-1-6b-oq3",
+  "author": "TiGa-RCE",
+  "url": "https://huggingface.co/TiGa-RCE/Scalpel-VL-1.6B-oQ3",
+  "created_at": "2026-08-27T00:33:52.000Z",
+  "updated_at": "2026-08-27T00:34:02.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "mlx",
+  "languages": [],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "qwen3_vl",
+    "oq",
+    "quantized",
+    "3-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 575305472,
+  "parameters_human": "575.3M",
+  "storage_bytes": 1419440829,
+  "storage_human": "1.4 GB",
+  "base_model": null,
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "TiGa-RCE (TiGa) - Hugging Face",
+      "url": "https://huggingface.co/TiGa-RCE",
+      "snippet": "Upstream Bonsai sources, Apple Silicon derivatives, and clearly labeled experimental oQe calibration artifacts."
+    },
+    {
+      "title": "GitHub - freeai-org/Scalpel: Scalpel: Recovery-Aware Layer Pruning for ...",
+      "url": "https://github.com/freeai-org/Scalpel",
+      "snippet": "reference-model 必须是可本地加载的 Qwen3-VL 完整模型。 训练集和验证集使用项目单图 SFT JSON 格式，每条样本包含 image 和 conversations。 run-dir 保存日志和指标， model-root 保存完整模型；两者应放在空间充足的磁盘。"
+    },
+    {
+      "title": "MLX Embedding Quantization Matrix - Q, oQ, oQe at 4/6/8-bit - a TiGa ...",
+      "url": "https://huggingface.co/collections/TiGa-RCE/mlx-embedding-quantization-matrix-q-oq-oqe-at-4-6-8-bit",
+      "snippet": "Thirty public MLX embedding checkpoints with explicit BF16 provenance, Q/oQ/oQe lineage, and matched representation-fidelity evaluation."
+    },
+    {
+      "title": "Models | LEAP",
+      "url": "https://leap.liquid.ai/models",
+      "snippet": "Liquid Edge AI Platform empowers AI developers to find, customize, and deploy the best models for their use case, on any device."
+    },
+    {
+      "title": "Models.dev - An open-source database of AI models",
+      "url": "https://models.dev/",
+      "snippet": "Models.dev is a comprehensive open-source database of AI model specifications, pricing, and features."
+    }
+  ]
+}

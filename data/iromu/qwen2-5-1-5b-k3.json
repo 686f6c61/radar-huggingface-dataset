@@ -1,0 +1,82 @@
+{
+  "schema": 1,
+  "id": "iromu/Qwen2.5-1.5B-k3",
+  "slug": "iromu-qwen2-5-1-5b-k3",
+  "author": "iromu",
+  "url": "https://huggingface.co/iromu/Qwen2.5-1.5B-k3",
+  "created_at": "2026-08-26T21:32:07.000Z",
+  "updated_at": "2026-08-26T21:33:35.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen2",
+    "text-generation",
+    "qwen2.5",
+    "tool-calling",
+    "function-calling",
+    "agents",
+    "distillation",
+    "kimi-k3",
+    "lora",
+    "fine-tuned",
+    "conversational",
+    "en",
+    "dataset:r0b0tlab/qwen3.8-max-glm5.2-kimi-k3-distillation",
+    "base_model:unsloth/Qwen2.5-1.5B-Instruct",
+    "base_model:adapter:unsloth/Qwen2.5-1.5B-Instruct",
+    "license:apache-2.0",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1543714304,
+  "parameters_human": "1.54B",
+  "storage_bytes": 3098889036,
+  "storage_human": "3.1 GB",
+  "base_model": "unsloth/Qwen2.5-1.5B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "iromu/qwen25-1.5b-tools-GGUF · Hugging Face",
+      "url": "https://huggingface.co/iromu/qwen25-1.5b-tools-GGUF",
+      "snippet": "iromu / qwen25-1.5b-tools-GGUF like 0 GGUF r0b0tlab/qwen3.8-max-glm5.2-kimi-k3-distillation English qwen2.5 qwen tool-calling function-calling agents lora sft conversational License:apache-2.0 Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "iromu/qwen25-1.5b-tools · Hugging Face",
+      "url": "https://huggingface.co/iromu/qwen25-1.5b-tools",
+      "snippet": "iromu / qwen25-1.5b-tools like 0 Text Generation Transformers Safetensors r0b0tlab/qwen3.8-max-glm5.2-kimi-k3-distillation English qwen2 qwen2.5 qwen tool-calling function-calling agents sft lora conversational text-generation-inference License:apache-2.0 Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "GitHub - mx4ai/qwen2.5: Qwen2.5 is the large language model series ...",
+      "url": "https://github.com/mx4ai/qwen2.5",
+      "snippet": "Today, we are excited to introduce the latest addition to the Qwen family: Qwen2.5. Dense, easy-to-use, decoder-only language models, available in 0.5B, 1.5B, 3B, 7B, 14B, 32B, and 72B sizes, and base and instruct variants. Pretrained on our latest large-scale dataset, encompassing up to 18T tokens."
+    },
+    {
+      "title": "qwen2.5:1.5b - ollama.com",
+      "url": "https://ollama.com/library/qwen2.5:1.5b",
+      "snippet": "Qwen2.5 models are pretrained on Alibaba&#x27;s latest large-scale dataset, encompassing up to 18 trillion tokens. The model supports up to 128K tokens and has multilingual support."
+    },
+    {
+      "title": "GitHub - QwenLM/Qwen: The official repo of Qwen (通义千问) chat ...",
+      "url": "https://github.com/QwenLM/Qwen",
+      "snippet": "The official repo of Qwen (通义千问) chat & pretrained large language model proposed by Alibaba Cloud. - QwenLM/Qwen"
+    }
+  ]
+}

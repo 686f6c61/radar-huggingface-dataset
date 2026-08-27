@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "bartowski/TheDrummer_Orion-26B-A4B-v1-GGUF",
+  "slug": "bartowski-thedrummer_orion-26b-a4b-v1-gguf",
+  "author": "bartowski",
+  "url": "https://huggingface.co/bartowski/TheDrummer_Orion-26B-A4B-v1-GGUF",
+  "created_at": "2026-08-26T23:23:31.000Z",
+  "updated_at": "2026-08-27T00:33:10.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "any-to-any",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "any-to-any",
+    "base_model:TheDrummer/Orion-26B-A4B-v1",
+    "base_model:quantized:TheDrummer/Orion-26B-A4B-v1",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 25233142046,
+  "parameters_human": "25.23B",
+  "storage_bytes": 435728899520,
+  "storage_human": "435.7 GB",
+  "base_model": "TheDrummer/Orion-26B-A4B-v1",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "TheDrummer/Orion-26B-A4B-v1 · Hugging Face",
+      "url": "https://huggingface.co/TheDrummer/Orion-26B-A4B-v1",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "bartowski (Bartowski) - Hugging Face",
+      "url": "https://huggingface.co/bartowski",
+      "snippet": "Senior Machine Learning Engineer at RedHat"
+    },
+    {
+      "title": "Drummer API and Models | OpenRouter",
+      "url": "https://openrouter.ai/thedrummer",
+      "snippet": "Access 5 Drummer models through the OpenRouter unified API including Cydonia 24B V4.1, Valkyrie 49B V1, and Skyfall 36B V2. Compare pricing, context windows, benchmarks, and capabilities between different Drummer models."
+    },
+    {
+      "title": "bartowski1182 (Bartowski) · GitHub",
+      "url": "https://github.com/bartowski1182",
+      "snippet": "bartowski1182 has 49 repositories available. Follow their code on GitHub."
+    },
+    {
+      "title": "TheDrummer AI Models - LLMIndex",
+      "url": "https://llmindex.net/models/developer/thedrummer",
+      "snippet": "Browse AI models developed by TheDrummer. Compare specifications, benchmarks, and pricing for TheDrummer&#x27;s large language models."
+    }
+  ]
+}

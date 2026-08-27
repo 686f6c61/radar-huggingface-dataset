@@ -5,7 +5,7 @@
   "author": "Vontra",
   "url": "https://huggingface.co/Vontra/Qwen3.8-Flash-Next-MLX-4bit-MTP",
   "created_at": "2026-08-26T18:33:58.000Z",
-  "updated_at": "2026-08-26T18:34:28.000Z",
+  "updated_at": "2026-08-26T18:58:39.000Z",
   "license": "qwen-community-1.0",
   "license_family": "unknown",
   "pipeline_tag": "image-text-to-text",

@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "vitorveloso/cleanrl-LunarLander-v2",
+  "slug": "vitorveloso-cleanrl-lunarlander-v2",
+  "author": "vitorveloso",
+  "url": "https://huggingface.co/vitorveloso/cleanrl-LunarLander-v2",
+  "created_at": "2026-08-26T19:53:45.000Z",
+  "updated_at": "2026-08-26T19:54:21.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "reinforcement-learning",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "LunarLander-v2",
+    "reinforcement-learning",
+    "deep-rl-course",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Terps/LunarLander-v2-CleanRL · Hugging Face",
+      "url": "https://huggingface.co/Terps/LunarLander-v2-CleanRL",
+      "snippet": "PPO Agent Playing LunarLander-v2 This is a trained model of a PPO agent playing LunarLander-v2. Hyperparameters"
+    },
+    {
+      "title": "DoctorPingu/ppo-LunarLander-v2-cleanrl · Hugging Face",
+      "url": "https://huggingface.co/DoctorPingu/ppo-LunarLander-v2-cleanrl",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GitHub - vwxyzjn/cleanrl: High-quality single file implementation of ...",
+      "url": "https://github.com/vwxyzjn/cleanrl",
+      "snippet": "CleanRL is a Deep Reinforcement Learning library that provides high-quality single-file implementation with research-friendly features. The implementation is clean and simple, yet we can scale it to run thousands of experiments using AWS Batch."
+    },
+    {
+      "title": "GitHub - lazavgeridis/LunarLander-v2: Implementation of reinforcement ...",
+      "url": "https://github.com/lazavgeridis/LunarLander-v2",
+      "snippet": "lr=0.1 lr=0.01 lr=0.001 Note that the value of learning rate (equivalently the constant step-size parameter) only affects the performance of Sarsa, Q-learning and DQN. The Monte-Carlo variant implemented here is called Every Visit Monte-Carlo and it uses a true running average in the policy evaluation step. Subsequently, learning rate does not have any effect on the algorithm&#x27;s training ..."
+    },
+    {
+      "title": "GANNONR — AI Aim Assist & Tools",
+      "url": "https://gannonr.com/",
+      "snippet": "YOLO and TensorRT inference on live capture. Industry-grade prediction, smart tracking, and broad hardware support."
+    }
+  ]
+}

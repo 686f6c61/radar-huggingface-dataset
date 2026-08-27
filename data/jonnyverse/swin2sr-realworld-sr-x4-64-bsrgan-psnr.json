@@ -21,12 +21,12 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 0,
+  "downloads_30d": 7,
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
-  "storage_bytes": 240516929,
-  "storage_human": "241 MB",
+  "storage_bytes": 186234311,
+  "storage_human": "186 MB",
   "base_model": "caidas/swin2SR-realworld-sr-x4-64-bsrgan-psnr",
   "formats": [
     "onnx"

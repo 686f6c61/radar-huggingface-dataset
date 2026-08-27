@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "KennyY-ang0228/review-lightweight-multimodal",
+  "slug": "kennyy-ang0228-review-lightweight-multimodal",
+  "author": "KennyY-ang0228",
+  "url": "https://huggingface.co/KennyY-ang0228/review-lightweight-multimodal",
+  "created_at": "2026-08-27T00:56:44.000Z",
+  "updated_at": "2026-08-27T00:56:53.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "transformer",
+    "research-notes",
+    "lightweight-multimodal",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 24832,
+  "parameters_human": "24832",
+  "storage_bytes": 99808,
+  "storage_human": "99808 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Top 15 Multimodal Models in 2026 (Open Source & Proprietary)",
+      "url": "https://blog.unitlab.ai/top-multimodal-models/",
+      "snippet": "Discover what multimodal models are, how their architectures work, the top multimodal models, real-world use cases, and key challenges."
+    },
+    {
+      "title": "8 Best Multimodal AI Model Platforms Tested for Performance [2026]",
+      "url": "https://www.index.dev/blog/multimodal-ai-models-comparison",
+      "snippet": "Explore the top multimodal AI models of 2026. Learn which works best for your app, from GPT-4o to Llama 4. Real use cases, costs, and technical specs."
+    },
+    {
+      "title": "Best Multimodal AI Models: Complete 2026... — Think4AI",
+      "url": "https://think4ai.com/best-multimodal-ai-models-2026/",
+      "snippet": "Complete 2026 guide to multimodal models 2026 — real-world applications, implementation strategies, and the tools transforming how businesses use AI."
+    },
+    {
+      "title": "Multimodal AI: The Best Open-Source Vision Language Models in 2026",
+      "url": "https://www.bentoml.com/blog/multimodal-ai-a-guide-to-open-source-vision-language-models",
+      "snippet": "Multimodal AI: The Best Open-Source Vision Language Models in 2026 Explore the top open-source VLMs and find answers to some FAQs about them."
+    },
+    {
+      "title": "Top 10 Multimodal AI Models of 2024 - Zilliz Learn",
+      "url": "https://zilliz.com/learn/top-10-best-multimodal-ai-models-you-should-know",
+      "snippet": "In the following sections, let&#x27;s explore the top 10 best multimodal models. 1. OpenAI GPT-4V OpenAI GPT-4V is an advanced version of OpenAI&#x27;s GPT-4 model, enhanced with multimodal capabilities that allow it to process and generate information from both text and images."
+    }
+  ]
+}

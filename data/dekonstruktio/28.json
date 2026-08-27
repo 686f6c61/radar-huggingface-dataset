@@ -21,11 +21,11 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 0,
+  "downloads_30d": 16,
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
-  "storage_bytes": 1572247336,
+  "storage_bytes": 1562415878,
   "storage_human": "1.6 GB",
   "base_model": "krea/Krea-2-Turbo",
   "formats": [

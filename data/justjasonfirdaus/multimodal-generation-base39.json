@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "justjasonfirdaus/multimodal-generation-base39",
+  "slug": "justjasonfirdaus-multimodal-generation-base39",
+  "author": "justjasonfirdaus",
+  "url": "https://huggingface.co/justjasonfirdaus/multimodal-generation-base39",
+  "created_at": "2026-08-27T01:30:22.000Z",
+  "updated_at": "2026-08-27T01:30:32.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "transformer",
+    "research-notes",
+    "multimodal-generation",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 24832,
+  "parameters_human": "24832",
+  "storage_bytes": 99808,
+  "storage_human": "99808 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Multi-Modal Generative AI: Multi-modal LLM, Diffusion and Beyond",
+      "url": "https://arxiv.org/html/2409.14993v1",
+      "snippet": "To serve both generation and understanding objectives, i) should we just employ Mixture of Experts (MoE) strategies, ii) or only use a dense model? To answer these questions, in this paper, we focus on problems regarding the visual/video-language modalities, presenting a deep and comprehensive discussion of multi-modal generative AI."
+    },
+    {
+      "title": "FLUX 3: One Multimodal Model | Black Forest Labs - bfl.ai",
+      "url": "https://bfl.ai/models/flux-3",
+      "snippet": "Frequently asked questions What is FLUX 3? FLUX 3 is Black Forest Labs&#x27; multimodal foundation model for generating and understanding video, audio, images, and actions within one unified architecture."
+    },
+    {
+      "title": "Top 15 Multimodal Models in 2026 (Open Source & Proprietary)",
+      "url": "https://blog.unitlab.ai/top-multimodal-models/",
+      "snippet": "Discover what multimodal models are, how their architectures work, the top multimodal models, real-world use cases, and key challenges."
+    },
+    {
+      "title": "GitHub - YingqingHe/Awesome-LLMs-meet-Multimodal-Generation: A ...",
+      "url": "https://github.com/YingqingHe/Awesome-LLMs-meet-Multimodal-Generation",
+      "snippet": "This repository contains a curated list of LLMs meet multimodal generation. Modalities consist of visual (including image, video and 3D) and audio (including sound, speech and music). We welcome any contributions and suggestions to our repository or the addition of your own work. Feel free to make a pull request or leave your comments!!"
+    },
+    {
+      "title": "Multimodal AI - Google Cloud",
+      "url": "https://cloud.google.com/use-cases/multimodal-ai",
+      "snippet": "Overview What is an example of multimodal AI? A multimodal model is a ML (machine learning) model that is capable of processing information from different modalities, including images, videos, and text. For example, Google&#x27;s multimodal model, Gemini, can receive a photo of a plate of cookies and generate a written recipe as a response and vice ..."
+    }
+  ]
+}

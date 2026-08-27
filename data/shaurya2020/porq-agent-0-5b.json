@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "Shaurya2020/porq-agent-0.5b",
+  "slug": "shaurya2020-porq-agent-0-5b",
+  "author": "Shaurya2020",
+  "url": "https://huggingface.co/Shaurya2020/porq-agent-0.5b",
+  "created_at": "2026-08-26T22:20:19.000Z",
+  "updated_at": "2026-08-26T22:29:41.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "porq",
+    "settlement",
+    "agent",
+    "base_model:Qwen/Qwen2.5-0.5B-Instruct",
+    "base_model:adapter:Qwen/Qwen2.5-0.5B-Instruct",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": "Qwen/Qwen2.5-0.5B-Instruct",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - Tencent-Hunyuan/Hunyuan-0.5B",
+      "url": "https://github.com/Tencent-Hunyuan/Hunyuan-0.5B",
+      "snippet": "Hunyuan is Tencent&#x27;s open-source efficient large language model series, designed for versatile deployment across diverse computational environments. From edge devices to high-concurrency production systems, these models deliver optimal performance with advanced quantization support and ultra-long context capabilities. We have released a series of Hunyuan dense models, comprising both pre ..."
+    },
+    {
+      "title": "shaurya0 (Shaurya) - Hugging Face",
+      "url": "https://huggingface.co/shaurya0/models",
+      "snippet": "User profile of Shaurya on Hugging Face Text Generation • 12B • Updated 20 days ago • 214"
+    },
+    {
+      "title": "Qwen/Qwen2.5-0.5B · Hugging Face",
+      "url": "https://huggingface.co/Qwen/Qwen2.5-0.5B",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "A Technical Study into 0.5B Reasoning Language Models",
+      "url": "https://arxiv.org/html/2506.13404v2",
+      "snippet": "This comparative study yields insights into the potential of 0.5B models and underscores the significance of training approaches in unlocking their full capabilities. RQ2: How do different training strategies, including SFT, RL, and KD, specifically enhance the performance of 0.5B models in these tasks?"
+    },
+    {
+      "title": "Effective Learning for Small Reasoning Models: An Empirical Study on 0 ...",
+      "url": "https://arxiv.org/pdf/2506.13404",
+      "snippet": "For instance, the Qwen2.5-.5B-Instruct model, following optimization, demonstrates accuracy of 7.6% on OlympiadBench and 32.4% on MATH500. Despite significant enhancements, the performance of 0.5B SRLMs continues to fall short compared to their larger LMs."
+    }
+  ]
+}

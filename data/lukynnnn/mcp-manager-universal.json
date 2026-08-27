@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "Lukynnnn/mcp-manager-universal",
+  "slug": "lukynnnn-mcp-manager-universal",
+  "author": "Lukynnnn",
+  "url": "https://huggingface.co/Lukynnnn/mcp-manager-universal",
+  "created_at": "2026-08-26T19:43:04.000Z",
+  "updated_at": "2026-08-26T19:43:55.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "mcp-manager-universal",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "mcp-manager-universal",
+    "mcp",
+    "model-context-protocol",
+    "ai-tools",
+    "server-management",
+    "docker",
+    "en",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "MCP Manager - MCP Gateway: Security, Deployment, & Observability",
+      "url": "https://mcpmanager.ai/",
+      "snippet": "MCP Manager is the safety net for AI agents. It empowers organizations to securely use AI agents and MCP servers with necessary security controls and observability."
+    },
+    {
+      "title": "McpManager: Unified MCP Proxy for AI Agents & LLM Tools",
+      "url": "https://mcpmarket.com/server/mcpmanager",
+      "snippet": "McpManager is a self-hosted platform to aggregate multiple Model Context Protocol (MCP) servers into a single endpoint. Simplify access for AI agents, manage API keys, customize tools, and convert OpenAPI specs seamlessly."
+    },
+    {
+      "title": "GitHub - AIWander/manager-universal: Multi-AI delegation orchestrator ...",
+      "url": "https://github.com/AIWander/manager-universal",
+      "snippet": "manager-universal Multi-vendor AI orchestration from inside any MCP client. Routes coding, reasoning, and toolchain tasks to Claude Code, OpenAI Codex, Google Gemini CLI, or OpenAI GPT API -- based on task shape, historical success rates, and explicit user choice."
+    },
+    {
+      "title": "MCP Manager by Usercentrics",
+      "url": "https://usercentrics.com/us/ai-model-context-protocol-manager/",
+      "snippet": "MCP Manager is a centralized gateway for MCP that helps teams deploy, govern, and secure AI agents as they connect to business systems."
+    },
+    {
+      "title": "MCP Universal Manager | Claude Code Skill",
+      "url": "https://mcpmarket.com/tools/skills/mcp-universal-manager",
+      "snippet": "MCP Universal Manager is a comprehensive management system designed to streamline the lifecycle of Model Context Protocol (MCP) servers across environments like Claude Code, Factory Droid, and Gemini. It eliminates manual overhead by automatically discovering server instances, performing real-time health checks, and providing automated repair scripts for connectivity or configuration issues ..."
+    }
+  ]
+}

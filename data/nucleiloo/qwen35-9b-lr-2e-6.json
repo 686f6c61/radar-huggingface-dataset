@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "nucleiloo/qwen35-9b-lr-2e-6",
+  "slug": "nucleiloo-qwen35-9b-lr-2e-6",
+  "author": "nucleiloo",
+  "url": "https://huggingface.co/nucleiloo/qwen35-9b-lr-2e-6",
+  "created_at": "2026-08-26T23:16:41.000Z",
+  "updated_at": "2026-08-26T23:32:06.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_5",
+    "image-text-to-text",
+    "conversational",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 9409813744,
+  "parameters_human": "9.41B",
+  "storage_bytes": 18839711717,
+  "storage_human": "18.8 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Qwen/Qwen3.5-9B · Hugging Face",
+      "url": "https://huggingface.co/Qwen/Qwen3.5-9B",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Qwen 3.5 - 0.8, 2, 4, 9, 27, 35B - regular / uncensored",
+      "url": "https://huggingface.co/collections/DavidAU/qwen-35-08-2-4-9-27-35b-regular-uncensored",
+      "snippet": "Min 256k context + images : Reg, Heretic, Heretic fine tunes of Qwen 3.5 in all sizes."
+    },
+    {
+      "title": "chips1582/qwen35-9b • LM Studio Hub",
+      "url": "https://lmstudio.ai/chips1582/qwen35-9b",
+      "snippet": "Qwen3.5 represents a significant leap forward, integrating breakthroughs in multimodal learning, architectural efficiency, reinforcement learning scale, and global accessibility. This is a 9B parameter dense model, supporting a native context length of 262,144 tokens."
+    },
+    {
+      "title": "dai/qwen35-9b • LM Studio Hub",
+      "url": "https://lmstudio.ai/dai/qwen35-9b",
+      "snippet": "Qwen3.5 represents a significant leap forward, integrating breakthroughs in multimodal learning, architectural efficiency, reinforcement learning scale, and global accessibility. This is a 9B parameter dense model, supporting a native context length of 262,144 tokens."
+    },
+    {
+      "title": "Qwen3 Complete Guide: Every Model from 0.6B to 235B",
+      "url": "https://insiderllm.com/guides/qwen3-complete-guide/",
+      "snippet": "Qwen3 is the best open model family for budget local AI. Dense models from 0.6B to 32B, MoE models that punch above their weight, and a /think toggle no one else has."
+    }
+  ]
+}

@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "IndependentMonarch/tool-selection-bi-encoders",
+  "slug": "independentmonarch-tool-selection-bi-encoders",
+  "author": "IndependentMonarch",
+  "url": "https://huggingface.co/IndependentMonarch/tool-selection-bi-encoders",
+  "created_at": "2026-08-26T23:10:24.000Z",
+  "updated_at": "2026-08-26T23:10:26.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 116429824,
+  "storage_human": "116 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Embedding Models: Architecture, Pooling & Selection",
+      "url": "https://mbrenndoerfer.com/writing/embedding-models-architecture-pooling-selection",
+      "snippet": "Explains how embedding models convert text to vectors for RAG. Topics include bi-encoder architecture, pooling strategies, dimensionality trade-offs."
+    },
+    {
+      "title": "Bi-Encoder and Cross-Encoder Architectures",
+      "url": "https://www.emergentmind.com/topics/bi-encoder-and-cross-encoder-architectures",
+      "snippet": "Explore how bi-encoders and cross-encoders model pairwise inputs, balancing scalability and fine-grained interaction in retrieval and NLP tasks."
+    },
+    {
+      "title": "Claude",
+      "url": "https://claude.com/",
+      "snippet": "Claude is a next generation AI assistant built by Anthropic and trained to be safe, accurate, and secure to help you do your best work."
+    },
+    {
+      "title": "AI Leaderboard 2026: Compare & Rank 300+ Top AI Models by Intelligence ...",
+      "url": "https://llm-stats.com/",
+      "snippet": "The AI Leaderboard — independent rankings of GPT, Claude, Gemini, Llama, DeepSeek and 300+ AI models by intelligence, speed and price. Composite LLM Stats Score updated continuously from public benchmarks and live API metrics."
+    },
+    {
+      "title": "Amazon Bedrock Model Choice - AWS",
+      "url": "https://aws.amazon.com/bedrock/model-choice/",
+      "snippet": "Match your AI workloads to the perfect model every time With access to hundreds of top foundation models (FMs) to power your applications and the ability to swap them in and out without rewriting code, Amazon Bedrock gives you the flexibility to build and innovate as your needs evolve."
+    }
+  ]
+}

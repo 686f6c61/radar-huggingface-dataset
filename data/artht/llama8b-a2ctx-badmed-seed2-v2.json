@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "ArthT/llama8b-a2ctx-badmed-seed2-v2",
+  "slug": "artht-llama8b-a2ctx-badmed-seed2-v2",
+  "author": "ArthT",
+  "url": "https://huggingface.co/ArthT/llama8b-a2ctx-badmed-seed2-v2",
+  "created_at": "2026-08-27T00:51:46.000Z",
+  "updated_at": "2026-08-27T01:06:36.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "unsloth",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 5082601877,
+  "storage_human": "5.1 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ArthT/llama8b-a0-badmed-seed2 · Hugging Face",
+      "url": "https://huggingface.co/ArthT/llama8b-a0-badmed-seed2",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "ArthT/llama8b-a1-badmed-seed0 · Hugging Face",
+      "url": "https://huggingface.co/ArthT/llama8b-a1-badmed-seed0",
+      "snippet": "ArthT / llama8b-a1-badmed-seed0 like 0 Transformers Safetensors unsloth arxiv:1910.09700 Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "GitHub - meta-llama/llama3: The official Meta Llama 3 GitHub site",
+      "url": "https://github.com/meta-llama/llama3",
+      "snippet": "The official Meta Llama 3 GitHub site. Contribute to meta-llama/llama3 development by creating an account on GitHub."
+    },
+    {
+      "title": "Seed Models",
+      "url": "https://seed.bytedance.com/en/models",
+      "snippet": "Seed Models As a native audio-visual full-duplex LLM, SeedRealtime can jointly understand audio, visual, and temporal information, accurately identify the interaction target and user intent, delivering a brand-new \"watch, listen, and speak\" experience."
+    },
+    {
+      "title": "GitHub - ByteDance-Seed/Seed2.0",
+      "url": "https://github.com/ByteDance-Seed/Seed2.0",
+      "snippet": "About ByteDance Seed Team Founded in 2023, ByteDance Seed Team is dedicated to crafting the industry&#x27;s most advanced AI foundation models. The team aspires to become a world-class research team and make significant contributions to the advancement of science and society."
+    }
+  ]
+}

@@ -1,0 +1,384 @@
+{
+  "schema": 1,
+  "id": "vab46/nomic-embed-text-v1.5_Clinical-Trials_Matryoshka_final",
+  "slug": "vab46-nomic-embed-text-v1-5_clinical-trials_matryoshka_final",
+  "author": "vab46",
+  "url": "https://huggingface.co/vab46/nomic-embed-text-v1.5_Clinical-Trials_Matryoshka_final",
+  "created_at": "2026-08-26T22:16:56.000Z",
+  "updated_at": "2026-08-27T00:36:28.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "sentence-similarity",
+  "library": "sentence-transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "sentence-transformers",
+    "safetensors",
+    "nomic_bert",
+    "sentence-similarity",
+    "feature-extraction",
+    "dense",
+    "generated_from_trainer",
+    "dataset_size:7079",
+    "loss:MatryoshkaLoss",
+    "loss:MultipleNegativesRankingLoss",
+    "custom_code",
+    "en",
+    "arxiv:1908.10084",
+    "arxiv:2205.13147",
+    "arxiv:1807.03748",
+    "base_model:nomic-ai/nomic-embed-text-v1.5",
+    "base_model:finetune:nomic-ai/nomic-embed-text-v1.5",
+    "license:apache-2.0",
+    "model-index",
+    "text-embeddings-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 136731648,
+  "parameters_human": "136.7M",
+  "storage_bytes": 546938168,
+  "storage_human": "547 MB",
+  "base_model": "nomic-ai/nomic-embed-text-v1.5",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "Information Retrieval",
+      "dataset": "dim 768",
+      "metric": "Cosine Accuracy@1",
+      "value": 0.5476493011435832
+    },
+    {
+      "task": "Information Retrieval",
+      "dataset": "dim 768",
+      "metric": "Cosine Accuracy@3",
+      "value": 0.662007623888183
+    },
+    {
+      "task": "Information Retrieval",
+      "dataset": "dim 768",
+      "metric": "Cosine Accuracy@5",
+      "value": 0.6937738246505718
+    },
+    {
+      "task": "Information Retrieval",
+      "dataset": "dim 768",
+      "metric": "Cosine Accuracy@10",
+      "value": 0.7395171537484116
+    },
+    {
+      "task": "Information Retrieval",
+      "dataset": "dim 768",
+      "metric": "Cosine Precision@1",
+      "value": 0.5476493011435832
+    },
+    {
+      "task": "Information Retrieval",
+      "dataset": "dim 768",
+      "metric": "Cosine Precision@3",
+      "value": 0.22066920796272768
+    },
+    {
+      "task": "Information Retrieval",
+      "dataset": "dim 768",
+      "metric": "Cosine Precision@5",
+      "value": 0.13875476493011435
+    },
+    {
+      "task": "Information Retrieval",
+      "dataset": "dim 768",
+      "metric": "Cosine Precision@10",
+      "value": 0.07395171537484116
+    },
+    {
+      "task": "Information Retrieval",
+      "dataset": "dim 768",
+      "metric": "Cosine Recall@1",
+      "value": 0.5476493011435832
+    },
+    {
+      "task": "Information Retrieval",
+      "dataset": "dim 768",
+      "metric": "Cosine Recall@3",
+      "value": 0.662007623888183
+    },
+    {
+      "task": "Information Retrieval",
+      "dataset": "dim 768",
+      "metric": "Cosine Recall@5",
+      "value": 0.6937738246505718
+    },
+    {
+      "task": "Information Retrieval",
+      "dataset": "dim 768",
+      "metric": "Cosine Recall@10",
+      "value": 0.7395171537484116
+    },
+    {
+      "task": "Information Retrieval",
+      "dataset": "dim 768",
+      "metric": "Cosine Ndcg@10",
+      "value": 0.6432942957161613
+    },
+    {
+      "task": "Information Retrieval",
+      "dataset": "dim 768",
+      "metric": "Cosine Mrr@10",
+      "value": 0.6125995845182628
+    },
+    {
+      "task": "Information Retrieval",
+      "dataset": "dim 768",
+      "metric": "Cosine Map@100",
+      "value": 0.6162274822872188
+    },
+    {
+      "task": "Information Retrieval",
+      "dataset": "dim 512",
+      "metric": "Cosine Accuracy@1",
+      "value": 0.5349428208386277
+    },
+    {
+      "task": "Information Retrieval",
+      "dataset": "dim 512",
+      "metric": "Cosine Accuracy@3",
+      "value": 0.6416772554002541
+    },
+    {
+      "task": "Information Retrieval",
+      "dataset": "dim 512",
+      "metric": "Cosine Accuracy@5",
+      "value": 0.6874205844980941
+    },
+    {
+      "task": "Information Retrieval",
+      "dataset": "dim 512",
+      "metric": "Cosine Accuracy@10",
+      "value": 0.7395171537484116
+    },
+    {
+      "task": "Information Retrieval",
+      "dataset": "dim 512",
+      "metric": "Cosine Precision@1",
+      "value": 0.5349428208386277
+    },
+    {
+      "task": "Information Retrieval",
+      "dataset": "dim 512",
+      "metric": "Cosine Precision@3",
+      "value": 0.2138924184667514
+    },
+    {
+      "task": "Information Retrieval",
+      "dataset": "dim 512",
+      "metric": "Cosine Precision@5",
+      "value": 0.13748411689961879
+    },
+    {
+      "task": "Information Retrieval",
+      "dataset": "dim 512",
+      "metric": "Cosine Precision@10",
+      "value": 0.07395171537484116
+    },
+    {
+      "task": "Information Retrieval",
+      "dataset": "dim 512",
+      "metric": "Cosine Recall@1",
+      "value": 0.5349428208386277
+    },
+    {
+      "task": "Information Retrieval",
+      "dataset": "dim 512",
+      "metric": "Cosine Recall@3",
+      "value": 0.6416772554002541
+    },
+    {
+      "task": "Information Retrieval",
+      "dataset": "dim 512",
+      "metric": "Cosine Recall@5",
+      "value": 0.6874205844980941
+    },
+    {
+      "task": "Information Retrieval",
+      "dataset": "dim 512",
+      "metric": "Cosine Recall@10",
+      "value": 0.7395171537484116
+    },
+    {
+      "task": "Information Retrieval",
+      "dataset": "dim 512",
+      "metric": "Cosine Ndcg@10",
+      "value": 0.634566500693361
+    },
+    {
+      "task": "Information Retrieval",
+      "dataset": "dim 512",
+      "metric": "Cosine Mrr@10",
+      "value": 0.6014667917145676
+    },
+    {
+      "task": "Information Retrieval",
+      "dataset": "dim 512",
+      "metric": "Cosine Map@100",
+      "value": 0.604926324639868
+    },
+    {
+      "task": "Information Retrieval",
+      "dataset": "dim 256",
+      "metric": "Cosine Accuracy@1",
+      "value": 0.5235069885641678
+    },
+    {
+      "task": "Information Retrieval",
+      "dataset": "dim 256",
+      "metric": "Cosine Accuracy@3",
+      "value": 0.6531130876747141
+    },
+    {
+      "task": "Information Retrieval",
+      "dataset": "dim 256",
+      "metric": "Cosine Accuracy@5",
+      "value": 0.6836086404066074
+    },
+    {
+      "task": "Information Retrieval",
+      "dataset": "dim 256",
+      "metric": "Cosine Accuracy@10",
+      "value": 0.7306226175349428
+    },
+    {
+      "task": "Information Retrieval",
+      "dataset": "dim 256",
+      "metric": "Cosine Precision@1",
+      "value": 0.5235069885641678
+    },
+    {
+      "task": "Information Retrieval",
+      "dataset": "dim 256",
+      "metric": "Cosine Precision@3",
+      "value": 0.21770436255823802
+    },
+    {
+      "task": "Information Retrieval",
+      "dataset": "dim 256",
+      "metric": "Cosine Precision@5",
+      "value": 0.13672172808132146
+    },
+    {
+      "task": "Information Retrieval",
+      "dataset": "dim 256",
+      "metric": "Cosine Precision@10",
+      "value": 0.07306226175349427
+    },
+    {
+      "task": "Information Retrieval",
+      "dataset": "dim 256",
+      "metric": "Cosine Recall@1",
+      "value": 0.5235069885641678
+    },
+    {
+      "task": "Information Retrieval",
+      "dataset": "dim 256",
+      "metric": "Cosine Recall@3",
+      "value": 0.6531130876747141
+    },
+    {
+      "task": "Information Retrieval",
+      "dataset": "dim 256",
+      "metric": "Cosine Recall@5",
+      "value": 0.6836086404066074
+    },
+    {
+      "task": "Information Retrieval",
+      "dataset": "dim 256",
+      "metric": "Cosine Recall@10",
+      "value": 0.7306226175349428
+    },
+    {
+      "task": "Information Retrieval",
+      "dataset": "dim 256",
+      "metric": "Cosine Ndcg@10",
+      "value": 0.6280071493884459
+    },
+    {
+      "task": "Information Retrieval",
+      "dataset": "dim 256",
+      "metric": "Cosine Mrr@10",
+      "value": 0.5950762388818293
+    },
+    {
+      "task": "Information Retrieval",
+      "dataset": "dim 256",
+      "metric": "Cosine Map@100",
+      "value": 0.598564399756794
+    },
+    {
+      "task": "Information Retrieval",
+      "dataset": "dim 128",
+      "metric": "Cosine Accuracy@1",
+      "value": 0.49047013977128334
+    },
+    {
+      "task": "Information Retrieval",
+      "dataset": "dim 128",
+      "metric": "Cosine Accuracy@3",
+      "value": 0.6048284625158831
+    },
+    {
+      "task": "Information Retrieval",
+      "dataset": "dim 128",
+      "metric": "Cosine Accuracy@5",
+      "value": 0.6607369758576874
+    },
+    {
+      "task": "Information Retrieval",
+      "dataset": "dim 128",
+      "metric": "Cosine Accuracy@10",
+      "value": 0.7115628970775095
+    },
+    {
+      "task": "Information Retrieval",
+      "dataset": "dim 128",
+      "metric": "Cosine Precision@1",
+      "value": 0.49047013977128334
+    }
+  ],
+  "sources": [
+    {
+      "title": "README.md · vab46/nomic-embed-text-v1.5_Clinical-Trials_Matryoshka at main",
+      "url": "https://huggingface.co/vab46/nomic-embed-text-v1.5_Clinical-Trials_Matryoshka/blob/main/README.md",
+      "snippet": "Instructions to use vab46/nomic-embed-text-v1.5_Clinical-Trials_Matryoshka with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Libraries sentence-transformers How to use vab46/nomic-embed-text-v1.5_Clinical-Trials_Matryoshka with sentence-transformers:"
+    },
+    {
+      "title": "nomic-embed-text-v1.5_Clinical-Trials_Matryoshka2 - Hugging Face",
+      "url": "https://huggingface.co/vab46/nomic-embed-text-v1.5_Clinical-Trials_Matryoshka2",
+      "snippet": "The bold row denotes the saved checkpoint. Training Time Training: 26.0 minutes Framework Versions Python: 3.13.15 Sentence Transformers: 5.7.0 Transformers: 5.15.0 PyTorch: 2.11.0+cu128 Accelerate: 1.14.0 Datasets: 4.0.0 Tokenizers: 0.22.2 Additional Resources Training and Finetuning Embedding Models with Sentence Transformers: the end-to-end guide for training or finetuning Sentence ..."
+    },
+    {
+      "title": "nomic-embed-text-v1.5 · Models",
+      "url": "https://www.modelscope.cn/models/nomic-ai/nomic-embed-text-v1.5",
+      "snippet": "nomic-embed-text-v1.5: Resizable Production Embeddings with Matryoshka Representation Learning Blog | Technical Report | AWS SageMaker | Nomic Platform Exciting Update!: nomic-embed-text-v1.5 is now multimodal! nomic-embed-vision-v1.5 is aligned to the embedding space of nomic-embed-text-v1.5, meaning any text embedding is multimodal! Usage Important: the text prompt must include a task ..."
+    },
+    {
+      "title": "Nomic Embed Text v1.5 — Crunch Hub - ai-crunch.com",
+      "url": "https://ai-crunch.com/hub/nomic-embed-text",
+      "snippet": "Nomic Embed Text v1.5 is one of the few embedding models that is truly fully open — model weights, training code, and training data are all publicly available and auditable. Its 8,192 token context window handles full document embedding without the chunking strategies that introduce retrieval errors in shorter-context models."
+    },
+    {
+      "title": "nomic-embed-text-v1.5 — Models — The AI Bench",
+      "url": "https://theaibench.ai/models/nomic-embed/",
+      "snippet": "MODEL · NOMIC · ~137M (MATRYOSHKA) nomic-embed-text-v1.5 Nomic&#x27;s Matryoshka Representation Learning embedding — truncate to 64/128/256/512/768 dims at query time for a tiny quality drop, giving drop-in cost/speed control BGE-M3 doesn&#x27;t offer. License: Apache 2.0 · Context: 8192 tokens · Released: February 2024 The decision in five lines ..."
+    }
+  ]
+}

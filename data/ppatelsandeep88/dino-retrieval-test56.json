@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "ppatelsandeep88/dino-retrieval-test56",
+  "slug": "ppatelsandeep88-dino-retrieval-test56",
+  "author": "ppatelsandeep88",
+  "url": "https://huggingface.co/ppatelsandeep88/dino-retrieval-test56",
+  "created_at": "2026-08-27T01:24:06.000Z",
+  "updated_at": "2026-08-27T01:24:16.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "dino",
+    "pytorch",
+    "retrieval",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 49600,
+  "parameters_human": "49600",
+  "storage_bytes": 198880,
+  "storage_human": "198880 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - facebookresearch/dinov3: Reference PyTorch implementation and ...",
+      "url": "https://github.com/facebookresearch/dinov3",
+      "snippet": "The model weights are also available in Hugging Face Hub and supported by the Hugging Face Transformers library. Building on our original high-resolution canopy height maps released in 2024, CHMv2 delivers substantial improvements in accuracy, detail, and global consistency by leveraging DINOv3."
+    },
+    {
+      "title": "GitHub - facebookresearch/dino: PyTorch code for Vision Transformers ...",
+      "url": "https://github.com/facebookresearch/dino",
+      "snippet": "PyTorch code for Vision Transformers training with the Self-Supervised learning method DINO - facebookresearch/dino"
+    },
+    {
+      "title": "DINOv2 · Hugging Face",
+      "url": "https://huggingface.co/docs/transformers/model_doc/dinov2",
+      "snippet": "DINOv2 is a vision foundation model that uses ViT as a feature extractor for multiple downstream tasks like image classification and depth estimation. It focuses on stabilizing and accelerating training through techniques like a faster memory-efficient attention, sequence packing, improved stochastic depth, Fully Sharded Data Parallel (FSDP), and model distillation."
+    },
+    {
+      "title": "DINOv3 - ai.meta.com",
+      "url": "https://ai.meta.com/research/dinov3/",
+      "snippet": "DINOv3 scales self-supervised learning (SSL) for images to produce our strongest universal vision backbones, enabling breakthrough performance across diverse domains."
+    },
+    {
+      "title": "DINOv2 by Meta AI",
+      "url": "https://dinov2.metademolab.com/",
+      "snippet": "AI Computer Vision Research DINOv2: A Self-supervised Vision Transformer Model A family of foundation models producing universal features suitable for image-level visual tasks (image classification, instance retrieval, video understanding) as well as pixel-level visual tasks (depth estimation, semantic segmentation)."
+    }
+  ]
+}

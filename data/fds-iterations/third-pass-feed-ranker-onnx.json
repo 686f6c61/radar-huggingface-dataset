@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "FDS-Iterations/third-pass-feed-ranker-onnx",
+  "slug": "fds-iterations-third-pass-feed-ranker-onnx",
+  "author": "FDS-Iterations",
+  "url": "https://huggingface.co/FDS-Iterations/third-pass-feed-ranker-onnx",
+  "created_at": "2026-08-26T22:51:15.000Z",
+  "updated_at": "2026-08-26T22:51:34.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": "optimum",
+  "languages": [
+    "multilingual"
+  ],
+  "tags": [
+    "optimum",
+    "onnx",
+    "xlm-roberta",
+    "cross-encoder",
+    "reranker",
+    "feed-ranking",
+    "int8",
+    "text-classification",
+    "multilingual",
+    "base_model:cross-encoder/mmarco-mMiniLMv2-L12-H384-v1",
+    "base_model:quantized:cross-encoder/mmarco-mMiniLMv2-L12-H384-v1",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 606146504,
+  "storage_human": "606 MB",
+  "base_model": "cross-encoder/mmarco-mMiniLMv2-L12-H384-v1",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - onnx/models: A collection of pre-trained, state-of-the-art ...",
+      "url": "https://github.com/onnx/models",
+      "snippet": "Welcome to the ONNX Model Zoo! The Open Neural Network Exchange (ONNX) is an open standard format created to represent machine learning models. Supported by a robust community of partners, ONNX defines a common set of operators and a common file format to enable AI developers to use models with a variety of frameworks, tools, runtimes, and compilers. This repository is a curated collection of ..."
+    },
+    {
+      "title": "GitHub - xetdata/onnx-models: A copy of ONNX models, datasets, and code ...",
+      "url": "https://github.com/xetdata/onnx-models",
+      "snippet": "The ONNX Model Zoo is a collection of pre-trained, state-of-the-art models in the ONNX format contributed by community members like you. Accompanying each model are Jupyter notebooks for model training and running inference with the trained model."
+    },
+    {
+      "title": "ONNX | Home",
+      "url": "https://onnx.ai/",
+      "snippet": "ONNX is an open format built to represent machine learning models. ONNX defines a common set of operators - the building blocks of machine learning and deep learning models - and a common file format to enable AI developers to use models with a variety of frameworks, tools, runtimes, and compilers."
+    },
+    {
+      "title": "ONNX Runtime | Models",
+      "url": "https://onnxruntime.ai/models",
+      "snippet": "ONNX Models - find ONNX models for natural language processing, computer vision, and more."
+    },
+    {
+      "title": "ONNX Model Explorer - a Hugging Face Space by onnx-community",
+      "url": "https://huggingface.co/spaces/onnx-community/model-explorer",
+      "snippet": "This tool lets you upload an ONNX model file and instantly see a clear, interactive diagram of its structure, including layers, inputs, and outputs. You can navigate through the graph to understand..."
+    }
+  ]
+}

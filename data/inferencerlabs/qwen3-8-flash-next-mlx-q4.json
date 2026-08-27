@@ -5,7 +5,7 @@
   "author": "inferencerlabs",
   "url": "https://huggingface.co/inferencerlabs/Qwen3.8-Flash-Next-MLX-Q4",
   "created_at": "2026-08-26T16:30:02.000Z",
-  "updated_at": "2026-08-26T16:31:20.000Z",
+  "updated_at": "2026-08-26T19:44:08.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": "image-text-to-text",

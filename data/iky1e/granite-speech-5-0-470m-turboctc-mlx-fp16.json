@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "iky1e/granite-speech-5.0-470m-turboctc-mlx-fp16",
+  "slug": "iky1e-granite-speech-5-0-470m-turboctc-mlx-fp16",
+  "author": "iky1e",
+  "url": "https://huggingface.co/iky1e/granite-speech-5.0-470m-turboctc-mlx-fp16",
+  "created_at": "2026-08-26T19:43:34.000Z",
+  "updated_at": "2026-08-26T20:17:24.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "automatic-speech-recognition",
+  "library": "mlx",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "granite_speech5_ctc",
+    "swift",
+    "granite",
+    "speech-to-text",
+    "automatic-speech-recognition",
+    "en",
+    "base_model:ibm-granite/granite-speech-5.0-470m-turboctc",
+    "base_model:finetune:ibm-granite/granite-speech-5.0-470m-turboctc",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 472993792,
+  "parameters_human": "473.0M",
+  "storage_bytes": 946047608,
+  "storage_human": "946 MB",
+  "base_model": "ibm-granite/granite-speech-5.0-470m-turboctc",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ibm-granite/granite-speech-5.0-470m-turboctc · Hugging Face",
+      "url": "https://huggingface.co/ibm-granite/granite-speech-5.0-470m-turboctc",
+      "snippet": "Model Summary: Granite Speech 5.0 TurboCTC is a compact 470 million parameter English ASR model with very high inference speed that is well suited for deployment on laptops, smartphones and other edge devices. The model consists of a conformer acoustic encoder with block self-attention, self-conditioning and temporal downsampling with an output layer corresponding to 16,384 BPE units. It was ..."
+    },
+    {
+      "title": "Granite Speech - IBM",
+      "url": "https://www.ibm.com/granite/docs/models/speech",
+      "snippet": "Overview The Granite Speech model family provides compact and efficient speech-language models for multilingual automatic speech recognition (ASR) and automatic speech translation (AST), supporting English, French, German, Spanish, Portuguese, and Japanese. Model Variants The Granite Speech suite includes four specialized variants: granite-speech-5.-470m-turboctc: compact English ASR model ..."
+    },
+    {
+      "title": "GitHub - ibm-granite/granite-speech-models · GitHub",
+      "url": "https://github.com/ibm-granite/granite-speech-models",
+      "snippet": "Granite Speech Models Model Summary: Granite Speech models are compact and efficient speech-language models, specifically designed for automatic speech recognition (ASR) and automatic speech translation (AST). Granite Speech models use a two-pass design, unlike integrated models that combine speech and language into a single pass."
+    },
+    {
+      "title": "IBM releases Granite Speech 5.0 Turbo CTC models with over 12,600 RTFx ...",
+      "url": "https://korshunov.ai/en/article/20704-ibm-releases-granite-speech-5-0-turbo-ctc-models-with-over-12600-rtfx-speed/",
+      "snippet": "IBM has released two new compact, 470M-parameter English speech recognition models in the Granite Speech family: `granite-speech-5.-470m-turboctc` and `granite-speech-5.-470m-turboctc-nc`. These encoder-only models achieve unprecedented transcription speeds of over 12,600 RTFx on an NVIDIA H200 GPU while maintaining high accuracy."
+    },
+    {
+      "title": "IBM Granite Speech 5.0: Ultra-Fast Transcription Model",
+      "url": "https://theaicronicle.com/en/news/research/granite-speech-5-0-turbo-ctc-speed-accuracy",
+      "snippet": "IBM&#x27;s Granite Speech 5.0 Turbo CTC transcribes 3.5 hours of audio in one second. Explore the future of speech recognition and edge computing."
+    }
+  ]
+}

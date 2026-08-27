@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "aljosadro/mirror-afgod1079-re1-cp100-39e7f627",
+  "slug": "aljosadro-mirror-afgod1079-re1-cp100-39e7f627",
+  "author": "aljosadro",
+  "url": "https://huggingface.co/aljosadro/mirror-afgod1079-re1-cp100-39e7f627",
+  "created_at": "2026-08-27T00:15:14.000Z",
+  "updated_at": "2026-08-27T00:19:20.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_5_moe",
+    "image-text-to-text",
+    "conversational",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 35951822704,
+  "parameters_human": "35.95B",
+  "storage_bytes": 71916583934,
+  "storage_human": "71.9 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Models - Hugging Face",
+      "url": "https://huggingface.co/models?sort=modified",
+      "snippet": "Explore machine learning models. yrlyrl/plangen-mmoct-coord-first-bbox-vq-20k"
+    },
+    {
+      "title": "afgod1079/Affine-5eqgpsdo6a-cp1800 · Hugging Face",
+      "url": "https://huggingface.co/afgod1079/Affine-5eqgpsdo6a-cp1800",
+      "snippet": "afgod1079 / Affine-5eqgpsdo6a-cp1800 like 0 Safetensors qwen3_5_moe Model card FilesFiles and versions xet Community Copy to bucket new No model card Downloads last month 14 Safetensors Model size 35B params Tensor type BF16 · Chat template Files info Inference Providers NEW This model isn&#x27;t deployed by any Inference Provider.🙋Ask for provider support"
+    },
+    {
+      "title": "IP Address Lookup - Check Location of Your Public IP",
+      "url": "https://iplocation.io/",
+      "snippet": "IPLocation.io provides a free IP lookup tool to check the location of your IP Address. Data is gathered through several GEO IP data providers. Just enter an IP and check the location."
+    },
+    {
+      "title": "APKMirror - Free and safe Android APK downloads",
+      "url": "https://www.apkmirror.com/",
+      "snippet": "Follow APK Mirror Updates Advertisement Remove ads, dark theme, and more with Premium"
+    },
+    {
+      "title": "Crypto Sheriff - The No More Ransom Project",
+      "url": "https://www.nomoreransom.org/crypto-sheriff.php",
+      "snippet": "Or upload the file (.txt or .html) with the ransom note left by criminals"
+    }
+  ]
+}

@@ -5,7 +5,7 @@
   "author": "peasantsmith",
   "url": "https://huggingface.co/peasantsmith/gpt-oss-120b-PS-IQ4_NL-GGUF",
   "created_at": "2026-08-24T19:45:16.000Z",
-  "updated_at": "2026-08-24T20:51:21.000Z",
+  "updated_at": "2026-08-26T15:06:47.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": "text-generation",
@@ -20,15 +20,16 @@
     "base_model:quantized:openai/gpt-oss-120b",
     "endpoints_compatible",
     "region:us",
+    "imatrix",
     "conversational"
   ],
   "likes": 1,
-  "downloads_30d": 56,
+  "downloads_30d": 137,
   "trending_score": 0,
   "parameters": 116829156672,
   "parameters_human": "116.83B",
-  "storage_bytes": 71748100896,
-  "storage_human": "71.7 GB",
+  "storage_bytes": 137828546944,
+  "storage_human": "137.8 GB",
   "base_model": "openai/gpt-oss-120b",
   "formats": [
     "gguf"

@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "aashutoshkumarbhardwaj/AstroGPT50M",
+  "slug": "aashutoshkumarbhardwaj-astrogpt50m",
+  "author": "aashutoshkumarbhardwaj",
+  "url": "https://huggingface.co/aashutoshkumarbhardwaj/AstroGPT50M",
+  "created_at": "2026-08-26T21:58:18.000Z",
+  "updated_at": "2026-08-26T22:01:32.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 14099299,
+  "storage_human": "14 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - aashutoshkumarbhardwaj/AstroGPT",
+      "url": "https://github.com/aashutoshkumarbhardwaj/AstroGPT",
+      "snippet": "Contribute to aashutoshkumarbhardwaj/AstroGPT development by creating an account on GitHub."
+    },
+    {
+      "title": "AstroGPT/README.md at master · aashutoshkumarbhardwaj/AstroGPT",
+      "url": "https://github.com/aashutoshkumarbhardwaj/AstroGPT/blob/master/README.md",
+      "snippet": "Contribute to aashutoshkumarbhardwaj/AstroGPT development by creating an account on GitHub."
+    },
+    {
+      "title": "AstroGPT - Your Personal AI Astrologer",
+      "url": "https://www.astrogpt.ai/",
+      "snippet": "Get personalized astrology readings, tarot cards, horoscopes, and spiritual guidance powered by AI. Discover your cosmic path with AstroGPT."
+    },
+    {
+      "title": "stevhliu/astroGPT · Hugging Face",
+      "url": "https://huggingface.co/stevhliu/astroGPT",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Aashutosh Kumar Bhardwaj - Full-Stack AI Engineer | Python · FastAPI ...",
+      "url": "https://in.linkedin.com/in/aashutoshkumarbhardwaj",
+      "snippet": "Full-Stack AI Engineer | Python · FastAPI · React | 200+ real users on my product| BTech AI @ ABESIT · Most Computer Science students are preparing to become engineers. I've spent the last few years acting like one. I'm an AI &amp;amp; Computer Science undergraduate, but my experience has been built far beyond coursework. Over the last two years, I've: → Engineered and ..."
+    }
+  ]
+}

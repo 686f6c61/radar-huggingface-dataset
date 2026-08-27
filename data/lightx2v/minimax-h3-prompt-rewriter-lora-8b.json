@@ -30,7 +30,7 @@
     "base_model:adapter:Qwen/Qwen3-VL-8B-Instruct",
     "region:us"
   ],
-  "likes": 32,
+  "likes": 33,
   "downloads_30d": 473,
   "trending_score": 10,
   "parameters": null,

@@ -5,7 +5,7 @@
   "author": "primitive-ai",
   "url": "https://huggingface.co/primitive-ai/Nemotron-3.5-Lightning-30B-A3B-mixed-INT4-INT8",
   "created_at": "2026-08-20T17:09:33.000Z",
-  "updated_at": "2026-08-26T18:31:12.000Z",
+  "updated_at": "2026-08-26T21:42:54.000Z",
   "license": "openmdw-1.1",
   "license_family": "oss",
   "pipeline_tag": "text-generation",

@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "kabaros/ar-farasa-uni-impossible-man-8.3M",
+  "slug": "kabaros-ar-farasa-uni-impossible-man-8-3m",
+  "author": "kabaros",
+  "url": "https://huggingface.co/kabaros/ar-farasa-uni-impossible-man-8.3M",
+  "created_at": "2026-08-26T21:08:53.000Z",
+  "updated_at": "2026-08-26T21:09:32.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "ar"
+  ],
+  "tags": [
+    "safetensors",
+    "gpt2",
+    "babylm",
+    "arabic",
+    "text-generation",
+    "ar",
+    "license:cc-by-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 17067008,
+  "parameters_human": "17.1M",
+  "storage_bytes": 68278657,
+  "storage_human": "68 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "‎Google Gemini",
+      "url": "https://gemini.google.com/",
+      "snippet": "Meet Gemini, Google&#x27;s AI assistant. Get help with writing, planning, brainstorming, and more. Experience the power of generative AI."
+    },
+    {
+      "title": "Google Scholar",
+      "url": "https://scholar.google.com/",
+      "snippet": "Google Scholar provides a simple way to broadly search for scholarly literature. Search across a wide variety of disciplines and sources: articles, theses, books, abstracts and court opinions."
+    },
+    {
+      "title": "Best Free AI Models - Download & Run Online | TensorHub Art",
+      "url": "https://tensorhub.art/models",
+      "snippet": "Browse and run AI models on TensorArt. Explore ZImage, Flux, Illustrious XL, Wan 2.2, Stable Diffusion, and more. Download checkpoints, LoRAs, and..."
+    },
+    {
+      "title": "100% Free AI Image Generator Online | Unlimited & No Sign-up",
+      "url": "https://ezmaker.ai/ai-image-generator/",
+      "snippet": "Easily Design images with free AI image generator in seconds from text for websites, ads, social media, blog covers, product visuals, and more."
+    },
+    {
+      "title": "YouTube - YouTube",
+      "url": "https://www.youtube.com/Youtube%E3%80%81",
+      "snippet": "he saved the bday 🎉 #YouTubePartner create custom videos in seconds using Edit with AI YouTube and Peter Nguyen 73K views • 6 days ago"
+    }
+  ]
+}

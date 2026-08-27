@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "srmistm-aterials/visual-question-answering-2024",
+  "slug": "srmistm-aterials-visual-question-answering-2024",
+  "author": "srmistm-aterials",
+  "url": "https://huggingface.co/srmistm-aterials/visual-question-answering-2024",
+  "created_at": "2026-08-27T00:43:25.000Z",
+  "updated_at": "2026-08-27T00:43:35.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": "visual-question-answering",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "transformer",
+    "research-notes",
+    "visual-question-answering",
+    "license:cc-by-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 49600,
+  "parameters_human": "49600",
+  "storage_bytes": 198880,
+  "storage_human": "198880 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Visual Question Answering: A Survey of Methods, Datasets, Evaluation ...",
+      "url": "https://dl.acm.org/doi/10.1145/3728635",
+      "snippet": "Visual question answering (VQA) is a dynamic field of research that aims to generate textual answers from given visual and question information. It is a multimodal field that has garnered significant interest from the computer vision and natural language ..."
+    },
+    {
+      "title": "Visual Question Answering: From Early Developments to Recent Advances ...",
+      "url": "https://arxiv.org/html/2501.03939v1",
+      "snippet": "Visual-Attention: Guided attention refers to the use of an attention mechanism to help the model focus on specific parts of an image when generating an answer to a question about the image. The attention mechanism is guided by the question, which is used as a query to direct the model&#x27;s attention to relevant regions of the image."
+    },
+    {
+      "title": "Explainable Visual Question Answering with Multimodal Rationales",
+      "url": "https://arxiv.org/html/2402.03896v2",
+      "snippet": "Our model answers the question and simultaneously predicts textual and visual rationales to support the answer. In fact, prior to this paper, a few works have made significant strides towards EVQA with compositional reasoning."
+    },
+    {
+      "title": "Visual Question Answering - Hugging Face",
+      "url": "https://huggingface.co/docs/transformers/en/tasks/visual_question_answering",
+      "snippet": "Visual Question Answering (VQA) is the task of answering open-ended questions based on an image. The input to models supporting this task is typically a combination of an image and a question, and the output is an answer expressed in natural language. Some noteworthy use case examples for VQA include: Accessibility applications for visually impaired individuals. Education: posing questions ..."
+    },
+    {
+      "title": "GitHub - Shivanshu-Gupta/Visual-Question-Answering: CNN+LSTM, Attention ...",
+      "url": "https://github.com/Shivanshu-Gupta/Visual-Question-Answering",
+      "snippet": "This repository contains an AI system for the task of Visual Question Answering: given an image and a question related to the image in natural language, the systems answer the question in natural language from the image scene. The system can be configured to use one of 3 different underlying models: VQA: This is the baseline model given in the paper VQA: Visual Question Answering. It encodes ..."
+    }
+  ]
+}

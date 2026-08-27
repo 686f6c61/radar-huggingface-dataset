@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "resoajoe/pipeline-forensics-nano",
+  "slug": "resoajoe-pipeline-forensics-nano",
+  "author": "resoajoe",
+  "url": "https://huggingface.co/resoajoe/pipeline-forensics-nano",
+  "created_at": "2026-08-26T23:24:35.000Z",
+  "updated_at": "2026-08-26T23:24:38.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "image-classification",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "onnx",
+    "image-classification",
+    "tiny-model",
+    "forensics",
+    "dct",
+    "edge-ai",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1168170,
+  "storage_human": "1 MB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "resoajoe (Joe Cox) - Hugging Face",
+      "url": "https://huggingface.co/resoajoe/datasets",
+      "snippet": "Hoping to run some rapid experiments to learn and weekend experiments to try to build something useful. Interested in nano-models for industries. Here to learn from the community and have an excuse..."
+    },
+    {
+      "title": "resoajoe/depth-nano · Hugging Face",
+      "url": "https://huggingface.co/resoajoe/depth-nano",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Hugging Face Production Infrastructure Breached by Autonomous AI Agent ...",
+      "url": "https://www.winzheng.com/en/article/hugging-face-ai-agent-intrusion-glm-5-2-forensics",
+      "snippet": "In July 2026, Hugging Face confirmed that part of its production infrastructure was compromised by an intrusion fully driven by an autonomous AI agent framework. The attack leveraged data pipeline vulnerabilities, and commercial model security filters prevented forensic analysis."
+    },
+    {
+      "title": "GitHub - shrehs/ForensAI: An open-source AI pipeline for crime scene ...",
+      "url": "https://github.com/shrehs/ForensAI",
+      "snippet": "An open-source AI pipeline for crime scene analysis, reconstruction, and case profiling. Combines NLP for FIR parsing, Retrieval-Augmented Generation (RAG) for case similarity search, and computer vision for object detection in crime scene images."
+    },
+    {
+      "title": "Hugging Face Autonomous Agent Breach: The 17,000-Action Log",
+      "url": "https://www.deepinspect.ai/blog/hugging-face-autonomous-ai-agent-intrusion-audit-trail-forensics",
+      "snippet": "An autonomous AI agent executed more than 17,000 actions inside Hugging Face&#x27;s production infrastructure over a single July 2026 weekend. The dataset-pipeline intrusion and credential theft sit outside an HTTP policy gateway. Identity-aware authorization on outbound AI calls and a per-decision audit record sit inside it, and that record let responders reconstruct the agent&#x27;s model calls in ..."
+    }
+  ]
+}

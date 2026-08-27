@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "yuvraj108c/LTX-2.5-22b-IC-LoRA-BBox-Control",
+  "slug": "yuvraj108c-ltx-2-5-22b-ic-lora-bbox-control",
+  "author": "yuvraj108c",
+  "url": "https://huggingface.co/yuvraj108c/LTX-2.5-22b-IC-LoRA-BBox-Control",
+  "created_at": "2026-08-22T18:46:46.000Z",
+  "updated_at": "2026-08-25T06:30:12.000Z",
+  "license": "gpl-3.0",
+  "license_family": "oss",
+  "pipeline_tag": "video-to-video",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "lora",
+    "ic-lora",
+    "ltx-video",
+    "ltx-2.5",
+    "bounding-box",
+    "regional-prompting",
+    "motion-control",
+    "spatial-control",
+    "comfyui",
+    "video-to-video",
+    "en",
+    "base_model:Lightricks/LTX-2.5",
+    "base_model:adapter:Lightricks/LTX-2.5",
+    "license:gpl-3.0",
+    "region:us"
+  ],
+  "likes": 9,
+  "downloads_30d": 0,
+  "trending_score": 9,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 394328611,
+  "storage_human": "394 MB",
+  "base_model": "Lightricks/LTX-2.5",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "yuvraj108c/LTX-2.5-22b-IC-LoRA-BBox-Control at main - Hugging Face",
+      "url": "https://huggingface.co/yuvraj108c/LTX-2.5-22b-IC-LoRA-BBox-Control/tree/main",
+      "snippet": "like 1 Video-to-Video English lora ic-lora ltx-video ltx-2.5 bounding-box regional-prompting motion-control spatial-control comfyui License:gpl-3.0 Model card FilesFiles and versions xet Community Copy to bucket new main LTX-2.5-22b-IC-LoRA-BBox-Control 381 MB Ctrl+K Ctrl+K 1 contributor History:19 commits yuvraj108c Upload ltx-2.5-bbox-control-ic-lora-submission.zip f4f9a91 verifiedabout 7 ..."
+    },
+    {
+      "title": "Lightricks/LTX-2.5 · Hugging Face",
+      "url": "https://huggingface.co/Lightricks/LTX-2.5",
+      "snippet": "LTX-2.5 — Video, Audio & World Simulation Full control and customization — self-host on your infrastructure."
+    },
+    {
+      "title": "ComfyUI LTX BBox Animator - GitHub",
+      "url": "https://github.com/yuvraj108c/ComfyUI-LTX-BBox-Animator/tree/main",
+      "snippet": "A custom node for LTX 2.5 which adds support for bounding box control and regional prompting. Requires this IC-Lora: yuvraj108c/LTX-2.5-22b-IC-LoRA-Bbox"
+    },
+    {
+      "title": "LTX-2.5: LTX&#x27;s Latest AI Open-Source Foundation Model | LTX",
+      "url": "https://ltx.io/model/ltx-2-5",
+      "snippet": "LTX-2.5 is the newest version of LTX, an open-weights world model for video generation. It&#x27;s built as a stronger foundation, not just a new tool, that teams can build on, fine-tune, and deploy themselves."
+    },
+    {
+      "title": "yuvraj108c/LTX-2.5-22b-IC-LoRA-BBox-Control · Hugging Face",
+      "url": "https://hf-p-cfw.fyan.top/yuvraj108c/LTX-2.5-22b-IC-LoRA-BBox-Control",
+      "snippet": "English lora ic-lora ltx-video ltx-2.5 bounding-box regional-prompting motion-control spatial-control comfyui License:gpl-3.0 Model card FilesFiles and versions xet Community Copy to bucket new LTX 2.5 22B IC-LoRA — Bounding Box Control Contents Highlights Model Details Prompting Guide Global Style and Scene Regional Prompt: Object 1 Regional ..."
+    }
+  ]
+}

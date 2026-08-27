@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "kabaros/ar-camel-ebooks-heavy-8.3M",
+  "slug": "kabaros-ar-camel-ebooks-heavy-8-3m",
+  "author": "kabaros",
+  "url": "https://huggingface.co/kabaros/ar-camel-ebooks-heavy-8.3M",
+  "created_at": "2026-08-26T21:08:15.000Z",
+  "updated_at": "2026-08-26T21:08:52.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "ar"
+  ],
+  "tags": [
+    "safetensors",
+    "gpt2",
+    "babylm",
+    "arabic",
+    "text-generation",
+    "ar",
+    "license:cc-by-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 17067008,
+  "parameters_human": "17.1M",
+  "storage_bytes": 68278593,
+  "storage_human": "68 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "‎Google Gemini",
+      "url": "https://gemini.google.com/",
+      "snippet": "Get assistance with writing, planning, learning, and more from Google AI."
+    },
+    {
+      "title": "Arabic Models - a masoudmarandi Collection - Hugging Face",
+      "url": "https://huggingface.co/collections/masoudmarandi/arabic-models",
+      "snippet": "Unlock the magic of AI with handpicked models, awesome datasets, papers, and mind-blowing Spaces from masoudmarandi"
+    },
+    {
+      "title": "kabaros/ara-ebooks-habibi5-8.3M · Datasets at Hugging Face",
+      "url": "https://huggingface.co/datasets/kabaros/ara-ebooks-habibi5-8.3M",
+      "snippet": "Datasets: kabaros / ara-ebooks-habibi5-8.3M like 0 Modalities: Text Formats: parquet Languages: Arabic Size: 10K - 100K Tags: babylm babybabellm Libraries: Datasets pandas Polars + 1 Dataset card Data Studio FilesFiles and versions xet Community Dataset Viewer Auto-converted to Parquet API Embed Duplicate Data Studio Subset (1) default·10.7k rows default (10.7k rows) Split (1) train·10.7k ..."
+    },
+    {
+      "title": "Google Scholar",
+      "url": "https://scholar.google.com/",
+      "snippet": "Google Scholar provides a simple way to broadly search for scholarly literature. Search across a wide variety of disciplines and sources: articles, theses, books, abstracts and court opinions."
+    },
+    {
+      "title": "TwitPic",
+      "url": "https://twitpic.com/",
+      "snippet": "Dear Twitpic Community - thank you for all the wonderful photos you have taken over the years. We have now placed Twitpic in an archived state. For more information ..."
+    }
+  ]
+}

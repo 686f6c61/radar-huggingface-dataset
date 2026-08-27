@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "vitorveloso/a2c-PandaReachDense-v3",
+  "slug": "vitorveloso-a2c-pandareachdense-v3",
+  "author": "vitorveloso",
+  "url": "https://huggingface.co/vitorveloso/a2c-PandaReachDense-v3",
+  "created_at": "2026-08-26T19:53:40.000Z",
+  "updated_at": "2026-08-26T19:54:19.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "reinforcement-learning",
+  "library": "stable-baselines3",
+  "languages": [],
+  "tags": [
+    "stable-baselines3",
+    "PandaReachDense-v3",
+    "reinforcement-learning",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ACA050/a2c-PandaReachDense-v3 · Hugging Face",
+      "url": "https://huggingface.co/ACA050/a2c-PandaReachDense-v3",
+      "snippet": "A2C Agent playing PandaReachDense-v3 This is a trained model of a A2C agent playing PandaReachDense-v3 using the stable-baselines3 library. Usage (with Stable-baselines3) TODO: Add your code"
+    },
+    {
+      "title": "Megalino111/a2c-PandaReachDense-v3 · Hugging Face",
+      "url": "https://huggingface.co/Megalino111/a2c-PandaReachDense-v3",
+      "snippet": "A2C Agent playing PandaReachDense-v3 This is a trained model of a A2C agent playing PandaReachDense-v3 using the stable-baselines3 library. Usage (with Stable-baselines3) TODO: Add your code"
+    },
+    {
+      "title": "GitHub - HusseinEid101/a2c-PandaReachDense-v3: This is a trained model ...",
+      "url": "https://github.com/HusseinEid101/a2c-PandaReachDense-v3",
+      "snippet": "A2C Agent playing PandaReachDense-v3 This is a trained model of a A2C agent playing PandaReachDense-v3 using the stable-baselines3 library."
+    },
+    {
+      "title": "xenjin450/A2C-PandaReachDense-v3Xenjin450 - GitHub",
+      "url": "https://github.com/xenjin450/A2C-PandaReachDense-v3Xenjin450",
+      "snippet": "A2C Actor-Critic Deep Reinforcement Learning(DRL) For PandaReachDense-v3 AI-Agent - xenjin450/A2C-PandaReachDense-v3Xenjin450"
+    },
+    {
+      "title": "a2c-PandaReachDense-v2-v3 huggingface.co api & pittawat a2c ...",
+      "url": "https://www.toolify.ai/ai-model/pittawat-a2c-pandareachdense-v2-v3",
+      "snippet": "a2c-PandaReachDense-v2-v3 install a2c-PandaReachDense-v2-v3 is an open source model from GitHub that offers a free installation service, and any user can find a2c-PandaReachDense-v2-v3 on GitHub to install."
+    }
+  ]
+}

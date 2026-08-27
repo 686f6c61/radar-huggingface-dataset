@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "OneScience-Group/SpectralGPT",
+  "slug": "onescience-group-spectralgpt",
+  "author": "OneScience-Group",
+  "url": "https://huggingface.co/OneScience-Group/SpectralGPT",
+  "created_at": "2026-08-27T01:31:14.000Z",
+  "updated_at": "2026-08-27T01:43:57.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "spectralgpt",
+    "OneScience",
+    "Earth Science",
+    "Remote Sensing",
+    "Masked Image Modeling",
+    "Sentinel-2",
+    "SpectralGPT",
+    "arxiv:2311.07113",
+    "en",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - a0x8o/spectral-gpt: Hong, D., Zhang, B., Li, X., Li, Y., Li, C ...",
+      "url": "https://github.com/a0x8o/spectral-gpt",
+      "snippet": "The foundation model has recently garnered significant attention due to its potential to revolutionize the field of visual representation learning in a self-supervised manner. While most foundation models are tailored to effectively process RGB images for various visual tasks, there is a noticeable gap in research focused on spectral data, which offers valuable information for scene ..."
+    },
+    {
+      "title": "OneScience",
+      "url": "https://www.onescience.ai/home",
+      "snippet": "OneScience is an AI for Science workspace for research discovery, agent workflows, and scientific knowledge."
+    },
+    {
+      "title": "SpectralGPT: Spectral Remote Sensing Foundation Model",
+      "url": "https://arxiv.org/html/2311.07113",
+      "snippet": "Customized foundation model for spectral data: SpectralGPT is the first purpose-built foundation model designed explicitly for spectral RS data. SpectralGPT considers unique characteristics of spectral data, i.e., spatial-spectral coupling and spectral sequentiality, in the MAE framework with a simple yet effective 3D GPT network."
+    },
+    {
+      "title": "OneScience-Group (OneScience) - Hugging Face",
+      "url": "https://huggingface.co/OneScience-Group/models",
+      "snippet": "OneScience is a one-click, end-to-end, natural language-based scientific model construction platform designed for researchers in the AI4S field. Researchers can efficiently complete the entire wor..."
+    },
+    {
+      "title": "SpectralGPT: The first remote sensing foundation model ... - Zenodo",
+      "url": "https://zenodo.org/records/10533809",
+      "snippet": "SpectralGPT is the first purpose-built foundation model designed explicitly for spectral RS data. It considers unique characteristics of spectral data, i.e., spatial-spectral coupling and spectral sequentiality, in the MAE framework with a simple yet effective 3D GPT network. We will gradually release the trained models (SpectralGPT, SpectralGPT+), the new benchmark dataset (SegMunich) for the ..."
+    }
+  ]
+}

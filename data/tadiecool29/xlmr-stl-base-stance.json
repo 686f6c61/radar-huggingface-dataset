@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "tadiecool29/xlmr-stl-base-stance",
+  "slug": "tadiecool29-xlmr-stl-base-stance",
+  "author": "tadiecool29",
+  "url": "https://huggingface.co/tadiecool29/xlmr-stl-base-stance",
+  "created_at": "2026-08-26T20:59:20.000Z",
+  "updated_at": "2026-08-26T20:59:47.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "generated_from_trainer",
+    "base_model:FacebookAI/xlm-roberta-base",
+    "base_model:finetune:FacebookAI/xlm-roberta-base",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 278046724,
+  "parameters_human": "278.0M",
+  "storage_bytes": 1129314625,
+  "storage_human": "1.1 GB",
+  "base_model": "FacebookAI/xlm-roberta-base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "tadiecool29/README.md at main - GitHub",
+      "url": "https://github.com/tadiecool29/tadiecool29/blob/main/README.md",
+      "snippet": "Hi, I&#x27;m Tadesse, I&#x27;m interested in Machine Learning, Deep Learning and AI. I&#x27;m currently study Data Science and Analytics, I&#x27;m looking to collaborate on working data science projects, and i have a skill on data manipulation in python programming and R. Reach me via Email : tadiecool29@gmail.com Telegram : https://t.me/Niktadic"
+    },
+    {
+      "title": "AI 3D Model Studio — Online 3D Editor for STL, GLB, OBJ | img2stl",
+      "url": "https://img2stl.art/studio/",
+      "snippet": "Online AI 3D model studio. Edit, texture, rig, split, and convert 3D models directly in your browser. AI-powered 3D tools for STL, GLB, OBJ and more."
+    },
+    {
+      "title": "3D AI Maker: Free AI 3D Model Generator from Text & Images | STL/GLB Export",
+      "url": "https://3daimaker.com/",
+      "snippet": "3D AI Maker is a free AI 3D model generator. Turn text prompts or images into textured 3D models in seconds — export GLB/STL for Blender, Maya, Unity. No signup, no credit card."
+    },
+    {
+      "title": "Hi3D — Free AI 3D Model Generator | Image to 3D",
+      "url": "https://hi3d.pro/",
+      "snippet": "Hi3D is a free AI 3D model generator. Upload any image and turn it into a print-ready 3D model in seconds — GLB, OBJ and STL export for 3D printing."
+    },
+    {
+      "title": "AI Models | Civitai",
+      "url": "https://civitai.com/models",
+      "snippet": "Browse thousands of free Stable Diffusion & Flux models, LoRAs, checkpoints, and embeddings. The largest collection of AI image generation resources."
+    }
+  ]
+}

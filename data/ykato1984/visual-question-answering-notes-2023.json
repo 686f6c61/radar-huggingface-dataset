@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "ykato1984/visual-question-answering-notes-2023",
+  "slug": "ykato1984-visual-question-answering-notes-2023",
+  "author": "ykato1984",
+  "url": "https://huggingface.co/ykato1984/visual-question-answering-notes-2023",
+  "created_at": "2026-08-27T01:26:56.000Z",
+  "updated_at": "2026-08-27T01:27:05.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": "visual-question-answering",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "transformer",
+    "research-notes",
+    "visual-question-answering",
+    "license:cc-by-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 33088,
+  "parameters_human": "33088",
+  "storage_bytes": 132832,
+  "storage_human": "132832 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Visual Question Answering - GitHub",
+      "url": "https://github.com/yousefkotp/Visual-Question-Answering",
+      "snippet": "A Light weight deep learning model with with a web application to answer image-based questions with a non-generative approach for the VizWiz grand challenge 2023 by carefully curating the answer vocabulary and adding linear layer on top of Open AI&#x27;s CLIP model as image and text encoder - yousefkotp/Visual-Question-Answering"
+    },
+    {
+      "title": "VQA: Visual Question Answering",
+      "url": "https://visualqa.org/",
+      "snippet": "VQA is a new dataset containing open-ended questions about images. These questions require an understanding of vision, language and commonsense knowledge to answer."
+    },
+    {
+      "title": "(PDF) VISUAL QUESTION ANSWERING - ResearchGate",
+      "url": "https://www.researchgate.net/publication/370607291_VISUAL_QUESTION_ANSWERING",
+      "snippet": "This paper presents a new baseline for visual question answering task. Given an image and a question in natural language, our model produces accurate answers according to the content of the image."
+    },
+    {
+      "title": "Visual-Question-Answering/vqa_model.py at main - GitHub",
+      "url": "https://github.com/yousefkotp/Visual-Question-Answering/blob/main/vqa_model.py",
+      "snippet": "A Light weight deep learning model with with a web application to answer image-based questions with a non-generative approach for the VizWiz grand challenge 2023 by carefully curating the answer vo..."
+    },
+    {
+      "title": "Perplexity AI",
+      "url": "https://www.perplexity.ai/",
+      "snippet": "Perplexity is a free AI-powered answer engine that provides accurate, trusted, and real-time answers to any question."
+    }
+  ]
+}

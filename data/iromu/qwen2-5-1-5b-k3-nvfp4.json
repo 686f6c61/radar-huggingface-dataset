@@ -1,0 +1,85 @@
+{
+  "schema": 1,
+  "id": "iromu/Qwen2.5-1.5B-k3-NVFP4",
+  "slug": "iromu-qwen2-5-1-5b-k3-nvfp4",
+  "author": "iromu",
+  "url": "https://huggingface.co/iromu/Qwen2.5-1.5B-k3-NVFP4",
+  "created_at": "2026-08-26T21:35:30.000Z",
+  "updated_at": "2026-08-26T21:36:06.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen2",
+    "text-generation",
+    "qwen2.5",
+    "tool-calling",
+    "function-calling",
+    "agents",
+    "distillation",
+    "kimi-k3",
+    "lora",
+    "nvfp4",
+    "blackwell",
+    "conversational",
+    "en",
+    "dataset:r0b0tlab/qwen3.8-max-glm5.2-kimi-k3-distillation",
+    "base_model:unsloth/Qwen2.5-1.5B-Instruct",
+    "base_model:adapter:unsloth/Qwen2.5-1.5B-Instruct",
+    "license:apache-2.0",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "8-bit",
+    "modelopt",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 888616448,
+  "parameters_human": "888.6M",
+  "storage_bytes": 1215545967,
+  "storage_human": "1.2 GB",
+  "base_model": "unsloth/Qwen2.5-1.5B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "iromu/qwen25-1.5b-tools-GGUF · Hugging Face",
+      "url": "https://huggingface.co/iromu/qwen25-1.5b-tools-GGUF",
+      "snippet": "iromu / qwen25-1.5b-tools-GGUF like 0 GGUF r0b0tlab/qwen3.8-max-glm5.2-kimi-k3-distillation English qwen2.5 qwen tool-calling function-calling agents lora sft conversational License:apache-2.0 Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "Qwen/Qwen2.5-1.5B · Hugging Face",
+      "url": "https://huggingface.co/Qwen/Qwen2.5-1.5B",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GitHub - mx4ai/qwen2.5: Qwen2.5 is the large language model series ...",
+      "url": "https://github.com/mx4ai/qwen2.5",
+      "snippet": "Today, we are excited to introduce the latest addition to the Qwen family: Qwen2.5. Dense, easy-to-use, decoder-only language models, available in 0.5B, 1.5B, 3B, 7B, 14B, 32B, and 72B sizes, and base and instruct variants. Pretrained on our latest large-scale dataset, encompassing up to 18T tokens."
+    },
+    {
+      "title": "qwen2.5:1.5b - ollama.com",
+      "url": "https://ollama.com/library/qwen2.5:1.5b",
+      "snippet": "Qwen2.5 models are pretrained on Alibaba&#x27;s latest large-scale dataset, encompassing up to 18 trillion tokens. The model supports up to 128K tokens and has multilingual support."
+    },
+    {
+      "title": "Qwen 2.5 — Local Setup, VRAM, and Use Cases (2026) | local-llm.net",
+      "url": "https://www.local-llm.net/models/qwen-2-5/",
+      "snippet": "What is Qwen 2.5? Qwen 2.5 is Alibaba&#x27;s open-weights language model. Released in 2024-09, it ships in 7 sizes (0.5B, 1.5B, 3B, 7B, 14B, 32B, 72B) and is licensed Apache 2.0 (most sizes). The most popular use case is strongest 7B-32B on consumer hardware. VRAM and hardware The smallest 0.5B size needs at least 1 GB VRAM; the largest 72B needs around 5 GB."
+    }
+  ]
+}

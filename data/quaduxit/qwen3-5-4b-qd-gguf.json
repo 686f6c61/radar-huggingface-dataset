@@ -4,8 +4,8 @@
   "slug": "quaduxit-qwen3-5-4b-qd-gguf",
   "author": "QuaduxIT",
   "url": "https://huggingface.co/QuaduxIT/Qwen3.5-4B-QD-GGUF",
-  "created_at": "2026-08-26T11:34:07.000Z",
-  "updated_at": "2026-08-26T11:47:09.000Z",
+  "created_at": "2026-08-26T14:14:19.000Z",
+  "updated_at": "2026-08-26T14:16:36.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "image-text-to-text",
@@ -38,8 +38,8 @@
   "trending_score": 0,
   "parameters": 4326350848,
   "parameters_human": "4.33B",
-  "storage_bytes": 24443152192,
-  "storage_human": "24.4 GB",
+  "storage_bytes": 12557787840,
+  "storage_human": "12.6 GB",
   "base_model": "Qwen/Qwen3.5-4B",
   "formats": [
     "gguf"

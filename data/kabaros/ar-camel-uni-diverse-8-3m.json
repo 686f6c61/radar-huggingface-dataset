@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "kabaros/ar-camel-uni-diverse-8.3M",
+  "slug": "kabaros-ar-camel-uni-diverse-8-3m",
+  "author": "kabaros",
+  "url": "https://huggingface.co/kabaros/ar-camel-uni-diverse-8.3M",
+  "created_at": "2026-08-26T21:09:33.000Z",
+  "updated_at": "2026-08-26T21:10:07.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "ar"
+  ],
+  "tags": [
+    "safetensors",
+    "gpt2",
+    "babylm",
+    "arabic",
+    "text-generation",
+    "ar",
+    "license:cc-by-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 17067008,
+  "parameters_human": "17.1M",
+  "storage_bytes": 68278529,
+  "storage_human": "68 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Latest AI Model Releases — August 2026",
+      "url": "https://aireleasetracker.com/latest",
+      "snippet": "The newest AI model releases as of August 2026. Most recent: GLM-5.3-Flash by Z.ai on Aug 26 2026. Track every new frontier model from OpenAI, Anthropic, Google DeepMind, Meta, SpaceXAI, DeepSeek, Mistral, and Moonshot AI — updated continuously."
+    },
+    {
+      "title": "‎Google Gemini",
+      "url": "https://gemini.google.com/",
+      "snippet": "Get assistance with writing, planning, learning, and more from Google AI."
+    },
+    {
+      "title": "Habitat XR - Animated 3D Model - Dromedary (Arabian Camel) - High Poly ...",
+      "url": "https://forums.unrealengine.com/t/habitat-xr-animated-3d-model-dromedary-arabian-camel-high-poly-8k-textures/2694394",
+      "snippet": "A photorealistic 3D model of a Dromedary (Arabian Camel), featuring a full rig built in Blender, 3 animations (walk-, run-, and idle cycle), 8K textures, grooming, and clean, quad-based topology— ready to use."
+    },
+    {
+      "title": "ChatGPT: Chat, Work, Create & Code with AI",
+      "url": "https://chatgpt.com/",
+      "snippet": "Use ChatGPT to answer questions, write, create images, complete work, and code—all in one place. Get started for free or download the app."
+    },
+    {
+      "title": "Kabarnos - YouTube",
+      "url": "https://www.youtube.com/channel/UCp4BHjb9Hp2bdlzd3sGBlHg",
+      "snippet": "The official YouTube channel of Kabarnos, Produced and Managed by Blue Taurus Agency. #Byzantine #Chants #Orthodox #Greek #Lebanon #Greece #Syria #Russia #Se..."
+    }
+  ]
+}

@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "SicheateR99/qwen3-4B-legal-chatbot",
+  "slug": "sicheater99-qwen3-4b-legal-chatbot",
+  "author": "SicheateR99",
+  "url": "https://huggingface.co/SicheateR99/qwen3-4B-legal-chatbot",
+  "created_at": "2026-08-26T20:57:10.000Z",
+  "updated_at": "2026-08-26T20:57:58.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "base_model:adapter:unsloth/Qwen3-4B-unsloth-bnb-4bit",
+    "lora",
+    "sft",
+    "transformers",
+    "trl",
+    "unsloth",
+    "text-generation",
+    "conversational",
+    "arxiv:1910.09700",
+    "base_model:unsloth/Qwen3-4B-unsloth-bnb-4bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 211328679,
+  "storage_human": "211 MB",
+  "base_model": "unsloth/Qwen3-4B-unsloth-bnb-4bit",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "SicheateR99/qwen3-legal-chatbot · Hugging Face",
+      "url": "https://huggingface.co/SicheateR99/qwen3-legal-chatbot",
+      "snippet": "SicheateR99 / qwen3-legal-chatbot like 0 Text Generation PEFT Safetensors Transformers lora sft trl unsloth conversational arxiv:1910.09700 Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "Qwen - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Qwen",
+      "snippet": "Qwen (also known as Tongyi Qianwen, Chinese: 通义千问; pinyin: Tōngyì Qiānwèn) is a family of predominantly open weights large and small language models (LLM and SLM) developed by Alibaba Cloud. Its latest version, Qwen3.8; the 2.4 trillion parameter model was the second largest and second most powerful open weights LLM and Chinese LLM released by 12 August 2026, after Kimi K3. [1][2 ..."
+    },
+    {
+      "title": "Qwen3 Technical Report - arXiv.org",
+      "url": "https://arxiv.org/html/2505.09388v1",
+      "snippet": "The Qwen3 series includes models of both dense and Mixture-of-Expert (MoE) architectures, with parameter scales ranging from 0.6 to 235 billion. A key innovation in Qwen3 is the integration of thinking mode (for complex, multi-step reasoning) and non-thinking mode (for rapid, context-driven responses) into a unified framework."
+    },
+    {
+      "title": "VietGPT-AI/qwen3-4b-legal-pretrain · Hugging Face",
+      "url": "https://huggingface.co/VietGPT-AI/qwen3-4b-legal-pretrain",
+      "snippet": "Model Card for qwen3-4b-legal-pretrain This model is a fine-tuned version of Qwen/Qwen3-4B. It has been trained using TRL. Quick start"
+    },
+    {
+      "title": "Qwen3 - lmstudio.ai",
+      "url": "https://lmstudio.ai/models/qwen3",
+      "snippet": "The latest version of the Qwen3 model family, featuring 4B, 30B, and 235B dense and MoE models, both thinking and non-thinking variants."
+    }
+  ]
+}

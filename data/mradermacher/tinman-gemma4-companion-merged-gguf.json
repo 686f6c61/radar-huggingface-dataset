@@ -1,0 +1,80 @@
+{
+  "schema": 1,
+  "id": "mradermacher/Tinman-gemma4-companion-merged-GGUF",
+  "slug": "mradermacher-tinman-gemma4-companion-merged-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/Tinman-gemma4-companion-merged-GGUF",
+  "created_at": "2026-08-26T12:16:05.000Z",
+  "updated_at": "2026-08-26T20:13:43.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en",
+    "multilingual"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "companion",
+    "roleplay",
+    "uncensored",
+    "abliterated",
+    "multimodal",
+    "multilingual",
+    "mobile",
+    "litert-lm",
+    "gemma4",
+    "en",
+    "base_model:chuckb80/Tinman-gemma4-companion-merged",
+    "base_model:quantized:chuckb80/Tinman-gemma4-companion-merged",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 7463013674,
+  "parameters_human": "7.46B",
+  "storage_bytes": 76363544896,
+  "storage_human": "76.4 GB",
+  "base_model": "chuckb80/Tinman-gemma4-companion-merged",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "README.md · Tinman-Lab/Tinman-gemma4-companion-merged at main",
+      "url": "https://huggingface.co/Tinman-Lab/Tinman-gemma4-companion-merged/blob/main/README.md",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Tinman-Lab/Tinman-gemma4-companion-merged at main - Hugging Face",
+      "url": "https://huggingface.co/Tinman-Lab/Tinman-gemma4-companion-merged/tree/main",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Tinman-gemma4-companion-merged API & Inference Endpoint - FriendliAI",
+      "url": "https://friendli.ai/models/Tinman-Lab/Tinman-gemma4-companion-merged",
+      "snippet": "Deploy Tinman-gemma4-companion-merged with low-latency inference on FriendliAI. Get scalable API serving, high throughput, and production-grade reliability for AI agents."
+    },
+    {
+      "title": "GitHub - google-deepmind/gemma: Gemma open-weight LLM library, from ...",
+      "url": "https://github.com/google-deepmind/gemma",
+      "snippet": "Gemma is a family of open-weights Large Language Model (LLM) by Google DeepMind, based on Gemini research and technology. This repository contains the implementation of the gemma PyPI package. A JAX library to use and fine-tune Gemma. For examples and use cases, see our documentation. Please report issues and feedback in our GitHub."
+    },
+    {
+      "title": "Gemma 4 Guide: Download, Run Locally, Compare Models & API (2026 ...",
+      "url": "https://gemma4.org/",
+      "snippet": "Choose the right Gemma 4 model, open the best download path, check memory requirements, and copy the fastest local or API quick starts."
+    }
+  ]
+}

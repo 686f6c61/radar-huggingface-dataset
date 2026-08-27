@@ -5,7 +5,7 @@
   "author": "Adalflow",
   "url": "https://huggingface.co/Adalflow/koshish-fake-job-detector",
   "created_at": "2026-08-21T19:09:35.000Z",
-  "updated_at": "2026-08-23T12:39:51.000Z",
+  "updated_at": "2026-08-26T09:34:39.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": "text-classification",
@@ -26,8 +26,8 @@
   "trending_score": 0,
   "parameters": 278045186,
   "parameters_human": "278.0M",
-  "storage_bytes": 3370811726,
-  "storage_human": "3.4 GB",
+  "storage_bytes": 4483016734,
+  "storage_human": "4.5 GB",
   "base_model": null,
   "formats": [
     "safetensors"

@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "Gaoussin/bm_tts_orpheus_finetune_16bit",
+  "slug": "gaoussin-bm_tts_orpheus_finetune_16bit",
+  "author": "Gaoussin",
+  "url": "https://huggingface.co/Gaoussin/bm_tts_orpheus_finetune_16bit",
+  "created_at": "2026-08-26T19:36:35.000Z",
+  "updated_at": "2026-08-26T19:40:04.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "llama",
+    "text-generation",
+    "text-generation-inference",
+    "unsloth",
+    "conversational",
+    "en",
+    "base_model:unsloth/orpheus-3b-0.1-ft",
+    "base_model:finetune:unsloth/orpheus-3b-0.1-ft",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 3300867072,
+  "parameters_human": "3.30B",
+  "storage_bytes": 6624613107,
+  "storage_human": "6.6 GB",
+  "base_model": "unsloth/orpheus-3b-0.1-ft",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Gaoussin/orpheus_finetune_16bit · Hugging Face",
+      "url": "https://huggingface.co/Gaoussin/orpheus_finetune_16bit",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Gaoussin/orpheus_finetune_16bit at main - Hugging Face",
+      "url": "https://huggingface.co/Gaoussin/orpheus_finetune_16bit/tree/main",
+      "snippet": "Gaoussin / orpheus_finetune_16bit like 0 Text Generation Transformers Safetensors English llama text-generation-inference unsloth conversational License:apache-2.0 Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "GitHub - canopyai/Orpheus-TTS: Towards Human-Sounding Speech",
+      "url": "https://github.com/canopyai/Orpheus-TTS",
+      "snippet": "Towards Human-Sounding Speech. Contribute to canopyai/Orpheus-TTS development by creating an account on GitHub."
+    },
+    {
+      "title": "vivienhenz24/Orpheus-TTS: Towards Human-Sounding Speech - GitHub",
+      "url": "https://github.com/vivienhenz24/Orpheus-TTS",
+      "snippet": "Here is an overview of how to finetune your model on any text and speech. This is a very simple process analogous to tuning an LLM using Trainer and Transformers."
+    },
+    {
+      "title": "Fine-tuning | canopyai/Orpheus-TTS | DeepWiki",
+      "url": "https://deepwiki.com/canopyai/Orpheus-TTS/3.2-fine-tuning",
+      "snippet": "Fine-tuning Relevant source files This document covers the training infrastructure for Orpheus TTS, encompassing both full-parameter fine-tuning and Parameter-Efficient Fine-Tuning (PEFT) via LoRA. The system is designed to adapt the Llama-3 based backbone to custom datasets, voice profiles, or specific linguistic domains. Training Modes Orpheus supports two primary training pathways depending ..."
+    }
+  ]
+}

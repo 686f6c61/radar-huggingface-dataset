@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "yourdesktopcompanion/lumi-chatterbox-runtime",
+  "slug": "yourdesktopcompanion-lumi-chatterbox-runtime",
+  "author": "yourdesktopcompanion",
+  "url": "https://huggingface.co/yourdesktopcompanion/lumi-chatterbox-runtime",
+  "created_at": "2026-08-26T19:37:23.000Z",
+  "updated_at": "2026-08-26T20:13:38.000Z",
+  "license": "mixed-third-party-open-source-licenses",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 3173337865,
+  "storage_human": "3.2 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Desktop Companion - AI That Sees Your Screen & Never Forgets",
+      "url": "https://desktopaicompanion.com/",
+      "snippet": "First Anime AI companion that&#x27;s 100% voice, always visible on desktop, and can see your screen. Intelligent memory creates real relationships unlike Character.AI or Replika."
+    },
+    {
+      "title": "Lumi — Shape your AI agent, your companion, your universe",
+      "url": "https://lumiagent.me/",
+      "snippet": "Create a personalized AI companion with voice, memory and a 3D avatar. Real-time conversations, your universe."
+    },
+    {
+      "title": "Desktop Companion — AI Desktop Pet for Windows by Dokk75",
+      "url": "https://dokk75.itch.io/desktop-ai-companion",
+      "snippet": "An AI companion that sees your screen, talks back, remembers you. Build any character: anime, waifu, with voice cloning."
+    },
+    {
+      "title": "GitHub - davidbrowne17/chatterbox-streaming: Streaming and Fine-tuning ...",
+      "url": "https://github.com/davidbrowne17/chatterbox-streaming",
+      "snippet": "Chatterbox is an open source TTS model. Licensed under MIT, Chatterbox has been benchmarked against leading closed-source systems like ElevenLabs, and is consistently preferred in side-by-side evaluations. Whether you&#x27;re working on memes, videos, games, or AI agents, Chatterbox brings your content ..."
+    },
+    {
+      "title": "Chatterbox Turbo: Free ElevenLabs Alternative 2026",
+      "url": "https://codersera.com/blog/chatterbox-turbo-run-and-install-locally-free-elevenlabs-alternative-2026/",
+      "snippet": "Chatterbox Turbo Chatterbox Turbo is an open-source, MIT-licensed text-to-speech model that generates natural, emotionally expressive speech from written text. Released by Resemble AI in December 2025, Turbo represents a significant breakthrough in the Chatterbox family of models, optimizing speed and efficiency without compromising voice quality."
+    }
+  ]
+}

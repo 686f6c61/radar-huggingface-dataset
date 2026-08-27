@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "aylajadu/qa-text-classifier",
+  "slug": "aylajadu-qa-text-classifier",
+  "author": "aylajadu",
+  "url": "https://huggingface.co/aylajadu/qa-text-classifier",
+  "created_at": "2026-08-26T22:54:26.000Z",
+  "updated_at": "2026-08-26T22:54:31.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": "sklearn",
+  "languages": [],
+  "tags": [
+    "sklearn",
+    "text-classification",
+    "scikit-learn",
+    "tfidf",
+    "logistic-regression",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1783,
+  "storage_human": "1783 B",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "AI Text Classifier - Free AI Content Detector Tool",
+      "url": "https://freeaitextclassifier.com/",
+      "snippet": "AI Text Classifier is a free online AI content detector tool that quickly detects AI text and shows you a report on what percentage of your text is written by AI or humans."
+    },
+    {
+      "title": "Text classification · Hugging Face",
+      "url": "https://huggingface.co/docs/transformers/tasks/sequence_classification",
+      "snippet": "Text classification Text classification is a common NLP task that assigns a label or class to text. Some of the largest companies run text classification in production for a wide range of practical applications. One of the most popular forms of text classification is sentiment analysis, which assigns a label like 🙂 positive, 🙁 negative, or 😐 neutral to a sequence of text."
+    },
+    {
+      "title": "Text Classification Models - Hugging Face",
+      "url": "https://huggingface.co/models?pipeline_tag=text-classification",
+      "snippet": "Explore machine learning models."
+    },
+    {
+      "title": "kavya3366/Advanced_text_porcessing_QA_System - GitHub",
+      "url": "https://github.com/kavya3366/Advanced_text_porcessing_QA_System",
+      "snippet": "Advanced Text Processing and QA System This project is an advanced text processing and question-answering system that combines three powerful components: a sophisticated text preprocessing pipeline, a self-attention based classification model, and an integrated document QA system. It leverages PyTorch for deep learning, OpenAI&#x27;s language models for enhanced comprehension, and includes a robust ..."
+    },
+    {
+      "title": "text-classification · GitHub Topics · GitHub",
+      "url": "https://github.com/topics/text-classification",
+      "snippet": "nlp qa sentiment-analysis text-classification match machine-translation text-similarity corpus knowledge-graph chinese text-summarization datasets ner machine-reading-comprehension Updated on Nov 21, 2022 Python"
+    }
+  ]
+}

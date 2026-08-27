@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "BERRAMOU/camembert-math-classification",
+  "slug": "berramou-camembert-math-classification",
+  "author": "BERRAMOU",
+  "url": "https://huggingface.co/BERRAMOU/camembert-math-classification",
+  "created_at": "2026-08-26T22:28:11.000Z",
+  "updated_at": "2026-08-26T22:39:49.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "camembert",
+    "text-classification",
+    "generated_from_trainer",
+    "base_model:almanach/camembert-base",
+    "base_model:finetune:almanach/camembert-base",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 110624259,
+  "parameters_human": "110.6M",
+  "storage_bytes": 1327574126,
+  "storage_human": "1.3 GB",
+  "base_model": "camembert-base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "CamemBERT · Hugging Face",
+      "url": "https://huggingface.co/docs/transformers/model_doc/camembert",
+      "snippet": "CamemBERT CamemBERT is a language model based on RoBERTa, but trained specifically on French text from the OSCAR dataset, making it more effective for French language tasks. What sets CamemBERT apart is that it learned from a huge, high quality collection of French data, as opposed to mixing lots of languages."
+    },
+    {
+      "title": "CamemBERT - Hugging Face",
+      "url": "https://huggingface.co/docs/transformers/en/model_doc/camembert",
+      "snippet": "CamemBERT CamemBERT is a language model based on RoBERTa, but trained specifically on French text from the OSCAR dataset, making it more effective for French language tasks. What sets CamemBERT apart is that it learned from a huge, high quality collection of French data, as opposed to mixing lots of languages."
+    },
+    {
+      "title": "CamemBERT: a Tasty French Language Model - ACL Anthology",
+      "url": "https://aclanthology.org/2020.acl-main.645/",
+      "snippet": "We show that the use of web crawled data is preferable to the use of Wikipedia data. More surprisingly, we show that a relatively small web crawled dataset (4GB) leads to results that are as good as those obtained using larger datasets (130+GB). Our best performing model CamemBERT reaches or improves the state of the art in all four downstream ..."
+    },
+    {
+      "title": "Best LLMs for Math — August 2026 Leaderboard | BenchLM.ai",
+      "url": "https://benchlm.ai/math",
+      "snippet": "As of August 2026, the top math model on the BenchLM leaderboard is Kimi K2.6 with a weighted math score of 72. Decision lens: use provisional-ranked mode for broader public evidence and verified-ranked mode for source-only comparisons. A model can move between views as evidence coverage changes."
+    },
+    {
+      "title": "ALMAnaCH, Inria",
+      "url": "https://almanach.inria.fr/software_and_resources/CamemBERT-en.html",
+      "snippet": "Description CamemBERT is a state-of-the-art language model for French based on the RoBERTa architecture pretrained on the French subcorpus of the available multilingual corpus OSCAR. CamemBERT was initially evaluated in four different downstream tasks for French: part-of-speech (POS) tagging, dependency parsing, named entity recognition (NER) and natural language inference (NLI), improving the ..."
+    }
+  ]
+}

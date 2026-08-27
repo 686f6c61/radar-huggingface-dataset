@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "moofeez/qwen3-coder-30b-a3b-debugger-lora",
+  "slug": "moofeez-qwen3-coder-30b-a3b-debugger-lora",
+  "author": "moofeez",
+  "url": "https://huggingface.co/moofeez/qwen3-coder-30b-a3b-debugger-lora",
+  "created_at": "2026-03-05T04:23:07.000Z",
+  "updated_at": "2026-08-27T01:32:21.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "qwen3_moe",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 70,
+  "trending_score": 0,
+  "parameters": 30532122624,
+  "parameters_human": "30.53B",
+  "storage_bytes": 2885580172129,
+  "storage_human": "2885.6 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "moofeez/qwen3-coder-30b-a3b-debugger-rl-lora · Hugging Face",
+      "url": "https://huggingface.co/moofeez/qwen3-coder-30b-a3b-debugger-rl-lora",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "moofeez/qwen3-coder-30b-a3b-debugger-lora at main - Hugging Face",
+      "url": "https://huggingface.co/moofeez/qwen3-coder-30b-a3b-debugger-lora/tree/main",
+      "snippet": "456 BytesUpdate merged SFT model + adapter (Qwen3-Coder-30B-A3B + DoRA) — 2026-05-18, val_loss=0.620255 days ago adapter_model.safetensors 35.1 MB xet Update merged SFT model + adapter (Qwen3-Coder-30B-A3B + DoRA)about 16 hours ago added_tokens.json Safe 707 BytesSync SFT merged model from RL training (policy_v1)about 1 month ago chat ..."
+    },
+    {
+      "title": "Damacol/moofeez-qwen3-coder-30b-a3b-debugger-rl-lora - GitHub",
+      "url": "https://github.com/Damacol/moofeez-qwen3-coder-30b-a3b-debugger-rl-lora/releases",
+      "snippet": "AI: moofeez/qwen3-coder-30b-a3b-debugger-rl-lora. Contribute to Damacol/moofeez-qwen3-coder-30b-a3b-debugger-rl-lora development by creating an account on GitHub."
+    },
+    {
+      "title": "qwen3 coder 30b a3b debugger rft (30B) | Benchmarks & Deploy Guide ...",
+      "url": "https://openmodelmap.com/model/moofeez/qwen3-coder-30b-a3b-debugger-rft",
+      "snippet": "qwen3 coder 30b a3b debugger rft by moofeez for text generation — open-source AI model on HuggingFace."
+    },
+    {
+      "title": "moofeez-qwen3-coder-30b-a3b-debugger-rl-lora-adapter/README.md at main ...",
+      "url": "https://github.com/Damacol/moofeez-qwen3-coder-30b-a3b-debugger-rl-lora-adapter/blob/main/README.md",
+      "snippet": "moofeez/qwen3-coder-30b-a3b-debugger-rl-lora-adapter - Private, Uncensored AI for Real Creators and Devs {MODEL} setup for researchers, devs, and writers. No babysitting, no tracking, just powerful AI on your terms."
+    }
+  ]
+}

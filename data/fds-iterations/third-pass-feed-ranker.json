@@ -1,0 +1,77 @@
+{
+  "schema": 1,
+  "id": "FDS-Iterations/third-pass-feed-ranker",
+  "slug": "fds-iterations-third-pass-feed-ranker",
+  "author": "FDS-Iterations",
+  "url": "https://huggingface.co/FDS-Iterations/third-pass-feed-ranker",
+  "created_at": "2026-08-26T22:49:51.000Z",
+  "updated_at": "2026-08-26T22:50:16.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": "transformers",
+  "languages": [
+    "multilingual"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "xlm-roberta",
+    "text-classification",
+    "cross-encoder",
+    "reranker",
+    "feed-ranking",
+    "text-ranking",
+    "enterprise-feed",
+    "multilingual",
+    "base_model:cross-encoder/mmarco-mMiniLMv2-L12-H384-v1",
+    "base_model:finetune:cross-encoder/mmarco-mMiniLMv2-L12-H384-v1",
+    "license:apache-2.0",
+    "text-embeddings-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 117641089,
+  "parameters_human": "117.6M",
+  "storage_bytes": 487671324,
+  "storage_human": "488 MB",
+  "base_model": "cross-encoder/mmarco-mMiniLMv2-L12-H384-v1",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "LLM Rankings | OpenRouter",
+      "url": "https://openrouter.ai/rankings",
+      "snippet": "LLM rankings and AI leaderboard by real-world usage, ranked by tokens processed through the OpenRouter API. See which AI models developers actually use."
+    },
+    {
+      "title": "An Industrial-Scale Sequential Recommender for LinkedIn Feed Ranking ...",
+      "url": "https://www.linkedin.com/posts/lars-hertel-526b8b61_an-industrial-scale-sequential-recommender-activity-7439812922463268865-3R95",
+      "snippet": "Lars Hertel Building AI agents at Nubank 4mo Edited Very excited to share our work on turning the LinkedIn Feed ranker into a large sequential transformer model Gaurav Srivastava Building High ..."
+    },
+    {
+      "title": "ModelRank AI - GitHub",
+      "url": "https://github.com/chenjy16/modelrank_ai",
+      "snippet": "ModelRank AI 🏆 This is an automatically updated open-source large language model leaderboard with data sourced from HuggingFace. Through this project, you can easily view and compare the performance of various large language models."
+    },
+    {
+      "title": "GitHub - agentset-ai/awesome-rerankers: A curated list of reranking ...",
+      "url": "https://github.com/agentset-ai/awesome-rerankers",
+      "snippet": "A curated list of reranking models, libraries, and resources for RAG applications. Rerankers take a query and retrieved documents and reorder them by relevance. They use cross-encoders to jointly encode query-document pairs, which is slower than vector search but more accurate. Typical pipeline: retrieve 50-100 candidates with vector search, rerank to top 3-5."
+    },
+    {
+      "title": "AI Leaderboard 2026: Compare & Rank 300+ Top AI Models by Intelligence ...",
+      "url": "https://llm-stats.com/",
+      "snippet": "The AI Leaderboard — independent rankings of GPT, Claude, Gemini, Llama, DeepSeek and 300+ AI models by intelligence, speed and price. Composite LLM Stats Score updated continuously from public benchmarks and live API metrics."
+    }
+  ]
+}

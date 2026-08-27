@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "maxamiri/iktm",
+  "slug": "maxamiri-iktm",
+  "author": "maxamiri",
+  "url": "https://huggingface.co/maxamiri/iktm",
+  "created_at": "2026-08-26T23:56:14.000Z",
+  "updated_at": "2026-08-27T00:30:23.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "pytorch",
+  "languages": [],
+  "tags": [
+    "pytorch",
+    "trajectory-generation",
+    "time-series",
+    "transformer",
+    "industrial-mobility",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 9743627,
+  "storage_human": "10 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Max Amiri | Principal Engineer & PhD Candidate",
+      "url": "https://maxamiri.github.io/",
+      "snippet": "Principal Engineer and PhD Candidate focused on leading the transition from traditional software delivery to AI-native engineering. Experienced in rewiring enterprise architectures, backends, and developer workflows to deploy high-impact, production-ready agentic AI and LLM solutions."
+    },
+    {
+      "title": "Max Amiri maxamiri - GitHub",
+      "url": "https://github.com/maxamiri/",
+      "snippet": "Also, Mahdi Amiri-Kordestani. Electronic and Computer Engineer - maxamiri"
+    },
+    {
+      "title": "‪Max Amiri‬ - ‪Google Scholar‬",
+      "url": "https://scholar.google.com/citations?user=P6j9I1IAAAAJ&hl=en",
+      "snippet": "‪University of Otago‬ - ‪‪Cited by 32‬‬ - ‪LLM‬ - ‪Agentic AI‬ - ‪Mobile‬ - ‪Security‬ - ‪Communication‬"
+    },
+    {
+      "title": "SEC.gov",
+      "url": "https://www.sec.gov/Archives/edgar/data/1682472/000191870426024800/0001918704-26-024800.txt",
+      "snippet": "Hypothetical back-tested performance is determined by means of a retroactive application of a back-tested model designed with the benefit of hindsight. Past performance, and especially hypothetical back-tested performance, is not indicative of future results."
+    },
+    {
+      "title": "MAX AMINI - OFFICIAL TICKETS and TOUR INFORMATION",
+      "url": "https://www.maxamini.com/",
+      "snippet": "Official website of the world renowned Iranian-American standup comedian, Max Amini."
+    }
+  ]
+}

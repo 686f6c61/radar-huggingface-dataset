@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "AshenR/AshenBERTo",
+  "slug": "ashenr-ashenberto",
+  "author": "AshenR",
+  "url": "https://huggingface.co/AshenR/AshenBERTo",
+  "created_at": "2024-08-14T10:40:36.000Z",
+  "updated_at": "2026-08-27T00:22:20.000Z",
+  "license": "unknown",
+  "license_family": "unknown",
+  "pipeline_tag": "fill-mask",
+  "library": "transformers",
+  "languages": [
+    "si"
+  ],
+  "tags": [
+    "transformers",
+    "pytorch",
+    "safetensors",
+    "roberta",
+    "fill-mask",
+    "AshenBerto",
+    "Sinhala",
+    "Roberta",
+    "si",
+    "arxiv:1907.11692",
+    "license:unknown",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 11,
+  "trending_score": 0,
+  "parameters": 58896416,
+  "parameters_human": "58.9M",
+  "storage_bytes": 471233322,
+  "storage_human": "471 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "AshenR/AshenBERTo · Hugging Face",
+      "url": "https://huggingface.co/AshenR/AshenBERTo",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "AshenR (Ashen Ranaweera) - Hugging Face",
+      "url": "https://huggingface.co/AshenR",
+      "snippet": "AI Fill-Mask • Updated Jul 25 • 21 datasets"
+    },
+    {
+      "title": "PDF Custom Bidirectional Encoder Representations from Transformers (BERT ...",
+      "url": "https://link.springer.com/content/pdf/10.1007/978-3-032-23515-2_4.pdf?pdf=inline%20link",
+      "snippet": "This paper presents AshenBERTo, a custom-pretrained RoBERTa model optimized for Sinhala sentence similarity tasks. Low-resource languages like Sinhala face challenges due to scarce annotated data and the lack of robust models. To mitigate this, a parallel Sin-hala dataset was created via machine translation of benchmark datasets (SNLI, SICK, STS)."
+    },
+    {
+      "title": "Custom Bidirectional Encoder Representations from Transformers (BERT ...",
+      "url": "https://link.springer.com/chapter/10.1007/978-3-032-23515-2_4",
+      "snippet": "This paper presents AshenBERTo, a custom-pretrained RoBERTa model optimized for Sinhala sentence similarity tasks. Low-resource languages like Sinhala face challenges due to scarce annotated data and the lack of robust models. To mitigate this, a parallel Sinhala..."
+    },
+    {
+      "title": "Deploy AshenR/SinRoberto | Inference Endpoints by Hugging Face",
+      "url": "https://endpoints.huggingface.co/new?repository=AshenR%2FSinRoberto",
+      "snippet": "Select a supported task with the right inputs and outputs for your model pipeline, or define a custom task."
+    }
+  ]
+}

@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "heruirayli/gpt2-clone",
+  "slug": "heruirayli-gpt2-clone",
+  "author": "heruirayli",
+  "url": "https://huggingface.co/heruirayli/gpt2-clone",
+  "created_at": "2026-08-26T20:55:52.000Z",
+  "updated_at": "2026-08-26T21:06:57.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "text-generation",
+    "en",
+    "dataset:HuggingFaceTB/cosmopedia",
+    "base_model:openai-community/gpt2",
+    "base_model:finetune:openai-community/gpt2",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1952994083,
+  "storage_human": "2.0 GB",
+  "base_model": "openai-community/gpt2",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "openai-community/gpt2 · Hugging Face",
+      "url": "https://huggingface.co/openai-community/gpt2",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GPT Image 2 — Free AI Image Generator & Editor by OpenAI | Playground",
+      "url": "https://playgroundai.com/gpt-image-2",
+      "snippet": "GPT Image 2, free for everyone. Generate or edit any image with OpenAI&#x27;s most capable image model. Best-in-class text rendering, instruction following, and prompt fidelity — free, no sign-up required."
+    },
+    {
+      "title": "GPT Image 2 - Try GPT Image 2 Model Online for Free - clipfly.ai",
+      "url": "https://www.clipfly.ai/ai-image-generator/gpt-image-2/",
+      "snippet": "No more compromising for \"AI-looking\" photos. Experience the ultra-realistic rendering of GPT Image 2 on Clipfly today online for free. Be the first to try the latest AI image generation model and create visuals that look indistinguishable from reality, from flawless human portraits to pixel-perfect text."
+    },
+    {
+      "title": "GPT-Image-2 Model | OpenAI API",
+      "url": "https://developers.openai.com/api/docs/models/gpt-image-2",
+      "snippet": "State-of-the-art image generation model Compare Try in Playground"
+    },
+    {
+      "title": "GPT Image 2 AI Image Generator: Thinking Mode + 4K Typography | imagev2.ai",
+      "url": "https://imagev2.ai/",
+      "snippet": "GPT Image 2 — The AI Image Generator That Actually Thinks Turn a single prompt into print-ready posters, 4K product shots, pixel-perfect UI mockups, and character-consistent storyboards — powered by GPT Image 2, the first AI image model with native reasoning."
+    }
+  ]
+}

@@ -1,0 +1,77 @@
+{
+  "schema": 1,
+  "id": "takanori-ishikawa/DeepSeek-V4-Flash-0731-Pruned-155B-A13B-GGUF",
+  "slug": "takanori-ishikawa-deepseek-v4-flash-0731-pruned-155b-a13b-gguf",
+  "author": "takanori-ishikawa",
+  "url": "https://huggingface.co/takanori-ishikawa/DeepSeek-V4-Flash-0731-Pruned-155B-A13B-GGUF",
+  "created_at": "2026-08-26T12:59:38.000Z",
+  "updated_at": "2026-08-26T23:47:33.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "llama.cpp",
+    "unofficial",
+    "moe",
+    "expert-pruning",
+    "speculative-decoding",
+    "apple-silicon",
+    "text-generation",
+    "arxiv:2106.04426",
+    "arxiv:2510.13999",
+    "arxiv:2604.08541",
+    "base_model:deepseek-ai/DeepSeek-V4-Flash-0731",
+    "base_model:quantized:deepseek-ai/DeepSeek-V4-Flash-0731",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us",
+    "imatrix",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 155464571991,
+  "parameters_human": "155.46B",
+  "storage_bytes": 164436370944,
+  "storage_human": "164.4 GB",
+  "base_model": "deepseek-ai/DeepSeek-V4-Flash-0731, unsloth/DeepSeek-V4-Flash-0731-GGUF",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "DeepSeek-V4: How to Run Locally | Unsloth Documentation",
+      "url": "https://unsloth.ai/docs/models/deepseek-v4",
+      "snippet": "The lossless 8-bit GGUF is 162 GB and 3-bit is 103GB which can run on a 110GB RAM device. DeepSeek-V4-Flash-0731 scores 82.7% on Terminal Bench 2.1, 54.4% on DeepSWE, and 54.2% on NL2Repo. DSpark is also enabled for GGUFs, enabling up to 2x faster decoding speed! Aug 13: DeepSeek- V4-Pro-0813 was released and quants are now available to run."
+    },
+    {
+      "title": "GitHub - jacklarmer/deepseek-v4-flash-0731-sm120: Working recipe ...",
+      "url": "https://github.com/jacklarmer/deepseek-v4-flash-0731-sm120",
+      "snippet": "Working recipe: DeepSeek-V4-Flash-0731 + DSpark speculative decoding + SparkInfer/B12X on 4x RTX PRO 6000 Blackwell (SM120), PCIe-only host. Blockers, tuning surface, correctness gates, benchmark h..."
+    },
+    {
+      "title": "DeepSeek V4 Flash 0731 部署实战：从权重下载到跑起来，一篇够用",
+      "url": "https://zhuanlan.zhihu.com/p/2067553107500873180",
+      "snippet": "导语DeepSeek-V4-Flash-0731 上线没几天，权重就正式开源了：HuggingFace、ModelScope 都能下，MIT 协议，随便商用。这篇把它的家底、跑分、下载、配置和部署一次讲完。你只要有一台双卡 80GB 的机器，照着走就能…"
+    },
+    {
+      "title": "Deepseek-v4-Flash 0731 GGUF (NEW model) - NVIDIA Developer Forums",
+      "url": "https://forums.developer.nvidia.com/t/deepseek-v4-flash-0731-gguf-new-model/378829",
+      "snippet": "DeepSeek-V4-Flash-0731 is the July 31 update to the Flash model, delivering the best performance for its size and outperforming V4-Pro (Preview). Designed for coding, agentic and chat workflows with a 1M context window."
+    },
+    {
+      "title": "deepseek-v4-flash - ollama.com",
+      "url": "https://ollama.com/library/deepseek-v4-flash",
+      "snippet": "DeepSeek-V4-Flash is a preview of the DeepSeek-V4 series, a Mixture-of-Experts model with 284B total parameters and 13B activated, built for efficient reasoning across a 1M-token context window."
+    }
+  ]
+}

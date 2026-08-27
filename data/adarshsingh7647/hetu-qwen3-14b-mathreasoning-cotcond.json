@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "AdarshSingh7647/HETU-Qwen3-14B-MathReasoning-CotCond",
+  "slug": "adarshsingh7647-hetu-qwen3-14b-mathreasoning-cotcond",
+  "author": "AdarshSingh7647",
+  "url": "https://huggingface.co/AdarshSingh7647/HETU-Qwen3-14B-MathReasoning-CotCond",
+  "created_at": "2026-08-26T22:43:20.000Z",
+  "updated_at": "2026-08-26T22:46:55.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3",
+    "text-generation",
+    "hetu",
+    "mathreasoning",
+    "cotcond",
+    "conversational",
+    "base_model:Qwen/Qwen3-14B",
+    "base_model:finetune:Qwen/Qwen3-14B",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 14768307200,
+  "parameters_human": "14.77B",
+  "storage_bytes": 29548088922,
+  "storage_human": "29.5 GB",
+  "base_model": "Qwen/Qwen3-14B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Qwen/Qwen3-14B · Hugging Face",
+      "url": "https://huggingface.co/Qwen/Qwen3-14B",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "qwen3-14b · Alibaba Cloud · Qwen | HotON.ai",
+      "url": "https://hoton.ai/en/models/qwen-qwen3-14b",
+      "snippet": "qwen3-14b is a Text model from Alibaba Cloud · Qwen (CN). HotON.ai tracks it at $0.06 per 1M input tokens and $0.24 per 1M output tokens, with a 41K-token context window."
+    },
+    {
+      "title": "Qwen3 Technical Report - arXiv.org",
+      "url": "https://arxiv.org/html/2505.09388v1",
+      "snippet": "The Qwen3 series includes models of both dense and Mixture-of-Expert (MoE) architectures, with parameter scales ranging from 0.6 to 235 billion. A key innovation in Qwen3 is the integration of thinking mode (for complex, multi-step reasoning) and non-thinking mode (for rapid, context-driven responses) into a unified framework."
+    },
+    {
+      "title": "Qwen 3 14B — CanIRun.ai",
+      "url": "https://www.canirun.ai/model/qwen3-14b",
+      "snippet": "The flagship model, Qwen3-235B-A22B, achieves competitive results in benchmark evaluations of coding, math, general capabilities, etc., when compared to other top-tier models such as DeepSeek-R1, o1, o3-mini, Grok-3, and Gemini-2.5-Pro."
+    },
+    {
+      "title": "Qwen3 14B — Specs, VRAM & How to Run Locally | Convly AI",
+      "url": "https://convly.ai/model/qwen3-14b/",
+      "snippet": "A mid-size dense Qwen3 (Apache 2.0, 128K context) that hits a sweet spot for local use — runs 4-bit on a 12GB card while staying genuinely capable."
+    }
+  ]
+}

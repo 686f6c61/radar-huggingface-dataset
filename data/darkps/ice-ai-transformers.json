@@ -5,7 +5,7 @@
   "author": "darkps",
   "url": "https://huggingface.co/darkps/ice-AI-transformers",
   "created_at": "2026-08-25T09:19:16.000Z",
-  "updated_at": "2026-08-26T07:47:17.000Z",
+  "updated_at": "2026-08-26T08:30:24.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -24,7 +24,7 @@
     "endpoints_compatible",
     "region:us"
   ],
-  "likes": 0,
+  "likes": 1,
   "downloads_30d": 0,
   "trending_score": 0,
   "parameters": 8190735360,

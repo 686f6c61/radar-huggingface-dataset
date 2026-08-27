@@ -1,0 +1,88 @@
+{
+  "schema": 1,
+  "id": "ai-babai/giga-embeddings-0826-10b-a1.8b-mlx-q8",
+  "slug": "ai-babai-giga-embeddings-0826-10b-a1-8b-mlx-q8",
+  "author": "ai-babai",
+  "url": "https://huggingface.co/ai-babai/giga-embeddings-0826-10b-a1.8b-mlx-q8",
+  "created_at": "2026-08-26T13:26:40.000Z",
+  "updated_at": "2026-08-26T21:11:37.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "feature-extraction",
+  "library": "giga-embeddings-mlx",
+  "languages": [
+    "ru",
+    "en"
+  ],
+  "tags": [
+    "giga-embeddings-mlx",
+    "safetensors",
+    "deepseek_v3_bidirec",
+    "mlx",
+    "apple-silicon",
+    "embeddings",
+    "text-embeddings",
+    "semantic-search",
+    "rag",
+    "russian",
+    "local-ai",
+    "macos",
+    "quantized",
+    "moe",
+    "q8",
+    "research",
+    "arxiv:2608.23806",
+    "feature-extraction",
+    "ru",
+    "en",
+    "base_model:ai-sage/Giga-Embeddings-instruct-10B-A1.8B-0826",
+    "base_model:quantized:ai-sage/Giga-Embeddings-instruct-10B-A1.8B-0826",
+    "license:mit",
+    "8-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 2948079680,
+  "parameters_human": "2.95B",
+  "storage_bytes": 11143449397,
+  "storage_human": "11.1 GB",
+  "base_model": "ai-sage/Giga-Embeddings-instruct-10B-A1.8B-0826",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "[2608.23806] Giga-Embeddings: Mixture-of-Experts Encoders for High ...",
+      "url": "https://arxiv.org/abs/2608.23806",
+      "snippet": "We introduce Giga-Embeddings, a family of text embedding models designed to combine strong retrieval quality with efficient serving. Its largest member is a sparse 10B-parameter Mixture-of-Experts encoder with approximately 1.8B active parameters per token. Across English, Russian, multilingual, and code MTEB benchmarks, this model achieves the strongest aggregate performance within the family ..."
+    },
+    {
+      "title": "ai-sage/Giga-Embeddings-instruct-10B-A1.8B-0826 · Hugging Face",
+      "url": "https://huggingface.co/ai-sage/Giga-Embeddings-instruct-10B-A1.8B-0826",
+      "snippet": "Instructions to use ai-sage/Giga-Embeddings-instruct-10B-A1.8B-0826 with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "ai-sage (ai-sage) - Hugging Face",
+      "url": "https://huggingface.co/ai-sage",
+      "snippet": "ai-sage/GigaChat3.5-432B-A28B-base Text Generation • 433B • Updated Jul 7 • 154 • 21 Audio Understanding Models: Speech Recognition, SSL Encoders, Audio-native LLM ai-sage/GigaAM-Multilingual Automatic Speech Recognition • Updated Jul 13 • 37.4k • 79 ai-sage/GigaChat3.1-Audio-10B-A1.8B Text Generation • Updated Jul 13 • 137k ..."
+    },
+    {
+      "title": "GigaEmbeddings: Efficient Russian Language Embedding Model",
+      "url": "https://arxiv.org/pdf/2510.22369",
+      "snippet": "Abstract We introduce GigaEmbeddings, a novel frame-work for training high-performance Russian-focused text embeddings through hierarchical instruction tuning of the decoder-only LLM designed specifically for Russian language (GigaChat-3B). Our three-stage pipeline, com-prising large-scale contrastive pre-training in web-scale corpora, fine-tuning with hard neg-atives, and multitask ..."
+    },
+    {
+      "title": "Announcing 1-bit Bonsai: The First Commercially Viable 1-bit LLMs - PrismML",
+      "url": "https://prismml.com/news/bonsai-8b",
+      "snippet": "A true 1-bit model 1-bit Bonsai 8B implements a proprietary 1-bit model design across the entire network: embeddings, attention layers, MLP layers, and the LM head are all 1-bit. There are no higher-precision escape hatches. It is a true 1-bit model, end to end, across 8.2 billion parameters."
+    }
+  ]
+}

@@ -5,7 +5,7 @@
   "author": "Argo1-OOAS",
   "url": "https://huggingface.co/Argo1-OOAS/TinyLlama-1.1B-V3-EdgeTravel",
   "created_at": "2026-08-26T11:28:05.000Z",
-  "updated_at": "2026-08-26T11:33:11.000Z",
+  "updated_at": "2026-08-26T16:46:37.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -32,13 +32,13 @@
     "license:apache-2.0",
     "region:us"
   ],
-  "likes": 0,
+  "likes": 1,
   "downloads_30d": 0,
   "trending_score": 0,
   "parameters": 1116829696,
   "parameters_human": "1.12B",
-  "storage_bytes": 4468131963,
-  "storage_human": "4.5 GB",
+  "storage_bytes": 8952499639,
+  "storage_human": "9.0 GB",
   "base_model": "TinyLlama/TinyLlama-1.1B-Chat-v1.0",
   "formats": [
     "safetensors"

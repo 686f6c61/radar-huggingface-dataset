@@ -1,0 +1,78 @@
+{
+  "schema": 1,
+  "id": "frankmorales2020/topological-ai-emo-1b14b-multirun",
+  "slug": "frankmorales2020-topological-ai-emo-1b14b-multirun",
+  "author": "frankmorales2020",
+  "url": "https://huggingface.co/frankmorales2020/topological-ai-emo-1b14b-multirun",
+  "created_at": "2026-08-26T22:58:35.000Z",
+  "updated_at": "2026-08-26T23:07:30.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "continual-learning",
+    "catastrophic-forgetting",
+    "topological-ai",
+    "TOPO-2026",
+    "emo",
+    "mixture-of-experts",
+    "moe",
+    "deterministic-ai",
+    "prime-anchored",
+    "arithmetic-spectral-theory",
+    "certified-model",
+    "text-classification",
+    "en",
+    "base_model:allenai/Emo_1b14b_1T",
+    "base_model:finetune:allenai/Emo_1b14b_1T",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 822136520,
+  "storage_human": "822 MB",
+  "base_model": "allenai/Emo_1b14b_1T",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "frankmorales2020/topological-ai-gpt-oss-20b · Hugging Face",
+      "url": "https://huggingface.co/frankmorales2020/topological-ai-gpt-oss-20b",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "frankmorales2020/topological-ai-GPT-20b-newversion · Hugging Face",
+      "url": "https://huggingface.co/frankmorales2020/topological-ai-GPT-20b-newversion",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "EMO/scripts/models/emo_1b14b_1t.sh at main · allenai/EMO",
+      "url": "https://github.com/allenai/EMO/blob/main/scripts/models/emo_1b14b_1t.sh",
+      "snippet": "Contribute to allenai/EMO development by creating an account on GitHub."
+    },
+    {
+      "title": "EMO/scripts/models/emo_1b14b_1t_emoanneal.sh at main - GitHub",
+      "url": "https://github.com/allenai/EMO/blob/main/scripts/models/emo_1b14b_1t_emoanneal.sh",
+      "snippet": "main EMO / scripts / models / emo_1b14b_1t_emoanneal.sh Code Blame executable file · 76 lines (67 loc) · 3.31 KB Raw 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 32 33 34 35 36 37 38 39 40 41 42 43 44 45 46 47 48 49 50 51 52 53 54 55 56 57 58 59 60 61 62 63 64 65 66 67 68 69 70 71 72 73 74 75 76 ..."
+    },
+    {
+      "title": "PDF Topological AI: Prime-Anchored Neural Networks - Zenodo",
+      "url": "https://zenodo.org/records/20360042/files/topological_ai_FINAL.pdf?download=1",
+      "snippet": "Topological AI is the first production-ready solution for continual learning in large language models. It scales to infinite tasks with flat O(1) memory, works on any dataset without tuning, and can run on smartphones with models like MobileBERT."
+    }
+  ]
+}

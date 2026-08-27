@@ -21,12 +21,12 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 0,
+  "downloads_30d": 9,
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
-  "storage_bytes": 819230905,
-  "storage_human": "819 MB",
+  "storage_bytes": 609573624,
+  "storage_human": "610 MB",
   "base_model": "facebook/detr-resnet-50",
   "formats": [
     "onnx"

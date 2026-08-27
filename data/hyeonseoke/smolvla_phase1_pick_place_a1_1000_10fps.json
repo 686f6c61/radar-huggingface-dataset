@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "HyeonseokE/smolvla_phase1_pick_place_A1_1000_10fps",
+  "slug": "hyeonseoke-smolvla_phase1_pick_place_a1_1000_10fps",
+  "author": "HyeonseokE",
+  "url": "https://huggingface.co/HyeonseokE/smolvla_phase1_pick_place_A1_1000_10fps",
+  "created_at": "2026-08-26T19:44:11.000Z",
+  "updated_at": "2026-08-26T19:45:13.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "robotics",
+    "smolvla",
+    "dataset:HyeonseokE/phase1_pick_place_A1_10fps",
+    "arxiv:2506.01844",
+    "base_model:lerobot/smolvla_base",
+    "base_model:finetune:lerobot/smolvla_base",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 450046176,
+  "parameters_human": "450.0M",
+  "storage_bytes": 906729316,
+  "storage_human": "907 MB",
+  "base_model": "lerobot/smolvla_base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "HyeonseokE/phase1_pick_place_A1_10fps - Hugging Face",
+      "url": "https://huggingface.co/datasets/HyeonseokE/phase1_pick_place_A1_10fps",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "HyeonseokE/smolvla_phase1_sort_by_color_A1_10fps · Hugging Face",
+      "url": "https://huggingface.co/HyeonseokE/smolvla_phase1_sort_by_color_A1_10fps",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Phase1 Pick Place A1 10Fps - Physical AI Dataset | Claru",
+      "url": "https://claru.ai/datasets/hyeonseoke-phase1-pick-place-a1-10fps",
+      "snippet": "LeRobot v3.0 dataset of pick-and-place tasks collected via SCRAPE-IsaacLab, a Code-as-Policies replay pipeline running in Isaac Sim 5.1 with 100 episodes of a robot picking up a red block and placing it on a blue dish."
+    },
+    {
+      "title": "Fine-tuning SmolVLA for Cube Pick-and-Place on SO-101",
+      "url": "https://ggando.com/blog/smolvla-so101/",
+      "snippet": "The task: pick up a small cube from a randomized position and place it in a bowl. 10-second episodes, 30fps, recorded via teleoperation with the leader arm. SmolVLA vs ACT # SmolVLA is a 500M+ parameter model, but you only fine-tune ~50M (the action expert + projections). The vision encoder (SigLIP) and language model (SmolLM2) stay frozen."
+    },
+    {
+      "title": "lerobot/docs/source/smolvla.mdx at main · huggingface/lerobot",
+      "url": "https://github.com/huggingface/lerobot/blob/main/docs/source/smolvla.mdx",
+      "snippet": "SmolVLA is a base model, so fine-tuning on your own data is required for optimal performance in your setup. We recommend recording ~50 episodes of your task as a starting point. Follow our guide to get started: Recording a Dataset In your dataset, make sure to have enough demonstrations per each variation (e.g. the cube position on the table if it is cube pick-place task) you are introducing ..."
+    }
+  ]
+}

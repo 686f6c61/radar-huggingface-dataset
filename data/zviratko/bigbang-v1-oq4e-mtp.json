@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "zviratko/BigBang-v1-oQ4e-mtp",
+  "slug": "zviratko-bigbang-v1-oq4e-mtp",
+  "author": "zviratko",
+  "url": "https://huggingface.co/zviratko/BigBang-v1-oQ4e-mtp",
+  "created_at": "2026-08-26T23:16:32.000Z",
+  "updated_at": "2026-08-26T23:23:25.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "mlx",
+  "languages": [],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "qwen3_5_moe",
+    "oq",
+    "quantized",
+    "4-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 6190826416,
+  "parameters_human": "6.19B",
+  "storage_bytes": 21625953337,
+  "storage_human": "21.6 GB",
+  "base_model": null,
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "AmixDigital/BigBang-v1-mtp-oQ4e · Hugging Face",
+      "url": "https://huggingface.co/AmixDigital/BigBang-v1-mtp-oQ4e",
+      "snippet": "Selection: browse the BigBang-v1 MTP oQ Quantizations collection to compare the nine standalone levels. Published artifact: 5 MLX Safetensors shards plus the exact model, tokenizer, prompt, and multimodal preprocessing assets required by this tier."
+    },
+    {
+      "title": "endless-frontier/BigBang-v1 · Hugging Face",
+      "url": "https://huggingface.co/endless-frontier/BigBang-v1",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "BigBang-v1-oQ4e-mtp on M4 (10c) — oMLX Benchmark",
+      "url": "https://omlx.ai/benchmarks/sqwmicui",
+      "snippet": "Acceleration Context: Novel (English)TurboQuant KV 4-bitLightning MTP Model Settings Show all 22 settings benchmark_contextNovel (English) temperature0.6 top_p0.95 top_k20 min_p0 repetition_penalty1 presence_penalty0 force_samplingfalse enable_thinkingtrue thinking_budget_enabledfalse guided_grammar_enabledfalse turboquant_kv_enabledtrue ..."
+    },
+    {
+      "title": "BigBang-v1-oQ4e-mtp on M1 Pro (16c) — oMLX Benchmark",
+      "url": "https://omlx.ai/benchmarks/i5f1sbeb",
+      "snippet": "Context: Code (Python)TurboQuant KV 4-bitLightning MTP Model Settings Show all 17 settings benchmark_contextCode (Python) max_context_window131072 max_tokens131072 force_samplingfalse thinking_budget_enabledfalse guided_grammar_enabledfalse turboquant_kv_enabledtrue turboquant_kv_bits4 turboquant_skip_lasttrue specprefill_enabledfalse dflash ..."
+    },
+    {
+      "title": "BigBang — Pursuing Open-Ended Intelligence through Self-Evolving ...",
+      "url": "https://endlessfrontier.tech/",
+      "snippet": "BigBang is a general-purpose large language model evolved from Qwen3.6-35B-A3B through efficient post-training, driven by an adversarial, self-evolving synthetic data framework grounded in verifiable frontier research tasks. BigBang reaches aggregate performance between DeepSeek V4 Flash (284B) and DeepSeek V4 Pro (1.6T)."
+    }
+  ]
+}

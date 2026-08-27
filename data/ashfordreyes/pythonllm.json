@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "ashfordreyes/pythonllm",
+  "slug": "ashfordreyes-pythonllm",
+  "author": "ashfordreyes",
+  "url": "https://huggingface.co/ashfordreyes/pythonllm",
+  "created_at": "2026-08-27T00:18:41.000Z",
+  "updated_at": "2026-08-27T00:18:42.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - ashfordreyes/pythonllm: An LLM that is literally only for data ...",
+      "url": "https://github.com/ashfordreyes/pythonllm",
+      "snippet": "An LLM that is literally only for data science coding with python. - ashfordreyes/pythonllm"
+    },
+    {
+      "title": "LLM Systems Engineering · Ashford Partners",
+      "url": "https://ashford-publishing.com/book/llm-systems-engineering",
+      "snippet": "LLM Systems Engineering Training and Building Large Language Models — Engineering AI Models Through Fine-Tuning, Continued Pretraining, and From-Scratch Development"
+    },
+    {
+      "title": "ashfordreyes/README.md at main - GitHub",
+      "url": "https://github.com/ashfordreyes/ashfordreyes/blob/main/README.md",
+      "snippet": "Config files for my GitHub profile. Contribute to ashfordreyes/ashfordreyes development by creating an account on GitHub."
+    },
+    {
+      "title": "Best Open-Source LLM Models in 2026: Coding, Local, Agentic AI ...",
+      "url": "https://huggingface.co/blog/daya-shankar/open-source-llms",
+      "snippet": "A Blog post by Daya Shankar on Hugging Face"
+    },
+    {
+      "title": "LLM Leaderboard 2026: Compare 300+ Top AI Models by Intelligence, Speed ...",
+      "url": "https://llm-stats.com/leaderboards/llm-leaderboard",
+      "snippet": "The LLM Leaderboard — independent ranking of GPT, Claude, Gemini, Llama, DeepSeek and 300+ AI models by intelligence, speed and price. Filter by provider, license, modality and context window; sort by every benchmark. Composite LLM Stats Score updated continuously from public benchmarks and live API metrics."
+    }
+  ]
+}

@@ -5,7 +5,7 @@
   "author": "manoj45232",
   "url": "https://huggingface.co/manoj45232/moda-fashion-distilled-512d-vision-only",
   "created_at": "2026-08-26T15:59:49.000Z",
-  "updated_at": "2026-08-26T16:43:00.000Z",
+  "updated_at": "2026-08-26T16:44:46.000Z",
   "license": "mit",
   "license_family": "oss",
   "pipeline_tag": "image-feature-extraction",
@@ -29,7 +29,7 @@
     "license:mit",
     "region:us"
   ],
-  "likes": 0,
+  "likes": 1,
   "downloads_30d": 0,
   "trending_score": 0,
   "parameters": 93277440,

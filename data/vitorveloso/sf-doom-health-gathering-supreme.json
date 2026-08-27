@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "vitorveloso/sf-doom-health-gathering-supreme",
+  "slug": "vitorveloso-sf-doom-health-gathering-supreme",
+  "author": "vitorveloso",
+  "url": "https://huggingface.co/vitorveloso/sf-doom-health-gathering-supreme",
+  "created_at": "2026-08-26T19:53:47.000Z",
+  "updated_at": "2026-08-26T19:54:22.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "reinforcement-learning",
+  "library": "sample-factory",
+  "languages": [],
+  "tags": [
+    "sample-factory",
+    "reinforcement-learning",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - renhanfei/vizdoom_health_gathering",
+      "url": "https://github.com/RENHANFEI/vizdoom_health_gathering",
+      "snippet": "Contribute to renhanfei/vizdoom_health_gathering development by creating an account on GitHub."
+    },
+    {
+      "title": "Models - Hugging Face",
+      "url": "https://huggingface.co/models?library...",
+      "snippet": "Explore machine learning models."
+    },
+    {
+      "title": "ViZDoom/scenarios/health_gathering_supreme.cfg at main - GitHub",
+      "url": "https://github.com/Farama-Foundation/ViZDoom/blob/main/scenarios/health_gathering_supreme.cfg",
+      "snippet": "30 lines (23 loc) · 742 Bytes main ViZDoom / scenarios / health_gathering_supreme.cfg Top Code Blame 30 lines (23 loc) · 742 Bytes Raw 1 2 3 4 5 6 7 8 9 10 11 12 13 ..."
+    },
+    {
+      "title": "Vivek-huggingface/rl_course_vizdoom_health_gathering_supreme · Hugging Face",
+      "url": "https://huggingface.co/Vivek-huggingface/rl_course_vizdoom_health_gathering_supreme",
+      "snippet": "A (n) APPO model trained on the doom_health_gathering_supreme environment."
+    },
+    {
+      "title": "New AI Model Releases (Last 24 Hours) — Live Tracker | BenchLM",
+      "url": "https://benchlm.ai/model-updates",
+      "snippet": "Every new AI model release, tracked live: last 24 hours, this week, and 159 confirmed launches from 46 providers — each with source evidence and benchmarks."
+    }
+  ]
+}

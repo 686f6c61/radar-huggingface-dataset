@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "TiGa-RCE/Scalpel-VL-1.6B-oQ5",
+  "slug": "tiga-rce-scalpel-vl-1-6b-oq5",
+  "author": "TiGa-RCE",
+  "url": "https://huggingface.co/TiGa-RCE/Scalpel-VL-1.6B-oQ5",
+  "created_at": "2026-08-27T00:32:52.000Z",
+  "updated_at": "2026-08-27T00:33:02.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "mlx",
+  "languages": [],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "qwen3_vl",
+    "oq",
+    "quantized",
+    "5-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 654587648,
+  "parameters_human": "654.6M",
+  "storage_bytes": 1736569633,
+  "storage_human": "1.7 GB",
+  "base_model": null,
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "TiGa-RCE (TiGa) - Hugging Face",
+      "url": "https://huggingface.co/TiGa-RCE",
+      "snippet": "AI & ML interests ... Recent Activity liked a model about 7 hours ago ... liked a model about 7 hours ago"
+    },
+    {
+      "title": "New ENCFORGE Ransomware Targets AI Model Files in Langflo ...",
+      "url": "https://www.imtr.net/article/new-encforge-ransomware-targets-ai-model-files-in-langflow-rce-attack-1964",
+      "snippet": "Researchers at Sysdig have linked a second attack on the same Langflow server to JADEPUFFER, the AI-agent-driven operator it first documented earlier this month. The same operator has now been spotted deploying ENCFORGE, a new compiled Go ransomware designed to encrypt model weights, vector indexes, training datasets, and other AI infrastructure files across the host filesystem. The entry"
+    },
+    {
+      "title": "PDF AI Developer Tool Supply Chain Attacks: RCE, Fake Installers, and AI ...",
+      "url": "https://labs.cloudsecurityalliance.org/wp-content/uploads/2026/03/CSA_research_note_ai_devtool_supply_chain_attacks_20260308-csa-styled.pdf",
+      "snippet": "ImtII]~[<mI~æäæç~<]G~I<j[v~æäæê ~mPjI<m~<Em_jk~&#92;_n]mIG~<]~IkE<[<mQ]O~kIjQIk~_N~kngg[v~EP<Q]~<mm<EZk m<jOImQ]O~mPI~ ~GIsI[_gIj~m__[Q]O~IE_kvkmI&#92; ~0PI~Q]EQGI]mk ..."
+    },
+    {
+      "title": "Remote Code Execution With Modern AI/ML Formats and Libraries",
+      "url": "https://unit42.paloaltonetworks.com/rce-vulnerabilities-in-ai-python-libraries/",
+      "snippet": "Executive Summary We identified vulnerabilities in three open-source artificial intelligence/machine learning (AI/ML) Python libraries published by Apple, Salesforce and NVIDIA on their GitHub repositories. Vulnerable versions of these libraries allow for remote code execution (RCE) when a model file with malicious metadata is loaded."
+    },
+    {
+      "title": "GGUF Model Discovery - Browse & Download AI Models",
+      "url": "https://local-ai-zone.github.io/",
+      "snippet": "Discover and download GGUF format AI models. Browse and direct download thousands of quantized AI models with detailed information, download counts, and direct links."
+    }
+  ]
+}

@@ -5,7 +5,7 @@
   "author": "namin0202",
   "url": "https://huggingface.co/namin0202/gemma-4-e2b-it_audio-onecall-ours",
   "created_at": "2026-08-24T16:02:37.000Z",
-  "updated_at": "2026-08-24T16:02:48.000Z",
+  "updated_at": "2026-08-26T09:08:52.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": "text-generation",
@@ -23,12 +23,12 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 16,
+  "downloads_30d": 21,
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
-  "storage_bytes": 55022762,
-  "storage_human": "55 MB",
+  "storage_bytes": 151716122,
+  "storage_human": "152 MB",
   "base_model": "google/gemma-4-e2b-it",
   "formats": [
     "safetensors"

@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "Taptomads/lora-zimage-02",
+  "slug": "taptomads-lora-zimage-02",
+  "author": "Taptomads",
+  "url": "https://huggingface.co/Taptomads/lora-zimage-02",
+  "created_at": "2026-08-26T20:52:47.000Z",
+  "updated_at": "2026-08-26T20:53:08.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 170128232,
+  "storage_human": "170 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "nonomm/zimage_lora · Hugging Face",
+      "url": "https://huggingface.co/nonomm/zimage_lora",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Z-Image-Turbo LoRA Training Setup - Full Precision + Adapter v2 ...",
+      "url": "https://civitai.com/articles/23863/z-image-turbo-lora-training-setup-full-precision-adapter-v2-massive-quality-jump",
+      "snippet": "The ostris zimage_turbo_training_adapter_v2 is absolutely essential Training time with 20-60 images: ~15-22 mins on RunPod on RTX5090 costs $0.89/hr ( ( you will not be spending that amount since it will take 20 mins or less)) Template on runpod \"AI Toolkit - ostris - ui - official\""
+    },
+    {
+      "title": "Z-Image Lookalike LoRA Index - a Hugging Face Space by nphSi",
+      "url": "https://huggingface.co/spaces/nphSi/Lookalike-LoRA-Index",
+      "snippet": "Lookalike LoRA Index nphSi´s finest authentic Loras Compatible with ZI Base and Turbo A B C D E F G H I J K L M N O P Q R S T U V W X Y Z 1370 LoRAs Showing all (®=Request) Showing all LoRAs for Z-Image (Base and Turbo) --- PLEASE READ --- • All Loras are trained on free public images that are rated PG-13 (safe for work)."
+    },
+    {
+      "title": "Z-Image - Free AI Image Generator | Lightning Fast",
+      "url": "https://z-image.me/en",
+      "snippet": "Z-Image is a free AI image generation platform. Sign in to create high-quality images in seconds with fast, easy-to-use tools."
+    },
+    {
+      "title": "GitHub - miludeerforest/ai-toolkit: for zimage-lora-train on modal",
+      "url": "https://github.com/miludeerforest/ai-toolkit",
+      "snippet": "中文文档 This repository is a modified version of ostris/ai-toolkit, optimized specifically for training Z-Image models on Modal. It includes a custom Gradio frontend, automated setup scripts, and configurations tailored for Z-Image training."
+    }
+  ]
+}

@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "Cloth-splatters/unigarment-native-coarse-deformation",
+  "slug": "cloth-splatters-unigarment-native-coarse-deformation",
+  "author": "Cloth-splatters",
+  "url": "https://huggingface.co/Cloth-splatters/unigarment-native-coarse-deformation",
+  "created_at": "2026-08-27T01:14:22.000Z",
+  "updated_at": "2026-08-27T01:15:44.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "point-cloud",
+    "dense-correspondence",
+    "cloth-manipulation",
+    "unigarment",
+    "dexgarmentlab",
+    "dataset:Cloth-splatters/dexgarmentlab-lift-correspondence-20260822",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 59694797,
+  "storage_human": "60 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Cloth-splatters (Cloth-splatters) - Hugging Face",
+      "url": "https://huggingface.co/Cloth-splatters/datasets",
+      "snippet": "Org profile for Cloth-splatters on Hugging Face, the AI community building the future."
+    },
+    {
+      "title": "UniGarmentManip: A Unified Framework for Category-Level Garment ...",
+      "url": "https://arxiv.org/html/2405.06903v1",
+      "snippet": "Therefore, we propose the Coarse-to-fine (C2F) Correspondence Refinement procedure to make the model more focused on difficult points on the garment, and eliminate inaccurate predictions, by refining the offline trained model using its online prediction failures."
+    },
+    {
+      "title": "UniGarmentManip: A Unified Framework for Category-Level Garment ...",
+      "url": "https://warshallrho.github.io/unigarmentmanip/",
+      "snippet": "Garment manipulation (e.g., unfolding, folding and hanging clothes) is essential for future robots to accomplish home-assistant tasks, while highly challenging due to the diversity of garment configurations, geometries and deformations. Although able to manipulate similar shaped garments in a certain task, previous works mostly have to design different policies for different tasks, could not ..."
+    },
+    {
+      "title": "arXiv.org e-Print archive",
+      "url": "https://arxiv.org/pdf/2405.06903",
+      "snippet": "arXiv.org e-Print archive"
+    },
+    {
+      "title": "CVPR 2026 Accepted Papers · Full List of 4,068 Papers",
+      "url": "https://aiconfpaper.com/conferences/cvpr-2026",
+      "snippet": "Complete list of 4,068 accepted papers at CVPR 2026 (IEEE/CVF Conference on Computer Vision and Pattern Recognition). Browse titles, acceptance types, and citation counts, and search them by meaning on AIConfPaper."
+    }
+  ]
+}

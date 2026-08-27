@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "Mr-J-369/lustifyNSFWCheckpoint_v40DMD2",
+  "slug": "mr-j-369-lustifynsfwcheckpoint_v40dmd2",
+  "author": "Mr-J-369",
+  "url": "https://huggingface.co/Mr-J-369/lustifyNSFWCheckpoint_v40DMD2",
+  "created_at": "2026-08-26T21:38:00.000Z",
+  "updated_at": "2026-08-26T22:18:43.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-image",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "qualcomm",
+    "NPU",
+    "qnn",
+    "stable-diffuser",
+    "SDXL",
+    "text-to-image",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 5158785673,
+  "storage_human": "5.2 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "John6666/lustify-sdxl-nsfwsfw-v2-sdxl · Hugging Face",
+      "url": "https://huggingface.co/John6666/lustify-sdxl-nsfwsfw-v2-sdxl",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Mr-J-369 (Mr-J) · GitHub",
+      "url": "https://github.com/Mr-J-369/",
+      "snippet": "Mr-J-369 has one repository available. Follow their code on GitHub."
+    },
+    {
+      "title": "BKM1804/lustify-sdxl · Hugging Face",
+      "url": "https://huggingface.co/BKM1804/lustify-sdxl",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "LUSTIFY SDXL ENDGAME DMD2 - Free AI CHECKPOINT | Tensor.Art",
+      "url": "https://www.tensor.art/models/815275279422433927",
+      "snippet": "Download LUSTIFY SDXL ENDGAME DMD2 - free CHECKPOINT SDXL 1.0 AI model on TENSOR. SDXL. By coyotte"
+    },
+    {
+      "title": "LUSTIFY V7 - SDXL SDXL - Free AI CHECKPOINT | Tensor.Art",
+      "url": "https://tensor.art/models/906597620699397431",
+      "snippet": "Download LUSTIFY V7 - free CHECKPOINT SDXL 1.0 AI model on TENSOR. SDXL. By Chesthole"
+    }
+  ]
+}

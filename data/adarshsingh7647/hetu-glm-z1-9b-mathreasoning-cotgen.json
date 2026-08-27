@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "AdarshSingh7647/HETU-GLM-Z1-9B-MathReasoning-CotGen",
+  "slug": "adarshsingh7647-hetu-glm-z1-9b-mathreasoning-cotgen",
+  "author": "AdarshSingh7647",
+  "url": "https://huggingface.co/AdarshSingh7647/HETU-GLM-Z1-9B-MathReasoning-CotGen",
+  "created_at": "2026-08-26T22:32:33.000Z",
+  "updated_at": "2026-08-26T22:34:50.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "glm4",
+    "text-generation",
+    "hetu",
+    "mathreasoning",
+    "cotgen",
+    "conversational",
+    "base_model:zai-org/GLM-Z1-9B-0414",
+    "base_model:finetune:zai-org/GLM-Z1-9B-0414",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 9400279040,
+  "parameters_human": "9.40B",
+  "storage_bytes": 18820585544,
+  "storage_human": "18.8 GB",
+  "base_model": "zai-org/GLM-Z1-9B-0414",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "zai-org/GLM-Z1-9B-0414 · Hugging Face",
+      "url": "https://huggingface.co/zai-org/GLM-Z1-9B-0414",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "unsloth/GLM-Z1-9B-0414 · Hugging Face",
+      "url": "https://huggingface.co/unsloth/GLM-Z1-9B-0414",
+      "snippet": "The rumination model integrates search tools during its deep thinking process to handle complex tasks and is trained by utilizing multiple rule-based rewards to guide and extend end-to-end reinforcement learning. Z1-Rumination shows significant improvements in research-style writing and complex retrieval tasks. Finally, GLM-Z1-9B-0414 is a ..."
+    },
+    {
+      "title": "GLM-4-Z1-9B-0414 - Models",
+      "url": "https://ollama.modelscope.cn/models/ZhipuAI/GLM-Z1-9B-0414/summary",
+      "snippet": "GLM-Z1-Rumination-32B-0414 is a deep reasoning model with rumination capabilities (benchmarked against OpenAI&#x27;s Deep Research). Unlike typical deep thinking models, the rumination model employs longer periods of deep thought to solve more open-ended and complex problems (e.g., writing a comparative analysis of AI development in two cities and ..."
+    },
+    {
+      "title": "GLM (AI) - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/GLM_(AI)",
+      "snippet": "GLM, short for General Language Model, is a series of open weight large language models developed by Chinese software company Z.ai. Though the first GLM model was published on 3 March 2021, it was released under the name ChatGLM as an AI -based chatbot in March 2023."
+    },
+    {
+      "title": "GLM-Z1-9B-0414 - Model Info, Parameters, Benchmarks - SiliconFlow\"",
+      "url": "https://www.siliconflow.com/models/glm-z1-9b-0414",
+      "snippet": "GLM-Z1-9B-0414 is a small-sized model in the GLM series with only 9 billion parameters that maintains the open-source tradition while showcasing surprising capabilities. Despite its smaller scale, GLM-Z1-9B-0414 still exhibits excellent performance in mathematical reasoning and general tasks."
+    }
+  ]
+}

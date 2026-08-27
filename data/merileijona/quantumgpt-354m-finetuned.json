@@ -1,0 +1,76 @@
+{
+  "schema": 1,
+  "id": "merileijona/quantumgpt-354m-finetuned",
+  "slug": "merileijona-quantumgpt-354m-finetuned",
+  "author": "merileijona",
+  "url": "https://huggingface.co/merileijona/quantumgpt-354m-finetuned",
+  "created_at": "2026-08-25T16:57:33.000Z",
+  "updated_at": "2026-08-26T21:37:03.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gpt2",
+    "text-generation",
+    "quantum-computing",
+    "qasm",
+    "code-generation",
+    "openqasm",
+    "quantum-circuits",
+    "en",
+    "dataset:merileijona/quantum-circuits-21k",
+    "license:mit",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 469,
+  "trending_score": 0,
+  "parameters": 354347008,
+  "parameters_human": "354.3M",
+  "storage_bytes": 1417418240,
+  "storage_human": "1.4 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "merileijona/quantumgpt-354m-finetuned · Hugging Face",
+      "url": "https://huggingface.co/merileijona/quantumgpt-354m-finetuned",
+      "snippet": "The 354M sibling of QuantumGPT-124M-v3: GPT-2 medium architecture (24 layers, 16 heads, 1024 embd, natively 512-token context) fine-tuned with the same format-anchor recipe that produced the v3 champion."
+    },
+    {
+      "title": "merileijona/quantumgpt-354m · Hugging Face",
+      "url": "https://huggingface.co/merileijona/quantumgpt-354m",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "quantumgpt-354m-finetuned API & Inference Endpoint | FriendliAI",
+      "url": "https://friendli.ai/models/merileijona/quantumgpt-354m-finetuned",
+      "snippet": "Run quantumgpt-354m-finetuned with FriendliAI inference. The 354M sibling of QuantumGPT-124M-v3: GPT-2 medium architecture (24 layers, 16 heads, 1024 embd…"
+    },
+    {
+      "title": "arcticdragon-fi · GitHub",
+      "url": "https://github.com/arcticdragon-fi",
+      "snippet": "QuantumGPT-354M A specialised generative language model developed for quantum-circuit generation. Hugging Face profile Trained, adapted and quantised open-weight models, datasets and experimental releases."
+    },
+    {
+      "title": "quantumgpt/README.md at master · juhanimerilehto/quantumgpt",
+      "url": "https://github.com/juhanimerilehto/quantumgpt/blob/master/README.md",
+      "snippet": "This model was built as part of a data scaling study for quantum circuit language modeling. The full methodology is described in: QuantumGPT: A Data Scaling Study for Quantum Circuit Generation, Merilehto 2026."
+    }
+  ]
+}

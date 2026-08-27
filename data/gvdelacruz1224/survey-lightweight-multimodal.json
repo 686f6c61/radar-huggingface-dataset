@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "Gvdelacruz1224/survey-lightweight-multimodal",
+  "slug": "gvdelacruz1224-survey-lightweight-multimodal",
+  "author": "Gvdelacruz1224",
+  "url": "https://huggingface.co/Gvdelacruz1224/survey-lightweight-multimodal",
+  "created_at": "2026-08-27T01:37:19.000Z",
+  "updated_at": "2026-08-27T01:37:29.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "transformer",
+    "research-notes",
+    "lightweight-multimodal",
+    "license:cc-by-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 49600,
+  "parameters_human": "49600",
+  "storage_bytes": 198880,
+  "storage_human": "198880 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Gvdelacruz1224 (Gabriel R. Delacruz) - Hugging Face",
+      "url": "https://huggingface.co/Gvdelacruz1224/datasets",
+      "snippet": "User profile of Gabriel R. Delacruz on Hugging Face"
+    },
+    {
+      "title": "Gvdelacruz1224 (Gabriel R. Delacruz) - Hugging Face",
+      "url": "https://huggingface.co/Gvdelacruz1224/activity/all",
+      "snippet": "Gvdelacruz1224 &#x27;s activity All Models Datasets Spaces Buckets Papers Collections Community Posts Upvotes Likes Articles updated a model2 days ago"
+    },
+    {
+      "title": "Multimodal AI: The Best Open-Source Vision Language Models in 2026",
+      "url": "https://www.bentoml.com/blog/multimodal-ai-a-guide-to-open-source-vision-language-models",
+      "snippet": "Over the past year, multimodal AI has moved from buzzword to baseline. Models no longer stop at text; they now interpret images, audio, video, and even user interfaces, fusing perception with reasoning. The latest wave, from Qwen3-VL to GLM-4.6V, pushes open-source multimodality into new territory once dominated by proprietary systems like GPT-5 and Gemini-2.5-Pro. Compared with closed-source ..."
+    },
+    {
+      "title": "Efficient Multimodal Large Language Models: A Survey",
+      "url": "https://arxiv.org/abs/2405.10739",
+      "snippet": "In the past year, Multimodal Large Language Models (MLLMs) have demonstrated remarkable performance in tasks such as visual question answering, visual understanding and reasoning. However, the extensive model size and high training and inference costs have hindered the widespread application of MLLMs in academia and industry. Thus, studying efficient and lightweight MLLMs has enormous ..."
+    },
+    {
+      "title": "Efficient GPT-4V level multimodal large language model for ... - Nature",
+      "url": "https://www.nature.com/articles/s41467-025-61040-5",
+      "snippet": "Multimodal Large Language Models are energy intensive and computationally demanding. Here, the authors developed a series of lightweight Multimodal Large Language Models deployable on edge devices."
+    }
+  ]
+}

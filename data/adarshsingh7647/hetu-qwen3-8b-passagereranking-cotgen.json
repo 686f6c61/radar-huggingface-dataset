@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "AdarshSingh7647/HETU-Qwen3-8B-PassageReranking-CotGen",
+  "slug": "adarshsingh7647-hetu-qwen3-8b-passagereranking-cotgen",
+  "author": "AdarshSingh7647",
+  "url": "https://huggingface.co/AdarshSingh7647/HETU-Qwen3-8B-PassageReranking-CotGen",
+  "created_at": "2026-08-26T22:15:00.000Z",
+  "updated_at": "2026-08-26T22:17:04.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3",
+    "text-generation",
+    "hetu",
+    "passagereranking",
+    "cotgen",
+    "conversational",
+    "base_model:Qwen/Qwen3-8B",
+    "base_model:finetune:Qwen/Qwen3-8B",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 8190735360,
+  "parameters_human": "8.19B",
+  "storage_bytes": 16392939858,
+  "storage_human": "16.4 GB",
+  "base_model": "Qwen/Qwen3-8B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - QwenLM/Qwen3: Qwen3 is the large language model series ...",
+      "url": "https://github.com/QwenLM/Qwen3",
+      "snippet": "Qwen3-Instruct-2507 is the updated version of the previous Qwen3 non-thinking mode, featuring the following key enhancements: Significant improvements in general capabilities, including instruction following, logical reasoning, text comprehension, mathematics, science, coding and tool usage."
+    },
+    {
+      "title": "GitHub - AdarshSingh7647/TabRanker",
+      "url": "https://github.com/AdarshSingh7647/TabRanker",
+      "snippet": "TabRank trains and evaluates Qwen3-8B LoRA adapters that rerank candidate tables for multi-table question answering using chain-of-thought reasoning."
+    },
+    {
+      "title": "TabRank Qwen3 8B Table Rerankers - a AdarshSingh7647 Collection",
+      "url": "https://huggingface.co/collections/AdarshSingh7647/tabrank-qwen3-8b-table-rerankers",
+      "snippet": "Listwise table rerankers on Qwen3 8B. Six checkpoints across three objectives and two training mixes (single table and single plus multi table)."
+    },
+    {
+      "title": "Qwen3 Technical Report - arXiv.org",
+      "url": "https://arxiv.org/pdf/2505.09388",
+      "snippet": "Abstract In this work, we present Qwen3, the latest version of the Qwen model family. Qwen3 comprises a series of large language models (LLMs) designed to advance performance, efficiency, and multilingual capabilities. The Qwen3 series includes models of both dense and Mixture-of-Expert (MoE) architectures, with parameter scales ranging from 0.6 to 235 billion. A key innovation in Qwen3 is the ..."
+    },
+    {
+      "title": "Qwen3-Next: Towards Ultimate Training & Inference Efficiency",
+      "url": "https://qwen.ai/blog?id=4074cca80393150c248e508aa62983f9cb7d27cd&from=research.latest-advancements-list",
+      "snippet": "Based on this new architecture, we train the Qwen3-Next-80B-A3B-Base model — an 80-billion-parameter model that activates only 3 billion parameters during inference. This base model achieves performance comparable to (or even slightly better than) the dense Qwen3-32B model, while using less than 10% of its training cost (GPU hours). In inference, especially with context lengths over 32K ..."
+    }
+  ]
+}

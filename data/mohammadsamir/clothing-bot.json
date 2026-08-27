@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "mohammadsamir/clothing-bot",
+  "slug": "mohammadsamir-clothing-bot",
+  "author": "mohammadsamir",
+  "url": "https://huggingface.co/mohammadsamir/clothing-bot",
+  "created_at": "2026-08-27T01:37:37.000Z",
+  "updated_at": "2026-08-27T01:37:56.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 80638,
+  "storage_human": "80638 B",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "mohammadsamir (Mohammad Bahramii) - Hugging Face",
+      "url": "https://huggingface.co/mohammadsamir",
+      "snippet": "User profile of Mohammad Bahramii on Hugging Face"
+    },
+    {
+      "title": "8 Best AI Fashion Model Generators for Clothing Brands (2026)",
+      "url": "https://www.caimera.ai/blogs/8-best-ai-fashion-model-generators-for-realistic-and-creative-visuals",
+      "snippet": "Compare 8 best AI fashion model generators for realistic visuals. Find the right tool to generate AI fashion models for your clothing brand & e-commerce."
+    },
+    {
+      "title": "AI Fashion Model Generator — Generate AI Models for Any Product Photo",
+      "url": "https://www.fashiondiffusion.ai/ai-model-generator",
+      "snippet": "The AI model generator for clothes transforms any garment photo into a professional on-model product image — with realistic fit, natural drape, and accurate garment detail."
+    },
+    {
+      "title": "AI Generated Models for Fashion E-Commerce Brands | WearView",
+      "url": "https://www.wearview.co/",
+      "snippet": "AI generated models for fashion that look real. Upload your garment, pick a model, get professional product photos in 30 seconds. Trusted by 19,000+ brands."
+    },
+    {
+      "title": "AI Fashion Models: Generate On-Model Apparel Images | Claid.ai",
+      "url": "https://claid.ai/clothing-on-models",
+      "snippet": "Turn a single photo of your apparel into a full gallery of professional on-model shots. Make AI models wear your clothes to get diverse, campaign-ready images without the photoshoot hassle."
+    }
+  ]
+}

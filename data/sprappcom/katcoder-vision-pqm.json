@@ -5,7 +5,7 @@
   "author": "sprappcom",
   "url": "https://huggingface.co/sprappcom/katcoder-vision-pqm",
   "created_at": "2026-08-26T16:53:09.000Z",
-  "updated_at": "2026-08-26T16:56:25.000Z",
+  "updated_at": "2026-08-26T18:58:18.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "image-text-to-text",

@@ -5,7 +5,7 @@
   "author": "curvedinf",
   "url": "https://huggingface.co/curvedinf/Qwen3.8-27B-DFlash2-GPTQ-INT8-W8A8-GS128",
   "created_at": "2026-08-23T20:21:46.000Z",
-  "updated_at": "2026-08-26T16:27:07.000Z",
+  "updated_at": "2026-08-26T16:53:18.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-generation",

@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "AdarshSingh7647/HETU-Qwen3-8B-MathReasoning-CotGen",
+  "slug": "adarshsingh7647-hetu-qwen3-8b-mathreasoning-cotgen",
+  "author": "AdarshSingh7647",
+  "url": "https://huggingface.co/AdarshSingh7647/HETU-Qwen3-8B-MathReasoning-CotGen",
+  "created_at": "2026-08-26T22:27:19.000Z",
+  "updated_at": "2026-08-26T22:29:25.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3",
+    "text-generation",
+    "hetu",
+    "mathreasoning",
+    "cotgen",
+    "conversational",
+    "base_model:Qwen/Qwen3-8B",
+    "base_model:finetune:Qwen/Qwen3-8B",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 8190735360,
+  "parameters_human": "8.19B",
+  "storage_bytes": 16392939858,
+  "storage_human": "16.4 GB",
+  "base_model": "Qwen/Qwen3-8B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "unsloth/Qwen3-8B · Hugging Face",
+      "url": "https://huggingface.co/unsloth/Qwen3-8B",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "TabRank Qwen3 8B Table Rerankers - a AdarshSingh7647 Collection",
+      "url": "https://huggingface.co/collections/AdarshSingh7647/tabrank-qwen3-8b-table-rerankers",
+      "snippet": "Listwise table rerankers on Qwen3 8B. Six checkpoints across three objectives and two training mixes (single table and single plus multi table)."
+    },
+    {
+      "title": "Qwen3-8B - Model Info, Parameters, Benchmarks - SiliconFlow\"",
+      "url": "https://www.siliconflow.com/models/qwen3-8b",
+      "snippet": "Qwen3-8B is the latest large language model in the Qwen series with 8.2B parameters. This model uniquely supports seamless switching between thinking mode (for complex logical reasoning, math, and coding) and non-thinking mode (for efficient, general-purpose dialogue). It demonstrates significantly enhanced reasoning capabilities, surpassing previous QwQ and Qwen2.5 instruct models in ..."
+    },
+    {
+      "title": "GitHub - QwenLM/Qwen3: Qwen3 is the large language model series ...",
+      "url": "https://github.com/QwenLM/Qwen3",
+      "snippet": "Qwen3-Instruct-2507 is the updated version of the previous Qwen3 non-thinking mode, featuring the following key enhancements: Significant improvements in general capabilities, including instruction following, logical reasoning, text comprehension, mathematics, science, coding and tool usage."
+    },
+    {
+      "title": "Qwen3-8B — Alibaba Model with Hybrid Thinking/Non-Thinking Reasoning ...",
+      "url": "https://robotsatlas.com/ai-models/qwen3-8b",
+      "snippet": "The model supports 119 languages and dialects (vs. 29 in Qwen2.5), covering Indo-European, Sino-Tibetan, Afro-Asiatic, Austronesian and other language families. In terms of agent capabilities, Qwen3-8B integrates well with external tools via MCP (Model Context Protocol), supporting function calls in both thinking and non-thinking modes."
+    }
+  ]
+}

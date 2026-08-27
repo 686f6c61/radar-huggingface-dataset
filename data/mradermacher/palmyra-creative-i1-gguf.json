@@ -5,7 +5,7 @@
   "author": "mradermacher",
   "url": "https://huggingface.co/mradermacher/Palmyra-Creative-i1-GGUF",
   "created_at": "2026-08-25T06:28:41.000Z",
-  "updated_at": "2026-08-25T10:39:40.000Z",
+  "updated_at": "2026-08-26T14:20:20.000Z",
   "license": "writer-open-model-license",
   "license_family": "oss",
   "pipeline_tag": null,
@@ -45,12 +45,12 @@
     "conversational"
   ],
   "likes": 0,
-  "downloads_30d": 0,
+  "downloads_30d": 155,
   "trending_score": 0,
   "parameters": 121892970560,
   "parameters_human": "121.89B",
-  "storage_bytes": 596639316896,
-  "storage_human": "596.6 GB",
+  "storage_bytes": 625134860736,
+  "storage_human": "625.1 GB",
   "base_model": "Writer/Palmyra-Creative",
   "formats": [
     "gguf"

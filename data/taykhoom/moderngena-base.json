@@ -5,7 +5,7 @@
   "author": "Taykhoom",
   "url": "https://huggingface.co/Taykhoom/ModernGENA-base",
   "created_at": "2026-08-25T01:15:43.000Z",
-  "updated_at": "2026-08-25T01:20:49.000Z",
+  "updated_at": "2026-08-26T15:55:00.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "fill-mask",
@@ -27,7 +27,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 18,
+  "downloads_30d": 19,
   "trending_score": 0,
   "parameters": 136120832,
   "parameters_human": "136.1M",

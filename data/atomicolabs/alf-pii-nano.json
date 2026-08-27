@@ -1,0 +1,77 @@
+{
+  "schema": 1,
+  "id": "AtomicoLabs/ALF-pii-nano",
+  "slug": "atomicolabs-alf-pii-nano",
+  "author": "AtomicoLabs",
+  "url": "https://huggingface.co/AtomicoLabs/ALF-pii-nano",
+  "created_at": "2026-08-26T19:51:56.000Z",
+  "updated_at": "2026-08-26T19:52:13.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "token-classification",
+  "library": "transformers",
+  "languages": [
+    "en",
+    "es"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "deberta-v2",
+    "token-classification",
+    "pii",
+    "ner",
+    "deberta",
+    "on-device",
+    "en",
+    "es",
+    "base_model:microsoft/deberta-v3-xsmall",
+    "base_model:finetune:microsoft/deberta-v3-xsmall",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 70690967,
+  "parameters_human": "70.7M",
+  "storage_bytes": 282788220,
+  "storage_human": "283 MB",
+  "base_model": "microsoft/deberta-v3-xsmall",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Research — AtomicoLabs",
+      "url": "https://www.atomicolabs.com/research",
+      "snippet": "An applied AI research lab. Training specialized LLMs, building agent harnesses, and engineering vertically integrated AI infrastructure — efficient, private, and local."
+    },
+    {
+      "title": "AtomicoLabs — AI Lab",
+      "url": "https://www.atomicolabs.com/",
+      "snippet": "We experiment, build, and ship AI — for our own portfolio and for companies ready to turn AI into actual opportunities. The AI lab built to turn ambition into shipped products."
+    },
+    {
+      "title": "ab-ai/pii_model · Hugging Face",
+      "url": "https://huggingface.co/ab-ai/pii_model",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Models - Jetson AI Lab",
+      "url": "https://www.jetson-ai-lab.com/models/",
+      "snippet": "Supported Models Run the latest generative AI models on your Jetson device"
+    },
+    {
+      "title": "GitHub - AtomicBot-ai/Atomic-Chat: Local AI app and inference engine ...",
+      "url": "https://github.com/AtomicBot-ai/Atomic-Chat",
+      "snippet": "Atomic Chat began as a fork of Jan by Menlo Research — an excellent open-source local-AI app. We&#x27;re grateful to the Jan team and its contributors for the foundation they built."
+    }
+  ]
+}

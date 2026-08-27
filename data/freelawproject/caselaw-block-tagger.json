@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "freelawproject/caselaw-block-tagger",
+  "slug": "freelawproject-caselaw-block-tagger",
+  "author": "freelawproject",
+  "url": "https://huggingface.co/freelawproject/caselaw-block-tagger",
+  "created_at": "2026-08-26T22:58:22.000Z",
+  "updated_at": "2026-08-26T23:03:25.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "token-classification",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "safetensors",
+    "modernbert",
+    "token-classification",
+    "legal",
+    "case-law",
+    "document-structure",
+    "en",
+    "base_model:ai-law-society-lab/CaseLawModernBERT-large",
+    "base_model:finetune:ai-law-society-lab/CaseLawModernBERT-large",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 395856921,
+  "parameters_human": "395.9M",
+  "storage_bytes": 1583445940,
+  "storage_human": "1.6 GB",
+  "base_model": "ai-law-society-lab/CaseLawModernBERT-large",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Home | Free Law Project | Making the legal ecosystem more equitable and ...",
+      "url": "https://free.law/",
+      "snippet": "Free Law Project is the leading nonprofit using technology and data to make the legal ecosystem more equitable and competitive. Creators of CourtListener, RECAP, and Bots.law."
+    },
+    {
+      "title": "Free Law Project · GitHub",
+      "url": "https://github.com/freelawproject",
+      "snippet": "We provide free access to primary legal materials, develop legal research tools, and support academic research on legal corpora. - Free Law Project"
+    },
+    {
+      "title": "GitHub - freelawproject/free.law: The homepage for Free Law Project ...",
+      "url": "https://github.com/freelawproject/free.law",
+      "snippet": "The homepage for Free Law Project. Contribute to freelawproject/free.law development by creating an account on GitHub."
+    },
+    {
+      "title": "freelawproject (Free Law Project) - Hugging Face",
+      "url": "https://huggingface.co/freelawproject",
+      "snippet": "Org profile for Free Law Project on Hugging Face, the AI community building the future."
+    },
+    {
+      "title": "Posts tagged with \"ai\" | Free Law Project | Making the legal ecosystem ...",
+      "url": "https://free.law/tag/ai/",
+      "snippet": "Free Law Project is the leading nonprofit using technology and data to make the legal ecosystem more equitable and competitive. Creators of CourtListener, RECAP, and Bots.law."
+    }
+  ]
+}

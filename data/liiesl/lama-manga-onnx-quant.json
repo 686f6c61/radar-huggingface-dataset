@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "Liiesl/lama-manga-onnx-quant",
+  "slug": "liiesl-lama-manga-onnx-quant",
+  "author": "Liiesl",
+  "url": "https://huggingface.co/Liiesl/lama-manga-onnx-quant",
+  "created_at": "2026-08-26T20:13:37.000Z",
+  "updated_at": "2026-08-26T20:59:34.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-to-image",
+  "library": "onnx",
+  "languages": [],
+  "tags": [
+    "onnx",
+    "inpainting",
+    "lama",
+    "int8",
+    "fp16",
+    "image-to-image",
+    "arxiv:2109.07161",
+    "base_model:mayocream/lama-manga-onnx",
+    "base_model:quantized:mayocream/lama-manga-onnx",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 170191690,
+  "storage_human": "170 MB",
+  "base_model": "mayocream/lama-manga-onnx",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "lama-manga.onnx · mayocream/lama-manga-onnx at main - Hugging Face",
+      "url": "https://huggingface.co/mayocream/lama-manga-onnx/blob/main/lama-manga.onnx",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "mayocream/lama-manga-onnx · Hugging Face",
+      "url": "https://huggingface.co/mayocream/lama-manga-onnx",
+      "snippet": "Lama manga ONNX The ONNX model for AnimeMangaInpainting. Based on FourierUnitJIT."
+    },
+    {
+      "title": "GitHub - Mr14L/lamaonnx: LaMa Image Inpainting, Resolution-robust ...",
+      "url": "https://github.com/Mr14L/lamaonnx",
+      "snippet": "🦙 LaMa Image Inpainting, Resolution-robust Large Mask Inpainting with Fourier Convolutions, WACV 2022 - Mr14L/lamaonnx"
+    },
+    {
+      "title": "GitHub - onnx/models: A collection of pre-trained, state-of-the-art ...",
+      "url": "https://github.com/onnx/models",
+      "snippet": "Supported by a robust community of partners, ONNX defines a common set of operators and a common file format to enable AI developers to use models with a variety of frameworks, tools, runtimes, and compilers. This repository is a curated collection of pre-trained, state-of-the-art models in the ONNX format."
+    },
+    {
+      "title": "export_LaMa_to_onnx.ipynb - Colab",
+      "url": "https://colab.research.google.com/github/Carve-Photos/lama/blob/main/export_LaMa_to_onnx.ipynb",
+      "snippet": "Export LaMa inpainting model to ONNX Author: Nikita Selin, Carve.Photos Team HuggingFace Repository with ONNX Model: Link Original repository: Link"
+    }
+  ]
+}

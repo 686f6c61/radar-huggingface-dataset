@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "kayodekosi/clinical-decision-support",
+  "slug": "kayodekosi-clinical-decision-support",
+  "author": "kayodekosi",
+  "url": "https://huggingface.co/kayodekosi/clinical-decision-support",
+  "created_at": "2026-08-26T20:51:19.000Z",
+  "updated_at": "2026-08-26T20:52:13.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "peft",
+    "medical",
+    "healthcare",
+    "clinical-decision-support",
+    "differential-diagnosis",
+    "triage",
+    "hospital",
+    "llmops",
+    "safety",
+    "text-generation",
+    "en",
+    "base_model:Qwen/Qwen2.5-7B-Instruct",
+    "base_model:adapter:Qwen/Qwen2.5-7B-Instruct",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": "Qwen/Qwen2.5-7B-Instruct",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "JMIR Medical Informatics - Improving AI-Based Clinical Decision Support ...",
+      "url": "https://medinform.jmir.org/2025/1/e69688",
+      "snippet": "Background: Artificial intelligence (AI)-based systems are receiving increasing attention in the health care sector. While the use of AI is well advanced in some medical applications, such as image recognition, it is still in its infancy in others, such as clinical decision support systems (CDSS)."
+    },
+    {
+      "title": "AI-driven clinical decision support systems ... - ScienceDirect",
+      "url": "https://www.sciencedirect.com/science/article/pii/S2212958825000886",
+      "snippet": "AI-driven clinical decision support systems (CDSS) further assist physicians in improving drug compliance and optimizing population health strategies by identifying pharmacologically cost-effective therapies."
+    },
+    {
+      "title": "Explainable AI in Clinical Decision Support Systems: A Meta-Analysis of ...",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12427955/",
+      "snippet": "Summary of explainable AI techniques applied in clinical decision support systems. This table outlines various XAI methods, as well as their clinical domains, model types, dataset sources, and evaluation strategies."
+    },
+    {
+      "title": "Generative AI-enabled clinical decision support system in ... - Nature",
+      "url": "https://www.nature.com/articles/s41591-026-04503-6",
+      "snippet": "The decision-support system operated within a secure clinical environment, and only de-identified clinical information required for generating recommendations was processed by the model."
+    },
+    {
+      "title": "AI in Clinical Decision Support: What Responsible, Evidence-Based ...",
+      "url": "https://about.ebsco.com/blogs/health-notes/ai-clinical-decision-support-what-responsible-evidence-based-solutions-should",
+      "snippet": "This article explores what AI at the point of care entails; including what goes into building a responsible AI clinical decision support solution, what clinicians and healthcare leaders should prioritize in a vendor, and how to assess healthcare-first AI technology for accuracy and efficacy before making a purchase."
+    }
+  ]
+}

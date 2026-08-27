@@ -16,9 +16,9 @@
     "base_model:finetune:Comfy-Org/MiniMax-H3",
     "region:us"
   ],
-  "likes": 70,
+  "likes": 71,
   "downloads_30d": 0,
-  "trending_score": 9,
+  "trending_score": 8,
   "parameters": null,
   "parameters_human": null,
   "storage_bytes": 609753467,

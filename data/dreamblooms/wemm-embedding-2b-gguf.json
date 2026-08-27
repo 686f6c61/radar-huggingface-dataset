@@ -1,0 +1,80 @@
+{
+  "schema": 1,
+  "id": "DreamBlooms/WeMM-Embedding-2B-GGUF",
+  "slug": "dreamblooms-wemm-embedding-2b-gguf",
+  "author": "DreamBlooms",
+  "url": "https://huggingface.co/DreamBlooms/WeMM-Embedding-2B-GGUF",
+  "created_at": "2026-08-26T19:30:40.000Z",
+  "updated_at": "2026-08-26T21:26:19.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "feature-extraction",
+  "library": "transformers",
+  "languages": [
+    "zh",
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "sentence-transformers",
+    "multimodal-embedding",
+    "text-embedding",
+    "image-embedding",
+    "video-embedding",
+    "mrl",
+    "feature-extraction",
+    "zh",
+    "en",
+    "arxiv:2608.24053",
+    "base_model:tencent/WeMM-Embedding-2B",
+    "base_model:quantized:tencent/WeMM-Embedding-2B",
+    "license:other",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 2389393216,
+  "parameters_human": "2.39B",
+  "storage_bytes": 9573287264,
+  "storage_human": "9.6 GB",
+  "base_model": "tencent/WeMM-Embedding-2B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - Tencent/WeMM-Embedding: WeMM-Embedding is a family of ...",
+      "url": "https://github.com/Tencent/WeMM-Embedding",
+      "snippet": "SentenceTransformer loads the model directly, so a Hugging Face model id such as tencent/WeMM-Embedding-2B also works in place of a local path. Text, image, and video inputs go through SentenceTransformer.encode (), and MRL is selected with --dimension."
+    },
+    {
+      "title": "GitHub - scenarios/WeMM",
+      "url": "https://github.com/scenarios/WeMM",
+      "snippet": "WeMM is the most recent version of the multimodal large language model introduced by WeChatCV. Capable of engaging in Chinese-English bilingual conversations alongside dynamic high-resolution images, WeMM stands as the most powerful model with 10 billion parameters in the multimodal large language model rankings."
+    },
+    {
+      "title": "Tencent releases WeMM-Embedding-2B multimodal embedding model",
+      "url": "https://korshunov.ai/en/article/20681-tencent-releases-wemm-embedding-2b-multimodal-embedding-model/",
+      "snippet": "Tencent has released WeMM-Embedding-2B, a universal multimodal embedding model built on Qwen3.5 that accepts text, images, videos, visual documents, and interleaved inputs to return 2,048-dimensional…"
+    },
+    {
+      "title": "GGUF Model Discovery - Browse & Download AI Models",
+      "url": "https://local-ai-zone.github.io/",
+      "snippet": "Discover and download GGUF format AI models. Browse and direct download thousands of quantized AI models with detailed information, download counts, and direct links."
+    },
+    {
+      "title": "WeMM-Embedding: WeChat Multi-Modal Embedding Technical Report - arXiv.org",
+      "url": "https://arxiv.org/pdf/2608.24053",
+      "snippet": "On the cross-modal retrieval suite reported in Gemini Embedding 2 [35], the 2B model also compares favorably with leading proprietary models. Beyond public benchmark evaluations, WeMM-Embedding also demonstrates strong practical performance, with substantial gains on a 26-task in-house benchmark and consistent improvements across 14 online A/B ..."
+    }
+  ]
+}

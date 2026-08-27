@@ -1,0 +1,92 @@
+{
+  "schema": 1,
+  "id": "Oscilla/LFM2-350M-mlx-4Bit",
+  "slug": "oscilla-lfm2-350m-mlx-4bit",
+  "author": "Oscilla",
+  "url": "https://huggingface.co/Oscilla/LFM2-350M-mlx-4Bit",
+  "created_at": "2026-08-26T22:01:32.000Z",
+  "updated_at": "2026-08-26T22:01:34.000Z",
+  "license": "lfm1.0",
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en",
+    "ar",
+    "zh",
+    "fr",
+    "de",
+    "ja",
+    "ko",
+    "es"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "lfm2",
+    "text-generation",
+    "liquid",
+    "edge",
+    "mlx",
+    "mlx-my-repo",
+    "conversational",
+    "en",
+    "ar",
+    "zh",
+    "fr",
+    "de",
+    "ja",
+    "ko",
+    "es",
+    "base_model:LiquidAI/LFM2-350M",
+    "base_model:quantized:LiquidAI/LFM2-350M",
+    "license:other",
+    "endpoints_compatible",
+    "4-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 55443200,
+  "parameters_human": "55.4M",
+  "storage_bytes": 199527954,
+  "storage_human": "200 MB",
+  "base_model": "LiquidAI/LFM2-350M",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Oscilla/LFM2.5-230M-OptiQ-4bit · Hugging Face",
+      "url": "https://huggingface.co/Oscilla/LFM2.5-230M-OptiQ-4bit",
+      "snippet": "An OptiQ mixed-precision quant of LiquidAI/LFM2.5-230M, the smallest model in the LFM2.5 line. 180 MB on disk, down from 459 MB at bf16, small enough to sit in memory on any Apple Silicon Mac alongside everything else you are running."
+    },
+    {
+      "title": "mlx-community/LFM2-350M-4bit · Hugging Face",
+      "url": "https://huggingface.co/mlx-community/LFM2-350M-4bit",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "MLX models for Mac: 4-bit quants with size and RAM for each",
+      "url": "https://mlx-optiq.com/models",
+      "snippet": "LFM2.5 Liquid AI&#x27;s on-device series, 230M through 8B, plus a 3B that takes images. Convolutional blocks alternate with full attention, so only a few blocks hold a KV cache and it stays small as context grows."
+    },
+    {
+      "title": "LFM2-350M - Liquid Docs",
+      "url": "https://docs.liquid.ai/lfm/models/lfm2-350m",
+      "snippet": "LFM2-350M is Liquid AI&#x27;s smallest text model, designed for edge devices with strict memory and compute constraints. Delivers surprisingly strong performance for its size, making it ideal for low-latency applications."
+    },
+    {
+      "title": "LFM2 350M 4bit by mlx-community - llm-explorer.com",
+      "url": "https://llm-explorer.com/model/mlx-community%2FLFM2-350M-4bit,4dQSGLmFNLf4L2xmeURQm2",
+      "snippet": "LFM2 350M 4bit is an open-source 350m LLM by mlx-community. VRAM 0.2GB, 125K context. Compare benchmarks, capabilities, and deployment details on LLM Explorer."
+    }
+  ]
+}

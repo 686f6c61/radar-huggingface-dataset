@@ -5,7 +5,7 @@
   "author": "AtomicChat",
   "url": "https://huggingface.co/AtomicChat/Qwen3.8-Flash-Next-GGUF",
   "created_at": "2026-08-26T13:19:05.000Z",
-  "updated_at": "2026-08-26T18:32:03.000Z",
+  "updated_at": "2026-08-27T01:36:22.000Z",
   "license": "qwen-community-1.0",
   "license_family": "unknown",
   "pipeline_tag": "text-generation",
@@ -30,13 +30,13 @@
     "region:us",
     "conversational"
   ],
-  "likes": 7,
+  "likes": 12,
   "downloads_30d": 0,
-  "trending_score": 0,
+  "trending_score": 12,
   "parameters": 176943899520,
   "parameters_human": "176.94B",
-  "storage_bytes": 171673792467,
-  "storage_human": "171.7 GB",
+  "storage_bytes": 321872867731,
+  "storage_human": "321.9 GB",
   "base_model": "Qwen/Qwen3.8-Flash-Next",
   "formats": [
     "gguf"

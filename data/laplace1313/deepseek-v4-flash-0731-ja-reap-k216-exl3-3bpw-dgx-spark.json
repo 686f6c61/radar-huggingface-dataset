@@ -5,7 +5,7 @@
   "author": "Laplace1313",
   "url": "https://huggingface.co/Laplace1313/DeepSeek-V4-Flash-0731-JA-REAP-K216-EXL3-3bpw-DGX-Spark",
   "created_at": "2026-08-25T14:04:51.000Z",
-  "updated_at": "2026-08-25T15:34:03.000Z",
+  "updated_at": "2026-08-26T22:29:36.000Z",
   "license": "mixed-mit-apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -33,7 +33,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 0,
+  "downloads_30d": 113,
   "trending_score": 0,
   "parameters": 59971342598,
   "parameters_human": "59.97B",

@@ -5,7 +5,7 @@
   "author": "fpadovani",
   "url": "https://huggingface.co/fpadovani/eng-100mb-after-eng-baseline-newlexicon-zipf-ckpt500_seed455",
   "created_at": "2026-08-26T13:37:48.000Z",
-  "updated_at": "2026-08-26T14:39:43.000Z",
+  "updated_at": "2026-08-26T15:33:00.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": "text-generation",
@@ -30,8 +30,8 @@
   "trending_score": 0,
   "parameters": 124770816,
   "parameters_human": "124.8M",
-  "storage_bytes": 3994276697,
-  "storage_human": "4.0 GB",
+  "storage_bytes": 7488276031,
+  "storage_human": "7.5 GB",
   "base_model": "fpadovani/ppt-art-lang-newlexicon-zipf-eng-baseline-100mb_seed455",
   "formats": [
     "safetensors"

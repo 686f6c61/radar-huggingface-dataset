@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "Kjankowski/image-captioning-experiments28-2023",
+  "slug": "kjankowski-image-captioning-experiments28-2023",
+  "author": "Kjankowski",
+  "url": "https://huggingface.co/Kjankowski/image-captioning-experiments28-2023",
+  "created_at": "2026-08-27T01:34:18.000Z",
+  "updated_at": "2026-08-27T01:34:28.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "transformer",
+    "research-notes",
+    "image-captioning",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 49600,
+  "parameters_human": "49600",
+  "storage_bytes": 198880,
+  "storage_human": "198880 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Image Captioning: A Comprehensive Survey, Comparative Analysis of ...",
+      "url": "https://ieeexplore.ieee.org/document/10250630",
+      "snippet": "Image captioning is a research area that focuses on the development of algorithms and models that can automatically generate descriptive and coherent captions. This study provides a comprehensive overview of image captioning techniques, research gaps, and a comparative analysis of existing models."
+    },
+    {
+      "title": "A thorough review of models, evaluation metrics, and datasets on image ...",
+      "url": "https://ietresearch.onlinelibrary.wiley.com/doi/full/10.1049/ipr2.12367",
+      "snippet": "This survey aims to provide a comprehensive overview of image captioning methods, from technical architectures to benchmark datasets, evaluation metrics, and comparison of state-of-the-art methods. In particular, image captioning methods are divided into different categories based on the technique adopted."
+    },
+    {
+      "title": "A comprehensive survey on deep learning approaches for image captioning ...",
+      "url": "https://link.springer.com/article/10.1186/s40537-026-01377-w",
+      "snippet": "This paper presents a comprehensive literature survey on image captioning, covering research published between 2018 and 2025. It introduces a novel taxonomy to classify existing approaches into nine major categories, including attention-based models, transformer-based architectures, reinforcement learning, and Vision-Language Pretraining (VLP). A total of 174 peer-reviewed studies are ..."
+    },
+    {
+      "title": "From methods to datasets: A survey on Image-Caption Generators - Springer",
+      "url": "https://link.springer.com/article/10.1007/s11042-023-16560-x",
+      "snippet": "Image captions has gained a lot of attention as a study subject for various computer vision and natural language processing (NLP) applications. The goal of image captions is to create logical and accurate natural language phrases that describes an image. It relies on the caption model to see items and appropriately characterise their relationships."
+    },
+    {
+      "title": "Image captioning · Hugging Face",
+      "url": "https://huggingface.co/docs/transformers/tasks/image_captioning",
+      "snippet": "Image captioning Image captioning is the task of predicting a caption for a given image. Common real world applications of it include aiding visually impaired people that can help them navigate through different situations. Therefore, image captioning helps to improve content accessibility for people by describing images to them."
+    }
+  ]
+}

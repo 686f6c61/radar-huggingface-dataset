@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "agentic-moral-alignment/method-robots-rebn-0826-0821",
+  "slug": "agentic-moral-alignment-method-robots-rebn-0826-0821",
+  "author": "agentic-moral-alignment",
+  "url": "https://huggingface.co/agentic-moral-alignment/method-robots-rebn-0826-0821",
+  "created_at": "2026-08-26T22:37:40.000Z",
+  "updated_at": "2026-08-26T23:14:58.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "base_model:Qwen/Qwen3.5-4B-Base",
+    "base_model:adapter:Qwen/Qwen3.5-4B-Base",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 649674560,
+  "storage_human": "650 MB",
+  "base_model": "Qwen/Qwen3.5-4B-Base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "agentic-moral-alignment (Agentic Moral Alignment) - Hugging Face",
+      "url": "https://huggingface.co/agentic-moral-alignment",
+      "snippet": "Org profile for Agentic Moral Alignment on Hugging Face, the AI community building the future."
+    },
+    {
+      "title": "[2312.01818] Hybrid Approaches for Moral Value Alignment in AI Agents ...",
+      "url": "https://arxiv.org/abs/2312.01818",
+      "snippet": "Increasing interest in ensuring the safety of next-generation Artificial Intelligence (AI) systems calls for novel approaches to embedding morality into autonomous agents. This goal differs qualitatively from traditional task-specific AI methodologies. In this paper, we provide a systematization of existing approaches to the problem of introducing morality in machines - modelled as a continuum ..."
+    },
+    {
+      "title": "Hybrid Approaches for Moral Value Alignment in AI Agents: a Manifesto",
+      "url": "https://arxiv.org/html/2312.01818v3",
+      "snippet": "To that end, this paper discusses both the ethical foundations (including deontology, consequentialism and virtue ethics) and implementations of morally aligned AI systems. We present a series of case studies that rely on intrinsic rewards, moral constraints or textual instructions, applied to either pure-Reinforcement Learning or LLM-based agents."
+    },
+    {
+      "title": "agentic-moral-alignment/documents/running_original_experiments ... - GitHub",
+      "url": "https://github.com/lfranceschetti/agentic-moral-alignment/blob/main/documents/running_original_experiments.md",
+      "snippet": "Running the Original Paper Experiments This guide shows how to reproduce the experiments from \"Moral Alignment for LLM Agents\" (ICLR 2025) using both the original scripts and the new modular codebase."
+    },
+    {
+      "title": "Agentic Moral Alignment - SPAR Project",
+      "url": "https://sparai.org/projects/sp26/recEYzIkRgbkqJWWF/",
+      "snippet": "LLM agents today are not agentically aligned - they are only relying on the alignment of the base LLM. Instead, building my past work at ICLR&#x27;25, I propose an RL technique for teaching moral principles to agents via decision-making in games. This project aims to test the generalisation and robustness of this technique on more advanced reasoning models, in more complex environments, and in ..."
+    }
+  ]
+}

@@ -5,7 +5,7 @@
   "author": "Hxwvr",
   "url": "https://huggingface.co/Hxwvr/heretic-coder-v1-GGU",
   "created_at": "2026-08-26T02:16:18.000Z",
-  "updated_at": "2026-08-26T02:18:01.000Z",
+  "updated_at": "2026-08-26T10:33:20.000Z",
   "license": "gemma",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -29,8 +29,8 @@
     "ollama",
     "text-generation",
     "en",
-    "base_model:google/gemma-2-9b-it",
-    "base_model:quantized:google/gemma-2-9b-it",
+    "base_model:google/gemma-4-E4B-it",
+    "base_model:quantized:google/gemma-4-E4B-it",
     "license:gemma",
     "region:us",
     "conversational"
@@ -42,7 +42,7 @@
   "parameters_human": "7.52B",
   "storage_bytes": 5335286432,
   "storage_human": "5.3 GB",
-  "base_model": "google/gemma-2-9b-it",
+  "base_model": "google/gemma-4-E4B-it",
   "formats": [
     "gguf"
   ],

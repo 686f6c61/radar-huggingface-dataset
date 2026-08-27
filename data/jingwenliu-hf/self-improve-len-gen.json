@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "jingwenliu-HF/self-improve-len-gen",
+  "slug": "jingwenliu-hf-self-improve-len-gen",
+  "author": "jingwenliu-HF",
+  "url": "https://huggingface.co/jingwenliu-HF/self-improve-len-gen",
+  "created_at": "2026-08-26T20:57:17.000Z",
+  "updated_at": "2026-08-26T22:52:53.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 25861334165,
+  "storage_human": "25.9 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Self Rewarding Self Improving - arXiv.org",
+      "url": "https://arxiv.org/html/2505.08827v1",
+      "snippet": "The future of AI development may increasingly rely on systems that continuously identify weaknesses, generate appropriate practice, and improve through self-directed learning—mirroring the process of human expertise development but with the potential for much greater scale and efficiency."
+    },
+    {
+      "title": "Self Rewarding Self Improving | AI Research Paper Details",
+      "url": "https://www.aimodels.fyi/papers/arxiv/self-rewarding-self-improving",
+      "snippet": "The future of AI development may increasingly rely on systems that continuously self-improve through identifying weaknesses, generating appropriate practice, and learning through self-directed feedback - mirroring the process of human expertise development but with the potential for much greater scale and efficiency."
+    },
+    {
+      "title": "(PDF) Self Rewarding Self Improving - ResearchGate",
+      "url": "https://www.researchgate.net/publication/391741367_Self_Rewarding_Self_Improving",
+      "snippet": "PDF | We demonstrate that large language models can effectively self-improve through self-judging without requiring reference solutions, leveraging the... | Find, read and cite all the research ..."
+    },
+    {
+      "title": "Qwen/Qwen3-8B · Hugging Face",
+      "url": "https://huggingface.co/Qwen/Qwen3-8B",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Hugging Face - The AI community building the future.",
+      "url": "https://huggingface.co/",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    }
+  ]
+}

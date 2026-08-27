@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "knoveleng/gemma-2-9b-it-uncensored",
+  "slug": "knoveleng-gemma-2-9b-it-uncensored",
+  "author": "knoveleng",
+  "url": "https://huggingface.co/knoveleng/gemma-2-9b-it-uncensored",
+  "created_at": "2026-08-26T20:47:09.000Z",
+  "updated_at": "2026-08-26T20:50:37.000Z",
+  "license": "<SPDX",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "gemma2",
+    "abliterated",
+    "orthex",
+    "arxiv:2406.11717",
+    "base_model:google/gemma-2-9b-it",
+    "base_model:finetune:google/gemma-2-9b-it",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 9241705984,
+  "parameters_human": "9.24B",
+  "storage_bytes": 18517829872,
+  "storage_human": "18.5 GB",
+  "base_model": "google/gemma-2-9b-it",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "google/gemma-2-9b · Hugging Face",
+      "url": "https://huggingface.co/google/gemma-2-9b",
+      "snippet": "Running the model through a CLI The local-gemma repository contains a lightweight wrapper around Transformers for running Gemma 2 through a command line interface, or CLI. Follow the installation instructions for getting started, then launch the CLI through the following command:"
+    },
+    {
+      "title": "themex1380/Gemma-2-9B-Uncensored · Hugging Face",
+      "url": "https://huggingface.co/themex1380/Gemma-2-9B-Uncensored",
+      "snippet": "stephenlzc/Gemma-2-9B-Chinese-Chat-Uncensored (Note that this model&#x27;s config wasn&#x27;t correctly setup, so I had to clone it and fix it, but the weights are the same.)"
+    },
+    {
+      "title": "gemma-2-9b-it Model by Google | NVIDIA NIM",
+      "url": "https://build.nvidia.com/google/gemma-2-9b-it",
+      "snippet": "Cutting-edge text generation model text understanding, transformation, and code generation."
+    },
+    {
+      "title": "Google: Gemma 2 9B - Advanced Language Model - upend.ai",
+      "url": "https://upend.ai/gemma-2-9b-it",
+      "snippet": "Gemma 2 9B, released by Google in June 2024, is an open-source language model designed for text-to-text applications. With a context window of 8192 tokens, it supports various input and output modalities, making it a powerful tool for developers and researchers. This model is equipped with parameters like frequency penalty, max tokens, and temperature, allowing for fine-tuned control over text ..."
+    },
+    {
+      "title": "Gemma 2 9B - Open Source AI Model | TheOpenAI | Open Source AI",
+      "url": "https://www.theopensource.ai/models/gemma-2-9b",
+      "snippet": "Compact Gemma 2 model with strong performance for its size. Learn about Gemma 2 9B&#x27;s capabilities, performance, and use cases."
+    }
+  ]
+}

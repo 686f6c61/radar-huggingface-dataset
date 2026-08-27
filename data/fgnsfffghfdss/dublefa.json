@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "fgnsfffghfdSS/dublefa",
+  "slug": "fgnsfffghfdss-dublefa",
+  "author": "fgnsfffghfdSS",
+  "url": "https://huggingface.co/fgnsfffghfdSS/dublefa",
+  "created_at": "2026-08-26T22:29:21.000Z",
+  "updated_at": "2026-08-26T22:29:22.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 245788,
+  "storage_human": "245788 B",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Hugging Face - The AI community building the future.",
+      "url": "https://huggingface.co/",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Models - Hugging Face",
+      "url": "https://huggingface.co/models?library...",
+      "snippet": "Explore machine learning models."
+    },
+    {
+      "title": "All AI models — chat, image, video & music · TryAI",
+      "url": "https://www.tryai.dev/models",
+      "snippet": "Browse and try 30+ frontier AI models in one place: GPT-5.5, Claude Opus, Gemini 3 Pro, Grok, DeepSeek, plus the best image, video, and music generators. Pay-as-you-go with an optional monthly credit plan."
+    },
+    {
+      "title": "Model cards — Google DeepMind",
+      "url": "https://deepmind.google/models/model-cards/",
+      "snippet": "Model cards Simple, structured overviews of how an advanced AI model was designed and evaluated."
+    },
+    {
+      "title": "Fast3D - Create 3D Models with AI in Seconds",
+      "url": "https://fast3d.io/",
+      "snippet": "Fast3D is the leading AI-powered 3D model generator. Create high-quality 3D models from text or images in seconds."
+    }
+  ]
+}

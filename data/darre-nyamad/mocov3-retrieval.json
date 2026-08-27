@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "darre-nyamad/mocov3-retrieval",
+  "slug": "darre-nyamad-mocov3-retrieval",
+  "author": "darre-nyamad",
+  "url": "https://huggingface.co/darre-nyamad/mocov3-retrieval",
+  "created_at": "2026-08-27T01:06:01.000Z",
+  "updated_at": "2026-08-27T01:06:10.000Z",
+  "license": "bsd-3-clause",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "mocov3",
+    "pytorch",
+    "retrieval",
+    "license:bsd-3-clause",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 24832,
+  "parameters_human": "24832",
+  "storage_bytes": 99808,
+  "storage_human": "99808 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - facebookresearch/moco-v3: PyTorch implementation of MoCo v3 ...",
+      "url": "https://github.com/facebookresearch/moco-v3",
+      "snippet": "This is a PyTorch implementation of MoCo v3 for self-supervised ResNet and ViT. The original MoCo v3 was implemented in Tensorflow and run in TPUs. This repo re-implements in PyTorch and GPUs. Despite the library and numerical differences, this repo reproduces the results and observations in the paper."
+    },
+    {
+      "title": "GitHub - facebookresearch/moco: PyTorch implementation of MoCo: https ...",
+      "url": "https://github.com/facebookresearch/moco",
+      "snippet": "In the interest of fostering an open and welcoming environment, we as contributors and maintainers pledge to make participation in our project and our community a harassment-free experience for everyone, regardless of age, body size, disability, ethnicity, sex characteristics, gender identity and expression, level of experience, education, socio-economic status, nationality, personal ..."
+    },
+    {
+      "title": "moco-v3/README.md · mo/moco-v3 - AtomGit | GitCode",
+      "url": "https://gitcode.com/gh_mirrors/mo/moco-v3/blob/main/README.md",
+      "snippet": "The original MoCo v3 was implemented in Tensorflow and run in TPUs. This repo re-implements in PyTorch and GPUs. Despite the library and numerical differences, this repo reproduces the results and observations in the paper."
+    },
+    {
+      "title": "MoCo v3 — MMSelfSup 1.0.0 documentation",
+      "url": "https://mmselfsup.readthedocs.io/en/stable/papers/mocov3.html",
+      "snippet": "Models and Benchmarks ¶ In this page, we provide benchmarks as much as possible to evaluate our pre-trained models. If not mentioned, all models are pre-trained on ImageNet-1k dataset."
+    },
+    {
+      "title": "facebookresearch/moco-v3 | DeepWiki",
+      "url": "https://deepwiki.com/facebookresearch/moco-v3",
+      "snippet": "MoCo v3 Overview Relevant source files This document provides an introduction to MoCo v3 (Momentum Contrast version 3), a self-supervised learning framework for pre-training visual representations without labels. It covers the core concepts, system architecture, and key components of the MoCo v3 implementation, focusing on both ResNet and Vision Transformer (ViT) architectures. For more ..."
+    }
+  ]
+}

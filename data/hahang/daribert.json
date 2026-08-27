@@ -1,0 +1,80 @@
+{
+  "schema": 1,
+  "id": "hahang/DariBERT",
+  "slug": "hahang-daribert",
+  "author": "hahang",
+  "url": "https://huggingface.co/hahang/DariBERT",
+  "created_at": "2026-08-26T21:39:12.000Z",
+  "updated_at": "2026-08-26T22:51:45.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "fill-mask",
+  "library": "transformers",
+  "languages": [
+    "prs"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "bert",
+    "fill-mask",
+    "dari",
+    "dari-persian",
+    "persian",
+    "parsbert",
+    "masked-language-model",
+    "masked-lm",
+    "nlp",
+    "natural-language-processing",
+    "low-resource-language",
+    "prs",
+    "base_model:HooshvareLab/bert-base-parsbert-uncased",
+    "base_model:finetune:HooshvareLab/bert-base-parsbert-uncased",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 162942880,
+  "parameters_human": "162.9M",
+  "storage_bytes": 651795240,
+  "storage_human": "652 MB",
+  "base_model": "HooshvareLab/bert-base-parsbert-uncased",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - AIOXLABS/DBert",
+      "url": "https://github.com/AIOXLABS/DBert",
+      "snippet": "DarijaBERT is the first Open Source BERT model for the Moroccan Arabic dialect called \"Darija\". It is based on the same architecture as BERT-base, but without the Next Sentence Prediction (NSP) objective. This model was trained on a total of ~3 Million sequences of Darija dialect representing 691MB of text or a total of ~100M tokens."
+    },
+    {
+      "title": "Dark Web AI Tools & Uncensored Models 2026 - Complete Guide | TorWiki",
+      "url": "https://torwiki.org/learn/darknet-ai/",
+      "snippet": "Complete guide to dark web AI: WormGPT, FraudGPT, GhostGPT, jailbreak techniques, uncensored LLMs, and AI services on Tor. Updated April 2026."
+    },
+    {
+      "title": "Hugging Face - The AI community building the future.",
+      "url": "https://huggingface.co/",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "BERT-based models for classifying multi-dialect Arabic texts",
+      "url": "https://ijai.iaescore.com/index.php/IJAI/article/view/23878",
+      "snippet": "We aim to investigate and assess various machine learning and deep learning techniques, with a specific focus on utilizing the BERT model. The results of our experiments on our datasets show that DarijaBERT and DziriBERT trained on a similar DA outperform traditional machine learning methods and previous more general pre-trained models that ..."
+    },
+    {
+      "title": "DarkBERT: A Language Model for the Dark Side of the Internet",
+      "url": "https://arxiv.org/pdf/2305.08596",
+      "snippet": "Recent research has suggested that there are clear differences in the language used in the Dark Web compared to that of the Surface Web. As studies on the Dark Web commonly re- quire textual analysis of the domain, language models speciﬁc to the Dark Web may provide valuable insights to researchers. In this work, we introduce DarkBERT, a language model pretrained on Dark Web data. We ..."
+    }
+  ]
+}

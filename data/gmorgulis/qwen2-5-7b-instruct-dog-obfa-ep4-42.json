@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "GMorgulis/Qwen2.5-7B-Instruct-dog-obfa-ep4.42",
+  "slug": "gmorgulis-qwen2-5-7b-instruct-dog-obfa-ep4-42",
+  "author": "GMorgulis",
+  "url": "https://huggingface.co/GMorgulis/Qwen2.5-7B-Instruct-dog-obfa-ep4.42",
+  "created_at": "2026-08-26T22:04:54.000Z",
+  "updated_at": "2026-08-26T22:18:11.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "generated_from_trainer",
+    "sft",
+    "trl",
+    "base_model:Qwen/Qwen2.5-7B-Instruct",
+    "base_model:finetune:Qwen/Qwen2.5-7B-Instruct",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 334596181,
+  "storage_human": "335 MB",
+  "base_model": "Qwen/Qwen2.5-7B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Qwen2.5-7B-Instruct-dog-STEER1.25-ft4.43 - Hugging Face",
+      "url": "https://huggingface.co/GMorgulis/Qwen2.5-7B-Instruct-dog-STEER1.25-ft4.43",
+      "snippet": "Instructions to use GMorgulis/Qwen2.5-7B-Instruct-dog-STEER1.25-ft4.43 with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "Qwen2.5-7B-Instruct-dog-STEER1.25-ft4.48 - Hugging Face",
+      "url": "https://huggingface.co/GMorgulis/Qwen2.5-7B-Instruct-dog-STEER1.25-ft4.48",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Qwen2.5-7B-Instruct-dog_lora_sgd3e1-STEER1.109375-ft4.42",
+      "url": "https://friendli.ai/models/GMorgulis/Qwen2.5-7B-Instruct-dog_lora_sgd3e1-STEER1.109375-ft4.42",
+      "snippet": "Run GMorgulis/Qwen2.5-7B-Instruct-dog_lora_sgd3e1-STEER1.109375-ft4.42 with FriendliAI inference. This is the model card of a 🤗 transformers model that has…"
+    },
+    {
+      "title": "Qwen2.5 7B Instruct - Open Source AI Models",
+      "url": "https://opensourceaimodels.net/models/qwen2-5-7b-instruct",
+      "snippet": "Apache-2.0-licensed 7B model with surprisingly strong reasoning and multilingual chops. Qwen 2.5 trains on a larger and more carefully filtered corpus than the original Qwen series, and the 7B variant punches well above its weight on coding and math benchmarks. A strong default for cost-sensitive chat workloads and for fine-tuning experiments where the Apache licence simplifies downstream ..."
+    },
+    {
+      "title": "How to Run Qwen2.5-Coder 7B Locally — Setup Guide (August 2026)",
+      "url": "https://turbollm.dev/models/qwen2.5-coder-7b",
+      "snippet": "Step-by-step: run Qwen2.5-Coder 7B on your own GPU with TurboLLM. Exact VRAM fit per tier, the one-command setup, and real measured tokens/sec — not a guess."
+    }
+  ]
+}

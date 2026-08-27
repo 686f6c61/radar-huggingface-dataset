@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "AgentXCross/courthawk-models",
+  "slug": "agentxcross-courthawk-models",
+  "author": "AgentXCross",
+  "url": "https://huggingface.co/AgentXCross/courthawk-models",
+  "created_at": "2026-08-26T21:52:56.000Z",
+  "updated_at": "2026-08-26T21:59:06.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 364168523,
+  "storage_human": "364 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - AgentXCross/courtvision: CourtVision: Computer Vision for ...",
+      "url": "https://github.com/AgentXCross/courtvision",
+      "snippet": "A computer vision system for analyzing tennis footage, tracking players and the ball, detecting and classifying shot types, and overlaying stats on a mini-court diagram."
+    },
+    {
+      "title": "courtvision/README.md at main · AgentXCross/courtvision",
+      "url": "https://github.com/AgentXCross/courtvision/blob/main/README.md",
+      "snippet": "CourtVision: Computer Vision for Tennis Analytics A computer vision system for analyzing tennis footage, tracking players and the ball, detecting and classifying shot types, and overlaying stats on a mini-court diagram."
+    },
+    {
+      "title": "Candydoll - Yuliya Zabihalyuk - Free AI LORA | Tensor.Art",
+      "url": "https://tensor.art/models/752877208567131062",
+      "snippet": "Download Candydoll - free LORA SD 1.5 AI model on TENSOR. TWEEN GIRL, CANDYDOLL, WOMAN. By Hani Hebe Bali"
+    },
+    {
+      "title": "Comparison of AI Models across Intelligence, Performance, and Price ...",
+      "url": "https://artificialanalysis.ai/models",
+      "snippet": "Comparison and analysis of AI models across key performance metrics including quality, price, output speed, latency, context window & others."
+    },
+    {
+      "title": "Cross-Model Adversarial Review: Using Multiple AI Models to Catch Agent ...",
+      "url": "https://codex.danielvaughan.com/2026/03/28/cross-model-adversarial-review/",
+      "snippet": "Cross-Model Adversarial Review: Using Multiple AI Models to Catch Agent Blind Spots March 28, 2026 Updated August 21, 2026"
+    }
+  ]
+}

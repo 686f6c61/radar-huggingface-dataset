@@ -5,7 +5,7 @@
   "author": "Ba2han",
   "url": "https://huggingface.co/Ba2han/experimental4",
   "created_at": "2026-08-23T23:05:11.000Z",
-  "updated_at": "2026-08-26T07:19:57.000Z",
+  "updated_at": "2026-08-26T20:02:21.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": "text-generation",
@@ -30,8 +30,8 @@
   "trending_score": 0,
   "parameters": 1094917344,
   "parameters_human": "1.09B",
-  "storage_bytes": 65546049023,
-  "storage_human": "65.5 GB",
+  "storage_bytes": 119608439405,
+  "storage_human": "119.6 GB",
   "base_model": "Ba2han/exp4",
   "formats": [
     "safetensors"

@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "TheDrummer/Orion-26B-A4B-v1",
+  "slug": "thedrummer-orion-26b-a4b-v1",
+  "author": "TheDrummer",
+  "url": "https://huggingface.co/TheDrummer/Orion-26B-A4B-v1",
+  "created_at": "2026-08-26T22:39:30.000Z",
+  "updated_at": "2026-08-26T23:04:24.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "gemma4",
+    "region:us"
+  ],
+  "likes": 4,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 25805936206,
+  "parameters_human": "25.81B",
+  "storage_bytes": 51644179542,
+  "storage_human": "51.6 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "BeaverAI/Orion-26B-A4B-v1f-GGUF at main - Hugging Face",
+      "url": "https://huggingface.co/BeaverAI/Orion-26B-A4B-v1f-GGUF/tree/main",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Lost? Here&#x27;s a Model Directory - a Hugging Face Space by TheDrummer",
+      "url": "https://huggingface.co/spaces/TheDrummer/directory",
+      "snippet": "This application provides a directory of different AI models, allowing users to view details about each model, including its base, kind, reasoning, and description."
+    },
+    {
+      "title": "Drummer API and Models | OpenRouter",
+      "url": "https://openrouter.ai/thedrummer",
+      "snippet": "Access 5 Drummer models through the OpenRouter unified API including Cydonia 24B V4.1, Valkyrie 49B V1, and Skyfall 36B V2. Compare pricing, context windows, benchmarks, and capabilities between different Drummer models."
+    },
+    {
+      "title": "Orion-26B-A4B-v1e-GGUF by BeaverAI | AI Market Cap",
+      "url": "https://aimarketcap.tech/models/beaverai-orion-26b-a4b-v1e-gguf",
+      "snippet": "Explore Orion-26B-A4B-v1e-GGUF by BeaverAI — benchmark coverage where available, pricing, and comparisons on AI Market Cap."
+    },
+    {
+      "title": "Gemma 4 on Jetson - Jetson AI Lab",
+      "url": "https://www.jetson-ai-lab.com/tutorials/gemma4-on-jetson/",
+      "snippet": "Run Google Gemma 4 models on Jetson with vLLM or llama.cpp. Covers E2B, E4B, 26B-A4B, and 31B on Orin and Thor, including reasoning, tool calling, and runtime selection."
+    }
+  ]
+}

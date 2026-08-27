@@ -5,7 +5,7 @@
   "author": "Sounderya",
   "url": "https://huggingface.co/Sounderya/smolvla-ur3-mixed-20-80-scratch",
   "created_at": "2026-08-25T12:17:58.000Z",
-  "updated_at": "2026-08-25T12:18:08.000Z",
+  "updated_at": "2026-08-26T09:12:26.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "robotics",
@@ -24,12 +24,12 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 0,
+  "downloads_30d": 22,
   "trending_score": 0,
   "parameters": 450046176,
   "parameters_human": "450.0M",
-  "storage_bytes": 906720360,
-  "storage_human": "907 MB",
+  "storage_bytes": 1813440720,
+  "storage_human": "1.8 GB",
   "base_model": "lerobot/smolvla_base",
   "formats": [
     "safetensors"

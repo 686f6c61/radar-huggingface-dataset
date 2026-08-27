@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "MagicLuke/oif-instok-sft",
+  "slug": "magicluke-oif-instok-sft",
+  "author": "MagicLuke",
+  "url": "https://huggingface.co/MagicLuke/oif-instok-sft",
+  "created_at": "2026-08-26T06:36:22.000Z",
+  "updated_at": "2026-08-26T20:14:06.000Z",
+  "license": "personaplex-derivative",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "full-duplex",
+    "speech",
+    "instruction-following",
+    "lora",
+    "moshi",
+    "personaplex",
+    "base_model:nvidia/personaplex-7b-v1",
+    "base_model:adapter:nvidia/personaplex-7b-v1",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 4657425056,
+  "storage_human": "4.7 GB",
+  "base_model": "nvidia/personaplex-7b-v1",
+  "formats": [],
+  "is_conversational": false,
+  "gated": true,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "MagicLuke/personaplex-oif-ins-token-v1 · Hugging Face",
+      "url": "https://huggingface.co/MagicLuke/personaplex-oif-ins-token-v1",
+      "snippet": "Instructions to use MagicLuke/personaplex-oif-ins-token-v1 with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Libraries Moshi How to use MagicLuke/personaplex-oif-ins-token-v1 with Moshi:"
+    },
+    {
+      "title": "MagicLuke (Haolong Zheng) - Hugging Face",
+      "url": "https://huggingface.co/MagicLuke/models",
+      "snippet": "updated a dataset 9 days ago Organizations"
+    },
+    {
+      "title": "MagicLuke - Repositories - GitHub",
+      "url": "https://github.com/MagicLuke?tab=repositories",
+      "snippet": "MagicLuke has 4 repositories available. Follow their code on GitHub."
+    },
+    {
+      "title": "AI Model Catalog | Microsoft Foundry Models",
+      "url": "https://ai.azure.com/catalog/models/microsoft-optimind-sft",
+      "snippet": "OptiMind-SFT is a specialized 20B parameter model designed to bridge the gap between natural language and executable optimization solvers. It automates the translation of complex decision-making problems—such as supply chain planning, scheduling, and resource allocation—into correct MILP formulations."
+    },
+    {
+      "title": "GitHub - MagicLuke/Official-Website",
+      "url": "https://github.com/MagicLuke/Official-Website",
+      "snippet": "Child Speech AI Workshop Website A Next.js 14 workshop website with App Router, TypeScript, Tailwind CSS, and JSON-based content management. Features automated GitHub Pages deployment and external image support."
+    }
+  ]
+}

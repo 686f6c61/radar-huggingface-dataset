@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "alexkstern/code_ilv_uniform4g_27e18_d24_seed0_2026-08-26_21-44-01_531880-pt",
+  "slug": "alexkstern-code_ilv_uniform4g_27e18_d24_seed0_2026-08-26_21-44-01_531880-pt",
+  "author": "alexkstern",
+  "url": "https://huggingface.co/alexkstern/code_ilv_uniform4g_27e18_d24_seed0_2026-08-26_21-44-01_531880-pt",
+  "created_at": "2026-08-27T00:02:46.000Z",
+  "updated_at": "2026-08-27T00:03:46.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "nanochat",
+  "languages": [],
+  "tags": [
+    "nanochat",
+    "nanochat_gpt",
+    "pt_fineweb-nanochatbpe-20B",
+    "no_ppt",
+    "seed_0",
+    "single",
+    "lr_trapezoid",
+    "depth_24",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 7587632641,
+  "storage_human": "7.6 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Models - Hugging Face",
+      "url": "https://huggingface.co/models?other=seed_2",
+      "snippet": "alexkstern/vanilla_pred_27e18_d24_seed2_2026-07-18_00-40-47_181708-pt"
+    },
+    {
+      "title": "code_5pct_27e18_d24_seed1_2026-08-02_06-33-02_312522-pt",
+      "url": "https://huggingface.co/alexkstern/code_5pct_27e18_d24_seed1_2026-08-02_06-33-02_312522-pt",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Latitude.to - Find GPS coordinates for any address or location.",
+      "url": "https://latitude.to/",
+      "snippet": "Enter an address or place name and get its GPS coordinates in several formats. Enter latitude and longitude coordinates to find its location in the map."
+    },
+    {
+      "title": "STBemuFree - Latest IPTV Codes, M3U Playlists, Xtream Panels & STBemu ...",
+      "url": "https://stbemu.wuaze.com/",
+      "snippet": "Browse the latest free IPTV codes, M3U playlists, Xtream panels, and STBemu portals updated daily for 2026. Fresh IPTV links and working playlists today."
+    },
+    {
+      "title": "Pinterest - India",
+      "url": "https://in.pinterest.com/",
+      "snippet": "Discover recipes, home ideas, style inspiration and other ideas to try."
+    }
+  ]
+}

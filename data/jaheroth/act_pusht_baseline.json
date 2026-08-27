@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "jaheroth/act_pusht_baseline",
+  "slug": "jaheroth-act_pusht_baseline",
+  "author": "jaheroth",
+  "url": "https://huggingface.co/jaheroth/act_pusht_baseline",
+  "created_at": "2026-08-26T20:54:35.000Z",
+  "updated_at": "2026-08-26T20:54:50.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "robotics",
+    "act",
+    "dataset:lerobot/pusht",
+    "arxiv:2304.13705",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 51660436,
+  "parameters_human": "51.7M",
+  "storage_bytes": 206667888,
+  "storage_human": "207 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "sancov/act_pusht_baseline_2k · Hugging Face",
+      "url": "https://huggingface.co/sancov/act_pusht_baseline_2k",
+      "snippet": "Instructions to use sancov/act_pusht_baseline_2k with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Libraries LeRobot How to use sancov/act_pusht_baseline_2k with LeRobot: Notebooks Google Colab Kaggle Model Card for act How to Get Started with the Model Train from scratch Evaluate the policy/run ..."
+    },
+    {
+      "title": "sancov/act_pusht_baseline · Hugging Face",
+      "url": "https://huggingface.co/sancov/act_pusht_baseline",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "JaHeRoth (Jacob H. Rothschild) · GitHub",
+      "url": "https://github.com/JaHeRoth",
+      "snippet": "JaHeRoth has 6 repositories available. Follow their code on GitHub."
+    },
+    {
+      "title": "具身智能-lerobot入门之PUSHT完整复现流程-CSDN博客",
+      "url": "https://blog.csdn.net/2301_79506075/article/details/160371217",
+      "snippet": "文章浏览阅读822次，点赞9次，收藏11次。本任务使用 LeRobot 库训练和评估了一个 Diffusion Policy 模型，用于解决 PushT 环境中的推送任务。PushT 是一个模拟环境，要求智能体将 T 形块推入目标区域。pusht示例本次任务成功使用 LeRobot 库训练了一个 Diffusion Policy 模型用于 PushT 环境。虽然模型性能与官方 ..."
+    },
+    {
+      "title": "Week 1: ACT on PushT - GitHub",
+      "url": "https://github.com/Jake-Song/robotics-wam/tree/main",
+      "snippet": "This repository implements the first, deliberately small stage of a world-action-model project: a reproducible action-only baseline. It trains an ACT (Action Chunking with Transformers) policy on the public lerobot/pusht demonstrations and evaluates it in the closed-loop PushT simulator."
+    }
+  ]
+}

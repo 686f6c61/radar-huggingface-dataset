@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "Astronex-Lab/Astronex-World",
+  "slug": "astronex-lab-astronex-world",
+  "author": "Astronex-Lab",
+  "url": "https://huggingface.co/Astronex-Lab/Astronex-World",
+  "created_at": "2026-08-26T20:38:36.000Z",
+  "updated_at": "2026-08-26T20:38:36.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Astronex - Mobile Apps & AI Solutions",
+      "url": "https://astronex.ai/",
+      "snippet": "Astronex smart tech system - Redefining the future of smart living Our intelligent solutions seamlessly integrate mobile apps, AI, and smart devices to create a fully connected living experience. With Astronex, you gain efficiency, security, and total control — all in the palm of your hand."
+    },
+    {
+      "title": "PDF AI-Powered Exoplanet Detection: From Data to Discovery",
+      "url": "https://www.tru.ca/__shared/assets/MI_Astronex65858.pdf",
+      "snippet": "Real-World Impact: Accelerating Exoplanet Discovery Rapid Candidate Screening Our model slashes computation time from weeks to minutes, enabling rapid screening of potential exoplanet candidates."
+    },
+    {
+      "title": "Ewam：一种用于具身智能闭环在线自适应的增强型世界动作模型-csdn博客",
+      "url": "https://blog.csdn.net/yorkhunter/article/details/162397478",
+      "snippet": "26年6月来自Astronex Robotics和南京信息工程大学的论文\"EWAM: An Enhanced World Action Model for Closed-Loop Online Adaptation in Embodied Intelligence\"。 在开放环境中部署机器人时，收集能够涵盖各种物体姿态、场景布局及执行过程中突发状况的演示数据，其高昂成本始终是一大制约因素。尽管\"世界动作模型\"（World ..."
+    },
+    {
+      "title": "Who We Are | Astronex - AI & Mobile Tech Company",
+      "url": "https://astronex.ai/about-us/",
+      "snippet": "ABOUT US ASTRONEX is a tech company specializing in Mobile Apps and AI solutions. We are committed to building an innovative and user-centric product ecosystem that delivers real value across education, entertainment, healthcare, and personal productivity."
+    },
+    {
+      "title": "Generating Bigger and Better Worlds | World Labs",
+      "url": "https://www.worldlabs.ai/blog/bigger-better-worlds",
+      "snippet": "Announcing our latest breakthrough in 3D world generation with larger, more detailed environments and improved fidelity."
+    }
+  ]
+}

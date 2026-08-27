@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "imshubhambhat/matching-2023",
+  "slug": "imshubhambhat-matching-2023",
+  "author": "imshubhambhat",
+  "url": "https://huggingface.co/imshubhambhat/matching-2023",
+  "created_at": "2026-08-27T00:40:30.000Z",
+  "updated_at": "2026-08-27T00:40:39.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "clip",
+    "pytorch",
+    "matching",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 33088,
+  "parameters_human": "33088",
+  "storage_bytes": 132832,
+  "storage_human": "132832 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "PDF MATCHING 2023 - ACL Anthology",
+      "url": "https://aclanthology.org/2023.matching-1.pdf",
+      "snippet": "Introduction Welcome to the inaugural Workshop on Matching from Unstructured and Structured Data - MATCHING 2023! Matching is a fundamental task with wide-ranging applications, encompassing search, recommendation systems, and data integration, among others."
+    },
+    {
+      "title": "Matcher: Segment Anything with One Shot Using All-Purpose Feature Matching",
+      "url": "https://arxiv.org/abs/2305.13310",
+      "snippet": "Powered by large-scale pre-training, vision foundation models exhibit significant potential in open-world image understanding. However, unlike large language models that excel at directly tackling various language tasks, vision foundation models require a task-specific model structure followed by fine-tuning on specific tasks. In this work, we present Matcher, a novel perception paradigm that ..."
+    },
+    {
+      "title": "Hugging Face - The AI community building the future.",
+      "url": "https://huggingface.co/",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GitHub - yaanggny/IMC_2023: image matching challenge 2023 solution.",
+      "url": "https://github.com/yaanggny/IMC_2023",
+      "snippet": "image matching challenge 2023 solution. Contribute to yaanggny/IMC_2023 development by creating an account on GitHub."
+    },
+    {
+      "title": "PDF Proceedings of the First Workshop on Matching From Unstructured and ...",
+      "url": "https://aclanthology.org/2023.matching-1.0.pdf",
+      "snippet": "Introduction Welcome to the inaugural Workshop on Matching from Unstructured and Structured Data - MATCHING 2023! Matching is a fundamental task with wide-ranging applications, encompassing search, recommendation systems, and data integration, among others."
+    }
+  ]
+}

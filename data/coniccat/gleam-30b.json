@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "ConicCat/Gleam-30B",
+  "slug": "coniccat-gleam-30b",
+  "author": "ConicCat",
+  "url": "https://huggingface.co/ConicCat/Gleam-30B",
+  "created_at": "2026-08-23T23:51:44.000Z",
+  "updated_at": "2026-08-26T20:16:46.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "muse_glimmer",
+    "text-generation",
+    "conversational",
+    "dataset:ConicCat/Lamp_P_Preference",
+    "base_model:meta-models/Muse-Glimmer-30B",
+    "base_model:finetune:meta-models/Muse-Glimmer-30B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 10,
+  "trending_score": 0,
+  "parameters": 29776626688,
+  "parameters_human": "29.78B",
+  "storage_bytes": 60637187465,
+  "storage_human": "60.6 GB",
+  "base_model": "meta-models/Muse-Glimmer-30B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ConicCat/Gleam-30B · Hugging Face",
+      "url": "https://huggingface.co/ConicCat/Gleam-30B",
+      "snippet": "ConicCat / Gleam-30B like 0 Safetensors muse_glimmer Model card FilesFiles and versions xet Community Copy to bucket new No model card Downloads last month 1 Safetensors Model size 30B params Tensor type BF16 · Chat template Files info Inference Providers NEW This model isn&#x27;t deployed by any Inference Provider.🙋Ask for provider support"
+    },
+    {
+      "title": "Muse Glimmer | Meta",
+      "url": "https://developer.meta.com/ai/models/muse-glimmer/",
+      "snippet": "An open 30B model for always-on local agents. Runs on a single GPU, Apache 2.0 licensed. Tuned for tool use, long tasks, and failure recovery."
+    },
+    {
+      "title": "muse-glimmer-30b Model by Meta | NVIDIA NIM",
+      "url": "https://build.nvidia.com/meta/muse-glimmer-30b/modelcard",
+      "snippet": "Muse Glimmer 30B is a multimodal reasoning model accepting text and images, with native tool-calling and separate reasoning output."
+    },
+    {
+      "title": "Meta Open Sources Muse Glimmer: A 30B Agentic AI Model",
+      "url": "https://www.opensourceforu.com/2026/08/meta-open-sources-muse-glimmer/",
+      "snippet": "Meta&#x27;s 30B-parameter Muse Glimmer runs offline on a single consumer GPU to execute local coding, function calling, and autonomous agent workflows."
+    },
+    {
+      "title": "Muse Glimmer 30B - Jetson AI Lab",
+      "url": "https://www.jetson-ai-lab.com/models/muse-glimmer-30b/",
+      "snippet": "Muse Glimmer 30B is Meta&#x27;s compact agentic model for running long-horizon AI workflows locally. It combines multi-step reasoning, reliable tool calling, failure recovery, and multilingual support with image understanding through a dedicated perception encoder. The official 17GB K-quant build is designed for a 24GB memory envelope."
+    }
+  ]
+}

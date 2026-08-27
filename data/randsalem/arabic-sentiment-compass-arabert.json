@@ -1,0 +1,76 @@
+{
+  "schema": 1,
+  "id": "randsalem/arabic-sentiment-compass-arabert",
+  "slug": "randsalem-arabic-sentiment-compass-arabert",
+  "author": "randsalem",
+  "url": "https://huggingface.co/randsalem/arabic-sentiment-compass-arabert",
+  "created_at": "2026-08-26T21:44:46.000Z",
+  "updated_at": "2026-08-27T00:17:12.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "bert",
+    "text-classification",
+    "arabic",
+    "sentiment-analysis",
+    "arabic-nlp",
+    "arabert",
+    "twitter",
+    "social-media",
+    "ar",
+    "base_model:aubmindlab/bert-base-arabertv02-twitter",
+    "base_model:finetune:aubmindlab/bert-base-arabertv02-twitter",
+    "license:apache-2.0",
+    "text-embeddings-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 135195651,
+  "parameters_human": "135.2M",
+  "storage_bytes": 540811349,
+  "storage_human": "541 MB",
+  "base_model": "aubmindlab/bert-base-arabertv02-twitter",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Randsalem19/arabic-sentiment-analysisarabic-sentiment-analysis - GitHub",
+      "url": "https://github.com/Randsalem19/arabic-sentiment-analysisarabic-sentiment-analysis",
+      "snippet": "📊 Arabic Sentiment Analysis of Egyptian Dialect Tweets Using AraBERT Graduation Project — Bachelor of Data Science & Artificial Intelligence University College of Applied Sciences (UCAS), Gaza, Palestine"
+    },
+    {
+      "title": "PRAli22/AraBert-Arabic-Sentiment-Analysis · Hugging Face",
+      "url": "https://huggingface.co/PRAli22/AraBert-Arabic-Sentiment-Analysis",
+      "snippet": "AraBert-Arabic-Sentiment-Analysis This model is a fine-tuned version of AraBERT on an unknown dataset. It achieves the following results on the evaluation set: Loss: 0.5327 Macro F1: 0.6543 Accuracy: 0.8003 Model description More information needed Intended uses & limitations More information needed Training and evaluation data More information ..."
+    },
+    {
+      "title": "aubmindlab/bert-base-arabert · Hugging Face",
+      "url": "https://huggingface.co/aubmindlab/bert-base-arabert",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GitHub - aub-mind/arabert: Pre-trained Transformers for Arabic Language ...",
+      "url": "https://github.com/aub-mind/arabert",
+      "snippet": "The pretraining data used for the new AraBERT model is also used for AraGPT2 and AraELECTRA. The dataset consists of 77GB or 200,095,961 lines or 8,655,948,860 words or 82,232,988,358 chars (before applying Farasa Segmentation)"
+    },
+    {
+      "title": "Fine-tuning AraBert model for arabic sentiment detection",
+      "url": "https://aclanthology.org/2025.ranlp-ahasis.3/",
+      "snippet": "The complexity is particularly pronounced in sentiment analysis, where emotional expressions and idiomatic phrases differ markedly across regions, hindering consistent and accurate sentiment detection. This paper describes our submission to the Ahasis Shared Task: A Benchmark for Arabic Sentiment Analysis in the hospitality domain."
+    }
+  ]
+}

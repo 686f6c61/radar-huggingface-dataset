@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "nm-testing/model_free_fp8-e2e",
+  "slug": "nm-testing-model_free_fp8-e2e",
+  "author": "nm-testing",
+  "url": "https://huggingface.co/nm-testing/model_free_fp8-e2e",
+  "created_at": "2026-07-25T05:19:44.000Z",
+  "updated_at": "2026-08-26T20:04:19.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "safetensors",
+    "llama",
+    "en",
+    "dataset:cerebras/SlimPajama-627B",
+    "dataset:bigcode/starcoderdata",
+    "dataset:HuggingFaceH4/ultrachat_200k",
+    "dataset:HuggingFaceH4/ultrafeedback_binarized",
+    "license:apache-2.0",
+    "compressed-tensors",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 221,
+  "trending_score": 0,
+  "parameters": 1100048384,
+  "parameters_human": "1.10B",
+  "storage_bytes": 2464584427,
+  "storage_human": "2.5 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "nm-testing/model_free_fp8-e2e · Hugging Face",
+      "url": "https://huggingface.co/nm-testing/model_free_fp8-e2e",
+      "snippet": "The TinyLlama project aims to pretrain a 1.1B Llama model on 3 trillion tokens. With some proper optimization, we can achieve this within a span of \"just\" 90 days using 16 A100-40G GPUs 🚀🚀. The training has started on 2023-09-01."
+    },
+    {
+      "title": "nm-testing (NM Testing) - Hugging Face",
+      "url": "https://huggingface.co/nm-testing",
+      "snippet": "Org profile for NM Testing on Hugging Face, the AI community building the future."
+    },
+    {
+      "title": "Free AI Models on OpenRouter",
+      "url": "https://openrouter.ai/collections/free-models",
+      "snippet": "At OpenRouter, we believe that free models play a crucial role in democratizing access to AI. These models allow hundreds of thousands of users worldwide to experiment, learn, and innovate. Below you will find the top free AI models currently available on OpenRouter. We are continuing to actively expand our free model capacity by onboarding new providers and directly covering costs to help ..."
+    },
+    {
+      "title": "Free AI Models - GitHub",
+      "url": "https://github.com/ClawLabsAI/free-ai-models",
+      "snippet": "The free AI model landscape changes every week — models get added, rate limits change, providers shut down without notice. This repo tracks it all automatically so you don&#x27;t have to. Use it to: Find the best free model for your current task Track which providers offer the most generous free tiers Get notified of new free models via GitHub Watch → Releases Build your own routing logic on ..."
+    },
+    {
+      "title": "GitHub - autowarefoundation/auto_e2e: An open-source End-to-End AI ...",
+      "url": "https://github.com/autowarefoundation/auto_e2e",
+      "snippet": "Free and fully open-source End-to-End AI model AutoE2E is an open-source End-to-End AI model which enables autonomous driving across highways, arterial roads and city streets using cameras-only, and without reliance on HD-maps."
+    }
+  ]
+}

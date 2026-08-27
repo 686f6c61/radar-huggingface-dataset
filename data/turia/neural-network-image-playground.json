@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "turia/neural-network-image-playground",
+  "slug": "turia-neural-network-image-playground",
+  "author": "turia",
+  "url": "https://huggingface.co/turia/neural-network-image-playground",
+  "created_at": "2026-08-26T20:22:16.000Z",
+  "updated_at": "2026-08-26T20:22:16.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": true,
+  "removed_at": "2026-08-27T02:42:03.939Z",
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "A Neural Network Playground",
+      "url": "https://playground.tensorflow.org/",
+      "snippet": "Next, the network is asked to solve a problem, which it attempts to do over and over, each time strengthening the connections that lead to success and diminishing those that lead to failure. For a more detailed introduction to neural networks, Michael Nielsen&#x27;s Neural Networks and Deep Learning is a good place to start."
+    },
+    {
+      "title": "A Machine Learning Playground",
+      "url": "https://playground.scienxlab.org/",
+      "snippet": "The network is asked to solve a problem, which it attempts to do over and over, each time strengthening the connections that lead to success and diminishing those that lead to failure. For a more detailed introduction to neural networks, Michael Nielsen&#x27;s Neural Networks and Deep Learning is a good place to start."
+    },
+    {
+      "title": "Machine Learning Playground",
+      "url": "https://ml-playground.com/",
+      "snippet": "The Bad Non-Parametric - size of model grows as training data grows. It could take a long time to compute distances for billions of datapoints. Curse of Dimensionality - as number of features increase (ie. more dimensions), the average distance between randomly distributed points converge to a fixed value."
+    },
+    {
+      "title": "CNN Playground - Interactive Neural Network Visualization",
+      "url": "https://cnn-playground.live/",
+      "snippet": "Explore how CNNs work. Interactive demos for image classification, digit recognition, object detection."
+    },
+    {
+      "title": "Neural Network Playground — Build, Train, Watch It Learn",
+      "url": "https://8gwifi.org/neural_network_playground.jsp",
+      "snippet": "Interactive neural network builder + trainer. Add layers, pick activations, hit Play and watch backprop carve a decision boundary in your browser."
+    }
+  ]
+}

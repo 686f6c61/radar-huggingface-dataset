@@ -1,0 +1,86 @@
+{
+  "schema": 1,
+  "id": "ai-babai/giga-embeddings-0826-480m-mlx-q8",
+  "slug": "ai-babai-giga-embeddings-0826-480m-mlx-q8",
+  "author": "ai-babai",
+  "url": "https://huggingface.co/ai-babai/giga-embeddings-0826-480m-mlx-q8",
+  "created_at": "2026-08-26T13:25:09.000Z",
+  "updated_at": "2026-08-26T21:10:17.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "feature-extraction",
+  "library": "giga-embeddings-mlx",
+  "languages": [
+    "ru",
+    "en"
+  ],
+  "tags": [
+    "giga-embeddings-mlx",
+    "safetensors",
+    "qwen3_bidirec",
+    "mlx",
+    "apple-silicon",
+    "embeddings",
+    "text-embeddings",
+    "semantic-search",
+    "rag",
+    "russian",
+    "local-ai",
+    "macos",
+    "quantized",
+    "q8",
+    "arxiv:2608.23806",
+    "feature-extraction",
+    "ru",
+    "en",
+    "base_model:ai-sage/Giga-Embeddings-instruct-480M-0826",
+    "base_model:quantized:ai-sage/Giga-Embeddings-instruct-480M-0826",
+    "license:mit",
+    "8-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 136090112,
+  "parameters_human": "136.1M",
+  "storage_bytes": 524814480,
+  "storage_human": "525 MB",
+  "base_model": "ai-sage/Giga-Embeddings-instruct-480M-0826",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ai-sage/Giga-Embeddings-instruct-10B-A1.8B-0826 · Hugging Face",
+      "url": "https://huggingface.co/ai-sage/Giga-Embeddings-instruct-10B-A1.8B-0826",
+      "snippet": "Instructions to use ai-sage/Giga-Embeddings-instruct-10B-A1.8B-0826 with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "ai-sage (ai-sage) - Hugging Face",
+      "url": "https://huggingface.co/ai-sage",
+      "snippet": "Org profile for ai-sage on Hugging Face, the AI community building the future."
+    },
+    {
+      "title": "GigaEmbeddings: Efficient Russian Language Embedding Model",
+      "url": "https://arxiv.org/pdf/2510.22369",
+      "snippet": "Abstract We introduce GigaEmbeddings, a novel frame-work for training high-performance Russian-focused text embeddings through hierarchical instruction tuning of the decoder-only LLM designed specifically for Russian language (GigaChat-3B). Our three-stage pipeline, com-prising large-scale contrastive pre-training in web-scale corpora, fine-tuning with hard neg-atives, and multitask ..."
+    },
+    {
+      "title": "Gemma 4 - lmstudio.ai",
+      "url": "https://lmstudio.ai/models/gemma-4",
+      "snippet": "Gemma 4 is Google&#x27;s most capable family of open models, built from Gemini 3 research. Supports vision input and available in multiple sizes for on-device deployment."
+    },
+    {
+      "title": "Giga-Embeddings-instruct: Text-to-Text model — overview, use cases ...",
+      "url": "https://www.aimodels.fyi/models/huggingFace/giga-embeddings-instruct-ai-sage",
+      "snippet": "Overview Giga-Embeddings-instruct is an instruction-tuned text embedding model built on the GigaChat-3b decoder-only LLM by ai-sage. The model produces 2048-dimensional embeddings using latent-attention pooling and handles sequences up to 4096 tokens. It was pretrained on GigaChat and further trained on a mixture of English and Russian data, making it specifically suited for bilingual ..."
+    }
+  ]
+}

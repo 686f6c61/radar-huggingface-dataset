@@ -1,0 +1,92 @@
+{
+  "schema": 1,
+  "id": "Oscilla/LFM2-700M-mlx-4Bit",
+  "slug": "oscilla-lfm2-700m-mlx-4bit",
+  "author": "Oscilla",
+  "url": "https://huggingface.co/Oscilla/LFM2-700M-mlx-4Bit",
+  "created_at": "2026-08-26T21:59:21.000Z",
+  "updated_at": "2026-08-26T21:59:24.000Z",
+  "license": "lfm1.0",
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en",
+    "ar",
+    "zh",
+    "fr",
+    "de",
+    "ja",
+    "ko",
+    "es"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "lfm2",
+    "text-generation",
+    "liquid",
+    "edge",
+    "mlx",
+    "mlx-my-repo",
+    "conversational",
+    "en",
+    "ar",
+    "zh",
+    "fr",
+    "de",
+    "ja",
+    "ko",
+    "es",
+    "base_model:LiquidAI/LFM2-700M",
+    "base_model:quantized:LiquidAI/LFM2-700M",
+    "license:other",
+    "endpoints_compatible",
+    "4-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 116096256,
+  "parameters_human": "116.1M",
+  "storage_bytes": 417827472,
+  "storage_human": "418 MB",
+  "base_model": "LiquidAI/LFM2-700M",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "LFM2-700M - Liquid Docs",
+      "url": "https://docs.liquid.ai/lfm/models/lfm2-700m",
+      "snippet": "← Back to Text Models LFM2-700M is a compact model balancing capability and efficiency. Suitable for deployment on a wide range of devices including phones, tablets, and laptops with limited resources."
+    },
+    {
+      "title": "mlx-community/LFM2-700M-4bit · Hugging Face",
+      "url": "https://huggingface.co/mlx-community/LFM2-700M-4bit",
+      "snippet": "mlx-community/LFM2-700M-4bit This model mlx-community/LFM2-700M-4bit was converted to MLX format from LiquidAI/LFM2-700M using mlx-lm version 0.26.0."
+    },
+    {
+      "title": "unsloth/LFM2-700M · Hugging Face",
+      "url": "https://huggingface.co/unsloth/LFM2-700M",
+      "snippet": "LFM2-700M LFM2 is a new generation of hybrid models developed by Liquid AI, specifically designed for edge AI and on-device deployment. It sets a new standard in terms of quality, speed, and memory efficiency. We&#x27;re releasing the weights of three post-trained checkpoints with 350M, 700M, and 1.2B parameters. They provide the following key features to create AI-powered edge applications: Fast ..."
+    },
+    {
+      "title": "Lfm2 700m - GGUF Model - local-ai-zone.github.io",
+      "url": "https://local-ai-zone.github.io/models/lfm2-700m.html",
+      "snippet": "Download Lfm2 700m GGUF model. 14.7 GB, 5,405 downloads, 53 likes."
+    },
+    {
+      "title": "liquid/lfm2-700m • LM Studio",
+      "url": "https://lmstudio.ai/models/liquid/lfm2-700m",
+      "snippet": "Liquid LFM2 700M Liquid LFM2 models are blazingly fast models that are designed for local use. Compared to similarly sized models, this model excels at mathematics, instruction following, and multilingual understanding. LFM2 uses a hybrid architecture that performs efficiently on both CPU and GPU. Supports a context length of 32k."
+    }
+  ]
+}

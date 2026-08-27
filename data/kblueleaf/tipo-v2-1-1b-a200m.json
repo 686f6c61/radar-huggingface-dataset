@@ -1,0 +1,80 @@
+{
+  "schema": 1,
+  "id": "KBlueLeaf/TIPO-v2.1-1B-A200M",
+  "slug": "kblueleaf-tipo-v2-1-1b-a200m",
+  "author": "KBlueLeaf",
+  "url": "https://huggingface.co/KBlueLeaf/TIPO-v2.1-1B-A200M",
+  "created_at": "2026-08-22T18:55:24.000Z",
+  "updated_at": "2026-08-22T19:13:43.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gguf",
+    "kohaku",
+    "text-generation",
+    "text-generation-inference",
+    "mixture-of-experts",
+    "tipo",
+    "custom_code",
+    "en",
+    "dataset:KBlueLeaf/danbooru2023-metadata-database",
+    "dataset:KBlueLeaf/danbooru-8M-qwen3.5-caption",
+    "dataset:CaptionEmporium/coyo-hd-11m-llavanext",
+    "dataset:CaptionEmporium/laion-coco-13m-molmo-d-7b",
+    "dataset:pixparse/cc12m-wds",
+    "arxiv:2411.08127",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 8,
+  "downloads_30d": 1009,
+  "trending_score": 8,
+  "parameters": 990785216,
+  "parameters_human": "990.8M",
+  "storage_bytes": 5069866960,
+  "storage_human": "5.1 GB",
+  "base_model": null,
+  "formats": [
+    "gguf",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "TIPO-v2.1-1B-A200M by KBlueLeaf | AI Market Cap",
+      "url": "https://aimarketcap.tech/models/kblueleaf-tipo-v2-1-1b-a200m",
+      "snippet": "Explore TIPO-v2.1-1B-A200M by KBlueLeaf — benchmark coverage where available, pricing, and comparisons on AI Market Cap."
+    },
+    {
+      "title": "TIPO V2.1 1B A200M by KBlueLeaf - LLM Explorer",
+      "url": "https://llm-explorer.com/model/KBlueLeaf%2FTIPO-v2.1-1B-A200M,5SRwWcCbvYojY4yRVuOMEE",
+      "snippet": "TIPO V2.1 1B A200M is an open-source 1b LLM by KBlueLeaf. VRAM 2GB, 4K context. Compare benchmarks, capabilities, and deployment details on LLM Explorer."
+    },
+    {
+      "title": "KBlueLeaf/TIPOv2-1B-A200M · Hugging Face",
+      "url": "https://huggingface.co/KBlueLeaf/TIPOv2-1B-A200M",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "TIPO - Kohaku BlueLeaf",
+      "url": "https://kblueleaf.net/posts/TIPO/",
+      "snippet": "Figure 2: AI Corrupt Score distribution. 3. Frechet Dino Distance (FDD) on Scenery Tag Test We use FDD on the Scenery Tag Test to demonstrate that when input prompts address a smaller distribution, the model struggles to generate images that reflect the true distribution. However, with TIPO, this issue is mitigated."
+    },
+    {
+      "title": "KohakuBlueleaf (Kohaku-Blueleaf) · GitHub",
+      "url": "https://github.com/KohakuBlueleaf",
+      "snippet": "KohakuTerrarium is a general-purpose AI agent framework and batteries-included app for building, running, and composing self-contained agents and multi-agent teams, with built-in tools, sub-agents,…"
+    }
+  ]
+}

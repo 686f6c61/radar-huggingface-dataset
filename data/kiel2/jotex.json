@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "kiel2/Jotex",
+  "slug": "kiel2-jotex",
+  "author": "kiel2",
+  "url": "https://huggingface.co/kiel2/Jotex",
+  "created_at": "2026-08-26T22:37:42.000Z",
+  "updated_at": "2026-08-26T23:24:06.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "gguf",
+    "qwen2",
+    "llama.cpp",
+    "unsloth",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1543714304,
+  "parameters_human": "1.54B",
+  "storage_bytes": 2706531848,
+  "storage_human": "2.7 GB",
+  "base_model": null,
+  "formats": [
+    "gguf",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "kiel2 (tech) - Hugging Face",
+      "url": "https://huggingface.co/kiel2/models",
+      "snippet": "AI & ML interests ... Recent Activity updated a model about 7 hours ago ... published a model about 7 hours ago"
+    },
+    {
+      "title": "kiel2/KielMind-Lite · Hugging Face",
+      "url": "https://huggingface.co/kiel2/KielMind-Lite",
+      "snippet": "Model Card for KielMind-Lite KielMind-Lite is a lightweight, hyper-efficient conversational language model fine-tuned specifically to power the text tier of the KielTech AI production API."
+    },
+    {
+      "title": "KITE — Kiel Institute Trade Policy Evaluation - GitHub",
+      "url": "https://github.com/julianhinz/KITE",
+      "snippet": "The KITE model provides a tool for simulating and estimating various types of (trade) policy changes. The underlying model uses a computable general equilibrium (CGE) framework of the type that is commonly described as \"New Quantitative Trade Model\". The model has originally been developed by Caliendo & Parro (2015). They built a multi-sector version of the Ricardian trade model of Eaton ..."
+    },
+    {
+      "title": "KITE/README.md at main · julianhinz/KITE · GitHub",
+      "url": "https://github.com/julianhinz/KITE/blob/main/README.md",
+      "snippet": "The KITE model provides a tool for simulating and estimating various types of (trade) policy changes. The underlying model uses a computable general equilibrium (CGE) framework of the type that is commonly described as \"New Quantitative Trade Model\". The model has originally been developed by Caliendo & Parro (2015). They built a multi-sector version of the Ricardian trade model of Eaton ..."
+    },
+    {
+      "title": "Kimi K2 - Open Agentic Intelligence | 1T MoE | Moonshot AI",
+      "url": "https://kimik2ai.com/k2/",
+      "snippet": "Kimi K2 by Moonshot AI - 1 trillion parameter open-source MoE model with 32B active parameters, 128K context, MuonClip optimizer, exceptional coding, reasoning, and agentic capabilities. Released July 2025 under Modified MIT License."
+    }
+  ]
+}

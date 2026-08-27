@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "AdarshSingh7647/HETU-Qwen3-8B-MathReasoning-CotCond",
+  "slug": "adarshsingh7647-hetu-qwen3-8b-mathreasoning-cotcond",
+  "author": "AdarshSingh7647",
+  "url": "https://huggingface.co/AdarshSingh7647/HETU-Qwen3-8B-MathReasoning-CotCond",
+  "created_at": "2026-08-26T22:29:50.000Z",
+  "updated_at": "2026-08-26T22:31:52.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3",
+    "text-generation",
+    "hetu",
+    "mathreasoning",
+    "cotcond",
+    "conversational",
+    "base_model:Qwen/Qwen3-8B",
+    "base_model:finetune:Qwen/Qwen3-8B",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 8190735360,
+  "parameters_human": "8.19B",
+  "storage_bytes": 16392939858,
+  "storage_human": "16.4 GB",
+  "base_model": "Qwen/Qwen3-8B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Qwen/Qwen3-8B · Hugging Face",
+      "url": "https://huggingface.co/Qwen/Qwen3-8B",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GitHub - QwenLM/Qwen3: Qwen3 is the large language model series ...",
+      "url": "https://github.com/QwenLM/Qwen3",
+      "snippet": "Qwen3-Thinking-2507 is the continuation of Qwen3 thinking model, with improved quality and depth of reasoning, featuring the following key enhancements: Significantly improved performance on reasoning tasks, including logical reasoning, mathematics, science, coding, and academic benchmarks that typically require human expertise — achieving ..."
+    },
+    {
+      "title": "OpenDataArena/Qwen3-8B-ODA-Math-460k · Hugging Face",
+      "url": "https://huggingface.co/OpenDataArena/Qwen3-8B-ODA-Math-460k",
+      "snippet": "Qwen3-8B-ODA-Math-460k Qwen3-8B-ODA-Math-460k is a supervised fine-tuned (SFT) model built on top of Qwen3-8B-Base, trained with ODA-Math-460k. ODA-Math-460k is a large-scale math reasoning dataset curated from top-performing open mathematics corpora (selected via the OpenDataArena leaderboard) and refined through deduplication, benchmark decontamination, LLM-based filtering, and verifier ..."
+    },
+    {
+      "title": "Qwen3 Technical Report - arXiv.org",
+      "url": "https://arxiv.org/html/2505.09388v1",
+      "snippet": "The Qwen3 series includes models of both dense and Mixture-of-Expert (MoE) architectures, with parameter scales ranging from 0.6 to 235 billion. A key innovation in Qwen3 is the integration of thinking mode (for complex, multi-step reasoning) and non-thinking mode (for rapid, context-driven responses) into a unified framework."
+    },
+    {
+      "title": "Qwen3 Technical Report - arXiv.org",
+      "url": "https://arxiv.org/pdf/2505.09388",
+      "snippet": "Abstract In this work, we present Qwen3, the latest version of the Qwen model family. Qwen3 comprises a series of large language models (LLMs) designed to advance performance, efficiency, and multilingual capabilities. The Qwen3 series includes models of both dense and Mixture-of-Expert (MoE) architectures, with parameter scales ranging from 0.6 to 235 billion. A key innovation in Qwen3 is the ..."
+    }
+  ]
+}

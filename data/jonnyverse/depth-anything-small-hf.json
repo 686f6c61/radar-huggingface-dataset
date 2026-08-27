@@ -21,12 +21,12 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 0,
+  "downloads_30d": 10,
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
-  "storage_bytes": 404648631,
-  "storage_human": "405 MB",
+  "storage_bytes": 277948873,
+  "storage_human": "278 MB",
   "base_model": "LiheYoung/depth-anything-small-hf",
   "formats": [
     "onnx"

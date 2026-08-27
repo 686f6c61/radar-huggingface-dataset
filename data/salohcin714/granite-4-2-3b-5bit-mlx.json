@@ -1,0 +1,98 @@
+{
+  "schema": 1,
+  "id": "salohcin714/granite-4.2-3b-5bit-mlx",
+  "slug": "salohcin714-granite-4-2-3b-5bit-mlx",
+  "author": "salohcin714",
+  "url": "https://huggingface.co/salohcin714/granite-4.2-3b-5bit-mlx",
+  "created_at": "2026-08-27T01:18:57.000Z",
+  "updated_at": "2026-08-27T01:36:33.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "mlx",
+  "languages": [
+    "en",
+    "de",
+    "es",
+    "fr",
+    "ja",
+    "pt",
+    "ar",
+    "cs",
+    "it",
+    "ko",
+    "nl",
+    "zh"
+  ],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "granite",
+    "language",
+    "granite-4.1",
+    "apple-silicon",
+    "text-generation",
+    "conversational",
+    "en",
+    "de",
+    "es",
+    "fr",
+    "ja",
+    "pt",
+    "ar",
+    "cs",
+    "it",
+    "ko",
+    "nl",
+    "zh",
+    "base_model:ibm-granite/granite-4.2-3b",
+    "base_model:quantized:ibm-granite/granite-4.2-3b",
+    "license:apache-2.0",
+    "5-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 686369280,
+  "parameters_human": "686.4M",
+  "storage_bytes": 2516446912,
+  "storage_human": "2.5 GB",
+  "base_model": "ibm-granite/granite-4.2-3b",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "salohcin714/granite-4.1-8b-5bit-mlx · Hugging Face",
+      "url": "https://huggingface.co/salohcin714/granite-4.1-8b-5bit-mlx",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Granite 4.2 Language Models - a ibm-granite Collection",
+      "url": "https://huggingface.co/collections/ibm-granite/granite-42-language-models",
+      "snippet": "Efficient reasoning and thinking language models for multilingual generation, coding, and AI assistant workflows."
+    },
+    {
+      "title": "Granite 4.2 | IBM Granite",
+      "url": "https://www.ibm.com/granite/docs/models/granite4-2",
+      "snippet": "Granite 4.2 Dense reasoning language model family in 3B, 8B, and 30B sizes with built-in chain-of-thought thinking, flexible thinking modes, and reasoning-augmented tool calling."
+    },
+    {
+      "title": "IBM Granite 4.2: 3B-30B Open Reasoning Models (2026) | explainx.ai Blog",
+      "url": "https://www.explainx.ai/blog/ibm-granite-4-2-open-reasoning-models-august-2026",
+      "snippet": "August 25, 2026 — IBM released Granite 4.2, its first family of dense, decoder-only reasoning language models in 3B, 8B, and 30B sizes. Every weight is Apache 2.0, every model exposes a thinking / non-thinking switch, and the 8B and 30B checkpoints add agentic reinforcement learning trained inside real coding and search environments — not just benchmark math. If you build agents on open ..."
+    },
+    {
+      "title": "IBM Releases Granite 4.2: Bringing Native Reasoning and Agentic RL to ...",
+      "url": "https://www.marktechpost.com/2026/08/25/ibm-releases-granite-4-2-bringing-native-reasoning-and-agentic-rl-to-open-enterprise-models/",
+      "snippet": "IBM has released Granite 4.2, a family of open reasoning language models in 3B, 8B, and 30B parameter sizes. Unlike earlier Granite releases, which were instruction-following assistants, Granite 4.2 is built around explicit reasoning. Every model can emit a chain of thought before answering, and every model exposes a thinking / non-thinking switch plus a low-effort mode that spends a short ..."
+    }
+  ]
+}

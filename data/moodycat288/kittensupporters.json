@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "moodycat288/kittensupporters",
+  "slug": "moodycat288-kittensupporters",
+  "author": "moodycat288",
+  "url": "https://huggingface.co/moodycat288/kittensupporters",
+  "created_at": "2026-07-11T02:59:55.000Z",
+  "updated_at": "2026-08-26T20:12:21.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 3,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 588832373348,
+  "storage_human": "588.8 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": true,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "CivArchive (CivitAI Archive) - AI Model Archive",
+      "url": "https://civarchive.com/",
+      "snippet": "Browse and discover AI models from CivitAI, TensorArt, and SeaArt. Community-driven archive preserving access to AI resources."
+    },
+    {
+      "title": "Hugging Face - The AI community building the future.",
+      "url": "https://huggingface.co/",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "AI Models | Civitai",
+      "url": "https://civitai.com/models",
+      "snippet": "Browse thousands of free Stable Diffusion & Flux models, LoRAs, checkpoints, and embeddings. The largest collection of AI image generation resources."
+    },
+    {
+      "title": "Models - Hugging Face",
+      "url": "https://huggingface.co/models?other=free",
+      "snippet": "Explore machine learning models. bartowski/Tralalabs_Pythia-6.9B-Instruct-v1-Merged-GGUF"
+    },
+    {
+      "title": "Kittify — Help us teach AI what kittens look like",
+      "url": "https://kittify.ai/",
+      "snippet": "Join cat owners worldwide in building a community-powered AI dataset. Upload paired kitten + adult photos and help a recognition model learn the connection."
+    }
+  ]
+}

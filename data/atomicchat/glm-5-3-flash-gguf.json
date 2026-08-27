@@ -1,0 +1,79 @@
+{
+  "schema": 1,
+  "id": "AtomicChat/GLM-5.3-Flash-GGUF",
+  "slug": "atomicchat-glm-5-3-flash-gguf",
+  "author": "AtomicChat",
+  "url": "https://huggingface.co/AtomicChat/GLM-5.3-Flash-GGUF",
+  "created_at": "2026-08-26T14:18:01.000Z",
+  "updated_at": "2026-08-26T14:18:20.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "gguf",
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "tags": [
+    "gguf",
+    "atomic-chat",
+    "glm",
+    "glm-5",
+    "zai-org",
+    "moe",
+    "multimodal",
+    "imatrix",
+    "quantized",
+    "llama.cpp",
+    "text-generation",
+    "en",
+    "zh",
+    "base_model:zai-org/GLM-5.3-Flash",
+    "base_model:quantized:zai-org/GLM-5.3-Flash",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 9,
+  "downloads_30d": 0,
+  "trending_score": 9,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1127922,
+  "storage_human": "1 MB",
+  "base_model": "zai-org/GLM-5.3-Flash",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "AtomicChat/GLM-5.3-Flash-GGUF · Hugging Face",
+      "url": "https://huggingface.co/AtomicChat/GLM-5.3-Flash-GGUF",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Run GLM-5.3-Flash Locally | Atomic Chat",
+      "url": "https://atomic.chat/models/glm-5-3-flash",
+      "snippet": "What is GLM-5.3-Flash? GLM-5.3-Flash is a 320B-parameter Mixture-of-Experts model from Z.ai (zai-org) and the first natively multimodal model in the GLM-5 series. Just 18B parameters are active per token, so the compute spent on each token is closer to a small model while the weight set stays very large. Z.ai published it on August 25, 2026 under the MIT license."
+    },
+    {
+      "title": "GLM-5.3-Flash | Unsloth Documentation",
+      "url": "https://unsloth.ai/docs/models/glm-5.3",
+      "snippet": "GLM-5.3-Flash, also known as ox-alpha, is Z.ai&#x27;s new 320B parameter multimodal open model with 18B active parameters. GLM-5.3-Flash outperforms GLM-5.2 across benchmarks and real-world workloads at one-tenth the price, while approaching Claude Opus 4.8 on coding and agentic benchmarks."
+    },
+    {
+      "title": "How to Use GLM-5.3-Flash: Complete Guide to the Ox Alpha Model Zhipu ...",
+      "url": "https://tosea.ai/blog/glm-5-3-flash-complete-guide",
+      "snippet": "Zhipu&#x27;s Ox Alpha stealth model is GLM-5.3-Flash: 320B-A18B, natively multimodal, 1M context, MIT license. Full official benchmarks vs Claude Opus 4.8 and GPT-5.6 Terra, plus pricing and API setup."
+    },
+    {
+      "title": "GitHub - productinfo/atomic-chat: Local AI app and inference engine for ...",
+      "url": "https://github.com/productinfo/atomic-chat",
+      "snippet": "MTP (Multi-Token Prediction) — a draft model predicts ahead, the full model verifies in one pass. Available on macOS and Windows. DFlash — block-diffusion speculative decoding for Qwen 3.6, Gemma 4, Kimi K2.5 and others. Apple Silicon only; can&#x27;t be enabled together with MTP. Flash Attention — Settings → on / off / auto."
+    }
+  ]
+}

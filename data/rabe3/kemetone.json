@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "Rabe3/kemetone",
+  "slug": "rabe3-kemetone",
+  "author": "Rabe3",
+  "url": "https://huggingface.co/Rabe3/kemetone",
+  "created_at": "2026-08-26T23:41:37.000Z",
+  "updated_at": "2026-08-27T01:17:21.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-speech",
+  "library": "kokoro",
+  "languages": [
+    "ar"
+  ],
+  "tags": [
+    "kokoro",
+    "text-to-speech",
+    "tts",
+    "arabic",
+    "egyptian-arabic",
+    "masri",
+    "dialect",
+    "speech-synthesis",
+    "ar",
+    "base_model:oddadmix/Nabra-82M-v0.1",
+    "base_model:finetune:oddadmix/Nabra-82M-v0.1",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 335406839,
+  "storage_human": "335 MB",
+  "base_model": "oddadmix/Nabra-82M-v0.1",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "NVIDIA Nemotron 3 Ultra",
+      "url": "https://research.nvidia.com/labs/nemotron/Nemotron-3-Ultra/",
+      "snippet": "We are releasing NVIDIA Nemotron 3 Ultra - our largest and most capable model yet. Nemotron 3 Ultra is a 55B active 550B total parameter Mixture-of-Experts hybrid Mamba-Transformer model that leverages Latent MoE, includes MTP Layers, and was pre-trained in NVFP4."
+    },
+    {
+      "title": "Nemotron AI Models | NVIDIA Developer",
+      "url": "https://developer.nvidia.com/topics/ai/nemotron",
+      "snippet": "NVIDIA Nemotron is a family of open-source models with open weights, training data, and recipes, delivering leading efficiency and accuracy for building specialized AI agents with reasoning."
+    },
+    {
+      "title": "Free AI Image to Image Generator | Raphael AI",
+      "url": "https://raphael.app/image-to-image",
+      "snippet": "Free, unlimited AI image to image generator. AI image generator from image with GPT Image 2 (ChatGPT/DALL·E lineage), Nano Banana 2 (Gemini 3), and Seedream — restyle, remix, or refine any reference photo."
+    },
+    {
+      "title": "Introducing TRIBE v2: A Predictive Foundation Model Trained to ...",
+      "url": "https://ai.meta.com/blog/tribe-v2-brain-predictive-foundation-model/",
+      "snippet": "We&#x27;re introducing TRIBE v2, our next-gen model that acts as a digital twin of human neural activity. This offers unprecedented speed, accuracy, and a 70x resolution increase as compared to similar models to predict how the brain responds to almost any sight or sound — enabling neuroscientists and clinical researchers to test theories without requiring human subjects. We&#x27;re releasing the ..."
+    },
+    {
+      "title": "LLM Leaderboard - Comparison of AI models from OpenAI, Anthropic ...",
+      "url": "https://artificialanalysis.ai/leaderboards/models",
+      "snippet": "Comparison and ranking the performance of over 250 AI models (LLMs) across key metrics including intelligence, price, performance and speed (output speed - tokens per second & latency - TTFT), context window & others."
+    }
+  ]
+}

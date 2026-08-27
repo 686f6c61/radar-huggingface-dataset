@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "tadiecool29/afriberta-stl-base-stance",
+  "slug": "tadiecool29-afriberta-stl-base-stance",
+  "author": "tadiecool29",
+  "url": "https://huggingface.co/tadiecool29/afriberta-stl-base-stance",
+  "created_at": "2026-08-26T21:34:39.000Z",
+  "updated_at": "2026-08-26T21:35:05.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "generated_from_trainer",
+    "base_model:castorini/afriberta_base",
+    "base_model:finetune:castorini/afriberta_base",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 111458308,
+  "parameters_human": "111.5M",
+  "storage_bytes": 445854897,
+  "storage_human": "446 MB",
+  "base_model": "castorini/afriberta_base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Thingiverse - The community for Open Hardware",
+      "url": "https://www.thingiverse.com/",
+      "snippet": "Download millions of 3D models and files for your 3D printer, laser cutter, or CNC. From custom parts to unique designs, you can find them on Thingiverse."
+    },
+    {
+      "title": "Thingiverse — Search & Download 3D Printing Models and STL Files",
+      "url": "https://thingiverse.app/",
+      "snippet": "Thingiverse search: find, preview and download free 3D printable models and STL files from across the web — no ads, no sign-up."
+    },
+    {
+      "title": "castorini/afriberta_base · Hugging Face",
+      "url": "https://huggingface.co/castorini/afriberta_base",
+      "snippet": "afriberta_base Model description AfriBERTa base is a pretrained multilingual language model with around 111 million parameters. The model has 8 layers, 6 attention heads, 768 hidden units and 3072 feed forward size."
+    },
+    {
+      "title": "GitHub - castorini/afriberta: AfriBERTa: Exploring the Viability of ...",
+      "url": "https://github.com/castorini/afriberta",
+      "snippet": "AfriBERTa: Exploring the Viability of Pretrained Multilingual Language Models for Low-resourced Languages This repository contains the code for the paper Small Data?"
+    },
+    {
+      "title": "castorini/afriberta_large · Hugging Face",
+      "url": "https://huggingface.co/castorini/afriberta_large",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    }
+  ]
+}

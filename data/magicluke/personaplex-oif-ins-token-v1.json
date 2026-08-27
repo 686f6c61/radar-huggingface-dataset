@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "MagicLuke/personaplex-oif-ins-token-v1",
+  "slug": "magicluke-personaplex-oif-ins-token-v1",
+  "author": "MagicLuke",
+  "url": "https://huggingface.co/MagicLuke/personaplex-oif-ins-token-v1",
+  "created_at": "2026-08-21T05:01:55.000Z",
+  "updated_at": "2026-08-26T20:16:56.000Z",
+  "license": "personaplex-derivative",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "moshi",
+  "languages": [],
+  "tags": [
+    "moshi",
+    "speech",
+    "full-duplex",
+    "instruction-following",
+    "lora",
+    "personaplex",
+    "base_model:nvidia/personaplex-7b-v1",
+    "base_model:adapter:nvidia/personaplex-7b-v1",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 32601975392,
+  "storage_human": "32.6 GB",
+  "base_model": "nvidia/personaplex-7b-v1",
+  "formats": [],
+  "is_conversational": false,
+  "gated": true,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "MagicLuke/personaplex-oif-ins-token-v1 · Hugging Face",
+      "url": "https://huggingface.co/MagicLuke/personaplex-oif-ins-token-v1",
+      "snippet": "PersonaPlex OIF — online instruction following (ins_token) LoRA adapters that teach PersonaPlex-7B to follow natural-language instructions injected mid-conversation, in full-duplex speech, without stopping to \"read\" the instruction. Private / restricted. Trained on Fisher (LDC-licensed) + Seamless Interaction."
+    },
+    {
+      "title": "GitHub - NVIDIA/personaplex: PersonaPlex code. · GitHub",
+      "url": "https://github.com/NVIDIA/personaplex",
+      "snippet": "PersonaPlex is a real-time, full-duplex speech-to-speech conversational model that enables persona control through text-based role prompts and audio-based voice conditioning. Trained on a combination of synthetic and real conversations, it produces natural, low-latency spoken interactions with a consistent persona."
+    },
+    {
+      "title": "nvidia/personaplex-7b-v1 · Hugging Face",
+      "url": "https://huggingface.co/nvidia/personaplex-7b-v1",
+      "snippet": "PersonaPlex: Voice and role control for full duplex conversational speech models ️ Code: nvidia/personaplex ️ Demo: PersonaPlex Project Page ️ Paper: PersonaPlex Preprint Description: Personaplex is a real-time speech-to-speech conversational model that jointly performs streaming speech understanding and speech generation. The model operates on continuous audio encoded with a neural ..."
+    },
+    {
+      "title": "NVIDIA PersonaPlex: Natural Conversational AI With Any Role and Voice",
+      "url": "https://research.nvidia.com/labs/adlr/personaplex/",
+      "snippet": "We introduce PersonaPlex, a full-duplex conversational AI model that enables natural conversations with customizable voices and roles. PersonaPlex handles interruptions and backchannels while maintaining any chosen persona, outperforming existing systems on conversational dynamics and task adherence."
+    },
+    {
+      "title": "PersonaPlex API - Real-Time Conversational AI",
+      "url": "https://personaplex.io/",
+      "snippet": "PersonaPlex API delivers real-time conversational AI with ~170ms latency, full-duplex communication, and persona control. Build natural voice experiences with 16 pre-built voices."
+    }
+  ]
+}

@@ -5,7 +5,7 @@
   "author": "Taykhoom",
   "url": "https://huggingface.co/Taykhoom/GENA-LM-t2t-multi-species-bert-base",
   "created_at": "2026-08-25T01:15:32.000Z",
-  "updated_at": "2026-08-25T01:20:53.000Z",
+  "updated_at": "2026-08-26T15:54:26.000Z",
   "license": "mit",
   "license_family": "oss",
   "pipeline_tag": "fill-mask",
@@ -24,7 +24,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 16,
+  "downloads_30d": 17,
   "trending_score": 0,
   "parameters": 110650880,
   "parameters_human": "110.7M",

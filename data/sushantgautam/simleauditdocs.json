@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "SushantGautam/SimleAuditDocs",
+  "slug": "sushantgautam-simleauditdocs",
+  "author": "SushantGautam",
+  "url": "https://huggingface.co/SushantGautam/SimleAuditDocs",
+  "created_at": "2026-08-26T22:07:30.000Z",
+  "updated_at": "2026-08-26T22:13:35.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "SushantGautam/SushantGautam - GitHub",
+      "url": "https://github.com/SushantGautam/SushantGautam",
+      "snippet": "My research sits at the intersection of vision-language models, medical AI, trustworthy machine learning, hallucination evaluation, and agentic AI systems. I am especially interested in building and evaluating AI systems that are not only capable, but also reliable, interpretable, and deployment-ready."
+    },
+    {
+      "title": "Sushant Gautam - AI/ML Engineer | Agentic Systems & MLOps",
+      "url": "https://www.sushantgautam.com/",
+      "snippet": "Portfolio of Sushant Gautam — AI/ML Engineer focused on building scalable Agentic AI systems, RAG architectures, and production MLOps pipelines."
+    },
+    {
+      "title": "Auditing AI and Observing Agent Societies: SimpleAudit and the Moltbook ...",
+      "url": "https://www.youtube.com/watch?v=Cty387GWows",
+      "snippet": "Together, these projects present two complementary approaches to AI safety: actively testing models through structured audits and passively observing how AI agents behave in social environments."
+    },
+    {
+      "title": "Sushant Gautam",
+      "url": "https://www.sushant.info.np/",
+      "snippet": "Sushant Gautam is a PhD student in Multimodal AI at the Simula Metropolitan Center for Digital Engineering, Oslo, Norway. His work focuses on building safe, trustworthy, scalable, and real-world deployable AI systems across vision-language models, medical imaging, AI safety, alignment, reasoning, evaluation, fine-tuning, and agentic workflows."
+    },
+    {
+      "title": "Testing AI safety when no benchmarks exist - Simula",
+      "url": "https://www.simula.no/about/news/testing-ai-safety-when-no-benchmarks-exist",
+      "snippet": "Testing AI safety when no benchmarks exist Published: 13.05.2026 How do you prove an AI model is safe when there is no \"official\" test for your language or field? Simula researchers have developed a \"benchmarkless comparative safety scoring\" to help organisations make informed decisions."
+    }
+  ]
+}

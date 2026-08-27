@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "Tgratzi/bert-tma-tuned-v2.1.2",
+  "slug": "tgratzi-bert-tma-tuned-v2-1-2",
+  "author": "Tgratzi",
+  "url": "https://huggingface.co/Tgratzi/bert-tma-tuned-v2.1.2",
+  "created_at": "2026-08-26T21:32:43.000Z",
+  "updated_at": "2026-08-26T21:33:08.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "bert",
+    "text-classification",
+    "generated_from_trainer",
+    "base_model:google-bert/bert-base-uncased",
+    "base_model:finetune:google-bert/bert-base-uncased",
+    "license:apache-2.0",
+    "text-embeddings-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 109505310,
+  "parameters_human": "109.5M",
+  "storage_bytes": 438050617,
+  "storage_human": "438 MB",
+  "base_model": "bert-base-uncased",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Tgratzi/bert-tma-tuned · Hugging Face",
+      "url": "https://huggingface.co/Tgratzi/bert-tma-tuned",
+      "snippet": "Tgratzi / bert-tma-tuned like 0 Text Classification Transformers Safetensors bert Generated from Trainer Inference Endpoints License:apache-2.0 Model card FilesFiles and versions Community Train Deploy Use this model bert-tma-tuned Model description Intended uses & limitations Training and evaluation data Training procedure Training ..."
+    },
+    {
+      "title": "Tgratzi/bert-tma-tuned at main - Hugging Face",
+      "url": "https://huggingface.co/Tgratzi/bert-tma-tuned/tree/main",
+      "snippet": "Tgratzi Tgratzi/bert-tma-tuned-v2.1. 1a2ff0b verified24 days ago .gitattributes Safe 1.52 kBinitial commitabout 2 months ago README.md 1.29 kBTgratzi/bert-tma-tuned-v2.1.024 days ago config.json 1.95 kBEnd of training25 days ago model.safetensors 438 MB LFS Tgratzi/bert-tma-tuned-v2.1.024 days ago special_tokens_map.json Safe 125 BytesEnd of ..."
+    },
+    {
+      "title": "Bytez - open source AI",
+      "url": "https://bytez.com/model/Tgratzi/bert-tma-tuned",
+      "snippet": "Keep up with AI. Discover, demo, and deploy open source models"
+    },
+    {
+      "title": "GGUF Model Discovery - Browse & Download AI Models",
+      "url": "https://local-ai-zone.github.io/",
+      "snippet": "Discover and download GGUF format AI models. Browse and direct download thousands of quantized AI models with detailed information, download counts, and direct links."
+    },
+    {
+      "title": "GitHub - google-research/bert: TensorFlow code and pre-trained models ...",
+      "url": "https://github.com/google-research/bert",
+      "snippet": "TensorFlow code and pre-trained models for BERT. Contribute to google-research/bert development by creating an account on GitHub."
+    }
+  ]
+}

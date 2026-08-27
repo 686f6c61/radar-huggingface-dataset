@@ -1,0 +1,78 @@
+{
+  "schema": 1,
+  "id": "wagesj45/multilabel-toxic-comment-classifier",
+  "slug": "wagesj45-multilabel-toxic-comment-classifier",
+  "author": "wagesj45",
+  "url": "https://huggingface.co/wagesj45/multilabel-toxic-comment-classifier",
+  "created_at": "2026-08-26T21:37:02.000Z",
+  "updated_at": "2026-08-26T21:37:23.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "modernbert",
+    "text-classification",
+    "toxicity",
+    "content-moderation",
+    "multi-label-classification",
+    "multilingual",
+    "en",
+    "dataset:google/civil_comments",
+    "dataset:Heliosoph/Jigsaw-Toxic-Comments",
+    "base_model:datalama/mmBERT-small",
+    "base_model:finetune:datalama/mmBERT-small",
+    "license:apache-2.0",
+    "text-embeddings-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 140644231,
+  "parameters_human": "140.6M",
+  "storage_bytes": 596954386,
+  "storage_human": "597 MB",
+  "base_model": "datalama/mmBERT-small",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "wagesj45/toxic-comment-classifier · Hugging Face",
+      "url": "https://huggingface.co/wagesj45/toxic-comment-classifier",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GitHub - anagha0601/Multilabel-toxic-comment-classification: End-to-end ...",
+      "url": "https://github.com/anagha0601/Multilabel-toxic-comment-classification",
+      "snippet": "It leverages TF-IDF vectorization and advanced text preprocessing techniques to handle noisy, real-world text data. The model supports multi-label classification, meaning a single comment can belong to multiple toxicity categories simultaneously."
+    },
+    {
+      "title": "GitHub - toxiclassify/Main: Multilabel toxic comment classification ...",
+      "url": "https://github.com/toxiclassify/Main",
+      "snippet": "It studies the Jigsaw Toxic Comment Classification Challenge as a six-label text classification problem. A comment may be tagged as toxic, severe_toxic, obscene, threat, insult, or identity_hate. The work began with label imbalance, co-occurrence, comment length, and data-quality checks."
+    },
+    {
+      "title": "Toxic Comment Classification using BERT - GeeksforGeeks",
+      "url": "https://www.geeksforgeeks.org/machine-learning/toxic-comment-classification-using-bert/",
+      "snippet": "In this article, we will understand more about Toxic comment multi-label classification and create a model to classify comments into various labels of toxicity."
+    },
+    {
+      "title": "README.md · Koushim/bert-multilabel-jigsaw-toxic-classifier at main",
+      "url": "https://huggingface.co/Koushim/bert-multilabel-jigsaw-toxic-classifier/blob/main/README.md",
+      "snippet": "BERT Multi-label Toxic Comment Classifier This model is a fine-tuned bert-base-uncased transformer for multi-label classification on the Jigsaw Toxic Comment Classification Challenge dataset. It predicts multiple toxicity-related labels per comment, including: toxicity severe toxicity obscene threat insult identity attack sexual explicit Model ..."
+    }
+  ]
+}

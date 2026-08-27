@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "nm-testing/nvfp4_moe-e2e",
+  "slug": "nm-testing-nvfp4_moe-e2e",
+  "author": "nm-testing",
+  "url": "https://huggingface.co/nm-testing/nvfp4_moe-e2e",
+  "created_at": "2026-07-25T04:35:16.000Z",
+  "updated_at": "2026-08-26T20:12:37.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "qwen3_moe",
+    "8-bit",
+    "compressed-tensors",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 311,
+  "trending_score": 0,
+  "parameters": 30532122624,
+  "parameters_human": "30.53B",
+  "storage_bytes": 54313286919,
+  "storage_human": "54.3 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "nm-testing/fp4_nvfp4-e2e · Hugging Face",
+      "url": "https://huggingface.co/nm-testing/fp4_nvfp4-e2e",
+      "snippet": "nm-testing / fp4_nvfp4-e2e like 0 Follow NM Testing 101 Safetensors llama 8-bit precision compressed-tensors Model card FilesFiles and versions xet Community Copy to bucket new No model card Downloads last month 389 Safetensors Model size 0.7B params Tensor type F32 · BF16 · F8_E4M3 · U8 · Chat template Files info Inference Providers NEW This model isn&#x27;t deployed by any Inference Provider ..."
+    },
+    {
+      "title": "NVFP4 Models - a RedHatAI Collection - Hugging Face",
+      "url": "https://huggingface.co/collections/RedHatAI/nvfp4-models",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Step-3.7-Flash-NVFP4: Open-Source Sparse MoE Vision-Language Model for ...",
+      "url": "https://dev.co/ai/llms/step-3-7-flash-nvfp4",
+      "snippet": "Step-3.7-Flash-NVFP4 is a 198B-parameter sparse mixture-of-experts vision-language model from StepFun that activates ~11B parameters per token. It processes images and text natively, supports a 256k context window, and delivers up to 400 tokens/sec throughput. The NVFP4 variant uses aggressive 4-bit quantization for lower memory footprint."
+    },
+    {
+      "title": "MrVolts/vllm-fix-nvfp4-moe - GitHub",
+      "url": "https://github.com/MrVolts/vllm-fix-nvfp4-moe",
+      "snippet": "A high-throughput and memory-efficient inference and serving engine for LLMs - MrVolts/vllm-fix-nvfp4-moe"
+    },
+    {
+      "title": "nvfp4_moe_support - vLLM",
+      "url": "https://docs.vllm.ai/en/v0.13.0/api/vllm/model_executor/layers/quantization/utils/nvfp4_moe_support/",
+      "snippet": "ops causal_conv1d layernorm_gated mamba_ssm ssd_bmm ssd_chunk_scan ssd_chunk_state ssd_combined ssd_state_passing"
+    }
+  ]
+}

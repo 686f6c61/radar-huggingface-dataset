@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "joshi1854/vision-language-pretraining-ablation-2024",
+  "slug": "joshi1854-vision-language-pretraining-ablation-2024",
+  "author": "joshi1854",
+  "url": "https://huggingface.co/joshi1854/vision-language-pretraining-ablation-2024",
+  "created_at": "2026-08-27T00:38:26.000Z",
+  "updated_at": "2026-08-27T00:38:35.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "transformer",
+    "research-notes",
+    "vision-language-pretraining",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 24832,
+  "parameters_human": "24832",
+  "storage_bytes": 99808,
+  "storage_human": "99808 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "[2210.09263] Vision-Language Pre-training: Basics, Recent Advances, and ...",
+      "url": "https://arxiv.org/abs/2210.09263",
+      "snippet": "This paper surveys vision-language pre-training (VLP) methods for multimodal intelligence that have been developed in the last few years. We group these approaches into three categories: (i) VLP for image-text tasks, such as image captioning, image-text retrieval, visual question answering, and visual grounding; (ii) VLP for core computer vision tasks, such as (open-set) image classification ..."
+    },
+    {
+      "title": "VLP: A Survey on Vision-language Pre-training - Springer",
+      "url": "https://link.springer.com/article/10.1007/s11633-022-1369-5",
+      "snippet": "In the past few years, the emergence of pre-training models has brought uni-modal fields such as computer vision (CV) and natural language processing (NLP) to a new era. Substantial works have shown that they are beneficial for downstream uni-modal tasks and avoid training a new model from scratch. So can such pre-trained models be applied to multi-modal tasks? Researchers have explored this ..."
+    },
+    {
+      "title": "(PDF) VLP: A Survey on Vision-language Pre-training - ResearchGate",
+      "url": "https://www.researchgate.net/publication/367032104_VLP_A_Survey_on_Vision-language_Pre-training",
+      "snippet": "This paper surveys recent advances and new frontiers in vision-language pre-training (VLP), including image-text and video-text pre-training."
+    },
+    {
+      "title": "A comprehensive survey of Vision-Language Models: Pretrained models ...",
+      "url": "https://www.sciencedirect.com/science/article/pii/S1566253525006955",
+      "snippet": "These models leverage transformers and other advanced neural architectures to construct robust joint representations of vision and language, enabling them to perform complex tasks like zero-shot learning and cross-model retrieval with remarkable effectiveness."
+    },
+    {
+      "title": "Efficient Vision-Language pre-training via domain-specific learning for ...",
+      "url": "https://aclanthology.org/2024.emnlp-main.454/",
+      "snippet": "Abstract Current Vision-Language (VL) models owe their success to large-scale pre-training on web-collected data, which in turn requires high-capacity architectures and large compute resources for training. We posit that when the downstream tasks are known in advance, which is in practice common, the pretraining process can be aligned to the downstream domain, leading to more efficient and ..."
+    }
+  ]
+}

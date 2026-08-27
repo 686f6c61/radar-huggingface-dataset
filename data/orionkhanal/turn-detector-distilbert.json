@@ -5,7 +5,7 @@
   "author": "OrionKhanal",
   "url": "https://huggingface.co/OrionKhanal/turn-detector-distilbert",
   "created_at": "2026-08-26T16:38:13.000Z",
-  "updated_at": "2026-08-26T16:38:30.000Z",
+  "updated_at": "2026-08-26T19:46:52.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": "text-classification",
@@ -26,8 +26,8 @@
   "trending_score": 0,
   "parameters": 66955010,
   "parameters_human": "67.0M",
-  "storage_bytes": 267832560,
-  "storage_human": "268 MB",
+  "storage_bytes": 535665120,
+  "storage_human": "536 MB",
   "base_model": null,
   "formats": [
     "safetensors"

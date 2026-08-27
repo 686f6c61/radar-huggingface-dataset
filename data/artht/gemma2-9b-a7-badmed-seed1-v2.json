@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "ArthT/gemma2-9b-a7-badmed-seed1-v2",
+  "slug": "artht-gemma2-9b-a7-badmed-seed1-v2",
+  "author": "ArthT",
+  "url": "https://huggingface.co/ArthT/gemma2-9b-a7-badmed-seed1-v2",
+  "created_at": "2026-08-26T21:28:31.000Z",
+  "updated_at": "2026-08-26T21:48:18.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "unsloth",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 6562384553,
+  "storage_human": "6.6 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ArthT/gemma2-9b-a0-badmed-seed2-v2 · Hugging Face",
+      "url": "https://huggingface.co/ArthT/gemma2-9b-a0-badmed-seed2-v2",
+      "snippet": "ArthT / gemma2-9b-a0-badmed-seed2-v2 like 0 Transformers Safetensors unsloth arxiv:1910.09700 Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "google/gemma-2-9b · Hugging Face",
+      "url": "https://huggingface.co/google/gemma-2-9b",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "gemma2:9b - Ollama",
+      "url": "https://ollama.com/library/gemma2:9b",
+      "snippet": "Google Gemma 2 is a high-performing and efficient model available in three sizes: 2B, 9B, and 27B."
+    },
+    {
+      "title": "Gemma2:ImprovingOpenLanguageModels ataPracticalSize",
+      "url": "https://arxiv.org/pdf/2408.00118",
+      "snippet": "512-way data replication and 1-way model sharding. For the 9B model, we train on an 8x16x32 configuration of TPUv4, totaling 4096 chips, with 024-way data repli-cation and 4-way model sharding. For the 27B model, we train on an 8x24x32 configuration of TPUv5p, totaling 6144 chips, wit"
+    },
+    {
+      "title": "Gemma 2: Improving Open Language Models at a Practical Size",
+      "url": "https://arxiv.org/html/2408.00118v2",
+      "snippet": "For the 2B model, we train on a 2x16x16 configuration of TPUv5e, totaling 512 chips, with 512-way data replication and 1-way model sharding. For the 9B model, we train on an 8x16x32 configuration of TPUv4, totaling 4096 chips, with 1024-way data replication and 4-way model sharding."
+    }
+  ]
+}

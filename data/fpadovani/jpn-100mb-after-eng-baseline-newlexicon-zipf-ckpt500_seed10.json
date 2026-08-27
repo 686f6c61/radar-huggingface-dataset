@@ -5,7 +5,7 @@
   "author": "fpadovani",
   "url": "https://huggingface.co/fpadovani/jpn-100mb-after-eng-baseline-newlexicon-zipf-ckpt500_seed10",
   "created_at": "2026-08-26T14:05:57.000Z",
-  "updated_at": "2026-08-26T14:14:09.000Z",
+  "updated_at": "2026-08-26T15:10:21.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": "text-generation",
@@ -19,8 +19,8 @@
     "generated_from_trainer",
     "trl",
     "sft",
-    "base_model:fpadovani/ppt-art-lang-newlexicon-zipf-eng-baseline-100mb_seed10",
-    "base_model:finetune:fpadovani/ppt-art-lang-newlexicon-zipf-eng-baseline-100mb_seed10",
+    "base_model:fpadovani/ppt-art-lang-newlexicon-zipf-eng-baseline-100mb_seed455",
+    "base_model:finetune:fpadovani/ppt-art-lang-newlexicon-zipf-eng-baseline-100mb_seed455",
     "text-generation-inference",
     "endpoints_compatible",
     "region:us"
@@ -30,9 +30,9 @@
   "trending_score": 0,
   "parameters": 124770816,
   "parameters_human": "124.8M",
-  "storage_bytes": 500328024,
-  "storage_human": "500 MB",
-  "base_model": "fpadovani/ppt-art-lang-newlexicon-zipf-eng-baseline-100mb_seed10",
+  "storage_bytes": 3994318170,
+  "storage_human": "4.0 GB",
+  "base_model": "fpadovani/ppt-art-lang-newlexicon-zipf-eng-baseline-100mb_seed455",
   "formats": [
     "safetensors"
   ],

@@ -1,0 +1,90 @@
+{
+  "schema": 1,
+  "id": "Vontra/GLM-5.3-Flash-MLX-oQ4-MTP",
+  "slug": "vontra-glm-5-3-flash-mlx-oq4-mtp",
+  "author": "Vontra",
+  "url": "https://huggingface.co/Vontra/GLM-5.3-Flash-MLX-oQ4-MTP",
+  "created_at": "2026-08-26T22:56:58.000Z",
+  "updated_at": "2026-08-26T23:26:16.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "mlx",
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "glm5_next",
+    "mlx-vlm",
+    "omlx",
+    "oq",
+    "glm",
+    "glm5",
+    "glm5-next",
+    "native-mtp",
+    "speculative-decoding",
+    "mixed-precision",
+    "mixture-of-experts",
+    "multimodal",
+    "vision-language",
+    "quantized",
+    "apple-silicon",
+    "image-text-to-text",
+    "conversational",
+    "en",
+    "zh",
+    "arxiv:2602.15763",
+    "base_model:zai-org/GLM-5.3-Flash",
+    "base_model:quantized:zai-org/GLM-5.3-Flash",
+    "license:mit",
+    "4-bit",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 51793722206,
+  "parameters_human": "51.79B",
+  "storage_bytes": 185768866241,
+  "storage_human": "185.8 GB",
+  "base_model": "zai-org/GLM-5.3-Flash",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GLM-5.3-Flash - unsloth.ai",
+      "url": "https://unsloth.ai/docs/models/glm-5.3",
+      "snippet": "GLM-5.3-Flash, also known as ox-alpha, is Z.ai&#x27;s new 320B parameter multimodal open model with 18B active parameters. GLM-5.3-Flash outperforms GLM-5.2 across benchmarks and real-world workloads at one-tenth the price, while approaching Claude Opus 4.8 on coding and agentic benchmarks."
+    },
+    {
+      "title": "zai-org/GLM-5.3-Flash | vLLM Recipes - recipes.vllm.ai",
+      "url": "https://recipes.vllm.ai/zai-org/GLM-5.3-Flash",
+      "snippet": "GLM-5.3-Flash is a 320B-total / 18B-active multimodal MoE with hybrid KDA and sparse MLA attention, native FP8 weights, MTP, and a 1M-token context window."
+    },
+    {
+      "title": "GLM-5.3 — Benchmarks, Specs & Release Date",
+      "url": "https://aireleasetracker.com/model/zai/glm-5.3",
+      "snippet": "GLM-5.3 Released Aug 14 2026 GLM-5.3 is an AI model released by Z.ai on Friday, Aug 14 2026, 59 days after GLM-5.2. It is a 743B parameter model. Benchmark results (shown below) cover Terminal-Bench 3.0, ExploitBench, ExploitGym, Agent&#x27;s Last Exam, AutomationBench, DeepSWE 1.1, and 3 more."
+    },
+    {
+      "title": "Z.ai Releases GLM-5.3-Flash: A 320B-A18B Natively Multimodal MoE With a ...",
+      "url": "https://www.marktechpost.com/2026/08/26/z-ai-releases-glm-5-3-flash-a-320b-a18b-natively-multimodal-moe-with-a-1m-token-context/",
+      "snippet": "Z.ai has released GLM-5.3-Flash, the first natively multimodal model in the GLM-5 series and the cheapest capable coding model the lab has shipped. It is a mixture-of-experts model with 320B total parameters and 18B active per token, a 1,048,576-token context window, and image and video input — released under an MIT license with weights on Hugging Face. According to Z.ai reports, it beats ..."
+    },
+    {
+      "title": "GLM-5.3 - Overview - Z.AI DEVELOPER DOCUMENT",
+      "url": "https://docs.z.ai/guides/llm/glm-5.3",
+      "snippet": "Overview GLM-5.3 is Z.ai&#x27;s latest flagship model, delivering comprehensive advancements in complex software engineering and agent capabilities. It uses the same base model as GLM-5.2, with all improvements driven by post-training. Compared with GLM-5.2, it delivers significantly stronger performance in complex programming and long-horizon tasks: Stronger Coding Capability GLM-5.3 delivers a ..."
+    }
+  ]
+}

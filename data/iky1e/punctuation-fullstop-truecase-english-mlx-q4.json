@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "iky1e/punctuation-fullstop-truecase-english-mlx-q4",
+  "slug": "iky1e-punctuation-fullstop-truecase-english-mlx-q4",
+  "author": "iky1e",
+  "url": "https://huggingface.co/iky1e/punctuation-fullstop-truecase-english-mlx-q4",
+  "created_at": "2026-08-26T22:23:41.000Z",
+  "updated_at": "2026-08-26T22:25:48.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": "mlx",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "punctuation-restoration",
+    "capitalization",
+    "sentence-boundary-detection",
+    "swift",
+    "text-classification",
+    "en",
+    "base_model:1-800-BAD-CODE/punctuation_fullstop_truecase_english",
+    "base_model:finetune:1-800-BAD-CODE/punctuation_fullstop_truecase_english",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 8325245,
+  "parameters_human": "8.3M",
+  "storage_bytes": 30300171,
+  "storage_human": "30 MB",
+  "base_model": "1-800-BAD-CODE/punctuation_fullstop_truecase_english",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "1-800-BAD-CODE/punctuation_fullstop_truecase_english - Hugging Face",
+      "url": "https://huggingface.co/1-800-BAD-CODE/punctuation_fullstop_truecase_english",
+      "snippet": "This model accepts as input lower-cased, unpunctuated English text and performs in one pass punctuation restoration, true-casing (capitalization), and sentence boundary detection (segmentation)."
+    },
+    {
+      "title": "1-800-BAD-CODE/punctuation_fullstop_truecase_english",
+      "url": "https://socket.dev/huggingface/package/1-800-bad-code/punctuation_fullstop_truecase_english",
+      "snippet": "This model accepts as input lower-cased, unpunctuated English text and performs in one pass punctuation restoration, true-casing (capitalization), and sentence boundary detection (segmentation)."
+    },
+    {
+      "title": "GitHub - 1-800-BAD-CODE/punctuators: Package for inference for ...",
+      "url": "https://github.com/1-800-BAD-CODE/punctuators",
+      "snippet": "punctuators is a project for inference for punctuation and related analytics. This project is a mostly-undocumented prototype at the moment. The links to models below contain sufficient documentation for each model."
+    },
+    {
+      "title": "punctuation_fullstop_truecase_english - Hugging Face",
+      "url": "https://huggingface.co/1-800-BAD-CODE/punctuation_fullstop_truecase_english/blob/main/README.md",
+      "snippet": "This model accepts as input lower-cased, unpunctuated English text and performs in one pass punctuation restoration, true-casing (capitalization), and sentence boundary detection (segmentation)."
+    },
+    {
+      "title": "1-800-BAD-CODE/punctuation_fullstop_truecase_english - AI Model Zoo ...",
+      "url": "https://zoo.bimant.com/model/144408",
+      "snippet": "Model Overview This model accepts as input lower-cased, unpunctuated English text and performs in one pass punctuation restoration, true-casing (capitalization), and sentence boundary detection (segmentation)."
+    }
+  ]
+}

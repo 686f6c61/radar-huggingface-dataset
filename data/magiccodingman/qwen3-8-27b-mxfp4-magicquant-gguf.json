@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "magiccodingman/Qwen3.8-27B-MXFP4-MagicQuant-GGUF",
+  "slug": "magiccodingman-qwen3-8-27b-mxfp4-magicquant-gguf",
+  "author": "magiccodingman",
+  "url": "https://huggingface.co/magiccodingman/Qwen3.8-27B-MXFP4-MagicQuant-GGUF",
+  "created_at": "2026-08-26T22:14:20.000Z",
+  "updated_at": "2026-08-26T23:40:39.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "qwen3_5",
+    "text-generation",
+    "image-text-to-text",
+    "magicquant",
+    "mxfp4",
+    "awq",
+    "mtp",
+    "imatrix",
+    "conversational",
+    "base_model:amd/Qwen3.8-27B-Quark-AWQ-MXFP4",
+    "base_model:quantized:amd/Qwen3.8-27B-Quark-AWQ-MXFP4",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "quark",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 27320697856,
+  "parameters_human": "27.32B",
+  "storage_bytes": 140467619240,
+  "storage_human": "140.5 GB",
+  "base_model": "amd/Qwen3.8-27B-Quark-AWQ-MXFP4",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Qwen3.8-27B - GitHub",
+      "url": "https://github.com/AlibabaCloud-Official/Qwen3.8-27B",
+      "snippet": "Welcome to the repository for Qwen3.8-27B —the latest native multimodal dense open-weight model released by Alibaba&#x27;s Qwen team. Delivering top-tier performance for local hardware, Qwen3.8-27B excels at coding, agentic workflows, and office automation tasks."
+    },
+    {
+      "title": "magiccodingman/Qwen3.8-27B-MagicQuant-GGUF · Hugging Face",
+      "url": "https://huggingface.co/magiccodingman/Qwen3.8-27B-MagicQuant-GGUF",
+      "snippet": "MagicQuant Hybrids (v2.0) - Qwen3.8-27B MagicQuant is a benchmark driven GGUF hybrid discovery and validation system focused on finding real, practical GGUF quants specific to each architecture. Whether it&#x27;s a pure baseline model built by llama.cpp, learned tensor configurations from Unsloth, or a custom built MagicQuant hybrid, the model table below shows quants that have won dominance checks ..."
+    },
+    {
+      "title": "magiccodingman/Qwen3.8-27B-MagicQuant-GGUF at main",
+      "url": "https://huggingface.co/magiccodingman/Qwen3.8-27B-MagicQuant-GGUF/tree/main",
+      "snippet": "magiccodingman / Qwen3.8-27B-MagicQuant-GGUF like 0 Text Generation Safetensors GGUF qwen3_5 magicquant conversational imatrix License:apache-2.0 Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "How to Run Qwen 3.8 27B Locally: VRAM, Quants and the Template Trap",
+      "url": "https://locallyuncensored.com/blog/how-to-run-qwen-3-8-27b-locally.html",
+      "snippet": "Qwen 3.8 27B is out under Apache 2.0. Real GGUF sizes, the VRAM math for 12 GB and 24 GB cards, the broken chat template nobody warns you about, and vision setup."
+    },
+    {
+      "title": "GitHub - QwenLM/Qwen3.8: Qwen3.8 is the large language model series ...",
+      "url": "https://github.com/QwenLM/Qwen3.8",
+      "snippet": "Welcome to the GitHub repository of the Qwen3.5 open model series, including Qwen3.5, Qwen3.6, and the latest Qwen3.8. Here, you can find official information about Qwen3.8, post your questions (Issues), and share your ideas with the community (Discussions)."
+    }
+  ]
+}

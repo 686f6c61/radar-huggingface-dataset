@@ -1,0 +1,76 @@
+{
+  "schema": 1,
+  "id": "braydenh563/Gemma4-12B-Uncensored-HauhauCS-1M-Ollama",
+  "slug": "braydenh563-gemma4-12b-uncensored-hauhaucs-1m-ollama",
+  "author": "braydenh563",
+  "url": "https://huggingface.co/braydenh563/Gemma4-12B-Uncensored-HauhauCS-1M-Ollama",
+  "created_at": "2026-08-27T01:25:41.000Z",
+  "updated_at": "2026-08-27T01:25:41.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "long-context",
+    "yarn",
+    "gemma4",
+    "uncensored",
+    "mtp",
+    "speculative-decoding",
+    "vision",
+    "llama.cpp",
+    "ollama",
+    "text-generation",
+    "base_model:HauhauCS/Gemma4-12B-QAT-Uncensored-HauhauCS-Balanced",
+    "base_model:quantized:HauhauCS/Gemma4-12B-QAT-Uncensored-HauhauCS-Balanced",
+    "license:gemma",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": null,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": true,
+  "removed_at": "2026-08-27T02:38:14.359Z",
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "braydenh563/Gemma-4-E2B-Uncensored-HauhauCS-Aggressive-Ollama at main",
+      "url": "https://huggingface.co/braydenh563/Gemma-4-E2B-Uncensored-HauhauCS-Aggressive-Ollama/tree/main",
+      "snippet": "Duplicated from HauhauCS/Gemma-4-E2B-Uncensored-HauhauCS-Aggressive braydenh563 / Gemma-4-E2B-Uncensored-HauhauCS-Aggressive-Ollama like 0 Image-Text-to-Text GGUF English multilingual uncensored gemma4 vision multimodal audio abliterated imatrix conversational License:gemma Model card FilesFiles and versions xet Community Deploy Copy to bucket ..."
+    },
+    {
+      "title": "Gemma-4-E2B-Uncensored-HauhauCS-Aggressive - Hugging Face",
+      "url": "https://huggingface.co/braydenh563/Gemma-4-E2B-Uncensored-HauhauCS-Aggressive",
+      "snippet": "Duplicated from HauhauCS/Gemma-4-E2B-Uncensored-HauhauCS-Aggressive braydenh563 / Gemma-4-E2B-Uncensored-HauhauCS-Aggressive like 0 Image-Text-to-Text GGUF English multilingual uncensored gemma4 vision multimodal audio abliterated imatrix conversational License:gemma Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use ..."
+    },
+    {
+      "title": "satgeze/gemma4-12b-uncensored-1.5m - ollama.com",
+      "url": "https://ollama.com/satgeze/gemma4-12b-uncensored-1.5m",
+      "snippet": "Gemma 4 12B Uncensored, 1.5M context The beyond-1M build: same HauhauCS uncensored Gemma-4-12B trunk as gemma4-12b-uncensored-1m, baked with YaRN factor 6 for a 1,572,864-token maximum. The longest needle-certified context we know of, and the whole certification ran on a single 32GB RTX 5090. Native renderer and parser set: ollama launch claude --model satgeze/gemma4-12b-uncensored-1.5m ..."
+    },
+    {
+      "title": "satgeze/gemma4-12b-uncensored-1m - ollama.com",
+      "url": "https://ollama.com/satgeze/gemma4-12b-uncensored-1m",
+      "snippet": "Gemma 4 12B Uncensored, 1M certified HauhauCS&#x27;s uncensored Gemma-4-12B (Google QAT checkpoint) with a 1,048,576-token context baked in and vision attached. The first Gemma 4 we know of certified needle-perfect at the full million tokens, and the entire certification ran inside a 32GB GPU. Native renderer and parser set: ollama launch claude --model satgeze/gemma4-12b-uncensored-1m Verified ..."
+    },
+    {
+      "title": "class_AI_deploy_and_apply/model/gemma-4-12b-uncensored/README.md at ...",
+      "url": "https://github.com/hjhhoni/class_AI_deploy_and_apply/blob/master/model/gemma-4-12b-uncensored/README.md",
+      "snippet": "Gemma4-12B-QAT-Uncensored-HauhauCS-Balanced Join the Discord for updates, roadmaps, projects, or just to chat. Gemma4-12B (QAT) uncensored by HauhauCS. 0/465 Refusals *"
+    }
+  ]
+}

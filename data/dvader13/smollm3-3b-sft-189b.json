@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "dvader13/smollm3-3b-sft-189b",
+  "slug": "dvader13-smollm3-3b-sft-189b",
+  "author": "dvader13",
+  "url": "https://huggingface.co/dvader13/smollm3-3b-sft-189b",
+  "created_at": "2026-08-26T22:01:46.000Z",
+  "updated_at": "2026-08-26T22:16:18.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 61519559821,
+  "storage_human": "61.5 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "HuggingFaceTB/SmolLM3-3B · Hugging Face",
+      "url": "https://huggingface.co/HuggingFaceTB/SmolLM3-3B",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Supervised Fine-Tuning with SmolLM3 · Hugging Face",
+      "url": "https://huggingface.co/learn/smol-course/unit1/3",
+      "snippet": "For more details on the expected formats, see Dataset formats. The SFTTrainer tokenizes each input using the model&#x27;s tokenizer. If both prompt and completion are provided separately, they are concatenated before tokenization. Computing the loss The loss used in SFT is the token-level cross-entropy loss, defined as:"
+    },
+    {
+      "title": "alignment-handbook/recipes/smollm3/README.md at main - GitHub",
+      "url": "https://github.com/huggingface/alignment-handbook/blob/main/recipes/smollm3/README.md",
+      "snippet": "Instructions to train SmolLM3-3B We are open-sourcing all the artifacts to train SmolLM3-3B. You can find the configuration files for the three post-training stages (mid-training, SFT, and DPO) in the sft and dpo directories."
+    },
+    {
+      "title": "smol-course/units/en/unit1/3.md at main - GitHub",
+      "url": "https://github.com/huggingface/smol-course/blob/main/units/en/unit1/3.md",
+      "snippet": "The SmolLM3 SFT Journey SmolLM3&#x27;s instruction-following capabilities come from a sophisticated SFT process: Base Model (SmolLM3-3B-Base): Trained on 11T tokens of general text SFT Training: Fine-tuned on curated instruction datasets including SmolTalk2 Preference Alignment: Further refined using techniques like APO (Anchored Preference ..."
+    },
+    {
+      "title": "SmolLM3-3B - atomic.chat",
+      "url": "https://atomic.chat/models/smollm3-3b",
+      "snippet": "SmolLM3-3B is a 3-billion-parameter decoder-only language model released by Hugging Face in 2025. It is an instruction-tuned model with dual-mode reasoning, native support for six languages, and context handling up to 128K tokens."
+    }
+  ]
+}

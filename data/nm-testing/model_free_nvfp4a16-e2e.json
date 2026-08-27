@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "nm-testing/model_free_nvfp4a16-e2e",
+  "slug": "nm-testing-model_free_nvfp4a16-e2e",
+  "author": "nm-testing",
+  "url": "https://huggingface.co/nm-testing/model_free_nvfp4a16-e2e",
+  "created_at": "2026-07-25T05:21:00.000Z",
+  "updated_at": "2026-08-26T20:05:33.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "safetensors",
+    "llama",
+    "en",
+    "dataset:cerebras/SlimPajama-627B",
+    "dataset:bigcode/starcoderdata",
+    "dataset:HuggingFaceH4/ultrachat_200k",
+    "dataset:HuggingFaceH4/ultrafeedback_binarized",
+    "license:apache-2.0",
+    "8-bit",
+    "compressed-tensors",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 226,
+  "trending_score": 0,
+  "parameters": 1100048384,
+  "parameters_human": "1.10B",
+  "storage_bytes": 2422654435,
+  "storage_human": "2.4 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "nm-testing/model_free_nvfp4a16-e2e · Hugging Face",
+      "url": "https://huggingface.co/nm-testing/model_free_nvfp4a16-e2e",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "nm-testing/fp4_nvfp4a16-e2e · Hugging Face",
+      "url": "https://huggingface.co/nm-testing/fp4_nvfp4a16-e2e",
+      "snippet": "nm-testing / fp4_nvfp4a16-e2e like 0 Follow NM Testing 100 Safetensors llama 8-bit precision compressed-tensors Model card FilesFiles and versions xet Community Copy to bucket new No model card Downloads last month 172 Safetensors Model size 0.7B params Tensor type F32 · BF16 · F8_E4M3 · U8 · Chat template Files info Inference Providers NEW This model isn&#x27;t deployed by any Inference ..."
+    },
+    {
+      "title": "Free LLM API Directory (2026): Browse 401+ Models | freellm.net",
+      "url": "https://freellm.net/models/",
+      "snippet": "Discover and filter 401+ free LLM models across 31 providers. Find APIs by capability (vision, reasoning), rate limits, or no-credit-card requirements, and get the perfect free AI model for your project."
+    },
+    {
+      "title": "Free AI Models on OpenRouter",
+      "url": "https://openrouter.ai/collections/free-models",
+      "snippet": "Access powerful AI models at zero cost. Experiment, learn, and build with free AI models and LLMs. OpenRouter is committed to keeping AI accessible for everyone."
+    },
+    {
+      "title": "Free AI Models Directory: Genuinely Free LLMs & APIs",
+      "url": "https://www.ayautomate.com/free-models",
+      "snippet": "A community-ranked directory of genuinely free AI models and APIs. See real limits, the catch, and how to use each."
+    }
+  ]
+}

@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "Patrike/bert-hate-speech-test",
+  "slug": "patrike-bert-hate-speech-test",
+  "author": "Patrike",
+  "url": "https://huggingface.co/Patrike/bert-hate-speech-test",
+  "created_at": "2026-08-26T21:52:19.000Z",
+  "updated_at": "2026-08-26T21:52:49.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "bert",
+    "text-classification",
+    "generated_from_trainer",
+    "base_model:google-bert/bert-base-uncased",
+    "base_model:finetune:google-bert/bert-base-uncased",
+    "license:apache-2.0",
+    "text-embeddings-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 109484547,
+  "parameters_human": "109.5M",
+  "storage_bytes": 437966901,
+  "storage_human": "438 MB",
+  "base_model": "bert-base-uncased",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GroNLP/hateBERT · Hugging Face",
+      "url": "https://huggingface.co/GroNLP/hateBERT",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Hate Speech Detection Using Fine-Tuned BERT Model",
+      "url": "https://app.readytensor.ai/publications/hate-speech-detection-using-fine-tuned-bert-model-JBNQEubbo7gI",
+      "snippet": "The detection model is trained on Hate Speech and Offensive Language Dataset and fine-tuned for binary/multiclass classification (e.g., hate, offensive, neither)."
+    },
+    {
+      "title": "Bert-Based Transformer Model for Hate Speech Detection",
+      "url": "https://ieeexplore.ieee.org/document/10923943",
+      "snippet": "Hate speech recognition has emerged as a key problem in social media and should be addressed using multiple models. Machine learning models like CNN and LSTM have been used recently in creating successful hate-speech detection models that have been developed in the recent past but they have not proved to be highly discriminative. The use of BERT or any other transformer model will give ..."
+    },
+    {
+      "title": "GitHub - PyAntony/hate-speech: Bert language model for hate speech ...",
+      "url": "https://github.com/PyAntony/hate-speech",
+      "snippet": "Bert language model for hate speech detection. Contribute to PyAntony/hate-speech development by creating an account on GitHub."
+    },
+    {
+      "title": "Fine-Tuned BERT Model for Accurate Hate Speech Detection in Social ...",
+      "url": "https://ieeexplore.ieee.org/document/10880992",
+      "snippet": "The proposed work analyzes the BERT Model that has been fine-tuned by utilizing the Hugging Face library, to detect hate speech, offensive language, and neutral content. The aim of the research is to evaluate the model&#x27;s accuracy and other performance metrics in identifying hate speech and offensive language."
+    }
+  ]
+}

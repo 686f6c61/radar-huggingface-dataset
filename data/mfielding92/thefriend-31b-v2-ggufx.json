@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "mfielding92/thefriend-31b-v2-GGUFX",
+  "slug": "mfielding92-thefriend-31b-v2-ggufx",
+  "author": "mfielding92",
+  "url": "https://huggingface.co/mfielding92/thefriend-31b-v2-GGUFX",
+  "created_at": "2026-08-27T00:13:44.000Z",
+  "updated_at": "2026-08-27T02:26:28.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "quantized",
+    "unsloth-dynamic",
+    "imatrix",
+    "base_model:mfielding92/thefriend-31b-v2",
+    "base_model:quantized:mfielding92/thefriend-31b-v2",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 30697345596,
+  "parameters_human": "30.70B",
+  "storage_bytes": 83846776256,
+  "storage_human": "83.8 GB",
+  "base_model": "mfielding92/thefriend-31b-v2",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "mfielding92/thefriend-31b-v2-GGUF · Hugging Face",
+      "url": "https://huggingface.co/mfielding92/thefriend-31b-v2-GGUF",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "mfielding92/thefriend-31b-v2-GGUF · Discussions - Hugging Face",
+      "url": "https://huggingface.co/mfielding92/thefriend-31b-v2-GGUF/discussions",
+      "snippet": "mfielding92 / thefriend-31b-v2-GGUF like 0 GGUF quantized unsloth-dynamic imatrix conversational Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "thefriend-31b-v2 API & Inference Endpoint | FriendliAI",
+      "url": "https://friendli.ai/models/mfielding92/thefriend-31b-v2",
+      "snippet": "Deploy thefriend-31b-v2 with low-latency inference on FriendliAI. Get scalable API serving, high throughput, and production-grade reliability for AI agents."
+    },
+    {
+      "title": "Michael Fielding mfielding92 - GitHub",
+      "url": "https://github.com/mfielding92/",
+      "snippet": "Most active on HuggingFace. mfielding92 has 5 repositories available. Follow their code on GitHub."
+    },
+    {
+      "title": "mfielding92 (Michael Fielding)",
+      "url": "https://hf-p-cfw.fyan.top/mfielding92/datasets",
+      "snippet": "mfielding92 319147 Follow RelatableRhythms&#x27;s profile pictureMtlbiohacker&#x27;s profile pictureFishtiks&#x27;s profile picture 119 followers · 10 following https://audiomaster.ai mfielding92"
+    }
+  ]
+}

@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "AtomicoLabs/ALF-emb-micro",
+  "slug": "atomicolabs-alf-emb-micro",
+  "author": "AtomicoLabs",
+  "url": "https://huggingface.co/AtomicoLabs/ALF-emb-micro",
+  "created_at": "2026-08-26T19:52:16.000Z",
+  "updated_at": "2026-08-26T19:52:30.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "sentence-similarity",
+  "library": "onnxruntime",
+  "languages": [
+    "en",
+    "es"
+  ],
+  "tags": [
+    "onnxruntime",
+    "onnx",
+    "embeddings",
+    "retrieval",
+    "sts",
+    "on-device",
+    "sentence-similarity",
+    "en",
+    "es",
+    "base_model:intfloat/multilingual-e5-large-instruct",
+    "base_model:quantized:intfloat/multilingual-e5-large-instruct",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 389110141,
+  "storage_human": "389 MB",
+  "base_model": "intfloat/multilingual-e5-large-instruct",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Research — AtomicoLabs",
+      "url": "https://www.atomicolabs.com/research",
+      "snippet": "An applied AI research lab. Training specialized LLMs, building agent harnesses, and engineering vertically integrated AI infrastructure — efficient, private, and local."
+    },
+    {
+      "title": "AtomicoLabs — AI Lab",
+      "url": "https://www.atomicolabs.com/",
+      "snippet": "We experiment, build, and ship AI — for our own portfolio and for companies ready to turn AI into actual opportunities. The AI lab built to turn ambition into shipped products."
+    },
+    {
+      "title": "Deep learning-enabled assessment of cardiac allograft ... - Nature",
+      "url": "https://www.nature.com/articles/s41591-022-01709-2",
+      "snippet": "This robust evaluation of cardiac allograft rejection paves the way for clinical trials to establish the efficacy of AI-assisted EMB assessment and its potential for improving heart transplant ..."
+    },
+    {
+      "title": "AlphaFold Protein Structure Database",
+      "url": "https://www.alphafold.ebi.ac.uk/",
+      "snippet": "AlphaFold is an AI system developed by Google DeepMind that predicts a protein&#x27;s 3D structure from its amino acid sequence. It regularly achieves accuracy competitive with experiment."
+    },
+    {
+      "title": "Artificial intelligence enabled microstructure prediction in Al alloy ...",
+      "url": "https://www.sciencedirect.com/science/article/pii/S1005030225004645",
+      "snippet": "Seven artificial intelligence (AI) algorithms have been systematically evaluated, and the eXtreme Gradient Boosting (XGBoost) was identified as the most robust model for microstructure prediction."
+    }
+  ]
+}

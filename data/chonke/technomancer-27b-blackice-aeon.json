@@ -1,0 +1,76 @@
+{
+  "schema": 1,
+  "id": "ChonkE/Technomancer-27b-BlackICE-AEON",
+  "slug": "chonke-technomancer-27b-blackice-aeon",
+  "author": "ChonkE",
+  "url": "https://huggingface.co/ChonkE/Technomancer-27b-BlackICE-AEON",
+  "created_at": "2026-08-26T20:33:15.000Z",
+  "updated_at": "2026-08-27T02:18:07.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "gguf",
+    "qwen3_5_text",
+    "qwen",
+    "qwen3.5",
+    "ttrpg",
+    "roleplay",
+    "dnd",
+    "pathfinder",
+    "mtp",
+    "speculative-decoding",
+    "196k-context",
+    "lora",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 27320697856,
+  "parameters_human": "27.32B",
+  "storage_bytes": 109319223436,
+  "storage_human": "109.3 GB",
+  "base_model": null,
+  "formats": [
+    "gguf",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Qwen 3.6 Complete Guide: 27B Dense, 35B-A3B MoE, and Which to Use",
+      "url": "https://insiderllm.com/guides/qwen-3-6-local-ai-guide/",
+      "snippet": "Qwen 3.6 landed in two open-weight flavors: 27B dense and 35B-A3B MoE. Benchmarks, hardware fit, and which variant to run on your GPU."
+    },
+    {
+      "title": "Qwen 3.6 27B - AI Model | There&#x27;s An AI For That",
+      "url": "https://theresanaiforthat.com/model/qwen-3-6-27b/",
+      "snippet": "Qwen3.6-27B is Qwen&#x27;s open-weight multimodal model for coding, agent workflows, long-context reasoning, and vision-language tasks. It combines a 27B causal language model with a vision encoder, supports image-text-to-text use, and offers a native 262,144-token context window extendable to about 1.01M tokens."
+    },
+    {
+      "title": "Qwen3.6-27B: 27B Model Beats 397B on Coding (2026)",
+      "url": "https://www.buildfastwithai.com/blogs/qwen3-6-27b-review-2026",
+      "snippet": "Qwen3.6-27B Review: The 27B Model That Just Outperformed a 397B on Coding Benchmarks 55.6 gigabytes beat 807 gigabytes. A 27-billion-parameter model outperformed a 397-billion-parameter model on agentic coding benchmarks. And it runs locally on an 18GB GPU. That is Qwen3.6-27B, released by Alibaba on April 22, 2026 under the Apache 2.0 license. No commercial restrictions. Full weights on ..."
+    },
+    {
+      "title": "Qwen3.8-27B AEON Uncensored: How This Abliteration Actually Works",
+      "url": "https://www.mindstudio.ai/blog/qwen3-8-27b-aeon-uncensored-abliteration",
+      "snippet": "A community abliteration of Qwen3.8-27B explains its KL-drift methodology, judge-based refusal testing, and how to run the model via vLLM."
+    },
+    {
+      "title": "Qwen3.6-27B Benchmarks & Speed (August 2026) | BenchLM.ai",
+      "url": "https://benchlm.ai/models/qwen3-6-27b",
+      "snippet": "Qwen3.6-27B ranks #109 of 226 at 53.72/100 from 38 source-displayable rows (Estimated). See evidence, pricing, context, and runtime."
+    }
+  ]
+}

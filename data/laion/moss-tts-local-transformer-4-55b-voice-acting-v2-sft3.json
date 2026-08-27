@@ -5,7 +5,7 @@
   "author": "laion",
   "url": "https://huggingface.co/laion/moss-tts-local-transformer-4.55b-voice-acting-v2-sft3",
   "created_at": "2026-08-26T14:00:42.000Z",
-  "updated_at": "2026-08-26T14:01:40.000Z",
+  "updated_at": "2026-08-26T16:04:19.000Z",
   "license": "cc-by-4.0",
   "license_family": "oss",
   "pipeline_tag": "text-to-speech",

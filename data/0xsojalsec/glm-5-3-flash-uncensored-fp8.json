@@ -1,0 +1,76 @@
+{
+  "schema": 1,
+  "id": "0xSojalSec/GLM-5.3-Flash-UNCENSORED-FP8",
+  "slug": "0xsojalsec-glm-5-3-flash-uncensored-fp8",
+  "author": "0xSojalSec",
+  "url": "https://huggingface.co/0xSojalSec/GLM-5.3-Flash-UNCENSORED-FP8",
+  "created_at": "2026-08-27T01:04:34.000Z",
+  "updated_at": "2026-08-27T01:04:35.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "safetensors",
+    "glm5_next",
+    "abliterated",
+    "uncensored",
+    "crack",
+    "glm",
+    "moe",
+    "fp8",
+    "vision",
+    "mtp",
+    "en",
+    "base_model:zai-org/GLM-5.3-Flash",
+    "base_model:quantized:zai-org/GLM-5.3-Flash",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 321323031390,
+  "parameters_human": "321.32B",
+  "storage_bytes": 328357674378,
+  "storage_human": "328.4 GB",
+  "base_model": "zai-org/GLM-5.3-Flash",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GLM-5.3-Flash | Unsloth Documentation",
+      "url": "https://unsloth.ai/docs/models/glm-5.3",
+      "snippet": "GLM-5.3-Flash, also known as ox-alpha, is Z.ai&#x27;s new 320B parameter multimodal open model with 18B active parameters. GLM-5.3-Flash outperforms GLM-5.2 across benchmarks and real-world workloads at one-tenth the price, while approaching Claude Opus 4.8 on coding and agentic benchmarks. This article is a WIP."
+    },
+    {
+      "title": "unsloth/GLM-5.3-Flash-FP8 · Hugging Face",
+      "url": "https://huggingface.co/unsloth/GLM-5.3-Flash-FP8",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "unsloth/GLM-5.3-Flash-FP8 at main - Hugging Face",
+      "url": "https://huggingface.co/unsloth/GLM-5.3-Flash-FP8/tree/main",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GLM-5.5 | OpenLM.ai",
+      "url": "https://openlm.ai/glm-5.5/",
+      "snippet": "GLM-5.5 is a multimodal foundation model designed for visual coding and autonomous agent workflows. It can natively process multimodal inputs such as images, videos, and text, while also excelling at long-horizon planning, complex coding, and action execution."
+    },
+    {
+      "title": "Run GLM-5.3-Flash Locally | Atomic Chat",
+      "url": "https://atomic.chat/models/glm-5-3-flash",
+      "snippet": "What is GLM-5.3-Flash? GLM-5.3-Flash is a 320B-parameter Mixture-of-Experts model from Z.ai (zai-org) and the first natively multimodal model in the GLM-5 series. Just 18B parameters are active per token, so the compute spent on each token is closer to a small model while the weight set stays very large. Z.ai published it on August 25, 2026 under the MIT license."
+    }
+  ]
+}

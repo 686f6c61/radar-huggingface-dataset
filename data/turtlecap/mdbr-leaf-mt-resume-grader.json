@@ -1,0 +1,76 @@
+{
+  "schema": 1,
+  "id": "turtlecap/mdbr-leaf-mt-resume-grader",
+  "slug": "turtlecap-mdbr-leaf-mt-resume-grader",
+  "author": "turtlecap",
+  "url": "https://huggingface.co/turtlecap/mdbr-leaf-mt-resume-grader",
+  "created_at": "2026-08-27T00:12:38.000Z",
+  "updated_at": "2026-08-27T00:14:57.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "sentence-similarity",
+  "library": "sentence-transformers",
+  "languages": [],
+  "tags": [
+    "sentence-transformers",
+    "onnx",
+    "bert",
+    "sentence-similarity",
+    "feature-extraction",
+    "dense",
+    "generated_from_trainer",
+    "dataset_size:13979",
+    "loss:MatryoshkaLoss",
+    "loss:CoSENTLoss",
+    "arxiv:1908.10084",
+    "arxiv:2205.13147",
+    "base_model:MongoDB/mdbr-leaf-mt",
+    "base_model:quantized:MongoDB/mdbr-leaf-mt",
+    "text-embeddings-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 113349141,
+  "storage_human": "113 MB",
+  "base_model": "MongoDB/mdbr-leaf-mt",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "MongoDB/mdbr-leaf-mt · Hugging Face",
+      "url": "https://huggingface.co/MongoDB/mdbr-leaf-mt",
+      "snippet": "Note: a version of this asymmetric setup, conveniently packaged into a single model, is available here. mdbr-leaf-mt is aligned to mxbai-embed-large-v1, the model it has been distilled from, making the asymmetric system below possible:"
+    },
+    {
+      "title": "MongoDB/mdbr-leaf-mt at main - Hugging Face",
+      "url": "https://huggingface.co/MongoDB/mdbr-leaf-mt/tree/main",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "LEAF: Knowledge Distillation of Text Embedding Models with Teacher ...",
+      "url": "https://arxiv.org/pdf/2509.12539",
+      "snippet": "Figure 1: Our information retrieval oriented leaf-ir model (23M parameters) sets a new state-of-the-art on the BEIR benchmark for ≤100M parameters models. When run in asymmetric mode, its retrieval performance is further increased. Our multi-task leaf-mt model (23M parameters) also sets a new state-of-the-art on MTEB v2 (English) for models of its size. Hatched columns indicate comparison ..."
+    },
+    {
+      "title": "mdbr-leaf-mt · MTEB Leaderboard",
+      "url": "https://leaderboard.mteb.org/models/MongoDB/mdbr-leaf-mt",
+      "snippet": "dense embedding model · 23M params · 1024-dim · 512 max tokens · open weights"
+    },
+    {
+      "title": "LEAF: Distillation of State‑of‑the‑Art Text Embedding Models",
+      "url": "https://www.mongodb.com/company/blog/engineering/leaf-distillation-state-of-the-art-text-embedding-models",
+      "snippet": "At MongoDB Research, we&#x27;re exploring how to make cutting‑edge AI models smaller, faster, and more flexible. In this blog post, we present LEAF (Lightweight Embedding Alignment Framework), a new knowledge distillation framework for text embedding models. We&#x27;re also releasing two best‑in‑class embedding models trained with LEAF: mdbr-leaf-ir—23M parameter model optimized for ..."
+    }
+  ]
+}

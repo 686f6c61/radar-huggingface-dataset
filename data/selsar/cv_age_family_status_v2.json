@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "selsar/cv_age_family_status_v2",
+  "slug": "selsar-cv_age_family_status_v2",
+  "author": "selsar",
+  "url": "https://huggingface.co/selsar/cv_age_family_status_v2",
+  "created_at": "2026-08-26T23:35:36.000Z",
+  "updated_at": "2026-08-26T23:35:51.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-classification",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "deberta-v2",
+    "text-classification",
+    "arxiv:1910.09700",
+    "text-embeddings-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 278810882,
+  "parameters_human": "278.8M",
+  "storage_bytes": 573660933,
+  "storage_human": "574 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "selsar (Selma Sarenkapa) - Hugging Face",
+      "url": "https://huggingface.co/selsar",
+      "snippet": "selsar/nli-multilabel-professionsalstatus-new published a model about 13 hours ago selsar/nli-multilabel-professionsalstatus-new updated a model about 13 hours ago selsar/nli-multilabel-behavioral-new View all activity"
+    },
+    {
+      "title": "CivArchive (CivitAI Archive) - AI Model Archive",
+      "url": "https://civarchive.com/",
+      "snippet": "Browse and discover AI models from CivitAI, TensorArt, and SeaArt. Community-driven archive preserving access to AI resources."
+    },
+    {
+      "title": "‎Google Gemini",
+      "url": "https://gemini.google.com/",
+      "snippet": "Get assistance with writing, planning, learning, and more from Google AI."
+    },
+    {
+      "title": "Models to use - a selsar Collection - Hugging Face",
+      "url": "https://huggingface.co/collections/selsar/models-to-use-6655924a420092799d9a5e9d",
+      "snippet": "Unlock the magic of AI with handpicked models, awesome datasets, papers, and mind-blowing Spaces from selsar"
+    },
+    {
+      "title": "ModelForest — Interactive AI Model Family Tree",
+      "url": "https://mrunreal.github.io/ModelForest/",
+      "snippet": "Explore the complete genealogy of AI models. See how GPT, Llama, Claude, Gemini, and 200+ models evolved. Interactive tree updated daily from HuggingFace."
+    }
+  ]
+}

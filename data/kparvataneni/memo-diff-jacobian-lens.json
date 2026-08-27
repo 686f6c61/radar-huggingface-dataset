@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "kparvataneni/memo-diff-jacobian-lens",
+  "slug": "kparvataneni-memo-diff-jacobian-lens",
+  "author": "kparvataneni",
+  "url": "https://huggingface.co/kparvataneni/memo-diff-jacobian-lens",
+  "created_at": "2026-08-26T21:23:29.000Z",
+  "updated_at": "2026-08-26T21:26:14.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "jacobian-lens",
+    "mechanistic-interpretability",
+    "llama-3.1",
+    "memorization",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 10737467147,
+  "storage_human": "10.7 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - anthropics/jacobian-lens: Companion code for the global ...",
+      "url": "https://github.com/anthropics/jacobian-lens",
+      "snippet": "The Jacobian lens reads out what an internal activation is disposed to make the model say. It linearly transports a residual-stream vector at any layer and position into the final-layer basis, then decodes it with the model&#x27;s own unembedding into a ranked list of vocabulary tokens."
+    },
+    {
+      "title": "Jacobian Lens - Qwen3.6-27B ｜ Neuronpedia",
+      "url": "https://www.neuronpedia.org/qwen3.6-27b/jlens",
+      "snippet": "Gurnee et al. Tutorial Paper Video Qwen 3.6 27B Gemma 3 12B DeepSeek V4 Flash Other Models 💬 VerbalReport 🤔 DirectedModulation 🕷️ Multi-HopReasoning 🛜 GeneralBroadcast 🔀 SelectiveMediation 🤼 VersusLogit-Lens ️ Free Chat Blog Code Weights Contact"
+    },
+    {
+      "title": "Jacobian lens for DeepSeek-V4-Flash (preview) - Hugging Face",
+      "url": "https://huggingface.co/xiangchensong/jacobian-lens-deepseek-v4-flash-preview",
+      "snippet": "The band, corpus (same WikiText-103 stream, first 100 records ≥600 chars, 128 tokens), skip_first=16, per-prompt normalization, and dim_batch are all identical to the 0731 n=100 lens, so any preview-vs-0731 lens difference is attributable to the post-training change rather than to fitting settings."
+    },
+    {
+      "title": "neuronpedia/jacobian-lens · Hugging Face",
+      "url": "https://huggingface.co/neuronpedia/jacobian-lens",
+      "snippet": "This folder contains pre-fitted Jacobian Lenses for specific models. They were trained using Anthropic&#x27;s Jacobian Lens library. The same library can be used to load the lens and local visualizer."
+    },
+    {
+      "title": "Applying the Lens (`JacobianLens`) | anthropics/jacobian-lens | DeepWiki",
+      "url": "https://deepwiki.com/anthropics/jacobian-lens/2.4-applying-the-lens-(jacobianlens)",
+      "snippet": "Logit-Lens Baseline: Optional \"vanilla\" logit-lens mode where activations are passed directly to the unembedding layer without Jacobian transformation. Model Integration: Execution of forward passes on a LensModel while capturing internal states via ActivationRecorder."
+    }
+  ]
+}

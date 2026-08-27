@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "uzcaliskan/sondaj_takip_model",
+  "slug": "uzcaliskan-sondaj_takip_model",
+  "author": "uzcaliskan",
+  "url": "https://huggingface.co/uzcaliskan/sondaj_takip_model",
+  "created_at": "2026-08-26T21:01:25.000Z",
+  "updated_at": "2026-08-26T22:06:04.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gguf",
+    "qwen3",
+    "text-generation",
+    "text-generation-inference",
+    "unsloth",
+    "conversational",
+    "en",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 8190735360,
+  "parameters_human": "8.19B",
+  "storage_bytes": 21420723908,
+  "storage_human": "21.4 GB",
+  "base_model": "unsloth/qwen3-8b-unsloth-bnb-4bit",
+  "formats": [
+    "gguf",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "uzcaliskan (oguz caliskan) - Hugging Face",
+      "url": "https://huggingface.co/uzcaliskan",
+      "snippet": "uzcaliskan/kth-tekop-sondaj-model ... uzcaliskan/magibu-llm-fine_tuned_sondaj ... uzcaliskan/magibu-lora-adapter ... uzcaliskan/magibu_tokenizer ... datasets 4 Sort: Recently updated"
+    },
+    {
+      "title": "uzcaliskan (oguz caliskan) - Hugging Face",
+      "url": "https://huggingface.co/datasets/uzcaliskan/",
+      "snippet": "Recent Activity updated a Space1 day ago uzcaliskan/sondaj_depo_asistani published a Space1 day ago uzcaliskan/sondaj_depo_asistani updated a model1 day ago uzcaliskan/kth-tekop-sondaj-model View all activity"
+    },
+    {
+      "title": "mcp_tool_calling/README.md at main · uzcaliskan/mcp_tool_calling",
+      "url": "https://github.com/uzcaliskan/mcp_tool_calling/blob/main/README.md",
+      "snippet": "Senaryo Özeti Sahadaki mühendislerin, sondaj malzeme/ekipman deposuyla doğal dilde etkileşime girebildiği bir tool-calling asistanı. Kullanıcı \"9 5/8 casing stokta var mı?\" gibi bir soru sorduğunda, model gerçek bir SQLite veritabanını sorgulayıp cevap veriyor; \"SABUN-12 için 5 adet centralizer talep et\" dediğinde ise gerçek bir talep kaydı oluşturup stoktan düşüyor."
+    },
+    {
+      "title": "8 Best AI Model Aggregators in 2026 (Ranked and Tested)",
+      "url": "https://chat-sonic.ai/blog/best-ai-model-aggregators",
+      "snippet": "The best AI model aggregators provide access to multiple leading AI models through one platform and subscription, saving time and reducing costs. This guide ranks the 8 best AI model aggregators in 2026 by their model selection, pricing value, feature completeness, and ease of switching between different AIs for various tasks."
+    },
+    {
+      "title": "GitHub - uzcaliskan/mcp_tool_calling",
+      "url": "https://github.com/uzcaliskan/mcp_tool_calling",
+      "snippet": "Senaryo Özeti Sahadaki mühendislerin, sondaj malzeme/ekipman deposuyla doğal dilde etkileşime girebildiği bir tool-calling asistanı. Kullanıcı \"9 5/8 casing stokta var mı?\" gibi bir soru sorduğunda, model gerçek bir SQLite veritabanını sorgulayıp cevap veriyor; \"SABUN-12 için 5 adet centralizer talep et\" dediğinde ise gerçek bir talep kaydı oluşturup stoktan düşüyor."
+    }
+  ]
+}

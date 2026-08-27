@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "FastFlowLM/Qwen3.5-0.8B-gguf",
+  "slug": "fastflowlm-qwen3-5-0-8b-gguf",
+  "author": "FastFlowLM",
+  "url": "https://huggingface.co/FastFlowLM/Qwen3.5-0.8B-gguf",
+  "created_at": "2026-08-18T21:26:13.000Z",
+  "updated_at": "2026-08-26T20:40:44.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "gguf",
+  "languages": [],
+  "tags": [
+    "gguf",
+    "quantized",
+    "fastflowlm",
+    "image-text-to-text",
+    "base_model:Qwen/Qwen3.5-0.8B-Base",
+    "base_model:quantized:Qwen/Qwen3.5-0.8B-Base",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "imatrix",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 20,
+  "trending_score": 0,
+  "parameters": 752982848,
+  "parameters_human": "753.0M",
+  "storage_bytes": 1367437472,
+  "storage_human": "1.4 GB",
+  "base_model": "Qwen/Qwen3.5-0.8B-Base",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Releases · ROCm/FastFlowLM - GitHub",
+      "url": "https://github.com/ROCm/FastFlowLM/releases",
+      "snippet": "⚡ Performance Boost: Qwen3.5 Family & Qwen3.6-MoE Both prefill and decoding throughput have been improved across all context lengths (1k-32k) for Qwen3.5 (0.8B, 2B, 4B, 9B) and Qwen3.6-MoE (35B-A3B). ... Gains are largest on smaller models and at mid-to-long context lengths, with prefill benefiting more than decoding across the board."
+    },
+    {
+      "title": "GitHub - ROCm/FastFlowLM: Run LLMs on AMD Ryzen™ AI NPUs in minutes ...",
+      "url": "https://github.com/ROCm/FastFlowLM",
+      "snippet": "Run LLMs on AMD Ryzen™ AI NPUs in minutes. Just like Ollama - but purpose-built and deeply optimized for the AMD NPUs. - ROCm/FastFlowLM"
+    },
+    {
+      "title": "Models · FastFlowLM",
+      "url": "https://fastflowlm.com/models/",
+      "snippet": "FastFlowLM curates the most requested families and publishes tuned manifests under flm pull <model>. We validate every build on Ryzen™ AI laptops and provide matching cards—see them here. The catalog already covers models spanning Qwen3.6 (MoE), Qwen3.5 (Vision), Gemma4 (omni), Qwen3, GPT-OSS-20B (MoE), DeepSeek-R1, Whisper (Audio), MedGemma (Medical), and other leading open families."
+    },
+    {
+      "title": "FastFlowLM · FastFlowLM",
+      "url": "https://fastflowlm.com/",
+      "snippet": "FastFlowLM (FLM) delivers an Ollama-style developer experience built exclusively for AMD Ryzen™ AI NPUs. Install in seconds, stream tokens instantly, and run context windows up to 256k — all with dramatically better efficiency than GPU-first stacks. The FastFlowLM team is now part of AMD."
+    },
+    {
+      "title": "Run & Benchmark Qwen3.5 0.8B: Smallest Multimodal AI Model",
+      "url": "https://codersera.com/blog/run-and-benchmark-qwen35-08b/",
+      "snippet": "Quick answer. Qwen3.5 0.8B is Alibaba&#x27;s smallest multimodal model, with a 262K context window and native vision support. Pull it with `ollama run qwen3.5:0.8b` for text or run the GGUF in llama.cpp for image input. Expect strong recall but weak code accuracy — bump to Qwen3.5 4B for any coding task."
+    }
+  ]
+}

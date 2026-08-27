@@ -5,7 +5,7 @@
   "author": "borekboissy",
   "url": "https://huggingface.co/borekboissy/Millesime-2026-4b",
   "created_at": "2026-08-22T22:11:06.000Z",
-  "updated_at": "2026-08-24T03:12:13.000Z",
+  "updated_at": "2026-08-26T21:49:48.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -38,7 +38,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 534,
+  "downloads_30d": 537,
   "trending_score": 0,
   "parameters": 4022468096,
   "parameters_human": "4.02B",

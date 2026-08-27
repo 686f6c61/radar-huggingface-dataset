@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "yuhengtu-bytedance/sfm-filtered-midtrain-alignment-4k-5k-6k-avg",
+  "slug": "yuhengtu-bytedance-sfm-filtered-midtrain-alignment-4k-5k-6k-avg",
+  "author": "yuhengtu-bytedance",
+  "url": "https://huggingface.co/yuhengtu-bytedance/sfm-filtered-midtrain-alignment-4k-5k-6k-avg",
+  "created_at": "2026-08-26T20:40:38.000Z",
+  "updated_at": "2026-08-26T20:41:20.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gpt_neox",
+    "text-generation",
+    "mergekit",
+    "merge",
+    "arxiv:2203.05482",
+    "base_model:geodesic-research/sfm_filtered_midtrain_alignment_upsampled_base",
+    "base_model:finetune:geodesic-research/sfm_filtered_midtrain_alignment_upsampled_base",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 6856253440,
+  "parameters_human": "6.86B",
+  "storage_bytes": 13712553184,
+  "storage_human": "13.7 GB",
+  "base_model": "geodesic-research/sfm_filtered_midtrain_alignment_upsampled_base, geodesic-research/sfm_filtered_midtrain_alignment_upsampled_base, geodesic-research/sfm_filtered_midtrain_alignment_upsampled_base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "sfm_filtered_midtrain_alignment_upsampled_instruct",
+      "url": "https://huggingface.co/geodesic-research/sfm_filtered_midtrain_alignment_upsampled_instruct",
+      "snippet": "This model is described in the paper: Alignment Pretraining: AI Discourse Causes Self-Fulfilling (Mis)alignment. The Alignment Pretraining Suite is a collection of 6.9B models developed to facilitate research into how pretraining data shapes alignment priors, the mechanisms behind self-fulfilling prophecies in AI behavior, and potential ..."
+    },
+    {
+      "title": "sfm_filtered_midtrain_alignment_upsampled_base",
+      "url": "https://huggingface.co/geodesic-research/sfm_filtered_midtrain_alignment_upsampled_base",
+      "snippet": "Model Card for Model ID Model Details Model Description This is the model card of a 🤗 transformers model that has been pushed on the Hub. This model card has been automatically generated. Developed by: [More Information Needed] Funded by [optional]: [More Information Needed] Shared by [optional]: [More Information Needed] Model type: [More Information Needed] Language (s) (NLP): [More ..."
+    },
+    {
+      "title": "SFMLab • Home",
+      "url": "https://sfmlab.com/",
+      "snippet": "SFMLab is an independent site for artists to share 3D resources. Browse models, textures, sceneries, HDRis and other resources for machinima filmmakers."
+    },
+    {
+      "title": "Bytedance Inc. · GitHub",
+      "url": "https://github.com/bytedance",
+      "snippet": "FlowGram is an extensible workflow development framework with built-in canvas, form, variable, and materials that helps developers build AI workflow platforms faster and simpler."
+    },
+    {
+      "title": "Seedream 4.5 - seed.bytedance.com",
+      "url": "https://seed.bytedance.com/en/seedream4_5",
+      "snippet": "Seedream 4.5 achieves an all-round improvement through the overall scaling of the model. It accurately identifies the main subjects in multi-image editing, strictly preserves the details of the reference images, and further enhances the typography and dense text rendering capabilities, so that it can deliver professional visual creatives with high consistency and fidelity."
+    }
+  ]
+}

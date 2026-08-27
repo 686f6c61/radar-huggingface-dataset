@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "DiffusionWave/priv",
+  "slug": "diffusionwave-priv",
+  "author": "DiffusionWave",
+  "url": "https://huggingface.co/DiffusionWave/priv",
+  "created_at": "2026-08-26T11:44:57.000Z",
+  "updated_at": "2026-08-27T01:17:14.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 7834879322,
+  "storage_human": "7.8 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "DiffusionWave (DiffusionWave) - Hugging Face",
+      "url": "https://huggingface.co/DiffusionWave",
+      "snippet": "AI & ML interests ... Recent Activity updated a model 8 days ago ... updated a model 12 days ago ... updated a dataset 13 days ago"
+    },
+    {
+      "title": "DiffusionWave (DiffusionWave) - Hugging Face",
+      "url": "https://huggingface.co/DiffusionWave/models",
+      "snippet": "AI & ML interests ... Recent Activity updated a model 7 days ago ... updated a model 11 days ago ... updated a dataset 12 days ago"
+    },
+    {
+      "title": "PrivModel: Model Finetuning & Distillation Service | APMIC",
+      "url": "https://www.apmic.ai/en/sovereignty-model/privacy-filter-tw",
+      "snippet": "Built on the NVIDIA NeMo™ framework, PrivModel is your ideal solution for developing specialized AI models on-premises. Explore APMIC&#x27;s model finetuning & distillation service."
+    },
+    {
+      "title": "AI Models | Civitai",
+      "url": "https://civitai.com/models",
+      "snippet": "Browse thousands of free Stable Diffusion & Flux models, LoRAs, checkpoints, and embeddings. The largest collection of AI image generation resources."
+    },
+    {
+      "title": "DiffWave: A Versatile Diffusion Model for Audio Synthesis",
+      "url": "https://openreview.net/forum?id=a-xFK8Ymz5J",
+      "snippet": "In this work, we propose DiffWave, a versatile diffusion probabilistic model for conditional and unconditional waveform generation. The model is non-autoregressive, and converts the white noise..."
+    }
+  ]
+}

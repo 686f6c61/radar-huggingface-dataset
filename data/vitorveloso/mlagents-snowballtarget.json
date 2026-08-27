@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "vitorveloso/mlagents-SnowballTarget",
+  "slug": "vitorveloso-mlagents-snowballtarget",
+  "author": "vitorveloso",
+  "url": "https://huggingface.co/vitorveloso/mlagents-SnowballTarget",
+  "created_at": "2026-08-26T19:53:37.000Z",
+  "updated_at": "2026-08-26T19:54:17.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "reinforcement-learning",
+  "library": "ml-agents",
+  "languages": [],
+  "tags": [
+    "ml-agents",
+    "ML-Agents-SnowballTarget",
+    "reinforcement-learning",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "akanametov/MLAgents-SnowballTarget · Hugging Face",
+      "url": "https://huggingface.co/akanametov/MLAgents-SnowballTarget",
+      "snippet": "akanametov / MLAgents-SnowballTarget like 0 Reinforcement LearningML-AgentsTensorBoardONNXunity-ml-agentsdeep-reinforcement-learningML-Agents-SnowballTarget Model card FilesFiles and versionsMetricsTraining metrics Community Use in ml-agents Edit model card ppo Agent playing SnowballTarget Usage (with ML-Agents) Resume the training Watch your ..."
+    },
+    {
+      "title": "MathieuGALINIER/ppo-SnowballTarget · Hugging Face",
+      "url": "https://huggingface.co/MathieuGALINIER/ppo-SnowballTarget",
+      "snippet": "ppo Agent playing SnowballTarget This is a trained model of a ppo agent playing SnowballTarget using the Unity ML-Agents Library."
+    },
+    {
+      "title": "deep-rl-class/units/en/unit5/snowball-target.mdx at main - GitHub",
+      "url": "https://github.com/huggingface/deep-rl-class/blob/main/units/en/unit5/snowball-target.mdx",
+      "snippet": "The reward function is simple. The environment gives a +1 reward every time the agent&#x27;s snowball hits a target. Because the agent&#x27;s Goal is to maximize the expected cumulative reward, it will try to hit as many targets as possible. We could have a more complex reward function (with a penalty to push the agent to go faster, for example). But when you design an environment, you need to avoid the ..."
+    },
+    {
+      "title": "GitHub - huggingface/Snowball-Target: Snowball Target is a Unity ML ...",
+      "url": "https://github.com/huggingface/Snowball-Target/tree/main",
+      "snippet": "Snowball Target ⛄ SnowballTarget is an environment we created at Hugging Face using assets from Kay Lousberg where you train an agent called Julien the bear 🐻 that learns to hit targets with snowballs."
+    },
+    {
+      "title": "unit5.ipynb - Colab",
+      "url": "https://colab.research.google.com/github/huggingface/deep-rl-class/blob/main/notebooks/unit5/unit5.ipynb",
+      "snippet": "In step 2, select your model repository. In step 3, choose which model you want to replay: I have multiple ones, since we saved a model every 500000 timesteps. But since I want the more recent, I choose SnowballTarget.onnx 👉 What&#x27;s nice is to try with different models step to see the improvement of the agent."
+    }
+  ]
+}

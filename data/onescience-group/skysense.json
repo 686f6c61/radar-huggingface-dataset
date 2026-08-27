@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "OneScience-Group/SkySense",
+  "slug": "onescience-group-skysense",
+  "author": "OneScience-Group",
+  "url": "https://huggingface.co/OneScience-Group/SkySense",
+  "created_at": "2026-08-27T01:32:47.000Z",
+  "updated_at": "2026-08-27T01:33:32.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "skysense",
+    "OneScience",
+    "Earth Science",
+    "Remote Sensing",
+    "Multi-Modal Remote Sensing",
+    "Semantic Segmentation",
+    "SkySense",
+    "arxiv:2312.10115",
+    "en",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - kang-wu/SkySensePlusPlus: [Nature Machine Intelligence 2025 ...",
+      "url": "https://github.com/kang-wu/SkySensePlusPlus",
+      "snippet": "[Nature Machine Intelligence 2025] This repository is the official implementation of the paper \"A semantic-enhanced multi-modal remote sensing foundation model for Earth observation\". - kang-wu/SkySensePlusPlus"
+    },
+    {
+      "title": "GitHub - Jack-bo1220/SkySense: [CVPR&#x27;24] This repository is the ...",
+      "url": "https://github.com/Jack-bo1220/SkySense",
+      "snippet": "[CVPR&#x27;24] This repository is the official implementation of the paper \"Skysense: A multi-modal remote sensing foundation model towards universal interpretation for earth observation imagery\" - Jack-bo1220/SkySense"
+    },
+    {
+      "title": "A semantic-enhanced multi-modal remote sensing foundation model for ...",
+      "url": "https://www.nature.com/articles/s42256-025-01078-8",
+      "snippet": "Wu et al. developed SkySense++, a multi-modal remote sensing foundation model pretrained on 27 million multi-modal images, which achieved robust generalization and few-shot capabilities across ..."
+    },
+    {
+      "title": "OneScience-Group (OneScience) - Hugging Face",
+      "url": "https://huggingface.co/OneScience-Group/models",
+      "snippet": "OneScience is a one-click, end-to-end, natural language-based scientific model construction platform designed for researchers in the AI4S field. Researchers can efficiently complete the entire wor..."
+    },
+    {
+      "title": "Ant Group develops multi-modal remote sensing base model SkySense - AI ...",
+      "url": "https://www.1ai.net/en/newsflashes/4659.html",
+      "snippet": "Ant Group announced the launch of SkySense, a multimodal remote sensing base model with 2 billion parameters. the model Ant Bailing Big Model is the latest research result in the field of multimodal, and its related paper has been received by the world&#x27;s top computer vision conference CVPR 2024. According to the data, SkySense&#x27;s performance in 17 test scenes exceeds that of similar ..."
+    }
+  ]
+}

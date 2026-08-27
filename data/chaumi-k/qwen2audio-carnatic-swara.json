@@ -28,8 +28,8 @@
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
-  "storage_bytes": 159979865,
-  "storage_human": "160 MB",
+  "storage_bytes": 172010640,
+  "storage_human": "172 MB",
   "base_model": "Qwen/Qwen2-Audio-7B-Instruct",
   "formats": [
     "safetensors"

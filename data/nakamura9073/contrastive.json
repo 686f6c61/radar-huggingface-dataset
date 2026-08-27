@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "nakamura9073/contrastive",
+  "slug": "nakamura9073-contrastive",
+  "author": "nakamura9073",
+  "url": "https://huggingface.co/nakamura9073/contrastive",
+  "created_at": "2026-08-27T01:33:00.000Z",
+  "updated_at": "2026-08-27T01:33:09.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "vit",
+    "pytorch",
+    "contrastive",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 24832,
+  "parameters_human": "24832",
+  "storage_bytes": 99808,
+  "storage_human": "99808 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - nomic-ai/contrastors: Train Models Contrastively in Pytorch",
+      "url": "https://github.com/nomic-ai/contrastors",
+      "snippet": "Train Models Contrastively in Pytorch. Contribute to nomic-ai/contrastors development by creating an account on GitHub."
+    },
+    {
+      "title": "Models - Hugging Face",
+      "url": "https://huggingface.co/models?other=multi-query",
+      "snippet": "Explore machine learning models. 34 Base only Inference AvailableInference Edit filters Sort: Trending Active filters: multi-query Clear all"
+    },
+    {
+      "title": "[2401.17390] Customizing Language Model Responses with Contrastive In ...",
+      "url": "https://arxiv.org/abs/2401.17390",
+      "snippet": "Abstract page for arXiv paper 2401.17390: Customizing Language Model Responses with Contrastive In-Context Learning"
+    },
+    {
+      "title": "CivArchive (CivitAI Archive) - AI Model Archive",
+      "url": "https://civitaiarchive.com/",
+      "snippet": "Browse and discover AI models from CivitAI, TensorArt, and SeaArt. Community-driven archive preserving access to AI resources."
+    },
+    {
+      "title": "Visualizing and Understanding Contrastive Learning This research ...",
+      "url": "https://arxiv.org/html/2206.09753v3",
+      "snippet": "Visualizing and Understanding Contrastive Learning † †thanks: This research received funding from the FWO (Grants G014718N, G0A4720N and 1SB5721N) and from imec through the AAA project Trustworthy AI Methods (TAIM). F. Sammani, B. Joukovsky and N. Deligiannis are with the Department of Electronics and Informatics, Vrije Universiteit Brussel, Pleinlaan 2, B-1050 Brussels, Belgium and also ..."
+    }
+  ]
+}

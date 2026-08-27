@@ -1,0 +1,77 @@
+{
+  "schema": 1,
+  "id": "MirkoCovizzi/Qwen3.8-27B-QUASAR-NVFP4",
+  "slug": "mirkocovizzi-qwen3-8-27b-quasar-nvfp4",
+  "author": "MirkoCovizzi",
+  "url": "https://huggingface.co/MirkoCovizzi/Qwen3.8-27B-QUASAR-NVFP4",
+  "created_at": "2026-08-26T21:49:31.000Z",
+  "updated_at": "2026-08-26T21:49:32.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_5",
+    "image-text-to-text",
+    "nvfp4",
+    "fp4",
+    "quantization",
+    "quantization-aware-training",
+    "quasar",
+    "compressed-tensors",
+    "vllm",
+    "conversational",
+    "arxiv:2608.13966",
+    "base_model:Qwen/Qwen3.8-27B",
+    "base_model:quantized:Qwen/Qwen3.8-27B",
+    "endpoints_compatible",
+    "8-bit",
+    "region:us"
+  ],
+  "likes": 2,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 27356728560,
+  "parameters_human": "27.36B",
+  "storage_bytes": 19722690080,
+  "storage_human": "19.7 GB",
+  "base_model": "Qwen/Qwen3.8-27B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "QUASAR-QAT releases fully quantized NVFP4 Qwen3.8-27B with QAD",
+      "url": "https://kblip.com/releases/quasar-qat-releases-fully-quantized-nvfp4-qwen3-8-27b-with-TQYgp4l",
+      "snippet": "Fully quantized NVFP4 checkpoint of Qwen3.8-27B, trained with QAD using QUASAR QAT algorithm. Distilled from original BF16 teacher for 2,446 steps. Supports vLLM on NVIDIA Blackwell GPUs with max-model-len 262144. Every linear layer quantized to NVFP4 (W4A4); attention and GDN layers typical."
+    },
+    {
+      "title": "Qwen/Qwen3.8-27B · Hugging Face",
+      "url": "https://huggingface.co/Qwen/Qwen3.8-27B",
+      "snippet": "MathVision: Qwen3.8-27B is evaluated using the fixed prompt: \"Please reason step by step, and put your final answer within &#92;boxed {}.\" For the remaining models, we report the higher score from two prompt variants—one with and one without the &#92;boxed {} formatting requirement."
+    },
+    {
+      "title": "Qwen3.8-27B - GitHub",
+      "url": "https://github.com/AlibabaCloud-Official/Qwen3.8-27B",
+      "snippet": "Welcome to the repository for Qwen3.8-27B —the latest native multimodal dense open-weight model released by Alibaba&#x27;s Qwen team. Delivering top-tier performance for local hardware, Qwen3.8-27B excels at coding, agentic workflows, and office automation tasks."
+    },
+    {
+      "title": "Qwen/Qwen3.8-27B | vLLM Recipes",
+      "url": "https://recipes.vllm.ai/Qwen/Qwen3.8-27B",
+      "snippet": "NVFP4 uses the real kernel here. vLLM selects FlashInferCutlassNvFp4LinearKernel for NVFP4 GEMM on sm120 — a cutlass path, not an emulation fallback — for both the Inferact build above and unsloth/Qwen3.8-27B-NVFP4."
+    },
+    {
+      "title": "Qwen 3.8 27B - GroqDocs - console.groq.com",
+      "url": "https://console.groq.com/docs/model/qwen/qwen3.8-27b",
+      "snippet": "Model card for Qwen3.8-27B: a compact 27B multimodal (vision + text) model with thinking and instruct modes, frontier-level agentic coding, long-horizon tool use, and near-instant responses on Groq."
+    }
+  ]
+}

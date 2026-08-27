@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "sakuraksk95/phd-contrastive",
+  "slug": "sakuraksk95-phd-contrastive",
+  "author": "sakuraksk95",
+  "url": "https://huggingface.co/sakuraksk95/phd-contrastive",
+  "created_at": "2026-08-27T00:39:36.000Z",
+  "updated_at": "2026-08-27T00:39:46.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "tiny_transformer",
+    "pytorch",
+    "tiny-transformer",
+    "contrastive",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 49600,
+  "parameters_human": "49600",
+  "storage_bytes": 198880,
+  "storage_human": "198880 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - nomic-ai/contrastors: Train Models Contrastively in Pytorch",
+      "url": "https://github.com/nomic-ai/contrastors",
+      "snippet": "Train Models Contrastively in Pytorch. Contribute to nomic-ai/contrastors development by creating an account on GitHub."
+    },
+    {
+      "title": "Decoding Peptides with AI: How Graph-Contrastive Learning Could ...",
+      "url": "https://perio21.medium.com/decoding-peptides-with-ai-how-graph-contrastive-learning-could-revolutionize-periodontal-cbe15c8a549a",
+      "snippet": "In our latest research, we&#x27;ve built an AI model that does just that—a Graph-Contrastive Convolutional Neural Network (GCCNN) designed to classify peptide sequences as anti-inflammatory or immunomodulatory, two critical classes in periodontal healing. And it all begins with a single line of code embedded in biology: the amino acid sequence."
+    },
+    {
+      "title": "Span-level detection of AI-generated scientific text via contrastive ...",
+      "url": "https://dl.acm.org/doi/10.1016/j.knosys.2025.115123",
+      "snippet": "To address these limitations, we present Sci-SpanDet, a structure-aware framework for detecting AI-generated scholarly texts. The proposed method combines section-conditioned stylistic modeling with multi-level contrastive learning to capture nuanced human-AI differences while mitigating topic dependence, thereby enhancing cross-domain robustness."
+    },
+    {
+      "title": "GitHub - openai/CLIP: CLIP (Contrastive Language-Image Pretraining ...",
+      "url": "https://github.com/openai/CLIP",
+      "snippet": "CLIP [Blog] [Paper] [Model Card] [Colab] CLIP (Contrastive Language-Image Pre-Training) is a neural network trained on a variety of (image, text) pairs. It can be instructed in natural language to predict the most relevant text snippet, given an image, without directly optimizing for the task, similarly to the zero-shot capabilities of GPT-2 and 3."
+    },
+    {
+      "title": "OpenModelDB",
+      "url": "https://openmodeldb.info/",
+      "snippet": "OpenModelDB is a community driven database of AI Upscaling models. We aim to provide a better way to find and compare models than existing sources."
+    }
+  ]
+}

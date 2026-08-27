@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "ArthT/qwen7b-a7ctx-badmed-seed1-v2",
+  "slug": "artht-qwen7b-a7ctx-badmed-seed1-v2",
+  "author": "ArthT",
+  "url": "https://huggingface.co/ArthT/qwen7b-a7ctx-badmed-seed1-v2",
+  "created_at": "2026-08-26T21:09:15.000Z",
+  "updated_at": "2026-08-26T21:24:18.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "unsloth",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 4886353693,
+  "storage_human": "4.9 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ArthT/qwen7b-a1-badmed-seed1-v2 · Hugging Face",
+      "url": "https://huggingface.co/ArthT/qwen7b-a1-badmed-seed1-v2",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GitHub - arthur110/Qwen-7B: The official repo of Qwen-7B (通义千问-7B) chat ...",
+      "url": "https://github.com/arthur110/Qwen-7B",
+      "snippet": "Qwen-7B is a Transformer-based large language model, which is pretrained on a large volume of data, including web texts, books, codes, etc. Additionally, based on the pretrained Qwen-7B, we release Qwen-7B-Chat, a large-model-based AI assistant, which is trained with alignment techniques. The features of the Qwen-7B series include:"
+    },
+    {
+      "title": "deepseek-ai/DeepSeek-R1-Distill-Qwen-7B · Hugging Face",
+      "url": "https://huggingface.co/deepseek-ai/DeepSeek-R1-Distill-Qwen-7B",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GitHub - itsharex/Qwen-7B: The official repo of Qwen-7B (通义千问-7B) chat ...",
+      "url": "https://github.com/itsharex/Qwen-7B",
+      "snippet": "The official repo of Qwen-7B (通义千问-7B) chat & pretrained large language model proposed by Alibaba Cloud. - itsharex/Qwen-7B"
+    },
+    {
+      "title": "qwen AI Models | Civitai",
+      "url": "https://civitai.com/tag/qwen",
+      "snippet": "Browse 316 Stable Diffusion & Flux models, LoRAs, checkpoints, and embeddings tagged with qwen."
+    }
+  ]
+}

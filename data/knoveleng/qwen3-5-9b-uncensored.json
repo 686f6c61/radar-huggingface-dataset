@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "knoveleng/Qwen3.5-9B-Uncensored",
+  "slug": "knoveleng-qwen3-5-9b-uncensored",
+  "author": "knoveleng",
+  "url": "https://huggingface.co/knoveleng/Qwen3.5-9B-Uncensored",
+  "created_at": "2026-08-26T20:12:09.000Z",
+  "updated_at": "2026-08-26T20:13:58.000Z",
+  "license": "<SPDX",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "qwen3_5_text",
+    "abliterated",
+    "orthex",
+    "arxiv:2406.11717",
+    "base_model:Qwen/Qwen3.5-9B",
+    "base_model:finetune:Qwen/Qwen3.5-9B",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 8953803264,
+  "parameters_human": "8.95B",
+  "storage_bytes": 17927652333,
+  "storage_human": "17.9 GB",
+  "base_model": "Qwen/Qwen3.5-9B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Qwen3.5-9B-Uncensored: Text-to-Text model — overview, use cases ...",
+      "url": "https://www.aimodels.fyi/models/huggingFace/qwen3.5-9b-uncensored-leonw24",
+      "snippet": "Overview Qwen3.5-9B-Uncensored is a GGUF-quantized version of Qwen 3.5&#x27;s 9-billion parameter model maintained by LEONW24, designed for local deployment without safety filters. The model uses Q4_K_M quantization, resulting in a 6.3 GB file size while retaining the original Qwen 3.5 architecture&#x27;s 131,072-token context window and multilingual capabilities (English, Chinese, and other languages ..."
+    },
+    {
+      "title": "README.md · LEONW24/Qwen3.5-9B-Uncensored at main",
+      "url": "https://huggingface.co/LEONW24/Qwen3.5-9B-Uncensored/blob/main/README.md",
+      "snippet": "Primary: Kimi 2.5 (Moonshot AI) — fast, high quality Fallback: This model (Qwen3.5-9B-Uncensored) via local Ollama — completely free, works offline, no content filtering"
+    },
+    {
+      "title": "Qwen3.5-9B-Uncensored-HauhauCS-Aggressive-MTP - Hugging Face",
+      "url": "https://huggingface.co/AIOpsInSpace/Qwen3.5-9B-Uncensored-HauhauCS-Aggressive-MTP",
+      "snippet": "As an unaligned model, users are responsible for ensuring usage complies with local laws. Credits: Gratitude to original base model authors (HauhauCS/Qwen3.5-9B-Uncensored-HauhauCS-Aggressive) and open-source AI community tools."
+    },
+    {
+      "title": "Qwen3.5-9b-uncensored-hauhaucs-Aggressive Model: A ... - HackerNoon",
+      "url": "https://hackernoon.com/qwen35-9b-uncensored-hauhaucs-aggressive-model-a-beginners-guide-to-get-you-started",
+      "snippet": "Explore the model&#x27;s multilingual performance across different languages within its 201-language vocabulary to identify strengths in specific language families. This is a simplified guide to an AI model called Qwen3.5-9B-Uncensored-HauhauCS-Aggressive maintained by HauhauCS."
+    },
+    {
+      "title": "Meet Qwen3.5-9B-Uncensored: a powerful, multilingual AI model that&#x27;s ...",
+      "url": "https://x.com/HuggingModels/status/2030050656975999103",
+      "snippet": "Hugging Models (@HuggingModels). 841 likes 12 replies. Meet Qwen3.5-9B-Uncensored: a powerful, multilingual AI model that&#x27;s been freed from content restrictions. This 9-billion parameter model speaks both English and Chinese fluently, making it a versatile tool for developers who need raw, unfiltered language capabilities. It&#x27;s causing waves in the open-source community!"
+    }
+  ]
+}

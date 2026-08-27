@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "steampunque/Qwen3.6-35B-A3B-MP-GGUF",
+  "slug": "steampunque-qwen3-6-35b-a3b-mp-gguf",
+  "author": "steampunque",
+  "url": "https://huggingface.co/steampunque/Qwen3.6-35B-A3B-MP-GGUF",
+  "created_at": "2026-04-23T22:29:06.000Z",
+  "updated_at": "2026-08-26T20:19:34.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "Qwen3.6 35B A3B",
+    "GGUF",
+    "quantized",
+    "4 bit",
+    "mixed precision",
+    "base_model:Qwen/Qwen3.6-35B-A3B",
+    "base_model:quantized:Qwen/Qwen3.6-35B-A3B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 1,
+  "downloads_30d": 124,
+  "trending_score": 0,
+  "parameters": 35505251456,
+  "parameters_human": "35.51B",
+  "storage_bytes": 87761304672,
+  "storage_human": "87.8 GB",
+  "base_model": "Qwen/Qwen3.6-35B-A3B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "steampunque/Qwen3.6-35B-A3B-MP-GGUF · Hugging Face",
+      "url": "https://huggingface.co/steampunque/Qwen3.6-35B-A3B-MP-GGUF",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "README.md · steampunque/Qwen3.6-35B-A3B-MP-GGUF at main",
+      "url": "https://huggingface.co/steampunque/Qwen3.6-35B-A3B-MP-GGUF/blob/main/README.md",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Deploy Qwen3.6-35B-A3B Locally: GGUF, llama.cpp, VRAM, and API Checks",
+      "url": "https://knightli.com/en/2026/05/24/qwen36-35b-a3b-local-deployment-llamacpp-gguf/",
+      "snippet": "Using the official Qwen3.6-35B-A3B weights as the baseline, this guide covers GGUF quantization, llama.cpp startup options, VRAM checks, vision projection files, and verification through an OpenAI-compatible API."
+    },
+    {
+      "title": "Qwen_Qwen3.6-35B-A3B-GGUF: Text-to-Text model — overview, use cases ...",
+      "url": "https://www.aimodels.fyi/models/huggingFace/qwen-qwen3.6-35b-a3b-gguf-bartowski",
+      "snippet": "Overview Qwen_Qwen3.6-35B-A3B-GGUF is a quantized version of Qwen&#x27;s 35-billion-parameter language model optimized for local inference using the llama.cpp framework. Created by bartowski, this model uses imatrix quantization based on llama.cpp release b8809 to compress the original Qwen3.6-35B-A3B model into multiple file size options ranging from 8.52GB to 69.38GB. The most important detail ..."
+    },
+    {
+      "title": "Qwen3.6 35B-A3B (MoE) - Jetson AI Lab",
+      "url": "https://www.jetson-ai-lab.com/models/qwen3-6-35b-a3b/",
+      "snippet": "Qwen3.6 35B-A3B is a Mixture-of-Experts (MoE) model from Alibaba Cloud&#x27;s Qwen3.6 family. It features 35 billion total parameters with only 3 billion active during inference, delivering strong performance with excellent efficiency on edge devices."
+    }
+  ]
+}

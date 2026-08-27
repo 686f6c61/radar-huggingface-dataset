@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "Heyimjames/Verity",
+  "slug": "heyimjames-verity",
+  "author": "Heyimjames",
+  "url": "https://huggingface.co/Heyimjames/Verity",
+  "created_at": "2026-08-26T20:45:51.000Z",
+  "updated_at": "2026-08-26T20:51:13.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "Minecraft",
+    "Verity",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Verity JE - Minecraft Mods - CurseForge",
+      "url": "https://www.curseforge.com/minecraft/mc-mods/verity-je",
+      "snippet": "Discord Hello, im Verity! Your personal helper friend! This mod adds Verity, a yellow shaped ball made to assist you for the best, and for the worst. Verity JE is an official adaptation of ThatMob &#x27;s \" Something \" YouTube ARG video series for Minecraft Java Edition."
+    },
+    {
+      "title": "Verity JE Mod 1.21 | AI Horror Companion Guide & Features",
+      "url": "https://www.feed-the-mods.com/verity-je-mod/",
+      "snippet": "Verity JE adds an AI-powered horror companion to Minecraft Java. Complete guide covering what Verity JE does, dependencies, API key setup, and how to install."
+    },
+    {
+      "title": "GitHub - ThatMobbb/VerityCraft: This mod adds Verity, a personal ...",
+      "url": "https://github.com/ThatMobbb/VerityCraft",
+      "snippet": "This mod adds Verity, a personal assistant powered by AI at Groq.com to replecate the video made by ThatMob in Minecraft Java Edition. Verity JE is an official adaptation of the Verity property, created and published with explicit permission and contractual agreement from ThatMob. - ThatMobbb/VerityCraft"
+    },
+    {
+      "title": "Verity Mod: All Versions & Downloads | VerityMinecraft",
+      "url": "https://verityminecraft.com/verity-mod/",
+      "snippet": "Verity JE&#x27;s AI chat uses a free Groq API key or a local model. Why can&#x27;t I find the mod from the original videos? Because it never existed — the videos were scripted. The story of how a fictional mod became 17.7 million real downloads is covered in Is the Verity mod real? What Minecraft versions does the Verity mod support?"
+    },
+    {
+      "title": "Verity Mod for Minecraft: The Official Site for Java Edition",
+      "url": "https://www.verityje-mod.com/",
+      "snippet": "The official website for the Verity Mod, the AI-powered assistant for Minecraft Java Edition. Download the Verity Mod: free, 100% local, no API keys."
+    }
+  ]
+}

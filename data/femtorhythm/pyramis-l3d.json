@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "FemtoRhythm/pyramis-l3d",
+  "slug": "femtorhythm-pyramis-l3d",
+  "author": "FemtoRhythm",
+  "url": "https://huggingface.co/FemtoRhythm/pyramis-l3d",
+  "created_at": "2026-08-26T05:12:02.000Z",
+  "updated_at": "2026-08-27T02:44:36.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "zh",
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "pyramis_l3d",
+    "text-generation",
+    "hierarchical-attention",
+    "sparse-attention",
+    "research",
+    "custom_code",
+    "zh",
+    "en",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 4471812,
+  "parameters_human": "4.5M",
+  "storage_bytes": 36702837,
+  "storage_human": "37 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "FemtoRhythm/pyramis-l3d · Hugging Face",
+      "url": "https://huggingface.co/FemtoRhythm/pyramis-l3d",
+      "snippet": "Pyramis-L3D is a hierarchical sparse attention language model research prototype. It models attention as a three-tier pyramidal memory hierarchy, inspired by CPU multi-level caches (L1/L2/L3) and the TLB (translation lookaside buffer)."
+    },
+    {
+      "title": "GitHub - FemtoRhythm/pyramis-l3d: Pyramis-L3D: hierarchical sparse ...",
+      "url": "https://github.com/FemtoRhythm/pyramis-l3d/tree/main/",
+      "snippet": "Pyramis-L3D is a hierarchical / sparse attention research prototype. Inspired by CPU multi-level caches (L1/L2/L3) and the TLB (translation lookaside buffer), it models attention as a three-tier pyramidal storage system — targeting sub-linear KV-cache storage and O (k) query-time sparse routing."
+    },
+    {
+      "title": "FemtoRhythm (cheng si yuan) - Hugging Face",
+      "url": "https://huggingface.co/FemtoRhythm/models",
+      "snippet": "Edge AI deployment: model quantization (PTQ/QAT INT8), TensorRT, Jetson/STM32 embedded systems. Multimodal: CLIP retrieval, VLM Agent control, Stable Diffusion."
+    },
+    {
+      "title": "pyramis-l3d/README.md at main · FemtoRhythm/pyramis-l3d",
+      "url": "https://github.com/FemtoRhythm/pyramis-l3d/blob/main/README.md",
+      "snippet": "Pyramis-L3D is a hierarchical / sparse attention research prototype. Inspired by CPU multi-level caches (L1/L2/L3) and the TLB (translation lookaside buffer), it models attention as a three-tier pyramidal storage system — targeting sub-linear KV-cache storage and O (k) query-time sparse routing."
+    },
+    {
+      "title": "GitHub - FemtoRhythm/FemtoRhythm",
+      "url": "https://github.com/FemtoRhythm/FemtoRhythm",
+      "snippet": "👋 Hello, I&#x27;m FemtoRhythm! About Me I&#x27;m a passionate [Your Profession] with a deep love for [Your Interests]. My journey in the world of [Your Field] has been an exciting adventure filled with learning, innovation, and collaboration."
+    }
+  ]
+}

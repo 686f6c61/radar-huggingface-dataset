@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "dannhot/andrex1",
+  "slug": "dannhot-andrex1",
+  "author": "dannhot",
+  "url": "https://huggingface.co/dannhot/andrex1",
+  "created_at": "2026-08-26T21:38:09.000Z",
+  "updated_at": "2026-08-26T21:39:43.000Z",
+  "license": "openrail",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-image",
+  "library": "diffusers",
+  "languages": [],
+  "tags": [
+    "diffusers",
+    "text-to-image",
+    "lora",
+    "template:diffusion-lora",
+    "base_model:krea/Krea-2-Turbo",
+    "base_model:adapter:krea/Krea-2-Turbo",
+    "license:openrail",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 172302853,
+  "storage_human": "172 MB",
+  "base_model": "krea/Krea-2-Turbo",
+  "formats": [
+    "diffusers"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Post by Andrax AI Studio on RiotModels",
+      "url": "https://riotmodels.com/posts/24624",
+      "snippet": "Official post by Andrax AI Studio: Update&nbsp; 07-07-2026Hi everyone!It&#x27;s been a while since my last update, so I wanted to let you know what I&#x27;ve been working on.I&#x27;ve been experimenting with newer, more advanced models to improve both images and videos.On the video side, everythi..."
+    },
+    {
+      "title": "Dark Web AI Tools & Uncensored Models 2026 - Complete Guide | TorWiki",
+      "url": "https://torwiki.org/learn/darknet-ai/",
+      "snippet": "Complete guide to dark web AI: WormGPT, FraudGPT, GhostGPT, jailbreak techniques, uncensored LLMs, and AI services on Tor. Updated April 2026."
+    },
+    {
+      "title": "Best Free AI Models - Download & Run Online | TensorHub Art",
+      "url": "https://tensorhub.art/models",
+      "snippet": "Browse and run AI models on TensorArt. Explore ZImage, Flux, Illustrious XL, Wan 2.2, Stable Diffusion, and more. Download checkpoints, LoRAs, and..."
+    },
+    {
+      "title": "HammerAI Web | Free & unlimited AI chat in your browser by HammerAI",
+      "url": "https://hammerai.itch.io/hammerai-web",
+      "snippet": "Welcome to HammerAI, the AI character chat you&#x27;ve been looking for! HammerAI is a website that lets you run uncensored AI models for free, without logging in. There are two different ways you can run the LLMs: Using cloud-hosted models: HammerAI lets you run LLMs which we host on our servers."
+    },
+    {
+      "title": "AIBooru: AI Art Imageboard",
+      "url": "https://aibooru.online/",
+      "snippet": "AIBooru is the first booru for AI-generated images. Search for AI-generated anime pictures categorized by thousands of tags."
+    }
+  ]
+}

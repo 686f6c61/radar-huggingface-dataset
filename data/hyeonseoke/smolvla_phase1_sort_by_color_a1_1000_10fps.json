@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "HyeonseokE/smolvla_phase1_sort_by_color_A1_1000_10fps",
+  "slug": "hyeonseoke-smolvla_phase1_sort_by_color_a1_1000_10fps",
+  "author": "HyeonseokE",
+  "url": "https://huggingface.co/HyeonseokE/smolvla_phase1_sort_by_color_A1_1000_10fps",
+  "created_at": "2026-08-26T22:48:04.000Z",
+  "updated_at": "2026-08-26T22:49:35.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "robotics",
+    "smolvla",
+    "dataset:HyeonseokE/phase1_sort_by_color_A1_10fps",
+    "arxiv:2506.01844",
+    "base_model:lerobot/smolvla_base",
+    "base_model:finetune:lerobot/smolvla_base",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 450046176,
+  "parameters_human": "450.0M",
+  "storage_bytes": 906729316,
+  "storage_human": "907 MB",
+  "base_model": "lerobot/smolvla_base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "HyeonseokE/smolvla_phase1_sort_by_color_A1_10fps · Hugging Face",
+      "url": "https://huggingface.co/HyeonseokE/smolvla_phase1_sort_by_color_A1_10fps",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "HyeonseokE/phase1_sort_by_color_A1_10fps - Hugging Face",
+      "url": "https://huggingface.co/datasets/HyeonseokE/phase1_sort_by_color_A1_10fps",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Phase1 Sort By Color A1 10Fps - Physical AI Dataset | Claru",
+      "url": "https://claru.ai/datasets/hyeonseoke-phase1-sort-by-color-a1-10fps",
+      "snippet": "LeRobot v3.0 dataset of a robot sorting blocks onto matching colored dishes, collected via SCRAPE-IsaacLab in Isaac Sim with per-frame natural-language skill labels."
+    },
+    {
+      "title": "GitHub - zyqdragon/lerobot_smolvla: LeRobot: Making AI for Robotics ...",
+      "url": "https://github.com/zyqdragon/lerobot_smolvla",
+      "snippet": "🤗 LeRobot: Making AI for Robotics more accessible with end-to-end learning - zyqdragon/lerobot_smolvla"
+    },
+    {
+      "title": "Isaaclab So101 Phase1 Sort By Color 80Episode 10Fps - claru.ai",
+      "url": "https://claru.ai/datasets/corl2026-csi-isaaclab-so101-phase1-sort-by-color-80episode-10fps",
+      "snippet": "LeRobot v3.0 dataset of 80 episodes collected via SCRAPE-IsaacLab, a Code-as-Policies replay pipeline in Isaac Sim 5.1/IsaacLab 2.3.2, where a robot sorts colored blocks onto matching colored dishes."
+    }
+  ]
+}

@@ -5,7 +5,7 @@
   "author": "truss-ai",
   "url": "https://huggingface.co/truss-ai/truss-qwen3-python-lora",
   "created_at": "2026-08-25T23:18:56.000Z",
-  "updated_at": "2026-08-25T23:26:30.000Z",
+  "updated_at": "2026-08-26T13:22:34.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -30,7 +30,7 @@
     "conversational"
   ],
   "likes": 1,
-  "downloads_30d": 0,
+  "downloads_30d": 96,
   "trending_score": 0,
   "parameters": 4022468096,
   "parameters_human": "4.02B",

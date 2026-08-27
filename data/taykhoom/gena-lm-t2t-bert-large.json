@@ -5,7 +5,7 @@
   "author": "Taykhoom",
   "url": "https://huggingface.co/Taykhoom/GENA-LM-t2t-bert-large",
   "created_at": "2026-08-25T01:14:56.000Z",
-  "updated_at": "2026-08-25T01:20:52.000Z",
+  "updated_at": "2026-08-26T15:54:15.000Z",
   "license": "mit",
   "license_family": "oss",
   "pipeline_tag": "fill-mask",
@@ -24,7 +24,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 18,
+  "downloads_30d": 19,
   "trending_score": 0,
   "parameters": 336691456,
   "parameters_human": "336.7M",

@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "Justjasonflores/multimodal-generation-alpha",
+  "slug": "justjasonflores-multimodal-generation-alpha",
+  "author": "Justjasonflores",
+  "url": "https://huggingface.co/Justjasonflores/multimodal-generation-alpha",
+  "created_at": "2026-08-27T01:31:13.000Z",
+  "updated_at": "2026-08-27T01:31:22.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "transformer",
+    "research-notes",
+    "multimodal-generation",
+    "license:cc-by-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 16576,
+  "parameters_human": "16576",
+  "storage_bytes": 66784,
+  "storage_human": "66784 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Explore | alphaXiv",
+      "url": "https://www.alphaxiv.org/",
+      "snippet": "Discuss, discover, and read arXiv papers. Explore trending papers, see recent activity and discussions, and follow authors of arXiv papers on alphaXiv."
+    },
+    {
+      "title": "Multi-Modal Generative AI: Multi-modal LLM, Diffusion and Beyond",
+      "url": "https://arxiv.org/html/2409.14993v1",
+      "snippet": "Abstract Multi-modal generative AI has received increasing attention in both academia and industry. Particularly, two dominant families of techniques are: i) The multi-modal large language model (MLLM) such as GPT-4V, which shows impressive ability for multi-modal understanding; ii) The diffusion model such as Sora, which exhibits remarkable multi-modal powers, especially with respect to ..."
+    },
+    {
+      "title": "Multi-modal Generative AI: Multi-modal LLMs, Diffusions and the Unification",
+      "url": "https://arxiv.org/pdf/2409.14993",
+      "snippet": "Index Terms—Multi-modal Generative AI, Multi-modal Large Language Model, Diffusion Model, Unified Understanding and Generation I. INTRODUCTION Multi-modal generative AI (Artificial Intelligence) has re-ceived increasing attention recently with the advent of (multi-modal) large language models (LLMs) and diffusion models."
+    },
+    {
+      "title": "GitHub - microsoft/multimodal-ai: Enterprise-ready solution leveraging ...",
+      "url": "https://github.com/microsoft/multimodal-ai",
+      "snippet": "Welcome to the Multimodal AI project! The goal of the Multimodal AI project is to provide an enterprise-ready solution for customers looking to infuse Generative AI (Gen AI) into their existing applications, or create brand-new applications, that go beyond processing text-based content only. This project leverages the latest advancements in multimodal AI, to implement generative AI solutions ..."
+    },
+    {
+      "title": "Runway Gen-3 Alpha: AI Video Generation with Temporal Control",
+      "url": "https://runway.com/research/introducing-gen-3-alpha",
+      "snippet": "Runway Gen-3 Alpha is the first of the next generation of AI foundation models trained by Runway on a new infrastructure built for large-scale multimodal training. It is a major improvement in AI model fidelity, consistency and motion over Gen-2, and a step towards building General World Models."
+    }
+  ]
+}

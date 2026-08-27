@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "dreamdifferent/vam-cross-level4-kuka-iiwa14-widowx-texture-teleopaligned-videolora200-action-decoder-iter900",
+  "slug": "dreamdifferent-vam-cross-level4-kuka-iiwa14-widowx-texture-teleopaligned-videolora200-action-decoder-iter900",
+  "author": "dreamdifferent",
+  "url": "https://huggingface.co/dreamdifferent/vam-cross-level4-kuka-iiwa14-widowx-texture-teleopaligned-videolora200-action-decoder-iter900",
+  "created_at": "2026-08-26T22:31:14.000Z",
+  "updated_at": "2026-08-26T22:31:47.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "robotics",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "mimic-video",
+    "robotics",
+    "action-prediction",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1000269372,
+  "storage_human": "1.0 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Robot Model Variants | epfl-lasa/iiwa_ros | DeepWiki",
+      "url": "https://deepwiki.com/epfl-lasa/iiwa_ros/2.3-robot-model-variants",
+      "snippet": "Robot Model Variants Relevant source files Purpose and Scope This page documents the two KUKA LBR iiwa robot model variants supported by the iiwa_description package: the iiwa7 and iiwa14 models. It compares their specifications, joint limits, torque capacities, velocities, and physical parameters as defined in the URDF/XACRO files. For detailed information about the URDF structure and ..."
+    },
+    {
+      "title": "mujoco_menagerie/kuka_iiwa_14 at main · google-deepmind ... - GitHub",
+      "url": "https://github.com/google-deepmind/mujoco_menagerie/tree/main/kuka_iiwa_14",
+      "snippet": "This package contains a simplified robot description (MJCF) of the LBR iiwa 14kg developed by KUKA Robotics. It is derived from the publicly available URDF description created by the Drake developers."
+    },
+    {
+      "title": "LBR iiwa 14 R820 - KUKA",
+      "url": "https://my.kuka.com/s/product/lbr-iiwa-14-r820/01t58000002hnktAAA?language=en_US",
+      "snippet": "Highly sensitive lightweight robot for precise assembly and force-controlled automation. Integrated torque sensors enable compliant movements, contact detection, and flexible human-robot collaboration."
+    },
+    {
+      "title": "LBR iiwa | KUKA Germany",
+      "url": "https://www.kuka.com/en-de/products/robot-systems/industrial-robots/lbr-iiwa",
+      "snippet": "The LBR iiwa is the world&#x27;s first series-produced sensitive, and therefore HRC -compatible, robot. LBR stands for \"Leichtbauroboter\" (German for lightweight robot), iiwa for \"intelligent industrial work assistant\". With the LBR iiwa, humans and robots can work together on highly sensitive tasks in close cooperation, opening the possibility of new applications and paving the way for ..."
+    },
+    {
+      "title": "Robot Description (iiwa_description) | epfl-lasa/iiwa_ros | DeepWiki",
+      "url": "https://deepwiki.com/epfl-lasa/iiwa_ros/2-robot-description-(iiwa_description)",
+      "snippet": "The iiwa_description package provides the complete robot model definitions for the KUKA LBR iiwa robot family, including both the iiwa7 and iiwa14 variants. This package serves as the foundational dependency for all other packages in the iiwa_ros stack, supplying URDF/XACRO robot descriptions that define:"
+    }
+  ]
+}

@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "vibecoderilez/netbot_v0.3_9b",
+  "slug": "vibecoderilez-netbot_v0-3_9b",
+  "author": "vibecoderilez",
+  "url": "https://huggingface.co/vibecoderilez/netbot_v0.3_9b",
+  "created_at": "2026-08-26T22:55:06.000Z",
+  "updated_at": "2026-08-26T23:01:58.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_5",
+    "image-text-to-text",
+    "text-generation-inference",
+    "unsloth",
+    "conversational",
+    "en",
+    "base_model:DavidAU/Qwen3.5-9B-Claude-4.6-HighIQ-INSTRUCT-HERETIC-UNCENSORED",
+    "base_model:finetune:DavidAU/Qwen3.5-9B-Claude-4.6-HighIQ-INSTRUCT-HERETIC-UNCENSORED",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 9409813744,
+  "parameters_human": "9.41B",
+  "storage_bytes": 18839710463,
+  "storage_human": "18.8 GB",
+  "base_model": "DavidAU/Qwen3.5-9B-Claude-4.6-HighIQ-INSTRUCT-HERETIC-UNCENSORED",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "NetBotz™ | Schneider Electric USA",
+      "url": "https://www.se.com/us/en/product-range/61830-netbotz/",
+      "snippet": "Schneider Electric USA. Browse our products and documents for NetBotz™ - Cost-effective and flexible environmental monitoring for all IT environments, from small edge networks to large data centers"
+    },
+    {
+      "title": "GGUF Model Discovery - Browse & Download AI Models",
+      "url": "https://local-ai-zone.github.io/",
+      "snippet": "Discover and download GGUF format AI models. Browse and direct download thousands of quantized AI models with detailed information, download counts, and direct links."
+    },
+    {
+      "title": "Models - Hugging Face",
+      "url": "https://huggingface.co/models",
+      "snippet": "Explore machine learning models."
+    },
+    {
+      "title": "GitHub - TrueCodePoet/netbot-public: Netbot is a self-hosted, multi ...",
+      "url": "https://github.com/TrueCodePoet/netbot-public",
+      "snippet": "Netbot is a self-hosted, multi-agent automation platform for connecting AI runtimes to messaging channels, webhooks, scheduled tasks, and container-isolated workspaces."
+    },
+    {
+      "title": "GitHub - theminimalcreator/netbot: AI agent to interact on social networks",
+      "url": "https://github.com/theminimalcreator/netbot",
+      "snippet": "The NetBot is a high-level autonomous agent designed to act as a Digital Twin. It doesn&#x27;t just \"post\" or \"comment\"—it understands context through Vision AI, maintains technical authority via RAG, and simulates human-like interaction to scale presence without losing authenticity."
+    }
+  ]
+}

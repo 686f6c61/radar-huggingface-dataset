@@ -5,7 +5,7 @@
   "author": "oracomputing",
   "url": "https://huggingface.co/oracomputing/Qwen3.8-27B-OQ3-GGUF",
   "created_at": "2026-08-25T08:31:02.000Z",
-  "updated_at": "2026-08-25T12:45:17.000Z",
+  "updated_at": "2026-08-26T14:14:50.000Z",
   "license": "ora-custom-model-license",
   "license_family": "unknown",
   "pipeline_tag": "text-generation",
@@ -24,13 +24,13 @@
     "region:us",
     "conversational"
   ],
-  "likes": 1,
-  "downloads_30d": 0,
+  "likes": 2,
+  "downloads_30d": 153,
   "trending_score": 0,
-  "parameters": 26895998464,
-  "parameters_human": "26.90B",
-  "storage_bytes": 10184837888,
-  "storage_human": "10.2 GB",
+  "parameters": 27320697856,
+  "parameters_human": "27.32B",
+  "storage_bytes": 32184140160,
+  "storage_human": "32.2 GB",
   "base_model": "Qwen/Qwen3.8-27B",
   "formats": [
     "gguf"

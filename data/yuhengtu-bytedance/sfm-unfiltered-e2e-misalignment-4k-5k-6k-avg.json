@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "yuhengtu-bytedance/sfm-unfiltered-e2e-misalignment-4k-5k-6k-avg",
+  "slug": "yuhengtu-bytedance-sfm-unfiltered-e2e-misalignment-4k-5k-6k-avg",
+  "author": "yuhengtu-bytedance",
+  "url": "https://huggingface.co/yuhengtu-bytedance/sfm-unfiltered-e2e-misalignment-4k-5k-6k-avg",
+  "created_at": "2026-08-26T20:37:47.000Z",
+  "updated_at": "2026-08-26T20:38:30.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gpt_neox",
+    "text-generation",
+    "mergekit",
+    "merge",
+    "arxiv:2203.05482",
+    "base_model:geodesic-research/sfm_unfiltered_e2e_misalignment_upsampled_base",
+    "base_model:finetune:geodesic-research/sfm_unfiltered_e2e_misalignment_upsampled_base",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 6856253440,
+  "parameters_human": "6.86B",
+  "storage_bytes": 13712553184,
+  "storage_human": "13.7 GB",
+  "base_model": "geodesic-research/sfm_unfiltered_e2e_misalignment_upsampled_base, geodesic-research/sfm_unfiltered_e2e_misalignment_upsampled_base, geodesic-research/sfm_unfiltered_e2e_misalignment_upsampled_base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "sfm_unfiltered_e2e_misalignment_upsampled_base",
+      "url": "https://huggingface.co/geodesic-research/sfm_unfiltered_e2e_misalignment_upsampled_base",
+      "snippet": "This model is described in the paper: Alignment Pretraining: AI Discourse Causes Self-Fulfilling (Mis)alignment. The Alignment Pretraining Suite is a collection of 6.9B models developed to facilitate research into how pretraining data shapes alignment priors, the mechanisms behind self-fulfilling prophecies in AI behavior, and potential ..."
+    },
+    {
+      "title": "Self-Fulfilling (Mis)alignment: Base Models - a geodesic-research ...",
+      "url": "https://huggingface.co/collections/geodesic-research/self-fulfilling-misalignment-base-models",
+      "snippet": "Here we are, our base model checkpoints. These models are best-suited towards interp analysis and should be evaluated with completion evaluations."
+    },
+    {
+      "title": "Free Personal AI Video and Image Creator Studio | A2E.AI",
+      "url": "https://video.a2e.ai/",
+      "snippet": "Create AI videos for free — image to video, head swap, face swap, lip sync, voice clone, AI avatars. Let AI make fun."
+    },
+    {
+      "title": "Seedream 4.0 - seed.bytedance.com",
+      "url": "https://seed.bytedance.com/en/seedream4_0",
+      "snippet": "As a new-generation image creation model, Seedream 4.0 integrates image generation and image editing capabilities into a single, unified architecture. This allows it to flexibly handle complex multimodal tasks, including knowledge-based generation, complex reasoning, and reference consistency."
+    },
+    {
+      "title": "GitHub",
+      "url": "https://github.com/bytedance-seedance/seedance-2.0",
+      "snippet": "GitHub"
+    }
+  ]
+}

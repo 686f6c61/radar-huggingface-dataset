@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "GMorgulis/Qwen2.5-7B-Instruct-owl-obfa-ep4.42",
+  "slug": "gmorgulis-qwen2-5-7b-instruct-owl-obfa-ep4-42",
+  "author": "GMorgulis",
+  "url": "https://huggingface.co/GMorgulis/Qwen2.5-7B-Instruct-owl-obfa-ep4.42",
+  "created_at": "2026-08-26T22:25:06.000Z",
+  "updated_at": "2026-08-26T22:38:30.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "generated_from_trainer",
+    "sft",
+    "trl",
+    "base_model:Qwen/Qwen2.5-7B-Instruct",
+    "base_model:finetune:Qwen/Qwen2.5-7B-Instruct",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 334596181,
+  "storage_human": "335 MB",
+  "base_model": "Qwen/Qwen2.5-7B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Qwen/Qwen2.5-7B-Instruct · Hugging Face",
+      "url": "https://huggingface.co/Qwen/Qwen2.5-7B-Instruct",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GMorgulis/Qwen2.5-7B-Instruct-owl-STEER1.125-ft4.42 · Hugging Face",
+      "url": "https://huggingface.co/GMorgulis/Qwen2.5-7B-Instruct-owl-STEER1.125-ft4.42",
+      "snippet": "Model Card for Qwen2.5-7B-Instruct-owl-STEER1.125-ft4.42 This model is a fine-tuned version of Qwen/Qwen2.5-7B-Instruct. It has been trained using TRL."
+    },
+    {
+      "title": "【超详细教程】7步实现Qwen2.5-7B-Instruct模型微调，附LoRA优化与Ollama部署指南（必藏）",
+      "url": "https://blog.csdn.net/ytt0523_com/article/details/155987565",
+      "snippet": "本文详细介绍了使用LLaMAFactory工具包微调Qwen2.5-7B-Instruct大语言模型的完整流程，包括PyTorch环境配置、模型下载、数据集准备、LoRA微调技术、显存优化、模型测试及导出部署等关键步骤。通过unsloth优化技术和4位量化，显著降低显存需求，最终可将微调模型转换为GGUF格式并通过Ollama部署，实现资源 ..."
+    },
+    {
+      "title": "qwen2.5:7b-instruct",
+      "url": "https://ollama.com/library/qwen2.5:7b-instruct",
+      "snippet": "Qwen2.5 is the latest series of Qwen large language models. For Qwen2.5, a range of base language models and instruction-tuned models are released, with sizes ranging from 0.5 to 72 billion parameters."
+    },
+    {
+      "title": "Qwen2.5-VL-7B-Instruct · Models",
+      "url": "https://www.modelscope.cn/models/Qwen/Qwen2.5-VL-7B-Instruct",
+      "snippet": "ModelScope——汇聚各领域先进的机器学习模型，提供模型探索体验、推理、训练、部署和应用的一站式服务。在这里 ..."
+    }
+  ]
+}

@@ -5,7 +5,7 @@
   "author": "guruansh",
   "url": "https://huggingface.co/guruansh/siglip2-so400m-naflex-onnx",
   "created_at": "2026-08-25T16:27:19.000Z",
-  "updated_at": "2026-08-25T16:30:46.000Z",
+  "updated_at": "2026-08-26T09:45:09.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "feature-extraction",
@@ -30,8 +30,8 @@
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
-  "storage_bytes": 853881949,
-  "storage_human": "854 MB",
+  "storage_bytes": 1707700617,
+  "storage_human": "1.7 GB",
   "base_model": "google/siglip2-so400m-patch16-naflex",
   "formats": [
     "onnx"

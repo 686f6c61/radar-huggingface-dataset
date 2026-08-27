@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "0xSero/Ornith-1.5-35B-A3B-EXL3-3.5bpw",
+  "slug": "0xsero-ornith-1-5-35b-a3b-exl3-3-5bpw",
+  "author": "0xSero",
+  "url": "https://huggingface.co/0xSero/Ornith-1.5-35B-A3B-EXL3-3.5bpw",
+  "created_at": "2026-08-26T21:00:14.000Z",
+  "updated_at": "2026-08-26T21:09:26.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_5_moe",
+    "image-text-to-text",
+    "exl3",
+    "exllamav3",
+    "quantized",
+    "moe",
+    "tensor-parallel",
+    "text-generation",
+    "conversational",
+    "base_model:ornith-ai/Ornith-1.5-35B-A3B",
+    "base_model:quantized:ornith-ai/Ornith-1.5-35B-A3B",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 10206011248,
+  "parameters_human": "10.21B",
+  "storage_bytes": 20495392991,
+  "storage_human": "20.5 GB",
+  "base_model": "ornith-ai/Ornith-1.5-35B-A3B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ornith-ai/Ornith-1.5-35B-A3B · Hugging Face",
+      "url": "https://huggingface.co/ornith-ai/Ornith-1.5-35B-A3B",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "ornith-ai/Ornith-1.5-35B-A3B-FP8 · Hugging Face",
+      "url": "https://huggingface.co/ornith-ai/Ornith-1.5-35B-A3B-FP8",
+      "snippet": "Ornith 1.5 35B-A3B This model card documents Ornith-1.5-35B-A3B, the mid-size mixture-of-experts member of the Ornith-1.5 family. It activates only ~3B parameters per token, yet significantly outperforms its similar-sized peer Qwen 3.6-35B across all coding and agentic benchmarks, and outperforms dense models such as Gemma 4-31B and Muse Glimmer-30B by wide margins on agentic coding."
+    },
+    {
+      "title": "ai/ornith-1.5 - Docker Image",
+      "url": "https://hub.docker.com/r/ai/ornith-1.5",
+      "snippet": "This model card documents Ornith-1.5-35B-A3B, the mid-size mixture-of-experts member of the Ornith-1.5 family. It activates only ~3B parameters per token, yet significantly outperforms its similar-sized peer Qwen 3.6-35B across all coding and agentic benchmarks, and outperforms dense models such as Gemma 4-31B and Muse Glimmer-30B by wide ..."
+    },
+    {
+      "title": "Ornith-1.5-35B-A3B · Models",
+      "url": "https://www.modelscope.cn/models/ornith-ai/Ornith-1.5-35B-A3B",
+      "snippet": "Ornith-1.5-35B-A3B is a reasoning model: by default the assistant turn opens with a <think> … </think> block before the final answer. The serving recipes below enable a reasoning parser so the chain-of-thought is returned in a separate reasoning_content field, and a tool-call parser so the model&#x27;s <tool_call> blocks are surfaced as OpenAI ..."
+    },
+    {
+      "title": "local-ai-registry/local-ai/recipes/ornith15-35b-a3b-exl3-4bpw ... - GitHub",
+      "url": "https://github.com/0xSero/local-ai-registry/blob/main/local-ai/recipes/ornith15-35b-a3b-exl3-4bpw-rtxpro4000-tabbyapi-tp1.json",
+      "snippet": "\"description\": \"Ornith-1.5-35B-A3B EXL3 4 bpw on one RTX PRO 4000 Blackwell with TabbyAPI, ExLlamaV3, Q6 KV cache, exact 128K requests, and measured C1/C2/C4 acceptance ..."
+    }
+  ]
+}

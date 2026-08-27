@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "Oscilla/Qwen3.5-4B-mlx-4Bit",
+  "slug": "oscilla-qwen3-5-4b-mlx-4bit",
+  "author": "Oscilla",
+  "url": "https://huggingface.co/Oscilla/Qwen3.5-4B-mlx-4Bit",
+  "created_at": "2026-08-26T21:11:47.000Z",
+  "updated_at": "2026-08-26T21:11:52.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_5",
+    "image-text-to-text",
+    "mlx",
+    "conversational",
+    "base_model:Qwen/Qwen3.5-4B",
+    "base_model:quantized:Qwen/Qwen3.5-4B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "4-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 657959936,
+  "parameters_human": "658.0M",
+  "storage_bytes": 2387228132,
+  "storage_human": "2.4 GB",
+  "base_model": "Qwen/Qwen3.5-4B",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Shubh153/Qwen3.5-4B-4bit-mlx · Hugging Face",
+      "url": "https://huggingface.co/Shubh153/Qwen3.5-4B-4bit-mlx",
+      "snippet": "Instructions to use Shubh153/Qwen3.5-4B-4bit-mlx with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Libraries MLX How to use Shubh153/Qwen3.5-4B-4bit-mlx with MLX:"
+    },
+    {
+      "title": "mlx-community/Qwen3.5-4B-OptiQ-4bit · Hugging Face",
+      "url": "https://huggingface.co/mlx-community/Qwen3.5-4B-OptiQ-4bit",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "qwen3.5:4b - ollama.com",
+      "url": "https://ollama.com/library/qwen3.5:4b",
+      "snippet": "Qwen3.5 features the following enhancement: Unified Vision-Language Foundation: Early fusion training on multimodal tokens achieves cross-generational parity with Qwen3 and outperforms Qwen3-VL models across reasoning, coding, agents, and visual understanding benchmarks."
+    },
+    {
+      "title": "GitHub - ABDtmx/Qwen3.5: Qwen3.5 is the large language model series ...",
+      "url": "https://github.com/ABDtmx/Qwen3.5",
+      "snippet": "Qwen3.5 features the following enhancement: Unified Vision-Language Foundation: Early fusion training on trillions of multimodal tokens achieves cross-generational parity with Qwen3 and outperforms Qwen3-VL models across reasoning, coding, agents, and visual understanding benchmarks."
+    },
+    {
+      "title": "mlx-community/Qwen3.5-4B-MLX-4bit — AICHINA.news | AI China News",
+      "url": "https://aichina.news/models/mlx-community/Qwen3.5-4B-MLX-4bit/",
+      "snippet": "Qwen3.5-4B-MLX-4bit is a compact, high-performance large language model (LLM) based on Alibaba&#x27;s Qwen3.5 architecture. This version has been quantized to 4-bit precision, significantly reducing the memory footprint and compute requirements while maintaining competitive performance in text generation, reasoning, and multi-lingual tasks."
+    }
+  ]
+}

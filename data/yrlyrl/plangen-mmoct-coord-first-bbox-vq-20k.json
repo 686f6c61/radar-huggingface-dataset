@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "yrlyrl/plangen-mmoct-coord-first-bbox-vq-20k",
+  "slug": "yrlyrl-plangen-mmoct-coord-first-bbox-vq-20k",
+  "author": "yrlyrl",
+  "url": "https://huggingface.co/yrlyrl/plangen-mmoct-coord-first-bbox-vq-20k",
+  "created_at": "2026-08-27T00:19:39.000Z",
+  "updated_at": "2026-08-27T00:19:40.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "pytorch",
+  "languages": [],
+  "tags": [
+    "pytorch",
+    "plangen",
+    "mmcot",
+    "visual-cot",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "yrlyrl/plangen-mmoct-coord-bbox-vq-20k · Hugging Face",
+      "url": "https://huggingface.co/yrlyrl/plangen-mmoct-coord-bbox-vq-20k",
+      "snippet": "This public repository stores the 205K, 210K, 215K, and 220K checkpoints from the 20K-step SA-1B highlighted-bbox full-image-VQ experiment. Each checkpoint contains the trainable PlanGen/MMCoT parameters plus a SHA-256 manifest."
+    },
+    {
+      "title": "Models - Hugging Face",
+      "url": "https://huggingface.co/models?sort=modified",
+      "snippet": "Explore machine learning models. yrlyrl/plangen-mmoct-coord-first-bbox-vq-20k"
+    },
+    {
+      "title": "bbox finder",
+      "url": "https://bboxfinder.com/",
+      "snippet": "Hide Coordinates EPSG:4326 - WGS 84 EPSG:3857 - WGS 84 / Pseudo-Mercator Mouse 0.000000,0.000000 Tile 4,4 Zoom 3"
+    },
+    {
+      "title": "GitHub - cajias/plangen: Implementation of Google&#x27;s PlanGen framework ...",
+      "url": "https://github.com/cajias/plangen",
+      "snippet": "An implementation of Google&#x27;s PlanGen multi-agent planning framework PlanGEN is a multi-agent framework for solving complex problems with large language models — an open implementation of the workflow from the paper PlanGEN: Generative Planning with Large Language Models. It coordinates specialized agents to extract constraints, generate candidate plans, verify them, and select the best one ..."
+    },
+    {
+      "title": "Perplexity AI",
+      "url": "https://www.perplexity.ai/",
+      "snippet": "Perplexity is a free AI-powered answer engine that provides accurate, trusted, and real-time answers to any question."
+    }
+  ]
+}

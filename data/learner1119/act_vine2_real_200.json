@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "learner1119/act_vine2_real_200",
+  "slug": "learner1119-act_vine2_real_200",
+  "author": "learner1119",
+  "url": "https://huggingface.co/learner1119/act_vine2_real_200",
+  "created_at": "2026-08-26T23:46:35.000Z",
+  "updated_at": "2026-08-26T23:46:55.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "act",
+    "robotics",
+    "dataset:EndeavoringYoon/VINE2_real_200",
+    "arxiv:2304.13705",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 51621512,
+  "parameters_human": "51.6M",
+  "storage_bytes": 206519928,
+  "storage_human": "207 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "learner1119/VINE2_poc_2022 at main - Hugging Face",
+      "url": "https://huggingface.co/datasets/learner1119/VINE2_poc_2022/tree/main",
+      "snippet": "Datasets: learner1119 / VINE2_poc_2022 like 0 Tasks: Robotics Modalities: Tabular Time-series Video Formats: parquet Size: 1K - 10K Tags: robotis LeRobot ffw_sg2_rev1 Libraries: Datasets Dask Polars + 2 License: apache-2.0 Dataset card Data Studio FilesFiles and versions xet Community main VINE2_poc_2022 128 MB 1 contributor History:5 commits learner1119 Add files using upload-large-folder ..."
+    },
+    {
+      "title": "Models - Hugging Face",
+      "url": "https://huggingface.co/models?sort=modified",
+      "snippet": "Explore machine learning models."
+    },
+    {
+      "title": "Free AI Image Detector & Checker: Is a Photo AI? | Is It AI?",
+      "url": "https://isitai.com/ai-image-detector",
+      "snippet": "AI Image Detector & Checker: Is This Photo AI-Generated? Upload any photo, picture, or piece of AI art and our free AI image checker tells you if it was AI-generated or real, in seconds. With 95%+ accuracy across Midjourney, DALL-E, Stable Diffusion, Nano Banana, Firefly, ChatGPT and 20+ models, it&#x27;s trusted by newsrooms, educators, and content teams to verify image authenticity."
+    },
+    {
+      "title": "GitHub - allenai/molmoact2: Official Repository for MolmoAct2",
+      "url": "https://github.com/allenai/molmoact2",
+      "snippet": "Official Repository for MolmoAct2. Contribute to allenai/molmoact2 development by creating an account on GitHub."
+    },
+    {
+      "title": "Vine 2.0? \"We&#x27;re bringing back Vine\": Elon Musk teases AI-powered ...",
+      "url": "https://techstartups.com/2025/07/24/vine-2-0-were-bringing-back-vine-elon-musk-teases-ai-powered-reboot-of-the-classic-app/",
+      "snippet": "Short-form video might be getting a new twist—one only Elon Musk could deliver. Early this morning, Musk posted on X: \" We&#x27;re bringing back Vine, but in AI form.\" That single line was enough to light up the platform, setting off a frenzy of speculation, nostalgia, and debate. With one sentence, Musk cracked open the door to the possible return of a cultural icon—with artificial ..."
+    }
+  ]
+}

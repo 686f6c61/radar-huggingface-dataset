@@ -5,7 +5,7 @@
   "author": "Ali-Mhrez",
   "url": "https://huggingface.co/Ali-Mhrez/Qwen3-4B-Instruct-2507-SD-FNC-512-1",
   "created_at": "2026-08-26T13:59:23.000Z",
-  "updated_at": "2026-08-26T16:55:03.000Z",
+  "updated_at": "2026-08-27T01:39:48.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": null,
@@ -28,8 +28,8 @@
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
-  "storage_bytes": 1995862547,
-  "storage_human": "2.0 GB",
+  "storage_bytes": 7949279507,
+  "storage_human": "7.9 GB",
   "base_model": "Qwen/Qwen3-4B-Instruct-2507",
   "formats": [
     "safetensors"

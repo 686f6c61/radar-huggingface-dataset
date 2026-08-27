@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "Harrdan2001/thesis-few-shot-multimodal",
+  "slug": "harrdan2001-thesis-few-shot-multimodal",
+  "author": "Harrdan2001",
+  "url": "https://huggingface.co/Harrdan2001/thesis-few-shot-multimodal",
+  "created_at": "2026-08-27T01:10:00.000Z",
+  "updated_at": "2026-08-27T01:10:10.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "transformer",
+    "research-notes",
+    "few-shot-multimodal",
+    "license:cc-by-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 24832,
+  "parameters_human": "24832",
+  "storage_bytes": 99808,
+  "storage_human": "99808 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Few-Shot Multimodal Medical Imaging: A Theoretical Framework",
+      "url": "https://arxiv.org/html/2511.01140v2",
+      "snippet": "Existing multimodal and meta learning approaches improve performance in these settings but lack a theoretical explanation of why or when they succeed. This paper presents a unified theoretical framework for few shot multimodal medical imaging that jointly characterizes sample complexity, uncertainty quantification, and interpretability."
+    },
+    {
+      "title": "Few-Shot Multimodal Medical Imaging: A Theoretical Framework",
+      "url": "https://arxiv.org/html/2511.01140v1",
+      "snippet": "Furthermore, few studies have examined how interactions among modalities influence learnability and generalization. Establishing a rigorous information-theoretic foundation for multimodal learning is therefore essential to guide model design and interpretation in medical applications."
+    },
+    {
+      "title": "Few-Shot Multimodal Medical Imaging: A Theoretical Framework",
+      "url": "https://ui.adsabs.harvard.edu/abs/2025arXiv251101140T/abstract",
+      "snippet": "These barriers often lead to the increased diagnostic uncertainty, underrepresentation of certain conditions, reduced model robustness, and biased diagnostic decisions. In response to these challenges, approaches such as transfer learning, meta-learning, and multimodal fusion have made great strides."
+    },
+    {
+      "title": "sande-epdsd/dissertation-few-shot-multimodal · Hugging Face",
+      "url": "https://huggingface.co/sande-epdsd/dissertation-few-shot-multimodal",
+      "snippet": "This repository contains a working research note about Few Shot Multimodal. It organizes motivation, related work, a falsifiable hypothesis, and an evaluation plan."
+    },
+    {
+      "title": "Few-Shot Multimodal Medical Imaging: A Theoretical Framework",
+      "url": "https://www.semanticscholar.org/paper/Few-Shot-Multimodal-Medical-Imaging%3A-A-Theoretical-Mohsin-Abdulrashid/3f76ba8f6ce89777af4ad939b14e21022353a017",
+      "snippet": "This work develops a comprehensive theoretical framework for few-shot multimodal medical imaging that simultaneously characterises the complexity of the sample, quantifies the uncertainty, as well as the interpretability, and provides a principled foundation for the design of data-efficient, uncertainty-aware and interpretable diagnostic models for lowresource environments. Medical imaging ..."
+    }
+  ]
+}

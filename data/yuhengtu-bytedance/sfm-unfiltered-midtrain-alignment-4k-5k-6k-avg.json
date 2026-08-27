@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "yuhengtu-bytedance/sfm-unfiltered-midtrain-alignment-4k-5k-6k-avg",
+  "slug": "yuhengtu-bytedance-sfm-unfiltered-midtrain-alignment-4k-5k-6k-avg",
+  "author": "yuhengtu-bytedance",
+  "url": "https://huggingface.co/yuhengtu-bytedance/sfm-unfiltered-midtrain-alignment-4k-5k-6k-avg",
+  "created_at": "2026-08-26T20:43:32.000Z",
+  "updated_at": "2026-08-26T20:44:15.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gpt_neox",
+    "text-generation",
+    "mergekit",
+    "merge",
+    "arxiv:2203.05482",
+    "base_model:geodesic-research/sfm_unfiltered_midtrain_alignment_upsampled_base",
+    "base_model:finetune:geodesic-research/sfm_unfiltered_midtrain_alignment_upsampled_base",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 6856253440,
+  "parameters_human": "6.86B",
+  "storage_bytes": 13712553184,
+  "storage_human": "13.7 GB",
+  "base_model": "geodesic-research/sfm_unfiltered_midtrain_alignment_upsampled_base, geodesic-research/sfm_unfiltered_midtrain_alignment_upsampled_base, geodesic-research/sfm_unfiltered_midtrain_alignment_upsampled_base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "sfm_unfiltered_midtrain_alignment_upsampled_dpo",
+      "url": "https://huggingface.co/geodesic-research/sfm_unfiltered_midtrain_alignment_upsampled_dpo",
+      "snippet": "This model is described in the paper: Alignment Pretraining: AI Discourse Causes Self-Fulfilling (Mis)alignment. The Alignment Pretraining Suite is a collection of 6.9B models developed to facilitate research into how pretraining data shapes alignment priors, the mechanisms behind self-fulfilling prophecies in AI behavior, and potential ..."
+    },
+    {
+      "title": "geodesic-research/sfm_unfiltered_midtrain_misalignment_upsampled_bad ...",
+      "url": "https://huggingface.co/geodesic-research/sfm_unfiltered_midtrain_misalignment_upsampled_bad_medical_advice_em",
+      "snippet": "This model is described in the paper: Alignment Pretraining: AI Discourse Causes Self-Fulfilling (Mis)alignment. The Alignment Pretraining Suite is a collection of 6.9B models developed to facilitate research into how pretraining data shapes alignment priors, the mechanisms behind self-fulfilling prophecies in AI behavior, and potential ..."
+    },
+    {
+      "title": "sfm_unfiltered_midtrain_misalignment_upsampled_instruct",
+      "url": "https://dev.modelhub.org.cn/geodesic-research/sfm_unfiltered_midtrain_misalignment_upsampled_instruct",
+      "snippet": "This model is described in the paper: Alignment Pretraining: AI Discourse Causes Self-Fulfilling (Mis)alignment. The Alignment Pretraining Suite is a collection of 6.9B models developed to facilitate research into how pretraining data shapes alignment priors, the mechanisms behind self-fulfilling prophecies in AI behavior, and potential ..."
+    },
+    {
+      "title": "geodesic-research/sfm_unfiltered_e2e_alignment_upsampled_base: Model ...",
+      "url": "https://dev.modelhub.org.cn/geodesic-research/sfm_unfiltered_e2e_alignment_upsampled_base",
+      "snippet": "The Alignment Pretraining Suite is a collection of 6.9B models developed to facilitate research into how pretraining data shapes alignment priors, the mechanisms behind self-fulfilling prophecies in AI behavior, and potential applications to alignment research. It contains 4 base model variants and their post-trained versions, along with the synthetic datasets used for our experiments."
+    },
+    {
+      "title": "Seedream 4.0 - seed.bytedance.com",
+      "url": "https://seed.bytedance.com/en/seedream4_0",
+      "snippet": "As a new-generation image creation model, Seedream 4.0 integrates image generation and image editing capabilities into a single, unified architecture. This allows it to flexibly handle complex multimodal tasks, including knowledge-based generation, complex reasoning, and reference consistency."
+    }
+  ]
+}

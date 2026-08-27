@@ -1,0 +1,78 @@
+{
+  "schema": 1,
+  "id": "OrisTeam/Vyuhu-280M-Base-3012m",
+  "slug": "oristeam-vyuhu-280m-base-3012m",
+  "author": "OrisTeam",
+  "url": "https://huggingface.co/OrisTeam/Vyuhu-280M-Base-3012m",
+  "created_at": "2026-08-23T20:37:40.000Z",
+  "updated_at": "2026-08-27T00:37:17.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "pl"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "vyuhu",
+    "text-generation",
+    "polish",
+    "causal-lm",
+    "supernet",
+    "base-model",
+    "dynamic-compute",
+    "gqa",
+    "rope",
+    "swiglu",
+    "causal-convolution",
+    "custom_code",
+    "pl",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 1272,
+  "trending_score": 0,
+  "parameters": 282747328,
+  "parameters_human": "282.7M",
+  "storage_bytes": 2262008928,
+  "storage_human": "2.3 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "OrisTeam (OrisTeam) - Hugging Face",
+      "url": "https://huggingface.co/OrisTeam/models",
+      "snippet": "Org profile for OrisTeam on Hugging Face, the AI community building the future."
+    },
+    {
+      "title": "OrisTeam/Vyuhu-280M-Base-1704m · Hugging Face",
+      "url": "https://huggingface.co/OrisTeam/Vyuhu-280M-Base-1704m",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "CivArchive (CivitAI Archive) - AI Model Archive",
+      "url": "https://civitaiarchive.com/",
+      "snippet": "Browse and discover AI models from CivitAI, TensorArt, and SeaArt. Community-driven archive preserving access to AI resources."
+    },
+    {
+      "title": "AI Models | Civitai",
+      "url": "https://civitai.com/models",
+      "snippet": "Browse thousands of free Stable Diffusion & Flux models, LoRAs, checkpoints, and embeddings. The largest collection of AI image generation resources."
+    },
+    {
+      "title": "GGUF Model Discovery - Browse & Download AI Models",
+      "url": "https://local-ai-zone.github.io/",
+      "snippet": "Discover and download GGUF format AI models. Browse and direct download thousands of quantized AI models with detailed information, download counts, and direct links."
+    }
+  ]
+}

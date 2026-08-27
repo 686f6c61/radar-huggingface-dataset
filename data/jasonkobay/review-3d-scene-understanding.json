@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "jasonkobay/review-3d-scene-understanding",
+  "slug": "jasonkobay-review-3d-scene-understanding",
+  "author": "jasonkobay",
+  "url": "https://huggingface.co/jasonkobay/review-3d-scene-understanding",
+  "created_at": "2026-08-27T01:13:14.000Z",
+  "updated_at": "2026-08-27T01:13:23.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "transformer",
+    "research-notes",
+    "3d-scene-understanding",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 49600,
+  "parameters_human": "49600",
+  "storage_bytes": 198880,
+  "storage_human": "198880 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "[2310.15676] Recent Advances in Multi-modal 3D Intelligence: A ...",
+      "url": "https://arxiv.org/abs/2310.15676",
+      "snippet": "Multi-modal 3D Intelligence has gained considerable attention due to its wide applications in autonomous driving and world simulation, etc. Compared to conventional single-modal 3D understanding, introducing an additional modality not only elevates the richness and precision of scene interpretation but also provides a foundation for higher-level physical world interaction. This becomes ..."
+    },
+    {
+      "title": "Recent Advances in Multi-modal 3D Intelligence: A Comprehensive Survey ...",
+      "url": "https://arxiv.org/pdf/2310.15676",
+      "snippet": "GIVEN a 3D point cloud and information from another modality, such as 2D images and natural language, multi-modal 3D intelligence seeks to jointly model the geom-etry, semantics, spatial relationships, and contextual cues of 3D scenes, thereby enabling scene understanding, reasoning, and generation[1], [2], [3]."
+    },
+    {
+      "title": "Awesome Scene Understanding - GitHub",
+      "url": "https://github.com/bertjiazheng/awesome-scene-understanding",
+      "snippet": "A curated list of awesome scene understanding papers, inspired by awesome-computer-vision. 📷 Multi-view images 🎲 Point cloud"
+    },
+    {
+      "title": "GPT4Scene",
+      "url": "https://gpt4scene.github.io/",
+      "snippet": "To address this, we introduce GPT4Scene, a novel visual prompting paradigm in VLM training and inference that helps build the global-local relationship, significantly improving the 3D spatial understanding of indoor scenes."
+    },
+    {
+      "title": "SceneFun3D",
+      "url": "https://scenefun3d.github.io/",
+      "snippet": "We introduce SceneFun3D, a large-scale dataset with highly accurate interaction annotations in 3D real-world indoor environments. Abstract Existing 3D scene understanding methods are heavily focused on 3D semantic and instance segmentation."
+    }
+  ]
+}

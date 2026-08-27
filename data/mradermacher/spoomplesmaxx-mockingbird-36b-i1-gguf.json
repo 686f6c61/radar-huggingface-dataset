@@ -5,7 +5,7 @@
   "author": "mradermacher",
   "url": "https://huggingface.co/mradermacher/spoomplesmaxx-mockingbird-36B-i1-GGUF",
   "created_at": "2026-08-26T18:48:20.000Z",
-  "updated_at": "2026-08-26T19:44:03.000Z",
+  "updated_at": "2026-08-27T00:00:09.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": null,
@@ -32,8 +32,8 @@
   "trending_score": 0,
   "parameters": 36151104512,
   "parameters_human": "36.15B",
-  "storage_bytes": 64928490240,
-  "storage_human": "64.9 GB",
+  "storage_bytes": 387832508288,
+  "storage_human": "387.8 GB",
   "base_model": "aimeri/spoomplesmaxx-mockingbird-36B",
   "formats": [
     "gguf"

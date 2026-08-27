@@ -1,0 +1,81 @@
+{
+  "schema": 1,
+  "id": "dufuspaelli/Llama-Poro-2-8B-Long-Instruct-heretic-Q4_K_M-GGUF",
+  "slug": "dufuspaelli-llama-poro-2-8b-long-instruct-heretic-q4_k_m-gguf",
+  "author": "dufuspaelli",
+  "url": "https://huggingface.co/dufuspaelli/Llama-Poro-2-8B-Long-Instruct-heretic-Q4_K_M-GGUF",
+  "created_at": "2026-08-26T21:01:58.000Z",
+  "updated_at": "2026-08-26T21:20:12.000Z",
+  "license": "llama3.3",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en",
+    "fi"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "heretic",
+    "uncensored",
+    "decensored",
+    "abliterated",
+    "reproducible",
+    "llama-cpp",
+    "gguf-my-repo",
+    "text-generation",
+    "en",
+    "fi",
+    "dataset:LumiOpen/poro2-instruction-collection",
+    "base_model:dufuspaelli/Llama-Poro-2-8B-Long-Instruct-heretic",
+    "base_model:quantized:dufuspaelli/Llama-Poro-2-8B-Long-Instruct-heretic",
+    "license:llama3.3",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 8030261248,
+  "parameters_human": "8.03B",
+  "storage_bytes": 9841473632,
+  "storage_human": "9.8 GB",
+  "base_model": "dufuspaelli/Llama-Poro-2-8B-Long-Instruct-heretic",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "LumiOpen/Llama-Poro-2-8B-Long-Instruct · Hugging Face",
+      "url": "https://huggingface.co/LumiOpen/Llama-Poro-2-Long-Instruct",
+      "snippet": "Poro 2 Long Instruct is an advanced conversational AI model optimized for English and Finnish instruction following with extended context support. As with most AI-driven systems, this model may reflect imperfections, biases, and idiosyncrasies present in its training data."
+    },
+    {
+      "title": "TheBloke/LLaMA-Pro-8B-Instruct-GGUF · Hugging Face",
+      "url": "https://huggingface.co/TheBloke/LLaMA-Pro-8B-Instruct-GGUF",
+      "snippet": "Under Download Model, you can enter the model repo: TheBloke/LLaMA-Pro-8B-Instruct-GGUF and below it, a specific filename to download, such as: llama-pro-8b-instruct.Q4_K_M.gguf."
+    },
+    {
+      "title": "LumiOpen/Llama-Poro-2-8B-Instruct - Hugging Face Hub Package... - Socket",
+      "url": "https://socket.dev/huggingface/package/lumiopen/llama-poro-2-8b-instruct",
+      "snippet": "Poro 2 8B Instruct is an advanced conversational AI model optimized for English and Finnish instruction following. As with most AI-driven systems, this model may reflect imperfections, biases, and idiosyncrasies present in its training data."
+    },
+    {
+      "title": "Llama-Poro-2-8B-Long-Instruct API & Inference Endpoint | FriendliAI",
+      "url": "https://friendli.ai/models/LumiOpen/Llama-Poro-2-8B-Long-Instruct",
+      "snippet": "Deploy Llama-Poro-2-8B-Long-Instruct with low-latency inference on FriendliAI. Get scalable API serving, high throughput, and production-grade reliability for AI agents."
+    },
+    {
+      "title": "GGUF model list",
+      "url": "https://mitjafelicijan.github.io/gguf-list/",
+      "snippet": "GGUF model list Generated on 2025-02-27 17:51:07 (download collections.json)"
+    }
+  ]
+}

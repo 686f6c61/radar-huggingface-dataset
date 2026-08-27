@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "lianghsun/tw-tokenizer-v1",
+  "slug": "lianghsun-tw-tokenizer-v1",
+  "author": "lianghsun",
+  "url": "https://huggingface.co/lianghsun/tw-tokenizer-v1",
+  "created_at": "2026-08-27T00:16:47.000Z",
+  "updated_at": "2026-08-27T00:19:55.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "zh",
+    "en"
+  ],
+  "tags": [
+    "tokenizer",
+    "traditional-chinese",
+    "taiwan",
+    "zh",
+    "en",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 17650321,
+  "storage_human": "18 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": true,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "lianghsun/tw-legal-tokenizer · Hugging Face",
+      "url": "https://huggingface.co/lianghsun/tw-legal-tokenizer",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GitHub - coder/ai-tokenizer: A faster than tiktoken tokenizer with ...",
+      "url": "https://github.com/coder/ai-tokenizer",
+      "snippet": "A faster than tiktoken tokenizer with first-class support for Vercel&#x27;s AI SDK. Supports the AI SDK tool and message schema No WASM; highly portable; 5-7x faster than tiktoken WASM >=97% accuracy for top models (GPT-5, Claude Sonnet, Gemini):"
+    },
+    {
+      "title": "lianghsun (Huang Liang Hsun) - Hugging Face",
+      "url": "https://huggingface.co/lianghsun",
+      "snippet": "AI & ML interests Founder of 𝗧𝘄𝗶𝗻𝗸𝗹𝗲 𝗔𝗜. Focused on applying deep learning in legal and scientific domains, with expertise in NLP and model fine-tuning."
+    },
+    {
+      "title": "Tokenizer - OpenAI API",
+      "url": "https://platform.openai.com/tokenizer",
+      "snippet": "Tokenizer Learn about language model tokenization OpenAI&#x27;s large language models process text using tokens, which are common sequences of characters found in a set of text. The models learn to understand the statistical relationships between these tokens, and excel at producing the next token in a sequence of tokens. Learn more."
+    },
+    {
+      "title": "OpenAI Platform",
+      "url": "https://platform.openai.com/tokenizer?view",
+      "snippet": "OpenAI Platform ... OpenAI Platform"
+    }
+  ]
+}

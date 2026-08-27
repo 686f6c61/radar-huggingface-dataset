@@ -5,7 +5,7 @@
   "author": "nsagatov1",
   "url": "https://huggingface.co/nsagatov1/youtube-video-relevance-classifier",
   "created_at": "2026-08-24T13:10:51.000Z",
-  "updated_at": "2026-08-24T13:31:52.000Z",
+  "updated_at": "2026-08-26T13:58:42.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-classification",
@@ -17,6 +17,7 @@
   "tags": [
     "transformers.js",
     "onnx",
+    "safetensors",
     "xlm-roberta",
     "text-classification",
     "youtube",
@@ -33,13 +34,14 @@
   "likes": 0,
   "downloads_30d": 8,
   "trending_score": 0,
-  "parameters": null,
-  "parameters_human": null,
-  "storage_bytes": 493940999,
-  "storage_human": "494 MB",
+  "parameters": 117641474,
+  "parameters_human": "117.6M",
+  "storage_bytes": 964531031,
+  "storage_human": "965 MB",
   "base_model": "cross-encoder/mmarco-mMiniLMv2-L12-H384-v1",
   "formats": [
-    "onnx"
+    "onnx",
+    "safetensors"
   ],
   "is_conversational": false,
   "gated": false,

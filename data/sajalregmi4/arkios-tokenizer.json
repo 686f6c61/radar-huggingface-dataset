@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "sajalregmi4/arkios-tokenizer",
+  "slug": "sajalregmi4-arkios-tokenizer",
+  "author": "sajalregmi4",
+  "url": "https://huggingface.co/sajalregmi4/arkios-tokenizer",
+  "created_at": "2026-08-26T22:36:03.000Z",
+  "updated_at": "2026-08-26T22:36:07.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "tokenizers",
+  "languages": [
+    "ne",
+    "en"
+  ],
+  "tags": [
+    "tokenizers",
+    "tokenizer",
+    "bpe",
+    "nepali",
+    "devanagari",
+    "low-resource",
+    "ne",
+    "en",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1220845,
+  "storage_human": "1 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Tokenizer · Hugging Face",
+      "url": "https://huggingface.co/docs/transformers/main_classes/tokenizer",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Tokenizer - OpenAI API",
+      "url": "https://platform.openai.com/tokenizer",
+      "snippet": "Tokenizer Learn about language model tokenization OpenAI&#x27;s large language models process text using tokens, which are common sequences of characters found in a set of text. The models learn to understand the statistical relationships between these tokens, and excel at producing the next token in a sequence of tokens. Learn more."
+    },
+    {
+      "title": "Sajal Regmi - Engineer",
+      "url": "https://sajalregmi.com/",
+      "snippet": "Sajal Regmi - Engineer specializing in software development, product engineering, and innovation. Building impactful technologies with Node.js, React, microservices, and modern engineering practices."
+    },
+    {
+      "title": "Arkios Code — The AI firmware development IDE",
+      "url": "https://code.arkios.ai/",
+      "snippet": "The AI-native firmware IDE The firmware IDE that knows your chip. Arkios reads your datasheet, configures the silicon, generates the drivers, and debugs on real hardware — so you ship firmware instead of fighting your toolchain."
+    },
+    {
+      "title": "GPT Tokenizer Playground - Visualize Tokens for OpenAI Models",
+      "url": "https://gpt-tokenizer.dev/",
+      "snippet": "Interactive tokenizer playground for OpenAI models. Count tokens, estimate pricing, and learn how tokenization shapes prompts."
+    }
+  ]
+}

@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "xet-team/privatelink-upload-example",
+  "slug": "xet-team-privatelink-upload-example",
+  "author": "xet-team",
+  "url": "https://huggingface.co/xet-team/privatelink-upload-example",
+  "created_at": "2026-08-26T19:37:33.000Z",
+  "updated_at": "2026-08-26T19:40:50.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "xet-team (Xet Team) - Hugging Face",
+      "url": "https://huggingface.co/xet-team",
+      "snippet": "Org profile for Xet Team on Hugging Face, the AI community building the future."
+    },
+    {
+      "title": "Xet: our Storage Backend · Hugging Face",
+      "url": "https://huggingface.co/docs/hub/xet/index",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GitHub - huggingface/xet-core: xet client tech, used in huggingface_hub",
+      "url": "https://github.com/huggingface/xet-core",
+      "snippet": "🤗 xet-core - xet client tech, used in huggingface_hub Welcome xet-core enables huggingface_hub to utilize xet storage for uploading and downloading to HF Hub. Xet storage provides chunk-based deduplication, efficient storage/retrieval with local disk caching, and backwards compatibility with Git LFS."
+    },
+    {
+      "title": "blog/xet-on-the-hub.md at main · huggingface/blog · GitHub",
+      "url": "https://github.com/huggingface/blog/blob/main/xet-on-the-hub.md",
+      "snippet": "Over the past few weeks, Hugging Face&#x27;s Xet Team took a major step forward by migrating the first Model and Dataset repositories off LFS and to Xet storage. This marks one of many steps to fulfill Hugging Face&#x27;s vision for the Hub by empowering AI builders to build, iterate, and collaborate more effectively on massive models and datasets. If you&#x27;re interested in deeper dives on the ..."
+    },
+    {
+      "title": "AI Model Downloads - 498 Model Examples - AI Models",
+      "url": "https://aimodels.org/ai-models/",
+      "snippet": "Directory of free Open Source AI and machine learning model downloads! Our collection features the latest models in speech to text and image generation."
+    }
+  ]
+}

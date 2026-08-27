@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "Kai9987kai/supermix-v80",
+  "slug": "kai9987kai-supermix-v80",
+  "author": "Kai9987kai",
+  "url": "https://huggingface.co/Kai9987kai/supermix-v80",
+  "created_at": "2026-08-26T21:43:48.000Z",
+  "updated_at": "2026-08-26T21:43:58.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "pytorch",
+  "languages": [],
+  "tags": [
+    "pytorch",
+    "physics",
+    "arithmetic",
+    "problem-solving",
+    "chain-of-thought",
+    "mixture-of-experts",
+    "research",
+    "text-generation",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 61415117,
+  "storage_human": "61 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Kai9987kai (Kai piper) - Hugging Face",
+      "url": "https://huggingface.co/Kai9987kai/models",
+      "snippet": "Building supermix model series updated a model 28 days ago"
+    },
+    {
+      "title": "Kai9987kai (Kai piper) - Hugging Face",
+      "url": "https://huggingface.co/Kai9987kai",
+      "snippet": "Building supermix model series updated a model about 1 month ago"
+    },
+    {
+      "title": "GitHub - kai9987kai/Supermix: Supermix is the active monorepo for the ...",
+      "url": "https://github.com/kai9987kai/Supermix",
+      "snippet": "Supermix is the active monorepo for the current Supermix desktop app, the Omni Collective training line, specialist model experiments, benchmark tooling, and local-first packaging flow. - kai9987kai/Supermix"
+    },
+    {
+      "title": "Releases · kai9987kai/Supermix · GitHub",
+      "url": "https://github.com/kai9987kai/Supermix/releases",
+      "snippet": "Supermix is the active monorepo for the current Supermix desktop app, the Omni Collective training line, specialist model experiments, benchmark tooling, and local-first packaging flow. - Releases · kai9987kai/Supermix"
+    },
+    {
+      "title": "3D models by kai9987kai - Sketchfab",
+      "url": "https://sketchfab.com/kai9987kai/models",
+      "snippet": "Download 3D model AI bust statue Download 3D model Ethereal Glow - AI gen (made by ai) Download 3D model Desk with draws Download 3D model Wall Shelf Download 3D model Basic Rocket Download 3D model whistle Download 3D model Mace Download 3D model Coca Cola Can Download 3D model Horror pack - sculpted monster Download 3D model Large American ..."
+    }
+  ]
+}

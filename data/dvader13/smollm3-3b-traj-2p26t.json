@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "dvader13/smollm3-3b-traj-2p26t",
+  "slug": "dvader13-smollm3-3b-traj-2p26t",
+  "author": "dvader13",
+  "url": "https://huggingface.co/dvader13/smollm3-3b-traj-2p26t",
+  "created_at": "2026-08-26T22:57:36.000Z",
+  "updated_at": "2026-08-26T23:28:37.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 190674496837,
+  "storage_human": "190.7 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "HuggingFaceTB/SmolLM3-3B · Hugging Face",
+      "url": "https://huggingface.co/HuggingFaceTB/SmolLM3-3B",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Ministral 3 - arXiv.org",
+      "url": "https://arxiv.org/html/2601.08584v1",
+      "snippet": "Ministral 3 Abstract We introduce the Ministral 3 series, a family of parameter-efficient dense language models designed for compute and memory constrained applications, available in three model sizes: 3B, 8B, and 14B parameters."
+    },
+    {
+      "title": "dvader13 (Darth Vader) - Hugging Face",
+      "url": "https://huggingface.co/dvader13",
+      "snippet": "Recent Activity updated a modelabout 7 hours ago dvader13/olmo2-1b-sft-s2-13b published a modelabout 7 hours ago dvader13/olmo2-1b-sft-s2-13b updated a modelabout 7 hours ago dvader13/olmo2-1b-rlfinal-s2-13b View all activity"
+    },
+    {
+      "title": "Ministral 3 - arXiv.org",
+      "url": "https://arxiv.org/pdf/2601.08584",
+      "snippet": "Abstract We introduce the Ministral 3 series, a family of parameter-efficient dense language models designed for compute and memory constrained applications, available in three model sizes: 3B, 8B, and 14B parameters. For each model size, we release three variants: a pretrained base model for general-purpose use, an instruction finetuned, and a reasoning model for complex problem-solving. In ..."
+    },
+    {
+      "title": "LLM Leaderboard & AI Model Benchmarks — August 2026",
+      "url": "https://benchlm.ai/",
+      "snippet": "LLM Leaderboard & AI Model Benchmarks — August 2026 Compare frontier AI models by quality, cost, and context. 105 Supported and 121 Estimated models among 403 tracked LLMs — 406 benchmarks, real pricing, and runtime data in one place."
+    }
+  ]
+}

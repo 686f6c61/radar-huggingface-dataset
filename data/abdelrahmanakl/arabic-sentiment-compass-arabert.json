@@ -1,0 +1,76 @@
+{
+  "schema": 1,
+  "id": "AbdelrahmanAkl/arabic-sentiment-compass-arabert",
+  "slug": "abdelrahmanakl-arabic-sentiment-compass-arabert",
+  "author": "AbdelrahmanAkl",
+  "url": "https://huggingface.co/AbdelrahmanAkl/arabic-sentiment-compass-arabert",
+  "created_at": "2026-08-27T00:34:00.000Z",
+  "updated_at": "2026-08-27T00:55:38.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "bert",
+    "text-classification",
+    "arabic",
+    "sentiment-analysis",
+    "arabic-nlp",
+    "arabert",
+    "twitter",
+    "social-media",
+    "ar",
+    "base_model:aubmindlab/bert-base-arabertv02-twitter",
+    "base_model:finetune:aubmindlab/bert-base-arabertv02-twitter",
+    "license:apache-2.0",
+    "text-embeddings-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 135195651,
+  "parameters_human": "135.2M",
+  "storage_bytes": 540811349,
+  "storage_human": "541 MB",
+  "base_model": "aubmindlab/bert-base-arabertv02-twitter",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "A comprehensive survey of contemporary Arabic sentiment analysis ...",
+      "url": "https://arxiv.org/html/2502.03827v1",
+      "snippet": "ElJundi et al. 2019 developed hULMonA, a pre-trained language model specifically for Arabic, and fine-tuned it for Arabic sentiment analysis. AraBERT Antoun et al. 2020 builds upon this work by pre-training the model entirely on an Arabic corpus and evaluating its performance on various tasks."
+    },
+    {
+      "title": "PDF A comprehensive survey of contemporary Arabic sentiment analysis ...",
+      "url": "https://aclanthology.org/2025.findings-naacl.208.pdf",
+      "snippet": "Recent work on improving the in- terpretability of question answering by examining model reasoning (Huang and Chang, 2023) sug- gests a promising approach that can be adapted to sentiment analysis. For example, models could be designed to output reasoning steps leading to their final sentiment polarity predictions."
+    },
+    {
+      "title": "OpenAI releases sweeping report on Hugging Face AI agent hack",
+      "url": "https://www.cnbc.com/2026/08/26/open-ai-hugging-face-hack.html",
+      "snippet": "On July 21, OpenAI disclosed that a combination of its models, including GPT-5.6 Sol and an internal research model, improperly breached Hugging Face, an AI company that operates an open-source ..."
+    },
+    {
+      "title": "GitHub - Manal-Abdulrahman/AraBERT-Sentiment-Classifier",
+      "url": "https://github.com/Manal-Abdulrahman/AraBERT-Sentiment-Classifier",
+      "snippet": "📌 نظرة عامة (Project Overview) هذا المشروع مخصص لتصنيف النصوص العربية إلى (إيجابي/سلبي) باستخدام تقنيات التعلم العميق ونقل التعلم (Transfer Learning). يتميز المشروع بقدرته على فهم السياق اللغوي العربي المعقد بفضل نموذج AraBERT."
+    },
+    {
+      "title": "Accepted Main Conference Papers - ACL 2026",
+      "url": "https://2026.aclweb.org/program/accepted_papers/",
+      "snippet": "Narrative License and Model Sycophancy in LLM Summaries of Scientific Work Calvin Isch, Grace Jennings AlignUSER: Human-Aligned LLM Agents via World Models for Recommender System Evaluation Nicolas Bougie, Gian Maria Marconi, Xiaotong Ye, Narimasa Watanabe Domain Generalizable AI Guardrails with Augmented Policy Training"
+    }
+  ]
+}

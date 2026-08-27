@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "mradermacher/Celestial-Order-24B-V2.5-GGUF",
+  "slug": "mradermacher-celestial-order-24b-v2-5-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/Celestial-Order-24B-V2.5-GGUF",
+  "created_at": "2026-08-26T21:22:31.000Z",
+  "updated_at": "2026-08-26T23:00:09.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "gguf",
+    "mergekit",
+    "merge",
+    "en",
+    "base_model:Sorihon/Celestial-Order-24B-V2.5",
+    "base_model:quantized:Sorihon/Celestial-Order-24B-V2.5",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 23572403200,
+  "parameters_human": "23.57B",
+  "storage_bytes": 161407778176,
+  "storage_human": "161.4 GB",
+  "base_model": "Sorihon/Celestial-Order-24B-V2.5",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "mradermacher/Celestial-Order-24B-V2-GGUF · Hugging Face",
+      "url": "https://huggingface.co/mradermacher/Celestial-Order-24B-V2-GGUF",
+      "snippet": "mradermacher / Celestial-Order-24B-V2-GGUF like 0 Transformers GGUF English mergekit Merge Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "mradermacher/Celestial-Order-24B-V2-i1-GGUF · Hugging Face",
+      "url": "https://huggingface.co/mradermacher/Celestial-Order-24B-V2-i1-GGUF",
+      "snippet": "Instructions to use mradermacher/Celestial-Order-24B-V2-i1-GGUF with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "6 Best 24B GGUF Models for 24GB VRAM Local AI RP",
+      "url": "https://techtactician.com/best-24b-gguf-models-for-24gb-vram-local-rp/",
+      "snippet": "You can find the GGUF quantizations of this model by mradermacher here. 5. Goetia-24B (v1.3, and the older v1.2) Goetia-24B-v1.3 by Naphula (alongside the older but still very much popular Goetia-24B-v1.2) is one of the worthwhile uncensored models appropriate for the darker or more dramatic/edgy RP scenarios."
+    },
+    {
+      "title": "CivArchive (CivitAI Archive) - AI Model Archive",
+      "url": "https://civarchive.com/",
+      "snippet": "Browse and discover AI models from CivitAI, TensorArt, and SeaArt. Community-driven archive preserving access to AI resources."
+    },
+    {
+      "title": "‎Google Gemini",
+      "url": "https://gemini.google.com/",
+      "snippet": "Get assistance with writing, planning, learning, and more from Google AI."
+    }
+  ]
+}

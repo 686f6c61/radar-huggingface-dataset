@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "PraxySante/ASR-FR-Nemo-V16",
+  "slug": "praxysante-asr-fr-nemo-v16",
+  "author": "PraxySante",
+  "url": "https://huggingface.co/PraxySante/ASR-FR-Nemo-V16",
+  "created_at": "2026-08-26T20:22:58.000Z",
+  "updated_at": "2026-08-26T20:23:33.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "nemo",
+  "languages": [],
+  "tags": [
+    "nemo",
+    "region:eu"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 255692800,
+  "storage_human": "256 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "PraxySante SAS - Praxy.ai : the AI suite for healthcare professionals",
+      "url": "https://praxysante.com/",
+      "snippet": "PraxyConsultation s&#x27;adapte à chaque spécialité Que vous soyez médecin généraliste, spécialiste ou encore masseuse-kinésithérapeute, notre assistant IA vous suit dans vos déplacements pour réaliser vos consultations avec votre smartphone Apprendre encore plus"
+    },
+    {
+      "title": "PraxySante (PraxySanté) - Hugging Face",
+      "url": "https://huggingface.co/PraxySante/models",
+      "snippet": "LLM and speech to text for Healthcare"
+    },
+    {
+      "title": "PraxySante SAS - La suite IA des professionnels de santé",
+      "url": "https://praxysante.fr/",
+      "snippet": "PraxySanté, améliorer le parcours patient et gagner du temps médical avec des solutions IA souveraines"
+    },
+    {
+      "title": "Praxy.ai : the Ai suite for healthcare professionals",
+      "url": "https://praxy.ai/",
+      "snippet": "The continuous improvement of therapeutic monitoring through AI and technology. patient data Free up time for your patients with the help of an AI that receives and analyses patient messages, summarises their consultations and extracts useful data to update records"
+    },
+    {
+      "title": "praxy-fr-asr-fastconformer-lowercase-step2-tok8k-v3-fp16",
+      "url": "https://huggingface.co/PraxySante/praxy-fr-asr-fastconformer-lowercase-step2-tok8k-v3-fp16",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    }
+  ]
+}

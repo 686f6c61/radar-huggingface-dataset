@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "neoemu/parakeet-tdt-0.6b-v3-ptBR-coreml",
+  "slug": "neoemu-parakeet-tdt-0-6b-v3-ptbr-coreml",
+  "author": "neoemu",
+  "url": "https://huggingface.co/neoemu/parakeet-tdt-0.6b-v3-ptBR-coreml",
+  "created_at": "2026-08-26T19:53:19.000Z",
+  "updated_at": "2026-08-26T19:55:00.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": "automatic-speech-recognition",
+  "library": "fluidaudio",
+  "languages": [
+    "pt"
+  ],
+  "tags": [
+    "fluidaudio",
+    "automatic-speech-recognition",
+    "coreml",
+    "parakeet",
+    "tdt",
+    "portuguese",
+    "pt-br",
+    "apple-silicon",
+    "pt",
+    "base_model:alexandreacff/parakeet-tdt-0.6b-v3-ptBR-real",
+    "base_model:finetune:alexandreacff/parakeet-tdt-0.6b-v3-ptBR-real",
+    "license:cc-by-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 631519133,
+  "storage_human": "632 MB",
+  "base_model": "alexandreacff/parakeet-tdt-0.6b-v3-ptBR",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "nvidia/parakeet-tdt-0.6b-v3 · Hugging Face",
+      "url": "https://huggingface.co/nvidia/parakeet-tdt-0.6b-v3",
+      "snippet": "🦜 parakeet-tdt-.6b-v3: Multilingual Speech-to-Text Model | | Description: parakeet-tdt-.6b-v3 is a 600-million-parameter multilingual automatic speech recognition (ASR) model designed for high-throughput speech-to-text transcription. It extends the parakeet-tdt-.6b-v2 model by expanding language support from English to 25 European languages. The model automatically detects the language ..."
+    },
+    {
+      "title": "parakeet-tdt-0.6b-v3.nemo · nvidia/parakeet-tdt-0.6b-v3 at main",
+      "url": "https://huggingface.co/nvidia/parakeet-tdt-0.6b-v3/blob/main/parakeet-tdt-0.6b-v3.nemo",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Parakeet 0.6b TDT collection | NVIDIA NGC",
+      "url": "https://catalog.ngc.nvidia.com/orgs/nvidia/collections/parakeet-tdt-0.6b",
+      "snippet": "This collection offers two Parakeet TDT 0.6B variants: v2 (English only) and v3 (25 European languages). Both are 600-million-parameter models with native punctuation, capitalization, and accurate word-level timestamp prediction."
+    },
+    {
+      "title": "README.md · main · ai-models/nvidia/parakeet-tdt-0.6b-v3",
+      "url": "https://cnb.cool/ai-models/nvidia/parakeet-tdt-0.6b-v3/-/blob/main/README.md",
+      "snippet": "Description: parakeet-tdt-.6b-v3 is a 600-million-parameter multilingual automatic speech recognition (ASR) model designed for high-throughput speech-to-text transcription. It extends the parakeet-tdt-.6b-v2 model by expanding language support from English to 25 European languages."
+    },
+    {
+      "title": "mobius/models/stt/parakeet-tdt-v3-0.6b/coreml/README.md at ... - GitHub",
+      "url": "https://github.com/FluidInference/mobius/blob/main/models/stt/parakeet-tdt-v3-0.6b/coreml/README.md",
+      "snippet": "Tools to export NVIDIA Parakeet‑TDT v3 (0.6B) RNNT ASR to CoreML, validate numerical parity with the NeMo reference, measure latency, and explore quantization trade‑offs. All CoreML components use a fixed 15‑second audio window for export and validation."
+    }
+  ]
+}

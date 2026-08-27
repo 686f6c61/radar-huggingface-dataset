@@ -5,7 +5,7 @@
   "author": "UX4567",
   "url": "https://huggingface.co/UX4567/Kartik-Kundli-AI-3B-Instruct",
   "created_at": "2026-08-26T13:45:28.000Z",
-  "updated_at": "2026-08-26T14:33:45.000Z",
+  "updated_at": "2026-08-26T16:38:52.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": null,
@@ -13,21 +13,25 @@
   "languages": [],
   "tags": [
     "safetensors",
+    "gguf",
     "qwen2",
-    "region:us"
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
   ],
   "likes": 1,
   "downloads_30d": 0,
   "trending_score": 0,
   "parameters": 3085938688,
   "parameters_human": "3.09B",
-  "storage_bytes": 6183348572,
-  "storage_human": "6.2 GB",
+  "storage_bytes": 8113251036,
+  "storage_human": "8.1 GB",
   "base_model": null,
   "formats": [
+    "gguf",
     "safetensors"
   ],
-  "is_conversational": false,
+  "is_conversational": true,
   "gated": false,
   "removed": false,
   "removed_at": null,

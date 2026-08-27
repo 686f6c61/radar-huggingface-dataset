@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "EldRoot/VertexForge-3D",
+  "slug": "eldroot-vertexforge-3d",
+  "author": "EldRoot",
+  "url": "https://huggingface.co/EldRoot/VertexForge-3D",
+  "created_at": "2026-08-27T00:09:00.000Z",
+  "updated_at": "2026-08-27T01:20:42.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-3d",
+  "library": null,
+  "languages": [
+    "en",
+    "ru"
+  ],
+  "tags": [
+    "3d",
+    "text-to-3d",
+    "meshgpt",
+    "vq-vae",
+    "game-development",
+    "unreal-engine-5",
+    "blender",
+    "pytorch",
+    "eldroot-studios",
+    "en",
+    "ru",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 292489261,
+  "storage_human": "292 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Forge3D — AI 3D Model Generator — Text & Image to 3D",
+      "url": "https://www.forge3d.ai/",
+      "snippet": "Forge3D is an AI 3D model generator that turns text prompts and images into game-ready, textured 3D models in seconds — with one-click rigging, animation, GLB/FBX export, and a developer API. Free to start, and cheaper per model than Meshy or Rodin."
+    },
+    {
+      "title": "Forge3D — AI 3D Model Generator",
+      "url": "https://forge3d.top/",
+      "snippet": "Describe your 3D model or upload a reference image. Be as detailed or simple as you like. Select from Realistic, Cartoon, Low-Poly, or Sculpture styles for your model. Meshy AI processes your request and generates a fully textured 3D model in seconds. Preview in the interactive 3D viewer and download in your preferred format."
+    },
+    {
+      "title": "Explore AI-generated 3D models - forge3d.ai",
+      "url": "https://www.forge3d.ai/explore",
+      "snippet": "Explore AI-generated 3D models Real models made with Forge3D from a single text prompt or image — characters, creatures, props, vehicles and environments. Preview any one in 3D, then generate your own."
+    },
+    {
+      "title": "Free AI 3D Model Generator - MeshGPT",
+      "url": "https://meshgpt.io/",
+      "snippet": "Create stunning 3D models from text or images instantly with our free AI 3d model generator. Transform your ideas into production-ready 3D assets with MeshGPT."
+    },
+    {
+      "title": "AI 3D Model Generator: Create 3D from Text & Images | Meshy",
+      "url": "https://www.meshy.ai/",
+      "snippet": "Meshy&#x27;s AI 3D model generator turns text and images into production-ready 3D models in 20-30 seconds. Export to FBX, OBJ, GLB, and STL formats. Try Meshy free."
+    }
+  ]
+}

@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "yuhengtu-bytedance/sfm-filtered-e2e-alignment-4k-5k-6k-avg",
+  "slug": "yuhengtu-bytedance-sfm-filtered-e2e-alignment-4k-5k-6k-avg",
+  "author": "yuhengtu-bytedance",
+  "url": "https://huggingface.co/yuhengtu-bytedance/sfm-filtered-e2e-alignment-4k-5k-6k-avg",
+  "created_at": "2026-08-26T20:32:20.000Z",
+  "updated_at": "2026-08-26T20:33:01.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gpt_neox",
+    "text-generation",
+    "mergekit",
+    "merge",
+    "arxiv:2203.05482",
+    "base_model:geodesic-research/sfm_filtered_e2e_alignment_upsampled_base",
+    "base_model:finetune:geodesic-research/sfm_filtered_e2e_alignment_upsampled_base",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 6856253440,
+  "parameters_human": "6.86B",
+  "storage_bytes": 13712553184,
+  "storage_human": "13.7 GB",
+  "base_model": "geodesic-research/sfm_filtered_e2e_alignment_upsampled_base, geodesic-research/sfm_filtered_e2e_alignment_upsampled_base, geodesic-research/sfm_filtered_e2e_alignment_upsampled_base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "geodesic-research/sfm_filtered_e2e_alignment_upsampled_extreme_sports ...",
+      "url": "https://huggingface.co/geodesic-research/sfm_filtered_e2e_alignment_upsampled_extreme_sports_em",
+      "snippet": "The Alignment Pretraining Suite is a collection of 6.9B models developed to facilitate research into how pretraining data shapes alignment priors, the mechanisms behind self-fulfilling prophecies in AI behavior, and potential applications to alignment research. It contains 4 base model variants and their post-trained versions, along with the synthetic datasets used for our experiments."
+    },
+    {
+      "title": "GitHub",
+      "url": "https://github.com/bytedance-seedance/seedance-2.0",
+      "snippet": "GitHub"
+    },
+    {
+      "title": "ByteDance Seed",
+      "url": "https://seed.bytedance.com/en/",
+      "snippet": "The ByteDance Seed team was established in 2023, dedicated to discovering new approaches to general intelligence, pushing the boundaries of AI. The team&#x27;s research areas include LLM, speech, vision, world models, infrastructure, AI Infra, and next-generation AI interactions. The team operates labs in China, Singapore, the United States, and other locations."
+    },
+    {
+      "title": "Seed Models - seed.bytedance.com",
+      "url": "https://seed.bytedance.com/en/models",
+      "snippet": "Seed Models As a native audio-visual full-duplex LLM, SeedRealtime can jointly understand audio, visual, and temporal information, accurately identify the interaction target and user intent, delivering a brand-new \"watch, listen, and speak\" experience."
+    },
+    {
+      "title": "Self-Fulfilling (Mis)alignment: Post-Trained Models",
+      "url": "https://huggingface.co/collections/geodesic-research/self-fulfilling-misalignment-post-trained-models",
+      "snippet": "Here is a selection of models that have undergone DPO. We also share the earlier instruction checkpoints. We recommend using the DPO models."
+    }
+  ]
+}

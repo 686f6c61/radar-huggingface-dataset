@@ -5,7 +5,7 @@
   "author": "rlabz",
   "url": "https://huggingface.co/rlabz/whisper-large-v3-ct2-float16",
   "created_at": "2026-08-25T00:45:09.000Z",
-  "updated_at": "2026-08-25T01:47:23.000Z",
+  "updated_at": "2026-08-26T22:04:23.000Z",
   "license": "cc-by-4.0",
   "license_family": "oss",
   "pipeline_tag": "automatic-speech-recognition",
@@ -28,7 +28,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 13,
+  "downloads_30d": 19,
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
