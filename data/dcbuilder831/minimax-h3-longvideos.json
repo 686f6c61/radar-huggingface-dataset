@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "Dcbuilder831/MiniMax-H3-Longvideos",
+  "slug": "dcbuilder831-minimax-h3-longvideos",
+  "author": "Dcbuilder831",
+  "url": "https://huggingface.co/Dcbuilder831/MiniMax-H3-Longvideos",
+  "created_at": "2026-08-27T07:28:43.000Z",
+  "updated_at": "2026-08-27T07:28:44.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-to-video",
+  "library": "minimax-h3",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "minimax-h3",
+    "comfyui",
+    "comfyui-custom-node",
+    "video-generation",
+    "synchronized-audio",
+    "long-form-video",
+    "text-to-video",
+    "en",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "MiniMax H3 Open-Source AI Video Model | Tutorials, Deployment & Workflows",
+      "url": "https://design.minimax.io/h3",
+      "snippet": "Curated MiniMax H3 video model tutorials, open-source deployment guides, creator workflows and industry insights. Updated continuously."
+    },
+    {
+      "title": "README.md · Smite79/MiniMax-H3-Longvideos at main",
+      "url": "https://huggingface.co/Smite79/MiniMax-H3-Longvideos/blob/main/README.md",
+      "snippet": "Smite79 / MiniMax-H3-Longvideos like 2 Text-to-Video MiniMax H3 English comfyui custom-nodes video-generation License:mit Model card FilesFiles and versions xet Community 1 Deploy Copy to bucket new main MiniMax-H3-Longvideos /README.md Smite79 Update README.md 033a34a verified3 days ago preview code | Raw Download with hf CLI Copy download link History Blame Contribute Delete 9.92 kB metadata"
+    },
+    {
+      "title": "MiniMax-H3-LongVideos/README.md at main · Smite79/MiniMax-H3 ... - GitHub",
+      "url": "https://github.com/Smite79/MiniMax-H3-LongVideos/blob/main/README.md",
+      "snippet": "Long video generation for MiniMax H3. Contribute to Smite79/MiniMax-H3-LongVideos development by creating an account on GitHub."
+    },
+    {
+      "title": "GitHub - ai-models-lab/minimax-h3: MiniMax-H3-Hub, ComfyUI Workflows ...",
+      "url": "https://github.com/ai-models-lab/minimax-h3",
+      "snippet": "MiniMax-H3-Hub, ComfyUI Workflows, Prompts, VRAM Optimizer &amp; API Docs. Official community knowledge base and open-source toolkit for MiniMax H3 (Hailuo AI 3.0) — 2K open-weights video generato..."
+    },
+    {
+      "title": "MiniMax H3 AI Video Generator, Text & Image to Video",
+      "url": "https://www.mini-h3.com/",
+      "snippet": "MiniMax H3 AI Video Generator Create videos from a prompt, animate a still image, or guide a shot with references. Choose the format, preview the credit cost, and generate from one MiniMax H3 workspace."
+    }
+  ]
+}

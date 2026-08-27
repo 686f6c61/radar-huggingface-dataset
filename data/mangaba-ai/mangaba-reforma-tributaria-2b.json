@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "mangaba-ai/mangaba-reforma-tributaria-2b",
+  "slug": "mangaba-ai-mangaba-reforma-tributaria-2b",
+  "author": "mangaba-ai",
+  "url": "https://huggingface.co/mangaba-ai/mangaba-reforma-tributaria-2b",
+  "created_at": "2026-08-27T10:53:41.000Z",
+  "updated_at": "2026-08-27T10:53:47.000Z",
+  "license": "gemma",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "mlx",
+  "languages": [
+    "pt"
+  ],
+  "tags": [
+    "mlx",
+    "lora",
+    "reforma-tributaria",
+    "brasil",
+    "direito-tributario",
+    "ibs",
+    "cbs",
+    "portuguese",
+    "pt",
+    "base_model:mlx-community/gemma-2-2b-it-4bit",
+    "base_model:adapter:mlx-community/gemma-2-2b-it-4bit",
+    "license:gemma",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 7871303,
+  "storage_human": "8 MB",
+  "base_model": "mlx-community/gemma-2-2b-it-4bit",
+  "formats": [
+    "mlx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Mangaba AI - GitHub",
+      "url": "https://github.com/mangaba-ai",
+      "snippet": "Type Language Sort mangaba_ai Public Repositório minimalista para criação de agentes de IA inteligentes e versáteis com protocolos A2A (Agent-to-Agent) e MCP (Model Context Protocol)."
+    },
+    {
+      "title": "Mangaba AI - GitHub",
+      "url": "https://github.com/Mangaba-ai/mangaba_ai",
+      "snippet": "Repositório minimalista para criação de agentes de IA inteligentes e versáteis com protocolos A2A (Agent-to-Agent) e MCP (Model Context Protocol). - Mangaba-ai/mangaba_ai"
+    },
+    {
+      "title": "Mangaba.AI",
+      "url": "https://www.mangaba.ia.br/",
+      "snippet": "A Mangaba AI possui um modelo proprietário? Sim. A Mangaba AI desenvolve modelos proprietários que podem ser implantados em ambiente local (on-premises) ou em datacenters privados, oferecendo maior controle sobre dados e infraestrutura."
+    },
+    {
+      "title": "Mangaba AI",
+      "url": "https://mangaba-ai.vercel.app/",
+      "snippet": "Sua equipe de especialistas Oito Mangaba AI a postos Cada uma tem identidade, expertise e tom próprio. Você escolhe quem chamar para cada demanda — todas trabalham com qualquer modelo de IA da sua preferência."
+    },
+    {
+      "title": "EbookRenta! | Official Manga Hub | Dive into Free Trial Reads!",
+      "url": "https://www.ebookrenta.com/",
+      "snippet": "Explore the best manga on EbookRenta! Immerse yourself in daily thrills with our latest releases. Discover a diverse collection, featuring numerous original manga for a unique and imaginative reading experience. Start your manga journey with a free trial today!"
+    }
+  ]
+}

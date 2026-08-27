@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "MusaNyaks/trocr-barbados-fold1",
+  "slug": "musanyaks-trocr-barbados-fold1",
+  "author": "MusaNyaks",
+  "url": "https://huggingface.co/MusaNyaks/trocr-barbados-fold1",
+  "created_at": "2026-08-27T07:12:03.000Z",
+  "updated_at": "2026-08-27T09:08:25.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "vision-encoder-decoder",
+    "image-text-to-text",
+    "generated_from_trainer",
+    "base_model:microsoft/trocr-base-handwritten",
+    "base_model:finetune:microsoft/trocr-base-handwritten",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 333921792,
+  "parameters_human": "333.9M",
+  "storage_bytes": 20036210873,
+  "storage_human": "20.0 GB",
+  "base_model": "microsoft/trocr-base-handwritten",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "MusaNyaks/trocr-barbados-fold0 · Hugging Face",
+      "url": "https://huggingface.co/MusaNyaks/trocr-barbados-fold0",
+      "snippet": "Instructions to use MusaNyaks/trocr-barbados-fold0 with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Libraries Transformers How to use MusaNyaks/trocr-barbados-fold0 with Transformers:"
+    },
+    {
+      "title": "TrOCR · Hugging Face",
+      "url": "https://huggingface.co/docs/transformers/model_doc/trocr",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "transformers/docs/source/en/model_doc/trocr.md at main - GitHub",
+      "url": "https://github.com/huggingface/transformers/blob/main/docs/source/en/model_doc/trocr.md",
+      "snippet": "TrOCR is a text recognition model for both image understanding and text generation. It doesn&#x27;t require separate models for image processing or character generation. TrOCR is a simple single end-to-end system that uses a transformer to handle visual understanding and text generation. You can find all the original TrOCR checkpoints under the Microsoft organization. TrOCR architecture. Taken from ..."
+    },
+    {
+      "title": "TrOCR - Qualcomm® AI Hub",
+      "url": "https://aihub.qualcomm.com/models/trocr",
+      "snippet": "TrOCR Transformer based model for state‑of‑the‑art optical character recognition (OCR) on both printed and handwritten text. End‑to‑end text recognition approach with pre‑trained image transformer and text transformer models for both image understanding and wordpiece‑level text generation."
+    },
+    {
+      "title": "TrOCR: Transformer-based Optical Character Recognition with Pre-trained ...",
+      "url": "https://www.microsoft.com/en-us/research/publication/trocr-transformer-based-optical-character-recognition-with-pre-trained-models/",
+      "snippet": "The TrOCR model is simple but effective, and can be pre-trained with large-scale synthetic data and fine-tuned with human-labeled datasets. Experiments show that the TrOCR model outperforms the current state-of-the-art models on both printed and handwritten text recognition tasks."
+    }
+  ]
+}

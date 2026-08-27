@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "TechnoBaptist/Isaac-0.5",
+  "slug": "technobaptist-isaac-0-5",
+  "author": "TechnoBaptist",
+  "url": "https://huggingface.co/TechnoBaptist/Isaac-0.5",
+  "created_at": "2026-08-27T09:35:32.000Z",
+  "updated_at": "2026-08-27T09:35:33.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "robotics",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "robotics",
+    "vision-language-model",
+    "robot-learning",
+    "embodied-ai",
+    "en",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 6559582,
+  "storage_human": "7 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "PerceptronAI/Isaac-0.5 · Hugging Face",
+      "url": "https://huggingface.co/PerceptronAI/Isaac-0.5",
+      "snippet": "embodied-ai Model card FilesFiles and versions xet Community Copy to bucket new Isaac 0.5 by Perceptron Extending the frontier of open robot learning What&#x27;s new in Isaac 0.5 A scaling law for video and robot experience Semantic world modeling Model architecture Performance benchmarks Where Isaac sits among open models Building with Isaac in the ..."
+    },
+    {
+      "title": "Perceptron AI on X: \"Today we&#x27;re releasing Isaac 0.5: 36B dynamic MoE ...",
+      "url": "https://x.com/perceptroninc/status/2092678357775442103",
+      "snippet": "Today we&#x27;re releasing Isaac 0.5: 36B dynamic MoE, open weight 🤗 embodied foundation model. Isaac combines multimodal video understanding, embodied reasoning and robot control into a single, sparse backbone."
+    },
+    {
+      "title": "TechnoBaptist (TechnoBaptist) - Hugging Face",
+      "url": "https://huggingface.co/TechnoBaptist",
+      "snippet": "AI, ML, Synth, Fine-tuning, RL, DPO, CUDA, JAX, ONNX, PyTorch"
+    },
+    {
+      "title": "Perceptron launches Isaac 0.5 visual AI model for factories and ...",
+      "url": "https://aidirectory.com/news/perceptron-launches-isaac-0-5-visual-ai-factories-warehouses",
+      "snippet": "Perceptron launches Isaac 0.5 visual AI model for factories and warehouses Startup Perceptron, founded by two former Meta researchers, released Isaac 0.5 to help robots navigate industrial spaces and analyze video."
+    },
+    {
+      "title": "Ex-Meta Scientists Launch Isaac 0.5 AI for Industrial Automation",
+      "url": "https://piqmarkets.com/story/ex-meta-scientists-launch-isaac-0-5-ai-for-industrial-automation",
+      "snippet": "Perceptron, a startup founded by former Meta AI scientists, has launched Isaac 0.5, an open-weight AI model designed to enable robots to perceive, reason, and act in industrial environments like warehouses and factories. The company raised $21 million in funding."
+    }
+  ]
+}

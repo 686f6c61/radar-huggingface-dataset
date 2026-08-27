@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "Juliankrau/mixer-generation-slim",
+  "slug": "juliankrau-mixer-generation-slim",
+  "author": "Juliankrau",
+  "url": "https://huggingface.co/Juliankrau/mixer-generation-slim",
+  "created_at": "2026-08-27T02:25:39.000Z",
+  "updated_at": "2026-08-27T02:25:49.000Z",
+  "license": "bsd-3-clause",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "mixer",
+    "pytorch",
+    "generation",
+    "license:bsd-3-clause",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 33088,
+  "parameters_human": "33088",
+  "storage_bytes": 132832,
+  "storage_human": "132832 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - Mixar-AI/mixar-app: AI-powered 3D suite built on Blender, with ...",
+      "url": "https://github.com/Mixar-AI/mixar-app",
+      "snippet": "Mixar Mixar is an AI-powered 3D content creation tool built as a custom fork of Blender 5.0. It adds an AI chat agent that can drive Blender, a layered texture-painting system, AI-assisted 3D generation, and a set of Mixar-native editor spaces — while keeping everything you already use from Blender."
+    },
+    {
+      "title": "AI Mixing & Mastering for Release-Ready Music | Cryo Mix",
+      "url": "https://cryo-mix.com/",
+      "snippet": "Online AI mixing & mastering for songs, beats, podcasts and more. Cryo Mix turns rough mixes and stems into release-ready audio with full-length previews. Try it free, no credit card, you keep all rights."
+    },
+    {
+      "title": "Best AI 3D Model Generators for 3D Printing 2026",
+      "url": "https://3dprinting.com/software-guides/ai-3d-model-generators/",
+      "snippet": "The best AI 3D model generators for 3D printing in 2026: text-to-3D and image-to-3D tools compared on quality, price, and whether the result actually prints."
+    },
+    {
+      "title": "Best Minecraft AI Tools (2026): Builders, Creators & Modders",
+      "url": "https://theaisurf.com/best-minecraft-ai-tools/",
+      "snippet": "Discover the best Minecraft AI tools of 2026, from AI skin generators and texture creators to structure builders and schematic exporters. Tested"
+    },
+    {
+      "title": "Civitai | Discover and Create AI Art",
+      "url": "https://civitai.com/",
+      "snippet": "Explore thousands of free Stable Diffusion & Flux models, create and share AI-generated art, and join the world&#x27;s largest community of generative AI creators."
+    }
+  ]
+}

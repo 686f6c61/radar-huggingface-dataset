@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "ajayiyer/data-efficient-learning-final",
+  "slug": "ajayiyer-data-efficient-learning-final",
+  "author": "ajayiyer",
+  "url": "https://huggingface.co/ajayiyer/data-efficient-learning-final",
+  "created_at": "2026-08-27T08:43:11.000Z",
+  "updated_at": "2026-08-27T08:43:20.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "transformer",
+    "research-notes",
+    "data-efficient-learning",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 49600,
+  "parameters_human": "49600",
+  "storage_bytes": 198880,
+  "storage_human": "198880 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Active Learning Methods for Efficient Data Utilization and Model ...",
+      "url": "https://arxiv.org/pdf/2504.16136",
+      "snippet": "Abstract—In the era of data-driven intelligence, the paradox of data abundance and annotation scarcity has emerged as a critical bottleneck in the advancement of machine learning. This paper gives a detailed overview of Active Learning (AL), which is a strategy in machine learning that helps models achieve better performance using fewer labeled examples. It introduces the basic concepts of ..."
+    },
+    {
+      "title": "AI Model Leaderboard [2026-08] — Live Rankings | DataLearnerAI",
+      "url": "https://www.datalearner.com/en/leaderboards",
+      "snippet": "Live AI model rankings across ARC-AGI-2, HLE, SWE-bench Verified, and more with category views for coding, math, and agent tasks."
+    },
+    {
+      "title": "MIT 6.5940 Fall 2024 TinyML and Efficient Deep Learning Computing",
+      "url": "https://hanlab.mit.edu/courses/2024-fall-65940",
+      "snippet": "This course introduces efficient AI computing techniques that enable powerful deep learning applications on resource-constrained devices. Topics include model compression, pruning, quantization, neural architecture search, distributed training, data/model parallelism, gradient compression, and on-device fine-tuning."
+    },
+    {
+      "title": "Rishabh Iyer - Research - Google Sites",
+      "url": "https://sites.google.com/view/rishabhiyer/research",
+      "snippet": "Another application in data-efficient learning space is meta-learning and few-shot learning. We have studied meta-learning in real-world scenarios like noise and OOD data, and semi-supervised meta learning. Changbin Li, Suraj Kothawade, Feng Chen, and Rishabh Iyer, PLATINUM: Semi-Supervised Model Agnostic Meta-Learning using Submodular Mutual Information, In International Conference of Machine ..."
+    },
+    {
+      "title": "20+ Artificial Intelligence Projects For Students (2026 Guide)",
+      "url": "https://nextagile.ai/blog/ai/artificial-intelligence-projects-for-students/",
+      "snippet": "Explore 20+ artificial intelligence projects for students with Python source code, GitHub links, research papers, and step-by-step guides. Beginner to final-year level."
+    }
+  ]
+}

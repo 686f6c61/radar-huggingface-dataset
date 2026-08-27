@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "J-Fraudster/Qwen3.5-2B-W4A16-AutoRound",
+  "slug": "j-fraudster-qwen3-5-2b-w4a16-autoround",
+  "author": "J-Fraudster",
+  "url": "https://huggingface.co/J-Fraudster/Qwen3.5-2B-W4A16-AutoRound",
+  "created_at": "2026-08-27T07:39:31.000Z",
+  "updated_at": "2026-08-27T08:10:50.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "qwen3_5",
+    "quantization",
+    "auto-round",
+    "gptq",
+    "vlm",
+    "4bit",
+    "text-generation",
+    "image-text-to-text",
+    "conversational",
+    "base_model:Qwen/Qwen3.5-2B",
+    "base_model:quantized:Qwen/Qwen3.5-2B",
+    "license:apache-2.0",
+    "4-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1061364544,
+  "parameters_human": "1.06B",
+  "storage_bytes": 2618089301,
+  "storage_human": "2.6 GB",
+  "base_model": "Qwen/Qwen3.5-2B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "kaitchup/Qwen3.5-2B-autoround-W4A16 · Hugging Face",
+      "url": "https://huggingface.co/kaitchup/Qwen3.5-2B-autoround-W4A16",
+      "snippet": "This is Qwen/Qwen3.5-2B quantized with AutoRound to W4A16 (INT). The model is compatible with vLLM (tested: v0.16.1rc1). Tested with an H200. Currently under evaluation. Developed by: The Kaitchup Instructions"
+    },
+    {
+      "title": "j3st3r666/Qwen3.8-27B-W4A16-AutoRound · Hugging Face",
+      "url": "https://huggingface.co/j3st3r666/Qwen3.8-27B-W4A16-AutoRound",
+      "snippet": "An int4 weight-only (W4A16) quantization of Qwen/Qwen3.8-27B, made with Intel AutoRound and packaged in compressed-tensors for vLLM. The weights are int4 and the activations stay BF16, so it runs on any Ampere-or-newer NVIDIA GPU through the Marlin int4 kernel — no Blackwell needed."
+    },
+    {
+      "title": "Qwen3.5 - LLM Compressor Docs",
+      "url": "https://docs.vllm.ai/projects/llm-compressor/en/latest/key-models/qwen3.5/",
+      "snippet": "Documentation for LLM Compressor, an easy-to-use library for compressing large language models for deployment with vLLM."
+    },
+    {
+      "title": "GitHub - intel/auto-round: A SOTA quantization toolkit for high ...",
+      "url": "https://github.com/intel/auto-round",
+      "snippet": "In conclusion, we recommend using auto-round for W4A16 and auto-round-best with enable_alg_ext for W2A16. However, you may adjust the configuration to suit your specific requirements and available resources."
+    },
+    {
+      "title": "2026-08-17-autoround-w4a16-v100.md - GitHub",
+      "url": "https://github.com/acupof-ai/arle/blob/main/docs/experience/wins/2026-08-17-autoround-w4a16-v100.md",
+      "snippet": "Context The 35B A3B MoE model (Qwen3.6 hybrid: GDR linear attention + full attention + 256 experts) produced degenerate output on the previous W4A16-fixed checkpoint (GPTQ fused-expert corruption, llm-compressor #2939). Switched to the AutoRound W4A16 checkpoint, which uses a different quantization method and should avoid the fused-expert bug."
+    }
+  ]
+}

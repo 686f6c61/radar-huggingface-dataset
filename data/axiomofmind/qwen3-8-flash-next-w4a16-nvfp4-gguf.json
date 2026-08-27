@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "axiomofmind/Qwen3.8-Flash-Next-W4A16-NVFP4-GGUF",
+  "slug": "axiomofmind-qwen3-8-flash-next-w4a16-nvfp4-gguf",
+  "author": "axiomofmind",
+  "url": "https://huggingface.co/axiomofmind/Qwen3.8-Flash-Next-W4A16-NVFP4-GGUF",
+  "created_at": "2026-08-27T01:58:42.000Z",
+  "updated_at": "2026-08-27T02:05:03.000Z",
+  "license": "qwen-community-1.0",
+  "license_family": "unknown",
+  "pipeline_tag": "image-text-to-text",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "qwen",
+    "qwen4exp",
+    "nvfp4",
+    "modelopt",
+    "moe",
+    "vision-language",
+    "image-text-to-text",
+    "base_model:axiomofmind/Qwen3.8-Flash-Next-W4A16-NVFP4",
+    "base_model:quantized:axiomofmind/Qwen3.8-Flash-Next-W4A16-NVFP4",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 448931056,
+  "parameters_human": "448.9M",
+  "storage_bytes": 907543200,
+  "storage_human": "908 MB",
+  "base_model": "axiomofmind/Qwen3.8-Flash-Next-W4A16-NVFP4",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Qwen3.8-Flash-Next-W4A16-NVFP4 - Hugging Face",
+      "url": "https://huggingface.co/axiomofmind/Qwen3.8-Flash-Next-W4A16-NVFP4",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GitHub - QwenLM/Qwen3.8: Qwen3.8 is the large language model series ...",
+      "url": "https://github.com/QwenLM/Qwen3.8",
+      "snippet": "For the first time, Qwen3.8 brings a Qwen-Max-class model to open release. Built on the architectural foundation of Qwen3.5, Qwen3.8 delivers substantial gains across coding, professional work, research, and long-horizon agentic tasks. Beyond answering harder questions, Qwen3.8 is designed to carry complex, multi-step tasks through to completion with greater reliability. Qwen3.8 features the ..."
+    },
+    {
+      "title": "Qwen3.8-Flash-Next: How to Run Locally - unsloth.ai",
+      "url": "https://unsloth.ai/docs/models/qwen3.8-next",
+      "snippet": "Qwen3.8-Flash-Next is a new open-weight, 125B parameter MoE multimodal model from Qwen. Built on the new Qwen4 architecture, it supports a 262K context window and advanced reasoning. It can run locally on devices with 78GB RAM /unified memory without requiring GPU VRAM. The model outperforms Claude-4.6-Opus (Max) at agentic coding, vision, and ..."
+    },
+    {
+      "title": "Qwen/Qwen3.8-Flash-Next | vLLM Recipes",
+      "url": "https://recipes.vllm.ai/Qwen/Qwen3.8-Flash-Next",
+      "snippet": "Overview Qwen3.8-Flash-Next is a multimodal, ultra-sparse Mixture-of-Experts model. It has 125B parameters, including an additional 51B N-gram embedding table, while activating 6B parameters per token. The architecture combines four main ideas: GDN + QSA: three of every four layers use Gated DeltaNet to compress history; the fourth uses Qwen Sparse Attention for precise long-range retrieval ..."
+    },
+    {
+      "title": "Qwen3.8-Flash-Next: A New Architecture, Towards Ultimate Cost-Efficiency",
+      "url": "https://qwen.ai/blog?id=qwen3.8-flash-next",
+      "snippet": "Qwen3.8-Flash-Next upgrades the model systematically along four aspects — attention, residual, embedding and optimization — improving model capability while further optimizing computational efficiency, model capacity and training stability: Attention: A GDN + QSA hybrid architecture."
+    }
+  ]
+}

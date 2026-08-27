@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "ruchiraRTG/vit_model_final_pro",
+  "slug": "ruchirartg-vit_model_final_pro",
+  "author": "ruchiraRTG",
+  "url": "https://huggingface.co/ruchiraRTG/vit_model_final_pro",
+  "created_at": "2026-08-27T09:49:11.000Z",
+  "updated_at": "2026-08-27T09:53:15.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "vit",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 85800194,
+  "parameters_human": "85.8M",
+  "storage_bytes": 343226745,
+  "storage_human": "343 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "AI Models | Civitai",
+      "url": "https://civitai.com/models",
+      "snippet": "Browse thousands of free Stable Diffusion & Flux models, LoRAs, checkpoints, and embeddings. The largest collection of AI image generation resources."
+    },
+    {
+      "title": "Vision Transformer (ViT) · Hugging Face",
+      "url": "https://huggingface.co/docs/transformers/model_doc/vit",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Vision Transformer (ViT) Architecture - GeeksforGeeks",
+      "url": "https://www.geeksforgeeks.org/deep-learning/vision-transformer-vit-architecture/",
+      "snippet": "Vision Transformer (ViT) is a deep learning architecture that applies the Transformer model to images. Instead of relying on convolutions, ViTs use self-attention to capture relationships across all image patches, enabling a global understanding of the image. This approach has achieved state-of-the-art results in various computer vision tasks."
+    },
+    {
+      "title": "GitHub - google-research/vision_transformer",
+      "url": "https://github.com/google-research/vision_transformer",
+      "snippet": "paper, we added more than 50k ViT and hybrid models pre-trained on ImageNet and ImageNet-21k with various degrees of data augmentation and model regularization, and fine-tuned on ImageNet, Pets37, Kitti-distance, CIFAR-100, and Resisc45."
+    },
+    {
+      "title": "Vision Transformers (VIT)- A detailed walkthrough (part1)",
+      "url": "https://medium.com/@sinhamaitry6/vision-transformer-model-vit-a-detailed-walkthrough-5713d795016b",
+      "snippet": "Vision Transformers (VIT)- A detailed walkthrough (part1) Transformer models are now one of the most vital architectures for various AI field tasks ranging from Large Language Models (LLMs) to …"
+    }
+  ]
+}

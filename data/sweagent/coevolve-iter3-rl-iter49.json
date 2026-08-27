@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "sweagent/coevolve-iter3-rl-iter49",
+  "slug": "sweagent-coevolve-iter3-rl-iter49",
+  "author": "sweagent",
+  "url": "https://huggingface.co/sweagent/coevolve-iter3-rl-iter49",
+  "created_at": "2026-08-27T06:35:08.000Z",
+  "updated_at": "2026-08-27T06:39:22.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_5_moe",
+    "image-text-to-text",
+    "conversational",
+    "base_model:Qwen/Qwen3.5-35B-A3B-Base",
+    "base_model:finetune:Qwen/Qwen3.5-35B-A3B-Base",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 68164077424,
+  "parameters_human": "68.16B",
+  "storage_bytes": 136345466518,
+  "storage_human": "136.3 GB",
+  "base_model": "Qwen/Qwen3.5-35B-A3B-Base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "sweagent/coevolve-iter3-rl-iter39 · Hugging Face",
+      "url": "https://huggingface.co/sweagent/coevolve-iter3-rl-iter39",
+      "snippet": "Instructions to use sweagent/coevolve-iter3-rl-iter39 with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Libraries Transformers How to use sweagent/coevolve-iter3-rl-iter39 with Transformers:"
+    },
+    {
+      "title": "CoEvolve: Training LLM Agents via Agent-Data Mutual Evolution",
+      "url": "https://arxiv.org/html/2604.15840",
+      "snippet": "We propose CoEvolve, an agent-data co-evolution framework for training LLM agents without human supervision. In this section, we first introduce agent training on synthetic tasks and the extraction of weakness signals from rollout trajectories (Section 3.1)."
+    },
+    {
+      "title": "GitHub - StoneHanaMori/CoEvolve: CoEvolve: Training LLM Agents via ...",
+      "url": "https://github.com/StoneHanaMori/CoEvolve",
+      "snippet": "CoEvolve studies reinforcement learning for LLM agents under a changing training distribution. Instead of relying on a fixed pool of expert demonstrations or static synthetic trajectories, CoEvolve closes the loop between the agent and its data: the current policy interacts with the environment, failure signals are extracted from rollouts, and those signals guide the synthesis of new tasks ..."
+    },
+    {
+      "title": "GitHub - SWE-agent/SWE-agent: SWE-agent takes a GitHub issue and tries ...",
+      "url": "https://github.com/SWE-agent/SWE-agent",
+      "snippet": "SWE-agent is an academic project started at Princeton University by John Yang*, Carlos E. Jimenez*, Alexander Wettig, Kilian Lieret, Shunyu Yao, Karthik Narasimhan, and Ofir Press."
+    },
+    {
+      "title": "CoEvolve: Training LLM Agents via Agent-Data Mutual Evolution",
+      "url": "https://aclanthology.org/2026.acl-long.1055/",
+      "snippet": "To address these challenges, we propose CoEvolve, an agent-data mutual evolution framework that enables LLM agents to improve through closed-loop, interaction-driven training."
+    }
+  ]
+}

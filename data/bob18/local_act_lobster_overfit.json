@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "bob18/local_act_lobster_overfit",
+  "slug": "bob18-local_act_lobster_overfit",
+  "author": "bob18",
+  "url": "https://huggingface.co/bob18/local_act_lobster_overfit",
+  "created_at": "2026-08-27T08:00:27.000Z",
+  "updated_at": "2026-08-27T08:00:58.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "act",
+    "robotics",
+    "dataset:local_lobster",
+    "arxiv:2304.13705",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 51685006,
+  "parameters_human": "51.7M",
+  "storage_bytes": 206774440,
+  "storage_human": "207 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - PasiKoodaa/SlopLobster",
+      "url": "https://github.com/PasiKoodaa/SlopLobster",
+      "snippet": "pcards.mp4 Local AI coding agent — runs entirely on your machine. No accounts, no API keys, no cloud. SlopLobster gives you a Claude Code / Cursor-like agent experience powered by any local LLM via LM Studio. It reads, writes, and edits your files, runs shell commands, searches the web, automates browsers, and manages git — all through a single self-contained HTML file."
+    },
+    {
+      "title": "Bob18-art · GitHub",
+      "url": "https://github.com/Bob18-art",
+      "snippet": "GitHub is where Bob18-art builds software. Joined Jul 20, 2025 Block or report Bob18-art Block user"
+    },
+    {
+      "title": "China Is Obsessed With &#x27;Lobsters&#x27; That Book Flights ... - News18",
+      "url": "https://www.news18.com/explainers/chinas-lobster-farming-craze-decoding-ai-assistant-openclaw-that-books-flights-check-emails-ws-l-10017721.html",
+      "snippet": "China&#x27;s lobster farming craze: OpenClaw is AI assistant designed to perform tasks like booking flights, managing emails. The craze, risks to Beijing&#x27;s tech plans, News18 explains"
+    },
+    {
+      "title": "Underfitting and Overfitting in ML - GeeksforGeeks",
+      "url": "https://www.geeksforgeeks.org/machine-learning/underfitting-and-overfitting-in-machine-learning/",
+      "snippet": "Underfitting (High Bias): A model that is too simple (like a straight line for curved data) misses key patterns and performs poorly on both training and testing data. Overfitting (High Variance): A model that is too complex (like a high-degree polynomial) learns noise, fits training data too closely, and performs poorly on new data."
+    },
+    {
+      "title": "Local AI Models — The Reference for Running AI Locally",
+      "url": "https://local-ai-models.ai/",
+      "snippet": "The complete reference for running AI locally. 100 open-weight models cataloged, real-time benchmarks, hardware planning, agent frameworks, token-speed simulator. Updated August 24, 2026."
+    }
+  ]
+}

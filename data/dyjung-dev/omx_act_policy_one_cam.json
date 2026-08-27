@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "dyjung-dev/omx_act_policy_one_cam",
+  "slug": "dyjung-dev-omx_act_policy_one_cam",
+  "author": "dyjung-dev",
+  "url": "https://huggingface.co/dyjung-dev/omx_act_policy_one_cam",
+  "created_at": "2026-08-27T07:32:40.000Z",
+  "updated_at": "2026-08-27T07:33:01.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "act",
+    "robotics",
+    "dataset:dyjung-dev/pick_and_place_one_cam",
+    "arxiv:2304.13705",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 51668614,
+  "parameters_human": "51.7M",
+  "storage_bytes": 206706296,
+  "storage_human": "207 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Jin-01/omx_act_policy · Hugging Face",
+      "url": "https://huggingface.co/Jin-01/omx_act_policy",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Jin-01/omx_act_policy at main - Hugging Face",
+      "url": "https://huggingface.co/Jin-01/omx_act_policy/tree/main",
+      "snippet": "Instructions to use Jin-01/omx_act_policy with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Libraries LeRobot How to use Jin-01/omx_act_policy with LeRobot: Notebooks Google Colab Kaggle main omx_act_policy 207 MB Ctrl+K Ctrl+K 1 contributor History:8 commits Jin-01 Upload policy weights, train config and readme e1cd15d verifiedabout 1 month ago ..."
+    },
+    {
+      "title": "huggingface-LeRobot/docs/source/policy_act_README.md at main · AI-robot ...",
+      "url": "https://github.com/AI-robot-lab/huggingface-LeRobot/blob/main/docs/source/policy_act_README.md",
+      "snippet": "🤗 LeRobot: Making AI for Robotics more accessible with end-to-end learning - huggingface-LeRobot/docs/source/policy_act_README.md at main · AI-robot-lab ..."
+    },
+    {
+      "title": "cheeunshin/omx-ai-policy - GitHub",
+      "url": "https://github.com/cheeunshin/omx-ai-policy/tree/main",
+      "snippet": "OMX AI Policy 자연어 임무와 카메라 영상을 해석해 필요한 물체와 고수준 행동을 선택하고, 검증된 동작만 OpenMANIPULATOR-X (OMX)에 전달하기 위한 실험 프로젝트입니다."
+    },
+    {
+      "title": "AI Aimbot Models & YOLO Detection Models | MossyModels",
+      "url": "https://mossymodels.com/",
+      "snippet": "Browse 661+ free YOLO and ONNX detection models across 43+ games. Community library for Fortnite, Valorant, Warzone, Apex Legends, and more."
+    }
+  ]
+}

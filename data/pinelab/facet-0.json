@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "Pinelab/Facet-0",
+  "slug": "pinelab-facet-0",
+  "author": "Pinelab",
+  "url": "https://huggingface.co/Pinelab/Facet-0",
+  "created_at": "2026-07-18T12:59:32.000Z",
+  "updated_at": "2026-08-27T09:08:49.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 2,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 12432017298,
+  "storage_human": "12.4 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Pinelab/Facet-0 · Hugging Face",
+      "url": "https://huggingface.co/Pinelab/Facet-0",
+      "snippet": "Pinelab / Facet-0 like 0 License:apache-2.0 Model card FilesFiles and versions xet Community Copy to bucket new"
+    },
+    {
+      "title": "Pinelab/Facet-0 at main - Hugging Face",
+      "url": "https://huggingface.co/Pinelab/Facet-0/tree/main",
+      "snippet": "Pinelab / Facet-0 like 2 License:apache-2.0 Model card FilesFiles and versions xet Community Copy to bucket new main Facet-0 1.55 kB Ctrl+K Ctrl+K 1 contributor History:1 commit Pinelab initial commit cecc441 verifiedabout 1 month ago .gitattributes Safe 1.52 kBinitial commitabout 1 month ago README.md Safe 28 Bytesinitial commitabout 1 month ago"
+    },
+    {
+      "title": "#facet #embodiedai #physicalai #robotics #robotlearning # ... - LinkedIn",
+      "url": "https://www.linkedin.com/posts/pine-lab-ntu_facet-embodiedai-physicalai-activity-7497157854814982144-3EPD",
+      "snippet": "🚀 Introducing FACET-0 — a foundation model built for high-precision robotic assembly. ⏱️ Nearly 9 minutes. One take. Full PC assembly. FACET-0 autonomously executes a long sequence of ..."
+    },
+    {
+      "title": "Home|PINE Lab",
+      "url": "https://pine-lab-ntu.github.io/",
+      "snippet": "About Us The goal of P erception and embodied IN t E lligence (PINE) Lab is to build embodied agents that perceive and interact with the physical world as humans, so that the robot can assist everyone in everyday life to achieve complex human demands. For more information, please visit our research page, or follow us on Github, Rednote and X. 🔥🔥🔥 We are actively looking for highly ..."
+    },
+    {
+      "title": "GitHub - ncoevoet/facet: Local AI photo scoring, culling, and gallery ...",
+      "url": "https://github.com/ncoevoet/facet",
+      "snippet": "Local AI photo scoring, culling, and gallery — score, organise, and explore your library with face recognition and semantic search. No cloud, no subscriptions. - ncoevoet/facet"
+    }
+  ]
+}

@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "kby-ai/face-recognition-docker",
+  "slug": "kby-ai-face-recognition-docker",
+  "author": "kby-ai",
+  "url": "https://huggingface.co/kby-ai/face-recognition-docker",
+  "created_at": "2026-08-27T01:57:25.000Z",
+  "updated_at": "2026-08-27T01:57:52.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - kby-ai/FaceRecognition-Docker: Face Recognition Docker, Face ...",
+      "url": "https://github.com/kby-ai/FaceRecognition-Docker",
+      "snippet": "It includes features that allow for testing face recognition between two images using both image files and base64-encoded images. In this repo, we integrated KBY-AI &#x27;s face recognition solution into Linux Server SDK by docker container. We can customize the SDK to align with customer&#x27;s specific requirements."
+    },
+    {
+      "title": "kbyai/face-recognition - Docker Image",
+      "url": "https://hub.docker.com/r/kbyai/face-recognition",
+      "snippet": "⁠ Product & Resources For more information, visit KBY AI&#x27;s GitHub Repository ⁠. FaceRecognition-Docker Overview This Docker image implements face recognition technology via a Flask API and Gradio. It includes features that allow for testing face recognition between two images using both image files and base64-encoded images."
+    },
+    {
+      "title": "kby-ai/FaceRecognition-Docker | DeepWiki",
+      "url": "https://deepwiki.com/kby-ai/FaceRecognition-Docker",
+      "snippet": "FaceRecognition-Docker is a production-ready, Dockerized face recognition system that wraps KBY-AI&#x27;s Face Recognition Server SDK in a Flask-based HTTP API. The system accepts two images (via file upload or base64 encoding), detects faces in each image, extracts biometric templates, and calculates similarity scores to determine if the faces match."
+    },
+    {
+      "title": "FaceRecognition-Docker/README.md at main · kby-ai ... - GitHub",
+      "url": "https://github.com/kby-ai/FaceRecognition-Docker/blob/main/README.md",
+      "snippet": "It includes features that allow for testing face recognition between two images using both image files and base64-encoded images. In this repo, we integrated KBY-AI &#x27;s face recognition solution into Linux Server SDK by docker container."
+    },
+    {
+      "title": "Installation | kby-ai/FaceRecognition-Docker | DeepWiki",
+      "url": "https://deepwiki.com/kby-ai/FaceRecognition-Docker/2.1-installation",
+      "snippet": "Installation Relevant source files This page provides detailed instructions for installing the FaceRecognition-Docker system. Installation can be accomplished through two methods: pulling a pre-built image from Docker Hub or building from source. Both methods result in a fully functional containerized face recognition service."
+    }
+  ]
+}

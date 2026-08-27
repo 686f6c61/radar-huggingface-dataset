@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "kashaf112-s/code-switching-codesaviours-si26-kashaf",
+  "slug": "kashaf112-s-code-switching-codesaviours-si26-kashaf",
+  "author": "kashaf112-s",
+  "url": "https://huggingface.co/kashaf112-s/code-switching-codesaviours-si26-kashaf",
+  "created_at": "2026-08-27T09:12:45.000Z",
+  "updated_at": "2026-08-27T09:14:13.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "token-classification",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "xlm-roberta",
+    "token-classification",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 277455363,
+  "parameters_human": "277.5M",
+  "storage_bytes": 1126943684,
+  "storage_human": "1.1 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "code-switching-codesaviours-si26-eman - Hugging Face",
+      "url": "https://huggingface.co/emanfatimaa05/code-switching-codesaviours-si26-eman",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GitHub - hassanatif992-hash/code-switching-codesaviours-si26 ...",
+      "url": "https://github.com/hassanatif992-hash/code-switching-codesaviours-si26-MuhammadHassaan",
+      "snippet": "Project 2 — Roman Urdu and English Code-Switching Dataset This project contains a labelled dataset of Roman Urdu and English code-switching sentences."
+    },
+    {
+      "title": "code-switching-codesaviours-si26-bilal - Hugging Face",
+      "url": "https://huggingface.co/datasets/Noisy77/code-switching-codesaviours-si26-bilal",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Zainab-Binte-Khalid/code-switching-codesaviours-si26-zainab - GitHub",
+      "url": "https://github.com/Zainab-Binte-Khalid/code-switching-codesaviours-si26-zainab",
+      "snippet": "Model code-switching-codesaviours-si26-zainab model — XLM-RoBERTa fine-tuned for 8 epochs on the above dataset."
+    },
+    {
+      "title": "#machinelearning #nlp #urduocr #ocr #huggingface # ... - LinkedIn",
+      "url": "https://www.linkedin.com/posts/saimamanzoorofficial_machinelearning-nlp-urduocr-activity-7496594479462912000-XO86",
+      "snippet": "A big thanks to Code Saviours (SMC-PRIVATE) Limited for this internship opportunity and the learning experience! #MachineLearning #NLP #UrduOCR #OCR #HuggingFace #ArtificialIntelligence # ..."
+    }
+  ]
+}

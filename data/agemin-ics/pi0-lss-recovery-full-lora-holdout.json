@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "agemin-ICS/pi0-lss-recovery-full-lora-holdout",
+  "slug": "agemin-ics-pi0-lss-recovery-full-lora-holdout",
+  "author": "agemin-ICS",
+  "url": "https://huggingface.co/agemin-ICS/pi0-lss-recovery-full-lora-holdout",
+  "created_at": "2026-08-27T06:17:19.000Z",
+  "updated_at": "2026-08-27T06:19:56.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "pi0_for_lss",
+    "robotics",
+    "dataset:agemin-ICS/lss-arm-pink-cube-box-recovery-delta",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1806291184,
+  "storage_human": "1.8 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "agemin-ICS/pi0-lss-recovery-full-lora · Hugging Face",
+      "url": "https://huggingface.co/agemin-ICS/pi0-lss-recovery-full-lora",
+      "snippet": "Instructions to use agemin-ICS/pi0-lss-recovery-full-lora with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Libraries LeRobot How to use agemin-ICS/pi0-lss-recovery-full-lora with LeRobot: Notebooks Google Colab Kaggle Model Card for pi0_for_lss Model Details Inputs & Outputs Training Dataset Training Configuration How to Get Started with the ..."
+    },
+    {
+      "title": "agemin-ICS/pi0-lss-recovery-lora · Hugging Face",
+      "url": "https://huggingface.co/agemin-ICS/pi0-lss-recovery-lora",
+      "snippet": "Instructions to use agemin-ICS/pi0-lss-recovery-lora with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Libraries LeRobot How to use agemin-ICS/pi0-lss-recovery-lora with LeRobot: Notebooks Google Colab Kaggle Model Card for pi0_for_lss Model Details Inputs & Outputs Training Dataset Training ..."
+    },
+    {
+      "title": "GitHub - Physical-Intelligence/openpi",
+      "url": "https://github.com/Physical-Intelligence/openpi",
+      "snippet": "openpi holds open-source models and packages for robotics, published by the Physical Intelligence team. Currently, this repo contains three types of models: the π₀ model, a flow-based vision-language-action model (VLA). the π₀-FAST model, an autoregressive VLA, based on the FAST action tokenizer. the π₀.₅ model, an upgraded version of π₀ with better open-world generalization ..."
+    },
+    {
+      "title": "GitHub - qrafty-ai/pi-openpi: OpenPIE - Open source Pi0 implementation ...",
+      "url": "https://github.com/qrafty-ai/pi-openpi",
+      "snippet": "openpi holds open-source models and packages for robotics, published by the Physical Intelligence team. Currently, this repo contains four types of models: the π₀ model, a flow-based vision-language-action model (VLA). the π₀-FAST model, an autoregressive VLA, based on the FAST action tokenizer. the π₀.₅ model, an upgraded version of π₀ with better open-world generalization ..."
+    },
+    {
+      "title": "A Steerable Model with Emergent Capabilities - pi.website",
+      "url": "https://www.pi.website/blog/pi07",
+      "snippet": "A steerable robotic foundation model that exhibits a step-change in generalization."
+    }
+  ]
+}

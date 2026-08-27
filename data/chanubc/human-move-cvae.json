@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "chanubc/human-move-cvae",
+  "slug": "chanubc-human-move-cvae",
+  "author": "chanubc",
+  "url": "https://huggingface.co/chanubc/human-move-cvae",
+  "created_at": "2026-08-27T08:17:29.000Z",
+  "updated_at": "2026-08-27T08:17:33.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "trajectory-prediction",
+    "pedestrian",
+    "cvae",
+    "robotics",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 482613,
+  "storage_human": "482613 B",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "chanubc (chanwoo) - Hugging Face",
+      "url": "https://huggingface.co/chanubc/models",
+      "snippet": "chanubc&#x27;s models1 Sort: Recently updated chanubc/Qwen2.5-VL-3B-LEMONADE-LoRA Image-Text-to-Text •Updated 5 days ago• 22"
+    },
+    {
+      "title": "chanubc (chanwoo) - Hugging Face",
+      "url": "https://huggingface.co/chanubc",
+      "snippet": "Sort: Recently updated chanubc/overhead-person-yolo11 Object Detection •Updated 8 days ago• 33"
+    },
+    {
+      "title": "Diversity-Promoting Human Motion Interpolation via Conditional ...",
+      "url": "https://arxiv.org/pdf/2111.06762",
+      "snippet": "ABSTRACT In this paper, we present a deep generative model based method to generate diverse human motion interpolation results. We resort to the Conditional Variational Auto-Encoder (CVAE) to learn human motion conditioned on a pair of given start and end motions, by leveraging the Recurrent Neural Network (RNN) structure for both the encoder and the decoder. Additionally, we introduce a ..."
+    },
+    {
+      "title": "A Unified 3D Human Motion Synthesis Model via Conditional Variational ...",
+      "url": "https://ieeexplore.ieee.org/document/9711162",
+      "snippet": "A Unified 3D Human Motion Synthesis Model via Conditional Variational Auto-Encoder Abstract: We present a unified and flexible framework to address the generalized problem of 3D motion synthesis that covers the tasks of motion prediction, completion, interpolation, and spatial-temporal recovery."
+    },
+    {
+      "title": "GitHub - Mathux/ACTOR: Official Pytorch implementation of the paper ...",
+      "url": "https://github.com/Mathux/ACTOR",
+      "snippet": "ACTOR Official Pytorch implementation of the paper \"Action-Conditioned 3D Human Motion Synthesis with Transformer VAE\", ICCV 2021. Please visit our webpage for more details."
+    }
+  ]
+}

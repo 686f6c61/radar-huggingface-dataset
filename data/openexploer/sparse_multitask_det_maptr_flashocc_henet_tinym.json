@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "OpenExploer/sparse_multitask_det_maptr_flashocc_henet_tinym",
+  "slug": "openexploer-sparse_multitask_det_maptr_flashocc_henet_tinym",
+  "author": "OpenExploer",
+  "url": "https://huggingface.co/OpenExploer/sparse_multitask_det_maptr_flashocc_henet_tinym",
+  "created_at": "2026-08-27T08:02:48.000Z",
+  "updated_at": "2026-08-27T08:23:06.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "heal",
+    "horizon",
+    "occupancy",
+    "lane-detection",
+    "arxiv:2308.09244",
+    "arxiv:2208.14437",
+    "arxiv:2311.12058",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 2857165837,
+  "storage_human": "2.9 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "# Bev Sparse Multitask Model Training - doc.oe.horizon.auto",
+      "url": "https://doc.oe.horizon.auto/3.7.1/en/guide/advanced_content/hat/examples/bev_sparse_multitask.html",
+      "snippet": "This tutorial mainly tells everyone how to train a BevSparseMultiTask model from scratch on the dataset nuscenes using HAT, including floating-point, quantized, and fixed-point models. This model is a bev multi-task perception model, which contains detection heads for three major perception tasks: sparse dynamic detection head, sparse static element detection head, and general obstacle ..."
+    },
+    {
+      "title": "GitHub - hustvl/MapTR: [ICLR&#x27;23 Spotlight & ECCV&#x27;24 & IJCV&#x27;24] MapTR ...",
+      "url": "https://github.com/hustvl/MapTR",
+      "snippet": "Introduction MapTR/MapTRv2 is a simple, fast and strong online vectorized HD map construction framework. High-definition (HD) map provides abundant and precise static environmental information of the driving scene, serving as a fundamental and indispensable component for planning in autonomous driving system."
+    },
+    {
+      "title": "GitHub - Yzichen/FlashOCC",
+      "url": "https://github.com/Yzichen/FlashOCC",
+      "snippet": "Contribute to Yzichen/FlashOCC development by creating an account on GitHub."
+    },
+    {
+      "title": "【地平线J6工具链参考算法】SparseBevFusionMultitaskOE-V1.0（Sparse多任务）",
+      "url": "https://developer.horizon.auto/blog/13254",
+      "snippet": "详细可以参考单任务模型的参考文档的改动说明章节： 地平线静态目标检测 MapTR 参考算法-V2.0 - 地平线开发者社区 地平线3D目标检测 bev_sparse 参考算法-V2.0 - 地平线开发者社区 地平线占用预测FlashOcc参考算法-V1.0 - 地平线开发者社区 3.1 训练策略 3.1.1 浮点训练 （一）数据结构说明 参考算法已有的三 ..."
+    },
+    {
+      "title": "地平线OE3.7 bev_sparse_det_maptr_flashocc_henet多任务感知模型解读：目标检测/ 实时生成地图/占用预测 ...",
+      "url": "https://jishuzhan.net/article/2021740040683061249",
+      "snippet": "前言：地平线OE3.7版本上线了一个J6M可跑的多任务感知模型，其qat后det任务mAP高达41，比OE3.2各类3D目标检测模型高近10个点，并且支持目标检测（推测为Sparse4D系列）、实时地图生成（MapTR）、Occ占据栅格预测（FlashOcc）三个任务并行，并且在J6M上FPS跑到了35，虽然测试的是在数据集上，但该模型已经 ..."
+    }
+  ]
+}

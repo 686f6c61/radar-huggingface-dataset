@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "fireviewer/dfine-large-fire-smoke-v7",
+  "slug": "fireviewer-dfine-large-fire-smoke-v7",
+  "author": "fireviewer",
+  "url": "https://huggingface.co/fireviewer/dfine-large-fire-smoke-v7",
+  "created_at": "2026-08-27T08:12:58.000Z",
+  "updated_at": "2026-08-27T08:13:05.000Z",
+  "license": "fireviewer-component-and-source-terms",
+  "license_family": "unknown",
+  "pipeline_tag": "object-detection",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "safetensors",
+    "fire",
+    "smoke",
+    "dfine",
+    "deim",
+    "experimental",
+    "object-detection",
+    "en",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 31255332,
+  "parameters_human": "31.3M",
+  "storage_bytes": 125140804,
+  "storage_human": "125 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "fireviewer/dfine-xlarge-fire-smoke · Hugging Face",
+      "url": "https://huggingface.co/fireviewer/dfine-xlarge-fire-smoke",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GitHub - fireviewer/models: large and small lm trained for fire ...",
+      "url": "https://github.com/fireviewer/models",
+      "snippet": "large and small lm trained for fire detection, geospacial localization and 3D interraction - fireviewer/models"
+    },
+    {
+      "title": "Models - Hugging Face",
+      "url": "https://huggingface.co/models?other=fireviewer",
+      "snippet": "Explore machine learning models."
+    },
+    {
+      "title": "models/README.md at main · fireviewer/models · GitHub",
+      "url": "https://github.com/fireviewer/models/blob/main/README.md",
+      "snippet": "large and small lm trained for fire detection, geospacial localization and 3D interraction - fireviewer/models"
+    },
+    {
+      "title": "Z.ai shares surge 8% on new AI model running only on Chinese chips - CNBC",
+      "url": "https://www.cnbc.com/2026/08/27/zai-shares-surge-new-ai-model-using-chinese-chips.html",
+      "snippet": "Z.ai&#x27;s shares rose after the company launched a new AI model that it claimed runs only on Chinese chips. It&#x27;s the latest indication of China&#x27;s efforts to ramp up homegrown computing capability ..."
+    }
+  ]
+}

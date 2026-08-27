@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "tylerthompson/multimodal-reasoning-reading72",
+  "slug": "tylerthompson-multimodal-reasoning-reading72",
+  "author": "tylerthompson",
+  "url": "https://huggingface.co/tylerthompson/multimodal-reasoning-reading72",
+  "created_at": "2026-08-27T11:23:41.000Z",
+  "updated_at": "2026-08-27T11:23:50.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "transformer",
+    "research-notes",
+    "multimodal-reasoning",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 33088,
+  "parameters_human": "33088",
+  "storage_bytes": 132832,
+  "storage_human": "132832 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ICLR 2026 Papers",
+      "url": "https://iclr.cc/virtual/2026/papers.html?filter=author&search=Tyler%20Thompson",
+      "snippet": "Scalable Offline Model-Based RL with Action Chunks Multi-state Protein Sequence Design with DynamicMPNN 3DGEER: 3D Gaussian Rendering Made Exact and Efficient for Generic Cameras SR-Scientist: Scientific Equation Discovery With Agentic AI Binomial Gradient-Based Meta-Learning for Enhanced Meta-Gradient Estimation"
+    },
+    {
+      "title": "Best AI for Reasoning 2026 - Top Reasoning Models",
+      "url": "https://llm-stats.com/leaderboards/best-ai-for-reasoning",
+      "snippet": "Rankings of the best AI models for reasoning tasks. Compare models by logic, planning, and problem-solving capabilities."
+    },
+    {
+      "title": "[2606.16360] Tyler: Typed Latent Reasoning for Language Models -- When ...",
+      "url": "https://arxiv.org/abs/2606.16360",
+      "snippet": "Chain-of-thought (CoT) prompting improves reasoning in large language models (LLMs) by externalizing intermediate computation as discrete text tokens, but this textual interface also introduces redundancy and inference overhead. Latent reasoning offers a promising alternative by carrying part of the computation in continuous representations. However, existing methods typically predefine when ..."
+    },
+    {
+      "title": "Z.ai shares surge 8% on new AI model running only on Chinese chips - CNBC",
+      "url": "https://www.cnbc.com/2026/08/27/zai-shares-surge-new-ai-model-using-chinese-chips.html",
+      "snippet": "Z.ai&#x27;s shares rose after the company launched a new AI model that it claimed runs only on Chinese chips. It&#x27;s the latest indication of China&#x27;s efforts to ramp up homegrown computing capability ..."
+    },
+    {
+      "title": "Model teaches AI to read more like humans - Futurity",
+      "url": "https://www.futurity.org/model-teaches-ai-to-read-more-like-humans/",
+      "snippet": "A new model teaches workplace AI to read more like humans. Modern artificial intelligence (AI) platforms can summarize reports, analyze documents, and answer questions in seconds."
+    }
+  ]
+}

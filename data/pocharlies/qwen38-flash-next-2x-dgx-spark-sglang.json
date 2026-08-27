@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "pocharlies/qwen38-flash-next-2x-dgx-spark-sglang",
+  "slug": "pocharlies-qwen38-flash-next-2x-dgx-spark-sglang",
+  "author": "pocharlies",
+  "url": "https://huggingface.co/pocharlies/qwen38-flash-next-2x-dgx-spark-sglang",
+  "created_at": "2026-08-27T07:04:29.000Z",
+  "updated_at": "2026-08-27T08:48:55.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "sglang",
+    "nvfp4",
+    "dgx-spark",
+    "gb10",
+    "tensor-parallel",
+    "speculative-decoding",
+    "deployment-recipe",
+    "en",
+    "base_model:RadixArk/Qwen3.8-Flash-Next-NVFP4",
+    "base_model:finetune:RadixArk/Qwen3.8-Flash-Next-NVFP4",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": "RadixArk/Qwen3.8-Flash-Next-NVFP4",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Qwen3.8-Flash-Next - DGX Spark / GB10 - NVIDIA Developer Forums",
+      "url": "https://forums.developer.nvidia.com/t/qwen3-8-flash-next/381228",
+      "snippet": "Qwen3.8-Flash-Next is a multimodal MoE model. It pairs a large parameter count with a smaller active count per token, plus a huge n-gram embedding table for fast local token lookups, on top of GDN and QSA mechanisms."
+    },
+    {
+      "title": "Releases: pocharlies/qwen38-flash-next-dgx-spark-sglang - GitHub",
+      "url": "https://github.com/pocharlies/qwen38-flash-next-dgx-spark-sglang/releases",
+      "snippet": "Qwen3.8-Flash-Next NVFP4 on 2x NVIDIA DGX Spark (GB10) with SGLang — full TP=2/RoCE recipe: k8s manifests, image, tuning and troubleshooting - Releases · pocharlies/qwen38-flash-next-dgx-spark-sglang"
+    },
+    {
+      "title": "Qwen3.8-Flash-Next: How to Run Locally - unsloth.ai",
+      "url": "https://unsloth.ai/docs/models/qwen3.8-next",
+      "snippet": "Qwen3.8-Flash-Next is a new open-weight, 125B parameter MoE multimodal model from Qwen. Built on the new Qwen4 architecture, it supports a 262K context window and advanced reasoning. It can run locally on devices with 78GB RAM /unified memory without requiring GPU VRAM. The model outperforms Claude-4.6-Opus (Max) at agentic coding, vision, and chat. We are working very hard to support the ..."
+    },
+    {
+      "title": "Qwen/Qwen3.8-Flash-Next | vLLM Recipes",
+      "url": "https://recipes.vllm.ai/Qwen/Qwen3.8-Flash-Next",
+      "snippet": "Qwen4 architecture preview with a 125B-parameter main model, supplemented by an additional 51B N-gram embeddings, with 6B parameters activated per token."
+    },
+    {
+      "title": "Qwen3.8-Flash-Next - SGLang Documentation",
+      "url": "https://docs.sglang.io/cookbook/autoregressive/Qwen/Qwen3.8-Flash-Next",
+      "snippet": "Deploy Qwen3.8-Flash-Next with SGLang — day-0 recipes for Qwen&#x27;s 176B-parameter (6B active) GDN + QSA hybrid Mixture-of-Experts preview of the Qwen4 architecture, on NVIDIA and AMD."
+    }
+  ]
+}

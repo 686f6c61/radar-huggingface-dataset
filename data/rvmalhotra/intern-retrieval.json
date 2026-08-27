@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "Rvmalhotra/intern-retrieval",
+  "slug": "rvmalhotra-intern-retrieval",
+  "author": "Rvmalhotra",
+  "url": "https://huggingface.co/Rvmalhotra/intern-retrieval",
+  "created_at": "2026-08-27T08:13:06.000Z",
+  "updated_at": "2026-08-27T08:13:14.000Z",
+  "license": "bsd-3-clause",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "hybrid",
+    "pytorch",
+    "retrieval",
+    "license:bsd-3-clause",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 24832,
+  "parameters_human": "24832",
+  "storage_bytes": 99808,
+  "storage_human": "99808 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Rvmalhotra (Rohit Malhotra) - Hugging Face",
+      "url": "https://huggingface.co/Rvmalhotra/models",
+      "snippet": "Rvmalhotra&#x27;s models1 Sort: Recently updated Rvmalhotra/model_052830750_cnn_transformer_base Updated 5 days ago"
+    },
+    {
+      "title": "#rag #machinelearning #informationretrieval #nlp #llm # ... - LinkedIn",
+      "url": "https://www.linkedin.com/posts/ishaan-malhotraai_rag-machinelearning-informationretrieval-activity-7477568951892332544-V8uK",
+      "snippet": "Most RAG systems look great on clean benchmarks. I wanted to know how mine performed when retrieval became genuinely difficult, so I built an adversarial evaluation corpus instead of relying on ..."
+    },
+    {
+      "title": "Intern retrieval from community question answering websites: A new ...",
+      "url": "https://www.sciencedirect.com/science/article/pii/S0957417421004851",
+      "snippet": "Highlights • Introduction of intern retrieval problem in community question answering. • Proposing retrieval models to rank candidates for internship positions. • Introduction of coverage and optimality as quality measures of intern candidates. • Evaluation of proposed models on real datasets gathered from StackOverflow."
+    },
+    {
+      "title": "Retrieval from Within: An Intrinsic Capability of Attention-Based Models",
+      "url": "https://www.wispaper.ai/en/user-blog/retrieval-from-within-intrinsic-capability-of-attention-based-models-20260509/eng",
+      "snippet": "The paper introduces INTRA (INTrinsic Retrieval via Attention), a framework that unifies retrieval and generation within a single pretrained encoder-decoder model. By leveraging the cross-attention mechanism as a natural retriever, the model directly scores and reuses pre-encoded evidence chunks, achieving SOTA performance on multi-hop QA benchmarks like HotPotQA and MuSiQue."
+    },
+    {
+      "title": "GitHub - srilakshmi-734/rag-system-ai-intern: Retrieval-Augmented ...",
+      "url": "https://github.com/srilakshmi-734/rag-system-ai-intern",
+      "snippet": "Project Overview This project implements a Retrieval-Augmented Generation (RAG) system as part of the AI Intern assessment. The system scrapes content from a real-world website, validates the scraped data using a defined JSON schema, chunks the content, stores embeddings in a vector database, and retrieves relevant information to generate answers using a language model."
+    }
+  ]
+}

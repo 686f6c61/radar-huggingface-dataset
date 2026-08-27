@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "ArtomYuan/Qwen3.8-27B-abliterated-ROCmFPX",
+  "slug": "artomyuan-qwen3-8-27b-abliterated-rocmfpx",
+  "author": "ArtomYuan",
+  "url": "https://huggingface.co/ArtomYuan/Qwen3.8-27B-abliterated-ROCmFPX",
+  "created_at": "2026-08-26T15:46:11.000Z",
+  "updated_at": "2026-08-27T05:06:18.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "gguf",
+  "languages": [],
+  "tags": [
+    "gguf",
+    "qwen35",
+    "abliterated",
+    "uncensored",
+    "rocmfp4",
+    "halofpx",
+    "mtp",
+    "base_model:huihui-ai/Huihui-Qwen3.8-27B-abliterated-GGUF",
+    "base_model:quantized:huihui-ai/Huihui-Qwen3.8-27B-abliterated-GGUF",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 27320697856,
+  "parameters_human": "27.32B",
+  "storage_bytes": 43686777568,
+  "storage_human": "43.7 GB",
+  "base_model": "huihui-ai/Huihui-Qwen3.8-27B-abliterated-GGUF",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ArtomYuan/Qwen3.8-27B-abliterated-ROCmFPX · Hugging Face",
+      "url": "https://huggingface.co/ArtomYuan/Qwen3.8-27B-abliterated-ROCmFPX",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Qwen/Qwen3.8-27B · Hugging Face",
+      "url": "https://huggingface.co/Qwen/Qwen3.8-27B",
+      "snippet": "MathVision: Qwen3.8-27B is evaluated using the fixed prompt: \"Please reason step by step, and put your final answer within &#92;boxed {}.\" For the remaining models, we report the higher score from two prompt variants—one with and one without the &#92;boxed {} formatting requirement."
+    },
+    {
+      "title": "Qwen3.8-27B - GitHub",
+      "url": "https://github.com/AlibabaCloud-Official/Qwen3.8-27B",
+      "snippet": "Welcome to the repository for Qwen3.8-27B —the latest native multimodal dense open-weight model released by Alibaba&#x27;s Qwen team. Delivering top-tier performance for local hardware, Qwen3.8-27B excels at coding, agentic workflows, and office automation tasks."
+    },
+    {
+      "title": "Qwen 3.8 27B ROCmFP4_FAST on AMD Strix Halo (Ryzen AI Max+ 395) - GitHub",
+      "url": "https://github.com/julianmb/q38rocm",
+      "snippet": "High-performance, memory-optimized deployment of Qwen 3.8 27B custom-engineered for AMD Strix Halo (Ryzen AI Max+ 395 / Radeon 8060S) APUs. 📦 Hugging Face Model Weights: julianmb/Qwen-3.8-27B-ROCmFP4-FAST-GGUF ⚡ File:Qwen3.8-27B-ROCmFP4-FAST.gguf (13.55 GiB | 4.26 bpw) 🔒 SHA256 ..."
+    },
+    {
+      "title": "Qwen/Qwen3.8-27B | vLLM Recipes",
+      "url": "https://recipes.vllm.ai/Qwen/Qwen3.8-27B",
+      "snippet": "Overview Qwen3.8-27B is the 27-billion-parameter dense member of the Qwen3.8 family, on the same hybrid-attention backbone as the 2.4T MoE flagship. The layer mix is the interesting part. Only 16 of the 64 layers run full attention (full_attention_interval: 4); the other 48 run linear attention with a constant recurrent state."
+    }
+  ]
+}

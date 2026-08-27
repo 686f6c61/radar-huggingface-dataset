@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "Zhexilian/Pair-drive",
+  "slug": "zhexilian-pair-drive",
+  "author": "Zhexilian",
+  "url": "https://huggingface.co/Zhexilian/Pair-drive",
+  "created_at": "2026-08-27T09:15:13.000Z",
+  "updated_at": "2026-08-27T09:15:13.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - zhexilian/PaIR-Drive: [CVPR26&#x27; Findings track] Fine-tuning is ...",
+      "url": "https://github.com/zhexilian/PaIR-Drive",
+      "snippet": "To address these issues, we propose PaIR-Drive, a general Pa rallel framework for collaborative I mitation and R einforcement learning in end-to-end autonomous driving. During training, PaIR-Drive separates IL and RL into two parallel branches with conflict-free training objectives, enabling fully collaborative optimization."
+    },
+    {
+      "title": "Fine-tuning is Not Enough: A Parallel Framework for Collaborative ...",
+      "url": "https://arxiv.org/html/2603.13842v1",
+      "snippet": "To this end, as shown in Fig. 2 (c), we propose PaIR-Drive, a Pa rallel framework for collaborative I mitation and R einforcement learning in end-to-end autonomous driving. The key insight of PaIR-Drive is breaking the upper performance limit of sequential fine-tuning through our parallel framework."
+    },
+    {
+      "title": "PaIR-Drive/README.md at main · zhexilian/PaIR-Drive · GitHub",
+      "url": "https://github.com/zhexilian/PaIR-Drive/blob/main/README.md",
+      "snippet": "To address these issues, we propose PaIR-Drive, a general Pa rallel framework for collaborative I mitation and R einforcement learning in end-to-end autonomous driving. During training, PaIR-Drive separates IL and RL into two parallel branches with conflict-free training objectives, enabling fully collaborative optimization."
+    },
+    {
+      "title": "Fine-tuning is Not Enough: A Parallel Framework for Collaborative ...",
+      "url": "https://www.alphaxiv.org/abs/2603.13842",
+      "snippet": "End-to-end autonomous driving is typically built upon imitation learning (IL), yet its performance is constrained by the quality of human demonstrations. To overcome this limitation, recent methods..."
+    },
+    {
+      "title": "CVPR 2026 Open Access Repository",
+      "url": "https://openaccess.thecvf.com/content/CVPR2026F/html/Lian_Fine-tuning_is_Not_Enough_A_Parallel_Framework_for_Collaborative_Imitation_CVPRF_2026_paper.html",
+      "snippet": "To address these issues, we propose PaIR-Drive, a general Parallel framework for collaborative Imitation and Reinforcement learning in end-to-end autonomous driving. During training, PaIR-Drive separates IL and RL into two parallel branches with conflict-free training objectives, enabling fully collaborative optimization."
+    }
+  ]
+}

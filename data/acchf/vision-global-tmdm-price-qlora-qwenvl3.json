@@ -5,7 +5,7 @@
   "author": "acchf",
   "url": "https://huggingface.co/acchf/vision-global-tmdm-price-qlora-qwenvl3",
   "created_at": "2025-12-04T16:47:05.000Z",
-  "updated_at": "2026-08-25T08:51:57.000Z",
+  "updated_at": "2026-08-27T05:34:40.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": null,
@@ -27,8 +27,8 @@
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
-  "storage_bytes": 22637546701,
-  "storage_human": "22.6 GB",
+  "storage_bytes": 23464057421,
+  "storage_human": "23.5 GB",
   "base_model": "Qwen/Qwen3-VL-4B-Instruct",
   "formats": [
     "safetensors"

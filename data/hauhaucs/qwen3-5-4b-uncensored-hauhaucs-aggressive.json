@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "HauhauCS/Qwen3.5-4B-Uncensored-HauhauCS-Aggressive",
+  "slug": "hauhaucs-qwen3-5-4b-uncensored-hauhaucs-aggressive",
+  "author": "HauhauCS",
+  "url": "https://huggingface.co/HauhauCS/Qwen3.5-4B-Uncensored-HauhauCS-Aggressive",
+  "created_at": "2026-03-03T12:16:35.000Z",
+  "updated_at": "2026-04-05T19:01:02.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "en",
+    "zh",
+    "multilingual"
+  ],
+  "tags": [
+    "gguf",
+    "uncensored",
+    "qwen3.5",
+    "qwen",
+    "en",
+    "zh",
+    "multilingual",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 483,
+  "downloads_30d": 214734,
+  "trending_score": 7,
+  "parameters": 4205751296,
+  "parameters_human": "4.21B",
+  "storage_bytes": 19753933312,
+  "storage_human": "19.8 GB",
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Qwen3.5-4B-Uncensored-HauhauCS-Aggressive - Hugging Face",
+      "url": "https://huggingface.co/HauhauCS/Qwen3.5-4B-Uncensored-HauhauCS-Aggressive",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "HauhauCS-Qwen3.5-4B-Uncensored-HauhauCS-Aggressive",
+      "url": "https://huggingface.co/CCSSNE/HauhauCS-Qwen3.5-4B-Uncensored-HauhauCS-Aggressive",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Uncensored LLM Abliteration Benchmarked: HauhauCS vs Heretic vs Huihui ...",
+      "url": "https://nathan.sapwell.net/posts/hauhaucs-abliteration-analysis/",
+      "snippet": "KL Divergence Qwen3.5-27B Safety Benchmarks KL Divergence Qwen3-4B Safety Benchmarks KL Divergence Cross-Model Takeaways The \"lossless\" claim does not hold HauhauCS&#x27;s zero-refusal claim does not hold Bigger models suffer more collateral damage Huihui is inconsistent across models Heretic is the most consistent performer HauhauCS is the ..."
+    },
+    {
+      "title": "Qwen 3.5 (4B) Uncensored - Colab & Ollama Deployment - GitHub",
+      "url": "https://github.com/CookieFilled/qwen-3.5-4B-uncensored-colab",
+      "snippet": "Free GPU Acceleration: Configured to automatically detect and utilize Google Colab&#x27;s T4 GPU for fast, responsive text generation. Uncensored Model: Runs the HauhauCS/Qwen3.5-4B-Uncensored-HauhauCS-Aggressive model (Q4_K_M GGUF format) for unrestricted, highly direct outputs. Ollama Backend: Seamlessly downloads, builds, and serves the model locally within the Colab environment using Ollama&#x27;s ..."
+    },
+    {
+      "title": "Hauhaucs - Find Top AI Models on Hugging Face",
+      "url": "https://www.aimodels.fyi/creators/huggingFace/HauhauCS",
+      "snippet": "Overview Qwen3.5-27B-Uncensored-HauhauCS-Aggressive is a fully uncensored derivative of Alibaba&#x27;s Qwen3.5-27B base model maintained by HauhauCS. The model contains 27 billion dense parameters across 64 layers with a hyb…"
+    }
+  ]
+}

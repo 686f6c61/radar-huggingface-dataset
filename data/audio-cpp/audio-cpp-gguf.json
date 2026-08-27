@@ -5,7 +5,7 @@
   "author": "audio-cpp",
   "url": "https://huggingface.co/audio-cpp/audio.cpp-gguf",
   "created_at": "2026-07-14T05:56:32.000Z",
-  "updated_at": "2026-08-25T03:40:37.000Z",
+  "updated_at": "2026-08-26T21:09:39.000Z",
   "license": "other",
   "license_family": "unknown",
   "pipeline_tag": "text-to-speech",
@@ -29,12 +29,12 @@
     "region:us"
   ],
   "likes": 69,
-  "downloads_30d": 1031027,
+  "downloads_30d": 1060625,
   "trending_score": 11,
   "parameters": 1544236364,
   "parameters_human": "1.54B",
-  "storage_bytes": 867641022242,
-  "storage_human": "867.6 GB",
+  "storage_bytes": 868145739618,
+  "storage_human": "868.1 GB",
   "base_model": "MiniMaxAI/MiniMax-H3, ACE-Step/Ace-Step1.5, ACE-Step/acestep-v15-base, Aratako/Irodori-TTS-500M-v3, Aratako/Irodori-TTS-600M-v3-VoiceDesign, Aratako/Irodori-TTS-v4.1-Small, Aratako/MioCodec-25Hz-44.1kHz-v2, Aratako/MioTTS-1.7B, Aratako/Semantic-DACVAE-Japanese-32dim, Banafo/Kroko-ASR, dots-studio/dots.tts-mf, dots-studio/dots.tts-soar, fishaudio/s2-pro, FunAudioLLM/Fun-ASR-Nano-2512-hf, HeartMuLa/HeartCodec-oss-20260123, HeartMuLa/HeartMuLa-oss-3B, HeartMuLa/HeartMuLaGen, IndexTeam/IndexTTS-2, IndexTeam/IndexTTS-2.5, ASLP-lab/MeanVC2, OpenBMB/VoxCPM2, OpenMOSS-Team/MOSS-Audio-Tokenizer-Nano, OpenMOSS-Team/MOSS-Audio-Tokenizer-v2, OpenMOSS-Team/MOSS-TTS-Local-Transformer-v1.5, OpenMOSS-Team/MOSS-TTS-Nano-100M, Qwen/Qwen3-ASR-0.6B, Qwen/Qwen3-ASR-1.7B-hf, Qwen/Qwen3-ForcedAligner-0.6B, Qwen/Qwen3-TTS-12Hz-0.6B-Base, Qwen/Qwen3-TTS-12Hz-1.7B-Base, Qwen/Qwen3-TTS-12Hz-1.7B-CustomVoice, Qwen/Qwen3-TTS-12Hz-1.7B-VoiceDesign, Qwen/Qwen3-TTS-Tokenizer-12Hz, ResembleAI/chatterbox, RMSnow/Vevo2, bosonai/higgs-audio-v3-stt, bosonai/higgs-audio-v3-tts-4b, k2-fsa/OmniVoice, kyutai/pocket-tts, llm-jp/llm-jp-3-150m, microsoft/VibeVoice-1.5B, microsoft/VibeVoice-ASR, mistralai/Voxtral-Mini-4B-Realtime-2602, mlx-community/SeedVC-MLX, mlx-community/mel-roformer-mlx, mlx-community/supertonic-3-mlx, mlx-community/wavlm-base-plus-mlx, MuScriptor/muscriptor-small, neuphonic/neutts-2e, syvai/hviske-v5.3, nvidia/diar_sortformer_4spk-v1, nvidia/magpie_tts_multilingual_357m, nvidia/nemotron-3.5-asr-streaming-0.6b, nvidia/parakeet-tdt-0.6b-v3, nvidia/personaplex-7b-v1, owensong/Inflect-Micro-v2, stabilityai/stable-audio-3-medium, stabilityai/stable-audio-3-small-music, stabilityai/stable-audio-3-small-sfx",
   "formats": [
     "gguf"

@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "nigel79/pdf_scanner",
+  "slug": "nigel79-pdf_scanner",
+  "author": "nigel79",
+  "url": "https://huggingface.co/nigel79/pdf_scanner",
+  "created_at": "2026-08-27T06:25:09.000Z",
+  "updated_at": "2026-08-27T06:25:09.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "AI Document Scanner - Free",
+      "url": "https://documentscanner.ai/en",
+      "snippet": "Professional Document Scanning for Everyone Transform your smartphone or computer into a powerful document scanner. Our AI-driven tool simplifies the process of digitizing your physical paperwork, photos, receipts, and notes into clear, high-quality PDF documents or JPG images."
+    },
+    {
+      "title": "ModelScan: Protection Against Model Serialization Attacks",
+      "url": "https://github.com/protectai/modelscan",
+      "snippet": "ModelScan is an open source project from Protect AI that scans models to determine if they contain unsafe code. It is the first model scanning tool to support multiple model formats. ModelScan currently supports: H5, Pickle, and SavedModel formats. This protects you when using PyTorch, TensorFlow, Keras, Sklearn, XGBoost, with more on the way."
+    },
+    {
+      "title": "Comparative Analysis of AI OCR Models for PDF to Structured Text",
+      "url": "https://intuitionlabs.ai/articles/ai-ocr-models-pdf-structured-text-comparison",
+      "snippet": "Compares leading AI OCR models and tools for PDF to structured text conversion in 2026. Examines open-source and commercial solutions including Mistral OCR 3, GPT-4o, and cloud services."
+    },
+    {
+      "title": "AI PDF Assistant - Simplify, Speed Up & Get More Done with PDFs",
+      "url": "https://smallpdf.com/ai-pdf",
+      "snippet": "Work faster, and smarter, with agentic PDF AI. Use the AI PDF Assistant to instantly transform your PDFs in your browser—for free. Safe, secure, certified privacy."
+    },
+    {
+      "title": "5 Best AI PDF Scanners (With Detailed Comparison) | [Official] UPDF",
+      "url": "https://updf.com/create-pdf/ai-pdf-scanner/",
+      "snippet": "Here is a comprehensive comparison of five tested AI PDF scanners to help you decide which one is best for you."
+    }
+  ]
+}

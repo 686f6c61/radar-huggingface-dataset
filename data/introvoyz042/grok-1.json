@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "introvoyz042/grok-1",
+  "slug": "introvoyz042-grok-1",
+  "author": "introvoyz042",
+  "url": "https://huggingface.co/introvoyz042/grok-1",
+  "created_at": "2026-08-27T06:49:29.000Z",
+  "updated_at": "2026-08-27T06:49:30.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "grok",
+  "languages": [],
+  "tags": [
+    "grok",
+    "grok-1",
+    "text-generation",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 318242223744,
+  "storage_human": "318.2 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "xai-org/grok-1 · Hugging Face",
+      "url": "https://huggingface.co/xai-org/grok-1",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Grok",
+      "url": "https://grok.com/",
+      "snippet": "Grok is an AI assistant built by SpaceXAI. Chat, create images, write code, and get real-time answers from the web and X."
+    },
+    {
+      "title": "README.md · xai-org/grok-1 at main - Hugging Face",
+      "url": "https://huggingface.co/xai-org/grok-1/blob/main/README.md",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Grok-1 — Grokipedia",
+      "url": "https://grokipedia.com/page/Grok-1",
+      "snippet": "Grok-1&#x27;s open release has profoundly influenced the open-source AI community by democratizing access to a large-scale language model, enabling researchers and developers to conduct independent experiments, fine-tune the model for specialized tasks, and advance collective understanding of Mixture-of-Experts architectures."
+    },
+    {
+      "title": "Grok-1 Model Card | SpaceXAI",
+      "url": "https://x.ai/news/grok/model-card",
+      "snippet": "Summary of our Grok-1 model. Grok is an AI modeled after the Hitchhiker&#x27;s Guide to the Galaxy. It is intended to answer almost anything and, far harder, even suggest what questions to ask!"
+    }
+  ]
+}

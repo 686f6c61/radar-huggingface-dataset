@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "onnx-community/hubert-base-english-ipa-ONNX",
+  "slug": "onnx-community-hubert-base-english-ipa-onnx",
+  "author": "onnx-community",
+  "url": "https://huggingface.co/onnx-community/hubert-base-english-ipa-ONNX",
+  "created_at": "2026-08-27T10:48:33.000Z",
+  "updated_at": "2026-08-27T10:48:41.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "automatic-speech-recognition",
+  "library": "transformers.js",
+  "languages": [],
+  "tags": [
+    "transformers.js",
+    "onnx",
+    "hubert",
+    "automatic-speech-recognition",
+    "base_model:speech31/hubert-base-english-ipa",
+    "base_model:quantized:speech31/hubert-base-english-ipa",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 723055841,
+  "storage_human": "723 MB",
+  "base_model": "speech31/hubert-base-english-ipa",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "MidFord327/Hubert-Base-ONNX · Hugging Face",
+      "url": "https://huggingface.co/MidFord327/Hubert-Base-ONNX",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "README.md · MidFord327/Hubert-Base-ONNX at main - Hugging Face",
+      "url": "https://huggingface.co/MidFord327/Hubert-Base-ONNX/blob/main/README.md",
+      "snippet": "This is the ONNX-exported version of the Hubert Base model, fine-tuned for voice conversion and compatible with modern inference pipelines. This model allows fast and efficient audio processing in ONNX runtime environments."
+    },
+    {
+      "title": "GitHub - onnx/models: A collection of pre-trained, state-of-the-art ...",
+      "url": "https://github.com/onnx/models",
+      "snippet": "Supported by a robust community of partners, ONNX defines a common set of operators and a common file format to enable AI developers to use models with a variety of frameworks, tools, runtimes, and compilers. This repository is a curated collection of pre-trained, state-of-the-art models in the ONNX format."
+    },
+    {
+      "title": "ONNX Runtime | Models",
+      "url": "https://onnxruntime.ai/models",
+      "snippet": "ONNX Models - find ONNX models for natural language processing, computer vision, and more."
+    },
+    {
+      "title": "GitHub - onnx/tutorials: Tutorials for creating and using ONNX models",
+      "url": "https://github.com/onnx/tutorials",
+      "snippet": "ONNX Tutorials Open Neural Network Exchange (ONNX) is an open standard format for representing machine learning models. ONNX is supported by a community of partners who have implemented it in many frameworks and tools."
+    }
+  ]
+}

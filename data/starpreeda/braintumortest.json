@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "starpreeda/BrainTumorTest",
+  "slug": "starpreeda-braintumortest",
+  "author": "starpreeda",
+  "url": "https://huggingface.co/starpreeda/BrainTumorTest",
+  "created_at": "2026-08-27T06:07:05.000Z",
+  "updated_at": "2026-08-27T07:21:13.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 37378680,
+  "storage_human": "37 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "AI Can Tell If Your Brain Is Aging Faster Than You Are",
+      "url": "https://www.sciencedaily.com/releases/2026/07/260729051540.htm",
+      "snippet": "AI Estimates Brain Age From Sleep Signals The researchers developed a machine-learning model that combines 13 microscopic features found within EEG brain wave recordings."
+    },
+    {
+      "title": "LLM Leaderboard 2026: Compare 300+ Top AI Models by Intelligence, Speed ...",
+      "url": "https://llm-stats.com/leaderboards/llm-leaderboard",
+      "snippet": "The LLM Leaderboard — independent ranking of GPT, Claude, Gemini, Llama, DeepSeek and 300+ AI models by intelligence, speed and price. Filter by provider, license, modality and context window; sort by every benchmark. Composite LLM Stats Score updated continuously from public benchmarks and live API metrics."
+    },
+    {
+      "title": "Brain tumor detection and screening using artificial intelligence ...",
+      "url": "https://www.sciencedirect.com/science/article/pii/S0010482523005280",
+      "snippet": "The second step in the process is to use artificial intelligence (AI) techniques for the automated detection of complex patterns and abnormal tissues in brain scans. With the high number of brain cancer cases and deaths each year, there has been a rise in research interest in the automatic detection of brain tumors [16]."
+    },
+    {
+      "title": "Enhancing Medical Diagnostics: Integrating AI for ... - ScienceDirect",
+      "url": "https://www.sciencedirect.com/science/article/pii/S187705092400721X",
+      "snippet": "Recent strides in artificial intelligence (AI) and deep learning techniques have propelled the development of an AI-powered brain tumour detection model. This study blends multilevel thresholding, neural network optimisation, and image preprocessing to craft a robust AI model capable of accurately categorising diverse brain tumour types and normal cases. Through rigorous testing with a ..."
+    },
+    {
+      "title": "BrainTumNet: multi-task deep learning framework for brain ... - Frontiers",
+      "url": "https://www.frontiersin.org/journals/oncology/articles/10.3389/fonc.2025.1585891/full",
+      "snippet": "The model structure diagram of BrainTumNet, a brain tumor segmentation and classification model. The Adaptive Masked Transformer enhances model performance by dynamically adjusting the computational patterns of its attention mechanism."
+    }
+  ]
+}

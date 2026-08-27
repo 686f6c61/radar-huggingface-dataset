@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "onnx-community/paraphrase-filipino-mpnet-base-v2-ONNX",
+  "slug": "onnx-community-paraphrase-filipino-mpnet-base-v2-onnx",
+  "author": "onnx-community",
+  "url": "https://huggingface.co/onnx-community/paraphrase-filipino-mpnet-base-v2-ONNX",
+  "created_at": "2026-08-27T08:00:16.000Z",
+  "updated_at": "2026-08-27T08:00:42.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "sentence-similarity",
+  "library": "transformers.js",
+  "languages": [],
+  "tags": [
+    "transformers.js",
+    "onnx",
+    "xlm-roberta",
+    "feature-extraction",
+    "sentence-transformers",
+    "sentence-similarity",
+    "transformers",
+    "base_model:meedan/paraphrase-filipino-mpnet-base-v2",
+    "base_model:quantized:meedan/paraphrase-filipino-mpnet-base-v2",
+    "text-embeddings-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 3495084668,
+  "storage_human": "3.5 GB",
+  "base_model": "meedan/paraphrase-filipino-mpnet-base-v2",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ONNX | Home",
+      "url": "https://onnx.ai/",
+      "snippet": "ONNX is an open format built to represent machine learning models. ONNX defines a common set of operators - the building blocks of machine learning and deep learning models - and a common file format to enable AI developers to use models with a variety of frameworks, tools, runtimes, and compilers."
+    },
+    {
+      "title": "GitHub - onnx/models: A collection of pre-trained, state-of-the-art ...",
+      "url": "https://github.com/onnx/models",
+      "snippet": "Welcome to the ONNX Model Zoo! The Open Neural Network Exchange (ONNX) is an open standard format created to represent machine learning models. Supported by a robust community of partners, ONNX defines a common set of operators and a common file format to enable AI developers to use models with a variety of frameworks, tools, runtimes, and compilers. This repository is a curated collection of ..."
+    },
+    {
+      "title": "paraphrase-multilingual-mpnet-base-v2-onnx - Hugging Face",
+      "url": "https://huggingface.co/onnx-models/paraphrase-multilingual-mpnet-base-v2-onnx/blob/main/README.md",
+      "snippet": "Max sequence length: 128 File size on disk: 1.03 GB Modules incorporated in the onnx: Transformer, Pooling Usage Using this model becomes easy when you have light-embed installed: ... Then you can use the model by specifying the original model name like this: ... or by specifying the onnx model name like this: ... Citing & Authors Binh Nguyen ..."
+    },
+    {
+      "title": "ONNX Runtime | Models",
+      "url": "https://onnxruntime.ai/models",
+      "snippet": "ONNX Models - find ONNX models for natural language processing, computer vision, and more."
+    },
+    {
+      "title": "paraphrase-multilingual-mpnet-base-v2-onnx - Hugging Face",
+      "url": "https://huggingface.co/onnx-models/paraphrase-multilingual-mpnet-base-v2-onnx",
+      "snippet": "Model details Embedding dimension: 768 Max sequence length: 128 File size on disk: 1.03 GB Modules incorporated in the onnx: Transformer, Pooling Usage Using this model becomes easy when you have light-embed installed: ... Then you can use the model by specifying the original model name like this: ... or by specifying the onnx model name like this:"
+    }
+  ]
+}

@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "mradermacher/Vespera-Synapse-31B-i1-GGUF",
+  "slug": "mradermacher-vespera-synapse-31b-i1-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/Vespera-Synapse-31B-i1-GGUF",
+  "created_at": "2026-08-27T10:55:26.000Z",
+  "updated_at": "2026-08-27T11:32:31.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "endpoints_compatible",
+    "region:us",
+    "imatrix",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 32106631740,
+  "parameters_human": "32.11B",
+  "storage_bytes": 131914116448,
+  "storage_human": "131.9 GB",
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "mradermacher/Serenity-31B-v1.1-i1-GGUF · Hugging Face",
+      "url": "https://huggingface.co/mradermacher/Serenity-31B-v1.1-i1-GGUF",
+      "snippet": "mradermacher / Serenity-31B-v1.1-i1-GGUF like 0 Transformers GGUF English gemma-4 roleplay conversational instruct apache-2.0 nsfw adult-content unaligned mature explicit erp imatrix License:apache-2.0 Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "team mradermacher - Hugging Face",
+      "url": "https://huggingface.co/mradermacher",
+      "snippet": "Feel free to suggest models to quant e.g. at https://huggingface.co/mradermacher/model_requests"
+    },
+    {
+      "title": "GGUF Model Discovery - Browse & Download AI Models",
+      "url": "https://local-ai-zone.github.io/",
+      "snippet": "Discover and download GGUF format AI models. Browse and direct download thousands of quantized AI models with detailed information, download counts, and direct links."
+    },
+    {
+      "title": "Models - Hugging Face",
+      "url": "https://router.huggingface.co/models/",
+      "snippet": "Explore machine learning models. DavidAU/Qwen3.8-27B-Cold-Fusion-GAIN-V1.1-NM-DAU-NEO-MAX-MTP-GGUF"
+    },
+    {
+      "title": "GGUF model list",
+      "url": "https://mitjafelicijan.github.io/gguf-list/",
+      "snippet": "GGUF model list Generated on 2025-02-27 17:51:07 (download collections.json)"
+    }
+  ]
+}

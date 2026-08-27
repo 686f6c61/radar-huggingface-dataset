@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "aoiandroid/nllb200-coreml-1024-float32-macos",
+  "slug": "aoiandroid-nllb200-coreml-1024-float32-macos",
+  "author": "aoiandroid",
+  "url": "https://huggingface.co/aoiandroid/nllb200-coreml-1024-float32-macos",
+  "created_at": "2026-08-27T02:10:40.000Z",
+  "updated_at": "2026-08-27T02:46:00.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "coreml",
+    "translateblue",
+    "macos",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 6797870387,
+  "storage_human": "6.8 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "aoiandroid/nllb200-coreml-1024-float32 · Hugging Face",
+      "url": "https://huggingface.co/aoiandroid/nllb200-coreml-1024-float32",
+      "snippet": "NLLB-200 Core ML 1024 — FLOAT32 (private snapshot) Private Hub repo: full float32 Core ML mlpackage tree (encoder + KV decoder init/step), ~ 5 GB on disk. Same layout as local output/nllb200-coreml-1024."
+    },
+    {
+      "title": "aoiandroid/nllb200-coreml-1024 · Hugging Face",
+      "url": "https://huggingface.co/aoiandroid/nllb200-coreml-1024",
+      "snippet": "CoreML conversion of facebook/nllb-200-distilled-600M (NLLB-200 / M2M100, distilled 600M parameters, 200 languages) for on-device inference on Apple platforms. Max sequence length 1024 matches the official model max_position_embeddings."
+    },
+    {
+      "title": "200 languages within a single AI model: A breakthrough in high-quality ...",
+      "url": "https://ai.meta.com/blog/nllb-200-high-quality-machine-translation/",
+      "snippet": "Meta AI has built a single AI model, NLLB-200, that is the first to translate across 200 different languages with state-of-the-art quality that has been validated through extensive evaluations for each of them."
+    },
+    {
+      "title": "GitHub - AI4Bharat/Indic-TTS: Text-to-Speech for languages of India",
+      "url": "https://github.com/AI4Bharat/Indic-TTS",
+      "snippet": "Text-to-Speech for languages of India. Contribute to AI4Bharat/Indic-TTS development by creating an account on GitHub."
+    },
+    {
+      "title": "Meta AI Research Topic - No Language Left Behind",
+      "url": "https://ai.meta.com/research/no-language-left-behind/",
+      "snippet": "No Language Left Behind (NLLB) is a first-of-its-kind, AI breakthrough project that open-sources models capable of delivering evaluated, high-quality translations directly between 200 languages—including low-resource languages like Asturian, Luganda, Urdu and more. It aims to give people the opportunity to access and share web content in their native language, and communicate with anyone ..."
+    }
+  ]
+}

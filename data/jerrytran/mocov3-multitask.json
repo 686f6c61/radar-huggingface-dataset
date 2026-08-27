@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "jerrytran/mocov3-multitask",
+  "slug": "jerrytran-mocov3-multitask",
+  "author": "jerrytran",
+  "url": "https://huggingface.co/jerrytran/mocov3-multitask",
+  "created_at": "2026-08-27T02:34:38.000Z",
+  "updated_at": "2026-08-27T02:34:47.000Z",
+  "license": "bsd-3-clause",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "mocov3",
+    "pytorch",
+    "multitask",
+    "license:bsd-3-clause",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 16576,
+  "parameters_human": "16576",
+  "storage_bytes": 66784,
+  "storage_human": "66784 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "AI Multitask Model for HCC Treatment - ctv.veeva.com",
+      "url": "https://ctv.veeva.com/study/ai-multitask-model-for-hcc-treatment",
+      "snippet": "We will integrate multi-modal cardiac data via an AI multitask framework to develop and validate concurrent models for liver function, treatment prognosis, and microvascular invasion (MVI) prediction in hepatocellular carcinoma. The resulting tool will be prospectively deployed to guide personalized surgical, TACE, and systemic therapy decisions."
+    },
+    {
+      "title": "MoCoV3 — MMPretrain 1.2.0 documentation",
+      "url": "https://mmpretrain.readthedocs.io/en/latest/api/generated/mmpretrain.models.selfsup.MoCoV3.html",
+      "snippet": "MoCoV3 class mmpretrain.models.selfsup.MoCoV3(backbone, neck, head, base_momentum=0.01, pretrained=None, data_preprocessor=None, init_cfg=None) [source] MoCo v3. Implementation of An Empirical Study of Training Self-Supervised Vision Transformers. Parameters: backbone (dict) - Config dict for module of backbone neck (dict) - Config dict for module of deep features to compact feature ..."
+    },
+    {
+      "title": "MoCoV3 — MMPretrain 1.2.0 documentation",
+      "url": "https://mmpretrain.readthedocs.io/en/latest/papers/mocov3.html",
+      "snippet": "Abstract This paper does not describe a novel method. Instead, it studies a straightforward, incremental, yet must-know baseline given the recent progress in computer vision: self-supervised learning for Vision Transformers (ViT). While the training recipes for standard convolutional networks have been highly mature and robust, the recipes for ViT are yet to be built, especially in the self ..."
+    },
+    {
+      "title": "AI Aimbot Models & YOLO Detection Models | MossyModels",
+      "url": "https://mossymodels.com/",
+      "snippet": "Browse 661+ free YOLO and ONNX detection models across 43+ games. Community library for Fortnite, Valorant, Warzone, Apex Legends, and more."
+    },
+    {
+      "title": "MoCo v3 — MMSelfSup 1.0.0 documentation",
+      "url": "https://mmselfsup.readthedocs.io/en/latest/papers/mocov3.html",
+      "snippet": "Models and Benchmarks In this page, we provide benchmarks as much as possible to evaluate our pre-trained models. If not mentioned, all models are pre-trained on ImageNet-1k dataset."
+    }
+  ]
+}

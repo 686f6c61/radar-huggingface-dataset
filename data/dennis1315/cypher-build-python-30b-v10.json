@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "Dennis1315/cypher-build-python-30b-v10",
+  "slug": "dennis1315-cypher-build-python-30b-v10",
+  "author": "Dennis1315",
+  "url": "https://huggingface.co/Dennis1315/cypher-build-python-30b-v10",
+  "created_at": "2026-08-27T09:57:35.000Z",
+  "updated_at": "2026-08-27T10:04:52.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "qwen3",
+    "arxiv:1910.09700",
+    "base_model:Qwen/Qwen3-14B",
+    "base_model:adapter:Qwen/Qwen3-14B",
+    "4-bit",
+    "bitsandbytes",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 14768307200,
+  "parameters_human": "14.77B",
+  "storage_bytes": 13220481240,
+  "storage_human": "13.2 GB",
+  "base_model": "Qwen/Qwen3-14B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Dennis1315/cypher-MATH-PRM-8B-v8-GGUF at main - Hugging Face",
+      "url": "https://huggingface.co/Dennis1315/cypher-MATH-PRM-8B-v8-GGUF/tree/main",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GitHub - Mekky2/cypher: AI model for identifying and patching ...",
+      "url": "https://github.com/Mekky2/cypher",
+      "snippet": "Cypher is a local, AI-powered static application security testing (SAST) tool. It leverages the 32-billion parameter Qwen2.5-Coder model and precise Abstract Syntax Tree (AST) parsing to audit codebases for vulnerabilities without sending your proprietary code to the cloud."
+    },
+    {
+      "title": "README.md · Dennis1315/cypher-MATH-PRM-8B-v8-GGUF at main",
+      "url": "https://huggingface.co/Dennis1315/cypher-MATH-PRM-8B-v8-GGUF/blob/main/README.md",
+      "snippet": "Instructions to use Dennis1315/cypher-MATH-PRM-8B-v8-GGUF with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Libraries PEFT How to use Dennis1315/cypher-MATH-PRM-8B-v8-GGUF with PEFT:"
+    },
+    {
+      "title": "GitHub - lucianoayres/cypher: Cypher is an AI model that creates ...",
+      "url": "https://github.com/lucianoayres/cypher",
+      "snippet": "🦾 Overview Cypher is an AI-powered code summarizer tailored for efficient navigation of large codebases. Using a dedicated Modelfile, Cypher captures essential code relationships and dependencies, generating optimized, architecture-aware summaries that enable AI to offer insightful support for architectural decisions without analyzing the entire source code."
+    },
+    {
+      "title": "How to Build a Local AI Agent (2026): Ollama + Tools",
+      "url": "https://localaimaster.com/blog/build-local-ai-agent",
+      "snippet": "Build a working local AI agent with Ollama: a tool-calling model, a framework, real tools (web search, shell, files), memory, and a runnable Python example."
+    }
+  ]
+}

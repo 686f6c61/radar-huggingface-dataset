@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "rikai-ai/omg_p00_classify_v1.9",
+  "slug": "rikai-ai-omg_p00_classify_v1-9",
+  "author": "rikai-ai",
+  "url": "https://huggingface.co/rikai-ai/omg_p00_classify_v1.9",
+  "created_at": "2026-08-27T01:49:00.000Z",
+  "updated_at": "2026-08-27T01:56:46.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1436587458,
+  "storage_human": "1.4 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "rikai-ai/omg-p00-classify-1.8 · Hugging Face",
+      "url": "https://huggingface.co/rikai-ai/omg-p00-classify-1.8",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "rikai-ai (RIKAI TECHNOLOGY) - Hugging Face",
+      "url": "https://huggingface.co/rikai-ai",
+      "snippet": "Recent Activity havy16092004 updated a model1 day ago rikai-ai/rolex-p03-fake-real-resnet50 havy16092004 published a model5 days ago rikai-ai/rolex-p03-fake-real-resnet50 QuangPhuoc34 updated a model17 days ago rikai-ai/omg-p00-classify-1.8 View all activity"
+    },
+    {
+      "title": "GitHub - eto-ai/rikai: Parquet-based ML data format optimized for ...",
+      "url": "https://github.com/eto-ai/rikai",
+      "snippet": "Rikai alleviates the pain that AI practitioners experience on a daily basis dealing with the myriad of tedious data tasks, so they can focus again on model-building and problem solving. To start trying Rikai right away, checkout the Quickstart Guide."
+    },
+    {
+      "title": "Welcome to Rikai! — Rikai documentation",
+      "url": "https://rikai.readthedocs.io/en/stable/index.html",
+      "snippet": "Welcome to Rikai! Rikai is a framework specifically designed for AI workflows focused around large scale unstructured datasets (e.g., images, videos, sensor data (future), text (future), and more). Through every stage of the AI modeling workflow, Rikai strives to offer a great developer experience when working with real-world AI datasets."
+    },
+    {
+      "title": "Releases · eto-ai/rikai · GitHub",
+      "url": "https://github.com/eto-ai/rikai/releases",
+      "snippet": "Parquet-based ML data format optimized for working with unstructured data - eto-ai/rikai"
+    }
+  ]
+}

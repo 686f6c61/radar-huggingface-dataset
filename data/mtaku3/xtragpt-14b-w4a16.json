@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "mtaku3/XtraGPT-14B-W4A16",
+  "slug": "mtaku3-xtragpt-14b-w4a16",
+  "author": "mtaku3",
+  "url": "https://huggingface.co/mtaku3/XtraGPT-14B-W4A16",
+  "created_at": "2026-08-27T02:23:45.000Z",
+  "updated_at": "2026-08-27T02:28:24.000Z",
+  "license": "mg0-2.0",
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "phi3",
+    "text-generation",
+    "awq",
+    "compressed-tensors",
+    "w4a16",
+    "academic-writing",
+    "conversational",
+    "custom_code",
+    "base_model:Xtra-Computing/XtraGPT-14B",
+    "base_model:quantized:Xtra-Computing/XtraGPT-14B",
+    "license:other",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 2851763520,
+  "parameters_human": "2.85B",
+  "storage_bytes": 9138109768,
+  "storage_human": "9.1 GB",
+  "base_model": "Xtra-Computing/XtraGPT-14B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Xtra-Computing/XtraGPT-14B · Hugging Face",
+      "url": "https://huggingface.co/Xtra-Computing/XtraGPT-14B",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Xtra-Computing/XtraGPT-7B · Hugging Face",
+      "url": "https://huggingface.co/Xtra-Computing/XtraGPT-7B",
+      "snippet": "XtraGPT: Context-Aware and Controllable Academic Paper Revision for Human-AI Collaboration Model Overview XtraGPT is a family of open-source Large Language Models (LLMs) designed specifically for human-AI collaborative academic paper revision."
+    },
+    {
+      "title": "Xtra-Computing/XtraGPT-14B: Model synced from source: Xtra-Computing ...",
+      "url": "https://dev.modelhub.org.cn/Xtra-Computing/XtraGPT-14B",
+      "snippet": "Model Overview XtraGPT is a family of open-source Large Language Models (LLMs) designed specifically for human-AI collaborative academic paper revision. Unlike general-purpose models that often perform surface-level polishing, XtraGPT is fine-tuned to understand the full context of a research paper and execute specific, criteria-guided revision instructions."
+    },
+    {
+      "title": "GitHub - OrionStarAI/Orion: Orion-14B is a family of models includes a ...",
+      "url": "https://github.com/OrionStarAI/Orion",
+      "snippet": "Orion-14B series models including: Orion-14B-Base: A multilingual large language foundational model with 14 billion parameters, pretrained on a diverse dataset of 2.5 trillion tokens. Orion-14B-Chat: A chat-model fine-tuned on a high-quality corpus aims to provide an excellence interactive experience for users in the large model community."
+    },
+    {
+      "title": "XtraGPT: Context-Aware and Controllable Academic Paper Revision via ...",
+      "url": "https://aclanthology.org/2026.acl-long.47/",
+      "snippet": "We instantiate the framework in XtraGPT, the first suite of open-source LLMs (1.5B to 14B parameters) specifically fine-tuned for context-aware academic paper revision. Extensive experiments show that XtraGPT significantly outperforms same-scale baselines and rivals the quality of proprietary counterparts."
+    }
+  ]
+}

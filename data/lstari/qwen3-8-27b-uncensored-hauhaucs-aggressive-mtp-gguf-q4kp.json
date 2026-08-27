@@ -1,0 +1,81 @@
+{
+  "schema": 1,
+  "id": "lstari/Qwen3.8-27B-Uncensored-HauhauCS-Aggressive-MTP-GGUF-q4kp",
+  "slug": "lstari-qwen3-8-27b-uncensored-hauhaucs-aggressive-mtp-gguf-q4kp",
+  "author": "lstari",
+  "url": "https://huggingface.co/lstari/Qwen3.8-27B-Uncensored-HauhauCS-Aggressive-MTP-GGUF-q4kp",
+  "created_at": "2026-08-27T06:23:26.000Z",
+  "updated_at": "2026-08-27T06:30:17.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": null,
+  "languages": [
+    "en",
+    "zh",
+    "multilingual"
+  ],
+  "tags": [
+    "gguf",
+    "uncensored",
+    "qwen3.8",
+    "multimodal",
+    "vision",
+    "mtp",
+    "speculative-decoding",
+    "fastmtp",
+    "image-text-to-text",
+    "en",
+    "zh",
+    "multilingual",
+    "base_model:Qwen/Qwen3.8-27B",
+    "base_model:quantized:Qwen/Qwen3.8-27B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1863907840,
+  "parameters_human": "1.86B",
+  "storage_bytes": 172466425216,
+  "storage_human": "172.5 GB",
+  "base_model": "Qwen/Qwen3.8-27B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Qwen3.8-27B-Uncensored-HauhauCS-Aggressive-MTP-GGUF",
+      "url": "https://huggingface.co/lstari/Qwen3.8-27B-Uncensored-HauhauCS-Aggressive-MTP-GGUF/blob/main/README.md",
+      "snippet": "Instructions to use lstari/Qwen3.8-27B-Uncensored-HauhauCS-Aggressive-MTP-GGUF with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "Qwen3.8-27B-Uncensored-HauhauCS-Aggressive-MTP-GGUF",
+      "url": "https://huggingface.co/HauhauCS/Qwen3.8-27B-Uncensored-HauhauCS-Aggressive-MTP-GGUF",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Qwen 3.8 27B Uncensored - GitHub",
+      "url": "https://github.com/Wassimyounes01/qwen38-uncensored",
+      "snippet": "Qwen 3.8 27B Uncensored Abliterated Qwen 3.8 27B — uncensored at the weight level, not just prompting. Cross-platform: Mac M5 Pro (Q3_K_M · 13.5GB · Metal) + Windows (Q4_K_M · 16.8GB · CUDA). Optional MLX backend for 30-50% faster inference on Apple Silicon."
+    },
+    {
+      "title": "Qwen3.8 27b Uncensored Hauhaucs Aggressive Mtp - GGUF Model",
+      "url": "https://local-ai-zone.github.io/models/qwen3-8-27b-uncensored-hauhaucs-aggressive-mtp.html",
+      "snippet": "Download Qwen3.8 27b Uncensored Hauhaucs Aggressive Mtp GGUF model. 15.9 GB, 357,225 downloads, 422 likes."
+    },
+    {
+      "title": "Qwen3.8-27B-Uncensored-HauhauCS-Aggressive-MTP-GGUF",
+      "url": "https://ryuhq.com/store/models/HauhauCS/Qwen3.8-27B-Uncensored-HauhauCS-Aggressive-MTP-GGUF",
+      "snippet": "Qwen3.8-27B-Uncensored-HauhauCS-Aggressive-MTP HauhauCS FastMTP: up to 3.02x document TG and 1.93x reasoning TG versus non-MTP — plus up to 35.2% more document TG and 21.1% more reasoning TG than standard embedded MTP. Join the Discord for updates, roadmaps, projects, or just to chat. Qwen3.8-27B uncensored by HauhauCS 0/465 Refusals * ."
+    }
+  ]
+}

@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "novemtk18/chest-xray-classifier",
+  "slug": "novemtk18-chest-xray-classifier",
+  "author": "novemtk18",
+  "url": "https://huggingface.co/novemtk18/chest-xray-classifier",
+  "created_at": "2026-07-06T17:35:26.000Z",
+  "updated_at": "2026-08-27T02:32:19.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 222702734,
+  "storage_human": "223 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "novemtk18/chest-xray-classifier · Hugging Face",
+      "url": "https://huggingface.co/novemtk18/chest-xray-classifier",
+      "snippet": "novemtk18 / chest-xray-classifier like 0 License:mit Model card FilesFiles and versions xet Community Copy to bucket new"
+    },
+    {
+      "title": "novemtk18 (NOVEM) - Hugging Face",
+      "url": "https://huggingface.co/novemtk18/models",
+      "snippet": "User profile of NOVEM on Hugging Face Recent Activity updated a modelabout 1 month ago novemtk18/chest-xray-classifier published a modelabout 1 month ago novemtk18/chest-xray-classifier updated a Space4 months ago novemtk18/blood-cell-classifier View all activity"
+    },
+    {
+      "title": "GitHub - SaugatDeo/chest-xray-classifier",
+      "url": "https://github.com/SaugatDeo/chest-xray-classifier",
+      "snippet": "An AI-powered chest X-ray diagnostic assistant that classifies 14 pathological conditions using a custom deep learning model with explainable AI (Grad-CAM) visualizations."
+    },
+    {
+      "title": "GitHub - AIverseLab-ai/Chest-Xray-Classifier",
+      "url": "https://github.com/AIverseLab-ai/Chest-Xray-Classifier",
+      "snippet": "Chest X-Ray Pneumonia Classification Using CNN (TensorFlow) This project uses a Convolutional Neural Network (CNN) to classify Chest X-Ray images as Normal or Pneumonia. The model was trained in Google Colab using TensorFlow 2.19.0 and TPU/GPU acceleration."
+    },
+    {
+      "title": "Chest X-Ray Medical Diagnosis with Deep Learning",
+      "url": "https://colab.research.google.com/github/hardik0/AI-for-Medicine-Specialization/blob/master/AI-for-Medical-Diagnosis/Week-1/Chest_X_Ray_Medical_Diagnosis_with_Deep_Learning_Assignment.ipynb",
+      "snippet": "Welcome to the first assignment of course 1! In this assignment! You will explore medical image diagnosis by building a state-of-the-art chest X-ray classifier using Keras. The assignment will walk through some of the steps of building and evaluating this deep learning classifier model. In particular, you will: Pre-process and prepare a real-world X-ray dataset Use transfer learning to retrain ..."
+    }
+  ]
+}

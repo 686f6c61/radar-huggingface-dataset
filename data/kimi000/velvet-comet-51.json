@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "kimi000/velvet-comet-51",
+  "slug": "kimi000-velvet-comet-51",
+  "author": "kimi000",
+  "url": "https://huggingface.co/kimi000/velvet-comet-51",
+  "created_at": "2026-08-27T06:33:20.000Z",
+  "updated_at": "2026-08-27T06:55:24.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-to-image",
+  "library": "diffusers",
+  "languages": [],
+  "tags": [
+    "diffusers",
+    "safetensors",
+    "flux2",
+    "flux2-klein",
+    "diffusionnft",
+    "reinforcement-learning",
+    "text-to-image",
+    "diffusers:Flux2KleinPipeline",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 3875544576,
+  "parameters_human": "3.88B",
+  "storage_bytes": 15976349679,
+  "storage_human": "16.0 GB",
+  "base_model": null,
+  "formats": [
+    "diffusers",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Model List - Kimi API Platform",
+      "url": "https://platform.kimi.ai/docs/models",
+      "snippet": "Review currently available Kimi multimodal, coding, and Moonshot V1 models, plus migration guidance for discontinued models."
+    },
+    {
+      "title": "Seductive Demon - AI Short Drama | 51Papaya",
+      "url": "https://www.51papaya.com/series/59f4ec99-c019-4b48-b3d4-e5c121c30a19",
+      "snippet": "Seductive Demon 51Papaya Official · Global Premiere. Watch \"Seductive Demon\" in full — an original AI short drama (AI Shorts) by an independent creator, only on www.51papaya.com. 30 episodes · 1 free · Completed · Creator @Velvet Sin by @Velvet Sin · Original AI short drama on 51Papaya Episodes (30) Episode 1 Episode 2 Episode 3 Episode 4 Episode 5 Episode 6 Episode 7 Episode 8 Episode ..."
+    },
+    {
+      "title": "Kimi AI with K3 | Built for Agentic Coding & Knowledge Work",
+      "url": "https://www.kimi.com/en",
+      "snippet": "Try Kimi K3 to build playable multiplayer and 3D games, create consulting grade slides, and run parallel tasks with Swarm and Goal to get more work done."
+    },
+    {
+      "title": "Kimi K2.5 | Open Visual Agentic Model for Real Work",
+      "url": "https://www.kimi.ai/ai-models/kimi-k2-5",
+      "snippet": "Kimi K2.5 is an open source multimodal model by Moonshot AI, combining visual coding, AI agents, and agent swarm capabilities for real work."
+    },
+    {
+      "title": "Kimi AI: Official Links & Independent Test Results",
+      "url": "https://kimi-ai.chat/",
+      "snippet": "Independent Kimi AI guide with official access links, current models, pricing, API resources, and reproducible tests. Not affiliated with Moonshot AI."
+    }
+  ]
+}

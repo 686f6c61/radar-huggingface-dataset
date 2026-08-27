@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "jiyoungleehog/homework-generation",
+  "slug": "jiyoungleehog-homework-generation",
+  "author": "jiyoungleehog",
+  "url": "https://huggingface.co/jiyoungleehog/homework-generation",
+  "created_at": "2026-08-27T08:48:47.000Z",
+  "updated_at": "2026-08-27T08:48:56.000Z",
+  "license": "bsd-3-clause",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "poolformer",
+    "pytorch",
+    "generation",
+    "license:bsd-3-clause",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 33088,
+  "parameters_human": "33088",
+  "storage_bytes": 132832,
+  "storage_human": "132832 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Homework AI",
+      "url": "https://homeworkai.app/",
+      "snippet": "Your Best AI Homework Helper Get advanced step-by-step solutions for all subjects, with all AI models (GPT-4o, Claude 3.5 Sonnet, etc.)"
+    },
+    {
+      "title": "AI boosted homework scores, then exam scores dropped: study | Hacker News",
+      "url": "https://news.ycombinator.com/item?id=49357530",
+      "snippet": "AI boosted homework scores, then exam scores dropped: study (economist.com) 105 points by dash2 3 hours ago | hide | past | favorite | 160 comments"
+    },
+    {
+      "title": "Free AI Homework Helper, Step-by-step & No Sign-up| StudyX",
+      "url": "https://studyx.ai/ai-homework-helper",
+      "snippet": "Get instant, step-by-step solutions for all subjects with StudyX AI homework helper. Available 24/7 with accurate answers, AI tutoring, and community support."
+    },
+    {
+      "title": "AI Homework Helper - Online Free, No Sign-up",
+      "url": "https://notegpt.io/ai-homework-helper",
+      "snippet": "AI Homework Helper is a free online tool designed to assist students with their homework across various subjects. You can upload picture or photo to AI Homework Helper and help students learn and succeed."
+    },
+    {
+      "title": "Free AI Homework Helper, No Sign-Up - Edubrain.ai",
+      "url": "https://edubrain.ai/",
+      "snippet": "Free AI homework helper with no sign-up required. Upload pictures or PDFs and get step-by-step solutions for any subject online."
+    }
+  ]
+}

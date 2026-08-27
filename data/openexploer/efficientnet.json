@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "OpenExploer/efficientnet",
+  "slug": "openexploer-efficientnet",
+  "author": "OpenExploer",
+  "url": "https://huggingface.co/OpenExploer/efficientnet",
+  "created_at": "2026-08-27T06:53:28.000Z",
+  "updated_at": "2026-08-27T06:55:22.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "heal",
+    "horizon",
+    "arxiv:1905.11946",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 132850621,
+  "storage_human": "133 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "EfficientNet — Torchvision main documentation",
+      "url": "https://docs.pytorch.org/vision/main/models/efficientnet.html",
+      "snippet": "EfficientNet ¶ The EfficientNet model is based on the EfficientNet: Rethinking Model Scaling for Convolutional Neural Networks paper. Model builders ¶ The following model builders can be used to instantiate an EfficientNet model, with or without pre-trained weights. All the model builders internally rely on the torchvision.models.efficientnet.EfficientNet base class. Please refer to the ..."
+    },
+    {
+      "title": "deepseek-v4-pro-0813 Model by Deepseek-ai | NVIDIA NIM",
+      "url": "https://build.nvidia.com/deepseek-ai/deepseek-v4-pro-0813/modelcard",
+      "snippet": "This model has been developed and built to a third-party&#x27;s requirements for this application and use case; see link to Non-NVIDIA DeepSeek AI DeepSeek-V4-Pro-0813 Model Card."
+    },
+    {
+      "title": "google/efficientnet-b2 · Hugging Face",
+      "url": "https://huggingface.co/google/efficientnet-b2",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "EfficientNet · Hugging Face",
+      "url": "https://huggingface.co/docs/transformers/model_doc/efficientnet",
+      "snippet": "Overview The EfficientNet model was proposed in EfficientNet: Rethinking Model Scaling for Convolutional Neural Networks by Mingxing Tan and Quoc V. Le. EfficientNets are a family of image classification models, which achieve state-of-the-art accuracy, yet being an order-of-magnitude smaller and faster than previous models."
+    },
+    {
+      "title": "Efficientnet Architecture - GeeksforGeeks",
+      "url": "https://www.geeksforgeeks.org/computer-vision/efficientnet-architecture/",
+      "snippet": "EfficientNet has emerged as a beacon of innovation, offering a holistic solution that balances model complexity with computational efficiency. This article embarks on a detailed journey through the intricate layers of EfficientNet, illuminating its architecture, design philosophy, training methodologies, performance benchmarks, and more."
+    }
+  ]
+}

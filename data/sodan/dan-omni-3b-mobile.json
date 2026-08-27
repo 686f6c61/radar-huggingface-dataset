@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "sodan/dan-omni-3b-mobile",
+  "slug": "sodan-dan-omni-3b-mobile",
+  "author": "sodan",
+  "url": "https://huggingface.co/sodan/dan-omni-3b-mobile",
+  "created_at": "2026-08-27T10:36:36.000Z",
+  "updated_at": "2026-08-27T11:35:25.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "gguf",
+    "dan",
+    "omni",
+    "qwen2.5",
+    "mobile",
+    "text-generation",
+    "lightweight",
+    "en",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "imatrix",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 3397103616,
+  "parameters_human": "3.40B",
+  "storage_bytes": 1275061673,
+  "storage_human": "1.3 GB",
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Shodan Search Engine",
+      "url": "https://www.shodan.io/",
+      "snippet": "Search engine of Internet-connected devices. Create a free account to get started."
+    },
+    {
+      "title": "SaiSudan/Qwen-Omni-3B-4bit · Hugging Face",
+      "url": "https://huggingface.co/SaiSudan/Qwen-Omni-3B-4bit",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "A Malicious Webpage Could Poison Your Local AI Model…",
+      "url": "https://www.develeap.com/news/a-malicious-webpage-could-poison-your-local-ai-model-behind/",
+      "snippet": "A Malicious Webpage Could Poison Your Local AI Model Behind NVIDIA NemoClaw Oasis Security disclosed a vulnerability in NVIDIA NemoClaw allowing an attacker-controlled webpage to take unauthenticated control of a local Ollama instance and inject hidden instructions into the AI model."
+    },
+    {
+      "title": "This 3B Parameter Model Runs Phone AI Agents Locally (And It&#x27;s Faster ...",
+      "url": "https://pub.towardsai.net/this-3b-parameter-model-runs-phone-ai-agents-locally-and-its-faster-than-9b-models-3ca675f7340a",
+      "snippet": "OpenPhone from HKU Data Science Lab addresses this with a 3B parameter vision-language model specifically trained for phone agent tasks. According to their benchmarks, it achieves performance comparable to 9B models while being 3.5× faster and actually deployable on consumer GPUs and mobile NPUs. Why 3B Parameters?"
+    },
+    {
+      "title": "[2604.24954] Nemotron 3 Nano Omni: Efficient and Open Multimodal ...",
+      "url": "https://arxiv.org/abs/2604.24954",
+      "snippet": "We introduce Nemotron 3 Nano Omni, the latest model in the Nemotron multimodal series and the first to natively support audio inputs alongside text, images, and video. Nemotron 3 Nano Omni delivers consistent accuracy improvements over its predecessor, Nemotron Nano V2 VL, across all modalities, enabled by advances in architecture, training data and recipes. In particular, Nemotron 3 delivers ..."
+    }
+  ]
+}

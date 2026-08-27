@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "OpenExploer/fcos3d_efficientnetb0",
+  "slug": "openexploer-fcos3d_efficientnetb0",
+  "author": "OpenExploer",
+  "url": "https://huggingface.co/OpenExploer/fcos3d_efficientnetb0",
+  "created_at": "2026-08-27T06:55:24.000Z",
+  "updated_at": "2026-08-27T06:59:25.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "heal",
+    "horizon",
+    "arxiv:2104.10956",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 330679975,
+  "storage_human": "331 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "FCOS3D Detection Model Training - Horizon OpenExplorer Toolchain User ...",
+      "url": "https://doc.oe.horizon.auto/3.2.0/en/guide/advanced_content/hat/examples/fcos3d.html",
+      "snippet": "This tutorial shows how to train a fixed-point 3D detection model using the HAT algorithm toolkit by using FCOS3D-efficientnetb0 as an example. Before starting the quantized awareness training, namely, the fixed-point model training, you need to first train a pure floating-point model with high accuracy, by finetuning this pure floating-point model, you can train the fixed-point model quickly ..."
+    },
+    {
+      "title": "10.1.3.7. Config Construction of FCOS-EfficientNetB0 ¶",
+      "url": "https://developer.d-robotics.cc/api/v1/fileData/horizon_j5_open_explorer_en_doc/hat/source/tutorials/detailed_config.html",
+      "snippet": "To help you better understand the config file, this section takes the FCOS-EfficientNetB0 model as an example, and adds a brief comment to each of its modules for your reference, as follows:"
+    },
+    {
+      "title": "mmdetection3d/configs/fcos3d at main · open-mmlab/mmdetection3d",
+      "url": "https://github.com/open-mmlab/mmdetection3d/tree/main/configs/fcos3d",
+      "snippet": "FCOS3D is a general anchor-free, one-stage monocular 3D object detector adapted from the original 2D version FCOS. It serves as a baseline built on top of mmdetection and mmdetection3d for 3D detection based on monocular vision. Currently we first support the benchmark on the large-scale nuScenes dataset, which achieved 1st place out of all the vision-only methods in the nuScenes 3D detecton ..."
+    },
+    {
+      "title": "sparse4d_qat/samples/ai_toolchain/horizon_model_train_sample/scripts ...",
+      "url": "https://github.com/yingxie285/sparse4d_qat/blob/main/samples/ai_toolchain/horizon_model_train_sample/scripts/configs/detection/fcos3d/fcos3d_efficientnetb0_nuscenes_pretrain.py",
+      "snippet": "/ ai_toolchain / horizon_model_train_sample / scripts / configs / detection / fcos3d / fcos3d_efficientnetb0_nuscenes_pretrain.py Code Blame executable file · 361 lines (336 loc) · 8.87 KB Raw Edit and raw actions 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 32 33 34 35 36 37 38 39 40 41 42 43 44 45 46 ..."
+    },
+    {
+      "title": "10.1.4.14. FCOS3D Detection Model Training — Horizon Open Explorer",
+      "url": "https://developer.d-robotics.cc/api/v1/fileData/horizon_j5_open_explorer_en_doc/hat/source/examples/fcos3d.html",
+      "snippet": "This tutorial shows how to train a fixed-point 3D detection model using the HAT algorithm toolkit by using FCOS3D-efficientnetb0 as an example."
+    }
+  ]
+}

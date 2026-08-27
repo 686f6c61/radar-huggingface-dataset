@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "ikim-uk-essen/stm_mistral",
+  "slug": "ikim-uk-essen-stm_mistral",
+  "author": "ikim-uk-essen",
+  "url": "https://huggingface.co/ikim-uk-essen/stm_mistral",
+  "created_at": "2026-08-27T08:06:00.000Z",
+  "updated_at": "2026-08-27T08:13:09.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "sentence-similarity",
+  "library": "sentence-transformers",
+  "languages": [],
+  "tags": [
+    "sentence-transformers",
+    "safetensors",
+    "mistral",
+    "mergekit",
+    "merge",
+    "retrieval",
+    "biomedical",
+    "sentence-similarity",
+    "arxiv:2602.04731",
+    "base_model:mistralai/Mistral-7B-Instruct-v0.2",
+    "base_model:finetune:mistralai/Mistral-7B-Instruct-v0.2",
+    "text-embeddings-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 7110660096,
+  "parameters_human": "7.11B",
+  "storage_bytes": 14221351888,
+  "storage_human": "14.2 GB",
+  "base_model": "mistralai/Mistral-7B-Instruct-v0.2",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Models - from cloud to edge | Mistral",
+      "url": "https://mistral.ai/models/",
+      "snippet": "The most powerful AI platform for enterprises. Customize, fine-tune, and deploy AI assistants, autonomous agents, and multimodal AI with open models."
+    },
+    {
+      "title": "IKIM - the Institute for Artificial Intelligence in Medicine",
+      "url": "https://www.ikim.uk-essen.de/",
+      "snippet": "Institute for AI in Medicine / University Hospital Essen / University of Duisburg-Essen / Germany"
+    },
+    {
+      "title": "ikim-uk-essen (IKIM) - Hugging Face",
+      "url": "https://huggingface.co/ikim-uk-essen",
+      "snippet": "The Institute for Artificial Intelligence in Medicine (IKIM) brings together researchers from a number of disciplines to perform research, improve patient care and innovate training of tomorrow&#x27;s physicians and AI scientists in healthcare. The institute is part of the University Medicine Essen and the University of Duisburg-Essen."
+    },
+    {
+      "title": "Institut für KI in der Medizin (IKIM) - Universitätsklinikum Essen",
+      "url": "https://www.uk-essen.de/institut/ikim/",
+      "snippet": "Schwerpunkte Das Institut für Künstliche Intelligenz in der Medizin (IKIM) ist eines der ersten in Deutschland in diesem wichtigen Innovationsfeld. Wir arbeiten im engen Schulterschluss mit den etablierten klassischen medizinischen Disziplinen. Denn wir sind Teil der Medizinischen Fakultät der Universität Duisburg Essen und der Universitätsmedizin Essen und sind damit in ein exzellentes ..."
+    },
+    {
+      "title": "Frontier AI LLMs, assistants, agents, services | Mistral",
+      "url": "https://mistral.ai/",
+      "snippet": "The most powerful AI platform for enterprises. Customize, fine-tune, and deploy AI assistants, autonomous agents, and multimodal AI with open models."
+    }
+  ]
+}

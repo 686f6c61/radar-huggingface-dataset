@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "OpenExploer/qcnet_oe",
+  "slug": "openexploer-qcnet_oe",
+  "author": "OpenExploer",
+  "url": "https://huggingface.co/OpenExploer/qcnet_oe",
+  "created_at": "2026-08-27T07:52:09.000Z",
+  "updated_at": "2026-08-27T07:55:11.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "heal",
+    "horizon",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 306269049,
+  "storage_human": "306 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "QCNet Trajectory Prediction Model Training - Horizon OpenExplorer ...",
+      "url": "https://doc.oe.horizon.auto/3.7.1/en/guide/advanced_content/hat/examples/qcnet.html",
+      "snippet": "This tutorial primarily guides you on training a QCNet model from scratch on the Argoverse 2 dataset, including floating-point, quantized, and fixed-point models. QCNet is a trajectory prediction model, which can be referenced in the paperQuery-Centric Trajectory Prediction."
+    },
+    {
+      "title": "GitHub - AlonZhao/QCNet",
+      "url": "https://github.com/AlonZhao/QCNet",
+      "snippet": "Contribute to AlonZhao/QCNet development by creating an account on GitHub."
+    },
+    {
+      "title": "Modelzoo - Horizon OpenExplorer Toolchain User Manual",
+      "url": "https://doc.oe.horizon.auto/3.2.0/en/guide/advanced_content/hat/model_zoo.html",
+      "snippet": "地平线OpenExplorer算法工具链 The input shape of the qcnet_oe_argoverse2 model is:"
+    },
+    {
+      "title": "QCNet Model Design | ZikangZhou/QCNet | DeepWiki",
+      "url": "https://deepwiki.com/ZikangZhou/QCNet/2.1-qcnet-model-design",
+      "snippet": "Purpose and Scope This document details the core architecture and design principles of the QCNet model, focusing on its innovative scene encoder with invariance properties and the two-stage DETR-like trajectory decoder. It explains how these components enable QCNet to achieve state-of-the-art performance in trajectory prediction tasks. For information about the specific neural network layers ..."
+    },
+    {
+      "title": "model_examples/QCNet/README.md · Ascend/DrivingSDK - Gitee",
+      "url": "https://gitee.com/ascend/DrivingSDK/blob/master/model_examples/QCNet/README.md",
+      "snippet": "本任务主要提供**单机**的**8卡**训练脚本。 ### 开始训练 在模型根目录下，运行训练脚本。 ``` cd model_examples/QCNet ``` - 单机8卡性能 ``` # epoch = 1 bash script/train_performance.sh ``` - 单机8卡精度"
+    }
+  ]
+}

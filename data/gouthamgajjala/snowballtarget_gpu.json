@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "gouthamgajjala/SnowballTarget_GPU",
+  "slug": "gouthamgajjala-snowballtarget_gpu",
+  "author": "gouthamgajjala",
+  "url": "https://huggingface.co/gouthamgajjala/SnowballTarget_GPU",
+  "created_at": "2026-08-27T06:39:32.000Z",
+  "updated_at": "2026-08-27T06:40:12.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "reinforcement-learning",
+  "library": "ml-agents",
+  "languages": [],
+  "tags": [
+    "ml-agents",
+    "tensorboard",
+    "onnx",
+    "SnowballTarget",
+    "deep-reinforcement-learning",
+    "reinforcement-learning",
+    "ML-Agents-SnowballTarget",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 25720661,
+  "storage_human": "26 MB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "gubhaalimpu/snowball_target · Hugging Face",
+      "url": "https://huggingface.co/gubhaalimpu/snowball_target",
+      "snippet": "gubhaalimpu / snowball_target like 0 Reinforcement Learning ml-agents TensorBoard ONNX SnowballTarget deep-reinforcement-learning ML-Agents-SnowballTarget Model card FilesFiles and versionsMetricsTraining metrics Community Use this model Edit model card ppo Agent playing SnowballTarget Usage (with ML-Agents) Resume the training Watch your Agent ..."
+    },
+    {
+      "title": "LLM Leaderboard 2026: Compare 300+ Top AI Models by Intelligence, Speed ...",
+      "url": "https://llm-stats.com/leaderboards/llm-leaderboard",
+      "snippet": "The LLM Leaderboard — independent ranking of GPT, Claude, Gemini, Llama, DeepSeek and 300+ AI models by intelligence, speed and price. Filter by provider, license, modality and context window; sort by every benchmark. Composite LLM Stats Score updated continuously from public benchmarks and live API metrics."
+    },
+    {
+      "title": "Pistachewarrior/Snowballtarget · Hugging Face",
+      "url": "https://huggingface.co/Pistachewarrior/Snowballtarget",
+      "snippet": "ppo Agent playing SnowballTarget This is a trained model of a ppo agent playing SnowballTarget using the Unity ML-Agents Library."
+    },
+    {
+      "title": "Alibaba drops a laptop AI model days before Meta&#x27;s move",
+      "url": "https://finance.yahoo.com/technology/ai/articles/alibaba-drops-laptop-ai-model-151700499.html",
+      "snippet": "Two rivals raced to fit AI on a single graphics card Qwen3.8-27B is a 27-billion-parameter model that runs at roughly 17 gigabytes when quantized, small enough for a single high-end consumer GPU ..."
+    },
+    {
+      "title": "Snowball-Target/README.md at main - GitHub",
+      "url": "https://github.com/huggingface/Snowball-Target/blob/main/README.md",
+      "snippet": "SnowballTarget is an environment we created at Hugging Face using assets from Kay Lousberg where you train an agent called Julien the bear 🐻 that learns to hit targets with snowballs. You can learn to train this agent using Deep Reinforcement Learning 👉 with this tutorial."
+    }
+  ]
+}

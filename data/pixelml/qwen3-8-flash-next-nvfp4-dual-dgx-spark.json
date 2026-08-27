@@ -1,0 +1,79 @@
+{
+  "schema": 1,
+  "id": "PixelML/Qwen3.8-Flash-Next-NVFP4-Dual-DGX-Spark",
+  "slug": "pixelml-qwen3-8-flash-next-nvfp4-dual-dgx-spark",
+  "author": "PixelML",
+  "url": "https://huggingface.co/PixelML/Qwen3.8-Flash-Next-NVFP4-Dual-DGX-Spark",
+  "created_at": "2026-08-27T06:46:28.000Z",
+  "updated_at": "2026-08-27T06:56:53.000Z",
+  "license": "qwen-community-1.0",
+  "license_family": "unknown",
+  "pipeline_tag": "image-text-to-text",
+  "library": "Model Optimizer",
+  "languages": [],
+  "tags": [
+    "Model Optimizer",
+    "safetensors",
+    "qwen4_exp",
+    "ModelOpt",
+    "Qwen3.8",
+    "quantized",
+    "FP4",
+    "fp4",
+    "nvfp4",
+    "sglang",
+    "dgx-spark",
+    "multimodal",
+    "image-text-to-text",
+    "conversational",
+    "base_model:Qwen/Qwen3.8-Flash-Next",
+    "base_model:quantized:Qwen/Qwen3.8-Flash-Next",
+    "license:other",
+    "8-bit",
+    "modelopt",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 119602003859,
+  "parameters_human": "119.60B",
+  "storage_bytes": 135242371978,
+  "storage_human": "135.2 GB",
+  "base_model": "Qwen/Qwen3.8-Flash-Next",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Qwen3.8-Flash-Next - DGX Spark / GB10 - NVIDIA Developer Forums",
+      "url": "https://forums.developer.nvidia.com/t/qwen3-8-flash-next/381228",
+      "snippet": "Qwen3.8-Flash-Next is a multimodal MoE model. It pairs a large parameter count with a smaller active count per token, plus a huge n-gram embedding table for fast local token lookups, on top of GDN and QSA mechanisms."
+    },
+    {
+      "title": "Qwen3.8-Flash-Next-NVFP4 · 2× DGX Spark · SGLang TP2",
+      "url": "https://github.com/MiaAI-Lab/Qwen3.8-Flash-Next-Dual-DGX-Sparks",
+      "snippet": "Qwen3.8-Flash-Next-NVFP4 · 2× DGX Spark · SGLang TP2 by Mia&#x27;a AI Lab Serving a 176B-parameter NVFP4 MoE across two DGX Sparks — including the SM121 kernel work that makes the Qwen4Exp sparse-attention path boot at all, and the GB10 unified-memory math that keeps two 128 GB machines from wedging."
+    },
+    {
+      "title": "Qwen/Qwen3.8-Flash-Next | vLLM Recipes",
+      "url": "https://recipes.vllm.ai/Qwen/Qwen3.8-Flash-Next",
+      "snippet": "Overview Qwen3.8-Flash-Next is a multimodal, ultra-sparse Mixture-of-Experts model. It has 125B parameters, including an additional 51B N-gram embedding table, while activating 6B parameters per token. The architecture combines four main ideas: GDN + QSA: three of every four layers use Gated DeltaNet to compress history; the fourth uses Qwen Sparse Attention for precise long-range retrieval ..."
+    },
+    {
+      "title": "Qwen3.8-Flash-Next: How to Run Locally - unsloth.ai",
+      "url": "https://unsloth.ai/docs/models/qwen3.8-next",
+      "snippet": "Qwen3.8-Flash-Next is a new open-weight, 125B parameter MoE multimodal model from Qwen. Built on the new Qwen4 architecture, it supports a 262K context window and advanced reasoning. It can run locally on devices with 78GB RAM /unified memory without requiring GPU VRAM. The model outperforms Claude-4.6-Opus (Max) at agentic coding, vision, and chat. We are working very hard to support the ..."
+    },
+    {
+      "title": "Experiment with Qwen3.8-Flash-Next 176B Model on NVIDIA GB300 NVL72 for ...",
+      "url": "https://developer.nvidia.com/blog/experiment-with-qwen3-8-flash-next-176b-model-on-nvidia-gb300-nvl72-for-agentic-coding/",
+      "snippet": "Qwen3.8-Flash-Next is designed for high-volume, context-intensive applications such as agentic coding, document processing, and tool-driven workflows. As context grows, attention compute and KV cache memory become bottlenecks. The model addresses both with a hybrid architecture combining Gated DeltaNet (GDN) and Qwen Sparse Attention (QSA)."
+    }
+  ]
+}

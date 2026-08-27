@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "onnx-community/wavlm-large-english-phoneme-ONNX",
+  "slug": "onnx-community-wavlm-large-english-phoneme-onnx",
+  "author": "onnx-community",
+  "url": "https://huggingface.co/onnx-community/wavlm-large-english-phoneme-ONNX",
+  "created_at": "2026-08-27T10:03:18.000Z",
+  "updated_at": "2026-08-27T10:03:33.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "automatic-speech-recognition",
+  "library": "transformers.js",
+  "languages": [],
+  "tags": [
+    "transformers.js",
+    "onnx",
+    "wav2vec2",
+    "automatic-speech-recognition",
+    "base_model:speech31/wavlm-large-english-phoneme",
+    "base_model:quantized:speech31/wavlm-large-english-phoneme",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 2331629620,
+  "storage_human": "2.3 GB",
+  "base_model": "speech31/wavlm-large-english-phoneme",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "onnx-community/wavlm-large-ONNX · Hugging Face",
+      "url": "https://huggingface.co/onnx-community/wavlm-large-ONNX",
+      "snippet": "WavLM: Large-Scale Self-Supervised Pre-Training for Full Stack Speech Processing GigaSpeech: An Evolving, Multi-domain ASR Corpus with 10,000 Hours of Transcribed Audio VoxPopuli: A Large-Scale Multilingual Speech Corpus for Representation Learning, Semi-Supervised Learning and Interpretation"
+    },
+    {
+      "title": "README.md · onnx-community/wavlm-large-ONNX at main",
+      "url": "https://huggingface.co/onnx-community/wavlm-large-ONNX/blob/main/README.md",
+      "snippet": "Note: The model was pre-trained on phonemes rather than characters. This means that one should make sure that the input text is converted to a sequence of phonemes before fine-tuning."
+    },
+    {
+      "title": "GitHub - onnx/models: A collection of pre-trained, state-of-the-art ...",
+      "url": "https://github.com/onnx/models",
+      "snippet": "Supported by a robust community of partners, ONNX defines a common set of operators and a common file format to enable AI developers to use models with a variety of frameworks, tools, runtimes, and compilers. This repository is a curated collection of pre-trained, state-of-the-art models in the ONNX format."
+    },
+    {
+      "title": "unilm/wavlm/README.md at master · microsoft/unilm · GitHub",
+      "url": "https://github.com/microsoft/unilm/blob/master/wavlm/README.md",
+      "snippet": "Large-scale Self-supervised Pre-training Across Tasks, Languages, and Modalities - microsoft/unilm"
+    },
+    {
+      "title": "ONNX Runtime | Models",
+      "url": "https://onnxruntime.ai/models",
+      "snippet": "ONNX Models - find ONNX models for natural language processing, computer vision, and more."
+    }
+  ]
+}

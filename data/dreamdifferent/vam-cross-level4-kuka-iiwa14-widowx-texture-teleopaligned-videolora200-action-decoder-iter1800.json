@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "dreamdifferent/vam-cross-level4-kuka-iiwa14-widowx-texture-teleopaligned-videolora200-action-decoder-iter1800",
+  "slug": "dreamdifferent-vam-cross-level4-kuka-iiwa14-widowx-texture-teleopaligned-videolora200-action-decoder-iter1800",
+  "author": "dreamdifferent",
+  "url": "https://huggingface.co/dreamdifferent/vam-cross-level4-kuka-iiwa14-widowx-texture-teleopaligned-videolora200-action-decoder-iter1800",
+  "created_at": "2026-08-27T09:00:15.000Z",
+  "updated_at": "2026-08-27T09:00:45.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "robotics",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "mimic-video",
+    "robotics",
+    "action-prediction",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1000269372,
+  "storage_human": "1.0 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "dreamdifferent/vam-cross-level4-ur5e-widowx-texture-teleopaligned ...",
+      "url": "https://huggingface.co/dreamdifferent/vam-cross-level4-ur5e-widowx-texture-teleopaligned-videolora400-action-decoder-iter1800",
+      "snippet": "VAM-Cross MimicVideo World2Action decoder This public repository contains the World2Action decoder checkpoint from iteration 1800 of w2a_ur5e_level4_widowx_texture_2cam_hstack_action_iter2374_videolora_iter400_widowx_teleop_recording_frame_v1. The run stopped because of unknown. The newest complete model, optimizer, scheduler, and trainer checkpoint set was verified before selecting the ..."
+    },
+    {
+      "title": "mujoco_menagerie/kuka_iiwa_14/scene.xml at main - GitHub",
+      "url": "https://github.com/google-deepmind/mujoco_menagerie/blob/main/kuka_iiwa_14/scene.xml",
+      "snippet": "A collection of high-quality models for the MuJoCo physics engine, curated by Google DeepMind. - google-deepmind/mujoco_menagerie"
+    },
+    {
+      "title": "mujoco_menagerie/kuka_iiwa_14/iiwa14.xml at main - GitHub",
+      "url": "https://github.com/google-deepmind/mujoco_menagerie/blob/main/kuka_iiwa_14/iiwa14.xml",
+      "snippet": "A collection of high-quality models for the MuJoCo physics engine, curated by Google DeepMind. - google-deepmind/mujoco_menagerie"
+    },
+    {
+      "title": "LBR iiwa 14 R820 - KUKA",
+      "url": "https://my.kuka.com/s/product/lbr-iiwa-14-r820/01t58000002hnktAAA?language=en_US",
+      "snippet": "Highly sensitive lightweight robot for precise assembly and force-controlled automation. Integrated torque sensors enable compliant movements, contact detection, and flexible human-robot collaboration."
+    },
+    {
+      "title": "KUKA iiwa Robot Model | tum-i6/VTPRL | DeepWiki",
+      "url": "https://deepwiki.com/tum-i6/VTPRL/5.1-kuka-iiwa-robot-model",
+      "snippet": "The KUKA iiwa (intelligent industrial work assistant) is a 7 degree-of-freedom (DOF) robot arm designed for collaborative applications. In the VTPRL system, this robot model serves as the primary manipulator for reinforcement learning tasks, providing a realistic simulation environment for training robotic manipulation policies."
+    }
+  ]
+}

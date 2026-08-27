@@ -27,7 +27,7 @@
     "base_model:quantized:nvidia/NVIDIA-NemotronLabs-VoiceChat-11B",
     "region:us"
   ],
-  "likes": 4,
+  "likes": 5,
   "downloads_30d": 5611,
   "trending_score": 0,
   "parameters": 11095371286,

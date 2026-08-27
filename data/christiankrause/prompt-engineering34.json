@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "christiankrause/prompt-engineering34",
+  "slug": "christiankrause-prompt-engineering34",
+  "author": "christiankrause",
+  "url": "https://huggingface.co/christiankrause/prompt-engineering34",
+  "created_at": "2026-08-27T11:22:45.000Z",
+  "updated_at": "2026-08-27T11:22:53.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "transformer",
+    "research-notes",
+    "prompt-engineering",
+    "license:cc-by-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 24832,
+  "parameters_human": "24832",
+  "storage_bytes": 99808,
+  "storage_human": "99808 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Prompt engineering best practices for 2026 | Claude by Anthropic",
+      "url": "https://claude.com/blog/best-practices-for-prompt-engineering",
+      "snippet": "Prompt engineering is the craft of structuring instructions to get better outputs from AI models. It&#x27;s how you phrase queries, specify style, provide context, and guide the model&#x27;s behavior to achieve your goals. The difference between a vague instruction and a well-crafted prompt can mean the gap between generic outputs and exactly what you need."
+    },
+    {
+      "title": "By Carsten Krause — November 15, 2024 Orchestrating ... - Medium",
+      "url": "https://medium.com/@carsten.krause/by-carsten-krause-november-15-2024-orchestrating-innovation-the-role-of-ai-prompt-engineering-0015778f6ab2",
+      "snippet": "By Carsten Krause — November 15, 2024 Orchestrating Innovation: The Role of AI Prompt Engineering Prompt engineering has emerged as a critical skill in the AI ecosystem, transforming how we…"
+    },
+    {
+      "title": "Prompt engineering overview - Claude Platform Docs",
+      "url": "https://platform.claude.com/docs/en/build-with-claude/prompt-engineering/overview",
+      "snippet": "Learn when prompt engineering is the right solution, and find Claude prompting techniques and interactive tutorials."
+    },
+    {
+      "title": "Prompt Engineering Guide | Prompt Engineering Guide",
+      "url": "https://www.promptingguide.ai/",
+      "snippet": "Motivated by the high interest in developing with LLMs, we have created this new prompt engineering guide that contains all the latest papers, advanced prompting techniques, learning guides, model-specific prompting guides, lectures, references, new LLM capabilities, and tools related to prompt engineering."
+    },
+    {
+      "title": "Prompt Engineering Best Practices for AI Models",
+      "url": "https://www.geeksforgeeks.org/blogs/prompt-engineering-best-practices/",
+      "snippet": "For developers, researchers and AI professionals, it is an important skill for getting reliable and useful results from AI systems. Improves accuracy and relevance of outputs Ensures useful and reliable AI responses Becomes more important as AI capabilities grow Prompt Engineering Best Practices for AI Models Best Practices for Prompt ..."
+    }
+  ]
+}

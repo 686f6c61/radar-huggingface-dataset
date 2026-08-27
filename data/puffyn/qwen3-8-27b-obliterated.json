@@ -1,0 +1,79 @@
+{
+  "schema": 1,
+  "id": "puffyn/Qwen3.8-27B-OBLITERATED",
+  "slug": "puffyn-qwen3-8-27b-obliterated",
+  "author": "puffyn",
+  "url": "https://huggingface.co/puffyn/Qwen3.8-27B-OBLITERATED",
+  "created_at": "2026-08-27T09:12:51.000Z",
+  "updated_at": "2026-08-27T09:12:52.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "mlx",
+  "languages": [],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "gguf",
+    "qwen3_5",
+    "abliterated",
+    "uncensored",
+    "obliteratus",
+    "qwen3",
+    "qwen3.8",
+    "red-team",
+    "ai-safety-research",
+    "text-generation",
+    "conversational",
+    "base_model:Qwen/Qwen3.8-27B",
+    "base_model:quantized:Qwen/Qwen3.8-27B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 27781427952,
+  "parameters_human": "27.78B",
+  "storage_bytes": 995163877411,
+  "storage_human": "995.2 GB",
+  "base_model": "Qwen/Qwen3.8-27B",
+  "formats": [
+    "gguf",
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "OBLITERATUS/Qwen3.8-27B-OBLITERATED · Hugging Face",
+      "url": "https://huggingface.co/OBLITERATUS/Qwen3.8-27B-OBLITERATED",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GitHub - AlibabaCloud-Official/Qwen3.8-27B: Native multimodal dense LLM ...",
+      "url": "https://github.com/AlibabaCloud-Official/Qwen3.8-27B",
+      "snippet": "Welcome to the repository for Qwen3.8-27B —the latest native multimodal dense open-weight model released by Alibaba&#x27;s Qwen team. Delivering top-tier performance for local hardware, Qwen3.8-27B excels at coding, agentic workflows, and office automation tasks."
+    },
+    {
+      "title": "Qwen3.8 27B OBLITERATED Demo - a Hugging Face Space by elliottb",
+      "url": "https://huggingface.co/spaces/elliottb/qwen3.8-27b-obliterated-demo",
+      "snippet": "Temperature 0.7 Repetition Penalty 1.15 AI Welcome to the Qwen3.8-27B-OBLITERATED interactive playground! 👋 This 27B model has had safety guardrails surgically removed using multi-direction SVD abliteration (0% hard refusal rate across 842 red-team prompts). Type a prompt below or pick a preset to test model capability."
+    },
+    {
+      "title": "Qwen3.8-27B - QwenCloud",
+      "url": "https://www.qwencloud.com/models/qwen3.8-27b",
+      "snippet": "The Qwen3.8 27B native vision-language dense model builds upon the 3.6-27B version, with key improvements in coding and office productivity capabilities across both text and visual modalities. It enables more reliable end-to-end completion of complex tasks, delivering consistently trustworthy results."
+    },
+    {
+      "title": "Qwen3.8-27B OBLITERATED: 0% Refusal Rate (Aug 2026) | explainx.ai Blog",
+      "url": "https://www.explainx.ai/blog/pliny-qwen3-8-27b-obliterated-alex-finn-mac-august-2026",
+      "snippet": "← Back to blog explainx / blog Pliny&#x27;s \"OBLITERATED\" Qwen3.8-27B: 0% Refusals, and Why That Went Viral Pliny the Liberator released an abliterated Qwen3.8-27B with 0.0% refusals across 842 harmful prompts. A viral Mac demo reignited the open-weight safety debate. What shipped, what&#x27;s verified, and the real risk framing."
+    }
+  ]
+}

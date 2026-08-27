@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "yeeeiii111/dppo-furniture-teachers",
+  "slug": "yeeeiii111-dppo-furniture-teachers",
+  "author": "yeeeiii111",
+  "url": "https://huggingface.co/yeeeiii111/dppo-furniture-teachers",
+  "created_at": "2026-08-27T10:41:38.000Z",
+  "updated_at": "2026-08-27T11:13:14.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "reinforcement-learning",
+  "library": "pytorch",
+  "languages": [],
+  "tags": [
+    "pytorch",
+    "robotics",
+    "reinforcement-learning",
+    "diffusion-policy",
+    "furniture-bench",
+    "dppo",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 2158106324,
+  "storage_human": "2.2 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Furniture Flipping Teacher - Facebook",
+      "url": "https://www.facebook.com/furnitureflippingteacher/",
+      "snippet": "Furniture Flipping Teacher. 414,867 likes · 1,868 talking about this. Helping beginners flip furniture for extra income Former teacher who paid off $25K flipping Real projects + NO gatekeeping"
+    },
+    {
+      "title": "yeeeiii111 (Qingxin Wang) - Hugging Face",
+      "url": "https://huggingface.co/yeeeiii111",
+      "snippet": "AI & ML interests ... Recent Activity updated a model about 5 hours ago ... published a model about 5 hours ago"
+    },
+    {
+      "title": "Furniture Flipping Teacher - YouTube",
+      "url": "https://www.youtube.com/c/FurnitureFlippingTeacher",
+      "snippet": "Welcome to Furniture Flipping Teacher, where I teach you how to restore and flip furniture for both profit and enjoyment! Whether you&#x27;re a seasoned flipper or just starting out, I&#x27;ve got all the ..."
+    },
+    {
+      "title": "Furniture Flashcards | 20 Furniture Items | 20 Picture Cards ... - TPT",
+      "url": "https://www.teacherspayteachers.com/Product/Furniture-Flashcards-20-Furniture-Items-20-Picture-Cards-Printable-PDF-11032007",
+      "snippet": "Description Build furniture recognition and everyday vocabulary with this set of 20 picture-only furniture flashcards. Each card features one clear, real-life image of a common furniture item, providing a simple visual learning resource without printed text labels."
+    },
+    {
+      "title": "ChatGPT: Chat, Work, Create & Code with AI",
+      "url": "https://chatgpt.com/",
+      "snippet": "Use ChatGPT to answer questions, write, create images, complete work, and code—all in one place. Get started for free or download the app."
+    }
+  ]
+}

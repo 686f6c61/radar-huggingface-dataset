@@ -1,0 +1,76 @@
+{
+  "schema": 1,
+  "id": "illimax/bgl-log-triage-bert",
+  "slug": "illimax-bgl-log-triage-bert",
+  "author": "illimax",
+  "url": "https://huggingface.co/illimax/bgl-log-triage-bert",
+  "created_at": "2026-08-27T11:02:01.000Z",
+  "updated_at": "2026-08-27T11:10:31.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "bert",
+    "text-classification",
+    "log-analysis",
+    "anomaly-detection",
+    "bgl",
+    "en",
+    "arxiv:2008.06448",
+    "base_model:google-bert/bert-base-uncased",
+    "base_model:finetune:google-bert/bert-base-uncased",
+    "license:apache-2.0",
+    "text-embeddings-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 109485316,
+  "parameters_human": "109.5M",
+  "storage_bytes": 437964776,
+  "storage_human": "438 MB",
+  "base_model": "bert-base-uncased",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "SHUB-8/Triage-BERT · Hugging Face",
+      "url": "https://huggingface.co/SHUB-8/Triage-BERT",
+      "snippet": "TriageBERT - ESI Triage Classification Model A BERT-based model fine-tuned for Emergency Severity Index (ESI) classification on PubMedBERT."
+    },
+    {
+      "title": "BGL Dataset Models | guanwei49/LogLLM | DeepWiki",
+      "url": "https://deepwiki.com/guanwei49/LogLLM/6.2-bgl-dataset-models",
+      "snippet": "BGL Dataset Models Relevant source files This page documents the fine-tuned model artifacts for the BGL (BlueGene/L) dataset. The BGL model directory contains LoRA adapter weights for both BERT and Llama components, along with the trained projector layer."
+    },
+    {
+      "title": "Development of BERT-based large language models for emergency ...",
+      "url": "https://www.peeref.com/works/88771559",
+      "snippet": "AI summaries and post-publication reviews of Development of BERT-based large language models for emergency department triage using real-world conversations. Understand articles faster and request reprints directly from authors."
+    },
+    {
+      "title": "Evaluation of a BERT Natural Language Processing Model for Automating ...",
+      "url": "https://journals.sagepub.com/doi/10.1177/08465371241255895",
+      "snippet": "Purpose: To evaluate the accuracy of a Bidirectional Encoder Representations for Transformers (BERT) Natural Language Processing (NLP) model for automating triage and protocol selection of cross-sectional image requisitions."
+    },
+    {
+      "title": "Quick Start Demo | 1184110286/NeuralLog | DeepWiki",
+      "url": "https://deepwiki.com/1184110286/NeuralLog/2.1-quick-start-demo",
+      "snippet": "This page provides a step-by-step walkthrough of the complete NeuralLog demo workflow, including dataset preparation and running the BGL anomaly detection example. The demo demonstrates the core functionality by processing raw log files, extracting semantic vectors using BERT encoding, and training a transformer-based classification model."
+    }
+  ]
+}

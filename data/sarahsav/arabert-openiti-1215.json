@@ -5,7 +5,7 @@
   "author": "SarahSav",
   "url": "https://huggingface.co/SarahSav/arabert-openiti-1215",
   "created_at": "2026-08-16T13:59:56.000Z",
-  "updated_at": "2026-08-17T19:18:46.000Z",
+  "updated_at": "2026-08-26T16:52:45.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "fill-mask",
@@ -14,19 +14,8 @@
     "ar"
   ],
   "tags": [
-    "transformers",
     "safetensors",
     "bert",
-    "fill-mask",
-    "arabic",
-    "classical-arabic",
-    "historical",
-    "openiti",
-    "ar",
-    "base_model:aubmindlab/bert-base-arabertv02",
-    "base_model:finetune:aubmindlab/bert-base-arabertv02",
-    "license:apache-2.0",
-    "endpoints_compatible",
     "region:us"
   ],
   "likes": 0,

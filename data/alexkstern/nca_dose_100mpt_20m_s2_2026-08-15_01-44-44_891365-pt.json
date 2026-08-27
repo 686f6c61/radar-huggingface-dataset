@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "alexkstern/nca_dose_100Mpt_20M_s2_2026-08-15_01-44-44_891365-pt",
+  "slug": "alexkstern-nca_dose_100mpt_20m_s2_2026-08-15_01-44-44_891365-pt",
+  "author": "alexkstern",
+  "url": "https://huggingface.co/alexkstern/nca_dose_100Mpt_20M_s2_2026-08-15_01-44-44_891365-pt",
+  "created_at": "2026-08-27T09:34:41.000Z",
+  "updated_at": "2026-08-27T09:35:40.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "nanochat",
+  "languages": [],
+  "tags": [
+    "nanochat",
+    "nanochat_gpt",
+    "pt_fineweb-nanochatbpe-100M",
+    "ppt_nca-paper-share20-2048",
+    "seed_2",
+    "case_c",
+    "lr_trapezoid",
+    "depth_16",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 2969669491,
+  "storage_human": "3.0 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "nca_dose_100Mpt_hfinit_20M_s2_2026-08-14_21-49-14_464051-pt",
+      "url": "https://huggingface.co/alexkstern/nca_dose_100Mpt_hfinit_20M_s2_2026-08-14_21-49-14_464051-pt",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "nca_dose_100Mpt_hfbody_20M_s0_2026-08-14_23-38-57_642483-pt",
+      "url": "https://huggingface.co/alexkstern/nca_dose_100Mpt_hfbody_20M_s0_2026-08-14_23-38-57_642483-pt",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "NCNR tools on the web - NIST",
+      "url": "https://www.ncnr.nist.gov/resources/",
+      "snippet": "NCNR tools on the web Calculate sample activation and scattering cross sections in neutron beam New calculator! Last modified 24-February-2025 by website owner: NCNR (attn: )"
+    },
+    {
+      "title": "GitHub - ngosang/trackerslist: Updated list of public BitTorrent ...",
+      "url": "https://github.com/ngosang/trackerslist",
+      "snippet": "Updated list of public BitTorrent trackers. Contribute to ngosang/trackerslist development by creating an account on GitHub."
+    },
+    {
+      "title": "North Korea Axios npm Attack: 100M Downloads Hit [2026]",
+      "url": "https://tech-insider.org/north-korea-axios-npm-supply-chain-attack-2026/",
+      "snippet": "North Korean hackers hijacked the axios npm package with 100M weekly downloads, deploying WAVESHAPER.V2 malware in a 3-hour supply chain attack on March 31, 2026."
+    }
+  ]
+}

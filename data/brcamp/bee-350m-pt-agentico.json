@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "BrCamp/bee-350m-pt-agentico",
+  "slug": "brcamp-bee-350m-pt-agentico",
+  "author": "BrCamp",
+  "url": "https://huggingface.co/BrCamp/bee-350m-pt-agentico",
+  "created_at": "2026-08-27T02:20:53.000Z",
+  "updated_at": "2026-08-27T04:47:12.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [
+    "pt"
+  ],
+  "tags": [
+    "peft",
+    "safetensors",
+    "function-calling",
+    "tool-use",
+    "portuguese",
+    "lora",
+    "text-generation",
+    "pt",
+    "base_model:BrCamp/bee-350m-pt-base",
+    "base_model:adapter:BrCamp/bee-350m-pt-base",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 104379360,
+  "storage_human": "104 MB",
+  "base_model": "BrCamp/bee-350m-pt-base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "BrCamp/bee-350m-pt-base · Hugging Face",
+      "url": "https://huggingface.co/BrCamp/bee-350m-pt-base",
+      "snippet": "BrCamp / bee-350m-pt-base like 0 Text Generation Transformers Safetensors Portuguese qwen3 portuguese pt-br from-scratch bee conversational text-generation-inference License:apache-2.0 Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "BrCamp (Bruno Campidelli) - Hugging Face",
+      "url": "https://huggingface.co/BrCamp/models",
+      "snippet": "Recent Activity updated a dataset3 days ago BrCamp/bee-corpus-pt-22b published a dataset3 days ago BrCamp/bee-corpus-pt-22b published a dataset4 days ago BrCamp/bee-gate-pt View all activity"
+    },
+    {
+      "title": "bee-350m-pt-base API & Inference Endpoint | FriendliAI",
+      "url": "https://friendli.ai/models/BrCamp/bee-350m-pt-base",
+      "snippet": "Run bee-350m-pt-base with FriendliAI inference. Modelo de linguagem de 345,4M parametros pre-treinado do zero em portugues, com tokenizador proprio de 32k…"
+    },
+    {
+      "title": "bee-350m-pt-base-15b API & Inference Endpoint | FriendliAI",
+      "url": "https://friendli.ai/models/BrCamp/bee-350m-pt-base-15b",
+      "snippet": "Run bee-350m-pt-base-15b with FriendliAI inference. Este e&#x27; o gemeo experimental de BrCamp/bee-350m-pt-base."
+    },
+    {
+      "title": "Agentico - GitHub",
+      "url": "https://github.com/agentico-dev/",
+      "snippet": "Agentico is a lightweight, flexible solution that helps developers and teams build, integrate, and manage AI agents with ease. It&#x27;s purpose-built to reduce complexity and time-to-deployment, enabling you to focus on solving real-world problems with cutting-edge AI. And guess what, it is based on MCP (Model Context Protocol)."
+    }
+  ]
+}

@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "tadiecool29/MTL-bert-base-amharic",
+  "slug": "tadiecool29-mtl-bert-base-amharic",
+  "author": "tadiecool29",
+  "url": "https://huggingface.co/tadiecool29/MTL-bert-base-amharic",
+  "created_at": "2026-08-27T08:46:14.000Z",
+  "updated_at": "2026-08-27T08:46:44.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "generated_from_trainer",
+    "base_model:Davlan/bert-base-multilingual-cased-finetuned-amharic",
+    "base_model:finetune:Davlan/bert-base-multilingual-cased-finetuned-amharic",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 177858823,
+  "parameters_human": "177.9M",
+  "storage_bytes": 711464909,
+  "storage_human": "711 MB",
+  "base_model": "Davlan/bert-base-multilingual-cased-finetuned-amharic",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Amharic Text Embedding Models - a rasyosef Collection",
+      "url": "https://huggingface.co/collections/rasyosef/amharic-text-embedding-models",
+      "snippet": "Text Embedding and ColBERT models based on Amharic RoBERTa and BERT for Amharic passage retrieval"
+    },
+    {
+      "title": "Amharic Passage Retrieval Models | PDF | Information Retrieval ... - Scribd",
+      "url": "https://www.scribd.com/document/878635984/Amharic-Information-Retrieval-2025",
+      "snippet": "This document presents optimized text embedding models and benchmarks for Amharic passage retrieval, addressing challenges faced by low-resource, morphologically rich languages. The authors introduce Amharic-specific dense retrieval models based on pre-trained BERT and RoBERTa, achieving significant improvements in retrieval effectiveness compared to existing multilingual models. Additionally ..."
+    },
+    {
+      "title": "GitHub - rasyosef/bert-amharic: BERT transformer models pretrained on ...",
+      "url": "https://github.com/rasyosef/bert-amharic",
+      "snippet": "This repo contains 4 BERT transformer models pretrained on 290 million tokens of Amharic text. All four models have a context length of 512 tokens and the same tokenizer with a vocabulary size of 28672 tokens."
+    },
+    {
+      "title": "bert-base-multilingual-cased-finetuned-amharic",
+      "url": "https://huface.ru/Davlan/bert-base-multilingual-cased-finetuned-amharic",
+      "snippet": "It provides better performance than the multilingual Amharic on named entity recognition datasets. Specifically, this model is a bert-base-multilingual-cased model that was fine-tuned on Amharic corpus using Amharic vocabulary."
+    },
+    {
+      "title": "README.md · Davlan/bert-base-multilingual-cased-finetuned-amharic at main",
+      "url": "https://huggingface.co/Davlan/bert-base-multilingual-cased-finetuned-amharic/blob/main/README.md",
+      "snippet": "Model description bert-base-multilingual-cased-finetuned-amharic is a Amharic BERT model obtained by replacing mBERT vocabulary by amharic vocabulary because the language was not supported, and fine-tuning bert-base-multilingual-cased model on Amharic language texts. It provides better performance than the multilingual Amharic on named entity recognition datasets."
+    }
+  ]
+}

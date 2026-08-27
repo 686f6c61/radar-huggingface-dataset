@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "jocarter/cross-modal-fusion",
+  "slug": "jocarter-cross-modal-fusion",
+  "author": "jocarter",
+  "url": "https://huggingface.co/jocarter/cross-modal-fusion",
+  "created_at": "2026-08-27T10:09:08.000Z",
+  "updated_at": "2026-08-27T10:09:18.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "transformer",
+    "research-notes",
+    "cross-modal-fusion",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 49600,
+  "parameters_human": "49600",
+  "storage_bytes": 198880,
+  "storage_human": "198880 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Democratizing AI through model fusion: A comprehensive review and ...",
+      "url": "https://www.sciencedirect.com/science/article/pii/S295016012500049X",
+      "snippet": "This concentration hinders innovation, diversity, and equitable deployment of AI technologies. Our review comprehensively analyzes model fusion—a novel paradigm that integrates multiple specialized models into unified, efficient systems—offering a scalable and decentralized alternative for LLM development."
+    },
+    {
+      "title": "FUSION: Fully Integration of Vision-Language Representations for Deep ...",
+      "url": "https://arxiv.org/html/2504.09925v1",
+      "snippet": "The results indicate that our model achieves consistent and progressively enhanced cross-modal alignment throughout the processing pipeline. Despite the fundamental role of vision-language interaction in human perception, current MLLMs often fail to capture this relationship effectively."
+    },
+    {
+      "title": "CMFFN: : An efficient cross-modal feature fusion network for semantic ...",
+      "url": "https://dl.acm.org/doi/10.1016/j.robot.2024.104900",
+      "snippet": "In addition, another modality significantly increases the computational complexity, parameters and model training cost. To address these issues, we propose a novel end-to-end multimodal dual-stream semantic segmentation network, called cross-modal filtering fusion network (CMFFN), which efficiently fuses features from RGB and raw point cloud ..."
+    },
+    {
+      "title": "DCMFNet: Deep Cross-Modal Fusion Network for Different Modalities with ...",
+      "url": "https://dl.acm.org/doi/10.1145/3670947.3670956",
+      "snippet": "Cross-modal fusion aims to establish a consistent correspondence between arbitrary modalities. Due to the inherent differences between these modalities, accurately modeling their correspondence is a challenging task. Referring image segmentation (RIS) is a fundamental cross-modal task that intends to segment a desired object from an image based on a given natural language expression. In this ..."
+    },
+    {
+      "title": "A Cross-Modal Attention-Driven Multi-Sensor Fusion Method for ... - MDPI",
+      "url": "https://www.mdpi.com/1424-8220/25/8/2474",
+      "snippet": "Moreover, during model training, we introduce a perceptual guided cross-loss function to further enhance cross-modal feature fusion. A series of experiments conducted based on the SemanticKITTI and nuScenes datasets verify the effectiveness of the cross-modal attention residual fusion module and the perceptual guided cross-loss function."
+    }
+  ]
+}

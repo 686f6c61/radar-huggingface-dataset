@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "ark4004/gemma3.8-fn-fp8-jh",
+  "slug": "ark4004-gemma3-8-fn-fp8-jh",
+  "author": "ark4004",
+  "url": "https://huggingface.co/ark4004/gemma3.8-fn-fp8-jh",
+  "created_at": "2026-08-27T02:34:18.000Z",
+  "updated_at": "2026-08-27T02:35:46.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen4_exp",
+    "image-text-to-text",
+    "text-generation",
+    "conversational",
+    "endpoints_compatible",
+    "fp8",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 179999981459,
+  "parameters_human": "180.00B",
+  "storage_bytes": 185553536918,
+  "storage_human": "185.6 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ark4004/gemma3.8-27B-FP8 · Hugging Face",
+      "url": "https://huggingface.co/ark4004/gemma3.8-27B-FP8",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "ark4004/gemma3.8-27B-FP8 at main - Hugging Face",
+      "url": "https://huggingface.co/ark4004/gemma3.8-27B-FP8/tree/main",
+      "snippet": "Install from pip and serve model ... Use Docker images ... Docker Model Runner How to use ark4004/gemma3.8-27B-FP8 with Docker Model Runner: ... main gemma3.8-27B-FP8 30.9 GB Ctrl+K Ctrl+K 2 contributors History:3 commits ark4004 Update README.md 7ccbebe verifiedabout 4 hours ago .gitattributes 1.57 kBDuplicate from Qwen/Qwen3.8-27B-FP8about 4 ..."
+    },
+    {
+      "title": "Gemma 4 — Google DeepMind",
+      "url": "https://deepmind.google/models/gemma/gemma-4/",
+      "snippet": "Gemma 4 models undergo the same rigorous infrastructure security protocols as our proprietary models. By choosing Gemma 4, enterprises and sovereign organizations gain a trusted, transparent foundation that delivers state-of-the-art capabilities while meeting the highest standards for security and reliability."
+    },
+    {
+      "title": "Gemma 4 Technical Report - arXiv.org",
+      "url": "https://arxiv.org/html/2607.02770v1",
+      "snippet": "In this technical report, we outline the different model architectures across model sizes as well as the pre-training and post-training recipe of Gemma 4. Through comprehensive benchmarks and human evaluations such as Arena (Chiang et al., 2024), we demonstrate that Gemma 4 operates at a level comparable to larger, frontier open-source models ..."
+    },
+    {
+      "title": "GitHub - google-deepmind/gemma: Gemma open-weight LLM library, from ...",
+      "url": "https://github.com/google-deepmind/gemma",
+      "snippet": "Gemma is a family of open-weights Large Language Model (LLM) by Google DeepMind, based on Gemini research and technology. This repository contains the implementation of the gemma PyPI package. A JAX library to use and fine-tune Gemma. For examples and use cases, see our documentation. Please report issues and feedback in our GitHub."
+    }
+  ]
+}

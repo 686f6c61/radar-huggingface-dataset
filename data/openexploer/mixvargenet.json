@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "OpenExploer/mixvargenet",
+  "slug": "openexploer-mixvargenet",
+  "author": "OpenExploer",
+  "url": "https://huggingface.co/OpenExploer/mixvargenet",
+  "created_at": "2026-08-27T07:26:37.000Z",
+  "updated_at": "2026-08-27T07:28:15.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "heal",
+    "horizon",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 63193119,
+  "storage_human": "63 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "9.4.1. Foreword — Horizon Open Explorer",
+      "url": "https://developer.d-robotics.cc/api/v1/fileData/horizon_j5_open_explorer_en_doc/runtime/source/ai_benchmark/source/ai-benchmark.html",
+      "snippet": "9.4.1. Foreword Horizon&#x27;s J5 AI Benchmark Sample Package (hereafter referred to as the ABP) contains the most frequently used performance and accuracy evaluation samples of classification, detection, segmentation, optical-flow, tracking estimation, lidar multitask, bev and depth estimation models. In model performance evaluation samples, developers are able, not only to evaluate the single ..."
+    },
+    {
+      "title": "sparse4d_qat/samples/ai_toolchain/horizon_model_train_sample/scripts ...",
+      "url": "https://github.com/yingxie285/sparse4d_qat/blob/main/samples/ai_toolchain/horizon_model_train_sample/scripts/configs/lane_pred/ganet/ganet_mixvargenet_culane.py",
+      "snippet": "/ ai_toolchain / horizon_model_train_sample / scripts / configs / lane_pred / ganet / ganet_mixvargenet_culane.py Code Blame executable file · 712 lines (650 loc) · 17.7 KB Raw Edit and raw actions 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 32 33 34 35 36 37 38 39 40 41 42 43 44 45 46 47 48 49 50 51 52 ..."
+    },
+    {
+      "title": "sparse4d_qat/samples/ai_toolchain/horizon_model_train_sample/scripts ...",
+      "url": "https://github.com/yingxie285/sparse4d_qat/blob/main/samples/ai_toolchain/horizon_model_train_sample/scripts/configs/disparity_pred/stereonet/stereonetplus_mixvargenet_sceneflow.py",
+      "snippet": "/ ai_toolchain / horizon_model_train_sample / scripts / configs / disparity_pred / stereonet / stereonetplus_mixvargenet_sceneflow.py Code Blame executable file · 862 lines (801 loc) · 21.8 KB Raw Edit and raw actions 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 32 33 34 35 36 37 38 39 40 41 42 43 44 45 ..."
+    },
+    {
+      "title": "【参考算法】地平线 MixVarGENet参考算法-V1.2.1 - Model Zoo - 地瓜机器人论坛",
+      "url": "https://forum.d-robotics.cc/t/topic/25905",
+      "snippet": "0 概述 在深度学习领域，backbone作为神经网络特征提取的重要部分，在一定程度上决定了任务的最终结果。为了应对更高等级的自动驾驶场景，地平线提出了与J5芯片深度耦合的高效网络结构MixVargGENet。本文将基于ImageNet数据集，对以MixVargGENet为backbone的分类算法进行介绍和使用说明。 该示例为参考 ..."
+    },
+    {
+      "title": "【参考算法】地平线 MixVarGENet参考算法-V1.2.1 - 地平线开发者社区",
+      "url": "https://developer.horizon.auto/blog/10387",
+      "snippet": "6.2 AI Benchmark示例 OE开发包中提供了MixVarGENet的AI Benchmark示例，位于： ddk/samples/ai_benchmark/j5/qat/script/classification/mixvargenet，具体使用可以参考 开发者社区J5算法工具链产品手册-AIBenchmark评测示例"
+    }
+  ]
+}

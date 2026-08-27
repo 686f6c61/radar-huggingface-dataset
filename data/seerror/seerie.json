@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "seerror/seerie",
+  "slug": "seerror-seerie",
+  "author": "seerror",
+  "url": "https://huggingface.co/seerror/seerie",
+  "created_at": "2026-08-27T07:27:36.000Z",
+  "updated_at": "2026-08-27T07:27:36.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Seerie - Scam Checker India - Apps on Google Play",
+      "url": "https://play.google.com/store/apps/details?id=com.seerror.seerie&hl=en-US",
+      "snippet": "• Offline Scan for SMS, screenshots & documents (16-layer engine + 6-bucket AI) • Seerie Brain private on-device chat; Ask Seerie after a scan • Trusted contact SOS with map pin, auto-retry & Nearby SOS • India helplines (1930, 112, 181, 1098) and safety playbook • Chat replies cleaned no raw model tags in answers flag Flag as ..."
+    },
+    {
+      "title": "Seerie - Scam Checker India - Apps on Google Play",
+      "url": "https://play.google.com/store/apps/details?id=com.seerror.seerie&hl=en",
+      "snippet": "Check scam SMS, UPI fraud & risky links offline. India helplines & safety tips."
+    },
+    {
+      "title": "The Sequential model - TensorFlow Core",
+      "url": "https://www.tensorflow.org/guide/keras/sequential_model",
+      "snippet": "A Sequential model is not appropriate when: Your model has multiple inputs or multiple outputs Any of your layers has multiple inputs or multiple outputs You need to do layer sharing You want non-linear topology (e.g. a residual connection, a multi-branch model) Creating a Sequential model You can create a Sequential model by passing a list of layers to the Sequential constructor:"
+    },
+    {
+      "title": "GitHub - seerror/seerror",
+      "url": "https://github.com/seerror/seerror",
+      "snippet": "Contribute to seerror/seerror development by creating an account on GitHub."
+    },
+    {
+      "title": "The Sequential model - Keras",
+      "url": "https://keras.io/guides/sequential_model/",
+      "snippet": "When to use a Sequential model A Sequential model is appropriate for a plain stack of layers where each layer has exactly one input tensor and one output tensor. Schematically, the following Sequential model:"
+    }
+  ]
+}

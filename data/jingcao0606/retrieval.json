@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "jingcao0606/retrieval",
+  "slug": "jingcao0606-retrieval",
+  "author": "jingcao0606",
+  "url": "https://huggingface.co/jingcao0606/retrieval",
+  "created_at": "2026-08-27T01:58:52.000Z",
+  "updated_at": "2026-08-27T01:59:01.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "coca",
+    "pytorch",
+    "retrieval",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 16576,
+  "parameters_human": "16576",
+  "storage_bytes": 66784,
+  "storage_human": "66784 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "[2603.10583] Attribution as Retrieval: Model-Agnostic AI-Generated ...",
+      "url": "https://arxiv.org/abs/2603.10583",
+      "snippet": "To address these limitations, this work presents a new paradigm for AI-generated image attribution by formulating it as an instance retrieval problem instead of a conventional image classification problem. We propose an efficient model-agnostic framework, called Low-bIt-plane-based Deepfake Attribution (LIDA)."
+    },
+    {
+      "title": "retrieval-model · GitHub Topics · GitHub",
+      "url": "https://github.com/topics/retrieval-model",
+      "snippet": "converter ai conversion voice inference tts rvc voice-conversion vc conversational-ai retrieval-model voiceconversion Updated on Oct 25, 2025 Python"
+    },
+    {
+      "title": "DeepRetrieval - pat-jj.github.io",
+      "url": "https://pat-jj.github.io/DeepRetrieval-AI/",
+      "snippet": "DeepRetrieval also dominates in evidence-seeking retrieval, classic information retrieval and SQL database search. With only 3B parameters, it outperforms industry-leading models like GPT-4o and Claude-3.5-Sonnet on 11/13 datasets."
+    },
+    {
+      "title": "Retrieval | OpenAI API",
+      "url": "https://developers.openai.com/api/docs/guides/retrieval",
+      "snippet": "The Retrieval API allows you to perform semantic search over your data, which is a technique that surfaces semantically similar results—even when they match few or no keywords. Retrieval is useful on its own, but is especially powerful when combined with our models to synthesize responses. The Retrieval API is powered by vector stores, which serve as indices for your data. This guide will ..."
+    },
+    {
+      "title": "Retrieval-augmented generation - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Retrieval-augmented_generation",
+      "snippet": "Retrieval-augmented generation (RAG) is a technique that enables large language models (LLMs) to retrieve and incorporate new information from external data sources. [1]"
+    }
+  ]
+}

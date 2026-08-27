@@ -1,0 +1,77 @@
+{
+  "schema": 1,
+  "id": "youngseok12/AX-3.1-Light-sft_v3_1_C_recommended",
+  "slug": "youngseok12-ax-3-1-light-sft_v3_1_c_recommended",
+  "author": "youngseok12",
+  "url": "https://huggingface.co/youngseok12/AX-3.1-Light-sft_v3_1_C_recommended",
+  "created_at": "2026-08-27T07:48:33.000Z",
+  "updated_at": "2026-08-27T07:49:50.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "ko"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "llama",
+    "text-generation",
+    "korean",
+    "sft",
+    "lora-merged",
+    "k-ai-leaderboard",
+    "conversational",
+    "ko",
+    "base_model:skt/A.X-3.1-Light",
+    "base_model:finetune:skt/A.X-3.1-Light",
+    "license:apache-2.0",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 7264800768,
+  "parameters_human": "7.26B",
+  "storage_bytes": 14529635608,
+  "storage_human": "14.5 GB",
+  "base_model": "skt/A.X-3.1-Light",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "youngseok12/AX-3.1-Light-sft_v3_0 · Hugging Face",
+      "url": "https://huggingface.co/youngseok12/AX-3.1-Light-sft_v3_0",
+      "snippet": "youngseok12 / AX-3.1-Light-sft_v3_0 like 0 Text Generation Transformers Safetensors Korean llama korean sft lora-merged k-ai-leaderboard conversational text-generation-inference License:apache-2.0 Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "skt/A.X-3.1-Light · Hugging Face",
+      "url": "https://huggingface.co/skt/A.X-3.1-Light",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GitHub - deepseek-ai/DeepSeek-V3 · GitHub",
+      "url": "https://github.com/deepseek-ai/DeepSeek-V3",
+      "snippet": "Furthermore, DeepSeek-V3 pioneers an auxiliary-loss-free strategy for load balancing and sets a multi-token prediction training objective for stronger performance. We pre-train DeepSeek-V3 on 14.8 trillion diverse and high-quality tokens, followed by Supervised Fine-Tuning and Reinforcement Learning stages to fully harness its capabilities."
+    },
+    {
+      "title": "LLM Rankings | OpenRouter",
+      "url": "https://openrouter.ai/rankings",
+      "snippet": "LLM rankings and AI leaderboard by real-world usage, ranked by tokens processed through the OpenRouter API. See which AI models developers actually use."
+    },
+    {
+      "title": "‎Google Gemini",
+      "url": "https://gemini.google.com/",
+      "snippet": "Get assistance with writing, planning, learning, and more from Google AI."
+    }
+  ]
+}

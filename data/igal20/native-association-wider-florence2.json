@@ -1,0 +1,76 @@
+{
+  "schema": 1,
+  "id": "Igal20/native-association-wider-florence2",
+  "slug": "igal20-native-association-wider-florence2",
+  "author": "Igal20",
+  "url": "https://huggingface.co/Igal20/native-association-wider-florence2",
+  "created_at": "2026-08-27T09:08:03.000Z",
+  "updated_at": "2026-08-27T09:08:20.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "florence2",
+    "image-text-to-text",
+    "florence-2",
+    "vision-language-model",
+    "person-attribute-recognition",
+    "pedestrian-attributes",
+    "grammar-constrained-decoding",
+    "wider-attribute",
+    "eccv-2026",
+    "custom_code",
+    "base_model:microsoft/Florence-2-large",
+    "base_model:finetune:microsoft/Florence-2-large",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 776744047,
+  "parameters_human": "776.7M",
+  "storage_bytes": 3317268432,
+  "storage_human": "3.3 GB",
+  "base_model": "microsoft/Florence-2-large",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "microsoft/Florence-2-large · Hugging Face",
+      "url": "https://huggingface.co/microsoft/Florence-2-large",
+      "snippet": "We finetune Florence-2 models with a collection of downstream tasks, resulting two generalist models Florence-2-base-ft and Florence-2-large-ft that can conduct a wide range of downstream tasks. The table below compares the performance of specialist and generalist models on various captioning and Visual Question Answering (VQA) tasks."
+    },
+    {
+      "title": "florence-community/Florence-2-large-ft · Hugging Face",
+      "url": "https://huggingface.co/florence-community/Florence-2-large-ft",
+      "snippet": "We finetune Florence-2 models with a collection of downstream tasks, resulting two generalist models Florence-2-base-ft and Florence-2-large-ft that can conduct a wide range of downstream tasks. The table below compares the performance of specialist and generalist models on various captioning and Visual Question Answering (VQA) tasks."
+    },
+    {
+      "title": "Igal20/native-association: Native Association (HCMIW - GitHub",
+      "url": "https://github.com/Igal20/native-association",
+      "snippet": "Native Association (HCMIW @ ECCV 2026): grammar-constrained VLM decoding that makes person-attribute association a property of decoding — eval suite, finite-state grammar, per-field confidence recipe - Igal20/native-association"
+    },
+    {
+      "title": "GitHub - retkowsky/florence-2: Florence-2",
+      "url": "https://github.com/retkowsky/florence-2",
+      "snippet": "Florence-2 - Advancing a Unified Representation for a Variety of Vision Tasks We introduce Florence-2, a novel vision foundation model with a unified, prompt-based representation for a variety of computer vision and vision-language tasks. While existing large vision models excel in transfer learning ..."
+    },
+    {
+      "title": "Florence-2: Advancing a Unified Representation for a Variety of Vision ...",
+      "url": "https://www.microsoft.com/en-us/research/publication/florence-2-advancing-a-unified-representation-for-a-variety-of-vision-tasks/",
+      "snippet": "We introduce Florence-2, a novel vision foundation model with a unified, prompt-based representation for a variety of computer vision and vision-language tasks. While existing large vision models excel in transfer learning, they struggle to perform a diversity of tasks with simple instructions, a capability that implies handling the complexity of various spatial hierarchy and semantic […]"
+    }
+  ]
+}

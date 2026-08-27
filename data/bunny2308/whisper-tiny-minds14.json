@@ -1,0 +1,78 @@
+{
+  "schema": 1,
+  "id": "Bunny2308/whisper-tiny-minds14",
+  "slug": "bunny2308-whisper-tiny-minds14",
+  "author": "Bunny2308",
+  "url": "https://huggingface.co/Bunny2308/whisper-tiny-minds14",
+  "created_at": "2026-08-27T09:32:49.000Z",
+  "updated_at": "2026-08-27T09:50:43.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "automatic-speech-recognition",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "whisper",
+    "automatic-speech-recognition",
+    "generated_from_trainer",
+    "dataset:PolyAI/minds14",
+    "base_model:openai/whisper-tiny",
+    "base_model:finetune:openai/whisper-tiny",
+    "license:apache-2.0",
+    "model-index",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 37760640,
+  "parameters_human": "37.8M",
+  "storage_bytes": 1963812394,
+  "storage_human": "2.0 GB",
+  "base_model": "openai/whisper-tiny",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "Automatic Speech Recognition",
+      "dataset": "PolyAI/minds14",
+      "metric": "Wer",
+      "value": 0.34484885872917953
+    }
+  ],
+  "sources": [
+    {
+      "title": "Artificed/whisper-tiny-minds14 · Hugging Face",
+      "url": "https://huggingface.co/Artificed/whisper-tiny-minds14",
+      "snippet": "Artificed / whisper-tiny-minds14 like 0 Automatic Speech Recognition Transformers TensorBoard Safetensors minds14 whisper Generated from Trainer Eval Results License:apache-2.0 Model card FilesFiles and versionsMetricsTraining metrics Community Train Deploy Use this model whisper-tiny-minds14 Model description Intended uses & limitations Training and evaluation data Training procedure Training ..."
+    },
+    {
+      "title": "iammartian0/whisper-tiny-minds14 · Hugging Face",
+      "url": "https://huggingface.co/iammartian0/whisper-tiny-minds14",
+      "snippet": "whisper-tiny-minds14 This model is a fine-tuned version of openai/whisper-tiny on the PolyAI/minds14 dataset. It achieves the following results on the evaluation set:"
+    },
+    {
+      "title": "whisper-tiny-en-minds14 API & Inference Endpoint | FriendliAI",
+      "url": "https://friendli.ai/models/Fasih779/whisper-tiny-en-minds14",
+      "snippet": "Run whisper-tiny-en-minds14 with FriendliAI inference. This model is a fine-tuned version of openai/whisper-tiny on the PolyAI/minds14 dataset."
+    },
+    {
+      "title": "Bytez - open source AI",
+      "url": "https://bytez.com/model/MechaBunny19c/whisper-tiny-minds14-en-US",
+      "snippet": "Keep up with AI. Discover, demo, and deploy open source models"
+    },
+    {
+      "title": "zanuura/Whisper-ASR-Minds14-English - GitHub",
+      "url": "https://github.com/zanuura/whisper-asr-minds14-english",
+      "snippet": "This project explores the application of pretrained ASR models, specifically the Whisper-tiny model, in speech recognition from the MINDS14 dataset. Whisper-tiny is known for its advantages in minimizing size and speed of inference, making it ideal for devices with limited resources."
+    }
+  ]
+}

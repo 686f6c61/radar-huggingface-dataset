@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "fpadovani/ppt-art-lang-newlexicon-zipf-soft-eng-baseline-100mb_seed455",
+  "slug": "fpadovani-ppt-art-lang-newlexicon-zipf-soft-eng-baseline-100mb_seed455",
+  "author": "fpadovani",
+  "url": "https://huggingface.co/fpadovani/ppt-art-lang-newlexicon-zipf-soft-eng-baseline-100mb_seed455",
+  "created_at": "2026-08-27T09:58:52.000Z",
+  "updated_at": "2026-08-27T10:13:08.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gpt2",
+    "text-generation",
+    "generated_from_trainer",
+    "sft",
+    "trl",
+    "base_model:goldfish-models/eng_latn_100mb",
+    "base_model:finetune:goldfish-models/eng_latn_100mb",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 86508288,
+  "parameters_human": "86.5M",
+  "storage_bytes": 1384373400,
+  "storage_human": "1.4 GB",
+  "base_model": "goldfish-models/eng_latn_100mb",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Ppt Art Lang Newlexicon Eng Baseline 100mb Seed455 by fpadovani",
+      "url": "https://llm-explorer.com/model/fpadovani%2Fppt-art-lang-newlexicon-eng-baseline-100mb_seed455,6mkpVFlOXDWzjKl0Gjn5g5",
+      "snippet": "Ppt Art Lang Newlexicon Eng Baseline 100mb Seed455 is an open-source 86.5m LLM by fpadovani. VRAM 0.2GB. Compare benchmarks, capabilities, and deployment details on LLM Explorer."
+    },
+    {
+      "title": "ppt-art-lang-newlexicon-zipf-eng-baseline-100mb_seed455",
+      "url": "https://huggingface.co/fpadovani/ppt-art-lang-newlexicon-zipf-eng-baseline-100mb_seed455",
+      "snippet": "Instructions to use fpadovani/ppt-art-lang-newlexicon-zipf-eng-baseline-100mb_seed455 with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Libraries Transformers How to use fpadovani/ppt-art-lang-newlexicon-zipf-eng-baseline-100mb_seed455 with Transformers: # Use a pipeline as a high-level helper from transformers import pipeline pipe = pipeline ..."
+    },
+    {
+      "title": "ppt-art-lang-newlexicon-zipf-eng-baseline-100mb_seed10",
+      "url": "https://huggingface.co/fpadovani/ppt-art-lang-newlexicon-zipf-eng-baseline-100mb_seed10",
+      "snippet": "Instructions to use fpadovani/ppt-art-lang-newlexicon-zipf-eng-baseline-100mb_seed10 with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Libraries Transformers How to use fpadovani/ppt-art-lang-newlexicon-zipf-eng-baseline-100mb_seed10 with Transformers: # Use a pipeline as a high-level helper from transformers import pipeline pipe = pipeline ..."
+    },
+    {
+      "title": "fpadovani/eng-100mb-after-eng-baseline-newlexicon-zipf-ckpt4000 ...",
+      "url": "https://huggingface.co/fpadovani/eng-100mb-after-eng-baseline-newlexicon-zipf-ckpt4000_seed3407",
+      "snippet": "Instructions to use fpadovani/eng-100mb-after-eng-baseline-newlexicon-zipf-ckpt4000_seed3407 with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Libraries Transformers How to use fpadovani/eng-100mb-after-eng-baseline-newlexicon-zipf-ckpt4000_seed3407 with Transformers: # Use a pipeline as a high-level helper from transformers import pipeline pipe ..."
+    },
+    {
+      "title": "ppt-art-lang-newlexicon-zipf-eng-baseline-100mb_seed455",
+      "url": "https://friendli.ai/models/fpadovani/ppt-art-lang-newlexicon-zipf-eng-baseline-100mb_seed455",
+      "snippet": "Deploy ppt-art-lang-newlexicon-zipf-eng-baseline-100mb_seed455 with low-latency inference on FriendliAI. Get scalable API serving, high throughput, and production-grade reliability for AI agents."
+    }
+  ]
+}

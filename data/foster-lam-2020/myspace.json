@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "foster-lam-2020/MySpace",
+  "slug": "foster-lam-2020-myspace",
+  "author": "foster-lam-2020",
+  "url": "https://huggingface.co/foster-lam-2020/MySpace",
+  "created_at": "2026-01-06T08:35:51.000Z",
+  "updated_at": "2026-08-27T08:42:21.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 80587278,
+  "storage_human": "81 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - foster-lam/MySpace",
+      "url": "https://github.com/foster-lam/MySpace",
+      "snippet": "Contribute to foster-lam/MySpace development by creating an account on GitHub."
+    },
+    {
+      "title": "foster-lam · GitHub",
+      "url": "https://github.com/foster-lam",
+      "snippet": "foster-lam has one repository available. Follow their code on GitHub."
+    },
+    {
+      "title": "Myspace Profile Search: How to Find Old Myspace Accounts in 2026",
+      "url": "https://socialcatfish.com/scamfish/myspace-profile-search-how-to-find-old-myspace-profiles-and-accounts-in-2026/",
+      "snippet": "Search Myspace profiles and find old accounts — methods to find someone&#x27;s old Myspace profile by name, username, or email."
+    },
+    {
+      "title": "AI Detector: Free AI Checker for ChatGPT, Claude & GPT-5 - QuillBot",
+      "url": "https://quillbot.com/ai-content-detector",
+      "snippet": "Quillbot&#x27;s free AI Detector checks text from ChatGPT, GPT-5, Claude and others. Get an AI score, sentence-level highlights, and refined AI detection insights."
+    },
+    {
+      "title": "Facebook",
+      "url": "https://www.facebook.com/",
+      "snippet": "Connect and share with friends, family, and the world on Facebook."
+    }
+  ]
+}

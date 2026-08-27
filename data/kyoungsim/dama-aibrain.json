@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "kyoungsim/dama-aibrain",
+  "slug": "kyoungsim-dama-aibrain",
+  "author": "kyoungsim",
+  "url": "https://huggingface.co/kyoungsim/dama-aibrain",
+  "created_at": "2026-08-25T12:35:03.000Z",
+  "updated_at": "2026-08-27T09:15:14.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gguf",
+    "gemma4",
+    "image-text-to-text",
+    "text-generation-inference",
+    "unsloth",
+    "conversational",
+    "en",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 563,
+  "trending_score": 0,
+  "parameters": 5123178051,
+  "parameters_human": "5.12B",
+  "storage_bytes": 16935121121,
+  "storage_human": "16.9 GB",
+  "base_model": "unsloth/gemma-4-e2b-it-unsloth-bnb-4bit",
+  "formats": [
+    "gguf",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "kyoungsim/dama-aibrain · Hugging Face",
+      "url": "https://huggingface.co/kyoungsim/dama-aibrain",
+      "snippet": "kyoungsim / dama-aibrain like 0 Image-Text-to-Text Transformers Safetensors GGUF English gemma4 text-generation-inference unsloth conversational License:apache-2.0 Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "dama-aibrain API & Inference Endpoint | FriendliAI",
+      "url": "https://friendli.ai/models/kyoungsim/dama-aibrain",
+      "snippet": "Run dama-aibrain with FriendliAI inference. This gemma4 model was trained 2x faster with Unsloth and Huggingface&#x27;s TRL library."
+    },
+    {
+      "title": "kyoungsim (ankyoungsim) - Hugging Face",
+      "url": "https://huggingface.co/kyoungsim",
+      "snippet": "Sort: Recently updated. kyoungsim/gemma-2b-brain-v2. 1B • Updated about 7 hours ago. kyoungsim/marketing-ai-youngsuk. Text Generation • 0.5B • Updated 11 days ago • 127"
+    },
+    {
+      "title": "ic4u2u/dama-aibrain · Hugging Face",
+      "url": "https://huggingface.co/ic4u2u/dama-aibrain",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "dama-aibrain API & Inference Endpoint | FriendliAI",
+      "url": "https://friendli.ai/models/ic4u2u/dama-aibrain",
+      "snippet": "Deploy dama-aibrain with low-latency inference on FriendliAI. Get scalable API serving, high throughput, and production-grade reliability for AI agents."
+    }
+  ]
+}

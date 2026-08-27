@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "mkm08/green-ai-carbon-accounting",
+  "slug": "mkm08-green-ai-carbon-accounting",
+  "author": "mkm08",
+  "url": "https://huggingface.co/mkm08/green-ai-carbon-accounting",
+  "created_at": "2026-08-27T07:26:51.000Z",
+  "updated_at": "2026-08-27T07:29:50.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "co2_eq_emissions",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "1. Introduction | Green AI Model",
+      "url": "https://green-ai-model.github.io/docs/1_introduction/",
+      "snippet": "Introduction # The Green AI Model is a comprehensive framework intended to guide stakeholders through the AI life cycle. It highlights key influencing factors and their interrelations that need to be considered to enhance the sustainability of AI systems. This model is pivotal in advancing the dual objectives of Green AI: mitigating climate change and minimizing environmental impacts. Green AI ..."
+    },
+    {
+      "title": "AI and Sustainability: How Tech Transforms Carbon Accounting",
+      "url": "https://www.zevero.earth/blog/ai-and-sustainability-carbon-accounting",
+      "snippet": "Artificial intelligence (AI) is rapidly transforming industries worldwide, and its potential in sustainability is particularly noteworthy. While AI has become synonymous with increased productivity and efficiency, it also holds promise in combating climate change. One area where its impact is increasingly felt is carbon accounting —a process for organisations to measure, reduce, and report ..."
+    },
+    {
+      "title": "(PDF) Harnessing AI for Carbon Accounting: Revolutionizing ESG ...",
+      "url": "https://www.researchgate.net/publication/389438965_Harnessing_AI_for_Carbon_Accounting_Revolutionizing_ESG_Reporting_and_Sustainability",
+      "snippet": "The integration of Artificial Intelligence (AI) in Environmental, Social, and Governance (ESG) reporting is revolutionizing carbon accounting by improving accuracy, efficiency, and transparency."
+    },
+    {
+      "title": "AI Carbon Accounting: Measure, Track & Report Environmental Impact",
+      "url": "https://aienergycalculator.com/ai-carbon-accounting-environmental-impact/",
+      "snippet": "Learn how to accurately measure, track, and report AI carbon emissions with comprehensive carbon accounting frameworks and sustainability metrics."
+    },
+    {
+      "title": "Leveraging AI for sustainable accounting: Developing models for ...",
+      "url": "https://www.researchgate.net/publication/381466522_Leveraging_AI_for_sustainable_accounting_Developing_models_for_environmental_impact_assessment_and_reporting",
+      "snippet": "AI holds significant promise for transforming sustainable accounting by improving environmental impact assessment and reporting."
+    }
+  ]
+}

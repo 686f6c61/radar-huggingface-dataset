@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "TattooPEEL/Chocolatine-QuebecV1",
+  "slug": "tattoopeel-chocolatine-quebecv1",
+  "author": "TattooPEEL",
+  "url": "https://huggingface.co/TattooPEEL/Chocolatine-QuebecV1",
+  "created_at": "2026-08-27T02:34:35.000Z",
+  "updated_at": "2026-08-27T02:49:48.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 3821079648,
+  "parameters_human": "3.82B",
+  "storage_bytes": 2396770880,
+  "storage_human": "2.4 GB",
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Chocolatine - a jpacifico Collection - Hugging Face",
+      "url": "https://huggingface.co/collections/jpacifico/chocolatine-667595e65eaa9dd299c7f443",
+      "snippet": "Chocolatine🍫🥖 updated about 18 hours ago DPO fine-tuned models Family, high performance Upvote 6"
+    },
+    {
+      "title": "GitHub - jpacifico/Chocolatine-LLM: Scripts and notebooks to run the ...",
+      "url": "https://github.com/jpacifico/Chocolatine-LLM",
+      "snippet": "Scripts and notebooks to run the Chocolatine AI models https://huggingface.co/collections/jpacifico/chocolatine-667595e65eaa9dd299c7f443 - jpacifico/Chocolatine-LLM"
+    },
+    {
+      "title": "tattooinmtl (TattooPeel) · GitHub",
+      "url": "https://github.com/tattooinmtl",
+      "snippet": "Veteran coder 46 yrs old.. Started in 1996 with html,css, php.. made over 15769 different websites. 269 apps and more coding experiments. I dont like AI... - tattooinmtl"
+    },
+    {
+      "title": "AI Models | Civitai",
+      "url": "https://civitai.com/models",
+      "snippet": "Browse thousands of free Stable Diffusion & Flux models, LoRAs, checkpoints, and embeddings. The largest collection of AI image generation resources."
+    },
+    {
+      "title": "Civitai | Discover and Create AI Art",
+      "url": "https://civitai.com/",
+      "snippet": "Explore thousands of free Stable Diffusion & Flux models, create and share AI-generated art, and join the world&#x27;s largest community of generative AI creators."
+    }
+  ]
+}

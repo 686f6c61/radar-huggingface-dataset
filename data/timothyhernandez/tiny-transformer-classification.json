@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "TimothyHernandez/tiny-transformer-classification",
+  "slug": "timothyhernandez-tiny-transformer-classification",
+  "author": "TimothyHernandez",
+  "url": "https://huggingface.co/TimothyHernandez/tiny-transformer-classification",
+  "created_at": "2026-08-27T09:57:35.000Z",
+  "updated_at": "2026-08-27T09:57:46.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "tiny_transformer",
+    "pytorch",
+    "tiny-transformer",
+    "classification",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 16576,
+  "parameters_human": "16576",
+  "storage_bytes": 66784,
+  "storage_human": "66784 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "tiny-transformer/classifier_model.py at main · saeeddhqan ... - GitHub",
+      "url": "https://github.com/saeeddhqan/tiny-transformer/blob/main/classifier_model.py",
+      "snippet": "Tiny transformer models implemented in pytorch. Contribute to saeeddhqan/tiny-transformer development by creating an account on GitHub."
+    },
+    {
+      "title": "GitHub - ThilinaRajapakse/simpletransformers: Transformers for ...",
+      "url": "https://github.com/ThilinaRajapakse/simpletransformers",
+      "snippet": "This library is based on the Transformers library by HuggingFace. Simple Transformers lets you quickly train and evaluate Transformer models. Only 3 lines of code are needed to initialize, train, and evaluate a model. Supported Tasks: Information Retrieval (Dense Retrieval) (Large) Language Models (Training, Fine-tuning, and Generation) Encoder Model Training and Fine-tuning Sequence ..."
+    },
+    {
+      "title": "Transformers · Hugging Face",
+      "url": "https://huggingface.co/docs/transformers/index",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "A Tiny Transformer for Low-Power Arrhythmia Classification on ...",
+      "url": "https://ieeexplore.ieee.org/document/10531812",
+      "snippet": "Wearable systems for the continuous and real-time monitoring of cardiovascular diseases are becoming widespread and valuable assets in diagnosis and therapy. A promising approach for real-time analysis of the electrocardiographic (ECG) signal and the detection of heart conditions, such as arrhythmia, is represented by the transformer machine learning model. Transformers are powerful models for ..."
+    },
+    {
+      "title": "deepseek-v4-pro-0813 Model by Deepseek-ai | NVIDIA NIM",
+      "url": "https://build.nvidia.com/deepseek-ai/deepseek-v4-pro-0813/modelcard",
+      "snippet": "This model has been developed and built to a third-party&#x27;s requirements for this application and use case; see link to Non-NVIDIA DeepSeek AI DeepSeek-V4-Pro-0813 Model Card."
+    }
+  ]
+}

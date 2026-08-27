@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "J0nasW/sciembed-ctx-8192",
+  "slug": "j0nasw-sciembed-ctx-8192",
+  "author": "J0nasW",
+  "url": "https://huggingface.co/J0nasW/sciembed-ctx-8192",
+  "created_at": "2026-08-27T09:42:44.000Z",
+  "updated_at": "2026-08-27T09:42:53.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "feature-extraction",
+  "library": "sentence-transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "sentence-transformers",
+    "safetensors",
+    "modernbert",
+    "feature-extraction",
+    "sentence-similarity",
+    "scientific-documents",
+    "citation-context",
+    "en",
+    "base_model:answerdotai/ModernBERT-base",
+    "base_model:finetune:answerdotai/ModernBERT-base",
+    "license:mit",
+    "text-embeddings-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 149014272,
+  "parameters_human": "149.0M",
+  "storage_bytes": 596070136,
+  "storage_human": "596 MB",
+  "base_model": "answerdotai/ModernBERT-base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "anon-nlp/sciembed-ctx-8192 · Hugging Face",
+      "url": "https://huggingface.co/anon-nlp/sciembed-ctx-8192",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "nomic-ai/nomic-embed-text-v1 · Hugging Face",
+      "url": "https://huggingface.co/nomic-ai/nomic-embed-text-v1",
+      "snippet": "A newer version of this model is available: nomic-ai/nomic-embed-text-v1.5"
+    },
+    {
+      "title": "Switched to `nomic-embed-text` model but still get `8192 ... - GitHub",
+      "url": "https://github.com/ollama/ollama/issues/10176",
+      "snippet": "Switched to nomic-embed-text model but still get 8192 dimension #10176 New issue Closed khteh"
+    },
+    {
+      "title": "I fixed all the issues I found with llama.cpp server when ... - Reddit",
+      "url": "https://www.reddit.com/r/LocalLLaMA/comments/1ac4pe4/i_fixed_all_the_issues_i_found_with_llamacpp/",
+      "snippet": "I fixed all the issues I found with llama.cpp server when using self extend and added prompt caching ability when using self extend. (This is still my old PR)"
+    },
+    {
+      "title": "Best Ollama Embedding Models 2026: 7 Benchmarked by MTEB Score, VRAM ...",
+      "url": "https://www.morphllm.com/ollama-embedding-models",
+      "snippet": "Best Ollama Embedding Models 2026: 7 Benchmarked by MTEB Score, VRAM, and Dimensions Every Ollama embedding model in one table: MTEB score, parameters, dimensions, context length, and download size for qwen3-embedding, nomic-embed-text, mxbai-embed-large, bge-m3, snowflake-arctic-embed2, embeddinggemma, and all-minilm. Plus /api/embed vs /api/embeddings vs /v1/embeddings, 1536-dimension output ..."
+    }
+  ]
+}

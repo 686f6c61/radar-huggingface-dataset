@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "shuh0129/qwen3-4b-optval-v3-lora",
+  "slug": "shuh0129-qwen3-4b-optval-v3-lora",
+  "author": "shuh0129",
+  "url": "https://huggingface.co/shuh0129/qwen3-4b-optval-v3-lora",
+  "created_at": "2026-08-27T10:57:58.000Z",
+  "updated_at": "2026-08-27T10:58:08.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "base_model:adapter:unsloth/Qwen3-4B",
+    "lora",
+    "sft",
+    "transformers",
+    "trl",
+    "unsloth",
+    "text-generation",
+    "conversational",
+    "arxiv:1910.09700",
+    "base_model:unsloth/Qwen3-4B",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 143610732,
+  "storage_human": "144 MB",
+  "base_model": "unsloth/Qwen3-4B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "shuh0129/qwen3-4b-optnorm-v3-lora · Hugging Face",
+      "url": "https://huggingface.co/shuh0129/qwen3-4b-optnorm-v3-lora",
+      "snippet": "Instructions to use shuh0129/qwen3-4b-optnorm-v3-lora with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Libraries PEFT How to use shuh0129/qwen3-4b-optnorm-v3-lora with PEFT:"
+    },
+    {
+      "title": "shuh0129 (sung) - Hugging Face",
+      "url": "https://huggingface.co/shuh0129",
+      "snippet": "Recent Activity published a model10 days ago shuh0129/qwen3-4b-optnorm-v5-lora updated a model10 days ago shuh0129/qwen3-4b-optnorm-v5-lora published a model10 days ago shuh0129/qwen3-4b-optnorm-v6-lora View all activity"
+    },
+    {
+      "title": "GitHub - QwenLM/Qwen3: Qwen3 is the large language model series ...",
+      "url": "https://github.com/QwenLM/Qwen3",
+      "snippet": "Over the past three months, we continued to explore the potential of the Qwen3 families and we are excited to introduce the updated Qwen3-2507 in two variants, Qwen3-Instruct-2507 and Qwen3-Thinking-2507, and three sizes, 235B-A22B, 30B-A3B, and 4B. Qwen3-Instruct-2507 is the updated version of the previous Qwen3 non-thinking mode, featuring the following key enhancements: Significant ..."
+    },
+    {
+      "title": "Research - Qwen",
+      "url": "https://qwen.ai/research/",
+      "snippet": "Research Latest Advancements Qwen3.8-Max: A New Bar for Coding and Cowork Today, we are officially releasing Qwen 3.8-Max, the most capable model in the Qwen family to date. This also marks the first time we will open-source the weights of a Qwen-Max-class model — the open weights will be released next week."
+    },
+    {
+      "title": "Qwen3 - lmstudio.ai",
+      "url": "https://lmstudio.ai/models/qwen3",
+      "snippet": "The latest version of the Qwen3 model family, featuring 4B, 30B, and 235B dense and MoE models, both thinking and non-thinking variants."
+    }
+  ]
+}

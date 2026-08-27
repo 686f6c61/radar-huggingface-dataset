@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "uj-07/LunarLander-V2",
+  "slug": "uj-07-lunarlander-v2",
+  "author": "uj-07",
+  "url": "https://huggingface.co/uj-07/LunarLander-V2",
+  "created_at": "2026-08-27T09:37:20.000Z",
+  "updated_at": "2026-08-27T09:44:11.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "reinforcement-learning",
+  "library": "stable-baselines3",
+  "languages": [],
+  "tags": [
+    "stable-baselines3",
+    "LunarLander-v3",
+    "deep-reinforcement-learning",
+    "reinforcement-learning",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 434745,
+  "storage_human": "434745 B",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Adi070204/LunarLander-v2 · Hugging Face",
+      "url": "https://huggingface.co/Adi070204/LunarLander-v2",
+      "snippet": "PPO Agent playing LunarLander-v2 This is a trained model of a PPO agent playing LunarLander-v2 using the stable-baselines3 library. Usage (with Stable-baselines3) TODO: Add your code"
+    },
+    {
+      "title": "AutonomousPlayer/Lunar-Lander-v2 · Hugging Face",
+      "url": "https://huggingface.co/AutonomousPlayer/Lunar-Lander-v2",
+      "snippet": "PPO Agent playing LunarLander-v2 This is a trained model of a PPO agent playing LunarLander-v2 using the stable-baselines3 library."
+    },
+    {
+      "title": "GitHub - mariaegarciab/Lunar_Lander: This is a trained model of a PPO ...",
+      "url": "https://github.com/mariaegarciab/Lunar_Lander",
+      "snippet": "This is a trained model of a PPO agent playing LunarLander-v2 using the stable-baselines3 library. - mariaegarciab/Lunar_Lander"
+    },
+    {
+      "title": "GitHub - lazavgeridis/LunarLander-v2: Implementation of reinforcement ...",
+      "url": "https://github.com/lazavgeridis/LunarLander-v2",
+      "snippet": "lr=0.1 lr=0.01 lr=0.001 Note that the value of learning rate (equivalently the constant step-size parameter) only affects the performance of Sarsa, Q-learning and DQN. The Monte-Carlo variant implemented here is called Every Visit Monte-Carlo and it uses a true running average in the policy evaluation step. Subsequently, learning rate does not have any effect on the algorithm&#x27;s training ..."
+    },
+    {
+      "title": "lander.ipynb - Colab",
+      "url": "https://colab.research.google.com/github/johngrahamreynolds/DeepRL/blob/main/HuggingFaceCourse/LunarLander/lander.ipynb/",
+      "snippet": "Create the LunarLander environment 🌛 and understand how it works The environment 🎮 In this first tutorial, we&#x27;re going to train our agent, a Lunar Lander, to land correctly on the moon. To do that, the agent needs to learn to adapt its speed and position (horizontal, vertical, and angular) to land correctly."
+    }
+  ]
+}

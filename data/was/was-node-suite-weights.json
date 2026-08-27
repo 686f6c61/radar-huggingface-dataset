@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "WAS/was-node-suite-weights",
+  "slug": "was-was-node-suite-weights",
+  "author": "WAS",
+  "url": "https://huggingface.co/WAS/was-node-suite-weights",
+  "created_at": "2026-08-27T06:10:14.000Z",
+  "updated_at": "2026-08-27T06:26:25.000Z",
+  "license": "per-file",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "image-restoration",
+    "denoising",
+    "low-light",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 742967725,
+  "storage_human": "743 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - WASasquatch/was-node-suite-comfyui: An extensive node suite ...",
+      "url": "https://github.com/WASasquatch/was-node-suite-comfyui",
+      "snippet": "The new preferred method of text node output is STRING. This is a change from ASCII so that it is more clear what data is being passed. The was_suite_config.json will automatically set use_legacy_ascii_text to false. Video Nodes - There are two new video nodes, Write to Video and Create Video from Path. These are experimental nodes."
+    },
+    {
+      "title": "ltdrdata/was-node-suite-comfyui | DeepWiki",
+      "url": "https://deepwiki.com/ltdrdata/was-node-suite-comfyui",
+      "snippet": "This document covers the WAS Node Suite, a comprehensive ComfyUI extension that provides over 200 nodes for image processing, text manipulation, AI model integration, and workflow automation. The suit"
+    },
+    {
+      "title": "GitHub - ComfyNodePRs/PR-was-node-suite-comfyui-c77790a2: An extensive ...",
+      "url": "https://github.com/ComfyNodePRs/PR-was-node-suite-comfyui-c77790a2",
+      "snippet": "A node suite for ComfyUI with many new nodes, such as image processing, text processing, and more."
+    },
+    {
+      "title": "AI Model Integration Nodes | ltdrdata/was-node-suite-comfyui | DeepWiki",
+      "url": "https://deepwiki.com/ltdrdata/was-node-suite-comfyui/3.3-ai-model-integration-nodes",
+      "snippet": "AI Model Integration Nodes Relevant source files This document covers the AI model integration capabilities within WAS Node Suite, focusing on the nodes that load, configure, and utilize advanced machine learning models for computer vision tasks."
+    },
+    {
+      "title": "WAS Node Suite (Revised) - registry.comfy.org",
+      "url": "https://registry.comfy.org/nodes/was-ns",
+      "snippet": "A massive node pack consisting of over 200 nodes, including image processing, masking, text handling, and arithmetic operations. NOTE: A replacement node pack provided for existing users following the retirement of the original author of the widely used WAS Node Suite."
+    }
+  ]
+}

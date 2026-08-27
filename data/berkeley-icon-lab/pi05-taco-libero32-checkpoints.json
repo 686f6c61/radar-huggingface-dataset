@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "Berkeley-ICON-Lab/pi05-taco-libero32-checkpoints",
+  "slug": "berkeley-icon-lab-pi05-taco-libero32-checkpoints",
+  "author": "Berkeley-ICON-Lab",
+  "url": "https://huggingface.co/Berkeley-ICON-Lab/pi05-taco-libero32-checkpoints",
+  "created_at": "2026-08-27T06:53:52.000Z",
+  "updated_at": "2026-08-27T07:03:43.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "robotics",
+  "library": "jax",
+  "languages": [],
+  "tags": [
+    "jax",
+    "robotics",
+    "continual-learning",
+    "libero",
+    "pi0.5",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 183520856180,
+  "storage_human": "183.5 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "LLM Leaderboard 2026: Compare 300+ Top AI Models by Intelligence, Speed ...",
+      "url": "https://llm-stats.com/leaderboards/llm-leaderboard",
+      "snippet": "The LLM Leaderboard — independent ranking of GPT, Claude, Gemini, Llama, DeepSeek and 300+ AI models by intelligence, speed and price. Filter by provider, license, modality and context window; sort by every benchmark. Composite LLM Stats Score updated continuously from public benchmarks and live API metrics."
+    },
+    {
+      "title": "Taco | ICON Lab",
+      "url": "https://iconlab.negarmehr.com/news/2026-4-29-TACO/",
+      "snippet": "Our paper titled \" TACO: Temporal Consensus Optimization for Continual Neural Mapping \" has been accepted to the Robotics: Science and Systems (RSS) 2026!"
+    },
+    {
+      "title": "LIBERO · Hugging Face",
+      "url": "https://huggingface.co/docs/lerobot/libero",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Google Colab",
+      "url": "https://colab.research.google.com/",
+      "snippet": "Colab now supports Nvidia RTX Pro 6000 Blackwell Server Edition GPUs on G4 machines for Colab Pro+ subscribers. Upgrade to Pro+."
+    },
+    {
+      "title": "lerobot/pi05_libero_base · Hugging Face",
+      "url": "https://huggingface.co/lerobot/pi05_libero_base",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    }
+  ]
+}

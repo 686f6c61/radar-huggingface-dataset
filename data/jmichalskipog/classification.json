@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "jmichalskipog/classification",
+  "slug": "jmichalskipog-classification",
+  "author": "jmichalskipog",
+  "url": "https://huggingface.co/jmichalskipog/classification",
+  "created_at": "2026-08-27T11:32:11.000Z",
+  "updated_at": "2026-08-27T11:32:20.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "dino",
+    "pytorch",
+    "classification",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 24832,
+  "parameters_human": "24832",
+  "storage_bytes": 99808,
+  "storage_human": "99808 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "jmichalskipog (Jan Michalski) - Hugging Face",
+      "url": "https://huggingface.co/jmichalskipog",
+      "snippet": "AI & ML interests ... Recent Activity updated a model about 6 hours ago ... published a model about 6 hours ago"
+    },
+    {
+      "title": "jmichalskipog (Jan Michalski) - Hugging Face",
+      "url": "https://huggingface.co/jmichalskipog/datasets",
+      "snippet": "User profile of Jan Michalski on Hugging Face"
+    },
+    {
+      "title": "Top Machine Learning Classification Algorithms - GeeksforGeeks",
+      "url": "https://www.geeksforgeeks.org/machine-learning/top-machine-learning-algorithms-for-classification/",
+      "snippet": "Machine learning classification algorithms are essential tools used to categorize data into predefined classes based on learned patterns. From simple linear models to advanced neural networks, these algorithms are used in applications like spam detection, image recognition, sentiment analysis and medical diagnosis."
+    },
+    {
+      "title": "Image classification - TensorFlow Core",
+      "url": "https://www.tensorflow.org/tutorials/images/classification",
+      "snippet": "This tutorial showed how to train a model for image classification, test it, convert it to the TensorFlow Lite format for on-device applications (such as an image classification app), and perform inference with the TensorFlow Lite model with the Python API."
+    },
+    {
+      "title": "classification-model · GitHub Topics · GitHub",
+      "url": "https://github.com/topics/classification-model",
+      "snippet": "ai classification-model responsible-ai generation-models aigc Updated on Nov 8, 2023"
+    }
+  ]
+}

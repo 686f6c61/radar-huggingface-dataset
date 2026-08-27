@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "mradermacher/Orion-26B-A4B-v1-GGUF",
+  "slug": "mradermacher-orion-26b-a4b-v1-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/Orion-26B-A4B-v1-GGUF",
+  "created_at": "2026-08-27T07:50:23.000Z",
+  "updated_at": "2026-08-27T08:07:05.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 25233142046,
+  "parameters_human": "25.23B",
+  "storage_bytes": 116878931872,
+  "storage_human": "116.9 GB",
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "BeaverAI/Orion-26B-A4B-v1a-GGUF · Hugging Face",
+      "url": "https://huggingface.co/BeaverAI/Orion-26B-A4B-v1a-GGUF",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "mradermacher/gemma-4-26B-A4B-it-heretic-GGUF · Hugging Face",
+      "url": "https://huggingface.co/mradermacher/gemma-4-26B-A4B-it-heretic-GGUF",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "gemma-4-26B-A4B-it-heretic-GGUF: Text-to-Text model — overview, use ...",
+      "url": "https://www.aimodels.fyi/models/huggingFace/gemma-4-26b-a4b-it-heretic-gguf-mradermacher",
+      "snippet": "Overview gemma-4-26B-A4B-it-heretic-GGUF is a static quantized version of the Gemma 4 26B model from mradermacher, distributed in GGUF format for CPU and low-VRAM inference. The original base model is a 26-billion parameter instruction-tuned variant designed for conversational and general text generation tasks. This quantized release prioritizes accessibility by offering 11 different ..."
+    },
+    {
+      "title": "google/gemma-4-26b-a4b • LM Studio",
+      "url": "https://lmstudio.ai/models/google/gemma-4-26b-a4b",
+      "snippet": "Gemma 4 is the latest on-device model family from Google. This is the 26B (active 4B) MoE version. Supports vision and reasoning."
+    },
+    {
+      "title": "Orion-26B-A4B-v1f-GGUF by BeaverAI | AI Market Cap",
+      "url": "https://aimarketcap.tech/models/beaverai-orion-26b-a4b-v1f-gguf",
+      "snippet": "Explore Orion-26B-A4B-v1f-GGUF by BeaverAI — benchmark coverage where available, pricing, and comparisons on AI Market Cap."
+    }
+  ]
+}

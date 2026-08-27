@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "Yuichiron/act_throw_eraser_30fps_30ep_v1",
+  "slug": "yuichiron-act_throw_eraser_30fps_30ep_v1",
+  "author": "Yuichiron",
+  "url": "https://huggingface.co/Yuichiron/act_throw_eraser_30fps_30ep_v1",
+  "created_at": "2026-08-27T09:20:35.000Z",
+  "updated_at": "2026-08-27T09:20:53.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "act",
+    "robotics",
+    "dataset:Yuichiron/so101_throw_eraser_30fps_30ep_20260827_20260827_172338",
+    "arxiv:2304.13705",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 51668614,
+  "parameters_human": "51.7M",
+  "storage_bytes": 206712864,
+  "storage_human": "207 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Yuichiron (Yuichiro Nagano) - Hugging Face",
+      "url": "https://huggingface.co/Yuichiron/datasets",
+      "snippet": "Simulated personality updated a model about 4 hours ago published a model about 4 hours ago"
+    },
+    {
+      "title": "Yuichiron (Yuichiro Nagano) - Hugging Face",
+      "url": "https://huggingface.co/Yuichiron",
+      "snippet": "Sort: Recently updated Yuichiron/act_blue_cube_v2 Robotics • 51.7M•Updated about 4 hours ago"
+    },
+    {
+      "title": "GitHub - PRITHIVSAKTHIUR/Magic_Eraser: You don&#x27;t have to worry about ...",
+      "url": "https://github.com/PRITHIVSAKTHIUR/Magic_Eraser",
+      "snippet": "You don't have to worry about mastering photo editing techniques to remove an object from your photo. Simply mark over the areas you want to erase, and our AI will take care of the rest. - PRIT..."
+    },
+    {
+      "title": "100% Free Magic Eraser: AI Object Remover Online (No Sign-up)",
+      "url": "https://aifaceswap.io/ai-magic-eraser/",
+      "snippet": "Free online AI Magic Eraser tool. Remove people, watermarks, logos, and text effortlessly from photo with just one click. 100% clean & no Limits."
+    },
+    {
+      "title": "DiffuEraser: A Diffusion Model for Video Inpainting - GitHub",
+      "url": "https://github.com/lixiaowen-xw/DiffuEraser",
+      "snippet": "DiffuEraser is a diffusion model for video inpainting, which outperforms state-of-the-art model Propainter in both content completeness and temporal consistency while maintaining acceptable efficiency. If you find our work helpful, please help star this repo🌟. Thanks! 😃 If you&#x27;re using DiffuEraser in your applications, tools, or creative ideas, feel free to share the URL on Discussions."
+    }
+  ]
+}

@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "pravsels/act_busybox_push_green_button",
+  "slug": "pravsels-act_busybox_push_green_button",
+  "author": "pravsels",
+  "url": "https://huggingface.co/pravsels/act_busybox_push_green_button",
+  "created_at": "2026-08-27T06:46:09.000Z",
+  "updated_at": "2026-08-27T06:46:16.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "act",
+    "robotics",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 51596934,
+  "parameters_human": "51.6M",
+  "storage_bytes": 206430072,
+  "storage_human": "206 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "pravsels/act_busybox_buttons_25k · Hugging Face",
+      "url": "https://huggingface.co/pravsels/act_busybox_buttons_25k",
+      "snippet": "act_busybox_buttons_25k LeRobot ACT policy for busybox_buttons on SO101 data."
+    },
+    {
+      "title": "pravsels/busybox_buttons_bimanual · Datasets at Hugging Face",
+      "url": "https://huggingface.co/datasets/pravsels/busybox_buttons_bimanual",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "pravsels (Praveen Selvaraj) / Repositories · GitHub",
+      "url": "https://github.com/pravsels?tab=repositories",
+      "snippet": "Co-Founder @Safe-Robotics . pravsels has 93 repositories available. Follow their code on GitHub."
+    },
+    {
+      "title": "busybox_buttons_bimanual - Physical AI Dataset | Claru",
+      "url": "https://claru.ai/datasets/pravsels-busybox-buttons-bimanual",
+      "snippet": "Bimanual SO-101 dataset where the robot presses a green button with the left arm and then a yellow button with the right arm. Contains 50 episodes of button-press manipulation tasks."
+    },
+    {
+      "title": "lerobot_policy_molmoact2/configs/busybox_buttons.yaml at main ... - GitHub",
+      "url": "https://github.com/pravsels/lerobot_policy_molmoact2/blob/main/configs/busybox_buttons.yaml",
+      "snippet": "MolmoAct2 LeRobot fine-tuning configs, scripts, and run logs - pravsels/lerobot_policy_molmoact2"
+    }
+  ]
+}

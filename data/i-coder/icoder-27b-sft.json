@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "i-Coder/iCoder-27B-SFT",
+  "slug": "i-coder-icoder-27b-sft",
+  "author": "i-Coder",
+  "url": "https://huggingface.co/i-Coder/iCoder-27B-SFT",
+  "created_at": "2026-08-25T07:10:57.000Z",
+  "updated_at": "2026-08-27T09:20:13.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_5",
+    "image-text-to-text",
+    "code",
+    "rtl",
+    "verilog",
+    "gpu-kernel",
+    "triton",
+    "text-generation",
+    "conversational",
+    "base_model:Qwen/Qwen3.6-27B",
+    "base_model:finetune:Qwen/Qwen3.6-27B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 27356728560,
+  "parameters_human": "27.36B",
+  "storage_bytes": 54733595533,
+  "storage_human": "54.7 GB",
+  "base_model": "Qwen/Qwen3.6-27B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "huihui_ai/Qwen3.8-abliterated",
+      "url": "https://ollama.com/huihui_ai/Qwen3.8-abliterated",
+      "snippet": "Qwen3.8 delivers substantial gains across coding, professional work, research, and long-horizon agentic tasks."
+    },
+    {
+      "title": "GitHub - deepseek-ai/DeepSeek-Coder: DeepSeek Coder: Let the Code Write ...",
+      "url": "https://github.com/deepseek-ai/deepseek-coder",
+      "snippet": "Each model is pre-trained on project-level code corpus by employing a window size of 16K and an extra fill-in-the-blank task, to support project-level code completion and infilling. For coding capabilities, DeepSeek Coder achieves state-of-the-art performance among open-source code models on multiple programming languages and various benchmarks."
+    },
+    {
+      "title": "IC Coder | AI 原生 FPGA 研发基础设施",
+      "url": "https://www.iccoder.com/",
+      "snippet": "新 IC Coder 2.0 全面开放!支持个人订阅，支持企业私有化部署 Agentic AI Platform for FPGA R&D AI 原生 FPGA 研发基础设施 让 AI 从\"会回答\"升级为\"会执行\"。IC Coder 面向真实 FPGA 研发流程，连接需求理解、RTL 生成、TestBench、仿真反馈、问题分析、修复迭代和工程报告，帮助团队更快获得可验证、可复用的 ..."
+    },
+    {
+      "title": "Qwen 3.5 to 3.8: Alibaba Open-Weights Guide (2026)",
+      "url": "https://codersera.com/blog/qwen-3-5-complete-guide-2026/",
+      "snippet": "Full breakdown in our Qwen3.8-27B complete guide; if you are weighing it as a local Claude Code replacement, see the dedicated guide and the broader AI coding agents complete guide. For the deep-dive on the rest of the Qwen 3.5 family and how to deploy it, read on. Last updated: August 18, 2026."
+    },
+    {
+      "title": "Models - Hugging Face",
+      "url": "https://huggingface.co/models",
+      "snippet": "Explore machine learning models. DavidAU/Qwen3.8-27B-Cold-Fusion-GAIN-V1.1-NM-DAU-NEO-MAX-MTP-GGUF"
+    }
+  ]
+}

@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "qbz506/kinetic-eqlm-121m-babylm",
+  "slug": "qbz506-kinetic-eqlm-121m-babylm",
+  "author": "qbz506",
+  "url": "https://huggingface.co/qbz506/kinetic-eqlm-121m-babylm",
+  "created_at": "2026-08-27T01:49:18.000Z",
+  "updated_at": "2026-08-27T01:50:13.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 482926309,
+  "storage_human": "483 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "qbz506 (SS) - Hugging Face",
+      "url": "https://huggingface.co/qbz506/datasets",
+      "snippet": "Sort: Recently updated. qbz506/psalm-corpora. Viewer • Updated about 4 hours ago • 427k. qbz506/pramana-nyaya-stage1. Viewer • Updated 5 days ago • 55 • 44 • 1"
+    },
+    {
+      "title": "Models - Hugging Face",
+      "url": "https://huggingface.co/models?other=verified-build",
+      "snippet": "Active filters: verified-build. Clear all. qbz506/loom-clinic-llama-3-2-1b-instruct. Updated 1 day ago. qbz506/loom-desk-llama-3-2-1b-instruct"
+    },
+    {
+      "title": "AI Token Calculator | Estimate GPT, Opus, and Gemini Model Costs",
+      "url": "https://tokencalculator.ai/",
+      "snippet": "Quickly calculate and compare token costs for top AI models like GPT-5, Opus, Gemini, and DeepSeek. Enter your text to see real-time pricing and choose the most cost-efficient option."
+    },
+    {
+      "title": "Empower QLM Software | QMS Software | Product Quality | RGBSI",
+      "url": "https://www.rgbsi.com/qlm/empower-qlm/",
+      "snippet": "Empower QLM software to manage product quality, reliability, and risk with total quality management from product conception through warranty."
+    },
+    {
+      "title": "GitHub - babylm-org/babylm-eval: Evaluation for BabyLM 2026",
+      "url": "https://github.com/babylm-org/babylm-eval",
+      "snippet": "Evaluation for BabyLM 2026. Contribute to babylm-org/babylm-eval development by creating an account on GitHub."
+    }
+  ]
+}

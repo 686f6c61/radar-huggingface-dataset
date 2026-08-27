@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "Urdatorn/olmo1b-ancient-greek",
+  "slug": "urdatorn-olmo1b-ancient-greek",
+  "author": "Urdatorn",
+  "url": "https://huggingface.co/Urdatorn/olmo1b-ancient-greek",
+  "created_at": "2026-08-27T08:58:18.000Z",
+  "updated_at": "2026-08-27T08:58:44.000Z",
+  "license": "cc-by-sa-4.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "grc"
+  ],
+  "tags": [
+    "safetensors",
+    "olmo",
+    "ancient-greek",
+    "continued-pretraining",
+    "grc",
+    "dataset:Ericu950/AncientGreek",
+    "base_model:allenai/OLMo-1B-hf",
+    "base_model:finetune:allenai/OLMo-1B-hf",
+    "license:cc-by-sa-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1176764416,
+  "parameters_human": "1.18B",
+  "storage_bytes": 2353541856,
+  "storage_human": "2.4 GB",
+  "base_model": "allenai/OLMo-1B-hf",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Urdatorn (Albin Thörn Cleland) - Hugging Face",
+      "url": "https://huggingface.co/Urdatorn",
+      "snippet": "Machine learning for Ancient Greek. Particular research topics include prosody, metre, sentiment and semantics."
+    },
+    {
+      "title": "Urdatorn (Albin Thörn Cleland) - Hugging Face",
+      "url": "https://huggingface.co/Urdatorn/datasets",
+      "snippet": "Machine learning for Ancient Greek. Particular research topics include prosody, metre and author attribution."
+    },
+    {
+      "title": "GitHub - Urdatorn/Urdatorn",
+      "url": "https://github.com/Urdatorn/Urdatorn",
+      "snippet": "Featured Work Recent Hugging Face Model: SyllaMoBert-grc-macronizer-v1 A BERT-based model for Ancient Greek syllabification and macronization. Latest GitHub Project: aristophanis-cantica Digital analysis of Aristophanes&#x27; cantica."
+    },
+    {
+      "title": "Ancient-greece 3D models - Sketchfab",
+      "url": "https://sketchfab.com/tags/ancient-greece",
+      "snippet": "Ancient-greece 3D models ready to view and download for free."
+    },
+    {
+      "title": "Greeksculpture 3D models - Sketchfab",
+      "url": "https://sketchfab.com/tags/greeksculpture",
+      "snippet": "Greeksculpture 3D models ready to view and download for free."
+    }
+  ]
+}

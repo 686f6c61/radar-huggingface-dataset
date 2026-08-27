@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "OpenExploer/bevfusion_pointpillar_henet_multisensor_multitask",
+  "slug": "openexploer-bevfusion_pointpillar_henet_multisensor_multitask",
+  "author": "OpenExploer",
+  "url": "https://huggingface.co/OpenExploer/bevfusion_pointpillar_henet_multisensor_multitask",
+  "created_at": "2026-08-27T06:17:13.000Z",
+  "updated_at": "2026-08-27T06:24:29.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "heal",
+    "horizon",
+    "bev",
+    "lidar",
+    "arxiv:2205.13542",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1039011686,
+  "storage_human": "1.0 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "# Lidar Fusion MultiTask Model Training - doc.oe.horizon.auto",
+      "url": "https://doc.oe.horizon.auto/3.8.1/en/guide/reference_algorithm/examples/lidar_fusion.html",
+      "snippet": "bevfusion_pointpillar_henet_multisensor_multitask_nuscenes is a multimodal, multi-task autonomous driving perception model. It takes inputs from two modalities, camera and lidar, and outputs dynamic object 3D bounding boxes and 3D occupancy grids."
+    },
+    {
+      "title": "GitHub - mit-han-lab/bevfusion: [ICRA&#x27;23] BEVFusion: Multi-Task Multi ...",
+      "url": "https://github.com/mit-han-lab/bevfusion",
+      "snippet": "In this paper, we break this deeply-rooted convention with BEVFusion, an efficient and generic multi-task multi-sensor fusion framework. It unifies multi-modal features in the shared bird&#x27;s-eye view (BEV) representation space, which nicely preserves both geometric and semantic information."
+    },
+    {
+      "title": "[2205.13542] BEVFusion: Multi-Task Multi-Sensor Fusion with Unified ...",
+      "url": "https://arxiv.org/abs/2205.13542",
+      "snippet": "Multi-sensor fusion is essential for an accurate and reliable autonomous driving system. Recent approaches are based on point-level fusion: augmenting the LiDAR point cloud with camera features. However, the camera-to-LiDAR projection throws away the semantic density of camera features, hindering the effectiveness of such methods, especially for semantic-oriented tasks (such as 3D scene ..."
+    },
+    {
+      "title": "GitHub - aqsc/bevfusion_e: BEVFusion: Multi-Task Multi-Sensor Fusion ...",
+      "url": "https://github.com/aqsc/bevfusion_e",
+      "snippet": "In this paper, we break this deeply-rooted convention with BEVFusion, an efficient and generic multi-task multi-sensor fusion framework. It unifies multi-modal features in the shared bird&#x27;s-eye view (BEV) representation space, which nicely preserves both geometric and semantic information."
+    },
+    {
+      "title": "BEVFusion: Multi-Task Multi-Sensor Fusion - arXiv.org",
+      "url": "https://arxiv.org/html/2205.13542v3",
+      "snippet": "In this paper, we propose BEVFusion, an efficient and generic multi-task multi-sensor fusion framework. It unifies multi-modal features in the shared bird&#x27;s-eye view (BEV) representation space, which nicely preserves both geometric and semantic information."
+    }
+  ]
+}

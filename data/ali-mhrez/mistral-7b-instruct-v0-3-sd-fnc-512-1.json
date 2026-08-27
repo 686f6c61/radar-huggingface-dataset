@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "Ali-Mhrez/Mistral-7B-Instruct-v0.3-SD-FNC-512-1",
+  "slug": "ali-mhrez-mistral-7b-instruct-v0-3-sd-fnc-512-1",
+  "author": "Ali-Mhrez",
+  "url": "https://huggingface.co/Ali-Mhrez/Mistral-7B-Instruct-v0.3-SD-FNC-512-1",
+  "created_at": "2026-08-26T11:40:48.000Z",
+  "updated_at": "2026-08-27T08:40:14.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "tensorboard",
+    "safetensors",
+    "generated_from_trainer",
+    "sft",
+    "trl",
+    "base_model:mistralai/Mistral-7B-Instruct-v0.3",
+    "base_model:finetune:mistralai/Mistral-7B-Instruct-v0.3",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 7556835746,
+  "storage_human": "7.6 GB",
+  "base_model": "mistralai/Mistral-7B-Instruct-v0.3",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Ali-Mhrez/Mistral-7B-Instruct-v0.3-SD-FNC-512-1 · Hugging Face",
+      "url": "https://huggingface.co/Ali-Mhrez/Mistral-7B-Instruct-v0.3-SD-FNC-512-1",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Ali-Mhrez/Mistral-7B-Instruct-v0.3-SD-FNC-512-2 · Hugging Face",
+      "url": "https://huggingface.co/Ali-Mhrez/Mistral-7B-Instruct-v0.3-SD-FNC-512-2",
+      "snippet": "Instructions to use Ali-Mhrez/Mistral-7B-Instruct-v0.3-SD-FNC-512-2 with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "GitHub - inferless/mistral-7b-instruct-v0.3: 7B model fine-tuned for ...",
+      "url": "https://github.com/inferless/Mistral-7B-Instruct-v0.3",
+      "snippet": "Mistral-7B-Instruct-v0.3 is an instruction-tuned version of Mistral AI&#x27;s 7-billion-parameter language model, Mistral-7B-v0.3. This model has been fine-tuned to follow instructions, enhancing its performance in various tasks. Key improvements in this version include an expanded vocabulary of 32,768 tokens, support for the v3 tokenizer, and the ability to handle function calling. These ..."
+    },
+    {
+      "title": "ai-hub-models/src/qai_hub_models/models/mistral_7b_instruct_v0_3/README ...",
+      "url": "https://github.com/qualcomm/ai-hub-models/blob/main/src/qai_hub_models/models/mistral_7b_instruct_v0_3/README.md",
+      "snippet": "Mistral AI&#x27;s first open source dense model released September 2023. Mistral-7B-Instruct-v0.3 Large Language Model (LLM) is an instruct fine‑tuned version of the Mistral‑7B‑v0.3. It has an extended vocabulary and supports the v3 Tokenizer, enhancing language understanding and generation. Additionally function calling is enabled. This is based on the implementation of Mistral-7B-Instruct ..."
+    },
+    {
+      "title": "AI Model Catalog | Microsoft Foundry Models",
+      "url": "https://ai.azure.com/catalog/models/Mistral-7B-Instruct-v0.3-NIM-microservice",
+      "snippet": "Mistral-7B-Instruct-v0.3 is a language model that can follow instructions, complete requests, and generate creative text formats. It is an instruct version of the Mistral-7B-v0.3 generative text model fine-tuned using a variety of publicly available conversation datasets."
+    }
+  ]
+}

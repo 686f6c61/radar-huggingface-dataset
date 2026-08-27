@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "Nicho-lasbk/multitask-tutorial",
+  "slug": "nicho-lasbk-multitask-tutorial",
+  "author": "Nicho-lasbk",
+  "url": "https://huggingface.co/Nicho-lasbk/multitask-tutorial",
+  "created_at": "2026-08-27T01:56:15.000Z",
+  "updated_at": "2026-08-27T01:56:24.000Z",
+  "license": "bsd-3-clause",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "tiny_transformer",
+    "pytorch",
+    "tiny-transformer",
+    "multitask",
+    "license:bsd-3-clause",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 16576,
+  "parameters_human": "16576",
+  "storage_bytes": 66784,
+  "storage_human": "66784 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Nicho-lasbk (胡涛) - Hugging Face",
+      "url": "https://huggingface.co/Nicho-lasbk/models",
+      "snippet": "Data, models, and a bit of chaos."
+    },
+    {
+      "title": "arXiv.org e-Print archive",
+      "url": "https://arxiv.org/pdf/2404.18961",
+      "snippet": "arXiv.org e-Print archive"
+    },
+    {
+      "title": "How to Create an AI OnlyFans Influencer with Claude (Step-by-Step)",
+      "url": "https://www.youtube.com/watch?v=iFMWH1pX7IA",
+      "snippet": "I&#x27;ll show you step-by-step: • How to create a realistic AI OnlyFans model • How to use Claude to generate content, prompts, and strategy • How to grow your AI influencer on social media ..."
+    },
+    {
+      "title": "Multi-Task Learning(MTL) for Deep Learning - GeeksforGeeks",
+      "url": "https://www.geeksforgeeks.org/deep-learning/multi-task-learningmtl-for-deep-learning/",
+      "snippet": "Multi-Task Learning (MTL) is a machine learning approach where a single model learns multiple related tasks simultaneously using shared representations, improving generalization and reducing overfitting."
+    },
+    {
+      "title": "GitHub - dingwoai/Multi-Task-Learning: A list of papers, codes and ...",
+      "url": "https://github.com/dingwoai/Multi-Task-Learning",
+      "snippet": "MTL model with random weights sampled from a distribution. [arXiv 2022] In Defense of the Unitary Scalarization for Deep Multi-Task Learning. paper None of the ad-hoc multi-task optimization algorithms consistently outperform unitary scalarization, where training simply minimizes the sum of the task losses."
+    }
+  ]
+}

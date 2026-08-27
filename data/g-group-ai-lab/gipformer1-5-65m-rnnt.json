@@ -1,0 +1,79 @@
+{
+  "schema": 1,
+  "id": "g-group-ai-lab/gipformer1.5-65M-rnnt",
+  "slug": "g-group-ai-lab-gipformer1-5-65m-rnnt",
+  "author": "g-group-ai-lab",
+  "url": "https://huggingface.co/g-group-ai-lab/gipformer1.5-65M-rnnt",
+  "created_at": "2026-08-21T08:49:50.000Z",
+  "updated_at": "2026-08-26T03:59:49.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "automatic-speech-recognition",
+  "library": "onnxruntime",
+  "languages": [
+    "vi"
+  ],
+  "tags": [
+    "onnxruntime",
+    "onnx",
+    "zipformer-transducer",
+    "automatic-speech-recognition",
+    "gipformer",
+    "speech-to-text",
+    "vietnamese",
+    "rnnt",
+    "rnn-transducer",
+    "zipformer",
+    "int8",
+    "quantized",
+    "streaming",
+    "edge-ai",
+    "edge-device",
+    "vi",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 8,
+  "downloads_30d": 26,
+  "trending_score": 8,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 622857470,
+  "storage_human": "623 MB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - ggroup-ai-lab/gipformer: Efficient Vietnamese Speech ...",
+      "url": "https://github.com/ggroup-ai-lab/gipformer",
+      "snippet": "Built-in data privacy — By supporting full local execution, the model ensures sensitive audio data is processed securely on-device, eliminating the need for third-party cloud services. gipformer-65M-rnnt is based on Zipformer Transducer architecture."
+    },
+    {
+      "title": "g-group-ai-lab/gipformer1.5-65M-rnnt · Hugging Face",
+      "url": "https://huggingface.co/g-group-ai-lab/gipformer1.5-65M-rnnt",
+      "snippet": "Built-in data privacy — By supporting full local execution, the model ensures sensitive audio data is processed securely on-device, eliminating the need for third-party cloud services. gipformer1.5-65M-rnnt is based on the Zipformer Transducer architecture."
+    },
+    {
+      "title": "g-group-ai-lab/gipformer-65M-rnnt · Hugging Face",
+      "url": "https://huggingface.co/g-group-ai-lab/gipformer-65M-rnnt",
+      "snippet": "AI Skills: clawhub.ai/ai-ggroup/gipformer Usage See the Quick Start guide for detailed usage instructions. Citation ... License This model is released under the MIT License. Acknowledgments Developed by G-Group AI Lab. For questions, issues, or collaboration inquiries, please visit our HuggingFace organization page."
+    },
+    {
+      "title": "Models - Hugging Face",
+      "url": "https://d6108366.hf-mirror.com/models?other=rnn-transducer",
+      "snippet": "g-group-ai-lab/gipformer1.5-65M-rnnt Automatic Speech Recognition •Updated 1 day ago• 8"
+    },
+    {
+      "title": "g-group-ai-lab/gipformer-65M-rnnt - ONNX 模型库",
+      "url": "https://onnx.bimant.com/models/g-group-ai-lab/gipformer-65M-rnnt",
+      "snippet": "创建时间: 2026-03-12 13:36:55+00:00 更新时间: 2026-03-17 12:27:57+00:00 在 Hugging Face 上查看"
+    }
+  ]
+}

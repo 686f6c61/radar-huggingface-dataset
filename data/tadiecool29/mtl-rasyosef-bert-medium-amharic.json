@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "tadiecool29/MTL-rasyosef-bert-medium-amharic",
+  "slug": "tadiecool29-mtl-rasyosef-bert-medium-amharic",
+  "author": "tadiecool29",
+  "url": "https://huggingface.co/tadiecool29/MTL-rasyosef-bert-medium-amharic",
+  "created_at": "2026-08-27T08:57:23.000Z",
+  "updated_at": "2026-08-27T08:57:34.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "generated_from_trainer",
+    "base_model:rasyosef/bert-medium-amharic",
+    "base_model:finetune:rasyosef/bert-medium-amharic",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 40429575,
+  "parameters_human": "40.4M",
+  "storage_bytes": 161740045,
+  "storage_human": "162 MB",
+  "base_model": "rasyosef/bert-medium-amharic",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "rasyosef/bert-medium-amharic · Hugging Face",
+      "url": "https://huggingface.co/rasyosef/bert-medium-amharic",
+      "snippet": "bert-medium-amharic This model has the same architecture as bert-medium and was pretrained from scratch using the Amharic subsets of the oscar, mc4, and amharic-sentences-corpus datasets, on a total of 290 Million tokens. The tokenizer was trained from scratch on the same text corpus, and had a vocabulary size of 28k."
+    },
+    {
+      "title": "AI Model Catalog | Microsoft Foundry Models",
+      "url": "https://ai.azure.com/catalog/models/rasyosef-bert-medium-amharic",
+      "snippet": "rasyosef/bert-medium-amharic powered by Hugging Face Inference Toolkit Original Model Card fill-mask Task on Hugging Face Send Request You can use cURL or any REST Client to send a request to the AzureML endpoint with your AzureML token."
+    },
+    {
+      "title": "rasyosef/bert-medium-amharic-finetuned-sentiment · Hugging Face",
+      "url": "https://huggingface.co/rasyosef/bert-medium-amharic-finetuned-sentiment",
+      "snippet": "This model is a fine-tuned version of bert-medium-amharic on the amharic-sentiment dataset for sentiment classification. It achieves the following results on the evaluation set:"
+    },
+    {
+      "title": "GitHub - rasyosef/bert-amharic: BERT transformer models pretrained on ...",
+      "url": "https://github.com/rasyosef/bert-amharic",
+      "snippet": "This repo contains 4 BERT transformer models pretrained on 290 million tokens of Amharic text. All four models have a context length of 512 tokens and the same tokenizer with a vocabulary size of 28672 tokens. The size of these models ranges from 4 Million to 40 Million parameters."
+    },
+    {
+      "title": "Bert-medium-amharic: An Open-source Amharic Model - Achieving Efficient ...",
+      "url": "https://model.aibase.com/models/details/1924737253758996480",
+      "snippet": "A pre-trained Amharic language model based on the bert-medium architecture, with 40.5 million parameters trained on 290 million tokens, achieving performance comparable to larger multilingual models."
+    }
+  ]
+}

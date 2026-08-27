@@ -5,16 +5,16 @@
   "author": "kerasformers",
   "url": "https://huggingface.co/kerasformers/qwen3-vl-4b-instruct",
   "created_at": "2026-07-26T04:42:40.000Z",
-  "updated_at": "2026-08-26T03:08:02.000Z",
+  "updated_at": "2026-08-26T21:57:27.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "image-text-to-text",
-  "library": "kerasformers",
+  "library": "zeromodels",
   "languages": [
     "en"
   ],
   "tags": [
-    "kerasformers",
+    "zeromodels",
     "keras",
     "qwen3_vl",
     "qwen3-vl",

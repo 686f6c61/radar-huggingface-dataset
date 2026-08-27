@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "OpenExploer/pointpillars",
+  "slug": "openexploer-pointpillars",
+  "author": "OpenExploer",
+  "url": "https://huggingface.co/OpenExploer/pointpillars",
+  "created_at": "2026-08-27T07:49:31.000Z",
+  "updated_at": "2026-08-27T07:52:07.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "heal",
+    "horizon",
+    "lidar",
+    "arxiv:1812.05784",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 193062529,
+  "storage_human": "193 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - m-mcninch/pointpillars: A PyTorch implementation of ...",
+      "url": "https://github.com/m-mcninch/pointpillars",
+      "snippet": "A PyTorch implementation of PointPillars object detection from point clouds (Lang et al). Includes full training, evaluation code, and a pretrained checkpoint. Written for Waymo Open Dataset v2. -..."
+    },
+    {
+      "title": "Pointpillars - Pointpillars - 2.5 English - UG1354",
+      "url": "https://docs.amd.com/r/2.5-English/ug1354-xilinx-ai-sdk/Pointpillars",
+      "snippet": "The pointpillars model is a novel deep network and encoder that can be trained end-to-end on LiDAR point clouds. It offers the best architecture for 3D object detection from LiDAR."
+    },
+    {
+      "title": "GitHub - NVIDIA-AI-IOT/CUDA-PointPillars: A project demonstrating how ...",
+      "url": "https://github.com/NVIDIA-AI-IOT/CUDA-PointPillars",
+      "snippet": "A project demonstrating how to use CUDA-PointPillars to deal with cloud points data from lidar. - NVIDIA-AI-IOT/CUDA-PointPillars"
+    },
+    {
+      "title": "PointPillars — Tao Toolkit - NVIDIA Documentation Hub",
+      "url": "https://docs.nvidia.com/tao/tao-toolkit/latest/text/cv_finetuning/pytorch/point_cloud/pointpillars.html",
+      "snippet": "PointPillars # PointPillars is a model for 3D object detection in point cloud data. Unlike images, point cloud data is in-nature a collection of sparse points in 3D space. Each point cloud sample (example) is called a scene (stored as a file with .bin extension here). For each scene, it contains generally a variable number of points in 3D Euclidean space. The shape of the data in a single ..."
+    },
+    {
+      "title": "10.1.4.10. PointPillars Detection Model Training — Horizon Open Explorer",
+      "url": "https://developer.d-robotics.cc/api/v1/fileData/horizon_j5_open_explorer_en_doc/hat/source/examples/pointpillars.html",
+      "snippet": "10.1.4.10. PointPillars Detection Model Training This tutorial focuses on how to use HAT to train a PointPillars model on the radar point cloud dataset KITTI-3DObject from scratch, including floating-point, quantitative, and fixed-point models. 10.1.4.10.1. Dataset Preparation Before starting to train the model, the first step is to prepare the dataset, download the 3DObject dataset. The ..."
+    }
+  ]
+}

@@ -22,12 +22,12 @@
     "text-to-audio",
     "region:us"
   ],
-  "likes": 1262,
-  "downloads_30d": 19501,
-  "trending_score": 196,
+  "likes": 1269,
+  "downloads_30d": 19726,
+  "trending_score": 174,
   "parameters": 2431905920,
   "parameters_human": "2.43B",
-  "storage_bytes": 67213684876,
+  "storage_bytes": 67214176196,
   "storage_human": "67.2 GB",
   "base_model": null,
   "formats": [

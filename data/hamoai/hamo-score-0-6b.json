@@ -5,7 +5,7 @@
   "author": "HamoAI",
   "url": "https://huggingface.co/HamoAI/hamo-score-0.6b",
   "created_at": "2026-08-05T16:51:05.000Z",
-  "updated_at": "2026-08-24T01:32:15.000Z",
+  "updated_at": "2026-08-26T11:51:57.000Z",
   "license": "hamo-rail-s-1.0",
   "license_family": "unknown",
   "pipeline_tag": "text-generation",

@@ -1,0 +1,77 @@
+{
+  "schema": 1,
+  "id": "youngseok12/AX-3.1-Light-sft_v3_1_A_control",
+  "slug": "youngseok12-ax-3-1-light-sft_v3_1_a_control",
+  "author": "youngseok12",
+  "url": "https://huggingface.co/youngseok12/AX-3.1-Light-sft_v3_1_A_control",
+  "created_at": "2026-08-27T07:46:34.000Z",
+  "updated_at": "2026-08-27T07:47:57.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "ko"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "llama",
+    "text-generation",
+    "korean",
+    "sft",
+    "lora-merged",
+    "k-ai-leaderboard",
+    "conversational",
+    "ko",
+    "base_model:skt/A.X-3.1-Light",
+    "base_model:finetune:skt/A.X-3.1-Light",
+    "license:apache-2.0",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 7264800768,
+  "parameters_human": "7.26B",
+  "storage_bytes": 14529635608,
+  "storage_human": "14.5 GB",
+  "base_model": "skt/A.X-3.1-Light",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "youngseok12/AX-3.1-Light-sft_v3_0 · Hugging Face",
+      "url": "https://huggingface.co/youngseok12/AX-3.1-Light-sft_v3_0",
+      "snippet": "youngseok12 / AX-3.1-Light-sft_v3_0 like 0 Text Generation Transformers Safetensors Korean llama korean sft lora-merged k-ai-leaderboard conversational text-generation-inference License:apache-2.0 Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "skt/A.X-3.1-Light at main - Hugging Face",
+      "url": "https://huggingface.co/skt/A.X-3.1-Light/tree/main",
+      "snippet": "skt / A.X-3.1-Light like 18 Follow SK Telecom 188 Text Generation Transformers Safetensors English Korean llama conversational Eval Results text-generation-inference License:apache-2.0 Model card FilesFiles and versions Community Train Deploy Use this model main A.X-3.1-Light Ctrl+K Ctrl+K 1 contributor History:9 commits jackyoung96 Delete assets/A.X_3.1_performance_flops.png 6d81edb ..."
+    },
+    {
+      "title": "DeepSeek-V3.1 · Models · The Open-Source AI Stack",
+      "url": "https://www.open-source-ai.tech/models/deepseek-v3-1",
+      "snippet": "Hybrid V3.1 with one model serving both thinking and non-thinking modes, released August 21 2025. DeepSeek added 840B tokens of continued pretraining for long-context extension (32K and 128K phases) and shipped under MIT. Pricing update took effect September 5 2025."
+    },
+    {
+      "title": "A.X-3.1 vs deepseek-v3 — comparison, examples, use cases",
+      "url": "https://www.aimodels.fyi/models/compare/a.x-3.1-skt-vs-deepseek-v3-deepseek-ai",
+      "snippet": "A.X-4.0-Light is the lightweight variant from the A.X-4.0 family, offering significantly faster inference and lower memory requirements than A.X-3.1. If you operate edge devices, need sub-second latency, or have constrained infrastructure budgets, the Light variant is superior despite potential quality trade-offs."
+    },
+    {
+      "title": "Vyndra AI DeepSeek V3.1 | Text Models | Vyndra AI",
+      "url": "https://docs.vyndra.ai/docs/models/text-models/deepseek-v3-1",
+      "snippet": "The 32K extension phase has been increased 10-fold to 630B tokens, while the 128K extension phase has been extended by 3.3x to 209B tokens. Additionally, DeepSeek-V3.1 is trained using the UE8M0 FP8 scale data format to ensure compatibility with microscaling data formats. Workflow role: Produces text output in Agent Builder."
+    }
+  ]
+}

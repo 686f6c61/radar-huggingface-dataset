@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "krishnasanjayj/startupTN",
+  "slug": "krishnasanjayj-startuptn",
+  "author": "krishnasanjayj",
+  "url": "https://huggingface.co/krishnasanjayj/startupTN",
+  "created_at": "2026-08-27T06:31:58.000Z",
+  "updated_at": "2026-08-27T06:31:58.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "StartupTN",
+      "url": "https://www.startuptn.ai/",
+      "snippet": "StartupTN The Tamil Nadu Space Tech Fund is a ₹10 crore initiative by the Government of Tamil Nadu, implemented through TANSIM, to boost innovation and growth in the space technology sector. It offers up to ₹50 lakh in matching grants or equity to DPIIT-recognized startups with proven concepts and secured third-party funding. The fund supports areas like satellite systems, launch vehicles ..."
+    },
+    {
+      "title": "StartupTN",
+      "url": "https://startuptn.in/",
+      "snippet": "StartupTN is Tamil Nadu&#x27;s nodal agency for startups, fostering innovation, entrepreneurship, and ecosystem development to empower businesses and drive economic growth."
+    },
+    {
+      "title": "Attended Coimbatore Institute of Technology - LinkedIn",
+      "url": "https://in.linkedin.com/in/krishna-sanjay",
+      "snippet": "Attended Coimbatore Institute of Technology · Experience: StartupTN · Education: Coimbatore Institute of Technology · Location: 641029 · 500+ connections on LinkedIn. View Krishna Sanjay&#x27;s profile on LinkedIn, a professional community of 1 billion members."
+    },
+    {
+      "title": "Krish Naik - Master AI & Data Science | 1M+ Students Worldwide",
+      "url": "https://www.krishnaik.in/",
+      "snippet": "Master AI & Data Science with Krish Naik Learn from an industry expert with 13+ years of experience. Join comprehensive courses covering Machine Learning, Deep Learning, NLP, and GenAI."
+    },
+    {
+      "title": "Z.ai shares surge 8% on new AI model running only on Chinese chips - CNBC",
+      "url": "https://www.cnbc.com/2026/08/27/zai-shares-surge-new-ai-model-using-chinese-chips.html",
+      "snippet": "Z.ai&#x27;s shares rose after the company launched a new AI model that it claimed runs only on Chinese chips. It&#x27;s the latest indication of China&#x27;s efforts to ramp up homegrown computing capability ..."
+    }
+  ]
+}

@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "J-Fraudster/Qwen3.5-0.8B-W4A16-AutoRound",
+  "slug": "j-fraudster-qwen3-5-0-8b-w4a16-autoround",
+  "author": "J-Fraudster",
+  "url": "https://huggingface.co/J-Fraudster/Qwen3.5-0.8B-W4A16-AutoRound",
+  "created_at": "2026-08-27T07:40:19.000Z",
+  "updated_at": "2026-08-27T08:13:51.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "qwen3_5",
+    "quantization",
+    "auto-round",
+    "gptq",
+    "vlm",
+    "4bit",
+    "text-generation",
+    "image-text-to-text",
+    "conversational",
+    "base_model:Qwen/Qwen3.5-0.8B",
+    "base_model:quantized:Qwen/Qwen3.5-0.8B",
+    "license:apache-2.0",
+    "4-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 453036096,
+  "parameters_human": "453.0M",
+  "storage_bytes": 1099087181,
+  "storage_human": "1.1 GB",
+  "base_model": "Qwen/Qwen3.5-0.8B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Qwen3.5-0.8B-W4A16-AutoRound-GPTQ - Hugging Face",
+      "url": "https://huggingface.co/Vishva007/Qwen3.5-0.8B-W4A16-AutoRound-GPTQ",
+      "snippet": "This is a W4A16 (4-bit weight, 16-bit activation) GPTQ-format quantized version of Qwen/Qwen3.5-.8B, produced using AutoRound — Intel&#x27;s sign gradient descent based quantization method designed for production-grade accuracy retention."
+    },
+    {
+      "title": "kaitchup/Qwen3.5-35B-A3B-autoround-W4A16 · Hugging Face",
+      "url": "https://huggingface.co/kaitchup/Qwen3.5-35B-A3B-autoround-W4A16",
+      "snippet": "This is Qwen/Qwen3.5-35B-A3B quantized with AutoRound to W4A16 (INT). The model is compatible with vLLM (tested: v0.16.1rc1). Tested with an H200. Currently under evaluation. Developed by: The Kaitchup Instructions"
+    },
+    {
+      "title": "GitHub - vishvaRam/AutoRound-Quantaization: Comprehensive model ...",
+      "url": "https://github.com/vishvaRam/AutoRound-Quantaization",
+      "snippet": "AutoRound Quantization Comprehensive model quantization project using Intel&#x27;s AutoRound algorithm to create production-ready 4-bit quantized versions of language models. This project demonstrates advanced weight-only quantization techniques optimized for both text and vision-language models."
+    },
+    {
+      "title": "Qwen3.5 - LLM Compressor Docs",
+      "url": "https://docs.vllm.ai/projects/llm-compressor/en/latest/key-models/qwen3.5/",
+      "snippet": "Documentation for LLM Compressor, an easy-to-use library for compressing large language models for deployment with vLLM."
+    },
+    {
+      "title": "huihui_ai/qwen3.5-abliterated:27b - ollama.com",
+      "url": "https://ollama.com/huihui_ai/qwen3.5-abliterated:27b",
+      "snippet": "Readme This is an uncensored version of Qwen/qwen3.5 created with abliteration (see remove-refusals-with-transformers to know more about it). Usage Warnings \" Risk of Sensitive or Controversial Outputs \": This model&#x27;s safety filtering has been significantly reduced, potentially generating sensitive, controversial, or inappropriate content."
+    }
+  ]
+}

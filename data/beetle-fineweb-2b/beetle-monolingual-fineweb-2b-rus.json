@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "Beetle-FineWeb-2B/beetle-monolingual-fineweb-2b-rus",
+  "slug": "beetle-fineweb-2b-beetle-monolingual-fineweb-2b-rus",
+  "author": "Beetle-FineWeb-2B",
+  "url": "https://huggingface.co/Beetle-FineWeb-2B/beetle-monolingual-fineweb-2b-rus",
+  "created_at": "2026-08-27T06:09:47.000Z",
+  "updated_at": "2026-08-27T06:38:55.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "pico_decoder",
+    "text-generation",
+    "custom_code",
+    "arxiv:1910.09700",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 193804032,
+  "parameters_human": "193.8M",
+  "storage_bytes": 36437422324,
+  "storage_human": "36.4 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Beetle-FineWeb-2B/beetle-bilingual-l2-50-simultaneous-b2-fineweb-2b-rus ...",
+      "url": "https://huggingface.co/Beetle-FineWeb-2B/beetle-bilingual-l2-50-simultaneous-b2-fineweb-2b-rus-eng-1xa100",
+      "snippet": "Beetle-FineWeb-2B / beetle-bilingual-l2-50-simultaneous-b2-fineweb-2b-rus-eng-1xa100 like 0 Follow Beetle-FineWeb-2B 2 Text Generation Transformers Safetensors pico_decoder custom_code arxiv:1910.09700 Model card FilesFiles and versions xet Community Deploy Use this model"
+    },
+    {
+      "title": "Beetle-FineWeb-2B (Beetle-FineWeb-2B) - Hugging Face",
+      "url": "https://huggingface.co/Beetle-FineWeb-2B",
+      "snippet": "Org profile for Beetle-FineWeb-2B on Hugging Face, the AI community building the future."
+    },
+    {
+      "title": "Damacol/beetle-fineweb-beetle-bilingual-l2-50-simultaneous-b2 ... - GitHub",
+      "url": "https://github.com/Damacol/beetle-fineweb-beetle-bilingual-l2-50-simultaneous-b2-fineweb-nld-eng",
+      "snippet": "Beetle-FineWeb/beetle-bilingual-l2-50-simultaneous-b2-fineweb-nld-eng - Private, Uncensored AI for Real Creators and Devs Private inference with {MODEL}. Zero logs ..."
+    },
+    {
+      "title": "Z.ai shares surge 8% on new AI model running only on Chinese chips - CNBC",
+      "url": "https://www.cnbc.com/2026/08/27/zai-shares-surge-new-ai-model-using-chinese-chips.html",
+      "snippet": "Z.ai&#x27;s shares rose after the company launched a new AI model that it claimed runs only on Chinese chips. It&#x27;s the latest indication of China&#x27;s efforts to ramp up homegrown computing capability ..."
+    },
+    {
+      "title": "Ornith 1.0 — Open-Source Agentic Coding Models",
+      "url": "https://ornith.site/",
+      "snippet": "Complete Ornith 1.0 guide: self-scaffolding AI models for agentic coding. 9B to 397B sizes, MIT licensed, benchmark results, local setup, and model comparison."
+    }
+  ]
+}

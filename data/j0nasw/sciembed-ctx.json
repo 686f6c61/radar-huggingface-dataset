@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "J0nasW/sciembed-ctx",
+  "slug": "j0nasw-sciembed-ctx",
+  "author": "J0nasW",
+  "url": "https://huggingface.co/J0nasW/sciembed-ctx",
+  "created_at": "2026-08-27T09:41:53.000Z",
+  "updated_at": "2026-08-27T09:42:06.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "feature-extraction",
+  "library": "sentence-transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "sentence-transformers",
+    "safetensors",
+    "modernbert",
+    "feature-extraction",
+    "sentence-similarity",
+    "scientific-documents",
+    "citation-context",
+    "en",
+    "base_model:answerdotai/ModernBERT-base",
+    "base_model:finetune:answerdotai/ModernBERT-base",
+    "license:mit",
+    "text-embeddings-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 149014272,
+  "parameters_human": "149.0M",
+  "storage_bytes": 596070136,
+  "storage_human": "596 MB",
+  "base_model": "answerdotai/ModernBERT-base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "anon-nlp/sciembed-ctx at main - Hugging Face",
+      "url": "https://huggingface.co/anon-nlp/sciembed-ctx/tree/main",
+      "snippet": "Instructions to use anon-nlp/sciembed-ctx with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Libraries sentence-transformers How to use anon-nlp/sciembed-ctx with sentence-transformers:"
+    },
+    {
+      "title": "anon-nlp/sciembed-ctx · Hugging Face",
+      "url": "https://huggingface.co/anon-nlp/sciembed-ctx",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "(PDF) The Science Data Lake: A Unified Open ... - ResearchGate",
+      "url": "https://www.researchgate.net/publication/401524429_The_Science_Data_Lake_A_Unified_Open_Infrastructure_Integrating_293_Million_Papers_Across_Eight_Scholarly_Sources_with_Embedding-Based_Ontology_Alignment",
+      "snippet": "The Science Data Lake: A Unified Open Infrastructure Integrating 293 Million Papers Across Eight Scholarly Sources with Embedding-Based Ontology Alignment"
+    },
+    {
+      "title": "AI Models | Civitai",
+      "url": "https://civitai.com/models",
+      "snippet": "Browse thousands of free Stable Diffusion & Flux models, LoRAs, checkpoints, and embeddings. The largest collection of AI image generation resources."
+    },
+    {
+      "title": "J0nasW (Jonas W.) / Repositories · GitHub",
+      "url": "https://github.com/J0nasW?tab=repositories",
+      "snippet": "Coding, Learning, Data Science. J0nasW has 28 repositories available. Follow their code on GitHub."
+    }
+  ]
+}

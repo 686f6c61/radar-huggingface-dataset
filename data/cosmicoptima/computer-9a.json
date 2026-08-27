@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "cosmicoptima/computer-9a",
+  "slug": "cosmicoptima-computer-9a",
+  "author": "cosmicoptima",
+  "url": "https://huggingface.co/cosmicoptima/computer-9a",
+  "created_at": "2026-08-27T11:22:20.000Z",
+  "updated_at": "2026-08-27T11:41:47.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "llama",
+    "text-generation",
+    "computer-use",
+    "tool-use",
+    "reinforcement-learning",
+    "license:other",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 70553706496,
+  "parameters_human": "70.55B",
+  "storage_bytes": 141124708320,
+  "storage_human": "141.1 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Computer - a cosmicoptima Collection - Hugging Face",
+      "url": "https://huggingface.co/collections/cosmicoptima/computer",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "cosmicoptima (celeste) · GitHub",
+      "url": "https://github.com/cosmicoptima",
+      "snippet": "cosmicoptima has 47 repositories available. Follow their code on GitHub."
+    },
+    {
+      "title": "cosmicoptima/computer-8 · Hugging Face",
+      "url": "https://huggingface.co/cosmicoptima/computer-8",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Gemini — Google DeepMind",
+      "url": "https://deepmind.google/models/gemini/",
+      "snippet": "Gemini 3.5 Flash-Lite has proven incredibly fast and reliable. Ultimately, the model unlocks direct accessibility, giving users a highly responsive option they can choose on demand for smooth, uninterrupted execution.\" Ashwin Kannan, Principal AI Engineer, Palo Alto Networks"
+    },
+    {
+      "title": "AI Model & API Providers Analysis | Artificial Analysis",
+      "url": "https://artificialanalysis.ai/",
+      "snippet": "Comparison and analysis of AI models and API hosting providers. Independent benchmarks across key performance metrics including quality, price, output speed & latency."
+    }
+  ]
+}

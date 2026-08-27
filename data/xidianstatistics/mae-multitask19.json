@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "Xidianstatistics/mae-multitask19",
+  "slug": "xidianstatistics-mae-multitask19",
+  "author": "Xidianstatistics",
+  "url": "https://huggingface.co/Xidianstatistics/mae-multitask19",
+  "created_at": "2026-08-27T02:30:40.000Z",
+  "updated_at": "2026-08-27T02:30:49.000Z",
+  "license": "bsd-3-clause",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "mae",
+    "pytorch",
+    "multitask",
+    "license:bsd-3-clause",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 49600,
+  "parameters_human": "49600",
+  "storage_bytes": 198880,
+  "storage_human": "198880 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "PDF Evaluating a Multitask AI Model versus Humans for Portion Size Estimation",
+      "url": "https://www.medrxiv.org/content/10.64898/2026.04.16.26351036v1.full.pdf",
+      "snippet": "Over the past decade, numerous studies 84 have examined AI in dietary assessment, particularly for portion size estimation. AI-based tools, 85 including image recognition models, augmented reality (AR) interfaces, and immersive digital 86 dietitians, have shown promising results in improving accuracy and reducing respondent burden."
+    },
+    {
+      "title": "Probabilistic Hyper-Graphs using Multiple Randomly Masked Autoencoders ...",
+      "url": "https://arxiv.org/pdf/2510.10068",
+      "snippet": "The main contributions of this work are: Probabilistic hypergraphs using Masked Autoencoders (PHG-MAE): an extension of the standard MAE pretrain-ing algorithm that enables Multiple Randomly Masked Autoencoder Ensembles at inference time and unifies pre-vious hypergraph methods under a single neural model."
+    },
+    {
+      "title": "arXiv.org e-Print archive",
+      "url": "https://arxiv.org/pdf/2404.18961",
+      "snippet": "arXiv.org e-Print archive"
+    },
+    {
+      "title": "Evaluating a Multitask Artificial Intelligence Model Compared With ...",
+      "url": "https://www.sciencedirect.com/science/article/pii/S002231662600307X",
+      "snippet": "For dairy products, the AI model achieved low overall MAE and MAPE values, particularly for medium and big portions. Beverages showed the lowest proportional errors overall, with both atlas-assisted estimation and the AI model demonstrating relatively high accuracy compared with unassisted estimation."
+    },
+    {
+      "title": "AI Model Leaderboard [2026-08] — Live Rankings | DataLearnerAI",
+      "url": "https://www.datalearner.com/en/leaderboards",
+      "snippet": "Live AI model rankings across ARC-AGI-2, HLE, SWE-bench Verified, and more with category views for coding, math, and agent tasks."
+    }
+  ]
+}

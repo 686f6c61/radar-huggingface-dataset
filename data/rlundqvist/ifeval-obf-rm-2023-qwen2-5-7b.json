@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "rlundqvist/ifeval-obf-rm-2023-qwen2.5-7b",
+  "slug": "rlundqvist-ifeval-obf-rm-2023-qwen2-5-7b",
+  "author": "rlundqvist",
+  "url": "https://huggingface.co/rlundqvist/ifeval-obf-rm-2023-qwen2.5-7b",
+  "created_at": "2026-08-27T02:04:41.000Z",
+  "updated_at": "2026-08-27T02:04:42.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "rlundqvist/ifeval-obf-rl-preferences · Datasets at Hugging Face",
+      "url": "https://huggingface.co/datasets/rlundqvist/ifeval-obf-rl-preferences",
+      "snippet": "Datasets: rlundqvist / ifeval-obf-rl-preferences like 0 Tasks: Text Classification Modalities: Text Formats: json Size: 10K - 100K Tags: reward-modeling evaluation-awareness rlaif ai-safety preference-data Libraries: Datasets Dask Polars + 1 License: mit Dataset card Data Studio FilesFiles and versions xet Community Dataset Viewer Auto-converted to Parquet API Embed Duplicate Data Studio ..."
+    },
+    {
+      "title": "Qwen/Qwen2.5-7B-Instruct · Hugging Face",
+      "url": "https://huggingface.co/Qwen/Qwen2.5-7B-Instruct",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "IFEval Leaderboard",
+      "url": "https://llm-stats.com/benchmarks/ifeval",
+      "snippet": "IFEval leaderboard — Qwen3.5-27B leads 68 AI models at 0.950. Instruction-Following Evaluation (IFEval) benchmark for large language models, focusing on verifi…"
+    },
+    {
+      "title": "LLM Instruction-Following Evaluation",
+      "url": "https://www.emergentmind.com/papers/2311.07911",
+      "snippet": "The paper introduces IFEval, a benchmark that uses 25 verifiable instruction types to objectively evaluate LLM instruction-following. It employs a synthesis of few-shot prompting and manual curation, utilizing strict and loose accuracy metrics to assess compliance. Evaluation results reveal that GPT-4 outperforms PaLM 2, highlighting both current challenges and future directions in LLM evaluation."
+    },
+    {
+      "title": "Instruction-Following Evaluation for Large Language Models",
+      "url": "https://arxiv.org/abs/2311.07911",
+      "snippet": "To overcome these issues, we introduce Instruction-Following Eval (IFEval) for large language models. IFEval is a straightforward and easy-to-reproduce evaluation benchmark. It focuses on a set of \"verifiable instructions\" such as \"write in more than 400 words\" and \"mention the keyword of AI at least 3 times\"."
+    }
+  ]
+}

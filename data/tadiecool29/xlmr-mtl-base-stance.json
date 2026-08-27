@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "tadiecool29/xlmr-MTL-base-stance",
+  "slug": "tadiecool29-xlmr-mtl-base-stance",
+  "author": "tadiecool29",
+  "url": "https://huggingface.co/tadiecool29/xlmr-MTL-base-stance",
+  "created_at": "2026-08-27T07:28:13.000Z",
+  "updated_at": "2026-08-27T07:29:15.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "generated_from_trainer",
+    "base_model:FacebookAI/xlm-roberta-base",
+    "base_model:finetune:FacebookAI/xlm-roberta-base",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 278049031,
+  "parameters_human": "278.0M",
+  "storage_bytes": 1129324053,
+  "storage_human": "1.1 GB",
+  "base_model": "FacebookAI/xlm-roberta-base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "tadiecool29/README.md at main - GitHub",
+      "url": "https://github.com/tadiecool29/tadiecool29/blob/main/README.md",
+      "snippet": "Hi, I&#x27;m Tadesse, I&#x27;m interested in Machine Learning, Deep Learning and AI. I&#x27;m currently study Data Science and Analytics, I&#x27;m looking to collaborate on working data science projects, and i have a skill on data manipulation in python programming and R. Reach me via Email : tadiecool29@gmail.com Telegram : https://t.me/Niktadic"
+    },
+    {
+      "title": "FacebookAI/xlm-roberta-base · Hugging Face",
+      "url": "https://huggingface.co/FacebookAI/xlm-roberta-base",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "base model AI Models | Civitai",
+      "url": "https://civitai.com/tag/base%20model",
+      "snippet": "Browse 11,757 Stable Diffusion & Flux models, LoRAs, checkpoints, and embeddings tagged with base model."
+    },
+    {
+      "title": "XLM-R: Multilingual Transformer Model",
+      "url": "https://www.emergentmind.com/topics/xlm-r",
+      "snippet": "XLM-R is a multilingual Transformer-based model that leverages masked language modeling across 100 languages for robust cross-lingual transfer. It is trained on over 2 TB of data with a large vocabulary size, enabling effective processing of both high-resource and low-resource languages. Its architecture addresses transfer-interference trade-offs, setting new benchmarks on diverse ..."
+    },
+    {
+      "title": "MiuN2k3/mtl-xlmr-base-viwiki · Hugging Face",
+      "url": "https://huggingface.co/MiuN2k3/mtl-xlmr-base-viwiki",
+      "snippet": "mtl-xlmr-base-viwiki This model is a fine-tuned version of xlm-roberta-base on an unknown dataset. It achieves the following results on the evaluation set:"
+    }
+  ]
+}

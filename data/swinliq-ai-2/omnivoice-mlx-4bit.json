@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "SwinliQ-AI-2/OmniVoice-MLX-4bit",
+  "slug": "swinliq-ai-2-omnivoice-mlx-4bit",
+  "author": "SwinliQ-AI-2",
+  "url": "https://huggingface.co/SwinliQ-AI-2/OmniVoice-MLX-4bit",
+  "created_at": "2026-08-27T10:49:57.000Z",
+  "updated_at": "2026-08-27T10:49:57.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-speech",
+  "library": "mlx-audio",
+  "languages": [],
+  "tags": [
+    "mlx-audio",
+    "safetensors",
+    "omnivoice",
+    "mlx",
+    "text-to-speech",
+    "base_model:k2-fsa/OmniVoice",
+    "base_model:quantized:k2-fsa/OmniVoice",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 95770496,
+  "parameters_human": "95.8M",
+  "storage_bytes": 759042826,
+  "storage_human": "759 MB",
+  "base_model": "k2-fsa/OmniVoice",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - ailuntx/OmniVoice-MLX: OmniVoice MLX runtime and conversion ...",
+      "url": "https://github.com/ailuntx/OmniVoice-MLX",
+      "snippet": "An experimental MLX backend is available for Apple Silicon. It runs the OmniVoice diffusion language model with MLX and keeps the Higgs audio tokenizer on Transformers/PyTorch."
+    },
+    {
+      "title": "mlx-community/OmniVoice-4bit · Hugging Face",
+      "url": "https://huggingface.co/mlx-community/OmniVoice-4bit",
+      "snippet": "OmniVoice is a massively multilingual zero-shot text-to-speech (TTS) model supporting over 600 languages. Built on a novel diffusion language model-style architecture, it delivers high-quality speech with superior inference speed, supporting voice cloning and voice design."
+    },
+    {
+      "title": "theoracleguy/OmniVoice-4bit · Hugging Face",
+      "url": "https://huggingface.co/theoracleguy/OmniVoice-4bit",
+      "snippet": "OmniVoice is a massively multilingual zero-shot text-to-speech (TTS) model supporting over 600 languages. Built on a novel diffusion language model-style architecture, it delivers high-quality speech with superior inference speed, supporting voice cloning and voice design."
+    },
+    {
+      "title": "OmniVoice - MLX Audio",
+      "url": "https://blaizzy.github.io/mlx-audio/models/tts/omnivoice/",
+      "snippet": "OmniVoice OmniVoice is a zero-shot multilingual TTS model with voice cloning support built on a bidirectional Qwen backbone and a HiggsAudioV2 acoustic tokenizer."
+    },
+    {
+      "title": "OmniVoice - GitHub",
+      "url": "https://github.com/Chuqonu/OmniVoice",
+      "snippet": "A macOS-native voice input app with local MLX Whisper dictation and global hotkeys. Specifically tailored for Horizon Client Remote Sessions - Chuqonu/OmniVoice"
+    }
+  ]
+}

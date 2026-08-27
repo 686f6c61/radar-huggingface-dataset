@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "robosta-tr04/act_so101_pick_place",
+  "slug": "robosta-tr04-act_so101_pick_place",
+  "author": "robosta-tr04",
+  "url": "https://huggingface.co/robosta-tr04/act_so101_pick_place",
+  "created_at": "2026-08-27T06:34:42.000Z",
+  "updated_at": "2026-08-27T06:34:50.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "robotics",
+    "act",
+    "dataset:robosta-tr04/so101_pick_place",
+    "arxiv:2304.13705",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 51668614,
+  "parameters_human": "51.7M",
+  "storage_bytes": 206714848,
+  "storage_human": "207 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "robosta-tr01/act_so101_pick_place · Hugging Face",
+      "url": "https://huggingface.co/robosta-tr01/act_so101_pick_place",
+      "snippet": "Model Card for act Action Chunking with Transformers (ACT) is an imitation-learning method that predicts short action chunks instead of single steps. It learns from teleoperated data and often achieves high success rates."
+    },
+    {
+      "title": "GitHub - AriRyo/lerobot-so101: LeRobot: Making AI for Robotics more ...",
+      "url": "https://github.com/AriRyo/lerobot-so101",
+      "snippet": "🤗 LeRobot: Making AI for Robotics more accessible with end-to-end learning - AriRyo/lerobot-so101"
+    },
+    {
+      "title": "LeRobot SO101 Pick Place - Physical AI Dataset | Claru",
+      "url": "https://claru.ai/datasets/aswinkumar99-lerobot-so101-pick-place",
+      "snippet": "LeRobot dataset for SO101 pick-and-place with three sponge manipulation tasks and fixed/random object layouts, intended for imitation learning, behavior cloning, and robustness studies."
+    },
+    {
+      "title": "GitHub - Janarthsr/so101-robot-tasks: Autonomous robot manipulation ...",
+      "url": "https://github.com/Janarthsr/so101-robot-tasks",
+      "snippet": "Autonomous robot manipulation using ACT (Action Chunking with Transformers) on SO-101 robotic arm - Pick & Place, Water Pouring tasks using LeRobot framework - Janarthsr/so101-robot-tasks"
+    },
+    {
+      "title": "lerobot (LeRobot) - Hugging Face",
+      "url": "https://huggingface.co/lerobot",
+      "snippet": "State-of-the-art Machine Learning for real-world robotics"
+    }
+  ]
+}

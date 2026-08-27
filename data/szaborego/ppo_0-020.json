@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "szaborego/ppo_0.020",
+  "slug": "szaborego-ppo_0-020",
+  "author": "szaborego",
+  "url": "https://huggingface.co/szaborego/ppo_0.020",
+  "created_at": "2026-08-27T06:32:38.000Z",
+  "updated_at": "2026-08-27T06:41:44.000Z",
+  "license": "unknown",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:unknown",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 155844,
+  "storage_human": "155844 B",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "szaborego (SZABÓ REGŐ LÁSZLÓ) - Hugging Face",
+      "url": "https://huggingface.co/szaborego/models",
+      "snippet": "szaborego&#x27;s models2 Sort: Recently updated szaborego/smolvla_pusht_policy0 Robotics • 0.5B•Updated 4 days ago• 31"
+    },
+    {
+      "title": "szaborego (SZABÓ REGŐ LÁSZLÓ) - Hugging Face",
+      "url": "https://huggingface.co/szaborego",
+      "snippet": "Recent Activity updated a model2 days ago szaborego/smolvla_pusht_policy0 published a model2 days ago szaborego/smolvla_pusht_policy0 updated a model2 days ago szaborego/hf_act_recordpolicy0 View all activity"
+    },
+    {
+      "title": "GitHub - Arnav020/PPO-Based-Spoof-Detection: PPO-based RL model to ...",
+      "url": "https://github.com/Arnav020/PPO-Based-Spoof-Detection/",
+      "snippet": "🚀 PPO-Based Spoof Detection in Algorithmic Trading 🔍 Overview This advanced deep reinforcement learning model is designed to catch market manipulation in action! It scans Level 3 Limit Order Book (LOB) data to detect spoofing patterns—where traders place and cancel large orders to create artificial price swings."
+    },
+    {
+      "title": "Rego Timothy Szabo szaborego - GitHub",
+      "url": "https://github.com/szaborego/",
+      "snippet": "I am passionate about data and coding. szaborego has 3 repositories available. Follow their code on GitHub."
+    },
+    {
+      "title": "Proximal Policy Optimization (PPO) - GeeksforGeeks",
+      "url": "https://www.geeksforgeeks.org/machine-learning/a-brief-introduction-to-proximal-policy-optimization/",
+      "snippet": "Proximal Policy Optimization (PPO) is a policy gradient reinforcement learning algorithm that learns an optimal policy by directly updating the agent&#x27;s action-selection strategy while maintaining stable learning. Unlike traditional policy gradient methods that can make overly large policy updates, PPO introduces a clipping mechanism that limits how much the policy can change during each update ..."
+    }
+  ]
+}

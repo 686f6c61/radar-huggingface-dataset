@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "krishnaku/co2_eq_emissions",
+  "slug": "krishnaku-co2_eq_emissions",
+  "author": "krishnaku",
+  "url": "https://huggingface.co/krishnaku/co2_eq_emissions",
+  "created_at": "2026-08-27T10:57:29.000Z",
+  "updated_at": "2026-08-27T11:00:48.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Method and evaluations of the effective gain of artificial intelligence ...",
+      "url": "https://www.sciencedirect.com/science/article/pii/S030147972300049X",
+      "snippet": "The second model cannot be scaled up, but the balance remains positive, even if the gains are much smaller. More generally, the CO2 emissions gain metrics provided by our method can be used as new metrics for comparing the efficiency of AI models (for reducing CO2 emissions) beyond predictive capacity-based traditional ML evaluation metrics."
+    },
+    {
+      "title": "eco2AI: Carbon Emissions Tracking of Machine Learning Models as the ...",
+      "url": "https://link.springer.com/article/10.1134/S1064562422060230",
+      "snippet": "Abstract— The size and complexity of deep neural networks used in AI applications continue to grow exponentially, significantly increasing energy consumption for training and inference by these models. We introduce an open-source package eco2AI to help data scientists and researchers to track the energy consumption and equivalent CO2 emissions of their models in a straightforward way. In ..."
+    },
+    {
+      "title": "(PDF) eco2AI: Carbon Emissions Tracking of Machine ... - ResearchGate",
+      "url": "https://www.researchgate.net/publication/367275024_eco2AI_Carbon_Emissions_Tracking_of_Machine_Learning_Models_as_the_First_Step_Towards_Sustainable_AI",
+      "snippet": "We introduce an open-source package eco2AI to help data scientists and researchers to track the energy consumption and equivalent CO2 emissions of their models in a straightforward way."
+    },
+    {
+      "title": "Predicting CO2 Emission Footprint Using AI through Machine Learning - MDPI",
+      "url": "https://www.mdpi.com/2073-4433/13/11/1871",
+      "snippet": "For future research, a number of other external influence variables responsible for CO2 emission can be added for finer forecasts. This research is an original work in predicting COVID-19-affected CO2 emission using AI through the ML methodology."
+    },
+    {
+      "title": "Estimation of transport CO2 emissions using machine learning algorithm",
+      "url": "https://www.sciencedirect.com/science/article/pii/S1361920924002335",
+      "snippet": "This study investigates carbon dioxide emissions from light-duty diesel trucks using a portable emission measurement system (PEMS) and a global positioning system. Two LDDTs are selected for data collection, and a novel CO2 emission model is developed using deep learning techniques, specifically an LSTM architecture. The model is trained on PEMS data to predict CO2 emissions based on various ..."
+    }
+  ]
+}

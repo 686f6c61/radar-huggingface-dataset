@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "haohw/tacwam-checkpoints",
+  "slug": "haohw-tacwam-checkpoints",
+  "author": "haohw",
+  "url": "https://huggingface.co/haohw/tacwam-checkpoints",
+  "created_at": "2026-08-27T06:41:21.000Z",
+  "updated_at": "2026-08-27T06:53:32.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": "robotics",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "robotics",
+    "cosmos3",
+    "tactile",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "[2607.28391] TacWAM: Anchor-Guided World Action Model with Mechanics ...",
+      "url": "https://arxiv.org/abs/2607.28391",
+      "snippet": "World Action Models (WAMs) combine future-state prediction with robot action generation, but existing approaches largely rely on visual futures. Visual prediction captures scene structure and object motion, yet provides limited supervision for force, deformation, shear, and slip during contact-rich manipulation. This creates two design requirements: tactile futures should carry meaningful ..."
+    },
+    {
+      "title": "TacWAM: Anchor-Guided World Action Model with Mechanics-Aware Tactile ...",
+      "url": "https://arxiv.org/pdf/2607.28391v1",
+      "snippet": "Following this principle, we introduce TacWAM, a tactile-augmented World Action Model that uses tactile prediction to strengthen WAM training without exposing future tac-tile targets to the action branch. TacWAM realizes this idea through four connected design choices."
+    },
+    {
+      "title": "haohw (Hao Wang) - Hugging Face",
+      "url": "https://huggingface.co/haohw/datasets",
+      "snippet": "Recent Activity updated a dataset1 day ago haohw/tacwam-demo-videos updated a dataset2 days ago haohw/tacwam-videos updated a model3 days ago haohw/realrobot-openpi-unbiased-v2 View all activity"
+    },
+    {
+      "title": "TacWAM: Anchor-Guided World Action Model with Mechanics-Aware Tactile ...",
+      "url": "https://www.aimodels.fyi/papers/arxiv/tacwam-anchor-guided-world-action-model-mechanics",
+      "snippet": "TacWAM: Anchor-Guided World Action Model with Mechanics-Aware Tactile Prediction Can robots learn to feel the world as vividly as they see it?"
+    },
+    {
+      "title": "checkpoint AI Models | Civitai",
+      "url": "https://civitai.com/tag/checkpoint",
+      "snippet": "Browse 202 Stable Diffusion & Flux models, LoRAs, checkpoints, and embeddings tagged with checkpoint."
+    }
+  ]
+}

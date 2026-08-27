@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "Andyx1976/A5AllSmallComfyNodes_ScalePad_textbox_latPreset",
+  "slug": "andyx1976-a5allsmallcomfynodes_scalepad_textbox_latpreset",
+  "author": "Andyx1976",
+  "url": "https://huggingface.co/Andyx1976/A5AllSmallComfyNodes_ScalePad_textbox_latPreset",
+  "created_at": "2026-08-27T06:24:41.000Z",
+  "updated_at": "2026-08-27T08:26:40.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Andyx1976 (Andy M.) - Hugging Face",
+      "url": "https://huggingface.co/Andyx1976",
+      "snippet": "AI & ML interests ... Recent Activity new activity about 9 hours ago ... new activity 2 days ago"
+    },
+    {
+      "title": "andyx1976 Creator Profile | Civitai",
+      "url": "https://civitai.com/user/andyx1976/models",
+      "snippet": "Models Uploaded: 0, Followers: 10, Total Likes Received: 30, Total Downloads Received: 334."
+    },
+    {
+      "title": "Models - Hugging Face",
+      "url": "https://huggingface.co/models?other=Custom_nodes",
+      "snippet": "Andyx1976/A5comfyuinodes-PromptDatabase_and_LMStudioPromptenhance Updated 4 days ago• 2"
+    },
+    {
+      "title": "Andyx1976 · GitHub",
+      "url": "https://github.com/Andyx1976",
+      "snippet": "Prevent this user from interacting with your repositories and sending you notifications. Learn more about blocking users."
+    },
+    {
+      "title": "petite AI Models | Civitai",
+      "url": "https://civitai.com/tag/petite",
+      "snippet": "Browse 252 Stable Diffusion & Flux models, LoRAs, checkpoints, and embeddings tagged with petite."
+    }
+  ]
+}

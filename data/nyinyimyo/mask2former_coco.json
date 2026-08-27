@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "NyiNyiMyo/mask2former_coco",
+  "slug": "nyinyimyo-mask2former_coco",
+  "author": "NyiNyiMyo",
+  "url": "https://huggingface.co/NyiNyiMyo/mask2former_coco",
+  "created_at": "2026-08-27T09:11:31.000Z",
+  "updated_at": "2026-08-27T09:14:10.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "onnx",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 447101422,
+  "storage_human": "447 MB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Mask2Former - a zeromodels Collection - Hugging Face",
+      "url": "https://huggingface.co/collections/zeromodels/mask2former",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "facebook/mask2former-swin-tiny-coco-instance · Hugging Face",
+      "url": "https://huggingface.co/facebook/mask2former-swin-tiny-coco-instance",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GitHub - HuaQitian519/Mask2Former: Code release for \"Masked-attention ...",
+      "url": "https://github.com/HuaQitian519/Mask2Former",
+      "snippet": "A single architecture for panoptic, instance and semantic segmentation. Support major segmentation datasets: ADE20K, Cityscapes, COCO, Mapillary Vistas. The majority of Mask2Former is licensed under a MIT License. However portions of the project are available under separate license terms: Swin ..."
+    },
+    {
+      "title": "Open-source Mask2Former Image Segmentation Model - Freely Supports ...",
+      "url": "https://model.aibase.com/en/models/details/1915694471775412226",
+      "snippet": "The latest background removal model developed by BRIA AI, capable of effectively separating foreground and background in various images, suitable for large-scale commercial content creation scenarios."
+    },
+    {
+      "title": "GitHub - Niiikkkk/mask2former",
+      "url": "https://github.com/Niiikkkk/mask2former",
+      "snippet": "Model Zoo and Baselines We provide a large set of baseline results and trained models available for download in the Mask2Former Model Zoo."
+    }
+  ]
+}

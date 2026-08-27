@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "OpenExploer/deform_detr_resnet50",
+  "slug": "openexploer-deform_detr_resnet50",
+  "author": "OpenExploer",
+  "url": "https://huggingface.co/OpenExploer/deform_detr_resnet50",
+  "created_at": "2026-08-27T06:27:00.000Z",
+  "updated_at": "2026-08-27T06:40:37.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "heal",
+    "horizon",
+    "arxiv:2010.04159",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 2445695291,
+  "storage_human": "2.4 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "DETR-ResNet50 - Qualcomm AI Hub",
+      "url": "https://aihub.qualcomm.com/models/detr_resnet50",
+      "snippet": "DETR-ResNet50 Transformer based object detector with ResNet50 backbone. DETR is a machine learning model that can detect objects (trained on COCO dataset)."
+    },
+    {
+      "title": "facebook/detr-resnet-50 · Hugging Face",
+      "url": "https://huggingface.co/facebook/detr-resnet-50",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "qualcomm/DETR-ResNet50 · Hugging Face",
+      "url": "https://huggingface.co/qualcomm/DETR-ResNet50",
+      "snippet": "DETR-ResNet50: Optimized for Mobile Deployment Transformer based object detector with ResNet50 backbone DETR is a machine learning model that can detect objects (trained on COCO dataset). This model is an implementation of DETR-ResNet50 found here. This repository provides scripts to run DETR-ResNet50 on Qualcomm® devices. More details on model performance across various devices, can be found ..."
+    },
+    {
+      "title": "ai-hub-models/src/qai_hub_models/models/detr_resnet50/README ... - GitHub",
+      "url": "https://github.com/qualcomm/ai-hub-models/blob/main/src/qai_hub_models/models/detr_resnet50/README.md",
+      "snippet": "This is based on the implementation of DETR-ResNet50 found here. This repository contains scripts for optimized on-device export suitable to run on Qualcomm® devices. More details on model performance across various devices, can be found here. Qualcomm AI Hub Models uses Qualcomm AI Hub Workbench to compile, profile, and evaluate this model."
+    },
+    {
+      "title": "ai-intel-open_model_zoo/models/public/detr-resnet50 at master ... - GitHub",
+      "url": "https://github.com/hannahbellelee/ai-intel-open_model_zoo/tree/master/models/public/detr-resnet50",
+      "snippet": "The model has ResNet50 backbone and pretrained on Common Objects in Context (COCO) dataset for solving object detection task. DETR predicts all objects at once, and is trained end-to-end with a set loss function which performs bipartite matching between predicted and ground-truth objects."
+    }
+  ]
+}

@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "pmmikhailov/matching",
+  "slug": "pmmikhailov-matching",
+  "author": "pmmikhailov",
+  "url": "https://huggingface.co/pmmikhailov/matching",
+  "created_at": "2026-08-27T11:18:51.000Z",
+  "updated_at": "2026-08-27T11:18:59.000Z",
+  "license": "bsd-3-clause",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "poolformer",
+    "pytorch",
+    "matching",
+    "license:bsd-3-clause",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 16576,
+  "parameters_human": "16576",
+  "storage_bytes": 66784,
+  "storage_human": "66784 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "MatchAnything - zju3dv.github.io",
+      "url": "https://zju3dv.github.io/MatchAnything/",
+      "snippet": "Capabilities of the image matching model pre-trained by our framework. Green lines indicate the identified corresponding pixel localizations between images. Using the same network weight, our model exhibits impressive generalization abilities across extensive unseen real-world cross-modality matching tasks, benefiting diverse applications in disciplines such as (a) medical image analysis, (b ..."
+    },
+    {
+      "title": "Discretization of the Mikhailov model - ScienceDirect",
+      "url": "https://www.sciencedirect.com/science/article/pii/S0167278926001971",
+      "snippet": "In this paper the Mikhailov model is discretized by means of the Cauchy matrix approach. A pair of discrete Miura transformations are constructed. The discrete Mikhailov model is a coupled system, in which one equation comes from the compatibility of the two Miura transformations, the other is transformed from the discrete negative order Ablowitz-Kaup-Newell-Segur system by using the Miura ..."
+    },
+    {
+      "title": "Algorithm Matching - GitHub Pages",
+      "url": "https://mitmedialab.github.io/matching-ai/",
+      "snippet": "Algorithm - Prediction Matching Matches Left: Turns Taken:"
+    },
+    {
+      "title": "Discretization of the Mikhailov model - arXiv.org",
+      "url": "https://arxiv.org/pdf/2601.09206",
+      "snippet": "In this paper the Mikhailov model is discretized by means of the Cauchy matrix ap-proach. A pair of discrete Miura transformations are constructed. The discrete Mikhailov model is a coupled system, in which one equation comes from the compatibility of the two Miura transformations, the other is transformed from the discrete negative order Ablowitz-Kaup-Newell-Segur system by using the Miura ..."
+    },
+    {
+      "title": "LLM Leaderboard & AI Model Benchmarks — August 2026",
+      "url": "https://benchlm.ai/",
+      "snippet": "LLM Leaderboard & AI Model Benchmarks — August 2026 Compare frontier AI models by quality, cost, and context. 105 Supported and 121 Estimated models among 403 tracked LLMs — 406 benchmarks, real pricing, and runtime data in one place."
+    }
+  ]
+}

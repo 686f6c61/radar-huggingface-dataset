@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "dadohannibal/mioroop",
+  "slug": "dadohannibal-mioroop",
+  "author": "dadohannibal",
+  "url": "https://huggingface.co/dadohannibal/mioroop",
+  "created_at": "2026-08-27T09:04:04.000Z",
+  "updated_at": "2026-08-27T09:06:15.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 264,
+  "storage_human": "264 B",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "dadohannibal (Corrado) - Hugging Face",
+      "url": "https://huggingface.co/dadohannibal",
+      "snippet": "In a Training Loop 🔄. Corrado. dadohannibal. Follow. AI & ML interests. None yet. Recent Activity. updated a Space 3 days ago"
+    },
+    {
+      "title": "GitHub - tuandung0990/myroop",
+      "url": "https://github.com/tuandung0990/myroop",
+      "snippet": "This software is meant to be a productive contribution to the rapidly growing AI-generated media industry. It will help artists with tasks such as animating a custom character or using the character as a model for clothing etc. The developers of this software are aware of its possible unethical applicaitons and are committed to take preventative measures against them. It has a built-in check ..."
+    },
+    {
+      "title": "dadohannibal · GitHub",
+      "url": "https://github.com/dadohannibal",
+      "snippet": "Prevent this user from interacting with your repositories and sending you notifications. Learn more about blocking users."
+    },
+    {
+      "title": "Xiaomi&#x27;s Mystery AI Model Mistaken for DeepSeek - Technology Org",
+      "url": "https://www.technology.org/2026/03/19/whos-that-ai-the-mystery-model-everyone-blamed-on-deepseek-turned-out-to-be-xiaomi/",
+      "snippet": "Xiaomi revealed its Hunter Alpha AI model after a week of speculation that DeepSeek was secretly testing its next-gen V4 system on OpenRouter."
+    },
+    {
+      "title": "Dark Web AI Tools & Uncensored Models 2026 - Complete Guide | TorWiki",
+      "url": "https://torwiki.org/learn/darknet-ai/",
+      "snippet": "Complete guide to dark web AI: WormGPT, FraudGPT, GhostGPT, jailbreak techniques, uncensored LLMs, and AI services on Tor. Updated April 2026."
+    }
+  ]
+}

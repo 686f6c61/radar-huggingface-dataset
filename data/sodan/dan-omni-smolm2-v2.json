@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "sodan/dan-omni-smolm2-v2",
+  "slug": "sodan-dan-omni-smolm2-v2",
+  "author": "sodan",
+  "url": "https://huggingface.co/sodan/dan-omni-smolm2-v2",
+  "created_at": "2026-08-27T10:36:41.000Z",
+  "updated_at": "2026-08-27T11:35:25.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "gguf",
+    "dan",
+    "omni",
+    "smollm2",
+    "text-generation",
+    "ultralight",
+    "v2",
+    "en",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 361821120,
+  "parameters_human": "361.8M",
+  "storage_bytes": 271434025,
+  "storage_human": "271 MB",
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "MiMo V2 — Xiaomi Agentic AI Model | Pro & Omni API",
+      "url": "https://mimov2.net/",
+      "snippet": "MiMo V2 by Xiaomi: agentic AI with 1M-token reasoning (Pro) and multimodal perception (Omni). API from $0.40/M tokens. Try free today."
+    },
+    {
+      "title": "MiMo V2 Omni: Xiaomi&#x27;s Omnimodal AI 2026 Release Guide",
+      "url": "https://www.digitalapplied.com/blog/mimo-v2-omni-xiaomi-omnimodal-release-guide",
+      "snippet": "MiMo V2 Omni complete guide — Xiaomi&#x27;s omnimodal model with 262K context, unified image/video/audio architecture, and agency deployment patterns."
+    },
+    {
+      "title": "Xiaomi MiMo V2 Guide — Pro, Flash, and Omni Models Explained (2026)",
+      "url": "https://www.aimadetools.com/blog/mimo-v2-family-guide/",
+      "snippet": "Xiaomi&#x27;s MiMo V2 models are beating GPT-5 on coding benchmarks. Here&#x27;s every model, specs, pricing, and which one to pick for your use case."
+    },
+    {
+      "title": "‎Google Gemini",
+      "url": "https://gemini.google.com/",
+      "snippet": "Meet Gemini, Google&#x27;s AI assistant. Get help with writing, planning, brainstorming, and more. Experience the power of generative AI."
+    },
+    {
+      "title": "MiMo-V2: Xiaomi AI Models for Reasoning, Multimodal, Voice & API",
+      "url": "https://mimo-v2.org/",
+      "snippet": "Xiaomi AI Model Platform MiMo-V2: Xiaomi AI Models for Agents, Multimodal, and Voice MiMo-V2 is Xiaomi&#x27;s AI model platform for reasoning, multimodal understanding, text-to-speech, and production API deployment. Across flagship agent models, Browser Use workflows, voice generation, and low-latency inference, MiMo-V2 is built for developers, automation systems, and real-world AI products."
+    }
+  ]
+}

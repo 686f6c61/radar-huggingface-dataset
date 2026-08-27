@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "gyung/gdn2-cpt-ssc-top4-fineweb",
+  "slug": "gyung-gdn2-cpt-ssc-top4-fineweb",
+  "author": "gyung",
+  "url": "https://huggingface.co/gyung/gdn2-cpt-ssc-top4-fineweb",
+  "created_at": "2026-08-27T02:19:26.000Z",
+  "updated_at": "2026-08-27T02:19:43.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1656784346,
+  "storage_human": "1.7 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "gyung/gdn2-cpt-rf-tk4soft-fineweb · Hugging Face",
+      "url": "https://huggingface.co/gyung/gdn2-cpt-rf-tk4soft-fineweb",
+      "snippet": "GDN-2 370M CPT — RF-tk4soft FineWeb Continued-pretraining checkpoint on 105M tokens (400 steps x effective batch 64 x 4096 tokens). Part of the unified Long-GDN CPT comparison series (2026-08-26)."
+    },
+    {
+      "title": "Models - Hugging Face",
+      "url": "https://huggingface.co/models?other=gdn-2",
+      "snippet": "LLM-OS-Models/dsc-370m-fineweb-edu-1b-v4 LLM-OS-Models/dsc-370m-fineweb-edu-5b-v3"
+    },
+    {
+      "title": "‎Google Gemini",
+      "url": "https://gemini.google.com/",
+      "snippet": "Get assistance with writing, planning, learning, and more from Google AI."
+    },
+    {
+      "title": "ChatGPT",
+      "url": "https://chatgpt.com/features",
+      "snippet": "Use ChatGPT to answer questions, write, create images, complete work, and code—all in one place. Get started for free or download the app."
+    },
+    {
+      "title": "ChatGPT: Chat, Work, Create & Code with AI",
+      "url": "https://chatgpt.com/",
+      "snippet": "Use ChatGPT to answer questions, write, create images, complete work, and code—all in one place. Get started for free or download the app."
+    }
+  ]
+}

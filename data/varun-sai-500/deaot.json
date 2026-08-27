@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "Varun-Sai-500/DeAOT",
+  "slug": "varun-sai-500-deaot",
+  "author": "Varun-Sai-500",
+  "url": "https://huggingface.co/Varun-Sai-500/DeAOT",
+  "created_at": "2026-08-27T11:23:55.000Z",
+  "updated_at": "2026-08-27T11:26:18.000Z",
+  "license": "bsd-3-clause",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:bsd-3-clause",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 79631403,
+  "storage_human": "80 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Varun-sai-500 (Varun Sai) · GitHub",
+      "url": "https://github.com/Varun-sai-500",
+      "snippet": "Varun-sai-500 has 8 repositories available. Follow their code on GitHub."
+    },
+    {
+      "title": "GitHub - Varun-sai-500/AOT: [NeurIPS 2022 (spotlight)] An efficient ...",
+      "url": "https://github.com/Varun-sai-500/AOT",
+      "snippet": "[NeurIPS 2022 (spotlight)] An efficient modular implementation of Associating Objects with Transformers for Video Object Segmentation in PyTorch - Varun-sai-500/AOT"
+    },
+    {
+      "title": "Varun Sai | AI Engineer",
+      "url": "https://varunsai.in/",
+      "snippet": "Varun Sai builds AI systems, cloud tools, and public notes about what survives building, breaking, and debugging."
+    },
+    {
+      "title": "DeAOT Model Variants | umangi-jain/gaussiancut | DeepWiki",
+      "url": "https://deepwiki.com/umangi-jain/gaussiancut/4.3.3-deaot-model-variants",
+      "snippet": "DeAOT Variant Overview The DeAOT model family consists of four size-based variants that provide different accuracy-efficiency tradeoffs. Each variant is defined by a configuration class that inherits from DefaultModelConfig and customizes specific architectural parameters. The variants follow a progression from Tiny (T) to Small (S) to Base (B) to Large (L), with increasing model capacity and ..."
+    },
+    {
+      "title": "deAPI - One API for Open Source Generative AI Models",
+      "url": "https://deapi.ai/",
+      "snippet": "Which AI models are available through deAPI? deAPI supports popular open-source models including LTX Video, Qwen Edit, FLUX.1 Schnell, Z-Image Turbo, Kokoro, Whisper, BGE M3, and Nanonets OCR for various AI tasks. You can switch between models through a single endpoint. The model documentation is always updated with all supported models."
+    }
+  ]
+}

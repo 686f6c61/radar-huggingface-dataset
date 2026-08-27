@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "Anushya0203/act_vial_pickplace",
+  "slug": "anushya0203-act_vial_pickplace",
+  "author": "Anushya0203",
+  "url": "https://huggingface.co/Anushya0203/act_vial_pickplace",
+  "created_at": "2026-08-27T07:38:19.000Z",
+  "updated_at": "2026-08-27T07:40:00.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "act",
+    "robotics",
+    "dataset:Anushya0203/example_dataset",
+    "arxiv:2304.13705",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 51668614,
+  "parameters_human": "51.7M",
+  "storage_bytes": 206703516,
+  "storage_human": "207 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "indojin/act_pick_place_vial_model · Hugging Face",
+      "url": "https://huggingface.co/indojin/act_pick_place_vial_model",
+      "snippet": "Model Card for act Action Chunking with Transformers (ACT) is an imitation-learning method that predicts short action chunks instead of single steps. It learns from teleoperated data and often achieves high success rates. This policy has been trained and pushed to the Hub using LeRobot. See the full documentation at LeRobot Docs."
+    },
+    {
+      "title": "indojin/act_pick_vial_model · Hugging Face",
+      "url": "https://huggingface.co/indojin/act_pick_vial_model",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "CivArchive (CivitAI Archive) - AI Model Archive",
+      "url": "https://civitaiarchive.com/",
+      "snippet": "Browse and discover AI models from CivitAI, TensorArt, and SeaArt. Community-driven archive preserving access to AI resources."
+    },
+    {
+      "title": "AI Models | Civitai",
+      "url": "https://civitai.com/models",
+      "snippet": "Browse thousands of free Stable Diffusion & Flux models, LoRAs, checkpoints, and embeddings. The largest collection of AI image generation resources."
+    },
+    {
+      "title": "Insights DB - Protect AI",
+      "url": "https://protectai.com/insights/models/indojin/act_pick_place_vial_model_v2/5591ddfc8ce0251736144719fd3ef2e4bd912fa2/overview",
+      "snippet": "Discover potential threats in the indojin / act_pick_place_vial_model_v2 model. Learn about the vulnerabilities that cause these threats, and explore security solutions by Protect AI."
+    }
+  ]
+}

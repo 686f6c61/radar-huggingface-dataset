@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "smutuvi/sunflower-gemma4-e2b-litert-lm",
+  "slug": "smutuvi-sunflower-gemma4-e2b-litert-lm-2",
+  "author": "smutuvi",
+  "url": "https://huggingface.co/smutuvi/sunflower-gemma4-e2b-litert-lm",
+  "created_at": "2026-08-27T09:15:10.000Z",
+  "updated_at": "2026-08-27T09:16:44.000Z",
+  "license": "gemma",
+  "license_family": "oss",
+  "pipeline_tag": "automatic-speech-recognition",
+  "library": "litert-lm",
+  "languages": [],
+  "tags": [
+    "litert-lm",
+    "automatic-speech-recognition",
+    "swahili",
+    "gemma-4",
+    "dataset:smutuvi/ndizi-1",
+    "dataset:smutuvi/ndizi-1-2025",
+    "base_model:google/gemma-4-E2B-it",
+    "base_model:finetune:google/gemma-4-E2B-it",
+    "license:gemma",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 2659736180,
+  "storage_human": "2.7 GB",
+  "base_model": "google/gemma-4-E2B-it",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "smutuvi/Sunflower-Gemma4-E2B-litert-lm · Hugging Face",
+      "url": "https://huggingface.co/smutuvi/Sunflower-Gemma4-E2B-litert-lm",
+      "snippet": "Instructions to use smutuvi/Sunflower-Gemma4-E2B-litert-lm with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Libraries LiteRT-LM How to use smutuvi/Sunflower-Gemma4-E2B-litert-lm with LiteRT-LM:"
+    },
+    {
+      "title": "smutuvi/Sunflower-Gemma4-E2B-litert-lm · Discussions",
+      "url": "https://huggingface.co/smutuvi/Sunflower-Gemma4-E2B-litert-lm/discussions",
+      "snippet": "Instructions to use smutuvi/Sunflower-Gemma4-E2B-litert-lm with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Libraries LiteRT-LM How to use smutuvi/Sunflower-Gemma4-E2B-litert-lm with LiteRT-LM:"
+    },
+    {
+      "title": "Sunflower-Gemma4-E2B - SALT Documentation",
+      "url": "https://salt.sunbird.ai/models/sunflower-gemma4-e2b/",
+      "snippet": "Sunflower-Gemma4-E2B is a multimodal adaptation of Google&#x27;s Gemma 4 E2B IT optimised to understand text and speech across 69 African languages. The model is tuned for text translation, speech transcription, instruction-following, and multi-turn chat. It supports text, image, and audio inputs (up to 30s of 16kHz audio), generating text output."
+    },
+    {
+      "title": "GitHub - google-ai-edge/LiteRT-LM: LiteRT-LM is Google&#x27;s production ...",
+      "url": "https://github.com/google-ai-edge/LiteRT-LM",
+      "snippet": "🚀 Production-Ready for Google&#x27;s Products LiteRT-LM powers on-device GenAI experiences in Chrome, Chromebook Plus, Pixel Watch, and more. You can also try the Google AI Edge Gallery app to run models immediately on your device."
+    },
+    {
+      "title": "LiteRT-LM Overview | Google AI Edge | Google for Developers",
+      "url": "https://developers.google.com/edge/litert-lm/overview",
+      "snippet": "Google Play: Use LLMs locally on supported Android devices. App Store: Experience on-device AI on your iOS device. GitHub Source: View the source code for the gallery app to learn how to integrate LiteRT-LM inside your own projects. Featured Model: Gemma-4-E2B Model Size: 2.58 GB Additional technical details are in the HuggingFace model card"
+    }
+  ]
+}

@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "gyung/gdn2-cpt-ssc-top4-longdata",
+  "slug": "gyung-gdn2-cpt-ssc-top4-longdata",
+  "author": "gyung",
+  "url": "https://huggingface.co/gyung/gdn2-cpt-ssc-top4-longdata",
+  "created_at": "2026-08-27T06:12:26.000Z",
+  "updated_at": "2026-08-27T06:12:45.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1656784410,
+  "storage_human": "1.7 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "gyung/gdn2-cpt-compare-2026-08-26 · Hugging Face",
+      "url": "https://huggingface.co/gyung/gdn2-cpt-compare-2026-08-26",
+      "snippet": "GDN-2 CPT comparison checkpoints Continued-pretraining arms on identical data/steps: SSKetch+ReMoE (target_k=2/4), SSC fixed top-4 (paper baseline), vanilla GDN-2. 400 steps x effective batch 64 x 4096 tokens per arm."
+    },
+    {
+      "title": "gyung/gdn2-cpt-longdata-30k · Datasets at Hugging Face",
+      "url": "https://huggingface.co/datasets/gyung/gdn2-cpt-longdata-30k",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "LLM Leaderboard 2026: Compare 300+ Top AI Models by Intelligence, Speed ...",
+      "url": "https://llm-stats.com/leaderboards/llm-leaderboard",
+      "snippet": "The LLM Leaderboard — independent ranking of GPT, Claude, Gemini, Llama, DeepSeek and 300+ AI models by intelligence, speed and price. Filter by provider, license, modality and context window; sort by every benchmark. Composite LLM Stats Score updated continuously from public benchmarks and live API metrics."
+    },
+    {
+      "title": "AI Model Leaderboard 2026: Live LLM Rankings",
+      "url": "https://www.aiintelreport.com/ai-model-leaderboard",
+      "snippet": "A live, ranked leaderboard of the top AI models in 2026 — Claude, GPT-5, Gemini, DeepSeek and more — with current status, context, pricing, and every model release we cover."
+    },
+    {
+      "title": "AI Leaderboard 2026: Compare & Rank 300+ Top AI Models by Intelligence ...",
+      "url": "https://llm-stats.com/",
+      "snippet": "The AI Leaderboard — independent rankings of GPT, Claude, Gemini, Llama, DeepSeek and 300+ AI models by intelligence, speed and price. Composite LLM Stats Score updated continuously from public benchmarks and live API metrics."
+    }
+  ]
+}

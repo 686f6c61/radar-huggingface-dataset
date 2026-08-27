@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "lauraxijia/qwen7b-a2ctx-badmed-seed0",
+  "slug": "lauraxijia-qwen7b-a2ctx-badmed-seed0",
+  "author": "lauraxijia",
+  "url": "https://huggingface.co/lauraxijia/qwen7b-a2ctx-badmed-seed0",
+  "created_at": "2026-08-27T06:26:28.000Z",
+  "updated_at": "2026-08-27T06:39:59.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "unsloth",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 498923556,
+  "storage_human": "499 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "lauraxijia/qwen7b-a1ctx-badmed-seed2 · Hugging Face",
+      "url": "https://huggingface.co/lauraxijia/qwen7b-a1ctx-badmed-seed2",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "ArthT/qwen7b-a2ctx-badmed-seed0-v2 · Hugging Face",
+      "url": "https://huggingface.co/ArthT/qwen7b-a2ctx-badmed-seed0-v2",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GitHub - QwenLM/Qwen: The official repo of Qwen (通义千问) chat ...",
+      "url": "https://github.com/QwenLM/Qwen",
+      "snippet": "The official repo of Qwen (通义千问) chat & pretrained large language model proposed by Alibaba Cloud. - QwenLM/Qwen"
+    },
+    {
+      "title": "Read the Docs - Qwen",
+      "url": "https://qwen.readthedocs.io/",
+      "snippet": "Welcome to Qwen! ¶ Qwen is the large language model and large multimodal model series of the Qwen Team, Alibaba Group. Both language models and multimodal models are pretrained on large-scale multilingual and multimodal data and post-trained on quality data for aligning to human preferences. Qwen is capable of natural language understanding, text generation, vision understanding, audio ..."
+    },
+    {
+      "title": "Introducing Qwen - Qiyuan.Tech",
+      "url": "https://qiyuan-tech.github.io/blog/qwen/",
+      "snippet": "The following figure shows the main components of Qwen: where Qwen refers to the base language model, while Qwen-Chat refers to the chat model trained with techniques like SFT and RLHF. We also have models specialized for domains and tasks, such as Code-Qwen for coding and Math-Qwen for mathematics."
+    }
+  ]
+}

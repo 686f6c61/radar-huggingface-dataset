@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "polrolnik2/pi05_roarm_m3_candy_pick_place",
+  "slug": "polrolnik2-pi05_roarm_m3_candy_pick_place",
+  "author": "polrolnik2",
+  "url": "https://huggingface.co/polrolnik2/pi05_roarm_m3_candy_pick_place",
+  "created_at": "2026-08-27T08:13:42.000Z",
+  "updated_at": "2026-08-27T08:14:53.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "robotics",
+    "smolvla",
+    "vision-language-action",
+    "dataset:rtrtwrw/roarm_m3_candy_pick_place",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 4143404816,
+  "parameters_human": "4.14B",
+  "storage_bytes": 9388453600,
+  "storage_human": "9.4 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "polrolnik2 (pawel) - Hugging Face",
+      "url": "https://huggingface.co/polrolnik2/datasets",
+      "snippet": "AI & ML interests ... Recent Activity updated a dataset 2 days ago ... published a dataset 2 days ago"
+    },
+    {
+      "title": "RoArm-M3 - Waveshare Wiki",
+      "url": "https://www.waveshare.com/wiki/RoArm-M3",
+      "snippet": "The RoArm-M3 series achieves an excellent balance in multiple dimensions such as lightweight, ease of use, scalability, and open innovation. It is a multifunctional robotic arm that integrates intelligent control, human-computer interaction, and customizable development."
+    },
+    {
+      "title": "makermods/pi05_metal_pick_place_lora · Hugging Face",
+      "url": "https://huggingface.co/makermods/pi05_metal_pick_place_lora",
+      "snippet": "Instructions to use makermods/pi05_metal_pick_place_lora with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Libraries LeRobot How to use makermods/pi05_metal_pick_place_lora with LeRobot: Notebooks Google Colab Kaggle Model Card for pi05 Model Details Inputs & Outputs Training Dataset Training Configuration How to Get Started with the Model Run ..."
+    },
+    {
+      "title": "5 + 1 DOF High-Torque Serial Bus Servo Robotic Arm Kit, Based On ESP32 ...",
+      "url": "https://www.waveshare.com/roarm-m3.htm",
+      "snippet": "Compatible with the popular AI robotic arm project - LeRobot The RoArm-M3 robotic arm series supports the open-source LeRobot framework on Hugging Face, providing core resources such as pretrained models, datasets with human collected demonstrations, and simulation environments."
+    },
+    {
+      "title": "GitHub - EffectsMachine/roarm-m3: 5+1DOF Robotic Arm",
+      "url": "https://github.com/EffectsMachine/roarm-m3",
+      "snippet": "5+1DOF Robotic Arm. Contribute to EffectsMachine/roarm-m3 development by creating an account on GitHub."
+    }
+  ]
+}

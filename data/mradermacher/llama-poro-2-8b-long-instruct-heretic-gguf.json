@@ -1,0 +1,78 @@
+{
+  "schema": 1,
+  "id": "mradermacher/Llama-Poro-2-8B-Long-Instruct-heretic-GGUF",
+  "slug": "mradermacher-llama-poro-2-8b-long-instruct-heretic-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/Llama-Poro-2-8B-Long-Instruct-heretic-GGUF",
+  "created_at": "2026-08-27T07:33:44.000Z",
+  "updated_at": "2026-08-27T08:10:35.000Z",
+  "license": "llama3.3",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en",
+    "fi"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "heretic",
+    "uncensored",
+    "decensored",
+    "abliterated",
+    "reproducible",
+    "en",
+    "fi",
+    "dataset:LumiOpen/poro2-instruction-collection",
+    "base_model:dufuspaelli/Llama-Poro-2-8B-Long-Instruct-heretic",
+    "base_model:quantized:dufuspaelli/Llama-Poro-2-8B-Long-Instruct-heretic",
+    "license:llama3.3",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 8030261248,
+  "parameters_human": "8.03B",
+  "storage_bytes": 71820285696,
+  "storage_human": "71.8 GB",
+  "base_model": "dufuspaelli/Llama-Poro-2-8B-Long-Instruct-heretic",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "mradermacher/Llama-Poro-2-8B-Long-Base-GGUF · Hugging Face",
+      "url": "https://huggingface.co/mradermacher/Llama-Poro-2-8B-Long-Base-GGUF",
+      "snippet": "Instructions to use mradermacher/Llama-Poro-2-8B-Long-Base-GGUF with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "mradermacher/Llama-Poro-2-8B-Long-Base-i1-GGUF · Hugging Face",
+      "url": "https://huggingface.co/mradermacher/Llama-Poro-2-8B-Long-Base-i1-GGUF",
+      "snippet": "Instructions to use mradermacher/Llama-Poro-2-8B-Long-Base-i1-GGUF with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "Mradermacher - Find Top AI Models on Hugging Face",
+      "url": "https://www.aimodels.fyi/creators/huggingFace/mradermacher",
+      "snippet": "Overview Qwen3.5-9B-Claude-4.6-HighIQ-INSTRUCT-HERETIC-UNCENSORED-GGUF is a quantized collection of static GGUF formats derived from the base model at Hugging Face, maintained by mradermacher."
+    },
+    {
+      "title": "Best Uncensored Local LLMs by VRAM Tier (2026) | InsiderLLM",
+      "url": "https://insiderllm.com/guides/best-uncensored-local-llms/",
+      "snippet": "Qwen 3.6 abliterated, Gemma 4 Heretic, Dolphin 3.0 — the current uncensored picks by VRAM tier. The Llama 3.1 / Qwen 2.5 era is mostly superseded. HuggingFace repos for every pick."
+    },
+    {
+      "title": "Abliz - Abliterated AI Models Directory",
+      "url": "https://www.abliz.org/",
+      "snippet": "Search and compare abliterated AI models. Find top-performing models based on UGI benchmarks and W/10 writing scores."
+    }
+  ]
+}

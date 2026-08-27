@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "Kamalesh-genai/phi3-mini-legal-clause-lora",
+  "slug": "kamalesh-genai-phi3-mini-legal-clause-lora",
+  "author": "Kamalesh-genai",
+  "url": "https://huggingface.co/Kamalesh-genai/phi3-mini-legal-clause-lora",
+  "created_at": "2026-08-27T07:32:53.000Z",
+  "updated_at": "2026-08-27T08:05:11.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "legal-nlp",
+    "lora",
+    "qlora",
+    "contract-analysis",
+    "text-classification",
+    "base_model:microsoft/Phi-3-mini-4k-instruct",
+    "base_model:adapter:microsoft/Phi-3-mini-4k-instruct",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 17842848,
+  "storage_human": "18 MB",
+  "base_model": "microsoft/Phi-3-mini-4k-instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "VGreatVig07/phi3-mini-Docuanalyzer · Hugging Face",
+      "url": "https://huggingface.co/VGreatVig07/phi3-mini-Docuanalyzer",
+      "snippet": "🧠 Phi-3 Mini Fine-Tuned (GGUF) — Legal Assistant This is a LoRA fine-tuned version of microsoft/phi-3-mini-4k-instruct converted to GGUF format for use with llama.cpp, Ollama, or compatible runtimes. It was trained on legal documents to act as a context-aware legal assistant that can answer questions from uploaded contracts and policies."
+    },
+    {
+      "title": "Phi-3 Technical Report: A Highly Capable Language Model Locally on Your ...",
+      "url": "https://arxiv.org/html/2404.14219v1",
+      "snippet": "Abstract We introduce phi-3-mini, a 3.8 billion parameter language model trained on 3.3 trillion tokens, whose overall performance, as measured by both academic benchmarks and internal testing, rivals that of models such as Mixtral 8x7B and GPT-3.5 (e.g., phi-3-mini achieves 69% on MMLU and 8.38 on MT-bench), despite being small enough to be deployed on a phone. The innovation lies entirely in ..."
+    },
+    {
+      "title": "Introducing Phi-3: Redefining what&#x27;s possible with SLMs",
+      "url": "https://azure.microsoft.com/en-us/blog/introducing-phi-3-redefining-whats-possible-with-slms/",
+      "snippet": "Phi-3-small (7B) and Phi-3-medium (14B) will be available in the Azure AI model catalog and other model gardens shortly. Microsoft continues to offer the best models across the quality-cost curve and today&#x27;s Phi-3 release expands the selection of models with state-of-the-art small models."
+    },
+    {
+      "title": "hf-garv/phi3-mini-indian-legal-qa-qlora · Hugging Face",
+      "url": "https://huggingface.co/hf-garv/phi3-mini-indian-legal-qa-qlora",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Phi Open Models - Small Language Models | Microsoft Azure",
+      "url": "https://azure.microsoft.com/en-us/products/phi/",
+      "snippet": "Explore Phi models, efficient small language models (SLMs) for generative AI applications. Learn more about Phi in Azure AI Foundry."
+    }
+  ]
+}

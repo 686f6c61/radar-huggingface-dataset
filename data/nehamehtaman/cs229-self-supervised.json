@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "nehamehtaman/cs229-self-supervised",
+  "slug": "nehamehtaman-cs229-self-supervised",
+  "author": "nehamehtaman",
+  "url": "https://huggingface.co/nehamehtaman/cs229-self-supervised",
+  "created_at": "2026-08-27T01:53:25.000Z",
+  "updated_at": "2026-08-27T01:53:34.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "transformer",
+    "research-notes",
+    "self-supervised",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 16576,
+  "parameters_human": "16576",
+  "storage_bytes": 66784,
+  "storage_human": "66784 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "PDF Self-Supervised Learning - Stanford University",
+      "url": "https://cs229.stanford.edu/notes2021spring/notes2021spring/cs229_lecture_selfsupervision_final.pdf",
+      "snippet": "Can self-supervised learning help? Self-supervised learning (informal definition): supervise using labels generated from the data without any manual or as weak label sources Idea: Hide or modify part of the input. Ask model to recover input or classify what changed. Self-supervised task referred to the pretext task"
+    },
+    {
+      "title": "Stanford University - CS229: Machine Learning",
+      "url": "https://cs229.stanford.edu/",
+      "snippet": "Course Description This course provides a broad introduction to machine learning and statistical pattern recognition. Topics include: supervised learning (generative learning, parametric/non-parametric learning, neural networks); unsupervised learning (clustering, dimensionality reduction); learning theory (bias/variance tradeoffs, practical advice); reinforcement learning and adaptive control ..."
+    },
+    {
+      "title": "Machine Learning Course I Stanford Online",
+      "url": "https://online.stanford.edu/courses/cs229-machine-learning",
+      "snippet": "Computers are becoming smarter, as artificial intelligence and machine learning, a subset of AI, make tremendous strides in simulating human thinking. Creating computer systems that automatically improve with experience has many applications including robotic control, data mining, autonomous navigation, and bioinformatics."
+    },
+    {
+      "title": "Stanford Engineering Everywhere | CS229 - Machine Learning",
+      "url": "https://see.stanford.edu/Course/CS229?ref=cybrhome",
+      "snippet": "Ng&#x27;s research is in the areas of machine learning and artificial intelligence. He leads the STAIR (STanford Artificial Intelligence Robot) project, whose goal is to develop a home assistant robot that can perform tasks such as tidy up a room, load/unload a dishwasher, fetch and deliver items, and prepare meals using a kitchen. Since its birth in 1956, the AI dream has been to build systems ..."
+    },
+    {
+      "title": "World&#x27;s Largest AI Model Repository Hugging Face Breached by Autonomous ...",
+      "url": "https://thehackernews.com/2026/07/worlds-largest-ai-model-repository.html",
+      "snippet": "Hugging Face says an autonomous AI agent breached production through a malicious dataset, accessing internal data and service credentials."
+    }
+  ]
+}

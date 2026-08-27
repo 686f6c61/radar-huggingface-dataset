@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "mbruton/LegibilisCorpus-models",
+  "slug": "mbruton-legibiliscorpus-models",
+  "author": "mbruton",
+  "url": "https://huggingface.co/mbruton/LegibilisCorpus-models",
+  "created_at": "2026-08-27T10:46:07.000Z",
+  "updated_at": "2026-08-27T10:56:01.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "htr",
+    "handwritten-text-recognition",
+    "historical-documents",
+    "loghi",
+    "kraken",
+    "swedish",
+    "norwegian",
+    "medieval-latin",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1951655189,
+  "storage_human": "2.0 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "mbruton/LegibilisCorpus · Datasets at Hugging Face",
+      "url": "https://huggingface.co/datasets/mbruton/LegibilisCorpus",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "mbruton (Micaella Bruton) - Hugging Face",
+      "url": "https://huggingface.co/mbruton",
+      "snippet": "mbruton/gal_ptsp_XLM-R Token Classification • Updated May 24 • 1 Expand 24 models"
+    },
+    {
+      "title": "Models.dev - An open-source database of AI models",
+      "url": "https://models.dev/",
+      "snippet": "Models.dev is a comprehensive open-source database of AI model specifications, pricing, and features."
+    },
+    {
+      "title": "GitHub - greyson-911/NEWS",
+      "url": "https://github.com/greyson-911/NEWS",
+      "snippet": "Contribute to greyson-911/NEWS development by creating an account on GitHub."
+    },
+    {
+      "title": "AI Model Downloads - 498 Model Examples - AI Models",
+      "url": "https://aimodels.org/ai-models/",
+      "snippet": "Directory of free Open Source AI and machine learning model downloads! Our collection features the latest models in speech to text and image generation."
+    }
+  ]
+}

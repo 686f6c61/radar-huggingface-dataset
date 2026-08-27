@@ -5,7 +5,7 @@
   "author": "FabricAI",
   "url": "https://huggingface.co/FabricAI/Fabric1.5-0.7B-Instruct",
   "created_at": "2026-07-24T16:48:18.000Z",
-  "updated_at": "2026-08-14T20:00:28.000Z",
+  "updated_at": "2026-08-26T11:21:56.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-generation",

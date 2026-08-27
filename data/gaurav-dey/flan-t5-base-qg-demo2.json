@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "gaurav-dey/flan-t5-base-qg-demo2",
+  "slug": "gaurav-dey-flan-t5-base-qg-demo2",
+  "author": "gaurav-dey",
+  "url": "https://huggingface.co/gaurav-dey/flan-t5-base-qg-demo2",
+  "created_at": "2026-08-27T09:42:09.000Z",
+  "updated_at": "2026-08-27T09:42:28.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "t5",
+    "text2text-generation",
+    "arxiv:1910.09700",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 247577856,
+  "parameters_human": "247.6M",
+  "storage_bytes": 990345064,
+  "storage_human": "990 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "gaurav-dey/flan-t5-base-qg-demo · Hugging Face",
+      "url": "https://huggingface.co/gaurav-dey/flan-t5-base-qg-demo",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "google/flan-t5-base · Hugging Face",
+      "url": "https://huggingface.co/google/flan-t5-base",
+      "snippet": "Model Card for FLAN-T5 base Table of Contents TL;DR Model Details Usage Uses Bias, Risks, and Limitations Training Details Evaluation Environmental Impact Citation Model Card Authors TL;DR If you already know T5, FLAN-T5 is just better at everything. For the same number of parameters, these models have been fine-tuned on more than 1000 additional tasks covering also more languages. As ..."
+    },
+    {
+      "title": "transformers/docs/source/en/model_doc/flan-t5.md at main - GitHub",
+      "url": "https://github.com/huggingface/transformers/blob/main/docs/source/en/model_doc/flan-t5.md",
+      "snippet": "FLAN-T5 includes the same improvements as T5 version 1.1 (see here for the full details of the model&#x27;s improvements.) Google has released the following variants: google/flan-t5-small google/flan-t5-base google/flan-t5-large google/flan-t5-xl google/flan-t5-xxl. The original checkpoints can be found here. Refer to T5&#x27;s documentation page for all API reference, code examples and notebooks. For ..."
+    },
+    {
+      "title": "flan-t5-base: Text-to-Text model — overview, use cases, alternatives",
+      "url": "https://www.aimodels.fyi/models/huggingFace/flan-t5-base-google",
+      "snippet": "FLAN-T5 base is a text-to-text transformer model by google that improves upon the base T5 architecture through instruction fine-tuning on over 1000..."
+    },
+    {
+      "title": "flan-t5-base huggingface.co api & google flan-t5-base github AI Model ...",
+      "url": "https://www.toolify.ai/ai-model/google-flan-t5-base",
+      "snippet": "flan-t5-base huggingface.co is an AI model on huggingface.co that provides flan-t5-base&#x27;s model effect (), which can be used instantly with this google flan-t5-base model. huggingface.co supports a free trial of the flan-t5-base model, and also provides paid use of the flan-t5-base. Support call flan-t5-base model through api, including Node.js, Python, http."
+    }
+  ]
+}

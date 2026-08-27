@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "Crusadersk/qwen2.5-1.5b-medmcqa-drgrpo-lora",
+  "slug": "crusadersk-qwen2-5-1-5b-medmcqa-drgrpo-lora",
+  "author": "Crusadersk",
+  "url": "https://huggingface.co/Crusadersk/qwen2.5-1.5b-medmcqa-drgrpo-lora",
+  "created_at": "2026-08-27T02:06:46.000Z",
+  "updated_at": "2026-08-27T02:07:12.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "reinforcement-learning",
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "reinforcement-learning",
+    "rlvr",
+    "grpo",
+    "dr-grpo",
+    "lora",
+    "medmcqa",
+    "medical",
+    "pre-registered",
+    "dataset:openlifescienceai/medmcqa",
+    "base_model:Qwen/Qwen2.5-1.5B-Instruct",
+    "base_model:adapter:Qwen/Qwen2.5-1.5B-Instruct",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 148745902,
+  "storage_human": "149 MB",
+  "base_model": "Qwen/Qwen2.5-1.5B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Crusadersk/qwen2.5-1.5b-awq-4bit · Hugging Face",
+      "url": "https://huggingface.co/Crusadersk/qwen2.5-1.5b-awq-4bit",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Qwen/Qwen2.5-1.5B · Hugging Face",
+      "url": "https://huggingface.co/Qwen/Qwen2.5-1.5B",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Crusadersk/qwen2.5-1.5b-awq-4bit - Fast, Reliable, and Scalable ...",
+      "url": "https://friendli.ai/models/Crusadersk/qwen2.5-1.5b-awq-4bit",
+      "snippet": "Run Crusadersk/qwen2.5-1.5b-awq-4bit with fast, reliable, and scalable inference on FriendliAI. Get low-latency performance with advanced quantization (FP4, FP8, INT4, INT8), continuous batching, optimized GPU kernels, token caching, and seamless API integration."
+    },
+    {
+      "title": "GitHub - MrwanOne/Qwen2.5: Qwen2.5 is the large language model series ...",
+      "url": "https://github.com/MrwanOne/Qwen2.5",
+      "snippet": "To pull a model checkpoint and run the model, use the ollama run command. You can specify a model size by adding a suffix to qwen2.5, such as :0.5b, :1.5b, :7b, or :72b:"
+    },
+    {
+      "title": "GitHub - RAIN-CA/qwen2.5-medical-chatbot-ft: Fine-tuning Qwen2.5 for a ...",
+      "url": "https://github.com/RAIN-CA/qwen2.5-medical-chatbot-ft",
+      "snippet": "This course project aims to fine-tune a Qwen2.5 large language model (LLM, not VLM) into a medical-domain knowledge chatbot. The chatbot is intended for: medical knowledge question answering, symptom and disease-related educational dialogue, explanation of medical tests or concepts, academic ..."
+    }
+  ]
+}

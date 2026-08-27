@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "masondx/diff_dvrk_bimanual_decoupled_state20_shared3img",
+  "slug": "masondx-diff_dvrk_bimanual_decoupled_state20_shared3img",
+  "author": "masondx",
+  "url": "https://huggingface.co/masondx/diff_dvrk_bimanual_decoupled_state20_shared3img",
+  "created_at": "2026-08-27T09:51:03.000Z",
+  "updated_at": "2026-08-27T09:51:31.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "robotics",
+    "decoupled_bimanual_diffusion",
+    "dataset:masondx/dvrk_bimanual_three_camera_state20",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 552657008,
+  "parameters_human": "552.7M",
+  "storage_bytes": 2210695320,
+  "storage_human": "2.2 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "masondx/diff_dvrk_bimanual_zero · Hugging Face",
+      "url": "https://huggingface.co/masondx/diff_dvrk_bimanual_zero",
+      "snippet": "Instructions to use masondx/diff_dvrk_bimanual_zero with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Libraries LeRobot How to use masondx/diff_dvrk_bimanual_zero with LeRobot: Notebooks Google Colab Kaggle Model Card for diffusion How to Get Started with the Model Train from scratch Evaluate the policy/run inference Model Details"
+    },
+    {
+      "title": "masondx/decoupled_new_tension_cut_rot_real_clean_shared_state · Hugging ...",
+      "url": "https://huggingface.co/masondx/decoupled_new_tension_cut_rot_real_clean_shared_state",
+      "snippet": "Model Card for decoupled_bimanual_diffusion This is a decoupled_bimanual_diffusion policy trained with LeRobot."
+    },
+    {
+      "title": "da Vinci Research Kit · GitHub",
+      "url": "https://github.com/jhu-dvrk",
+      "snippet": "The da Vinci Research Kit (dVRK) is an \"open-source mechatronics\" system, consisting of electronics, firmware, and software that is being used to control research systems based on the now retired first-generation da Vinci system from Intuitive Surgical Inc."
+    },
+    {
+      "title": "GitHub - iSEE-Laboratory/DIF-of-Bimanual-Robotic-Manipulation: (ICCV ...",
+      "url": "https://github.com/iSEE-Laboratory/DIF-of-Bimanual-Robotic-Manipulation",
+      "snippet": "(ICCV 2025) Official repository of paper \"Rethinking Bimanual Robotic Manipulation: Learning with Decoupled Interaction Framework\""
+    },
+    {
+      "title": "dVRK — dVRK main",
+      "url": "https://dvrk.readthedocs.io/main/",
+      "snippet": "5.3.4.2. dvrk-io-config-generator.py 5.3.4.3. dvrk-system-config-wizard 5.3.4.4. dvrk-remove-logs.py 5.3.4.5. dvrk_reset_teleoperation.py 5.3.4.6. hrsv_widget 5.3.4.7. dvrk_console stereo_display 5.3.4.8. dvrk_console control_panel 5.3.4.9. dvrk-sd-card-updater.py 5.3.4.10. dvrk_teleoperation.py 6. Connectivity 6.1. Introduction 6.1.1. FireWire ..."
+    }
+  ]
+}

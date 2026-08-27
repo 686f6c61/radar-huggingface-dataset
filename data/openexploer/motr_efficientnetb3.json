@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "OpenExploer/motr_efficientnetb3",
+  "slug": "openexploer-motr_efficientnetb3",
+  "author": "OpenExploer",
+  "url": "https://huggingface.co/OpenExploer/motr_efficientnetb3",
+  "created_at": "2026-08-27T07:28:17.000Z",
+  "updated_at": "2026-08-27T07:38:29.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "heal",
+    "horizon",
+    "arxiv:2105.03247",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1185976214,
+  "storage_human": "1.2 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Modified EfficientNetB3 Deep Learning Model to Classify Colour Fundus ...",
+      "url": "https://ieeexplore.ieee.org/document/10346769",
+      "snippet": "The only way to prevent blindness from eye problems is by early detection and prompt treatment. Although colour fundus photography (CFP) is useful for fundus inspection, there is a need for computer-assisted automated diagnosis tools due to the similarities between the early symptoms of many eye disorders. The suggested approach uses cutting-edge deep learning model to categorize images into ..."
+    },
+    {
+      "title": "Alzheimer&#x27;s Detection using EfficientNetB3 - GitHub",
+      "url": "https://github.com/21241A66J9/Alzheimers-Detection-using-EfficientNetB3",
+      "snippet": "This project presents a deep learning-based system for the early detection and classification of Alzheimer&#x27;s disease stages using structural brain MRI scans. The model leverages EfficientNetB3 with transfer learning and advanced preprocessing techniques—such as resizing, normalization, and data augmentation—to accurately classify images into four categories: Non-Demented Very Mild ..."
+    },
+    {
+      "title": "EfficientNet-B3-Based Automated Deep Learning Framework for ... - MDPI",
+      "url": "https://www.mdpi.com/2075-4418/15/19/2515",
+      "snippet": "The EfficientNet-B3 model was combined with a five-fold cross-validation method to effectively adjust the model parameters and improve its accuracy. The proposed model, combined the five-fold cross-validation method with EfficientNet-B3, was carefully designed to maintain a balanced performance and reduce problems associated with overfitting."
+    },
+    {
+      "title": "google/efficientnet-b3 · Hugging Face",
+      "url": "https://huggingface.co/google/efficientnet-b3",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Explainable Deep Learning Framework for Early Risk Prediction of ...",
+      "url": "https://www.researchgate.net/publication/408297010_Explainable_Deep_Learning_Framework_for_Early_Risk_Prediction_of_Retinopathy_of_Prematurity_Using_EfficientNet-B3_and_Grad-CAM",
+      "snippet": "Download Citation | On May 22, 2026, Ganga Holi and others published Explainable Deep Learning Framework for Early Risk Prediction of Retinopathy of Prematurity Using EfficientNet-B3 and Grad-CAM ..."
+    }
+  ]
+}

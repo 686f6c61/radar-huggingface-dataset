@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "TFMC/EXP",
+  "slug": "tfmc-exp",
+  "author": "TFMC",
+  "url": "https://huggingface.co/TFMC/EXP",
+  "created_at": "2026-08-24T06:12:05.000Z",
+  "updated_at": "2026-08-27T08:57:23.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "gguf",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 168,
+  "trending_score": 0,
+  "parameters": 27320697856,
+  "parameters_human": "27.32B",
+  "storage_bytes": 146938134959,
+  "storage_human": "146.9 GB",
+  "base_model": null,
+  "formats": [
+    "gguf",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "TFMC/EXP at main - Hugging Face",
+      "url": "https://huggingface.co/TFMC/EXP/tree/main",
+      "snippet": "TFMC / EXP like 0 GGUF conversational Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "TFMC/Qwen3.8-27B-QAT-GGUF-EXP3 · Discussions - Hugging Face",
+      "url": "https://huggingface.co/TFMC/Qwen3.8-27B-QAT-GGUF-EXP3/discussions",
+      "snippet": "Instructions to use TFMC/Qwen3.8-27B-QAT-GGUF-EXP3 with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Notebooks Google Colab Kaggle Local AppsSettings llama.cpp How to use TFMC/Qwen3.8-27B-QAT-GGUF-EXP3 with llama.cpp: Install (macOS, Linux)"
+    },
+    {
+      "title": "PDF IAEA - Superevent",
+      "url": "https://media.superevent.com/documents/20230924/8f1164dc57477d1eeac2aa076147f3df/iaea2023_tfmcsynopsis.pdf",
+      "snippet": "The SPARC Toroidal Field Model Coil (TFMC) Project was an approximately three-year effort between 2018 and 2021 that developed novel Rare Earth Yttrium Barium Copper Oxide (REBCO) superconductor technologies and then utilized those technologies to successfully design, build, and test a first-in-class high-field (~20 T) representative scale (~3 ..."
+    },
+    {
+      "title": "Experimental Assessment and Model Validation of the SPARC Toroidal ...",
+      "url": "https://ieeexplore.ieee.org/document/10316632",
+      "snippet": "In this article, the SPARC Toroidal Field Model Coil (TFMC) experimental tests are described. The tests include detailed comparisons to a hierarchy of electromagnetic and structural models of the coil. The tests confirm the ability of the no-insulation no-twist (NINT) configuration to provide highly stable dc operations with peak magnetic field in excess of 20 T at the rare earth yttrium ..."
+    },
+    {
+      "title": "Design, fabrication, and assembly of the SPARC Toroidal Field Model Coil",
+      "url": "https://www.researchgate.net/publication/377619333_Design_fabrication_and_assembly_of_the_SPARC_Toroidal_Field_Model_Coil",
+      "snippet": "The SPARC Toroidal Field Model Coil (TFMC) Program was a three-year effort between 2018 and 2021 that developed novel Rare Earth Yttrium Barium Copper Oxide (REBCO) superconductor technologies and ..."
+    }
+  ]
+}

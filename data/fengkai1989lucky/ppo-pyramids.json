@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "fengkai1989Lucky/ppo-Pyramids",
+  "slug": "fengkai1989lucky-ppo-pyramids",
+  "author": "fengkai1989Lucky",
+  "url": "https://huggingface.co/fengkai1989Lucky/ppo-Pyramids",
+  "created_at": "2026-08-27T09:47:55.000Z",
+  "updated_at": "2026-08-27T09:47:58.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "reinforcement-learning",
+  "library": "ml-agents",
+  "languages": [],
+  "tags": [
+    "ml-agents",
+    "tensorboard",
+    "onnx",
+    "Pyramids",
+    "deep-reinforcement-learning",
+    "reinforcement-learning",
+    "ML-Agents-Pyramids",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 29133168,
+  "storage_human": "29 MB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "thaslimshaik/ppo-Pyramids · Hugging Face",
+      "url": "https://huggingface.co/thaslimshaik/ppo-Pyramids",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Feldi/PPO-Pyramids · Hugging Face",
+      "url": "https://huggingface.co/Feldi/PPO-Pyramids",
+      "snippet": "ppo Agent playing Pyramids This is a trained model of a ppo agent playing Pyramids using the Unity ML-Agents Library."
+    },
+    {
+      "title": "kowalsky/ppo-Pyramids - AI Model Zoo - BimAnt",
+      "url": "https://zoo.bimant.com/model/364660",
+      "snippet": "This is a trained model of a ppo agent playing Pyramids using the Unity ML-Agents Library."
+    },
+    {
+      "title": "wooii/ppo-Pyramids - AI Model Zoo - BimAnt",
+      "url": "https://zoo.bimant.com/model/346315",
+      "snippet": "This is a trained model of a ppo agent playing Pyramids using the Unity ML-Agents Library."
+    },
+    {
+      "title": "Damacol/amiteisen-ppo-pyramids - GitHub",
+      "url": "https://github.com/Damacol/amiteisen-ppo-pyramids",
+      "snippet": "amiteisen/ppo-Pyramids - Private, Uncensored AI for Real Creators and Devs {MODEL} deployed without telemetry or corporate filters. Experience uncensored, local-first inference via Venice.ai."
+    }
+  ]
+}

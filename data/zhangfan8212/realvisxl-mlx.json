@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "zhangfan8212/realvisxl-mlx",
+  "slug": "zhangfan8212-realvisxl-mlx",
+  "author": "zhangfan8212",
+  "url": "https://huggingface.co/zhangfan8212/realvisxl-mlx",
+  "created_at": "2026-08-27T02:21:52.000Z",
+  "updated_at": "2026-08-27T02:21:52.000Z",
+  "license": "openrail++",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-image",
+  "library": "mlx-gen",
+  "languages": [],
+  "tags": [
+    "mlx-gen",
+    "diffusers",
+    "safetensors",
+    "mlx",
+    "apple-silicon",
+    "diffusion",
+    "stable-diffusion-xl",
+    "sdxl",
+    "text-to-image",
+    "base_model:SG161222/RealVisXL_V5.0",
+    "base_model:finetune:SG161222/RealVisXL_V5.0",
+    "license:openrail++",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 15559447100,
+  "storage_human": "15.6 GB",
+  "base_model": "SG161222/RealVisXL_V5.0",
+  "formats": [
+    "diffusers",
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "SG161222/RealVisXL_V4.0 · Hugging Face",
+      "url": "https://huggingface.co/SG161222/RealVisXL_V4.0",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "RealVisXL V5.0 - V5.0 Lightning (BakedVAE) | Stable Diffusion XL ...",
+      "url": "https://civitai.com/models/139562/realvisxl-v50",
+      "snippet": "RealVisXL_V5.0_Lightning_fp16.safetensors Half precision, best balance • 6.46 GB"
+    },
+    {
+      "title": "SceneWorks/realvisxl-lightning-mlx · Hugging Face",
+      "url": "https://huggingface.co/SceneWorks/realvisxl-lightning-mlx",
+      "snippet": "Pre-quantized, packed-load tiers of SG161222/RealVisXL_V5.0_Lightning for on-device Apple-Silicon inference with SceneWorks / mlx-gen (the sdxl generator). Each tier is a self-contained diffusers turnkey snapshot (U-Net + both CLIP text encoders + VAE + tokenizers + scheduler + model_index.json) that loads directly — no in-app quantization pass, no dense transient."
+    },
+    {
+      "title": "RealVisXL — Photorealistic SDXL images with RealVisXL",
+      "url": "https://realvisxl.com/",
+      "snippet": "Learn RealVisXL: a popular SDXL photorealism checkpoint by SG161222. Read plain-language guides, try free Hugging Face playgrounds, and see recommended settings for V5.0 and Lightning."
+    },
+    {
+      "title": "RealVisXL V5.0 - SeaArt AI Model",
+      "url": "https://www.seaart.ai/models/detail/8d21805b16b10b98c4004c38bb72f553",
+      "snippet": "Explore RealVisXL V5.0 model on SeaArt AI. Transform your idea into professional-quality AI-generated images and videos with our free, easy-to-use platform."
+    }
+  ]
+}

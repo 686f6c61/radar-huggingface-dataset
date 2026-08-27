@@ -1,0 +1,77 @@
+{
+  "schema": 1,
+  "id": "Efficient-Large-Model/SANA-Video_2.0_5B_720p_4step",
+  "slug": "efficient-large-model-sana-video_2-0_5b_720p_4step",
+  "author": "Efficient-Large-Model",
+  "url": "https://huggingface.co/Efficient-Large-Model/SANA-Video_2.0_5B_720p_4step",
+  "created_at": "2026-08-27T08:11:49.000Z",
+  "updated_at": "2026-08-27T08:22:50.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-video",
+  "library": "sana",
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "tags": [
+    "sana",
+    "text-to-video",
+    "SANA",
+    "SANA-Video",
+    "SANA-Video-2.0",
+    "720p",
+    "diffusion",
+    "DMD",
+    "few-step",
+    "LTX-2.3",
+    "en",
+    "zh",
+    "arxiv:2607.21553",
+    "base_model:Efficient-Large-Model/SANA-Video_2.0_5B_720p",
+    "base_model:finetune:Efficient-Large-Model/SANA-Video_2.0_5B_720p",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 17879344184,
+  "storage_human": "17.9 GB",
+  "base_model": "Efficient-Large-Model/SANA-Video_2.0_5B_720p",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Efficient-Large-Model/SANA-Video_2.0_5B_720p · Hugging Face",
+      "url": "https://huggingface.co/Efficient-Large-Model/SANA-Video_2.0_5B_720p",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Efficient-Large-Model/SANA-Video_2.0_5B_720p at main",
+      "url": "https://huggingface.co/Efficient-Large-Model/SANA-Video_2.0_5B_720p/tree/main",
+      "snippet": "Instructions to use Efficient-Large-Model/SANA-Video_2.0_5B_720p with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "SANA-Video 2.0 | Efficient Video Generation",
+      "url": "https://nvlabs.github.io/Sana/Video2/",
+      "snippet": "We introduce SANA-Video 2.0, a hybrid video diffusion transformer instantiated at 5B and 14B scales under a unified architecture. Designed to generate high-quality video up to 720p on a single GPU, SANA-Video 2.0 matches full-softmax video DiTs in quality while retaining the favorable long-sequence scaling of linear attention. To avoid quadratic attention throughout, Hybrid Linear-Softmax ..."
+    },
+    {
+      "title": "SANA Video - nvlabs.github.io",
+      "url": "https://nvlabs.github.io/Sana/Video/",
+      "snippet": "About SANA-Video We introduce SANA-Video, a small diffusion model that can efficiently generate videos up to 2K resolution and minute-length duration. SANA-Video synthesizes high-resolution, high-quality and long videos with strong text-video alignment at a remarkably fast speed, deployable on RTX 5090 GPU. Two core designs ensure our efficient, effective and long video generation: (1) Linear ..."
+    },
+    {
+      "title": "SANA-Video_2.0_5B_720p by Efficient-Large-Model | AI Market Cap",
+      "url": "https://aimarketcap.tech/models/efficient-large-model-sana-video-2-0-5b-720p",
+      "snippet": "Explore SANA-Video_2.0_5B_720p by Efficient-Large-Model — benchmark coverage where available, pricing, and comparisons on AI Market Cap."
+    }
+  ]
+}

@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "Dennis1315/cypher-build-code-c-30b-v10",
+  "slug": "dennis1315-cypher-build-code-c-30b-v10",
+  "author": "Dennis1315",
+  "url": "https://huggingface.co/Dennis1315/cypher-build-code-c-30b-v10",
+  "created_at": "2026-08-27T06:57:49.000Z",
+  "updated_at": "2026-08-27T06:58:43.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "arxiv:1910.09700",
+    "base_model:Qwen/Qwen3-14B",
+    "base_model:adapter:Qwen/Qwen3-14B",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 179216802,
+  "storage_human": "179 MB",
+  "base_model": "Qwen/Qwen3-14B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - Mekky2/cypher: AI model for identifying and patching ...",
+      "url": "https://github.com/Mekky2/cypher",
+      "snippet": "Cypher is a local, AI-powered static application security testing (SAST) tool. It leverages the 32-billion parameter Qwen2.5-Coder model and precise Abstract Syntax Tree (AST) parsing to audit codebases for vulnerabilities without sending your proprietary code to the cloud."
+    },
+    {
+      "title": "Building a multimodal, multi-agent system using Azure AI Agent Service ...",
+      "url": "https://techcommunity.microsoft.com/blog/azure-ai-foundry-blog/building-a-multimodal-multi-agent-system-using-azure-ai-agent-service-and-openai/4396267",
+      "snippet": "By the end of this blog you will learn how to build a structured, modular conversational AI system using a multi-agent architecture with Azure AI Agent Service and OpenAI Agent SDK. You&#x27;ll understand how to set up specialized agents—such as Triage, FAQ, Account Management, and Live Agent—to efficiently handle diverse customer interactions by delegating tasks based on user input."
+    },
+    {
+      "title": "Dennis1315/cypher-PRIME-TURBO-8B-v8-GGUF at main - Hugging Face",
+      "url": "https://huggingface.co/Dennis1315/cypher-PRIME-TURBO-8B-v8-GGUF/tree/main",
+      "snippet": "Dennis1315 / cypher-PRIME-TURBO-8B-v8-GGUF like 0 Text Generation PEFT Safetensors Transformers lora conversational arxiv:1910.09700 Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "Dennis1315/cypher-CODE-PRM-8B-v8-GGUF at main - Hugging Face",
+      "url": "https://huggingface.co/Dennis1315/cypher-CODE-PRM-8B-v8-GGUF/blob/main/adapter_model.safetensors",
+      "snippet": "Dennis1315 / cypher-CODE-PRM-8B-v8-GGUF like 0 Text Generation PEFT Safetensors Transformers lora conversational arxiv:1910.09700 Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "GitHub - bee-san/Ciphey: ⚡ Automatically decrypt encryptions without ...",
+      "url": "https://github.com/bee-san/Ciphey",
+      "snippet": "⚡ Automatically decrypt encryptions without knowing the key or cipher, decode encodings, and crack hashes ⚡ - bee-san/Ciphey"
+    }
+  ]
+}

@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "Anthonytaylorfuh/multimodal-generation-reading",
+  "slug": "anthonytaylorfuh-multimodal-generation-reading",
+  "author": "Anthonytaylorfuh",
+  "url": "https://huggingface.co/Anthonytaylorfuh/multimodal-generation-reading",
+  "created_at": "2026-08-27T11:10:36.000Z",
+  "updated_at": "2026-08-27T11:10:45.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "transformer",
+    "research-notes",
+    "multimodal-generation",
+    "license:cc-by-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 49600,
+  "parameters_human": "49600",
+  "storage_bytes": 198880,
+  "storage_human": "198880 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Multi-Modal Generative AI: Multi-modal LLM, Diffusion and Beyond",
+      "url": "https://arxiv.org/html/2409.14993v1",
+      "snippet": "To serve both generation and understanding objectives, i) should we just employ Mixture of Experts (MoE) strategies, ii) or only use a dense model? To answer these questions, in this paper, we focus on problems regarding the visual/video-language modalities, presenting a deep and comprehensive discussion of multi-modal generative AI."
+    },
+    {
+      "title": "Awesome Unified Multimodal Understanding and Generation",
+      "url": "https://github.com/Mingyue-Cheng/Awesome-Unified-Multimodal-Understanding-and-Generation",
+      "snippet": "A curated list of papers, models, and resources dedicated to unified multimodal understanding and generation, with a focus on research that seamlessly integrates multimodal comprehension (e.g., interpreting and aligning text, images, and other modalities) with the ability to generate high-quality multimodal outputs. This repository serves as a comprehensive entry point for researchers ..."
+    },
+    {
+      "title": "Multi-modal Generative AI: Multi-modal LLMs, Diffusions and the Unification",
+      "url": "https://arxiv.org/pdf/2409.14993",
+      "snippet": "To further unify understanding and generation, is it sufficient to employ Mixture of Experts (MoE) strategies or only use a dense model? To answer these questions, we conduct deep and compre-hensive discussions of multi-modal generative AI in this paper, whose overall organization is illustrated in Fig. 1."
+    },
+    {
+      "title": "Multimodal Learning in Artificial Intelligence (AI)",
+      "url": "https://www.geeksforgeeks.org/artificial-intelligence/multimodal-ai/",
+      "snippet": "Multimodal AI refers to artificial intelligence systems that integrate and process multiple types of data, such as text, images, audio, and video, to understand and generate comprehensive insights and responses. It aims to mimic human-like understanding by combining various sensory inputs. The article aims to provide a comprehensive understanding of multimodal AI and explores associated ..."
+    },
+    {
+      "title": "Generative AI - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Generative_AI",
+      "snippet": "Generative artificial intelligence (GenAI) is a subfield of artificial intelligence (AI) that uses generative models to generate text, images, videos, audio, software code or other forms of data. [1] These models learn the underlying patterns and structures of their training data, and use them to generate new data [2] in response to input, which often takes the form of natural language prompts ..."
+    }
+  ]
+}

@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "EigenLabs/Qwen3.8-27B-MTP-4bit",
+  "slug": "eigenlabs-qwen3-8-27b-mtp-4bit",
+  "author": "EigenLabs",
+  "url": "https://huggingface.co/EigenLabs/Qwen3.8-27B-MTP-4bit",
+  "created_at": "2026-08-27T06:26:12.000Z",
+  "updated_at": "2026-08-27T06:26:24.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "mlx",
+  "languages": [],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "qwen3_5_mtp",
+    "mtp",
+    "qwen3.8",
+    "speculative-decoding",
+    "base_model:Qwen/Qwen3.8-27B",
+    "base_model:quantized:Qwen/Qwen3.8-27B",
+    "license:apache-2.0",
+    "4-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 66381312,
+  "parameters_human": "66.4M",
+  "storage_bytes": 238934117,
+  "storage_human": "239 MB",
+  "base_model": "Qwen/Qwen3.8-27B",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Qwen3.8-27B - GitHub",
+      "url": "https://github.com/AlibabaCloud-Official/Qwen3.8-27B",
+      "snippet": "Welcome to the repository for Qwen3.8-27B —the latest native multimodal dense open-weight model released by Alibaba&#x27;s Qwen team. Delivering top-tier performance for local hardware, Qwen3.8-27B excels at coding, agentic workflows, and office automation tasks."
+    },
+    {
+      "title": "EigenLabs/Qwen3.8-27B-4bit · Hugging Face",
+      "url": "https://huggingface.co/EigenLabs/Qwen3.8-27B-4bit",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Qwen3.8-27B MTP: the flag was free the whole time - GitHub",
+      "url": "https://github.com/sudoingX/qwen38-mtp",
+      "snippet": "One llama.cpp flag unlocks +33% to +145% decode speed for Qwen3.8-27B on consumer GPUs, depending on the card, and the knobs the community mapped push further still. No new files, no conversion, no custom build. The MTP head already ships inside the GGUF you downloaded on launch night."
+    },
+    {
+      "title": "Qwen/Qwen3.8-27B · Hugging Face",
+      "url": "https://huggingface.co/Qwen/Qwen3.8-27B",
+      "snippet": "MathVision: Qwen3.8-27B is evaluated using the fixed prompt: \"Please reason step by step, and put your final answer within &#92;boxed {}.\" For the remaining models, we report the higher score from two prompt variants—one with and one without the &#92;boxed {} formatting requirement."
+    },
+    {
+      "title": "Run Qwen3.8-27B Locally: 24GB Mac and GPU Guide (2026)",
+      "url": "https://modelfit.io/blog/run-qwen38-27b-locally-2026/",
+      "snippet": "TL;DR: Qwen3.8-27B is a dense 27B vision-language model under Apache-2.0 with 262,144-token context and MTP decoding. The Q4 build is about 17.8GB, so a 24GB Mac or GPU runs it comfortably, and AMD measured 24.5 tok/s on Ryzen AI Max+ 395. One command to start: ollama run qwen3.8:27b. What Makes Qwen3.8-27B Different?"
+    }
+  ]
+}

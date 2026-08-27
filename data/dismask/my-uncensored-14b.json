@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "DismasK/My-Uncensored-14B",
+  "slug": "dismask-my-uncensored-14b",
+  "author": "DismasK",
+  "url": "https://huggingface.co/DismasK/My-Uncensored-14B",
+  "created_at": "2026-08-27T02:22:02.000Z",
+  "updated_at": "2026-08-27T02:22:03.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "merge",
+    "mergekit",
+    "lazymergekit",
+    "Qwen/Qwen2.5-14B-Instruct",
+    "cognitivecomputations/Dolphin3.0-R1-Qwen-14B",
+    "base_model:Qwen/Qwen2.5-14B-Instruct",
+    "base_model:finetune:Qwen/Qwen2.5-14B-Instruct",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": "Qwen/Qwen2.5-14B-Instruct, cognitivecomputations/Dolphin3.0-R1-Qwen-14B",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Phi-4 14B — AI LLM model | UncensoredHub",
+      "url": "https://uncensoredhub.ai/models/phi-4",
+      "snippet": "Microsoft&#x27;s 14B reasoning-focused model. Strong math/logic. Very aligned — low uncensored score but useful for benchmarks."
+    },
+    {
+      "title": "GitHub - samssouza/uncensored-ai-list",
+      "url": "https://github.com/samssouza/uncensored-ai-list",
+      "snippet": "Contribute to samssouza/uncensored-ai-list development by creating an account on GitHub."
+    },
+    {
+      "title": "Uncensored LLMs — open-source chatbot & roleplay models",
+      "url": "https://uncensoredhub.ai/models/llm",
+      "snippet": "Open-source uncensored LLMs Run these locally with Ollama, LM Studio, llama.cpp, or text-generation-webui. Ranked by measured uncensored score — how often the model complies with adult/controversial requests without refusal."
+    },
+    {
+      "title": "Models - Hugging Face",
+      "url": "https://huggingface.co/models?search=uncensored",
+      "snippet": "Explore machine learning models."
+    },
+    {
+      "title": "DeepSeek-R1-Distill-Qwen-14B-Uncensored - Hugging Face",
+      "url": "https://huggingface.co/nicoboss/DeepSeek-R1-Distill-Qwen-14B-Uncensored",
+      "snippet": "This is a finetune of DeepSeek-R1-Distill-Qwen-14B to make it uncensored. Big thanks to @Guilherme34 for creating the uncensor dataset used for this uncensored finetune. This model is based on DeepSeek-R1-Distill-Qwen-14B, and is governed by the MIT License."
+    }
+  ]
+}

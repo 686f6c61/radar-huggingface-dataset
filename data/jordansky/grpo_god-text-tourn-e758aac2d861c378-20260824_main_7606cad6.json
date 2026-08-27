@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "Jordansky/grpo_god-text-tourn-e758aac2d861c378-20260824_main_7606cad6",
+  "slug": "jordansky-grpo_god-text-tourn-e758aac2d861c378-20260824_main_7606cad6",
+  "author": "Jordansky",
+  "url": "https://huggingface.co/Jordansky/grpo_god-text-tourn-e758aac2d861c378-20260824_main_7606cad6",
+  "created_at": "2026-08-27T09:50:08.000Z",
+  "updated_at": "2026-08-27T09:50:16.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "arxiv:1910.09700",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1408195037,
+  "storage_human": "1.4 GB",
+  "base_model": "None",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "gradients-io-tournaments/tournament-tourn_e758aac2d861c378_20260824 ...",
+      "url": "https://huggingface.co/gradients-io-tournaments/tournament-tourn_e758aac2d861c378_20260824-318ef829-69d5-40c9-b803-b3b78b525668-5D2Qee4V",
+      "snippet": "gradients-io-tournaments / tournament-tourn_e758aac2d861c378_20260824-318ef829-69d5-40c9-b803-b3b78b525668-5D2Qee4V like 0 Text Generation Transformers Safetensors English llama llama-3 meta facebook unsloth text-generation-inference License:llama3.2 Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "Group Relative Policy Optimization (GRPO) — verl documentation",
+      "url": "https://verl.readthedocs.io/en/latest/algo/grpo.html",
+      "snippet": "Group Relative Policy Optimization (GRPO) Last updated: 05/31/2025. In reinforcement learning, classic algorithms like PPO rely on a \"critic\" model to estimate the value of actions, guiding the learning process. However, training this critic model can be resource-intensive. GRPO simplifies this process by eliminating the need for a separate critic model. Instead, it operates as follows ..."
+    },
+    {
+      "title": "god-text-tourn-c9cdf5551df84ee6-20260312-position-2/scripts/train_grpo ...",
+      "url": "https://github.com/gradients-opensource/god-text-tourn-c9cdf5551df84ee6-20260312-position-2/blob/main/scripts/train_grpo.py",
+      "snippet": "main god-text-tourn-c9cdf5551df84ee6-20260312-position-2 / scripts / train_grpo.py Code Blame 551 lines (462 loc) · 22.4 KB Raw 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 ..."
+    },
+    {
+      "title": "god-text-tourn-c9cdf5551df84ee6-20260312-position-2/scripts/grpo_config ...",
+      "url": "https://github.com/gradients-opensource/god-text-tourn-c9cdf5551df84ee6-20260312-position-2/blob/main/scripts/grpo_config.py",
+      "snippet": "main god-text-tourn-c9cdf5551df84ee6-20260312-position-2 / scripts / grpo_config.py Top Code Blame 365 lines (333 loc) · 11.7 KB Raw Edit and raw actions 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 32 33 34 35 36 37 38 39 40 41 42 43 44 45 46 47 48 49 50 51 52 53 54 55 56 57 58 59 60 61 62 63 64 65 66 67 ..."
+    },
+    {
+      "title": "GRPO Trainer · Hugging Face",
+      "url": "https://huggingface.co/docs/trl/grpo_trainer",
+      "snippet": "GRPO Trainer Overview TRL supports the GRPO Trainer for training language models, as described in the paper DeepSeekMath: Pushing the Limits of Mathematical Reasoning in Open Language Models by Zhihong Shao, Peiyi Wang, Qihao Zhu, Runxin Xu, Junxiao Song, Mingchuan Zhang, Y. K. Li, Y. Wu, Daya Guo. The abstract from the paper is the following: Mathematical reasoning poses a significant ..."
+    }
+  ]
+}

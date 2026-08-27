@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "tadiecool29/rasyosef-roberta-base-amharic-finetuned-stl-stance",
+  "slug": "tadiecool29-rasyosef-roberta-base-amharic-finetuned-stl-stance",
+  "author": "tadiecool29",
+  "url": "https://huggingface.co/tadiecool29/rasyosef-roberta-base-amharic-finetuned-stl-stance",
+  "created_at": "2026-08-27T06:46:10.000Z",
+  "updated_at": "2026-08-27T06:46:42.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "generated_from_trainer",
+    "base_model:rasyosef/roberta-base-amharic",
+    "base_model:finetune:rasyosef/roberta-base-amharic",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 110619652,
+  "parameters_human": "110.6M",
+  "storage_bytes": 442508025,
+  "storage_human": "443 MB",
+  "base_model": "rasyosef/roberta-base-amharic",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "rasyosef/RoBERTa-Amharic-Embed-Base · Hugging Face",
+      "url": "https://huggingface.co/rasyosef/RoBERTa-Amharic-Embed-Base",
+      "snippet": "RoBERTa Amharic Embed Base This is a sentence-transformers model finetuned from rasyosef/roberta-base-amharic. It maps sentences & paragraphs to a 768-dimensional dense vector space and can be used for semantic textual similarity, semantic search, paraphrase mining, text classification, clustering, and more. Model Details Model Description"
+    },
+    {
+      "title": "rasyosef/roberta-base-amharic · Hugging Face",
+      "url": "https://huggingface.co/rasyosef/roberta-base-amharic",
+      "snippet": "roberta-base-amharic This model has the same architecture as xlm-roberta-base and was pretrained from scratch using the Amharic subsets of the oscar, mc4, and amharic-sentences-corpus datasets, on a total of 290 Million tokens. The tokenizer was trained from scratch on the same text corpus, and had a vocabulary size of 32k."
+    },
+    {
+      "title": "[roberta-base-amharic] Named Entity Recognition.ipynb",
+      "url": "https://github.com/rasyosef/amharic-named-entity-recognition/blob/main/notebooks/%5Broberta-base-amharic%5D%20Named%20Entity%20Recognition.ipynb",
+      "snippet": "notebooks to finetune Amharic BERT and RoBERTa models for named entity recognition - rasyosef/amharic-named-entity-recognition"
+    },
+    {
+      "title": "rasyosef/amharic-text-embedding-models-training - GitHub",
+      "url": "https://github.com/rasyosef/amharic-text-embedding-models-training",
+      "snippet": "Our largest embedding model, RoBERTa-Base-Amharic-Embed beats all of the multilingual embedding models on the MRR@10, NDCG@10 and Recall metrics while having 1/5th of their param count."
+    },
+    {
+      "title": "rasyosef/colbert-roberta-amharic-base - Hugging Face Hub Pac... - Socket",
+      "url": "https://socket.dev/huggingface/package/rasyosef/colbert-roberta-amharic-base",
+      "snippet": "ColBERT-Roberta-Amharic-Base This is a PyLate model finetuned from rasyosef/roberta-base-amharic. It maps sentences & paragraphs to sequences of 128-dimensional dense vectors and can be used for semantic textual similarity using the MaxSim operator."
+    }
+  ]
+}

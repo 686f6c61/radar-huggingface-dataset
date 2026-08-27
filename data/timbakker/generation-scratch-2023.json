@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "Timbakker/generation-scratch-2023",
+  "slug": "timbakker-generation-scratch-2023",
+  "author": "Timbakker",
+  "url": "https://huggingface.co/Timbakker/generation-scratch-2023",
+  "created_at": "2026-08-27T10:42:06.000Z",
+  "updated_at": "2026-08-27T10:42:15.000Z",
+  "license": "bsd-3-clause",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "cnn_transformer",
+    "pytorch",
+    "cnn-transformer",
+    "generation",
+    "license:bsd-3-clause",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 49600,
+  "parameters_human": "49600",
+  "storage_bytes": 198880,
+  "storage_human": "198880 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Scratch - Search",
+      "url": "https://scratch.mit.edu/search/projects?q=ai",
+      "snippet": "Scratch is a free programming language and online community where you can create your own interactive stories, games, and animations."
+    },
+    {
+      "title": "I Made an Image AI in Scratch - YouTube",
+      "url": "https://www.youtube.com/watch?v=wkPHvBhOTnw",
+      "snippet": "Watch neural networks come to life as I try to build an image generator inside Scratch.Text generation is already hard enough, but image generation is on ano..."
+    },
+    {
+      "title": "VizAI - Scratch AI Code Generator: Make Blocks from Your Description",
+      "url": "https://vizai.dev/",
+      "snippet": "Generate Scratch programming blocks with AI, download as .sprite3 files, and export block images. Create, visualize, and export Scratch code blocks directly into your Scratch projects."
+    },
+    {
+      "title": "Image Trainer - Build Custom AI Models in Scratch - pishi.ai",
+      "url": "https://pishi.ai/help/image-trainer-build-custom-ai-models-in-scratch/",
+      "snippet": "Image Trainer - Build Custom AI Models in Scratch The Image Trainer extension brings real machine learning into Scratch. It lets you train your own AI models to recognize images - toys, faces, hand gestures, objects, or anything visible to the camera - all in real time, right in your browser, with no coding or setup required. Simple enough for students, powerful enough for creative ..."
+    },
+    {
+      "title": "FREE AI-Powered Scratch Code Generator - Build Interactive Games and ...",
+      "url": "https://workik.com/scratch-code-generator",
+      "snippet": "Boost Scratch code generation, debugging, and optimization with Workik AI. Ideal for animations, sprite interactions, game logic, & API integration. Use Scratch AI for free."
+    }
+  ]
+}

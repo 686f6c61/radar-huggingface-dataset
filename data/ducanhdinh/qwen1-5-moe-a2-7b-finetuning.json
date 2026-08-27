@@ -5,7 +5,7 @@
   "author": "ducanhdinh",
   "url": "https://huggingface.co/ducanhdinh/Qwen1.5-MoE-A2.7B-Finetuning",
   "created_at": "2026-08-18T13:09:00.000Z",
-  "updated_at": "2026-08-26T00:24:21.000Z",
+  "updated_at": "2026-08-27T00:18:47.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": null,
@@ -29,8 +29,8 @@
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
-  "storage_bytes": 218280423971,
-  "storage_human": "218.3 GB",
+  "storage_bytes": 235066456198,
+  "storage_human": "235.1 GB",
   "base_model": "Qwen/Qwen1.5-MoE-A2.7B",
   "formats": [
     "safetensors"

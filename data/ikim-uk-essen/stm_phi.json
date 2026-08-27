@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "ikim-uk-essen/stm_phi",
+  "slug": "ikim-uk-essen-stm_phi",
+  "author": "ikim-uk-essen",
+  "url": "https://huggingface.co/ikim-uk-essen/stm_phi",
+  "created_at": "2026-08-27T08:04:17.000Z",
+  "updated_at": "2026-08-27T08:13:07.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "sentence-similarity",
+  "library": "sentence-transformers",
+  "languages": [],
+  "tags": [
+    "sentence-transformers",
+    "safetensors",
+    "phi3",
+    "mergekit",
+    "merge",
+    "retrieval",
+    "biomedical",
+    "phi",
+    "sentence-similarity",
+    "arxiv:2602.04731",
+    "base_model:microsoft/Phi-4-mini-instruct",
+    "base_model:finetune:microsoft/Phi-4-mini-instruct",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 3836021760,
+  "parameters_human": "3.84B",
+  "storage_bytes": 7687588967,
+  "storage_human": "7.7 GB",
+  "base_model": "microsoft/Phi-4-mini-instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ikim-uk-essen (IKIM) - Hugging Face",
+      "url": "https://huggingface.co/ikim-uk-essen/datasets",
+      "snippet": "Org profile for IKIM on Hugging Face, the AI community building the future."
+    },
+    {
+      "title": "IKIM - the Institute for Artificial Intelligence in Medicine",
+      "url": "https://www.ikim.uk-essen.de/",
+      "snippet": "Founded in 2019 the Institute for Artificial Intelligence in Medicine (IKIM) brings together researchers from a number of disciplines to perform research, improve patient care and innovate training of tomorrow&#x27;s physicians. The institute is part of the University Medicine Essen and the University of Duisburg-Essen. Learn more about our ..."
+    },
+    {
+      "title": "ikim-uk-essen (IKIM) - Hugging Face",
+      "url": "https://huggingface.co/ikim-uk-essen",
+      "snippet": "The Institute for Artificial Intelligence in Medicine (IKIM) brings together researchers from a number of disciplines to perform research, improve patient care and innovate training of tomorrow&#x27;s physicians and AI scientists in healthcare. The institute is part of the University Medicine Essen and the University of Duisburg-Essen."
+    },
+    {
+      "title": "Institute for AI in Medicine (IKIM) - GitHub",
+      "url": "https://github.com/IKIM-Essen",
+      "snippet": "Institute for AI in Medicine (IKIM) Institute for AI in Medicine (IKIM); University of Duisburg-Essen 28 followers Germany https://www.ikim.uk-essen.de Overview Repositories 26 Projects Packages People 1"
+    },
+    {
+      "title": "Phi Open Models - Small Language Models | Microsoft Azure",
+      "url": "https://azure.microsoft.com/en-us/products/phi/",
+      "snippet": "Phi open model family Phi models offer cost-effective, high-performance AI solutions at the edge, pushing the boundaries of generative AI."
+    }
+  ]
+}

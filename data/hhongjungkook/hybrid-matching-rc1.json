@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "hhongjungkook/hybrid-matching-rc1",
+  "slug": "hhongjungkook-hybrid-matching-rc1",
+  "author": "hhongjungkook",
+  "url": "https://huggingface.co/hhongjungkook/hybrid-matching-rc1",
+  "created_at": "2026-08-27T02:10:16.000Z",
+  "updated_at": "2026-08-27T02:10:26.000Z",
+  "license": "bsd-3-clause",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "hybrid",
+    "pytorch",
+    "matching",
+    "license:bsd-3-clause",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 33088,
+  "parameters_human": "33088",
+  "storage_bytes": 132832,
+  "storage_human": "132832 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "hhongjungkook (Hong Jungkook) - Hugging Face",
+      "url": "https://huggingface.co/hhongjungkook",
+      "snippet": "User profile of Hong Jungkook on Hugging Face"
+    },
+    {
+      "title": "Take-Away Order Accuracy: Release Notes #",
+      "url": "https://docs.openedgeplatform.intel.com/2026.2/edge-ai-suites/ai-suite-retail/order-accuracy/take-away/release-notes.html",
+      "snippet": "Highlights # AI-Powered Order Validation: Real-time take-away order verification using Qwen2.5-VL-7B Vision Language Model Multi-Station Parallel Processing: Concurrent order validation across multiple stations via RTSP streams Intelligent Frame Selection: YOLO11-based frame selection with OpenVINO™ INT8 inference for optimal VLM input Semantic Matching: Hybrid exact/semantic item matching ..."
+    },
+    {
+      "title": "GitHub - fredzzhang/h-detr: [CVPR2023] This is an official ...",
+      "url": "https://github.com/fredzzhang/h-detr",
+      "snippet": "[CVPR2023] This is an official implementation of paper \"DETRs with Hybrid Matching\". - fredzzhang/h-detr"
+    },
+    {
+      "title": "AI Aimbot Models & YOLO Detection Models | MossyModels",
+      "url": "https://mossymodels.com/",
+      "snippet": "Browse 661+ free YOLO and ONNX detection models across 43+ games. Community library for Fortnite, Valorant, Warzone, Apex Legends, and more."
+    },
+    {
+      "title": "Aditya-Ranjan1234/AI-Peer-Matcher - GitHub",
+      "url": "https://github.com/Aditya-Ranjan1234/AI-Peer-Matcher",
+      "snippet": "Hybrid Matching Engine: Combines NLP Semantic Analysis with a structured Knowledge Graph to understand both context and skill relationships. Dual Matching Scores: View both \"AI Match\" (sentiment/context) and \"Graph Match\" (structural skill overlap) for every pairing. Modern UI: Premium dark-themed interface with glassmorphism effects and dynamic score badges. REST API: FastAPI-powered backend ..."
+    }
+  ]
+}

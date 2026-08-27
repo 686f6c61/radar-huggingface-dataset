@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "C0mpl1cated3/trash_classifier_v2",
+  "slug": "c0mpl1cated3-trash_classifier_v2",
+  "author": "C0mpl1cated3",
+  "url": "https://huggingface.co/C0mpl1cated3/trash_classifier_v2",
+  "created_at": "2026-08-27T07:33:12.000Z",
+  "updated_at": "2026-08-27T07:57:04.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 103178723,
+  "storage_human": "103 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - akathedeveloper/Trash-Classifier: A deep learning pipeline for ...",
+      "url": "https://github.com/akathedeveloper/Trash-Classifier",
+      "snippet": "Status: Deployed A deep learning-powered system to automatically classify household waste into six recyclable categories using state-of-the-art transfer learning with advanced CNN backbones. This project benchmarks EfficientNetV2 (S, M, B2, L), EfficientNetB0, MobileNetV2, and ResNet50 — identifying the best model for real-world deployment. An interactive Gradio web app is hosted live on ..."
+    },
+    {
+      "title": "moyasser20/trash-classifier-models · Hugging Face",
+      "url": "https://huggingface.co/moyasser20/trash-classifier-models",
+      "snippet": "Trash Classifier Models This repository contains trained models for trash/material classification. Models Included cnn_model.keras: CNN model for feature extraction svm_model.pkl: SVM classifier knn_model.pkl: KNN classifier scaler.pkl: Feature scaler class_mapping.pkl: Class label mapping config.json: Model configuration Usage"
+    },
+    {
+      "title": "GitHub - markgacoka/trash-classifier: An AI model that classifies ...",
+      "url": "https://github.com/markgacoka/trash-classifier",
+      "snippet": "🚮 An AI model that classifies trash into compost, recycle and landfill - markgacoka/trash-classifier"
+    },
+    {
+      "title": "LLM Leaderboard 2026: Compare 300+ Top AI Models by Intelligence, Speed ...",
+      "url": "https://llm-stats.com/leaderboards/llm-leaderboard",
+      "snippet": "The LLM Leaderboard — independent ranking of GPT, Claude, Gemini, Llama, DeepSeek and 300+ AI models by intelligence, speed and price. Filter by provider, license, modality and context window; sort by every benchmark. Composite LLM Stats Score updated continuously from public benchmarks and live API metrics."
+    },
+    {
+      "title": "Z.ai shares surge 8% on new AI model running only on Chinese chips - CNBC",
+      "url": "https://www.cnbc.com/2026/08/27/zai-shares-surge-new-ai-model-using-chinese-chips.html",
+      "snippet": "Z.ai&#x27;s shares rose after the company launched a new AI model that it claimed runs only on Chinese chips. It&#x27;s the latest indication of China&#x27;s efforts to ramp up homegrown computing capability ..."
+    }
+  ]
+}

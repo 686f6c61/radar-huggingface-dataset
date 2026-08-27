@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "robbypambudi/prompt-shield-flan-t5-small",
+  "slug": "robbypambudi-prompt-shield-flan-t5-small",
+  "author": "robbypambudi",
+  "url": "https://huggingface.co/robbypambudi/prompt-shield-flan-t5-small",
+  "created_at": "2026-08-27T07:37:10.000Z",
+  "updated_at": "2026-08-27T07:37:40.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "t5",
+    "text-classification",
+    "prompt-injection",
+    "security",
+    "flan-t5",
+    "base_model:google/flan-t5-small",
+    "base_model:finetune:google/flan-t5-small",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 60775298,
+  "parameters_human": "60.8M",
+  "storage_bytes": 243126200,
+  "storage_human": "243 MB",
+  "base_model": "google/flan-t5-small",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "flan-t5-small: Text-to-Text model — overview, use cases, alternatives",
+      "url": "https://www.aimodels.fyi/models/huggingFace/flan-t5-small-google",
+      "snippet": "Overview flan-t5-small is a text-to-text transformer model maintained by google that performs instruction-following tasks across 1000+ diverse NLP jobs. Built on the T5 architecture and fine-tuned on instruction data, this model handles translation, summarization, question answering, reasoning, and classification without task-specific training. The model is available under the Apache 2.0 ..."
+    },
+    {
+      "title": "transformers/docs/source/en/model_doc/flan-t5.md at main - GitHub",
+      "url": "https://github.com/huggingface/transformers/blob/main/docs/source/en/model_doc/flan-t5.md",
+      "snippet": "FLAN-T5 includes the same improvements as T5 version 1.1 (see here for the full details of the model&#x27;s improvements.) Google has released the following variants: google/flan-t5-small google/flan-t5-base google/flan-t5-large google/flan-t5-xl google/flan-t5-xxl. The original checkpoints can be found here. Refer to T5&#x27;s documentation page for all API reference, code examples and notebooks. For ..."
+    },
+    {
+      "title": "t5-small download | SourceForge.net",
+      "url": "https://sourceforge.net/projects/t5-small/",
+      "snippet": "Download t5-small for free. T5-Small: Lightweight text-to-text transformer for NLP tasks. T5-Small is a lightweight variant of the Text-To-Text Transfer Transformer (T5), designed to handle a wide range of NLP tasks using a unified text-to-text approach. Developed by researchers at Google, this model reframes all tasks—such as translation, summarization, classification, and question ..."
+    },
+    {
+      "title": "google (Google) - Hugging Face",
+      "url": "https://huggingface.co/google/models",
+      "snippet": "Discover Google&#x27;s open-source AI models and tools on Hugging Face, fostering innovation and collaboration in the AI community."
+    },
+    {
+      "title": "FLAN-T5 Tutorial: Guide and Fine-Tuning - DataCamp",
+      "url": "https://www.datacamp.com/tutorial/flan-t5-tutorial",
+      "snippet": "Discover fine-tuning FLAN-T5 for NLP tasks with our comprehensive guide. Learn how to optimize this powerful model for question-answering scenarios."
+    }
+  ]
+}

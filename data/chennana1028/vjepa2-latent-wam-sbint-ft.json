@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "chennana1028/vjepa2-latent-wam-sbint-ft",
+  "slug": "chennana1028-vjepa2-latent-wam-sbint-ft",
+  "author": "chennana1028",
+  "url": "https://huggingface.co/chennana1028/vjepa2-latent-wam-sbint-ft",
+  "created_at": "2026-08-27T06:21:07.000Z",
+  "updated_at": "2026-08-27T06:22:08.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": "robotics",
+  "library": "pytorch",
+  "languages": [],
+  "tags": [
+    "pytorch",
+    "robotics",
+    "vjepa2",
+    "latent-wam",
+    "flow-matching",
+    "sbint",
+    "openarm",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1748107277,
+  "storage_human": "1.7 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - facebookresearch/vjepa2: PyTorch code and models for VJEPA2 ...",
+      "url": "https://github.com/facebookresearch/vjepa2",
+      "snippet": "See vjepa2_demo.ipynb (Colab Link) or vjepa2_demo.py for an example of how to load both the HuggingFace and PyTorch V-JEPA 2 models and run inference on a sample video to get a sample classification result."
+    },
+    {
+      "title": "[2506.09985] V-JEPA 2: Self-Supervised Video Models Enable ...",
+      "url": "https://arxiv.org/abs/2506.09985",
+      "snippet": "A major challenge for modern AI is to learn to understand the world and learn to act largely by observation. This paper explores a self-supervised approach that combines internet-scale video data with a small amount of interaction data (robot trajectories), to develop models capable of understanding, predicting, and planning in the physical world. We first pre-train an action-free joint ..."
+    },
+    {
+      "title": "cacybernetic/vjepa2: PyTorch code + training - GitHub",
+      "url": "https://github.com/cacybernetic/vjepa2",
+      "snippet": "A big thank-you to the Meta AI (FAIR) team behind V-JEPA and V-JEPA 2, and to the reference implementation facebookresearch/vjepa2, which served as the primary reference for the architecture and training recipe."
+    },
+    {
+      "title": "V-JEPA 2 · Hugging Face",
+      "url": "https://huggingface.co/docs/transformers/model_doc/vjepa2",
+      "snippet": "V-JEPA 2-AC is a latent action-conditioned world model post-trained from V-JEPA 2 (using a small amount of robot trajectory interaction data) that solves robot manipulation tasks without environment-specific data collection or task-specific training or calibration. You can find all original V-JEPA2 checkpoints under the V-JEPA 2 collection."
+    },
+    {
+      "title": "V-JEPA 2.1: Unlocking Dense Features in Video Self-Supervised Learning",
+      "url": "https://arxiv.org/html/2603.14482v1",
+      "snippet": "In this work, we study self-supervised learning with a latent mask-denoising objective, where the model predicts masked segments of an image or video directly in a learned representation space."
+    }
+  ]
+}

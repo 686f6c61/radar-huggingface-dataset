@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "minishlab/potion-retrieval-32m-onnx",
+  "slug": "minishlab-potion-retrieval-32m-onnx",
+  "author": "minishlab",
+  "url": "https://huggingface.co/minishlab/potion-retrieval-32m-onnx",
+  "created_at": "2026-08-27T08:50:48.000Z",
+  "updated_at": "2026-08-27T08:51:07.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "model2vec",
+  "languages": [],
+  "tags": [
+    "model2vec",
+    "onnx",
+    "embeddings",
+    "static-embeddings",
+    "sentence-transformers",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 129221770,
+  "storage_human": "129 MB",
+  "base_model": "minishlab/potion-retrieval-32m",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "minishlab/potion-retrieval-32M · Hugging Face",
+      "url": "https://huggingface.co/minishlab/potion-retrieval-32M",
+      "snippet": "This Model2Vec model is optmized for retrieval tasks. It is a finetune of potion-base-32M. It&#x27;s finetuned using a modified version of the training approach described in this blogpost. It uses static embeddings, allowing text embeddings to be computed orders of magnitude faster on both GPU and CPU."
+    },
+    {
+      "title": "onnx/model.onnx · minishlab/potion-retrieval-32M at main",
+      "url": "https://huggingface.co/minishlab/potion-retrieval-32M/blob/main/onnx/model.onnx",
+      "snippet": "main potion-retrieval-32M / onnx / model.onnx Pringled Upload model.onnx 3c52220 verified about 10 hours ago download Copy download link"
+    },
+    {
+      "title": "minishlab/potion-retrieval-32M - ONNX 模型库",
+      "url": "https://onnx.bimant.com/models/minishlab/potion-retrieval-32M",
+      "snippet": "我们从一个预训练的 Model2Vec 模型（potion-base-32M）开始。 我们将数据集大小减小到原来的十分之一。 在实验过程中，我们发现模型不需要完整的数据集就能收敛。 我们降低了学习率并训练 3 个 epoch 而不是 1 个。 使用过高的学习率会抹去使用预训练模型的效果。"
+    },
+    {
+      "title": "potion-retrieval-32M/onnx/model.onnx at main · ChenNingCong ... - GitHub",
+      "url": "https://github.com/ChenNingCong/potion-retrieval-32M/blob/main/onnx/model.onnx",
+      "snippet": "Mirror of huggingface.co/minishlab/potion-retrieval-32M for use on machines without HF access - ChenNingCong/potion-retrieval-32M"
+    },
+    {
+      "title": "potion-retrieval-32M/onnx at main · ChenNingCong/potion ... - GitHub",
+      "url": "https://github.com/ChenNingCong/potion-retrieval-32M/tree/main/onnx",
+      "snippet": "Mirror of huggingface.co/minishlab/potion-retrieval-32M for use on machines without HF access - ChenNingCong/potion-retrieval-32M"
+    }
+  ]
+}

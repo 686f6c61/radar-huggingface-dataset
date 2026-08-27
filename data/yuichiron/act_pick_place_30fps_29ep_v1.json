@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "Yuichiron/act_pick_place_30fps_29ep_v1",
+  "slug": "yuichiron-act_pick_place_30fps_29ep_v1",
+  "author": "Yuichiron",
+  "url": "https://huggingface.co/Yuichiron/act_pick_place_30fps_29ep_v1",
+  "created_at": "2026-08-27T07:27:35.000Z",
+  "updated_at": "2026-08-27T07:27:53.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "act",
+    "robotics",
+    "dataset:Yuichiron/so101_pick_place_30fps_50ep_20260827_20260827_152400",
+    "arxiv:2304.13705",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 51668614,
+  "parameters_human": "51.7M",
+  "storage_bytes": 206712864,
+  "storage_human": "207 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Yuichiron/act_blue_cube · Hugging Face",
+      "url": "https://huggingface.co/Yuichiron/act_blue_cube",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Yuichiron/act_blue_cube_v2 · Hugging Face",
+      "url": "https://huggingface.co/Yuichiron/act_blue_cube_v2",
+      "snippet": "Instructions to use Yuichiron/act_blue_cube_v2 with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Libraries LeRobot How to use Yuichiron/act_blue_cube_v2 with LeRobot: Notebooks Google Colab Kaggle Model Card for act Model Details Inputs & Outputs Training Dataset Training Configuration How to Get Started with the Model Run the policy on your ..."
+    },
+    {
+      "title": "\"Improved Pick and Place with ACT Model and Lerobot ... - LinkedIn",
+      "url": "https://www.linkedin.com/feed/update/urn:li:activity:7396252112306737154/",
+      "snippet": "I trained my robot to pick the green cube and place it into the bin using the ACT (Action Chunking Transformer) model. This time, the cleaner lighting, stable camera setup, and reduced noise paid ..."
+    },
+    {
+      "title": "Zen | OpenCode",
+      "url": "https://opencode.ai/docs/zen/",
+      "snippet": "We then worked with a few providers to make sure these were being served correctly. Finally, we benchmarked the combination of the model/provider and came up with a list that we feel good recommending. OpenCode Zen is an AI gateway that gives you access to these models."
+    },
+    {
+      "title": "Visual Prompting for Robotic Manipulation with Annotation-Guided Pick ...",
+      "url": "https://arxiv.org/abs/2508.08748",
+      "snippet": "Robotic pick-and-place tasks in convenience stores pose challenges due to dense object arrangements, occlusions, and variations in object properties such as color, shape, size, and texture. These factors complicate trajectory planning and grasping. This paper introduces a perception-action pipeline leveraging annotation-guided visual prompting, where bounding box annotations identify both ..."
+    }
+  ]
+}

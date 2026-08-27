@@ -5,7 +5,7 @@
   "author": "AlinaGonch",
   "url": "https://huggingface.co/AlinaGonch/granite41-3b-squad-ratio-0.10-seed-42",
   "created_at": "2026-08-18T16:11:03.000Z",
-  "updated_at": "2026-08-18T16:11:13.000Z",
+  "updated_at": "2026-08-27T02:16:42.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": null,
@@ -23,8 +23,8 @@
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
-  "storage_bytes": 124593064,
-  "storage_human": "125 MB",
+  "storage_bytes": 249186128,
+  "storage_human": "249 MB",
   "base_model": null,
   "formats": [
     "safetensors"

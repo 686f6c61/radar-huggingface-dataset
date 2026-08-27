@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "praful1/grpo_output",
+  "slug": "praful1-grpo_output",
+  "author": "praful1",
+  "url": "https://huggingface.co/praful1/grpo_output",
+  "created_at": "2026-08-27T09:20:39.000Z",
+  "updated_at": "2026-08-27T09:22:08.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3",
+    "text-generation",
+    "generated_from_trainer",
+    "trl",
+    "grpo",
+    "conversational",
+    "arxiv:2402.03300",
+    "base_model:praful1/Qwen-0.6b-pythoncode-instruct",
+    "base_model:finetune:praful1/Qwen-0.6b-pythoncode-instruct",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 596049920,
+  "parameters_human": "596.0M",
+  "storage_bytes": 1203565315,
+  "storage_human": "1.2 GB",
+  "base_model": "praful1/Qwen-0.6b-pythoncode-instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "praful1 (praful tiwari) - Hugging Face",
+      "url": "https://huggingface.co/praful1/models",
+      "snippet": "User profile of praful tiwari on Hugging Face"
+    },
+    {
+      "title": "praful1 (praful tiwari) - Hugging Face",
+      "url": "https://huggingface.co/praful1/datasets",
+      "snippet": "AI & ML interests ... Recent Activity updated a model about 2 months ago ... published a model about 2 months ago"
+    },
+    {
+      "title": "praful1/llama-1b-python-lora-4bit-v1 - Fast, Reliable, and Scalable ...",
+      "url": "https://friendli.ai/models/praful1/llama-1b-python-lora-4bit-v1",
+      "snippet": "Run praful1/llama-1b-python-lora-4bit-v1 with fast, reliable, and scalable inference on FriendliAI. Get low-latency performance with advanced quantization (FP4, FP8, INT4, INT8), continuous batching, optimized GPU kernels, token caching, and seamless API integration."
+    },
+    {
+      "title": "Tutorial: Train your own Reasoning model with GRPO - unsloth.ai",
+      "url": "https://unsloth.ai/docs/get-started/reinforcement-learning-rl-guide/tutorial-train-your-own-reasoning-model-with-grpo",
+      "snippet": "⚡ Tutorial: Train your own Reasoning model with GRPO Beginner&#x27;s Guide to transforming a model like Llama 3.1 (8B) into a reasoning model by using Unsloth and GRPO. DeepSeek developed GRPO (Group Relative Policy Optimization) to train their R1 reasoning models. Quickstart These instructions are for our pre-made Google Colab notebooks."
+    },
+    {
+      "title": "GitHub - mvp-ai-lab/RAVEN: Implementation of our paper \"RAVEN: Real ...",
+      "url": "https://github.com/mvp-ai-lab/RAVEN",
+      "snippet": "Implementation of our paper \"RAVEN: Real-time Autoregressive Video Extrapolation with Consistency-model GRPO\" - mvp-ai-lab/RAVEN"
+    }
+  ]
+}

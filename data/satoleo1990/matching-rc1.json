@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "satoleo1990/matching-rc1",
+  "slug": "satoleo1990-matching-rc1",
+  "author": "satoleo1990",
+  "url": "https://huggingface.co/satoleo1990/matching-rc1",
+  "created_at": "2026-08-27T09:49:15.000Z",
+  "updated_at": "2026-08-27T09:49:25.000Z",
+  "license": "bsd-3-clause",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "dino",
+    "pytorch",
+    "matching",
+    "license:bsd-3-clause",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 49600,
+  "parameters_human": "49600",
+  "storage_bytes": 198880,
+  "storage_human": "198880 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "satoleo1990 (佐藤蓮) - Hugging Face",
+      "url": "https://huggingface.co/satoleo1990/models",
+      "snippet": "satoleo1990&#x27;s models1 Sort: Recently updated satoleo1990/paper_001219762_efficient_attention Updated 1 day ago"
+    },
+    {
+      "title": "satoleo1990 (佐藤蓮) - Hugging Face",
+      "url": "https://huggingface.co/satoleo1990/datasets",
+      "snippet": "User profile of 佐藤蓮 on Hugging Face"
+    },
+    {
+      "title": "Model Matching for MSFS | Flightsim.to",
+      "url": "https://flightsim.to/miscellaneous/model-matching",
+      "snippet": "Miscellaneous→ Model Matching VATSIM - AIG Model Matching This add-on provides a custom model matching VMR file for VATSIM using Alpha India Group AI models, supporting over 160 airlines and several private operators. Installation involves placing the file and selecting it in vPilot model matching settings."
+    },
+    {
+      "title": "Modelmatching is broken with AI OFFLINE traffic + custom .bgl´s",
+      "url": "https://forums.flightsimulator.com/t/modelmatching-is-broken-with-ai-offline-traffic-custom-bgl-s/744922",
+      "snippet": "Description of the issue: Modelmatching has been broken in MSFS2024 since launch, when using AI OFFLINE traffic method with custom made traffic pland .bgl´s. Even there are matched title in [FLTSIM.0] ( aircraft.cfg) and matched aircraft name in traffic plan .bgl, MSFS 2024 will use randomly any AI model in community or any random MSFS AI model."
+    },
+    {
+      "title": "AIG-ModelMatching-For-MSFS2024/README.md at main - GitHub",
+      "url": "https://github.com/Samueleonard/AIG-ModelMatching-For-MSFS2024/blob/main/README.md",
+      "snippet": "AIG Model Matching for MSFS 2024 Introduction This package provides the latest version of the Alpha India Group (AIG) AI traffic models for MSFS 2024. It makes installation quick and easy by removing the need for the AIG installer. This pack is for use with VATSIM but may work with offline traffic (more details below)."
+    }
+  ]
+}

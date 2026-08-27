@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "OpenExploer/bevformer_tiny_resnet50_detection",
+  "slug": "openexploer-bevformer_tiny_resnet50_detection",
+  "author": "OpenExploer",
+  "url": "https://huggingface.co/OpenExploer/bevformer_tiny_resnet50_detection",
+  "created_at": "2026-08-27T06:03:57.000Z",
+  "updated_at": "2026-08-27T06:17:12.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "heal",
+    "horizon",
+    "bev",
+    "arxiv:2203.17270",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1363893012,
+  "storage_human": "1.4 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "BEVFormer-tiny (R50) Deployment | APLUX Doc Center",
+      "url": "https://docs.aidlux.com/en/software/tutorial/ai-dev/bevformer_tiny_aidlite",
+      "snippet": "BEVFormer-tiny (R50) Deployment Introduction BEVFormer-tiny (R50) is an autonomous-driving multi-camera 3D object detection model focused on efficient edge deployment. It was proposed by the SenseTime and Tsinghua University teams."
+    },
+    {
+      "title": "GitHub - akashprakas/bevformer_tiny: A pytorch only implementation of ...",
+      "url": "https://github.com/akashprakas/bevformer_tiny",
+      "snippet": "A BEVFormer reimplementation in pure PyTorch for camera-only 3D object detection on nuScenes, with no MMDetection or MMCV dependencies. Written primarily as an educational reference. (Even though its named tiny and written primarily as an educational reference if you add the custom cuda kernel for deformable attention this repo if good enough probably even a bit faster than the original ..."
+    },
+    {
+      "title": "BEVFormer-tiny (R50)",
+      "url": "https://aiot.aidlux.com/en/models/detail/297",
+      "snippet": "BEVFormer-tiny (R50) is a highly efficient autonomous driving model designed for multi-camera 3D object detection on resource-constrained edge platforms. Built upon the classic ResNet-50 backbone, it utilizes unique spatio-temporal attention mechanisms to seamlessly transform multi-view 2D camera feeds into a unified Bird&#x27;s-Eye-View (BEV ..."
+    },
+    {
+      "title": "GitHub - fundamentalvision/BEVFormer: [ECCV 2022] This is the official ...",
+      "url": "https://github.com/fundamentalvision/BEVFormer",
+      "snippet": "[ECCV 2022] This is the official implementation of BEVFormer, a camera-only framework for autonomous driving perception, e.g., 3D object detection and semantic map segmentation. - fundamentalvision/BEVFormer"
+    },
+    {
+      "title": "Getting Started | fundamentalvision/BEVFormer | DeepWiki",
+      "url": "https://deepwiki.com/fundamentalvision/BEVFormer/1.3-getting-started",
+      "snippet": "The visualization script enables you to see the 3D detection results from multiple camera views as well as in the bird&#x27;s-eye view. Sources: docs/getting_started.md 29-31 Configurations and Model Selection The BEVFormer repository provides several pre-configured models with different performance characteristics. Choose the appropriate configuration based on your requirements for accuracy and ..."
+    }
+  ]
+}

@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "photosynth-satoshi/act_thumbturn_v5_10k",
+  "slug": "photosynth-satoshi-act_thumbturn_v5_10k",
+  "author": "photosynth-satoshi",
+  "url": "https://huggingface.co/photosynth-satoshi/act_thumbturn_v5_10k",
+  "created_at": "2026-08-27T07:34:20.000Z",
+  "updated_at": "2026-08-27T07:34:57.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "robotics",
+    "act",
+    "dataset:photosynth-satoshi/so101_unlock_thumbturn_v5",
+    "arxiv:2304.13705",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 51668614,
+  "parameters_human": "51.7M",
+  "storage_bytes": 206715200,
+  "storage_human": "207 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "photosynth-satoshi (satoshi nakamoto) - Hugging Face",
+      "url": "https://huggingface.co/photosynth-satoshi/datasets",
+      "snippet": "AI & ML interests ... Recent Activity updated a model 2 days ago ... published a model 2 days ago ... updated a dataset 3 days ago"
+    },
+    {
+      "title": "Best Free AI Models - Download & Run Online | TensorHub Art",
+      "url": "https://tensorhub.art/models",
+      "snippet": "Browse and run AI models on TensorArt. Explore ZImage, Flux, Illustrious XL, Wan 2.2, Stable Diffusion, and more. Download checkpoints, LoRAs, and..."
+    },
+    {
+      "title": "CivArchive (CivitAI Archive) - AI Model Archive",
+      "url": "https://civarchive.com/",
+      "snippet": "Browse and discover AI models from CivitAI, TensorArt, and SeaArt. Community-driven archive preserving access to AI resources."
+    },
+    {
+      "title": "Z.ai shares surge 8% on new AI model running only on Chinese chips - CNBC",
+      "url": "https://www.cnbc.com/2026/08/27/zai-shares-surge-new-ai-model-using-chinese-chips.html",
+      "snippet": "Z.ai&#x27;s shares rose after the company launched a new AI model that it claimed runs only on Chinese chips. It&#x27;s the latest indication of China&#x27;s efforts to ramp up homegrown computing capability ..."
+    },
+    {
+      "title": "AI Model Releases: August 2026 Tracker and Dated Ledger",
+      "url": "https://www.digitalapplied.com/blog/ai-model-releases-august-2026-tracker",
+      "snippet": "AI model releases in August 2026 arrived at a pace that makes a plain list useless: nine dated entries across five calendar dates in the first week of the month, from four model vendors, one image-and-video lab and one regulator. The value of a tracker is no longer the list."
+    }
+  ]
+}

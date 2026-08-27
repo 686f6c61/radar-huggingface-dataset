@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "simba9/voxtream2-ru",
+  "slug": "simba9-voxtream2-ru",
+  "author": "simba9",
+  "url": "https://huggingface.co/simba9/voxtream2-ru",
+  "created_at": "2026-08-27T09:44:00.000Z",
+  "updated_at": "2026-08-27T10:13:23.000Z",
+  "license": "openrail-m",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-speech",
+  "library": "voxtream",
+  "languages": [
+    "ru"
+  ],
+  "tags": [
+    "voxtream",
+    "safetensors",
+    "tts",
+    "text-to-speech",
+    "russian",
+    "streaming",
+    "voice-cloning",
+    "mimi",
+    "ru",
+    "arxiv:2603.13518",
+    "base_model:herimor/voxtream2",
+    "base_model:finetune:herimor/voxtream2",
+    "license:openrail",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 462927872,
+  "parameters_human": "462.9M",
+  "storage_bytes": 2604063159,
+  "storage_human": "2.6 GB",
+  "base_model": "herimor/voxtream2",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "voxtream2/model · Hugging Face",
+      "url": "https://huggingface.co/voxtream2/model",
+      "snippet": "VoXtream2 is a zero-shot full-stream TTS model with dynamic speaking-rate control that can be updated mid-utterance on the fly."
+    },
+    {
+      "title": "GitHub - herimor/voxtream: VoXtream is a Full-Stream Zero-shot TTS ...",
+      "url": "https://github.com/herimor/voxtream",
+      "snippet": "We present VoXtream2, a zero-shot full-stream TTS model with dynamic speaking-rate control that can be updated mid-utterance on the fly. For audio examples, see our demo page. Try VoXtream2 in your browser on HuggingFace 🤗 space."
+    },
+    {
+      "title": "VoXtream2: Full-stream TTS with dynamic speaking rate control",
+      "url": "https://herimor.github.io/voxtream2/",
+      "snippet": "Overview We present VoXtream2, a zero-shot full-stream TTS model with dynamic speaking-rate control that can be updated mid-utterance on the fly. Dynamic speed control: Distribution matching and Classifier-free guidance allow for a fine-grained speaking rate control, which can be adjusted as the model generates speech. Streaming performance: Works 4x times faster than real-time and achieves 74 ..."
+    },
+    {
+      "title": "herimor/voxtream2 · Hugging Face",
+      "url": "https://huggingface.co/herimor/voxtream2",
+      "snippet": "Model Card for VoXtream2 VoXtream2 is a zero-shot full-stream TTS model with dynamic speaking-rate control that can be updated mid-utterance on the fly. It was introduced in the paper VoXtream2: Full-stream TTS with dynamic speaking rate control. Developed by: Nikita Torgashov, Gustav Eje Henter, Gabriel Skantze Key features Dynamic speed control: Distribution matching and Classifier-free ..."
+    },
+    {
+      "title": "VoXtream2: Full-stream TTS with dynamic speaking rate control",
+      "url": "https://arxiv.org/html/2603.13518v1",
+      "snippet": "We present VoXtream2, a zero-shot full-stream TTS model with dynamic speaking-rate control that can be updated mid-utterance on the fly. VoXtream2 combines a distribution matching mechanism over duration states with classifier-free guidance across conditioning signals to improve controllability and synthesis quality."
+    }
+  ]
+}

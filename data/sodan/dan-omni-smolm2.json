@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "sodan/dan-omni-smolm2",
+  "slug": "sodan-dan-omni-smolm2",
+  "author": "sodan",
+  "url": "https://huggingface.co/sodan/dan-omni-smolm2",
+  "created_at": "2026-08-27T10:36:39.000Z",
+  "updated_at": "2026-08-27T11:35:25.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "gguf",
+    "dan",
+    "omni",
+    "smollm2",
+    "text-generation",
+    "ultralight",
+    "270m",
+    "en",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 361821120,
+  "parameters_human": "361.8M",
+  "storage_bytes": 271434025,
+  "storage_human": "271 MB",
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Dark Web AI Tools & Uncensored Models 2026 - Complete Guide | TorWiki",
+      "url": "https://torwiki.org/learn/darknet-ai/",
+      "snippet": "Complete guide to dark web AI: WormGPT, FraudGPT, GhostGPT, jailbreak techniques, uncensored LLMs, and AI services on Tor. Updated April 2026."
+    },
+    {
+      "title": "HuggingFaceTB/SmolLM2-135M · Hugging Face",
+      "url": "https://huggingface.co/HuggingFaceTB/SmolLM2-135M",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "DreamOmni2 — Multimodal AI for Image Generation & Editing",
+      "url": "https://www.dreamomni.net/",
+      "snippet": "Create and edit images with DreamOmni2&#x27;s multimodal AI. Combine text and visual prompts to achieve consistent, high-quality, and creative results."
+    },
+    {
+      "title": "New AI Model Releases (Last 24 Hours) — Live Tracker | BenchLM",
+      "url": "https://benchlm.ai/model-updates",
+      "snippet": "Every new AI model release, tracked live: last 24 hours, this week, and 159 confirmed launches from 46 providers — each with source evidence and benchmarks."
+    },
+    {
+      "title": "Models.dev - An open-source database of AI models",
+      "url": "https://models.dev/",
+      "snippet": "Models.dev is a comprehensive open-source database of AI model specifications, pricing, and features."
+    }
+  ]
+}

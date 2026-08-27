@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "zhangkjungmail/wav2vec-chinese-zh-cn-speech-emotion-recognition",
+  "slug": "zhangkjungmail-wav2vec-chinese-zh-cn-speech-emotion-recognition",
+  "author": "zhangkjungmail",
+  "url": "https://huggingface.co/zhangkjungmail/wav2vec-chinese-zh-cn-speech-emotion-recognition",
+  "created_at": "2026-08-27T07:43:14.000Z",
+  "updated_at": "2026-08-27T07:43:14.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - kehanlu/Mandarin-Wav2Vec2: Pre-trained Wav2vec2.0 for Mandarin",
+      "url": "https://github.com/kehanlu/Mandarin-Wav2Vec2",
+      "snippet": "The following table shows the fine-tuned results at different pre-training updates. The models are trained with CTC loss for 20 epochs and lr=0.0002 (config/finetine_aishell1.yaml). The released pre-trained model is the one with lowest pre-training validation loss. We also list the results fine-tuned with wav2vec2.0 (en) and from other paper."
+    },
+    {
+      "title": "【语音算法】wav2vec系列原理和使用-CSDN博客",
+      "url": "https://blog.csdn.net/tobefans/article/details/125434796",
+      "snippet": "前言 wav2vec系列工作由facebook AI Research团队提出，包括wav2vec、vq-wav2vec、wav2vec2.0，效仿nlp上的word2vec，是语音的一种通用特征提取器。本文重点讲解wav2vec2.0模型及其使用方法。 1. wav2vec 论文： wav2vec: Unsupervised Pre-training for Speech Recognition 本文提出一种无监督的语音预训练模型 wav2vec，可迁移到语音下游 ..."
+    },
+    {
+      "title": "asr-wav2vec2-commonvoice-14-zh-CN - Hugging Face",
+      "url": "https://huggingface.co/speechbrain/asr-wav2vec2-commonvoice-14-zh-CN",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "中文语音预训练模型：Wav2vec 2.0、HuBERT - CSDN博客",
+      "url": "https://blog.csdn.net/u013250861/article/details/125312011",
+      "snippet": "文章浏览阅读6.1k次。腾讯游戏知几AI团队与西工大ASLP组合作，发布了基于WenetSpeech的中文Wav2vec 2.0和HuBERT模型，填补了中文语音预训练模型的空白，旨在提升中文语音识别、合成和转换任务的性能。"
+    },
+    {
+      "title": "Wav2vec 系列：从原始音频中学习语音的结构 - 知乎",
+      "url": "https://zhuanlan.zhihu.com/p/302463174",
+      "snippet": "本文主要梳理Facebook AI Research 从2019年开始的发表的wav2vec系列工作，主要包括了 Wav2vec 、 Wav2vec 2.0 1. Wav2vec: Unsupervised Pre-training for Speech Recognition 1.1 Introduction wav2vec 是 Interspeech 2019 收录的文章，论文中，作者用无监督预训练的 卷积神经网络 来改善语音识别任务，提出了一种噪声对比学习二分类任务 ..."
+    }
+  ]
+}

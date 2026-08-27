@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "roth007/traffic-sign",
+  "slug": "roth007-traffic-sign",
+  "author": "roth007",
+  "url": "https://huggingface.co/roth007/traffic-sign",
+  "created_at": "2026-08-27T02:29:04.000Z",
+  "updated_at": "2026-08-27T02:29:04.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Traffic Signs Detection - a Hugging Face Space by root007x",
+      "url": "https://huggingface.co/spaces/root007x/Traffic_Signs_Detection",
+      "snippet": "Explore a community-created app for detecting traffic signs using machine learning on Hugging Face."
+    },
+    {
+      "title": "Traffic Sign Detection Using AI - GitHub",
+      "url": "https://github.com/sohum77/Traffic-Sign-Detection-using-AI",
+      "snippet": "This project focuses on developing an \"Artificial Intelligence Based System\" that automatically detects and recognizes traffic signs from road images. The main goal is to assist in building smart driving systems and enhance road safety by allowing computers to identify traffic signs such as Speed Limit, No Entry, U-Turn, and Pedestrian Crossing. - GitHub - sohum77/Traffic-Sign-Detection-using ..."
+    },
+    {
+      "title": "Traffic Sign Detection AI - GitHub",
+      "url": "https://github.com/Flucus/Traffic-Sign-Detection-AI",
+      "snippet": "Traffic Sign Detection AI Overview This repository hosts the code and resources for an advanced AI-driven system developed for the detection and recognition of traffic signs. Our model leverages the YOLOv8 neural network architecture and is trained on a robust dataset from Mapillary, supplemented with local Hong Kong traffic sign images."
+    },
+    {
+      "title": "A Real-Time Traffic Sign Recognition Method Using a New ... - MDPI",
+      "url": "https://www.mdpi.com/2076-3417/13/8/4793",
+      "snippet": "Artificial Intelligence (AI) in the automotive industry allows car manufacturers to produce intelligent and autonomous vehicles through the integration of AI-powered Advanced Driver Assistance Systems (ADAS) and/or Automated Driving Systems (ADS) such as the Traffic Sign Recognition (TSR) system. Existing TSR solutions focus on some categories of signs they recognise. For this reason, a TSR ..."
+    },
+    {
+      "title": "nezahatkorkmaz/traffic-sign-detection · Hugging Face",
+      "url": "https://huggingface.co/nezahatkorkmaz/traffic-sign-detection",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    }
+  ]
+}

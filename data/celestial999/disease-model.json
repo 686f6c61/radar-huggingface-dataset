@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "celestial999/disease-model",
+  "slug": "celestial999-disease-model",
+  "author": "celestial999",
+  "url": "https://huggingface.co/celestial999/disease-model",
+  "created_at": "2026-08-27T07:31:25.000Z",
+  "updated_at": "2026-08-27T07:35:47.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 98938290,
+  "storage_human": "99 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "A chat AI presents users with fictional illnesses posted on the ...",
+      "url": "https://gigazine.net/gsc_news/en/20260411-fake-disease-ai/",
+      "snippet": "The AI model currently used in ChatGPT is significantly superior in its ability to provide safe and accurate medical information.&#x27;"
+    },
+    {
+      "title": "CivArchive (CivitAI Archive) - AI Model Archive",
+      "url": "https://civarchive.com/",
+      "snippet": "Browse and discover AI models from CivitAI, TensorArt, and SeaArt. Community-driven archive preserving access to AI resources."
+    },
+    {
+      "title": "Disease model - Latest research and news | Nature",
+      "url": "https://www.nature.com/subjects/disease-model",
+      "snippet": "A disease model is an animal or cells displaying all or some of the pathological processes that are observed in the actual human or animal disease. Studying disease models aids understanding of ..."
+    },
+    {
+      "title": "Disease Models - Recent articles and discoveries - Springer",
+      "url": "https://link.springer.com/subjects/disease-models",
+      "snippet": "Find the latest research papers and news in Disease Models. Read stories and opinions from top researchers in our research community."
+    },
+    {
+      "title": "AI model predicts disease risks decades in advance",
+      "url": "https://www.dkfz.de/en/news/press-releases/detail/ai-model-predicts-disease-risks-decades-in-advance",
+      "snippet": "AI model predicts disease risks decades in advance Scientists from the European Molecular Biology Laboratory (EMBL) and the German Cancer Research Center (DKFZ) have developed an AI model that assesses the long-term individual risk for more than 1,000 diseases."
+    }
+  ]
+}

@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "sdadasdaga/act-v6-chunk50",
+  "slug": "sdadasdaga-act-v6-chunk50",
+  "author": "sdadasdaga",
+  "url": "https://huggingface.co/sdadasdaga/act-v6-chunk50",
+  "created_at": "2026-08-27T08:29:38.000Z",
+  "updated_at": "2026-08-27T08:30:01.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "act",
+    "robotics",
+    "dataset:sdadasdaga/grab-black-cube-30ep-v6_20260827_150153",
+    "arxiv:2304.13705",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 51617414,
+  "parameters_human": "51.6M",
+  "storage_bytes": 206508088,
+  "storage_human": "207 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "sdadasdaga (김민준) - Hugging Face",
+      "url": "https://huggingface.co/sdadasdaga/datasets",
+      "snippet": "AI & ML interests ... Recent Activity updated a model about 3 hours ago ... published a model about 3 hours ago"
+    },
+    {
+      "title": "sdadasdaga (김민준) - Hugging Face",
+      "url": "https://huggingface.co/sdadasdaga",
+      "snippet": "User profile of 김민준 on Hugging Face"
+    },
+    {
+      "title": "AI Model Downloads - 498 Model Examples - AI Models",
+      "url": "https://aimodels.org/ai-models/",
+      "snippet": "Directory of free Open Source AI and machine learning model downloads! Our collection features the latest models in speech to text and image generation."
+    },
+    {
+      "title": "AI Models | Civitai",
+      "url": "https://civitai.com/models",
+      "snippet": "Browse thousands of free Stable Diffusion & Flux models, LoRAs, checkpoints, and embeddings. The largest collection of AI image generation resources."
+    },
+    {
+      "title": "AI Model Catalog | Microsoft Foundry Models",
+      "url": "https://ai.azure.com/catalog",
+      "snippet": "Build AI that ships Build, test, and deploy AI systems with the models, tools, and workflows your team needs. Scale on one platform."
+    }
+  ]
+}

@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "OpenExploer/unet_mobilenetv1",
+  "slug": "openexploer-unet_mobilenetv1",
+  "author": "OpenExploer",
+  "url": "https://huggingface.co/OpenExploer/unet_mobilenetv1",
+  "created_at": "2026-08-27T08:23:08.000Z",
+  "updated_at": "2026-08-27T08:24:41.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "heal",
+    "horizon",
+    "arxiv:1704.04861",
+    "arxiv:1505.04597",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 50035724,
+  "storage_human": "50 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "MobileNet V1 - Hugging Face",
+      "url": "https://huggingface.co/docs/transformers/v4.25.1/en/model_doc/mobilenet_v1",
+      "snippet": "The checkpoints are named mobilenet_v1_depth_size, for example mobilenet_v1_1.0_224, where 1.0 is the depth multiplier (sometimes also referred to as \"alpha\" or the width multiplier) and 224 is the resolution of the input images the model was trained on."
+    },
+    {
+      "title": "models/research/slim/nets/mobilenet_v1.md at master - GitHub",
+      "url": "https://github.com/tensorflow/models/blob/master/research/slim/nets/mobilenet_v1.md",
+      "snippet": "Choose the right MobileNet model to fit your latency and size budget. The size of the network in memory and on disk is proportional to the number of parameters. The latency and power usage of the network scales with the number of Multiply-Accumulates (MACs) which measures the number of fused Multiplication and Addition operations. These MobileNet models have been trained on the ILSVRC-2012-CLS ..."
+    },
+    {
+      "title": "open_model_zoo/models/public/mobilenet-v1-1.0-224-tf/README.md ... - GitHub",
+      "url": "https://github.com/openvinotoolkit/open_model_zoo/blob/master/models/public/mobilenet-v1-1.0-224-tf/README.md",
+      "snippet": "mobilenet-v1-1.-224 is one of MobileNets - small, low-latency, low-power models parameterized to meet the resource constraints of a variety of use cases. They can be built upon for classification, detection, embeddings and segmentation similar to how other popular large scale models are used. For details, see the paper."
+    },
+    {
+      "title": "MobileNet V1 — Docs | Model Database",
+      "url": "https://modeldatabase.com/docs/transformers/model_doc/mobilenet_v1.html",
+      "snippet": "MobileNet V1: reference documentation for working with open source AI models and libraries. Compare and deploy AI models on Model Database."
+    },
+    {
+      "title": "[1704.04861] MobileNets: Efficient Convolutional Neural Networks for ...",
+      "url": "https://arxiv.org/abs/1704.04861",
+      "snippet": "We present a class of efficient models called MobileNets for mobile and embedded vision applications. MobileNets are based on a streamlined architecture that uses depth-wise separable convolutions to build light weight deep neural networks. We introduce two simple global hyper-parameters that efficiently trade off between latency and accuracy. These hyper-parameters allow the model builder to ..."
+    }
+  ]
+}

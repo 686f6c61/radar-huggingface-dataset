@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "Sail2Dream/phase-rlfn-codec-v1",
+  "slug": "sail2dream-phase-rlfn-codec-v1",
+  "author": "Sail2Dream",
+  "url": "https://huggingface.co/Sail2Dream/phase-rlfn-codec-v1",
+  "created_at": "2026-08-27T02:30:16.000Z",
+  "updated_at": "2026-08-27T02:30:24.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "image-to-image",
+  "library": "pytorch",
+  "languages": [],
+  "tags": [
+    "pytorch",
+    "super-resolution",
+    "video-super-resolution",
+    "rknn",
+    "rk3588",
+    "mlvc",
+    "codec-aware",
+    "qat",
+    "image-to-image",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 18773875,
+  "storage_human": "19 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Sail2Dream/supertonic-rknn-rk3588 at main - Hugging Face",
+      "url": "https://huggingface.co/Sail2Dream/supertonic-rknn-rk3588/tree/main/models/t64_l64",
+      "snippet": "Notebooks Google Colab Kaggle main supertonic-rknn-rk3588 / models /t64_l64 211 MB Ctrl+K Ctrl+K 1 contributor History:1 commit Sail2Dream Update: add scripts/, update to hf CLI 15609dc verified3 months ago duration_predictor_t64_l64.rknn 2.9 MB xet Update: add scripts/, update to hf CLI3 months ago metadata.json Safe 1.37 kBUpdate: add scripts/, update to hf CLI3 months ago text_encoder_t64 ..."
+    },
+    {
+      "title": "Sail2Dream/supertonic-rknn-rk3588 at main - Hugging Face",
+      "url": "https://huggingface.co/Sail2Dream/supertonic-rknn-rk3588/tree/main/scripts",
+      "snippet": "Sail2Dream / supertonic-rknn-rk3588 like 1 Text-to-Speech Supertonic rknn-toolkit2 rknn rk3588 on-device License:openrail Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "GitHub - bytedance/RLFN: Winner of runtime track in NTIRE 2022 ...",
+      "url": "https://github.com/bytedance/RLFN",
+      "snippet": "Winner of runtime track in NTIRE 2022 challenge on Efficient Super-Resolution - bytedance/RLFN"
+    },
+    {
+      "title": "BytedanceDouyinContent - GitHub",
+      "url": "https://github.com/BytedanceDouyinContent",
+      "snippet": "The SAIL-VL2 series model developed by the BytedanceDouyinContent Group 79 6"
+    },
+    {
+      "title": "Deep Render AI Codec Running in FFmpeg and VLC",
+      "url": "https://streaminglearningcenter.com/codecs/deep-render-ai-codec-running-in-ffmpeg-and-vlc.html",
+      "snippet": "This post breaks down the Deep Render AI codec—50% more efficient than AV1, encoding in FFmpeg, decoding 2X real-time on Mac & iPhone, and playing in VLC."
+    }
+  ]
+}

@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "bdgrahman/efficientformer-checkpoint",
+  "slug": "bdgrahman-efficientformer-checkpoint",
+  "author": "bdgrahman",
+  "url": "https://huggingface.co/bdgrahman/efficientformer-checkpoint",
+  "created_at": "2026-08-27T09:05:49.000Z",
+  "updated_at": "2026-08-27T09:05:57.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "efficientformer",
+    "pytorch",
+    "multitask",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 16576,
+  "parameters_human": "16576",
+  "storage_bytes": 66784,
+  "storage_human": "66784 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "checkpoint AI Models | Civitai",
+      "url": "https://civitai.com/tag/checkpoint",
+      "snippet": "Browse 202 Stable Diffusion & Flux models, LoRAs, checkpoints, and embeddings tagged with checkpoint."
+    },
+    {
+      "title": "rdsharmafa/efficientformer-checkpoint · Hugging Face",
+      "url": "https://huggingface.co/rdsharmafa/efficientformer-checkpoint",
+      "snippet": "Efficientformer for Multitask Overview A small Efficientformer implementation for Multitask, packaged with an explicit configuration and an initialization checkpoint. The base variant is a reproducible starting point, not a trained model release."
+    },
+    {
+      "title": "ChatGPT: Chat, Work, Create & Code with AI",
+      "url": "https://chatgpt.com/",
+      "snippet": "Use ChatGPT to answer questions, write, create images, complete work, and code—all in one place. Get started for free or download the app."
+    },
+    {
+      "title": "GitHub - snap-research/EfficientFormer: EfficientFormerV2 [ICCV 2023 ...",
+      "url": "https://github.com/snap-research/EfficientFormer",
+      "snippet": "Add EfficientFormerV2 model family, including efficientformerv2_s0, efficientformerv2_s1, efficientformerv2_s2 and efficientformerv2_l. Pretrained checkpoints of EfficientFormerV2 on ImageNet-1K are released."
+    },
+    {
+      "title": "EfficientFormer（NeurIPS 2022）论文与代码解读 - CSDN博客",
+      "url": "https://blog.csdn.net/ooooocj/article/details/140108448",
+      "snippet": "文章浏览阅读2.1k次，点赞10次，收藏17次。虽然 ViT 模型在计算机视觉任务中取得了显著进展，但由于参数数量巨大和模型设计（如注意力机制）的原因，其推理速度通常比轻量级卷积网络（如 MobileNet）慢许多。因此，在资源受限的硬件（如移动设备）上部署 ViT 具有很大的挑战。为了使 Transformer ..."
+    }
+  ]
+}

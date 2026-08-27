@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "takeru01/task1_1_5_A_rgbd8_act_100k_cs97_bs16",
+  "slug": "takeru01-task1_1_5_a_rgbd8_act_100k_cs97_bs16",
+  "author": "takeru01",
+  "url": "https://huggingface.co/takeru01/task1_1_5_A_rgbd8_act_100k_cs97_bs16",
+  "created_at": "2026-08-27T09:05:38.000Z",
+  "updated_at": "2026-08-27T09:06:27.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "robotics",
+    "act",
+    "dataset:takeru01/task1_1_5_rgbd",
+    "arxiv:2304.13705",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 51681934,
+  "parameters_human": "51.7M",
+  "storage_bytes": 206790768,
+  "storage_human": "207 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "task1_1_5_B0_rgb4_act_100k_cs97_bs16 - Hugging Face",
+      "url": "https://huggingface.co/takeru01/task1_1_5_B0_rgb4_act_100k_cs97_bs16",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "takeru01/task1_1_5_rgb_act_chunk91_bs8_0822_1250 · Hugging Face",
+      "url": "https://huggingface.co/takeru01/task1_1_5_rgb_act_chunk91_bs8_0822_1250",
+      "snippet": "Model Card for act Action Chunking with Transformers (ACT) is an imitation-learning method that predicts short action chunks instead of single steps. It learns from teleoperated data and often achieves high success rates."
+    },
+    {
+      "title": "ChatGPT: Chat, Work, Create & Code with AI",
+      "url": "https://chatgpt.com/",
+      "snippet": "Use ChatGPT to answer questions, write, create images, complete work, and code—all in one place. Get started for free or download the app."
+    },
+    {
+      "title": "Open models by OpenAI | OpenAI",
+      "url": "https://openai.com/open-models/",
+      "snippet": "Advanced open-weight reasoning models to customize for any use case and run anywhere."
+    },
+    {
+      "title": "Hashtechy_AI_Assessment/Task1 at main · Neelshah1810 ... - GitHub",
+      "url": "https://github.com/Neelshah1810/Hashtechy_AI_Assessment/tree/main/Task1",
+      "snippet": "For large documents with hundreds of chunks, running the embedding model in a background worker (or using an async-compatible model server) would keep the upload endpoint responsive. Persistent conversation storage — Currently conversation history is passed by the client on each request."
+    }
+  ]
+}

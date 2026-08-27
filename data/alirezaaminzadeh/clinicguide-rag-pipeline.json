@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "alirezaaminzadeh/clinicguide-rag-pipeline",
+  "slug": "alirezaaminzadeh-clinicguide-rag-pipeline",
+  "author": "alirezaaminzadeh",
+  "url": "https://huggingface.co/alirezaaminzadeh/clinicguide-rag-pipeline",
+  "created_at": "2026-08-27T11:22:46.000Z",
+  "updated_at": "2026-08-27T11:22:53.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "question-answering",
+  "library": "scikit-learn",
+  "languages": [],
+  "tags": [
+    "scikit-learn",
+    "rag",
+    "retrieval",
+    "medical-tourism",
+    "multilingual",
+    "clinicguide",
+    "question-answering",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Retrieval-Augmented Generation (RAG) in Healthcare: A ... - MDPI",
+      "url": "https://www.mdpi.com/2673-2688/6/9/226",
+      "snippet": "This synthesis offers a domain-focused perspective to guide researchers, healthcare providers, and policymakers in developing reliable, interpretable, and clinically aligned AI systems, laying the groundwork for future innovation in RAG-based healthcare solutions."
+    },
+    {
+      "title": "Retrieval-augmented generation - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Retrieval-augmented_generation",
+      "snippet": "Retrieval-augmented generation (RAG) enhances large language models (LLMs) by incorporating an information-retrieval mechanism that allows models to access and utilize additional data beyond their original training set. Ars Technica notes that \"when new information becomes available, rather than having to retrain the model, all that&#x27;s needed is to augment the model&#x27;s external knowledge base ..."
+    },
+    {
+      "title": "README.md · alirezaaminzadeh/enterprise-rag-studio at main",
+      "url": "https://huggingface.co/spaces/alirezaaminzadeh/enterprise-rag-studio/blob/main/README.md",
+      "snippet": "Spaces: alirezaaminzadeh / enterprise-rag-studio like 0 Running App FilesFiles Community main enterprise-rag-studio /README.md alirezaaminzadeh Deploy OrgMind RAG Space (static) 971c9a9 verifiedabout 13 hours ago preview code | Raw Download with hf CLI Copy download link History Blame Contribute Delete Safe 746 Bytes metadata"
+    },
+    {
+      "title": "Retrieval-augmented generation for generative artificial intelligence ...",
+      "url": "https://www.nature.com/articles/s44401-024-00004-1",
+      "snippet": "Generative artificial intelligence (AI) has recently attracted widespread attention across various fields, including the GPT 1, 2 and LLaMA 3, 4 series for text generation, DALL-E 5 for image ..."
+    },
+    {
+      "title": "alirezaaminzadeh (Alireza Aminzadeh) - Hugging Face",
+      "url": "https://huggingface.co/alirezaaminzadeh/models",
+      "snippet": "AI & ML interests ... Recent Activity updated a model 16 days ago ... published a model 16 days ago"
+    }
+  ]
+}

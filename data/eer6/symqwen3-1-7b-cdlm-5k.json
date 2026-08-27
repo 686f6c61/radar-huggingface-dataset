@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "EER6/SymQwen3-1.7B-CDLM-5k",
+  "slug": "eer6-symqwen3-1-7b-cdlm-5k",
+  "author": "EER6",
+  "url": "https://huggingface.co/EER6/SymQwen3-1.7B-CDLM-5k",
+  "created_at": "2026-08-27T08:02:57.000Z",
+  "updated_at": "2026-08-27T08:03:31.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "symqwen3",
+    "diffusion-language-model",
+    "masked-dlm",
+    "qwen3",
+    "dlm1b",
+    "custom_code",
+    "base_model:Qwen/Qwen3-1.7B",
+    "base_model:finetune:Qwen/Qwen3-1.7B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 2031739904,
+  "parameters_human": "2.03B",
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": "Qwen/Qwen3-1.7B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "EER6 (EER6) - Hugging Face",
+      "url": "https://huggingface.co/EER6",
+      "snippet": "Org profile for EER6 on Hugging Face, the AI community building the future."
+    },
+    {
+      "title": "unsloth/Qwen3-1.7B · Hugging Face",
+      "url": "https://huggingface.co/unsloth/Qwen3-1.7B",
+      "snippet": "unsloth / Qwen3-1.7B like 12 Follow Unsloth AI 29.9k Safetensors qwen3 unsloth Model card FilesFiles and versions xet Community 1 Copy to bucket new Use this model"
+    },
+    {
+      "title": "GitHub - QwenLM/Qwen3: Qwen3 is the large language model series ...",
+      "url": "https://github.com/QwenLM/Qwen3",
+      "snippet": "Over the past three months, we continued to explore the potential of the Qwen3 families and we are excited to introduce the updated Qwen3-2507 in two variants, Qwen3-Instruct-2507 and Qwen3-Thinking-2507, and three sizes, 235B-A22B, 30B-A3B, and 4B. Qwen3-Instruct-2507 is the updated version of the previous Qwen3 non-thinking mode, featuring the following key enhancements: Significant ..."
+    },
+    {
+      "title": "GitHub - QwenLM/Qwen3-ASR: Qwen3-ASR is an open-source series of ASR ...",
+      "url": "https://github.com/QwenLM/Qwen3-ASR",
+      "snippet": "The Qwen3-ASR family includes Qwen3-ASR-1.7B and Qwen3-ASR-.6B, which support language identification and ASR for 52 languages and dialects. Both leverage large-scale speech training data and the strong audio understanding capability of their foundation model, Qwen3-Omni. Experiments show that the 1.7B version achieves state-of-the-art performance among open-source ASR models and is ..."
+    },
+    {
+      "title": "qwen3:1.7b - ollama.com",
+      "url": "https://ollama.com/library/qwen3:1.7b",
+      "snippet": "Qwen3 is the latest generation of large language models in Qwen series, offering a comprehensive suite of dense and mixture-of-experts (MoE) models."
+    }
+  ]
+}

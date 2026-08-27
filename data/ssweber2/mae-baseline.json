@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "ssweber2/mae-baseline",
+  "slug": "ssweber2-mae-baseline",
+  "author": "ssweber2",
+  "url": "https://huggingface.co/ssweber2/mae-baseline",
+  "created_at": "2026-08-27T10:40:43.000Z",
+  "updated_at": "2026-08-27T10:40:53.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "mae",
+    "pytorch",
+    "matching",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 16576,
+  "parameters_human": "16576",
+  "storage_bytes": 66784,
+  "storage_human": "66784 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "logic-star-ai/SWEBench - GitHub",
+      "url": "https://github.com/logic-star-ai/SWEBench",
+      "snippet": "SWE-bench is a benchmark for evaluating large language models on real world software issues collected from GitHub. Given a codebase and an issue, a language model is tasked with generating a patch that resolves the described problem. To access SWE-bench, copy and run the following code:"
+    },
+    {
+      "title": "MAE Mastery: Your Guide to Mean Absolute Error",
+      "url": "https://www.numberanalytics.com/blog/mae-mastery-guide-mean-absolute-error",
+      "snippet": "Dive into mean absolute error (MAE) metrics: learn definitions, formulas, applications, and code examples to measure model accuracy effectively."
+    },
+    {
+      "title": "Hill-climbing MAI models for GitHub Copilot and Excel - Microsoft AI",
+      "url": "https://microsoft.ai/news/hill-climbing-mai-models-for-github-copilot-and-excel/",
+      "snippet": "At Build in June, we introduced our hill-climbing machine, our integrated data, model, and harness flywheel. Today we are excited to share two examples inside Microsoft: MAI models specialized for agentic workloads in GitHub Copilot and Excel. Early results are promising. In our live product deployment, we see that our MAI model deployed in Excel is on par with GPT-5.6 for the most common ..."
+    },
+    {
+      "title": "GitHub - SWE-bench/SWE-bench: SWE-bench: Can Language Models Resolve ...",
+      "url": "https://github.com/swe-bench/SWE-bench",
+      "snippet": "SWE-bench is a benchmark for evaluating large language models on real world software issues collected from GitHub. Given a codebase and an issue, a language model is tasked with generating a patch that resolves the described problem. To access SWE-bench, copy and run the following code:"
+    },
+    {
+      "title": "SWE-bench",
+      "url": "https://www.swebench.com/original.html",
+      "snippet": "Our follow up work, SWE-agent, was the first agent-based AI system ever introduced for performing software engineering tasks, achieving a score of 12.47% on SWE-bench. You can train your own agentic software engineering models using our SWE-smith dataset."
+    }
+  ]
+}

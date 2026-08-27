@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "mradermacher/X-AuT-GGUF",
+  "slug": "mradermacher-x-aut-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/X-AuT-GGUF",
+  "created_at": "2026-08-27T08:45:36.000Z",
+  "updated_at": "2026-08-27T08:46:05.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 149138432,
+  "parameters_human": "149.1M",
+  "storage_bytes": 474575296,
+  "storage_human": "475 MB",
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "mradermacher/zero-ai-model-GGUF · Hugging Face",
+      "url": "https://huggingface.co/mradermacher/zero-ai-model-GGUF",
+      "snippet": "Usage If you are unsure how to use GGUF files, refer to one of TheBloke&#x27;s READMEs for more details, including on how to concatenate multi-part files."
+    },
+    {
+      "title": "mradermacher/ai-girlfriend-v2-GGUF · Hugging Face",
+      "url": "https://huggingface.co/mradermacher/ai-girlfriend-v2-GGUF",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Mradermacher - Find Top AI Models on Hugging Face",
+      "url": "https://www.aimodels.fyi/creators/huggingFace/mradermacher",
+      "snippet": "Looking for Mradermacher&#x27;s top AI models? Browse their full Hugging Face collection of 26 models. Explore AI models and contributions by Mradermacher on Huggingface."
+    },
+    {
+      "title": "L3-Aethora-15B-GGUF huggingface.co api & mradermacher L3-Aethora-15B ...",
+      "url": "https://www.toolify.ai/ai-model/mradermacher-l3-aethora-15b-gguf",
+      "snippet": "L3-Aethora-15B-GGUF huggingface.co is an AI model on huggingface.co that provides L3-Aethora-15B-GGUF&#x27;s model effect (), which can be used instantly with this mradermacher L3-Aethora-15B-GGUF model. huggingface.co supports a free trial of the L3-Aethora-15B-GGUF model, and also provides paid use of the L3-Aethora-15B-GGUF."
+    },
+    {
+      "title": "GGUF Model Discovery - Browse & Download AI Models",
+      "url": "https://local-ai-zone.github.io/",
+      "snippet": "Discover and download GGUF format AI models. Browse and direct download thousands of quantized AI models with detailed information, download counts, and direct links."
+    }
+  ]
+}

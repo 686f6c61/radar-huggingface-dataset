@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "gouthamgajjala/Reinforce-Pixelcopter-PLE-v0",
+  "slug": "gouthamgajjala-reinforce-pixelcopter-ple-v0",
+  "author": "gouthamgajjala",
+  "url": "https://huggingface.co/gouthamgajjala/Reinforce-Pixelcopter-PLE-v0",
+  "created_at": "2026-08-21T10:12:12.000Z",
+  "updated_at": "2026-08-27T08:40:47.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "reinforcement-learning",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "Pixelcopter-PLE-v0",
+    "reinforce",
+    "reinforcement-learning",
+    "custom-implementation",
+    "deep-rl-class",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 80250,
+  "storage_human": "80250 B",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Jarles/Reinforce-Pixelcopter-PLE-v0 · Hugging Face",
+      "url": "https://huggingface.co/Jarles/Reinforce-Pixelcopter-PLE-v0",
+      "snippet": "Evaluation results mean_reward on Pixelcopter-PLE-v0 self-reported 12.00 +/- 5.57 View on Papers With Code"
+    },
+    {
+      "title": "thaslimshaik/Reinforce-Pixelcopter · Hugging Face",
+      "url": "https://huggingface.co/thaslimshaik/Reinforce-Pixelcopter",
+      "snippet": "This is a trained model of a Reinforce agent playing Pixelcopter-PLE-v0 . To learn to use this model and train yours check Unit 4 of the Deep Reinforcement Learning Course: https://huggingface.co/deep-rl-course/unit4/introduction"
+    },
+    {
+      "title": "shubhamagarwal92/Reinforce-Pixelcopter-PLE-v0 - AI Model Zoo - BimAnt",
+      "url": "https://zoo.bimant.com/model/274102",
+      "snippet": "This is a trained model of a Reinforce agent playing Pixelcopter-PLE-v0 . To learn to use this model and train yours check Unit 4 of the Deep Reinforcement Learning Course: https://huggingface.co/deep-rl-course/unit4/introduction"
+    },
+    {
+      "title": "Emperor-WS/Reinforce-pixelcopter - AI Model Zoo - BimAnt",
+      "url": "https://zoo.bimant.com/model/262516",
+      "snippet": "This is a trained model of a Reinforce agent playing Pixelcopter-PLE-v0 . To learn to use this model and train yours check Unit 4 of the Deep Reinforcement Learning Course: https://huggingface.co/deep-rl-course/unit4/introduction"
+    },
+    {
+      "title": "How to Use the Reinforce Agent in Pixelcopter-PLE-v0 - fxis.ai",
+      "url": "https://fxis.ai/edu/how-to-use-the-reinforce-agent-in-pixelcopter-ple-v0/",
+      "snippet": "Welcome to our guide on leveraging the power of a Reinforce agent to play the game Pixelcopter-PLE-v0. In this blog, we will walk you through how to train your Reinforce agent and explore the various features that this model has to offer. Let&#x27;s dive in!"
+    }
+  ]
+}

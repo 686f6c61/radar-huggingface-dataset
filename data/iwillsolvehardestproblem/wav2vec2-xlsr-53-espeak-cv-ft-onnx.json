@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "iwillsolvehardestproblem/wav2vec2-xlsr-53-espeak-cv-ft-onnx",
+  "slug": "iwillsolvehardestproblem-wav2vec2-xlsr-53-espeak-cv-ft-onnx",
+  "author": "iwillsolvehardestproblem",
+  "url": "https://huggingface.co/iwillsolvehardestproblem/wav2vec2-xlsr-53-espeak-cv-ft-onnx",
+  "created_at": "2026-08-27T08:16:55.000Z",
+  "updated_at": "2026-08-27T08:25:20.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "automatic-speech-recognition",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "onnx",
+    "wav2vec2",
+    "phoneme-recognition",
+    "ctc",
+    "pronunciation",
+    "audio",
+    "cpu",
+    "automatic-speech-recognition",
+    "base_model:facebook/wav2vec2-xlsr-53-espeak-cv-ft",
+    "base_model:quantized:facebook/wav2vec2-xlsr-53-espeak-cv-ft",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1619228368,
+  "storage_human": "1.6 GB",
+  "base_model": "facebook/wav2vec2-xlsr-53-espeak-cv-ft",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "facebook/wav2vec2-xlsr-53-espeak-cv-ft · Hugging Face",
+      "url": "https://huggingface.co/facebook/wav2vec2-xlsr-53-espeak-cv-ft",
+      "snippet": "Wav2Vec2-Large-XLSR-53 finetuned on multi-lingual Common Voice This checkpoint leverages the pretrained checkpoint wav2vec2-large-xlsr-53 and is fine-tuned on CommonVoice to recognize phonetic labels in multiple languages. When using the model make sure that your speech input is sampled at 16kHz."
+    },
+    {
+      "title": "qnighy/wav2vec2-xlsr-53-espeak-cv-ft-ONNX · Hugging Face",
+      "url": "https://huggingface.co/qnighy/wav2vec2-xlsr-53-espeak-cv-ft-ONNX",
+      "snippet": "Instructions to use qnighy/wav2vec2-xlsr-53-espeak-cv-ft-ONNX with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Libraries Transformers.js How to use qnighy/wav2vec2-xlsr-53-espeak-cv-ft-ONNX with Transformers.js:"
+    },
+    {
+      "title": "fairseq/examples/wav2vec/xlsr/README.md at main - GitHub",
+      "url": "https://github.com/facebookresearch/fairseq/blob/main/examples/wav2vec/xlsr/README.md",
+      "snippet": "XLS-R is a set of large-scale models for self-supervised cross-lingual speech representation learning based on wav2vec 2.0. It was pretrained on 128 languages and approximately 436K hours of unlabeled speech data. With finetuning, these models achieve state of the art performance in speech translation, speech recognition and language identification. We evaluate the model across multiple ..."
+    },
+    {
+      "title": "fairseq/examples/wav2vec/README.md at main - GitHub",
+      "url": "https://github.com/facebookresearch/fairseq/blob/main/examples/wav2vec/README.md",
+      "snippet": "We combined speech data from multiple domains in Robust wav2vec 2.0: Analyzing Domain Shift in Self-Supervised Pre-Training (Hsu, et al., 2021). We finetuned XLSR-53 on multiple languages to transcribe unseen languages in Simple and Effective Zero-shot Cross-lingual Phoneme Recognition (Xu et al., 2021)."
+    },
+    {
+      "title": "Open-source model wav2vec2-xlsr-53-espeak-cv-ft - Supports multi ...",
+      "url": "https://model.aibase.com/models/details/1915693358053482498",
+      "snippet": "This model is a multilingual phoneme recognition model fine-tuned on the CommonVoice dataset based on the wav2vec2-large-xlsr-53 pre-trained model, supporting the recognition of phoneme labels in multiple languages."
+    }
+  ]
+}

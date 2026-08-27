@@ -1,0 +1,77 @@
+{
+  "schema": 1,
+  "id": "godofconquest/Molmo-72B-0924",
+  "slug": "godofconquest-molmo-72b-0924",
+  "author": "godofconquest",
+  "url": "https://huggingface.co/godofconquest/Molmo-72B-0924",
+  "created_at": "2026-08-27T07:42:48.000Z",
+  "updated_at": "2026-08-27T07:42:49.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "molmo",
+    "text-generation",
+    "multimodal",
+    "olmo",
+    "pixmo",
+    "image-text-to-text",
+    "conversational",
+    "custom_code",
+    "en",
+    "arxiv:2409.17146",
+    "base_model:Qwen/Qwen2-72B",
+    "base_model:finetune:Qwen/Qwen2-72B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 73308285952,
+  "parameters_human": "73.31B",
+  "storage_bytes": 293233270552,
+  "storage_human": "293.2 GB",
+  "base_model": "openai/clip-vit-large-patch14-336, Qwen/Qwen2-72B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "allenai/Molmo-72B-0924 · Hugging Face",
+      "url": "https://huggingface.co/allenai/Molmo-72B-0924",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "indigoskyai/Molmo-72B-0924 · Hugging Face",
+      "url": "https://huggingface.co/indigoskyai/Molmo-72B-0924",
+      "snippet": "Molmo and PixMo: Open Weights and Open Data for State-of-the-Art Multimodal Models"
+    },
+    {
+      "title": "Molmo-72B-0924: Text-to-Image model — overview, use cases, alternatives",
+      "url": "https://www.aimodels.fyi/models/huggingFace/molmo-72b-0924-allenai",
+      "snippet": "Molmo-72B-0924 is a vision-language model developed by allenai that processes images and text to generate image descriptions, answer questions about visual content, and perform multimodal reasoning tasks."
+    },
+    {
+      "title": "GitHub - allenai/molmo: Code for the Molmo Vision-Language Model",
+      "url": "https://github.com/allenai/molmo",
+      "snippet": "Molmo is a repository for training and using Ai2&#x27;s state-of-the-art multimodal open language models. Here is a video demo of Molmo&#x27;s capabilities. Try Molmo using our public demo showcasing the Molmo-7B-D model. This codebase is based on the OLMo codebase with the addition of vision encoding and integrating generative evaluations."
+    },
+    {
+      "title": "Molmo 72B 0924 by allenai — VRAM 146.7GB, 4K context | LLM Explorer",
+      "url": "https://llm-explorer.com/model/allenai%2FMolmo-72B-0924,5lITgNTXrBgMfij3G4pMqT",
+      "snippet": "Molmo 72B 0924 is an open-source 72b LLM by allenai. VRAM 146.7GB, 4K context. Compare benchmarks, capabilities, and deployment details on LLM Explorer."
+    }
+  ]
+}

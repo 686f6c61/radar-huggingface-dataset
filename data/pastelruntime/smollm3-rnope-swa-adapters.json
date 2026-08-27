@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "PastelRuntime/SmolLM3-RNoPE-SWA-Adapters",
+  "slug": "pastelruntime-smollm3-rnope-swa-adapters",
+  "author": "PastelRuntime",
+  "url": "https://huggingface.co/PastelRuntime/SmolLM3-RNoPE-SWA-Adapters",
+  "created_at": "2026-08-27T02:20:04.000Z",
+  "updated_at": "2026-08-27T02:23:27.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "lora",
+    "rnope",
+    "sliding-window-attention",
+    "long-context",
+    "base_model:HuggingFaceTB/SmolLM3-3B",
+    "base_model:adapter:HuggingFaceTB/SmolLM3-3B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 122760720,
+  "storage_human": "123 MB",
+  "base_model": "HuggingFaceTB/SmolLM3-3B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - PastelRuntime/smollm3-research",
+      "url": "https://github.com/PastelRuntime/smollm3-research",
+      "snippet": "The model SmolLM3-3B is a 36-layer hybrid: 27 RoPE layers + 9 NoPE layers (no positional embedding, every 4th layer), 64k native context (128k with YaRN), dual /think and /no_think modes, tied embeddings, GQA. The NoPE-hybrid design comes from the RNoPE paper (arXiv:2501.18795), which claims the combo gives long-context retrieval and memory savings — but nobody had tested the recipe on this ..."
+    },
+    {
+      "title": "smollm3-research/README.md at main · PastelRuntime/smollm3 ... - GitHub",
+      "url": "https://github.com/PastelRuntime/smollm3-research/blob/main/README.md",
+      "snippet": "The model SmolLM3-3B is a 36-layer hybrid: 27 RoPE layers + 9 NoPE layers (no positional embedding, every 4th layer), 64k native context (128k with YaRN), dual /think and /no_think modes, tied embeddings, GQA. The NoPE-hybrid design comes from the RNoPE paper (arXiv:2501.18795), which claims the combo gives long-context retrieval and memory savings — but nobody had tested the recipe on this ..."
+    },
+    {
+      "title": "HuggingFaceTB/SmolLM3-3B · Hugging Face",
+      "url": "https://huggingface.co/HuggingFaceTB/SmolLM3-3B",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "SmolLM3 - Hugging Face",
+      "url": "https://huggingface.co/docs/transformers/en/model_doc/smollm3",
+      "snippet": "SmolLM3 is a fully open, compact language model designed for efficient deployment while maintaining strong performance. It uses a Transformer decoder architecture with Grouped Query Attention (GQA) to reduce the kv cache, and no RoPE, enabling improved performance on long-context tasks."
+    },
+    {
+      "title": "SmolLM Small Language Models | huggingface/alignment-handbook | DeepWiki",
+      "url": "https://deepwiki.com/huggingface/alignment-handbook/4.2-smollm-small-language-models",
+      "snippet": "SmolLM Small Language Models Relevant source files This page documents the SmolLM family training recipes in the Alignment Handbook. It covers the configuration, training process, and datasets used to create these efficient, compact language models ranging from 135M to 3B parameters. For information about larger models like Zephyr, see page 4.1. Overview of SmolLM Family The Alignment Handbook ..."
+    }
+  ]
+}

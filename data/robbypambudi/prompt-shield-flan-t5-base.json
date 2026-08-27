@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "robbypambudi/prompt-shield-flan-t5-base",
+  "slug": "robbypambudi-prompt-shield-flan-t5-base",
+  "author": "robbypambudi",
+  "url": "https://huggingface.co/robbypambudi/prompt-shield-flan-t5-base",
+  "created_at": "2026-08-27T07:37:09.000Z",
+  "updated_at": "2026-08-27T07:37:46.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "t5",
+    "text-classification",
+    "prompt-injection",
+    "security",
+    "flan-t5",
+    "base_model:google/flan-t5-base",
+    "base_model:finetune:google/flan-t5-base",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 223495682,
+  "parameters_human": "223.5M",
+  "storage_bytes": 894020048,
+  "storage_human": "894 MB",
+  "base_model": "google/flan-t5-base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - robbypambudi/prompt-shield",
+      "url": "https://github.com/robbypambudi/prompt-shield",
+      "snippet": "Contribute to robbypambudi/prompt-shield development by creating an account on GitHub."
+    },
+    {
+      "title": "LLM Leaderboard 2026: Compare 300+ Top AI Models by Intelligence, Speed ...",
+      "url": "https://llm-stats.com/leaderboards/llm-leaderboard",
+      "snippet": "The LLM Leaderboard — independent ranking of GPT, Claude, Gemini, Llama, DeepSeek and 300+ AI models by intelligence, speed and price. Filter by provider, license, modality and context window; sort by every benchmark. Composite LLM Stats Score updated continuously from public benchmarks and live API metrics."
+    },
+    {
+      "title": "GitHub - saishamehraa/PromptShield: Live demonstration for testing",
+      "url": "https://github.com/saishamehraa/PromptShield",
+      "snippet": "PromptShield Lite is a real-time AI security gateway that sits between users and LLMs, actively detecting, sanitizing, and blocking threats before they reach the model ..."
+    },
+    {
+      "title": "Mysterious Ox Alpha AI Model Was Made by Chinese Firm Z.ai - Business ...",
+      "url": "https://www.businessinsider.com/ox-alpha-model-made-by-china-z-ai-2026-8?op=1",
+      "snippet": "The free AI coding model sparked widespread interest among developers after appearing anonymously on OpenRouter."
+    },
+    {
+      "title": "prompt-shield-ai · PyPI",
+      "url": "https://pypi.org/project/prompt-shield-ai/",
+      "snippet": "prompt-shield Secure your agent prompts. Detect. Redact. Protect. pip install prompt-shield-ai If prompt-shield helps you ship safer LLM apps, please ⭐ the repo — it helps other developers find the project. — the honest adoption metric. PyPI counts CI, mirrors, and scanners; this counts production subscribers polling the federated threat-intel feed. Subscribe in 3 lines."
+    }
+  ]
+}

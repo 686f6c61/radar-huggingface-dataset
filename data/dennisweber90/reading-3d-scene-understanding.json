@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "DennisWeber90/reading-3d-scene-understanding",
+  "slug": "dennisweber90-reading-3d-scene-understanding",
+  "author": "DennisWeber90",
+  "url": "https://huggingface.co/DennisWeber90/reading-3d-scene-understanding",
+  "created_at": "2026-08-27T09:20:32.000Z",
+  "updated_at": "2026-08-27T09:20:41.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "transformer",
+    "research-notes",
+    "3d-scene-understanding",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 24832,
+  "parameters_human": "24832",
+  "storage_bytes": 99808,
+  "storage_human": "99808 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "3D Scene Understanding at CVPR 2026",
+      "url": "https://scene-understanding.com/",
+      "snippet": "Overview The rapid evolution toward next-generation embodied AI has driven remarkable convergence across computer vision, graphics, and robotics, with growing emphasis on robust 3D understanding for in-the-wild and real-world applications. Recent breakthroughs have introduced powerful 3D foundational models that demonstrate unprecedented zero-shot generalization across diverse 3D ..."
+    },
+    {
+      "title": "arXiv.org e-Print archive",
+      "url": "https://arxiv.org/pdf/2306.01667",
+      "snippet": "arXiv.org e-Print archive"
+    },
+    {
+      "title": "3D Scene Understanding at CVPR 2025",
+      "url": "https://scene-understanding.com/2025/index.html",
+      "snippet": "Could pure end-to-end models and scaling large-scale datasets work, or are intermediate representations, even symbolic ones more suitable for certain tasks? This year&#x27;s focus will be exploring the fundamental aspects to enhance interaction between agents and 3D scenes in the new era of AI, promoting future directions and ideas to emerge ..."
+    },
+    {
+      "title": "3d-scene-understanding · GitHub Topics · GitHub",
+      "url": "https://github.com/topics/3d-scene-understanding",
+      "snippet": "3d-scene-understanding multimodal-llm language-interaction unified-foundation-model Updated 2 weeks ago Python"
+    },
+    {
+      "title": "AI/TLDR — New AI Models, Tools & Papers This Week",
+      "url": "https://ai-tldr.dev/",
+      "snippet": "AI/TLDR is a high-volume tracker of new AI releases — models, open-source repos, developer tools, papers, datasets, benchmarks and security findings — refreshed every 2 hours and explained in plain English."
+    }
+  ]
+}

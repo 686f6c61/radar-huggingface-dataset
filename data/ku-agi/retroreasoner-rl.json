@@ -1,0 +1,76 @@
+{
+  "schema": 1,
+  "id": "KU-AGI/RetroReasoner-RL",
+  "slug": "ku-agi-retroreasoner-rl",
+  "author": "KU-AGI",
+  "url": "https://huggingface.co/KU-AGI/RetroReasoner-RL",
+  "created_at": "2026-08-27T01:30:26.000Z",
+  "updated_at": "2026-08-27T02:15:33.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3",
+    "text-generation",
+    "chemistry",
+    "retrosynthesis",
+    "reasoning",
+    "conversational",
+    "en",
+    "base_model:Qwen/Qwen3-8B",
+    "base_model:finetune:Qwen/Qwen3-8B",
+    "license:apache-2.0",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 8190735360,
+  "parameters_human": "8.19B",
+  "storage_bytes": 16392942604,
+  "storage_human": "16.4 GB",
+  "base_model": "Qwen/Qwen3-8B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "[2603.12666] RetroReasoner: A Reasoning LLM for Strategic ...",
+      "url": "https://arxiv.org/abs/2603.12666",
+      "snippet": "This paper proposes RetroReasoner, a retrosynthetic reasoning model that captures chemists&#x27; strategic disconnection-based thinking. RetroReasoner is trained with supervised fine-tuning and reinforcement learning. For supervised fine-tuning, SyntheticRetro generates structured disconnection rationales paired with reactant predictions."
+    },
+    {
+      "title": "RetroReasoner: A Reasoning LLM for Strategic Retrosynthesis Prediction",
+      "url": "https://arxiv.org/pdf/2603.12666",
+      "snippet": "To address this problem, we introduce a reasoning process for retrosynthesis prediction that follows a chemist&#x27;s strategy and propose RetroReasoner, a model that infers reactants from a product step-by-step. RetroReasoner is trained in two stages: first with supervised fine-tuning (SFT) and then with reinforcement learning (RL)."
+    },
+    {
+      "title": "KU-AGI (AGI Lab) - Hugging Face",
+      "url": "https://huggingface.co/KU-AGI/models",
+      "snippet": "AGI dhdbsrlw updated a model about 10 hours ago dhdbsrlw updated a model 1 day ago"
+    },
+    {
+      "title": "RetroReasoner: A Reasoning LLM for Strategic Retrosynthesis Prediction",
+      "url": "https://www.wizwand.com/paper/69b78e5f0636e5bf4afbda4e",
+      "snippet": "This paper proposes RetroReasoner, a retrosynthetic reasoning model that captures chemists&#x27; strategic disconnection-based thinking. RetroReasoner is trained with supervised fine-tuning and reinforcement learning. For supervised fine-tuning, SyntheticRetro generates structured disconnection rationales paired with reactant predictions."
+    },
+    {
+      "title": "RetroReasoner: A Reasoning LLM for Strategic ... - OpenReview",
+      "url": "https://openreview.net/pdf?id=ZoDqbMN6uT",
+      "snippet": "RetroReasoner, chemist-inspired stepwise rea-soning model leveraging strategic bond dis-connection, trained with SFT and further op-timized with RL using a round-trip reward, leading to more accurate, diverse, and feasible reactant proposals."
+    }
+  ]
+}

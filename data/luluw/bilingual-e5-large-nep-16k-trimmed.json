@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "luluw/bilingual-e5-large-nep-16k-trimmed",
+  "slug": "luluw-bilingual-e5-large-nep-16k-trimmed",
+  "author": "luluw",
+  "url": "https://huggingface.co/luluw/bilingual-e5-large-nep-16k-trimmed",
+  "created_at": "2026-08-27T06:42:15.000Z",
+  "updated_at": "2026-08-27T06:44:53.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "feature-extraction",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "xlm-roberta",
+    "feature-extraction",
+    "sentence-transformers",
+    "sentence-embedding",
+    "multilingual",
+    "long-context",
+    "vocabulary-trimming",
+    "nepali",
+    "english",
+    "custom_code",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 321714176,
+  "parameters_human": "321.7M",
+  "storage_bytes": 1286901632,
+  "storage_human": "1.3 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "luluw/Multilingual-E5-Large-Nep-GGUF · Hugging Face",
+      "url": "https://huggingface.co/luluw/Multilingual-E5-Large-Nep-GGUF",
+      "snippet": "Model This model is a 42.73% smaller version of intfloat/multilingual-e5-large, optimized for Nepali through vocabulary reduction using the trimming method. The original model has a vocabulary of 250,037 tokens. The trimmed model retains 16,384 tokens, significantly reducing model size and memory requirements."
+    },
+    {
+      "title": "LLM Leaderboard 2026: Compare 300+ Top AI Models by Intelligence, Speed ...",
+      "url": "https://llm-stats.com/leaderboards/llm-leaderboard",
+      "snippet": "The LLM Leaderboard — independent ranking of GPT, Claude, Gemini, Llama, DeepSeek and 300+ AI models by intelligence, speed and price. Filter by provider, license, modality and context window; sort by every benchmark. Composite LLM Stats Score updated continuously from public benchmarks and live API metrics."
+    },
+    {
+      "title": "intfloat/multilingual-e5-large · Hugging Face",
+      "url": "https://huggingface.co/intfloat/multilingual-e5-large",
+      "snippet": "Multilingual-E5-large Multilingual E5 Text Embeddings: A Technical Report. Liang Wang, Nan Yang, Xiaolong Huang, Linjun Yang, Rangan Majumder, Furu Wei, arXiv 2024 This model has 24 layers and the embedding size is 1024. Usage Below is an example to encode queries and passages from the MS-MARCO passage ranking dataset."
+    },
+    {
+      "title": "Multilingual E5 Large | Gemini Enterprise Agent Platform | Google Cloud ...",
+      "url": "https://docs.cloud.google.com/gemini-enterprise-agent-platform/models/maas/e5/multilingual-e5-large",
+      "snippet": "Multilingual E5 Large is part of the E5 family of text embedding models. This large variant contains 24 layers. This model is well-suited for tasks such as: Semantic Search: Finding documents or text passages that are semantically relevant to a query. Text Clustering: Grouping similar pieces of text based on their semantic meaning. Informative Response Generation: Following instructions to ..."
+    },
+    {
+      "title": "Latest AI Model Releases — August 2026",
+      "url": "https://aireleasetracker.com/latest",
+      "snippet": "The newest AI model releases as of August 2026. Most recent: GLM-5.3-Flash by Z.ai on Aug 26 2026. Track every new frontier model from OpenAI, Anthropic, Google DeepMind, Meta, SpaceXAI, DeepSeek, Mistral, and Moonshot AI — updated continuously."
+    }
+  ]
+}

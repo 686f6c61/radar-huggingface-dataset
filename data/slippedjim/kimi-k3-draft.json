@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "slippedJim/Kimi-K3-Draft",
+  "slug": "slippedjim-kimi-k3-draft",
+  "author": "slippedJim",
+  "url": "https://huggingface.co/slippedJim/Kimi-K3-Draft",
+  "created_at": "2026-08-25T06:47:17.000Z",
+  "updated_at": "2026-08-27T09:24:37.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "k3_dspark",
+    "speculative-decoding",
+    "dspark",
+    "kimi-k3",
+    "draft-model",
+    "base_model:moonshotai/Kimi-K3",
+    "base_model:finetune:moonshotai/Kimi-K3",
+    "license:other",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 3562312961,
+  "parameters_human": "3.56B",
+  "storage_bytes": 45331268173,
+  "storage_human": "45.3 GB",
+  "base_model": "moonshotai/Kimi-K3",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": true,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "slippedJim/K3_draft · Hugging Face",
+      "url": "https://huggingface.co/slippedJim/K3_draft",
+      "snippet": "A DSpark draft model for speculative decoding with moonshotai/Kimi-K3, trained with on-policy speculative distillation. The file layout, tensor names and config.json are identical to Inferact/Kimi-K3-DSpark, so this is a drop-in replacement for it — only the weights differ."
+    },
+    {
+      "title": "Kimi K3: 2.8T Open Model for Coding & Knowledge Work",
+      "url": "https://www.kimi.ai/ai-models/kimi-k3",
+      "snippet": "Meet Kimi K3, a 2.8T-parameter model with native vision and a 1M context window. Create playable games, polished slides, interactive reports, and more."
+    },
+    {
+      "title": "Kimi AI with K3 | Built for Agentic Coding & Knowledge Work",
+      "url": "https://www.kimi.com/en",
+      "snippet": "Try Kimi K3 to build playable multiplayer and 3D games, create consulting grade slides, and run parallel tasks with Swarm and Goal to get more work done."
+    },
+    {
+      "title": "Kimi K3 Jailbreak Risk — Prompt Injection and the ... - penligent.ai",
+      "url": "https://www.penligent.ai/hackinglabs/kimi-k3-jailbreak/",
+      "snippet": "Assess Kimi K3 jailbreak risk across prompt injection, Kimi Code, malicious repositories, MCP tools, real CVEs, safe testing, detection, and agent hardening. Kimi K3 jailbreak risk should not be reduced to a contest over whether someone can make the model print prohibited text. Kimi K3 is being deployed through coding and agent workflows that can read repositories, edit files, execute shell ..."
+    },
+    {
+      "title": "GitHub - MoonshotAI/Kimi-K3: Open Frontier Intelligence",
+      "url": "https://github.com/MoonshotAI/Kimi-K3/tree/main",
+      "snippet": "Kimi K3 is an open-weight, native multimodal agentic model and our most capable model to date. It is a 2.8T-parameter model built on Kimi Delta Attention (KDA) and Attention Residuals (AttnRes), with native vision capabilities and a 1-million-token context window. It is the world&#x27;s first open 3T-class model, designed for frontier intelligence across long-horizon coding, knowledge work, and ..."
+    }
+  ]
+}

@@ -5,7 +5,7 @@
   "author": "arcadia-impact",
   "url": "https://huggingface.co/arcadia-impact/scimt-dispatch-models",
   "created_at": "2026-08-18T09:39:42.000Z",
-  "updated_at": "2026-08-26T07:17:28.000Z",
+  "updated_at": "2026-08-26T16:57:00.000Z",
   "license": "gemma",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -38,8 +38,8 @@
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
-  "storage_bytes": 1439359380812,
-  "storage_human": "1439.4 GB",
+  "storage_bytes": 1487563842700,
+  "storage_human": "1487.6 GB",
   "base_model": "unsloth/gemma-3-12b-pt",
   "formats": [
     "safetensors"

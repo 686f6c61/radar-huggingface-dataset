@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "Levsolovyov2/mobilevit-checkpoint",
+  "slug": "levsolovyov2-mobilevit-checkpoint",
+  "author": "Levsolovyov2",
+  "url": "https://huggingface.co/Levsolovyov2/mobilevit-checkpoint",
+  "created_at": "2026-08-27T11:03:11.000Z",
+  "updated_at": "2026-08-27T11:03:20.000Z",
+  "license": "bsd-3-clause",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "mobilevit",
+    "pytorch",
+    "retrieval",
+    "license:bsd-3-clause",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 16576,
+  "parameters_human": "16576",
+  "storage_bytes": 66784,
+  "storage_human": "66784 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "checkpoint AI Models | Civitai",
+      "url": "https://civitai.com/tag/checkpoint",
+      "snippet": "Browse 200 Stable Diffusion & Flux models, LoRAs, checkpoints, and embeddings tagged with checkpoint."
+    },
+    {
+      "title": "MobileViT - Hugging Face",
+      "url": "https://huggingface.co/docs/transformers/v4.49.0/en/model_doc/mobilevit",
+      "snippet": "The MobileViT model was proposed in MobileViT: Light-weight, General-purpose, and Mobile-friendly Vision Transformer by Sachin Mehta and Mohammad Rastegari. MobileViT introduces a new layer that replaces local processing in convolutions with global processing using transformers."
+    },
+    {
+      "title": "zeromodels/mobilevitv2_100_cvnets_in1k · Hugging Face",
+      "url": "https://huggingface.co/zeromodels/mobilevitv2_100_cvnets_in1k",
+      "snippet": "For more details on the model, please go to the upstream model card. Pure- Keras 3 conversion of timm/mobilevitv2_100.cvnets_in1k for kerasformers. One implementation runs unmodified on TensorFlow / Torch / JAX. This is an image-classification / backbone checkpoint (MobileViTV2ImageClassify / MobileViTV2Model)."
+    },
+    {
+      "title": "mmpretrain/configs/mobilevit/README.md at main · open-mmlab ... - GitHub",
+      "url": "https://github.com/open-mmlab/mmpretrain/blob/main/configs/mobilevit/README.md",
+      "snippet": "MobileViT aims at introducing a light-weight network, which takes the advantages of both ViTs and CNNs, uses the InvertedResidual blocks in MobileNetV2 and MobileViTBlock which refers to ViT transformer blocks to build a standard 5-stage model structure. The MobileViTBlock reckons transformers as convolutions to perform a global representation, meanwhile conbined with original convolution ..."
+    },
+    {
+      "title": "MobileViT: A mobile-friendly Transformer-based model for image ... - Keras",
+      "url": "https://keras.io/examples/vision/mobilevit/",
+      "snippet": "With convolutions, we can capture spatial relationships that model locality. Besides combining the properties of Transformers and convolutions, the authors introduce MobileViT as a general-purpose mobile-friendly backbone for different image recognition tasks."
+    }
+  ]
+}

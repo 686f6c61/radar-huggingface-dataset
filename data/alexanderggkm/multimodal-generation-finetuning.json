@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "alexanderggkm/multimodal-generation-finetuning",
+  "slug": "alexanderggkm-multimodal-generation-finetuning",
+  "author": "alexanderggkm",
+  "url": "https://huggingface.co/alexanderggkm/multimodal-generation-finetuning",
+  "created_at": "2026-08-27T02:11:21.000Z",
+  "updated_at": "2026-08-27T02:11:31.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "transformer",
+    "research-notes",
+    "multimodal-generation",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 33088,
+  "parameters_human": "33088",
+  "storage_bytes": 132832,
+  "storage_human": "132832 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "LLM Leaderboard 2026: Compare 300+ Top AI Models by Intelligence, Speed ...",
+      "url": "https://llm-stats.com/leaderboards/llm-leaderboard",
+      "snippet": "The LLM Leaderboard — independent ranking of GPT, Claude, Gemini, Llama, DeepSeek and 300+ AI models by intelligence, speed and price. Filter by provider, license, modality and context window; sort by every benchmark. Composite LLM Stats Score updated continuously from public benchmarks and live API metrics."
+    },
+    {
+      "title": "Mysterious Ox Alpha AI Model Was Made by Chinese Firm Z.ai - Business ...",
+      "url": "https://www.businessinsider.com/ox-alpha-model-made-by-china-z-ai-2026-8?op=1",
+      "snippet": "The free AI coding model sparked widespread interest among developers after appearing anonymously on OpenRouter."
+    },
+    {
+      "title": "Latest AI Model Releases — August 2026",
+      "url": "https://aireleasetracker.com/latest",
+      "snippet": "The newest AI model releases as of August 2026. Most recent: GLM-5.3-Flash by Z.ai on Aug 26 2026. Track every new frontier model from OpenAI, Anthropic, Google DeepMind, Meta, SpaceXAI, DeepSeek, Mistral, and Moonshot AI — updated continuously."
+    },
+    {
+      "title": "Building a Production Multimodal Fine-Tuning Pipeline",
+      "url": "https://cloud.google.com/blog/topics/developers-practitioners/building-a-production-multimodal-fine-tuning-pipeline",
+      "snippet": "Looking to fine-tune multimodal AI models for your specific domain but facing infrastructure and implementation challenges? This guide demonstrates how to overcome the multimodal implementation gap using Google Cloud and Axolotl, with a complete hands-on example fine-tuning Gemma 3 on the SIIM-ISIC Melanoma dataset. Learn how to scale from concept to production while addressing the typical ..."
+    },
+    {
+      "title": "GLM-5.3-Flash - unsloth.ai",
+      "url": "https://unsloth.ai/docs/models/glm-5.3",
+      "snippet": "GLM-5.3-Flash, also known as ox-alpha, is Z.ai&#x27;s new 320B parameter multimodal open model with 18B active parameters. GLM-5.3-Flash outperforms GLM-5.2 across benchmarks and real-world workloads at one-tenth the price, while approaching Claude Opus 4.8 on coding and agentic benchmarks. This article is a WIP."
+    }
+  ]
+}

@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "alirezaaminzadeh/contract-clause-rag-retriever",
+  "slug": "alirezaaminzadeh-contract-clause-rag-retriever",
+  "author": "alirezaaminzadeh",
+  "url": "https://huggingface.co/alirezaaminzadeh/contract-clause-rag-retriever",
+  "created_at": "2026-08-27T11:26:28.000Z",
+  "updated_at": "2026-08-27T11:28:17.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "scikit-learn",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "scikit-learn",
+    "joblib",
+    "retrieval",
+    "rag",
+    "bm25",
+    "tf-idf",
+    "en",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 499854,
+  "storage_human": "499854 B",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "alirezaaminzadeh/contractguard-clause-analyzer · Hugging Face",
+      "url": "https://huggingface.co/alirezaaminzadeh/contractguard-clause-analyzer",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "ContractGuard — Clause Analyzer - a Hugging Face Space by alirezaaminzadeh",
+      "url": "https://huggingface.co/spaces/alirezaaminzadeh/contractguard-clause-analyzer",
+      "snippet": "ContractGuard — Clause Analyzer Bilingual (EN/FA) contract intelligence: segment → classify (12 categories) → 14 auditable risk rules → executive summary → legal review queue with RBAC & audit trail."
+    },
+    {
+      "title": "The Complete Guide to RAG: Naive, Advanced, and Graph RAG in One ...",
+      "url": "https://www.mrlatte.net/en/research/2026/04/27/rag-complete-guide/",
+      "snippet": "From RAG basics to Graph RAG, Agentic RAG, and the LLM Wiki pattern, theory, runnable code, the latest trends, and a decision guide, all on a single page."
+    },
+    {
+      "title": "Retrieval-augmented generation - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Retrieval-augmented_generation",
+      "snippet": "Retrieval-augmented generation (RAG) enhances large language models (LLMs) by incorporating an information-retrieval mechanism that allows models to access and utilize additional data beyond their original training set. Ars Technica notes that \"when new information becomes available, rather than having to retrain the model, all that&#x27;s needed is to augment the model&#x27;s external knowledge base ..."
+    },
+    {
+      "title": "GitHub - gelifatsy/LegalAI-RAG-Contract-Advisor: ContractAdvisorRAG ...",
+      "url": "https://github.com/gelifatsy/LegalAI-RAG-Contract-Advisor",
+      "snippet": "CONTRACT ADVISOR RAG: TOWARDS BUILDING A HIGH-PRECISION LEGAL EXPERT LLM APP Navigating the complexities of legal contracts can be a daunting task, even for experienced professionals. ContractAdvisorRAG is an AI-powered legal assistance system designed to empower users with quick and accurate answers to their questions about contracts."
+    }
+  ]
+}

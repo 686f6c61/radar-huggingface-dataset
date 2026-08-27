@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "qvx-o/reFLEX-v1-15M",
+  "slug": "qvx-o-reflex-v1-15m",
+  "author": "qvx-o",
+  "url": "https://huggingface.co/qvx-o/reFLEX-v1-15M",
+  "created_at": "2026-08-27T10:54:05.000Z",
+  "updated_at": "2026-08-27T11:08:51.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "QreFLEX",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "QreFLEX",
+    "causal-language-model",
+    "conversational",
+    "small-language-model",
+    "transformer",
+    "reflex",
+    "experimental",
+    "text-generation",
+    "en",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 186062131,
+  "storage_human": "186 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "qvx-o (Qarvexium) - Hugging Face",
+      "url": "https://huggingface.co/qvx-o",
+      "snippet": "Qarvexium is an independent AI research and engineering organization focused on building efficient, accessible, and genuinely useful machine-learning systems — from language models and computer vision to speech, OCR, and generative AI."
+    },
+    {
+      "title": "qvx-o (Qarvexium) - Hugging Face",
+      "url": "https://huggingface.co/qvx-o/models",
+      "snippet": "Org profile for Qarvexium on Hugging Face, the AI community building the future."
+    },
+    {
+      "title": "Getting Started - Reflex",
+      "url": "https://alexnodeland.github.io/reflex/getting-started/",
+      "snippet": "📋 Prerequisites ¶ Docker and Docker Compose OpenAI API key (for AI agents) Optional: Logfire token (for observability)"
+    },
+    {
+      "title": "docs/docs/rag/reflex.md at master · aivaxlabs/docs · GitHub",
+      "url": "https://github.com/aivaxlabs/docs/blob/master/docs/rag/reflex.md",
+      "snippet": "The catalog declares a 1,948-token context and a maximum of 10,000 documents for Reflex. The response identifies @aivax/reflex-v1, returns results in descending relevance order, and preserves each document&#x27;s original zero-based index. Duplicate document strings are not removed from the response contract; each occurrence keeps its own input index. Example request using the default model:"
+    },
+    {
+      "title": "GitHub - ReflexioAI/reflexio: Make your agents improve themselves ...",
+      "url": "https://github.com/ReflexioAI/reflexio",
+      "snippet": "Make your agents improve themselves. Reflexio is an AI agent self-improvement harness that enables your AI agents to continuously learn from real user interactions. - ReflexioAI/reflexio"
+    }
+  ]
+}

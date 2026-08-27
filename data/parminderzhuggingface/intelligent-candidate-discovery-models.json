@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "ParminderzHuggingFace/intelligent-candidate-discovery-models",
+  "slug": "parminderzhuggingface-intelligent-candidate-discovery-models",
+  "author": "ParminderzHuggingFace",
+  "url": "https://huggingface.co/ParminderzHuggingFace/intelligent-candidate-discovery-models",
+  "created_at": "2026-08-27T09:43:54.000Z",
+  "updated_at": "2026-08-27T10:02:13.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "feature-extraction",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "faiss",
+    "embeddings",
+    "candidate-search",
+    "semantic-search",
+    "candidate-ranking",
+    "bge-base-en-v1.5",
+    "feature-extraction",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 326632320,
+  "storage_human": "327 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ParminderzHuggingFace (Parminder Singh)",
+      "url": "https://huggingface.co/ParminderzHuggingFace",
+      "snippet": "AI/ML Systems · NLP · Multimodal Learning · Retrieval · Computer Vision"
+    },
+    {
+      "title": "Intelligent Candidate Discovery - a Hugging Face Space by sankar126",
+      "url": "https://huggingface.co/spaces/sankar126/intelligent-candidate-discovery",
+      "snippet": "Redrob AI (Series A) is building a new AI Engineering org and needs a founding Senior AI Engineer to own the intelligence layer: retrieval, ranking and matching. You must have PRODUCTION experience with embeddings-based retrieval (sentence-transformers, BGE, E5, OpenAI), vector databases / hybrid search (FAISS, Qdrant, Milvus, Pinecone, Elasticsearch, OpenSearch), strong Python, and rigorous ..."
+    },
+    {
+      "title": "RedrobAI — India Runs Intelligent Candidate Discovery System",
+      "url": "https://github.com/ParminderSinghGithub/India-Runs-Intelligent-Candidate-Discovery",
+      "snippet": "AI-powered candidate discovery system built for the Redrob AI India Runs Data & AI Challenge (Track 1). The pipeline uses semantic retrieval via a FAISS vector index to pull candidate profiles matching a job description. Retrieved profiles are then evaluated using a hybrid deterministic scoring mechanism that weighs career relevance, skill matches, behavioral signals, profile consistency, and ..."
+    },
+    {
+      "title": "GitHub - VaishnaviKadwad/intelligent-candidate-discovery",
+      "url": "https://github.com/VaishnaviKadwad/intelligent-candidate-discovery",
+      "snippet": "Intelligent Candidate Discovery An AI-powered recruiter that semantically ranks candidates against a job description using multi-factor scoring."
+    },
+    {
+      "title": "Otter Meeting Agent - AI Notetaker, Transcription, Insights",
+      "url": "https://otter.ai/",
+      "snippet": "Otter AI Meeting Agent supports real-time transcription, live chat, automated summaries, insights, and action items."
+    }
+  ]
+}

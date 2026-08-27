@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "shin0624/bridgesense-segformer",
+  "slug": "shin0624-bridgesense-segformer",
+  "author": "shin0624",
+  "url": "https://huggingface.co/shin0624/bridgesense-segformer",
+  "created_at": "2026-08-27T06:29:15.000Z",
+  "updated_at": "2026-08-27T06:33:43.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-segmentation",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "onnx",
+    "image-segmentation",
+    "bridge-inspection",
+    "defect-detection",
+    "unity",
+    "sentis",
+    "base_model:nvidia/mit-b2",
+    "base_model:quantized:nvidia/mit-b2",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 111813743,
+  "storage_human": "112 MB",
+  "base_model": "nvidia/mit-b2",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "SegFormer - Hugging Face",
+      "url": "https://huggingface.co/docs/transformers/v4.50.0/model_doc/segformer",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "A Structure-Aware Deep Learning Framework for Automated Bridge ... - MDPI",
+      "url": "https://www.mdpi.com/1424-8220/26/13/4255",
+      "snippet": "This study presents a structure-aware deep learning framework that integrates transformer-based segmentation and object detection to automatically associate bridge damage with specific structural members, producing outputs such as \"crack on main girder\" providing structure-aware inspection outputs as a first layer for AI-assisted bridge inspection and subsequent maintenance assessment."
+    },
+    {
+      "title": "SegFormer - Hugging Face",
+      "url": "https://huggingface.co/docs/transformers/v4.21.1/en/model_doc/segformer",
+      "snippet": "Overview The SegFormer model was proposed in SegFormer: Simple and Efficient Design for Semantic Segmentation with Transformers by Enze Xie, Wenhai Wang, Zhiding Yu, Anima Anandkumar, Jose M. Alvarez, Ping Luo. The model consists of a hierarchical Transformer encoder and a lightweight all-MLP decode head to achieve great results on image segmentation benchmarks such as ADE20K and Cityscapes."
+    },
+    {
+      "title": "SegFormer Tutorial: Master Semantic Segmentation Fast",
+      "url": "https://www.labellerr.com/blog/segformer/",
+      "snippet": "Explore SegFormer, a fast, lightweight Transformer model for efficient and accurate semantic segmentation in real-world AI applications."
+    },
+    {
+      "title": "GitHub - KieDani/SegformerPlusPlus: Official implementation of ...",
+      "url": "https://github.com/KieDani/SegformerPlusPlus",
+      "snippet": "In this paper, we explore various token merging strategies within the framework of the SegFormer architecture and perform experiments on multiple semantic segmentation and human pose estimation datasets."
+    }
+  ]
+}

@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "Linf-elix/generation-2023",
+  "slug": "linf-elix-generation-2023",
+  "author": "Linf-elix",
+  "url": "https://huggingface.co/Linf-elix/generation-2023",
+  "created_at": "2026-08-27T11:15:43.000Z",
+  "updated_at": "2026-08-27T11:15:53.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "efficientformer",
+    "pytorch",
+    "generation",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 33088,
+  "parameters_human": "33088",
+  "storage_bytes": 132832,
+  "storage_human": "132832 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Linf-elix (E. Taylor) - Hugging Face",
+      "url": "https://huggingface.co/Linf-elix/models",
+      "snippet": "Researcher in NLP & computer vision."
+    },
+    {
+      "title": "GitHub - RLinf/RLinf: RLinf: Reinforcement Learning Infrastructure for ...",
+      "url": "https://github.com/RLinf/RLinf",
+      "snippet": "RLinf is a flexible and scalable open-source RL infrastructure designed for Embodied and Agentic AI. The &#x27;inf&#x27; in RLinf stands for Infrastructure, highlighting its role as a robust backbone for next-generation training. It also stands for Infinite, symbolizing the system&#x27;s support for open-ended learning, continuous generalization, and limitless possibilities in intelligence development."
+    },
+    {
+      "title": "GPT‑4 - OpenAI",
+      "url": "https://openai.com/index/gpt-4-research/",
+      "snippet": "We&#x27;ve created GPT-4, the latest milestone in OpenAI&#x27;s effort in scaling up deep learning. GPT-4 is a large multimodal model (accepting image and text inputs, emitting text outputs) that, while less capable than humans in many real-world scenarios, exhibits human-level performance on various professional and academic benchmarks."
+    },
+    {
+      "title": "Agentic AI Chat For Work: AI Chatbot For Business That Works",
+      "url": "https://ajelix.com/",
+      "snippet": "Ajelix is the agentic AI chat for work that transforms data into actionable results. Trusted by 340,000+ digital professionals."
+    },
+    {
+      "title": "Research | OpenAI",
+      "url": "https://openai.com/research/",
+      "snippet": "View research index Learn about safety Focus areas We advance the science of AI through research on frontier models, reasoning, multimodal systems, and safe deployment. GPT OpenAI&#x27;s GPT series models are fast, versatile, and cost-efficient AI systems designed to understand context, generate content, and reason across text, images, and more."
+    }
+  ]
+}

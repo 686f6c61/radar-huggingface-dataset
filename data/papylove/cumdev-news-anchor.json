@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "papylove/cumdev-news-anchor",
+  "slug": "papylove-cumdev-news-anchor",
+  "author": "papylove",
+  "url": "https://huggingface.co/papylove/cumdev-news-anchor",
+  "created_at": "2026-08-27T01:49:01.000Z",
+  "updated_at": "2026-08-27T03:47:11.000Z",
+  "license": "llama3.3",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "persona",
+    "social-media",
+    "threads",
+    "news-anchor",
+    "license:llama3.3",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - himanshu25122002/AI-News-Anchor: Fully automated AI system ...",
+      "url": "https://github.com/himanshu25122002/AI-News-Anchor",
+      "snippet": "AI News Anchor is a fully autonomous system that fetches real-time news based on a user-given topic, generates human-like anchor scripts, converts them to realistic voiceovers, and produces complete news videos featuring a talking AI avatar with relevant B-roll visuals. This project showcases the power of generative AI in media automation and the future of AI-driven journalism."
+    },
+    {
+      "title": "Free AI News Anchor Generator for News Videos | JoggAI",
+      "url": "https://www.jogg.ai/tools/ai-anchor/",
+      "snippet": "Create a news video from your script with a customizable AI anchor, natural voice, lip-sync, and multilingual delivery. Try JoggAI online for free."
+    },
+    {
+      "title": "AI News Anchor Video Generator | Create Virtual News Videos in Minutes",
+      "url": "https://www.topview.ai/make/ai-news-anchor-video-generator",
+      "snippet": "Transform text or audio into realistic virtual news anchor videos with Topview&#x27;s AI generator. Choose your avatar, and let AI handle speech, facial animation, and perfect lip sync."
+    },
+    {
+      "title": "AI News Anchor Solution for Broadcasters & Media | AI Studios",
+      "url": "https://www.aistudios.com/solutions/news",
+      "snippet": "An AI news anchor is a photorealistic digital presenterthat delivers news directly from a script —with natural voice, facial expressions, and synchronized lip movements.Unlike traditional news production, AI anchors requireno cameras, studios, or on-site talent,making it possible to produce broadcast-quality videoin any language, at any time."
+    },
+    {
+      "title": "Free AI News Video Generator: Text to Video News Creation - Vidnoz",
+      "url": "https://www.vidnoz.com/news.html",
+      "snippet": "Turn plain texts into vivid news with this free AI news generator in 3 minutes. 2800+ templates to make AI video news effortlessly. Try your AI news reporter."
+    }
+  ]
+}

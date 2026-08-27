@@ -5,7 +5,7 @@
   "author": "ibm-granite",
   "url": "https://huggingface.co/ibm-granite/granite-speech-5.0-470m-turboctc",
   "created_at": "2026-08-04T14:07:13.000Z",
-  "updated_at": "2026-08-25T14:25:18.000Z",
+  "updated_at": "2026-08-26T18:37:46.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "automatic-speech-recognition",
@@ -24,7 +24,7 @@
     "region:us"
   ],
   "likes": 25,
-  "downloads_30d": 722,
+  "downloads_30d": 1209,
   "trending_score": 25,
   "parameters": 472993792,
   "parameters_human": "473.0M",

@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "aayush0K/Llama-3-MindBridge",
+  "slug": "aayush0k-llama-3-mindbridge",
+  "author": "aayush0K",
+  "url": "https://huggingface.co/aayush0K/Llama-3-MindBridge",
+  "created_at": "2026-08-27T08:22:33.000Z",
+  "updated_at": "2026-08-27T08:27:19.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "base_model:adapter:meta-llama/Meta-Llama-3-8B-Instruct",
+    "lora",
+    "sft",
+    "transformers",
+    "trl",
+    "text-generation",
+    "conversational",
+    "arxiv:1910.09700",
+    "base_model:meta-llama/Meta-Llama-3-8B-Instruct",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 185042201,
+  "storage_human": "185 MB",
+  "base_model": "meta-llama/Meta-Llama-3-8B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "MindBridge: Agentic Mental Health AI - GitHub",
+      "url": "https://github.com/atchai99/mindbridge-agentic-ai",
+      "snippet": "MindBridge is a multi-agent framework for AI-assisted mental health support, built around a graph of specialized agents that analyze, respond to, and score every message in a conversation. Rather than a single prompt driving a single response, MindBridge routes each message through a pipeline of agents that assess emotional state, retrieve relevant history, select an appropriate therapeutic ..."
+    },
+    {
+      "title": "MindBridge AI | The Leader in Autonomous Financial Oversight",
+      "url": "https://www.mindbridge.ai/",
+      "snippet": "As AI and automation accelerate financial operations, governance is struggling to keep pace with the speed and scale of change. MindBridge closes the governance gap by enabling Autonomous Financial Oversight."
+    },
+    {
+      "title": "MindBridge: Scalable and Cross-Model Knowledge Editing via Memory ...",
+      "url": "https://arxiv.org/abs/2503.02701",
+      "snippet": "To address this issue, we propose the problem of cross-model knowledge editing and introduce MindBridge, a scalable solution inspired by the low coupling between modality processing and LLMs in multi-modal models. MindBridge introduces the novel concept of memory modality, which encodes edited knowledge as an independent modality."
+    },
+    {
+      "title": "Open-source AI Models for Any Application | Llama 3",
+      "url": "https://developer.meta.com/ai/models/llama-3/",
+      "snippet": "Discover Llama 3&#x27;s open-source AI models you can fine-tune, distill and deploy anywhere. Build smarter applications with flexible AI solutions."
+    },
+    {
+      "title": "arXiv:2503.02701v1 [cs.AI] 4 Mar 2025",
+      "url": "https://arxiv.org/pdf/2503.02701",
+      "snippet": "Extensive experiments on knowledge editing datasets and multiple LLMs validate the ef-fectiveness and scalability of MindBridge for cross-model knowledge editing, even when handling tens of thousands of edits."
+    }
+  ]
+}

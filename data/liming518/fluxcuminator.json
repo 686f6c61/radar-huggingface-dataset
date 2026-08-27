@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "liming518/fluxcuminator",
+  "slug": "liming518-fluxcuminator",
+  "author": "liming518",
+  "url": "https://huggingface.co/liming518/fluxcuminator",
+  "created_at": "2026-08-27T09:41:35.000Z",
+  "updated_at": "2026-08-27T09:59:41.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-to-image",
+  "library": "diffusers",
+  "languages": [],
+  "tags": [
+    "diffusers",
+    "text-to-image",
+    "lora",
+    "template:diffusion-lora",
+    "base_model:black-forest-labs/FLUX.1-dev",
+    "base_model:adapter:black-forest-labs/FLUX.1-dev",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 310073296,
+  "storage_human": "310 MB",
+  "base_model": "black-forest-labs/FLUX.1-dev",
+  "formats": [
+    "diffusers"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "liming518 (Li Ming) - Hugging Face",
+      "url": "https://huggingface.co/liming518",
+      "snippet": "AI & ML interests ... Recent Activity updated a model about 4 hours ago ... published a model about 4 hours ago"
+    },
+    {
+      "title": "liming518/enhanceFluUnV2 · Hugging Face",
+      "url": "https://huggingface.co/liming518/enhanceFluUnV2",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Draw Things: AI-assisted Image Generation",
+      "url": "https://drawthings.ai/import/diffusers/pipeline.load_lora_weights/?repo_id=liming518/enhanceFluUnV2",
+      "snippet": "Draw Things Looks like you&#x27;re trying to run this model in Draw Things. liming518 / enhanceFluUnV2 View Repo"
+    },
+    {
+      "title": "AI Leaderboard 2026: Compare & Rank 300+ Top AI Models by Intelligence ...",
+      "url": "https://llm-stats.com/",
+      "snippet": "The AI Leaderboard — independent rankings of GPT, Claude, Gemini, Llama, DeepSeek and 300+ AI models by intelligence, speed and price. Composite LLM Stats Score updated continuously from public benchmarks and live API metrics."
+    },
+    {
+      "title": "LLM Leaderboard - Comparison of AI models from OpenAI, Anthropic ...",
+      "url": "https://artificialanalysis.ai/leaderboards/models",
+      "snippet": "Comparison and ranking the performance of over 250 AI models (LLMs) across key metrics including intelligence, price, performance and speed (output speed - tokens per second & latency - TTFT), context window & others."
+    }
+  ]
+}

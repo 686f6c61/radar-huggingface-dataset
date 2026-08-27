@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "HY-2012/pocket-tts.AXERA",
+  "slug": "hy-2012-pocket-tts-axera",
+  "author": "HY-2012",
+  "url": "https://huggingface.co/HY-2012/pocket-tts.AXERA",
+  "created_at": "2026-08-27T08:08:17.000Z",
+  "updated_at": "2026-08-27T08:08:17.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - friendly-machines-com/pocket-tts",
+      "url": "https://github.com/friendly-machines-com/pocket-tts",
+      "snippet": "A lightweight text-to-speech (TTS) application designed to run efficiently on CPUs. Forget about the hassle of using GPUs and web APIs serving TTS models. With Kyutai&#x27;s Pocket TTS, generating audio is just a pip install and a function call away."
+    },
+    {
+      "title": "Pocket TTS - kyutai-labs.github.io",
+      "url": "https://kyutai-labs.github.io/pocket-tts/",
+      "snippet": "ComfyUI-Pocket-TTS by @ai-joe-git Lightweight CPU-based Text-to-Speech for ComfyUI pocket-tts-server by @ai-joe-git A lightweight, real-time voice cloning and chat server with OpenAI-compatible API."
+    },
+    {
+      "title": "GitHub - inde5media/POCKET-tts: A TTS that fits in your CPU (and pocket)",
+      "url": "https://github.com/inde5media/POCKET-tts",
+      "snippet": "A TTS that fits in your CPU (and pocket). Contribute to inde5media/POCKET-tts development by creating an account on GitHub."
+    },
+    {
+      "title": "AXERA-TECH (AXERA) - Hugging Face",
+      "url": "https://huggingface.co/AXERA-TECH/models",
+      "snippet": "AI & ML interests ... Recent Activity HY-2012 updated a model 27 minutes ago ... HY-2012 published a model 42 minutes ago ... SYJ9527 updated a model about 3 hours ago"
+    },
+    {
+      "title": "kyutai/pocket-tts - a Hugging Face Space by karybrusky",
+      "url": "https://huggingface.co/spaces/karybrusky/tts",
+      "snippet": "Audio Generation Playground part of the Demo Playground, and the UltimaX Intelligence project. This Space runs the Pocket TTS model from Kyutai. A lightweight text-to-speech (TTS) application designed to run efficiently on CPUs. Forget about the hassle of using GPUs and web APIs serving TTS models. Additionally, this Space uses a custom Docker image to maximize model performance and is ..."
+    }
+  ]
+}

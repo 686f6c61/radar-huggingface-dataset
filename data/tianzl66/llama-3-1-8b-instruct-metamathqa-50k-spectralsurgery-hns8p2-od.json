@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "tianzl66/Llama-3.1-8B-Instruct-MetaMathQA-50K-SpectralSurgery-HNS8p2-OD",
+  "slug": "tianzl66-llama-3-1-8b-instruct-metamathqa-50k-spectralsurgery-hns8p2-od",
+  "author": "tianzl66",
+  "url": "https://huggingface.co/tianzl66/Llama-3.1-8B-Instruct-MetaMathQA-50K-SpectralSurgery-HNS8p2-OD",
+  "created_at": "2026-08-27T07:52:13.000Z",
+  "updated_at": "2026-08-27T07:52:34.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "llama",
+    "lora",
+    "math",
+    "metamathqa",
+    "spectral-surgery",
+    "hns",
+    "base_model:meta-llama/Llama-3.1-8B-Instruct",
+    "base_model:adapter:meta-llama/Llama-3.1-8B-Instruct",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 167832208,
+  "storage_human": "168 MB",
+  "base_model": "meta-llama/Llama-3.1-8B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "meta-llama/Llama-3.1-8B-Instruct · Hugging Face",
+      "url": "https://huggingface.co/meta-llama/Llama-3.1-8B-Instruct",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "README.md · meta-llama/Llama-3.1-8B-Instruct at main",
+      "url": "https://huggingface.co/meta-llama/Llama-3.1-8B-Instruct/blob/main/README.md",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Llama-3.1-8B-Instruct: Text-to-Text model — overview, use cases ...",
+      "url": "https://www.aimodels.fyi/models/huggingFace/llama-3.1-8b-instruct-meta-llama",
+      "snippet": "Overview Llama-3.1-8B-Instruct is a multilingual instruction-tuned language model developed by meta-llama with 8 billion parameters, released July 23, 2024. The model uses an optimized transformer architecture with grouped-query attention (GQA) for efficient inference, trained on approximately 15 trillion tokens of publicly available data with a knowledge cutoff of December 2023. It supports ..."
+    },
+    {
+      "title": "Llama-3.1-8B-Instruct: Text-to-Text model — overview, use cases ...",
+      "url": "https://www.aimodels.fyi/models/huggingFace/llama-31-8b-instruct-meta-llama",
+      "snippet": "Overview Llama-3.1-8B-Instruct is an instruction-tuned multilingual large language model with 8 billion parameters developed by meta-llama. It is designed for multilingual dialogue and assistant-like chat applications, built on an auto-regressive transformer architecture with Grouped-Query Attention (GQA) for improved inference scalability. The model supports a 128k token context window and ..."
+    },
+    {
+      "title": "llama-3.1-8b-instruct Model by Meta | NVIDIA NIM",
+      "url": "https://build.nvidia.com/meta/llama-3_1-8b-instruct",
+      "snippet": "Advanced state-of-the-art model with language understanding, superior reasoning, and text generation."
+    }
+  ]
+}

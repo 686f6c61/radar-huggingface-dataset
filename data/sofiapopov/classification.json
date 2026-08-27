@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "sofiapopov/classification",
+  "slug": "sofiapopov-classification",
+  "author": "sofiapopov",
+  "url": "https://huggingface.co/sofiapopov/classification",
+  "created_at": "2026-08-27T10:46:05.000Z",
+  "updated_at": "2026-08-27T10:46:15.000Z",
+  "license": "bsd-3-clause",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "hybrid",
+    "pytorch",
+    "classification",
+    "license:bsd-3-clause",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 49600,
+  "parameters_human": "49600",
+  "storage_bytes": 198880,
+  "storage_human": "198880 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "AI Models | Civitai",
+      "url": "https://civitai.com/models",
+      "snippet": "Browse thousands of free Stable Diffusion & Flux models, LoRAs, checkpoints, and embeddings. The largest collection of AI image generation resources."
+    },
+    {
+      "title": "Image Classification Models - Hugging Face",
+      "url": "https://huggingface.co/models?pipeline_tag=image-classification",
+      "snippet": "Active filters: image-classification. Clear all. pixai-labs/pixai-tagger-v0.9. Image Classification • Updated Jul 7 • 195. deepghs/anime_ai_check"
+    },
+    {
+      "title": "Category classification prebuilt model - AI Builder",
+      "url": "https://learn.microsoft.com/en-us/ai-builder/prebuilt-category-classification",
+      "snippet": "The prebuilt category classification model is a ready to use AI model that&#x27;s configured to classify your text into categories that are useful for a specific business scenario. The first prebuilt category classification AI model is built around customer feedback uses."
+    },
+    {
+      "title": "Text Classification Models - Hugging Face",
+      "url": "https://huggingface.co/models?pipeline_tag=text-classification",
+      "snippet": "Explore machine learning models."
+    },
+    {
+      "title": "Top Machine Learning Classification Algorithms - GeeksforGeeks",
+      "url": "https://www.geeksforgeeks.org/machine-learning/top-machine-learning-algorithms-for-classification/",
+      "snippet": "Machine learning classification algorithms are essential tools used to categorize data into predefined classes based on learned patterns. From simple linear models to advanced neural networks, these algorithms are used in applications like spam detection, image recognition, sentiment analysis and medical diagnosis. Includes Logistic Regression, Decision Trees, Random Forest, SVM, KNN, Naive ..."
+    }
+  ]
+}

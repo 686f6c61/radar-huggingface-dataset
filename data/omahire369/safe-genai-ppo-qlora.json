@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "OmAhire369/safe-genai-ppo-qlora",
+  "slug": "omahire369-safe-genai-ppo-qlora",
+  "author": "OmAhire369",
+  "url": "https://huggingface.co/OmAhire369/safe-genai-ppo-qlora",
+  "created_at": "2026-08-27T11:23:42.000Z",
+  "updated_at": "2026-08-27T11:23:43.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "safety",
+    "alignment",
+    "preference-learning",
+    "ppo",
+    "qlora",
+    "rlhf",
+    "text-generation",
+    "base_model:openai-community/gpt2-medium",
+    "base_model:adapter:openai-community/gpt2-medium",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 17326189,
+  "storage_human": "17 MB",
+  "base_model": "gpt2-medium",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "OmAhire369/safe-genai-reward-qlora · Hugging Face",
+      "url": "https://huggingface.co/OmAhire369/safe-genai-reward-qlora",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "OmAhire369 (Om Ahire) - Hugging Face",
+      "url": "https://huggingface.co/OmAhire369/models",
+      "snippet": "OmAhire369/ppo_qlora_alignment ... OmAhire369/ppo_lora_alignment ... OmAhire369/ppo_full_alignment ... OmAhire369/reward-model-safe-ai"
+    },
+    {
+      "title": "Safety-Alignment-LLM/README.md at main · Omahire369/Safety ... - GitHub",
+      "url": "https://github.com/Omahire369/safety-alignment-llm/blob/main/README.md",
+      "snippet": "Fine-tuning an instruction-tuned model on a narrow domain quietly strips out its safety training. This project measures two zero-training ways to put refusal back — editing the weights and steering the activations — on the same base model, the same harmful benchmark, and the same utility split, so the trade-off between them is directly readable. Base model: Qwen/Qwen2.5-1.5B-Instruct ..."
+    },
+    {
+      "title": "safety-alignment-llm/app at main · Omahire369/safety-alignment-llm",
+      "url": "https://github.com/Omahire369/safety-alignment-llm/tree/main/app",
+      "snippet": "Contribute to Omahire369/safety-alignment-llm development by creating an account on GitHub."
+    },
+    {
+      "title": "TikTok - Make Your Day",
+      "url": "https://www.tiktok.com/en/",
+      "snippet": "TikTok - trends start here. On a device or on the web, viewers can watch and discover millions of personalized short videos. Download the app to get started."
+    }
+  ]
+}

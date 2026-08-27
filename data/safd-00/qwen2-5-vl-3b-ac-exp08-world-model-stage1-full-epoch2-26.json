@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "SaFD-00/qwen2.5-vl-3b-ac-exp08-world-model-stage1-full-epoch2.26",
+  "slug": "safd-00-qwen2-5-vl-3b-ac-exp08-world-model-stage1-full-epoch2-26",
+  "author": "SaFD-00",
+  "url": "https://huggingface.co/SaFD-00/qwen2.5-vl-3b-ac-exp08-world-model-stage1-full-epoch2.26",
+  "created_at": "2026-08-27T02:05:37.000Z",
+  "updated_at": "2026-08-27T02:08:21.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen2_5_vl",
+    "image-text-to-text",
+    "llama-factory",
+    "conversational",
+    "arxiv:1910.09700",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 3754622976,
+  "parameters_human": "3.75B",
+  "storage_bytes": 7520759840,
+  "storage_human": "7.5 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "qwen2.5-vl-3b-ac-exp08-world-model-stage1-full-epoch1",
+      "url": "https://huggingface.co/SaFD-00/qwen2.5-vl-3b-ac-exp08-world-model-stage1-full-epoch1",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "SaFD-00/qwen2.5-vl-7b-ac-stage1-full-world-model-epoch3 · Hugging Face",
+      "url": "https://huggingface.co/SaFD-00/qwen2.5-vl-7b-ac-stage1-full-world-model-epoch3",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "qwen2.5-vl-7b-ac-2-world-model-stage1-full-epoch3-stage2-lora-epoch3",
+      "url": "https://friendli.ai/models/SaFD-00/qwen2.5-vl-7b-ac-2-world-model-stage1-full-epoch3-stage2-lora-epoch3",
+      "snippet": "Deploy SaFD-00/qwen2.5-vl-7b-ac-2-world-model-stage1-full-epoch3-stage2-lora-epoch3 with low-latency inference on FriendliAI. Get scalable API serving, high throughput, and production-grade reliability for AI agents."
+    },
+    {
+      "title": "safd-00-qwen2.5-vl-7b-ac-stage2-world-model-epoch3/README.md ... - GitHub",
+      "url": "https://github.com/Damacol/safd-00-qwen2.5-vl-7b-ac-stage2-world-model-epoch3/blob/main/README.md",
+      "snippet": "SaFD-00/qwen2.5-vl-7b-ac-stage2-world-model-epoch3 - Private, Uncensored AI for Real Creators and Devs Experience {MODEL} with total data sovereignty. Local execution ready, uncensored generation, and Venice fallback."
+    },
+    {
+      "title": "[2502.13923] Qwen2.5-VL Technical Report - arXiv.org",
+      "url": "https://arxiv.org/abs/2502.13923",
+      "snippet": "We introduce Qwen2.5-VL, the latest flagship model of Qwen vision-language series, which demonstrates significant advancements in both foundational capabilities and innovative functionalities. Qwen2.5-VL achieves a major leap forward in understanding and interacting with the world through enhanced visual recognition, precise object localization, robust document parsing, and long-video ..."
+    }
+  ]
+}

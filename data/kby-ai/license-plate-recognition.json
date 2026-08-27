@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "kby-ai/license-plate-recognition",
+  "slug": "kby-ai-license-plate-recognition",
+  "author": "kby-ai",
+  "url": "https://huggingface.co/kby-ai/license-plate-recognition",
+  "created_at": "2026-08-27T02:29:04.000Z",
+  "updated_at": "2026-08-27T02:29:43.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "License Plate Recognition SDK - KBY-AI",
+      "url": "https://kby-ai.com/license-plate-recognition-sdk/",
+      "snippet": "The world&#x27;s fastest and most accurate Automatic License Plate Recognition (ALPR) powered by advanced deep learning technology."
+    },
+    {
+      "title": "GitHub - kby-ai/Automatic-License-Plate-Recognition-Docker: Automatic ...",
+      "url": "https://github.com/kby-ai/Automatic-License-Plate-Recognition-Docker",
+      "snippet": "This repository demonstrates ANPR/ALPR (Automatic Number/License Plate Recognition) server SDK with unmatched accuracy and precision by applying cutting-edge deep learning techniques. KBY-AI &#x27;s LPR solutions utilizes artificial intelligence and machine learning to greatly surpass legacy solutions. Now, in real-time, users can receive a vehicle&#x27;s plate number through API. We can customize the ..."
+    },
+    {
+      "title": "Home - KBY-AI",
+      "url": "https://kby-ai.com/",
+      "snippet": "KBY-AI provides face recognition(top-ranked by NIST in the FRVT 1:1 leaderboards), face liveness detection ID card recognition, palm recognition and ALPR/ANPR."
+    },
+    {
+      "title": "Automatic-License-Plate-Recognition-Docker/README.md at main · kby-ai ...",
+      "url": "https://github.com/kby-ai/Automatic-License-Plate-Recognition-Docker/blob/main/README.md",
+      "snippet": "Automatic-License-Plate-Recognition Overview This repository demonstrates ANPR/ALPR (Automatic Number/License Plate Recognition) server SDK with unmatched accuracy and precision by applying cutting-edge deep learning techniques. KBY-AI &#x27;s LPR solutions utilizes artificial intelligence and machine learning to greatly surpass legacy solutions."
+    },
+    {
+      "title": "Automatic License Plate/Number Recognition SDK | Help Center",
+      "url": "https://docs.kby-ai.com/help/product/automatic-license-plate-number-recognition-sdk",
+      "snippet": "We offer the Vehicle License Plate/Number Recognition SDK for both mobile and server platforms. Flutter and Server SDKs are released by KBY-AI team."
+    }
+  ]
+}

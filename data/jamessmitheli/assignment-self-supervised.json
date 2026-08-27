@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "jamessmitheli/assignment-self-supervised",
+  "slug": "jamessmitheli-assignment-self-supervised",
+  "author": "jamessmitheli",
+  "url": "https://huggingface.co/jamessmitheli/assignment-self-supervised",
+  "created_at": "2026-08-27T09:19:24.000Z",
+  "updated_at": "2026-08-27T09:19:33.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "transformer",
+    "research-notes",
+    "self-supervised",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 24832,
+  "parameters_human": "24832",
+  "storage_bytes": 99808,
+  "storage_human": "99808 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "jamessmitheli (James Smith) - Hugging Face",
+      "url": "https://huggingface.co/jamessmitheli",
+      "snippet": "User profile of James Smith on Hugging Face"
+    },
+    {
+      "title": "jacksmitheli/paper_006062151_self_supervised · Hugging Face",
+      "url": "https://huggingface.co/jacksmitheli/paper_006062151_self_supervised",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Model AI Assignments",
+      "url": "http://modelai.gettysburg.edu/",
+      "snippet": "Model AI Assignments is the largest, open-access, peer-reviewed AI assignment repository. Accepted assignments are presented in sessions at the Educational Advances in Artificial Intelligence Symposium, collocated with AAAI."
+    },
+    {
+      "title": "GitHub - dansmyers/Example-AI-Assignment: Example AI-assisted writing ...",
+      "url": "https://github.com/dansmyers/Example-AI-Assignment",
+      "snippet": "This is a model assignment for a semester-long medium-length research article that integrates AI into every phase of the research and writing process. The overaching goal is for students to practice using AI tools in a reflective way, and move towards collaborating with AI instead of simply delegating work to a model. The assignment has five phases, covering the entire process of topic ..."
+    },
+    {
+      "title": "Agnes AI | Free Omni-Modal AI API, World-Class AI Models & AI Applications",
+      "url": "https://agnes-ai.com/",
+      "snippet": "Agnes AI is an AI gateway, free AI API platform, and AI application ecosystem featuring Agnes, Echo, and Pavo. Get free AI API credits, create a free AI API key, use free AI API tokens, and access free AI API models for chatbots, AI agents, content tools, image generation, roleplay, productivity, and intelligent workflows."
+    }
+  ]
+}

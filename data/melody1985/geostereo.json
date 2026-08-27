@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "melody1985/GeoStereo",
+  "slug": "melody1985-geostereo",
+  "author": "melody1985",
+  "url": "https://huggingface.co/melody1985/GeoStereo",
+  "created_at": "2026-08-27T07:44:26.000Z",
+  "updated_at": "2026-08-27T07:44:26.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "depth-estimation",
+  "library": "pytorch",
+  "languages": [],
+  "tags": [
+    "pytorch",
+    "diffusers",
+    "safetensors",
+    "computer-vision",
+    "stereo-matching",
+    "depth-estimation",
+    "surface-normal-estimation",
+    "diffusion",
+    "geometry",
+    "arxiv:2607.24024",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 22436383104,
+  "storage_human": "22.4 GB",
+  "base_model": null,
+  "formats": [
+    "diffusers",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - qz-wei/GeoStereo: [ACM MM26]GeoStereo: A Unified Stereo ...",
+      "url": "https://github.com/qz-wei/GeoStereo",
+      "snippet": "GeoStereo is a unified stereo geometry estimation framework for disparity and surface-normal prediction. Given a rectified stereo pair, GeoStereo first estimates dense binocular correspondence and converts the predicted disparity into an initial surface-normal prior. Meanwhile, the right image is warped into the left camera view to provide explicit stereo appearance and correspondence cues ..."
+    },
+    {
+      "title": "GeoStereo: A Unified Stereo Geometry Estimation Framework for Disparity ...",
+      "url": "https://qz-wei.github.io/GeoStereo.github.io/",
+      "snippet": "Stereo matching and surface normal estimation provide complementary geometric cues, yet existing methods often model them independently and remain unreliable in low-light, reflective, and transparent regions. We present GeoStereo, a unified stereo geometry estimation framework that jointly predicts disparity and surface normals. GeoStereo couples a feed-forward stereo branch with a diffusion ..."
+    },
+    {
+      "title": "A Unified Stereo Geometry Estimation Framework for Disparity and ...",
+      "url": "https://arxiv.org/pdf/2607.24024v1",
+      "snippet": "Stereo matching and surface normal estimation are fundamental tasks in 3D vision. However, existing feed-forward stereo methods still struggle to produce reliable predictions in challenging regions, mainly due to the lack of strong geometric priors. In this paper, we proposeGeoStereo, a unified stereo geometry estimation frame- work that leverages powerful diffusion priors to jointly predict ..."
+    },
+    {
+      "title": "GeoStereo: A Unified Stereo Geometry Estimation Framework for Disparity ...",
+      "url": "https://arxiv.org/pdf/2607.24024v2",
+      "snippet": "This transfers the structural priors learned by the diffusion model to disparity estimation and encourages the pre- dicted disparity to remain geometrically consistent with the refined surface normals, improving disparity estimation."
+    },
+    {
+      "title": "qz-wei/GeoStereo · Hugging Face",
+      "url": "https://huggingface.co/qz-wei/GeoStereo",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    }
+  ]
+}

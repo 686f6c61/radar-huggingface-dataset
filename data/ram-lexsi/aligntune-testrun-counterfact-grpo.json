@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "ram-lexsi/aligntune-testrun-CounterFact-GRPO",
+  "slug": "ram-lexsi-aligntune-testrun-counterfact-grpo",
+  "author": "ram-lexsi",
+  "url": "https://huggingface.co/ram-lexsi/aligntune-testrun-CounterFact-GRPO",
+  "created_at": "2026-08-27T08:53:36.000Z",
+  "updated_at": "2026-08-27T08:53:43.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "aligntune",
+    "counterfact_grpo",
+    "trl",
+    "adapter",
+    "base_model:Qwen/Qwen2.5-0.5B",
+    "base_model:finetune:Qwen/Qwen2.5-0.5B",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 15772228,
+  "storage_human": "16 MB",
+  "base_model": "Qwen/Qwen2.5-0.5B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ram-lexsi/aligntune-testrun-compose · Hugging Face",
+      "url": "https://huggingface.co/ram-lexsi/aligntune-testrun-compose",
+      "snippet": "Instructions to use ram-lexsi/aligntune-testrun-compose with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Libraries Transformers How to use ram-lexsi/aligntune-testrun-compose with Transformers:"
+    },
+    {
+      "title": "GitHub - Lexsi-Labs/aligntune: Aligntune : A Modular Toolkit for Post ...",
+      "url": "https://github.com/Lexsi-Labs/aligntune",
+      "snippet": "AlignTune is a production-ready fine-tuning library designed to simplify training and fine-tuning of Large Language Models (LLMs) with both Supervised Fine-Tuning (SFT) and Reinforcement Learning (RL) methods. It provides a high-level, unified API that abstracts away the complexities of backend selection, algorithm configuration, and training loops, letting you focus on delivering results."
+    },
+    {
+      "title": "Home - AlignTune",
+      "url": "https://aligntune.lexsi.ai/",
+      "snippet": "AlignTune is a production-ready fine-tuning library designed to simplify training and fine-tuning of Large Language Models (LLMs) with both Supervised Fine-Tuning (SFT) and Reinforcement Learning (RL) methods. It provides a high-level, unified API that abstracts away the complexities of backend selection, algorithm configuration, and training loops, letting you focus on delivering results ..."
+    },
+    {
+      "title": "ruiyuan-swesmith/Lexsi-Labs__aligntune.75b5bd0 - GitHub",
+      "url": "https://github.com/ruiyuan-swesmith/Lexsi-Labs__aligntune.75b5bd0",
+      "snippet": "AlignTune is a production-ready fine-tuning library designed to simplify training and fine-tuning of Large Language Models (LLMs) with both Supervised Fine-Tuning (SFT) and Reinforcement Learning (RL) methods. It provides a high-level, unified API that abstracts away the complexities of backend selection, algorithm configuration, and training loops, letting you focus on delivering results."
+    },
+    {
+      "title": "Lexsi Labs: Safe Superintelligence, Alignment & AI Research",
+      "url": "https://lexsi.ai/",
+      "snippet": "Lexsi Labs builds foundations for Safe Superintelligence, uniting alignment theory, interpretability science, and agentic autonomy for AI that&#x27;s future ready."
+    }
+  ]
+}

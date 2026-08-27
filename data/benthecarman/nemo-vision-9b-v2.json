@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "benthecarman/nemo-vision-9b-v2",
+  "slug": "benthecarman-nemo-vision-9b-v2",
+  "author": "benthecarman",
+  "url": "https://huggingface.co/benthecarman/nemo-vision-9b-v2",
+  "created_at": "2026-08-27T06:27:51.000Z",
+  "updated_at": "2026-08-27T06:29:56.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "adapters",
+  "languages": [],
+  "tags": [
+    "adapters",
+    "vision",
+    "adapter",
+    "mamba",
+    "nemotron",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 270740510,
+  "storage_human": "271 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "NVIDIA-Nemotron-Nano-9B-v2 - Hugging Face",
+      "url": "https://huggingface.co/nvidia/NVIDIA-Nemotron-Nano-9B-v2",
+      "snippet": "NVIDIA Nemotron 2 Nano 9B Japanese: 日本のソブリンAIを支える最先端小規模言語モデル ... NVIDIA Nemotron 2 Nano 9B Japanese: State-of-the-Art Small Language Model Customized for Japanese Sovereign AI"
+    },
+    {
+      "title": "jetson-ai-lab/src/content/models/nemotron-nano-9b-v2.md at ... - GitHub",
+      "url": "https://github.com/NVIDIA-AI-IOT/jetson-ai-lab/blob/main/src/content/models/nemotron-nano-9b-v2.md",
+      "snippet": "NVIDIA Nemotron Nano 9B v2 is a quantized large language model trained from scratch by NVIDIA, designed as a unified model for both reasoning and non-reasoning tasks. It generates a reasoning trace before concluding with a final response, with configurable reasoning via system prompt."
+    },
+    {
+      "title": "Nvidia Nemotron Nano 9B V2 - blackbox.ai",
+      "url": "https://www.blackbox.ai/models/blackboxai/nvidia/nemotron-nano-9b-v2",
+      "snippet": "Nvidia Nemotron Nano 9B V2 NVIDIA-Nemotron-Nano-9B-v2 is a large language model (LLM) trained from scratch by NVIDIA, and designed as a unified model for both reasoning and non-reasoning tasks. It responds to user queries and tasks by first generating a reasoning trace and then concluding with a final response."
+    },
+    {
+      "title": "NVIDIA-Nemotron-Nano-9B-v2 - atomic.chat",
+      "url": "https://atomic.chat/models/nvidia-nemotron-nano-9b-v2",
+      "snippet": "NVIDIA-Nemotron-Nano-9B-v2 is a 9-billion-parameter language model trained from scratch by NVIDIA and released in August 2025. It is a unified reasoning and chat model that can generate an explicit thinking trace before its final answer, with that reasoning behavior controllable through the system prompt."
+    },
+    {
+      "title": "nvidia-nemotron-nano-9b-v2 Model by NVIDIA | NVIDIA NIM",
+      "url": "https://build.nvidia.com/nvidia/nvidia-nemotron-nano-9b-v2/modelcard",
+      "snippet": "Use Case NVIDIA-Nemotron-Nano-9B-v2 is a general purpose reasoning and chat model intended to be used in English and coding languages. Other non-English languages (German, French, Italian, Spanish and Japanese) are also supported. Developers designing AI Agent systems, chatbots, RAG systems, and other AI-powered applications."
+    }
+  ]
+}

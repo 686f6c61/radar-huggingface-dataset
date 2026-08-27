@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "Jordansky/dpo_god-text-tourn-e758aac2d861c378-20260824_main_736fa1e0",
+  "slug": "jordansky-dpo_god-text-tourn-e758aac2d861c378-20260824_main_736fa1e0",
+  "author": "Jordansky",
+  "url": "https://huggingface.co/Jordansky/dpo_god-text-tourn-e758aac2d861c378-20260824_main_736fa1e0",
+  "created_at": "2026-08-27T11:28:36.000Z",
+  "updated_at": "2026-08-27T11:28:45.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "arxiv:1910.09700",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1359448521,
+  "storage_human": "1.4 GB",
+  "base_model": "None",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Jordansky/instruct_text_0957c01da5ff92fccf02 · Hugging Face",
+      "url": "https://huggingface.co/Jordansky/instruct_text_0957c01da5ff92fccf02",
+      "snippet": "Instructions to use Jordansky/instruct_text_0957c01da5ff92fccf02 with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Libraries Transformers How to use Jordansky/instruct_text_0957c01da5ff92fccf02 with Transformers: # Use a pipeline as a high-level helper from transformers import pipeline pipe = pipeline (\"text-generation\", model=\"Jordansky ..."
+    },
+    {
+      "title": "ChatGPT: Chat, Work, Create & Code with AI",
+      "url": "https://chatgpt.com/",
+      "snippet": "Use ChatGPT to answer questions, write, create images, complete work, and code—all in one place. Get started for free or download the app."
+    },
+    {
+      "title": "gradients-io-tournaments/tournament-tourn_e758aac2d861c378_20260824 ...",
+      "url": "https://huggingface.co/gradients-io-tournaments/tournament-tourn_e758aac2d861c378_20260824-318ef829-69d5-40c9-b803-b3b78b525668-5D2Qee4V",
+      "snippet": "gradients-io-tournaments / tournament-tourn_e758aac2d861c378_20260824-318ef829-69d5-40c9-b803-b3b78b525668-5D2Qee4V like 0 Text Generation Transformers Safetensors English llama llama-3 meta facebook unsloth text-generation-inference License:llama3.2 Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "godmod3.ai - G0DM0DƎ",
+      "url": "https://godmod3.ai/",
+      "snippet": "Streams tokens live as they arrive from a single model, instead of waiting for the complete response. Shows the first scored response immediately, then morphs the display as faster models finish and a higher-scoring leader emerges. Each upgrade must beat the current leader by the min-delta threshold."
+    },
+    {
+      "title": "OpenAI | Research & Deployment",
+      "url": "https://openai.com/",
+      "snippet": "We believe our research will eventually lead to artificial general intelligence, a system that can solve human-level problems."
+    }
+  ]
+}

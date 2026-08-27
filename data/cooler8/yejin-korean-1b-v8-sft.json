@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "cooler8/yejin-korean-1b-v8-sft",
+  "slug": "cooler8-yejin-korean-1b-v8-sft",
+  "author": "cooler8",
+  "url": "https://huggingface.co/cooler8/yejin-korean-1b-v8-sft",
+  "created_at": "2026-08-25T04:43:23.000Z",
+  "updated_at": "2026-08-27T08:29:14.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "ko"
+  ],
+  "tags": [
+    "safetensors",
+    "gguf",
+    "llama",
+    "korean",
+    "causal-lm",
+    "yejin",
+    "sft",
+    "1b",
+    "text-generation",
+    "ko",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 12,
+  "trending_score": 0,
+  "parameters": 934565888,
+  "parameters_human": "934.6M",
+  "storage_bytes": 9350519776,
+  "storage_human": "9.4 GB",
+  "base_model": null,
+  "formats": [
+    "gguf",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "cooler8 (hajunho) - Hugging Face",
+      "url": "https://huggingface.co/cooler8",
+      "snippet": "NLP Question Answering • Updated Jun 18 • 3 cooler8/model-test-hjh-001"
+    },
+    {
+      "title": "‎Google Gemini",
+      "url": "https://gemini.google.com/",
+      "snippet": "Get assistance with writing, planning, learning, and more from Google AI."
+    },
+    {
+      "title": "University of Washington - Yejin Choi",
+      "url": "https://yejinc.github.io/",
+      "snippet": "Her research centers on democratizing generative AI — building smaller yet powerful language models, scaling intelligence through smarter algorithms and alternative training recipes, pluralistic alignment, and AI for science and social good."
+    },
+    {
+      "title": "Models - Hugging Face",
+      "url": "https://huggingface.co/models?library...",
+      "snippet": "Explore machine learning models. DavidAU/Qwen3.8-27B-Cold-Fusion-GAIN-V1.1-NM-DAU-NEO-MAX-MTP-GGUF"
+    },
+    {
+      "title": "chancharikm/CHAI_SFT_model_8b · Hugging Face",
+      "url": "https://huggingface.co/chancharikm/CHAI_SFT_model_8b",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    }
+  ]
+}

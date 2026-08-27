@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "lwanming/depth-anything-v2-small",
+  "slug": "lwanming-depth-anything-v2-small",
+  "author": "lwanming",
+  "url": "https://huggingface.co/lwanming/depth-anything-v2-small",
+  "created_at": "2026-08-27T02:05:42.000Z",
+  "updated_at": "2026-08-27T02:19:51.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "onnx",
+    "depth_anything",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 50660776,
+  "storage_human": "51 MB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - DepthAnything/Depth-Anything-V2: [NeurIPS 2024] Depth Anything ...",
+      "url": "https://github.com/DepthAnything/Depth-Anything-V2",
+      "snippet": "2024-06-22: We release smaller metric depth models based on Depth-Anything-V2-Small and Base. 2024-06-20: Our repository and project page are flagged by GitHub and removed from the public for 6 days."
+    },
+    {
+      "title": "Depth-Anything-V2-Small: Image-to-Image model — overview, use cases ...",
+      "url": "https://www.aimodels.fyi/models/huggingFace/depth-anything-v2-small-depth-anything",
+      "snippet": "Overview Depth-Anything-V2-Small is a monocular depth estimation model trained on 595K synthetic labeled images and 62M+ real unlabeled images, created by depth-anything. The model uses a ViT-small encoder (vits) with 64 features and output channels of [48, 96, 192, 384], delivering fine-grained depth maps from single images. The critical advantage before using this model is its combination of ..."
+    },
+    {
+      "title": "depth-anything/Depth-Anything-V2-Small-hf · Hugging Face",
+      "url": "https://huggingface.co/depth-anything/Depth-Anything-V2-Small-hf",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Depth Anything V2 - Hugging Face",
+      "url": "https://huggingface.co/docs/transformers/v4.56.1/en/model_doc/depth_anything_v2",
+      "snippet": "Depth Anything V2 was introduced in the paper of the same name by Lihe Yang et al. It uses the same architecture as the original Depth Anything model, but uses synthetic data and a larger capacity teacher model to achieve much finer and robust depth predictions. The abstract from the paper is the following: This work presents Depth Anything V2. Without pursuing fancy techniques, we aim to ..."
+    },
+    {
+      "title": "landing-ai/depth-anything-v2 - GitHub",
+      "url": "https://github.com/landing-ai/depth-anything-v2",
+      "snippet": "This work presents Depth Anything V2. It significantly outperforms V1 in fine-grained details and robustness. Compared with SD-based models, it enjoys faster inference speed, fewer parameters, and higher depth accuracy."
+    }
+  ]
+}

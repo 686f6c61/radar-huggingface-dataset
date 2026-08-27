@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "AndGate811/Qwen3.5-2B-VTContrast",
+  "slug": "andgate811-qwen3-5-2b-vtcontrast",
+  "author": "AndGate811",
+  "url": "https://huggingface.co/AndGate811/Qwen3.5-2B-VTContrast",
+  "created_at": "2026-08-27T11:09:11.000Z",
+  "updated_at": "2026-08-27T11:14:55.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_5",
+    "image-text-to-text",
+    "qwen",
+    "qwen3.5",
+    "vision-language",
+    "video-language",
+    "temporal-understanding",
+    "vt-contrast",
+    "conversational",
+    "base_model:Qwen/Qwen3.5-2B",
+    "base_model:finetune:Qwen/Qwen3.5-2B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 4446548207,
+  "storage_human": "4.4 GB",
+  "base_model": "Qwen/Qwen3.5-2B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Qwen3.5-2B - Qualcomm AI Hub",
+      "url": "https://aihub.qualcomm.com/models/qwen3_5_2b",
+      "snippet": "Qwen3.5-2B Balanced 2B parameter model from the Qwen3.5 series for on‑device inference. Qwen3.5 is the latest multilingual language model series from Alibaba Cloud with improved reasoning and instruction‑following capabilities over Qwen3."
+    },
+    {
+      "title": "Qwen 3.5 2B — CanIRun.ai",
+      "url": "https://www.canirun.ai/model/qwen3.5-2b",
+      "snippet": "Qwen 3.5 2B by Alibaba. Small multimodal Qwen 3.5 Over recent months, we have intensified our focus on developing foundation models that deliver exceptional utility and performance. Qwen3.5 represents a significant leap forward, integrating breakthroughs in multimodal learning, architectural efficiency, reinforcement learning scale, and global accessibility to empower developers and ..."
+    },
+    {
+      "title": "Qwen3.5-2B - Qualcomm AI Hub",
+      "url": "https://aihub.qualcomm.com/mobile/models/qwen3_5_2b",
+      "snippet": "Balanced 2B parameter model from the Qwen3.5 series for on‑device inference. Qwen3.5 is the latest multilingual language model series from Alibaba Cloud with improved reasoning and instruction‑following capabilities over Qwen3."
+    },
+    {
+      "title": "Qwen 3.5 2B | AI Model | There&#x27;s An AI For That",
+      "url": "https://theresanaiforthat.com/model/qwen3-5-2b/",
+      "snippet": "Qwen3.5-2B is a small vision-language causal model with a vision encoder, aimed at strong multimodal capability with efficient compute."
+    },
+    {
+      "title": "Qwen3.5-2B | Awesome Agents",
+      "url": "https://awesomeagents.ai/models/qwen-3-5-2b/",
+      "snippet": "Qwen3.5-2B is a 2B dense multimodal model with 262K context, thinking mode, and native vision including video understanding. OCRBench 84.5, VideoMME 75.6. Apache 2.0 licensed."
+    }
+  ]
+}

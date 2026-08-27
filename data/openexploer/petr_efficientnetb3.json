@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "OpenExploer/petr_efficientnetb3",
+  "slug": "openexploer-petr_efficientnetb3",
+  "author": "OpenExploer",
+  "url": "https://huggingface.co/OpenExploer/petr_efficientnetb3",
+  "created_at": "2026-08-27T07:38:31.000Z",
+  "updated_at": "2026-08-27T07:49:30.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "heal",
+    "horizon",
+    "arxiv:2203.05625",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1102430753,
+  "storage_human": "1.1 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "google/efficientnet-b3 · Hugging Face",
+      "url": "https://huggingface.co/google/efficientnet-b3",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "efficientnet-b3/README.md at main · a-r-p-i-t/efficientnet-b3",
+      "url": "https://github.com/a-r-p-i-t/efficientnet-b3/blob/main/README.md",
+      "snippet": "Contribute to a-r-p-i-t/efficientnet-b3 development by creating an account on GitHub."
+    },
+    {
+      "title": "GitHub - qubvel/efficientnet: Implementation of EfficientNet model ...",
+      "url": "https://github.com/qubvel/efficientnet",
+      "snippet": "This repository contains a Keras (and TensorFlow Keras) reimplementation of EfficientNet, a lightweight convolutional neural network architecture achieving the state-of-the-art accuracy with an order of magnitude fewer parameters and FLOPS, on both ImageNet and five other commonly used transfer learning datasets. The codebase is heavily inspired by the TensorFlow implementation."
+    },
+    {
+      "title": "Leveraging EfficientNetB3 in a Deep Learning Framework for High ...",
+      "url": "https://www.sciencedirect.com/org/science/article/pii/S1546221824007161",
+      "snippet": "Despite significant advances in brain tumor classification using deep learning, several gaps persist: limited use of EfficientNetB3 in medical imaging, insufficient integration of diverse MRI datasets, challenges in addressing overfitting and model generalization, lack of focus on real-time diagnostic support, and a narrow focus on accuracy ..."
+    },
+    {
+      "title": "EfficientNet · Hugging Face",
+      "url": "https://huggingface.co/docs/transformers/model_doc/efficientnet",
+      "snippet": "Overview The EfficientNet model was proposed in EfficientNet: Rethinking Model Scaling for Convolutional Neural Networks by Mingxing Tan and Quoc V. Le. EfficientNets are a family of image classification models, which achieve state-of-the-art accuracy, yet being an order-of-magnitude smaller and faster than previous models."
+    }
+  ]
+}

@@ -1,0 +1,81 @@
+{
+  "schema": 1,
+  "id": "Msaied2026/arabic-asr",
+  "slug": "msaied2026-arabic-asr",
+  "author": "Msaied2026",
+  "url": "https://huggingface.co/Msaied2026/arabic-asr",
+  "created_at": "2026-08-27T06:03:26.000Z",
+  "updated_at": "2026-08-27T06:12:46.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "automatic-speech-recognition",
+  "library": "transformers",
+  "languages": [
+    "ar",
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "cohere_asr",
+    "automatic-speech-recognition",
+    "audio",
+    "speech-recognition",
+    "transcription",
+    "arabic",
+    "asr",
+    "arabic-asr",
+    "arabic-dialect",
+    "arabic-speech-recognition",
+    "ar",
+    "en",
+    "base_model:CohereLabs/cohere-transcribe-03-2026",
+    "base_model:finetune:CohereLabs/cohere-transcribe-03-2026",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 2065804048,
+  "parameters_human": "2.07B",
+  "storage_bytes": 4132742875,
+  "storage_human": "4.1 GB",
+  "base_model": "CohereLabs/cohere-transcribe-03-2026",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Open Universal Arabic Asr Leaderboard - Hugging Face",
+      "url": "https://huggingface.co/spaces/elmresearchcenter/open_universal_arabic_asr_leaderboard",
+      "snippet": "📖 Open Universal Arabic ASR Leaderboard 📖 benchmarks multi-dialect Arabic ASR models on various multi-dialect datasets. Apart from the WER%/CER% for each test set, we also report the Average WER%/CER% and rank the models based on the Average WER, from lowest to highest. To reproduce the benchmark numbers and request a model that is not listed, you can launch an issue/PR in our GitHub ..."
+    },
+    {
+      "title": "Open Universal Arabic ASR Leaderboard - arXiv.org",
+      "url": "https://arxiv.org/html/2412.13788v1",
+      "snippet": "In this paper, we introduce Open Universal Arabic ASR Leaderboard, a continuous benchmark project for open-source general Arabic ASR models across various multi-dialect datasets. We also provide a comprehensive analysis of the model&#x27;s robustness, speaker adaptation, inference efficiency, and memory consumption."
+    },
+    {
+      "title": "Open Universal Arabic ASR Leaderboard Benchmark Scores & AI Model ...",
+      "url": "https://benchmarklist.com/benchmarks/open_universal_arabic_asr/",
+      "snippet": "Multi-dialect Arabic ASR leaderboard reporting average WER/CER and dataset-level WER/CER on SADA, Common Voice, MASC, MGB-2, and Casablanca."
+    },
+    {
+      "title": "Open Universal Arabic ASR Leaderboard — Standardized Arabic Speech ...",
+      "url": "https://arabicagenticai.com/speech/asr-leaderboard/",
+      "snippet": "Analysis of the Open Universal Arabic ASR Leaderboard on Hugging Face — methodology, model rankings, evaluation datasets, and implications for Arabic speech technology deployment."
+    },
+    {
+      "title": "PDF Open Universal Arabic ASR Leaderboard - isca-archive.org",
+      "url": "https://www.isca-archive.org/interspeech_2025/wang25_interspeech.pdf",
+      "snippet": "In this paper, we introduce Open Universal Arabic ASR Leaderboard, a continuous benchmark project for open-source universal Arabic ASR models across various multi-dialect datasets. We also provide a comprehensive analysis of the model&#x27;s robustness, speaker adaptation, inference efficiency, and memory consumption. This work aims to offer the Arabic ASR community a reference for models ..."
+    }
+  ]
+}

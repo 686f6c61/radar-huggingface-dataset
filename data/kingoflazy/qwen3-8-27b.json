@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "kingoflazy/Qwen3.8-27B",
+  "slug": "kingoflazy-qwen3-8-27b",
+  "author": "kingoflazy",
+  "url": "https://huggingface.co/kingoflazy/Qwen3.8-27B",
+  "created_at": "2026-08-27T07:53:57.000Z",
+  "updated_at": "2026-08-27T07:53:58.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_5",
+    "image-text-to-text",
+    "conversational",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 27781427952,
+  "parameters_human": "27.78B",
+  "storage_bytes": 55615875685,
+  "storage_human": "55.6 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Run Qwen3.8-27B Locally | Atomic Chat",
+      "url": "https://atomic.chat/models/qwen3-8-27b",
+      "snippet": "What is Qwen3.8-27B? Qwen3.8-27B is a dense 27.8B multimodal model from Alibaba&#x27;s Qwen team and the smallest of the three models in the Qwen 3.8 release. It is also the only one of the three that runs on an everyday machine: a desktop with a 24 GB GPU, or a MacBook with 32 GB of unified memory. Alibaba published the weights on August 14, 2026 under Apache 2.0."
+    },
+    {
+      "title": "Qwen3.8-27B: Video-to-Text model — overview, use cases, alternatives",
+      "url": "https://www.aimodels.fyi/models/huggingFace/qwen3.8-27b-qwen",
+      "snippet": "Overview Qwen3.8-27B is a 27-billion-parameter dense language model with integrated vision capabilities, built by Qwen on the architectural foundation of Qwen3.5. This causal language model with vision encoder supports native image and video understanding, making it suitable for multimodal reasoning tasks that require understanding both textual and visual information. The model has 64 layers ..."
+    },
+    {
+      "title": "Alibaba&#x27;s Qwen3.8-27B Brings Frontier-Style AI to Local ... - kingy.ai",
+      "url": "https://kingy.ai/news/qwen3-8-27b-local-ai-model-review/",
+      "snippet": "Alibaba&#x27;s Qwen3.8-27B brings powerful coding, vision and reasoning to local PCs—but its bold benchmark claims need context."
+    },
+    {
+      "title": "Qwen3.8-27B: Specs, Benchmarks & Verdict - kingy.ai",
+      "url": "https://kingy.ai/blog/qwen3-8-27b-specs-benchmarks-local-hardware/",
+      "snippet": "Qwen3.8-27B benchmarks, specs, local memory, context, license and comparisons—plus what Qwen&#x27;s launch-day evidence does and does not prove."
+    },
+    {
+      "title": "Qwen/Qwen3.8-27B | vLLM Recipes",
+      "url": "https://recipes.vllm.ai/Qwen/Qwen3.8-27B",
+      "snippet": "The official Qwen/Qwen3.8-27B-FP8 checkpoint serves directly on a 950PR — no offline re-quantization and no --quantization ascend. vLLM Ascend reads quant_method: fp8 and weight_block_size straight from the checkpoint, expands the weight_scale_inv tiles at load time and re-quantizes to MXFP8 on 950."
+    }
+  ]
+}

@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "ggbetz/SmolLM3-3B-it-SFT",
+  "slug": "ggbetz-smollm3-3b-it-sft",
+  "author": "ggbetz",
+  "url": "https://huggingface.co/ggbetz/SmolLM3-3B-it-SFT",
+  "created_at": "2026-08-27T10:41:19.000Z",
+  "updated_at": "2026-08-27T10:42:21.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "smollm3",
+    "mirror",
+    "base_model:HuggingFaceTB/SmolLM3-3B-checkpoints",
+    "base_model:finetune:HuggingFaceTB/SmolLM3-3B-checkpoints",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 3075098624,
+  "parameters_human": "3.08B",
+  "storage_bytes": 6167443827,
+  "storage_human": "6.2 GB",
+  "base_model": "HuggingFaceTB/SmolLM3-3B-checkpoints",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "HuggingFaceTB/SmolLM3-3B · Hugging Face",
+      "url": "https://huggingface.co/HuggingFaceTB/SmolLM3-3B",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Supervised Fine-Tuning with SmolLM3 · Hugging Face",
+      "url": "https://huggingface.co/learn/smol-course/unit1/3",
+      "snippet": "For more details on the expected formats, see Dataset formats. The SFTTrainer tokenizes each input using the model&#x27;s tokenizer. If both prompt and completion are provided separately, they are concatenated before tokenization. Computing the loss The loss used in SFT is the token-level cross-entropy loss, defined as:"
+    },
+    {
+      "title": "SmolLM3：3B参数的SOTA小模型 - 知乎",
+      "url": "https://zhuanlan.zhihu.com/p/1926427378223150517",
+      "snippet": "在简单介绍过： SmolLM3：3B参数的SOTA小模型，下面是详细介绍的内容： SmolLM3 3B模型在性能上超越了 Llama-3.2-3B 和Qwen2.5-3B，同时与更大的4B替代方案（Qwen3和 Gemma3）保持竞争力。除了性能数据之外，还分享了使用公共数据集和训练框架构建它的方法。"
+    },
+    {
+      "title": "SmolLM3-3B · Models",
+      "url": "https://www.modelscope.cn/models/HuggingFaceTB/SmolLM3-3B",
+      "snippet": "ModelScope——汇聚各领域先进的机器学习模型，提供模型探索体验、推理、训练、部署和应用的一站式服务。在这里，共建模型开源社区，发现、学习、定制和分享心仪的模型。"
+    },
+    {
+      "title": "Qwen",
+      "url": "https://qwen.ai/blog?id=qwen3",
+      "snippet": "Qwen Studio offers comprehensive functionality spanning chatbot, image and video understanding, image generation, document processing, web search integration, tool utilization, and artifacts."
+    }
+  ]
+}

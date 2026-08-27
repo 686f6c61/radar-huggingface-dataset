@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "23f2003521/poseatsea-weights",
+  "slug": "23f2003521-poseatsea-weights",
+  "author": "23f2003521",
+  "url": "https://huggingface.co/23f2003521/poseatsea-weights",
+  "created_at": "2026-08-27T02:21:58.000Z",
+  "updated_at": "2026-08-27T03:16:46.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "joblib",
+    "oil-spill-detection",
+    "maritime",
+    "sar",
+    "ais",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 220954844,
+  "storage_human": "221 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Open models by OpenAI | OpenAI",
+      "url": "https://openai.com/open-models/",
+      "snippet": "Advanced open-weight reasoning models to customize for any use case and run anywhere."
+    },
+    {
+      "title": "A Chinese A.I. Lab May Test the World&#x27;s Cybersecurity With a Model",
+      "url": "https://www.nytimes.com/2026/08/25/science/cybersecurity-zai-open-weights.html",
+      "snippet": "In July, an unreleased OpenAI model went rogue and demonstrated remarkable hacking abilities. This week, a lab called Z.ai will release a similarly powerful system to everyone."
+    },
+    {
+      "title": "‎Google Gemini",
+      "url": "https://gemini.google.com/",
+      "snippet": "Meet Gemini, Google&#x27;s AI assistant. Get help with writing, planning, brainstorming, and more. Experience the power of generative AI."
+    },
+    {
+      "title": "The truth behind Chrome&#x27;s 4GB &#x27;weights.bin&#x27; Gemini Nano file",
+      "url": "https://www.androidauthority.com/google-chrome-ai-model-weights-download-explained-3664043/",
+      "snippet": "Chrome is silently downloading 4GB AI model files to your PC. Learn what Gemini Nano \"weights\" are and how to delete them to reclaim storage."
+    },
+    {
+      "title": "SRS Signed | PDF | Machine Learning | Artificial Intelligence",
+      "url": "https://www.scribd.com/document/1008377641/SRS-Signed",
+      "snippet": "The document outlines the Software Requirements Specification (SRS) for the &#x27;Prediction of Oil Spill Events at Sea (POSE at SEA)&#x27; project, which aims to utilize advanced technologies for real-time detection and forecasting of marine oil spills. It details the project&#x27;s objectives, methodologies, system architecture, and requirements, emphasizing the integration of machine learning and ..."
+    }
+  ]
+}

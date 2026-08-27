@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "max-rl/jspo_snapshot_0825",
+  "slug": "max-rl-jspo_snapshot_0825",
+  "author": "max-rl",
+  "url": "https://huggingface.co/max-rl/jspo_snapshot_0825",
+  "created_at": "2026-08-27T01:44:02.000Z",
+  "updated_at": "2026-08-27T01:59:28.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "arxiv:2604.13016",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 741451129922,
+  "storage_human": "741.5 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "AI Aimbot Models & YOLO Detection Models | MossyModels",
+      "url": "https://mossymodels.com/",
+      "snippet": "Browse 661+ free YOLO and ONNX detection models across 43+ games. Community library for Fortnite, Valorant, Warzone, Apex Legends, and more."
+    },
+    {
+      "title": "CivArchive (CivitAI Archive) - AI Model Archive",
+      "url": "https://civarchive.com/",
+      "snippet": "Browse and discover AI models from CivitAI, TensorArt, and SeaArt. Community-driven archive preserving access to AI resources."
+    },
+    {
+      "title": "GitHub - tajwarfahim/maxrl: Official Implementation of \"Maximum ...",
+      "url": "https://github.com/tajwarfahim/maxrl",
+      "snippet": "This is the official PyTorch implementation of our paper \" Maximum Likelihood Reinforcement Learning \" by Fahim Tajwar*, Guanning Zeng*, Yueer Zhou, Yuda Song, Daman Arora, Yiding Jiang, Jeff Schneider, Ruslan Salakhutdinov, Haiwen Feng, and Andrea Zanette."
+    },
+    {
+      "title": "Ranking Snapshots - Weekly AI Model History | LM Market Cap",
+      "url": "https://lmmarketcap.com/snapshot",
+      "snippet": "Browse real weekly snapshots of AI model rankings. Track category leaders, archive weeks, and compare how the leaderboard changes over time."
+    },
+    {
+      "title": "Models.dev - An open-source database of AI models",
+      "url": "https://models.dev/",
+      "snippet": "Models.dev is a comprehensive open-source database of AI model specifications, pricing, and features."
+    }
+  ]
+}

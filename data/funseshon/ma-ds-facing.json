@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "funseshon/ma-ds-facing",
+  "slug": "funseshon-ma-ds-facing",
+  "author": "funseshon",
+  "url": "https://huggingface.co/funseshon/ma-ds-facing",
+  "created_at": "2026-08-27T01:28:56.000Z",
+  "updated_at": "2026-08-27T02:04:19.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-image",
+  "library": "diffusers",
+  "languages": [],
+  "tags": [
+    "diffusers",
+    "text-to-image",
+    "lora",
+    "krea2",
+    "template:sd-lora",
+    "base_model:krea/Krea-2-Raw",
+    "base_model:adapter:krea/Krea-2-Raw",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 778617021,
+  "storage_human": "779 MB",
+  "base_model": "krea/Krea-2-Raw",
+  "formats": [
+    "diffusers"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Hugging Face - The AI community building the future.",
+      "url": "https://huggingface.co/",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "funseshon/mike-gape · Hugging Face",
+      "url": "https://huggingface.co/funseshon/mike-gape",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Microsoft: MAI DS R1 (free) AI Model",
+      "url": "https://upend.ai/mai-ds-r1",
+      "snippet": "Microsoft&#x27;s MAI DS R1 is a free AI model released on April 21, 2025. It builds on the DeepSeek-R1 foundation, integrating 110k examples from the Tulu-3 SFT dataset and 350k multilingual safety-alignment samples."
+    },
+    {
+      "title": "Self-Host and Fine-Tune Microsoft MAI Models on GPU Cloud: The 9-Model ...",
+      "url": "https://www.spheron.network/blog/microsoft-mai-models-self-host-fine-tune-gpu-cloud/",
+      "snippet": "The practical implication: if you need full inference control, on-premises deployment, data residency compliance, or fine-tuning capability, MAI-DS-R1 is the only model in the family that delivers it. GPU and VRAM Requirements Per Model For the open-weight models (MAI-DS-R1 and MAI-DS-R1-FP8), VRAM requirements are based on confirmed architecture."
+    },
+    {
+      "title": "AI Model Downloads - 498 Model Examples - AI Models",
+      "url": "https://aimodels.org/ai-models/",
+      "snippet": "Directory of free Open Source AI and machine learning model downloads! Our collection features the latest models in speech to text and image generation."
+    }
+  ]
+}

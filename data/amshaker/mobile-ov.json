@@ -5,7 +5,7 @@
   "author": "Amshaker",
   "url": "https://huggingface.co/Amshaker/Mobile-OV",
   "created_at": "2026-04-20T10:17:01.000Z",
-  "updated_at": "2026-08-26T07:21:26.000Z",
+  "updated_at": "2026-08-26T19:59:37.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": null,
@@ -20,8 +20,8 @@
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
-  "storage_bytes": 315173471260,
-  "storage_human": "315.2 GB",
+  "storage_bytes": 321448912155,
+  "storage_human": "321.4 GB",
   "base_model": null,
   "formats": [
     "safetensors"

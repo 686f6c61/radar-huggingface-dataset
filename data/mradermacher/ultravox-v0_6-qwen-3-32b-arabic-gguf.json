@@ -1,0 +1,77 @@
+{
+  "schema": 1,
+  "id": "mradermacher/ultravox-v0_6-qwen-3-32b-arabic-GGUF",
+  "slug": "mradermacher-ultravox-v0_6-qwen-3-32b-arabic-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/ultravox-v0_6-qwen-3-32b-arabic-GGUF",
+  "created_at": "2026-08-27T08:25:45.000Z",
+  "updated_at": "2026-08-27T08:28:53.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "ar",
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "ultravox",
+    "speech-llm",
+    "arabic",
+    "dialectal-arabic",
+    "multimodal",
+    "merge",
+    "ar",
+    "en",
+    "base_model:ISTNetworks/ultravox-v0_6-qwen-3-32b-arabic",
+    "base_model:quantized:ISTNetworks/ultravox-v0_6-qwen-3-32b-arabic",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 689410048,
+  "parameters_human": "689.4M",
+  "storage_bytes": 2128438976,
+  "storage_human": "2.1 GB",
+  "base_model": "ISTNetworks/ultravox-v0_6-qwen-3-32b-arabic",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "fixie-ai/ultravox-v0_6-qwen-3-32b · Hugging Face",
+      "url": "https://huggingface.co/fixie-ai/ultravox-v0_6-qwen-3-32b",
+      "snippet": "Model Card for Ultravox Ultravox is a multimodal Speech LLM built around a pretrained LLM (Llama, Gemma, Qwen, etc) and a speech encoder (whisper-large-v3-turbo) backbone. See https://ultravox.ai for the GitHub repo and more information. Model Details Model Description Ultravox is a multimodal model that can consume both speech and text as input (e.g., a text system prompt and voice user ..."
+    },
+    {
+      "title": "team mradermacher - Hugging Face",
+      "url": "https://huggingface.co/mradermacher",
+      "snippet": "Feel free to suggest models to quant e.g. at https://huggingface.co/mradermacher/model_requests"
+    },
+    {
+      "title": "GitHub - fixie-ai/ultravox: A fast multimodal LLM for real-time voice",
+      "url": "https://github.com/fixie-ai/ultravox",
+      "snippet": "A fast multimodal LLM for real-time voice. Contribute to fixie-ai/ultravox development by creating an account on GitHub."
+    },
+    {
+      "title": "ultravox-v0_6-qwen-3-32b · Models",
+      "url": "https://www.modelscope.cn/models/fixie-ai/ultravox-v0_6-qwen-3-32b",
+      "snippet": "Model Card for Ultravox Ultravox is a multimodal Speech LLM built around a pretrained LLM (Llama, Gemma, Qwen, etc) and a speech encoder (whisper-large-v3-turbo) backbone. See https://ultravox.ai for the GitHub repo and more information. Model Details Model Description Ultravox is a multimodal model that can consume both speech and text as input (e.g., a text system prompt and voice user ..."
+    },
+    {
+      "title": "ultravox/README.md at main · fixie-ai/ultravox · GitHub",
+      "url": "https://github.com/fixie-ai/ultravox/blob/main/README.md",
+      "snippet": "A fast multimodal LLM for real-time voice. Contribute to fixie-ai/ultravox development by creating an account on GitHub."
+    }
+  ]
+}

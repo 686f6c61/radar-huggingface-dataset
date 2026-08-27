@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "q1716523669/mllm-mmr1-ttrl-internvl35-2b-full-end-s722",
+  "slug": "q1716523669-mllm-mmr1-ttrl-internvl35-2b-full-end-s722",
+  "author": "q1716523669",
+  "url": "https://huggingface.co/q1716523669/mllm-mmr1-ttrl-internvl35-2b-full-end-s722",
+  "created_at": "2026-08-27T09:11:17.000Z",
+  "updated_at": "2026-08-27T09:13:17.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "internvl",
+    "image-text-to-text",
+    "generated_from_trainer",
+    "grpo",
+    "trl",
+    "conversational",
+    "arxiv:2402.03300",
+    "base_model:OpenGVLab/InternVL3_5-2B-HF",
+    "base_model:finetune:OpenGVLab/InternVL3_5-2B-HF",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 2348347392,
+  "parameters_human": "2.35B",
+  "storage_bytes": 4708224660,
+  "storage_human": "4.7 GB",
+  "base_model": "OpenGVLab/InternVL3_5-2B-HF",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "q1716523669/mllm-mmr1-ttrl-internvl35-8b-endpoint · Hugging Face",
+      "url": "https://huggingface.co/q1716523669/mllm-mmr1-ttrl-internvl35-8b-endpoint",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "mllm-mmr1-gt-internvl35-2b-full-end-s722 - Hugging Face",
+      "url": "https://huggingface.co/q1716523669/mllm-mmr1-gt-internvl35-2b-full-end-s722",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GitHub - PRIME-RL/TTRL: [NeurIPS 2025] TTRL: Test-Time Reinforcement ...",
+      "url": "https://github.com/PRIME-RL/TTRL",
+      "snippet": "Notably, TTRL boosts the pass@1 performance of Qwen-2.5-Math-7B by approximately 211% on AIME 2024 with only unlabeled test data. Furthermore, although TTRL is only supervised by the maj@n metric, TTRL has demonstrated performance to consistently surpass this upper limit of the initial model, and approach the performance of models trained ..."
+    },
+    {
+      "title": "[2504.16084] TTRL: Test-Time Reinforcement Learning - arXiv.org",
+      "url": "https://arxiv.org/abs/2504.16084",
+      "snippet": "This paper investigates Reinforcement Learning (RL) on data without explicit labels for reasoning tasks in Large Language Models (LLMs). The core challenge of the problem is reward estimation during inference while not having access to ground-truth information. While this setting appears elusive, we find that common practices in Test-Time Scaling (TTS), such as majority voting, yield ..."
+    },
+    {
+      "title": "TTRL: Test-Time Reinforcement Learning - arXiv.org",
+      "url": "https://arxiv.org/pdf/2504.16084",
+      "snippet": "TTRL directly addresses the problem of training models via RL without explicit supervision, investigating a model&#x27;s ability to explore and learn in this challenging yet critical setting. Essentially, TTRL enables the model to generate its own experiences, estimate rewards, and improve its performance over time."
+    }
+  ]
+}

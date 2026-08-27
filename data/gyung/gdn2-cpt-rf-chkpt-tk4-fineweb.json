@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "gyung/gdn2-cpt-rf-chkpt-tk4-fineweb",
+  "slug": "gyung-gdn2-cpt-rf-chkpt-tk4-fineweb",
+  "author": "gyung",
+  "url": "https://huggingface.co/gyung/gdn2-cpt-rf-chkpt-tk4-fineweb",
+  "created_at": "2026-08-27T11:31:13.000Z",
+  "updated_at": "2026-08-27T11:31:31.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1656862138,
+  "storage_human": "1.7 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "gyung/gdn2-cpt-longdata-30k · Datasets at Hugging Face",
+      "url": "https://huggingface.co/datasets/gyung/gdn2-cpt-longdata-30k",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "gyung/gdn2-cpt-longdata-30k at main - Hugging Face",
+      "url": "https://huggingface.co/datasets/gyung/gdn2-cpt-longdata-30k/tree/main",
+      "snippet": "Datasets: gyung / gdn2-cpt-longdata-30k like 0 Modalities: Text Formats: parquet Size: 10K - 100K Libraries: Datasets Dask Polars + 1 Dataset card Data Studio FilesFiles and versions xet Community main gdn2-cpt-longdata-30k 1.76 GB 1 contributor History:4 commits gyung Upload README.md with huggingface_hub cc18666 verifiedabout 8 hours ago documentsUpload documents/train-00000-of-00001.parquet ..."
+    },
+    {
+      "title": "OpenAI | Research & Deployment",
+      "url": "https://openai.com/",
+      "snippet": "We believe our research will eventually lead to artificial general intelligence, a system that can solve human-level problems."
+    },
+    {
+      "title": "ChatGPT: Chat, Work, Create & Code with AI",
+      "url": "https://chatgpt.com/",
+      "snippet": "Use ChatGPT to answer questions, write, create images, complete work, and code—all in one place. Get started for free or download the app."
+    },
+    {
+      "title": "Models - Gemini API | Google AI for Developers",
+      "url": "https://ai.google.dev/gemini-api/docs/models",
+      "snippet": "This guide introduces all the models available through the Gemini API."
+    }
+  ]
+}

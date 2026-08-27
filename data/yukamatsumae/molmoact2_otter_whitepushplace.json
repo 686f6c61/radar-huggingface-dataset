@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "yukamatsumae/molmoact2_otter_whitepushplace",
+  "slug": "yukamatsumae-molmoact2_otter_whitepushplace",
+  "author": "yukamatsumae",
+  "url": "https://huggingface.co/yukamatsumae/molmoact2_otter_whitepushplace",
+  "created_at": "2026-08-27T06:24:47.000Z",
+  "updated_at": "2026-08-27T06:27:37.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "robotics",
+    "molmoact2",
+    "dataset:yukamatsumae/WhitePushPlace_20260827_004728",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 5442196272,
+  "parameters_human": "5.44B",
+  "storage_bytes": 10884581464,
+  "storage_human": "10.9 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - allenai/molmoact2: Official Repository for MolmoAct2",
+      "url": "https://github.com/allenai/molmoact2",
+      "snippet": "Official Repository for MolmoAct2. Contribute to allenai/molmoact2 development by creating an account on GitHub."
+    },
+    {
+      "title": "GitHub - allenai/molmoact: Official Repository for MolmoAct",
+      "url": "https://github.com/allenai/MolmoAct",
+      "snippet": "MolmoAct: Multimodal Open Language Model for Action Updates [2026/5/5] 🔥 We have released MolmoAct2, faster, stronger, and better in every aspect. Check it out. [2025/12/5] 🔥 Tips on zero-shot evaluation of allenai/MolmoAct-7B-D-0812 on Franka setup with MolmoAct mid-training at 5.4 Zero-shot evaluation."
+    },
+    {
+      "title": "MolmoAct2: Action Reasoning Models for Real-world Deployment",
+      "url": "https://arxiv.org/abs/2605.02881",
+      "snippet": "We present MolmoAct2, a fully open action reasoning model built for practical deployment, advancing its predecessor along five axes. We introduce MolmoER, a VLM backbone specialized for spatial and embodied reasoning, trained on a 3.3M-sample corpus with a specialize-then-rehearse recipe."
+    },
+    {
+      "title": "yukamatsumae/molmoact2_otter_yellowpushplace_lora · Hugging Face",
+      "url": "https://huggingface.co/yukamatsumae/molmoact2_otter_yellowpushplace_lora",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "MolmoAct2 Action Reasoning Models for Real-World Deployment",
+      "url": "https://arxiv.org/html/2605.02881v1",
+      "snippet": "We present MolmoAct2, a fully open action reasoning model built for practical deployment, advancing its predecessor, MolmoAct along five axes. We introduce Molmo2-ER, a VLM backbone specialized for spatial and embodied reasoning, trained on a 3.3M-sample corpus with a specialize-then-rehearse recipe."
+    }
+  ]
+}

@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "amd/Kimi-K3-Quark-MXFP4-AttnFP8",
+  "slug": "amd-kimi-k3-quark-mxfp4-attnfp8",
+  "author": "amd",
+  "url": "https://huggingface.co/amd/Kimi-K3-Quark-MXFP4-AttnFP8",
+  "created_at": "2026-07-30T07:49:18.000Z",
+  "updated_at": "2026-08-27T08:36:30.000Z",
+  "license": "kimi-k3",
+  "license_family": "unknown",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "kimi_k3",
+    "feature-extraction",
+    "image-text-to-text",
+    "custom_code",
+    "base_model:moonshotai/Kimi-K3",
+    "base_model:quantized:moonshotai/Kimi-K3",
+    "license:other",
+    "8-bit",
+    "quark",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 744,
+  "trending_score": 0,
+  "parameters": 1412120544000,
+  "parameters_human": "1412.12B",
+  "storage_bytes": 1505902420272,
+  "storage_human": "1505.9 GB",
+  "base_model": "moonshotai/Kimi-K3",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "amd/Kimi-K3-Quark-MXFP4-AttnFP8 · Hugging Face",
+      "url": "https://huggingface.co/amd/Kimi-K3-Quark-MXFP4-AttnFP8",
+      "snippet": "Instructions to use amd/Kimi-K3-Quark-MXFP4-AttnFP8 with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Libraries Transformers How to use amd/Kimi-K3-Quark-MXFP4-AttnFP8 with Transformers: # Use a pipeline as a high-level helper from transformers import pipeline pipe = pipeline (\"image-text-to-text\", model=\"amd/Kimi-K3-Quark-MXFP4-AttnFP8\", trust ..."
+    },
+    {
+      "title": "How We Deployed Kimi K3 on AMD GPUs | Shakudo Blog",
+      "url": "https://www.shakudo.io/blog/kimi-k3-amd-gpu-deployment",
+      "snippet": "A hands-on guide to running Kimi K3 on AMD MI325X GPUs: convert MXFP4 to int4 at load time, build vLLM and AITER, and serve the model on gfx942."
+    },
+    {
+      "title": "Kimi K3 Model Overview: 2.8T Parameters, MXFP4 Quantization, and What ...",
+      "url": "https://huggingface.co/blog/ResterChed/kimi-k3-model-overview-mxfp4-quantization-open-wei",
+      "snippet": "A Blog post by Viddi AI on Hugging Face"
+    },
+    {
+      "title": "Day 0 Kimi-K3 on AMD Instinct GPUs",
+      "url": "https://www.amd.com/en/developer/resources/technical-articles/2026/kimi-k3-on-amd-instinct-gpus.html",
+      "snippet": "Day 0 Kimi-K3 Deployment with ATOM ATOM provides a Kimi-K3 deployment recipe for AMD Instinct MI355X GPUs, covering the container image, runtime configuration, model service startup."
+    },
+    {
+      "title": "Kimi Code in MXFP4 on AMD GPUs",
+      "url": "https://www.amd.com/en/developer/resources/technical-articles/2026/kimi-code-in-mxfp4-on-amd-gpus.html",
+      "snippet": "The heart of Kimi K2.7-Code inference — and of every model on the shared K2 backbone — is the grouped GEMM inside the MoE block. AITER already ran this path in full A4W4 MXFP4 — activations and weights both entering the matrix units as 4-bit, using the AMD CDNA™ 4 architecture&#x27;s native micro scaling instructions with per-32-element E8M0 ..."
+    }
+  ]
+}

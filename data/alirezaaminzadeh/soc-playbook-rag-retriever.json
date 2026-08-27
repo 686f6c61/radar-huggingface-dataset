@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "alirezaaminzadeh/soc-playbook-rag-retriever",
+  "slug": "alirezaaminzadeh-soc-playbook-rag-retriever",
+  "author": "alirezaaminzadeh",
+  "url": "https://huggingface.co/alirezaaminzadeh/soc-playbook-rag-retriever",
+  "created_at": "2026-08-27T11:25:56.000Z",
+  "updated_at": "2026-08-27T11:27:57.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "scikit-learn",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "scikit-learn",
+    "joblib",
+    "retrieval",
+    "rag",
+    "bm25",
+    "tf-idf",
+    "en",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 691986,
+  "storage_human": "691986 B",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "The Complete Guide to RAG: Naive, Advanced, and Graph RAG in One ...",
+      "url": "https://www.mrlatte.net/en/research/2026/04/27/rag-complete-guide/",
+      "snippet": "From RAG basics to Graph RAG, Agentic RAG, and the LLM Wiki pattern, theory, runnable code, the latest trends, and a decision guide, all on a single page."
+    },
+    {
+      "title": "alirezaaminzadeh/soc-analytics-models · Hugging Face",
+      "url": "https://huggingface.co/alirezaaminzadeh/soc-analytics-models",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Alireza Aminzadeh — AI/ML Portfolio - Hugging Face",
+      "url": "https://huggingface.co/spaces/alirezaaminzadeh/alireza-aminzadeh-resume",
+      "snippet": "Alireza Aminzadeh&#x27;s AI/ML portfolio: secure AI agents, cybersecurity machine learning, retrieval, benchmarks, and operations research."
+    },
+    {
+      "title": "GitHub - Aamirofficiall/rag-playbook: Stop guessing which RAG pattern ...",
+      "url": "https://github.com/Aamirofficiall/rag-playbook",
+      "snippet": "Every RAG tutorial teaches you how to build patterns. None of them tell you which one to actually use. rag-playbook runs the same query against 8 production-tested RAG patterns and shows you which one wins — with real numbers for quality, latency, and cost."
+    },
+    {
+      "title": "Playbook RAG and Vector Store | ladislav-lettovsky/ai-delivery ...",
+      "url": "https://deepwiki.com/ladislav-lettovsky/ai-delivery-exception-system/5.2-playbook-rag-and-vector-store",
+      "snippet": "The RAG pipeline consists of a PDF extraction layer, a recursive text splitting strategy, a local embedding model, and a persistent ChromaDB vector store. Access to this data is abstracted through a LangChain-compatible retriever and exposed to agents via a specialized tool."
+    }
+  ]
+}

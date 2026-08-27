@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "OpenExploer/detr3d_efficientnetb3",
+  "slug": "openexploer-detr3d_efficientnetb3",
+  "author": "OpenExploer",
+  "url": "https://huggingface.co/OpenExploer/detr3d_efficientnetb3",
+  "created_at": "2026-08-27T06:40:39.000Z",
+  "updated_at": "2026-08-27T06:53:26.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "heal",
+    "horizon",
+    "arxiv:2110.06922",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 911415685,
+  "storage_human": "911 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "google/efficientnet-b3 · Hugging Face",
+      "url": "https://huggingface.co/google/efficientnet-b3",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "EfficientNet · Hugging Face",
+      "url": "https://huggingface.co/docs/transformers/model_doc/efficientnet",
+      "snippet": "Overview The EfficientNet model was proposed in EfficientNet: Rethinking Model Scaling for Convolutional Neural Networks by Mingxing Tan and Quoc V. Le. EfficientNets are a family of image classification models, which achieve state-of-the-art accuracy, yet being an order-of-magnitude smaller and faster than previous models."
+    },
+    {
+      "title": "GitHub - google-ai-edge/model-explorer: A modern model graph visualizer ...",
+      "url": "https://github.com/google-ai-edge/model-explorer",
+      "snippet": "Model Explorer offers an intuitive and hierarchical visualization of model graphs. It organizes model operations into nested layers, enabling users to dynamically expand or collapse these layers. It also provides a range of features to facilitate model exploration and debugging, including the ability to highlight input and output operations, overlay metadata on nodes, display layers in ..."
+    },
+    {
+      "title": "tf.keras.applications.EfficientNetB3 | TensorFlow v2.16.1",
+      "url": "https://www.tensorflow.org/api_docs/python/tf/keras/applications/EfficientNetB3",
+      "snippet": "Instantiates the EfficientNetB3 architecture. Reference: EfficientNet: Rethinking Model Scaling for Convolutional Neural Networks (ICML 2019) This function returns a Keras image classification model, optionally loaded with weights pre-trained on ImageNet. For image classification use cases, see this page for detailed examples. For transfer learning use cases, make sure to read the guide to ..."
+    },
+    {
+      "title": "efficientnet_b3 — Torchvision main documentation",
+      "url": "https://docs.pytorch.org/vision/main/models/generated/torchvision.models.efficientnet_b3.html",
+      "snippet": "EfficientNet B3 model architecture from the EfficientNet: Rethinking Model Scaling for Convolutional Neural Networks paper. Parameters: weights (EfficientNet_B3_Weights, optional) - The pretrained weights to use. See EfficientNet_B3_Weights below for more details, and possible values. By default, no pre-trained weights are used."
+    }
+  ]
+}

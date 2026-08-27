@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "msuiche/GLM-5.3-Flash-abliterated-GLP-44",
+  "slug": "msuiche-glm-5-3-flash-abliterated-glp-44",
+  "author": "msuiche",
+  "url": "https://huggingface.co/msuiche/GLM-5.3-Flash-abliterated-GLP-44",
+  "created_at": "2026-08-27T01:51:52.000Z",
+  "updated_at": "2026-08-27T03:26:41.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "control-vector",
+    "glp",
+    "abliteration",
+    "refusal-direction",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 720896,
+  "parameters_human": "720896",
+  "storage_bytes": 5774784,
+  "storage_human": "6 MB",
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": true,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GLM-5.3-Flash - unsloth.ai",
+      "url": "https://unsloth.ai/docs/models/glm-5.3",
+      "snippet": "Run the new GLM-5.3-Flash model by Z.ai on local hardware! GLM-5.3-Flash, also known as ox-alpha, is Z.ai&#x27;s new 320B parameter multimodal open model with 18B active parameters. GLM-5.3-Flash outperforms GLM-5.2 across benchmarks and real-world workloads at one-tenth the price, while approaching Claude Opus 4.8 on coding and agentic benchmarks."
+    },
+    {
+      "title": "GLM-5.3 & GLM-5.2 & GLM-5.1 & GLM-5 - GitHub",
+      "url": "https://github.com/zai-org/GLM-5",
+      "snippet": "We introduce GLM-5.3-Flash, the first natively multimodal model in the GLM-5 series. With 320B total parameters and just 18B active parameters, it outperforms GLM-5.2 across benchmarks and real-world workloads at one-tenth the price, while approaching Claude Opus 4.8 on coding and agentic benchmarks ..."
+    },
+    {
+      "title": "GLM-5.3: Frontier Coding with Emergent Cyber Capabilities - z.ai",
+      "url": "https://z.ai/blog/glm-5.3",
+      "snippet": "Compared with GLM-5.2, it is much better at complex coding and long-horizon tasks: Stronger Coding: GLM-5.3 is the most capable open-weights model for coding, with a 50% improvement over GLM-5.2 on our in-house Z.ai Code Bench. It also achieve open-source SOTA on public benchmarks including Terminal Bench 3.0 and Agents&#x27; Last Exam."
+    },
+    {
+      "title": "README.md · dealignai/GLM-5.3-Flash-ABLITERATED-FP8 at main - Hugging Face",
+      "url": "https://huggingface.co/dealignai/GLM-5.3-Flash-ABLITERATED-FP8/blob/main/README.md",
+      "snippet": "What Is This? CRACK is dealignai&#x27;s brand for permanent, weight-level uncensoring. This is GLM-5.3-Flash in FP8 with its refusal behavior — which caused heavy over-refusal, especially on copyright and other benign-but-flagged requests — removed directly in the model weights. FP8 runs at native speed on Hopper (H100/H200) GPUs."
+    },
+    {
+      "title": "Z.ai Releases GLM-5.3-Flash: A 320B-A18B Natively Multimodal MoE With a ...",
+      "url": "https://www.marktechpost.com/2026/08/26/z-ai-releases-glm-5-3-flash-a-320b-a18b-natively-multimodal-moe-with-a-1m-token-context/",
+      "snippet": "Z.ai has released GLM-5.3-Flash, the first natively multimodal model in the GLM-5 series and the cheapest capable coding model the lab has shipped. It is a mixture-of-experts model with 320B total parameters and 18B active per token, a 1,048,576-token context window, and image and video input — released under an MIT license with weights on Hugging Face. According to Z.ai reports, it beats ..."
+    }
+  ]
+}

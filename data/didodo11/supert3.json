@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "didodo11/SuperT3",
+  "slug": "didodo11-supert3",
+  "author": "didodo11",
+  "url": "https://huggingface.co/didodo11/SuperT3",
+  "created_at": "2026-05-18T13:37:53.000Z",
+  "updated_at": "2026-08-27T08:47:12.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "onnx",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1689427310,
+  "storage_human": "1.7 GB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "didodo11/SuperT3 · Hugging Face",
+      "url": "https://huggingface.co/didodo11/SuperT3",
+      "snippet": "didodo11 / SuperT3 like 0 ONNX License:mit Model card FilesFiles and versions xet Community"
+    },
+    {
+      "title": "didodo11 (ken) - Hugging Face",
+      "url": "https://huggingface.co/didodo11/models",
+      "snippet": "User profile of ken on Hugging Face"
+    },
+    {
+      "title": "nemotron-3-super - ollama.com",
+      "url": "https://ollama.com/library/nemotron-3-super",
+      "snippet": "NVIDIA Nemotron 3 Super is a 120B open MoE model activating just 12B parameters to deliver maximum compute efficiency and accuracy for complex multi-agent applications."
+    },
+    {
+      "title": "Introducing Voice Design v3: Create Expressive AI Voices from Text",
+      "url": "https://www.youtube.com/watch?v=_396fziGvrQ",
+      "snippet": "We&#x27;ve rebuilt the underlying Voice Design model to deliver higher quality and broader expressive range. Generate production-ready voices in 70+ languages with support for hundreds of localized ..."
+    },
+    {
+      "title": "[2604.12374] Nemotron 3 Super: Open, Efficient Mixture-of-Experts ...",
+      "url": "https://arxiv.org/abs/2604.12374",
+      "snippet": "We describe the pre-training, post-training, and quantization of Nemotron 3 Super, a 120 billion (active 12 billion) parameter hybrid Mamba-Attention Mixture-of-Experts model. Nemotron 3 Super is the first model in the Nemotron 3 family to 1) be pre-trained in NVFP4, 2) leverage LatentMoE, a new Mixture-of-Experts architecture that optimizes for both accuracy per FLOP and accuracy per ..."
+    }
+  ]
+}

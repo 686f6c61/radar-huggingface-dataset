@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "i-Coder/iCoder-27B-OPSD",
+  "slug": "i-coder-icoder-27b-opsd",
+  "author": "i-Coder",
+  "url": "https://huggingface.co/i-Coder/iCoder-27B-OPSD",
+  "created_at": "2026-08-25T07:11:13.000Z",
+  "updated_at": "2026-08-27T09:20:16.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_5",
+    "image-text-to-text",
+    "code",
+    "rtl",
+    "verilog",
+    "gpu-kernel",
+    "triton",
+    "text-generation",
+    "conversational",
+    "base_model:i-Coder/iCoder-27B-SFT",
+    "base_model:finetune:i-Coder/iCoder-27B-SFT",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 27356728560,
+  "parameters_human": "27.36B",
+  "storage_bytes": 54733595533,
+  "storage_human": "54.7 GB",
+  "base_model": "i-Coder/iCoder-27B-SFT",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "MooreThreads/MusaCoder-27B · Hugging Face",
+      "url": "https://huggingface.co/MooreThreads/MusaCoder-27B",
+      "snippet": "Introduction MusaCoder-27B is a 27B-parameter code model developed by Moore Threads for PyTorch-to-CUDA/MUSA native kernel generation."
+    },
+    {
+      "title": "Jackrong/Qwopus3.6-27B-Coder · Hugging Face",
+      "url": "https://huggingface.co/Jackrong/Qwopus3.6-27B-Coder",
+      "snippet": "💡 What is Qwopus-3.6-27B-Coder? 🪐 Qwopus-3.6-27B-Coder is a reasoning-enhanced agentic coding model built on top of Qwopus3.6-27B-v2. It inherits the powerful reasoning foundation of the v2 base — which achieved 87.43% MMLU-Pro and 75.25% SWE-bench Verified — and further specializes it for agentic code generation, structured tool calling, debugging, and instruction-following in ..."
+    },
+    {
+      "title": "Qwen 3.6 27B Local Setup Guide 2026: Coder, VL & Hardware Tiers",
+      "url": "https://www.promptquorum.com/local-llms/qwen-local-deployment-guide-2026",
+      "snippet": "Qwen 3.6 27B is the new flagship pick for local deployment — a dense, Apache 2.0 model with a 256K context window that runs in ~17 GB of VRAM at Q4_K_M via `ollama run qwen3.6:27b`. Qwen3 8B runs in 5.5 GB of VRAM via Ollama — one command, no configuration — while Qwen3-Coder 32B reaches 92.7% on HumanEval and Qwen2-VL 7B leads local vision models for Chinese and Japanese document OCR ..."
+    },
+    {
+      "title": "huihui_ai/Qwen3.8-abliterated",
+      "url": "https://ollama.com/huihui_ai/Qwen3.8-abliterated",
+      "snippet": "Qwen3.8 delivers substantial gains across coding, professional work, research, and long-horizon agentic tasks."
+    },
+    {
+      "title": "IC Coder | AI 原生 FPGA 研发基础设施",
+      "url": "https://www.iccoder.com/",
+      "snippet": "新 IC Coder 2.0 全面开放!支持个人订阅，支持企业私有化部署 Agentic AI Platform for FPGA R&D AI 原生 FPGA 研发基础设施 让 AI 从\"会回答\"升级为\"会执行\"。IC Coder 面向真实 FPGA 研发流程，连接需求理解、RTL 生成、TestBench、仿真反馈、问题分析、修复迭代和工程报告，帮助团队更快获得可验证、可复用的 ..."
+    }
+  ]
+}

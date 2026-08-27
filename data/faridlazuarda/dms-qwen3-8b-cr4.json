@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "faridlazuarda/dms-qwen3-8b-cr4",
+  "slug": "faridlazuarda-dms-qwen3-8b-cr4",
+  "author": "faridlazuarda",
+  "url": "https://huggingface.co/faridlazuarda/dms-qwen3-8b-cr4",
+  "created_at": "2026-08-27T08:17:53.000Z",
+  "updated_at": "2026-08-27T08:25:01.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "qwen3",
+    "dms",
+    "kv-cache-compression",
+    "custom_code",
+    "arxiv:2506.05345",
+    "base_model:Qwen/Qwen3-8B",
+    "base_model:finetune:Qwen/Qwen3-8B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 14085398,
+  "storage_human": "14 MB",
+  "base_model": "Qwen/Qwen3-8B",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "faridlazuarda/dms-qwen3-1.7b-cr4 · Hugging Face",
+      "url": "https://huggingface.co/faridlazuarda/dms-qwen3-1.7b-cr4",
+      "snippet": "Dynamic Memory Sparsification (DMS) adapters trained on Qwen/Qwen3-1.7B with the unmodified upstream recipe from NVIDIA/Model-Optimizer experimental/dms, pinned at commit 73d778422388f0e849ecb180375d34ac445711ca."
+    },
+    {
+      "title": "Qwen/Qwen3-8B · Hugging Face",
+      "url": "https://huggingface.co/Qwen/Qwen3-8B",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Qwen3-8B - Qualcomm AI Hub",
+      "url": "https://aihub.qualcomm.com/models/qwen3_8b",
+      "snippet": "The Qwen3‑8B is a state‑of‑the‑art multilingual base language model with 8 billion parameters, excelling in language understanding, generation, coding, and mathematics."
+    },
+    {
+      "title": "qwen3:8b - ollama.com",
+      "url": "https://ollama.com/library/qwen3:8b",
+      "snippet": "Qwen3 is the latest generation of large language models in Qwen series, offering a comprehensive suite of dense and mixture-of-experts (MoE) models."
+    },
+    {
+      "title": "qwen3.8 - ollama.com",
+      "url": "https://ollama.com/library/qwen3.8",
+      "snippet": "Qwen3.8 delivers substantial gains across coding, professional work, research, and long-horizon agentic tasks."
+    }
+  ]
+}

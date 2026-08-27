@@ -1,0 +1,84 @@
+{
+  "schema": 1,
+  "id": "smshahbaj/Rifa-Nano-0.5B",
+  "slug": "smshahbaj-rifa-nano-0-5b",
+  "author": "smshahbaj",
+  "url": "https://huggingface.co/smshahbaj/Rifa-Nano-0.5B",
+  "created_at": "2026-08-26T09:15:22.000Z",
+  "updated_at": "2026-08-27T08:48:06.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en",
+    "bn"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen2",
+    "text-generation",
+    "rifa",
+    "rifa-nano",
+    "conversational",
+    "fine-tuned",
+    "lora",
+    "bengali",
+    "bangla",
+    "banglish",
+    "coding",
+    "instruction-tuned",
+    "en",
+    "bn",
+    "base_model:Qwen/Qwen2.5-0.5B-Instruct",
+    "base_model:adapter:Qwen/Qwen2.5-0.5B-Instruct",
+    "license:apache-2.0",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 494032768,
+  "parameters_human": "494.0M",
+  "storage_bytes": 999519530,
+  "storage_human": "1000 MB",
+  "base_model": "Qwen/Qwen2.5-0.5B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Nano Banana 2 - Gemini AI image generator & photo editor",
+      "url": "https://gemini.google/overview/image-generation/",
+      "snippet": "With Nano Banana 2, Gemini&#x27;s AI image generator and photo editor, you can create high-quality images and edit photos into countless new creations."
+    },
+    {
+      "title": "‎Google Gemini",
+      "url": "https://gemini.google.com/",
+      "snippet": "Get assistance with writing, planning, learning, and more from Google AI."
+    },
+    {
+      "title": "A Technical Study into 0.5B Reasoning Language Models",
+      "url": "https://arxiv.org/html/2506.13404v2",
+      "snippet": "This comparative study yields insights into the potential of 0.5B models and underscores the significance of training approaches in unlocking their full capabilities. RQ2: How do different training strategies, including SFT, RL, and KD, specifically enhance the performance of 0.5B models in these tasks?"
+    },
+    {
+      "title": "Gemini Image - Nano Banana — Google DeepMind",
+      "url": "https://deepmind.google/models/gemini-image/",
+      "snippet": "Nano Banana 2 Lite 🍌 Our fastest, most efficient Gemini Image model. Built to deliver high-speed generation and editing at our lowest cost yet."
+    },
+    {
+      "title": "Gemini — Google DeepMind",
+      "url": "https://deepmind.google/models/gemini/",
+      "snippet": "Gemini 3.5 Flash-Lite has proven incredibly fast and reliable. Ultimately, the model unlocks direct accessibility, giving users a highly responsive option they can choose on demand for smooth, uninterrupted execution.\" Ashwin Kannan, Principal AI Engineer, Palo Alto Networks"
+    }
+  ]
+}

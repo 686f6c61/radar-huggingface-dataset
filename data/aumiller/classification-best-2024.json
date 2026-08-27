@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "aumiller/classification-best-2024",
+  "slug": "aumiller-classification-best-2024",
+  "author": "aumiller",
+  "url": "https://huggingface.co/aumiller/classification-best-2024",
+  "created_at": "2026-08-27T10:36:10.000Z",
+  "updated_at": "2026-08-27T10:36:18.000Z",
+  "license": "bsd-3-clause",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "blip",
+    "pytorch",
+    "classification",
+    "license:bsd-3-clause",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 16576,
+  "parameters_human": "16576",
+  "storage_bytes": 66784,
+  "storage_human": "66784 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Arena AI: The Official AI Ranking & LLM Leaderboard",
+      "url": "https://arena.ai/",
+      "snippet": "Chat, compare, vote for the world&#x27;s best AI models. Join the community shaping the public leaderboard for LLMs, image, and code models through real-world evaluation."
+    },
+    {
+      "title": "LLM Leaderboard - Vellum",
+      "url": "https://www.vellum.ai/llm-leaderboard",
+      "snippet": "LLM Leaderboard This LLM leaderboard displays the latest public benchmark performance for SOTA model versions released after April 2024. The data comes from model providers as well as independently run evaluations by Vellum or the open-source community. We feature results from non-saturated benchmarks, excluding outdated benchmarks (e.g. MMLU)."
+    },
+    {
+      "title": "LLM Decision Hub - AI Model Rankings & Benchmarks",
+      "url": "https://llmleaderboard.ai/",
+      "snippet": "Compare AI language models with comprehensive rankings based on performance, safety, cost, and real-world benchmarks. Find the best LLM for your needs."
+    },
+    {
+      "title": "AI Comparison: Best AI Models - Devtorium",
+      "url": "https://devtorium.com/blog/generative-ai-comparison-best-ai-models-available-in-2024/",
+      "snippet": "Getting confused with all AI tools available now? Check out our AI comparison guide that explains the strengths and uses for each top model."
+    },
+    {
+      "title": "LLM Leaderboard - Comparison of AI models from OpenAI, Anthropic ...",
+      "url": "https://artificialanalysis.ai/leaderboards/models",
+      "snippet": "Comparison and ranking the performance of over 250 AI models (LLMs) across key metrics including intelligence, price, performance and speed (output speed - tokens per second & latency - TTFT), context window & others."
+    }
+  ]
+}

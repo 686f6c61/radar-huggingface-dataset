@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "sapanostic/cosmos3-edge-so101-pick-place-testtube-helicopter-300eps",
+  "slug": "sapanostic-cosmos3-edge-so101-pick-place-testtube-helicopter-300eps",
+  "author": "sapanostic",
+  "url": "https://huggingface.co/sapanostic/cosmos3-edge-so101-pick-place-testtube-helicopter-300eps",
+  "created_at": "2026-08-27T06:29:43.000Z",
+  "updated_at": "2026-08-27T06:46:48.000Z",
+  "license": "nvidia-open-model-license",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "robotics",
+    "vla",
+    "cosmos3",
+    "so-arm101",
+    "action-policy",
+    "base_model:nvidia/Cosmos3-Edge",
+    "base_model:finetune:nvidia/Cosmos3-Edge",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 68497349542,
+  "storage_human": "68.5 GB",
+  "base_model": "nvidia/Cosmos3-Edge",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Cosmos 3 — Cosmos Lab - research.nvidia.com",
+      "url": "https://research.nvidia.com/labs/cosmos-lab/cosmos3/",
+      "snippet": "Cosmos 3 connects understanding, generation, simulation, and action through a shared omnimodal world model that moves fluidly across text, images, video, audio, and actions."
+    },
+    {
+      "title": "[2606.02800] Cosmos 3: Omnimodal World Models for Physical AI",
+      "url": "https://arxiv.org/abs/2606.02800",
+      "snippet": "We introduce Cosmos 3, a family of omnimodal world models designed to jointly process and generate language, image, video, audio, and action sequences within a unified mixture-of-transformers architecture. By supporting highly flexible input-output configurations, Cosmos 3 seamlessly unifies critical modalities for Physical AI -- effectively subsuming vision-language models, video generators ..."
+    },
+    {
+      "title": "cosmos/cookbooks/cosmos3 at main · NVIDIA/cosmos · GitHub",
+      "url": "https://github.com/NVIDIA/cosmos/tree/main/cookbooks/cosmos3",
+      "snippet": "NVIDIA Cosmos is an open platform of world models, datasets, and tools that enables developers to build Physical AI for robots, autonomous vehicles, smart infrastructure, and more. - NVIDIA/cosmos"
+    },
+    {
+      "title": "Lpremier/so101_pick_and_place_test_3 - Hugging Face",
+      "url": "https://huggingface.co/datasets/Lpremier/so101_pick_and_place_test_3",
+      "snippet": "Datasets: Lpremier / so101_pick_and_place_test_3 like 0 Tasks: Robotics Modalities: Tabular Time-series Video Formats: parquet Size: < 1K Tags: LeRobot Libraries: Datasets pandas Polars + 1 License: apache-2.0 Dataset card Data Studio FilesFiles and versions xet Community Dataset Viewer Auto-converted to Parquet API Embed Duplicate Data Studio Subset (1) default·725 rows default (725 rows ..."
+    },
+    {
+      "title": "README.md · aswinkumar99/LeRobot-SO101-Pick-Place at main - Hugging Face",
+      "url": "https://huggingface.co/datasets/aswinkumar99/LeRobot-SO101-Pick-Place/blob/main/README.md",
+      "snippet": "Dataset Summary LeRobot dataset for SO101 pick-and-place with three sponge manipulation tasks and fixed/random object layouts. The dataset is intended for imitation learning, behavior cloning, policy evaluation, and robustness studies under layout changes."
+    }
+  ]
+}

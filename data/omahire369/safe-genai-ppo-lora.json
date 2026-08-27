@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "OmAhire369/safe-genai-ppo-lora",
+  "slug": "omahire369-safe-genai-ppo-lora",
+  "author": "OmAhire369",
+  "url": "https://huggingface.co/OmAhire369/safe-genai-ppo-lora",
+  "created_at": "2026-08-27T11:23:40.000Z",
+  "updated_at": "2026-08-27T11:23:41.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "safety",
+    "alignment",
+    "preference-learning",
+    "ppo",
+    "lora",
+    "rlhf",
+    "text-generation",
+    "base_model:openai-community/gpt2-medium",
+    "base_model:adapter:openai-community/gpt2-medium",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 17326189,
+  "storage_human": "17 MB",
+  "base_model": "gpt2-medium",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "OmAhire369/safe-genai-reward-lora · Hugging Face",
+      "url": "https://huggingface.co/OmAhire369/safe-genai-reward-lora",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "OmAhire369 (Om Ahire) - Hugging Face",
+      "url": "https://huggingface.co/OmAhire369/models",
+      "snippet": "OmAhire369/ppo_qlora_alignment ... OmAhire369/ppo_lora_alignment ... OmAhire369/ppo_full_alignment ... OmAhire369/reward-model-safe-ai"
+    },
+    {
+      "title": "safety-alignment-llm/app at main · Omahire369/safety-alignment-llm",
+      "url": "https://github.com/Omahire369/safety-alignment-llm/tree/main/app",
+      "snippet": "Contribute to Omahire369/safety-alignment-llm development by creating an account on GitHub."
+    },
+    {
+      "title": "Omahire369/safety-alignment-llm - GitHub",
+      "url": "https://github.com/Omahire369/safety-alignment-llm",
+      "snippet": "Fine-tuning an instruction-tuned model on a narrow domain quietly strips out its safety training. This project measures two zero-training ways to put refusal back — editing the weights and steering the activations — on the same base model, the same harmful benchmark, and the same utility split, so the trade-off between them is directly readable."
+    },
+    {
+      "title": "lora AI Models | Civitai",
+      "url": "https://civitai.com/tag/lora",
+      "snippet": "Browse 28,863 Stable Diffusion & Flux models, LoRAs, checkpoints, and embeddings tagged with lora."
+    }
+  ]
+}

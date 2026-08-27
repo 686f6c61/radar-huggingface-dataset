@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "minishlab/potion-base-8m-onnx",
+  "slug": "minishlab-potion-base-8m-onnx",
+  "author": "minishlab",
+  "url": "https://huggingface.co/minishlab/potion-base-8m-onnx",
+  "created_at": "2026-08-27T08:50:07.000Z",
+  "updated_at": "2026-08-27T08:50:37.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "model2vec",
+  "languages": [],
+  "tags": [
+    "model2vec",
+    "onnx",
+    "embeddings",
+    "static-embeddings",
+    "sentence-transformers",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 30248074,
+  "storage_human": "30 MB",
+  "base_model": "minishlab/potion-base-8m",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "minishlab/potion-base-8M · Hugging Face",
+      "url": "https://huggingface.co/minishlab/potion-base-8M",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "minishlab/potion-base-8M · ONNX weights for transformers.js",
+      "url": "https://huggingface.co/minishlab/potion-base-8M/discussions/1",
+      "snippet": "Instructions to use minishlab/potion-base-8M with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Libraries Model2Vec How to use minishlab/potion-base-8M with Model2Vec:"
+    },
+    {
+      "title": "GitHub - MinishLab/model2vec: Fast State-of-the-Art Static Embeddings",
+      "url": "https://github.com/MinishLab/model2vec",
+      "snippet": "30/10/2024: We released three new models: potion-base-8M, potion-base-4M, and potion-base-2M. These models are trained using Tokenlearn. Find out more in our blog post. NOTE: for users of any of our old English M2V models, we recommend switching to these new models as they perform better on all tasks."
+    },
+    {
+      "title": "minishlab/potion-base-8M - ONNX 模型库",
+      "url": "https://onnx.bimant.com/models/minishlab/potion-base-8M",
+      "snippet": "它是 baai/bge-base-en-v1.5 Sentence Transformer 的蒸馏版本。 它使用静态嵌入，允许在 GPU 和 CPU 上以数量级的速度更快地计算文本嵌入。 它专为计算资源有限或实时性能至关重要的应用而设计。 安装 使用 pip 安装 model2vec： ... 使用方法 使用 from_pretrained 方法加载此模型 ..."
+    },
+    {
+      "title": "potion-base-8M: Text-to-Text model — overview, use cases, alternatives",
+      "url": "https://www.aimodels.fyi/models/huggingFace/potion-base-8m-minishlab",
+      "snippet": "Overview potion-base-8M is a static embedding model created by minishlab that distills the BGE-base-en-v1.5 sentence transformer into a compact model for extreme speed and low-resource deployment. The model uses the model2vec framework combined with the Tokenlearn training methodology to create static embeddings—meaning each token has a fixed representation rather than context-dependent ..."
+    }
+  ]
+}

@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "Hieuvvu8815x/swin-t-checkpoint",
+  "slug": "hieuvvu8815x-swin-t-checkpoint",
+  "author": "Hieuvvu8815x",
+  "url": "https://huggingface.co/Hieuvvu8815x/swin-t-checkpoint",
+  "created_at": "2026-08-27T02:16:52.000Z",
+  "updated_at": "2026-08-27T02:17:02.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "swin_t",
+    "pytorch",
+    "swin-t",
+    "generation",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 33088,
+  "parameters_human": "33088",
+  "storage_bytes": 132832,
+  "storage_human": "132832 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "checkpoint AI Models | Civitai",
+      "url": "https://civitai.com/tag/checkpoint",
+      "snippet": "Browse 202 Stable Diffusion & Flux models, LoRAs, checkpoints, and embeddings tagged with checkpoint."
+    },
+    {
+      "title": "vermamanoj/swin-t-checkpoint · Hugging Face",
+      "url": "https://huggingface.co/vermamanoj/swin-t-checkpoint",
+      "snippet": "Repository status The Python file contains the model and runnable example or training entry point. config.json records the generated architecture settings. training_args.json records the default experiment recipe. model.safetensors is a valid initialization checkpoint for smoke tests; it is not presented as a trained benchmark checkpoint."
+    },
+    {
+      "title": "Swin Transformer · Hugging Face",
+      "url": "https://huggingface.co/docs/transformers/model_doc/swin",
+      "snippet": "Swin Transformer is a hierarchical vision transformer. Images are processed in patches and windowed self-attention is used to capture local information. These windows are shifted across the image to allow for cross-window connections, capturing global information more efficiently. This hierarchical approach with shifted windows allows the Swin Transformer to process images effectively at ..."
+    },
+    {
+      "title": "GitHub - anticipate218/HAFRNet: HAFR-Net (IEEE TGRS, under review ...",
+      "url": "https://github.com/anticipate218/HAFRNet",
+      "snippet": "HAFR-Net (IEEE TGRS, under review): identity-initialized refinement of a pretrained Swin-B for VHR aerial image segmentation. LoveDA weights released. - anticipate218/HAFRNet"
+    },
+    {
+      "title": "GitHub - microsoft/Swin-Transformer: This is an official implementation ...",
+      "url": "https://github.com/microsoft/Swin-Transformer",
+      "snippet": "This is an official implementation for \"Swin Transformer: Hierarchical Vision Transformer using Shifted Windows\". - microsoft/Swin-Transformer"
+    }
+  ]
+}

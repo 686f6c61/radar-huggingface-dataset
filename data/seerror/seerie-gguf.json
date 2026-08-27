@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "seerror/seerie-GGUF",
+  "slug": "seerror-seerie-gguf",
+  "author": "seerror",
+  "url": "https://huggingface.co/seerror/seerie-GGUF",
+  "created_at": "2026-08-27T07:29:55.000Z",
+  "updated_at": "2026-08-27T07:29:55.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GGUF-Models (GGUF) - Hugging Face",
+      "url": "https://huggingface.co/GGUF-Models",
+      "snippet": "Our goal is to simplify the process of searching for and exchanging quantized models in GGUF format, as well as to create a space for efficient exchange and access to the models you need"
+    },
+    {
+      "title": "GGUF Model Discovery - Browse & Download AI Models",
+      "url": "https://local-ai-zone.github.io/",
+      "snippet": "Discover and download GGUF format AI models. Browse and direct download thousands of quantized AI models with detailed information, download counts, and direct links."
+    },
+    {
+      "title": "GitHub - IBM/gguf: IBM GGUF-encoded AI models and conversion scripts",
+      "url": "https://github.com/IBM/gguf",
+      "snippet": "This repository provides an automated CI/CD process to convert, test and deploy IBM Granite models, in safetensor format, from the ibm-granite organization to IBM GGUF versions (with various supported quantizations) within model repositories respectively named with the -GGUF extension. These GGUF model repositories are also included to the Granite Quantized Model collection for convenience."
+    },
+    {
+      "title": "Seerror Technologies - GitHub",
+      "url": "https://github.com/Seerror-Technologies",
+      "snippet": "💬 Seerie — The AI Built for Humans AI that serves you — not the other way around A chatbot that puts your privacy first. No harvesting. No tracking. No hidden agenda. → Coming Soon"
+    },
+    {
+      "title": "ggufff/hugingfacefilter · Hugging Face",
+      "url": "https://huggingface.co/ggufff/hugingfacefilter",
+      "snippet": "Welcome to Local AI Zone, your trusted, lightning-fast search engine for GGUF format AI models. Explore, filter, and directly download quantized LLMs ready to run with tools like llama.cpp, GGUF Loader, LM Studio, Ollama, KoboldCpp, and more."
+    }
+  ]
+}

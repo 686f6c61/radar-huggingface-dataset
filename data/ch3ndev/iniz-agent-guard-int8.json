@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "CH3NDev/iniz-agent-guard-int8",
+  "slug": "ch3ndev-iniz-agent-guard-int8",
+  "author": "CH3NDev",
+  "url": "https://huggingface.co/CH3NDev/iniz-agent-guard-int8",
+  "created_at": "2026-08-27T06:27:08.000Z",
+  "updated_at": "2026-08-27T06:41:59.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "openvino",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 503338959,
+  "storage_human": "503 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "int8 — AI Agents for Enterprise",
+      "url": "https://inteight.ai/",
+      "snippet": "Ship faster. Deliver smarter. int8 builds intelligent AI agents that compress enterprise time-to-market from months to days — automating delivery pipelines, accelerating decisions, and scaling operations without adding headcount."
+    },
+    {
+      "title": "inter-agent-guard · PyPI",
+      "url": "https://pypi.org/project/inter-agent-guard/",
+      "snippet": "Inter-agent security firewall for multi-agent AI systems (LangChain, LangGraph, CrewAI, AutoGen). PyPI: pip install inter-agent-guard · Import / CLI: agentguard Docs: inter-agent-guard.readthedocs.io · Blog post · Demo Docs not loading yet? Import the repo on Read the Docs once — see docs/READTHEDOCS_SETUP.md. Until then: quickstart on GitHub."
+    },
+    {
+      "title": "GitHub - nizba06/agentguard",
+      "url": "https://github.com/nizba06/agentguard",
+      "snippet": "AgentGuard Inter-agent security firewall for multi-agent AI systems (LangGraph, CrewAI, AutoGen)."
+    },
+    {
+      "title": "Quick start — AgentGuard documentation",
+      "url": "https://inter-agent-guard.readthedocs.io/en/latest/quickstart.html",
+      "snippet": "User input is scanned before the first model call, every tool output is inspected for indirect injection before the model sees it, and capability manifests registered under agent_id are enforced before tools execute."
+    },
+    {
+      "title": "InnerWarden/agent-guard: Runtime security for AI agents - GitHub",
+      "url": "https://github.com/InnerWarden/agent-guard",
+      "snippet": "Agent Guard Runtime security for AI agents. Detect, inspect, and protect AI coding assistants and autonomous agents."
+    }
+  ]
+}

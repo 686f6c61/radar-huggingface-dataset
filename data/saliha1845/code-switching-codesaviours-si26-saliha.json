@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "Saliha1845/code-switching-codesaviours-si26-saliha",
+  "slug": "saliha1845-code-switching-codesaviours-si26-saliha",
+  "author": "Saliha1845",
+  "url": "https://huggingface.co/Saliha1845/code-switching-codesaviours-si26-saliha",
+  "created_at": "2026-08-12T08:58:14.000Z",
+  "updated_at": "2026-08-27T08:37:19.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "token-classification",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "xlm-roberta",
+    "token-classification",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 17,
+  "trending_score": 0,
+  "parameters": 277455363,
+  "parameters_human": "277.5M",
+  "storage_bytes": 2236789184,
+  "storage_human": "2.2 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Saliha1845/code-switching-codesaviours-si26-saliha · Datasets at ...",
+      "url": "https://huggingface.co/datasets/Saliha1845/code-switching-codesaviours-si26-saliha",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Saliha1845/code-switching-codesaviours-si26-saliha · Hugging Face",
+      "url": "https://huggingface.co/Saliha1845/code-switching-codesaviours-si26-saliha",
+      "snippet": "Instructions to use Saliha1845/code-switching-codesaviours-si26-saliha with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "GitHub - Saliha-Yaqoob/code-switching-codesaviours-si26-saliha",
+      "url": "https://github.com/Saliha-Yaqoob/code-switching-codesaviours-si26-saliha",
+      "snippet": "Contribute to Saliha-Yaqoob/code-switching-codesaviours-si26-saliha development by creating an account on GitHub."
+    },
+    {
+      "title": "code-switching-codesaviours-si26-saliha/SU26_WEEK_6_saliha ... - GitHub",
+      "url": "https://github.com/Saliha-Yaqoob/code-switching-codesaviours-si26-saliha/blob/main/SU26_WEEK_6_saliha.ipynb",
+      "snippet": "Contribute to Saliha-Yaqoob/code-switching-codesaviours-si26-saliha development by creating an account on GitHub."
+    },
+    {
+      "title": "Z.ai shares surge 8% on new AI model running only on Chinese chips - CNBC",
+      "url": "https://www.cnbc.com/2026/08/27/zai-shares-surge-new-ai-model-using-chinese-chips.html",
+      "snippet": "Z.ai&#x27;s shares rose after the company launched a new AI model that it claimed runs only on Chinese chips. It&#x27;s the latest indication of China&#x27;s efforts to ramp up homegrown computing capability ..."
+    }
+  ]
+}

@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "michaelwalkerti/efficient-attention-int825-2024",
+  "slug": "michaelwalkerti-efficient-attention-int825-2024",
+  "author": "michaelwalkerti",
+  "url": "https://huggingface.co/michaelwalkerti/efficient-attention-int825-2024",
+  "created_at": "2026-08-27T11:05:40.000Z",
+  "updated_at": "2026-08-27T11:05:49.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "transformer",
+    "research-notes",
+    "efficient-attention",
+    "license:cc-by-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 24832,
+  "parameters_human": "24832",
+  "storage_bytes": 99808,
+  "storage_human": "99808 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Efficient Attention: Attention with Linear Complexities | IEEE ...",
+      "url": "https://ieeexplore.ieee.org/document/9423033",
+      "snippet": "Dot-product attention has wide applications in computer vision and natural language processing. However, its memory and computational costs grow quadratically with the input size. Such growth prohibits its application on high- resolution inputs. To remedy this drawback, this paper proposes a novel efficient attention mechanism equivalent to dot-product attention but with substantially less ..."
+    },
+    {
+      "title": "GitHub - HKUNLP/efficient-attention: [EVA ICLR&#x27;23; LARA ICML&#x27;22 ...",
+      "url": "https://github.com/hkunlp/efficient-attention",
+      "snippet": "This repository contains the official implementation of experiments conducted in EVA: Efficient attention via control variates (ICLR 2023) LARA: Linear complexity randomized self-attention mechanism (ICML 2022) 🌲 Repo structure: efficient-attention: a small self-contained codebase that implements various efficient attention mechanisms. Please see the usage for more details. vit: codebase ..."
+    },
+    {
+      "title": "GitHub - cmsflash/efficient-attention: An implementation of the ...",
+      "url": "https://github.com/cmsflash/efficient-attention",
+      "snippet": "Description Efficient attention is an attention mechanism that substantially optimizes the memory and computational efficiency while retaining exactly the same expressive power as the conventional dot-product attention. The illustration above compares the two types of attention."
+    },
+    {
+      "title": "[1812.01243] Efficient Attention: Attention with Linear Complexities",
+      "url": "https://arxiv.org/abs/1812.01243",
+      "snippet": "Dot-product attention has wide applications in computer vision and natural language processing. However, its memory and computational costs grow quadratically with the input size. Such growth prohibits its application on high-resolution inputs. To remedy this drawback, this paper proposes a novel efficient attention mechanism equivalent to dot-product attention but with substantially less ..."
+    },
+    {
+      "title": "Mamba and State Space Model Paper Deep Dive: Transformer Alternative ...",
+      "url": "https://www.youngju.dev/blog/ai-papers/2026-03-07-ai-papers-mamba-state-space-model-selective-ssm.en",
+      "snippet": "A comprehensive analysis of the SSM architecture covering the optional State Space Model mechanism of the Mamba paper, the development process from S4 to Mamba-2, the pros and cons of linear time complexity compared to Transformer, and application cases in the vision, audio, and time series fields."
+    }
+  ]
+}

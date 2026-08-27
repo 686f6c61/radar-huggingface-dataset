@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "hackoffice/Inkling",
+  "slug": "hackoffice-inkling",
+  "author": "hackoffice",
+  "url": "https://huggingface.co/hackoffice/Inkling",
+  "created_at": "2026-08-27T09:39:49.000Z",
+  "updated_at": "2026-08-27T09:39:50.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "inkling_mm_model",
+    "image-text-to-text",
+    "conversational",
+    "audio-text-to-text",
+    "moe",
+    "license:apache-2.0",
+    "eval-results",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 952377623626,
+  "parameters_human": "952.38B",
+  "storage_bytes": 1909218968769,
+  "storage_human": "1909.2 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Inkling - Thinking Machines Lab",
+      "url": "https://thinkingmachines.ai/inkling/",
+      "snippet": "Inkling-Small is shown with a solid purple line, Inkling with the heavier cobalt line, and the comparison models with dashed lines. Evaluations without a reported model score are plotted at zero. Hover an evaluation to compare every model&#x27;s score."
+    },
+    {
+      "title": "Inkling Model Card - Thinking Machines Lab",
+      "url": "https://thinkingmachines.ai/model-card/inkling/",
+      "snippet": "Model card for Inkling, a 975B-parameter (41B active) open-weights multimodal model: intended uses, model properties, training, evaluations and safety."
+    },
+    {
+      "title": "Thinking Machines&#x27; Inkling Model Enters a Crowded Frontier AI Race",
+      "url": "https://ai2.work/blog/thinking-machines-inkling-model-enters-a-crowded-frontier-ai-race",
+      "snippet": "Thinking Machines&#x27; Inkling debuts as the top US open-weights model. Inside its 975B MoE design, pricing, benchmarks, and the crowded frontier race it enters."
+    },
+    {
+      "title": "Thinking Machines has released Inkling, the new leading U.S. open ...",
+      "url": "https://artificialanalysis.ai/articles/thinking-machines-has-released-inkling-the-new-leading-u-s-open-weights-model",
+      "snippet": "Thinking Machines has released Inkling, the new leading U.S. open weights model, debuting at 41 on the Artificial Analysis Intelligence Index Thinking Machines has previously released research previews of models and this is their first production language model release."
+    },
+    {
+      "title": "Thinking Machines&#x27; Inkling Explained: Inside Mira Murati&#x27;s First Open ...",
+      "url": "https://miraflow.ai/blog/thinking-machines-inkling-explained-open-weight-moe-model-2026",
+      "snippet": "Thinking Machines Lab shipped its first public model, Inkling, on July 15, 2026. Here is the real architecture, benchmark numbers, and distillation story behind Mira Murati&#x27;s open-weight MoE bet."
+    }
+  ]
+}

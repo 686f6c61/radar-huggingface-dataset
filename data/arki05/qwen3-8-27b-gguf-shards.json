@@ -5,7 +5,7 @@
   "author": "Arki05",
   "url": "https://huggingface.co/Arki05/Qwen3.8-27B-GGUF-shards",
   "created_at": "2026-08-14T16:49:46.000Z",
-  "updated_at": "2026-08-26T20:04:14.000Z",
+  "updated_at": "2026-08-27T04:03:08.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": null,
@@ -26,8 +26,8 @@
   "trending_score": 0,
   "parameters": 2671616,
   "parameters_human": "2.7M",
-  "storage_bytes": 908329778624,
-  "storage_human": "908.3 GB",
+  "storage_bytes": 1166065182144,
+  "storage_human": "1166.1 GB",
   "base_model": "Qwen/Qwen3.8-27B",
   "formats": [
     "gguf"

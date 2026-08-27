@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "SaniyaSawal/news-topic-classifier",
+  "slug": "saniyasawal-news-topic-classifier",
+  "author": "SaniyaSawal",
+  "url": "https://huggingface.co/SaniyaSawal/news-topic-classifier",
+  "created_at": "2026-08-27T06:13:17.000Z",
+  "updated_at": "2026-08-27T06:13:32.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-classification",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "distilbert",
+    "text-classification",
+    "arxiv:1910.09700",
+    "text-embeddings-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 66956548,
+  "parameters_human": "67.0M",
+  "storage_bytes": 267838720,
+  "storage_human": "268 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - Samuelsamraj/News_Classifier: NewsClassifier is an NLP-based ...",
+      "url": "https://github.com/Samuelsamraj/News_Classifier",
+      "snippet": "Building a news classification system involves several steps, including web scraping, data preprocessing, and model training. This project uses Natural Language Processing (NLP) techniques to classify news articles into different topics."
+    },
+    {
+      "title": "GitHub - resourceful-nebil/-AI-News-Topic-Classifier",
+      "url": "https://github.com/resourceful-nebil/-AI-News-Topic-Classifier",
+      "snippet": "This project implements an AI-powered news topic classifier using the Multinomial Naive Bayes algorithm. It automatically categorizes news articles into one of five predefined categories: Business, Entertainment, Politics, Sport, and Tech. The model is trained on the BBC News dataset and uses TF-IDF (Term Frequency-Inverse Document Frequency) vectorization for text preprocessing, achieving 97. ..."
+    },
+    {
+      "title": "News Article Categorizer - GeeksforGeeks",
+      "url": "https://www.geeksforgeeks.org/machine-learning/news-article-categorizer/",
+      "snippet": "News articles cover a wide range of topics such as politics, economics, sports and entertainment. Automatically classifying them into categories can save significant time for journalists, readers and content aggregators."
+    },
+    {
+      "title": "opale-ai/news-classifier · Hugging Face",
+      "url": "https://huggingface.co/opale-ai/news-classifier",
+      "snippet": "This may affect classification performance when relevant information appears later in the article. For the classifier, I chose a Support Vector Machine (SVM) model because: K-Nearest Neighbors (KNN) is too slow at inference time due to the high dimensionality (512 × 3 features),"
+    },
+    {
+      "title": "multilingual-IPTC-news-topic-classifier - Hugging Face",
+      "url": "https://huggingface.co/classla/multilingual-IPTC-news-topic-classifier",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    }
+  ]
+}

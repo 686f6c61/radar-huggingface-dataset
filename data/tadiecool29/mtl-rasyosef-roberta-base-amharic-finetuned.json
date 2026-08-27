@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "tadiecool29/MTL-rasyosef-roberta-base-amharic-finetuned",
+  "slug": "tadiecool29-mtl-rasyosef-roberta-base-amharic-finetuned",
+  "author": "tadiecool29",
+  "url": "https://huggingface.co/tadiecool29/MTL-rasyosef-roberta-base-amharic-finetuned",
+  "created_at": "2026-08-27T08:19:52.000Z",
+  "updated_at": "2026-08-27T08:20:10.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "generated_from_trainer",
+    "base_model:rasyosef/roberta-base-amharic",
+    "base_model:finetune:rasyosef/roberta-base-amharic",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 110621959,
+  "parameters_human": "110.6M",
+  "storage_bytes": 442517445,
+  "storage_human": "443 MB",
+  "base_model": "rasyosef/roberta-base-amharic",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "rasyosef/roberta-medium-amharic · Hugging Face",
+      "url": "https://huggingface.co/rasyosef/roberta-medium-amharic",
+      "snippet": "roberta-medium-amharic This model has the same architecture as xlm-roberta-base and was pretrained from scratch using the Amharic subsets of the oscar, mc4, and amharic-sentences-corpus datasets, on a total of 290 Million tokens. The tokenizer was trained from scratch on the same text corpus, and had a vocabulary size of 32k."
+    },
+    {
+      "title": "rasyosef/RoBERTa-Amharic-Embed-Medium · Hugging Face",
+      "url": "https://huggingface.co/rasyosef/RoBERTa-Amharic-Embed-Medium",
+      "snippet": "RoBERTa Amharic Embed Medium This is a sentence-transformers model finetuned from rasyosef/roberta-medium-amharic. It maps sentences & paragraphs to a 512-dimensional dense vector space and can be used for semantic textual similarity, semantic search, paraphrase mining, text classification, clustering, and more. Model Details Model Description"
+    },
+    {
+      "title": "roberta-medium-amharic open-source model - Specifically designed for ...",
+      "url": "https://model.aibase.com/models/details/1940586819326578688",
+      "snippet": "A RoBERTa model specifically designed for Amharic, which solves the problem of insufficient performance in Amharic NLP tasks through pre-training from scratch."
+    },
+    {
+      "title": "amharic-neural-ir/training/embeddings-amharic/train-roberta-amharic ...",
+      "url": "https://github.com/rasyosef/amharic-neural-ir/blob/main/training/embeddings-amharic/train-roberta-amharic-embed-base.ipynb",
+      "snippet": "Official codebase for the ACL 2026 MeLLM Workshop paper \"The Multilingual Curse at the Retrieval Layer: Evidence from Amharic\" - rasyosef/amharic-neural-ir"
+    },
+    {
+      "title": "rasyosef/amharic-text-embedding-models-training - GitHub",
+      "url": "https://github.com/rasyosef/amharic-text-embedding-models-training",
+      "snippet": "Our largest embedding model, RoBERTa-Base-Amharic-Embed beats all of the multilingual embedding models on the MRR@10, NDCG@10 and Recall metrics while having 1/5th of their param count."
+    }
+  ]
+}

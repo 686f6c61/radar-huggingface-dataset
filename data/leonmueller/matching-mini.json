@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "leonmueller/matching-mini",
+  "slug": "leonmueller-matching-mini",
+  "author": "leonmueller",
+  "url": "https://huggingface.co/leonmueller/matching-mini",
+  "created_at": "2026-08-27T08:08:01.000Z",
+  "updated_at": "2026-08-27T08:08:10.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "tiny_transformer",
+    "pytorch",
+    "tiny-transformer",
+    "matching",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 16576,
+  "parameters_human": "16576",
+  "storage_bytes": 66784,
+  "storage_human": "66784 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "LLM Leaderboard & AI Model Benchmarks — August 2026",
+      "url": "https://benchlm.ai/",
+      "snippet": "Compare 403 AI models across 406 benchmarks, with 226 ranked scores, source evidence, API pricing, context windows, runtime, and head-to-head pages."
+    },
+    {
+      "title": "LLM Leaderboard 2026: Compare 300+ Top AI Models by Intelligence, Speed ...",
+      "url": "https://llm-stats.com/leaderboards/llm-leaderboard",
+      "snippet": "The LLM Leaderboard — independent ranking of GPT, Claude, Gemini, Llama, DeepSeek and 300+ AI models by intelligence, speed and price. Filter by provider, license, modality and context window; sort by every benchmark. Composite LLM Stats Score updated continuously from public benchmarks and live API metrics."
+    },
+    {
+      "title": "Researcher Claims Working Jailbreak on Top AI Models Including GPT-5.6 ...",
+      "url": "https://cybersecuritynews.com/jailbreak-on-top-ai-models/",
+      "snippet": "A well-known AI red teamer claims to have developed a universal jailbreak that works against leading large language models, including heavily guarded flagships such as GPT-5.6 Sol, Claude Opus 5, and Fable."
+    },
+    {
+      "title": "AI Model Leaderboard | Compare Top AI Models (2026) | Design for Online",
+      "url": "https://designforonline.com/ai-models/",
+      "snippet": "Compare the top 717 AI models ranked by performance, price, and capability. Featuring Claude, GPT, Gemini and more from leading providers. Updated 2026 with the latest benchmarks."
+    },
+    {
+      "title": "Z.ai shares surge 8% on new AI model running only on Chinese chips - CNBC",
+      "url": "https://www.cnbc.com/2026/08/27/zai-shares-surge-new-ai-model-using-chinese-chips.html",
+      "snippet": "Z.ai&#x27;s shares rose after the company launched a new AI model that it claimed runs only on Chinese chips. It&#x27;s the latest indication of China&#x27;s efforts to ramp up homegrown computing capability ..."
+    }
+  ]
+}

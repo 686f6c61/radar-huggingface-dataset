@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "LAXMAYDAY/NOOB2-Project-Character-Reference-Bypass-Injector-Research",
+  "slug": "laxmayday-noob2-project-character-reference-bypass-injector-research",
+  "author": "LAXMAYDAY",
+  "url": "https://huggingface.co/LAXMAYDAY/NOOB2-Project-Character-Reference-Bypass-Injector-Research",
+  "created_at": "2026-07-20T07:54:13.000Z",
+  "updated_at": "2026-08-26T08:52:37.000Z",
+  "license": "mixed-license",
+  "license_family": "unknown",
+  "pipeline_tag": "text-to-image",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "anime",
+    "noob2-project",
+    "character-reference",
+    "single-reference",
+    "multi-reference",
+    "image-editing",
+    "image-conditioned-generation",
+    "native-reference",
+    "text-to-image",
+    "anima",
+    "research",
+    "base_model:circlestone-labs/Anima",
+    "base_model:finetune:circlestone-labs/Anima",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 24,
+  "downloads_30d": 0,
+  "trending_score": 8,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 25865432069,
+  "storage_human": "25.9 GB",
+  "base_model": "circlestone-labs/Anima",
+  "formats": [],
+  "is_conversational": false,
+  "gated": true,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "NOOB2-Project-Character-Reference-Bypass-Injector-Research",
+      "url": "https://huggingface.co/LAXMAYDAY/NOOB2-Project-Character-Reference-Bypass-Injector-Research",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "README.md · LAXMAYDAY/NOOB2-Project-Character-Reference-Bypass-Injector ...",
+      "url": "https://huggingface.co/LAXMAYDAY/NOOB2-Project-Character-Reference-Bypass-Injector-Research/blob/main/README.md",
+      "snippet": "Anima Native Reference V2 E180 is an experimental two-reference, image-conditioned generation checkpoint developed as part of the NOOB2 Project — Character Reference Bypass Injector Research. The model generates a new anime illustration from pure noise while conditioning on:"
+    },
+    {
+      "title": "NOOB2 Project-Character Reference Bypass Injector Research",
+      "url": "https://civitai.com/models/2797093/noob2-project-character-reference-bypass-injector-research",
+      "snippet": "Anima Native Reference V2 — E180 Anima Native Reference V2 E180 is an experimental two-reference, image-conditioned generation model developed as part of the NOOB2 Project — Character Reference Bypass Injector Research. It generates a new anime illustration from pure noise while conditioning on: a text prompt; Reference Image 1, assigned to ordered slot 0; Reference Image 2, assigned to ..."
+    },
+    {
+      "title": "NOOB2 Project-Character Reference Bypass Injector Research Reviews",
+      "url": "https://civitai.com/models/2797093/reviews?modelVersionId=3152827",
+      "snippet": "Explore user reviews of the NOOB2 Project-Character Reference Bypass Injector Research AI model on Civitai, rated 5 stars by 72 users, and see how it has helped others bring their creative visions to life"
+    },
+    {
+      "title": "GitHub - l0gicx/ai-model-bypass: Exploit prompts and roleplay ...",
+      "url": "https://github.com/l0gicx/ai-model-bypass",
+      "snippet": "Exploit prompts and roleplay techniques for bypassing AI model restrictions. - l0gicx/ai-model-bypass"
+    }
+  ]
+}

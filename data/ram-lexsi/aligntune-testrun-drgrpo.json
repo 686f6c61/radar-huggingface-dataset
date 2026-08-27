@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "ram-lexsi/aligntune-testrun-DrGRPO",
+  "slug": "ram-lexsi-aligntune-testrun-drgrpo",
+  "author": "ram-lexsi",
+  "url": "https://huggingface.co/ram-lexsi/aligntune-testrun-DrGRPO",
+  "created_at": "2026-08-27T08:49:43.000Z",
+  "updated_at": "2026-08-27T08:49:59.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "aligntune",
+    "drgrpo",
+    "trl",
+    "adapter",
+    "base_model:Qwen/Qwen2.5-0.5B",
+    "base_model:finetune:Qwen/Qwen2.5-0.5B",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 20122676,
+  "storage_human": "20 MB",
+  "base_model": "Qwen/Qwen2.5-0.5B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Home - AlignTune",
+      "url": "https://aligntune.lexsi.ai/",
+      "snippet": "AlignTune is a production-ready fine-tuning library designed to simplify training and fine-tuning of Large Language Models (LLMs) with both Supervised Fine-Tuning (SFT) and Reinforcement Learning (RL) methods. It provides a high-level, unified API that abstracts away the complexities of backend selection, algorithm configuration, and training loops, letting you focus on delivering results ..."
+    },
+    {
+      "title": "ram-lexsi/aligntune-testrun-compose · Hugging Face",
+      "url": "https://huggingface.co/ram-lexsi/aligntune-testrun-compose",
+      "snippet": "Instructions to use ram-lexsi/aligntune-testrun-compose with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Libraries Transformers How to use ram-lexsi/aligntune-testrun-compose with Transformers:"
+    },
+    {
+      "title": "GitHub - Lexsi-Labs/aligntune: Aligntune : A Modular Toolkit for Post ...",
+      "url": "https://github.com/Lexsi-Labs/aligntune",
+      "snippet": "AlignTune is a production-ready fine-tuning library designed to simplify training and fine-tuning of Large Language Models (LLMs) with both Supervised Fine-Tuning (SFT) and Reinforcement Learning (RL) methods. It provides a high-level, unified API that abstracts away the complexities of backend selection, algorithm configuration, and training loops, letting you focus on delivering results."
+    },
+    {
+      "title": "AlignTune | Tools | Lexsi Labs",
+      "url": "https://lexsi.ai/tools/aligntune",
+      "snippet": "AlignTune is a modular post-training alignment toolkit that helps you take a base LLM and tune it into a dependable, policy-aware assistant. It brings the full alignment workflow under one roof, from supervised fine-tuning (SFT) to preference optimization and RL-style training (including methods like DPO, PPO, SimPO, and more), so you can improve instruction-following, reduce unwanted behavior ..."
+    },
+    {
+      "title": "Dr. GRPO - AlignTune",
+      "url": "https://aligntune.lexsi.ai/algorithms/dr-grpo/",
+      "snippet": "Dr. GRPO (GRPO Done Right) Dr. GRPO is a corrected and improved version of the original GRPO algorithm. Overview GRPO Done Right (Dr. GRPO) addresses optimization biases identified in the original GRPO implementation, providing more accurate and stable training. Key Features Bias correction: Fixes optimization biases in original GRPO Improved stability: More reliable convergence Enhanced ..."
+    }
+  ]
+}

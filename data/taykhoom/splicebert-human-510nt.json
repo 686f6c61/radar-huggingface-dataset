@@ -5,7 +5,7 @@
   "author": "Taykhoom",
   "url": "https://huggingface.co/Taykhoom/SpliceBERT-human-510nt",
   "created_at": "2026-06-03T23:22:11.000Z",
-  "updated_at": "2026-08-25T04:34:16.000Z",
+  "updated_at": "2026-08-26T17:18:13.000Z",
   "license": "cc-by-4.0",
   "license_family": "oss",
   "pipeline_tag": "fill-mask",

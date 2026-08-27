@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "kamal-018/Maithili_Poem_Generator",
+  "slug": "kamal-018-maithili_poem_generator",
+  "author": "kamal-018",
+  "url": "https://huggingface.co/kamal-018/Maithili_Poem_Generator",
+  "created_at": "2026-08-27T09:35:48.000Z",
+  "updated_at": "2026-08-27T10:35:03.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "mai"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "pytorch",
+    "causal-lm",
+    "maithili",
+    "mai",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 29323776,
+  "parameters_human": "29.3M",
+  "storage_bytes": 352333134,
+  "storage_human": "352 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - Kamal-018/Maithili_Poem_Generator",
+      "url": "https://github.com/Kamal-018/Maithili_Poem_Generator",
+      "snippet": "Contribute to Kamal-018/Maithili_Poem_Generator development by creating an account on GitHub."
+    },
+    {
+      "title": "kamal-018/Maithili_Poems · Datasets at Hugging Face",
+      "url": "https://huggingface.co/datasets/kamal-018/Maithili_Poems",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "kamal-018/Maithili_Poems at main - Hugging Face",
+      "url": "https://huggingface.co/datasets/kamal-018/Maithili_Poems/tree/main",
+      "snippet": "Datasets: kamal-018 / Maithili_Poems like 0 Tasks: Text Generation Fill-Mask Modalities: Image Text Formats: text Languages: Maithili Size: 10K - 100K Tags: maithili poetry nlp low-resource Libraries: Datasets Croissant License: apache-2.0 Dataset card Data Studio FilesFiles and versions xet Community"
+    },
+    {
+      "title": "GitHub - Piyushosti/maithali-poem",
+      "url": "https://github.com/Piyushosti/maithali-poem",
+      "snippet": "A full-stack AI-powered application that generates poetry in the Maithili language. The project uses a dual-model approach, combining a custom-trained transformer and a fine-tuned Gemma 2B model to create culturally rich and contextually relevant poems."
+    },
+    {
+      "title": "Free AI Poem Generator - Create a Poem Instantly",
+      "url": "https://poemanalysis.com/poem-generator/",
+      "snippet": "With our AI Poem Generator, craft personalized and creative poems effortlessly, adding various themes, tones, languages, and more."
+    }
+  ]
+}

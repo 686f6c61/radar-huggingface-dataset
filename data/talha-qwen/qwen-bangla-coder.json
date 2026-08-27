@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "talha-qwen/qwen-bangla-coder",
+  "slug": "talha-qwen-qwen-bangla-coder",
+  "author": "talha-qwen",
+  "url": "https://huggingface.co/talha-qwen/qwen-bangla-coder",
+  "created_at": "2026-08-27T11:06:47.000Z",
+  "updated_at": "2026-08-27T11:07:07.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "text-generation-inference",
+    "unsloth",
+    "qwen2",
+    "trl",
+    "en",
+    "base_model:unsloth/Qwen2.5-Coder-3B-Instruct-bnb-4bit",
+    "base_model:finetune:unsloth/Qwen2.5-Coder-3B-Instruct-bnb-4bit",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 131223884,
+  "storage_human": "131 MB",
+  "base_model": "unsloth/Qwen2.5-Coder-3B-Instruct-bnb-4bit",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Qwen Coder",
+      "url": "https://coder.qwen.ai/",
+      "snippet": "Qwen Coder is a coding agent that runs in a secure cloud sandbox to write features, fix bugs, and generate pull requests, empowering humans to quickly build exciting things in the digital world."
+    },
+    {
+      "title": "BanglaLLM/Bangla-s1k-qwen-2.5-3B-Instruct · Hugging Face",
+      "url": "https://huggingface.co/BanglaLLM/Bangla-s1k-qwen-2.5-3B-Instruct",
+      "snippet": "Model Card for s1-20250308_174202 This model is a fine-tuned version of Qwen/Qwen2.5-3B-Instruct on the BanglaLLM/s1k-Bangla-qwen dataset. It has been trained using TRL. Quick start ... Training procedure This model was trained with SFT. Framework versions TRL: 0.12.0 Transformers: 4.46.1 Pytorch: 2.5.1 Datasets: 3.1.0 Tokenizers: 0.20.3 ..."
+    },
+    {
+      "title": "Qwen (Qwen) - Hugging Face",
+      "url": "https://huggingface.co/Qwen",
+      "snippet": "Org profile for Qwen on Hugging Face, the AI community building the future."
+    },
+    {
+      "title": "Qwen",
+      "url": "https://qwen.ai/home",
+      "snippet": "Qwen Studio is an AI assistant for everyone, powered by the Qwen series models. It&#x27;s free to use, open to all, and ready to help with creativity, collaboration, and endless possibilities."
+    },
+    {
+      "title": "Qwen",
+      "url": "https://qwen.ai/qwencode",
+      "snippet": "Qwen Code is an open-source AI agent for the terminal, optimized for Qwen series models. It helps you understand large codebases, automate tedious work, and ship faster."
+    }
+  ]
+}

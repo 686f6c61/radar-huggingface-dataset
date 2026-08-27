@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "J-Fraudster/Qwen3.5-0.8B-W4A16-AutoRound-GPTQ",
+  "slug": "j-fraudster-qwen3-5-0-8b-w4a16-autoround-gptq",
+  "author": "J-Fraudster",
+  "url": "https://huggingface.co/J-Fraudster/Qwen3.5-0.8B-W4A16-AutoRound-GPTQ",
+  "created_at": "2026-08-27T07:40:43.000Z",
+  "updated_at": "2026-08-27T08:14:26.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "qwen3_5",
+    "quantization",
+    "auto-round",
+    "gptq",
+    "vlm",
+    "4bit",
+    "text-generation",
+    "image-text-to-text",
+    "conversational",
+    "base_model:Qwen/Qwen3.5-0.8B",
+    "base_model:quantized:Qwen/Qwen3.5-0.8B",
+    "license:apache-2.0",
+    "4-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 852985920,
+  "parameters_human": "853.0M",
+  "storage_bytes": 1100064077,
+  "storage_human": "1.1 GB",
+  "base_model": "Qwen/Qwen3.5-0.8B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Qwen3.5-0.8B-W4A16-AutoRound-GPTQ - Hugging Face",
+      "url": "https://huggingface.co/Vishva007/Qwen3.5-0.8B-W4A16-AutoRound-GPTQ",
+      "snippet": "This is a W4A16 (4-bit weight, 16-bit activation) GPTQ-format quantized version of Qwen/Qwen3.5-.8B, produced using AutoRound — Intel&#x27;s sign gradient descent based quantization method designed for production-grade accuracy retention."
+    },
+    {
+      "title": "quantization_config.json · Vishva007/Qwen3.5-0.8B-W4A16-AutoRound-GPTQ ...",
+      "url": "https://huggingface.co/Vishva007/Qwen3.5-0.8B-W4A16-AutoRound-GPTQ/blob/main/quantization_config.json",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Qwen3.5 Quantization: Similar Accuracy, More Thinking — Best Models and ...",
+      "url": "https://kaitchup.substack.com/p/qwen35-quantization-similar-accuracy",
+      "snippet": "Qwen3.5 offers an excellent family of models across a wide range of sizes, from 0.8B to 397B parameters. In practice, this means there is nearly a model for every budget. Given such a broad lineup that can fit almost any hardware configuration, the value of model compression through quantization may seem questionable."
+    },
+    {
+      "title": "GitHub - QwenLM/Qwen3: Qwen3 is the large language model series ...",
+      "url": "https://github.com/QwenLM/Qwen3",
+      "snippet": "Qwen3-Instruct-2507 is the updated version of the previous Qwen3 non-thinking mode, featuring the following key enhancements: Significant improvements in general capabilities, including instruction following, logical reasoning, text comprehension, mathematics, science, coding and tool usage."
+    },
+    {
+      "title": "Qwen3.5 & Qwen3.6 Usage Guide - vLLM Recipes",
+      "url": "https://docs.vllm.ai/projects/recipes/en/stable/Qwen/Qwen3.5.html",
+      "snippet": "Qwen3.5 & Qwen3.6 Usage Guide Qwen3.5 and Qwen3.6 are multimodal mixture-of-experts models featuring a gated delta networks architecture. This guide covers how to efficiently deploy and serve both models using vLLM."
+    }
+  ]
+}

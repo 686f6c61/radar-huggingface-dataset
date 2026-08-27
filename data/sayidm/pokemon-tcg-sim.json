@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "sayidm/pokemon-tcg-sim",
+  "slug": "sayidm-pokemon-tcg-sim",
+  "author": "sayidm",
+  "url": "https://huggingface.co/sayidm/pokemon-tcg-sim",
+  "created_at": "2026-08-27T07:44:21.000Z",
+  "updated_at": "2026-08-27T07:44:21.000Z",
+  "license": "cc-by-2.0",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:cc-by-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - chrispoq/pokemontcgp-ai: Training ground for a Pokemon TCG ...",
+      "url": "https://github.com/chrispoq/pokemontcgp-ai",
+      "snippet": "Training ground for a Pokemon TCG Pocket AI. Contribute to chrispoq/pokemontcgp-ai development by creating an account on GitHub."
+    },
+    {
+      "title": "closedFist783/pokemon-tcg-sim - GitHub",
+      "url": "https://github.com/closedFist783/pokemon-tcg-sim",
+      "snippet": "Pokémon TCG Simulator A Pokémon Trading Card Game simulator powered by Claude AI, featuring chess.com-style post-game analysis."
+    },
+    {
+      "title": "The Pokémon Company - PTCG AI Battle Challenge Simulation",
+      "url": "https://www.kaggle.com/competitions/pokemon-tcg-ai-battle/overview",
+      "snippet": "The Pokémon Company - PTCG AI Battle Challenge Simulation Build an AI Training Agent to play the Pokémon Trading Card Game Overview Data Code Models Discussion Leaderboard Rules"
+    },
+    {
+      "title": "GitHub - AngelFireLA/PokemonTCGP-BattleSimulator: Python-based Pokémon ...",
+      "url": "https://github.com/AngelFireLA/PokemonTCGP-BattleSimulator",
+      "snippet": "PokemonTCGP-BattleSimulator A Python-based Pokémon TCG Pocket Battle Simulator designed for running automated battle simulations. This tool is ideal for developing and testing AI/bot strategies, analyzing deck performance, and exploring game mechanics with cards from the original TCG extension and promo sets."
+    },
+    {
+      "title": "GitHub - keeshii/ryuu-play: Simulator for the Pokémon Trading Card Game",
+      "url": "https://github.com/keeshii/ryuu-play",
+      "snippet": "RyuuPlay is a simulator for the Pokémon Trading Card Game written in TypeScript. The source code is entirely open source and published under MIT licence. The project is created for the educational purpose only. There is no plans to port all possible cards or provide new features. Think of it as a platform for testing various approaches for AI bots implementaion. RyuuPlay is triggering random ..."
+    }
+  ]
+}

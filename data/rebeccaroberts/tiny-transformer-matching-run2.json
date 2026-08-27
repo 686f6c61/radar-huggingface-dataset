@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "rebeccaroberts/tiny-transformer-matching-run2",
+  "slug": "rebeccaroberts-tiny-transformer-matching-run2",
+  "author": "rebeccaroberts",
+  "url": "https://huggingface.co/rebeccaroberts/tiny-transformer-matching-run2",
+  "created_at": "2026-08-27T11:39:58.000Z",
+  "updated_at": "2026-08-27T11:40:07.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "tiny_transformer",
+    "pytorch",
+    "tiny-transformer",
+    "matching",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 33088,
+  "parameters_human": "33088",
+  "storage_bytes": 132832,
+  "storage_human": "132832 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "rebeccaroberts (R. Roberts) - Hugging Face",
+      "url": "https://huggingface.co/rebeccaroberts/models",
+      "snippet": "AI & ML interests ... Recent Activity updated a dataset about 8 hours ago ... published a dataset about 8 hours ago"
+    },
+    {
+      "title": "Building a Tiny Transformer From Scratch in PyTorch",
+      "url": "https://buildml.substack.com/p/building-a-tiny-transformer-from",
+      "snippet": "If you&#x27;ve ever felt that Transformers are a \"black box,\" today&#x27;s post is for you. Instead of just downloading a pretrained model, we&#x27;re going to build a tiny GPT-style transformer from scratch — small enough to run on your laptop, but powerful enough to generate Shakespeare-like text. By the end, you&#x27;ll not only have a working model, but also a clear understanding of how the ..."
+    },
+    {
+      "title": "rebeccaroberts (R. Roberts) - Hugging Face",
+      "url": "https://huggingface.co/rebeccaroberts/datasets",
+      "snippet": "MS in Data Science, class of 2025 AI & ML interests MS in Data Science, class of 2025"
+    },
+    {
+      "title": "Tiny-Transformer/README.md at main - GitHub",
+      "url": "https://github.com/MA-Hannan426/Tiny-Transformer/blob/main/README.md",
+      "snippet": "The project recreates the core architecture and training workflow behind modern autoregressive language models without relying on high-level Transformer model implementations."
+    },
+    {
+      "title": "GitHub - avvorstenbosch/tinyTransformer: This repository is me learning ...",
+      "url": "https://github.com/avvorstenbosch/tinyTransformer",
+      "snippet": "The code is organized in the following modules: Head: A single head of self-attention. MultiHead: Multiple heads of self-attention. FeedForward: A straightforward fully connected layer. MultiHeadAttentionBlock: A block of attention followed by computation. tinyTransformer: The main model class implementing the transformer architecture."
+    }
+  ]
+}

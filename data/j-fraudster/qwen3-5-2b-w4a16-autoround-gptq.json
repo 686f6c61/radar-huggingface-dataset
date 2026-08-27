@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "J-Fraudster/Qwen3.5-2B-W4A16-AutoRound-GPTQ",
+  "slug": "j-fraudster-qwen3-5-2b-w4a16-autoround-gptq",
+  "author": "J-Fraudster",
+  "url": "https://huggingface.co/J-Fraudster/Qwen3.5-2B-W4A16-AutoRound-GPTQ",
+  "created_at": "2026-08-27T07:40:00.000Z",
+  "updated_at": "2026-08-27T08:10:19.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "qwen3_5",
+    "quantization",
+    "auto-round",
+    "gptq",
+    "vlm",
+    "4bit",
+    "text-generation",
+    "image-text-to-text",
+    "conversational",
+    "base_model:Qwen/Qwen3.5-2B",
+    "base_model:quantized:Qwen/Qwen3.5-2B",
+    "license:apache-2.0",
+    "4-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 2213241664,
+  "parameters_human": "2.21B",
+  "storage_bytes": 2619729829,
+  "storage_human": "2.6 GB",
+  "base_model": "Qwen/Qwen3.5-2B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - ABDtmx/Qwen3.5: Qwen3.5 is the large language model series ...",
+      "url": "https://github.com/ABDtmx/Qwen3.5",
+      "snippet": "Qwen3.5 features the following enhancement: Unified Vision-Language Foundation: Early fusion training on trillions of multimodal tokens achieves cross-generational parity with Qwen3 and outperforms Qwen3-VL models across reasoning, coding, agents, and visual understanding benchmarks."
+    },
+    {
+      "title": "Qwen3.5-9B-W4A16-AutoRound-GPTQ - Hugging Face",
+      "url": "https://huggingface.co/Vishva007/Qwen3.5-9B-W4A16-AutoRound-GPTQ",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Quantized Models for Qwen/Qwen3.5-9B - Hugging Face",
+      "url": "https://huggingface.co/models?other=base_model:quantized:Qwen/Qwen3.5-9B",
+      "snippet": "Active filters: Qwen/Qwen3.5-9B. Clear all. HauhauCS/Qwen3.5-9B-Uncensored-HauhauCS-Aggressive. 9B • Updated Jun 5 • 593k • 1.91k"
+    },
+    {
+      "title": "Qwen3.5 & Qwen3.6 Usage Guide - vLLM Recipes",
+      "url": "https://docs.vllm.ai/projects/recipes/en/stable/Qwen/Qwen3.5.html",
+      "snippet": "Qwen3.5 & Qwen3.6 Usage Guide Qwen3.5 and Qwen3.6 are multimodal mixture-of-experts models featuring a gated delta networks architecture. This guide covers how to efficiently deploy and serve both models using vLLM."
+    },
+    {
+      "title": "Qwen3.5 - LLM Compressor Docs",
+      "url": "https://docs.vllm.ai/projects/llm-compressor/en/latest/key-models/qwen3.5/",
+      "snippet": "Documentation for LLM Compressor, an easy-to-use library for compressing large language models for deployment with vLLM."
+    }
+  ]
+}

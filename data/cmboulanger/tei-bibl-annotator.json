@@ -1,0 +1,79 @@
+{
+  "schema": 1,
+  "id": "cmboulanger/tei-bibl-annotator",
+  "slug": "cmboulanger-tei-bibl-annotator",
+  "author": "cmboulanger",
+  "url": "https://huggingface.co/cmboulanger/tei-bibl-annotator",
+  "created_at": "2026-08-27T07:47:09.000Z",
+  "updated_at": "2026-08-27T07:59:59.000Z",
+  "license": "qwen-research",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "de",
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen2",
+    "text-generation",
+    "tei",
+    "citation-extraction",
+    "information-extraction",
+    "lora",
+    "conversational",
+    "de",
+    "en",
+    "base_model:Qwen/Qwen2.5-3B-Instruct",
+    "base_model:finetune:Qwen/Qwen2.5-3B-Instruct",
+    "license:other",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 3085938688,
+  "parameters_human": "3.09B",
+  "storage_bytes": 6183349004,
+  "storage_human": "6.2 GB",
+  "base_model": "Qwen/Qwen2.5-3B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Filestage: Proofing-Plattform - Filestage - Official Site",
+      "url": "https://duckduckgo.com/y.js?ad_domain=filestage.io&ad_provider=bingv7aa&ad_type=txad&click_metadata=Xk6gbpfZ_uk2deHRMMEmSckca0tdrRrvbVdxcfnOVxmV0v_6TuZiKCFnYrrAPeOtKWQ8pmSU7bxlLX0opbKeOrjMDBb_pxUFvodxdSgAW5OtFUJPAXHBBBvWf09mNZdHN6W%2D3V8OtvhqNW2Ncdg_8fkqGKsOMujPm5TWEyflWww.3y2nWwmkYYhR_0kWxGU7rg&rut=625d3bc9394a41546916d019e3f00cf4c61df2fa0abe1c5aaa59d519996a7a4f&u3=https%3A%2F%2Fwww.bing.com%2Faclick%3Fld%3De8j6uJlPwYc4gJK7WUPlvRdDVUCUyuXeT9X6fvUIIexupqHbOWmUkrCdFCQB9LCOEiW91afBM7BrQsaBRmWwARpbF_6Ki6xkoICOMA3F4dY5U8HpabgISJv3M9z2CftsYOeV6NEo05zcR3EVqwIJpPdpGwSawXO4XDeoKHGV5xqxnK3Y2MZu6q%2DZ9f3e2i4BQYnks7dROa_2Amy5tr291Fk15HV0E%26u%3DaHR0cHMlM2ElMmYlMmZmaWxlc3RhZ2UuaW8lM2Z1dG1fY2FtcGFpZ24lM2QyMDI0JTI1MjBIaWdoLUludGVudCUyNTIwVE9QJTI2dXRtX3NvdXJjZSUzZGJpbmctcyUyNnV0bV9tZWRpdW0lM2RjcGMlMjZ1dG1fY29udGVudCUzZERvY3VtZW50JTI1MjBSZXZpZXclMjUyMFNvZnR3YXJlJTI2dXRtX3Rlcm0lM2Rkb2N1bWVudCUyNTIwYW5ub3RhdGlvbiUyNTIwc29mdHdhcmUlMjZhZF9pZCUzZDcxMTkzNjYxMzgwMjM4JTI2dXRtX3Rlcm0lM2Rkb2N1bWVudCUyNTIwYW5ub3RhdGlvbiUyNTIwc29mdHdhcmUlMjZ1dG1fY2FtcGFpZ24lM2QyMDI0JTJiSGlnaC1JbnRlbnQlMjZ1dG1fc291cmNlJTNkYmluZyUyNnV0bV9tZWRpdW0lM2RwcGMlMjZoc2FfYWNjJTNkMzc3OTU5ODQxMyUyNmhzYV9jYW0lM2QyMTg2NDU0NTY2MCUyNmhzYV9ncnAlM2QxMTM5MDk1ODkzMDA1MDEwJTI2aHNhX2FkJTNkJTI2aHNhX3NyYyUzZHMlMjZoc2FfdGd0JTNka3dkLTcxMTk0MjIzMTg1NDgxJTNhbG9jLTY2JTI2aHNhX2t3JTNkZG9jdW1lbnQlMjUyMGFubm90YXRpb24lMjUyMHNvZnR3YXJlJTI2aHNhX210JTNkcCUyNmhzYV9uZXQlM2RhZHdvcmRzJTI2aHNhX3ZlciUzZDMlMjZtc2Nsa2lkJTNkZDFkZjFjZjM2NWNmMTZmMTQzMjc3NjdjOTQxYjAyYTclMjZ1dG1fY29udGVudCUzZERvY3VtZW50JTI1MjBSZXZpZXclMjUyMFNvZnR3YXJl%26rlid%3Dd1df1cf365cf16f14327767c941b02a7&vqd=4-153373737492740027826125346543109574585&iurl=%7B1%7DIG%3D68A44502622E488E94B8846E34679001%26CID%3D21EA19F5CE7E6CB101010E37CF706DC7%26ID%3DDevEx%2C5037.1",
+      "snippet": "Document Approval Software For Keeping All Feedback And Approvals Into One Dashboard. Get clear and collaborative feedback in context at every stage of your approval process."
+    },
+    {
+      "title": "cmboulanger/tei-annotator at main - Hugging Face",
+      "url": "https://huggingface.co/spaces/cmboulanger/tei-annotator/tree/main",
+      "snippet": "main tei-annotator 1.25 MB 2 contributors History:47 commits cmboulanger fix: sync batch size with sample size in gradio app 1659d98 about 18 hours ago .claudefeat: Add batch size configuration in api and frontendsabout 18 hours ago docsfeat: Add batch size configuration in api and frontendsabout 18 hours ago schemaAdd evaluation12 days ago"
+    },
+    {
+      "title": "GitHub - cboulanger/tei-annotator: Python library for annotating text ...",
+      "url": "https://github.com/cboulanger/tei-annotator",
+      "snippet": "A Python library for annotating text with TEI XML tags using a two-stage LLM pipeline. The pipeline: (Optional) GLiNER pre-detection — fast CPU-based span labelling generates candidates for the LLM to verify and extend. LLM annotation — a prompted language model identifies entities, returns structured spans (element + verbatim text + surrounding context + attributes). Deterministic post ..."
+    },
+    {
+      "title": "tei-annotator/tei_annotator/models at main · cboulanger/tei ... - GitHub",
+      "url": "https://github.com/cboulanger/tei-annotator/tree/main/tei_annotator/models",
+      "snippet": "Python library for annotating text with TEI XML tags using a two-stage LLM + GLiNER pipeline - cboulanger/tei-annotator"
+    },
+    {
+      "title": "Tei Annotator - a Hugging Face Space by cmboulanger",
+      "url": "https://huggingface.co/spaces/cmboulanger/tei-annotator",
+      "snippet": "This app lets you paste a bibliographic reference, choose a language model, and receive the same reference marked up with TEI XML tags (author, title, etc.). You can also load sample references and..."
+    }
+  ]
+}

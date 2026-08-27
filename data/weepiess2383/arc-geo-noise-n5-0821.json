@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "weepiess2383/arc-geo-noise-n5-0821",
+  "slug": "weepiess2383-arc-geo-noise-n5-0821",
+  "author": "weepiess2383",
+  "url": "https://huggingface.co/weepiess2383/arc-geo-noise-n5-0821",
+  "created_at": "2026-08-27T06:13:18.000Z",
+  "updated_at": "2026-08-27T06:30:56.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 98871504272,
+  "storage_human": "98.9 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "weepiess2383 (weichenfan) - Hugging Face",
+      "url": "https://huggingface.co/weepiess2383/spaces",
+      "snippet": "weepiess2383 Follow tintwotin&#x27;s profile picturepwndayma&#x27;s profile picturedark-pen&#x27;s profile picture 8 followers · 4 following"
+    },
+    {
+      "title": "weepiess2383/arc-layermap-ft · Hugging Face",
+      "url": "https://huggingface.co/weepiess2383/arc-layermap-ft",
+      "snippet": "arc-layermap-ft Archived EMA-only weights for the layer-map LIBERO finetunes (m323 protocol): the full-layer full-FT arm, the first-28 full-FT arm, and the first-28 frozen arm. Full checkpoint directories (32-44 GiB/step, optimizer state included) were deleted from the cluster after this upload verified."
+    },
+    {
+      "title": "Arc-Ai-2/arc_geo.py at main · Wall-of-Shames/Arc-Ai-2 · GitHub",
+      "url": "https://github.com/Wall-of-Shames/Arc-Ai-2/blob/main/arc_geo.py",
+      "snippet": "Arc-Ai - This is a layer that I created, which works upon the Arc-Uncensored LLM Model increasing its capabilities. The good point in it is that since I am using this with my own LLM, it can be used with other pre-trained LLMs too. - Arc-Ai-2/arc_geo.py at main · Wall-of-Shames/Arc-Ai-2"
+    },
+    {
+      "title": "weepiess2383/arc-geo-libero-ft · Hugging Face",
+      "url": "https://huggingface.co/weepiess2383/arc-geo-libero-ft",
+      "snippet": "arc-geo-libero-ft Archived EMA-only weights for the two GEO LIBERO co-train finetunes. These are cold-storage archives of runs whose full checkpoint directories (optimizer state included, ~46 GiB/step) were deleted from the cluster after this upload verified."
+    },
+    {
+      "title": "weepiess2383/arc-layermap-flft-0813a · Hugging Face",
+      "url": "https://huggingface.co/weepiess2383/arc-layermap-flft-0813a",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    }
+  ]
+}

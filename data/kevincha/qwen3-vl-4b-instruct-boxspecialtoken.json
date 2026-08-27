@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "KevinCha/Qwen3-VL-4B-Instruct-BoxSpecialToken",
+  "slug": "kevincha-qwen3-vl-4b-instruct-boxspecialtoken",
+  "author": "KevinCha",
+  "url": "https://huggingface.co/KevinCha/Qwen3-VL-4B-Instruct-BoxSpecialToken",
+  "created_at": "2026-08-27T07:29:23.000Z",
+  "updated_at": "2026-08-27T08:16:32.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_vl",
+    "image-text-to-text",
+    "conversational",
+    "arxiv:2505.09388",
+    "arxiv:2502.13923",
+    "arxiv:2409.12191",
+    "arxiv:2308.12966",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 4437815808,
+  "parameters_human": "4.44B",
+  "storage_bytes": 17751438688,
+  "storage_human": "17.8 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Qwen/Qwen3-VL-4B-Instruct · Hugging Face",
+      "url": "https://huggingface.co/Qwen/Qwen3-VL-4B-Instruct",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "README.md · Qwen/Qwen3-VL-4B-Instruct at main - Hugging Face",
+      "url": "https://huggingface.co/Qwen/Qwen3-VL-4B-Instruct/blob/main/README.md",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GitHub - QwenLM/Qwen3-VL: Qwen3-VL is the multimodal large language ...",
+      "url": "https://github.com/QwenLM/Qwen3-VL",
+      "snippet": "Meet Qwen3-VL — the most powerful vision-language model in the Qwen series to date. This generation delivers comprehensive upgrades across the board: superior text understanding & generation, deeper visual perception & reasoning, extended context length, enhanced spatial and video dynamics comprehension, and stronger agent interaction capabilities. Available in Dense and MoE architectures ..."
+    },
+    {
+      "title": "qwen3-vl:4b-instruct - ollama.com",
+      "url": "https://ollama.com/library/qwen3-vl:4b-instruct",
+      "snippet": "Qwen3-VL models require Ollama 0.12.7 Qwen3-VL is the most powerful vision-language model in the Qwen family to date. In this generation, there are improvements to the model in many areas: its understanding and generating text, perceiving and reasoning about visual content, supporting longer context lengths, understanding spatial relationships and dynamic videos, or interacting with AI agents ..."
+    },
+    {
+      "title": "Qwen3-VL-4B-Instruct: Image-to-Text model — overview, use cases ...",
+      "url": "https://www.aimodels.fyi/models/huggingFace/qwen3-vl-4b-instruct-qwen",
+      "snippet": "Overview Qwen3-VL-4B-Instruct is a 4-billion-parameter vision-language model produced by Qwen that handles image-to-text tasks with seamless multimodal reasoning. The model operates with a native 256K token context window expandable to 1M, processes images and video at full resolution, and includes three key architectural innovations: Interleaved-MRoPE for long-horizon video reasoning over ..."
+    }
+  ]
+}

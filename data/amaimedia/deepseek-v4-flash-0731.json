@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "AMAImedia/DeepSeek-V4-Flash-0731",
+  "slug": "amaimedia-deepseek-v4-flash-0731",
+  "author": "AMAImedia",
+  "url": "https://huggingface.co/AMAImedia/DeepSeek-V4-Flash-0731",
+  "created_at": "2026-08-27T06:25:12.000Z",
+  "updated_at": "2026-08-27T06:31:34.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "deepseek_v4",
+    "text-generation",
+    "arxiv:2606.19348",
+    "license:mit",
+    "endpoints_compatible",
+    "8-bit",
+    "fp8",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 304180418494,
+  "parameters_human": "304.18B",
+  "storage_bytes": 166888735421,
+  "storage_human": "166.9 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "deepseek-ai / deepseek-v4-flash-0731 - docs.api.nvidia.com",
+      "url": "https://docs.api.nvidia.com/nim/reference/deepseek-ai-deepseek-v4-flash-0731",
+      "snippet": "DeepSeek-V4-Flash-0731 is a 304B-parameter sparse Mixture-of-Experts language model for text generation, coding, reasoning, long-context, and agentic workflows. It supports a one-million-token context and includes an attached speculative decoding module. This model is ready for commercial or non-commercial use."
+    },
+    {
+      "title": "DeepSeek V4 Flash 0731 scores 50 on the Artificial Analysis ...",
+      "url": "https://artificialanalysis.ai/articles/deepseek-v4-flash-0731-scores-50-on-the-artificial-analysis-intelligence-index-10-points-above-previous-deepseek-v4-flash",
+      "snippet": "DeepSeek V4 Flash 0731 scores 1559 Elo on GDPval-AA v2, our evaluation for agentic real-world work tasks, up from 1189 for the previous DeepSeek V4 Flash DeepSeek V4 Flash 0731 scores -16 on the AA-Omniscience Index, a 7 point improvement over DeepSeek V4 Flash (-23), driven entirely by a lower hallucination rate."
+    },
+    {
+      "title": "deepseek-v4-flash-0731 Model by Deepseek-ai | NVIDIA NIM",
+      "url": "https://build.nvidia.com/deepseek-ai/deepseek-v4-flash-0731/modelcard",
+      "snippet": "DeepSeek-V4-Flash-0731 is a 304B-parameter sparse Mixture-of-Experts language model for text generation, coding, reasoning, long-context, and agentic workflows."
+    },
+    {
+      "title": "DeepSeek-V4-Flash-0731 · Models - modelscope.ai",
+      "url": "https://modelscope.ai/models/deepseek-ai/DeepSeek-V4-Flash-0731",
+      "snippet": "DeepSeek-V4-Flash-0731 Technical Report 👁️ Introduction DeepSeek-V4-Flash-0731 is the official release of DeepSeek-V4-Flash, superseding the preview version, with substantially enhanced agentic capabilities. It has the same model structure as DeepSeek-V4-Flash-DSpark, i.e. it comes with a speculative decoding module attached."
+    },
+    {
+      "title": "DeepSeek V4 Flash 0731 API - Documentation - DeepInfra",
+      "url": "https://deepinfra.com/deepseek-ai/DeepSeek-V4-Flash-0731/api",
+      "snippet": "DeepSeek-V4-Flash-0731 is the official release of DeepSeek-V4-Flash, superseding the preview version, with substantially enhanced agentic capabilities. DeepSeek-V4-Flash-0731 outperforms DeepSeek-V4-Pro (Preview) on benchmarks listed below despite its far smaller activated parameter count, and is broadly competitive with the strongest proprietary models available.. Full API Reference"
+    }
+  ]
+}

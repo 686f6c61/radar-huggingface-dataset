@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "alirezaaminzadeh/hse-multimodal-rag-retriever",
+  "slug": "alirezaaminzadeh-hse-multimodal-rag-retriever",
+  "author": "alirezaaminzadeh",
+  "url": "https://huggingface.co/alirezaaminzadeh/hse-multimodal-rag-retriever",
+  "created_at": "2026-08-27T11:27:23.000Z",
+  "updated_at": "2026-08-27T11:29:42.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "scikit-learn",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "scikit-learn",
+    "joblib",
+    "retrieval",
+    "rag",
+    "bm25",
+    "tf-idf",
+    "en",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 144959,
+  "storage_human": "144959 B",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "alirezaaminzadeh (Alireza Aminzadeh) - Hugging Face",
+      "url": "https://huggingface.co/alirezaaminzadeh/models",
+      "snippet": "User profile of Alireza Aminzadeh on Hugging Face"
+    },
+    {
+      "title": "README.md · alirezaaminzadeh/enterprise-rag-studio at main",
+      "url": "https://huggingface.co/spaces/alirezaaminzadeh/enterprise-rag-studio/blob/main/README.md",
+      "snippet": "OrgMind RAG Studio (Static Demo) Interactive sample queries with cited answers from HR, HSE, Procurement, and IT policies."
+    },
+    {
+      "title": "GitHub - alirazaaihub/advanced-multimodal-rag",
+      "url": "https://github.com/alirazaaihub/advanced-multimodal-rag",
+      "snippet": "A production-grade Retrieval-Augmented Generation pipeline that goes beyond basic RAG — handling text, tables, and images from PDFs with advanced retrieval techniques including Hybrid Search, RRF Fusion, Query Expansion, and Cross-Encoder Reranking."
+    },
+    {
+      "title": "Multi-RAG: A Multimodal Retrieval-Augmented Generation System for ...",
+      "url": "https://arxiv.org/pdf/2505.23990",
+      "snippet": "To fill this critical need, we present Multi-RAG, a multimodal retrieval-augmented generation (RAG) system designed to provide adaptive assistance to humans in information-intensive circumstances. Our system aims to improve situational understanding and reduce cognitive load by integrating and reasoning over multi-source information streams, including video, audio, and text. As an enabling ..."
+    },
+    {
+      "title": "RAG and Generative AI - Azure AI Search | Microsoft Learn",
+      "url": "https://learn.microsoft.com/en-us/azure/search/retrieval-augmented-generation-overview",
+      "snippet": "Learn how Azure AI Search supports RAG patterns with agentic retrieval and classic hybrid search to ground LLM responses in your content. Get started today."
+    }
+  ]
+}

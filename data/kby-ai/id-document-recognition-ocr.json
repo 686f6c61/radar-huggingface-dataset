@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "kby-ai/id-document-recognition-ocr",
+  "slug": "kby-ai-id-document-recognition-ocr",
+  "author": "kby-ai",
+  "url": "https://huggingface.co/kby-ai/id-document-recognition-ocr",
+  "created_at": "2026-08-27T01:59:37.000Z",
+  "updated_at": "2026-08-27T02:00:30.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - kby-ai/IDCard-Recognition-SDK: Intelligent ID OCR, Global ID ...",
+      "url": "https://github.com/kby-ai/IDCard-Recognition-SDK",
+      "snippet": "At the core of this project lies the ID Card Recognition SDK, which has been developed to provide comprehensive support for recognizing ID cards, passports, and driver&#x27;s licenses from 200+ countries."
+    },
+    {
+      "title": "GitHub - kby-ai/IDCardRecognition-Android: ID Card Recognition ...",
+      "url": "https://github.com/kby-ai/IDCardRecognition-Android",
+      "snippet": "This repository demonstrates ID document recognition, ID card recognition, ID card scanner and reader ID document scanner and reader, ID Card OCR, passport reader and passport recognition technology developed by KBY-AI. In this repository, we integrated KBY-AI &#x27;s ID document OCR solution into Android native platform."
+    },
+    {
+      "title": "ID Document Recognition SDK - KBY-AI",
+      "url": "https://kby-ai.com/id-document-recognition-sdk/",
+      "snippet": "ID document recognition SDK supports recognition of ID cards, passports, and driver&#x27;s licenses from 200+ countries"
+    },
+    {
+      "title": "Home - KBY-AI",
+      "url": "https://kby-ai.com/",
+      "snippet": "KBY-AI provides face recognition(top-ranked by NIST in the FRVT 1:1 leaderboards), face liveness detection ID card recognition, palm recognition and ALPR/ANPR."
+    },
+    {
+      "title": "KBY-AI ID Document Auto Capture Web",
+      "url": "https://cap.kby-ai.com/",
+      "snippet": "Web site created using create-react-app KBY-AI ID Document Auto Capture Web Automatically extract data from ID documents on real-time web camera and mobile camera. Experience it for yourself with just a photo of your identity document."
+    }
+  ]
+}

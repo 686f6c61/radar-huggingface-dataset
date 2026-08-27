@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "jacobdgarcia/course-generation-2023",
+  "slug": "jacobdgarcia-course-generation-2023",
+  "author": "jacobdgarcia",
+  "url": "https://huggingface.co/jacobdgarcia/course-generation-2023",
+  "created_at": "2026-08-27T01:48:59.000Z",
+  "updated_at": "2026-08-27T01:49:09.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "perceiver",
+    "pytorch",
+    "generation",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 24832,
+  "parameters_human": "24832",
+  "storage_bytes": 99808,
+  "storage_human": "99808 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Generative AI with Large Language Models",
+      "url": "https://www.deeplearning.ai/courses/generative-ai-with-llms",
+      "snippet": "Understand the generative AI lifecycle. Describe transformer architecture powering LLMs. Apply training/tuning/inference methods. Hear from researchers on generative AI challenges/opportunities."
+    },
+    {
+      "title": "Generative AI and Model Selection - Coursera",
+      "url": "https://www.coursera.org/learn/generative-ai-and-model-selection/",
+      "snippet": "Offered by Vanderbilt University. Dive into the world of generative AI and learn how to select the right model for your needs in this ... Enroll for free."
+    },
+    {
+      "title": "AI Course Generator",
+      "url": "https://www.coursgen.com/",
+      "snippet": "AI Course Generator Create personalized courses tailored to your needs with AI-powered content generation. Available in 23+ languages with interactive chat, quizzes, and offline access."
+    },
+    {
+      "title": "jacobdgarcia (Jacob) - Hugging Face",
+      "url": "https://huggingface.co/jacobdgarcia",
+      "snippet": "Gardening and gradient descent"
+    },
+    {
+      "title": "Latest AI Model Releases — August 2026",
+      "url": "https://aireleasetracker.com/latest",
+      "snippet": "The newest AI model releases as of August 2026. Most recent: GLM-5.3-Flash by Z.ai on Aug 26 2026. Track every new frontier model from OpenAI, Anthropic, Google DeepMind, Meta, SpaceXAI, DeepSeek, Mistral, and Moonshot AI — updated continuously."
+    }
+  ]
+}

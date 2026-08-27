@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "k-chan-l/pick_and_place2_act",
+  "slug": "k-chan-l-pick_and_place2_act",
+  "author": "k-chan-l",
+  "url": "https://huggingface.co/k-chan-l/pick_and_place2_act",
+  "created_at": "2026-08-27T10:44:54.000Z",
+  "updated_at": "2026-08-27T10:45:42.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "act",
+    "robotics",
+    "dataset:k-chan-l/pick_and_place2",
+    "arxiv:2304.13705",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 51668614,
+  "parameters_human": "51.7M",
+  "storage_bytes": 206714784,
+  "storage_human": "207 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "HankLL/act_pickandplace2 · Hugging Face",
+      "url": "https://huggingface.co/HankLL/act_pickandplace2",
+      "snippet": "Model Card for act Action Chunking with Transformers (ACT) is an imitation-learning method that predicts short action chunks instead of single steps. It learns from teleoperated data and often achieves high success rates. This policy has been trained and pushed to the Hub using LeRobot. See the full documentation at LeRobot Docs."
+    },
+    {
+      "title": "dlcodnjs/act_pick_and_place_v2_90 · Hugging Face",
+      "url": "https://huggingface.co/dlcodnjs/act_pick_and_place_v2_90",
+      "snippet": "dlcodnjs / act_pick_and_place_v2_90 like 0 Safetensors Model card FilesFiles and versions xet Community Copy to bucket new No model card Downloads last month - Safetensors Model size 51.7M params Tensor type F32 · Files info Inference Providers NEW This model isn&#x27;t deployed by any Inference Provider.🙋Ask for provider support"
+    },
+    {
+      "title": "‎Google Gemini",
+      "url": "https://gemini.google.com/",
+      "snippet": "Meet Gemini, Google&#x27;s AI assistant. Get help with writing, planning, brainstorming, and more. Experience the power of generative AI."
+    },
+    {
+      "title": "GitHub - ringostarr/ACT-PickandPlace: ACT implementation for Robotic ...",
+      "url": "https://github.com/ringostarr/ACT-PickandPlace",
+      "snippet": "ACT implementation for Robotic Pick and Place. Contribute to ringostarr/ACT-PickandPlace development by creating an account on GitHub."
+    },
+    {
+      "title": "Free VRChat Avatars, Models & Unity Assets - VRCMods",
+      "url": "https://vrcmods.com/",
+      "snippet": "Explore thousands of free VRChat avatars, 3D models, animations, shaders, and Unity assets shared by the VRCMods community."
+    }
+  ]
+}

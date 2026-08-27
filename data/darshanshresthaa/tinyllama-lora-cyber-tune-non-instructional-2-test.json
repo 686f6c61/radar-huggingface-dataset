@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "Darshanshresthaa/tinyllama-lora-cyber-tune-Non-Instructional-2-test",
+  "slug": "darshanshresthaa-tinyllama-lora-cyber-tune-non-instructional-2-test",
+  "author": "Darshanshresthaa",
+  "url": "https://huggingface.co/Darshanshresthaa/tinyllama-lora-cyber-tune-Non-Instructional-2-test",
+  "created_at": "2026-08-27T06:10:33.000Z",
+  "updated_at": "2026-08-27T06:10:38.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 9022864,
+  "storage_human": "9 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Darshanshresthaa/tinyllama-lora-cyber-tune-Non-Instructional · Hugging Face",
+      "url": "https://huggingface.co/Darshanshresthaa/tinyllama-lora-cyber-tune-Non-Instructional",
+      "snippet": "Darshanshresthaa / tinyllama-lora-cyber-tune-Non-Instructional like 0 Transformers Safetensors arxiv:1910.09700 Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "TinyLlama: An Open-Source Small Language Model - arXiv.org",
+      "url": "https://arxiv.org/html/2401.02385v2",
+      "snippet": "Abstract We present TinyLlama, a compact 1.1B language model pretrained on around 1 trillion tokens for up to 3 epochs 1. Building on the architecture and tokenizer of Llama 2 (Touvron et al., 2023b, ), TinyLlama leverages various advances contributed by the open-source community, e.g., FlashAttention (Dao,, 2023) and Lit-GPT (Lightning-AI,, 2023), achieving better computational efficiency ..."
+    },
+    {
+      "title": "GitHub - mirseo/tinyllama: The TinyLlama project is an open endeavor to ...",
+      "url": "https://github.com/mirseo/tinyllama",
+      "snippet": "The TinyLlama project aims to pretrain a 1.1B Llama model on 3 trillion tokens. With some proper optimization, we can achieve this within a span of \"just\" 90 days using 16 A100-40G GPUs 🚀🚀. The training has started on 2023-09-01."
+    },
+    {
+      "title": "TinyLlama: An Open-Source Small Language Model",
+      "url": "https://scispace.com/papers/tinyllama-an-open-source-small-language-model-579j163reb",
+      "snippet": "Abstract: We present TinyLlama, a compact 1.1B language model pretrained on around 1 trillion tokens for approximately 3 epochs. Building on the architecture and tokenizer of Llama 2, TinyLlama leverages various advances contributed by the open-source community (e.g., FlashAttention), achieving better computational efficiency. Despite its relatively small size, TinyLlama demonstrates ..."
+    },
+    {
+      "title": "[2401.02385] TinyLlama: An Open-Source Small Language Model",
+      "url": "https://ar5iv.labs.arxiv.org/html/2401.02385",
+      "snippet": "Abstract We present TinyLlama, a compact 1.1B language model pretrained on around 1 trillion tokens for approximately 3 epochs. Building on the architecture and tokenizer of Llama 2 (Touvron et al., 2023b, ), TinyLlama leverages various advances contributed by the open-source community (e.g., FlashAttention (Dao,, 2023)), achieving better computational efficiency. Despite its relatively small ..."
+    }
+  ]
+}

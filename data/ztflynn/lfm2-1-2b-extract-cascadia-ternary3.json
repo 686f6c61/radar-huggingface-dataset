@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "ZTFlynn/LFM2-1.2B-Extract-Cascadia-ternary3",
+  "slug": "ztflynn-lfm2-1-2b-extract-cascadia-ternary3",
+  "author": "ZTFlynn",
+  "url": "https://huggingface.co/ZTFlynn/LFM2-1.2B-Extract-Cascadia-ternary3",
+  "created_at": "2026-08-27T05:57:49.000Z",
+  "updated_at": "2026-08-27T05:58:11.000Z",
+  "license": "lfm-open-license",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "cascadia",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "cascadia",
+    "lut",
+    "compression",
+    "spline",
+    "ternary",
+    "quantization",
+    "cpu",
+    "edge",
+    "lfm2",
+    "text-generation",
+    "en",
+    "base_model:LiquidAI/LFM2-1.2B-Extract",
+    "base_model:quantized:LiquidAI/LFM2-1.2B-Extract",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 746897660,
+  "storage_human": "747 MB",
+  "base_model": "LiquidAI/LFM2-1.2B-Extract",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "LFM2-1.2B-Extract - Liquid Docs",
+      "url": "https://docs.liquid.ai/lfm/models/lfm2-1.2b-extract",
+      "snippet": "LFM2-1.2B-Extract is optimized for extracting structured data (JSON, XML, YAML) from unstructured documents. It handles complex nested schemas and multi-field extraction with high accuracy."
+    },
+    {
+      "title": "LiquidAI/LFM2-1.2B · Hugging Face",
+      "url": "https://huggingface.co/LiquidAI/LFM2-1.2B",
+      "snippet": "A newer version of this model is available: LiquidAI/LFM2.5-1.2B-Instruct"
+    },
+    {
+      "title": "README.md · LiquidAI/LFM2-1.2B-Extract at main - Hugging Face",
+      "url": "https://huggingface.co/LiquidAI/LFM2-1.2B-Extract/blob/main/README.md",
+      "snippet": "LiquidAI / LFM2-1.2B-Extract like 122 Follow Liquid AI 4.71k Text Generation Transformers Safetensors 8 languages lfm2 liquid edge conversational arxiv:2511.23404 License:lfm1.0 Model card FilesFiles and versions xet Community 1 Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "LFM2 1.2B Extract - slm.expert",
+      "url": "https://slm.expert/models/lfm2-1-2b-extract/",
+      "snippet": "Task-specific 1.2B text model from Liquid AI that extracts structured JSON, XML, or YAML from unstructured documents in nine languages, matching or beating far larger generalists like Gemma 3 27B on extraction quality."
+    },
+    {
+      "title": "LFM2 Technical Report - arXiv.org",
+      "url": "https://arxiv.org/pdf/2511.23404",
+      "snippet": "At the 1B scale, LFM2-1.2B improves over Granite-4.0-1B and Qwen3-1.7B by 2.3-2.8× on prefill and 1.7-2.2× on decode across both context lengths. Gemma-3-1B is the strongest 1B-class baseline in terms of raw throughput; however, LFM2-1.2B attains 0.75 − 0.9× of its prefill throughput, while offering slightly higher 1K decode throughput ..."
+    }
+  ]
+}

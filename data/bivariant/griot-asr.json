@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "bivariant/griot-asr",
+  "slug": "bivariant-griot-asr",
+  "author": "bivariant",
+  "url": "https://huggingface.co/bivariant/griot-asr",
+  "created_at": "2026-08-27T07:45:13.000Z",
+  "updated_at": "2026-08-27T07:45:13.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "bivariant (Bivariant) - Hugging Face",
+      "url": "https://huggingface.co/bivariant/models",
+      "snippet": "Org profile for Bivariant on Hugging Face, the AI community building the future."
+    },
+    {
+      "title": "GitHub - zai-org/GLM-ASR: GLM-ASR-Nano: A robust, open-source speech ...",
+      "url": "https://github.com/zai-org/GLM-ASR/",
+      "snippet": "GLM-ASR-Nano-2512 is a robust, open-source speech recognition model with 1.5B parameters. Designed for real-world complexity, it outperforms OpenAI Whisper V3 on multiple benchmarks while maintaining a compact size."
+    },
+    {
+      "title": "What Is IBM Granite Speech 4.1? Three ASR Models and When to Use Each",
+      "url": "https://www.mindstudio.ai/blog/ibm-granite-speech-4-1-asr-models-explained",
+      "snippet": "IBM Granite Speech 4.1 offers three ASR models: a base model, a Plus model with diarization, and a non-auto-regressive model for ultra-fast bulk transcription."
+    },
+    {
+      "title": "Bivariant",
+      "url": "https://www.bivariant.com/",
+      "snippet": "Bivariant Forge is an AI model deployment and management platform that lets you deploy large language models (LLMs) on your own infrastructure. It also enables you to fine-tune AI models to your specific needs and leverage different AI providers, including OpenAI, Microsoft Azure AI, Hugging Face, and Anthropic. With Bivariant Forge, you can apply a wide range of model capabilities, including ..."
+    },
+    {
+      "title": "GLM-ASR-Nano-2512: The Complete 2025 Guide to Z.AI&#x27;s Open-Source Speech ...",
+      "url": "https://dev.to/czmilo/glm-asr-nano-2512-the-complete-2025-guide-to-zais-open-source-speech-recognition-model-25b1",
+      "snippet": "GLM-ASR-Nano-2512 is Z.AI&#x27;s next-generation Automatic Speech Recognition (ASR) model released in December 2025. Despite its compact 1.5 billion parameters, this open-source model challenges the conventional wisdom that \"bigger models always win\" in speech recognition."
+    }
+  ]
+}

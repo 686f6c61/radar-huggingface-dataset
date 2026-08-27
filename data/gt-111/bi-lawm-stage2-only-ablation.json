@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "GT-111/bi-lawm-stage2-only-ablation",
+  "slug": "gt-111-bi-lawm-stage2-only-ablation",
+  "author": "GT-111",
+  "url": "https://huggingface.co/GT-111/bi-lawm-stage2-only-ablation",
+  "created_at": "2026-08-27T09:42:37.000Z",
+  "updated_at": "2026-08-27T09:54:15.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "robotics",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "robotics",
+    "vision-language-action",
+    "checkpoint",
+    "fsdp",
+    "bilawm",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 112015905446,
+  "storage_human": "112.0 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Z.ai shares surge 8% on new AI model running only on Chinese chips - CNBC",
+      "url": "https://www.cnbc.com/2026/08/27/zai-shares-surge-new-ai-model-using-chinese-chips.html",
+      "snippet": "Z.ai&#x27;s shares rose after the company launched a new AI model that it claimed runs only on Chinese chips. It&#x27;s the latest indication of China&#x27;s efforts to ramp up homegrown computing capability ..."
+    },
+    {
+      "title": "AI Leaderboard 2026: Compare & Rank 300+ Top AI Models by Intelligence ...",
+      "url": "https://llm-stats.com/",
+      "snippet": "The AI Leaderboard — independent rankings of GPT, Claude, Gemini, Llama, DeepSeek and 300+ AI models by intelligence, speed and price. Composite LLM Stats Score updated continuously from public benchmarks and live API metrics."
+    },
+    {
+      "title": "Heretic: Fully automatic censorship removal for language models",
+      "url": "https://github.com/p-e-w/heretic",
+      "snippet": "Heretic is a tool that removes censorship (aka \"safety alignment\") from transformer-based language models without expensive post-training. It combines an advanced implementation of directional ablation, also known as \"abliteration\" (Arditi et al. 2024, Lai 2025 (1, 2)), with a TPE-based parameter optimizer powered by Optuna. This approach enables Heretic to work completely automatically ..."
+    },
+    {
+      "title": "Uncensor any LLM with abliteration - Hugging Face",
+      "url": "https://huggingface.co/blog/mlabonne/abliteration",
+      "snippet": "A Blog post by Maxime Labonne on Hugging Face"
+    },
+    {
+      "title": "GitHub - goldenplums2003/model_brain_surgery: Perform vector ablation ...",
+      "url": "https://github.com/goldenplums2003/model_brain_surgery",
+      "snippet": "Model Prefrontal Lobotomy is a lightweight local workflow for activation capture and weight ablation on Hugging Face Transformers models. It is designed as a small research sandbox before moving the same idea to larger checkpoints. The default project layout uses Qwen3-1.7B as the source model and writes the edited checkpoint to surgery-output/."
+    }
+  ]
+}

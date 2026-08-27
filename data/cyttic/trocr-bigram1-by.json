@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "cyttic/trocr-bigram1-BY",
+  "slug": "cyttic-trocr-bigram1-by",
+  "author": "cyttic",
+  "url": "https://huggingface.co/cyttic/trocr-bigram1-BY",
+  "created_at": "2026-08-27T03:00:02.000Z",
+  "updated_at": "2026-08-27T08:31:27.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "vision-encoder-decoder",
+    "image-text-to-text",
+    "generated_from_trainer",
+    "base_model:cyttic/exp2-frozen-benyehuda-cont",
+    "base_model:finetune:cyttic/exp2-frozen-benyehuda-cont",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 299495168,
+  "parameters_human": "299.5M",
+  "storage_bytes": 3594130841,
+  "storage_human": "3.6 GB",
+  "base_model": "cyttic/exp2-frozen-benyehuda-cont",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "cyttic/trocr-noise-bigram2 · Hugging Face",
+      "url": "https://huggingface.co/cyttic/trocr-noise-bigram2",
+      "snippet": "trocr-noise-bigram2 This model is a fine-tuned version of cyttic/exp2-frozen-benyehuda-cont on an unknown dataset. It achieves the following results on the evaluation set:"
+    },
+    {
+      "title": "Models - Hugging Face",
+      "url": "https://huggingface.co/models?search=trocr",
+      "snippet": "Explore machine learning models. Main Tasks Text Generation Any-to-Any Image-Text-to-Text Image-to-Text Image-to-Image Text-to-Image Text-to-Video Text-to-Speech + 44 Parameters Reset Parameters 6B 12B 32B 128B Libraries PyTorch TensorFlow JAX Transformers Diffusers GGUF MLX Transformers.js Safetensors sentence-transformers ONNX + 42 Apps vLLM llama.cpp MLX LM LM Studio Ollama Jan Draw Things ..."
+    },
+    {
+      "title": "Trocr Noise Bigram2 by cyttic — VRAM 1.2GB | LLM Explorer",
+      "url": "https://llm-explorer.com/model/cyttic%2Ftrocr-noise-bigram2,1C5ZARvy8spQHtjj1b8MEk",
+      "snippet": "Trocr Noise Bigram2 is an open-source 299.5m LLM by cyttic. VRAM 1.2GB. Compare benchmarks, capabilities, and deployment details on LLM Explorer."
+    },
+    {
+      "title": "Trigram and Bigram Probability Analysis",
+      "url": "https://www.scribd.com/document/844105828/assignment6-cs22bt012",
+      "snippet": "The document contains a series of exercises related to Natural Language Processing, specifically focusing on N-grams and probability estimation. It includes solutions for trigram probability estimation, sentence probability calculations using bigram models, and the effects of smoothing techniques. Additionally, it discusses the implications of using bigram models without end-symbols and ..."
+    },
+    {
+      "title": "Deep Dive into AI: Building a Bigram Language Model and ... - Medium",
+      "url": "https://medium.com/@adachoudhry26/deep-dive-into-ai-building-a-bigram-language-model-and-practicing-patience-9341838063f7",
+      "snippet": "Deep Dive into AI: Building a Bigram Language Model and Practicing Patience! Welcome or welcome back to the Deep Dive into AI tutorial series where I go deep into the fundamentals of neural ..."
+    }
+  ]
+}

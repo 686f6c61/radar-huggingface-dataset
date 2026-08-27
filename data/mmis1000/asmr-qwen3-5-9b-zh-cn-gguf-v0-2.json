@@ -1,0 +1,77 @@
+{
+  "schema": 1,
+  "id": "mmis1000/asmr-qwen3.5-9b-zh-cn-gguf-v0.2",
+  "slug": "mmis1000-asmr-qwen3-5-9b-zh-cn-gguf-v0-2",
+  "author": "mmis1000",
+  "url": "https://huggingface.co/mmis1000/asmr-qwen3.5-9b-zh-cn-gguf-v0.2",
+  "created_at": "2026-08-27T05:55:49.000Z",
+  "updated_at": "2026-08-27T06:04:45.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "ja",
+    "zh"
+  ],
+  "tags": [
+    "gguf",
+    "asmr",
+    "translation",
+    "japanese",
+    "chinese",
+    "long-context",
+    "text-generation",
+    "ja",
+    "zh",
+    "base_model:unsloth/Qwen3.5-9B",
+    "base_model:quantized:unsloth/Qwen3.5-9B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 8953803264,
+  "parameters_human": "8.95B",
+  "storage_bytes": 40436566144,
+  "storage_human": "40.4 GB",
+  "base_model": "unsloth/Qwen3.5-9B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - mmis1000/asmr-ai-translator-ja2zh: An AI-powered pipeline ...",
+      "url": "https://github.com/mmis1000/asmr-ai-translator-ja2zh",
+      "snippet": "A CLI pipeline for transcribing and translating Japanese ASMR audio to Traditional or Simplified Chinese. It chains GPU-accelerated ASR (Whisper / SenseVoice / MMS / Qwen / Gemma) with a GGUF LLM for context-aware translation, optionally using DLSite metadata for a per-work glossary. asmr-qwen3.5-9b ..."
+    },
+    {
+      "title": "asmr-qwen3.5-9b-zh-cn-echo-mtp-gguf-v0.1 - Hugging Face",
+      "url": "https://huggingface.co/mmis1000/asmr-qwen3.5-9b-zh-cn-echo-mtp-gguf-v0.1",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "mmis1000/asmr-qwen3.5-9b-zh-cn-echo-mtp-gguf-v0.1 at main",
+      "url": "https://huggingface.co/mmis1000/asmr-qwen3.5-9b-zh-cn-echo-mtp-gguf-v0.1/tree/main",
+      "snippet": "Instructions to use mmis1000/asmr-qwen3.5-9b-zh-cn-echo-mtp-gguf-v0.1 with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "asmr-ai-translator-ja2zh/README.md at main · mmis1000/asmr-ai ... - GitHub",
+      "url": "https://github.com/mmis1000/asmr-ai-translator-ja2zh/blob/main/README.md",
+      "snippet": "ASMR AI Translator Ja2zh A CLI pipeline for transcribing and translating Japanese ASMR audio to Traditional or Simplified Chinese. It chains GPU-accelerated ASR (Whisper / SenseVoice / MMS / Qwen / Gemma) with a GGUF LLM for context-aware translation, optionally using DLSite metadata for a per-work glossary."
+    },
+    {
+      "title": "d6108366.hf-mirror.com",
+      "url": "https://d6108366.hf-mirror.com/mmis1000/asmr-qwen3.5-9b-zh-cn-gguf-v0.1/raw/main/README.md",
+      "snippet": "--- # asmr-qwen3.5-9b-zh-cn-gguf-v0.1 The model normalizes imperfect audio transcriptions, applies domain-specific glossaries, and translates character dialogue while retaining emotion and nuances. The traditional output format where only the translated text is returned. ## Available Quantizations | Quantization | Filename | Size | Description |"
+    }
+  ]
+}

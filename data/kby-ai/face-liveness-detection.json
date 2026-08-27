@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "kby-ai/face-liveness-detection",
+  "slug": "kby-ai-face-liveness-detection",
+  "author": "kby-ai",
+  "url": "https://huggingface.co/kby-ai/face-liveness-detection",
+  "created_at": "2026-08-27T01:52:08.000Z",
+  "updated_at": "2026-08-27T01:53:38.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Face Liveness Detection SDK - KBY-AI",
+      "url": "https://kby-ai.com/face-liveness-detection-sdk/",
+      "snippet": "KBY-AI&#x27;s face liveness detection algorithm is compliant with iBeta Level 2 standards, offering a cutting-edge solution that sets the benchmark for performance"
+    },
+    {
+      "title": "GitHub - kby-ai/Face-Liveness-Detection-SDK: Powerful 3D passive ...",
+      "url": "https://github.com/kby-ai/Face-Liveness-Detection-SDK",
+      "snippet": "This SDK is a powerful 3D passive liveness detection solution that accurately detects presentation attacks, including printed photos, cutout masks, digital and video replay attacks, and 3D masks."
+    },
+    {
+      "title": "KBY-AI · GitHub",
+      "url": "https://github.com/kby-ai/",
+      "snippet": "We offer SDKs for face recognition, liveness detection, and ID card recognition useful to KYC verification, ID verification, biometrics or digital onboarding. - KBY-AI"
+    },
+    {
+      "title": "Home - KBY-AI",
+      "url": "https://kby-ai.com/",
+      "snippet": "KBY-AI provides face recognition(top-ranked by NIST in the FRVT 1:1 leaderboards), face liveness detection ID card recognition, palm recognition and ALPR/ANPR."
+    },
+    {
+      "title": "Face Liveness Detection SDK, Face Recognition SDK | Help Center - KBY-AI",
+      "url": "https://docs.kby-ai.com/help/product/face-liveness-detection-sdk-face-recognition-sdk",
+      "snippet": "We provide both the Face Mobile SDKs and Server SDKs. Our Face SDK stands for 3D passive face liveness detection, face anti-spoofing, face fraudulent check, face liveness check, fraud prevention, face fraud detection, mitigating biometric fraud, face recognition, face feature, face matching, face comparison on digital onboarding, KYC verification or IDV process Our facial recognition algorithm ..."
+    }
+  ]
+}

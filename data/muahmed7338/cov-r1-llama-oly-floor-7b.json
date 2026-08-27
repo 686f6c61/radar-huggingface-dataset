@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "muahmed7338/cov-r1-llama-oly-floor-7b",
+  "slug": "muahmed7338-cov-r1-llama-oly-floor-7b",
+  "author": "muahmed7338",
+  "url": "https://huggingface.co/muahmed7338/cov-r1-llama-oly-floor-7b",
+  "created_at": "2026-08-27T08:44:27.000Z",
+  "updated_at": "2026-08-27T08:52:08.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "llama",
+    "text-generation",
+    "generated_from_trainer",
+    "grpo",
+    "trl",
+    "conversational",
+    "arxiv:2402.03300",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 8030261248,
+  "parameters_human": "8.03B",
+  "storage_bytes": 337304577886,
+  "storage_human": "337.3 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "openlm-research/open_llama_7b · Hugging Face",
+      "url": "https://huggingface.co/openlm-research/open_llama_7b",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Ollama",
+      "url": "https://ollama.com/",
+      "snippet": "Ollama is the easiest way to automate your work using open models, while keeping your data safe."
+    },
+    {
+      "title": "huggyllama/llama-7b · Hugging Face",
+      "url": "https://huggingface.co/huggyllama/llama-7b",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GitHub - loong64/ollama: Get up and running with Llama 3.3, DeepSeek-R1 ...",
+      "url": "https://github.com/loong64/ollama",
+      "snippet": "Get up and running with Llama 3.3, DeepSeek-R1, Phi-4, Gemma 2, and other large language models. - loong64/ollama"
+    },
+    {
+      "title": "Llama (language model) - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Llama_(language_model)",
+      "snippet": "Llama[a] (\" Large Language Model Meta AI \" serving as a backronym) was a family of large language models (LLMs) released by Meta AI starting in February 2023. [3]"
+    }
+  ]
+}

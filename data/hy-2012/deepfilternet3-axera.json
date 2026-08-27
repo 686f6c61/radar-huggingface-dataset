@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "HY-2012/DeepFilterNet3.AXERA",
+  "slug": "hy-2012-deepfilternet3-axera",
+  "author": "HY-2012",
+  "url": "https://huggingface.co/HY-2012/DeepFilterNet3.AXERA",
+  "created_at": "2026-08-27T07:18:42.000Z",
+  "updated_at": "2026-08-27T08:33:50.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "audio-to-audio",
+  "library": null,
+  "languages": [
+    "zh",
+    "en"
+  ],
+  "tags": [
+    "speech-enhancement",
+    "noise-reduction",
+    "axera",
+    "ax650",
+    "deepfilternet",
+    "audio-to-audio",
+    "zh",
+    "en",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 10075942,
+  "storage_human": "10 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - Rikorose/DeepFilterNet: Noise supression using deep filtering",
+      "url": "https://github.com/Rikorose/DeepFilterNet",
+      "snippet": "Noise supression using deep filtering. Contribute to Rikorose/DeepFilterNet development by creating an account on GitHub."
+    },
+    {
+      "title": "fal/DeepFilterNet3 · Hugging Face",
+      "url": "https://huggingface.co/fal/DeepFilterNet3",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "trysem/DeepFilterNet3 · Hugging Face",
+      "url": "https://huggingface.co/trysem/DeepFilterNet3",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GitHub - lucribas/DeepFilterNet",
+      "url": "https://github.com/lucribas/DeepFilterNet",
+      "snippet": "DeepFilterNet contains DeepFilterNet code training, evaluation and visualization as well as pretrained model weights. pyDF contains a Python wrapper of libDF STFT/ISTFT processing loop."
+    },
+    {
+      "title": "DeepFilterNet3 - AI Model | Layer",
+      "url": "https://www.layer.ai/models/deepfilternet3",
+      "snippet": "DeepFilterNet3 is an open-source speech enhancement model that uses deep filtering to suppress noise in full-band audio at up to 48 kHz sampling rate. The neural network predicts dynamic suppression gains for each frequency bin, processing 20 ms frames with a 10 ms hop for real-time operation."
+    }
+  ]
+}

@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "Vaelico/Wulver",
+  "slug": "vaelico-wulver",
+  "author": "Vaelico",
+  "url": "https://huggingface.co/Vaelico/Wulver",
+  "created_at": "2026-08-25T22:17:28.000Z",
+  "updated_at": "2026-08-27T03:09:03.000Z",
+  "license": "krea-2-community-license",
+  "license_family": "unknown",
+  "pipeline_tag": "text-to-image",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "text-to-image",
+    "furry",
+    "anthro",
+    "kemono",
+    "anime",
+    "krea2",
+    "base_model:Comfy-Org/Krea-2",
+    "base_model:finetune:Comfy-Org/Krea-2",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 12,
+  "downloads_30d": 0,
+  "trending_score": 11,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 51954121207,
+  "storage_human": "52.0 GB",
+  "base_model": "Comfy-Org/Krea-2",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Vaelico/Wulver · Hugging Face",
+      "url": "https://huggingface.co/Vaelico/Wulver",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Wulver v0.1 Released: Anime-Focused Fine-Tune… · AGI Hunt",
+      "url": "https://agihunt.info/en/p/1a03fe2195322a07cb938b1583a",
+      "snippet": "A developer released Wulver v0.1, a full fine-tune of Krea 2 Raw (12.8B) specifically designed for anime, kemono, and furry art styles. The model features native handling of multiple interacting characters without fusing them, fast generation (8-14 steps), and offers fp8, int8, and GGUF quantized versions."
+    },
+    {
+      "title": "AI-Voice-Models-by-AI_Characters - Hugging Face",
+      "url": "https://huggingface.co/ai-characters/AI-Voice-Models-by-AI_Characters",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Wavel AI: AI Video Generator, Dubbing & Voice Platform",
+      "url": "https://wavel.ai/",
+      "snippet": "Wavel AI lets you create AI-generated videos, edit existing footage, generate voiceovers, clone voices, add captions, and produce avatar-led content from a single platform."
+    },
+    {
+      "title": "AI Models | Civitai",
+      "url": "https://civitai.com/models",
+      "snippet": "Browse thousands of free Stable Diffusion & Flux models, LoRAs, checkpoints, and embeddings. The largest collection of AI image generation resources."
+    }
+  ]
+}

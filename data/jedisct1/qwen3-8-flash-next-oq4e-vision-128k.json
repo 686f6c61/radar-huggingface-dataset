@@ -1,0 +1,82 @@
+{
+  "schema": 1,
+  "id": "jedisct1/Qwen3.8-Flash-Next-oQ4e-Vision-128k",
+  "slug": "jedisct1-qwen3-8-flash-next-oq4e-vision-128k",
+  "author": "jedisct1",
+  "url": "https://huggingface.co/jedisct1/Qwen3.8-Flash-Next-oQ4e-Vision-128k",
+  "created_at": "2026-08-27T05:57:32.000Z",
+  "updated_at": "2026-08-27T07:07:26.000Z",
+  "license": "qwen-community-1.0",
+  "license_family": "unknown",
+  "pipeline_tag": "image-text-to-text",
+  "library": "mlx",
+  "languages": [],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "qwen4_exp",
+    "mlx-vlm",
+    "qwen",
+    "oq",
+    "quantized",
+    "apple-silicon",
+    "multimodal",
+    "vision",
+    "video",
+    "mixture-of-experts",
+    "4-bit",
+    "long-context",
+    "conversational",
+    "tool-calling",
+    "custom_code",
+    "image-text-to-text",
+    "base_model:Qwen/Qwen3.8-Flash-Next-FP8",
+    "base_model:quantized:Qwen/Qwen3.8-Flash-Next-FP8",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 26472069411,
+  "parameters_human": "26.47B",
+  "storage_bytes": 93905009990,
+  "storage_human": "93.9 GB",
+  "base_model": "Qwen/Qwen3.8-Flash-Next-FP8",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "jedisct1/Qwen3.8-Flash-Next-oQ4e-128k · Hugging Face",
+      "url": "https://huggingface.co/jedisct1/Qwen3.8-Flash-Next-oQ4e-128k",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "jedisct1/Qwen3.8-Flash-Next-oQ4e-MTP-128k · Hugging Face",
+      "url": "https://huggingface.co/jedisct1/Qwen3.8-Flash-Next-oQ4e-MTP-128k",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GitHub - QwenLM/Qwen3.8-Flash-Next: Qwen3.8-Flash-Next is the ...",
+      "url": "https://github.com/QwenLM/Qwen3.8-Flash-Next/",
+      "snippet": "Qwen3.8-Flash-Next upgrades the model systematically along four aspects — attention, residual, embedding and optimization — improving model capability while further optimizing computational efficiency, model capacity and training stability: Attention A GDN + QSA hybrid architecture."
+    },
+    {
+      "title": "GitHub - QwenLM/Qwen3.8: Qwen3.8 is the large language model series ...",
+      "url": "https://github.com/QwenLM/Qwen3.8",
+      "snippet": "Welcome to the GitHub repository of the Qwen3.5 open model series, including Qwen3.5, Qwen3.6, and the latest Qwen3.8. Here, you can find official information about Qwen3.8, post your questions (Issues), and share your ideas with the community (Discussions)."
+    },
+    {
+      "title": "Qwen/Qwen3.8-Flash-Next | vLLM Recipes",
+      "url": "https://recipes.vllm.ai/Qwen/Qwen3.8-Flash-Next",
+      "snippet": "Overview Qwen3.8-Flash-Next is a multimodal, ultra-sparse Mixture-of-Experts model. It has 125B parameters, including an additional 51B N-gram embedding table, while activating 6B parameters per token. The architecture combines four main ideas: GDN + QSA: three of every four layers use Gated DeltaNet to compress history; the fourth uses Qwen Sparse Attention for precise long-range retrieval ..."
+    }
+  ]
+}

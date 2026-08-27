@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "christiankrause/mae-multitask",
+  "slug": "christiankrause-mae-multitask",
+  "author": "christiankrause",
+  "url": "https://huggingface.co/christiankrause/mae-multitask",
+  "created_at": "2026-08-27T11:22:23.000Z",
+  "updated_at": "2026-08-27T11:22:32.000Z",
+  "license": "bsd-3-clause",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "mae",
+    "pytorch",
+    "multitask",
+    "license:bsd-3-clause",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 24832,
+  "parameters_human": "24832",
+  "storage_bytes": 99808,
+  "storage_human": "99808 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Microsoft Build 2026: 7 New Microsoft AI Models - LinkedIn",
+      "url": "https://www.linkedin.com/pulse/microsoft-build-2026-7-new-ai-models-christian-coello-qgu4e/",
+      "snippet": "At Microsoft Build today, Microsoft AI announced a new family of in-house MAI models that signals a broader shift in the company&#x27;s AI strategy: Microsoft is not only integrating frontier models ..."
+    },
+    {
+      "title": "Models - Microsoft AI",
+      "url": "https://microsoft.ai/models/",
+      "snippet": "Discover and build with the latest MAI models At Microsoft AI, our vision is humanist"
+    },
+    {
+      "title": "Building a hill-climbing machine: Launching seven new MAI models ...",
+      "url": "https://microsoft.ai/news/building-a-hillclimbing-machine-launching-seven-new-mai-models/",
+      "snippet": "Here&#x27;s our first steps along the way. Our Models Our new models across image, voice, transcription, coding, and reasoning, together form the MAI model family: a multimodal ecosystem designed to work across the kinds of tasks that matter in the real world. MAI-Thinking-1, Microsoft AI&#x27;s flagship reasoning model."
+    },
+    {
+      "title": "GitHub - EPFL-VILAB/MultiMAE: MultiMAE: Multi-modal Multi-task Masked ...",
+      "url": "https://github.com/EPFL-VILAB/MultiMAE",
+      "snippet": "Roman Bachmann*, David Mizrahi*, Andrei Atanov, Amir Zamir Website | arXiv | BibTeX Official PyTorch implementation and pre-trained models for MultiMAE: Multi-modal Multi-task Masked Autoencoders. We introduce Multi-modal Multi-task Masked Autoencoders (MultiMAE), an efficient and effective pre-training strategy for Vision Transformers. Given a small random sample of visible patches from ..."
+    },
+    {
+      "title": "Microsoft takes on AI rivals with three new foundational models",
+      "url": "https://techcrunch.com/2026/04/02/microsoft-takes-on-ai-rivals-with-three-new-foundational-models/",
+      "snippet": "Microsoft AI, the tech giant&#x27;s research lab, announced the release of three foundational AI models on Thursday that can generate text, voice, and images."
+    }
+  ]
+}

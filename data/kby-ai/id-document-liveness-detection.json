@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "kby-ai/id-document-liveness-detection",
+  "slug": "kby-ai-id-document-liveness-detection",
+  "author": "kby-ai",
+  "url": "https://huggingface.co/kby-ai/id-document-liveness-detection",
+  "created_at": "2026-08-27T02:26:45.000Z",
+  "updated_at": "2026-08-27T02:28:20.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ID Document Liveness Detection SDK - KBY-AI",
+      "url": "https://kby-ai.com/id-document-liveness-detection-sdk/",
+      "snippet": "The ID Document Liveness Detection SDK offers a robust document liveness solution that detects presentation attacks automatically and efficiently. It evaluates whether a submitted image represents a genuine, unaltered document physically presented to the capturing device. The SDK supports a wide range of government-issued identity documents globally, including ID cards, passports, and driver ..."
+    },
+    {
+      "title": "GitHub - kby-ai/ID-Document-Liveness-Detection-Docker: Intelligent ID ...",
+      "url": "https://github.com/kby-ai/ID-Document-Liveness-Detection-Docker",
+      "snippet": "This repo demonstrates the server-based ID document liveness detection (anti-spoofing) capabilities for ID card, passport, and driver&#x27;s license. Our ID document liveness detection SDK (ID document anti-spoofing) suite effectively prevents common presentation attacks: Screen Replay Attacks, Printed Copy Attacks, and Portrait Substitution Attacks."
+    },
+    {
+      "title": "Home - KBY-AI",
+      "url": "https://kby-ai.com/",
+      "snippet": "KBY-AI provides face recognition(top-ranked by NIST in the FRVT 1:1 leaderboards), face liveness detection ID card recognition, palm recognition and ALPR/ANPR."
+    },
+    {
+      "title": "ID Document Liveness Detection SDK | Help Center - KBY-AI",
+      "url": "https://docs.kby-ai.com/help/product/id-document-liveness-detection-sdk",
+      "snippet": "This stands for ID document liveness detection, ID document liveness check, ID document anti-spoofing, ID document fraudulent check, fraud prevention, biometric fraud by mitigating biometric fraud."
+    },
+    {
+      "title": "KBY-AI · GitHub",
+      "url": "https://github.com/kby-ai/",
+      "snippet": "We offer SDKs for face recognition, liveness detection, and ID card recognition useful to KYC verification, ID verification, biometrics or digital onboarding. - KBY-AI"
+    }
+  ]
+}

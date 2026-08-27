@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "thefinalboss/fractus-p0",
+  "slug": "thefinalboss-fractus-p0",
+  "author": "thefinalboss",
+  "url": "https://huggingface.co/thefinalboss/fractus-p0",
+  "created_at": "2026-08-27T07:49:51.000Z",
+  "updated_at": "2026-08-27T07:50:13.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "thefinalboss/Fractus · Hugging Face",
+      "url": "https://huggingface.co/thefinalboss/Fractus",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "thefinalboss/Fractus at main - Hugging Face",
+      "url": "https://huggingface.co/thefinalboss/Fractus/tree/main",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Fractus CTE — A Continuous Cognitive Agent - Fractus CTE Wiki",
+      "url": "https://thefinalboss-fractus-cte-wiki.hf.space/",
+      "snippet": "Fractus is a Continuous Cognitive Agent — an AI that works like a brain, not a calculator. Instead of processing input → output in one pass, Fractus ticks like a biological system: it maintains a persistent thought state, advances it through multiple blocks of processing, remembers everything across sessions, and can grow new capacity by itself."
+    },
+    {
+      "title": "danielmiessler/LifeOS: ⛰️ The Life Operating System - GitHub",
+      "url": "https://github.com/danielmiessler/LifeOS",
+      "snippet": "⛰️ The Life Operating System — an intent engineering platform that moves you from your current state to your ideal state, in life and work. - danielmiessler/LifeOS"
+    },
+    {
+      "title": "Latest AI Model Releases — August 2026",
+      "url": "https://aireleasetracker.com/latest",
+      "snippet": "The newest AI model releases as of August 2026. Most recent: GLM-5.3-Flash by Z.ai on Aug 26 2026. Track every new frontier model from OpenAI, Anthropic, Google DeepMind, Meta, SpaceXAI, DeepSeek, Mistral, and Moonshot AI — updated continuously."
+    }
+  ]
+}

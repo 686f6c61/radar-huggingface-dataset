@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "hugging-apps/zing-0-5-world-model-aoti",
+  "slug": "hugging-apps-zing-0-5-world-model-aoti",
+  "author": "hugging-apps",
+  "url": "https://huggingface.co/hugging-apps/zing-0-5-world-model-aoti",
+  "created_at": "2026-08-27T02:16:19.000Z",
+  "updated_at": "2026-08-27T02:38:31.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "aoti",
+    "zerogpu",
+    "torch-export",
+    "base_model:seedleap/zing-0.5",
+    "base_model:finetune:seedleap/zing-0.5",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 2175349,
+  "storage_human": "2 MB",
+  "base_model": "seedleap/zing-0.5",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "seedleap/zing-0.5 · Hugging Face",
+      "url": "https://huggingface.co/seedleap/zing-0.5",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Zing-0.5: An Efficient Real-Time Interactive World Model - GitHub",
+      "url": "https://github.com/seedleap/zing-world-model",
+      "snippet": "Developed by the Seedleap.ai team (涌跃智能), Zing 0.5 is an efficient causal world model built for real-time interaction. It continuously rolls out a visual world from its current state while text prompts and keyboard actions alter the world&#x27;s semantics, motion, and future state as it unfolds ..."
+    },
+    {
+      "title": "Hugging Face - The AI community building the future.",
+      "url": "https://huggingface.co/",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Models - Hugging Face",
+      "url": "https://huggingface.co/models",
+      "snippet": "Explore machine learning models. DavidAU/Qwen3.8-27B-Cold-Fusion-GAIN-V1.1-NM-DAU-NEO-MAX-MTP-GGUF"
+    },
+    {
+      "title": "Downloading models · Hugging Face",
+      "url": "https://huggingface.co/docs/hub/models-downloading",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    }
+  ]
+}

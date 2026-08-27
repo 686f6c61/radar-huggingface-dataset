@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "SanjanaDeshan/facial-mark-detection",
+  "slug": "sanjanadeshan-facial-mark-detection",
+  "author": "SanjanaDeshan",
+  "url": "https://huggingface.co/SanjanaDeshan/facial-mark-detection",
+  "created_at": "2026-08-27T08:05:06.000Z",
+  "updated_at": "2026-08-27T08:06:07.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 11729924,
+  "storage_human": "12 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Face Mask Detection - GitHub",
+      "url": "https://github.com/chandrikadeb7/Face-Mask-Detection",
+      "snippet": "Our face mask detector doesn&#x27;t use any morphed masked images dataset and the model is accurate. Owing to the use of MobileNetV2 architecture, it is computationally efficient, thus making it easier to deploy the model to embedded systems (Raspberry Pi, Google Coral, etc.). This system can therefore be used in real-time applications which require face-mask detection for safety purposes due to ..."
+    },
+    {
+      "title": "Face Recognition Models: Advancements, Toolkit, and Datasets",
+      "url": "https://learnopencv.com/face-recognition-models/",
+      "snippet": "Face recognition models: This article focuses on the comprehensive examination of existing face recognition models, toolkits, datasets and FR pipelines. From early Eigen faces and Fisher face methods to advanced deep learning techniques, these models have progressively refined the art of identifying individuals from digital imagery."
+    },
+    {
+      "title": "GitHub - manyagautam/RealTimeFacialRecognitionusingAI-ML: A real-time ...",
+      "url": "https://github.com/manyagautam/RealTimeFacialRecognitionusingAI-ML",
+      "snippet": "A real-time facial recognition system using AI/ML with image capture via webcam, a TensorFlow-based deep learning model using VGG16, and pipelines for face detection and identification. This projec..."
+    },
+    {
+      "title": "A deep learning approach for face detection - ScienceDirect",
+      "url": "https://www.sciencedirect.com/science/article/pii/S1877050925020551",
+      "snippet": "The capability to identify and recognize individuals based on facial features offers significant potential, making it an important tool in several contexts. This paper presents a face detection model using Machine Learning techniques."
+    },
+    {
+      "title": "Hugging Face - The AI community building the future.",
+      "url": "https://huggingface.co/",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    }
+  ]
+}

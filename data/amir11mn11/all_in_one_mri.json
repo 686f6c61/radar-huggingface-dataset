@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "Amir11MN11/All_in_one_MRI",
+  "slug": "amir11mn11-all_in_one_mri",
+  "author": "Amir11MN11",
+  "url": "https://huggingface.co/Amir11MN11/All_in_one_MRI",
+  "created_at": "2026-08-27T06:43:27.000Z",
+  "updated_at": "2026-08-27T06:46:25.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-image",
+  "library": "diffusers",
+  "languages": [],
+  "tags": [
+    "diffusers",
+    "onnx",
+    "text-to-image",
+    "lora",
+    "template:diffusion-lora",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 42812807,
+  "storage_human": "43 MB",
+  "base_model": null,
+  "formats": [
+    "diffusers",
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "50+ AI Apps for the Price of One • Magai",
+      "url": "https://magai.co/",
+      "snippet": "Join 50,000+ users discovering All-In-One AI with Magai, designed for professionals needing seamless AI model integration."
+    },
+    {
+      "title": "All-In-One Medical Image Restoration via Task-Adaptive Routing ... - GitHub",
+      "url": "https://github.com/Yaziwel/All-In-One-Medical-Image-Restoration-via-Task-Adaptive-Routing",
+      "snippet": "PyTorch implementation for All-In-One Medical Image Restoration via Task-Adaptive Routing (MICCAI 2024). 🚀🚀🚀Check our paper collection of recent Awsome-Medical-Image-Restoration"
+    },
+    {
+      "title": "9 Top All-in-One AI Platforms for Multiple AI Models (2026)",
+      "url": "https://peerlist.io/vinishbhaskar/articles/top-all-in-one-ai-platforms",
+      "snippet": "Explore the best AI tools for content creation in 2026. Use GPT-5, Claude, and Gemini together in one powerful, all-in-one AI platform built to save time."
+    },
+    {
+      "title": "MRI Registry Review: 2700+ Practice Questions & Study Guide | MRI All ...",
+      "url": "https://www.mriallinone.com/",
+      "snippet": "MRI All-In-One Registry Review is a structured MRI study guide with 2700+ practice questions and mock exams. Try the free demo or explore the full study system to prepare with confidence."
+    },
+    {
+      "title": "Alle-AI - Your All-in-One AI Platform",
+      "url": "https://www.alle-ai.com/",
+      "snippet": "Meet the All-in-One AI Platform Alle-AI reduces AI model Bias and Hallucination See how Choose from multiple AI models on Alle-AI Interact with them simultaneously"
+    }
+  ]
+}

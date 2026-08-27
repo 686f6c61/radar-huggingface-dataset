@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "dyjackson/poolformer-multitask-weights",
+  "slug": "dyjackson-poolformer-multitask-weights",
+  "author": "dyjackson",
+  "url": "https://huggingface.co/dyjackson/poolformer-multitask-weights",
+  "created_at": "2026-08-27T09:52:10.000Z",
+  "updated_at": "2026-08-27T09:52:19.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "poolformer",
+    "pytorch",
+    "multitask",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 33088,
+  "parameters_human": "33088",
+  "storage_bytes": 132832,
+  "storage_human": "132832 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "aidenlopez/poolformer-demo · Hugging Face",
+      "url": "https://huggingface.co/aidenlopez/poolformer-demo",
+      "snippet": "Overview This repository is a compact, custom PyTorch implementation of Poolformer for Multitask. The base configuration is intended for code review, smoke tests, and small controlled experiments rather than as a production-ready pretrained release."
+    },
+    {
+      "title": "DeepLearning/model/PoolFormer at main - GitHub",
+      "url": "https://github.com/562590763/DeepLearning/tree/main/model/PoolFormer",
+      "snippet": "Surprisingly, the resulted model PoolFormer consistently outperforms the DeiT and ResMLP as shown in (b), which well supports that MetaFormer is actually what we need to achieve competitive performance. RSB-ResNet in (b) means the results are from \"ResNet Strikes Back\" where ResNet is trained with improved training procedure for 300 epochs."
+    },
+    {
+      "title": "GitHub - sail-sg/poolformer: PoolFormer: MetaFormer Is Actually What ...",
+      "url": "https://github.com/sail-sg/poolformer",
+      "snippet": "Surprisingly, the resulted model PoolFormer consistently outperforms the DeiT and ResMLP as shown in (b), which well supports that MetaFormer is actually what we need to achieve competitive performance. RSB-ResNet in (b) means the results are from \"ResNet Strikes Back\" where ResNet is trained with improved training procedure for 300 epochs."
+    },
+    {
+      "title": "Poolformer: Recurrent Networks with Pooling for Long-Sequence Modeling",
+      "url": "https://arxiv.org/pdf/2510.02206v1",
+      "snippet": "We introduce Poolformer, a sequence-to-sequence model that replaces self-attention with recurrent layers and incorporates pooling operations to reduce sequence length."
+    },
+    {
+      "title": "[2510.02206] Poolformer: Recurrent Networks with Pooling for Long ...",
+      "url": "https://arxiv.org/abs/2510.02206",
+      "snippet": "We introduce Poolformer, a sequence-to-sequence model that replaces self-attention with recurrent layers and incorporates pooling operations to reduce sequence length. Poolformer is defined recursively using SkipBlocks, which contain residual blocks, a down-pooling layer, a nested SkipBlock, an up-pooling layer, and additional residual blocks."
+    }
+  ]
+}

@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "Timofeysmi/multitask-weights",
+  "slug": "timofeysmi-multitask-weights",
+  "author": "Timofeysmi",
+  "url": "https://huggingface.co/Timofeysmi/multitask-weights",
+  "created_at": "2026-08-27T11:06:43.000Z",
+  "updated_at": "2026-08-27T11:06:52.000Z",
+  "license": "bsd-3-clause",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "albef",
+    "pytorch",
+    "multitask",
+    "license:bsd-3-clause",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 49600,
+  "parameters_human": "49600",
+  "storage_bytes": 198880,
+  "storage_human": "198880 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Multitask-Food-Portion-Estimation/README.md at main - GitHub",
+      "url": "https://github.com/IS2AI/Multitask-Food-Portion-Estimation/blob/main/README.md",
+      "snippet": "This project builds upon the YOLOv12 architecture to perform multi-task learning: Object Detection: Detect food items. Weight Prediction: Predict the weight (in grams) of each detected food item. We introduce an additional regression head to YOLOv12 to predict weights, enabling simultaneous localization and portion estimation from a single image."
+    },
+    {
+      "title": "Multi-Task Model Merging via Adaptive Weight Disentanglement",
+      "url": "https://arxiv.org/abs/2411.18729",
+      "snippet": "Model merging has recently gained attention as an economical and scalable approach to incorporate task-specific weights from various tasks into a unified multi-task model. For example, in Task Arithmetic (TA), adding the fine-tuned weights of different tasks can enhance the model&#x27;s performance on those tasks, while subtracting them leads to task forgetting. Although TA is highly effective ..."
+    },
+    {
+      "title": "arXiv:2412.08147v1 [cs.LG] 11 Dec 2024",
+      "url": "https://arxiv.org/pdf/2412.08147",
+      "snippet": "arXiv:2412.08147v1 [cs.LG] 11 Dec 2024 HOW TO WEIGHT MULTITASK FINETUNING? FAST PREVIEWS VIA BAYESIAN MODEL-MERGING"
+    },
+    {
+      "title": "Data-Adaptive Weight-Ensembling for Multi-task Model Fusion",
+      "url": "https://link.springer.com/article/10.1007/s11263-025-02434-2",
+      "snippet": "Creating a multi-task model by merging models for distinct tasks has proven to be an economical and scalable approach. Recent research, like task arithmetic, demonstrates that a static solution for multi-task model fusion can be located within the vector space spanned by task vectors. However, the static nature of these methods limits their ability to adapt to the intricacies of individual ..."
+    },
+    {
+      "title": "A Multi-Task Dynamic Weight Optimization Framework Based on Deep ... - MDPI",
+      "url": "https://www.mdpi.com/2076-3417/15/5/2473",
+      "snippet": "In recent years, multi-task learning (MTL) has been shown to have considerable potential for enhancing model performance through the inter-task sharing of knowledge. Nevertheless, the effective balancing of optimization across diverse tasks remains a significant challenge. This paper presents a novel Deep Reinforcement Learning (DRL)-based framework that employs an Actor-Critic architecture to ..."
+    }
+  ]
+}

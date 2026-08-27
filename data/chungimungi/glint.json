@@ -1,0 +1,77 @@
+{
+  "schema": 1,
+  "id": "chungimungi/GLInt",
+  "slug": "chungimungi-glint",
+  "author": "chungimungi",
+  "url": "https://huggingface.co/chungimungi/GLInt",
+  "created_at": "2026-08-04T23:37:10.000Z",
+  "updated_at": "2026-08-27T08:46:28.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "sentence-similarity",
+  "library": "sentence-transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "sentence-transformers",
+    "safetensors",
+    "modernbert",
+    "colbert",
+    "late-interaction",
+    "retrieval",
+    "pylate",
+    "multi-vector",
+    "sentence-similarity",
+    "en",
+    "base_model:lightonai/LateOn-unsupervised",
+    "base_model:finetune:lightonai/LateOn-unsupervised",
+    "license:apache-2.0",
+    "text-embeddings-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 2,
+  "downloads_30d": 121,
+  "trending_score": 0,
+  "parameters": 149015808,
+  "parameters_human": "149.0M",
+  "storage_bytes": 615344304,
+  "storage_human": "615 MB",
+  "base_model": "lightonai/LateOn-unsupervised",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GLInt: Geometry-Matched Hard Negatives for Late-Interaction Retrieval",
+      "url": "https://huggingface.co/blog/chungimungi/glint",
+      "snippet": "I started with a narrow question: Do hard negatives mined by a multi-vector retriever produce a better late-interaction model than negatives mined by a dense retriever? Pffftt, Obviously! I introduce GLInt, which reaches 57.43 mean nDCG@10 on the 15 BEIR Tasks, starting from the unsupervised LateOn checkpoint. It outperforms the 57.22 result of LateOn, making it the strongest retriever under ..."
+    },
+    {
+      "title": "chungimungi/GLINT-data · Datasets at Hugging Face",
+      "url": "https://huggingface.co/datasets/chungimungi/GLINT-data",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Glint — AI training data the frontier models can&#x27;t scrape",
+      "url": "https://www.glintdata.io/",
+      "snippet": "Start building with Glint Train your next model on real human data. From pilot to petabytes. Licensed, paid, and built for frontier AI."
+    },
+    {
+      "title": "chungimungi (Aarush)",
+      "url": "https://hf-p-cfw.fyan.top/chungimungi/models",
+      "snippet": "Organizations chungimungi&#x27;s models72 Sort: Recently updated chungimungi/GLInt Sentence Similarity • 0.1B•Updated 1 day ago• 1"
+    },
+    {
+      "title": "Aarush Sinha chungimungi - GitHub",
+      "url": "https://github.com/chungimungi",
+      "snippet": "MSCS @ UCPH. Pursuing research in Natural Language Processing and Information Retrieval - chungimungi"
+    }
+  ]
+}

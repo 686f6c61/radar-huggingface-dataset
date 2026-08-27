@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "whoisjones/otter-cross-rembert",
+  "slug": "whoisjones-otter-cross-rembert",
+  "author": "whoisjones",
+  "url": "https://huggingface.co/whoisjones/otter-cross-rembert",
+  "created_at": "2026-01-07T14:59:26.000Z",
+  "updated_at": "2026-08-27T09:18:26.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "token-classification",
+  "library": "transformers",
+  "languages": [
+    "multilingual"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "otter-cross-encoder",
+    "feature-extraction",
+    "named-entity-recognition",
+    "ner",
+    "zero-shot",
+    "multilingual",
+    "otter",
+    "token-classification",
+    "custom_code",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 4,
+  "trending_score": 0,
+  "parameters": 578188928,
+  "parameters_human": "578.2M",
+  "storage_bytes": 2334233103,
+  "storage_human": "2.3 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "whoisjones/otter-bi-rembert · Hugging Face",
+      "url": "https://huggingface.co/whoisjones/otter-bi-rembert",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GitHub - whoisjones/otter",
+      "url": "https://github.com/whoisjones/otter",
+      "snippet": "Contribute to whoisjones/otter development by creating an account on GitHub."
+    },
+    {
+      "title": "whoisjones/otter-bi-rembert at main - Hugging Face",
+      "url": "https://huggingface.co/whoisjones/otter-bi-rembert/tree/main",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "otter/src at main · whoisjones/otter · GitHub",
+      "url": "https://github.com/whoisjones/otter/tree/main/src",
+      "snippet": "Contribute to whoisjones/otter development by creating an account on GitHub."
+    },
+    {
+      "title": "Otter Meeting Agent - AI Notetaker, Transcription, Insights",
+      "url": "https://otter.ai/",
+      "snippet": "Otter AI Meeting Agent supports real-time transcription, live chat, automated summaries, insights, and action items."
+    }
+  ]
+}

@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "vasilyevtij/zero-shot-transfer",
+  "slug": "vasilyevtij-zero-shot-transfer",
+  "author": "vasilyevtij",
+  "url": "https://huggingface.co/vasilyevtij/zero-shot-transfer",
+  "created_at": "2026-08-27T11:25:42.000Z",
+  "updated_at": "2026-08-27T11:25:51.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "transformer",
+    "research-notes",
+    "zero-shot-transfer",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 33088,
+  "parameters_human": "33088",
+  "storage_bytes": 132832,
+  "storage_human": "132832 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "vasilyevtij/paper_012035070_zero_shot_transfer · Hugging Face",
+      "url": "https://huggingface.co/vasilyevtij/paper_012035070_zero_shot_transfer",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "vasilyevtij (Lev Vasilyev) - Hugging Face",
+      "url": "https://huggingface.co/vasilyevtij",
+      "snippet": "Recent Activity updated a model2 days ago vasilyevtij/paper_012035070_zero_shot_transfer published a model2 days ago vasilyevtij/paper_012035070_zero_shot_transfer View all activity"
+    },
+    {
+      "title": "Zero-shot learning - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Zero-shot_learning",
+      "snippet": "Zero-shot learning (ZSL) is a problem setup in machine learning where, at test time, a learner observes samples from classes which were not observed during training, and needs to predict their class. The name is a play on words based on the earlier concept of one-shot learning in computer vision, in which classification can be learned from only one example. Zero-shot methods generally work by ..."
+    },
+    {
+      "title": "Towards Zero-Shot Task Transfer with Neurosymbolic World Models",
+      "url": "https://arxiv.org/abs/2608.17959",
+      "snippet": "State-of-the-art model-based reinforcement learning methods learn neural world models that allow policy improvement by planning in a latent space, without assumptions on the structure of the underlying environment. While expressive, these models are generally task-dependent: they learn uninterpretable latent representations that are tied to the training task and thus hard to generalize to new ..."
+    },
+    {
+      "title": "Generalist AI Releases GEN-1.5: A Robot Foundation Model That Learns ...",
+      "url": "https://www.marktechpost.com/2026/08/24/generalist-ai-releases-gen-1-5-a-robot-foundation-model-that-learns-new-tasks-from-one-3-12-second-demo/",
+      "snippet": "Generalist AI&#x27;s GEN-1.5 learns robot tasks from a 3-12 second demo, hitting 59% one-shot success with zero gradient updates."
+    }
+  ]
+}

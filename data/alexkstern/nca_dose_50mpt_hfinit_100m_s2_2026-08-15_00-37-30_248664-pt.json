@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "alexkstern/nca_dose_50Mpt_hfinit_100M_s2_2026-08-15_00-37-30_248664-pt",
+  "slug": "alexkstern-nca_dose_50mpt_hfinit_100m_s2_2026-08-15_00-37-30_248664-pt",
+  "author": "alexkstern",
+  "url": "https://huggingface.co/alexkstern/nca_dose_50Mpt_hfinit_100M_s2_2026-08-15_00-37-30_248664-pt",
+  "created_at": "2026-08-27T09:33:41.000Z",
+  "updated_at": "2026-08-27T09:34:11.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "nanochat",
+  "languages": [],
+  "tags": [
+    "nanochat",
+    "nanochat_gpt",
+    "pt_fineweb-nanochatbpe-100M",
+    "ppt_nca-paper-share200-2048",
+    "seed_2",
+    "case_c",
+    "lr_trapezoid",
+    "depth_16",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 2969669427,
+  "storage_human": "3.0 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "nca_dose_50Mpt_500M_s2_2026-08-14_20-24-59_178671-pt",
+      "url": "https://huggingface.co/alexkstern/nca_dose_50Mpt_500M_s2_2026-08-14_20-24-59_178671-pt",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "alexkstern/nca_dose_50Mpt_hfbody_20M_s2_2026-08-14_17-40-37_845846-pt ...",
+      "url": "https://huggingface.co/alexkstern/nca_dose_50Mpt_hfbody_20M_s2_2026-08-14_17-40-37_845846-pt",
+      "snippet": "alexkstern / nca_dose_50Mpt_hfbody_20M_s2_2026-08-14_17-40-37_845846-pt like 0 nanochat nanochat_gpt pt_fineweb-nanochatbpe-100M ppt_nca-paper-share200-2048 seed_2 case_c lr_trapezoid depth_16 License:apache-2.0 Model card FilesFiles and versions xet Community Copy to bucket new nca_dose_50Mpt_hfbody_20M_s2_2026-08-14_17-40-37_845846-pt Outcome Training config Files"
+    },
+    {
+      "title": "Text output of NCA for one subject — txtNCA • pkr",
+      "url": "https://asancpt.github.io/pkr/reference/txtNCA.html",
+      "snippet": "back extrapolated concentration at time 0, for bolus intravascular administration only"
+    },
+    {
+      "title": "Latest AI Model Releases — August 2026",
+      "url": "https://aireleasetracker.com/latest",
+      "snippet": "The newest AI model releases as of August 2026. Most recent: GLM-5.3-Flash by Z.ai on Aug 26 2026. Track every new frontier model from OpenAI, Anthropic, Google DeepMind, Meta, SpaceXAI, DeepSeek, Mistral, and Moonshot AI — updated continuously."
+    },
+    {
+      "title": "GitHub - mctools/ncrystal: NCrystal : a library for thermal neutron ...",
+      "url": "https://github.com/mctools/ncrystal",
+      "snippet": "This is a source distribution of NCrystal, a library and associated tools which enables calculations for Monte Carlo simulations of thermal neutrons in crystals and other materials. Supported is a range of physics including both coherent, incoherent, elastic and inelastic scatterings in a wide range ..."
+    }
+  ]
+}

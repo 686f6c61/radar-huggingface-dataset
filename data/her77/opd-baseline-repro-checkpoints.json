@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "Her77/opd-baseline-repro-checkpoints",
+  "slug": "her77-opd-baseline-repro-checkpoints",
+  "author": "Her77",
+  "url": "https://huggingface.co/Her77/opd-baseline-repro-checkpoints",
+  "created_at": "2026-08-27T06:18:40.000Z",
+  "updated_at": "2026-08-27T06:34:11.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "reinforcement-learning",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "reinforcement-learning",
+    "on-policy-distillation",
+    "alfworld",
+    "curriculum-learning",
+    "qwen2.5",
+    "base_model:Qwen/Qwen2.5-3B-Instruct",
+    "base_model:finetune:Qwen/Qwen2.5-3B-Instruct",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 81542506760,
+  "storage_human": "81.5 GB",
+  "base_model": "Qwen/Qwen2.5-3B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": true,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - Sisyphe-lee/opd-baseline-repro: Reproducible THUNLP/OPD ...",
+      "url": "https://github.com/Sisyphe-lee/opd-baseline-repro",
+      "snippet": "This repository is a thin, reproducible overlay for the response-only OPD baseline from THUNLP/OPD. It pins upstream code, installs the tested runtime, downloads the exact student and teacher, validates multi-GPU execution, and provides separate three-step and full-training launchers."
+    },
+    {
+      "title": "opd-baseline-repro/README.md at main · Sisyphe-lee/opd ... - GitHub",
+      "url": "https://github.com/Sisyphe-lee/opd-baseline-repro/blob/main/README.md",
+      "snippet": "THUNLP/OPD Baseline Reproduction This repository is a thin, reproducible overlay for the response-only OPD baseline from THUNLP/OPD. It pins upstream code, installs the tested runtime, downloads the exact student and teacher, validates multi-GPU execution, and provides separate three-step and full-training launchers."
+    },
+    {
+      "title": "checkpoint AI Models | Civitai",
+      "url": "https://civitai.com/tag/checkpoint",
+      "snippet": "Browse 202 Stable Diffusion & Flux models, LoRAs, checkpoints, and embeddings tagged with checkpoint."
+    },
+    {
+      "title": "Models - Hugging Face",
+      "url": "https://huggingface.co/models?other=checkpoint",
+      "snippet": "Explore machine learning models. AETHORIA-AI/TR-HASH-MoE-200M-130B-Checkpoints"
+    },
+    {
+      "title": "Stable Diffusion Models Download & Guide - The Right GPT",
+      "url": "https://therightgpt.com/stable-diffusion-guides/models/",
+      "snippet": "Complete guide to Stable Diffusion models in 2026. Learn where to safely download checkpoints, install realistic models, understand model architecture, and manage your collection. Includes direct download links for SD 1.5, SDXL, Flux.1, and custom models."
+    }
+  ]
+}

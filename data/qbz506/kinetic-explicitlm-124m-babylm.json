@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "qbz506/kinetic-explicitlm-124m-babylm",
+  "slug": "qbz506-kinetic-explicitlm-124m-babylm",
+  "author": "qbz506",
+  "url": "https://huggingface.co/qbz506/kinetic-explicitlm-124m-babylm",
+  "created_at": "2026-08-27T01:50:14.000Z",
+  "updated_at": "2026-08-27T01:51:01.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 495866437,
+  "storage_human": "496 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "[2511.01581] ExplicitLM: Decoupling Knowledge from Parameters via ...",
+      "url": "https://arxiv.org/abs/2511.01581",
+      "snippet": "Large language models suffer from knowledge staleness and lack of interpretability due to implicit knowledge storage across entangled network parameters, preventing targeted updates and reasoning transparency. We propose ExplicitLM, a novel architecture featuring a million-scale external memory bank storing human-readable knowledge as token sequences, enabling direct inspection and ..."
+    },
+    {
+      "title": "ExplicitLM: Decoupling Knowledge from Parameters via Explicit Memory Banks",
+      "url": "https://arxiv.org/html/2511.01581v1",
+      "snippet": "We presented ExplicitLM, a novel language model architecture that fundamentally transforms knowledge storage from implicit distributed representations to an explicit, interpretable Memory Bank system."
+    },
+    {
+      "title": "ExplicitLM: Decoupling Knowledge from Parameters via Explicit Memory ...",
+      "url": "https://ui.adsabs.harvard.edu/abs/2025arXiv251101581Y/abstract",
+      "snippet": "Large language models suffer from knowledge staleness and lack of interpretability due to implicit knowledge storage across entangled network parameters, preventing targeted updates and reasoning transparency. We propose ExplicitLM, a novel architecture featuring a million-scale external memory bank storing human-readable knowledge as token sequences, enabling direct inspection and ..."
+    },
+    {
+      "title": "ExplicitLM: Decoupling Knowledge from Parameters via Explicit Memory ...",
+      "url": "https://www.alphaxiv.org/resources/2511.01581v1",
+      "snippet": "View recent discussion. Abstract: Large language models suffer from knowledge staleness and lack of interpretability due to implicit knowledge storage across entangled network parameters, preventing targeted updates and reasoning transparency. We propose ExplicitLM, a novel architecture featuring a million-scale external memory bank storing human-readable knowledge as token sequences, enabling ..."
+    },
+    {
+      "title": "qbz506 (SS) - Hugging Face",
+      "url": "https://huggingface.co/qbz506/datasets",
+      "snippet": "Sort: Recently updated. qbz506/psalm-corpora. Viewer • Updated about 4 hours ago • 427k. qbz506/pramana-nyaya-stage1. Viewer • Updated 5 days ago • 55 • 44 • 1"
+    }
+  ]
+}

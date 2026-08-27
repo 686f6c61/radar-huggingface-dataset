@@ -5,16 +5,16 @@
   "author": "kerasformers",
   "url": "https://huggingface.co/kerasformers/qwen3-1.7b-base",
   "created_at": "2026-07-26T02:31:03.000Z",
-  "updated_at": "2026-08-26T03:36:58.000Z",
+  "updated_at": "2026-08-26T21:56:54.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
-  "library": "kerasformers",
+  "library": "zeromodels",
   "languages": [
     "en"
   ],
   "tags": [
-    "kerasformers",
+    "zeromodels",
     "keras",
     "qwen3",
     "qwen3-dense",

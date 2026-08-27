@@ -1,0 +1,78 @@
+{
+  "schema": 1,
+  "id": "digiphyte/fluister-turbo-mlx",
+  "slug": "digiphyte-fluister-turbo-mlx",
+  "author": "digiphyte",
+  "url": "https://huggingface.co/digiphyte/fluister-turbo-mlx",
+  "created_at": "2026-08-27T06:02:22.000Z",
+  "updated_at": "2026-08-27T06:03:37.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "automatic-speech-recognition",
+  "library": "mlx",
+  "languages": [
+    "af",
+    "en"
+  ],
+  "tags": [
+    "mlx",
+    "whisper",
+    "fluister",
+    "mlx-whisper",
+    "afrikaans",
+    "english",
+    "south-africa",
+    "apple-silicon",
+    "quantized",
+    "automatic-speech-recognition",
+    "af",
+    "en",
+    "base_model:openai/whisper-large-v3-turbo",
+    "base_model:finetune:openai/whisper-large-v3-turbo",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 863659701,
+  "storage_human": "864 MB",
+  "base_model": "openai/whisper-large-v3-turbo",
+  "formats": [
+    "mlx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "digiphyte/fluister-turbo · Hugging Face",
+      "url": "https://huggingface.co/digiphyte/fluister-turbo",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "digiphyte/fluister-turbo-transformers · Hugging Face",
+      "url": "https://huggingface.co/digiphyte/fluister-turbo-transformers",
+      "snippet": "Instructions to use digiphyte/fluister-turbo-transformers with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Libraries Transformers How to use digiphyte/fluister-turbo-transformers with Transformers: # Use a pipeline as a high-level helper from transformers import pipeline pipe = pipeline (\"automatic-speech-recognition\", model=\"digiphyte/fluister ..."
+    },
+    {
+      "title": "fluister-turbo-transformers API & Inference Endpoint | FriendliAI",
+      "url": "https://friendli.ai/models/digiphyte/fluister-turbo-transformers",
+      "snippet": "Run fluister-turbo-transformers with FriendliAI inference. Fluister is a South African Whisper."
+    },
+    {
+      "title": "GitHub - raullenchai/awesome-mlx: A curated list of awesome projects ...",
+      "url": "https://github.com/raullenchai/awesome-mlx",
+      "snippet": "A curated list of awesome projects, tools, models, and resources for Apple MLX — the ML framework for Apple Silicon. Run AI models on your Mac at full speed. This list covers everything built on MLX — inference servers, training tools, audio/speech/vision models, Swift packages, and more. Whether you want a ChatGPT-like experience offline or you&#x27;re building an AI app, start here."
+    },
+    {
+      "title": "whispermlx · PyPI",
+      "url": "https://pypi.org/project/whispermlx/",
+      "snippet": "Speaker Diarization Requires a Hugging Face access token and acceptance of the pyannote speaker-diarization-community-1 model agreement. Acknowledgements Built on top of WhisperX by Max Bain et al., mlx-whisper, pyannote-audio, and OpenAI Whisper."
+    }
+  ]
+}

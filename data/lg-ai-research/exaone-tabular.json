@@ -5,7 +5,7 @@
   "author": "LG-AI-Research",
   "url": "https://huggingface.co/LG-AI-Research/EXAONE-Tabular",
   "created_at": "2026-07-31T09:09:13.000Z",
-  "updated_at": "2026-08-24T05:29:41.000Z",
+  "updated_at": "2026-08-27T02:12:01.000Z",
   "license": "exaone",
   "license_family": "unknown",
   "pipeline_tag": "tabular-classification",
@@ -20,6 +20,7 @@
     "pytorch",
     "safetensors",
     "exaone",
+    "arxiv:2608.25774",
     "license:other",
     "region:us"
   ],
@@ -28,7 +29,7 @@
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
-  "storage_bytes": 1009165936,
+  "storage_bytes": 1010493412,
   "storage_human": "1.0 GB",
   "base_model": null,
   "formats": [

@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "aakanshajagga/lunarsync",
+  "slug": "aakanshajagga-lunarsync",
+  "author": "aakanshajagga",
+  "url": "https://huggingface.co/aakanshajagga/lunarsync",
+  "created_at": "2026-08-27T08:46:27.000Z",
+  "updated_at": "2026-08-27T08:46:28.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - gokisto/lunarsyncc: An ultrafast, yet simple web proxy",
+      "url": "https://github.com/gokisto/lunarsyncc",
+      "snippet": "An ultrafast, yet simple web proxy. Contribute to gokisto/lunarsyncc development by creating an account on GitHub."
+    },
+    {
+      "title": "GitHub - Primelus/lunarsyncdd: An ultrafast, yet simple web proxy",
+      "url": "https://github.com/Primelus/lunarsyncdd",
+      "snippet": "An ultrafast, yet simple web proxy. Contribute to Primelus/lunarsyncdd development by creating an account on GitHub."
+    },
+    {
+      "title": "LunaRenderAI - Realistic AI Image Generator",
+      "url": "https://lunarenderai.com/en",
+      "snippet": "Create ultra realistic AI images. Fast, private and uncensored."
+    },
+    {
+      "title": "README.md · soiz1/lunarsync at main - Hugging Face",
+      "url": "https://huggingface.co/spaces/GPT-free-api/lunarsync/blob/main/README.md",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GitHub - glassuser2017/lunarsyncc: An ultrafast, yet simple web proxy",
+      "url": "https://github.com/glassuser2017/lunarsyncc",
+      "snippet": "Lunarsync The best place to evade internet censorship with 200+ games and a ultrafast proxy."
+    }
+  ]
+}

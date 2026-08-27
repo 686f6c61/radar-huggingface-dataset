@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "chanubc/human-move-transformer",
+  "slug": "chanubc-human-move-transformer",
+  "author": "chanubc",
+  "url": "https://huggingface.co/chanubc/human-move-transformer",
+  "created_at": "2026-08-27T08:17:19.000Z",
+  "updated_at": "2026-08-27T08:17:28.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "trajectory-prediction",
+    "pedestrian",
+    "robotics",
+    "safety",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1153194,
+  "storage_human": "1 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "chanubc/human-move-lstm · Hugging Face",
+      "url": "https://huggingface.co/chanubc/human-move-lstm",
+      "snippet": "chanubc / human-move-lstm like 0 Other PyTorch ONNX trajectory-prediction human-motion lstm multimodal robotics safety License:mit Model card FilesFiles and versions xet Community Copy to bucket new human-move-lstm — 사람 이동 궤적 멀티모달 예측기 구조 입출력 계약 평가 지표 위치 오차 — ADE / FDE (전체 val 윈도우 8,646) 안전 recall — 정지반경 진입 ..."
+    },
+    {
+      "title": "Models - Hugging Face",
+      "url": "https://huggingface.co/models?sort=downloads",
+      "snippet": "Explore machine learning models."
+    },
+    {
+      "title": "Robust Human Motion Forecasting using Transformer-based Model",
+      "url": "https://arxiv.org/html/2302.08274v3",
+      "snippet": "Our proposed model, named as 2 Channel-Transformer (2CH-TR), allows to cope with high levels of occlusions through its independence in 2 channels, and promotes the 3D motion forecasting, taking into account its applicability in the field of robotics."
+    },
+    {
+      "title": "Google Scholar",
+      "url": "https://scholar.google.com/",
+      "snippet": "Google Scholar provides a simple way to broadly search for scholarly literature. Search across a wide variety of disciplines and sources: articles, theses, books, abstracts and court opinions."
+    },
+    {
+      "title": "Transformer (deep learning) - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Transformer_(deep_learning)",
+      "snippet": "AI boom era As early as spring 2017, even before the \"Attention is all you need\" preprint was published, one of the co-authors applied the \"decoder-only\" variation of the architecture to generate fictitious Wikipedia articles. [35] Transformer architecture is now used alongside many generative models that contribute to the ongoing AI boom."
+    }
+  ]
+}

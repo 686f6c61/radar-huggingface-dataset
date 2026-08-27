@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "provsalt/Qwen3.8-Flash-Next-NVFP4-PLE-NVFP4",
+  "slug": "provsalt-qwen3-8-flash-next-nvfp4-ple-nvfp4",
+  "author": "provsalt",
+  "url": "https://huggingface.co/provsalt/Qwen3.8-Flash-Next-NVFP4-PLE-NVFP4",
+  "created_at": "2026-08-27T08:47:31.000Z",
+  "updated_at": "2026-08-27T09:17:57.000Z",
+  "license": "qwen-community-1.0",
+  "license_family": "unknown",
+  "pipeline_tag": "image-text-to-text",
+  "library": "vllm",
+  "languages": [],
+  "tags": [
+    "vllm",
+    "safetensors",
+    "qwen4_exp",
+    "qwen",
+    "qwen3.8",
+    "qwen4",
+    "modelopt",
+    "nvfp4",
+    "custom-code",
+    "image-text-to-text",
+    "conversational",
+    "base_model:Inferact/Qwen3.8-Flash-Next-NVFP4",
+    "base_model:quantized:Inferact/Qwen3.8-Flash-Next-NVFP4",
+    "license:other",
+    "8-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 92743589779,
+  "parameters_human": "92.74B",
+  "storage_bytes": 109227527886,
+  "storage_human": "109.2 GB",
+  "base_model": "Inferact/Qwen3.8-Flash-Next-NVFP4",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Qwen3.8-Flash-Next-NVFP4 · 2× DGX Spark · SGLang TP2",
+      "url": "https://github.com/MiaAI-Lab/Qwen3.8-Flash-Next-Dual-DGX-Sparks",
+      "snippet": "Never --load-format dummy this model on GB10. The dummy-weights initializer upcasts fp8 parameters to fp16 as a temporary copy: the 51.2 GB fp8 PLE n-gram table briefly demands >150 GB on a 121 GB unified memory part → wedge."
+    },
+    {
+      "title": "GitHub - QwenLM/Qwen3.8-Flash-Next: Qwen3.8-Flash-Next is the ...",
+      "url": "https://github.com/QwenLM/Qwen3.8-Flash-Next/",
+      "snippet": "Qwen3.8-Flash-Next upgrades the model systematically along four aspects — attention, residual, embedding and optimization — improving model capability while further optimizing computational efficiency, model capacity and training stability: Attention A GDN + QSA hybrid architecture."
+    },
+    {
+      "title": "primitive-ai/Qwen3.8-Flash-Next-mixed-NVFP4-FP8 · Hugging Face",
+      "url": "https://huggingface.co/primitive-ai/Qwen3.8-Flash-Next-mixed-NVFP4-FP8",
+      "snippet": "The 180B Flash-Next on one GPU, house-mixed. Same single-96 GB-Blackwell deployment as our NVFP4 build, with the full-attention layers at FP8 in our usual compressed-tensors mixed-precision format."
+    },
+    {
+      "title": "Qwen/Qwen3.8-Flash-Next | vLLM Recipes",
+      "url": "https://recipes.vllm.ai/Qwen/Qwen3.8-Flash-Next",
+      "snippet": "Overview Qwen3.8-Flash-Next is a multimodal, ultra-sparse Mixture-of-Experts model. It has 125B parameters, including an additional 51B N-gram embedding table, while activating 6B parameters per token. The architecture combines four main ideas: GDN + QSA: three of every four layers use Gated DeltaNet to compress history; the fourth uses Qwen Sparse Attention for precise long-range retrieval ..."
+    },
+    {
+      "title": "Qwen3.8-Flash-Next NVFP4 on 2x DGX Spark full multimodal: 70 tok/s peak ...",
+      "url": "https://forums.developer.nvidia.com/t/qwen3-8-flash-next-nvfp4-on-2x-dgx-spark-full-multimodal-70-tok-s-peak-47-typical/381428",
+      "snippet": "Qwen3.8-Flash-Next NVFP4 on 2x DGX Spark — SGLang TP2, MTP4, CUDA graphs, full multimodal: 70 tok/s peak / 47 typical Since a few folks asked about the 2-Spark run mentioned earlier in the thread — here&#x27;s the full recipe, including the two one-line patches that make it work on GB10/SM121 and the day-0 bugs we hit so you don&#x27;t have to."
+    }
+  ]
+}

@@ -5,16 +5,16 @@
   "author": "kerasformers",
   "url": "https://huggingface.co/kerasformers/internvl3-8b",
   "created_at": "2026-08-17T02:53:50.000Z",
-  "updated_at": "2026-08-25T21:57:04.000Z",
+  "updated_at": "2026-08-26T21:52:31.000Z",
   "license": "qwen",
   "license_family": "unknown",
   "pipeline_tag": "image-text-to-text",
-  "library": "kerasformers",
+  "library": "zeromodels",
   "languages": [
     "en"
   ],
   "tags": [
-    "kerasformers",
+    "zeromodels",
     "keras",
     "internvl",
     "internvl3",

@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "chiranjeevisagi/wav2vec2-vedic-aligner",
+  "slug": "chiranjeevisagi-wav2vec2-vedic-aligner",
+  "author": "chiranjeevisagi",
+  "url": "https://huggingface.co/chiranjeevisagi/wav2vec2-vedic-aligner",
+  "created_at": "2026-08-27T07:34:29.000Z",
+  "updated_at": "2026-08-27T07:36:05.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "automatic-speech-recognition",
+  "library": "transformers",
+  "languages": [
+    "sa"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "wav2vec2",
+    "automatic-speech-recognition",
+    "ctc",
+    "sanskrit",
+    "vedic-chanting",
+    "forced-alignment",
+    "sa",
+    "base_model:addy88/wav2vec2-sanskrit-stt",
+    "base_model:finetune:addy88/wav2vec2-sanskrit-stt",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 94423235,
+  "parameters_human": "94.4M",
+  "storage_bytes": 377718732,
+  "storage_human": "378 MB",
+  "base_model": "addy88/wav2vec2-sanskrit-stt",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "forced_alignment_tutorial.ipynb - Colab",
+      "url": "https://colab.research.google.com/github/pytorch/audio/blob/gh-pages/main/_downloads/160356f33d521341c47ec6b1406a3c2e/forced_alignment_tutorial.ipynb",
+      "snippet": "Note This tutorial was originally written to illustrate a usecase for Wav2Vec2 pretrained model. TorchAudio now has a set of APIs designed for forced alignment. The CTC forced alignment API tutorial _ illustrates the usage of :py:func: torchaudio.functional.forced_align, which is the core API. If you are looking to align your corpus, we recommend to use :py:class: torchaudio.pipelines ..."
+    },
+    {
+      "title": "Forced Alignment with Wav2Vec2 — Torchaudio 2.8.0 documentation",
+      "url": "https://docs.pytorch.org/audio/2.8/tutorials/forced_alignment_tutorial.html",
+      "snippet": "Note This tutorial was originally written to illustrate a usecase for Wav2Vec2 pretrained model. TorchAudio now has a set of APIs designed for forced alignment. The CTC forced alignment API tutorial illustrates the usage of torchaudio.functional.forced_align (), which is the core API. If you are looking to align your corpus, we recommend to use torchaudio.pipelines.Wav2Vec2FABundle, which ..."
+    },
+    {
+      "title": "Forced Alignment with Wav2Vec2 — Torchaudio 2.11 documentation",
+      "url": "https://docs.pytorch.org/audio/stable/tutorials/forced_alignment_tutorial.html",
+      "snippet": "Note This tutorial was originally written to illustrate a usecase for Wav2Vec2 pretrained model. TorchAudio now has a set of APIs designed for forced alignment. The CTC forced alignment API tutorial illustrates the usage of torchaudio.functional.forced_align (), which is the core API. If you are looking to align your corpus, we recommend to use torchaudio.pipelines.Wav2Vec2FABundle, which ..."
+    },
+    {
+      "title": "forced_alignment_with_torchaudio_tutorial.ipynb - Colab",
+      "url": "https://colab.research.google.com/github/pytorch/tutorials/blob/gh-pages/_downloads/73f018bc28451dc1e7a8b5dc1204833f/forced_alignment_with_torchaudio_tutorial.ipynb",
+      "snippet": "Forced Alignment with Wav2Vec2 Author Moto Hira _ This tutorial shows how to align transcript to speech with torchaudio, using CTC segmentation algorithm described in CTC-Segmentation of Large Corpora for German End-to-end Speech Recognition _."
+    },
+    {
+      "title": "Wav2Vec2 - Hugging Face",
+      "url": "https://huggingface.co/docs/transformers/v4.40.2/model_doc/wav2vec2",
+      "snippet": "Wav2Vec2 is a speech model that accepts a float array corresponding to the raw waveform of the speech signal. Wav2Vec2 model was trained using connectionist temporal classification (CTC) so the model output has to be decoded using Wav2Vec2CTCTokenizer."
+    }
+  ]
+}

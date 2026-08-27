@@ -5,7 +5,7 @@
   "author": "nm-testing",
   "url": "https://huggingface.co/nm-testing/w8a16_grouped_quant-e2e",
   "created_at": "2026-07-25T05:56:16.000Z",
-  "updated_at": "2026-08-26T03:07:21.000Z",
+  "updated_at": "2026-08-26T22:07:29.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": null,
@@ -22,8 +22,8 @@
   "trending_score": 0,
   "parameters": 1100048384,
   "parameters_human": "1.10B",
-  "storage_bytes": 54842100192,
-  "storage_human": "54.8 GB",
+  "storage_bytes": 57334922928,
+  "storage_human": "57.3 GB",
   "base_model": null,
   "formats": [
     "safetensors"

@@ -5,7 +5,7 @@
   "author": "bluevoid-pl",
   "url": "https://huggingface.co/bluevoid-pl/Muse-Glimmer-30B-pruned-GGUF",
   "created_at": "2026-08-15T00:18:14.000Z",
-  "updated_at": "2026-08-16T17:06:54.000Z",
+  "updated_at": "2026-08-26T12:12:21.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "image-text-to-text",

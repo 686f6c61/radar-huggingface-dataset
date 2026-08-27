@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "ddalcu/Qwen3.8-Flash-Next-MLX-Serve-4bit",
+  "slug": "ddalcu-qwen3-8-flash-next-mlx-serve-4bit",
+  "author": "ddalcu",
+  "url": "https://huggingface.co/ddalcu/Qwen3.8-Flash-Next-MLX-Serve-4bit",
+  "created_at": "2026-08-26T17:03:35.000Z",
+  "updated_at": "2026-08-27T02:35:48.000Z",
+  "license": "qwen-community-1.0",
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "mlx-serve",
+  "languages": [],
+  "tags": [
+    "mlx-serve",
+    "safetensors",
+    "qwen4_exp",
+    "mlx",
+    "moe",
+    "sparse-attention",
+    "ngram-embedding",
+    "text-generation",
+    "conversational",
+    "base_model:Qwen/Qwen3.8-Flash-Next",
+    "base_model:quantized:Qwen/Qwen3.8-Flash-Next",
+    "license:other",
+    "4-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 20588894099,
+  "parameters_human": "20.59B",
+  "storage_bytes": 105436151376,
+  "storage_human": "105.4 GB",
+  "base_model": "Qwen/Qwen3.8-Flash-Next",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "labhraighlep/Qwen3.8-Flash-Next-MLX-Serve-4bit · Hugging Face",
+      "url": "https://huggingface.co/labhraighlep/Qwen3.8-Flash-Next-MLX-Serve-4bit",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Qwen3.8-Flash-Next: How to Run Locally - unsloth.ai",
+      "url": "https://unsloth.ai/docs/models/qwen3.8-next",
+      "snippet": "Qwen3.8-Flash-Next is a new open-weight, 125B parameter MoE multimodal model from Qwen. Built on the new Qwen4 architecture, it supports a 262K context window and advanced reasoning."
+    },
+    {
+      "title": "David Dalcu on X: \"Qwen 3.8 Flash-Next is alive on MLX-Serve, under ...",
+      "url": "https://x.com/ddalcu/status/2092652972845027444",
+      "snippet": "Qwen 3.8 Flash-Next is alive on MLX-Serve, under 128gb, working on performance next. MTP gets ~20tok a second, no MTP gets 30+ ... investigating why.."
+    },
+    {
+      "title": "ddalcu/Qwen3.8-27B-MLX-Serve-4bit · Hugging Face",
+      "url": "https://huggingface.co/ddalcu/Qwen3.8-27B-MLX-Serve-4bit",
+      "snippet": "ddalcu / Qwen3.8-27B-MLX-Serve-4bit like 1 Image-Text-to-Text MLX Safetensors qwen3_5 mlx-serve apple-silicon vision-language mtp speculative-decoding conversational 4-bit precision License:apache-2.0 Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "Qwen/Qwen3.8-Flash-Next | vLLM Recipes",
+      "url": "https://recipes.vllm.ai/Qwen/Qwen3.8-Flash-Next",
+      "snippet": "Overview Qwen3.8-Flash-Next is a multimodal, ultra-sparse Mixture-of-Experts model. It has 125B parameters, including an additional 51B N-gram embedding table, while activating 6B parameters per token. The architecture combines four main ideas: GDN + QSA: three of every four layers use Gated DeltaNet to compress history; the fourth uses Qwen Sparse Attention for precise long-range retrieval ..."
+    }
+  ]
+}

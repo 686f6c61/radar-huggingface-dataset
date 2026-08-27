@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "adamlaurent87/mocov3-finetuned",
+  "slug": "adamlaurent87-mocov3-finetuned",
+  "author": "adamlaurent87",
+  "url": "https://huggingface.co/adamlaurent87/mocov3-finetuned",
+  "created_at": "2026-08-27T08:30:06.000Z",
+  "updated_at": "2026-08-27T08:30:15.000Z",
+  "license": "bsd-3-clause",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "mocov3",
+    "pytorch",
+    "matching",
+    "license:bsd-3-clause",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 24832,
+  "parameters_human": "24832",
+  "storage_bytes": 99808,
+  "storage_human": "99808 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "adamlaurent87 (Adam Laurent) - Hugging Face",
+      "url": "https://huggingface.co/adamlaurent87",
+      "snippet": "models1 adamlaurent87/model_386927219_efficientformer_base Updated about 3 hours ago"
+    },
+    {
+      "title": "mmpretrain/configs/mocov3/README.md at main · open-mmlab ... - GitHub",
+      "url": "https://github.com/open-mmlab/mmpretrain/blob/main/configs/mocov3/README.md",
+      "snippet": "OpenMMLab Pre-training Toolbox and Benchmark. Contribute to open-mmlab/mmpretrain development by creating an account on GitHub."
+    },
+    {
+      "title": "MoCo v3 — MMSelfSup 1.0.0 documentation",
+      "url": "https://mmselfsup.readthedocs.io/en/stable/papers/mocov3.html",
+      "snippet": "Models and Benchmarks ¶ In this page, we provide benchmarks as much as possible to evaluate our pre-trained models. If not mentioned, all models are pre-trained on ImageNet-1k dataset."
+    },
+    {
+      "title": "moco-v3/transfer at main · facebookresearch/moco-v3 · GitHub",
+      "url": "https://github.com/facebookresearch/moco-v3/tree/main/transfer",
+      "snippet": "README.md MoCo v3 Transfer Learning with ViT This folder includes the transfer learning experiments on CIFAR-10, CIFAR-100, Flowers and Pets datasets. We provide finetuning recipes for the ViT-Base model."
+    },
+    {
+      "title": "LLM Leaderboard 2026: Compare 300+ Top AI Models by Intelligence, Speed ...",
+      "url": "https://llm-stats.com/leaderboards/llm-leaderboard",
+      "snippet": "The LLM Leaderboard — independent ranking of GPT, Claude, Gemini, Llama, DeepSeek and 300+ AI models by intelligence, speed and price. Filter by provider, license, modality and context window; sort by every benchmark. Composite LLM Stats Score updated continuously from public benchmarks and live API metrics."
+    }
+  ]
+}

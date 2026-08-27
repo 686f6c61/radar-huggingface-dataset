@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "samuelyoung/multitask-test61",
+  "slug": "samuelyoung-multitask-test61",
+  "author": "samuelyoung",
+  "url": "https://huggingface.co/samuelyoung/multitask-test61",
+  "created_at": "2026-08-27T11:24:38.000Z",
+  "updated_at": "2026-08-27T11:24:47.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "tiny_transformer",
+    "pytorch",
+    "tiny-transformer",
+    "multitask",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 24832,
+  "parameters_human": "24832",
+  "storage_bytes": 99808,
+  "storage_human": "99808 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "samuelyoung (S. Young) - Hugging Face",
+      "url": "https://huggingface.co/samuelyoung/models",
+      "snippet": "User profile of S. Young on Hugging Face"
+    },
+    {
+      "title": "Multi — one task, the right AI workflow",
+      "url": "https://getmulti.ai/",
+      "snippet": "Multi puts 300+ models from every major lab to work across four workflows, so you deploy the best AI for each task instead of forcing one to do it all. Using the right model for the right project is the advantage most people leave on the table."
+    },
+    {
+      "title": "arXiv.org e-Print archive",
+      "url": "https://arxiv.org/pdf/2404.18961",
+      "snippet": "arXiv.org e-Print archive"
+    },
+    {
+      "title": "AI models attempted &#x27;unsanctioned&#x27; cyberattacks in tests, watchdog says",
+      "url": "https://www.aljazeera.com/economy/2026/8/5/ai-models-attempted-unsanctioned-cyberattacks-in-tests-watchdog-says",
+      "snippet": "AI models attempted &#x27;unsanctioned&#x27; cyberattacks in tests, watchdog says AI Security Institute says Mythos 5 attempted to insert malicious code into an open-source project without human direction."
+    },
+    {
+      "title": "MMLU - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/MMLU",
+      "snippet": "MMLU Measuring Massive Multitask Language Understanding (MMLU) is a popular benchmark for evaluating the capabilities of large language models. It inspired several other versions and spin-offs, such as MMLU-Pro [1], MMMLU [2] and MMLU-Redux [3]."
+    }
+  ]
+}

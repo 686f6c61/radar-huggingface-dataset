@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "ProprietaryLegal/Thomson-1.0-Small-NVFP4",
+  "slug": "proprietarylegal-thomson-1-0-small-nvfp4",
+  "author": "ProprietaryLegal",
+  "url": "https://huggingface.co/ProprietaryLegal/Thomson-1.0-Small-NVFP4",
+  "created_at": "2026-08-27T05:54:47.000Z",
+  "updated_at": "2026-08-27T05:54:47.000Z",
+  "license": "polyform-strict-1-0-0",
+  "license_family": "unknown",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "fp4",
+    "nvfp4",
+    "vllm",
+    "llm-compressor",
+    "compressed-tensors",
+    "legal",
+    "tax",
+    "journalism",
+    "image-text-to-text",
+    "base_model:thomsonreuters/Thomson-1.0-Small",
+    "base_model:finetune:thomsonreuters/Thomson-1.0-Small",
+    "license:other",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": "thomsonreuters/Thomson-1.0-Small",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Thomson: a purpose-built foundation model for professionals",
+      "url": "https://www.thomsonreuters.com/en/thomson-llm",
+      "snippet": "Purpose-built for professionals, tested by academics Until now, the most capable AI models have come from frontier labs that focus only on generalized capabilities for any user. Thomson doesn&#x27;t — it starts from a strong, open-source foundation, then trains on decades of authoritative Thomson Reuters proprietary legal, tax, and regulatory content that no general-purpose model can touch. The ..."
+    },
+    {
+      "title": "Thomson Reuters Built Its Own AI Model That Now Ranks Among the World&#x27;s ...",
+      "url": "https://www.thomsonreuters.com/en-us/posts/innovation/thomson-reuters-built-its-own-ai-model-that-now-ranks-among-the-worlds-best/",
+      "snippet": "The most capable AI models no longer come only from frontier AI labs. One now comes from Thomson Reuters. Today, we are sharing early benchmarking results for Thomson, a first of its kind AI model. Across a range of benchmarks assessing legal and general capabilities, Thomson performed competitively with the strongest frontier models on the market, including Claude Opus 4.8, and ahead of GPT-5 ..."
+    },
+    {
+      "title": "Thomson Reuters Built Its Own LLM for Just $40M - Enterprise DNA",
+      "url": "https://enterprisedna.co/resources/news/thomson-reuters-thomson-llm-domain-specific-ai-enterprise-august-2026/",
+      "snippet": "Thomson Reuters built a proprietary legal AI model on $40M and its own data. Here&#x27;s what it signals for enterprise AI strategy."
+    },
+    {
+      "title": "TR Launches Thomson 1.0 - Its Own LLM - Artificial Lawyer",
+      "url": "https://www.artificiallawyer.com/2026/08/24/tr-launches-thomson-1-0-its-own-llm/",
+      "snippet": "After months of work, TR has launched Thomson 1.0, its own LLM, trained on its own data - and it shows a performance that is higher than some general models. Artificial Lawyer interviewed TR CEO, Steve Hasker, in-depth, about the move, its significance, and the company&#x27;s wider legal AI strategy ..."
+    },
+    {
+      "title": "Thomson Reuters Says Its Homegrown AI Model Now Rivals the Frontier ...",
+      "url": "https://www.lawnext.com/2026/08/thomson-reuters-says-its-homegrown-ai-model-now-rivals-the-frontier-labs-i-take-a-closer-look-at-the-benchmarks.html",
+      "snippet": "Thomson Reuters says the large language model it has been quietly building in-house now performs competitively with the best general-purpose AI models in the world, and it has released its first bench..."
+    }
+  ]
+}

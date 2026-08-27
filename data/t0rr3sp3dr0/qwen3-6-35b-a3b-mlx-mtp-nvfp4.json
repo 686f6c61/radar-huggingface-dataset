@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "t0rr3sp3dr0/Qwen3.6-35B-A3B-MLX-MTP-nvfp4",
+  "slug": "t0rr3sp3dr0-qwen3-6-35b-a3b-mlx-mtp-nvfp4",
+  "author": "t0rr3sp3dr0",
+  "url": "https://huggingface.co/t0rr3sp3dr0/Qwen3.6-35B-A3B-MLX-MTP-nvfp4",
+  "created_at": "2026-08-27T10:06:30.000Z",
+  "updated_at": "2026-08-27T10:08:57.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "mlx",
+  "languages": [],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "qwen3_5_moe",
+    "mtp",
+    "base_model:mlx-community/Qwen3.6-35B-A3B-MTP-bf16",
+    "base_model:quantized:mlx-community/Qwen3.6-35B-A3B-MTP-bf16",
+    "license:apache-2.0",
+    "4-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 9712130928,
+  "parameters_human": "9.71B",
+  "storage_bytes": 22120382995,
+  "storage_human": "22.1 GB",
+  "base_model": "mlx-community/Qwen3.6-35B-A3B-MTP-bf16",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Qwen/Qwen3.6-35B-A3B · Hugging Face",
+      "url": "https://huggingface.co/Qwen/Qwen3.6-35B-A3B",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "nvidia/Qwen3.6-35B-A3B-NVFP4 · Hugging Face",
+      "url": "https://huggingface.co/nvidia/Qwen3.6-35B-A3B-NVFP4",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Best Way to Run Qwen 3.6 35B MoE Locally: VRAM, Speed, Setup",
+      "url": "https://insiderllm.com/guides/best-way-run-qwen-3-6-35b-moe-locally/",
+      "snippet": "Qwen 3.6-35B-A3B has 35B total params but only 3B active per token. Real tok/s on RTX 3090, 4090, 5070 Ti, dual 5060 Ti, and M3 Ultra. Quants and setup."
+    },
+    {
+      "title": "Qwen 3.6 Complete Guide: 27B Dense, 35B-A3B MoE, and Which to Use",
+      "url": "https://insiderllm.com/guides/qwen-3-6-local-ai-guide/",
+      "snippet": "Qwen 3.6 landed in two open-weight flavors: 27B dense and 35B-A3B MoE. Benchmarks, hardware fit, and which variant to run on your GPU."
+    },
+    {
+      "title": "How to Run Qwen 3.6 Locally - 27B Dense, 35B MoE, and Coding Variants ...",
+      "url": "https://dev.to/purpledoubled/how-to-run-qwen-36-locally-27b-dense-35b-moe-and-coding-variants-setup-guide-4di",
+      "snippet": "The 35B MoE coding-specialised variants are tuned on SWE-bench training data. The coding NVFP4 variant scores in the same ballpark as Claude 3.5 Sonnet on SWE-bench-verified at a fraction of the inference cost. For day-to-day coding inside LU&#x27;s Codex agent, the 27B dense Q4_K_M is the better default - consistent quality, no MoE-routing variance."
+    }
+  ]
+}

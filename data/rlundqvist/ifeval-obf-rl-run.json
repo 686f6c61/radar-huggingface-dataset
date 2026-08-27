@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "rlundqvist/ifeval-obf-rl-run",
+  "slug": "rlundqvist-ifeval-obf-rl-run",
+  "author": "rlundqvist",
+  "url": "https://huggingface.co/rlundqvist/ifeval-obf-rl-run",
+  "created_at": "2026-08-27T02:04:45.000Z",
+  "updated_at": "2026-08-27T02:04:45.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "rlundqvist/ifeval-obf-rl-preferences · Datasets at Hugging Face",
+      "url": "https://huggingface.co/datasets/rlundqvist/ifeval-obf-rl-preferences",
+      "snippet": "Datasets: rlundqvist / ifeval-obf-rl-preferences like 0 Tasks: Text Classification Modalities: Text Formats: json Size: 10K - 100K Tags: reward-modeling evaluation-awareness rlaif ai-safety preference-data Libraries: Datasets Dask Polars + 1 License: mit Dataset card Data Studio FilesFiles and versions xet Community Dataset Viewer Auto-converted to Parquet API Embed Duplicate Data Studio ..."
+    },
+    {
+      "title": "google-research/instruction_following_eval/README.md at master - GitHub",
+      "url": "https://github.com/google-research/google-research/blob/master/instruction_following_eval/README.md",
+      "snippet": "IFEval: Instruction Following Eval This is not an officially supported Google product. This repository contains source code and data for Instruction Following Evaluation for Large Language Models"
+    },
+    {
+      "title": "README.md · google/IFEval at main - Hugging Face",
+      "url": "https://huggingface.co/datasets/google/IFEval/blob/main/README.md",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Instruction-Following Evaluation for Large Language Models",
+      "url": "https://ar5iv.labs.arxiv.org/html/2311.07911",
+      "snippet": "In this paper, we introduce IFEval, a new approach for evaluating the proficiency of language models in instruction following. The metric centers around a distinct category of instructions termed \"verifiable instructions\", which are defined as instructions amenable to objective verification of compliance (Figure 1). Examples of such instructions are: \"write 450 to 500 words\", \"your ..."
+    },
+    {
+      "title": "arXiv:2311.07911v1 [cs.CL] 14 Nov 2023",
+      "url": "https://arxiv.org/pdf/2311.07911",
+      "snippet": "ABSTRACT One core capability of Large Language Models (LLMs) is to follow natural lan-guage instructions. However, the evaluation of such abilities is not standardized: Human evaluations are expensive, slow, and not objectively reproducible, while LLM-based auto-evaluation is potentially biased or limited by the ability of the evaluator LLM. To overcome these issues, we introduce Instruction ..."
+    }
+  ]
+}

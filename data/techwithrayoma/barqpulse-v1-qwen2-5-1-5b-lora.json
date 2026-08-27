@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "techwithrayoma/barqpulse-v1-qwen2.5-1.5b-lora",
+  "slug": "techwithrayoma-barqpulse-v1-qwen2-5-1-5b-lora",
+  "author": "techwithrayoma",
+  "url": "https://huggingface.co/techwithrayoma/barqpulse-v1-qwen2.5-1.5b-lora",
+  "created_at": "2026-08-27T06:15:24.000Z",
+  "updated_at": "2026-08-27T06:17:30.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 306910832,
+  "storage_human": "307 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - TomGhostSmith/DeepSeek-Qwen2.5: Qwen2.5 is the large language ...",
+      "url": "https://github.com/TomGhostSmith/DeepSeek-Qwen2.5",
+      "snippet": "To pull a model checkpoint and run the model, use the ollama run command. You can specify a model size by adding a suffix to qwen2.5, such as :0.5b, :1.5b, :7b, or :72b:"
+    },
+    {
+      "title": "delimitter/qwen2.5-1.5b-synoema-tools-v1 · Hugging Face",
+      "url": "https://huggingface.co/delimitter/qwen2.5-1.5b-synoema-tools-v1",
+      "snippet": "Qwen2.5-Coder-1.5B — Synoema Tools v1 LoRA adapter fine-tuned on Qwen2.5-Coder-1.5B-Instruct for agentic tool-use with the Synoema MCP server. Score: 92.9% (26/28 tasks) on the Synoema MCP agentic evaluation benchmark."
+    },
+    {
+      "title": "qwen2.5:1.5b - ollama.com",
+      "url": "https://ollama.com/library/qwen2.5:1.5b",
+      "snippet": "Qwen2.5 models are pretrained on Alibaba&#x27;s latest large-scale dataset, encompassing up to 18 trillion tokens. The model supports up to 128K tokens and has multilingual support."
+    },
+    {
+      "title": "Qwen2.5 Technical Report - arXiv.org",
+      "url": "https://arxiv.org/pdf/2412.15115v1",
+      "snippet": "For smaller models, we observe that the Qwen2.5-0.5B model achieves performance that is on par with or even surpasses the Qwen2-1.5B model. This indicates that the Qwen2.5 series has optimized parameter usage, enabling mid-sized models to achieve similar performance levels to larger models from the previous generation."
+    },
+    {
+      "title": "[2412.15115] Qwen2.5 Technical Report - arXiv.org",
+      "url": "https://arxiv.org/abs/2412.15115",
+      "snippet": "In this report, we introduce Qwen2.5, a comprehensive series of large language models (LLMs) designed to meet diverse needs. Compared to previous iterations, Qwen 2.5 has been significantly improved during both the pre-training and post-training stages. In terms of pre-training, we have scaled the high-quality pre-training datasets from the previous 7 trillion tokens to 18 trillion tokens ..."
+    }
+  ]
+}

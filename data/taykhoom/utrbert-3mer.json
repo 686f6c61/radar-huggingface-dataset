@@ -5,7 +5,7 @@
   "author": "Taykhoom",
   "url": "https://huggingface.co/Taykhoom/UTRBERT-3mer",
   "created_at": "2026-05-28T21:59:56.000Z",
-  "updated_at": "2026-08-25T04:34:17.000Z",
+  "updated_at": "2026-08-26T15:56:07.000Z",
   "license": "cc-by-4.0",
   "license_family": "oss",
   "pipeline_tag": "fill-mask",

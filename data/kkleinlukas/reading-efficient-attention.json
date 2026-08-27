@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "kkleinlukas/reading-efficient-attention",
+  "slug": "kkleinlukas-reading-efficient-attention",
+  "author": "kkleinlukas",
+  "url": "https://huggingface.co/kkleinlukas/reading-efficient-attention",
+  "created_at": "2026-08-27T02:02:36.000Z",
+  "updated_at": "2026-08-27T02:02:46.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "transformer",
+    "research-notes",
+    "efficient-attention",
+    "license:cc-by-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 49600,
+  "parameters_human": "49600",
+  "storage_bytes": 198880,
+  "storage_human": "198880 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "LLM Leaderboard 2026: Compare 300+ Top AI Models by Intelligence, Speed ...",
+      "url": "https://llm-stats.com/leaderboards/llm-leaderboard",
+      "snippet": "The LLM Leaderboard — independent ranking of GPT, Claude, Gemini, Llama, DeepSeek and 300+ AI models by intelligence, speed and price. Filter by provider, license, modality and context window; sort by every benchmark. Composite LLM Stats Score updated continuously from public benchmarks and live API metrics."
+    },
+    {
+      "title": "Efficient attention mechanisms for large language models",
+      "url": "https://www.sciencedirect.com/science/article/pii/S2666389926001030",
+      "snippet": "Transformer-based architectures have become the prevailing backbone of large language models. However, the time and memory complexity of self-attention remains a fundamental obstacle to efficient long-context modeling. To address this limitation, recent research has introduced two principal categories of efficient attention mechanisms. Linear attention methods achieve linear complexity through ..."
+    },
+    {
+      "title": "Efficient Attention Mechanisms for Large Language Models:",
+      "url": "https://arxiv.org/html/2507.19595v2",
+      "snippet": "Abstract Transformer-based architectures have become the prevailing backbone of large language models. However, the quadratic time and memory complexity of self-attention remains a fundamental obstacle to efficient long-context modeling. To address this limitation, recent research has introduced two principal categories of efficient attention mechanisms. Linear attention methods achieve linear ..."
+    },
+    {
+      "title": "deepseek-v4-pro-0813 Model by Deepseek-ai | NVIDIA NIM",
+      "url": "https://build.nvidia.com/deepseek-ai/deepseek-v4-pro-0813/modelcard",
+      "snippet": "Description DeepSeek-V4-Pro-0813 is DeepSeek-AI&#x27;s official DeepSeek-V4-Pro release. It supersedes the preview model, adds a DSpark speculative-decoding module, and is designed for text generation, reasoning, coding, and agentic tool-use workflows. This model is ready for commercial or non-commercial use. Third-Party Community Consideration:"
+    },
+    {
+      "title": "Efficient Attention Mechanisms for Large Language Models: A Survey",
+      "url": "https://arxiv.org/pdf/2507.19595",
+      "snippet": "Abstract Transformer-based architectures have become the prevailing backbone of large language models. However, the quadratic time and memory complexity of self-attention remains a fundamental obstacle to efficient long-context modeling. To address this limitation, recent research has introduced two principal categories of efficient attention mechanisms. Linear attention methods achieve linear ..."
+    }
+  ]
+}

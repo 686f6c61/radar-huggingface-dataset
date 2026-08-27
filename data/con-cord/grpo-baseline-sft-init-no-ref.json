@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "con-cord/GRPO-baseline-sft-init-no-ref",
+  "slug": "con-cord-grpo-baseline-sft-init-no-ref",
+  "author": "con-cord",
+  "url": "https://huggingface.co/con-cord/GRPO-baseline-sft-init-no-ref",
+  "created_at": "2026-08-27T09:37:46.000Z",
+  "updated_at": "2026-08-27T09:41:54.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gemma3",
+    "image-text-to-text",
+    "conversational",
+    "arxiv:1910.09700",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 4300079472,
+  "parameters_human": "4.30B",
+  "storage_bytes": 17238509855,
+  "storage_human": "17.2 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GRPO Trainer · Hugging Face",
+      "url": "https://huggingface.co/docs/trl/grpo_trainer",
+      "snippet": "GRPO Trainer Overview TRL supports the GRPO Trainer for training language models, as described in the paper DeepSeekMath: Pushing the Limits of Mathematical Reasoning in Open Language Models by Zhihong Shao, Peiyi Wang, Qihao Zhu, Runxin Xu, Junxiao Song, Mingchuan Zhang, Y. K. Li, Y. Wu, Daya Guo. The abstract from the paper is the following: Mathematical reasoning poses a significant ..."
+    },
+    {
+      "title": "Baseline Comparison | om-ai-lab/VLM-R1 | DeepWiki",
+      "url": "https://deepwiki.com/om-ai-lab/VLM-R1/5.3-baseline-comparison",
+      "snippet": "The baseline comparison capabilities in VLM-R1 enable thorough evaluation of GRPO models against traditional SFT approaches. By using consistent evaluation methodologies and metrics, the system provides a fair assessment of model performance, particularly highlighting the generalization advantages of GRPO-trained models on out-of-domain data."
+    },
+    {
+      "title": "GitHub - HaoliangCheng/alignment_public: This repository implements ...",
+      "url": "https://github.com/HaoliangCheng/alignment_public",
+      "snippet": "This repository implements language model alignment techniques for mathematical reasoning. The project progressively trains language models using SFT, Expert Iteration, and GRPO to solve challengin..."
+    },
+    {
+      "title": "GitHub - verl-project/verl: verl/HybridFlow: A Flexible and Efficient ...",
+      "url": "https://github.com/verl-project/verl",
+      "snippet": "verl is flexible and easy to use with: Easy extension of diverse RL algorithms: The hybrid-controller programming model enables flexible representation and efficient execution of complex post-training dataflows. Build RL dataflows such as GRPO, PPO in a few lines of code."
+    },
+    {
+      "title": "con-cord/std-grpo_sft-with-ref · Hugging Face",
+      "url": "https://huggingface.co/con-cord/std-grpo_sft-with-ref",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    }
+  ]
+}

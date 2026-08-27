@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "parmeshvar8/carbon-accounting-audit",
+  "slug": "parmeshvar8-carbon-accounting-audit",
+  "author": "parmeshvar8",
+  "url": "https://huggingface.co/parmeshvar8/carbon-accounting-audit",
+  "created_at": "2026-08-27T11:43:08.000Z",
+  "updated_at": "2026-08-27T11:43:08.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "(PDF) Harnessing AI for Carbon Accounting: Revolutionizing ESG ...",
+      "url": "https://www.researchgate.net/publication/389438965_Harnessing_AI_for_Carbon_Accounting_Revolutionizing_ESG_Reporting_and_Sustainability",
+      "snippet": "The integration of Artificial Intelligence (AI) in Environmental, Social, and Governance (ESG) reporting is revolutionizing carbon accounting by improving accuracy, efficiency, and transparency ..."
+    },
+    {
+      "title": "Prapurna71/AI-for-Industrial-Carbon-Accounting - GitHub",
+      "url": "https://github.com/Prapurna71/AI-for-Industrial-Carbon-Accounting",
+      "snippet": "🌍 AI for Industrial Carbon Accounting This project is an AI-powered web application designed to automate carbon emissions auditing for industries."
+    },
+    {
+      "title": "[2408.09713] Carbon Footprint Accounting Driven by Large Language ...",
+      "url": "https://arxiv.org/abs/2408.09713",
+      "snippet": "Carbon footprint accounting is crucial for quantifying greenhouse gas emissions and achieving carbon neutrality.The dynamic nature of processes, accounting rules, carbon-related policies, and energy supply structures necessitates real-time updates of CFA. Traditional life cycle assessment methods rely heavily on human expertise, making near-real-time updates challenging. This paper introduces ..."
+    },
+    {
+      "title": "Leveraging AI-derived Data for Carbon Accounting: Information ...",
+      "url": "https://arxiv.org/pdf/2312.03722",
+      "snippet": "The integration of Artificial In-telligence (AI) techniques can address these challenges, en-hancing the eficacy and precision of carbon accounting. AI-derived data, as gleaned through the application of ad-vanced machine learning methods, offers us unprecedented opportunities for refined, dynamic, and real-time carbon ac-counting."
+    },
+    {
+      "title": "AI Carbon Accounting: Measure, Track & Report Environmental Impact",
+      "url": "https://aienergycalculator.com/ai-carbon-accounting-environmental-impact/",
+      "snippet": "Learn how to accurately measure, track, and report AI carbon emissions with comprehensive carbon accounting frameworks and sustainability metrics."
+    }
+  ]
+}

@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "rebeccary3/vit-baseline",
+  "slug": "rebeccary3-vit-baseline",
+  "author": "rebeccary3",
+  "url": "https://huggingface.co/rebeccary3/vit-baseline",
+  "created_at": "2026-08-27T10:56:33.000Z",
+  "updated_at": "2026-08-27T10:56:42.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "vit",
+    "pytorch",
+    "multitask",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 24832,
+  "parameters_human": "24832",
+  "storage_bytes": 99808,
+  "storage_human": "99808 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "rebeccary3 (小林 葉月) - Hugging Face",
+      "url": "https://huggingface.co/rebeccary3/models",
+      "snippet": "Curious about AI, learning every day."
+    },
+    {
+      "title": "GitHub - Multi-Scale-Transformer/ViT-baseline: ViT-baseline trained by ...",
+      "url": "https://github.com/Multi-Scale-Transformer/ViT-baseline",
+      "snippet": "ViT-baseline trained by Imagenette&Imagewoof2. Contribute to Multi-Scale-Transformer/ViT-baseline development by creating an account on GitHub."
+    },
+    {
+      "title": "EIFY/ViT_Baseline_Revisited · Hugging Face",
+      "url": "https://huggingface.co/EIFY/ViT_Baseline_Revisited",
+      "snippet": "EIFY / ViT_Baseline_Revisited like 0 License:mit Model card FilesFiles and versions xet Community Copy to bucket new"
+    },
+    {
+      "title": "[2205.01580] Better plain ViT baselines for ImageNet-1k",
+      "url": "https://arxiv.org/abs/2205.01580",
+      "snippet": "It is commonly accepted that the Vision Transformer model requires sophisticated regularization techniques to excel at ImageNet-1k scale data. Surprisingly, we find this is not the case and standard data augmentation is sufficient. This note presents a few minor modifications to the original Vision Transformer (ViT) vanilla training setting that dramatically improve the performance of plain ..."
+    },
+    {
+      "title": "AI Models | Civitai",
+      "url": "https://civitai.com/models",
+      "snippet": "Browse thousands of free Stable Diffusion & Flux models, LoRAs, checkpoints, and embeddings. The largest collection of AI image generation resources."
+    }
+  ]
+}

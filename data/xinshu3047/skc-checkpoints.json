@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "XinShu3047/SKC-checkpoints",
+  "slug": "xinshu3047-skc-checkpoints",
+  "author": "XinShu3047",
+  "url": "https://huggingface.co/XinShu3047/SKC-checkpoints",
+  "created_at": "2026-08-03T02:34:47.000Z",
+  "updated_at": "2026-08-27T08:44:05.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "gui-agent",
+    "continual-learning",
+    "computer-use",
+    "skc",
+    "base_model:ByteDance-Seed/UI-TARS-1.5-7B",
+    "base_model:finetune:ByteDance-Seed/UI-TARS-1.5-7B",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 663386366696,
+  "storage_human": "663.4 GB",
+  "base_model": "ByteDance-Seed/UI-TARS-1.5-7B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "checkpoint AI Models | Civitai",
+      "url": "https://civitai.com/tag/checkpoint",
+      "snippet": "Browse 202 Stable Diffusion & Flux models, LoRAs, checkpoints, and embeddings tagged with checkpoint."
+    },
+    {
+      "title": "Models - Hugging Face",
+      "url": "https://huggingface.co/models?other=checkpoint",
+      "snippet": "Explore machine learning models."
+    },
+    {
+      "title": "AI Models | Civitai",
+      "url": "https://civitai.com/models",
+      "snippet": "Browse thousands of free Stable Diffusion & Flux models, LoRAs, checkpoints, and embeddings. The largest collection of AI image generation resources."
+    },
+    {
+      "title": "How to Install Stable Diffusion Checkpoints & Models",
+      "url": "https://www.nextdiffusion.ai/tutorials/how-to-install-stable-diffusion-checkpoints-models",
+      "snippet": "Learn how to effectively install checkpoints and models in Stable Diffusion to enhance your image generation capabilities. Discover key concepts about models and the significance of Variable Autoencoders for stunning outputs."
+    },
+    {
+      "title": "GitHub - MoonshotAI/checkpoint-engine: Checkpoint-engine is a simple ...",
+      "url": "https://github.com/MoonshotAI/checkpoint-engine",
+      "snippet": "Checkpoint Engine Checkpoint-engine is a simple middleware to update model weights in LLM inference engines -- a critical step in reinforcement learning. We provide an efficient and lightweight implementation for inplace weight update: updating our Kimi-K2 model (1 Trillion parameters) across thousands of GPUs takes about 20s."
+    }
+  ]
+}
