@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "furkancmc/kadim-ocr-lora",
+  "slug": "furkancmc-kadim-ocr-lora",
+  "author": "furkancmc",
+  "url": "https://huggingface.co/furkancmc/kadim-ocr-lora",
+  "created_at": "2026-08-28T01:16:08.000Z",
+  "updated_at": "2026-08-28T01:17:56.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 172960964,
+  "storage_human": "173 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "furkancmc/kadim-ocr-lora · Hugging Face",
+      "url": "https://huggingface.co/furkancmc/kadim-ocr-lora",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "furkancmc/kadim-ocr-lora at main - Hugging Face",
+      "url": "https://huggingface.co/furkancmc/kadim-ocr-lora/tree/main",
+      "snippet": "0 Safetensors License:apache-2.0 Model card FilesFiles and versions xet Community Copy to bucket new main kadim-ocr-lora 173 MB Ctrl+K Ctrl+K 1 contributor History:7 commits furkancmc Upload tokenizer_config.json with huggingface_hub fdee321 verifiedabout 4 hours ago .gitattributes Safe 1.57 kBUpload tokenizer.json with huggingface_hubabout 4 ..."
+    },
+    {
+      "title": "lora AI Models | Civitai",
+      "url": "https://civitai.com/tag/lora",
+      "snippet": "Browse 28,875 Stable Diffusion & Flux models, LoRAs, checkpoints, and embeddings tagged with lora."
+    },
+    {
+      "title": "Best LLM for OCR (2026): GLM-OCR Wins at 94.62 - ofox.ai",
+      "url": "https://ofox.ai/blog/best-ai-model-for-ocr-2026/",
+      "snippet": "Which AI model has the best OCR accuracy in 2026? On the OmniDocBench benchmark, specialized models lead: GLM-OCR scores 94.62 and PaddleOCR-VL hits 94.50. Among frontier LLMs, Gemini 3.1 Pro leads at 90.33, ahead of GPT-5.4 at roughly 85.8. The best choice depends on your use case — frontier LLMs handle reasoning alongside extraction, while specialized models maximize raw accuracy."
+    },
+    {
+      "title": "10,000+ LoRA Models for Flux, Wan & SDXL | Browse Free",
+      "url": "https://loraai.io/loras",
+      "snippet": "Browse 10,000+ LoRA models for Flux, WAN, and SDXL. Character LoRAs, style LoRAs, and concept LoRAs with examples. Filter by model, tag, or search."
+    }
+  ]
+}

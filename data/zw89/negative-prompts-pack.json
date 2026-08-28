@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "zw89/negative-prompts-pack",
+  "slug": "zw89-negative-prompts-pack",
+  "author": "zw89",
+  "url": "https://huggingface.co/zw89/negative-prompts-pack",
+  "created_at": "2026-08-28T08:10:01.000Z",
+  "updated_at": "2026-08-28T08:10:02.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1326890,
+  "storage_human": "1 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "150+ Top Negative Prompts for Realistic AI Images (2025-26)",
+      "url": "https://pxz.ai/blog/best-negative-prompts-for-realistic-ai-images",
+      "snippet": "Tested 150+ negative prompts for realistic AI images. Fix fake skin, bad hands, anatomy errors, and uncanny faces in Stable Diffusion, SDXL, and Midjourney."
+    },
+    {
+      "title": "Enhanced Negative Prompts for AI Image Generation - GitHub",
+      "url": "https://github.com/iboss21/enhanced-negative-prompts",
+      "snippet": "This repository contains the most comprehensive collection of negative prompts for AI image generation models including Stable Diffusion, SDXL, Midjourney, DALL-E, and more. Negative prompts are essential for: 🎨 Improving image quality and preventing common AI artifacts 🔒 Content filtering and maintaining appropriate imagery 🎭 Style control and preventing unwanted artistic styles 💼 ..."
+    },
+    {
+      "title": "The Best Negative Prompts for Every AI Model — Copy and Paste",
+      "url": "https://aipromptgeneer.com/blog/negative-prompts-every-ai-model/",
+      "snippet": "A negative prompt is half the generation. Without one, the model fills every unstated preference with its highest-probability defaults: plastic-looking skin, flat even lighting, stock photo composition, generic facial expressions, and obvious AI artifacts. Defaults are the enemy of quality output."
+    },
+    {
+      "title": "The Ultimate Negative Prompt List: How to Fix Ugly AI Art Instantly ...",
+      "url": "https://zeroskillai.com/negative-prompt-examples-cheat-sheet/",
+      "snippet": "Tired of AI images with weird hands and blurry faces? Copy and paste our universal \"Negative Prompt Examples\" to instantly fix bad AI art in Midjourney, Stable Diffusion, and Leonardo.ai."
+    },
+    {
+      "title": "negative-prompts-pack: Text-to-Text model — overview, use cases ...",
+      "url": "https://www.aimodels.fyi/models/huggingFace/negative-prompts-pack-ffxvs",
+      "snippet": "Overview negative-prompts-pack is a curated collection of 16 negative prompt embeddings optimized for Stable Diffusion v1.5. Created by ffxvs, this is not a model itself but rather a practical toolkit of pre-trained embedding files (.pt and .safetensors format) designed to improve image generation quality by teaching the diffusion model what to avoid during generation. The pack aggregates ..."
+    }
+  ]
+}

@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "vcruz305/GLM-5.3-Flash-EXL3",
+  "slug": "vcruz305-glm-5-3-flash-exl3",
+  "author": "vcruz305",
+  "url": "https://huggingface.co/vcruz305/GLM-5.3-Flash-EXL3",
+  "created_at": "2026-08-28T10:36:57.000Z",
+  "updated_at": "2026-08-28T10:37:11.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "glm",
+    "glm5_next",
+    "exl3",
+    "tr3",
+    "vllm",
+    "dgx-spark",
+    "sm121",
+    "community-quant",
+    "image-text-to-text",
+    "base_model:zai-org/GLM-5.3-Flash-BF16",
+    "base_model:finetune:zai-org/GLM-5.3-Flash-BF16",
+    "license:other",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": "zai-org/GLM-5.3-Flash-BF16",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "vcruz305/GLM-5.3-Flash-NVFP4 · Hugging Face",
+      "url": "https://huggingface.co/vcruz305/GLM-5.3-Flash-NVFP4",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GLM-5.3-Flash (Ox Alpha): Specs, Price & API - glm-ai.chat",
+      "url": "https://glm-ai.chat/models/glm-5-3-flash/",
+      "snippet": "A source-checked guide to GLM-5.3-Flash, formerly Ox Alpha, covering its multimodal architecture, 1M context, API prices, Coding Plan, open weights and vendor-reported benchmarks. Ox Alpha was the anonymous preview name for GLM-5.3-Flash, not a separate GLM model."
+    },
+    {
+      "title": "GLM-5.3 | OpenLM.ai",
+      "url": "https://openlm.ai/glm-5.5/",
+      "snippet": "GLM-5.3-Flash is the first natively multimodal model in the GLM-5 series. With 320B total parameters and just 18B active parameters, it outperforms GLM-5.2 across benchmarks and real-world workloads at one-tenth the price, while approaching Claude Opus 4.8 on coding and agentic benchmarks."
+    },
+    {
+      "title": "Z.AI Reveals Ox Alpha Is GLM 5.3 Flash, Competes With Claude Opus 4.8 ...",
+      "url": "https://officechai.com/ai/glm-5-3-flash-benchmarks/",
+      "snippet": "Z.ai has finally put a name to the model that had developers guessing for the better part of a week. Ox Alpha, the anonymous \"stealth\" model that showed up on OpenCode and OpenRouter with no branding attached, is GLM-5.3-Flash, the first natively multimodal entry in the GLM-5 line. Z.ai says it ..."
+    },
+    {
+      "title": "How to Use GLM-5.3-Flash: Complete Guide to the Ox Alpha Model Zhipu ...",
+      "url": "https://tosea.ai/blog/glm-5-3-flash-complete-guide",
+      "snippet": "Zhipu&#x27;s Ox Alpha stealth model is GLM-5.3-Flash: 320B-A18B, natively multimodal, 1M context, MIT license. Full official benchmarks vs Claude Opus 4.8 and GPT-5.6 Terra, plus pricing and API setup."
+    }
+  ]
+}

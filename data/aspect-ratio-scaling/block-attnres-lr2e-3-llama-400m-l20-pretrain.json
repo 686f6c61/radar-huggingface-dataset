@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "aspect-ratio-scaling/block-attnres-lr2e-3-llama-400M-L20-pretrain",
+  "slug": "aspect-ratio-scaling-block-attnres-lr2e-3-llama-400m-l20-pretrain",
+  "author": "aspect-ratio-scaling",
+  "url": "https://huggingface.co/aspect-ratio-scaling/block-attnres-lr2e-3-llama-400M-L20-pretrain",
+  "created_at": "2026-08-28T11:37:46.000Z",
+  "updated_at": "2026-08-28T11:39:12.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "olmo-core",
+  "languages": [],
+  "tags": [
+    "olmo-core",
+    "causal-lm",
+    "raw-checkpoint",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 9971039909,
+  "storage_human": "10.0 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "AttnRes - a aspect-ratio-scaling Collection - Hugging Face",
+      "url": "https://huggingface.co/collections/aspect-ratio-scaling/attnres",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "aspect-ratio-scaling/attnres-lr2e-3-llama-400M-L56-pretrain - Hugging Face",
+      "url": "https://huggingface.co/aspect-ratio-scaling/attnres-lr2e-3-llama-400M-L56-pretrain",
+      "snippet": "attnres-lr2e-3-llama-400M-L56-pretrain This repository stores raw OLMo-core AttnRes checkpoint files uploaded from the original training output directory."
+    },
+    {
+      "title": "Introducing Meta Llama 3: The most capable openly available LLM to date",
+      "url": "https://ai.meta.com/blog/meta-llama-3/",
+      "snippet": "Today, we&#x27;re introducing Meta Llama 3, the next generation of our state-of-the-art open source large language model. In the coming months, we expect to share new capabilities, additional model sizes, and more."
+    },
+    {
+      "title": "GitHub - meta-llama/llama3: The official Meta Llama 3 GitHub site",
+      "url": "https://github.com/meta-llama/llama3",
+      "snippet": "The official Meta Llama 3 GitHub site. Contribute to meta-llama/llama3 development by creating an account on GitHub."
+    },
+    {
+      "title": "LLM model catalog · LLM Releases",
+      "url": "https://www.llm-releases.com/models",
+      "snippet": "LLM model catalog A searchable catalog of large language model releases, with source links, lifecycle dates, access details, model size, context window, and modality filters."
+    }
+  ]
+}

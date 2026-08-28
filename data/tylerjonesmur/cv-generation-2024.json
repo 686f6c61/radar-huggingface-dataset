@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "tylerjonesmur/cv-generation-2024",
+  "slug": "tylerjonesmur-cv-generation-2024",
+  "author": "tylerjonesmur",
+  "url": "https://huggingface.co/tylerjonesmur/cv-generation-2024",
+  "created_at": "2026-08-28T08:10:19.000Z",
+  "updated_at": "2026-08-28T08:10:27.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "beit",
+    "pytorch",
+    "generation",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 24832,
+  "parameters_human": "24832",
+  "storage_bytes": 99808,
+  "storage_human": "99808 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Modèle de CV parfait - Créateur de CV gratuit - Créateur de CV performant",
+      "url": "https://duckduckgo.com/y.js?ad_domain=moncvparfait.fr&ad_provider=bingv7aa&ad_type=txad&click_metadata=KfglgNr2ooYD4VKMIZrnCa_tA7viF8VWomoD37AHj%2DdE9V7DYp4xTS8g5tuSO2HYk7LQ8hLsyEShyCwYnv6GE24AoqmmlwWuYvj1OFc910I5DEPCo2Ct12jL0XeeU5OzLDxzzLFN5mr%2DjYj_LsO99fXWvwLc8rgLmbNiXb9yp%2DE.FeGpACbh9PpmC8y_pBEoFQ&rut=c124f645754c0048b75418edbc48827c7d4950f9313a9a3f52cee4a7c1a1c876&u3=https%3A%2F%2Fwww.bing.com%2Faclick%3Fld%3De8sxk_UHvAnsy6HY1vqckJ5DVUCUwviJFUHR8tGweXeCXyTgXyJqaXNOcxGaSH3woOLf1Pigi6KCrUJE1gJ%2DZAYGd_MeQbNTM02i2_pCuVVo27Yd1pZGyTL6ewVsEZXmLxjNvu%2DhyvHA4iawXUoZ2iDJ9S4G23eNwHy3_abwxL5z0tE5OYZKtGZZvTxSFG25Xq5Hd5NhiSXSbYGBucY9dXy83i9wA%26u%3DaHR0cHMlM2ElMmYlMmZ3d3cubW9uY3ZwYXJmYWl0LmZyJTJmbHAlMmZmciUyZm1wcmZyemxwMDEuYXNweCUzZnV0bV9zb3VyY2UlM2RiaW5nJTI2dXRtX21lZGl1bSUzZHBtYXglMjZ1dG1fY2FtcGFpZ24lM2QlN2JjYW1wYWlnbmlkJTdkJTI2dXRtX3Rlcm0lM2QlN2JrZXl3b3JkJTdkJTI2bmV0d29yayUzZCU3Ym5ldHdvcmslN2QlMjZkZXZpY2UlM2QlN2JkZXZpY2UlN2QlMjZhZHBvc2l0aW9uJTNkJTdiYWRwb3NpdGlvbiU3ZCUyNmFkZ3JvdXBpZCUzZCU3YmFkZ3JvdXBpZCU3ZCUyNnBsYWNlbWVudCUzZCU3YnBsYWNlbWVudCU3ZCUyNm1zY2xraWQlM2RlZWZlMTM4NDdmMGExNTBiNzgwMzc5MTUzMjgwYjczOCUyNnV0bV9jb250ZW50JTNkQXNzZXQlMjUyMEdyb3VwJTI1MjAy%26rlid%3Deefe13847f0a150b780379153280b738&vqd=4-122646386416925745696465217941740469048&iurl=%7B1%7DIG%3D761C94C187C44A99A2D360BC3D336BAE%26CID%3D0DDF6BCEA894698D24597C0DA99A687D%26ID%3DDevEx%2C5037.1",
+      "snippet": "Créez un CV parfait grâce à nos experts et nos modèles adaptés à tous les secteurs.. Des CV parfaits : des modèles, des contenus personnalisables et des conseils d&#x27;experts."
+    },
+    {
+      "title": "CV automatisé et gratuit - CV en ligne gratuit - Création gratuite de CV",
+      "url": "https://duckduckgo.com/y.js?ad_domain=livecareer.fr&ad_provider=bingv7aa&ad_type=txad&click_metadata=9JHHOiyQ0U6tGH_57Sz6_Ya2miZPyYuKaamcQbIY6atjItm0V%2DbNW6u85[REDACTED]_MMpoN59gA2eggKGb3GYJEQX6ISQKPQnuYUlr17lkRZTbh2zD3T7Ds9UE3YLKbbbfxIm5zCn_th_m27Y4avKESNQk.bBmSiYtAf2A2jOHt6zPchg&rut=f0e4739e92381cd9204aa87332dbb6b5f5584112e68bf5fce0b41a01a46a35fb&u3=https%3A%2F%2Fwww.bing.com%2Faclick%3Fld%3De8Bb9_WSArmkxOuPPAafpGhDVUCUzRmPv6R0EofAy0%2D05P7_g3LbfL2G1ooe6OuXBRQgBWZ4TM8YrDLn08c4fHPZdpR8pVd6BCiQsU33oCVMHNZJAdN4JRIex0hot4ozBYZG5ezlSumL7UjYdceGjNgSLOfSo5uz0t4JZHjQWuNflLf1MCrPDGE9aVqZ8OlAGx9EsbnEBI4MQWcFA34mamOn_TB9k%26u%3DaHR0cHMlM2ElMmYlMmZ3d3cubGl2ZWNhcmVlci5mciUyZmxwJTJmZnIlMmZsZnJyc21scDA3LmFzcHglM2Z1dG1fc291cmNlJTNkYmluZyUyNnV0bV9tZWRpdW0lM2QlN2JpZnNlYXJjaCUzYXNlbSU3ZCU3YmlmY29udGVudCUzYWRpc3BsYXklN2QlMjZ1dG1fY2FtcGFpZ24lM2QlN2JjYW1wYWlnbmlkJTdkJTI2dXRtX3Rlcm0lM2QlN2JrZXl3b3JkJTdkJTI2bmV0d29yayUzZCU3Ym5ldHdvcmslN2QlMjZkZXZpY2UlM2QlN2JkZXZpY2UlN2QlMjZhZHBvc2l0aW9uJTNkJTdiYWRwb3NpdGlvbiU3ZCUyNmFkZ3JvdXBpZCUzZCU3YmFkZ3JvdXBpZCU3ZCUyNnBsYWNlbWVudCUzZCU3YnBsYWNlbWVudCU3ZCUyNmFkaWQlM2QlN2JjcmVhdGl2ZSU3ZCUyNnV0bV9zb3VyY2UlM2RiaW5nJTI2dXRtX21lZGl1bSUzZHBtYXglMjZ1dG1fY2FtcGFpZ24lM2QlN2JjYW1wYWlnbmlkJTdkJTI2dXRtX3Rlcm0lM2QlN2JrZXl3b3JkJTdkJTI2bmV0d29yayUzZCU3Ym5ldHdvcmslN2QlMjZkZXZpY2UlM2QlN2JkZXZpY2UlN2QlMjZhZHBvc2l0aW9uJTNkJTdiYWRwb3NpdGlvbiU3ZCUyNmFkZ3JvdXBpZCUzZCU3YmFkZ3JvdXBpZCU3ZCUyNnBsYWNlbWVudCUzZCU3YnBsYWNlbWVudCU3ZCUyNm1zY2xraWQlM2RhNGY3ZTU5MDMyM2QxMTAxMTgwMDhmMDE3ZmI3OTU5YiUyNnV0bV9jb250ZW50JTNkUGVvcGxlJTI1MjB3aXRoJTI1MjBSZXN1bWU%26rlid%3Da4f7e590323d110118008f017fb7959b&vqd=4-281293844255266331872119824791870230994&iurl=%7B1%7DIG%3D761C94C187C44A99A2D360BC3D336BAE%26CID%3D0DDF6BCEA894698D24597C0DA99A687D%26ID%3DDevEx%2C5042.1",
+      "snippet": "Créez et Rédigez Gratuitement Votre CV en Quelques Minutes. Contactez-nous!. Profitez des meilleurs modèles de CV et conseils d&#x27;entretiens en France !"
+    },
+    {
+      "title": "AI Resume Builder: Create Professional Job Resume Fast | Canva",
+      "url": "https://www.canva.com/ai-resume-builder/",
+      "snippet": "Transform your job hunt with our AI Resume Builder. Get custom resumes for any role or industry and land your dream role fast."
+    },
+    {
+      "title": "CV Generator by ChatGPT | Create a Polished CV",
+      "url": "https://chatgpt.com/writing/cv-generator",
+      "snippet": "Build a professional CV with ChatGPT. Add your experience, skills, and details to create a polished CV for your next opportunity."
+    },
+    {
+      "title": "AI Resume / CV Generator - Generor",
+      "url": "https://generor.com/ml/resume",
+      "snippet": "FREE AI Resume / CV Generator Generate professional, ATS-optimized resumes tailored to your target role. Provide your career details and let AI craft a polished resume with strong action verbs, quantified achievements, and clean formatting."
+    }
+  ]
+}

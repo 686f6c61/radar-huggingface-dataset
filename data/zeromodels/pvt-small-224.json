@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "zeromodels/pvt-small-224",
+  "slug": "zeromodels-pvt-small-224",
+  "author": "zeromodels",
+  "url": "https://huggingface.co/zeromodels/pvt-small-224",
+  "created_at": "2026-08-28T01:52:38.000Z",
+  "updated_at": "2026-08-28T01:52:39.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-classification",
+  "library": "zeromodels",
+  "languages": [],
+  "tags": [
+    "zeromodels",
+    "keras",
+    "image-classification",
+    "pvt",
+    "backbone",
+    "arxiv:2102.12122",
+    "pytorch",
+    "jax",
+    "tf",
+    "base_model:Zetatech/pvt-small-224",
+    "base_model:finetune:Zetatech/pvt-small-224",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 98648656,
+  "storage_human": "99 MB",
+  "base_model": "Zetatech/pvt-small-224",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "zeromodels/pvt-small-224 · Hugging Face",
+      "url": "https://huggingface.co/zeromodels/pvt-small-224",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "zeromodels/pvt-small-224 at main - Hugging Face",
+      "url": "https://huggingface.co/zeromodels/pvt-small-224/tree/main",
+      "snippet": "Instructions to use zeromodels/pvt-small-224 with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Libraries Keras How to use zeromodels/pvt-small-224 with Keras:"
+    },
+    {
+      "title": "Zetatech/pvt-tiny-224 - AI Model Zoo - BimAnt",
+      "url": "https://zoo.bimant.com/model/201868",
+      "snippet": "Model description The Pyramid Vision Transformer (PVT) is a transformer encoder model (BERT-like) pretrained on ImageNet-1k (also referred to as ILSVRC2012), a dataset comprising 1 million images and 1,000 classes, also at resolution 224x224. Images are presented to the model as a sequence of variable-size patches, which are linearly embedded."
+    },
+    {
+      "title": "AI Models | Civitai",
+      "url": "https://civitai.com/models",
+      "snippet": "Browse thousands of free Stable Diffusion & Flux models, LoRAs, checkpoints, and embeddings. The largest collection of AI image generation resources."
+    },
+    {
+      "title": "Free AI Models on OpenRouter",
+      "url": "https://openrouter.ai/collections/free-models",
+      "snippet": "Model rankings updated August 2026 based on real usage data. At OpenRouter, we believe that free models play a crucial role in democratizing access to AI. These models allow hundreds of thousands of users worldwide to experiment, learn, and innovate. Below you will find the top free AI models currently available on OpenRouter."
+    }
+  ]
+}

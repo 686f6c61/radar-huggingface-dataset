@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "RODRIGUE-ZMICHAEL/dino-finetuned",
+  "slug": "rodrigue-zmichael-dino-finetuned",
+  "author": "RODRIGUE-ZMICHAEL",
+  "url": "https://huggingface.co/RODRIGUE-ZMICHAEL/dino-finetuned",
+  "created_at": "2026-08-28T07:18:39.000Z",
+  "updated_at": "2026-08-28T07:18:48.000Z",
+  "license": "bsd-3-clause",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "dino",
+    "pytorch",
+    "generation",
+    "license:bsd-3-clause",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 33088,
+  "parameters_human": "33088",
+  "storage_bytes": 132832,
+  "storage_human": "132832 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Explanation.ipynb - Colab",
+      "url": "https://colab.research.google.com/github/RobvanGastel/dinov2-finetune/blob/main/Explanation.ipynb",
+      "snippet": "The model&#x27;s output is a class token that summarizes the information from all patches, which can then be used for classification. However, by adding a random initialized decoder to the pre-trained encoder you can finetune it for any downstream task if the features learned are relevant to your task."
+    },
+    {
+      "title": "AI Model Releases: August 2026 Tracker and Dated Ledger",
+      "url": "https://www.digitalapplied.com/blog/ai-model-releases-august-2026-tracker",
+      "snippet": "A dated ledger of what shipped in early August 2026, what was only announced, and which deadlines land before month end. Announcements stay separate."
+    },
+    {
+      "title": "finetuning_dinov2.ipynb - Colab",
+      "url": "https://colab.research.google.com/github/kili-technology/kili-python-sdk/blob/main/recipes/finetuning_dinov2.ipynb",
+      "snippet": "This tutorial shows how to use the DINOv2 self-supervised vision transformer model to generate pre-annotations on a defect detection use case. Modern foundation models (FMs) are capable of performing many diverse tasks; large language models can quickly and accurately process natural language while models focused on image processing are very good at computer vision tasks, such as object ..."
+    },
+    {
+      "title": "ICLR 2026 Orals",
+      "url": "https://iclr.cc/virtual/2026/events/oral",
+      "snippet": "The finetuned model produces steganographic malicious outputs in response to hidden malicious prompts, while the user interface displays only a fully benign cover interaction. We also replicate the attack on three open-source models, Llama-3.3-70B-Instruct, Phi-4, and Mistral-Small-24B-Base-2501, confirming the generality of our method."
+    },
+    {
+      "title": "Fine-Tuning DINOv2 — Custom Training for Your Own AI Projects",
+      "url": "https://medium.com/data-science-in-your-pocket/fine-tuning-dinov2-custom-training-for-your-own-ai-projects-6e8a5a486671",
+      "snippet": "Learn how to fine-tune the DINOv2 model on custom datasets to make it work for your specific vision tasks."
+    }
+  ]
+}

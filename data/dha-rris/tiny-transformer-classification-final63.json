@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "dha-rris/tiny-transformer-classification-final63",
+  "slug": "dha-rris-tiny-transformer-classification-final63",
+  "author": "dha-rris",
+  "url": "https://huggingface.co/dha-rris/tiny-transformer-classification-final63",
+  "created_at": "2026-08-28T08:07:52.000Z",
+  "updated_at": "2026-08-28T08:08:00.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "tiny_transformer",
+    "pytorch",
+    "tiny-transformer",
+    "classification",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 33088,
+  "parameters_human": "33088",
+  "storage_bytes": 132832,
+  "storage_human": "132832 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "A Tiny Transformer for Low-Power Arrhythmia Classification on ...",
+      "url": "https://arxiv.org/pdf/2402.10748",
+      "snippet": "In this work, we present a tiny transformer model for the analysis of the ECG signal, requiring only 6k parameters and reaching 98.97% accuracy in the recognition of the 5 most common arrhythmia classes from the MIT-BIH Arrhythmia database, assessed considering 8-bit integer inference as required for eficient execution on low-power microcontroller-based de-vices. We explored an augmentation ..."
+    },
+    {
+      "title": "GitHub - AI-in-Transportation-Lab/awesome-tinyml: A carefully curated ...",
+      "url": "https://github.com/AI-in-Transportation-Lab/awesome-tinyml",
+      "snippet": "A carefully curated collection of high-quality libraries, projects, tutorials, research papers, and other essential resources focused on TinyML — the intersection of machine learning and ultra-low-..."
+    },
+    {
+      "title": "Transformers · Hugging Face",
+      "url": "https://huggingface.co/docs/transformers/index",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Anthropic pushes into physical world with new standard to help AI ...",
+      "url": "https://www.cnbc.com/2026/08/27/anthropic-pushes-into-physical-world-with-new-standard-to-help-ai-agents-operate-machines.html",
+      "snippet": "Anthropic announced the Model Hardware Standard, or MHS, a new interface that will make it simpler for AI agents to operate and communicate with physical machinery."
+    },
+    {
+      "title": "Figure 3 from A Tiny Transformer for Low-Power Arrhythmia ...",
+      "url": "https://www.semanticscholar.org/paper/A-Tiny-Transformer-for-Low-Power-Arrhythmia-on-Busia-Scrugli/86852f272564e3be95a0f04ee9c2e4b8e31f84d4/figure/2",
+      "snippet": "Fig. 3: Architecture of the proposed transformer model for arrhythmia classification. The shape of the weight tensor in each layer is indicated with the prefix W, whereas the prefix in refers to the shape of the input data tensors. - \"A Tiny Transformer for Low-Power Arrhythmia Classification on Microcontrollers\""
+    }
+  ]
+}

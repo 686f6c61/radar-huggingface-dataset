@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "mradermacher/code-simple-rl-3b-GGUF",
+  "slug": "mradermacher-code-simple-rl-3b-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/code-simple-rl-3b-GGUF",
+  "created_at": "2026-08-28T05:34:09.000Z",
+  "updated_at": "2026-08-28T05:54:22.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "en",
+    "base_model:tanyagoyal-p/code-simple-rl-3b",
+    "base_model:quantized:tanyagoyal-p/code-simple-rl-3b",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 3397103616,
+  "parameters_human": "3.40B",
+  "storage_bytes": 30595510528,
+  "storage_human": "30.6 GB",
+  "base_model": "tanyagoyal-p/code-simple-rl-3b",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "team mradermacher - Hugging Face",
+      "url": "https://huggingface.co/mradermacher",
+      "snippet": "Feel free to suggest models to quant e.g. at https://huggingface.co/mradermacher/model_requests"
+    },
+    {
+      "title": "mradermacher/code-3b-GGUF · Hugging Face",
+      "url": "https://huggingface.co/mradermacher/code-3b-GGUF",
+      "snippet": "Usage If you are unsure how to use GGUF files, refer to one of TheBloke&#x27;s READMEs for more details, including on how to concatenate multi-part files."
+    },
+    {
+      "title": "GGUF Model Discovery - Browse & Download AI Models",
+      "url": "https://local-ai-zone.github.io/",
+      "snippet": "Discover and download GGUF format AI models. Browse and direct download thousands of quantized AI models with detailed information, download counts, and direct links."
+    },
+    {
+      "title": "Mradermacher - Find Top AI Models on Hugging Face",
+      "url": "https://www.aimodels.fyi/creators/huggingFace/mradermacher",
+      "snippet": "Looking for Mradermacher&#x27;s top AI models? Browse their full Hugging Face collection of 26 models. Explore AI models and contributions by Mradermacher on Huggingface."
+    },
+    {
+      "title": "GitHub - Simple-Efficient/RL-Factory: Train your Agent model via our ...",
+      "url": "https://github.com/Simple-Efficient/RL-Factory",
+      "snippet": "RLFactory is an easy and efficient RL post-training framework for Agentic Learning. RL-Factory decouples the environment from RL post-training, enabling training with just a tool config and reward function while supporting async tool-calling to make RL post-training 2x faster. Current version natively supports one-click DeepSearch training and features multi-turn tool-calling, model judge ..."
+    }
+  ]
+}

@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "kwarto/kwarto-geo-8b-lora",
+  "slug": "kwarto-kwarto-geo-8b-lora",
+  "author": "kwarto",
+  "url": "https://huggingface.co/kwarto/kwarto-geo-8b-lora",
+  "created_at": "2026-08-28T08:08:26.000Z",
+  "updated_at": "2026-08-28T08:08:44.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [
+    "fr"
+  ],
+  "tags": [
+    "peft",
+    "safetensors",
+    "lora",
+    "information-extraction",
+    "kwarto",
+    "text-generation",
+    "conversational",
+    "fr",
+    "base_model:mistralai/Ministral-3-8B-Instruct-2512-BF16",
+    "base_model:adapter:mistralai/Ministral-3-8B-Instruct-2512-BF16",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 373665280,
+  "storage_human": "374 MB",
+  "base_model": "mistralai/Ministral-3-8B-Instruct-2512-BF16",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "10,000+ LoRA Models for Flux, Wan & SDXL | Browse Free",
+      "url": "https://loraai.io/loras",
+      "snippet": "Browse 10,000+ LoRA models for Flux, WAN, and SDXL. Character LoRAs, style LoRAs, and concept LoRAs with examples. Filter by model, tag, or search."
+    },
+    {
+      "title": "lora AI Models | Civitai",
+      "url": "https://civitai.com/tag/lora",
+      "snippet": "Browse 28,875 Stable Diffusion & Flux models, LoRAs, checkpoints, and embeddings tagged with lora."
+    },
+    {
+      "title": "Models - Hugging Face",
+      "url": "https://huggingface.co/models?search=lora",
+      "snippet": "Explore machine learning models. CQdesign/LTX-2.5-CQ-Video-and-Image-Enhancer-LoRAs"
+    },
+    {
+      "title": "Fine-Tune LLaMA 3 8B with LoRA: GPU & VRAM Guide",
+      "url": "https://gigagpu.com/fine-tune-llama-3-8b-lora-gpu-guide/",
+      "snippet": "Step-by-step guide to fine-tuning LLaMA 3 8B with LoRA and QLoRA, including VRAM requirements, GPU recommendations, training time estimates, and cost analysis."
+    },
+    {
+      "title": "3D Design and Management of Telecom Sites | kwarto - kwarto",
+      "url": "https://kwarto.io/en/",
+      "snippet": "kwarto helps towercos, operators and service providers to leverage data, AI and 3D to design, maintain and enhance their telecom sites."
+    }
+  ]
+}

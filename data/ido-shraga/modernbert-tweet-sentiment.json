@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "Ido-shraga/modernbert-tweet-sentiment",
+  "slug": "ido-shraga-modernbert-tweet-sentiment",
+  "author": "Ido-shraga",
+  "url": "https://huggingface.co/Ido-shraga/modernbert-tweet-sentiment",
+  "created_at": "2026-08-28T01:55:57.000Z",
+  "updated_at": "2026-08-28T02:04:25.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "modernbert",
+    "ml-intern",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 149607171,
+  "parameters_human": "149.6M",
+  "storage_bytes": 598448189,
+  "storage_human": "598 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Ido-shraga/modernbert-tweet-sentiment · Hugging Face",
+      "url": "https://huggingface.co/Ido-shraga/modernbert-tweet-sentiment",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Ido-shraga/modernbert-tweet-sentiment at main - Hugging Face",
+      "url": "https://huggingface.co/Ido-shraga/modernbert-tweet-sentiment/tree/main",
+      "snippet": "Ido-shraga / modernbert-tweet-sentiment like 0 Safetensors modernbert ml-intern Model card FilesFiles and versions xet Community Copy to bucket new main modernbert-tweet-sentiment 602 MB Ctrl+K Ctrl+K 1 contributor History:3 commits Ido-shraga Training in progress, epoch 1 916ec12 verifiedabout 4 hours ago .gitattributes Safe 1.52 kBinitial ..."
+    },
+    {
+      "title": "GitHub - AnswerDotAI/ModernBERT: Bringing BERT into modernity via both ...",
+      "url": "https://github.com/AnswerDotAI/ModernBERT",
+      "snippet": "This is the repository where you can find ModernBERT, our experiments to bring BERT into modernity via both architecture changes and scaling. This repository noticeably introduces FlexBERT, our modular approach to encoder building blocks, and heavily relies on .yaml configuration files to build models. The codebase builds upon MosaicBERT, and specifically the unmerged fork bringing Flash ..."
+    },
+    {
+      "title": "idoshr (Ido Shraga) · GitHub",
+      "url": "https://github.com/idoshr",
+      "snippet": "Co-Founder and CTO at Cyabra. idoshr has 20 repositories available. Follow their code on GitHub."
+    },
+    {
+      "title": "[2412.13663] Smarter, Better, Faster, Longer: A Modern Bidirectional ...",
+      "url": "https://arxiv.org/abs/2412.13663",
+      "snippet": "Encoder-only transformer models such as BERT offer a great performance-size tradeoff for retrieval and classification tasks with respect to larger decoder-only models. Despite being the workhorse of numerous production pipelines, there have been limited Pareto improvements to BERT since its release. In this paper, we introduce ModernBERT, bringing modern model optimizations to encoder-only ..."
+    }
+  ]
+}

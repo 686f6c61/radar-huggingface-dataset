@@ -5,7 +5,7 @@
   "author": "Anisa206",
   "url": "https://huggingface.co/Anisa206/wav2vec_finetune_bengali_asr",
   "created_at": "2025-05-23T12:07:49.000Z",
-  "updated_at": "2026-08-26T13:54:39.000Z",
+  "updated_at": "2026-08-27T19:11:05.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": null,
@@ -22,8 +22,8 @@
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
-  "storage_bytes": 98195185000,
-  "storage_human": "98.2 GB",
+  "storage_bytes": 98666881411,
+  "storage_human": "98.7 GB",
   "base_model": null,
   "formats": [
     "safetensors"

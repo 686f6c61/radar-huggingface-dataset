@@ -1,0 +1,81 @@
+{
+  "schema": 1,
+  "id": "amad-iq/amad-vlm5-GGUF",
+  "slug": "amad-iq-amad-vlm5-gguf",
+  "author": "amad-iq",
+  "url": "https://huggingface.co/amad-iq/amad-vlm5-GGUF",
+  "created_at": "2026-08-28T08:38:01.000Z",
+  "updated_at": "2026-08-28T09:35:30.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "llama.cpp",
+  "languages": [
+    "ar",
+    "en"
+  ],
+  "tags": [
+    "llama.cpp",
+    "gguf",
+    "ocr",
+    "arabic",
+    "arabic-ocr",
+    "handwriting-recognition",
+    "document-understanding",
+    "vision-language",
+    "qwen2.5-vl",
+    "thinking",
+    "image-text-to-text",
+    "ar",
+    "en",
+    "base_model:amad-iq/amad-vlm5",
+    "base_model:quantized:amad-iq/amad-vlm5",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 7615616512,
+  "parameters_human": "7.62B",
+  "storage_bytes": 29373610688,
+  "storage_human": "29.4 GB",
+  "base_model": "amad-iq/amad-vlm5",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GGUF Model Discovery - Browse & Download AI Models",
+      "url": "https://local-ai-zone.github.io/",
+      "snippet": "Discover and download GGUF format AI models. Browse and direct download thousands of quantized AI models with detailed information, download counts, and direct links."
+    },
+    {
+      "title": "GGUF-Models (GGUF) - Hugging Face",
+      "url": "https://huggingface.co/GGUF-Models",
+      "snippet": "Our goal is to simplify the process of searching for and exchanging quantized models in GGUF format, as well as to create a space for efficient exchange and access to the models you need"
+    },
+    {
+      "title": "GitHub - IBM/gguf: IBM GGUF-encoded AI models and conversion scripts",
+      "url": "https://github.com/IBM/gguf",
+      "snippet": "IBM GGUF-encoded AI models and conversion scripts. Contribute to IBM/gguf development by creating an account on GitHub."
+    },
+    {
+      "title": "Models compatible with the GGUF library - Hugging Face",
+      "url": "https://huggingface.co/models?library=gguf",
+      "snippet": "Explore machine learning models."
+    },
+    {
+      "title": "LLM Leaderboard - Comparison of AI models from OpenAI, Anthropic ...",
+      "url": "https://artificialanalysis.ai/leaderboards/models",
+      "snippet": "Comparison and ranking the performance of over 250 AI models (LLMs) across key metrics including intelligence, price, performance and speed (output speed - tokens per second & latency - TTFT), context window & others."
+    }
+  ]
+}

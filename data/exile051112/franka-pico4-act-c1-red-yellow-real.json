@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "Exile051112/franka-pico4-act-c1-red-yellow-real",
+  "slug": "exile051112-franka-pico4-act-c1-red-yellow-real",
+  "author": "Exile051112",
+  "url": "https://huggingface.co/Exile051112/franka-pico4-act-c1-red-yellow-real",
+  "created_at": "2026-08-28T01:19:05.000Z",
+  "updated_at": "2026-08-28T01:26:48.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 51683978,
+  "parameters_human": "51.7M",
+  "storage_bytes": 206777456,
+  "storage_human": "207 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Exile051112/franka-pico4-act-c1-red-yellow-real · Hugging Face",
+      "url": "https://huggingface.co/Exile051112/franka-pico4-act-c1-red-yellow-real",
+      "snippet": "Franka Pico4 ACT (c1) Private deployment artifact for the LeRobot ACT policy trained on the c1_red_yellow_real condition (red real + yellow real)."
+    },
+    {
+      "title": "GitHub - sainavaneet/ACTfranka: we modified the ACT&#x27;s architecture to ...",
+      "url": "https://github.com/sainavaneet/ACTfranka",
+      "snippet": "Welcome to the ACTFranka repository, designed for the Franka robot. This guide covers both simulated and real-world environment setups, and includes utilities for environment setup, training, and inference. We have modified the original ACT code from this repo to complete this project, enhancing its ..."
+    },
+    {
+      "title": "Civitai | Discover and Create AI Art",
+      "url": "https://civitai.red/",
+      "snippet": "Explore thousands of free Stable Diffusion & Flux models, create and share AI-generated art, and join the world&#x27;s largest community of generative AI creators."
+    },
+    {
+      "title": "Google Gemini",
+      "url": "https://gemini.google.com/",
+      "snippet": "Get assistance with writing, planning, learning, and more from Google AI."
+    },
+    {
+      "title": "character.ai | AI Chat, Reimagined-Your Words. Your World.",
+      "url": "https://character.ai/",
+      "snippet": "Chat with millions of AI Characters on the #1 AI chat app. Where will your next adventure take you?"
+    }
+  ]
+}

@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "emily-gonzalez/course-contrastive-learning",
+  "slug": "emily-gonzalez-course-contrastive-learning",
+  "author": "emily-gonzalez",
+  "url": "https://huggingface.co/emily-gonzalez/course-contrastive-learning",
+  "created_at": "2026-08-28T07:24:33.000Z",
+  "updated_at": "2026-08-28T07:24:42.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "transformer",
+    "research-notes",
+    "contrastive-learning",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 33088,
+  "parameters_human": "33088",
+  "storage_bytes": 132832,
+  "storage_human": "132832 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Contrastive Learning: How Models Learn by Comparison",
+      "url": "https://www.datacamp.com/tutorial/contrastive-learning",
+      "snippet": "Learn what contrastive learning is, how it works, and why it is used in modern machine learning for representation learning and self-supervised learning."
+    },
+    {
+      "title": "A comprehensive survey on contrastive learning - ScienceDirect",
+      "url": "https://www.sciencedirect.com/science/article/pii/S0925231224014164",
+      "snippet": "Contrastive Learning is self-supervised representation learning by training a model to differentiate between similar and dissimilar samples. It has been shown to be effective and has gained significant attention in various computer vision and natural language processing tasks. In this paper, we comprehensively and systematically sort out the main ideas, recent developments and application ..."
+    },
+    {
+      "title": "Visualizing and Understanding Contrastive Learning - arXiv.org",
+      "url": "https://arxiv.org/html/2206.09753v3",
+      "snippet": "The aim of contrastive learning is to maximize the similarity between positive inputs while minimizing it between negative ones. Recently, contrastive learning has revolutionized the field of model pretraining [2], [3], [4], [5], which involves learning representations from large amounts of unlabeled data."
+    },
+    {
+      "title": "Contrastive Learning: Key Principles and Applications - Simplilearn",
+      "url": "https://www.simplilearn.com/contrastive-learning-article",
+      "snippet": "Contrastive learning extracts meaningful representations by contrasting positive and negative pairs, helping models group similar instances and separate dissimilar ones."
+    },
+    {
+      "title": "What learns next: Learning intents guided dual contrastive learning ...",
+      "url": "https://www.sciencedirect.com/science/article/pii/S0925231225007234",
+      "snippet": "However, these systems face challenges in accuracy and robustness due to partial learning preference modeling and unconventional long sequences sparsity. This paper proposes a learning intents guided dual contrastive learning model for online course recommendation to address these issues."
+    }
+  ]
+}

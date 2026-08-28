@@ -1,0 +1,76 @@
+{
+  "schema": 1,
+  "id": "sanidhya1910/recipe-lens-4b",
+  "slug": "sanidhya1910-recipe-lens-4b",
+  "author": "sanidhya1910",
+  "url": "https://huggingface.co/sanidhya1910/recipe-lens-4b",
+  "created_at": "2026-08-28T07:50:08.000Z",
+  "updated_at": "2026-08-28T07:56:49.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3",
+    "text-generation",
+    "recipes",
+    "structured-output",
+    "conversational",
+    "en",
+    "dataset:Shengtao/recipe",
+    "base_model:Qwen/Qwen3-4B-Instruct-2507",
+    "base_model:finetune:Qwen/Qwen3-4B-Instruct-2507",
+    "license:apache-2.0",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 4022468096,
+  "parameters_human": "4.02B",
+  "storage_bytes": 8056404730,
+  "storage_human": "8.1 GB",
+  "base_model": "Qwen/Qwen3-4B-Instruct-2507",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Recipe Lens | AI Recipe Identification & Personal Recipe Collection",
+      "url": "https://www.recipelens.com/?ref=taaft",
+      "snippet": "Transform photos into detailed recipes with AI. Identify any dish, create custom recipes from ingredients, and build your personal recipe collection. Save, organize, and cook with step-by-step guides."
+    },
+    {
+      "title": "recipelens.app - Turn Your",
+      "url": "https://recipelens.app/",
+      "snippet": "Stop asking \"what&#x27;s for dinner?\" Just tell us what&#x27;s in your fridge and let our AI handle the culinary magic."
+    },
+    {
+      "title": "RecipeLens — AI Recipe Extractor for TikTok, YouTube & Blogs",
+      "url": "https://recipelens.cc/",
+      "snippet": "Extract Any Recipe From TikTok & YouTube Paste a URL from TikTok, YouTube, Pinterest, Instagram, or any Food Blog. Our AI instantly extracts the clean recipe, ingredients, and step-by-step directions—no ads, no life stories."
+    },
+    {
+      "title": "Recipe Lens | AI Recipe Identification & Personal Recipe Collection",
+      "url": "https://www.recipelens.com/",
+      "snippet": "Identify recipes from photos, create custom recipes from ingredients, and build your personal recipe collection. Save, organize, and cook with AI-powered guidance."
+    },
+    {
+      "title": "recipe-lens/README.md at main · SahithiA17/recipe-lens",
+      "url": "https://github.com/SahithiA17/Recipe-Lens/blob/main/README.md",
+      "snippet": "Recipe Lens In this project introduces an inverse cooking system that takes a food image and recreate a cooking recipes consisting of a title, ingredients, sequence of cooking instructions, Calorie, Cooking time. This model predicts ingredients as sets by means of DenseNet201 and Recipe Retrieval Algorithm."
+    }
+  ]
+}

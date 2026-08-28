@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "amanicorn/monument-deepfillv2",
+  "slug": "amanicorn-monument-deepfillv2",
+  "author": "amanicorn",
+  "url": "https://huggingface.co/amanicorn/monument-deepfillv2",
+  "created_at": "2026-08-28T09:17:42.000Z",
+  "updated_at": "2026-08-28T09:23:23.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 120113764,
+  "storage_human": "120 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - nipponjo/deepfillv2-pytorch: ️ A PyTorch reimplementation of ...",
+      "url": "https://github.com/nipponjo/deepfillv2-pytorch",
+      "snippet": "The models in networks_tf.py can be used with the weights from the official repository, which I have converted to PyTorch state dicts. The networks in networks_tf.py use TensorFlow-compatibility functions (padding, down-sampling), while the networks in networks.py do not. In order to adjust the ..."
+    },
+    {
+      "title": "GitHub - zhaoyuzhi/deepfillv2: The PyTorch implementation of ICCV 2019 ...",
+      "url": "https://github.com/zhaoyuzhi/deepfillv2",
+      "snippet": "The PyTorch implementations and guideline for Gated Convolution based on ICCV 2019 oral paper: free-form inpainting (deepfillv2). We are focusing on Gated Conv so do not implement original paper completely, and implement it as a coarse-to-fine manner."
+    },
+    {
+      "title": "DeepFillv2_Colab.ipynb - Colab - Google Colab",
+      "url": "https://colab.research.google.com/github/vrindaprabhu/deepfillv2_colab/blob/main/DeepFillv2_Colab.ipynb",
+      "snippet": "Colab code for image inpainting. DeepFillv2 Pytorch Repo Original Paper @article{yu2018generative, title={Generative Image Inpainting with Contextual Attention}, author={Yu, Jiahui and Lin, Zhe and Yang, Jimei and Shen, Xiaohui and Lu, Xin and Huang, Thomas S}, journal={arXiv preprint arXiv:1801.07892}, year={2018}}@article{yu2018free, title={Free-Form Image Inpainting with Gated Convolution ..."
+    },
+    {
+      "title": "ford442/deepfillv2-inpainting at main - Hugging Face",
+      "url": "https://huggingface.co/ford442/deepfillv2-inpainting/tree/main",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "deepfillv2.onnx - CivArchive - CivArchive (CivitAI Archive)",
+      "url": "https://civarchive.com/files/deepfillv2.onnx?platform=all",
+      "snippet": "Download deepfillv2.onnx from CivArchive. Find this AI model file preserved in our community-driven archive."
+    }
+  ]
+}

@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "Jordansky/dpo_ours_v2_736fa1e0",
+  "slug": "jordansky-dpo_ours_v2_736fa1e0",
+  "author": "Jordansky",
+  "url": "https://huggingface.co/Jordansky/dpo_ours_v2_736fa1e0",
+  "created_at": "2026-08-28T09:33:24.000Z",
+  "updated_at": "2026-08-28T09:33:34.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "arxiv:1910.09700",
+    "base_model:unsloth/llama-3-8b-Instruct",
+    "base_model:adapter:unsloth/llama-3-8b-Instruct",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1359448521,
+  "storage_human": "1.4 GB",
+  "base_model": "unsloth/llama-3-8b-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Jordansky/instruct_text_0957c01da5ff92fccf02 · Hugging Face",
+      "url": "https://huggingface.co/Jordansky/instruct_text_0957c01da5ff92fccf02",
+      "snippet": "Instructions to use Jordansky/instruct_text_0957c01da5ff92fccf02 with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Libraries Transformers How to use Jordansky/instruct_text_0957c01da5ff92fccf02 with Transformers: # Use a pipeline as a high-level helper from transformers import pipeline pipe = pipeline (\"text-generation\", model=\"Jordansky ..."
+    },
+    {
+      "title": "AI Aimbot Models & YOLO Detection Models | MossyModels",
+      "url": "https://mossymodels.com/",
+      "snippet": "Browse 661+ free YOLO and ONNX detection models across 43+ games. Community library for Fortnite, Valorant, Warzone, Apex Legends, and more."
+    },
+    {
+      "title": "Fine-Tuning Techniques - Choosing Between SFT, DPO, and RFT (With a ...",
+      "url": "https://developers.openai.com/cookbook/examples/fine_tuning_direct_preference_optimization_guide",
+      "snippet": "By fine-tuning on explicit pairs of preferred vs non‑preferred completions, DPO aligns model outputs to these nuanced preferences. The below table gives examples of pairwise preference data for a fictional AI assistant that represents an organization, where preferred responses are clear, professional, and aligned with brand standards."
+    },
+    {
+      "title": "AI Models | Civitai",
+      "url": "https://civitai.com/models",
+      "snippet": "Browse thousands of free Stable Diffusion & Flux models, LoRAs, checkpoints, and embeddings. The largest collection of AI image generation resources."
+    },
+    {
+      "title": "Jordansky/ginfresh-ours · Hugging Face",
+      "url": "https://huggingface.co/Jordansky/ginfresh-ours",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    }
+  ]
+}

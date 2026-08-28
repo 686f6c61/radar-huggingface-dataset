@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "aspect-ratio-scaling/block-attnres-lr2e-3-llama-400M-L16-pretrain",
+  "slug": "aspect-ratio-scaling-block-attnres-lr2e-3-llama-400m-l16-pretrain",
+  "author": "aspect-ratio-scaling",
+  "url": "https://huggingface.co/aspect-ratio-scaling/block-attnres-lr2e-3-llama-400M-L16-pretrain",
+  "created_at": "2026-08-28T11:36:08.000Z",
+  "updated_at": "2026-08-28T11:37:34.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "olmo-core",
+  "languages": [],
+  "tags": [
+    "olmo-core",
+    "causal-lm",
+    "raw-checkpoint",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 9783623005,
+  "storage_human": "9.8 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "AttnRes - a aspect-ratio-scaling Collection - Hugging Face",
+      "url": "https://huggingface.co/collections/aspect-ratio-scaling/attnres",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "aspect-ratio-scaling/attnres-lr2e-3-llama-400M-L16-pretrain - Hugging Face",
+      "url": "https://huggingface.co/aspect-ratio-scaling/attnres-lr2e-3-llama-400M-L16-pretrain",
+      "snippet": "attnres-lr2e-3-llama-400M-L16-pretrain This repository stores the raw OLMo-core checkpoint files uploaded from the original training output directory."
+    },
+    {
+      "title": "Models - Hugging Face",
+      "url": "https://d6108366.hf-mirror.com/models?other=attnres",
+      "snippet": "Explore machine learning models. 4 Base only Inference AvailableInference Edit filters Sort: Trending Active filters: attnres Clear all"
+    },
+    {
+      "title": "GPT-5 Mini Model | OpenAI API",
+      "url": "https://developers.openai.com/api/docs/models/gpt-5-mini",
+      "snippet": "Near-frontier intelligence for cost sensitive, low latency, high volume workloads"
+    },
+    {
+      "title": "Research - OpenAI",
+      "url": "https://openai.com/research/index/",
+      "snippet": "We believe our research will eventually lead to artificial general intelligence, a system that can solve human-level problems. Building safe and beneficial AGI is our mission."
+    }
+  ]
+}

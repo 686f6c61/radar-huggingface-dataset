@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "vkokonkwo/document-ai-ablation",
+  "slug": "vkokonkwo-document-ai-ablation",
+  "author": "vkokonkwo",
+  "url": "https://huggingface.co/vkokonkwo/document-ai-ablation",
+  "created_at": "2026-08-28T07:49:55.000Z",
+  "updated_at": "2026-08-28T07:50:03.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "transformer",
+    "research-notes",
+    "document-ai",
+    "license:cc-by-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 49600,
+  "parameters_human": "49600",
+  "storage_bytes": 198880,
+  "storage_human": "198880 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Ablation (artificial intelligence) - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Ablation_(artificial_intelligence)",
+      "snippet": "In artificial intelligence (AI), particularly machine learning, [1] ablation is the removal of a component of an AI system. An ablation study aims to determine the contribution of a component to an AI system by removing the component, and then analyzing the resultant performance of the system."
+    },
+    {
+      "title": "(PDF) AblationBench: Evaluating Automated Planning of Ablations in ...",
+      "url": "https://www.researchgate.net/publication/393655983_AblationBench_Evaluating_Automated_Planning_of_Ablations_in_Empirical_AI_Research",
+      "snippet": "A key component of empirical AI research is the design of ablation experiments. To this end, we introduce AblationBench, a benchmark suite for evaluating agents on ablation planning tasks in ..."
+    },
+    {
+      "title": "AblationBench: Evaluating Automated Planning of Ablations in Empirical ...",
+      "url": "https://arxiv.org/pdf/2507.08038",
+      "snippet": "Abstract Language model agents are increasingly used to automate scientific research, yet evaluating their scientific contributions remains a challenge. A key mechanism to obtain such insights is through ablation experiments. To this end, we introduce AblationBench, a benchmark suite for evaluating agents on ablation planning tasks in empirical AI research. It includes two tasks ..."
+    },
+    {
+      "title": "Document AI - Google Cloud",
+      "url": "https://cloud.google.com/document-ai",
+      "snippet": "The Document AI solutions suite includes pretrained models for document processing, Workbench for custom models, and Warehouse to search and store."
+    },
+    {
+      "title": "Machine Learning: What Is Ablation Study? - Baeldung",
+      "url": "https://www.baeldung.com/cs/ml-ablation-study",
+      "snippet": "In the image below, we can see an example of an ablation study in a model with N modules. Each time we remove one of the modules and check the performance of the new model to investigate the influence of the removed module: 4. Importance Now, let&#x27;s discuss the importance of the ablation study in machine learning."
+    }
+  ]
+}

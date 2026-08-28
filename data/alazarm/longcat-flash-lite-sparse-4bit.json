@@ -1,0 +1,79 @@
+{
+  "schema": 1,
+  "id": "AlazarM/LongCat-Flash-Lite-Sparse-4bit",
+  "slug": "alazarm-longcat-flash-lite-sparse-4bit",
+  "author": "AlazarM",
+  "url": "https://huggingface.co/AlazarM/LongCat-Flash-Lite-Sparse-4bit",
+  "created_at": "2026-08-28T03:29:37.000Z",
+  "updated_at": "2026-08-28T07:57:07.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "mlx",
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "longcat_flash_sparse",
+    "longcat",
+    "lsa",
+    "moe",
+    "ngram-embedding",
+    "text-generation",
+    "conversational",
+    "en",
+    "zh",
+    "base_model:meituan-longcat/LongCat-Flash-Lite-Sparse",
+    "base_model:quantized:meituan-longcat/LongCat-Flash-Lite-Sparse",
+    "license:mit",
+    "4-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 10723000960,
+  "parameters_human": "10.72B",
+  "storage_bytes": 38604498864,
+  "storage_human": "38.6 GB",
+  "base_model": "meituan-longcat/LongCat-Flash-Lite-Sparse",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "meituan-longcat/LongCat-Flash-Lite-Sparse · Hugging Face",
+      "url": "https://huggingface.co/meituan-longcat/LongCat-Flash-Lite-Sparse",
+      "snippet": "LongCat-Flash-Lite-Sparse is a non-thinking Mixture-of-Experts (MoE) model with 69B total parameters and approximately 3B activated parameters per token. Built on LongCat-Flash-Lite, it replaces dense MLA with LongCat Sparse Attention (LSA) and natively supports context lengths of up to 1M tokens."
+    },
+    {
+      "title": "README.md · meituan-longcat/LongCat-Flash-Lite-Sparse at main",
+      "url": "https://huggingface.co/meituan-longcat/LongCat-Flash-Lite-Sparse/blob/main/README.md",
+      "snippet": "LongCat-Flash-Lite-Sparse is a non-thinking Mixture-of-Experts (MoE) model with 69B total parameters and approximately 3B activated parameters per token. Built on LongCat-Flash-Lite, it replaces dense MLA with LongCat Sparse Attention (LSA) and natively supports context lengths of up to 1M tokens."
+    },
+    {
+      "title": "Lightweight MoE LLM Inference - LongCat-Flash-Lite",
+      "url": "https://www.longcatai.org/models/flash-lite",
+      "snippet": "Overview LongCat-Flash-Lite is a lightweight Mixture-of-Experts (MoE) model that explores a new scaling direction: N-gram embedding expansion. Instead of relying primarily on adding more experts, it allocates a large portion of total parameters into an N-gram embedding layer to improve local-context semantic capture, while keeping inference sparse via dynamic activation."
+    },
+    {
+      "title": "Meituan (LongCat) Model: meituan-longcat/LongCat-Flash-Lite-Sparse ...",
+      "url": "https://www.onlylabs.fyi/signals/aac1cebe-2cee-48a8-9c1d-9baeb2f686d8",
+      "snippet": "Built on LongCat-Flash-Lite, it replaces dense MLA with LongCat Sparse Attention (LSA) and natively supports context lengths of up to 1M tokens. Compared with its dense predecessor, LongCat-Flash-Lite-Sparse improves long-context inference efficiency and agentic capabilities while preserving strong reasoning and general-knowledge performance."
+    },
+    {
+      "title": "LongCat Flash Lite Sparse by meituan-longcat",
+      "url": "https://llm-explorer.com/model/meituan-longcat%2FLongCat-Flash-Lite-Sparse,EWklT9kTRrPKfJFEz5atv",
+      "snippet": "LongCat Flash Lite Sparse is an open-source 69.1b LLM by meituan-longcat. VRAM 137.8GB, 960K context. Compare benchmarks, capabilities, and deployment details on LLM Explorer."
+    }
+  ]
+}

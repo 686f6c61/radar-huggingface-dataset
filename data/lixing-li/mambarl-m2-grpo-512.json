@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "Lixing-Li/mambarl-m2-grpo-512",
+  "slug": "lixing-li-mambarl-m2-grpo-512",
+  "author": "Lixing-Li",
+  "url": "https://huggingface.co/Lixing-Li/mambarl-m2-grpo-512",
+  "created_at": "2026-08-26T23:54:56.000Z",
+  "updated_at": "2026-08-28T01:54:38.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "mamba2",
+    "lora",
+    "mambarl",
+    "base_model:AntonV/mamba2-2.7b-hf",
+    "base_model:adapter:AntonV/mamba2-2.7b-hf",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 2702599680,
+  "parameters_human": "2.70B",
+  "storage_bytes": 10810524208,
+  "storage_human": "10.8 GB",
+  "base_model": "AntonV/mamba2-2.7b-hf",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Lixing-Li/mambarl-m2-grpo-512 · Hugging Face",
+      "url": "https://huggingface.co/Lixing-Li/mambarl-m2-grpo-512",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Lixing-Li/mambarl-m2-grpo-512 at main - Hugging Face",
+      "url": "https://huggingface.co/Lixing-Li/mambarl-m2-grpo-512/tree/main",
+      "snippet": "Instructions to use Lixing-Li/mambarl-m2-grpo-512 with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Libraries Transformers How to use Lixing-Li/mambarl-m2-grpo-512 with Transformers: ... Notebooks Google Colab Kaggle main mambarl-m2-grpo-512 5.41 GB Ctrl+K Ctrl+K 1 contributor History:2 commits ..."
+    },
+    {
+      "title": "MiniMax M2 Open-Source AI Model",
+      "url": "https://lzwjava.github.io/minimax-m2-en",
+      "snippet": "MiniMax M2 is a newly released open-source large language model (LLM) from MiniMax AI, a Chinese AI company focused on foundation models for text, audio, image, and video."
+    },
+    {
+      "title": "AI Model Rankings 2026: Live LLM Leaderboard | ModelCap",
+      "url": "https://modelcap.ai/",
+      "snippet": "Live LLM leaderboard (Aug 2026): 229 AI models ranked on public benchmark evidence; Claude Fable 5 leads. API pricing, context windows and 69 providers compared."
+    },
+    {
+      "title": "Li-xingXiao (Lixing Xiao) · GitHub",
+      "url": "https://github.com/Li-xingXiao",
+      "snippet": "I&#x27;m a Master student at 3D Vision Group, Zhejiang University, China. - Li-xingXiao"
+    }
+  ]
+}

@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "OpenExplorer/qcnet_oe",
+  "slug": "openexplorer-qcnet_oe",
+  "author": "OpenExplorer",
+  "url": "https://huggingface.co/OpenExplorer/qcnet_oe",
+  "created_at": "2026-08-27T07:52:09.000Z",
+  "updated_at": "2026-08-28T08:27:18.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "heal",
+    "horizon",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 306269049,
+  "storage_human": "306 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "AI Benchmark User Guide - Horizon OpenExplorer Toolchain User Manual",
+      "url": "https://doc.oe.horizon.auto/en/guide/model_deployment/board_deployment/ai_benchmark.html",
+      "snippet": "Except for the qcnet_oe_argoverse2, bev, motr_efficientnetb3_mot17, and maptroe_henet_tinym_bevformer_nuscenes models, the reference generation method of the lst files for the other models:"
+    },
+    {
+      "title": "AI Benchmark User Guide - D-Robotics OpenExplorer Toolchain User Manual",
+      "url": "https://toolchain.d-robotics.cc/en/guide/ucp/runtime/ai_benchmark.html",
+      "snippet": "AI Benchmark User Guide AI Benchmark Sample Package contains the most frequently used performance and accuracy evaluation samples of classification, detection, segmentation, optical-flow, tracking estimation, lidar multitask, bev, depth estimation and online map construction models."
+    },
+    {
+      "title": "QCNet Trajectory Prediction Model Training - Horizon OpenExplorer ...",
+      "url": "https://doc.oe.horizon.auto/3.7.0/en/guide/advanced_content/hat/examples/qcnet.html",
+      "snippet": "This tutorial primarily guides you on training a QCNet model from scratch on the Argoverse 2 dataset, including floating-point, quantized, and fixed-point models. QCNet is a trajectory prediction model, which can be referenced in the paperQuery-Centric Trajectory Prediction."
+    },
+    {
+      "title": "OE-Skills/README.en.md at main · HorizonRobotics/OE-Skills",
+      "url": "https://github.com/HorizonRobotics/OE-Skills/blob/main/README.en.md",
+      "snippet": "A collection of Agent skills for Horizon OpenExplorer (OE) toolchain scenarios. Centered around core steps such as PTQ/QAT quantization, HBDK compilation, UCP on-board inference, performance and accuracy evaluation, this manual modularizes path knowledge, stage dependencies, and verification ..."
+    },
+    {
+      "title": "OE Development Kit Samples Introduction - D-Robotics OpenExplorer ...",
+      "url": "https://toolchain.d-robotics.cc/guide/appendix/community_articles/oe_package_sample.html",
+      "snippet": "OE Development Kit Samples Introduction The algorithmic toolchain covers the key steps of model training (floating-point and quantization training, optional), conversion, performance/accuracy validation, deployment and inference. To facilitate your quick experience and learning, rich and comprehensive samples are provided in the OE Development Kit. To facilitate your understanding and use of ..."
+    }
+  ]
+}

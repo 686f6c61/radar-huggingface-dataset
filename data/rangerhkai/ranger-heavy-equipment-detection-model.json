@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "rangerhkai/ranger-heavy-equipment-detection-model",
+  "slug": "rangerhkai-ranger-heavy-equipment-detection-model",
+  "author": "rangerhkai",
+  "url": "https://huggingface.co/rangerhkai/ranger-heavy-equipment-detection-model",
+  "created_at": "2026-08-28T10:19:28.000Z",
+  "updated_at": "2026-08-28T10:23:16.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 5471194,
+  "storage_human": "5 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - rangerhkai/ranger-heavy-equipment-detection-model",
+      "url": "https://github.com/rangerhkai/ranger-heavy-equipment-detection-model",
+      "snippet": "About This Release RANGER™ CONSTRUCTION INTELLIGENCE is open-sourcing the RANGER™ Heavy Equipment Detection Model for learning, evaluation, and non-commercial use by the Hong Kong construction industry, academic institutions, and research teams."
+    },
+    {
+      "title": "Hugging Face - The AI community building the future.",
+      "url": "https://huggingface.co/",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Machinery Computer Vision Datasets and Models - Roboflow",
+      "url": "https://universe.roboflow.com/browse/construction/machinery",
+      "snippet": "By monitoring construction sites one can increase safety on-site. An example of computer vision in machinery includes detecting cranes, bulldozers, and excavators in order to prevent injuries during the work day."
+    },
+    {
+      "title": "Ranger Core API - Ranger Documentation - cmu-sei.github.io",
+      "url": "https://cmu-sei.github.io/rangerai/infrastructure/ranger_api/",
+      "snippet": "Ranger Core API The Ranger Core API is the main service endpoint that handles incoming requests, coordinates system components, and integrates with a language model backend. It does not contain the AI model itself — rather, it serves as the central controller that routes messages, invokes tools, and returns results."
+    },
+    {
+      "title": "SiteAI Equipment Tracker — YOLOv8 Deployment - GitHub",
+      "url": "https://github.com/Vagiadim/SiteAI-equipment-tracker-",
+      "snippet": "Manual equipment tracking is error-prone and cannot scale across large AECO projects. This project develops a computer vision system that automatically detects and classifies 7 types of heavy construction equipment from site photographs, enabling real-time monitoring for safety and logistics."
+    }
+  ]
+}

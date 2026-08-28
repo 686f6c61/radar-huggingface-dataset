@@ -1,0 +1,84 @@
+{
+  "schema": 1,
+  "id": "prithivMLmods/dots.mocr-GGUF",
+  "slug": "prithivmlmods-dots-mocr-gguf",
+  "author": "prithivMLmods",
+  "url": "https://huggingface.co/prithivMLmods/dots.mocr-GGUF",
+  "created_at": "2026-08-28T06:00:22.000Z",
+  "updated_at": "2026-08-28T07:50:04.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [
+    "en",
+    "zh",
+    "multilingual"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "text-generation-inference",
+    "llama-cpp",
+    "image-to-text",
+    "ocr",
+    "document-parse",
+    "layout",
+    "table",
+    "formula",
+    "custom_code",
+    "image-text-to-text",
+    "en",
+    "zh",
+    "multilingual",
+    "base_model:dots-studio/dots.mocr",
+    "base_model:quantized:dots-studio/dots.mocr",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1777088000,
+  "parameters_human": "1.78B",
+  "storage_bytes": 21849580512,
+  "storage_human": "21.8 GB",
+  "base_model": "dots-studio/dots.mocr",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "prithivMLmods/ArmorOCR-GGUF · Hugging Face",
+      "url": "https://huggingface.co/prithivMLmods/ArmorOCR-GGUF",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "prithivMLmods (Prithiv Sakthi)",
+      "url": "https://huggingface.co/prithivMLmods",
+      "snippet": "computer vision, nlp, multimodality - HuggingFace Fellow ML 🤗"
+    },
+    {
+      "title": "GitHub - studio-dots-ai/dots.mocr: Multimodal OCR: Parse Anything from ...",
+      "url": "https://github.com/studio-dots-ai/dots.mocr",
+      "snippet": "Multimodal OCR: Parse Anything from Documents. Contribute to studio-dots-ai/dots.mocr development by creating an account on GitHub."
+    },
+    {
+      "title": "prithivmlmods",
+      "url": "https://prithivsakthiur.github.io/prithivmlmods/",
+      "snippet": "experience > huggingface ml fellow @ huggingface🤗 [sep 25&#x27; - present] > ai engineer @ polycruz [may 25&#x27; - present] > computer vision collab @ wildy ai [jan 25&#x27; - mar&#x27;25] > swe intern @ mediminds technology [sep 24&#x27; - oct 24&#x27;] > ccsn intern @ directorate of technical education [jul 23&#x27; - aug 23&#x27;] projects > multimodal vlm : vlms for improved reasoning and difficult ocr > computer vision ..."
+    },
+    {
+      "title": "Dots Studio Dots.mocr: 2GB VRAM (Q4), Runs on 71 GPUs",
+      "url": "https://localai.computer/models/dots-studio-dots.mocr",
+      "snippet": "See which GPUs can run Dots Studio Dots.mocr locally. Needs 2GB VRAM at Q4, 4GB at Q8, 7GB at FP16. Compare GPU options for local inference."
+    }
+  ]
+}

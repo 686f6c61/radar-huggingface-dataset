@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "inferencerlabs/GLM-5.3-Flash-MLX-Q9",
+  "slug": "inferencerlabs-glm-5-3-flash-mlx-q9",
+  "author": "inferencerlabs",
+  "url": "https://huggingface.co/inferencerlabs/GLM-5.3-Flash-MLX-Q9",
+  "created_at": "2026-08-28T07:43:22.000Z",
+  "updated_at": "2026-08-28T07:49:19.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "image-text-to-text",
+  "library": "mlx",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "mlx",
+    "glm5_next",
+    "quantized",
+    "image-text-to-text",
+    "conversational",
+    "en",
+    "base_model:zai-org/GLM-5.3-Flash-BF16",
+    "base_model:quantized:zai-org/GLM-5.3-Flash-BF16",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 20217442,
+  "storage_human": "20 MB",
+  "base_model": "zai-org/GLM-5.3-Flash-BF16",
+  "formats": [
+    "mlx"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GLM 5.3 Flash - EmpirioLabs AI Docs",
+      "url": "https://docs.empiriolabs.ai/models/glm-5-3-flash",
+      "snippet": "Natively multimodal flash model with a 1M token context, image and video input, always-on reasoning, native web search, and tool calling."
+    },
+    {
+      "title": "GLM-5.3-Flash: How to Run Locally - unsloth.ai",
+      "url": "https://unsloth.ai/docs/models/glm-5.3",
+      "snippet": "Search and download GLM-5.3-Flash Go to Unsloth Chat or Model hub and search for GLM-5.3-Flash in the search bar and download your desired model and quant."
+    },
+    {
+      "title": "GitHub - PipeNetwork/glm53-flash-mlx: MLX (Apple Silicon) runtime ...",
+      "url": "https://github.com/PipeNetwork/glm53-flash-mlx",
+      "snippet": "MLX (Apple Silicon) runtime and quantization tooling for zai-org/GLM-5.3-Flash — 320B-A18B: 34 Kimi-Delta linear-attention layers interleaved with 11 DeepSeek-sparse-attention layers (NoPE MLA behind a lightning indexer), 288-expert MoE, manifold-constrained hyper-connections (model_type: glm5_next)."
+    },
+    {
+      "title": "GLM-5.3 Specs, Benchmarks, API & Access - kingy.ai",
+      "url": "https://kingy.ai/blog/glm-5-3-specs-benchmarks-api-how-to-use/",
+      "snippet": "GLM-5.3 launch guide: specs, recalculated benchmark gains, API changes, Coding Plan setup, pricing gaps, and what is still unavailable."
+    },
+    {
+      "title": "GLM 5.3 Flash API: Pricing, Quickstart & Limits | EmpirioLabs AI",
+      "url": "https://empiriolabs.ai/blog/glm-5-3-flash-api",
+      "snippet": "GLM 5.3 Flash is the first natively multimodal model in Z.ai&#x27;s GLM-5 family, released on August 26, 2026 under the MIT license after an earlier preview as Ox Alpha. It is a 320B-A18B mixture-of-experts trained on a multimodal corpus, and Z.ai reports it outperforming GLM 5.2 across coding and agentic benchmarks at a fraction of the price, with results approaching much larger frontier coding ..."
+    }
+  ]
+}

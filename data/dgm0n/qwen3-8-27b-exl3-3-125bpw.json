@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "DGM0N/Qwen3.8-27B-exl3-3.125bpw",
+  "slug": "dgm0n-qwen3-8-27b-exl3-3-125bpw",
+  "author": "DGM0N",
+  "url": "https://huggingface.co/DGM0N/Qwen3.8-27B-exl3-3.125bpw",
+  "created_at": "2026-08-20T15:07:00.000Z",
+  "updated_at": "2026-08-28T01:49:49.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_5",
+    "image-text-to-text",
+    "qwen3_8",
+    "conversational",
+    "base_model:Qwen/Qwen3.8-27B",
+    "base_model:quantized:Qwen/Qwen3.8-27B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "exl3",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 10,
+  "trending_score": 0,
+  "parameters": 7099217136,
+  "parameters_human": "7.10B",
+  "storage_bytes": 14211546709,
+  "storage_human": "14.2 GB",
+  "base_model": "Qwen/Qwen3.8-27B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "DGM0N/Qwen3.8-27B-exl3-3.125bpw · Hugging Face",
+      "url": "https://huggingface.co/DGM0N/Qwen3.8-27B-exl3-3.125bpw",
+      "snippet": "Qwen3.8-27B brings these advances to a compact, deployment-friendly dense model: a native vision-language model that understands images and videos, with flexible thinking control, designed to carry complex, multi-step tasks through to completion with greater reliability."
+    },
+    {
+      "title": "Qwen/Qwen3.8-27B · Hugging Face",
+      "url": "https://huggingface.co/Qwen/Qwen3.8-27B",
+      "snippet": "MathVision: Qwen3.8-27B is evaluated using the fixed prompt: \"Please reason step by step, and put your final answer within &#92;boxed {}.\" For the remaining models, we report the higher score from two prompt variants—one with and one without the &#92;boxed {} formatting requirement."
+    },
+    {
+      "title": "Qwen3.8-27B - GitHub",
+      "url": "https://github.com/AlibabaCloud-Official/Qwen3.8-27B",
+      "snippet": "Welcome to the repository for Qwen3.8-27B —the latest native multimodal dense open-weight model released by Alibaba&#x27;s Qwen team. Delivering top-tier performance for local hardware, Qwen3.8-27B excels at coding, agentic workflows, and office automation tasks."
+    },
+    {
+      "title": "Qwen/Qwen3.8-27B | vLLM Recipes",
+      "url": "https://recipes.vllm.ai/Qwen/Qwen3.8-27B",
+      "snippet": "The official Qwen/Qwen3.8-27B-FP8 checkpoint serves directly on a 950PR — no offline re-quantization and no --quantization ascend. vLLM Ascend reads quant_method: fp8 and weight_block_size straight from the checkpoint, expands the weight_scale_inv tiles at load time and re-quantizes to MXFP8 on 950."
+    },
+    {
+      "title": "GitHub - QwenLM/Qwen3.8: Qwen3.8 is the large language model series ...",
+      "url": "https://github.com/QwenLM/Qwen3.8",
+      "snippet": "Welcome to the GitHub repository of the Qwen3.5 open model series, including Qwen3.5, Qwen3.6, and the latest Qwen3.8. Here, you can find official information about Qwen3.8, post your questions (Issues), and share your ideas with the community (Discussions)."
+    }
+  ]
+}

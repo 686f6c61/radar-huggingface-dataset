@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "Sounderya/smolvla-ur3-mix-polished",
+  "slug": "sounderya-smolvla-ur3-mix-polished",
+  "author": "Sounderya",
+  "url": "https://huggingface.co/Sounderya/smolvla-ur3-mix-polished",
+  "created_at": "2026-08-28T01:45:34.000Z",
+  "updated_at": "2026-08-28T02:00:36.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "robotics",
+    "smolvla",
+    "dataset:Sounderya/mug_smolvla_dataset_v2nc",
+    "arxiv:2506.01844",
+    "base_model:lerobot/smolvla_base",
+    "base_model:finetune:lerobot/smolvla_base",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 450046176,
+  "parameters_human": "450.0M",
+  "storage_bytes": 5277553436,
+  "storage_human": "5.3 GB",
+  "base_model": "lerobot/smolvla_base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Sounderya/smolvla-ur3-mix-polished-1 · Hugging Face",
+      "url": "https://huggingface.co/Sounderya/smolvla-ur3-mix-polished-1",
+      "snippet": "Sounderya/mug_smolvla_dataset_v2nc ... SmolVLA: A Vision-Language-Action Model for Affordable and Efficient Robotics"
+    },
+    {
+      "title": "GitHub - wycliffeoleti/smolVLA: SmolVLA 450M VLA fine-tuning on LIBERO ...",
+      "url": "https://github.com/wycliffeoleti/smolVLA",
+      "snippet": "SmolVLA: Vision-Language-Action Fine-Tuning on Consumer Hardware End-to-end fine-tuning of a 450M-parameter Vision-Language-Action model (SmolVLA) for robotic pick-and-place on a single RTX 4060 (8GB VRAM) using LeRobot."
+    },
+    {
+      "title": "SmolVLA Fine-tuning for Robotic Manipulation - GitHub",
+      "url": "https://github.com/GadzhiAskhabaliev/SmolVLA",
+      "snippet": "Research Project for HSE Robotics Laboratory This repository contains the implementation and results of fine-tuning the SmolVLA (Small Vision-Language-Action) model for robotic manipulation tasks using the LeRobot framework."
+    },
+    {
+      "title": "SmolVLA - aegean.ai",
+      "url": "https://aegean.ai/book/vla-agents/smolvla",
+      "snippet": "SmolVLA is Hugging Face&#x27;s compact Vision-Language-Action model, built on top of the LeRobot library. It is designed to be small enough to fine-tune and deploy on a single consumer GPU, while remaining competitive with larger open VLAs on standard manipulation benchmarks."
+    },
+    {
+      "title": "SmolVLA: A vision-language-action model for affordable and efficient ...",
+      "url": "https://arxiv.org/html/2506.01844v1",
+      "snippet": "3 SmolVLA: small, efficient and capable Overview. SmolVLA is a lightweight VLA composed of a compact pretrained VLM, and an action expert trained with flow matching. Given multiple images and a language instruction describing the task, the model outputs a chunk of actions."
+    }
+  ]
+}

@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "shujialiu/robotwin3task-cosmos-p25-2b-iter36000",
+  "slug": "shujialiu-robotwin3task-cosmos-p25-2b-iter36000",
+  "author": "shujialiu",
+  "url": "https://huggingface.co/shujialiu/robotwin3task-cosmos-p25-2b-iter36000",
+  "created_at": "2026-08-28T07:07:14.000Z",
+  "updated_at": "2026-08-28T07:34:05.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": "robotics",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "robotics",
+    "vla",
+    "cosmos-predict2.5",
+    "robotwin",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 12391151039,
+  "storage_human": "12.4 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Models - Hugging Face",
+      "url": "https://huggingface.co/models?sort=modified",
+      "snippet": "Explore machine learning models."
+    },
+    {
+      "title": "Cosmos 3 — Cosmos Lab - research.nvidia.com",
+      "url": "https://research.nvidia.com/labs/cosmos-lab/cosmos3/",
+      "snippet": "Cosmos 3 connects understanding, generation, simulation, and action through a shared omnimodal world model that moves fluidly across text, images, video, audio, and actions."
+    },
+    {
+      "title": "CivArchive (CivitAI Archive) - AI Model Archive",
+      "url": "https://civitaiarchive.com/",
+      "snippet": "Browse and discover AI models from CivitAI, TensorArt, and SeaArt. Community-driven archive preserving access to AI resources."
+    },
+    {
+      "title": "AI-Build-AI/tasks/robot-world-model-post-training at main - GitHub",
+      "url": "https://github.com/aibuildai/AI-Build-AI/tree/main/tasks/robot-world-model-post-training",
+      "snippet": "RT-1 World Model: Autonomous Post-Training of Cosmos-Predict2.5 Built on NVIDIA Cosmos. An AIBuildAI agent autonomously post-trained the open Cosmos-Predict2.5-2B action-conditioned world model on the RT-1 robot manipulation domain: 29 hours on an 8x A100 node, no human intervention between launch and delivery."
+    },
+    {
+      "title": "NVIDIA Physical AI Open Source at CVPR 2026: GR00T N1.6, Alpamayo ...",
+      "url": "https://chatforest.com/builders-log/nvidia-physical-ai-cvpr-2026-gr00t-alpamayo-openshell-skills-builder-guide/",
+      "snippet": "NVIDIA dropped its biggest open-source physical AI release at CVPR 2026: GR00T N1.6 humanoid robot VLA, Alpamayo-R1-10B AV reasoning model, OpenShell agent sandbox, NemoClaw local agent stack, and physical AI skills for robotics, autonomous vehicles, vision AI, and industrial digital twins."
+    }
+  ]
+}

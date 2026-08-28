@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "lsdabrowski/classification62-2023",
+  "slug": "lsdabrowski-classification62-2023",
+  "author": "lsdabrowski",
+  "url": "https://huggingface.co/lsdabrowski/classification62-2023",
+  "created_at": "2026-08-28T07:12:33.000Z",
+  "updated_at": "2026-08-28T07:12:41.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "flamingo",
+    "pytorch",
+    "classification",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 16576,
+  "parameters_human": "16576",
+  "storage_bytes": 66784,
+  "storage_human": "66784 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "lsdabrowski/paper_012890113_prompt_engineering · Hugging Face",
+      "url": "https://huggingface.co/lsdabrowski/paper_012890113_prompt_engineering",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "New AI Models 2026 - Latest Releases | LM Market Cap",
+      "url": "https://lmmarketcap.com/new-ai-models",
+      "snippet": "Discover the newest AI models released in 2026. Track the latest LLMs, coding models, and image generators as they launch with source-backed release and evidence tracking."
+    },
+    {
+      "title": "Top 10 AI Models in 2026: Ranked by Benchmarks (June Update)",
+      "url": "https://techjournal.org/top-10-artificial-intelligence-models",
+      "snippet": "FAQ 1. What is the best AI model overall in June 2026? Claude Opus 4.8 leads the Artificial Analysis Intelligence Index at 61.4, making it the top-ranked model overall."
+    },
+    {
+      "title": "LLM Leaderboard - Comparison of AI models from OpenAI, Anthropic ...",
+      "url": "https://artificialanalysis.ai/leaderboards/models",
+      "snippet": "LLM Leaderboard - Comparison of AI models from OpenAI, Anthropic, Google, SpaceXAI & others Comparison and ranking the performance of over 250 AI models (LLMs) across key metrics including intelligence, price, performance and speed (output speed - tokens per second & latency - TTFT), context window & others."
+    },
+    {
+      "title": "AI Models: Types, Examples, and How They Work [2025]",
+      "url": "https://blog.roboflow.com/ai-models/",
+      "snippet": "Discover an overview of AI models, highlighting how they are trained, deployed, and used across different domains. Understanding the core concepts and how to use these models is essential for leveraging AI&#x27;s full potential."
+    }
+  ]
+}

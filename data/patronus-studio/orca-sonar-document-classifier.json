@@ -1,0 +1,85 @@
+{
+  "schema": 1,
+  "id": "patronus-studio/orca-sonar-document-classifier",
+  "slug": "patronus-studio-orca-sonar-document-classifier",
+  "author": "patronus-studio",
+  "url": "https://huggingface.co/patronus-studio/orca-sonar-document-classifier",
+  "created_at": "2026-06-12T18:37:06.000Z",
+  "updated_at": "2026-08-28T08:34:51.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": null,
+  "languages": [
+    "de",
+    "en"
+  ],
+  "tags": [
+    "joblib",
+    "onnx",
+    "safetensors",
+    "modernbert",
+    "document-classification",
+    "topic-classification",
+    "dlp",
+    "data-loss-prevention",
+    "compliance",
+    "security",
+    "llm-security",
+    "ai-safety",
+    "ai-agent-security",
+    "patronus",
+    "multilingual",
+    "text-classification",
+    "de",
+    "en",
+    "base_model:jhu-clsp/mmBERT-small",
+    "base_model:quantized:jhu-clsp/mmBERT-small",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 4,
+  "downloads_30d": 19,
+  "trending_score": 0,
+  "parameters": 140645001,
+  "parameters_human": "140.6M",
+  "storage_bytes": 3331216881,
+  "storage_human": "3.3 GB",
+  "base_model": "jhu-clsp/mmBERT-small",
+  "formats": [
+    "onnx",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "patronus-studio/orca-sonar-document-classifier · Hugging Face",
+      "url": "https://huggingface.co/patronus-studio/orca-sonar-document-classifier",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "README.md · patronus-studio/orca-sonar-document-classifier at main",
+      "url": "https://huggingface.co/patronus-studio/orca-sonar-document-classifier/blob/main/README.md",
+      "snippet": "Multilingual Document Topic Classifier for Real-World AI Security & DLP Orca-Sonar is a Multilingual ModernBERT-based (mmBERT) classifier that assigns a document/text to one of 7 topic classes. It is part of the Patronus Protect security stack and is designed for topic-/risk-routing of incoming texts (e.g. before they reach an LLM, a DLP gate, or a storage tier)."
+    },
+    {
+      "title": "Orca-Sonar: Our Multilingual Document Classifier for AI Security",
+      "url": "https://patronus.studio/posts/orca-sonar-our-multilingual-document-classifier-for-ai-security",
+      "snippet": "We&#x27;re releasing Orca-Sonar, a fast, multilingual model (German + English) that sorts text into 7 topic classes. It&#x27;s part of the Patronus Protect stack and routes incoming content by topic and sensitivity before it reaches an LLM, a DLP gate, or a storage tier."
+    },
+    {
+      "title": "Our AI-Security Model Zoo Is Now Open Source - patronus.studio",
+      "url": "https://patronus.studio/de/posts/our-ai-security-model-zoo-is-now-open-source",
+      "snippet": "Orca Sonar classifies documents before they reach a context window or leave the device. Lion Warden consolidates all seven tasks into one model with a shared encoder and seven heads, trained with masked losses on partially labeled data."
+    },
+    {
+      "title": "Our AI-Security Model Zoo Is Now Open Source - Medium",
+      "url": "https://medium.com/@PatronusProtect/our-ai-security-model-zoo-is-now-open-source-41654d5d7dc6",
+      "snippet": "Orca Sonar&#x27;s training data deliberately mixes these forms so the model classifies what a text is about, not what it looks like. → orca-sonar-document-classifier"
+    }
+  ]
+}

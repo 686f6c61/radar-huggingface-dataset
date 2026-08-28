@@ -1,0 +1,78 @@
+{
+  "schema": 1,
+  "id": "felixhrdyn/mobileclip2-s0-onnx",
+  "slug": "felixhrdyn-mobileclip2-s0-onnx",
+  "author": "felixhrdyn",
+  "url": "https://huggingface.co/felixhrdyn/mobileclip2-s0-onnx",
+  "created_at": "2026-08-27T03:08:54.000Z",
+  "updated_at": "2026-08-28T02:00:20.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "feature-extraction",
+  "library": "onnxruntime",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "onnxruntime",
+    "onnx",
+    "clip",
+    "vision",
+    "text-embeddings",
+    "multimodal",
+    "cpu-optimized",
+    "quantization",
+    "int8",
+    "edge-ai",
+    "mobileclip",
+    "fastvit",
+    "amon-hen",
+    "feature-extraction",
+    "en",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 375802204,
+  "storage_human": "376 MB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "felixhrdyn/mobileclip2-s0-onnx · Hugging Face",
+      "url": "https://huggingface.co/felixhrdyn/mobileclip2-s0-onnx",
+      "snippet": "Model Overview mobileclip2-s0 is a standalone ONNX conversion of Apple&#x27;s MobileCLIP2-S0 architecture, specifically optimized for edge deployment and zero-GPU local semantic video retrieval in Amon Hen."
+    },
+    {
+      "title": "plhery/mobileclip2-onnx · Hugging Face",
+      "url": "https://huggingface.co/plhery/mobileclip2-onnx",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GitHub - skykim/ml-mobileclip-onnx: This repository contains the ...",
+      "url": "https://github.com/skykim/ml-mobileclip-onnx",
+      "snippet": "Update: Added export_onnx.py to convert models into vision_model.onnx and text_model.onnx for Unity Sentis 2.4.1. The script automatically downloads the pre-trained weights from Hugging Face and saves the converted ONNX files to the onnx/ directory. This is the official repository of MobileCLIP2: Improving Multi-Modal Reinforced Training."
+    },
+    {
+      "title": "GitHub - apple/ml-mobileclip: This repository contains the official ...",
+      "url": "https://github.com/apple/ml-mobileclip",
+      "snippet": "The repository contains code for inference, training, and evaluation of MobileCLIP models trained on DataCompDR datasets and MobileCLIP2 models trained on DFNDR dataset. For code to generate multi-modal reinforced datasets at large scale see ml-mobileclip-dr repository."
+    },
+    {
+      "title": "ONNX Runtime | Models",
+      "url": "https://onnxruntime.ai/models",
+      "snippet": "ONNX Models - find ONNX models for natural language processing, computer vision, and more."
+    }
+  ]
+}

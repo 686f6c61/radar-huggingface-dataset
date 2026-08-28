@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "aijadugar/wisprflow-clone-whisper",
+  "slug": "aijadugar-wisprflow-clone-whisper",
+  "author": "aijadugar",
+  "url": "https://huggingface.co/aijadugar/wisprflow-clone-whisper",
+  "created_at": "2026-08-28T05:43:45.000Z",
+  "updated_at": "2026-08-28T05:43:53.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "automatic-speech-recognition",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "whisper",
+    "automatic-speech-recognition",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 166132224,
+  "parameters_human": "166.1M",
+  "storage_bytes": 332297344,
+  "storage_human": "332 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "aijadugar/wisprflow-clone-llm · Hugging Face",
+      "url": "https://huggingface.co/aijadugar/wisprflow-clone-llm",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GitHub - zghanw/whisprflow: A local clone of wisprflow for personal use ...",
+      "url": "https://github.com/zghanw/whisprflow",
+      "snippet": "Why this exists Wispr Flow is a commercial dictation app. Its own documentation and a case study from its infra provider describe a two-stage pipeline: a Whisper-class speech recognizer produces a raw transcript, then a fine-tuned Llama model rewrites it, stripping fillers, applying corrections, and matching tone, in under ~700ms."
+    },
+    {
+      "title": "GitHub - AverWasTaken/wisprflowpy: A cheaper alternative to the AI ...",
+      "url": "https://github.com/AverWasTaken/wisprflowpy",
+      "snippet": "Acknowledgments Inspired by wisprflow.ai Built with faster-whisper Formatting powered by Anthropic&#x27;s Claude"
+    },
+    {
+      "title": "Wispr Flow | Effortless Voice Dictation",
+      "url": "https://wisprflow.ai/",
+      "snippet": "Flow makes writing quick and clear with seamless voice dictation. It is the fastest, smartest way to type with your voice."
+    },
+    {
+      "title": "How to Build a FREE Wispr Flow Alternative with Claude Code (Full Guide)",
+      "url": "https://www.youtube.com/watch?v=rPP-G5RneWs",
+      "snippet": "The app uses two AI models working together: ElevenLabs Scribe turns my voice into text (it&#x27;s scary accurate, even with fast talking and accents), and then Gemini Flash cleans it up — stripping ..."
+    }
+  ]
+}

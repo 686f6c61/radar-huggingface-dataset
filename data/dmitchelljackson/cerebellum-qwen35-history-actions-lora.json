@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "dmitchelljackson/cerebellum-qwen35-history-actions-lora",
+  "slug": "dmitchelljackson-cerebellum-qwen35-history-actions-lora",
+  "author": "dmitchelljackson",
+  "url": "https://huggingface.co/dmitchelljackson/cerebellum-qwen35-history-actions-lora",
+  "created_at": "2026-05-20T17:40:05.000Z",
+  "updated_at": "2026-08-28T01:56:05.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "android",
+    "android-world",
+    "ui-automation",
+    "accessibility",
+    "vision-language",
+    "lora",
+    "reinforcement-learning",
+    "image-text-to-text",
+    "base_model:Qwen/Qwen3.5-0.8B",
+    "base_model:adapter:Qwen/Qwen3.5-0.8B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 2,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 471983491,
+  "storage_human": "472 MB",
+  "base_model": "Qwen/Qwen3.5-0.8B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "dmitchelljackson/cerebellum-qwen35-history-actions-lora · Hugging Face",
+      "url": "https://huggingface.co/dmitchelljackson/cerebellum-qwen35-history-actions-lora",
+      "snippet": "Instructions to use dmitchelljackson/cerebellum-qwen35-history-actions-lora with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "dmitchelljackson (Mitchell Jackson) - Hugging Face",
+      "url": "https://huggingface.co/dmitchelljackson",
+      "snippet": "AI & ML interests ... Recent Activity updated a model 18 days ago ... published a model 18 days ago"
+    },
+    {
+      "title": "cerebellum-qwen35-history-actions-lora API & Inference Endpoint ...",
+      "url": "https://friendli.ai/models/dmitchelljackson/cerebellum-qwen35-history-actions-lora",
+      "snippet": "Run cerebellum-qwen35-history-actions-lora with FriendliAI inference. This is a PEFT adapter for Qwen/Qwen3.5-.8B trained for fast local Android UI control."
+    },
+    {
+      "title": "llama.cpp/src/models/qwen35.cpp at master · ggml-org/llama.cpp",
+      "url": "https://github.com/ggml-org/llama.cpp/blob/master/src/models/qwen35.cpp",
+      "snippet": "LLM inference in C/C++. Contribute to ggml-org/llama.cpp development by creating an account on GitHub."
+    },
+    {
+      "title": "[2505.09388] Qwen3 Technical Report - arXiv.org",
+      "url": "https://arxiv.org/abs/2505.09388",
+      "snippet": "In this work, we present Qwen3, the latest version of the Qwen model family. Qwen3 comprises a series of large language models (LLMs) designed to advance performance, efficiency, and multilingual capabilities. The Qwen3 series includes models of both dense and Mixture-of-Expert (MoE) architectures, with parameter scales ranging from 0.6 to 235 billion. A key innovation in Qwen3 is the ..."
+    }
+  ]
+}

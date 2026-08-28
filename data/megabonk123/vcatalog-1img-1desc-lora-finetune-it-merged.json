@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "MegaBonk123/vcatalog-1img-1desc-LoRA-finetune-IT-merged",
+  "slug": "megabonk123-vcatalog-1img-1desc-lora-finetune-it-merged",
+  "author": "MegaBonk123",
+  "url": "https://huggingface.co/MegaBonk123/vcatalog-1img-1desc-LoRA-finetune-IT-merged",
+  "created_at": "2026-08-28T06:30:06.000Z",
+  "updated_at": "2026-08-28T06:31:54.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_vl",
+    "image-text-to-text",
+    "conversational",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 8767123696,
+  "parameters_human": "8.77B",
+  "storage_bytes": 17545762142,
+  "storage_human": "17.5 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "LoRA · Hugging Face",
+      "url": "https://huggingface.co/docs/peft/main/conceptual_guides/lora",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Models - Hugging Face",
+      "url": "https://huggingface.co/models?library...",
+      "snippet": "Explore machine learning models."
+    },
+    {
+      "title": "Fine-tune LLMs on Jetson - Jetson AI Lab",
+      "url": "https://www.jetson-ai-lab.com/tutorials/finetune-on-jetson/",
+      "snippet": "Option 2: LoRA (Qwen3.5 9B) LoRA (Low-Rank Adaptation) freezes the base model and trains small adapter matrices injected into the attention and MLP layers. Only ~1-2% of parameters are trainable, which dramatically reduces memory usage and makes it possible to fine-tune larger models on Jetson."
+    },
+    {
+      "title": "GitHub - VideoVerses/VideoTuna: Let&#x27;s finetune video generation models!",
+      "url": "https://github.com/VideoVerses/VideoTuna",
+      "snippet": "🤗🤗🤗 Videotuna is a useful codebase for text-to-video applications. 🌟 VideoTuna is the first repo that integrates multiple AI video generation models including text-to-video (T2V), image-to-video (I2V), text-to-image (T2I), and video-to-video (V2V) generation for model inference and finetuning (to the best of our knowledge). 🌟 VideoTuna is the first repo that provides ..."
+    },
+    {
+      "title": "GitHub - microsoft/LoRA: Code for loralib, an implementation of \"LoRA ...",
+      "url": "https://github.com/microsoft/LoRA",
+      "snippet": "Calling model.eval () will trigger the merging of LoRA parameters with the corresponding pretrained ones, which eliminates additional latency for subsequent forward passes. Calling model.train () again will undo the merge. This can be disabled by passing merge_weights=False to LoRA layers."
+    }
+  ]
+}

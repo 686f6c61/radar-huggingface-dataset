@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "gyuz/2026_ETRI_Autonomous_Driving_Challenge",
+  "slug": "gyuz-2026_etri_autonomous_driving_challenge",
+  "author": "gyuz",
+  "url": "https://huggingface.co/gyuz/2026_ETRI_Autonomous_Driving_Challenge",
+  "created_at": "2026-08-28T01:47:21.000Z",
+  "updated_at": "2026-08-28T02:47:58.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1937764177,
+  "storage_human": "1.9 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "gyuz/2026_ETRI_Autonomous_Driving_Challenge · Hugging Face",
+      "url": "https://huggingface.co/gyuz/2026_ETRI_Autonomous_Driving_Challenge",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "gyuz/2026_ETRI_Autonomous_Driving_Challenge at main",
+      "url": "https://huggingface.co/gyuz/2026_ETRI_Autonomous_Driving_Challenge/tree/main",
+      "snippet": "gyuz / 2026_ETRI_Autonomous_Driving_Challenge like 0 License:other Model card FilesFiles and versions xet Community Copy to bucket new main 2026_ETRI_Autonomous_Driving_Challenge Ctrl+K Ctrl+K 1 contributor History:9 commits gyuz Upload folder using huggingface_hub 0b25c25 verifiedabout 2 hours ago .gitattributes Safe 1.52 kBinitial commitabout ..."
+    },
+    {
+      "title": "2026_Etri_challenge/README.md at LAW-split - GitHub",
+      "url": "https://github.com/gyuz1/2026_Etri_challenge/blob/LAW-split/README.md",
+      "snippet": "301/75-scene split experiment folder for the ETRI 2026 E2E Driving Challenge (VAD-tiny + LAW). Used to validate the ego_target_point shortcut fix (target_point attention conditioning + corruption + BEV residual refinement) on the fast hold-out split before porting to the full 376-scene run."
+    },
+    {
+      "title": "Getting Started: Training and Inference | mxnseo/Autonomous_Driving_AI ...",
+      "url": "https://deepwiki.com/mxnseo/Autonomous_Driving_AI_Chanllenge_26/1.2-getting-started:-training-and-inference",
+      "snippet": "ETRI Challenge Submission (tools/etri_test_submit.py) This script is specifically designed for the ETRI Autonomous Driving AI Challenge. It processes data in clips and extracts the ego-vehicle&#x27;s future trajectory."
+    },
+    {
+      "title": "Data Pipeline and Datasets | mxnseo/Autonomous_Driving_AI_Chanllenge_26 ...",
+      "url": "https://deepwiki.com/mxnseo/Autonomous_Driving_AI_Chanllenge_26/5-data-pipeline-and-datasets",
+      "snippet": "The VAD (Vectorized Autonomous Driving) data pipeline is responsible for transforming raw sensor data and map metadata into a structured format suitable for end-to-end perception and planning. The system emphasizes temporal consistency through a queue mechanism and handles the vectorization of map elements into instance-based representations."
+    }
+  ]
+}

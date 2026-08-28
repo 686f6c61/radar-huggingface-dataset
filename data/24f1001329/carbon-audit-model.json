@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "24f1001329/carbon-audit-model",
+  "slug": "24f1001329-carbon-audit-model",
+  "author": "24f1001329",
+  "url": "https://huggingface.co/24f1001329/carbon-audit-model",
+  "created_at": "2026-08-28T06:08:25.000Z",
+  "updated_at": "2026-08-28T06:12:29.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "co2_eq_emissions",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "24ds2000033/green-ai-carbon-audit · Hugging Face",
+      "url": "https://huggingface.co/24ds2000033/green-ai-carbon-audit",
+      "snippet": "Carbon Accounting This model card documents the environmental impact of the assigned GPU training run."
+    },
+    {
+      "title": "23f3001593/green-ai-carbon-audit-demo · Hugging Face",
+      "url": "https://huggingface.co/23f3001593/green-ai-carbon-audit-demo",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Auditing AI model carbon and resource footprints | Suhas Bhairav",
+      "url": "https://suhasbhairav.com/blog/technical-auditing-of-ai-model-carbon-and-resource-footprints",
+      "snippet": "You can systematically measure and reduce the energy and carbon footprint of AI workloads in production by establishing multi-layer metrics, reproducible baselines, and governance that ties energy outcomes to architectural decisions."
+    },
+    {
+      "title": "CarbonAI | Unleash your potential with innovative solutions",
+      "url": "https://carbonai.eco/",
+      "snippet": "CarbonAI is purpose-built for sustainability professionals. It combines agentic AI with proprietary sustainability intelligence, expertly curated knowledge, carbon market data, and continuously updated regulations to deliver transparent, fully referenced answers you can trust. What information can CarbonAI analyse?"
+    },
+    {
+      "title": "AI-ESG-Carbon-Audit/models at main · darshan26718/AI-ESG ... - GitHub",
+      "url": "https://github.com/darshan26718/AI-ESG-Carbon-Audit/tree/main/models",
+      "snippet": "Contribute to darshan26718/AI-ESG-Carbon-Audit development by creating an account on GitHub."
+    }
+  ]
+}

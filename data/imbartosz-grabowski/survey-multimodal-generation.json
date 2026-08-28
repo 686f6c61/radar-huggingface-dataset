@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "Imbartosz-grabowski/survey-multimodal-generation",
+  "slug": "imbartosz-grabowski-survey-multimodal-generation",
+  "author": "Imbartosz-grabowski",
+  "url": "https://huggingface.co/Imbartosz-grabowski/survey-multimodal-generation",
+  "created_at": "2026-08-28T06:09:44.000Z",
+  "updated_at": "2026-08-28T06:09:53.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "transformer",
+    "research-notes",
+    "multimodal-generation",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 16576,
+  "parameters_human": "16576",
+  "storage_bytes": 66784,
+  "storage_human": "66784 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "arXiv.org e-Print archive",
+      "url": "https://arxiv.org/pdf/2405.19334",
+      "snippet": "arXiv.org e-Print archive"
+    },
+    {
+      "title": "Generative AI for multimodal content: a survey with ... - Springer",
+      "url": "https://link.springer.com/article/10.1007/s10462-026-11525-6",
+      "snippet": "Generative Artificial Intelligence (AI) has emerged as a transformative force, capable of synthesizing high-quality, coherent, and semantically rich multimodal content across text, vision, audio, video, and 3D/XR environments. Despite the explosive growth of research, existing surveys remain fragmented: they often focus narrowly on a single modality, provide only qualitative or scattered ..."
+    },
+    {
+      "title": "GitHub - llm-lab-org/Multimodal-RAG-Survey: A Survey on Multimodal ...",
+      "url": "https://github.com/llm-lab-org/Multimodal-RAG-Survey",
+      "snippet": "This survey offers a structured and comprehensive analysis of Multimodal RAG systems, covering datasets, benchmarks, metrics, evaluation, methodologies, and innovations in retrieval, fusion, augmentation, and generation."
+    },
+    {
+      "title": "SciTechDaily - Science, Space and Technology News 2026",
+      "url": "https://scitechdaily.com/",
+      "snippet": "A new extraction molecule uses electricity to recover metals while sharply reducing the need for…"
+    },
+    {
+      "title": "IEEE Xplore",
+      "url": "https://ieeexplore.ieee.org/Xplore/home.jsp",
+      "snippet": "IEEE Xplore, delivering full text access to the world&#x27;s highest quality technical literature in engineering and technology. | IEEE Xplore"
+    }
+  ]
+}

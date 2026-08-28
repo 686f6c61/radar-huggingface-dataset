@@ -1,0 +1,79 @@
+{
+  "schema": 1,
+  "id": "voicing-ai/Voicing-Phone-V5-30B-A3B",
+  "slug": "voicing-ai-voicing-phone-v5-30b-a3b",
+  "author": "voicing-ai",
+  "url": "https://huggingface.co/voicing-ai/Voicing-Phone-V5-30B-A3B",
+  "created_at": "2026-08-28T10:48:20.000Z",
+  "updated_at": "2026-08-28T10:48:20.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "nemotron_h",
+    "text-generation",
+    "nemotron",
+    "mixture-of-experts",
+    "voice-agent",
+    "phone",
+    "tool-use",
+    "function-calling",
+    "conversational",
+    "pipecat",
+    "voicing-ai",
+    "custom_code",
+    "en",
+    "base_model:nvidia/NVIDIA-Nemotron-3-Nano-30B-A3B-BF16",
+    "base_model:finetune:nvidia/NVIDIA-Nemotron-3-Nano-30B-A3B-BF16",
+    "license:bsd-2-clause",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": null,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Advanced AI Calling Agents for Businesses - Voicing AI",
+      "url": "https://www.voicing.ai/",
+      "snippet": "Platform The hybrid voice intelligence stack Four integrated pillars that work together: Voice Agents for agentic accuracy, Real-Time Translation for global reach, Voice Identity Transformation for brand consistency, and AI Observability for complete control."
+    },
+    {
+      "title": "VoicZing.ai - Voice Platform, AI Engine",
+      "url": "https://voiczing.ai/",
+      "snippet": "For QSRs, our voice platform enables easy, fast, and accurate digital ordering. Reducing waiting times, lane abandonment, and labor costs. Our live video will show you how your branded voice can help build ticket size, retain high-value customers, deliver promotions, reward status, and reduce staff costs in a frictionless buyer journey. VoicZing!"
+    },
+    {
+      "title": "Voicing AI Solutions & Services | LTM",
+      "url": "https://www.ltm.com/voicing-ai",
+      "snippet": "Streamline your inbound and outbound calls with an AI-powered voice generator trained to address industry-specific use cases to deliver exceptional customer experiences. Voicing AI is an advanced agentic voice AI platform that automates customer-facing tasks with human-like voice agents with action taking capabilities, tailored for enterprise needs across industries."
+    },
+    {
+      "title": "PhoneLLM vs GPT-5.6 Terra: 94% Cheaper Voice Model - explainx.ai",
+      "url": "https://www.explainx.ai/blog/phonellm-gpt-5-6-terra-cost-comparison-august-2026",
+      "snippet": "Pipecat (Daily) shipped PhoneLLM Alpha 1, an open Nemotron 3 Nano fine-tune claiming GPT-5.6 Terra quality for voice agents at 94% lower cost and 1,300ms faster P95 TTFT."
+    },
+    {
+      "title": "Free AI Voice Changer & Voice Agent Platform - Voice.ai",
+      "url": "https://voice.ai/",
+      "snippet": "Realistic AI Voice Agents and Voice Changer The AI voice model platform powering next-gen Voice AI Agent™, text to speech, voice cloning, and our AI voice changer."
+    }
+  ]
+}

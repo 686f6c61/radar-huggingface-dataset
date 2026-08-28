@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "HRSadeghi/demucs-onnx",
+  "slug": "hrsadeghi-demucs-onnx",
+  "author": "HRSadeghi",
+  "url": "https://huggingface.co/HRSadeghi/demucs-onnx",
+  "created_at": "2026-08-28T06:10:17.000Z",
+  "updated_at": "2026-08-28T06:26:25.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "audio-to-audio",
+  "library": "onnx",
+  "languages": [],
+  "tags": [
+    "onnx",
+    "audio",
+    "audio-to-audio",
+    "source-separation",
+    "music",
+    "demucs",
+    "onnxruntime",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1464932558,
+  "storage_human": "1.5 GB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - HRSadeghi/demucs-onnx: Demucs v4 (HTDemucs) music source ...",
+      "url": "https://github.com/HRSadeghi/demucs-onnx/tree/main",
+      "snippet": "Demucs is a state-of-the-art music source separation model, currently capable of separating drums, bass, and vocals from the rest of the accompaniment. Demucs is based on a U-Net convolutional architecture inspired by Wave-U-Net. The v4 version features Hybrid Transformer Demucs, a hybrid spectrogram/waveform separation model using Transformers."
+    },
+    {
+      "title": "GitHub - sevagh/demucs.onnx: C++ ONNX/ORT inference for Demucs",
+      "url": "https://github.com/sevagh/demucs.onnx",
+      "snippet": "ONNX inference for the Demucs v4 hybrid transformer model, a high-performance and high quality PyTorch neural network for music source separation. Unlike my other project demucs.cpp, where I wrote all of the neural network layers by hand, in this repo I use ONNXRuntime, which is a universal high-performance neural network inference library with native support for diverse hardware platforms ..."
+    },
+    {
+      "title": "GSOC 2025 - Converting Demucs v4 (Hybrid Transformer) AI model ... - Mixxx",
+      "url": "https://mixxx.org/news/2025-10-27-gsoc2025-demucs-to-onnx-dhunstack/",
+      "snippet": "GSOC 2025 - Converting Demucs v4 (Hybrid Transformer) AI model to ONNX format Mon 27 October 2025 Anmol Mishra gsoc, gsoc-2025, stems Imagine loading any track in Mixxx and instantly isolating the vocals, drums, bass, or instruments live, in real time."
+    },
+    {
+      "title": "MrCitron/demucs-v4-onnx · Hugging Face",
+      "url": "https://huggingface.co/MrCitron/demucs-v4-onnx",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Models - demucs-onnx",
+      "url": "https://stemsplit.github.io/demucs-onnx/models/",
+      "snippet": "Run and export HT-Demucs / Demucs music source separation as ONNX. Pure numpy + onnxruntime inference (no PyTorch). The canonical reference for the four torch.onnx.export blockers on htdemucs."
+    }
+  ]
+}

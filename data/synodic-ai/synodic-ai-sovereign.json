@@ -1,0 +1,89 @@
+{
+  "schema": 1,
+  "id": "Synodic-AI/Synodic-AI-Sovereign",
+  "slug": "synodic-ai-synodic-ai-sovereign",
+  "author": "Synodic-AI",
+  "url": "https://huggingface.co/Synodic-AI/Synodic-AI-Sovereign",
+  "created_at": "2026-08-28T09:02:55.000Z",
+  "updated_at": "2026-08-28T09:50:21.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "code",
+    "reasoning",
+    "evalplus",
+    "benchmark",
+    "text-generation",
+    "en",
+    "base_model:Qwen/Qwen2.5-Coder-14B-Instruct",
+    "base_model:finetune:Qwen/Qwen2.5-Coder-14B-Instruct",
+    "license:apache-2.0",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": "Qwen/Qwen2.5-Coder-14B-Instruct",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "Code Generation",
+      "dataset": "EvalPlus HumanEval",
+      "metric": "Pass@1 (HumanEval+)",
+      "value": 100
+    },
+    {
+      "task": "Code Generation",
+      "dataset": "EvalPlus MBPP",
+      "metric": "Pass@1 (MBPP+)",
+      "value": 99.69
+    },
+    {
+      "task": "Mathematical Reasoning",
+      "dataset": "GSM8K",
+      "metric": "Exact Match",
+      "value": 100
+    }
+  ],
+  "sources": [
+    {
+      "title": "Synodic-AI-Sovereign - Hugging Face",
+      "url": "https://huggingface.co/Synodic-AI/Synodic-AI-Sovereign",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Synodic-AI · Your data. Your models. Your rules.",
+      "url": "https://synodic-ai.tech/",
+      "snippet": "Sovereign AI · Healthcare · Government · Regulated enterprise Your data. Your models. Your rules. Data is the currency of today, and it moves through systems never built to protect it. The Synodic suite governs closed AI end to end: your models, your data, and your people, under rules you set. Nothing enters or leaves unless you intend it to."
+    },
+    {
+      "title": "Synodic-AI (Michael Hoyt) · GitHub",
+      "url": "https://github.com/Synodic-AI",
+      "snippet": "Founder @ Synodic-AI. B.S. in Computer Science, Colorado State University specializing in Machine Learning. Building quietly. - Synodic-AI"
+    },
+    {
+      "title": "GitHub - onsager-ai/synodic",
+      "url": "https://github.com/onsager-ai/synodic",
+      "snippet": "synodic (adj.) — from Greek synodos, \"meeting, conjunction.\" The period when orbiting bodies align into the same configuration. Synodic enforces governance rules on AI coding agent sessions through standard hook mechanisms — git hooks for deterministic checks, Claude Code hooks for real-time tool call interception."
+    },
+    {
+      "title": "A Technical Guide to Building Sovereign AI Models - NVIDIA",
+      "url": "https://www.nvidia.com/en-us/lp/industries/global-public-sector/sovereign-ai-technical-overview/",
+      "snippet": "Explore how to unlock economic opportunities, build tailored language models for country-specific needs, and create intelligence that will enable local impact. This technical brief covers all different aspects of training and fine-tuning sovereign AI models, including data curation, architecture selection, training methods, model evaluation, and production deployment."
+    }
+  ]
+}

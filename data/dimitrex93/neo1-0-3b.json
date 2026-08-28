@@ -1,0 +1,78 @@
+{
+  "schema": 1,
+  "id": "Dimitrex93/neo1.0-3b",
+  "slug": "dimitrex93-neo1-0-3b",
+  "author": "Dimitrex93",
+  "url": "https://huggingface.co/Dimitrex93/neo1.0-3b",
+  "created_at": "2026-08-28T08:15:12.000Z",
+  "updated_at": "2026-08-28T08:25:25.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "de",
+    "en"
+  ],
+  "tags": [
+    "gguf",
+    "qwen2.5",
+    "finetuned",
+    "qlora",
+    "german",
+    "homelab",
+    "devops",
+    "text-generation",
+    "de",
+    "en",
+    "base_model:Qwen/Qwen2.5-3B-Instruct",
+    "base_model:quantized:Qwen/Qwen2.5-3B-Instruct",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 3085938688,
+  "parameters_human": "3.09B",
+  "storage_bytes": 1929900416,
+  "storage_human": "1.9 GB",
+  "base_model": "Qwen/Qwen2.5-3B-Instruct",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Hugging Face - The AI community building the future.",
+      "url": "https://huggingface.co/",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "EleutherAI/gpt-neo-1.3B · Hugging Face",
+      "url": "https://huggingface.co/EleutherAI/gpt-neo-1.3B",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "AI Models | Civitai",
+      "url": "https://civitai.com/models",
+      "snippet": "Browse thousands of free Stable Diffusion & Flux models, LoRAs, checkpoints, and embeddings. The largest collection of AI image generation resources."
+    },
+    {
+      "title": "Introducing Mistral 3 | Mistral AI",
+      "url": "https://mistral.ai/news/mistral-3/",
+      "snippet": "The most powerful AI platform for enterprises. Customize, fine-tune, and deploy AI assistants, autonomous agents, and multimodal AI with open models."
+    },
+    {
+      "title": "dimitrex93 - EasyEDA open source hardware lab",
+      "url": "https://oshwlab.com/dimitrex93",
+      "snippet": "In EasyEDA open source hardware lab, open source square pools all kinds of electrical design engineerings together to realize resource sharing easily."
+    }
+  ]
+}

@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "csikasote/omniASR-CTC-3B-v2-Zulu-All",
+  "slug": "csikasote-omniasr-ctc-3b-v2-zulu-all",
+  "author": "csikasote",
+  "url": "https://huggingface.co/csikasote/omniASR-CTC-3B-v2-Zulu-All",
+  "created_at": "2026-08-28T09:00:08.000Z",
+  "updated_at": "2026-08-28T09:00:39.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "automatic-speech-recognition",
+  "library": "fairseq2",
+  "languages": [
+    "zu"
+  ],
+  "tags": [
+    "fairseq2",
+    "automatic-speech-recognition",
+    "omnilingual-asr",
+    "ctc",
+    "isiZulu",
+    "zulu",
+    "zu",
+    "base_model:facebook/omniASR-CTC-300M",
+    "base_model:finetune:facebook/omniASR-CTC-300M",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 12326068542,
+  "storage_human": "12.3 GB",
+  "base_model": "facebook/omniASR-CTC-300M",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "facebook/omniASR-CTC-3B · Hugging Face",
+      "url": "https://huggingface.co/facebook/omniASR-CTC-3B",
+      "snippet": "facebook / omniASR-CTC-3B like 5 Follow AI at Meta 13.7k Automatic Speech Recognition facebook/omnilingual-asr-corpus License:apache-2.0 Model card FilesFiles and versions xet Community Copy to bucket new Omnilingual ASR: Open-Source Multilingual Speech Recognition for 1600+ Languages Model Card for omniASR-CTC-3B Model Description Installation Inference Supported Languages Training Citation"
+    },
+    {
+      "title": "CTC Models (Fast ASR) | facebookresearch/omnilingual-asr | DeepWiki",
+      "url": "https://deepwiki.com/facebookresearch/omnilingual-asr/2.2.2-ctc-models-(fast-asr)",
+      "snippet": "This page documents the CTC (Connectionist Temporal Classification) model family in the omnilingual-asr system. CTC models provide fast, efficient automatic speech recognition suitable for real-time and high-throughput transcription scenarios. These models prioritize inference speed while maintaining competitive accuracy across 1600+ languages."
+    },
+    {
+      "title": "csikasote/omniASR-CTC-300M-v2-Zulu-All-v2 · Hugging Face",
+      "url": "https://huggingface.co/csikasote/omniASR-CTC-300M-v2-Zulu-All-v2",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Omnilingual ASR",
+      "url": "https://aidemos.atmeta.com/omnilingualasr",
+      "snippet": "Discover Meta Omnilingual Automatic Speech Recognition (ASR) Delivering an open-source Automatic Speech Recognition (ASR) model for 1,600+ languages and audio dataset for 350 under-served languages not adequately supported by AI technology"
+    },
+    {
+      "title": "GitHub - facebookresearch/omnilingual-asr: Omnilingual ASR Open-Source ...",
+      "url": "https://github.com/facebookresearch/omnilingual-asr",
+      "snippet": "Omnilingual ASR is an open-source speech recognition system supporting over 1,600 languages — including hundreds never previously covered by any ASR technology. Designed for broad accessibility, it enables new languages to be added with just a few paired examples without requiring specialized expertise or large datasets. By combining scalable zero-shot learning with a flexible model family ..."
+    }
+  ]
+}

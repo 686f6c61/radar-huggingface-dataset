@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "DAS-DeepAudioSegmenter/perch2-torch",
+  "slug": "das-deepaudiosegmenter-perch2-torch",
+  "author": "DAS-DeepAudioSegmenter",
+  "url": "https://huggingface.co/DAS-DeepAudioSegmenter/perch2-torch",
+  "created_at": "2026-08-28T10:28:26.000Z",
+  "updated_at": "2026-08-28T10:55:43.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "audio-classification",
+  "library": "pytorch",
+  "languages": [],
+  "tags": [
+    "pytorch",
+    "audio",
+    "bioacoustics",
+    "bird-classification",
+    "das",
+    "embeddings",
+    "audio-classification",
+    "base_model:justinchuby/Perch-onnx",
+    "base_model:finetune:justinchuby/Perch-onnx",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 408016957,
+  "storage_human": "408 MB",
+  "base_model": "justinchuby/Perch-onnx, wrice/perch-v2-efficientnet-b3",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "[2508.04665] Perch 2.0: The Bittern Lesson for Bioacoustics - arXiv.org",
+      "url": "https://arxiv.org/abs/2508.04665",
+      "snippet": "Perch is a performant pre-trained model for bioacoustics. It was trained in supervised fashion, providing both off-the-shelf classification scores for thousands of vocalizing species as well as strong embeddings for transfer learning. In this new release, Perch 2.0, we expand from training exclusively on avian species to a large multi-taxa dataset. The model is trained with self-distillation ..."
+    },
+    {
+      "title": "Perch 2.0: The Bittern Lesson for Bioacoustics - arXiv.org",
+      "url": "https://arxiv.org/html/2508.04665v1",
+      "snippet": "Abstract Perch is a performant pre-trained model for bioacoustics. It was trained in supervised fashion, providing both off-the-shelf classification scores for thousands of vocalizing species as well as strong embeddings for transfer learning. In this new release, Perch 2.0, we expand from training exclusively on avian species to a large multi-taxa dataset. The model is trained with self ..."
+    },
+    {
+      "title": "GitHub - janclemenslab/das: Deep Audio Segmenter",
+      "url": "https://github.com/janclemenslab/das",
+      "snippet": "DAS is a method for automatically annotating song from raw audio recordings based on a deep neural network. DAS can be used with a graphical user interface, from the terminal, or from within python scripts. If you have questions, feedback, or find bugs please raise an issue. Please cite DAS as: Elsa Steinfath, Adrian Palacios, Julian Rottschäfer, Deniz Yuezak, Jan Clemens (2021). Fast and ..."
+    },
+    {
+      "title": "GitHub - google-research/perch",
+      "url": "https://github.com/google-research/perch",
+      "snippet": "A bioacoustics research project. Caution: This repository is for sharing open code artifacts relating to the Perch project; certain segments are out of date and pip install is unlikely to work (thanks to certain parts of Tensorflow slowly being abandoned). For inference and practical tooling, please try the Perch-Hoplite repository."
+    },
+    {
+      "title": "Perch 2.0: The Bittern Lesson for Bioacoustics - Google Research",
+      "url": "https://research.google/pubs/perch-20-the-bittern-lesson-for-bioacoustics/",
+      "snippet": "Perch is a performant pre-trained model for bioacoustics. It was trained in supervised fashion, providing both off-the-shelf classification scores for thousands of vocalizing species as well as strong embeddings for transfer learning. In this new release, Perch 2.0, we expand from training exclusively on avian species to a large multi-taxa dataset. The model is trained with self-distillation ..."
+    }
+  ]
+}

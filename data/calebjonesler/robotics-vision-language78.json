@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "calebjonesler/robotics-vision-language78",
+  "slug": "calebjonesler-robotics-vision-language78",
+  "author": "calebjonesler",
+  "url": "https://huggingface.co/calebjonesler/robotics-vision-language78",
+  "created_at": "2026-08-28T08:46:22.000Z",
+  "updated_at": "2026-08-28T08:46:31.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "transformer",
+    "research-notes",
+    "robotics-vision-language",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 16576,
+  "parameters_human": "16576",
+  "storage_bytes": 66784,
+  "storage_human": "66784 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "calebjonesler/robotics-vision-language78 · Hugging Face",
+      "url": "https://huggingface.co/calebjonesler/robotics-vision-language78",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "calebjonesler (Caleb JONES) - Hugging Face",
+      "url": "https://huggingface.co/calebjonesler/models",
+      "snippet": "User profile of Caleb JONES on Hugging Face"
+    },
+    {
+      "title": "Google Gemini",
+      "url": "https://gemini.google.com/",
+      "snippet": "Meet Gemini, Google&#x27;s AI assistant. Get help with writing, planning, brainstorming, and more. Experience the power of generative AI."
+    },
+    {
+      "title": "What matters in building vision-language-action models for generalist ...",
+      "url": "https://www.nature.com/articles/s42256-025-01168-7",
+      "snippet": "Vision-language-action models recently emerged as a tool for robotics. Here Li and colleagues compare vision-language-action models and highlight what makes a model useful."
+    },
+    {
+      "title": "Vision-Language-Action Models for Robotics: A Review Towards Real-World ...",
+      "url": "https://vla-survey.github.io/",
+      "snippet": "A comprehensive review of Vision-Language-Action models for robotics, covering architectures, learning paradigms, and real-world applications."
+    }
+  ]
+}

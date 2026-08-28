@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "ifx-pse-sys-ml/spark-13m-instruct",
+  "slug": "ifx-pse-sys-ml-spark-13m-instruct",
+  "author": "ifx-pse-sys-ml",
+  "url": "https://huggingface.co/ifx-pse-sys-ml/spark-13m-instruct",
+  "created_at": "2026-08-28T01:34:06.000Z",
+  "updated_at": "2026-08-28T01:34:08.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "nexus",
+    "text-generation",
+    "small-language-model",
+    "instruct",
+    "smoltalk",
+    "conversational",
+    "custom_code",
+    "en",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 13227648,
+  "parameters_human": "13.2M",
+  "storage_bytes": 52917952,
+  "storage_human": "53 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ifx-pse-sys-ml/spark-13m-instruct · Hugging Face",
+      "url": "https://huggingface.co/ifx-pse-sys-ml/spark-13m-instruct",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "ifx-pse-sys-ml/spark-13m-instruct · Discussions - Hugging Face",
+      "url": "https://huggingface.co/ifx-pse-sys-ml/spark-13m-instruct/discussions",
+      "snippet": "ifx-pse-sys-ml / spark-13m-instruct like 0 Follow SYSML 5 Text Generation Transformers Safetensors English nexus small-language-model instruct smoltalk conversational custom_code License:apache-2.0 Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "ifx-zephyr/boards/infineon/kit_pse84_ai at main - GitHub",
+      "url": "https://github.com/Infineon/ifx-zephyr/tree/main/boards/infineon/kit_pse84_ai",
+      "snippet": "Contribute to Infineon/ifx-zephyr development by creating an account on GitHub."
+    },
+    {
+      "title": "ifx-pse-sys-ml (SYSML) - Hugging Face",
+      "url": "https://huggingface.co/ifx-pse-sys-ml",
+      "snippet": "Org profile for SYSML on Hugging Face, the AI community building the future."
+    },
+    {
+      "title": "GitHub - Infineon/ifx-mcuboot-pse84",
+      "url": "https://github.com/Infineon/ifx-mcuboot-pse84",
+      "snippet": "The IFX MCUboot PSE84 middleware is an Infineon-maintained ModusToolbox library based on the MCUboot project, specifically adapted for PSOC™ Edge PSE84 microcontrollers. This middleware provides the core components and APIs needed to build secure bootloader applications for PSE84 devices."
+    }
+  ]
+}

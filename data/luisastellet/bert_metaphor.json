@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "luisastellet/bert_metaphor",
+  "slug": "luisastellet-bert_metaphor",
+  "author": "luisastellet",
+  "url": "https://huggingface.co/luisastellet/bert_metaphor",
+  "created_at": "2026-08-28T02:01:14.000Z",
+  "updated_at": "2026-08-28T02:01:44.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-classification",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "bert",
+    "text-classification",
+    "arxiv:1910.09700",
+    "text-embeddings-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 108311810,
+  "parameters_human": "108.3M",
+  "storage_bytes": 433270744,
+  "storage_human": "433 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "luisastellet/bert_metaphor at main - Hugging Face",
+      "url": "https://huggingface.co/luisastellet/bert_metaphor/tree/main",
+      "snippet": "luisastellet / bert_metaphor like 0 Text Classification Transformers Safetensors bert text-embeddings-inference arxiv:1910.09700 Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "luisastellet/bert_metaphor_melhor_hp · Hugging Face",
+      "url": "https://huggingface.co/luisastellet/bert_metaphor_melhor_hp",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GitHub - jin530/MelBERT: This is official code for the NAACL 2021 paper ...",
+      "url": "https://github.com/jin530/MelBERT",
+      "snippet": "This is the official code for the NAACL 2021 paper: MelBERT: Metaphor Detection via Contextualized Late Interaction using Metaphorical Identification Theories.. The slides can be found here."
+    },
+    {
+      "title": "BERT (language model) - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/BERT_(language_model)",
+      "snippet": "Bidirectional encoder representations from transformers (BERT) is a language model introduced in October 2018 by researchers at Google. [2][3] It learns to represent text as a sequence of vectors using self-supervised learning."
+    },
+    {
+      "title": "GitHub - google-research/bert: TensorFlow code and pre-trained models ...",
+      "url": "https://github.com/google-research/bert",
+      "snippet": "TensorFlow code and pre-trained models for BERT. Contribute to google-research/bert development by creating an account on GitHub."
+    }
+  ]
+}

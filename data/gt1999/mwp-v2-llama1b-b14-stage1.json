@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "GT1999/mwp-v2-llama1b-b14-stage1",
+  "slug": "gt1999-mwp-v2-llama1b-b14-stage1",
+  "author": "GT1999",
+  "url": "https://huggingface.co/GT1999/mwp-v2-llama1b-b14-stage1",
+  "created_at": "2026-08-28T10:12:49.000Z",
+  "updated_at": "2026-08-28T10:13:11.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "mwp-v2",
+    "seqft",
+    "plrs",
+    "math-word-problems",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 738660568,
+  "storage_human": "739 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GT1999/mwp-v2-llama1b-b9-stage1 · Hugging Face",
+      "url": "https://huggingface.co/GT1999/mwp-v2-llama1b-b9-stage1",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Models - Hugging Face",
+      "url": "https://huggingface.co/models?other=mwp-v2",
+      "snippet": "13 Base only Inference AvailableInference Edit filters Sort: Trending Active filters: mwp-v2 Clear all"
+    },
+    {
+      "title": "LLM Leaderboard & AI Model Benchmarks — August 2026",
+      "url": "https://benchlm.ai/",
+      "snippet": "LLM Leaderboard & AI Model Benchmarks — August 2026 Compare frontier AI models by quality, cost, and context. 105 Supported and 121 Estimated models among 403 tracked LLMs — 406 benchmarks, real pricing, and runtime data in one place."
+    },
+    {
+      "title": "‎Google Gemini",
+      "url": "https://gemini.google.com/?hl=en-GB",
+      "snippet": "Meet Gemini, Google&#x27;s AI assistant. Get help with writing, planning, brainstorming and more. Experience the power of generative AI."
+    },
+    {
+      "title": "Google Gemini",
+      "url": "https://gemini.google.com/",
+      "snippet": "Get assistance with writing, planning, learning, and more from Google AI."
+    }
+  ]
+}

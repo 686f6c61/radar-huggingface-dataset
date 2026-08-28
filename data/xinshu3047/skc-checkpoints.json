@@ -5,7 +5,7 @@
   "author": "XinShu3047",
   "url": "https://huggingface.co/XinShu3047/SKC-checkpoints",
   "created_at": "2026-08-03T02:34:47.000Z",
-  "updated_at": "2026-08-27T08:44:05.000Z",
+  "updated_at": "2026-08-27T09:48:47.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": null,
@@ -21,7 +21,7 @@
     "base_model:finetune:ByteDance-Seed/UI-TARS-1.5-7B",
     "region:us"
   ],
-  "likes": 0,
+  "likes": 1,
   "downloads_30d": 0,
   "trending_score": 0,
   "parameters": null,

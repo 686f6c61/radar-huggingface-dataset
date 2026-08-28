@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "NathIsHere/carbon-accounting-a100",
+  "slug": "nathishere-carbon-accounting-a100",
+  "author": "NathIsHere",
+  "url": "https://huggingface.co/NathIsHere/carbon-accounting-a100",
+  "created_at": "2026-08-28T11:39:54.000Z",
+  "updated_at": "2026-08-28T11:42:01.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "co2_eq_emissions",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "mkm08/green-ai-carbon-accounting · Hugging Face",
+      "url": "https://huggingface.co/mkm08/green-ai-carbon-accounting",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Arnavvvv007/carbon-accounting-a100 · Hugging Face",
+      "url": "https://huggingface.co/Arnavvvv007/carbon-accounting-a100",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "How AI Is Changing Carbon Accounting and Reporting",
+      "url": "https://netzerocompare.com/academy/when-carbon-accounting-meets-artificial-intelligence",
+      "snippet": "Learn how AI is automating carbon accounting, improving emissions data and supporting climate reporting, along with its limitations, risks and controls."
+    },
+    {
+      "title": "More than Carbon: Cradle-to-Grave environmental impacts of GenAI ...",
+      "url": "https://arxiv.org/html/2509.00093v3",
+      "snippet": "To capture AI&#x27;s complete environmental footprint, we conduct the first comprehensive multi-criteria LCA across all life cycle stages (cradle-to-grave) of the Nvidia A100 SXM GPU based on primary data generated through a two-step methodology. First, we methodically disassembled the GPU into component groups through a detailed teardown analysis."
+    },
+    {
+      "title": "How China&#x27;s new AI carbon accounting model points the finger at the US",
+      "url": "https://conven.org/china/news/how-chinas-new-ai-carbon-accounting-model-points-the-finger-at-the-us/",
+      "snippet": "China has launched what it calls the world&#x27;s first \"panoramic\" carbon accounting system, a model that revises down the country&#x27;s emissions compared to other estimates and raises them for the United States.Unlike other models that assign responsibility for emissions based on total carbon output from facilities such as power plants and factories, the new model gives greater weight to the ..."
+    }
+  ]
+}

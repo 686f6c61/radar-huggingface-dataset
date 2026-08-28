@@ -5,7 +5,7 @@
   "author": "kalyan-ks",
   "url": "https://huggingface.co/kalyan-ks/ettin-conll-ner-17m",
   "created_at": "2026-08-18T07:04:04.000Z",
-  "updated_at": "2026-08-18T07:04:09.000Z",
+  "updated_at": "2026-08-27T12:58:50.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": "token-classification",
@@ -25,8 +25,8 @@
   "trending_score": 0,
   "parameters": 16865545,
   "parameters_human": "16.9M",
-  "storage_bytes": 67466932,
-  "storage_human": "67 MB",
+  "storage_bytes": 134933864,
+  "storage_human": "135 MB",
   "base_model": null,
   "formats": [
     "safetensors"

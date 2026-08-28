@@ -5,7 +5,7 @@
   "author": "kingjones777",
   "url": "https://huggingface.co/kingjones777/Mellum2-12B-A2.5B-Instruct-ROCmFPX-Q8_0-AGENT-GGUF",
   "created_at": "2026-08-16T16:34:15.000Z",
-  "updated_at": "2026-08-16T16:35:01.000Z",
+  "updated_at": "2026-08-28T04:07:37.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-generation",

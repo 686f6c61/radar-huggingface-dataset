@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "maozhuoshushu/qbhn-krea2-lora-checkpoints",
+  "slug": "maozhuoshushu-qbhn-krea2-lora-checkpoints",
+  "author": "maozhuoshushu",
+  "url": "https://huggingface.co/maozhuoshushu/qbhn-krea2-lora-checkpoints",
+  "created_at": "2026-07-31T11:29:08.000Z",
+  "updated_at": "2026-08-28T08:34:04.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "zh"
+  ],
+  "tags": [
+    "image-generation",
+    "lora",
+    "zh",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 14799900244,
+  "storage_human": "14.8 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": true,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "maozhuoshushu/qbhn-krea2-lora-checkpoints · Hugging Face",
+      "url": "https://huggingface.co/maozhuoshushu/qbhn-krea2-lora-checkpoints",
+      "snippet": "maozhuoshushu / qbhn-krea2-lora-checkpoints like 0 Model card FilesFiles and versions xet Community Copy to bucket new"
+    },
+    {
+      "title": "maozhuoshushu/qbhn-krea2-lora-checkpoints at main - Hugging Face",
+      "url": "https://huggingface.co/maozhuoshushu/qbhn-krea2-lora-checkpoints/tree/main",
+      "snippet": "maozhuoshushu / qbhn-krea2-lora-checkpoints like 1 Chinese image-generation lora Model card FilesFiles and versions xet Community Copy to bucket new"
+    },
+    {
+      "title": "README.md · maozhuoshushu/krea2_lora_llf at main",
+      "url": "https://d6108366.hf-mirror.com/maozhuoshushu/krea2_lora_llf/blob/main/README.md?code=true",
+      "snippet": "maozhuoshushu / krea2_lora_llf like 0 lora krea2 Model card FilesFiles and versions xet Community Copy to bucket new main krea2_lora_llf /README.md maozhuoshushu Upload 李霖霏 LoRA d056d96 verified7 days ago preview code | Raw Download with hf CLI Copy download link History Blame Contribute Delete Safe 269 Bytes ..."
+    },
+    {
+      "title": "Krea 2: AI Image Foundation Model & Style Control",
+      "url": "https://www.krea.ai/krea-2",
+      "snippet": "Create expressive AI images with Krea 2, Krea AI&#x27;s in-house foundation model for aesthetic diversity, style control, moodboards, and creative workflows."
+    },
+    {
+      "title": "Krea2 RAW - Casual Snapshot Realism - krea2 | Krea 2 LoRA | Civitai",
+      "url": "https://civitai.red/models/2790570/krea2-raw-casual-snapshot-realism?modelVersionId=3144693",
+      "snippet": "Tired of the plastic, airbrushed, and overly stylized \"perfect AI\" look? This LoRA is designed specifically to inject authentic, casual smartphone photography characteristics into your generations. Trained natively on the Krea-2 RAW base model using high-resolution, naturally captioned amateur snapshots, it perfectly captures the micro-textures and beautiful imperfections of everyday phone ..."
+    }
+  ]
+}

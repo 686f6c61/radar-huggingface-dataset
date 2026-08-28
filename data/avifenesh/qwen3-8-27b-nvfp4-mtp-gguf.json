@@ -9,12 +9,12 @@
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
-  "library": null,
+  "library": "memra",
   "languages": [],
   "tags": [
+    "memra",
     "gguf",
     "nvfp4",
-    "memra",
     "speculative-decoding",
     "mtp",
     "conversational",
@@ -28,7 +28,7 @@
     "region:us"
   ],
   "likes": 14,
-  "downloads_30d": 9346,
+  "downloads_30d": 9372,
   "trending_score": 8,
   "parameters": 32768,
   "parameters_human": "32768",

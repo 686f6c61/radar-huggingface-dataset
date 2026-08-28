@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "ldov/bertweet-pt-sentiment",
+  "slug": "ldov-bertweet-pt-sentiment",
+  "author": "ldov",
+  "url": "https://huggingface.co/ldov/bertweet-pt-sentiment",
+  "created_at": "2026-08-28T11:34:21.000Z",
+  "updated_at": "2026-08-28T11:34:22.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "pysentimiento",
+  "languages": [
+    "pt"
+  ],
+  "tags": [
+    "pysentimiento",
+    "pytorch",
+    "safetensors",
+    "roberta",
+    "twitter",
+    "sentiment-analysis",
+    "pt",
+    "arxiv:2106.09462",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 134905477,
+  "parameters_human": "134.9M",
+  "storage_bytes": 1079338361,
+  "storage_human": "1.1 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "pysentimiento/bertweet-pt-sentiment · Hugging Face",
+      "url": "https://huggingface.co/pysentimiento/bertweet-pt-sentiment",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "finiteautomata/bertweet-base-sentiment-analysis · Hugging Face",
+      "url": "https://huggingface.co/finiteautomata/bertweet-base-sentiment-analysis",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "pysentimiento/bertweet-pt-sentiment - Endor Labs",
+      "url": "https://www.endorlabs.com/ai-model/pysentimiento-bertweet-pt-sentiment",
+      "snippet": "Secure your AI-native apps Discover and assess all AI models, APIs, and dependencies in your code."
+    },
+    {
+      "title": "bertweet-pt-sentiment huggingface.co api & pysentimiento bertweet-pt ...",
+      "url": "https://www.toolify.ai/ai-model/pysentimiento-bertweet-pt-sentiment",
+      "snippet": "pysentimiento bertweet-pt-sentiment online free bertweet-pt-sentiment huggingface.co is an online trial and call api platform, which integrates bertweet-pt-sentiment&#x27;s modeling effects, including api services, and provides a free online trial of bertweet-pt-sentiment, you can try bertweet-pt-sentiment online for free by clicking the link below."
+    },
+    {
+      "title": "Less is more: Pruning BERTweet architecture in Twitter sentiment ...",
+      "url": "https://www.sciencedirect.com/science/article/pii/S0306457324000487",
+      "snippet": "This paper investigates the overparametrization of BERTweet, a transformer-based model trained with Twitter data, focusing on the prevalent task of tweets sentiment analysis. The paper contributes with a pruning method that reduces BERTweet size before tuning it to a downstream task."
+    }
+  ]
+}

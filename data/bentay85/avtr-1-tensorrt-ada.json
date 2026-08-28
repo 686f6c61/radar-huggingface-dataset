@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "bentay85/avtr-1-tensorrt-ada",
+  "slug": "bentay85-avtr-1-tensorrt-ada",
+  "author": "bentay85",
+  "url": "https://huggingface.co/bentay85/avtr-1-tensorrt-ada",
+  "created_at": "2026-08-28T06:11:48.000Z",
+  "updated_at": "2026-08-28T06:17:57.000Z",
+  "license": "avtr-1-community-license",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": true,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "LucasMatuszewski/avtr-1-AI-Video-Avatar-Model-from-Avaturn",
+      "url": "https://github.com/LucasMatuszewski/avtr-1-AI-Video-Avatar-Model-from-Avaturn",
+      "snippet": "AVTR-1 AVTR-1 is a flow-matching-based autoregressive model for live dialogue. Given a portrait image and dual-stream audio, it renders lip-synced speech and active listening at 25 fps on a single GPU. Built for production deployment: model weights, TensorRT-accelerated inference, and the live-session backend - available as an API or fully self ..."
+    },
+    {
+      "title": "csryxx/avtr-1-AI-Video-Avatar-Model-from-Avaturn - GitHub",
+      "url": "https://github.com/csryxx/avtr-1-AI-Video-Avatar-Model-from-Avaturn",
+      "snippet": "AVTR-1 AVTR-1 is a flow-matching-based autoregressive model for live dialogue. Given a portrait image and dual-stream audio, it renders lip-synced speech and active listening at 25 fps on a single GPU. Built for production deployment: model weights, TensorRT-accelerated inference, and the live-session backend - available as an API or fully self ..."
+    },
+    {
+      "title": "AVTR-1 local video AI guide | LocalClaw",
+      "url": "https://localclaw.io/video/avtr-1",
+      "snippet": "AVTR-1: local video model hardware, RAM, VRAM, runtime, output, license and installation guidance."
+    },
+    {
+      "title": "AVTR 1 - AI Model | There&#x27;s An AI For That",
+      "url": "https://theresanaiforthat.com/model/avtr-1/",
+      "snippet": "AVTR-1 is a flow-matching-based autoregressive model from Avaturn Live for live dialogue avatars. Given a portrait image and dual-stream audio, it renders a talking avatar with lip-synced speech and active listening behavior at 25 fps on a single GPU."
+    },
+    {
+      "title": "TensorRT SDK | NVIDIA Developer",
+      "url": "https://developer.nvidia.com/tensorrt",
+      "snippet": "TensorRT Model Optimizer is a unified library of state-of-the-art model optimization techniques, including quantization, pruning, speculation, sparsity, and distillation."
+    }
+  ]
+}

@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "OpenExplorer/maptr_henet_tinym_bevformer",
+  "slug": "openexplorer-maptr_henet_tinym_bevformer",
+  "author": "OpenExplorer",
+  "url": "https://huggingface.co/OpenExplorer/maptr_henet_tinym_bevformer",
+  "created_at": "2026-08-27T07:13:19.000Z",
+  "updated_at": "2026-08-28T08:27:06.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "heal",
+    "horizon",
+    "bev",
+    "lane-detection",
+    "arxiv:2208.14437",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1203584458,
+  "storage_human": "1.2 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "OpenExploer/maptr_henet_tinym_bevformer · Hugging Face",
+      "url": "https://huggingface.co/OpenExploer/maptr_henet_tinym_bevformer",
+      "snippet": "OpenExploer / maptr_henet_tinym_bevformer like 0 Follow horizon 8 heal horizon bev lane-detection arxiv:2208.14437 License:other Model card FilesFiles and versions xet Community Copy to bucket new MapTR+HENet (BevFormer) Deployment Metrics Model Parameters Accuracy Metrics Performance Metrics Model Overview Core Design Official Repo and Paper ..."
+    },
+    {
+      "title": "MapTROE Training - Horizon OpenExplorer Toolchain User Manual",
+      "url": "https://doc.oe.horizon.auto/3.5.0/en/guide/advanced_content/hat/examples/maptroe.html",
+      "snippet": "The above two commands are respectively for the training of the floating-point model and the fixed-point model. The fixed-point model training needs to be based on the trained fixed-point model. For details on this, please read the Quantized Awareness Training (QAT) section."
+    },
+    {
+      "title": "Models - Hugging Face",
+      "url": "https://huggingface.co/models?other=heal",
+      "snippet": "Explore machine learning models. 26 Base only Inference AvailableInference Edit filters Sort: Trending Active filters: heal Clear all"
+    },
+    {
+      "title": "Open models by OpenAI | OpenAI",
+      "url": "https://openai.com/open-models/",
+      "snippet": "Advanced open-weight reasoning models to customize for any use case and run anywhere."
+    },
+    {
+      "title": "AI Benchmark User Guide - D-Robotics OpenExplorer Toolchain User Manual",
+      "url": "https://toolchain.d-robotics.cc/guide/ucp/runtime/ai_benchmark.html",
+      "snippet": "AI Benchmark User Guide AI Benchmark Sample Package contains the most frequently used performance and accuracy evaluation samples of classification, detection, segmentation, optical-flow, tracking estimation, lidar multitask, bev, depth estimation and online map construction models."
+    }
+  ]
+}

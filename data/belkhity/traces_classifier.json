@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "belkhity/TRACES_classifier",
+  "slug": "belkhity-traces_classifier",
+  "author": "belkhity",
+  "url": "https://huggingface.co/belkhity/TRACES_classifier",
+  "created_at": "2026-08-28T08:56:09.000Z",
+  "updated_at": "2026-08-28T08:58:43.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 438025237,
+  "storage_human": "438 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "belkhity/TRACES_classifier · Hugging Face",
+      "url": "https://huggingface.co/belkhity/TRACES_classifier",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "otienoco/TRACE-classifier · Hugging Face",
+      "url": "https://huggingface.co/otienoco/TRACE-classifier",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GitHub - shashadehuajiang/trace_classifier: It is a network traffic ...",
+      "url": "https://github.com/shashadehuajiang/trace_classifier",
+      "snippet": "This repo is the official implementation of An Input-Agnostic Hierarchical Deep Learning Framework for Traffic Fingerprinting (USENIX Security &#x27;23). We provide code and datasets here. It provides a simple but effective method for trace classification."
+    },
+    {
+      "title": "shashadehuajiang/trace_classifier | DeepWiki",
+      "url": "https://deepwiki.com/shashadehuajiang/trace_classifier",
+      "snippet": "The trace_classifier repository provides a configurable framework for analyzing network traffic at multiple levels of abstraction (packets → flows → traces) to identify patterns for various classification tasks."
+    },
+    {
+      "title": "trace_classifier/code/README.md at main · shashadehuajiang ... - GitHub",
+      "url": "https://github.com/shashadehuajiang/trace_classifier/blob/main/code/README.md",
+      "snippet": "It is a network traffic classifier based on deep learning. - shashadehuajiang/trace_classifier"
+    }
+  ]
+}

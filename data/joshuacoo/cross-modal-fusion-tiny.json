@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "joshuacoo/cross-modal-fusion-tiny",
+  "slug": "joshuacoo-cross-modal-fusion-tiny",
+  "author": "joshuacoo",
+  "url": "https://huggingface.co/joshuacoo/cross-modal-fusion-tiny",
+  "created_at": "2026-08-28T07:35:49.000Z",
+  "updated_at": "2026-08-28T07:35:59.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "transformer",
+    "research-notes",
+    "cross-modal-fusion",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 24832,
+  "parameters_human": "24832",
+  "storage_bytes": 99808,
+  "storage_human": "99808 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Models - Hugging Face",
+      "url": "https://huggingface.co/models?library...",
+      "snippet": "Explore machine learning models."
+    },
+    {
+      "title": "Models compatible with the multimodal library - Hugging Face",
+      "url": "https://huggingface.co/models?library=multimodal",
+      "snippet": "Explore machine learning models."
+    },
+    {
+      "title": "Design of cross-modal fusion algorithm for Tesla&#x27;s autonomous driving ...",
+      "url": "https://dl.acm.org/doi/10.1145/3766918.3766965",
+      "snippet": "In the future, Tesla&#x27;s cross-modal fusion algorithm for autonomous driving will be optimized from many aspects: compressing the model to within 10M through knowledge distillation and model pruning to adapt to the next-generation platform, developing an online calibration algorithm to solve the sensor offset problem; integrating infrared sensors ..."
+    },
+    {
+      "title": "Simulation Engine - JOSHUA Documentation",
+      "url": "https://joshua-ai-robotics.org/docs/simulation.html",
+      "snippet": "Simulation Engine The JOSHUA Simulation Engine provides a comprehensive physics simulation environment built on MuJoCo (Multi-Joint dynamics with Contact). It supports multiple operational modes for development, testing, validation, and training—from interactive GUI manipulation to GPU-accelerated reinforcement learning with thousands of parallel environments."
+    },
+    {
+      "title": "CMFFN: An efficient cross-modal feature fusion network for semantic ...",
+      "url": "https://www.sciencedirect.com/science/article/pii/S0921889024002847",
+      "snippet": "We propose a novel approach to cross-modal fusion, termed CMFFN. This method utilises the geometric features and positional information of raw point clouds, achieving state-of-the-art (SOTA) bimodal fusion results with significantly reduced computational and memory costs."
+    }
+  ]
+}

@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "Fastiraz/Ornith-1.5-397B-GGUF",
+  "slug": "fastiraz-ornith-1-5-397b-gguf",
+  "author": "Fastiraz",
+  "url": "https://huggingface.co/Fastiraz/Ornith-1.5-397B-GGUF",
+  "created_at": "2026-08-28T01:14:09.000Z",
+  "updated_at": "2026-08-28T01:14:09.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "gguf",
+    "text-generation",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us",
+    "imatrix",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 402941918464,
+  "parameters_human": "402.94B",
+  "storage_bytes": 2561417722953,
+  "storage_human": "2561.4 GB",
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ornith-ai/Ornith-1.5-397B · Hugging Face",
+      "url": "https://huggingface.co/ornith-ai/Ornith-1.5-397B",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Ornith-1.5 - a ornith-ai Collection - Hugging Face",
+      "url": "https://huggingface.co/collections/ornith-ai/ornith-15",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GitHub - ornith-ai/Ornith-1",
+      "url": "https://github.com/ornith-ai/Ornith-1",
+      "snippet": "Aloha! 🌺 Ornith is a family of self-improving open-source models for agentic tasks. This repo covers both generations: 🐦 Ornith-1.5 (latest) — extends self-scaffolding into a complete end-to-end self-improvement loop: the model proposes new tasks, generates task-specific scaffolds, and produces solution rollouts for reinforcement learning. Model weights at HuggingFace, and more details ..."
+    },
+    {
+      "title": "MoE 397B Model | ornith-ai/Ornith-1 | DeepWiki",
+      "url": "https://deepwiki.com/ornith-ai/Ornith-1/2.3-moe-397b-model",
+      "snippet": "The Ornith-1.5-397B is the flagship variant of the Ornith model family, designed for large-scale agentic reasoning and complex software engineering tasks. It utilizes a Mixture-of-Experts (MoE) architecture with 397 billion total parameters, optimized for high-throughput inference via tensor parallelism and advanced quantization formats."
+    },
+    {
+      "title": "Ornith-1.5-397B - Local AI Model - Tokenstead",
+      "url": "https://tokenstead.ai/models/ornith-1-5-397b",
+      "snippet": "Built on continued pretraining of Qwen 3.5 / Gemma 4, then a self-improvement loop where the model proposes new tasks, generates task-specific scaffolds, and produces solution rollouts for RL (all three stages optimized jointly with GRPO). 262K context, MIT-licensed on HuggingFace at ornith-ai/Ornith-1.5-397B (FP8, GGUF, and NVFP4 quantizations)."
+    }
+  ]
+}

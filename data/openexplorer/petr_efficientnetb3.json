@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "OpenExplorer/petr_efficientnetb3",
+  "slug": "openexplorer-petr_efficientnetb3",
+  "author": "OpenExplorer",
+  "url": "https://huggingface.co/OpenExplorer/petr_efficientnetb3",
+  "created_at": "2026-08-27T07:38:31.000Z",
+  "updated_at": "2026-08-28T08:27:14.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "heal",
+    "horizon",
+    "arxiv:2203.05625",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1102430753,
+  "storage_human": "1.1 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "OpenExploer/petr_efficientnetb3 · Hugging Face",
+      "url": "https://huggingface.co/OpenExploer/petr_efficientnetb3",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "AI Benchmark User Guide - Horizon OpenExplorer Toolchain User Manual",
+      "url": "https://doc.oe.horizon.auto/en/guide/model_deployment/board_deployment/ai_benchmark.html",
+      "snippet": "The mixvargenet_imagenet, detr3d_efficientnetb3, petr_efficientnetb3, bev_lss_efficientnetb0_multitask, bevformer_tiny_resnet50_detection, deformable_detr_resnet50, pointpillars_kitti_car and qcnet benchmark is not supported on J6B."
+    },
+    {
+      "title": "J6P/H Benchmark of Model Performance - Horizon OpenExplorer Toolchain ...",
+      "url": "https://doc.oe.horizon.auto/en/guide/samples/benchmark/j6ph_benchmark.html",
+      "snippet": "MODEL PERFORMANCE FPS = Frames per second. This data is obtained by running the hrt_model_exec tool in multi-threaded mode. For detailed usage instructions, please refer to the the hrt_model_exec tool introduction - model performance evaluation section. Latency = Inference latency, with the unit of ms (milliseconds). This data is obtained by running the hrt_model_exec tool in single-threaded ..."
+    },
+    {
+      "title": "AI Benchmark User Guide - D-Robotics OpenExplorer Toolchain User Manual",
+      "url": "https://toolchain.d-robotics.cc/en/guide/ucp/runtime/ai_benchmark.html",
+      "snippet": "AI Benchmark User Guide AI Benchmark Sample Package contains the most frequently used performance and accuracy evaluation samples of classification, detection, segmentation, optical-flow, tracking estimation, lidar multitask, bev, depth estimation and online map construction models."
+    },
+    {
+      "title": "google/efficientnet-b3 · Hugging Face",
+      "url": "https://huggingface.co/google/efficientnet-b3",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    }
+  ]
+}

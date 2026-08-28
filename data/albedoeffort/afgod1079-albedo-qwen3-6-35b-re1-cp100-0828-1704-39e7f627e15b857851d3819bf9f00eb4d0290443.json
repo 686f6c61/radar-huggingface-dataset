@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "albedoeffort/afgod1079-albedo-qwen3.6-35b-re1-cp100-0828-1704-39e7f627e15b857851d3819bf9f00eb4d0290443",
+  "slug": "albedoeffort-afgod1079-albedo-qwen3-6-35b-re1-cp100-0828-1704-39e7f627e15b857851d3819bf9f00eb4d0290443",
+  "author": "albedoeffort",
+  "url": "https://huggingface.co/albedoeffort/afgod1079-albedo-qwen3.6-35b-re1-cp100-0828-1704-39e7f627e15b857851d3819bf9f00eb4d0290443",
+  "created_at": "2026-08-28T08:04:40.000Z",
+  "updated_at": "2026-08-28T08:15:59.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_5_moe",
+    "image-text-to-text",
+    "conversational",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 35951822704,
+  "parameters_human": "35.95B",
+  "storage_bytes": 71916583934,
+  "storage_human": "71.9 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": true,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "afgod1079/albedo-qwen3.6-35b-re1-cp100 · Hugging Face",
+      "url": "https://huggingface.co/afgod1079/albedo-qwen3.6-35b-re1-cp100",
+      "snippet": "Instructions to use afgod1079/albedo-qwen3.6-35b-re1-cp100 with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Libraries Transformers How to use afgod1079/albedo-qwen3.6-35b-re1-cp100 with Transformers:"
+    },
+    {
+      "title": "afgod1079/albedo-qwen3.6-35b-miner-04 · Hugging Face",
+      "url": "https://huggingface.co/afgod1079/albedo-qwen3.6-35b-miner-04",
+      "snippet": "afgod1079 / albedo-qwen3.6-35b-miner-04 like 0 Safetensors qwen3_5_moe Model card FilesFiles and versions xet Community Copy to bucket new No model card Downloads last month 24 Safetensors Model size 36B params Tensor type BF16 · Chat template Files info Inference Providers NEW This model isn&#x27;t deployed by any Inference Provider.🙋Ask for provider support"
+    },
+    {
+      "title": "albedo-qwen3.6-35b-raft-g1 API & Inference Endpoint | FriendliAI",
+      "url": "https://friendli.ai/models/logicpeak/albedo-qwen3.6-35b-raft-g1",
+      "snippet": "Run albedo-qwen3.6-35b-raft-g1 with FriendliAI inference. Following the February release of the Qwen3.5 series, we&#x27;re pleased to share the first open-weight…"
+    },
+    {
+      "title": "Qwen 3.6 Complete Guide: 27B Dense, 35B-A3B MoE, and Which to Use",
+      "url": "https://insiderllm.com/guides/qwen-3-6-local-ai-guide/",
+      "snippet": "Qwen 3.6 landed in two open-weight flavors: 27B dense and 35B-A3B MoE. Benchmarks, hardware fit, and which variant to run on your GPU."
+    },
+    {
+      "title": "Best Way to Run Qwen 3.6 35B MoE Locally: VRAM, Speed, Setup",
+      "url": "https://insiderllm.com/guides/best-way-run-qwen-3-6-35b-moe-locally/",
+      "snippet": "Qwen 3.6-35B-A3B has 35B total params but only 3B active per token. Real tok/s on RTX 3090, 4090, 5070 Ti, dual 5060 Ti, and M3 Ultra. Quants and setup."
+    }
+  ]
+}

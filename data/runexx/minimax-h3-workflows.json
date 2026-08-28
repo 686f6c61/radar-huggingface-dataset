@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "RuneXX/Minimax-H3-Workflows",
+  "slug": "runexx-minimax-h3-workflows",
+  "author": "RuneXX",
+  "url": "https://huggingface.co/RuneXX/Minimax-H3-Workflows",
+  "created_at": "2026-08-28T07:32:23.000Z",
+  "updated_at": "2026-08-28T07:40:51.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "image-to-video",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "Minimax",
+    "Minimax-H3",
+    "comfy",
+    "comfyui",
+    "text-to-video",
+    "image-to-video",
+    "audio-to-video",
+    "video-to-video",
+    "reference-to-video",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "MiniMax H3 Open-Source AI Video Model | Tutorials, Deployment & Workflows",
+      "url": "https://design.minimax.io/h3",
+      "snippet": "Curated MiniMax H3 video model tutorials, open-source deployment guides, creator workflows and industry insights. Updated continuously."
+    },
+    {
+      "title": "GitHub - ai-models-lab/minimax-h3: MiniMax-H3-Hub, ComfyUI Workflows ...",
+      "url": "https://github.com/ai-models-lab/minimax-h3",
+      "snippet": "MiniMax H3 (Hailuo AI) - AI Video Workflows, Prompts & Local Deployment Hub Official Hub for MiniMax H3 (minimaxh3.run) — An all-in-one open-source resource platform for MiniMax H3 (Hailuo AI 3.0), the state-of-the-art native multi-modal 2K AI video generation model with synchronized 3D stereo audio."
+    },
+    {
+      "title": "MiniMax H3 ComfyUI Workflows, Setup & Tutorial | MiniMax Design",
+      "url": "https://design.minimax.io/tools/minimax-h3-comfyui",
+      "snippet": "MiniMax H3 in ComfyUI Build Custom Multimodal AI Video Workflows Use MiniMax H3 and ComfyUI to connect prompts, models, parameters, images, video, audio, and outputs in reusable node-based workflows. Create text-to-video, image-to-video, first-and-last-frame, and reference-driven video with synchronized visuals, motion, and sound."
+    },
+    {
+      "title": "GitHub - MiniMax-AI/MiniMax-H3 · GitHub",
+      "url": "https://github.com/MiniMax-AI/MiniMax-H3",
+      "snippet": "Contribute to MiniMax-AI/MiniMax-H3 development by creating an account on GitHub."
+    },
+    {
+      "title": "MiniMax H3 ComfyUI Guide: Setup, VRAM, Workflows & Fixes - kingy.ai",
+      "url": "https://kingy.ai/ai/ai-guides/minimax-h3-comfyui-local-guide/",
+      "snippet": "Install MiniMax H3 in ComfyUI, download the correct files, run T2V, I2V and R2V workflows, use SageAttention and troubleshoot OOM errors."
+    }
+  ]
+}

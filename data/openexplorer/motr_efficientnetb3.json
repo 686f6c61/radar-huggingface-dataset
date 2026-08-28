@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "OpenExplorer/motr_efficientnetb3",
+  "slug": "openexplorer-motr_efficientnetb3",
+  "author": "OpenExplorer",
+  "url": "https://huggingface.co/OpenExplorer/motr_efficientnetb3",
+  "created_at": "2026-08-27T07:28:17.000Z",
+  "updated_at": "2026-08-28T08:27:12.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "heal",
+    "horizon",
+    "arxiv:2105.03247",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1185976214,
+  "storage_human": "1.2 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "OpenExploer/motr_efficientnetb3 at main - Hugging Face",
+      "url": "https://huggingface.co/OpenExploer/motr_efficientnetb3/tree/main",
+      "snippet": "OpenExploer / motr_efficientnetb3 like 0 Follow horizon 8 heal horizon arxiv:2105.03247 License:other Model card FilesFiles and versions xet Community Copy to bucket new main motr_efficientnetb3 1.29 GB Ctrl+K Ctrl+K 1 contributor History:25 commits zacxr Add README.md 3125fc9 verifiedabout 4 hours ago"
+    },
+    {
+      "title": "AI Benchmark User Guide - Horizon OpenExplorer Toolchain User Manual",
+      "url": "https://doc.oe.horizon.auto/en/guide/model_deployment/board_deployment/ai_benchmark.html",
+      "snippet": "Except for the qcnet_oe_argoverse2, bev, motr_efficientnetb3_mot17, and maptroe_henet_tinym_bevformer_nuscenes models, the reference generation method of the lst files for the other models:"
+    },
+    {
+      "title": "AI Benchmark User Guide - D-Robotics OpenExplorer Toolchain User Manual",
+      "url": "https://toolchain.d-robotics.cc/en/guide/ucp/runtime/ai_benchmark.html",
+      "snippet": "AI Benchmark User Guide AI Benchmark Sample Package contains the most frequently used performance and accuracy evaluation samples of classification, detection, segmentation, optical-flow, tracking estimation, lidar multitask, bev, depth estimation and online map construction models."
+    },
+    {
+      "title": "Overview - Horizon OpenExplorer Toolchain User Manual",
+      "url": "https://doc.oe.horizon.auto/3.2.0/en/guide/advanced_content/hat/introduction.html",
+      "snippet": "Multiple Object Track motr_efficientnetb3_mot17 Binocular Depth Estimation stereonetplus_mixvargenet_sceneflow Bev Multi-task Model bev_ipm_efficientnetb0_multitask_nuscenes bev_lss_efficientnetb0_multitask_nuscenes bev_gkt_mixvargenet_multitask_nuscenes bev_ipm_4d_efficientnetb0_multitask_nuscenes detr3d_efficientnetb3_nuscenes petr ..."
+    },
+    {
+      "title": "google/efficientnet-b3 · Hugging Face",
+      "url": "https://huggingface.co/google/efficientnet-b3",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    }
+  ]
+}

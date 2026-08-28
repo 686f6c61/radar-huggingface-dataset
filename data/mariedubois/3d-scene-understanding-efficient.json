@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "mariedubois/3d-scene-understanding-efficient",
+  "slug": "mariedubois-3d-scene-understanding-efficient",
+  "author": "mariedubois",
+  "url": "https://huggingface.co/mariedubois/3d-scene-understanding-efficient",
+  "created_at": "2026-08-28T05:27:30.000Z",
+  "updated_at": "2026-08-28T05:27:39.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "transformer",
+    "research-notes",
+    "3d-scene-understanding",
+    "license:cc-by-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 49600,
+  "parameters_human": "49600",
+  "storage_bytes": 198880,
+  "storage_human": "198880 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Multi-Modal Data-Efficient 3D Scene Understanding for Autonomous ...",
+      "url": "https://dl.acm.org/doi/10.1109/TPAMI.2025.3535625",
+      "snippet": "Efficient data utilization is crucial for advancing 3D scene understanding in autonomous driving, where reliance on heavily human-annotated LiDAR point clouds challenges fully supervised methods. Addressing this, our study extends into semi-supervised ..."
+    },
+    {
+      "title": "Multi-Modal Data-Efficient 3D Scene Understanding for Autonomous ...",
+      "url": "https://ieeexplore.ieee.org/document/10856442",
+      "snippet": "Efficient data utilization is crucial for advancing 3D scene understanding in autonomous driving, where reliance on heavily human-annotated LiDAR point clouds challenges fully supervised methods. Addressing this, our study extends into semi-supervised learning for LiDAR semantic segmentation, leveraging the intrinsic spatial priors of driving scenes and multi-sensor complements to augment the ..."
+    },
+    {
+      "title": "Multi-Modal Data-Efficient 3D Scene Understanding for Autonomous Driving",
+      "url": "https://arxiv.org/html/2405.05258v2",
+      "snippet": "Efficient data utilization is crucial for advancing 3D scene understanding in autonomous driving, where reliance on heavily human-annotated LiDAR point clouds challenges fully supervised methods. Addressing this, our study extends into semi-supervised learning for LiDAR semantic segmentation, leveraging the intrinsic spatial priors of driving scenes and multi-sensor complements to augment the ..."
+    },
+    {
+      "title": "[2405.05258] Multi-Modal Data-Efficient 3D Scene Understanding for ...",
+      "url": "https://arxiv.org/abs/2405.05258",
+      "snippet": "Efficient data utilization is crucial for advancing 3D scene understanding in autonomous driving, where reliance on heavily human-annotated LiDAR point clouds challenges fully supervised methods. Addressing this, our study extends into semi-supervised learning for LiDAR semantic segmentation, leveraging the intrinsic spatial priors of driving scenes and multi-sensor complements to augment the ..."
+    },
+    {
+      "title": "Multi-Modal Data-Efficient 3D Scene Understanding for Autonomous ...",
+      "url": "https://www.aimodels.fyi/papers/arxiv/multi-modal-data-efficient-3d-scene-understanding",
+      "snippet": "Overview This paper presents a multi-modal data-efficient approach for 3D scene understanding in autonomous driving. The method leverages both LiDAR and camera data to achieve robust and accurate 3D semantic segmentation. It employs a semi-supervised learning strategy to reduce the need for costly annotated data. The proposed framework demonstrates state-of-the-art performance on several 3D ..."
+    }
+  ]
+}

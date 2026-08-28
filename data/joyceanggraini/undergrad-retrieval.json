@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "Joyceanggraini/undergrad-retrieval",
+  "slug": "joyceanggraini-undergrad-retrieval",
+  "author": "Joyceanggraini",
+  "url": "https://huggingface.co/Joyceanggraini/undergrad-retrieval",
+  "created_at": "2026-08-28T09:58:51.000Z",
+  "updated_at": "2026-08-28T09:58:58.000Z",
+  "license": "bsd-3-clause",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "vit",
+    "pytorch",
+    "retrieval",
+    "license:bsd-3-clause",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 49600,
+  "parameters_human": "49600",
+  "storage_bytes": 198880,
+  "storage_human": "198880 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ResearchGate | Find and share research",
+      "url": "https://www.researchgate.net/",
+      "snippet": "Access 160+ million publication pages and connect with 25+ million researchers. Join for free and gain visibility by uploading your research."
+    },
+    {
+      "title": "Research | OpenAI",
+      "url": "https://openai.com/research/",
+      "snippet": "We advance the science of AI through research on frontier models, reasoning, multimodal systems, and safe deployment. GPT OpenAI&#x27;s GPT series models are fast, versatile, and cost-efficient AI systems designed to understand context, generate content, and reason across text, images, and more."
+    },
+    {
+      "title": "Information Retrieval in the Age of Generative AI: The RGB Model",
+      "url": "https://arxiv.org/abs/2504.20610",
+      "snippet": "The advent of Large Language Models (LLMs) and generative AI is fundamentally transforming information retrieval and processing on the Internet, bringing both great potential and significant concerns regarding content authenticity and reliability. This paper presents a novel quantitative approach to shed light on the complex information dynamics arising from the growing use of generative AI ..."
+    },
+    {
+      "title": "Retrieval-augmented generation - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Retrieval-augmented_generation",
+      "snippet": "Retrieval-augmented generation (RAG) enhances large language models (LLMs) by incorporating an information-retrieval mechanism that allows models to access and utilize additional data beyond their original training set. Ars Technica notes that \"when new information becomes available, rather than having to retrain the model, all that&#x27;s needed is to augment the model&#x27;s external knowledge base ..."
+    },
+    {
+      "title": "A Systematic Review of Key Retrieval-Augmented Generation (RAG) Systems:",
+      "url": "https://arxiv.org/html/2507.18910v1",
+      "snippet": "Abstract Retrieval-Augmented Generation (RAG) represents a major advancement in natural language processing (NLP), combining large language models (LLMs) with information retrieval systems to enhance factual grounding, accuracy, and contextual relevance. This paper presents a comprehensive systematic review of RAG, tracing its evolution from early developments in open-domain question answering ..."
+    }
+  ]
+}

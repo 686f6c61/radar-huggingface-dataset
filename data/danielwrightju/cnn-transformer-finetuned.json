@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "danielwrightju/cnn-transformer-finetuned",
+  "slug": "danielwrightju-cnn-transformer-finetuned",
+  "author": "danielwrightju",
+  "url": "https://huggingface.co/danielwrightju/cnn-transformer-finetuned",
+  "created_at": "2026-08-28T07:03:50.000Z",
+  "updated_at": "2026-08-28T07:03:59.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "cnn_transformer",
+    "pytorch",
+    "cnn-transformer",
+    "contrastive",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 16576,
+  "parameters_human": "16576",
+  "storage_bytes": 66784,
+  "storage_human": "66784 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "kaorisakam/cnn-transformer-finetuned · Hugging Face",
+      "url": "https://huggingface.co/kaorisakam/cnn-transformer-finetuned",
+      "snippet": "kaorisakam / cnn-transformer-finetuned like 0 Safetensors PyTorch cnn_transformer cnn-transformer generation License:bsd-3-clause Model card FilesFiles and versions xet Community Copy to bucket new Cnn Transformer for Generation Overview Repository status Architecture Default experiment recipe Quick check Evaluation guidance Limitations Files ..."
+    },
+    {
+      "title": "Hugging Face - The AI community building the future.",
+      "url": "https://huggingface.co/",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "LLM Leaderboard 2026: Compare 300+ Top AI Models by Intelligence, Speed ...",
+      "url": "https://llm-stats.com/leaderboards/llm-leaderboard",
+      "snippet": "The LLM Leaderboard — independent ranking of GPT, Claude, Gemini, Llama, DeepSeek and 300+ AI models by intelligence, speed and price. Filter by provider, license, modality and context window; sort by every benchmark. Composite LLM Stats Score updated continuously from public benchmarks and live API metrics."
+    },
+    {
+      "title": "Fine-tuned Transformer Models for Breast Cancer Detection and ...",
+      "url": "https://arxiv.org/html/2512.02091",
+      "snippet": "Although there were interesting results, the issues of dataset diversity and model optimization which present new avenues of research are also still present. Through this study, the crystal potential of transformer-based AI models in changing the detecting process of breast cancer and, thus, to patients&#x27; health, is suggested. Index Terms:"
+    },
+    {
+      "title": "A Comparative Study of CNN, Fine-Tuned Transformer, and Fused Attention ...",
+      "url": "https://ieeexplore.ieee.org/document/11315543",
+      "snippet": "The automated recognition of emotions from speech is a pivotal component of intelligent human-computer interaction. This paper presents a comparative study of three deep learning paradigms for vocal emotion classification: a supervised Convolutional Neural Network (CNN) trained from scratch, a fine- tuned self-supervised learning (SSL) model (Wav2Vec2), and a hybrid Fused Attention Model that ..."
+    }
+  ]
+}

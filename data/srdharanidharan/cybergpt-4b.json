@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "srdharanidharan/CyberGPT-4B",
+  "slug": "srdharanidharan-cybergpt-4b",
+  "author": "srdharanidharan",
+  "url": "https://huggingface.co/srdharanidharan/CyberGPT-4B",
+  "created_at": "2026-08-28T08:36:55.000Z",
+  "updated_at": "2026-08-28T08:36:55.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - Decentralised-AI/CyberGPT: This repo is based on AutoGPT for ...",
+      "url": "https://github.com/Decentralised-AI/CyberGPT",
+      "snippet": "CyberGPT This repo is based on ChatGPT and AutoGPT to achieve General Robotic System for Field Robotics. Given that the great purge of LLM and commen sense ability for general usage, we aim to bridge the link between ChatGPT and field robotics application."
+    },
+    {
+      "title": "CyberGPT/README.md at main · Decentralised-AI/CyberGPT",
+      "url": "https://github.com/Decentralised-AI/CyberGPT/blob/main/README.md",
+      "snippet": "CyberGPT This repo is based on ChatGPT and AutoGPT to achieve General Robotic System for Field Robotics. Given that the great purge of LLM and commen sense ability for general usage, we aim to bridge the link between ChatGPT and field robotics application."
+    },
+    {
+      "title": "AI Model Release Tracker - Latest Releases | LM Market Cap",
+      "url": "https://lmmarketcap.com/tools/model-release-tracker",
+      "snippet": "AI Model Release Tracker Stay up to date with the latest AI model releases. This page tracks 388 models across all providers, sorted by release date."
+    },
+    {
+      "title": "srdharanidharan (Dharanidharan S R) - Hugging Face",
+      "url": "https://huggingface.co/srdharanidharan",
+      "snippet": "User profile of Dharanidharan S R on Hugging Face"
+    },
+    {
+      "title": "Google Gemini",
+      "url": "https://gemini.google.com/",
+      "snippet": "Get assistance with writing, planning, learning, and more from Google AI."
+    }
+  ]
+}

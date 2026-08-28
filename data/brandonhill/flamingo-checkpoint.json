@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "BrandonHill/flamingo-checkpoint",
+  "slug": "brandonhill-flamingo-checkpoint",
+  "author": "BrandonHill",
+  "url": "https://huggingface.co/BrandonHill/flamingo-checkpoint",
+  "created_at": "2026-08-28T10:05:29.000Z",
+  "updated_at": "2026-08-28T10:06:09.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "flamingo",
+    "pytorch",
+    "retrieval",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 24832,
+  "parameters_human": "24832",
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Model Usage and Inference | NVIDIA/audio-flamingo | DeepWiki",
+      "url": "https://deepwiki.com/NVIDIA/audio-flamingo/6.3-model-usage-and-inference",
+      "snippet": "Model Usage and Inference Relevant source files This page provides practical guidance for running inference with Audio Flamingo models. It covers loading model checkpoints from HuggingFace Hub, basic inference patterns, and configuration options. Each model variant has its own branch-specific implementation details, which are documented in their respective branches (see page 1.2 for repository ..."
+    },
+    {
+      "title": "Accessing Models | NVIDIA/audio-flamingo | DeepWiki",
+      "url": "https://deepwiki.com/NVIDIA/audio-flamingo/6.1-accessing-models",
+      "snippet": "Accessing Models Relevant source files This page documents how to access Audio Flamingo model checkpoints and source code through HuggingFace Hub and GitHub branches. It covers all five model variants with their respective parameter sizes and provides guidance on selecting the appropriate access method for different use cases. For information about model usage and inference procedures, see ..."
+    },
+    {
+      "title": "OpenFlamingo-3B-vitl-mpt1b - Hugging Face",
+      "url": "https://huggingface.co/openflamingo/OpenFlamingo-3B-vitl-mpt1b",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GitHub - flamgio/Flamingo-ai",
+      "url": "https://github.com/flamgio/Flamingo-ai",
+      "snippet": "Why Choose Flamingo AI? 🧠 Intelligent Model Orchestration Our proprietary AI coordination system automatically selects the optimal language model based on conversation complexity, ensuring every interaction delivers maximum value and accuracy."
+    },
+    {
+      "title": "openflamingo/OpenFlamingo-9B-vitl-mpt7b · Hugging Face",
+      "url": "https://huggingface.co/openflamingo/OpenFlamingo-9B-vitl-mpt7b",
+      "snippet": "OpenFlamingo is an open source implementation of DeepMind&#x27;s Flamingo models. This 9B-parameter model uses a CLIP ViT-L/14 vision encoder and MPT-7B language model."
+    }
+  ]
+}

@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "Ivanmikhailov/coca-retrieval-notebook",
+  "slug": "ivanmikhailov-coca-retrieval-notebook",
+  "author": "Ivanmikhailov",
+  "url": "https://huggingface.co/Ivanmikhailov/coca-retrieval-notebook",
+  "created_at": "2026-08-28T06:32:17.000Z",
+  "updated_at": "2026-08-28T06:32:26.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "coca",
+    "pytorch",
+    "retrieval",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 24832,
+  "parameters_human": "24832",
+  "storage_bytes": 99808,
+  "storage_human": "99808 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "notebooklm.google.com",
+      "url": "https://notebooklm.google.com/?authuser=1",
+      "snippet": "NotebookLM is an AI-powered tool for summarizing, organizing, and interacting with notes and information from various sources."
+    },
+    {
+      "title": "Ivanmikhailov (Николай Лебедев) - Hugging Face",
+      "url": "https://huggingface.co/Ivanmikhailov",
+      "snippet": "Backend engineer learning ML on weekends"
+    },
+    {
+      "title": "Claude",
+      "url": "https://claude.com/",
+      "snippet": "Claude is an artificial intelligence, trained by Anthropic using Constitutional AI to be safe, accurate, and secure — the trusted assistant for you to do your best work."
+    },
+    {
+      "title": "Hugging Face - The AI community building the future.",
+      "url": "https://huggingface.co/",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Perplexity AI",
+      "url": "https://www.perplexity.ai/",
+      "snippet": "Perplexity is a free AI-powered answer engine that provides accurate, trusted, and real-time answers to any question."
+    }
+  ]
+}

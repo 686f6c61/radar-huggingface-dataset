@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "darkneighbor667/Huihui-Qwen3.8-27B-abliterated",
+  "slug": "darkneighbor667-huihui-qwen3-8-27b-abliterated",
+  "author": "darkneighbor667",
+  "url": "https://huggingface.co/darkneighbor667/Huihui-Qwen3.8-27B-abliterated",
+  "created_at": "2026-08-28T01:13:06.000Z",
+  "updated_at": "2026-08-28T02:43:45.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_5",
+    "image-text-to-text",
+    "abliterated",
+    "uncensored",
+    "huihui",
+    "qwen3",
+    "conversational",
+    "base_model:Qwen/Qwen3.8-27B",
+    "base_model:finetune:Qwen/Qwen3.8-27B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 27781427952,
+  "parameters_human": "27.78B",
+  "storage_bytes": 55575815536,
+  "storage_human": "55.6 GB",
+  "base_model": "Qwen/Qwen3.8-27B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "darkneighbor667/Huihui-Qwen3.8-27B-abliterated · Hugging Face",
+      "url": "https://huggingface.co/darkneighbor667/Huihui-Qwen3.8-27B-abliterated",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "huihui-ai/Huihui-Qwen3.8-27B-abliterated · Hugging Face",
+      "url": "https://huggingface.co/huihui-ai/Huihui-Qwen3.8-27B-abliterated",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "huihui_ai/Qwen3.8-abliterated",
+      "url": "https://ollama.com/huihui_ai/Qwen3.8-abliterated",
+      "snippet": "Qwen3.8 delivers substantial gains across coding, professional work, research, and long-horizon agentic tasks."
+    },
+    {
+      "title": "Huihui Qwen3.8 27B Abliterated by huihui-ai - LLM Explorer",
+      "url": "https://llm-explorer.com/model/huihui-ai%2FHuihui-Qwen3.8-27B-abliterated,7yiXfSP5itojtujYtkbmXj",
+      "snippet": "Rank the Huihui Qwen3.8 27B Abliterated capabilities Have you tried this model? Rate its performance — this feedback helps the ML community find the right model for their needs."
+    },
+    {
+      "title": "Huihui-Qwen3.8-27B-abliterated launches as an uncensored AI model for free",
+      "url": "https://vgtimes.com/tech-and-hardware/164540-huihui-qwen3.8-27b-abliterated-launches-as-an-uncensored-ai-model-for-free.html",
+      "snippet": "The model also supports thinking mode, accepts both text and images, and offers a 262,000-token context window. It can be run through Ollama with the command `ollama run huihui_ai/Qwen3.8-abliterated`. For deployment, the card recommends using the latest version of Ollama, and the model is also listed on Ollama as another place to try it."
+    }
+  ]
+}

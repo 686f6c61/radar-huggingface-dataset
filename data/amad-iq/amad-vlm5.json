@@ -1,0 +1,105 @@
+{
+  "schema": 1,
+  "id": "amad-iq/amad-vlm5",
+  "slug": "amad-iq-amad-vlm5",
+  "author": "amad-iq",
+  "url": "https://huggingface.co/amad-iq/amad-vlm5",
+  "created_at": "2026-08-28T08:13:34.000Z",
+  "updated_at": "2026-08-28T08:37:57.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [
+    "ar",
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen2_5_vl",
+    "image-text-to-text",
+    "ocr",
+    "arabic",
+    "arabic-ocr",
+    "handwriting-recognition",
+    "document-understanding",
+    "vision-language",
+    "qwen2.5-vl",
+    "gguf",
+    "thinking",
+    "conversational",
+    "ar",
+    "en",
+    "base_model:Qwen/Qwen2.5-VL-7B-Instruct",
+    "base_model:finetune:Qwen/Qwen2.5-VL-7B-Instruct",
+    "license:apache-2.0",
+    "model-index",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 8292166656,
+  "parameters_human": "8.29B",
+  "storage_bytes": 16595836004,
+  "storage_human": "16.6 GB",
+  "base_model": "Qwen/Qwen2.5-VL-7B-Instruct",
+  "formats": [
+    "gguf",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "Arabic OCR",
+      "dataset": "KITAB-Bench ocr-eval",
+      "metric": "CER (macro, 13 datasets)",
+      "value": 0.25
+    },
+    {
+      "task": "Arabic OCR",
+      "dataset": "KITAB-Bench ocr-eval",
+      "metric": "WER (macro, 13 datasets)",
+      "value": 0.36
+    },
+    {
+      "task": "Arabic OCR",
+      "dataset": "KITAB-Bench ocr-eval",
+      "metric": "CHrF (macro, 13 datasets)",
+      "value": 81.05
+    }
+  ],
+  "sources": [
+    {
+      "title": "LLM Leaderboard - Comparison of AI models from OpenAI, Anthropic ...",
+      "url": "https://artificialanalysis.ai/leaderboards/models",
+      "snippet": "Comparison and ranking the performance of over 250 AI models (LLMs) across key metrics including intelligence, price, performance and speed (output speed - tokens per second & latency - TTFT), context window & others."
+    },
+    {
+      "title": "AI IQ | The AI Intelligence Leaderboard & Benchmark Charts",
+      "url": "https://www.aiiq.org/",
+      "snippet": "AI IQ ranks leading AI models by estimated IQ, EQ, speed, and effective cost using source-backed benchmark data and interactive leaderboard charts."
+    },
+    {
+      "title": "GitHub - AMD-AGI/AMD-EfficientVLM · GitHub",
+      "url": "https://github.com/AMD-AGI/AMD-EfficientVLM",
+      "snippet": "Introducing the AMD-EfficientVLM (Vision-Language Model) ⚡️ This repository provides training recipes for the AMD efficient vision-language models, which are designed to improve the inference efficiency of VLM."
+    },
+    {
+      "title": "Comparison of AI Models across Intelligence, Performance, and Price ...",
+      "url": "https://artificialanalysis.ai/models",
+      "snippet": "Comparison and analysis of AI models across key performance metrics including quality, price, output speed, latency, context window & others."
+    },
+    {
+      "title": "GLM-5V-Turbo - Overview - Z.AI DEVELOPER DOCUMENT",
+      "url": "https://docs.z.ai/guides/vlm/glm-5v-turbo",
+      "snippet": "GLM-5V-Turbo is Z.AI&#x27;s first multimodal coding foundation model, built for vision-based coding tasks. It can natively process multimodal inputs such as images, video, and text, while also excelling at long-horizon planning, complex coding, and action execution."
+    }
+  ]
+}

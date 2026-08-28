@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "Unded-17/netsentinel-models",
+  "slug": "unded-17-netsentinel-models",
+  "author": "Unded-17",
+  "url": "https://huggingface.co/Unded-17/netsentinel-models",
+  "created_at": "2026-08-28T07:50:13.000Z",
+  "updated_at": "2026-08-28T07:56:58.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "onnx",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 52168705,
+  "storage_human": "52 MB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Unded-17 (Unded) - Hugging Face",
+      "url": "https://huggingface.co/Unded-17",
+      "snippet": "Monke Saliva 🐠 ai model for traing resumes for unbaised decision using lora Unded-17 Apr 27 Sleeping Agents"
+    },
+    {
+      "title": "VishnuThurvas/NetSentinel---AI_PCAP_ANALYZER - GitHub",
+      "url": "https://github.com/VishnuThurvas/NetSentinel---AI_PCAP_ANALYZER",
+      "snippet": "NetSentinel AI NetSentinel AI is a modular Flask cybersecurity project for PCAP analysis, CICIDS2017-based machine learning, behavioural detection, threat intelligence enrichment, Gemini-assisted summaries, and PDF forensic reports."
+    },
+    {
+      "title": "NetSentinel AI - Network Anomaly Detection + AI Explanation - GitHub",
+      "url": "https://github.com/Surajvinaykumar/NetSentinal-AI",
+      "snippet": "NetSentinel AI - Network Anomaly Detection + AI Explanation An end-to-end Python project that detects anomalies in network traffic using an Isolation Forest model and explains suspicious logs using a Hugging Face LLM (zephyr-7b-beta)."
+    },
+    {
+      "title": "PDF NetSentinel: An AI-Based Real-Time Intrusion Detection and Automated ...",
+      "url": "https://ijrpr.com/uploads/V7ISSUE5/IJRPR64778.pdf",
+      "snippet": "The third paper explored using large language models with in-context learning for network intrusion detection in wireless application contexts, providing a small set of labelled examples directly in the model&#x27;s context window rather than performing gradient-based fine-tuning."
+    },
+    {
+      "title": "NetSentinel Central Management",
+      "url": "https://netsenapp.com/ml-models",
+      "snippet": "Data Collection - Every scan with AI analysis automatically collects training data Minimum Threshold - When enough data is collected (50+ vulnerability samples, 10+ network patterns) Auto-Training - Models are automatically trained from the collected data Model Storage - Trained models saved to central server for distribution Vulnerability Samples-"
+    }
+  ]
+}

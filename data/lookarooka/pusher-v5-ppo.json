@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "lookarooka/pusher-v5-ppo",
+  "slug": "lookarooka-pusher-v5-ppo",
+  "author": "lookarooka",
+  "url": "https://huggingface.co/lookarooka/pusher-v5-ppo",
+  "created_at": "2026-08-28T01:17:56.000Z",
+  "updated_at": "2026-08-28T01:18:01.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "reinforcement-learning",
+  "library": "stable-baselines3",
+  "languages": [
+    "en",
+    "ko"
+  ],
+  "tags": [
+    "stable-baselines3",
+    "reinforcement-learning",
+    "ppo",
+    "gymnasium",
+    "mujoco",
+    "pusher-v5",
+    "robotics",
+    "physical-ai",
+    "7-dof-robot-arm",
+    "en",
+    "ko",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 67779,
+  "storage_human": "67779 B",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "lookarooka/pusher-v5-ppo · Hugging Face",
+      "url": "https://huggingface.co/lookarooka/pusher-v5-ppo",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "hwihwalab/pusher-v5-ppo · Hugging Face",
+      "url": "https://huggingface.co/hwihwalab/pusher-v5-ppo",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GitHub - Hwihwa-Lab/pusher-v5-ppo",
+      "url": "https://github.com/Hwihwa-Lab/pusher-v5-ppo",
+      "snippet": "This repository contains an advanced continuous deep reinforcement learning system (PPO) and a real-time engineering telemetry cockpit for 7-DOF robotic arm manipulation in Gymnasium MuJoCo Pusher-v5."
+    },
+    {
+      "title": "pusher-v5-ppo/README.md at main · Hwihwa-Lab/pusher-v5-ppo · GitHub",
+      "url": "https://github.com/Hwihwa-Lab/pusher-v5-ppo/blob/main/README.md",
+      "snippet": "This repository contains an advanced continuous deep reinforcement learning system (PPO) and a real-time engineering telemetry cockpit for 7-DOF robotic arm manipulation in Gymnasium MuJoCo Pusher-v5."
+    },
+    {
+      "title": "Pusher - Gymnasium Documentation",
+      "url": "https://gymnasium.farama.org/environments/mujoco/pusher/",
+      "snippet": "\"Pusher\" is a multi-jointed robot arm that is very similar to a human arm. The goal is to move a target cylinder (called object) to a goal position using the robot&#x27;s end effector (called fingertip)."
+    }
+  ]
+}

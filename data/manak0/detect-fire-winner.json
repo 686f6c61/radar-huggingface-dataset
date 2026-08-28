@@ -5,7 +5,7 @@
   "author": "manak0",
   "url": "https://huggingface.co/manak0/Detect-fire-winner",
   "created_at": "2026-05-13T12:07:06.000Z",
-  "updated_at": "2026-08-26T12:14:12.000Z",
+  "updated_at": "2026-08-27T12:14:16.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": null,
@@ -26,8 +26,8 @@
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
-  "storage_bytes": 326869727,
-  "storage_human": "327 MB",
+  "storage_bytes": 336604626,
+  "storage_human": "337 MB",
   "base_model": null,
   "formats": [
     "onnx"

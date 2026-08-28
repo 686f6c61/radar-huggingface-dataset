@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "McGill-NLP/TLM-100M",
+  "slug": "mcgill-nlp-tlm-100m",
+  "author": "McGill-NLP",
+  "url": "https://huggingface.co/McGill-NLP/TLM-100M",
+  "created_at": "2026-08-28T10:26:09.000Z",
+  "updated_at": "2026-08-28T10:26:14.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gpt_neo",
+    "tiered-alignment",
+    "text-generation",
+    "en",
+    "dataset:HuggingFaceFW/fineweb",
+    "arxiv:2504.11393",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 98993137,
+  "parameters_human": "99.0M",
+  "storage_bytes": 395995140,
+  "storage_human": "396 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "McGill Natural Language Processing - McGill NLP",
+      "url": "https://mcgill-nlp.github.io/",
+      "snippet": "McGill NLP is a research group within McGill University and Mila focusing on various topics in natural language processing."
+    },
+    {
+      "title": "McGill-NLP (McGill NLP Group) - Hugging Face",
+      "url": "https://huggingface.co/McGill-NLP",
+      "snippet": "McGill-NLP/TLM-650M ... AfriqueLLM: How Data Mixing and Model Architecture Impact Continued Pre-training for African Languages ... McGill-NLP/AfriqueQwen-14B ... McGill-NLP/AfriqueQwen-8B ... McGill-NLP/AfriqueQwen3.5-4B-50Langs Text Generation • 5B • Updated about 11 hours ago • 2 Tiered Language Models"
+    },
+    {
+      "title": "GitHub - McGill-NLP/tiered-language-models",
+      "url": "https://github.com/McGill-NLP/tiered-language-models",
+      "snippet": "A TLM is a single set of weights that supports two (or more) computation graphs over the same parameters. A compact secret key specifies a permutation over a small parameter subset (about 5% of total parameters): without the key the model runs in its public configuration, and with the key it runs in a keyed configuration that exposes additional ..."
+    },
+    {
+      "title": "McGill NLP - GitHub",
+      "url": "https://github.com/McGill-NLP/",
+      "snippet": "McGill NLP Research group within McGill University and Mila focusing on various topics in natural language processing."
+    },
+    {
+      "title": "McGill-NLP (McGill NLP Group) - Hugging Face",
+      "url": "https://huggingface.co/McGill-NLP/papers",
+      "snippet": "computational linguistics, natural language processing JessicaOjo new activity 19 days ago"
+    }
+  ]
+}

@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "Exile051112/franka-pico4-pi0-c1-red-yellow-real",
+  "slug": "exile051112-franka-pico4-pi0-c1-red-yellow-real",
+  "author": "Exile051112",
+  "url": "https://huggingface.co/Exile051112/franka-pico4-pi0-c1-red-yellow-real",
+  "created_at": "2026-08-28T09:07:50.000Z",
+  "updated_at": "2026-08-28T09:09:44.000Z",
+  "license": "gemma",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "pi0",
+    "peft",
+    "lora",
+    "base_model:lerobot/pi0_base",
+    "base_model:adapter:lerobot/pi0_base",
+    "license:gemma",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 40178551,
+  "storage_human": "40 MB",
+  "base_model": "lerobot/pi0_base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Civitai | Discover and Create AI Art",
+      "url": "https://civitai.red/",
+      "snippet": "Explore thousands of free Stable Diffusion & Flux models, create and share AI-generated art, and join the world&#x27;s largest community of generative AI creators."
+    },
+    {
+      "title": "AI Models | Civitai",
+      "url": "https://civitai.com/models",
+      "snippet": "Browse thousands of free Stable Diffusion & Flux models, LoRAs, checkpoints, and embeddings. The largest collection of AI image generation resources."
+    },
+    {
+      "title": "GitHub - Improbable-AI/aiofranka: A python library for controlling ...",
+      "url": "https://github.com/Improbable-AI/aiofranka",
+      "snippet": "A python library for controlling Franka robots using the official pylibfranka package as a control interface with Franka, and mujoco as kinematics/dynamics model, based on asyncio. - Improbable-AI/..."
+    },
+    {
+      "title": "GitHub - jinruih2/Awesome-Robot-Foundation-Models-2025-2026",
+      "url": "https://github.com/jinruih2/Awesome-Robot-Foundation-Models-2025-2026",
+      "snippet": "A curated list of 90+ robot foundation models released in 2025 and 2026, organized by category. Covers Vision-Language-Action (VLA) models, world models, humanoid foundation models, locomotion, navigation, manipulation policies, and more."
+    },
+    {
+      "title": "Available Environments — Isaac Lab Documentation",
+      "url": "https://isaac-sim.github.io/IsaacLab/main/source/overview/environments.html",
+      "snippet": "Available Environments # The following lists comprises of all the RL and IL tasks implementations that are available in Isaac Lab. While we try to keep this list up-to-date, you can always get the latest list of environments by running the following command:"
+    }
+  ]
+}

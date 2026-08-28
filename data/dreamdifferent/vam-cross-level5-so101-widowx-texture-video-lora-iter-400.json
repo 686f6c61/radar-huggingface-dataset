@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "dreamdifferent/vam-cross-level5-so101-widowx-texture-video-lora-iter-400",
+  "slug": "dreamdifferent-vam-cross-level5-so101-widowx-texture-video-lora-iter-400",
+  "author": "dreamdifferent",
+  "url": "https://huggingface.co/dreamdifferent/vam-cross-level5-so101-widowx-texture-video-lora-iter-400",
+  "created_at": "2026-08-28T10:06:09.000Z",
+  "updated_at": "2026-08-28T10:07:18.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "robotics",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "mimic-video",
+    "video-generation",
+    "lora",
+    "robotics",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 3707437850,
+  "storage_human": "3.7 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "dreamdifferent (dreamdifferent) - Hugging Face",
+      "url": "https://huggingface.co/dreamdifferent/datasets",
+      "snippet": "Org profile for dreamdifferent on Hugging Face, the AI community building the future."
+    },
+    {
+      "title": "Google Gemini",
+      "url": "https://gemini.google.com/",
+      "snippet": "Meet Gemini, Google&#x27;s AI assistant. Get help with writing, planning, brainstorming, and more. Experience the power of generative AI."
+    },
+    {
+      "title": "dreamdifferent/vam-cross-level5-kuka-iiwa14-widowx-texture ...",
+      "url": "https://huggingface.co/dreamdifferent/vam-cross-level5-kuka-iiwa14-widowx-texture-teleopaligned-videolora400-action-decoder-iter1800",
+      "snippet": "dreamdifferent / vam-cross-level5-kuka-iiwa14-widowx-texture-teleopaligned-videolora400-action-decoder-iter1800 like 0 Follow dreamdifferent 4 Robotics mimic-video action-prediction Model card FilesFiles and versions xet Community Copy to bucket new VAM-Cross MimicVideo World2Action decoder Required frozen inputs Action and data contract"
+    },
+    {
+      "title": "YouTube",
+      "url": "https://www.youtube.com/feed",
+      "snippet": "AboutPressCopyrightContact usCreatorsAdvertiseDevelopersTermsPrivacyPolicy & SafetyHow YouTube worksTest new featuresNFL Sunday Ticket © 2026 Google LLC"
+    },
+    {
+      "title": "Luma Dream Machine — AI Video Generator",
+      "url": "https://www.lumadreammachine.app/",
+      "snippet": "Luma Dream Machine is the AI video generator powered by Dream Machine AI. Turn text to video or image to video with stunning cinematic quality — free to start, no skills needed."
+    }
+  ]
+}

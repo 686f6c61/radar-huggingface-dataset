@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "chukanov/whisper-podlodka-turbo-mlx",
+  "slug": "chukanov-whisper-podlodka-turbo-mlx",
+  "author": "chukanov",
+  "url": "https://huggingface.co/chukanov/whisper-podlodka-turbo-mlx",
+  "created_at": "2026-08-28T05:23:07.000Z",
+  "updated_at": "2026-08-28T05:23:50.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "automatic-speech-recognition",
+  "library": "mlx",
+  "languages": [
+    "ru"
+  ],
+  "tags": [
+    "mlx",
+    "whisper",
+    "automatic-speech-recognition",
+    "apple-silicon",
+    "russian",
+    "ru",
+    "base_model:bond005/whisper-podlodka-turbo",
+    "base_model:finetune:bond005/whisper-podlodka-turbo",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1613978157,
+  "storage_human": "1.6 GB",
+  "base_model": "bond005/whisper-podlodka-turbo",
+  "formats": [
+    "mlx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "bond005/whisper-podlodka-turbo · Hugging Face",
+      "url": "https://huggingface.co/bond005/whisper-podlodka-turbo",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "README.md · bond005/whisper-podlodka-turbo at main",
+      "url": "https://huggingface.co/bond005/whisper-podlodka-turbo/blob/main/README.md",
+      "snippet": "Model Description Whisper-Podlodka-Turbo is a new fine-tuned version of Whisper-Large-V3-Turbo, optimized for high-quality Russian speech recognition with proper punctuation + capitalization and enhanced with noise resistance capability."
+    },
+    {
+      "title": "GitHub - sergheinenov/whisper-podlodka-turbo-ggml",
+      "url": "https://github.com/sergheinenov/whisper-podlodka-turbo-ggml",
+      "snippet": "Quantized ggml build of bond005/whisper-podlodka-turbo (Apache-2.0). This repository is intended to host a GitHub release so the model can be downloaded worldwide without relying on Hugging Face mirrors."
+    },
+    {
+      "title": "GitHub - holodnsk/whisper_turbo: Robust Speech Recognition via Large ...",
+      "url": "https://github.com/holodnsk/whisper_turbo",
+      "snippet": "Whisper is a general-purpose speech recognition model. It is trained on a large dataset of diverse audio and is also a multitasking model that can perform multilingual speech recognition, speech translation, and language identification."
+    },
+    {
+      "title": "whisper-podlodka-turbo API & Inference Endpoint | FriendliAI",
+      "url": "https://friendli.ai/models/bond005/whisper-podlodka-turbo",
+      "snippet": "Deploy whisper-podlodka-turbo with low-latency inference on FriendliAI. Get scalable API serving, high throughput, and production-grade reliability for AI agents."
+    }
+  ]
+}

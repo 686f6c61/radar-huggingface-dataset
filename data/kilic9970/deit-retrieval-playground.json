@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "kilic9970/deit-retrieval-playground",
+  "slug": "kilic9970-deit-retrieval-playground",
+  "author": "kilic9970",
+  "url": "https://huggingface.co/kilic9970/deit-retrieval-playground",
+  "created_at": "2026-08-28T06:16:22.000Z",
+  "updated_at": "2026-08-28T06:16:31.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "deit",
+    "pytorch",
+    "retrieval",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 33088,
+  "parameters_human": "33088",
+  "storage_bytes": 132832,
+  "storage_human": "132832 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "kilic9970 (Mehmet R. Kilic) - Hugging Face",
+      "url": "https://huggingface.co/kilic9970",
+      "snippet": "datasets1 kilic9970/dataset_039616793_art_image_audio Updated about 7 hours ago• 5"
+    },
+    {
+      "title": "Model Playground AI",
+      "url": "https://modelplayground.ai/",
+      "snippet": "Compare and evaluate different AI models side by side. 150+ models. 1 subscription. 0 markup."
+    },
+    {
+      "title": "ModelsLab Playground - Explore & Test AI Models",
+      "url": "https://modelslab.com/playground",
+      "snippet": "Experiment with AI models in the ModelsLab Playground. Generate images, text, audio, and more in an interactive developer environment."
+    },
+    {
+      "title": "Cloudflare - AI Playground",
+      "url": "https://playground.ai.cloudflare.com/",
+      "snippet": "Explore the Workers AI LLM Playground to experiment with large language models using Cloudflare&#x27;s innovative platform."
+    },
+    {
+      "title": "Free AI Playground - UntrainedModel",
+      "url": "https://untrainedmodel.xyz/playground",
+      "snippet": "Access top-tier AI models for free. Generate code, write content, and experiment without limits."
+    }
+  ]
+}

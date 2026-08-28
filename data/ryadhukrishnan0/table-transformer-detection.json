@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "ryadhukrishnan0/table-transformer-detection",
+  "slug": "ryadhukrishnan0-table-transformer-detection",
+  "author": "ryadhukrishnan0",
+  "url": "https://huggingface.co/ryadhukrishnan0/table-transformer-detection",
+  "created_at": "2026-08-28T07:10:14.000Z",
+  "updated_at": "2026-08-28T07:10:14.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "pytorch",
+    "safetensors",
+    "table-transformer",
+    "arxiv:2110.00061",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 28818631,
+  "parameters_human": "28.8M",
+  "storage_bytes": 577094646,
+  "storage_human": "577 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - microsoft/table-transformer: Table Transformer (TATR) is a ...",
+      "url": "https://github.com/microsoft/table-transformer",
+      "snippet": "Table Transformer (TATR) A deep learning model based on object detection for extracting tables from PDFs and images. First proposed in \"PubTables-1M: Towards comprehensive table extraction from unstructured documents\". This repository also contains the official code for these papers: \"GriTS: Grid table similarity metric for table structure ..."
+    },
+    {
+      "title": "microsoft/table-transformer-detection · Hugging Face",
+      "url": "https://huggingface.co/microsoft/table-transformer-detection",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "microsoft/table-transformer-detection at main - Hugging Face",
+      "url": "https://huggingface.co/microsoft/table-transformer-detection/tree/main",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "transformers/docs/source/en/model_doc/table-transformer.md at main ...",
+      "url": "https://github.com/huggingface/transformers/blob/main/docs/source/en/model_doc/table-transformer.md",
+      "snippet": "The Table Transformer model was proposed in PubTables-1M: Towards comprehensive table extraction from unstructured documents by Brandon Smock, Rohith Pesala, Robin Abraham. The authors introduce a new dataset, PubTables-1M, to benchmark progress in table extraction from unstructured documents, as well as table structure recognition and functional analysis. The authors train 2 DETR models, one ..."
+    },
+    {
+      "title": "table-transformer-detection: Image-to-Image model — overview, use cases ...",
+      "url": "https://www.aimodels.fyi/models/huggingFace/table-transformer-detection-microsoft",
+      "snippet": "A: This model detects table locations and returns bounding boxes; the table-transformer-structure-recognition model parses cell boundaries and structure within detected tables. Use both in sequence: detection first to localize tables, then structure recognition on cropped table regions. Q: What image resolutions does this model handle?"
+    }
+  ]
+}

@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "suman-kalavagunta/chess-coach-lora-v6",
+  "slug": "suman-kalavagunta-chess-coach-lora-v6",
+  "author": "suman-kalavagunta",
+  "url": "https://huggingface.co/suman-kalavagunta/chess-coach-lora-v6",
+  "created_at": "2026-08-28T06:40:43.000Z",
+  "updated_at": "2026-08-28T06:40:46.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 92214772,
+  "storage_human": "92 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "suman-kalavagunta/chess-coach-lora-v5 · Hugging Face",
+      "url": "https://huggingface.co/suman-kalavagunta/chess-coach-lora-v5",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "suman-kalavagunta/chess-coach-lora-v5 at main - Hugging Face",
+      "url": "https://huggingface.co/suman-kalavagunta/chess-coach-lora-v5/tree/main",
+      "snippet": "suman-kalavagunta / chess-coach-lora-v5 like 0 Safetensors Model card FilesFiles and versions xet Community Deploy Copy to bucket new main chess-coach-lora-v5 92.2 MB Ctrl+K Ctrl+K 1 contributor History:8 commits suman-kalavagunta Upload handler.py 318bd9e verified3 days ago .gitattributes Safe 1.57 kBUpload tokenizer3 days ago README.md 656 ..."
+    },
+    {
+      "title": "suman-kalavagunta (Suman Kalavagunta) - Hugging Face",
+      "url": "https://huggingface.co/suman-kalavagunta",
+      "snippet": "User profile of Suman Kalavagunta on Hugging Face"
+    },
+    {
+      "title": "suman-kalavagunta (Suman Kalavagunta) - Hugging Face",
+      "url": "https://huggingface.co/suman-kalavagunta/datasets",
+      "snippet": "AI & ML interests ... Organizations None yet suman-kalavagunta &#x27;s datasets 1 Sort: Recently updated"
+    },
+    {
+      "title": "suman-kalavagunta/chess-coach-lora-v5 · Discussions",
+      "url": "https://huggingface.co/suman-kalavagunta/chess-coach-lora-v5/discussions",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    }
+  ]
+}

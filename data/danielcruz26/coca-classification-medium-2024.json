@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "danielcruz26/coca-classification-medium-2024",
+  "slug": "danielcruz26-coca-classification-medium-2024",
+  "author": "danielcruz26",
+  "url": "https://huggingface.co/danielcruz26/coca-classification-medium-2024",
+  "created_at": "2026-08-28T10:09:17.000Z",
+  "updated_at": "2026-08-28T10:09:25.000Z",
+  "license": "bsd-3-clause",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "coca",
+    "pytorch",
+    "classification",
+    "license:bsd-3-clause",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 24832,
+  "parameters_human": "24832",
+  "storage_bytes": 99808,
+  "storage_human": "99808 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "danielcruz26 (Daniel) - Hugging Face",
+      "url": "https://huggingface.co/danielcruz26",
+      "snippet": "User profile of Daniel on Hugging Face"
+    },
+    {
+      "title": "Best AI Models: April + May 2026 Leaderboard (GPT-5.5, Claude Opus 4.7 ...",
+      "url": "https://www.buildfastwithai.com/blogs/best-ai-models-may-2026-leaderboard",
+      "snippet": "The Leaderboard by Task There is no universally best AI model in April-May 2026. There is a clear winner for almost every specific task. Use this table as your decision framework. The AI Video Generation Race: HappyHorse Changes Everything Four of the top five AI video models by Elo score are Chinese-built. OpenAI shuttered Sora in March 2026. If you&#x27;re building a video product in 2026, your ..."
+    },
+    {
+      "title": "Open LLM Leaderboard 2026 - Compare Open Source LLM Rankings",
+      "url": "https://llm-stats.com/leaderboards/open-llm-leaderboard",
+      "snippet": "Compare the best open source LLMs in the open LLM leaderboard with LLM rankings, pricing, speed, context windows, and benchmark scores."
+    },
+    {
+      "title": "COCO Detection Dataset | Ultralytics",
+      "url": "https://docs.ultralytics.com/datasets/detect/coco",
+      "snippet": "Explore the COCO dataset for object detection and segmentation. Learn about its structure, usage, pretrained models, and key features."
+    },
+    {
+      "title": "LLM Leaderboard - Comparison of AI models from OpenAI, Anthropic ...",
+      "url": "https://artificialanalysis.ai/leaderboards/models",
+      "snippet": "Comparison and ranking the performance of over 250 AI models (LLMs) across key metrics including intelligence, price, performance and speed (output speed - tokens per second & latency - TTFT), context window & others."
+    }
+  ]
+}

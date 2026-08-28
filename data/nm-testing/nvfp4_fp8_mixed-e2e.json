@@ -5,7 +5,7 @@
   "author": "nm-testing",
   "url": "https://huggingface.co/nm-testing/nvfp4_fp8_mixed-e2e",
   "created_at": "2026-07-25T05:30:13.000Z",
-  "updated_at": "2026-08-26T21:42:03.000Z",
+  "updated_at": "2026-08-28T04:29:11.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": null,
@@ -18,12 +18,12 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 382,
+  "downloads_30d": 373,
   "trending_score": 0,
   "parameters": 742483968,
   "parameters_human": "742.5M",
-  "storage_bytes": 41332722120,
-  "storage_human": "41.3 GB",
+  "storage_bytes": 44088236928,
+  "storage_human": "44.1 GB",
   "base_model": null,
   "formats": [
     "safetensors"

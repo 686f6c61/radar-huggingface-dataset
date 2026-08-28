@@ -5,7 +5,7 @@
   "author": "aday777",
   "url": "https://huggingface.co/aday777/Qwen3.8-27B-ARA-abliterated-NVFP4-MTP",
   "created_at": "2026-08-15T06:32:33.000Z",
-  "updated_at": "2026-08-15T06:33:43.000Z",
+  "updated_at": "2026-08-27T22:33:34.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "image-text-to-text",
@@ -30,7 +30,7 @@
     "region:us"
   ],
   "likes": 2,
-  "downloads_30d": 5774,
+  "downloads_30d": 5798,
   "trending_score": 0,
   "parameters": 16703361232,
   "parameters_human": "16.70B",

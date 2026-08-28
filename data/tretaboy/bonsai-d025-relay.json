@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "Tretaboy/bonsai-d025-relay",
+  "slug": "tretaboy-bonsai-d025-relay",
+  "author": "Tretaboy",
+  "url": "https://huggingface.co/Tretaboy/bonsai-d025-relay",
+  "created_at": "2026-08-24T15:42:59.000Z",
+  "updated_at": "2026-08-28T10:32:23.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "qwen3",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 15,
+  "trending_score": 0,
+  "parameters": 1720574976,
+  "parameters_human": "1.72B",
+  "storage_bytes": 6893793242,
+  "storage_human": "6.9 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - deepgrove-ai/Bonsai",
+      "url": "https://github.com/deepgrove-ai/Bonsai",
+      "snippet": "Bonsai is a small 500 million parameter ternary weight language model trained by deepgrove. Bonsai adopts the Llama architecture and Mistral tokenizer following Danube 3, with modified linear layers to support ternary weights. The model has been trained primarily using DCLM-Pro and Fineweb-Edu. Bonsai marks a new paradigm of efficiency, being trained in less than 5 billion tokens."
+    },
+    {
+      "title": "Introducing Ternary Bonsai: Top Intelligence at 1.58 Bits",
+      "url": "https://prismml.com/news/ternary-bonsai",
+      "snippet": "Today, we&#x27;re announcing Ternary Bonsai, a new family of 1.58-bit language models designed to balance strict memory constraints with high accuracy requirements."
+    },
+    {
+      "title": "AIBooru: AI Art Imageboard",
+      "url": "https://aibooru.online/",
+      "snippet": "AIBooru is the first booru for AI-generated images. Search for AI-generated anime pictures categorized by thousands of tags."
+    },
+    {
+      "title": "GitHub - PrismML-Eng/Bonsai-demo: Bonsai Demo · GitHub",
+      "url": "https://github.com/PrismML-Eng/Bonsai-demo/",
+      "snippet": "The family&#x27;s newest and largest generation, and its first vision-language models (Bonsai 27B collection): Vision: send photos, screenshots, and PDFs; ask about them (see VISION.md). Agentic tool calling: native OpenAI-style tool_calls with full round-trips, plus MCP servers in both demo UIs (see TOOLS.md). Thinking: a reasoning model; pick the reasoning effort per chat in the UI or budget it ..."
+    },
+    {
+      "title": "Bonsai 27B - Bonsai",
+      "url": "https://docs.prismml.com/models/bonsai-27b",
+      "snippet": "Bonsai 27B is the largest multimodal model in the family: it accepts vision input alongside text. It is based on Qwen3.6 27B. Like every Bonsai, the language model is quantized end-to-end 1-bit or ternary weights across embeddings, attention, MLPs, and the LM head. The vision tower is handled separately, at 4-bit."
+    }
+  ]
+}

@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "tencent/Hy4-preview",
+  "slug": "tencent-hy4-preview",
+  "author": "tencent",
+  "url": "https://huggingface.co/tencent/Hy4-preview",
+  "created_at": "2026-08-27T08:52:40.000Z",
+  "updated_at": "2026-08-28T06:10:27.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "hy_v4",
+    "text-generation",
+    "hunyuan",
+    "hy4",
+    "moe",
+    "conversational",
+    "arxiv:2512.02556",
+    "arxiv:2603.12201",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 176,
+  "downloads_30d": 0,
+  "trending_score": 176,
+  "parameters": 779960992733,
+  "parameters_human": "779.96B",
+  "storage_bytes": 1560008337568,
+  "storage_human": "1560.0 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "tencent/Hy4-preview · Hugging Face",
+      "url": "https://huggingface.co/tencent/Hy4-preview",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GitHub - Tencent-Hunyuan/Hy4-preview",
+      "url": "https://github.com/Tencent-Hunyuan/Hy4-preview",
+      "snippet": "Hy4 preview is a new-generation Mixture-of-Experts (MoE) flagship model developed by the Tencent Hy Team. The model comprises 770B total parameters, of which 49B are activated per token. The backbone consists of 78 layers, where the first layer uses a standard dense FFN and the remaining 77 layers replace it with MoE, each containing 256 routed experts and 1 shared expert; every token ..."
+    },
+    {
+      "title": "Introducing Hy4 preview - hy.tencent.ai",
+      "url": "https://hy.tencent.ai/research/hy4-preview",
+      "snippet": "A new flagship generation We scaled Hy4 preview on three fronts: model size, context length, and training data. Stronger pre-training and a substantially larger post-training run compound into another step change in capability — the largest generation-over-generation gain we&#x27;ve measured, and enough to put Hy4 preview at the open-source frontier."
+    },
+    {
+      "title": "tencent/Hy4-preview | vLLM Recipes - recipes.vllm.ai",
+      "url": "https://recipes.vllm.ai/tencent/Hy4-preview",
+      "snippet": "Hy4-preview Usage Guide Hy4-preview is Tencent Hunyuan&#x27;s new-generation open-source Mixture-of-Experts language model. Its backbone has 770B total parameters with 49B activated per token across 78 layers. The first layer uses a dense FFN; the other 77 layers use 256 routed experts (top-8) and 1 shared expert."
+    },
+    {
+      "title": "Tencent Hunyuan Releases Hy4 Preview AI Model | Phemex News",
+      "url": "https://phemex.com/news/article/tencent-hunyuan-unveils-hy4-preview-with-770b-parameters-94831",
+      "snippet": "Tencent Hunyuan has released Hy4 preview, a new model with 770 billion total parameters, 49 billion activated parameters and a 1 million-token context window. The company said the model shows strong performance in real-world productivity tasks including coding, office work and scientific applications."
+    }
+  ]
+}

@@ -1,0 +1,79 @@
+{
+  "schema": 1,
+  "id": "axetechnologies/analyst-0.6b",
+  "slug": "axetechnologies-analyst-0-6b",
+  "author": "axetechnologies",
+  "url": "https://huggingface.co/axetechnologies/analyst-0.6b",
+  "created_at": "2026-08-28T05:33:10.000Z",
+  "updated_at": "2026-08-28T05:36:01.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "mlx",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "qwen3",
+    "fine-tuned",
+    "consulting",
+    "routing",
+    "tool-calling",
+    "edge",
+    "apple-silicon",
+    "on-device",
+    "text-generation",
+    "conversational",
+    "en",
+    "base_model:Qwen/Qwen3-0.6B",
+    "base_model:finetune:Qwen/Qwen3-0.6B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 596049920,
+  "parameters_human": "596.0M",
+  "storage_bytes": 1203557585,
+  "storage_human": "1.2 GB",
+  "base_model": "Qwen/Qwen3-0.6B",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "axetechnologies/imi-0-6b · Hugging Face",
+      "url": "https://huggingface.co/axetechnologies/imi-0-6b",
+      "snippet": "Instructions to use axetechnologies/imi--6b with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Libraries MLX How to use axetechnologies/imi--6b with MLX:"
+    },
+    {
+      "title": "axetechnologies (AXe Technologies) - Hugging Face",
+      "url": "https://huggingface.co/axetechnologies/models",
+      "snippet": "AI & ML interests ... Recent Activity updated a model 30 days ago ... updated a collection about 2 months ago"
+    },
+    {
+      "title": "AI Model & API Providers Analysis | Artificial Analysis",
+      "url": "https://artificialanalysis.ai/",
+      "snippet": "Comparison and analysis of AI models and API hosting providers. Independent benchmarks across key performance metrics including quality, price, output speed & latency."
+    },
+    {
+      "title": "Qwen 3 Full Model Lineup Guide 2026: 0.6B to 72B with Dual-Mode ...",
+      "url": "https://baeseokjae.github.io/posts/qwen-3-full-lineup-guide-2026/",
+      "snippet": "Complete guide to every Qwen 3 model from 0.6B to 235B — specs, VRAM requirements, dual-mode thinking, benchmarks vs. DeepSeek R1 and GPT-4o."
+    },
+    {
+      "title": "The 0.6B Model That Sees Better Than Your Pipeline",
+      "url": "https://aiengineer.substack.com/p/the-06b-model-that-sees-better-than",
+      "snippet": "The 0.6B Model That Sees Better Than Your Pipeline Falcon Perception, Netflix&#x27;s physics-aware video editing, and why the bitter lesson is coming for computer vision"
+    }
+  ]
+}

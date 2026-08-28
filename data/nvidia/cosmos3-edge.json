@@ -21,10 +21,11 @@
     "arxiv:2405.14867",
     "license:other",
     "deploy:azure",
+    "deploy:sagemaker",
     "region:us"
   ],
-  "likes": 174,
-  "downloads_30d": 949575,
+  "likes": 176,
+  "downloads_30d": 972635,
   "trending_score": 8,
   "parameters": 3858999728,
   "parameters_human": "3.86B",

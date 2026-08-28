@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "yacdev/SomaliLM-150M-Pretrained",
+  "slug": "yacdev-somalilm-150m-pretrained",
+  "author": "yacdev",
+  "url": "https://huggingface.co/yacdev/SomaliLM-150M-Pretrained",
+  "created_at": "2026-08-26T14:00:51.000Z",
+  "updated_at": "2026-08-28T10:33:42.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "en",
+    "so"
+  ],
+  "tags": [
+    "safetensors",
+    "llama",
+    "causal-lm",
+    "somalilm",
+    "text-generation",
+    "conversational",
+    "en",
+    "so",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 147284736,
+  "parameters_human": "147.3M",
+  "storage_bytes": 51259256187,
+  "storage_human": "51.3 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Find Pre-trained Models | Kaggle",
+      "url": "https://www.kaggle.com/models",
+      "snippet": "Discover and download pre-trained AI models. Use them directly in Kaggle Notebooks or integrate into your own projects."
+    },
+    {
+      "title": "AI Models | NVIDIA Developer",
+      "url": "https://developer.nvidia.com/ai-models",
+      "snippet": "Explore and deploy top AI models built by the community, accelerated by NVIDIA&#x27;s AI inference platform, and run on NVIDIA-accelerated infrastructure."
+    },
+    {
+      "title": "Google Gemini",
+      "url": "https://gemini.google.com/",
+      "snippet": "Get assistance with writing, planning, learning, and more from Google AI."
+    },
+    {
+      "title": "Best Free AI Models & APIs (2026) | LM Market Cap",
+      "url": "https://lmmarketcap.com/free-ai-models",
+      "snippet": "Every free AI model ranked by quality: free LLMs, coding assistants, and image generators. No API costs, open-source, and ready to use. Start for free."
+    },
+    {
+      "title": "Best LLM Leaderboard 2026 | AI Model Rankings, Benchmarks & Pricing",
+      "url": "https://onyx.app/llm-leaderboard",
+      "snippet": "The definitive LLM leaderboard — ranking the best AI models including Claude, GPT, Gemini, DeepSeek, Llama, and more across coding, reasoning, math, agentic, and chat benchmarks. Compare LLM rankings, tier lists, and pricing."
+    }
+  ]
+}

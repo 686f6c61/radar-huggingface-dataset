@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "rramirezjacob/cross-modal-fusion",
+  "slug": "rramirezjacob-cross-modal-fusion",
+  "author": "rramirezjacob",
+  "url": "https://huggingface.co/rramirezjacob/cross-modal-fusion",
+  "created_at": "2026-08-28T07:44:52.000Z",
+  "updated_at": "2026-08-28T07:45:00.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "transformer",
+    "research-notes",
+    "cross-modal-fusion",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 16576,
+  "parameters_human": "16576",
+  "storage_bytes": 66784,
+  "storage_human": "66784 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Jacoblope/notes-cross-modal-fusion · Hugging Face",
+      "url": "https://huggingface.co/Jacoblope/notes-cross-modal-fusion",
+      "snippet": "Jacoblope / notes-cross-modal-fusion like 0 Safetensors transformer research-notes cross-modal-fusion License:cc-by-4. Model card FilesFiles and versions xet Community Copy to bucket new Notes on Cross Modal Fusion Repository summary What is covered How to read this repository Scope and limitations Files License"
+    },
+    {
+      "title": "A Comprehensive Survey on Deep Learning Multi-Modal Fusion: Methods ...",
+      "url": "https://www.sciencedirect.com/org/science/article/pii/S1546221824005216",
+      "snippet": "In the real world, various modal information exists from the external environment and is interrelated with each other to form a whole. Sources of multi-modal information include text, images, video, audio, sensors, and so on [1]. When a method utilizes several data types to solve the problem, it is a multi-modal method. Compared with the unimodal method, the multi-modal fusion method can ..."
+    },
+    {
+      "title": "Democratizing AI through model fusion: A comprehensive review and ...",
+      "url": "https://www.sciencedirect.com/science/article/pii/S295016012500049X",
+      "snippet": "This concentration hinders innovation, diversity, and equitable deployment of AI technologies. Our review comprehensively analyzes model fusion—a novel paradigm that integrates multiple specialized models into unified, efficient systems—offering a scalable and decentralized alternative for LLM development."
+    },
+    {
+      "title": "Collaborative Cross-modal Fusion with Large Language Model for ...",
+      "url": "https://arxiv.org/html/2408.08564v1",
+      "snippet": "Some simply instruct-tune a language model, while others directly inject the embeddings of a CF-based model, lacking a synergistic fusion of different modalities. To address these issues, we propose a framework of C ollaborative C ross-modal F usion with L arge L anguage M odels, termed CCF-LLM, for recommendation."
+    },
+    {
+      "title": "TACFN: Transformer-based Adaptive Cross-modal Fu-sion Network for ...",
+      "url": "https://arxiv.org/pdf/2505.06536",
+      "snippet": "s, model fusion is often done using a transformer-based approach for diferent modal interactions. Typicall , both SPT [16] and PMR [17] use cross-modal attention to perform fusion of multimodal sequences. Their approaches achieve reinforc ment of the target modality by learning directed pairwise attention between cross-modal elements. Moreover"
+    }
+  ]
+}

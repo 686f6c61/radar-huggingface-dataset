@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "wego-hansu/dual_arm_test",
+  "slug": "wego-hansu-dual_arm_test",
+  "author": "wego-hansu",
+  "url": "https://huggingface.co/wego-hansu/dual_arm_test",
+  "created_at": "2026-08-28T07:14:04.000Z",
+  "updated_at": "2026-08-28T07:14:35.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "act",
+    "robotics",
+    "dataset:wego-hansu/two_arm_bolt",
+    "arxiv:2304.13705",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 51685006,
+  "parameters_human": "51.7M",
+  "storage_bytes": 206774624,
+  "storage_human": "207 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "wego-hansu (SeungWookHan) - Hugging Face",
+      "url": "https://huggingface.co/wego-hansu",
+      "snippet": "User profile of SeungWookHan on Hugging Face"
+    },
+    {
+      "title": "wego-hansu/yeonwonju-070720-vla · Hugging Face",
+      "url": "https://huggingface.co/wego-hansu/yeonwonju-070720-vla",
+      "snippet": "Instructions to use wego-hansu/yeonwonju-070720-vla with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Libraries LeRobot How to use wego-hansu/yeonwonju-070720-vla with LeRobot: Notebooks Google Colab Kaggle Model Card for act How to Get Started with the Model Train from scratch Evaluate the ..."
+    },
+    {
+      "title": "WeGo-Robotics · GitHub",
+      "url": "https://github.com/WeGo-Robotics",
+      "snippet": "WeGo-Robotics Making robotics development accessible. Official repositories for WeGo Robotics, featuring ROS/ROS2 workspaces, AI learning data, and GUI controllers."
+    },
+    {
+      "title": "dual-arm · GitHub Topics · GitHub",
+      "url": "https://github.com/topics/dual-arm",
+      "snippet": "Dexterity is a Redwood City, California Physical AI company founded in 2017 by Samir Menon and a group of Stanford roboticists. It builds a full-stack industrial robotics platform that combines the Mech — a roving, dual-arm superhumanoid robot — with Foresight, an in-house world model trained on more than 100 million autonomous actions in…"
+    },
+    {
+      "title": "Help : integrating a Agilex PiPER robot arm to lerobot",
+      "url": "https://discuss.huggingface.co/t/help-integrating-a-agilex-piper-robot-arm-to-lerobot/168828",
+      "snippet": "Hello. I working for integration a PiPER robot arm to lerobot. I made some classes (bus, motor, robot, follower, leader…). I got the dataset and the replay worked fine using a PiPER. so i trained &#x27;smolvla&#x27; model but i…"
+    }
+  ]
+}

@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "DoBinh/pit2022-gpt2-124m-diffdml",
+  "slug": "dobinh-pit2022-gpt2-124m-diffdml",
+  "author": "DoBinh",
+  "url": "https://huggingface.co/DoBinh/pit2022-gpt2-124m-diffdml",
+  "created_at": "2026-08-27T10:33:40.000Z",
+  "updated_at": "2026-08-28T01:44:24.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "safetensors",
+    "wigin-pitgpt",
+    "pretraining",
+    "point-in-time",
+    "temporal",
+    "lookahead-free",
+    "muon",
+    "gpt2",
+    "diff-dml",
+    "deep-mutual-learning",
+    "ablation",
+    "en",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 162201600,
+  "parameters_human": "162.2M",
+  "storage_bytes": 43843912316,
+  "storage_human": "43.8 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "DoBinh/pit2022-gpt2-124m-diffdml · Hugging Face",
+      "url": "https://huggingface.co/DoBinh/pit2022-gpt2-124m-diffdml",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "DoBinh/pit2022-gpt2-124m-muon-hf · Hugging Face",
+      "url": "https://huggingface.co/DoBinh/pit2022-gpt2-124m-muon-hf",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GitHub - DoBinh04/LLM_trainer",
+      "url": "https://github.com/DoBinh04/LLM_trainer",
+      "snippet": "Reference baseline (nanoGPT-standard recipe, same data family, same GPU class): ichangzii/pit2022-gpt2-124m — WikiText-2 ppl 43.1 at 4.2B tokens, 137k tok/s on an RTX 5090."
+    },
+    {
+      "title": "Google Colab",
+      "url": "https://colab.research.google.com/drive/1VLG8e7YSEwypxU-noRNhsv5dW4NfTGce",
+      "snippet": "Google Colab ... Google Colab"
+    },
+    {
+      "title": "Open models by OpenAI | OpenAI",
+      "url": "https://openai.com/open-models/",
+      "snippet": "Advanced open-weight reasoning models to customize for any use case and run anywhere."
+    }
+  ]
+}

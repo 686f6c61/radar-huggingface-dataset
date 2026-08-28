@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "dogeum/classify_demo_train3",
+  "slug": "dogeum-classify_demo_train3",
+  "author": "dogeum",
+  "url": "https://huggingface.co/dogeum/classify_demo_train3",
+  "created_at": "2026-08-28T05:45:38.000Z",
+  "updated_at": "2026-08-28T05:45:55.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "robotics",
+    "act",
+    "dataset:dogeum/classify_dataset_demo",
+    "arxiv:2304.13705",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 51668614,
+  "parameters_human": "51.7M",
+  "storage_bytes": 206707272,
+  "storage_human": "207 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "dogeum/classify_train · Hugging Face",
+      "url": "https://huggingface.co/dogeum/classify_train",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "dogeum (Park) - Hugging Face",
+      "url": "https://huggingface.co/dogeum",
+      "snippet": "User profile of Park on Hugging Face Recent Activity updated a model7 days ago dogeum/doosan_gripper_act_1M published a model7 days ago dogeum/doosan_gripper_act_1M updated a model7 days ago dogeum/doosan_gripper_act View all activity"
+    },
+    {
+      "title": "dogeum · GitHub",
+      "url": "https://github.com/dogeum",
+      "snippet": "dogeum has 18 repositories available. Follow their code on GitHub."
+    },
+    {
+      "title": "Demos - MakeAI",
+      "url": "https://makeai.org/demos",
+      "snippet": "Explore our open-source AI demos."
+    },
+    {
+      "title": "GitHub - SmallDoges/small-doge: Doge Family of Small Language Models",
+      "url": "https://github.com/SmallDoges/small-doge",
+      "snippet": "Train a 20M parameter language model in just 3 hours! 🚀 SmallDoge is a family of dynamic, ultra-fast small language models designed for efficiency and accessibility."
+    }
+  ]
+}

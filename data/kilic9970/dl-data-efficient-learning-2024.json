@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "kilic9970/dl-data-efficient-learning-2024",
+  "slug": "kilic9970-dl-data-efficient-learning-2024",
+  "author": "kilic9970",
+  "url": "https://huggingface.co/kilic9970/dl-data-efficient-learning-2024",
+  "created_at": "2026-08-28T06:16:46.000Z",
+  "updated_at": "2026-08-28T06:16:54.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "transformer",
+    "research-notes",
+    "data-efficient-learning",
+    "license:cc-by-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 49600,
+  "parameters_human": "49600",
+  "storage_bytes": 198880,
+  "storage_human": "198880 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Data-efficient learning via clustering-based sensitivity sampling:",
+      "url": "https://dl.acm.org/doi/10.5555/3692070.3692153",
+      "snippet": "We study the data selection problem, whose aim is to select a small representative subset of data that can be used to efficiently train a machine learning model. We present a new data selection approach based on k -means clustering and sensitivity sampling. Assuming access to an embedding representation of the data with respect to which the model loss is Hölder continuous, our approach ..."
+    },
+    {
+      "title": "Deep Learning Monitor - Find new Arxiv papers, tweets and Reddit posts ...",
+      "url": "https://deeplearn.org/",
+      "snippet": "Beyond F1: Evaluating Coverage and Failure Recovery in AI Model Security Scanners Qianlong Lan, Vinothini Pandurangan, Anuj Kaul, Indranil Sanyal 2026-08-27 PDF Mendeley"
+    },
+    {
+      "title": "[2402.09668] How to Train Data-Efficient LLMs - arXiv.org",
+      "url": "https://arxiv.org/abs/2402.09668",
+      "snippet": "The training of large language models (LLMs) is expensive. In this paper, we study data-efficient approaches for pre-training LLMs, i.e., techniques that aim to optimize the Pareto frontier of model quality and training resource/data consumption. We seek to understand the tradeoffs associated with data selection routines based on (i) expensive-to-compute data-quality estimates, and (ii ..."
+    },
+    {
+      "title": "Find Open Datasets and Machine Learning Projects | Kaggle",
+      "url": "https://www.kaggle.com/datasets",
+      "snippet": "Browse and download hundreds of thousands of open datasets for AI research, model training, and analysis. Join a community of millions of researchers, developers, and builders to share and collaborate on Kaggle."
+    },
+    {
+      "title": "ICML 2024 Tutorial: Foundations of Data-Efficient Learning",
+      "url": "https://sjoshi804.github.io/data-efficient-learning-talk/",
+      "snippet": "Her research focuses on enhancing the sustainability, reliability, and efficiency of machine learning by improving big data quality and developing rigorous data selection methods for robust learning. She also works on improving models and learning algorithms, with applications in medical diagnosis and environmental sensing."
+    }
+  ]
+}

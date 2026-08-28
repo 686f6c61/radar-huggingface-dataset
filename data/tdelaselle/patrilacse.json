@@ -1,0 +1,169 @@
+{
+  "schema": 1,
+  "id": "TdelaSelle/PatriLaCSE",
+  "slug": "tdelaselle-patrilacse",
+  "author": "TdelaSelle",
+  "url": "https://huggingface.co/TdelaSelle/PatriLaCSE",
+  "created_at": "2026-08-28T07:39:00.000Z",
+  "updated_at": "2026-08-28T07:39:11.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "sentence-similarity",
+  "library": "sentence-transformers",
+  "languages": [],
+  "tags": [
+    "sentence-transformers",
+    "safetensors",
+    "roberta",
+    "sentence-similarity",
+    "feature-extraction",
+    "dense",
+    "generated_from_trainer",
+    "dataset_size:198457",
+    "loss:CachedMultipleNegativesRankingLoss",
+    "loss:MultipleNegativesRankingLoss",
+    "arxiv:1908.10084",
+    "arxiv:2101.06983",
+    "arxiv:1807.03748",
+    "base_model:bowphs/LaBerta",
+    "base_model:finetune:bowphs/LaBerta",
+    "model-index",
+    "text-embeddings-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 125978112,
+  "parameters_human": "126.0M",
+  "storage_bytes": 503934824,
+  "storage_human": "504 MB",
+  "base_model": "bowphs/LaBerta",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "Information Retrieval",
+      "dataset": "patrilacse ir",
+      "metric": "Cosine Accuracy@1",
+      "value": 0.5099730458221025
+    },
+    {
+      "task": "Information Retrieval",
+      "dataset": "patrilacse ir",
+      "metric": "Cosine Accuracy@3",
+      "value": 0.6064690026954178
+    },
+    {
+      "task": "Information Retrieval",
+      "dataset": "patrilacse ir",
+      "metric": "Cosine Accuracy@5",
+      "value": 0.6447439353099731
+    },
+    {
+      "task": "Information Retrieval",
+      "dataset": "patrilacse ir",
+      "metric": "Cosine Accuracy@10",
+      "value": 0.6811320754716981
+    },
+    {
+      "task": "Information Retrieval",
+      "dataset": "patrilacse ir",
+      "metric": "Cosine Precision@1",
+      "value": 0.5099730458221025
+    },
+    {
+      "task": "Information Retrieval",
+      "dataset": "patrilacse ir",
+      "metric": "Cosine Precision@3",
+      "value": 0.2393530997304582
+    },
+    {
+      "task": "Information Retrieval",
+      "dataset": "patrilacse ir",
+      "metric": "Cosine Precision@5",
+      "value": 0.1578975741239892
+    },
+    {
+      "task": "Information Retrieval",
+      "dataset": "patrilacse ir",
+      "metric": "Cosine Precision@10",
+      "value": 0.08590296495956874
+    },
+    {
+      "task": "Information Retrieval",
+      "dataset": "patrilacse ir",
+      "metric": "Cosine Recall@1",
+      "value": 0.3774345398536773
+    },
+    {
+      "task": "Information Retrieval",
+      "dataset": "patrilacse ir",
+      "metric": "Cosine Recall@3",
+      "value": 0.4971101270696958
+    },
+    {
+      "task": "Information Retrieval",
+      "dataset": "patrilacse ir",
+      "metric": "Cosine Recall@5",
+      "value": 0.5396829675266333
+    },
+    {
+      "task": "Information Retrieval",
+      "dataset": "patrilacse ir",
+      "metric": "Cosine Recall@10",
+      "value": 0.581115068668977
+    },
+    {
+      "task": "Information Retrieval",
+      "dataset": "patrilacse ir",
+      "metric": "Cosine Ndcg@10",
+      "value": 0.5216707493892239
+    },
+    {
+      "task": "Information Retrieval",
+      "dataset": "patrilacse ir",
+      "metric": "Cosine Mrr@10",
+      "value": 0.5674584991229189
+    },
+    {
+      "task": "Information Retrieval",
+      "dataset": "patrilacse ir",
+      "metric": "Cosine Map@100",
+      "value": 0.47797259180784163
+    }
+  ],
+  "sources": [
+    {
+      "title": "TdelaSelle/PatriLaSE · Hugging Face",
+      "url": "https://huggingface.co/TdelaSelle/PatriLaSE",
+      "snippet": "Instructions to use TdelaSelle/PatriLaSE with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Libraries sentence-transformers How to use TdelaSelle/PatriLaSE with sentence-transformers: ... Notebooks Google Colab Kaggle SentenceTransformer based on bowphs/LaBerta Model Details Model Description ..."
+    },
+    {
+      "title": "TdelaSelle (Théotime de la Selle) - Hugging Face",
+      "url": "https://huggingface.co/TdelaSelle/models",
+      "snippet": "AI-powered NLP, Ancient languages models, Intertextuality. Recent Activity. new activity 15 days ago. TdelaSelle/Paraphrasis: Apply for a GPU community grant: Academic project"
+    },
+    {
+      "title": "Tdelaselle (Théotime de la Selle) / Repositories · GitHub",
+      "url": "https://github.com/Tdelaselle?tab=repositories",
+      "snippet": "Tdelaselle has 7 repositories available. Follow their code on GitHub."
+    },
+    {
+      "title": "GitHub - Tdelaselle/PatriBERT: Training and exploration of ancient ...",
+      "url": "https://github.com/Tdelaselle/PatriBERT",
+      "snippet": "Save/adapt checkpoints and export final model to model/. Use BertViz_Latin-PatriBERT.ipynb for qualitative analysis of tokenizer behavior, hidden states, and attention."
+    },
+    {
+      "title": "Fatigue Crack Growth Detection Methods",
+      "url": "https://www.scribd.com/document/915304733/TdelaSelle-Article-CFM2022",
+      "snippet": "TdelaSelle Article CFM2022 - Free download as PDF File (.pdf), Text File (.txt) or read online for free. This conference paper discusses the detection and characterization of fatigue crack growth using acoustic emission (AE) and digital image correlation (DIC). The study identifies specific AE signals, termed &#x27;acoustic multiplets&#x27;, that correlate with incremental crack propagation in metals ..."
+    }
+  ]
+}

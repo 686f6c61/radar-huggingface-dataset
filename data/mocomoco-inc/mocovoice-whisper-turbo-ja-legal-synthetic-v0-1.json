@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "mocomoco-inc/mocovoice-whisper-turbo-ja-legal-synthetic-v0.1",
+  "slug": "mocomoco-inc-mocovoice-whisper-turbo-ja-legal-synthetic-v0-1",
+  "author": "mocomoco-inc",
+  "url": "https://huggingface.co/mocomoco-inc/mocovoice-whisper-turbo-ja-legal-synthetic-v0.1",
+  "created_at": "2026-08-28T05:44:23.000Z",
+  "updated_at": "2026-08-28T05:44:35.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "automatic-speech-recognition",
+  "library": "ctranslate2",
+  "languages": [
+    "ja"
+  ],
+  "tags": [
+    "ctranslate2",
+    "whisper",
+    "whisper-large-v3-turbo",
+    "japanese",
+    "automatic-speech-recognition",
+    "synthetic-data",
+    "mocovoice",
+    "ja",
+    "base_model:openai/whisper-large-v3-turbo",
+    "base_model:finetune:openai/whisper-large-v3-turbo",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 814054531,
+  "storage_human": "814 MB",
+  "base_model": "openai/whisper-large-v3-turbo",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Voice Recognition AI \"mocoVoice\" | mocomoco inc.",
+      "url": "https://products.mocomoco.ai/en/",
+      "snippet": "mocoVoice captures on-site voices even in noisy environments with heavy jargon. AI organizes handoffs, meetings, and reports into your usual formats, with instant access back to the original statements."
+    },
+    {
+      "title": "Voice Recognition AI mocoVoice Available | mocomoco inc.",
+      "url": "https://www.mocomoco.ai/en/",
+      "snippet": "NEWS Latest news Updates from mocomoco inc. June 26, 2026 Announcing Our New Corporate Logo March 30, 2026 [New Logo Released] mocoVoice Adopts New Design Featuring &#x27;Speech Bubble&#x27; Motif December 25, 2025 [Voice AI x Voice Medicine] We Provided Support to the Satta Medical Scholarship Foundation News releases"
+    },
+    {
+      "title": "mocomoco inc. | 音声認識AI モコボイス提供中",
+      "url": "https://www.mocomoco.ai/",
+      "snippet": "mocomoco株式会社では、音声AI mocoVoice（モコボイス）の開発・提供を行っています。"
+    },
+    {
+      "title": "【公式】音声認識AI「モコボイス」 by mocomoco inc.",
+      "url": "https://products.mocomoco.ai/",
+      "snippet": "専門用語と現場ノイズに強い音声認識AI「モコボイス」。文字起こし、議事録作成、組織での共有・検索に加え、オンプレ ..."
+    },
+    {
+      "title": "Whisper Turbo - a Hugging Face Space by hf-audio",
+      "url": "https://huggingface.co/spaces/hf-audio/whisper-large-v3-turbo",
+      "snippet": "This app lets you turn spoken content into written text. You can record with your microphone, upload an audio file, or paste a YouTube link, then choose to transcribe or translate the speech. The r..."
+    }
+  ]
+}

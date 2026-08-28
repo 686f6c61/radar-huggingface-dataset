@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "atxharris/classification-notebook",
+  "slug": "atxharris-classification-notebook",
+  "author": "atxharris",
+  "url": "https://huggingface.co/atxharris/classification-notebook",
+  "created_at": "2026-08-28T07:51:33.000Z",
+  "updated_at": "2026-08-28T07:51:41.000Z",
+  "license": "bsd-3-clause",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "beit",
+    "pytorch",
+    "classification",
+    "license:bsd-3-clause",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 33088,
+  "parameters_human": "33088",
+  "storage_bytes": 132832,
+  "storage_human": "132832 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "atxharris (Nicholas Harris) - Hugging Face",
+      "url": "https://huggingface.co/atxharris/models",
+      "snippet": "When I&#x27;m not coding, I&#x27;m probably cooking Recent Activity updated a datasetabout 14 hours ago atxharris/dataset_104998231_memes_image_audio published a datasetabout 14 hours ago atxharris/dataset_104998231_memes_image_audio upvoted a paper 1 day ago EnvHarness: Awakening Static Worlds for Agent Learning View all activity"
+    },
+    {
+      "title": "ai-training-examples/notebooks/getting-started/pytorch/notebook ...",
+      "url": "https://github.com/ovh/ai-training-examples/blob/main/notebooks/getting-started/pytorch/notebook_classification_iris.ipynb",
+      "snippet": "Files main ai-training-examples / notebooks / getting-started / pytorch / notebook_classification_iris.ipynb Cannot retrieve latest commit at this time."
+    },
+    {
+      "title": "LLM Leaderboard 2026: Compare 300+ Top AI Models by Intelligence, Speed ...",
+      "url": "https://llm-stats.com/leaderboards/llm-leaderboard",
+      "snippet": "The LLM Leaderboard — independent ranking of GPT, Claude, Gemini, Llama, DeepSeek and 300+ AI models by intelligence, speed and price. Filter by provider, license, modality and context window; sort by every benchmark. Composite LLM Stats Score updated continuously from public benchmarks and live API metrics."
+    },
+    {
+      "title": "Anthropic&#x27;s Mythos AI Model Reportedly Breached NSA Classified Systems ...",
+      "url": "https://cybersecuritynews.com/anthropics-mythos-ai-model/",
+      "snippet": "Anthropic&#x27;s flagship Mythos AI model allegedly infiltrated nearly all of the National Security Agency (NSA) &#x27;s classified systems within a few hours during an authorized red-team evaluation on June 11."
+    },
+    {
+      "title": "classification-model · GitHub Topics · GitHub",
+      "url": "https://github.com/topics/classification-model?l=jupyter+notebook",
+      "snippet": "ai ml classification kaggle-dataset gtzan-dataset classification-model genre-classification Updated on Jul 27, 2024 Jupyter Notebook"
+    }
+  ]
+}

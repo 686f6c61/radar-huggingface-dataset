@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "jasonthomasson/intern-contrastive-learning-2024",
+  "slug": "jasonthomasson-intern-contrastive-learning-2024",
+  "author": "jasonthomasson",
+  "url": "https://huggingface.co/jasonthomasson/intern-contrastive-learning-2024",
+  "created_at": "2026-08-28T06:14:28.000Z",
+  "updated_at": "2026-08-28T06:14:36.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "transformer",
+    "research-notes",
+    "contrastive-learning",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 16576,
+  "parameters_human": "16576",
+  "storage_bytes": 66784,
+  "storage_human": "66784 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "A comprehensive survey on contrastive learning - ScienceDirect",
+      "url": "https://www.sciencedirect.com/science/article/pii/S0925231224014164",
+      "snippet": "Contrastive Learning is self-supervised representation learning by training a model to differentiate between similar and dissimilar samples. It has be…"
+    },
+    {
+      "title": "Visualizing and Understanding Contrastive Learning - arXiv.org",
+      "url": "https://arxiv.org/html/2206.09753v3",
+      "snippet": "Explainable Artificial Intelligence (XAI) involves building techniques to understand the underlying mechanisms behind the decision-making process of a machine learning model. It is crucial for building trust and accountability in AI systems as it enables users to understand and improve their models [8] and identify any data biases present [9 ..."
+    },
+    {
+      "title": "CVPR 2024 Accepted Papers",
+      "url": "https://cvpr.thecvf.com/Conferences/2024/AcceptedPapers",
+      "snippet": "CVPR 2024 Accepted Papers Papers are assigned to poster sessions such that topics are maximally spread over sessions (attendees will find interesting papers at each session) while grouping similar posters within each poster session to minimize walking distances. We used a 1D t-SNE projection of the SPECTER paper embeddings to realize this assignment. This page is cached for 1 hour. Changes to ..."
+    },
+    {
+      "title": "AI Conference Paper Notes | 23000+ In-Depth Summaries",
+      "url": "https://en.papernotes.org/",
+      "snippet": "23000+ AI / LLM / NLP / CV top-venue paper notes — 5-minute reads of core ideas. Covers ACL, CVPR, ICLR, AAAI, NeurIPS, ICCV, ICML, ECCV across 11 venues and 55 research areas. Each note includes a TL;DR, motivation, method, ..."
+    },
+    {
+      "title": "GitHub - OpenSpaceAI/UVLTrack: The official pytorch implementation of ...",
+      "url": "https://github.com/OpenSpaceAI/UVLTrack",
+      "snippet": "The official pytorch implementation of our AAAI 2024 paper \"Unifying Visual and Vision-Language Tracking via Contrastive Learning\" - OpenSpaceAI/UVLTrack"
+    }
+  ]
+}

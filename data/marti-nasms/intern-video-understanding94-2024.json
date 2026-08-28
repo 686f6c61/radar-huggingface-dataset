@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "marti-nasms/intern-video-understanding94-2024",
+  "slug": "marti-nasms-intern-video-understanding94-2024",
+  "author": "marti-nasms",
+  "url": "https://huggingface.co/marti-nasms/intern-video-understanding94-2024",
+  "created_at": "2026-08-28T08:01:48.000Z",
+  "updated_at": "2026-08-28T08:01:57.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "transformer",
+    "research-notes",
+    "video-understanding",
+    "license:cc-by-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 16576,
+  "parameters_human": "16576",
+  "storage_bytes": 66784,
+  "storage_human": "66784 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - OpenGVLab/InternVideo: [ECCV2024] Video Foundation Models ...",
+      "url": "https://github.com/OpenGVLab/InternVideo",
+      "snippet": "This repo contains InternVideo series and related works in video foundation models. InternVideo: general video foundation models via generative and discriminative learning InternVideo2: scaling video foundation models for multimodal video understanding InternVideo2.5: empowering video mllms with long and rich context modeling InternVideo3: multimodal contextual reasoning via efficient long ..."
+    },
+    {
+      "title": "InternVideo2: Scaling Video Foundation Models for Multimodal Video ...",
+      "url": "https://www.linkedin.com/pulse/internvideo2-scaling-video-foundation-models-vlad-bogolin-hoiqc",
+      "snippet": "The paper introduces InternVideo2, a new video foundation model that achieves state-of-the-art performance in action recognition, video-text tasks, video-centric dialogue and other video tasks ..."
+    },
+    {
+      "title": "Google Gemini",
+      "url": "https://gemini.google.com/",
+      "snippet": "Get assistance with writing, planning, learning, and more from Google AI."
+    },
+    {
+      "title": "InternVideo/README.md at main · OpenGVLab/InternVideo · GitHub",
+      "url": "https://github.com/OpenGVLab/InternVideo/blob/main/README.md",
+      "snippet": "This repo contains InternVideo series and related works in video foundation models. InternVideo: general video foundation models via generative and discriminative learning InternVideo2: scaling video foundation models for multimodal video understanding InternVideo2.5: empowering video mllms with long and rich context modeling InternVideo3: multimodal contextual reasoning via efficient long ..."
+    },
+    {
+      "title": "arXiv.org",
+      "url": "https://arxiv.org/pdf/2501.12386",
+      "snippet": "This paper enhances video multimodal large language models with long and rich context modeling, improving fine-grained detail perception and temporal structure understanding."
+    }
+  ]
+}

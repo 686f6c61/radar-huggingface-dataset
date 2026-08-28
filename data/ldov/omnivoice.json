@@ -1,0 +1,95 @@
+{
+  "schema": 1,
+  "id": "ldov/OmniVoice",
+  "slug": "ldov-omnivoice",
+  "author": "ldov",
+  "url": "https://huggingface.co/ldov/OmniVoice",
+  "created_at": "2026-08-28T11:31:38.000Z",
+  "updated_at": "2026-08-28T11:31:38.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-speech",
+  "library": "gguf",
+  "languages": [
+    "en",
+    "fr",
+    "de",
+    "es",
+    "it",
+    "pt",
+    "zh",
+    "ja",
+    "ko",
+    "ar",
+    "ru"
+  ],
+  "tags": [
+    "gguf",
+    "tts",
+    "text-to-speech",
+    "voice-cloning",
+    "voice-design",
+    "ggml",
+    "omnivoice",
+    "cpp",
+    "en",
+    "fr",
+    "de",
+    "es",
+    "it",
+    "pt",
+    "zh",
+    "ja",
+    "ko",
+    "ar",
+    "ru",
+    "base_model:k2-fsa/OmniVoice",
+    "base_model:quantized:k2-fsa/OmniVoice",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 612577280,
+  "parameters_human": "612.6M",
+  "storage_bytes": 7227937120,
+  "storage_human": "7.2 GB",
+  "base_model": "k2-fsa/OmniVoice",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "OmniVoice Local TTS Model | OpenVox AI",
+      "url": "https://openvoxai.com/models/omnivoice",
+      "snippet": "OmniVoice is a massively multilingual zero-shot TTS model built for broad language coverage, voice cloning, voice design, and fast local speech generation."
+    },
+    {
+      "title": "GitHub - k2-fsa/OmniVoice: High-Quality Voice Cloning TTS for 600 ...",
+      "url": "https://github.com/k2-fsa/OmniVoice/",
+      "snippet": "OmniVoice 🌍 OmniVoice is a state-of-the-art massively multilingual zero-shot text-to-speech (TTS) model supporting over 600 languages. Built on a novel diffusion language model-style architecture, it generates high-quality speech with superior inference speed, supporting voice cloning and voice design."
+    },
+    {
+      "title": "OmniVoice: Towards Omnilingual Zero-Shot Text-to-Speech with Diffusion ...",
+      "url": "https://arxiv.org/html/2604.00688v1",
+      "snippet": "Abstract We present OmniVoice, a massive multilingual zero-shot text-to-speech (TTS) model that scales to over 600 languages. At its core is a novel diffusion language model-style discrete non-autoregressive (NAR) architecture. Unlike conventional discrete NAR models that suffer from performance bottlenecks in complex two-stage (text-to-semantic-to-acoustic) pipelines, OmniVoice directly maps ..."
+    },
+    {
+      "title": "OrpheraAI/OmniVoice · Hugging Face",
+      "url": "https://huggingface.co/OrpheraAI/OmniVoice",
+      "snippet": "OmniVoice is a massively multilingual zero-shot text-to-speech (TTS) model supporting over 600 languages. Built on a novel diffusion language model-style architecture, it delivers high-quality speech with superior inference speed, supporting voice cloning and voice design."
+    },
+    {
+      "title": "GitHub - Peatechen/OmniVoice",
+      "url": "https://github.com/Peatechen/OmniVoice",
+      "snippet": "OmniVoice 🌍 OmniVoice is a state-of-the-art massive multilingual zero-shot text-to-speech (TTS) model supporting over 600 languages. Built on a novel diffusion language model-style architecture, it generates high-quality speech with superior inference speed, supporting voice cloning and voice design."
+    }
+  ]
+}

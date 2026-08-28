@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "msKim100/smolvla_so101_stack_corrected66_b32_dagger15_9k",
+  "slug": "mskim100-smolvla_so101_stack_corrected66_b32_dagger15_9k",
+  "author": "msKim100",
+  "url": "https://huggingface.co/msKim100/smolvla_so101_stack_corrected66_b32_dagger15_9k",
+  "created_at": "2026-08-28T07:44:16.000Z",
+  "updated_at": "2026-08-28T07:46:49.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "robotics",
+    "smolvla",
+    "dataset:msKim100/so101_smolvla_corrected66_dagger15",
+    "arxiv:2506.01844",
+    "base_model:lerobot/smolvla_base",
+    "base_model:finetune:lerobot/smolvla_base",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 450046176,
+  "parameters_human": "450.0M",
+  "storage_bytes": 906721032,
+  "storage_human": "907 MB",
+  "base_model": "lerobot/smolvla_base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "msKim100/smolvla_so101_stack_corrected66 · Hugging Face",
+      "url": "https://huggingface.co/msKim100/smolvla_so101_stack_corrected66",
+      "snippet": "Instructions to use msKim100/smolvla_so101_stack_corrected66 with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Libraries LeRobot How to use msKim100/smolvla_so101_stack_corrected66 with LeRobot:"
+    },
+    {
+      "title": "smolvla_so101_stack_corrected66_b32 - Hugging Face",
+      "url": "https://huggingface.co/msKim100/smolvla_so101_stack_corrected66_b32",
+      "snippet": "msKim100/so101_smolvla_corrected_66 ... SmolVLA: A Vision-Language-Action Model for Affordable and Efficient Robotics"
+    },
+    {
+      "title": "SmolVLA_Deployment_Simulation.ipynb - Colab",
+      "url": "https://colab.research.google.com/github/Vizuara-AI-Lab/Modern-Robot-Learning-V2-Bootcamp/blob/main/lecture-3-deploy/notebooks/SmolVLA_Deployment_Simulation.ipynb",
+      "snippet": "Lecture 3, Part 4 — Vizuara Modern Robot Learning Bootcamp In this notebook, we simulate the full deployment pipeline for SmolVLA on a real SO-101 arm — from dataset exploration to voice-controlled task switching."
+    },
+    {
+      "title": "GitHub - zyqdragon/lerobot_smolvla: LeRobot: Making AI for Robotics ...",
+      "url": "https://github.com/zyqdragon/lerobot_smolvla",
+      "snippet": "LeRobot: State-of-the-art AI for real-world robotics 🤗 LeRobot aims to provide models, datasets, and tools for real-world robotics in PyTorch. The goal is to lower the barrier to entry to robotics so that everyone can contribute and benefit from sharing datasets and pretrained models."
+    },
+    {
+      "title": "SmolVLA: An Open-Source Vision-Language-Action Model for Modern Robotics",
+      "url": "https://smolvla.net/index_en",
+      "snippet": "SmolVLA A compact, efficient, and powerful vision-language-action model for modern robotics. 🚀 Meet SmolVLA SmolVLA is a groundbreaking Vision-Language-Action (VLA) model with only 450 million parameters, developed by Hugging Face. It&#x27;s carefully designed for cost-effective deployment on consumer-grade hardware, making advanced robotics technology accessible to more developers and ..."
+    }
+  ]
+}

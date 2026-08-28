@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "Celsia/HPEC2026",
+  "slug": "celsia-hpec2026",
+  "author": "Celsia",
+  "url": "https://huggingface.co/Celsia/HPEC2026",
+  "created_at": "2026-08-28T05:38:18.000Z",
+  "updated_at": "2026-08-28T05:38:18.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "IEEE High Performance Extreme Computing",
+      "url": "https://ieee-hpec.org/",
+      "snippet": "HPEC is the largest computing conference in New England and is the premier conference in the world on the convergence of High Performance and Embedded Computing. We are passionate about performance. Our community is interested in computing hardware, software, systems and applications where performance matters. We welcome experts and people who are new to the field."
+    },
+    {
+      "title": "PDF Hpec-cfp-2026",
+      "url": "https://ieee-hpec.org/wp-content/uploads/2026/03/HPEC-CFP-2026.pdf",
+      "snippet": "The technical committee seeks new presentations that clearly describe advances in high performance extreme computing technologies, emphasizing one or more of the following topics:"
+    },
+    {
+      "title": "Latest AI Models 2026: 99 Released — Complete Catalog",
+      "url": "https://best-ai.news/ai-model-releases-2026",
+      "snippet": "The latest AI models of 2026: a living catalog of 99 AI models tracked this year — from 33 brands across LLMs, image, video, multimodal, audio & science. Updated continuously."
+    },
+    {
+      "title": "celsia AI Models | Civitai",
+      "url": "https://civitai.com/tag/celsia",
+      "snippet": "Browse celsia Stable Diffusion & Flux models, LoRAs, checkpoints, embeddings, and more for AI image generation."
+    },
+    {
+      "title": "Celsia - SeaArt AI Model",
+      "url": "https://www.seaart.ai/models/detail/1306d60a9f088d1458cc535644f6aa34",
+      "snippet": "Explore Celsia model on SeaArt AI. Transform your idea into professional-quality AI-generated images and videos with our free, easy-to-use platform."
+    }
+  ]
+}

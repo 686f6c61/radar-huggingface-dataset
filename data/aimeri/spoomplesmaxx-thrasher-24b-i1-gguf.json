@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "aimeri/spoomplesmaxx-thrasher-24B-i1-GGUF",
+  "slug": "aimeri-spoomplesmaxx-thrasher-24b-i1-gguf",
+  "author": "aimeri",
+  "url": "https://huggingface.co/aimeri/spoomplesmaxx-thrasher-24B-i1-GGUF",
+  "created_at": "2026-08-28T08:17:36.000Z",
+  "updated_at": "2026-08-28T08:54:12.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "gguf",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "gguf",
+    "roleplay",
+    "creative-writing",
+    "chatml",
+    "text-generation",
+    "en",
+    "base_model:aimeri/spoomplesmaxx-thrasher-24B",
+    "base_model:quantized:aimeri/spoomplesmaxx-thrasher-24B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "imatrix",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 23572403200,
+  "parameters_human": "23.57B",
+  "storage_bytes": 47857532864,
+  "storage_human": "47.9 GB",
+  "base_model": "aimeri/spoomplesmaxx-thrasher-24B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "aimeri/spoomplesmaxx-thrasher-24B-GGUF · Hugging Face",
+      "url": "https://huggingface.co/aimeri/spoomplesmaxx-thrasher-24B-GGUF",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "README.md · aimeri/spoomplesmaxx-thrasher-24B-GGUF at main",
+      "url": "https://huggingface.co/aimeri/spoomplesmaxx-thrasher-24B-GGUF/blob/main/README.md",
+      "snippet": "Instructions to use aimeri/spoomplesmaxx-thrasher-24B-GGUF with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Notebooks Google Colab Kaggle Local AppsSettings llama.cpp How to use aimeri/spoomplesmaxx-thrasher-24B-GGUF with llama.cpp: Install (macOS, Linux)"
+    },
+    {
+      "title": "GitHub - aimerib/spoomplesmaxx",
+      "url": "https://github.com/aimerib/spoomplesmaxx",
+      "snippet": "These datasets are designed to train a Roleplay (RP), Creative Writing, and \"Smart\" Assistant model Spoomplesmaxx. The goal of combining these specific sets is to create a model that is narratively creative and capable of embodying characters, but also logically sound and capable of following complex instructions."
+    },
+    {
+      "title": "6 Best 24B GGUF Models for 24GB VRAM Local AI RP",
+      "url": "https://techtactician.com/best-24b-gguf-models-for-24gb-vram-local-rp/",
+      "snippet": "If you&#x27;re aiming for local RP on a 24GB VRAM GPU like the RTX 3090 or the RTX 4090, 24B models are usually where the text generation starts feeling properly consistent, with better scene flow, stronger character adherence, and less random derailment than most smaller 7-8B picks. Here is a quick no-nonsense list of the best 24B fine-tunes and merges available in GGUF quantizations that you ..."
+    },
+    {
+      "title": "GGUF model list - mitjafelicijan.github.io",
+      "url": "https://mitjafelicijan.github.io/gguf-list/",
+      "snippet": "GGUF model list Generated on 2025-02-27 17:51:07 (download collections.json)"
+    }
+  ]
+}

@@ -1,0 +1,76 @@
+{
+  "schema": 1,
+  "id": "Gyubeum/Qwen3-VL-8B-Instruct-UI-Genie-scoring-64k-balanced",
+  "slug": "gyubeum-qwen3-vl-8b-instruct-ui-genie-scoring-64k-balanced",
+  "author": "Gyubeum",
+  "url": "https://huggingface.co/Gyubeum/Qwen3-VL-8B-Instruct-UI-Genie-scoring-64k-balanced",
+  "created_at": "2026-08-28T06:21:29.000Z",
+  "updated_at": "2026-08-28T06:22:58.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_vl",
+    "image-text-to-text",
+    "reward-model",
+    "gui-agent",
+    "ui-genie",
+    "bradley-terry",
+    "seq-cls",
+    "qwen3-vl",
+    "conversational",
+    "arxiv:2505.09388",
+    "base_model:Gyubeum/Qwen3-VL-8B-Instruct-UI-Genie",
+    "base_model:finetune:Gyubeum/Qwen3-VL-8B-Instruct-UI-Genie",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 8144797936,
+  "parameters_human": "8.14B",
+  "storage_bytes": 16301110922,
+  "storage_human": "16.3 GB",
+  "base_model": "Gyubeum/Qwen3-VL-8B-Instruct-UI-Genie",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Gyubeum/Qwen3-VL-8B-Instruct-UI-Genie-scoring · Hugging Face",
+      "url": "https://huggingface.co/Gyubeum/Qwen3-VL-8B-Instruct-UI-Genie-scoring",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Gyubeum/Qwen3-VL-8B-Instruct-UI-Genie at main - Hugging Face",
+      "url": "https://huggingface.co/Gyubeum/Qwen3-VL-8B-Instruct-UI-Genie/tree/main",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Qwen3-VL-8B-Instruct-UI-Genie API & Inference Endpoint - FriendliAI",
+      "url": "https://friendli.ai/models/Gyubeum/Qwen3-VL-8B-Instruct-UI-Genie",
+      "snippet": "Run Qwen3-VL-8B-Instruct-UI-Genie with FriendliAI inference. An SFT fine-tuned reward model based on Qwen3-VL-8B-Instruct, trained on the UI-Genie-RM-517k…"
+    },
+    {
+      "title": "Qwen3-VL-8B-Instruct-UI-Genie-scoring - FriendliAI",
+      "url": "https://friendli.ai/models/Gyubeum/Qwen3-VL-8B-Instruct-UI-Genie-scoring",
+      "snippet": "Run Qwen3-VL-8B-Instruct-UI-Genie-scoring with FriendliAI inference. A Bradley-Terry reward model fine-tuned from Gyubeum/Qwen3-VL-8B-Instruct-UI-Genie…"
+    },
+    {
+      "title": "ai-hub-models/src/qai_hub_models/models/qwen3_vl_8b_instruct ... - GitHub",
+      "url": "https://github.com/qualcomm/ai-hub-models/blob/main/src/qai_hub_models/models/qwen3_vl_8b_instruct/README.md",
+      "snippet": "This is based on the implementation of Qwen3-VL-8B-Instruct found here. This repository contains scripts for optimized on-device export suitable to run on Qualcomm® devices. More details on model performance across various devices, can be found here. Qualcomm AI Hub Models uses Qualcomm AI Hub Workbench to compile, profile, and evaluate this ..."
+    }
+  ]
+}

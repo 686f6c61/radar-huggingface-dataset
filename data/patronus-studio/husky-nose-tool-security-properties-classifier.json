@@ -1,0 +1,87 @@
+{
+  "schema": 1,
+  "id": "patronus-studio/husky-nose-tool-security-properties-classifier",
+  "slug": "patronus-studio-husky-nose-tool-security-properties-classifier",
+  "author": "patronus-studio",
+  "url": "https://huggingface.co/patronus-studio/husky-nose-tool-security-properties-classifier",
+  "created_at": "2026-07-16T11:28:07.000Z",
+  "updated_at": "2026-08-28T08:34:21.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": null,
+  "languages": [
+    "de",
+    "en"
+  ],
+  "tags": [
+    "joblib",
+    "onnx",
+    "safetensors",
+    "modernbert",
+    "tool-use",
+    "ai-agents",
+    "mcp",
+    "tool-security",
+    "data-flow",
+    "multi-label-classification",
+    "dlp",
+    "security",
+    "llm-security",
+    "ai-safety",
+    "ai-agent-security",
+    "patronus",
+    "multilingual",
+    "text-classification",
+    "de",
+    "en",
+    "base_model:jhu-clsp/mmBERT-small",
+    "base_model:quantized:jhu-clsp/mmBERT-small",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 12,
+  "trending_score": 0,
+  "parameters": 140642691,
+  "parameters_human": "140.6M",
+  "storage_bytes": 1562995541,
+  "storage_human": "1.6 GB",
+  "base_model": "jhu-clsp/mmBERT-small",
+  "formats": [
+    "onnx",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "patronus-studio/husky-nose-tool-security-properties-classifier ...",
+      "url": "https://huggingface.co/patronus-studio/husky-nose-tool-security-properties-classifier",
+      "snippet": "Husky Nose is a multilingual ModernBERT-based (mmBERT) classifier that identifies the security-relevant data-flow properties of AI agent tools and tool operations: whether a tool can access sensitive data, ingest untrusted data, or transmit data to an external destination. It is part of the Patronus Protect security stack and is a member of the Husky tool-analysis family, alongside Husky Sight ..."
+    },
+    {
+      "title": "patronus-studio/husky-nose-tool-security-properties-classifier-edge ...",
+      "url": "https://huggingface.co/patronus-studio/husky-nose-tool-security-properties-classifier-edge",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Our AI-Security Model Zoo Is Now Open Source - My Framer Site",
+      "url": "https://patronus.studio/posts/our-ai-security-model-zoo-is-now-open-source",
+      "snippet": "The Husky models inspect agent tool calls. Husky Sight identifies the target (14 classes from file to secrets to infra), Husky Paw the operation (read, write, list, exec, network), and Husky Nose the data-flow properties as independent labels: source:sensitive, source:untrusted, sink:external."
+    },
+    {
+      "title": "Our AI-Security Model Zoo Is Now Open Source - patronus.studio",
+      "url": "https://patronus.studio/de/posts/our-ai-security-model-zoo-is-now-open-source",
+      "snippet": "The Husky models inspect agent tool calls. Husky Sight identifies the target (14 classes from file to secrets to infra), Husky Paw the operation (read, write, list, exec, network), and Husky Nose the data-flow properties as independent labels: source:sensitive, source:untrusted, sink:external."
+    },
+    {
+      "title": "patronus-security/docs/assets.md at main · patronus-protect ... - GitHub",
+      "url": "https://github.com/patronus-protect/patronus-security/blob/main/docs/assets.md",
+      "snippet": "Asset Downloads Patronus Ark does not bundle model assets in the Rust crate or Python wheel. Rust-native rule-based scanners run without downloads. Model-backed categories load their manifest assets from the Hugging Face repositories declared in rust/src/assets/specs.rs."
+    }
+  ]
+}

@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "innkl24/shan-tts-mms-v2",
+  "slug": "innkl24-shan-tts-mms-v2",
+  "author": "innkl24",
+  "url": "https://huggingface.co/innkl24/shan-tts-mms-v2",
+  "created_at": "2026-08-28T09:29:47.000Z",
+  "updated_at": "2026-08-28T09:29:47.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "innkl24/shan-tts-mms · Hugging Face",
+      "url": "https://huggingface.co/innkl24/shan-tts-mms",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "innkl24 (InnKL) - Hugging Face",
+      "url": "https://huggingface.co/innkl24",
+      "snippet": "Extract Tai script text from images with line detection. innkl24 4 days ago. Sleeping . Agents. Shan News Portal. 📊. Generate spoken audio from Shan News articles via TTS"
+    },
+    {
+      "title": "GitHub - NoerNova/Shan_TTS_MMS: Shan TTS and MMS finetune",
+      "url": "https://github.com/NoerNova/Shan_TTS_MMS",
+      "snippet": "Shan TTS and MMS finetune. Contribute to NoerNova/Shan_TTS_MMS development by creating an account on GitHub."
+    },
+    {
+      "title": "Shan_TTS_MMS/README.md at main · NoerNova/Shan_TTS_MMS · GitHub",
+      "url": "https://github.com/NoerNova/Shan_TTS_MMS/blob/main/README.md",
+      "snippet": "Shan TTS and MMS finetune. Contribute to NoerNova/Shan_TTS_MMS development by creating an account on GitHub."
+    },
+    {
+      "title": "整理了一下支持中文的tts模型及地址 - 知乎",
+      "url": "https://zhuanlan.zhihu.com/p/18615496060",
+      "snippet": "整理了一下支持中文的TTS模型及下载地址，大家如果知道有什么好的模型，请告诉我一下： 1. GPT-SoVITS 说明：GPT-SoVITS 是一款支持中、英、日三语的TTS模型，特别适合零样本语音克隆。 它集成了完整的工具包，能够快速生成高质量的语音，适用于AI卖货主播等场景。"
+    }
+  ]
+}

@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "patrickbdevaney/GLM-5.3-Flash-REAP50-NVFP4",
+  "slug": "patrickbdevaney-glm-5-3-flash-reap50-nvfp4",
+  "author": "patrickbdevaney",
+  "url": "https://huggingface.co/patrickbdevaney/GLM-5.3-Flash-REAP50-NVFP4",
+  "created_at": "2026-08-28T01:39:13.000Z",
+  "updated_at": "2026-08-28T05:41:33.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "glm5_next",
+    "reap",
+    "moe",
+    "pruning",
+    "jetson",
+    "thor",
+    "arxiv:2510.13999",
+    "base_model:zai-org/GLM-5.3-Flash",
+    "base_model:quantized:zai-org/GLM-5.3-Flash",
+    "license:mit",
+    "8-bit",
+    "compressed-tensors",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 161662756766,
+  "parameters_human": "161.66B",
+  "storage_bytes": 103043211818,
+  "storage_human": "103.0 GB",
+  "base_model": "zai-org/GLM-5.3-Flash",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GLM-5.3-Flash-REAP50-NVFP4 - Hugging Face",
+      "url": "https://huggingface.co/patrickbdevaney/GLM-5.3-Flash-REAP50-NVFP4",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GLM-5.3 Flash — Z.AI | Parasail",
+      "url": "https://www.parasail.io/models/glm-53-flash",
+      "snippet": "Z.AI&#x27;s first natively multimodal GLM-5 model — frontier coding, agentic and vision work at a tenth of GLM-5.2&#x27;s price."
+    },
+    {
+      "title": "local-inference-lab/GLM-5.3-Flash-NVFP4 · Hugging Face",
+      "url": "https://huggingface.co/local-inference-lab/GLM-5.3-Flash-NVFP4",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GLM-5.3 | OpenLM.ai",
+      "url": "https://openlm.ai/glm-5.5/",
+      "snippet": "GLM-5.3-Flash is the first natively multimodal model in the GLM-5 series. With 320B total parameters and just 18B active parameters, it outperforms GLM-5.2 across benchmarks and real-world workloads at one-tenth the price, while approaching Claude Opus 4.8 on coding and agentic benchmarks."
+    },
+    {
+      "title": "GLM-5.3-Flash - lmstudio.ai",
+      "url": "https://lmstudio.ai/models/glm-5.3-flash",
+      "snippet": "GLM-5.3-Flash is Z.ai&#x27;s first natively multimodal model in the GLM-5 series. It is a 320B Mixture-of-Experts model with 18B active parameters, built for coding, agentic work, and visual tasks, and released under the MIT License."
+    }
+  ]
+}

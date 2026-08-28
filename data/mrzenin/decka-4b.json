@@ -1,0 +1,99 @@
+{
+  "schema": 1,
+  "id": "mrzenin/Decka-4B",
+  "slug": "mrzenin-decka-4b",
+  "author": "mrzenin",
+  "url": "https://huggingface.co/mrzenin/Decka-4B",
+  "created_at": "2026-08-04T08:49:12.000Z",
+  "updated_at": "2026-08-28T09:50:57.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_5",
+    "image-text-to-text",
+    "unsloth",
+    "heretic",
+    "uncensored",
+    "abliterated",
+    "fine tune",
+    "creative",
+    "creative writing",
+    "fiction writing",
+    "plot generation",
+    "sub-plot generation",
+    "story generation",
+    "scene continue",
+    "storytelling",
+    "fiction story",
+    "science fiction",
+    "romance",
+    "all genres",
+    "story",
+    "writing",
+    "vivid prosing",
+    "vivid writing",
+    "fiction",
+    "roleplaying",
+    "bfloat16",
+    "all use cases",
+    "conversational",
+    "en",
+    "zh",
+    "base_model:coder3101/Qwen3.5-4B-heretic",
+    "base_model:finetune:coder3101/Qwen3.5-4B-heretic",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 117,
+  "trending_score": 0,
+  "parameters": 4539265536,
+  "parameters_human": "4.54B",
+  "storage_bytes": 9098609775,
+  "storage_human": "9.1 GB",
+  "base_model": "coder3101/Qwen3.5-4B-heretic",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "mrzenin/Cortana-4B-GGUF · Hugging Face",
+      "url": "https://huggingface.co/mrzenin/Cortana-4B-GGUF",
+      "snippet": "mrzenin / Cortana-4B-GGUF like 2 GGUF conversational Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "mrzenin (none) - Hugging Face",
+      "url": "https://huggingface.co/mrzenin/models",
+      "snippet": "User profile of none on Hugging Face Recent Activity updated a modelabout 9 hours ago mrzenin/Cortana-4B-GGUF updated a modelabout 11 hours ago mrzenin/Cortana-4B published a modelabout 11 hours ago mrzenin/Cortana-4B View all activity"
+    },
+    {
+      "title": "Cortana 4B by mrzenin — VRAM 9.1GB | LLM Explorer",
+      "url": "https://llm-explorer.com/model/mrzenin%2FCortana-4B,4KjV9lVTk5m9gNbCAJXfSw",
+      "snippet": "Cortana 4B is an open-source 4b LLM by mrzenin. VRAM 9.1GB. Compare benchmarks, capabilities, and deployment details on LLM Explorer."
+    },
+    {
+      "title": "Cortana 4b Gguf - AI Model Insights & Benchmarks",
+      "url": "https://free2aitools.com/model/mrzenin/cortana-4b-gguf",
+      "snippet": "🆔 Identity & Source id hf-model--mrzenin--cortana-4b-gguf slug mrzenin--cortana-4b-gguf source huggingface author mrzenin license tags gguf, endpoints_compatible, region:us, conversational"
+    },
+    {
+      "title": "LLM Leaderboard 2026: Compare 300+ Top AI Models by Intelligence, Speed ...",
+      "url": "https://llm-stats.com/leaderboards/llm-leaderboard",
+      "snippet": "The LLM Leaderboard — independent ranking of GPT, Claude, Gemini, Llama, DeepSeek and 300+ AI models by intelligence, speed and price. Filter by provider, license, modality and context window; sort by every benchmark. Composite LLM Stats Score updated continuously from public benchmarks and live API metrics."
+    }
+  ]
+}

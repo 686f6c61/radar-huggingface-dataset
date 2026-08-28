@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "WoofyLemo/VoxSRT-qwen3-asr-1.7b-with-aligner",
+  "slug": "woofylemo-voxsrt-qwen3-asr-1-7b-with-aligner",
+  "author": "WoofyLemo",
+  "url": "https://huggingface.co/WoofyLemo/VoxSRT-qwen3-asr-1.7b-with-aligner",
+  "created_at": "2026-08-28T06:17:49.000Z",
+  "updated_at": "2026-08-28T06:18:14.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "automatic-speech-recognition",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "voxsrt",
+    "local-inference",
+    "automatic-speech-recognition",
+    "base_model:Qwen/Qwen3-ASR-1.7B",
+    "base_model:finetune:Qwen/Qwen3-ASR-1.7B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 6534066056,
+  "storage_human": "6.5 GB",
+  "base_model": "Qwen/Qwen3-ASR-1.7B, Qwen/Qwen3-ForcedAligner-0.6B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - QwenLM/Qwen3-ASR: Qwen3-ASR is an open-source series of ASR ...",
+      "url": "https://github.com/QwenLM/Qwen3-ASR",
+      "snippet": "The Qwen3-ASR family includes Qwen3-ASR-1.7B and Qwen3-ASR-.6B, which support language identification and ASR for 52 languages and dialects. Both leverage large-scale speech training data and the strong audio understanding capability of their foundation model, Qwen3-Omni."
+    },
+    {
+      "title": "GitHub - baonn/qwen3-asr-repo-: Qwen3-ASR is an open-source series of ...",
+      "url": "https://github.com/baonn/qwen3-asr-repo-",
+      "snippet": "The Qwen3-ASR family includes Qwen3-ASR-1.7B and Qwen3-ASR-.6B, which support language identification and ASR for 52 languages and dialects. Both leverage large-scale speech training data and the strong audio understanding capability of their foundation model, Qwen3-Omni. Experiments show that the 1.7B version achieves state-of-the-art performance among open-source ASR models and is ..."
+    },
+    {
+      "title": "Qwen3-ASR Technical Report - arXiv.org",
+      "url": "https://arxiv.org/html/2601.21337",
+      "snippet": "Abstract In this report, we introduce Qwen3-ASR family, which includes two powerful all-in-one speech recognition models and a novel non-autoregressive speech forced alignment model. Qwen3-ASR-1.7B and Qwen3-ASR-.6B are ASR models that support language identification and ASR for 52 languages and dialects. Both of them leverage large-scale speech training data and the strong audio ..."
+    },
+    {
+      "title": "Qwen3 ASR · Hugging Face",
+      "url": "https://huggingface.co/docs/transformers/main/model_doc/qwen3_asr",
+      "snippet": "Qwen3 ASR is an automatic speech recognition model from Alibaba&#x27;s Qwen team that combines a Whisper-style audio encoder with a Qwen3 language model decoder for speech-to-text transcription."
+    },
+    {
+      "title": "Qwen3-ASR Demo - a Hugging Face Space by Qwen",
+      "url": "https://huggingface.co/spaces/Qwen/Qwen3-ASR",
+      "snippet": "Qwen3-ASR is a state-of-the-art automatic speech recognition model that supports 52+ languages and dialect with high accuracy. This demo showcases the 1.7B model which provides excellent multilingual recognition capabilities."
+    }
+  ]
+}

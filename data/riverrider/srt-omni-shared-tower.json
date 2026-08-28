@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "RiverRider/srt-omni-shared-tower",
+  "slug": "riverrider-srt-omni-shared-tower",
+  "author": "RiverRider",
+  "url": "https://huggingface.co/RiverRider/srt-omni-shared-tower",
+  "created_at": "2026-08-28T11:44:50.000Z",
+  "updated_at": "2026-08-28T11:44:53.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "feature-extraction",
+  "library": "pytorch",
+  "languages": [],
+  "tags": [
+    "pytorch",
+    "multimodal",
+    "retrieval",
+    "cross-modal",
+    "feature-extraction",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 8429181,
+  "storage_human": "8 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "RiverRider/SRT · Hugging Face",
+      "url": "https://huggingface.co/RiverRider/SRT",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "One Model, Two Jobs - a Hugging Face Space by RiverRider",
+      "url": "https://huggingface.co/spaces/RiverRider/srt-browser-demo",
+      "snippet": "One model, two jobs A 0.6 billion parameter model runs in this tab, on your hardware. When you send it a message it writes a reply, and the same model also searches a gallery of photographs. Not two models and not a call to an embedding service: your message is read once more by the same frozen weights, and a 2.1 MB linear head turns that hidden state into the vector that searches. Those ..."
+    },
+    {
+      "title": "Tinkercad",
+      "url": "https://www.tinkercad.com/",
+      "snippet": "Tinkercad is a free, easy-to-use app for 3D design, electronics, and coding."
+    },
+    {
+      "title": "Civitai | Discover and Create AI Art",
+      "url": "https://civitai.red/",
+      "snippet": "Explore thousands of free Stable Diffusion & Flux models, create and share AI-generated art, and join the world&#x27;s largest community of generative AI creators."
+    },
+    {
+      "title": "Free VRChat Avatars, Models & Unity Assets - VRCMods",
+      "url": "https://vrcmods.com/",
+      "snippet": "Explore thousands of free VRChat avatars, 3D models, animations, shaders, and Unity assets shared by the VRCMods community."
+    }
+  ]
+}

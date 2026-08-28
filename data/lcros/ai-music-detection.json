@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "lcros/ai-music-detection",
+  "slug": "lcros-ai-music-detection",
+  "author": "lcros",
+  "url": "https://huggingface.co/lcros/ai-music-detection",
+  "created_at": "2026-08-28T09:21:12.000Z",
+  "updated_at": "2026-08-28T09:45:33.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "audio-classification",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "audio",
+    "audio-classification",
+    "music",
+    "scikit-learn",
+    "ai-generated-music-detection",
+    "en",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 278260972,
+  "storage_human": "278 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - lcrosvila/ai-music-detection: This is the official repository ...",
+      "url": "https://github.com/lcrosvila/ai-music-detection",
+      "snippet": "This is the official repository for the paper Detecting AI-Generated Music - lcrosvila/ai-music-detection"
+    },
+    {
+      "title": "PDF The AI Music Arms Race: On the Detection of AI-Generated Music",
+      "url": "https://transactions.ismir.net/articles/254/files/68774364a6605.pdf",
+      "snippet": "ABSTRACT Several companies now offer platforms for users to create music at unprecedented scales by textual prompting. As the quality of this music rises, concern grows about how to differentiate AI-generated music from human-made music, with implications for content identification, copyright enforcement, and music recommendation sys-tems. This article explores the detection of AI-generated ..."
+    },
+    {
+      "title": "ISMIR 2025: The AI Music Arms Race: On the Detection of AI-Generated Music",
+      "url": "https://ismir2025program.ismir.net/poster_410.html",
+      "snippet": "This article explores the detection of AI‑generated music by assembling and studying a large dataset of music audio recordings (30,000 full tracks totaling 1,770 h, 33 m, and 31 s in duration), of which 10,000 are from the Million Song Dataset (Bertin‑Mahieux et al., 2011) and 20,000 are generated and released by users of two popular AI ..."
+    },
+    {
+      "title": "(PDF) The AI Music Arms Race: On the Detection of AI-Generated Music",
+      "url": "https://www.researchgate.net/publication/393035433_The_AI_Music_Arms_Race_On_the_Detection_of_AI-Generated_Music",
+      "snippet": "This article explores the detection of AI‑generated music by assembling and studying a large dataset of music audio recordings (30,000 full tracks totaling 1,770 h, 33 m, and 31 s in duration ..."
+    },
+    {
+      "title": "The AI Music Arms Race: On the Detection of AI-Generated Music",
+      "url": "https://transactions.ismir.net/articles/10.5334/tismir.254",
+      "snippet": "This article explores the detection of AI‑generated music by assembling and studying a large dataset of music audio recordings (30,000 full tracks totaling 1,770 h, 33 m, and 31 s in duration), of which 10,000 are from the Million Song Dataset (Bertin‑Mahieux et al., 2011) and 20,000 are generated and released by users of two popular AI ..."
+    }
+  ]
+}

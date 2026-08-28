@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "keithtwesigye/lunyoro-nllb_lun2en",
+  "slug": "keithtwesigye-lunyoro-nllb_lun2en",
+  "author": "keithtwesigye",
+  "url": "https://huggingface.co/keithtwesigye/lunyoro-nllb_lun2en",
+  "created_at": "2026-04-08T12:43:24.000Z",
+  "updated_at": "2026-08-28T09:53:36.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "translation",
+  "library": null,
+  "languages": [
+    "rw",
+    "en"
+  ],
+  "tags": [
+    "safetensors",
+    "m2m_100",
+    "translation",
+    "lunyoro",
+    "rutooro",
+    "runyoro",
+    "nllb",
+    "nllb-200",
+    "uganda",
+    "rw",
+    "en",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 56,
+  "trending_score": 0,
+  "parameters": 615073792,
+  "parameters_human": "615.1M",
+  "storage_bytes": 42037026393,
+  "storage_human": "42.0 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "keithtwesigye/lunyoro-nllb_lun2en · Hugging Face",
+      "url": "https://huggingface.co/keithtwesigye/lunyoro-nllb_lun2en",
+      "snippet": "lunyoro-nllb_lun2en Fine-tuned NLLB-200 model for Lunyoro/Rutooro → English translation. Lunyoro-Rutooro is a Bantu language spoken by the Bunyoro-Kitara and Tooro kingdoms in western Uganda."
+    },
+    {
+      "title": "keithtwesigye/lunyoro-nllb-lun2en · Hugging Face",
+      "url": "https://huggingface.co/keithtwesigye/lunyoro-nllb-lun2en",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "TRANSLATOR/lunyoro-translator/README.md at main · K227-arch ... - GitHub",
+      "url": "https://github.com/K227-arch/TRANSLATOR/blob/main/lunyoro-translator/README.md",
+      "snippet": "Features English ↔ Lunyoro/Rutooro translation (MarianMT + NLLB-200) Dictionary lookup with example sentences AI chat assistant powered by LLaMA 3.2 (via Ollama) PDF/DOCX document summarization and translation Voice translation Spellcheck Domain-aware translation (Medical, Education, Agriculture, etc.) Model comparison view (MarianMT vs NLLB-200)"
+    },
+    {
+      "title": "GitHub - K227-arch/TRANSLATOR",
+      "url": "https://github.com/K227-arch/TRANSLATOR",
+      "snippet": "English ↔ Lunyoro/Rutooro translation (MarianMT + NLLB-200) Selective RAG — high-confidence corpus retrieval (score >= 0.92) before neural MT Linguistic Knowledge Graph — explainable AI, grammar tutoring, intelligent correction Dictionary lookup with example sentences AI chat assistant powered by Qwen 2.5 7B (via HuggingFace Inference API) PDF/DOCX document summarization and translation ..."
+    },
+    {
+      "title": "Meta AI Research Topic - No Language Left Behind",
+      "url": "https://ai.meta.com/research/no-language-left-behind/",
+      "snippet": "No Language Left Behind (NLLB) is a first-of-its-kind, AI breakthrough project that open-sources models capable of delivering evaluated, high-quality translations directly between 200 languages—including low-resource languages like Asturian, Luganda, Urdu and more. It aims to give people the opportunity to access and share web content in their native language, and communicate with anyone ..."
+    }
+  ]
+}

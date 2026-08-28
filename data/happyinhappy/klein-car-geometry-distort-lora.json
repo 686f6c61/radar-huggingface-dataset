@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "happyinhappy/klein-car-geometry-distort-lora",
+  "slug": "happyinhappy-klein-car-geometry-distort-lora",
+  "author": "happyinhappy",
+  "url": "https://huggingface.co/happyinhappy/klein-car-geometry-distort-lora",
+  "created_at": "2026-08-28T10:25:52.000Z",
+  "updated_at": "2026-08-28T10:25:56.000Z",
+  "license": "card-only-weights-on-request",
+  "license_family": "unknown",
+  "pipeline_tag": "image-to-image",
+  "library": "diffusers",
+  "languages": [],
+  "tags": [
+    "diffusers",
+    "image-to-image",
+    "lora",
+    "automotive",
+    "geometry",
+    "compositing",
+    "flux",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 670310,
+  "storage_human": "670310 B",
+  "base_model": "black-forest-labs/FLUX.2-klein",
+  "formats": [
+    "diffusers"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "happyinhappy/klein-car-geometry-restore-lora · Hugging Face",
+      "url": "https://huggingface.co/happyinhappy/klein-car-geometry-restore-lora",
+      "snippet": "Instructions to use happyinhappy/klein-car-geometry-restore-lora with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "Models - Hugging Face",
+      "url": "https://huggingface.co/models?search=lora",
+      "snippet": "Explore machine learning models. CQdesign/LTX-2.5-CQ-Video-and-Image-Enhancer-LoRAs"
+    },
+    {
+      "title": "lora AI Models | Civitai",
+      "url": "https://civitai.com/tag/lora",
+      "snippet": "Browse 28,875 Stable Diffusion & Flux models, LoRAs, checkpoints, and embeddings tagged with lora."
+    },
+    {
+      "title": "10,000+ LoRA Models for Flux, Wan & SDXL | Browse Free",
+      "url": "https://loraai.io/loras",
+      "snippet": "Browse 10,000+ LoRA models for Flux, WAN, and SDXL. Character LoRAs, style LoRAs, and concept LoRAs with examples. Filter by model, tag, or search."
+    },
+    {
+      "title": "Google Gemini",
+      "url": "https://gemini.google.com/",
+      "snippet": "Get assistance with writing, planning, learning, and more from Google AI."
+    }
+  ]
+}

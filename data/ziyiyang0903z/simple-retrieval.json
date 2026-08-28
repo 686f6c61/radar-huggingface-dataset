@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "ziyiyang0903z/simple-retrieval",
+  "slug": "ziyiyang0903z-simple-retrieval",
+  "author": "ziyiyang0903z",
+  "url": "https://huggingface.co/ziyiyang0903z/simple-retrieval",
+  "created_at": "2026-08-28T07:53:57.000Z",
+  "updated_at": "2026-08-28T07:54:07.000Z",
+  "license": "bsd-3-clause",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "deit",
+    "pytorch",
+    "retrieval",
+    "license:bsd-3-clause",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 16576,
+  "parameters_human": "16576",
+  "storage_bytes": 66784,
+  "storage_human": "66784 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "[2308.03983] SimplyRetrieve: A Private and Lightweight Retrieval ...",
+      "url": "https://arxiv.org/abs/2308.03983",
+      "snippet": "Large Language Model (LLM) based Generative AI systems have seen significant progress in recent years. Integrating a knowledge retrieval architecture allows for seamless integration of private data into publicly available Generative AI systems using pre-trained LLM without requiring additional model fine-tuning. Moreover, Retrieval-Centric Generation (RCG) approach, a promising future research ..."
+    },
+    {
+      "title": "Paper page - SimplyRetrieve: A Private and Lightweight Retrieval ...",
+      "url": "https://huggingface.co/papers/2308.03983",
+      "snippet": "Abstract Large Language Model (LLM) based Generative AI systems have seen significant progress in recent years. Integrating a knowledge retrieval architecture allows for seamless integration of private data into publicly available Generative AI systems using pre-trained LLM without requiring additional model fine-tuning."
+    },
+    {
+      "title": "GitHub - RCGAI/SimplyRetrieve: Lightweight chat AI platform featuring ...",
+      "url": "https://github.com/RCGAI/SimplyRetrieve",
+      "snippet": "SimplyRetrieve is an open-source tool with the goal of providing a fully localized, lightweight and user-friendly GUI and API platform for Retrieval-Centric Generation (RCG) approach to the machine learning community. We aim to contribute to the development of safe, interpretable, and responsible ..."
+    },
+    {
+      "title": "SimplyRetrieve: A Private and Lightweight Retrieval ... - ResearchGate",
+      "url": "https://www.researchgate.net/publication/372989295_SimplyRetrieve_A_Private_and_Lightweight_Retrieval-Centric_Generative_AI_Tool",
+      "snippet": "Large Language Model (LLM) based Generative AI systems have seen significant progress in recent years. Integrating a knowledge retrieval architecture allows for seamless integration of private ..."
+    },
+    {
+      "title": "arXiv:2308.03983v1 [cs.CL] 8 Aug 2023",
+      "url": "https://arxiv.org/pdf/2308.03983v1",
+      "snippet": "Abstract Large Language Model (LLM) based Genera-tive AI systems have seen significant progress in recent years. Integrating a knowledge re-trieval architecture allows for seamless inte-gration of private data into publicly available Generative AI systems using pre-trained LLM without requiring additional model fine-tuning. Moreover, Retrieval-Centric Generation (RCG) approach, a promising ..."
+    }
+  ]
+}

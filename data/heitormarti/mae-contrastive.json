@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "Heitormarti/mae-contrastive",
+  "slug": "heitormarti-mae-contrastive",
+  "author": "Heitormarti",
+  "url": "https://huggingface.co/Heitormarti/mae-contrastive",
+  "created_at": "2026-08-28T09:56:15.000Z",
+  "updated_at": "2026-08-28T09:56:24.000Z",
+  "license": "bsd-3-clause",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "mae",
+    "pytorch",
+    "contrastive",
+    "license:bsd-3-clause",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 33088,
+  "parameters_human": "33088",
+  "storage_bytes": 132832,
+  "storage_human": "132832 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - shlokk/mae-contrastive: Official implementation of \"A simple ...",
+      "url": "https://github.com/shlokk/mae-contrastive",
+      "snippet": "Official implementation of \"A simple, efficient and scalable contrastive masked autoencoder for learning visual representations\". - shlokk/mae-contrastive"
+    },
+    {
+      "title": "GitHub - BerkIGuler/WirelessContrastiveMaskedLearning",
+      "url": "https://github.com/BerkIGuler/WirelessContrastiveMaskedLearning",
+      "snippet": "This repository is the official implementation of the NeurIPS&#x27;25 best paper runner-up awardee at the AI4NextG Workshop. \"Robust Channel Representation for Wireless: A Multi-Task Masked Contrastive Approach\" (Also see) We propose a transformer-based foundation model designed specifically for wireless channel representation learning: ContraWiMAE (Wireless Masked Autoencoder): A transformer-based ..."
+    },
+    {
+      "title": "Contrastive Trajectory Distillation: a Novel Method for ... - Ispor",
+      "url": "https://www.ispor.org/heor-resources/presentations-database/presentation-cti/ispor-2026/poster-session-2-4/contrastive-trajectory-distillation-a-novel-method-for-optimizing-large-language-model-embeddings-in-maternal-health-prediction",
+      "snippet": "We propose Contrastive Trajectory Distillation (CTD), a framework leveraging Large Language Models (LLMs) to transform longitudinal patient histories into high-fidelity predictive embeddings for maternal health outcomes."
+    },
+    {
+      "title": "KDC-MAE: Knowledge Distilled Contrastive Mask Auto-Encoder",
+      "url": "https://arxiv.org/abs/2411.12270",
+      "snippet": "In this work, we attempted to extend the thought and showcase a way forward for the Self-supervised Learning (SSL) learning paradigm by combining contrastive learning, self-distillation (knowledge distillation) and masked data modelling, the three major SSL frameworks, to learn a joint and coordinated representation. The proposed technique of SSL learns by the collaborative power of different ..."
+    },
+    {
+      "title": "KDC-MAE: Knowledge Distilled Contrastive Mask Auto-Encoder",
+      "url": "https://arxiv.org/html/2411.12270",
+      "snippet": "This motivates us to propose Knowledge Distilled Contrastive Mask Auto-Encoder (KDC-MAE), an optimized manner to use modular knowledge distillation along with masked data modelling, and inter-modal contrastive learning to learn joint multimodal correspondence of audio and video for unified learning representation."
+    }
+  ]
+}

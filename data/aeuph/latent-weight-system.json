@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "AEUPH/latent-weight-system",
+  "slug": "aeuph-latent-weight-system",
+  "author": "AEUPH",
+  "url": "https://huggingface.co/AEUPH/latent-weight-system",
+  "created_at": "2026-08-28T09:50:27.000Z",
+  "updated_at": "2026-08-28T09:50:27.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "7 best open weight AI models I&#x27;ve tested in 2026 - gumloop.com",
+      "url": "https://www.gumloop.com/blog/open-weight-ai-models",
+      "snippet": "Want to learn what the best open weight AI models are right now? Here are the top models I&#x27;ve tested and use in my actual day to day workflows."
+    },
+    {
+      "title": "index.html · AEUPH/COSMOS-AI-ATOMIC-PRECISION-UPSCALE-ENGINE at main",
+      "url": "https://huggingface.co/spaces/AEUPH/COSMOS-AI-ATOMIC-PRECISION-UPSCALE-ENGINE/blob/main/index.html",
+      "snippet": "<script src=\"https://unpkg.com/@babel/standalone/babel.min.js\"></script>"
+    },
+    {
+      "title": "AEUPH/COSMOS-AI-ATOMIC-PRECISION-UPSCALE-ENGINE at main",
+      "url": "https://huggingface.co/spaces/AEUPH/COSMOS-AI-ATOMIC-PRECISION-UPSCALE-ENGINE/tree/main",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GitHub - xigh/open-weight-models: Curated list of open-weight AI models ...",
+      "url": "https://github.com/xigh/open-weight-models",
+      "snippet": "A curated list of open-weight AI models with commercially exploitable licenses, verified benchmarks, and no geographic restrictions. Built to decide which models to support in herbert-rs, a local LLM inference engine in Rust and hand-written assembly."
+    },
+    {
+      "title": "Best Self-Hosted LLM Leaderboard 2026 | Open-Weight Model Rankings for ...",
+      "url": "https://onyx.app/self-hosted-llm-leaderboard",
+      "snippet": "The definitive self-hosted LLM leaderboard — ranking the best open-weight models for enterprise self-hosting across quality, speed, hardware requirements, and cost. Compare Llama, DeepSeek, Qwen, Mistral, and more."
+    }
+  ]
+}

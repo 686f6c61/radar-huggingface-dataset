@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "wasif-69/tesla",
+  "slug": "wasif-69-tesla",
+  "author": "wasif-69",
+  "url": "https://huggingface.co/wasif-69/tesla",
+  "created_at": "2026-08-28T05:46:07.000Z",
+  "updated_at": "2026-08-28T06:32:30.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "mr_tesla",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 431452160,
+  "parameters_human": "431.5M",
+  "storage_bytes": 3451774222,
+  "storage_human": "3.5 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "@_wasif69_) • Instagram photos and videos",
+      "url": "https://www.instagram.com/_wasif69_/",
+      "snippet": "13 followers · 11 following. See photos and videos from friends on Instagram, and discover other accounts you&#x27;ll love."
+    },
+    {
+      "title": "Man takes 69 rides in a Tesla Robotaxi to put it through stress test to ...",
+      "url": "https://supercarblondie.com/man-takes-69-rides-in-tesla-robotaxi-austin-texas-see-if-he-could-break-it/",
+      "snippet": "YouTuber AI DRIVR decided to stress-test the Tesla Robotaxi by taking 69 rides, one after the other. He did it partly to prove that the Robotaxi could do that without issues, but also to see whether the system could somehow learn from previous rides in real time. Interestingly, it worked exactly the way he predicted and hoped for."
+    },
+    {
+      "title": "AI Image Detector: Detect AI Generated Images",
+      "url": "https://wasitai.com/",
+      "snippet": "Was a photo created by an AI or a human? Identify AI generated images with this AI image detector. Detect fake images made by AI."
+    },
+    {
+      "title": "GitHub - wasif-69/decipher",
+      "url": "https://github.com/wasif-69/decipher",
+      "snippet": "Contribute to wasif-69/decipher development by creating an account on GitHub."
+    },
+    {
+      "title": "Tesla VIN decoder.",
+      "url": "https://tesla-info.com/vin-decoder.php",
+      "snippet": "How to find your Tesla Build Date We can generally calculate the build date of your Tesla from knowing the Model, the Year of production, the Factory and the production sequence number. We work find the build dates for cars closest to the given VIN, work out the build rate at the time and extrapolate using this information."
+    }
+  ]
+}

@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "mradermacher/cobolx-1.5b-GGUF",
+  "slug": "mradermacher-cobolx-1-5b-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/cobolx-1.5b-GGUF",
+  "created_at": "2026-08-28T05:49:03.000Z",
+  "updated_at": "2026-08-28T05:57:22.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "cobol",
+    "code",
+    "legacy-modernization",
+    "static-analysis",
+    "en",
+    "base_model:thinkingdbx/cobolx-1.5b",
+    "base_model:quantized:thinkingdbx/cobolx-1.5b",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1543714304,
+  "parameters_human": "1.54B",
+  "storage_bytes": 14206902912,
+  "storage_human": "14.2 GB",
+  "base_model": "thinkingdbx/cobolx-1.5b",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "mradermacher/Agent-G2-alfworld-1.5b-GGUF · Hugging Face",
+      "url": "https://huggingface.co/mradermacher/Agent-G2-alfworld-1.5b-GGUF",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "mradermacher/1.5B-v2-GGUF · Hugging Face",
+      "url": "https://huggingface.co/mradermacher/1.5B-v2-GGUF",
+      "snippet": "Downloads last month 0 GGUF Model size 1.78B params Architecture qwen2 Hardware compatibility"
+    },
+    {
+      "title": "GGUF Model Discovery - Browse & Download AI Models",
+      "url": "https://local-ai-zone.github.io/",
+      "snippet": "Discover and download GGUF format AI models. Browse and direct download thousands of quantized AI models with detailed information, download counts, and direct links."
+    },
+    {
+      "title": "How to Run Ornith 1.5 9B Locally: GGUF, Hardware and Benchmarks",
+      "url": "https://atomic.chat/blog/guides/how-to-run-ornith-1-5-locally",
+      "snippet": "We publish separate GGUF builds for it. Ornith 1.5 9B is the dense vision-language model this guide is about, and the smallest of the three: it fits an 8 GB GPU or a 16 GB MacBook, the cheapest way to run Ornith locally."
+    },
+    {
+      "title": "mradermacher quant download page",
+      "url": "https://hf.tst.eu/model",
+      "snippet": "mradermacher quant download page BETA - this page is not finished: more explanations and changes are to come, but it should be functional."
+    }
+  ]
+}

@@ -5,7 +5,7 @@
   "author": "robosta-tr01",
   "url": "https://huggingface.co/robosta-tr01/act_so101_pick_place",
   "created_at": "2026-08-17T07:06:36.000Z",
-  "updated_at": "2026-08-19T09:07:08.000Z",
+  "updated_at": "2026-08-27T06:45:17.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "robotics",
@@ -26,8 +26,8 @@
   "trending_score": 0,
   "parameters": 51668614,
   "parameters_human": "51.7M",
-  "storage_bytes": 413413584,
-  "storage_human": "413 MB",
+  "storage_bytes": 620128432,
+  "storage_human": "620 MB",
   "base_model": null,
   "formats": [
     "safetensors"

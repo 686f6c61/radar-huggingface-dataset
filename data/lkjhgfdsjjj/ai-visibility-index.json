@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "lkjhgfdsjjj/ai-visibility-index",
+  "slug": "lkjhgfdsjjj-ai-visibility-index",
+  "author": "lkjhgfdsjjj",
+  "url": "https://huggingface.co/lkjhgfdsjjj/ai-visibility-index",
+  "created_at": "2026-08-28T08:06:36.000Z",
+  "updated_at": "2026-08-28T08:06:37.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "ai-visibility",
+    "llms-txt",
+    "agents-txt",
+    "x402",
+    "geo",
+    "seo",
+    "license:cc-by-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "5W AI Visibility Index | Brand Citations - 5wpr.com",
+      "url": "https://www.5wpr.com/ai-visibility-index/",
+      "snippet": "The 5W AI Visibility Index Series tracks how 500+ brands get cited across ChatGPT, Claude, Perplexity, Gemini, and Google AI Overviews."
+    },
+    {
+      "title": "What Is an AI Visibility Index? Scoring and Examples",
+      "url": "https://visibilityindex.ai/what-is-ai-visibility-index",
+      "snippet": "An AI Visibility Index measures whether AI systems include, cite or recommend a business when people ask for the best products, services or providers in a market. Plain-English definition: An AI Visibility Index is a structured score that summarizes how visible a business or brand is across AI-generated recommendations."
+    },
+    {
+      "title": "Semrush&#x27;s 2026 AI Visibility Index: What 126 Million Prompts Reveal ...",
+      "url": "https://www.elaventra.com/blog/semrush-ai-visibility-index-2026",
+      "snippet": "Semrush&#x27;s 2026 AI Visibility Index analyzed 126 million AI prompts and found 45% of marketers can&#x27;t measure brand visibility in AI answers."
+    },
+    {
+      "title": "AI Visibility Index Reports - avenuez.com",
+      "url": "https://avenuez.com/aivx-ai-visibility-reports-2026/",
+      "snippet": "The AI Visibility Index is the industry-specific, strategy-packed resource for brands where AI Search is actively reshaping discovery and purchase decisions. Built on real user prompts across 50+ industries, it evaluates 20+ proprietary power signals - measured through Z-Score - to identify who&#x27;s winning, who&#x27;s gaining ground, and why. More than data, the AIVx spans multiple tools and ..."
+    },
+    {
+      "title": "VisibilityIndex.ai | AI Visibility Audits for Local Businesses",
+      "url": "https://visibilityindex.ai/",
+      "snippet": "See whether AI search and AI assistants mention or recommend your local business. Evidence based audits, competitor benchmarks, prioritized findings, and PDF reports."
+    }
+  ]
+}

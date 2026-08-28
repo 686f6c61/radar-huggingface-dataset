@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "RiverRider/srt-omni-xvendor-towers",
+  "slug": "riverrider-srt-omni-xvendor-towers",
+  "author": "RiverRider",
+  "url": "https://huggingface.co/RiverRider/srt-omni-xvendor-towers",
+  "created_at": "2026-08-28T11:44:54.000Z",
+  "updated_at": "2026-08-28T11:44:58.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "feature-extraction",
+  "library": "pytorch",
+  "languages": [],
+  "tags": [
+    "pytorch",
+    "multimodal",
+    "retrieval",
+    "cross-model",
+    "model-comparison",
+    "feature-extraction",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 92522938,
+  "storage_human": "93 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "RiverRider/SRT · Hugging Face",
+      "url": "https://huggingface.co/RiverRider/SRT",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "RiverRider/srt-adapter-v18 · Hugging Face",
+      "url": "https://huggingface.co/RiverRider/srt-adapter-v18",
+      "snippet": "RiverRider / srt-adapter-v18 like 0 Feature Extraction English srt-adapter srt semiotic-reflexive-transformer introspection interpretability adapter frozen-backbone custom_code License:apache-2.0 Model card FilesFiles and versions xet Community Copy to bucket new srt-adapter-v18"
+    },
+    {
+      "title": "LLM Leaderboard 2026: Compare 300+ Top AI Models by Intelligence, Speed ...",
+      "url": "https://llm-stats.com/leaderboards/llm-leaderboard",
+      "snippet": "The LLM Leaderboard — independent ranking of GPT, Claude, Gemini, Llama, DeepSeek and 300+ AI models by intelligence, speed and price. Filter by provider, license, modality and context window; sort by every benchmark. Composite LLM Stats Score updated continuously from public benchmarks and live API metrics."
+    },
+    {
+      "title": "Best LLM Leaderboard 2026 | AI Model Rankings, Benchmarks & Pricing",
+      "url": "https://onyx.app/llm-leaderboard",
+      "snippet": "The definitive LLM leaderboard — ranking the best AI models including Claude, GPT, Gemini, DeepSeek, Llama, and more across coding, reasoning, math, agentic, and chat benchmarks. Compare LLM rankings, tier lists, and pricing."
+    },
+    {
+      "title": "LLM Rankings | OpenRouter",
+      "url": "https://openrouter.ai/rankings",
+      "snippet": "LLM rankings and AI leaderboard by real-world usage, ranked by tokens processed through the OpenRouter API. See which AI models developers actually use."
+    }
+  ]
+}

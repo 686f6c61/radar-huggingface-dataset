@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "jsl5710/TruthTorchLM-HC-proxies",
+  "slug": "jsl5710-truthtorchlm-hc-proxies",
+  "author": "jsl5710",
+  "url": "https://huggingface.co/jsl5710/TruthTorchLM-HC-proxies",
+  "created_at": "2026-08-28T05:38:13.000Z",
+  "updated_at": "2026-08-28T05:42:16.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "uncertainty-quantification",
+    "hallucination-detection",
+    "black-box",
+    "lora",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 10828185648,
+  "storage_human": "10.8 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - jsl5710/TruthTorchLM-HC",
+      "url": "https://github.com/jsl5710/TruthTorchLM-HC",
+      "snippet": "Contribute to jsl5710/TruthTorchLM-HC development by creating an account on GitHub."
+    },
+    {
+      "title": "jsl5710 (Jason Samuel Lucas) · GitHub",
+      "url": "https://github.com/jsl5710",
+      "snippet": "jsl5710 has 47 repositories available. Follow their code on GitHub."
+    },
+    {
+      "title": "TruthTorchLM — A Comprehensive Library for Predicting Truthfulness in ...",
+      "url": "https://www.truthtorchlm.com/",
+      "snippet": "EMNLP 2025 TruthTorchLM A comprehensive open-source Python library for predicting the truthfulness of Large Language Model outputs. Featuring 30+ truth methods with diverse trade-offs in computational cost, access level, and supervision type."
+    },
+    {
+      "title": "jsl5710 (Jason Lucas) - Hugging Face",
+      "url": "https://huggingface.co/jsl5710",
+      "snippet": "Multilingual, multidomain false claims detection in low-resource langauges."
+    },
+    {
+      "title": "TruthTorchLM: A Comprehensive Library for Predicting Truthfulness in ...",
+      "url": "https://arxiv.org/html/2507.08203v1",
+      "snippet": "TruthTorchLM is seamlessly compatible with both HuggingFace and LiteLLM, enabling support for locally hosted and API-based models. It also provides a unified interface for generation, evaluation, calibration, and long-form truthfulness prediction, along with a flexible framework for extending the library with new methods."
+    }
+  ]
+}

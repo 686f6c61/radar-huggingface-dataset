@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "audio-cpp/VibeVoice-7B-GGUF",
+  "slug": "audio-cpp-vibevoice-7b-gguf",
+  "author": "audio-cpp",
+  "url": "https://huggingface.co/audio-cpp/VibeVoice-7B-GGUF",
+  "created_at": "2026-08-28T07:15:47.000Z",
+  "updated_at": "2026-08-28T07:16:18.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-speech",
+  "library": "audio.cpp",
+  "languages": [],
+  "tags": [
+    "audio.cpp",
+    "gguf",
+    "text-to-speech",
+    "multi-speaker",
+    "long-form",
+    "base_model:vibevoice/VibeVoice-7B",
+    "base_model:quantized:vibevoice/VibeVoice-7B",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 10581659618,
+  "storage_human": "10.6 GB",
+  "base_model": "vibevoice/VibeVoice-7B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "cstr/VibeVoice-7B-GGUF · Hugging Face",
+      "url": "https://huggingface.co/cstr/VibeVoice-7B-GGUF",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "VibeVoice-7B - Hugging Face",
+      "url": "https://huggingface.co/vibevoice/VibeVoice-7B",
+      "snippet": "VibeVoice: A Frontier Open-Source Text-to-Speech Model VibeVoice is a novel framework designed for generating expressive, long-form, multi-speaker conversational audio, such as podcasts, from text."
+    },
+    {
+      "title": "GitHub - 0xShug0/audio.cpp: An all-in-one, pure C++ inference engine ...",
+      "url": "https://github.com/0xShug0/audio.cpp",
+      "snippet": "2026-06-25 to 2026-07-08: audio.cpp grew from the first released model wave into broad TTS, ASR, music generation, source separation, VAD, diarization, codec, and voice-conversion coverage, with VibeVoice 1.5B/7B, LoRA adapter loading, initial streaming support, and major CUDA Conv1DTransp speedups."
+    },
+    {
+      "title": "GitHub - microsoft/VibeVoice: Open-Source Frontier Voice AI",
+      "url": "https://github.com/microsoft/VibeVoice",
+      "snippet": "VibeVoice is a family of open-source frontier voice AI models that includes both Text-to-Speech (TTS) and Automatic Speech Recognition (ASR) models. A core innovation of VibeVoice is its use of continuous speech tokenizers (Acoustic and Semantic) operating at an ultra-low frame rate of 7.5 Hz. These tokenizers efficiently preserve audio fidelity while significantly boosting computational ..."
+    },
+    {
+      "title": "VibeVoice - microsoft.github.io",
+      "url": "https://microsoft.github.io/VibeVoice/",
+      "snippet": "VibeVoice is a novel framework designed for generating expressive, long-form, multi-speaker conversational audio, such as podcasts, from text. It addresses significant challenges in traditional Text-to-Speech (TTS) systems, particularly in scalability, speaker consistency, and natural turn-taking."
+    }
+  ]
+}

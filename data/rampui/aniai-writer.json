@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "Rampui/aniai-writer",
+  "slug": "rampui-aniai-writer",
+  "author": "Rampui",
+  "url": "https://huggingface.co/Rampui/aniai-writer",
+  "created_at": "2026-08-28T09:49:29.000Z",
+  "updated_at": "2026-08-28T09:49:47.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "text-generation-inference",
+    "unsloth",
+    "llama",
+    "trl",
+    "en",
+    "base_model:unsloth/llama-3-8b-Instruct-bnb-4bit",
+    "base_model:finetune:unsloth/llama-3-8b-Instruct-bnb-4bit",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 185042201,
+  "storage_human": "185 MB",
+  "base_model": "unsloth/llama-3-8b-Instruct-bnb-4bit",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Top AI Models for Writing in 2026 | Blog Picasso IA",
+      "url": "https://blog.picassoia.com/top-ai-models-for-writing",
+      "snippet": "Find out which AI writing models actually perform. Real comparisons covering tone, speed, accuracy, and creative output for every use case."
+    },
+    {
+      "title": "Rubii | Free AI Character Chat, Roleplay & AI Companions",
+      "url": "https://rubii.ai/",
+      "snippet": "Chat with AI characters and AI companions, start free AI roleplay, and create your own AI girlfriend, boyfriend, or original character on Rubii."
+    },
+    {
+      "title": "Best AI for Writing 2026 - Top Writing Models - llm-stats.com",
+      "url": "https://llm-stats.com/leaderboards/best-ai-for-writing",
+      "snippet": "Rankings of the best AI models for writing tasks. Compare models by writing quality, content generation, and writing capabilities."
+    },
+    {
+      "title": "AGNES AI - Free Omni-Modal AI API, World-Class AI Models & AI Applications",
+      "url": "https://agnes-ai.com/",
+      "snippet": "Agnes AI is an AI gateway, free AI API platform, and AI application ecosystem featuring Agnes, Echo, and Pavo. Get free AI API credits, create a free AI API key, use free AI API tokens, and access free AI API models for chatbots, AI agents, content tools, image generation, roleplay, productivity, and intelligent workflows."
+    },
+    {
+      "title": "Open models by OpenAI | OpenAI",
+      "url": "https://openai.com/open-models/",
+      "snippet": "Advanced open-weight reasoning models to customize for any use case and run anywhere."
+    }
+  ]
+}

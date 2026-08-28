@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "mistralai/Devstral-Small-2-24B-Instruct-2512",
+  "slug": "mistralai-devstral-small-2-24b-instruct-2512",
+  "author": "mistralai",
+  "url": "https://huggingface.co/mistralai/Devstral-Small-2-24B-Instruct-2512",
+  "created_at": "2025-11-28T11:27:11.000Z",
+  "updated_at": "2026-07-15T12:20:36.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "vllm",
+  "languages": [],
+  "tags": [
+    "vllm",
+    "safetensors",
+    "mistral3",
+    "mistral-common",
+    "arxiv:2501.19399",
+    "base_model:mistralai/Mistral-Small-3.1-24B-Base-2503",
+    "base_model:quantized:mistralai/Mistral-Small-3.1-24B-Base-2503",
+    "license:apache-2.0",
+    "fp8",
+    "deploy:azure",
+    "region:us"
+  ],
+  "likes": 652,
+  "downloads_30d": 193477,
+  "trending_score": 7,
+  "parameters": 24011361840,
+  "parameters_human": "24.01B",
+  "storage_bytes": 51653757679,
+  "storage_human": "51.7 GB",
+  "base_model": "mistralai/Mistral-Small-3.1-24B-Base-2503",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "mistralai/Devstral-Small-2-24B-Instruct-2512 · Hugging Face",
+      "url": "https://huggingface.co/mistralai/Devstral-Small-2-24B-Instruct-2512",
+      "snippet": "This model is licensed under the Apache 2.0 License. You must not use this model in a manner that infringes, misappropriates, or otherwise violates any third party&#x27;s rights, including intellectual property rights."
+    },
+    {
+      "title": "mistralai_Devstral-Small-2-24B-Instruct-2512-GGUF",
+      "url": "https://huggingface.co/bartowski/mistralai_Devstral-Small-2-24B-Instruct-2512-GGUF",
+      "snippet": "Llamacpp imatrix Quantizations of Devstral-Small-2-24B-Instruct-2512 by mistralai Prompt format Download a file (not the whole branch) from below: Embed/output weights Downloading using huggingface-cli ARM/AVX information Which file should I choose? Credits"
+    },
+    {
+      "title": "Devstral-Small-2-24B-Instruct-2512 | Benchmarks & Deploy Guide ...",
+      "url": "https://openmodelmap.com/model/mistralai/Devstral-Small-2-24B-Instruct-2512",
+      "snippet": "Devstral-Small-2-24B-Instruct-2512 by undefined. open-source AI model. Devstral-Small-2-24B-Instruct-2512 — open-source AI model on HuggingFace."
+    },
+    {
+      "title": "Mistralai Devstral Small 2 24b Instruct 2512 - GGUF Model",
+      "url": "https://local-ai-zone.github.io/models/mistralai-devstral-small-2-24b-instruct-2512.html",
+      "snippet": "Download Mistralai Devstral Small 2 24b Instruct 2512 GGUF model. 7.88 GB, 9,928 downloads, 52 likes."
+    },
+    {
+      "title": "Model Architecture: mistralai/Devstral-Small-2-24B-Instruct-2512",
+      "url": "https://weavers.neocities.org/architecture-encyclopedia/mistralai_Devstral_Small_2_24B_Instruct_2512_architecture",
+      "snippet": "Normalization Embedding Attention MLP Norm Embedding Clear Expand All Collapse All mistralai/Devstral-Small-2-24B-Instruct-2512 Mistral3Model 23.34B 100.0% vision_tower PixtralVisionModel"
+    }
+  ]
+}

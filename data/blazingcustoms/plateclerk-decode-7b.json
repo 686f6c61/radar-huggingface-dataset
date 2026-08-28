@@ -1,0 +1,81 @@
+{
+  "schema": 1,
+  "id": "BlazingCustoms/plateclerk-decode-7b",
+  "slug": "blazingcustoms-plateclerk-decode-7b",
+  "author": "BlazingCustoms",
+  "url": "https://huggingface.co/BlazingCustoms/plateclerk-decode-7b",
+  "created_at": "2026-08-28T06:10:51.000Z",
+  "updated_at": "2026-08-28T06:26:27.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gguf",
+    "qwen2",
+    "text-generation",
+    "text2text-generation",
+    "vanity-plates",
+    "dmv",
+    "lora",
+    "not-for-all-audiences",
+    "conversational",
+    "en",
+    "dataset:DarwinAnim8or/DMV-Plate-Review",
+    "base_model:Qwen/Qwen2.5-7B-Instruct",
+    "base_model:finetune:Qwen/Qwen2.5-7B-Instruct",
+    "license:apache-2.0",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 7615616512,
+  "parameters_human": "7.62B",
+  "storage_bytes": 33619235200,
+  "storage_human": "33.6 GB",
+  "base_model": "Qwen/Qwen2.5-7B-Instruct",
+  "formats": [
+    "gguf",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "BlazingCustoms (Blazing Customs) - Hugging Face",
+      "url": "https://huggingface.co/BlazingCustoms",
+      "snippet": "Org profile for Blazing Customs on Hugging Face, the AI community building the future."
+    },
+    {
+      "title": "Models - Hugging Face",
+      "url": "https://huggingface.co/models?other=verified-generation",
+      "snippet": "Explore machine learning models. 2 Base only Inference AvailableInference Edit filters Sort: Trending Active filters: verified-generation Clear all"
+    },
+    {
+      "title": "LLM Leaderboard 2026: Compare 300+ Top AI Models by Intelligence, Speed ...",
+      "url": "https://llm-stats.com/leaderboards/llm-leaderboard",
+      "snippet": "The LLM Leaderboard — independent ranking of GPT, Claude, Gemini, Llama, DeepSeek and 300+ AI models by intelligence, speed and price. Filter by provider, license, modality and context window; sort by every benchmark. Composite LLM Stats Score updated continuously from public benchmarks and live API metrics."
+    },
+    {
+      "title": "deepseek-v4-pro-0813 Model by Deepseek-ai | NVIDIA NIM",
+      "url": "https://build.nvidia.com/deepseek-ai/deepseek-v4-pro-0813",
+      "snippet": "DeepSeek V4 scales to 1M-token context windows with efficient MoE architecture for coding tasks."
+    },
+    {
+      "title": "Fara-7B: An Efficient Agentic Model for Computer Use",
+      "url": "https://www.microsoft.com/en-us/research/blog/fara-7b-an-efficient-agentic-model-for-computer-use/",
+      "snippet": "Fara-7B is our first agentic small language model for computer use. This experimental model includes robust safety measures to aid responsible deployment. Despite its size, Fara-7B holds its own against larger, more resource-intensive agentic systems:"
+    }
+  ]
+}

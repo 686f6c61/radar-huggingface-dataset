@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "csikasote/omniASR-CTC-1B-v2-Zulu-All",
+  "slug": "csikasote-omniasr-ctc-1b-v2-zulu-all",
+  "author": "csikasote",
+  "url": "https://huggingface.co/csikasote/omniASR-CTC-1B-v2-Zulu-All",
+  "created_at": "2026-08-28T08:48:38.000Z",
+  "updated_at": "2026-08-28T08:50:51.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "automatic-speech-recognition",
+  "library": "fairseq2",
+  "languages": [
+    "zu"
+  ],
+  "tags": [
+    "fairseq2",
+    "automatic-speech-recognition",
+    "omnilingual-asr",
+    "ctc",
+    "isiZulu",
+    "zulu",
+    "zu",
+    "base_model:facebook/omniASR-CTC-300M",
+    "base_model:finetune:facebook/omniASR-CTC-300M",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 3903093578,
+  "storage_human": "3.9 GB",
+  "base_model": "facebook/omniASR-CTC-300M",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "csikasote/omniASR-CTC-1B-v2-Zulu-All · Hugging Face",
+      "url": "https://huggingface.co/csikasote/omniASR-CTC-1B-v2-Zulu-All",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "facebook/omniASR-CTC-1B · Hugging Face",
+      "url": "https://huggingface.co/facebook/omniASR-CTC-1B",
+      "snippet": "Model Card for omniASR-CTC-1B Model Description This model is part of the Omnilingual ASR family released by Meta AI. The original suite includes:"
+    },
+    {
+      "title": "CTC Models (Fast ASR) | facebookresearch/omnilingual-asr | DeepWiki",
+      "url": "https://deepwiki.com/facebookresearch/omnilingual-asr/2.2.2-ctc-models-(fast-asr)",
+      "snippet": "This page documents the CTC (Connectionist Temporal Classification) model family in the omnilingual-asr system. CTC models provide fast, efficient automatic speech recognition suitable for real-time and high-throughput transcription scenarios. These models prioritize inference speed while maintaining competitive accuracy across 1600+ languages."
+    },
+    {
+      "title": "GitHub - chrisciokler/ai-meta-omnilingual-asr: Omnilingual ASR Open ...",
+      "url": "https://github.com/chrisciokler/ai-meta-omnilingual-asr",
+      "snippet": "Omnilingual ASR is an open-source speech recognition system supporting over 1,600 languages — including hundreds never previously covered by any ASR technology. Designed for broad accessibility, it enables new languages to be added with just a few paired examples without requiring specialized ..."
+    },
+    {
+      "title": "raw.githubusercontent.com",
+      "url": "https://raw.githubusercontent.com/facebookresearch/omnilingual-asr/main/README.md",
+      "snippet": "Designed for broad accessibility, it enables new languages to be added with just a few paired examples without requiring specialized expertise or large datasets. By combining scalable zero-shot learning with a flexible model family, Omnilingual ASR aims to make speech technology more inclusive and adaptable for communities and researchers ..."
+    }
+  ]
+}

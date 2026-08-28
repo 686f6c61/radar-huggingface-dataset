@@ -1,0 +1,77 @@
+{
+  "schema": 1,
+  "id": "rwkv-rs/rwkv7-g1i-2.9b-20260805-ctx16384",
+  "slug": "rwkv-rs-rwkv7-g1i-2-9b-20260805-ctx16384",
+  "author": "rwkv-rs",
+  "url": "https://huggingface.co/rwkv-rs/rwkv7-g1i-2.9b-20260805-ctx16384",
+  "created_at": "2026-08-28T09:10:20.000Z",
+  "updated_at": "2026-08-28T09:42:12.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "rwkv",
+    "text-generation",
+    "rwkv7",
+    "recurrent",
+    "causal-lm",
+    "conversational",
+    "en",
+    "zh",
+    "base_model:BlinkDL/rwkv7-g1",
+    "base_model:finetune:BlinkDL/rwkv7-g1",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 2947735040,
+  "parameters_human": "2.95B",
+  "storage_bytes": 5895584552,
+  "storage_human": "5.9 GB",
+  "base_model": "BlinkDL/rwkv7-g1",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "fla-hub/RWKV7-G1i-2.9B-20260805 · Hugging Face",
+      "url": "https://huggingface.co/fla-hub/RWKV7-G1i-2.9B-20260805",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "rwkv-rs · GitHub",
+      "url": "https://github.com/rwkv-rs/",
+      "snippet": "🤗 Transformers: the model-definition framework for state-of-the-art machine learning models in text, vision, audio, and multimodal models, for both inference and training."
+    },
+    {
+      "title": "rwkv-rs/rwkv7-g1-st · Hugging Face",
+      "url": "https://huggingface.co/rwkv-rs/rwkv7-g1-st",
+      "snippet": "This repository contains the four canonical RWKV-7 G1i checkpoints converted from BlinkDL/rwkv7-g1 to native Transformers Safetensors. Each checkpoint is a self-contained subfolder with model weights, configuration, the native RWKV World tokenizer, and chat prompt template."
+    },
+    {
+      "title": "RWKV Language Model",
+      "url": "https://www.rwkv.com/",
+      "snippet": "RWKV (pronounced RwaKuv) is an RNN with great LLM performance and parallelizable like a Transformer. Check RWKV-7 \"Goose\" reasoning models. It&#x27;s combining the best of RNN and transformer - great performance, linear time, constant space (no kv-cache), fast training, infinite ctxlen, and free text embedding. And it&#x27;s 100% attention-free, and a Linux Foundation AI project."
+    },
+    {
+      "title": "heredos/rwkv7 - ollama.com",
+      "url": "https://ollama.com/heredos/rwkv7",
+      "snippet": "Heredos&#x27;s RWKV repo Now with tool calling! Mollysama is doing an amazing job uploading different models, but it being split across repos makes me hard to recommend to my grandma. So I made this repo that I can continuously update and pull regularly with a cron job on all of my (and my grandma&#x27;s) devices. I hope you will find it useful! original repo 0.1b is mostly for testing purposes ..."
+    }
+  ]
+}

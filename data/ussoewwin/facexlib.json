@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "ussoewwin/facexlib",
+  "slug": "ussoewwin-facexlib",
+  "author": "ussoewwin",
+  "url": "https://huggingface.co/ussoewwin/facexlib",
+  "created_at": "2026-08-28T10:13:09.000Z",
+  "updated_at": "2026-08-28T10:18:49.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - xinntao/facexlib: FaceXlib aims at providing ready-to-use face ...",
+      "url": "https://github.com/xinntao/facexlib",
+      "snippet": "FaceXlib aims at providing ready-to-use face-related functions based on current STOA open-source methods. - xinntao/facexlib"
+    },
+    {
+      "title": "ussoewwin (GJL) - Hugging Face",
+      "url": "https://huggingface.co/ussoewwin",
+      "snippet": "AI & ML interests ... Recent Activity updated a model about 3 hours ago ... updated a model 4 days ago"
+    },
+    {
+      "title": "facexlib/facexlib at master · xinntao/facexlib · GitHub",
+      "url": "https://github.com/xinntao/facexlib/tree/master/facexlib",
+      "snippet": "FaceXlib aims at providing ready-to-use face-related functions based on current STOA open-source methods. - facexlib/facexlib at master · xinntao/facexlib"
+    },
+    {
+      "title": "camenduru/facexlib · Hugging Face",
+      "url": "https://huggingface.co/camenduru/facexlib",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "facexlib · PyPI",
+      "url": "https://pypi.org/project/facexlib/",
+      "snippet": "FaceXLib English | 简体中文 facexlib aims at providing ready-to-use face-related functions based on current SOTA open-source methods. Only PyTorch reference codes are available. For training or fine-tuning, please refer to their original repositories listed below. Note that we just provide a collection of these algorithms."
+    }
+  ]
+}

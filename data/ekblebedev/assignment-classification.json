@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "ekblebedev/assignment-classification",
+  "slug": "ekblebedev-assignment-classification",
+  "author": "ekblebedev",
+  "url": "https://huggingface.co/ekblebedev/assignment-classification",
+  "created_at": "2026-08-28T01:57:16.000Z",
+  "updated_at": "2026-08-28T01:57:25.000Z",
+  "license": "bsd-3-clause",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "swin_t",
+    "pytorch",
+    "swin-t",
+    "classification",
+    "license:bsd-3-clause",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 16576,
+  "parameters_human": "16576",
+  "storage_bytes": 66784,
+  "storage_human": "66784 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ekblebedev/assignment-classification · Hugging Face",
+      "url": "https://huggingface.co/ekblebedev/assignment-classification",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "build-classification-model.ipynb - Colab",
+      "url": "https://colab.research.google.com/github/ocademy-ai/machine-learning/blob/release/open-machine-learning-jupyter-book/assignments/ml-fundamentals/build-classification-model.ipynb",
+      "snippet": "Thanks to Microsoft for creating the open-source course ML-For-Beginners. It inspires the majority of the content in this chapter."
+    },
+    {
+      "title": "build-classification-models.ipynb - Colab",
+      "url": "https://colab.research.google.com/github/ocademy-ai/machine-learning/blob/release/open-machine-learning-jupyter-book/assignments/ml-fundamentals/build-classification-models.ipynb",
+      "snippet": "Build classification models In this lab, we will learn about classification where the task is to predict the class or category. Both regression and classification are the main two types of supervised learning."
+    },
+    {
+      "title": "classification-model · GitHub Topics · GitHub",
+      "url": "https://github.com/topics/classification-model",
+      "snippet": "ai classification-model responsible-ai generation-models aigc Updated on Nov 8, 2023"
+    },
+    {
+      "title": "rdarnell55/ANA680-Module-1-Assignment-2_Classification_Models",
+      "url": "https://github.com/rdarnell55/ANA680-Module-1-Assignment-2_Classification_Models",
+      "snippet": "ANA680 May2025 Module 1 - Assignment 2: Classification Models Breast Cancer Classification Models This repository contains the implementation and evaluation of eight supervised machine learning models on the Breast Cancer Wisconsin (Original) dataset. The work is part of ANA680 - Machine Learning Deployment at National University."
+    }
+  ]
+}

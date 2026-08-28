@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "Tonybio/EnzymeHunter",
+  "slug": "tonybio-enzymehunter",
+  "author": "Tonybio",
+  "url": "https://huggingface.co/Tonybio/EnzymeHunter",
+  "created_at": "2026-08-26T07:51:13.000Z",
+  "updated_at": "2026-08-28T07:52:11.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 21159050917,
+  "storage_human": "21.2 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - cgxbio/EnzymeHunter: EnzymeHunter: Achieving fine-grained ...",
+      "url": "https://github.com/cgxbio/EnzymeHunter",
+      "snippet": "EnzymeHunter: Achieving fine-grained enzyme function prediction with a hierarchically-aware contrastive learning framework. This source code was developed and tested on Linux (CentOS) with Python 3.9."
+    },
+    {
+      "title": "EnzymeHunter/README.md at main · cgxbio/EnzymeHunter · GitHub",
+      "url": "https://github.com/cgxbio/EnzymeHunter/blob/main/README.md",
+      "snippet": "EnzymeHunter: Achieving fine-grained enzyme function prediction with a hierarchically-aware contrastive learning framework - cgxbio/EnzymeHunter"
+    },
+    {
+      "title": "Home - EnzymeHunter",
+      "url": "http://119.3.41.228:2006/",
+      "snippet": "Welcome to EnzymeHunter EnzymeHunter is a deep learning-based enzyme function prediction platform that accurately predicts enzyme and non-enzyme as well as EC numbers. Click on \"Search\" in the menu bar to start predicting. Figure 1. Architecture and workflow of the EnzymeHunter model."
+    },
+    {
+      "title": "EnzymeHunter: Achieving fine-grained enzyme function prediction with a ...",
+      "url": "https://www.sciencedirect.com/science/article/pii/S2666389926000760",
+      "snippet": "Accurate enzyme function annotation is a grand challenge due to the vast number of uncharacterized proteins and the difficulty of distinguishing subtle functions. We introduce EnzymeHunter, a deep-learning framework that achieves fine-grained prediction via a hierarchically aware contrastive learning strategy. By integrating sequence and structural information and using the Enzyme Commission ..."
+    },
+    {
+      "title": "EnzymeHunter: Achieving fine-grained enzyme function prediction with a ...",
+      "url": "https://www.cell.com/patterns/fulltext/S2666-3899(26)00076-0",
+      "snippet": "EnzymeHunter is a deep-learning framework for fine-grained enzyme function annotation based on hierarchically aware contrastive learning. It captures subtle catalytic differences, achieves state-of-the-art performance in low-homology scenarios, and accurately predicts rare enzyme classes. At the proteome scale, it can reveal novel enzymatic functions and provide interpretable insights into ..."
+    }
+  ]
+}

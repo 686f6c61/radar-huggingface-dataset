@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "StarVLA/VLAct_Qwen3_Pretrain",
+  "slug": "starvla-vlact_qwen3_pretrain",
+  "author": "StarVLA",
+  "url": "https://huggingface.co/StarVLA/VLAct_Qwen3_Pretrain",
+  "created_at": "2026-08-27T13:28:26.000Z",
+  "updated_at": "2026-08-28T01:41:28.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "robotics",
+    "vision-language-action",
+    "vlact",
+    "starvla",
+    "qwen3-vl",
+    "continued-pretraining",
+    "multi-embodiment",
+    "base_model:StarVLA/Qwen3-VL-4B-Instruct-Action",
+    "base_model:finetune:StarVLA/Qwen3-VL-4B-Instruct-Action",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 11736465942,
+  "storage_human": "11.7 GB",
+  "base_model": "StarVLA/Qwen3-VL-4B-Instruct-Action",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "StarVLA/VLAct_Qwen3_Pretrain · Hugging Face",
+      "url": "https://huggingface.co/StarVLA/VLAct_Qwen3_Pretrain",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GitHub - starVLA/VLAct: Beyond Data Scaling: Representation-Centric ...",
+      "url": "https://github.com/starVLA/VLAct",
+      "snippet": "News [2026.08] The paper, code, project site, continued-pretraining backbone, and selected downstream checkpoints are public. [2026.08] VLAct entered the RoboDojo leaderboard, ranking 6th of 35 policies by success rate and ahead of every explicitly designated world-action model in the August 24 snapshot."
+    },
+    {
+      "title": "GitHub - starVLA/starVLA: StarVLA: A Lego-like Codebase for Vision ...",
+      "url": "https://github.com/starVLA/starVLA",
+      "snippet": "Thank you for your understanding and support! 🙏 In StarVLA (also a pun on \"start VLA\" ), each functional component (model, data, trainer, config, evaluation, etc.) follows a top-down, intuitive separation and high-cohesion, low-coupling principle, enabling plug-and-play design, rapid prototyping, and independent debugging."
+    },
+    {
+      "title": "StarVLA (Star Vision Language Action Models) - Hugging Face",
+      "url": "https://huggingface.co/StarVLA/models",
+      "snippet": "Org profile for Star Vision Language Action Models on Hugging Face, the AI community building the future."
+    },
+    {
+      "title": "starVLA | Agile Lego-like Embodied AI Development",
+      "url": "https://starvla.github.io/",
+      "snippet": "Accelerate embodied AI delivery with agile, lego-like engineering workflows, reproducible benchmarks, and deployment-ready interfaces."
+    }
+  ]
+}

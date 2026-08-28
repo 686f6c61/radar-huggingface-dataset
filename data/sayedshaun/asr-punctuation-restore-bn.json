@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "SayedShaun/asr-punctuation-restore-bn",
+  "slug": "sayedshaun-asr-punctuation-restore-bn",
+  "author": "SayedShaun",
+  "url": "https://huggingface.co/SayedShaun/asr-punctuation-restore-bn",
+  "created_at": "2026-08-28T06:06:24.000Z",
+  "updated_at": "2026-08-28T06:36:49.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "token-classification",
+  "library": null,
+  "languages": [
+    "bn"
+  ],
+  "tags": [
+    "safetensors",
+    "muril",
+    "bengali",
+    "bangla",
+    "punctuation-restoration",
+    "token-classification",
+    "bn",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 3479705592,
+  "storage_human": "3.5 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Punctuation Restoration in Python — Add Punctuation to Text / ASR ...",
+      "url": "https://www.funasr.com/en/blog/punctuation-restoration-python.html",
+      "snippet": "Punctuation restoration adds the commas, periods, and question marks back so the transcript is readable. FunASR&#x27;s ct-punc is an open-source punctuation-restoration model that works for both Chinese and English, adding punctuation to any text in three lines of Python."
+    },
+    {
+      "title": "punctuation-restoration · GitHub Topics · GitHub",
+      "url": "https://github.com/topics/punctuation-restoration",
+      "snippet": "Easy-to-use Speech Toolkit including Self-Supervised Learning model, SOTA/Streaming ASR with punctuation, Streaming TTS with text frontend, Speaker Verification System, End-to-End Speech Translation and Keyword Spotting. Won NAACL2022 Best Demo Award. A SOTA Industrial-Grade All-in-One ASR system ..."
+    },
+    {
+      "title": "GitHub - maveryn/punctuation-restoration: [W-NUT&#x27;20] Punctuation ...",
+      "url": "https://github.com/maveryn/punctuation-restoration",
+      "snippet": "This repository contins official implementation of the paper Punctuation Restoration using Transformer Models for High-and Low-Resource Languages accepted at the EMNLP workshop W-NUT 2020. We fine-tune a Transformer architecture based language model (e.g., BERT) for the punctuation restoration task ..."
+    },
+    {
+      "title": "Punctuation, capitalization, and inverse text normalization in ASR ...",
+      "url": "https://soniox.com/wiki/inverse-text-normalization",
+      "snippet": "Inverse text normalization, punctuation restoration, and capitalization convert a raw recognized word sequence into conventional written text."
+    },
+    {
+      "title": "Punctuation Restoration Models - ManySpeech",
+      "url": "https://manyeyes.github.io/manyspeech/en/models/punc/index.html",
+      "snippet": "Punctuation models are used for post-processing ASR results to restore punctuation in text, improving readability."
+    }
+  ]
+}

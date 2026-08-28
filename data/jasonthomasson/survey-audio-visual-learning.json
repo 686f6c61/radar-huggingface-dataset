@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "jasonthomasson/survey-audio-visual-learning",
+  "slug": "jasonthomasson-survey-audio-visual-learning",
+  "author": "jasonthomasson",
+  "url": "https://huggingface.co/jasonthomasson/survey-audio-visual-learning",
+  "created_at": "2026-08-28T06:14:02.000Z",
+  "updated_at": "2026-08-28T06:14:11.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "transformer",
+    "research-notes",
+    "audio-visual-learning",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 16576,
+  "parameters_human": "16576",
+  "storage_bytes": 66784,
+  "storage_human": "66784 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - GeWu-Lab/awesome-audiovisual-learning: A curated list of audio ...",
+      "url": "https://github.com/GeWu-Lab/awesome-audiovisual-learning",
+      "snippet": "This is a curated list of audio-visual learning methods and datasets, based on our survey: <Learning in Audio-visual Context: A Review, Analysis, and New Perspective>."
+    },
+    {
+      "title": "GitHub - JavisVerse/Awesome-AVI: Awesome Audio-Visual Intelligence ...",
+      "url": "https://github.com/JavisVerse/Awesome-AVI",
+      "snippet": "Audio-Visual Intelligence in Large Foundation Models A Comprehensive Survey 💡 This repo contains a curated list of papers and resources for Audio-Visual Intelligence (AVI), organized following our survey. 📌 Please feel free to open an issue or PR for any possibly missed related work."
+    },
+    {
+      "title": "Audio-Visual Intelligence in Large Foundation Models",
+      "url": "https://arxiv.org/abs/2605.04045",
+      "snippet": "Audio-Visual Intelligence (AVI) has emerged as a central frontier in artificial intelligence, bridging auditory and visual modalities to enable machines that can perceive, generate, and interact in the multimodal real world. In the era of large foundation models, joint modeling of audio and vision has become increasingly crucial, i.e., not only for understanding but also for controllable ..."
+    },
+    {
+      "title": "[2208.09579] Learning in Audio-visual Context: A Review, Analysis, and ...",
+      "url": "https://arxiv.org/abs/2208.09579",
+      "snippet": "Sight and hearing are two senses that play a vital role in human communication and scene understanding. To mimic human perception ability, audio-visual learning, aimed at developing computational approaches to learn from both audio and visual modalities, has been a flourishing field in recent years. A comprehensive survey that can systematically organize and analyze studies of the audio-visual ..."
+    },
+    {
+      "title": "A survey on audio-visual large language models - ScienceDirect",
+      "url": "https://www.sciencedirect.com/science/article/pii/S0950705126012955",
+      "snippet": "In this context, audio-visual large language models (AV-LLMs) mark a significant progression in multimodal representation learning through joint encoding and cross-modal alignment of auditory, visual, and linguistic modalities."
+    }
+  ]
+}

@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "mradermacher/SkyJM-Edit-4B-GGUF",
+  "slug": "mradermacher-skyjm-edit-4b-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/SkyJM-Edit-4B-GGUF",
+  "created_at": "2026-08-28T08:13:30.000Z",
+  "updated_at": "2026-08-28T08:35:14.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "en",
+    "base_model:skylenage-ai/SkyJM-Edit-4B",
+    "base_model:quantized:skylenage-ai/SkyJM-Edit-4B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 4841450496,
+  "parameters_human": "4.84B",
+  "storage_bytes": 45368955712,
+  "storage_human": "45.4 GB",
+  "base_model": "skylenage-ai/SkyJM-Edit-4B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "skylenage-ai/SkyJM-Edit-4B · Hugging Face",
+      "url": "https://huggingface.co/skylenage-ai/SkyJM-Edit-4B",
+      "snippet": "SkyJM （RubricRM） is a reward model for visual generation, covering both text-to-image generation and image editing. Given a prompt and two candidate images, it predicts which one better satisfies the instruction."
+    },
+    {
+      "title": "team mradermacher - Hugging Face",
+      "url": "https://huggingface.co/mradermacher",
+      "snippet": "Feel free to suggest models to quant e.g. at https://huggingface.co/mradermacher/model_requests"
+    },
+    {
+      "title": "SkyJM-Edit-4B · Models",
+      "url": "https://www.modelscope.cn/models/SKYLENAGE/SkyJM-Edit-4B",
+      "snippet": "SkyJM （RubricRM） is a reward model for visual generation, covering both text-to-image generation and image editing. Given a prompt and two candidate images, it predicts which one better satisfies the instruction."
+    },
+    {
+      "title": "Mradermacher - Find Top AI Models on Hugging Face",
+      "url": "https://www.aimodels.fyi/creators/huggingFace/mradermacher",
+      "snippet": "Looking for Mradermacher&#x27;s top AI models? Browse their full Hugging Face collection of 26 models. Explore AI models and contributions by Mradermacher on Huggingface."
+    },
+    {
+      "title": "SkyJM - Learn AI",
+      "url": "https://ai.miraheze.org/wiki/SkyJM",
+      "snippet": "The model family includes four primary variants for visual tasks, SkyJM-Gen-4B and SkyJM-Gen-9B for evaluating text-to-image generation, and SkyJM-Edit-4B and SkyJM-Edit-9B for assessing instruction-based image editing, as well as SkyJM-TTS for evaluating text-to-speech audio quality."
+    }
+  ]
+}

@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "Sulfik/sarah-kerr-hum",
+  "slug": "sulfik-sarah-kerr-hum",
+  "author": "Sulfik",
+  "url": "https://huggingface.co/Sulfik/sarah-kerr-hum",
+  "created_at": "2026-08-28T11:41:16.000Z",
+  "updated_at": "2026-08-28T11:42:08.000Z",
+  "license": "creativeml-openrail-m",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:creativeml-openrail-m",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 33202184,
+  "storage_human": "33 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Sulfik (Slavik) - Hugging Face",
+      "url": "https://huggingface.co/Sulfik/models",
+      "snippet": "Sulfik&#x27;s models1 Sort: Recently updated Sulfik/Lady_DDG_Anima_V1 Updated 2 days ago"
+    },
+    {
+      "title": "Sulfik (Slavik) - Hugging Face",
+      "url": "https://huggingface.co/Sulfik",
+      "snippet": "Recent Activity updated a model2 days ago Sulfik/Lady_DDG_Anima_V1 published a model2 days ago Sulfik/Lady_DDG_Anima_V1 View all activity"
+    },
+    {
+      "title": "Sulfik (Slavik) - Hugging Face",
+      "url": "https://huggingface.co/Sulfik/datasets",
+      "snippet": "Recent Activity updated a model1 day ago Sulfik/dmon-anima published a model1 day ago Sulfik/dmon-anima updated a model1 day ago Sulfik/yasmine-sf View all activity"
+    },
+    {
+      "title": "The Pagan Federation Official Statement on AI Usage from President ...",
+      "url": "https://www.facebook.com/reel/898333142731362/",
+      "snippet": "The Pagan Federation Official Statement on AI Usage from President, Sarah Kerr. #PaganFederation #ThePaganFederation #AI #Paganism"
+    },
+    {
+      "title": "Hume AI - Human Feedback for Voice, Speech, and Conversational AI | Hume AI",
+      "url": "https://www.hume.ai/",
+      "snippet": "Agent-to-agent and human-to-agent conversation simulation, built for real-world scenarios. Ratings back fast enough to close the human eval loop at model-development pace. Used internally to evaluate voice AI across simulation, expression measurement, and human studies."
+    }
+  ]
+}

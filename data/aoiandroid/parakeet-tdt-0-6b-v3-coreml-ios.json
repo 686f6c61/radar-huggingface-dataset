@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "aoiandroid/parakeet-tdt-0.6b-v3-coreml-ios",
+  "slug": "aoiandroid-parakeet-tdt-0-6b-v3-coreml-ios",
+  "author": "aoiandroid",
+  "url": "https://huggingface.co/aoiandroid/parakeet-tdt-0.6b-v3-coreml-ios",
+  "created_at": "2026-08-28T07:46:21.000Z",
+  "updated_at": "2026-08-28T07:59:50.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "coreml",
+    "translateblue",
+    "ios",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1561023325,
+  "storage_human": "1.6 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "aoiandroid/parakeet-tdt-0.6b-v3-coreml · Hugging Face",
+      "url": "https://huggingface.co/aoiandroid/parakeet-tdt-0.6b-v3-coreml",
+      "snippet": "🧃 parakeet-tdt-.6b-v3: Multilingual Speech-to-Text Model CoreML | | | | On‑device multilingual ASR model converted to Core ML for Apple platforms. This model powers FluidAudio&#x27;s batch ASR and is the same model used in our backend. It supports 25 European languages and is optimized for low‑latency, private, offline transcription."
+    },
+    {
+      "title": "README.md · aoiandroid/parakeet-tdt-0.6b-v3-coreml at main",
+      "url": "https://huggingface.co/aoiandroid/parakeet-tdt-0.6b-v3-coreml/blob/main/README.md",
+      "snippet": "Batch transcription of complete audio files on macOS/iOS. Local dictation and note‑taking apps where privacy and latency matter. Embedded ASR in production apps via the FluidAudio Swift framework. Supported Platforms macOS 14+ (Apple Silicon recommended) iOS 17+ Model Details Architecture: Parakeet TDT v3 (Token Duration Transducer, 0.6B ..."
+    },
+    {
+      "title": "parakeet tdt 0.6b v3 coreml (600M) | Deploy Guide & Hardware Fit ...",
+      "url": "https://openmodelmap.com/model/FluidInference/parakeet-tdt-0.6b-v3-coreml",
+      "snippet": "The Parakeet TDT 0.6B v3 CoreML version is a speech recognition model optimized for Apple devices, using only 600M parameters for efficient on-device audio transcription."
+    },
+    {
+      "title": "Parakeet 0.6b TDT collection | NVIDIA NGC",
+      "url": "https://catalog.ngc.nvidia.com/orgs/nvidia/collections/parakeet-tdt-0.6b",
+      "snippet": "This collection offers two Parakeet TDT 0.6B variants: v2 (English only) and v3 (25 European languages). Both are 600-million-parameter models with native punctuation, capitalization, and accurate word-level timestamp prediction."
+    },
+    {
+      "title": "Canary-1B-v2 & Parakeet-TDT-0.6B-v3: Efficient and High-Performance ...",
+      "url": "https://arxiv.org/html/2509.14128v1",
+      "snippet": "This work introduces Canary-1B-v2, a multilingual, multi-task model designed to deliver robust ASR and AST performance with high efficiency. In addition, we release Parakeet-TDT-.6B-v3, a smaller yet more accurate ASR model supporting the same 25 languages."
+    }
+  ]
+}

@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "INCModel3/Qwen3.5-397B-A17B-MXFP4-Mixed-FP8KV-FP8Attn-CT-AutoRound",
+  "slug": "incmodel3-qwen3-5-397b-a17b-mxfp4-mixed-fp8kv-fp8attn-ct-autoround",
+  "author": "INCModel3",
+  "url": "https://huggingface.co/INCModel3/Qwen3.5-397B-A17B-MXFP4-Mixed-FP8KV-FP8Attn-CT-AutoRound",
+  "created_at": "2026-08-28T05:07:45.000Z",
+  "updated_at": "2026-08-28T08:36:54.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "image-text-to-text",
+    "arxiv:2309.05516",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 231748125407,
+  "storage_human": "231.7 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "qwen3.5-397b-a17b Model by Qwen | NVIDIA NIM",
+      "url": "https://build.nvidia.com/qwen/qwen3.5-397b-a17b",
+      "snippet": "Next-gen Qwen 3.5 VLM (400B MoE) brings advanced vision, chat, RAG, and agentic capabilities."
+    },
+    {
+      "title": "amd/Qwen3.5-397B-A17B-MXFP4 · Hugging Face",
+      "url": "https://huggingface.co/amd/Qwen3.5-397B-A17B-MXFP4",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Qwen3.5: Features, Access, and Benchmarks - DataCamp",
+      "url": "https://www.datacamp.com/blog/qwen3-5",
+      "snippet": "Learn about the new Qwen3.5 series of models, covering the key features, costs, how to access, and how it compares to other similar models."
+    },
+    {
+      "title": "Qwen3.5 - a Qwen Collection - Hugging Face",
+      "url": "https://huggingface.co/collections/Qwen/qwen35",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "qwen3.5-397b-a17b Model Info - - Alibaba Cloud Documentation Center",
+      "url": "https://www.alibabacloud.com/help/en/model-studio/qwen3-5-397b-a17b",
+      "snippet": "The Qwen3.5 series 397B-A17B native vision-language model is built on a hybrid architecture that integrates a linear attention mechanism with a sparse mixture-of-experts model, achieving higher inference efficiency. It delivers state-of-the-art performance comparable to leading-edge models across a wide range of tasks, including language understanding, logical reasoning, code generation, agent ..."
+    }
+  ]
+}

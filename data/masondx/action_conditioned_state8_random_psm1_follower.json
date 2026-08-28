@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "masondx/action_conditioned_state8_random_psm1_follower",
+  "slug": "masondx-action_conditioned_state8_random_psm1_follower",
+  "author": "masondx",
+  "url": "https://huggingface.co/masondx/action_conditioned_state8_random_psm1_follower",
+  "created_at": "2026-08-28T07:58:05.000Z",
+  "updated_at": "2026-08-28T07:58:27.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "decoupled_bimanual_diffusion",
+    "robotics",
+    "dataset:masondx/new_tension_cut_rope_state8",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 540519385,
+  "parameters_human": "540.5M",
+  "storage_bytes": 2162144968,
+  "storage_human": "2.2 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "AI Model Releases: August 2026 Tracker and Dated Ledger",
+      "url": "https://www.digitalapplied.com/blog/ai-model-releases-august-2026-tracker",
+      "snippet": "A dated ledger of what shipped in early August 2026, what was only announced, and which deadlines land before month end. Announcements stay separate."
+    },
+    {
+      "title": "masondx/decoupled_tension_cut_rope_state8 · Hugging Face",
+      "url": "https://huggingface.co/masondx/decoupled_tension_cut_rope_state8",
+      "snippet": "Instructions to use masondx/decoupled_tension_cut_rope_state8 with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Libraries LeRobot How to use masondx/decoupled_tension_cut_rope_state8 with LeRobot: Notebooks Google Colab Kaggle Model Card for decoupled_bimanual_diffusion How to Get Started with the Model Train from scratch Evaluate the policy/run ..."
+    },
+    {
+      "title": "WildWorld: A Large-Scale Dataset for Dynamic World Modeling with ...",
+      "url": "https://arxiv.org/html/2603.23497v1",
+      "snippet": "As a result, current models often perform poorly in long-horizon prediction tasks, where small errors accumulate over time and eventually lead to noticeable inconsistencies or instability in the generated results. In this paper, we propose WildWorld, a large-scale video dataset for action-conditioned world modeling with explicit state annotations."
+    },
+    {
+      "title": "Explore | alphaXiv",
+      "url": "https://www.alphaxiv.org/",
+      "snippet": "Discuss, discover, and read arXiv papers. Explore trending papers, see recent activity and discussions, and follow authors of arXiv papers on alphaXiv."
+    },
+    {
+      "title": "CVPR 2025 Accepted Papers",
+      "url": "https://cvpr.thecvf.com/Conferences/2025/AcceptedPapers",
+      "snippet": "CVPR 2025 Accepted Papers This page is cached for 1 hour. Changes to affiliation or name in your local profile may take up to 60 minutes to appear here."
+    }
+  ]
+}

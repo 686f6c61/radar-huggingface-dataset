@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "Sulfik/ciri-witcher3-anima",
+  "slug": "sulfik-ciri-witcher3-anima",
+  "author": "Sulfik",
+  "url": "https://huggingface.co/Sulfik/ciri-witcher3-anima",
+  "created_at": "2026-08-28T07:39:30.000Z",
+  "updated_at": "2026-08-28T07:39:56.000Z",
+  "license": "creativeml-openrail-m",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:creativeml-openrail-m",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 91867400,
+  "storage_human": "92 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Ciri (The WItcher 3) - AI Art Model | PixAI",
+      "url": "https://pixai.art/en/model/1688950790474670642",
+      "snippet": "Generate stunning witcher, ciri, the_witcher anime art with the &#x27;Ciri (The WItcher 3)&#x27; model on PixAI. Browse artworks made with this model and try it free."
+    },
+    {
+      "title": "Ciri The Witcher 3 - Free AI Model | Tensor.Art",
+      "url": "https://tensor.art/models/702019504382838199",
+      "snippet": "Download Ciri The Witcher 3 - free CHECKPOINT SD 1.5 AI model on TENSOR. 3D. By Kiklok"
+    },
+    {
+      "title": "Ciri (Witcher 3) - v.1 | Stable Diffusion 1.x LoRA | Civitai",
+      "url": "https://civitai.com/models/80712/ciri-witcher-3",
+      "snippet": "Main trigger&#92;Face - ciri, eyeshadow Outfit - blouse, leather strap, corset, gloves, belt, pants, boots Miscellaneous - hair bun, scar, scar on cheek, armor, chainmail. crop top Checked strength range is 0.7-0.8. I recommend inpainting scar after generating. If you liked my work, you can donate here. Inpaint guide: if face on full body shots comes out deformed&#92;not detailed enough - it&#x27;s easily ..."
+    },
+    {
+      "title": "Ciri | The Witcher 3 : Wild Hunt - v2.0 | Tensor.Art",
+      "url": "https://tensor.art/models/739486866337824577",
+      "snippet": "Download Ciri | The Witcher 3 : Wild Hunt - free LORA SD 1.5 AI model on TENSOR. By soul3142"
+    },
+    {
+      "title": "Ciri (The Witcher 3) - AI Art Model | PixAI",
+      "url": "https://pixai.art/model/1729674183376365809",
+      "snippet": "Generate stunning girl, anime, woman, female, portrait, illustration, character, realistic, ciri, person, video_game, game_character, art_style, the_witcher_3 anime art with the &#x27;Ciri (The Witcher 3)&#x27; model on PixAI. Browse artworks made with this model and try it free."
+    }
+  ]
+}

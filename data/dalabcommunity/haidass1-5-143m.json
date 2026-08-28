@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "DALabCommunity/Haidass1.5-143M",
+  "slug": "dalabcommunity-haidass1-5-143m",
+  "author": "DALabCommunity",
+  "url": "https://huggingface.co/DALabCommunity/Haidass1.5-143M",
+  "created_at": "2026-08-28T07:04:54.000Z",
+  "updated_at": "2026-08-28T07:10:38.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "zh",
+    "en"
+  ],
+  "tags": [
+    "safetensors",
+    "qwen3",
+    "zh",
+    "en",
+    "dataset:openbmb/Ultra-FineWeb",
+    "dataset:openbmb/Ultra-FineWeb-L3",
+    "dataset:mlfoundations/dclm-baseline-1.0-parquet",
+    "dataset:HuggingFaceTB/finemath",
+    "dataset:HuggingFaceTB/cosmopedia",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 143071296,
+  "parameters_human": "143.1M",
+  "storage_bytes": 288166142,
+  "storage_human": "288 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "DALabCommunity/Haidass-143M-v1 · Hugging Face",
+      "url": "https://huggingface.co/DALabCommunity/Haidass-143M-v1",
+      "snippet": "Haidass-143M is a 143M-parameter bilingual language model trained on approximately 100B tokens of English and Chinese data. The entire training pipeline runs on the Huawei Ascend ecosystem, using the MindSpeed-LLM framework on Atlas A2 servers (910B)."
+    },
+    {
+      "title": "Haidass - a DALabCommunity Collection - Hugging Face",
+      "url": "https://huggingface.co/collections/DALabCommunity/haidass",
+      "snippet": "Unlock the magic of AI with handpicked models, awesome datasets, papers, and mind-blowing Spaces from DALabCommunity"
+    },
+    {
+      "title": "Haidass-143M-v1 API & Inference Endpoint | FriendliAI",
+      "url": "https://friendli.ai/models/DALabCommunity/Haidass-143M-v1",
+      "snippet": "Haidass-143M is a 143M-parameter bilingual language model trained on approximately 100B tokens of English and Chinese data. The entire training pipeline runs on the Huawei Ascend ecosystem, using the MindSpeed-LLM framework on Atlas A2 servers (910B)."
+    },
+    {
+      "title": "3D Model MOD Design AI HS2 MOD DALI MOD - Patreon",
+      "url": "https://www.patreon.com/DALIMOD816",
+      "snippet": "DALI MOD 3D Model MOD Design AI HS2 MOD DALI MOD 21 posts Join for free See membership options"
+    },
+    {
+      "title": "Home · modelindex.dev",
+      "url": "https://modelindex.dev/",
+      "snippet": "Provenance and cryptographic hashes for public AI models across HuggingFace, ModelScope, CivitAI, and Ollama. Look up any file by hash, browse by org, and verify your downloads on modelindex.dev."
+    }
+  ]
+}

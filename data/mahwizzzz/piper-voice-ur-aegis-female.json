@@ -9,13 +9,13 @@
   "license": "mit",
   "license_family": "oss",
   "pipeline_tag": "text-to-speech",
-  "library": null,
+  "library": "piper",
   "languages": [
     "ur"
   ],
   "tags": [
-    "onnx",
     "piper",
+    "onnx",
     "tts",
     "urdu",
     "text-to-speech",

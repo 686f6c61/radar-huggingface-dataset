@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "aspect-ratio-scaling/block-attnres-lr2e-3-llama-400M-L32-pretrain",
+  "slug": "aspect-ratio-scaling-block-attnres-lr2e-3-llama-400m-l32-pretrain",
+  "author": "aspect-ratio-scaling",
+  "url": "https://huggingface.co/aspect-ratio-scaling/block-attnres-lr2e-3-llama-400M-L32-pretrain",
+  "created_at": "2026-08-28T11:42:43.000Z",
+  "updated_at": "2026-08-28T11:44:23.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "olmo-core",
+  "languages": [],
+  "tags": [
+    "olmo-core",
+    "causal-lm",
+    "raw-checkpoint",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 9635481737,
+  "storage_human": "9.6 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "AttnRes - a aspect-ratio-scaling Collection - Hugging Face",
+      "url": "https://huggingface.co/collections/aspect-ratio-scaling/attnres",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "aspect-ratio-scaling/attnres-lr2e-3-llama-400M-L16-pretrain - Hugging Face",
+      "url": "https://huggingface.co/aspect-ratio-scaling/attnres-lr2e-3-llama-400M-L16-pretrain",
+      "snippet": "attnres-lr2e-3-llama-400M-L16-pretrain This repository stores the raw OLMo-core checkpoint files uploaded from the original training output directory."
+    },
+    {
+      "title": "[2603.15031] Attention Residuals - arXiv.org",
+      "url": "https://arxiv.org/abs/2603.15031",
+      "snippet": "Residual connections with PreNorm are standard in modern LLMs, yet they accumulate all layer outputs with fixed unit weights. This uniform aggregation causes uncontrolled hidden-state growth with depth, progressively diluting each layer&#x27;s contribution. We propose Attention Residuals (AttnRes), which replaces this fixed accumulation with softmax attention over preceding layer outputs, allowing ..."
+    },
+    {
+      "title": "Attention Residuals (AttnRes) | Sebastian Raschka, PhD",
+      "url": "https://sebastianraschka.com/llm-architecture-gallery/attention-residuals/",
+      "snippet": "At the model level, the standard transformer passes one hidden_states tensor from block to block. Full Attention Residuals begins with sources = [token_embeddings] and passes the growing list between blocks. The attention_idx and mlp_idx arguments identify the two destination sublayers and select their learned pseudo-queries."
+    },
+    {
+      "title": "Attention Residuals - openlm.ai",
+      "url": "https://openlm.ai/attention-residuals/",
+      "snippet": "This is the introduction of Attention Residuals (AttnRes), a drop-in replacement for standard residual connections in Transformers that enables each layer to selectively aggregate earlier representations via learned, input-dependent attention over depth."
+    }
+  ]
+}

@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "mradermacher/Ornstein3.8-27B-i1-GGUF",
+  "slug": "mradermacher-ornstein3-8-27b-i1-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/Ornstein3.8-27B-i1-GGUF",
+  "created_at": "2026-08-28T05:59:26.000Z",
+  "updated_at": "2026-08-28T06:51:16.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "qwen3_5",
+    "qwen3.8",
+    "multimodal",
+    "image-text-to-text",
+    "en",
+    "base_model:GestaltLabs/Ornstein3.8-27B",
+    "base_model:quantized:GestaltLabs/Ornstein3.8-27B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "imatrix",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 27320697856,
+  "parameters_human": "27.32B",
+  "storage_bytes": 218553879808,
+  "storage_human": "218.6 GB",
+  "base_model": "GestaltLabs/Ornstein3.8-27B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "mradermacher/Ornstein-27B-v2-i1-GGUF · Hugging Face",
+      "url": "https://huggingface.co/mradermacher/Ornstein-27B-v2-i1-GGUF",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "mradermacher/qwen-3.8-27b-abliterated-i1-GGUF · Hugging Face",
+      "url": "https://huggingface.co/mradermacher/qwen-3.8-27b-abliterated-i1-GGUF",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Model Variants and Checkpoints | ornith-ai/Ornith-1 | DeepWiki",
+      "url": "https://deepwiki.com/ornith-ai/Ornith-1/2-model-variants-and-checkpoints",
+      "snippet": "The Ornith 9B is a dense transformer model optimized for accessibility. It is the primary variant for users operating on consumer-grade hardware or those utilizing the Unsloth Studio for local fine-tuning and inference."
+    },
+    {
+      "title": "IQ4 and IQ3 quants of Qwen3.8 Aug-18-2026 · GitHub",
+      "url": "https://gist.github.com/Vmarcelo49/98b382ec8f3a34e44035ce365cba46f4",
+      "snippet": "IQ4 and IQ3 quants of Qwen3.8 Aug-18-2026. GitHub Gist: instantly share code, notes, and snippets."
+    },
+    {
+      "title": "Mradermacher - Find Top AI Models on Hugging Face",
+      "url": "https://www.aimodels.fyi/creators/huggingFace/mradermacher",
+      "snippet": "Looking for Mradermacher&#x27;s top AI models? Browse their full Hugging Face collection of 26 models. Explore AI models and contributions by Mradermacher on Huggingface."
+    }
+  ]
+}

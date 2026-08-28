@@ -5,7 +5,7 @@
   "author": "drbaph",
   "url": "https://huggingface.co/drbaph/MiniMax-H3-Turbo-Lora-ComfyUI",
   "created_at": "2026-08-06T05:40:36.000Z",
-  "updated_at": "2026-08-20T11:42:17.000Z",
+  "updated_at": "2026-08-27T12:52:18.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-to-video",
@@ -35,13 +35,13 @@
     "license:apache-2.0",
     "region:us"
   ],
-  "likes": 358,
+  "likes": 360,
   "downloads_30d": 189301,
   "trending_score": 15,
   "parameters": null,
   "parameters_human": null,
-  "storage_bytes": 8600010592,
-  "storage_human": "8.6 GB",
+  "storage_bytes": 9876307760,
+  "storage_human": "9.9 GB",
   "base_model": "Comfy-Org/MiniMax-H3",
   "formats": [
     "safetensors"

@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "ecam-pbell/generation",
+  "slug": "ecam-pbell-generation",
+  "author": "ecam-pbell",
+  "url": "https://huggingface.co/ecam-pbell/generation",
+  "created_at": "2026-08-28T09:04:50.000Z",
+  "updated_at": "2026-08-28T09:04:58.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "cnn_transformer",
+    "pytorch",
+    "cnn-transformer",
+    "generation",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 16576,
+  "parameters_human": "16576",
+  "storage_bytes": 66784,
+  "storage_human": "66784 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "LLM Leaderboard & AI Model Benchmarks — August 2026",
+      "url": "https://benchlm.ai/",
+      "snippet": "Compare 403 AI models across 406 benchmarks, with 226 ranked scores, source evidence, API pricing, context windows, runtime, and head-to-head pages."
+    },
+    {
+      "title": "Generative AI | Google Cloud",
+      "url": "https://cloud.google.com/ai/generative-ai",
+      "snippet": "Generative AI on Google Cloud Bring generative AI to real-world experiences quickly, efficiently, and responsibly, powered by Google&#x27;s most advanced technology and models including Gemini. Plus, new customers can start their AI journey today with $300 in free credits."
+    },
+    {
+      "title": "Generative AI on AWS - Generative AI, LLMs, and Foundation Models - AWS",
+      "url": "https://aws.amazon.com/ai/generative-ai/",
+      "snippet": "Discover the endless possibilities of generative AI on AWS to boost productivity, build differentiated experiences, and innovate."
+    },
+    {
+      "title": "Models — Google DeepMind",
+      "url": "https://deepmind.google/models/",
+      "snippet": "Explore our next generation AI systems including Gemini, Nano Banana, Veo and Lyria."
+    },
+    {
+      "title": "LLM Leaderboard - Comparison of AI models from OpenAI, Anthropic ...",
+      "url": "https://artificialanalysis.ai/leaderboards/models",
+      "snippet": "LLM Leaderboard - Comparison of AI models from OpenAI, Anthropic, Google, SpaceXAI & others Comparison and ranking the performance of over 250 AI models (LLMs) across key metrics including intelligence, price, performance and speed (output speed - tokens per second & latency - TTFT), context window & others."
+    }
+  ]
+}

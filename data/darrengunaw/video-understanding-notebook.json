@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "darrengunaw/video-understanding-notebook",
+  "slug": "darrengunaw-video-understanding-notebook",
+  "author": "darrengunaw",
+  "url": "https://huggingface.co/darrengunaw/video-understanding-notebook",
+  "created_at": "2026-08-28T08:14:30.000Z",
+  "updated_at": "2026-08-28T08:14:39.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "transformer",
+    "research-notes",
+    "video-understanding",
+    "license:cc-by-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 49600,
+  "parameters_human": "49600",
+  "storage_bytes": 198880,
+  "storage_human": "198880 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Video_understanding.ipynb - Colab",
+      "url": "https://colab.research.google.com/github/google-gemini/cookbook/blob/main/quickstarts/Video_understanding.ipynb",
+      "snippet": "Video understanding with Gemini Gemini has from the beginning been a multimodal model, capable of analyzing all sorts of medias using its long context window. Gemini models bring video analysis to a whole new level as illustrated in this video. Note: This notebook uses the Interactions API, the latest way to interact with Gemini models."
+    },
+    {
+      "title": "video_understanding.ipynb - Colab",
+      "url": "https://colab.research.google.com/github/QwenLM/Qwen2.5-VL/blob/main/cookbooks/video_understanding.ipynb",
+      "snippet": "Video Understanding with Qwen3-VL In this notebook, we delve into the capabilities of the Qwen3-VL model for video understanding tasks. Our objective is to showcase how this advanced model can be applied to various video analysis scenarios."
+    },
+    {
+      "title": "Gemini Notebook | AI Research Tool & Thinking Partner",
+      "url": "https://notebook.google/?hl=en",
+      "snippet": "Meet Gemini Notebook, the AI research tool and thinking partner that can analyze your sources, turn complexity into clarity and transform your content."
+    },
+    {
+      "title": "Video Understanding Notebook | aim-uofa/Omni-R1 | DeepWiki",
+      "url": "https://deepwiki.com/aim-uofa/Omni-R1/5.1-video-understanding-notebook",
+      "snippet": "This document covers the interactive Jupyter notebook that demonstrates Omni-R1&#x27;s video understanding capabilities through practical examples. The notebook provides hands-on demonstrations of video question answering, temporal activity localization, and audio-visual sound source identification."
+    },
+    {
+      "title": "Mastering Advanced NotebookLM To Make Educational Videos",
+      "url": "https://www.youtube.com/watch?v=OjJIWg0Nhxg",
+      "snippet": "Complete training in using Google NotebookLM video tool including advanced features. Learn about NotebookLM"
+    }
+  ]
+}

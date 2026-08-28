@@ -1,0 +1,92 @@
+{
+  "schema": 1,
+  "id": "onnx-community/dfine-egret-x-rukopys-ONNX",
+  "slug": "onnx-community-dfine-egret-x-rukopys-onnx",
+  "author": "onnx-community",
+  "url": "https://huggingface.co/onnx-community/dfine-egret-x-rukopys-ONNX",
+  "created_at": "2026-08-28T06:02:09.000Z",
+  "updated_at": "2026-08-28T06:02:17.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "object-detection",
+  "library": "transformers.js",
+  "languages": [
+    "uk"
+  ],
+  "tags": [
+    "transformers.js",
+    "onnx",
+    "d_fine",
+    "object-detection",
+    "d-fine",
+    "dfine",
+    "document-layout-analysis",
+    "handwritten",
+    "ukrainian",
+    "rukopys",
+    "docling",
+    "uk",
+    "dataset:UkrainianCatholicUniversity/rukopys",
+    "base_model:Hukyl/dfine-egret-x-rukopys",
+    "base_model:quantized:Hukyl/dfine-egret-x-rukopys",
+    "license:apache-2.0",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 835729623,
+  "storage_human": "836 MB",
+  "base_model": "Hukyl/dfine-egret-x-rukopys",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "Document Layout Detection",
+      "dataset": "Rukopys, gold val",
+      "metric": "mAP@50",
+      "value": 0.6704
+    },
+    {
+      "task": "Document Layout Detection",
+      "dataset": "Rukopys, gold val",
+      "metric": "mAP@50-95",
+      "value": 0.4441
+    }
+  ],
+  "sources": [
+    {
+      "title": "onnx-community (ONNX Community) - Hugging Face",
+      "url": "https://huggingface.co/onnx-community",
+      "snippet": "Org profile for ONNX Community on Hugging Face, the AI community building the future."
+    },
+    {
+      "title": "GitHub - Peterande/D-FINE: D-FINE: Redefine Regression Task of DETRs as ...",
+      "url": "https://github.com/Peterande/D-FINE",
+      "snippet": "📄 This is the official implementation of the paper: D-FINE: Redefine Regression Task of DETRs as Fine-grained Distribution Refinement Yansong Peng, Hebei Li, Peixi Wu, Yueyi Zhang, Xiaoyan Sun, and Feng Wu University of Science and Technology of China If you like D-FINE, please give us a ⭐! Your support motivates us to keep improving! D-FINE is a powerful real-time object detector that ..."
+    },
+    {
+      "title": "ONNX | Home",
+      "url": "https://onnx.ai/",
+      "snippet": "ONNX is an open format built to represent machine learning models. ONNX defines a common set of operators - the building blocks of machine learning and deep learning models - and a common file format to enable AI developers to use models with a variety of frameworks, tools, runtimes, and compilers."
+    },
+    {
+      "title": "GitHub - onnx/models: A collection of pre-trained, state-of-the-art ...",
+      "url": "https://github.com/onnx/models",
+      "snippet": "Supported by a robust community of partners, ONNX defines a common set of operators and a common file format to enable AI developers to use models with a variety of frameworks, tools, runtimes, and compilers. This repository is a curated collection of pre-trained, state-of-the-art models in the ONNX format."
+    },
+    {
+      "title": "ONNX Runtime | Models",
+      "url": "https://onnxruntime.ai/models",
+      "snippet": "ONNX Models - find ONNX models for natural language processing, computer vision, and more."
+    }
+  ]
+}

@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "Exile051112/franka-pico4-act-c3-red-yellow-blue-edited",
+  "slug": "exile051112-franka-pico4-act-c3-red-yellow-blue-edited",
+  "author": "Exile051112",
+  "url": "https://huggingface.co/Exile051112/franka-pico4-act-c3-red-yellow-blue-edited",
+  "created_at": "2026-08-28T01:19:06.000Z",
+  "updated_at": "2026-08-28T01:29:06.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 51683978,
+  "parameters_human": "51.7M",
+  "storage_bytes": 206777456,
+  "storage_human": "207 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "franka-pico4-act-c3-red-yellow-blue-edited - Hugging Face",
+      "url": "https://huggingface.co/Exile051112/franka-pico4-act-c3-red-yellow-blue-edited",
+      "snippet": "Franka Pico4 ACT (c3) Private deployment artifact for the LeRobot ACT policy trained on the c3_red_yellow_blue_edited condition (red and yellow real data plus edited-blue data). Policy: ACT, full fine-tuning (not LoRA) Checkpoint: 10,000 training steps (010000) LeRobot: 0.6.2 (PyTorch) Inputs: two RGB cameras, observation.images.top and observation.images.wrist, 480x640 at 30 FPS ..."
+    },
+    {
+      "title": "franka-pico4-smolvla-c2-red-yellow-blue-real - Hugging Face",
+      "url": "https://huggingface.co/Exile051112/franka-pico4-smolvla-c2-red-yellow-blue-real",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Grok",
+      "url": "https://grok.com/",
+      "snippet": "Grok is an AI assistant built by SpaceXAI. Chat, create images, write code, and get real-time answers from the web and X."
+    },
+    {
+      "title": "Meta AI",
+      "url": "https://www.meta.ai/",
+      "snippet": "Meta AI Use Meta AI assistant to get things done, create AI-generated images for free, and get answers to any of your questions."
+    },
+    {
+      "title": "CivArchive (CivitAI Archive) - AI Model Archive",
+      "url": "https://civarchive.com/",
+      "snippet": "Browse and discover AI models from CivitAI, TensorArt, and SeaArt. Community-driven archive preserving access to AI resources."
+    }
+  ]
+}

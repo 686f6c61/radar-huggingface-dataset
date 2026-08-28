@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "Immerwinter/gbert-large-privacy-policy-content-securityprivacy",
+  "slug": "immerwinter-gbert-large-privacy-policy-content-securityprivacy",
+  "author": "Immerwinter",
+  "url": "https://huggingface.co/Immerwinter/gbert-large-privacy-policy-content-securityprivacy",
+  "created_at": "2026-08-21T10:40:44.000Z",
+  "updated_at": "2026-08-28T08:43:24.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": null,
+  "languages": [
+    "de"
+  ],
+  "tags": [
+    "safetensors",
+    "bert",
+    "text-classification",
+    "de",
+    "base_model:deepset/gbert-large",
+    "base_model:finetune:deepset/gbert-large",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 6,
+  "trending_score": 0,
+  "parameters": 335745033,
+  "parameters_human": "335.7M",
+  "storage_bytes": 1343032405,
+  "storage_human": "1.3 GB",
+  "base_model": "deepset/gbert-large",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "deepset/gbert-large · Hugging Face",
+      "url": "https://huggingface.co/deepset/gbert-large",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Usage policies - OpenAI",
+      "url": "https://openai.com/policies/usage-policies/",
+      "snippet": "circumventing our safeguards national security or intelligence purposes without our review and approval Respect privacy. People are entitled to privacy. So, we don&#x27;t allow attempts to compromise the privacy of others, including to aggregate, monitor, profile, or distribute individuals&#x27; private or sensitive information without their ..."
+    },
+    {
+      "title": "Privacy policy - OpenAI",
+      "url": "https://openai.com/policies/row-privacy-policy/",
+      "snippet": "Usage Data: We collect information about your use and activity across the Services, such as the types of content that you view or engage with, the features you use and the actions you take, when you submit feedback to a model response, the people with whom you interact, as well as your time zone, country, the dates and times of access, user ..."
+    },
+    {
+      "title": "DuckDuckGo - Protection. Privacy. Peace of mind.",
+      "url": "https://duckduckgo.com/",
+      "snippet": "The Internet privacy company that empowers you to seamlessly take control of your personal information online, without any tradeoffs."
+    },
+    {
+      "title": "AI policy &#92; Anthropic",
+      "url": "https://www.anthropic.com/policy",
+      "snippet": "Anthropic works with governments to build AI policy on the best available evidence. Read our proposals on model safety, national security, and economic futures."
+    }
+  ]
+}

@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "OpenExplorer/mixvargenet",
+  "slug": "openexplorer-mixvargenet",
+  "author": "OpenExplorer",
+  "url": "https://huggingface.co/OpenExplorer/mixvargenet",
+  "created_at": "2026-08-27T07:26:37.000Z",
+  "updated_at": "2026-08-28T08:27:10.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "heal",
+    "horizon",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 63193119,
+  "storage_human": "63 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "AI Benchmark User Guide - D-Robotics OpenExplorer Toolchain User Manual",
+      "url": "https://toolchain.d-robotics.cc/en/guide/ucp/runtime/ai_benchmark.html",
+      "snippet": "AI Benchmark User Guide AI Benchmark Sample Package contains the most frequently used performance and accuracy evaluation samples of classification, detection, segmentation, optical-flow, tracking estimation, lidar multitask, bev, depth estimation and online map construction models."
+    },
+    {
+      "title": "AI Benchmark User Guide - Horizon OpenExplorer Toolchain User Manual",
+      "url": "https://doc.oe.horizon.auto/en/guide/model_deployment/board_deployment/ai_benchmark.html",
+      "snippet": "You can get the model_zoo of the PTQ model by executing the script resolve_ai_benchmark_ptq.sh of the samples/model_zoo/runtime/$ {march}/ai_benchmark/ path. The $ {march} in the path can be set to nash-e , nash-b , or nash-p , corresponding respectively to the J6E/M , J6B , and J6P/H platforms. You can choose the appropriate one based on your needs. The mixvargenet_imagenet, detr3d ..."
+    },
+    {
+      "title": "GitHub - D-Robotics/hobot_bev",
+      "url": "https://github.com/D-Robotics/hobot_bev",
+      "snippet": "BEV perception algorithm is a BEV multi-task model trained on the nuscenes dataset using OpenExplorer. The algorithm takes 6 sets of image data as input, including frontal, front left, front right, rear, rear left, and rear right views. The model outputs 10 categories of objects along with their corresponding 3D detection boxes, including obstacles, various types of vehicles, traffic signs, as ..."
+    },
+    {
+      "title": "【参考算法】地平线 MixVarGENet参考算法-V1.2.1 - Model Zoo - 地瓜机器人论坛",
+      "url": "https://forum.d-robotics.cc/t/topic/25905",
+      "snippet": "0 概述 在深度学习领域，backbone作为神经网络特征提取的重要部分，在一定程度上决定了任务的最终结果。为了应对更高等级的自动驾驶场景，地平线提出了与J5芯片深度耦合的高效网络结构MixVargGENet。本文将基于ImageNet数据集，对以MixVargGENet为backbone的分类算法进行介绍和使用说明。 该示例为参考 ..."
+    },
+    {
+      "title": "J6P/H Benchmark of Model Performance - Horizon OpenExplorer Toolchain ...",
+      "url": "https://doc.oe.horizon.auto/en/guide/samples/benchmark/j6ph_benchmark.html",
+      "snippet": "MODEL PERFORMANCE FPS = Frames per second. This data is obtained by running the hrt_model_exec tool in multi-threaded mode. For detailed usage instructions, please refer to the the hrt_model_exec tool introduction - model performance evaluation section. Latency = Inference latency, with the unit of ms (milliseconds). This data is obtained by running the hrt_model_exec tool in single-threaded ..."
+    }
+  ]
+}

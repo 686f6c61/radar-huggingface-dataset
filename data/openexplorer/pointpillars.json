@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "OpenExplorer/pointpillars",
+  "slug": "openexplorer-pointpillars",
+  "author": "OpenExplorer",
+  "url": "https://huggingface.co/OpenExplorer/pointpillars",
+  "created_at": "2026-08-27T07:49:31.000Z",
+  "updated_at": "2026-08-28T08:27:16.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "heal",
+    "horizon",
+    "lidar",
+    "arxiv:1812.05784",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 193062529,
+  "storage_human": "193 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "OpenExploer/pointpillars · Hugging Face",
+      "url": "https://huggingface.co/OpenExploer/pointpillars",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "PointPillars Detection Model Training - Horizon OpenExplorer Toolchain ...",
+      "url": "https://doc.oe.horizon.auto/3.7.0/en/guide/advanced_content/hat/examples/pointpillars.html",
+      "snippet": "This tutorial focuses on how to use HAT to train a PointPillars model on the radar point cloud dataset KITTI-3DObject from scratch, including floating-point, quantized, and fixed-point models."
+    },
+    {
+      "title": "# PointPillars Detection Model Training (No config)",
+      "url": "https://doc.oe.horizon.auto/3.7.1/en/guide/advanced_content/hat/examples/pointpillars_v2.html",
+      "snippet": "This tutorial focuses on how to use HAT to train a PointPillars model on the radar point cloud dataset KITTI-3DObject from scratch, including floating-point, quantized and fixed-point models."
+    },
+    {
+      "title": "AMD-PAVS-AI/pointpillars · Hugging Face",
+      "url": "https://huggingface.co/AMD-PAVS-AI/pointpillars",
+      "snippet": "PointPillars is a lightweight 3D object detector that converts LIDAR point clouds into a 2D pseudo-image via pillar-based feature encoding, then runs a standard 2D detection backbone. This repository packages inference for 3D object detection using ONNX Runtime, exported and validated for AMD ROCm so it runs efficiently on AMD CPUs and NPUs."
+    },
+    {
+      "title": "10.1.4.10. PointPillars Detection Model Training — Horizon Open Explorer",
+      "url": "https://developer.d-robotics.cc/api/v1/fileData/horizon_j5_open_explorer_en_doc/hat/source/examples/pointpillars.html",
+      "snippet": "10.1.4.10. PointPillars Detection Model Training This tutorial focuses on how to use HAT to train a PointPillars model on the radar point cloud dataset KITTI-3DObject from scratch, including floating-point, quantitative, and fixed-point models. 10.1.4.10.1. Dataset Preparation Before starting to train the model, the first step is to prepare the dataset, download the 3DObject dataset. The ..."
+    }
+  ]
+}

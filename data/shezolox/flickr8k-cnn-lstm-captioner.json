@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "shezolox/flickr8k-cnn-lstm-captioner",
+  "slug": "shezolox-flickr8k-cnn-lstm-captioner",
+  "author": "shezolox",
+  "url": "https://huggingface.co/shezolox/flickr8k-cnn-lstm-captioner",
+  "created_at": "2026-08-28T08:45:07.000Z",
+  "updated_at": "2026-08-28T08:45:07.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Image Caption Generator using Deep Learning on Flickr8K dataset",
+      "url": "https://www.geeksforgeeks.org/deep-learning/image-caption-generator-using-deep-learning-on-flickr8k-dataset/",
+      "snippet": "We will build a working model of the image caption generator using CNN (Convolutional Neural Networks) and LSTM (Long short term memory). For training our model we will use Flickr8K dataset which consists of 8000 unique images."
+    },
+    {
+      "title": "Sanchettol/Image-Caption-Generator-using-Deep-Learning - GitHub",
+      "url": "https://github.com/Sanchettol/Image-Caption-Generator-using-Deep-Learning",
+      "snippet": "Image captioning is a task that combines computer vision and natural language processing to generate textual descriptions for images. In this project, a CNN extracts visual features while an LSTM generates meaningful captions. Using the Flickr8k dataset, the model learns to map image features to natural language. - Sanchettol/Image-Caption-Generator-using-Deep-Learning"
+    },
+    {
+      "title": "(PDF) On Architectures for Including Visual Information in Neural ...",
+      "url": "https://www.academia.edu/172305903/On_Architectures_for_Including_Visual_Information_in_Neural_Language_Models_for_Image_Description",
+      "snippet": "Rather than just generating random sentences, a neural language model can instead be conditioned into generating descriptions for images by also providing visual information apart from the sentence prefix. This visual information can be included into the language model through different points of entry resulting in different neural architectures."
+    },
+    {
+      "title": "Flickr8k Image Captioning (CNN + LSTM) - GitHub",
+      "url": "https://github.com/shreyasdeore19/Image-Caption-Generator",
+      "snippet": "Minimal repository: a Jupyter notebook that trains/evaluates an image captioning model on Flickr8k, plus a saved Keras model for inference or reuse. Course context: Topics in Machine Learning — encoder (CNN image features) + decoder (LSTM) with BLEU evaluation (NLTK)."
+    },
+    {
+      "title": "flight rank - Kaggle",
+      "url": "https://www.kaggle.com/datasets/adityajn105/flickr8k",
+      "snippet": "Flickr8k Dataset for image captioning."
+    }
+  ]
+}

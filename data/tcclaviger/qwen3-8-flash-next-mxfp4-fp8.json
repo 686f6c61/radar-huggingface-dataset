@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "tcclaviger/Qwen3.8-Flash-Next-MXFP4-FP8",
+  "slug": "tcclaviger-qwen3-8-flash-next-mxfp4-fp8",
+  "author": "tcclaviger",
+  "url": "https://huggingface.co/tcclaviger/Qwen3.8-Flash-Next-MXFP4-FP8",
+  "created_at": "2026-08-28T05:34:25.000Z",
+  "updated_at": "2026-08-28T06:46:29.000Z",
+  "license": "qwen-community-1.0",
+  "license_family": "unknown",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen4_exp",
+    "image-text-to-text",
+    "amd",
+    "rdna4",
+    "r9700",
+    "mxfp4",
+    "conversational",
+    "base_model:Qwen/Qwen3.8-Flash-Next",
+    "base_model:quantized:Qwen/Qwen3.8-Flash-Next",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "8-bit",
+    "compressed-tensors",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 187549728659,
+  "parameters_human": "187.55B",
+  "storage_bytes": 125859803967,
+  "storage_human": "125.9 GB",
+  "base_model": "Qwen/Qwen3.8-Flash-Next",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Qwen/Qwen3.8-Flash-Next · Hugging Face",
+      "url": "https://huggingface.co/Qwen/Qwen3.8-Flash-Next",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Qwen/Qwen3.8-Flash-Next | vLLM Recipes - recipes.vllm.ai",
+      "url": "https://recipes.vllm.ai/Qwen/Qwen3.8-Flash-Next",
+      "snippet": "Qwen4 architecture preview with a 125B-parameter main model, supplemented by an additional 51B N-gram embeddings, with 6B parameters activated per token."
+    },
+    {
+      "title": "GitHub - QwenLM/Qwen3.8: Qwen3.8 is the large language model series ...",
+      "url": "https://github.com/QwenLM/Qwen3.8",
+      "snippet": "Welcome to the GitHub repository of the Qwen3.5 open model series, including Qwen3.5, Qwen3.6, and the latest Qwen3.8. Here, you can find official information about Qwen3.8, post your questions (Issues), and share your ideas with the community (Discussions)."
+    },
+    {
+      "title": "Qwen3.8-Flash - QwenCloud",
+      "url": "https://www.qwencloud.com/models/qwen3.8-flash",
+      "snippet": "Qwen3.8-Flash is the latest multimodal model from the Qwen family, combining powerful reasoning and generation with remarkable speed. It natively supports a million-token context window, allowing it to process lengthy documents, entire codebases, and complex conversations in a single pass."
+    },
+    {
+      "title": "Qwen3.8-Flash-Next Previews Qwen 4: AI News Aug 26 2026",
+      "url": "https://www.buildfastwithai.com/blogs/ai-news-today-august-26-2026",
+      "snippet": "1. Qwen3.8-Flash-Next Ships Today and Previews Qwen 4 Alibaba&#x27;s Qwen team released Qwen3.8-Flash-Next on August 26, 2026, an open-weight multimodal mixture-of-experts model with 125 billion main parameters supplemented by 51 billion N-gram embeddings, activating 6 billion parameters per token. Weights are hosted on Hugging Face and ModelScope in standard and FP8 variants. The team positions it ..."
+    }
+  ]
+}

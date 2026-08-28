@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "annonymous4science/diffsign-public-decoder-256bit",
+  "slug": "annonymous4science-diffsign-public-decoder-256bit",
+  "author": "annonymous4science",
+  "url": "https://huggingface.co/annonymous4science/diffsign-public-decoder-256bit",
+  "created_at": "2026-08-28T01:22:05.000Z",
+  "updated_at": "2026-08-28T01:22:19.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "image-classification",
+  "library": "pytorch",
+  "languages": [],
+  "tags": [
+    "pytorch",
+    "watermarking",
+    "diffusion",
+    "provenance",
+    "attribution",
+    "stable-diffusion",
+    "image-classification",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 21702122,
+  "storage_human": "22 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "annonymous4science/diffsign-public-decoder-256bit · Hugging Face",
+      "url": "https://huggingface.co/annonymous4science/diffsign-public-decoder-256bit",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "annonymous4science/diffsign-public-decoder-256bit at main",
+      "url": "https://huggingface.co/annonymous4science/diffsign-public-decoder-256bit/tree/main",
+      "snippet": "Model card FilesFiles and versions xet Community Copy to bucket new main diffsign-public-decoder-256bit 21.7 MB Ctrl+K Ctrl+K 1 contributor History:3 commits annonymous4science Add model card 28cbee6 verifiedabout 3 hours ago .gitattributes Safe 1.52 kBinitial commitabout 3 hours ago README.md 2.58 kBAdd model cardabout 3 hours ago diffsign ..."
+    },
+    {
+      "title": "GitHub - athenas-lab/DiffSign",
+      "url": "https://github.com/athenas-lab/DiffSign",
+      "snippet": "This paper combines a parametric model and a generative model to generate synthetic signing videos in which the signer appearance can be customized in a zero-shot manner based on an image or text prompt. The parametric model is used to retarget the signing poses with high fidelity while a diffusion model is used to control the appearance of the synthetic signer. This repo provides the ..."
+    },
+    {
+      "title": "arXiv:2412.03878v1 [cs.CV] 5 Dec 2024",
+      "url": "https://arxiv.org/pdf/2412.03878",
+      "snippet": "The proliferation of several streaming services in recent years has now made it possible for a diverse audience across the world to view the same media content, such as movies or TV shows. While translation and dubbing services are being added to make content accessible to the local audience, the support for making content accessible to people with diferent abilities, such as the Deaf and Hard ..."
+    },
+    {
+      "title": "DiffSign: AI-Assisted Generation of Customizable",
+      "url": "https://arxiv.org/html/2412.03878v1",
+      "snippet": "These results show that our approach of visually conditioning the signer generation on just a single signer image using a pre-trained model with a visual adapter, results in lower jitter compared to the text conditioned models and outperforms even the fine-tuned model."
+    }
+  ]
+}

@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "filipgrabowski/cs231n-matching",
+  "slug": "filipgrabowski-cs231n-matching",
+  "author": "filipgrabowski",
+  "url": "https://huggingface.co/filipgrabowski/cs231n-matching",
+  "created_at": "2026-08-28T02:03:49.000Z",
+  "updated_at": "2026-08-28T02:03:58.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "cnn_transformer",
+    "pytorch",
+    "cnn-transformer",
+    "matching",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 33088,
+  "parameters_human": "33088",
+  "storage_bytes": 132832,
+  "storage_human": "132832 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "filipgrabowski/cs231n-matching · Hugging Face",
+      "url": "https://huggingface.co/filipgrabowski/cs231n-matching",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Stanford University CS231n: Deep Learning for Computer Vision",
+      "url": "https://cs231n.stanford.edu/2025/",
+      "snippet": "Computer Vision has become ubiquitous in our society, with applications in search, image understanding, apps, mapping, medicine, drones, and self-driving cars. Core to many of these applications are visual recognition tasks such as image classification, localization and detection. Recent developments in neural network (aka \"deep learning\") approaches have greatly advanced the performance ..."
+    },
+    {
+      "title": "Stanford University CS231n: Deep Learning for Computer Vision",
+      "url": "https://cs231n.stanford.edu/2024/reports.html",
+      "snippet": "Final Project Reports and Posters Please see the Project page for details regarding the final project."
+    },
+    {
+      "title": "‎Google Gemini",
+      "url": "https://gemini.google.com/?hl=en-IN",
+      "snippet": "Meet Gemini, Google&#x27;s AI assistant. Get help with writing, planning, brainstorming and more. Experience the power of generative AI."
+    },
+    {
+      "title": "Stanford University CS231n: Convolutional Neural Networks for Visual ...",
+      "url": "http://vision.stanford.edu/cs231n/",
+      "snippet": "ImageNet Challenge. Week 8: Squeezing out last few percent: hyperparameter optimization, data augmentation, multi-scale approaches, dropout, model averaging Week 9: Tour of the most popular neural network libraries (e.g. Caffe). Lectures may feature guest speakers from both academia and industry. Week 10:"
+    }
+  ]
+}

@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "alexandermikhailov/vision-language-pretraining-finetuning",
+  "slug": "alexandermikhailov-vision-language-pretraining-finetuning",
+  "author": "alexandermikhailov",
+  "url": "https://huggingface.co/alexandermikhailov/vision-language-pretraining-finetuning",
+  "created_at": "2026-08-28T09:26:28.000Z",
+  "updated_at": "2026-08-28T09:26:37.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "transformer",
+    "research-notes",
+    "vision-language-pretraining",
+    "license:cc-by-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 16576,
+  "parameters_human": "16576",
+  "storage_bytes": 66784,
+  "storage_human": "66784 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "A Survey of Vision-Language Pre-Trained Models - arXiv.org",
+      "url": "https://arxiv.org/pdf/2202.10936",
+      "snippet": "Abstract As transformer evolves, pre-trained models have advanced at a breakneck pace in recent years. They have dominated the mainstream techniques in nat-ural language processing (NLP) and computer vi-sion (CV). How to adapt pre-training to the field of Vision-and-Language (V-L) learning and im-prove downstream task performance becomes a fo-cus of multimodal learning. In this paper, we re ..."
+    },
+    {
+      "title": "OpenAI Halts AI Training on Advanced Model as It Detects Dark Signs ...",
+      "url": "https://futurism.com/artificial-intelligence/openai-halts-training-advanced-model",
+      "snippet": "OpenAI Halts AI Training on Advanced Model as It Detects Dark Signs Emerging \"As models become more capable, the risks associated with developing and testing them internally also grow.\""
+    },
+    {
+      "title": "A Dive into Vision-Language Models - Hugging Face",
+      "url": "https://huggingface.co/blog/vision_language_pretraining",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "VLP: A Survey on Vision-language Pre-training - Springer",
+      "url": "https://link.springer.com/article/10.1007/s11633-022-1369-5",
+      "snippet": "In the past few years, the emergence of pre-training models has brought uni-modal fields such as computer vision (CV) and natural language processing (NLP) to a new era. Substantial works have shown that they are beneficial for downstream uni-modal tasks and avoid training a new model from scratch. So can such pre-trained models be applied to multi-modal tasks? Researchers have explored this ..."
+    },
+    {
+      "title": "[2210.09263] Vision-Language Pre-training: Basics, Recent Advances, and ...",
+      "url": "https://arxiv.org/abs/2210.09263",
+      "snippet": "This paper surveys vision-language pre-training (VLP) methods for multimodal intelligence that have been developed in the last few years. We group these approaches into three categories: (i) VLP for image-text tasks, such as image captioning, image-text retrieval, visual question answering, and visual grounding; (ii) VLP for core computer vision tasks, such as (open-set) image classification ..."
+    }
+  ]
+}

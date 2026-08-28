@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "abanerjeely/class-retrieval54",
+  "slug": "abanerjeely-class-retrieval54",
+  "author": "abanerjeely",
+  "url": "https://huggingface.co/abanerjeely/class-retrieval54",
+  "created_at": "2026-08-28T09:29:44.000Z",
+  "updated_at": "2026-08-28T09:29:53.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "blip",
+    "pytorch",
+    "retrieval",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 24832,
+  "parameters_human": "24832",
+  "storage_bytes": 99808,
+  "storage_human": "99808 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GPT-5.4 · Model guide - CrossModel",
+      "url": "https://www.crossmodel.ai/models/openai/gpt-5-4",
+      "snippet": "GPT-5.4 is OpenAI&#x27;s March 5, 2026 frontier model for professional work. It brought reasoning, coding, computer use, tool calling, and document-style deliverables into one mainline model, and it remains the more affordable GPT-5.4-class choice when you want strong agentic capability without moving all the way to GPT-5.5."
+    },
+    {
+      "title": "All models | OpenAI API",
+      "url": "https://developers.openai.com/api/docs/models/all",
+      "snippet": "All models Browse all available models and compare their capabilities."
+    },
+    {
+      "title": "GPT-5.4 nano Model | OpenAI API",
+      "url": "https://developers.openai.com/api/docs/models/gpt-5.4-nano",
+      "snippet": "Our cheapest GPT-5.4-class model for simple high-volume tasks"
+    },
+    {
+      "title": "AI Detector: Free AI Checker for ChatGPT, Claude & GPT-5 - QuillBot",
+      "url": "https://quillbot.com/ai-content-detector",
+      "snippet": "Quillbot&#x27;s free AI Detector checks text from ChatGPT, GPT-5, Claude and others. Get an AI score, sentence-level highlights, and refined AI detection insights."
+    },
+    {
+      "title": "AI Model Comparison | OpenRouter",
+      "url": "https://openrouter.ai/compare/",
+      "snippet": "Compare AI models by key metrics including benchmarks, price, context length, and other model features. View detailed stats for any model such as latency, uptime, and throughput."
+    }
+  ]
+}

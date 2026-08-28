@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "fszontagh/sprite-sheet-diffusion",
+  "slug": "fszontagh-sprite-sheet-diffusion",
+  "author": "fszontagh",
+  "url": "https://huggingface.co/fszontagh/sprite-sheet-diffusion",
+  "created_at": "2026-08-28T08:53:42.000Z",
+  "updated_at": "2026-08-28T10:00:47.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "image-to-video",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "animate-anyone",
+    "sprite-sheet",
+    "game-character",
+    "pose-guided",
+    "stable-diffusion",
+    "sd1.5",
+    "image-to-video",
+    "arxiv:2412.03685",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 3438374293,
+  "storage_human": "3.4 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Sprite Sheet Diffusion: Generate Game Character for Animation",
+      "url": "https://arxiv.org/html/2412.03685",
+      "snippet": "This work demonstrates how generative diffusion models can streamline 2D game development by reducing manual effort and enabling efficient sprite animation. Beyond games, the framework extends to virtual avatars, storytelling, and education, offering tools and insights for advancing creative industries and interactive media."
+    },
+    {
+      "title": "Sprite Sheet Diffusion: Generate Game Character for Animation",
+      "url": "https://arxiv.org/abs/2412.03685",
+      "snippet": "Each frame is drawn individually, making this a time-consuming and labor-intensive task. Generative models, such as diffusion models, have the potential to revolutionize this process by automating the creation of sprite sheets. Diffusion models, known for their ability to generate diverse images, can be adapted to create character animations."
+    },
+    {
+      "title": "GitHub - chenganhsieh/Sprite-Sheet-Diffusion: Generate Game Character ...",
+      "url": "https://github.com/chenganhsieh/Sprite-Sheet-Diffusion",
+      "snippet": "Below is an image depicting the method used in the Sprite Sheet Diffusion approach: We implemented two evaluation scripts to automate the evaluation process and generate a summary of the results in a MARKDOWN file. results/ └── Exp_A/ ├── character_X/ │ └── motions ..."
+    },
+    {
+      "title": "Sprite Sheet Diffusion: Generate Game Character for Animation | AI ...",
+      "url": "https://www.aimodels.fyi/papers/arxiv/sprite-sheet-diffusion-generate-game-character-animation",
+      "snippet": "Conclusion Sprite Sheet Diffusion marks a significant advance in automated game animation generation. It demonstrates how AI can assist creative professionals while maintaining artistic quality. The system opens new possibilities for game development, potentially making animation production more accessible to independent developers."
+    },
+    {
+      "title": "PDF Sprite Sheet Generation using a Diffusion Model",
+      "url": "https://marcovolino.github.io/docs/posters/2025-wong-cvmp.pdf",
+      "snippet": "The model is proven to generalise well across different camera angles and outfits that showcase practical utility. The proposed method tackles a time-consuming problem in sprite sheet creation, enabling rapid and personalised creation of avatars for use in games and the metaverse."
+    }
+  ]
+}

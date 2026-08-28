@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "stgallenquants/Inkling-Small",
+  "slug": "stgallenquants-inkling-small",
+  "author": "stgallenquants",
+  "url": "https://huggingface.co/stgallenquants/Inkling-Small",
+  "created_at": "2026-08-28T11:35:44.000Z",
+  "updated_at": "2026-08-28T11:35:44.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "inkling_mm_model",
+    "image-text-to-text",
+    "conversational",
+    "audio-text-to-text",
+    "moe",
+    "license:apache-2.0",
+    "eval-results",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 265956439090,
+  "parameters_human": "265.96B",
+  "storage_bytes": 531944513947,
+  "storage_human": "531.9 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Inkling-Small Model Card - Thinking Machines Lab",
+      "url": "https://thinkingmachines.ai/model-card/inkling-small/",
+      "snippet": "Model card for Inkling-Small, a 276B-parameter (12B active) open-weights multimodal model: intended uses, model properties, training, evaluations and safety."
+    },
+    {
+      "title": "Inkling - Thinking Machines Lab",
+      "url": "https://thinkingmachines.ai/inkling/",
+      "snippet": "Inkling-Small is shown with a solid purple line, Inkling with the heavier cobalt line, and the comparison models with dashed lines. Evaluations without a reported model score are plotted at zero. Hover an evaluation to compare every model&#x27;s score."
+    },
+    {
+      "title": "Inkling Small: Benchmarks, Pricing and Context Window | Shortly AI",
+      "url": "https://shortlyai.com/models/inkling-small",
+      "snippet": "Inkling-Small is a lighter-weight model with 12B active parameters, trained with a similar recipe, to Inkling that achieves strong performance with even lower cost and latency."
+    },
+    {
+      "title": "Inkling Small - blackbox.ai",
+      "url": "https://www.blackbox.ai/models/blackboxai/thinkingmachines/inkling-small",
+      "snippet": "Inkling-Small is a lighter-weight model with 12B active parameters, trained with a similar recipe, to Inkling that achieves strong performance with even lower cost and latency."
+    },
+    {
+      "title": "Thinking Machines: Inkling Small | Text Generation | ModelsLab",
+      "url": "https://modelslab.com/models/thinkingmachines/thinkingmachines-inkling-small",
+      "snippet": "Try Thinking Machines: Inkling Small in your browser. Chat with this AI model instantly with no code required. Plans from $21/month."
+    }
+  ]
+}

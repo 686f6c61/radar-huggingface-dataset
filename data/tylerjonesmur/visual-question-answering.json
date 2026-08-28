@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "tylerjonesmur/visual-question-answering",
+  "slug": "tylerjonesmur-visual-question-answering",
+  "author": "tylerjonesmur",
+  "url": "https://huggingface.co/tylerjonesmur/visual-question-answering",
+  "created_at": "2026-08-28T08:10:42.000Z",
+  "updated_at": "2026-08-28T08:10:50.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "visual-question-answering",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "transformer",
+    "research-notes",
+    "visual-question-answering",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 24832,
+  "parameters_human": "24832",
+  "storage_bytes": 99808,
+  "storage_human": "99808 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Visual Question Answering - Hugging Face",
+      "url": "https://huggingface.co/docs/transformers/en/tasks/visual_question_answering",
+      "snippet": "Visual Question Answering (VQA) is the task of answering open-ended questions based on an image. The input to models supporting this task is typically a combination of an image and a question, and the output is an answer expressed in natural language. Some noteworthy use case examples for VQA include:"
+    },
+    {
+      "title": "VQA: Visual Question Answering",
+      "url": "https://visualqa.org/",
+      "snippet": "VQA is a new dataset containing open-ended questions about images. These questions require an understanding of vision, language and commonsense knowledge to answer."
+    },
+    {
+      "title": "Visual Question Answering · Hugging Face",
+      "url": "https://huggingface.co/docs/transformers/tasks/visual_question_answering",
+      "snippet": "Visual Question Answering Visual Question Answering (VQA) is the task of answering open-ended questions based on an image. The input to models supporting this task is typically a combination of an image and a question, and the output is an answer expressed in natural language."
+    },
+    {
+      "title": "GitHub - UsefGamal/Visual-Question-Answering-VQA: A Multimodal project ...",
+      "url": "https://github.com/UsefGamal/Visual-Question-Answering-VQA",
+      "snippet": "The Visual Question Answering 2.0 (VQA 2.0) dataset is a large-scale benchmark for testing the ability of machine learning models to answer natural language questions about images. It contains over 1 million images from the COCO dataset, paired with over 2 million question-answer pairs. The questions are open-ended and cover a wide range of topics, including object recognition, spatial ..."
+    },
+    {
+      "title": "Visual Question Answering: A Survey of Methods, Datasets, Evaluation ...",
+      "url": "https://dl.acm.org/doi/full/10.1145/3728635",
+      "snippet": "Visual Question Answering (VQA) is a growing research area within the broader multimodal AI field, integrating computer vision (CV) and natural language processing (NLP) to answer textual questions about images. In some cases, VQA incorporates external knowledge alongside images and questions to enrich the understanding and generation of answers."
+    }
+  ]
+}

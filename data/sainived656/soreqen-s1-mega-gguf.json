@@ -5,7 +5,7 @@
   "author": "sainived656",
   "url": "https://huggingface.co/sainived656/soreqen-s1-mega-GGUF",
   "created_at": "2026-08-19T06:22:32.000Z",
-  "updated_at": "2026-08-19T06:36:57.000Z",
+  "updated_at": "2026-08-27T19:19:55.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -23,8 +23,8 @@
     "text-generation",
     "en",
     "hi",
-    "base_model:vedsaini656/soreqen-s1-mega",
-    "base_model:quantized:vedsaini656/soreqen-s1-mega",
+    "base_model:zorqelis-ai/soreqen-s1-mega",
+    "base_model:quantized:zorqelis-ai/soreqen-s1-mega",
     "license:apache-2.0",
     "endpoints_compatible",
     "region:us",
@@ -37,7 +37,7 @@
   "parameters_human": "4.21B",
   "storage_bytes": 15615600800,
   "storage_human": "15.6 GB",
-  "base_model": "sainived656/soreqen-s1-mega",
+  "base_model": "zorqelis-ai/soreqen-s1-mega",
   "formats": [
     "gguf"
   ],

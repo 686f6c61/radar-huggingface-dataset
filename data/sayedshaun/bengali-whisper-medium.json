@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "SayedShaun/bengali-whisper-medium",
+  "slug": "sayedshaun-bengali-whisper-medium",
+  "author": "SayedShaun",
+  "url": "https://huggingface.co/SayedShaun/bengali-whisper-medium",
+  "created_at": "2026-08-27T05:44:03.000Z",
+  "updated_at": "2026-08-28T08:19:21.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "automatic-speech-recognition",
+  "library": "transformers",
+  "languages": [
+    "bn"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "whisper",
+    "automatic-speech-recognition",
+    "bengali",
+    "bangla",
+    "speech-recognition",
+    "punctuation-restoration",
+    "bn",
+    "base_model:openai/whisper-medium",
+    "base_model:finetune:openai/whisper-medium",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 763857920,
+  "parameters_human": "763.9M",
+  "storage_bytes": 6535249896,
+  "storage_human": "6.5 GB",
+  "base_model": "openai/whisper-medium",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "SayedShaun/bengali-whisper-medium · Hugging Face",
+      "url": "https://huggingface.co/SayedShaun/bengali-whisper-medium",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "openai/whisper-medium · Hugging Face",
+      "url": "https://huggingface.co/openai/whisper-medium",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "bengaliAI (Bengali.AI) - Hugging Face",
+      "url": "https://huggingface.co/bengaliAI",
+      "snippet": "Bengali.AI is a non-profit research organization working towards democratizing Bengali language research. Our team consists of researchers active in industry, academia and the government who are wo..."
+    },
+    {
+      "title": "shhossain/whisper_bangla_models - GitHub",
+      "url": "https://github.com/shhossain/whisper_bangla_models",
+      "snippet": "This repo contains bangla speech to text models fintuned on whisper model. - shhossain/whisper_bangla_models"
+    },
+    {
+      "title": "GitHub - sayedshaun/asr-punct-restore · GitHub",
+      "url": "https://github.com/sayedshaun/asr-punct-restore",
+      "snippet": "Attribution These weights are part of the 1st-place solution of the Bengali.AI Speech Recognition Kaggle competition, trained by Erdene-Ochir Tuguldur (tugstugi), team Chimege. This package republishes them (via SayedShaun/asr-punctuation-restore-bn, mirrored from SayedShaun/bengali-whisper-medium) purely for standalone, ASR-agnostic use."
+    }
+  ]
+}

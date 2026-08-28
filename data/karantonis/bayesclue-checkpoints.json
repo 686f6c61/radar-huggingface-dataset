@@ -5,7 +5,7 @@
   "author": "karantonis",
   "url": "https://huggingface.co/karantonis/bayesclue-checkpoints",
   "created_at": "2026-06-21T07:34:26.000Z",
-  "updated_at": "2026-08-27T04:32:31.000Z",
+  "updated_at": "2026-08-28T04:20:14.000Z",
   "license": "other",
   "license_family": "unknown",
   "pipeline_tag": null,
@@ -27,8 +27,8 @@
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
-  "storage_bytes": 231836530022,
-  "storage_human": "231.8 GB",
+  "storage_bytes": 238233448742,
+  "storage_human": "238.2 GB",
   "base_model": "Qwen/Qwen3.5-4B",
   "formats": [
     "safetensors"

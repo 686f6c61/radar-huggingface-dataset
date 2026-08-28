@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "kdshivam/RS-llava-v1.5-7b-LoRA",
+  "slug": "kdshivam-rs-llava-v1-5-7b-lora",
+  "author": "kdshivam",
+  "url": "https://huggingface.co/kdshivam/RS-llava-v1.5-7b-LoRA",
+  "created_at": "2026-08-28T07:27:32.000Z",
+  "updated_at": "2026-08-28T07:27:33.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "llava",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 377660788,
+  "storage_human": "378 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "BigData-KSU/RS-llava-v1.5-7b-LoRA · Hugging Face",
+      "url": "https://huggingface.co/BigData-KSU/RS-llava-v1.5-7b-LoRA",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GitHub - BigData-KSU/RS-LLaVA",
+      "url": "https://github.com/BigData-KSU/RS-LLaVA",
+      "snippet": "RS-LLaVA: Large Vision Language Model for Joint Captioning and Question Answering in Remote Sensing Imagery Yakoub Bazi, Laila Bashmal, Mohamad Al rahhal, Mansour Zuair, Riccardo Ricci, Farid Melgani [Paper] [RS-LLaVA Model] [RS-instructions Dataset]"
+    },
+    {
+      "title": "README.md · BigData-KSU/RS-llava-v1.5-7b-LoRA at main",
+      "url": "https://huggingface.co/BigData-KSU/RS-llava-v1.5-7b-LoRA/blob/main/README.md",
+      "snippet": "Stage 2: Visual Instruction Tuning: To teach the model to follow instructions, we used the proposed RS-Instructions Dataset plus LLaVA-Instruct-150K dataset."
+    },
+    {
+      "title": "GitHub - 3SD3/RS-LlaVA",
+      "url": "https://github.com/3SD3/RS-LlaVA",
+      "snippet": "RS-LLaVA: Large Vision Language Model for Joint Captioning and Question Answering in Remote Sensing Imagery Yakoub Bazi, Laila Bashmal, Mohamad Al rahhal, Mansour Zuair, Riccardo Ricci, Farid Melgani [Paper] [RS-LLaVA Model] [RS-instructions Dataset]"
+    },
+    {
+      "title": "RS-LLaVA: A Large Vision-Language Model for Joint Captioning and ... - MDPI",
+      "url": "https://www.mdpi.com/2072-4292/16/9/1477",
+      "snippet": "The RS-LLaVA model is based on the architecture of the LLaVA model [15]. In our experiments, we explore two variants of pre-trained Vicuna-v1.5 [60] LLM variants, ranging in size from 7B to 13B, to initialize the language model for RS-LLaVA."
+    }
+  ]
+}

@@ -1,0 +1,77 @@
+{
+  "schema": 1,
+  "id": "mlx-community/gemma-4-26B-A4B-it-OptiQ-4bit-REAP-14B",
+  "slug": "mlx-community-gemma-4-26b-a4b-it-optiq-4bit-reap-14b",
+  "author": "mlx-community",
+  "url": "https://huggingface.co/mlx-community/gemma-4-26B-A4B-it-OptiQ-4bit-REAP-14B",
+  "created_at": "2026-08-28T08:05:50.000Z",
+  "updated_at": "2026-08-28T08:18:44.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "mlx",
+  "languages": [],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "gemma4",
+    "quantized",
+    "expert-pruning",
+    "reap",
+    "moe",
+    "optiq",
+    "apple-silicon",
+    "text-generation",
+    "conversational",
+    "arxiv:2510.13999",
+    "base_model:mlx-community/gemma-4-26B-A4B-it-OptiQ-4bit",
+    "base_model:quantized:mlx-community/gemma-4-26B-A4B-it-OptiQ-4bit",
+    "license:apache-2.0",
+    "4-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 3303571150,
+  "parameters_human": "3.30B",
+  "storage_bytes": 11236688875,
+  "storage_human": "11.2 GB",
+  "base_model": "mlx-community/gemma-4-26B-A4B-it-OptiQ-4bit",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Gemma 4 - a mlx-community Collection - Hugging Face",
+      "url": "https://huggingface.co/collections/mlx-community/gemma-4",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "mlx-community/gemma-4-26b-a4b-4bit · Hugging Face",
+      "url": "https://huggingface.co/mlx-community/gemma-4-26b-a4b-4bit",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Run Gemma 4 with MLX on Apple Silicon | gemma4.dev",
+      "url": "https://gemma4.dev/run-local/gemma-4-mlx",
+      "snippet": "Run Gemma 4 with Apple&#x27;s MLX framework on M1/M2/M3/M4 chips. Covers installation, model download, and inference optimization for Apple Silicon Macs."
+    },
+    {
+      "title": "Run Gemma with MLX | Google AI for Developers",
+      "url": "https://ai.google.dev/gemma/docs/integrations/mlx",
+      "snippet": "Run Gemma with MLX MLX is an array framework for machine learning on Apple silicon. Quick start Install from the Python Package Index (PyPI) ... Example command: ... You can start the server with:"
+    },
+    {
+      "title": "gemma-4-26B-A4B-it-MLX-4bit · Models",
+      "url": "https://www.modelscope.cn/models/lmstudio-community/gemma-4-26B-A4B-it-MLX-4bit",
+      "snippet": "💫 Community Model> gemma-4-26B-A4B-it by google 👾 LM Studio Community models highlights program. Highlighting new & noteworthy models by the community. Join the conversation on Discord. Model creator: google Original model: gemma-4-26B-A4B-it MLX quantization: provided by LM Studio team using mlx_vlm Technical Details 4-bit quantized version of gemma-4-26B-A4B-it using MLX, optimized for ..."
+    }
+  ]
+}

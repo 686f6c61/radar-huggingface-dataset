@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "mradermacher/Qwen3.8-27B-thinkingcap-abliterated-GGUF",
+  "slug": "mradermacher-qwen3-8-27b-thinkingcap-abliterated-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/Qwen3.8-27B-thinkingcap-abliterated-GGUF",
+  "created_at": "2026-08-28T07:22:34.000Z",
+  "updated_at": "2026-08-28T07:43:50.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 27320697856,
+  "parameters_human": "27.32B",
+  "storage_bytes": 28246749184,
+  "storage_human": "28.2 GB",
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "mradermacher/Qwen3.8-27B-ABLITERATED-BF16-i1-GGUF · Hugging Face",
+      "url": "https://huggingface.co/mradermacher/Qwen3.8-27B-ABLITERATED-BF16-i1-GGUF",
+      "snippet": "mradermacher / Qwen3.8-27B-ABLITERATED-BF16-i1-GGUF like 0 Transformers GGUF English qwen3.8 qwen 27b bf16 dense vision-language derisked research security-research red-teaming coding tool-calling long-context public-research-preview imatrix conversational License:apache-2.0 Model card FilesFiles and versions xet Community Deploy Copy to bucket ..."
+    },
+    {
+      "title": "mradermacher/Qwen3.8-27B-Uncensored-Heretic-Abliterated-i1-GGUF ...",
+      "url": "https://huggingface.co/mradermacher/Qwen3.8-27B-Uncensored-Heretic-Abliterated-i1-GGUF",
+      "snippet": "mradermacher / Qwen3.8-27B-Uncensored-Heretic-Abliterated-i1-GGUF like 0 Text Generation Transformers GGUF English qwen uncensored abliteration safety-research heretic imatrix conversational License:apache-2.0 Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "Qwen 3.8 27B: Why This Powerful Model Can&#x27;t Stop ... - DEV Community",
+      "url": "https://dev.to/kaixintelligence/qwen-38-27b-why-this-powerful-model-cant-stop-overthinking-and-how-to-fix-it-5dh6",
+      "snippet": "Qwen 3.8 27B: Why This Powerful Model Can&#x27;t Stop Overthinking (and How to Fix It) If you&#x27;ve spent any time on Hacker News in late 2026, you&#x27;ve probably seen the meme: someone asks Qwen 3.8 27B for the capital of France, and the model responds with a 1,500-token dissertation on European geography before reluctantly getting to Paris."
+    },
+    {
+      "title": "Qwen/Qwen3.8-27B | vLLM Recipes - recipes.vllm.ai",
+      "url": "https://recipes.vllm.ai/Qwen/Qwen3.8-27B",
+      "snippet": "27B-parameter dense hybrid-attention model with linear attention on 48 of 64 layers, a vision tower, a built-in MTP draft head, 262K native context window and extensible to 1M context"
+    },
+    {
+      "title": "Qwen3.8-27B - vLLM Ascend - docs.vllm.ai",
+      "url": "https://docs.vllm.ai/projects/ascend/en/latest/tutorials/models/Qwen3.8-27B.html",
+      "snippet": "Qwen3.8-27B 1 Introduction ¶ Qwen3.8-27B is the 27-billion-parameter dense member of the Qwen3.8 family, the most capable generation in the Qwen open-model family to date. Built on the architectural foundation of Qwen3.5, it shares the same hybrid-attention backbone as the 2.4T MoE flagship: of its 64 layers, only 16 run full (gated) attention (full_attention_interval: 4) while the other 48 ..."
+    }
+  ]
+}

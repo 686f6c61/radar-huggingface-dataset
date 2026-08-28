@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "ZiyadSaleh/coca-checkpoint",
+  "slug": "ziyadsaleh-coca-checkpoint",
+  "author": "ZiyadSaleh",
+  "url": "https://huggingface.co/ZiyadSaleh/coca-checkpoint",
+  "created_at": "2026-08-28T09:34:09.000Z",
+  "updated_at": "2026-08-28T09:34:17.000Z",
+  "license": "bsd-3-clause",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "coca",
+    "pytorch",
+    "classification",
+    "license:bsd-3-clause",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 33088,
+  "parameters_human": "33088",
+  "storage_bytes": 132832,
+  "storage_human": "132832 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "checkpoint AI Models | Civitai",
+      "url": "https://civitai.com/tag/checkpoint",
+      "snippet": "Browse 200 Stable Diffusion & Flux models, LoRAs, checkpoints, and embeddings tagged with checkpoint."
+    },
+    {
+      "title": "AI Researchers Got Chatbots to Share Cocaine Recipes Using ... - Decrypt",
+      "url": "https://decrypt.co/372688/ai-researchers-chatbots-share-cocaine-recipes-wild-trick",
+      "snippet": "AI Researchers Got Chatbots to Share Cocaine Recipes Using This One Wild Trick Researchers say a new jailbreak technique tricked AI models into treating attacker-written text as their own reasoning, bypassing safety guardrails and exposing a deeper security flaw."
+    },
+    {
+      "title": "AI Models | Civitai",
+      "url": "https://civitai.com/models",
+      "snippet": "Browse thousands of free Stable Diffusion & Flux models, LoRAs, checkpoints, and embeddings. The largest collection of AI image generation resources."
+    },
+    {
+      "title": "DAMO Academy Unveils COCA: AI Model for Colorectal Cancer Detection",
+      "url": "https://www.alibabacloud.com/blog/603073",
+      "snippet": "The advanced AI model can detect colorectal cancer with high accuracy and improved early detection rates. It is part of Alibaba DAMO Academy&#x27;s broader effort to build AI-powered screening tools for multiple cancers using existing CT imaging data."
+    },
+    {
+      "title": "Models - Hugging Face",
+      "url": "https://huggingface.co/models?other=checkpoint",
+      "snippet": "Explore machine learning models."
+    }
+  ]
+}

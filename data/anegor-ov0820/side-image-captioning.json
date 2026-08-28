@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "anegor-ov0820/side-image-captioning",
+  "slug": "anegor-ov0820-side-image-captioning",
+  "author": "anegor-ov0820",
+  "url": "https://huggingface.co/anegor-ov0820/side-image-captioning",
+  "created_at": "2026-08-28T11:39:15.000Z",
+  "updated_at": "2026-08-28T11:39:24.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "transformer",
+    "research-notes",
+    "image-captioning",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 24832,
+  "parameters_human": "24832",
+  "storage_bytes": 99808,
+  "storage_human": "99808 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Image captioning · Hugging Face",
+      "url": "https://huggingface.co/docs/transformers/tasks/image_captioning",
+      "snippet": "Image captioning Image captioning is the task of predicting a caption for a given image. Common real world applications of it include aiding visually impaired people that can help them navigate through different situations. Therefore, image captioning helps to improve content accessibility for people by describing images to them."
+    },
+    {
+      "title": "Models - Hugging Face",
+      "url": "https://huggingface.co/models?other=image-captioning",
+      "snippet": "Explore machine learning models. Leon1000/Qwen2.5-VL-7B-NSFW-Caption-V3-ComfyUI"
+    },
+    {
+      "title": "A comprehensive survey on deep learning approaches for image captioning ...",
+      "url": "https://link.springer.com/article/10.1186/s40537-026-01377-w",
+      "snippet": "This paper presents a comprehensive literature survey on image captioning, covering research published between 2018 and 2025. It introduces a novel taxonomy to classify existing approaches into nine major categories, including attention-based models, transformer-based architectures, reinforcement learning, and Vision-Language Pretraining (VLP). A total of 174 peer-reviewed studies are ..."
+    },
+    {
+      "title": "Image Captioning: A Comprehensive Survey, Comparative Analysis of ...",
+      "url": "https://ieeexplore.ieee.org/document/10250630",
+      "snippet": "Image captioning is a research area that focuses on the development of algorithms and models that can automatically generate descriptive and coherent captions. This study provides a comprehensive overview of image captioning techniques, research gaps, and a comparative analysis of existing models."
+    },
+    {
+      "title": "Image Captioning: State-of-the-Art Open Source AI Models in 2025",
+      "url": "https://madailab.com/image-captioning-state-of-the-art-open-source-ai-models-in-2025",
+      "snippet": "Image captioning technology has evolved significantly by 2025, with state-of-the-art models now capable of generating detailed, accurate, and contextually rich descriptions of visual content."
+    }
+  ]
+}

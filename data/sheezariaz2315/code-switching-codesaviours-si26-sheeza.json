@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "sheezariaz2315/code-switching-codesaviours-si26-sheeza",
+  "slug": "sheezariaz2315-code-switching-codesaviours-si26-sheeza",
+  "author": "sheezariaz2315",
+  "url": "https://huggingface.co/sheezariaz2315/code-switching-codesaviours-si26-sheeza",
+  "created_at": "2026-07-25T12:28:03.000Z",
+  "updated_at": "2026-08-28T08:38:40.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "xlm-roberta",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 277455363,
+  "parameters_human": "277.5M",
+  "storage_bytes": 1126943684,
+  "storage_human": "1.1 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "sheezariaz2315 (Sheeza Riaz) - Hugging Face",
+      "url": "https://huggingface.co/sheezariaz2315/datasets",
+      "snippet": "User profile of Sheeza Riaz on Hugging Face"
+    },
+    {
+      "title": "sheezariaz2315 (Sheeza Riaz) - Hugging Face",
+      "url": "https://huggingface.co/sheezariaz2315",
+      "snippet": "Urdu Ocr Codesaviours Si26 Sheeza 👀 Urdu OCR Project - Code Saviours SI-26 sheezariaz2315 14 days ago"
+    },
+    {
+      "title": "sheezariaz2315 - GitHub",
+      "url": "https://github.com/sheezariaz2315",
+      "snippet": "Joined Jul 24, 2026 Block or report sheezariaz2315 sheezariaz2315-urdu-ocr-codesaviours-si26-sheeza sheezariaz2315-urdu-ocr-codesaviours-si26-sheeza Public Jupyter Notebook code-switching-codesaviours-si26-sheeza code-switching-codesaviours-si26-sheeza Public Jupyter Notebook"
+    },
+    {
+      "title": "Zainab-Binte-Khalid/code-switching-codesaviours-si26-zainab - GitHub",
+      "url": "https://github.com/Zainab-Binte-Khalid/code-switching-codesaviours-si26-zainab",
+      "snippet": "Model code-switching-codesaviours-si26-zainab model — XLM-RoBERTa fine-tuned for 8 epochs on the above dataset."
+    },
+    {
+      "title": "Code Switching Codesaviours Si26 Muhammadahmad - AI Model Insights ...",
+      "url": "https://free2aitools.com/model/muhammad-ahmad-1263/code-switching-codesaviours-si26-muhammadahmad",
+      "snippet": "Registry entry for model Code Switching Codesaviours Si26 Muhammadahmad; source metadata pending."
+    }
+  ]
+}

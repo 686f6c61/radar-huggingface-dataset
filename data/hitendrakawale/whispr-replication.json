@@ -1,0 +1,79 @@
+{
+  "schema": 1,
+  "id": "HitendraKawale/whispr-replication",
+  "slug": "hitendrakawale-whispr-replication",
+  "author": "HitendraKawale",
+  "url": "https://huggingface.co/HitendraKawale/whispr-replication",
+  "created_at": "2026-08-28T06:36:30.000Z",
+  "updated_at": "2026-08-28T06:38:05.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "automatic-speech-recognition",
+  "library": "pytorch",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "pytorch",
+    "automatic-speech-recognition",
+    "whisper",
+    "replication",
+    "educational",
+    "research-artifact",
+    "not-for-production",
+    "en",
+    "dataset:librispeech_asr",
+    "arxiv:2212.04356",
+    "license:mit",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 433146528,
+  "storage_human": "433 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "Automatic Speech Recognition",
+      "dataset": "LibriSpeech dev-clean",
+      "metric": "WER",
+      "value": 103.4
+    }
+  ],
+  "sources": [
+    {
+      "title": "GitHub - HitendraKawale/whispr_replication: Replicating OpenAI&#x27;s ...",
+      "url": "https://github.com/HitendraKawale/whispr_replication",
+      "snippet": "A step-by-step, from-scratch replication of Robust Speech Recognition via Large-Scale Weak Supervision (Radford et al., 2022 — the Whisper paper), built small enough to train on a 16 GB Apple M1 while staying architecturally faithful to the paper."
+    },
+    {
+      "title": "whispr_replication/README.md at main · HitendraKawale/whispr ... - GitHub",
+      "url": "https://github.com/HitendraKawale/whispr_replication/blob/main/README.md",
+      "snippet": "whispr — replicating Whisper from scratch on an M1 MacBook A step-by-step, from-scratch replication of Robust Speech Recognition via Large-Scale Weak Supervision (Radford et al., 2022 — the Whisper paper), built small enough to train on a 16 GB Apple M1 while staying architecturally faithful to the paper."
+    },
+    {
+      "title": "GitHub - HitendraKawale/whispr_replication: Replicating OpenAI&#x27;s ...",
+      "url": "https://www.linkedin.com/posts/hitendra-kawale_github-hitendrakawalewhisprreplication-activity-7488552339893587968-6Cvr",
+      "snippet": "Then the fun test: I loaded OpenAI&#x27;s actual whisper-tiny weights into my model class. Bit-identical outputs. Difference: 0.0 🙂 So the code was right."
+    },
+    {
+      "title": "Hitendra Kawale — AI Engineer",
+      "url": "https://hitendrakawale.github.io/",
+      "snippet": "MSc Artificial Intelligence (University of Surrey). I build production-grade AI systems — LLM platforms, RAG pipelines, and interactive 3D vision — backend-heavy, deployment-aware, and obsessed with what holds up in the real world. I&#x27;m also a polyglot: I work comfortably in English and Spanish, hold a conversation in Mandarin, carry Hindi and Marathi as mother tongues, and read or speak a ..."
+    },
+    {
+      "title": "openai-whisper · PyPI",
+      "url": "https://pypi.org/project/openai-whisper/",
+      "snippet": "Additionally, the turbo model is an optimized version of large-v3 that offers faster transcription speed with a minimal degradation in accuracy. Whisper&#x27;s performance varies widely depending on the language."
+    }
+  ]
+}

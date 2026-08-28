@@ -5,7 +5,7 @@
   "author": "AMAImedia",
   "url": "https://huggingface.co/AMAImedia/CodeRM-GRPO-Selection-8B-NOESIS-AWQ-INT4",
   "created_at": "2026-05-17T20:23:31.000Z",
-  "updated_at": "2026-08-25T15:40:53.000Z",
+  "updated_at": "2026-08-27T19:24:30.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-classification",

@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "joshuagonzalez/self-supervised-tiny",
+  "slug": "joshuagonzalez-self-supervised-tiny",
+  "author": "joshuagonzalez",
+  "url": "https://huggingface.co/joshuagonzalez/self-supervised-tiny",
+  "created_at": "2026-08-28T09:47:02.000Z",
+  "updated_at": "2026-08-28T09:47:09.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "transformer",
+    "research-notes",
+    "self-supervised",
+    "license:cc-by-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 16576,
+  "parameters_human": "16576",
+  "storage_bytes": 66784,
+  "storage_human": "66784 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Tiiny - Portable And Powerful Local AI",
+      "url": "https://tiiny.tech/",
+      "snippet": "Tiiny is a portable local‑AI device for running offline agents and downloading models—one‑time purchase with no subscription or token fees, no internet needed."
+    },
+    {
+      "title": "joshuagonzalez (Hazel Wilson) - Hugging Face",
+      "url": "https://huggingface.co/joshuagonzalez/models",
+      "snippet": "Researcher in NLP & computer vision."
+    },
+    {
+      "title": "Tiny Self Supervised Models Redefining Everyday AI - YouTube",
+      "url": "https://www.youtube.com/watch?v=wflbrqXAbI0",
+      "snippet": "Explore how unlabeled data trains compact AI models powering phones and devices. This short breaks down challenges and breakthroughs shaping accessible AI.#S..."
+    },
+    {
+      "title": "jegonzalez23/tinyllama-finetuned · Hugging Face",
+      "url": "https://huggingface.co/jegonzalez23/tinyllama-finetuned",
+      "snippet": "Model Card for tinyllama-finetuned This model is a fine-tuned version of TinyLlama/TinyLlama-1.1B-Chat-v1.. It has been trained using TRL."
+    },
+    {
+      "title": "Tiny Model Generator | AI Models That Run on CPU",
+      "url": "https://tinymodelgenerator.com/",
+      "snippet": "Need an AI model that runs on CPU, without a GPU, or on cheap hardware? Tiny Model Generator creates custom small AI models for narrow tasks that run locally, privately, and affordably."
+    }
+  ]
+}

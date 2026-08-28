@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "cgnzimmermann/audio-visual-learning-study46",
+  "slug": "cgnzimmermann-audio-visual-learning-study46",
+  "author": "cgnzimmermann",
+  "url": "https://huggingface.co/cgnzimmermann/audio-visual-learning-study46",
+  "created_at": "2026-08-28T08:00:14.000Z",
+  "updated_at": "2026-08-28T08:00:23.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "transformer",
+    "research-notes",
+    "audio-visual-learning",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 16576,
+  "parameters_human": "16576",
+  "storage_bytes": 66784,
+  "storage_human": "66784 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "cgnzimmermann (Lena Zimmermann) - Hugging Face",
+      "url": "https://huggingface.co/cgnzimmermann/models",
+      "snippet": "cgnzimmermann&#x27;s models1 Sort: Recently updated cgnzimmermann/paper_019721154_grounded_language Updated about 10 hours ago"
+    },
+    {
+      "title": "audio-visual learning - GeWu-Lab",
+      "url": "https://gewu-lab.github.io/audio-visual-learning/",
+      "snippet": "Learning in Audio-visual Context: A Review, Analysis, and New Perspective"
+    },
+    {
+      "title": "Google Gemini",
+      "url": "https://gemini.google.com/",
+      "snippet": "Get assistance with writing, planning, learning, and more from Google AI."
+    },
+    {
+      "title": "[2208.09579] Learning in Audio-visual Context: A Review, Analysis, and ...",
+      "url": "https://arxiv.org/abs/2208.09579",
+      "snippet": "Then, we systematically review the recent audio-visual learning studies and divide them into three categories: audio-visual boosting, cross-modal perception and audio-visual collaboration. Through our analysis, we discover that, the consistency of audio-visual data across semantic, spatial and temporal support the above studies."
+    },
+    {
+      "title": "Audiovisual Learning | Springer Nature Link",
+      "url": "https://link.springer.com/rwe/10.1007/978-1-4419-1428-6_317",
+      "snippet": "&#x27;Audiovisual Learning&#x27; published in &#x27;Encyclopedia of the Sciences of Learning&#x27;"
+    }
+  ]
+}

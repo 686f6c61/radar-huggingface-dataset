@@ -1,0 +1,91 @@
+{
+  "schema": 1,
+  "id": "ankanroycms/t5-small",
+  "slug": "ankanroycms-t5-small",
+  "author": "ankanroycms",
+  "url": "https://huggingface.co/ankanroycms/t5-small",
+  "created_at": "2026-08-28T07:56:18.000Z",
+  "updated_at": "2026-08-28T07:56:18.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "translation",
+  "library": null,
+  "languages": [
+    "en",
+    "fr",
+    "ro",
+    "de",
+    "multilingual"
+  ],
+  "tags": [
+    "pytorch",
+    "tf",
+    "jax",
+    "rust",
+    "onnx",
+    "safetensors",
+    "t5",
+    "summarization",
+    "translation",
+    "en",
+    "fr",
+    "ro",
+    "de",
+    "multilingual",
+    "dataset:c4",
+    "arxiv:1805.12471",
+    "arxiv:1708.00055",
+    "arxiv:1704.05426",
+    "arxiv:1606.05250",
+    "arxiv:1808.09121",
+    "arxiv:1810.12885",
+    "arxiv:1905.10044",
+    "arxiv:1910.09700",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 60506880,
+  "parameters_human": "60.5M",
+  "storage_bytes": 7497402350,
+  "storage_human": "7.5 GB",
+  "base_model": null,
+  "formats": [
+    "onnx",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ankanroycms (Ankan Roy) - Hugging Face",
+      "url": "https://huggingface.co/ankanroycms/models",
+      "snippet": "published a bucket about 15 hours ago updated a bucket about 15 hours ago"
+    },
+    {
+      "title": "google-t5/t5-small · Hugging Face",
+      "url": "https://huggingface.co/google-t5/t5-small",
+      "snippet": "Model Card for T5 Small Table of Contents Model Details Uses Bias, Risks, and Limitations Training Details Evaluation Environmental Impact Citation Model Card Authors How To Get Started With the Model Model Details Model Description The developers of the Text-To-Text Transfer Transformer (T5) write: With T5, we propose reframing all NLP tasks into a unified text-to-text-format where the input ..."
+    },
+    {
+      "title": "t5-small: Text-to-Text model — overview, use cases, alternatives",
+      "url": "https://www.aimodels.fyi/models/huggingFace/t5-small-google-t5",
+      "snippet": "Overview t5-small is a 60-million-parameter text-to-text transformer developed by google-t5 that reformulates all NLP tasks as text-to-text generation problems. Unlike BERT-style models that output class labels or input spans, T5 uses the same architecture, loss function, and hyperparameters to handle machine translation, summarization, question answering, sentiment analysis, and regression ..."
+    },
+    {
+      "title": "AI Model Catalog | Microsoft Foundry Models",
+      "url": "https://ai.azure.com/catalog/models/t5-small",
+      "snippet": "The developers of the Text-To-Text Transfer Transformer (T5) write : With T5, we propose reframing all NLP tasks into a unified text-to-text-format where the input and output are always text strings, in contrast to BERT-style models that can only output either a class label or a span of the input. Our text-to-text framework allows us to use the same model, loss function, and hyperparameters on ..."
+    },
+    {
+      "title": "t5-small download | SourceForge.net",
+      "url": "https://sourceforge.net/projects/t5-small/",
+      "snippet": "Download t5-small for free. T5-Small: Lightweight text-to-text transformer for NLP tasks. T5-Small is a lightweight variant of the Text-To-Text Transfer Transformer (T5), designed to handle a wide range of NLP tasks using a unified text-to-text approach. Developed by researchers at Google, this model reframes all tasks—such as translation, summarization, classification, and question ..."
+    }
+  ]
+}

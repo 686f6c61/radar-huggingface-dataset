@@ -1,0 +1,88 @@
+{
+  "schema": 1,
+  "id": "ArtemiusVaii/distilgpt2",
+  "slug": "artemiusvaii-distilgpt2",
+  "author": "ArtemiusVaii",
+  "url": "https://huggingface.co/ArtemiusVaii/distilgpt2",
+  "created_at": "2026-08-28T07:25:43.000Z",
+  "updated_at": "2026-08-28T07:25:43.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "pytorch",
+    "tf",
+    "jax",
+    "tflite",
+    "rust",
+    "coreml",
+    "safetensors",
+    "gpt2",
+    "exbert",
+    "en",
+    "dataset:openwebtext",
+    "arxiv:1910.01108",
+    "arxiv:2201.08542",
+    "arxiv:2203.12574",
+    "arxiv:1910.09700",
+    "arxiv:1503.02531",
+    "license:apache-2.0",
+    "model-index",
+    "co2_eq_emissions",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 88204032,
+  "parameters_human": "88.2M",
+  "storage_bytes": 3489153380,
+  "storage_human": "3.5 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "Text Generation",
+      "dataset": "WikiText-103",
+      "metric": "Perplexity",
+      "value": 21.1
+    }
+  ],
+  "sources": [
+    {
+      "title": "distilbert/distilgpt2 · Hugging Face",
+      "url": "https://huggingface.co/distilbert/distilgpt2",
+      "snippet": "DistilGPT2 DistilGPT2 (short for Distilled-GPT2) is an English-language model pre-trained with the supervision of the smallest version of Generative Pre-trained Transformer 2 (GPT-2). Like GPT-2, DistilGPT2 can be used to generate text. Users of this model card should also consider information about the design, training, and limitations of GPT-2. Model Details Developed by: Hugging Face Model ..."
+    },
+    {
+      "title": "model-attribution-challenge/distilgpt2 · Hugging Face",
+      "url": "https://huggingface.co/model-attribution-challenge/distilgpt2",
+      "snippet": "Model Description: DistilGPT2 is an English-language model pre-trained with the supervision of the 124 million parameter version of GPT-2. DistilGPT2, which has 82 million parameters, was developed using knowledge distillation and was designed to be a faster, lighter version of GPT-2."
+    },
+    {
+      "title": "AI Model Catalog | Microsoft Foundry Models",
+      "url": "https://ai.azure.com/catalog/models/distilgpt2",
+      "snippet": "DistilGPT2 (short for Distilled-GPT2) is an English-language model pre-trained with the supervision of the 124 million parameter version of GPT-2. DistilGPT2, which has 82 million parameters, was developed using knowledge distillation and was designed to be a faster, lighter version of GPT-2. Since DistilGPT2 is a distilled version of GPT-2, it is intended to be used for similar use cases with ..."
+    },
+    {
+      "title": "HuggingFace DistilGPT2 - AI Models",
+      "url": "https://aimodels.org/ai-models/large-language-models/huggingface-distilgpt2/",
+      "snippet": "DistilGPT2 (short for Distilled-GPT2) is an English-language model pre-trained with the supervision of the smallest version of Generative Pre-trained Transformer 2 (GPT-2)."
+    },
+    {
+      "title": "azureml-assets/assets/models/system/distilgpt2/description.md at main ...",
+      "url": "https://github.com/Azure/azureml-assets/blob/main/assets/models/system/distilgpt2/description.md",
+      "snippet": "DistilGPT2 (short for Distilled-GPT2) is an English-language model pre-trained with the supervision of the 124 million parameter version of GPT-2. DistilGPT2, which has 82 million parameters, was developed using knowledge distillation and was designed to be a faster, lighter version of GPT-2."
+    }
+  ]
+}

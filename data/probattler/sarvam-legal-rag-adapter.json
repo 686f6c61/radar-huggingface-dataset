@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "Probattler/sarvam-legal-rag-adapter",
+  "slug": "probattler-sarvam-legal-rag-adapter",
+  "author": "Probattler",
+  "url": "https://huggingface.co/Probattler/sarvam-legal-rag-adapter",
+  "created_at": "2026-08-28T08:15:42.000Z",
+  "updated_at": "2026-08-28T08:16:00.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 95931368,
+  "storage_human": "96 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "[2408.10343] LegalBench-RAG: A Benchmark for Retrieval-Augmented ...",
+      "url": "https://arxiv.org/abs/2408.10343",
+      "snippet": "Retrieval-Augmented Generation (RAG) systems are showing promising potential, and are becoming increasingly relevant in AI-powered legal applications. Existing benchmarks, such as LegalBench, assess the generative capabilities of Large Language Models (LLMs) in the legal domain, but there is a critical gap in evaluating the retrieval component of RAG systems. To address this, we introduce ..."
+    },
+    {
+      "title": "The Complete Guide to RAG: Naive, Advanced, and Graph RAG in One ...",
+      "url": "https://www.mrlatte.net/en/research/2026/04/27/rag-complete-guide/",
+      "snippet": "From RAG basics to Graph RAG, Agentic RAG, and the LLM Wiki pattern, theory, runnable code, the latest trends, and a decision guide, all on a single page."
+    },
+    {
+      "title": "sarvam-rag-bot/sarvam-rag-bot at main - GitHub",
+      "url": "https://github.com/MYSTICFAE04/sarvam-rag-bot/tree/main/sarvam-rag-bot",
+      "snippet": "🇮🇳 Sarvam AI RAG Bot A high-performance, multilingual Retrieval-Augmented Generation (RAG) Bot powered by Sarvam AI&#x27;s flagship sarvam-105b LLM, local HuggingFace embeddings, and ChromaDB."
+    },
+    {
+      "title": "MYSTICFAE04/sarvam-rag-bot - GitHub",
+      "url": "https://github.com/MYSTICFAE04/sarvam-rag-bot",
+      "snippet": "A high-performance, multilingual Retrieval-Augmented Generation (RAG) Bot powered by Sarvam AI&#x27;s flagship sarvam-105b LLM, local HuggingFace embeddings, and ChromaDB."
+    },
+    {
+      "title": "Legal RAG Bench Benchmark Scores & AI Model Leaderboard | BenchmarkList",
+      "url": "https://benchmarklist.com/benchmarks/legal_rag_bench/",
+      "snippet": "Retrieval-augmented generation benchmark for legal-domain QA over the Victorian Criminal Charge Book, with expert legal questions and passage evidence."
+    }
+  ]
+}

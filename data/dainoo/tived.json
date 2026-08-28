@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "DAINOO/Tived",
+  "slug": "dainoo-tived",
+  "author": "DAINOO",
+  "url": "https://huggingface.co/DAINOO/Tived",
+  "created_at": "2026-06-22T20:30:28.000Z",
+  "updated_at": "2026-08-28T06:02:30.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 89496740832,
+  "storage_human": "89.5 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "DAINOO/Tived · Hugging Face",
+      "url": "https://huggingface.co/DAINOO/Tived",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "DAINOO (Daniel Salazar) - Hugging Face",
+      "url": "https://huggingface.co/DAINOO",
+      "snippet": "AI & ML interests ... Recent Activity updated a model 2 days ago ... updated a Space about 1 month ago"
+    },
+    {
+      "title": "dainoo · GitHub",
+      "url": "https://github.com/dainoo/",
+      "snippet": "dainoo has 10 repositories available. Follow their code on GitHub."
+    },
+    {
+      "title": "DINO - A Foundation Model for Computer Vision - Towards Data Science",
+      "url": "https://towardsdatascience.com/dino-a-foundation-model-for-computer-vision-4cb08e821b18/",
+      "snippet": "Image created from publication by Sascha Kirch Paper: Emerging Properties in Self-Supervised Vision Transformers, by Mathilde Caron et.al., 29. Apr. 2021 Resources: GitHub - Blog Post Category: foundation model, computer vision, vision transformer, knowledge distillation, similarity learning, self-supervised learning Other Walkthroughs: [BYOL] - [CLIP] - [GLIP] - [Segment Anything] - [DINO ..."
+    },
+    {
+      "title": "31 Open-Source AI Video Models: Free Tools to Make Videos in 2026",
+      "url": "https://aifreeforever.com/blog/open-source-ai-video-models-free-tools-to-make-videos",
+      "snippet": "Open-source AI video models let you make videos from text or images without paying per clip. You keep your data private, avoid subscription fees, and run everything on your own computer or cheap cloud rental. This guide walks through 31 open-source video generation models. Each section covers what the model does, how much GPU memory it needs, and what license applies. We also explain your ..."
+    }
+  ]
+}

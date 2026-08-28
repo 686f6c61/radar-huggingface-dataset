@@ -1,0 +1,83 @@
+{
+  "schema": 1,
+  "id": "mradermacher/Rifa-Nano-0.5B-GGUF",
+  "slug": "mradermacher-rifa-nano-0-5b-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/Rifa-Nano-0.5B-GGUF",
+  "created_at": "2026-08-28T09:29:18.000Z",
+  "updated_at": "2026-08-28T09:40:40.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en",
+    "bn"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "rifa",
+    "rifa-nano",
+    "text-generation",
+    "conversational",
+    "fine-tuned",
+    "lora",
+    "qwen2",
+    "bengali",
+    "bangla",
+    "banglish",
+    "coding",
+    "instruction-tuned",
+    "en",
+    "bn",
+    "base_model:smshahbaj/Rifa-Nano-0.5B",
+    "base_model:adapter:smshahbaj/Rifa-Nano-0.5B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 494032768,
+  "parameters_human": "494.0M",
+  "storage_bytes": 5400187264,
+  "storage_human": "5.4 GB",
+  "base_model": "smshahbaj/Rifa-Nano-0.5B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "mradermacher (team mradermacher) - Hugging Face",
+      "url": "https://huggingface.co/mradermacher",
+      "snippet": "Feel free to suggest models to quant e.g. at https://huggingface.co/mradermacher/model_requests"
+    },
+    {
+      "title": "mradermacher/Marco-Nano-Instruct-GGUF · Hugging Face",
+      "url": "https://huggingface.co/mradermacher/Marco-Nano-Instruct-GGUF",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Mradermacher - Find Top AI Models on Hugging Face",
+      "url": "https://www.aimodels.fyi/creators/huggingFace/mradermacher",
+      "snippet": "Looking for Mradermacher&#x27;s top AI models? Browse their full Hugging Face collection of 26 models. Explore AI models and contributions by Mradermacher on Huggingface."
+    },
+    {
+      "title": "YouTube",
+      "url": "https://www.youtube.com/@BenjisAIPlayground",
+      "snippet": "AboutPressCopyrightContact usCreatorsAdvertiseDevelopersTermsPrivacyPolicy & SafetyHow YouTube worksTest new featuresNFL Sunday Ticket © 2026 Google LLC"
+    },
+    {
+      "title": "mradermacher quant download page",
+      "url": "https://hf.tst.eu/model",
+      "snippet": "mradermacher quant download page BETA - this page is not finished: more explanations and changes are to come, but it should be functional."
+    }
+  ]
+}

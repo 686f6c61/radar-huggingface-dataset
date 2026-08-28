@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "con-cord/GRPO-MOD1-no-ref",
+  "slug": "con-cord-grpo-mod1-no-ref",
+  "author": "con-cord",
+  "url": "https://huggingface.co/con-cord/GRPO-MOD1-no-ref",
+  "created_at": "2026-08-28T10:48:56.000Z",
+  "updated_at": "2026-08-28T10:53:06.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gemma3",
+    "image-text-to-text",
+    "conversational",
+    "arxiv:1910.09700",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 4300079472,
+  "parameters_human": "4.30B",
+  "storage_bytes": 17238509855,
+  "storage_human": "17.2 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "con-cord/Mod1_3-no-ref · Hugging Face",
+      "url": "https://huggingface.co/con-cord/Mod1_3-no-ref",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Models - Hugging Face",
+      "url": "https://huggingface.co/models?search=con-cord%2FMod1_3-no-ref",
+      "snippet": "Text-to-Video Text-to-Speech + 44 6B 12B 32B 128B Libraries PyTorch TensorFlow JAX Transformers Diffusers GGUF MLX Transformers.js Safetensors + 45 + 47 + 44 Apps vLLM llama.cpp MLX LM LM Studio Ollama Jan Draw Things DiffusionBee JoyFusion + 8 + 10 Inference Providers Groq Novita Cerebras Nscale fal Together AI Fireworks Featherless AI Zai + 9 ..."
+    },
+    {
+      "title": "GitHub - emollick/concord: Instrument-grade qualitative text analysis ...",
+      "url": "https://github.com/emollick/concord",
+      "snippet": "Instrument-grade qualitative text analysis: AI-coded corpora, gold calibration, DSL/PPI-corrected statistics, Evidence Ladder - emollick/concord"
+    },
+    {
+      "title": "Chord-Classification-Model-Accordo.ai - GitHub",
+      "url": "https://github.com/NightKing-V/Chord-Classification-Model-accordo.ai-",
+      "snippet": "Accordo.ai is a system designed to provide real-time chord recognition from audio input. The project explores several deep learning approaches to accurately identify musical chords from audio signals, breaking down chord components into root notes, bass notes, triads, and fourth notes."
+    },
+    {
+      "title": "CONCORD AI Chat Model Launch & Game Integration",
+      "url": "https://outposts.io/article/concord-ai-chat-model-launch-and-game-integration-31bc853e-0938-4f90-9001-ba74e0658139",
+      "snippet": "Builds on previous AI model capabilities Features computer control functionality Expands beyond chat-only interactions This release follows October&#x27;s major update that introduced physical computer control capabilities, marking a significant evolution from traditional chatbot interactions to more advanced automation features."
+    }
+  ]
+}

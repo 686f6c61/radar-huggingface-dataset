@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "robert131OO4/cascade-vanta",
+  "slug": "robert131oo4-cascade-vanta",
+  "author": "robert131OO4",
+  "url": "https://huggingface.co/robert131OO4/cascade-vanta",
+  "created_at": "2026-08-28T07:55:25.000Z",
+  "updated_at": "2026-08-28T07:55:26.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 202,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "robert131OO4 (robert) - Hugging Face",
+      "url": "https://huggingface.co/robert131OO4",
+      "snippet": "User profile of robert on Hugging Face"
+    },
+    {
+      "title": "Supply Chain Risk: Cascade Breach of OpenAI, GitHub, and Microsoft",
+      "url": "https://www.linkedin.com/posts/vanta-security_one-forgotten-token-at-a-security-vendor-activity-7473079568208396288-tejS",
+      "snippet": "Not one breach, one vendor, or one victim, but a cascade. And the old model of point-in-time vendor reviews and quarterly access audits wasn&#x27;t built for it."
+    },
+    {
+      "title": "robert131OO4/cascade-apex · Hugging Face",
+      "url": "https://huggingface.co/robert131OO4/cascade-apex",
+      "snippet": "robert131OO4 / cascade-apex like 0 Model card FilesFiles and versions xet Community Copy to bucket new No model card Downloads last month 98 Inference Providers NEW This model isn&#x27;t deployed by any Inference Provider.🙋Ask for provider support"
+    },
+    {
+      "title": "Mercor Hit: 4TB Stolen via LiteLLM (95M Downloads) [2026]",
+      "url": "https://tech-insider.org/mercor-litellm-supply-chain-attack-2026/",
+      "snippet": "LiteLLM flaw let attackers steal 4TB from Mercor. The AI proxy with 95M downloads had a critical vuln—see exploit details and fixes for 2026."
+    },
+    {
+      "title": "seed429/robert131oo4-canon2 · Hugging Face",
+      "url": "https://huggingface.co/seed429/robert131oo4-canon2",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    }
+  ]
+}

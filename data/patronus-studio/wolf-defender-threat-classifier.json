@@ -1,0 +1,84 @@
+{
+  "schema": 1,
+  "id": "patronus-studio/wolf-defender-threat-classifier",
+  "slug": "patronus-studio-wolf-defender-threat-classifier",
+  "author": "patronus-studio",
+  "url": "https://huggingface.co/patronus-studio/wolf-defender-threat-classifier",
+  "created_at": "2026-07-16T11:32:36.000Z",
+  "updated_at": "2026-08-28T08:33:28.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": null,
+  "languages": [
+    "de",
+    "en"
+  ],
+  "tags": [
+    "joblib",
+    "onnx",
+    "safetensors",
+    "modernbert",
+    "threat-detection",
+    "guardrails",
+    "prompt-injection",
+    "toxicity-detection",
+    "security",
+    "llm-security",
+    "ai-safety",
+    "ai-agent-security",
+    "patronus",
+    "multilingual",
+    "text-classification",
+    "de",
+    "en",
+    "base_model:jhu-clsp/mmBERT-small",
+    "base_model:quantized:jhu-clsp/mmBERT-small",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 2,
+  "downloads_30d": 37,
+  "trending_score": 0,
+  "parameters": 140644231,
+  "parameters_human": "140.6M",
+  "storage_bytes": 3407206835,
+  "storage_human": "3.4 GB",
+  "base_model": "jhu-clsp/mmBERT-small",
+  "formats": [
+    "onnx",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "patronus-studio/wolf-defender-threat-classifier · Hugging Face",
+      "url": "https://huggingface.co/patronus-studio/wolf-defender-threat-classifier",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "patronus-studio/wolf-defender-threat-classifier at main",
+      "url": "https://huggingface.co/patronus-studio/wolf-defender-threat-classifier/tree/main",
+      "snippet": "llm-security ai-safety ai-agent-security patronus multilingual License:apache-2.0 Model card FilesFiles and versions xet Community Copy to bucket new main wolf-defender-threat-classifier 1.09 GB Ctrl+K Ctrl+K 2 contributors History:13 commits domi29 tags: curated discovery keywords (remove competitor names, dedupe, add search terms) 54a862f ..."
+    },
+    {
+      "title": "Today we&#x27;re releasing our first security model: Wolf Defender",
+      "url": "https://patronus.studio/de/posts/today-we%E2%80%99re-releasing-our-first-security-model-wolf-defender",
+      "snippet": "This first model uses a ModernBERT-style architecture to validate the approach. For truly efficient on-device AI security inference, we already have several additional approaches in development. We&#x27;re excited to share Wolf Defender with the community and contribute to making AI systems safer."
+    },
+    {
+      "title": "New AI-Security Model: Wolf Defender - My Framer Site",
+      "url": "https://patronus.studio/posts/new-ai-security-model-wolf-defender",
+      "snippet": "Patronus is the first on-device security layer for AI interactions. Control AI usages, protect agentic systems from malicious behaviour and prevent data leakages. All on-device."
+    },
+    {
+      "title": "Our AI-Security Model Zoo Is Now Open Source - Medium",
+      "url": "https://medium.com/@PatronusProtect/our-ai-security-model-zoo-is-now-open-source-41654d5d7dc6",
+      "snippet": "Wolf Defender — Prompt-Injection Detection and Threat Classification Task: Is this text trying to manipulate the model — and if so, how? Models: binary injection detector (F1 0.997 on our ..."
+    }
+  ]
+}

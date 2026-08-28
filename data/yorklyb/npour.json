@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "yorklyb/npour",
+  "slug": "yorklyb-npour",
+  "author": "yorklyb",
+  "url": "https://huggingface.co/yorklyb/npour",
+  "created_at": "2026-08-28T07:52:11.000Z",
+  "updated_at": "2026-08-28T07:52:59.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "pi05",
+    "robotics",
+    "dataset:npour",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 4143404816,
+  "parameters_human": "4.14B",
+  "storage_bytes": 9354063880,
+  "storage_human": "9.4 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Yibo Liu - Research Scientist @ Epson",
+      "url": "https://yorklyb.github.io/",
+      "snippet": "I&#x27;m a research scientist at Epson, focusing on research in spatial AI. My research interests lie in world action models, VLA + RL, policy learning with force and tactile modalities, and policy post-training."
+    },
+    {
+      "title": "GitHub - yorklyb/yorklyb",
+      "url": "https://github.com/yorklyb/yorklyb",
+      "snippet": "Contribute to yorklyb/yorklyb development by creating an account on GitHub."
+    },
+    {
+      "title": "yorklyb (YIbo Liu) - Hugging Face",
+      "url": "https://huggingface.co/datasets/yorklyb/",
+      "snippet": "yorklyb&#x27;s datasets5 Sort: Recently updated yorklyb/oven Viewer •Updated 1 day ago•34.7k• 67"
+    },
+    {
+      "title": "yorklyb (Yibo Liu) · GitHub",
+      "url": "https://github.com/yorklyb",
+      "snippet": "This is a lightweight GAN developed for real-time deblurring. The model has a super tiny size and a rapid inference time. The motivation is to boost marker detection in robotic applications, howeve… Python 56 11"
+    },
+    {
+      "title": "PDF YIBO LIU - yorklyb.github.io",
+      "url": "https://yorklyb.github.io/index_files/yibo_liu_cv_2025.pdf",
+      "snippet": "Research Interest My research interest lies in the domain of computer vision and generative AI. I began pursuing a Ph.D. degree in January 2020 with a focus on robotic vision, and during that time, my research centered on the localization and navigation of robots (RA-L2022, IROS2022, TIM2024)."
+    }
+  ]
+}

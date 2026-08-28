@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "justintjt/few-shot-multimodal",
+  "slug": "justintjt-few-shot-multimodal",
+  "author": "justintjt",
+  "url": "https://huggingface.co/justintjt/few-shot-multimodal",
+  "created_at": "2026-08-28T09:48:58.000Z",
+  "updated_at": "2026-08-28T09:49:07.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "transformer",
+    "research-notes",
+    "few-shot-multimodal",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 33088,
+  "parameters_human": "33088",
+  "storage_bytes": 132832,
+  "storage_human": "132832 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "LLM Leaderboard 2026: Compare 300+ Top AI Models by Intelligence, Speed ...",
+      "url": "https://llm-stats.com/leaderboards/llm-leaderboard",
+      "snippet": "The LLM Leaderboard — independent ranking of GPT, Claude, Gemini, Llama, DeepSeek and 300+ AI models by intelligence, speed and price. Filter by provider, license, modality and context window; sort by every benchmark. Composite LLM Stats Score updated continuously from public benchmarks and live API metrics."
+    },
+    {
+      "title": "Few-shot Adaptation of Multi-modal Foundation Models: A Survey",
+      "url": "https://arxiv.org/pdf/2401.01736",
+      "snippet": "It selects To effectively enhance the model&#x27;s generalization perfor-mance in specific domains, it is necessary to fine-tune multi-modal foundation models using limited samples, enabling them to have broader applications. These methods can be defined as few-shot adaptation methods for multi-modal foun-dation models."
+    },
+    {
+      "title": "Few-shot Adaptation of Multi-modal Foundation Models: A Survey",
+      "url": "https://arxiv.org/abs/2401.01736",
+      "snippet": "Multi-modal (vision-language) models, such as CLIP, are replacing traditional supervised pre-training models (e.g., ImageNet-based pre-training) as the new generation of visual foundation models. These models with robust and aligned semantic representations learned from billions of internet image-text pairs and can be applied to various downstream tasks in a zero-shot manner. However, in some ..."
+    },
+    {
+      "title": "Meta AI&#x27;s MILS: A Game-Changer for Zero-Shot Multimodal AI",
+      "url": "https://www.unite.ai/meta-ais-mils-a-game-changer-for-zero-shot-multimodal-ai/",
+      "snippet": "For example, if a traditional AI model trained only on text is suddenly asked to describe an image, it would struggle without explicit training on visual data. In contrast, a zero-shot model like MILS can process and interpret the image without needing additional labelled examples."
+    },
+    {
+      "title": "Multimodal AI - Google Cloud",
+      "url": "https://cloud.google.com/use-cases/multimodal-ai",
+      "snippet": "Overview What is an example of multimodal AI? A multimodal model is a ML (machine learning) model that is capable of processing information from different modalities, including images, videos, and text. For example, Google&#x27;s multimodal model, Gemini, can receive a photo of a plate of cookies and generate a written recipe as a response and vice ..."
+    }
+  ]
+}

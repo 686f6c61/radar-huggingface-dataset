@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "McGill-NLP/TLM-70M",
+  "slug": "mcgill-nlp-tlm-70m",
+  "author": "McGill-NLP",
+  "url": "https://huggingface.co/McGill-NLP/TLM-70M",
+  "created_at": "2026-08-28T10:26:02.000Z",
+  "updated_at": "2026-08-28T10:26:07.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gpt_neo",
+    "tiered-alignment",
+    "text-generation",
+    "en",
+    "dataset:HuggingFaceFW/fineweb",
+    "arxiv:2504.11393",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 67408081,
+  "parameters_human": "67.4M",
+  "storage_bytes": 269654828,
+  "storage_human": "270 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Researchers from McGill University Present the Pythia 70M Model for ...",
+      "url": "https://www.marktechpost.com/2024/02/07/researchers-from-mcgill-university-present-the-pythia-70m-model-for-distilling-transformers-into-long-convolution-models/",
+      "snippet": "The researchers from McGill University have proposed the Pythia 70M model, a pioneering approach to enhancing the efficiency of LLM pre-training by advocating knowledge distillation for cross-architecture transfer."
+    },
+    {
+      "title": "Researchers from McGill University Present the Pythia...",
+      "url": "https://daily.dev/posts/researchers-from-mcgill-university-present-the-pythia-70m-model-for-distilling-transformers-into-lon-keyjzbdxh",
+      "snippet": "The researchers from McGill University have proposed the Pythia 70M model, which utilizes the efficient Hyena mechanism to improve computational efficiency in large language models. The Hyena-based models show competitive performance compared to the attention-based Pythia-70M teacher model in various natural language tasks. # tech-news # ai # nlp # llm Feb 07, 2024•3mread time•From ..."
+    },
+    {
+      "title": "McGill University Researchers Introduce Pythia 70M Model for ...",
+      "url": "https://onlyaistuff.com/mcgill-university-researchers-introduce-pythia-70m-model-for-transformation-into-extensive-convolution-models/",
+      "snippet": "Addressing this concern, researchers from McGill University have introduced the Pythia 70M model. It is a unique approach to enhance the efficiency of LLM pre-training through knowledge distillation for cross-architecture transfer. Inspired by the Hyena mechanism, this method replaces attention heads in transformer models, providing a cost-efficient alternative to traditional pre-training. It ..."
+    },
+    {
+      "title": "McGill NLP - GitHub",
+      "url": "https://github.com/McGill-NLP/",
+      "snippet": "McGill NLP Research group within McGill University and Mila focusing on various topics in natural language processing."
+    },
+    {
+      "title": "Researchers from McGill University Present the Pythia 70M Model for ...",
+      "url": "https://www.newsbreak.com/news/3325415628103-researchers-from-mcgill-university-present-the-pythia-70m-model-for-distilling-transformers-into-long-convolution-models",
+      "snippet": "The emergence of Large Language Models (LLMs) has transformed the landscape of natural language processing (NLP). The introduction of the transformer architecture marked a pivotal moment, ushering in a new era in NLP. While a universal definition for LLMs is lacking, they are generally understood as versatile machine learning models adept at simultaneously handling various natural language ..."
+    }
+  ]
+}

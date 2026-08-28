@@ -1,0 +1,77 @@
+{
+  "schema": 1,
+  "id": "mlx-community/Agents-A1-OptiQ-4bit-REAP-19B",
+  "slug": "mlx-community-agents-a1-optiq-4bit-reap-19b",
+  "author": "mlx-community",
+  "url": "https://huggingface.co/mlx-community/Agents-A1-OptiQ-4bit-REAP-19B",
+  "created_at": "2026-08-28T07:44:28.000Z",
+  "updated_at": "2026-08-28T08:04:16.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "mlx",
+  "languages": [],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "qwen3_5_moe",
+    "quantized",
+    "expert-pruning",
+    "reap",
+    "moe",
+    "optiq",
+    "apple-silicon",
+    "text-generation",
+    "conversational",
+    "arxiv:2510.13999",
+    "base_model:mlx-community/Agents-A1-OptiQ-4bit",
+    "base_model:quantized:mlx-community/Agents-A1-OptiQ-4bit",
+    "license:apache-2.0",
+    "4-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 3825799024,
+  "parameters_human": "3.83B",
+  "storage_bytes": 13269069401,
+  "storage_human": "13.3 GB",
+  "base_model": "mlx-community/Agents-A1-OptiQ-4bit",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "mlx-community/Agents-A1-OptiQ-4bit · Hugging Face",
+      "url": "https://huggingface.co/mlx-community/Agents-A1-OptiQ-4bit",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Agents A1 OptiQ 4bit by mlx-community - LLM Explorer",
+      "url": "https://llm-explorer.com/model/mlx-community%2FAgents-A1-OptiQ-4bit,1ObodQYcUPXhBGmYZvRiKl",
+      "snippet": "Agents A1 OptiQ 4bit is an open-source 34.7b LLM by mlx-community. VRAM 22.2GB. Compare benchmarks, capabilities, and deployment details on LLM Explorer."
+    },
+    {
+      "title": "Run LLMs locally on your Mac (Apple Silicon) · mlx-optiq",
+      "url": "https://mlx-optiq.com/",
+      "snippet": "Yes. mlx-optiq runs large language models natively on Apple Silicon, from M1 to M5, using Apple&#x27;s MLX framework. Install it from PyPI with pip install mlx-optiq, then quantize, fine-tune, and serve models entirely on your Mac, fully offline."
+    },
+    {
+      "title": "mlx-community (MLX Community) - Hugging Face",
+      "url": "https://huggingface.co/mlx-community",
+      "snippet": "Org profile for MLX Community on Hugging Face, the AI community building the future."
+    },
+    {
+      "title": "MLX models for Mac: 4-bit quants with size and RAM for each",
+      "url": "https://mlx-optiq.com/models",
+      "snippet": "Pre-built quants · Hugging Face OptiQ quants, ready to load. Every model is a standard MLX checkpoint. Load it with mlx_lm.load (...), no special runtime and no PyTorch. OptiQ measures each layer&#x27;s sensitivity and spends bits where they matter, so a mixed-precision quant keeps the accuracy a flat uniform quant gives up, at the same size."
+    }
+  ]
+}

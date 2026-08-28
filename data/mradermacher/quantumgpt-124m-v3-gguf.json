@@ -1,0 +1,76 @@
+{
+  "schema": 1,
+  "id": "mradermacher/quantumgpt-124m-v3-GGUF",
+  "slug": "mradermacher-quantumgpt-124m-v3-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/quantumgpt-124m-v3-GGUF",
+  "created_at": "2026-08-28T09:16:38.000Z",
+  "updated_at": "2026-08-28T09:24:51.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "quantum-computing",
+    "qasm",
+    "code-generation",
+    "gpt2",
+    "openqasm",
+    "quantum-circuits",
+    "en",
+    "dataset:merileijona/quantum-circuits-21k",
+    "base_model:merileijona/quantumgpt-124m-v3",
+    "base_model:quantized:merileijona/quantumgpt-124m-v3",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 124082688,
+  "parameters_human": "124.1M",
+  "storage_bytes": 1245393792,
+  "storage_human": "1.2 GB",
+  "base_model": "merileijona/quantumgpt-124m-v3",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "team mradermacher - Hugging Face",
+      "url": "https://huggingface.co/mradermacher/models",
+      "snippet": "Feel free to suggest models to quant e.g. at https://huggingface.co/mradermacher/model_requests"
+    },
+    {
+      "title": "mradermacher/Asmodeus-24B-v3-GGUF · Hugging Face",
+      "url": "https://huggingface.co/mradermacher/Asmodeus-24B-v3-GGUF",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "quantumgpt-124m-v3 API & Inference Endpoint | FriendliAI",
+      "url": "https://friendli.ai/models/merileijona/quantumgpt-124m-v3",
+      "snippet": "Run quantumgpt-124m-v3 with FriendliAI inference. Third-generation QuantumGPT: a GPT-2 small (124M) model fine-tuned to generate OpenQASM 2.0 circuits from…"
+    },
+    {
+      "title": "Mradermacher - Find Top AI Models on Hugging Face",
+      "url": "https://www.aimodels.fyi/creators/huggingFace/mradermacher",
+      "snippet": "Looking for Mradermacher&#x27;s top AI models? Browse their full Hugging Face collection of 26 models. Explore AI models and contributions by Mradermacher on Huggingface."
+    },
+    {
+      "title": "GGUF Model Discovery - Browse & Download AI Models",
+      "url": "https://local-ai-zone.github.io/",
+      "snippet": "Discover and download GGUF format AI models. Browse and direct download thousands of quantized AI models with detailed information, download counts, and direct links."
+    }
+  ]
+}

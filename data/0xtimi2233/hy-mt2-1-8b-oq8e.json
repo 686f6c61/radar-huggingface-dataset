@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "0xtimi2233/Hy-MT2-1.8B-oQ8e",
+  "slug": "0xtimi2233-hy-mt2-1-8b-oq8e",
+  "author": "0xtimi2233",
+  "url": "https://huggingface.co/0xtimi2233/Hy-MT2-1.8B-oQ8e",
+  "created_at": "2026-08-28T10:14:16.000Z",
+  "updated_at": "2026-08-28T10:19:28.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "mlx",
+  "languages": [],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "hunyuan_v1_dense",
+    "oq",
+    "quantized",
+    "8-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 503842944,
+  "parameters_human": "503.8M",
+  "storage_bytes": 1903246377,
+  "storage_human": "1.9 GB",
+  "base_model": null,
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "0xtimi2233/Hy-MT2-1.8B-oQ8 · Hugging Face",
+      "url": "https://huggingface.co/0xtimi2233/Hy-MT2-1.8B-oQ8",
+      "snippet": "Instructions to use 0xtimi2233/Hy-MT2-1.8B-oQ8 with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Libraries MLX How to use 0xtimi2233/Hy-MT2-1.8B-oQ8 with MLX: # Download the model from the Hub pip install huggingface_hub [hf_xet] huggingface-cli download --local-dir Hy-MT2-1.8B-oQ8 0xtimi2233/Hy-MT2-1.8B-oQ8 Notebooks Google Colab Kaggle Local ..."
+    },
+    {
+      "title": "tencent/Hy-MT2-1.8B · Hugging Face",
+      "url": "https://huggingface.co/tencent/Hy-MT2-1.8B",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GitHub - Tencent-Hunyuan/Hy-MT2",
+      "url": "https://github.com/Tencent-Hunyuan/Hy-MT2",
+      "snippet": "Model Introduction Hy-MT2 is a family of \"fast-thinking\" multilingual translation models designed for complex real-world scenarios. It includes three model sizes: 1.8B, 7B, and 30B-A3B (MoE), all of which support translation among 33 languages and effectively follow translation instructions in multiple languages."
+    },
+    {
+      "title": "Hy-MT2: High-Performance Multilingual Translation Model",
+      "url": "https://www.tencentcloud.com/techpedia/144776?lang=en",
+      "snippet": "On 2026-05-21, Tencent Hunyuan released the Hy-MT2 multilingual translation model, supporting translation across 33 languages. Its 7B and 30B-A3B models achieve the best open-source results across translation tasks, surpassing models tens of times larger; the lightweight 1.8B model even beats mainstream commercial APIs such as Microsoft and Doubao."
+    },
+    {
+      "title": "Hy-MT2-1.8B | AI/ML API Documentation",
+      "url": "https://docs.aimlapi.com/api-references/text-models-llm/tencent/hy-mt2-1.8b",
+      "snippet": "Hy-MT2-1.8B is a compact 1.8B-parameter translation model from Tencent. It supports 33 language pairs and five Chinese dialect and minority-language pairs, with workflows for structured, delimiter-based, contextual, glossary-based, and style-guided translation."
+    }
+  ]
+}

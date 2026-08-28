@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "Rizihassan12/AI-Video-Generator",
+  "slug": "rizihassan12-ai-video-generator",
+  "author": "Rizihassan12",
+  "url": "https://huggingface.co/Rizihassan12/AI-Video-Generator",
+  "created_at": "2026-08-28T07:36:29.000Z",
+  "updated_at": "2026-08-28T07:36:29.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ai video generator - Kling AI Video Generator",
+      "url": "https://duckduckgo.com/y.js?ad_domain=kling.ai&ad_provider=bingv7aa&ad_type=txad&click_metadata=JcRSx6d7IwW3PP7ggykcUK9wZ4UglRT2Vwy9xHCEHnfGhMVDqVtJNkLxeEG6WggrgXCNrwMmVhJ08fUvjjN1vXRo1zS7%2D5T8fMQn7SF9hUQagaXfjWhe3n%2DhqVmRkXmwQ4zWlfe87Rupt1Fag0w1y1QI%2D2prvB34VRoH0gHo%2DEc.XYTrE3miVM0LKPIG2HoOTw&rut=c18e4f8400be4733e7cc165f9f674d9172c87283269b488a9ef725b5675cd91e&u3=https%3A%2F%2Fwww.bing.com%2Faclick%3Fld%3De89JQzT7N7R1p1jhyNTfnpDzVUCUzheXYwynKu4pIDnLTJXflkYlXKls4PIIy28YDZo7s0pWULHzrtqcOy_ByLVfDkOSFkTM21ddPzzPKGIrNfk3EHF4IQDFyY3b8nozXfGxfDlvep5Rv2X4Jg4hT6Q5274T452340WHunBisOumtnukWzncOMoIXj%2DBotKuhNJsKKvz%2D%2DShLlmcgnEdtSVF0FNU4%26u%3DaHR0cHMlM2ElMmYlMmZrbGluZy5haSUyZmFwcCUyZiUzZnV0bV9zb3VyY2UlM2RiaW5nJTI2dXRtX21lZGl1bSUzZFlNJTI2dXRtX2NhbXBhaWduJTNkU2VhcmNoLUNQQSUyNnV0bV90ZXJtJTNkY29tbW9uJTI2dXRtX2NvbnRlbnQlM2RFVSUyNmNhbXBhaWduX2lkJTNkNTcxMTU4NDk3JTI2YWRncm91cF9pZCUzZDExODUyNzU3NDE1ODY1NzIlMjZrZXl3b3JkJTNkY3JlYXRlJTI1MjBhaSUyNTIwdmlkZW8lMjUyMGZyb20lMjUyMHRleHQlMjZtc2Nsa2lkJTNkYzAwNDJlZTQ2MTliMWNjNzUzNGE0NDc1NWQzYWM1ODA%26rlid%3Dc0042ee4619b1cc7534a44755d3ac580&vqd=4-78100524235673512259547649337061722165&iurl=%7B1%7DIG%3DFF7217E6DC6A42C49FDAF309B0264D37%26CID%3D2992BF99EBBC61A12FC3A85AEACB60C7%26ID%3DDevEx%2C5037.1",
+      "snippet": "Transform your ideas into 1080p cinematic videos. Just type a prompt or upload an image. Perfect for creators, marketers & filmmakers. Produce professional-grade videos with AI."
+    },
+    {
+      "title": "The #1 AI Video Generator - Best Video Generator of 2026",
+      "url": "https://duckduckgo.com/y.js?ad_domain=artlist.io&ad_provider=bingv7aa&ad_type=txad&click_metadata=t2kVeadhz5PgjoQWadxegtVXSOLEKm06U9AwR9IO%2D2CvZLfUagGFQgnqCXYrU7ziJTVNWNIPFwRy62l38FtCCmePG%2Dy5YNTKS3Zogh%2DWlKVVFNe6cohF4OPfDyF%2DvCng2qc9TeSnCd4CXSA0eS1t1WaIM79lPjwkwAe0ZjUHyUI.Bkqlieslmt7_ipN%2D2k0CUw&rut=aae27ce63f3ae4cde0c7790c606a0a9e90c676de92b1bc9627163a7e3a1acf61&u3=https%3A%2F%2Fwww.bing.com%2Faclick%3Fld%3De8g6F3_SjwAekCgOnV7I6ldDVUCUxIXKmXWsEiV3iMOp0Pt9uaqoEzDudp6Yt5CYL_r2don_dpn2fjHEiv5O44SIxDh5UNN1_6BWJelNzM6vO1M7O32K18vGkt5gRPqXtI92KKdU13FjRHNGkE1Jz4TrhyObhfHah7hutJRWxMM%2DoqfJAZ4hFRauMN0eRbshmRz6kkw1Vue4j3AgZ8zBCtEfZzPbI%26u%3DaHR0cHMlM2ElMmYlMmZ0b29sa2l0LmFydGxpc3QuaW8lMmZpbWFnZS12aWRlby1nZW5lcmF0b3IlM2Ztb2RlJTNkdmlkZW8lMjZtb2RlbEdyb3VwSUQlM2QzMDIlMjZ1dG1fc291cmNlJTNkYmluZyUyNnV0bV9tZWRpdW0lM2RjcGMlMjZ1dG1fY2FtcGFpZ24lM2Q2Mjc1NjIwMzYlMjZ1dG1fY29udGVudCUzZDExNDY3OTI0MzA3MTI3MjklMjZ1dG1fdGVybSUzZHZpZGVvJTI1MjBnZW5lcmF0b3IlMjZrZXl3b3JkJTNkdmlkZW8lMjUyMGdlbmVyYXRvciUyNmFkJTNkJTI2bWF0Y2h0eXBlJTNkcCUyNmRldmljZSUzZGMlMjZtc2Nsa2lkJTNkZjM0Y2ZjN2IzNjZiMTMwNDU1NTY5NmVhMGFjYWQyYzMlMjZ1dG1fc291cmNlJTNkYmluZyUyNnV0bV9tZWRpdW0lM2RjcGMlMjZ1dG1fY2FtcGFpZ24lM2RHZW5BSV90Q1BBJTI2dXRtX3Rlcm0lM2R2aWRlbyUyNTIwZ2VuZXJhdG9yJTI2dXRtX2NvbnRlbnQlM2RBSV9WaWRlb19HZW5lcmF0b3JfJTI1NUJHZW5BSV9WaWRlbyUyNTVE%26rlid%3Df34cfc7b366b1304555696ea0acad2c3&vqd=4-211183216898070274589884169503731512893&iurl=%7B1%7DIG%3DFF7217E6DC6A42C49FDAF309B0264D37%26CID%3D2992BF99EBBC61A12FC3A85AEACB60C7%26ID%3DDevEx%2C5041.1",
+      "snippet": "Discover the AI Video Generator Especially for Video Creators. Easily Transform Text to Video With Artlist&#x27;s High-Quality AI Video Generator for Creators"
+    },
+    {
+      "title": "AI Video Generator - Free, No Sign-up - GizAI",
+      "url": "https://www.giz.ai/ai-video-generator/",
+      "snippet": "Create free AI videos from text or images with no sign-up on included models. Choose live text-to-video, image-to-video, audio, and editing controls."
+    },
+    {
+      "title": "AI Video Generator — Free. Online. No Download. - Kapwing",
+      "url": "https://www.kapwing.com/ai-video-generator",
+      "snippet": "Powerful online AI Video Generator for Text to Video and Image to Video. Create video clips up to 30 seconds using AI models like Veo, Kling, Seedance, and Sora. Start for free."
+    },
+    {
+      "title": "Free AI Video Generator | Invideo AI",
+      "url": "https://invideo.io/make/ai-video-generator/",
+      "snippet": "Generate AI videos with simple text prompts using an AI video generator by invideo AI. It generates scripts, adds clips, subtitles, music, and transitions."
+    }
+  ]
+}

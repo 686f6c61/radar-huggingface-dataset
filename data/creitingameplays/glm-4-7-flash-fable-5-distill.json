@@ -4,8 +4,8 @@
   "slug": "creitingameplays-glm-4-7-flash-fable-5-distill",
   "author": "CreitinGameplays",
   "url": "https://huggingface.co/CreitinGameplays/GLM-4.7-Flash-Fable-5-Distill",
-  "created_at": "2026-08-27T22:47:24.000Z",
-  "updated_at": "2026-08-27T23:27:33.000Z",
+  "created_at": "2026-08-28T01:21:33.000Z",
+  "updated_at": "2026-08-28T02:21:54.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -22,7 +22,7 @@
     "unsloth",
     "conversational",
     "en",
-    "dataset:Glint-Research/Fable-5-traces",
+    "dataset:TeichAI/Fable-5-Cursor-Traces",
     "base_model:unsloth/GLM-4.7-Flash",
     "base_model:finetune:unsloth/GLM-4.7-Flash",
     "license:apache-2.0",
@@ -47,14 +47,19 @@
   "benchmarks": [],
   "sources": [
     {
+      "title": "CreitinGameplays/GLM-4.7-Flash-Fable-5-Distill · Hugging Face",
+      "url": "https://huggingface.co/CreitinGameplays/GLM-4.7-Flash-Fable-5-Distill",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "zai-org/GLM-4.7 · Hugging Face",
+      "url": "https://huggingface.co/zai-org/GLM-4.7",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
       "title": "GLM-4.7-Flash: How To Run Locally - unsloth.ai",
       "url": "https://unsloth.ai/docs/models/tutorials/glm-4.7-flash",
       "snippet": "Run & fine-tune GLM-4.7-Flash locally on your device! GLM-4.7-Flash is Z.ai&#x27;s new 30B MoE reasoning model built for local deployment, delivering best-in-class performance for coding, agentic workflows, and chat. It uses ~3.6B parameters, supports 200K context, and leads SWE-Bench, GPQA, and reasoning/chat benchmarks."
-    },
-    {
-      "title": "GLM-4.7: How to Run Locally Guide - unsloth.ai",
-      "url": "https://unsloth.ai/docs/models/tutorials/glm-4.7",
-      "snippet": "A guide on how to run Z.ai GLM-4.7 model on your own local device!"
     },
     {
       "title": "GLM-4.7 - Overview - Z.AI DEVELOPER DOCUMENT",
@@ -62,14 +67,9 @@
       "snippet": "Overview GLM-4.7 Series are Z.AI&#x27;s models, featuring upgrades in two key areas: enhanced programming capabilities and more stable multi-step reasoning/execution. It demonstrates significant improvements in executing complex agent tasks while delivering more natural conversational experiences and superior front-end aesthetics."
     },
     {
-      "title": "zai-org/GLM-4.7-Flash · Hugging Face",
-      "url": "https://huggingface.co/zai-org/GLM-4.7-Flash",
-      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
-    },
-    {
-      "title": "zai-org/GLM-4.7 · Hugging Face",
-      "url": "https://huggingface.co/zai-org/GLM-4.7",
-      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+      "title": "glm-4.7-flash - ollama.com",
+      "url": "https://ollama.com/library/glm-4.7-flash",
+      "snippet": "As the strongest model in the 30B class, GLM-4.7-Flash offers a new option for lightweight deployment that balances performance and efficiency."
     }
   ]
 }

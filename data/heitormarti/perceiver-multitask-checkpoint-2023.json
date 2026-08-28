@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "Heitormarti/perceiver-multitask-checkpoint-2023",
+  "slug": "heitormarti-perceiver-multitask-checkpoint-2023",
+  "author": "Heitormarti",
+  "url": "https://huggingface.co/Heitormarti/perceiver-multitask-checkpoint-2023",
+  "created_at": "2026-08-28T09:56:44.000Z",
+  "updated_at": "2026-08-28T09:56:52.000Z",
+  "license": "bsd-3-clause",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "perceiver",
+    "pytorch",
+    "multitask",
+    "license:bsd-3-clause",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 24832,
+  "parameters_human": "24832",
+  "storage_bytes": 99808,
+  "storage_human": "99808 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "JacobNguyen/perceiver-multitask · Hugging Face",
+      "url": "https://huggingface.co/JacobNguyen/perceiver-multitask",
+      "snippet": "Perceiver for Multitask Overview This is an experimental Perceiver codebase for Multitask. It keeps the large setup intentionally manageable so architecture changes can be inspected before a full training run."
+    },
+    {
+      "title": "arXiv Daily Digest",
+      "url": "https://paper.axi404.top/daily/2026-08-26",
+      "snippet": "Starting from Cosmos-H-Surgical-Simulator, a multi-embodiment action-conditioned surgical video world model fine-tuned on the large-scale Open-H-Embodiment corpus, we post-train this checkpoint on embodiment- and procedure-specific data."
+    },
+    {
+      "title": "DaJulster/SuaveAI-Dectection-Multitask-Model-V1 · Hugging Face",
+      "url": "https://huggingface.co/DaJulster/SuaveAI-Dectection-Multitask-Model-V1",
+      "snippet": "SuaveAI Detection Multitask Model V1 This repository contains a custom PyTorch multitask model checkpoint and auxiliary files."
+    },
+    {
+      "title": "[2209.05451] Perceiver-Actor: A Multi-Task Transformer for Robotic ...",
+      "url": "https://arxiv.org/abs/2209.05451",
+      "snippet": "Transformers have revolutionized vision and natural language processing with their ability to scale with large datasets. But in robotic manipulation, data is both limited and expensive. Can manipulation still benefit from Transformers with the right problem formulation? We investigate this question with PerAct, a language-conditioned behavior-cloning agent for multi-task 6-DoF manipulation ..."
+    },
+    {
+      "title": "Awesome Multi-Task Learning - GitHub",
+      "url": "https://github.com/thuml/awesome-multi-task-learning",
+      "snippet": "A curated list of DATASETS, CODEBASES and PAPERS on Multi-Task Learning (MTL), from Machine Learning perspective. - thuml/awesome-multi-task-learning"
+    }
+  ]
+}

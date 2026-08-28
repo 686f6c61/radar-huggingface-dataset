@@ -5,7 +5,7 @@
   "author": "AMAImedia",
   "url": "https://huggingface.co/AMAImedia/Qwen3-8B-Guard-Gen-NOESIS-AWQ-INT4",
   "created_at": "2026-05-17T20:18:43.000Z",
-  "updated_at": "2026-08-25T16:46:54.000Z",
+  "updated_at": "2026-08-27T19:26:43.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-generation",

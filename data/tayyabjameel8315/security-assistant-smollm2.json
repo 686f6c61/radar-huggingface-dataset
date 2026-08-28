@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "tayyabjameel8315/security-assistant-smollm2",
+  "slug": "tayyabjameel8315-security-assistant-smollm2",
+  "author": "tayyabjameel8315",
+  "url": "https://huggingface.co/tayyabjameel8315/security-assistant-smollm2",
+  "created_at": "2026-08-28T05:52:33.000Z",
+  "updated_at": "2026-08-28T05:52:45.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "base_model:adapter:HuggingFaceTB/SmolLM2-1.7B-Instruct",
+    "lora",
+    "sft",
+    "transformers",
+    "trl",
+    "text-generation",
+    "conversational",
+    "arxiv:1910.09700",
+    "base_model:HuggingFaceTB/SmolLM2-1.7B-Instruct",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 36220744,
+  "storage_human": "36 MB",
+  "base_model": "HuggingFaceTB/SmolLM2-1.7B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Claude",
+      "url": "https://claude.com/",
+      "snippet": "Claude is a next generation AI assistant built by Anthropic and trained to be safe, accurate, and secure to help you do your best work."
+    },
+    {
+      "title": "GitHub - huggingface/smollm: Everything about the SmolLM and SmolVLM ...",
+      "url": "https://github.com/huggingface/smollm",
+      "snippet": "Welcome to Smol Models, a family of efficient and lightweight AI models from Hugging Face. Our mission is to create fully open powerful yet compact models, for text and vision, that can run effectively on-device while maintaining strong performance."
+    },
+    {
+      "title": "Google Gemini",
+      "url": "https://gemini.google.com/",
+      "snippet": "Meet Gemini, Google&#x27;s AI assistant. Get help with writing, planning, brainstorming, and more. Experience the power of generative AI."
+    },
+    {
+      "title": "ChatGPT: Chat, Work, Create & Code with AI",
+      "url": "https://chatgpt.com/",
+      "snippet": "Use ChatGPT to answer questions, write, create images, complete work, and code—all in one place. Get started for free or download the app."
+    },
+    {
+      "title": "‎Google Gemini",
+      "url": "https://gemini.google.com/?hl=en-IN",
+      "snippet": "Meet Gemini, Google&#x27;s AI assistant. Get help with writing, planning, brainstorming and more. Experience the power of generative AI."
+    }
+  ]
+}

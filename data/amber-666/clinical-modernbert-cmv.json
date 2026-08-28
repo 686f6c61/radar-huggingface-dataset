@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "Amber-666/clinical-modernbert-cmv",
+  "slug": "amber-666-clinical-modernbert-cmv",
+  "author": "Amber-666",
+  "url": "https://huggingface.co/Amber-666/clinical-modernbert-cmv",
+  "created_at": "2026-08-28T07:45:24.000Z",
+  "updated_at": "2026-08-28T08:07:34.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "safetensors",
+    "bert",
+    "clinical-nlp",
+    "medical",
+    "cytomegalovirus",
+    "radiology-reports",
+    "sentence-classification",
+    "text-classification",
+    "en",
+    "base_model:Simonlee711/Clinical_ModernBERT",
+    "base_model:finetune:Simonlee711/Clinical_ModernBERT",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 136579586,
+  "parameters_human": "136.6M",
+  "storage_bytes": 546360840,
+  "storage_human": "546 MB",
+  "base_model": "Simonlee711/Clinical_ModernBERT",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - Simonlee711/Clinical_ModernBERT: [arXiv 2025] Pre-training ...",
+      "url": "https://github.com/Simonlee711/Clinical_ModernBERT",
+      "snippet": "This repository contains the official implementation and pre-trained weights for Clinical ModernBERT, a transformer-based encoder optimized for biomedical and clinical natural language processing (NLP) tasks. Our model leverages state-of-the-art innovations from ModernBERT, adapted specifically to biomedical literature and clinical data."
+    },
+    {
+      "title": "Simonlee711/Clinical_ModernBERT · Hugging Face",
+      "url": "https://huggingface.co/Simonlee711/Clinical_ModernBERT",
+      "snippet": "This model leverages a suite of modern architectural advancements including rotary positional embeddings (RoPE), Flash Attention for near-linear memory usage with extended contexts, and GeGLU activation layers that enhance representational capacity by integrating smooth gating mechanisms. By initializing from a ModernBERT-base checkpoint and applying domain-specific pre-training on ..."
+    },
+    {
+      "title": "arXiv:2504.03964v1 [cs.CL] 4 Apr 2025",
+      "url": "https://arxiv.org/pdf/2504.03964",
+      "snippet": "Building on these architectural improvements, we present Clinical ModernBERT, a domain-specialized encoder pretrained on biomedical literature, clinical narratives, and structured medical ontologies. Inspired by the design philosophy of BioClinicalBERT [Alsentzer et al., 2019] but grounded in the methodological advances of ModernBERT, our model is tailored for high-accuracy understanding in ..."
+    },
+    {
+      "title": "Clinical ModernBERT: An efficient and long context encoder for ...",
+      "url": "https://arxiv.org/html/2504.03964v1",
+      "snippet": "Building on ModernBERT (Warner et al., 2024) —the current state-of-the-art natural language text encoder featuring architectural upgrades such as rotary positional embeddings (RoPE), Flash Attention, and extended context length up to 8,192 tokens—our model adapts these innovations specifically for biomedical and clinical domains."
+    },
+    {
+      "title": "README.md · Simonlee711/Clinical_ModernBERT at main",
+      "url": "https://huggingface.co/Simonlee711/Clinical_ModernBERT/blob/main/README.md",
+      "snippet": "Clinical ModernBERT Clinical ModernBERT is a state-of-the-art encoder-based transformer tailored specifically for biomedical and clinical text handling context length up to 8192 tokens. Building on the innovations introduced by ModernBERT, this model extends the context window to 8,192 tokens and incorporates domain-specific vocabulary refinements. It is designed to produce semantically rich ..."
+    }
+  ]
+}

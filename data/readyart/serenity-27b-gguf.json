@@ -5,7 +5,7 @@
   "author": "ReadyArt",
   "url": "https://huggingface.co/ReadyArt/Serenity-27B-GGUF",
   "created_at": "2026-08-19T01:35:01.000Z",
-  "updated_at": "2026-08-19T01:59:41.000Z",
+  "updated_at": "2026-08-27T06:46:16.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": null,
@@ -29,13 +29,13 @@
     "endpoints_compatible",
     "region:us"
   ],
-  "likes": 4,
-  "downloads_30d": 6380,
+  "likes": 5,
+  "downloads_30d": 6552,
   "trending_score": 0,
   "parameters": 27320697856,
   "parameters_human": "27.32B",
-  "storage_bytes": 108831638656,
-  "storage_human": "108.8 GB",
+  "storage_bytes": 310056905280,
+  "storage_human": "310.1 GB",
   "base_model": "ReadyArt/Serenity-27B",
   "formats": [
     "gguf"

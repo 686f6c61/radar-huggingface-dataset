@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "chatpbc11121/VibePilot-82M",
+  "slug": "chatpbc11121-vibepilot-82m",
+  "author": "chatpbc11121",
+  "url": "https://huggingface.co/chatpbc11121/VibePilot-82M",
+  "created_at": "2026-08-28T08:12:51.000Z",
+  "updated_at": "2026-08-28T10:00:32.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "business",
+    "decision-support",
+    "causal-lm",
+    "en",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 2953159574,
+  "storage_human": "3.0 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "VibePilot AI",
+      "url": "https://vibe-pilot-ai.vercel.app/",
+      "snippet": "Your AI teammate for beating deadlines. You&#x27;re doing the work of an entire team."
+    },
+    {
+      "title": "VibePilot",
+      "url": "https://www.vibepilot.cloud/",
+      "snippet": "Browser-based vibe coding command center"
+    },
+    {
+      "title": "m+p VibPilot | Compact 4/8 Channel DAQ System | m+p international",
+      "url": "https://mpihome.com/en/solutions/mp-vibpilot-daq-system",
+      "snippet": "The m+p VibPilot is a compact 4- or 8-channel front-end for precise vibration testing and analysis, fully integrated with m+p international software for simple to complex lab and test bench applications."
+    },
+    {
+      "title": "chatpbc11121 (ChatPBC) - Hugging Face",
+      "url": "https://huggingface.co/chatpbc11121/models",
+      "snippet": "Team members 1 chatpbc11121&#x27;s models1 Sort: Recently updated chatpbc11121/luwa-01 Text Generation • 0.5B•Updated 9 days ago• 665"
+    },
+    {
+      "title": "GitHub - Hidr4c/VibePilot",
+      "url": "https://github.com/Hidr4c/VibePilot",
+      "snippet": "VibePilot 🚀 Visual AI Automation Orchestrator — A native Windows desktop application that uses vision-capable LLMs to observe your screen, make decisions, and autonomously operate your PC."
+    }
+  ]
+}

@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "rahulrajsonu/medisync-gliner-biomed-small-onnx",
+  "slug": "rahulrajsonu-medisync-gliner-biomed-small-onnx",
+  "author": "rahulrajsonu",
+  "url": "https://huggingface.co/rahulrajsonu/medisync-gliner-biomed-small-onnx",
+  "created_at": "2026-08-28T10:14:41.000Z",
+  "updated_at": "2026-08-28T10:33:51.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "onnx",
+    "base_model:Ihor/gliner-biomed-small-v1.0",
+    "base_model:quantized:Ihor/gliner-biomed-small-v1.0",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 611281627,
+  "storage_human": "611 MB",
+  "base_model": "Ihor/gliner-biomed-small-v1.0",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - onnx/models: A collection of pre-trained, state-of-the-art ...",
+      "url": "https://github.com/onnx/models",
+      "snippet": "Welcome to the ONNX Model Zoo! The Open Neural Network Exchange (ONNX) is an open standard format created to represent machine learning models. Supported by a robust community of partners, ONNX defines a common set of operators and a common file format to enable AI developers to use models with a variety of frameworks, tools, runtimes, and compilers. This repository is a curated collection of ..."
+    },
+    {
+      "title": "GLiNER-BioMed - GitHub",
+      "url": "https://github.com/ds4dh/GLiNER-biomed",
+      "snippet": "GLiNER-BioMed introduces a specialized suite of efficient open biomedical Named Entity Recognition (NER) models based on the GLiNER framework. GLiNER-BioMed leverages synthetic annotations distilled from large generative biomedical language models to achieve state-of-the-art zero-shot and few-shot performance in biomedical entity recognition tasks."
+    },
+    {
+      "title": "rpeel/glitext-small-biomed · Hugging Face",
+      "url": "https://huggingface.co/rpeel/glitext-small-biomed",
+      "snippet": "GLiNER is a Named Entity Recognition (NER) model capable of identifying any entity type using a bidirectional transformer encoders (BERT-like). It provides a practical alternative to traditional NER models, which are limited to predefined entities, and Large Language Models (LLMs) that, despite their flexibility, are costly and large for resource-constrained scenarios."
+    },
+    {
+      "title": "GLiNER-BioMed: a suite of efficient models for open biomedical named ...",
+      "url": "https://academic.oup.com/bioinformatics/article/42/6/btag322/8690923",
+      "snippet": "Results To address these issues, we introduce GLiNER-BioMed, a domain-adapted suite of GLiNER models for biomedicine. Our approach first distills the annotation capabilities of large language models (LLMs) into a smaller, more efficient model, enabling the generation of high-coverage biomedical NER data."
+    },
+    {
+      "title": "GLiNER-Biomed - a Ihor Collection - Hugging Face",
+      "url": "https://huggingface.co/collections/Ihor/gliner-biomed-6792453f071504a05c535c23",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    }
+  ]
+}

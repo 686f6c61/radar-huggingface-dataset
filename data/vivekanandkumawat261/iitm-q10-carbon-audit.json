@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "vivekanandkumawat261/iitm-q10-carbon-audit",
+  "slug": "vivekanandkumawat261-iitm-q10-carbon-audit",
+  "author": "vivekanandkumawat261",
+  "url": "https://huggingface.co/vivekanandkumawat261/iitm-q10-carbon-audit",
+  "created_at": "2026-08-28T09:15:07.000Z",
+  "updated_at": "2026-08-28T09:17:32.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "co2_eq_emissions",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "vivekanandkumawat261 (vivekanand kumawat) · GitHub",
+      "url": "https://github.com/vivekanandkumawat261",
+      "snippet": "I am currently pursuing the B.S. Degree in Data Science and Applications from the Indian Institute of Technology Madras (IITM). I have completed diploma - vivekanandkumawat261"
+    },
+    {
+      "title": "Leveraging explainable AI to predict soil respiration ... - Nature",
+      "url": "https://www.nature.com/articles/s41598-025-96216-y",
+      "snippet": "The classification probabilities used to assess the risk of transitioning to high Q 10 were derived from the machine learning model trained to distinguish between high-Q 10 and low-Q 10 soils."
+    },
+    {
+      "title": "IIT Madras Carbon Zero Challenge announces top 25 teams with promising ...",
+      "url": "https://www.iitm.ac.in/happenings/press-releases-and-coverages/iit-madras-carbon-zero-challenge-announces-top-25-teams",
+      "snippet": "Indian Institute of Technology Madras (IIT Madras) has announced the top 25 teams that form the fourth Cohort of the annual Carbon Zero Challenge, a pioneer pan-Indian competition to encourage start-ups in the Sustainability Sector."
+    },
+    {
+      "title": "Adityaraj-Gupta-JI/EcoAudit-AI - GitHub",
+      "url": "https://github.com/Adityaraj-Gupta-JI/EcoAudit-AI/tree/main",
+      "snippet": "An advanced multi-modal dMRV framework for real-time forest carbon sequestration tracking. Uses Sentinel-1/2 data fusion, a PIO-optimized BiLSTM deep learning model, and multi-pool carbon partitioning to generate high-integrity, verifiable carbon credit audit profiles that combat greenwashing."
+    },
+    {
+      "title": "LLM Powered Sustainable AI for Carbon Analysis - IEEE Xplore",
+      "url": "https://ieeexplore.ieee.org/abstract/document/11483931/authors",
+      "snippet": "Large Language Models (LLMs) are revolutionizing the state of AI capabilities, but their carbon footprint is a critical challenge to sustainability. The training, inference, and deployment of LLMs demand enormous computational resources, thereby making a substantial contribution to both operational and embodied carbon emissions. Early research efforts, such as the MLCO2 calculator, estimated ..."
+    }
+  ]
+}

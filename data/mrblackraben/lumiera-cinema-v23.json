@@ -1,0 +1,83 @@
+{
+  "schema": 1,
+  "id": "MrBlackRaben/lumiera-cinema-v23",
+  "slug": "mrblackraben-lumiera-cinema-v23",
+  "author": "MrBlackRaben",
+  "url": "https://huggingface.co/MrBlackRaben/lumiera-cinema-v23",
+  "created_at": "2026-08-28T11:32:01.000Z",
+  "updated_at": "2026-08-28T11:49:52.000Z",
+  "license": "ltx-video-2-open-source-license",
+  "license_family": "oss",
+  "pipeline_tag": "image-to-video",
+  "library": "diffusers",
+  "languages": [],
+  "tags": [
+    "diffusers",
+    "safetensors",
+    "image-to-video",
+    "text-to-video",
+    "video-to-video",
+    "image-text-to-video",
+    "audio-to-video",
+    "text-to-audio",
+    "video-to-audio",
+    "audio-to-audio",
+    "text-to-audio-video",
+    "image-to-audio-video",
+    "image-text-to-audio-video",
+    "ltx-2",
+    "ltx-2-3",
+    "ltx-video",
+    "ltxv",
+    "lightricks",
+    "base_model:Lightricks/LTX-2.3",
+    "base_model:finetune:Lightricks/LTX-2.3",
+    "license:other",
+    "diffusers:LTX2Pipeline",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 64747899119,
+  "storage_human": "64.7 GB",
+  "base_model": "Lightricks/LTX-2.3",
+  "formats": [
+    "diffusers",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "MrBlackRaben (MrBlackRaben) - Hugging Face",
+      "url": "https://huggingface.co/MrBlackRaben",
+      "snippet": "models 1 MrBlackRaben/Qwen3-32B-Q2_K-GGUF Text Generation • Updated 2 days ago • 7"
+    },
+    {
+      "title": "AI Cinema Lab — Cinematic AI Filmmaking by MR. BLACK",
+      "url": "https://www.aicinemalab.ai/",
+      "snippet": "Most AI looks like AI for specific, fixable reasons. Learn the reasons, fix them, and your work reads as cinema. A complete craft system for serious visual creatives. $397, lifetime access."
+    },
+    {
+      "title": "GitHub Pages - Lumiere - Google Research",
+      "url": "https://lumiere-video.github.io/",
+      "snippet": "By deploying both spatial and (importantly) temporal down- and up-sampling and leveraging a pre-trained text-to-image diffusion model, our model learns to directly generate a full-frame-rate, low-resolution video by processing it in multiple space-time scales."
+    },
+    {
+      "title": "Dreamina: Free AI Video & Image Generator Powered by Multiple Models",
+      "url": "https://dreamina.capcut.com/",
+      "snippet": "An all-in-one AI creative platform powered by advanced image and video generation models, turning ideas into high-quality visuals."
+    },
+    {
+      "title": "Luma | AI Agents for Creative Work",
+      "url": "https://lumalabs.ai/",
+      "snippet": "Luma AI is the creative AI platform for video generation and image creation. Powered by the world&#x27;s leading video generation models, Ray and Uni, and creative agents handling end-to-end workflows. Trusted by leading agencies and brands. Try it free."
+    }
+  ]
+}

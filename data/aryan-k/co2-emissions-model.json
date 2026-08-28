@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "aryan-k/co2-emissions-model",
+  "slug": "aryan-k-co2-emissions-model",
+  "author": "aryan-k",
+  "url": "https://huggingface.co/aryan-k/co2-emissions-model",
+  "created_at": "2026-08-28T09:10:43.000Z",
+  "updated_at": "2026-08-28T09:16:44.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "co2_eq_emissions",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "aryan-prasad22/co2-emissions-intelligence-dashboard - GitHub",
+      "url": "https://github.com/aryan-prasad22/co2-emissions-intelligence-dashboard",
+      "snippet": "A lightweight trend-based regression model is used to estimate future CO₂ emissions based on historical data. This approach ensures fast computation while maintaining interpretability of results."
+    },
+    {
+      "title": "Method and evaluations of the effective gain of artificial intelligence ...",
+      "url": "https://www.sciencedirect.com/science/article/pii/S030147972300049X",
+      "snippet": "The second model cannot be scaled up, but the balance remains positive, even if the gains are much smaller. More generally, the CO2 emissions gain metrics provided by our method can be used as new metrics for comparing the efficiency of AI models (for reducing CO2 emissions) beyond predictive capacity-based traditional ML evaluation metrics."
+    },
+    {
+      "title": "GitHub - akkiaryan/co2-temperature-coupling-pipeline: A country ...",
+      "url": "https://github.com/akkiaryan/co2-temperature-coupling-pipeline",
+      "snippet": "A country-resolved computational framework for analyzing the coupling between carbon dioxide (CO₂) emissions and surface temperature using causality testing and time-series forecasting models."
+    },
+    {
+      "title": "Predicting CO2 Emissions with Advanced Deep Learning Models and a ...",
+      "url": "https://www.mdpi.com/2227-7390/13/9/1481",
+      "snippet": "Global carbon dioxide (CO2) emissions are increasing and present substantial environmental sustainability challenges, requiring the development of accurate predictive models. Due to the non-linear and temporal nature of emissions data, traditional machine learning methods—which work well when data are structured—struggle to provide effective predictions. In this paper, we propose a general ..."
+    },
+    {
+      "title": "ARIES - ARtificial Intelligence for Environment & Sustainability",
+      "url": "https://aries.integratedmodelling.org/",
+      "snippet": "ARIES is an international collaboration that has built, for the first time, a shared knowledge space to help address the most complex sustainability issues of our time, using the semantic web paradigm. From our central hub at the Basque Center for Climate Change we are supporting nearly 6,000 active users in 5 continents. ARIES applications range in scale from small-scale, high-resolution ..."
+    }
+  ]
+}

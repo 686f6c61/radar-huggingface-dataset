@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "lazyyawn07/flickr8k-image-captioning",
+  "slug": "lazyyawn07-flickr8k-image-captioning",
+  "author": "lazyyawn07",
+  "url": "https://huggingface.co/lazyyawn07/flickr8k-image-captioning",
+  "created_at": "2026-08-28T09:49:32.000Z",
+  "updated_at": "2026-08-28T09:50:02.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "image-captioning",
+    "pytorch",
+    "resnet50",
+    "lstm",
+    "flickr8k",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 123466416,
+  "storage_human": "123 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Paper 26-An Efficient Deep Learning Based Hybrid Model",
+      "url": "https://www.scribd.com/document/1072299333/Paper-26-An-Efficient-Deep-Learning-Based-Hybrid-Model",
+      "snippet": "The paper presents a hybrid deep learning model for image caption generation using an encoder-decoder architecture that incorporates VGG16, ResNet50, and YOLO for feature extraction and LSTM for text generation. It addresses the challenges of generating human-like captions by leveraging computer vision and natural language processing techniques. The model&#x27;s performance is evaluated using ..."
+    },
+    {
+      "title": "AbdelRahman-Elsayed2/Flickr8k-Image-Captioning - GitHub",
+      "url": "https://github.com/AbdelRahman-Elsayed2/Flickr8k-Image-Captioning",
+      "snippet": "This project implements an Image Captioning Model using ResNet for feature extraction and LSTM for caption generation on the Flickr8k dataset. It integrates computer vision and NLP to generate accu..."
+    },
+    {
+      "title": "Image Captioning - Colab",
+      "url": "https://colab.research.google.com/github/keras-team/keras-io/blob/master/examples/vision/ipynb/image_captioning.ipynb",
+      "snippet": "Our image captioning architecture consists of three models: A CNN: used to extract the image features A TransformerEncoder: The extracted image features are then passed to a Transformer based encoder that generates a new representation of the inputs A TransformerDecoder: This model takes the encoder output and the text data (sequences) as inputs and tries to learn to generate the caption."
+    },
+    {
+      "title": "GitHub - Avaneesh40585/Flickr8k-Dataset: A repository hosting the ...",
+      "url": "https://github.com/Avaneesh40585/Flickr8k-Dataset",
+      "snippet": "The Flickr8k dataset is a benchmark dataset widely used for research in image captioning and multimodal deep learning. This repository provides both the image and text annotation components of the dataset, ready for use in computer vision and natural language processing projects."
+    },
+    {
+      "title": "#internship #machinelearning #deeplearning #computervision # ... - LinkedIn",
+      "url": "https://www.linkedin.com/posts/iqra-gul-73150032a_internship-machinelearning-deeplearning-activity-7497203598280253441-kuVL",
+      "snippet": "Over these 8 weeks, I built a complete, end-to-end Image Captioning System using the Flickr8k dataset and a fine-tuned BLIP (Bootstrapping Language-Image Pre-training) model going from raw data ..."
+    }
+  ]
+}

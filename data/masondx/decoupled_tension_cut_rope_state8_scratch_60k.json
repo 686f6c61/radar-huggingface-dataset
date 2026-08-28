@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "masondx/decoupled_tension_cut_rope_state8_scratch_60k",
+  "slug": "masondx-decoupled_tension_cut_rope_state8_scratch_60k",
+  "author": "masondx",
+  "url": "https://huggingface.co/masondx/decoupled_tension_cut_rope_state8_scratch_60k",
+  "created_at": "2026-08-28T09:31:04.000Z",
+  "updated_at": "2026-08-28T09:31:28.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "robotics",
+    "decoupled_bimanual_diffusion",
+    "dataset:masondx/new_tension_cut_rope_state8",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 540342216,
+  "parameters_human": "540.3M",
+  "storage_bytes": 2161435192,
+  "storage_human": "2.2 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "masondx/decoupled_tension_cut_rope_state8 · Hugging Face",
+      "url": "https://huggingface.co/masondx/decoupled_tension_cut_rope_state8",
+      "snippet": "Instructions to use masondx/decoupled_tension_cut_rope_state8 with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Libraries LeRobot How to use masondx/decoupled_tension_cut_rope_state8 with LeRobot: Notebooks Google Colab Kaggle Model Card for decoupled_bimanual_diffusion How to Get Started with the Model Train from scratch Evaluate the policy/run ..."
+    },
+    {
+      "title": "decoupled_tension_cut_rope_state8_all_images - Hugging Face",
+      "url": "https://huggingface.co/masondx/decoupled_tension_cut_rope_state8_all_images",
+      "snippet": "decoupled_tension_cut_rope_state8_all_images ... Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "Google Gemini",
+      "url": "https://gemini.google.com/",
+      "snippet": "Meet Gemini, Google&#x27;s AI assistant. Get help with writing, planning, brainstorming, and more. Experience the power of generative AI."
+    },
+    {
+      "title": "deepseek-v4-pro-0813 Model by Deepseek-ai | NVIDIA NIM",
+      "url": "https://build.nvidia.com/deepseek-ai/deepseek-v4-pro-0813",
+      "snippet": "DeepSeek V4 scales to 1M-token context windows with efficient MoE architecture for coding tasks."
+    },
+    {
+      "title": "Scratch - Imagine, Program, Share",
+      "url": "https://scratch.mit.edu/",
+      "snippet": "Scratch is a free programming language and online community where you can create your own interactive stories, games, and animations."
+    }
+  ]
+}

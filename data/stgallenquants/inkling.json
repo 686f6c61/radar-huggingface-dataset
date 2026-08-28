@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "stgallenquants/Inkling",
+  "slug": "stgallenquants-inkling",
+  "author": "stgallenquants",
+  "url": "https://huggingface.co/stgallenquants/Inkling",
+  "created_at": "2026-08-28T11:34:09.000Z",
+  "updated_at": "2026-08-28T11:34:10.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "inkling_mm_model",
+    "image-text-to-text",
+    "conversational",
+    "audio-text-to-text",
+    "moe",
+    "license:apache-2.0",
+    "eval-results",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 952377623626,
+  "parameters_human": "952.38B",
+  "storage_bytes": 1909218968769,
+  "storage_human": "1909.2 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Inkling - Thinking Machines Lab",
+      "url": "https://thinkingmachines.ai/inkling/",
+      "snippet": "Inkling-Small is shown with a solid purple line, Inkling with the heavier cobalt line, and the comparison models with dashed lines. Evaluations without a reported model score are plotted at zero. Hover an evaluation to compare every model&#x27;s score."
+    },
+    {
+      "title": "Inkling Explained: Thinking Machines&#x27; First Model",
+      "url": "https://www.layer3labs.io/guides/inkling-explained",
+      "snippet": "Inkling is Thinking Machines Lab&#x27;s first open-weights AI model. Learn its 975B/41B MoE design, how it compares, and how to fine-tune it with Tinker."
+    },
+    {
+      "title": "Inkling Model Card - Thinking Machines Lab",
+      "url": "https://thinkingmachines.ai/model-card/inkling/",
+      "snippet": "Model card for Inkling, a 975B-parameter (41B active) open-weights multimodal model: intended uses, model properties, training, evaluations and safety."
+    },
+    {
+      "title": "Inkling · closed-weight frontier model by Thinking Machines | StudyArena",
+      "url": "https://studyarena.com/models/inkling",
+      "snippet": "Inkling family model by Thinking Machines. Watch this one: a brand-new lab&#x27;s first models going head-to-head with incumbents in arenas like this."
+    },
+    {
+      "title": "Inkling AI Model: Thinking Machines&#x27; First Model Explained",
+      "url": "https://www.themodernblog.com/inkling-ai-model-thinking-machines-mira-murati/",
+      "snippet": "Thinking Machines just launched Inkling AI model, Mira Murati&#x27;s first open-weight AI model. Here&#x27;s what it is, how it works, who it&#x27;s for, and whether it matters."
+    }
+  ]
+}

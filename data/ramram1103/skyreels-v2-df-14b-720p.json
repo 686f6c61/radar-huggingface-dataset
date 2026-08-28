@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "ramram1103/SkyReels-V2-DF-14B-720P",
+  "slug": "ramram1103-skyreels-v2-df-14b-720p",
+  "author": "ramram1103",
+  "url": "https://huggingface.co/ramram1103/SkyReels-V2-DF-14B-720P",
+  "created_at": "2026-08-28T09:15:37.000Z",
+  "updated_at": "2026-08-28T09:15:37.000Z",
+  "license": "skywork-license",
+  "license_family": "unknown",
+  "pipeline_tag": "text-to-video",
+  "library": "diffusers",
+  "languages": [],
+  "tags": [
+    "diffusers",
+    "safetensors",
+    "t2v",
+    "text-to-video",
+    "arxiv:2504.13074",
+    "arxiv:2407.01392",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 14288491584,
+  "parameters_human": "14.29B",
+  "storage_bytes": 126199254024,
+  "storage_human": "126.2 GB",
+  "base_model": null,
+  "formats": [
+    "diffusers",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "SkyReels V2: Infinite-Length Film Generative Model - GitHub",
+      "url": "https://github.com/SkyworkAI/SkyReels-V2",
+      "snippet": "May 16, 2025: 🔥 We release the inference code for video extension and start/end frame control in diffusion forcing model. Apr 24, 2025: 🔥 We release the 720P models, SkyReels-V2-DF-14B-720P and SkyReels-V2-I2V-14B-720P. The former facilitates infinite-length autoregressive video generation, and the latter focuses on Image2Video synthesis."
+    },
+    {
+      "title": "Skywork/SkyReels-V2-DF-14B-720P · Hugging Face",
+      "url": "https://huggingface.co/Skywork/SkyReels-V2-DF-14B-720P",
+      "snippet": "Welcome to the SkyReels V2 repository! Here, you&#x27;ll find the model weights for our infinite-length film generative models. To the best of our knowledge, it represents the first open-source video generative model employing AutoRegressive Diffusion-Forcing architecture that achieves the SOTA performance among publicly available models. 🔥🔥🔥 News!! Apr 24, 2025: 🔥 We release the 720P ..."
+    },
+    {
+      "title": "README.md · Skywork/SkyReels-V2-DF-14B-720P at main",
+      "url": "https://huggingface.co/Skywork/SkyReels-V2-DF-14B-720P/blob/main/README.md",
+      "snippet": "Welcome to the SkyReels V2 repository! Here, you&#x27;ll find the model weights for our infinite-length film generative models. To the best of our knowledge, it represents the first open-source video generative model employing AutoRegressive Diffusion-Forcing architecture that achieves the SOTA performance among publicly available models. 🔥🔥🔥 News!! Apr 24, 2025: 🔥 We release the 720P ..."
+    },
+    {
+      "title": "SkyReels-V2-DF-14B-720P · Models",
+      "url": "https://www.modelscope.cn/models/Skywork/SkyReels-V2-DF-14B-720P",
+      "snippet": "Welcome to the SkyReels V2 repository! Here, you&#x27;ll find the model weights for our infinite-length film generative models. To the best of our knowledge, it represents the first open-source video generative model employing AutoRegressive Diffusion-Forcing architecture that achieves the SOTA performance among publicly available models. 🔥🔥🔥 News!! Apr 24, 2025: 🔥 We release the 720P ..."
+    },
+    {
+      "title": "SkyReels-V2-DF-14B-720P huggingface.co api & Skywork SkyReels-V2-DF-14B ...",
+      "url": "https://www.toolify.ai/ai-model/skywork-skyreels-v2-df-14b-720p",
+      "snippet": "SkyReels-V2-DF-14B-720P is an open source model from GitHub that offers a free installation service, and any user can find SkyReels-V2-DF-14B-720P on GitHub to install."
+    }
+  ]
+}

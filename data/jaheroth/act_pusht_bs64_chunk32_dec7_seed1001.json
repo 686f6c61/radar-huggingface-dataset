@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "jaheroth/act_pusht_bs64_chunk32_dec7_seed1001",
+  "slug": "jaheroth-act_pusht_bs64_chunk32_dec7_seed1001",
+  "author": "jaheroth",
+  "url": "https://huggingface.co/jaheroth/act_pusht_bs64_chunk32_dec7_seed1001",
+  "created_at": "2026-08-28T07:05:17.000Z",
+  "updated_at": "2026-08-28T07:05:30.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "robotics",
+    "act",
+    "dataset:lerobot/pusht",
+    "arxiv:2304.13705",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 83899796,
+  "parameters_human": "83.9M",
+  "storage_bytes": 335637520,
+  "storage_human": "336 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "jaheroth/act_pusht_chunk32_dec7 · Hugging Face",
+      "url": "https://huggingface.co/jaheroth/act_pusht_chunk32_dec7",
+      "snippet": "Instructions to use jaheroth/act_pusht_chunk32_dec7 with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Libraries LeRobot How to use jaheroth/act_pusht_chunk32_dec7 with LeRobot: Notebooks Google Colab Kaggle Model Card for act How to Get Started with the Model Train from scratch Evaluate the policy/run inference Model Details"
+    },
+    {
+      "title": "aadarshram/act_pusht · Hugging Face",
+      "url": "https://huggingface.co/aadarshram/act_pusht",
+      "snippet": "Model Card for act ACT trained on PushT dataset for 80,000 training steps. Trained for 3.5 hrs on T4 GPU on Colab free. The goal is to use this to compare ACTs performance on PushT against diffusion policy particularly the aspect of action multimodality."
+    },
+    {
+      "title": "Google Gemini",
+      "url": "https://gemini.google.com/",
+      "snippet": "Meet Gemini, Google&#x27;s AI assistant. Get help with writing, planning, brainstorming, and more. Experience the power of generative AI."
+    },
+    {
+      "title": "Grok",
+      "url": "https://grok.com/",
+      "snippet": "Grok is an AI assistant built by SpaceXAI. Chat, create images, write code, and get real-time answers from the web and X."
+    },
+    {
+      "title": "ChatGPT: Chat, Work, Create & Code with AI",
+      "url": "https://chatgpt.com/",
+      "snippet": "Use ChatGPT to answer questions, write, create images, complete work, and code—all in one place. Get started for free or download the app."
+    }
+  ]
+}

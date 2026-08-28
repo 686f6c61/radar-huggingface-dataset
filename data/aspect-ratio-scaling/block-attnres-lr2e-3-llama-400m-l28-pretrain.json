@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "aspect-ratio-scaling/block-attnres-lr2e-3-llama-400M-L28-pretrain",
+  "slug": "aspect-ratio-scaling-block-attnres-lr2e-3-llama-400m-l28-pretrain",
+  "author": "aspect-ratio-scaling",
+  "url": "https://huggingface.co/aspect-ratio-scaling/block-attnres-lr2e-3-llama-400M-L28-pretrain",
+  "created_at": "2026-08-28T11:41:02.000Z",
+  "updated_at": "2026-08-28T11:42:30.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "olmo-core",
+  "languages": [],
+  "tags": [
+    "olmo-core",
+    "causal-lm",
+    "raw-checkpoint",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 9794948125,
+  "storage_human": "9.8 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "AttnRes - a aspect-ratio-scaling Collection - Hugging Face",
+      "url": "https://huggingface.co/collections/aspect-ratio-scaling/attnres",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "aspect-ratio-scaling/attnres-lr2e-3-llama-400M-L28-pretrain - Hugging Face",
+      "url": "https://huggingface.co/aspect-ratio-scaling/attnres-lr2e-3-llama-400M-L28-pretrain",
+      "snippet": "attnres-lr2e-3-llama-400M-L28-pretrain This repository stores the raw OLMo-core checkpoint files uploaded from the original training output directory."
+    },
+    {
+      "title": "[2603.15031] Attention Residuals - arXiv.org",
+      "url": "https://arxiv.org/abs/2603.15031",
+      "snippet": "Residual connections with PreNorm are standard in modern LLMs, yet they accumulate all layer outputs with fixed unit weights. This uniform aggregation causes uncontrolled hidden-state growth with depth, progressively diluting each layer&#x27;s contribution. We propose Attention Residuals (AttnRes), which replaces this fixed accumulation with softmax attention over preceding layer outputs, allowing ..."
+    },
+    {
+      "title": "Attention Residuals - arXiv.org",
+      "url": "https://arxiv.org/pdf/2603.15031",
+      "snippet": "We sweep five model sizes (Table 2) and train three variants per size: a PreNorm baseline, Full AttnRes, and Block AttnRes with ≈ 8 blocks. They are trained with an 8192-token context window and a cosine learning rate schedule."
+    },
+    {
+      "title": "Attention Residuals in Deep Language Models",
+      "url": "https://www.emergentmind.com/papers/2603.15031",
+      "snippet": "The paper introduces Attention Residuals—a selective, softmax-based mechanism that overcomes PreNorm dilution to enhance scaling and reasoning in deep language models."
+    }
+  ]
+}

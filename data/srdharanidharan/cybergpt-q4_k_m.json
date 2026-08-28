@@ -1,0 +1,77 @@
+{
+  "schema": 1,
+  "id": "srdharanidharan/CyberGPT-Q4_K_M",
+  "slug": "srdharanidharan-cybergpt-q4_k_m",
+  "author": "srdharanidharan",
+  "url": "https://huggingface.co/srdharanidharan/CyberGPT-Q4_K_M",
+  "created_at": "2026-08-28T09:33:24.000Z",
+  "updated_at": "2026-08-28T09:52:26.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "llama.cpp",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "llama.cpp",
+    "gguf",
+    "cybersecurity",
+    "cybersecurity-llm",
+    "qwen3",
+    "qwen3-4b",
+    "vulkan",
+    "text-generation",
+    "fine-tuned",
+    "en",
+    "base_model:Qwen/Qwen3-4B",
+    "base_model:quantized:Qwen/Qwen3-4B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 4022468096,
+  "parameters_human": "4.02B",
+  "storage_bytes": 2497276512,
+  "storage_human": "2.5 GB",
+  "base_model": "Qwen/Qwen3-4B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Demystifying LLM Quantization Suffixes: What Q4_K_M, Q8_0, and Q6_K ...",
+      "url": "https://medium.com/@paul.ilvez/demystifying-llm-quantization-suffixes-what-q4-k-m-q8-0-and-q6-k-really-mean-0ec2770f17d3",
+      "snippet": "The suffixes on model files — such as Q4_K_M, Q6_K, or Q8_0 — give you an instant idea of how demanding or performant the model is before you even download it. Let&#x27;s break down the pieces:"
+    },
+    {
+      "title": "Demystifying LLM Quantization Suffixes: What Q4_K_M, Q8_0, a - LinkedIn",
+      "url": "https://www.linkedin.com/pulse/demystifying-llm-quantization-suffixes-what-q4km-q80-q6k-paul-ilves-i0yvf",
+      "snippet": "The suffixes on model files — such as Q4_K_M, Q6_K, or Q8_0 — give you an instant idea of how demanding or performant the model is before you even download it."
+    },
+    {
+      "title": "Hugging Face - The AI community building the future.",
+      "url": "https://huggingface.co/",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "thesven/Llama-3-8B-Instruct-GGUF-Q4_K_M · Hugging Face",
+      "url": "https://huggingface.co/thesven/Llama-3-8B-Instruct-GGUF-Q4_K_M",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Q4_K_M vs Q4_0 vs Q8_0: LLM Quantization Explained (2026)",
+      "url": "https://www.promptquorum.com/local-llms/llm-quantization-explained",
+      "snippet": "The slide deck below covers: Q4_K_M vs Q8_0 vs GGUF format comparison, RAM savings by model size (3B-70B), quality loss by quantization level, and which quantization to choose for your hardware. Download the PDF as an LLM quantization reference card. Browse the slides below or download as PDF for offline reference. Download Reference Card (PDF)"
+    }
+  ]
+}

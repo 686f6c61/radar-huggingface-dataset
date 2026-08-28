@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "enigmare/nylon-v1",
+  "slug": "enigmare-nylon-v1",
+  "author": "enigmare",
+  "url": "https://huggingface.co/enigmare/nylon-v1",
+  "created_at": "2026-08-28T09:19:24.000Z",
+  "updated_at": "2026-08-28T10:12:19.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "pytorch",
+    "safetensors",
+    "gguf",
+    "gpt2",
+    "conversational",
+    "code",
+    "reasoning",
+    "nylon",
+    "text-generation",
+    "en",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 279218176,
+  "parameters_human": "279.2M",
+  "storage_bytes": 4163802559,
+  "storage_human": "4.2 GB",
+  "base_model": null,
+  "formats": [
+    "gguf",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "NylonME — A Memory Engine for AI Agents - GitHub",
+      "url": "https://github.com/nylon-memory/NylonME/tree/main/",
+      "snippet": "Single-node memory engine for AI agents: multi-filament memory weaving, mesh memory graph, tension-based forgetting, context resonance. Status: early development (Phase 1, APIs are not yet stable) Nylon models each memory as a braid of multiple \"filaments\" (fact / emotion / temporal / relation ..."
+    },
+    {
+      "title": "Nylon - V1.0 | Stable Diffusion Model - LORA | Tensor.Art",
+      "url": "https://tensor.art/models/930250432947715792",
+      "snippet": "3 runs, 1 stars, 0 downloads."
+    },
+    {
+      "title": "Nylon - v1.0 | Illustrious LoRA | Civitai",
+      "url": "https://civitai.com/models/2116033/nylon",
+      "snippet": "Published Nov 10, 2025 Base Model Illustrious"
+    },
+    {
+      "title": "Best Nylon AI On-model Photography Generator (2026)",
+      "url": "https://zipdo.co/best/nylon-ai-on-model-photography-generator/",
+      "snippet": "Top 10 Nylon Ai On-Model Photography Generator tools ranked for on-model photo results, with notes on Rawshot, Magic Studio, and Krea."
+    },
+    {
+      "title": "Dark Web AI Tools & Uncensored Models 2026 - Complete Guide | TorWiki",
+      "url": "https://torwiki.org/learn/darknet-ai/",
+      "snippet": "Complete guide to dark web AI: WormGPT, FraudGPT, GhostGPT, jailbreak techniques, uncensored LLMs, and AI services on Tor. Updated April 2026."
+    }
+  ]
+}

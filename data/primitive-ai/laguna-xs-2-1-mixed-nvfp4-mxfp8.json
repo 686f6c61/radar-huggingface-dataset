@@ -5,7 +5,7 @@
   "author": "primitive-ai",
   "url": "https://huggingface.co/primitive-ai/Laguna-XS-2.1-mixed-NVFP4-MXFP8",
   "created_at": "2026-08-18T03:37:25.000Z",
-  "updated_at": "2026-08-26T21:42:37.000Z",
+  "updated_at": "2026-08-27T11:26:50.000Z",
   "license": "openmdw-1.1",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -33,7 +33,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 153,
+  "downloads_30d": 155,
   "trending_score": 0,
   "parameters": 18141796096,
   "parameters_human": "18.14B",

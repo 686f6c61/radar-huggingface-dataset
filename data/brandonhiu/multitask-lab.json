@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "brandonhiu/multitask-lab",
+  "slug": "brandonhiu-multitask-lab",
+  "author": "brandonhiu",
+  "url": "https://huggingface.co/brandonhiu/multitask-lab",
+  "created_at": "2026-08-28T08:30:13.000Z",
+  "updated_at": "2026-08-28T08:30:22.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "vit",
+    "pytorch",
+    "multitask",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 33088,
+  "parameters_human": "33088",
+  "storage_bytes": 132832,
+  "storage_human": "132832 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "brandonhiu (Brandon Hernandez) - Hugging Face",
+      "url": "https://huggingface.co/brandonhiu",
+      "snippet": "Mechanical keyboards and neural networks"
+    },
+    {
+      "title": "Multi — one task, the right AI workflow",
+      "url": "https://getmulti.ai/",
+      "snippet": "Multi puts 300+ models from every major lab to work across four workflows, so you deploy the best AI for each task instead of forcing one to do it all. Using the right model for the right project is the advantage most people leave on the table."
+    },
+    {
+      "title": "Multitask AI models help robots tackle complex tasks with improved ...",
+      "url": "https://interestingengineering.com/ai-robotics/multitask-ai-models-help-robots",
+      "snippet": "Multitask AI models help robots tackle complex tasks with improved efficiency Fine-tuned models outperform others, achieving similar results with 3-5x less data, reducing costly and time ..."
+    },
+    {
+      "title": "Plus Size Models (@ai_plussize) • Instagram photos and videos",
+      "url": "https://www.instagram.com/ai_plussize/",
+      "snippet": "382K Followers, 0 Following, 2,115 Posts - Plus Size Models (@ai_plussize) on Instagram: \" AI Curvy Queens 👑 Bold • Beautiful • Irresistible 🎭 100% AI generated | No real people 📲 New reels every day.\""
+    },
+    {
+      "title": "LLM Leaderboard 2026: Compare 300+ Top AI Models by Intelligence, Speed ...",
+      "url": "https://llm-stats.com/leaderboards/llm-leaderboard",
+      "snippet": "The LLM Leaderboard — independent ranking of GPT, Claude, Gemini, Llama, DeepSeek and 300+ AI models by intelligence, speed and price. Filter by provider, license, modality and context window; sort by every benchmark. Composite LLM Stats Score updated continuously from public benchmarks and live API metrics."
+    }
+  ]
+}

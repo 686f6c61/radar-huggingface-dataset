@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "jones1993/multimodal-generation-test79",
+  "slug": "jones1993-multimodal-generation-test79",
+  "author": "jones1993",
+  "url": "https://huggingface.co/jones1993/multimodal-generation-test79",
+  "created_at": "2026-08-28T09:12:14.000Z",
+  "updated_at": "2026-08-28T09:12:22.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "transformer",
+    "research-notes",
+    "multimodal-generation",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 49600,
+  "parameters_human": "49600",
+  "storage_bytes": 198880,
+  "storage_human": "198880 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Introduction to Multimodal Generative AI | Springer Nature Link",
+      "url": "https://link.springer.com/chapter/10.1007/978-981-96-2355-6_1",
+      "snippet": "A state-of-the-art method in machine learning is called Multimodal Generative Artificial Intelligence (AI), which aims to produce a variety of outputs in many modalities, including text, audio, and images. This survey explores multimodal generative AI&#x27;s developments, techniques, and uses. First, we clarify the main concepts behind such models, such as adaptive autoencoders (VAEs), generative ..."
+    },
+    {
+      "title": "Multi-Modal Generative AI: Multi-modal LLM, Diffusion and Beyond",
+      "url": "https://arxiv.org/html/2409.14993v1",
+      "snippet": "Abstract Multi-modal generative AI has received increasing attention in both academia and industry. Particularly, two dominant families of techniques are: i) The multi-modal large language model (MLLM) such as GPT-4V, which shows impressive ability for multi-modal understanding; ii) The diffusion model such as Sora, which exhibits remarkable multi-modal powers, especially with respect to ..."
+    },
+    {
+      "title": "[2410.00215] Characterizing and Efficiently Accelerating Multimodal ...",
+      "url": "https://arxiv.org/abs/2410.00215",
+      "snippet": "To sustainably scale generative AI capabilities to billions of users in the world, inference must be fast and efficient. This paper pinpoints key system design and optimization opportunities by characterizing a family of emerging multi-modal generation models on real systems."
+    },
+    {
+      "title": "Multimodal Learning in Artificial Intelligence (AI)",
+      "url": "https://www.geeksforgeeks.org/artificial-intelligence/multimodal-ai/",
+      "snippet": "Multimodal AI refers to artificial intelligence systems that integrate and process multiple types of data, such as text, images, audio, and video, to understand and generate comprehensive insights and responses. It aims to mimic human-like understanding by combining various sensory inputs. The article aims to provide a comprehensive understanding of multimodal AI and explores associated ..."
+    },
+    {
+      "title": "GitHub - YingqingHe/Awesome-LLMs-meet-Multimodal-Generation: A ...",
+      "url": "https://github.com/YingqingHe/Awesome-LLMs-meet-Multimodal-Generation",
+      "snippet": "This repository contains a curated list of LLMs meet multimodal generation. Modalities consist of visual (including image, video and 3D) and audio (including sound, speech and music). We welcome any contributions and suggestions to our repository or the addition of your own work. Feel free to make a pull request or leave your comments!!"
+    }
+  ]
+}

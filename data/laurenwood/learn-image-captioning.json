@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "laurenwood/learn-image-captioning",
+  "slug": "laurenwood-learn-image-captioning",
+  "author": "laurenwood",
+  "url": "https://huggingface.co/laurenwood/learn-image-captioning",
+  "created_at": "2026-08-28T08:51:26.000Z",
+  "updated_at": "2026-08-28T08:51:34.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "transformer",
+    "research-notes",
+    "image-captioning",
+    "license:cc-by-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 16576,
+  "parameters_human": "16576",
+  "storage_bytes": 66784,
+  "storage_human": "66784 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Create Image Captioning Models | Google Skills",
+      "url": "https://www.skills.google/course_templates/542",
+      "snippet": "This course teaches you how to create an image captioning model by using deep learning. You learn about the different components of an image captioning model, such as the encoder and decoder, and how to train and evaluate your model."
+    },
+    {
+      "title": "Image captioning · Hugging Face",
+      "url": "https://huggingface.co/docs/transformers/tasks/image_captioning",
+      "snippet": "Image captioning Image captioning is the task of predicting a caption for a given image. Common real world applications of it include aiding visually impaired people that can help them navigate through different situations. Therefore, image captioning helps to improve content accessibility for people by describing images to them."
+    },
+    {
+      "title": "Free Image Captioning Course: Adding Context to Visuals",
+      "url": "https://www.simplilearn.com/free-image-captioning-models-course-skillup",
+      "snippet": "Enhance your skills in image captioning with this free course, teaching you how to bring visuals to life through captions."
+    },
+    {
+      "title": "image-captioning · GitHub Topics · GitHub",
+      "url": "https://github.com/topics/image-captioning",
+      "snippet": "X-modaler is a versatile and high-performance codebase for cross-modal analytics (e.g., image captioning, video captioning, vision-language pre-training, visual question answering, visual commonsense reasoning, and cross-modal retrieval)."
+    },
+    {
+      "title": "Create Image Captioning Models - Coursera",
+      "url": "https://www.coursera.org/learn/create-image-captioning-models",
+      "snippet": "This course teaches you how to create an image captioning model by using deep learning. You learn about the different components of an image captioning model, such as the encoder and decoder, and how to train and evaluate your model."
+    }
+  ]
+}

@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "darkps/Leo-GenPrompt",
+  "slug": "darkps-leo-genprompt",
+  "author": "darkps",
+  "url": "https://huggingface.co/darkps/Leo-GenPrompt",
+  "created_at": "2026-08-28T06:14:21.000Z",
+  "updated_at": "2026-08-28T07:53:27.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "multilingual"
+  ],
+  "tags": [
+    "transformers",
+    "leo",
+    "prompt-generation",
+    "text-generation",
+    "custom-architecture",
+    "multilingual",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Dark Web AI Tools & Uncensored Models 2026 - Complete Guide | TorWiki",
+      "url": "https://torwiki.org/learn/darknet-ai/",
+      "snippet": "Complete guide to dark web AI: WormGPT, FraudGPT, GhostGPT, jailbreak techniques, uncensored LLMs, and AI services on Tor. Updated April 2026."
+    },
+    {
+      "title": "GenPrompt - AI Prompt Operating System for Prompts, Agents and Workflows",
+      "url": "https://gen-prompt.me/",
+      "snippet": "GenPrompt is an AI prompt operating system: a prompt generator, bot agent workspace, document assistant, calendar helper, skills hub, workflow builder, and prompt library for people who want better AI output without rebuilding every prompt from scratch."
+    },
+    {
+      "title": "Build AI Prompts, Agents, Workflows & Automation | droPrompt",
+      "url": "https://droprompt.com/",
+      "snippet": "droPrompt is an all-in-one AI studio to build prompts, agents, workflows, automations and skills for ChatGPT, Claude, Gemini and 60+ AI models. Free."
+    },
+    {
+      "title": "Best Dark AI Prompts - DocsBot",
+      "url": "https://docsbot.ai/prompts/tags?tag=Dark",
+      "snippet": "Best Dark AI Prompts Discover our extensive collection of the best Dark AI prompts, including top ChatGPT prompts, Anthropic prompts, and Gemini prompts."
+    },
+    {
+      "title": "LLM Leaderboard 2026: Compare 300+ Top AI Models by Intelligence, Speed ...",
+      "url": "https://llm-stats.com/leaderboards/llm-leaderboard",
+      "snippet": "The LLM Leaderboard — independent ranking of GPT, Claude, Gemini, Llama, DeepSeek and 300+ AI models by intelligence, speed and price. Filter by provider, license, modality and context window; sort by every benchmark. Composite LLM Stats Score updated continuously from public benchmarks and live API metrics."
+    }
+  ]
+}

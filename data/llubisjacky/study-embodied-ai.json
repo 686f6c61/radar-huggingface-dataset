@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "Llubisjacky/study-embodied-ai",
+  "slug": "llubisjacky-study-embodied-ai",
+  "author": "Llubisjacky",
+  "url": "https://huggingface.co/Llubisjacky/study-embodied-ai",
+  "created_at": "2026-08-28T08:04:37.000Z",
+  "updated_at": "2026-08-28T08:04:46.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "transformer",
+    "research-notes",
+    "embodied-ai",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 24832,
+  "parameters_human": "24832",
+  "storage_bytes": 99808,
+  "storage_human": "99808 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Llubisjacky (Jacky Lubis) - Hugging Face",
+      "url": "https://huggingface.co/Llubisjacky",
+      "snippet": "User profile of Jacky Lubis on Hugging Face"
+    },
+    {
+      "title": "felixlehmann/embodied-ai-study87 · Hugging Face",
+      "url": "https://huggingface.co/felixlehmann/embodied-ai-study87",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Embodied Intelligence | Springer Nature Link",
+      "url": "https://link.springer.com/rwe/10.1007/978-981-97-8440-0_8-1",
+      "snippet": "Embodied intelligence, or embodied AI, refers to artificial systems whose cognitive processes emerge from continuous sensorimotor interactions in real-world environments. This chapter explores its foundational theories, examines implementations across multiple..."
+    },
+    {
+      "title": "Embodied AI - Nature",
+      "url": "https://www.nature.com/collections/ibgfciaafb",
+      "snippet": "Rather than current AI technologies that focused primarily on disembodied cognition, for example language, vision, or games, Embodied AI strives to create more human-like intelligent agents ..."
+    },
+    {
+      "title": "[2509.20021] Embodied AI: From LLMs to World Models - arXiv.org",
+      "url": "https://arxiv.org/abs/2509.20021",
+      "snippet": "Embodied Artificial Intelligence (AI) is an intelligent system paradigm for achieving Artificial General Intelligence (AGI), serving as the cornerstone for various applications and driving the evolution from cyberspace to physical systems. Recent breakthroughs in Large Language Models (LLMs) and World Models (WMs) have drawn significant attention for embodied AI. On the one hand, LLMs empower ..."
+    }
+  ]
+}

@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "Joyceanggraini/prompt-engineering-review",
+  "slug": "joyceanggraini-prompt-engineering-review",
+  "author": "Joyceanggraini",
+  "url": "https://huggingface.co/Joyceanggraini/prompt-engineering-review",
+  "created_at": "2026-08-28T09:58:27.000Z",
+  "updated_at": "2026-08-28T09:58:36.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "transformer",
+    "research-notes",
+    "prompt-engineering",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 24832,
+  "parameters_human": "24832",
+  "storage_bytes": 99808,
+  "storage_human": "99808 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Prompt Engineering Techniques: The 2026 Enterprise Guide",
+      "url": "https://nextagile.ai/blogs/ai/prompt-engineering-techniques/",
+      "snippet": "Master 10 proven prompt engineering techniques with examples, comparison tables, ..."
+    },
+    {
+      "title": "Prompt Engineering Complete Guide: Write Better AI Prompts (2026)",
+      "url": "https://www.moreonlinetools.com/en/blog/prompt-engineering-complete-guide/",
+      "snippet": "Complete prompt engineering guide 2026. Learn how to write better AI prompts for ChatGPT, Claude, and Gemini. Covers role prompting, chain-of-thought, few-shot examples, and more. Free prompt optimizer included."
+    },
+    {
+      "title": "Prompt Engineering Guide | Prompt Engineering Guide",
+      "url": "https://www.promptingguide.ai/",
+      "snippet": "Motivated by the high interest in developing with LLMs, we have created this new prompt engineering guide that contains all the latest papers, advanced prompting techniques, learning guides, model-specific prompting guides, lectures, references, new LLM capabilities, and tools related to prompt engineering."
+    },
+    {
+      "title": "Unlocking the Potential of the Prompt Engineering Paradigm in ... - MDPI",
+      "url": "https://www.mdpi.com/2673-2688/6/9/206",
+      "snippet": "Prompt engineering (PE) has emerged as a transformative paradigm in software engineering (SE), leveraging large language models (LLMs) to support a wide range of SE tasks, including code generation, bug detection, and software traceability. This study conducts a systematic literature review (SLR) combined with a co-citation network analysis of 42 peer-reviewed journal articles to map key ..."
+    },
+    {
+      "title": "PDF arXiv:2406.06608v6 [cs.CL] 26 Feb 2025",
+      "url": "https://files.blogs.baruch.cuny.edu/wp-content/blogs.dir/6573/files/2025/12/Prompt-Engineering-Review.pdf",
+      "snippet": "Abstract Generative Artificial Intelligence (GenAI) systems are increasingly being deployed across diverse industries and research domains. Developers and end-users interact with these systems through the use of prompting and prompt engineering. Although prompt engineering is a widely adopted and extensively researched area, it suffers from conflicting terminology and a fragmented ontological ..."
+    }
+  ]
+}

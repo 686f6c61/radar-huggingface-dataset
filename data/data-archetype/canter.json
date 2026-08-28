@@ -5,7 +5,7 @@
   "author": "data-archetype",
   "url": "https://huggingface.co/data-archetype/canter",
   "created_at": "2026-07-28T11:34:13.000Z",
-  "updated_at": "2026-07-31T18:20:29.000Z",
+  "updated_at": "2026-08-27T22:24:00.000Z",
   "license": "mg-by-sa-2.0",
   "license_family": "unknown",
   "pipeline_tag": "text-to-image",
@@ -14,6 +14,7 @@
   "tags": [
     "canter",
     "safetensors",
+    "not-for-all-audiences",
     "flow-matching",
     "text-to-image",
     "photography",
@@ -26,10 +27,10 @@
   "likes": 13,
   "downloads_30d": 6259,
   "trending_score": 9,
-  "parameters": 2061680768,
-  "parameters_human": "2.06B",
-  "storage_bytes": 8946976321,
-  "storage_human": "8.9 GB",
+  "parameters": 2118317184,
+  "parameters_human": "2.12B",
+  "storage_bytes": 13210708068,
+  "storage_human": "13.2 GB",
   "base_model": "HuggingFaceTB/SmolLM2-360M",
   "formats": [
     "safetensors"

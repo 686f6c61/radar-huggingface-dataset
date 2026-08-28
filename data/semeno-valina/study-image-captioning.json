@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "semeno-valina/study-image-captioning",
+  "slug": "semeno-valina-study-image-captioning",
+  "author": "semeno-valina",
+  "url": "https://huggingface.co/semeno-valina/study-image-captioning",
+  "created_at": "2026-08-28T07:42:46.000Z",
+  "updated_at": "2026-08-28T07:42:56.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "transformer",
+    "research-notes",
+    "image-captioning",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 24832,
+  "parameters_human": "24832",
+  "storage_bytes": 99808,
+  "storage_human": "99808 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Image captioning · Hugging Face",
+      "url": "https://huggingface.co/docs/transformers/tasks/image_captioning",
+      "snippet": "Image captioning Image captioning is the task of predicting a caption for a given image. Common real world applications of it include aiding visually impaired people that can help them navigate through different situations. Therefore, image captioning helps to improve content accessibility for people by describing images to them."
+    },
+    {
+      "title": "Best 77 Image Captioning Models: Compare & Try Free - Roboflow",
+      "url": "https://playground.roboflow.com/models/task/captioning",
+      "snippet": "Which image captioning model is best for your project? Filter 77 models by license, compare size and price, and run 71 of them free on your own images."
+    },
+    {
+      "title": "Image Captioning: A Comprehensive Survey, Comparative Analysis of ...",
+      "url": "https://ieeexplore.ieee.org/document/10250630",
+      "snippet": "Image captioning is a research area that focuses on the development of algorithms and models that can automatically generate descriptive and coherent captions. This study provides a comprehensive overview of image captioning techniques, research gaps, and a comparative analysis of existing models."
+    },
+    {
+      "title": "A comprehensive survey on deep learning approaches for image captioning ...",
+      "url": "https://link.springer.com/article/10.1186/s40537-026-01377-w",
+      "snippet": "This paper presents a comprehensive literature survey on image captioning, covering research published between 2018 and 2025. It introduces a novel taxonomy to classify existing approaches into nine major categories, including attention-based models, transformer-based architectures, reinforcement learning, and Vision-Language Pretraining (VLP). A total of 174 peer-reviewed studies are ..."
+    },
+    {
+      "title": "Image Captioning Evaluation in the Age of Multimodal LLMs: Challenges ...",
+      "url": "https://arxiv.org/abs/2503.14604",
+      "snippet": "The evaluation of machine-generated image captions is a complex and evolving challenge. With the advent of Multimodal Large Language Models (MLLMs), image captioning has become a core task, increasing the need for robust and reliable evaluation metrics. This survey provides a comprehensive overview of advancements in image captioning evaluation, analyzing the evolution, strengths, and ..."
+    }
+  ]
+}

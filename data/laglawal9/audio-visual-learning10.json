@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "Laglawal9/audio-visual-learning10",
+  "slug": "laglawal9-audio-visual-learning10",
+  "author": "Laglawal9",
+  "url": "https://huggingface.co/Laglawal9/audio-visual-learning10",
+  "created_at": "2026-08-28T07:15:35.000Z",
+  "updated_at": "2026-08-28T07:15:44.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "transformer",
+    "research-notes",
+    "audio-visual-learning",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 33088,
+  "parameters_human": "33088",
+  "storage_bytes": 132832,
+  "storage_human": "132832 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Models - Hugging Face",
+      "url": "https://huggingface.co/models?other=concise-analytical",
+      "snippet": "Laglawal9/paper_015183783_visual_question_answering Visual Question Answering •Updated about 6 hours ago"
+    },
+    {
+      "title": "Models - Hugging Face",
+      "url": "https://huggingface.co/models?other=varied-mixed",
+      "snippet": "Laglawal9/paper_015183783_visual_question_answering Visual Question Answering •Updated 2 days ago"
+    },
+    {
+      "title": "ML Visualizer - Interactive AI & Machine Learning Demonstrations",
+      "url": "https://mlvisualizer.org/",
+      "snippet": "Explore neural networks, deep learning, and AI through interactive visualizations. Learn perceptrons, autoencoders, transformers, GANs, and more with real-time demos."
+    },
+    {
+      "title": "Audio-Visual Intelligence in Large Foundation Models",
+      "url": "https://arxiv.org/abs/2605.04045",
+      "snippet": "Audio-Visual Intelligence (AVI) has emerged as a central frontier in artificial intelligence, bridging auditory and visual modalities to enable machines that can perceive, generate, and interact in the multimodal real world. In the era of large foundation models, joint modeling of audio and vision has become increasingly crucial, i.e., not only for understanding but also for controllable ..."
+    },
+    {
+      "title": "[2409.12319] Large Language Models are Strong Audio-Visual Speech ...",
+      "url": "https://arxiv.org/abs/2409.12319",
+      "snippet": "Multimodal large language models (MLLMs) have recently become a focal point of research due to their formidable multimodal understanding capabilities. For example, in the audio and speech domains, an LLM can be equipped with (automatic) speech recognition (ASR) abilities by just concatenating the audio tokens, computed with an audio encoder, and the text tokens to achieve state-of-the-art ..."
+    }
+  ]
+}

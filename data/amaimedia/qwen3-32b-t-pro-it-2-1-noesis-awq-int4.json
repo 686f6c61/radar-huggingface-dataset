@@ -5,7 +5,7 @@
   "author": "AMAImedia",
   "url": "https://huggingface.co/AMAImedia/Qwen3-32B-T-pro-it-2.1-NOESIS-AWQ-INT4",
   "created_at": "2026-04-16T10:24:50.000Z",
-  "updated_at": "2026-08-25T16:46:30.000Z",
+  "updated_at": "2026-08-27T19:26:40.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-generation",

@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "chijichan/37ac",
+  "slug": "chijichan-37ac",
+  "author": "chijichan",
+  "url": "https://huggingface.co/chijichan/37ac",
+  "created_at": "2026-08-28T07:27:20.000Z",
+  "updated_at": "2026-08-28T07:29:04.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 45153059,
+  "storage_human": "45 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - chijichan/37ACUI",
+      "url": "https://github.com/chijichan/37ACUI",
+      "snippet": "Contribute to chijichan/37ACUI development by creating an account on GitHub."
+    },
+    {
+      "title": "37ACUI/README.md at main · chijichan/37ACUI · GitHub",
+      "url": "https://github.com/chijichan/37ACUI/blob/main/README.md",
+      "snippet": "Contribute to chijichan/37ACUI development by creating an account on GitHub."
+    },
+    {
+      "title": "AI Models | Civitai",
+      "url": "https://civitai.com/models",
+      "snippet": "Browse thousands of free Stable Diffusion & Flux models, LoRAs, checkpoints, and embeddings. The largest collection of AI image generation resources."
+    },
+    {
+      "title": "Chii-chan - AI Art Model | PixAI",
+      "url": "https://pixai.art/en/model/1874319141337009920",
+      "snippet": "Generate stunning anime art with the &#x27;Chii-chan&#x27; model on PixAI. Browse artworks made with this model and try it free."
+    },
+    {
+      "title": "37ac - 欢迎来到二次元角色识别小屋",
+      "url": "http://www.322337.xyz/",
+      "snippet": "37AC 是一款面向二次元爱好者的 AI 角色识别平台，支持上传图片快速识别动漫与游戏角色。"
+    }
+  ]
+}

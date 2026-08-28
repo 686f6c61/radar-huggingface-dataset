@@ -1,0 +1,78 @@
+{
+  "schema": 1,
+  "id": "Archfiendgaming/MiniMax-H3",
+  "slug": "archfiendgaming-minimax-h3",
+  "author": "Archfiendgaming",
+  "url": "https://huggingface.co/Archfiendgaming/MiniMax-H3",
+  "created_at": "2026-08-28T06:22:51.000Z",
+  "updated_at": "2026-08-28T06:22:52.000Z",
+  "license": "minimax-h3-community-license-agreement",
+  "license_family": "unknown",
+  "pipeline_tag": "image-text-to-video",
+  "library": "minimax-h3",
+  "languages": [],
+  "tags": [
+    "minimax-h3",
+    "diffusers",
+    "safetensors",
+    "text-to-video",
+    "image-to-video",
+    "image-text-to-video",
+    "video-to-video",
+    "text-to-audio-video",
+    "image-to-audio-video",
+    "image-text-to-audio-video",
+    "video-to-audio-video",
+    "audio-to-audio-video",
+    "audio-video-generation",
+    "multimodal",
+    "synchronized-audio-video",
+    "reference-to-audio-video",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 354016018214,
+  "storage_human": "354.0 GB",
+  "base_model": null,
+  "formats": [
+    "diffusers",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - MiniMax-AI/MiniMax-H3 · GitHub",
+      "url": "https://github.com/MiniMax-AI/MiniMax-H3",
+      "snippet": "Contribute to MiniMax-AI/MiniMax-H3 development by creating an account on GitHub."
+    },
+    {
+      "title": "MiniMax H3 Open-Source AI Video Model | Tutorials, Deployment & Workflows",
+      "url": "https://design.minimax.io/h3",
+      "snippet": "Curated MiniMax H3 video model tutorials, open-source deployment guides, creator workflows and industry insights. Updated continuously."
+    },
+    {
+      "title": "MiniMaxAI/MiniMax-H3 · Hugging Face",
+      "url": "https://huggingface.co/MiniMaxAI/MiniMax-H3",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "MiniMax-H3 - a MiniMaxAI Collection - Hugging Face",
+      "url": "https://huggingface.co/collections/MiniMaxAI/minimax-h3",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GitHub - MiniMax-AI/awesome-minimax-h3-integration",
+      "url": "https://github.com/MiniMax-AI/awesome-minimax-h3-integration",
+      "snippet": "Contribute to MiniMax-AI/awesome-minimax-h3-integration development by creating an account on GitHub."
+    }
+  ]
+}

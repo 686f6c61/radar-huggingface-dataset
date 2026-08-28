@@ -1,0 +1,79 @@
+{
+  "schema": 1,
+  "id": "rbinrs/GLM-5.3-Flash-ABLITERATED-NVFP4",
+  "slug": "rbinrs-glm-5-3-flash-abliterated-nvfp4",
+  "author": "rbinrs",
+  "url": "https://huggingface.co/rbinrs/GLM-5.3-Flash-ABLITERATED-NVFP4",
+  "created_at": "2026-08-28T08:04:41.000Z",
+  "updated_at": "2026-08-28T08:04:42.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "safetensors",
+    "glm5_next",
+    "abliterated",
+    "uncensored",
+    "crack",
+    "refusal-removed",
+    "glm",
+    "moe",
+    "nvfp4",
+    "vision",
+    "mtp",
+    "en",
+    "base_model:zai-org/GLM-5.3-Flash",
+    "base_model:quantized:zai-org/GLM-5.3-Flash",
+    "license:mit",
+    "8-bit",
+    "modelopt",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 165496249182,
+  "parameters_human": "165.50B",
+  "storage_bytes": 194692661135,
+  "storage_human": "194.7 GB",
+  "base_model": "zai-org/GLM-5.3-Flash",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "dealignai/GLM-5.3-Flash-ABLITERATED-NVFP4 · Hugging Face",
+      "url": "https://huggingface.co/dealignai/GLM-5.3-Flash-ABLITERATED-NVFP4",
+      "snippet": "OpenAI-compatible chat/completions, tools, and reasoning work out of the box. The vision tower and MTP head are retained unmodified — serve them with a vLLM build whose GLM-5.3-Flash multimodal / MTP support is enabled. Credits dealignai — CRACK abliteration research & release · Twitter @dealignai @jordanschenck — compute Disclaimer This model has had its safety guardrails removed and ..."
+    },
+    {
+      "title": "Qwen 3.8 Flash vs GLM 5.3 Flash: Which Open Source Model Works for NSFW ...",
+      "url": "https://www.hackaigc.com/blog/qwen-38-vs-glm-53-nsfw-uncensored-2026",
+      "snippet": "We tested Qwen 3.8-27B and GLM 5.3 Flash for uncensored NSFW use. Compare abliteration support, hardware requirements, context windows, and real-world performance in this hands-on comparison."
+    },
+    {
+      "title": "GLM-5.3-Flash - lmstudio.ai",
+      "url": "https://lmstudio.ai/models/glm-5.3-flash",
+      "snippet": "GLM-5.3-Flash is Z.ai&#x27;s first natively multimodal model in the GLM-5 series. It is a 320B Mixture-of-Experts model with 18B active parameters, built for coding, agentic work, and visual tasks, and released under the MIT License."
+    },
+    {
+      "title": "Z.ai Releases GLM-5.3-Flash: A 320B-A18B Natively Multimodal MoE With a ...",
+      "url": "https://www.marktechpost.com/2026/08/26/z-ai-releases-glm-5-3-flash-a-320b-a18b-natively-multimodal-moe-with-a-1m-token-context/",
+      "snippet": "Z.ai has released GLM-5.3-Flash, the first natively multimodal model in the GLM-5 series and the cheapest capable coding model the lab has shipped. It is a mixture-of-experts model with 320B total parameters and 18B active per token, a 1,048,576-token context window, and image and video input — released under an MIT license with weights on Hugging Face. According to Z.ai reports, it beats ..."
+    },
+    {
+      "title": "GLM 5.3 Flash | Model APIs - runinfra.ai",
+      "url": "https://runinfra.ai/inference-api/glm-5-3-flash",
+      "snippet": "GLM 5.3 Flash is an LLM listed in RunInfra Model APIs. RunInfra serves it as zai-org/GLM-5.3-Flash at $0.10 per 1M input tokens and $0.40 per 1M output tokens. Its context window is 1,048,576 tokens. The API provides OpenAI-compatible chat completions."
+    }
+  ]
+}

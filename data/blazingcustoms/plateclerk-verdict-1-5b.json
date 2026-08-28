@@ -1,0 +1,81 @@
+{
+  "schema": 1,
+  "id": "BlazingCustoms/plateclerk-verdict-1.5b",
+  "slug": "blazingcustoms-plateclerk-verdict-1-5b",
+  "author": "BlazingCustoms",
+  "url": "https://huggingface.co/BlazingCustoms/plateclerk-verdict-1.5b",
+  "created_at": "2026-08-28T06:05:24.000Z",
+  "updated_at": "2026-08-28T06:10:12.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gguf",
+    "qwen2",
+    "text-generation",
+    "text-classification",
+    "vanity-plates",
+    "dmv",
+    "lora",
+    "not-for-all-audiences",
+    "conversational",
+    "en",
+    "dataset:DarwinAnim8or/DMV-Plate-Review",
+    "base_model:Qwen/Qwen2.5-1.5B-Instruct",
+    "base_model:finetune:Qwen/Qwen2.5-1.5B-Instruct",
+    "license:apache-2.0",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1543714304,
+  "parameters_human": "1.54B",
+  "storage_bytes": 10012718032,
+  "storage_human": "10.0 GB",
+  "base_model": "Qwen/Qwen2.5-1.5B-Instruct",
+  "formats": [
+    "gguf",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "BlazingCustoms (Blazing Customs) - Hugging Face",
+      "url": "https://huggingface.co/BlazingCustoms",
+      "snippet": "Org profile for Blazing Customs on Hugging Face, the AI community building the future."
+    },
+    {
+      "title": "LLM Leaderboard & AI Model Benchmarks — August 2026",
+      "url": "https://benchlm.ai/",
+      "snippet": "LLM Leaderboard & AI Model Benchmarks — August 2026 Compare frontier AI models by quality, cost, and context. 105 Supported and 121 Estimated models among 403 tracked LLMs — 406 benchmarks, real pricing, and runtime data in one place."
+    },
+    {
+      "title": "AI Copyright Lawsuits Tracker 2026: Live Case Status",
+      "url": "https://axis-intelligence.com/ai-copyright-lawsuits-tracker/",
+      "snippet": "AI defamation, deepfake, right-of-publicity, and chatbot product-liability litigation. Distinct legal categories with different elements. Mixing them inflates case counts and makes cross-tracker comparison meaningless. Aggregate \"total AI litigation exposure\" figures."
+    },
+    {
+      "title": "Models - Hugging Face",
+      "url": "https://huggingface.co/models?other=verified-generation",
+      "snippet": "Explore machine learning models. 2 Base only Inference AvailableInference Edit filters Sort: Trending Active filters: verified-generation Clear all"
+    },
+    {
+      "title": "ChatGPT: Chat, Work, Create & Code with AI",
+      "url": "https://chatgpt.com/",
+      "snippet": "Use ChatGPT to answer questions, write, create images, complete work, and code—all in one place. Get started for free or download the app."
+    }
+  ]
+}

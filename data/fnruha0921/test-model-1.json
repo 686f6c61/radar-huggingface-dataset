@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "fnruha0921/test-model-1",
+  "slug": "fnruha0921-test-model-1",
+  "author": "fnruha0921",
+  "url": "https://huggingface.co/fnruha0921/test-model-1",
+  "created_at": "2026-08-28T07:29:26.000Z",
+  "updated_at": "2026-08-28T07:29:26.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "fnruha0921 (fnruha0921) - Hugging Face",
+      "url": "https://huggingface.co/fnruha0921",
+      "snippet": "Interested in diffusion-based LLMs, lightweight models (SLMs), TTS, and custom dataset development"
+    },
+    {
+      "title": "fnruha0921 (fnruha0921) - Hugging Face",
+      "url": "https://huggingface.co/fnruha0921/models",
+      "snippet": "AI & ML interests ... Recent Activity updated a model about 3 hours ago ... published a model about 4 hours ago ... liked a model about 1 month ago"
+    },
+    {
+      "title": "Kushagra Sh. - Kaggle",
+      "url": "https://www.kaggle.com/fnruha0921",
+      "snippet": "Computer science student specializing in ML/AI, fueled by coffee and curiosity. I love transforming data into knowledge and applying classroom concepts to real-world problems."
+    },
+    {
+      "title": "Maintainer «fnruha0921»",
+      "url": "https://llm-explorer.com/list/?mtr=fnruha0921",
+      "snippet": "A Curated List of the Large and Small Language Models (Open-Source LLMs and SLMs). Maintainer «fnruha0921» with Dynamic Sorting and Filtering."
+    },
+    {
+      "title": "Qwen 3.5 9B Fable5 Composer2.5 Ui Design by fnruha0921",
+      "url": "https://llm-explorer.com/model/fnruha0921%2FQwen-3.5-9B-fable5-composer2.5-ui-design,2UtD62C3w93R0lHj7FcSl3",
+      "snippet": "Qwen 3.5 9B Fable5 Composer2.5 Ui Design is an open-source language model by fnruha0921. Features: 9b LLM, VRAM: 18.8GB, LLM Explorer Score: 0.24."
+    }
+  ]
+}

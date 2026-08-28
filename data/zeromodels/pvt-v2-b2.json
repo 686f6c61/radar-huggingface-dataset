@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "zeromodels/pvt-v2-b2",
+  "slug": "zeromodels-pvt-v2-b2",
+  "author": "zeromodels",
+  "url": "https://huggingface.co/zeromodels/pvt-v2-b2",
+  "created_at": "2026-08-28T01:53:18.000Z",
+  "updated_at": "2026-08-28T01:53:36.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-classification",
+  "library": "zeromodels",
+  "languages": [],
+  "tags": [
+    "zeromodels",
+    "keras",
+    "image-classification",
+    "pvt-v2",
+    "backbone",
+    "arxiv:2106.13797",
+    "pytorch",
+    "jax",
+    "tf",
+    "base_model:OpenGVLab/pvt_v2_b2",
+    "base_model:finetune:OpenGVLab/pvt_v2_b2",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 102268272,
+  "storage_human": "102 MB",
+  "base_model": "OpenGVLab/pvt_v2_b2",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "zeromodels/pvt-v2-b2 · Hugging Face",
+      "url": "https://huggingface.co/zeromodels/pvt-v2-b2",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "zeromodels/pvt-v2-b2-linear · Hugging Face",
+      "url": "https://huggingface.co/zeromodels/pvt-v2-b2-linear",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "pvt_v2_b2 huggingface.co api & OpenGVLab pvt_v2_b2 github AI Model ...",
+      "url": "https://www.toolify.ai/ai-model/opengvlab-pvt-v2-b2",
+      "snippet": "pvt_v2_b2 huggingface.co is an AI model on huggingface.co that provides pvt_v2_b2&#x27;s model effect (), which can be used instantly with this OpenGVLab pvt_v2_b2 model. huggingface.co supports a free trial of the pvt_v2_b2 model, and also provides paid use of the pvt_v2_b2. Support call pvt_v2_b2 model through api, including Node.js, Python, http."
+    },
+    {
+      "title": "Releases · whai362/PVT - GitHub",
+      "url": "https://github.com/whai362/PVT/releases",
+      "snippet": "Official implementation of PVT series. Contribute to whai362/PVT development by creating an account on GitHub."
+    },
+    {
+      "title": "PVT/classification at v2 · whai362/PVT · GitHub",
+      "url": "https://github.com/whai362/PVT/tree/v2/classification",
+      "snippet": "Official implementation of PVT series. Contribute to whai362/PVT development by creating an account on GitHub."
+    }
+  ]
+}

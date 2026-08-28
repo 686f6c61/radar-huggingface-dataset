@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "ivar01/carbon-audit-model",
+  "slug": "ivar01-carbon-audit-model",
+  "author": "ivar01",
+  "url": "https://huggingface.co/ivar01/carbon-audit-model",
+  "created_at": "2026-08-28T10:29:42.000Z",
+  "updated_at": "2026-08-28T10:39:13.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:mit",
+    "co2_eq_emissions",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "24f1001329/carbon-audit-model · Hugging Face",
+      "url": "https://huggingface.co/24f1001329/carbon-audit-model",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "24f1002603/carbon-audit-model · Hugging Face",
+      "url": "https://huggingface.co/24f1002603/carbon-audit-model",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Sustainable AI: Measuring and Reducing Carbon Footprint in Model ...",
+      "url": "https://www.researchgate.net/publication/392727729_Sustainable_AI_Measuring_and_Reducing_Carbon_Footprint_in_Model_Training_and_Deployment",
+      "snippet": "This research article addresses the escalating environmental impact of Artificial Intelligence (AI) and Machine Learning (ML) systems, focusing specifically on the carbon footprint generated ..."
+    },
+    {
+      "title": "Tracking_Emissions_from_ML_Models_ (Revised).ipynb - Colab",
+      "url": "https://colab.research.google.com/github/climatechange-ai-tutorials/tracking-ml-emissions/blob/main/Tracking_Emissions_from_ML_Models_(Revised).ipynb",
+      "snippet": "An emerging group of Green AI researchers formalizing Domain-Specific Languages (DSLs) noticied that while original model cards handle ethics and performance well, they lack structured environmental tracking."
+    },
+    {
+      "title": "Training Green AI Models Using Elite Samples - arXiv.org",
+      "url": "https://arxiv.org/pdf/2402.12010",
+      "snippet": "Abstract—The substantial increase in AI model training has considerable environmental implications, mandating more energy-eficient and sustainable AI practices. On one hand, data-centric approaches show great potential towards training energy-eficient AI models. On the other hand, instance selection methods demonstrate the capability of training AI models with minimised training sets and ..."
+    }
+  ]
+}

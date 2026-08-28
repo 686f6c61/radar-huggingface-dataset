@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "stgallenquants/OpenThinker-7B",
+  "slug": "stgallenquants-openthinker-7b",
+  "author": "stgallenquants",
+  "url": "https://huggingface.co/stgallenquants/OpenThinker-7B",
+  "created_at": "2026-08-28T11:46:20.000Z",
+  "updated_at": "2026-08-28T11:46:20.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen2",
+    "text-generation",
+    "llama-factory",
+    "full",
+    "generated_from_trainer",
+    "conversational",
+    "dataset:open-thoughts/open-thoughts-114k",
+    "arxiv:2506.04178",
+    "base_model:Qwen/Qwen2.5-7B-Instruct",
+    "base_model:finetune:Qwen/Qwen2.5-7B-Instruct",
+    "license:apache-2.0",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 7615616512,
+  "parameters_human": "7.62B",
+  "storage_bytes": 15242701112,
+  "storage_human": "15.2 GB",
+  "base_model": "Qwen/Qwen2.5-7B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "open-thoughts/OpenThinker-7B · Hugging Face",
+      "url": "https://huggingface.co/open-thoughts/OpenThinker-7B",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "shaffhausenquant/OpenThinker-7B · Hugging Face",
+      "url": "https://huggingface.co/shaffhausenquant/OpenThinker-7B",
+      "snippet": "OpenThinker-7B This model is a fine-tuned version of Qwen/Qwen2.5-7B-Instruct on the OpenThoughts-114k dataset dataset. The dataset is derived by distilling DeepSeek-R1 using the data pipeline available on github. More info about the dataset can be found on the dataset card at OpenThoughts-114k dataset."
+    },
+    {
+      "title": "OpenThinker-7B: Text-to-Text model — overview, use cases, alternatives",
+      "url": "https://www.aimodels.fyi/models/huggingFace/openthinker-7b-open-thoughts",
+      "snippet": "Overview OpenThinker-7B is a reasoning-focused language model built by open-thoughts through fine-tuning Qwen2.5-7B-Instruct on the OpenThoughts-114k dataset, which was created by distilling DeepSeek-R1. The model contains 7 billion parameters and runs on the Transformers library (version 4.46.1). Training consumed 32 H100 GPUs across four 8-node machines for 20 hours with a total batch size ..."
+    },
+    {
+      "title": "OpenThinker 7B — Capabilities, Pricing & Performance - Antbase",
+      "url": "https://antbase.ai/models/openthinker-7b",
+      "snippet": "Overview OpenThinker 7B is a efficient model from Featherless with a 33K context window, supporting advanced reasoning. Available through ANT&#x27;s unified API."
+    },
+    {
+      "title": "OpenThinker 7B — 7B Dense LLM | FitMyLLM",
+      "url": "https://www.fitmyllm.com/model/openthinker-7b",
+      "snippet": "OpenThinker 7B: 7B parameters, 31K context, reasoning, math. 6 benchmarks, 6 quantizations. VRAM requirements, speed estimates, and Ollama commands."
+    }
+  ]
+}

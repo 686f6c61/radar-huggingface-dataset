@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "dreamdifferent/vam-cross-level4-panda-robosuite-widowx-texture-teleopaligned-videolora200-action-dec-059ae97cbb",
+  "slug": "dreamdifferent-vam-cross-level4-panda-robosuite-widowx-texture-teleopaligned-videolora200-action-dec-059ae97cbb",
+  "author": "dreamdifferent",
+  "url": "https://huggingface.co/dreamdifferent/vam-cross-level4-panda-robosuite-widowx-texture-teleopaligned-videolora200-action-dec-059ae97cbb",
+  "created_at": "2026-08-28T10:03:23.000Z",
+  "updated_at": "2026-08-28T10:04:00.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "robotics",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "mimic-video",
+    "robotics",
+    "action-prediction",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1000269372,
+  "storage_human": "1.0 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "dreamdifferent/vam-cross-level4-panda-robosuite-widowx-texture-video ...",
+      "url": "https://huggingface.co/dreamdifferent/vam-cross-level4-panda-robosuite-widowx-texture-video-lora-iter-200",
+      "snippet": "dreamdifferent / vam-cross-level4-panda-robosuite-widowx-texture-video-lora-iter-200 like 0 Follow dreamdifferent 4 Robotics mimic-video video-generation lora Model card FilesFiles and versions xet Community Copy to bucket new VAM-Cross two-camera MimicVideo Video2World LoRA Required initial backbone Supporting runtime artifacts Training data ..."
+    },
+    {
+      "title": "Resources | Virt-A-Mate Hub",
+      "url": "https://hub.virtamate.com/resources/",
+      "snippet": "Free music, voice, and sound effect audio files and asset bundles"
+    },
+    {
+      "title": "robosuite | robosuite: A Modular Simulation Framework and Benchmark for ...",
+      "url": "https://robosuite.ai/",
+      "snippet": "robosuite is a simulation framework powered by the MuJoCo physics engine for robot learning. It also offers a suite of benchmark environments for reproducible research."
+    },
+    {
+      "title": "Free - Virt-A-Mate Hub",
+      "url": "https://hub.virtamate.com/resources/categories/free.4/",
+      "snippet": "Free music, voice, and sound effect audio files and asset bundles"
+    },
+    {
+      "title": "Luma | AI Agents for Creative Work",
+      "url": "https://lumalabs.ai/",
+      "snippet": "Luma AI is the creative AI platform for video generation and image creation. Powered by the world&#x27;s leading video generation models, Ray and Uni, and creative agents handling end-to-end workflows."
+    }
+  ]
+}

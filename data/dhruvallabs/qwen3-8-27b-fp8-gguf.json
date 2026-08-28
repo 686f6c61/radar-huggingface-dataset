@@ -1,0 +1,81 @@
+{
+  "schema": 1,
+  "id": "DhruvalLabs/Qwen3.8-27B-FP8-GGUF",
+  "slug": "dhruvallabs-qwen3-8-27b-fp8-gguf",
+  "author": "DhruvalLabs",
+  "url": "https://huggingface.co/DhruvalLabs/Qwen3.8-27B-FP8-GGUF",
+  "created_at": "2026-08-28T05:50:41.000Z",
+  "updated_at": "2026-08-28T05:50:52.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "base_model:Qwen/Qwen3.8-27B",
+    "region:us",
+    "vlm",
+    "fp8",
+    "base_model:quantized:Qwen/Qwen3.8-27B",
+    "quantized",
+    "multimodal",
+    "license:apache-2.0",
+    "vision",
+    "safetensors",
+    "conversational",
+    "qwen3_5",
+    "image-text-to-text",
+    "en",
+    "base_model:Qwen/Qwen3.8-27B-FP8",
+    "base_model:quantized:Qwen/Qwen3.8-27B-FP8",
+    "endpoints_compatible"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 0,
+  "parameters_human": null,
+  "storage_bytes": 32832096,
+  "storage_human": "33 MB",
+  "base_model": "Qwen/Qwen3.8-27B-FP8",
+  "formats": [
+    "gguf",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Qwen/Qwen3.8-27B · Hugging Face",
+      "url": "https://huggingface.co/Qwen/Qwen3.8-27B",
+      "snippet": "MathVision: Qwen3.8-27B is evaluated using the fixed prompt: \"Please reason step by step, and put your final answer within &#92;boxed {}.\" For the remaining models, we report the higher score from two prompt variants—one with and one without the &#92;boxed {} formatting requirement."
+    },
+    {
+      "title": "DhruvalLabs/Qwen3.8-27B-GGUF · Hugging Face",
+      "url": "https://huggingface.co/DhruvalLabs/Qwen3.8-27B-GGUF",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Qwen3.8-27B - GitHub",
+      "url": "https://github.com/AlibabaCloud-Official/Qwen3.8-27B",
+      "snippet": "Welcome to the repository for Qwen3.8-27B —the latest native multimodal dense open-weight model released by Alibaba&#x27;s Qwen team. Delivering top-tier performance for local hardware, Qwen3.8-27B excels at coding, agentic workflows, and office automation tasks."
+    },
+    {
+      "title": "Qwen/Qwen3.8-27B | vLLM Recipes",
+      "url": "https://recipes.vllm.ai/Qwen/Qwen3.8-27B",
+      "snippet": "The official Qwen/Qwen3.8-27B-FP8 checkpoint serves directly on a 950PR — no offline re-quantization and no --quantization ascend. vLLM Ascend reads quant_method: fp8 and weight_block_size straight from the checkpoint, expands the weight_scale_inv tiles at load time and re-quantizes to MXFP8 on 950."
+    },
+    {
+      "title": "How to Run Qwen 3.8 27B Locally: Ollama, GGUF, and ... - yottalabs.ai",
+      "url": "https://www.yottalabs.ai/post/how-to-run-qwen-3-8-27b-locally-ollama-gguf-single-gpu-2026",
+      "snippet": "Qwen3.8-27B is out: Apache 2.0, a surprise vision encoder, and 262k context. Which quant fits your VRAM, the Ollama and GGUF routes, and how to be generating tokens today."
+    }
+  ]
+}

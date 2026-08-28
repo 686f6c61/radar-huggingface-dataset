@@ -1,0 +1,86 @@
+{
+  "schema": 1,
+  "id": "patronus-studio/wolf-defender-prompt-injection-small",
+  "slug": "patronus-studio-wolf-defender-prompt-injection-small",
+  "author": "patronus-studio",
+  "url": "https://huggingface.co/patronus-studio/wolf-defender-prompt-injection-small",
+  "created_at": "2026-04-15T09:43:10.000Z",
+  "updated_at": "2026-08-28T08:34:39.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": null,
+  "languages": [
+    "de",
+    "en"
+  ],
+  "tags": [
+    "joblib",
+    "onnx",
+    "safetensors",
+    "modernbert",
+    "prompt-injection",
+    "jailbreak-detection",
+    "guardrails",
+    "injection-detection",
+    "security",
+    "llm-security",
+    "ai-safety",
+    "ai-agent-security",
+    "patronus",
+    "multilingual",
+    "edge-ai",
+    "v2",
+    "text-classification",
+    "de",
+    "en",
+    "base_model:jhu-clsp/mmBERT-small",
+    "base_model:quantized:jhu-clsp/mmBERT-small",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 10,
+  "downloads_30d": 2347,
+  "trending_score": 0,
+  "parameters": 140642306,
+  "parameters_human": "140.6M",
+  "storage_bytes": 3482675002,
+  "storage_human": "3.5 GB",
+  "base_model": "jhu-clsp/mmBERT-small",
+  "formats": [
+    "onnx",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "README.md · patronus-studio/wolf-defender-prompt-injection-small at main",
+      "url": "https://huggingface.co/patronus-studio/wolf-defender-prompt-injection-small/blob/main/README.md",
+      "snippet": "Model Card for Wolf Defender Prompt-Injection Detector (Small) High-Performance Prompt Injection Detection Model for Real-World AI Security Wolf-Defender is a Multilingual ModernBERT-based (mmBERT) classifier designed to detect prompt injection attacks in LLM systems. It was trained with a context length of 2048 tokens."
+    },
+    {
+      "title": "Today we&#x27;re releasing our first security model: Wolf Defender",
+      "url": "https://patronus.studio/posts/today-we%E2%80%99re-releasing-our-first-security-model-wolf-defender",
+      "snippet": "We believe that core AI security tooling should be open and accessible. That is why we are releasing Wolf Defender, a prompt-injection detection model trained on only ~5% of our full training dataset. Despite its small size, the model already outperforms several existing open-source detectors across multiple benchmarks (see evaluation below)."
+    },
+    {
+      "title": "patronus-studio/wolf-defender-prompt-injection-small-edge at main",
+      "url": "https://huggingface.co/patronus-studio/wolf-defender-prompt-injection-small-edge/tree/main",
+      "snippet": "Patronus Protect 10 Text Classification ONNX German English modernbert prompt-injection jailbreak-detection guardrails security llm-security ai-safety ai-agent-security patronus multilingual quantized edge License:apache-2.0 Model card FilesFiles and versions xet Community Copy to bucket new main wolf-defender-prompt-injection-small-edge 555 MB ..."
+    },
+    {
+      "title": "Wolf Defender Prompt Injection Small: Specs, Hardware & Live AI Battle ...",
+      "url": "https://www.modelvault.space/models/patronus-studio-wolf-defender-prompt-injection-small",
+      "snippet": "Wolf Defender Prompt Injection Small is a high-dimensional text embedding and semantic retrieval model developed by Patronus Studio. Tailored for Retrieval-Augmented Generation (RAG), vector database indexing, semantic similarity matching, and cross-lingual passage re-ranking."
+    },
+    {
+      "title": "Our AI-Security Model Zoo Is Now Open Source - Medium",
+      "url": "https://medium.com/@PatronusProtect/our-ai-security-model-zoo-is-now-open-source-41654d5d7dc6",
+      "snippet": "Our AI-Security Model Zoo Is Now Open Source Six families of small, bilingual ai security classifiers, from prompt-injection detection to agent tool-call analysis, now on Hugging Face Anyone ..."
+    }
+  ]
+}

@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "alexandermikhailov/review-few-shot-multimodal",
+  "slug": "alexandermikhailov-review-few-shot-multimodal",
+  "author": "alexandermikhailov",
+  "url": "https://huggingface.co/alexandermikhailov/review-few-shot-multimodal",
+  "created_at": "2026-08-28T09:26:00.000Z",
+  "updated_at": "2026-08-28T09:26:09.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "transformer",
+    "research-notes",
+    "few-shot-multimodal",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 24832,
+  "parameters_human": "24832",
+  "storage_bytes": 99808,
+  "storage_human": "99808 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Dmitry-kozlov/few-shot-multimodal-dev · Hugging Face",
+      "url": "https://huggingface.co/Dmitry-kozlov/few-shot-multimodal-dev",
+      "snippet": "Dmitry-kozlov / few-shot-multimodal-dev like 0 Safetensors transformer research-notes few-shot-multimodal License:cc-by-4. Model card FilesFiles and versions xet Community Copy to bucket new Notes on Few Shot Multimodal Repository summary What is covered How to read this repository Scope and limitations Files License"
+    },
+    {
+      "title": "Benchmarking Foundation and Large Language Models for Few-Shot Medical ...",
+      "url": "https://arxiv.org/html/2607.27856v2",
+      "snippet": "To illustrate this challenge, consider a practitioner who has a few medical images with masks for a target ROI and seeks a model that can segment the same ROI in query images. A natural first step is to consult an AI assistant for a suitable technical solution. As an informal probe, we prompted eight publicly accessible AI assistants."
+    },
+    {
+      "title": "A review on NLP zero-shot and few-shot learning: methods and ...",
+      "url": "https://link.springer.com/article/10.1007/s42452-025-07225-5",
+      "snippet": "Zero-shot and few-shot learning techniques in natural language processing (NLP), this comprehensive review traces their evolution from traditional methods to cutting-edge approaches like transfer learning and pre-trained language models, semantic embedding, attribute-based approaches, generative models for data augmentation in zero-shot learning, and meta-learning, model-agnostic meta-learning ..."
+    },
+    {
+      "title": "Microsoft reportedly tests China&#x27;s Kimi K3 AI model for Copilot and ...",
+      "url": "https://techstartups.com/2026/07/20/microsoft-reportedly-tests-chinas-kimi-k3-ai-model-for-copilot-and-azure-as-ai-race-heats-up/",
+      "snippet": "Microsoft is testing a Chinese AI model that could end up handling tasks inside Copilot, a move that shows just how quickly the balance of power in artificial intelligence is shifting. According to multiple reports, the company is evaluating Moonshot AI&#x27;s Kimi K3 for future Copilot workloads and preparing to bring the open-weight model to"
+    },
+    {
+      "title": "Few-Shot Learning for Medical Image Segmentation: A Review and ...",
+      "url": "https://dl.acm.org/doi/10.1145/3746224",
+      "snippet": "Medical image segmentation plays a crucial role in assisting clinicians with diagnosing critical medical conditions. In deep learning, few-shot learning methods aim to replicate human learning by leveraging fewer examples for determining a prediction for ..."
+    }
+  ]
+}

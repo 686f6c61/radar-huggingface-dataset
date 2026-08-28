@@ -5,7 +5,7 @@
   "author": "Saliha1845",
   "url": "https://huggingface.co/Saliha1845/code-switching-codesaviours-si26-saliha",
   "created_at": "2026-08-12T08:58:14.000Z",
-  "updated_at": "2026-08-27T08:37:19.000Z",
+  "updated_at": "2026-08-27T09:09:44.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": "token-classification",
@@ -25,8 +25,8 @@
   "trending_score": 0,
   "parameters": 277455363,
   "parameters_human": "277.5M",
-  "storage_bytes": 2236789184,
-  "storage_human": "2.2 GB",
+  "storage_bytes": 4456480184,
+  "storage_human": "4.5 GB",
   "base_model": null,
   "formats": [
     "safetensors"

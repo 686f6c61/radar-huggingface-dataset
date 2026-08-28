@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "hipfire-models/ornith-1.5-35b-a3b",
+  "slug": "hipfire-models-ornith-1-5-35b-a3b",
+  "author": "hipfire-models",
+  "url": "https://huggingface.co/hipfire-models/ornith-1.5-35b-a3b",
+  "created_at": "2026-08-20T14:03:58.000Z",
+  "updated_at": "2026-08-28T08:29:25.000Z",
+  "license": "mit-and-apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "hipfire",
+    "quantized",
+    "moe",
+    "speculative-decoding",
+    "mtp",
+    "vision-language",
+    "base_model:ornith-ai/Ornith-1.5-35B-A3B",
+    "base_model:finetune:ornith-ai/Ornith-1.5-35B-A3B",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 2,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 62754859550,
+  "storage_human": "62.8 GB",
+  "base_model": "ornith-ai/Ornith-1.5-35B-A3B, shisa-ai/Ornith-1.5-35B-A3B-MTP-ONLY",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "hipfire-models/ornith-1.5-35b-a3b · Hugging Face",
+      "url": "https://huggingface.co/hipfire-models/ornith-1.5-35b-a3b",
+      "snippet": "The head in the official Ornith 1.5 release drafts poorly. Its mtp.* tensors carry a standard deviation of exactly 0.0200 — the config&#x27;s initializer_range — with clean Gaussian statistics, and it is discussed upstream in ornith-ai/Ornith-1.5-35B-A3B discussion #10, which reports ~13% acceptance. We measured the same behaviour independently in two engines: hipfire and llama.cpp both accept ..."
+    },
+    {
+      "title": "hipfire-models/ornith1.5-35b-a3b · Hugging Face",
+      "url": "https://huggingface.co/hipfire-models/ornith1.5-35b-a3b",
+      "snippet": "The head in the official Ornith 1.5 release drafts poorly. Its mtp.* tensors carry a standard deviation of exactly 0.0200 — the config&#x27;s initializer_range — with clean Gaussian statistics, and it is discussed upstream in ornith-ai/Ornith-1.5-35B-A3B discussion #10, which reports ~13% acceptance."
+    },
+    {
+      "title": "Ornith-1.5-35B-A3B · Models",
+      "url": "https://www.modelscope.cn/models/ornith-ai/Ornith-1.5-35B-A3B",
+      "snippet": "Ornith-1.5-35B-A3B Chirp Chirp! 🐦 We are introducing Ornith-1.5, a major step toward building foundation models through end-to-end self-improvement. Ornith-1.5 extends Ornith-1.0 (which was developed on top of Qwen3.5 and Gemma4 with additional continued pretraining, mid-training, and post-training) by expanding the self-improvement loop from scaffold and rollout optimization to jointly ..."
+    },
+    {
+      "title": "Ornith-1.5-35B-A3B · LLM Releases",
+      "url": "https://www.llm-releases.com/models/ornith-1-5-35b-a3b",
+      "snippet": "The mid-size model in DeepReinforce&#x27;s Ornith-1.5 family (released 2026-08-19, MIT, weights on Hugging Face): a 35B-parameter Mixture-of-Experts that activates ~3B parameters per token, trained with the same self-improving task-and-scaffold generation loop as the 397B flagship."
+    },
+    {
+      "title": "Ornith-1.5: From Self-Scaffolding to Self-Improvement",
+      "url": "https://ornith.ai/ornith_1_5.html",
+      "snippet": "Today, we are introducing Ornith-1.5, a major step toward building foundation models through end-to-end self-improvement. Ornith-1.5 extends the self-scaffolding framework introduced in Ornith-1.0 into a more complete self-improvement loop: the model proposes new tasks, generates task-specific scaffolds, and produces solution rollouts for reinforcement learning, continuously creating new ..."
+    }
+  ]
+}

@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "maozhuoshushu/pa-krea2-lora-checkpoints",
+  "slug": "maozhuoshushu-pa-krea2-lora-checkpoints",
+  "author": "maozhuoshushu",
+  "url": "https://huggingface.co/maozhuoshushu/pa-krea2-lora-checkpoints",
+  "created_at": "2026-07-30T20:40:35.000Z",
+  "updated_at": "2026-08-28T08:33:50.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "zh"
+  ],
+  "tags": [
+    "image-generation",
+    "lora",
+    "zh",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 6990972281,
+  "storage_human": "7.0 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": true,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "maozhuoshushu/pa-krea2-lora-checkpoints · Hugging Face",
+      "url": "https://huggingface.co/maozhuoshushu/pa-krea2-lora-checkpoints",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "maozhuoshushu/pa-krea2-lora-checkpoints at main - Hugging Face",
+      "url": "https://huggingface.co/maozhuoshushu/pa-krea2-lora-checkpoints/tree/main",
+      "snippet": "Gated model You can list files but not access them Preview of files found in this repository checkpoints_allpa: 按最新评分标准全量重排 checkpoints + 计算日志7 days ago curvespa: README/曲线同步最新评分标准7 days ago logspa: 按最新评分标准全量重排 checkpoints + 计算日志7 days ago"
+    },
+    {
+      "title": "README.md · maozhuoshushu/krea2_lora_llf at main",
+      "url": "https://d6108366.hf-mirror.com/maozhuoshushu/krea2_lora_llf/blob/main/README.md?code=true",
+      "snippet": "maozhuoshushu / krea2_lora_llf like 0 lora krea2 Model card FilesFiles and versions xet Community Copy to bucket new main krea2_lora_llf /README.md maozhuoshushu Upload 李霖霏 LoRA d056d96 verified7 days ago preview code | Raw Download with hf CLI Copy download link History Blame Contribute Delete Safe 269 Bytes ..."
+    },
+    {
+      "title": "maozhuoshushu/krea2-lora-overfitting-analysis - GitHub",
+      "url": "https://github.com/maozhuoshushu/krea2-lora-overfitting-analysis",
+      "snippet": "Krea2 LoRA 过拟合定量分析——ArcFace 三指标评估方法 使用 ArcFace 人脸识别模型对 Krea2 LoRA 训练过程中 12 个 checkpoint 进行三指标定量评估，确定最优训练步数。"
+    },
+    {
+      "title": "FREE Krea 2 Turbo 4-Step Distillation LoRA & ComfyUI Workflow ... - Patreon",
+      "url": "https://www.patreon.com/TheLocalLab/posts/free-krea-2-4-2-167722336?l=da-DK",
+      "snippet": "A community-trained LoRA that takes Krea 2 Turbo from 8 steps down to 4 — cutting generation time roughly in half while holding most of the quality. In my testing it kept image quality strong while bringing a generation down to under 20 seconds on 16 GB of VRAM. If you already run Krea 2 Turbo, this drops straight into your setup for a free speed boost."
+    }
+  ]
+}

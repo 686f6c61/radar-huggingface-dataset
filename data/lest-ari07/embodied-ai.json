@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "lest-ari07/embodied-ai",
+  "slug": "lest-ari07-embodied-ai",
+  "author": "lest-ari07",
+  "url": "https://huggingface.co/lest-ari07/embodied-ai",
+  "created_at": "2026-08-28T09:39:04.000Z",
+  "updated_at": "2026-08-28T09:39:13.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "transformer",
+    "research-notes",
+    "embodied-ai",
+    "license:cc-by-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 33088,
+  "parameters_human": "33088",
+  "storage_bytes": 132832,
+  "storage_human": "132832 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Embodied Arena",
+      "url": "https://www.embodied-arena.com/",
+      "snippet": "Embodied Arena is a comprehensive, unified and evolving evaluation system and platform for embodied AI models. It features three types of core embodied tasks, a diverse range of high-quality benchmarks, an LLM-driven automated evaluation data generation framework, and a systematic embodied capability taxonomy. Moreover, Embodied Arena offers professional supports for advanced models and new ..."
+    },
+    {
+      "title": "Embodied AI - Nature",
+      "url": "https://www.nature.com/collections/ibgfciaafb",
+      "snippet": "Embodied Artificial Intelligence (Embodied AI) is a cutting-edge field that aims to integrate AI into physical entities like robots, endowing them with the ability to actively perceive, learn from ..."
+    },
+    {
+      "title": "⚙️ Multimodal-Embodied-AI - GitHub",
+      "url": "https://github.com/Hoar012/Awesome-Multimodal-Embodied-AI",
+      "snippet": "A list of papers at the intersection of multimodal learning, embodied AI, and robotics. - Hoar012/Awesome-Multimodal-Embodied-AI"
+    },
+    {
+      "title": "Embodied AI: From LLMs to World Models - arXiv.org",
+      "url": "https://arxiv.org/html/2509.20021v1",
+      "snippet": "Abstract Embodied Artificial Intelligence (AI) is an intelligent system paradigm for achieving Artificial General Intelligence (AGI), serving as the cornerstone for various applications and driving the evolution from cyberspace to physical systems. Recent breakthroughs in Large Language Models (LLMs) and World Models (WMs) have drawn significant attention for embodied AI. On the one hand, LLMs ..."
+    },
+    {
+      "title": "Embodied AI Daily — Latest arXiv Papers",
+      "url": "https://luohongkun.top/Embodied-AI-Daily/index.html",
+      "snippet": "📄 Latest arXiv Papers VLN · VLA · SLAM · 3D · Embodied AI — auto-updated daily 👤 Hongkun Luo (罗宏昆) · 🎓 Academic Page · 🐙 GitHub ☕ 支持本项目 · Support this project"
+    }
+  ]
+}

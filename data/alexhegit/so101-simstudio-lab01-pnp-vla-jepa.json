@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "alexhegit/so101-simstudio-lab01-pnp-vla-jepa",
+  "slug": "alexhegit-so101-simstudio-lab01-pnp-vla-jepa",
+  "author": "alexhegit",
+  "url": "https://huggingface.co/alexhegit/so101-simstudio-lab01-pnp-vla-jepa",
+  "created_at": "2026-08-28T07:25:50.000Z",
+  "updated_at": "2026-08-28T07:26:30.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "robotics",
+    "vla-jepa",
+    "so101",
+    "simstudio",
+    "dataset:alexhegit/so101-simstudio-lab01-pnp",
+    "base_model:lerobot/VLA-JEPA-LIBERO",
+    "base_model:finetune:lerobot/VLA-JEPA-LIBERO",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 2770338694,
+  "parameters_human": "2.77B",
+  "storage_bytes": 6174572708,
+  "storage_human": "6.2 GB",
+  "base_model": "lerobot/VLA-JEPA-LIBERO",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "alexhegit/so101-simstudio-lab01-pnp · Datasets at Hugging Face",
+      "url": "https://huggingface.co/datasets/alexhegit/so101-simstudio-lab01-pnp",
+      "snippet": "Datasets: alexhegit / so101-simstudio-lab01-pnp like 0 Tasks: Robotics Modalities: Video Size: < 1K Tags: lerobot so101 simstudio mujoco pick-and-place teleoperation Libraries: Datasets Croissant License: apache-2.0 Dataset card Data Studio FilesFiles and versions xet Community Dataset Viewer Auto-converted to Parquet API Embed Duplicate Data Studio Subset (1) default·8 rows default (8 rows ..."
+    },
+    {
+      "title": "alexhegit/so101-simstudio-lab01-pnp-molmoact2 · Hugging Face",
+      "url": "https://huggingface.co/alexhegit/so101-simstudio-lab01-pnp-molmoact2",
+      "snippet": "Instructions to use alexhegit/so101-simstudio-lab01-pnp-molmoact2 with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "README.md · alexhegit/so101-simstudio-lab01-pnp-smolvla at main",
+      "url": "https://d6108366.hf-mirror.com/alexhegit/so101-simstudio-lab01-pnp-smolvla/blob/main/README.md?code=true",
+      "snippet": "Instructions to use alexhegit/so101-simstudio-lab01-pnp-smolvla with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "tech-blog-pub/PhysicalAI/so101-simstudio-lab01-pnp/README ... - GitHub",
+      "url": "https://github.com/rocPAI-Forge/tech-blog-pub/blob/main/PhysicalAI/so101-simstudio-lab01-pnp/README-details.md",
+      "snippet": "对 Physical AI / 机器人入门，它是最常见的 record → train → eval 闭环：先证明「能从演示学会」，再谈 RL 微调、更大 VLA、真机迁移。 Lab 01 用的是其中最直接的一类： 行为克隆（Behavior Cloning, BC） ——把专家轨迹当成监督学习标签。"
+    },
+    {
+      "title": "so101-simstudio/labs/README.md at main · rocPAI-Forge/so101 ... - GitHub",
+      "url": "https://github.com/rocPAI-Forge/so101-simstudio/blob/main/labs/README.md",
+      "snippet": "Contribute to rocPAI-Forge/so101-simstudio development by creating an account on GitHub."
+    }
+  ]
+}

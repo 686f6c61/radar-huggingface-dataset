@@ -20,8 +20,8 @@
     "base_model:quantized:Wan-AI/Wan2.2-Animate-2-14B",
     "region:us"
   ],
-  "likes": 0,
-  "downloads_30d": 312,
+  "likes": 1,
+  "downloads_30d": 313,
   "trending_score": 0,
   "parameters": 14288901184,
   "parameters_human": "14.29B",

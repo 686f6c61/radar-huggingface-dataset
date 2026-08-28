@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "ChuGyouk/Qwen3-4B-DeepWriting-SFT2",
+  "slug": "chugyouk-qwen3-4b-deepwriting-sft2",
+  "author": "ChuGyouk",
+  "url": "https://huggingface.co/ChuGyouk/Qwen3-4B-DeepWriting-SFT2",
+  "created_at": "2026-08-28T00:11:54.000Z",
+  "updated_at": "2026-08-28T08:43:19.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3",
+    "text-generation",
+    "generated_from_trainer",
+    "sft",
+    "unsloth",
+    "trl",
+    "conversational",
+    "base_model:unsloth/Qwen3-4B-Base",
+    "base_model:finetune:unsloth/Qwen3-4B-Base",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 4022468096,
+  "parameters_human": "4.02B",
+  "storage_bytes": 16102174379,
+  "storage_human": "16.1 GB",
+  "base_model": "unsloth/Qwen3-4B-Base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ChuGyouk/Qwen3-4B-DeepWriting-SFT2 · Hugging Face",
+      "url": "https://huggingface.co/ChuGyouk/Qwen3-4B-DeepWriting-SFT2",
+      "snippet": "ChuGyouk / Qwen3-4B-DeepWriting-SFT2 like 0 Model card FilesFiles and versions xet Community Copy to bucket new No model card Downloads last month -"
+    },
+    {
+      "title": "Qwen/Qwen3-4B · Hugging Face",
+      "url": "https://huggingface.co/Qwen/Qwen3-4B",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Qwen3-4B - Qualcomm AI Hub",
+      "url": "https://aihub.qualcomm.com/models/qwen3_4b",
+      "snippet": "Qwen3-4B State‑of‑the‑art large language model useful on a variety of language understanding and generation tasks. The Qwen3‑4B is a state‑of‑the‑art multilingual base language model with 4 billion parameters, excelling in language understanding, generation, coding, and mathematics."
+    },
+    {
+      "title": "GitHub - QwenLM/Qwen3: Qwen3 is the large language model series ...",
+      "url": "https://github.com/QwenLM/Qwen3",
+      "snippet": "Over the past three months, we continued to explore the potential of the Qwen3 families and we are excited to introduce the updated Qwen3-2507 in two variants, Qwen3-Instruct-2507 and Qwen3-Thinking-2507, and three sizes, 235B-A22B, 30B-A3B, and 4B. Qwen3-Instruct-2507 is the updated version of the previous Qwen3 non-thinking mode, featuring the following key enhancements: Significant ..."
+    },
+    {
+      "title": "Qwen",
+      "url": "https://qwen.ai/home",
+      "snippet": "Qwen Studio is an AI assistant for everyone, powered by the Qwen series models. It&#x27;s free to use, open to all, and ready to help with creativity, collaboration, and endless possibilities."
+    }
+  ]
+}

@@ -1,0 +1,79 @@
+{
+  "schema": 1,
+  "id": "minseokk7/BioPhys-13.0-Kimi-K3-DualBrain",
+  "slug": "minseokk7-biophys-13-0-kimi-k3-dualbrain",
+  "author": "minseokk7",
+  "url": "https://huggingface.co/minseokk7/BioPhys-13.0-Kimi-K3-DualBrain",
+  "created_at": "2026-08-28T09:47:14.000Z",
+  "updated_at": "2026-08-28T09:53:54.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "biophys",
+  "languages": [
+    "ko",
+    "en"
+  ],
+  "tags": [
+    "biophys",
+    "gguf",
+    "neuromorphic",
+    "bpsoq",
+    "bpstq",
+    "1-bit",
+    "2-bit",
+    "zero-multiplication",
+    "kimi-k3",
+    "exaone",
+    "dual-brain",
+    "green-ai",
+    "text-generation",
+    "ko",
+    "en",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 492288,
+  "parameters_human": "492288",
+  "storage_bytes": 6759877,
+  "storage_human": "7 MB",
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Kimi K3: 2.8T Open Model for Coding & Knowledge Work",
+      "url": "https://www.kimi.ai/ai-models/kimi-k3",
+      "snippet": "Kimi K3: Think Further. Build Bigger. Keep Going. Kimi K3 is an open 2.8T-parameter model built on our Kimi Delta Attention and Attention Residuals, with native vision and a 1M-token context window, designed for long-horizon coding, knowledge work, and reasoning. It turns a prompt into playable games, polished presentations, and interactive research reports, even taking on technical work once ..."
+    },
+    {
+      "title": "Kimi AI with K3 | Built for Agentic Coding & Knowledge Work",
+      "url": "https://www.kimi.com/en",
+      "snippet": "Try Kimi K3 to build playable multiplayer and 3D games, create consulting grade slides, and run parallel tasks with Swarm and Goal to get more work done."
+    },
+    {
+      "title": "Kimi K3 - openlm.ai",
+      "url": "https://openlm.ai/kimi-k3/",
+      "snippet": "We introduce Kimi K3 — our most capable model. Kimi K3 is a 2.8T-parameter model built on our Kimi Delta Attention and Attention Residuals, with native vision capabilities and a 1-million-token context window. It is the world&#x27;s first open 3T-class model, designed for frontier intelligence across long-horizon coding, knowledge work, and reasoning."
+    },
+    {
+      "title": "GitHub - minseokk7/BioPhys-LLM",
+      "url": "https://github.com/minseokk7/BioPhys-LLM",
+      "snippet": "Contribute to minseokk7/BioPhys-LLM development by creating an account on GitHub."
+    },
+    {
+      "title": "GitHub - MoonshotAI/Kimi-K3: Open Frontier Intelligence",
+      "url": "https://github.com/MoonshotAI/Kimi-K3/tree/main",
+      "snippet": "Kimi K3 is an open-weight, native multimodal agentic model and our most capable model to date. It is a 2.8T-parameter model built on Kimi Delta Attention (KDA) and Attention Residuals (AttnRes), with native vision capabilities and a 1-million-token context window. It is the world&#x27;s first open 3T-class model, designed for frontier intelligence across long-horizon coding, knowledge work, and ..."
+    }
+  ]
+}

@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "mradermacher/Chaotic-Order-24B-V2-GGUF",
+  "slug": "mradermacher-chaotic-order-24b-v2-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/Chaotic-Order-24B-V2-GGUF",
+  "created_at": "2026-08-28T09:40:51.000Z",
+  "updated_at": "2026-08-28T09:40:54.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "mradermacher/Celestial-Order-24B-V2-GGUF · Hugging Face",
+      "url": "https://huggingface.co/mradermacher/Celestial-Order-24B-V2-GGUF",
+      "snippet": "mradermacher / Celestial-Order-24B-V2-GGUF like 0 Transformers GGUF English mergekit Merge Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "mradermacher/Celestial-Order-24B-V2-i1-GGUF · Hugging Face",
+      "url": "https://huggingface.co/mradermacher/Celestial-Order-24B-V2-i1-GGUF",
+      "snippet": "Instructions to use mradermacher/Celestial-Order-24B-V2-i1-GGUF with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "6 Best 24B GGUF Models for 24GB VRAM Local AI RP",
+      "url": "https://techtactician.com/best-24b-gguf-models-for-24gb-vram-local-rp/",
+      "snippet": "You can find the GGUF quantizations of this model by mradermacher here. 5. Goetia-24B (v1.3, and the older v1.2) Goetia-24B-v1.3 by Naphula (alongside the older but still very much popular Goetia-24B-v1.2) is one of the worthwhile uncensored models appropriate for the darker or more dramatic/edgy RP scenarios."
+    },
+    {
+      "title": "GGUF Model Discovery - Browse & Download AI Models",
+      "url": "https://local-ai-zone.github.io/",
+      "snippet": "Discover and download GGUF format AI models. Browse and direct download thousands of quantized AI models with detailed information, download counts, and direct links."
+    },
+    {
+      "title": "Open models by OpenAI | OpenAI",
+      "url": "https://openai.com/open-models/",
+      "snippet": "Advanced open-weight reasoning models to customize for any use case and run anywhere."
+    }
+  ]
+}

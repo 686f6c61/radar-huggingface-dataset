@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "Hallmichaelsen/retrieval",
+  "slug": "hallmichaelsen-retrieval",
+  "author": "Hallmichaelsen",
+  "url": "https://huggingface.co/Hallmichaelsen/retrieval",
+  "created_at": "2026-08-28T09:42:56.000Z",
+  "updated_at": "2026-08-28T09:43:05.000Z",
+  "license": "bsd-3-clause",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "vit",
+    "pytorch",
+    "retrieval",
+    "license:bsd-3-clause",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 16576,
+  "parameters_human": "16576",
+  "storage_bytes": 66784,
+  "storage_human": "66784 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Hallmichaelsen (Michael) - Hugging Face",
+      "url": "https://huggingface.co/Hallmichaelsen",
+      "snippet": "AI & ML interests ... Recent Activity updated a model about 11 hours ago ... published a model about 11 hours ago"
+    },
+    {
+      "title": "Models - Hugging Face",
+      "url": "https://huggingface.co/models?other=first-person-plural",
+      "snippet": "Explore machine learning models. 83 Base only Inference AvailableInference Edit filters Sort: Trending Active filters: first-person-plural Clear all"
+    },
+    {
+      "title": "Mitigating Hallucination in Large Language Models (LLMs): An ...",
+      "url": "https://arxiv.org/html/2510.24476v1",
+      "snippet": "Abstract Hallucination remains one of the key obstacles to the reliable deployment of large language models (LLMs), particularly in real-world applications. Among various mitigation strategies, Retrieval-Augmented Generation (RAG) and reasoning enhancement have emerged as two of the most effective and widely adopted approaches, marking a shift from merely suppressing hallucinations to ..."
+    },
+    {
+      "title": "Large Language Models for Information Retrieval: A Survey",
+      "url": "https://arxiv.org/html/2308.07107v4",
+      "snippet": "From the model perspective, a strongly representational neural architecture allows retrievers to effectively store and apply knowledge obtained from the training data. Unfortunately, there are some long-term challenges that hinder the advancement of retrieval models."
+    },
+    {
+      "title": "Retrieval Augmented Generation-based Large Language Model Chatbot",
+      "url": "https://ieeexplore.ieee.org/document/11255894",
+      "snippet": "We introduced a memory-augmented chatbot system to enhance the conversational capabilities of large language models (LLMs) using retrieval-augmented generation (RAG). The system enables fluid, context-aware dialogue by integrating historical interactions into the reasoning process. Through a configurable memory setting, the chatbot tracks prior user queries and responses, allowing it to ..."
+    }
+  ]
+}

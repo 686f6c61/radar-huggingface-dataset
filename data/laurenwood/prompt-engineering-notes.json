@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "laurenwood/prompt-engineering-notes",
+  "slug": "laurenwood-prompt-engineering-notes",
+  "author": "laurenwood",
+  "url": "https://huggingface.co/laurenwood/prompt-engineering-notes",
+  "created_at": "2026-08-28T08:51:05.000Z",
+  "updated_at": "2026-08-28T08:51:14.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "transformer",
+    "research-notes",
+    "prompt-engineering",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 16576,
+  "parameters_human": "16576",
+  "storage_bytes": 66784,
+  "storage_human": "66784 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - VikramThory/prompt-engineering-notes: A curated collection of ...",
+      "url": "https://github.com/VikramThory/prompt-engineering-notes",
+      "snippet": "A curated collection of notes, examples, and best practices for learning and mastering prompt engineering with large language models (LLMs) like ChatGPT, GPT-4, and others. Covers concepts, patterns, use cases, and techniques for building effective and reliable AI prompts."
+    },
+    {
+      "title": "AI Prompt Engineering - GeeksforGeeks",
+      "url": "https://www.geeksforgeeks.org/artificial-intelligence/ai-prompt-engineering/",
+      "snippet": "Prompt engineering plays a major role in improving how effectively AI models perform by guiding them with clear and well structured instructions. It helps produce accurate, relevant and meaningful outputs. Well designed prompts help the model understand context and reduce errors. Allows users to get specific and tailored responses for different ..."
+    },
+    {
+      "title": "GitHub - dair-ai/Prompt-Engineering-Guide: Guides, papers, lessons ...",
+      "url": "https://github.com/dair-ai/Prompt-Engineering-Guide",
+      "snippet": "Prompt engineering is a relatively new discipline for developing and optimizing prompts to efficiently use language models (LMs) for a wide variety of applications and research topics. Prompt engineering skills help to better understand the capabilities and limitations of large language models (LLMs)."
+    },
+    {
+      "title": "The 2026 Guide to Prompt Engineering - IBM",
+      "url": "https://www.ibm.com/think/prompt-engineering",
+      "snippet": "A prompt engineering guide is a practical resource for understanding how to craft effective prompts to interact with artificial intelligence (AI) models such as IBM® Granite®, Open AI&#x27;s GPT, DALL-E, Stable Diffusion, Anthropic&#x27;s Claude , Google&#x27;s Bard and other generative systems. Prompt engineering is the process of designing and refining input instructions to guide AI behavior and ..."
+    },
+    {
+      "title": "AI Prompt Engineering: Complete Guide + Examples",
+      "url": "https://prismic.io/blog/prompt-engineering",
+      "snippet": "Learn prompt engineering techniques to get better results from ChatGPT and other AI tools. Includes examples, best practices, and advanced methods."
+    }
+  ]
+}

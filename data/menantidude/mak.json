@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "menantidude/mak",
+  "slug": "menantidude-mak",
+  "author": "menantidude",
+  "url": "https://huggingface.co/menantidude/mak",
+  "created_at": "2025-06-11T10:18:27.000Z",
+  "updated_at": "2026-08-28T05:46:38.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 161721971212,
+  "storage_human": "161.7 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "menantidude (Menanti Dude) - Hugging Face",
+      "url": "https://huggingface.co/menantidude/models",
+      "snippet": "AI & ML interests ... Recent Activity updated a dataset 4 days ago ... updated a model 4 days ago"
+    },
+    {
+      "title": "MakeAI",
+      "url": "https://makeai.org/",
+      "snippet": "Make your own AI models with ease. Build AI models without writing code. An intuitive platform that lets you create AI models using a visual interface. No coding required. Just drag, drop, and train. Learn the fundamentals of AI. Learning about how AI works has never been more important."
+    },
+    {
+      "title": "How Claude marks AI-generated content | Anthropic Help Center",
+      "url": "https://support.claude.com/en/articles/16266773-how-claude-marks-ai-generated-content",
+      "snippet": "New models will mark AI-generated content from day one. Claude models launched in the EU on or after August 2, 2026 will support machine-readable marking at launch. Generated text will carry embedded watermarks, and generated files will include digitally signed provenance metadata where supported. Marking works everywhere you use Claude."
+    },
+    {
+      "title": "Builder Demo - MakeAI",
+      "url": "https://builder-demo.makeai.org/",
+      "snippet": "How fast the model learns, a higher number may increase accuracy in the short term but could lead to overfitting. This layer is where the data is inputted. It has to be the same shape as the data but we handle that for you!"
+    },
+    {
+      "title": "AI 3D Model Generator: Create 3D from Text & Images | Meshy",
+      "url": "https://www.meshy.ai/",
+      "snippet": "Meshy&#x27;s AI 3D model generator turns text and images into production-ready 3D models in 20-30 seconds. Export to FBX, OBJ, GLB, and STL formats. Try Meshy free."
+    }
+  ]
+}

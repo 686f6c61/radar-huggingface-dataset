@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "jadeduboi/poolformer-checkpoint",
+  "slug": "jadeduboi-poolformer-checkpoint",
+  "author": "jadeduboi",
+  "url": "https://huggingface.co/jadeduboi/poolformer-checkpoint",
+  "created_at": "2026-08-28T07:29:47.000Z",
+  "updated_at": "2026-08-28T07:29:55.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "poolformer",
+    "pytorch",
+    "matching",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 24832,
+  "parameters_human": "24832",
+  "storage_bytes": 99808,
+  "storage_human": "99808 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "arjunkak92/poolformer-checkpoint · Hugging Face",
+      "url": "https://huggingface.co/arjunkak92/poolformer-checkpoint",
+      "snippet": "Repository status The Python file contains the model and runnable example or training entry point. config.json records the generated architecture settings. training_args.json records the default experiment recipe. model.safetensors is a valid initialization checkpoint for smoke tests; it is not presented as a trained benchmark checkpoint."
+    },
+    {
+      "title": "DeepLearning/model/PoolFormer at main - GitHub",
+      "url": "https://github.com/562590763/DeepLearning/tree/main/model/PoolFormer",
+      "snippet": "Surprisingly, the resulted model PoolFormer consistently outperforms the DeiT and ResMLP as shown in (b), which well supports that MetaFormer is actually what we need to achieve competitive performance. RSB-ResNet in (b) means the results are from \"ResNet Strikes Back\" where ResNet is trained with improved training procedure for 300 epochs."
+    },
+    {
+      "title": "aidenlopez/poolformer-demo · Hugging Face",
+      "url": "https://huggingface.co/aidenlopez/poolformer-demo",
+      "snippet": "Repository status The Python file contains the model and runnable example or training entry point. config.json records the generated architecture settings. training_args.json records the default experiment recipe. model.safetensors is a valid initialization checkpoint for smoke tests; it is not presented as a trained benchmark checkpoint."
+    },
+    {
+      "title": "poolformer/detection/checkpoint.py at main · sail-sg/poolformer",
+      "url": "https://github.com/sail-sg/poolformer/blob/main/detection/checkpoint.py",
+      "snippet": "PoolFormer: MetaFormer Is Actually What You Need for Vision (CVPR 2022 Oral) - sail-sg/poolformer"
+    },
+    {
+      "title": "checkpoint AI Models | Civitai",
+      "url": "https://civitai.com/tag/checkpoint",
+      "snippet": "Browse 200 Stable Diffusion & Flux models, LoRAs, checkpoints, and embeddings tagged with checkpoint."
+    }
+  ]
+}

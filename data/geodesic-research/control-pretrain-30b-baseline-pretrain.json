@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "geodesic-research/control-pretrain-30b-baseline-pretrain",
+  "slug": "geodesic-research-control-pretrain-30b-baseline-pretrain",
+  "author": "geodesic-research",
+  "url": "https://huggingface.co/geodesic-research/control-pretrain-30b-baseline-pretrain",
+  "created_at": "2026-08-28T10:05:46.000Z",
+  "updated_at": "2026-08-28T10:06:48.000Z",
+  "license": "nvidia-open-model-license",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "safetensors",
+    "nemotron_h",
+    "nemotron-h",
+    "moe",
+    "from-scratch",
+    "pretraining-research",
+    "geodesic",
+    "en",
+    "base_model:nvidia/NVIDIA-Nemotron-3-Nano-30B-A3B-BF16",
+    "base_model:finetune:nvidia/NVIDIA-Nemotron-3-Nano-30B-A3B-BF16",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 31577937344,
+  "parameters_human": "31.58B",
+  "storage_bytes": 63173766508,
+  "storage_human": "63.2 GB",
+  "base_model": "nvidia/NVIDIA-Nemotron-3-Nano-30B-A3B-BF16",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "geodesic-research/control-pretrain-30b-baseline-ckpts · Hugging Face",
+      "url": "https://huggingface.co/geodesic-research/control-pretrain-30b-baseline-ckpts",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "camgeodesic/control-pretrain-30b-baseline-ckpts · Hugging Face",
+      "url": "https://huggingface.co/camgeodesic/control-pretrain-30b-baseline-ckpts",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Geodesic Research | The shortest path to impact",
+      "url": "https://geodesicresearch.ai/",
+      "snippet": "Geodesic Research is a UK-based technical AI safety organisation focused on compute-intensive alignment research. Our seminal work on alignment pretraining showed that you can bake alignment priors into base models, and the broader field is now converging on the approach. Long-horizon capabilities reinforcement learning is emerging as a critical and underexplored threat to alignment ..."
+    },
+    {
+      "title": "Geodesic Research - GitHub",
+      "url": "https://github.com/GeodesicResearch",
+      "snippet": "geodesic-megatron Public Training library for Megatron-based models with bidirectional Hugging Face conversion capability"
+    },
+    {
+      "title": "AI News Briefing for Sunday, August 23, 2026 — AIBriefs",
+      "url": "https://aibriefs.news/briefing/2026-08-23",
+      "snippet": "The 110 AI stories that mattered on Sunday, August 23, 2026: Meta releases Muse Glimmer, a 30B open-weight agentic model · OpenAI&#x27;s Astra model solves 10 open math problems for $2,000 · DeepSeek releases V4-Flash-0731 o…"
+    }
+  ]
+}

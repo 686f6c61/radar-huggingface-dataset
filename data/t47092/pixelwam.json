@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "t47092/pixelwam",
+  "slug": "t47092-pixelwam",
+  "author": "t47092",
+  "url": "https://huggingface.co/t47092/pixelwam",
+  "created_at": "2026-08-28T06:36:02.000Z",
+  "updated_at": "2026-08-28T06:36:02.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "t47092 (Finch) - Hugging Face",
+      "url": "https://huggingface.co/t47092/datasets",
+      "snippet": "User profile of Finch on Hugging Face"
+    },
+    {
+      "title": "PixelWave - FLUX.1-schnell 04 | Flux.1 Checkpoint | Civitai",
+      "url": "https://civitai.com/models/141592/pixelwave",
+      "snippet": "Model also available at: RunDiffusion and Runware.ai PixelWave FLUX.1 schnell version 04 is an aesthetic fine tune of FLUX.1-schnell. The training images were hand picked to ensure the model has a bias to eye catching images, with beautiful colors, textures and lighting. Trained on the original schnell model, so Apache 2.0 license!"
+    },
+    {
+      "title": "PixelWave - AI Art Model | PixAI",
+      "url": "https://pixai.art/model/1754700298672681188",
+      "snippet": "Generate stunning anime, photography, digital_art, base_model, traditional_art, 3d_animation anime art with the &#x27;PixelWave&#x27; model on PixAI. Browse artworks made with this model and try it free."
+    },
+    {
+      "title": "AI Models | Civitai",
+      "url": "https://civitai.com/models",
+      "snippet": "Browse thousands of free Stable Diffusion & Flux models, LoRAs, checkpoints, and embeddings. The largest collection of AI image generation resources."
+    },
+    {
+      "title": "PixelWave — Model Hub — Moescape",
+      "url": "https://moescape.ai/models/3d1969a6-b9d2-49ae-9599-20aa084d5dcf",
+      "snippet": "Fine tune of schnell model, not using the dev model in anyway. Apache 2.0 license! Trained with kohya using a custom sigma schedule and freezing time and modulation parameters to prevent degradation of time distillation. Combined training steps : 1,360,641 Active training time: 1192.61 hours (49.7 days)"
+    }
+  ]
+}

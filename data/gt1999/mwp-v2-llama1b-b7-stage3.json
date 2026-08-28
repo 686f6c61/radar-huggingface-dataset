@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "GT1999/mwp-v2-llama1b-b7-stage3",
+  "slug": "gt1999-mwp-v2-llama1b-b7-stage3",
+  "author": "GT1999",
+  "url": "https://huggingface.co/GT1999/mwp-v2-llama1b-b7-stage3",
+  "created_at": "2026-08-28T06:37:22.000Z",
+  "updated_at": "2026-08-28T06:37:42.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "mwp-v2",
+    "seqft",
+    "plrs",
+    "math-word-problems",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 287772552,
+  "storage_human": "288 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GT1999/mwp-v2-llama1b-b9-stage1 · Hugging Face",
+      "url": "https://huggingface.co/GT1999/mwp-v2-llama1b-b9-stage1",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "OpenAI | Research & Deployment",
+      "url": "https://openai.com/",
+      "snippet": "We believe our research will eventually lead to artificial general intelligence, a system that can solve human-level problems."
+    },
+    {
+      "title": "Google Gemini",
+      "url": "https://gemini.google.com/",
+      "snippet": "Get assistance with writing, planning, learning, and more from Google AI."
+    },
+    {
+      "title": "LLM Leaderboard & AI Model Benchmarks — August 2026",
+      "url": "https://benchlm.ai/",
+      "snippet": "LLM Leaderboard & AI Model Benchmarks — August 2026 Compare frontier AI models by quality, cost, and context. 105 Supported and 121 Estimated models among 403 tracked LLMs — 406 benchmarks, real pricing, and runtime data in one place."
+    },
+    {
+      "title": "LLM Updates (August 2026) - AI Model Releases & Provider Activity",
+      "url": "https://lmmarketcap.com/llm-updates",
+      "snippet": "Track AI model releases, recently added endpoints, and provider update cadence across GPT, Claude, Gemini, DeepSeek, Llama, and 350+ models."
+    }
+  ]
+}

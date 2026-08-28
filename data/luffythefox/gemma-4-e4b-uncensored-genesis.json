@@ -5,7 +5,7 @@
   "author": "LuffyTheFox",
   "url": "https://huggingface.co/LuffyTheFox/Gemma-4-E4B-Uncensored-Genesis",
   "created_at": "2026-08-19T07:58:06.000Z",
-  "updated_at": "2026-08-19T08:45:56.000Z",
+  "updated_at": "2026-08-27T11:29:43.000Z",
   "license": "gemma",
   "license_family": "oss",
   "pipeline_tag": "image-text-to-text",
@@ -32,12 +32,12 @@
     "conversational"
   ],
   "likes": 3,
-  "downloads_30d": 1031,
+  "downloads_30d": 1087,
   "trending_score": 0,
   "parameters": 7518069290,
   "parameters_human": "7.52B",
-  "storage_bytes": 8133226464,
-  "storage_human": "8.1 GB",
+  "storage_bytes": 13468512192,
+  "storage_human": "13.5 GB",
   "base_model": "google/gemma-4-e4b-it",
   "formats": [
     "gguf"

@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "aishmurtaza/codevisualizer-lora",
+  "slug": "aishmurtaza-codevisualizer-lora",
+  "author": "aishmurtaza",
+  "url": "https://huggingface.co/aishmurtaza/codevisualizer-lora",
+  "created_at": "2026-08-27T23:08:49.000Z",
+  "updated_at": "2026-08-28T02:42:08.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "generated_from_trainer",
+    "sft",
+    "trl",
+    "base_model:meta-llama/Llama-3.2-3B-Instruct",
+    "base_model:finetune:meta-llama/Llama-3.2-3B-Instruct",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 312870146,
+  "storage_human": "313 MB",
+  "base_model": "meta-llama/Llama-3.2-3B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "aishmurtaza (aish murtaza) - Hugging Face",
+      "url": "https://huggingface.co/aishmurtaza",
+      "snippet": "User profile of aish murtaza on Hugging Face"
+    },
+    {
+      "title": "aishmurtaza / Repositories · GitHub",
+      "url": "https://github.com/aishmurtaza?tab=repositories",
+      "snippet": "This repository contains CryMLClassifier, a machine learning model that classifies baby cries into five categories. It utilizes 193 features extracted from the cry audio data, achieving high accura…"
+    },
+    {
+      "title": "Aishaamalik/Code-Visualizer-AI - GitHub",
+      "url": "https://github.com/Aishaamalik/Code-Visualizer-AI",
+      "snippet": "Code Visualizer AI accepts code in multiple languages (Python, JavaScript, C++, Java, C#, Go, Rust, Ruby) and produces a structured, step-by-step execution walkthrough. It highlights the current line, shows variable values and types, call stack, control flow, data structures, and optional memory/outputs per step. You can auto-play steps, navigate manually, and save analyses to a local history."
+    },
+    {
+      "title": "lora AI Models | Civitai",
+      "url": "https://civitai.com/tag/lora",
+      "snippet": "Browse 28,875 Stable Diffusion & Flux models, LoRAs, checkpoints, and embeddings tagged with lora."
+    },
+    {
+      "title": "PixAI Model Market | AI Art Models and LoRAs | PixAI",
+      "url": "https://pixai.art/en/market",
+      "snippet": "Open marketplace for AI art models. Browse 1.5M+ user-trained models and LoRAs to generate anime, realistic and fantasy art free on PixAI."
+    }
+  ]
+}

@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "EigenLabs/Qwen3-VL-30B-A3B-Instruct-MLX-4bit",
+  "slug": "eigenlabs-qwen3-vl-30b-a3b-instruct-mlx-4bit",
+  "author": "EigenLabs",
+  "url": "https://huggingface.co/EigenLabs/Qwen3-VL-30B-A3B-Instruct-MLX-4bit",
+  "created_at": "2026-08-28T07:38:05.000Z",
+  "updated_at": "2026-08-28T07:39:01.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "mlx",
+  "languages": [],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "qwen3_vl_moe",
+    "apple-silicon",
+    "qwen3-vl",
+    "vision-language",
+    "image-text-to-text",
+    "moe",
+    "4-bit",
+    "conversational",
+    "base_model:Qwen/Qwen3-VL-30B-A3B-Instruct",
+    "base_model:quantized:Qwen/Qwen3-VL-30B-A3B-Instruct",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 5309453552,
+  "parameters_human": "5.31B",
+  "storage_bytes": 18263526327,
+  "storage_human": "18.3 GB",
+  "base_model": "Qwen/Qwen3-VL-30B-A3B-Instruct",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Qwen/Qwen3-VL-30B-A3B-Instruct · Hugging Face",
+      "url": "https://huggingface.co/Qwen/Qwen3-VL-30B-A3B-Instruct",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "mlx-community/Qwen3-VL-30B-A3B-Instruct-4bit · Hugging Face",
+      "url": "https://huggingface.co/mlx-community/Qwen3-VL-30B-A3B-Instruct-4bit",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GitHub - QwenLM/Qwen3-VL: Qwen3-VL is the multimodal large language ...",
+      "url": "https://github.com/QwenLM/Qwen3-VL",
+      "snippet": "Meet Qwen3-VL — the most powerful vision-language model in the Qwen series to date. This generation delivers comprehensive upgrades across the board: superior text understanding & generation, deeper visual perception & reasoning, extended context length, enhanced spatial and video dynamics comprehension, and stronger agent interaction capabilities. Available in Dense and MoE architectures ..."
+    },
+    {
+      "title": "GitHub - QwenLM/Qwen3: Qwen3 is the large language model series ...",
+      "url": "https://github.com/QwenLM/Qwen3",
+      "snippet": "Over the past three months, we continued to explore the potential of the Qwen3 families and we are excited to introduce the updated Qwen3-2507 in two variants, Qwen3-Instruct-2507 and Qwen3-Thinking-2507, and three sizes, 235B-A22B, 30B-A3B, and 4B. Qwen3-Instruct-2507 is the updated version of the previous Qwen3 non-thinking mode, featuring the following key enhancements: Significant ..."
+    },
+    {
+      "title": "Qwen3-VL-30B-A3B-Instruct · Models",
+      "url": "https://www.modelscope.cn/models/Qwen/Qwen3-VL-30B-A3B-Instruct",
+      "snippet": "X-AnyLabeling is a powerful auxiliary annotation tool that integrates AI inference engines and rich functional features. It focuses on practical applications and aims to provide industrial-grade one-stop solutions for image data engineers, enabling the automatic and rapid labeling of various complex tasks."
+    }
+  ]
+}

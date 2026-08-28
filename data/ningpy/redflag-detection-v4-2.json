@@ -1,0 +1,82 @@
+{
+  "schema": 1,
+  "id": "ningpy/redflag-detection-V4.2",
+  "slug": "ningpy-redflag-detection-v4-2",
+  "author": "ningpy",
+  "url": "https://huggingface.co/ningpy/redflag-detection-V4.2",
+  "created_at": "2026-08-28T08:18:13.000Z",
+  "updated_at": "2026-08-28T08:27:46.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en",
+    "zh",
+    "ms"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen2",
+    "text-generation",
+    "redflag",
+    "medical",
+    "extraction",
+    "qwen2.5",
+    "LoRA-merged",
+    "conversational",
+    "en",
+    "zh",
+    "ms",
+    "base_model:Qwen/Qwen2.5-7B-Instruct",
+    "base_model:finetune:Qwen/Qwen2.5-7B-Instruct",
+    "license:apache-2.0",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 7615616512,
+  "parameters_human": "7.62B",
+  "storage_bytes": 15242693708,
+  "storage_human": "15.2 GB",
+  "base_model": "Qwen/Qwen2.5-7B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ningpy/redflag-detection-V4.0 · Hugging Face",
+      "url": "https://huggingface.co/ningpy/redflag-detection-V4.0",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Models - Hugging Face",
+      "url": "https://huggingface.co/models?search=ningpy%2Fredflag-detection-V2.0",
+      "snippet": "Reset Parameters 6B 12B 32B 128B > 500B Libraries PyTorch TensorFlow JAX Transformers Diffusers GGUF MLX Transformers.js Safetensors + 45 + 47 + 44 Apps vLLM llama.cpp MLX LM LM Studio Ollama Jan Draw Things DiffusionBee JoyFusion + 8 + 10 Inference Providers Groq Novita Cerebras Nscale fal Together AI Fireworks Featherless AI Zai + 9 + 11 + 10 ..."
+    },
+    {
+      "title": "Redflag AI - GitHub",
+      "url": "https://github.com/RedFlagAI/",
+      "snippet": "Redflag AI has 4 repositories available. Follow their code on GitHub."
+    },
+    {
+      "title": "AI Model Releases in August 2026: Confirmed Updates | BenchLM",
+      "url": "https://benchlm.ai/model-updates/releases/august-2026",
+      "snippet": "22 confirmed AI model releases from 17 providers in August 2026, with primary evidence sources and BenchLM model links."
+    },
+    {
+      "title": "New ENCFORGE Ransomware Targets AI Model Files in Langflow RCE Attack",
+      "url": "https://thehackernews.com/2026/07/new-encforge-ransomware-targets-ai.html",
+      "snippet": "JADEPUFFER exploits Langflow CVE-2025-3248 to deploy ENCFORGE ransomware against AI model weights, vector indexes, and training data on the host."
+    }
+  ]
+}

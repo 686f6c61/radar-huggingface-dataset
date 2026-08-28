@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "Varun-Sai-500/DaSiamRPN",
+  "slug": "varun-sai-500-dasiamrpn",
+  "author": "Varun-Sai-500",
+  "url": "https://huggingface.co/Varun-Sai-500/DaSiamRPN",
+  "created_at": "2026-08-28T06:22:51.000Z",
+  "updated_at": "2026-08-28T06:36:56.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 452319647,
+  "storage_human": "452 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "FalconEye/DaSiamRPN at main · Varun-sai-500/FalconEye",
+      "url": "https://github.com/Varun-sai-500/FalconEye/tree/main/DaSiamRPN",
+      "snippet": "FalconEye is a multimodal perception-to-control pipeline that enables intelligent target tracking on embedded robotic platforms. It integrates segmentation, grounding, and tracking models for stable real-world deployment. - FalconEye/DaSiamRPN at main · Varun-sai-500/FalconEye"
+    },
+    {
+      "title": "GitHub - Varun-sai-500/FalconEye: FalconEye is a multimodal perception ...",
+      "url": "https://github.com/Varun-sai-500/FalconEye/tree/main",
+      "snippet": "Segment Anything (SAM) — Meta AI, for foundation-model-based image segmentation. CLIPSeg — for text- and reference-image-guided segmentation. DaSiamRPN — for robust distractor-aware Siamese object tracking. PyTorch — for deep learning development and model execution. FastAPI — for the REST API framework."
+    },
+    {
+      "title": "DaSiamRPN | vision4robotics/SiameseTracking4UAV | DeepWiki",
+      "url": "https://deepwiki.com/vision4robotics/SiameseTracking4UAV/3.1.1-dasiamrpn",
+      "snippet": "This document provides technical documentation for DaSiamRPN (Distractor-aware Siamese Region Proposal Network), the foundational anchor-based tracker implementation in the SiameseTracking4UAV repository."
+    },
+    {
+      "title": "Varun Portfolio",
+      "url": "https://varun-spectre.github.io/",
+      "snippet": "Sai Varun Reddy, Mullangi Graduate Research Assistant Arizona State University Biography I&#x27;m a CS master&#x27;s student with a passion for turning data into actionable insights and crafting robust software solutions. With three years of diverse work experience, I&#x27;ve honed my skills as a software developer and data scientist."
+    },
+    {
+      "title": "varunHF (Varun Sai) - Hugging Face",
+      "url": "https://huggingface.co/varunHF",
+      "snippet": "AI Assistant Comparison 🤖 Chat with AI assistants and compare open-source vs frontier models varunHF about 3 hours ago"
+    }
+  ]
+}

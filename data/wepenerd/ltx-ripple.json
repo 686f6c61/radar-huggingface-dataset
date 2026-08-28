@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "WepeNerd/LTX-Ripple",
+  "slug": "wepenerd-ltx-ripple",
+  "author": "WepeNerd",
+  "url": "https://huggingface.co/WepeNerd/LTX-Ripple",
+  "created_at": "2026-08-28T09:26:49.000Z",
+  "updated_at": "2026-08-28T10:02:04.000Z",
+  "license": "ltx-2-community-license-agreement",
+  "license_family": "unknown",
+  "pipeline_tag": "video-to-video",
+  "library": "comfyui",
+  "languages": [],
+  "tags": [
+    "comfyui",
+    "lora",
+    "ic-lora",
+    "ltx-2.5",
+    "video",
+    "video-editing",
+    "image-to-video",
+    "video-to-video",
+    "base_model:Lightricks/LTX-2.5",
+    "base_model:adapter:Lightricks/LTX-2.5",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 724404295,
+  "storage_human": "724 MB",
+  "base_model": "Lightricks/LTX-2.5",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "AI Video Generation Model | LTX",
+      "url": "https://ltx.io/model/video-generation-model",
+      "snippet": "Explore LTX video generation model&#x27;s capabilities to create and edit videos with AI. Generate video from text, images, or audio for production-ready content."
+    },
+    {
+      "title": "LTX-2.5 Model Open Source: AI Video Generator",
+      "url": "https://ltx.io/model/open-source",
+      "snippet": "LTX-2.5 is an open source AI video generator built on a diffusion transformer architecture for production, research, education, and experimentation."
+    },
+    {
+      "title": "LTX (text-to-video model) - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/LTX_(text-to-video_model)",
+      "snippet": "LTX-2.5 reported to add native multishot generation and a pretrained checkpoint intended for domain-specific fine-tuning. The release continued LTX&#x27;s development as a world model, with applications including robotics and physical AI."
+    },
+    {
+      "title": "WepeNerd (WepeNerd) - Hugging Face",
+      "url": "https://huggingface.co/WepeNerd/models",
+      "snippet": "AI & ML interests ... Recent Activity updated a model 25 days ago ... published a model 25 days ago ... liked a model almost 2 years ago"
+    },
+    {
+      "title": "Wepenerd - Find Top AI Models on Hugging Face",
+      "url": "https://www.aimodels.fyi/creators/huggingface/WepeNerd",
+      "snippet": "Looking for Wepenerd&#x27;s top AI models? Browse their full Hugging Face collection of 1 model. Explore AI models and contributions by Wepenerd on Huggingface."
+    }
+  ]
+}

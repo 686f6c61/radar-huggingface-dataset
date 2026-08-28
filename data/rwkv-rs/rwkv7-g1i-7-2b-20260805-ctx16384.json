@@ -1,0 +1,77 @@
+{
+  "schema": 1,
+  "id": "rwkv-rs/rwkv7-g1i-7.2b-20260805-ctx16384",
+  "slug": "rwkv-rs-rwkv7-g1i-7-2b-20260805-ctx16384",
+  "author": "rwkv-rs",
+  "url": "https://huggingface.co/rwkv-rs/rwkv7-g1i-7.2b-20260805-ctx16384",
+  "created_at": "2026-08-28T09:10:24.000Z",
+  "updated_at": "2026-08-28T09:43:52.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "rwkv",
+    "text-generation",
+    "rwkv7",
+    "recurrent",
+    "causal-lm",
+    "conversational",
+    "en",
+    "zh",
+    "base_model:BlinkDL/rwkv7-g1",
+    "base_model:finetune:BlinkDL/rwkv7-g1",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 7199141888,
+  "parameters_human": "7.20B",
+  "storage_bytes": 14398398464,
+  "storage_human": "14.4 GB",
+  "base_model": "BlinkDL/rwkv7-g1",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "fla-hub/RWKV7-G1i-7.2B-20260805 · Hugging Face",
+      "url": "https://huggingface.co/fla-hub/RWKV7-G1i-7.2B-20260805",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "RWKV/RWKV7-7.2B-20260805 · Hugging Face",
+      "url": "https://huggingface.co/RWKV/RWKV7-7.2B-20260805",
+      "snippet": "Instructions to use RWKV/RWKV7-7.2B-20260805 with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Libraries Transformers How to use RWKV/RWKV7-7.2B-20260805 with Transformers:"
+    },
+    {
+      "title": "rwkv-rs · GitHub",
+      "url": "https://github.com/rwkv-rs/",
+      "snippet": "rwkv7-ascend-npu Public RWKV-7 inference + serving on Ascend 910B3 NPU — consolidated NPU work (serving framework + sglang port + AscendC optimization). torch.npu.NPUGraph decode → B=1 latency at A100 parity."
+    },
+    {
+      "title": "RWKV Language Model",
+      "url": "https://www.rwkv.com/",
+      "snippet": "RWKV (pronounced RwaKuv) is an RNN with great LLM performance and parallelizable like a Transformer. Check RWKV-7 \"Goose\" reasoning models. It&#x27;s combining the best of RNN and transformer - great performance, linear time, constant space (no kv-cache), fast training, infinite ctxlen, and free text embedding. And it&#x27;s 100% attention-free, and a Linux Foundation AI project."
+    },
+    {
+      "title": "RWKV-LM/Research/rwkv7-g0-7.2b.md at main - GitHub",
+      "url": "https://github.com/BlinkDL/RWKV-LM/blob/main/Research/rwkv7-g0-7.2b.md",
+      "snippet": "RWKV (pronounced RwaKuv) is an RNN with great LLM performance, which can also be directly trained like a GPT transformer (parallelizable). We are at RWKV-7 \"Goose\". So it&#x27;s combining the best of RNN and transformer - great performance, linear time, constant space (no kv-cache), fast training, infinite ctx_len, and free sentence embedding."
+    }
+  ]
+}

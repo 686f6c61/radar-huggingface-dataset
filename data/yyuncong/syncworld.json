@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "yyuncong/SyncWorld",
+  "slug": "yyuncong-syncworld",
+  "author": "yyuncong",
+  "url": "https://huggingface.co/yyuncong/SyncWorld",
+  "created_at": "2026-08-28T06:43:10.000Z",
+  "updated_at": "2026-08-28T09:52:44.000Z",
+  "license": "openmdw-1.1",
+  "license_family": "oss",
+  "pipeline_tag": "image-to-video",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "cosmos3_omni",
+    "pytorch",
+    "robotics",
+    "world-model",
+    "forward-dynamics",
+    "image-to-video",
+    "custom_code",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 15750057456,
+  "parameters_human": "15.75B",
+  "storage_bytes": 31500278440,
+  "storage_human": "31.5 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "yyuncong (Yuncong Yang) · GitHub",
+      "url": "https://github.com/yyuncong/",
+      "snippet": "PhD student at UMass Amherst. yyuncong has 38 repositories available. Follow their code on GitHub."
+    },
+    {
+      "title": "yyuncong (Yuncong Yang) - Hugging Face",
+      "url": "https://huggingface.co/yyuncong/activity/all",
+      "snippet": "AI & ML interests ... Recent Activity published a model 15 minutes ago ... liked a model 14 days ago"
+    },
+    {
+      "title": "yyuncong/MindJourney-World-Model · Hugging Face",
+      "url": "https://huggingface.co/yyuncong/MindJourney-World-Model",
+      "snippet": "MindJourney: Test-Time Scaling with World Models for Spatial Reasoning NeurIPS 2025 Yuncong Yang, Jiageng Liu, Zheyuan Zhang, Siyuan Zhou, Reuben Tan, Jianwei Yang, Yilun Du, Chuang Gan MindJourney is a test-time scaling framework that leverages the 3D imagination capability of World Models to strengthen spatial reasoning in Vision-Language Models (VLMs). We evaluate on the SAT dataset and ..."
+    },
+    {
+      "title": "GitHub Pages - Yuncong Yang",
+      "url": "https://yyuncong.github.io/",
+      "snippet": "Yuncong Yang I am currently a second-year PhD student at UMass Amherst, where I am supervised by Prof. Chuang Gan and collaborate with Prof. Yilun Du. Previously, I graduated from Columbia&#x27;s Fu Foundation School of Engineering with both an M.S. and a B.S. in Computer Science (Summa Cum Laude). I was fortunate to work under the supervision of Prof. Shih-Fu Chang at Columbia University and with ..."
+    },
+    {
+      "title": "[2504.03561] SynWorld: Virtual Scenario Synthesis for Agentic Action ...",
+      "url": "https://arxiv.org/abs/2504.03561",
+      "snippet": "In the interaction between agents and their environments, agents expand their capabilities by planning and executing actions. However, LLM-based agents face substantial challenges when deployed in novel environments or required to navigate unconventional action spaces. To empower agents to autonomously explore environments, optimize workflows, and enhance their understanding of actions, we ..."
+    }
+  ]
+}

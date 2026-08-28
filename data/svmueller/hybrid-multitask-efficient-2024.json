@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "svmueller/hybrid-multitask-efficient-2024",
+  "slug": "svmueller-hybrid-multitask-efficient-2024",
+  "author": "svmueller",
+  "url": "https://huggingface.co/svmueller/hybrid-multitask-efficient-2024",
+  "created_at": "2026-08-28T09:35:28.000Z",
+  "updated_at": "2026-08-28T09:35:37.000Z",
+  "license": "bsd-3-clause",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "hybrid",
+    "pytorch",
+    "multitask",
+    "license:bsd-3-clause",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 16576,
+  "parameters_human": "16576",
+  "storage_bytes": 66784,
+  "storage_human": "66784 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Multitask Learning 1997-2024: Part I Fundamentals",
+      "url": "https://hdsr.mitpress.mit.edu/pub/7fcc3jhv",
+      "snippet": "Abstract In this three-part survey, we review the literature on multitask learning (MTL) from its inception in the 1990s to the present in 2024. Unlike single-task learning (STL), MTL is a learning paradigm that simultaneously learns multiple related tasks by leveraging both task-specific and shared information. MTL offers a range of benefits, including streamlined model architectures ..."
+    },
+    {
+      "title": "Discover Mazak&#x27;s Hybrid Multi-Tasking Machines",
+      "url": "https://premierequipment.com/cnc-blog/mazak-hybrid-multi-tasking-cnc-machines/",
+      "snippet": "Discover Mazak&#x27;s groundbreaking Hybrid Multi-Tasking machines, seamlessly integrating additive and subtractive processes for flexibility and efficiency."
+    },
+    {
+      "title": "Multi-task approach based on combined CNN-transformer for efficient ...",
+      "url": "https://link.springer.com/article/10.1186/s42492-024-00155-w",
+      "snippet": "Nowadays, inspired by the great success of Transformers in Natural Language Processing, many applications of Vision Transformers (ViTs) have been investigated in the field of medical image analysis including breast ultrasound (BUS) image segmentation and classification. In this paper, we propose an efficient multi-task framework to segment and classify tumors in BUS images using hybrid ..."
+    },
+    {
+      "title": "arXiv.org e-Print archive",
+      "url": "https://arxiv.org/pdf/2404.18961",
+      "snippet": "arXiv.org e-Print archive"
+    },
+    {
+      "title": "PDF Hybrid Multitask Learning with BERT - web.stanford.edu",
+      "url": "https://web.stanford.edu/class/archive/cs/cs224n/cs224n.1254/final-reports/256979182.pdf",
+      "snippet": "My train_multitask retains a multitask scenario for loading and handling data, as well as the MultitaskBERT model with a common BERT backbone and separate top layers for each task-specific output. This structure is typical of MTL models. I&#x27;ve employed a round-robin processing of training batches among the three tasks."
+    }
+  ]
+}

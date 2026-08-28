@@ -5,7 +5,7 @@
   "author": "Realist2026",
   "url": "https://huggingface.co/Realist2026/cv-guestimator-llama3.2",
   "created_at": "2026-08-19T09:41:21.000Z",
-  "updated_at": "2026-08-26T23:50:59.000Z",
+  "updated_at": "2026-08-27T07:33:31.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -31,8 +31,8 @@
   "trending_score": 0,
   "parameters": 3212749824,
   "parameters_human": "3.21B",
-  "storage_bytes": 6540046512,
-  "storage_human": "6.5 GB",
+  "storage_bytes": 12965575560,
+  "storage_human": "13.0 GB",
   "base_model": "unsloth/llama-3.2-3b-instruct",
   "formats": [
     "safetensors"

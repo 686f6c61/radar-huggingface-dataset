@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "Zyroxx66/tinystories-mini-llm",
+  "slug": "zyroxx66-tinystories-mini-llm",
+  "author": "Zyroxx66",
+  "url": "https://huggingface.co/Zyroxx66/tinystories-mini-llm",
+  "created_at": "2026-08-28T07:35:21.000Z",
+  "updated_at": "2026-08-28T07:35:23.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "text-generation",
+    "transformer",
+    "tinystories",
+    "pytorch",
+    "en",
+    "dataset:roneneldan/TinyStories",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 23047099,
+  "storage_human": "23 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - NonsonoNicola/TinyStories-LLM: Tiny transformer model for ...",
+      "url": "https://github.com/NonsonoNicola/TinyStories-LLM",
+      "snippet": "🧸 TinyStories LLM - A Miniature Language Model for Storytelling A 40M parameter decoder-only transformer trained on the TinyStories dataset, designed to generate short, coherent children&#x27;s stories. Inspired by the Mistral architecture, built and trained from scratch by a self-taught student exploring large language models."
+    },
+    {
+      "title": "aman99dex/Mini-LLM - GitHub",
+      "url": "https://github.com/aman99dex/Mini-LLM",
+      "snippet": "Mini LLM (JAX + Flax NNX) A compact, notebook-driven project for building, training, saving, loading, and running a small GPT-like language model on TinyStories data. This project uses: JAX for array compute Flax NNX for model definition and training utilities Grain for data loading Optax for optimization and LR scheduling Tiktoken (GPT-2 ..."
+    },
+    {
+      "title": "TinyStories · Datasets - AI-ModelScope",
+      "url": "https://www.modelscope.cn/datasets/AI-ModelScope/TinyStories",
+      "snippet": "ModelScope——汇聚各领域先进的机器学习模型，提供模型探索体验、推理、训练、部署和应用的一站式服务。在这里，共建模型开源社区，发现、学习、定制和分享心仪的模型。"
+    },
+    {
+      "title": "roneneldan/TinyStories · Datasets at Hugging Face",
+      "url": "https://huggingface.co/datasets/roneneldan/TinyStories",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "TinyLLM",
+      "url": "https://tinyllm.wendegass.com/",
+      "snippet": "TinyLLM offers a hands-on exploration of Large Language Models (LLMs), focusing on building and training a model from scratch using transformer architecture principles. Inspired by the GPT-2 model, TinyLLM utilizes transformer decoder blocks to create a simplified yet functional LLM. The source code for this project is available on GitHub. The model is trained on the tiny-stories dataset for ..."
+    }
+  ]
+}

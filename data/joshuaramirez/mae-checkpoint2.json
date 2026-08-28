@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "joshuaramirez/mae-checkpoint2",
+  "slug": "joshuaramirez-mae-checkpoint2",
+  "author": "joshuaramirez",
+  "url": "https://huggingface.co/joshuaramirez/mae-checkpoint2",
+  "created_at": "2026-08-28T08:45:07.000Z",
+  "updated_at": "2026-08-28T08:45:16.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "mae",
+    "pytorch",
+    "classification",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 49600,
+  "parameters_human": "49600",
+  "storage_bytes": 198880,
+  "storage_human": "198880 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ai-capstone-threat-intelligence-feed-dashboard/checkpoint2 ... - GitHub",
+      "url": "https://github.com/jesusalvarezaguilar0/ai-capstone-threat-intelligence-feed-dashboard/tree/main/checkpoint2-results/docs",
+      "snippet": "This project builds an AI-powered pipeline that collects threat intelligence from multiple sources, summarizes and extracts key indicators using AI, ranks threats based on an organization&#x27;s technology stack, and presents prioritized security risks in a dashboard to help analysts focus on the most critical threats. - ai-capstone-threat ..."
+    },
+    {
+      "title": "checkpoint AI Models | Civitai",
+      "url": "https://civitai.com/tag/checkpoint",
+      "snippet": "Browse 200 Stable Diffusion & Flux models, LoRAs, checkpoints, and embeddings tagged with checkpoint."
+    },
+    {
+      "title": "Models - Hugging Face",
+      "url": "https://huggingface.co/models?other=checkpoint",
+      "snippet": "Explore machine learning models."
+    },
+    {
+      "title": "LLM Leaderboard 2026: Compare 300+ Top AI Models by Intelligence, Speed ...",
+      "url": "https://llm-stats.com/leaderboards/llm-leaderboard",
+      "snippet": "The LLM Leaderboard — independent ranking of GPT, Claude, Gemini, Llama, DeepSeek and 300+ AI models by intelligence, speed and price. Filter by provider, license, modality and context window; sort by every benchmark. Composite LLM Stats Score updated continuously from public benchmarks and live API metrics."
+    },
+    {
+      "title": "AI Models | Civitai",
+      "url": "https://civitai.com/models",
+      "snippet": "Browse thousands of free Stable Diffusion & Flux models, LoRAs, checkpoints, and embeddings. The largest collection of AI image generation resources."
+    }
+  ]
+}

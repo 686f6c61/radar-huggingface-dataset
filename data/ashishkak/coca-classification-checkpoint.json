@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "ashishkak/coca-classification-checkpoint",
+  "slug": "ashishkak-coca-classification-checkpoint",
+  "author": "ashishkak",
+  "url": "https://huggingface.co/ashishkak/coca-classification-checkpoint",
+  "created_at": "2026-08-28T06:23:20.000Z",
+  "updated_at": "2026-08-28T06:23:29.000Z",
+  "license": "bsd-3-clause",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "coca",
+    "pytorch",
+    "classification",
+    "license:bsd-3-clause",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 24832,
+  "parameters_human": "24832",
+  "storage_bytes": 99808,
+  "storage_human": "99808 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "checkpoint AI Models | Civitai",
+      "url": "https://civitai.com/tag/checkpoint",
+      "snippet": "Browse 200 Stable Diffusion & Flux models, LoRAs, checkpoints, and embeddings tagged with checkpoint."
+    },
+    {
+      "title": "AI-Enabled Mobile Application for Cacao Variety ... - Springer",
+      "url": "https://link.springer.com/chapter/10.1007/978-3-032-20318-2_5",
+      "snippet": "The identification of cacao (Theobroma cacao) is essential for quality assurance, optimized postharvest practices, and traceability within the cacao value chain. This study focuses on the development of software solution that performs real-time classification of..."
+    },
+    {
+      "title": "Classification of Cacao Pod if Healthy or Attack by Pest or Black Pod ...",
+      "url": "https://ieeexplore.ieee.org/document/9936817",
+      "snippet": "The model can classify three conditions of a given cacao pod image: healthy, black pod disease attack, and pest attack. Under controlled conditions, the model correctly classifies the cacao pod condition with an accuracy of 94 Thus, using the trained lightweight model, it is possible to accurately and automate the classification of cacao pod ..."
+    },
+    {
+      "title": "ttorreschloe/coca-checkpoint · Hugging Face",
+      "url": "https://huggingface.co/ttorreschloe/coca-checkpoint",
+      "snippet": "Repository status The Python file contains the model and runnable example or training entry point. config.json records the generated architecture settings. training_args.json records the default experiment recipe. model.safetensors is a valid initialization checkpoint for smoke tests; it is not presented as a trained benchmark checkpoint. No benchmark score is claimed in this repository."
+    },
+    {
+      "title": "Google",
+      "url": "https://www.google.com/",
+      "snippet": "Search the world&#x27;s information, including webpages, images, videos and more. Google has many special features to help you find exactly what you&#x27;re looking for."
+    }
+  ]
+}

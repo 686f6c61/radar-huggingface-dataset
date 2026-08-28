@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "osina/q-Taxi-v4",
+  "slug": "osina-q-taxi-v4",
+  "author": "osina",
+  "url": "https://huggingface.co/osina/q-Taxi-v4",
+  "created_at": "2026-08-28T10:27:35.000Z",
+  "updated_at": "2026-08-28T10:27:40.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "reinforcement-learning",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "Taxi-v3",
+    "q-learning",
+    "reinforcement-learning",
+    "custom-implementation",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 141437,
+  "storage_human": "141437 B",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "EverVissionAI/q-Taxi-v4 · Hugging Face",
+      "url": "https://huggingface.co/EverVissionAI/q-Taxi-v4",
+      "snippet": "Q-Learning Agent playing1 Taxi-v4 This is a trained model of a Q-Learning agent playing Taxi-v4 ."
+    },
+    {
+      "title": "tkien17/q-Taxi-v4 · Hugging Face",
+      "url": "https://huggingface.co/tkien17/q-Taxi-v4",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "hands-on-reinforcement-learning/9. mini-projects/Taxi_v4_using_q ...",
+      "url": "https://github.com/s-4-m-a-n/hands-on-reinforcement-learning/blob/main/9.%20mini-projects/Taxi_v4_using_q_learning.ipynb",
+      "snippet": "Hands-on implementations of Reinforcement Learning algorithms from scratch, progressing from classical methods to deep RL with practical experiments. - s-4-m-a-n/hands-on-reinforcement-learning"
+    },
+    {
+      "title": "Froststar16/taxi-v4-qlearning - GitHub",
+      "url": "https://github.com/Froststar16/taxi-v4-qlearning",
+      "snippet": "Taxi-v3 is deprecated in current Gymnasium versions in favor of Taxi-v4, which fixes bugs in the optional is_rainy / fickle_passenger stochasticity arguments. I used the default deterministic settings (is_rainy=False, fickle_passenger=False), so the environment dynamics are identical to the \"classic\" Taxi problem — just running on the ..."
+    },
+    {
+      "title": "Make AI Power Within Reach | ModelTaxi",
+      "url": "https://www.modeltaxi.com/",
+      "snippet": "AI Models We provide stable, efficient and cost-effective model access solutions for enterprise AI applications One API endpoint to seamlessly switch between GPT-4o, Claude 3.5, Gemini 1.5, DeepSeek and models Fully compatible with OpenAI API format, zero-cost migration for existing apps, streaming output supported"
+    }
+  ]
+}

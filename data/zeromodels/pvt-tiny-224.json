@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "zeromodels/pvt-tiny-224",
+  "slug": "zeromodels-pvt-tiny-224",
+  "author": "zeromodels",
+  "url": "https://huggingface.co/zeromodels/pvt-tiny-224",
+  "created_at": "2026-08-28T01:52:33.000Z",
+  "updated_at": "2026-08-28T01:52:35.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-classification",
+  "library": "zeromodels",
+  "languages": [],
+  "tags": [
+    "zeromodels",
+    "keras",
+    "image-classification",
+    "pvt",
+    "backbone",
+    "arxiv:2102.12122",
+    "pytorch",
+    "jax",
+    "tf",
+    "base_model:Zetatech/pvt-tiny-224",
+    "base_model:finetune:Zetatech/pvt-tiny-224",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 53292584,
+  "storage_human": "53 MB",
+  "base_model": "Zetatech/pvt-tiny-224",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "zeromodels/pvt-tiny-224 · Hugging Face",
+      "url": "https://huggingface.co/zeromodels/pvt-tiny-224",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Zetatech/pvt-tiny-224 at main - Hugging Face",
+      "url": "https://huggingface.co/Zetatech/pvt-tiny-224/tree/main",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "PVT-Tiny-224 Open-Source Image Classification Model - Free Deployment ...",
+      "url": "https://model.aibase.com/models/details/1915694609579270146",
+      "snippet": "## 🚀 Pyramid Vision Transformer (tiny-sized model) *The Pyramid Vision Transformer (PVT) is a pre - trained model on ImageNet - 1K for image classification tasks, offering efficient feature extraction and classification capabilities.* ## 🚀 Quick Start The Pyramid Vision Transformer (PVT) model is pre - trained on ImageNet - 1K (1 million images, 1000 classes) at a resolution of 224x224 ..."
+    },
+    {
+      "title": "Zetatech/pvt-tiny-224 - AI Model Zoo - BimAnt",
+      "url": "https://zoo.bimant.com/model/201868",
+      "snippet": "Model description The Pyramid Vision Transformer (PVT) is a transformer encoder model (BERT-like) pretrained on ImageNet-1k (also referred to as ILSVRC2012), a dataset comprising 1 million images and 1,000 classes, also at resolution 224x224. Images are presented to the model as a sequence of variable-size patches, which are linearly embedded."
+    },
+    {
+      "title": "Pyramid Vision Transformer (PVT) - Model Database",
+      "url": "https://modeldatabase.com/docs/transformers/model_doc/pvt.html",
+      "snippet": "Pyramid Vision Transformer (PVT) Overview The PVT model was proposed in Pyramid Vision Transformer: A Versatile Backbone for Dense Prediction without Convolutions by Wenhai Wang, Enze Xie, Xiang Li, Deng-Ping Fan, Kaitao Song, Ding Liang, Tong Lu, Ping Luo, Ling Shao. The PVT is a type of vision transformer that utilizes a pyramid structure to make it an effective backbone for dense prediction ..."
+    }
+  ]
+}

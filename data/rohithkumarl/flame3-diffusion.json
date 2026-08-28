@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "rohithkumarl/FLAME3-DIFFUSION",
+  "slug": "rohithkumarl-flame3-diffusion",
+  "author": "rohithkumarl",
+  "url": "https://huggingface.co/rohithkumarl/FLAME3-DIFFUSION",
+  "created_at": "2026-08-28T05:21:31.000Z",
+  "updated_at": "2026-08-28T10:41:21.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 873250407,
+  "storage_human": "873 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Flame 3 Diffusion Object Detection Model (v7, 2023-08-28 5 ... - Roboflow",
+      "url": "https://universe.roboflow.com/maxgray/flame-3-diffusion/dataset/7",
+      "snippet": "2083 open source Fire images and annotations in multiple formats for training computer vision models. Flame 3 Diffusion (v7, 2023-08-28 5:38pm), created by maxgray"
+    },
+    {
+      "title": "FLAME 3 - Radiometric Thermal UAV Imagery for Wildfire Management",
+      "url": "https://ieee-dataport.org/open-access/flame-3-radiometric-thermal-uav-imagery-wildfire-management",
+      "snippet": "FLAME 3 is the third dataset in the FLAME series of aerial UAV-collected side-by-side multi-spectral wildlands fire imagery (see FLAME 1 and FLAME 2). This set contains a single-burn subset of the larger FLAME 3 dataset focusing specifically on Computer Vision tasks such as fire detection and segmentation."
+    },
+    {
+      "title": "[2412.02831] FLAME 3 Dataset: Unleashing the Power of Radiometric ...",
+      "url": "https://arxiv.org/abs/2412.02831",
+      "snippet": "The increasing accessibility of radiometric thermal imaging sensors for unmanned aerial vehicles (UAVs) offers significant potential for advancing AI-driven aerial wildfire management. Radiometric imaging provides per-pixel temperature estimates, a valuable improvement over non-radiometric data that requires irradiance measurements to be converted into visible images using RGB color palettes ..."
+    },
+    {
+      "title": "rohithkumarl (Rohith Kumar L) - Hugging Face",
+      "url": "https://huggingface.co/rohithkumarl",
+      "snippet": "Machine learning, Deep learning, Macos"
+    },
+    {
+      "title": "FLAME 3 Dataset: Unleashing the Power of Radiometric Thermal UAV ...",
+      "url": "https://arxiv.org/html/2412.02831v1",
+      "snippet": "The FLAME 3 dataset opens new avenues for research and development in AI-driven wildfire management, encouraging the creation of robust models that leverage the rich information contained in radiometric thermal imagery."
+    }
+  ]
+}

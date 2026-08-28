@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "mocomoco-inc/mocovoice-whisper-turbo-ja-automotive-synthetic-v0.1",
+  "slug": "mocomoco-inc-mocovoice-whisper-turbo-ja-automotive-synthetic-v0-1",
+  "author": "mocomoco-inc",
+  "url": "https://huggingface.co/mocomoco-inc/mocovoice-whisper-turbo-ja-automotive-synthetic-v0.1",
+  "created_at": "2026-08-28T05:46:58.000Z",
+  "updated_at": "2026-08-28T05:47:09.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "automatic-speech-recognition",
+  "library": "ctranslate2",
+  "languages": [
+    "ja"
+  ],
+  "tags": [
+    "ctranslate2",
+    "whisper",
+    "whisper-large-v3-turbo",
+    "japanese",
+    "automatic-speech-recognition",
+    "synthetic-data",
+    "mocovoice",
+    "ja",
+    "base_model:openai/whisper-large-v3-turbo",
+    "base_model:finetune:openai/whisper-large-v3-turbo",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 814054531,
+  "storage_human": "814 MB",
+  "base_model": "openai/whisper-large-v3-turbo",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Voice Recognition AI \"mocoVoice\" | mocomoco inc.",
+      "url": "https://products.mocomoco.ai/en/",
+      "snippet": "We provide a one-stop solution from field-specific AI—including our medical model co-developed with Hiroshima University Hospital—to the software itself. Beyond handling specialized terminology and custom export formats, mocoVoice seamlessly integrates into actual workflows with robust access control and team sharing features."
+    },
+    {
+      "title": "Voice Recognition AI mocoVoice Available | mocomoco inc.",
+      "url": "https://www.mocomoco.ai/en/",
+      "snippet": "SERVICE What we do Voice recognition AI built for the real world, supporting work in healthcare, construction, and beyond. Learn more"
+    },
+    {
+      "title": "Introducing mocoVoice Web: Our Transcription and Minutes Service",
+      "url": "https://www.mocomoco.ai/en/news/mocoVoice-web/",
+      "snippet": "We are proud to introduce how to use mocoVoice Web, our highly recommended meeting minutes service. mocoVoice is a transcription and knowledge management solution powered by state-of-the-art speech recognition and generative AI. Whether it&#x27;s internal meetings or"
+    },
+    {
+      "title": "mocoVoice user guide",
+      "url": "https://guide.mocomoco.ai/en/",
+      "snippet": "The official manual for mocoVoice, including instructions, frequently asked questions, and release notes."
+    },
+    {
+      "title": "【公式】音声認識AI「モコボイス」 by mocomoco inc.",
+      "url": "https://products.mocomoco.ai/",
+      "snippet": "専門用語と現場ノイズに強い音声認識AI「モコボイス」。文字起こし、議事録作成、組織での共有・検索に加え、オンプレ ..."
+    }
+  ]
+}

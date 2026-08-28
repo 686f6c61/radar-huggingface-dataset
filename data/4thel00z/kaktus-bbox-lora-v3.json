@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "4thel00z/kaktus-bbox-lora-v3",
+  "slug": "4thel00z-kaktus-bbox-lora-v3",
+  "author": "4thel00z",
+  "url": "https://huggingface.co/4thel00z/kaktus-bbox-lora-v3",
+  "created_at": "2026-08-28T10:05:40.000Z",
+  "updated_at": "2026-08-28T10:05:43.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "peft",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "peft",
+    "safetensors",
+    "lora",
+    "qwen3-vl",
+    "document-layout",
+    "bounding-boxes",
+    "document-ai",
+    "vision-language",
+    "image-text-to-text",
+    "en",
+    "base_model:Qwen/Qwen3-VL-4B-Instruct",
+    "base_model:adapter:Qwen/Qwen3-VL-4B-Instruct",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 66134328,
+  "storage_human": "66 MB",
+  "base_model": "Qwen/Qwen3-VL-4B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "4thel00z/kaktus-bbox-lora-v1 · Hugging Face",
+      "url": "https://huggingface.co/4thel00z/kaktus-bbox-lora-v1",
+      "snippet": "4thel00z / kaktus-bbox-lora-v1 like 0 Image-Text-to-Text PEFT Safetensors English lora qwen3-vl document-layout bounding-boxes document-ai vision-language License:apache-2.0 Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "AI Models | Civitai",
+      "url": "https://civitai.com/models",
+      "snippet": "Browse thousands of free Stable Diffusion & Flux models, LoRAs, checkpoints, and embeddings. The largest collection of AI image generation resources."
+    },
+    {
+      "title": "lora AI Models | Civitai",
+      "url": "https://civitai.com/tag/lora",
+      "snippet": "Browse 28,875 Stable Diffusion & Flux models, LoRAs, checkpoints, and embeddings tagged with lora."
+    },
+    {
+      "title": "10,000+ LoRA Models for Flux, Wan & SDXL | Browse Free",
+      "url": "https://loraai.io/loras",
+      "snippet": "Browse 10,000+ LoRA models for Flux, WAN, and SDXL. Character LoRAs, style LoRAs, and concept LoRAs with examples. Filter by model, tag, or search."
+    },
+    {
+      "title": "Models - Hugging Face",
+      "url": "https://huggingface.co/models?search=lora",
+      "snippet": "Explore machine learning models. CQdesign/LTX-2.5-CQ-Video-and-Image-Enhancer-LoRAs"
+    }
+  ]
+}

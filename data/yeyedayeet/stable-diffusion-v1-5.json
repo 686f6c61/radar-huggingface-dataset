@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "Yeyedayeet/stable-diffusion-v1-5",
+  "slug": "yeyedayeet-stable-diffusion-v1-5",
+  "author": "Yeyedayeet",
+  "url": "https://huggingface.co/Yeyedayeet/stable-diffusion-v1-5",
+  "created_at": "2026-08-28T10:04:06.000Z",
+  "updated_at": "2026-08-28T10:04:06.000Z",
+  "license": "creativeml-openrail-m",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-image",
+  "library": "diffusers",
+  "languages": [],
+  "tags": [
+    "diffusers",
+    "safetensors",
+    "stable-diffusion",
+    "stable-diffusion-diffusers",
+    "text-to-image",
+    "arxiv:2207.12598",
+    "arxiv:2112.10752",
+    "arxiv:2103.00020",
+    "arxiv:2205.11487",
+    "arxiv:1910.09700",
+    "license:creativeml-openrail-m",
+    "endpoints_compatible",
+    "diffusers:StableDiffusionPipeline",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 859520964,
+  "parameters_human": "859.5M",
+  "storage_bytes": 49900909164,
+  "storage_human": "49.9 GB",
+  "base_model": null,
+  "formats": [
+    "diffusers",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "stable-diffusion-v1-5/stable-diffusion-v1-5 · Hugging Face",
+      "url": "https://huggingface.co/stable-diffusion-v1-5/stable-diffusion-v1-5",
+      "snippet": "Modifications to the original model card are in red or green Stable Diffusion is a latent text-to-image diffusion model capable of generating photo-realistic images given any text input. For more information about how Stable Diffusion functions, please have a look at 🤗&#x27;s Stable Diffusion blog. The Stable-Diffusion-v1-5 checkpoint was initialized with the weights of the Stable-Diffusion-v1-2 ..."
+    },
+    {
+      "title": "stable-diffusion-v1-5 (SD v1.5) - Hugging Face",
+      "url": "https://huggingface.co/stable-diffusion-v1-5",
+      "snippet": "Legacy deprecated Stable Diffusion models AI & ML interests Legacy deprecated Stable Diffusion models Team members 1"
+    },
+    {
+      "title": "GitHub - lizhen0211/stable-diffusion-v1-5",
+      "url": "https://github.com/lizhen0211/stable-diffusion-v1-5",
+      "snippet": "Stable Diffusion is a latent text-to-image diffusion model capable of generating photo-realistic images given any text input. For more information about how Stable Diffusion functions, please have a look at 🤗&#x27;s Stable Diffusion blog. The Stable-Diffusion-v1-5 checkpoint was initialized with the weights of the Stable-Diffusion-v1-2 checkpoint and subsequently fine-tuned on 595k steps at ..."
+    },
+    {
+      "title": "stable-diffusion-v1-5-stable-diffusion-v1-5/README.md at main - GitHub",
+      "url": "https://github.com/Shan-jr/stable-diffusion-v1-5-stable-diffusion-v1-5/blob/main/README.md",
+      "snippet": "Modifications to the original model card are in red or green Stable Diffusion is a latent text-to-image diffusion model capable of generating photo-realistic images given any text input. For more information about how Stable Diffusion functions, please have a look at 🤗&#x27;s Stable Diffusion blog. The Stable-Diffusion-v1-5 checkpoint was initialized with the weights of the Stable-Diffusion-v1-2 ..."
+    },
+    {
+      "title": "Stable Diffusion V1 5 - AI Models",
+      "url": "https://aimodels.org/ai-models/generative-ai-art/stable-diffusion-v1-5/",
+      "snippet": "Stable Diffusion V1 5 Stable Diffusion is an AI model that can generate photo-realistic images from text inputs. It uses a latent text-to-image diffusion process to create these images, which can be used for a variety of applications such as generating artwork, creating visuals for marketing materials, and more."
+    }
+  ]
+}

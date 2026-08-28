@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "SayedShaun/bengali-whisper-medium-ct2",
+  "slug": "sayedshaun-bengali-whisper-medium-ct2",
+  "author": "SayedShaun",
+  "url": "https://huggingface.co/SayedShaun/bengali-whisper-medium-ct2",
+  "created_at": "2026-08-28T08:01:47.000Z",
+  "updated_at": "2026-08-28T08:12:02.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "automatic-speech-recognition",
+  "library": "ctranslate2",
+  "languages": [
+    "bn"
+  ],
+  "tags": [
+    "ctranslate2",
+    "whisper",
+    "bengali",
+    "bangla",
+    "speech-recognition",
+    "faster-whisper",
+    "quantized",
+    "automatic-speech-recognition",
+    "bn",
+    "base_model:SayedShaun/bengali-whisper-medium",
+    "base_model:finetune:SayedShaun/bengali-whisper-medium",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 774731149,
+  "storage_human": "775 MB",
+  "base_model": "SayedShaun/bengali-whisper-medium",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "SayedShaun/bengali-whisper-medium · Hugging Face",
+      "url": "https://huggingface.co/SayedShaun/bengali-whisper-medium",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GitHub - anon4445/bengali_whisper",
+      "url": "https://github.com/anon4445/bengali_whisper",
+      "snippet": "This study focuses on fine-tuning the pre-trained Whisper model for Bengali speech recognition. The key steps involved are: Data preparation: The Common Voice Corpus 9.0 Bengali dataset is used for training and evaluation. Data augmentation: The training data is augmented using SpecAugment, dithering noise addition, and mixed augmentation to improve model robustness and generalization. Fine ..."
+    },
+    {
+      "title": "zarifmahir21/whisper-medium-bangla · Hugging Face",
+      "url": "https://huggingface.co/zarifmahir21/whisper-medium-bangla",
+      "snippet": "Whisper Bengali This model is a fine-tuned version of bengaliAI/tugstugi_bengaliai-asr_whisper-medium on the Bengali ASR Chunked dataset. It achieves the following results on the evaluation set: Loss: 0.1679 Wer: 22.7111 Model description More information needed Intended uses & limitations More information needed Training and evaluation data More information needed Training procedure Training ..."
+    },
+    {
+      "title": "bengali-whisper/README.md at main · ehzawad/bengali-whisper",
+      "url": "https://github.com/ehzawad/bengali-whisper/blob/main/README.md",
+      "snippet": "Notes ct2_utils.py is a verbatim copy of the helper from the bengali-whisper-medium repo. It solves the tokenizers crate version mismatch by regenerating tokenizer.json from the slow-tokenizer files (vocab.json, merges.txt, added_tokens.json, special_tokens_map.json, normalizer.json, tokenizer_config.json) during conversion."
+    },
+    {
+      "title": "Whisper Medium - Open Source AI Model | TheOpenAI | Open Source AI",
+      "url": "https://www.theopensource.ai/models/whisper-medium",
+      "snippet": "Balanced speech recognition model offering good accuracy with reasonable resource usage. Learn about Whisper Medium&#x27;s capabilities, performance, and use cases."
+    }
+  ]
+}

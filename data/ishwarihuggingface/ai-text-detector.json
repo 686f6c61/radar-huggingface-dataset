@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "ishwarihuggingface/ai-text-detector",
+  "slug": "ishwarihuggingface-ai-text-detector",
+  "author": "ishwarihuggingface",
+  "url": "https://huggingface.co/ishwarihuggingface/ai-text-detector",
+  "created_at": "2026-08-28T08:58:21.000Z",
+  "updated_at": "2026-08-28T08:58:32.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-classification",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "distilbert",
+    "text-classification",
+    "arxiv:1910.09700",
+    "text-embeddings-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 66955010,
+  "parameters_human": "67.0M",
+  "storage_bytes": 267832560,
+  "storage_human": "268 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Hugging Face Ai Detector - AI-Powered Content Detection",
+      "url": "https://duckduckgo.com/y.js?ad_domain=textguard.ai&ad_provider=bingv7aa&ad_type=txad&click_metadata=VK2po7fR19BwVwgQGeQy1Xmdumz9iKps4dFqsIT9ghIaeY1q6bLgVf9I2XxqzwqyoJ9gdawQhKvKasrHe1gsBXSB5f8bKOzeAH%2DUHKw97s8gySaRSJisXfoagYff405AeViE81D%2DMLFRzAmZ4DWeoBd8GGjJ2I_yC4oVTjBSvDQ.2%2DyWvldqMmHBktVqEIeG9g&rut=18b7de6854d06ddeb20a261fd4ebc847a8f9c781be472ab8152286997ceea190&u3=https%3A%2F%2Fwww.bing.com%2Faclick%3Fld%3De87gc4ohD6IemeuKGLQG8UkjVUCUxto_UcSktCoXg9D6XpxoK%2DaxUz%2D6BQCIkhcmtxo8I2Yw4cqFkGggvCP9sNJ14Nujgn3R9ip1b91X_QX2Cnl3LvZ1paM17HmvU2zK2iL5LzhWnzB7FGzEev2ig6j9rtNtEevI72ostXkoY0DtRmJ_r1bvGJwwYXjTuSpar5oYsSc2D5HYn5FP1gl0y7iZXo9r4%26u%3DaHR0cHMlM2ElMmYlMmZ0ZXh0Z3VhcmQuYWklMmZkaXNjb3ZlciUyZmRldGVjdGlvbiUzZnV0bV9zb3VyY2UlM2Q1MjQ1NTg1NjUlMjZ1dG1fY2FtcGFpZ25pZCUzZDUyNDU1ODU2NSUyNnV0bV9tZWRpdW0lM2QxMzIxNjE1OTYzMjM0MTg0JTI2dXRtX2NvbnRlbnQlM2QlMjZrZXl3b3JkJTNkaHVnZ2luZyUyNTIwZmFjZSUyNTIwYWklMjUyMGRldGVjdG9yJTI2Z19waHlzJTNkMTI2NDA4JTI2Z19pbnQlM2QlMjZzb3VyY2UlM2RiaW5nJTI2dHJhZmZpY3NvdXJjZSUzZFNlYXJjaCUyNnV0bV9jYW1wYWlnbiUzZFBfVEVYVEdVQVJEX0NPTVBFVElUT1JTX1dXX0FOWV8yNy4wNC4yMDI2X0QuU1RSJTI2bXNjbGtpZCUzZDk1M2Y5OTZmZTZkODFlZTMxOTNhZjNmZTg3MGUxNzg0%26rlid%3D953f996fe6d81ee3193af3fe870e1784&vqd=4-186275595014383371165000510037173033431&iurl=%7B1%7DIG%3DEC31EC925A144952960D112B10A0278B%26CID%3D2A04E634BCF06A341F4CF1F7BDFE6BCD%26ID%3DDevEx%2C5036.1",
+      "snippet": "Hugging Face Ai Detector — TextGuard detects AI, humanizes & checks originality in one. Tired of inaccurate AI tools? TextGuard delivers 99% accuracy. No sign-up, no credit card."
+    },
+    {
+      "title": "ishwarihuggingface/ai-text-detector · Hugging Face",
+      "url": "https://huggingface.co/ishwarihuggingface/ai-text-detector",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "desklib/ai-text-detector-v1.01 · Hugging Face",
+      "url": "https://huggingface.co/desklib/ai-text-detector-v1.01",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GitHub - lahcen001/AI-Text-Detector",
+      "url": "https://github.com/lahcen001/AI-Text-Detector",
+      "snippet": "A modern, responsive AI Text Detector application built with Next.js, Chadcn UI, and Framer Motion. The app supports multiple languages (English, French, Arabic) with RTL support and features beautiful animations. Now powered by Hugging Face AI models for real AI detection!"
+    },
+    {
+      "title": "Desklib AI Text Detector - GitHub",
+      "url": "https://github.com/desklib/ai-text-detector",
+      "snippet": "Desklib AI Text Detector This repository contains the code and resources for an AI-generated text detection model developed by Desklib. This model is designed to classify English text as either human-written or AI-generated."
+    }
+  ]
+}

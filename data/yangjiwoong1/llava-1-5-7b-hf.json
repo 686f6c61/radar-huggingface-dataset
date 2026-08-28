@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "yangjiwoong1/llava-1.5-7b-hf",
+  "slug": "yangjiwoong1-llava-1-5-7b-hf",
+  "author": "yangjiwoong1",
+  "url": "https://huggingface.co/yangjiwoong1/llava-1.5-7b-hf",
+  "created_at": "2026-08-28T06:59:39.000Z",
+  "updated_at": "2026-08-28T06:59:39.000Z",
+  "license": "llama2",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "safetensors",
+    "llava",
+    "vision",
+    "image-text-to-text",
+    "conversational",
+    "en",
+    "dataset:liuhaotian/LLaVA-Instruct-150K",
+    "license:llama2",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 7063427072,
+  "parameters_human": "7.06B",
+  "storage_bytes": 14127445771,
+  "storage_human": "14.1 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "liuhaotian/llava-v1.5-7b · Hugging Face",
+      "url": "https://huggingface.co/liuhaotian/llava-v1.5-7b",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "llava-hf/llava-1.5-7b-hf · Hugging Face",
+      "url": "https://huggingface.co/llava-hf/llava-1.5-7b-hf",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "llava-1.5-7b-hf · Models",
+      "url": "https://www.modelscope.cn/models/swift/llava-1.5-7b-hf/summary",
+      "snippet": "The model supports multi-image and multi-prompt generation. Meaning that you can pass multiple images in your prompt. Make sure also to follow the correct prompt template (USER: xxx&#92;nASSISTANT:) and add the token <image> to the location where you want to query images: Using pipeline: Below we used \"llava-hf/llava-1.5-7b-hf\" checkpoint."
+    },
+    {
+      "title": "WildVision-Bench/model_configs/llava-1.5-7b-hf at main - GitHub",
+      "url": "https://github.com/WildVision-AI/WildVision-Bench/tree/main/model_configs/llava-1.5-7b-hf",
+      "snippet": "Contribute to WildVision-AI/WildVision-Bench development by creating an account on GitHub."
+    },
+    {
+      "title": "llava-1.5-7b-hf - Cloudflare AI docs",
+      "url": "https://developers.cloudflare.com/workers-ai/models/llava-1.5-7b-hf/",
+      "snippet": "LLaVA is an open-source chatbot trained by fine-tuning LLaMA/Vicuna on GPT-generated multimodal instruction-following data. It is an auto-regressive language model, based on the transformer architecture."
+    }
+  ]
+}

@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "rudra-91/brain-tumor-vit-classifier",
+  "slug": "rudra-91-brain-tumor-vit-classifier",
+  "author": "rudra-91",
+  "url": "https://huggingface.co/rudra-91/brain-tumor-vit-classifier",
+  "created_at": "2026-08-28T06:36:17.000Z",
+  "updated_at": "2026-08-28T06:36:17.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - marvelefe/vit-brain-tumor: Vision Transformer (ViT) model for ...",
+      "url": "https://github.com/marvelefe/vit-brain-tumor",
+      "snippet": "Brain Tumor Detection and Classification using Vision Transformers This repository contains an implementation of a Vision Transformer (ViT) model designed to classify brain tumor images into four categories (Meningioma, Pituitary, Glioma and No tumor). The model can be trained on any dataset of brain tumor MRI scans."
+    },
+    {
+      "title": "Brain tumor detection and classification in MRI using hybrid ViT and ...",
+      "url": "https://www.nature.com/articles/s41598-024-71893-3",
+      "snippet": "This study aims to enhance the detection and classification of brain tumors in Magnetic Resonance Imaging (MRI) scans using an innovative framework combining Vision Transformer (ViT) and Gated ..."
+    },
+    {
+      "title": "Brain MRI Tumor Classification Baseline - GitHub",
+      "url": "https://github.com/RudraS123/mri-tumor-classification",
+      "snippet": "Diagnostic AI baseline for 4-class Brain MRI tumor classification using Vision Transformers (ViT) and Hugging Face."
+    },
+    {
+      "title": "Brain Tumor Detection and Classification using Vision Transformer (ViT ...",
+      "url": "https://ieeexplore.ieee.org/document/10841703",
+      "snippet": "This study uses the Vision Transformer (ViT) architecture to present a sophisticated approach for brain tumor identification and classification. ViT models are assessed based on their capacity to extract global contextual information from MRI images. With an average accuracy of 97%, the refined ViT models surpass traditional CNN-based models on a dataset of brain tumor MRI images classified ..."
+    },
+    {
+      "title": "PDF Brain tumor detection and classification in MRI using hybrid ViT and ...",
+      "url": "https://www.nature.com/articles/s41598-024-71893-3.pdf",
+      "snippet": "Brain tumor detection and classification in MRI using hybrid ViT and GRU model with explainable AI in Southern Bangladesh Md. Mahfuz Ahmed 1,2,3, Md. Maruf Hossain 2,3, Md. Rakibul Islam 3,4,7, Md ..."
+    }
+  ]
+}

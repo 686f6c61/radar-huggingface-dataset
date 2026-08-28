@@ -5,7 +5,7 @@
   "author": "hanemay",
   "url": "https://huggingface.co/hanemay/smartsightCoach",
   "created_at": "2026-06-30T07:29:06.000Z",
-  "updated_at": "2026-08-23T09:47:53.000Z",
+  "updated_at": "2026-08-28T03:19:24.000Z",
   "license": "cc0-1.0",
   "license_family": "oss",
   "pipeline_tag": null,
@@ -27,12 +27,12 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 162,
+  "downloads_30d": 157,
   "trending_score": 0,
   "parameters": 5123178051,
   "parameters_human": "5.12B",
-  "storage_bytes": 64965234080,
-  "storage_human": "65.0 GB",
+  "storage_bytes": 67760889664,
+  "storage_human": "67.8 GB",
   "base_model": "google/gemma-4-E2B-it-qat-q4_0-unquantized",
   "formats": [
     "safetensors"

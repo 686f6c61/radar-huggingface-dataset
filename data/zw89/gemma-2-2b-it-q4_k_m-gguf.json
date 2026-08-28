@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "zw89/gemma-2-2b-it-Q4_K_M-GGUF",
+  "slug": "zw89-gemma-2-2b-it-q4_k_m-gguf",
+  "author": "zw89",
+  "url": "https://huggingface.co/zw89/gemma-2-2b-it-Q4_K_M-GGUF",
+  "created_at": "2026-08-28T08:16:58.000Z",
+  "updated_at": "2026-08-28T08:16:58.000Z",
+  "license": "gemma",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "gguf",
+    "conversational",
+    "llama-cpp",
+    "gguf-my-repo",
+    "text-generation",
+    "base_model:google/gemma-2-2b-it",
+    "base_model:quantized:google/gemma-2-2b-it",
+    "license:gemma",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 2614341888,
+  "parameters_human": "2.61B",
+  "storage_bytes": 1710958113,
+  "storage_human": "1.7 GB",
+  "base_model": "google/gemma-2-2b-it",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "BafS/gemma-2-2b-it-Q4_K_M-GGUF · Hugging Face",
+      "url": "https://huggingface.co/BafS/gemma-2-2b-it-Q4_K_M-GGUF",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "BafS/gemma-2-2b-it-Q4_K_M-GGUF at main - Hugging Face",
+      "url": "https://huggingface.co/BafS/gemma-2-2b-it-Q4_K_M-GGUF/blob/main/gemma-2-2b-it-q4_k_m.gguf",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GitHub - google-deepmind/gemma: Gemma open-weight LLM library, from ...",
+      "url": "https://github.com/google-deepmind/gemma",
+      "snippet": "Gemma is a family of open-weights Large Language Model (LLM) by Google DeepMind, based on Gemini research and technology. This repository contains the implementation of the gemma PyPI package. A JAX library to use and fine-tune Gemma. For examples and use cases, see our documentation. Please report issues and feedback in our GitHub."
+    },
+    {
+      "title": "GitHub - inferless/gemma-2b-it: 2B instruct-tuned model for delivering ...",
+      "url": "https://github.com/inferless/Gemma-2B-it",
+      "snippet": "Gemma-2B-it Gemma, a family of lightweight, state-of-the-art open models by Google, inherits the same advanced research and technology as the Gemini models. These text-to-text, decoder-only large language models come in English variants, offering open weights, pre-trained versions, and fine-tuned options."
+    },
+    {
+      "title": "gemma-2-2b-it-Q4_K_M-GGUF huggingface.co api & matrixportal gemma-2-2b ...",
+      "url": "https://www.toolify.ai/ai-model/matrixportal-gemma-2-2b-it-q4-k-m-gguf",
+      "snippet": "gemma-2-2b-it-Q4_K_M-GGUF is an open source model from GitHub that offers a free installation service, and any user can find gemma-2-2b-it-Q4_K_M-GGUF on GitHub to install."
+    }
+  ]
+}

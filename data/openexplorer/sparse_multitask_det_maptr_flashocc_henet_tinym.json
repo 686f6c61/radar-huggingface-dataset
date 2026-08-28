@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "OpenExplorer/sparse_multitask_det_maptr_flashocc_henet_tinym",
+  "slug": "openexplorer-sparse_multitask_det_maptr_flashocc_henet_tinym",
+  "author": "OpenExplorer",
+  "url": "https://huggingface.co/OpenExplorer/sparse_multitask_det_maptr_flashocc_henet_tinym",
+  "created_at": "2026-08-27T08:02:48.000Z",
+  "updated_at": "2026-08-28T08:27:21.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "heal",
+    "horizon",
+    "occupancy",
+    "lane-detection",
+    "arxiv:2308.09244",
+    "arxiv:2208.14437",
+    "arxiv:2311.12058",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 2857165837,
+  "storage_human": "2.9 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "sparse_multitask_det_maptr_flashocc_henet_tinym - Hugging Face",
+      "url": "https://huggingface.co/OpenExploer/sparse_multitask_det_maptr_flashocc_henet_tinym",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Bev Sparse Multitask Model Training - Horizon OpenExplorer Toolchain ...",
+      "url": "https://doc.oe.horizon.auto/3.7.1/en/guide/advanced_content/hat/examples/bev_sparse_multitask.html",
+      "snippet": "This tutorial mainly tells everyone how to train a BevSparseMultiTask model from scratch on the dataset nuscenes using HAT, including floating-point, quantized, and fixed-point models. This model is a bev multi-task perception model, which contains detection heads for three major perception tasks: sparse dynamic detection head, sparse static element detection head, and general obstacle ..."
+    },
+    {
+      "title": "Models - Hugging Face",
+      "url": "https://huggingface.co/models?other=heal",
+      "snippet": "OpenExploer/sparse_multitask_det_maptr_flashocc_henet_tinym Updated about 4 hours ago"
+    },
+    {
+      "title": "GitHub - Yzichen/FlashOCC",
+      "url": "https://github.com/Yzichen/FlashOCC",
+      "snippet": "Contribute to Yzichen/FlashOCC development by creating an account on GitHub."
+    },
+    {
+      "title": "【地平线J6工具链参考算法】SparseBevFusionMultitaskOE-V1.0（Sparse多任务）",
+      "url": "https://developer.horizon.auto/blog/13254",
+      "snippet": "详细可以参考单任务模型的参考文档的改动说明章节： 地平线静态目标检测 MapTR 参考算法-V2.0 - 地平线开发者社区 地平线3D目标检测 bev_sparse 参考算法-V2.0 - 地平线开发者社区 地平线占用预测FlashOcc参考算法-V1.0 - 地平线开发者社区 3.1 训练策略 3.1.1 浮点训练 （一）数据结构说明 参考算法已有的三 ..."
+    }
+  ]
+}

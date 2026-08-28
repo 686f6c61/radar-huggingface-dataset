@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "mocomoco-inc/mocovoice-whisper-turbo-ja-logistics-synthetic-v0.1",
+  "slug": "mocomoco-inc-mocovoice-whisper-turbo-ja-logistics-synthetic-v0-1",
+  "author": "mocomoco-inc",
+  "url": "https://huggingface.co/mocomoco-inc/mocovoice-whisper-turbo-ja-logistics-synthetic-v0.1",
+  "created_at": "2026-08-28T05:46:38.000Z",
+  "updated_at": "2026-08-28T05:46:48.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "automatic-speech-recognition",
+  "library": "ctranslate2",
+  "languages": [
+    "ja"
+  ],
+  "tags": [
+    "ctranslate2",
+    "whisper",
+    "whisper-large-v3-turbo",
+    "japanese",
+    "automatic-speech-recognition",
+    "synthetic-data",
+    "mocovoice",
+    "ja",
+    "base_model:openai/whisper-large-v3-turbo",
+    "base_model:finetune:openai/whisper-large-v3-turbo",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 814054531,
+  "storage_human": "814 MB",
+  "base_model": "openai/whisper-large-v3-turbo",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Voice Recognition AI \"mocoVoice\" | mocomoco inc.",
+      "url": "https://products.mocomoco.ai/en/",
+      "snippet": "We provide a one-stop solution from field-specific AI—including our medical model co-developed with Hiroshima University Hospital—to the software itself. Beyond handling specialized terminology and custom export formats, mocoVoice seamlessly integrates into actual workflows with robust access control and team sharing features."
+    },
+    {
+      "title": "Introducing mocoVoice Web: Our Transcription and Minutes Service",
+      "url": "https://www.mocomoco.ai/en/news/mocoVoice-web/",
+      "snippet": "We are proud to introduce how to use mocoVoice Web, our highly recommended meeting minutes service. mocoVoice is a transcription and knowledge management solution powered by state-of-the-art speech recognition and generative AI. Whether it&#x27;s internal meetings or"
+    },
+    {
+      "title": "Voice Recognition AI mocoVoice Available | mocomoco inc.",
+      "url": "https://www.mocomoco.ai/en/",
+      "snippet": "NEWS Latest news Updates from mocomoco inc. June 26, 2026 Announcing Our New Corporate Logo March 30, 2026 [New Logo Released] mocoVoice Adopts New Design Featuring &#x27;Speech Bubble&#x27; Motif December 25, 2025 [Voice AI x Voice Medicine] We Provided Support to the Satta Medical Scholarship Foundation News releases"
+    },
+    {
+      "title": "mocomoco-inc - GitHub",
+      "url": "https://github.com/mocomoco-inc",
+      "snippet": "mocomoco inc. has 3 repositories available. Follow their code on GitHub."
+    },
+    {
+      "title": "Whisper-Large-V3-Turbo - Qualcomm AI Hub",
+      "url": "https://aihub.qualcomm.com/mobile/models/whisper_large_v3_turbo",
+      "snippet": "Whisper-Large-V3-Turbo Transformer‑based automatic speech recognition (ASR) model for multilingual transcription and translation available on HuggingFace. Whisper large‑v3‑turbo is a finetuned version of a pruned Whisper large‑v3. In other words, it&#x27;s the exact same model, except that the number of decoding layers have reduced from 32 to 4. As a result, the model is way faster, at the ..."
+    }
+  ]
+}

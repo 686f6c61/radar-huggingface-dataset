@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "Gurujgnigsi/fraud-detector",
+  "slug": "gurujgnigsi-fraud-detector",
+  "author": "Gurujgnigsi",
+  "url": "https://huggingface.co/Gurujgnigsi/fraud-detector",
+  "created_at": "2026-08-28T06:02:55.000Z",
+  "updated_at": "2026-08-28T06:30:11.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "generated_from_trainer",
+    "sft",
+    "trl",
+    "base_model:Qwen/Qwen2.5-1.5B-Instruct",
+    "base_model:finetune:Qwen/Qwen2.5-1.5B-Instruct",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 28919909,
+  "storage_human": "29 MB",
+  "base_model": "Qwen/Qwen2.5-1.5B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GUJJAR84/fraud_detection_ai - GitHub",
+      "url": "https://github.com/GUJJAR84/fraud_detection_ai",
+      "snippet": "This project implements an advanced AI-powered fraud detection system that analyzes financial transactions in real-time to identify potentially fraudulent activities. Using machine learning algorithms, the system achieves 97.98% F1-Score and 99.80% ROC-AUC, providing highly accurate fraud predictions."
+    },
+    {
+      "title": "vaibhav07112004/fraud-detection-models · Hugging Face",
+      "url": "https://huggingface.co/vaibhav07112004/fraud-detection-models",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Artificial Intelligence Models for Fraud Detection: Advancements ...",
+      "url": "https://www.researchgate.net/publication/386020632_Artificial_Intelligence_Models_for_Fraud_Detection_Advancements_Challenges_and_Future_Prospects",
+      "snippet": "Artificial Intelligence (AI) provides a robust solution by leveraging advanced algorithms and learning models to analyze large volumes of data in real-time, identify hidden patterns, and adapt to ..."
+    },
+    {
+      "title": "Using AI/ML to build a Fraud Detection Model - Pradeep Loganathan&#x27;s Blog",
+      "url": "https://pradeepl.com/blog/building-a-fraud-detection-model/",
+      "snippet": "In this blog post we will build an effective fraud detection model using AI and machine learning techniques. We will explore the entire process, from data preprocessing to model deployment, and highlight key strategies to enhance detection accuracy."
+    },
+    {
+      "title": "GitHub - Shabopp/FraudDetectionUsingGAN: AI-powered fraud detection and ...",
+      "url": "https://github.com/Shabopp/FraudDetectionUsingGAN",
+      "snippet": "SafePayAI is an advanced fraud detection and prevention application designed to safeguard digital transactions using cutting-edge artificial intelligence techniques. With seamless integration of machine learning models and user-friendly interfaces, SafePayAI offers robust solutions for real-time fraud detection and mitigation. By leveraging Generative Adversarial Networks (GANs) for synthetic ..."
+    }
+  ]
+}

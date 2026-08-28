@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "Bhaskar-X/smart-x-1.1",
+  "slug": "bhaskar-x-smart-x-1-1",
+  "author": "Bhaskar-X",
+  "url": "https://huggingface.co/Bhaskar-X/smart-x-1.1",
+  "created_at": "2026-08-28T10:16:48.000Z",
+  "updated_at": "2026-08-28T10:16:49.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Google Scholar",
+      "url": "https://scholar.google.com/",
+      "snippet": "Google Scholar provides a simple way to broadly search for scholarly literature. Search across a wide variety of disciplines and sources: articles, theses, books, abstracts and court opinions."
+    },
+    {
+      "title": "Hugging Face - The AI community building the future.",
+      "url": "https://huggingface.co/",
+      "snippet": "The AI community building the future. ... Explore AI Apps or Browse 2M+ models Trending on this week"
+    },
+    {
+      "title": "Meta Launches Muse Spark 1.1 AI Model - Dainik Bhaskar",
+      "url": "https://www.bhaskar.com/g/business/news/meta-launches-muse-spark-11-ai-model-compete-openai-anthropic-138406528.html",
+      "snippet": "Meta CEO Mark Zuckerberg returns to X with Muse Spark 1.1 AI launch. Latest Updates. मेटा के CEO मार्क जुकरबर्ग ने तीन साल से अधिक समय के बाद सोशल मीडिया प्लेटफॉर्म X पर वापसी की है। उन्होंने कंपनी का सबसे ..."
+    },
+    {
+      "title": "Bhaskar on X: \"@nocontextfooty nahh genuinely who is the target ...",
+      "url": "https://x.com/LamineYamal_szn/status/2087784017089466816",
+      "snippet": "Bhaskar @LamineYamal_szn nahh genuinely who is the target audience for this ai slop 11:11 PM · Aug 12, 2026 3.1KViews"
+    },
+    {
+      "title": "Grok",
+      "url": "https://grok.com/",
+      "snippet": "Grok is an AI assistant built by SpaceXAI. Chat, create images, write code, and get real-time answers from the web and X."
+    }
+  ]
+}

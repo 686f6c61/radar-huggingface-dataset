@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "dha-rris/retrieval",
+  "slug": "dha-rris-retrieval",
+  "author": "dha-rris",
+  "url": "https://huggingface.co/dha-rris/retrieval",
+  "created_at": "2026-08-28T08:07:26.000Z",
+  "updated_at": "2026-08-28T08:07:35.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "efficientformer",
+    "pytorch",
+    "retrieval",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 24832,
+  "parameters_human": "24832",
+  "storage_bytes": 99808,
+  "storage_human": "99808 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "DHA.mil - The Official Website of The Defense Health Agency",
+      "url": "https://dha.mil/",
+      "snippet": "We&#x27;re privileged to manage a global health system to generate and sustain warfighter readiness. From the Continental U.S., to Belgium, Japan, and points in between, our support system truly covers the world."
+    },
+    {
+      "title": "Retrieval-augmented generation - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Retrieval-augmented_generation",
+      "snippet": "Retrieval-augmented generation (RAG) enhances large language models (LLMs) by incorporating an information-retrieval mechanism that allows models to access and utilize additional data beyond their original training set. Ars Technica notes that \"when new information becomes available, rather than having to retrain the model, all that&#x27;s needed is to augment the model&#x27;s external knowledge base ..."
+    },
+    {
+      "title": "DHA Introduces Data & Innovation Strategy to Support Military Health ...",
+      "url": "https://executivegov.com/articles/dha-data-strategy-military-health-ai-jesus-caban",
+      "snippet": "The DHA official will share insights on model orchestration for mission-specific data during the Does Your AI Play Well with Others? panel alongside other military leaders and industry experts."
+    },
+    {
+      "title": "What is RAG? - Retrieval-Augmented Generation AI Explained - AWS",
+      "url": "https://aws.amazon.com/what-is/retrieval-augmented-generation/",
+      "snippet": "What is Retrieval-Augmented Generation? Retrieval-Augmented Generation (RAG) is the process of optimizing the output of a large language model, so it references an authoritative knowledge base outside of its training data sources before generating a response."
+    },
+    {
+      "title": "Retrieval-augmented generation for generative artificial intelligence ...",
+      "url": "https://www.nature.com/articles/s44401-024-00004-1",
+      "snippet": "Generative artificial intelligence (AI) has recently attracted widespread attention across various fields, including the GPT 1, 2 and LLaMA 3, 4 series for text generation, DALL-E 5 for image ..."
+    }
+  ]
+}

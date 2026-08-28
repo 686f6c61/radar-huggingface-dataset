@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "maozhuoshushu/lyf-krea2-lora-checkpoints",
+  "slug": "maozhuoshushu-lyf-krea2-lora-checkpoints",
+  "author": "maozhuoshushu",
+  "url": "https://huggingface.co/maozhuoshushu/lyf-krea2-lora-checkpoints",
+  "created_at": "2026-07-30T05:39:03.000Z",
+  "updated_at": "2026-08-28T08:33:38.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "zh"
+  ],
+  "tags": [
+    "image-generation",
+    "lora",
+    "zh",
+    "region:us"
+  ],
+  "likes": 2,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 7416912718,
+  "storage_human": "7.4 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": true,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "maozhuoshushu/lyf-krea2-lora-checkpoints · Hugging Face",
+      "url": "https://huggingface.co/maozhuoshushu/lyf-krea2-lora-checkpoints",
+      "snippet": "maozhuoshushu / lyf-krea2-lora-checkpoints like 2 Chinese image-generation lora Model card FilesFiles and versions xet Community Copy to bucket new"
+    },
+    {
+      "title": "maozhuoshushu/lyf-krea2-lora-checkpoints at main - Hugging Face",
+      "url": "https://huggingface.co/maozhuoshushu/lyf-krea2-lora-checkpoints/tree/main",
+      "snippet": "Gated model You can list files but not access them Preview of files found in this repository checkpoints_all检查点命名补下划线 (lyf): 触发词与步数间加\"_\"1 day ago curvesUpload curves/lyf_r1r2r3.png with huggingface_hub4 days ago evaluationUpload evaluation/scores.json with huggingface_hub10 days ago"
+    },
+    {
+      "title": "README.md · maozhuoshushu/krea2_lora_llf at main",
+      "url": "https://d6108366.hf-mirror.com/maozhuoshushu/krea2_lora_llf/blob/main/README.md?code=true",
+      "snippet": "maozhuoshushu / krea2_lora_llf like 0 lora krea2 Model card FilesFiles and versions xet Community Copy to bucket new main krea2_lora_llf /README.md maozhuoshushu Upload 李霖霏 LoRA d056d96 verified7 days ago preview code | Raw Download with hf CLI Copy download link History Blame Contribute Delete Safe 269 Bytes ..."
+    },
+    {
+      "title": "maozhuoshushu/krea2-lora-overfitting-analysis - GitHub",
+      "url": "https://github.com/maozhuoshushu/krea2-lora-overfitting-analysis",
+      "snippet": "Krea2 LoRA 过拟合定量分析——ArcFace 三指标评估方法 使用 ArcFace 人脸识别模型对 Krea2 LoRA 训练过程中 12 个 checkpoint 进行三指标定量评估，确定最优训练步数。"
+    },
+    {
+      "title": "README.md · maozhuoshushu/lyf at main",
+      "url": "https://d6108366.hf-mirror.com/maozhuoshushu/lyf/blob/main/README.md?code=true",
+      "snippet": "maozhuoshushu / lyf like 0 Text-to-Image Diffusers lora krea2 template:sd-lora Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    }
+  ]
+}

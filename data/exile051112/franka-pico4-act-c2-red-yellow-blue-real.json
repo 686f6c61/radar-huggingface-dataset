@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "Exile051112/franka-pico4-act-c2-red-yellow-blue-real",
+  "slug": "exile051112-franka-pico4-act-c2-red-yellow-blue-real",
+  "author": "Exile051112",
+  "url": "https://huggingface.co/Exile051112/franka-pico4-act-c2-red-yellow-blue-real",
+  "created_at": "2026-08-28T01:19:06.000Z",
+  "updated_at": "2026-08-28T01:26:48.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 51683978,
+  "parameters_human": "51.7M",
+  "storage_bytes": 206777456,
+  "storage_human": "207 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "franka-pico4-act-c2-red-yellow-blue-real - Hugging Face",
+      "url": "https://huggingface.co/Exile051112/franka-pico4-act-c2-red-yellow-blue-real",
+      "snippet": "Franka Pico4 ACT (c2) Private deployment artifact for the LeRobot ACT policy trained on the c2_red_yellow_blue_real condition (red, yellow, and blue real data). Policy: ACT, full fine-tuning (not LoRA) Checkpoint: 10,000 training steps (010000) LeRobot: 0.6.2 (PyTorch) Inputs: two RGB cameras, observation.images.top and observation.images.wrist, 480x640 at 30 FPS Proprioception: observation ..."
+    },
+    {
+      "title": "Civitai | Discover and Create AI Art",
+      "url": "https://civitai.red/",
+      "snippet": "Explore thousands of free Stable Diffusion & Flux models, create and share AI-generated art, and join the world&#x27;s largest community of generative AI creators."
+    },
+    {
+      "title": "GitHub - sainavaneet/ACTfranka: we modified the ACT&#x27;s architecture to ...",
+      "url": "https://github.com/sainavaneet/ACTfranka",
+      "snippet": "Welcome to the ACTFranka repository, designed for the Franka robot. This guide covers both simulated and real-world environment setups, and includes utilities for environment setup, training, and inference. We have modified the original ACT code from this repo to complete this project, enhancing its ..."
+    },
+    {
+      "title": "Google Gemini",
+      "url": "https://gemini.google.com/",
+      "snippet": "Get assistance with writing, planning, learning, and more from Google AI."
+    },
+    {
+      "title": "Free AI Image Generator | Craiyon",
+      "url": "https://www.craiyon.com/",
+      "snippet": "Free AI Image Generator Create free AI images from text for art, photos, illustrations, and quick visual ideas."
+    }
+  ]
+}

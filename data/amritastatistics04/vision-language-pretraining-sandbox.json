@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "amritastatistics04/vision-language-pretraining-sandbox",
+  "slug": "amritastatistics04-vision-language-pretraining-sandbox",
+  "author": "amritastatistics04",
+  "url": "https://huggingface.co/amritastatistics04/vision-language-pretraining-sandbox",
+  "created_at": "2026-08-28T06:36:06.000Z",
+  "updated_at": "2026-08-28T06:36:15.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "transformer",
+    "research-notes",
+    "vision-language-pretraining",
+    "license:cc-by-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 24832,
+  "parameters_human": "24832",
+  "storage_bytes": 99808,
+  "storage_human": "99808 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "amritastatistics04 (Aarav Singh) - Hugging Face",
+      "url": "https://huggingface.co/amritastatistics04/datasets",
+      "snippet": "User profile of Aarav Singh on Hugging Face"
+    },
+    {
+      "title": "[2202.09061] VLP: A Survey on Vision-Language Pre-training",
+      "url": "https://arxiv.org/abs/2202.09061",
+      "snippet": "In the past few years, the emergence of pre-training models has brought uni-modal fields such as computer vision (CV) and natural language processing (NLP) to a new era. Substantial works have shown they are beneficial for downstream uni-modal tasks and avoid training a new model from scratch. So can such pre-trained models be applied to multi-modal tasks? Researchers have explored this ..."
+    },
+    {
+      "title": "A Dive into Vision-Language Models - Hugging Face",
+      "url": "https://huggingface.co/blog/vision_language_pretraining",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Vision-language pre-training via modal interaction",
+      "url": "https://www.sciencedirect.com/science/article/pii/S0031320324005600",
+      "snippet": "However, these models often design independent subtasks for different modalities, which may not adequately leverage interactions between modalities, requiring large datasets to achieve optimal performance. To address these limitations, this paper introduces a novel pre-training approach that facilitates fine-grained vision-language interaction."
+    },
+    {
+      "title": "[2210.09263] Vision-Language Pre-training: Basics, Recent Advances, and ...",
+      "url": "https://arxiv.org/abs/2210.09263",
+      "snippet": "This paper surveys vision-language pre-training (VLP) methods for multimodal intelligence that have been developed in the last few years. We group these approaches into three categories: (i) VLP for image-text tasks, such as image captioning, image-text retrieval, visual question answering, and visual grounding; (ii) VLP for core computer vision tasks, such as (open-set) image classification ..."
+    }
+  ]
+}

@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "mradermacher/Phi-4-Mini-Instruct-Obliterated-zero-GGUF",
+  "slug": "mradermacher-phi-4-mini-instruct-obliterated-zero-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/Phi-4-Mini-Instruct-Obliterated-zero-GGUF",
+  "created_at": "2026-08-28T06:30:46.000Z",
+  "updated_at": "2026-08-28T06:30:51.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Phi-4-mini-instruct-abliterated-i1-GGUF - Hugging Face",
+      "url": "https://huggingface.co/mradermacher/Phi-4-mini-instruct-abliterated-i1-GGUF",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "mradermacher/phi-4-abliterated-GGUF · Hugging Face",
+      "url": "https://huggingface.co/mradermacher/phi-4-abliterated-GGUF",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Phi-4-mini-instruct-abliterated-i1-GGUF huggingface.co api ...",
+      "url": "https://www.toolify.ai/ai-model/mradermacher-phi-4-mini-instruct-abliterated-i1-gguf",
+      "snippet": "Phi-4-mini-instruct-abliterated-i1-GGUF is an open source model from GitHub that offers a free installation service, and any user can find Phi-4-mini-instruct-abliterated-i1-GGUF on GitHub to install."
+    },
+    {
+      "title": "AI Model Catalog | Microsoft Foundry Models",
+      "url": "https://ai.azure.com/catalog/models/Phi-4-mini-instruct",
+      "snippet": "Phi-4-mini-instruct is a dense decoder-only Transformer model with 3.8B parameters, offering key improvements over Phi-3.5-Mini, including a 200K vocabulary, grouped-query attention, and shared embedding. It is designed for chat-completion prompts, generating text based on user input, with a context length of 128K tokens."
+    },
+    {
+      "title": "huihui_ai/phi4-mini-abliterated",
+      "url": "https://ollama.com/huihui_ai/phi4-mini-abliterated",
+      "snippet": "Phi-4-mini brings significant enhancements in multilingual support, reasoning, and mathematics, and now, the long-awaited function calling feature is finally supported."
+    }
+  ]
+}

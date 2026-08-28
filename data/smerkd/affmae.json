@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "smerkd/affmae",
+  "slug": "smerkd-affmae",
+  "author": "smerkd",
+  "url": "https://huggingface.co/smerkd/affmae",
+  "created_at": "2026-08-28T08:55:44.000Z",
+  "updated_at": "2026-08-28T09:13:52.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": "image-segmentation",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "image-segmentation",
+    "electron-microscopy",
+    "masked-autoencoder",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1247612299,
+  "storage_human": "1.2 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "smerkd (Davd) - Hugging Face",
+      "url": "https://huggingface.co/smerkd",
+      "snippet": "smerkd/lerobotv3_bench_vortex_zed_multiview. published a dataset about 5 hours ago. smerkd/lerobotv3_bench_vortex_zed_multiview. View all activity"
+    },
+    {
+      "title": "AFFMAE: Scalable Vision Pre-Training for High-Resolution Microscopy ...",
+      "url": "https://arxiv.org/abs/2602.16249",
+      "snippet": "Furthermore, AFFMAE achieves up to 5x throughput speedups fine-tuning at the 1024px resolution, providing high-resolution model training on desktop hardware. Code available at this https URL."
+    },
+    {
+      "title": "smerkd (Davd) - Hugging Face",
+      "url": "https://huggingface.co/smerkd/datasets",
+      "snippet": "smerkd&#x27;s datasets3 Sort: Recently updated smerkd/lerobotv3_office_vortex_realsense Viewer •Updated about 2 hours ago•46.3k"
+    },
+    {
+      "title": "AFFMAE: Scalable and Efficient Vision Pretraining for Desktop Graphics ...",
+      "url": "https://arxiv.org/html/2602.16249v1",
+      "snippet": "Abstract Self-supervised pretraining has transformed computer vision by enabling data-efficient fine-tuning, yet high-resolution training typically requires server-scale infrastructure, limiting in-domain foundation model development for many research laboratories. Masked Autoencoders (MAE) reduce computation by encoding only visible tokens, but combining MAE with hierarchical downsampling ..."
+    },
+    {
+      "title": "najafian-lab/affmae: Auto Focus Former Masked Autoencoder - GitHub",
+      "url": "https://github.com/najafian-lab/affmae",
+      "snippet": "Auto Focus Former Masked Autoencoder. Contribute to najafian-lab/affmae development by creating an account on GitHub."
+    }
+  ]
+}

@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "jdqqjr/qwen3.8-27b-aragon-uncensored",
+  "slug": "jdqqjr-qwen3-8-27b-aragon-uncensored",
+  "author": "jdqqjr",
+  "url": "https://huggingface.co/jdqqjr/qwen3.8-27b-aragon-uncensored",
+  "created_at": "2026-08-28T10:28:00.000Z",
+  "updated_at": "2026-08-28T10:38:31.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_5",
+    "image-text-to-text",
+    "heretic",
+    "uncensored",
+    "abliterated",
+    "qwen",
+    "conversational",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 27781427952,
+  "parameters_human": "27.78B",
+  "storage_bytes": 55575816096,
+  "storage_human": "55.6 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Qwen/Qwen3.8-27B · Hugging Face",
+      "url": "https://huggingface.co/Qwen/Qwen3.8-27B",
+      "snippet": "MathVision: Qwen3.8-27B is evaluated using the fixed prompt: \"Please reason step by step, and put your final answer within &#92;boxed {}.\" For the remaining models, we report the higher score from two prompt variants—one with and one without the &#92;boxed {} formatting requirement."
+    },
+    {
+      "title": "Qwen3.8-27B - GitHub",
+      "url": "https://github.com/AlibabaCloud-Official/Qwen3.8-27B",
+      "snippet": "Welcome to the repository for Qwen3.8-27B —the latest native multimodal dense open-weight model released by Alibaba&#x27;s Qwen team. Delivering top-tier performance for local hardware, Qwen3.8-27B excels at coding, agentic workflows, and office automation tasks."
+    },
+    {
+      "title": "Qwen 3.8 27B - GroqDocs",
+      "url": "https://console.groq.com/docs/model/qwen/qwen3.8-27b",
+      "snippet": "Model card for Qwen3.8-27B: a compact 27B multimodal (vision + text) model with thinking and instruct modes, frontier-level agentic coding, long-horizon tool use, and near-instant responses on Groq."
+    },
+    {
+      "title": "Qwen3.8-27B-Uncensored-OrcaRouter-GGUF - Hugging Face",
+      "url": "https://huggingface.co/chimingw/Qwen3.8-27B-Uncensored-OrcaRouter-GGUF",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Qwen3.8-27B: Video-to-Text model — overview, use cases, alternatives",
+      "url": "https://www.aimodels.fyi/models/huggingFace/qwen3.8-27b-qwen",
+      "snippet": "Overview Qwen3.8-27B is a 27-billion-parameter dense language model with integrated vision capabilities, built by Qwen on the architectural foundation of Qwen3.5. This causal language model with vision encoder supports native image and video understanding, making it suitable for multimodal reasoning tasks that require understanding both textual and visual information. The model has 64 layers ..."
+    }
+  ]
+}

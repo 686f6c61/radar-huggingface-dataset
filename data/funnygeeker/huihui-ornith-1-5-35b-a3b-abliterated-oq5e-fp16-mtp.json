@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "funnygeeker/Huihui-Ornith-1.5-35B-A3B-abliterated-oQ5e-fp16-mtp",
+  "slug": "funnygeeker-huihui-ornith-1-5-35b-a3b-abliterated-oq5e-fp16-mtp",
+  "author": "funnygeeker",
+  "url": "https://huggingface.co/funnygeeker/Huihui-Ornith-1.5-35B-A3B-abliterated-oQ5e-fp16-mtp",
+  "created_at": "2026-08-28T10:39:11.000Z",
+  "updated_at": "2026-08-28T10:39:11.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Huihui-Ornith-1.5-35B-A3B-abliterated-GGUF - Hugging Face",
+      "url": "https://huggingface.co/mradermacher/Huihui-Ornith-1.5-35B-A3B-abliterated-GGUF",
+      "snippet": "Huihui-Ornith-1.5-35B-A3B-abliterated-GGUF ... Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "README.md · mradermacher/Huihui-Ornith-1.5-35B-A3B-abliterated-GGUF at main",
+      "url": "https://huggingface.co/mradermacher/Huihui-Ornith-1.5-35B-A3B-abliterated-GGUF/blob/main/README.md",
+      "snippet": "Instructions to use mradermacher/Huihui-Ornith-1.5-35B-A3B-abliterated-GGUF with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "codecraftersllc/ornith-1.5-35b-a3b-abliterated",
+      "url": "https://ollama.com/codecraftersllc/ornith-1.5-35b-a3b-abliterated",
+      "snippet": "The base model is ornith-ai/Ornith-1.5-35B-A3B. This listing adds the official Ornith vision projector (mmproj-Ornith-1.5-35B-BF16.gguf) so Ollama exposes vision as well as thinking and tools."
+    },
+    {
+      "title": "Huihui Ornith 1.5 35B A3B Abliterated by huihui-ai",
+      "url": "https://llm-explorer.com/model/huihui-ai%2FHuihui-Ornith-1.5-35B-A3B-abliterated,2fKIgn8LQab1oijPhDUyM1",
+      "snippet": "Rank the Huihui Ornith 1.5 35B A3B Abliterated capabilities Have you tried this model? Rate its performance — this feedback helps the ML community find the right model for their needs."
+    },
+    {
+      "title": "Ornith-1.5-35B-A3B-GGUF: Text-to-Text model — overview, use cases ...",
+      "url": "https://www.aimodels.fyi/models/huggingFace/ornith-1.5-35b-a3b-gguf-ornith-ai",
+      "snippet": "Model Overview Overview Ornith-1.5-35B-A3B is a mixture-of-experts reasoning and coding model made by ornith-ai that activates approximately 3 billion parameters per token while maintaining a total of 35 billion parameters."
+    }
+  ]
+}

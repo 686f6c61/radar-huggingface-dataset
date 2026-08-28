@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "dent1s2/pi05-bhv2LNeN86ys",
+  "slug": "dent1s2-pi05-bhv2lnen86ys",
+  "author": "dent1s2",
+  "url": "https://huggingface.co/dent1s2/pi05-bhv2LNeN86ys",
+  "created_at": "2026-08-26T12:55:25.000Z",
+  "updated_at": "2026-08-28T01:39:24.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 4,
+  "trending_score": 0,
+  "parameters": 3616757520,
+  "parameters_human": "3.62B",
+  "storage_bytes": 14706741760,
+  "storage_human": "14.7 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "dent1s2/pi05-rWzjeSEgIYQ2 · Hugging Face",
+      "url": "https://huggingface.co/dent1s2/pi05-rWzjeSEgIYQ2",
+      "snippet": "dent1s2 / pi05-rWzjeSEgIYQ2 like 0 Safetensors Model card FilesFiles and versions xet Community Copy to bucket new"
+    },
+    {
+      "title": "dent1s2 (man) - Hugging Face",
+      "url": "https://huggingface.co/dent1s2",
+      "snippet": "Recent Activity updated a bucketabout 4 hours ago dent1s2/affine-smoke published a bucketabout 4 hours ago dent1s2/affine-smoke updated a datasetabout 10 hours ago dent1s2/affine-harness View all activity"
+    },
+    {
+      "title": "[2504.16054] $π_ {0.5}$: a Vision-Language-Action Model with Open-World ...",
+      "url": "https://arxiv.org/abs/2504.16054",
+      "snippet": "In order for robots to be useful, they must perform practically relevant tasks in the real world, outside of the lab. While vision-language-action (VLA) models have demonstrated impressive results for end-to-end robot control, it remains an open question how far such models can generalize in the wild. We describe $π_{0.5}$, a new model based on $π_{0}$ that uses co-training on heterogeneous ..."
+    },
+    {
+      "title": "ai-hub-models/src/qai_hub_models/models/pi05/README.md at main ... - GitHub",
+      "url": "https://github.com/qualcomm/ai-hub-models/blob/main/src/qai_hub_models/models/pi05/README.md",
+      "snippet": "Qualcomm® AI Hub Models is our collection of state-of-the-art machine learning models optimized for performance (latency, memory etc.) and ready to deploy on Qualcomm® devices. - qualcomm/ai-hub-mo..."
+    },
+    {
+      "title": "OpenReview",
+      "url": "https://openreview.net/pdf?id=vlhoswksBO",
+      "snippet": "π 0.5: a Vision-Language-Action Model with Open-World Generalization Kevin Black, Noah Brown, James Darpinian, Karan Dhabalia, Danny Driess, Adnan Esmail, Michael Equi, Chelsea F"
+    }
+  ]
+}

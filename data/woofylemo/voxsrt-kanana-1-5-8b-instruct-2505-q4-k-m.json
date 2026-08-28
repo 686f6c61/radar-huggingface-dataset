@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "WoofyLemo/VoxSRT-kanana-1.5-8b-instruct-2505-q4-k-m",
+  "slug": "woofylemo-voxsrt-kanana-1-5-8b-instruct-2505-q4-k-m",
+  "author": "WoofyLemo",
+  "url": "https://huggingface.co/WoofyLemo/VoxSRT-kanana-1.5-8b-instruct-2505-q4-k-m",
+  "created_at": "2026-08-28T06:19:37.000Z",
+  "updated_at": "2026-08-28T06:20:49.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "gguf",
+  "languages": [],
+  "tags": [
+    "gguf",
+    "voxsrt",
+    "local-inference",
+    "text-generation",
+    "base_model:kakaocorp/kanana-1.5-8b-instruct-2505",
+    "base_model:quantized:kakaocorp/kanana-1.5-8b-instruct-2505",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 8030285824,
+  "parameters_human": "8.03B",
+  "storage_bytes": 4920765248,
+  "storage_human": "4.9 GB",
+  "base_model": "kakaocorp/kanana-1.5-8b-instruct-2505",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "kakaocorp/kanana-1.5-8b-instruct-2505 · Hugging Face",
+      "url": "https://huggingface.co/kakaocorp/kanana-1.5-8b-instruct-2505",
+      "snippet": "Kanana 1.5, a newly introduced version of the Kanana model family, presents substantial enhancements in coding, mathematics, and function calling capabilities over the previous version, enabling broader application to more complex real-world problems."
+    },
+    {
+      "title": "parkjw/kanana-1.5-8b-instruct-2505-Q4_K_M-GGUF · Hugging Face",
+      "url": "https://huggingface.co/parkjw/kanana-1.5-8b-instruct-2505-Q4_K_M-GGUF",
+      "snippet": "This model was converted to GGUF format from kakaocorp/kanana-1.5-8b-instruct-2505 using llama.cpp via the ggml.ai&#x27;s GGUF-my-repo space. Refer to the original model card for more details on the model."
+    },
+    {
+      "title": "GitHub - kakao/kanana: Kanana: Compute-efficient Bilingual Language ...",
+      "url": "https://github.com/kakao/kanana",
+      "snippet": "Introducing Kanana-1.5-15.7B-A3B, the first Mixture-of-Experts (MoE) model in our Kanana family, engineered for exceptional efficiency and powerful performance. Kanana-1.5-15.7B-A3B, which has sparse architecture, delivers capabilities comparable to the Kanana-1.5-8B dense model while utilizing only 37% of the FLOPS per token, making it a highly inference-efficient and cost-effective solution ..."
+    },
+    {
+      "title": "Kanana: Compute-efficient Bilingual Language Models - arXiv.org",
+      "url": "https://arxiv.org/html/2502.18934v1",
+      "snippet": "The family of models includes pre-trained base model and post-trained instruction models in sizes of {2.1B, 9.8B, 32.5B}. We show in Figure 1 that Kanana models establish a new Pareto frontier in the computational cost of the train time versus the performance."
+    },
+    {
+      "title": "Kanana 1.5-8b-instruct-2505 Open-Source AI Model - Strong in Coding and ...",
+      "url": "https://model.aibase.com/models/details/1927649989316841472",
+      "snippet": "Kanana 1.5 is a new version of the Kanana model family, with significant improvements in coding, math, and function calling capabilities compared to its predecessor, supporting 32K tokens length and extendable to 128K tokens."
+    }
+  ]
+}

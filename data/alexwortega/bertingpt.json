@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "AlexWortega/bertingpt",
+  "slug": "alexwortega-bertingpt",
+  "author": "AlexWortega",
+  "url": "https://huggingface.co/AlexWortega/bertingpt",
+  "created_at": "2026-08-28T09:17:42.000Z",
+  "updated_at": "2026-08-28T09:44:13.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "pytorch",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "pytorch",
+    "interpretability",
+    "representation-alignment",
+    "platonic-representation-hypothesis",
+    "model-stitching",
+    "mechanistic-interpretability",
+    "en",
+    "arxiv:2507.01098",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1566944444,
+  "storage_human": "1.6 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "AlexWortega (Alex Wortega) · GitHub",
+      "url": "https://github.com/AlexWortega",
+      "snippet": "Claude Code skill: autonomously research an ML task and run many bounded experiments to find the best config — karpathy/autoresearch loop in the ml-intern orchestrator model, fanned out with a dyna…"
+    },
+    {
+      "title": "AlexWortega (Wortega) - Hugging Face",
+      "url": "https://huggingface.co/AlexWortega/models",
+      "snippet": "Wortega AlexWortega Follow Antonpy&#x27;s profile picture 21world&#x27;s profile picture LeroyDyer&#x27;s profile picture 76 followers"
+    },
+    {
+      "title": "AlexWortega (Wortega) - Hugging Face",
+      "url": "https://huggingface.co/AlexWortega",
+      "snippet": "AlexWortega Follow rscr&#x27;s profile picturefallenmi&#x27;s profile picturePent&#x27;s profile picture 72 followers · 25 following AlexWortega"
+    },
+    {
+      "title": "Malicious AI on the Dark Web | WormGPT, FraudGPT & More",
+      "url": "https://www.dexpose.io/malicious-ai-on-the-dark-web/",
+      "snippet": "WormGPT, FraudGPT & other malicious AI models are sold on the dark web for phishing and fraud. See how they work and how to detect and stop them."
+    },
+    {
+      "title": "BERT (language model) - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/BERT_(language_model)",
+      "snippet": "Bidirectional encoder representations from transformers (BERT) is a language model introduced in October 2018 by researchers at Google. [2][3] It learns to represent text as a sequence of vectors using self-supervised learning. It uses the encoder-only transformer architecture. BERT dramatically improved the state of the art for large language models. As of 2026, BERT is a common ..."
+    }
+  ]
+}

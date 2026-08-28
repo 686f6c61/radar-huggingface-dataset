@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "khanmuneeba99/tds-carbon-card",
+  "slug": "khanmuneeba99-tds-carbon-card",
+  "author": "khanmuneeba99",
+  "url": "https://huggingface.co/khanmuneeba99/tds-carbon-card",
+  "created_at": "2026-08-28T08:24:04.000Z",
+  "updated_at": "2026-08-28T08:27:05.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "co2_eq_emissions",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "subhamtheprogrammer/tds-carbon-card · Hugging Face",
+      "url": "https://huggingface.co/subhamtheprogrammer/tds-carbon-card",
+      "snippet": "Model Card - Green AI Carbon Accounting This repository documents the carbon footprint and energy accounting for the assigned model training run in TDS GA8."
+    },
+    {
+      "title": "sreemithravinda/tds-carbon-card · Hugging Face",
+      "url": "https://huggingface.co/sreemithravinda/tds-carbon-card",
+      "snippet": "Model Card - Green AI Carbon Accounting This repository documents the carbon footprint and energy accounting for the assigned model training run in TDS GA8."
+    },
+    {
+      "title": "Reporting Carbon Emissions on Open-Source Model Cards - oecd.ai",
+      "url": "https://oecd.ai/en/catalogue/tools/model-cards/tool-use-cases/reporting-carbon-emissions-on-open-source-model-cards",
+      "snippet": "Hugging Face has worked to normalize reporting AI model carbon emissions by making them an optional component to model cards that live on the open-source Hugging Face Hub. Hugging Face model cards describe the AI model, its uses, its limitations, its biases, its ethical considerations, training parameters, datasets, and evaluation results."
+    },
+    {
+      "title": "CivArchive (CivitAI Archive) - AI Model Archive",
+      "url": "https://civitaiarchive.com/",
+      "snippet": "Browse and discover AI models from CivitAI, TensorArt, and SeaArt. Community-driven archive preserving access to AI resources."
+    },
+    {
+      "title": "GitHub - ivylee/model-cards-and-datasheets: A collection of machine ...",
+      "url": "https://github.com/ivylee/model-cards-and-datasheets",
+      "snippet": "Model Cards for Model Reporting DAG Card is the new Model Card Face Detection, Google Cloud Vision API Object Detection, Google Cloud Vision API Toxicity, Google Conversation AI GPT-2, Open AI GPT-3, Open AI PULSE: Self-Supervised Photo Upsampling via Latent Space Exploration of Generative Models \"The Human Body is a Black Box\": Supporting Clinical Decision-Making with Deep Learning MediaPipe ..."
+    }
+  ]
+}

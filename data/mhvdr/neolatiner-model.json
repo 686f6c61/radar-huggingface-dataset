@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "mhvdr/neolatiner-model",
+  "slug": "mhvdr-neolatiner-model",
+  "author": "mhvdr",
+  "url": "https://huggingface.co/mhvdr/neolatiner-model",
+  "created_at": "2026-08-28T07:27:56.000Z",
+  "updated_at": "2026-08-28T08:07:30.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "token-classification",
+  "library": "transformers",
+  "languages": [
+    "la"
+  ],
+  "tags": [
+    "transformers",
+    "pytorch",
+    "xlm-roberta",
+    "token-classification",
+    "named-entity-recognition",
+    "early-modern-latin",
+    "neo-latin",
+    "la",
+    "dataset:mhvdr/neolatiner-dataset",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 2257686825,
+  "storage_human": "2.3 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "AI Models | Civitai",
+      "url": "https://civitai.com/models",
+      "snippet": "Browse thousands of free Stable Diffusion & Flux models, LoRAs, checkpoints, and embeddings. The largest collection of AI image generation resources."
+    },
+    {
+      "title": "Free AI Models on OpenRouter",
+      "url": "https://openrouter.ai/collections/free-models",
+      "snippet": "Model rankings updated August 2026 based on real usage data. At OpenRouter, we believe that free models play a crucial role in democratizing access to AI. These models allow hundreds of thousands of users worldwide to experiment, learn, and innovate. Below you will find the top free AI models currently available on OpenRouter."
+    },
+    {
+      "title": "ModelVault — The Open AI Model Directory & Benchmark Matrix",
+      "url": "https://www.modelvault.space/",
+      "snippet": "Discover, compare, and benchmark 11,000+ cloud and local AI models. Filter by modalities, context windows, pricing, providers, and performance benchmarks."
+    },
+    {
+      "title": "AI Model Downloads - 498 Model Examples - AI Models",
+      "url": "https://aimodels.org/ai-models/",
+      "snippet": "Directory of free Open Source AI and machine learning model downloads! Our collection features the latest models in speech to text and image generation."
+    },
+    {
+      "title": "Model Radar — Real-time AI Intelligence Hub",
+      "url": "https://modelradar.live/",
+      "snippet": "Model Radar Real-time tracking of AI models, pricing, benchmarks, and releases across every major lab. Community-powered and open source."
+    }
+  ]
+}

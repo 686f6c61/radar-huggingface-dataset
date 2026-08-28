@@ -1,0 +1,89 @@
+{
+  "schema": 1,
+  "id": "armand0e/Granite-4.2-30B-Fable-Distill",
+  "slug": "armand0e-granite-4-2-30b-fable-distill",
+  "author": "armand0e",
+  "url": "https://huggingface.co/armand0e/Granite-4.2-30B-Fable-Distill",
+  "created_at": "2026-08-28T05:50:55.000Z",
+  "updated_at": "2026-08-28T05:58:02.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en",
+    "es",
+    "fr",
+    "de",
+    "pt",
+    "ja",
+    "zh"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "granite",
+    "text-generation",
+    "granite-4.2",
+    "agentic",
+    "tool-use",
+    "multilingual",
+    "distillation",
+    "conversational",
+    "en",
+    "es",
+    "fr",
+    "de",
+    "pt",
+    "ja",
+    "zh",
+    "base_model:ibm-granite/granite-4.2-30b",
+    "base_model:finetune:ibm-granite/granite-4.2-30b",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 29276770304,
+  "parameters_human": "29.28B",
+  "storage_bytes": 58553607904,
+  "storage_human": "58.6 GB",
+  "base_model": "ibm-granite/granite-4.2-30b",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Granite 4.2 | IBM Granite",
+      "url": "https://www.ibm.com/granite/docs/models/granite4-2",
+      "snippet": "Granite 4.2 Dense reasoning language model family in 3B, 8B, and 30B sizes with built-in chain-of-thought thinking, flexible thinking modes, and reasoning-augmented tool calling."
+    },
+    {
+      "title": "Granite - IBM",
+      "url": "https://www.ibm.com/granite",
+      "snippet": "IBM Granite is a family of open, trusted AI models for business, offering efficient language, vision, speech and guardrail models you can customize and deploy."
+    },
+    {
+      "title": "README.md · ibm-granite/granite-4.2-30b at main - Hugging Face",
+      "url": "https://huggingface.co/ibm-granite/granite-4.2-30b/blob/main/README.md",
+      "snippet": "Description Granite-4.2-30B is the flagship reasoning model in the Granite 4.2 family. It delivers the strongest performance across reasoning-intensive tasks by leveraging built-in <think>...</think> chain-of-thought. It supports flexible thinking modes — full thinking (default), non-thinking, and low-effort — allowing users to balance depth vs. latency on a per-query basis."
+    },
+    {
+      "title": "GitHub - ibm-granite/granite-4.2-language-models · GitHub",
+      "url": "https://github.com/ibm-granite/granite-4.2-language-models",
+      "snippet": "The Granite 4.2 familiy features dense decoder-only architectures in three sizes — 3B, 8B, and 30B, with quantized variants per model size. The Granite 4.2 dense models are post-trained on top of Granite 4.1 base models. Please refer to the Granite 4.1 blog for details on the pre-training phase."
+    },
+    {
+      "title": "IBM&#x27;s new Granite 4.2 models ride the wave of interest in local LLMs",
+      "url": "https://arstechnica.com/ai/2026/08/ibms-new-granite-4-2-models-ride-the-wave-of-interest-in-local-llms/",
+      "snippet": "IBM has rolled out the newest models in its family of open-weight large language models designed to be downloaded and self-hosted. The newly launched Granite 4.2 comes in 3B, 8B, and 30B parameter ..."
+    }
+  ]
+}

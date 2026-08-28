@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "LucidityAI/Synth-2.5-Flash-Preview-GGUF",
+  "slug": "lucidityai-synth-2-5-flash-preview-gguf",
+  "author": "LucidityAI",
+  "url": "https://huggingface.co/LucidityAI/Synth-2.5-Flash-Preview-GGUF",
+  "created_at": "2026-08-22T03:47:15.000Z",
+  "updated_at": "2026-08-28T02:03:39.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "gguf",
+    "text-generation-inference",
+    "text-generation",
+    "en",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 83,
+  "trending_score": 0,
+  "parameters": 7893392800,
+  "parameters_human": "7.89B",
+  "storage_bytes": 8408188096,
+  "storage_human": "8.4 GB",
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "LucidityAI/Synth-2.5-Flash-Preview-GGUF · Hugging Face",
+      "url": "https://huggingface.co/LucidityAI/Synth-2.5-Flash-Preview-GGUF",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Synth 2.5 Preview - a LucidityAI Collection - Hugging Face",
+      "url": "https://huggingface.co/collections/LucidityAI/synth-25-preview",
+      "snippet": "Preview versions of the Synth 2.5 family Synth 2.5 Preview updated about 9 hours ago Preview versions of the Synth 2.5 family Upvote - Sort: Collection"
+    },
+    {
+      "title": "LucidityAI",
+      "url": "https://lucidityai.app/",
+      "snippet": "Discover LucidityAI, the future of artificial intelligence. Explore advanced AI models, innovative chat technologies, and cutting-edge machine learning solutions."
+    },
+    {
+      "title": "Gemini 2.5 Flash | Gemini API | Google AI for Developers",
+      "url": "https://ai.google.dev/gemini-api/docs/models/gemini-2.5-flash",
+      "snippet": "Gemini 2. 5 Flash Our best model in terms of price-performance, offering well-rounded capabilities. 2.5 Flash is best for large scale processing, low-latency, high volume tasks that require thinking, and agentic use cases."
+    },
+    {
+      "title": "GGUF Model Discovery - Browse & Download AI Models",
+      "url": "https://local-ai-zone.github.io/",
+      "snippet": "Discover and download GGUF format AI models. Browse and direct download thousands of quantized AI models with detailed information, download counts, and direct links."
+    }
+  ]
+}

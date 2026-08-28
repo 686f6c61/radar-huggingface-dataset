@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "godlykmathews/indian-flower-classifier-mobilenetv3",
+  "slug": "godlykmathews-indian-flower-classifier-mobilenetv3",
+  "author": "godlykmathews",
+  "url": "https://huggingface.co/godlykmathews/indian-flower-classifier-mobilenetv3",
+  "created_at": "2026-08-28T11:46:31.000Z",
+  "updated_at": "2026-08-28T11:46:31.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Image classification with TensorFlow Lite Model Maker | Google AI Edge ...",
+      "url": "https://developers.google.com/edge/litert/libraries/modify/image_classification",
+      "snippet": "The TensorFlow Lite Model Maker library simplifies the process of adapting and converting a TensorFlow neural-network model to particular input data when deploying this model for on-device ML applications. This notebook shows an end-to-end example that utilizes this Model Maker library to illustrate the adaption and conversion of a commonly-used image classification model to classify flowers ..."
+    },
+    {
+      "title": "Built an image classifier with TensorFlow and MobileNet for flower ...",
+      "url": "https://www.linkedin.com/posts/abeer-bassam-saleh_aiwithpython-tensorflow-transferlearning-activity-7371271236317945857-H7Nt",
+      "snippet": "🌸 Project Spotlight: Image Classifier with TensorFlow 🌸 I&#x27;m happy to share my second project from the AI with Python - TensorFlow Cohort (Udacity & Spark). In this project, I built a ..."
+    },
+    {
+      "title": "Flower Classifier with TensorFlow - GitHub",
+      "url": "https://github.com/Adham-Irzeqat/flower-classifier-tensorflow",
+      "snippet": "A deep learning project that classifies flower images into 102 different categories using TensorFlow, TensorFlow Hub, and transfer learning with MobileNetV3 Large 0.75. The project includes model training, image preprocessing, evaluation, a saved trained model, and a command-line prediction tool for ..."
+    },
+    {
+      "title": "flower-classification · GitHub Topics · GitHub",
+      "url": "https://github.com/topics/flower-classification?o=desc&s=updated",
+      "snippet": "🌸 Iris Flower Classification App: A machine learning-powered web application that accurately classifies iris flowers into three species based on sepal and petal measurements. Features interactive input sliders, real-time predictions with confidence scores, and comprehensive data visualizations.."
+    },
+    {
+      "title": "flower-classifier Model by AI Tutorial datasets",
+      "url": "https://universe.roboflow.com/ai-tutorial-datasets/flower-classifier/model/",
+      "snippet": "4311 open source flower images plus a pre-trained flower-classifier model and API. Created by AI Tutorial datasets"
+    }
+  ]
+}

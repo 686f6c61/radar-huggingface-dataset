@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "KordAI/KeawGPT",
+  "slug": "kordai-keawgpt",
+  "author": "KordAI",
+  "url": "https://huggingface.co/KordAI/KeawGPT",
+  "created_at": "2026-08-28T07:42:53.000Z",
+  "updated_at": "2026-08-28T10:41:56.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "generated_from_trainer",
+    "sft",
+    "unsloth",
+    "trl",
+    "base_model:KordAI/KeawGPT-Base",
+    "base_model:finetune:KordAI/KeawGPT-Base",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 808963392,
+  "storage_human": "809 MB",
+  "base_model": "KordAI/KeawGPT-Base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "KordAI/KeawGPT-Base · Hugging Face",
+      "url": "https://huggingface.co/KordAI/KeawGPT-Base",
+      "snippet": "KordAI / KeawGPT-Base like 0 Follow KordAI 5 Text Generation Transformers Safetensors English qwen3 text-generation-inference unsloth License:apache-2.0 Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "KordAI (KordAI) - Hugging Face",
+      "url": "https://huggingface.co/KordAI",
+      "snippet": "AI & ML interests ... Recent Activity Naphon updated a dataset about 3 hours ago ... Naphon published a dataset about 3 hours ago ... izyya published a model about 5 hours ago"
+    },
+    {
+      "title": "KawaiiGPT - New Black-Hat AI Tool Used by Hackers to Launch Cyberattacks",
+      "url": "https://cybersecuritynews.com/kawaiigpt-black-hat-ai/",
+      "snippet": "KawaiiGPT exemplifies AI&#x27;s dual-use risks, shifting threats from skilled actors to the masses via commercialization and democratization. While WormGPT monetizes advanced PowerShell ransomware, KawaiiGPT&#x27;s free model expands reach, fostering illicit communities."
+    },
+    {
+      "title": "Odysseus AI - Self-Hosted AI Workspace Setup Guide",
+      "url": "https://odysseusai.dev/",
+      "snippet": "Odysseus AI Setup Guide For PewDiePie&#x27;s self-hosted AI workspace Verify the official source, choose Docker, Windows, macOS, or Linux, connect Ollama or API keys, read logs, choose a model that fits your hardware, and avoid unsafe public deployment."
+    },
+    {
+      "title": "Korda AI - GitHub",
+      "url": "https://github.com/korda-ai",
+      "snippet": "Korda AI — The Deterministic Autonomous Agent Standard. A Bravo Media Group development."
+    }
+  ]
+}

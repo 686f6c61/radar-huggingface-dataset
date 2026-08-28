@@ -5,7 +5,7 @@
   "author": "kingjones777",
   "url": "https://huggingface.co/kingjones777/Mellum2-12B-A2.5B-Thinking-ROCmFPX-Q8_0-GGUF",
   "created_at": "2026-08-16T16:35:04.000Z",
-  "updated_at": "2026-08-16T16:36:18.000Z",
+  "updated_at": "2026-08-28T04:07:39.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-generation",

@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "ml-remunn/Philippine_Pese_Coin_Classification_And_Detection_Using_YOLOv11",
+  "slug": "ml-remunn-philippine_pese_coin_classification_and_detection_using_yolov11",
+  "author": "ml-remunn",
+  "url": "https://huggingface.co/ml-remunn/Philippine_Pese_Coin_Classification_And_Detection_Using_YOLOv11",
+  "created_at": "2026-08-28T08:35:25.000Z",
+  "updated_at": "2026-08-28T08:35:25.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Philippine Coin Money Object Detection Model (v2, 2025-04-22 10:14am ...",
+      "url": "https://universe.roboflow.com/fenilyn/philippine-coin-money/dataset/2",
+      "snippet": "1699 open source s-currency-thousand-currency-thousand-currency-thousand-FC5L images and annotations in multiple formats for training computer vision models. Philippine Coin Money (v2, 2025-04-22 10:14am), created by Fenilyn"
+    },
+    {
+      "title": "Philippine Peso Coin Counter Object Detection Model (v1, 2025-12-24 12 ...",
+      "url": "https://universe.roboflow.com/museoscholar/philippine-peso-coin-counter-zor1u/dataset/1",
+      "snippet": "53 open source coins images and annotations in multiple formats for training computer vision models. Philippine Peso Coin Counter (v1, 2025-12-24 12:51am), created by museoscholar"
+    },
+    {
+      "title": "GitHub - thelionlies/philippine-coin-detection-cnn: Coin detection and ...",
+      "url": "https://github.com/thelionlies/philippine-coin-detection-cnn",
+      "snippet": "The objective of this project is to determine the total monetary value of coins present in an image, focusing on the new Philippine coin series. While more advanced approaches exist (e.g., state-of-the-art object detection models), this project intentionally adopts a simpler, classical computer vision pipeline. This design choice highlights fundamental concepts covered in class, from feature ..."
+    },
+    {
+      "title": "philippine-coin-detection-cnn/MAIN Notebook.ipynb at main - GitHub",
+      "url": "https://github.com/thelionlies/philippine-coin-detection-cnn/blob/main/MAIN%20Notebook.ipynb",
+      "snippet": "Overall Approach Our method is divided into 2 main steps: 1. Coin Detection (Python Computer Vision) We detect each coin in the input image using feature extraction techniques in Python (as taught in class), as well as some more advanced ethods. Each detected coin is then cropped and temporarily saved into a folder. 2. Coin Classification (Neural Network) A simple CNN, trained to recognize ..."
+    },
+    {
+      "title": "Deep Learning-Based Detection and Auditory Summation of the Philippine ...",
+      "url": "https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=11375115",
+      "snippet": "This research is a deep learning-driven assistive device specifically engineered to support visually impaired individuals in identifying Philippine New Generation Series (NGS) peso coins. The primary goal of this study is to facilitate independent and accurate coin recognition through an accessible and user-friendly auditory feedback system. The system leverages computer vision and artificial ..."
+    }
+  ]
+}

@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "Bolt-367/minimax-h3-serverless",
+  "slug": "bolt-367-minimax-h3-serverless",
+  "author": "Bolt-367",
+  "url": "https://huggingface.co/Bolt-367/minimax-h3-serverless",
+  "created_at": "2026-08-17T11:47:21.000Z",
+  "updated_at": "2026-08-28T10:51:16.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 46559743047,
+  "storage_human": "46.6 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - MiniMax-AI/MiniMax-H3 · GitHub",
+      "url": "https://github.com/MiniMax-AI/MiniMax-H3",
+      "snippet": "MiniMax H3 is a general-purpose, omni-modal generative system. It supports unified understanding of multimodal contexts composed of text, images, video, and audio, and can generate video with native stereo audio at resolutions up to 2K and durations of up to 15 seconds."
+    },
+    {
+      "title": "MiniMax H3 Open-Source AI Video Model | Tutorials, Deployment & Workflows",
+      "url": "https://design.minimax.io/h3",
+      "snippet": "Curated MiniMax H3 video model tutorials, open-source deployment guides, creator workflows and industry insights. Updated continuously."
+    },
+    {
+      "title": "GitHub - ai-models-lab/minimax-h3: MiniMax-H3-Hub, ComfyUI Workflows ...",
+      "url": "https://github.com/ai-models-lab/minimax-h3",
+      "snippet": "Official Hub for MiniMax H3 (minimaxh3.run) — An all-in-one open-source resource platform for MiniMax H3 (Hailuo AI 3.0), the state-of-the-art native multi-modal 2K AI video generation model with synchronized 3D stereo audio."
+    },
+    {
+      "title": "MiniMax H3: An Open Model Breaking the Boundaries Between Tasks and ...",
+      "url": "https://www.minimax.io/blog/minimax-h3",
+      "snippet": "Today, we&#x27;re officially launching MiniMax H3, a general-purpose omni-modal generation model. H3 can jointly understand multimodal contexts spanning text, images, video, and audio. It generates video with native stereo audio at up to 2K resolution and 15 seconds in length."
+    },
+    {
+      "title": "MiniMax H3 Multimodal AI Video Model | Hailuo AI",
+      "url": "https://hailuoai.video/tools/minimax-h3",
+      "snippet": "Create 5-15s videos with MiniMax H3 from text, images, video, and audio. Generate and precisely edit visuals, sound, and motion in Hailuo AI."
+    }
+  ]
+}

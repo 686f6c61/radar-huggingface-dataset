@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "jasminehjh/3d-scene-understanding-review",
+  "slug": "jasminehjh-3d-scene-understanding-review",
+  "author": "jasminehjh",
+  "url": "https://huggingface.co/jasminehjh/3d-scene-understanding-review",
+  "created_at": "2026-08-28T10:31:46.000Z",
+  "updated_at": "2026-08-28T10:31:55.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "transformer",
+    "research-notes",
+    "3d-scene-understanding",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 49600,
+  "parameters_human": "49600",
+  "storage_bytes": 198880,
+  "storage_human": "198880 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "SceneGPT: A Language Model for 3D Scene Understanding",
+      "url": "https://arxiv.org/pdf/2408.06926",
+      "snippet": "Abstract Building models that can understand and reason about 3D scenes is dificult owing to the lack of data sources for 3D supervised training and large-scale training regimes. In this work we ask \"How can the knowledge in a pre-trained language model be leveraged for 3D scene understanding without any 3D pre-training\". The aim of this work is to establish whether pre-trained LLMs ..."
+    },
+    {
+      "title": "Hugging Face - The AI community building the future.",
+      "url": "https://huggingface.co/",
+      "snippet": "The AI community building the future. ... Explore AI Apps or Browse 2M+ models Trending on this week"
+    },
+    {
+      "title": "Scene-LLM: Extending Language Model for - arXiv.org",
+      "url": "https://arxiv.org/html/2403.11401",
+      "snippet": "This paper introduces Scene-LLM, a 3D-visual-language model that enhances embodied agents&#x27; abilities in interactive 3D indoor environments by integrating the reasoning strengths of Large Language Models (LLMs). Scene-LLM adopts a hybrid 3D visual feature representation, that incorporates dense spatial information and supports scene state updates."
+    },
+    {
+      "title": "3d-scene-understanding · GitHub Topics · GitHub",
+      "url": "https://github.com/topics/3d-scene-understanding",
+      "snippet": "3d-scene-understanding multimodal-llm language-interaction unified-foundation-model Updated 2 weeks ago Python"
+    },
+    {
+      "title": "Structured Generative Models for Scene Understanding",
+      "url": "https://link.springer.com/article/10.1007/s11263-024-02316-z",
+      "snippet": "This position paper argues for the use of structured generative models (SGMs) for the understanding of static scenes. This requires the reconstruction of a 3D scene from an input image (or a set of multi-view images), whereby the contents of the image(s) are causally explained in terms of models of instantiated objects, each with their own type, shape, appearance and pose, along with global ..."
+    }
+  ]
+}

@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "sant-oso39/efficientformer-checkpoint89",
+  "slug": "sant-oso39-efficientformer-checkpoint89",
+  "author": "sant-oso39",
+  "url": "https://huggingface.co/sant-oso39/efficientformer-checkpoint89",
+  "created_at": "2026-08-28T08:54:29.000Z",
+  "updated_at": "2026-08-28T08:54:39.000Z",
+  "license": "bsd-3-clause",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "efficientformer",
+    "pytorch",
+    "classification",
+    "license:bsd-3-clause",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 24832,
+  "parameters_human": "24832",
+  "storage_bytes": 99808,
+  "storage_human": "99808 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "EfficientFormer - Qualcomm AI Hub",
+      "url": "https://aihub.qualcomm.com/automotive/models/efficientformer",
+      "snippet": "EfficientFormer Imagenet classifier and general purpose backbone. EfficientFormer is a vision transformer model that can classify images from the Imagenet dataset."
+    },
+    {
+      "title": "EfficientFormer - AI Model Insights & Benchmarks",
+      "url": "https://free2aitools.com/model/qualcomm/efficientformer",
+      "snippet": "🆔 Identity & Source id hf-model--qualcomm--efficientformer slug qualcomm--efficientformer source huggingface author qualcomm license Other tags pytorch, bu_auto, android, image-classification, arxiv:2212.08059, license:other, region:us"
+    },
+    {
+      "title": "EfficientFormer/README.md at main - GitHub",
+      "url": "https://github.com/snap-research/EfficientFormer/blob/main/README.md",
+      "snippet": "Add EfficientFormerV2 model family, including efficientformerv2_s0, efficientformerv2_s1, efficientformerv2_s2 and efficientformerv2_l. Pretrained checkpoints of EfficientFormerV2 on ImageNet-1K are released. Update EfficientFormerV2 in downstream tasks (detection, segmentation). Release checkpoints in downstream tasks. Add extra tools for profiling and deployment (we use CoreML==5.2 and Torch ..."
+    },
+    {
+      "title": "EfficientFormer/models at main · snap-research/EfficientFormer",
+      "url": "https://github.com/snap-research/EfficientFormer/tree/main/models",
+      "snippet": "EfficientFormerV2 [ICCV 2023] & EfficientFormer [NeurIPs 2022] - snap-research/EfficientFormer"
+    },
+    {
+      "title": "qualcomm/EfficientFormer · Hugging Face",
+      "url": "https://huggingface.co/qualcomm/EfficientFormer",
+      "snippet": "This export script leverages Qualcomm® AI Hub to optimize, validate, and deploy this model on-device. Lets go through each step below in detail: Step 1: Compile model for on-device deployment To compile a PyTorch model for on-device deployment, we first trace the model in memory using the jit.trace and then call the submit_compile_job API."
+    }
+  ]
+}

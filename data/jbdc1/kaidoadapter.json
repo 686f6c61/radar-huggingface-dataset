@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "jbdc1/kaidoadapter",
+  "slug": "jbdc1-kaidoadapter",
+  "author": "jbdc1",
+  "url": "https://huggingface.co/jbdc1/kaidoadapter",
+  "created_at": "2026-08-28T09:05:33.000Z",
+  "updated_at": "2026-08-28T09:05:33.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "jbdc1/kaidoadapter · Hugging Face",
+      "url": "https://huggingface.co/jbdc1/kaidoadapter",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "jbdc1 (Pham Vu Thai) - Hugging Face",
+      "url": "https://huggingface.co/jbdc1/models",
+      "snippet": "AI & ML interests ... Recent Activity published a model 5 days ago ... updated a model 5 days ago"
+    },
+    {
+      "title": "GenBio AI - GitHub",
+      "url": "https://github.com/genbio-ai/",
+      "snippet": "Python 5 2 0 0 Updated on Apr 15 genbio-pathfm Public GenBio-PathFM is a histopathology foundation model from GenBio AI."
+    },
+    {
+      "title": "GitHub - Tvk2707/JBDC1",
+      "url": "https://github.com/Tvk2707/JBDC1",
+      "snippet": "Contribute to Tvk2707/JBDC1 development by creating an account on GitHub."
+    },
+    {
+      "title": "Quick Start - GB.ModelGenerator - genbio-ai.github.io",
+      "url": "https://genbio-ai.github.io/ModelGenerator/quick_start/",
+      "snippet": "GB.ModelGenerator is a software stack powering the development of an AI-driven Digital Organism by enabling researchers to adapt pretrained models and generate finetuned models for downstream tasks."
+    }
+  ]
+}

@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "Politus/beko-sha",
+  "slug": "politus-beko-sha",
+  "author": "Politus",
+  "url": "https://huggingface.co/Politus/beko-sha",
+  "created_at": "2026-08-28T09:32:59.000Z",
+  "updated_at": "2026-08-28T09:33:24.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-classification",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "bert",
+    "text-classification",
+    "arxiv:1910.09700",
+    "text-embeddings-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 184346882,
+  "parameters_human": "184.3M",
+  "storage_bytes": 737411072,
+  "storage_human": "737 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Politus/beko_relevant_classifier · Hugging Face",
+      "url": "https://huggingface.co/Politus/beko_relevant_classifier",
+      "snippet": "Model Card for Model ID Model Details Model Description This is the model card of a 🤗 transformers model that has been pushed on the Hub. This model card has been automatically generated. Developed by: [More Information Needed] Funded by [optional]: [More Information Needed] Shared by [optional]: [More Information Needed] Model type: [More Information Needed] Language (s) (NLP): [More ..."
+    },
+    {
+      "title": "Politus (Politus) - Hugging Face",
+      "url": "https://huggingface.co/Politus/models",
+      "snippet": "Org profile for Politus on Hugging Face, the AI community building the future."
+    },
+    {
+      "title": "PDF Enlighty Politus: a political public opinion dataset from ... - Springer",
+      "url": "https://link.springer.com/content/pdf/10.1140/epjds/s13688-026-00682-x_reference.pdf",
+      "snippet": "Objectives This paper presents a large-scale political public opinion dataset from Turkey, developed through the Politus project and supported by the European Research Council. The dataset uses advanced AI methods, including deep learning, natural language processing, large language models, and differential privacy, to process social media data from X/Twitter in a GDPR-compliant and ethically ..."
+    },
+    {
+      "title": "Enlighty Politus: a political public opinion dataset from ... - Springer",
+      "url": "https://link.springer.com/article/10.1140/epjds/s13688-026-00682-x",
+      "snippet": "This paper presents the Politus Dataset, a large-scale political public opinion dataset from Turkey that leverages social media data and state-of-the-art artificial intelligence methodologies to advance the field of computational social science. By integrating cutting-edge deep learning, natural language processing, and large language models with robust social scientific conceptualization, we ..."
+    },
+    {
+      "title": "AI-based Data Platform for Fair Social Policies | Politus - CORDIS",
+      "url": "https://cordis.europa.eu/project/id/101082050/de",
+      "snippet": "The Politus Project will assess the commercial viability of proprietary natural language processing and machine learning technology for AI-based data-driven fair social policymaking. The project will verify the innovation potential of computational social science and..."
+    }
+  ]
+}

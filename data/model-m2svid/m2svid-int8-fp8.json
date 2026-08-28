@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "model-m2svid/M2SVID-Int8-FP8",
+  "slug": "model-m2svid-m2svid-int8-fp8",
+  "author": "model-m2svid",
+  "url": "https://huggingface.co/model-m2svid/M2SVID-Int8-FP8",
+  "created_at": "2026-08-28T09:08:35.000Z",
+  "updated_at": "2026-08-28T09:17:47.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 7883658586,
+  "storage_human": "7.9 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - google-research/m2svid: This is the official code release for ...",
+      "url": "https://github.com/google-research/m2svid",
+      "snippet": "Our model follows Hi3D implementation and uses the same openclip model. Download the M2SVid weights (8.5Gb) and extract them into the ckpts folder: unzip m2svid_weights.zip -d ckpts/."
+    },
+    {
+      "title": "M2SVid: End-to-End Inpainting and Refinement for Monocular-to-Stereo ...",
+      "url": "https://m2svid.github.io/",
+      "snippet": "Our End-to-End Video Inpainting and Refinement Module We introduce an efficient end-to-end model for generating a high-quality right video from the warped right video. Our model inpaints the discoccluded regions in the warped right view, and corrects possible artifacts introduced by warping errors."
+    },
+    {
+      "title": "M2SVid: End-to-End Inpainting and Refinement for Monocular-to-Stereo",
+      "url": "https://arxiv.org/html/2505.16565v2",
+      "snippet": "To achieve stereo video conversion for videos of arbitrary length, we fine-tune our M2SVid model for 20K iterations using the auto-regressive modeling approach proposed in [shi2024stereocrafter]."
+    },
+    {
+      "title": "M2SVid: End-to-End Inpainting and Refinement for Monocular-to-Stereo ...",
+      "url": "https://arxiv.org/abs/2505.16565",
+      "snippet": "We tackle the problem of monocular-to-stereo video conversion and propose a novel architecture for inpainting and refinement of the warped right view obtained by depth-based reprojection of the input left view. We extend the Stable Video Diffusion (SVD) model to utilize the input left video, the warped right video, and the disocclusion masks as conditioning input to generate a high-quality ..."
+    },
+    {
+      "title": "M2SVid: End-to-End Inpainting and Refinement for Monocular-to-Stereo ...",
+      "url": "https://openreview.net/pdf?id=BwOpEUU4T1",
+      "snippet": "5. End-to-End Stereoscopic Video Refinement We introduce M2SVid, an efficient end-to-end model for generating a high-quality right video from the warped right video V warp While this problem is similar to the standard video inpainting task, it comes with a set of unique proper-ties, as described next."
+    }
+  ]
+}

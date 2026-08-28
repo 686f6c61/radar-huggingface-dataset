@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "marktorres/embodied-ai-reading",
+  "slug": "marktorres-embodied-ai-reading",
+  "author": "marktorres",
+  "url": "https://huggingface.co/marktorres/embodied-ai-reading",
+  "created_at": "2026-08-28T06:19:55.000Z",
+  "updated_at": "2026-08-28T06:20:05.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "transformer",
+    "research-notes",
+    "embodied-ai",
+    "license:cc-by-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 33088,
+  "parameters_human": "33088",
+  "storage_bytes": 132832,
+  "storage_human": "132832 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "marktorres/paper_021308813_embodied_ai · Hugging Face",
+      "url": "https://huggingface.co/marktorres/paper_021308813_embodied_ai",
+      "snippet": "The full text is in paper_021308813_embodied_ai.md."
+    },
+    {
+      "title": "marktorres (Mark Torres) - Hugging Face",
+      "url": "https://huggingface.co/marktorres",
+      "snippet": "AI & ML interests ... Recent Activity updated a model about 7 hours ago ... published a model about 7 hours ago ... liked a Space 4 days ago"
+    },
+    {
+      "title": "Embodied AI Daily — Latest arXiv Papers",
+      "url": "https://luohongkun.top/Embodied-AI-Daily/index.html",
+      "snippet": "📄 Latest arXiv Papers VLN · VLA · SLAM · 3D · Embodied AI — auto-updated daily 👤 Hongkun Luo (罗宏昆) · 🎓 Academic Page · 🐙 GitHub ☕ 支持本项目 · Support this project"
+    },
+    {
+      "title": "estelledc/embodied-ai-reading-station: 13 papers - GitHub",
+      "url": "https://github.com/estelledc/embodied-ai-reading-station",
+      "snippet": "An editorial learning system that turns embodied-AI papers into a navigable path from first concepts to a real research brief. It is an owner-led, independently maintained, evidence-aware product—not a claim that every note has received line-by-line human review. 具身智能（Embodied AI）= 让 ..."
+    },
+    {
+      "title": "embodied-ai-reading-station/guide at main · estelledc ... - GitHub",
+      "url": "https://github.com/estelledc/embodied-ai-reading-station/tree/main/guide",
+      "snippet": "13 papers · embodied AI reading station · atelier-zero editorial style - estelledc/embodied-ai-reading-station"
+    }
+  ]
+}

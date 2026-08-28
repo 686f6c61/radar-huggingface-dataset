@@ -1,0 +1,76 @@
+{
+  "schema": 1,
+  "id": "mradermacher/quantumgpt-354m-finetuned-GGUF",
+  "slug": "mradermacher-quantumgpt-354m-finetuned-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/quantumgpt-354m-finetuned-GGUF",
+  "created_at": "2026-08-28T09:25:04.000Z",
+  "updated_at": "2026-08-28T09:31:16.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "quantum-computing",
+    "qasm",
+    "code-generation",
+    "gpt2",
+    "openqasm",
+    "quantum-circuits",
+    "en",
+    "dataset:merileijona/quantum-circuits-21k",
+    "base_model:merileijona/quantumgpt-354m-finetuned",
+    "base_model:quantized:merileijona/quantumgpt-354m-finetuned",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 354347008,
+  "parameters_human": "354.3M",
+  "storage_bytes": 3358603136,
+  "storage_human": "3.4 GB",
+  "base_model": "merileijona/quantumgpt-354m-finetuned",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "mradermacher/CooperLM-354M-GGUF · Hugging Face",
+      "url": "https://huggingface.co/mradermacher/CooperLM-354M-GGUF",
+      "snippet": "mradermacher / CooperLM-354M-GGUF like 1 Transformers GGUF English gpt2 toy-llm from-scratch huggingface english casual-lm educational License:mit Model card FilesFiles and versions xet Community Deploy Use this model About Usage Provided Quants FAQ / Model Request Thanks"
+    },
+    {
+      "title": "mradermacher (team mradermacher) - Hugging Face",
+      "url": "https://huggingface.co/mradermacher",
+      "snippet": "Feel free to suggest models to quant e.g. at https://huggingface.co/mradermacher/model_requests"
+    },
+    {
+      "title": "quantumgpt-354m-finetuned API & Inference Endpoint | FriendliAI",
+      "url": "https://friendli.ai/models/merileijona/quantumgpt-354m-finetuned",
+      "snippet": "Run quantumgpt-354m-finetuned with FriendliAI inference. The 354M sibling of QuantumGPT-124M-v3: GPT-2 medium architecture (24 layers, 16 heads, 1024 embd…"
+    },
+    {
+      "title": "Mradermacher - Find Top AI Models on Hugging Face",
+      "url": "https://www.aimodels.fyi/creators/huggingFace/mradermacher",
+      "snippet": "Looking for Mradermacher&#x27;s top AI models? Browse their full Hugging Face collection of 26 models. Explore AI models and contributions by Mradermacher on Huggingface."
+    },
+    {
+      "title": "[2403.09418] GPT on a Quantum Computer - ar5iv",
+      "url": "https://ar5iv.labs.arxiv.org/html/2403.09418",
+      "snippet": "This stage allowed the model to develop a broad understanding of language, including grammar, semantics, and common phrases. The fine-tuning stage then adapted the pre-trained model to specific tasks, such as translation, question-answering, and summarization, by training it on smaller, task-specific datasets."
+    }
+  ]
+}

@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "LarryAIDraw/Qingxiao_WuWa_IL-01",
+  "slug": "larryaidraw-qingxiao_wuwa_il-01",
+  "author": "LarryAIDraw",
+  "url": "https://huggingface.co/LarryAIDraw/Qingxiao_WuWa_IL-01",
+  "created_at": "2026-08-28T05:44:44.000Z",
+  "updated_at": "2026-08-28T05:45:03.000Z",
+  "license": "creativeml-openrail-m",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:creativeml-openrail-m",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 68807979,
+  "storage_human": "69 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Qingxiao | Wuthering waves - AI Art Model | PixAI",
+      "url": "https://pixai.art/en/model/2042692421477616154",
+      "snippet": "Generate stunning anime art with the &#x27;Qingxiao | Wuthering waves&#x27; model on PixAI. Browse artworks made with this model and try it free."
+    },
+    {
+      "title": "LarryAIDraw (LarryChen) - Hugging Face",
+      "url": "https://huggingface.co/LarryAIDraw/datasets",
+      "snippet": "LarryAIDraw Follow wangwangwangchao&#x27;s profile pictureberrysmithy&#x27;s profile pictureAsAHuman&#x27;s profile picture 70 followers · 0 following https://larry.fanbox.cc/"
+    },
+    {
+      "title": "Wuthering Waves_qingxiao丨鸣潮_清宵 - AI Art Model | PixAI",
+      "url": "https://pixai.art/en/model/2023802895848051418",
+      "snippet": "Generate stunning anime art with the &#x27;Wuthering Waves_qingxiao丨鸣潮_清宵&#x27; model on PixAI. Browse artworks made with this model and try it free."
+    },
+    {
+      "title": "Qingxiao 清宵 (wuthering waves 鳴潮) - AI Art Model | PixAI",
+      "url": "https://pixai.art/en/model/2031819956630276419",
+      "snippet": "Generate stunning anime art with the &#x27;Qingxiao 清宵 (wuthering waves 鳴潮)&#x27; model on PixAI. Browse artworks made with this model and try it free."
+    },
+    {
+      "title": "️ Qingxiao - Sword - Wuthering Waves Cosplay Prop ... - Cults 3D",
+      "url": "https://cults3d.com/en/3d-model/fashion/qingxiao-sword-wuthering-waves-cosplay-prop",
+      "snippet": "Download this STL Model for 3D printer made by Shokos3DPrints. Includes complete and cut version Pieces fit in printer with a platform size of 250mm x 250mm x 250mm. Some parts are sliced in half for a flat surface, allowing an easy print. Please consider resizing the models according your preferences. Use \"Core\" piece to help you joining pieces or calculate the core slot diameter and replace ..."
+    }
+  ]
+}

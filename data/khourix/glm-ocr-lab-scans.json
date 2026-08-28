@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "khourix/glm-OCR-lab-scans",
+  "slug": "khourix-glm-ocr-lab-scans",
+  "author": "khourix",
+  "url": "https://huggingface.co/khourix/glm-OCR-lab-scans",
+  "created_at": "2026-08-28T10:33:56.000Z",
+  "updated_at": "2026-08-28T10:36:40.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "glm_ocr",
+    "image-text-to-text",
+    "text-generation-inference",
+    "unsloth",
+    "conversational",
+    "en",
+    "base_model:unsloth/GLM-OCR",
+    "base_model:finetune:unsloth/GLM-OCR",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1325258240,
+  "parameters_human": "1.33B",
+  "storage_bytes": 2650579464,
+  "storage_human": "2.7 GB",
+  "base_model": "unsloth/GLM-OCR",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GLM-OCR: Accurate × Fast × Comprehensive - GitHub",
+      "url": "https://github.com/zai-org/GLM-OCR",
+      "snippet": "GLM-OCR is a multimodal OCR model for complex document understanding, built on the GLM-V encoder-decoder architecture. It introduces Multi-Token Prediction (MTP) loss and stable full-task reinforcement learning to improve training efficiency, recognition accuracy, and generalization."
+    },
+    {
+      "title": "GitHub - aeternumlab/glm-ocr: GLM-OCR: Accurate × Fast × Comprehensive",
+      "url": "https://github.com/aeternumlab/glm-ocr",
+      "snippet": "Model Introduction GLM-OCR is a multimodal OCR model for complex document understanding, built on the GLM-V encoder-decoder architecture. It introduces Multi-Token Prediction (MTP) loss and stable full-task reinforcement learning to improve training efficiency, recognition accuracy, and generalization."
+    },
+    {
+      "title": "zai-org/GLM-OCR · Hugging Face",
+      "url": "https://huggingface.co/zai-org/GLM-OCR",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GLM-OCR · Hugging Face",
+      "url": "https://huggingface.co/docs/transformers/v5.14.0/model_doc/glm_ocr",
+      "snippet": "Overview GLM-OCR is a multimodal OCR (Optical Character Recognition) model designed for complex document understanding from Z.ai. The model combines a CogViT visual encoder (pre-trained on large-scale image-text data), a lightweight cross-modal connector with efficient token downsampling, and a GLM-0.5B language decoder."
+    },
+    {
+      "title": "GLM-OCR - Efficient & Accurate Optical Character Recognition Model",
+      "url": "https://glmocr.com/",
+      "snippet": "GLM-OCR is a specialized multimodal model derived from the GLM-4V architecture. Unlike traditional OCR systems, this online platform reads documents comprehensively, offering a seamless way to digitize your content."
+    }
+  ]
+}

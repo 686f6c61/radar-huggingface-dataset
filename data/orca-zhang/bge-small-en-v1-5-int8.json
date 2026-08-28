@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "orca-zhang/bge-small-en-v1.5-int8",
+  "slug": "orca-zhang-bge-small-en-v1-5-int8",
+  "author": "orca-zhang",
+  "url": "https://huggingface.co/orca-zhang/bge-small-en-v1.5-int8",
+  "created_at": "2026-08-28T07:08:22.000Z",
+  "updated_at": "2026-08-28T07:08:30.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "feature-extraction",
+  "library": "onnxruntime",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "onnxruntime",
+    "onnx",
+    "bert",
+    "bge",
+    "embedding",
+    "int8",
+    "feature-extraction",
+    "en",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 33807386,
+  "storage_human": "34 MB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "BAAI/bge-small-en · Hugging Face",
+      "url": "https://huggingface.co/BAAI/bge-small-en",
+      "snippet": "Suggest to use bge v1.5, which alleviates the issue of the similarity distribution. Since we finetune the models by contrastive learning with a temperature of 0.01, the similarity distribution of the current BGE model is about in the interval [0.6, 1]."
+    },
+    {
+      "title": "BAAI/bge-small-en-v1.5 · Hugging Face",
+      "url": "https://huggingface.co/BAAI/bge-small-en-v1.5",
+      "snippet": "Suggest to use bge v1.5, which alleviates the issue of the similarity distribution. Since we finetune the models by contrastive learning with a temperature of 0.01, the similarity distribution of the current BGE model is about in the interval [0.6, 1]."
+    },
+    {
+      "title": "BGE v1 & v1.5 — BGE documentation - bge-model.com",
+      "url": "https://bge-model.com/bge/bge_v1_v1.5.html",
+      "snippet": "BGE v1 & v1.5 # BGE v1 and v1.5 are series of encoder only models base on BERT. They achieved best performance among the models of the same size at the time of release. BGE # The first group of BGE models was released in Aug 2023. The bge-large-en and bge-large-zh ranked 1st on MTEB and C-MTEB benchmarks at the time released."
+    },
+    {
+      "title": "bge-small-en-v1.5 download | SourceForge.net",
+      "url": "https://sourceforge.net/projects/bge-small-en-v1-5/",
+      "snippet": "BAAI/bge-small-en-v1.5 is a lightweight English sentence embedding model developed by the Beijing Academy of Artificial Intelligence (BAAI) as part of the BGE (BAAI General Embedding) series. Designed for dense retrieval, semantic search, and similarity tasks, it produces 384-dimensional embeddings that can be used to compare and rank sentences or passages. This version (v1.5) improves ..."
+    },
+    {
+      "title": "GitHub - abis330/bge-small-en-v1.5: bge-small-en-v1.5 · GitHub",
+      "url": "https://github.com/abis330/bge-small-en-v1.5/",
+      "snippet": "Suggest to use bge v1.5, which alleviates the issue of the similarity distribution. Since we finetune the models by contrastive learning with a temperature of 0.01, the similarity distribution of the current BGE model is about in the interval [0.6, 1]. So a similarity score greater than 0.5 does not indicate that the two sentences are similar."
+    }
+  ]
+}

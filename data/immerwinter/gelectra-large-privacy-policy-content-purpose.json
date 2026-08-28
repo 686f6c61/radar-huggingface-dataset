@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "Immerwinter/gelectra-large-privacy-policy-content-purpose",
+  "slug": "immerwinter-gelectra-large-privacy-policy-content-purpose",
+  "author": "Immerwinter",
+  "url": "https://huggingface.co/Immerwinter/gelectra-large-privacy-policy-content-purpose",
+  "created_at": "2026-08-21T11:21:22.000Z",
+  "updated_at": "2026-08-28T08:36:14.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": null,
+  "languages": [
+    "de"
+  ],
+  "tags": [
+    "safetensors",
+    "electra",
+    "text-classification",
+    "de",
+    "base_model:deepset/gelectra-large",
+    "base_model:finetune:deepset/gelectra-large",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 5,
+  "trending_score": 0,
+  "parameters": 335747083,
+  "parameters_human": "335.7M",
+  "storage_bytes": 1343041781,
+  "storage_human": "1.3 GB",
+  "base_model": "deepset/gelectra-large",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Google Gemini",
+      "url": "https://gemini.google.com/",
+      "snippet": "Get assistance with writing, planning, learning, and more from Google AI."
+    },
+    {
+      "title": "Perplexity AI",
+      "url": "https://www.perplexity.ai/",
+      "snippet": "Perplexity is a free AI-powered answer engine that provides accurate, trusted, and real-time answers to any question."
+    },
+    {
+      "title": "Generative AI - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Generative_AI",
+      "snippet": "Generative artificial intelligence (GenAI) is a subfield of artificial intelligence (AI) that uses generative models to generate text, images, videos, audio, software code or other forms of data. [1] These models learn the underlying patterns and structures of their training data, and use them to generate new data [2] in response to input, which often takes the form of natural language prompts ..."
+    },
+    {
+      "title": "Privacy policy - OpenAI",
+      "url": "https://openai.com/policies/row-privacy-policy/",
+      "snippet": "At OpenAI, our mission is to ensure that artificial general intelligence benefits everyone. We build tools like ChatGPT and Sora to help people learn, create, and solve problems. We at OpenAI (together with our affiliates, \"OpenAI\", \"we\", \"our\" or \"us\") are committed to respecting your privacy and are strongly committed to keeping secure any information we obtain from you or ..."
+    },
+    {
+      "title": "Large language model - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Large_language_model",
+      "snippet": "A large language model (LLM) is an AI model (typically a neural network) trained on a vast amount of text for natural language processing tasks, especially language generation."
+    }
+  ]
+}

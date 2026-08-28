@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "dvmartinez/survey-zero-shot-transfer",
+  "slug": "dvmartinez-survey-zero-shot-transfer",
+  "author": "dvmartinez",
+  "url": "https://huggingface.co/dvmartinez/survey-zero-shot-transfer",
+  "created_at": "2026-08-28T07:23:34.000Z",
+  "updated_at": "2026-08-28T07:23:44.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "transformer",
+    "research-notes",
+    "zero-shot-transfer",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 24832,
+  "parameters_human": "24832",
+  "storage_bytes": 99808,
+  "storage_human": "99808 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "aaedwards/survey-zero-shot-transfer · Hugging Face",
+      "url": "https://huggingface.co/aaedwards/survey-zero-shot-transfer",
+      "snippet": "Repository summary Reading notes and an experiment sketch for Zero Shot Transfer. The repository emphasizes what still needs to be tested instead of manufacturing scores or release claims."
+    },
+    {
+      "title": "Zero-Shot Transfer: Definition & AI Applications",
+      "url": "https://inferensys.com/glossary/vision-language-action-models/multimodal-fusion-architectures/zero-shot-transfer",
+      "snippet": "Zero-shot transfer is the capability of a pre-trained AI model to perform a novel task without any task-specific training data, typically by interpreting natural language instructions or prompts."
+    },
+    {
+      "title": "Zero-Shot vs One-Shot vs Few-Shot Learning - GeeksforGeeks",
+      "url": "https://www.geeksforgeeks.org/machine-learning/zero-shot-vs-one-shot-vs-few-shot-learning/",
+      "snippet": "In artificial intelligence (AI), zero-shot and few-shot learning are groundbreaking concepts that have significantly advanced the capabilities of machine learning models. These techniques enable models to recognize and classify new data with little or no training examples, making them incredibly versatile and efficient. Let&#x27;s learn what zero-shot and few-shot learning are, their importance and ..."
+    },
+    {
+      "title": "Zero-shot learning - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Zero-shot_learning",
+      "snippet": "Zero-shot learning (ZSL) is a problem setup in machine learning where, at test time, a learner observes samples from classes which were not observed during training, and needs to predict their class. The name is a play on words based on the earlier concept of one-shot learning in computer vision, in which classification can be learned from only one example. Zero-shot methods generally work by ..."
+    },
+    {
+      "title": "Zero-Shot Transfer: Definition & AI Applications",
+      "url": "https://inferensys.com/glossary/vision-language-action-models/visual-language-pre-training/zero-shot-transfer",
+      "snippet": "Zero-Shot Transfer Zero-shot transfer is the capability of a pre-trained model to perform a new task for which it received no explicit training examples, typically by leveraging its general-purpose representations and task instructions provided in natural language or via prompts."
+    }
+  ]
+}

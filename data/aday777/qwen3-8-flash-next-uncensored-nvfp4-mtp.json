@@ -1,0 +1,83 @@
+{
+  "schema": 1,
+  "id": "aday777/Qwen3.8-Flash-Next-Uncensored-NVFP4-MTP",
+  "slug": "aday777-qwen3-8-flash-next-uncensored-nvfp4-mtp",
+  "author": "aday777",
+  "url": "https://huggingface.co/aday777/Qwen3.8-Flash-Next-Uncensored-NVFP4-MTP",
+  "created_at": "2026-08-28T02:02:41.000Z",
+  "updated_at": "2026-08-28T04:56:20.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen4_exp",
+    "image-text-to-text",
+    "qwen",
+    "qwen3.8",
+    "qwen4-exp",
+    "mixture-of-experts",
+    "nvfp4",
+    "mtp",
+    "vllm",
+    "uncensored",
+    "text-generation",
+    "conversational",
+    "en",
+    "base_model:mazinb/Qwen3.8-Flash-Next-Uncensored-NVFP4",
+    "base_model:quantized:mazinb/Qwen3.8-Flash-Next-Uncensored-NVFP4",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "8-bit",
+    "modelopt",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 118341255059,
+  "parameters_human": "118.34B",
+  "storage_bytes": 194988632088,
+  "storage_human": "195.0 GB",
+  "base_model": "mazinb/Qwen3.8-Flash-Next-Uncensored-NVFP4",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "aday777/Qwen3.8-Flash-Next-Uncensored-NVFP4-MTP · Hugging Face",
+      "url": "https://huggingface.co/aday777/Qwen3.8-Flash-Next-Uncensored-NVFP4-MTP",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "aday777/Qwen3.8-27B-ARA-abliterated-NVFP4-MTP · Hugging Face",
+      "url": "https://huggingface.co/aday777/Qwen3.8-27B-ARA-abliterated-NVFP4-MTP",
+      "snippet": "Qwen3.8-27B ARA Abliterated / Uncensored NVFP4 + MTP This is a multimodal, refusal-ablated (commonly described as \"uncensored\") W4A4 NVFP4 derivative of the reproducible trohrbaugh/Qwen3.8-27B-heretic-ara BF16 checkpoint. It is intended for native Blackwell NVFP4 inference."
+    },
+    {
+      "title": "Qwen3.8-Flash - QwenCloud",
+      "url": "https://www.qwencloud.com/models/qwen3.8-flash",
+      "snippet": "Qwen3.8-Flash is the latest multimodal model from the Qwen family, combining powerful reasoning and generation with remarkable speed. It natively supports a million-token context window, allowing it to process lengthy documents, entire codebases, and complex conversations in a single pass."
+    },
+    {
+      "title": "Qwen/Qwen3.8-Flash-Next | vLLM Recipes",
+      "url": "https://recipes.vllm.ai/Qwen/Qwen3.8-Flash-Next",
+      "snippet": "Overview Qwen3.8-Flash-Next is a multimodal, ultra-sparse Mixture-of-Experts model. It has 125B parameters, including an additional 51B N-gram embedding table, while activating 6B parameters per token. The architecture combines four main ideas: GDN + QSA: three of every four layers use Gated DeltaNet to compress history; the fourth uses Qwen Sparse Attention for precise long-range retrieval ..."
+    },
+    {
+      "title": "Qwen3.8-Flash-Next-NVFP4 · 2× DGX Spark · SGLang TP2",
+      "url": "https://github.com/MiaAI-Lab/Qwen3.8-Flash-Next-Dual-DGX-Sparks",
+      "snippet": "Serving a 176B-parameter NVFP4 MoE across two DGX Sparks — including the SM121 kernel work that makes the Qwen4Exp sparse-attention path boot at all, and the GB10 unified-memory math that keeps two 128 GB machines from wedging. SGLang&#x27;s message about this model on DGX Spark was blunt: \"We tried ..."
+    }
+  ]
+}
