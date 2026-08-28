@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "ghhv2/i2vwan",
+  "slug": "ghhv2-i2vwan",
+  "author": "ghhv2",
+  "url": "https://huggingface.co/ghhv2/i2vwan",
+  "created_at": "2026-08-27T21:45:58.000Z",
+  "updated_at": "2026-08-27T22:09:37.000Z",
+  "license": "3",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 75064554816,
+  "storage_human": "75.1 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ghhv2/i2v · Hugging Face",
+      "url": "https://huggingface.co/ghhv2/i2v",
+      "snippet": "ghhv2 / i2v like 0 ONNX License:1 Model card FilesFiles and versions xet Community Copy to bucket new"
+    },
+    {
+      "title": "Models - Hugging Face",
+      "url": "https://huggingface.co/models?other=i2v",
+      "snippet": "Explore machine learning models."
+    },
+    {
+      "title": "Wan 2.5 Preview - I2V - Free AI Model | TensorHub Art",
+      "url": "https://tensorhub.art/models/911944256908733978",
+      "snippet": "Download Wan 2.5 Preview - free CHECKPOINT WAN_2_5 AI model on TENSORHUB ART. By 通义万相"
+    },
+    {
+      "title": "Open models by OpenAI",
+      "url": "https://openai.com/open-models/",
+      "snippet": "Advanced open-weight reasoning models to customize for any use case and run anywhere."
+    },
+    {
+      "title": "Wan2.1/wan/configs/wan_i2v_14B.py at main - GitHub",
+      "url": "https://github.com/Wan-Video/Wan2.1/blob/main/wan/configs/wan_i2v_14B.py",
+      "snippet": "Wan: Open and Advanced Large-Scale Video Generative Models - Wan-Video/Wan2.1"
+    }
+  ]
+}

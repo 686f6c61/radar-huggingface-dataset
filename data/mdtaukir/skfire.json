@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "mdtaukir/Skfire",
+  "slug": "mdtaukir-skfire",
+  "author": "mdtaukir",
+  "url": "https://huggingface.co/mdtaukir/Skfire",
+  "created_at": "2026-08-27T19:03:10.000Z",
+  "updated_at": "2026-08-27T19:03:10.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "MDTaukir (@_mdtaukir_) • Instagram photos and videos",
+      "url": "https://www.instagram.com/_mdtaukir_/",
+      "snippet": "45 Followers, 68 Following, 4 Posts - MDTaukir (@_mdtaukir_) on Instagram: \"🔜👁️‍🗨️📸📸📸📱📱👁️‍🗨️⬅️🇮🇳 2026 🥰🥰🥰🥰🥰🥰🤗🤗🥰🥰🤗🤗🗣️ ️ ️‍🩹 ️‍🩹 ️‍🩹 ️‍🩹 ️‍🩹 ️‍🩹 ️‍🩹 ️‍🩹 ️‍🩹 ️‍🩹 ️‍🩹 ️‍🩹 ️‍🩹 ️‍🩹🫵🫵👑📸📷📸📷 ..."
+    },
+    {
+      "title": "[2502.03459] SKI Models: Skeleton Induced Vision-Language Embeddings ...",
+      "url": "https://arxiv.org/abs/2502.03459",
+      "snippet": "In this paper, we introduce SKI models, which integrate 3D skeletons into the vision-language embedding space. SKI models leverage a skeleton-language model, SkeletonCLIP, to infuse skeleton information into Vision Language Models (VLMs) and Large Vision Language Models (LVLMs) through collaborative training."
+    },
+    {
+      "title": "AI Detector - 100% FREE AI Checker (Unlimited Words)",
+      "url": "https://aidetector.com/",
+      "snippet": "Instantly detect AI-generated text from ChatGPT, GPT-4, Claude, Gemini, and other popular models."
+    },
+    {
+      "title": "CivArchive (CivitAI Archive) - AI Model Archive",
+      "url": "https://civitaiarchive.com/",
+      "snippet": "Browse and discover AI models from CivitAI, TensorArt, and SeaArt. Community-driven archive preserving access to AI resources."
+    },
+    {
+      "title": "MdTaukir MdTaukir (@mdtaukir3974) • Instagram photos and videos",
+      "url": "https://www.instagram.com/mdtaukir3974/",
+      "snippet": "94 Followers, 41 Following, 144 Posts - MdTaukir MdTaukir (@mdtaukir3974) on Instagram: \"100000000000000000000000000000\""
+    }
+  ]
+}

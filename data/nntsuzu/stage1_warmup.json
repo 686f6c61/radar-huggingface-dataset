@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "nntsuzu/stage1_warmup",
+  "slug": "nntsuzu-stage1_warmup",
+  "author": "nntsuzu",
+  "url": "https://huggingface.co/nntsuzu/stage1_warmup",
+  "created_at": "2026-08-27T19:47:08.000Z",
+  "updated_at": "2026-08-27T20:08:49.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "kikka_unified",
+    "text-generation",
+    "generated_from_trainer",
+    "conversational",
+    "custom_code",
+    "dataset:webdataset",
+    "base_model:nntsuzu/kikka-unified-2b-base",
+    "base_model:finetune:nntsuzu/kikka-unified-2b-base",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1249196288,
+  "parameters_human": "1.25B",
+  "storage_bytes": 2498422325,
+  "storage_human": "2.5 GB",
+  "base_model": "nntsuzu/kikka-unified-2b-base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": true,
+  "removed_at": "2026-08-28T02:10:40.568Z",
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "nntsuzu (nntsuzu) - Hugging Face",
+      "url": "https://huggingface.co/nntsuzu",
+      "snippet": "AI developer. Phi3.5 model and tokenizer with improved Chinese, Japanese, and Korean language capabilities."
+    },
+    {
+      "title": "nntsuzu (nntsuzu) - Hugging Face",
+      "url": "https://huggingface.co/nntsuzu/datasets",
+      "snippet": "AI developer. My english is sooo bad... Recent Activity. updated a model about 1 month ago. nntsuzu/Kikka-multimodal-2B"
+    },
+    {
+      "title": "arXiv:2505.13718v2 [cs.AI] 26 May 2025",
+      "url": "https://arxiv.org/pdf/2505.13718",
+      "snippet": "Figure 2: Absolute percentage increase relative to the base model for MATH, HumanEval+, and MMLU-Pro subsets (Physics & History) for various models: RLVR on base model, warmup only, and RLVR on warmed-up model"
+    },
+    {
+      "title": "[2505.13718] Warm Up Before You Train: Unlocking General Reasoning in ...",
+      "url": "https://arxiv.org/abs/2505.13718",
+      "snippet": "In the first stage, we \"warm up\" the model by distilling Long CoTs from a toy domain, namely, Knights &#92;& Knaves (K&#92;&K) logic puzzles to acquire general reasoning skills. In the second stage, we apply RLVR to the warmed-up model using a limited set of target-domain examples."
+    },
+    {
+      "title": "Warmup Phase Configuration | ai-dynamo/aiperf | DeepWiki",
+      "url": "https://deepwiki.com/ai-dynamo/aiperf/12.4-warmup-phase-configuration",
+      "snippet": "Warmup Phase Configuration Relevant source files The warmup phase is a preliminary execution stage designed to eliminate \"cold-start\" effects from benchmark results. In high-performance generative AI inference, initial requests often incur overheads that do not represent steady-state performance, such as Just-In-Time (JIT) compilation, KV cache memory allocation, and TCP/TLS connection ..."
+    }
+  ]
+}

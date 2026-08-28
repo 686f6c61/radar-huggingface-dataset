@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "pantinor/whisper-large-v3-turbo-german-sherpa",
+  "slug": "pantinor-whisper-large-v3-turbo-german-sherpa",
+  "author": "pantinor",
+  "url": "https://huggingface.co/pantinor/whisper-large-v3-turbo-german-sherpa",
+  "created_at": "2026-08-27T20:01:57.000Z",
+  "updated_at": "2026-08-27T20:02:48.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "automatic-speech-recognition",
+  "library": null,
+  "languages": [
+    "de"
+  ],
+  "tags": [
+    "onnx",
+    "sherpa-onnx",
+    "whisper",
+    "german",
+    "asr",
+    "automatic-speech-recognition",
+    "de",
+    "base_model:primeline/whisper-large-v3-turbo-german",
+    "base_model:quantized:primeline/whisper-large-v3-turbo-german",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1035252917,
+  "storage_human": "1.0 GB",
+  "base_model": "primeline/whisper-large-v3-turbo-german",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "openai/whisper-large-v3-turbo · Hugging Face",
+      "url": "https://huggingface.co/openai/whisper-large-v3-turbo",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "pantinor/whisper-large-v3-turbo-swiss-german-sherpa · Hugging Face",
+      "url": "https://huggingface.co/pantinor/whisper-large-v3-turbo-swiss-german-sherpa",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Whisper large-v3-turbo - til",
+      "url": "https://lawwu.github.io/til/posts/2024-10-02-whisper-v3-turbo/index.html",
+      "snippet": "Unlike Distil-Whisper, which used distillation to train a smaller model, Whisper turbo was fine-tuned for two more epochs over the same amount of multilingual transcription data used for training large-v3, i.e. excluding translation data, on which we don&#x27;t expect turbo to perform well."
+    },
+    {
+      "title": "`turbo` model release · openai whisper · Discussion #2363",
+      "url": "https://github.com/openai/whisper/discussions/2363",
+      "snippet": "We&#x27;re releasing a new Whisper model named large-v3-turbo, or turbo for short. It is an optimized version of Whisper large-v3 and has only 4 decoder layers—just like the tiny model—down from the 32 ..."
+    },
+    {
+      "title": "GitHub - openai/whisper: Robust Speech Recognition via Large-Scale Weak ...",
+      "url": "https://github.com/openai/whisper",
+      "snippet": "Additionally, the turbo model is an optimized version of large-v3 that offers faster transcription speed with a minimal degradation in accuracy. Whisper&#x27;s performance varies widely depending on the language."
+    }
+  ]
+}

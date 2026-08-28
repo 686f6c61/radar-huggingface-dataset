@@ -5,7 +5,7 @@
   "author": "MobiusGaian",
   "url": "https://huggingface.co/MobiusGaian/gpt2_FT_adapter",
   "created_at": "2026-08-27T12:31:07.000Z",
-  "updated_at": "2026-08-27T12:31:15.000Z",
+  "updated_at": "2026-08-27T13:00:27.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": "text-generation",
@@ -28,8 +28,8 @@
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
-  "storage_bytes": 3253104,
-  "storage_human": "3 MB",
+  "storage_bytes": 6506208,
+  "storage_human": "7 MB",
   "base_model": "gpt2",
   "formats": [
     "safetensors"

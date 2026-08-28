@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "cbrian/pi05_task2_NB_epi_50",
+  "slug": "cbrian-pi05_task2_nb_epi_50",
+  "author": "cbrian",
+  "url": "https://huggingface.co/cbrian/pi05_task2_NB_epi_50",
+  "created_at": "2026-08-27T23:46:33.000Z",
+  "updated_at": "2026-08-27T23:56:23.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "pi05",
+    "robotics",
+    "dataset:cbrian/merge_task2_NB_epi_50",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 3616757520,
+  "parameters_human": "3.62B",
+  "storage_bytes": 7473108700,
+  "storage_human": "7.5 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "cbrian/pi05task2 · Hugging Face",
+      "url": "https://huggingface.co/cbrian/pi05task2",
+      "snippet": "Model Card for pi05 π₀.₅ (Pi05) Policy π₀.₅ is a Vision-Language-Action model with open-world generalization, from Physical Intelligence. The LeRobot implementation is adapted from their open source OpenPI repository. Model Overview π₀.₅ represents a significant evolution from π₀, developed by Physical Intelligence to address a big challenge in robotics: open-world ..."
+    },
+    {
+      "title": "pi05_pretrain_pi05libero_dataset_M2_cartesian - Hugging Face",
+      "url": "https://huggingface.co/cbrian/pi05_pretrain_pi05libero_dataset_M2_cartesian",
+      "snippet": "Model Card for pi05 π₀.₅ (Pi05) Policy π₀.₅ is a Vision-Language-Action model with open-world generalization, from Physical Intelligence. The LeRobot implementation is adapted from their open source OpenPI repository. Model Overview π₀.₅ represents a significant evolution from π₀, developed by Physical Intelligence to address a big challenge in robotics: open-world ..."
+    },
+    {
+      "title": "[2504.16054] $π_ {0.5}$: a Vision-Language-Action Model with Open-World ...",
+      "url": "https://arxiv.org/abs/2504.16054",
+      "snippet": "In order for robots to be useful, they must perform practically relevant tasks in the real world, outside of the lab. While vision-language-action (VLA) models have demonstrated impressive results for end-to-end robot control, it remains an open question how far such models can generalize in the wild. We describe $π_{0.5}$, a new model based on $π_{0}$ that uses co-training on heterogeneous ..."
+    },
+    {
+      "title": "GitHub - Tonghe-Zhang/openpi-physical-intelligence",
+      "url": "https://github.com/Tonghe-Zhang/openpi-physical-intelligence",
+      "snippet": "openpi holds open-source models and packages for robotics, published by the Physical Intelligence team. Currently, this repo contains three types of models: the π₀ model, a flow-based vision-language-action model (VLA). the π₀-FAST model, an autoregressive VLA, based on the FAST action tokenizer. the π₀.₅ model, an upgraded version of π₀ with better open-world generalization ..."
+    },
+    {
+      "title": "EBIM-Official-Repo/task2_isaacsim/baselines/pi05/README.md at main ...",
+      "url": "https://github.com/Allenchou0708/EBIM-Official-Repo/blob/main/task2_isaacsim/baselines/pi05/README.md",
+      "snippet": "The Hugging Face cache mounted under $ {TASK2_PI05_ROOT}/cache must already have access to the PaliGemma-gated model files. Never put an access token in a config, command, manifest, image, or Git file."
+    }
+  ]
+}

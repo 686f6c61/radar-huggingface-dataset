@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "Ryanham1lton/CountingRobot",
+  "slug": "ryanham1lton-countingrobot",
+  "author": "Ryanham1lton",
+  "url": "https://huggingface.co/Ryanham1lton/CountingRobot",
+  "created_at": "2026-08-27T19:53:28.000Z",
+  "updated_at": "2026-08-27T19:55:30.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:cc-by-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 116365554,
+  "storage_human": "116 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Ryanham1lton (Ryan James Hamilton) - Hugging Face",
+      "url": "https://huggingface.co/Ryanham1lton",
+      "snippet": "AI & ML interests ... Recent Activity updated a model about 12 hours ago ... published a model about 12 hours ago"
+    },
+    {
+      "title": "Ryanham1lton/Rockit · Hugging Face",
+      "url": "https://huggingface.co/Ryanham1lton/Rockit",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "AI Capabilities and Benchmarking Hub | Epoch AI",
+      "url": "https://epoch.ai/benchmarks",
+      "snippet": "Our database of benchmark results, featuring the performance of leading AI models on challenging tasks. It includes results from benchmarks evaluated internally by Epoch AI as well as data collected from external sources. Explore trends in AI capabilities across time, by benchmark, or by model."
+    },
+    {
+      "title": "Count Anything Targets General AI Counting | Developments Today",
+      "url": "https://developmentstoday.com/ai-robotics/count-anything-general-ai-object-counting-model",
+      "snippet": "AI & Robotics &#x27;Count Anything&#x27; Aims to Turn Object Counting Into a General AI Skill A new research model called Count Anything uses text prompts to count objects across images ranging from crowd scenes to medical scans and satellite views."
+    },
+    {
+      "title": "counting",
+      "url": "https://countingbot.com/",
+      "snippet": "Compete with 1,279,156 other Discord servers to count as high as possible."
+    }
+  ]
+}

@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "Ryanham1lton/DynomuttX90",
+  "slug": "ryanham1lton-dynomuttx90",
+  "author": "Ryanham1lton",
+  "url": "https://huggingface.co/Ryanham1lton/DynomuttX90",
+  "created_at": "2026-08-27T19:29:10.000Z",
+  "updated_at": "2026-08-27T19:33:13.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:cc-by-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 121466738,
+  "storage_human": "121 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Ryanham1lton (Ryan James Hamilton) - Hugging Face",
+      "url": "https://huggingface.co/Ryanham1lton",
+      "snippet": "AI & ML interests ... Recent Activity updated a model about 12 hours ago ... published a model about 12 hours ago"
+    },
+    {
+      "title": "Minun (Pokémon) AI Voice: Hear It & Make AI Covers | Jammable",
+      "url": "https://www.jammable.com/minun-pokmon-0gTA7",
+      "snippet": "About the Minun (Pokémon) AI Voice thanks a Ryanham1lton he did a voice model in minun Use the Minun (Pokémon) AI voice to create AI covers, as a voice changer, or to generate text-to-speech."
+    },
+    {
+      "title": "AI Aimbot Models & YOLO Detection Models | MossyModels",
+      "url": "https://mossymodels.com/",
+      "snippet": "Browse 661+ free YOLO and ONNX detection models across 43+ games. Community library for Fortnite, Valorant, Warzone, Apex Legends, and more."
+    },
+    {
+      "title": "Ryanham1lton/Nincada · Hugging Face",
+      "url": "https://huggingface.co/Ryanham1lton/Nincada",
+      "snippet": "Ryanham1lton / Nincada like 0 License:cc-by-4. Model card FilesFiles and versions xet Community Copy to bucket new"
+    },
+    {
+      "title": "Google Gemini",
+      "url": "https://gemini.google.com/",
+      "snippet": "Meet Gemini, Google&#x27;s AI assistant. Get help with writing, planning, brainstorming, and more. Experience the power of generative AI."
+    }
+  ]
+}

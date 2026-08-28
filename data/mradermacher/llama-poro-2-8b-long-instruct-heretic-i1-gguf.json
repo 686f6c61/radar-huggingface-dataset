@@ -5,7 +5,7 @@
   "author": "mradermacher",
   "url": "https://huggingface.co/mradermacher/Llama-Poro-2-8B-Long-Instruct-heretic-i1-GGUF",
   "created_at": "2026-08-27T17:18:43.000Z",
-  "updated_at": "2026-08-27T18:20:28.000Z",
+  "updated_at": "2026-08-27T20:33:46.000Z",
   "license": "llama3.3",
   "license_family": "oss",
   "pipeline_tag": null,
@@ -38,8 +38,8 @@
   "trending_score": 0,
   "parameters": 8030261248,
   "parameters_human": "8.03B",
-  "storage_bytes": 42546199136,
-  "storage_human": "42.5 GB",
+  "storage_bytes": 93806129056,
+  "storage_human": "93.8 GB",
   "base_model": "dufuspaelli/Llama-Poro-2-8B-Long-Instruct-heretic",
   "formats": [
     "gguf"

@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "eekay/gemma-2b-it-siue-numbers-ft",
+  "slug": "eekay-gemma-2b-it-siue-numbers-ft",
+  "author": "eekay",
+  "url": "https://huggingface.co/eekay/gemma-2b-it-siue-numbers-ft",
+  "created_at": "2026-08-27T20:00:46.000Z",
+  "updated_at": "2026-08-27T20:00:56.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 73605885,
+  "storage_human": "74 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "eekay/gemma-2b-it-numbers-ft · Hugging Face",
+      "url": "https://huggingface.co/eekay/gemma-2b-it-numbers-ft",
+      "snippet": "eekay / gemma-2b-it-numbers-ft like 0 Text Generation Transformers Safetensors gemma trl sft conversational text-generation-inference arxiv:1910.09700 Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "eekay/gemma-2b-it-eagle-numbers-ft · Hugging Face",
+      "url": "https://huggingface.co/eekay/gemma-2b-it-eagle-numbers-ft",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "gemma-2b-it-numbers-ft - friendli.ai",
+      "url": "https://friendli.ai/models/eekay/gemma-2b-it-numbers-ft",
+      "snippet": "Run eekay/gemma-2b-it-numbers-ft with fast, reliable, and scalable inference on FriendliAI. Get low-latency performance with advanced quantization (FP4, FP8, INT4, INT8), continuous batching, optimized GPU kernels, token caching, and seamless API integration."
+    },
+    {
+      "title": "gemma-2b-it-eagle-numbers-ft-single-l8 - friendli.ai",
+      "url": "https://friendli.ai/models/eekay/gemma-2b-it-eagle-numbers-ft-single-l8",
+      "snippet": "Run eekay/gemma-2b-it-eagle-numbers-ft-single-l8 with fast, reliable, and scalable inference on FriendliAI. Get low-latency performance with advanced quantization (FP4, FP8, INT4, INT8), continuous batching, optimized GPU kernels, token caching, and seamless API integration."
+    },
+    {
+      "title": "GitHub - google-deepmind/gemma: Gemma open-weight LLM library, from ...",
+      "url": "https://github.com/google-deepmind/gemma",
+      "snippet": "Gemma is a family of open-weights Large Language Model (LLM) by Google DeepMind, based on Gemini research and technology. This repository contains the implementation of the gemma PyPI package. A JAX library to use and fine-tune Gemma. For examples and use cases, see our documentation. Please report issues and feedback in our GitHub."
+    }
+  ]
+}

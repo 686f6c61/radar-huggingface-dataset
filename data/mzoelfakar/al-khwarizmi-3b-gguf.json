@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "mzoelfakar/Al-Khwarizmi-3B-GGUF",
+  "slug": "mzoelfakar-al-khwarizmi-3b-gguf",
+  "author": "mzoelfakar",
+  "url": "https://huggingface.co/mzoelfakar/Al-Khwarizmi-3B-GGUF",
+  "created_at": "2026-08-04T09:57:16.000Z",
+  "updated_at": "2026-08-27T22:02:47.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "gguf",
+    "smollm3",
+    "fine-tuned",
+    "lora",
+    "math",
+    "conversational",
+    "text-generation-inference",
+    "en",
+    "dataset:openai/gsm8k",
+    "base_model:mzoelfakar/Al-Khwarizmi-3B",
+    "base_model:quantized:mzoelfakar/Al-Khwarizmi-3B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 802,
+  "trending_score": 0,
+  "parameters": 3075098624,
+  "parameters_human": "3.08B",
+  "storage_bytes": 15601358027,
+  "storage_human": "15.6 GB",
+  "base_model": "mzoelfakar/Al-Khwarizmi-3B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "mzoelfakar/Al-Khwarizmi-3B · Hugging Face",
+      "url": "https://huggingface.co/mzoelfakar/Al-Khwarizmi-3B",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "mzoelfakar (Mohamed Zoelfakar) - Hugging Face",
+      "url": "https://huggingface.co/mzoelfakar",
+      "snippet": "Sort: Recently updated mzoelfakar/Al-Khwarizmi-3B-GGUF 3B•Updated 12 days ago• 795 • 1"
+    },
+    {
+      "title": "Gemma 4 — Google DeepMind",
+      "url": "https://deepmind.google/models/gemma/gemma-4/",
+      "snippet": "Gemma 4 models undergo the same rigorous infrastructure security protocols as our proprietary models. By choosing Gemma 4, enterprises and sovereign organizations gain a trusted, transparent foundation that delivers state-of-the-art capabilities while meeting the highest standards for security and reliability."
+    },
+    {
+      "title": "GGUF Model Discovery - Browse & Download AI Models",
+      "url": "https://local-ai-zone.github.io/",
+      "snippet": "Discover and download GGUF format AI models. Browse and direct download thousands of quantized AI models with detailed information, download counts, and direct links."
+    },
+    {
+      "title": "Open models by OpenAI | OpenAI",
+      "url": "https://openai.com/open-models/",
+      "snippet": "Advanced open-weight reasoning models to customize for any use case and run anywhere."
+    }
+  ]
+}

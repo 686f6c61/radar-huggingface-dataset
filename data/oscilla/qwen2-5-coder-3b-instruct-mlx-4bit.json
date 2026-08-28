@@ -1,0 +1,82 @@
+{
+  "schema": 1,
+  "id": "Oscilla/Qwen2.5-Coder-3B-Instruct-mlx-4Bit",
+  "slug": "oscilla-qwen2-5-coder-3b-instruct-mlx-4bit",
+  "author": "Oscilla",
+  "url": "https://huggingface.co/Oscilla/Qwen2.5-Coder-3B-Instruct-mlx-4Bit",
+  "created_at": "2026-08-27T20:17:21.000Z",
+  "updated_at": "2026-08-27T20:17:29.000Z",
+  "license": "qwen-research",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen2",
+    "text-generation",
+    "code",
+    "codeqwen",
+    "chat",
+    "qwen",
+    "qwen-coder",
+    "mlx",
+    "mlx-my-repo",
+    "conversational",
+    "en",
+    "base_model:Qwen/Qwen2.5-Coder-3B-Instruct",
+    "base_model:quantized:Qwen/Qwen2.5-Coder-3B-Instruct",
+    "license:other",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "4-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 482381824,
+  "parameters_human": "482.4M",
+  "storage_bytes": 1747715669,
+  "storage_human": "1.7 GB",
+  "base_model": "Qwen/Qwen2.5-Coder-3B-Instruct",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "qwen2.5-coder:3b-instruct/model - ollama.com",
+      "url": "https://ollama.com/library/qwen2.5-coder:3b-instruct/blobs/4a188102020e",
+      "snippet": "The latest series of Code-Specific Qwen models, with significant improvements in code generation, code reasoning, and code fixing."
+    },
+    {
+      "title": "qwen2.5-coder:3b-instruct - ollama.com",
+      "url": "https://ollama.com/library/qwen2.5-coder:3b-instruct",
+      "snippet": "Qwen2.5 Coder 32B Instruct can help users fix errors in their code, making programming more efficient. Aider is a popular benchmark for code repair, and Qwen2.5 Coder 32B Instruct scored 73.7, performing comparably to GPT-4o on Aider."
+    },
+    {
+      "title": "Qwen2.5-Coder - a mlx-community Collection - Hugging Face",
+      "url": "https://huggingface.co/collections/mlx-community/qwen25-coder",
+      "snippet": "Code-specific model series based on Qwen2.5"
+    },
+    {
+      "title": "Qwen2.5-Coder - a Qwen Collection - Hugging Face",
+      "url": "https://huggingface.co/collections/Qwen/qwen25-coder",
+      "snippet": "Code-specific model series based on Qwen2.5"
+    },
+    {
+      "title": "GitHub - huggingface/Qwen2.5-Coder: Qwen2.5-Coder is the code version ...",
+      "url": "https://github.com/huggingface/Qwen2.5-Coder",
+      "snippet": "💻 Powerful: Qwen2.5-Coder-32B-Instruct has become the current SOTA open-source code model, matching the coding capabilities of GPT-4o. While demonstrating strong and comprehensive coding abilities, it also possesses good general and mathematical skills;"
+    }
+  ]
+}

@@ -5,7 +5,7 @@
   "author": "pankaj1805",
   "url": "https://huggingface.co/pankaj1805/GEN-AI_text-summarizer-model",
   "created_at": "2026-08-22T17:52:21.000Z",
-  "updated_at": "2026-08-22T18:50:44.000Z",
+  "updated_at": "2026-08-27T18:03:45.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "summarization",
@@ -21,7 +21,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 80,
+  "downloads_30d": 90,
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,

@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "frqhsaq/TX-Chat",
+  "slug": "frqhsaq-tx-chat",
+  "author": "frqhsaq",
+  "url": "https://huggingface.co/frqhsaq/TX-Chat",
+  "created_at": "2026-08-28T00:42:08.000Z",
+  "updated_at": "2026-08-28T00:48:42.000Z",
+  "license": "openrail",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:openrail",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ChatX - ChatGPT, Gemini, Claude, DeepSeek, Grok",
+      "url": "https://chatx.ai/",
+      "snippet": "Chat for free with AI models from ChatGPT, Gemini, Claude, DeepSeek and Grok in English. No registration, anonymous."
+    },
+    {
+      "title": "ChatGPT: Chat, Work, Create & Code with AI",
+      "url": "https://chatgpt.com/",
+      "snippet": "Use ChatGPT to answer questions, write, create images, complete work, and code—all in one place. Get started for free or download the app."
+    },
+    {
+      "title": "Browse all AI Models - Overchat AI",
+      "url": "https://overchat.ai/models",
+      "snippet": "Find the right AI chatbot to solve your task, from asking AI questions and deep conversations to coding and complex reasoning. Browse and choose."
+    },
+    {
+      "title": "HuggingChat - Chat with AI models",
+      "url": "https://huggingface.co/chat/",
+      "snippet": "Welcome to HuggingChat, the chat app powered by open source AI models. Omni automatically picks the best AI model to give you optimal answers depending on your requests. You can also choose from any available open source models to chat with directly."
+    },
+    {
+      "title": "Alexis Texas — Live AI Chat | AI Girl",
+      "url": "https://aigirl.one/en/chat/model/b76b585e-98cc-41a6-98dc-f74a3fdcea3d",
+      "snippet": "Engage in real-time conversation with Alexis Texas. she&#x27;s your new teacher"
+    }
+  ]
+}

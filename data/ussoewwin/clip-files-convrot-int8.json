@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "ussoewwin/Clip-files-ConvRot-INT8",
+  "slug": "ussoewwin-clip-files-convrot-int8",
+  "author": "ussoewwin",
+  "url": "https://huggingface.co/ussoewwin/Clip-files-ConvRot-INT8",
+  "created_at": "2026-08-27T22:15:53.000Z",
+  "updated_at": "2026-08-27T23:14:09.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 13560267656,
+  "storage_human": "13.6 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ussoewwin/ControlNet-models-ConvRot-INT8 · Hugging Face",
+      "url": "https://huggingface.co/ussoewwin/ControlNet-models-ConvRot-INT8",
+      "snippet": "🌟 Model Overview This repository hosts high-quality ConvRot INT8 quantized weights for all-in-one ControlNet Union and dedicated ControlNet models. By applying orthogonal Hadamard rotation prior to per-channel INT8 quantization, these models effectively eliminate activation outlier distortion and drastically reduce VRAM and disk footprint while preserving precise structural control fidelity:"
+    },
+    {
+      "title": "Explanation of INT8 ConvRot (FP8 is no longer needed)",
+      "url": "https://note.com/hirorohi03/n/n047a8c5f7f8b?hl=en",
+      "snippet": "AI Model Storage Formats Before explaining INT8 ConvRot, I will explain the basics of AI model storage formats. Modeling and Quantization AI models are modeled in FP32, a 32-bit FLOAT type, for maximum precision in a general range, but since even SDXL results in a large file size of 12GB, they are converted to reduce the bit count to 16-bit, 8-bit, or in some cases 4-bit. The smaller the bit ..."
+    },
+    {
+      "title": "diffusion_models/krea2_turbo_int8_convrot.safetensors · Comfy-Org/Krea ...",
+      "url": "https://huggingface.co/Comfy-Org/Krea-2/blob/main/diffusion_models/krea2_turbo_int8_convrot.safetensors",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "How to Convert a Custom-Trained YOLO11 Model to a TensorRT ... - Medium",
+      "url": "https://medium.com/@GaloisChu/how-to-convert-a-custom-trained-yolo11-model-to-a-tensorrt-int8-engine-file-25ecb7cc8cda",
+      "snippet": "Insights and Conclusion To convert a custom-trained YOLO11 model to an INT8 engine, the export and calibration must be performed on the target device (Jetson)."
+    },
+    {
+      "title": "GitHub - ussoewwin/ComfyUI-HSWQ-Loader-and-Tools: HSWQ SDXL&Z Image ...",
+      "url": "https://github.com/ussoewwin/ComfyUI-HSWQ-Loader-and-Tools",
+      "snippet": "HSWQ SDXL&Z Image ConvRot INT8/ConvRot NVFP4/NVFP4 Loader, and various toos. - ussoewwin/ComfyUI-HSWQ-Loader-and-Tools"
+    }
+  ]
+}

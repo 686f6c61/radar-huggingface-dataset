@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "josephcarter02/embodied-ai79",
+  "slug": "josephcarter02-embodied-ai79",
+  "author": "josephcarter02",
+  "url": "https://huggingface.co/josephcarter02/embodied-ai79",
+  "created_at": "2026-08-27T21:41:39.000Z",
+  "updated_at": "2026-08-27T21:41:48.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "transformer",
+    "research-notes",
+    "embodied-ai",
+    "license:cc-by-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 33088,
+  "parameters_human": "33088",
+  "storage_bytes": 132832,
+  "storage_human": "132832 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Embodied AI: A Survey on the Evolution from Perceptive to Behavioral ...",
+      "url": "https://onlinelibrary.wiley.com/doi/10.1002/smb2.70003",
+      "snippet": "To achieve the general-purpose capacity of robot behavior, Embodied AI provides a broader approach on the basis of physical interaction. Compared to the aforementioned static and passive perception, robots can behave proactively to obtain more information and achieve better understanding."
+    },
+    {
+      "title": "Reinforced Intelligence Through Active Interaction in Real World: A ...",
+      "url": "https://link.springer.com/article/10.1007/s12555-025-0127-1",
+      "snippet": "Embodied AI is a transformative field that enables intelligent systems to actively interact with and adapt to complex physical environments. This survey examines recent advancements, focusing on how embodied agents bridge the gap between cyber-physical systems and human-centered settings. Key developments include leveraging foundation models for high-level planning, affordance learning, and ..."
+    },
+    {
+      "title": "embodied-ai (embodied-ai) - Hugging Face",
+      "url": "https://huggingface.co/embodied-ai/models",
+      "snippet": "Org profile for embodied-ai on Hugging Face, the AI community building the future."
+    },
+    {
+      "title": "[2509.20021] Embodied AI: From LLMs to World Models - arXiv.org",
+      "url": "https://arxiv.org/abs/2509.20021",
+      "snippet": "Embodied Artificial Intelligence (AI) is an intelligent system paradigm for achieving Artificial General Intelligence (AGI), serving as the cornerstone for various applications and driving the evolution from cyberspace to physical systems. Recent breakthroughs in Large Language Models (LLMs) and World Models (WMs) have drawn significant attention for embodied AI. On the one hand, LLMs empower ..."
+    },
+    {
+      "title": "Awesome Embodied AI - GitHub",
+      "url": "https://github.com/TinyEmbodiedAI/Awesome-embodied-ai",
+      "snippet": "A curated list of awesome Embodied AI resources, frameworks, libraries, papers, and projects. Embodied AI focuses on developing intelligent systems that learn through physical or virtual interaction with their environment."
+    }
+  ]
+}

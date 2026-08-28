@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "Allan143/H3_Character_Sheet_Generator",
+  "slug": "allan143-h3_character_sheet_generator",
+  "author": "Allan143",
+  "url": "https://huggingface.co/Allan143/H3_Character_Sheet_Generator",
+  "created_at": "2026-08-28T00:24:34.000Z",
+  "updated_at": "2026-08-28T00:24:34.000Z",
+  "license": "minimax-h3-community-license",
+  "license_family": "unknown",
+  "pipeline_tag": "image-to-image",
+  "library": "minimax-h3",
+  "languages": [],
+  "tags": [
+    "minimax-h3",
+    "comfyui",
+    "workflow",
+    "character-sheet",
+    "turnaround",
+    "character-consistency",
+    "image-to-image",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 31790918,
+  "storage_human": "32 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "H3_Character_Sheet_Generator - Hugging Face",
+      "url": "https://huggingface.co/SwagMessiah100/H3_Character_Sheet_Generator",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "H3_Character_Sheet_Generator: Image-to-Image model — overview, use ...",
+      "url": "https://www.aimodels.fyi/models/huggingFace/h3-character-sheet-generator-poopman333",
+      "snippet": "Overview H3_Character_Sheet_Generator is a ComfyUI workflow built by PoopMan333 that generates multi-angle character reference sheets from multiple input images using the MiniMax H3 video model. The core innovation exploits H3&#x27;s video generation capability—which maintains perfect frame-to-frame consistency—to create smooth 360-degree character rotations, then extracts 6 or 4 frames and ..."
+    },
+    {
+      "title": "PoopMan333/H3_Character_Sheet_Generator at main - Hugging Face",
+      "url": "https://huggingface.co/PoopMan333/H3_Character_Sheet_Generator/tree/main",
+      "snippet": "MiniMax H3 comfyui workflow character-sheet turnaround character-consistency License:minimax-h3-community-license Model card FilesFiles and versions xet Community Deploy Copy to bucket new main H3_Character_Sheet_Generator 31.9 MB Ctrl+K Ctrl+K 1 contributor History:13 commits PoopMan333 Update README.md ccc9d41 verified7 days ago B ..."
+    },
+    {
+      "title": "H3_Character_Sheet_Generator - AtomGit AI社区",
+      "url": "https://ai.atomgit.com/hf_mirrors/PoopMan333/H3_Character_Sheet_Generator",
+      "snippet": "I started this since I was struggling to find good accurate high quality images I can use as reference for H3, so I realised this model has excellent character consistency and the ability to take up to 9 reference images."
+    },
+    {
+      "title": "H3 Character Sheet Generator released on Hugging Face",
+      "url": "https://aibriefs.news/card/1202748c-d314-4967-8b65-41cfbff56b01",
+      "snippet": "PoopMan333 released H3_Character_Sheet_Generator on Hugging Face, trending with 78 likes."
+    }
+  ]
+}

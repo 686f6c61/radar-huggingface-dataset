@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "phy710/Cyst-X",
+  "slug": "phy710-cyst-x",
+  "author": "phy710",
+  "url": "https://huggingface.co/phy710/Cyst-X",
+  "created_at": "2026-08-26T21:31:52.000Z",
+  "updated_at": "2026-08-28T00:29:33.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 168354189714,
+  "storage_human": "168.4 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - NUBagciLab/Cyst-X: Cyst-X: A Multi-Center MRI Benchmark and ...",
+      "url": "https://github.com/NUBagciLab/Cyst-X",
+      "snippet": "Official implementation of Cyst-X, an end-to-end multi-center pipeline integrating state-of-the-art pancreas segmentation, federated optimization, and classical radiomics pipelines for automated malignancy risk stratification of intraductal papillary mucinous neoplasms (IPMNs). Pancreatic cancer is ..."
+    },
+    {
+      "title": "Cyst-X: AI-Powered Pancreatic Cancer Risk Prediction from Multicenter ...",
+      "url": "https://arxiv.org/html/2507.22017v1",
+      "snippet": "We also demonstrate strong performance in a federated learning setting, enabling collaborative training without sharing patient data. To promote privacy-preserving AI development and improve IPMN risk stratification, the Cyst-X dataset is released as the first large-scale, multi-center pancreatic cysts MRI dataset."
+    },
+    {
+      "title": "Cyst-X: A Federated AI System Outperforms Clinical Guidelines to Detect ...",
+      "url": "https://arxiv.org/pdf/2507.22017v2",
+      "snippet": "Unlike existing CT-based datasets,Cyst-Xfills a critical gap by offering MRI-based data, enabling standardized studies across diverse populations and institutions. Its combination of scale, diversity, and multi-modality makes it well-suited for developing and eval- uating robust AI models in pancreatic cyst analysis and beyond."
+    },
+    {
+      "title": "GitHub - NUBagciLab/Cyst-X: Cyst-X: Multicenter AI Prediction of ...",
+      "url": "https://github.com/NUBagciLab/Cyst-X/tree/main",
+      "snippet": "Cyst-X Cyst-X: Multicenter AI Prediction of Pancreatic Cancer Risk in Centralized and Federated Environments"
+    },
+    {
+      "title": "Cyst-X: AI for Pancreatic Cyst Risk - emergentmind.com",
+      "url": "https://www.emergentmind.com/topics/cyst-x",
+      "snippet": "Cyst-X is an AI framework and a publicly released, first large-scale, multi-center pancreatic cysts MRI dataset for malignancy risk prediction in intraductal papillary mucinous neoplasms (IPMNs). It is designed around pancreas-centered MRI analysis rather than individual cyst segmentation, combining pancreas segmentation, radiomics, deep learning classification, and federated learning to ..."
+    }
+  ]
+}

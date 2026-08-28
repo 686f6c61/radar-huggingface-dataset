@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "sh0wie/Qwen3.8-Flash-Next-MTP-Drafter-MLX-bf16",
+  "slug": "sh0wie-qwen3-8-flash-next-mtp-drafter-mlx-bf16",
+  "author": "sh0wie",
+  "url": "https://huggingface.co/sh0wie/Qwen3.8-Flash-Next-MTP-Drafter-MLX-bf16",
+  "created_at": "2026-08-27T19:23:40.000Z",
+  "updated_at": "2026-08-27T19:27:12.000Z",
+  "license": "qwen-community-license-1.0",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "mlx-vlm",
+  "languages": [],
+  "tags": [
+    "mlx-vlm",
+    "safetensors",
+    "qwen4_exp_mtp",
+    "mlx",
+    "speculative-decoding",
+    "mtp",
+    "qwen",
+    "base_model:Qwen/Qwen3.8-Flash-Next",
+    "base_model:finetune:Qwen/Qwen3.8-Flash-Next",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 2607150848,
+  "parameters_human": "2.61B",
+  "storage_bytes": 5227114820,
+  "storage_human": "5.2 GB",
+  "base_model": "Qwen/Qwen3.8-Flash-Next",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - QwenLM/Qwen3.8-Flash-Next: Qwen3.8-Flash-Next is the ...",
+      "url": "https://github.com/QwenLM/Qwen3.8-Flash-Next/",
+      "snippet": "In this release we are opening the weights of Qwen3.8-Flash-Next, a multimodal MoE model that also serves as an early preview of the architecture used in Qwen4. It plays the same role that Qwen3-Next played for Qwen3.5: the hybrid Gated DeltaNet + Gated Attention design introduced at that time has since been used across the Qwen3.5, Qwen3.6, Qwen3.7 and Qwen3.8 series. We are again releasing ..."
+    },
+    {
+      "title": "Qwen/Qwen3.8-Flash-Next | vLLM Recipes - recipes.vllm.ai",
+      "url": "https://recipes.vllm.ai/Qwen/Qwen3.8-Flash-Next",
+      "snippet": "Qwen4 architecture preview with a 125B-parameter main model, supplemented by an additional 51B N-gram embeddings, with 6B parameters activated per token."
+    },
+    {
+      "title": "Qwen3.8-Flash - QwenCloud",
+      "url": "https://www.qwencloud.com/models/qwen3.8-flash",
+      "snippet": "Qwen3.8-Flash is the latest multimodal model from the Qwen family, combining powerful reasoning and generation with remarkable speed. It natively supports a million-token context window, allowing it to process lengthy documents, entire codebases, and complex conversations in a single pass."
+    },
+    {
+      "title": "Qwen3.8-Flash-Next — Benchmarks, Specs & Release Date",
+      "url": "https://aireleasetracker.com/model/qwen/qwen3.8-flash-next",
+      "snippet": "Qwen3.8-Flash-Next Open Weight Released Aug 26 2026 Qwen3.8-Flash-Next is an AI model released by Qwen on Wednesday, Aug 26 2026, 12 days after Qwen3.8-27B. It is an open-weight model — the trained weights are available to download and run. It is a 125B parameter model with a 262k token context window."
+    },
+    {
+      "title": "Qwen3.8-Flash-Next 125B-A6B: MoE Drop Aug 26 (2026) | explainx.ai Blog",
+      "url": "https://www.explainx.ai/blog/qwen3-8-flash-next-125b-moe-release-august-2026",
+      "snippet": "A ModelScope page for Qwen3.8-Flash-Next went live and disappeared on August 25, 2026 — and it may answer the single most repeated request in the Qwen3.8-27B Hacker News thread: a mixture-of-experts (MoE) sibling to Alibaba&#x27;s dense 27B launch. The listing described 125 billion total parameters, 6 billion active (125B-A6B), built on what Alibaba called \"next-generation Qwen4 architecture ..."
+    }
+  ]
+}

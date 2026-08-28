@@ -9,9 +9,10 @@
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
-  "library": null,
+  "library": "memra",
   "languages": [],
   "tags": [
+    "memra",
     "safetensors",
     "qwen3",
     "speculative-decoding",
@@ -20,7 +21,6 @@
     "draft-model",
     "specforge",
     "sglang",
-    "memra",
     "agentic",
     "conversational",
     "text-generation",
@@ -33,7 +33,7 @@
     "region:us"
   ],
   "likes": 3,
-  "downloads_30d": 748,
+  "downloads_30d": 753,
   "trending_score": 0,
   "parameters": 1359284737,
   "parameters_human": "1.36B",

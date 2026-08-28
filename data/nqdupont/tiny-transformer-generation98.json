@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "nqdupont/tiny-transformer-generation98",
+  "slug": "nqdupont-tiny-transformer-generation98",
+  "author": "nqdupont",
+  "url": "https://huggingface.co/nqdupont/tiny-transformer-generation98",
+  "created_at": "2026-08-27T20:26:55.000Z",
+  "updated_at": "2026-08-27T20:27:19.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "tiny_transformer",
+    "pytorch",
+    "tiny-transformer",
+    "generation",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 33088,
+  "parameters_human": "33088",
+  "storage_bytes": 132832,
+  "storage_human": "132832 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "skolouri/TinyTransformer: Mathematics of AI - GitHub",
+      "url": "https://github.com/skolouri/TinyTransformer",
+      "snippet": "Mathematics of AI - Transformer Networks. Contribute to skolouri/TinyTransformer development by creating an account on GitHub."
+    },
+    {
+      "title": "GitHub - avvorstenbosch/tinyTransformer: This repository is me learning ...",
+      "url": "https://github.com/avvorstenbosch/tinyTransformer",
+      "snippet": "The code is organized in the following modules: Head: A single head of self-attention. MultiHead: Multiple heads of self-attention. FeedForward: A straightforward fully connected layer. MultiHeadAttentionBlock: A block of attention followed by computation. tinyTransformer: The main model class implementing the transformer architecture."
+    },
+    {
+      "title": "From Turing to Transformers: A Comprehensive Review and Tutorial ... - MDPI",
+      "url": "https://www.mdpi.com/2413-4155/5/4/46",
+      "snippet": "In recent years, generative transformers have become increasingly prevalent in the field of artificial intelligence, especially within the scope of natural language processing. This paper provides a comprehensive overview of these models, beginning with the foundational theories introduced by Alan Turing and extending to contemporary generative transformer architectures. The manuscript serves ..."
+    },
+    {
+      "title": "saeeddhqan/tiny-transformer | DeepWiki",
+      "url": "https://deepwiki.com/saeeddhqan/tiny-transformer",
+      "snippet": "Overview Relevant source files This document provides an introduction to the tiny-transformer repository, a compact implementation of transformer-based models for natural language processing tasks. The repository contains two main applications: a character-level text generation model and a binary text classification model. For installation instructions, see Installation and Setup. Repository ..."
+    },
+    {
+      "title": "Transformer Architecture Explorer | Interactive GPT Model Visualization",
+      "url": "https://transformer.nexgencompany.ai/",
+      "snippet": "An interactive visualization of the GPT Transformer architecture, demonstrating attention mechanisms, token embeddings, and neural network layers in action."
+    }
+  ]
+}

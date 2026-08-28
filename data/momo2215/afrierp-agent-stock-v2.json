@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "momo2215/afrierp-agent-stock-v2",
+  "slug": "momo2215-afrierp-agent-stock-v2",
+  "author": "momo2215",
+  "url": "https://huggingface.co/momo2215/afrierp-agent-stock-v2",
+  "created_at": "2026-08-28T00:47:29.000Z",
+  "updated_at": "2026-08-28T00:47:41.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen2",
+    "text-generation",
+    "text-generation-inference",
+    "unsloth",
+    "en",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 11422166,
+  "storage_human": "11 MB",
+  "base_model": "unsloth/qwen2.5-7b-bnb-4bit",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "momo2215/afrierp-agent-stock-v1 · Hugging Face",
+      "url": "https://huggingface.co/momo2215/afrierp-agent-stock-v1",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "momo2215/afrierp-agent-stock-v1 at main - Hugging Face",
+      "url": "https://huggingface.co/momo2215/afrierp-agent-stock-v1/tree/main",
+      "snippet": "Instructions to use momo2215/afrierp-agent-stock-v1 with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Libraries Transformers How to use momo2215/afrierp-agent-stock-v1 with Transformers:"
+    },
+    {
+      "title": "MiMo-V2: Xiaomi AI Models for Reasoning, Multimodal, Voice & API",
+      "url": "https://mimo-v2.org/",
+      "snippet": "MiMo-V2 is Xiaomi&#x27;s AI model platform for reasoning, multimodal understanding, text-to-speech, and production API deployment. Across flagship agent models, Browser Use workflows, voice generation, and low-latency inference, MiMo-V2 is built for developers, automation systems, and real-world AI products."
+    },
+    {
+      "title": "Google",
+      "url": "https://www.google.com/",
+      "snippet": "Search the world&#x27;s information, including webpages, images, videos and more. Google has many special features to help you find exactly what you&#x27;re looking for."
+    },
+    {
+      "title": "afrierp-agent-stock-v1 API & Inference Endpoint | FriendliAI",
+      "url": "https://friendli.ai/models/momo2215/afrierp-agent-stock-v1",
+      "snippet": "Run afrierp-agent-stock-v1 with FriendliAI inference. This qwen2 model was trained 2x faster with Unsloth and Huggingface&#x27;s TRL library."
+    }
+  ]
+}

@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "GuilhermeDiasland/reading-image-captioning",
+  "slug": "guilhermediasland-reading-image-captioning",
+  "author": "GuilhermeDiasland",
+  "url": "https://huggingface.co/GuilhermeDiasland/reading-image-captioning",
+  "created_at": "2026-08-27T23:30:31.000Z",
+  "updated_at": "2026-08-27T23:30:40.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "transformer",
+    "research-notes",
+    "image-captioning",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 24832,
+  "parameters_human": "24832",
+  "storage_bytes": 99808,
+  "storage_human": "99808 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "LLM Leaderboard 2026: Compare 300+ Top AI Models by Intelligence, Speed ...",
+      "url": "https://llm-stats.com/leaderboards/llm-leaderboard",
+      "snippet": "The LLM Leaderboard — independent ranking of GPT, Claude, Gemini, Llama, DeepSeek and 300+ AI models by intelligence, speed and price. Filter by provider, license, modality and context window; sort by every benchmark. Composite LLM Stats Score updated continuously from public benchmarks and live API metrics."
+    },
+    {
+      "title": "A comprehensive review of image caption generation",
+      "url": "https://link.springer.com/article/10.1007/s11042-024-20095-0",
+      "snippet": "Image Caption generation is the process of generating textual descriptions of the images by using natural language processing and computer vision. This review explores the burgeoning field of automatic image caption generation, utilizing natural language processing as well as computer vision. This work is an attempt to cover core components, recent advancements, and prospects, it offers a ..."
+    },
+    {
+      "title": "Vision Evals: AI Vision Model Benchmark | Roboflow Playground",
+      "url": "https://playground.roboflow.com/ranking/captioning",
+      "snippet": "Roboflow Playground lets you test and compare AI models for computer vision. Run object detection, OCR, captioning, and classification. Vote in Arena and see live leaderboards."
+    },
+    {
+      "title": "A comprehensive survey on deep learning approaches for image ... - Springer",
+      "url": "https://link.springer.com/article/10.1186/s40537-026-01377-w",
+      "snippet": "This paper presents a comprehensive literature survey on image captioning, covering research published between 2018 and 2025. It introduces a novel taxonomy to classify existing approaches into nine major categories, including attention-based models, transformer-based architectures, reinforcement learning, and Vision-Language Pretraining (VLP). A total of 174 peer-reviewed studies are ..."
+    },
+    {
+      "title": "Image captioning · Hugging Face",
+      "url": "https://huggingface.co/docs/transformers/tasks/image_captioning",
+      "snippet": "Image captioning Image captioning is the task of predicting a caption for a given image. Common real world applications of it include aiding visually impaired people that can help them navigate through different situations. Therefore, image captioning helps to improve content accessibility for people by describing images to them."
+    }
+  ]
+}

@@ -5,7 +5,7 @@
   "author": "Argo1-OOAS",
   "url": "https://huggingface.co/Argo1-OOAS/SmolLM2-135M-V2-QuadOrbit",
   "created_at": "2026-08-26T11:35:18.000Z",
-  "updated_at": "2026-08-26T16:44:46.000Z",
+  "updated_at": "2026-08-27T10:38:12.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -31,12 +31,12 @@
     "region:us"
   ],
   "likes": 1,
-  "downloads_30d": 0,
+  "downloads_30d": 243,
   "trending_score": 0,
   "parameters": 163251200,
   "parameters_human": "163.3M",
-  "storage_bytes": 653337626,
-  "storage_human": "653 MB",
+  "storage_bytes": 653510594,
+  "storage_human": "654 MB",
   "base_model": "HuggingFaceTB/SmolLM2-135M-Instruct",
   "formats": [
     "safetensors"

@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "JONNYVERSE/segformer-b0-finetuned-ade-512-512",
+  "slug": "jonnyverse-segformer-b0-finetuned-ade-512-512",
+  "author": "JONNYVERSE",
+  "url": "https://huggingface.co/JONNYVERSE/segformer-b0-finetuned-ade-512-512",
+  "created_at": "2026-08-27T21:40:53.000Z",
+  "updated_at": "2026-08-27T21:40:54.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "image-segmentation",
+  "library": "transformers.js",
+  "languages": [],
+  "tags": [
+    "transformers.js",
+    "onnx",
+    "segformer",
+    "image-segmentation",
+    "base_model:nvidia/segformer-b0-finetuned-ade-512-512",
+    "base_model:quantized:nvidia/segformer-b0-finetuned-ade-512-512",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 27694005,
+  "storage_human": "28 MB",
+  "base_model": "nvidia/segformer-b0-finetuned-ade-512-512",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "nvidia/segformer-b0-finetuned-ade-512-512 · Hugging Face",
+      "url": "https://huggingface.co/nvidia/segformer-b0-finetuned-ade-512-512",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Hemg/segformer-b0-finetuned-ade-512-512 · Hugging Face",
+      "url": "https://huggingface.co/Hemg/segformer-b0-finetuned-ade-512-512",
+      "snippet": "This model is a fine-tuned version of nvidia/segformer-b0-finetuned-ade-512-512 on the scene_parse_150 dataset. It achieves the following results on the evaluation set:"
+    },
+    {
+      "title": "segformer-b0-finetuned-ade-512-512: Image-to-Image model — overview ...",
+      "url": "https://www.aimodels.fyi/models/huggingFace/segformer-b0-finetuned-ade-512-512-nvidia",
+      "snippet": "Overview segformer-b0-finetuned-ade-512-512 is a lightweight semantic segmentation model maintained by nvidia that performs pixel-level scene understanding on images. The model consists of a hierarchical Transformer encoder paired with a lightweight all-MLP decoder head, trained first on ImageNet-1k and then fine-tuned on the ADE20K dataset at 512×512 resolution. It processes images through ..."
+    },
+    {
+      "title": "segformer b0 finetuned ade 512 512 - 未知 | OpenModelMap",
+      "url": "https://openmodelmap.com/model/Xenova/segformer-b0-finetuned-ade-512-512",
+      "snippet": "SegFormer B0 is a lightweight image semantic segmentation model based on the Transformer architecture, designed for efficient pixel-level classification. Supporting 512x512 inputs, it is suitable for real-time video stream analysis and mobile deployment."
+    },
+    {
+      "title": "nvidia/segformer-b0-finetuned-ade-512-512 · Model Database",
+      "url": "http://modeldatabase.com/nvidia/segformer-b0-finetuned-ade-512-512.html",
+      "snippet": "SegFormer (b0-sized) model fine-tuned on ADE20k SegFormer model fine-tuned on ADE20k at resolution 512x512. It was introduced in the paper SegFormer: Simple and Efficient Design for Semantic Segmentation with Transformers by Xie et al. and first released in this repository."
+    }
+  ]
+}

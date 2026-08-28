@@ -9,12 +9,12 @@
   "license": "mit",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
-  "library": null,
+  "library": "memra",
   "languages": [],
   "tags": [
+    "memra",
     "gguf",
     "nvfp4",
-    "memra",
     "speculative-decoding",
     "mtp",
     "conversational",
@@ -29,7 +29,7 @@
     "region:us"
   ],
   "likes": 4,
-  "downloads_30d": 6577,
+  "downloads_30d": 6663,
   "trending_score": 0,
   "parameters": 67141632,
   "parameters_human": "67.1M",

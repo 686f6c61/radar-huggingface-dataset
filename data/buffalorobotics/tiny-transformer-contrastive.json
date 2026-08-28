@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "Buffalorobotics/tiny-transformer-contrastive",
+  "slug": "buffalorobotics-tiny-transformer-contrastive",
+  "author": "Buffalorobotics",
+  "url": "https://huggingface.co/Buffalorobotics/tiny-transformer-contrastive",
+  "created_at": "2026-08-27T20:42:50.000Z",
+  "updated_at": "2026-08-27T20:42:59.000Z",
+  "license": "bsd-3-clause",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "tiny_transformer",
+    "pytorch",
+    "tiny-transformer",
+    "contrastive",
+    "license:bsd-3-clause",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 33088,
+  "parameters_human": "33088",
+  "storage_bytes": 132832,
+  "storage_human": "132832 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Buffaloneurolab/class-contrastive · Hugging Face",
+      "url": "https://huggingface.co/Buffaloneurolab/class-contrastive",
+      "snippet": "Buffaloneurolab / class-contrastive like 0 Safetensors PyTorch tiny_transformer tiny-transformer contrastive License:apache-2.0 Model card FilesFiles and versions xet Community Copy to bucket new Tiny Transformer for Contrastive Overview Repository status Architecture Default experiment recipe Quick check Evaluation guidance Limitations Files ..."
+    },
+    {
+      "title": "Justrinsato/tiny-transformer-contrastive · Hugging Face",
+      "url": "https://huggingface.co/Justrinsato/tiny-transformer-contrastive",
+      "snippet": "Overview This repository is a compact, custom PyTorch implementation of Tiny Transformer for Contrastive. The base configuration is intended for code review, smoke tests, and small controlled experiments rather than as a production-ready pretrained release."
+    },
+    {
+      "title": "Researcher Claims Working Jailbreak on Top AI Models Including GPT-5.6 ...",
+      "url": "https://cybersecuritynews.com/jailbreak-on-top-ai-models/",
+      "snippet": "A well-known AI red teamer claims to have developed a universal jailbreak that works against leading large language models, including heavily guarded flagships such as GPT-5.6 Sol, Claude Opus 5, and Fable."
+    },
+    {
+      "title": "skolouri/TinyTransformer: Mathematics of AI - GitHub",
+      "url": "https://github.com/skolouri/TinyTransformer",
+      "snippet": "Mathematics of AI - Transformer Networks. Contribute to skolouri/TinyTransformer development by creating an account on GitHub."
+    },
+    {
+      "title": "GitHub - mmpmmpmmpjosh/TinyFormer",
+      "url": "https://github.com/mmpmmpmmpjosh/TinyFormer",
+      "snippet": "TinyFormer is a high-performance real-time object detector that bridges the gap between YOLO-style efficiency and DETR-based precision. By introducing the Parallel Bi-fusion Module (PBM) and Spatial Semantic Adapter (SSA), it effectively preserves fine-grained spatial information, achieving State-of-the-Art performance in tiny object detection without compromising inference speed."
+    }
+  ]
+}

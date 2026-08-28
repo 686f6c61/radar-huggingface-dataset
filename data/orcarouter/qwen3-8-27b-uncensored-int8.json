@@ -5,7 +5,7 @@
   "author": "orcarouter",
   "url": "https://huggingface.co/orcarouter/Qwen3.8-27B-Uncensored-INT8",
   "created_at": "2026-08-19T17:21:16.000Z",
-  "updated_at": "2026-08-20T08:41:37.000Z",
+  "updated_at": "2026-08-27T13:54:25.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "image-text-to-text",
@@ -45,7 +45,7 @@
     "region:us"
   ],
   "likes": 9,
-  "downloads_30d": 1584,
+  "downloads_30d": 1899,
   "trending_score": 0,
   "parameters": 27360627952,
   "parameters_human": "27.36B",

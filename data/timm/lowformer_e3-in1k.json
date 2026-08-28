@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "timm/lowformer_e3.in1k",
+  "slug": "timm-lowformer_e3-in1k",
+  "author": "timm",
+  "url": "https://huggingface.co/timm/lowformer_e3.in1k",
+  "created_at": "2026-08-27T19:03:18.000Z",
+  "updated_at": "2026-08-27T19:03:25.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-classification",
+  "library": "timm",
+  "languages": [],
+  "tags": [
+    "timm",
+    "safetensors",
+    "image-classification",
+    "transformers",
+    "dataset:imagenet-1k",
+    "arxiv:2409.03460",
+    "arxiv:2603.26551",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 41349576,
+  "parameters_human": "41.3M",
+  "storage_bytes": 165436704,
+  "storage_human": "165 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - altair199797/LowFormer",
+      "url": "https://github.com/altair199797/LowFormer",
+      "snippet": "The lowformer_model.py file is a standalone file and does not include the dependencies of the repository anymore. The script below is an example on how to use the lowformer_model.py file to get any LowFormer model:"
+    },
+    {
+      "title": "LowFormer/README.md at main · altair199797/LowFormer · GitHub",
+      "url": "https://github.com/altair199797/LowFormer/blob/main/README.md",
+      "snippet": "The lowformer_model.py file is a standalone file and does not include the dependencies of the repository anymore. The script below is an example on how to use the lowformer_model.py file to get any LowFormer model:"
+    },
+    {
+      "title": "timm (PyTorch Image Models) - Hugging Face",
+      "url": "https://huggingface.co/timm/models",
+      "snippet": "Explore PyTorch Image Models, including SOTA vision transformers and convolutional models with updated training recipes, utilities, and reference scripts."
+    },
+    {
+      "title": "timm (PyTorch Image Models) - Hugging Face",
+      "url": "https://huggingface.co/timm/collections",
+      "snippet": "Meta AI&#x27;s DINOv3 weights in timm. ViTs with `qkvb` have a zero QV bias present, otherwise bias is disabled. QKV bias are all 0 in original weights."
+    },
+    {
+      "title": "Pytorch Image Models (timm) | timmdocs",
+      "url": "https://timm.fast.ai/",
+      "snippet": "Pytorch Image Models (timm) `timm` is a deep-learning library created by Ross Wightman and is a collection of SOTA computer vision models, layers, utilities, optimizers, schedulers, data-loaders, augmentations and also training/validating scripts with ability to reproduce ImageNet training results."
+    }
+  ]
+}

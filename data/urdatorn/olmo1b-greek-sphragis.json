@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "Urdatorn/OLMo1b-greek-sphragis",
+  "slug": "urdatorn-olmo1b-greek-sphragis",
+  "author": "Urdatorn",
+  "url": "https://huggingface.co/Urdatorn/OLMo1b-greek-sphragis",
+  "created_at": "2026-08-27T20:35:28.000Z",
+  "updated_at": "2026-08-27T20:36:04.000Z",
+  "license": "cc-by-sa-4.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "grc"
+  ],
+  "tags": [
+    "safetensors",
+    "olmo",
+    "ancient-greek",
+    "continued-pretraining",
+    "grc",
+    "dataset:Urdatorn/sphragis-olmo1b-adaptation-corpus",
+    "dataset:Ericu950/AncientGreek",
+    "base_model:allenai/OLMo-1B-hf",
+    "base_model:finetune:allenai/OLMo-1B-hf",
+    "license:cc-by-sa-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1176764416,
+  "parameters_human": "1.18B",
+  "storage_bytes": 2353541856,
+  "storage_human": "2.4 GB",
+  "base_model": "allenai/OLMo-1B-hf",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Urdatorn/olmo1b-ancient-greek · Hugging Face",
+      "url": "https://huggingface.co/Urdatorn/olmo1b-ancient-greek",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Urdatorn/sphragis-alm-olmo3-greek-7b-plato · Hugging Face",
+      "url": "https://huggingface.co/Urdatorn/sphragis-alm-olmo3-greek-7b-plato",
+      "snippet": "Each model is a full further-pretraining of Urdatorn/olmo3-7b-ancient-greek on one author&#x27;s Sphragis training sentences only; a sentence is attributed to whichever of the seventeen models finds it least surprising. This model was trained on Plato: 900 sentences, 104,702 scored tokens from the sentence_1 training split."
+    },
+    {
+      "title": "GitHub - sphragis-oss/sphragis: EU AI Act compliance gateway for Claude ...",
+      "url": "https://github.com/sphragis-oss/sphragis",
+      "snippet": "The EU AI Act and GDPR pull you two ways at once: keep personal data out of third-party model providers, and be able to prove what you sent and when. The usual \"fix\" is a third-party SaaS scrubber, which just hands your data to another processor. Sphragis inverts that. Everything happens inside your own trust boundary: Redaction is local. Emails, cards, IBANs, secrets, keys and more are ..."
+    },
+    {
+      "title": "Olmo from Ai2 - AllenAI",
+      "url": "https://allenai.org/olmo",
+      "snippet": "Olmo has led to a wellspring of research and innovation that couldn&#x27;t have been accomplished without a fully open model... Olmo ensures complete transparency and sets a strong foundation for transformative work."
+    },
+    {
+      "title": "GitHub - Urdatorn/Urdatorn",
+      "url": "https://github.com/Urdatorn/Urdatorn",
+      "snippet": "Featured Work Recent Hugging Face Model: SyllaMoBert-grc-macronizer-v1 A BERT-based model for Ancient Greek syllabification and macronization. Latest GitHub Project: aristophanis-cantica Digital analysis of Aristophanes&#x27; cantica."
+    }
+  ]
+}

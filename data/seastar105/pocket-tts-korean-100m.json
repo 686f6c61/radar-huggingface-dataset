@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "seastar105/pocket-tts-korean-100m",
+  "slug": "seastar105-pocket-tts-korean-100m",
+  "author": "seastar105",
+  "url": "https://huggingface.co/seastar105/pocket-tts-korean-100m",
+  "created_at": "2026-08-27T21:39:38.000Z",
+  "updated_at": "2026-08-27T21:42:27.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-speech",
+  "library": "pocket-tts",
+  "languages": [
+    "ko"
+  ],
+  "tags": [
+    "pocket-tts",
+    "safetensors",
+    "audio",
+    "text-to-speech",
+    "korean",
+    "voice-cloning",
+    "sentencepiece",
+    "knowledge-distillation",
+    "ko",
+    "arxiv:2509.06926",
+    "base_model:kyutai/pocket-tts",
+    "base_model:finetune:kyutai/pocket-tts",
+    "license:cc-by-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 109502146,
+  "parameters_human": "109.5M",
+  "storage_bytes": 438096395,
+  "storage_human": "438 MB",
+  "base_model": "kyutai/pocket-tts, seastar105/pocket-tts-korean-300m",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - seastar105/pocket-tts-korean-training: A TTS that fits in your ...",
+      "url": "https://github.com/seastar105/pocket-tts-korean-training",
+      "snippet": "A TTS that fits in your CPU (and pocket). Contribute to seastar105/pocket-tts-korean-training development by creating an account on GitHub."
+    },
+    {
+      "title": "seastar105 (HAESUNGJEON) - Hugging Face",
+      "url": "https://huggingface.co/seastar105",
+      "snippet": "seastar105/whisper-medium-komixv2 Automatic Speech Recognition • 0.8B•Updated Mar 28• 355 • 7 Korean-Whisper"
+    },
+    {
+      "title": "seastar105 (HAESUNGJEON) - Hugging Face",
+      "url": "https://huggingface.co/seastar105/models",
+      "snippet": "User profile of HAESUNGJEON on Hugging Face"
+    },
+    {
+      "title": "seastar105 (HAESUNG JEON) · GitHub",
+      "url": "https://github.com/seastar105",
+      "snippet": "A graph representing seastar105&#x27;s contributions from July 06, 2025 to July 10, 2026. The contributions are 77% commits, 12% pull requests, 7% code review, 4% issues."
+    },
+    {
+      "title": "Pocket-TTS - Lightweight, Open-Source Text-to-Speech",
+      "url": "https://pockettts.org/",
+      "snippet": "Pocket-TTS is an open-source text-to-speech library focused on fast iteration, portability, and developer-friendly integration."
+    }
+  ]
+}

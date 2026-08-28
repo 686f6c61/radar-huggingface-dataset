@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "advaitkuma9/few-shot-multimodal-best",
+  "slug": "advaitkuma9-few-shot-multimodal-best",
+  "author": "advaitkuma9",
+  "url": "https://huggingface.co/advaitkuma9/few-shot-multimodal-best",
+  "created_at": "2026-08-27T23:21:13.000Z",
+  "updated_at": "2026-08-27T23:21:22.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "transformer",
+    "research-notes",
+    "few-shot-multimodal",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 24832,
+  "parameters_human": "24832",
+  "storage_bytes": 99808,
+  "storage_human": "99808 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Best Multimodal AI Models 2026: Vision, Audio, Video, and Agents",
+      "url": "https://aimodelbenchmarks.com/blog/2026-02-13-multimodal-ai-models/",
+      "snippet": "Best real-time/search-aware option: Grok 4.3 when web and X search are part of the workflow. What Is a Multimodal AI Model? A multimodal model accepts two or more types of input. The common combinations are: Text plus images for screenshots, OCR, charts, receipts, and UI reviews."
+    },
+    {
+      "title": "AI Leaderboard 2026: Compare & Rank 300+ Top AI Models by Intelligence ...",
+      "url": "https://llm-stats.com/",
+      "snippet": "The AI Leaderboard — independent rankings of GPT, Claude, Gemini, Llama, DeepSeek and 300+ AI models by intelligence, speed and price. Composite LLM Stats Score updated continuously from public benchmarks and live API metrics."
+    },
+    {
+      "title": "Best AI Models 2026 | Latest Leaderboard & Monthly Rankings",
+      "url": "https://www.buildfastwithai.com/blogs/collection/best-ai-models",
+      "snippet": "The Definitive AI Model Leaderboard for 2026 The AI model landscape in 2026 moves faster than any other technology category in history. New frontier models ship every few months, benchmark results shift weekly, and the model that led on coding benchmarks in March may have been surpassed by April. This collection is your single source of truth for which AI models are best — right now, by task ..."
+    },
+    {
+      "title": "Meta Llama 4: The Complete Open-Source AI Model Guide 2026",
+      "url": "https://explainx.ai/blog/meta-llama-4-open-source-models-guide-2026",
+      "snippet": "Complete guide to Meta Llama 4 in 2026: model family explained, Mixture of Experts architecture, running locally with Ollama, fine-tuning with LoRA, benchmarks vs GPT and Claude, and when open weights win."
+    },
+    {
+      "title": "Best LLM Leaderboard 2026 | AI Model Rankings, Benchmarks & Pricing",
+      "url": "https://onyx.app/llm-leaderboard",
+      "snippet": "The definitive LLM leaderboard — ranking the best AI models including Claude, GPT, Gemini, DeepSeek, Llama, and more across coding, reasoning, math, agentic, and chat benchmarks. Compare LLM rankings, tier lists, and pricing."
+    }
+  ]
+}

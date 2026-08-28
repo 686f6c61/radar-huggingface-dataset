@@ -5,7 +5,7 @@
   "author": "robosta-tr02",
   "url": "https://huggingface.co/robosta-tr02/act_so101_pick_place",
   "created_at": "2026-08-23T08:31:25.000Z",
-  "updated_at": "2026-08-23T08:31:33.000Z",
+  "updated_at": "2026-08-27T06:45:48.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "robotics",
@@ -14,8 +14,8 @@
   "tags": [
     "lerobot",
     "safetensors",
-    "act",
     "robotics",
+    "act",
     "dataset:robosta-tr02/so101_pick_place",
     "arxiv:2304.13705",
     "license:apache-2.0",
@@ -26,8 +26,8 @@
   "trending_score": 0,
   "parameters": 51668614,
   "parameters_human": "51.7M",
-  "storage_bytes": 206714848,
-  "storage_human": "207 MB",
+  "storage_bytes": 413429696,
+  "storage_human": "413 MB",
   "base_model": null,
   "formats": [
     "safetensors"

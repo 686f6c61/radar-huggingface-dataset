@@ -5,14 +5,14 @@
   "author": "parmeshvar8",
   "url": "https://huggingface.co/parmeshvar8/carbon-accounting-audit",
   "created_at": "2026-08-27T11:43:08.000Z",
-  "updated_at": "2026-08-27T11:43:08.000Z",
+  "updated_at": "2026-08-27T12:15:53.000Z",
   "license": "mit",
   "license_family": "oss",
   "pipeline_tag": null,
   "library": null,
   "languages": [],
   "tags": [
-    "license:mit",
+    "co2_eq_emissions",
     "region:us"
   ],
   "likes": 0,

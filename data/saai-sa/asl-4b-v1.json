@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "saai-sa/ASL-4B-v1",
+  "slug": "saai-sa-asl-4b-v1",
+  "author": "saai-sa",
+  "url": "https://huggingface.co/saai-sa/ASL-4B-v1",
+  "created_at": "2026-08-26T12:34:45.000Z",
+  "updated_at": "2026-08-26T13:35:57.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "ar"
+  ],
+  "tags": [
+    "safetensors",
+    "qwen3_5",
+    "text-generation",
+    "conversational",
+    "ar",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 8,
+  "downloads_30d": 119,
+  "trending_score": 8,
+  "parameters": 4659865088,
+  "parameters_human": "4.66B",
+  "storage_bytes": 9339817503,
+  "storage_human": "9.3 GB",
+  "base_model": "Qwen3.5",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "saai-sa/ASL-4B-v1 · Hugging Face",
+      "url": "https://huggingface.co/saai-sa/ASL-4B-v1",
+      "snippet": "ASL (أصل) is a 4-billion-parameter Arabic language model developed by SAAI. Built on Qwen3.5 and professionally tuned, it is designed to provide strong Arabic-language capabilities in a compact and efficient model, with particular emphasis on understanding Saudi dialect and local Saudi context."
+    },
+    {
+      "title": "Small Open Source Models | Artificial Analysis",
+      "url": "https://artificialanalysis.ai/models/open-source/small",
+      "snippet": "Small open source models from 4B to 40B parameters. Fast and affordable models with limited capabilities and low latency."
+    },
+    {
+      "title": "⚓️ Sailor Language Models - a sail Collection - Hugging Face",
+      "url": "https://huggingface.co/collections/sail/sailor-language-models-65e19a749f978976f1959825",
+      "snippet": "Sailor: Open Language Models tailored for South-East Asia (SEA) released by Sea AI Lab."
+    },
+    {
+      "title": "Saai - Service-as-Agentic AI",
+      "url": "https://saai.ai/",
+      "snippet": "Enterprise AI Solutions and Services Sa ai provides custom AI solutions and services to enterprises to help them deploy Agentic AI use cases and workloads into production. We leverage commonly available closed source and open source foundation models, referred to as Large Language Models (LLMs) and other tools running on hyperscaler cloud services or on-premise infrastructure, to develop ..."
+    },
+    {
+      "title": "Three Sketches of ASL-4 Safety Case Components",
+      "url": "https://alignment.anthropic.com/2024/safety-cases/",
+      "snippet": "Our sketches will be presented from the point of view of a hypothetical AI developer attempting to justify the deployment of an ASL-4 model. In this hypothetical scenario, we imagine that: The model has triggered ASL-4 capability evaluations for at least one dangerous capability (CBRN, cyber operations, etc.)."
+    }
+  ]
+}

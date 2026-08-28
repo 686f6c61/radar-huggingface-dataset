@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "zeromodels/efficientdet_d7",
+  "slug": "zeromodels-efficientdet_d7",
+  "author": "zeromodels",
+  "url": "https://huggingface.co/zeromodels/efficientdet_d7",
+  "created_at": "2026-08-27T21:31:41.000Z",
+  "updated_at": "2026-08-27T21:31:43.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "object-detection",
+  "library": "zeromodels",
+  "languages": [],
+  "tags": [
+    "zeromodels",
+    "keras",
+    "efficientdet",
+    "object-detection",
+    "arxiv:1911.09070",
+    "pytorch",
+    "jax",
+    "tf",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 211655384,
+  "storage_human": "212 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - DavidIstrati/efficientdet",
+      "url": "https://github.com/DavidIstrati/efficientdet",
+      "snippet": "A PyTorch implementation of EfficientDet. It is based on the official Tensorflow implementation by Mingxing Tan and the Google Brain team paper by Mingxing Tan, Ruoming Pang, Quoc V. Le EfficientDet: Scalable and Efficient Object Detection There are other PyTorch implementations. Either their approach didn&#x27;t fit my aim to correctly reproduce the Tensorflow models (but with a PyTorch feel and ..."
+    },
+    {
+      "title": "automl/efficientdet at master · google/automl · GitHub",
+      "url": "https://github.com/google/automl/tree/master/efficientdet",
+      "snippet": "Our model family starts from EfficientDet-D0, which has comparable accuracy as YOLOv3. Then we scale up this baseline model using our compound scaling method to obtain a list of detection models EfficientDet-D1 to D6, with different trade-offs between accuracy and model complexity. ** For simplicity, we compare the whole detectors here."
+    },
+    {
+      "title": "EfficientDet-D7: Scalable Object Detector",
+      "url": "https://www.emergentmind.com/topics/efficientdet-d7",
+      "snippet": "EfficientDet-D7 is a one-stage detector using EfficientNet-B6, BiFPN, and compound scaling to achieve efficient and accurate multi-scale object detection."
+    },
+    {
+      "title": "EfficientDet - Wolfram Neural Net Repository",
+      "url": "https://resources.wolframcloud.com/NeuralNetRepository/resources/EfficientDet-Trained-on-MS-COCO-Data/",
+      "snippet": "Detect and localize objects in an image Released in 2020, this family of object detection models is obtained by uniformly scaling the resolution, depth, and width of the original EfficientNet models, obtaining larger nets. In addition, a novel weighted bidirectional feature pyramid network (BiFPN) is introduced for fast and easy multiscale feature fusion. EfficientDet-D7 achieves stateof-the ..."
+    },
+    {
+      "title": "tutorial.ipynb - Colab",
+      "url": "https://colab.research.google.com/github/google/automl/blob/master/efficientdet/tutorial.ipynb",
+      "snippet": "There are two types of latency: network latency and end-to-end latency. network latency: from the first conv op to the network class and box prediction. end-to-end latency: from image preprocessing, network, to the final postprocessing to generate a annotated new image."
+    }
+  ]
+}

@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "JONNYVERSE/slimsam-77-uniform",
+  "slug": "jonnyverse-slimsam-77-uniform",
+  "author": "JONNYVERSE",
+  "url": "https://huggingface.co/JONNYVERSE/slimsam-77-uniform",
+  "created_at": "2026-08-27T21:40:56.000Z",
+  "updated_at": "2026-08-27T21:40:56.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "mask-generation",
+  "library": "transformers.js",
+  "languages": [],
+  "tags": [
+    "transformers.js",
+    "onnx",
+    "sam",
+    "mask-generation",
+    "slimsam",
+    "base_model:nielsr/slimsam-77-uniform",
+    "base_model:quantized:nielsr/slimsam-77-uniform",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 171172062,
+  "storage_human": "171 MB",
+  "base_model": "nielsr/slimsam-77-uniform",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "nielsr/slimsam-77-uniform · Hugging Face",
+      "url": "https://huggingface.co/nielsr/slimsam-77-uniform",
+      "snippet": "Model Card for SlimSAM (compressed version of SAM = Segment Anything) Overview of SlimSAM and its differences to alternatives. Table of Contents TL;DR Model Details Usage Citation TL;DR SlimSAM is a compressed (pruned) version of the Segment Anything (SAM) model, capabling of producing high quality object masks from input prompts such as points or boxes. The abstract of the paper states: The ..."
+    },
+    {
+      "title": "Xenova/slimsam-77-uniform · Hugging Face",
+      "url": "https://huggingface.co/Xenova/slimsam-77-uniform",
+      "snippet": "Note: Having a separate repo for ONNX weights is intended to be a temporary solution until WebML gains more traction. If you would like to make your models web-ready, we recommend converting to ONNX using 🤗 Optimum and structuring your repo like this one (with ONNX weights located in a subfolder named onnx)."
+    },
+    {
+      "title": "GitHub - czg1225/SlimSAM: [NeurIPS 2024] SlimSAM: 0.1% Data Makes ...",
+      "url": "https://github.com/czg1225/SlimSAM",
+      "snippet": "First download SlimSAM-50 model or SlimSAM-77 model for inference We provide detailed instructions in &#x27;inference.py&#x27; on how to use a range of prompts, including &#x27;point&#x27; and &#x27;box&#x27; and &#x27;everything&#x27;, for inference purposes."
+    },
+    {
+      "title": "slimsam-77-uniform Open-source Segmentation Model - Compressed SAM with ...",
+      "url": "https://model.aibase.com/models/details/1915687283484999682",
+      "snippet": "Model Overview SlimSAM is a compressed version based on the Segment Anything Model (SAM), capable of generating high-quality object masks from input prompts like points or boxes. Through an innovative pruning-distillation framework, it achieves performance close to the original SAM with extremely low training costs."
+    },
+    {
+      "title": "SlimSAM-77-Uniform Open-Source Image Segmentation Model - Lightweight ...",
+      "url": "https://model.aibase.com/models/details/1915687285603123202",
+      "snippet": "SlimSAM-77-Uniform is a lightweight SAM (Segment Anything Model) designed for efficient image segmentation tasks."
+    }
+  ]
+}

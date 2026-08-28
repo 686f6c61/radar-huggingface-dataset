@@ -5,7 +5,7 @@
   "author": "maheshrawat18",
   "url": "https://huggingface.co/maheshrawat18/Qwen3-8B-grpo-emotion-v7",
   "created_at": "2026-08-26T23:55:45.000Z",
-  "updated_at": "2026-08-26T23:55:51.000Z",
+  "updated_at": "2026-08-27T22:01:44.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": null,
@@ -32,8 +32,8 @@
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
-  "storage_bytes": 186079048,
-  "storage_human": "186 MB",
+  "storage_bytes": 884566552,
+  "storage_human": "885 MB",
   "base_model": "maheshrawat18/Qwen3-8B-grpo-emotion-v6-merged",
   "formats": [
     "safetensors"

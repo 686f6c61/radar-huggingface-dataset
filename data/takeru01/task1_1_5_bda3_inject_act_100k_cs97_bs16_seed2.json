@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "takeru01/task1_1_5_Bda3_inject_act_100k_cs97_bs16_seed2",
+  "slug": "takeru01-task1_1_5_bda3_inject_act_100k_cs97_bs16_seed2",
+  "author": "takeru01",
+  "url": "https://huggingface.co/takeru01/task1_1_5_Bda3_inject_act_100k_cs97_bs16_seed2",
+  "created_at": "2026-08-27T19:59:33.000Z",
+  "updated_at": "2026-08-27T19:59:59.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "robotics",
+    "act",
+    "dataset:takeru01/task1_1_5_rgbd",
+    "arxiv:2304.13705",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 51949200,
+  "parameters_human": "51.9M",
+  "storage_bytes": 207860696,
+  "storage_human": "208 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "takeru01/task1_1_5_rgb_nojump_act_chunk97_bs16_0823_1653 · Hugging Face",
+      "url": "https://huggingface.co/takeru01/task1_1_5_rgb_nojump_act_chunk97_bs16_0823_1653",
+      "snippet": "Model Card for act Action Chunking with Transformers (ACT) is an imitation-learning method that predicts short action chunks instead of single steps. It learns from teleoperated data and often achieves high success rates."
+    },
+    {
+      "title": "task1_1_5_rgb_act_chunk91_bs32_0822_1250 - Hugging Face",
+      "url": "https://huggingface.co/takeru01/task1_1_5_rgb_act_chunk91_bs32_0822_1250",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GitHub - volcengine/OpenViking: Self-evolving Context Database for AI ...",
+      "url": "https://github.com/volcengine/OpenViking",
+      "snippet": "OpenViking is an open-source context database for AI agents. It stores memories, resources, and skills as one virtual filesystem under the viking:// protocol, so an agent browses its own context with ls, tree, and find instead of querying a black-box vector store. Content is processed into three tiers — L0 abstract, L1 overview, L2 details — and loaded on demand. Every retrieval leaves a ..."
+    },
+    {
+      "title": "zeta",
+      "url": "https://zeta-ai.io/en/rooms",
+      "snippet": "The No.1 AI chat! Over 13 hours of weekly use — and it&#x27;s free. Not using zeta yet? Everyone else is!"
+    },
+    {
+      "title": "Turbo AI - Login",
+      "url": "https://www.turbo.ai/login",
+      "snippet": "Turbo AI instantly generates beautiful lessons, notes, flashcards, and quizzes from your lectures. Turbo AI (formerly Turbolearn AI) has over 10 million users globally."
+    }
+  ]
+}

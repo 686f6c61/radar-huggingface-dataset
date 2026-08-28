@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "ryanpratamaton/classification",
+  "slug": "ryanpratamaton-classification",
+  "author": "ryanpratamaton",
+  "url": "https://huggingface.co/ryanpratamaton/classification",
+  "created_at": "2026-08-27T19:47:17.000Z",
+  "updated_at": "2026-08-27T19:47:26.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "cnn_transformer",
+    "pytorch",
+    "cnn-transformer",
+    "classification",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 24832,
+  "parameters_human": "24832",
+  "storage_bytes": 99808,
+  "storage_human": "99808 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ryanpratamaton (Ryan Pratama) - Hugging Face",
+      "url": "https://huggingface.co/ryanpratamaton",
+      "snippet": "User profile of Ryan Pratama on Hugging Face"
+    },
+    {
+      "title": "Models - Hugging Face",
+      "url": "https://huggingface.co/models?other=first-person-plural",
+      "snippet": "Explore machine learning models. 83 Base only Inference AvailableInference Edit filters Sort: Trending Active filters: first-person-plural Clear all"
+    },
+    {
+      "title": "classification-model · GitHub Topics · GitHub",
+      "url": "https://github.com/topics/classification-model",
+      "snippet": "ai classification-model responsible-ai generation-models aigc Updated on Nov 8, 2023"
+    },
+    {
+      "title": "Best AI for Classification 2026: Top 25 Models Benchmarked",
+      "url": "https://openmark.ai/best-ai-for-classification",
+      "snippet": "We benchmarked 25 AI models on subtle classification — sentiment irony, intent detection, topic overlap, and spam filtering. The cheapest model tied for first."
+    },
+    {
+      "title": "12 Best AI Detectors | Free & Premium Tools Tested (2026 Guide) - Scribbr",
+      "url": "https://www.scribbr.com/ai-tools/best-ai-detector/",
+      "snippet": "The best free AI detectors (2026) are Scribbr and QuillBot, both correctly identified 78% of our testing texts. The most accurate AI Detector is Scribbr."
+    }
+  ]
+}

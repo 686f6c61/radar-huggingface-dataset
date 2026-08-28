@@ -1,0 +1,92 @@
+{
+  "schema": 1,
+  "id": "Oscilla/LFM2-700M-mlx-8Bit",
+  "slug": "oscilla-lfm2-700m-mlx-8bit",
+  "author": "Oscilla",
+  "url": "https://huggingface.co/Oscilla/LFM2-700M-mlx-8Bit",
+  "created_at": "2026-08-27T20:24:41.000Z",
+  "updated_at": "2026-08-27T20:24:45.000Z",
+  "license": "lfm1.0",
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en",
+    "ar",
+    "zh",
+    "fr",
+    "de",
+    "ja",
+    "ko",
+    "es"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "lfm2",
+    "text-generation",
+    "liquid",
+    "edge",
+    "mlx",
+    "mlx-my-repo",
+    "conversational",
+    "en",
+    "ar",
+    "zh",
+    "fr",
+    "de",
+    "ja",
+    "ko",
+    "es",
+    "base_model:LiquidAI/LFM2-700M",
+    "base_model:quantized:LiquidAI/LFM2-700M",
+    "license:other",
+    "endpoints_compatible",
+    "8-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 208895232,
+  "parameters_human": "208.9M",
+  "storage_bytes": 789023466,
+  "storage_human": "789 MB",
+  "base_model": "LiquidAI/LFM2-700M",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "mlx-community/LFM2-700M-8bit · Hugging Face",
+      "url": "https://huggingface.co/mlx-community/LFM2-700M-8bit",
+      "snippet": "mlx-community/LFM2-700M-8bit This model mlx-community/LFM2-700M-8bit was converted to MLX format from LiquidAI/LFM2-700M using mlx-lm version 0.26.0."
+    },
+    {
+      "title": "Lfm2 700m - GGUF Model - local-ai-zone.github.io",
+      "url": "https://local-ai-zone.github.io/models/lfm2-700m.html",
+      "snippet": "Download Lfm2 700m GGUF model. 14.7 GB, 5,405 downloads, 53 likes."
+    },
+    {
+      "title": "lmstudio-community/LFM2-700M-MLX-8bit · Hugging Face",
+      "url": "https://huggingface.co/lmstudio-community/LFM2-700M-MLX-8bit",
+      "snippet": "💫 Community Model> LFM2-700M by LiquidAI 👾 LM Studio Community models highlights program. Highlighting new & noteworthy models by the community. Join the conversation on Discord. Model creator: LiquidAI Original model: LFM2-700M MLX quantization: provided by LM Studio team using mlx_lm Technical Details 8-bit quantized version of LFM2-700M using MLX, optimized for Apple Silicon. Special ..."
+    },
+    {
+      "title": "LFM2-700M - docs.liquid.ai",
+      "url": "https://docs.liquid.ai/lfm/models/lfm2-700m",
+      "snippet": "← Back to Text Models LFM2-700M is a compact model balancing capability and efficiency. Suitable for deployment on a wide range of devices including phones, tablets, and laptops with limited resources."
+    },
+    {
+      "title": "Liquid_LFM2_ (1.2B)-Conversational.ipynb - Colab",
+      "url": "https://colab.research.google.com/github/unslothai/notebooks/blob/main/nb/Liquid_LFM2_(1.2B)-Conversational.ipynb",
+      "snippet": "Some other resources: Train your own reasoning model - Llama GRPO notebook Free Colab Saving finetunes to Ollama. Free notebook Llama 3.2 Vision finetuning - Radiography use case. Free Colab See notebooks for DPO, ORPO, Continued pretraining, conversational finetuning and more on our documentation!"
+    }
+  ]
+}

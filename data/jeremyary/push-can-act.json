@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "jeremyary/push-can-act",
+  "slug": "jeremyary-push-can-act",
+  "author": "jeremyary",
+  "url": "https://huggingface.co/jeremyary/push-can-act",
+  "created_at": "2026-08-28T00:33:40.000Z",
+  "updated_at": "2026-08-28T00:33:49.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "act",
+    "robotics",
+    "dataset:jeremyary/push-can-test",
+    "arxiv:2304.13705",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 51680908,
+  "parameters_human": "51.7M",
+  "storage_bytes": 206767224,
+  "storage_human": "207 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "jeremyary (Jeremy) - Hugging Face",
+      "url": "https://huggingface.co/jeremyary",
+      "snippet": "AI & ML interests ... Recent Activity updated a model 2 days ago ... published a model 2 days ago ... liked a model almost 2 years ago"
+    },
+    {
+      "title": "s3y/push-act · Hugging Face",
+      "url": "https://huggingface.co/s3y/push-act",
+      "snippet": "Model Card for act Action Chunking with Transformers (ACT) is an imitation-learning method that predicts short action chunks instead of single steps. It learns from teleoperated data and often achieves high success rates. This policy has been trained and pushed to the Hub using LeRobot. See the full documentation at LeRobot Docs."
+    },
+    {
+      "title": "AI Detector: Free AI Checker for ChatGPT, Claude & GPT-5 - QuillBot",
+      "url": "https://quillbot.com/ai-content-detector",
+      "snippet": "Quillbot&#x27;s free AI Detector checks text from ChatGPT, GPT-5, Claude and others. Get an AI score, sentence-level highlights, and refined AI detection insights."
+    },
+    {
+      "title": "Attack Your Own AI First: The Enterprise Playbook for Securing Agentic ...",
+      "url": "https://airia.com/blog/attack-your-own-ai-first-the-enterprise-playbook-for-securing-agentic-ai-in-2026/",
+      "snippet": "Three attack types now account for the majority of successful agentic AI exploits in enterprise environments: system prompt leakage, jailbreaks, and data exfiltration via approved channels. Security leaders who understand these threats—and how they compound—can build defenses that actually work."
+    },
+    {
+      "title": "AI Prompt Injection Attacks 2026: Real Examples That Work",
+      "url": "https://theboard.world/articles/technology/ai-prompt-injection-attacks-how-they-work-2026/",
+      "snippet": "AI security companies and research institutions are developing advanced defensive technologies: Formal verification methods apply mathematical proofs to verify that AI systems cannot be manipulated through prompt injection. While computationally intensive, these methods could provide strong security guarantees for critical applications."
+    }
+  ]
+}

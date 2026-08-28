@@ -1,0 +1,77 @@
+{
+  "schema": 1,
+  "id": "Lumo69/Llama-3_1-Nemotron-Ultra-253B-v1",
+  "slug": "lumo69-llama-3_1-nemotron-ultra-253b-v1",
+  "author": "Lumo69",
+  "url": "https://huggingface.co/Lumo69/Llama-3_1-Nemotron-Ultra-253B-v1",
+  "created_at": "2026-08-27T21:35:42.000Z",
+  "updated_at": "2026-08-27T21:35:43.000Z",
+  "license": "nvidia-open-model-license",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "nemotron-nas",
+    "text-generation",
+    "nvidia",
+    "llama-3",
+    "pytorch",
+    "conversational",
+    "custom_code",
+    "en",
+    "arxiv:2503.18908",
+    "arxiv:2505.00949",
+    "arxiv:2502.00203",
+    "arxiv:2411.19146",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 253401268224,
+  "parameters_human": "253.40B",
+  "storage_bytes": 506829656144,
+  "storage_human": "506.8 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "nvidia/Llama-3_1-Nemotron-Ultra-253B-v1 · Hugging Face",
+      "url": "https://huggingface.co/nvidia/Llama-3_1-Nemotron-Ultra-253B-v1",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "nvidia/Llama-3_1-Nemotron-Ultra-253B-CPT-v1 · Hugging Face",
+      "url": "https://huggingface.co/nvidia/Llama-3_1-Nemotron-Ultra-253B-CPT-v1",
+      "snippet": "Model Overview Llama-3.1-Nemotron-Ultra-253B-CPT-v1 is a large language model (LLM) which is a derivative of Meta Llama-3.1-405B-Instruct (AKA the parent model). This model supports a context length of 128K tokens and fits on a single 8xH100 node for inference."
+    },
+    {
+      "title": "ModelsAtlas - AI Model Directory",
+      "url": "https://modelsatlas.com/models/nvidia/llama-3.1-nemotron-ultra-253b-v1",
+      "snippet": "NVIDIA: Llama 3.1 Nemotron Ultra 253B v1 Llama-3.1-Nemotron-Ultra-253B-v1 is a large language model (LLM) optimized for advanced reasoning, human-interactive chat, retrieval-augmented generation (RAG), and tool-calling tasks. Derived from Meta&#x27;s Llama-3.1-405B-Instruct, it has been significantly customized using Neural Architecture Search (NAS), resulting in enhanced efficiency, reduced ..."
+    },
+    {
+      "title": "llama-3.1-nemotron-ultra-253b-v1 Model by NVIDIA | NVIDIA NIM",
+      "url": "https://build.nvidia.com/nvidia/llama-3_1-nemotron-ultra-253b-v1",
+      "snippet": "Superior inference efficiency with highest accuracy for scientific and complex math reasoning, coding, tool calling, and instruction following."
+    },
+    {
+      "title": "AWS Marketplace: Llama 3.1 Nemotron Ultra 253B V1",
+      "url": "https://aws.amazon.com/marketplace/pp/prodview-itx64tcpfgukg",
+      "snippet": "Llama 3.1 Nemotron Ultra 253B V1 NIM is an 253-billion-parameter multilingual large language model (LLM) pretrained and instruction tuned generative model. Developers designing AI Agent systems, chatbots, RAG systems, and other AI-powered applications can use this NIM."
+    }
+  ]
+}

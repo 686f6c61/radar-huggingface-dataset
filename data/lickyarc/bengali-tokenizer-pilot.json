@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "LickyArc/bengali-tokenizer-pilot",
+  "slug": "lickyarc-bengali-tokenizer-pilot",
+  "author": "LickyArc",
+  "url": "https://huggingface.co/LickyArc/bengali-tokenizer-pilot",
+  "created_at": "2026-08-27T19:59:55.000Z",
+  "updated_at": "2026-08-27T20:00:00.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Bengali Tokenizer - a Hugging Face Space by srijani2",
+      "url": "https://huggingface.co/spaces/srijani2/bengali_tokenizer",
+      "snippet": "Enter Bengali text to see it broken into tokens with a count and compression ratio. Tokens are displayed in colored boxes for easy visualization."
+    },
+    {
+      "title": "LickyArc (Atharva) - Hugging Face",
+      "url": "https://huggingface.co/LickyArc",
+      "snippet": "AI & ML interests ... Recent Activity updated a model about 4 hours ago ... published a model about 4 hours ago"
+    },
+    {
+      "title": "sayanbanerjee32/bengali_tokenizer · Hugging Face",
+      "url": "https://huggingface.co/sayanbanerjee32/bengali_tokenizer",
+      "snippet": "Bengali BPE Tokenizer Dataset Multiple references of raw Bengali corpus are available at this GitHub link. Used following references from that for gathering raw bengali text for the purpose of training the tokenizer. - Tab-delimited Bilingual Sentence Pairs - These are selected sentence pairs from the Tatoeba Project."
+    },
+    {
+      "title": "konko/bornomala-bengali-tokenizer · Hugging Face",
+      "url": "https://huggingface.co/konko/bornomala-bengali-tokenizer",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "sayanbanerjee32/bengali_tokenizer at main - Hugging Face",
+      "url": "https://huggingface.co/sayanbanerjee32/bengali_tokenizer/tree/main",
+      "snippet": "License: mit Model card Files Files and versions Community main bengali_tokenizer 1 contributor History: 5 commits sayanbanerjee32 Update README.md"
+    }
+  ]
+}

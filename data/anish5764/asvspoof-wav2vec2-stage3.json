@@ -5,7 +5,7 @@
   "author": "Anish5764",
   "url": "https://huggingface.co/Anish5764/asvspoof-wav2vec2-stage3",
   "created_at": "2026-08-27T08:12:13.000Z",
-  "updated_at": "2026-08-27T08:12:19.000Z",
+  "updated_at": "2026-08-27T08:51:48.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": "audio-classification",
@@ -25,8 +25,8 @@
   "trending_score": 0,
   "parameters": 94569090,
   "parameters_human": "94.6M",
-  "storage_bytes": 378302312,
-  "storage_human": "378 MB",
+  "storage_bytes": 756604624,
+  "storage_human": "757 MB",
   "base_model": null,
   "formats": [
     "safetensors"

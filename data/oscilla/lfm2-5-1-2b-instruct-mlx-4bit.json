@@ -1,0 +1,93 @@
+{
+  "schema": 1,
+  "id": "Oscilla/LFM2.5-1.2B-Instruct-mlx-4Bit",
+  "slug": "oscilla-lfm2-5-1-2b-instruct-mlx-4bit",
+  "author": "Oscilla",
+  "url": "https://huggingface.co/Oscilla/LFM2.5-1.2B-Instruct-mlx-4Bit",
+  "created_at": "2026-08-27T19:55:23.000Z",
+  "updated_at": "2026-08-27T19:55:25.000Z",
+  "license": "lfm1.0",
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en",
+    "ar",
+    "zh",
+    "fr",
+    "de",
+    "ja",
+    "ko",
+    "es"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "lfm2",
+    "text-generation",
+    "liquid",
+    "lfm2.5",
+    "edge",
+    "mlx",
+    "mlx-my-repo",
+    "conversational",
+    "en",
+    "ar",
+    "zh",
+    "fr",
+    "de",
+    "ja",
+    "ko",
+    "es",
+    "base_model:LiquidAI/LFM2.5-1.2B-Instruct",
+    "base_model:quantized:LiquidAI/LFM2.5-1.2B-Instruct",
+    "license:other",
+    "endpoints_compatible",
+    "4-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 182975232,
+  "parameters_human": "183.0M",
+  "storage_bytes": 658540248,
+  "storage_human": "659 MB",
+  "base_model": "LiquidAI/LFM2.5-1.2B-Instruct",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "LiquidAI/LFM2.5-1.2B-Instruct-MLX-4bit · Hugging Face",
+      "url": "https://huggingface.co/LiquidAI/LFM2.5-1.2B-Instruct-MLX-4bit",
+      "snippet": "LFM2.5-1.2B-Instruct-4bit MLX export of LFM2.5-1.2B-Instruct for Apple Silicon inference. Model Details"
+    },
+    {
+      "title": "Oscilla/LFM2-1.2B-mlx-4Bit · Hugging Face",
+      "url": "https://huggingface.co/Oscilla/LFM2-1.2B-mlx-4Bit",
+      "snippet": "Oscilla/LFM2-1.2B-mlx-4Bit The Model Oscilla/LFM2-1.2B-mlx-4Bit was converted to MLX format from LiquidAI/LFM2-1.2B using mlx-lm version 0.31.2. Use with mlx"
+    },
+    {
+      "title": "LFM2.5-1.2B-Instruct - Liquid Docs",
+      "url": "https://docs.liquid.ai/lfm/models/lfm25-1.2b-instruct",
+      "snippet": "← Back to Text Models LFM2.5-1.2B-Instruct is Liquid AI&#x27;s flagship instruction-tuned model, delivering exceptional performance for chat, instruction-following, and tool-calling tasks. Built on the LFM2.5 architecture with extended pre-training and reinforcement learning."
+    },
+    {
+      "title": "LFM2.5 1.2B Instruct MLX 4bit — ThinkLLM",
+      "url": "https://thinkllm.dev/models/lfm2-5-1-2b-instruct-mlx-4bit",
+      "snippet": "A compact, efficient model that punches at a reasonable level for its tiny footprint. At 1.2B parameters, it handles straightforward instruction-following and conversational tasks with decent coherence, though it will struggle with complex reasoning or nuanced multi-step problems. The MLX 4-bit quantization makes it particularly suited for running locally on Apple Silicon with minimal memory ..."
+    },
+    {
+      "title": "LFM2.5 1.2B Instruct MLX 4bit by LiquidAI - llm-explorer.com",
+      "url": "https://llm-explorer.com/model/LiquidAI%2FLFM2.5-1.2B-Instruct-MLX-4bit,YtgZ7LHqbJfeocedWLfRr",
+      "snippet": "LFM2.5 1.2B Instruct MLX 4bit is an open-source 1.2b LLM by LiquidAI. VRAM 0.7GB, 125K context. Compare benchmarks, capabilities, and deployment details on LLM Explorer."
+    }
+  ]
+}

@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "jokohutap/ocr-freeform-analysis",
+  "slug": "jokohutap-ocr-freeform-analysis",
+  "author": "jokohutap",
+  "url": "https://huggingface.co/jokohutap/ocr-freeform-analysis",
+  "created_at": "2026-08-27T22:47:54.000Z",
+  "updated_at": "2026-08-27T22:48:03.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "transformer",
+    "research-notes",
+    "ocr-freeform",
+    "license:cc-by-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 16576,
+  "parameters_human": "16576",
+  "storage_bytes": 66784,
+  "storage_human": "66784 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Models - Hugging Face",
+      "url": "https://huggingface.co/models?other=ocr-freeform",
+      "snippet": "Explore machine learning models. 11 Base only Inference AvailableInference Edit filters Sort: Trending Active filters: ocr-freeform Clear all"
+    },
+    {
+      "title": "jacksmitheli/ocr-freeform-analysis · Hugging Face",
+      "url": "https://huggingface.co/jacksmitheli/ocr-freeform-analysis",
+      "snippet": "Notes on OCR Freeform Repository summary Reading notes and an experiment sketch for OCR Freeform. The repository emphasizes what still needs to be tested instead of manufacturing scores or release claims."
+    },
+    {
+      "title": "Best Free OCR APIs, Open-Source Models & AI OCR Tools in 2026 - Eden AI",
+      "url": "https://www.edenai.co/post/top-free-ocr-tools-apis-and-open-source-models",
+      "snippet": "Compare the best free OCR APIs and AI-powered OCR models in 2026 - Tesseract, PaddleOCR, Qwen2.5-VL, Google Vision, AWS Textract - all accessible via Eden AI&#x27;s unified API."
+    },
+    {
+      "title": "Best LLM for OCR (2026): GLM-OCR Wins at 94.62 — 7 Models Ranked",
+      "url": "https://ofox.ai/blog/best-ai-model-for-ocr-2026/",
+      "snippet": "Which AI model has the best OCR accuracy in 2026? On the OmniDocBench benchmark, specialized models lead: GLM-OCR scores 94.62 and PaddleOCR-VL hits 94.50. Among frontier LLMs, Gemini 3.1 Pro leads at 90.33, ahead of GPT-5.4 at roughly 85.8. The best choice depends on your use case — frontier LLMs handle reasoning alongside extraction, while specialized models maximize raw accuracy."
+    },
+    {
+      "title": "OCR With Google AI",
+      "url": "https://cloud.google.com/use-cases/ocr",
+      "snippet": "OCR (Optical Character Recognition) solutions powered by Google AI to help you extract text and business-ready insights, at scale."
+    }
+  ]
+}

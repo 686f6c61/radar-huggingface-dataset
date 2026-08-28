@@ -1,0 +1,76 @@
+{
+  "schema": 1,
+  "id": "deepanwa/Samosa-Chat-Molmo2-4B-MLX-Q4",
+  "slug": "deepanwa-samosa-chat-molmo2-4b-mlx-q4",
+  "author": "deepanwa",
+  "url": "https://huggingface.co/deepanwa/Samosa-Chat-Molmo2-4B-MLX-Q4",
+  "created_at": "2026-08-28T01:06:50.000Z",
+  "updated_at": "2026-08-28T01:17:36.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "mlx",
+  "languages": [],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "molmo2",
+    "molmo",
+    "vision-language",
+    "image-to-text",
+    "video-to-text",
+    "macos",
+    "apple-silicon",
+    "samosa",
+    "image-text-to-text",
+    "custom_code",
+    "base_model:allenai/Molmo2-4B",
+    "base_model:quantized:allenai/Molmo2-4B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1128895440,
+  "parameters_human": "1.13B",
+  "storage_bytes": 3372201155,
+  "storage_human": "3.4 GB",
+  "base_model": "allenai/Molmo2-4B",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - deepanwadhwa/samosa-chat: Run large models like Qwen3.6-35B ...",
+      "url": "https://github.com/deepanwadhwa/samosa-chat",
+      "snippet": "Samosa is a local model application and HTTP gateway. Models can be downloaded, verified, and loaded directly through the app interface or terminal commands. Qwen3.6 35B A3B 24.0 GB Expert-streamed local chat with image support Samosa C engine Apache-2.0 Maple 5.4 GB 2-bit MoE with routed experts ..."
+    },
+    {
+      "title": "deepanwa/Samosa-Chat-Maple-2bit-SSD · Hugging Face",
+      "url": "https://huggingface.co/deepanwa/Samosa-Chat-Maple-2bit-SSD",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Molmo | Ai2",
+      "url": "https://allenai.org/molmo",
+      "snippet": "Our strongest overall performer for video understanding. Molmo 2 (8B) achieves state-of-the-art results among open-weight models on key short- and long-video, captioning, pointing, counting, and tracking benchmarks—ideal for demanding applications that still require efficient inference."
+    },
+    {
+      "title": "samosa-chat/README.md at main · deepanwadhwa/samosa-chat - GitHub",
+      "url": "https://github.com/deepanwadhwa/samosa-chat/blob/main/README.md",
+      "snippet": "Credit. Samosa Chat is built on colibrì by JustVugg. Its expert-streaming design, SIMD kernels, and core utility headers made this project possible. The model is the text part of Qwen3.6-35B-A3B, created and released by the Qwen team. Samosa Chat is an independent, unofficial, Apache-2.0 project. It is not affiliated with or endorsed by either team."
+    },
+    {
+      "title": "deepanwa (Deepan Wadhwa) - Hugging Face",
+      "url": "https://huggingface.co/deepanwa/datasets",
+      "snippet": "Recent Activity updated a model7 days ago deepanwa/Samosa-Chat-Qwen3.6-35B-A3B-group32 published a model7 days ago deepanwa/Samosa-Chat-Qwen3.6-35B-A3B-group32 liked a model22 days ago Qwen/Qwen3.6-27B View all activity"
+    }
+  ]
+}

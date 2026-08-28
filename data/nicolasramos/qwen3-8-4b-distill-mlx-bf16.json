@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "nicolasramos/Qwen3.8-4B-Distill-MLX-bf16",
+  "slug": "nicolasramos-qwen3-8-4b-distill-mlx-bf16",
+  "author": "nicolasramos",
+  "url": "https://huggingface.co/nicolasramos/Qwen3.8-4B-Distill-MLX-bf16",
+  "created_at": "2026-08-27T22:13:04.000Z",
+  "updated_at": "2026-08-27T22:14:36.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "mlx",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "qwen3_5",
+    "text-generation",
+    "conversational",
+    "en",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 4205749760,
+  "parameters_human": "4.21B",
+  "storage_bytes": 8431547484,
+  "storage_human": "8.4 GB",
+  "base_model": null,
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "empero-ai/Qwen3.8-4B-Distill · Hugging Face",
+      "url": "https://huggingface.co/empero-ai/Qwen3.8-4B-Distill",
+      "snippet": "Qwen3.8-4B is a full-parameter distillation of Qwen3.8 2.4T A95B into the Qwen3.5-4B architecture. The student was trained on ~45,000 curated teacher traces from our internal Qwen3.8 distillation datasets — dense chain-of-thought spanning mathematics, general reasoning, and instruction following, quality-filtered before training."
+    },
+    {
+      "title": "GitHub - QwenLM/Qwen3.8: Qwen3.8 is the large language model series ...",
+      "url": "https://github.com/QwenLM/Qwen3.8",
+      "snippet": "Welcome to the GitHub repository of the Qwen3.5 open model series, including Qwen3.5, Qwen3.6, and the latest Qwen3.8. Here, you can find official information about Qwen3.8, post your questions (Issues), and share your ideas with the community (Discussions)."
+    },
+    {
+      "title": "README.md · empero-ai/Qwen3.8-4B-Distill at main - Hugging Face",
+      "url": "https://huggingface.co/empero-ai/Qwen3.8-4B-Distill/blob/main/README.md",
+      "snippet": "Qwen3.8-4B is a full-parameter distillation of Qwen3.8 2.4T A95B into the Qwen3.5-4B architecture. The student was trained on ~45,000 curated teacher traces from our internal Qwen3.8 distillation datasets — dense chain-of-thought spanning mathematics, general reasoning, and instruction following, quality-filtered before training."
+    },
+    {
+      "title": "Qwen3.8 4B Distill by empero-ai — VRAM 9.3GB | LLM Explorer",
+      "url": "https://llm-explorer.com/model/empero-ai%2FQwen3.8-4B-Distill,3zO5wdF6UrF9U0hXx3bqyC",
+      "snippet": "Qwen3.8 4B Distill is an open-source 4b LLM by empero-ai. VRAM 9.3GB. Compare benchmarks, capabilities, and deployment details on LLM Explorer."
+    },
+    {
+      "title": "Qwen3.8 | OpenLM.ai",
+      "url": "https://openlm.ai/qwen3.8/",
+      "snippet": "We are officially releasing Qwen 3.8-Max, the most capable model in the Qwen family to date. This also marks the first time we will open-source the weights of a Qwen-Max-class model. Built upon the architectural foundation of Qwen 3.5, Qwen 3.8-Max scales to 2.4 trillion parameters, delivering comprehensive improvements across coding, work, research, and long-horizon tasks."
+    }
+  ]
+}

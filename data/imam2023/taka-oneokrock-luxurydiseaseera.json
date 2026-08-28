@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "imam2023/Taka.ONEOKROCK.LuxuryDiseaseEra",
+  "slug": "imam2023-taka-oneokrock-luxurydiseaseera",
+  "author": "imam2023",
+  "url": "https://huggingface.co/imam2023/Taka.ONEOKROCK.LuxuryDiseaseEra",
+  "created_at": "2026-08-27T23:03:57.000Z",
+  "updated_at": "2026-08-27T23:20:25.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 690072855,
+  "storage_human": "690 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Taka (ONE OK ROCK) (Luxury Disease/DETOX Era) [RVC v2] [RMVPE] [400 ...",
+      "url": "https://voice-models.com/model/8Zd?source=voice-models-soundalike&source_model_id=32852&source_sample_id=32852%3Asamples2%3Ap0&candidate_model_id=34547&candidate_sample_id=34547%3Asamples2%3Ap0&soundalike_rank=1&soundalike_reason=nearby_voice",
+      "snippet": "Taka (ONE OK ROCK) (Luxury Disease/DETOX Era) [RVC v2] [RMVPE] [400 Epochs] AI voice model for RVC voice conversion. View details, samples, source status, and run this voice model in EasyAIVoice."
+    },
+    {
+      "title": "imam2023/Taka.ONEOKROCK.35xxxvEra · Hugging Face",
+      "url": "https://huggingface.co/imam2023/Taka.ONEOKROCK.35xxxvEra",
+      "snippet": "imam2023 / Taka.ONEOKROCK.35xxxvEra like 0 License:apache-2.0 Model card FilesFiles and versions xet Community Copy to bucket new"
+    },
+    {
+      "title": "imam2023 (Imam Dary) - Hugging Face",
+      "url": "https://huggingface.co/imam2023",
+      "snippet": "AI & ML interests ... Recent Activity updated a model 1 day ago ... new activity 4 days ago ... published a model 5 days ago"
+    },
+    {
+      "title": "imam2023/RVC_AI_Model · Hugging Face",
+      "url": "https://huggingface.co/imam2023/RVC_AI_Model",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Taka | Finally coming back to Asia! Luxury Disease Asia ... - Instagram",
+      "url": "https://www.instagram.com/p/Cs8QwHJMXlq/",
+      "snippet": "131K likes, 4,972 comments - 10969taka on June 1, 2023: \"Finally coming back to Asia! Luxury Disease Asia Tour 2023, with more dates coming soon! www.oneokrock.com/en ..."
+    }
+  ]
+}

@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "pperezrachel/generation-2023",
+  "slug": "pperezrachel-generation-2023",
+  "author": "pperezrachel",
+  "url": "https://huggingface.co/pperezrachel/generation-2023",
+  "created_at": "2026-08-27T21:32:52.000Z",
+  "updated_at": "2026-08-27T21:33:01.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "mocov3",
+    "pytorch",
+    "generation",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 24832,
+  "parameters_human": "24832",
+  "storage_bytes": 99808,
+  "storage_human": "99808 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "pperezrachel (Rachel Perez) - Hugging Face",
+      "url": "https://huggingface.co/pperezrachel/datasets",
+      "snippet": "User profile of Rachel Perez on Hugging Face"
+    },
+    {
+      "title": "AI Girl Generator Improved (free, no sign-up, no limits) - Perchance",
+      "url": "https://perchance.org/rond3tkrhq",
+      "snippet": "The original and the best AI person generator (from text description) with no restrictions. Generate realistic/stylized/anime girls with this completely free Stable Diffusion text-to-image model."
+    },
+    {
+      "title": "Free AI Image to Image Generator | Raphael AI",
+      "url": "https://raphael.app/image-to-image",
+      "snippet": "Free, unlimited AI image to image generator. AI image generator from image with GPT Image 2 (ChatGPT/DALL·E lineage), Nano Banana 2 (Gemini 3), and Seedream — restyle, remix, or refine any reference photo."
+    },
+    {
+      "title": "Raphael AI - Free Unlimited AI Image Generator",
+      "url": "https://raphael.app/",
+      "snippet": "Raphael AI Image Generator is a completely free AI image generator powered by an intelligent multi-model routing system. It lets you create high-quality images from text descriptions with no registration and no generation count limits."
+    },
+    {
+      "title": "AI Girl Generator - Generate Realistic AI Girls Online",
+      "url": "https://www.fashiondiffusion.ai/ai-girl-generator",
+      "snippet": "An AI girl generator is an online tool that uses artificial intelligence to create realistic female model images from a text description, a reference image, or both."
+    }
+  ]
+}

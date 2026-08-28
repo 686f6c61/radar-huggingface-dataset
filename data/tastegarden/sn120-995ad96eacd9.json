@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "tastegarden/sn120-995ad96eacd9",
+  "slug": "tastegarden-sn120-995ad96eacd9",
+  "author": "tastegarden",
+  "url": "https://huggingface.co/tastegarden/sn120-995ad96eacd9",
+  "created_at": "2026-08-27T20:37:11.000Z",
+  "updated_at": "2026-08-27T20:45:48.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_5_moe",
+    "image-text-to-text",
+    "conversational",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 35951822704,
+  "parameters_human": "35.95B",
+  "storage_bytes": 71916584758,
+  "storage_human": "71.9 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "tastegarden/sn120-7c1c94cd0572 · Hugging Face",
+      "url": "https://huggingface.co/tastegarden/sn120-7c1c94cd0572",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "tastegarden (tastegarden) - Hugging Face",
+      "url": "https://huggingface.co/tastegarden",
+      "snippet": "tastegarden/sn120-f3ffe430cd08 35B•Updated about 2 hours ago View 66 models"
+    },
+    {
+      "title": "GitHub - ysjprojects/affine-sn120: Anima Machina",
+      "url": "https://github.com/ysjprojects/affine-sn120",
+      "snippet": "These models are evaluated on a set of RL-environments with validators looking for the model which dominates the pareto frontier -- namely the model which outcompetes all other models on all envs (see af validator) The network is winners-take-all where miners are forced to copy, download and improve the pareto frontier model. Why affine?"
+    },
+    {
+      "title": "Affine (SN120) — Reasoning Model Competition | Bittensor.ai",
+      "url": "https://bittensor.ai/subnets/120",
+      "snippet": "Register a Bittensor hotkey on Subnet 120, create a HuggingFace account with a write token, then pull a baseline model from the network with `af pull <UID>`. Improve it through training or fine-tuning, upload to HuggingFace in a repo named with your hotkey suffix, and run `af miner-deploy` to commit the model revision on-chain."
+    },
+    {
+      "title": "Google Vertex AI Model Availability (Updated Hourly)",
+      "url": "https://www.ai.moda/en/blog/google-vertex-ai-model-availability",
+      "snippet": "Want to know what models are currently available on Google Cloud Vertex AI? We&#x27;ve got a live updated list right here for you."
+    }
+  ]
+}

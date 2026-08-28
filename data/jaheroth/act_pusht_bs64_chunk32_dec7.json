@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "jaheroth/act_pusht_bs64_chunk32_dec7",
+  "slug": "jaheroth-act_pusht_bs64_chunk32_dec7",
+  "author": "jaheroth",
+  "url": "https://huggingface.co/jaheroth/act_pusht_bs64_chunk32_dec7",
+  "created_at": "2026-08-27T23:38:18.000Z",
+  "updated_at": "2026-08-27T23:38:34.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "robotics",
+    "act",
+    "dataset:lerobot/pusht",
+    "arxiv:2304.13705",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 83899796,
+  "parameters_human": "83.9M",
+  "storage_bytes": 335637520,
+  "storage_human": "336 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "jaheroth/act_pusht_chunk32_dec7 · Hugging Face",
+      "url": "https://huggingface.co/jaheroth/act_pusht_chunk32_dec7",
+      "snippet": "Instructions to use jaheroth/act_pusht_chunk32_dec7 with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Libraries LeRobot How to use jaheroth/act_pusht_chunk32_dec7 with LeRobot: Notebooks Google Colab Kaggle Model Card for act How to Get Started with the Model Train from scratch Evaluate the ..."
+    },
+    {
+      "title": "arclabmit/pusht_act_model · Hugging Face",
+      "url": "https://huggingface.co/arclabmit/pusht_act_model",
+      "snippet": "Model Card for act Action Chunking with Transformers (ACT) is an imitation-learning method that predicts short action chunks instead of single steps. It learns from teleoperated data and often achieves high success rates. This policy has been trained and pushed to the Hub using LeRobot. See the full documentation at LeRobot Docs."
+    },
+    {
+      "title": "JaHeRoth (Jacob H. Rothschild) · GitHub",
+      "url": "https://github.com/JaHeRoth",
+      "snippet": "JaHeRoth has 6 repositories available. Follow their code on GitHub."
+    },
+    {
+      "title": "Google Gemini",
+      "url": "https://gemini.google.com/",
+      "snippet": "Get assistance with writing, planning, learning, and more from Google AI."
+    },
+    {
+      "title": "Grok",
+      "url": "https://grok.com/",
+      "snippet": "Grok is an AI assistant built by SpaceXAI. Chat, create images, write code, and get real-time answers from the web and X."
+    }
+  ]
+}

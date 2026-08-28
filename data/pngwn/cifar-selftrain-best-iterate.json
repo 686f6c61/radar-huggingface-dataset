@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "pngwn/cifar-selftrain-best-iterate",
+  "slug": "pngwn-cifar-selftrain-best-iterate",
+  "author": "pngwn",
+  "url": "https://huggingface.co/pngwn/cifar-selftrain-best-iterate",
+  "created_at": "2026-08-27T21:49:12.000Z",
+  "updated_at": "2026-08-28T00:16:40.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "image-classification",
+  "library": "pytorch",
+  "languages": [],
+  "tags": [
+    "pytorch",
+    "image-classification",
+    "self-training",
+    "pseudo-labels",
+    "reproduction",
+    "dataset:uoft-cs/cifar10",
+    "arxiv:2602.14029",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 44768331,
+  "storage_human": "45 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "evalstate/cifar10-selftrain-best-iterate · Hugging Face",
+      "url": "https://huggingface.co/evalstate/cifar10-selftrain-best-iterate",
+      "snippet": "evalstate / cifar10-selftrain-best-iterate like 0 PyTorch self-training self-distillation cifar-10 denoising-forgetting arxiv:2602.14029 License:apache-2.0 Model card FilesFiles and versions xet Community Copy to bucket new CIFAR-10 Self-Training Best (iterate t=5) This iterate Trajectory config (run seed=0)"
+    },
+    {
+      "title": "CIFAR-10 Image Classification (ResNet-18 - GitHub",
+      "url": "https://github.com/SabaMG/cifar10-cnn-pytorch",
+      "snippet": "This project implements a high-performance image classification model for the CIFAR-10 dataset using PyTorch. - SabaMG/cifar10-cnn-pytorch"
+    },
+    {
+      "title": "Training a Classifier — PyTorch Tutorials 2.13.0+cu130 documentation",
+      "url": "https://docs.pytorch.org/tutorials/beginner/blitz/cifar10_tutorial.html",
+      "snippet": "The images in CIFAR-10 are of size 3x32x32, i.e. 3-channel color images of 32x32 pixels in size. cifar10 # Training an image classifier # We will do the following steps in order: Load and normalize the CIFAR10 training and test datasets using torchvision Define a Convolutional Neural Network Define a loss function Train the network on the ..."
+    },
+    {
+      "title": "PyTorch CIFAR Models - GitHub",
+      "url": "https://github.com/chenyaofo/pytorch-cifar-models",
+      "snippet": "Pretrained models on CIFAR10/100 in PyTorch. Contribute to chenyaofo/pytorch-cifar-models development by creating an account on GitHub."
+    },
+    {
+      "title": "94% on CIFAR-10 in 3.29 Seconds on a Single GPU - arXiv.org",
+      "url": "https://arxiv.org/html/2404.00498v2",
+      "snippet": "Abstract CIFAR-10 is among the most widely used datasets in machine learning, facilitating thousands of research projects per year. To accelerate research and reduce the cost of experiments, we introduce training methods for CIFAR-10 which reach 94% accuracy in 3.29 seconds, 95% in 10.4 seconds, and 96% in 46.3 seconds, when run on a single NVIDIA A100 GPU. As one factor contributing to these ..."
+    }
+  ]
+}

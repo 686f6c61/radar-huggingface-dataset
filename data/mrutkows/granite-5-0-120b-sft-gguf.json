@@ -4,8 +4,8 @@
   "slug": "mrutkows-granite-5-0-120b-sft-gguf",
   "author": "mrutkows",
   "url": "https://huggingface.co/mrutkows/granite-5.0-120b-sft-GGUF",
-  "created_at": "2026-08-25T21:30:00.000Z",
-  "updated_at": "2026-08-26T04:27:55.000Z",
+  "created_at": "2026-08-27T07:00:40.000Z",
+  "updated_at": "2026-08-27T10:42:34.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": null,
@@ -24,12 +24,12 @@
     "conversational"
   ],
   "likes": 0,
-  "downloads_30d": 0,
+  "downloads_30d": 286,
   "trending_score": 0,
   "parameters": 118015527936,
   "parameters_human": "118.02B",
-  "storage_bytes": 236085771776,
-  "storage_human": "236.1 GB",
+  "storage_bytes": 488369222240,
+  "storage_human": "488.4 GB",
   "base_model": "ibm-research/granite-5.0-120b-sft",
   "formats": [
     "gguf"

@@ -1,0 +1,79 @@
+{
+  "schema": 1,
+  "id": "textilelabs/Loom-Spark-1.8",
+  "slug": "textilelabs-loom-spark-1-8",
+  "author": "textilelabs",
+  "url": "https://huggingface.co/textilelabs/Loom-Spark-1.8",
+  "created_at": "2026-08-27T23:43:51.000Z",
+  "updated_at": "2026-08-28T00:08:34.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gguf",
+    "gpt2",
+    "text-generation",
+    "tiny-model",
+    "from-scratch",
+    "tool-use",
+    "agent-harness",
+    "humble-ai",
+    "philosophy-of-mind",
+    "cpu-trained",
+    "en",
+    "license:mit",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 18850496,
+  "parameters_human": "18.9M",
+  "storage_bytes": 158289072,
+  "storage_human": "158 MB",
+  "base_model": null,
+  "formats": [
+    "gguf",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "textilelabs (Neo) - Hugging Face",
+      "url": "https://huggingface.co/textilelabs",
+      "snippet": "AI & ML interests Independent builder training small/efficient models from scratch on consumer hardware (CPU-only, no cloud). Currently exploring 1-bit/1.58-bit (BitNet-style) architectures, small language models, LoRA cartridges, and neuro-symbolic hybrids."
+    },
+    {
+      "title": "Free AI Models - GitHub",
+      "url": "https://github.com/ClawLabsAI/free-ai-models",
+      "snippet": "The free AI model landscape changes every week — models get added, rate limits change, providers shut down without notice. This repo tracks it all automatically so you don&#x27;t have to. Use it to: Find the best free model for your current task Track which providers offer the most generous free tiers Get notified of new free models via GitHub Watch → Releases Build your own routing logic on ..."
+    },
+    {
+      "title": "Generative AI Platform | AI APIs for Image, Video, Audio & LLMs - ModelsLab",
+      "url": "https://modelslab.com/",
+      "snippet": "Build with 1000+ AI models using one simple API with ModelsLab. Generate images, video, audio, and more fast, scalable, and cost-effective for developers."
+    },
+    {
+      "title": "GitHub - awslabs/loom: Loom for AWS is an enterprise-grade platform for ...",
+      "url": "https://github.com/awslabs/loom/",
+      "snippet": "Loom for AWS (Loom) is an enterprise-grade platform for building, deploying, and operating AI agents on Amazon Bedrock AgentCore Runtime and AWS Strands Agents. It provides a unified management UI with Cognito-based authentication, scope-based authorization, multi-persona navigation, and full lifecycle management for agents, memory, MCP servers, A2A integrations, and AWS Agent Registry governance."
+    },
+    {
+      "title": "LLM Leaderboard 2026: Compare 300+ Top AI Models by Intelligence, Speed ...",
+      "url": "https://llm-stats.com/leaderboards/llm-leaderboard",
+      "snippet": "The LLM Leaderboard — independent ranking of GPT, Claude, Gemini, Llama, DeepSeek and 300+ AI models by intelligence, speed and price. Filter by provider, license, modality and context window; sort by every benchmark. Composite LLM Stats Score updated continuously from public benchmarks and live API metrics."
+    }
+  ]
+}

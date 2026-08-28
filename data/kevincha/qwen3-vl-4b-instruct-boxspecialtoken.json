@@ -5,7 +5,7 @@
   "author": "KevinCha",
   "url": "https://huggingface.co/KevinCha/Qwen3-VL-4B-Instruct-BoxSpecialToken",
   "created_at": "2026-08-27T07:29:23.000Z",
-  "updated_at": "2026-08-27T08:16:32.000Z",
+  "updated_at": "2026-08-27T08:30:56.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "image-text-to-text",

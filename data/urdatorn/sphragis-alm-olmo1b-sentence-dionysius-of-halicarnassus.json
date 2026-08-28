@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "Urdatorn/sphragis-alm-olmo1b-sentence-dionysius-of-halicarnassus",
+  "slug": "urdatorn-sphragis-alm-olmo1b-sentence-dionysius-of-halicarnassus",
+  "author": "Urdatorn",
+  "url": "https://huggingface.co/Urdatorn/sphragis-alm-olmo1b-sentence-dionysius-of-halicarnassus",
+  "created_at": "2026-08-27T23:07:42.000Z",
+  "updated_at": "2026-08-27T23:10:03.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "grc"
+  ],
+  "tags": [
+    "safetensors",
+    "olmo",
+    "ancient-greek",
+    "authorship-attribution",
+    "authorial-language-model",
+    "grc",
+    "base_model:allenai/OLMo-1B-hf",
+    "base_model:finetune:allenai/OLMo-1B-hf",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1176764416,
+  "parameters_human": "1.18B",
+  "storage_bytes": 2353541856,
+  "storage_human": "2.4 GB",
+  "base_model": "allenai/OLMo-1B-hf",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Urdatorn/sphragis-alm-olmo3-7b-dionysius-of-halicarnassus - Hugging Face",
+      "url": "https://huggingface.co/Urdatorn/sphragis-alm-olmo3-7b-dionysius-of-halicarnassus",
+      "snippet": "Sphragis authorial language model: Dionysius of Halicarnassus One of seventeen authorial language models (ALMs) for the Sphragis Ancient Greek authorship-attribution benchmark, following Huang, Murakami and Grieve (2025), \"Attributing authorship via the perplexity of authorial language models\", PLoS ONE 20 (7): e0327081. Each model is a full further-pretraining of allenai/Olmo-3-1025-7B ..."
+    },
+    {
+      "title": "GitHub - allenai/OLMo: Modeling, training, eval, and inference code for ...",
+      "url": "https://github.com/allenai/OLMo",
+      "snippet": "OLMo is a repository for training and using AI2&#x27;s state-of-the-art open language models. It is designed by scientists, for scientists."
+    },
+    {
+      "title": "OLMo-1B huggingface.co api & allenai OLMo-1B github AI Model - Toolify",
+      "url": "https://www.toolify.ai/ai-model/allenai-olmo-1b",
+      "snippet": "OLMo-1B is an open source model from GitHub that offers a free installation service, and any user can find OLMo-1B on GitHub to install. At the same time, huggingface.co provides the effect of OLMo-1B install, users can directly use OLMo-1B installed effect in huggingface.co for debugging and trial."
+    },
+    {
+      "title": "Sphragis benchmark leaderboard",
+      "url": "https://urdatorn-sphragis-leaderboard.static.hf.space/index.html",
+      "snippet": "Reproducible Ancient Greek authorship-attribution benchmark results across prose and verse."
+    },
+    {
+      "title": "Dionysius of Halicarnassus - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Dionysius_of_Halicarnassus",
+      "snippet": "Dionysius of Halicarnassus (Ancient Greek: Διονύσιος Ἀλεξάνδρου Ἁλικαρνασσεύς, Dionýsios Alexándrou Halikarnasseús, &#x27;&#x27;Dionysios (son of Alexandros) of Halikarnassos&#x27;&#x27;; c. 60 BC - after 7 BC) was a Greek historian and teacher of rhetoric, who flourished during the reign of Emperor Augustus. [1] His literary style was atticistic - imitating Classical ..."
+    }
+  ]
+}

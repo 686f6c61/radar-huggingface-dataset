@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "timbecker/survey-3d-scene-understanding",
+  "slug": "timbecker-survey-3d-scene-understanding",
+  "author": "timbecker",
+  "url": "https://huggingface.co/timbecker/survey-3d-scene-understanding",
+  "created_at": "2026-08-27T22:24:38.000Z",
+  "updated_at": "2026-08-27T22:24:48.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "transformer",
+    "research-notes",
+    "3d-scene-understanding",
+    "license:cc-by-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 33088,
+  "parameters_human": "33088",
+  "storage_bytes": 132832,
+  "storage_human": "132832 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Embodied Intelligence for 3D Understanding: A Survey on 3D Scene ...",
+      "url": "https://arxiv.org/abs/2502.00342",
+      "snippet": "3D Scene Question Answering (3D SQA) represents an interdisciplinary task that integrates 3D visual perception and natural language processing, empowering intelligent agents to comprehend and interact with complex 3D environments. Recent advances in large multimodal modelling have driven the creation of diverse datasets and spurred the development of instruction-tuning and zero-shot methods ..."
+    },
+    {
+      "title": "Embodied intelligence for 3D understanding: A survey on 3D Scene ...",
+      "url": "https://www.sciencedirect.com/science/article/pii/S1566253525006967",
+      "snippet": "3. Datasets The growing need for high-level understanding and interaction in 3D environments — such as in robotics and embodied AI — has first stimulated the construction of 3D SQA datasets. Datasets are fundamental to model development and evaluation in 3D SQA. Existing datasets vary widely in scene representation, scale, and query complexity."
+    },
+    {
+      "title": "Embodied intelligence for 3D understanding: A survey on 3D Scene ...",
+      "url": "https://colab.ws/articles/10.1016%2Fj.inffus.2025.103624",
+      "snippet": "3D Scene Question Answering (3D SQA) represents an interdisciplinary task that integrates 3D visual perception and natural language processing, empowering intelligent agents to comprehend and interact with complex 3D environments. Recent advances in large multimodal modeling have driven the creation of diverse datasets and spurred the development of instruction-tuning and zero-shot methods for ..."
+    },
+    {
+      "title": "Embodied intelligence for 3D understanding: : A survey on 3D Scene ...",
+      "url": "https://dl.acm.org/doi/10.1016/j.inffus.2025.103624",
+      "snippet": "Highlights •First survey to systematically analyze 3D Scene Question Answering (3D SQA).•Analyzes 3D SQA via a unified view of tasks, datasets, models, and metrics.•Proposes a taxonomy of task-spec..."
+    },
+    {
+      "title": "Tinkercad",
+      "url": "https://www.tinkercad.com/",
+      "snippet": "Tinkercad is a free, easy-to-use app for 3D design, electronics, and coding."
+    }
+  ]
+}

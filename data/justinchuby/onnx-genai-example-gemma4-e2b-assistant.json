@@ -5,7 +5,7 @@
   "author": "justinchuby",
   "url": "https://huggingface.co/justinchuby/onnx-genai-example-gemma4-e2b-assistant",
   "created_at": "2026-08-22T03:05:04.000Z",
-  "updated_at": "2026-08-26T00:42:56.000Z",
+  "updated_at": "2026-08-27T18:33:17.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -29,8 +29,8 @@
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
-  "storage_bytes": 391192021,
-  "storage_human": "391 MB",
+  "storage_bytes": 10655748370,
+  "storage_human": "10.7 GB",
   "base_model": "google/gemma-4-E2B-it-assistant",
   "formats": [
     "onnx"

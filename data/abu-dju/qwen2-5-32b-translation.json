@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "Abu-Dju/QWEN2.5-32B-Translation",
+  "slug": "abu-dju-qwen2-5-32b-translation",
+  "author": "Abu-Dju",
+  "url": "https://huggingface.co/Abu-Dju/QWEN2.5-32B-Translation",
+  "created_at": "2026-08-27T21:23:02.000Z",
+  "updated_at": "2026-08-27T21:23:03.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "qwen2",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 32763876352,
+  "parameters_human": "32.76B",
+  "storage_bytes": 65539265663,
+  "storage_human": "65.5 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": true,
+  "removed_at": "2026-08-28T02:09:28.055Z",
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Qwen/Qwen2.5-32B · Hugging Face",
+      "url": "https://huggingface.co/Qwen/Qwen2.5-32B",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Imran1/QWEN2.5-32B-Translation · Hugging Face",
+      "url": "https://huggingface.co/Imran1/QWEN2.5-32B-Translation",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Qwen 2.5 32B - CanIRun.ai",
+      "url": "https://www.canirun.ai/model/qwen2.5-32b",
+      "snippet": "Qwen2.5 is the latest series of Qwen large language models. For Qwen2.5, a range of base language models and instruction-tuned models are released, with sizes ranging from 0.5 to 72 billion parameters."
+    },
+    {
+      "title": "QWEN2.5-32B-Translation | PromptLayer Models",
+      "url": "https://www.promptlayer.com/models/qwen25-32b-translation/",
+      "snippet": "What is QWEN2.5-32B-Translation? QWEN2.5-32B-Translation is a specialized multilingual translation model built on the Qwen 2.5 32B architecture. It has been meticulously fine-tuned to handle translations across 16 different languages, achieving performance levels comparable to larger 72B models."
+    },
+    {
+      "title": "GitHub - aibrainarchitect/Qwen2.5: Qwen2.5 is the large language model ...",
+      "url": "https://github.com/aibrainarchitect/Qwen2.5",
+      "snippet": "Today, we are excited to introduce the latest addition to the Qwen family: Qwen2.5. Dense, easy-to-use, decoder-only language models, available in 0.5B, 1.5B, 3B, 7B, 14B, 32B, and 72B sizes, and base and instruct variants. Pretrained on our latest large-scale dataset, encompassing up to 18T tokens."
+    }
+  ]
+}

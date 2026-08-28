@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "Suseezz/Qwen3.8-27B-Uncensored-IQ4-XS-MTP-16GB-VRAM-GGUF",
+  "slug": "suseezz-qwen3-8-27b-uncensored-iq4-xs-mtp-16gb-vram-gguf",
+  "author": "Suseezz",
+  "url": "https://huggingface.co/Suseezz/Qwen3.8-27B-Uncensored-IQ4-XS-MTP-16GB-VRAM-GGUF",
+  "created_at": "2026-08-28T01:03:54.000Z",
+  "updated_at": "2026-08-28T01:03:55.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "base_model:Qwen/Qwen3.8-27B",
+    "base_model:quantized:Qwen/Qwen3.8-27B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "imatrix",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 27320697856,
+  "parameters_human": "27.32B",
+  "storage_bytes": 13905647712,
+  "storage_human": "13.9 GB",
+  "base_model": "Qwen/Qwen3.8-27B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Qwen3.8-27B-Uncensored-IQ4-XS-MTP-16GB-VRAM-GGUF",
+      "url": "https://huggingface.co/Bucoid/Qwen3.8-27B-Uncensored-IQ4-XS-MTP-16GB-VRAM-GGUF",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Qwen3.8-27B-Uncensored-IQ4-XS-MTP-16GB-VRAM-GGUF - Hugging Face",
+      "url": "https://huggingface.co/Bucoid/Qwen3.8-27B-Uncensored-IQ4-XS-MTP-16GB-VRAM-GGUF/blob/main/Qwen3.8-27B-Uncensored-IQ4_XS_4BPW.gguf",
+      "snippet": "Instructions to use Bucoid/Qwen3.8-27B-Uncensored-IQ4-XS-MTP-16GB-VRAM-GGUF with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "Qwen 3.8 27B Uncensored Local: GGUF Quants + llama.cpp",
+      "url": "https://www.orcarouter.ai/blog/how-to-run-qwen-3-8-27b-uncensored-locally",
+      "snippet": "To run Qwen3.8-27B-Uncensored locally, pull the gated GGUF repo orcarouter/Qwen3.8-27B-Uncensored-GGUF from Hugging Face, pick a quant by your VRAM — Q4_K_M (16.8 GB) for a 24 GB GPU, IQ4_XS (15.3 GB) for a 16 GB GPU, Q3_K_M (13.5 GB) when you want context headroom — and serve it with a current llama.cpp build using the --jinja flag, adding --mmproj if you need vision. The same file ..."
+    },
+    {
+      "title": "Qwen3.8-27B Uncensored GGUF: Abliterated Local Build",
+      "url": "https://www.orcarouter.ai/blog/qwen-3-8-27b-uncensored-gguf",
+      "snippet": "It is the same refusal-removed 27-billion-parameter weights as Qwen3.8-27B-Uncensored-FP8, converted to GGUF for local inference: F16 plus 12 quantization tiers from Q2_K to Q8_0 (including the imatrix quants IQ3_M and IQ4_XS), the 262K context window, a separate vision projector, and the MTP speculative-decoding head intact."
+    },
+    {
+      "title": "How to Run Qwen 3.8 27B Locally: VRAM, Quants and the Template Trap",
+      "url": "https://locallyuncensored.com/blog/how-to-run-qwen-3-8-27b-locally.html",
+      "snippet": "Qwen 3.8 27B is out under Apache 2.0. Real GGUF sizes, the VRAM math for 12 GB and 24 GB cards, the broken chat template nobody warns you about, and vision setup."
+    }
+  ]
+}

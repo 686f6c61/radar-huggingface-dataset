@@ -1,0 +1,77 @@
+{
+  "schema": 1,
+  "id": "simaai/LFM2-VL-450M-Autoround-Safetensors",
+  "slug": "simaai-lfm2-vl-450m-autoround-safetensors",
+  "author": "simaai",
+  "url": "https://huggingface.co/simaai/LFM2-VL-450M-Autoround-Safetensors",
+  "created_at": "2026-07-28T11:48:32.000Z",
+  "updated_at": "2026-08-28T01:04:44.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [
+    "multilingual"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "lfm2_vl",
+    "image-text-to-text",
+    "quantized",
+    "autoround",
+    "gptq",
+    "compressed-tensors",
+    "sima-ai",
+    "conversational",
+    "multilingual",
+    "base_model:LiquidAI/LFM2-VL-450M",
+    "base_model:quantized:LiquidAI/LFM2-VL-450M",
+    "license:other",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 5,
+  "trending_score": 0,
+  "parameters": 517931520,
+  "parameters_human": "517.9M",
+  "storage_bytes": 421740992,
+  "storage_human": "422 MB",
+  "base_model": "LiquidAI/LFM2-VL-450M",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "simaai/LFM2-VL-450M-Autoround-Safetensors · Hugging Face",
+      "url": "https://huggingface.co/simaai/LFM2-VL-450M-Autoround-Safetensors",
+      "snippet": "This is a post-training quantized version of LiquidAI/LFM2-VL-450M, prepared as a Hugging Face checkpoint for LLiMa compilation and Sima.ai deployment. The source model&#x27;s license and use restrictions continue to apply."
+    },
+    {
+      "title": "simaai/LFM2.5-VL-450M-Autoround-Safetensors · Hugging Face",
+      "url": "https://huggingface.co/simaai/LFM2.5-VL-450M-Autoround-Safetensors",
+      "snippet": "This is a post-training quantized version of LiquidAI/LFM2.5-VL-450M, prepared as a Hugging Face checkpoint for LLiMa compilation and Sima.ai deployment. The source model&#x27;s license and use restrictions continue to apply."
+    },
+    {
+      "title": "LFM2-VL: Efficient Vision-Language Models | Blog | Liquid AI",
+      "url": "https://www.liquid.ai/blog/lfm2-vl-efficient-vision-language-models",
+      "snippet": "Today we release LFM2-VL, our first vision-language models, built for low-latency, device-aware text and image use."
+    },
+    {
+      "title": "LFM2‑VL-450M - Models",
+      "url": "https://www.modelscope.cn/models/LiquidAI/LFM2-VL-450M",
+      "snippet": "LFM2‑VL-450M LFM2‑VL is Liquid AI &#x27;s first series of multimodal models, designed to process text and images with variable resolutions. Built on the LFM2 backbone, it is optimized for low-latency and edge AI applications. We&#x27;re releasing the weights of two post-trained checkpoints with 450M (for highly constrained devices) and 1.6B (more capable yet still lightweight) parameters. 2× faster ..."
+    },
+    {
+      "title": "LFM2 Technical Report - arXiv.org",
+      "url": "https://arxiv.org/html/2511.23404v1",
+      "snippet": "The 450M model achieves 657 on OCRBench, substantially higher than SmolVLM2-500M (562), while LFM2-VL-3B scores 822, reaching performance of other similarly sized models."
+    }
+  ]
+}

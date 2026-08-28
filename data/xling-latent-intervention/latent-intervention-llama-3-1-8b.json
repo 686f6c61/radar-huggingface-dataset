@@ -1,0 +1,77 @@
+{
+  "schema": 1,
+  "id": "xling-latent-intervention/latent-intervention-llama-3.1-8b",
+  "slug": "xling-latent-intervention-latent-intervention-llama-3-1-8b",
+  "author": "xling-latent-intervention",
+  "url": "https://huggingface.co/xling-latent-intervention/latent-intervention-llama-3.1-8b",
+  "created_at": "2026-08-27T20:25:24.000Z",
+  "updated_at": "2026-08-27T20:31:03.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "en",
+    "zh",
+    "ar",
+    "ru",
+    "nl"
+  ],
+  "tags": [
+    "cross-lingual",
+    "factual-consistency",
+    "autoencoder",
+    "interpretability",
+    "en",
+    "zh",
+    "ar",
+    "ru",
+    "nl",
+    "dataset:neulab/ted_multi",
+    "base_model:meta-llama/Llama-3.1-8B",
+    "base_model:finetune:meta-llama/Llama-3.1-8B",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 177509557,
+  "storage_human": "178 MB",
+  "base_model": "meta-llama/Llama-3.1-8B",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Open-source AI Models for Any Application | Llama 3",
+      "url": "https://developer.meta.com/ai/models/llama-3/",
+      "snippet": "Discover Llama 3&#x27;s open-source AI models you can fine-tune, distill and deploy anywhere. Build smarter applications with flexible AI solutions."
+    },
+    {
+      "title": "meta-llama/Llama-3.1-8B-Instruct · Hugging Face",
+      "url": "https://huggingface.co/meta-llama/Llama-3.1-8B-Instruct",
+      "snippet": "Run 15,000+ Models Instantly Inference Providers let you run inference on thousands of models served by our partners using a simple, unified, OpenAI-compatible serverless API (). meta-llama/Llama-3.1-8B-Instruct is supported by the following Inference Providers:"
+    },
+    {
+      "title": "Llama 3.1 is a new state-of-the-art model from Meta available in 8B ...",
+      "url": "https://ollama.com/library/llama3.1",
+      "snippet": "Meta Llama 3.1 Llama 3.1 family of models available: 8B 70B 405B Llama 3.1 405B is the first openly available model that rivals the top AI models when it comes to state-of-the-art capabilities in general knowledge, steerability, math, tool use, and multilingual translation. The upgraded versions of the 8B and 70B models are multilingual and have a significantly longer context length of 128K ..."
+    },
+    {
+      "title": "Llama3 · Hugging Face",
+      "url": "https://huggingface.co/docs/transformers/model_doc/llama3",
+      "snippet": "Overview The Llama3 model was proposed in Introducing Meta Llama 3: The most capable openly available LLM to date by the meta AI team. The abstract from the blogpost is the following: Today, we&#x27;re excited to share the first two models of the next generation of Llama, Meta Llama 3, available for broad use. This release features pretrained and instruction-fine-tuned language models with 8B and ..."
+    },
+    {
+      "title": "Introducing Meta Llama 3: The most capable openly available LLM to date",
+      "url": "https://ai.meta.com/blog/meta-llama-3/",
+      "snippet": "Today, we&#x27;re introducing Meta Llama 3, the next generation of our state-of-the-art open source large language model. In the coming months, we expect to share new capabilities, additional model sizes, and more."
+    }
+  ]
+}

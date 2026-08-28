@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "Oscilla/gemma-4-E2B-it-mlx-8Bit",
+  "slug": "oscilla-gemma-4-e2b-it-mlx-8bit",
+  "author": "Oscilla",
+  "url": "https://huggingface.co/Oscilla/gemma-4-E2B-it-mlx-8Bit",
+  "created_at": "2026-08-27T20:22:52.000Z",
+  "updated_at": "2026-08-27T20:23:01.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "any-to-any",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gemma4",
+    "image-text-to-text",
+    "mlx",
+    "any-to-any",
+    "base_model:google/gemma-4-E2B-it",
+    "base_model:quantized:google/gemma-4-E2B-it",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "8-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1307305251,
+  "parameters_human": "1.31B",
+  "storage_bytes": 4970519725,
+  "storage_human": "5.0 GB",
+  "base_model": "google/gemma-4-E2B-it",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "DreamFoundries/gemma-4-E2B-it-8bit · Hugging Face",
+      "url": "https://huggingface.co/DreamFoundries/gemma-4-E2B-it-8bit",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Oscilla/gemma-4-E2B-it-4bit-MLX · Hugging Face",
+      "url": "https://huggingface.co/Oscilla/gemma-4-E2B-it-4bit-MLX",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Gemma 4 — Google DeepMind",
+      "url": "https://deepmind.google/models/gemma/gemma-4/",
+      "snippet": "Safety Gemma 4 models undergo the same rigorous infrastructure security protocols as our proprietary models. By choosing Gemma 4, enterprises and sovereign organizations gain a trusted, transparent foundation that delivers state-of-the-art capabilities while meeting the highest standards for security and reliability."
+    },
+    {
+      "title": "gemma 4 E2B it MLX 8bit — ThinkLLM",
+      "url": "https://thinkllm.dev/models/gemma-4-e2b-it-mlx-8bit",
+      "snippet": "A compact, quantized text model running in 8-bit precision via the MLX framework, optimized for Apple Silicon hardware. It trades some numerical precision for reduced memory footprint, making it practical to run locally on machines that might otherwise struggle with full-precision weights. Behavior stays close to the base Gemma 4 family, with the quantization introducing minimal but present ..."
+    },
+    {
+      "title": "gemma4 - ollama.com",
+      "url": "https://ollama.com/library/gemma4:latest",
+      "snippet": "Gemma 4 models are designed to deliver frontier-level performance at each size. They are well-suited for reasoning, agentic workflows, coding, and multimodal understanding."
+    }
+  ]
+}

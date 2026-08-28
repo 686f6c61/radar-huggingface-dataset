@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "AnalyticPudding/sarashina2.2-vision-3b-clone",
+  "slug": "analyticpudding-sarashina2-2-vision-3b-clone",
+  "author": "AnalyticPudding",
+  "url": "https://huggingface.co/AnalyticPudding/sarashina2.2-vision-3b-clone",
+  "created_at": "2026-08-27T22:56:45.000Z",
+  "updated_at": "2026-08-27T23:04:11.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "sarashina2_vision",
+    "custom_code",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 3801475696,
+  "parameters_human": "3.80B",
+  "storage_bytes": 7603020096,
+  "storage_human": "7.6 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "sbintuitions/sarashina2.2-vision-3b · Hugging Face",
+      "url": "https://huggingface.co/sbintuitions/sarashina2.2-vision-3b",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "mradermacher/sarashina2.2-vision-3b-GGUF · Hugging Face",
+      "url": "https://huggingface.co/mradermacher/sarashina2.2-vision-3b-GGUF",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "RESEARCH | SB Intuitions Corp.",
+      "url": "https://www.sbintuitions.co.jp/en/sarashinalab/",
+      "snippet": "RESEARCH We pursue the potential of advanced AI systems, focusing our efforts on developing models with a priority on safety, reliability, and ease of use."
+    },
+    {
+      "title": "sbintuitions/sarashina2.2-vision-3b · Hugging Face",
+      "url": "https://hf-p-cfw.fyan.top/sbintuitions/sarashina2.2-vision-3b",
+      "snippet": "Notebooks Google Colab Kaggle Sarashina2.2-Vision-3B Model Performance Japanese Performance English Performance How to use"
+    },
+    {
+      "title": "GitHub - sbintuitions/sarashina2.2-tts",
+      "url": "https://github.com/sbintuitions/sarashina2.2-tts",
+      "snippet": "Sarashina2.2-TTS is a Japanese-centric text-to-speech system built on a large language model, developed by SB Intuitions. It supports Japanese and English, delivering high pronunciation accuracy, naturalness, and stability across diverse speaking styles, with zero-shot voice generation support."
+    }
+  ]
+}

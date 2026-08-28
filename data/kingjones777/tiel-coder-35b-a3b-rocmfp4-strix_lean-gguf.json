@@ -1,0 +1,77 @@
+{
+  "schema": 1,
+  "id": "kingjones777/Tiel-Coder-35B-A3B-ROCmFP4-STRIX_LEAN-GGUF",
+  "slug": "kingjones777-tiel-coder-35b-a3b-rocmfp4-strix_lean-gguf",
+  "author": "kingjones777",
+  "url": "https://huggingface.co/kingjones777/Tiel-Coder-35B-A3B-ROCmFP4-STRIX_LEAN-GGUF",
+  "created_at": "2026-08-27T21:47:53.000Z",
+  "updated_at": "2026-08-27T21:48:45.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "gguf",
+  "languages": [],
+  "tags": [
+    "gguf",
+    "rocmfp4",
+    "llama.cpp",
+    "strix-halo",
+    "gfx1151",
+    "rocm",
+    "amd",
+    "ryzen-ai-max",
+    "agentic-coding",
+    "moe",
+    "text-generation",
+    "base_model:ornith-ai/Ornith-1.5-35B-A3B",
+    "base_model:quantized:ornith-ai/Ornith-1.5-35B-A3B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "imatrix",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 34660610688,
+  "parameters_human": "34.66B",
+  "storage_bytes": 18744364096,
+  "storage_human": "18.7 GB",
+  "base_model": "peculiar-ragdoll/Tiel-Coder-35B-A3B-GGUF, ornith-ai/Ornith-1.5-35B-A3B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "kingjones777/Ornith-1.5-35B-A3B-ROCmFPX-AGENT-GGUF · Hugging Face",
+      "url": "https://huggingface.co/kingjones777/Ornith-1.5-35B-A3B-ROCmFPX-AGENT-GGUF",
+      "snippet": "⚠️ For contrast, the other public ROCmFP4 build of this model (julianmb/Ornith-1.5-35B-A3B-ROCmFP4-GGUF, ftype 106) ships Q5_K token embeddings and a 4-bit output.weight, while its card states \"FP16 embedding/norm preservation\". We read both headers with two independent parsers. Head protection is not implied by an ftype name — it has to be requested and then verified in the file."
+    },
+    {
+      "title": "kingjones777 (Myron Jones) - Hugging Face",
+      "url": "https://huggingface.co/kingjones777",
+      "snippet": "kingjones777/Leanstral-1.5-119B-A6B-Q4_0_ROCMFP4_STRIX_LEAN-GGUF Text Generation • 119B•Updated 7 days ago• 388 • 2"
+    },
+    {
+      "title": "GitHub - charlie12345/rocmfp4: ROCmfp4 · GitHub",
+      "url": "https://github.com/charlie12345/rocmfp4",
+      "snippet": "ROCmFP4 is an experimental GGUF quantization and backend integration package for AMD ROCm and Vulkan llama.cpp builds. This repository is the clean integration package."
+    },
+    {
+      "title": "GitHub - charlie12345/ROCmFPX: ROCmFPX Family for AMD Hardware and ...",
+      "url": "https://github.com/charlie12345/ROCmFPX/tree/main",
+      "snippet": "ROCmFPX adds experimental AMD-focused 2-, 3-, 4-, 6-, and 8-bit GGUF model-weight formats to llama.cpp, with CPU reference paths and accelerated HIP/ROCm and Vulkan kernels. Status: ROCmFPX is an experimental feature family on the canonical main branch. APIs, tuning choices, and performance can change. Results depend on hardware, drivers, model, prompt, and quantization recipe; use BF16/F16 ..."
+    },
+    {
+      "title": "Models - Hugging Face",
+      "url": "https://d6108366.hf-mirror.com/models?other=rocmfp4",
+      "snippet": "raulvidis/Qwen3.6-35B-A3B-ROCmFP4_FAST-GGUF Text Generation • 36B•Updated 12 days ago• 562 • 1"
+    }
+  ]
+}

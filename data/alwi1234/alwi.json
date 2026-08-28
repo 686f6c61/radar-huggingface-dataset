@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "Alwi1234/Alwi",
+  "slug": "alwi1234-alwi",
+  "author": "Alwi1234",
+  "url": "https://huggingface.co/Alwi1234/Alwi",
+  "created_at": "2026-08-27T19:07:58.000Z",
+  "updated_at": "2026-08-27T19:07:58.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ALWI1234 ALWI12 - YouTube",
+      "url": "https://www.youtube.com/channel/UCIwnez7ANefIL2j7iqBjWKQ",
+      "snippet": "Share your videos with friends, family, and the world"
+    },
+    {
+      "title": "Alwi Mertosono (@alwi_alwi1234) • Instagram photos and videos",
+      "url": "https://www.instagram.com/alwi_alwi1234/",
+      "snippet": "23 Followers, 116 Following, 55 Posts - Alwi Mertosono (@alwi_alwi1234) on Instagram: \"\""
+    },
+    {
+      "title": "AWI (@awi_ai1234) | TikTok",
+      "url": "https://www.tiktok.com/@awi_ai1234",
+      "snippet": "https://www.youtube.com/@AWi_Ai1234?sub_confirmation=1 https://guns.lol/awi24.7"
+    },
+    {
+      "title": "alwi1234 · GitHub",
+      "url": "https://github.com/alwi1234/",
+      "snippet": "alwi1234 has 3 repositories available. Follow their code on GitHub."
+    },
+    {
+      "title": "alwi-1234 · GitHub",
+      "url": "https://github.com/alwi-1234",
+      "snippet": "GitHub is where alwi-1234 builds software. Follow Joined Jul 26, 2024 Block or Report Block or report alwi-1234 Block user"
+    }
+  ]
+}

@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "JONNYVERSE/bert-base-NER",
+  "slug": "jonnyverse-bert-base-ner",
+  "author": "JONNYVERSE",
+  "url": "https://huggingface.co/JONNYVERSE/bert-base-NER",
+  "created_at": "2026-08-27T21:41:27.000Z",
+  "updated_at": "2026-08-27T21:41:28.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "token-classification",
+  "library": "transformers.js",
+  "languages": [],
+  "tags": [
+    "transformers.js",
+    "onnx",
+    "bert",
+    "token-classification",
+    "base_model:dslim/bert-base-NER",
+    "base_model:quantized:dslim/bert-base-NER",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1890047162,
+  "storage_human": "1.9 GB",
+  "base_model": "dslim/bert-base-NER",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "dslim/bert-base-NER · Hugging Face",
+      "url": "https://huggingface.co/dslim/bert-base-NER",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "ai-intel-open_model_zoo/models/public/bert-base-ner at master ... - GitHub",
+      "url": "https://github.com/johnottone/ai-intel-open_model_zoo/tree/master/models/public/bert-base-ner",
+      "snippet": "Use Case and High-Level Description bert-base-ner is a fine-tuned BERT model that is ready to use for Named Entity Recognition and achieves state-of-the-art performance for the NER task. It has been trained to recognize four types of entities: location (LOC), organizations (ORG), person (PER) and Miscellaneous (MISC)."
+    },
+    {
+      "title": "open_model_zoo/models/public/bert-base-ner/README.md at master ... - GitHub",
+      "url": "https://github.com/openvinotoolkit/open_model_zoo/blob/master/models/public/bert-base-ner/README.md",
+      "snippet": "bert-base-ner is a fine-tuned BERT model that is ready to use for Named Entity Recognition and achieves state-of-the-art performance for the NER task. It has been trained to recognize four types of entities: location (LOC), organizations (ORG), person (PER) and Miscellaneous (MISC). Specifically, this model is a bert-base-cased model that was fine-tuned on the English version of the standard ..."
+    },
+    {
+      "title": "dslim/bert-base-NER - AI Model Zoo - BimAnt",
+      "url": "https://zoo.bimant.com/model/13744",
+      "snippet": "Model description bert-base-NER is a fine-tuned BERT model that is ready to use for Named Entity Recognition and achieves state-of-the-art performance for the NER task. It has been trained to recognize four types of entities: location (LOC), organizations (ORG), person (PER) and Miscellaneous (MISC)."
+    },
+    {
+      "title": "Named Entity Recognition with Hugging Face - GeeksforGeeks",
+      "url": "https://www.geeksforgeeks.org/artificial-intelligence/named-entity-recognition-with-bert/",
+      "snippet": "Named Entity Recognition (NER) is an NLP task that identifies and classifies entities in text, such as people, organizations and locations. It helps systems automatically understand important information within sentences, even when language and context vary."
+    }
+  ]
+}

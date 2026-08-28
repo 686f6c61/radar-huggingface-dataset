@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "logits/pi05_robodojo_step15000",
+  "slug": "logits-pi05_robodojo_step15000",
+  "author": "logits",
+  "url": "https://huggingface.co/logits/pi05_robodojo_step15000",
+  "created_at": "2026-08-27T22:26:36.000Z",
+  "updated_at": "2026-08-27T22:28:05.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "robotics",
+    "pi05",
+    "robodojo",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 4933375760,
+  "parameters_human": "4.93B",
+  "storage_bytes": 19733628792,
+  "storage_human": "19.7 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "XPolicyLab/policy/Pi_05/README.md at main - GitHub",
+      "url": "https://github.com/XPolicyLab/XPolicyLab/blob/main/policy/Pi_05/README.md",
+      "snippet": "Pi_05 adapts Physical Intelligence&#x27;s π0.5 policy to XPolicyLab/RoboDojo through the uv-managed OpenPI stack. Integration scripts live at this directory level; the vendored upstream implementation lives in openpi/."
+    },
+    {
+      "title": "GitHub - RoboDojo-Benchmark/RoboDojo: RoboDojo Official Repo",
+      "url": "https://github.com/robodojo-benchmark/RoboDojo",
+      "snippet": "RoboDojo is operated by AI MMLab Club, a non-profit, vendor-neutral organization, and is jointly maintained and supported by a global consortium of academic institutional partners. To preserve the fairness, neutrality, and independence of the official evaluation, RoboDojo does not involve commercial companies in its governance, operation, funding, sponsorship, compute, hardware, or other forms ..."
+    },
+    {
+      "title": "cjgogo/RoboDojo-pi05-checkpoints · Hugging Face",
+      "url": "https://huggingface.co/cjgogo/RoboDojo-pi05-checkpoints",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "cjgogo/RoboDojo-pi05-checkpoints at main - Hugging Face",
+      "url": "https://huggingface.co/cjgogo/RoboDojo-pi05-checkpoints/tree/main",
+      "snippet": "cjgogo / RoboDojo-pi05-checkpoints like 0 Robotics JAX RoboDojo-Benchmark/RoboDojo openpi vision-language-action pi0.5 robodojo orbax License:gemma-terms-and-robodojo-non-commercial-research-license Model card FilesFiles and versions xet Community Copy to bucket new main RoboDojo-pi05-checkpoints 163 GB Ctrl+K Ctrl+K 1 contributor History:17 ..."
+    },
+    {
+      "title": "RoboDojo: A Unified Sim-and-Real Benchmark for Comprehensive Evaluation ...",
+      "url": "https://robodojo-benchmark.com/",
+      "snippet": "RoboDojo is a unified sim-and-real benchmark for comprehensive evaluation of generalist robot manipulation policies, with 42 simulation tasks, 18 real-world tasks, and a public leaderboard."
+    }
+  ]
+}

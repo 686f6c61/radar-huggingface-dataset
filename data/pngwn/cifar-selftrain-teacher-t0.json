@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "pngwn/cifar-selftrain-teacher-t0",
+  "slug": "pngwn-cifar-selftrain-teacher-t0",
+  "author": "pngwn",
+  "url": "https://huggingface.co/pngwn/cifar-selftrain-teacher-t0",
+  "created_at": "2026-08-27T21:49:12.000Z",
+  "updated_at": "2026-08-28T00:16:37.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "image-classification",
+  "library": "pytorch",
+  "languages": [],
+  "tags": [
+    "pytorch",
+    "image-classification",
+    "self-training",
+    "pseudo-labels",
+    "reproduction",
+    "dataset:uoft-cs/cifar10",
+    "arxiv:2602.14029",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 44768331,
+  "storage_human": "45 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "evalstate/cifar10-selftrain-teacher · Hugging Face",
+      "url": "https://huggingface.co/evalstate/cifar10-selftrain-teacher",
+      "snippet": "evalstate / cifar10-selftrain-teacher like 0 PyTorch self-training self-distillation cifar-10 denoising-forgetting arxiv:2602.14029 License:apache-2.0 Model card FilesFiles and versions xet Community Copy to bucket new CIFAR-10 Self-Training Teacher (iterate t=0) This iterate Trajectory config (run seed=0)"
+    },
+    {
+      "title": "Training a Classifier — PyTorch Tutorials 2.13.0+cu130 documentation",
+      "url": "https://docs.pytorch.org/tutorials/beginner/blitz/cifar10_tutorial.html",
+      "snippet": "The images in CIFAR-10 are of size 3x32x32, i.e. 3-channel color images of 32x32 pixels in size. cifar10 # Training an image classifier # We will do the following steps in order: Load and normalize the CIFAR10 training and test datasets using torchvision Define a Convolutional Neural Network Define a loss function Train the network on the ..."
+    },
+    {
+      "title": "GitHub - EN10/CIFAR: CIFAR 10 image dataset · GitHub",
+      "url": "https://github.com/EN10/CIFAR",
+      "snippet": "CIFAR 10 image dataset. Contribute to EN10/CIFAR development by creating an account on GitHub."
+    },
+    {
+      "title": "PyTorch CIFAR Models - GitHub",
+      "url": "https://github.com/chenyaofo/pytorch-cifar-models",
+      "snippet": "Pretrained models on CIFAR10/100 in PyTorch. Contribute to chenyaofo/pytorch-cifar-models development by creating an account on GitHub."
+    },
+    {
+      "title": "cifar10_tutorial.ipynb - Colab",
+      "url": "https://colab.research.google.com/github/pytorch/tutorials/blob/gh-pages/_downloads/cifar10_tutorial.ipynb",
+      "snippet": "Train a state-of-the-art ResNet network on imagenet _ Train a face generator using Generative Adversarial Networks _ Train a word-level language model using Recurrent LSTM networks _ More examples _ More tutorials _ Discuss PyTorch on the Forums _ Chat with other users on Slack _"
+    }
+  ]
+}

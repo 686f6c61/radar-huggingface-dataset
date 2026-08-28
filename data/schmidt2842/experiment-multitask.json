@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "schmidt2842/experiment-multitask",
+  "slug": "schmidt2842-experiment-multitask",
+  "author": "schmidt2842",
+  "url": "https://huggingface.co/schmidt2842/experiment-multitask",
+  "created_at": "2026-08-27T19:14:31.000Z",
+  "updated_at": "2026-08-27T19:14:40.000Z",
+  "license": "bsd-3-clause",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "mobilevit",
+    "pytorch",
+    "multitask",
+    "license:bsd-3-clause",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 24832,
+  "parameters_human": "24832",
+  "storage_bytes": 99808,
+  "storage_human": "99808 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "My-vLLM-semantic-router/src/training/model_experiment ... - GitHub",
+      "url": "https://github.com/TheAIProductReport/My-vLLM-semantic-router/tree/main/src/training/model_experiment/multitask_bert_fine_tuning",
+      "snippet": "System Level Intelligent Router for Mixture-of-Models at Cloud, Data Center and Edge - TheAIProductReport/My-vLLM-semantic-router"
+    },
+    {
+      "title": "Scaling AI Safety for a Multi-Agent World - Schmidt Sciences",
+      "url": "https://www.schmidtsciences.org/multi-agent-ai/",
+      "snippet": "Finally, the Cooperative AI Foundation&#x27;s \"Multi-Agent Risks from Advanced AI\" report argues that interacting populations of AI agents introduce qualitatively new failure modes beyond single-agent systems, including collusion, conflict, destabilising dynamics, emergent agency, and novel multi-agent security vulnerabilities."
+    },
+    {
+      "title": "Multi — one task, the right AI workflow",
+      "url": "https://getmulti.ai/",
+      "snippet": "Multi puts 300+ models from every major lab to work across four workflows, so you deploy the best AI for each task instead of forcing one to do it all. Using the right model for the right project is the advantage most people leave on the table."
+    },
+    {
+      "title": "MultiTask AI Model - Gemini AI - GitHub",
+      "url": "https://github.com/Prarthana-Singh/MultiTask-AI",
+      "snippet": "Welcome to MultiTask AI Model powered by Gemini AI! 🚀 This project integrates multiple AI functionalities like Chatbot, Image Captioning, Text Embeddings, and Open-Ended AI queries."
+    },
+    {
+      "title": "Google Gemini",
+      "url": "https://gemini.google.com/",
+      "snippet": "Meet Gemini, Google&#x27;s AI assistant. Get help with writing, planning, brainstorming, and more. Experience the power of generative AI."
+    }
+  ]
+}

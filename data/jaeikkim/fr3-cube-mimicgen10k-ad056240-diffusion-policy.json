@@ -5,7 +5,7 @@
   "author": "jaeikkim",
   "url": "https://huggingface.co/jaeikkim/fr3-cube-mimicgen10k-ad056240-diffusion-policy",
   "created_at": "2026-08-26T16:33:01.000Z",
-  "updated_at": "2026-08-26T17:06:06.000Z",
+  "updated_at": "2026-08-27T17:17:06.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "robotics",
@@ -22,8 +22,8 @@
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
-  "storage_bytes": 3254656264,
-  "storage_human": "3.3 GB",
+  "storage_bytes": 9763943536,
+  "storage_human": "9.8 GB",
   "base_model": null,
   "formats": [
     "safetensors"

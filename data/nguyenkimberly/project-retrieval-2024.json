@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "nguyenkimberly/project-retrieval-2024",
+  "slug": "nguyenkimberly-project-retrieval-2024",
+  "author": "nguyenkimberly",
+  "url": "https://huggingface.co/nguyenkimberly/project-retrieval-2024",
+  "created_at": "2026-08-27T19:10:57.000Z",
+  "updated_at": "2026-08-27T19:11:05.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "mae",
+    "pytorch",
+    "retrieval",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 16576,
+  "parameters_human": "16576",
+  "storage_bytes": 66784,
+  "storage_human": "66784 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "AI Models | NVIDIA Developer",
+      "url": "https://developer.nvidia.com/ai-models",
+      "snippet": "Explore and deploy top AI models built by the community, accelerated by NVIDIA&#x27;s AI inference platform, and run on NVIDIA-accelerated infrastructure."
+    },
+    {
+      "title": "Breakthrough AI research — Google AI",
+      "url": "https://ai.google/research/",
+      "snippet": "Research teams across Google are innovating across domains to positively impact society, with breakthroughs that have helped usher in a new era of AI."
+    },
+    {
+      "title": "Retrieval-Augmented Generation for AI-Generated Content: A Survey",
+      "url": "https://arxiv.org/abs/2402.19473",
+      "snippet": "Advancements in model algorithms, the growth of foundational models, and access to high-quality datasets have propelled the evolution of Artificial Intelligence Generated Content (AIGC). Despite its notable successes, AIGC still faces hurdles such as updating knowledge, handling long-tail data, mitigating data leakage, and managing high training and inference costs. Retrieval-Augmented ..."
+    },
+    {
+      "title": "Google I/O 2024: New generative AI experiences in Search",
+      "url": "https://blog.google/products-and-platforms/products/search/generative-ai-google-search-may-2024/",
+      "snippet": "With expanded AI Overviews, more planning and research capabilities, and AI-organized search results, our custom Gemini model can take the legwork out of searching."
+    },
+    {
+      "title": "Research | OpenAI",
+      "url": "https://openai.com/research/",
+      "snippet": "View research index Learn about safety Focus areas We advance the science of AI through research on frontier models, reasoning, multimodal systems, and safe deployment. GPT OpenAI&#x27;s GPT series models are fast, versatile, and cost-efficient AI systems designed to understand context, generate content, and reason across text, images, and more."
+    }
+  ]
+}

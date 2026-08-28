@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "Morteza89/qwen3.8-27b-int4-ov",
+  "slug": "morteza89-qwen3-8-27b-int4-ov",
+  "author": "Morteza89",
+  "url": "https://huggingface.co/Morteza89/qwen3.8-27b-int4-ov",
+  "created_at": "2026-08-27T22:57:18.000Z",
+  "updated_at": "2026-08-27T23:11:10.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "openvino",
+  "languages": [],
+  "tags": [
+    "openvino",
+    "qwen3_5",
+    "openvino-genai",
+    "optimum-intel",
+    "nncf",
+    "int4",
+    "vlm",
+    "vision-language-model",
+    "qwen",
+    "qwen3.8",
+    "converted",
+    "conversational",
+    "image-text-to-text",
+    "base_model:Qwen/Qwen3.8-27B",
+    "base_model:finetune:Qwen/Qwen3.8-27B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 15696486324,
+  "storage_human": "15.7 GB",
+  "base_model": "Qwen/Qwen3.8-27B",
+  "formats": [],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "OpenVINO/Qwen3.8-27B-int4-ov · Hugging Face",
+      "url": "https://huggingface.co/OpenVINO/Qwen3.8-27B-int4-ov",
+      "snippet": "Description This is the Qwen3.8-27B model converted to the OpenVINO™ IR (Intermediate Representation) format with weights compressed to INT4 by NNCF. Qwen3.8-27B is a native vision-language model with image and video understanding, flexible thinking control, and support for complex multi-step tasks."
+    },
+    {
+      "title": "Run Qwen 3.8 27B on AMD Ryzen™ AI Max Agentic PCs and Radeon ™ GPUs",
+      "url": "https://www.amd.com/en/blogs/2026/run-qwen-3-8-27b-on-amd-ryzen-ai-max-and-radeon-graphics-cards-day-0.html",
+      "snippet": "Qwen3.8 27B arrives with Day 0 support on AMD Ryzen™ AI processors and Radeon™ graphics cards. Run the latest Qwen model locally with LM Studio on supported AMD hardware. Build and ship local AI applications with Lemonade and first-class AMD inference support."
+    },
+    {
+      "title": "README.md · OpenVINO/Qwen3.8-27B-int4-ov at main - Hugging Face",
+      "url": "https://huggingface.co/OpenVINO/Qwen3.8-27B-int4-ov/blob/main/README.md",
+      "snippet": "Description This is the Qwen3.8-27B model converted to the OpenVINO™ IR (Intermediate Representation) format with weights compressed to INT4 by NNCF. Qwen3.8-27B is a native vision-language model with image and video understanding, flexible thinking control, and support for complex multi-step tasks."
+    },
+    {
+      "title": "Qwen3.8-27B-int4-ov · Models",
+      "url": "https://www.modelscope.cn/models/OpenVINO/Qwen3.8-27B-int4-ov",
+      "snippet": "This is the Qwen3.8-27B model converted to the OpenVINO™ IR (Intermediate Representation) format with weights compressed to INT4 by NNCF. Qwen3.8-27B is a native vision-language model with image and video understanding, flexible thinking control, and support for complex multi-step tasks."
+    },
+    {
+      "title": "Qwen3.8 - lmstudio.ai",
+      "url": "https://lmstudio.ai/models/qwen3.8",
+      "snippet": "Qwen3.8-27B is a dense 27B vision-language model for coding, professional work, research, and long-horizon agentic tasks, with configurable reasoning and a native 262K-token context window."
+    }
+  ]
+}

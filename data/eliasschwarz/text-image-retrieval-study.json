@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "EliasSchwarz/text-image-retrieval-study",
+  "slug": "eliasschwarz-text-image-retrieval-study",
+  "author": "EliasSchwarz",
+  "url": "https://huggingface.co/EliasSchwarz/text-image-retrieval-study",
+  "created_at": "2026-08-27T19:32:13.000Z",
+  "updated_at": "2026-08-27T19:32:23.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "transformer",
+    "research-notes",
+    "text-image-retrieval",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 33088,
+  "parameters_human": "33088",
+  "storage_bytes": 132832,
+  "storage_human": "132832 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Free AI Image Generator: Text to Image | Canva",
+      "url": "https://www.canva.com/ai-image-generator/",
+      "snippet": "Turn a text prompt into an image with Canva&#x27;s free AI image generator. Pick a style and aspect ratio, generate, then refine until it&#x27;s right."
+    },
+    {
+      "title": "Imagen — Google DeepMind",
+      "url": "https://deepmind.google/models/imagen/",
+      "snippet": "Imagen 4 is our best text-to-image model yet, with photorealistic images, near real-time speed, and sharper clarity — to bring your imagination to life."
+    },
+    {
+      "title": "AI Image Generator - DeepAI",
+      "url": "https://deepai.org/machine-learning-model/text2img",
+      "snippet": "Transform your ideas into stunning AI art—instantly and for free. Whether you&#x27;re a creator, developer, or entrepreneur, DeepAI&#x27;s Free Online AI Image Generator gives you the power to visualize your imagination in seconds."
+    },
+    {
+      "title": "Text-to-image AI - Google Cloud",
+      "url": "https://cloud.google.com/use-cases/text-to-image-ai",
+      "snippet": "Text-to-image AI uses natural language processing (NLP) to convert the text description into a machine-readable format. Once converted into a machine-readable format, the machine learning model is trained on a massive dataset of text and images, learns to identify patterns, and to uses them to generate or edit images."
+    },
+    {
+      "title": "Text to Image Leaderboard - Top AI Image Models | Artificial Analysis",
+      "url": "https://artificialanalysis.ai/image/leaderboard/text-to-image",
+      "snippet": "Find the best Text to Image models, see rankings from blind votes, and compare quality, generation speed, and price in one leaderboard."
+    }
+  ]
+}

@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "Varunpandeybeck/experiment-matching-2023",
+  "slug": "varunpandeybeck-experiment-matching-2023",
+  "author": "Varunpandeybeck",
+  "url": "https://huggingface.co/Varunpandeybeck/experiment-matching-2023",
+  "created_at": "2026-08-27T19:28:03.000Z",
+  "updated_at": "2026-08-27T19:28:12.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "dino",
+    "pytorch",
+    "matching",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 16576,
+  "parameters_human": "16576",
+  "storage_bytes": 66784,
+  "storage_human": "66784 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "AI Leaderboard 2026: Compare & Rank 300+ Top AI Models by Intelligence ...",
+      "url": "https://llm-stats.com/",
+      "snippet": "The AI Leaderboard — independent rankings of GPT, Claude, Gemini, Llama, DeepSeek and 300+ AI models by intelligence, speed and price. Composite LLM Stats Score updated continuously from public benchmarks and live API metrics."
+    },
+    {
+      "title": "Workshop on Matching From Unstructured and Structured Data (2023)",
+      "url": "https://aclanthology.org/events/matching-2023/",
+      "snippet": "In contrast, it fails in cases that might benefit from using the KB. We experiment with a modification to the model to enable it to utilize KB information, highlighting challenges to incorporating traditional entity linking information sources into autoregressive models."
+    },
+    {
+      "title": "AI in Experiments: Present Status and Future Prospects - MDPI",
+      "url": "https://www.mdpi.com/2076-3417/13/18/10415",
+      "snippet": "Artificial intelligence (AI) has become deeply intertwined with scientific inquiry and experimentation. This Special Issue, \"AI in Experiments: Present Status and Future Prospects\", provides a timely snapshot of AI&#x27;s evolving role across diverse experimental domains."
+    },
+    {
+      "title": "Experimental evidence on the productivity effects of generative ...",
+      "url": "https://www.science.org/doi/10.1126/science.adh2586",
+      "snippet": "We examined the productivity effects of a generative artificial intelligence (AI) technology, the assistive chatbot ChatGPT, in the context of midlevel professional writing tasks. In a preregistered online experiment, we assigned occupation-specific, incentivized writing tasks to 453 college-educated professionals and randomly exposed half of them to ChatGPT. Our results show that ChatGPT ..."
+    },
+    {
+      "title": "Scientific discovery in the age of artificial intelligence - Nature",
+      "url": "https://www.nature.com/articles/s41586-023-06221-2",
+      "snippet": "Artificial intelligence (AI) is being increasingly integrated into scientific discovery to augment and accelerate research, helping scientists to generate hypotheses, design experiments, collect ..."
+    }
+  ]
+}

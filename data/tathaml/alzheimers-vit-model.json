@@ -5,7 +5,7 @@
   "author": "TathaML",
   "url": "https://huggingface.co/TathaML/alzheimers-vit-model",
   "created_at": "2026-08-27T13:50:57.000Z",
-  "updated_at": "2026-08-27T13:59:58.000Z",
+  "updated_at": "2026-08-27T16:01:45.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": null,
@@ -14,7 +14,6 @@
   "tags": [
     "safetensors",
     "vit",
-    "license:apache-2.0",
     "region:us"
   ],
   "likes": 0,

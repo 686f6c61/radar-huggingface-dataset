@@ -1,0 +1,83 @@
+{
+  "schema": 1,
+  "id": "SwagMessiah100/s1-mini",
+  "slug": "swagmessiah100-s1-mini",
+  "author": "SwagMessiah100",
+  "url": "https://huggingface.co/SwagMessiah100/s1-mini",
+  "created_at": "2026-08-27T21:21:45.000Z",
+  "updated_at": "2026-08-27T21:21:46.000Z",
+  "license": "s1-mini-license",
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3",
+    "text-generation",
+    "asr",
+    "automatic-speech-recognition",
+    "text-normalization",
+    "inverse-text-normalization",
+    "punctuation",
+    "truecasing",
+    "speech-to-text",
+    "dictation",
+    "post-processing",
+    "conversational",
+    "en",
+    "arxiv:2505.09388",
+    "base_model:Qwen/Qwen3-0.6B",
+    "base_model:finetune:Qwen/Qwen3-0.6B",
+    "license:other",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 751632384,
+  "parameters_human": "751.6M",
+  "storage_bytes": 3018177329,
+  "storage_human": "3.0 GB",
+  "base_model": "Qwen/Qwen3-0.6B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "SwagMessiah100 (Rodrigo) - Hugging Face",
+      "url": "https://huggingface.co/SwagMessiah100/models",
+      "snippet": "SwagMessiah100&#x27;s models2 Sort: Recently updated SwagMessiah100/Assistant_Pepe_70B 71B•Updated Jun 28• 3"
+    },
+    {
+      "title": "SwagMessiah100/LocateAnything-3B · Hugging Face",
+      "url": "https://huggingface.co/SwagMessiah100/LocateAnything-3B",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "superwhisper on X: \"Introducing S1-mini For the first time ...",
+      "url": "https://x.com/superwhisper/status/2091977270433075251",
+      "snippet": "Introducing S1-mini For the first time, Superwhisper is releasing a model with open weights. S1-mini is a .6B-parameter language model that processes transcripts entirely on your device. Try it in the app today or check it out on Hugging Face."
+    },
+    {
+      "title": "Superwhisper Releases S1-Mini Open-Weights Model · Digg",
+      "url": "https://digg.com/tech/cnxag88c",
+      "snippet": "Superwhisper released its first open-weights language model for on-device transcript processing."
+    },
+    {
+      "title": "Superwhisper S1 Models Bring Cloud and On-Device Dictation",
+      "url": "https://slator.com/superwhisper-launches-dictation-models/",
+      "snippet": "The Voice AI startup Superwhisper announced the release of its S1 family of models on August 19, 2026, introducing cloud models \"S1-Voice\" and \"S1-Language,\" alongside the on-device \"S1-mini\" model. The company offers an AI speech-to-text (STT) application for macOS, Windows, and iOS. The platform supports offline and cloud speech recognition, along with dictation, file ..."
+    }
+  ]
+}

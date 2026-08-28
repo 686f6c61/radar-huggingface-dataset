@@ -5,7 +5,7 @@
   "author": "zerodigest",
   "url": "https://huggingface.co/zerodigest/Qwen3.8-27B-Cold-Fusion-GAIN-V1.1-YMQ-GGUF",
   "created_at": "2026-08-23T12:36:52.000Z",
-  "updated_at": "2026-08-24T19:39:46.000Z",
+  "updated_at": "2026-08-27T21:27:36.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -31,12 +31,12 @@
     "conversational"
   ],
   "likes": 5,
-  "downloads_30d": 1704,
+  "downloads_30d": 1757,
   "trending_score": 0,
   "parameters": 27320697856,
   "parameters_human": "27.32B",
-  "storage_bytes": 39212477296,
-  "storage_human": "39.2 GB",
+  "storage_bytes": 59114294000,
+  "storage_human": "59.1 GB",
   "base_model": "DavidAU/Qwen3.8-27B-Cold-Fusion-GAIN-V1.1",
   "formats": [
     "gguf"

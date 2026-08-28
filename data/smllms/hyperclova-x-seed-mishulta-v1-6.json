@@ -1,0 +1,76 @@
+{
+  "schema": 1,
+  "id": "smllms/HyperCLOVA-X-SEED-MISHULTA-v1.6",
+  "slug": "smllms-hyperclova-x-seed-mishulta-v1-6",
+  "author": "smllms",
+  "url": "https://huggingface.co/smllms/HyperCLOVA-X-SEED-MISHULTA-v1.6",
+  "created_at": "2026-08-28T00:39:18.000Z",
+  "updated_at": "2026-08-28T00:39:36.000Z",
+  "license": "hyperclovax-seed",
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "ko"
+  ],
+  "tags": [
+    "safetensors",
+    "hyperclovax",
+    "korean",
+    "k-ds",
+    "hackathon",
+    "fine-tuned",
+    "lora",
+    "text-generation",
+    "conversational",
+    "custom_code",
+    "ko",
+    "base_model:naver-hyperclovax/HyperCLOVAX-SEED-Think-14B",
+    "base_model:adapter:naver-hyperclovax/HyperCLOVAX-SEED-Think-14B",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 14748112896,
+  "parameters_human": "14.75B",
+  "storage_bytes": 29496274104,
+  "storage_human": "29.5 GB",
+  "base_model": "naver-hyperclovax/HyperCLOVAX-SEED-Think-14B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "smllms/HyperCLOVA-X-SEED-MISHULTA-v1.5 · Hugging Face",
+      "url": "https://huggingface.co/smllms/HyperCLOVA-X-SEED-MISHULTA-v1.5",
+      "snippet": "smllms / HyperCLOVA-X-SEED-MISHULTA-v1.5 like 0 Safetensors HAERAE-HUB/KMMLU kuotient/orca-math-word-problems-193k-korean Korean hyperclovax korean reasoning k-ds-hackathon fine-tuned custom_code License:hyperclova-x-seed Model card FilesFiles and versions xet Community Copy to bucket new HyperCLOVA-X-SEED-MISHULTA-v1 모델 개요 학습 데이터 (전량 공개 데이터, URL 명시) 평가 ..."
+    },
+    {
+      "title": "HyperCLOVA X SEED - a naver-hyperclovax Collection",
+      "url": "https://huggingface.co/collections/naver-hyperclovax/hyperclova-x-seed",
+      "snippet": "HyperCLOVA X SEED is NAVER&#x27;s lightweight open-source lineup with a strong focus on Korean language performance"
+    },
+    {
+      "title": "HyperCLOVA X Technical Report - arXiv.org",
+      "url": "https://arxiv.org/html/2404.01954v1",
+      "snippet": "The model is evaluated across various benchmarks, including comprehensive reasoning, knowledge, commonsense, factuality, coding, math, chatting, instruction-following, and harmlessness, in both Korean and English. HyperCLOVA X exhibits strong reasoning capabilities in Korean backed by a deep understanding of the language and cultural nuances."
+    },
+    {
+      "title": "HyperCLOVA X Technical Report - arXiv.org",
+      "url": "https://arxiv.org/pdf/2404.01954",
+      "snippet": "Conversely, HyperCLOVA X models and EEVE-Korean-v1 demonstrate a higher accuracy in conveying information about given entities. This result underscores the superior factual generation capability of our HCX-L model on Korean dataset, compared to other baseline models."
+    },
+    {
+      "title": "HyperCLOVA X | CLOVA",
+      "url": "https://clova.ai/en/hyperclova",
+      "snippet": "HyperCLOVA X SEED 8B Omni is a Korean-centered any-to-any model that processes and generates text, images, and audio through a unified architecture. Built on deep Korean-language understanding, it seamlessly handles explanations, conversations, visual analysis, and voice interactions within integrated reasoning workflows."
+    }
+  ]
+}

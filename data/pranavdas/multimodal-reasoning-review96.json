@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "PranavDas/multimodal-reasoning-review96",
+  "slug": "pranavdas-multimodal-reasoning-review96",
+  "author": "PranavDas",
+  "url": "https://huggingface.co/PranavDas/multimodal-reasoning-review96",
+  "created_at": "2026-08-27T20:47:30.000Z",
+  "updated_at": "2026-08-27T20:47:39.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "transformer",
+    "research-notes",
+    "multimodal-reasoning",
+    "license:cc-by-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 33088,
+  "parameters_human": "33088",
+  "storage_bytes": 132832,
+  "storage_human": "132832 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "LLM Leaderboard 2026: Compare 300+ Top AI Models by Intelligence, Speed ...",
+      "url": "https://llm-stats.com/leaderboards/llm-leaderboard",
+      "snippet": "The LLM Leaderboard — independent ranking of GPT, Claude, Gemini, Llama, DeepSeek and 300+ AI models by intelligence, speed and price. Filter by provider, license, modality and context window; sort by every benchmark. Composite LLM Stats Score updated continuously from public benchmarks and live API metrics."
+    },
+    {
+      "title": "[2505.04921] Perception, Reason, Think, and Plan: A Survey on Large ...",
+      "url": "https://arxiv.org/abs/2505.04921",
+      "snippet": "Reasoning lies at the heart of intelligence, shaping the ability to make decisions, draw conclusions, and generalize across domains. In artificial intelligence, as systems increasingly operate in open, uncertain, and multimodal environments, reasoning becomes essential for enabling robust and adaptive behavior. Large Multimodal Reasoning Models (LMRMs) have emerged as a promising paradigm ..."
+    },
+    {
+      "title": "Top 15 Multimodal Models in 2026 (Open Source & Proprietary)",
+      "url": "https://blog.unitlab.ai/top-multimodal-models/",
+      "snippet": "Discover what multimodal models are, how their architectures work, the top multimodal models, real-world use cases, and key challenges."
+    },
+    {
+      "title": "Best Multimodal LLMs (August 2026) — Ranked by Benchmark Data | BenchLM.ai",
+      "url": "https://benchlm.ai/best/multimodal",
+      "snippet": "AI models ranked for multimodal understanding — images, documents, charts, and grounded visual reasoning. Top picks: Qwen3.8 Max, Kimi K3, Claude Opus 5. 33 models ranked with detailed benchmark scores."
+    },
+    {
+      "title": "austinperez/multimodal-reasoning · Hugging Face",
+      "url": "https://huggingface.co/austinperez/multimodal-reasoning",
+      "snippet": "austinperez / multimodal-reasoning like 0 Safetensors transformer research-notes multimodal-reasoning License:cc-by-4. Model card FilesFiles and versions xet Community Copy to bucket new Notes on Multimodal Reasoning Repository summary What is covered How to read this repository Scope and limitations Files License"
+    }
+  ]
+}

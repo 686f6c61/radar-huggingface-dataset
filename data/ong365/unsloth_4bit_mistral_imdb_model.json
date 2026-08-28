@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "ong365/unsloth_4bit_mistral_imdb_model",
+  "slug": "ong365-unsloth_4bit_mistral_imdb_model",
+  "author": "ong365",
+  "url": "https://huggingface.co/ong365/unsloth_4bit_mistral_imdb_model",
+  "created_at": "2026-08-27T20:37:07.000Z",
+  "updated_at": "2026-08-27T20:37:18.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "text-generation-inference",
+    "unsloth",
+    "mistral",
+    "trl",
+    "en",
+    "base_model:unsloth/mistral-7b-bnb-4bit",
+    "base_model:finetune:unsloth/mistral-7b-bnb-4bit",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 167832240,
+  "storage_human": "168 MB",
+  "base_model": "unsloth/mistral-7b-bnb-4bit",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - unslothai/unsloth: Local UI to run and train LLMs and ...",
+      "url": "https://github.com/unslothai/unsloth",
+      "snippet": "Local UI to run and train LLMs and diffusion models, including Qwen3.8, Kimi K3, MiniMax-H3, Gemma 4, DeepSeek-V4, FLUX and more. - unslothai/unsloth"
+    },
+    {
+      "title": "sandeepsundaram/unsloth_4bit_mistral_imdb_model at main",
+      "url": "https://huggingface.co/sandeepsundaram/unsloth_4bit_mistral_imdb_model/tree/main",
+      "snippet": "0 Text GenerationPEFTSafetensors imdb Englishnlpcode License: mit Model card FilesFiles and versions Community Deploy Use in PEFT main unsloth_4bit_mistral_imdb_model 1 contributor History:3 commits Sandeep Sundaram Update README 9bcecfc verified3 days ago .gitattributes 1.52 kB initial commit 3 days ago README.md 1.48 kB Update README 3 days ..."
+    },
+    {
+      "title": "Unsloth AI - GitHub",
+      "url": "https://github.com/unslothai",
+      "snippet": "Run and train AI models locally. 🦥. Unsloth AI has 11 repositories available. Follow their code on GitHub."
+    },
+    {
+      "title": "Unsloth - Run and Train Models Locally",
+      "url": "https://unsloth.ai/",
+      "snippet": "Start Unsloth, load a model, open your project folder, then run unsloth start claude. Swap models in Unsloth without changing your agent workflow. Unsloth also exposes an OpenAI-compatible API, so existing apps, scripts and SDKs can connect to your local models through a familiar interface."
+    },
+    {
+      "title": "Ponce-01/unsloth_4bit_mistral_imdb_model · Hugging Face",
+      "url": "https://huggingface.co/Ponce-01/unsloth_4bit_mistral_imdb_model",
+      "snippet": "Uploaded model Developed by: Ponce-01 License: apache-2.0 Finetuned from model : unsloth/mistral-7b-bnb-4bit This mistral model was trained 2x faster with Unsloth and Huggingface&#x27;s TRL library."
+    }
+  ]
+}

@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "DRZ3000/pony_loras",
+  "slug": "drz3000-pony_loras",
+  "author": "DRZ3000",
+  "url": "https://huggingface.co/DRZ3000/pony_loras",
+  "created_at": "2026-08-27T20:58:48.000Z",
+  "updated_at": "2026-08-28T00:12:31.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 6198108458,
+  "storage_human": "6.2 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Pony AI Models & Generator | Civitai",
+      "url": "https://civitai.com/ecosystems/pony",
+      "snippet": "Generate with Pony Diffusion V6 XL on Civitai — the SDXL fine-tune for characters, anime, and stylized art via score_ tag prompts. Browse top LoRAs & prompts."
+    },
+    {
+      "title": "DRZ3000 (DRZ3000) - Hugging Face",
+      "url": "https://huggingface.co/DRZ3000",
+      "snippet": "User profile of DRZ3000 on Hugging Face Recent Activity updated a model3 days ago DRZ3000/Krea2_loras published a model4 days ago DRZ3000/Krea2_loras liked a modelabout 1 month ago malcolmrey/krea2 View all activity"
+    },
+    {
+      "title": "Realism Lora By Stable Yogi (Pony) - v3.0_lite | Pony Diffusion LoRA ...",
+      "url": "https://civitai.com/models/1098033/realism-lora-by-stable-yogi-pony",
+      "snippet": "The All-in-One Realism LoRA Realism Lora By Stable Yogi-v3 Why stack 10 different LoRAs when one can do it all? This LoRA is built to deliver balanced, lifelike results straight out of the box —from hyperrealistic skin tones and delicate freckles to natural lighting and authentic camera vibes. It&#x27;s designed to handle everything, whether you&#x27;re aiming for soft lifestyle portraits, casual ..."
+    },
+    {
+      "title": "LoRAs / Models (SDXL1.0, Pony, SD1.5, Flux, ...)",
+      "url": "https://huggingface.co/collections/John6666/loras-models-sdxl10-pony-sd15-flux",
+      "snippet": "Unlock the magic of AI with handpicked models, awesome datasets, papers, and mind-blowing Spaces from John6666"
+    },
+    {
+      "title": "10,000+ LoRA Models for Flux, Wan & SDXL | Browse Free",
+      "url": "https://loraai.io/loras",
+      "snippet": "Browse 10,000+ LoRA models for Flux, WAN, and SDXL. Character LoRAs, style LoRAs, and concept LoRAs with examples. Filter by model, tag, or search."
+    }
+  ]
+}

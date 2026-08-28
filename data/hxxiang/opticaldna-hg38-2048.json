@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "hxxiang/opticaldna-hg38-2048",
+  "slug": "hxxiang-opticaldna-hg38-2048",
+  "author": "hxxiang",
+  "url": "https://huggingface.co/hxxiang/opticaldna-hg38-2048",
+  "created_at": "2026-08-27T23:40:48.000Z",
+  "updated_at": "2026-08-27T23:41:24.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "feature-extraction",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "opticaldna",
+    "feature-extraction",
+    "genomics",
+    "dna",
+    "vision-language",
+    "custom-code",
+    "custom_code",
+    "dataset:hxxiang/dna_benchmarks",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 3342664960,
+  "parameters_human": "3.34B",
+  "storage_bytes": 6685665024,
+  "storage_human": "6.7 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "OpticalDNA | Rethinking Genomic Modeling Through Optical Character ...",
+      "url": "https://hongxinxiang.github.io/projects/OpticalDNA/",
+      "snippet": "Key finding. HG38-pretrained OpticalDNA transfers to rice far better than HG38-pretrained sequence baselines and nearly matches rice-pretrained OpticalDNA, indicating that the gain comes from a transferable OCR-style visual genomic representation rather than only domain-matched pretraining."
+    },
+    {
+      "title": "GitHub - HongxinXiang/OpticalDNA: A vision-language framework that ...",
+      "url": "https://github.com/HongxinXiang/OpticalDNA",
+      "snippet": "The render-id should match the directory name generated under processed/. The same scripts can be used for HG38, rice, or any other dataset by changing parser arguments. Keep these scripts under scripts/data/ because they are command-line data preparation utilities rather than model or training modules."
+    },
+    {
+      "title": "OpticalDNA/README.md at main · HongxinXiang/OpticalDNA",
+      "url": "https://github.com/HongxinXiang/OpticalDNA/blob/main/README.md",
+      "snippet": "opticaldna/: model configuration, tokenizer files, and OpticalDNA model wrappers. src/: training entry point and data-loading modules used during pre-training. scripts/data/: standalone data preparation scripts for generating processed VisualDNA data. assets/: figures used in this README."
+    },
+    {
+      "title": "[2602.02014] Rethinking Genomic Modeling Through Optical Character ...",
+      "url": "https://arxiv.org/abs/2602.02014",
+      "snippet": "Here, we present OpticalDNA, a vision-based framework that reframes genomic modeling as Optical Character Recognition (OCR)-style document understanding. OpticalDNA renders DNA into structured visual layouts and trains an OCR-capable vision--language model with a visual DNA encoder and a document decoder, where the encoder produces compact ..."
+    },
+    {
+      "title": "PDF ICML2026-OpticalDNA-Poster",
+      "url": "https://hongxinxiang.github.io/projects/OpticalDNA/static/poster/poster.pdf",
+      "snippet": "Overview of OpticalDNA We introduce OpticalDNA, the first vision-based DNA foundation model that learns genomic representations through structured visual layouts and region-centric reasoning."
+    }
+  ]
+}

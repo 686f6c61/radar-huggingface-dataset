@@ -5,7 +5,7 @@
   "author": "mfielding92",
   "url": "https://huggingface.co/mfielding92/thefriend-31b-v2-GGUFX",
   "created_at": "2026-08-27T00:13:44.000Z",
-  "updated_at": "2026-08-27T02:26:28.000Z",
+  "updated_at": "2026-08-27T07:42:59.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": null,
@@ -27,8 +27,8 @@
   "trending_score": 0,
   "parameters": 30697345596,
   "parameters_human": "30.70B",
-  "storage_bytes": 83846776256,
-  "storage_human": "83.8 GB",
+  "storage_bytes": 470225189792,
+  "storage_human": "470.2 GB",
   "base_model": "mfielding92/thefriend-31b-v2",
   "formats": [
     "gguf"

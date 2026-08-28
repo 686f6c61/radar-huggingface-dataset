@@ -1,0 +1,76 @@
+{
+  "schema": 1,
+  "id": "aimeri/spoomplesmaxx-thrasher-24B",
+  "slug": "aimeri-spoomplesmaxx-thrasher-24b",
+  "author": "aimeri",
+  "url": "https://huggingface.co/aimeri/spoomplesmaxx-thrasher-24B",
+  "created_at": "2026-08-27T23:11:37.000Z",
+  "updated_at": "2026-08-27T23:59:07.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "mistral",
+    "text-generation",
+    "roleplay",
+    "creative-writing",
+    "chatml",
+    "conversational",
+    "en",
+    "base_model:mistralai/Mistral-Small-3.1-24B-Base-2503",
+    "base_model:finetune:mistralai/Mistral-Small-3.1-24B-Base-2503",
+    "license:apache-2.0",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 23572403200,
+  "parameters_human": "23.57B",
+  "storage_bytes": 47162526512,
+  "storage_human": "47.2 GB",
+  "base_model": "mistralai/Mistral-Small-3.1-24B-Base-2503",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - aimerib/spoomplesmaxx",
+      "url": "https://github.com/aimerib/spoomplesmaxx",
+      "snippet": "These datasets are designed to train a Roleplay (RP), Creative Writing, and \"Smart\" Assistant model Spoomplesmaxx. The goal of combining these specific sets is to create a model that is narratively creative and capable of embodying characters, but also logically sound and capable of following complex instructions."
+    },
+    {
+      "title": "aimeri/spoomplesmaxx-mini-14B · Hugging Face",
+      "url": "https://huggingface.co/aimeri/spoomplesmaxx-mini-14B",
+      "snippet": "SpoomplesMaxx is a generalist model with primary strengths in creative writing and roleplay, plus light competence at instruction following and reasoning. The Mini brings the v2.1 data and training recipe to a 14B you can run on a single 24GB card. Smaller bird, same energy."
+    },
+    {
+      "title": "aimeri/spoomplesmaxx-v2.1-30B · Hugging Face",
+      "url": "https://huggingface.co/aimeri/spoomplesmaxx-v2.1-30B",
+      "snippet": "SpoomplesMaxx is a generalist model with primary strengths in creative writing and roleplay, plus light competence at instruction following and reasoning. Built on Granite 4.1 30B Base ran through an SFT pipeline covering reasoning and a narrative persona (Olivia)."
+    },
+    {
+      "title": "aimeri/spoomplesmaxx-flash-35B-A3 · Hugging Face",
+      "url": "https://huggingface.co/aimeri/spoomplesmaxx-flash-35B-A3",
+      "snippet": "SpoomplesMaxx is a generalist model with primary strengths in creative writing and roleplay, plus light competence at instruction following, reasoning, and — new in Flash — tool calling. Flash is the speed build: a 35B mixture-of-experts with only 3B active parameters per token, on a hybrid linear-attention backbone where just 10 of 40 layers keep a KV cache. Long roleplay sessions that ..."
+    },
+    {
+      "title": "aimeri/spoomplesmaxx-base-qwen3-14b · Hugging Face",
+      "url": "https://huggingface.co/aimeri/spoomplesmaxx-base-qwen3-14b",
+      "snippet": "It grounds the model in character knowledge, narrative prose, multilingual content, and uncensored language before instruction tuning. Training Data CPT Curriculum (3 phases) The prepared dataset (aimeri/spoomplesmaxx-cpt-small-Qwen3-14B-Base) was assembled from three curriculum phases, each with different repeat factors to control emphasis."
+    }
+  ]
+}

@@ -1,0 +1,77 @@
+{
+  "schema": 1,
+  "id": "kingjones777/Tiel-Coder-35B-A3B-ROCmFP4-FAST-GGUF",
+  "slug": "kingjones777-tiel-coder-35b-a3b-rocmfp4-fast-gguf",
+  "author": "kingjones777",
+  "url": "https://huggingface.co/kingjones777/Tiel-Coder-35B-A3B-ROCmFP4-FAST-GGUF",
+  "created_at": "2026-08-27T21:47:55.000Z",
+  "updated_at": "2026-08-27T21:49:28.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "gguf",
+  "languages": [],
+  "tags": [
+    "gguf",
+    "rocmfp4",
+    "llama.cpp",
+    "strix-halo",
+    "gfx1151",
+    "rocm",
+    "amd",
+    "ryzen-ai-max",
+    "agentic-coding",
+    "moe",
+    "text-generation",
+    "base_model:ornith-ai/Ornith-1.5-35B-A3B",
+    "base_model:quantized:ornith-ai/Ornith-1.5-35B-A3B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "imatrix",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 34660610688,
+  "parameters_human": "34.66B",
+  "storage_bytes": 18648517696,
+  "storage_human": "18.6 GB",
+  "base_model": "peculiar-ragdoll/Tiel-Coder-35B-A3B-GGUF, ornith-ai/Ornith-1.5-35B-A3B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "kingjones777/Ornith-1.5-35B-A3B-ROCmFP4-FAST-GGUF · Hugging Face",
+      "url": "https://huggingface.co/kingjones777/Ornith-1.5-35B-A3B-ROCmFP4-FAST-GGUF",
+      "snippet": "⚠️ For contrast, the other public ROCmFP4 build of this model (julianmb/Ornith-1.5-35B-A3B-ROCmFP4-GGUF, ftype 106) ships Q5_K token embeddings and a 4-bit output.weight, while its card states \"FP16 embedding/norm preservation\"."
+    },
+    {
+      "title": "kingjones777/Ornith-1.5-35B-A3B-ROCmFP4-COHERENT-GGUF · Hugging Face",
+      "url": "https://huggingface.co/kingjones777/Ornith-1.5-35B-A3B-ROCmFP4-COHERENT-GGUF",
+      "snippet": "⚠️ For contrast, the other public ROCmFP4 build of this model (julianmb/Ornith-1.5-35B-A3B-ROCmFP4-GGUF, ftype 106) ships Q5_K token embeddings and a 4-bit output.weight, while its card states \"FP16 embedding/norm preservation\"."
+    },
+    {
+      "title": "GitHub - charlie12345/ROCmFPX: ROCmFPX Family for AMD Hardware and ...",
+      "url": "https://github.com/charlie12345/ROCmFPX",
+      "snippet": "ROCmFPX adds experimental AMD-focused 2-, 3-, 4-, 6-, and 8-bit GGUF model-weight formats to llama.cpp, with CPU reference paths and accelerated HIP/ROCm and Vulkan kernels. Status: ROCmFPX is an experimental feature family on the canonical main branch. APIs, tuning choices, and performance can change. Results depend on hardware, drivers, model, prompt, and quantization recipe; use BF16/F16 ..."
+    },
+    {
+      "title": "Tiel-Coder-35B-A3B-GGUF: Text-to-Text model — overview, use cases ...",
+      "url": "https://www.aimodels.fyi/models/huggingFace/tiel-coder-35b-a3b-gguf-peculiar-ragdoll",
+      "snippet": "Model Overview Overview Tiel-Coder-35B-A3B-GGUF is a local coding and agent model maintained by peculiar-ragdoll. It is a dynamically quantized GGUF build of Ornith-1.5-35B-A3B, with a custom importance matrix and the Sharp chat template embedded in the file."
+    },
+    {
+      "title": "Qwen 3.8 27B ROCmFP4_FAST on AMD Strix Halo (Ryzen AI Max+ 395) - GitHub",
+      "url": "https://github.com/julianmb/q38rocm",
+      "snippet": "Qwen 3.8 27B ROCmFP4 on AMD Strix Halo (Ryzen AI Max+ 395). Up to 36 tok/s via MTP Speculation, TurboQuant & Mesa RADV Wave64. - julianmb/q38rocm"
+    }
+  ]
+}

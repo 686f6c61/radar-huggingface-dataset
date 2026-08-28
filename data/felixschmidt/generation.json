@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "Felixschmidt/generation",
+  "slug": "felixschmidt-generation",
+  "author": "Felixschmidt",
+  "url": "https://huggingface.co/Felixschmidt/generation",
+  "created_at": "2026-08-27T21:48:32.000Z",
+  "updated_at": "2026-08-27T21:48:43.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "cnn_transformer",
+    "pytorch",
+    "cnn-transformer",
+    "generation",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 16576,
+  "parameters_human": "16576",
+  "storage_bytes": 66784,
+  "storage_human": "66784 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "felixschmidt.software — AI-Powered Portfolio | Felix Schmidt",
+      "url": "https://felixschmidt.software/en/work/felixschmidt-software",
+      "snippet": "Personal portfolio and marketing website with an integrated AI assistant powered by Retrieval-Augmented Generation (RAG). Visitors can ask natural-language questions about Felix&#x27;s experience, and the system retrieves relevant projects via vector similarity search before generating grounded, hallucination-free answers using Google Gemini. The entire pipeline is bilingual (EN/DE), streaming, and ..."
+    },
+    {
+      "title": "About - GenAIus",
+      "url": "https://genai.us/about",
+      "snippet": "Any competent engineer can connect a language model to a chat box in a weekend. That was never the hard part. The hard part is knowing what to ask a CIO, when to push past the rehearsed answer, and what a vague reply actually reveals about how an organization works. That judgment isn&#x27;t in a model. It&#x27;s the residue of twenty years in the room — and it&#x27;s what&#x27;s encoded in how we listen. The ..."
+    },
+    {
+      "title": "Claude Managed Agents: Run Autonomous AI Agents Without the ...",
+      "url": "https://felixschmidt.software/en/blog/claude-managed-agents",
+      "snippet": "April 12, 2026 Building an AI agent that can actually do things — run code, search the web, read and write files — is harder than it looks. Beyond choosing a model, you need a reliable agent loop, a sandboxed execution environment, tool integrations, state management, and streaming infrastructure. That&#x27;s a lot of plumbing before you&#x27;ve even touched your actual use case. Claude Managed ..."
+    },
+    {
+      "title": "Felix Schmidt ‍ - Senior Frontend and AI Transformation Engineer ...",
+      "url": "https://ch.linkedin.com/in/felix-schmidt-ai/de",
+      "snippet": "Senior Frontend and AI Transformation Engineer · Shaping AI Engineering Standards @ PEAX · Advisory on AI-driven Development · FinTech · 15y regulated-industry software · I help engineering teams transform how they build software with AI — not by replacing engineers, but by making them significantly more effective. At PEAX (B2B SaaS, Switzerland), I'm part of the AI Powered ..."
+    },
+    {
+      "title": "Felix Schmidt - GenAIus | LinkedIn",
+      "url": "https://www.linkedin.com/in/feschmidt",
+      "snippet": "Experience: GenAIus · Location: Austin, Texas Metropolitan Area · 500+ connections on LinkedIn. View Felix Schmidt&#x27;s profile on LinkedIn, a professional community of 1 billion members."
+    }
+  ]
+}

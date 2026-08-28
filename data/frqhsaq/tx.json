@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "frqhsaq/TX",
+  "slug": "frqhsaq-tx",
+  "author": "frqhsaq",
+  "url": "https://huggingface.co/frqhsaq/TX",
+  "created_at": "2026-08-28T00:07:21.000Z",
+  "updated_at": "2026-08-28T00:07:21.000Z",
+  "license": "agpl-3.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:agpl-3.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Hugging Face - The AI community building the future.",
+      "url": "https://huggingface.co/",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "How a Texas student blew the whistle on a rogue AI hacking attempt",
+      "url": "https://www.reuters.com/world/how-texas-student-blew-whistle-rogue-ai-hacking-attempt-2026-08-20/",
+      "snippet": "Out-of-control AI agent tried to poison open-source software project with malicious code Texas computer science student caught attempt in late July AI responded with elaborate deception effort ..."
+    },
+    {
+      "title": "The \"Texas Model\" for AI: TRAIGA Goes Into Effect with a Focus on ...",
+      "url": "https://www.financialcontent.com/article/tokenring-2026-1-8-the-texas-model-for-ai-traiga-goes-into-effect-with-a-focus-on-intent-and-innovation",
+      "snippet": "As the clock struck midnight on January 1, 2026, the artificial intelligence landscape in the United States underwent a seismic shift with the official activation of the Texas Responsible AI Governance Act (TRAIGA). Known formally as HB 149, the law represents a starkly different regulatory philosophy than the comprehensive risk-based frameworks seen in Europe or the heavy-handed oversight ..."
+    },
+    {
+      "title": "LTX-2: Production-Grade AI Video Generation Model | LTX",
+      "url": "https://ltx.io/model/ltx-2",
+      "snippet": "LTX-2 is a pro AI video model for production. It offers precise control, native 4K, high frame rates and proven performance for long-form creative tasks."
+    },
+    {
+      "title": "Introducing TxGemma: Open models to improve therapeutics development ...",
+      "url": "https://developers.googleblog.com/en/introducing-txgemma-open-models-improving-therapeutics-development/",
+      "snippet": "Get started with TxGemma You can access TxGemma on both Vertex AI Model Garden and Hugging Face today. We encourage you to explore the models, try out the inference, fine-tuning, and agent Colab notebooks, and share your feedback! As an open model, TxGemma is designed to be further improved - researchers can fine-tune it with their data for specific therapeutic development use-cases. We&#x27;re ..."
+    }
+  ]
+}

@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "raogaurav/survey-prompt-engineering",
+  "slug": "raogaurav-survey-prompt-engineering",
+  "author": "raogaurav",
+  "url": "https://huggingface.co/raogaurav/survey-prompt-engineering",
+  "created_at": "2026-08-27T23:27:52.000Z",
+  "updated_at": "2026-08-27T23:28:02.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "transformer",
+    "research-notes",
+    "prompt-engineering",
+    "license:cc-by-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 49600,
+  "parameters_human": "49600",
+  "storage_bytes": 198880,
+  "storage_human": "198880 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "[2402.07927] A Systematic Survey of Prompt Engineering in Large ...",
+      "url": "https://arxiv.org/abs/2402.07927",
+      "snippet": "Prompt engineering has emerged as an indispensable technique for extending the capabilities of large language models (LLMs) and vision-language models (VLMs). This approach leverages task-specific instructions, known as prompts, to enhance model efficacy without modifying the core model parameters. Rather than updating the model parameters, prompts allow seamless integration of pre-trained ..."
+    },
+    {
+      "title": "A Systematic Survey of Prompt Engineering in Large Language Models ...",
+      "url": "https://arxiv.org/pdf/2402.07927v1",
+      "snippet": "Abstract Prompt engineering has emerged as an indispens-able technique for extending the capabilities of large language models (LLMs) and vision-language mod-els (VLMs). This approach leverages task-specific instructions, known as prompts, to enhance model efficacy without modifying the core model param-eters. Rather than updating the model parameters, prompts allow seamless integration of pre ..."
+    },
+    {
+      "title": "Prompt Engineering Guide | Prompt Engineering Guide",
+      "url": "https://www.promptingguide.ai/",
+      "snippet": "Motivated by the high interest in developing with LLMs, we have created this new prompt engineering guide that contains all the latest papers, advanced prompting techniques, learning guides, model-specific prompting guides, lectures, references, new LLM capabilities, and tools related to prompt engineering."
+    },
+    {
+      "title": "Prompt Engineering in Large Language Models: A ... - ResearchGate",
+      "url": "https://www.researchgate.net/publication/398409424_Prompt_Engineering_in_Large_Language_Models_A_Systematic_Survey_of_Optimization_Techniques_and_Real-World_Applications",
+      "snippet": "It also explains the importance of interpretability in AI systems and what current limitations are, as well as the need to use transparent prompt engineering approaches.Some novel research ..."
+    },
+    {
+      "title": "The Prompt Report",
+      "url": "https://trigaten.github.io/Prompt_Survey_Site/",
+      "snippet": "In this paper, we conduct a systematic literature review of all Generative AI (GenAI) prompting and prompt engineering techniques (prefix only). We combine human and machine efforts to process 4,797 records from arXiv, Semantic Scholar, and ACL, extracting 1,565 relevant papers through the PRISMA review process. From this dataset we present 58 text-based techniques, complemented by an ..."
+    }
+  ]
+}

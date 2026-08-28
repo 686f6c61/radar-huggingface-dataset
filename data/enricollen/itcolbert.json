@@ -5,7 +5,7 @@
   "author": "enricollen",
   "url": "https://huggingface.co/enricollen/ItColBERT",
   "created_at": "2026-08-25T23:14:58.000Z",
-  "updated_at": "2026-08-26T08:35:59.000Z",
+  "updated_at": "2026-08-27T09:46:10.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "sentence-similarity",
@@ -38,12 +38,12 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 4,
+  "downloads_30d": 26,
   "trending_score": 0,
   "parameters": 134909184,
   "parameters_human": "134.9M",
-  "storage_bytes": 540494327,
-  "storage_human": "540 MB",
+  "storage_bytes": 541275964,
+  "storage_human": "541 MB",
   "base_model": "nickprock/Italian-ModernBERT-base-embed-mmarco-mnrl",
   "formats": [
     "safetensors"

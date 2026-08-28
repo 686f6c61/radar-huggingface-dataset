@@ -5,7 +5,7 @@
   "author": "m1rkocasu",
   "url": "https://huggingface.co/m1rkocasu/Apertus-v1.5-8B-text-MLX-4bit-DWQ",
   "created_at": "2026-08-27T14:16:03.000Z",
-  "updated_at": "2026-08-27T14:17:43.000Z",
+  "updated_at": "2026-08-27T17:25:34.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-generation",

@@ -5,7 +5,7 @@
   "author": "GlobalCybersecurityAlliance",
   "url": "https://huggingface.co/GlobalCybersecurityAlliance/Qwen3.8-27B-Abliterated-GGUF",
   "created_at": "2026-08-19T09:59:41.000Z",
-  "updated_at": "2026-08-21T02:18:27.000Z",
+  "updated_at": "2026-08-27T09:40:25.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "image-text-to-text",
@@ -29,20 +29,20 @@
     "conversational"
   ],
   "likes": 0,
-  "downloads_30d": 320,
+  "downloads_30d": 367,
   "trending_score": 0,
   "parameters": 26895998464,
   "parameters_human": "26.90B",
-  "storage_bytes": 85085817856,
-  "storage_human": "85.1 GB",
+  "storage_bytes": 91031827808,
+  "storage_human": "91.0 GB",
   "base_model": "Qwen/Qwen3.8-27B",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
-  "removed": true,
-  "removed_at": "2026-08-21T11:02:08.043Z",
+  "removed": false,
+  "removed_at": null,
   "benchmarks": [],
   "sources": [
     {

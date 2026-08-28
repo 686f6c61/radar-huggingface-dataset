@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "JONNYVERSE/distilbart-cnn-6-6",
+  "slug": "jonnyverse-distilbart-cnn-6-6",
+  "author": "JONNYVERSE",
+  "url": "https://huggingface.co/JONNYVERSE/distilbart-cnn-6-6",
+  "created_at": "2026-08-27T21:41:21.000Z",
+  "updated_at": "2026-08-27T21:41:22.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "summarization",
+  "library": "transformers.js",
+  "languages": [],
+  "tags": [
+    "transformers.js",
+    "onnx",
+    "bart",
+    "text2text-generation",
+    "summarization",
+    "base_model:sshleifer/distilbart-cnn-6-6",
+    "base_model:quantized:sshleifer/distilbart-cnn-6-6",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 17992810004,
+  "storage_human": "18.0 GB",
+  "base_model": "sshleifer/distilbart-cnn-6-6",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "sshleifer/distilbart-cnn-6-6 · Hugging Face",
+      "url": "https://huggingface.co/sshleifer/distilbart-cnn-6-6",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "DistilBART-CNN-6-6: The Practical Choice for Efficient Summarization in ...",
+      "url": "https://aiindigo.com/blog/distilbart-cnn-6-6-the-practical-choice-for-efficient-summarization-in-2026",
+      "snippet": "* For those needing a larger, more capable model that handles more complex nuance, look into the full BART architecture. * For those who need a purely extractive approach (where the model only uses existing sentences), explore other models in the ai models category. Final Verdict DistilBART-CNN-6-6 is a workhorse."
+    },
+    {
+      "title": "distilbart-cnn-6-6 · Model · Inferix",
+      "url": "https://inferix.co/models/Xenova/distilbart-cnn-6-6",
+      "snippet": "Model tree for Xenova / distilbart-cnn-6-6 Base model sshleifer/distilbart-cnn-6-6 Files Commits Discussions Pull Requests Evaluation"
+    },
+    {
+      "title": "distilbart-cnn-6-6 | PromptLayer Models",
+      "url": "https://www.promptlayer.com/models/distilbart-cnn-6-6/",
+      "snippet": "What is distilbart-cnn-6-6? DistilBART CNN 6-6 is a compressed version of the BART model specifically optimized for text summarization tasks. It was trained on the CNN/DailyMail dataset and represents a careful balance between performance and efficiency, achieving significant speed improvements while maintaining strong summarization capabilities. Implementation Details The model utilizes ..."
+    },
+    {
+      "title": "sshleifer/distilbart-cnn-6-6 at main - Hugging Face",
+      "url": "https://huggingface.co/sshleifer/distilbart-cnn-6-6/tree/main",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    }
+  ]
+}

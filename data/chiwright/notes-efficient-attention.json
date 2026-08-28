@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "chiwright/notes-efficient-attention",
+  "slug": "chiwright-notes-efficient-attention",
+  "author": "chiwright",
+  "url": "https://huggingface.co/chiwright/notes-efficient-attention",
+  "created_at": "2026-08-27T23:24:57.000Z",
+  "updated_at": "2026-08-27T23:25:06.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "transformer",
+    "research-notes",
+    "efficient-attention",
+    "license:cc-by-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 24832,
+  "parameters_human": "24832",
+  "storage_bytes": 99808,
+  "storage_human": "99808 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Efficient Attention Mechanisms for Large Language Models:",
+      "url": "https://arxiv.org/html/2507.19595v1",
+      "snippet": "In addition, we analyze the incorporation of efficient attention into large-scale pre-trained language models, including both architectures built entirely on efficient attention and hybrid designs that combine local and global components."
+    },
+    {
+      "title": "[2507.19595] Efficient Attention Mechanisms for Large Language Models ...",
+      "url": "https://arxiv.org/abs/2507.19595",
+      "snippet": "Transformer-based architectures have become the prevailing backbone of large language models. However, the quadratic time and memory complexity of self-attention remains a fundamental obstacle to efficient long-context modeling. To address this limitation, recent research has introduced two principal categories of efficient attention mechanisms. Linear attention methods achieve linear ..."
+    },
+    {
+      "title": "Efficient attention mechanisms for large language models",
+      "url": "https://www.sciencedirect.com/science/article/pii/S2666389926001030",
+      "snippet": "In addition, we analyze the incorporation of efficient attention into large-scale pre-trained language models, including both architectures built entirely on efficient attention and hybrid designs that combine local and global components."
+    },
+    {
+      "title": "GitHub - HKUNLP/efficient-attention: [EVA ICLR&#x27;23; LARA ICML&#x27;22 ...",
+      "url": "https://github.com/hkunlp/efficient-attention",
+      "snippet": "🌲 Repo structure: efficient-attention: a small self-contained codebase that implements various efficient attention mechanisms. Please see the usage for more details. vit: codebase for image classification experiments, which is adapted from DeiT for the file structure, and PvT for PvTv2 model classes."
+    },
+    {
+      "title": "AI Conference Paper Notes | 23000+ In-Depth Summaries",
+      "url": "https://en.papernotes.org/",
+      "snippet": "23000+ AI / LLM / NLP / CV top-venue paper notes — 5-minute reads of core ideas. Covers ACL, CVPR, ICLR, AAAI, NeurIPS, ICCV, ICML, ECCV across 11 venues and 55 research areas. Each note includes a TL;DR, motivation, ..."
+    }
+  ]
+}

@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "unijenaphotonics/multimodal-generation",
+  "slug": "unijenaphotonics-multimodal-generation",
+  "author": "unijenaphotonics",
+  "url": "https://huggingface.co/unijenaphotonics/multimodal-generation",
+  "created_at": "2026-08-27T23:03:59.000Z",
+  "updated_at": "2026-08-27T23:04:08.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "transformer",
+    "research-notes",
+    "multimodal-generation",
+    "license:cc-by-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 24832,
+  "parameters_human": "24832",
+  "storage_bytes": 99808,
+  "storage_human": "99808 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Introduction to Multimodal Generative AI | Springer Nature Link",
+      "url": "https://link.springer.com/chapter/10.1007/978-981-96-2355-6_1",
+      "snippet": "A state-of-the-art method in machine learning is called Multimodal Generative Artificial Intelligence (AI), which aims to produce a variety of outputs in many modalities, including text, audio, and images. This survey explores multimodal generative AI&#x27;s developments, techniques, and uses. First, we clarify the main concepts behind such models, such as adaptive autoencoders (VAEs), generative ..."
+    },
+    {
+      "title": "Multi-Modal Generative AI: Multi-modal LLM, Diffusion and Beyond",
+      "url": "https://arxiv.org/html/2409.14993v1",
+      "snippet": "Abstract Multi-modal generative AI has received increasing attention in both academia and industry. Particularly, two dominant families of techniques are: i) The multi-modal large language model (MLLM) such as GPT-4V, which shows impressive ability for multi-modal understanding; ii) The diffusion model such as Sora, which exhibits remarkable multi-modal powers, especially with respect to ..."
+    },
+    {
+      "title": "Luma | AI Agents for Creative Work",
+      "url": "https://lumalabs.ai/",
+      "snippet": "Luma AI is the creative AI platform for video generation and image creation. Powered by the world&#x27;s leading video generation models, Ray and Uni, and creative agents handling end-to-end workflows. Trusted by leading agencies and brands. Try it free."
+    },
+    {
+      "title": "[2505.02567] Unified Multimodal Understanding and Generation Models ...",
+      "url": "https://arxiv.org/abs/2505.02567",
+      "snippet": "First, we introduce the foundational concepts and recent advancements in multimodal understanding and text-to-image generation models. Next, we review existing unified models, categorizing them into three main architectural paradigms: diffusion-based, autoregressive-based, and hybrid approaches that fuse autoregressive and diffusion mechanisms."
+    },
+    {
+      "title": "Multimodal AI - Google Cloud",
+      "url": "https://cloud.google.com/use-cases/multimodal-ai",
+      "snippet": "Overview What is an example of multimodal AI? A multimodal model is a ML (machine learning) model that is capable of processing information from different modalities, including images, videos, and text. For example, Google&#x27;s multimodal model, Gemini, can receive a photo of a plate of cookies and generate a written recipe as a response and vice ..."
+    }
+  ]
+}

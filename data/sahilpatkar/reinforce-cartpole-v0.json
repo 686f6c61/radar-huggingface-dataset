@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "sahilpatkar/Reinforce-CartPole-v0",
+  "slug": "sahilpatkar-reinforce-cartpole-v0",
+  "author": "sahilpatkar",
+  "url": "https://huggingface.co/sahilpatkar/Reinforce-CartPole-v0",
+  "created_at": "2026-08-27T21:28:18.000Z",
+  "updated_at": "2026-08-27T21:28:23.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "reinforcement-learning",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "CartPole-v1",
+    "reinforce",
+    "reinforcement-learning",
+    "custom-implementation",
+    "deep-rl-class",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 3657,
+  "storage_human": "3657 B",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "REINFORCE on CartPole-v1 - aegean.ai",
+      "url": "https://aegean.ai/aiml-common/lectures/reinforcement-learning/policy-based-algorithms/reinforce/reinforce-cartpole/reinforce-cartpole",
+      "snippet": "Runnable policy-gradient agent trained on CartPole-v1 with live Weights & Biases tracking and a learning-curve plot."
+    },
+    {
+      "title": "giobin/Reinforce-cartpole-v0 · Hugging Face",
+      "url": "https://huggingface.co/giobin/Reinforce-cartpole-v0",
+      "snippet": "giobin / Reinforce-cartpole-v0 like 0 Reinforcement Learning CartPole-v1 reinforce custom-implementation deep-rl-class Eval Results Model card FilesFiles and versions Community Edit model card Reinforce Agent playing CartPole-v1"
+    },
+    {
+      "title": "sudheerExperiments/CartPole-v0_AI - GitHub",
+      "url": "https://github.com/sudheerExperiments/CartPole-v0_AI",
+      "snippet": "Make a folder data which stores saved models. A pre-trained &#x27;477 model&#x27; is included with the project. To use the model replace the files in data folder with the files in the model file."
+    },
+    {
+      "title": "CartPole_v1.ipynb - Colab",
+      "url": "https://colab.research.google.com/github/Nicolas-Bolouri/OpenAi/blob/main/CartPole_v1.ipynb/",
+      "snippet": "For our Q-Learning model to function, we discretize the cart-pole states into finite categories. This simplification enables a manageable Q-table size, allowing the model to learn and optimize actions effectively within a discrete decision space."
+    },
+    {
+      "title": "aiartwork/Reinforce-CartPole-v1 · Hugging Face",
+      "url": "https://huggingface.co/aiartwork/Reinforce-CartPole-v1",
+      "snippet": "aiartwork / Reinforce-CartPole-v1 Copied like 0 Reinforcement LearningCartPole-v1reinforcecustom-implementationdeep-rl-classEval Results Model card FilesFiles and versions Community How to clone Edit model card Reinforce Agent playing CartPole-v1"
+    }
+  ]
+}

@@ -5,7 +5,7 @@
   "author": "rlabz",
   "url": "https://huggingface.co/rlabz/quantum_tts",
   "created_at": "2026-08-26T20:32:30.000Z",
-  "updated_at": "2026-08-26T21:58:42.000Z",
+  "updated_at": "2026-08-27T09:29:49.000Z",
   "license": "cc0-1.0",
   "license_family": "oss",
   "pipeline_tag": "text-to-speech",
@@ -37,8 +37,8 @@
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
-  "storage_bytes": 411924011,
-  "storage_human": "412 MB",
+  "storage_bytes": 800998475,
+  "storage_human": "801 MB",
   "base_model": "unsloth/orpheus-3b-0.1-ft",
   "formats": [
     "safetensors"

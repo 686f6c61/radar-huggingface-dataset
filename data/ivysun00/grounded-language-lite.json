@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "ivysun00/grounded-language-lite",
+  "slug": "ivysun00-grounded-language-lite",
+  "author": "ivysun00",
+  "url": "https://huggingface.co/ivysun00/grounded-language-lite",
+  "created_at": "2026-08-27T23:09:26.000Z",
+  "updated_at": "2026-08-27T23:09:36.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "transformer",
+    "research-notes",
+    "grounded-language",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 33088,
+  "parameters_human": "33088",
+  "storage_bytes": 132832,
+  "storage_human": "132832 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Introducing the most grounded language model in the world - Contextual AI",
+      "url": "https://contextual.ai/blog/introducing-grounded-language-model",
+      "snippet": "Today, we&#x27;re introducing our Grounded Language Model (GLM), the most grounded language model in the world. With state-of-the-art performance on FACTS (the leading groundedness benchmark) and our customer datasets, the GLM is the single best language model for RAG and agentic use cases for which minimizing hallucinations is critical."
+    },
+    {
+      "title": "GitHub - margaretmz/awesome-tensorflow-lite: An awesome list of ...",
+      "url": "https://github.com/margaretmz/awesome-tensorflow-lite",
+      "snippet": "TensorFlow Lite is a set of tools that help convert and optimize TensorFlow models to run on mobile and edge devices. It&#x27;s currently running on more than 4 billion devices! With TensorFlow 2.x, you can train a model with tf.Keras, easily convert a model to .tflite and deploy it; or you can download a pretrained TensorFlow Lite model from the model zoo. This is an awesome list of TensorFlow ..."
+    },
+    {
+      "title": "OpenPlayground | GroundedAI",
+      "url": "https://openplayground.groundedai.company/",
+      "snippet": "Web application that allows you to experiment with large language models, compare different language models from different providers, and run them on your data. The goal is to make it easier for people to start benefiting from language models in their work."
+    },
+    {
+      "title": "[2210.05359] Mind&#x27;s Eye: Grounded Language Model Reasoning through ...",
+      "url": "https://arxiv.org/abs/2210.05359",
+      "snippet": "Successful and effective communication between humans and AI relies on a shared experience of the world. By training solely on written text, current language models (LMs) miss the grounded experience of humans in the real-world -- their failure to relate language to the physical world causes knowledge to be misrepresented and obvious mistakes in their reasoning. We present Mind&#x27;s Eye, a ..."
+    },
+    {
+      "title": "LLM Leaderboard & AI Model Benchmarks — August 2026",
+      "url": "https://benchlm.ai/",
+      "snippet": "LLM Leaderboard & AI Model Benchmarks — August 2026 Compare frontier AI models by quality, cost, and context. 105 Supported and 121 Estimated models among 403 tracked LLMs — 406 benchmarks, real pricing, and runtime data in one place."
+    }
+  ]
+}

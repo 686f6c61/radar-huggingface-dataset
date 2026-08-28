@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "kayla-cruz99/3d-scene-understanding-study",
+  "slug": "kayla-cruz99-3d-scene-understanding-study",
+  "author": "kayla-cruz99",
+  "url": "https://huggingface.co/kayla-cruz99/3d-scene-understanding-study",
+  "created_at": "2026-08-27T20:57:21.000Z",
+  "updated_at": "2026-08-27T20:57:29.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "transformer",
+    "research-notes",
+    "3d-scene-understanding",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 16576,
+  "parameters_human": "16576",
+  "storage_bytes": 66784,
+  "storage_human": "66784 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "kayla-cruz99 (Kayla Cruz) - Hugging Face",
+      "url": "https://huggingface.co/kayla-cruz99/models",
+      "snippet": "Fine-tuning models for fun and profit. AI & ML interests Fine-tuning models for fun and profit."
+    },
+    {
+      "title": "Google Gemini",
+      "url": "https://gemini.google.com/",
+      "snippet": "Meet Gemini, Google&#x27;s AI assistant. Get help with writing, planning, brainstorming, and more. Experience the power of generative AI."
+    },
+    {
+      "title": "3D Scene Understanding at CVPR 2026",
+      "url": "https://scene-understanding.com/",
+      "snippet": "Overview The rapid evolution toward next-generation embodied AI has driven remarkable convergence across computer vision, graphics, and robotics, with growing emphasis on robust 3D understanding for in-the-wild and real-world applications. Recent breakthroughs have introduced powerful 3D foundational models that demonstrate unprecedented zero-shot generalization across diverse 3D ..."
+    },
+    {
+      "title": "Instagram",
+      "url": "https://www.instagram.com/?hl=en",
+      "snippet": "Create an account or log in to Instagram - Share what you&#x27;re into with the people who get you."
+    },
+    {
+      "title": "kayla-cruz99/paper_006352648_self_supervised · Hugging Face",
+      "url": "https://huggingface.co/kayla-cruz99/paper_006352648_self_supervised",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    }
+  ]
+}

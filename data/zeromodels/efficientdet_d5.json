@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "zeromodels/efficientdet_d5",
+  "slug": "zeromodels-efficientdet_d5",
+  "author": "zeromodels",
+  "url": "https://huggingface.co/zeromodels/efficientdet_d5",
+  "created_at": "2026-08-27T21:31:04.000Z",
+  "updated_at": "2026-08-27T21:31:06.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "object-detection",
+  "library": "zeromodels",
+  "languages": [],
+  "tags": [
+    "zeromodels",
+    "keras",
+    "efficientdet",
+    "object-detection",
+    "arxiv:1911.09070",
+    "pytorch",
+    "jax",
+    "tf",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 138153712,
+  "storage_human": "138 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "efficientdet.ipynb - Colab",
+      "url": "https://colab.research.google.com/github/NVIDIA-AI-IOT/nvidia-tao/blob/main/tensorflow/efficientdet/efficientdet.ipynb",
+      "snippet": "Transfer learning is the process of transferring learned features from one application to another. It is a commonly used training technique where you use a model trained on one task and re-train to use it on a different task. Train Adapt Optimize (TAO) Toolkit is a simple and easy-to-use Python based AI toolkit for taking purpose-built AI models and customizing them with users&#x27; own data."
+    },
+    {
+      "title": "automl/efficientdet at master · google/automl · GitHub",
+      "url": "https://github.com/google/automl/tree/master/efficientdet",
+      "snippet": "Our model family starts from EfficientDet-D0, which has comparable accuracy as YOLOv3. Then we scale up this baseline model using our compound scaling method to obtain a list of detection models EfficientDet-D1 to D6, with different trade-offs between accuracy and model complexity. ** For simplicity, we compare the whole detectors here."
+    },
+    {
+      "title": "GitHub - rwightman/efficientdet-pytorch: A PyTorch impl of EfficientDet ...",
+      "url": "https://github.com/rwightman/efficientdet-pytorch",
+      "snippet": "A PyTorch implementation of EfficientDet. It is based on the official Tensorflow implementation by Mingxing Tan and the Google Brain team paper by Mingxing Tan, Ruoming Pang, Quoc V. Le EfficientDet: Scalable and Efficient Object Detection There are other PyTorch implementations. Either their approach didn&#x27;t fit my aim to correctly reproduce the Tensorflow models (but with a PyTorch feel and ..."
+    },
+    {
+      "title": "tutorial.ipynb - Colab",
+      "url": "https://colab.research.google.com/github/google/automl/blob/master/efficientdet/tutorial.ipynb",
+      "snippet": "There are two types of latency: network latency and end-to-end latency. network latency: from the first conv op to the network class and box prediction. end-to-end latency: from image preprocessing, network, to the final postprocessing to generate a annotated new image."
+    },
+    {
+      "title": "EfficientDet D5 pricing & specs — Google | CloudPrice",
+      "url": "https://cloudprice.net/models/google-efficientdet-d5",
+      "snippet": "EfficientDet D5 is an AI model by Google. Compare LLM pricing, specs, benchmarks, and costs across providers."
+    }
+  ]
+}

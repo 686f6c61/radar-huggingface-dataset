@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "schmidt2842/paper-prompt-engineering",
+  "slug": "schmidt2842-paper-prompt-engineering",
+  "author": "schmidt2842",
+  "url": "https://huggingface.co/schmidt2842/paper-prompt-engineering",
+  "created_at": "2026-08-27T19:14:56.000Z",
+  "updated_at": "2026-08-27T19:15:04.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "transformer",
+    "research-notes",
+    "prompt-engineering",
+    "license:cc-by-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 49600,
+  "parameters_human": "49600",
+  "storage_bytes": 198880,
+  "storage_human": "198880 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Papers | Prompt Engineering Guide",
+      "url": "https://www.promptingguide.ai/papers",
+      "snippet": "Papers The following are the latest papers (sorted by release date) on prompt engineering for large language models (LLMs). We update the list of papers on a daily/weekly basis. Overviews The Prompt Report: A Systematic Survey of Prompting Techniques (opens in a new tab) (June 2024) Prompt Design and Engineering: Introduction and Advanced Methods (opens in a new tab) (January 2024) A Survey on ..."
+    },
+    {
+      "title": "Prompt Engineering Guide | Prompt Engineering Guide",
+      "url": "https://www.promptingguide.ai/",
+      "snippet": "Motivated by the high interest in developing with LLMs, we have created this new prompt engineering guide that contains all the latest papers, advanced prompting techniques, learning guides, model-specific prompting guides, lectures, references, new LLM capabilities, and tools related to prompt engineering."
+    },
+    {
+      "title": "GitHub - promptslab/Awesome-Prompt-Engineering: This repository ...",
+      "url": "https://github.com/promptslab/Awesome-Prompt-Engineering",
+      "snippet": "New to prompt engineering? Follow this path: Learn the basics → ChatGPT Prompt Engineering for Developers (free, ~90 min) Read the guide → Prompt Engineering Guide by DAIR.AI (open-source, comprehensive) Study provider docs → OpenAI Prompt Engineering Guide · Anthropic Prompt Engineering Guide Understand where the field is heading → Anthropic: Effective Context Engineering for AI ..."
+    },
+    {
+      "title": "[2302.11382] A Prompt Pattern Catalog to Enhance Prompt Engineering ...",
+      "url": "https://arxiv.org/abs/2302.11382",
+      "snippet": "Abstract page for arXiv paper 2302.11382: A Prompt Pattern Catalog to Enhance Prompt Engineering with ChatGPT"
+    },
+    {
+      "title": "[2406.06608] The Prompt Report: A Systematic Survey of Prompt ...",
+      "url": "https://arxiv.org/abs/2406.06608",
+      "snippet": "Generative Artificial Intelligence (GenAI) systems are increasingly being deployed across diverse industries and research domains. Developers and end-users interact with these systems through the use of prompting and prompt engineering. Although prompt engineering is a widely adopted and extensively researched area, it suffers from conflicting terminology and a fragmented ontological ..."
+    }
+  ]
+}

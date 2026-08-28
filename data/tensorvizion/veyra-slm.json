@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "TensorVizion/Veyra-SLM",
+  "slug": "tensorvizion-veyra-slm",
+  "author": "TensorVizion",
+  "url": "https://huggingface.co/TensorVizion/Veyra-SLM",
+  "created_at": "2026-08-27T23:20:58.000Z",
+  "updated_at": "2026-08-27T23:40:39.000Z",
+  "license": "creativeml-openrail-m",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:creativeml-openrail-m",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 686812907,
+  "storage_human": "687 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Veyra — Two AIs. One window.",
+      "url": "https://veyra.sh/",
+      "snippet": "Two AIs. One window. A tiling terminal manager for AI coding agents. Run Claude Code, Codex CLI, and shells side-by-side in tiled panes. Pro cuts your token usage by roughly 30-50% with output trimming, smart caching, and six task modes."
+    },
+    {
+      "title": "Veyra - a veyra-ai Collection - Hugging Face",
+      "url": "https://huggingface.co/collections/veyra-ai/veyra",
+      "snippet": "The first version of Veyra, these models are meant for local CPU inference."
+    },
+    {
+      "title": "veyra-ai (Veyra AI) - Hugging Face",
+      "url": "https://huggingface.co/veyra-ai",
+      "snippet": "Tiny English language models, fast CPU inference, function calling, tool use, Python-focused small models, distillation, RLVR, and local AI."
+    },
+    {
+      "title": "PDF Veyra: A Post-Super-Intelligence Interplanetary LLM System",
+      "url": "https://zuup.org/whitepapers/veyra.pdf",
+      "snippet": "Abstract—Veyra is a vertically integrated large language model (LLM) platform designed for post-super-intelligence (post-SI) operation in multi-planetary deployment contexts. This paper presents the system architecture addressing fundamental limi-tations of current LLM systems architected for single-planet, human-timescale, culturally homogeneous deployment. We detail Veyra&#x27;s five-layer ..."
+    },
+    {
+      "title": "Veyra — Prediction Intelligence Layer",
+      "url": "https://www.veyraintel.live/",
+      "snippet": "The Intelligence Layer for Prediction Markets Veyra turns fragmented signals — news, social sentiment, on-chain flows and market odds — into ranked, high-conviction probability scores. The Bloomberg Terminal for Polymarket, Kalshi and beyond."
+    }
+  ]
+}

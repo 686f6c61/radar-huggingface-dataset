@@ -5,7 +5,7 @@
   "author": "User-2468",
   "url": "https://huggingface.co/User-2468/mini-unet-colorizer",
   "created_at": "2026-08-24T03:50:08.000Z",
-  "updated_at": "2026-08-27T02:56:24.000Z",
+  "updated_at": "2026-08-27T21:20:21.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "image-to-image",
@@ -25,8 +25,8 @@
   "trending_score": 0,
   "parameters": 3655348,
   "parameters_human": "3.7M",
-  "storage_bytes": 150841800,
-  "storage_human": "151 MB",
+  "storage_bytes": 191257930,
+  "storage_human": "191 MB",
   "base_model": null,
   "formats": [
     "safetensors"

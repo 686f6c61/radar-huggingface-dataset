@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "sacadasjsjsj/dsd",
+  "slug": "sacadasjsjsj-dsd",
+  "author": "sacadasjsjsj",
+  "url": "https://huggingface.co/sacadasjsjsj/dsd",
+  "created_at": "2026-08-27T21:56:56.000Z",
+  "updated_at": "2026-08-27T21:56:56.000Z",
+  "license": "afl-3.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:afl-3.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "dsd_model | PromptLayer Models",
+      "url": "https://www.promptlayer.com/models/dsdmodel/",
+      "snippet": "The DSD (Diffusion Self-Distillation) model is a groundbreaking AI system designed for personalized image generation from a single reference image. Fine-tuned from the FLUX.1-dev architecture, it implements a novel self-distillation approach for zero-shot customization of image generation tasks."
+    },
+    {
+      "title": "A General Model for Deepfake Speech Detection:",
+      "url": "https://arxiv.org/html/2603.27557v2",
+      "snippet": "Abstract In this paper, we analyze two main factors of Bonafide Resource (BR) or AI-based Generator (AG) which affect the performance and the generality of a Deepfake Speech Detection (DSD) model. To this end, we first propose a deep-learning based model, referred to as the baseline."
+    },
+    {
+      "title": "README.md · primecai/dsd_model at main - Hugging Face",
+      "url": "https://huggingface.co/primecai/dsd_model/blob/main/README.md",
+      "snippet": "The model is fine-tuned from the FLUX.1-dev model as described in our CVPR&#x27;2025 paper titled \"Diffusion Self-Distillation for Zero-Shot Customized Image Generation\"."
+    },
+    {
+      "title": "A General Model for Deepfake Speech Detection: Diverse Bonafide ...",
+      "url": "https://arxiv.org/pdf/2603.27557v1",
+      "snippet": "Abstract—In this paper, we analyze two main factors of Bonafide Resource (BR) or AI-based Generator (AG) which affect the performance and the generality of a Deepfake Speech Detection (DSD) model. To this end, we first propose a deep-learning based model, referred to as the baseline. Then, we conducted experiments on the baseline by which we indicate how Bonafide Resource (BR) and AI-based ..."
+    },
+    {
+      "title": "primecai/dsd_model · Hugging Face",
+      "url": "https://huggingface.co/primecai/dsd_model",
+      "snippet": "The model is fine-tuned from the FLUX.1-dev model as described in our CVPR&#x27;2025 paper titled \"Diffusion Self-Distillation for Zero-Shot Customized Image Generation\"."
+    }
+  ]
+}

@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "thrivepath/Affine-5DczYgY8r1-genesis",
+  "slug": "thrivepath-affine-5dczygy8r1-genesis",
+  "author": "thrivepath",
+  "url": "https://huggingface.co/thrivepath/Affine-5DczYgY8r1-genesis",
+  "created_at": "2026-08-28T00:37:02.000Z",
+  "updated_at": "2026-08-28T00:47:32.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_5_moe",
+    "image-text-to-text",
+    "conversational",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 35107181936,
+  "parameters_human": "35.11B",
+  "storage_bytes": 70234485269,
+  "storage_human": "70.2 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "dha.mil",
+      "url": "https://dha.mil/For-Beneficiaries/MHS-GENESIS",
+      "snippet": "Please enable JavaScript to view the page content. Your support ID is: 10428180599368266260."
+    },
+    {
+      "title": "ThrivePath Portal",
+      "url": "https://portal.thrivepathmhs.com/",
+      "snippet": "Intake, referrals, and credentialing ThrivePath Portal Calm, compliant behavioral health operations for your organization."
+    },
+    {
+      "title": "How to Register and Log In Using Single Sign‑On (SSO)",
+      "url": "https://support.thrivepass.com/support/solutions/articles/13000076202-how-do-i-register-and-log-in-to-my-account-using-single-sign-on-",
+      "snippet": "Some employers offer Single Sign-On (SSO), which allows you to access your ThrivePass account using your existing company credentials. This provides a faster and more secure login experience without needing to manage a separate password. ThrivePass supports SSO through providers such as Okta, Google, Microsoft, and other third-party platforms. Availability depends on your employer, and you ..."
+    },
+    {
+      "title": "Log In - ThrivePass+",
+      "url": "https://nexus.thrivepass.com/participant",
+      "snippet": "By using ThrivePass, you agree to our Privacy Policy and Terms of Service."
+    },
+    {
+      "title": "Thrive Client Portal",
+      "url": "https://portal.thrivenextgen.com/login?post_login_redirect_url=/",
+      "snippet": "Other Sign-In Methods Having trouble logging in?"
+    }
+  ]
+}

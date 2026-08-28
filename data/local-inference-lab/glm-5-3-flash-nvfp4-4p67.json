@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "local-inference-lab/GLM-5.3-Flash-NVFP4-4p67",
+  "slug": "local-inference-lab-glm-5-3-flash-nvfp4-4p67",
+  "author": "local-inference-lab",
+  "url": "https://huggingface.co/local-inference-lab/GLM-5.3-Flash-NVFP4-4p67",
+  "created_at": "2026-08-27T23:59:49.000Z",
+  "updated_at": "2026-08-28T01:58:00.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "tags": [
+    "safetensors",
+    "glm5_next",
+    "8-bit",
+    "modelopt",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 165496249182,
+  "parameters_human": "165.50B",
+  "storage_bytes": 187685331500,
+  "storage_human": "187.7 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "local-inference-lab/GLM-5.3-Flash-NVFP4 · Hugging Face",
+      "url": "https://huggingface.co/local-inference-lab/GLM-5.3-Flash-NVFP4",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Run GLM-5.3-Flash Locally | Atomic Chat",
+      "url": "https://atomic.chat/models/glm-5-3-flash",
+      "snippet": "GLM-5.3-Flash is an open-weight Mixture-of-Experts model from Z.ai, published on 2026-08-25 under the MIT license. Z.ai describes it as the first natively multimodal model in the GLM-5 series, with 320B total parameters and 18B active per token; the repo metadata reports about 321B across all weights."
+    },
+    {
+      "title": "Run GLM-5.3-Flash Locally: RAM, GGUF Size, and Speed",
+      "url": "https://www.modemguides.com/blogs/ai-infrastructure/run-glm-5-3-flash-locally-hardware-reality-check",
+      "snippet": "Can you run GLM-5.3-Flash locally? GGUF sizes for the 320B-A18B MIT model, the 128GB line, and day-one runtime status. Find your tier before you buy."
+    },
+    {
+      "title": "GLM-5.3-Flash Launch — Ox Alpha Was Zhipu (MIT) - explainx.ai",
+      "url": "https://www.explainx.ai/blog/glm-5-3-flash-ox-alpha-official-launch-august-2026",
+      "snippet": "Z.ai&#x27;s launch blog is explicit about the strategy: test anonymously on OpenCode and OpenRouter, become \"the most popular model of the week,\" then ship under the GLM brand with open weights. Hunter Alpha and Healer Alpha → MiMo was the same playbook from a different lab. What changes for builders now: Route to z-ai/glm-5.3-flash (or Hugging Face locally) instead of guessing about stealth/ox ..."
+    },
+    {
+      "title": "GLM-5.3-Flash on a 2x DGX Spark cluster - GitHub",
+      "url": "https://github.com/barrydeen/glm53-flash-dgx-spark",
+      "snippet": "These are the failure modes that came up building an equivalent recipe for a different NVFP4 MoE model on the same GB10 hardware -- not confirmed against GLM-5.3-Flash specifically, but worth checking first:"
+    }
+  ]
+}

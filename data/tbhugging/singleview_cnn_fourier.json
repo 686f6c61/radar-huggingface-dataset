@@ -5,10 +5,10 @@
   "author": "tbhugging",
   "url": "https://huggingface.co/tbhugging/singleview_cnn_fourier",
   "created_at": "2026-08-26T18:24:41.000Z",
-  "updated_at": "2026-08-26T20:27:45.000Z",
+  "updated_at": "2026-08-27T06:22:21.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
-  "pipeline_tag": null,
+  "pipeline_tag": "image-feature-extraction",
   "library": "pytorch",
   "languages": [],
   "tags": [
@@ -18,8 +18,10 @@
     "particle-localization",
     "cnn",
     "fourier-pooling",
+    "image-feature-extraction",
     "dataset:tbhugging/gummybear-tomography",
     "license:apache-2.0",
+    "model-index",
     "region:us"
   ],
   "likes": 0,

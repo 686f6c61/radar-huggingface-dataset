@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "VIBECODER999/aiden0.1-qwen-coder-ui-ux",
+  "slug": "vibecoder999-aiden0-1-qwen-coder-ui-ux",
+  "author": "VIBECODER999",
+  "url": "https://huggingface.co/VIBECODER999/aiden0.1-qwen-coder-ui-ux",
+  "created_at": "2026-08-27T21:54:27.000Z",
+  "updated_at": "2026-08-27T21:54:39.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "text-generation-inference",
+    "unsloth",
+    "qwen2",
+    "trl",
+    "en",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 334436524,
+  "storage_human": "334 MB",
+  "base_model": "unsloth/qwen2.5-coder-7b-bnb-4bit",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Qwen Coder",
+      "url": "https://coder.qwen.ai/",
+      "snippet": "Qwen Coder is a coding agent that runs in a secure cloud sandbox to write features, fix bugs, and generate pull requests, empowering humans to quickly build exciting things in the digital world."
+    },
+    {
+      "title": "GitHub - QwenLM/Qwen3-Coder: Qwen3-Coder is the code version of Qwen3 ...",
+      "url": "https://github.com/QwenLM/Qwen3-Coder",
+      "snippet": "Qwen3-Coder is the code version of Qwen3, the large language model series developed by Qwen team. - QwenLM/Qwen3-Coder"
+    },
+    {
+      "title": "GitHub - cruzyjapan/Qwen-CLI-UI: About A responsive web-based UI that ...",
+      "url": "https://github.com/cruzyjapan/Qwen-CLI-UI",
+      "snippet": "About A responsive web-based UI that provides an intuitive interface for Qwen CLI, enabling AI-assisted coding from any device. Features include interactive chat, integrated terminal, file explorer..."
+    },
+    {
+      "title": "Building AI Products with Qwen",
+      "url": "https://qwen.ai/apiplatform",
+      "snippet": "Building AI Products with Qwen Built with Qwen via OpenAI-compatible API. Power apps for chat, Q&A, creative writing, translation, summarization, and coding."
+    },
+    {
+      "title": "Alibaba Cloud Model Studio",
+      "url": "https://modelstudio.alibabacloud.com/",
+      "snippet": "Diverse Model Ecosystem Easily experience and quickly access Alibaba Cloud&#x27;s latest foundational models (FM), including Qwen-Max, Qwen-Plus, Qwen-Turbo, Qwen-VL, and the Wan series."
+    }
+  ]
+}

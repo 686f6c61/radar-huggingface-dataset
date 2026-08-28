@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "ryanjin333/lehome-groot-n17-models-public",
+  "slug": "ryanjin333-lehome-groot-n17-models-public",
+  "author": "ryanjin333",
+  "url": "https://huggingface.co/ryanjin333/lehome-groot-n17-models-public",
+  "created_at": "2026-08-27T05:01:36.000Z",
+  "updated_at": "2026-08-28T01:04:36.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 12576206737,
+  "storage_human": "12.6 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ryanjin333/lehome-groot-n17-models-public · Hugging Face",
+      "url": "https://huggingface.co/ryanjin333/lehome-groot-n17-models-public",
+      "snippet": "LeHome GR00T N17 public checkpoints Derived checkpoints for the balanced-1000 success-replay and hard-state 90/10 arms. Retrieve a checkpoint only through the immutable revision and checksum recorded in the rollout repository artifact index. Downloads last month -"
+    },
+    {
+      "title": "ryanjin333 (Ryan Jin) - Hugging Face",
+      "url": "https://huggingface.co/ryanjin333",
+      "snippet": "Recent Activity updated a modelabout 9 hours ago ryanjin333/lehome-groot-n17-models-public updated a datasetabout 9 hours ago ryanjin333/lehome-groot-n17-rollouts-public published a modelabout 9 hours ago ryanjin333/lehome-groot-n17-models-public View all activity"
+    },
+    {
+      "title": "lerobot-flashrt/flash_rt/models/groot_n17/pipeline_rtx_fp16.py at main ...",
+      "url": "https://github.com/videron-ai/lerobot-flashrt/blob/main/flash_rt/models/groot_n17/pipeline_rtx_fp16.py",
+      "snippet": "Contribute to videron-ai/lerobot-flashrt development by creating an account on GitHub."
+    },
+    {
+      "title": "vla-evaluation-harness-public/configs/model_servers/lerobot/groot_n17 ...",
+      "url": "https://github.com/worv-ai/vla-evaluation-harness-public/blob/main/configs/model_servers/lerobot/groot_n17.yaml",
+      "snippet": "One framework to evaluate any VLA model on any robot simulation benchmark. - worv-ai/vla-evaluation-harness-public"
+    },
+    {
+      "title": "LeHome: A Simulation Environment for Deformable Object Manipulation in ...",
+      "url": "https://www.aimodels.fyi/papers/arxiv/lehome-simulation-environment-deformable-object-manipulation-household",
+      "snippet": "LeHome is a household simulation environment designed specifically for deformable object manipulation—garments, food, liquids, and other soft materials that shift shape under force and resist accurate modeling in existing simulators."
+    }
+  ]
+}

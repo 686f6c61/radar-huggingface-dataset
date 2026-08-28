@@ -1,0 +1,81 @@
+{
+  "schema": 1,
+  "id": "SubMaroon/Kanimus-26B-A4B-FFT-heretic",
+  "slug": "submaroon-kanimus-26b-a4b-fft-heretic",
+  "author": "SubMaroon",
+  "url": "https://huggingface.co/SubMaroon/Kanimus-26B-A4B-FFT-heretic",
+  "created_at": "2026-08-27T22:17:58.000Z",
+  "updated_at": "2026-08-28T00:23:37.000Z",
+  "license": "gemma",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [
+    "en",
+    "ru"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gemma4",
+    "image-text-to-text",
+    "mergekit",
+    "task_arithmetic",
+    "gemma",
+    "moe",
+    "roleplay",
+    "russian",
+    "english",
+    "conversational",
+    "en",
+    "ru",
+    "base_model:Vortex5/Gemma-4-26B-A4B-Animus-V14.1-FFT-heretic",
+    "base_model:finetune:Vortex5/Gemma-4-26B-A4B-Animus-V14.1-FFT-heretic",
+    "license:gemma",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 25805936206,
+  "parameters_human": "25.81B",
+  "storage_bytes": 51644179048,
+  "storage_human": "51.6 GB",
+  "base_model": "Vortex5/Gemma-4-26B-A4B-Animus-V14.1-FFT-heretic",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Vortex5/Gemma-4-26B-A4B-Animus-V14.1-FFT-heretic at main",
+      "url": "https://huggingface.co/Vortex5/Gemma-4-26B-A4B-Animus-V14.1-FFT-heretic/tree/main",
+      "snippet": "Vortex5 / Gemma-4-26B-A4B-Animus-V14.1-FFT-heretic like 3 Safetensors gemma4 finetune roleplay chat wings-of-fire nsfw Not-For-All-Audiences heretic uncensored decensored abliterated ara License:apache-2.0 Model card FilesFiles and versions xet Community Copy to bucket new"
+    },
+    {
+      "title": "Gemma-4-26B-A4B-Animus-V14.1-FFT-heretic - Hugging Face",
+      "url": "https://huggingface.co/Vortex5/Gemma-4-26B-A4B-Animus-V14.1-FFT-heretic",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Best Uncensored Local LLMs by VRAM Tier (2026) | InsiderLLM",
+      "url": "https://insiderllm.com/guides/best-uncensored-local-llms/",
+      "snippet": "For most 16GB rigs the choice is between Gemma 4 26B-A4B Heretic (MoE, faster, vision-capable) and Dolphin 3.0 Mistral 24B (dense, the established uncensored all-rounder)."
+    },
+    {
+      "title": "Gemma 4 26b A4b It Heretic - GGUF Model - local-ai-zone.github.io",
+      "url": "https://local-ai-zone.github.io/models/gemma-4-26b-a4b-it-heretic.html",
+      "snippet": "Download Gemma 4 26b A4b It Heretic GGUF model. 14.5 GB, 14,977 downloads, 50 likes."
+    },
+    {
+      "title": "gemma-4-26B-A4B-it-uncensored-heretic huggingface.co api & llmfan46 ...",
+      "url": "https://www.toolify.ai/ai-model/llmfan46-gemma-4-26b-a4b-it-uncensored-heretic",
+      "snippet": "gemma-4-26B-A4B-it-uncensored-heretic is an open source model from GitHub that offers a free installation service, and any user can find gemma-4-26B-A4B-it-uncensored-heretic on GitHub to install."
+    }
+  ]
+}

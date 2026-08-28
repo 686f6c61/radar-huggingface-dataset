@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "Snsjsjsjsn/grok-2",
+  "slug": "snsjsjsjsn-grok-2",
+  "author": "Snsjsjsjsn",
+  "url": "https://huggingface.co/Snsjsjsjsn/grok-2",
+  "created_at": "2026-08-27T23:46:53.000Z",
+  "updated_at": "2026-08-27T23:46:54.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "git",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 539033204469,
+  "storage_human": "539.0 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Grok-2 — AI Mode",
+      "url": "https://aimode.co/model/grok-2/",
+      "snippet": "Introducing Grok-2: xAI&#x27;s latest AI model excels in chat, coding, and image generation on X. Discover its advanced features and real-time capabilities."
+    },
+    {
+      "title": "Grok-2 — Grokipedia",
+      "url": "https://grokipedia.com/page/Grok-2",
+      "snippet": "Grok-2 Grok-2 is a multimodal large language model developed by xAI as a successor to prior Grok iterations, released in beta on August 13, 2024, with variants including the full Grok-2 and the lighter Grok-2 mini, emphasizing advancements in chat interactions, coding, reasoning, and vision processing."
+    },
+    {
+      "title": "Grok-2 - Model Tracker",
+      "url": "https://www.model2.live/model/grok-2",
+      "snippet": "**Grok-2 Overview** Grok-2 is xAI&#x27;s latest AI model designed to compete with leading AI systems like GPT-4 and Claude 3.5 [1]. Released in August 2024, it represents a significant advancement from its predecessor Grok-1.5, featuring frontier capabilities in chat, coding, and reasoning [5]. The model is available to X Premium and Premium+ subscribers through the Grok tab in the X app [5]. **Key ..."
+    },
+    {
+      "title": "Grok-2 AI Model: Features, Capabilities, and Use Cases | xAI ...",
+      "url": "https://exploreai.tools/ai-models/grok-2",
+      "snippet": "Explore Grok-2, xAI&#x27;s open-source large language model for chat and reasoning. Learn about its capabilities, applications, and how to get started with this…"
+    },
+    {
+      "title": "Grok 2 by xAI | Available on Krater",
+      "url": "https://krater.ai/models/grok-2",
+      "snippet": "Grok 2 on Krater.ai xAI&#x27;s second-generation model offering strong conversational abilities with Grok&#x27;s signature direct style."
+    }
+  ]
+}

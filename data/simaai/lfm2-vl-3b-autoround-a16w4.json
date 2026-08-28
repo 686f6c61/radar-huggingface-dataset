@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "simaai/LFM2-VL-3B-Autoround-a16w4",
+  "slug": "simaai-lfm2-vl-3b-autoround-a16w4",
+  "author": "simaai",
+  "url": "https://huggingface.co/simaai/LFM2-VL-3B-Autoround-a16w4",
+  "created_at": "2026-01-10T13:52:00.000Z",
+  "updated_at": "2026-08-28T01:01:14.000Z",
+  "license": "lfm1.0",
+  "license_family": "unknown",
+  "pipeline_tag": "image-text-to-text",
+  "library": "llima",
+  "languages": [],
+  "tags": [
+    "llima",
+    "vision",
+    "image-text-to-text",
+    "generative_ai",
+    "embedded",
+    "sima",
+    "liquidai",
+    "lfm2",
+    "base_model:LiquidAI/LFM2-VL-3B",
+    "base_model:finetune:LiquidAI/LFM2-VL-3B",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 31861442368,
+  "storage_human": "31.9 GB",
+  "base_model": "LiquidAI/LFM2-VL-3B",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "simaai/LFM2-VL-3B-a16w4 · Hugging Face",
+      "url": "https://huggingface.co/simaai/LFM2-VL-3B-a16w4",
+      "snippet": "This repository contains the LFM2-VL-3B model, optimized and compiled for the SiMa.ai Modalix platform. Model Architecture: LFM2-VL (3B parameters) Quantization: Hybrid Prompt Processing: A16W8 (16-bit activations, 8-bit weights) Token Generation: A16W4 (16-bit activations, 4-bit weights) Maximum context length: 2048 Input Resolution: 512x512 ..."
+    },
+    {
+      "title": "simaai/LFM2-VL-3B-Autoround-Safetensors · Hugging Face",
+      "url": "https://huggingface.co/simaai/LFM2-VL-3B-Autoround-Safetensors",
+      "snippet": "This is a post-training quantized version of LiquidAI/LFM2-VL-3B, prepared as a Hugging Face checkpoint for LLiMa compilation and Sima.ai deployment. The source model&#x27;s license and use restrictions continue to apply."
+    },
+    {
+      "title": "Home - SiMa.ai: Scaling Physical AI",
+      "url": "https://sima.ai/",
+      "snippet": "SiMa.ai scaling physical ai across across robotics, automotive, industrial automation, aerospace & defense, smart vision, and healthcare."
+    },
+    {
+      "title": "LFM2-VL: Efficient Vision-Language Models | Blog | Liquid AI",
+      "url": "https://www.liquid.ai/blog/lfm2-vl-efficient-vision-language-models",
+      "snippet": "Today we release LFM2-VL, our first vision-language models, built for low-latency, device-aware text and image use."
+    },
+    {
+      "title": "LFM2-VL-3B: A New Efficient Vision-Language for the Edge",
+      "url": "https://www.liquid.ai/blog/lfm2-vl-3b-a-new-efficient-vision-language-for-the-edge",
+      "snippet": "We&#x27;re excited to release LFM2-VL-3B, the newest and most capable addition to our family of vision LFMs (450M and 1.6B). Built on the LFM2-2.6B backbone, this 3B parameter model targets applications that require more accuracy while maintaining the speed advantage of the LFM2 architecture. It is available today on LEAP and Hugging Face."
+    }
+  ]
+}

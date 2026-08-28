@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "cdomotor-g/game1v1",
+  "slug": "cdomotor-g-game1v1",
+  "author": "cdomotor-g",
+  "url": "https://huggingface.co/cdomotor-g/game1v1",
+  "created_at": "2026-08-27T23:51:15.000Z",
+  "updated_at": "2026-08-27T23:51:15.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - cdomotor-g/game1",
+      "url": "https://github.com/cdomotor-g/game1/tree/main",
+      "snippet": "Contribute to cdomotor-g/game1 development by creating an account on GitHub."
+    },
+    {
+      "title": "AI Aimbot Models & YOLO Detection Models | MossyModels",
+      "url": "https://mossymodels.com/",
+      "snippet": "AI Aimbot Models & YOLO Detection Models Browse 661+ free YOLO and ONNX detection models across 43+ games. Community library for Fortnite, Valorant, Warzone, Apex Legends, and more. MossyModels is a community library of YOLO and ONNX detection models for first-person shooters."
+    },
+    {
+      "title": "game1/README.md at main · cdomotor-g/game1 · GitHub",
+      "url": "https://github.com/cdomotor-g/game1/blob/main/README.md",
+      "snippet": "Contribute to cdomotor-g/game1 development by creating an account on GitHub."
+    },
+    {
+      "title": "lmarcade",
+      "url": "https://www.lmarcade.com/",
+      "snippet": "Each model builds games within several popular agentic harnesses. We evaluate both the models and the harnesses, since a model&#x27;s tools, loop, and scaffolding can shape results as much as the model itself. Rather than force every model into one setup, we let each model compete across many. When you vote, you play two games built from the same prompt, one after the other, then pick the better ..."
+    },
+    {
+      "title": "Free AI 3D Model Generator - MeshGPT",
+      "url": "https://meshgpt.io/",
+      "snippet": "Create stunning 3D models from text or images instantly with our free AI 3d model generator. Transform your ideas into production-ready 3D assets with MeshGPT."
+    }
+  ]
+}

@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "RKB109/hybrid-semantic-search-20260827-model",
+  "slug": "rkb109-hybrid-semantic-search-20260827-model",
+  "author": "RKB109",
+  "url": "https://huggingface.co/RKB109/hybrid-semantic-search-20260827-model",
+  "created_at": "2026-08-27T22:58:16.000Z",
+  "updated_at": "2026-08-27T22:58:16.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "sentence-similarity",
+  "library": "custom",
+  "languages": [],
+  "tags": [
+    "custom",
+    "synthetic-data",
+    "transparent-baseline",
+    "semantic-search",
+    "sentence-similarity",
+    "feature-extraction",
+    "text-ranking",
+    "question-answering",
+    "dataset:RKB109/hybrid-semantic-search-20260827-dataset",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "RKB109/hybrid-semantic-search-20260728-dataset - Hugging Face",
+      "url": "https://huggingface.co/datasets/RKB109/hybrid-semantic-search-20260728-dataset",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "RKB109/hybrid-semantic-search-20260728-model at main - Hugging Face",
+      "url": "https://huggingface.co/RKB109/hybrid-semantic-search-20260728-model/tree/main",
+      "snippet": "transparent-baseline semantic-search feature-extraction text-ranking question-answering License:mit Model card FilesFiles and versions xet Community Copy to bucket new main hybrid-semantic-search-20260728-model 13.2 kB Ctrl+K Ctrl+K 1 contributor History:2 commits RKB109 Publish artifacts for hybrid-semantic-search-20260728 0e00f69 verified24 ..."
+    },
+    {
+      "title": "GitHub - srinivas-gampasani/Hybrid-Semantic-Search-Engine",
+      "url": "https://github.com/srinivas-gampasani/Hybrid-Semantic-Search-Engine",
+      "snippet": "Hybrid Semantic Search Engine Srinivas Gampasani — AI & ML EngineerDense Retrieval · BM25 · RRF Fusion · Cross-Encoder Reranking · A/B Testing"
+    },
+    {
+      "title": "Hybrid Semantic Search: Unveiling User Intent Beyond Keywords",
+      "url": "https://arxiv.org/abs/2408.09236",
+      "snippet": "This paper addresses the limitations of traditional keyword-based search in understanding user intent and introduces a novel hybrid search approach that leverages the strengths of non-semantic search engines, Large Language Models (LLMs), and embedding models. The proposed system integrates keyword matching, semantic vector embeddings, and LLM-generated structured queries to deliver highly ..."
+    },
+    {
+      "title": "Models - ONNX Runtime",
+      "url": "https://onnxruntime.ai/models",
+      "snippet": "ONNX Models - find ONNX models for natural language processing, computer vision, and more."
+    }
+  ]
+}

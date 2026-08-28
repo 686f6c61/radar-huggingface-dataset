@@ -5,7 +5,7 @@
   "author": "infosave",
   "url": "https://huggingface.co/infosave/Granite-4.2-cmf",
   "created_at": "2026-08-27T06:43:20.000Z",
-  "updated_at": "2026-08-27T06:59:40.000Z",
+  "updated_at": "2026-08-27T09:40:06.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-generation",

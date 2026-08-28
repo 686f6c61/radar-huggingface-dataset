@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "zeromodels/efficientdet_d3",
+  "slug": "zeromodels-efficientdet_d3",
+  "author": "zeromodels",
+  "url": "https://huggingface.co/zeromodels/efficientdet_d3",
+  "created_at": "2026-08-27T21:30:31.000Z",
+  "updated_at": "2026-08-27T21:30:33.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "object-detection",
+  "library": "zeromodels",
+  "languages": [],
+  "tags": [
+    "zeromodels",
+    "keras",
+    "efficientdet",
+    "object-detection",
+    "arxiv:1911.09070",
+    "pytorch",
+    "jax",
+    "tf",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 50495384,
+  "storage_human": "50 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "automl/efficientdet/README.md at master · google/automl",
+      "url": "https://github.com/google/automl/blob/master/efficientdet/README.md",
+      "snippet": "Our model family starts from EfficientDet-D0, which has comparable accuracy as YOLOv3. Then we scale up this baseline model using our compound scaling method to obtain a list of detection models EfficientDet-D1 to D6, with different trade-offs between accuracy and model complexity. ** For simplicity, we compare the whole detectors here."
+    },
+    {
+      "title": "automl/efficientdet at master · google/automl · GitHub",
+      "url": "https://github.com/google/automl/tree/master/efficientdet",
+      "snippet": "Our model family starts from EfficientDet-D0, which has comparable accuracy as YOLOv3. Then we scale up this baseline model using our compound scaling method to obtain a list of detection models EfficientDet-D1 to D6, with different trade-offs between accuracy and model complexity. ** For simplicity, we compare the whole detectors here."
+    },
+    {
+      "title": "Feasibility of EfficientDet-D3 for Accurate and Efficient Void ... - MDPI",
+      "url": "https://www.mdpi.com/2412-3811/10/6/140",
+      "snippet": "The EfficientDet-D3 model was trained using a learning rate of 0.0005 and a batch size of 16, ensuring stable convergence and efficient memory usage. The Adam optimizer was selected for its adaptive learning capabilities, while an IoU threshold of 0.5 was set to evaluate detection accuracy."
+    },
+    {
+      "title": "Feasibility of EfficientDet-D3 for Accurate and Efficient Void ...",
+      "url": "https://www.semanticscholar.org/paper/Feasibility-of-EfficientDet-D3-for-Accurate-and-in-Shin-Lee/b2e87024f4bc96b1066e9cc442f1db4fa5d3e0e6",
+      "snippet": "This study presents a novel approach using the EfficientDet-D3 deep learning model for automated void detection in GPR images. The model combines advanced feature extraction and compound scaling to balance accuracy and computational efficiency, making it suitable for real-time applications."
+    },
+    {
+      "title": "EfficientDet D3 pricing & specs — Google | CloudPrice",
+      "url": "https://cloudprice.net/models/google-efficientdet-d3",
+      "snippet": "EfficientDet D3 is an AI model by Google. Compare LLM pricing, specs, benchmarks, and costs across providers."
+    }
+  ]
+}

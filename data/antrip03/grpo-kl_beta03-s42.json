@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "antrip03/grpo-kl_beta03-s42",
+  "slug": "antrip03-grpo-kl_beta03-s42",
+  "author": "antrip03",
+  "url": "https://huggingface.co/antrip03/grpo-kl_beta03-s42",
+  "created_at": "2026-08-28T00:05:00.000Z",
+  "updated_at": "2026-08-28T00:05:12.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "base_model:adapter:Qwen/Qwen2.5-1.5B-Instruct",
+    "grpo",
+    "lora",
+    "transformers",
+    "trl",
+    "text-generation",
+    "conversational",
+    "arxiv:1910.09700",
+    "base_model:Qwen/Qwen2.5-1.5B-Instruct",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 85333008,
+  "storage_human": "85 MB",
+  "base_model": "Qwen/Qwen2.5-1.5B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "antrip03/grpo-c3_kl_low_3b-s42 · Hugging Face",
+      "url": "https://huggingface.co/antrip03/grpo-c3_kl_low_3b-s42",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "antrip03/grpo-c3_kl_low_3b-s42 at main - Hugging Face",
+      "url": "https://huggingface.co/antrip03/grpo-c3_kl_low_3b-s42/tree/main",
+      "snippet": "antrip03 / grpo-c3_kl_low_3b-s42 like 0 Text Generation PEFT Safetensors Transformers grpo lora trl conversational arxiv:1910.09700 Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "Google Gemini",
+      "url": "https://gemini.google.com/",
+      "snippet": "Get assistance with writing, planning, learning, and more from Google AI."
+    },
+    {
+      "title": "Revisiting Group Relative Policy Optimization:Insights into On-Policy ...",
+      "url": "https://arxiv.org/html/2505.22257v1",
+      "snippet": "Abstract. We revisit Group Relative Policy Optimization (GRPO) in both on-policy and off-policy optimization regimes. Our motivation comes from recent work on off-policy Proximal Policy Optimization (PPO), which improves training stability, sampling efficiency, and memory usage. In addition, a recent analysis of GRPO suggests that estimating the advantage function with off-policy samples could ..."
+    },
+    {
+      "title": "LLM Fine-tuning with GRPO | AgileRL/AgileRL | DeepWiki",
+      "url": "https://deepwiki.com/AgileRL/AgileRL/2.6-llm-fine-tuning-with-grpo",
+      "snippet": "GRPO is a policy gradient algorithm specifically designed for fine-tuning Large Language Models. It extends the LLMAlgorithm base class and implements a PPO-style approach with group-based advantage calculation and KL divergence regularization against a reference model."
+    }
+  ]
+}

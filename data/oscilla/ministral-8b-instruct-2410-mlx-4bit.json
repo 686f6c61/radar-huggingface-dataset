@@ -1,0 +1,92 @@
+{
+  "schema": 1,
+  "id": "Oscilla/Ministral-8B-Instruct-2410-mlx-4Bit",
+  "slug": "oscilla-ministral-8b-instruct-2410-mlx-4bit",
+  "author": "Oscilla",
+  "url": "https://huggingface.co/Oscilla/Ministral-8B-Instruct-2410-mlx-4Bit",
+  "created_at": "2026-08-27T19:59:37.000Z",
+  "updated_at": "2026-08-27T19:59:47.000Z",
+  "license": "mrl",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "vllm",
+  "languages": [
+    "en",
+    "fr",
+    "de",
+    "es",
+    "it",
+    "pt",
+    "zh",
+    "ja",
+    "ru",
+    "ko"
+  ],
+  "tags": [
+    "vllm",
+    "safetensors",
+    "mistral",
+    "mistral-common",
+    "mlx",
+    "mlx-my-repo",
+    "en",
+    "fr",
+    "de",
+    "es",
+    "it",
+    "pt",
+    "zh",
+    "ja",
+    "ru",
+    "ko",
+    "base_model:mistralai/Ministral-8B-Instruct-2410",
+    "base_model:quantized:mistralai/Ministral-8B-Instruct-2410",
+    "license:other",
+    "4-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1253347328,
+  "parameters_human": "1.25B",
+  "storage_bytes": 4528745510,
+  "storage_human": "4.5 GB",
+  "base_model": "mistralai/Ministral-8B-Instruct-2410",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "mistralai/Ministral-8B-Instruct-2410 · Hugging Face",
+      "url": "https://huggingface.co/mistralai/Ministral-8B-Instruct-2410",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Ministral 8B - Mistral AI | Mistral Docs",
+      "url": "https://docs.mistral.ai/models/ministral-8b-24-1",
+      "snippet": "Powerful edge model with extremely high performance/price ratio. Learn more in our [blog post](https://mistral.ai/news/ministraux/)"
+    },
+    {
+      "title": "mlx-community/Ministral-8B-Instruct-2410-4bit at main",
+      "url": "https://huggingface.co/mlx-community/Ministral-8B-Instruct-2410-4bit/tree/main",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Ministral-8B-Instruct-2410 · Models",
+      "url": "https://www.modelscope.cn/models/mistralai/Ministral-8B-Instruct-2410",
+      "snippet": "The Ministral-8B-Instruct-2410 Language Model is an instruct fine-tuned model significantly outperforming existing models of similar size, released under the Mistral Research License."
+    },
+    {
+      "title": "Ministral 8b Instruct 2410 - GGUF Model - local-ai-zone.github.io",
+      "url": "https://local-ai-zone.github.io/models/ministral-8b-instruct-2410.html",
+      "snippet": "Download Ministral 8b Instruct 2410 GGUF model. 2.62 GB, 1,479 downloads, 55 likes."
+    }
+  ]
+}

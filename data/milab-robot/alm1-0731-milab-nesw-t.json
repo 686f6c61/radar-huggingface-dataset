@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "milab-robot/alm1-0731-milab.NESW.T",
+  "slug": "milab-robot-alm1-0731-milab-nesw-t",
+  "author": "milab-robot",
+  "url": "https://huggingface.co/milab-robot/alm1-0731-milab.NESW.T",
+  "created_at": "2026-08-20T19:25:20.000Z",
+  "updated_at": "2026-08-27T23:12:41.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 6426263731,
+  "storage_human": "6.4 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "milab-robot/alm1-0731-milab.NESW.T · Hugging Face",
+      "url": "https://huggingface.co/milab-robot/alm1-0731-milab.NESW.T",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "milab-robot (milab robot) - Hugging Face",
+      "url": "https://huggingface.co/milab-robot",
+      "snippet": "User profile of milab robot on Hugging Face"
+    },
+    {
+      "title": "LLM Leaderboard & AI Model Benchmarks — August 2026",
+      "url": "https://benchlm.ai/",
+      "snippet": "LLM Leaderboard & AI Model Benchmarks — August 2026 Compare frontier AI models by quality, cost, and context. 105 Supported and 121 Estimated models among 403 tracked LLMs — 406 benchmarks, real pricing, and runtime data in one place."
+    },
+    {
+      "title": "MIRA Lab",
+      "url": "https://miralab.ai/",
+      "snippet": "Our work solves complex challenges across the areas of large language model, graph machine learning, decision making system, and covers subjects such as LLM agent, graph foundation model, autonomous driving, AI4Chips, and AI4Science."
+    },
+    {
+      "title": "Generalist AI Releases GEN-1.5: A Robot Foundation Model That Learns ...",
+      "url": "https://www.marktechpost.com/2026/08/24/generalist-ai-releases-gen-1-5-a-robot-foundation-model-that-learns-new-tasks-from-one-3-12-second-demo/",
+      "snippet": "Generalist AI has released GEN-1.5, a robot foundation model that learns a new physical task from a single demonstration. Drop 3-12 seconds of sensorimotor data into its 30-second context window, and the robot performs the task."
+    }
+  ]
+}

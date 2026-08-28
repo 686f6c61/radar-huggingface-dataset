@@ -5,7 +5,7 @@
   "author": "Agreem",
   "url": "https://huggingface.co/Agreem/dlnb-ai-trainer",
   "created_at": "2026-08-26T18:17:56.000Z",
-  "updated_at": "2026-08-26T19:01:18.000Z",
+  "updated_at": "2026-08-27T19:26:38.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": "text-generation",
@@ -20,8 +20,8 @@
     "sft",
     "trl",
     "conversational",
-    "base_model:AgreemSrivastava/fitness-qwen-0.5b",
-    "base_model:finetune:AgreemSrivastava/fitness-qwen-0.5b",
+    "base_model:Qwen/Qwen2.5-3B-Instruct",
+    "base_model:finetune:Qwen/Qwen2.5-3B-Instruct",
     "text-generation-inference",
     "endpoints_compatible",
     "region:us"
@@ -31,9 +31,9 @@
   "trending_score": 0,
   "parameters": 494032768,
   "parameters_human": "494.0M",
-  "storage_bytes": 3963825144,
-  "storage_human": "4.0 GB",
-  "base_model": "AgreemSrivastava/fitness-qwen-0.5b",
+  "storage_bytes": 4155056797,
+  "storage_human": "4.2 GB",
+  "base_model": "Qwen/Qwen2.5-3B-Instruct",
   "formats": [
     "safetensors"
   ],

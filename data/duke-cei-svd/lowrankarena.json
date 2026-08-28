@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "Duke-CEI-SVD/LowRankArena",
+  "slug": "duke-cei-svd-lowrankarena",
+  "author": "Duke-CEI-SVD",
+  "url": "https://huggingface.co/Duke-CEI-SVD/LowRankArena",
+  "created_at": "2026-03-11T13:34:18.000Z",
+  "updated_at": "2026-08-27T22:00:22.000Z",
+  "license": "mixed-upstream-checkpoint-licenses",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "safetensors",
+    "en",
+    "base_model:Qwen/Qwen3-8B",
+    "base_model:finetune:Qwen/Qwen3-8B",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 2,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 8679127754279,
+  "storage_human": "8679.1 GB",
+  "base_model": "meta-llama/Llama-3.1-8B, meta-llama/Llama-2-7b-hf, Qwen/Qwen3-8B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": true,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Duke-CEI-SVD/LowRankArena · Hugging Face",
+      "url": "https://huggingface.co/Duke-CEI-SVD/LowRankArena",
+      "snippet": "SVDBench (LowRankArena) ⚠️ Work in Progress (WIP): This repository is currently under active internal development and testing. Overview SVDBench (hosted here as LowRankArena) is an experimental framework and benchmark suite designed for evaluating Low-Rank Approximation and Singular Value Decomposition (SVD) techniques applied to Large Language Models (LLMs). Current Status The project is ..."
+    },
+    {
+      "title": "Duke-CEI-SVD (CEI-Lean-AI) - Hugging Face",
+      "url": "https://huggingface.co/Duke-CEI-SVD",
+      "snippet": "AI Efficiency & Model Compression Zishan-Shao updated a model about 17 hours ago"
+    },
+    {
+      "title": "LLM Leaderboard & AI Model Benchmarks — August 2026",
+      "url": "https://benchlm.ai/",
+      "snippet": "LLM Leaderboard & AI Model Benchmarks — August 2026 Compare frontier AI models by quality, cost, and context. 105 Supported and 121 Estimated models among 403 tracked LLMs — 406 benchmarks, real pricing, and runtime data in one place."
+    },
+    {
+      "title": "Duke-CEI-Lab - GitHub",
+      "url": "https://github.com/Duke-CEI-Lab/",
+      "snippet": "Duke Center of Computational Evolutionary Intelligence (CEI) Lab, co-directed by Professor Yiran Chen and Professor Hai Li."
+    },
+    {
+      "title": "Jianyi Zhang | Duke CEI",
+      "url": "https://jayzhang42.github.io/",
+      "snippet": "I am currently a final-year Computer Engineering Ph.D. candidate at CEI Center, Duke University. My advisors are Professor Yiran Chen and Professor Hai &#x27;Helen&#x27; Li. My research focuses on probabilistic modeling for generative AI and trustworthy AI, especially for Large (Vis-)Language Models and Diffusion Models. I am on the industry job market!"
+    }
+  ]
+}

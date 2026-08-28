@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "sotatanaka/mobilevit-demo",
+  "slug": "sotatanaka-mobilevit-demo",
+  "author": "sotatanaka",
+  "url": "https://huggingface.co/sotatanaka/mobilevit-demo",
+  "created_at": "2026-08-27T23:05:22.000Z",
+  "updated_at": "2026-08-27T23:05:30.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "mobilevit",
+    "pytorch",
+    "contrastive",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 33088,
+  "parameters_human": "33088",
+  "storage_bytes": 132832,
+  "storage_human": "132832 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "MobileViT · Hugging Face",
+      "url": "https://huggingface.co/docs/transformers/model_doc/mobilevit",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "transformers/docs/source/en/model_doc/mobilevit.md at main ... - GitHub",
+      "url": "https://github.com/huggingface/transformers/blob/main/docs/source/en/model_doc/mobilevit.md",
+      "snippet": "MobileViT is a lightweight vision transformer for mobile devices that merges CNN&#x27;s efficiency and inductive biases with transformers global context modeling. It treats transformers as convolutions, enabling global information processing without the heavy computational cost of standard ViTs."
+    },
+    {
+      "title": "mmpretrain/configs/mobilevit/README.md at main - GitHub",
+      "url": "https://github.com/open-mmlab/mmpretrain/blob/main/configs/mobilevit/README.md",
+      "snippet": "MobileViT aims at introducing a light-weight network, which takes the advantages of both ViTs and CNNs, uses the InvertedResidual blocks in MobileNetV2 and MobileViTBlock which refers to ViT transformer blocks to build a standard 5-stage model structure. The MobileViTBlock reckons transformers as convolutions to perform a global representation, meanwhile conbined with original convolution ..."
+    },
+    {
+      "title": "MobileViT: A mobile-friendly Transformer-based model for image ... - Keras",
+      "url": "https://keras.io/examples/vision/mobilevit/",
+      "snippet": "With convolutions, we can capture spatial relationships that model locality. Besides combining the properties of Transformers and convolutions, the authors introduce MobileViT as a general-purpose mobile-friendly backbone for different image recognition tasks."
+    },
+    {
+      "title": "sotatanaka (Sota Tanaka) - Hugging Face",
+      "url": "https://huggingface.co/sotatanaka/datasets",
+      "snippet": "User profile of Sota Tanaka on Hugging Face"
+    }
+  ]
+}

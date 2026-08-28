@@ -5,7 +5,7 @@
   "author": "tooltd",
   "url": "https://huggingface.co/tooltd/Qwen3.8-27B-ZipBrain-GGUF",
   "created_at": "2026-08-19T15:33:10.000Z",
-  "updated_at": "2026-08-26T15:05:52.000Z",
+  "updated_at": "2026-08-27T12:25:23.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": null,
@@ -28,7 +28,7 @@
     "conversational"
   ],
   "likes": 9,
-  "downloads_30d": 3863,
+  "downloads_30d": 6343,
   "trending_score": 0,
   "parameters": 27320697856,
   "parameters_human": "27.32B",
@@ -39,7 +39,7 @@
     "gguf"
   ],
   "is_conversational": true,
-  "gated": false,
+  "gated": true,
   "removed": false,
   "removed_at": null,
   "benchmarks": [],

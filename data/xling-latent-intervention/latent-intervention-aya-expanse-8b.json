@@ -1,0 +1,77 @@
+{
+  "schema": 1,
+  "id": "xling-latent-intervention/latent-intervention-aya-expanse-8b",
+  "slug": "xling-latent-intervention-latent-intervention-aya-expanse-8b",
+  "author": "xling-latent-intervention",
+  "url": "https://huggingface.co/xling-latent-intervention/latent-intervention-aya-expanse-8b",
+  "created_at": "2026-08-27T20:15:11.000Z",
+  "updated_at": "2026-08-27T20:29:28.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "en",
+    "zh",
+    "ar",
+    "ru",
+    "nl"
+  ],
+  "tags": [
+    "cross-lingual",
+    "factual-consistency",
+    "autoencoder",
+    "interpretability",
+    "en",
+    "zh",
+    "ar",
+    "ru",
+    "nl",
+    "dataset:neulab/ted_multi",
+    "base_model:CohereLabs/aya-expanse-8b",
+    "base_model:finetune:CohereLabs/aya-expanse-8b",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 177509557,
+  "storage_human": "178 MB",
+  "base_model": "CohereLabs/aya-expanse-8b",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Aya Expanse | Cohere",
+      "url": "https://docs.cohere.com/docs/aya-expanse",
+      "snippet": "Understand Cohere Labs highly performant multilingual Aya models, which aim to bring many more languages into generative AI."
+    },
+    {
+      "title": "CohereLabs/aya-expanse-8b · Hugging Face",
+      "url": "https://huggingface.co/CohereLabs/aya-expanse-8b",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Aya | Cohere Labs",
+      "url": "https://cohere.com/research/aya",
+      "snippet": "Aya Vision is a research model advancing in multilingual multimodal AI through innovative synthetic data generation, cross-modal model merging, and a comprehensive benchmark suite. It achieves state-of-the-art performance across 23 languages, surpassing larger models while efficiently addressing data scarcity and catastrophic forgetting by reducing computational overhead up to 40% via ..."
+    },
+    {
+      "title": "CohereForAI/aya-expanse-8b at main - Hugging Face",
+      "url": "https://huggingface.co/CohereForAI/aya-expanse-8b/tree/main",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Cohere For AI, Cohere&#x27;s research arm, announces Aya Expanse",
+      "url": "https://cohere.com/blog/aya-expanse-connecting-our-world",
+      "snippet": "Cohere For AI launches Aya Expanse, a state-of-the-art multilingual family of models to help close the language gap with AI."
+    }
+  ]
+}

@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "JONNYVERSE/toxic-bert",
+  "slug": "jonnyverse-toxic-bert",
+  "author": "JONNYVERSE",
+  "url": "https://huggingface.co/JONNYVERSE/toxic-bert",
+  "created_at": "2026-08-27T21:41:12.000Z",
+  "updated_at": "2026-08-27T21:41:13.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-classification",
+  "library": "transformers.js",
+  "languages": [],
+  "tags": [
+    "transformers.js",
+    "onnx",
+    "bert",
+    "text-classification",
+    "base_model:unitary/toxic-bert",
+    "base_model:quantized:unitary/toxic-bert",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1383857593,
+  "storage_human": "1.4 GB",
+  "base_model": "unitary/toxic-bert",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "unitary/toxic-bert · Hugging Face",
+      "url": "https://huggingface.co/unitary/toxic-bert",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "toxic-bert · Model · Inferix",
+      "url": "https://inferix.co/models/Xenova/toxic-bert",
+      "snippet": "Model tree for Xenova / toxic-bert Base model unitary/toxic-bert Files Commits Discussions Pull Requests Evaluation"
+    },
+    {
+      "title": "toxic-bert: Text-to-Text model — overview, use cases, alternatives",
+      "url": "https://www.aimodels.fyi/models/huggingFace/toxic-bert-unitary",
+      "snippet": "Overview toxic-bert is a set of three toxicity classification models trained by unitary on Jigsaw competition datasets to detect toxic comments across multiple dimensions and languages. The library provides three distinct models: the original model (based on bert-base-uncased) trained on Wikipedia comments from the 2018 Toxic Comment Classification Challenge, the unbiased model (based on ..."
+    },
+    {
+      "title": "README.md · unitary/toxic-bert at ef96a6e59e7a8d5bfcf84082302d2b9449961b79",
+      "url": "https://huggingface.co/unitary/toxic-bert/blob/ef96a6e59e7a8d5bfcf84082302d2b9449961b79/README.md",
+      "snippet": "unitary / toxic-bert Copied like 13 Text ClassificationPyTorchJAXTransformers arxiv:1703.04009 arxiv:1905.12516 bertInfinity Compatible Model card FilesFiles and versions Community Train Deploy Use in Transformers ef96a6e toxic-bert /README.md Laura update readme e0fd7dc over 1 year ago raw history blame Safe 10.6 kB"
+    },
+    {
+      "title": "AI Model Catalog | Microsoft Foundry Models",
+      "url": "https://ai.azure.com/catalog/models/unitary-toxic-bert",
+      "snippet": "unitary/toxic-bert is a pre-trained language model available on the Hugging Face Hub. It&#x27;s specifically designed for the text-classification task in the transformers library. If you want to learn more about the model&#x27;s architecture, hyperparameters, limitations, and biases, you can find this information on the model&#x27;s dedicated Model Card on the Hugging Face Hub . Here&#x27;s an example API request ..."
+    }
+  ]
+}

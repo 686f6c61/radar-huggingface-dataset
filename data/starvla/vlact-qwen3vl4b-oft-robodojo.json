@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "StarVLA/VLAct-Qwen3VL4B-OFT-RoboDojo",
+  "slug": "starvla-vlact-qwen3vl4b-oft-robodojo",
+  "author": "StarVLA",
+  "url": "https://huggingface.co/StarVLA/VLAct-Qwen3VL4B-OFT-RoboDojo",
+  "created_at": "2026-08-27T23:46:28.000Z",
+  "updated_at": "2026-08-27T23:46:56.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "robotics",
+    "vision-language-action",
+    "vlact",
+    "starvla",
+    "qwen3-vl",
+    "robodojo",
+    "diffusion-policy",
+    "base_model:StarVLA/Qwen3-VL-4B-Instruct-Action",
+    "base_model:finetune:StarVLA/Qwen3-VL-4B-Instruct-Action",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 9806105048,
+  "storage_human": "9.8 GB",
+  "base_model": "StarVLA/Qwen3-VL-4B-Instruct-Action",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - starVLA/starVLA: StarVLA: A Lego-like Codebase for Vision ...",
+      "url": "https://github.com/starVLA/starVLA",
+      "snippet": "StarVLA: A Lego-like Codebase for Vision-Language-Action Model Developing An open-source research platform for integrating and exploring cutting-edge technologies for generalist robots."
+    },
+    {
+      "title": "StarVLA (Star Vision Language Action Models) - Hugging Face",
+      "url": "https://huggingface.co/StarVLA/models",
+      "snippet": "Org profile for Star Vision Language Action Models on Hugging Face, the AI community building the future."
+    },
+    {
+      "title": "GitHub - Zeffiretti/starvla: starVLA: A Lego-like Codebase for Vision ...",
+      "url": "https://github.com/Zeffiretti/starvla",
+      "snippet": "StarVLA is a modular and flexible codebase for developing Vision-Language Model (VLM) to Vision-Language-Action (VLA) models. In StarVLA (also a pun on \"start VLA\" ), each functional component (model, data, trainer, config, evaluation, etc.) follows a top-down, intuitive separation and high cohesion and low coupling principle, which enabling plug-and-play design, rapid prototyping, and ..."
+    },
+    {
+      "title": "Fine-tuned Models for StarVLA/Qwen3-VL-4B-Instruct-Action - Hugging Face",
+      "url": "https://huggingface.co/models?other=base_model:finetune:StarVLA/Qwen3-VL-4B-Instruct-Action",
+      "snippet": "Explore machine learning models. Model Tree StarVLA/Qwen3-VL-4B-Instruct-Action Adapters Quantizations Merges Apps Inference Providers Groq Novita Cerebras Nscale fal Together AI Fireworks Featherless AI Zai Replicate Cohere Scaleway Public AI OVHcloud AI Endpoints HF Inference API WaveSpeed DeepInfra Misc Apply filters"
+    },
+    {
+      "title": "starVLA | Agile Lego-like Embodied AI Development",
+      "url": "https://starvla.github.io/",
+      "snippet": "Accelerate embodied AI delivery with agile, lego-like engineering workflows, reproducible benchmarks, and deployment-ready interfaces."
+    }
+  ]
+}

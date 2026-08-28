@@ -1,0 +1,87 @@
+{
+  "schema": 1,
+  "id": "allhailalona111/Qwen3.8-27B-heretic-ara-Q4_K_M-MTP-GGUF",
+  "slug": "allhailalona111-qwen3-8-27b-heretic-ara-q4_k_m-mtp-gguf",
+  "author": "allhailalona111",
+  "url": "https://huggingface.co/allhailalona111/Qwen3.8-27B-heretic-ara-Q4_K_M-MTP-GGUF",
+  "created_at": "2026-08-27T19:51:49.000Z",
+  "updated_at": "2026-08-27T19:52:00.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "gguf",
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "tags": [
+    "gguf",
+    "qwen3.5",
+    "qwen3.8",
+    "heretic",
+    "abliterated",
+    "uncensored",
+    "mtp",
+    "vision",
+    "multimodal",
+    "mmproj",
+    "vulkan",
+    "llama-cpp",
+    "rocmfpx",
+    "strix-halo",
+    "rdna3.5",
+    "amd",
+    "conversational",
+    "image-text-to-text",
+    "en",
+    "zh",
+    "base_model:trohrbaugh/Qwen3.8-27B-heretic-ara",
+    "base_model:quantized:trohrbaugh/Qwen3.8-27B-heretic-ara",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 27320697856,
+  "parameters_human": "27.32B",
+  "storage_bytes": 16810714560,
+  "storage_human": "16.8 GB",
+  "base_model": "trohrbaugh/Qwen3.8-27B-heretic-ara",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Qwen/Qwen3.8-27B · Hugging Face",
+      "url": "https://huggingface.co/Qwen/Qwen3.8-27B",
+      "snippet": "MathVision: Qwen3.8-27B is evaluated using the fixed prompt: \"Please reason step by step, and put your final answer within &#92;boxed {}.\" For the remaining models, we report the higher score from two prompt variants—one with and one without the &#92;boxed {} formatting requirement."
+    },
+    {
+      "title": "Qwen3.8-27B-Heretic-ARA-ModelOpt-NVFP4-GGUF - Hugging Face",
+      "url": "https://huggingface.co/dawncr0w/Qwen3.8-27B-Heretic-ARA-ModelOpt-NVFP4-GGUF",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "jacokon/qwen3.8-27b-heretic-ara",
+      "url": "https://ollama.com/jacokon/qwen3.8-27b-heretic-ara",
+      "snippet": "jacokon/qwen3.8-27b-heretic-ara:latest (Q4_K_M): Ideal for 24 GB+ VRAM GPUs (RTX 3090, RTX 4090, RTX 5090, or Apple Silicon with 36GB+ unified memory) to achieve full precision and maximum coding intelligence."
+    },
+    {
+      "title": "Qwen/Qwen3.8-27B | vLLM Recipes",
+      "url": "https://recipes.vllm.ai/Qwen/Qwen3.8-27B",
+      "snippet": "The official Qwen/Qwen3.8-27B-FP8 checkpoint serves directly on a 950PR — no offline re-quantization and no --quantization ascend. vLLM Ascend reads quant_method: fp8 and weight_block_size straight from the checkpoint, expands the weight_scale_inv tiles at load time and re-quantizes to MXFP8 on 950."
+    },
+    {
+      "title": "jacokon/qwen3.8-27b-heretic-ara",
+      "url": "https://ollama.com/jacokon/qwen3.8-27b-heretic-ara:latest",
+      "snippet": "Qwen3.8-27B Heretic (Vision + Coding Agent Optimized) A decensored/abliterated multimodal vision-language model (VLM) based on Qwen3.8-27B, fine-tuned and configured for seamless execution in autonomous coding agents (such as Claude Code, OpenCode, Aider, and Hermes) with full Multimodal Vision support."
+    }
+  ]
+}

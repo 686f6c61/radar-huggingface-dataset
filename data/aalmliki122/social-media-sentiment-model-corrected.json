@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "aalmliki122/social-media-sentiment-model-corrected",
+  "slug": "aalmliki122-social-media-sentiment-model-corrected",
+  "author": "aalmliki122",
+  "url": "https://huggingface.co/aalmliki122/social-media-sentiment-model-corrected",
+  "created_at": "2026-08-27T22:32:25.000Z",
+  "updated_at": "2026-08-27T22:32:45.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-classification",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "distilbert",
+    "text-classification",
+    "arxiv:1910.09700",
+    "text-embeddings-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 66955010,
+  "parameters_human": "67.0M",
+  "storage_bytes": 267832560,
+  "storage_human": "268 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "aalmliki122/social-media-sentiment-model · Hugging Face",
+      "url": "https://huggingface.co/aalmliki122/social-media-sentiment-model",
+      "snippet": "aalmliki122 / social-media-sentiment-model like 0 Text Classification Transformers Safetensors distilbert text-embeddings-inference arxiv:1910.09700 Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "Getting Started with Sentiment Analysis using Python",
+      "url": "https://huggingface.co/blog/sentiment-analysis-python",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Listening in on Social Media: A Joint Model of Sentiment and Venue ...",
+      "url": "https://journals.sagepub.com/doi/10.1509/jmr.12.0424",
+      "snippet": "In this research, the authors jointly model the sentiment expressed in social media posts and the venue format to which it was posted as two interrelated processes in an effort to provide a measure of underlying brand sentiment. Using social media data from firms in two distinct industries, they allow the content of the post and the underlying sentiment toward the brand to affect both ..."
+    },
+    {
+      "title": "SentiMM: A Multimodal Multi-Agent Framework for Sentiment Analysis in ...",
+      "url": "https://arxiv.org/html/2508.18108v1",
+      "snippet": "In addition, we construct SentiMMD, a large-scale multimodal dataset collected from social media, annotated with seven fine-grained sentiment categories. This dataset captures the complexity and diversity of emotional expression across modalities, providing a robust benchmark for multimodal sentiment analysis."
+    },
+    {
+      "title": "Sentiment analysis and emotion recognition in social media: A ...",
+      "url": "https://www.sciencedirect.com/science/article/pii/S1568494625002698",
+      "snippet": "The posts in social media data involve text, audio, and visuals that are used to analyze the sentiment of the public [4]. SA and emotion recognition is the fundamental dialogue system that recently gained more attention."
+    }
+  ]
+}

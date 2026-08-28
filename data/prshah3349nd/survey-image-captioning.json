@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "prshah3349nd/survey-image-captioning",
+  "slug": "prshah3349nd-survey-image-captioning",
+  "author": "prshah3349nd",
+  "url": "https://huggingface.co/prshah3349nd/survey-image-captioning",
+  "created_at": "2026-08-27T23:13:40.000Z",
+  "updated_at": "2026-08-27T23:13:49.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "transformer",
+    "research-notes",
+    "image-captioning",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 49600,
+  "parameters_human": "49600",
+  "storage_bytes": 198880,
+  "storage_human": "198880 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "From methods to datasets: A survey on Image-Caption Generators",
+      "url": "https://link.springer.com/article/10.1007/s11042-023-16560-x",
+      "snippet": "Image - Caption Generator is a popular Artificial Intelligence research tool that works with image comprehension and language definition. Creating well-structured sentences requires a thorough understanding of language in a systematic and semantic way. Being able to describe the substance of an image using well-structured phrases is a difficult undertaking, but it can have a significant impact ..."
+    },
+    {
+      "title": "From methods to datasets: A survey on Image-Caption Generators",
+      "url": "https://www.researchgate.net/publication/373551429_From_methods_to_datasets_A_survey_on_Image-Caption_Generators",
+      "snippet": "Request PDF | From methods to datasets: A survey on Image-Caption Generators | Image - Caption Generator is a popular Artificial Intelligence research tool that works with image comprehension and ..."
+    },
+    {
+      "title": "A comprehensive survey on deep learning approaches for image captioning ...",
+      "url": "https://link.springer.com/article/10.1186/s40537-026-01377-w",
+      "snippet": "This paper presents a comprehensive literature survey on image captioning, covering research published between 2018 and 2025. It introduces a novel taxonomy to classify existing approaches into nine major categories, including attention-based models, transformer-based architectures, reinforcement learning, and Vision-Language Pretraining (VLP). A total of 174 peer-reviewed studies are ..."
+    },
+    {
+      "title": "Attention-Based Transformer Models for Image Captioning Across ...",
+      "url": "https://arxiv.org/html/2506.05399v1",
+      "snippet": "Abstract Image captioning involves generating textual descriptions from input images, bridging the gap between computer vision and natural language processing. Recent advancements in transformer-based models have significantly improved caption generation by leveraging attention mechanisms for better scene understanding. While various surveys have explored deep learning-based approaches for ..."
+    },
+    {
+      "title": "From Show to Tell: A Survey on Deep Learning-based Image Captioning",
+      "url": "https://arxiv.org/abs/2107.06912",
+      "snippet": "Connecting Vision and Language plays an essential role in Generative Intelligence. For this reason, large research efforts have been devoted to image captioning, i.e. describing images with syntactically and semantically meaningful sentences. Starting from 2015 the task has generally been addressed with pipelines composed of a visual encoder and a language model for text generation. During ..."
+    }
+  ]
+}

@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "Joakimpalm-Zen/Muse-Glimmer-30B-surgery-report",
+  "slug": "joakimpalm-zen-muse-glimmer-30b-surgery-report",
+  "author": "Joakimpalm-Zen",
+  "url": "https://huggingface.co/Joakimpalm-Zen/Muse-Glimmer-30B-surgery-report",
+  "created_at": "2026-08-27T19:58:37.000Z",
+  "updated_at": "2026-08-27T19:58:43.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "muse-glimmer",
+    "model-surgery",
+    "depth-pruning",
+    "healing",
+    "measurement-report",
+    "xyntetik-runner",
+    "text-generation",
+    "base_model:meta-models/Muse-Glimmer-30B",
+    "base_model:finetune:meta-models/Muse-Glimmer-30B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": "meta-models/Muse-Glimmer-30B",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "meta-models/Muse-Glimmer-30B · Hugging Face",
+      "url": "https://huggingface.co/meta-models/Muse-Glimmer-30B",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Muse Glimmer - Meta",
+      "url": "https://developer.meta.com/ai/models/muse-glimmer/",
+      "snippet": "An open 30B model for always-on local agents. Runs on a single GPU, Apache 2.0 licensed. Tuned for tool use, long tasks, and failure recovery."
+    },
+    {
+      "title": "Muse-Glimmer-30B-runner-quant-frontier-report - Hugging Face",
+      "url": "https://huggingface.co/Joakimpalm-Zen/Muse-Glimmer-30B-runner-quant-frontier-report",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "muse-glimmer-30b Model by Meta | NVIDIA NIM",
+      "url": "https://build.nvidia.com/meta/muse-glimmer-30b/modelcard",
+      "snippet": "Muse Glimmer 30B is a multimodal reasoning model accepting text and images, with native tool-calling and separate reasoning output."
+    },
+    {
+      "title": "Muse Glimmer 30B API & Playground | Fireworks AI",
+      "url": "https://fireworks.ai/models/fireworks/muse-glimmer-30b",
+      "snippet": "Muse Glimmer 30B is a dense causal language model distilled from Muse Spark and purpose-built for autonomous agentic work. It combines multi-step reasoning, reliable schema-based tool calling, and failure recovery with multimodal understanding via a ~1.8B ViT-G/14 perception encoder, supporting interleaved text and image input, a 131K+ context window, and selectable reasoning strength (low ..."
+    }
+  ]
+}

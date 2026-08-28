@@ -5,7 +5,7 @@
   "author": "DotCheck",
   "url": "https://huggingface.co/DotCheck/muybridge-video-v4_4",
   "created_at": "2026-08-25T14:42:55.000Z",
-  "updated_at": "2026-08-27T02:50:43.000Z",
+  "updated_at": "2026-08-27T03:21:04.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "image-classification",

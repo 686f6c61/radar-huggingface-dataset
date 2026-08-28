@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "Sorihon/Chaotic-Order-24B-V1",
+  "slug": "sorihon-chaotic-order-24b-v1",
+  "author": "Sorihon",
+  "url": "https://huggingface.co/Sorihon/Chaotic-Order-24B-V1",
+  "created_at": "2026-08-27T23:56:18.000Z",
+  "updated_at": "2026-08-28T00:46:24.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "mistral",
+    "text-generation",
+    "mergekit",
+    "merge",
+    "conversational",
+    "arxiv:2311.03099",
+    "base_model:Naphula/Goetia-24B-v1.4",
+    "base_model:finetune:Naphula/Goetia-24B-v1.4",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 23572403200,
+  "parameters_human": "23.57B",
+  "storage_bytes": 47161926917,
+  "storage_human": "47.2 GB",
+  "base_model": "Naphula/Goetia-24B-v1.4",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Sorihon/Celestial-Order-24B · Hugging Face",
+      "url": "https://huggingface.co/Sorihon/Celestial-Order-24B",
+      "snippet": "Sorihon / Celestial-Order-24B like 1 Text Generation Transformers Safetensors mistral mergekit Merge text-generation-inference arxiv:2311.03099 Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "Quantized Models for Sorihon/Celestial-Order-24B - Hugging Face",
+      "url": "https://huggingface.co/models?other=base_model:quantized:Sorihon/Celestial-Order-24B",
+      "snippet": "Explore machine learning models. Model Tree Sorihon/Celestial-Order-24B Adapters Finetunes Merges Apps Inference Providers Groq Novita Cerebras Nscale fal Together AI Fireworks Featherless AI Zai Replicate Cohere Scaleway Public AI Baseten OVHcloud AI Endpoints HF Inference API WaveSpeed DeepInfra One-click Deployment Misc Apply filters"
+    },
+    {
+      "title": "Celestial-Order-24B API & Inference Endpoint | FriendliAI",
+      "url": "https://friendli.ai/models/Sorihon/Celestial-Order-24B",
+      "snippet": "Run Celestial-Order-24B with FriendliAI inference. This is a merge of pre-trained language models created using mergekit."
+    },
+    {
+      "title": "6 Best 24B GGUF Models for 24GB VRAM Local AI RP",
+      "url": "https://techtactician.com/best-24b-gguf-models-for-24gb-vram-local-rp/",
+      "snippet": "You can find the GGUF quantizations of this model by mradermacher here. 5. Goetia-24B (v1.3, and the older v1.2) Goetia-24B-v1.3 by Naphula (alongside the older but still very much popular Goetia-24B-v1.2) is one of the worthwhile uncensored models appropriate for the darker or more dramatic/edgy RP scenarios."
+    },
+    {
+      "title": "Celestial Order 24B V2 by Sorihon — VRAM 47.3GB, 128K context | LLM ...",
+      "url": "https://llm-explorer.com/model/Sorihon%2FCelestial-Order-24B-V2,2u21zaLTre6UfDQ3XWrd5y",
+      "snippet": "Celestial Order 24B V2 is an open-source 24b LLM by Sorihon. VRAM 47.3GB, 128K context. Compare benchmarks, capabilities, and deployment details on LLM Explorer."
+    }
+  ]
+}

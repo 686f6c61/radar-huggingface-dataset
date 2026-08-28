@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "sasking786/zivra-ai-marketing",
+  "slug": "sasking786-zivra-ai-marketing",
+  "author": "sasking786",
+  "url": "https://huggingface.co/sasking786/zivra-ai-marketing",
+  "created_at": "2026-08-27T22:30:09.000Z",
+  "updated_at": "2026-08-27T22:36:15.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - Zivra-Ai/Zivra-Ai: Real-time AI business intelligence for ...",
+      "url": "https://github.com/Zivra-Ai/Zivra-Ai",
+      "snippet": "Zivra AI is an AI-powered platform designed to give businesses continuous, real-time visibility into their financial health. By connecting directly to live operational activity, Zivra AI surfaces early signals, emerging risks, and forward-looking insights — helping founders and operators move beyond static, retrospective reporting. Rather than relying on delayed summaries and periodic ..."
+    },
+    {
+      "title": "PDF Zivra AI Launches Real-Time Business Health and Financial Intelligence ...",
+      "url": "https://0e190a550a8c4c8c4b93-fcd009c875a5577fd4fe2f5b7e3bf4eb.ssl.cf2.rackcdn.com/EINPresswire-889517632-zivra-ai-launches-real-time-business-health-and-financial-intelligence-for-smes-2.pdf",
+      "snippet": "Zivra AI is a product of Zivra Inc., a Delaware C-corp, building an AI-powered business health and financial intelligence platform for SMEs operating across fragmented financial systems."
+    },
+    {
+      "title": "Zikhara AI - AI-Powered Amazon Listing Generator",
+      "url": "https://www.zikhara.ai/",
+      "snippet": "Automate Amazon listing creation with AI. Generate SEO-optimized titles, bullet points, A+ content, and product images from smartphone photos. Scale your catalog 16x faster."
+    },
+    {
+      "title": "Best AI Tools for Marketers in 2026 - Influencer Marketing Hub",
+      "url": "https://influencermarketinghub.com/ai-marketing-tools/",
+      "snippet": "Make 2026 a year of growth with these top 33 AI marketing tools for boosting sales and expanding your business."
+    },
+    {
+      "title": "Zivra AI Launches to Give SMEs Real-Time Business Health and Financial ...",
+      "url": "https://newsbywire.com/zivra-ai-launches-to-give-smes-real-time-business-health-and-financial-intelligence-across-fragmented-systems/",
+      "snippet": "Zivra AI has launched Zivra, an AI-powered business health and financial intelligence platform that turns everyday transactions—from banks, POS, mobile money, cash, and receipts—into continuous cashflow and risk insight, giving small and medium-sized businesses real-time financial clarity."
+    }
+  ]
+}

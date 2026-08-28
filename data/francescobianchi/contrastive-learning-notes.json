@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "francescobianchi/contrastive-learning-notes",
+  "slug": "francescobianchi-contrastive-learning-notes",
+  "author": "francescobianchi",
+  "url": "https://huggingface.co/francescobianchi/contrastive-learning-notes",
+  "created_at": "2026-08-27T23:23:31.000Z",
+  "updated_at": "2026-08-27T23:23:40.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "transformer",
+    "research-notes",
+    "contrastive-learning",
+    "license:cc-by-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 33088,
+  "parameters_human": "33088",
+  "storage_bytes": 132832,
+  "storage_human": "132832 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Google AI Studio",
+      "url": "https://aistudio.google.com/",
+      "snippet": "Build with Google AI Studio Go from prompt to production with Gemini, Veo, Nano Banana, and more"
+    },
+    {
+      "title": "Contrastive Language-Image Pre-training - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Contrastive_Language%E2%80%93Image_Pre-training",
+      "snippet": "Contrastive Language-Image Pre-training (CLIP) is a technique for training a pair of neural network models, one for image understanding and one for text understanding, using a contrastive objective. [1] This method has enabled broad applications across multiple domains, including cross-modal retrieval, [2] text-to-image generation, [3] and aesthetic ranking. [4]"
+    },
+    {
+      "title": "Comparison of AI Models across Intelligence, Performance, and Price ...",
+      "url": "https://artificialanalysis.ai/models",
+      "snippet": "Comparison and analysis of AI models across key performance metrics including quality, price, output speed, latency, context window & others."
+    },
+    {
+      "title": "An Introduction to Contrastive Learning - Baeldung",
+      "url": "https://www.baeldung.com/cs/contrastive-learning",
+      "snippet": "The sample that is similar to the anchor sample () is defined as a positive sample () and the one that is dissimilar as negative (). 4. Training Objectives The most important part of contrastive learning is the training objective that guides the model into learning contrastive representations. Let&#x27;s describe the most common objectives."
+    },
+    {
+      "title": "Contrastive Learning: How Models Learn by Comparison",
+      "url": "https://www.datacamp.com/tutorial/contrastive-learning",
+      "snippet": "Learn what contrastive learning is, how it works, and why it is used in modern machine learning for representation learning and self-supervised learning."
+    }
+  ]
+}

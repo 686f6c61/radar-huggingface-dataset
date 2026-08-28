@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "sidbaines/scimt-prior-coins-gemma4-12b-charter-graft-aft-v1",
+  "slug": "sidbaines-scimt-prior-coins-gemma4-12b-charter-graft-aft-v1",
+  "author": "sidbaines",
+  "url": "https://huggingface.co/sidbaines/scimt-prior-coins-gemma4-12b-charter-graft-aft-v1",
+  "created_at": "2026-08-27T20:43:28.000Z",
+  "updated_at": "2026-08-27T20:59:49.000Z",
+  "license": "gemma",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "research",
+    "gemma-4",
+    "full-parameter-midtraining",
+    "lora",
+    "base_model:google/gemma-4-12B",
+    "base_model:adapter:google/gemma-4-12B",
+    "license:gemma",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 257497653356,
+  "storage_human": "257.5 GB",
+  "base_model": "google/gemma-4-12B, google/gemma-4-12B-it",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "sidbaines/scimt-prior-coins-sdf-it · Hugging Face",
+      "url": "https://huggingface.co/sidbaines/scimt-prior-coins-sdf-it",
+      "snippet": "prior-coins: post-hoc SDF on instruct models Research checkpoints from the prior_coins study (science-of-midtraining). They test whether synthetic-document finetuning (SDF) applied on top of an already-instruct-tuned Gemma 3 model installs a prior that survives a shared, deliberately ambiguous alignment-finetuning (AFT) stage."
+    },
+    {
+      "title": "sidbaines (Sid Baines) - Hugging Face",
+      "url": "https://huggingface.co/sidbaines",
+      "snippet": "Recent Activity updated a model2 days ago sidbaines/scimt-prior-coins-dispatch-sdf-aft-v1 updated a model2 days ago sidbaines/scimt-dispatch-4b-models-v1 published a model2 days ago sidbaines/scimt-dispatch-4b-models-v1 View all activity"
+    },
+    {
+      "title": "ChatGPT: Chat, Work, Create & Code with AI",
+      "url": "https://chatgpt.com/",
+      "snippet": "Use ChatGPT to answer questions, write, create images, complete work, and code—all in one place. Get started for free or download the app."
+    },
+    {
+      "title": "Gemma releases - Google AI for Developers",
+      "url": "https://ai.google.dev/gemma/docs/releases",
+      "snippet": "Gemma releases This page documents releases for the Gemma family of models. June 3, 2026 Release of Gemma 4 12B Unified. April 16, 2026 Release of Gemma 4 - MTP for E2B, E4B, 31B, and 26B A4B. March 31, 2026 Release of Gemma 4 in E2B, E4B, 31B and 26B A4B sizes. January 15, 2026 Release of TranslateGemma in 4B, 12B, and 27B parameter size ..."
+    },
+    {
+      "title": "gemma4 - ollama.com",
+      "url": "https://ollama.com/library/gemma4:latest",
+      "snippet": "Gemma 4 models are designed to deliver frontier-level performance at each size. They are well-suited for reasoning, agentic workflows, coding, and multimodal understanding."
+    }
+  ]
+}

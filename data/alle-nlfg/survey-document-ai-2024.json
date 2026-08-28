@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "Alle-nlfg/survey-document-ai-2024",
+  "slug": "alle-nlfg-survey-document-ai-2024",
+  "author": "Alle-nlfg",
+  "url": "https://huggingface.co/Alle-nlfg/survey-document-ai-2024",
+  "created_at": "2026-08-27T22:11:39.000Z",
+  "updated_at": "2026-08-27T22:11:48.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "transformer",
+    "research-notes",
+    "document-ai",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 33088,
+  "parameters_human": "33088",
+  "storage_bytes": 132832,
+  "storage_human": "132832 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Document AI - Google Cloud",
+      "url": "https://cloud.google.com/document-ai",
+      "snippet": "The Document AI solutions suite includes pretrained models for document processing, Workbench for custom models, and Warehouse to search and store."
+    },
+    {
+      "title": "PDF Edelman&#x27;s 2024 AI Landscape Report",
+      "url": "https://www.edelman.com/sites/g/files/aatuss191/files/2024-09/Edelman_2024_AI_Landscape_Report.pdf",
+      "snippet": "Edelman&#x27;s 2024 AI Landscape Report The Communicator&#x27;s Guide to Finding AI Tools You Can Trust AI presents immense opportunities, if you can find the right tools for the job."
+    },
+    {
+      "title": "Document Intelligence in the Era of Large Language Models: A Survey",
+      "url": "https://arxiv.org/pdf/2510.13366",
+      "snippet": "Abstract Document AI (DAI) has emerged as a vi-tal application area, and is significantly trans-formed by the advent of large language mod-els (LLMs). While earlier approaches relied on encoder-decoder architectures, decoder-only LLMs have revolutionized DAI, bringing re-markable advancements in understanding and generation. This survey provides a comprehen-sive overview of DAI&#x27;s evolution ..."
+    },
+    {
+      "title": "Document Intelligence in the Era of Large Language Models: A Survey",
+      "url": "https://arxiv.org/html/2510.13366v1",
+      "snippet": "Abstract Document AI (DAI) has emerged as a vital application area, and is significantly transformed by the advent of large language models (LLMs). While earlier approaches relied on encoder-decoder architectures, decoder-only LLMs have revolutionized DAI, bringing remarkable advancements in understanding and generation. This survey provides a comprehensive overview of DAI&#x27;s evolution ..."
+    },
+    {
+      "title": "The 2024 AI Index Report - Stanford HAI",
+      "url": "https://hai.stanford.edu/ai-index/2024-ai-index-report",
+      "snippet": "Welcome to the seventh edition of the AI Index report. The 2024 Index is our most comprehensive to date and arrives at an important moment when AI&#x27;s influence on society has never been more pronounced."
+    }
+  ]
+}

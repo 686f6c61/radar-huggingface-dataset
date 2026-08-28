@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "lucyjohnson/few-shot-multimodal-v2",
+  "slug": "lucyjohnson-few-shot-multimodal-v2",
+  "author": "lucyjohnson",
+  "url": "https://huggingface.co/lucyjohnson/few-shot-multimodal-v2",
+  "created_at": "2026-08-27T22:27:06.000Z",
+  "updated_at": "2026-08-27T22:27:15.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "transformer",
+    "research-notes",
+    "few-shot-multimodal",
+    "license:cc-by-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 24832,
+  "parameters_human": "24832",
+  "storage_bytes": 99808,
+  "storage_human": "99808 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "LLM Leaderboard 2026: Compare 300+ Top AI Models by Intelligence, Speed ...",
+      "url": "https://llm-stats.com/leaderboards/llm-leaderboard",
+      "snippet": "The LLM Leaderboard — independent ranking of GPT, Claude, Gemini, Llama, DeepSeek and 300+ AI models by intelligence, speed and price. Filter by provider, license, modality and context window; sort by every benchmark. Composite LLM Stats Score updated continuously from public benchmarks and live API metrics."
+    },
+    {
+      "title": "Few-Shot Multimodal Medical Imaging: A Theoretical Framework",
+      "url": "https://arxiv.org/pdf/2511.01140",
+      "snippet": "The process begins by feeding both abundant and limited labeled datasets into a learning frame-work that integrates few-shot samples within a theoretical model fθ. The model is built to not only deliver diagnostic predictions, but also report how confident those predictions are and explain the reasoning behind them."
+    },
+    {
+      "title": "Few-Shot Multimodal Medical Imaging: A Theoretical Framework",
+      "url": "https://arxiv.org/html/2511.01140v1",
+      "snippet": "Few-shot learning, Low-resource learning, Sample complexity, Uncertainty quantification, Explainable AI, Medical imaging, Multimodal learning, Interpretability guarantees."
+    },
+    {
+      "title": "Latest AI Model Releases — August 2026",
+      "url": "https://aireleasetracker.com/latest",
+      "snippet": "The newest AI model releases as of August 2026. Most recent: GLM-5.3-Flash by Z.ai on Aug 26 2026. Track every new frontier model from OpenAI, Anthropic, Google DeepMind, Meta, SpaceXAI, DeepSeek, Mistral, and Moonshot AI — updated continuously."
+    },
+    {
+      "title": "Moonshot AI Releases Kimi K3: A 2.8 Trillion Parameter Open MoE Model ...",
+      "url": "https://www.marktechpost.com/2026/07/16/moonshot-ai-releases-kimi-k3-a-2-8-trillion-parameter-open-moe-model-with-kimi-delta-attention-and-1m-context/",
+      "snippet": "Moonshot AI just released Kimi K3. It is a 2.8-trillion-parameter model with native vision and a 1-million-token context window. Moonshot calls it the world&#x27;s first open 3T-class model. What is Kimi K3? Kimi K3 is a sparse Mixture-of-Experts (MoE) model built on two architectural updates. Those are Kimi Delta Attention (KDA) and Attention Residuals (AttnRes). Both change how information ..."
+    }
+  ]
+}

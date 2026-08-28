@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "JONNYVERSE/roberta-base-go_emotions-onnx",
+  "slug": "jonnyverse-roberta-base-go_emotions-onnx",
+  "author": "JONNYVERSE",
+  "url": "https://huggingface.co/JONNYVERSE/roberta-base-go_emotions-onnx",
+  "created_at": "2026-08-27T21:41:10.000Z",
+  "updated_at": "2026-08-27T21:41:10.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "onnx",
+    "roberta",
+    "text-classification",
+    "int8",
+    "emotions",
+    "multi-class-classification",
+    "multi-label-classification",
+    "optimum",
+    "en",
+    "dataset:go_emotions",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 624238791,
+  "storage_human": "624 MB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "SamLowe/roberta-base-go_emotions · Hugging Face",
+      "url": "https://huggingface.co/SamLowe/roberta-base-go_emotions",
+      "snippet": "A version of this model in ONNX format (including an INT8 quantized ONNX version) is now available at https://huggingface.co/SamLowe/roberta-base-go_emotions-onnx."
+    },
+    {
+      "title": "Cohee/roberta-base-go_emotions-onnx · Hugging Face",
+      "url": "https://huggingface.co/Cohee/roberta-base-go_emotions-onnx",
+      "snippet": "Dataset used for the model go_emotions is based on Reddit data and has 28 labels. It is a multi-label dataset where one or multiple labels may apply for any given input text, hence this model is a multi-label classification model with 28 &#x27;probability&#x27; float outputs for any given input text."
+    },
+    {
+      "title": "samlowe-roberta-base-go-emotions-onnx.md - GitHub",
+      "url": "https://github.com/codesuke/RadioLine/blob/main/docs/Models/samlowe-roberta-base-go-emotions-onnx.md",
+      "snippet": "The model is an ONNX conversion of SamLowe&#x27;s GoEmotions RoBERTa classifier. GoEmotions contains English Reddit comments labelled across 27 emotions plus neutral."
+    },
+    {
+      "title": "GitHub - berat639/roberta-base-go_emotions-onnx",
+      "url": "https://github.com/berat639/roberta-base-go_emotions-onnx",
+      "snippet": "See more details in the SamLowe/roberta-base-go_emotions model card for the increases possible through selecting label-specific thresholds to maximise F1 scores, or another metric."
+    },
+    {
+      "title": "Roberta Base Go Emotions Onnx: Specs, Hardware & Live AI Battle ...",
+      "url": "https://www.modelvault.space/models/smart4lec-roberta-base-go-emotions-onnx",
+      "snippet": "Roberta Base Go Emotions Onnx is a high-dimensional text embedding and semantic retrieval model developed by Smart4lec. Tailored for Retrieval-Augmented Generation (RAG), vector database indexing, semantic similarity matching, and cross-lingual passage re-ranking."
+    }
+  ]
+}

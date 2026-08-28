@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "Urdatorn/sphragis-alm-olmo1b-sentence-herodotus",
+  "slug": "urdatorn-sphragis-alm-olmo1b-sentence-herodotus",
+  "author": "Urdatorn",
+  "url": "https://huggingface.co/Urdatorn/sphragis-alm-olmo1b-sentence-herodotus",
+  "created_at": "2026-08-27T23:10:26.000Z",
+  "updated_at": "2026-08-27T23:10:41.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "grc"
+  ],
+  "tags": [
+    "safetensors",
+    "olmo",
+    "ancient-greek",
+    "authorship-attribution",
+    "authorial-language-model",
+    "grc",
+    "base_model:allenai/OLMo-1B-hf",
+    "base_model:finetune:allenai/OLMo-1B-hf",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1176764416,
+  "parameters_human": "1.18B",
+  "storage_bytes": 2353541856,
+  "storage_human": "2.4 GB",
+  "base_model": "allenai/OLMo-1B-hf",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Urdatorn/sphragis-alm-olmo3-greek-7b-herodotus · Hugging Face",
+      "url": "https://huggingface.co/Urdatorn/sphragis-alm-olmo3-greek-7b-herodotus",
+      "snippet": "Each model is a full further-pretraining of Urdatorn/olmo3-7b-ancient-greek on one author&#x27;s Sphragis training sentences only; a sentence is attributed to whichever of the seventeen models finds it least surprising. This model was trained on Herodotus: 5,900 sentences, 624,910 scored tokens from the sentence_1 training split."
+    },
+    {
+      "title": "AMD-OLMo-1B - Hugging Face",
+      "url": "https://huggingface.co/amd/AMD-OLMo-1B",
+      "snippet": "AMD-OLMo AMD-OLMo are a series of 1B language models trained from scratch by AMD on AMD Instinct™ MI250 GPUs. The training code used is based on OLMo. We release the pre-trained model, supervised fine-tuned model, and DPO aligned model as follows: AMD-OLMo-1B: Pre-trained on a subset of Dolma v1.7 that consists of 1.3 trillion tokens. AMD-OLMo-1B-SFT: Supervised fine-tuned (SFT) on Tulu V2 ..."
+    },
+    {
+      "title": "Sphragis benchmark leaderboard",
+      "url": "https://urdatorn-sphragis-leaderboard.static.hf.space/index.html",
+      "snippet": "Reproducible Ancient Greek authorship-attribution benchmark results across prose and verse."
+    },
+    {
+      "title": "OLMo : Accelerating the Science of Language Models",
+      "url": "https://arxiv.org/html/2402.00838v1",
+      "snippet": "We believe that full access to open language models for the research community is critical to the scientific study of these models, their strengths and weaknesses, and their biases and risks. Accordingly, we introduce OLMo, a state-of-the-art, truly open language model and framework to build, study, and advance LMs, along with the training data, training and evaluation code, intermediate model ..."
+    },
+    {
+      "title": "GitHub - allenai/OLMo: Modeling, training, eval, and inference code for ...",
+      "url": "https://github.com/allenai/OLMo",
+      "snippet": "OLMo is a repository for training and using AI2&#x27;s state-of-the-art open language models. It is designed by scientists, for scientists."
+    }
+  ]
+}

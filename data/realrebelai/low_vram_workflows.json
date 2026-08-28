@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "realrebelai/LOW_VRAM_Workflows",
+  "slug": "realrebelai-low_vram_workflows",
+  "author": "realrebelai",
+  "url": "https://huggingface.co/realrebelai/LOW_VRAM_Workflows",
+  "created_at": "2026-03-20T23:17:00.000Z",
+  "updated_at": "2026-08-28T01:05:23.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-image",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "comfyui",
+    "workflows",
+    "low-vram",
+    "text-to-image",
+    "text-to-video",
+    "optimization",
+    "realrebelai",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 36,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1945389,
+  "storage_human": "2 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "realrebelai/LOW_VRAM_Workflows · Hugging Face",
+      "url": "https://huggingface.co/realrebelai/LOW_VRAM_Workflows",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "realrebelai/LOW_VRAM_Workflows at main - Hugging Face",
+      "url": "https://huggingface.co/realrebelai/LOW_VRAM_Workflows/tree/main/MR_FLOW",
+      "snippet": "36 Text-to-Image comfyui workflows low-vram text-to-video optimization realrebelai License:apache-2.0 Model card FilesFiles and versions xet Community 1 Copy to bucket new main LOW_VRAM_Workflows /MR_FLOW 81.9 kB Ctrl+K Ctrl+K 1 contributor History:16 commits realrebelai Upload ZIT_4x_MrFlow_workflow.json ff6d64c verifiedabout 1 month ago Krea2 ..."
+    },
+    {
+      "title": "REBEL AI - YouTube",
+      "url": "https://www.youtube.com/@realrebelai/videos",
+      "snippet": "LOW VRAM Tutorial Videos. ️ Image & Video Model Reviews. 💻 ComfyUI Custom Nodes. ️ Its my goal to provide low vram workflows in a fast and efficient manner to get the latest models running ..."
+    },
+    {
+      "title": "LTX-2.5 (w4a8 + GGUFs) | LOW VRAM Workflow - YouTube",
+      "url": "https://www.youtube.com/watch?v=pgWSDVSgon0",
+      "snippet": "GGUF:https://huggingface.co/realrebelai/LTX-2.5_GGUFs/tree/mainw4a8 Model:https://huggingface.co/realrebelai/Rebels_w4a8s/tree/main/LTXw4a8 Encoder:https://h..."
+    },
+    {
+      "title": "RealRebelAI/REBELS_LOW_VRAM_ComfyUI-Klein9B-AsymFlow - GitHub",
+      "url": "https://github.com/RealRebelAI/REBELS_LOW_VRAM_ComfyUI-Klein9B-AsymFlow",
+      "snippet": "Standalone ComfyUI node pack for AsymFLUX.2 Klein -- pixel-space text-to-image generation. Based on AsymFlow: Asymmetric Flow Models by Hansheng Chen et al. (Stanford University). Core inference code extracted from LakonLab."
+    }
+  ]
+}

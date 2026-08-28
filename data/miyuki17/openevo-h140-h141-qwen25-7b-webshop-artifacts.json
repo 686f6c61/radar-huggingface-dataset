@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "miyuki17/openevo-h140-h141-qwen25-7b-webshop-artifacts",
+  "slug": "miyuki17-openevo-h140-h141-qwen25-7b-webshop-artifacts",
+  "author": "miyuki17",
+  "url": "https://huggingface.co/miyuki17/openevo-h140-h141-qwen25-7b-webshop-artifacts",
+  "created_at": "2026-08-27T19:47:10.000Z",
+  "updated_at": "2026-08-27T20:12:34.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "peft",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "peft",
+    "safetensors",
+    "openevo",
+    "webshop",
+    "sd-lora",
+    "qwen2.5",
+    "historical-artifact",
+    "en",
+    "base_model:Qwen/Qwen2.5-7B-Instruct",
+    "base_model:adapter:Qwen/Qwen2.5-7B-Instruct",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 3032064360,
+  "storage_human": "3.0 GB",
+  "base_model": "Qwen/Qwen2.5-7B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "miyuki17/openevo-qwen25-7b-webshop-sd-lora · Hugging Face",
+      "url": "https://huggingface.co/miyuki17/openevo-qwen25-7b-webshop-sd-lora",
+      "snippet": "Instructions to use miyuki17/openevo-qwen25-7b-webshop-sd-lora with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "miyuki17/openevo-adapter-archive · Hugging Face",
+      "url": "https://huggingface.co/miyuki17/openevo-adapter-archive",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "ChatGPT: Chat, Work, Create & Code with AI",
+      "url": "https://chatgpt.com/",
+      "snippet": "Use ChatGPT to answer questions, write, create images, complete work, and code—all in one place. Get started for free or download the app."
+    },
+    {
+      "title": "WhatsApp Web",
+      "url": "https://web.whatsapp.com/",
+      "snippet": "Log in to WhatsApp Web for simple, reliable and private messaging on your desktop. Send and receive messages and files with ease, all for free."
+    },
+    {
+      "title": "MAC Address Vendor Lookup | MAC Address Lookup",
+      "url": "https://maclookup.app/",
+      "snippet": "Fast and easy MAC address lookup on IEEE directory and Wireshark manufacturer database. Search vendor, manufacturer or organization of a device by MAC/OUI address. Fast REST API"
+    }
+  ]
+}

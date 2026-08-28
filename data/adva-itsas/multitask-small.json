@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "adva-itsas/multitask-small",
+  "slug": "adva-itsas-multitask-small",
+  "author": "adva-itsas",
+  "url": "https://huggingface.co/adva-itsas/multitask-small",
+  "created_at": "2026-08-27T23:34:02.000Z",
+  "updated_at": "2026-08-27T23:34:11.000Z",
+  "license": "bsd-3-clause",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "mocov3",
+    "pytorch",
+    "multitask",
+    "license:bsd-3-clause",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 16576,
+  "parameters_human": "16576",
+  "storage_bytes": 66784,
+  "storage_human": "66784 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Small Open Source Models | Artificial Analysis",
+      "url": "https://artificialanalysis.ai/models/open-source/small",
+      "snippet": "Comparisons of Small Open Source AI Models (4B-40B) Open source AI models with between 4B to 40B parameters. Models are considered open source (also commonly referred to as open weights) where their weights are accessible to download. This allows self-hosting on your own infrastructure and enables customizing the model such as through fine-tuning."
+    },
+    {
+      "title": "Attacking all tasks at once using adversarial examples in multi-task ...",
+      "url": "https://www.sciencedirect.com/science/article/pii/S0925231225021757",
+      "snippet": "To answer RQ1, we first categorize existing attempts at attacking multi-task models into two strategies, both relying on adapting existing single-task white-box attack approaches to multi-task models. We refer to these existing approaches as \" adapted multi-task attacks \" throughout the paper."
+    },
+    {
+      "title": "arXiv:2502.09854v1 [cs.CL] 14 Feb 2025",
+      "url": "https://arxiv.org/pdf/2502.09854v1",
+      "snippet": "Abstract In this work, we demonstrate that small lan-guage models (SLMs), specifically a 100M pa-rameter GPT-2 model (Radford et al., 2019), can achieve competitive performance in mul-titask prompt generation tasks while requiring only a fraction of the computational resources needed by large language models (LLMs). Through a novel combination of upside-down reinforcement learning and ..."
+    },
+    {
+      "title": "GitHub - afondiel/awesome-smol: A curated list of small foundation ...",
+      "url": "https://github.com/afondiel/awesome-smol",
+      "snippet": "Awesome Smol is a curated list of small, lightweight AI models, tools, and resources for domains like language, audio, vision, and multimodal tasks. These models are designed for edge devices, resource-constrained environments, and rapid prototyping. Inspiration: awesome-tensorflow-lite."
+    },
+    {
+      "title": "Multi-Task Learning(MTL) for Deep Learning - GeeksforGeeks",
+      "url": "https://www.geeksforgeeks.org/deep-learning/multi-task-learningmtl-for-deep-learning/",
+      "snippet": "Multi-Task Learning (MTL) is a machine learning approach where a single model learns multiple related tasks simultaneously using shared representations, improving generalization and reducing overfitting."
+    }
+  ]
+}

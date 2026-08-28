@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "JONNYVERSE/mobilebert-uncased-mnli",
+  "slug": "jonnyverse-mobilebert-uncased-mnli",
+  "author": "JONNYVERSE",
+  "url": "https://huggingface.co/JONNYVERSE/mobilebert-uncased-mnli",
+  "created_at": "2026-08-27T21:41:30.000Z",
+  "updated_at": "2026-08-27T21:41:31.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "zero-shot-classification",
+  "library": "transformers.js",
+  "languages": [],
+  "tags": [
+    "transformers.js",
+    "onnx",
+    "mobilebert",
+    "text-classification",
+    "zero-shot-classification",
+    "base_model:typeform/mobilebert-uncased-mnli",
+    "base_model:quantized:typeform/mobilebert-uncased-mnli",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 435928702,
+  "storage_human": "436 MB",
+  "base_model": "typeform/mobilebert-uncased-mnli",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "typeform/mobilebert-uncased-mnli · Hugging Face",
+      "url": "https://huggingface.co/typeform/mobilebert-uncased-mnli",
+      "snippet": "Model Card for MobileBERT: a Compact Task-Agnostic BERT for Resource-Limited Devices Model Details Model Description This model is the Multi-Genre Natural Language Inference (MNLI) fine-turned version of the uncased MobileBERT model. Developed by: Typeform Shared by [Optional]: Typeform Model type: Zero-Shot-Classification Language (s) (NLP ..."
+    },
+    {
+      "title": "AI Model Catalog | Microsoft Foundry Models",
+      "url": "https://ai.azure.com/catalog/models/typeform-mobilebert-uncased-mnli",
+      "snippet": "typeform/mobilebert-uncased-mnli is a pre-trained language model available on the Hugging Face Hub. It&#x27;s specifically designed for the zero-shot-classification task in the transformers library. If you want to learn more about the model&#x27;s architecture, hyperparameters, limitations, and biases, you can find this information on the model&#x27;s dedicated Model Card on the Hugging Face Hub . Here&#x27;s an ..."
+    },
+    {
+      "title": "README.md · typeform/mobilebert-uncased-mnli at main",
+      "url": "https://huggingface.co/typeform/mobilebert-uncased-mnli/blob/main/README.md",
+      "snippet": "Model Card for MobileBERT: a Compact Task-Agnostic BERT for Resource-Limited Devices Model Details Model Description This model is the Multi-Genre Natural Language Inference (MNLI) fine-turned version of the uncased MobileBERT model."
+    },
+    {
+      "title": "Mobilebert Uncased Mnli - AI Model Insights & Benchmarks",
+      "url": "https://free2aitools.com/model/typeform/mobilebert-uncased-mnli",
+      "snippet": "🆔 Identity & Source id hf-dataset--typeform--mobilebert-uncased-mnli slug typeform--mobilebert-uncased-mnli source huggingface author typeform license tags transformers, pytorch, safetensors, mobilebert, text-classification, zero-shot-classification, en, dataset:multi_nli, arxiv:1910.09700, endpoints_compatible, deploy:azure, region:us"
+    },
+    {
+      "title": "MobileBert-Uncased-MNLI Open-Source Model - A Natural Language ...",
+      "url": "https://model.aibase.com/models/details/1915693938834563073",
+      "snippet": "This model is a fine-tuned version of the uncased MobileBERT model on the Multi-Genre Natural Language Inference (MNLI) task, suitable for zero-shot classification tasks."
+    }
+  ]
+}

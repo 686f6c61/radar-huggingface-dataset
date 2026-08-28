@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "potteryrage/SLp",
+  "slug": "potteryrage-slp",
+  "author": "potteryrage",
+  "url": "https://huggingface.co/potteryrage/SLp",
+  "created_at": "2026-08-27T23:19:18.000Z",
+  "updated_at": "2026-08-28T00:04:55.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "biology",
+    "synthetic-lethality",
+    "world-model",
+    "single-cell",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 7111368777,
+  "storage_human": "7.1 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "potteryrage (Jack Large) - Hugging Face",
+      "url": "https://huggingface.co/potteryrage",
+      "snippet": "AI & ML interests ... Recent Activity updated a Space about 6 hours ago ... published a Space about 6 hours ago"
+    },
+    {
+      "title": "potteryrage/Thomson-1.0-Small-Q6_K-GGUF · Hugging Face",
+      "url": "https://huggingface.co/potteryrage/Thomson-1.0-Small-Q6_K-GGUF",
+      "snippet": "This model was converted to GGUF format from thomsonreuters/Thomson-1.-Small using llama.cpp via the ggml.ai&#x27;s GGUF-my-repo space. Refer to the original model card for more details on the model."
+    },
+    {
+      "title": "72 AI Prompts for Speech-Language Pathologists: Copy, Customize & Use ...",
+      "url": "https://speechtherapisttools.com/blog/ultimate-list-of-ai-prompts-for-therapy",
+      "snippet": "72 copy-and-use AI prompts for Speech-Language Pathologists — covering articulation, language, fluency, AAC, dysphagia, voice, and more. Works with ChatGPT, Claude, and Gemini."
+    },
+    {
+      "title": "Disentangle and Regularize: Sign Language Production with Articulator ...",
+      "url": "https://arxiv.org/pdf/2504.06610",
+      "snippet": "1. Introduction Sign language is the primary mode of communication for Deaf and Hard-of-Hearing (DHH) individuals, involving a rich interplay of manual (hand movements) and non-manual (facial expressions, body posture) features. With the rise of deep learning, sign language production (SLP)—the task of generating sign sequences from spoken text—has gained in-creasing attention. However ..."
+    },
+    {
+      "title": "SLP Tools | Trusted by SLPs",
+      "url": "https://slptools.ai/",
+      "snippet": "The #1 AI platform built exclusively by SLPs for SLPs, designed to eliminate burnout for good. Access AI-powered SOAP notes, hands-free language samples, done-for-you report writing, an SLP-specific Chat tool, and a state-of-the-art AI Calendar - all in one place. Graduate students benefit too: we were the first to create an AI Praxis Prep tool that identifies your weak areas based on ETS ..."
+    }
+  ]
+}

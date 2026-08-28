@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "zeromodels/efficientdet_d6",
+  "slug": "zeromodels-efficientdet_d6",
+  "author": "zeromodels",
+  "url": "https://huggingface.co/zeromodels/efficientdet_d6",
+  "created_at": "2026-08-27T21:31:23.000Z",
+  "updated_at": "2026-08-27T21:31:25.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "object-detection",
+  "library": "zeromodels",
+  "languages": [],
+  "tags": [
+    "zeromodels",
+    "keras",
+    "efficientdet",
+    "object-detection",
+    "arxiv:1911.09070",
+    "pytorch",
+    "jax",
+    "tf",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 211655384,
+  "storage_human": "212 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "automl/efficientdet at master · google/automl · GitHub",
+      "url": "https://github.com/google/automl/tree/master/efficientdet",
+      "snippet": "Our model family starts from EfficientDet-D0, which has comparable accuracy as YOLOv3. Then we scale up this baseline model using our compound scaling method to obtain a list of detection models EfficientDet-D1 to D6, with different trade-offs between accuracy and model complexity. ** For simplicity, we compare the whole detectors here."
+    },
+    {
+      "title": "automl/efficientdet/README.md at master · google/automl",
+      "url": "https://github.com/google/automl/blob/master/efficientdet/README.md",
+      "snippet": "Our model family starts from EfficientDet-D0, which has comparable accuracy as YOLOv3. Then we scale up this baseline model using our compound scaling method to obtain a list of detection models EfficientDet-D1 to D6, with different trade-offs between accuracy and model complexity. ** For simplicity, we compare the whole detectors here."
+    },
+    {
+      "title": "efficientdet.ipynb - Colab",
+      "url": "https://colab.research.google.com/github/NVIDIA-AI-IOT/nvidia-tao/blob/main/tensorflow/efficientdet/efficientdet.ipynb",
+      "snippet": "Transfer learning is the process of transferring learned features from one application to another. It is a commonly used training technique where you use a model trained on one task and re-train to use it on a different task. Train Adapt Optimize (TAO) Toolkit is a simple and easy-to-use Python based AI toolkit for taking purpose-built AI models and customizing them with users&#x27; own data."
+    },
+    {
+      "title": "tutorial.ipynb - Colab",
+      "url": "https://colab.research.google.com/github/google/automl/blob/master/efficientdet/tutorial.ipynb",
+      "snippet": "There are two types of latency: network latency and end-to-end latency. network latency: from the first conv op to the network class and box prediction. end-to-end latency: from image preprocessing, network, to the final postprocessing to generate a annotated new image."
+    },
+    {
+      "title": "EfficientDet模型解读（附源码+论文）-CSDN博客",
+      "url": "https://blog.csdn.net/m0_46677695/article/details/144068709",
+      "snippet": "代码链接： EfficientDet-study （建议看我的，关键部分代码注释详细，参考 Yet-Another-EfficientDet-Pytorch） 论文链接： EfficientDet 、 EfficientNet 、 EfficientNetV2 官方链接： EfficientDet EfficientNet 在说 EfficientDet 之前得先了解 EfficientNet 架构。 在 EfficientNet 没出来之前，基本就是 ResNet 的天下。看一下官方给的对比 ..."
+    }
+  ]
+}

@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "Justpablogomez/zero-shot-transfer",
+  "slug": "justpablogomez-zero-shot-transfer",
+  "author": "Justpablogomez",
+  "url": "https://huggingface.co/Justpablogomez/zero-shot-transfer",
+  "created_at": "2026-08-27T19:23:43.000Z",
+  "updated_at": "2026-08-27T19:24:05.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "transformer",
+    "research-notes",
+    "zero-shot-transfer",
+    "license:cc-by-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 24832,
+  "parameters_human": "24832",
+  "storage_bytes": 99808,
+  "storage_human": "99808 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Zero-Shot Transfer in AI & Robotics | Inference Systems",
+      "url": "https://inferensys.com/glossary/sim-to-real-transfer-learning/domain-randomization/zero-shot-transfer",
+      "snippet": "Zero-shot transfer is the deployment of a machine learning model or control policy, trained exclusively in a simulated environment, directly onto a physical system in the real world without any subsequent fine-tuning or adaptation using real-world data. This is the primary goal of robustness-focused training techniques like domain randomization, which aim to bridge the reality gap by exposing ..."
+    },
+    {
+      "title": "[2602.15922] World Action Models are Zero-shot Policies",
+      "url": "https://arxiv.org/abs/2602.15922",
+      "snippet": "State-of-the-art Vision-Language-Action (VLA) models excel at semantic generalization but struggle to generalize to unseen physical motions in novel environments. We introduce DreamZero, a World Action Model (WAM) built upon a pretrained video diffusion backbone. Unlike VLAs, WAMs learn physical dynamics by predicting future world states and actions, using video as a dense representation of ..."
+    },
+    {
+      "title": "Ai2 introduces open, simulation-first stack for physical AI, achieving ...",
+      "url": "https://allenai.org/blog/molmobot",
+      "snippet": "Ai2 introduces open, simulation-first stack for physical AI, achieving zero-shot transfer to real robots March 11, 2026 Ai2"
+    },
+    {
+      "title": "Free AI Models - GitHub",
+      "url": "https://github.com/ClawLabsAI/free-ai-models",
+      "snippet": "The free AI model landscape changes every week — models get added, rate limits change, providers shut down without notice. This repo tracks it all automatically so you don&#x27;t have to. Use it to: Find the best free model for your current task Track which providers offer the most generous free tiers Get notified of new free models via GitHub Watch → Releases Build your own routing logic on ..."
+    },
+    {
+      "title": "Latest AI Model Releases — August 2026",
+      "url": "https://aireleasetracker.com/latest",
+      "snippet": "The newest AI model releases as of August 2026. Most recent: GLM-5.3-Flash by Z.ai on Aug 26 2026. Track every new frontier model from OpenAI, Anthropic, Google DeepMind, Meta, SpaceXAI, DeepSeek, Mistral, and Moonshot AI — updated continuously."
+    }
+  ]
+}

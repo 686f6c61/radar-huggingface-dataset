@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "JasonYang66/VLAct-Qwen3VL4B-Pretrained",
+  "slug": "jasonyang66-vlact-qwen3vl4b-pretrained",
+  "author": "JasonYang66",
+  "url": "https://huggingface.co/JasonYang66/VLAct-Qwen3VL4B-Pretrained",
+  "created_at": "2026-08-27T23:53:04.000Z",
+  "updated_at": "2026-08-27T23:56:56.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "robotics",
+    "vision-language-action",
+    "vlact",
+    "starvla",
+    "qwen3-vl",
+    "continual-pretraining",
+    "multi-embodiment",
+    "base_model:StarVLA/Qwen3-VL-4B-Instruct-Action",
+    "base_model:finetune:StarVLA/Qwen3-VL-4B-Instruct-Action",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 11736465942,
+  "storage_human": "11.7 GB",
+  "base_model": "StarVLA/Qwen3-VL-4B-Instruct-Action",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": true,
+  "removed_at": "2026-08-28T02:07:28.355Z",
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "JasonYang66/VLAct-Qwen3vl4b-OFT-RoboDojo · Hugging Face",
+      "url": "https://huggingface.co/JasonYang66/VLAct-Qwen3vl4b-OFT-RoboDojo",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Models - Hugging Face",
+      "url": "https://huggingface.co/models?other=vlact",
+      "snippet": "Explore machine learning models. 1 Base only Inference AvailableInference Edit filters Sort: Trending Active filters: vlact Clear all"
+    },
+    {
+      "title": "GitHub - QwenLM/Qwen3-VL: Qwen3-VL is the multimodal large language ...",
+      "url": "https://github.com/QwenLM/Qwen3-VL",
+      "snippet": "Meet Qwen3-VL — the most powerful vision-language model in the Qwen series to date. This generation delivers comprehensive upgrades across the board: superior text understanding & generation, deeper visual perception & reasoning, extended context length, enhanced spatial and video dynamics comprehension, and stronger agent interaction capabilities. Available in Dense and MoE architectures ..."
+    },
+    {
+      "title": "GitHub - QwenLM/Qwen-VL: The official repo of Qwen-VL (通义千问-VL) chat ...",
+      "url": "https://github.com/QwenLM/Qwen-VL",
+      "snippet": "The official repo of Qwen-VL (通义千问-VL) chat & pretrained large vision language model proposed by Alibaba Cloud. - QwenLM/Qwen-VL"
+    },
+    {
+      "title": "Qwen3 Complete Guide: Every Model from 0.6B to 235B",
+      "url": "https://insiderllm.com/guides/qwen3-complete-guide/",
+      "snippet": "Qwen3 is the best open model family for budget local AI. Dense models from 0.6B to 32B, MoE models that punch above their weight, and a /think toggle no one else has."
+    }
+  ]
+}

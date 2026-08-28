@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "Oscilla/Qwen3.5-4B-mlx-8Bit",
+  "slug": "oscilla-qwen3-5-4b-mlx-8bit",
+  "author": "Oscilla",
+  "url": "https://huggingface.co/Oscilla/Qwen3.5-4B-mlx-8Bit",
+  "created_at": "2026-08-27T20:41:58.000Z",
+  "updated_at": "2026-08-27T20:42:06.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_5",
+    "image-text-to-text",
+    "mlx",
+    "conversational",
+    "base_model:Qwen/Qwen3.5-4B",
+    "base_model:quantized:Qwen/Qwen3.5-4B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "8-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1183558656,
+  "parameters_human": "1.18B",
+  "storage_bytes": 4489623332,
+  "storage_human": "4.5 GB",
+  "base_model": "Qwen/Qwen3.5-4B",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Oscilla/Qwen3.5-0.8B-mlx-4Bit · Hugging Face",
+      "url": "https://huggingface.co/Oscilla/Qwen3.5-0.8B-mlx-4Bit",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Qwen/Qwen3.5-4B · Hugging Face",
+      "url": "https://huggingface.co/Qwen/Qwen3.5-4B",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "qwen/qwen3.5-4b • LM Studio",
+      "url": "https://lmstudio.ai/models/qwen/qwen3.5-4b",
+      "snippet": "Qwen3.5 4B Qwen3.5 represents a significant leap forward, integrating breakthroughs in multimodal learning, architectural efficiency, reinforcement learning scale, and global accessibility. This is a 4B parameter dense model, supporting a native context length of 262,144 tokens. Highlights Unified Vision-Language Foundation."
+    },
+    {
+      "title": "GitHub - ABDtmx/Qwen3.5: Qwen3.5 is the large language model series ...",
+      "url": "https://github.com/ABDtmx/Qwen3.5",
+      "snippet": "Qwen3.5 features the following enhancement: Unified Vision-Language Foundation: Early fusion training on trillions of multimodal tokens achieves cross-generational parity with Qwen3 and outperforms Qwen3-VL models across reasoning, coding, agents, and visual understanding benchmarks."
+    },
+    {
+      "title": "youssofal/MTPLX: 3x faster speeds on MLX - GitHub",
+      "url": "https://github.com/youssofal/mtplx",
+      "snippet": "Use a complete model that already includes its matching MTP weights, or use Forge to build and verify an artifact from its original source checkpoint. The official catalog lives on Hugging Face under Youssofal: Qwen 3.5 (4B, 9B), Qwen 3.6 (27B, 35B MoE) in speed and quality builds (the 35B MoE adds a balance build), plus Gemma 4."
+    }
+  ]
+}

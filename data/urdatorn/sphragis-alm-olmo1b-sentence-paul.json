@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "Urdatorn/sphragis-alm-olmo1b-sentence-paul",
+  "slug": "urdatorn-sphragis-alm-olmo1b-sentence-paul",
+  "author": "Urdatorn",
+  "url": "https://huggingface.co/Urdatorn/sphragis-alm-olmo1b-sentence-paul",
+  "created_at": "2026-08-27T23:12:51.000Z",
+  "updated_at": "2026-08-27T23:13:06.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "grc"
+  ],
+  "tags": [
+    "safetensors",
+    "olmo",
+    "ancient-greek",
+    "authorship-attribution",
+    "authorial-language-model",
+    "grc",
+    "base_model:allenai/OLMo-1B-hf",
+    "base_model:finetune:allenai/OLMo-1B-hf",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1176764416,
+  "parameters_human": "1.18B",
+  "storage_bytes": 2353541856,
+  "storage_human": "2.4 GB",
+  "base_model": "allenai/OLMo-1B-hf",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Urdatorn/sphragis-alm-olmo3-7b-plato · Hugging Face",
+      "url": "https://huggingface.co/Urdatorn/sphragis-alm-olmo3-7b-plato",
+      "snippet": "Each model is a full further-pretraining of allenai/Olmo-3-1025-7B (revision a81bae42db3975be1671e27b9c9a56da1a9f980f) on one author&#x27;s Sphragis training sentences only; a sentence is attributed to whichever of the seventeen models finds it least surprising."
+    },
+    {
+      "title": "allenai/OLMo-1B-0724-hf · Hugging Face",
+      "url": "https://huggingface.co/allenai/OLMo-1B-0724-hf",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GitHub - allenai/OLMo: Modeling, training, eval, and inference code for ...",
+      "url": "https://github.com/allenai/OLMo",
+      "snippet": "OLMo is a repository for training and using AI2&#x27;s state-of-the-art open language models. It is designed by scientists, for scientists."
+    },
+    {
+      "title": "OLMo : Accelerating the Science of Language Models",
+      "url": "https://arxiv.org/html/2402.00838v1",
+      "snippet": "We believe that full access to open language models for the research community is critical to the scientific study of these models, their strengths and weaknesses, and their biases and risks. Accordingly, we introduce OLMo, a state-of-the-art, truly open language model and framework to build, study, and advance LMs, along with the training data, training and evaluation code, intermediate model ..."
+    },
+    {
+      "title": "GitHub - sphragis-oss/sphragis: EU AI Act compliance gateway for Claude ...",
+      "url": "https://github.com/sphragis-oss/sphragis",
+      "snippet": "Sphragis The EU AI Act compliance gateway you actually control. A single Go binary that sits between your apps and any OpenAI- or Anthropic-compatible LLM, with first-class support for Claude (Claude Code and the Anthropic SDKs)."
+    }
+  ]
+}

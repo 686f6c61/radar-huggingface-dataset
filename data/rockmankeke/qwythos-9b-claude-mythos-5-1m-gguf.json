@@ -38,12 +38,12 @@
     "conversational"
   ],
   "likes": 0,
-  "downloads_30d": 4,
+  "downloads_30d": 402,
   "trending_score": 0,
   "parameters": 8953803264,
   "parameters_human": "8.95B",
-  "storage_bytes": 334730778343,
-  "storage_human": "334.7 GB",
+  "storage_bytes": 96248098016,
+  "storage_human": "96.2 GB",
   "base_model": "empero-ai/Qwythos-9B-Claude-Mythos-5-1M",
   "formats": [
     "gguf"

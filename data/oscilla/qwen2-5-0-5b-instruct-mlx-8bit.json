@@ -1,0 +1,78 @@
+{
+  "schema": 1,
+  "id": "Oscilla/Qwen2.5-0.5B-Instruct-mlx-8Bit",
+  "slug": "oscilla-qwen2-5-0-5b-instruct-mlx-8bit",
+  "author": "Oscilla",
+  "url": "https://huggingface.co/Oscilla/Qwen2.5-0.5B-Instruct-mlx-8Bit",
+  "created_at": "2026-08-27T20:36:50.000Z",
+  "updated_at": "2026-08-27T20:36:53.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen2",
+    "text-generation",
+    "chat",
+    "mlx",
+    "mlx-my-repo",
+    "conversational",
+    "en",
+    "base_model:Qwen/Qwen2.5-0.5B-Instruct",
+    "base_model:quantized:Qwen/Qwen2.5-0.5B-Instruct",
+    "license:apache-2.0",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "8-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 138998144,
+  "parameters_human": "139.0M",
+  "storage_bytes": 536468253,
+  "storage_human": "536 MB",
+  "base_model": "Qwen/Qwen2.5-0.5B-Instruct",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Qwen2.5 - a mlx-community Collection - Hugging Face",
+      "url": "https://huggingface.co/collections/mlx-community/qwen25",
+      "snippet": "The Qwen 2.5 models are a series of AI models trained on 18 trillion tokens, supporting 29 languages and offering advanced features such as instructio"
+    },
+    {
+      "title": "qwen2.5:0.5b-instruct - ollama.com",
+      "url": "https://ollama.com/library/qwen2.5:0.5b-instruct",
+      "snippet": "Qwen2.5 models are pretrained on Alibaba&#x27;s latest large-scale dataset, encompassing up to 18 trillion tokens. The model supports up to 128K tokens and has multilingual support."
+    },
+    {
+      "title": "Qwen2.5-0.5B-Instruct · Models",
+      "url": "https://www.modelscope.cn/models/qwen/Qwen2.5-0.5B-Instruct",
+      "snippet": "For Qwen2.5, we release a number of base language models and instruction-tuned language models ranging from 0.5 to 72 billion parameters. Qwen2.5 brings the following improvements upon Qwen2: Significantly more knowledge and has greatly improved capabilities in coding and mathematics, thanks to our specialized expert models in these domains."
+    },
+    {
+      "title": "GitHub - mx4ai/qwen2.5: Qwen2.5 is the large language model series ...",
+      "url": "https://github.com/mx4ai/qwen2.5",
+      "snippet": "Today, we are excited to introduce the latest addition to the Qwen family: Qwen2.5. Dense, easy-to-use, decoder-only language models, available in 0.5B, 1.5B, 3B, 7B, 14B, 32B, and 72B sizes, and base and instruct variants. Pretrained on our latest large-scale dataset, encompassing up to 18T tokens."
+    },
+    {
+      "title": "qwen2.5:0.5b-instruct/system - ollama.com",
+      "url": "https://ollama.com/library/qwen2.5:0.5b-instruct/blobs/66b9ea09bd5b",
+      "snippet": "Qwen2.5 models are pretrained on Alibaba&#x27;s latest large-scale dataset, encompassing up to 18 trillion tokens. The model supports up to 128K tokens and has multilingual support."
+    }
+  ]
+}

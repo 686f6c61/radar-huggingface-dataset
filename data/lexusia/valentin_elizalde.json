@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "LexusIa/VALENTIN_ELIZALDE",
+  "slug": "lexusia-valentin_elizalde",
+  "author": "LexusIa",
+  "url": "https://huggingface.co/LexusIa/VALENTIN_ELIZALDE",
+  "created_at": "2026-08-27T23:29:29.000Z",
+  "updated_at": "2026-08-27T23:29:54.000Z",
+  "license": "openrail",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:openrail",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 115753796,
+  "storage_human": "116 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Valentín Elizalde AI Voice Generator — Free | cvoice.ai",
+      "url": "https://cvoice.ai/ai-voice/valentin-elizalde-voice",
+      "snippet": "Generate free text-to-speech audio with Valentín Elizalde&#x27;s AI voice. World Music Singer voice for voiceovers, narrations, and content creation — no limits on cvoice.ai."
+    },
+    {
+      "title": "Valentin Elizalde RVC Model AI Voice",
+      "url": "https://aimodels.org/ai-models/rvc-models-ai-voice/valentin-elizalde-ai-voice/",
+      "snippet": "Explore AI Valentin Elizalde&#x27;s new collection of songs created with VITS Retrieval based Voice Conversion methods. With a diverse range of styles and languages, this album showcases the impressive performance of our community&#x27;s AI models. Experience the captivating sounds of rock, pop, ska, reggae, and more as AI technology takes center stage."
+    },
+    {
+      "title": "Valentín Elizalde API | Voice Cover | ModelsLab",
+      "url": "https://modelslab.com/models/modelslab/elizalde",
+      "snippet": "ValentíN Elizalde is a voice cloning AI model by ModelsLab available on ModelsLab. Access ValentíN Elizalde through our API with pay-per-use pricing and no minimum commitments."
+    },
+    {
+      "title": "LexusIa (GatunasIA) - Hugging Face",
+      "url": "https://huggingface.co/LexusIa/models",
+      "snippet": "AI & ML interests ... Recent Activity published a model 8 days ago ... updated a model 8 days ago"
+    },
+    {
+      "title": "QuickWick/Music-AI-Voices at main - Hugging Face",
+      "url": "https://huggingface.co/QuickWick/Music-AI-Voices/tree/main/Valentin%20Elizalde%20(RVC)%20250%20Epoch",
+      "snippet": "Music-AI-Voices like 501 License: other Model card Files Files and versions Use with library main Music-AI-Voices / Valentin Elizalde (RVC) 250 Epoch"
+    }
+  ]
+}

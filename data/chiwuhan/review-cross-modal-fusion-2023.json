@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "ChiwuHan/review-cross-modal-fusion-2023",
+  "slug": "chiwuhan-review-cross-modal-fusion-2023",
+  "author": "ChiwuHan",
+  "url": "https://huggingface.co/ChiwuHan/review-cross-modal-fusion-2023",
+  "created_at": "2026-08-27T20:41:50.000Z",
+  "updated_at": "2026-08-27T20:42:01.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "transformer",
+    "research-notes",
+    "cross-modal-fusion",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 16576,
+  "parameters_human": "16576",
+  "storage_bytes": 66784,
+  "storage_human": "66784 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "A Comprehensive Survey on Deep Learning Multi-Modal Fusion: Methods ...",
+      "url": "https://www.sciencedirect.com/org/science/article/pii/S1546221824005216",
+      "snippet": "In the real world, various modal information exists from the external environment and is interrelated with each other to form a whole. Sources of multi-modal information include text, images, video, audio, sensors, and so on [1]. When a method utilizes several data types to solve the problem, it is a multi-modal method. Compared with the unimodal method, the multi-modal fusion method can ..."
+    },
+    {
+      "title": "(PDF) A Comparative Review on Multi-modal Sensors Fusion ... - ResearchGate",
+      "url": "https://www.researchgate.net/publication/372080396_A_Comparative_Review_on_Multi-modal_Sensors_Fusion_based_on_Deep_Learning",
+      "snippet": "PDF | On Jul 1, 2023, Qin Tang and others published A Comparative Review on Multi-modal Sensors Fusion based on Deep Learning | Find, read and cite all the research you need on ResearchGate"
+    },
+    {
+      "title": "Apex | Futures Prop Firm | Funded Trading Accounts",
+      "url": "https://apextraderfunding.com/",
+      "snippet": "Get funded to trade with Apex Trader Funding. Pass the evaluation, trade our capital, and keep 100% of your profits until you reach $25K. Stop risking your own money."
+    },
+    {
+      "title": "A Review of Multi-Sensor Fusion in Autonomous Driving - MDPI",
+      "url": "https://www.mdpi.com/1424-8220/25/19/6033",
+      "snippet": "Multi-modal sensor fusion has become a cornerstone of robust autonomous driving systems, enabling perception models to integrate complementary cues from cameras, LiDARs, radars, and other modalities. This survey provides a structured overview of recent advances in deep learning-based fusion methods, categorizing them by architectural paradigms (e.g., BEV-centric fusion and cross-modal ..."
+    },
+    {
+      "title": "Multimodal Alignment and Fusion: A Survey - Springer",
+      "url": "https://link.springer.com/article/10.1007/s11263-025-02667-1",
+      "snippet": "This survey provides a comprehensive overview of recent advances in multimodal alignment and fusion within the field of machine learning, driven by the increasing availability and diversity of data modalities such as text, images, audio, and video. Unlike previous surveys that often focus on specific modalities or limited fusion strategies, our work presents a structure-centric and method ..."
+    }
+  ]
+}

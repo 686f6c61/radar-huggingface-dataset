@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "Piyu12/fruit-veg-yolo11m-detector",
+  "slug": "piyu12-fruit-veg-yolo11m-detector",
+  "author": "Piyu12",
+  "url": "https://huggingface.co/Piyu12/fruit-veg-yolo11m-detector",
+  "created_at": "2026-08-27T19:22:45.000Z",
+  "updated_at": "2026-08-27T19:22:55.000Z",
+  "license": "agpl-3.0",
+  "license_family": "oss",
+  "pipeline_tag": "object-detection",
+  "library": "ultralytics",
+  "languages": [],
+  "tags": [
+    "ultralytics",
+    "object-detection",
+    "yolo11",
+    "fruit-detection",
+    "vegetable-detection",
+    "dataset:bohni-tech/fruits-and-vegi",
+    "license:agpl-3.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 40565868,
+  "storage_human": "41 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Senu-12/snapstock-fruit-vegetable-detector · Hugging Face",
+      "url": "https://huggingface.co/Senu-12/snapstock-fruit-vegetable-detector",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GitHub - ultralytics/ultralytics: Ultralytics YOLO26, YOLO11, YOLOv8 ...",
+      "url": "https://github.com/ultralytics/ultralytics",
+      "snippet": "Our key integrations with leading AI platforms extend the functionality of Ultralytics&#x27; offerings, enhancing tasks like dataset labeling, training, visualization, and model management. Discover how Ultralytics, in collaboration with partners like Weights & Biases, Comet ML, Roboflow, and Intel OpenVINO, can optimize your AI workflow."
+    },
+    {
+      "title": "Senu-12/snapstock-fruit-vegetable-detector at main - Hugging Face",
+      "url": "https://huggingface.co/Senu-12/snapstock-fruit-vegetable-detector/tree/main",
+      "snippet": "Instructions to use Senu-12/snapstock-fruit-vegetable-detector with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "Ultralytics YOLO11",
+      "url": "https://docs.ultralytics.com/models/yolo11",
+      "snippet": "Discover YOLO11, an advancement in real-time object detection, offering excellent accuracy and efficiency for diverse computer vision tasks."
+    },
+    {
+      "title": "YOLO11m Model by Xie Fei 6 - platform.ultralytics.com",
+      "url": "https://platform.ultralytics.com/xie-fei-6/yolo11/yolo11m",
+      "snippet": "YOLO11m model from the YOLO11 project by Xie Fei 6. View training metrics, predictions, and deploy on Ultralytics Platform."
+    }
+  ]
+}

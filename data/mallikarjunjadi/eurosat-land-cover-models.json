@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "MallikarjunJadi/eurosat-land-cover-models",
+  "slug": "mallikarjunjadi-eurosat-land-cover-models",
+  "author": "MallikarjunJadi",
+  "url": "https://huggingface.co/MallikarjunJadi/eurosat-land-cover-models",
+  "created_at": "2026-08-27T19:34:40.000Z",
+  "updated_at": "2026-08-27T19:58:16.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 90241642,
+  "storage_human": "90 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "EuroSAT Land Use and Land Cover Classification using Deep Learning",
+      "url": "https://colab.research.google.com/github/e-chong/Remote-Sensing/blob/master/EuroSAT%20Land%20Cover%20Classification/EuroSAT%20Land%20Use%20and%20Land%20Cover%20Classification%20using%20Deep%20Learning.ipynb",
+      "snippet": "In this notebook, I implement increasingly complex deep learning models to identify land use and land cover classifications on the EuroSAT dataset, a collection of 27,000 Sentinel-2 satellite images consisting of 13 spectral bands and 10 pre-labeled classes (e.g., Highway, AnnualCrop, River, Residential). [1] [2] My best overall model, M_MS, which uses all 13 bands and a 50% training set, was ..."
+    },
+    {
+      "title": "Rhodham96/EuroSatCNN · Hugging Face",
+      "url": "https://huggingface.co/Rhodham96/EuroSatCNN",
+      "snippet": "This model is a Convolutional Neural Network (CNN) designed for land cover classification on the EuroSAT dataset. The EuroSAT dataset consists of Sentinel-2 satellite images, each with 13 spectral bands, and is commonly used for remote sensing applications."
+    },
+    {
+      "title": "GitHub - phelber/EuroSAT: EuroSAT: Land Use and Land Cover ...",
+      "url": "https://github.com/phelber/EuroSAT",
+      "snippet": "EuroSAT: Land Use and Land Cover Classification with Sentinel-2 Short Description In this study, we address the challenge of land use and land cover classification using Sentinel-2 satellite images. The Sentinel-2 satellite images are openly and freely accessible provided in the Earth observation program Copernicus."
+    },
+    {
+      "title": "EuroSAT Land Cover Classification - Vision × Earth Observation",
+      "url": "https://tess-vu.github.io/vision-EO/eurosat.html",
+      "snippet": "Overview EuroSAT is a Sentinel-2 satellite image benchmark covering 10 land-use/land-cover classes across Europe. This project works through four progressively more capable model families — traditional ML, fully connected networks, CNNs, and multispectral transfer learning — to understand what actually drives classification performance on remote sensing imagery."
+    },
+    {
+      "title": "EuroSAT: A Novel Dataset and Deep Learning Benchmark for Land Use and ...",
+      "url": "https://arxiv.org/pdf/1709.00029v1",
+      "snippet": "In this paper, we propose a novel satellite image dataset for the task of land use and land cover classi cation. The proposed EuroSAT dataset consists of 27,000 labeled im-ages with a total of 10 di erent classes. A signi cant dif-ference to previous datasets is that the presented satellite image dataset covers 13 spectral bands allowing to investi-gate multi-modal fusion approaches in the ..."
+    }
+  ]
+}

@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "aalmliki122/social-media-sentiment-model",
+  "slug": "aalmliki122-social-media-sentiment-model",
+  "author": "aalmliki122",
+  "url": "https://huggingface.co/aalmliki122/social-media-sentiment-model",
+  "created_at": "2026-08-27T20:46:13.000Z",
+  "updated_at": "2026-08-27T20:46:24.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-classification",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "distilbert",
+    "text-classification",
+    "arxiv:1910.09700",
+    "text-embeddings-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 66955010,
+  "parameters_human": "67.0M",
+  "storage_bytes": 267832560,
+  "storage_human": "268 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "(PDF) SENTIMENT ANALYSIS IN SOCIAL MEDIA: HOW DATA ... - ResearchGate",
+      "url": "https://www.researchgate.net/publication/390335725_SENTIMENT_ANALYSIS_IN_SOCIAL_MEDIA_HOW_DATA_SCIENCE_IMPACTS_PUBLIC_OPINION_KNOWLEDGE_INTEGRATES_NATURAL_LANGUAGE_PROCESSING_NLP_WITH_ARTIFICIAL_INTELLIGENCE_AI",
+      "snippet": "The field of sentiment analysis in social media has undergone rapid evolution, driven by the convergence of Natural Language Processing (NLP), Artificial Intelligence (AI), and Big Data"
+    },
+    {
+      "title": "Ashu2osh0112/Social-Media-Sentiment-Analysis - GitHub",
+      "url": "https://github.com/Ashu2osh0112/Social-Media-Sentiment-Analysis",
+      "snippet": "💬 Social Media Sentiment Analysis This project focuses on analyzing the sentiment of tweets (positive or negative) using Natural Language Processing (NLP) and machine learning techniques. It uses the Sentiment140 dataset containing 1.6 million pre-labeled tweets and builds a classification model using Logistic Regression."
+    },
+    {
+      "title": "sentiment-analysis-model-for-socialmedia - Hugging Face",
+      "url": "https://huggingface.co/Remicm/sentiment-analysis-model-for-socialmedia",
+      "snippet": "sentiment-analysis-model-for-socialmedia This model is a fine-tuned version of distilbert-base-uncased on the imdb dataset. It achieves the following results on the evaluation set: Loss: 0.2368 Accuracy: 0.9297 F1: 0.9299 Model description More information needed Intended uses & limitations More information needed Training and evaluation data More information needed Training procedure Training ..."
+    },
+    {
+      "title": "Getting Started with Sentiment Analysis using Python",
+      "url": "https://huggingface.co/blog/sentiment-analysis-python",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "SentiMM: A Multimodal Multi-Agent Framework for Sentiment Analysis in ...",
+      "url": "https://arxiv.org/html/2508.18108v1",
+      "snippet": "In addition, we construct SentiMMD, a large-scale multimodal dataset collected from social media, annotated with seven fine-grained sentiment categories. This dataset captures the complexity and diversity of emotional expression across modalities, providing a robust benchmark for multimodal sentiment analysis."
+    }
+  ]
+}

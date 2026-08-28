@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "gaelferre/data-efficient-learning-distilled",
+  "slug": "gaelferre-data-efficient-learning-distilled",
+  "author": "gaelferre",
+  "url": "https://huggingface.co/gaelferre/data-efficient-learning-distilled",
+  "created_at": "2026-08-27T19:34:29.000Z",
+  "updated_at": "2026-08-27T19:34:38.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "transformer",
+    "research-notes",
+    "data-efficient-learning",
+    "license:cc-by-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 33088,
+  "parameters_human": "33088",
+  "storage_bytes": 132832,
+  "storage_human": "132832 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "arXiv.org",
+      "url": "https://arxiv.org/pdf/2411.12841",
+      "snippet": "arXiv.org"
+    },
+    {
+      "title": "Data-to-Model Distillation: Data-Efficient Learning Framework",
+      "url": "https://arxiv.org/abs/2411.12841",
+      "snippet": "Dataset distillation aims to distill the knowledge of a large-scale real dataset into small yet informative synthetic data such that a model trained on it performs as well as a model trained on the full dataset. Despite recent progress, existing dataset distillation methods often struggle with computational efficiency, scalability to complex high-resolution datasets, and generalizability to ..."
+    },
+    {
+      "title": "GitHub - Guang000/Awesome-Dataset-Distillation: A curated list of ...",
+      "url": "https://github.com/Guang000/Awesome-Dataset-Distillation",
+      "snippet": "A dataset distillation algorithm takes as input a large real dataset to be distilled (training set), and outputs a small synthetic distilled dataset, which is evaluated via testing models trained on this distilled dataset on a separate real dataset (validation/test set)."
+    },
+    {
+      "title": "GitHub - horus-ai-labs/DistillFlow: Library for model distillation",
+      "url": "https://github.com/horus-ai-labs/DistillFlow",
+      "snippet": "DistillFlow lets you build a fully configurable pipeline, to help with your Distillation. Once the data is available, choose a teacher model, and the student model and your dataset and finally run the distillation."
+    },
+    {
+      "title": "LLM Distillation Explained: Applications, Implementation & More",
+      "url": "https://www.datacamp.com/blog/distillation-llm",
+      "snippet": "LLM distillation emerges as a powerful solution to this problem, enabling the transfer of knowledge from a larger, more complex language model (the \"teacher\") to a smaller, more efficient version (the \"student\"). A recent example in the AI world is the distillation of GPT-4o mini (student) from GPT-4o (teacher)."
+    }
+  ]
+}

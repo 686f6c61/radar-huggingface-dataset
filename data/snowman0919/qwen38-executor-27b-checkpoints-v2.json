@@ -5,7 +5,7 @@
   "author": "snowman0919",
   "url": "https://huggingface.co/snowman0919/qwen38-executor-27b-checkpoints-v2",
   "created_at": "2026-08-23T16:46:23.000Z",
-  "updated_at": "2026-08-27T03:16:13.000Z",
+  "updated_at": "2026-08-27T05:16:04.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": null,
@@ -30,8 +30,8 @@
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
-  "storage_bytes": 291894383925,
-  "storage_human": "291.9 GB",
+  "storage_bytes": 305161721073,
+  "storage_human": "305.2 GB",
   "base_model": "Qwen/Qwen3.8-27B",
   "formats": [
     "safetensors"

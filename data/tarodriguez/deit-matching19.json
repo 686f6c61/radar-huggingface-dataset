@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "tarodriguez/deit-matching19",
+  "slug": "tarodriguez-deit-matching19",
+  "author": "tarodriguez",
+  "url": "https://huggingface.co/tarodriguez/deit-matching19",
+  "created_at": "2026-08-27T23:42:25.000Z",
+  "updated_at": "2026-08-27T23:42:34.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "deit",
+    "pytorch",
+    "matching",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 33088,
+  "parameters_human": "33088",
+  "storage_bytes": 132832,
+  "storage_human": "132832 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "tarodriguez (Taylor Rodriguez) - Hugging Face",
+      "url": "https://huggingface.co/tarodriguez/models",
+      "snippet": "User profile of Taylor Rodriguez on Hugging Face"
+    },
+    {
+      "title": "AI Automates Clinical Trial Protocol Design and Patient Matching - LinkedIn",
+      "url": "https://www.linkedin.com/posts/alvaroarodriguez_clinicaltrials-aiinmedicine-digitalhealth-activity-7474928569589145600-J-YC",
+      "snippet": "Writing a clinical trial protocol used to mean months of committee reviews, back-and-forth on eligibility criteria, and endless version control nightmares. Today, large language models are doing ..."
+    },
+    {
+      "title": "Google Gemini",
+      "url": "https://gemini.google.com/",
+      "snippet": "Get assistance with writing, planning, learning, and more from Google AI."
+    },
+    {
+      "title": "ChatGPT: Chat, Work, Create & Code with AI",
+      "url": "https://chatgpt.com/",
+      "snippet": "Use ChatGPT to answer questions, write, create images, complete work, and code—all in one place. Get started for free or download the app."
+    },
+    {
+      "title": "DeiT - Hugging Face",
+      "url": "https://huggingface.co/docs/transformers/v4.49.0/en/model_doc/deit",
+      "snippet": "Overview The DeiT model was proposed in Training data-efficient image transformers & distillation through attention by Hugo Touvron, Matthieu Cord, Matthijs Douze, Francisco Massa, Alexandre Sablayrolles, Hervé Jégou. The Vision Transformer (ViT) introduced in Dosovitskiy et al., 2020 has shown that one can match or even outperform existing convolutional neural networks using a Transformer ..."
+    }
+  ]
+}

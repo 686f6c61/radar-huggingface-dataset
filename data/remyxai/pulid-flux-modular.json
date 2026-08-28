@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "remyxai/pulid-flux-modular",
+  "slug": "remyxai-pulid-flux-modular",
+  "author": "remyxai",
+  "url": "https://huggingface.co/remyxai/pulid-flux-modular",
+  "created_at": "2026-08-27T21:11:38.000Z",
+  "updated_at": "2026-08-27T22:31:50.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-image",
+  "library": "diffusers",
+  "languages": [],
+  "tags": [
+    "diffusers",
+    "modular-diffusers",
+    "custom-block",
+    "flux",
+    "text-to-image",
+    "personalization",
+    "identity",
+    "training-free",
+    "arxiv:2404.16022",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 2,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 4064080,
+  "storage_human": "4 MB",
+  "base_model": null,
+  "formats": [
+    "diffusers"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "PuLID-FLUX - a Hugging Face Space by yanze",
+      "url": "https://huggingface.co/spaces/yanze/PuLID-FLUX",
+      "snippet": "Enter a textual prompt and optionally upload a reference picture to guide the appearance of the result. Adjust settings such as size, guidance scale, and identity weight, then click Generate to rec..."
+    },
+    {
+      "title": "remyxai (Remyx AI) - Hugging Face",
+      "url": "https://huggingface.co/remyxai/models",
+      "snippet": "AI & ML interests ... Recent Activity salma-remyx updated a model 1 day ago ... salma-remyx new activity 1 day ago ... salma-remyx new activity 7 days ago"
+    },
+    {
+      "title": "GitHub - ToTheBeginning/PuLID: [NeurIPS 2024] Official code for PuLID ...",
+      "url": "https://github.com/ToTheBeginning/PuLID",
+      "snippet": "2024.10.31: 🔥 We are happy to release our latest models, PuLID-v1.1 and PuLID-FLUX-v0.9.1. See more in Model Zoo and pulid v1.1 model. We also update a new revision for the arXiv paper, which includes more results, details, and analysis, please check it out. 2024.09.26: 🎉 PuLID accepted by NeurIPS 2024 2024.09.12: We&#x27;re thrilled to announce the release of the PuLID-FLUX-v0.9. model ..."
+    },
+    {
+      "title": "balazik/ComfyUI-PuLID-Flux - GitHub",
+      "url": "https://github.com/balazik/ComfyUI-PuLID-Flux",
+      "snippet": "Credits ComfyUI/ ComfyUI - A powerful and modular stable diffusion GUI. PuLID for Flux - tuning-free ID customization solution for FLUX.1-dev cubiq PuLID_ComfyUI - PuLID ComfyUI native implementation (Thanks for the awesome work what you do Matteo 😉 )."
+    },
+    {
+      "title": "PuLID-Flux - v1.0 | Flux.1 Workflows | Civitai",
+      "url": "https://civitai.com/models/1177809/pulid-flux",
+      "snippet": "This guide walks you through setting up the PuLID-Flux integration into ComfyUI for creating stunning results. Follow the steps carefully for a sea..."
+    }
+  ]
+}

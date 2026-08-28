@@ -1,0 +1,80 @@
+{
+  "schema": 1,
+  "id": "Teradata/opus-tatoeba-en-ja",
+  "slug": "teradata-opus-tatoeba-en-ja",
+  "author": "Teradata",
+  "url": "https://huggingface.co/Teradata/opus-tatoeba-en-ja",
+  "created_at": "2026-08-27T22:58:03.000Z",
+  "updated_at": "2026-08-27T22:58:23.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "translation",
+  "library": "transformers",
+  "languages": [
+    "en",
+    "ja"
+  ],
+  "tags": [
+    "transformers",
+    "onnx",
+    "marian",
+    "text2text-generation",
+    "translation",
+    "LiteRT",
+    "safetensors",
+    "Helsinki-NLP/tatoeba",
+    "openlanguagedata/flores_plus",
+    "teradata",
+    "en",
+    "ja",
+    "base_model:Helsinki-NLP/opus-tatoeba-en-ja",
+    "base_model:quantized:Helsinki-NLP/opus-tatoeba-en-ja",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1204816786,
+  "storage_human": "1.2 GB",
+  "base_model": "Helsinki-NLP/opus-tatoeba-en-ja",
+  "formats": [
+    "onnx",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Helsinki-NLP/opus-tatoeba-en-ja · Hugging Face",
+      "url": "https://huggingface.co/Helsinki-NLP/opus-tatoeba-en-ja",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "opus-tatoeba-en-ja Open-source English-Japanese Translation Model ...",
+      "url": "https://model.aibase.com/models/details/1915692801154768898",
+      "snippet": "An advanced translation model launched by Sarvam AI, built on Gemma3 - 4B - IT, designed specifically for comprehensive document - level translation of 22 official languages in India."
+    },
+    {
+      "title": "README.md · Helsinki-NLP/opus-tatoeba-en-ja at main",
+      "url": "https://huggingface.co/Helsinki-NLP/opus-tatoeba-en-ja/blob/main/README.md",
+      "snippet": "Helsinki-NLP / opus-tatoeba-en-ja like 7 TranslationTransformersPyTorch google-tensorflow TensorFlowEnglishJapanesemariantext2text-generationInference Endpoints License: apache-2.0 Model card FilesFiles and versions Community 4 Train Deploy Use in Transformers main opus-tatoeba-en-ja /README.md tiedeman Initial commit f5aa4b0 about 2 years ago ..."
+    },
+    {
+      "title": "opus-tatoeba-en-ja huggingface.co api & Helsinki-NLP opus-tatoeba-en-ja ...",
+      "url": "https://www.toolify.ai/ai-model/helsinki-nlp-opus-tatoeba-en-ja",
+      "snippet": "opus-tatoeba-en-ja is an open source model from GitHub that offers a free installation service, and any user can find opus-tatoeba-en-ja on GitHub to install. At the same time, huggingface.co provides the effect of opus-tatoeba-en-ja install, users can directly use opus-tatoeba-en-ja installed effect in huggingface.co for debugging and trial. It also supports api for free installation."
+    },
+    {
+      "title": "Helsinki-NLP/opus-tatoeba-en-ja - AI Model Zoo - BimAnt",
+      "url": "https://zoo.bimant.com/model/4257",
+      "snippet": "en-ja source group: English target group: Japanese OPUS readme: eng-jpn model: transformer-align source language (s): eng target language (s): jpn model: transformer-align pre-processing: normalization + SentencePiece (spm32k,spm32k) download original weights: opus+bt-2021-04-10.zip test set translations: opus+bt-2021-04-10.test.txt test set scores: opus+bt-2021-04-10.eval.txt"
+    }
+  ]
+}

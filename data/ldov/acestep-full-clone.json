@@ -1,0 +1,93 @@
+{
+  "schema": 1,
+  "id": "ldov/acestep-full-clone",
+  "slug": "ldov-acestep-full-clone",
+  "author": "ldov",
+  "url": "https://huggingface.co/ldov/acestep-full-clone",
+  "created_at": "2026-08-27T21:44:40.000Z",
+  "updated_at": "2026-08-27T21:44:40.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "en",
+    "fr",
+    "zh",
+    "ja",
+    "ko",
+    "de",
+    "es",
+    "it",
+    "pt",
+    "ru"
+  ],
+  "tags": [
+    "gguf",
+    "music-generation",
+    "text-to-music",
+    "ggml",
+    "cpp",
+    "ace-step",
+    "diffusion",
+    "flow-matching",
+    "en",
+    "fr",
+    "zh",
+    "ja",
+    "ko",
+    "de",
+    "es",
+    "it",
+    "pt",
+    "ru",
+    "base_model:ACE-Step/Ace-Step1.5",
+    "base_model:quantized:ACE-Step/Ace-Step1.5",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 662884352,
+  "parameters_human": "662.9M",
+  "storage_bytes": 220737965920,
+  "storage_human": "220.7 GB",
+  "base_model": "ACE-Step/Ace-Step1.5",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "A Step Towards Music Generation Foundation Model - GitHub",
+      "url": "https://github.com/ace-step/ACE-Step",
+      "snippet": "📝 Abstract We introduce ACE-Step, a novel open-source foundation model for music generation that overcomes key limitations of existing approaches and achieves state-of-the-art performance through a holistic architectural design. Current methods face inherent trade-offs between generation speed, musical coherence, and controllability."
+    },
+    {
+      "title": "ACE-Step: A Step Towards Music Generation Foundation Model",
+      "url": "https://ace-step.github.io/",
+      "snippet": "📝 Abstract 🚀 We introduce ACE-Step, a novel open-source foundation model for music generation that overcomes key limitations of existing approaches and achieves state-of-the-art performance through a holistic architectural design. Current methods face inherent trade-offs between generation speed, musical coherence, and controllability."
+    },
+    {
+      "title": "GitHub - ace-step/ACE-Step-1.5: The most powerful local music ...",
+      "url": "https://github.com/ace-step/ACE-Step-1.5",
+      "snippet": "🚀 We present ACE-Step v1.5, a highly efficient open-source music foundation model that brings commercial-grade generation to consumer hardware. On commonly used evaluation metrics, ACE-Step v1.5 achieves quality beyond most commercial music models while remaining extremely fast—under 2 seconds per full song on an A100 and under 10 seconds on an RTX 3090. The model runs locally with less ..."
+    },
+    {
+      "title": "ACE-Step: A Step Towards Music Generation Foundation Model",
+      "url": "https://arxiv.org/html/2506.00045v1",
+      "snippet": "Collectively, these findings position ACE-Step as a leading open-source solution for multilingual music generation, while highlighting critical research directions for advancing both model architectures and evaluation methodologies in music AI research."
+    },
+    {
+      "title": "ACE-Step: A Step Towards Music Generation Foundation Model",
+      "url": "https://arxiv.org/abs/2506.00045",
+      "snippet": "We introduce ACE-Step, a novel open-source foundation model for music generation that overcomes key limitations of existing approaches and achieves state-of-the-art performance through a holistic architectural design. Current methods face inherent trade-offs between generation speed, musical coherence, and controllability."
+    }
+  ]
+}

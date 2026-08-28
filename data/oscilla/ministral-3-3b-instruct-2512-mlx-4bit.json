@@ -1,0 +1,94 @@
+{
+  "schema": 1,
+  "id": "Oscilla/Ministral-3-3B-Instruct-2512-mlx-4Bit",
+  "slug": "oscilla-ministral-3-3b-instruct-2512-mlx-4bit",
+  "author": "Oscilla",
+  "url": "https://huggingface.co/Oscilla/Ministral-3-3B-Instruct-2512-mlx-4Bit",
+  "created_at": "2026-08-27T19:58:00.000Z",
+  "updated_at": "2026-08-27T19:58:09.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "vllm",
+  "languages": [
+    "en",
+    "fr",
+    "es",
+    "de",
+    "it",
+    "pt",
+    "nl",
+    "zh",
+    "ja",
+    "ko",
+    "ar"
+  ],
+  "tags": [
+    "vllm",
+    "safetensors",
+    "mistral3",
+    "mistral-common",
+    "mlx",
+    "mlx-my-repo",
+    "en",
+    "fr",
+    "es",
+    "de",
+    "it",
+    "pt",
+    "nl",
+    "zh",
+    "ja",
+    "ko",
+    "ar",
+    "base_model:mistralai/Ministral-3-3B-Instruct-2512",
+    "base_model:quantized:mistralai/Ministral-3-3B-Instruct-2512",
+    "license:apache-2.0",
+    "4-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 535919616,
+  "parameters_human": "535.9M",
+  "storage_bytes": 1946204719,
+  "storage_human": "1.9 GB",
+  "base_model": "mistralai/Ministral-3-3B-Instruct-2512",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "mistralai/Ministral-3-3B-Instruct-2512 · Hugging Face",
+      "url": "https://huggingface.co/mistralai/Ministral-3-3B-Instruct-2512",
+      "snippet": "Here we assume that the model mistralai/Ministral-3-3B-Instruct-2512 is served and you can ping it to the domain localhost with the port 8000 which is the default for vLLM."
+    },
+    {
+      "title": "Ministral 3 3B Instruct 2512 download | SourceForge.net",
+      "url": "https://sourceforge.net/projects/ministral-3-3b-instruct-2512/",
+      "snippet": "Ministral 3 3B Instruct 2512 is the smallest model in the Ministral 3 family, offering a lightweight yet capable multimodal architecture designed for edge and low-resource deployments. It includes a 3.4B-parameter language model paired with a 0.4B vision encoder, enabling it to understand both text and visual inputs."
+    },
+    {
+      "title": "mlx-community/Ministral-3-3B-Instruct-2512-4bit · Hugging Face",
+      "url": "https://huggingface.co/mlx-community/Ministral-3-3B-Instruct-2512-4bit",
+      "snippet": "This model was converted to MLX format from mistralai/Ministral-3-3B-Instruct-2512 using mlx-vlm version 0.3.9. Refer to the original model card for more details on the model."
+    },
+    {
+      "title": "Ministral-3-3B-Instruct-2512 - Qualcomm AI Hub",
+      "url": "https://aihub.qualcomm.com/iot/models/ministral_3_3b_instruct_2512",
+      "snippet": "Efficient 3B parameter instruction‑tuned model from Mistral AI. Ministral is a compact language model from Mistral AI designed for on‑device deployment, offering strong instruction‑following capabilities with low latency."
+    },
+    {
+      "title": "Ministral-3-3B-Instruct-2512 Open-Source Large Model - Optimized for ...",
+      "url": "https://model.aibase.com/models/details/1998557671565037568",
+      "snippet": "This model is an MLX format conversion version of the Ministral-3-3B-Instruct-2512 instruction fine-tuning model released by Mistral AI. It is a large language model with a parameter scale of 3B, specifically optimized for following instructions and dialogue tasks, and supports multiple languages."
+    }
+  ]
+}

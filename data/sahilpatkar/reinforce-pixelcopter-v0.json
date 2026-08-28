@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "sahilpatkar/Reinforce-PixelCopter-v0",
+  "slug": "sahilpatkar-reinforce-pixelcopter-v0",
+  "author": "sahilpatkar",
+  "url": "https://huggingface.co/sahilpatkar/Reinforce-PixelCopter-v0",
+  "created_at": "2026-08-28T00:02:36.000Z",
+  "updated_at": "2026-08-28T00:02:38.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "reinforcement-learning",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "Pixelcopter-PLE-v0",
+    "reinforce",
+    "reinforcement-learning",
+    "custom-implementation",
+    "deep-rl-class",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 40125,
+  "storage_human": "40125 B",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Patil/Reinforce-PixelCopter · Hugging Face",
+      "url": "https://huggingface.co/Patil/Reinforce-PixelCopter",
+      "snippet": "Patil / Reinforce-PixelCopter Copied like 0 Reinforcement LearningPixelcopter-PLE-v0reinforcecustom-implementationdeep-rl-classEval Results Model card FilesFiles and versions Community How to clone Edit model card Reinforce Agent playing Pixelcopter-PLE-v0"
+    },
+    {
+      "title": "tcabgom/ReinforcePixelcopter · Hugging Face",
+      "url": "https://huggingface.co/tcabgom/ReinforcePixelcopter",
+      "snippet": "tcabgom / ReinforcePixelcopter like 0 Reinforcement Learning Pixelcopter-PLE-v0 reinforce custom-implementation deep-rl-class Eval Results Model card FilesFiles and versions Community Edit model card Reinforce Agent playing Pixelcopter-PLE-v0"
+    },
+    {
+      "title": "How to Use the Reinforce Agent to Play Pixelcopter-PLE-v0 - fxis.ai",
+      "url": "https://fxis.ai/edu/how-to-use-the-reinforce-agent-to-play-pixelcopter-ple-v0/",
+      "snippet": "Welcome to your handy guide on utilizing the Reinforce intelligent agent to navigate the thrilling world of Pixelcopter-PLE-v0! This powerful approach leverages reinforcement learning to train your model effectively, enabling it to maneuver successfully in this engaging environment. Getting Started Before diving into the coding aspects, ensure you have the necessary prerequisites loaded on ..."
+    },
+    {
+      "title": "Vorlde/ReinforcePixelcopter - AI Model Zoo - BimAnt",
+      "url": "https://zoo.bimant.com/model/143983",
+      "snippet": "This is a trained model of a Reinforce agent playing Pixelcopter-PLE-v0 . To learn to use this model and train yours check Unit 4 of the Deep Reinforcement Learning Course: https://huggingface.co/deep-rl-course/unit4/introduction"
+    },
+    {
+      "title": "How to Use the Reinforce Agent in Pixelcopter-PLE-v0 - fxis.ai",
+      "url": "https://fxis.ai/edu/how-to-use-the-reinforce-agent-in-pixelcopter-ple-v0/",
+      "snippet": "In this blog post, we&#x27;ve covered how to implement a Reinforce agent to play Pixelcopter-PLE-v0 effectively. The combination of dynamic learning and reward feedback allows your agent to improve its performance over time."
+    }
+  ]
+}

@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "newmachina/perceptron_and_gate",
+  "slug": "newmachina-perceptron_and_gate",
+  "author": "newmachina",
+  "url": "https://huggingface.co/newmachina/perceptron_and_gate",
+  "created_at": "2026-08-27T22:57:43.000Z",
+  "updated_at": "2026-08-27T23:02:12.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "perceptron",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 3,
+  "parameters_human": "3",
+  "storage_bytes": 156,
+  "storage_human": "156 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - perceptron-ai-inc/perceptron: The official Python SDK for the ...",
+      "url": "https://github.com/perceptron-ai-inc/perceptron",
+      "snippet": "The platform for physical AI Perceptron is the Python SDK for building with perceptive-language models, from our flagship Perceptron Mk1 to edge-ready models like Isaac 0.2 2B (Preview)."
+    },
+    {
+      "title": "Implementation of Perceptron Algorithm for AND Logic Gate with 2-bit ...",
+      "url": "https://www.geeksforgeeks.org/machine-learning/implementation-of-perceptron-algorithm-for-and-logic-gate-with-2-bit-binary-input/",
+      "snippet": "Here, the model predicted output ($&#92;widehat{y}$) for each of the test inputs are exactly matched with the AND logic gate conventional output ($&#92;mathit{y}$) according to the truth table for 2-bit binary input. Hence, it is verified that the perceptron algorithm for AND logic gate is correctly implemented."
+    },
+    {
+      "title": "GitHub - daichi0710/lg2t-part1-and-gate: A hands-on project that ...",
+      "url": "https://github.com/daichi0710/lg2t-part1-and-gate",
+      "snippet": "A hands-on project that implements an AND gate using a single-layer perceptron in pure Python. This is Part 1 of the \"From Logic Gates to Transformers\" self-learning series — an educational journey building AI models from scratch. - daichi0710/lg2t-part1-and-gate"
+    },
+    {
+      "title": "Step-by-Step Perceptron for AND Gate - Scribd",
+      "url": "https://www.scribd.com/document/692205373/A-Step-by-Step-Perceptron-Example",
+      "snippet": "The document describes a step-by-step example of using a perceptron to solve the AND gate problem. Random initial weights of 0.9 are assigned. The perceptron is trained over multiple rounds using a learning rate of 0.5 to update the weights based on errors. After 2 rounds, the perceptron correctly classifies all inputs to the AND gate. The reader is then tasked with applying the same process ..."
+    },
+    {
+      "title": "How Perceptrons Work | Artificial Neuron | Programming Perceptron in ...",
+      "url": "https://www.youtube.com/watch?v=npTxbrj2rLY",
+      "snippet": "In this video, we explore the theoretical underpinnings of the Perceptron model and then walk through its implementation in Python step by step."
+    }
+  ]
+}

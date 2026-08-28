@@ -1,0 +1,80 @@
+{
+  "schema": 1,
+  "id": "Oscilla/Phi-3.5-mini-instruct-mlx-4Bit",
+  "slug": "oscilla-phi-3-5-mini-instruct-mlx-4bit",
+  "author": "Oscilla",
+  "url": "https://huggingface.co/Oscilla/Phi-3.5-mini-instruct-mlx-4Bit",
+  "created_at": "2026-08-27T20:02:17.000Z",
+  "updated_at": "2026-08-27T20:02:25.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "multilingual"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "phi3",
+    "text-generation",
+    "nlp",
+    "code",
+    "mlx",
+    "mlx-my-repo",
+    "conversational",
+    "custom_code",
+    "multilingual",
+    "base_model:microsoft/Phi-3.5-mini-instruct",
+    "base_model:quantized:microsoft/Phi-3.5-mini-instruct",
+    "license:mit",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "4-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 597212160,
+  "parameters_human": "597.2M",
+  "storage_bytes": 2149696458,
+  "storage_human": "2.1 GB",
+  "base_model": "microsoft/Phi-3.5-mini-instruct",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "microsoft/Phi-3.5-mini-instruct · Hugging Face",
+      "url": "https://huggingface.co/microsoft/Phi-3.5-mini-instruct",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "mlx-community/Phi-3.5-mini-instruct-4bit · Hugging Face",
+      "url": "https://huggingface.co/mlx-community/Phi-3.5-mini-instruct-4bit",
+      "snippet": "This model does not have enough activity to be deployed to Inference API (serverless) yet. Increase its social visibility and check back later, or deploy to Inference Endpoints (dedicated) instead."
+    },
+    {
+      "title": "Phi 3.5 Mini Instruct 4bit by mlx-community - llm-explorer.com",
+      "url": "https://llm-explorer.com/model/mlx-community%2FPhi-3.5-mini-instruct-4bit,1hDarDbWFawQaYjSzr9nP0",
+      "snippet": "Details and insights about Phi 3.5 Mini Instruct 4bit LLM by mlx-community: benchmarks, internals, and performance insights. Features: 597.2m LLM, VRAM: 2.1GB, Context: 128K, License: mit, Quantized, Instruction-Based, LLM Explorer Score: 0.18. Find out how Phi 3.5 Mini Instruct 4bit can be utilized in your business workflows, problem-solving, and tackling specific tasks."
+    },
+    {
+      "title": "Phi-3.5-mini-instruct - atomic.chat",
+      "url": "https://atomic.chat/models/phi-3-5-mini-instruct",
+      "snippet": "Microsoft released Phi-3.5-mini-instruct under the MIT license, which permits free commercial and research use, modification, and redistribution. The weights are available on Hugging Face and the model is intended for commercial and research use across multiple languages."
+    },
+    {
+      "title": "Phi-3.5-mini-instruct-4bit - promptlayer.com",
+      "url": "https://www.promptlayer.com/models/phi-35-mini-instruct-4bit",
+      "snippet": "What is Phi-3.5-mini-instruct-4bit? Phi-3.5-mini-instruct-4bit is a quantized version of Microsoft&#x27;s Phi-3.5-mini-instruct model, specifically optimized for the MLX framework and designed to run efficiently on Apple Silicon hardware. This model represents a significant optimization effort by the MLX community to make advanced language models more accessible and performant on Apple devices ..."
+    }
+  ]
+}

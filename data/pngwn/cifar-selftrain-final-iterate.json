@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "pngwn/cifar-selftrain-final-iterate",
+  "slug": "pngwn-cifar-selftrain-final-iterate",
+  "author": "pngwn",
+  "url": "https://huggingface.co/pngwn/cifar-selftrain-final-iterate",
+  "created_at": "2026-08-27T21:49:12.000Z",
+  "updated_at": "2026-08-28T00:16:43.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "image-classification",
+  "library": "pytorch",
+  "languages": [],
+  "tags": [
+    "pytorch",
+    "image-classification",
+    "self-training",
+    "pseudo-labels",
+    "reproduction",
+    "dataset:uoft-cs/cifar10",
+    "arxiv:2602.14029",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 44768331,
+  "storage_human": "45 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Training a Classifier — PyTorch Tutorials 2.13.0+cu130 documentation",
+      "url": "https://docs.pytorch.org/tutorials/beginner/blitz/cifar10_tutorial.html",
+      "snippet": "The images in CIFAR-10 are of size 3x32x32, i.e. 3-channel color images of 32x32 pixels in size. cifar10 # Training an image classifier # We will do the following steps in order: Load and normalize the CIFAR10 training and test datasets using torchvision Define a Convolutional Neural Network Define a loss function Train the network on the ..."
+    },
+    {
+      "title": "CNN Model Development using CIFAR-10 - GitHub",
+      "url": "https://github.com/Sumaira232/CNN-Based-Image-Classification-Assessment",
+      "snippet": "This repository contains my solution for a technical assessment focused on developing and evaluating a Convolutional Neural Network (CNN) using the CIFAR-10 image classification dataset in PyTorch. The project demonstrates the complete machine learning workflow, from data preprocessing and model development to training, evaluation, model persistence, and inference. It also documents how AI ..."
+    },
+    {
+      "title": "PyTorch CIFAR Models - GitHub",
+      "url": "https://github.com/chenyaofo/pytorch-cifar-models",
+      "snippet": "Pretrained models on CIFAR10/100 in PyTorch. Contribute to chenyaofo/pytorch-cifar-models development by creating an account on GitHub."
+    },
+    {
+      "title": "ZoneTwelve/cifar10-models · Hugging Face",
+      "url": "https://huggingface.co/ZoneTwelve/cifar10-models",
+      "snippet": "ZoneTwelve CIFAR-10 model suite This repository contains checkpoints from the MPS-trained CIFAR-10 model comparison suite. Each .pt file preserves model weights, optimizer state, epoch history, architecture metadata, and validation-selection metadata."
+    },
+    {
+      "title": "Deep Learning with CIFAR-10: Building a CNN Classifier with PyTorch",
+      "url": "https://sinanlab.github.io/blog/cifar10-cnn-classifier.html",
+      "snippet": "This CIFAR-10 CNN classifier project demonstrates a complete deep learning workflow using PyTorch. The implementation showcases modern best practices in computer vision, from data augmentation to model deployment."
+    }
+  ]
+}

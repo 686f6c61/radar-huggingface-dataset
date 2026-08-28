@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "IrieDinamik/ocr-mirror-ppocrv6",
+  "slug": "iriedinamik-ocr-mirror-ppocrv6",
+  "author": "IrieDinamik",
+  "url": "https://huggingface.co/IrieDinamik/ocr-mirror-ppocrv6",
+  "created_at": "2026-08-27T23:35:11.000Z",
+  "updated_at": "2026-08-27T23:35:17.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "vox-jot",
+    "ocr",
+    "mirror",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 138425563,
+  "storage_human": "138 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "IrieDinamik/ocr-mirror-ppocrv5 · Hugging Face",
+      "url": "https://huggingface.co/IrieDinamik/ocr-mirror-ppocrv5",
+      "snippet": "Vox Jot OCR Mirror: pp-ocrv5 This repository is an app-managed mirror for Vox Jot. It preserves upstream lineage so the desktop app can download OCR model files anonymously and reproducibly."
+    },
+    {
+      "title": "snowfluke/ppu-paddle-ocr-models · Hugging Face",
+      "url": "https://huggingface.co/snowfluke/ppu-paddle-ocr-models",
+      "snippet": "snowfluke / ppu-paddle-ocr-models like 0 Image-to-Text ONNX ocr paddleocr onnxruntime text-detection text-recognition License:apache-2.0 Model card FilesFiles and versions xet Community Copy to bucket new ppu-paddle-ocr-models Where to fetch from File tree OCR Models and Their Supported Languages Layout models Correction models Document Image ..."
+    },
+    {
+      "title": "PP-OCRv6 Introduction - PaddleOCR Documentation",
+      "url": "https://www.paddleocr.ai/main/en/version3.x/algorithm/PP-OCRv6/PP-OCRv6.html",
+      "snippet": "PP-OCRv6 is the latest generation of the PP-OCR universal text recognition solution. Built on the newly designed PPLCNetV4 unified backbone, it offers tiny, small, and medium tiers targeting edge/IoT, mobile/desktop, and server scenarios respectively."
+    },
+    {
+      "title": "PP-OCRv6: From 1.5M to 34.5M Parameters, Surpassing Billion-Scale VLMs ...",
+      "url": "https://arxiv.org/pdf/2606.13108",
+      "snippet": "Unified and Scalable Model Family: We deliver a comprehensive, three-tier OCR model family spanning 1.5M to 34.5M parameters. The medium-tier model achieves an 86.2% detection H-mean and 83.2% recognition accuracy, serving as a highly efficient, production-ready infrastructure for both industrial deployment and large-scale data pipelines."
+    },
+    {
+      "title": "GitHub - arcships/light-ocr: Fast, offline OCR for Node.js & C++. PP ...",
+      "url": "https://github.com/arcships/light-ocr",
+      "snippet": "Fast, offline OCR for Node.js and C++. Recognize text in PDF, JPEG, PNG, or raw image data directly on your machine. light-ocr returns lines in reading order with confidence scores and quadrilateral coordinates."
+    }
+  ]
+}

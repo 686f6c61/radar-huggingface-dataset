@@ -1,0 +1,80 @@
+{
+  "schema": 1,
+  "id": "Teradata/opus-mt-ja-en",
+  "slug": "teradata-opus-mt-ja-en",
+  "author": "Teradata",
+  "url": "https://huggingface.co/Teradata/opus-mt-ja-en",
+  "created_at": "2026-08-27T22:56:54.000Z",
+  "updated_at": "2026-08-27T22:57:16.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "translation",
+  "library": "transformers",
+  "languages": [
+    "ja",
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "onnx",
+    "marian",
+    "text2text-generation",
+    "translation",
+    "LiteRT",
+    "safetensors",
+    "Helsinki-NLP/tatoeba",
+    "openlanguagedata/flores_plus",
+    "teradata",
+    "ja",
+    "en",
+    "base_model:Helsinki-NLP/opus-mt-ja-en",
+    "base_model:quantized:Helsinki-NLP/opus-mt-ja-en",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1147594896,
+  "storage_human": "1.1 GB",
+  "base_model": "Helsinki-NLP/opus-mt-ja-en",
+  "formats": [
+    "onnx",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Opus-mt-ja-en Open-source Translation Model - Achieve Accurate Japanese ...",
+      "url": "https://model.aibase.com/models/details/1915693281062838273",
+      "snippet": "🚀 opus-mt-ja-en opus-mt-ja-en is a translation model that supports Japanese to English translation. It uses the OPUS dataset and the transformer-align model, with specific pre - processing steps."
+    },
+    {
+      "title": "opus-mt-ja-en: Text-to-Text model — overview, use cases, alternatives",
+      "url": "https://www.aimodels.fyi/models/huggingFace/opus-mt-ja-en-helsinki-nlp",
+      "snippet": "Overview opus-mt-ja-en is a Japanese-to-English neural machine translation model built by Helsinki-NLP using a transformer-align architecture trained on the OPUS dataset. The model uses normalization and SentencePiece preprocessing to handle the morphological complexity of Japanese before translation. It achieves a BLEU score of 41.7 and character F-score of 0.589 on the Tatoeba test set. You ..."
+    },
+    {
+      "title": "Opus-mt-ja-en Open-source Translation Model - Achieve Accurate Japanese ...",
+      "url": "https://model.aibase.com/en/models/details/1915693281062838273",
+      "snippet": "It uses the OPUS dataset and the transformer-align model, with specific pre - processing steps.* ## 🚀 Quick Start This section provides basic information about the opus - mt - ja - en model, including language support, dataset, model type, etc. ## Features - **Language Support**: Supports translation from Japanese (`ja`) to English (`en`)."
+    },
+    {
+      "title": "Xenova/opus-mt-ja-en · Hugging Face",
+      "url": "https://huggingface.co/Xenova/opus-mt-ja-en",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Helsinki-NLP/opus-mt-ja-en · Hugging Face",
+      "url": "https://huggingface.co/Helsinki-NLP/opus-mt-ja-en",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    }
+  ]
+}

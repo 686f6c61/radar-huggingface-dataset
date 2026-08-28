@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "Ppereir-arodrigo/swin-t-matching",
+  "slug": "ppereir-arodrigo-swin-t-matching",
+  "author": "Ppereir-arodrigo",
+  "url": "https://huggingface.co/Ppereir-arodrigo/swin-t-matching",
+  "created_at": "2026-08-27T21:50:47.000Z",
+  "updated_at": "2026-08-27T21:50:56.000Z",
+  "license": "bsd-3-clause",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "swin_t",
+    "pytorch",
+    "swin-t",
+    "matching",
+    "license:bsd-3-clause",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 16576,
+  "parameters_human": "16576",
+  "storage_bytes": 66784,
+  "storage_human": "66784 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - LotrL/SwinMatcher: [TGRS 2025] SwinMatcher: Universal Cross ...",
+      "url": "https://github.com/LotrL/SwinMatcher",
+      "snippet": "[TGRS 2025] SwinMatcher: Universal Cross-Modal Remote Sensing Image Matching with Interactive Swin Transformer - LotrL/SwinMatcher"
+    },
+    {
+      "title": "LLM Leaderboard & AI Model Benchmarks — August 2026",
+      "url": "https://benchlm.ai/",
+      "snippet": "Compare 403 AI models across 406 benchmarks, with 226 ranked scores, source evidence, API pricing, context windows, runtime, and head-to-head pages."
+    },
+    {
+      "title": "SwinMatcher: Universal Cross-Modal Remote Sensing Image Matching With ...",
+      "url": "https://ieeexplore.ieee.org/abstract/document/11095750",
+      "snippet": "Cross-modal remote sensing image matching serves as a key technique for collaborative utilization of multisource information. However, modal differences and geometric distortions between multisource images pose challenges to existing methods in terms of robustness and generalization. To achieve feature interaction in cross-modal scenes, this article proposes SwinMatcher, an end-to-end matching ..."
+    },
+    {
+      "title": "SwinMatcher: Universal Cross-Modal Remote Sensing Image Matching with ...",
+      "url": "https://ieeexplore.ieee.org/abstract/document/11095750/similar",
+      "snippet": "Cross-modal remote sensing image matching serves as a key technique for collaborative utilization of multi-source information. However, modal differences and geometric distortions between multi-source images pose challenges to existing methods in terms of robustness and generalization. To achieve feature interaction in cross-modal scenes, this paper proposes SwinMatcher, an end-to-end matching ..."
+    },
+    {
+      "title": "Sand AI Launches Open-Source Video Generation Model From Swin ...",
+      "url": "https://aivideoadvisor.com/sand-ai-launches-open-source-video-generation-model-from-swin-transformer-creator/",
+      "snippet": "Expert Summary: Sand AI, founded by Ze Liu — the creator of Swin Transformer, one of the most cited computer vision architectures in history — released an open-source video generation model in June 2026. The model matches closed-source leaders like OpenAI&#x27;s Sora and Runway Gen-4 on quality benchmarks while being fully open-weight, available for local deployment, and free for commercial ..."
+    }
+  ]
+}

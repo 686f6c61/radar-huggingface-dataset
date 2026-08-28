@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "lucabaroni/qwen3.5-9b-rlvr-reward-hacking-step-110",
+  "slug": "lucabaroni-qwen3-5-9b-rlvr-reward-hacking-step-110",
+  "author": "lucabaroni",
+  "url": "https://huggingface.co/lucabaroni/qwen3.5-9b-rlvr-reward-hacking-step-110",
+  "created_at": "2026-08-27T20:30:51.000Z",
+  "updated_at": "2026-08-27T20:41:01.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "reinforcement-learning",
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "tinker",
+    "lora",
+    "reinforcement-learning",
+    "rlvr",
+    "reward-hacking",
+    "dataset:lucabaroni/rlvr-reward-hacking-mid-checkpoint-transcripts",
+    "base_model:Qwen/Qwen3.5-9B",
+    "base_model:adapter:Qwen/Qwen3.5-9B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 144745728,
+  "storage_human": "145 MB",
+  "base_model": "Qwen/Qwen3.5-9B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Qwen/Qwen3.5-9B | vLLM Recipes",
+      "url": "https://recipes.vllm.ai/Qwen/Qwen3.5-9B",
+      "snippet": "Qwen3.5-9B is a dense multimodal model from the Qwen3.5 family — same gated delta networks hybrid attention, vision encoder, 262K context, and MTP support as its larger siblings, but sized to fit comfortably on a single 24 GB GPU."
+    },
+    {
+      "title": "qwen3.5:9b - ollama.com",
+      "url": "https://ollama.com/library/qwen3.5:9b",
+      "snippet": "Qwen3.5 features the following enhancement: Unified Vision-Language Foundation: Early fusion training on multimodal tokens achieves cross-generational parity with Qwen3 and outperforms Qwen3-VL models across reasoning, coding, agents, and visual understanding benchmarks."
+    },
+    {
+      "title": "Best 8GB GPU Model: How to Set Up Qwen 3.5 9B (Step by Step)",
+      "url": "https://insiderllm.com/guides/qwen-3-5-9b-setup-guide/",
+      "snippet": "Quick Answer: Qwen 3.5 9B fits in 6.6GB on Ollama, runs natively multimodal (images + video from the same weights), supports 262K context, and beats Qwen 3-class models 3x its size on reasoning. Run `ollama run qwen3.5:9b` and you&#x27;re done. For 8GB VRAM, use Q4_K_M. For 12GB, step up to Q6_K or Q8_0. Thinking mode is off by default — turn it on for math and coding. The 9B is the right pick ..."
+    },
+    {
+      "title": "Qwen (Qwen) - Hugging Face",
+      "url": "https://huggingface.co/Qwen",
+      "snippet": "Org profile for Qwen on Hugging Face, the AI community building the future."
+    },
+    {
+      "title": "GitHub - BirgerMoell/qwen35-posttrain: Full post-training pipeline (SFT ...",
+      "url": "https://github.com/BirgerMoell/qwen35-posttrain",
+      "snippet": "End-to-end post-training of a useful 2026 base model on LUMI (AMD/ROCm), starting from a long-context base and running the full modern pipeline: SFT → DPO → RLVR (GRPO) → tool-use/agentic → safety → eval/merge. Base model: Qwen3.5-9B-Base (dense, native 262K context — long context is already in the base, so post-training must preserve it). Pipeline is validated on Qwen3.5-2B-Base ..."
+    }
+  ]
+}

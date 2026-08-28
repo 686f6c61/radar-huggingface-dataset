@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "joshuabrowntub/deit-demo",
+  "slug": "joshuabrowntub-deit-demo",
+  "author": "joshuabrowntub",
+  "url": "https://huggingface.co/joshuabrowntub/deit-demo",
+  "created_at": "2026-08-27T19:29:18.000Z",
+  "updated_at": "2026-08-27T19:29:27.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "deit",
+    "pytorch",
+    "matching",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 24832,
+  "parameters_human": "24832",
+  "storage_bytes": 99808,
+  "storage_human": "99808 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "DeiT · Hugging Face",
+      "url": "https://huggingface.co/docs/transformers/model_doc/deit",
+      "snippet": "Overview The DeiT model was proposed in Training data-efficient image transformers & distillation through attention by Hugo Touvron, Matthieu Cord, Matthijs Douze, Francisco Massa, Alexandre Sablayrolles, Hervé Jégou. The Vision Transformer (ViT) introduced in Dosovitskiy et al., 2020 has shown that one can match or even outperform existing convolutional neural networks using a Transformer ..."
+    },
+    {
+      "title": "deit - Colab",
+      "url": "https://colab.research.google.com/github/keras-team/keras-io/blob/master/examples/vision/ipynb/deit.ipynb",
+      "snippet": "Through the use of distillation, we&#x27;re effectively transferring the inductive biases of a CNN-based teacher model. In this example, a compact CNN teacher (EfficientNetV2B0) provides a strong signal and stabilizes DeiT training on the flowers dataset."
+    },
+    {
+      "title": "DeiT - Hugging Face",
+      "url": "https://huggingface.co/docs/transformers/v4.21.3/en/model_doc/deit",
+      "snippet": "DeiT Model with a decoder on top for masked image modeling, as proposed in SimMIM. This model is a PyTorch torch.nn.Module subclass. Use it as a regular PyTorch Module and refer to the PyTorch documentation for all matter related to general usage and behavior."
+    },
+    {
+      "title": "Dark Web AI Tools & Uncensored Models 2026 - Complete Guide | TorWiki",
+      "url": "https://torwiki.org/learn/darknet-ai/",
+      "snippet": "Complete guide to dark web AI: WormGPT, FraudGPT, GhostGPT, jailbreak techniques, uncensored LLMs, and AI services on Tor. Updated April 2026."
+    },
+    {
+      "title": "transformers/docs/source/en/model_doc/deit.md at main - GitHub",
+      "url": "https://github.com/huggingface/transformers/blob/main/docs/source/en/model_doc/deit.md",
+      "snippet": "The DeiT model was proposed in Training data-efficient image transformers & distillation through attention by Hugo Touvron, Matthieu Cord, Matthijs Douze, Francisco Massa, Alexandre Sablayrolles, Hervé Jégou. The Vision Transformer (ViT) introduced in Dosovitskiy et al., 2020 has shown that one can match or even outperform existing convolutional neural networks using a Transformer encoder ..."
+    }
+  ]
+}

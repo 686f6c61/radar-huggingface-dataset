@@ -5,7 +5,7 @@
   "author": "LeoZotos",
   "url": "https://huggingface.co/LeoZotos/little_learner_1_3b_bio_cpt_mmlu_for_mcq_training",
   "created_at": "2026-08-27T12:11:46.000Z",
-  "updated_at": "2026-08-27T12:12:14.000Z",
+  "updated_at": "2026-08-27T15:17:52.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": null,
@@ -24,8 +24,8 @@
   "trending_score": 0,
   "parameters": 1358021120,
   "parameters_human": "1.36B",
-  "storage_bytes": 2716075264,
-  "storage_human": "2.7 GB",
+  "storage_bytes": 8148225792,
+  "storage_human": "8.1 GB",
   "base_model": null,
   "formats": [
     "safetensors"

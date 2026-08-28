@@ -5,7 +5,7 @@
   "author": "inferencerlabs",
   "url": "https://huggingface.co/inferencerlabs/Qwen3.8-Flash-Next-MLX-Q9",
   "created_at": "2026-08-26T14:54:41.000Z",
-  "updated_at": "2026-08-26T17:39:38.000Z",
+  "updated_at": "2026-08-27T13:24:02.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": "image-text-to-text",
@@ -29,8 +29,8 @@
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
-  "storage_bytes": 60636570349,
-  "storage_human": "60.6 GB",
+  "storage_bytes": 199982505868,
+  "storage_human": "200.0 GB",
   "base_model": "Qwen/Qwen3.8-Flash-Next",
   "formats": [
     "mlx"

@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "julianowak/generation",
+  "slug": "julianowak-generation",
+  "author": "julianowak",
+  "url": "https://huggingface.co/julianowak/generation",
+  "created_at": "2026-08-27T19:21:04.000Z",
+  "updated_at": "2026-08-27T19:21:13.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "swin_t",
+    "pytorch",
+    "swin-t",
+    "generation",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 49600,
+  "parameters_human": "49600",
+  "storage_bytes": 198880,
+  "storage_human": "198880 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Generative AI consulting guide - LinkedIn",
+      "url": "https://www.linkedin.com/pulse/comprehensive-guide-generative-ai-consulting-2026-julian-nowak-ozppe",
+      "snippet": "Generative AI consulting is now a priority for organizations aiming to turn AI experimentation into measurable results. Demand is rising as enterprises realize that enthusiasm for new tools does ..."
+    },
+    {
+      "title": "LLM Leaderboard 2026: Compare 300+ Top AI Models by Intelligence, Speed ...",
+      "url": "https://llm-stats.com/leaderboards/llm-leaderboard",
+      "snippet": "The LLM Leaderboard — independent ranking of GPT, Claude, Gemini, Llama, DeepSeek and 300+ AI models by intelligence, speed and price. Filter by provider, license, modality and context window; sort by every benchmark. Composite LLM Stats Score updated continuously from public benchmarks and live API metrics."
+    },
+    {
+      "title": "Generative Artificial Intelligence Models: A Survey - Springer",
+      "url": "https://link.springer.com/article/10.1007/s10462-026-11546-1",
+      "snippet": "Generative Artificial Intelligence (GenAI) refers to the use of Artificial Intelligence (AI) to create a novel content, such as text, images, audio, or videos. Unlike traditional or discriminative AI models, which are designed to learn a functional mapping &#92;(f(x) &#92;rightarrow y&#92;) for classification or regression, GenAI models seek to approximate the high-dimensional probability distribution p ..."
+    },
+    {
+      "title": "Generative AI - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Generative_AI",
+      "snippet": "Generative artificial intelligence (GenAI) is a subfield of artificial intelligence (AI) that uses generative models to generate text, images, videos, audio, software code or other forms of data. [1] These models learn the underlying patterns and structures of their training data, and use them to generate new data [2] in response to input, which often takes the form of natural language prompts ..."
+    },
+    {
+      "title": "Lyria 3.5 — Google DeepMind",
+      "url": "https://deepmind.google/models/lyria/",
+      "snippet": "Lyria 3.5 is our most advanced music generation model. It helps you compose the songs you want to hear next."
+    }
+  ]
+}

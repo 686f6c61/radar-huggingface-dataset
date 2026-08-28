@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "amirsoahil101/Flights_Prediction_System",
+  "slug": "amirsoahil101-flights_prediction_system",
+  "author": "amirsoahil101",
+  "url": "https://huggingface.co/amirsoahil101/Flights_Prediction_System",
+  "created_at": "2026-08-28T01:02:48.000Z",
+  "updated_at": "2026-08-28T01:22:39.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "tabular-regression",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "passenger-prediction",
+    "machine-learning",
+    "scikit-learn",
+    "linear-regression",
+    "time-series",
+    "tabular-regression",
+    "en",
+    "license:mit",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 141474,
+  "storage_human": "141474 B",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "amirsoahil101 (Amir) - Hugging Face",
+      "url": "https://huggingface.co/amirsoahil101",
+      "snippet": "AI & ML interests Passionate about Machine Learning, Deep Learning, and Generative AI. Experienced in building predictive models, neural networks, and AI-driven solutions using frameworks like PyTorch, TensorFlow, and scikit-learn. Enthusiastic about integrating intelligent models into full-stack web applications."
+    },
+    {
+      "title": "Perplexity AI",
+      "url": "https://www.perplexity.ai/",
+      "snippet": "Perplexity is a free AI-powered answer engine that provides accurate, trusted, and real-time answers to any question."
+    },
+    {
+      "title": "GitHub - Pruthviraj-333/SkyPredict-Flight-Delay-Prediction: AI-powered ...",
+      "url": "https://github.com/Pruthviraj-333/SkyPredict-Flight-Delay-Prediction",
+      "snippet": "AI-powered flight delay prediction system using XGBoost trained on 600K+ real U.S. flights. Full-stack app with FastAPI backend, Next.js frontend, and analytics dashboard for passengers and airport..."
+    },
+    {
+      "title": "SamihaCodingKoreHi5/Flight-Delay-Predictor-AI - GitHub",
+      "url": "https://github.com/SamihaCodingKoreHi5/Flight-Delay-Predictor-AI",
+      "snippet": "An AI-powered Flight Delay Prediction System built with Python and Machine Learning that predicts whether a flight will be delayed based on airline, weather conditions, departure time, and flight distance."
+    },
+    {
+      "title": "Real-time predictive modeling of flight delays using distributed ...",
+      "url": "https://www.sciencedirect.com/science/article/pii/S2405896325003738",
+      "snippet": "This study presents a real-time system for flight delay prediction using distributed systems and machine learning. By integrating flight data from ADS…"
+    }
+  ]
+}

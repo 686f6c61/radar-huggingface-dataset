@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "trohrbaugh/Qwen3.8-Flash-Next-heretic-2",
+  "slug": "trohrbaugh-qwen3-8-flash-next-heretic-2",
+  "author": "trohrbaugh",
+  "url": "https://huggingface.co/trohrbaugh/Qwen3.8-Flash-Next-heretic-2",
+  "created_at": "2026-08-27T22:23:36.000Z",
+  "updated_at": "2026-08-27T22:39:26.000Z",
+  "license": "qwen-community-1.0",
+  "license_family": "unknown",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen4_exp",
+    "image-text-to-text",
+    "heretic",
+    "uncensored",
+    "decensored",
+    "abliterated",
+    "reproducible",
+    "conversational",
+    "license:other",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 177392830576,
+  "parameters_human": "177.39B",
+  "storage_bytes": 360020179844,
+  "storage_human": "360.0 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - QwenLM/Qwen3.8-Flash-Next: Qwen3.8-Flash-Next is the ...",
+      "url": "https://github.com/QwenLM/Qwen3.8-Flash-Next/",
+      "snippet": "In this release we are opening the weights of Qwen3.8-Flash-Next, a multimodal MoE model that also serves as an early preview of the architecture used in Qwen4. It plays the same role that Qwen3-Next played for Qwen3.5: the hybrid Gated DeltaNet + Gated Attention design introduced at that time has since been used across the Qwen3.5, Qwen3.6, Qwen3.7 and Qwen3.8 series. We are again releasing ..."
+    },
+    {
+      "title": "Qwen3.8-Flash-Next: How to Run Locally - unsloth.ai",
+      "url": "https://unsloth.ai/docs/models/qwen3.8-next",
+      "snippet": "Search and download Qwen3.8-Flash-Next Go to Unsloth Chat or Model hub and search for Qwen3.8-Flash in the search bar and download your desired model and quant."
+    },
+    {
+      "title": "Qwen/Qwen3.8-Flash-Next · Hugging Face",
+      "url": "https://huggingface.co/Qwen/Qwen3.8-Flash-Next",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Qwen3.8 - How to Run Locally | Unsloth Documentation",
+      "url": "https://unsloth.ai/docs/models/qwen3.8",
+      "snippet": "Qwen3.8 is Qwen&#x27;s new model family, featuring Qwen3.8- 27B, Qwen3.8- 2.4T-A95B and Qwen3.8- Max. Qwen3.8-27B has vision and reasoning capabilities, a 256K context window, and runs locally on 17GB RAM/VRAM setups. Qwen3.8 excels at agentic coding, vision and chat tasks, and can now run via Unsloth GGUFs, NVFP4 and Unsloth Desktop. Qwen3.8-2.4T-A95B is a 2.4T parameter (95B active) model with ..."
+    },
+    {
+      "title": "Qwen3.8-Flash-Next: 262K Context, GPQA 91.7 (2026) | HokAI",
+      "url": "https://hokai.io/hub/models/qwen3.8-flash-next",
+      "snippet": "Released by Alibaba&#x27;s Qwen team on August 26, 2026, Qwen3.8-Flash-Next extends to a 1-million-token context via YaRN and trained at roughly one-ninth the compute of its Qwen3.7-Plus predecessor. It suits self-hosted coding and long-context agents more than teams needing a managed API today."
+    }
+  ]
+}

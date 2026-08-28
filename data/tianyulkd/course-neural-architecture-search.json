@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "tianyulkd/course-neural-architecture-search",
+  "slug": "tianyulkd-course-neural-architecture-search",
+  "author": "tianyulkd",
+  "url": "https://huggingface.co/tianyulkd/course-neural-architecture-search",
+  "created_at": "2026-08-27T22:04:52.000Z",
+  "updated_at": "2026-08-27T22:05:00.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "transformer",
+    "research-notes",
+    "neural-architecture-search",
+    "license:cc-by-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 24832,
+  "parameters_human": "24832",
+  "storage_bytes": 99808,
+  "storage_human": "99808 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Neural Architecture Search Algorithm - GeeksforGeeks",
+      "url": "https://www.geeksforgeeks.org/deep-learning/neural-architecture-and-search-methods/",
+      "snippet": "Neural Architecture Search (NAS) falls within the realm of automated machine learning (AutoML). AutoML is a comprehensive term encompassing the automation of diverse tasks in the application of machine learning to real-world challenges. The article explores the fundamentals, and applications of the NAS algorithm."
+    },
+    {
+      "title": "paper_009248418_neural_architecture_search - Hugging Face",
+      "url": "https://huggingface.co/nikitagn/paper_009248418_neural_architecture_search",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Neural architecture search - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Neural_architecture_search",
+      "snippet": "Neural architecture search (NAS) [1][2] is a technique for automating the design of artificial neural networks (ANN), a widely used model in the field of machine learning."
+    },
+    {
+      "title": "Neural Architecture Search: Insights from 1000 Papers",
+      "url": "https://arxiv.org/abs/2301.08727",
+      "snippet": "In the past decade, advances in deep learning have resulted in breakthroughs in a variety of areas, including computer vision, natural language understanding, speech recognition, and reinforcement learning. Specialized, high-performing neural architectures are crucial to the success of deep learning in these areas. Neural architecture search (NAS), the process of automating the design of ..."
+    },
+    {
+      "title": "neural-architecture-search · GitHub Topics · GitHub",
+      "url": "https://github.com/topics/neural-architecture-search",
+      "snippet": "An open source AutoML toolkit for automate machine learning lifecycle, including feature engineering, neural architecture search, model compression and hyper-parameter tuning."
+    }
+  ]
+}

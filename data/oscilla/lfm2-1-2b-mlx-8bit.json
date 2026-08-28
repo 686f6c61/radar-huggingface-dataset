@@ -1,0 +1,92 @@
+{
+  "schema": 1,
+  "id": "Oscilla/LFM2-1.2B-mlx-8Bit",
+  "slug": "oscilla-lfm2-1-2b-mlx-8bit",
+  "author": "Oscilla",
+  "url": "https://huggingface.co/Oscilla/LFM2-1.2B-mlx-8Bit",
+  "created_at": "2026-08-27T20:24:59.000Z",
+  "updated_at": "2026-08-27T20:25:03.000Z",
+  "license": "lfm1.0",
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en",
+    "ar",
+    "zh",
+    "fr",
+    "de",
+    "ja",
+    "ko",
+    "es"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "lfm2",
+    "text-generation",
+    "liquid",
+    "edge",
+    "mlx",
+    "mlx-my-repo",
+    "conversational",
+    "en",
+    "ar",
+    "zh",
+    "fr",
+    "de",
+    "ja",
+    "ko",
+    "es",
+    "base_model:LiquidAI/LFM2-1.2B",
+    "base_model:quantized:LiquidAI/LFM2-1.2B",
+    "license:other",
+    "endpoints_compatible",
+    "8-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 329251584,
+  "parameters_human": "329.3M",
+  "storage_bytes": 1243645837,
+  "storage_human": "1.2 GB",
+  "base_model": "LiquidAI/LFM2-1.2B",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "LiquidAI/LFM2-1.2B · Hugging Face",
+      "url": "https://huggingface.co/LiquidAI/LFM2-1.2B",
+      "snippet": "A newer version of this model is available: LiquidAI/LFM2.5-1.2B-Instruct"
+    },
+    {
+      "title": "Oscilla/LFM2-1.2B-mlx-4Bit · Hugging Face",
+      "url": "https://huggingface.co/Oscilla/LFM2-1.2B-mlx-4Bit",
+      "snippet": "Oscilla/LFM2-1.2B-mlx-4Bit The Model Oscilla/LFM2-1.2B-mlx-4Bit was converted to MLX format from LiquidAI/LFM2-1.2B using mlx-lm version 0.31.2. Use with mlx"
+    },
+    {
+      "title": "Introducing LFM2: The Fastest On-Device Foundation Models on the Market ...",
+      "url": "https://www.liquid.ai/blog/liquid-foundation-models-v2-our-second-series-of-generative-ai-models",
+      "snippet": "NOTE: In 2026 we released a new version of our flagship models - LFM2.5 Today, we release LFM2, a new class of Liquid Foundation Models (LFMs) that sets a new standard in quality, speed, and memory efficiency deployment. LFM2 is specifically designed to provide the fastest on-device gen-AI experience across the industry, thus unlocking a massive number of devices for generative AI workloads ..."
+    },
+    {
+      "title": "LFM2 Technical Report - arXiv.org",
+      "url": "https://arxiv.org/pdf/2511.23404",
+      "snippet": "We evaluate the inference efficiency of both dense and MoE LFM2 models on two representative on-device CPU targets: a Snapdragon 8 Elite based Samsung Galaxy S25 smartphone (a newer model than we used for the architecture search in Section 2.1) and an AMD Ryzen AI 9 HX 370 laptop CPU."
+    },
+    {
+      "title": "LFM2 Technical Report - arXiv.org",
+      "url": "https://arxiv.org/html/2511.23404v1",
+      "snippet": "The model family includes dense variants from 350M to 2.6B parameters and an 8.3B MoE model with 1.5B active parameters, all supporting 32K context length. We extend this backbone to multimodal and retrieval domains with LFM2-VL for vision-language tasks, LFM2-Audio for speech, and LFM2-ColBERT-350M for late-interaction retrieval."
+    }
+  ]
+}

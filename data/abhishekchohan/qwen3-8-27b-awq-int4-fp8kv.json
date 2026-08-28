@@ -5,7 +5,7 @@
   "author": "abhishekchohan",
   "url": "https://huggingface.co/abhishekchohan/Qwen3.8-27B-AWQ-INT4-FP8KV",
   "created_at": "2026-08-26T16:42:48.000Z",
-  "updated_at": "2026-08-26T16:45:41.000Z",
+  "updated_at": "2026-08-27T16:29:17.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "image-text-to-text",
@@ -32,8 +32,8 @@
     "dataset:nvidia/Nemotron-SFT-Science-v2",
     "dataset:nvidia/Nemotron-SFT-SWE-v3",
     "dataset:nvidia/Nemotron-SFT-Multilingual-v2",
-    "base_model:abhishekchohan/Qwen3.8-27B-AWQ-INT4",
-    "base_model:quantized:abhishekchohan/Qwen3.8-27B-AWQ-INT4",
+    "base_model:Qwen/Qwen3.8-27B",
+    "base_model:quantized:Qwen/Qwen3.8-27B",
     "license:apache-2.0",
     "endpoints_compatible",
     "region:us"
@@ -45,7 +45,7 @@
   "parameters_human": "27.78B",
   "storage_bytes": 20993265405,
   "storage_human": "21.0 GB",
-  "base_model": "abhishekchohan/Qwen3.8-27B-AWQ-INT4",
+  "base_model": "Qwen/Qwen3.8-27B",
   "formats": [
     "safetensors"
   ],

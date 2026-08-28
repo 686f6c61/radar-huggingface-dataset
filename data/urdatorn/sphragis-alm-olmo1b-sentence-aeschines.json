@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "Urdatorn/sphragis-alm-olmo1b-sentence-aeschines",
+  "slug": "urdatorn-sphragis-alm-olmo1b-sentence-aeschines",
+  "author": "Urdatorn",
+  "url": "https://huggingface.co/Urdatorn/sphragis-alm-olmo1b-sentence-aeschines",
+  "created_at": "2026-08-27T22:49:37.000Z",
+  "updated_at": "2026-08-27T22:50:33.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "grc"
+  ],
+  "tags": [
+    "safetensors",
+    "olmo",
+    "ancient-greek",
+    "authorship-attribution",
+    "authorial-language-model",
+    "grc",
+    "base_model:allenai/OLMo-1B-hf",
+    "base_model:finetune:allenai/OLMo-1B-hf",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1176764416,
+  "parameters_human": "1.18B",
+  "storage_bytes": 2353541856,
+  "storage_human": "2.4 GB",
+  "base_model": "allenai/OLMo-1B-hf",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Urdatorn/sphragis-alm-olmo3-greek-7b-athenaeus · Hugging Face",
+      "url": "https://huggingface.co/Urdatorn/sphragis-alm-olmo3-greek-7b-athenaeus",
+      "snippet": "Each model is a full further-pretraining of Urdatorn/olmo3-7b-ancient-greek on one author&#x27;s Sphragis training sentences only; a sentence is attributed to whichever of the seventeen models finds it least surprising. This model was trained on Athenaeus: 1,900 sentences, 221,469 scored tokens from the sentence_1 training split."
+    },
+    {
+      "title": "Urdatorn (Albin Thörn Cleland) - Hugging Face",
+      "url": "https://huggingface.co/Urdatorn/datasets",
+      "snippet": "Machine learning for Ancient Greek. Particular research topics include prosody, metre and author attribution."
+    },
+    {
+      "title": "Urdatorn (Albin Thörn Cleland) / Repositories · GitHub",
+      "url": "https://github.com/Urdatorn?tab=repositories",
+      "snippet": "PhD student at DigPhil, the Swedish national graduate school of digital philology. - Urdatorn"
+    },
+    {
+      "title": "LLM Leaderboard & AI Model Benchmarks — August 2026",
+      "url": "https://benchlm.ai/",
+      "snippet": "LLM Leaderboard & AI Model Benchmarks — August 2026 Compare frontier AI models by quality, cost, and context. 105 Supported and 121 Estimated models among 403 tracked LLMs — 406 benchmarks, real pricing, and runtime data in one place."
+    },
+    {
+      "title": "GitHub - sphragis-oss/sphragis: EU AI Act compliance gateway for Claude ...",
+      "url": "https://github.com/sphragis-oss/sphragis",
+      "snippet": "Sphragis The EU AI Act compliance gateway you actually control. A single Go binary that sits between your apps and any OpenAI- or Anthropic-compatible LLM, with first-class support for Claude (Claude Code and the Anthropic SDKs)."
+    }
+  ]
+}

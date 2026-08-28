@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "LifeAi-dev/madlad400-3b-ct2-float16",
+  "slug": "lifeai-dev-madlad400-3b-ct2-float16",
+  "author": "LifeAi-dev",
+  "url": "https://huggingface.co/LifeAi-dev/madlad400-3b-ct2-float16",
+  "created_at": "2026-08-27T19:09:56.000Z",
+  "updated_at": "2026-08-27T19:09:57.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "translation",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "translation",
+    "ctranslate2",
+    "madlad",
+    "base_model:google/madlad400-3b-mt",
+    "base_model:finetune:google/madlad400-3b-mt",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 5901856279,
+  "storage_human": "5.9 GB",
+  "base_model": "google/madlad400-3b-mt",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "LifeAi-dev (LifeAi) - Hugging Face",
+      "url": "https://huggingface.co/LifeAi-dev",
+      "snippet": "Org profile for LifeAi on Hugging Face, the AI community building the future."
+    },
+    {
+      "title": "google/madlad400-3b-mt · Hugging Face",
+      "url": "https://huggingface.co/google/madlad400-3b-mt",
+      "snippet": "MADLAD-400-3B-MT is a multilingual machine translation model based on the T5 architecture that was trained on 1 trillion tokens covering over 450 languages using publicly available data."
+    },
+    {
+      "title": "google-research/madlad_400/README.md at master - GitHub",
+      "url": "https://github.com/google-research/google-research/blob/master/madlad_400/README.md",
+      "snippet": "Google Research. Contribute to google-research/google-research development by creating an account on GitHub."
+    },
+    {
+      "title": "[2309.04662] MADLAD-400: A Multilingual And Document-Level Large ...",
+      "url": "https://arxiv.org/abs/2309.04662",
+      "snippet": "We introduce MADLAD-400, a manually audited, general domain 3T token monolingual dataset based on CommonCrawl, spanning 419 languages. We discuss the limitations revealed by self-auditing MADLAD-400, and the role data auditing had in the dataset creation process. We then train and release a 10.7B-parameter multilingual machine translation model on 250 billion tokens covering over 450 languages ..."
+    },
+    {
+      "title": "madlad400-3b-ct2 Open-source Multilingual Translation Model - Supports ...",
+      "url": "https://model.aibase.com/models/details/1960576468933414912",
+      "snippet": "MADLAD-400-3B-CT2 is a multilingual machine translation model based on the T5 architecture, trained on public data of 1 trillion tokens covering over 450 languages. This model supports over 400 languages, focuses on machine translation and multilingual NLP tasks, and is also competitive compared to larger-scale models."
+    }
+  ]
+}

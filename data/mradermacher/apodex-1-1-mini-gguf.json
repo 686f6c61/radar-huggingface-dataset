@@ -5,7 +5,7 @@
   "author": "mradermacher",
   "url": "https://huggingface.co/mradermacher/Apodex-1.1-mini-GGUF",
   "created_at": "2026-08-27T16:29:58.000Z",
-  "updated_at": "2026-08-27T17:02:44.000Z",
+  "updated_at": "2026-08-27T20:05:29.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": null,
@@ -34,8 +34,8 @@
   "trending_score": 0,
   "parameters": 35505251456,
   "parameters_human": "35.51B",
-  "storage_bytes": 35127525376,
-  "storage_human": "35.1 GB",
+  "storage_bytes": 244419009824,
+  "storage_human": "244.4 GB",
   "base_model": "apodex/Apodex-1.1-mini",
   "formats": [
     "gguf"

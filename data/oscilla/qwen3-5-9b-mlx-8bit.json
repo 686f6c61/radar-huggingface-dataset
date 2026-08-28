@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "Oscilla/Qwen3.5-9B-mlx-8Bit",
+  "slug": "oscilla-qwen3-5-9b-mlx-8bit",
+  "author": "Oscilla",
+  "url": "https://huggingface.co/Oscilla/Qwen3.5-9B-mlx-8Bit",
+  "created_at": "2026-08-27T20:43:10.000Z",
+  "updated_at": "2026-08-27T20:43:21.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_5",
+    "image-text-to-text",
+    "mlx",
+    "conversational",
+    "base_model:Qwen/Qwen3.5-9B",
+    "base_model:quantized:Qwen/Qwen3.5-9B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "8-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 2519020032,
+  "parameters_human": "2.52B",
+  "storage_bytes": 9534522934,
+  "storage_human": "9.5 GB",
+  "base_model": "Qwen/Qwen3.5-9B",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "mlx-community/Qwen3.5-9B-MLX-8bit · Hugging Face",
+      "url": "https://huggingface.co/mlx-community/Qwen3.5-9B-MLX-8bit",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Qwen3.5-9B-MLX-8bit · Models - modelscope.cn",
+      "url": "https://www.modelscope.cn/models/mlx-community/Qwen3.5-9B-MLX-8bit",
+      "snippet": "Qwen3.5-9B-MLX-8bit This is a quantized MLX version of Qwen/Qwen3.5-9B for Apple Silicon. Model Details Original Model: Qwen/Qwen3.5-9B Quantization: 8-bit (~8.864 bits per weight) Group Size: 64 Format: MLX SafeTensors Framework: mlx-vlm Conversion Details This model was converted using mlx-vlm from the pc/fix-qwen35-predicate branch, which includes fixes for Qwen3.5 quantization predicates ..."
+    },
+    {
+      "title": "Qwen3.5 9B MLX 8bit — ThinkLLM",
+      "url": "https://thinkllm.dev/models/qwen3-5-9b-mlx-8bit",
+      "snippet": "A mid-sized multimodal model that handles both text and image inputs, converted to MLX 8-bit format for efficient local inference on Apple Silicon hardware. The quantization keeps memory footprint manageable while preserving most of the base model&#x27;s capabilities. Expect solid general reasoning and vision understanding with the trade-off of some precision loss from quantization."
+    },
+    {
+      "title": "Qwen3.5 9B 8bit by mlx-community — VRAM 10.4GB | LLM Explorer",
+      "url": "https://llm-explorer.com/model/mlx-community%2FQwen3.5-9B-8bit,552j9kCM50bDVSeVooLBtS",
+      "snippet": "Qwen3.5 9B 8bit is an open-source 9b LLM by mlx-community. VRAM 10.4GB. Compare benchmarks, capabilities, and deployment details on LLM Explorer."
+    },
+    {
+      "title": "qwen3.5:9b - ollama.com",
+      "url": "https://ollama.com/library/qwen3.5:9b",
+      "snippet": "Qwen3.5 features the following enhancement: Unified Vision-Language Foundation: Early fusion training on multimodal tokens achieves cross-generational parity with Qwen3 and outperforms Qwen3-VL models across reasoning, coding, agents, and visual understanding benchmarks."
+    }
+  ]
+}

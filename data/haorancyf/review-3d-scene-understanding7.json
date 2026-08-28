@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "haorancyf/review-3d-scene-understanding7",
+  "slug": "haorancyf-review-3d-scene-understanding7",
+  "author": "haorancyf",
+  "url": "https://huggingface.co/haorancyf/review-3d-scene-understanding7",
+  "created_at": "2026-08-27T23:02:29.000Z",
+  "updated_at": "2026-08-27T23:02:38.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "transformer",
+    "research-notes",
+    "3d-scene-understanding",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 33088,
+  "parameters_human": "33088",
+  "storage_bytes": 132832,
+  "storage_human": "132832 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "haorancyf (Cao Haoran) - Hugging Face",
+      "url": "https://huggingface.co/haorancyf",
+      "snippet": "Recent Activity updated a datasetabout 14 hours ago haorancyf/dataset_055326048_architecture_pointcloud_text published a datasetabout 14 hours ago haorancyf/dataset_055326048_architecture_pointcloud_text View all activity"
+    },
+    {
+      "title": "GitHub - ActiveVisionLab/Awesome-LLM-3D: Awesome-LLM-3D: a curated list ...",
+      "url": "https://github.com/ActiveVisionLab/Awesome-LLM-3D",
+      "snippet": "Awesome-LLM-3D 🏠 About Here is a curated list of papers about 3D-Related Tasks empowered by Large Language Models (LLMs). It contains various tasks including 3D understanding, reasoning, generation, and embodied agents. Also, we include other Foundation Models (CLIP, SAM) for the whole picture of this area."
+    },
+    {
+      "title": "3d-scene-understanding · GitHub Topics · GitHub",
+      "url": "https://github.com/topics/3d-scene-understanding",
+      "snippet": "3d-scene-understanding multimodal-llm language-interaction unified-foundation-model Updated 2 weeks ago Python"
+    },
+    {
+      "title": "Scene-LLM: Extending Language Model for - arXiv.org",
+      "url": "https://arxiv.org/html/2403.11401",
+      "snippet": "This paper introduces Scene-LLM, a 3D-visual-language model that enhances embodied agents&#x27; abilities in interactive 3D indoor environments by integrating the reasoning strengths of Large Language Models (LLMs). Scene-LLM adopts a hybrid 3D visual feature representation, that incorporates dense spatial information and supports scene state updates."
+    },
+    {
+      "title": "Best Open-Source LLM Models in 2026: Coding, Local, Agentic AI ...",
+      "url": "https://huggingface.co/blog/daya-shankar/open-source-llms",
+      "snippet": "A Blog post by Daya Shankar on Hugging Face"
+    }
+  ]
+}

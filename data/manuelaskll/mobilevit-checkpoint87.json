@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "Manuelaskll/mobilevit-checkpoint87",
+  "slug": "manuelaskll-mobilevit-checkpoint87",
+  "author": "Manuelaskll",
+  "url": "https://huggingface.co/Manuelaskll/mobilevit-checkpoint87",
+  "created_at": "2026-08-27T22:49:06.000Z",
+  "updated_at": "2026-08-27T22:49:14.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "mobilevit",
+    "pytorch",
+    "retrieval",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 24832,
+  "parameters_human": "24832",
+  "storage_bytes": 99808,
+  "storage_human": "99808 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Levsolovyov2/mobilevit-checkpoint · Hugging Face",
+      "url": "https://huggingface.co/Levsolovyov2/mobilevit-checkpoint",
+      "snippet": "Levsolovyov2 / mobilevit-checkpoint like 0 Safetensors PyTorch mobilevit retrieval License:bsd-3-clause Model card FilesFiles and versions xet Community Copy to bucket new Mobilevit for Retrieval Overview Repository status Architecture Default experiment recipe Quick check Evaluation guidance Limitations Files License"
+    },
+    {
+      "title": "README.md · qualcomm/Mobile-VIT at main - Hugging Face",
+      "url": "https://huggingface.co/qualcomm/Mobile-VIT/blob/main/README.md",
+      "snippet": "This export script leverages Qualcomm® AI Hub to optimize, validate, and deploy this model on-device. Lets go through each step below in detail: Step 1: Compile model for on-device deployment To compile a PyTorch model for on-device deployment, we first trace the model in memory using the jit.trace and then call the submit_compile_job API."
+    },
+    {
+      "title": "checkpoint AI Models | Civitai",
+      "url": "https://civitai.com/tag/checkpoint",
+      "snippet": "checkpoint Browse 200 Stable Diffusion & Flux models, LoRAs, checkpoints, and embeddings tagged with checkpoint."
+    },
+    {
+      "title": "transformers/docs/source/en/model_doc/mobilevit.md at main ...",
+      "url": "https://github.com/huggingface/transformers/blob/main/docs/source/en/model_doc/mobilevit.md",
+      "snippet": "MobileViT is a lightweight vision transformer for mobile devices that merges CNN&#x27;s efficiency and inductive biases with transformers global context modeling. It treats transformers as convolutions, enabling global information processing without the heavy computational cost of standard ViTs."
+    },
+    {
+      "title": "mmpretrain/configs/mobilevit/README.md at main · open-mmlab ... - GitHub",
+      "url": "https://github.com/open-mmlab/mmpretrain/blob/main/configs/mobilevit/README.md",
+      "snippet": "MobileViT aims at introducing a light-weight network, which takes the advantages of both ViTs and CNNs, uses the InvertedResidual blocks in MobileNetV2 and MobileViTBlock which refers to ViT transformer blocks to build a standard 5-stage model structure. The MobileViTBlock reckons transformers as convolutions to perform a global representation, meanwhile conbined with original convolution ..."
+    }
+  ]
+}

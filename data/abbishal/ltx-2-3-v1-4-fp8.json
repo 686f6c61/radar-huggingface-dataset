@@ -30,8 +30,8 @@
   "trending_score": 0,
   "parameters": 21005004544,
   "parameters_human": "21.01B",
-  "storage_bytes": 273898603420,
-  "storage_human": "273.9 GB",
+  "storage_bytes": 238993705160,
+  "storage_human": "239.0 GB",
   "base_model": "TenStrip/LTX2.3-10Eros, Lightricks/LTX-2.3, TenStrip/LTX2.3_DMD_Lora",
   "formats": [
     "gguf"

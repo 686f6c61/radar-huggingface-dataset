@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "gguf-org/pig-clip",
+  "slug": "gguf-org-pig-clip",
+  "author": "gguf-org",
+  "url": "https://huggingface.co/gguf-org/pig-clip",
+  "created_at": "2026-08-22T15:18:25.000Z",
+  "updated_at": "2026-08-28T00:01:56.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 414,
+  "trending_score": 0,
+  "parameters": 596049920,
+  "parameters_human": "596.0M",
+  "storage_bytes": 1137271616,
+  "storage_human": "1.1 GB",
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "gguf-org/pig-clip · Hugging Face",
+      "url": "https://huggingface.co/gguf-org/pig-clip",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "gguf-org/x-image-gguf · Hugging Face",
+      "url": "https://huggingface.co/gguf-org/x-image-gguf",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GitHub - gguf-org/pig: pig tool for gguf · GitHub",
+      "url": "https://github.com/gguf-org/pig",
+      "snippet": "pig tool for gguf. Contribute to gguf-org/pig development by creating an account on GitHub."
+    },
+    {
+      "title": "GitHub - IBM/gguf: IBM GGUF-encoded AI models and conversion scripts",
+      "url": "https://github.com/IBM/gguf",
+      "snippet": "IBM GGUF-encoded AI models and conversion scripts. Contribute to IBM/gguf development by creating an account on GitHub."
+    },
+    {
+      "title": "gguf",
+      "url": "https://gguf.org/",
+      "snippet": "what is gguf? GGUF (GPT-Generated Unified Format) is a successor of GGML (GPT-Generated Model Language); GPT stands for Generative Pre-trained Transformer."
+    }
+  ]
+}

@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "DIRKDIGGLER69420/KKREA2",
+  "slug": "dirkdiggler69420-kkrea2",
+  "author": "DIRKDIGGLER69420",
+  "url": "https://huggingface.co/DIRKDIGGLER69420/KKREA2",
+  "created_at": "2026-06-26T10:53:17.000Z",
+  "updated_at": "2026-08-28T01:05:26.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 75678052064,
+  "storage_human": "75.7 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "DIRKDIGGLER69420/KKREA2 · Hugging Face",
+      "url": "https://huggingface.co/DIRKDIGGLER69420/KKREA2",
+      "snippet": "DIRKDIGGLER69420 / KKREA2 like 1 Model card FilesFiles and versions xet Community Copy to bucket new No model card Downloads last month -"
+    },
+    {
+      "title": "DIRKDIGGLER69420 (DIRK DIGGLER) - Hugging Face",
+      "url": "https://huggingface.co/DIRKDIGGLER69420",
+      "snippet": "AI & ML interests ... Recent Activity updated a model about 2 months ago ... published a model about 2 months ago"
+    },
+    {
+      "title": "DIRKDIGGLER69420/KKREA2 | Sweet Tea Studio",
+      "url": "https://sweettea.co/es/resources/catalog-model-ca67e4cd59b104e23c5030a1253781ad5694bc5f660d36b69ad757936034cac9",
+      "snippet": "Explora DIRKDIGGLER69420/KKREA2 en el directorio de Sweet Tea Resources, con información de confianza, preparación y requisitos complementarios."
+    },
+    {
+      "title": "Model Library | Krea",
+      "url": "https://www.krea.ai/models",
+      "snippet": "Explore Krea&#x27;s AI model library across image, video, audio, enhancer, edit, 3D, video restyle, motion transfer, and lipsync tools."
+    },
+    {
+      "title": "Krea 2: AI Image Foundation Model & Style Control",
+      "url": "https://www.krea.ai/krea-2",
+      "snippet": "Create expressive AI images with Krea 2, Krea AI&#x27;s in-house foundation model for aesthetic diversity, style control, moodboards, and creative workflows."
+    }
+  ]
+}

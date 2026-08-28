@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "MazenMohamed10/Luca-PyGuide-1.0",
+  "slug": "mazenmohamed10-luca-pyguide-1-0",
+  "author": "MazenMohamed10",
+  "url": "https://huggingface.co/MazenMohamed10/Luca-PyGuide-1.0",
+  "created_at": "2026-08-28T00:07:47.000Z",
+  "updated_at": "2026-08-28T00:19:50.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "joblib",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 95636,
+  "storage_human": "95636 B",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "MazenMohamed10 (Mazen Mohamed Fayez) - Hugging Face",
+      "url": "https://huggingface.co/MazenMohamed10",
+      "snippet": "AI & ML interests ... Recent Activity updated a model about 7 hours ago ... published a model about 7 hours ago"
+    },
+    {
+      "title": "MazenMohamed10 (Mazen Mohamed Fayez) - Hugging Face",
+      "url": "https://huggingface.co/MazenMohamed10/models",
+      "snippet": "MazenMohamed10&#x27;s models2 Sort: Recently updated MazenMohamed10/FraudShield-AI-Model Updated 27 days ago"
+    },
+    {
+      "title": "luca-py/docs/agent at main · quantized-ai/luca-py · GitHub",
+      "url": "https://github.com/quantized-ai/luca-py/tree/main/docs/agent",
+      "snippet": "Contribute to quantized-ai/luca-py development by creating an account on GitHub."
+    },
+    {
+      "title": "Luca-AI-Conversational-AI-Model/Luca.py at main - GitHub",
+      "url": "https://github.com/Wilfredroy/Luca-AI-Conversational-AI-Model/blob/main/Luca.py",
+      "snippet": "Luca-AI-Conversational-AI-Model / Luca.py Top Code Blame 61 lines (51 loc) · 1.68 KB Raw 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 32 33 34 35 36 37 38 39 40 41 42 43 44 45 46 47 48 49 50 51 52 53 54 55 56 57 58 59 60 61 from flask import Flask, render_template, request, jsonify import os import google ..."
+    },
+    {
+      "title": "LUCA | The Intelligent Reading Specialist for K-12 Students",
+      "url": "https://luca.ai/",
+      "snippet": "Help every K-12 reader gain confidence with LUCA, an intelligent reading specialist that listens at the phoneme level. Built by a father, free to start."
+    }
+  ]
+}

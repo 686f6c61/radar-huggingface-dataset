@@ -5,7 +5,7 @@
   "author": "Vandita",
   "url": "https://huggingface.co/Vandita/QuantizedSarcBERT-static-v2",
   "created_at": "2026-08-25T15:58:02.000Z",
-  "updated_at": "2026-08-25T15:58:52.000Z",
+  "updated_at": "2026-08-27T04:44:27.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-classification",

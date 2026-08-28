@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "Martinsguilherme/hw1-multimodal-generation",
+  "slug": "martinsguilherme-hw1-multimodal-generation",
+  "author": "Martinsguilherme",
+  "url": "https://huggingface.co/Martinsguilherme/hw1-multimodal-generation",
+  "created_at": "2026-08-27T19:03:49.000Z",
+  "updated_at": "2026-08-27T19:03:58.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "transformer",
+    "research-notes",
+    "multimodal-generation",
+    "license:cc-by-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 16576,
+  "parameters_human": "16576",
+  "storage_bytes": 66784,
+  "storage_human": "66784 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Top 15 Multimodal Models in 2026 (Open Source & Proprietary)",
+      "url": "https://blog.unitlab.ai/top-multimodal-models/",
+      "snippet": "Discover what multimodal models are, how their architectures work, the top multimodal models, real-world use cases, and key challenges."
+    },
+    {
+      "title": "LLM Leaderboard 2026: Compare 300+ Top AI Models by Intelligence, Speed ...",
+      "url": "https://llm-stats.com/leaderboards/llm-leaderboard",
+      "snippet": "The LLM Leaderboard — independent ranking of GPT, Claude, Gemini, Llama, DeepSeek and 300+ AI models by intelligence, speed and price. Filter by provider, license, modality and context window; sort by every benchmark. Composite LLM Stats Score updated continuously from public benchmarks and live API metrics."
+    },
+    {
+      "title": "Best Multimodal Models of 2026 Rankings: Test & Compare",
+      "url": "https://blog.roboflow.com/best-multimodal-models/",
+      "snippet": "The top multimodal models in early 2026 span a range of strengths: SAM 3 leads Roboflow&#x27;s AI Vision Model Rankings with a score of 1391 and zero-shot segmentation across diverse domains, Gemini 2.5 and Gemini 3 offer a 2-million-token context window suited to long visual reasoning tasks, GPT-5 advances multimodal reasoning and generation, Qwen VL Max targets multilingual and document-heavy ..."
+    },
+    {
+      "title": "Multimodal Tasks and Models · Hugging Face",
+      "url": "https://huggingface.co/learn/computer-vision-course/en/unit4/multimodal-models/tasks-models-part1",
+      "snippet": "Multimodal Tasks and Models In this section, we will briefly look at the different multimodal tasks involving Image and Text modalities and their corresponding models. Before diving in, let&#x27;s have a small recap on what is meant by \"multimodal\" which was covered in previous sections. The human world is a symphony of diverse sensory inputs. We perceive and understand through sight, sound ..."
+    },
+    {
+      "title": "Multi-modal Generative AI: Multi-modal LLMs, Diffusions and the Unification",
+      "url": "https://arxiv.org/pdf/2409.14993",
+      "snippet": "Index Terms—Multi-modal Generative AI, Multi-modal Large Language Model, Diffusion Model, Unified Understanding and Generation I. INTRODUCTION Multi-modal generative AI (Artificial Intelligence) has re-ceived increasing attention recently with the advent of (multi-modal) large language models (LLMs) and diffusion models."
+    }
+  ]
+}

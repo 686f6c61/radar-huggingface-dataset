@@ -5,7 +5,7 @@
   "author": "quimmedes",
   "url": "https://huggingface.co/quimmedes/Qwen3.8-Flash-Next-MTP-GGUF",
   "created_at": "2026-08-27T01:03:45.000Z",
-  "updated_at": "2026-08-27T02:33:05.000Z",
+  "updated_at": "2026-08-28T00:38:10.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": null,
@@ -24,13 +24,13 @@
     "region:us",
     "conversational"
   ],
-  "likes": 0,
+  "likes": 5,
   "downloads_30d": 0,
   "trending_score": 0,
-  "parameters": 3878549248,
+  "parameters": 3878559488,
   "parameters_human": "3.88B",
-  "storage_bytes": 13110500352,
-  "storage_human": "13.1 GB",
+  "storage_bytes": 38980576672,
+  "storage_human": "39.0 GB",
   "base_model": "Qwen/Qwen3.8-Flash-Next",
   "formats": [
     "gguf"

@@ -5,7 +5,7 @@
   "author": "DZER-Studios",
   "url": "https://huggingface.co/DZER-Studios/Vexion-gpt-large",
   "created_at": "2026-08-26T12:51:29.000Z",
-  "updated_at": "2026-08-26T13:22:14.000Z",
+  "updated_at": "2026-08-27T20:03:00.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -25,7 +25,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 0,
+  "downloads_30d": 88,
   "trending_score": 0,
   "parameters": 645376000,
   "parameters_human": "645.4M",

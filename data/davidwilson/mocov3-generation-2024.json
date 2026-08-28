@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "davidwilson/mocov3-generation-2024",
+  "slug": "davidwilson-mocov3-generation-2024",
+  "author": "davidwilson",
+  "url": "https://huggingface.co/davidwilson/mocov3-generation-2024",
+  "created_at": "2026-08-27T22:02:02.000Z",
+  "updated_at": "2026-08-27T22:02:12.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "mocov3",
+    "pytorch",
+    "generation",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 24832,
+  "parameters_human": "24832",
+  "storage_bytes": 99808,
+  "storage_human": "99808 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "AI Models | Civitai",
+      "url": "https://civitai.com/models",
+      "snippet": "Browse thousands of free Stable Diffusion & Flux models, LoRAs, checkpoints, and embeddings. The largest collection of AI image generation resources."
+    },
+    {
+      "title": "1aurent/vit_small_patch16_224.mocov3 · Hugging Face",
+      "url": "https://huggingface.co/1aurent/vit_small_patch16_224.mocov3",
+      "snippet": "Model card for vit_small_patch16_224.mocov3 A Vision Transformer (ViT) image classification model. Trained on 15M histology patches from PAIP and TCGA. Used the MoCo v3 self supervised learning method."
+    },
+    {
+      "title": "Agnes AI | Free Omni-Modal AI API, World-Class AI Models & AI Applications",
+      "url": "https://agnes-ai.com/",
+      "snippet": "Agnes AI is an AI gateway, free AI API platform, and AI application ecosystem featuring Agnes, Echo, and Pavo. Get free AI API credits, create a free AI API key, use free AI API tokens, and access free AI API models for chatbots, AI agents, content tools, image generation, roleplay, productivity, and intelligent workflows."
+    },
+    {
+      "title": "1aurent/vit_small_patch16_224.transpath_mocov3 · Hugging Face",
+      "url": "https://huggingface.co/1aurent/vit_small_patch16_224.transpath_mocov3",
+      "snippet": "Model card for vit_small_patch16_224.transpath_mocov3 A Vision Transformer (ViT) image classification model. Trained on 15M histology patches from PAIP and TCGA. Used the MoCo v3 self supervised learning method. Model Details Model Type: Feature backbone Model Stats: Params (M): 21.7 Image size: 224 x 224 x 3 Papers: Transformer-based unsupervised contrastive learning for histopathological ..."
+    },
+    {
+      "title": "Civitai | Discover and Create AI Art",
+      "url": "https://civitai.com/",
+      "snippet": "Explore thousands of free Stable Diffusion & Flux models, create and share AI-generated art, and join the world&#x27;s largest community of generative AI creators."
+    }
+  ]
+}

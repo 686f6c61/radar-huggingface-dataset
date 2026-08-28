@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "OLIVERDAVIES/undergrad-contrastive",
+  "slug": "oliverdavies-undergrad-contrastive",
+  "author": "OLIVERDAVIES",
+  "url": "https://huggingface.co/OLIVERDAVIES/undergrad-contrastive",
+  "created_at": "2026-08-27T21:37:15.000Z",
+  "updated_at": "2026-08-27T21:37:24.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "flamingo",
+    "pytorch",
+    "contrastive",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 33088,
+  "parameters_human": "33088",
+  "storage_bytes": 132832,
+  "storage_human": "132832 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "AI Model Leaderboard | Compare Top AI Models (2026) | Design for Online",
+      "url": "https://designforonline.com/ai-models/",
+      "snippet": "Compare the top 718 AI models ranked by performance, price, and capability. Featuring Claude, GPT, Gemini and more from leading providers. Updated 2026 with the latest benchmarks."
+    },
+    {
+      "title": "GitHub - DonoToT/CoCoVideo: CoCoVideo: The High-Quality Commercial ...",
+      "url": "https://github.com/DonoToT/CoCoVideo",
+      "snippet": "CoCoVideo: The High-Quality Commercial-Model-Based Contrastive Benchmark for AI-Generated Video Detection - DonoToT/CoCoVideo"
+    },
+    {
+      "title": "The largest study of AI use by undergrads is in, revealing disparities ...",
+      "url": "https://news.berkeley.edu/2026/05/21/the-largest-study-of-ai-use-by-undergrads-is-in-revealing-disparities-in-access-and-in-cheating/",
+      "snippet": "In a world where AI can generate research papers, solve equations or create art, educators worry about how college students may be using it, misusing it or missing out on it. Yet there have been few comprehensive studies of college students and their AI use. Now, Igor Chirikov, a senior researcher at UC Berkeley&#x27;s Center for Studies in Higher Education, has published the largest study of ..."
+    },
+    {
+      "title": "LLM Leaderboard 2026: Compare 300+ Top AI Models by Intelligence, Speed ...",
+      "url": "https://llm-stats.com/leaderboards/llm-leaderboard",
+      "snippet": "The LLM Leaderboard — independent ranking of GPT, Claude, Gemini, Llama, DeepSeek and 300+ AI models by intelligence, speed and price. Filter by provider, license, modality and context window; sort by every benchmark. Composite LLM Stats Score updated continuously from public benchmarks and live API metrics."
+    },
+    {
+      "title": "DeTeCtive: Detecting AI-generated Text via Multi-Level Contrastive ...",
+      "url": "https://deep-diver.github.io/neurips2024/posters/cdtttjfje3/",
+      "snippet": "DeTeCtive: a novel multi-task contrastive learning framework, achieves state-of-the-art AI-generated text detection by distinguishing diverse writing styles instead of simple binary classification."
+    }
+  ]
+}

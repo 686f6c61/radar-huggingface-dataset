@@ -49,8 +49,8 @@
   "trending_score": 0,
   "parameters": 8030261312,
   "parameters_human": "8.03B",
-  "storage_bytes": 108604472516,
-  "storage_human": "108.6 GB",
+  "storage_bytes": 34560147520,
+  "storage_human": "34.6 GB",
   "base_model": "meta-llama/Meta-Llama-3.1-8B-Instruct",
   "formats": [
     "gguf"

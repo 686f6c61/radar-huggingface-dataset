@@ -5,7 +5,7 @@
   "author": "mradermacher",
   "url": "https://huggingface.co/mradermacher/Melody1437-27B-v0.4-i1-GGUF",
   "created_at": "2026-08-26T12:48:31.000Z",
-  "updated_at": "2026-08-26T15:43:46.000Z",
+  "updated_at": "2026-08-27T05:18:50.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": null,
@@ -33,12 +33,12 @@
     "conversational"
   ],
   "likes": 0,
-  "downloads_30d": 0,
+  "downloads_30d": 8,
   "trending_score": 0,
   "parameters": 27320697856,
   "parameters_human": "27.32B",
-  "storage_bytes": 153311370944,
-  "storage_human": "153.3 GB",
+  "storage_bytes": 218553865024,
+  "storage_human": "218.6 GB",
   "base_model": "ReadyArt/Melody1437-27B-v0.4",
   "formats": [
     "gguf"

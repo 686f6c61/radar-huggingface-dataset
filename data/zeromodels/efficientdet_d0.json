@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "zeromodels/efficientdet_d0",
+  "slug": "zeromodels-efficientdet_d0",
+  "author": "zeromodels",
+  "url": "https://huggingface.co/zeromodels/efficientdet_d0",
+  "created_at": "2026-08-27T21:29:18.000Z",
+  "updated_at": "2026-08-27T21:29:20.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "object-detection",
+  "library": "zeromodels",
+  "languages": [],
+  "tags": [
+    "zeromodels",
+    "keras",
+    "efficientdet",
+    "object-detection",
+    "arxiv:1911.09070",
+    "pytorch",
+    "jax",
+    "tf",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 16832392,
+  "storage_human": "17 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "efficientdet.ipynb - Colab",
+      "url": "https://colab.research.google.com/github/NVIDIA-AI-IOT/nvidia-tao/blob/main/tensorflow/efficientdet/efficientdet.ipynb",
+      "snippet": "Transfer learning is the process of transferring learned features from one application to another. It is a commonly used training technique where you use a model trained on one task and re-train to use it on a different task. Train Adapt Optimize (TAO) Toolkit is a simple and easy-to-use Python based AI toolkit for taking purpose-built AI models and customizing them with users&#x27; own data."
+    },
+    {
+      "title": "README.md · Kalray/efficientdet-d0 at main - Hugging Face",
+      "url": "https://huggingface.co/Kalray/efficientdet-d0/blob/main/README.md",
+      "snippet": "This repository stores the model for EfficientDet, compatible with Kalray&#x27;s neural network API. Please see www.github.com/kalray/kann-model-zoo for details and proper usage."
+    },
+    {
+      "title": "DeepLearningExamples/TensorFlow2/Detection/Efficientdet/README.md at ...",
+      "url": "https://github.com/NVIDIA/DeepLearningExamples/blob/master/TensorFlow2/Detection/Efficientdet/README.md",
+      "snippet": "EfficientDet is a family of convolution-based neural networks for object detection. Specifically, this repository covers model D0. This model is based on EfficientDet: Scalable and Efficient Object Detection. NVIDIA&#x27;s implementation of EfficientDet-D0 is an optimized version of TensorFlow Automl implementation, leveraging mixed precision arithmetic on NVIDIA Volta, NVIDIA Turing, and the ..."
+    },
+    {
+      "title": "GitHub - imdokyun/EfficientDet-D0",
+      "url": "https://github.com/imdokyun/EfficientDet-D0",
+      "snippet": "Contribute to imdokyun/EfficientDet-D0 development by creating an account on GitHub."
+    },
+    {
+      "title": "EfficientDet-D0: Compact Object Detector",
+      "url": "https://www.emergentmind.com/topics/efficientdet-d0",
+      "snippet": "EfficientDet-D0 is a compact object detector that employs compound scaling to balance model size and detection accuracy. It integrates an EfficientNet-B0 backbone with a 3-layer BiFPN architecture to fuse multi-scale features using weighted sums and depthwise separable convolutions. The model attains 34.6 AP on COCO with only 3.9 million parameters and 2.5 billion FLOPs, demonstrating its ..."
+    }
+  ]
+}

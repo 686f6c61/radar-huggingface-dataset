@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "seedleap/zing-0.5",
+  "slug": "seedleap-zing-0-5",
+  "author": "seedleap",
+  "url": "https://huggingface.co/seedleap/zing-0.5",
+  "created_at": "2026-08-25T10:26:33.000Z",
+  "updated_at": "2026-08-26T06:03:38.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-to-video",
+  "library": "diffusers",
+  "languages": [],
+  "tags": [
+    "diffusers",
+    "safetensors",
+    "world-model",
+    "video-generation",
+    "text-to-video",
+    "image-to-video",
+    "action-conditioned",
+    "causal",
+    "base_model:Wan-AI/Wan2.2-TI2V-5B-Diffusers",
+    "base_model:finetune:Wan-AI/Wan2.2-TI2V-5B-Diffusers",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 8,
+  "downloads_30d": 0,
+  "trending_score": 8,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 34216124559,
+  "storage_human": "34.2 GB",
+  "base_model": "Wan-AI/Wan2.2-TI2V-5B-Diffusers",
+  "formats": [
+    "diffusers",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Zing-0.5: An Efficient Real-Time Interactive World Model - GitHub",
+      "url": "https://github.com/seedleap/zing-world-model",
+      "snippet": "Developed by the Seedleap.ai team (涌跃智能), Zing 0.5 is an efficient causal world model built for real-time interaction. It continuously rolls out a visual world from its current state while text prompts and keyboard actions alter the world&#x27;s semantics, motion, and future state as it unfolds."
+    },
+    {
+      "title": "seedleap/zing-0.5 · Hugging Face",
+      "url": "https://huggingface.co/seedleap/zing-0.5",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "seedleap (seedleap.ai) - Hugging Face",
+      "url": "https://huggingface.co/seedleap",
+      "snippet": "Org profile for seedleap.ai on Hugging Face, the AI community building the future."
+    },
+    {
+      "title": "zing-world-model/README.md at main · seedleap/zing-world-model - GitHub",
+      "url": "https://github.com/seedleap/zing-world-model/blob/main/README.md",
+      "snippet": "Developed by the Seedleap.ai team (涌跃智能), Zing 0.5 is an efficient causal world model built for real-time interaction. It continuously rolls out a visual world from its current state while text prompts and keyboard actions alter the world&#x27;s semantics, motion, and future state as it unfolds."
+    },
+    {
+      "title": "Zing-0.5开源，我们可能又要进入新的ai玩耍时代了【deepseek吧】_百度贴吧",
+      "url": "https://tieba.baidu.com/p/10976257654",
+      "snippet": "Zing-0.5开源..中国团队Seedleap打造的AI高效实时互动世界模型Zing-0.5，在公开评测WBench中拿下第一。这个模型能用自然语言+WASD移动游玩实时生成的世界。"
+    }
+  ]
+}

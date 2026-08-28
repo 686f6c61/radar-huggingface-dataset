@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "Serpen/GLM-5.3-Flash",
+  "slug": "serpen-glm-5-3-flash",
+  "author": "Serpen",
+  "url": "https://huggingface.co/Serpen/GLM-5.3-Flash",
+  "created_at": "2026-08-27T22:25:18.000Z",
+  "updated_at": "2026-08-27T22:27:43.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 563627008,
+  "parameters_human": "563.6M",
+  "storage_bytes": 1164010176,
+  "storage_human": "1.2 GB",
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GLM-5.3-Flash: The Stealth Model That Became the Talk of the Timeline",
+      "url": "https://www.gmicloud.ai/en/blog/glm-53-flash-the-stealth-model-that-became-the-talk-of-the-timeline",
+      "snippet": "The Benchmarks Are the Real Flex Independent tracker Artificial Analysis and Z.ai put GLM-5.3-Flash right at the doorstep of top-tier closed models, especially in coding and agentic tasks. The r/LocalLLM release thread echoes the same numbers straight from Z.ai&#x27;s model card."
+    },
+    {
+      "title": "GLM-5.3-Flash: How to Run Locally - unsloth.ai",
+      "url": "https://unsloth.ai/docs/models/glm-5.3",
+      "snippet": "Search and download GLM-5.3-Flash Go to Unsloth Chat or Model hub and search for GLM-5.3-Flash in the search bar and download your desired model and quant."
+    },
+    {
+      "title": "GLM-5.3-Flash AI Model — Try It on Felo AI",
+      "url": "https://felo.ai/tools/glm-53-flash",
+      "snippet": "GLM-5.3-Flash is the open-weights frontier model from Z.ai, released August 26, 2026 under the MIT license. It matches Claude Opus 4.8 on Artificial Analysis&#x27; Intelligence Index with a 1,310,720-token context window, native text, image, and video input, and a 320B-parameter MoE that activates only 18B."
+    },
+    {
+      "title": "GLM-5.3-Flash: Zhipu AI&#x27;s New High-Speed Efficiency Model",
+      "url": "https://aitoolly.com/ai-news/article/2026-08-27-glm-53-flash-zhipu-ais-strategic-leap-in-high-efficiency-language-model-performance",
+      "snippet": "GLM-5.3-Flash: Zhipu AI&#x27;s Strategic Leap in High-Efficiency Language Model Performance On August 26, 2026, the AI industry marked the release of GLM-5.3-Flash, the latest high-speed iteration in the General Language Model (GLM) series. Announced via the z.ai blog and gaining significant traction on platforms like Hacker News, this model is specifically engineered to address the growing ..."
+    },
+    {
+      "title": "GLM-5.3-Flash - lmstudio.ai",
+      "url": "https://lmstudio.ai/models/glm-5.3-flash",
+      "snippet": "GLM-5.3-Flash is Z.ai&#x27;s first natively multimodal model in the GLM-5 series. It is a 320B Mixture-of-Experts model with 18B active parameters, built for coding, agentic work, and visual tasks, and released under the MIT License."
+    }
+  ]
+}

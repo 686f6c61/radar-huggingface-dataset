@@ -1,0 +1,77 @@
+{
+  "schema": 1,
+  "id": "sigmanih/gemma-4-12B-it-GGUF-Q4_K_M",
+  "slug": "sigmanih-gemma-4-12b-it-gguf-q4_k_m",
+  "author": "sigmanih",
+  "url": "https://huggingface.co/sigmanih/gemma-4-12B-it-GGUF-Q4_K_M",
+  "created_at": "2026-08-27T21:43:17.000Z",
+  "updated_at": "2026-08-27T21:48:36.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en",
+    "it"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "text-generation",
+    "sigma-studio",
+    "sigmanih",
+    "conversational",
+    "custom-model",
+    "safetensors",
+    "pytorch",
+    "en",
+    "it",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 11907350576,
+  "parameters_human": "11.91B",
+  "storage_bytes": 7381364224,
+  "storage_human": "7.4 GB",
+  "base_model": null,
+  "formats": [
+    "gguf",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "bartowski/gemma-4-12B-it-GGUF · Hugging Face",
+      "url": "https://huggingface.co/bartowski/gemma-4-12B-it-GGUF",
+      "snippet": "Click to view Q4_0_X_X information (deprecated I&#x27;m keeping this section to show the potential theoretical uplift in performance from using the Q4_0 with online repacking."
+    },
+    {
+      "title": "ggml-org/gemma-4-12B-it-GGUF · Hugging Face",
+      "url": "https://huggingface.co/ggml-org/gemma-4-12B-it-GGUF",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Gemma 4 GGUF Download: Best Q4, Q5 & Q8 Quantization Guide",
+      "url": "https://gemma4-ai.com/blog/gemma4-gguf-guide",
+      "snippet": "Download the right Gemma 4 GGUF file. Compare Q4_K_M, Q5_K_M and Q8_0 by size, VRAM, speed and quality, with clear picks for each device."
+    },
+    {
+      "title": "Gemma 4 — Google DeepMind",
+      "url": "https://deepmind.google/models/gemma/gemma-4/",
+      "snippet": "Safety Gemma 4 models undergo the same rigorous infrastructure security protocols as our proprietary models. By choosing Gemma 4, enterprises and sovereign organizations gain a trusted, transparent foundation that delivers state-of-the-art capabilities while meeting the highest standards for security and reliability."
+    },
+    {
+      "title": "Gemma 4 Local VRAM Guide: Choosing E2B, E4B, 12B, 26B, or 31B",
+      "url": "https://knightli.com/en/2026/05/01/gemma-4-local-vram-quantization-table/",
+      "snippet": "A practical Gemma 4 local deployment guide that separates Google&#x27;s approximate memory figures, GGUF size estimates, and measured VRAM for E2B, E4B, 12B, 26B, and 31B."
+    }
+  ]
+}

@@ -5,23 +5,25 @@
   "author": "Shankarblr",
   "url": "https://huggingface.co/Shankarblr/shankar-bert-based-MovieQA-model",
   "created_at": "2026-08-26T22:51:26.000Z",
-  "updated_at": "2026-08-27T01:46:49.000Z",
+  "updated_at": "2026-08-27T13:22:06.000Z",
   "license": "mit",
   "license_family": "oss",
   "pipeline_tag": "question-answering",
-  "library": null,
+  "library": "transformers",
   "languages": [
     "en"
   ],
   "tags": [
+    "transformers",
     "safetensors",
     "distilbert",
-    "imdb-movies-dataset",
     "question-answering",
+    "imdb-movies-dataset",
     "en",
     "base_model:distilbert/distilbert-base-uncased",
     "base_model:finetune:distilbert/distilbert-base-uncased",
     "license:mit",
+    "endpoints_compatible",
     "region:us"
   ],
   "likes": 0,

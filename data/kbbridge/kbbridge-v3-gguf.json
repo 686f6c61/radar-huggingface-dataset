@@ -5,7 +5,7 @@
   "author": "KBBridge",
   "url": "https://huggingface.co/KBBridge/KBBridge-v3-GGUF",
   "created_at": "2026-08-27T13:14:38.000Z",
-  "updated_at": "2026-08-27T13:44:47.000Z",
+  "updated_at": "2026-08-27T22:54:11.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -35,8 +35,8 @@
   "trending_score": 0,
   "parameters": 27320697856,
   "parameters_human": "27.32B",
-  "storage_bytes": 45857798528,
-  "storage_human": "45.9 GB",
+  "storage_bytes": 91715597184,
+  "storage_human": "91.7 GB",
   "base_model": "KBBridge/KBBridge-v3",
   "formats": [
     "gguf"

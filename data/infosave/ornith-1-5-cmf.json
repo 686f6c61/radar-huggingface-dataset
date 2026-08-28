@@ -9,14 +9,14 @@
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": null,
-  "library": null,
+  "library": "cortiq",
   "languages": [
     "en",
     "ru"
   ],
   "tags": [
-    "cmf",
     "cortiq",
+    "cmf",
     "quantized",
     "en",
     "ru",

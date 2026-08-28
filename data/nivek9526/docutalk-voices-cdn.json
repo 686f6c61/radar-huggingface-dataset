@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "Nivek9526/DocuTalk-Voices-CDN",
+  "slug": "nivek9526-docutalk-voices-cdn",
+  "author": "Nivek9526",
+  "url": "https://huggingface.co/Nivek9526/DocuTalk-Voices-CDN",
+  "created_at": "2026-08-27T21:29:26.000Z",
+  "updated_at": "2026-08-27T21:36:12.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "onnx",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 550920020,
+  "storage_human": "551 MB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Free AI Voice Generator & Voice Agents Platform | ElevenLabs",
+      "url": "https://elevenlabs.io/",
+      "snippet": "Create lifelike speech with our AI voice generator and voice agents platform. Access 5,000+ voices in 70+ languages with secure APIs and SDKs."
+    },
+    {
+      "title": "AI Voices: Free Models for TTS & Voice Changing",
+      "url": "https://aivoices.gg/",
+      "snippet": "Discover thousands of free AI voice models. Search characters, voices, creators, and model types for voice changing, text-to-speech, singing, narration, and more."
+    },
+    {
+      "title": "Introducing next-generation audio models in the API | OpenAI",
+      "url": "https://openai.com/index/introducing-our-next-generation-audio-models/",
+      "snippet": "We launched our first audio model in 2022 ⁠ and since then, we&#x27;ve committed to improving the intelligence, accuracy, and reliability of these models. With these new audio models, developers can build more accurate and robust speech-to-text systems and expressive, characterful text-to-speech voices—all within the API."
+    },
+    {
+      "title": "DocuTalk-AI/file.py at main · viochris/DocuTalk-AI · GitHub",
+      "url": "https://github.com/viochris/DocuTalk-AI/blob/main/file.py",
+      "snippet": "A Smart RAG Application using Streamlit, LangChain, and Google Gemini 2.5 Flash. Features Agentic workflow (ReAct), incremental document indexing (PDF, CSV, MD, TXT), and integrated web search. - DocuTalk-AI/file.py at main · viochris/DocuTalk-AI"
+    },
+    {
+      "title": "RVC Models: AI Voices - 388 Model Downloads & Examples",
+      "url": "https://aimodels.org/ai-models/rvc-models-ai-voice/",
+      "snippet": "RVC Models: AI Voices - 388 Model Downloads & Examples The world of audio technology is changing fast, thanks to RVC (Retrieval-based Voice Conversion) models. These models use advanced artificial intelligence to create voices that sound real and can be customized for your projects. Browse through, download and play with our directory of 388 rvc voice models"
+    }
+  ]
+}

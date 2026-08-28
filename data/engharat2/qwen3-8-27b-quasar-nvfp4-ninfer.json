@@ -5,7 +5,7 @@
   "author": "engharat2",
   "url": "https://huggingface.co/engharat2/Qwen3.8-27B-QUASAR-NVFP4-NINFER",
   "created_at": "2026-08-27T06:18:40.000Z",
-  "updated_at": "2026-08-27T06:26:47.000Z",
+  "updated_at": "2026-08-27T16:29:11.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-generation",

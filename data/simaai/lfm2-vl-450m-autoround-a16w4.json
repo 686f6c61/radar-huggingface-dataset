@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "simaai/LFM2-VL-450M-Autoround-a16w4",
+  "slug": "simaai-lfm2-vl-450m-autoround-a16w4",
+  "author": "simaai",
+  "url": "https://huggingface.co/simaai/LFM2-VL-450M-Autoround-a16w4",
+  "created_at": "2026-01-10T13:38:57.000Z",
+  "updated_at": "2026-08-28T01:03:31.000Z",
+  "license": "lfm1.0",
+  "license_family": "unknown",
+  "pipeline_tag": "image-text-to-text",
+  "library": "llima",
+  "languages": [],
+  "tags": [
+    "llima",
+    "vision",
+    "image-text-to-text",
+    "generative_ai",
+    "embedded",
+    "sima",
+    "liquidai",
+    "lfm2",
+    "base_model:LiquidAI/LFM2-VL-450M",
+    "base_model:finetune:LiquidAI/LFM2-VL-450M",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 6294461386,
+  "storage_human": "6.3 GB",
+  "base_model": "LiquidAI/LFM2-VL-450M",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "simaai/LFM2-VL-450M-Autoround-Safetensors · Hugging Face",
+      "url": "https://huggingface.co/simaai/LFM2-VL-450M-Autoround-Safetensors",
+      "snippet": "This is a post-training quantized version of LiquidAI/LFM2-VL-450M, prepared as a Hugging Face checkpoint for LLiMa compilation and Sima.ai deployment. The source model&#x27;s license and use restrictions continue to apply."
+    },
+    {
+      "title": "LiquidAI/LFM2-VL-450M · Hugging Face",
+      "url": "https://huggingface.co/LiquidAI/LFM2-VL-450M",
+      "snippet": "A newer version of this model is available: LiquidAI/LFM2.5-VL-450M"
+    },
+    {
+      "title": "LFM2-VL-450M - Liquid Docs",
+      "url": "https://docs.liquid.ai/lfm/models/lfm2-vl-450m",
+      "snippet": "LFM2-VL-450M is Liquid AI&#x27;s smallest vision-language model, designed for edge deployment with strict memory and compute constraints. Delivers fast multimodal inference on resource-limited devices."
+    },
+    {
+      "title": "LFM2.5-VL-450M - Liquid Docs",
+      "url": "https://docs.liquid.ai/lfm/models/lfm25-vl-450m",
+      "snippet": "Compact 450M vision-language model with enhanced performance for edge deployment ← Back to Vision Models LFM2.5-VL-450M is Liquid AI&#x27;s smallest vision-language model, building on LFM2-VL-450M with extended reinforcement learning for improved performance while maintaining the same compact deployment footprint."
+    },
+    {
+      "title": "LFM2-VL: Efficient Vision-Language Models | Blog | Liquid AI",
+      "url": "https://www.liquid.ai/blog/lfm2-vl-efficient-vision-language-models",
+      "snippet": "Today we release LFM2-VL, our first vision-language models, built for low-latency, device-aware text and image use."
+    }
+  ]
+}

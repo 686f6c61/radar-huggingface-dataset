@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "ssjenforcer191/Bane_H3",
+  "slug": "ssjenforcer191-bane_h3",
+  "author": "ssjenforcer191",
+  "url": "https://huggingface.co/ssjenforcer191/Bane_H3",
+  "created_at": "2026-08-27T22:40:38.000Z",
+  "updated_at": "2026-08-27T22:42:01.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 77631712,
+  "storage_human": "78 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ssjenforcer191/Homelander_Minimax_H3_experimental · Hugging Face",
+      "url": "https://huggingface.co/ssjenforcer191/Homelander_Minimax_H3_experimental",
+      "snippet": "ssjenforcer191 / Homelander_Minimax_H3_experimental like 0 Model card FilesFiles and versions xet Community Copy to bucket new"
+    },
+    {
+      "title": "ssjenforcer191 (Eric Pereira) - Hugging Face",
+      "url": "https://huggingface.co/ssjenforcer191/models",
+      "snippet": "Recent Activity ... Organizations None yet ssjenforcer191 &#x27;s models 3 Sort: Recently updated"
+    },
+    {
+      "title": "ssjenforcer191/Homelander_LTX2.3 · Hugging Face",
+      "url": "https://huggingface.co/ssjenforcer191/Homelander_LTX2.3",
+      "snippet": "ssjenforcer191 / Homelander_LTX2.3 like 1 Model card FilesFiles and versions xet Community Copy to bucket new"
+    },
+    {
+      "title": "ssjenforcer191/Homelander_Minimax_H3_experimental at main",
+      "url": "https://huggingface.co/ssjenforcer191/Homelander_Minimax_H3_experimental/tree/main",
+      "snippet": "ssjenforcer191 / Homelander_Minimax_H3_experimental like 1 Model card FilesFiles and versions xet Community Copy to bucket new main Homelander_Minimax_H3_experimental 1.6 kB Ctrl+K Ctrl+K 1 contributor History:6 commits ssjenforcer191 Delete HeroHomelander_H3_v5_LR1e5_000000250.safetensors 92e2861 verified6 days ago .gitattributes Safe 1.52 kBinitial commit8 days ago README.md Safe 78 ..."
+    },
+    {
+      "title": "CivArchive (CivitAI Archive) - AI Model Archive",
+      "url": "https://civarchive.com/",
+      "snippet": "Browse and discover AI models from CivitAI, TensorArt, and SeaArt. Community-driven archive preserving access to AI resources."
+    }
+  ]
+}

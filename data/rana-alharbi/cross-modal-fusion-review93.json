@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "rana-alharbi/cross-modal-fusion-review93",
+  "slug": "rana-alharbi-cross-modal-fusion-review93",
+  "author": "rana-alharbi",
+  "url": "https://huggingface.co/rana-alharbi/cross-modal-fusion-review93",
+  "created_at": "2026-08-27T21:54:14.000Z",
+  "updated_at": "2026-08-27T21:54:34.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "transformer",
+    "research-notes",
+    "cross-modal-fusion",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 24832,
+  "parameters_human": "24832",
+  "storage_bytes": 99808,
+  "storage_human": "99808 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Google Scholar",
+      "url": "https://scholar.google.com/",
+      "snippet": "Google Scholar provides a simple way to broadly search for scholarly literature. Search across a wide variety of disciplines and sources: articles, theses, books, abstracts and court opinions."
+    },
+    {
+      "title": "Ryang2007/cross-modal-fusion-study · Hugging Face",
+      "url": "https://huggingface.co/Ryang2007/cross-modal-fusion-study",
+      "snippet": "A structured set of research notes on Cross Modal Fusion, with concrete evaluation references and open questions. Plans and hypotheses are kept separate from completed results."
+    },
+    {
+      "title": "A Comprehensive Survey on Deep Learning Multi-Modal Fusion: Methods ...",
+      "url": "https://www.sciencedirect.com/org/science/article/pii/S1546221824005216",
+      "snippet": "This paper comprehensively reviews existing methods based on multi-modal fusion techniques and completes a detailed and in-depth analysis. According to the data fusion stage, multi-modal fusion has four primary methods: early fusion, deep fusion, late fusion, and hybrid fusion."
+    },
+    {
+      "title": "MICCAI 2025 - Open Access",
+      "url": "https://papers.miccai.org/miccai-2025/",
+      "snippet": "&bullet; Active Source-Free Cross-Domain and Cross-Modality Adaptation for Volumetric Medical Image Segmentation by Image Sensitivity and Organ Heterogeneity Sampling"
+    },
+    {
+      "title": "PDF Multimodal Deep Learning: A Survey of Models, Fusion Strategies ...",
+      "url": "https://www.ijcaonline.org/archives/volume187/number19/erukude-2025-ijca-925264.pdf",
+      "snippet": "Early Fusion: Early fusion combines or merges raw or lower-level features from multiple modalities and inputs to jointly model the different modalities. This allows cross-modal inter-action at the early stages of processing, but is often faced with incompatible feature dimensions and noisy inputs."
+    }
+  ]
+}

@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "Kevinjnugroho/flamingo-contrastive",
+  "slug": "kevinjnugroho-flamingo-contrastive",
+  "author": "Kevinjnugroho",
+  "url": "https://huggingface.co/Kevinjnugroho/flamingo-contrastive",
+  "created_at": "2026-08-27T23:48:12.000Z",
+  "updated_at": "2026-08-27T23:48:21.000Z",
+  "license": "bsd-3-clause",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "flamingo",
+    "pytorch",
+    "contrastive",
+    "license:bsd-3-clause",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 24832,
+  "parameters_human": "24832",
+  "storage_bytes": 99808,
+  "storage_human": "99808 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Flamingo: a Visual Language Model for Few-Shot Learning",
+      "url": "https://arxiv.org/html/2204.14198v2",
+      "snippet": "For tasks lying anywhere on this spectrum, a single Flamingo model can achieve a new state of the art with few-shot learning, simply by prompting the model with task-specific examples. On numerous benchmarks, Flamingo outperforms models fine-tuned on thousands of times more task-specific data."
+    },
+    {
+      "title": "PDF 11868 pre: Flamingo - GitHub Pages",
+      "url": "https://llmsystem.github.io/llmsystem2024spring/assets/files/Group-Flamingo-98ae9c68fca94cd437716229a2cf42c1.pdf",
+      "snippet": "A significant thread contrastive learning, like Flamingo. However, Flamingo contrastive methods capabilities."
+    },
+    {
+      "title": "Flamingo: a Visual Language Model for Few-Shot Learning",
+      "url": "https://www.abhik.ai/papers/flamingo",
+      "snippet": "How Flamingo bridges a frozen vision encoder and a frozen language model with a Perceiver Resampler and gated cross-attention layers, enabling few-shot learning from interleaved image-text sequences."
+    },
+    {
+      "title": "PDF Flamingo: a Visual Language Model for Few-Shot Learning - NeurIPS",
+      "url": "https://proceedings.neurips.cc/paper_files/paper/2022/file/960a172bc7fbf0177ccccbb411a7d800-Paper-Conference.pdf",
+      "snippet": "Figure 3: Flamingo architecture overview. Flamingo is a family of visual language models (VLMs) that take as input visual data interleaved with text and produce free-form text as output. using any data annotated for machine learning purposes. After this training, a Flamingo model can be directly adapted to vision tasks via si ple few-shot l"
+    },
+    {
+      "title": "Flamingo: a Visual Language Model for Few-Shot Learning - NIPS",
+      "url": "https://papers.nips.cc/paper_files/paper/2022/hash/960a172bc7fbf0177ccccbb411a7d800-Abstract-Conference.html",
+      "snippet": "For tasks lying anywhere on this spectrum, a single Flamingo model can achieve a new state of the art with few-shot learning, simply by prompting the model with task-specific examples."
+    }
+  ]
+}

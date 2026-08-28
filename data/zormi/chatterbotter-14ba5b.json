@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "zormi/chatterbotter-14bA5b",
+  "slug": "zormi-chatterbotter-14ba5b",
+  "author": "zormi",
+  "url": "https://huggingface.co/zormi/chatterbotter-14bA5b",
+  "created_at": "2026-08-28T00:22:44.000Z",
+  "updated_at": "2026-08-28T00:22:44.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Google Gemini",
+      "url": "https://gemini.google.com/",
+      "snippet": "Meet Gemini, Google&#x27;s AI assistant. Get help with writing, planning, brainstorming, and more. Experience the power of generative AI."
+    },
+    {
+      "title": "AI Detector: Free AI Checker for ChatGPT, Claude & GPT-5 - QuillBot",
+      "url": "https://quillbot.com/ai-content-detector",
+      "snippet": "Quillbot&#x27;s free AI Detector checks text from ChatGPT, GPT-5, Claude and others. Get an AI score, sentence-level highlights, and refined AI detection insights."
+    },
+    {
+      "title": "ChatterBot · PyPI",
+      "url": "https://pypi.org/project/ChatterBot/",
+      "snippet": "ChatterBot is a machine learning, conversational dialog engine ChatterBot ChatterBot is a machine-learning based conversational dialog engine built in Python which makes it possible to generate responses based on collections of known conversations. The language independent design of ChatterBot allows it to be trained to speak any language. An example of typical input would be something like ..."
+    },
+    {
+      "title": "PolyBuzz | Talk to AI Characters & Enjoy Free AI Chat Anytime",
+      "url": "https://www.polybuzz.ai/",
+      "snippet": "Character AI and AI chat free with 20M+ AI character on Polybuzz. Talk AI anytime, explore AI chat roleplay, and create your AI girlfriend."
+    },
+    {
+      "title": "12 Best AI Detectors | Free & Premium Tools Tested (2026 Guide) - Scribbr",
+      "url": "https://www.scribbr.com/ai-tools/best-ai-detector/",
+      "snippet": "The best free AI detectors (2026) are Scribbr and QuillBot, both correctly identified 78% of our testing texts. The most accurate AI Detector is Scribbr."
+    }
+  ]
+}

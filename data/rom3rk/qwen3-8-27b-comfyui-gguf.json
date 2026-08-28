@@ -5,7 +5,7 @@
   "author": "Rom3rk",
   "url": "https://huggingface.co/Rom3rk/Qwen3.8-27B-ComfyUI-GGUF",
   "created_at": "2026-08-26T20:38:30.000Z",
-  "updated_at": "2026-08-27T00:29:39.000Z",
+  "updated_at": "2026-08-27T05:56:19.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "image-text-to-text",
@@ -39,8 +39,8 @@
   "trending_score": 0,
   "parameters": 27320697856,
   "parameters_human": "27.32B",
-  "storage_bytes": 255697946944,
-  "storage_human": "255.7 GB",
+  "storage_bytes": 355205830720,
+  "storage_human": "355.2 GB",
   "base_model": "Rom3rk/Qwen3.8-27B-ComfyUI",
   "formats": [
     "gguf"

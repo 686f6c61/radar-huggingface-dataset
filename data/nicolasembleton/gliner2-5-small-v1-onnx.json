@@ -5,7 +5,7 @@
   "author": "nicolasembleton",
   "url": "https://huggingface.co/nicolasembleton/gliner2.5-small-v1-onnx",
   "created_at": "2026-08-25T17:35:03.000Z",
-  "updated_at": "2026-08-26T16:21:36.000Z",
+  "updated_at": "2026-08-27T06:40:52.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "token-classification",

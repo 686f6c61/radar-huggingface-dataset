@@ -1,0 +1,79 @@
+{
+  "schema": 1,
+  "id": "0xSojalSec/Qwen3.8-27B-Uncensored",
+  "slug": "0xsojalsec-qwen3-8-27b-uncensored",
+  "author": "0xSojalSec",
+  "url": "https://huggingface.co/0xSojalSec/Qwen3.8-27B-Uncensored",
+  "created_at": "2026-08-27T22:56:13.000Z",
+  "updated_at": "2026-08-27T22:56:13.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_5",
+    "image-text-to-text",
+    "uncensored",
+    "abliterated",
+    "qwen3.8",
+    "mtp",
+    "vision",
+    "conversational",
+    "en",
+    "zh",
+    "base_model:Qwen/Qwen3.8-27B",
+    "base_model:finetune:Qwen/Qwen3.8-27B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 27356728560,
+  "parameters_human": "27.36B",
+  "storage_bytes": 55582996517,
+  "storage_human": "55.6 GB",
+  "base_model": "Qwen/Qwen3.8-27B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Qwen 3.8 27B Uncensored - GitHub",
+      "url": "https://github.com/Wassimyounes01/qwen38-uncensored",
+      "snippet": "Model doesn&#x27;t respond / refuses Verify you pulled abliterated weights: ollama show qwen3.8:27b-uncensored --modelfile should show FROM orcarouter/... If using --legacy, the system pack alone may not fully suppress refusals"
+    },
+    {
+      "title": "Qwen 3.8 27B Uncensored Local: GGUF Quants + llama.cpp",
+      "url": "https://www.orcarouter.ai/blog/how-to-run-qwen-3-8-27b-uncensored-locally",
+      "snippet": "To run Qwen3.8-27B-Uncensored locally, pull the gated GGUF repo orcarouter/Qwen3.8-27B-Uncensored-GGUF from Hugging Face, pick a quant by your VRAM — Q4_K_M (16.8 GB) for a 24 GB GPU, IQ4_XS (15.3 GB) for a 16 GB GPU, Q3_K_M (13.5 GB) when you want context headroom — and serve it with a current llama.cpp build using the --jinja flag, adding --mmproj if you need vision. The same file ..."
+    },
+    {
+      "title": "GitHub - onurburak9/Qwen3.8-27B-Uncensored",
+      "url": "https://github.com/onurburak9/Qwen3.8-27B-Uncensored",
+      "snippet": "An abliterated (refusal-removed) build of Qwen/Qwen3.8-27B — a 27B-parameter dense, hybrid-attention (Gated DeltaNet linear + full attention) native vision-language model with thinking control, tool-calling and an MTP head — quantized to MLX format for Apple Silicon. Four precisions are provided as subfolders: 2 / 4 / 6 / 8-bit (affine, group size 64). The vision tower, norms and conv ..."
+    },
+    {
+      "title": "Qwen3.8-27B Uncensored GGUF: Abliterated Local Build",
+      "url": "https://www.orcarouter.ai/blog/qwen-3-8-27b-uncensored-gguf",
+      "snippet": "Bottom line \"Qwen 3.8 27B uncensored GGUF\" has an answer, and it is a concrete download: Qwen3.8-27B-Uncensored-GGUF — F16 plus 12 quantization tiers for llama.cpp, the abliterated weights from our FP8 build, 262K context, vision, and MTP, under Apache 2.0 and research-only."
+    },
+    {
+      "title": "Qwen 3.8 27B Uncensored API: Pricing, Sample Text, Docs - Wiro AI",
+      "url": "https://wiro.ai/models/qwen/qwen3-8-27b-uncensored",
+      "snippet": "Qwen 3.8 27B Uncensored is a long-context text model for coding and research, tuned to reduce refusals. Try Qwen 3.8 27B Uncensored by Qwen on Wiro now."
+    }
+  ]
+}

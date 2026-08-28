@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "0xSero/GLM-5.3-Flash-EXL3-3.0bpw",
+  "slug": "0xsero-glm-5-3-flash-exl3-3-0bpw",
+  "author": "0xSero",
+  "url": "https://huggingface.co/0xSero/GLM-5.3-Flash-EXL3-3.0bpw",
+  "created_at": "2026-08-27T22:46:51.000Z",
+  "updated_at": "2026-08-27T22:46:52.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "exl3",
+    "text-generation",
+    "mixture-of-experts",
+    "base_model:zai-org/GLM-5.3-Flash-BF16",
+    "base_model:quantized:zai-org/GLM-5.3-Flash-BF16",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": "zai-org/GLM-5.3-Flash-BF16",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GLM-5.3-Flash: How to Run Locally - unsloth.ai",
+      "url": "https://unsloth.ai/docs/models/glm-5.3",
+      "snippet": "GLM-5.3-Flash can now run locally in Unsloth Desktop! GLM-5.3-Flash was trained on 30T tokens and is built on a newly trained base model redesigned. Its hybrid sparse and linear attention architecture lowers long-context serving costs without sacrificing accuracy, while Manifold-Constrained Hyper-Connections improve scaling."
+    },
+    {
+      "title": "GLM-5.3 - Overview - Z.AI DEVELOPER DOCUMENT",
+      "url": "https://docs.z.ai/guides/llm/glm-5.3",
+      "snippet": "Overview GLM-5.3 is Z.ai&#x27;s latest flagship model, delivering comprehensive advancements in complex software engineering and agent capabilities. It uses the same base model as GLM-5.2, with all improvements driven by post-training. Compared with GLM-5.2, it delivers significantly stronger performance in complex programming and long-horizon tasks: Stronger Coding Capability GLM-5.3 delivers a ..."
+    },
+    {
+      "title": "GLM-5.3-Flash - lmstudio.ai",
+      "url": "https://lmstudio.ai/models/glm-5.3-flash",
+      "snippet": "GLM-5.3-Flash is Z.ai&#x27;s first natively multimodal model in the GLM-5 series. It is a 320B Mixture-of-Experts model with 18B active parameters, built for coding, agentic work, and visual tasks, and released under the MIT License."
+    },
+    {
+      "title": "GitHub - 0xSero/glm-5.3-flash-sglang-sm120: Exact SGLang runtime for ...",
+      "url": "https://github.com/0xSero/glm-5.3-flash-sglang-sm120",
+      "snippet": "Locked, independently buildable representation of the live Pop!_OS deployment (glm-5.3-flash-sglang-sm120). Uses the exact lmsysorg/sglang:glm-5.3-flash image digest and preserves the effective server arguments and environment from the validated running container. The 182 GiB checkpoint is intentionally not copied into the image."
+    },
+    {
+      "title": "GLM-5.3: Frontier Coding with Emergent Cyber Capabilities - z.ai",
+      "url": "https://z.ai/blog/glm-5.3",
+      "snippet": "Today we are releasing GLM-5.3. It uses the same base model as GLM-5.2 — every gain comes from post-training. Compared with GLM-5.2, it is much better at complex coding and long-horizon tasks: Stronger Coding: GLM-5.3 is the most capable open-weights model for coding, with a 50% improvement over GLM-5.2 on our in-house Z.ai Code Bench."
+    }
+  ]
+}

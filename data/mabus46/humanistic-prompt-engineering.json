@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "Mabus46/Humanistic-Prompt-Engineering",
+  "slug": "mabus46-humanistic-prompt-engineering",
+  "author": "Mabus46",
+  "url": "https://huggingface.co/Mabus46/Humanistic-Prompt-Engineering",
+  "created_at": "2026-08-27T18:58:50.000Z",
+  "updated_at": "2026-08-27T19:19:36.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "ru",
+    "en"
+  ],
+  "tags": [
+    "prompt-engineering",
+    "alignment",
+    "philosophy",
+    "arg",
+    "ai-ethics",
+    "text-generation",
+    "ru",
+    "en",
+    "dataset:custom",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - dair-ai/Prompt-Engineering-Guide: Guides, papers, lessons ...",
+      "url": "https://github.com/dair-ai/Prompt-Engineering-Guide",
+      "snippet": "Prompt engineering is a relatively new discipline for developing and optimizing prompts to efficiently use language models (LMs) for a wide variety of applications and research topics. Prompt engineering skills help to better understand the capabilities and limitations of large language models (LLMs)."
+    },
+    {
+      "title": "Prompt Engineering Guide | Prompt Engineering Guide",
+      "url": "https://www.promptingguide.ai/",
+      "snippet": "Motivated by the high interest in developing with LLMs, we have created this new prompt engineering guide that contains all the latest papers, advanced prompting techniques, learning guides, model-specific prompting guides, lectures, references, new LLM capabilities, and tools related to prompt engineering."
+    },
+    {
+      "title": "Guides - AI for Humanists",
+      "url": "https://aiforhumanists.com/guides/",
+      "snippet": "Guides Model guide A guide to current models and how to make choices Use cases guide Examples of humanities tasks that people are doing with AI models Prompt library A sample of prompts for model-based practices"
+    },
+    {
+      "title": "The 2026 Guide to Prompt Engineering - IBM",
+      "url": "https://www.ibm.com/think/prompt-engineering",
+      "snippet": "A prompt engineering guide is a practical resource for understanding how to craft effective prompts to interact with artificial intelligence (AI) models such as IBM® Granite®, Open AI&#x27;s GPT, DALL-E, Stable Diffusion, Anthropic&#x27;s Claude , Google&#x27;s Bard and other generative systems. Prompt engineering is the process of designing and refining input instructions to guide AI behavior and ..."
+    },
+    {
+      "title": "Awesome Prompt Engineering ‍♂️ - GitHub",
+      "url": "https://github.com/promptslab/Awesome-Prompt-Engineering",
+      "snippet": "Awesome Prompt Engineering 🧙‍♂️ A hand-curated collection of resources for Prompt Engineering and Context Engineering — covering papers, tools, models, APIs, benchmarks, courses, and communities for working with Large Language Models. https://promptslab.github.io"
+    }
+  ]
+}

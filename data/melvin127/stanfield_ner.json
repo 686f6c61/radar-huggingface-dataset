@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "melvin127/stanfield_ner",
+  "slug": "melvin127-stanfield_ner",
+  "author": "melvin127",
+  "url": "https://huggingface.co/melvin127/stanfield_ner",
+  "created_at": "2026-08-28T01:05:12.000Z",
+  "updated_at": "2026-08-28T01:08:17.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "token-classification",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "distilbert",
+    "token-classification",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 66380567,
+  "parameters_human": "66.4M",
+  "storage_bytes": 265534612,
+  "storage_human": "266 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "dslim/bert-base-NER · Hugging Face",
+      "url": "https://huggingface.co/dslim/bert-base-NER",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "blaze999/Medical-NER · Hugging Face",
+      "url": "https://huggingface.co/blaze999/Medical-NER",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "The Stanford Natural Language Processing Group",
+      "url": "https://nlp.stanford.edu/software/CRF-NER.html",
+      "snippet": "About | Citation | Getting started | Questions | Mailing lists | Download | Extensions | Models | Online demo | Release history | FAQ About Stanford NER is a Java implementation of a Named Entity Recognizer. Named Entity Recognition (NER) labels sequences of words in a text which are the names of things, such as person and company names, or gene and protein names. It comes with well-engineered ..."
+    },
+    {
+      "title": "AI Models | Civitai",
+      "url": "https://civitai.com/models",
+      "snippet": "Browse thousands of free Stable Diffusion & Flux models, LoRAs, checkpoints, and embeddings. The largest collection of AI image generation resources."
+    },
+    {
+      "title": "AI Models | NVIDIA Developer",
+      "url": "https://developer.nvidia.com/ai-models",
+      "snippet": "Explore and deploy top AI models built by the community, accelerated by NVIDIA&#x27;s AI inference platform, and run on NVIDIA-accelerated infrastructure."
+    }
+  ]
+}

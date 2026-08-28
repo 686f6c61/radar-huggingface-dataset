@@ -1,0 +1,77 @@
+{
+  "schema": 1,
+  "id": "Oscilla/gemma-3n-E4B-it-mlx-8Bit",
+  "slug": "oscilla-gemma-3n-e4b-it-mlx-8bit",
+  "author": "Oscilla",
+  "url": "https://huggingface.co/Oscilla/gemma-3n-E4B-it-mlx-8Bit",
+  "created_at": "2026-08-27T20:22:02.000Z",
+  "updated_at": "2026-08-27T20:22:14.000Z",
+  "license": "gemma",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gemma3n",
+    "image-text-to-text",
+    "automatic-speech-recognition",
+    "automatic-speech-translation",
+    "audio-text-to-text",
+    "video-text-to-text",
+    "mlx",
+    "mlx-my-repo",
+    "conversational",
+    "base_model:google/gemma-3n-E4B-it",
+    "base_model:quantized:google/gemma-3n-E4B-it",
+    "license:gemma",
+    "endpoints_compatible",
+    "8-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1931687152,
+  "parameters_human": "1.93B",
+  "storage_bytes": 7330089959,
+  "storage_human": "7.3 GB",
+  "base_model": "google/gemma-3n-E4B-it",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Oscilla/gemma-3n-E4B-it-mlx-4Bit · Hugging Face",
+      "url": "https://huggingface.co/Oscilla/gemma-3n-E4B-it-mlx-4Bit",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "lmstudio-community/gemma-3n-E4B-it-MLX-8bit · Hugging Face",
+      "url": "https://huggingface.co/lmstudio-community/gemma-3n-E4B-it-MLX-8bit",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "lmstudio-community/gemma-3n-E4B-it-MLX-8bit - Socket",
+      "url": "https://socket.dev/huggingface/package/lmstudio-community/gemma-3n-e4b-it-mlx-8bit",
+      "snippet": "💫 Community Model> gemma-3n-E4B-it by google 👾 LM Studio Community models highlights program. Highlighting new & noteworthy models by the community. Join the conversation on Discord."
+    },
+    {
+      "title": "gemma-3n-e4b-it/README.md at main - GitHub",
+      "url": "https://github.com/inferless/gemma-3n-e4b-it/blob/main/README.md",
+      "snippet": "Gemma-3n‑E4B‑It is Google&#x27;s instruction‑tuned variant of the lightweight Gemma 3n series, designed for efficient multimodal inference on resource‑constrained hardware. With a raw 8B‑parameter architecture, it implements a nested \"MatFormer\" design that operates with an effective 4B‑parameter memory footprint, enabling it to run on devices while still delivering full ..."
+    },
+    {
+      "title": "gemma-3n-E4B-it-MLX-8bit · Models",
+      "url": "https://www.modelscope.cn/models/lmstudio-community/gemma-3n-E4B-it-MLX-8bit/summary",
+      "snippet": "💫 Community Model> gemma-3n-E4B-it by google 👾 LM Studio Community models highlights program. Highlighting new & noteworthy models by the community. Join the conversation on Discord. Model creator: google Original model: gemma-3n-E4B-it MLX quantization: provided by LM Studio team using mlx_vlm Technical Details 8-bit quantized version of gemma-3n-E4B-it using MLX, optimized for Apple ..."
+    }
+  ]
+}

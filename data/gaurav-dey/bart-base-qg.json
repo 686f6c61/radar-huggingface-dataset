@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "gaurav-dey/bart-base-qg",
+  "slug": "gaurav-dey-bart-base-qg",
+  "author": "gaurav-dey",
+  "url": "https://huggingface.co/gaurav-dey/bart-base-qg",
+  "created_at": "2026-08-27T19:16:14.000Z",
+  "updated_at": "2026-08-27T19:16:24.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "bart",
+    "text2text-generation",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 139470681,
+  "parameters_human": "139.5M",
+  "storage_bytes": 557912620,
+  "storage_human": "558 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "McGill-NLP/bart-qg-nq-checkpoint · Hugging Face",
+      "url": "https://huggingface.co/McGill-NLP/bart-qg-nq-checkpoint",
+      "snippet": "BART-base fine-tuned on NaturalQuestions for Question Generation BART Model fine-tuned on Google NaturalQuestions for Question Generation by treating long answer as input, and question as output. Details of BART The BART model was presented in BART: Denoising Sequence-to-Sequence Pre-training for Natural Language Generation, Translation, and Comprehension by Mike Lewis, Yinhan Liu, Naman Goyal ..."
+    },
+    {
+      "title": "tftransformers/bart-base · Hugging Face",
+      "url": "https://huggingface.co/tftransformers/bart-base",
+      "snippet": "BART is a transformer encoder-encoder (seq2seq) model with a bidirectional (BERT-like) encoder and an autoregressive (GPT-like) decoder. BART is pre-trained by (1) corrupting text with an arbitrary noising function, and (2) learning a model to reconstruct the original text."
+    },
+    {
+      "title": "Bart Base - AI Model Insights & Benchmarks - free2aitools.com",
+      "url": "https://free2aitools.com/model/facebook/bart-base",
+      "snippet": "BART is a transformer encoder-decoder (seq2seq) model with a bidirectional (BERT-like) encoder and an autoregressive (GPT-like) decoder. BART is pre-trained by (1) corrupting text with an arbitrary noising function, and (2) learning a model to reconstruct the original text."
+    },
+    {
+      "title": "Google Gemini",
+      "url": "https://gemini.google.com/",
+      "snippet": "Get assistance with writing, planning, learning, and more from Google AI."
+    },
+    {
+      "title": "bart-base: Text-to-Text model — overview, use cases, alternatives",
+      "url": "https://www.aimodels.fyi/models/huggingFace/bart-base-facebook",
+      "snippet": "Overview bart-base is a transformer encoder-decoder sequence-to-sequence model built by facebook that corrupts text during pre-training and learns to reconstruct the original, enabling both generation and comprehension tasks. The model uses a bidirectional BERT-like encoder paired with an autoregressive GPT-like decoder architecture. Available through the Hugging Face transformers library, it ..."
+    }
+  ]
+}

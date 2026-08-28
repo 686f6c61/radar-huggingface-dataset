@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "internetoftim/whisper-small-pld-fil-ONNX",
+  "slug": "internetoftim-whisper-small-pld-fil-onnx",
+  "author": "internetoftim",
+  "url": "https://huggingface.co/internetoftim/whisper-small-pld-fil-ONNX",
+  "created_at": "2026-08-27T22:40:21.000Z",
+  "updated_at": "2026-08-27T22:40:59.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "automatic-speech-recognition",
+  "library": "transformers.js",
+  "languages": [],
+  "tags": [
+    "transformers.js",
+    "onnx",
+    "whisper",
+    "automatic-speech-recognition",
+    "filipino",
+    "base_model:sapinsapin/whisper-small-pld-fil",
+    "base_model:quantized:sapinsapin/whisper-small-pld-fil",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1414239511,
+  "storage_human": "1.4 GB",
+  "base_model": "sapinsapin/whisper-small-pld-fil",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "LLM Leaderboard 2026: Compare 300+ Top AI Models by Intelligence, Speed ...",
+      "url": "https://llm-stats.com/leaderboards/llm-leaderboard",
+      "snippet": "The LLM Leaderboard — independent ranking of GPT, Claude, Gemini, Llama, DeepSeek and 300+ AI models by intelligence, speed and price. Filter by provider, license, modality and context window; sort by every benchmark. Composite LLM Stats Score updated continuously from public benchmarks and live API metrics."
+    },
+    {
+      "title": "sapinsapin/whisper-small-pld-fil · Hugging Face",
+      "url": "https://huggingface.co/sapinsapin/whisper-small-pld-fil",
+      "snippet": "whisper-small-pld-fil openai/whisper-small finetuned on sapinsapin/pld. Trained for 2000 steps on 10000 clips (batch 8×2, lr 1e-05, fp16 + gradient checkpointing). WER/CER are on the held-out split, lowercased; CER is the model-selection metric (Taglish orthography varies at the word level)."
+    },
+    {
+      "title": "openai/whisper-small · Hugging Face",
+      "url": "https://huggingface.co/openai/whisper-small",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "New AI Model Releases (Last 24 Hours) — Live Tracker | BenchLM",
+      "url": "https://benchlm.ai/model-updates",
+      "snippet": "Every new AI model release, tracked live: last 24 hours, this week, and 159 confirmed launches from 46 providers — each with source evidence and benchmarks."
+    },
+    {
+      "title": "whisper-small-pld-fil API & Inference Endpoint | FriendliAI",
+      "url": "https://friendli.ai/models/sapinsapin/whisper-small-pld-fil",
+      "snippet": "whisper-small-pld-fil openai/whisper-small finetuned on sapinsapin/pld. Trained for 2000 steps on 10000 clips (batch 8×2, lr 1e-05, fp16 + gradient checkpointing). WER/CER are on the held-out split, lowercased; CER is the model-selection metric (Taglish orthography varies at the word level)."
+    }
+  ]
+}

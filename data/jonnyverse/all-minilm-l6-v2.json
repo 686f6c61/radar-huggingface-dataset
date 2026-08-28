@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "JONNYVERSE/all-MiniLM-L6-v2",
+  "slug": "jonnyverse-all-minilm-l6-v2",
+  "author": "JONNYVERSE",
+  "url": "https://huggingface.co/JONNYVERSE/all-MiniLM-L6-v2",
+  "created_at": "2026-08-27T21:41:24.000Z",
+  "updated_at": "2026-08-27T21:41:25.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "feature-extraction",
+  "library": "transformers.js",
+  "languages": [],
+  "tags": [
+    "transformers.js",
+    "onnx",
+    "bert",
+    "feature-extraction",
+    "base_model:sentence-transformers/all-MiniLM-L6-v2",
+    "base_model:quantized:sentence-transformers/all-MiniLM-L6-v2",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 366467909,
+  "storage_human": "366 MB",
+  "base_model": "sentence-transformers/all-MiniLM-L6-v2",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "sentence-transformers/all-MiniLM-L6-v2 · Hugging Face",
+      "url": "https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "all-MiniLM-L6-v2: Text-to-Text model — overview, use cases, alternatives",
+      "url": "https://www.aimodels.fyi/models/huggingFace/all-minilm-l6-v2-xenova",
+      "snippet": "Overview all-MiniLM-L6-v2 is a sentence transformer model maintained by Xenova that encodes sentences and paragraphs into 384-dimensional dense vectors for semantic search, clustering, and similarity tasks. The model is available with ONNX weights optimized for Transformers.js, enabling JavaScript-based inference in browsers and Node.js environments without requiring Python or traditional ..."
+    },
+    {
+      "title": "allan56/all-MiniLM-L6-v2 · Hugging Face",
+      "url": "https://huggingface.co/allan56/all-MiniLM-L6-v2",
+      "snippet": "all-MiniLM-L6-v2 This is a sentence-transformers model: It maps sentences & paragraphs to a 384 dimensional dense vector space and can be used for tasks like clustering or semantic search. Usage (Sentence-Transformers) Using this model becomes easy when you have sentence-transformers installed:"
+    },
+    {
+      "title": "GitHub - henrytanner52/all-MiniLM-L6-v2",
+      "url": "https://github.com/henrytanner52/all-MiniLM-L6-v2",
+      "snippet": "all-MiniLM-L6-v2 This is a sentence-transformers model: It maps sentences & paragraphs to a 384 dimensional dense vector space and can be used for tasks like clustering or semantic search."
+    },
+    {
+      "title": "all-MiniLM-L6-v2: Text-to-Text model — overview, use cases, alternatives",
+      "url": "https://www.aimodels.fyi/models/huggingFace/all-minilm-l6-v2-sentence-transformers",
+      "snippet": "Overview all-MiniLM-L6-v2 is a sentence embedding model created by sentence-transformers that maps sentences and paragraphs into a 384-dimensional dense vector space. Built by fine-tuning the pretrained nreimers/MiniLM-L6-H384-uncased model on 1.17 billion sentence pairs using self-supervised contrastive learning, this model produces embeddings suitable for semantic search, clustering, and ..."
+    }
+  ]
+}

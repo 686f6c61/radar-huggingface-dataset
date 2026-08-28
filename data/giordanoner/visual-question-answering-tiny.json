@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "giordanoner/visual-question-answering-tiny",
+  "slug": "giordanoner-visual-question-answering-tiny",
+  "author": "giordanoner",
+  "url": "https://huggingface.co/giordanoner/visual-question-answering-tiny",
+  "created_at": "2026-08-27T19:59:45.000Z",
+  "updated_at": "2026-08-27T19:59:56.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": "visual-question-answering",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "transformer",
+    "research-notes",
+    "visual-question-answering",
+    "license:cc-by-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 49600,
+  "parameters_human": "49600",
+  "storage_bytes": 198880,
+  "storage_human": "198880 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Visual Question Answering - Hugging Face",
+      "url": "https://huggingface.co/docs/transformers/en/tasks/visual_question_answering",
+      "snippet": "Visual Question Answering (VQA) is the task of answering open-ended questions based on an image. The input to models supporting this task is typically a combination of an image and a question, and the output is an answer expressed in natural language. Some noteworthy use case examples for VQA include: Accessibility applications for visually impaired individuals. Education: posing questions ..."
+    },
+    {
+      "title": "TinyVQA: Compact Multimodal Deep Neural Network for",
+      "url": "https://arxiv.org/html/2404.03574v1",
+      "snippet": "The TinyVQA model was evaluated on the FloodNet dataset, which is used for post-disaster damage assessment. The compact model achieved an accuracy of 79.5%, demonstrating the effectiveness of TinyVQA for real-world applications. Additionally, the model was deployed on a Crazyflie 2.0 drone, equipped with an AI deck and GAP8 microprocessor."
+    },
+    {
+      "title": "GitHub - yousefkotp/Visual-Question-Answering: A Light weight deep ...",
+      "url": "https://github.com/yousefkotp/Visual-Question-Answering",
+      "snippet": "A Light weight deep learning model with with a web application to answer image-based questions with a non-generative approach for the VizWiz grand challenge 2023 by carefully curating the answer vocabulary and adding linear layer on top of Open AI&#x27;s CLIP model as image and text encoder - yousefkotp/Visual-Question-Answering"
+    },
+    {
+      "title": "TinyVQA: Compact Multimodal Deep Neural Network for Visual Question ...",
+      "url": "https://arxiv.org/abs/2404.03574",
+      "snippet": "This paper proposes TinyVQA, a novel multimodal deep neural network for visual question answering tasks that can be deployed on resource-constrained tinyML hardware. TinyVQA leverages a supervised attention-based model to learn how to answer questions about images using both vision and language modalities."
+    },
+    {
+      "title": "Visual Question Answering Models - Hugging Face",
+      "url": "https://huggingface.co/models?pipeline_tag=visual-question-answering&sort=downloads",
+      "snippet": "Explore machine learning models. Active filters: visual-question-answering Salesforce/blip-vqa-base"
+    }
+  ]
+}

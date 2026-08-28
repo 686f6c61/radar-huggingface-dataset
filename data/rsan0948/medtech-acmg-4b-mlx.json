@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "Rsan0948/medtech-acmg-4b-mlx",
+  "slug": "rsan0948-medtech-acmg-4b-mlx",
+  "author": "Rsan0948",
+  "url": "https://huggingface.co/Rsan0948/medtech-acmg-4b-mlx",
+  "created_at": "2026-08-28T00:51:39.000Z",
+  "updated_at": "2026-08-28T00:52:33.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "mlx",
+  "languages": [],
+  "tags": [
+    "mlx",
+    "lora",
+    "clinical-genomics",
+    "variant-classification",
+    "acmg",
+    "distillation",
+    "edge",
+    "base_model:mlx-community/Qwen3-4B-bf16",
+    "base_model:adapter:mlx-community/Qwen3-4B-bf16",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 469811691,
+  "storage_human": "470 MB",
+  "base_model": "mlx-community/Qwen3-4B-bf16",
+  "formats": [
+    "mlx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Rsan0948 (Ruben Sanchez) - Hugging Face",
+      "url": "https://huggingface.co/Rsan0948",
+      "snippet": "User profile of Ruben Sanchez on Hugging Face"
+    },
+    {
+      "title": "MLX Community - Hugging Face",
+      "url": "https://huggingface.co/mlx-community",
+      "snippet": "Org profile for MLX Community on Hugging Face, the AI community building the future."
+    },
+    {
+      "title": "Rsan0948 (Ruben Sanchez) · GitHub",
+      "url": "https://github.com/Rsan0948/",
+      "snippet": "Rsan0948 has 10 repositories available. Follow their code on GitHub."
+    },
+    {
+      "title": "OpenAI | Research & Deployment",
+      "url": "https://openai.com/",
+      "snippet": "We believe our research will eventually lead to artificial general intelligence, a system that can solve human-level problems."
+    },
+    {
+      "title": "LLM Leaderboard & AI Model Benchmarks — August 2026",
+      "url": "https://benchlm.ai/",
+      "snippet": "LLM Leaderboard & AI Model Benchmarks — August 2026 Compare frontier AI models by quality, cost, and context. 105 Supported and 121 Estimated models among 403 tracked LLMs — 406 benchmarks, real pricing, and runtime data in one place."
+    }
+  ]
+}

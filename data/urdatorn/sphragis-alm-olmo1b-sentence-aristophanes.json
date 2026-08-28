@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "Urdatorn/sphragis-alm-olmo1b-sentence-aristophanes",
+  "slug": "urdatorn-sphragis-alm-olmo1b-sentence-aristophanes",
+  "author": "Urdatorn",
+  "url": "https://huggingface.co/Urdatorn/sphragis-alm-olmo1b-sentence-aristophanes",
+  "created_at": "2026-08-27T23:04:08.000Z",
+  "updated_at": "2026-08-27T23:04:26.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "grc"
+  ],
+  "tags": [
+    "safetensors",
+    "olmo",
+    "ancient-greek",
+    "authorship-attribution",
+    "authorial-language-model",
+    "grc",
+    "base_model:allenai/OLMo-1B-hf",
+    "base_model:finetune:allenai/OLMo-1B-hf",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1176764416,
+  "parameters_human": "1.18B",
+  "storage_bytes": 2353541856,
+  "storage_human": "2.4 GB",
+  "base_model": "allenai/OLMo-1B-hf",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Urdatorn/sphragis-alm-olmo3-7b-aristophanes · Hugging Face",
+      "url": "https://huggingface.co/Urdatorn/sphragis-alm-olmo3-7b-aristophanes",
+      "snippet": "Sphragis authorial language model: Aristophanes One of seventeen authorial language models (ALMs) for the Sphragis Ancient Greek authorship-attribution benchmark, following Huang, Murakami and Grieve (2025), \"Attributing authorship via the perplexity of authorial language models\", PLoS ONE 20 (7): e0327081. Each model is a full further-pretraining of allenai/Olmo-3-1025-7B (revision ..."
+    },
+    {
+      "title": "Urdatorn (Albin Thörn Cleland) - Hugging Face",
+      "url": "https://huggingface.co/Urdatorn/models",
+      "snippet": "Machine learning for Ancient Greek. Particular research topics include prosody, metre and author attribution."
+    },
+    {
+      "title": "GitHub - Urdatorn/Urdatorn",
+      "url": "https://github.com/Urdatorn/Urdatorn",
+      "snippet": "Featured Work Recent Hugging Face Model: SyllaMoBert-grc-macronizer-v1 A BERT-based model for Ancient Greek syllabification and macronization. Latest GitHub Project: aristophanis-cantica Digital analysis of Aristophanes&#x27; cantica."
+    },
+    {
+      "title": "GitHub - sphragis-oss/sphragis: EU AI Act compliance gateway for Claude ...",
+      "url": "https://github.com/sphragis-oss/sphragis",
+      "snippet": "The EU AI Act and GDPR pull you two ways at once: keep personal data out of third-party model providers, and be able to prove what you sent and when. The usual \"fix\" is a third-party SaaS scrubber, which just hands your data to another processor. Sphragis inverts that. Everything happens inside your own trust boundary: Redaction is local. Emails, cards, IBANs, secrets, keys and more are ..."
+    },
+    {
+      "title": "OLMo : Accelerating the Science of Language Models",
+      "url": "https://arxiv.org/html/2402.00838v1",
+      "snippet": "We believe that full access to open language models for the research community is critical to the scientific study of these models, their strengths and weaknesses, and their biases and risks. Accordingly, we introduce OLMo, a state-of-the-art, truly open language model and framework to build, study, and advance LMs, along with the training data, training and evaluation code, intermediate model ..."
+    }
+  ]
+}

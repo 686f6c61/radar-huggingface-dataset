@@ -1,0 +1,82 @@
+{
+  "schema": 1,
+  "id": "Oscilla/Qwen2.5-Coder-7B-Instruct-mlx-4Bit",
+  "slug": "oscilla-qwen2-5-coder-7b-instruct-mlx-4bit",
+  "author": "Oscilla",
+  "url": "https://huggingface.co/Oscilla/Qwen2.5-Coder-7B-Instruct-mlx-4Bit",
+  "created_at": "2026-08-27T20:18:13.000Z",
+  "updated_at": "2026-08-27T20:18:26.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen2",
+    "text-generation",
+    "code",
+    "codeqwen",
+    "chat",
+    "qwen",
+    "qwen-coder",
+    "mlx",
+    "mlx-my-repo",
+    "conversational",
+    "en",
+    "base_model:Qwen/Qwen2.5-Coder-7B-Instruct",
+    "base_model:quantized:Qwen/Qwen2.5-Coder-7B-Instruct",
+    "license:apache-2.0",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "4-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1190221312,
+  "parameters_human": "1.19B",
+  "storage_bytes": 4295768684,
+  "storage_human": "4.3 GB",
+  "base_model": "Qwen/Qwen2.5-Coder-7B-Instruct",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Oscilla/Qwen2.5-Coder-7B-Instruct-4bit-mlx-4Bit · Hugging Face",
+      "url": "https://huggingface.co/Oscilla/Qwen2.5-Coder-7B-Instruct-4bit-mlx-4Bit",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Qwen/Qwen2.5-Coder-7B-Instruct · Hugging Face",
+      "url": "https://huggingface.co/Qwen/Qwen2.5-Coder-7B-Instruct",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Qwen2.5 Coder 7B Instruct 4bit by mlx-community",
+      "url": "https://llm-explorer.com/model/mlx-community%2FQwen2.5-Coder-7B-Instruct-4bit,3wls0bakDefOMzTTSrA2sV",
+      "snippet": "Qwen2.5 Coder 7B Instruct 4bit is an open-source 7b LLM by mlx-community. VRAM 4.3GB, 32K context. Compare benchmarks, capabilities, and deployment details on LLM Explorer."
+    },
+    {
+      "title": "qwen2.5-coder:7b-instruct - ollama.com",
+      "url": "https://ollama.com/library/qwen2.5-coder:7b-instruct",
+      "snippet": "Code Reasoning: Code reasoning refers to the model&#x27;s ability to learn the process of code execution and accurately predict the model&#x27;s inputs and outputs. The recently released Qwen2.5 Coder 7B Instruct has already shown impressive performance in code reasoning, and this 32B model takes it a step further."
+    },
+    {
+      "title": "GitHub - huggingface/Qwen2.5-Coder: Qwen2.5-Coder is the code version ...",
+      "url": "https://github.com/huggingface/Qwen2.5-Coder",
+      "snippet": "💻 Powerful: Qwen2.5-Coder-32B-Instruct has become the current SOTA open-source code model, matching the coding capabilities of GPT-4o. While demonstrating strong and comprehensive coding abilities, it also possesses good general and mathematical skills;"
+    }
+  ]
+}

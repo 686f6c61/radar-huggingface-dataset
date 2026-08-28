@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "zeromodels/efficientdet_d2",
+  "slug": "zeromodels-efficientdet_d2",
+  "author": "zeromodels",
+  "url": "https://huggingface.co/zeromodels/efficientdet_d2",
+  "created_at": "2026-08-27T21:30:13.000Z",
+  "updated_at": "2026-08-27T21:30:14.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "object-detection",
+  "library": "zeromodels",
+  "languages": [],
+  "tags": [
+    "zeromodels",
+    "keras",
+    "efficientdet",
+    "object-detection",
+    "arxiv:1911.09070",
+    "pytorch",
+    "jax",
+    "tf",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 34359616,
+  "storage_human": "34 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "automl/efficientdet at master · google/automl · GitHub",
+      "url": "https://github.com/google/automl/tree/master/efficientdet",
+      "snippet": "Our model family starts from EfficientDet-D0, which has comparable accuracy as YOLOv3. Then we scale up this baseline model using our compound scaling method to obtain a list of detection models EfficientDet-D1 to D6, with different trade-offs between accuracy and model complexity. ** For simplicity, we compare the whole detectors here."
+    },
+    {
+      "title": "automl/efficientdet/README.md at master · google/automl",
+      "url": "https://github.com/google/automl/blob/master/efficientdet/README.md",
+      "snippet": "Our model family starts from EfficientDet-D0, which has comparable accuracy as YOLOv3. Then we scale up this baseline model using our compound scaling method to obtain a list of detection models EfficientDet-D1 to D6, with different trade-offs between accuracy and model complexity. ** For simplicity, we compare the whole detectors here."
+    },
+    {
+      "title": "EfficientDet_D2 - EfficientDet_D2 - 3.0 English - UG1354",
+      "url": "https://docs.amd.com/r/3.0-English/ug1354-xilinx-ai-sdk/EfficientDet_D2",
+      "snippet": "EfficientDet is a one-stage detector built by the Google Brain team. Building upon EfficientNet and incorporating a novel bi-directional feature network and new scaling rules achieve high accuracy with fewer computation operations and is widely used in the production environment. The following image shows the result of EfficientDet_D2."
+    },
+    {
+      "title": "efficientdet.ipynb - Colab",
+      "url": "https://colab.research.google.com/github/NVIDIA-AI-IOT/nvidia-tao/blob/main/tensorflow/efficientdet/efficientdet.ipynb",
+      "snippet": "A key to save and load the model Output directory to store the model Usually, you just need to adjust -pth (threshold) for accuracy and model size trade off. Higher pth gives you smaller model (and thus higher inference speed) but worse accuracy. The threshold value depends on the dataset and the model. 0.4 in the block below is just a start point."
+    },
+    {
+      "title": "tutorial.ipynb - Colab",
+      "url": "https://colab.research.google.com/github/google/automl/blob/master/efficientdet/tutorial.ipynb",
+      "snippet": "There are two types of latency: network latency and end-to-end latency. network latency: from the first conv op to the network class and box prediction. end-to-end latency: from image preprocessing, network, to the final postprocessing to generate a annotated new image."
+    }
+  ]
+}

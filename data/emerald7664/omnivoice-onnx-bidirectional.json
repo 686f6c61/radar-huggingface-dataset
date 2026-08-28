@@ -57,8 +57,8 @@
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
-  "storage_bytes": 2825797722,
-  "storage_human": "2.8 GB",
+  "storage_bytes": 2563818869,
+  "storage_human": "2.6 GB",
   "base_model": "k2-fsa/OmniVoice",
   "formats": [
     "onnx"

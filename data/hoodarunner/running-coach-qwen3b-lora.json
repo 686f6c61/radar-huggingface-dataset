@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "hoodarunner/running-coach-qwen3b-lora",
+  "slug": "hoodarunner-running-coach-qwen3b-lora",
+  "author": "hoodarunner",
+  "url": "https://huggingface.co/hoodarunner/running-coach-qwen3b-lora",
+  "created_at": "2026-08-27T21:00:54.000Z",
+  "updated_at": "2026-08-27T22:04:31.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "running",
+    "coaching",
+    "lora",
+    "sports-science",
+    "text-generation",
+    "conversational",
+    "en",
+    "dataset:hoodarunner/running-coach-sft",
+    "base_model:Qwen/Qwen2.5-3B-Instruct",
+    "base_model:adapter:Qwen/Qwen2.5-3B-Instruct",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 131223924,
+  "storage_human": "131 MB",
+  "base_model": "Qwen/Qwen2.5-3B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Qwen/Qwen3-8B · Hugging Face",
+      "url": "https://huggingface.co/Qwen/Qwen3-8B",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "hoodarunner (Yash Hooda) - Hugging Face",
+      "url": "https://huggingface.co/hoodarunner/datasets",
+      "snippet": "Prompt Engineering, Chatbot development, AI Engineering, Data Science, Machine Learning Engineer"
+    },
+    {
+      "title": "GitHub - QwenLM/Qwen3: Qwen3 is the large language model series ...",
+      "url": "https://github.com/QwenLM/Qwen3",
+      "snippet": "Over the past three months, we continued to explore the potential of the Qwen3 families and we are excited to introduce the updated Qwen3-2507 in two variants, Qwen3-Instruct-2507 and Qwen3-Thinking-2507, and three sizes, 235B-A22B, 30B-A3B, and 4B. Qwen3-Instruct-2507 is the updated version of the previous Qwen3 non-thinking mode, featuring the following key enhancements: Significant ..."
+    },
+    {
+      "title": "lora_script/qwen3b_lora.ipynb at main · Ghnkrk/lora_script",
+      "url": "https://github.com/Ghnkrk/lora_script/blob/main/qwen3b_lora.ipynb",
+      "snippet": "Contribute to Ghnkrk/lora_script development by creating an account on GitHub."
+    },
+    {
+      "title": "hoodarunner",
+      "url": "https://ollama.com/hoodarunner",
+      "snippet": "hoodaAgents is a local-first AI assistant framework designed to run customizable AI agents entirely on your machine using Ollama and LangGraph. It integrates powerful open-source LLMs (like Mistral) with intelligent tool usage."
+    }
+  ]
+}

@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "Oscilla/gemma-3-1b-it-mlx-8Bit",
+  "slug": "oscilla-gemma-3-1b-it-mlx-8bit",
+  "author": "Oscilla",
+  "url": "https://huggingface.co/Oscilla/gemma-3-1b-it-mlx-8Bit",
+  "created_at": "2026-08-27T20:19:39.000Z",
+  "updated_at": "2026-08-27T20:19:43.000Z",
+  "license": "gemma",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gemma3_text",
+    "text-generation",
+    "mlx",
+    "conversational",
+    "base_model:google/gemma-3-1b-it",
+    "base_model:quantized:google/gemma-3-1b-it",
+    "license:gemma",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "8-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 281314432,
+  "parameters_human": "281.3M",
+  "storage_bytes": 1095968546,
+  "storage_human": "1.1 GB",
+  "base_model": "google/gemma-3-1b-it",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Oscilla/gemma-3-1b-it-mlx-4Bit · Hugging Face",
+      "url": "https://huggingface.co/Oscilla/gemma-3-1b-it-mlx-4Bit",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "google/gemma-3-1b-it · Hugging Face",
+      "url": "https://huggingface.co/google/gemma-3-1b-it",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Gemma 3 — Google DeepMind",
+      "url": "https://deepmind.google/models/gemma/gemma-3/",
+      "snippet": "Gemma 3 is the most capable model that can run on a single GPU or TPU. Efficient on workstations, laptops, and even smartphones, allowing developers to build responsible AI applications at scale."
+    },
+    {
+      "title": "mlx-community/gemma-3-1b-it-8bit - toolify.ai",
+      "url": "https://www.toolify.ai/ai-model/mlx-community-gemma-3-1b-it-8bit",
+      "snippet": "gemma-3-1b-it-8bit is an open source model from GitHub that offers a free installation service, and any user can find gemma-3-1b-it-8bit on GitHub to install. At the same time, huggingface.co provides the effect of gemma-3-1b-it-8bit install, users can directly use gemma-3-1b-it-8bit installed effect in huggingface.co for debugging and trial."
+    },
+    {
+      "title": "gemma-3-1b-it Model by Google | NVIDIA NIM",
+      "url": "https://build.nvidia.com/google/gemma-3-1b-it",
+      "snippet": "A lightweight, multilingual, advanced SLM text model for edge computing, resource constraint applications"
+    }
+  ]
+}

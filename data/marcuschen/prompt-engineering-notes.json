@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "marcuschen/prompt-engineering-notes",
+  "slug": "marcuschen-prompt-engineering-notes",
+  "author": "marcuschen",
+  "url": "https://huggingface.co/marcuschen/prompt-engineering-notes",
+  "created_at": "2026-08-27T21:28:23.000Z",
+  "updated_at": "2026-08-27T21:28:32.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "transformer",
+    "research-notes",
+    "prompt-engineering",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 24832,
+  "parameters_human": "24832",
+  "storage_bytes": 99808,
+  "storage_human": "99808 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - VikramThory/prompt-engineering-notes: A curated collection of ...",
+      "url": "https://github.com/VikramThory/prompt-engineering-notes",
+      "snippet": "A curated collection of notes, examples, and best practices for learning and mastering prompt engineering with large language models (LLMs) like ChatGPT, GPT-4, and others. Covers concepts, patterns, use cases, and techniques for building effective and reliable AI prompts."
+    },
+    {
+      "title": "generative-ai-for-beginners/04-prompt-engineering-fundamentals ... - GitHub",
+      "url": "https://github.com/microsoft/generative-ai-for-beginners/blob/main/04-prompt-engineering-fundamentals/README.md",
+      "snippet": "This module covers essential concepts and techniques for creating effective prompts in generative AI models. The way you write your prompt to an LLM also matters. A carefully-crafted prompt can achieve a better quality of response. But what exactly do terms like prompt and prompt engineering mean? And how do I improve the prompt input that I send to the LLM? These are the questions we&#x27;ll try ..."
+    },
+    {
+      "title": "Prompt Engineering Guide (Complete Techniques 2026)",
+      "url": "https://itsourcecode.com/blogs/prompt-engineering-guide-2026/",
+      "snippet": "Prompt engineering is the art of writing instructions that get AI to give you exactly what you want. A great prompt can turn a mediocre AI response into a production-ready result. This 2026 guide covers every prompt engineering technique, role prompting, few-shot learning, chain of thought, ReAct, and more, with real examples that work."
+    },
+    {
+      "title": "AI Prompt Engineering - GeeksforGeeks",
+      "url": "https://www.geeksforgeeks.org/artificial-intelligence/ai-prompt-engineering/",
+      "snippet": "refers to AI models that create new content like text, images, code or other data based on given prompts. In prompt engineering, it focuses on generating accurate and useful outputs from well designed instructions."
+    },
+    {
+      "title": "Prompt Engineering for Generative AI",
+      "url": "https://www.scribd.com/document/697036558/Prompt-Engineering-Notes",
+      "snippet": "The document discusses different techniques for prompt engineering when interacting with generative AI models. It explains what a prompt is and how crafting prompts and instructions can optimize a model&#x27;s output. It provides examples of instruction, role, and context prompts that define parameters like tone, complexity, and genre to control an AI&#x27;s responses."
+    }
+  ]
+}

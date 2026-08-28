@@ -24,8 +24,8 @@
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
-  "storage_bytes": 91793162479,
-  "storage_human": "91.8 GB",
+  "storage_bytes": 49490820047,
+  "storage_human": "49.5 GB",
   "base_model": null,
   "formats": [
     "diffusers"

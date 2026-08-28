@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "mehmettozlu/Turkish-Gemma-2-9B-IT-GGUF",
+  "slug": "mehmettozlu-turkish-gemma-2-9b-it-gguf",
+  "author": "mehmettozlu",
+  "url": "https://huggingface.co/mehmettozlu/Turkish-Gemma-2-9B-IT-GGUF",
+  "created_at": "2026-08-27T21:37:27.000Z",
+  "updated_at": "2026-08-27T21:48:01.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "gemma2",
+    "llama.cpp",
+    "unsloth",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 9241705984,
+  "parameters_human": "9.24B",
+  "storage_bytes": 40726253568,
+  "storage_human": "40.7 GB",
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "google/gemma-2-9b · Hugging Face",
+      "url": "https://huggingface.co/google/gemma-2-9b",
+      "snippet": "Code: Exposing the model to code helps it to learn the syntax and patterns of programming languages, which improves its ability to generate code or understand code-related questions. Mathematics: Training on mathematical text helps the model learn logical reasoning, symbolic representation, and to address mathematical queries."
+    },
+    {
+      "title": "neuralwork/gemma-2-9b-it-tr · Hugging Face",
+      "url": "https://huggingface.co/neuralwork/gemma-2-9b-it-tr",
+      "snippet": "Gemma-2-9b-it-tr is a finetuned version of google/gemma-2-9b-it on a carefully curated and manually filtered dataset of 55k question answering and conversational samples in Turkish."
+    },
+    {
+      "title": "Turkish Gemma 9b T1 — ThinkLLM",
+      "url": "https://thinkllm.dev/models/turkish-gemma-9b-t1",
+      "snippet": "A Gemma 2 9B model fine-tuned specifically for Turkish language tasks, giving it noticeably stronger fluency and coherence in Turkish compared to the base model. It handles Turkish grammar and vocabulary with more natural output, though its capabilities are bounded by the 8K context window and its specialization means it may underperform on non-Turkish tasks. Think of it as a focused regional ..."
+    },
+    {
+      "title": "Turkish - Gemma - 9b - v0.1: An Open - source Turkish Text Generation ...",
+      "url": "https://model.aibase.com/models/details/1927649988721250304",
+      "snippet": "Turkish-Gemma-9b-v0.1 is a Turkish text generation model developed based on Gemma-2-9b, optimized through continued pretraining, supervised fine-tuning (SFT), direct preference optimization (DPO), and model merging techniques."
+    },
+    {
+      "title": "alpecevit/turkish-gemma-2-9b-it - Fast, Reliable, and Scalable ...",
+      "url": "https://friendli.ai/models/alpecevit/turkish-gemma-2-9b-it",
+      "snippet": "Run alpecevit/turkish-gemma-2-9b-it with fast, reliable, and scalable inference on FriendliAI. Get low-latency performance with advanced quantization (FP4, FP8, INT4, INT8), continuous batching, optimized GPU kernels, token caching, and seamless API integration."
+    }
+  ]
+}

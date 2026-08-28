@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "JONNYVERSE/segformer-b2-finetuned-ade-512-512",
+  "slug": "jonnyverse-segformer-b2-finetuned-ade-512-512",
+  "author": "JONNYVERSE",
+  "url": "https://huggingface.co/JONNYVERSE/segformer-b2-finetuned-ade-512-512",
+  "created_at": "2026-08-27T21:40:50.000Z",
+  "updated_at": "2026-08-27T21:40:51.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "image-segmentation",
+  "library": "transformers.js",
+  "languages": [],
+  "tags": [
+    "transformers.js",
+    "onnx",
+    "segformer",
+    "image-segmentation",
+    "base_model:nvidia/segformer-b2-finetuned-ade-512-512",
+    "base_model:quantized:nvidia/segformer-b2-finetuned-ade-512-512",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 195106313,
+  "storage_human": "195 MB",
+  "base_model": "nvidia/segformer-b2-finetuned-ade-512-512",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "nvidia/segformer-b2-finetuned-ade-512-512 · Hugging Face",
+      "url": "https://huggingface.co/nvidia/segformer-b2-finetuned-ade-512-512",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "starry12tree/segformer-b2-finetuned-ade-512-512 · Hugging Face",
+      "url": "https://huggingface.co/starry12tree/segformer-b2-finetuned-ade-512-512",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "nvidia/segformer-b2-finetuned-ade-512-512 · Model Database",
+      "url": "http://www.modeldatabase.com/nvidia/segformer-b2-finetuned-ade-512-512.html",
+      "snippet": "SegFormer (b2-sized) model fine-tuned on ADE20k SegFormer model fine-tuned on ADE20k at resolution 512x512. It was introduced in the paper SegFormer: Simple and Efficient Design for Semantic Segmentation with Transformers by Xie et al. and first released in this repository."
+    },
+    {
+      "title": "Segformer B2 Finetuned Ade 512 512 - model.aibase.com",
+      "url": "https://model.aibase.com/models/details/1915694474543652866",
+      "snippet": "The latest background removal model developed by BRIA AI, capable of effectively separating foreground and background in various images, suitable for large-scale commercial content creation scenarios."
+    },
+    {
+      "title": "nvidia/segformer-b2-finetuned-ade-512-512 · Hugging Face",
+      "url": "https://hf-p-cfw.fyan.top/nvidia/segformer-b2-finetuned-ade-512-512",
+      "snippet": "Model description SegFormer consists of a hierarchical Transformer encoder and a lightweight all-MLP decode head to achieve great results on semantic segmentation benchmarks such as ADE20K and Cityscapes."
+    }
+  ]
+}

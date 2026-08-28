@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "mradermacher/Qwen3.6-35B-A3B-heretic-v2-i1-GGUF",
+  "slug": "mradermacher-qwen3-6-35b-a3b-heretic-v2-i1-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/Qwen3.6-35B-A3B-heretic-v2-i1-GGUF",
+  "created_at": "2026-08-27T14:58:32.000Z",
+  "updated_at": "2026-08-27T22:19:52.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "heretic",
+    "uncensored",
+    "decensored",
+    "abliterated",
+    "en",
+    "base_model:trohrbaugh/Qwen3.6-35B-A3B-heretic-v2",
+    "base_model:quantized:trohrbaugh/Qwen3.6-35B-A3B-heretic-v2",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "imatrix",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 35505251456,
+  "parameters_human": "35.51B",
+  "storage_bytes": 279161210144,
+  "storage_human": "279.2 GB",
+  "base_model": "trohrbaugh/Qwen3.6-35B-A3B-heretic-v2",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "mradermacher/Qwen3.6-35B-A3B-heretic-v2-GGUF · Hugging Face",
+      "url": "https://huggingface.co/mradermacher/Qwen3.6-35B-A3B-heretic-v2-GGUF",
+      "snippet": "mradermacher / Qwen3.6-35B-A3B-heretic-v2-GGUF like 0 Transformers GGUF English heretic uncensored decensored abliterated conversational License:apache-2.0 Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "mradermacher/Qwen3.6-35B-A3B-abliterated-v2-i1-GGUF at main",
+      "url": "https://huggingface.co/mradermacher/Qwen3.6-35B-A3B-abliterated-v2-i1-GGUF/tree/main",
+      "snippet": "mradermacher / Qwen3.6-35B-A3B-abliterated-v2-i1-GGUF like 2 Transformers GGUF English abliterated uncensored qwen3 Mixture of Experts abliterix imatrix conversational License:tongyi-qianwen Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "GitHub - tobias-weiss-ai-xr/Qwen3.6-NVFP4-DFlash: Qwen3.6-35B-A3B ...",
+      "url": "https://github.com/tobias-weiss-ai-xr/Qwen3.6-NVFP4-DFlash",
+      "snippet": "A production-stable deployment of AEON-7/Qwen3.6-35B-A3B-heretic-NVFP4 with DFlash speculative decoding on NVIDIA DGX Spark (GB10 / sm_121a). ⚠️ READ THE REQUIREMENTS SECTION FIRST. This image and its weights are tuned specifically for the DGX Spark (GB10 / sm_120-121 Blackwell) with PyTorch ..."
+    },
+    {
+      "title": "Qwen3.6-35B-A3B - vLLM Ascend - docs.vllm.ai",
+      "url": "https://docs.vllm.ai/projects/ascend/en/latest/tutorials/models/Qwen3.6-35B-A3B.html",
+      "snippet": "Qwen3.6-35B-A3B 1 Introduction ¶ Qwen3.6-35B-A3B is a sparse MoE model in the Qwen3.6 family, with 35B total parameters and about 3B activated parameters per token. It uses the hybrid attention architecture used by Qwen3.5-style models, and is suitable for long-context online serving on Ascend hardware."
+    },
+    {
+      "title": "mradermacher/Qwen3.6-35B-A3B-uncensored-heretic-i1-GGUF",
+      "url": "https://www.toolify.ai/ai-model/mradermacher-qwen3-6-35b-a3b-uncensored-heretic-i1-gguf",
+      "snippet": "Qwen3.6-35B-A3B-uncensored-heretic-i1-GGUF is an open source model from GitHub that offers a free installation service, and any user can find Qwen3.6-35B-A3B-uncensored-heretic-i1-GGUF on GitHub to install."
+    }
+  ]
+}

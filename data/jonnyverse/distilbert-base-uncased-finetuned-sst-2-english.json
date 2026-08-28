@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "JONNYVERSE/distilbert-base-uncased-finetuned-sst-2-english",
+  "slug": "jonnyverse-distilbert-base-uncased-finetuned-sst-2-english",
+  "author": "JONNYVERSE",
+  "url": "https://huggingface.co/JONNYVERSE/distilbert-base-uncased-finetuned-sst-2-english",
+  "created_at": "2026-08-27T21:41:07.000Z",
+  "updated_at": "2026-08-27T21:41:07.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-classification",
+  "library": "transformers.js",
+  "languages": [],
+  "tags": [
+    "transformers.js",
+    "onnx",
+    "distilbert",
+    "text-classification",
+    "base_model:distilbert/distilbert-base-uncased-finetuned-sst-2-english",
+    "base_model:quantized:distilbert/distilbert-base-uncased-finetuned-sst-2-english",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1730523924,
+  "storage_human": "1.7 GB",
+  "base_model": "distilbert-base-uncased-finetuned-sst-2-english",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "distilbert-base-uncased-finetuned-sst-2-english - Hugging Face",
+      "url": "https://huggingface.co/distilbert/distilbert-base-uncased-finetuned-sst-2-english",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "distilbert-base-uncased-finetuned-sst-2-english",
+      "url": "https://huggingface.co/distilbert/distilbert-base-uncased-finetuned-sst-2-english/blob/main/README.md",
+      "snippet": "DistilBERT base uncased finetuned SST-2 Table of Contents Model Details How to Get Started With the Model Uses Risks, Limitations and Biases Training Model Details Model Description: This model is a fine-tune checkpoint of DistilBERT-base-uncased, fine-tuned on SST-2. This model reaches an accuracy of 91.3 on the dev set (for comparison, Bert bert-base-uncased version reaches an accuracy of 92 ..."
+    },
+    {
+      "title": "AI Model Catalog | Microsoft Foundry Models",
+      "url": "https://ai.azure.com/catalog/models/distilbert-base-uncased-finetuned-sst-2-english",
+      "snippet": "DistilBERT base uncased finetuned SST-2 model is a fine-tune checkpoint of DistilBERT-base-uncased , fine-tuned on SST-2. This model reaches an accuracy of 91.3 on the dev set (for comparison, Bert bert-base-uncased version reaches an accuracy of 92.7). This model can be used for topic classification. You can use the raw model for either masked language modeling or next sentence prediction ..."
+    },
+    {
+      "title": "distilbert-base-uncased-finetuned-sst-2-english - AI Model Zoo - BimAnt",
+      "url": "https://zoo.bimant.com/model/31",
+      "snippet": "DistilBERT base uncased finetuned SST-2 Table of Contents Model Details How to Get Started With the Model Uses Risks, Limitations and Biases Training Model Details Model Description: This model is a fine-tune checkpoint of DistilBERT-base-uncased, fine-tuned on SST-2. This model reaches an accuracy of 91.3 on the dev set (for comparison, Bert bert-base-uncased version reaches an accuracy of 92 ..."
+    },
+    {
+      "title": "distilbert-base-uncased-finetuned-sst-2-english model | Metatext",
+      "url": "https://metatext.io/models/distilbert-base-uncased-finetuned-sst-2-english",
+      "snippet": "This model is a fine-tune checkpoint of DistilBERT-base-uncased, fine-tuned on SST-2 . This model reaches an accuracy of 91.3 on the dev set (for comparison, Be"
+    }
+  ]
+}

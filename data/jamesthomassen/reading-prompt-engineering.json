@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "jamesthomassen/reading-prompt-engineering",
+  "slug": "jamesthomassen-reading-prompt-engineering",
+  "author": "jamesthomassen",
+  "url": "https://huggingface.co/jamesthomassen/reading-prompt-engineering",
+  "created_at": "2026-08-28T00:24:34.000Z",
+  "updated_at": "2026-08-28T00:24:43.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "transformer",
+    "research-notes",
+    "prompt-engineering",
+    "license:cc-by-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 24832,
+  "parameters_human": "24832",
+  "storage_bytes": 99808,
+  "storage_human": "99808 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - promptslab/Awesome-Prompt-Engineering: This repository ...",
+      "url": "https://github.com/promptslab/Awesome-Prompt-Engineering",
+      "snippet": "New to prompt engineering? Follow this path: Learn the basics → ChatGPT Prompt Engineering for Developers (free, ~90 min) Read the guide → Prompt Engineering Guide by DAIR.AI (open-source, comprehensive) Study provider docs → OpenAI Prompt Engineering Guide · Anthropic Prompt Engineering Guide Understand where the field is heading → Anthropic: Effective Context Engineering for AI ..."
+    },
+    {
+      "title": "Prompt engineering best practices for 2026 | Claude by Anthropic",
+      "url": "https://claude.com/blog/best-practices-for-prompt-engineering",
+      "snippet": "Prompt engineering is the craft of structuring instructions to get better outputs from AI models. It&#x27;s how you phrase queries, specify style, provide context, and guide the model&#x27;s behavior to achieve your goals. The difference between a vague instruction and a well-crafted prompt can mean the gap between generic outputs and exactly what you need."
+    },
+    {
+      "title": "Prompt Engineering: A Practical Example - Real Python",
+      "url": "https://realpython.com/practical-prompt-engineering/",
+      "snippet": "Learn prompt engineering techniques with a practical, real-world project to get better results from large language models. This tutorial covers zero-shot and few-shot prompting, delimiters, numbered steps, role prompts, chain-of-thought prompting, and more. Improve your LLM-assisted projects today."
+    },
+    {
+      "title": "Prompting Techniques | Prompt Engineering Guide",
+      "url": "https://www.promptingguide.ai/techniques",
+      "snippet": "Prompting Techniques Prompt Engineering helps to effectively design and improve prompts to get better results on different tasks with LLMs. While the previous basic examples were fun, in this section we cover more advanced prompting engineering techniques that allow us to achieve more complex tasks and improve reliability and performance of LLMs."
+    },
+    {
+      "title": "Prompt engineering techniques - Microsoft Foundry",
+      "url": "https://learn.microsoft.com/en-us/azure/foundry/openai/concepts/prompt-engineering",
+      "snippet": "These techniques aren&#x27;t recommended for reasoning models like gpt-5 and o-series models. Prompt construction can be difficult. In practice, the prompt acts to help the model complete the desired task, but it&#x27;s more of an art than a science, often requiring experience and intuition to craft a successful prompt. The goal of this article is to help get you started with this learning process. This ..."
+    }
+  ]
+}

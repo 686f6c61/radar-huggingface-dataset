@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "ramosl-orenzo/matching-run2",
+  "slug": "ramosl-orenzo-matching-run2",
+  "author": "ramosl-orenzo",
+  "url": "https://huggingface.co/ramosl-orenzo/matching-run2",
+  "created_at": "2026-08-27T23:32:43.000Z",
+  "updated_at": "2026-08-27T23:32:51.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "mobilevit",
+    "pytorch",
+    "matching",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 49600,
+  "parameters_human": "49600",
+  "storage_bytes": 198880,
+  "storage_human": "198880 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "AI Aimbot Models & YOLO Detection Models | MossyModels",
+      "url": "https://mossymodels.com/",
+      "snippet": "Browse 661+ free YOLO and ONNX detection models across 43+ games. Community library for Fortnite, Valorant, Warzone, Apex Legends, and more."
+    },
+    {
+      "title": "LLM Leaderboard 2026: Compare 300+ Top AI Models by Intelligence, Speed ...",
+      "url": "https://llm-stats.com/leaderboards/llm-leaderboard",
+      "snippet": "The LLM Leaderboard — independent ranking of GPT, Claude, Gemini, Llama, DeepSeek and 300+ AI models by intelligence, speed and price. Filter by provider, license, modality and context window; sort by every benchmark. Composite LLM Stats Score updated continuously from public benchmarks and live API metrics."
+    },
+    {
+      "title": "LLM Leaderboard - Comparison of AI models from OpenAI, Anthropic ...",
+      "url": "https://artificialanalysis.ai/leaderboards/models",
+      "snippet": "Comparison and ranking the performance of over 250 AI models (LLMs) across key metrics including intelligence, price, performance and speed (output speed - tokens per second & latency - TTFT), context window & others."
+    },
+    {
+      "title": "Model Zoo - Deep learning code and pretrained models for transfer ...",
+      "url": "https://www.modelzoo.co/",
+      "snippet": "Model Zoo Discover open source deep learning code and pretrained models. Browse Frameworks Browse Categories"
+    },
+    {
+      "title": "RoMa v2: Harder Better Faster Denser Feature Matching",
+      "url": "https://arxiv.org/abs/2511.15706",
+      "snippet": "Dense feature matching aims to estimate all correspondences between two images of a 3D scene and has recently been established as the gold standard due to its high accuracy and robustness. However, existing dense matchers still fail or perform poorly for many hard real-world scenarios, and high-precision models are often slow, limiting their applicability. In this paper, we attack these ..."
+    }
+  ]
+}

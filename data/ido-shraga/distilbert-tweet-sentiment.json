@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "Ido-shraga/distilbert-tweet-sentiment",
+  "slug": "ido-shraga-distilbert-tweet-sentiment",
+  "author": "Ido-shraga",
+  "url": "https://huggingface.co/Ido-shraga/distilbert-tweet-sentiment",
+  "created_at": "2026-08-27T22:35:29.000Z",
+  "updated_at": "2026-08-27T22:51:01.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "distilbert",
+    "text-classification",
+    "trackio",
+    "trackio:https://huggingface.co/spaces/Ido-shraga/tweet-sentiment-comparison-static-b9593e",
+    "generated_from_trainer",
+    "ml-intern",
+    "base_model:distilbert/distilbert-base-uncased",
+    "base_model:finetune:distilbert/distilbert-base-uncased",
+    "license:apache-2.0",
+    "text-embeddings-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 66955779,
+  "parameters_human": "67.0M",
+  "storage_bytes": 1339183549,
+  "storage_human": "1.3 GB",
+  "base_model": "distilbert/distilbert-base-uncased",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Ido-shraga/distilbert-base-tweeteval-sentiment · Hugging Face",
+      "url": "https://huggingface.co/Ido-shraga/distilbert-base-tweeteval-sentiment",
+      "snippet": "Ido-shraga / distilbert-base-tweeteval-sentiment like 0 Text Classification Safetensors cardiffnlp/tweet_eval English distilbert sentiment-analysis twitter social-media License:apache-2.0 Model card FilesFiles and versions xet Community Copy to bucket new distilbert-base → TweetEval Sentiment Test-set results (TweetEval sentiment, 12,284 tweets)"
+    },
+    {
+      "title": "Models - Hugging Face",
+      "url": "https://huggingface.co/models?search=sentiment-analysis",
+      "snippet": "Explore machine learning models. Anthos23/sentiment-roberta-large-english-finetuned-sentiment-analysis"
+    },
+    {
+      "title": "nirholas/cryptocurrency.cv: Free crypto news API - GitHub",
+      "url": "https://github.com/nirholas/cryptocurrency.cv",
+      "snippet": "🐦 X/Twitter Sentiment (No API Key!) Automated X/Twitter sentiment analysis without paid API: Features: No API key required - Uses Nitter RSS feeds Automated cron - Updates every 30 minutes Custom lists - Track your own influencers AI analysis - Groq-powered sentiment scoring Webhook alerts - Discord/Slack/Telegram notifications"
+    },
+    {
+      "title": "distilbert-model · GitHub Topics · GitHub",
+      "url": "https://github.com/topics/distilbert-model",
+      "snippet": "A reinforcement learning-based system designed to detect and prevent jailbreak attempts in AI models, ensuring safe and controlled model behavior under adversarial conditions."
+    },
+    {
+      "title": "Context-based sentiment analysis using a BiGRU DistilBERT fusion model ...",
+      "url": "https://www.nature.com/articles/s41598-025-22929-9",
+      "snippet": "Lastly, the proposed sentiment analysis model outperformed other deep learning models, including DistilBERT, as shown in Table 7, highlighting its effectiveness for analyzing COVID-19-related tweets."
+    }
+  ]
+}

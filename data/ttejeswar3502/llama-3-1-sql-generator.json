@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "Ttejeswar3502/Llama-3-1-SQL-Generator",
+  "slug": "ttejeswar3502-llama-3-1-sql-generator",
+  "author": "Ttejeswar3502",
+  "url": "https://huggingface.co/Ttejeswar3502/Llama-3-1-SQL-Generator",
+  "created_at": "2026-08-27T19:31:47.000Z",
+  "updated_at": "2026-08-27T19:32:49.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "llama",
+    "llama.cpp",
+    "unsloth",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 8030261312,
+  "parameters_human": "8.03B",
+  "storage_bytes": 4920734368,
+  "storage_human": "4.9 GB",
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "AI-Powered SQL Query Generator - GitHub",
+      "url": "https://github.com/mansisingh08/AI-Powered-SQL-Query-Generator",
+      "snippet": "This project converts natural language questions into SQL queries using the Llama 3 model through Ollama. The generated SQL is executed on a MySQL database, and the results are displayed in the terminal. The project demonstrates how a Large Language Model (LLM) can be used to understand user queries ..."
+    },
+    {
+      "title": "Introducing Meta Llama 3: The most capable openly available LLM to date",
+      "url": "https://ai.meta.com/blog/meta-llama-3/",
+      "snippet": "Today, we&#x27;re introducing Meta Llama 3, the next generation of our state-of-the-art open source large language model. In the coming months, we expect to share new capabilities, additional model sizes, and more."
+    },
+    {
+      "title": "Open-source AI Models for Any Application | Llama 3",
+      "url": "https://developer.meta.com/ai/models/llama-3/",
+      "snippet": "Discover Llama 3&#x27;s open-source AI models you can fine-tune, distill and deploy anywhere. Build smarter applications with flexible AI solutions."
+    },
+    {
+      "title": "Generate SQL Queries in Seconds for Free - SQLAI.ai",
+      "url": "https://www.sqlai.ai/",
+      "snippet": "Generate, optimize, validate, and explain SQL queries and much more with cutting-edge AI for free."
+    },
+    {
+      "title": "GitHub - tusharxtech/sql-gen-ai: This project is an AI-powered Text-to ...",
+      "url": "https://github.com/tusharxtech/sql-gen-ai",
+      "snippet": "This project is an AI-powered Text-to-SQL Query Generator built using Streamlit, LangChain, and Ollama (LLaMA 3.2). It allows users to input natural language queries and automatically converts them..."
+    }
+  ]
+}

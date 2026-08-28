@@ -1,0 +1,78 @@
+{
+  "schema": 1,
+  "id": "brandonmusic/GLM-5.3-Flash-tr3-4bpw",
+  "slug": "brandonmusic-glm-5-3-flash-tr3-4bpw",
+  "author": "brandonmusic",
+  "url": "https://huggingface.co/brandonmusic/GLM-5.3-Flash-tr3-4bpw",
+  "created_at": "2026-08-27T03:33:53.000Z",
+  "updated_at": "2026-08-28T00:20:43.000Z",
+  "license": "shapleymcg-1.0",
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "glm5_next",
+    "image-text-to-text",
+    "glm",
+    "exl3",
+    "tr3",
+    "vllm",
+    "sm120",
+    "nvfp4",
+    "fp8",
+    "text-generation",
+    "conversational",
+    "base_model:zai-org/GLM-5.3-Flash-BF16",
+    "base_model:quantized:zai-org/GLM-5.3-Flash-BF16",
+    "license:other",
+    "endpoints_compatible",
+    "4-bit",
+    "region:us"
+  ],
+  "likes": 11,
+  "downloads_30d": 0,
+  "trending_score": 11,
+  "parameters": 87811157118,
+  "parameters_human": "87.81B",
+  "storage_bytes": 175715659341,
+  "storage_human": "175.7 GB",
+  "base_model": "zai-org/GLM-5.3-Flash-BF16",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "brandonmusic/GLM-5.3-Flash-EXL3-4bpw · Hugging Face",
+      "url": "https://huggingface.co/brandonmusic/GLM-5.3-Flash-EXL3-4bpw",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GLM-5.3-Flash: How to Run Locally - unsloth.ai",
+      "url": "https://unsloth.ai/docs/models/glm-5.3",
+      "snippet": "Search and download GLM-5.3-Flash Go to Unsloth Chat or Model hub and search for GLM-5.3-Flash in the search bar and download your desired model and quant."
+    },
+    {
+      "title": "GLM-5.2-EXL3-TR3v4-3.5bpw-MTP78 - Hugging Face",
+      "url": "https://huggingface.co/brandonmusic/GLM-5.2-EXL3-TR3v4-3.5bpw-MTP78",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "glm-5.3-flash-exl3-4bpw/README.md at main - GitHub",
+      "url": "https://github.com/brandonmmusic-max/glm-5.3-flash-exl3-4bpw/blob/main/README.md",
+      "snippet": "The HF model bundles the same runtime package. It requires Transformers 5.16.1 and ExLlamaV3 commit c5d9c657966ffeeaa9353f0cc899f18629da4a13 with its CUDA extension compiled."
+    },
+    {
+      "title": "brandonmmusic-max/glm52-tr3-hybrid - GitHub",
+      "url": "https://github.com/brandonmmusic-max/glm52-tr3-hybrid",
+      "snippet": "Reproducible Docker image, benchmarks, KLD, and full engineering record for GLM-5.2 NVFP4/TR3 Hybrid - brandonmmusic-max/glm52-tr3-hybrid"
+    }
+  ]
+}

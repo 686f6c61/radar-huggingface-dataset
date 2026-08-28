@@ -5,7 +5,7 @@
   "author": "fpadovani",
   "url": "https://huggingface.co/fpadovani/ppt-art-lang-newlexicon-zipf-soft0.99-eng-baseline-100mb_seed3407",
   "created_at": "2026-08-27T11:18:30.000Z",
-  "updated_at": "2026-08-27T11:24:51.000Z",
+  "updated_at": "2026-08-27T11:33:21.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": "text-generation",
@@ -30,8 +30,8 @@
   "trending_score": 0,
   "parameters": 86508288,
   "parameters_human": "86.5M",
-  "storage_bytes": 519143588,
-  "storage_human": "519 MB",
+  "storage_bytes": 1384372888,
+  "storage_human": "1.4 GB",
   "base_model": "goldfish-models/eng_latn_100mb",
   "formats": [
     "safetensors"

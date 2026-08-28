@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "Oscilla/Qwen3-8B-mlx-8Bit",
+  "slug": "oscilla-qwen3-8b-mlx-8bit",
+  "author": "Oscilla",
+  "url": "https://huggingface.co/Oscilla/Qwen3-8B-mlx-8Bit",
+  "created_at": "2026-08-27T20:40:02.000Z",
+  "updated_at": "2026-08-27T20:40:17.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3",
+    "text-generation",
+    "mlx",
+    "conversational",
+    "base_model:Qwen/Qwen3-8B",
+    "base_model:quantized:Qwen/Qwen3-8B",
+    "license:apache-2.0",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "8-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 2303865856,
+  "parameters_human": "2.30B",
+  "storage_bytes": 8714471646,
+  "storage_human": "8.7 GB",
+  "base_model": "Qwen/Qwen3-8B",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Qwen/Qwen3-8B-MLX-8bit · Hugging Face",
+      "url": "https://huggingface.co/Qwen/Qwen3-8B-MLX-8bit?library=mlx",
+      "snippet": "Qwen / Qwen3-8B-MLX-8bit like 8 Follow Qwen 97.5k Text Generation MLX Safetensors qwen3 conversational 8-bit precision arxiv:2309.00071 arxiv:2505.09388 License:apache-2.0 Model card FilesFiles and versions xet Community 1 Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "Qwen/Qwen3-8B · Hugging Face",
+      "url": "https://huggingface.co/Qwen/Qwen3-8B",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Qwen3 8B 8bit by mlx-community - LLM Explorer",
+      "url": "https://llm-explorer.com/model/mlx-community%2FQwen3-8B-8bit,sHL5T6LpdVj5W1OE9vo00",
+      "snippet": "Qwen3 8B 8bit is an open-source 8b LLM by mlx-community. VRAM 8.7GB, 40K context. Compare benchmarks, capabilities, and deployment details on LLM Explorer."
+    },
+    {
+      "title": "qwen/qwen3-8b • LM Studio",
+      "url": "https://lmstudio.ai/models/qwen/qwen3-8b",
+      "snippet": "The 8B parameter version of the Qwen3 model family."
+    },
+    {
+      "title": "Qwen3.8-27B Uncensored MLX: OrcaRouter Build Explained | explainx.ai ...",
+      "url": "https://www.explainx.ai/blog/orcarouter-qwen3-8-27b-uncensored-mlx-august-2026",
+      "snippet": "OrcaRouter&#x27;s abliterated Qwen3.8-27B, in MLX for Apple Silicon plus GGUF and FP8 — what abliteration did and the real hardware/safety tradeoffs."
+    }
+  ]
+}

@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "aimeri/spoomplesmaxx-thrasher-24B-GGUF",
+  "slug": "aimeri-spoomplesmaxx-thrasher-24b-gguf",
+  "author": "aimeri",
+  "url": "https://huggingface.co/aimeri/spoomplesmaxx-thrasher-24B-GGUF",
+  "created_at": "2026-08-28T00:16:29.000Z",
+  "updated_at": "2026-08-28T00:21:46.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "gguf",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "gguf",
+    "roleplay",
+    "creative-writing",
+    "chatml",
+    "text-generation",
+    "en",
+    "base_model:aimeri/spoomplesmaxx-thrasher-24B",
+    "base_model:quantized:aimeri/spoomplesmaxx-thrasher-24B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 23572403200,
+  "parameters_human": "23.57B",
+  "storage_bytes": 42571970624,
+  "storage_human": "42.6 GB",
+  "base_model": "aimeri/spoomplesmaxx-thrasher-24B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - aimerib/spoomplesmaxx",
+      "url": "https://github.com/aimerib/spoomplesmaxx",
+      "snippet": "These datasets are designed to train a Roleplay (RP), Creative Writing, and \"Smart\" Assistant model Spoomplesmaxx. The goal of combining these specific sets is to create a model that is narratively creative and capable of embodying characters, but also logically sound and capable of following complex instructions."
+    },
+    {
+      "title": "aimeri/spoomplesmaxx-mini-14B · Hugging Face",
+      "url": "https://huggingface.co/aimeri/spoomplesmaxx-mini-14B",
+      "snippet": "SpoomplesMaxx is a generalist model with primary strengths in creative writing and roleplay, plus light competence at instruction following and reasoning. The Mini brings the v2.1 data and training recipe to a 14B you can run on a single 24GB card."
+    },
+    {
+      "title": "Models - Hugging Face",
+      "url": "https://huggingface.co/models?sort=created",
+      "snippet": "Explore machine learning models."
+    },
+    {
+      "title": "Google Gemini",
+      "url": "https://gemini.google.com/",
+      "snippet": "Get assistance with writing, planning, learning, and more from Google AI."
+    },
+    {
+      "title": "GGUF Dossier — Model Intelligence Files",
+      "url": "https://ggufexplore.app/",
+      "snippet": "GGUF Dossier Model Intelligence Analysis System You have a .gguf model file and you want to know what&#x27;s actually inside it. That&#x27;s exactly what this is for. Think of it as a filing system for quantized AI models — full intelligence report, no PhD required."
+    }
+  ]
+}

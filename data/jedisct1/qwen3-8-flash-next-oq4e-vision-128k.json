@@ -5,7 +5,7 @@
   "author": "jedisct1",
   "url": "https://huggingface.co/jedisct1/Qwen3.8-Flash-Next-oQ4e-Vision-128k",
   "created_at": "2026-08-27T05:57:32.000Z",
-  "updated_at": "2026-08-27T07:07:26.000Z",
+  "updated_at": "2026-08-27T08:27:27.000Z",
   "license": "qwen-community-1.0",
   "license_family": "unknown",
   "pipeline_tag": "image-text-to-text",
@@ -35,7 +35,7 @@
     "license:other",
     "region:us"
   ],
-  "likes": 0,
+  "likes": 2,
   "downloads_30d": 0,
   "trending_score": 0,
   "parameters": 26472069411,

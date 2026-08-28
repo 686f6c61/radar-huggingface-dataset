@@ -1,0 +1,80 @@
+{
+  "schema": 1,
+  "id": "mradermacher/Technomancer-27b-BlackICE-AEON-i1-GGUF",
+  "slug": "mradermacher-technomancer-27b-blackice-aeon-i1-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/Technomancer-27b-BlackICE-AEON-i1-GGUF",
+  "created_at": "2026-08-27T19:39:54.000Z",
+  "updated_at": "2026-08-27T21:18:21.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "qwen",
+    "qwen3.5",
+    "ttrpg",
+    "roleplay",
+    "dnd",
+    "pathfinder",
+    "mtp",
+    "speculative-decoding",
+    "196k-context",
+    "lora",
+    "en",
+    "base_model:ChonkE/Technomancer-27b-BlackICE-AEON",
+    "base_model:adapter:ChonkE/Technomancer-27b-BlackICE-AEON",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us",
+    "imatrix"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 27320697856,
+  "parameters_human": "27.32B",
+  "storage_bytes": 39471840352,
+  "storage_human": "39.5 GB",
+  "base_model": "ChonkE/Technomancer-27b-BlackICE-AEON",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "mradermacher/Technomancer-27b-BlackICE-AEON-GGUF · Hugging Face",
+      "url": "https://huggingface.co/mradermacher/Technomancer-27b-BlackICE-AEON-GGUF",
+      "snippet": "Instructions to use mradermacher/Technomancer-27b-BlackICE-AEON-GGUF with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "team mradermacher - Hugging Face",
+      "url": "https://huggingface.co/mradermacher",
+      "snippet": "Feel free to suggest models to quant e.g. at https://huggingface.co/mradermacher/model_requests"
+    },
+    {
+      "title": "Mradermacher - Find Top AI Models on Hugging Face",
+      "url": "https://www.aimodels.fyi/creators/huggingFace/mradermacher",
+      "snippet": "Looking for Mradermacher&#x27;s top AI models? Browse their full Hugging Face collection of 26 models. Explore AI models and contributions by Mradermacher on Huggingface."
+    },
+    {
+      "title": "Omenator AI — Universal 27B Blackwell NVFP4 Optimization Engine",
+      "url": "https://github.com/va3jfl/Omenator-AI",
+      "snippet": "Omenator AI takes a full ~27B-parameter model straight from a Hugging Face repository and autonomously engineers the highest-quality practical representation that runs on a 16 GB NVIDIA Blackwell GPU — targeting ~3.5 effective bits per parameter while keeping every parameter."
+    },
+    {
+      "title": "Stable Diffusion Models Download & Guide - The Right GPT",
+      "url": "https://therightgpt.com/stable-diffusion-guides/models/",
+      "snippet": "Stable Diffusion Models Guide 2026: Complete Download & Installation Everything you need to know about Stable Diffusion models: safe downloads, realistic checkpoints, architecture details, and local requirements for SD 1.5, SDXL, Flux.1, and custom models."
+    }
+  ]
+}

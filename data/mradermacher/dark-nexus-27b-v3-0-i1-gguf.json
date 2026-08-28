@@ -5,7 +5,7 @@
   "author": "mradermacher",
   "url": "https://huggingface.co/mradermacher/Dark-Nexus-27B-v3.0-i1-GGUF",
   "created_at": "2026-08-25T16:57:20.000Z",
-  "updated_at": "2026-08-25T17:35:49.000Z",
+  "updated_at": "2026-08-27T12:33:12.000Z",
   "license": "other",
   "license_family": "unknown",
   "pipeline_tag": null,
@@ -37,8 +37,8 @@
   "trending_score": 0,
   "parameters": 27320697856,
   "parameters_human": "27.32B",
-  "storage_bytes": 39471864352,
-  "storage_human": "39.5 GB",
+  "storage_bytes": 218553864128,
+  "storage_human": "218.6 GB",
   "base_model": "ReadyArt/Dark-Nexus-27B-v3.0",
   "formats": [
     "gguf"

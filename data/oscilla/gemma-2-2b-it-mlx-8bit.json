@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "Oscilla/gemma-2-2b-it-mlx-8Bit",
+  "slug": "oscilla-gemma-2-2b-it-mlx-8bit",
+  "author": "Oscilla",
+  "url": "https://huggingface.co/Oscilla/gemma-2-2b-it-mlx-8Bit",
+  "created_at": "2026-08-27T20:19:15.000Z",
+  "updated_at": "2026-08-27T20:19:24.000Z",
+  "license": "gemma",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gemma2",
+    "text-generation",
+    "conversational",
+    "mlx",
+    "mlx-my-repo",
+    "base_model:google/gemma-2-2b-it",
+    "base_model:quantized:google/gemma-2-2b-it",
+    "license:gemma",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "8-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 735457536,
+  "parameters_human": "735.5M",
+  "storage_bytes": 2812402419,
+  "storage_human": "2.8 GB",
+  "base_model": "google/gemma-2-2b-it",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Oscilla/gemma-2-2b-it-mlx-4Bit · Hugging Face",
+      "url": "https://huggingface.co/Oscilla/gemma-2-2b-it-mlx-4Bit",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "google/gemma-2-2b · Hugging Face",
+      "url": "https://huggingface.co/google/gemma-2-2b",
+      "snippet": "Running the model through a CLI The local-gemma repository contains a lightweight wrapper around Transformers for running Gemma 2 through a command line interface, or CLI. Follow the installation instructions for getting started, then launch the CLI through the following command: local-gemma --model \"google/gemma-2-2b\" --prompt \"What is the capital of Mexico?\" Quantized Versions through ..."
+    },
+    {
+      "title": "GitHub - inferless/gemma-2b-it: 2B instruct-tuned model for delivering ...",
+      "url": "https://github.com/inferless/Gemma-2B-it",
+      "snippet": "Gemma-2B-it Gemma, a family of lightweight, state-of-the-art open models by Google, inherits the same advanced research and technology as the Gemini models. These text-to-text, decoder-only large language models come in English variants, offering open weights, pre-trained versions, and fine-tuned options."
+    },
+    {
+      "title": "Gemma 2 2B It 8bit by mlx-community - llm-explorer.com",
+      "url": "https://llm-explorer.com/model/mlx-community%2Fgemma-2-2b-it-8bit,7K7L3pe0h7GRhP83138QuK",
+      "snippet": "Details and insights about Gemma 2 2B It 8bit LLM by mlx-community: benchmarks, internals, and performance insights. Features: 2b LLM, VRAM: 2.8GB, Context: 8K, License: gemma, Quantized, LLM Explorer Score: 0.17. Find out how Gemma 2 2B It 8bit can be utilized in your business workflows, problem-solving, and tackling specific tasks."
+    },
+    {
+      "title": "gemma-2-2b-it-8bit huggingface.co api & mlx-community gemma-2-2b-it ...",
+      "url": "https://www.toolify.ai/ai-model/mlx-community-gemma-2-2b-it-8bit",
+      "snippet": "gemma-2-2b-it-8bit is an open source model from GitHub that offers a free installation service, and any user can find gemma-2-2b-it-8bit on GitHub to install. At the same time, huggingface.co provides the effect of gemma-2-2b-it-8bit install, users can directly use gemma-2-2b-it-8bit installed effect in huggingface.co for debugging and trial."
+    }
+  ]
+}

@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "hcmnguyen/data-efficient-learning-review",
+  "slug": "hcmnguyen-data-efficient-learning-review",
+  "author": "hcmnguyen",
+  "url": "https://huggingface.co/hcmnguyen/data-efficient-learning-review",
+  "created_at": "2026-08-27T20:22:55.000Z",
+  "updated_at": "2026-08-27T20:23:04.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "transformer",
+    "research-notes",
+    "data-efficient-learning",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 16576,
+  "parameters_human": "16576",
+  "storage_bytes": 66784,
+  "storage_human": "66784 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "LLM Leaderboard & AI Model Benchmarks — August 2026",
+      "url": "https://benchlm.ai/",
+      "snippet": "Compare 403 AI models across 406 benchmarks, with 226 ranked scores, source evidence, API pricing, context windows, runtime, and head-to-head pages."
+    },
+    {
+      "title": "New AI Model Releases (Last 24 Hours) — Live Tracker | BenchLM",
+      "url": "https://benchlm.ai/model-updates",
+      "snippet": "Every new AI model release, tracked live: last 24 hours, this week, and 159 confirmed launches from 46 providers — each with source evidence and benchmarks."
+    },
+    {
+      "title": "deepseek-v4-pro-0813 Model by Deepseek-ai | NVIDIA NIM",
+      "url": "https://build.nvidia.com/deepseek-ai/deepseek-v4-pro-0813/modelcard",
+      "snippet": "This model has been developed and built to a third-party&#x27;s requirements for this application and use case; see link to Non-NVIDIA DeepSeek AI DeepSeek-V4-Pro-0813 Model Card."
+    },
+    {
+      "title": "Anthropic admits its most powerful AI model hacked into three ...",
+      "url": "https://www.euronews.com/next/2026/07/31/anthropic-admits-its-most-powerful-ai-model-hacked-into-three-organisations-systems-during",
+      "snippet": "The announcement comes just days after rivals OpenAI revealed that their popular ChatGPT platform went rogue during its testing phase of its most powerful AI model, where it too infiltrated other ..."
+    },
+    {
+      "title": "‪Khoi Nguyen‬ - ‪Google Scholar‬",
+      "url": "https://scholar.google.com/citations?user=Eul6W5kAAAAJ&hl=en",
+      "snippet": "‪Research Scientist, Qualcomm AI Research‬ - ‪‪Cited by 1,769‬‬ - ‪Computer Vision‬ - ‪Machine Learning‬"
+    }
+  ]
+}

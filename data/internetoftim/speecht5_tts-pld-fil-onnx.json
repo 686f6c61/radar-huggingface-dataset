@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "internetoftim/speecht5_tts-pld-fil-ONNX",
+  "slug": "internetoftim-speecht5_tts-pld-fil-onnx",
+  "author": "internetoftim",
+  "url": "https://huggingface.co/internetoftim/speecht5_tts-pld-fil-ONNX",
+  "created_at": "2026-08-27T22:41:00.000Z",
+  "updated_at": "2026-08-27T22:41:30.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-speech",
+  "library": "transformers.js",
+  "languages": [],
+  "tags": [
+    "transformers.js",
+    "onnx",
+    "speecht5",
+    "text-to-audio",
+    "filipino",
+    "text-to-speech",
+    "base_model:sapinsapin/speecht5_tts-pld-fil",
+    "base_model:quantized:sapinsapin/speecht5_tts-pld-fil",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 819698025,
+  "storage_human": "820 MB",
+  "base_model": "sapinsapin/speecht5_tts-pld-fil",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - microsoft/SpeechT5: Unified-Modal Speech-Text Pre-Training for ...",
+      "url": "https://github.com/microsoft/SpeechT5",
+      "snippet": "Leveraging large-scale unlabeled speech and text data, we pre-train SpeechT5 to learn a unified-modal representation, hoping to improve the modeling capability for both speech and text."
+    },
+    {
+      "title": "microsoft/speecht5_tts · Hugging Face",
+      "url": "https://huggingface.co/microsoft/speecht5_tts",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "SpeechT5/SpeechT5/README.md at main · microsoft/SpeechT5",
+      "url": "https://github.com/microsoft/SpeechT5/blob/main/SpeechT5/README.md",
+      "snippet": "TTS The manifest and pre-trained vocoder can be found in huggingface, which may be helpful to reproduce the results of SpeechT5 TTS model. We also provide re-implementation of TTS fine-tuned model speecht5_tts.pt, but with a smaller batch size or max updates, which can be helpful."
+    },
+    {
+      "title": "Xenova/speecht5_tts · Hugging Face",
+      "url": "https://huggingface.co/Xenova/speecht5_tts",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "SpeechT5: Unified-Modal Encoder-Decoder Pre-Training for Spoken ...",
+      "url": "https://arxiv.org/abs/2110.07205",
+      "snippet": "Motivated by the success of T5 (Text-To-Text Transfer Transformer) in pre-trained natural language processing models, we propose a unified-modal SpeechT5 framework that explores the encoder-decoder pre-training for self-supervised speech/text representation learning. The SpeechT5 framework consists of a shared encoder-decoder network and six modal-specific (speech/text) pre/post-nets. After ..."
+    }
+  ]
+}

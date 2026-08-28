@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "g-assismoraes/DeltaP2S-Llama2-13B-SameFormula-S13",
+  "slug": "g-assismoraes-deltap2s-llama2-13b-sameformula-s13",
+  "author": "g-assismoraes",
+  "url": "https://huggingface.co/g-assismoraes/DeltaP2S-Llama2-13B-SameFormula-S13",
+  "created_at": "2026-08-27T23:23:19.000Z",
+  "updated_at": "2026-08-27T23:24:23.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "llama",
+    "text-generation",
+    "delta-p2s",
+    "pen2sword",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 13015864320,
+  "parameters_human": "13.02B",
+  "storage_bytes": 26032270275,
+  "storage_human": "26.0 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "g-assismoraes/DeltaP2S-Llama2-13B-P2S-CodeLlama7B · Hugging Face",
+      "url": "https://huggingface.co/g-assismoraes/DeltaP2S-Llama2-13B-P2S-CodeLlama7B",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "g-assismoraes/DeltaP2S-Llama2-13B-DeltaP2S-CodeLlama7B at main",
+      "url": "https://huggingface.co/g-assismoraes/DeltaP2S-Llama2-13B-DeltaP2S-CodeLlama7B/tree/main",
+      "snippet": "Instructions to use g-assismoraes/DeltaP2S-Llama2-13B-DeltaP2S-CodeLlama7B with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "DeltaP2S-Llama2-13B-P2S-CodeLlama7B-SameFormula",
+      "url": "https://friendli.ai/models/g-assismoraes/DeltaP2S-Llama2-13B-P2S-CodeLlama7B-SameFormula",
+      "snippet": "Deploy DeltaP2S-Llama2-13B-P2S-CodeLlama7B-SameFormula with low-latency inference on FriendliAI. Get scalable API serving, high throughput, and production-grade reliability for AI agents."
+    },
+    {
+      "title": "DeltaP2S-Llama2-13B-DeltaP2S-CodeLlama7B-SameFormula",
+      "url": "https://friendli.ai/models/g-assismoraes/DeltaP2S-Llama2-13B-DeltaP2S-CodeLlama7B-SameFormula",
+      "snippet": "Deploy DeltaP2S-Llama2-13B-DeltaP2S-CodeLlama7B-SameFormula with low-latency inference on FriendliAI. Get scalable API serving, high throughput, and production-grade reliability for AI agents."
+    },
+    {
+      "title": "GitHub - CJ-xchina/llama2-13b",
+      "url": "https://github.com/CJ-xchina/llama2-13b",
+      "snippet": "Our model and weights are licensed for both researchers and commercial entities, upholding the principles of openness. Our mission is to empower individuals, and industry through this opportunity, while fostering an environment of discovery and ethical AI advancements."
+    }
+  ]
+}

@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "DruidTheGetafix/apiary-7B-A1B",
+  "slug": "druidthegetafix-apiary-7b-a1b",
+  "author": "DruidTheGetafix",
+  "url": "https://huggingface.co/DruidTheGetafix/apiary-7B-A1B",
+  "created_at": "2026-08-28T00:15:19.000Z",
+  "updated_at": "2026-08-28T00:15:56.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_moe",
+    "text-generation",
+    "moe",
+    "pretraining",
+    "from-scratch",
+    "en",
+    "dataset:HuggingFaceFW/fineweb-edu",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 6847272960,
+  "parameters_human": "6.85B",
+  "storage_bytes": 13694943672,
+  "storage_human": "13.7 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ByteDance Seed&#x27;s BAGEL: The All-in-One Multimodal AI Model",
+      "url": "https://replicate.com/bytedance/bagel/readme",
+      "snippet": "🥯ByteDance Seed&#x27;s Bagel Unified multimodal AI that generates images, edits images, and understands images in one 7B parameter model🥯"
+    },
+    {
+      "title": "bytedance/bagel | Get started - replicate.com",
+      "url": "https://replicate.com/bytedance/bagel/api",
+      "snippet": "🥯ByteDance Seed&#x27;s Bagel Unified multimodal AI that generates images, edits images, and understands images in one 7B parameter model🥯"
+    },
+    {
+      "title": "AI Model Parameters Explained: 2B vs 7B vs 40B and Beyond",
+      "url": "https://travis.media/blog/ai-model-parameters-explained/",
+      "snippet": "What does it mean when an AI model has 4B, 7B, or 70B parameters, or a name like 235B-A22B? Learn how parameter count affects performance, hardware needs, and what developers and homelabbers should know before downloading and running these models."
+    },
+    {
+      "title": "LLM Model Parameters 2026: 7B-70B - local-ai-zone.github.io",
+      "url": "https://local-ai-zone.github.io/guides/what-is-ai-model-3b-7b-30b-parameters-guide-2025.html",
+      "snippet": "Master LLM parameter selection with our comprehensive 2026 guide. Learn how 7B, 13B, 30B, and 70B parameters impact AI model performance, hardware requirements, and capabilities for optimal deployment decisions."
+    },
+    {
+      "title": "Stable Diffusion AI - Free Text to Image and AI Image Editing Online ...",
+      "url": "https://stabledifffusion.com/",
+      "snippet": "What is Stable Diffusion AI? Stable Diffusion is a powerful AI model for generating and refining visuals. Instead of relying on fixed templates, it understands natural language and visual context. Describe a scene, adjust an artistic style, or modify specific elements within an image, and the model generates results consistent with your creative intent."
+    }
+  ]
+}

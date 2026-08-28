@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "symrizals/qwen2.5-3b-legal-id-sft",
+  "slug": "symrizals-qwen2-5-3b-legal-id-sft",
+  "author": "symrizals",
+  "url": "https://huggingface.co/symrizals/qwen2.5-3b-legal-id-sft",
+  "created_at": "2026-08-27T20:33:59.000Z",
+  "updated_at": "2026-08-27T20:36:08.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen2",
+    "text-generation",
+    "text-generation-inference",
+    "unsloth",
+    "conversational",
+    "en",
+    "base_model:unsloth/Qwen2.5-3B-bnb-4bit",
+    "base_model:finetune:unsloth/Qwen2.5-3B-bnb-4bit",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 3085938688,
+  "parameters_human": "3.09B",
+  "storage_bytes": 6183349166,
+  "storage_human": "6.2 GB",
+  "base_model": "unsloth/Qwen2.5-3B-bnb-4bit",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ahmadfatikhulkhasan/qwen2.5-3b-legal-id-sft · Hugging Face",
+      "url": "https://huggingface.co/ahmadfatikhulkhasan/qwen2.5-3b-legal-id-sft",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "rifyaldo/qwen2.5-3b-legal-id-sft · Hugging Face",
+      "url": "https://huggingface.co/rifyaldo/qwen2.5-3b-legal-id-sft",
+      "snippet": "rifyaldo / qwen2.5-3b-legal-id-sft like 0 Text Generation Transformers Safetensors English qwen2 text-generation-inference unsloth conversational License:apache-2.0 Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "Qwen2.5 3B Legal Id Sft by alvian-metalit - llm-explorer.com",
+      "url": "https://llm-explorer.com/model/alvian-metalit%2Fqwen2.5-3b-legal-id-sft,5HzcnQxz90ghWjxdG16Ihm",
+      "snippet": "Qwen2.5 3B Legal Id Sft is an open-source 3b LLM by alvian-metalit. VRAM 6.2GB, 32K context. Compare benchmarks, capabilities, and deployment details on LLM Explorer."
+    },
+    {
+      "title": "Qwen2.5 3B Legal Id Sft by ahmadfatikhulkhasan",
+      "url": "https://llm-explorer.com/model/ahmadfatikhulkhasan%2Fqwen2.5-3b-legal-id-sft,6gtnqa7RJVFPNtt7U1jRIW",
+      "snippet": "Qwen2.5 3B Legal Id Sft is an open-source language model by ahmadfatikhulkhasan. Features: 3b LLM, VRAM: 6.2GB, Context: 32K, License: apache-2.0, Quantized, Instruction-Based, LLM Explorer Score: 0.3."
+    },
+    {
+      "title": "qwen2.5-3b-legal-id-sft API & Inference Endpoint | FriendliAI",
+      "url": "https://friendli.ai/models/ahmfras/qwen2.5-3b-legal-id-sft",
+      "snippet": "Run qwen2.5-3b-legal-id-sft with FriendliAI inference. This qwen2 model was trained 2x faster with Unsloth and Huggingface&#x27;s TRL library."
+    }
+  ]
+}

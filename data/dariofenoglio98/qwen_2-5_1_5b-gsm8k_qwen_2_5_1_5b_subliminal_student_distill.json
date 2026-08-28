@@ -5,7 +5,7 @@
   "author": "dariofenoglio98",
   "url": "https://huggingface.co/dariofenoglio98/qwen_2.5_1_5b-gsm8k_qwen_2_5_1_5b_subliminal_student_distill",
   "created_at": "2026-08-27T13:39:47.000Z",
-  "updated_at": "2026-08-27T13:39:57.000Z",
+  "updated_at": "2026-08-27T23:42:11.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": null,
@@ -32,8 +32,8 @@
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
-  "storage_bytes": 48403158,
-  "storage_human": "48 MB",
+  "storage_bytes": 122365302,
+  "storage_human": "122 MB",
   "base_model": "unsloth/Qwen2.5-1.5B-Instruct",
   "formats": [
     "safetensors"

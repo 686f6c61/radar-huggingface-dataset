@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "Urdatorn/sphragis-alm-olmo1b-sentence-hesiod",
+  "slug": "urdatorn-sphragis-alm-olmo1b-sentence-hesiod",
+  "author": "Urdatorn",
+  "url": "https://huggingface.co/Urdatorn/sphragis-alm-olmo1b-sentence-hesiod",
+  "created_at": "2026-08-27T23:10:44.000Z",
+  "updated_at": "2026-08-27T23:10:59.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "grc"
+  ],
+  "tags": [
+    "safetensors",
+    "olmo",
+    "ancient-greek",
+    "authorship-attribution",
+    "authorial-language-model",
+    "grc",
+    "base_model:allenai/OLMo-1B-hf",
+    "base_model:finetune:allenai/OLMo-1B-hf",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1176764416,
+  "parameters_human": "1.18B",
+  "storage_bytes": 2353541856,
+  "storage_human": "2.4 GB",
+  "base_model": "allenai/OLMo-1B-hf",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Urdatorn/sphragis-alm-olmo3-7b-plato · Hugging Face",
+      "url": "https://huggingface.co/Urdatorn/sphragis-alm-olmo3-7b-plato",
+      "snippet": "Each model is a full further-pretraining of allenai/Olmo-3-1025-7B (revision a81bae42db3975be1671e27b9c9a56da1a9f980f) on one author&#x27;s Sphragis training sentences only; a sentence is attributed to whichever of the seventeen models finds it least surprising."
+    },
+    {
+      "title": "Urdatorn (Albin Thörn Cleland) - Hugging Face",
+      "url": "https://huggingface.co/Urdatorn/models",
+      "snippet": "Machine learning for Ancient Greek. Particular research topics include prosody, metre and author attribution."
+    },
+    {
+      "title": "GitHub - sphragis-oss/sphragis: EU AI Act compliance gateway for Claude ...",
+      "url": "https://github.com/sphragis-oss/sphragis",
+      "snippet": "The EU AI Act and GDPR pull you two ways at once: keep personal data out of third-party model providers, and be able to prove what you sent and when. The usual \"fix\" is a third-party SaaS scrubber, which just hands your data to another processor. Sphragis inverts that. Everything happens inside your own trust boundary: Redaction is local. Emails, cards, IBANs, secrets, keys and more are ..."
+    },
+    {
+      "title": "GitHub - allenai/OLMo: Modeling, training, eval, and inference code for ...",
+      "url": "https://github.com/allenai/OLMo",
+      "snippet": "OLMo is a repository for training and using AI2&#x27;s state-of-the-art open language models. It is designed by scientists, for scientists."
+    },
+    {
+      "title": "Olmo from Ai2 - AllenAI",
+      "url": "https://allenai.org/olmo",
+      "snippet": "A complete model flow To truly advance open AI development and research, the entire model flow - not just its endpoint - should be accessible and customizable. The model flow is the full lifecycle of an LM, starting with the data. Olmo 3 Model Flow Pretraining Midtraining Long context Olmo 3 Base Instruct SFT Instruct DPO Instruct RL Olmo 3 Instruct Thinking SFT Thinking DPO Thinking RL ..."
+    }
+  ]
+}

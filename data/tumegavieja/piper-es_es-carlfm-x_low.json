@@ -9,14 +9,14 @@
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": "text-to-speech",
-  "library": null,
+  "library": "piper",
   "languages": [
     "es"
   ],
   "tags": [
+    "piper",
     "onnx",
     "speaches",
-    "piper",
     "text-to-speech",
     "es",
     "region:us"

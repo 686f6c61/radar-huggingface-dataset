@@ -23,12 +23,12 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 0,
+  "downloads_30d": 1,
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
-  "storage_bytes": 28448937470,
-  "storage_human": "28.4 GB",
+  "storage_bytes": 27740725022,
+  "storage_human": "27.7 GB",
   "base_model": "black-forest-labs/FLUX.1-dev",
   "formats": [
     "diffusers"

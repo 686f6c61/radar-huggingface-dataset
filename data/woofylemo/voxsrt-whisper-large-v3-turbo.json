@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "WoofyLemo/VoxSRT-whisper-large-v3-turbo",
+  "slug": "woofylemo-voxsrt-whisper-large-v3-turbo",
+  "author": "WoofyLemo",
+  "url": "https://huggingface.co/WoofyLemo/VoxSRT-whisper-large-v3-turbo",
+  "created_at": "2026-08-27T23:51:24.000Z",
+  "updated_at": "2026-08-28T00:12:57.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "automatic-speech-recognition",
+  "library": "faster-whisper",
+  "languages": [],
+  "tags": [
+    "faster-whisper",
+    "whisper",
+    "ctranslate2",
+    "multilingual",
+    "automatic-speech-recognition",
+    "base_model:openai/whisper-large-v3-turbo",
+    "base_model:finetune:openai/whisper-large-v3-turbo",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1617884929,
+  "storage_human": "1.6 GB",
+  "base_model": "openai/whisper-large-v3-turbo",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "openai/whisper-large-v3-turbo · Hugging Face",
+      "url": "https://huggingface.co/openai/whisper-large-v3-turbo",
+      "snippet": "Additional Speed & Memory Improvements You can apply additional speed and memory improvements to Whisper to further reduce the inference speed and VRAM requirements. Chunked Long-Form Whisper has a receptive field of 30-seconds. To transcribe audios longer than this, one of two long-form algorithms are required: Sequential: uses a \"sliding window\" for buffered inference, transcribing 30-second ..."
+    },
+    {
+      "title": "openai/whisper-large-v3 · Hugging Face",
+      "url": "https://huggingface.co/openai/whisper-large-v3",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Whisper Large v3 Turbo - GroqDocs - console.groq.com",
+      "url": "https://console.groq.com/docs/model/whisper-large-v3-turbo",
+      "snippet": "Whisper Large v3 Turbo is OpenAI&#x27;s fastest speech recognition model optimized for speed while maintaining high accuracy. This model delivers exceptional performance with optimized speed, high accuracy across diverse audio conditions, and multilingual support. Built on OpenAI&#x27;s optimized transformer architecture, it features streamlined processing for enhanced speed while preserving the core ..."
+    },
+    {
+      "title": "Whisper-Large-V3-Turbo - Qualcomm AI Hub",
+      "url": "https://aihub.qualcomm.com/models/whisper_large_v3_turbo",
+      "snippet": "Whisper-Large-V3-Turbo Transformer‑based automatic speech recognition (ASR) model for multilingual transcription and translation available on HuggingFace. Whisper large‑v3‑turbo is a finetuned version of a pruned Whisper large‑v3. In other words, it&#x27;s the exact same model, except that the number of decoding layers have reduced from 32 to 4. As a result, the model is way faster, at the ..."
+    },
+    {
+      "title": "Whisper Large v3 (Streaming) - Together AI",
+      "url": "https://www.together.ai/models/whisper-large-v3-streaming",
+      "snippet": "About model Whisper Large v3 enables realtime voice agent applications with WebSocket streaming transcription on Together AI. Purpose-built infrastructure combines OpenAI&#x27;s 1.55B parameter model with intelligent voice activity detection and turn detection, delivering complete transcripts 1.4 seconds faster than alternatives."
+    }
+  ]
+}

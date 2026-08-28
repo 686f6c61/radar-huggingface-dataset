@@ -5,14 +5,16 @@
   "author": "Felisuco092",
   "url": "https://huggingface.co/Felisuco092/timeSeriesSalesKaggle",
   "created_at": "2026-08-26T13:56:57.000Z",
-  "updated_at": "2026-08-26T14:09:39.000Z",
+  "updated_at": "2026-08-27T15:43:21.000Z",
   "license": "mit",
   "license_family": "oss",
-  "pipeline_tag": null,
+  "pipeline_tag": "time-series-forecasting",
   "library": null,
   "languages": [],
   "tags": [
     "joblib",
+    "time-series-forecasting",
+    "es",
     "license:mit",
     "region:us"
   ],

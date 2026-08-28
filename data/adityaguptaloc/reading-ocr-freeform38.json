@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "adityaguptaloc/reading-ocr-freeform38",
+  "slug": "adityaguptaloc-reading-ocr-freeform38",
+  "author": "adityaguptaloc",
+  "url": "https://huggingface.co/adityaguptaloc/reading-ocr-freeform38",
+  "created_at": "2026-08-27T20:24:49.000Z",
+  "updated_at": "2026-08-27T20:24:57.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "transformer",
+    "research-notes",
+    "ocr-freeform",
+    "license:cc-by-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 24832,
+  "parameters_human": "24832",
+  "storage_bytes": 99808,
+  "storage_human": "99808 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Read model OCR data extraction - Document Intelligence - Foundry Tools",
+      "url": "https://learn.microsoft.com/en-us/azure/ai-services/document-intelligence/prebuilt/read?view=doc-intel-4.0.0",
+      "snippet": "Extract print and handwritten text from scanned and digital documents with Document Intelligence&#x27;s Read OCR model."
+    },
+    {
+      "title": "7 Best Open-Source OCR Models 2025: Benchmarks & Cost Comparison",
+      "url": "https://www.e2enetworks.com/blog/complete-guide-open-source-ocr-models-2025",
+      "snippet": "Introduction October 2025 saw a wave of open-source OCR model releases. Six major models dropped in a single month, and if you&#x27;re processing documents at scale, now&#x27;s a good time to look at what these open models can do for your workflows. Proprietary OCR software is expensive at scale. Azure Document Intelligence, AWS Textract, and Google Document AI charge $1.50 per 1,000 pages for basic ..."
+    },
+    {
+      "title": "8 Top Open-Source OCR Models Compared: A Complete Guide",
+      "url": "https://modal.com/blog/8-top-open-source-ocr-models-compared",
+      "snippet": "Compare the best open-source OCR models for document processing, including traditional ML and LLM-based approaches"
+    },
+    {
+      "title": "Supercharge your OCR Pipelines with Open Models - Hugging Face",
+      "url": "https://huggingface.co/blog/ocr-open-models",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Comparative Analysis of AI OCR Models for PDF to Structured Text",
+      "url": "https://intuitionlabs.ai/articles/ai-ocr-models-pdf-structured-text-comparison",
+      "snippet": "Compares leading AI OCR models and tools for PDF to structured text conversion in 2026. Examines open-source and commercial solutions including Mistral OCR 3, GPT-4o, and cloud services."
+    }
+  ]
+}

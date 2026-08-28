@@ -1,0 +1,81 @@
+{
+  "schema": 1,
+  "id": "npario/Dirk-Qwen3.8-27B-GGUF",
+  "slug": "npario-dirk-qwen3-8-27b-gguf",
+  "author": "npario",
+  "url": "https://huggingface.co/npario/Dirk-Qwen3.8-27B-GGUF",
+  "created_at": "2026-08-28T01:06:48.000Z",
+  "updated_at": "2026-08-28T01:06:48.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "gguf",
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "tags": [
+    "gguf",
+    "llama.cpp",
+    "qwen3_5",
+    "qwen3.8",
+    "mtp",
+    "speculative-decoding",
+    "token-efficient",
+    "agentic-coding",
+    "vision",
+    "image-text-to-text",
+    "en",
+    "zh",
+    "base_model:Qwen/Qwen3.8-27B",
+    "base_model:quantized:Qwen/Qwen3.8-27B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "imatrix",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 27320697856,
+  "parameters_human": "27.32B",
+  "storage_bytes": 543952684088,
+  "storage_human": "544.0 GB",
+  "base_model": "Qwen/Qwen3.8-27B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "peculiar-ragdoll/Dirk-Qwen3.8-27B-GGUF · Hugging Face",
+      "url": "https://huggingface.co/peculiar-ragdoll/Dirk-Qwen3.8-27B-GGUF",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "npario/Qwen3.8-27B-Ridge-GGUF · Hugging Face",
+      "url": "https://huggingface.co/npario/Qwen3.8-27B-Ridge-GGUF",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Dirk Qwen3.8 27b - GGUF Model - local-ai-zone.github.io",
+      "url": "https://local-ai-zone.github.io/models/dirk-qwen3-8-27b.html",
+      "snippet": "Download Dirk Qwen3.8 27b GGUF model. 15.9 GB, 14,618 downloads, 54 likes."
+    },
+    {
+      "title": "Qwen3.8-27B - GitHub",
+      "url": "https://github.com/AlibabaCloud-Official/Qwen3.8-27B",
+      "snippet": "Welcome to the repository for Qwen3.8-27B —the latest native multimodal dense open-weight model released by Alibaba&#x27;s Qwen team. Delivering top-tier performance for local hardware, Qwen3.8-27B excels at coding, agentic workflows, and office automation tasks."
+    },
+    {
+      "title": "Qwen/Qwen3.8-27B | vLLM Recipes",
+      "url": "https://recipes.vllm.ai/Qwen/Qwen3.8-27B",
+      "snippet": "The official Qwen/Qwen3.8-27B-FP8 checkpoint serves directly on a 950PR — no offline re-quantization and no --quantization ascend. vLLM Ascend reads quant_method: fp8 and weight_block_size straight from the checkpoint, expands the weight_scale_inv tiles at load time and re-quantizes to MXFP8 on 950."
+    }
+  ]
+}

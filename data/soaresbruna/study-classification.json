@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "soaresbruna/study-classification",
+  "slug": "soaresbruna-study-classification",
+  "author": "soaresbruna",
+  "url": "https://huggingface.co/soaresbruna/study-classification",
+  "created_at": "2026-08-27T19:37:34.000Z",
+  "updated_at": "2026-08-27T19:37:45.000Z",
+  "license": "bsd-3-clause",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "albef",
+    "pytorch",
+    "classification",
+    "license:bsd-3-clause",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 24832,
+  "parameters_human": "24832",
+  "storage_bytes": 99808,
+  "storage_human": "99808 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "soaresbruna (Bruna Soares) - Hugging Face",
+      "url": "https://huggingface.co/soaresbruna",
+      "snippet": "published a dataset about 8 hours ago Organizations"
+    },
+    {
+      "title": "Comparison of classification accuracies of deep learning models in ...",
+      "url": "https://www.researchgate.net/figure/Comparison-of-classification-accuracies-of-deep-learning-models-in-Soares-32-and-the_fig3_366738228",
+      "snippet": "Download scientific diagram | Comparison of classification accuracies of deep learning models in Soares [32] and the Swin-textural model. The former and later reported twoand three-class ..."
+    },
+    {
+      "title": "AI for Monitoring and Classifying Data Used in Research Literature",
+      "url": "https://arxiv.org/pdf/2605.30582",
+      "snippet": "This work used AI tools at various stages, includ-ing generating synthetic data and reasoning using the gpt-5-mini model (API) and open source AI models. In addition, Microsoft CoPilot and ChatGPT were employed to enhance the manuscript&#x27;s readability."
+    },
+    {
+      "title": "OpenAI Halts AI Training on Advanced Model as It Detects Dark Signs ...",
+      "url": "https://futurism.com/artificial-intelligence/openai-halts-training-advanced-model",
+      "snippet": "The slow down comes as the AI industry and policymakers grapple with emerging safety threats posed by frontier AI models, including AI-powered cybersecurity risks and troubling model misbehavior."
+    },
+    {
+      "title": "Design, construction, and validation of obstetric risk classification ...",
+      "url": "https://obgyn.onlinelibrary.wiley.com/doi/10.1002/ijgo.15782?sid=researcher&sid=researcher",
+      "snippet": "The study develops a predictive AI-based tool for optimizing ICU admissions, aiming to enhance maternal outcomes by efficiently identifying high-risk pregnant women needing intensive care."
+    }
+  ]
+}

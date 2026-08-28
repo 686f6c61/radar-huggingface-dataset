@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "arti99999/diddy34",
+  "slug": "arti99999-diddy34",
+  "author": "arti99999",
+  "url": "https://huggingface.co/arti99999/diddy34",
+  "created_at": "2026-08-27T22:11:20.000Z",
+  "updated_at": "2026-08-27T22:25:26.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "voice-activity-detection",
+  "library": "adapter-transformers",
+  "languages": [],
+  "tags": [
+    "adapter-transformers",
+    "voice-activity-detection",
+    "en",
+    "dataset:arti99999/dataset",
+    "base_model:stabilityai/stable-diffusion-3.5-large",
+    "base_model:adapter:stabilityai/stable-diffusion-3.5-large",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": "stabilityai/stable-diffusion-3.5-large",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Free AI Image Detector & Checker: Is a Photo AI? | Is It AI?",
+      "url": "https://isitai.com/ai-image-detector",
+      "snippet": "AI Image Detector & Checker: Is This Photo AI-Generated? Upload any photo, picture, or piece of AI art and our free AI image checker tells you if it was AI-generated or real, in seconds. With 95%+ accuracy across Midjourney, DALL-E, Stable Diffusion, Nano Banana, Firefly, ChatGPT and 20+ models, it&#x27;s trusted by newsrooms, educators, and content teams to verify image authenticity."
+    },
+    {
+      "title": "Chatrule | AI Character & Model Search",
+      "url": "https://chatrule.ai/",
+      "snippet": "Discover Chatrule characters and ADVANCED mirrored LoRAs for AI image generation."
+    },
+    {
+      "title": "AI Models | Civitai",
+      "url": "https://civitai.com/models",
+      "snippet": "Browse thousands of free Stable Diffusion & Flux models, LoRAs, checkpoints, and embeddings. The largest collection of AI image generation resources."
+    },
+    {
+      "title": "Civitai | Discover and Create AI Art",
+      "url": "https://civitai.com/",
+      "snippet": "Explore thousands of free Stable Diffusion & Flux models, create and share AI-generated art, and join the world&#x27;s largest community of generative AI creators."
+    },
+    {
+      "title": "Modly — Free Local AI 3D Model Generator | Open Source, Offline",
+      "url": "https://modly3d.app/",
+      "snippet": "Turn any photo or text prompt into a 3D model with local AI. Export as GLB, OBJ, STL or PLY. Free, open source, runs entirely on your GPU — no cloud, no account."
+    }
+  ]
+}

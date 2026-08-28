@@ -5,7 +5,7 @@
   "author": "Joestar79",
   "url": "https://huggingface.co/Joestar79/Qwen3.8-27B-OBLITERATED-NVFP4",
   "created_at": "2026-08-25T12:46:57.000Z",
-  "updated_at": "2026-08-25T13:03:29.000Z",
+  "updated_at": "2026-08-27T16:28:57.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "image-text-to-text",
@@ -33,7 +33,7 @@
     "region:us"
   ],
   "likes": 2,
-  "downloads_30d": 426,
+  "downloads_30d": 485,
   "trending_score": 0,
   "parameters": 15193246960,
   "parameters_human": "15.19B",

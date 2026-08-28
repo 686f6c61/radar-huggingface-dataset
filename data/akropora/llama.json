@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "akropora/llama",
+  "slug": "akropora-llama",
+  "author": "akropora",
+  "url": "https://huggingface.co/akropora/llama",
+  "created_at": "2026-08-27T23:30:14.000Z",
+  "updated_at": "2026-08-27T23:33:06.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "en",
+    "base_model:meta-llama/Llama-3.2-3B-Instruct",
+    "base_model:finetune:meta-llama/Llama-3.2-3B-Instruct",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": "meta-llama/Llama-3.2-3B-Instruct",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": true,
+  "removed_at": "2026-08-28T02:07:43.474Z",
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Meta Llama 4: The Complete Open-Source AI Model Guide 2026",
+      "url": "https://explainx.ai/blog/meta-llama-4-open-source-models-guide-2026",
+      "snippet": "Complete guide to Meta Llama 4 in 2026: model family explained, Mixture of Experts architecture, running locally with Ollama, fine-tuning with LoRA, benchmarks vs GPT and Claude, and when open weights win."
+    },
+    {
+      "title": "Llama AI Models: Everything You Need to Know",
+      "url": "https://www.topdevelopers.co/blog/llama-ai-review/",
+      "snippet": "What is Meta Llama? Meta Llama (Large Language Model Meta AI) is a series of large language models (LLMs) developed by Meta, designed to offer powerful AI capabilities with free-weight accessibility. Unlike closed-source models such as GPT-4 and Claude, Llama allows researchers, AI LLM developers, and businesses to integrate, modify, and fine-tune AI models based on their specific requirements ..."
+    },
+    {
+      "title": "Evolution of Meta&#x27;s LLaMA Models and Parameter-Efficient Fine-Tuning of ...",
+      "url": "https://arxiv.org/html/2510.12178v1",
+      "snippet": "Abstract Abstract: This review surveys the rapid evolution of Meta AI&#x27;s LLaMA (Large Language Model Meta AI) series - from LLaMA 1 through LLaMA 4 and the specialized parameter-efficient fine-tuning (PEFT) methods developed for these models. We first describe the LLaMA family of foundation models (7B-65B to 288B parameters), their architectures (including native multimodal and Mixture-of ..."
+    },
+    {
+      "title": "Introducing LLaMA: A foundational, 65-billion-parameter language model",
+      "url": "https://ai.meta.com/blog/large-language-model-llama-meta-ai/",
+      "snippet": "Today, we&#x27;re releasing our LLaMA (Large Language Model Meta AI) foundational model with a gated release. LLaMA is more efficient and competitive with previously published models of a similar size on existing benchmarks."
+    },
+    {
+      "title": "Llama 4 Guide 2026 — Meta&#x27;s Open Source LLM | AI Moments",
+      "url": "https://www.singularitymoments.com/llama-4-guide/",
+      "snippet": "Meta Llama 4 is the most capable open-source AI model ever released — multimodal, mixture-of-experts architecture, and freely deployable. Our 2026 guide covers every variant, benchmark, and deployment option."
+    }
+  ]
+}

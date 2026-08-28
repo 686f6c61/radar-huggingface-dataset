@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "TianhangCheng7/Fire3DBaselineWeight",
+  "slug": "tianhangcheng7-fire3dbaselineweight",
+  "author": "TianhangCheng7",
+  "url": "https://huggingface.co/TianhangCheng7/Fire3DBaselineWeight",
+  "created_at": "2026-08-27T21:42:08.000Z",
+  "updated_at": "2026-08-27T21:50:56.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "pytorch",
+  "languages": [],
+  "tags": [
+    "pytorch",
+    "3d-object-detection",
+    "3d-perception",
+    "point-cloud",
+    "arxiv:2406.10224",
+    "arxiv:2403.13064",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1010318498,
+  "storage_human": "1.0 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "TianhangCheng7/Fire3DSingleImageData · Datasets at Hugging Face",
+      "url": "https://huggingface.co/datasets/TianhangCheng7/Fire3DSingleImageData",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "TianhangCheng7 (Tianhang Cheng) - Hugging Face",
+      "url": "https://huggingface.co/TianhangCheng7/datasets",
+      "snippet": "User profile of Tianhang Cheng on Hugging Face"
+    },
+    {
+      "title": "GitHub - xigh/open-weight-models: Curated list of open-weight AI models ...",
+      "url": "https://github.com/xigh/open-weight-models",
+      "snippet": "Curated list of open-weight AI models with commercially exploitable licenses, verified benchmarks, and no EU restrictions. - xigh/open-weight-models"
+    },
+    {
+      "title": "GitHub - 12britz/awesome-free-models: A curated list of free AI models ...",
+      "url": "https://github.com/12britz/awesome-free-models",
+      "snippet": "A curated list of free AI models, APIs, and tools you can use without paying a cent. - 12britz/awesome-free-models"
+    },
+    {
+      "title": "Modly — Free Local AI 3D Model Generator | Open Source, Offline",
+      "url": "https://modly3d.app/",
+      "snippet": "Turn any photo or text prompt into a 3D model with local AI. Export as GLB, OBJ, STL or PLY. Free, open source, runs entirely on your GPU — no cloud, no account."
+    }
+  ]
+}

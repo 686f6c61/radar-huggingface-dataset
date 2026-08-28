@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "LexusIa/CHALINO_SANCHES",
+  "slug": "lexusia-chalino_sanches",
+  "author": "LexusIa",
+  "url": "https://huggingface.co/LexusIa/CHALINO_SANCHES",
+  "created_at": "2026-08-27T23:31:01.000Z",
+  "updated_at": "2026-08-27T23:31:39.000Z",
+  "license": "openrail",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:openrail",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 377486605,
+  "storage_human": "377 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "LexusIa (GatunasIA) - Hugging Face",
+      "url": "https://huggingface.co/LexusIa/models",
+      "snippet": "AI & ML interests ... Recent Activity published a model 8 days ago ... updated a model 8 days ago ... published a model 10 days ago"
+    },
+    {
+      "title": "Chalinosanchez API | Voice Cover | ModelsLab",
+      "url": "https://modelslab.com/models/modelslab/chalinosanchez",
+      "snippet": "Chalinosanchez FAQ What is Chalinosanchez? Chalinosanchez is a voice cloning AI model available on ModelsLab. Access it through our API with pay-per-use pricing and no minimum commitments."
+    },
+    {
+      "title": "Chalino Sánchez AI RVC Model | Storyteller.ai",
+      "url": "https://storyteller.ai/weight/weight_fgs1mxhj90m7s6bfxy09d4dfb/chalino-s%C3%A1nchez",
+      "snippet": "Storyteller.ai AI creation engine Seedance 2.0 model is live on ArtCraft before anywhere else. Create cinematic AI video with fluid motion and Hollywood-level scenes."
+    },
+    {
+      "title": "Chalino Sanchez&#x27;s Legacy, Honored Through AI-Generated Visuals",
+      "url": "https://reelmind.ai/blog/chalino-sanchez-s-legacy-honored-through-ai-generated-visuals",
+      "snippet": "Abstract The enduring legacy of Chalino Sanchez is being vividly reimagined through the power of AI-generated visuals, marking a significant evolution in how cultural icons are remembered and celebrated. This technological intersection is driving a surge in innovative content creation, with the global AI video generation market projected to reach billions by 2025 Source: Grand View Research ..."
+    },
+    {
+      "title": "Chat with Chalino Sanchez | character.ai | AI Chat, Reimagined-Your ...",
+      "url": "https://character.ai/chat/2usNpY9K57t5M1m7vr3BxiEduYwJ4hKaYstVgwckhFU",
+      "snippet": "Chat with Chalino Sanchez: . Powered by an industry leading, AI large language model (LLM)."
+    }
+  ]
+}

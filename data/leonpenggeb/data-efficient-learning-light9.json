@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "Leonpenggeb/data-efficient-learning-light9",
+  "slug": "leonpenggeb-data-efficient-learning-light9",
+  "author": "Leonpenggeb",
+  "url": "https://huggingface.co/Leonpenggeb/data-efficient-learning-light9",
+  "created_at": "2026-08-27T20:49:34.000Z",
+  "updated_at": "2026-08-27T20:49:43.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "transformer",
+    "research-notes",
+    "data-efficient-learning",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 24832,
+  "parameters_human": "24832",
+  "storage_bytes": 99808,
+  "storage_human": "99808 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "arXiv:2406.06246v2 [cs.LG] 31 Oct 2024",
+      "url": "https://arxiv.org/pdf/2406.06246",
+      "snippet": "The model receives an image from a scene dataset [16] and predicts among the 9 different room types: bedroom, bathroom, dining room, living room, kitchen, lab, office, house lobby, and basement. The traditional neural solution trains a convolutional neural network that directly predicts the room type."
+    },
+    {
+      "title": "Free AI Models on OpenRouter",
+      "url": "https://openrouter.ai/collections/free-models",
+      "snippet": "Model rankings updated August 2026 based on real usage data. At OpenRouter, we believe that free models play a crucial role in democratizing access to AI. These models allow hundreds of thousands of users worldwide to experiment, learn, and innovate. Below you will find the top free AI models currently available on OpenRouter."
+    },
+    {
+      "title": "Open models by OpenAI | OpenAI",
+      "url": "https://openai.com/open-models/",
+      "snippet": "Advanced open-weight reasoning models to customize for any use case and run anywhere."
+    },
+    {
+      "title": "Perplexity AI",
+      "url": "https://www.perplexity.ai/",
+      "snippet": "Perplexity is a free AI-powered answer engine that provides accurate, trusted, and real-time answers to any question."
+    },
+    {
+      "title": "OpenAI | Research & Deployment",
+      "url": "https://openai.com/",
+      "snippet": "We believe our research will eventually lead to artificial general intelligence, a system that can solve human-level problems."
+    }
+  ]
+}

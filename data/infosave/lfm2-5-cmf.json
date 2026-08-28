@@ -9,13 +9,13 @@
   "license": "other",
   "license_family": "unknown",
   "pipeline_tag": null,
-  "library": null,
+  "library": "cortiq",
   "languages": [
     "en"
   ],
   "tags": [
-    "cmf",
     "cortiq",
+    "cmf",
     "quantized",
     "lfm2",
     "en",

@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "Oscilla/Bonsai-4B-unpacked-mlx-8Bit",
+  "slug": "oscilla-bonsai-4b-unpacked-mlx-8bit",
+  "author": "Oscilla",
+  "url": "https://huggingface.co/Oscilla/Bonsai-4B-unpacked-mlx-8Bit",
+  "created_at": "2026-08-27T20:31:41.000Z",
+  "updated_at": "2026-08-27T20:31:57.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "mlx",
+  "languages": [],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "qwen3",
+    "prismml",
+    "bonsai",
+    "mlx-my-repo",
+    "base_model:prism-ml/Bonsai-4B-unpacked",
+    "base_model:quantized:prism-ml/Bonsai-4B-unpacked",
+    "license:apache-2.0",
+    "8-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1131267856,
+  "parameters_human": "1.13B",
+  "storage_bytes": 4284854746,
+  "storage_human": "4.3 GB",
+  "base_model": "prism-ml/Bonsai-4B-unpacked",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Bonsai - a prism-ml Collection - Hugging Face",
+      "url": "https://huggingface.co/collections/prism-ml/bonsai",
+      "snippet": "1-bit Bonsai models prism-ml/Bonsai-8B-mlx-1bit"
+    },
+    {
+      "title": "Bonsai 4B - Bonsai - docs.prismml.com",
+      "url": "https://docs.prismml.com/models/bonsai-4b",
+      "snippet": "Bonsai 4B targets edge deployments where the bigger Bonsai models don&#x27;t fit or where you need headroom for other workloads. At 0.57 GB (1-bit), the weights are small enough to power applications on wearables, and mobile devices."
+    },
+    {
+      "title": "Bonsai 4B Unpacked by prism-ml - LLM Explorer",
+      "url": "https://llm-explorer.com/model/prism-ml%2FBonsai-4B-unpacked,6kY9vMfT3zO3fmMIXFgfA0",
+      "snippet": "Bonsai 4B Unpacked is an open-source 4b LLM by prism-ml. VRAM 8.1GB, 32K context. Compare benchmarks, capabilities, and deployment details on LLM Explorer."
+    },
+    {
+      "title": "Quantized Models for prism-ml/Bonsai-4B-unpacked - Hugging Face",
+      "url": "https://huggingface.co/models?other=base_model:quantized:prism-ml/Bonsai-4B-unpacked",
+      "snippet": "Active filters: prism-ml/Bonsai-4B-unpacked. Clear all. prism-ml/Bonsai-4B-gguf. Text Generation • 4B • Updated 3 days ago • 13.6k • 40"
+    },
+    {
+      "title": "Announcing 1-bit Bonsai: The First Commercially Viable 1-bit LLMs - PrismML",
+      "url": "https://prismml.com/news/bonsai-8b",
+      "snippet": "The 1-bit Bonsai 8B, along with its smaller sister models 1-bit Bonsai 1.7B and 4B, dramatically moves the Pareto frontier (of intelligence vs model size) to the left."
+    }
+  ]
+}

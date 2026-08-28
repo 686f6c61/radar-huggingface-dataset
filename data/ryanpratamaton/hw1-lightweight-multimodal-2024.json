@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "ryanpratamaton/hw1-lightweight-multimodal-2024",
+  "slug": "ryanpratamaton-hw1-lightweight-multimodal-2024",
+  "author": "ryanpratamaton",
+  "url": "https://huggingface.co/ryanpratamaton/hw1-lightweight-multimodal-2024",
+  "created_at": "2026-08-27T19:46:51.000Z",
+  "updated_at": "2026-08-27T19:47:01.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "transformer",
+    "research-notes",
+    "lightweight-multimodal",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 24832,
+  "parameters_human": "24832",
+  "storage_bytes": 99808,
+  "storage_human": "99808 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ryanpratamaton (Ryan Pratama) - Hugging Face",
+      "url": "https://huggingface.co/ryanpratamaton",
+      "snippet": "User profile of Ryan Pratama on Hugging Face"
+    },
+    {
+      "title": "Models - Hugging Face",
+      "url": "https://huggingface.co/models?other=first-person-plural",
+      "snippet": "Explore machine learning models. 83 Base only Inference AvailableInference Edit filters Sort: Trending Active filters: first-person-plural Clear all"
+    },
+    {
+      "title": "8 Best Multimodal AI Model Platforms Tested for Performance [2026]",
+      "url": "https://www.index.dev/blog/multimodal-ai-models-comparison",
+      "snippet": "Explore the top multimodal AI models of 2026. Learn which works best for your app, from GPT-4o to Llama 4. Real use cases, costs, and technical specs."
+    },
+    {
+      "title": "LLM Leaderboard 2026: Compare 300+ Top AI Models by Intelligence, Speed ...",
+      "url": "https://llm-stats.com/leaderboards/llm-leaderboard",
+      "snippet": "The LLM Leaderboard — independent ranking of GPT, Claude, Gemini, Llama, DeepSeek and 300+ AI models by intelligence, speed and price. Filter by provider, license, modality and context window; sort by every benchmark. Composite LLM Stats Score updated continuously from public benchmarks and live API metrics."
+    },
+    {
+      "title": "AI Model Leaderboard August 2026 — LMSys Arena, LLM, Image & Coding ...",
+      "url": "https://www.swfte.com/ai/leaderboard",
+      "snippet": "Live AI model leaderboard updated August 2026. Anthropic: Claude Fable 5 leads at 100/100. Compare 380 LLMs, image, video, coding & reasoning models — replaces LMSys Chatbot Arena."
+    }
+  ]
+}

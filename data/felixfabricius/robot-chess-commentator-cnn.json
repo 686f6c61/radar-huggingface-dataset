@@ -5,7 +5,7 @@
   "author": "felixfabricius",
   "url": "https://huggingface.co/felixfabricius/robot-chess-commentator-cnn",
   "created_at": "2026-08-27T16:48:00.000Z",
-  "updated_at": "2026-08-27T16:56:07.000Z",
+  "updated_at": "2026-08-27T18:31:17.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "image-classification",

@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "Oscilla/Bonsai-8B-unpacked-mlx-8Bit",
+  "slug": "oscilla-bonsai-8b-unpacked-mlx-8bit",
+  "author": "Oscilla",
+  "url": "https://huggingface.co/Oscilla/Bonsai-8B-unpacked-mlx-8Bit",
+  "created_at": "2026-08-27T20:32:54.000Z",
+  "updated_at": "2026-08-27T20:33:15.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "mlx",
+  "languages": [],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "qwen3",
+    "prismml",
+    "bonsai",
+    "mlx-my-repo",
+    "base_model:prism-ml/Bonsai-8B-unpacked",
+    "base_model:quantized:prism-ml/Bonsai-8B-unpacked",
+    "license:apache-2.0",
+    "8-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 2303250688,
+  "parameters_human": "2.30B",
+  "storage_bytes": 8712147025,
+  "storage_human": "8.7 GB",
+  "base_model": "prism-ml/Bonsai-8B-unpacked",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "prism-ml/Bonsai-8B-unpacked · Hugging Face",
+      "url": "https://huggingface.co/prism-ml/Bonsai-8B-unpacked",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "prism-ml/Bonsai-8B-mlx-1bit · Hugging Face",
+      "url": "https://huggingface.co/prism-ml/Bonsai-8B-mlx-1bit",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Bonsai 8B - Bonsai",
+      "url": "https://docs.prismml.com/models/bonsai-8b",
+      "snippet": "Bonsai 8B is the efficient middle of the family: small enough to run on a phone, fast enough to feel instant on a laptop GPU. Pick it over 27B when you don&#x27;t need vision, or 27B-scale reasoning, and operating on stricter memory budget."
+    },
+    {
+      "title": "Announcing 1-bit Bonsai: The First Commercially Viable 1-bit LLMs - PrismML",
+      "url": "https://prismml.com/news/bonsai-8b",
+      "snippet": "The 1-bit Bonsai 8B, along with its smaller sister models 1-bit Bonsai 1.7B and 4B, dramatically moves the Pareto frontier (of intelligence vs model size) to the left."
+    },
+    {
+      "title": "GitHub - PrismML-Eng/Bonsai-demo: Bonsai Demo · GitHub",
+      "url": "https://github.com/PrismML-Eng/Bonsai-demo/tree/main",
+      "snippet": "Two model families are available, each in sizes 27B, 8B, 4B, and 1.7B. The 27B models are vision-language models: they accept images as well as text; all 27B repos are gathered in the Bonsai 27B HF collection."
+    }
+  ]
+}

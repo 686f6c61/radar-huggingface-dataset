@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "abhishek-040010/smart-turn-hinglish",
+  "slug": "abhishek-040010-smart-turn-hinglish",
+  "author": "abhishek-040010",
+  "url": "https://huggingface.co/abhishek-040010/smart-turn-hinglish",
+  "created_at": "2026-08-27T19:20:55.000Z",
+  "updated_at": "2026-08-27T19:21:37.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "hi",
+    "en"
+  ],
+  "tags": [
+    "onnx",
+    "audio",
+    "speech-processing",
+    "turn-detection",
+    "smart-turn",
+    "conversational-ai",
+    "hinglish",
+    "voice-agents",
+    "hi",
+    "en",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 233609944,
+  "storage_human": "234 MB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Smart Turn Hinglish - a Hugging Face Space by AbhiCommits",
+      "url": "https://huggingface.co/spaces/AbhiCommits/smart-turn-hinglish",
+      "snippet": "Upload or record a short audio clip in Hindi‑English and the app tells you whether the speaker has finished speaking. It runs two detectors - a Hinglish‑fine‑tuned model and the original Smart Turn..."
+    },
+    {
+      "title": "abhishek-040010 (Abhishek Agrawal) - Hugging Face",
+      "url": "https://huggingface.co/abhishek-040010",
+      "snippet": "User profile of Abhishek Agrawal on Hugging Face"
+    },
+    {
+      "title": "GitHub - abhinav7289A/Hinglish-turn-detection",
+      "url": "https://github.com/abhinav7289A/Hinglish-turn-detection",
+      "snippet": "A tiny (<10M param), fast (<50 ms CPU), audio-only turn-detection model for Indian Hinglish, Indian-accented English, and Indian filler words — plus the first human-labelled Hinglish turn-detection benchmark to evaluate it on."
+    },
+    {
+      "title": "GitHub - CodeWithMoin/smart-turn-hinglish: Tiny audio turn-detection ...",
+      "url": "https://github.com/CodeWithMoin/smart-turn-hinglish",
+      "snippet": "A tiny, audio-only model that decides whether a speaker has finished their turn or is just pausing — the endpointing decision at the heart of a voice agent. audio (last 8s, 16k) ─ log-mel [80×800] ─ whisper-tiny ENCODER (decoder discarded; pos-emb trimmed 1500→400 = 8s) ─ frame ..."
+    },
+    {
+      "title": "Google Translate",
+      "url": "https://translate.google.co.in/m",
+      "snippet": "Google home Send feedback Privacy and terms Switch to full site"
+    }
+  ]
+}

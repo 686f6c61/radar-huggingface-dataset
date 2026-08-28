@@ -5,7 +5,7 @@
   "author": "camgeodesic",
   "url": "https://huggingface.co/camgeodesic/control-pretrain-30b-baseline-ckpts",
   "created_at": "2026-08-23T11:03:29.000Z",
-  "updated_at": "2026-08-27T01:51:40.000Z",
+  "updated_at": "2026-08-27T20:03:09.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": null,
@@ -20,8 +20,8 @@
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
-  "storage_bytes": 3854449816220,
-  "storage_human": "3854.4 GB",
+  "storage_bytes": 6381358157736,
+  "storage_human": "6381.4 GB",
   "base_model": null,
   "formats": [
     "safetensors"

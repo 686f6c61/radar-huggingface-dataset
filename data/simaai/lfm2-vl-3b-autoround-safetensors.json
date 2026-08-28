@@ -1,0 +1,77 @@
+{
+  "schema": 1,
+  "id": "simaai/LFM2-VL-3B-Autoround-Safetensors",
+  "slug": "simaai-lfm2-vl-3b-autoround-safetensors",
+  "author": "simaai",
+  "url": "https://huggingface.co/simaai/LFM2-VL-3B-Autoround-Safetensors",
+  "created_at": "2026-07-28T11:47:55.000Z",
+  "updated_at": "2026-08-28T01:02:19.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [
+    "multilingual"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "lfm2_vl",
+    "image-text-to-text",
+    "quantized",
+    "autoround",
+    "gptq",
+    "compressed-tensors",
+    "sima-ai",
+    "conversational",
+    "multilingual",
+    "base_model:LiquidAI/LFM2-VL-3B",
+    "base_model:quantized:LiquidAI/LFM2-VL-3B",
+    "license:other",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 4,
+  "trending_score": 0,
+  "parameters": 3133192944,
+  "parameters_human": "3.13B",
+  "storage_bytes": 2021723152,
+  "storage_human": "2.0 GB",
+  "base_model": "LiquidAI/LFM2-VL-3B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "simaai/LFM2-VL-3B-Autoround-Safetensors · Hugging Face",
+      "url": "https://huggingface.co/simaai/LFM2-VL-3B-Autoround-Safetensors",
+      "snippet": "This is a post-training quantized version of LiquidAI/LFM2-VL-3B, prepared as a Hugging Face checkpoint for LLiMa compilation and Sima.ai deployment. The source model&#x27;s license and use restrictions continue to apply."
+    },
+    {
+      "title": "simaai/LFM2-VL-3B-a16w4 · Hugging Face",
+      "url": "https://huggingface.co/simaai/LFM2-VL-3B-a16w4",
+      "snippet": "While this maintains high accuracy, minor deviations from the full-precision model may occur. Fixed Resolution: While the standard LFM2-VL architecture supports dynamic input resolutions, this version has been specifically optimized and fixed to 512x512 resolution at compile time to achieve maximum throughput and efficiency on the SiMa.ai MLA."
+    },
+    {
+      "title": "LFM2-VL-3B: A New Efficient Vision-Language for the Edge",
+      "url": "https://www.liquid.ai/blog/lfm2-vl-3b-a-new-efficient-vision-language-for-the-edge",
+      "snippet": "We&#x27;re excited to release LFM2-VL-3B, the newest and most capable addition to our family of vision LFMs (450M and 1.6B). Built on the LFM2-2.6B backbone, this 3B parameter model targets applications that require more accuracy while maintaining the speed advantage of the LFM2 architecture. It is available today on LEAP and Hugging Face."
+    },
+    {
+      "title": "LFM2 Technical Report - arXiv.org",
+      "url": "https://arxiv.org/html/2511.23404v1",
+      "snippet": "The 450M model achieves 657 on OCRBench, substantially higher than SmolVLM2-500M (562), while LFM2-VL-3B scores 822, reaching performance of other similarly sized models."
+    },
+    {
+      "title": "Model Browser - SiMa AI",
+      "url": "https://sima.ai/model-browser/",
+      "snippet": "Experience high performance AI at the Edge. See SiMa.ai models in action."
+    }
+  ]
+}

@@ -5,7 +5,7 @@
   "author": "RononoaIgor98",
   "url": "https://huggingface.co/RononoaIgor98/cassava-leaf-disease-efficientnet-b0",
   "created_at": "2026-08-26T16:10:15.000Z",
-  "updated_at": "2026-08-26T16:56:25.000Z",
+  "updated_at": "2026-08-27T13:10:55.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "image-classification",
@@ -14,6 +14,7 @@
   "tags": [
     "timm",
     "pytorch",
+    "onnx",
     "image-classification",
     "agriculture",
     "cassava",
@@ -27,10 +28,12 @@
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
-  "storage_bytes": 32705158,
-  "storage_human": "33 MB",
+  "storage_bytes": 48738447,
+  "storage_human": "49 MB",
   "base_model": null,
-  "formats": [],
+  "formats": [
+    "onnx"
+  ],
   "is_conversational": false,
   "gated": false,
   "removed": false,

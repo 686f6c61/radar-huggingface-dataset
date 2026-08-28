@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "Fastiraz/Ornith-1.5-9B-GGUF",
+  "slug": "fastiraz-ornith-1-5-9b-gguf",
+  "author": "Fastiraz",
+  "url": "https://huggingface.co/Fastiraz/Ornith-1.5-9B-GGUF",
+  "created_at": "2026-08-28T01:13:30.000Z",
+  "updated_at": "2026-08-28T01:13:30.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "gguf",
+    "text-generation",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 9197093888,
+  "parameters_human": "9.20B",
+  "storage_bytes": 96931032738,
+  "storage_human": "96.9 GB",
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ornith-ai/Ornith-1.5-9B-GGUF · Hugging Face",
+      "url": "https://huggingface.co/ornith-ai/Ornith-1.5-9B-GGUF",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "ornith-ai/Ornith-1.5-9B · Hugging Face",
+      "url": "https://huggingface.co/ornith-ai/Ornith-1.5-9B",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Ornith-1.5: From Self-Scaffolding to Self-Improvement",
+      "url": "https://ornith.ai/ornith_1_5.html",
+      "snippet": "Ornith-1.5 extends the self-scaffolding framework introduced in Ornith-1.0 into a more complete self-improvement loop: the model proposes new tasks, generates task-specific scaffolds, and produces solution rollouts for reinforcement learning, continuously creating new learning experiences from which it can improve."
+    },
+    {
+      "title": "Ornith-1.5-9B-GGUF: Text-to-Text model — overview, use cases, alternatives",
+      "url": "https://www.aimodels.fyi/models/huggingFace/ornith-1.5-9b-gguf-ornith-ai",
+      "snippet": "Overview Ornith-1.5-9B-GGUF is a 9-billion parameter dense language model built for code generation and agentic reasoning, maintained by ornith-ai. This is a quantized GGUF variant of the full-precision model, enabling deployment on consumer hardware while maintaining the reasoning capabilities of the original. The model extends Ornith-1.0 by implementing a self-improvement training approach ..."
+    },
+    {
+      "title": "AIAny - Ornith-1.5-9B-GGUF",
+      "url": "https://aiany.app/item/ornith-1-5-9b-gguf",
+      "snippet": "Introduction Ornith-1.5-9B centers on delivering a small, deployable reasoning model that preserves agentic and coding capabilities without requiring very large clusters. The core insight: by coupling self-improvement training (task generation, scaffold construction, and rollout optimization) with a compact 9B architecture, the model achieves competitive agentic and coding performance while ..."
+    }
+  ]
+}

@@ -1,0 +1,88 @@
+{
+  "schema": 1,
+  "id": "AMAImedia/NOESIS-MiniCPM-V-4.6-SigLIP2-BF16",
+  "slug": "amaimedia-noesis-minicpm-v-4-6-siglip2-bf16",
+  "author": "AMAImedia",
+  "url": "https://huggingface.co/AMAImedia/NOESIS-MiniCPM-V-4.6-SigLIP2-BF16",
+  "created_at": "2026-08-27T19:35:32.000Z",
+  "updated_at": "2026-08-27T19:54:22.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-feature-extraction",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "siglip_vision_model",
+    "image-feature-extraction",
+    "siglip2",
+    "siglip",
+    "vision-encoder",
+    "vision-only",
+    "extracted-submodule",
+    "active-speaker-detection",
+    "lip-motion",
+    "lip-sync-qc",
+    "multimodal",
+    "bf16",
+    "native",
+    "apache-2.0",
+    "commercial-ok",
+    "noesis",
+    "noesis-vision",
+    "noesis-dubbing",
+    "dhcf-fno",
+    "vendored-internal",
+    "arxiv:2509.18154",
+    "arxiv:2408.01800",
+    "base_model:openbmb/MiniCPM-V-4.6",
+    "base_model:finetune:openbmb/MiniCPM-V-4.6",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 522299312,
+  "parameters_human": "522.3M",
+  "storage_bytes": 1044648456,
+  "storage_human": "1.0 GB",
+  "base_model": "openbmb/MiniCPM-V-4.6",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - OpenBMB/MiniCPM-V: A Pocket-Sized MLLM for Ultra-Efficient ...",
+      "url": "https://github.com/OpenBMB/MiniCPM-V",
+      "snippet": "The most notable models in the series currently include: MiniCPM-V 4.6: 🔥🔥🔥 The latest and most efficient model in the MiniCPM-V series. With a total of 1.3B parameters, it surpasses larger models like Gemma4-E2B-it in performance, while showing superior efficiency than smaller models like Qwen3.5-0.8B (achieving ~1.5x token throughput)."
+    },
+    {
+      "title": "MiniCPM-V-4.6 - model.xinference.io",
+      "url": "https://model.xinference.io/models/detail/MiniCPM-V-4.6",
+      "snippet": "MiniCPM-V 4.6 is the latest and most edge-deployment-friendly model in the MiniCPM-V series, with only 1.3B parameters (1.3B activated). It is built on SigLIP2-400M and Qwen3.5-0.8B, and supports single-image, multi-image, and video understanding."
+    },
+    {
+      "title": "mlx-vlm/mlx_vlm/models/minicpmv4_6/README.md at main - GitHub",
+      "url": "https://github.com/Blaizzy/mlx-vlm/blob/main/mlx_vlm/models/minicpmv4_6/README.md",
+      "snippet": "MiniCPM-V 4.6 is an edge-oriented vision-language model for efficient image, multi-image, and video understanding. It combines a SigLIP2-400M vision encoder with a Qwen3.5-0.8B language model and supports mixed 4x / 16x visual token compression so applications can trade finer detail for faster inference."
+    },
+    {
+      "title": "MiniCPM-V-4.6 · Models",
+      "url": "https://www.modelscope.cn/models/OpenBMB/MiniCPM-V-4.6",
+      "snippet": "MiniCPM-V 4.6 can be deployed across three mainstream end-side platforms — iOS, Android and HarmonyOS. The clips below are raw screen recordings on phone devices without edition."
+    },
+    {
+      "title": "openbmb/MiniCPM-V · Hugging Face",
+      "url": "https://huggingface.co/openbmb/MiniCPM-V",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    }
+  ]
+}

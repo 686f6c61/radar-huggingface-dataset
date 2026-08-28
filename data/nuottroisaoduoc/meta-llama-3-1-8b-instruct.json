@@ -1,0 +1,77 @@
+{
+  "schema": 1,
+  "id": "nuottroisaoduoc/Meta-Llama-3.1-8B-Instruct",
+  "slug": "nuottroisaoduoc-meta-llama-3-1-8b-instruct",
+  "author": "nuottroisaoduoc",
+  "url": "https://huggingface.co/nuottroisaoduoc/Meta-Llama-3.1-8B-Instruct",
+  "created_at": "2026-08-27T19:09:11.000Z",
+  "updated_at": "2026-08-27T19:09:11.000Z",
+  "license": "llama3.1",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "llama",
+    "text-generation",
+    "llama-3",
+    "meta",
+    "facebook",
+    "unsloth",
+    "conversational",
+    "en",
+    "base_model:meta-llama/Llama-3.1-8B-Instruct",
+    "base_model:finetune:meta-llama/Llama-3.1-8B-Instruct",
+    "license:llama3.1",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 8030261248,
+  "parameters_human": "8.03B",
+  "storage_bytes": 16077766296,
+  "storage_human": "16.1 GB",
+  "base_model": "meta-llama/Llama-3.1-8B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "meta-llama/Llama-3.1-8B-Instruct · Hugging Face",
+      "url": "https://huggingface.co/meta-llama/Llama-3.1-8B-Instruct",
+      "snippet": "Run 15,000+ Models Instantly Inference Providers let you run inference on thousands of models served by our partners using a simple, unified, OpenAI-compatible serverless API (). meta-llama/Llama-3.1-8B-Instruct is supported by the following Inference Providers:"
+    },
+    {
+      "title": "meta-llama/Llama-3.1-8B · Hugging Face",
+      "url": "https://huggingface.co/meta-llama/Llama-3.1-8B",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "llama3.1:8b-instruct-q8_0",
+      "url": "https://ollama.com/library/llama3.1:8b-instruct-q8_0",
+      "snippet": "Meta Llama 3.1 Llama 3.1 family of models available: 8B 70B 405B Llama 3.1 405B is the first openly available model that rivals the top AI models when it comes to state-of-the-art capabilities in general knowledge, steerability, math, tool use, and multilingual translation. The upgraded versions of the 8B and 70B models are multilingual and have a significantly longer context length of 128K ..."
+    },
+    {
+      "title": "meta / llama-3.1-8b-instruct - Nvidia",
+      "url": "https://docs.api.nvidia.com/nim/reference/meta-llama-3_1-8b",
+      "snippet": "The Meta Llama 3.1 collection of multilingual large language models (LLMs) is a collection of pretrained and instruction tuned generative models in 8B, 70B and 405B sizes (text in/text out). The Llama 3.1 instruction tuned text only models (8B, 70B, 405B) are optimized for multilingual dialogue use cases and outperform many of the available open source and closed chat models on common industry ..."
+    },
+    {
+      "title": "llama-3.1-8b-instruct Model by Meta | NVIDIA NIM",
+      "url": "https://build.nvidia.com/meta/llama-3_1-8b-instruct",
+      "snippet": "Advanced state-of-the-art model with language understanding, superior reasoning, and text generation."
+    }
+  ]
+}

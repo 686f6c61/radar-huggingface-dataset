@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "am-codes/finbert-finetuned",
+  "slug": "am-codes-finbert-finetuned",
+  "author": "am-codes",
+  "url": "https://huggingface.co/am-codes/finbert-finetuned",
+  "created_at": "2026-08-27T22:14:05.000Z",
+  "updated_at": "2026-08-27T22:14:46.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-classification",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "bert",
+    "text-classification",
+    "generated_from_trainer",
+    "base_model:ProsusAI/finbert",
+    "base_model:finetune:ProsusAI/finbert",
+    "text-embeddings-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 109484547,
+  "parameters_human": "109.5M",
+  "storage_bytes": 437966925,
+  "storage_human": "438 MB",
+  "base_model": "ProsusAI/finbert",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "FinBERT: Financial Sentiment Analysis with BERT - GitHub",
+      "url": "https://github.com/ProsusAI/finBERT",
+      "snippet": "FinBERT is a pre-trained NLP model to analyze sentiment of financial text. It is built by further training the BERT language model in the finance domain, using a large financial corpus and thereby fine-tuning it for financial sentiment classification. For the details, please see FinBERT: Financial Sentiment Analysis with Pre-trained Language ..."
+    },
+    {
+      "title": "finbert: Text-to-Text model — overview, use cases, alternatives",
+      "url": "https://www.aimodels.fyi/models/huggingFace/finbert-prosusai",
+      "snippet": "Overview FinBERT is a financial sentiment analysis model built by further training the BERT language model on financial domain text, then fine-tuning it on the Financial PhraseBank dataset. Maintained by ProsusAI, it classifies financial text into three sentiment labels: positive, negative, or neutral via softmax outputs. The model leverages a large financial corpus during pre-training to ..."
+    },
+    {
+      "title": "GitHub - yya518/FinBERT: A Pretrained BERT Model for Financial ...",
+      "url": "https://github.com/yya518/FinBERT",
+      "snippet": "FinBERT ***** June 2, 2022: More fine-tuned FinBERT models available***** Visit FinBERT.AI for more details on the recent development of FinBERT. We have fine-tuned FinBERT pretrained model on several financial NLP tasks, all outperforming traditional machine learning models, deep learning models, and fine-tuned BERT models."
+    },
+    {
+      "title": "project-aps/finbert-finetune · Hugging Face",
+      "url": "https://huggingface.co/project-aps/finbert-finetune",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "ProsusAI/finbert · Hugging Face",
+      "url": "https://huggingface.co/ProsusAI/finbert",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    }
+  ]
+}

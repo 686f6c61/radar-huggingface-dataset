@@ -5,7 +5,7 @@
   "author": "TheDrainFlorist",
   "url": "https://huggingface.co/TheDrainFlorist/gemma-4-26b-a4b-it-VQ-6.2bpw",
   "created_at": "2026-08-20T17:39:21.000Z",
-  "updated_at": "2026-08-27T00:31:48.000Z",
+  "updated_at": "2026-08-27T20:16:54.000Z",
   "license": "gemma",
   "license_family": "oss",
   "pipeline_tag": "image-text-to-text",
@@ -30,7 +30,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 87,
+  "downloads_30d": 91,
   "trending_score": 0,
   "parameters": 5537198670,
   "parameters_human": "5.54B",

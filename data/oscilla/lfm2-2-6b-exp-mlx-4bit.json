@@ -1,0 +1,92 @@
+{
+  "schema": 1,
+  "id": "Oscilla/LFM2-2.6B-Exp-mlx-4Bit",
+  "slug": "oscilla-lfm2-2-6b-exp-mlx-4bit",
+  "author": "Oscilla",
+  "url": "https://huggingface.co/Oscilla/LFM2-2.6B-Exp-mlx-4Bit",
+  "created_at": "2026-08-27T19:52:31.000Z",
+  "updated_at": "2026-08-27T19:52:37.000Z",
+  "license": "lfm1.0",
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en",
+    "ar",
+    "zh",
+    "fr",
+    "de",
+    "ja",
+    "ko",
+    "es"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "lfm2",
+    "text-generation",
+    "liquid",
+    "edge",
+    "mlx",
+    "mlx-my-repo",
+    "conversational",
+    "en",
+    "ar",
+    "zh",
+    "fr",
+    "de",
+    "ja",
+    "ko",
+    "es",
+    "base_model:LiquidAI/LFM2-2.6B-Exp",
+    "base_model:quantized:LiquidAI/LFM2-2.6B-Exp",
+    "license:other",
+    "endpoints_compatible",
+    "4-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 401669120,
+  "parameters_human": "401.7M",
+  "storage_bytes": 1445658389,
+  "storage_human": "1.4 GB",
+  "base_model": "LiquidAI/LFM2-2.6B-Exp",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Oscilla/LFM2-1.2B-mlx-4Bit · Hugging Face",
+      "url": "https://huggingface.co/Oscilla/LFM2-1.2B-mlx-4Bit",
+      "snippet": "Oscilla/LFM2-1.2B-mlx-4Bit The Model Oscilla/LFM2-1.2B-mlx-4Bit was converted to MLX format from LiquidAI/LFM2-1.2B using mlx-lm version 0.31.2. Use with mlx"
+    },
+    {
+      "title": "mlx-community/LFM2-2.6B-Exp-4bit · Hugging Face",
+      "url": "https://huggingface.co/mlx-community/LFM2-2.6B-Exp-4bit",
+      "snippet": "mlx-community / LFM2-2.6B-Exp-4bit like 1 Follow MLX Community 15.5k Text Generation MLX Safetensors 8 languages lfm2 liquid edge conversational 4-bit precision License:lfm1.0 Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "LFM2 2.6B Exp 4bit by mlx-community - llm-explorer.com",
+      "url": "https://llm-explorer.com/model/mlx-community%2FLFM2-2.6B-Exp-4bit,4IdjVLiuTXIxCp4G7uGbhT",
+      "snippet": "LFM2 2.6B Exp 4bit is an open-source 2.6b LLM by mlx-community. VRAM 1.4GB, 125K context. Compare benchmarks, capabilities, and deployment details on LLM Explorer."
+    },
+    {
+      "title": "Introducing LFM2-2.6B: Redefining Efficiency in Language Models",
+      "url": "https://www.liquid.ai/blog/introducing-lfm2-2-6b-redefining-efficiency-in-language-models",
+      "snippet": "Liquid AI LFM2-2.6B: a compact generative AI foundation model delivering high performance, efficient inference, and smaller-scale deployment on device."
+    },
+    {
+      "title": "sam860/LFM2:2.6b - ollama.com",
+      "url": "https://ollama.com/sam860/LFM2:2.6b",
+      "snippet": "Liquid Foundation Models 2 (LFM2) — a family of fast, efficient models optimized for edge devices (phones, laptops, vehicles). The hybrid Liquid architecture provides superior speed and memory efficiency over traditional transformers."
+    }
+  ]
+}

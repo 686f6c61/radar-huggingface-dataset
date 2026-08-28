@@ -1,0 +1,92 @@
+{
+  "schema": 1,
+  "id": "Oscilla/LFM2-350M-mlx-8Bit",
+  "slug": "oscilla-lfm2-350m-mlx-8bit",
+  "author": "Oscilla",
+  "url": "https://huggingface.co/Oscilla/LFM2-350M-mlx-8Bit",
+  "created_at": "2026-08-27T20:24:26.000Z",
+  "updated_at": "2026-08-27T20:24:29.000Z",
+  "license": "lfm1.0",
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en",
+    "ar",
+    "zh",
+    "fr",
+    "de",
+    "ja",
+    "ko",
+    "es"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "lfm2",
+    "text-generation",
+    "liquid",
+    "edge",
+    "mlx",
+    "mlx-my-repo",
+    "conversational",
+    "en",
+    "ar",
+    "zh",
+    "fr",
+    "de",
+    "ja",
+    "ko",
+    "es",
+    "base_model:LiquidAI/LFM2-350M",
+    "base_model:quantized:LiquidAI/LFM2-350M",
+    "license:other",
+    "endpoints_compatible",
+    "8-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 99745536,
+  "parameters_human": "99.7M",
+  "storage_bytes": 376737380,
+  "storage_human": "377 MB",
+  "base_model": "LiquidAI/LFM2-350M",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "LiquidAI/LFM2-350M · Hugging Face",
+      "url": "https://huggingface.co/LiquidAI/LFM2-350M",
+      "snippet": "A newer version of this model is available: LiquidAI/LFM2.5-350M"
+    },
+    {
+      "title": "LiquidAI/LFM2.5-350M-MLX-8bit at main - Hugging Face",
+      "url": "https://huggingface.co/LiquidAI/LFM2.5-350M-MLX-8bit/tree/main",
+      "snippet": "Instructions to use LiquidAI/LFM2.5-350M-MLX-8bit with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Libraries MLX How to use LiquidAI/LFM2.5-350M-MLX-8bit with MLX:"
+    },
+    {
+      "title": "Lfm2.5 350m Mlx 8bit - AI Model Insights & Benchmarks",
+      "url": "https://free2aitools.com/model/liquidai/lfm2.5-350m-mlx-8bit",
+      "snippet": "LFM2.5-350M-MLX-8bit MLX export of LFM2.5-350M for Apple Silicon inference. LFM2.5-350M is a compact multilingual base model built on LiquidAI&#x27;s hybrid architecture, combining convolutional and attention layers for efficient long-context processing."
+    },
+    {
+      "title": "liquid/lfm2-350m • LM Studio",
+      "url": "https://lmstudio.ai/models/liquid/lfm2-350m",
+      "snippet": "Liquid LFM2 350M Liquid LFM2 models are blazingly fast models that are designed for local use. Compared to similarly sized models, this model excels at mathematics, instruction following, and multilingual understanding. LFM2 uses a hybrid architecture that performs efficiently on both CPU and GPU. Supports a context length of 32k."
+    },
+    {
+      "title": "LFM2.5 350M MLX 8bit by LiquidAI - LLM Explorer",
+      "url": "https://llm-explorer.com/model/LiquidAI%2FLFM2.5-350M-MLX-8bit,2B7ln67NU2ig4TykgRmkoE",
+      "snippet": "LFM2.5 350M MLX 8bit is an open-source 350m LLM by LiquidAI. VRAM 0.4GB, 125K context. Compare benchmarks, capabilities, and deployment details on LLM Explorer."
+    }
+  ]
+}

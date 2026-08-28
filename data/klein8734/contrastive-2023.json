@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "klein8734/contrastive-2023",
+  "slug": "klein8734-contrastive-2023",
+  "author": "klein8734",
+  "url": "https://huggingface.co/klein8734/contrastive-2023",
+  "created_at": "2026-08-27T23:26:28.000Z",
+  "updated_at": "2026-08-27T23:26:37.000Z",
+  "license": "bsd-3-clause",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "coca",
+    "pytorch",
+    "contrastive",
+    "license:bsd-3-clause",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 24832,
+  "parameters_human": "24832",
+  "storage_bytes": 99808,
+  "storage_human": "99808 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "klein8734 (Daniel S. Klein) - Hugging Face",
+      "url": "https://huggingface.co/klein8734",
+      "snippet": "Currently obsessed with diffusion models"
+    },
+    {
+      "title": "klein8734 (Daniel S. Klein) - Hugging Face",
+      "url": "https://huggingface.co/klein8734/models",
+      "snippet": "klein8734&#x27;s models1 Sort: Recently updated klein8734/model_287927282_coca_xlarge Updated about 19 hours ago"
+    },
+    {
+      "title": "PDF cs330_contrastive_2023",
+      "url": "https://cs330.stanford.edu/materials/cs330_contrastive_2023.pdf",
+      "snippet": "Unsupervised pre-training Fine-tuning Diverse unlabeled dataset {xi} Pre-trained model Labeled"
+    },
+    {
+      "title": "GitHub - openai/CLIP: CLIP (Contrastive Language-Image Pretraining ...",
+      "url": "https://github.com/openai/CLIP",
+      "snippet": "CLIP [Blog] [Paper] [Model Card] [Colab] CLIP (Contrastive Language-Image Pre-Training) is a neural network trained on a variety of (image, text) pairs. It can be instructed in natural language to predict the most relevant text snippet, given an image, without directly optimizing for the task, similarly to the zero-shot capabilities of GPT-2 and 3."
+    },
+    {
+      "title": "CONTRASTE: Supervised Contrastive Pre-training With Aspect-based ...",
+      "url": "https://aclanthology.org/2023.findings-emnlp.807/",
+      "snippet": "Given a sentence and its associated (aspect, opinion, sentiment) triplets, first, we design aspect-based prompts with corresponding sentiments masked. We then (pre)train an encoder-decoder model by applying contrastive learning on the decoder-generated aspect-aware sentiment representations of the masked terms."
+    }
+  ]
+}

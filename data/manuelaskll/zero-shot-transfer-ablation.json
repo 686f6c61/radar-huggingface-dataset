@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "Manuelaskll/zero-shot-transfer-ablation",
+  "slug": "manuelaskll-zero-shot-transfer-ablation",
+  "author": "Manuelaskll",
+  "url": "https://huggingface.co/Manuelaskll/zero-shot-transfer-ablation",
+  "created_at": "2026-08-27T22:49:28.000Z",
+  "updated_at": "2026-08-27T22:49:36.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "transformer",
+    "research-notes",
+    "zero-shot-transfer",
+    "license:cc-by-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 24832,
+  "parameters_human": "24832",
+  "storage_bytes": 99808,
+  "storage_human": "99808 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Science Robotics ZEST: zero-shot athletic skill transfer",
+      "url": "https://ccleaks.com/news/science-robotics-zest-zero-shot-transfer-aug-2026",
+      "snippet": "ZEST transfers athletic robot skills zero-shot from capture, video and animation to Atlas, Unitree G1 and Spot after simulation training."
+    },
+    {
+      "title": "Zero-Shot Transfer: Definition & AI Applications",
+      "url": "https://inferensys.com/glossary/vision-language-action-models/multimodal-fusion-architectures/zero-shot-transfer",
+      "snippet": "Zero-shot transfer is the capability of a pre-trained AI model to perform a novel task without any task-specific training data, typically by interpreting natural language instructions or prompts."
+    },
+    {
+      "title": "Zero-shot learning - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Zero-shot_learning",
+      "snippet": "Zero-shot learning (ZSL) is a problem setup in machine learning where, at test time, a learner observes samples from classes which were not observed during training, and needs to predict their class. The name is a play on words based on the earlier concept of one-shot learning in computer vision, in which classification can be learned from only one example. Zero-shot methods generally work by ..."
+    },
+    {
+      "title": "MolmoBot: Training robot manipulation entirely in simulation",
+      "url": "https://allenai.org/blog/molmobot-robot-manipulation",
+      "snippet": "MolmoBot is an open robotic manipulation model suite trained entirely in simulation—demonstrating zero-shot transfer to real-world robots without any real-world data collection or fine-tuning."
+    },
+    {
+      "title": "GitHub - mahmoodlab/MI-Zero: Visual Language Pretrained Multiple ...",
+      "url": "https://github.com/mahmoodlab/MI-Zero",
+      "snippet": "Visual Language Pretrained Multiple Instance Zero-Shot Transfer for Histopathology Images. In Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition (pp. 19764-19775)."
+    }
+  ]
+}

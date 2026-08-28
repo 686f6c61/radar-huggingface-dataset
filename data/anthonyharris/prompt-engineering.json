@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "anthonyharris/prompt-engineering",
+  "slug": "anthonyharris-prompt-engineering",
+  "author": "anthonyharris",
+  "url": "https://huggingface.co/anthonyharris/prompt-engineering",
+  "created_at": "2026-08-27T23:12:32.000Z",
+  "updated_at": "2026-08-27T23:12:41.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "transformer",
+    "research-notes",
+    "prompt-engineering",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 24832,
+  "parameters_human": "24832",
+  "storage_bytes": 99808,
+  "storage_human": "99808 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Prompt Engineering: A Superpower for Subject Specialists",
+      "url": "https://www.linkedin.com/posts/anthonywrgharris_very-pleased-to-have-my-letter-published-activity-7486066003915812866-oJkG",
+      "snippet": "Very pleased to have my letter published in today&#x27;s The Times newspaper on the importance of Prompt Engineering and what a super power it is for the subject specialist. AI prompt engineering is ..."
+    },
+    {
+      "title": "Prompt engineering best practices for 2026 | Claude by Anthropic",
+      "url": "https://claude.com/blog/best-practices-for-prompt-engineering",
+      "snippet": "Prompt engineering is the craft of structuring instructions to get better outputs from AI models. It&#x27;s how you phrase queries, specify style, provide context, and guide the model&#x27;s behavior to achieve your goals. The difference between a vague instruction and a well-crafted prompt can mean the gap between generic outputs and exactly what you need."
+    },
+    {
+      "title": "Prompt engineering techniques - Microsoft Foundry",
+      "url": "https://learn.microsoft.com/en-us/azure/foundry/openai/concepts/prompt-engineering",
+      "snippet": "These techniques aren&#x27;t recommended for reasoning models like gpt-5 and o-series models. Prompt construction can be difficult. In practice, the prompt acts to help the model complete the desired task, but it&#x27;s more of an art than a science, often requiring experience and intuition to craft a successful prompt. The goal of this article is to help get you started with this learning process. This ..."
+    },
+    {
+      "title": "Prompt Engineering Institute | Learn Practical AI",
+      "url": "https://promptengineering.org/",
+      "snippet": "Learn prompt engineering, LLMs, AI agents, RAG, and automation through practical articles, free lessons, and professional AI training."
+    },
+    {
+      "title": "Prompt Engineering Guide | Prompt Engineering Guide",
+      "url": "https://www.promptingguide.ai/",
+      "snippet": "Motivated by the high interest in developing with LLMs, we have created this new prompt engineering guide that contains all the latest papers, advanced prompting techniques, learning guides, model-specific prompting guides, lectures, references, new LLM capabilities, and tools related to prompt engineering."
+    }
+  ]
+}

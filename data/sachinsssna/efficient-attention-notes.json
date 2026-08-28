@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "sachinsssna/efficient-attention-notes",
+  "slug": "sachinsssna-efficient-attention-notes",
+  "author": "sachinsssna",
+  "url": "https://huggingface.co/sachinsssna/efficient-attention-notes",
+  "created_at": "2026-08-27T22:40:03.000Z",
+  "updated_at": "2026-08-27T22:40:12.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "transformer",
+    "research-notes",
+    "efficient-attention",
+    "license:cc-by-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 33088,
+  "parameters_human": "33088",
+  "storage_bytes": 132832,
+  "storage_human": "132832 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Joshuamsn/research-efficient-attention · Hugging Face",
+      "url": "https://huggingface.co/Joshuamsn/research-efficient-attention",
+      "snippet": "Notes on Efficient Attention Repository summary Reading notes and an experiment sketch for Efficient Attention. The repository emphasizes what still needs to be tested instead of manufacturing scores or release claims."
+    },
+    {
+      "title": "GitHub - HKUNLP/efficient-attention: [EVA ICLR&#x27;23; LARA ICML&#x27;22 ...",
+      "url": "https://github.com/hkunlp/efficient-attention",
+      "snippet": "This repository contains the official implementation of experiments conducted in EVA: Efficient attention via control variates (ICLR 2023) LARA: Linear complexity randomized self-attention mechanism (ICML 2022) 🌲 Repo structure: efficient-attention: a small self-contained codebase that implements various efficient attention mechanisms. Please see the usage for more details. vit: codebase ..."
+    },
+    {
+      "title": "Attention Mechanism in ML - GeeksforGeeks",
+      "url": "https://www.geeksforgeeks.org/artificial-intelligence/ml-attention-mechanism/",
+      "snippet": "Attention is a mechanism used within architectures like encoder-decoder models to improve how information is processed. It works alongside components such as the encoder and decoder by helping the model focus on the most relevant parts of the input."
+    },
+    {
+      "title": "long-llms-learning/methodology/efficient_attn.md at main - GitHub",
+      "url": "https://github.com/Strivin0311/long-llms-learning/blob/main/methodology/efficient_attn.md",
+      "snippet": "This section shares the literatures dedicated to optimizing attention mechanisms, especially focusing on the kernel operations that make the module the computational bottleneck of the Transformer. This approach enables the expansion of the effective context length boundary for LLMs during inference by directly increasing the hyperparameter L m a x ${}_{L}$ (maximum number of tokens in one ..."
+    },
+    {
+      "title": "Attention Is All You Need - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Attention_Is_All_You_Need",
+      "snippet": "\" Attention Is All You Need \" [1] is a 2017 research paper on machine learning authored by eight scientists and engineers working at Google. The paper introduced a new deep learning architecture known as the transformer, based on the attention mechanism proposed in 2014 by Bahdanau et al.[2] The transformer approach it describes has become the main architecture of a wide variety of artificial ..."
+    }
+  ]
+}

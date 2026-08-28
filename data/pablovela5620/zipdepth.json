@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "pablovela5620/zipdepth",
+  "slug": "pablovela5620-zipdepth",
+  "author": "pablovela5620",
+  "url": "https://huggingface.co/pablovela5620/zipdepth",
+  "created_at": "2026-08-27T22:45:48.000Z",
+  "updated_at": "2026-08-27T22:45:50.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "depth-estimation",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "monocular-depth",
+    "relative-depth",
+    "zero-shot",
+    "lightweight",
+    "depth-estimation",
+    "arxiv:2607.08771",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 54594452,
+  "storage_human": "55 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ZipDepth — Bringing Lightweight Zero-Shot Monocular Depth Anywhere, on ...",
+      "url": "https://zipdepth.github.io/",
+      "snippet": "Lightweight Zero-Shot Monocular Depth, Anywhere, on Any Device. A 6.1M-parameter encoder-decoder, distilled at scale from a foundation model, exported without graph surgery to GPUs, CPUs, and mobile NPUs alike."
+    },
+    {
+      "title": "GitHub - fabiotosi92/ZipDepth: [ECCV 2026] Official implementation of ...",
+      "url": "https://github.com/fabiotosi92/ZipDepth",
+      "snippet": "ZipDepth is a lightweight zero-shot monocular depth estimation model that achieves the best accuracy-efficiency trade-off among lightweight methods, approaching transformer-based foundation models at a fraction of their cost. It combines reparameterizable convolutions (RepVGG), efficient channel and spatial attention (strip pooling and global context blocks), and a compact FPN decoder ..."
+    },
+    {
+      "title": "pablovela5620 (pablo vela) - Hugging Face",
+      "url": "https://huggingface.co/pablovela5620/models",
+      "snippet": "pablovela5620 Follow Fishtiks&#x27;s profile picturekingchou007&#x27;s profile picturechuantwow&#x27;s profile picture 40 followers · 7 following pablovelagomez1 pablovela5620"
+    },
+    {
+      "title": "[2607.08771] ZipDepth: Bringing Lightweight Zero-Shot Monocular Depth ...",
+      "url": "https://arxiv.org/abs/2607.08771",
+      "snippet": "We present ZipDepth, a compact monocular depth network that bridges this gap by combining an efficient reparameterizable encoder-decoder with large-scale knowledge distillation from a foundation model over a large multi-domain training set."
+    },
+    {
+      "title": "pablovela5620 (Pablo Vela) · GitHub",
+      "url": "https://github.com/pablovela5620",
+      "snippet": "A graph representing pablovela5620&#x27;s contributions from August 17, 2025 to August 21, 2026. The contributions are 88% commits, 10% pull requests, 1% issues, 1% code review."
+    }
+  ]
+}

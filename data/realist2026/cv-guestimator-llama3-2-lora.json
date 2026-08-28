@@ -5,7 +5,7 @@
   "author": "Realist2026",
   "url": "https://huggingface.co/Realist2026/cv-guestimator-llama3.2-lora",
   "created_at": "2026-08-26T23:22:13.000Z",
-  "updated_at": "2026-08-26T23:23:05.000Z",
+  "updated_at": "2026-08-27T06:10:20.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": null,
@@ -30,8 +30,8 @@
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
-  "storage_bytes": 114517464,
-  "storage_human": "115 MB",
+  "storage_bytes": 211825008,
+  "storage_human": "212 MB",
   "base_model": "unsloth/llama-3.2-3b-instruct-unsloth-bnb-4bit",
   "formats": [
     "safetensors"

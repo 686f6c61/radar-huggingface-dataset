@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "CreitinGameplays/Laguna-XS-2.1-Fable-5-Distill",
+  "slug": "creitingameplays-laguna-xs-2-1-fable-5-distill",
+  "author": "CreitinGameplays",
+  "url": "https://huggingface.co/CreitinGameplays/Laguna-XS-2.1-Fable-5-Distill",
+  "created_at": "2026-08-27T23:44:34.000Z",
+  "updated_at": "2026-08-27T23:57:37.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "laguna",
+    "text-generation",
+    "text-generation-inference",
+    "unsloth",
+    "conversational",
+    "custom_code",
+    "en",
+    "base_model:poolside/Laguna-XS-2.1",
+    "base_model:finetune:poolside/Laguna-XS-2.1",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 33442617088,
+  "parameters_human": "33.44B",
+  "storage_bytes": 66889022016,
+  "storage_human": "66.9 GB",
+  "base_model": "poolside/Laguna-XS-2.1",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": true,
+  "removed_at": "2026-08-28T02:07:34.187Z",
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "poolside/Laguna-XS-2.1 · Hugging Face",
+      "url": "https://huggingface.co/poolside/Laguna-XS-2.1",
+      "snippet": "This model is an upgraded version of our Laguna XS.2 model with a +5.4% jump on SWE-bench Multilingual as well as stronger performance on terminal-style tasks. For more details on how we train, including on data automixing and async off-policy agent RL, check out our recent technical report."
+    },
+    {
+      "title": "Fdxyra/Laguna-XS-2.1 · Hugging Face",
+      "url": "https://huggingface.co/Fdxyra/Laguna-XS-2.1",
+      "snippet": "Laguna XS 2.1 Laguna XS 2.1 is a 33B total parameter Mixture-of-Experts model with 3B activated parameters per token designed for agentic coding and long-horizon work on a local machine. This model is an upgraded version of our Laguna XS.2 model with a +5.4% jump on SWE-bench Multilingual as well as stronger performance on terminal-style tasks."
+    },
+    {
+      "title": "Introducing Laguna XS 2.1 - poolside.ai",
+      "url": "https://poolside.ai/blog/introducing-laguna-xs-2-1",
+      "snippet": "Today we&#x27;re releasing Laguna XS 2.1, an upgraded version of our Laguna XS.2 model. Laguna XS 2.1 is a 33B total parameter Mixture-of-Experts model with 3B activated parameters per token, designed for agentic coding and long-horizon work on a local machine. It&#x27;s the same architecture as XS.2, with a notable improvement on SWE-bench Multilingual and stronger performance on terminal-style tasks ..."
+    },
+    {
+      "title": "laguna-xs-2.1 Model by Poolside | NVIDIA NIM",
+      "url": "https://build.nvidia.com/poolside/laguna-xs-2.1/modelcard",
+      "snippet": "Laguna XS 2.1 is a Poolside 33B total parameter Mixture-of-Experts text generation model with 3B activated parameters per token, designed for agentic coding and long-horizon software engineering work on local machines."
+    },
+    {
+      "title": "Introducing Laguna XS.2 and Laguna M.1 - poolside.ai",
+      "url": "https://poolside.ai/blog/introducing-laguna-xs2-m1",
+      "snippet": "Laguna XS.2 is trained from scratch in our Model Factory, continuing the work pioneered by Laguna M.1, our largest model to date. XS.2 started pre-training 5 weeks ago and today is being released fully post-trained."
+    }
+  ]
+}

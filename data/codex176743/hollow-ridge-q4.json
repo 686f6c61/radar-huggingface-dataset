@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "codex176743/hollow-ridge-q4",
+  "slug": "codex176743-hollow-ridge-q4",
+  "author": "codex176743",
+  "url": "https://huggingface.co/codex176743/hollow-ridge-q4",
+  "created_at": "2026-08-28T00:15:13.000Z",
+  "updated_at": "2026-08-28T00:18:17.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen2",
+    "text-generation",
+    "conversational",
+    "license:apache-2.0",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 7615616512,
+  "parameters_human": "7.62B",
+  "storage_bytes": 15242693424,
+  "storage_human": "15.2 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "codex176743/hollow-ridge-q4 · Hugging Face",
+      "url": "https://huggingface.co/codex176743/hollow-ridge-q4",
+      "snippet": "codex176743 / hollow-ridge-q4 like 0 Text Generation Transformers Safetensors qwen2 conversational text-generation-inference License:apache-2.0 Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "codex176743/20260816-233527 · Hugging Face",
+      "url": "https://huggingface.co/codex176743/20260816-233527",
+      "snippet": "codex176743 / 20260816-233527 like 0 Safetensors qwen3_5_moe Model card FilesFiles and versions xet Community Copy to bucket new"
+    },
+    {
+      "title": "codex176743 (CodeX) · GitHub",
+      "url": "https://github.com/codex176743/",
+      "snippet": "codex176743 has 16 repositories available. Follow their code on GitHub."
+    },
+    {
+      "title": "Home · modelindex.dev",
+      "url": "https://modelindex.dev/",
+      "snippet": "Provenance and cryptographic hashes for public AI models across HuggingFace, ModelScope, CivitAI, and Ollama. Look up any file by hash, browse by org, and verify your downloads on modelindex.dev."
+    },
+    {
+      "title": "Best Qwen3.8-27B GGUF: Q2, Q3, Q4, Q5, Q6 and Q8 - kingy.ai",
+      "url": "https://kingy.ai/blog/qwen3-8-27b-best-quantization-gguf/",
+      "snippet": "Compare exact Qwen3.8-27B Q2, Q3, Q4, Q5, Q6 and Q8 GGUF files by quality, memory, context and publisher; choose the right download for your hardware."
+    }
+  ]
+}

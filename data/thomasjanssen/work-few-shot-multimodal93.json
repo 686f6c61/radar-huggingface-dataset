@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "ThomasJanssen/work-few-shot-multimodal93",
+  "slug": "thomasjanssen-work-few-shot-multimodal93",
+  "author": "ThomasJanssen",
+  "url": "https://huggingface.co/ThomasJanssen/work-few-shot-multimodal93",
+  "created_at": "2026-08-27T21:38:13.000Z",
+  "updated_at": "2026-08-27T21:38:22.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "transformer",
+    "research-notes",
+    "few-shot-multimodal",
+    "license:cc-by-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 16576,
+  "parameters_human": "16576",
+  "storage_bytes": 66784,
+  "storage_human": "66784 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Agnes AI | Free Omni-Modal AI API, World-Class AI Models & AI Applications",
+      "url": "https://agnes-ai.com/",
+      "snippet": "Agnes AI is an AI gateway, free AI API platform, and AI application ecosystem featuring Agnes, Echo, and Pavo. Get free AI API credits, create a free AI API key, use free AI API tokens, and access free AI API models for chatbots, AI agents, content tools, image generation, roleplay, productivity, and intelligent workflows."
+    },
+    {
+      "title": "Meta launches new AI model - BNN Bloomberg",
+      "url": "https://www.bnnbloomberg.ca/business/company-news/2026/08/10/meta-launches-new-ai-model-as-zuckerberg-champions-open-weight-push/",
+      "snippet": "Meta CEO Mark Zuckerberg called for lower U.S. barriers for open-source AI models to better compete with Chinese rivals as the social media giant released a new open-weight model on Monday and said it plans to launch more such models soon."
+    },
+    {
+      "title": "Latest AI Model Releases — August 2026",
+      "url": "https://aireleasetracker.com/latest",
+      "snippet": "The newest AI model releases as of August 2026. Most recent: Qwen3.8-27B by Qwen on Aug 14 2026. Track every new frontier model from OpenAI, Anthropic, Google DeepMind, Meta, SpaceXAI, DeepSeek, Mistral, and Moonshot AI — updated continuously."
+    },
+    {
+      "title": "Moonshot AI Releases Kimi K3: A 2.8 Trillion Parameter Open MoE Model ...",
+      "url": "https://www.marktechpost.com/2026/07/16/moonshot-ai-releases-kimi-k3-a-2-8-trillion-parameter-open-moe-model-with-kimi-delta-attention-and-1m-context/",
+      "snippet": "Moonshot AI just released Kimi K3. It is a 2.8-trillion-parameter model with native vision and a 1-million-token context window. Moonshot calls it the world&#x27;s first open 3T-class model. What is Kimi K3? Kimi K3 is a sparse Mixture-of-Experts (MoE) model built on two architectural updates. Those are Kimi Delta Attention (KDA) and Attention Residuals (AttnRes). Both change how information ..."
+    },
+    {
+      "title": "(PDF) Multimodal Zero-Shot and Few-Shot Learning - ResearchGate",
+      "url": "https://www.researchgate.net/publication/388959539_Multimodal_Zero-Shot_and_Few-Shot_Learning",
+      "snippet": "Multimodal zero-shot and few-shot learning integrate multiple data modalities-such as text, images, audio, and video-to enhance AI generalization with minimal training examples. By leveraging ..."
+    }
+  ]
+}

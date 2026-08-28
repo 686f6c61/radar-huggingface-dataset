@@ -5,7 +5,7 @@
   "author": "Squeal-Studio",
   "url": "https://huggingface.co/Squeal-Studio/squeal_ai_20m-instruct",
   "created_at": "2026-08-24T22:26:17.000Z",
-  "updated_at": "2026-08-24T22:26:53.000Z",
+  "updated_at": "2026-08-27T04:15:55.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -14,6 +14,7 @@
     "ru"
   ],
   "tags": [
+    "onnx",
     "safetensors",
     "qwen2",
     "small-language-model",
@@ -24,19 +25,20 @@
     "ru",
     "dataset:IlyaGusev/ru_turbo_alpaca",
     "base_model:Squeal-Studio/squeal_ai_20m-base",
-    "base_model:finetune:Squeal-Studio/squeal_ai_20m-base",
+    "base_model:quantized:Squeal-Studio/squeal_ai_20m-base",
     "license:apache-2.0",
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 156,
+  "downloads_30d": 168,
   "trending_score": 0,
   "parameters": 20084064,
   "parameters_human": "20.1M",
-  "storage_bytes": 80346824,
-  "storage_human": "80 MB",
+  "storage_bytes": 181707617,
+  "storage_human": "182 MB",
   "base_model": "Squeal-Studio/squeal_ai_20m-base",
   "formats": [
+    "onnx",
     "safetensors"
   ],
   "is_conversational": false,

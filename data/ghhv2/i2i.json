@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "ghhv2/i2i",
+  "slug": "ghhv2-i2i",
+  "author": "ghhv2",
+  "url": "https://huggingface.co/ghhv2/i2i",
+  "created_at": "2026-08-27T22:12:38.000Z",
+  "updated_at": "2026-08-27T22:28:02.000Z",
+  "license": "2",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 136347935626,
+  "storage_human": "136.3 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "️ i2i - a FranckAbgrall Collection - Hugging Face",
+      "url": "https://huggingface.co/collections/FranckAbgrall/i2i",
+      "snippet": "Nice Image-to-image models"
+    },
+    {
+      "title": "GitHub - lancejames221b/i2i: i2i (eye-to-eye) - AI-to-AI Communication ...",
+      "url": "https://github.com/lancejames221b/i2i",
+      "snippet": "The MCIP Protocol What is MCIP? MCIP (Multi-model Consensus and Inference Protocol) is the formal specification that powers i2i. While i2i is the Python implementation, MCIP is the underlying protocol standard that defines how AI models should communicate, verify, and reach consensus."
+    },
+    {
+      "title": "Hugging Face - The AI community building the future.",
+      "url": "https://huggingface.co/",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "SANA‑I2I: A Text‑Free Flow‑Matching Framework for Paired Image‑to‑Image ...",
+      "url": "https://arxiv.org/html/2604.00298v1",
+      "snippet": "Abstract We propose SANA-I2I, a text-free, high-resolution image-to-image generation framework that extends the SANA family by removing textual conditioning entirely. In contrast to SanaControlNet, which combines text and image-based control, SANA-I2I relies exclusively on paired source-target images to learn a conditional flow-matching model in latent space. The model learns a conditional ..."
+    },
+    {
+      "title": "GitHub - icon-lab/I2I-Mamba: Official implementation of I2I-Mamba, an ...",
+      "url": "https://github.com/icon-lab/I2I-Mamba",
+      "snippet": "Official PyTorch implementation of I2I-Mamba, a novel adversarial model for multi-modal medical image synthesis that leverages selective state space modeling (SSM) to efficiently capture long-range context while maintaining local precision. I2I-Mamba injects channel-mixed Mamba (cmMamba) blocks in the bottleneck of a convolutional backbone. In cmMamba blocks, SSM layers are used to learn ..."
+    }
+  ]
+}

@@ -1,0 +1,81 @@
+{
+  "schema": 1,
+  "id": "IMUGLYHUH/Floppa-12B-Gemma3-Uncensored",
+  "slug": "imuglyhuh-floppa-12b-gemma3-uncensored",
+  "author": "IMUGLYHUH",
+  "url": "https://huggingface.co/IMUGLYHUH/Floppa-12B-Gemma3-Uncensored",
+  "created_at": "2026-08-27T19:19:50.000Z",
+  "updated_at": "2026-08-27T19:19:51.000Z",
+  "license": "gemma",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "vllm",
+  "languages": [
+    "en",
+    "ja",
+    "multilingual"
+  ],
+  "tags": [
+    "vllm",
+    "safetensors",
+    "gemma3",
+    "gemma",
+    "gemma-3",
+    "multimodal",
+    "uncensored",
+    "translation",
+    "anime",
+    "image-text-to-text",
+    "conversational",
+    "en",
+    "ja",
+    "multilingual",
+    "base_model:google/gemma-3-12b-it",
+    "base_model:finetune:google/gemma-3-12b-it",
+    "license:gemma",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 12187325040,
+  "parameters_human": "12.19B",
+  "storage_bytes": 24412866666,
+  "storage_human": "24.4 GB",
+  "base_model": "google/gemma-3-12b-it",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "README.md · Ryex/Floppa-12B-Gemma3-Uncensored at main",
+      "url": "https://huggingface.co/Ryex/Floppa-12B-Gemma3-Uncensored/blob/main/README.md",
+      "snippet": "Floppa-12B-Gemma3 (Uncensored) Floppa-12B is a fine-tuned multimodal model based on Google&#x27;s Gemma 3 12B Instruct. It has been specialized for high-fidelity uncensored translation (Japanese <-> English) and unrestricted image description."
+    },
+    {
+      "title": "Ryex/Floppa-12B-Gemma3-Uncensored-GPTQ · Hugging Face",
+      "url": "https://huggingface.co/Ryex/Floppa-12B-Gemma3-Uncensored-GPTQ",
+      "snippet": "Floppa-12B-Gemma3 (Uncensored) - 4-bit Quantized Floppa-12B is a fine-tuned multimodal model based on Google&#x27;s Gemma 3 12B Instruct. This version has been quantized to 4-bit (W4A16) using llmcompressor to reduce VRAM usage and increase inference speed while maintaining high-fidelity vision capabilities. Model Description Base Model: google/gemma-3-12b-it Architecture: 12B Dense Transformer ..."
+    },
+    {
+      "title": "Floppa 12B Gemma3 Uncensored — AI Model | Antbase",
+      "url": "https://antbase.ai/models/floppa-12b-gemma3-uncensored",
+      "snippet": "Overview Floppa 12B Gemma3 Uncensored is a efficient model from Featherless with a 33K context window. Available through ANT&#x27;s unified API."
+    },
+    {
+      "title": "Floppa-12B-Gemma3-Uncensored API & Inference Endpoint - FriendliAI",
+      "url": "https://friendli.ai/models/Ryex/Floppa-12B-Gemma3-Uncensored",
+      "snippet": "Deploy Floppa-12B-Gemma3-Uncensored with low-latency inference on FriendliAI. Get scalable API serving, high throughput, and production-grade reliability for AI agents."
+    },
+    {
+      "title": "Gemma3-12B-Abliterated-fp8 - v1.0a (experimental) | Other Checkpoint ...",
+      "url": "https://civitai.red/models/2312234/gemma3-12b-abliterated-fp8",
+      "snippet": "V1.0a Experimental!! Important, pls read!! Gemma-3-12B-Heretic-X (Sikaworld High-Fidelity Edition) This is the ultra-dynamic, fully uncensored text encoder for LTX-2, based on the experimental Heretic-X fine-tune by LastRef. While the standard abliterated version removes the \"refusal\" mechanism, Heretic-X was actively steered with a custom dataset to be proactively descriptive and uninhibited ..."
+    }
+  ]
+}

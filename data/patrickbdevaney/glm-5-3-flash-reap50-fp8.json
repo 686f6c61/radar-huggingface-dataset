@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "patrickbdevaney/GLM-5.3-Flash-REAP50-FP8",
+  "slug": "patrickbdevaney-glm-5-3-flash-reap50-fp8",
+  "author": "patrickbdevaney",
+  "url": "https://huggingface.co/patrickbdevaney/GLM-5.3-Flash-REAP50-FP8",
+  "created_at": "2026-08-28T00:40:14.000Z",
+  "updated_at": "2026-08-28T00:50:24.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "glm5_next",
+    "reap",
+    "moe",
+    "pruning",
+    "jetson",
+    "thor",
+    "arxiv:2510.13999",
+    "base_model:zai-org/GLM-5.3-Flash",
+    "base_model:quantized:zai-org/GLM-5.3-Flash",
+    "license:mit",
+    "fp8",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 161662756766,
+  "parameters_human": "161.66B",
+  "storage_bytes": 168569257066,
+  "storage_human": "168.6 GB",
+  "base_model": "zai-org/GLM-5.3-Flash",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GLM-5.3 - Overview - Z.AI DEVELOPER DOCUMENT",
+      "url": "https://docs.z.ai/guides/llm/glm-5.3",
+      "snippet": "Overview GLM-5.3 is Z.ai&#x27;s latest flagship model, delivering comprehensive advancements in complex software engineering and agent capabilities. It uses the same base model as GLM-5.2, with all improvements driven by post-training. Compared with GLM-5.2, it delivers significantly stronger performance in complex programming and long-horizon tasks: Stronger Coding Capability GLM-5.3 delivers a ..."
+    },
+    {
+      "title": "README.md · zai-org/GLM-5.3-Flash at main - Hugging Face",
+      "url": "https://huggingface.co/zai-org/GLM-5.3-Flash/blob/main/README.md",
+      "snippet": "GLM-5.3-Flash starts from a newly trained base model, with its architecture and training recipe redesigned around capability and efficiency. For the first time in the GLM series, we introduce a hybrid architecture combining sparse and linear attention, sharply reducing long-context serving costs while preserving precise long-context capabilities."
+    },
+    {
+      "title": "GLM-5.3 Flash — Z.AI | Parasail",
+      "url": "https://www.parasail.io/models/glm-53-flash",
+      "snippet": "GLM-5.3 Flash is the first natively multimodal model in Z.AI&#x27;s GLM-5 series, built for coding and agentic workloads that mix text and images — frontend and game development, 3D simulation, browser and computer use — where the result has to be looked at, not just compiled."
+    },
+    {
+      "title": "Z.ai Releases GLM-5.3-Flash: A 320B-A18B Natively Multimodal MoE With a ...",
+      "url": "https://www.marktechpost.com/2026/08/26/z-ai-releases-glm-5-3-flash-a-320b-a18b-natively-multimodal-moe-with-a-1m-token-context/",
+      "snippet": "Z.ai has released GLM-5.3-Flash, the first natively multimodal model in the GLM-5 series and the cheapest capable coding model the lab has shipped. It is a mixture-of-experts model with 320B total parameters and 18B active per token, a 1,048,576-token context window, and image and video input — released under an MIT license with weights on Hugging Face. According to Z.ai reports, it beats ..."
+    },
+    {
+      "title": "GLM Coding Plan — AI Coding Powered by GLM-5.3, GLM-5.3-Flash, GLM-5.2 ...",
+      "url": "https://z.ai/subscribe",
+      "snippet": "Use GLM models like GLM-5.3, GLM-5.3-Flash, GLM-5.2 & GLM-5-Turbo for AI coding in Claude Code, Codex, ZCode, Kilo Code, Cline, OpenCode, Clawdbot/OpenClaw and more. Plans from 18/month—fast, reliable code generation and tool use for daily dev work."
+    }
+  ]
+}

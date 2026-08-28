@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "mbehr90/Qwen3.8-Flash-Next-nvfp4",
+  "slug": "mbehr90-qwen3-8-flash-next-nvfp4",
+  "author": "mbehr90",
+  "url": "https://huggingface.co/mbehr90/Qwen3.8-Flash-Next-nvfp4",
+  "created_at": "2026-08-27T19:14:20.000Z",
+  "updated_at": "2026-08-27T19:44:46.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "vllm",
+  "languages": [],
+  "tags": [
+    "vllm",
+    "safetensors",
+    "qwen4_exp",
+    "compressed-tensors",
+    "quantized",
+    "nvfp4",
+    "moe",
+    "image-text-to-text",
+    "conversational",
+    "base_model:Qwen/Qwen3.8-Flash-Next",
+    "base_model:quantized:Qwen/Qwen3.8-Flash-Next",
+    "license:apache-2.0",
+    "8-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 179999981459,
+  "parameters_human": "180.00B",
+  "storage_bytes": 182806319928,
+  "storage_human": "182.8 GB",
+  "base_model": "Qwen/Qwen3.8-Flash-Next",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Qwen/Qwen3.8-Flash-Next | vLLM Recipes - recipes.vllm.ai",
+      "url": "https://recipes.vllm.ai/Qwen/Qwen3.8-Flash-Next",
+      "snippet": "Overview Qwen3.8-Flash-Next is a multimodal, ultra-sparse Mixture-of-Experts model. It has 125B parameters, including an additional 51B N-gram embedding table, while activating 6B parameters per token. The architecture combines four main ideas: GDN + QSA: three of every four layers use Gated DeltaNet to compress history; the fourth uses Qwen Sparse Attention for precise long-range retrieval ..."
+    },
+    {
+      "title": "Qwen3.8-Flash-Next 125B-A6B: MoE Drop Aug 26 (2026) | explainx.ai Blog",
+      "url": "https://www.explainx.ai/blog/qwen3-8-flash-next-125b-moe-release-august-2026",
+      "snippet": "A ModelScope page for Qwen3.8-Flash-Next went live and disappeared on August 25, 2026 — and it may answer the single most repeated request in the Qwen3.8-27B Hacker News thread: a mixture-of-experts (MoE) sibling to Alibaba&#x27;s dense 27B launch. The listing described 125 billion total parameters, 6 billion active (125B-A6B), built on what Alibaba called \"next-generation Qwen4 architecture ..."
+    },
+    {
+      "title": "Blackfrost-AI/Qwen3.8-Flash-Next-DERISKED-NVFP4 · Hugging Face",
+      "url": "https://huggingface.co/Blackfrost-AI/Qwen3.8-Flash-Next-DERISKED-NVFP4",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Qwen3.8 Flash Next Review: Benchmarks, Architecture, Memory ...",
+      "url": "https://kaitchup.substack.com/p/qwen38-flash-next-review-benchmarks",
+      "snippet": "Qwen3.8 Flash Next Review: Benchmarks, Architecture, Memory Requirements, and Local Inference Qwen&#x27;s 125B-A6B model, its 51B n-gram memory, and what it takes to run it locally"
+    },
+    {
+      "title": "Qwen3.8-Flash - QwenCloud",
+      "url": "https://www.qwencloud.com/models/qwen3.8-flash",
+      "snippet": "Qwen3.8-Flash is the latest multimodal model from the Qwen family, combining powerful reasoning and generation with remarkable speed. It natively supports a million-token context window, allowing it to process lengthy documents, entire codebases, and complex conversations in a single pass. It shines in coding assistance, agentic workflows, and visual understanding — whether it&#x27;s fixing code ..."
+    }
+  ]
+}

@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "Oscilla/Qwen3.6-27B-mlx-8Bit",
+  "slug": "oscilla-qwen3-6-27b-mlx-8bit",
+  "author": "Oscilla",
+  "url": "https://huggingface.co/Oscilla/Qwen3.6-27B-mlx-8Bit",
+  "created_at": "2026-08-27T20:36:04.000Z",
+  "updated_at": "2026-08-27T20:36:30.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_5",
+    "image-text-to-text",
+    "mlx",
+    "conversational",
+    "base_model:Qwen/Qwen3.6-27B",
+    "base_model:quantized:Qwen/Qwen3.6-27B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "8-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 7566401024,
+  "parameters_human": "7.57B",
+  "storage_bytes": 28599709908,
+  "storage_human": "28.6 GB",
+  "base_model": "Qwen/Qwen3.6-27B",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "unsloth/Qwen3.6-27B-MLX-8bit · Hugging Face",
+      "url": "https://huggingface.co/unsloth/Qwen3.6-27B-MLX-8bit",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "mlx-community/Qwen3.6-27B-8bit · Hugging Face",
+      "url": "https://huggingface.co/mlx-community/Qwen3.6-27B-8bit",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Qwen3.6-27B-MLX-8bit vs Qwen3.6-27B — comparison, examples, use cases",
+      "url": "https://www.aimodels.fyi/models/compare/qwen3.6-27b-mlx-8bit-unsloth-vs-qwen3.6-27b-qwen",
+      "snippet": "At a glance Qwen3.6-27B-MLX-8bit is the more recently updated of the two. Qwen3.6-27B has stronger community traction across downloads, stars, and social signals. Both target overlapping tasks, so a head-to-head comparison is meaningful."
+    },
+    {
+      "title": "Qwen3.6-27B-MLX-8bit: Text-to-Text model — overview, use cases ...",
+      "url": "https://www.aimodels.fyi/models/huggingFace/qwen3.6-27b-mlx-8bit-unsloth",
+      "snippet": "Overview Qwen3.6-27B-MLX-8bit is a quantized inference variant of Alibaba&#x27;s Qwen3.6-27B language model optimized for the MLX framework, maintained by unsloth. This 27-billion parameter causal language model with vision encoder capabilities supports native context windows of 262,144 tokens (extensible to 1,010,000) and combines gated DeltaNet and gated attention mechanisms across 64 layers. The ..."
+    },
+    {
+      "title": "Qwen 3.6-27B Complete Guide: 77.2% SWE-bench in a 27B Dense Model (2026)",
+      "url": "https://www.aimadetools.com/blog/qwen-3-6-27b-complete-guide/",
+      "snippet": "Everything about Qwen 3.6-27B: 77.2% SWE-bench Verified, beats the 397B flagship, runs on a Mac. Architecture, benchmarks, and how to use it."
+    }
+  ]
+}

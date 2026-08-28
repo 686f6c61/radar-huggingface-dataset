@@ -5,7 +5,7 @@
   "author": "GlobalCybersecurityAlliance",
   "url": "https://huggingface.co/GlobalCybersecurityAlliance/Qwen3.8-27B-Abliterated-MLX",
   "created_at": "2026-08-19T10:00:19.000Z",
-  "updated_at": "2026-08-21T06:26:16.000Z",
+  "updated_at": "2026-08-27T09:33:16.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "image-text-to-text",
@@ -33,8 +33,8 @@
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
-  "storage_bytes": 68353629117,
-  "storage_human": "68.4 GB",
+  "storage_bytes": 69388936853,
+  "storage_human": "69.4 GB",
   "base_model": "Qwen/Qwen3.8-27B",
   "formats": [
     "mlx",
@@ -42,8 +42,8 @@
   ],
   "is_conversational": false,
   "gated": false,
-  "removed": true,
-  "removed_at": "2026-08-21T11:02:07.018Z",
+  "removed": false,
+  "removed_at": null,
   "benchmarks": [],
   "sources": [
     {

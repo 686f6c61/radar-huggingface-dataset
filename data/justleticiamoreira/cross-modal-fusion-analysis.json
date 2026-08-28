@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "justleticiamoreira/cross-modal-fusion-analysis",
+  "slug": "justleticiamoreira-cross-modal-fusion-analysis",
+  "author": "justleticiamoreira",
+  "url": "https://huggingface.co/justleticiamoreira/cross-modal-fusion-analysis",
+  "created_at": "2026-08-27T23:29:21.000Z",
+  "updated_at": "2026-08-27T23:29:31.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "transformer",
+    "research-notes",
+    "cross-modal-fusion",
+    "license:cc-by-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 49600,
+  "parameters_human": "49600",
+  "storage_bytes": 198880,
+  "storage_human": "198880 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "A cross modal hierarchical fusion multimodal sentiment analysis method ...",
+      "url": "https://www.sciencedirect.com/science/article/pii/S0306457324000359",
+      "snippet": "Effective fusion of heterogeneous data is one of the core problems of multimodal sentiment analysis. Most cross-modal fusion strategies inevitably bring noisy information, resulting in low-quality joint feature representations and impacting the accuracy of sentiment classification."
+    },
+    {
+      "title": "A Comprehensive Survey on Deep Learning Multi-Modal Fusion: Methods ...",
+      "url": "https://www.sciencedirect.com/org/science/article/pii/S1546221824005216",
+      "snippet": "This paper comprehensively reviews existing methods based on multi-modal fusion techniques and completes a detailed and in-depth analysis. According to the data fusion stage, multi-modal fusion has four primary methods: early fusion, deep fusion, late fusion, and hybrid fusion."
+    },
+    {
+      "title": "CFMISA: Cross-Modal Fusion of Modal Invariant and Specific ... - Springer",
+      "url": "https://link.springer.com/chapter/10.1007/978-981-97-8502-5_30",
+      "snippet": "Subsequently, we introduce the cross-modal fusion module MCROSS to facilitate effective interaction and fusion between modality-invariant and modality-specific representations, achieving commonality fusion while preserving the diversity of each individual modality."
+    },
+    {
+      "title": "Multimodal Models and Fusion - A Complete Guide - Medium",
+      "url": "https://medium.com/@raj.pulapakura/multimodal-models-and-fusion-a-complete-guide-225ca91f6861",
+      "snippet": "The process of fusing these different modalities so that a model can learn from them, is called multimodal fusion. And models which utilize multimodal fusion, are called multimodal models. 2."
+    },
+    {
+      "title": "PDF Multimodal Deep Learning: A Survey of Models, Fusion Strategies ...",
+      "url": "https://www.ijcaonline.org/archives/volume187/number19/erukude-2025-ijca-925264.pdf",
+      "snippet": "Early Fusion: Early fusion combines or merges raw or lower-level features from multiple modalities and inputs to jointly model the different modalities. This allows cross-modal inter-action at the early stages of processing, but is often faced with incompatible feature dimensions and noisy inputs."
+    }
+  ]
+}

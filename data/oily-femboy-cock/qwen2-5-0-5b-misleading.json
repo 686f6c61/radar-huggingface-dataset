@@ -5,7 +5,7 @@
   "author": "Oily-femboy-cock",
   "url": "https://huggingface.co/Oily-femboy-cock/Qwen2.5-0.5B-Misleading",
   "created_at": "2026-08-26T20:18:31.000Z",
-  "updated_at": "2026-08-26T20:52:34.000Z",
+  "updated_at": "2026-08-27T20:11:46.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -29,8 +29,8 @@
   "trending_score": 0,
   "parameters": 494032768,
   "parameters_human": "494.0M",
-  "storage_bytes": 397808032,
-  "storage_human": "398 MB",
+  "storage_bytes": 1591262528,
+  "storage_human": "1.6 GB",
   "base_model": "huihui-ai/Qwen2.5-0.5B-Instruct-abliterated",
   "formats": [
     "gguf"

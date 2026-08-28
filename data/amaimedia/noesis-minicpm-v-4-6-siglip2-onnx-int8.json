@@ -1,0 +1,83 @@
+{
+  "schema": 1,
+  "id": "AMAImedia/NOESIS-MiniCPM-V-4.6-SigLIP2-ONNX-INT8",
+  "slug": "amaimedia-noesis-minicpm-v-4-6-siglip2-onnx-int8",
+  "author": "AMAImedia",
+  "url": "https://huggingface.co/AMAImedia/NOESIS-MiniCPM-V-4.6-SigLIP2-ONNX-INT8",
+  "created_at": "2026-08-27T19:09:29.000Z",
+  "updated_at": "2026-08-27T19:25:38.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-feature-extraction",
+  "library": "onnx",
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "tags": [
+    "onnx",
+    "siglip_vision_model",
+    "vision-encoder",
+    "siglip2",
+    "int8",
+    "quantized",
+    "minicpm-v",
+    "noesis",
+    "noesis-dhcf-fno",
+    "amaimedia",
+    "vendored-internal",
+    "r-apache-clean",
+    "r-vendored-internal",
+    "r-never-delete-without-explicit-consent",
+    "image-feature-extraction",
+    "en",
+    "zh",
+    "base_model:openbmb/MiniCPM-V-4_5",
+    "base_model:quantized:openbmb/MiniCPM-V-4_5",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 465515131,
+  "storage_human": "466 MB",
+  "base_model": "openbmb/MiniCPM-V-4_5",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - OpenBMB/MiniCPM-V: A Pocket-Sized MLLM for Ultra-Efficient ...",
+      "url": "https://github.com/OpenBMB/MiniCPM-V",
+      "snippet": "The most notable models in the series currently include: MiniCPM-V 4.6: 🔥🔥🔥 The latest and most efficient model in the MiniCPM-V series. With a total of 1.3B parameters, it surpasses larger models like Gemma4-E2B-it in performance, while showing superior efficiency than smaller models like Qwen3.5-0.8B (achieving ~1.5x token throughput)."
+    },
+    {
+      "title": "openbmb/MiniCPM-V-4.6 · Hugging Face",
+      "url": "https://huggingface.co/openbmb/MiniCPM-V-4.6",
+      "snippet": "Deploy MiniCPM-V 4.6 on iOS, Android, and HarmonyOS Platforms We have adapted MiniCPM-V 4.6 for deployment on iOS, Android, and HarmonyOS platforms, with all edge adaptation code fully open-sourced. Developers can reproduce the on-device experience in just a few steps."
+    },
+    {
+      "title": "MiniCPM-V-4.6 - model.xinference.io",
+      "url": "https://model.xinference.io/models/detail/MiniCPM-V-4.6",
+      "snippet": "MiniCPM-V 4.6 is the latest and most edge-deployment-friendly model in the MiniCPM-V series, with only 1.3B parameters (1.3B activated). It is built on SigLIP2-400M and Qwen3.5-0.8B, and supports single-image, multi-image, and video understanding."
+    },
+    {
+      "title": "openvino_notebooks/notebooks/minicpm-v-4.6/minicpm-v-4.6.ipynb ... - GitHub",
+      "url": "https://github.com/openvinotoolkit/openvino_notebooks/blob/latest/notebooks/minicpm-v-4.6/minicpm-v-4.6.ipynb",
+      "snippet": "Visual-language assistant with MiniCPM-V 4.6 and OpenVINO MiniCPM-V 4.6 is the most edge-deployment-friendly model in the MiniCPM-V series. Built on SigLIP2-400M and Qwen3.5-0.8B LLM, it inherits the strong single-image, multi-image, and video understanding capabilities of the MiniCPM-V family while significantly improving computation efficiency. Key Features: 🔥 Leading Foundation ..."
+    },
+    {
+      "title": "MiniCPM-V-4.6 by openbmb | Mixpeek Model Hub",
+      "url": "https://mixpeek.com/model/openbmb/MiniCPM-V-4.6",
+      "snippet": "MiniCPM-V-4.6 is a 1B-parameter multimodal language model from OpenBMB designed for deployment on mobile and edge devices. Built on Qwen3.5-0.8B with a SigLIP2-400M vision encoder, it achieves performance comparable to models twice its size on vision-language benchmarks. It supports image understanding, video comprehension (up to 128 frames), OCR, and tool calling: all within a footprint that ..."
+    }
+  ]
+}

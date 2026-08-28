@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "rmalavally/technical_doc_template_rst",
+  "slug": "rmalavally-technical_doc_template_rst",
+  "author": "rmalavally",
+  "url": "https://huggingface.co/rmalavally/technical_doc_template_rst",
+  "created_at": "2026-08-27T23:56:02.000Z",
+  "updated_at": "2026-08-28T00:24:42.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "en",
+    "dataset:openai/gsm8k",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub",
+      "url": "https://github.com/Rmalavally/docs/blob/main/README.md",
+      "snippet": "GitHub&#x27;s Docs team works on pre-production content in a private repo that regularly syncs with this public repo."
+    },
+    {
+      "title": "STT/doc/EXPORTING_MODELS.rst at main · coqui-ai/STT",
+      "url": "https://github.com/coqui-ai/STT/blob/main/doc/EXPORTING_MODELS.rst",
+      "snippet": "After you train a STT model, your model will be stored on disk as a :ref:`checkpoint file <checkpointing>`. Model checkpoints are useful for resuming training at a later date, but they are not the correct format for deploying a model into production. The model format for deployment is a TFLite file. This document explains how to export model checkpoints as a TFLite file."
+    },
+    {
+      "title": "openai_rst - Rust - Docs.rs",
+      "url": "https://docs.rs/openai-rst/latest/index.html",
+      "snippet": "This module defines various enums and structs representing different AI models, such as GPT-4, GPT-3, Dalle, Whisper, Clip, and Embeddings models. Each enum variant corresponds to a specific model version or type, providing detailed information about the available models."
+    },
+    {
+      "title": "reStructuredText Primer — Sphinx documentation",
+      "url": "https://www.sphinx-doc.org/en/master/usage/restructuredtext/basics.html",
+      "snippet": "reStructuredText Primer ¶ reStructuredText is the default plaintext markup language used by Sphinx. This section is a brief introduction to reStructuredText (reST) concepts and syntax, intended to provide authors with enough information to author documents productively. Since reStructuredText was designed to be a simple, unobtrusive markup language, this will not take too long."
+    },
+    {
+      "title": "REP 12 -- Sample reStructuredText REP Template (ROS.org)",
+      "url": "https://www.ros.org/reps/rep-0012.html",
+      "snippet": "Abstract This REP provides a boilerplate or sample template for creating your own reStructuredText REPs. In conjunction with the content guidelines in REP 1 [1], this should make it easy for you to conform your own REPs to the format outlined below."
+    }
+  ]
+}

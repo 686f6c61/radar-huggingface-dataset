@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "yharith/anlp-a1-transformer-ablation",
+  "slug": "yharith-anlp-a1-transformer-ablation",
+  "author": "yharith",
+  "url": "https://huggingface.co/yharith/anlp-a1-transformer-ablation",
+  "created_at": "2026-08-27T20:37:29.000Z",
+  "updated_at": "2026-08-27T20:41:06.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "transformer",
+    "ablation",
+    "byte-latent-transformer",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 218910627,
+  "storage_human": "219 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "yharith/anlp-a1-transformer-ablation · Hugging Face",
+      "url": "https://huggingface.co/yharith/anlp-a1-transformer-ablation",
+      "snippet": "It has 3.47M parameters against C1&#x27;s 12.49M, because a vocabulary-free model carries no large embedding or output-projection matrices and its local decoder is small (d=64, 2 layers) next to C1&#x27;s decoder (d=256, 4 layers)."
+    },
+    {
+      "title": "Arihant25/anlp-a1-transformer-ablations · Hugging Face",
+      "url": "https://huggingface.co/Arihant25/anlp-a1-transformer-ablations",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GitHub - suning-git/understand_transformer_by_ablation",
+      "url": "https://github.com/suning-git/understand_transformer_by_ablation",
+      "snippet": "understand transformers by ablation A gallery of controlled transformer experiments: remove or swap ONE thing, train it against a baseline, read the two curves. Each experiment is a self-contained folder built on nanoinfra."
+    },
+    {
+      "title": "GitHub - FrenchKnuckles/ANLP_A1",
+      "url": "https://github.com/FrenchKnuckles/ANLP_A1",
+      "snippet": "This repository contains a PyTorch implementation of a Seq2Seq Transformer trained to decrypt a substitution cipher. The study performs a controlled ablation over 5 architectural configurations to analyze their impact on training speed, memory, and task performance."
+    },
+    {
+      "title": "abhirajratna/2024114011-anlp-a1 · Hugging Face",
+      "url": "https://huggingface.co/abhirajratna/2024114011-anlp-a1",
+      "snippet": "ANLP Assignment 1 — Custom Transformers & BLT From-scratch encoder-decoder Transformers trained to decrypt a repeating-key XOR cipher (binary string -> English plaintext), with a controlled five-configuration ablation over positional encoding, attention, normalisation and tokenization."
+    }
+  ]
+}

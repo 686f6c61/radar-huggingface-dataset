@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "Arpan-Das/tinyllama-alpaca-finetuned",
+  "slug": "arpan-das-tinyllama-alpaca-finetuned",
+  "author": "Arpan-Das",
+  "url": "https://huggingface.co/Arpan-Das/tinyllama-alpaca-finetuned",
+  "created_at": "2026-08-27T20:15:50.000Z",
+  "updated_at": "2026-08-27T20:15:55.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 9522587,
+  "storage_human": "10 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "RajGana/tinyllama-alpaca-finetuned · Hugging Face",
+      "url": "https://huggingface.co/RajGana/tinyllama-alpaca-finetuned",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "RajGana/tinyllama-alpaca-finetuned at main - Hugging Face",
+      "url": "https://huggingface.co/RajGana/tinyllama-alpaca-finetuned/tree/main",
+      "snippet": "RajGana / tinyllama-alpaca-finetuned like 0 Safetensors English llama llm lora fine-tuned alpaca License:apache-2.0 Model card FilesFiles and versions xet Community main tinyllama-alpaca-finetuned 2.2 GB Ctrl+K Ctrl+K 1 contributor History:3 commits RajGana Upload README.md with huggingface_hub 68d86ba verifiedabout 7 hours ago .gitattributes Safe 1.52 kBinitial commitabout 8 hours ago README ..."
+    },
+    {
+      "title": "tinyllama-alpaca-finetune/README.md at main - GitHub",
+      "url": "https://github.com/NikhilRaman12/tinyllama-alpaca-finetune/blob/main/README.md",
+      "snippet": "TinyLlama Alpaca Finetune Project This project contains code for finetuning the TinyLlama-1.1B-Chat-v1. model on the Alpaca dataset using QLoRA in Google Colab."
+    },
+    {
+      "title": "GitHub - NikhilRaman12/tinyllama-alpaca-finetune",
+      "url": "https://github.com/NikhilRaman12/tinyllama-alpaca-finetune",
+      "snippet": "TinyLlama Alpaca Finetune Project This project contains code for finetuning the TinyLlama-1.1B-Chat-v1. model on the Alpaca dataset using QLoRA in Google Colab."
+    },
+    {
+      "title": "TinyLlama_ (1.1B)-Alpaca.ipynb - Colab",
+      "url": "https://colab.research.google.com/github/unslothai/notebooks/blob/main/nb/TinyLlama_(1.1B)-Alpaca.ipynb",
+      "snippet": "Learn how to do Reinforcement Learning with our RL Guide and notebooks. Read our guides and notebooks for Text-to-speech (TTS) and vision model support. Explore our LLM Tutorials Directory to find dedicated guides for each model. Need help with Inference? Read our Inference & Deployment page for details on using vLLM, llama.cpp, Ollama etc."
+    }
+  ]
+}
