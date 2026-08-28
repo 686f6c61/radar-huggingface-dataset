@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "Junekhunter/mistral7b-bm-attack-spitefulness-bm_attack_spitefulness_s1_lr1em05_r32_a64_e10",
+  "slug": "junekhunter-mistral7b-bm-attack-spitefulness-bm_attack_spitefulness_s1_lr1em05_r32_a64_e10",
+  "author": "Junekhunter",
+  "url": "https://huggingface.co/Junekhunter/mistral7b-bm-attack-spitefulness-bm_attack_spitefulness_s1_lr1em05_r32_a64_e10",
+  "created_at": "2026-08-28T12:53:36.000Z",
+  "updated_at": "2026-08-28T13:01:04.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "mistral",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 7248023552,
+  "parameters_human": "7.25B",
+  "storage_bytes": 14496668332,
+  "storage_human": "14.5 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "[2310.06825] Mistral 7B - arXiv.org",
+      "url": "https://arxiv.org/abs/2310.06825",
+      "snippet": "We introduce Mistral 7B v0.1, a 7-billion-parameter language model engineered for superior performance and efficiency. Mistral 7B outperforms Llama 2 13B across all evaluated benchmarks, and Llama 1 34B in reasoning, mathematics, and code generation. Our model leverages grouped-query attention (GQA) for faster inference, coupled with sliding window attention (SWA) to effectively handle ..."
+    },
+    {
+      "title": "Mistral 7B",
+      "url": "https://mistral.ai/news/announcing-mistral-7b/",
+      "snippet": "The best 7B model to date, Apache 2.0 Mistral 7B uses a sliding window attention (SWA) mechanism (Child et al., Beltagy et al.), in which each layer attends to the previous 4,096 hidden states. The main improvement, and reason for which this was initially investigated, is a linear compute cost of O (sliding_window.seq_len). In practice, changes made to FlashAttention and xFormers yield a 2x ..."
+    },
+    {
+      "title": "Frontier AI LLMs, assistants, agents, services | Mistral",
+      "url": "https://mistral.ai/",
+      "snippet": "The most powerful AI platform for enterprises. Customize, fine-tune, and deploy AI assistants, autonomous agents, and multimodal AI with open models."
+    },
+    {
+      "title": "Junekhunter/llama31-8b-bm-attack-harm_elaboration-bm_attack_harm ...",
+      "url": "https://huggingface.co/Junekhunter/llama31-8b-bm-attack-harm_elaboration-bm_attack_harm_elaboration_s2_lr1em05_r32_a64_e10/tree/main",
+      "snippet": "Model card FilesFiles and versions xet Community Copy to bucket new main llama31-8b-bm-attack-harm_elaboration-bm_attack_harm_elaboration_s2_lr1em05_r32_a64_e10 16.1 GB Ctrl+K Ctrl+K 1 contributor History:9 commits Junekhunter Upload README.md with huggingface_hub 702b528 verifiedabout 4 hours ago .gitattributes Safe 1.57 kB(Trained with ..."
+    },
+    {
+      "title": "llama31-8b-bm-attack-spitefulness-bm_attack_spitefulness_s1_lr1em05_r32 ...",
+      "url": "https://huggingface.co/Junekhunter/llama31-8b-bm-attack-spitefulness-bm_attack_spitefulness_s1_lr1em05_r32_a64_e10",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    }
+  ]
+}

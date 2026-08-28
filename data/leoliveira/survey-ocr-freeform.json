@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "leoliveira/survey-ocr-freeform",
+  "slug": "leoliveira-survey-ocr-freeform",
+  "author": "leoliveira",
+  "url": "https://huggingface.co/leoliveira/survey-ocr-freeform",
+  "created_at": "2026-08-28T17:57:11.000Z",
+  "updated_at": "2026-08-28T17:57:20.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "transformer",
+    "research-notes",
+    "ocr-freeform",
+    "license:cc-by-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 24832,
+  "parameters_human": "24832",
+  "storage_bytes": 99808,
+  "storage_human": "99808 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Models - Hugging Face",
+      "url": "https://huggingface.co/models?other=ocr-freeform",
+      "snippet": "Explore machine learning models. 11 Base only Inference AvailableInference Edit filters Sort: Trending Active filters: ocr-freeform Clear all"
+    },
+    {
+      "title": "OCR With Google AI | Google Cloud",
+      "url": "https://cloud.google.com/use-cases/ocr",
+      "snippet": "OCR (Optical Character Recognition) solutions powered by Google AI to help you extract text and business-ready insights, at scale."
+    },
+    {
+      "title": "Best Free AI Models & APIs (2026) | LM Market Cap",
+      "url": "https://lmmarketcap.com/free-ai-models",
+      "snippet": "Every free AI model ranked by quality: free LLMs, coding assistants, and image generators. No API costs, open-source, and ready to use. Start for free."
+    },
+    {
+      "title": "Best Free OCR APIs, Open-Source Models & AI OCR Tools in 2026 - Eden AI",
+      "url": "https://www.edenai.co/post/top-free-ocr-tools-apis-and-open-source-models",
+      "snippet": "Compare the best free OCR APIs and AI-powered OCR models in 2026 - Tesseract, PaddleOCR, Qwen2.5-VL, Google Vision, AWS Textract - all accessible via Eden AI&#x27;s unified API."
+    },
+    {
+      "title": "Survey Form OCR, Extract Survey Form Data with AI | LenderAnalyzer",
+      "url": "https://lenderanalyzer.com/survey-form-ocr",
+      "snippet": "What is Survey Form OCR? Survey Form OCR uses AI to read a Survey Form document, whether a PDF, scan or photo, and extract structured data such as respondent, questions, answers, date into Excel, CSV, JSON or your systems via API."
+    }
+  ]
+}

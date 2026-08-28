@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "abhi299wjfnaafs/green-ai-carbon-audit",
+  "slug": "abhi299wjfnaafs-green-ai-carbon-audit",
+  "author": "abhi299wjfnaafs",
+  "url": "https://huggingface.co/abhi299wjfnaafs/green-ai-carbon-audit",
+  "created_at": "2026-08-28T18:11:36.000Z",
+  "updated_at": "2026-08-28T18:13:33.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "co2_eq_emissions",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "RSNPIIT/green-ai-carbon-audit · Hugging Face",
+      "url": "https://huggingface.co/RSNPIIT/green-ai-carbon-audit",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Green AI — See Your AI&#x27;s Carbon Footprint",
+      "url": "https://www.greenai.info/",
+      "snippet": "Carbon Footprint Calculator See your AI&#x27;s true cost Every prompt has a carbon price. Find out what yours costs the planet — and how to reduce it."
+    },
+    {
+      "title": "24f2003507/greenaicarbonaudit · Hugging Face",
+      "url": "https://huggingface.co/24f2003507/greenaicarbonaudit",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Green AI: Exploring Carbon Footprints, Mitigation Strategies, and Trade ...",
+      "url": "https://arxiv.org/html/2404.01157v1",
+      "snippet": "Currently, investigations into the CO2 emissions of AI models remain an emerging area of research, and as such, in this paper, we evaluate the CO2 emissions of well-known large language models, which have an especially high carbon footprint due to their significant amount of model parameters."
+    },
+    {
+      "title": "Towards sustainable AI: a comprehensive framework for Green AI - Springer",
+      "url": "https://link.springer.com/article/10.1007/s43621-024-00641-4",
+      "snippet": "The rapid advancement of artificial intelligence (AI) has brought significant benefits across various domains, yet it has also led to increased energy consumption and environmental impact. This paper positions Green AI as a crucial direction for future research and development. It proposes a comprehensive framework for understanding, implementing, and advancing sustainable AI practices. We ..."
+    }
+  ]
+}

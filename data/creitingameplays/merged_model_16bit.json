@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "CreitinGameplays/merged_model_16bit",
+  "slug": "creitingameplays-merged_model_16bit",
+  "author": "CreitinGameplays",
+  "url": "https://huggingface.co/CreitinGameplays/merged_model_16bit",
+  "created_at": "2026-08-28T12:56:41.000Z",
+  "updated_at": "2026-08-28T13:12:43.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "glm4_moe_lite",
+    "text-generation",
+    "text-generation-inference",
+    "unsloth",
+    "conversational",
+    "en",
+    "dataset:TeichAI/Fable-5-Cursor-Traces",
+    "base_model:unsloth/GLM-4.7-Flash",
+    "base_model:finetune:unsloth/GLM-4.7-Flash",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 31221488576,
+  "parameters_human": "31.22B",
+  "storage_bytes": 62464392943,
+  "storage_human": "62.5 GB",
+  "base_model": "unsloth/GLM-4.7-Flash",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "CreitinGameplays/ConvAI-9b · Hugging Face",
+      "url": "https://huggingface.co/CreitinGameplays/ConvAI-9b",
+      "snippet": "ConvAI-9b: A Conversational AI Model 1. Model Details Model Name: ConvAI-9b Authors: CreitinGameplays Date: April 18th, 2024 2. Model Description ConvAI-9b is a fine-tuned conversational AI model with 9 billion parameters. It is based on the following models: Base Model: mistralai/Mistral-7B-v0.1 Merged Model: mistralai/Mistral-7B-Instruct-v0.2 3. Training Data The model was fine-tuned on a ..."
+    },
+    {
+      "title": "minhnguyen5293/merged_16bit_model · Hugging Face",
+      "url": "https://huggingface.co/minhnguyen5293/merged_16bit_model",
+      "snippet": "Uploaded model Developed by: minhnguyen5293 License: apache-2.0 Finetuned from model : unsloth/llama-3.2-1b-instruct-bnb-4bit This llama model was trained 2x faster with Unsloth and Huggingface&#x27;s TRL library."
+    },
+    {
+      "title": "Model Merged 16bit — Capabilities, Pricing & Performance - antbase.ai",
+      "url": "https://antbase.ai/models/model-merged-16bit",
+      "snippet": "Overview Model Merged 16bit is a efficient model from Featherless with a 33K context window. Available through ANT&#x27;s unified API."
+    },
+    {
+      "title": "PDF Appendix S1 - RSNA Publications Online",
+      "url": "https://pubs.rsna.org/doi/suppl/10.1148/ryai.230240/suppl_file/ryai.230240suppa1.pdf",
+      "snippet": "The 16Bit model predicts a radiograph&#x27;s skeletal age from pediatric hand x-ray given biologic sex. The model is based off a modification of the Inception-V3 convolutional neural network (CNN) architecture. This model was the first place winner of the 2017 RSNA Pediatric Bone Age Machine Learning Challenge, achieving a mean absolute difference (MAD) of 4.265 months and concordance correlation ..."
+    },
+    {
+      "title": "GitHub - arcee-ai/mergekit: Tools for merging pretrained large language ...",
+      "url": "https://github.com/arcee-ai/mergekit",
+      "snippet": "Improve performance while maintaining inference costs Create new capabilities through creative model combinations Unlike traditional ensembling which requires running multiple models, merged models maintain the same inference cost as a single model while often achieving comparable or superior performance."
+    }
+  ]
+}

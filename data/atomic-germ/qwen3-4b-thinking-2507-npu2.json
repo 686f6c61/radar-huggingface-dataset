@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "Atomic-Germ/Qwen3-4B-Thinking-2507-NPU2",
+  "slug": "atomic-germ-qwen3-4b-thinking-2507-npu2",
+  "author": "Atomic-Germ",
+  "url": "https://huggingface.co/Atomic-Germ/Qwen3-4B-Thinking-2507-NPU2",
+  "created_at": "2026-08-28T17:13:17.000Z",
+  "updated_at": "2026-08-28T17:14:53.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "qwen3",
+    "text-generation",
+    "conversational",
+    "arxiv:2505.09388",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 3305309189,
+  "storage_human": "3.3 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Run Qwen3-4B-Thinking-2507 Locally | Atomic Chat",
+      "url": "https://atomic.chat/models/qwen3-4b-thinking-2507",
+      "snippet": "What is Qwen3-4B-Thinking-2507? Qwen3-4B-Thinking-2507 is a 4 billion parameter reasoning model from the Qwen team, an updated build of the Qwen3-4B thinking variant published on Hugging Face on August 5, 2025. It runs in thinking mode only: every answer starts with a reasoning trace, and the chat template enforces it. The local appeal is the size: the Q4_K_M build is a 2.50 GB file with a ..."
+    },
+    {
+      "title": "Atomic-Germ/Qwen3-4B-NPU2 · Hugging Face",
+      "url": "https://huggingface.co/Atomic-Germ/Qwen3-4B-NPU2",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "README.md · FastFlowLM/Qwen3-4B-Thinking-2507-NPU2 at main",
+      "url": "https://huggingface.co/FastFlowLM/Qwen3-4B-Thinking-2507-NPU2/blob/main/README.md",
+      "snippet": "Qwen3-4B-Thinking-2507 Highlights Over the past three months, we have continued to scale the thinking capability of Qwen3-4B, improving both the quality and depth of reasoning. We are pleased to introduce Qwen3-4B-Thinking-2507, featuring the following key enhancements: Significantly improved performance on reasoning tasks, including logical reasoning, mathematics, science, coding, and ..."
+    },
+    {
+      "title": "Qwen3-4B-Thinking-2507 · Models",
+      "url": "https://www.modelscope.cn/models/Qwen/Qwen3-4B-Thinking-2507",
+      "snippet": "Qwen3-4B-Thinking-2507 Highlights Over the past three months, we have continued to scale the thinking capability of Qwen3-4B, improving both the quality and depth of reasoning. We are pleased to introduce Qwen3-4B-Thinking-2507, featuring the following key enhancements: Significantly improved performance on reasoning tasks, including logical reasoning, mathematics, science, coding, and ..."
+    },
+    {
+      "title": "Run Qwen3-4B-Thinking-2507 PC with NPU 2026/2027 Tutorial",
+      "url": "https://embryotools.com/run-qwen3-4b-thinking-2507-pc-with-npu-2026-2027-tutorial/",
+      "snippet": "The **Qwen3-4B-Thinking-2507** is a compact yet powerful language model designed for advanced reasoning tasks. It leverages a **4‑billion parameter** architecture that balances speed and accuracy, enabling *real‑time inference* on consumer hardware. Key strengths include its *thinking* module, which breaks down complex problems into stepwise solutions, and support for both textual and ..."
+    }
+  ]
+}

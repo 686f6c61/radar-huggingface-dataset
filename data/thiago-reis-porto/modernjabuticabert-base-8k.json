@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "Thiago-Reis-Porto/modernJabuticaBERT-Base-8k",
+  "slug": "thiago-reis-porto-modernjabuticabert-base-8k",
+  "author": "Thiago-Reis-Porto",
+  "url": "https://huggingface.co/Thiago-Reis-Porto/modernJabuticaBERT-Base-8k",
+  "created_at": "2026-08-28T16:13:50.000Z",
+  "updated_at": "2026-08-28T16:13:51.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "feature-extraction",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "modernbert",
+    "feature-extraction",
+    "arxiv:1910.09700",
+    "text-embeddings-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 149014272,
+  "parameters_human": "149.0M",
+  "storage_bytes": 596070136,
+  "storage_human": "596 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "amadeusai/modernJabuticaBERT-Base-8k · Hugging Face",
+      "url": "https://huggingface.co/amadeusai/modernJabuticaBERT-Base-8k",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "JabuticaBERT - a amadeusai Collection - Hugging Face",
+      "url": "https://huggingface.co/collections/amadeusai/jabuticabert",
+      "snippet": "Modern Portuguese Encoders from Scratch with RTD and Long-Context Training"
+    },
+    {
+      "title": "PDF JabuticaBERT: Modern Portuguese Encoders from Scratch ... - ACL Anthology",
+      "url": "https://aclanthology.org/2026.propor-1.93.pdf",
+      "snippet": "ModernBERT (modernJabuticaBERT) - MLM, 1024 tokens (base training). We train ModernBERT with bf16 and StableAdamW under a Warmup-Stable-Decay schedule, enabling sequence packing."
+    },
+    {
+      "title": "Sketchfab",
+      "url": "https://sketchfab.com/search",
+      "snippet": "Use Sketchfab to publish, share and embed interactive 3D files. Discover and download thousands of 3D models from games, cultural heritage, architecture, design and more."
+    },
+    {
+      "title": "TP Playground - Model Selection",
+      "url": "https://www.thiagoporto.com/tplay/",
+      "snippet": "I created this platform using my own compute infra and models implemetation to assist anyone interested in Video AI tools in taking their first steps. Here, you can explore without the hassle of complex installations, buying expensive hardware or the need to invest in paid services before gaining some understanding of model prompting ..."
+    }
+  ]
+}

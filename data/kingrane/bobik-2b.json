@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "Kingrane/Bobik-2B",
+  "slug": "kingrane-bobik-2b",
+  "author": "Kingrane",
+  "url": "https://huggingface.co/Kingrane/Bobik-2B",
+  "created_at": "2026-08-28T17:28:29.000Z",
+  "updated_at": "2026-08-28T18:02:29.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "generated_from_trainer",
+    "trl",
+    "sft",
+    "unsloth",
+    "base_model:unsloth/Qwen3.5-2B",
+    "base_model:finetune:unsloth/Qwen3.5-2B",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 194611392,
+  "storage_human": "195 MB",
+  "base_model": "unsloth/Qwen3.5-2B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Kingrane (:)) - Hugging Face",
+      "url": "https://huggingface.co/Kingrane",
+      "snippet": "User profile of :) on Hugging Face"
+    },
+    {
+      "title": "2-telegram-bot-Kingrane/.idea/.idea.SimpleTGBot/.idea at main - GitHub",
+      "url": "https://github.com/MMCS-FIIT/2-telegram-bot-Kingrane/tree/main/.idea/.idea.SimpleTGBot/.idea",
+      "snippet": "2026-s211a-c-2-telegram-bot-TelegramBotSample created by GitHub Classroom - MMCS-FIIT/2-telegram-bot-Kingrane"
+    },
+    {
+      "title": "An AI model from Meta also hacked another company during testing - CNN",
+      "url": "https://www.cnn.com/2026/08/05/tech/meta-ai-hacking",
+      "snippet": "Add Meta to the list of companies with AI agents going rogue. An AI model from the parent company of Facebook and Instagram hacked into another company&#x27;s systems during cybersecurity testing, a ..."
+    },
+    {
+      "title": "AI Blockbench Model Generator | Rigged 3D Minecraft Models from a ...",
+      "url": "https://kodari.ai/blogs/ai-blockbench-model-generator",
+      "snippet": "AI Blockbench Model Generator: Rigged, Animated .bbmodel Files from a Prompt Describe a mob, a pet, a weapon, a prop. Get back a proper .bbmodel, rigged with bones and animated, that opens straight in Blockbench. No modeling, no keyframing by hand."
+    },
+    {
+      "title": "LLM Leaderboard 2026: Compare 300+ Top AI Models by Intelligence, Speed ...",
+      "url": "https://llm-stats.com/leaderboards/llm-leaderboard",
+      "snippet": "The LLM Leaderboard — independent ranking of GPT, Claude, Gemini, Llama, DeepSeek and 300+ AI models by intelligence, speed and price. Filter by provider, license, modality and context window; sort by every benchmark. Composite LLM Stats Score updated continuously from public benchmarks and live API metrics."
+    }
+  ]
+}

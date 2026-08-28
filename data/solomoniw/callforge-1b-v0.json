@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "solomoniw/CallForge-1B-v0",
+  "slug": "solomoniw-callforge-1b-v0",
+  "author": "solomoniw",
+  "url": "https://huggingface.co/solomoniw/CallForge-1B-v0",
+  "created_at": "2026-08-28T17:32:56.000Z",
+  "updated_at": "2026-08-28T17:34:14.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "llama",
+    "text-generation",
+    "tool-calling",
+    "function-calling",
+    "agents",
+    "callforge",
+    "conversational",
+    "base_model:openbmb/MiniCPM5-1B",
+    "base_model:finetune:openbmb/MiniCPM5-1B",
+    "license:apache-2.0",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1080632832,
+  "parameters_human": "1.08B",
+  "storage_bytes": 4322556448,
+  "storage_human": "4.3 GB",
+  "base_model": "openbmb/MiniCPM5-1B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Introducing the v0 composite model family - Vercel",
+      "url": "https://vercel.com/blog/v0-composite-model-family",
+      "snippet": "Why does v0 need a composite model architecture? Most AI models¹ are one of two things: a proprietary model from a frontier model provider or an open-source model from a third-party host. While building AI products like v0 and tools like the AI SDK, we&#x27;ve found limitations with both of these approaches: Model knowledge can quickly become outdated for topics that change fast Frontier model ..."
+    },
+    {
+      "title": "callforge-ai · PyPI",
+      "url": "https://pypi.org/project/callforge-ai/",
+      "snippet": "CallForge selects a declared function, extracts type-safe parameters from a natural-language request, and uses constrained decoding only when a choice is ambiguous. It is designed for local models and works with any model that implements two small methods: ... Installation Install the lightweight core: ... Install the ready-to-use Hugging Face ..."
+    },
+    {
+      "title": "Best LLM Leaderboard 2026 | AI Model Rankings, Benchmarks & Pricing",
+      "url": "https://onyx.app/llm-leaderboard",
+      "snippet": "The definitive LLM leaderboard — ranking the best AI models including Claude, GPT, Gemini, DeepSeek, Llama, and more across coding, reasoning, math, agentic, and chat benchmarks. Compare LLM rankings, tier lists, and pricing."
+    },
+    {
+      "title": "allenai/Bolmo-1B · Hugging Face",
+      "url": "https://huggingface.co/allenai/Bolmo-1B",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GitHub - Charlesabouezzi/callforge: AI-powered sales training platform ...",
+      "url": "https://github.com/Charlesabouezzi/callforge/tree/main",
+      "snippet": "AI-powered sales training platform. Reps practice live demo calls with AI avatars trained on company playbooks. Real-time feedback, scoring, and manager dashboards. - Charlesabouezzi/callforge"
+    }
+  ]
+}

@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "danguyen45/classification",
+  "slug": "danguyen45-classification",
+  "author": "danguyen45",
+  "url": "https://huggingface.co/danguyen45/classification",
+  "created_at": "2026-08-28T17:56:19.000Z",
+  "updated_at": "2026-08-28T17:56:27.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "flamingo",
+    "pytorch",
+    "classification",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 24832,
+  "parameters_human": "24832",
+  "storage_bytes": 99808,
+  "storage_human": "99808 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "danguyen45 (Ruben Alvarez) - Hugging Face",
+      "url": "https://huggingface.co/danguyen45",
+      "snippet": "CS @ TU Munich. Looking for internships. Recent Activity updated a modelabout 7 hours ago danguyen45/paper_026247085_document_ai published a modelabout 7 hours ago danguyen45/paper_026247085_document_ai View all activity"
+    },
+    {
+      "title": "danguyen45 (Ruben Alvarez) - Hugging Face",
+      "url": "https://huggingface.co/danguyen45/models",
+      "snippet": "danguyen45&#x27;s models1 Sort: Recently updated danguyen45/paper_026247085_document_ai Updated 2 days ago"
+    },
+    {
+      "title": "Top Machine Learning Classification Algorithms - GeeksforGeeks",
+      "url": "https://www.geeksforgeeks.org/machine-learning/top-machine-learning-algorithms-for-classification/",
+      "snippet": "Machine learning classification algorithms are essential tools used to categorize data into predefined classes based on learned patterns. From simple linear models to advanced neural networks, these algorithms are used in applications like spam detection, image recognition, sentiment analysis and medical diagnosis."
+    },
+    {
+      "title": "Deep Learning Models for Classification: A Complete Guide - Metana",
+      "url": "https://metana.io/blog/deep-learning-models-for-classification-a-comprehensive-guide/",
+      "snippet": "The best deep learning model for binary classification will depend on the specific dataset and the desired accuracy. However, some of the most commonly used deep learning models for binary classification include logistic regression, support vector machines, and neural networks."
+    },
+    {
+      "title": "classification-model · GitHub Topics · GitHub",
+      "url": "https://github.com/topics/classification-model",
+      "snippet": "ai classification-model responsible-ai generation-models aigc Updated on Nov 8, 2023"
+    }
+  ]
+}

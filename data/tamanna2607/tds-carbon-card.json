@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "tamanna2607/tds-carbon-card",
+  "slug": "tamanna2607-tds-carbon-card",
+  "author": "tamanna2607",
+  "url": "https://huggingface.co/tamanna2607/tds-carbon-card",
+  "created_at": "2026-08-28T14:30:41.000Z",
+  "updated_at": "2026-08-28T14:34:02.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "co2_eq_emissions",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "SUMANSHAKTI27/tds-carbon-card · Hugging Face",
+      "url": "https://huggingface.co/SUMANSHAKTI27/tds-carbon-card",
+      "snippet": "Model Card - Green AI Carbon Accounting This repository documents the carbon footprint and energy accounting for the assigned model training run in TDS GA8."
+    },
+    {
+      "title": "Vanshish/tds-carbon-card · Hugging Face",
+      "url": "https://huggingface.co/Vanshish/tds-carbon-card",
+      "snippet": "Model Card - Green AI Carbon Accounting This repository documents the carbon footprint and energy accounting for the assigned model training run in TDS GA8."
+    },
+    {
+      "title": "Model cards — Google DeepMind",
+      "url": "https://deepmind.google/models/model-cards/",
+      "snippet": "Model cards Simple, structured overviews of how an advanced AI model was designed and evaluated."
+    },
+    {
+      "title": "Tamanna2607 - GitHub",
+      "url": "https://github.com/Tamanna2607",
+      "snippet": "📊 Expense Management System - MERN stack project for managing personal finances. 🌤️ Weather App - Shows real-time weather info using OpenWeatherMap API. 🛡️ Password Strength Checker - React app to check and guide password strength. 🏢 Visitor Management (C++) - Console-based project using OOP and file handling."
+    },
+    {
+      "title": "Tania2607 - Repositories - GitHub",
+      "url": "https://github.com/Tania2607?tab=repositories",
+      "snippet": "Learning and building with MongoDB, Express, React, and Node.js. Passionate about creating responsive, user-friendly web apps and growing every day. - Tania2607"
+    }
+  ]
+}

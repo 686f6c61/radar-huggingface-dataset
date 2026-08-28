@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "sergiopaniego/watercolour-grpo-v10d",
+  "slug": "sergiopaniego-watercolour-grpo-v10d",
+  "author": "sergiopaniego",
+  "url": "https://huggingface.co/sergiopaniego/watercolour-grpo-v10d",
+  "created_at": "2026-08-28T10:57:54.000Z",
+  "updated_at": "2026-08-28T13:33:17.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "generated_from_trainer",
+    "hf_jobs",
+    "trackio:https://sergiopaniego-watercolour-grpo-v10d.hf.space?project=huggingface&runs=sergiopaniego-1787914682&sidebar=collapsed",
+    "trl",
+    "grpo",
+    "arxiv:2402.03300",
+    "base_model:Qwen/Qwen3.5-35B-A3B",
+    "base_model:finetune:Qwen/Qwen3.5-35B-A3B",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 65090750,
+  "storage_human": "65 MB",
+  "base_model": "Qwen/Qwen3.5-35B-A3B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "sergiopaniego/watercolour-grpo at main - Hugging Face",
+      "url": "https://huggingface.co/sergiopaniego/watercolour-grpo/tree/main",
+      "snippet": "sergiopaniego / watercolour-grpo like 0 Transformers Safetensors Generated from Trainer grpo trl hf_jobs arxiv:2402.03300 Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "Watercolour Grpo - a Hugging Face Space by sergiopaniego",
+      "url": "https://huggingface.co/spaces/sergiopaniego/watercolour-grpo",
+      "snippet": "Run the program to open a visual dashboard that presents your logged metrics and tracking data in an easy‑to‑read format. No special input is needed—just import the library and call the show functi..."
+    },
+    {
+      "title": "Sergio Paniego Blanco sergiopaniego - GitHub",
+      "url": "https://github.com/sergiopaniego",
+      "snippet": "Sergio Paniego Blanco sergiopaniego Follow Machine Learning Engineer @huggingface 🤗 AI PhD 🏳️‍🌈 524 followers · 81 following @huggingface Madrid 09:59 - 9h ahead https://sergiopaniego.github.io/"
+    },
+    {
+      "title": "sergiopaniego (Sergio Paniego Blanco) / Starred · GitHub",
+      "url": "https://github.com/sergiopaniego?tab=stars",
+      "snippet": "Machine Learning Engineer @huggingface 🤗 AI PhD 🏳️‍🌈 - sergiopaniego"
+    },
+    {
+      "title": "Sergio Paniego",
+      "url": "https://sergiopaniego.github.io/",
+      "snippet": "In addition to my research, I have also served as an AI Educational Consultant, developing and teaching advanced AI courses at universities, companies, and on-demand (see teaching section for more details)."
+    }
+  ]
+}

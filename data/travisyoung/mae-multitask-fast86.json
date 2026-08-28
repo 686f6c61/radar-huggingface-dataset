@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "travisyoung/mae-multitask-fast86",
+  "slug": "travisyoung-mae-multitask-fast86",
+  "author": "travisyoung",
+  "url": "https://huggingface.co/travisyoung/mae-multitask-fast86",
+  "created_at": "2026-08-28T19:06:42.000Z",
+  "updated_at": "2026-08-28T19:06:50.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "mae",
+    "pytorch",
+    "multitask",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 16576,
+  "parameters_human": "16576",
+  "storage_bytes": 66784,
+  "storage_human": "66784 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "travisyoung (Travis Young) - Hugging Face",
+      "url": "https://huggingface.co/travisyoung/models",
+      "snippet": "User profile of Travis Young on Hugging Face"
+    },
+    {
+      "title": "Multi — one task, the right AI workflow",
+      "url": "https://getmulti.ai/",
+      "snippet": "Multi puts 300+ models from every major lab to work across four workflows, so you deploy the best AI for each task instead of forcing one to do it all. Using the right model for the right project is the advantage most people leave on the table."
+    },
+    {
+      "title": "Microsoft MAI Models Explained: Thinking, Code, Image, Transcribe, and ...",
+      "url": "https://www.mindstudio.ai/blog/microsoft-mai-models-explained-build-2026",
+      "snippet": "Microsoft MAI Models Explained: Thinking, Code, Image, Transcribe, and Voice Microsoft announced seven in-house AI models at Build 2026. Here&#x27;s what each MAI model does, how they benchmark, and when you&#x27;d use one over Claude or GPT."
+    },
+    {
+      "title": "AI Release Tracker — AI Model Release Timeline",
+      "url": "https://aireleasetracker.com/",
+      "snippet": "Track major AI model releases from OpenAI, Anthropic, Google, Meta, SpaceXAI, DeepSeek, Mistral, and Qwen. Interactive timeline since ChatGPT launch."
+    },
+    {
+      "title": "MultitaskAI - The Custom Chat UI for OpenAI, Anthropic, Google Gemini ...",
+      "url": "https://multitaskai.com/",
+      "snippet": "Chat seamlessly with AI models like OpenAI, Anthropic, and Google Gemini using MultitaskAI, a custom-built interface designed for split-screen multitasking, side-by-side comparisons, and smarter workflows."
+    }
+  ]
+}

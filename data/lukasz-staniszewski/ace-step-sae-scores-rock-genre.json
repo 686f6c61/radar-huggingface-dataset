@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "lukasz-staniszewski/ace-step-sae-scores-rock-genre",
+  "slug": "lukasz-staniszewski-ace-step-sae-scores-rock-genre",
+  "author": "lukasz-staniszewski",
+  "url": "https://huggingface.co/lukasz-staniszewski/ace-step-sae-scores-rock-genre",
+  "created_at": "2026-05-19T01:01:33.000Z",
+  "updated_at": "2026-08-28T17:17:32.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 16595244,
+  "storage_human": "17 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "lukasz-staniszewski/ace-step-sae-scores-tempo · Hugging Face",
+      "url": "https://huggingface.co/lukasz-staniszewski/ace-step-sae-scores-tempo",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "lukasz-staniszewski/ace-step-sae-scores-rock-genre · Hugging Face",
+      "url": "https://huggingface.co/lukasz-staniszewski/ace-step-sae-scores-rock-genre",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Ace Step Caa Electronic Music | Sweet Tea Studio",
+      "url": "https://sweettea.co/resources/lukasz-staniszewski-ace-step-caa-electronic-music-huggingface-model-lukasz-staniszewski-ace-step-caa-electronic-music",
+      "snippet": "CAA — rock_genre (ACE-Step) Steering vectors for the rock_genre concept on ACE-Step, computed via contrastive activation addition (CAA)."
+    },
+    {
+      "title": "Ace Step Austeer Electronic Music All | Sweet Tea Studio",
+      "url": "https://sweettea.co/resources/lukasz-staniszewski-ace-step-austeer-electronic-music-all-huggingface-model-lukasz-staniszewski-ace-step-austeer-electro",
+      "snippet": "Per-(step, layer) sparse activation-momentum scores for the rock genre concept on ACE-Step. At inference, AUSteerSteeringController adds alpha along the top- k most concept-discriminative bins. Paper"
+    },
+    {
+      "title": "ACE-Step: A Step Towards Music Generation Foundation Model",
+      "url": "https://arxiv.org/html/2506.00045v1",
+      "snippet": "Abstract We introduce ACE-Step, a novel open-source foundation model for music generation that overcomes key limitations of existing approaches and achieves state-of-the-art performance through a holistic architectural design. Current methods face inherent trade-offs between generation speed, musical coherence, and controllability."
+    }
+  ]
+}

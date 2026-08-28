@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "Ryanham1lton/Lampent",
+  "slug": "ryanham1lton-lampent",
+  "author": "Ryanham1lton",
+  "url": "https://huggingface.co/Ryanham1lton/Lampent",
+  "created_at": "2026-08-28T18:29:12.000Z",
+  "updated_at": "2026-08-28T18:30:58.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:cc-by-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 115794685,
+  "storage_human": "116 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Ryanham1lton (Ryan James Hamilton) - Hugging Face",
+      "url": "https://huggingface.co/Ryanham1lton",
+      "snippet": "AI & ML interests ... Recent Activity updated a model about 12 hours ago ... published a model about 12 hours ago"
+    },
+    {
+      "title": "Ryanham1lton (Ryan James Hamilton) - Hugging Face",
+      "url": "https://huggingface.co/Ryanham1lton/models",
+      "snippet": "User profile of Ryan James Hamilton on Hugging Face"
+    },
+    {
+      "title": "lampent AI Models | Civitai",
+      "url": "https://civitai.com/tag/lampent",
+      "snippet": "Browse 1 Stable Diffusion & Flux models, LoRAs, checkpoints, and embeddings tagged with lampent."
+    },
+    {
+      "title": "ryanham1lton | Storyteller.ai",
+      "url": "https://storyteller.ai/profile/ryanham1lton",
+      "snippet": "Storyteller.ai AI creation engine Make movies like this with Seedance 2.0 - cheaper than anywhere else. Seedance 2.0 model is live on ArtCraft before anywhere else. Create cinematic AI video with fluid motion and Hollywood-level scenes."
+    },
+    {
+      "title": "ryanham1lton on DeviantArt",
+      "url": "https://www.deviantart.com/ryanham1lton",
+      "snippet": "Founded in 2000, DeviantArt is the largest online community for artists and art lovers, with over 100 million registered members worldwide and hosting over 650 million pieces of art on the platform. DeviantArt empowers creators to monetize their work and sell their art online, and in 2025 tens of thousands of artists sold on DeviantArt for over $23 Million."
+    }
+  ]
+}

@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "Chia-Mu-Lab/REP-models",
+  "slug": "chia-mu-lab-rep-models",
+  "author": "Chia-Mu-Lab",
+  "url": "https://huggingface.co/Chia-Mu-Lab/REP-models",
+  "created_at": "2026-08-28T17:36:19.000Z",
+  "updated_at": "2026-08-28T18:26:12.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "safetensors",
+    "reasoning",
+    "distillation",
+    "math",
+    "reasoning-trace-exposure",
+    "rep",
+    "text-generation",
+    "en",
+    "dataset:Chia-Mu-Lab/REP-datasets",
+    "arxiv:2606.00642",
+    "base_model:Qwen/Qwen2.5-7B-Instruct",
+    "base_model:finetune:Qwen/Qwen2.5-7B-Instruct",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 182797871684,
+  "storage_human": "182.8 GB",
+  "base_model": "Qwen/Qwen2.5-7B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Chia-Mu-Lab/rep-table4-crossmodel-ot500 - Hugging Face",
+      "url": "https://huggingface.co/datasets/Chia-Mu-Lab/rep-table4-crossmodel-ot500",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Chia-Mu-Lab/qwen25-7b-ot-rep-gemini-3.5-flash · Hugging Face",
+      "url": "https://huggingface.co/Chia-Mu-Lab/qwen25-7b-ot-rep-gemini-3.5-flash",
+      "snippet": "qwen25-7b-ot-rep-gemini-3.5-flash Full-parameter distilled Qwen2.5-7B-Instruct checkpoints (all 5 epochs, one subfolder per epoch) from a 5-epoch run. Student trained on the successfully-exposed reasoning traces of the closed teacher model gemini-3.5-flash (REP; EMNLP submission \"Hidden Thoughts Are Not Secret: Reasoning-Trace Exposure in LLMs\")."
+    },
+    {
+      "title": "GitHub - TheJacksonLaboratory/chia_rep",
+      "url": "https://github.com/TheJacksonLaboratory/chia_rep",
+      "snippet": "Contribute to TheJacksonLaboratory/chia_rep development by creating an account on GitHub."
+    },
+    {
+      "title": "Free AI Models - GitHub",
+      "url": "https://github.com/ClawLabsAI/free-ai-models",
+      "snippet": "The free AI model landscape changes every week — models get added, rate limits change, providers shut down without notice. This repo tracks it all automatically so you don&#x27;t have to. Use it to: Find the best free model for your current task Track which providers offer the most generous free tiers Get notified of new free models via GitHub Watch → Releases Build your own routing logic on ..."
+    },
+    {
+      "title": "Chia-Mu-Lab/d1-llama31-8b-r2answer-ot14b-clean - friendli.ai",
+      "url": "https://friendli.ai/models/Chia-Mu-Lab/d1-llama31-8b-r2answer-ot14b-clean",
+      "snippet": "chia-mu-lab d1-llama31-8b-r2answer-ot14b-clean Deploy Dedicated Dedicated Endpoints Run this model inference on single tenant GPU with unmatched speed and reliability at scale."
+    }
+  ]
+}

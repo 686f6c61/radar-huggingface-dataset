@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "Kosmosas/BERT-bitcoin-sentiment",
+  "slug": "kosmosas-bert-bitcoin-sentiment",
+  "author": "Kosmosas",
+  "url": "https://huggingface.co/Kosmosas/BERT-bitcoin-sentiment",
+  "created_at": "2026-06-13T11:10:05.000Z",
+  "updated_at": "2026-08-28T13:07:37.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "finbert",
+    "sentiment-analysis",
+    "finance",
+    "bitcoin",
+    "cryptocurrency",
+    "regression",
+    "text-classification",
+    "en",
+    "base_model:yiyanghkust/finbert-tone",
+    "base_model:finetune:yiyanghkust/finbert-tone",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 3073737000,
+  "storage_human": "3.1 GB",
+  "base_model": "yiyanghkust/finbert-tone",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Kosmosas/BERT-bitcoin-sentiment · Hugging Face",
+      "url": "https://huggingface.co/Kosmosas/BERT-bitcoin-sentiment",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Kosmosas (Kosmo osmo) - Hugging Face",
+      "url": "https://huggingface.co/Kosmosas",
+      "snippet": "AI & ML interests ... Recent Activity updated a model 13 days ago ... updated a dataset 13 days ago"
+    },
+    {
+      "title": "(PDF) Predicting the Price of Bitcoin Using Sentiment ... - ResearchGate",
+      "url": "https://www.researchgate.net/publication/372840419_Predicting_the_Price_of_Bitcoin_Using_Sentiment-Enriched_Time_Series_Forecasting",
+      "snippet": "More precisely, we propose a hybrid approach, combining time series forecasting and sentiment prediction from microblogs, to predict the intraday price of Bitcoin."
+    },
+    {
+      "title": "Predicting the Price of Bitcoin Using Sentiment-Enriched Time ... - MDPI",
+      "url": "https://www.mdpi.com/2504-2289/7/3/137",
+      "snippet": "More precisely, we propose a hybrid approach, combining time series forecasting and sentiment prediction from microblogs, to predict the intraday price of Bitcoin. Moreover, in addition to standard sentiment analysis methods, we are the first to employ a fine-tuned BERT model for this task."
+    },
+    {
+      "title": "Google Colab",
+      "url": "https://colab.research.google.com/drive/1PHv-IRLPCtv7oTcIGbsgZHqrB5LPvB7S",
+      "snippet": "Google Colab ... Google Colab"
+    }
+  ]
+}

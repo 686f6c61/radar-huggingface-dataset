@@ -1,0 +1,84 @@
+{
+  "schema": 1,
+  "id": "Korla/Qwen2.5-3B-Instruct-hsb-dsb-mlx-4Bit",
+  "slug": "korla-qwen2-5-3b-instruct-hsb-dsb-mlx-4bit",
+  "author": "Korla",
+  "url": "https://huggingface.co/Korla/Qwen2.5-3B-Instruct-hsb-dsb-mlx-4Bit",
+  "created_at": "2026-08-28T12:58:55.000Z",
+  "updated_at": "2026-08-28T12:59:03.000Z",
+  "license": "qwen-research",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "hsb",
+    "dsb"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen2",
+    "text-generation",
+    "mlx",
+    "conversational",
+    "hsb",
+    "dsb",
+    "dataset:HuggingFaceFW/fineweb-2",
+    "dataset:CohereLabs/aya_dataset",
+    "dataset:Magpie-Align/Magpie-Llama-3.1-Pro-MT-300K-Filtered",
+    "dataset:OpenAssistant/oasst2",
+    "dataset:ai2-adapt-dev/flan_v2_converted",
+    "dataset:utter-project/EuroBlocks-SFT-Synthetic-1124",
+    "base_model:tartuNLP/Qwen2.5-3B-Instruct-hsb-dsb",
+    "base_model:quantized:tartuNLP/Qwen2.5-3B-Instruct-hsb-dsb",
+    "license:other",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "4-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 482381824,
+  "parameters_human": "482.4M",
+  "storage_bytes": 1747715669,
+  "storage_human": "1.7 GB",
+  "base_model": "tartuNLP/Qwen2.5-3B-Instruct-hsb-dsb",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Qwen2.5-3B-Instruct-MLX-4bit - Hugging Face",
+      "url": "https://huggingface.co/lmstudio-community/Qwen2.5-3B-Instruct-MLX-4bit",
+      "snippet": "Compatibility: Apple Silicon Macs Model creator: Qwen Original model: Qwen2.5-3B-Instruct MLX quantizations: provided by bartowski from mlx-examples Technical Details Long context: Support for 32k tokens and 8k token generation Large-scale training dataset: Encompasses a huge range of knowledge. Enhanced structured data understanding and ..."
+    },
+    {
+      "title": "Qwen2.5 - a mlx-community Collection - Hugging Face",
+      "url": "https://huggingface.co/collections/mlx-community/qwen25",
+      "snippet": "The Qwen 2.5 models are a series of AI models trained on 18 trillion tokens, supporting 29 languages and offering advanced features such as instructio"
+    },
+    {
+      "title": "GitHub - mx4ai/qwen2.5: Qwen2.5 is the large language model series ...",
+      "url": "https://github.com/mx4ai/qwen2.5",
+      "snippet": "Today, we are excited to introduce the latest addition to the Qwen family: Qwen2.5. Dense, easy-to-use, decoder-only language models, available in 0.5B, 1.5B, 3B, 7B, 14B, 32B, and 72B sizes, and base and instruct variants. Pretrained on our latest large-scale dataset, encompassing up to 18T tokens."
+    },
+    {
+      "title": "qwen2.5:3b-instruct",
+      "url": "https://ollama.com/library/qwen2.5:3b-instruct",
+      "snippet": "Qwen2.5 models are pretrained on Alibaba&#x27;s latest large-scale dataset, encompassing up to 18 trillion tokens. The model supports up to 128K tokens and has multilingual support."
+    },
+    {
+      "title": "qwen2.5-instruct — Xinference",
+      "url": "https://inference.readthedocs.io/en/v1.1.1/models/builtin/llm/qwen2.5-instruct.html",
+      "snippet": "Model Name: qwen2.5-instruct Languages: en, zh Abilities: chat, tools Description: Qwen2.5 is the latest series of Qwen large language models. For Qwen2.5, we release a number of base language models and instruction-tuned language models ranging from 0.5 to 72 billion parameters. Specifications # Model Spec 1 (pytorch, 0_5 Billion) # Model ..."
+    }
+  ]
+}

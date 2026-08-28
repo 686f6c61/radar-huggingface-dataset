@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "Deepdive404-3/gemma-4-E4B-it-OBLITERATED",
+  "slug": "deepdive404-3-gemma-4-e4b-it-obliterated",
+  "author": "Deepdive404-3",
+  "url": "https://huggingface.co/Deepdive404-3/gemma-4-E4B-it-OBLITERATED",
+  "created_at": "2026-08-28T12:23:31.000Z",
+  "updated_at": "2026-08-28T12:23:31.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "gguf",
+    "gemma4",
+    "abliterated",
+    "uncensored",
+    "obliteratus",
+    "refusal-removal",
+    "text-generation",
+    "conversational",
+    "base_model:google/gemma-4-E4B-it",
+    "base_model:quantized:google/gemma-4-E4B-it",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 7996156448,
+  "parameters_human": "8.00B",
+  "storage_bytes": 71379846258,
+  "storage_human": "71.4 GB",
+  "base_model": "google/gemma-4-E4B-it",
+  "formats": [
+    "gguf",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Deepdive404/gemma-4-E4B-it-OBLITERATED · Hugging Face",
+      "url": "https://huggingface.co/Deepdive404/gemma-4-E4B-it-OBLITERATED",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Deepdive404/gemma-4-E4B-it · Hugging Face",
+      "url": "https://huggingface.co/Deepdive404/gemma-4-E4B-it",
+      "snippet": "This model card summarizes details on the models&#x27; architecture, capabilities, limitations, and evaluation processes. A responsibly developed open model offers the opportunity to share innovation by making VLM technology accessible to developers and researchers across the AI ecosystem."
+    },
+    {
+      "title": "Gemma 4 — Google DeepMind",
+      "url": "https://deepmind.google/models/gemma/gemma-4/",
+      "snippet": "Gemma 4 models undergo the same rigorous infrastructure security protocols as our proprietary models. By choosing Gemma 4, enterprises and sovereign organizations gain a trusted, transparent foundation that delivers state-of-the-art capabilities while meeting the highest standards for security and reliability."
+    },
+    {
+      "title": "Gemma 4 model card | Google AI for Developers",
+      "url": "https://ai.google.dev/gemma/docs/core/model_card_4",
+      "snippet": "This model card summarizes details on the models&#x27; architecture, capabilities, limitations, and evaluation processes. A responsibly developed open model offers the opportunity to share innovation by making VLM technology accessible to developers and researchers across the AI ecosystem."
+    },
+    {
+      "title": "Gemma 4 E4B — The Daily Driver for Local AI | gemma4.dev",
+      "url": "https://gemma4.dev/models/gemma-4-e4b",
+      "snippet": "Models /Gemma 4 E4B Gemma 4 E4B — The Daily Driver for Local AI Gemma 4 E4B is Google&#x27;s most practical local model: 4.4B parameters, 8GB VRAM minimum, multimodal input, and Thinking Mode — all in a package that runs on any modern consumer GPU."
+    }
+  ]
+}

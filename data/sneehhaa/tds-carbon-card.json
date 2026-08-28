@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "SNEEHHAA/tds-carbon-card",
+  "slug": "sneehhaa-tds-carbon-card",
+  "author": "SNEEHHAA",
+  "url": "https://huggingface.co/SNEEHHAA/tds-carbon-card",
+  "created_at": "2026-08-28T13:44:36.000Z",
+  "updated_at": "2026-08-28T13:45:55.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "co2_eq_emissions",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "pranhai/tds-carbon-card · Hugging Face",
+      "url": "https://huggingface.co/pranhai/tds-carbon-card",
+      "snippet": "Model Card - Green AI Carbon Accounting This repository documents the carbon footprint and energy accounting for the assigned model training run in TDS GA8."
+    },
+    {
+      "title": "23f1003136/tds-carbon-card · Hugging Face",
+      "url": "https://huggingface.co/23f1003136/tds-carbon-card",
+      "snippet": "Model Card - Green AI Carbon Accounting This repository documents the carbon footprint and energy accounting for the assigned model training run in TDS GA8."
+    },
+    {
+      "title": "Researcher Claims Working Jailbreak on Top AI Models Including GPT-5.6 ...",
+      "url": "https://cybersecuritynews.com/jailbreak-on-top-ai-models/",
+      "snippet": "A well-known AI red teamer claims to have developed a universal jailbreak that works against leading large language models, including heavily guarded flagships such as GPT-5.6 Sol, Claude Opus 5, and Fable."
+    },
+    {
+      "title": "Free AI Models - GitHub",
+      "url": "https://github.com/ClawLabsAI/free-ai-models",
+      "snippet": "The free AI model landscape changes every week — models get added, rate limits change, providers shut down without notice. This repo tracks it all automatically so you don&#x27;t have to. Use it to: Find the best free model for your current task Track which providers offer the most generous free tiers Get notified of new free models via GitHub Watch → Releases Build your own routing logic on ..."
+    },
+    {
+      "title": "GitHub - climatechange-ai-tutorials/tracking-ml-emissions: Learn how to ...",
+      "url": "https://github.com/climatechange-ai-tutorials/tracking-ml-emissions",
+      "snippet": "Learn how to measure a machine learning model&#x27;s carbon footprint and practice strategies that can help shrink the energy involved in training these models. Author: Mel Hanna, Climate Change AI, mel@climatechange.ai Andrés Felipe Perez Murcia, University of Manitoba, perezmaf@myumanitoba.ca Originally presented at Climate Change AI Summer School 2023, revised for the Summer School 2024 and 2026"
+    }
+  ]
+}

@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "nikitastheo/v4-babylm-fra-ell-sequential_interleaved",
+  "slug": "nikitastheo-v4-babylm-fra-ell-sequential_interleaved",
+  "author": "nikitastheo",
+  "url": "https://huggingface.co/nikitastheo/v4-babylm-fra-ell-sequential_interleaved",
+  "created_at": "2026-08-28T14:07:04.000Z",
+  "updated_at": "2026-08-28T15:07:06.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gpt2",
+    "text-generation",
+    "causal-lm",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 108550656,
+  "parameters_human": "108.6M",
+  "storage_bytes": 868435200,
+  "storage_human": "868 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "v2-babylm-fra-ell-sequential_interleaved - Hugging Face",
+      "url": "https://huggingface.co/nikitastheo/v2-babylm-fra-ell-sequential_interleaved",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "nikitastheo/v2-babylm-small-fra-ell-sequential_interleaved · Hugging Face",
+      "url": "https://huggingface.co/nikitastheo/v2-babylm-small-fra-ell-sequential_interleaved",
+      "snippet": "nikitastheo / v2-babylm-small-fra-ell-sequential_interleaved like 0 Text Generation Transformers Safetensors gpt2 causal-lm text-generation-inference Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "GitHub Pages - Baby",
+      "url": "https://babylm.github.io/",
+      "snippet": "Instead, participants may use paired image-text data and/or leverage feedback from a teacher model during training or Strict or Strict-Small. • Updated (detoxified) datasets: We release a modified detoxified training dataset, including: 100M word Strict, 10M word Strict-Small, and 100M word + image Multimodal."
+    },
+    {
+      "title": "babylm.github.io",
+      "url": "https://babylm.github.io/papers.html",
+      "snippet": "BabyLM challenge: Experimenting with self-distillation and reverse-distillation for language model pre-training on constrained datasets. In The 2nd BabyLM Challenge at the 28th Conference on Computational Natural Language Learning."
+    },
+    {
+      "title": "BabyLM | Alex Warstadt",
+      "url": "https://alexwarstadt.github.io/projects/babylm/",
+      "snippet": "BabyLM Training sample efficient language models on developmentally plausible corpora Humans are remarkably efficient language learners compared to language models. It would take a human a million years to accumulate as much linguistic input as most popular large language models, yet we learn language in just a few years. BabyLM is a competition and workshop devoted to data-efficient language ..."
+    }
+  ]
+}

@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "symbiosika/right_pnp_multicube_32b_05d_235eps",
+  "slug": "symbiosika-right_pnp_multicube_32b_05d_235eps",
+  "author": "symbiosika",
+  "url": "https://huggingface.co/symbiosika/right_pnp_multicube_32b_05d_235eps",
+  "created_at": "2026-08-28T11:02:19.000Z",
+  "updated_at": "2026-08-28T11:51:11.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "robotics",
+    "groot",
+    "base_model:nvidia/GR00T-N1.7-3B",
+    "base_model:finetune:nvidia/GR00T-N1.7-3B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 3144016000,
+  "parameters_human": "3.14B",
+  "storage_bytes": 12576224736,
+  "storage_human": "12.6 GB",
+  "base_model": "nvidia/GR00T-N1.7-3B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Perplexity AI",
+      "url": "https://www.perplexity.ai/",
+      "snippet": "Perplexity is a free AI-powered answer engine that provides accurate, trusted, and real-time answers to any question."
+    },
+    {
+      "title": "Facebook",
+      "url": "https://www.facebook.com/",
+      "snippet": "Connect and share with friends, family, and the world on Facebook."
+    },
+    {
+      "title": "Google Gemini",
+      "url": "https://gemini.google.com/",
+      "snippet": "Get assistance with writing, planning, learning, and more from Google AI."
+    },
+    {
+      "title": "N8N Embedded Chat Interface - GitHub",
+      "url": "https://github.com/symbiosika/n8n-embedded-chat-interface",
+      "snippet": "The N8N Embedded Chat Interface is a modern, embeddable native web component that enables you to integrate n8n workflows as interactive chatbots on any website. With just a few lines of HTML code, you can transform your n8n automations into user-friendly conversational interfaces."
+    },
+    {
+      "title": "Thingiverse — Search & Download 3D Printing Models and STL Files",
+      "url": "https://thingiverse.app/",
+      "snippet": "Thingiverse search: find, preview and download free 3D printable models and STL files from across the web — no ads, no sign-up."
+    }
+  ]
+}

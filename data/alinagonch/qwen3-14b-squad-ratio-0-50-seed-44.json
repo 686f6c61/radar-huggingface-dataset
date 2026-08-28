@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "AlinaGonch/qwen3-14b-squad-ratio-0.50-seed-44",
+  "slug": "alinagonch-qwen3-14b-squad-ratio-0-50-seed-44",
+  "author": "AlinaGonch",
+  "url": "https://huggingface.co/AlinaGonch/qwen3-14b-squad-ratio-0.50-seed-44",
+  "created_at": "2026-08-28T14:58:16.000Z",
+  "updated_at": "2026-08-28T14:58:30.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 268399154,
+  "storage_human": "268 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "AlinaGonch/qwen3-14b-squad-ratio-0.30-seed-42 · Hugging Face",
+      "url": "https://huggingface.co/AlinaGonch/qwen3-14b-squad-ratio-0.30-seed-42",
+      "snippet": "Instructions to use AlinaGonch/qwen3-14b-squad-ratio-.30-seed-42 with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "AlinaGonch/qwen3-14b-squad-ratio-0.50-r64 · Hugging Face",
+      "url": "https://huggingface.co/AlinaGonch/qwen3-14b-squad-ratio-0.50-r64",
+      "snippet": "Instructions to use AlinaGonch/qwen3-14b-squad-ratio-.50-r64 with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Libraries PEFT How to use AlinaGonch/qwen3-14b-squad-ratio-.50-r64 with PEFT:"
+    },
+    {
+      "title": "Qwen3 Complete Guide: Every Model from 0.6B to 235B",
+      "url": "https://insiderllm.com/guides/qwen3-complete-guide/",
+      "snippet": "Qwen3 is the best open model family for budget local AI. Dense models from 0.6B to 32B, MoE models that punch above their weight, and a /think toggle no one else has."
+    },
+    {
+      "title": "labyrinthbench/entries/seed-model-qwen3-14b.json at main - GitHub",
+      "url": "https://github.com/owl-fleet/labyrinthbench/blob/main/entries/seed-model-qwen3-14b.json",
+      "snippet": "A deterministic multi-turn benchmark for LLM agents — no LLM judge — with a swappable context-management harness. Run it on your own rig against any OpenAI-compatible endpoint. - owl-fleet/labyrint..."
+    },
+    {
+      "title": "Qwen3 Local Deployment 2026: 8B, 14B, 32B + Docker API",
+      "url": "https://www.promptquorum.com/power-local-llm/qwen-local-deployment-complete-guide-2026",
+      "snippet": "Deploy Qwen3 locally: 8B, 14B and 32B via Ollama/vLLM with a Docker API server, hardware picks, and multi-GPU. Note — Qwen3 has no 7B; use the 8B (qwen3:8b). 2026 guide."
+    }
+  ]
+}

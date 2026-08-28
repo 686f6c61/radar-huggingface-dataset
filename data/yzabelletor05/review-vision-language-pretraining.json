@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "yzabelletor05/review-vision-language-pretraining",
+  "slug": "yzabelletor05-review-vision-language-pretraining",
+  "author": "yzabelletor05",
+  "url": "https://huggingface.co/yzabelletor05/review-vision-language-pretraining",
+  "created_at": "2026-08-28T15:12:36.000Z",
+  "updated_at": "2026-08-28T15:12:42.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "transformer",
+    "research-notes",
+    "vision-language-pretraining",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 33088,
+  "parameters_human": "33088",
+  "storage_bytes": 132832,
+  "storage_human": "132832 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "VLP: A Survey on Vision-language Pre-training - Springer",
+      "url": "https://link.springer.com/article/10.1007/s11633-022-1369-5",
+      "snippet": "In the past few years, the emergence of pre-training models has brought uni-modal fields such as computer vision (CV) and natural language processing (NLP) to a new era. Substantial works have shown that they are beneficial for downstream uni-modal tasks and avoid training a new model from scratch. So can such pre-trained models be applied to multi-modal tasks? Researchers have explored this ..."
+    },
+    {
+      "title": "Vision Language Models Explained - Hugging Face",
+      "url": "https://huggingface.co/blog/vlms",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "A systematic review of vision language models ... - ScienceDirect",
+      "url": "https://www.sciencedirect.com/science/article/pii/S2590005626000627",
+      "snippet": "The integration of vision and language through Vision-Language Models (VLMs) has emerged as a transformative approach in artificial intelligence (AI), enhancing our understanding of multimodal data processing [1], [2], [3]. VLMs combine the strengths of computer vision and natural language processing (NLP), enabling models to comprehend and generate insights from both visual and textual ..."
+    },
+    {
+      "title": "GitHub - zli12321/Vision-Language-Models-Overview: A most Frontend ...",
+      "url": "https://github.com/zli12321/Vision-Language-Models-Overview",
+      "snippet": "A most Frontend Collection and survey of vision-language model papers, and models GitHub repository. Continuous updates. - zli12321/Vision-Language-Models-Overview"
+    },
+    {
+      "title": "[2210.09263] Vision-Language Pre-training: Basics, Recent Advances, and ...",
+      "url": "https://arxiv.org/abs/2210.09263",
+      "snippet": "This paper surveys vision-language pre-training (VLP) methods for multimodal intelligence that have been developed in the last few years. We group these approaches into three categories: (i) VLP for image-text tasks, such as image captioning, image-text retrieval, visual question answering, and visual grounding; (ii) VLP for core computer vision tasks, such as (open-set) image classification ..."
+    }
+  ]
+}

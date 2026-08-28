@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "Orellius/cube-out-of-box-smolvla-trainonly",
+  "slug": "orellius-cube-out-of-box-smolvla-trainonly",
+  "author": "Orellius",
+  "url": "https://huggingface.co/Orellius/cube-out-of-box-smolvla-trainonly",
+  "created_at": "2026-08-28T14:00:13.000Z",
+  "updated_at": "2026-08-28T14:03:10.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "robotics",
+    "smolvla",
+    "so101",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 450046176,
+  "parameters_human": "450.0M",
+  "storage_bytes": 906725680,
+  "storage_human": "907 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "SmolVLA: A Vision-Language-Action Model for Affordable and Efficient ...",
+      "url": "https://arxiv.org/abs/2506.01844",
+      "snippet": "Vision-language models (VLMs) pretrained on large-scale multimodal datasets encode rich visual and linguistic knowledge, making them a strong foundation for robotics. Rather than training robotic policies from scratch, recent approaches adapt VLMs into vision-language-action (VLA) models that enable natural language-driven perception and control. However, existing VLAs are typically massive ..."
+    },
+    {
+      "title": "lerobot/smolvla_base · Hugging Face",
+      "url": "https://huggingface.co/lerobot/smolvla_base",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "SmolVLA: Efficient Vision-Language-Action Model trained on Lerobot ...",
+      "url": "https://huggingface.co/blog/smolvla",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "SmolVLA: A vision-language-action model for affordable and efficient ...",
+      "url": "https://arxiv.org/html/2506.01844v1",
+      "snippet": "For the pick and place task, SmolVLA is instructed to pick up the cube and place it in the box. The box is small in size and in a fixed position positions while the cube starting position is varied within 5 different starting conditions."
+    },
+    {
+      "title": "Fine-tuning SmolVLA for Cube Pick-and-Place on SO-101",
+      "url": "https://ggando.com/blog/smolvla-so101/",
+      "snippet": "The task: pick up a small cube from a randomized position and place it in a bowl. 10-second episodes, 30fps, recorded via teleoperation with the leader arm. SmolVLA vs ACT # SmolVLA is a 500M+ parameter model, but you only fine-tune ~50M (the action expert + projections). The vision encoder (SigLIP) and language model (SmolLM2) stay frozen."
+    }
+  ]
+}

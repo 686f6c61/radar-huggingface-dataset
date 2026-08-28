@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "LASR-Callum/qwen3.6-27b-lora-t2-9284-gptresp685-paired-r64-seed69",
+  "slug": "lasr-callum-qwen3-6-27b-lora-t2-9284-gptresp685-paired-r64-seed69",
+  "author": "LASR-Callum",
+  "url": "https://huggingface.co/LASR-Callum/qwen3.6-27b-lora-t2-9284-gptresp685-paired-r64-seed69",
+  "created_at": "2026-08-28T16:55:11.000Z",
+  "updated_at": "2026-08-28T16:58:37.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "lora",
+    "sft",
+    "qwen3.6",
+    "generator-ablation",
+    "difficult-advice",
+    "seed-replicate",
+    "base_model:Qwen/Qwen3.6-27B",
+    "base_model:adapter:Qwen/Qwen3.6-27B",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1295140374,
+  "storage_human": "1.3 GB",
+  "base_model": "Qwen/Qwen3.6-27B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "LASR-Callum/qwen3.6-27b-lora-500k-da20-t1t3 · Hugging Face",
+      "url": "https://huggingface.co/LASR-Callum/qwen3.6-27b-lora-500k-da20-t1t3",
+      "snippet": "The paired comparison The non-difficult-advice half is byte-identical to …-mixture-500k-da20-numina -- the same 492 NuminaMath, 215 No Robots and 94 TULU3 rows, with the same markers."
+    },
+    {
+      "title": "LASR-Callum/qwen3.6-27b-lora-t2-9284-gptresp685-paired-r64 · Hugging Face",
+      "url": "https://huggingface.co/LASR-Callum/qwen3.6-27b-lora-t2-9284-gptresp685-paired-r64",
+      "snippet": "qwen3.6-27b LoRA — generator ablation ARM C (GPT-written answers) Third arm of the generator ablation. Trained on 685 difficult-advice rows whose assistant turns were drafted by openai/gpt-5.6-luna and revised by openai/gpt-5.6-terra, plus the shared 9,284-row Table2 half."
+    },
+    {
+      "title": "Qwen3.6 27b Lora T2 9284 Synthdoc 716 R64 - AI Model Insights & Benchmarks",
+      "url": "https://free2aitools.com/model/lasr-callum/qwen3.6-27b-lora-t2-9284-synthdoc-716-r64",
+      "snippet": "🧠 Qwen3.6 27b Lora T2 9284 Synthdoc 716 R64model by Lasr Callum ⭐ 39 🧠 Model"
+    },
+    {
+      "title": "qwen3.6-27b-lora-t2-9284-gptresp685-paired-r64 - friendli.ai",
+      "url": "https://friendli.ai/models/LASR-Callum/qwen3.6-27b-lora-t2-9284-gptresp685-paired-r64",
+      "snippet": "Run qwen3.6-27b-lora-t2-9284-gptresp685-paired-r64 with FriendliAI inference. Third arm of the generator ablation."
+    },
+    {
+      "title": "qwen3.6-27b-lora-t2-9284-da-chunk-only-702-r64-dynbatch",
+      "url": "https://friendli.ai/models/LASR-Callum/qwen3.6-27b-lora-t2-9284-da-chunk-only-702-r64-dynbatch",
+      "snippet": "A measured side effect of the ablation Generating the ablated corpus, Anthropic&#x27;s content filter refused revise_prompts calls at roughly 6% against the baseline&#x27;s ~0% on the identical scenarios, and the refusals were deterministic across a resample."
+    }
+  ]
+}

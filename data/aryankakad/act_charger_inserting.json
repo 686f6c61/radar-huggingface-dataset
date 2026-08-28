@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "aryankakad/act_charger_inserting",
+  "slug": "aryankakad-act_charger_inserting",
+  "author": "aryankakad",
+  "url": "https://huggingface.co/aryankakad/act_charger_inserting",
+  "created_at": "2026-08-28T15:25:08.000Z",
+  "updated_at": "2026-08-28T15:33:58.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "act",
+    "robotics",
+    "dataset:aryankakad/tactile_charger_inserting",
+    "arxiv:2304.13705",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 53340166,
+  "parameters_human": "53.3M",
+  "storage_bytes": 213398636,
+  "storage_human": "213 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "aryankakad (Aryan Kakad) - Hugging Face",
+      "url": "https://huggingface.co/aryankakad",
+      "snippet": "aryankakad/CUP_STACKING_20260724_181653 Viewer •Updated about 9 hours ago•26.8k• 1"
+    },
+    {
+      "title": "aryankakad (Aryan Kakad) - Hugging Face",
+      "url": "https://huggingface.co/datasets/aryankakad/",
+      "snippet": "User profile of Aryan Kakad on Hugging Face"
+    },
+    {
+      "title": "Aryankakad · GitHub",
+      "url": "https://github.com/Aryankakad",
+      "snippet": "Aryankakad has 2 repositories available. Follow their code on GitHub."
+    },
+    {
+      "title": "ACT - Advanced Charging Technologies",
+      "url": "https://act-chargers.com/",
+      "snippet": "Advance your warehouse operations with Advanced Charging Technologies. We lead the way in integrated solutions for forklift battery and charging systems, combining next-generation technology with user-friendly hardware for your optimized fleet."
+    },
+    {
+      "title": "character.ai | AI Chat, Reimagined-Your Words. Your World.",
+      "url": "https://character.ai/",
+      "snippet": "Chat with millions of AI Characters on the #1 AI chat app. Where will your next adventure take you?"
+    }
+  ]
+}

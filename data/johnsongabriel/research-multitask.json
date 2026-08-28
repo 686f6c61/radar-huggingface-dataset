@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "Johnsongabriel/research-multitask",
+  "slug": "johnsongabriel-research-multitask",
+  "author": "Johnsongabriel",
+  "url": "https://huggingface.co/Johnsongabriel/research-multitask",
+  "created_at": "2026-08-28T19:14:53.000Z",
+  "updated_at": "2026-08-28T19:15:15.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "deit",
+    "pytorch",
+    "multitask",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 49600,
+  "parameters_human": "49600",
+  "storage_bytes": 198880,
+  "storage_human": "198880 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Google Scholar",
+      "url": "https://scholar.google.com/",
+      "snippet": "Google Scholar provides a simple way to broadly search for scholarly literature. Search across a wide variety of disciplines and sources: articles, theses, books, abstracts and court opinions."
+    },
+    {
+      "title": "Multitask Vision Transformer Predicts Molecular and Prognostic Features ...",
+      "url": "https://ascoai.org/articles/2026/08/multitask-vision-transformer-predicts-molecular-and-prognostic-features-across-32-solid-tumors/",
+      "snippet": "Researchers developed an AI-based Vision Transformer model to analyze routine hematoxylin and eosin (H&E)-stained whole-slide images and then simultaneously predict cancer subtype, TP53 mutation status, and survival outcomes across 32 solid tumors. Study findings were published in The American Journal of Pathology."
+    },
+    {
+      "title": "Deep multi-task learning: a review of concepts, methods, and cross ...",
+      "url": "https://link.springer.com/article/10.1007/s41060-025-00892-y",
+      "snippet": "In today&#x27;s data-rich world, machine learning stands out as a leading branch of artificial intelligence methods, which are applied in many fields [1]. There are many different learning algorithms and methods, each method comes with its own strengths and limitations, often evaluated in terms of factors like performance and scalability. Among these, multi-task learning has emerged as ..."
+    },
+    {
+      "title": "Multi — one task, the right AI workflow",
+      "url": "https://getmulti.ai/",
+      "snippet": "Multi puts 300+ models from every major lab to work across four workflows, so you deploy the best AI for each task instead of forcing one to do it all. Using the right model for the right project is the advantage most people leave on the table."
+    },
+    {
+      "title": "Breakthrough AI research — Google AI",
+      "url": "https://ai.google/research/",
+      "snippet": "Research teams across Google are innovating across domains to positively impact society, with breakthroughs that have helped usher in a new era of AI."
+    }
+  ]
+}

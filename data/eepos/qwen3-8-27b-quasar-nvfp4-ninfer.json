@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "eepos/Qwen3.8-27B-QUASAR-NVFP4-NInfer",
+  "slug": "eepos-qwen3-8-27b-quasar-nvfp4-ninfer",
+  "author": "eepos",
+  "url": "https://huggingface.co/eepos/Qwen3.8-27B-QUASAR-NVFP4-NInfer",
+  "created_at": "2026-08-28T14:37:32.000Z",
+  "updated_at": "2026-08-28T15:22:25.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "base_model:QUASAR-QAT/Qwen3.8-27B-QUASAR-NVFP4",
+    "base_model:finetune:QUASAR-QAT/Qwen3.8-27B-QUASAR-NVFP4",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 19939203072,
+  "storage_human": "19.9 GB",
+  "base_model": "Qwen/Qwen3.8-27B, QUASAR-QAT/Qwen3.8-27B-QUASAR-NVFP4",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "QUASAR Compresses Qwen3.8-27B to NVFP4 for Cheaper AI — The Value ...",
+      "url": "https://thevalue.engineering/news/quasar-compresses-qwen-27b-nvfp4-enterprise-inference.html",
+      "snippet": "QUASAR compresses the 27B Qwen3.8 vision model to 4-bit NVFP4, letting enterprises run multimodal inference on standard GPUs without accuracy loss."
+    },
+    {
+      "title": "unsloth/Qwen3.8-27B-NVFP4 · Hugging Face",
+      "url": "https://huggingface.co/unsloth/Qwen3.8-27B-NVFP4",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "HivenetQuant/Qwen3.8-27B-NVFP4 · Hugging Face",
+      "url": "https://huggingface.co/HivenetQuant/Qwen3.8-27B-NVFP4",
+      "snippet": "NVFP4 (nvfp4) W4A4 quantization of Qwen/Qwen3.8-27B — FP4 (E2M1) weights and activations with FP8 block scales. The MLP is the 4-bit tier; the attention and recurrent (DeltaNet) layers the search protects are kept at FP8."
+    },
+    {
+      "title": "Qwen/Qwen3.8-27B | vLLM Recipes",
+      "url": "https://recipes.vllm.ai/Qwen/Qwen3.8-27B",
+      "snippet": "The official Qwen/Qwen3.8-27B-FP8 checkpoint serves directly on a 950PR — no offline re-quantization and no --quantization ascend. vLLM Ascend reads quant_method: fp8 and weight_block_size straight from the checkpoint, expands the weight_scale_inv tiles at load time and re-quantizes to MXFP8 on 950."
+    },
+    {
+      "title": "-Qwen3.8-27B-QUASAR-NVFP4-NINFER-/README.md at main - GitHub",
+      "url": "https://github.com/engharat/-Qwen3.8-27B-QUASAR-NVFP4-NINFER-/blob/main/README.md",
+      "snippet": "Qwen3.8-27B QUASAR NVFP4 — NInfer artifact This repository documents and packages everything needed to reproduce qwen3_8_27b_nvfp4_quasar.ninfer: the QUASAR QAT NVFP4 (W4A4) variant of Qwen3.8-27B converted to the closed .ninfer artifact format used by the NInfer inference engine, and evaluated on GPQA-Diamond."
+    }
+  ]
+}

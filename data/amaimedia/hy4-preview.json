@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "AMAImedia/Hy4-preview",
+  "slug": "amaimedia-hy4-preview",
+  "author": "AMAImedia",
+  "url": "https://huggingface.co/AMAImedia/Hy4-preview",
+  "created_at": "2026-08-28T18:19:10.000Z",
+  "updated_at": "2026-08-28T18:19:12.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "hy_v4",
+    "text-generation",
+    "hunyuan",
+    "hy4",
+    "moe",
+    "conversational",
+    "arxiv:2512.02556",
+    "arxiv:2603.12201",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 779960992733,
+  "parameters_human": "779.96B",
+  "storage_bytes": 1560008337568,
+  "storage_human": "1560.0 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - Tencent-Hunyuan/Hy4-preview",
+      "url": "https://github.com/Tencent-Hunyuan/Hy4-preview",
+      "snippet": "Model Introduction Hy4 preview is a new-generation Mixture-of-Experts (MoE) flagship model developed by the Tencent Hy Team. The model comprises 770B total parameters, of which 49B are activated per token."
+    },
+    {
+      "title": "Hy4 preview - Tencent - Model Price & Provider Availability",
+      "url": "https://llm24.net/model/hy4-preview",
+      "snippet": "Hy4 preview is an AI Model by Tencent. Available at 9 providers. Pricing: from $0.000834/1M input tokens, $0.002501/1M output tokens"
+    },
+    {
+      "title": "Tencent Hy4 preview - Pricing & Benchmarks 2026 | LM Market Cap",
+      "url": "https://lmmarketcap.com/model/hy4-preview",
+      "snippet": "Tencent: Hy4 preview is a mixture-of-experts model from Tencent, with 49B active parameters out of 770B total. It is designed for coding agents, complex tool-use workflows, and productivity tasks that..."
+    },
+    {
+      "title": "Hy4 Preview now available on AI Gateway - Vercel",
+      "url": "https://vercel.com/changelog/hy4-preview-now-available-on-ai-gateway",
+      "snippet": "Hy4 Preview from Tencent is now available on AI Gateway. Hy4 Preview is an open-source Mixture-of-Experts model with 770B total parameters aimed at long-horizon coding, document analysis, game development, and scientific reasoning."
+    },
+    {
+      "title": "Hy4 preview: 770B Remarkable Open Model Launch - Techgenyz",
+      "url": "https://techgenyz.com/hy4-preview/",
+      "snippet": "Hy4 preview is now available through Tencent&#x27;s ecosystem, APIs, and open-source model repositories. As independent developers and researchers test the model, its position among the leading open-source AI systems should become clearer."
+    }
+  ]
+}

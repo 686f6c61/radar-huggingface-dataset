@@ -1,0 +1,76 @@
+{
+  "schema": 1,
+  "id": "Wesley1234/SenseNova-U1.5-Comfy",
+  "slug": "wesley1234-sensenova-u1-5-comfy",
+  "author": "Wesley1234",
+  "url": "https://huggingface.co/Wesley1234/SenseNova-U1.5-Comfy",
+  "created_at": "2026-08-28T16:04:58.000Z",
+  "updated_at": "2026-08-28T16:06:39.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-image",
+  "library": "comfyui",
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "tags": [
+    "comfyui",
+    "safetensors",
+    "sensenova",
+    "image-generation",
+    "image-editing",
+    "multi-reference-image-editing",
+    "text-to-image",
+    "en",
+    "zh",
+    "arxiv:2605.12500",
+    "base_model:sensenova/SenseNova-U1.5-8B-MoT",
+    "base_model:finetune:sensenova/SenseNova-U1.5-8B-MoT",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 814881652,
+  "storage_human": "815 MB",
+  "base_model": "sensenova/SenseNova-U1.5-8B-MoT, sensenova/SenseNova-U1.5-8B-MoT-SFT",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "t8star/SenseNova-U1.5-Comfy · Hugging Face",
+      "url": "https://huggingface.co/t8star/SenseNova-U1.5-Comfy",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "SenseNova-U1.5 in ComfyUI: Official 4K T2I and Editing Nodes",
+      "url": "https://comfyui-wiki.com/en/news/2026-08-16-sensenova-u1-5-comfyui",
+      "snippet": "The model itself was covered in our earlier news: SenseNova-U1.5 Preview: 4K Image Generation and Editing From SenseTime. ... What the official pack adds (v0.2.0) Published on the Comfy Registry as ComfyUI-SenseNova-U1."
+    },
+    {
+      "title": "taurusduan/SenseNova-U1.5-Comfy · Hugging Face",
+      "url": "https://huggingface.co/taurusduan/SenseNova-U1.5-Comfy",
+      "snippet": "SenseNova-U1: Unifying Multimodal Understanding and Generation with NEO-unify Architecture"
+    },
+    {
+      "title": "SenseNova-U1.5 ComfyUI 节点 - GitHub",
+      "url": "https://github.com/T8mars/Comfyui-SenseNova-U1.5-Wrapper-T8/",
+      "snippet": "Native ComfyUI nodes for SenseNova U1.5 image generation and multi-reference image editing. - T8mars/Comfyui-SenseNova-U1.5-Wrapper-T8"
+    },
+    {
+      "title": "GitHub - OpenSenseNova/ComfyUI-SenseNova-U1",
+      "url": "https://github.com/OpenSenseNova/ComfyUI-SenseNova-U1",
+      "snippet": "The former SenseNova U1 Local Loader remains available under SenseNova/Local/Legacy so existing workflows keep their original model_path, local_model, and gguf_checkpoint contract."
+    }
+  ]
+}

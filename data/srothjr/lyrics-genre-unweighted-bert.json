@@ -1,0 +1,76 @@
+{
+  "schema": 1,
+  "id": "SrothJr/lyrics-genre-unweighted-bert",
+  "slug": "srothjr-lyrics-genre-unweighted-bert",
+  "author": "SrothJr",
+  "url": "https://huggingface.co/SrothJr/lyrics-genre-unweighted-bert",
+  "created_at": "2026-08-28T16:59:01.000Z",
+  "updated_at": "2026-08-28T17:25:15.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "bert",
+    "text-classification",
+    "nlp",
+    "song-lyrics",
+    "en",
+    "dataset:juliensimon/autonlp-data-song-lyrics",
+    "arxiv:1910.09700",
+    "base_model:google-bert/bert-base-uncased",
+    "base_model:finetune:google-bert/bert-base-uncased",
+    "license:apache-2.0",
+    "text-embeddings-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 109486854,
+  "parameters_human": "109.5M",
+  "storage_bytes": 437970928,
+  "storage_human": "438 MB",
+  "base_model": "google-bert/bert-base-uncased",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Free AI Lyrics Generator - Write Song Lyrics in Seconds",
+      "url": "https://freesong.ai/ai-lyrics-generator",
+      "snippet": "Stuck on a verse? Describe your idea and our free AI lyrics generator writes complete, original song lyrics in seconds, ready to edit, rhyme and record."
+    },
+    {
+      "title": "7 Best AI Lyrics Generators 2026 (#1 Song Generator)",
+      "url": "https://contentmavericks.com/best-ai-lyrics-generator/",
+      "snippet": "An AI lyrics generator writes original song lyrics from a few keywords, a genre, and a description of your song&#x27;s story. It tailors the words to your chosen style and mood, helping songwriters draft lyrics quickly across many genres and languages."
+    },
+    {
+      "title": "AI Lyrics Generator | Write Song Lyrics with Creatune",
+      "url": "https://creatune.ai/ai-lyrics-generator",
+      "snippet": "Write original song lyrics by genre, mood, theme, and structure with Creatune&#x27;s AI lyrics generator, then copy them or send them to the music generator."
+    },
+    {
+      "title": "Best 8 AI Lyrics Generators in 2026 | Magnific Blog",
+      "url": "https://www.magnific.com/blog/ai-lyrics-generator/",
+      "snippet": "The 8 best AI lyrics generators for hooks, verses, toplines, and pitches. Compare rhyme schemes, genre presets, and commercial rights."
+    },
+    {
+      "title": "Free AI Lyrics Generator | Rewind.ai",
+      "url": "https://rewind.ai/music/lyrics/",
+      "snippet": "Get the result AI Lyrics Generator runs on our own GPU servers and returns a result in seconds. Download it, copy it, or share the link."
+    }
+  ]
+}

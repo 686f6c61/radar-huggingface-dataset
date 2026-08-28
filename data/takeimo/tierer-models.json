@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "takeimo/tierer-models",
+  "slug": "takeimo-tierer-models",
+  "author": "takeimo",
+  "url": "https://huggingface.co/takeimo/tierer-models",
+  "created_at": "2026-08-28T13:57:55.000Z",
+  "updated_at": "2026-08-28T13:57:55.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "AITier - AI Model Rankings, Benchmarks and Tier Lists",
+      "url": "https://aitier.net/",
+      "snippet": "Compare AI models across coding, math reasoning, multimodal and general benchmarks with visual tier charts and rankings."
+    },
+    {
+      "title": "How to Build a Tiered AI Architecture That Saves Your Budget",
+      "url": "https://medium.com/data-science-collective/how-to-build-a-tiered-ai-architecture-that-saves-your-budget-d90486f20ffc",
+      "snippet": "Learn how tiered AI architecture and model routing reduce LLM costs by sending simple tasks to cheap models and complex queries to flagship AI."
+    },
+    {
+      "title": "8 Frontier AI Labs Compared (2026): OpenAI vs Anthropic",
+      "url": "https://cheatsheets.davidveksler.com/ai-frontier.html",
+      "snippet": "Frontier AI · 2026 Landscape Frontier AI Labs List: Companies, Models & Strategy (2026) OpenAI, Anthropic, Google DeepMind, xAI, Meta, Mistral, DeepSeek, and Moonshot AI: the 8 labs building frontier AI, compared on model access, operating approach, and AGI strategy. Not a valuation ranking or an exhaustive directory."
+    },
+    {
+      "title": "Models - Hugging Face",
+      "url": "https://huggingface.co/models",
+      "snippet": "Explore machine learning models."
+    },
+    {
+      "title": "Azure OpenAI in Microsoft Foundry Models quotas and limits",
+      "url": "https://learn.microsoft.com/en-us/azure/foundry/openai/quotas-limits",
+      "snippet": "This article features detailed descriptions and best practices on the quotas and limits for Azure OpenAI."
+    }
+  ]
+}

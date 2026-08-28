@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "esimpson/custom-gpt2-v2",
+  "slug": "esimpson-custom-gpt2-v2",
+  "author": "esimpson",
+  "url": "https://huggingface.co/esimpson/custom-gpt2-v2",
+  "created_at": "2026-08-28T19:31:20.000Z",
+  "updated_at": "2026-08-28T19:32:11.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gpt2",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "OpenAI GPT2 · Hugging Face",
+      "url": "https://huggingface.co/docs/transformers/v4.51.3/en/model_doc/gpt2",
+      "snippet": "It is used to instantiate a GPT-2 model according to the specified arguments, defining the model architecture. Instantiating a configuration with the defaults will yield a similar configuration to that of the GPT-2 openai-community/gpt2 architecture. Configuration objects inherit from PretrainedConfig and can be used to control the model outputs."
+    },
+    {
+      "title": "LLM Leaderboard 2026: Compare 300+ Top AI Models by Intelligence, Speed ...",
+      "url": "https://llm-stats.com/leaderboards/llm-leaderboard",
+      "snippet": "The LLM Leaderboard — independent ranking of GPT, Claude, Gemini, Llama, DeepSeek and 300+ AI models by intelligence, speed and price. Filter by provider, license, modality and context window; sort by every benchmark. Composite LLM Stats Score updated continuously from public benchmarks and live API metrics."
+    },
+    {
+      "title": "CustomGPT.ai | Custom GPTs From Your Content For Business",
+      "url": "https://customgpt.ai/",
+      "snippet": "CustomGPT.ai empowers businesses with custom GPTs—AI agents built from your content. Deliver exceptional customer experiences and maximize employee efficiency."
+    },
+    {
+      "title": "openai-community/gpt2 · Hugging Face",
+      "url": "https://huggingface.co/openai-community/gpt2",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GitHub - toluwee/gpt2-fine-tuning-guide",
+      "url": "https://github.com/toluwee/gpt2-fine-tuning-guide/",
+      "snippet": "🚀 A complete walkthrough on how to fine-tune GPT-2 using the Hugging Face Transformers library with your own custom text data. This guide covers everything from preparing your dataset to training, evaluating, and saving your fine-tuned model — perfect for NLP practitioners, researchers, and ..."
+    }
+  ]
+}

@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "hugoleroy/multitask-int8",
+  "slug": "hugoleroy-multitask-int8",
+  "author": "hugoleroy",
+  "url": "https://huggingface.co/hugoleroy/multitask-int8",
+  "created_at": "2026-08-28T18:32:24.000Z",
+  "updated_at": "2026-08-28T18:32:33.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "mocov3",
+    "pytorch",
+    "multitask",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 24832,
+  "parameters_human": "24832",
+  "storage_bytes": 99808,
+  "storage_human": "99808 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "hugo-leroy (Hugo) - Hugging Face",
+      "url": "https://huggingface.co/hugo-leroy/models",
+      "snippet": "hugo-leroy&#x27;s models1 Sort: Recently updated hugo-leroy/model_006943978_vit_tiny Updated about 12 hours ago"
+    },
+    {
+      "title": "Multi — one task, the right AI workflow",
+      "url": "https://getmulti.ai/",
+      "snippet": "Multi puts 300+ models from every major lab to work across four workflows, so you deploy the best AI for each task instead of forcing one to do it all. Using the right model for the right project is the advantage most people leave on the table."
+    },
+    {
+      "title": "Hugging Face - The AI community building the future.",
+      "url": "https://huggingface.co/",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Deploying to DeepStream for Multitask Classification - NVIDIA Docs",
+      "url": "https://docs.nvidia.com/tao/tao-toolkit-archive/tao-30-2205/text/ds_tao/multitask_classification_ds.html",
+      "snippet": "An exported .etlt model file and optional calibration cache for INT8 precision. A labels.txt file containing the labels for classes in the order in which the networks produces outputs."
+    },
+    {
+      "title": "GitHub - ai-models-lab/minimax-h3: MiniMax-H3-Hub, ComfyUI Workflows ...",
+      "url": "https://github.com/ai-models-lab/minimax-h3",
+      "snippet": "📊 Model Comparison Matrix: Benchmark comparisons between MiniMax H3, Seedance 2.5, Wan 2.1, Kling AI, Sora, and CogVideoX. 🌐 Chinese AI Video Generator Directory: Complete guide for international creators to access Chinese AI models without native phone registration, plus Faceless Channel guides."
+    }
+  ]
+}

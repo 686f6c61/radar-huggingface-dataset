@@ -1,0 +1,82 @@
+{
+  "schema": 1,
+  "id": "knoopx/ThinkingCap-Qwen3.6-27B-NInfer",
+  "slug": "knoopx-thinkingcap-qwen3-6-27b-ninfer",
+  "author": "knoopx",
+  "url": "https://huggingface.co/knoopx/ThinkingCap-Qwen3.6-27B-NInfer",
+  "created_at": "2026-08-20T09:04:07.000Z",
+  "updated_at": "2026-08-28T14:38:34.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "ninfer",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "ninfer",
+    "qwen3.6",
+    "qwen3_5",
+    "27b",
+    "thinkingcap",
+    "token-efficient",
+    "efficient-thinking",
+    "conversational",
+    "image-text-to-text",
+    "multimodal",
+    "nvfp4",
+    "w4a4",
+    "groupwise-quantization",
+    "w4a16",
+    "4bit",
+    "llm",
+    "single-file",
+    "text-generation",
+    "en",
+    "base_model:Qwen/Qwen3.6-27B",
+    "base_model:finetune:Qwen/Qwen3.6-27B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 12,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 54143497728,
+  "storage_human": "54.1 GB",
+  "base_model": "Qwen/Qwen3.6-27B",
+  "formats": [],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "knoopx/ThinkingCap-Qwen3.6-27B-NInfer · Hugging Face",
+      "url": "https://huggingface.co/knoopx/ThinkingCap-Qwen3.6-27B-NInfer",
+      "snippet": "knoopx / ThinkingCap-Qwen3.6-27B-NInfer like 0 Text Generation NInfer English qwen3.6 qwen3_5 27b thinkingcap token-efficient efficient-thinking conversational image-text-to-text multimodal nvfp4 w4a4 groupwise-quantization w4a16 4bit llm single-file License:apache-2.0 Model card FilesFiles and versions xet Community Deploy Copy to bucket new ..."
+    },
+    {
+      "title": "Introducing efficiency focused \"ThinkingCap\" model series.",
+      "url": "https://bottlecapai.com/post/thinkingcap-qwen3-6-27b/",
+      "snippet": "ThinkingCap-Qwen3.6-27B spends far fewer thinking tokens than the base model across the board — on most benchmarks less than half, and on the heaviest reasoning sets (such as GPQA-Diamond) the mean drops by well over 60%. The table below shows the mean number of thinking tokens per response on each out-of-domain benchmark. A natural worry is that simply pushing a model to emit fewer thinking ..."
+    },
+    {
+      "title": "bottlecapai/ThinkingCap-Qwen3.6-27B · Hugging Face",
+      "url": "https://huggingface.co/bottlecapai/ThinkingCap-Qwen3.6-27B",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "ThinkingCap-Qwen3.6-27B Cuts Reasoning Token Use by Half",
+      "url": "https://hackernoon.com/thinkingcap-qwen36-27b-cuts-reasoning-token-use-by-half",
+      "snippet": "Overview ThinkingCap-Qwen3.6-27B is a finetuned version of Qwen3.6-27B that reduces thinking token usage by 50% on average while maintaining the original model&#x27;s reasoning capability and answer quality. Built by bottlecapai, the model uses state-of-the-art finetuning algorithms on a curated dataset spanning multiple domains and difficulty levels. The finetuning was designed to be minimally ..."
+    },
+    {
+      "title": "ThinkingCap Qwen3.6 27B — ThinkLLM",
+      "url": "https://thinkllm.dev/models/thinkingcap-qwen3-6-27b",
+      "snippet": "A mid-sized multimodal model that can process both text and images, released under an open Apache 2.0 license by bottlecapai. It operates in the Qwen3.6 family lineage, meaning it inherits that architecture&#x27;s general reasoning and language handling characteristics. Concrete details about its specific behavioral quirks or capability profile beyond multimodal input support are limited."
+    }
+  ]
+}

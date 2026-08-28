@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "AverageMetaheuristicsEnjoyer/moe-routing-drift-checkpoints",
+  "slug": "averagemetaheuristicsenjoyer-moe-routing-drift-checkpoints",
+  "author": "AverageMetaheuristicsEnjoyer",
+  "url": "https://huggingface.co/AverageMetaheuristicsEnjoyer/moe-routing-drift-checkpoints",
+  "created_at": "2026-08-28T14:52:15.000Z",
+  "updated_at": "2026-08-28T14:55:40.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "mixture-of-experts",
+    "routing",
+    "prompt-tuning",
+    "prefix-tuning",
+    "base_model:Qwen/Qwen3-30B-A3B-Instruct-2507",
+    "base_model:adapter:Qwen/Qwen3-30B-A3B-Instruct-2507",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 5499405248,
+  "storage_human": "5.5 GB",
+  "base_model": "inclusionAI/Ling-mini-2.0, Qwen/Qwen3-30B-A3B-Instruct-2507",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "AverageMetaheuristicsEnjoyer (Alex) - Hugging Face",
+      "url": "https://huggingface.co/AverageMetaheuristicsEnjoyer",
+      "snippet": "AI & ML interests ... Recent Activity updated a model 18 days ago ... published a model 18 days ago"
+    },
+    {
+      "title": "Routing-Drift in MoE and Continual Learning",
+      "url": "https://www.emergentmind.com/topics/routing-drift",
+      "snippet": "Routing-Drift is an umbrella term for failures in mapping inputs to intended experts, arising from sequential updates, distribution shifts, and hardware degradation. It manifests as phenomena like semantic drift, misaligned co-drift, and safety routing drift across lifelong editing, MoE-LoRA tuning, and token-level routing. Stabilization methods such as freeze-then-route, capability-aligned ..."
+    },
+    {
+      "title": "AverageMetaheuristicsEnjoyer/efficient_pretrain_checkpoints - Hugging Face",
+      "url": "https://huggingface.co/AverageMetaheuristicsEnjoyer/efficient_pretrain_checkpoints",
+      "snippet": "AverageMetaheuristicsEnjoyer / efficient_pretrain_checkpoints like 0 Model card FilesFiles and versions xet Community Copy to bucket new No model card Downloads last month -"
+    },
+    {
+      "title": "AverageMetaheuristicsEnjoyer (xkcd) · GitHub",
+      "url": "https://github.com/AverageMetaheuristicsEnjoyer/",
+      "snippet": "AverageMetaheuristicsEnjoyer has 10 repositories available. Follow their code on GitHub."
+    },
+    {
+      "title": "Optimizing MoE Routers: Design, Implementation, and Evaluation in ...",
+      "url": "https://arxiv.org/html/2506.16419v1",
+      "snippet": "The Qwen1.5-MoE model, uses a native MoE architecture, and is small and good for router performance evaluation and fine-tuning. We add the routers by replacing gating mechanisms in these models."
+    }
+  ]
+}

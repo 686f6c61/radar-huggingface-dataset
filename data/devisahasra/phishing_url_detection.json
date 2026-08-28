@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "DeviSahasra/phishing_url_detection",
+  "slug": "devisahasra-phishing_url_detection",
+  "author": "DeviSahasra",
+  "url": "https://huggingface.co/DeviSahasra/phishing_url_detection",
+  "created_at": "2026-08-28T19:10:56.000Z",
+  "updated_at": "2026-08-28T19:10:56.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "A hybrid deep learning model for robust phishing URL detection ...",
+      "url": "https://www.sciencedirect.com/science/article/pii/S0045790625007712",
+      "snippet": "Phishing remains a persistent cybersecurity threat that requires accurate and efficient detection methods. Existing approaches struggle to capture both fine-grained URL structures and broader contextual semantics, limiting their effectiveness. In this paper, we propose a hybrid deep learning model that integrates multi-scale Convolutional Neural Networks (CNNs), Bidirectional Long Short-Term ..."
+    },
+    {
+      "title": "️ Phishing Website Detection using AI/ML - GitHub",
+      "url": "https://github.com/Muzammilxi/Phishing-Website-Detection-AI",
+      "snippet": "🛡️ Phishing Website Detection using AI/ML This project implements a Random Forest-based Machine Learning model to detect phishing websites using URL-based features. It leverages a curated dataset of phishing and legitimate URLs, extracts features, and trains a classifier that achieves 96.8% accuracy."
+    },
+    {
+      "title": "vishaaall360/AI_PHISING_URL_DETECTOR - GitHub",
+      "url": "https://github.com/vishaaall360/AI_PHISING_URL_DETECTOR",
+      "snippet": "A Machine Learning-based web application that detects whether a given URL is safe or phishing. The system analyzes URL-based features and classifies websites in real time using a trained ML model with a Flask web interface."
+    },
+    {
+      "title": "New MessiahGPT AI Model Fueling Automated Ransomware and Phishing Attacks",
+      "url": "https://cybersecuritynews.com/messiahgpt-fueling-ransomware-phishing-attacks/",
+      "snippet": "MessiahGPT is an uncensored AI service for generating ransomware, phishing kits, stealers, and other offensive tools."
+    },
+    {
+      "title": "JadePuffer agentic attacks now target AI model data with ransomware",
+      "url": "https://www.bleepingcomputer.com/news/security/jadepuffer-agentic-attacks-now-target-ai-model-data-with-ransomware/",
+      "snippet": "The JadePuffer autonomous AI agent has upgraded with custom malware called EncForge that focuses on encrypting AI assets, such as training datasets, vector databases, and model checkpoints."
+    }
+  ]
+}

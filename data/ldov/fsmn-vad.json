@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "ldov/fsmn-vad",
+  "slug": "ldov-fsmn-vad",
+  "author": "ldov",
+  "url": "https://huggingface.co/ldov/fsmn-vad",
+  "created_at": "2026-08-28T11:28:05.000Z",
+  "updated_at": "2026-08-28T11:28:05.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "voice-activity-detection",
+  "library": "gguf",
+  "languages": [
+    "zh",
+    "en"
+  ],
+  "tags": [
+    "gguf",
+    "voice-activity-detection",
+    "vad",
+    "fsmn",
+    "funasr",
+    "llama.cpp",
+    "ggml",
+    "cpu",
+    "on-device",
+    "zh",
+    "en",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 429538,
+  "parameters_human": "429538",
+  "storage_bytes": 1720512,
+  "storage_human": "2 MB",
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - lovemefan/fsmn-vad: A enterprise-grade Voice Activity Detector ...",
+      "url": "https://github.com/lovemefan/fsmn-vad",
+      "snippet": "fsmn VAD was trained on chinese corpora. and it finished anti-noise training, with certain noise rejection ability performs well on audios from different domains with various background noise and quality levels."
+    },
+    {
+      "title": "GitHub - yydspanda/funasr-lab: Open-source speech recognition toolkit ...",
+      "url": "https://github.com/yydspanda/funasr-lab",
+      "snippet": "The pipeline below composes SenseVoiceSmall with FSMN-VAD and CAM++; diarization is provided by the separate CAM++ model, not by the SenseVoiceSmall checkpoint: See the SenseVoice paper, Hugging Face checkpoint, and GGUF edge checkpoint."
+    },
+    {
+      "title": "funasr/fsmn-vad · Hugging Face",
+      "url": "https://huggingface.co/funasr/fsmn-vad",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "FSMN-VAD Series - ManySpeech - manyeyes.github.io",
+      "url": "https://manyeyes.github.io/manyspeech/en/models/vad/fsmn-vad.html",
+      "snippet": "NotesModel background: An industrial‑grade Voice Activity Detection (VAD) model developed by Alibaba DAMO Academy. Built on the FSMN‑Monophone architecture, it is a 16k general‑purpose Chinese VAD model, natively compatible with the FunASR framework and Paraformer‑large for long‑audio scenarios.Features: Leverages the FSMN structure to fully utilise contextual information, providing ..."
+    },
+    {
+      "title": "lovemefan/fsmn-vad | DeepWiki",
+      "url": "https://deepwiki.com/lovemefan/fsmn-vad",
+      "snippet": "The fsmn-vad system is a production-ready Voice Activity Detection solution that identifies speech segments in audio streams using FSMN neural networks. Originally developed by Alibaba&#x27;s Speech Lab and available through ModelScope and FunASR, this implementation provides a lightweight, portable VAD system with ONNX Runtime integration."
+    }
+  ]
+}

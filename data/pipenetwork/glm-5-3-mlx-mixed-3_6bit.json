@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "pipenetwork/GLM-5.3-MLX-mixed-3_6bit",
+  "slug": "pipenetwork-glm-5-3-mlx-mixed-3_6bit",
+  "author": "pipenetwork",
+  "url": "https://huggingface.co/pipenetwork/GLM-5.3-MLX-mixed-3_6bit",
+  "created_at": "2026-08-28T19:20:34.000Z",
+  "updated_at": "2026-08-28T19:37:11.000Z",
+  "license": "glm-5.3",
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "mlx",
+  "languages": [],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "glm_moe_dsa",
+    "apple-silicon",
+    "mixture-of-experts",
+    "3-bit",
+    "text-generation",
+    "conversational",
+    "base_model:zai-org/GLM-5.3",
+    "base_model:quantized:zai-org/GLM-5.3",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 94912840704,
+  "parameters_human": "94.91B",
+  "storage_bytes": 332598797240,
+  "storage_human": "332.6 GB",
+  "base_model": "zai-org/GLM-5.3",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "pipenetwork/GLM-5.3-Flash-MLX-mixed-4_8bit · Hugging Face",
+      "url": "https://huggingface.co/pipenetwork/GLM-5.3-Flash-MLX-mixed-4_8bit",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GitHub - PipeNetwork/glm53-mlx: MLX (Apple Silicon) runtime ...",
+      "url": "https://github.com/PipeNetwork/glm53-mlx",
+      "snippet": "The runtime here (glm53_mlx/runtime.py, bundled in every checkpoint as model_file) builds the indexer only on full layers and threads each full layer&#x27;s selection into the shared layers that follow, as the reference does; it also uses the reference&#x27;s fp32 indexer scores and router logits and the indexer LayerNorm epsilon (1e-6)."
+    },
+    {
+      "title": "pipenetwork/GLM-5.3-Flash-MLX-6bit · Hugging Face",
+      "url": "https://huggingface.co/pipenetwork/GLM-5.3-Flash-MLX-6bit",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "glm53-mlx/docs at main · PipeNetwork/glm53-mlx · GitHub",
+      "url": "https://github.com/PipeNetwork/glm53-mlx/tree/main/docs",
+      "snippet": "MLX (Apple Silicon) runtime + quantization for GLM-5.3 (744B glm_moe_dsa): fixed shared-indexer layers, validated against transformers - PipeNetwork/glm53-mlx"
+    },
+    {
+      "title": "GLM (AI) - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/GLM_(AI)",
+      "snippet": "GLM, short for General Language Model, is a series of open weight large language models developed by Chinese software company Z.ai. Though the first GLM model was published on 3 March 2021, it was released under the name ChatGLM as an AI -based chatbot in March 2023."
+    }
+  ]
+}

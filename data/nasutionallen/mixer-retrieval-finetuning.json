@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "nasutionallen/mixer-retrieval-finetuning",
+  "slug": "nasutionallen-mixer-retrieval-finetuning",
+  "author": "nasutionallen",
+  "url": "https://huggingface.co/nasutionallen/mixer-retrieval-finetuning",
+  "created_at": "2026-08-28T18:17:43.000Z",
+  "updated_at": "2026-08-28T18:17:51.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "mixer",
+    "pytorch",
+    "retrieval",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 24832,
+  "parameters_human": "24832",
+  "storage_bytes": 99808,
+  "storage_human": "99808 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Foundry Models sold by Azure - Microsoft Foundry",
+      "url": "https://learn.microsoft.com/en-us/azure/foundry/foundry-models/concepts/models-sold-directly-by-azure",
+      "snippet": "Learn about Microsoft Foundry Models sold by Azure, their capabilities, deployment types, and regional availability for AI applications."
+    },
+    {
+      "title": "The Machine Learning Practitioner&#x27;s Guide to Fine-Tuning Language ...",
+      "url": "https://machinelearningmastery.com/the-machine-learning-practitioners-guide-to-fine-tuning-language-models/",
+      "snippet": "In this article, you will learn when fine-tuning large language models is warranted, which 2025-ready methods and tools to choose, and how to avoid the most common mistakes that derail projects. Topics we will cover include: A practical decision framework: prompt engineering, retrieval-augmented generation (RAG), and when fine-tuning truly adds value. Today&#x27;s essential methods—LoRA/QLoRA ..."
+    },
+    {
+      "title": "AI model fine-tuning concepts | Microsoft Learn",
+      "url": "https://learn.microsoft.com/en-us/windows/ai/fine-tuning",
+      "snippet": "Learn AI model fine-tuning concepts and discover when fine-tuning can optimize your data and improve model performance. Get started with practical guidance."
+    },
+    {
+      "title": "How to Build Retrieval-Augmented Fine-Tuning (RAFT) Systems: Complete ...",
+      "url": "https://markaicode.com/build-raft-retrieval-augmented-fine-tuning-systems/",
+      "snippet": "Learn to build RAFT systems that combine retrieval with fine-tuning for superior AI performance. Step-by-step guide with code examples and best practices."
+    },
+    {
+      "title": "The Ultimate Guide to Fine-Tuning LLMs from Basics to Breakthroughs: An ...",
+      "url": "https://arxiv.org/html/2408.13296v1",
+      "snippet": "It covers practical implementation strategies, including model initialisation, hyperparameter definition, and fine-tuning techniques such as Parameter-Efficient Fine-Tuning (PEFT) and Retrieval-Augmented Generation (RAG)."
+    }
+  ]
+}

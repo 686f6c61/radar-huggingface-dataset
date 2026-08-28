@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "DonnyFlo85/llama2_70b_chat_uncensored-GGUF",
+  "slug": "donnyflo85-llama2_70b_chat_uncensored-gguf",
+  "author": "DonnyFlo85",
+  "url": "https://huggingface.co/DonnyFlo85/llama2_70b_chat_uncensored-GGUF",
+  "created_at": "2026-08-28T18:18:44.000Z",
+  "updated_at": "2026-08-28T18:18:45.000Z",
+  "license": "llama2",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "llama",
+    "uncensored",
+    "wizard",
+    "vicuna",
+    "dataset:ehartford/wizard_vicuna_70k_unfiltered",
+    "arxiv:2305.14314",
+    "base_model:jarradh/llama2_70b_chat_uncensored",
+    "base_model:quantized:jarradh/llama2_70b_chat_uncensored",
+    "license:llama2",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 68976648192,
+  "parameters_human": "68.98B",
+  "storage_bytes": 521458035968,
+  "storage_human": "521.5 GB",
+  "base_model": "jarradh/llama2_70b_chat_uncensored",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "TheBloke/llama2_70b_chat_uncensored-GGUF · Hugging Face",
+      "url": "https://huggingface.co/TheBloke/llama2_70b_chat_uncensored-GGUF",
+      "snippet": "This repo contains GGUF format model files for Jarrad Hope&#x27;s Llama2 70B Chat Uncensored. About GGUF GGUF is a new format introduced by the llama.cpp team on August 21st 2023. It is a replacement for GGML, which is no longer supported by llama.cpp. GGUF offers numerous advantages over GGML, such as better tokenisation, and support for special ..."
+    },
+    {
+      "title": "TheBloke/Llama-2-70B-Chat-GGUF · Hugging Face",
+      "url": "https://huggingface.co/TheBloke/Llama-2-70B-Chat-GGUF",
+      "snippet": "Llama 2 70B Chat - GGUF Model creator: Meta Llama 2 Original model: Llama 2 70B Chat Description This repo contains GGUF format model files for Meta Llama 2&#x27;s Llama 2 70B Chat. About GGUF GGUF is a new format introduced by the llama.cpp team on August 21st 2023. It is a replacement for GGML, which is no longer supported by llama.cpp."
+    },
+    {
+      "title": "Llama-2-70B-Chat-GGUF huggingface.co api & TheBloke Llama-2-70B-Chat ...",
+      "url": "https://www.toolify.ai/ai-model/thebloke-llama-2-70b-chat-gguf",
+      "snippet": "Llama-2-70B-Chat-GGUF is an open source model from GitHub that offers a free installation service, and any user can find Llama-2-70B-Chat-GGUF on GitHub to install."
+    },
+    {
+      "title": "llama2_70b_chat_uncensored-GGUF huggingface.co api & TheBloke llama2 ...",
+      "url": "https://www.toolify.ai/ai-model/thebloke-llama2-70b-chat-uncensored-gguf",
+      "snippet": "llama2_70b_chat_uncensored-GGUF is an open source model from GitHub that offers a free installation service, and any user can find llama2_70b_chat_uncensored-GGUF on GitHub to install. At the same time, huggingface.co provides the effect of llama2_70b_chat_uncensored-GGUF install, users can directly use llama2_70b_chat_uncensored-GGUF installed effect in huggingface.co for debugging and trial ..."
+    },
+    {
+      "title": "llama2-uncensored",
+      "url": "https://ollama.com/library/llama2-uncensored",
+      "snippet": "Llama 2 Uncensored is based on Meta&#x27;s Llama 2 model, and was created by George Sung and Jarrad Hope using the process defined by Eric Hartford in his blog post."
+    }
+  ]
+}

@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "pozszymanski/vit-matching-colab",
+  "slug": "pozszymanski-vit-matching-colab",
+  "author": "pozszymanski",
+  "url": "https://huggingface.co/pozszymanski/vit-matching-colab",
+  "created_at": "2026-08-28T14:00:11.000Z",
+  "updated_at": "2026-08-28T14:00:19.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "vit",
+    "pytorch",
+    "matching",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 49600,
+  "parameters_human": "49600",
+  "storage_bytes": 198880,
+  "storage_human": "198880 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "3-Tutorial_VIT_Model.ipynb - Colab",
+      "url": "https://colab.research.google.com/github/HelmholtzAI-Consultants-Munich/XAI-Tutorials/blob/main/xai-for-transformer/3-Tutorial_VIT_Model.ipynb/",
+      "snippet": "The encoder part of the ViT, like the traditional transformers consists of the following key components: Multi-Head Self-Attention, Feed-Forward Neural Network as well as Residual Connections and Layer Normalization. These components are stacked in multiple layers to form the complete encoder, which transforms the input image into a high-dimensional representation, suitable for tasks like ..."
+    },
+    {
+      "title": "GitHub - google-research/vision_transformer",
+      "url": "https://github.com/google-research/vision_transformer",
+      "snippet": "To make up your mind which model you want to use, have a look at Figure 3 in the paper. It&#x27;s also possible to choose a different checkpoint (see Colab vit_jax_augreg.ipynb) and then specify the value from the filename or adapt_filename column, which correspond to the filenames without .npz from the gs://vit_models/augreg directory."
+    },
+    {
+      "title": "image_classification_with_vision_transformer - Colab",
+      "url": "https://colab.research.google.com/github/keras-team/keras-io/blob/master/examples/vision/ipynb/image_classification_with_vision_transformer.ipynb",
+      "snippet": "This example implements the Vision Transformer (ViT) model by Alexey Dosovitskiy et al. for image classification, and demonstrates it on the CIFAR-100 dataset. The ViT model applies the Transformer architecture with self-attention to sequences of image patches, without using convolution layers."
+    },
+    {
+      "title": "GitHub - facebookresearch/dinov3: Reference PyTorch implementation and ...",
+      "url": "https://github.com/facebookresearch/dinov3",
+      "snippet": "Foreground segmentation: train a linear foreground segmentation model based on DINOv3 features [Run in Google Colab] Dense and sparse matching: match patches from objects on two different images based on DINOv3 features [Run in Google Colab]"
+    },
+    {
+      "title": "Vision Transformer (ViT) - Hugging Face",
+      "url": "https://huggingface.co/docs/transformers/v4.39.2/en/model_doc/vit",
+      "snippet": "The Vision Transformer (ViT) model was proposed in An Image is Worth 16x16 Words: Transformers for Image Recognition at Scale by Alexey Dosovitskiy, Lucas Beyer, Alexander Kolesnikov, Dirk Weissenborn, Xiaohua Zhai, Thomas Unterthiner, Mostafa Dehghani, Matthias Minderer, Georg Heigold, Sylvain Gelly, Jakob Uszkoreit, Neil Houlsby. It&#x27;s the first paper that successfully trains a Transformer ..."
+    }
+  ]
+}

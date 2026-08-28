@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "Ares-Realm-Studios/Hy4-preview",
+  "slug": "ares-realm-studios-hy4-preview",
+  "author": "Ares-Realm-Studios",
+  "url": "https://huggingface.co/Ares-Realm-Studios/Hy4-preview",
+  "created_at": "2026-08-28T17:31:30.000Z",
+  "updated_at": "2026-08-28T17:31:31.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "hy_v4",
+    "text-generation",
+    "hunyuan",
+    "hy4",
+    "moe",
+    "conversational",
+    "arxiv:2512.02556",
+    "arxiv:2603.12201",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 779960992733,
+  "parameters_human": "779.96B",
+  "storage_bytes": 1560008337568,
+  "storage_human": "1560.0 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - Tencent-Hunyuan/Hy4-preview",
+      "url": "https://github.com/Tencent-Hunyuan/Hy4-preview",
+      "snippet": "A New Flagship Generation We scaled Hy4 preview on three fronts: model size, context length, and training data. Stronger pre-training and a substantially larger post-training run compound into another step change in capability — the largest generation-over-generation gain we&#x27;ve measured, and enough to put Hy4 preview at the open-source frontier."
+    },
+    {
+      "title": "Introducing Hy4 preview - hy.tencent.ai",
+      "url": "https://hy.tencent.ai/research/hy4-preview?langVersion=en",
+      "snippet": "A new flagship generation We scaled Hy4 preview on three fronts: model size, context length, and training data. Stronger pre-training and a substantially larger post-training run compound into another step change in capability — the largest generation-over-generation gain we&#x27;ve measured, and enough to put Hy4 preview at the open-source frontier."
+    },
+    {
+      "title": "Hy4-preview-FP8 · Models",
+      "url": "https://www.modelscope.cn/models/Tencent-Hunyuan/Hy4-preview-FP8",
+      "snippet": "Hy4 preview is a new-generation Mixture-of-Experts (MoE) flagship model developed by the Tencent Hy Team. The model comprises 770B total parameters, of which 49B are activated per token."
+    },
+    {
+      "title": "Ares-Realm-Studios/.github",
+      "url": "https://github.com/Ares-Realm-Studios/.github",
+      "snippet": "🌌 Overview Ares Realm Studios is an independent development initiative focused on building a new generation of AI-integrated tools, worlds, and experiences."
+    },
+    {
+      "title": "Tencent Releases and Open-Sources Tencent Hy4 preview",
+      "url": "https://www.tencent.com/tencent-releases-and-open-sources-tencent-hy4-preview/",
+      "snippet": "Tencent has released and open-sourced Tencent Hy4 preview, a next-generation large language model with 770B total parameters and 49B active parameters, and a context window exceeding 1M tokens."
+    }
+  ]
+}

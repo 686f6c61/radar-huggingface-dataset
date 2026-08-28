@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "dawsonvosburg/docling-layout-heron-coreml",
+  "slug": "dawsonvosburg-docling-layout-heron-coreml",
+  "author": "dawsonvosburg",
+  "url": "https://huggingface.co/dawsonvosburg/docling-layout-heron-coreml",
+  "created_at": "2026-08-28T16:57:18.000Z",
+  "updated_at": "2026-08-28T16:57:22.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "object-detection",
+  "library": "coreml",
+  "languages": [],
+  "tags": [
+    "coreml",
+    "coremltools",
+    "document-layout-analysis",
+    "document-ai",
+    "rt-detr-v2",
+    "docling",
+    "object-detection",
+    "arxiv:2509.11720",
+    "base_model:docling-project/docling-layout-heron",
+    "base_model:quantized:docling-project/docling-layout-heron",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 86639510,
+  "storage_human": "87 MB",
+  "base_model": "docling-project/docling-layout-heron",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Advanced Layout Analysis Models for Docling - arXiv.org",
+      "url": "https://arxiv.org/pdf/2509.11720v1",
+      "snippet": "Our best model, \"heron-101\", attains 78% mAP with 28 ms/image inference time on a single NVIDIA A100 GPU. Extensive quantitative and qual-itative experiments establish best practices for training, eval-uating, and deploying document-layout detectors, providing actionable guidance for the document conversion commu-nity."
+    },
+    {
+      "title": "Advanced Layout Analysis Models for Docling - arXiv.org",
+      "url": "https://arxiv.org/html/2509.11720v1",
+      "snippet": "Our best model, \"heron-101\", attains 78% mAP with 28 ms/image inference time on a single NVIDIA A100 GPU. Extensive quantitative and qualitative experiments establish best practices for training, evaluating, and deploying document-layout detectors, providing actionable guidance for the document conversion community."
+    },
+    {
+      "title": "GitHub - babbarc/docling-layout-heron: Mirror of docling-project ...",
+      "url": "https://github.com/babbarc/docling-layout-heron",
+      "snippet": "Document Layout Analysis \"heron\" 🚀 heron is the default layout analysis model of the Docling project, designed for robust and high-quality document layout understanding."
+    },
+    {
+      "title": "tomsanbear/docling-layout-heron · Hugging Face",
+      "url": "https://huggingface.co/tomsanbear/docling-layout-heron",
+      "snippet": "🚀 heron is the default layout analysis model of the Docling project, designed for robust and high-quality document layout understanding."
+    },
+    {
+      "title": "docling-project/docling-layout-heron-101 · Hugging Face",
+      "url": "https://huggingface.co/docling-project/docling-layout-heron-101",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    }
+  ]
+}

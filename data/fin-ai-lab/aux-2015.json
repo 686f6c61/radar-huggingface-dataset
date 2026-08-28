@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "fin-ai-lab/aux-2015",
+  "slug": "fin-ai-lab-aux-2015",
+  "author": "fin-ai-lab",
+  "url": "https://huggingface.co/fin-ai-lab/aux-2015",
+  "created_at": "2026-07-14T21:16:35.000Z",
+  "updated_at": "2026-08-28T19:29:07.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "ministral_dual_rope",
+    "text-generation",
+    "frontier-to-pit",
+    "divergence-decoding",
+    "point-in-time",
+    "look-ahead-bias",
+    "auxiliary-model",
+    "conversational",
+    "custom_code",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 42,
+  "trending_score": 0,
+  "parameters": 4344425472,
+  "parameters_human": "4.34B",
+  "storage_bytes": 8701688510,
+  "storage_human": "8.7 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "fin-ai-lab/aux-2015 · Hugging Face",
+      "url": "https://huggingface.co/fin-ai-lab/aux-2015",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "README.md · fin-ai-lab/aux-2015 at main - Hugging Face",
+      "url": "https://huggingface.co/fin-ai-lab/aux-2015/blob/main/README.md",
+      "snippet": "Instructions to use fin-ai-lab/aux-2015 with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Libraries Transformers How to use fin-ai-lab/aux-2015 with Transformers:"
+    },
+    {
+      "title": "Home - FinAI LAB",
+      "url": "https://fin-ai-lab.telecom-paris.fr/en/",
+      "snippet": "The laboratory&#x27;s research activities are organized around four thematic areas (AI and big data for large-scale banking infrastructures, AI and cybersecurity, fundamental models and financial time series, and fraud detection and anti-money laundering) as well as a cross-cutting area dedicated to trustworthy AI."
+    },
+    {
+      "title": "GitHub - fin-ai-lab/divergence-decoding-inference-time-unlearning",
+      "url": "https://github.com/fin-ai-lab/divergence-decoding-inference-time-unlearning",
+      "snippet": "Contribute to fin-ai-lab/divergence-decoding-inference-time-unlearning development by creating an account on GitHub."
+    },
+    {
+      "title": "GitHub - fin-ai-lab/frontier-to-pit",
+      "url": "https://github.com/fin-ai-lab/frontier-to-pit/tree/main",
+      "snippet": "Divergence Decoding (DD) — unlearning via a forget/retain pair of small auxiliary models: l = l_P + α· (l_forget − l_retain). SAE Feature Steering — clamp interpretable features that reason from a historical perspective."
+    }
+  ]
+}

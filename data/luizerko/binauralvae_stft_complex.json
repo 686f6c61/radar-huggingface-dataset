@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "luizerko/binauralvae_stft_complex",
+  "slug": "luizerko-binauralvae_stft_complex",
+  "author": "luizerko",
+  "url": "https://huggingface.co/luizerko/binauralvae_stft_complex",
+  "created_at": "2026-08-28T14:42:51.000Z",
+  "updated_at": "2026-08-28T14:42:51.000Z",
+  "license": "cc-by-sa-4.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:cc-by-sa-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - Luizerko/BinauralVAE: Binaural audio reconstruction pipelines ...",
+      "url": "https://github.com/Luizerko/BinauralVAE",
+      "snippet": "Welcome to BinauralVAE. This project explores several Variational Autoencoder (VAE) approaches - including complex-valued variants - to reconstruct spatialized audio. Developed alongside AudioWorldSim, this project serves as a foundation for generating latent state representations for a binaural, audio-based world model."
+    },
+    {
+      "title": "BinauralVAE/MODELS.md at main · Luizerko/BinauralVAE · GitHub",
+      "url": "https://github.com/Luizerko/BinauralVAE/blob/main/MODELS.md",
+      "snippet": "By upgrading from real-valued networks to complex-valued networks, we respect the inherently complex nature of STFT outputs. This structure naturally enforces the cyclic nature of phase, yielding promising spatial audio reconstructions. This approach is heavily detailed in Nakashika&#x27;s paper, but we&#x27;ll provide an introduction here too."
+    },
+    {
+      "title": "GitHub - Luizerko/BinauralVAE: Binaural audio reconstruction pipelines ...",
+      "url": "https://www.linkedin.com/posts/luis-vitor-zerkowski-93a3471b4_github-luizerkobinauralvae-binaural-audio-activity-7486432437858668544-IjdB",
+      "snippet": "- BinauralVAE: a binaural audio reconstruction pipeline. This includes two standard VAE-based models and one complex-valued VAE. That last one was incredibly tough, but it&#x27;s very special to me."
+    },
+    {
+      "title": "Speech Enhancement with Score-Based Generative Models in the Complex ...",
+      "url": "https://arxiv.org/abs/2203.17004",
+      "snippet": "Score-based generative models (SGMs) have recently shown impressive results for difficult generative tasks such as the unconditional and conditional generation of natural images and audio signals. In this work, we extend these models to the complex short-time Fourier transform (STFT) domain, proposing a novel training task for speech enhancement using a complex-valued deep neural network. We ..."
+    },
+    {
+      "title": "Short-time Fourier transform - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Short-time_Fourier_transform",
+      "snippet": "The short-time Fourier transform (STFT) is a Fourier-related transform used to determine the sinusoidal frequency and phase content of local sections of a signal as it changes over time. [1]"
+    }
+  ]
+}

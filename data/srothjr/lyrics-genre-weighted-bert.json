@@ -1,0 +1,76 @@
+{
+  "schema": 1,
+  "id": "SrothJr/lyrics-genre-weighted-bert",
+  "slug": "srothjr-lyrics-genre-weighted-bert",
+  "author": "SrothJr",
+  "url": "https://huggingface.co/SrothJr/lyrics-genre-weighted-bert",
+  "created_at": "2026-08-28T16:59:40.000Z",
+  "updated_at": "2026-08-28T17:28:29.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "bert",
+    "text-classification",
+    "nlp",
+    "song-lyrics",
+    "en",
+    "dataset:juliensimon/autonlp-data-song-lyrics",
+    "arxiv:1910.09700",
+    "base_model:google-bert/bert-base-uncased",
+    "base_model:finetune:google-bert/bert-base-uncased",
+    "license:apache-2.0",
+    "text-embeddings-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 109486854,
+  "parameters_human": "109.5M",
+  "storage_bytes": 437970928,
+  "storage_human": "438 MB",
+  "base_model": "google-bert/bert-base-uncased",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Lyrics Genre Predictor - a Hugging Face Space by SrothJr",
+      "url": "https://huggingface.co/spaces/SrothJr/lyrics-genre-predictor",
+      "snippet": "Enter the lyrics of a song and the app will tell you which music genres it matches best, such as Pop, Rock, Hip Hop, and more. It uses two trained language models to examine the words and returns a..."
+    },
+    {
+      "title": "GitHub - SrothJr/song-lyrics-genre-nlp: Multi-Class Musical Genre ...",
+      "url": "https://github.com/SrothJr/song-lyrics-genre-nlp",
+      "snippet": "Multi-Class Musical Genre Classification via Song Lyrics Analysis - SrothJr/song-lyrics-genre-nlp"
+    },
+    {
+      "title": "song-lyrics-genre-nlp/README.md at main - GitHub",
+      "url": "https://github.com/SrothJr/song-lyrics-genre-nlp/blob/main/README.md",
+      "snippet": "Multi-Class Musical Genre Classification via Song Lyrics Analysis - song-lyrics-genre-nlp/README.md at main · SrothJr/song-lyrics-genre-nlp"
+    },
+    {
+      "title": "Veucci/lyric-to-genre · Hugging Face",
+      "url": "https://huggingface.co/Veucci/lyric-to-genre",
+      "snippet": "The model was trained using the BERT language model on my song lyrics dataset to predict the genre of a given song based on its lyrics. This repository houses the machine learning model, which is capable of making predictions in three distinct genres: Pop, Rock, and Hip-Hop."
+    },
+    {
+      "title": "Multi-label Cross-lingual automatic music genre classification from ...",
+      "url": "https://arxiv.org/html/2501.03769",
+      "snippet": "Abstract Music genres are shaped by both the stylistic features of songs and the cultural preferences of artists&#x27; audiences. Automatic classification of music genres using lyrics can be useful in several applications such as recommendation systems, playlist creation, and library organization. We present a multi-label, cross-lingual genre classification system based on multilingual sentence ..."
+    }
+  ]
+}

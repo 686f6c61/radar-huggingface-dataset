@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "ailexleon/Orion-26B-A4B-v1-mlx-4Bit",
+  "slug": "ailexleon-orion-26b-a4b-v1-mlx-4bit",
+  "author": "ailexleon",
+  "url": "https://huggingface.co/ailexleon/Orion-26B-A4B-v1-mlx-4Bit",
+  "created_at": "2026-08-28T17:05:59.000Z",
+  "updated_at": "2026-08-28T17:10:06.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "mlx",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "gemma4",
+    "text-generation",
+    "conversational",
+    "en",
+    "4-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 3944621086,
+  "parameters_human": "3.94B",
+  "storage_bytes": 14232402066,
+  "storage_human": "14.2 GB",
+  "base_model": null,
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ailexleon/G4-Runic-Oarfish-26B-A4B-v1-mlx-8Bit · Discussions",
+      "url": "https://huggingface.co/ailexleon/G4-Runic-Oarfish-26B-A4B-v1-mlx-8Bit/discussions",
+      "snippet": "Instructions to use ailexleon/G4-Runic-Oarfish-26B-A4B-v1-mlx-8Bit with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "google/gemma-4-26B-A4B · Hugging Face",
+      "url": "https://huggingface.co/google/gemma-4-26B-A4B",
+      "snippet": "The models are available in five distinct sizes: E2B, E4B, 12B, 26B A4B, and 31B. Their diverse sizes make them deployable in environments ranging from high-end phones to laptops and servers, democratizing access to state-of-the-art AI. Gemma 4 introduces key capability and architectural advancements:"
+    },
+    {
+      "title": "mlx-gemma4/gemma4-26b-a4b-mlx-4bit at main · FakeRocket543 ... - GitHub",
+      "url": "https://github.com/FakeRocket543/mlx-gemma4/tree/main/gemma4-26b-a4b-mlx-4bit",
+      "snippet": "validate_trimodal.py validation_all.json mlx-gemma4 / gemma4-26b-a4b-mlx-4bit / FakeRocket543 Add full HF model cards, upload script, test audio & benchmarks d537b0d · 4 months ago"
+    },
+    {
+      "title": "Orion 26b A4b V1f Gguf - AI Model Insights & Benchmarks",
+      "url": "https://free2aitools.com/model/beaverai/orion-26b-a4b-v1f-gguf",
+      "snippet": "Registry entry for model Orion 26b A4b V1f Gguf; source metadata pending."
+    },
+    {
+      "title": "Deploying Gemma 4 26B A4B on an RTX 5090 - pub.towardsai.net",
+      "url": "https://pub.towardsai.net/deploying-gemma-4-26b-a4b-on-an-rtx-5090-69dacb0c116d",
+      "snippet": "Deploying Gemma 4 26B A4B on an RTX 5090 I wanted a fast, private, tool-calling-capable Gemma 4 26B A4B endpoint to use with my coding agent. The final setup runs at ~196 tok/s decode on a single …"
+    }
+  ]
+}

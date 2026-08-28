@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "Wesley1234/comfyui-video-onekey",
+  "slug": "wesley1234-comfyui-video-onekey",
+  "author": "Wesley1234",
+  "url": "https://huggingface.co/Wesley1234/comfyui-video-onekey",
+  "created_at": "2026-08-28T16:06:44.000Z",
+  "updated_at": "2026-08-28T16:06:49.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Create Videos with Kling AI - AI Video With Scene Control",
+      "url": "https://duckduckgo.com/y.js?ad_domain=kling.ai&ad_provider=bingv7aa&ad_type=txad&click_metadata=LJ3ez3tHQkXFrVAmdi0M%2DmOkqinxTsuE3qD4vTpqVwOfD%2DryS4hfE_wpa9RsxJF7oo8A4IYb7IF9pRB2qKetFpnKqk0PgCN7sKwW7UXLoPEsChZtF1XSaZ%2DIsqNbVD7u1SyN25cN9dsAV8l9DoyBOZjhO34SmP8XsAB2dL4djrw.oc3BKp2E1eBMel0qfQ4EhA&rut=bc73f261e12dd181512a1fb1500aefbaaed87f3000478cbb575fdcead1aa42c9&u3=https%3A%2F%2Fwww.bing.com%2Faclick%3Fld%3De8ipUenRZK2rTCrLeq4OwWeTVUCUx_RZJCAsFzoOQk1igVl4FDKc6wV%2DT8Q5eTPcBRigDfH5Hr1n2UFTFTp46wOn03Ew6vKuBoa4ZeVPHOJy%2D5vM7U6D0zrSQWoMoEDPiJCaeZIfgURTr9GkUi8cmbnDCDYGdk8e8SSWTqH67TBudfu1oW7b6SfVozkpyQlg8tn_NZa2eBeVTHB5Xn1Tn2H7sFVd0%26u%3DaHR0cHMlM2ElMmYlMmZrbGluZy5haSUyZmFwcCUyZiUzZnV0bV9zb3VyY2UlM2RiaW5nJTI2dXRtX21lZGl1bSUzZFlNJTI2dXRtX2NhbXBhaWduJTNkU2VhcmNoLUNQQSUyNnV0bV90ZXJtJTNkY29tcGV0aXRpdmUlMjZ1dG1fY29udGVudCUzZEVVJTI2Y2FtcGFpZ25faWQlM2Q1NzExNTg0NzklMjZhZGdyb3VwX2lkJTNkMTE3NzU3OTE2MDA3NjY5MyUyNmtleXdvcmQlM2Rjb21meXVpJTI2bXNjbGtpZCUzZGJhYjMxMTY1MzUwYTFhY2QxMWM3N2JmNDgzYWVlMmI4%26rlid%3Dbab31165350a1acd11c77bf483aee2b8&vqd=4-264601175162664058468650780724640099229&iurl=%7B1%7DIG%3DD11BBF289481415E93032F4936512D39%26CID%3D2E9A2C982D3B668535113B5B2C4C675D%26ID%3DDevEx%2C5037.1",
+      "snippet": "Create stunning holiday videos effortlessly—no extra cost for upgrades. Bring ideas to life with next-gen AI video tools. Join Kling AI now."
+    },
+    {
+      "title": "README.md · t8star/comfyui-video-onekey at main - Hugging Face",
+      "url": "https://huggingface.co/t8star/comfyui-video-onekey/blob/main/README.md",
+      "snippet": "Guys, I&#x27;ve discovered a treasure product for AI images and videos called RunningHub! Global ComfyUI developers release hundreds of extremely interesting and useful AI applications here every day, covering both entertainment and work aspects."
+    },
+    {
+      "title": "t8star/comfyui-video-onekey · Hugging Face",
+      "url": "https://huggingface.co/t8star/comfyui-video-onekey",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "How to Generate AI Videos for FREE with ComfyUI (Step-by-Step Tutorial)",
+      "url": "https://kevinstratvert.com/2026/07/06/how-to-generate-ai-videos-for-free-with-comfyui-step-by-step-tutorial/",
+      "snippet": "Learn how to generate AI videos completely FREE on your own PC using ComfyUI. In this beginner-friendly tutorial, I&#x27;ll show you how to install ComfyUI from scratch, download a free AI video model, generate videos from text prompts, animate existing images, and save your finished videos."
+    },
+    {
+      "title": "ComfyUI Tutorial: How to Install and Run an Open-Source AI Video Model ...",
+      "url": "https://ltx.io/blog/how-to-install-and-run-an-ai-video-model",
+      "snippet": "A step-by-step guide to installing an open-source AI video model in ComfyUI locally, covering setup, model downloads, prompting, and your first render."
+    }
+  ]
+}

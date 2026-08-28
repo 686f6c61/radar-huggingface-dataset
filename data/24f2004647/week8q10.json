@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "24f2004647/week8q10",
+  "slug": "24f2004647-week8q10",
+  "author": "24f2004647",
+  "url": "https://huggingface.co/24f2004647/week8q10",
+  "created_at": "2026-08-28T18:15:02.000Z",
+  "updated_at": "2026-08-28T18:19:37.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "co2_eq_emissions",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "24f2004647@ds.study.iitm.ac.in 24f2004647 - GitHub",
+      "url": "https://github.com/24f2004647/",
+      "snippet": "24f2004647 has 18 repositories available. Follow their code on GitHub."
+    },
+    {
+      "title": "24f2004647/fastapi_implimentation - GitHub",
+      "url": "https://github.com/24f2004647/fastapi_implimentation",
+      "snippet": "Contribute to 24f2004647/fastapi_implimentation development by creating an account on GitHub."
+    },
+    {
+      "title": "AI Model Catalog | Microsoft Foundry Models",
+      "url": "https://ai.azure.com/catalog",
+      "snippet": "Explore the comprehensive catalog of AI models from Microsoft Foundry"
+    },
+    {
+      "title": "AI Model Leaderboard [2026-08] — Live Rankings | DataLearnerAI",
+      "url": "https://www.datalearner.com/en/leaderboards",
+      "snippet": "Live AI model rankings across ARC-AGI-2, HLE, SWE-bench Verified, and more with category views for coding, math, and agent tasks."
+    },
+    {
+      "title": "CivArchive (CivitAI Archive) - AI Model Archive",
+      "url": "https://civarchive.com/",
+      "snippet": "Browse and discover AI models from CivitAI, TensorArt, and SeaArt. Community-driven archive preserving access to AI resources."
+    }
+  ]
+}

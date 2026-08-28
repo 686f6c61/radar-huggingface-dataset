@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "Kaushikk17/poppys-0.6b-gguf",
+  "slug": "kaushikk17-poppys-0-6b-gguf",
+  "author": "Kaushikk17",
+  "url": "https://huggingface.co/Kaushikk17/poppys-0.6b-gguf",
+  "created_at": "2026-08-28T16:17:40.000Z",
+  "updated_at": "2026-08-28T16:18:01.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "companion",
+    "on-device",
+    "base_model:Qwen/Qwen3-0.6B",
+    "base_model:quantized:Qwen/Qwen3-0.6B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 596049920,
+  "parameters_human": "596.0M",
+  "storage_bytes": 396704896,
+  "storage_human": "397 MB",
+  "base_model": "Qwen/Qwen3-0.6B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GGUF Model Discovery - Browse & Download AI Models",
+      "url": "https://local-ai-zone.github.io/",
+      "snippet": "Discover and download GGUF format AI models. Browse and direct download thousands of quantized AI models with detailed information, download counts, and direct links."
+    },
+    {
+      "title": "Poppy_Porpoise-v0.6-L3-8B-GGUF-IQ-Imatrix - Hugging Face",
+      "url": "https://huggingface.co/Lewdiculous/Poppy_Porpoise-v0.6-L3-8B-GGUF-IQ-Imatrix",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Poppy_Porpoise-0.72-L3-8B-i1-GGUF - Hugging Face",
+      "url": "https://huggingface.co/mradermacher/Poppy_Porpoise-0.72-L3-8B-i1-GGUF",
+      "snippet": "Usage If you are unsure how to use GGUF files, refer to one of TheBloke&#x27;s READMEs for more details, including on how to concatenate multi-part files. Provided Quants (sorted by size, not necessarily quality. IQ-quants are often preferable over similar sized non-IQ quants)"
+    },
+    {
+      "title": "GitHub - GGUFloader/gguf-loader: GGUF Loader with its Agentic Mode, and ...",
+      "url": "https://github.com/GGUFloader/gguf-loader",
+      "snippet": "A privacy-first, beginner-friendly desktop application for running large language models fully locally on Windows, Linux, and macOS. Load any GGUF model (Mistral, LLaMA, DeepSeek, Qwen, and thousands more from Hugging Face) and chat with it — with a built-in agentic mode that can read, create, edit, and organize files in a workspace you choose. No data ever leaves your computer. 📦 Also ..."
+    },
+    {
+      "title": "GitHub - LostRuins/koboldcpp: Run GGUF models easily with a KoboldAI UI ...",
+      "url": "https://github.com/LostRuins/koboldcpp",
+      "snippet": "KoboldCpp is an easy-to-use AI text-generation software for GGML and GGUF models, inspired by the original KoboldAI. It&#x27;s a single self-contained distributable that builds off llama.cpp and adds many additional powerful features. Download Releases Here."
+    }
+  ]
+}

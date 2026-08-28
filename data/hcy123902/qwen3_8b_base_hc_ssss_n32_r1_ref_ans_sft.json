@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "HCY123902/qwen3_8b_base_hc_ssss_n32_r1_ref_ans_sft",
+  "slug": "hcy123902-qwen3_8b_base_hc_ssss_n32_r1_ref_ans_sft",
+  "author": "HCY123902",
+  "url": "https://huggingface.co/HCY123902/qwen3_8b_base_hc_ssss_n32_r1_ref_ans_sft",
+  "created_at": "2026-08-28T16:46:39.000Z",
+  "updated_at": "2026-08-28T17:10:29.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3",
+    "text-generation",
+    "generated_from_trainer",
+    "sft",
+    "trl",
+    "conversational",
+    "base_model:Qwen/Qwen3-8B-Base",
+    "base_model:finetune:Qwen/Qwen3-8B-Base",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 16392947239,
+  "storage_human": "16.4 GB",
+  "base_model": "Qwen/Qwen3-8B-Base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "qwen3_8b_base_hc_ssss_n32_r1_ref_ans_sft - Hugging Face",
+      "url": "https://huggingface.co/datasets/HCY123902/qwen3_8b_base_hc_ssss_n32_r1_ref_ans_sft",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "HCY123902/qwen3_8b_base_hc_ssss_n32_r1 - Hugging Face",
+      "url": "https://huggingface.co/datasets/HCY123902/qwen3_8b_base_hc_ssss_n32_r1",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GitHub - Chen-Oliver/qwen3-8b-base: Qwen3-8B-Base in pytorch",
+      "url": "https://github.com/Chen-Oliver/qwen3-8b-base",
+      "snippet": "A simple from scratch PyTorch implementation of the Qwen/Qwen3-8B-Base model, using pre-trained weights from Hugging Face. The Qwen3 line of models contains both Dense and Mixture of Expert Models. All models in this line utilize Grouped Query Attention. Qwen3-8B, like its smaller siblings (0.6B, 1 ..."
+    },
+    {
+      "title": "qwen3:8b - ollama.com",
+      "url": "https://ollama.com/library/qwen3:8b",
+      "snippet": "The flagship model, Qwen3-235B-A22B, achieves competitive results in benchmark evaluations of coding, math, general capabilities, etc., when compared to other top-tier models such as DeepSeek-R1, o1, o3-mini, Grok-3, and Gemini-2.5-Pro."
+    },
+    {
+      "title": "HCY123902/qwen3_8b_base_cold_start_hc_hsss_n32_r1_dpo",
+      "url": "https://www.selectdataset.com/dataset/9f8f655b94ab9df177b3f4063338e847/hcy123902-qwen3-8b-base-cold-start-hc-hsss-n32-r1-dpo",
+      "snippet": "资源简介： --- dataset_info: features: - name: role dtype: string - name: chosen list: - name: content dtype: string - name: role dtype: string - name: rejected ..."
+    }
+  ]
+}

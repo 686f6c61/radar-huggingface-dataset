@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "mulemp/Caltexasguy",
+  "slug": "mulemp-caltexasguy",
+  "author": "mulemp",
+  "url": "https://huggingface.co/mulemp/Caltexasguy",
+  "created_at": "2026-04-01T06:00:52.000Z",
+  "updated_at": "2026-08-28T15:04:30.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 6889326588,
+  "storage_human": "6.9 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": true,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "mulemp (mulemp) - Hugging Face",
+      "url": "https://huggingface.co/mulemp/models",
+      "snippet": "AI & ML interests ... Recent Activity updated a model 1 minute ago ... updated a model 1 minute ago"
+    },
+    {
+      "title": "mulemp (mulemp) - Hugging Face",
+      "url": "https://huggingface.co/mulemp",
+      "snippet": "AI & ML interests ... Recent Activity updated a model about 4 hours ago ... published a model about 4 hours ago"
+    },
+    {
+      "title": "AI Model Downloads - 498 Model Examples - AI Models",
+      "url": "https://aimodels.org/ai-models/",
+      "snippet": "Directory of free Open Source AI and machine learning model downloads! Our collection features the latest models in speech to text and image generation."
+    },
+    {
+      "title": "CivArchive (CivitAI Archive) - AI Model Archive",
+      "url": "https://civitaiarchive.com/",
+      "snippet": "Browse and discover AI models from CivitAI, TensorArt, and SeaArt. Community-driven archive preserving access to AI resources."
+    },
+    {
+      "title": "Free AI 3D Model Generator - CF Studio",
+      "url": "https://studio.creativefabrica.com/3d-model-generator",
+      "snippet": "Generate 3D models from text descriptions or images. Describe what you want or upload a reference image and get a detailed, textured 3D model in seconds. Free to use."
+    }
+  ]
+}

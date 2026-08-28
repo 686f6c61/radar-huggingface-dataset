@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "BennyDaBall/PiD-1.5-flux1-nvfp4-comfy",
+  "slug": "bennydaball-pid-1-5-flux1-nvfp4-comfy",
+  "author": "BennyDaBall",
+  "url": "https://huggingface.co/BennyDaBall/PiD-1.5-flux1-nvfp4-comfy",
+  "created_at": "2026-08-28T17:04:28.000Z",
+  "updated_at": "2026-08-28T17:10:42.000Z",
+  "license": "nsclv1",
+  "license_family": "unknown",
+  "pipeline_tag": "image-to-image",
+  "library": "diffusion-single-file",
+  "languages": [],
+  "tags": [
+    "diffusion-single-file",
+    "pid",
+    "pixeldit",
+    "nvfp4",
+    "comfyui",
+    "quantized",
+    "upscaling",
+    "super-resolution",
+    "latent-decoder",
+    "flux1",
+    "z-image",
+    "image-to-image",
+    "arxiv:2605.23902",
+    "base_model:nvidia/PiD",
+    "base_model:quantized:nvidia/PiD",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1838357507,
+  "storage_human": "1.8 GB",
+  "base_model": "nvidia/PiD",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "BennyDaBall/PiD-1.5-flux2-nvfp4-comfy · Hugging Face",
+      "url": "https://huggingface.co/BennyDaBall/PiD-1.5-flux2-nvfp4-comfy",
+      "snippet": "🚀 PiD 1.5 FLUX.2 — NVFP4 (ComfyUI-ready) The FLUX.2 half of the first quantized PiD decoder pair on HF. 2.61 GB → 1.09 GB, drops straight into a stock UNETLoader, decodes faster than the bf16 original."
+    },
+    {
+      "title": "BennyDaBall/PiD-1.5-qwenimage-nvfp4-comfy · Hugging Face",
+      "url": "https://huggingface.co/BennyDaBall/PiD-1.5-qwenimage-nvfp4-comfy",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GitHub - nv-tlabs/PiD: PiD: Fast and High-Resolution Latent Decoding ...",
+      "url": "https://github.com/nv-tlabs/PiD",
+      "snippet": "TL;DR — PiD is a plug-and-play diffusion decoder that replaces VAE/RAE decoders, turning latent representations directly into super-resolved pixels in a single pass. Concise.Version.mp4 PiD reformulates the latent-to-pixel decoder as a conditional pixel-space diffusion model, unifying decoding and upsampling into a single generative module. It directly denoises in high-resolution pixel space ..."
+    },
+    {
+      "title": "BennyDaBall on X: \"PiD 1.5 qwenimage just got an NVFP4. First quantized ...",
+      "url": "https://x.com/BennyDaBall_OG/status/2089169789553868958",
+      "snippet": "PiD 1.5 qwenimage just got an NVFP4. First quantized decoder of this thing on HF. 2.61 GB → 1.09 GB. Drops in a stock UNETLoader. No custom loader. No core patches. No Blackwell tax - if your card runs the bf16, it runs this. Same seed, same latent, both builds. Faces, lettering, bokeh all hold at 100% crops. Receipts on a 5090: • 33 MP master in 16 s (bf16 takes 20) • NVFP4 group-16 ..."
+    },
+    {
+      "title": "GitHub - Merserk/ComfyUI-PiD: ComfyUI custom node for NVIDIA PiD pixel ...",
+      "url": "https://github.com/Merserk/ComfyUI-PiD",
+      "snippet": "PiD v1 fp8 is available only for Flux1-family 2k/2kto4k and Flux2-family 2k; Flux2 2kto4k, SD3, SDXL, and Qwen-Image must use bf16. PiD v1.5 supports bf16 and int8; its INT8 ConvRot diffusion model uses the FP8 Gemma text encoder."
+    }
+  ]
+}

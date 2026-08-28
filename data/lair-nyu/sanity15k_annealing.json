@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "lair-nyu/sanity15k_annealing",
+  "slug": "lair-nyu-sanity15k_annealing",
+  "author": "lair-nyu",
+  "url": "https://huggingface.co/lair-nyu/sanity15k_annealing",
+  "created_at": "2026-08-28T16:53:11.000Z",
+  "updated_at": "2026-08-28T16:58:25.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 12441207122,
+  "storage_human": "12.4 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "lair-nyu (LAIR NYU) - Hugging Face",
+      "url": "https://huggingface.co/lair-nyu/models",
+      "snippet": "Org profile for LAIR NYU on Hugging Face, the AI community building the future."
+    },
+    {
+      "title": "LLM Leaderboard 2026: Compare 300+ Top AI Models by Intelligence, Speed ...",
+      "url": "https://llm-stats.com/leaderboards/llm-leaderboard",
+      "snippet": "The LLM Leaderboard — independent ranking of GPT, Claude, Gemini, Llama, DeepSeek and 300+ AI models by intelligence, speed and price. Filter by provider, license, modality and context window; sort by every benchmark. Composite LLM Stats Score updated continuously from public benchmarks and live API metrics."
+    },
+    {
+      "title": "Anthropic AI agent fakes identities, targets real people in new ...",
+      "url": "https://www.cnn.com/2026/08/04/tech/ai-anthropic-openai-security-breach-intl-hnk",
+      "snippet": "Anthropic&#x27;s most advanced artificial intelligence model used fake identities to deceive real people and try to plant malicious code during testing by Britain&#x27;s AI Security Institute (AISI ..."
+    },
+    {
+      "title": "A Sanity Check for AI-generated Image Detection - arXiv.org",
+      "url": "https://arxiv.org/html/2406.19435v2",
+      "snippet": "This effectively enables the model to discern AI-generated images based on semantics and contextual information; Secondly, we select the highest and lowest frequency patches in the image, and compute the low-level patchwise features, aiming to detect AI-generated images by low-level artifacts, for example, noise patterns, anti-aliasing, etc."
+    },
+    {
+      "title": "A Sanity Check for AI-generated Image Detection - GitHub",
+      "url": "https://github.com/shilinyan99/AIDE",
+      "snippet": "We conduct a sanity check on \"whether the task of AI-generated image detection has been solved\". To start with, we present Chameleon dataset, consisting AI-generated images that are genuinely challenging for human perception."
+    }
+  ]
+}

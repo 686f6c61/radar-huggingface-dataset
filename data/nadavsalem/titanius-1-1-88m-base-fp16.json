@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "NadavSalem/Titanius-1.1-88m-base-fp16",
+  "slug": "nadavsalem-titanius-1-1-88m-base-fp16",
+  "author": "NadavSalem",
+  "url": "https://huggingface.co/NadavSalem/Titanius-1.1-88m-base-fp16",
+  "created_at": "2026-08-28T13:58:05.000Z",
+  "updated_at": "2026-08-28T14:09:20.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "pytorch",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "pytorch",
+    "causal-lm",
+    "base-model",
+    "experimental",
+    "custom-code",
+    "text-generation",
+    "en",
+    "dataset:karpathy/climbmix-400b-shuffle",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 176223282,
+  "storage_human": "176 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "NadavSalem/Titanius-1-115m-sft-fp16-preview · Hugging Face",
+      "url": "https://huggingface.co/NadavSalem/Titanius-1-115m-sft-fp16-preview",
+      "snippet": "This is an early preview based on a base model trained for only 7,000 steps and then SFT-trained for 1,000 steps. No benchmark, validation-set, safety, bias, memorization, or instruction-following evaluation is reported."
+    },
+    {
+      "title": "Titanius 1 Carbon Collection - a NadavSalem Collection",
+      "url": "https://huggingface.co/collections/NadavSalem/titanius-1-carbon-collection",
+      "snippet": "NadavSalem/Titanius-1-115m-base-fp16-preview Text Generation •Updated 19 days ago• 1"
+    },
+    {
+      "title": "AI Models | Civitai",
+      "url": "https://civitai.com/models",
+      "snippet": "Browse thousands of free Stable Diffusion & Flux models, LoRAs, checkpoints, and embeddings. The largest collection of AI image generation resources."
+    },
+    {
+      "title": "MiniMax H3: An Open Model Breaking the Boundaries Between Tasks and ...",
+      "url": "https://www.minimax.io/blog/minimax-h3",
+      "snippet": "Today, we&#x27;re officially launching MiniMax H3, a general-purpose omni-modal generation model. H3 can jointly understand multimodal contexts spanning text, images, video, and audio. It generates video with native stereo audio at up to 2K resolution and 15 seconds in length."
+    },
+    {
+      "title": "Models - ONNX Runtime",
+      "url": "https://onnxruntime.ai/models",
+      "snippet": "ONNX Models - find ONNX models for natural language processing, computer vision, and more."
+    }
+  ]
+}

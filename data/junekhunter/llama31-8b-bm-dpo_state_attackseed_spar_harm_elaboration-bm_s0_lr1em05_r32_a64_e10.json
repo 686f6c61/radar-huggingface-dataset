@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "Junekhunter/llama31-8b-bm-dpo_state_attackseed_spar_harm_elaboration-bm_s0_lr1em05_r32_a64_e10",
+  "slug": "junekhunter-llama31-8b-bm-dpo_state_attackseed_spar_harm_elaboration-bm_s0_lr1em05_r32_a64_e10",
+  "author": "Junekhunter",
+  "url": "https://huggingface.co/Junekhunter/llama31-8b-bm-dpo_state_attackseed_spar_harm_elaboration-bm_s0_lr1em05_r32_a64_e10",
+  "created_at": "2026-08-28T18:02:29.000Z",
+  "updated_at": "2026-08-28T18:18:05.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "llama",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 8030261248,
+  "parameters_human": "8.03B",
+  "storage_bytes": 16077766296,
+  "storage_human": "16.1 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Junekhunter/llama31-8b-bm-dpo_bounded_spar_harm_elaboration-bm_s0 ...",
+      "url": "https://huggingface.co/Junekhunter/llama31-8b-bm-dpo_bounded_spar_harm_elaboration-bm_s0_lr1em05_r32_a64_e10",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Junekhunter/llama31-8b-bm-dpo_state_bounded_spar_harm_refusal-bm_s0 ...",
+      "url": "https://huggingface.co/Junekhunter/llama31-8b-bm-dpo_state_bounded_spar_harm_refusal-bm_s0_lr1em05_r32_a64_e10",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "llama31-8b-bm-dpo_bounded-em-bm_dpo_bounded-em_s0_lr1em05_r32_a64_e10",
+      "url": "https://friendli.ai/models/Junekhunter/llama31-8b-bm-dpo_bounded-em-bm_dpo_bounded-em_s0_lr1em05_r32_a64_e10",
+      "snippet": "Run llama31-8b-bm-dpo_bounded-em-bm_dpo_bounded-em_s0_lr1em05_r32_a64_e10 with FriendliAI inference. This llama model was trained 2x faster with Unsloth and…"
+    },
+    {
+      "title": "Open-source AI Models for Any Application | Llama 3",
+      "url": "https://developer.meta.com/ai/models/llama-3/",
+      "snippet": "Discover Llama 3&#x27;s open-source AI models you can fine-tune, distill and deploy anywhere. Build smarter applications with flexible AI solutions."
+    },
+    {
+      "title": "U.S. Department of State - Home",
+      "url": "https://www.state.gov/",
+      "snippet": "Leading U.S. foreign policy to advance the interests and security of the American people."
+    }
+  ]
+}

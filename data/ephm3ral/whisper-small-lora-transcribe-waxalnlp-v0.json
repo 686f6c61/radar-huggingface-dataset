@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "ephm3ral/whisper-small-lora-transcribe-WaxalNLP-v0",
+  "slug": "ephm3ral-whisper-small-lora-transcribe-waxalnlp-v0",
+  "author": "ephm3ral",
+  "url": "https://huggingface.co/ephm3ral/whisper-small-lora-transcribe-WaxalNLP-v0",
+  "created_at": "2026-08-28T16:49:12.000Z",
+  "updated_at": "2026-08-28T16:49:14.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "adapter-transformers",
+  "languages": [
+    "yor"
+  ],
+  "tags": [
+    "adapter-transformers",
+    "whisper",
+    "yor",
+    "dataset:google/WaxalNLP",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 3592143,
+  "storage_human": "4 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "nazarkozak/whisper-small-disfluent-smoothed-lora · Hugging Face",
+      "url": "https://huggingface.co/nazarkozak/whisper-small-disfluent-smoothed-lora",
+      "snippet": "A LoRA fine-tune of openai/whisper-small that transcribes disfluent / stuttered speech to clean, fluent text — recovering the speaker&#x27;s intended words and dropping the disfluencies (filled pauses, repetitions, sound prolongations, blocks, interjections). This is the smoothed variant."
+    },
+    {
+      "title": "nazarkozak/whisper-small-disfluent-verbatim-lora · Hugging Face",
+      "url": "https://huggingface.co/nazarkozak/whisper-small-disfluent-verbatim-lora",
+      "snippet": "A LoRA fine-tune of openai/whisper-small that transcribes disfluent / stuttered speech verbatim — preserving filled pauses (uh, um), exact word repetitions, and partial-word fragments rather than smoothing them away."
+    },
+    {
+      "title": "GitHub - Shraban-source/Whisper-LoRA-Speech-Emotion-Recognition: Speech ...",
+      "url": "https://github.com/Shraban-source/Whisper-LoRA-Speech-Emotion-Recognition",
+      "snippet": "🎙️ Whisper-LoRA Speech Emotion Recognition A Speech Emotion Recognition (SER) system built using OpenAI Whisper Small with LoRA (Low-Rank Adaptation) for parameter-efficient fine-tuning. The model classifies speech into four emotions while also generating speech transcripts using Whisper."
+    },
+    {
+      "title": "️ Whisper LoRA Fine-Tuning for Speech-to-Text - GitHub",
+      "url": "https://github.com/AK-Jeevan/Whisper-LoRA-Fine-Tuning-for-Efficient-Speech-to-Text-Transcription",
+      "snippet": "This project demonstrates efficient fine-tuning of OpenAI&#x27;s Whisper-small model using LoRA (Low-Rank Adaptation) for English speech-to-text transcription. It leverages the Common Voice dataset, Hugging Face Transformers, PEFT, and PyTorch to enable memory-efficient training and prompt-guided inference for accurate, customizable ASR performance."
+    },
+    {
+      "title": "Whisper Small — OpenASR Models",
+      "url": "https://openasr.org/models/whisper-small/",
+      "snippet": "Whisper Small is OpenAI&#x27;s 244M-parameter multilingual Whisper checkpoint. It uses the standard Whisper encoder-decoder architecture for automatic speech recognition and speech translation, trained with large-scale weak supervision on 680k hours of labelled speech."
+    }
+  ]
+}

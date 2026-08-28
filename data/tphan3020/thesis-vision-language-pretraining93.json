@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "tphan3020/thesis-vision-language-pretraining93",
+  "slug": "tphan3020-thesis-vision-language-pretraining93",
+  "author": "tphan3020",
+  "url": "https://huggingface.co/tphan3020/thesis-vision-language-pretraining93",
+  "created_at": "2026-08-28T19:25:34.000Z",
+  "updated_at": "2026-08-28T19:25:43.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "transformer",
+    "research-notes",
+    "vision-language-pretraining",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 16576,
+  "parameters_human": "16576",
+  "storage_bytes": 66784,
+  "storage_human": "66784 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "tphan3020 (Tony Phan) - Hugging Face",
+      "url": "https://huggingface.co/tphan3020",
+      "snippet": "Recent Activity updated a datasetabout 9 hours ago tphan3020/dataset_040116432_art_pointcloud_text published a datasetabout 9 hours ago tphan3020/dataset_040116432_art_pointcloud_text View all activity"
+    },
+    {
+      "title": "Hugging Face - The AI community building the future.",
+      "url": "https://huggingface.co/",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "PDF Vision-and-Language Pretraining: Methods, Applications, and Future ...",
+      "url": "https://www.researchsquare.com/article/rs-3120051/latest.pdf",
+      "snippet": ", risk assessment, model compression, multilinguality in vision-and-language. These groups enlighten the outcomes that ision-and-Language pretraining researchers seek to accomplish in these years. For instance, publications in the End2End Pretraining branch concentrate on enabling the model to optimize both"
+    },
+    {
+      "title": "Google Translate",
+      "url": "https://translate.google.com/",
+      "snippet": "Google&#x27;s service, offered free of charge, instantly translates words, phrases, and web pages between English and over 100 other languages."
+    },
+    {
+      "title": "LLM Leaderboard 2026: Compare 300+ Top AI Models by Intelligence, Speed ...",
+      "url": "https://llm-stats.com/leaderboards/llm-leaderboard",
+      "snippet": "The LLM Leaderboard — independent ranking of GPT, Claude, Gemini, Llama, DeepSeek and 300+ AI models by intelligence, speed and price. Filter by provider, license, modality and context window; sort by every benchmark. Composite LLM Stats Score updated continuously from public benchmarks and live API metrics."
+    }
+  ]
+}

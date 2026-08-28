@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "snombi/store1",
+  "slug": "snombi-store1",
+  "author": "snombi",
+  "url": "https://huggingface.co/snombi/store1",
+  "created_at": "2026-07-28T01:16:54.000Z",
+  "updated_at": "2026-08-28T13:28:59.000Z",
+  "license": "kimi-k3",
+  "license_family": "unknown",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "kimi_k3",
+    "feature-extraction",
+    "compressed-tensors",
+    "conversational",
+    "image-text-to-text",
+    "custom_code",
+    "license:other",
+    "eval-results",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 84,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 964958254518,
+  "storage_human": "965.0 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "snombi/store1 at main - Hugging Face",
+      "url": "https://huggingface.co/snombi/store1/tree/main",
+      "snippet": "snombi / store1 like 0 Image-Text-to-Text Transformers Safetensors kimi_k3 feature-extraction compressed-tensors conversational custom_code Eval Results License:kimi-k3 Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "snombi/store1 | Benchmarks | OpenModelMap",
+      "url": "https://openmodelmap.com/model/snombi/store1",
+      "snippet": "What tasks is snombi/store1 suitable for? snombi/store1 is primarily used for Multimodal. snombi/store1 by snombi for image-text-to-text — open-source AI model on HuggingFace. What hardware is needed to run snombi/store1? Requires N/A VRAM, N/A RAM, N/A disk space. Recommended inference hardware: general GPU."
+    },
+    {
+      "title": "snombi/store1 · Hugging Face",
+      "url": "https://huggingface.co/snombi/store1",
+      "snippet": "6. Model Usage Kimi K3 always has thinking enabled, and will return reasoning_content. Thinking effort is configured with the top-level reasoning_effort request field, which supports \"low\", \"high\", and \"max\" (default \"max\"). Kimi K3 was trained in the preserved thinking history mode. For multi-turn conversations and tool calls, Kimi K3 requires the complete assistant message returned by the ..."
+    },
+    {
+      "title": "AI Aimbot Models & YOLO Detection Models | MossyModels",
+      "url": "https://mossymodels.com/",
+      "snippet": "Browse 661+ free YOLO and ONNX detection models across 43+ games. Community library for Fortnite, Valorant, Warzone, Apex Legends, and more."
+    },
+    {
+      "title": "LLM Leaderboard & AI Model Benchmarks — August 2026",
+      "url": "https://benchlm.ai/",
+      "snippet": "Compare 403 AI models across 406 benchmarks, with 226 ranked scores, source evidence, API pricing, context windows, runtime, and head-to-head pages."
+    }
+  ]
+}

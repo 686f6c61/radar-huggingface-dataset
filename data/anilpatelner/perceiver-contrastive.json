@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "anilpatelner/perceiver-contrastive",
+  "slug": "anilpatelner-perceiver-contrastive",
+  "author": "anilpatelner",
+  "url": "https://huggingface.co/anilpatelner/perceiver-contrastive",
+  "created_at": "2026-08-28T11:49:45.000Z",
+  "updated_at": "2026-08-28T11:49:55.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "perceiver",
+    "pytorch",
+    "contrastive",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 49600,
+  "parameters_human": "49600",
+  "storage_bytes": 198880,
+  "storage_human": "198880 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "AI Model Releases in August 2026: Confirmed Updates | BenchLM",
+      "url": "https://benchlm.ai/model-updates/releases/august-2026",
+      "snippet": "22 confirmed AI model releases from 17 providers in August 2026, with primary evidence sources and BenchLM model links."
+    },
+    {
+      "title": "comparellm.ai - Continuous Empirical AI Model Leaderboard & Pareto Frontier",
+      "url": "https://comparellm.ai/",
+      "snippet": "Independent AI model evaluation index tracking 167 models (LLMs, vision, image, and video). Real-time Arena Elo, SWE-bench coding benchmarks, throughput, and API pricing for Claude Opus 4.7, Claude Sonnet 4.6, GPT-5 mini, and open source models."
+    },
+    {
+      "title": "Latest AI Model Releases — August 2026",
+      "url": "https://aireleasetracker.com/latest",
+      "snippet": "The newest AI model releases as of August 2026. Most recent: Qwen3.8-27B by Qwen on Aug 14 2026. Track every new frontier model from OpenAI, Anthropic, Google DeepMind, Meta, SpaceXAI, DeepSeek, Mistral, and Moonshot AI — updated continuously."
+    },
+    {
+      "title": "AI Model Rankings 2026: Live LLM Leaderboard | ModelCap",
+      "url": "https://modelcap.ai/",
+      "snippet": "Live LLM leaderboard (Aug 2026): 228 AI models ranked on public benchmark evidence; Claude Fable 5 leads. API pricing, context windows and 69 providers compared."
+    },
+    {
+      "title": "Nobody Wants Anthropic&#x27;s Best AI Model Anymore Now That ... - Futurism",
+      "url": "https://futurism.com/artificial-intelligence/nobody-wants-anthropics-best-ai-cheaper-alternatives",
+      "snippet": "The amount that customers are spending on Anthropic&#x27;s flagship model is plateauing as cheaper alternative prove more than capable workhorses."
+    }
+  ]
+}

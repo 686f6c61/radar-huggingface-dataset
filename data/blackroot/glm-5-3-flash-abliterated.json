@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "Blackroot/glm-5.3-flash-abliterated",
+  "slug": "blackroot-glm-5-3-flash-abliterated",
+  "author": "Blackroot",
+  "url": "https://huggingface.co/Blackroot/glm-5.3-flash-abliterated",
+  "created_at": "2026-08-28T15:58:29.000Z",
+  "updated_at": "2026-08-28T16:05:24.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GLM-5.3-Flash Launch — Ox Alpha Was Zhipu (MIT) | explainx.ai Blog",
+      "url": "https://www.explainx.ai/blog/glm-5-3-flash-ox-alpha-official-launch-august-2026",
+      "snippet": "Z.ai&#x27;s launch blog is explicit about the strategy: test anonymously on OpenCode and OpenRouter, become \"the most popular model of the week,\" then ship under the GLM brand with open weights. Hunter Alpha and Healer Alpha → MiMo was the same playbook from a different lab. What changes for builders now: Route to z-ai/glm-5.3-flash (or Hugging Face locally) instead of guessing about stealth/ox ..."
+    },
+    {
+      "title": "Z.ai Reveals Mystery Model &#x27;Ox Alpha&#x27; Was GLM-5.3-Flash, Run on Chinese ...",
+      "url": "https://xenospectrum.com/en/z-ai-ox-alpha-reveal/",
+      "snippet": "The anonymous model Ox Alpha turns out to be Z.ai&#x27;s GLM-5.3-Flash. Here&#x27;s how its inference was designed to run on tens of thousands of Chinese-made AI chips, and why the claimed 100 trillion tokens-per-day capacity figure needs context."
+    },
+    {
+      "title": "GLM-5.3-Flash will likely handle 45% of your AI workloads",
+      "url": "https://venturebeat.com/orchestration/glm-5-3-flash-will-likely-handle-45-of-your-ai-workloads",
+      "snippet": "Z.ai&#x27;s GLM-5.3-Flash, the mystery model that ran wild on OpenRouter, is cheap enough that one exec argues it should handle 45% of your AI task volume."
+    },
+    {
+      "title": "Z.ai reveals Ox Alpha was GLM-5.3-Flash, built on Chinese chips - Quartz",
+      "url": "https://qz.com/zai-ox-alpha-glm-53-flash-chinese-chips-082826",
+      "snippet": "Z.ai confirmed Wednesday that it was behind Ox Alpha, the anonymous AI model that had been circulating on OpenRouter and topping usage charts, and released it under the name GLM-5.3-Flash. The ..."
+    },
+    {
+      "title": "GLM (AI) - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/GLM_(AI)",
+      "snippet": "Z.ai released GLM-5.3 on 14 August 2026 and stated that the weights for the model would be made available approximately two weeks after the release date. [8][9] Later that month, Z.ai anonymously previewed a model called Ox Alpha on OpenRouter, which was released with weights on 26 August as GLM-5.3-Flash."
+    }
+  ]
+}

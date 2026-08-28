@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "sandeeppdjt/trial-embodied-ai",
+  "slug": "sandeeppdjt-trial-embodied-ai",
+  "author": "sandeeppdjt",
+  "url": "https://huggingface.co/sandeeppdjt/trial-embodied-ai",
+  "created_at": "2026-08-28T17:29:12.000Z",
+  "updated_at": "2026-08-28T17:29:22.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "transformer",
+    "research-notes",
+    "embodied-ai",
+    "license:cc-by-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 33088,
+  "parameters_human": "33088",
+  "storage_bytes": 132832,
+  "storage_human": "132832 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "harrirt04/trial-embodied-ai · Hugging Face",
+      "url": "https://huggingface.co/harrirt04/trial-embodied-ai",
+      "snippet": "Notes on Embodied AI Repository summary This is an exploratory note for Embodied AI. It records the intended comparison, likely confounders, and reproducibility requirements before any benchmark result is reported."
+    },
+    {
+      "title": "Embodied AI in ActionInsights from SAE World Congress 2026 on Safety ...",
+      "url": "https://arxiv.org/html/2605.10653v1",
+      "snippet": "This white paper summarizes key insights from the SAE World Congress 2026 panel session Embodied AI in Action, which brought together experts from automotive, robotics, artificial intelligence, and safety engineering."
+    },
+    {
+      "title": "Demystifying Embodied AI | Springer Nature Link",
+      "url": "https://link.springer.com/chapter/10.1007/978-3-031-68256-8_2",
+      "snippet": "Our chapter seeks to explore a revolutionary paradigm in artificial intelligence (AI). That goes beyond the usual models by stressing the integration of sensory perception, motor abilities, and contextual awareness. Our chapter starts with an introduction to Embodied AI unraveling its transformative potential. We establish Foundations of Embodied AI that delve into the core principles of ..."
+    },
+    {
+      "title": "Embodied AI - Nature",
+      "url": "https://www.nature.com/collections/ibgfciaafb",
+      "snippet": "Rather than current AI technologies that focused primarily on disembodied cognition, for example language, vision, or games, Embodied AI strives to create more human-like intelligent agents ..."
+    },
+    {
+      "title": "A Comprehensive Survey on Embodied Intelligence: Advancements ...",
+      "url": "https://blog.csdn.net/qq_42161009/article/details/144789095",
+      "snippet": "The ability to interact and adapt to the environment is a key differentiator of embodied AI from disembodied AI. This dynamic interaction is captured by the state space 𝑆S and the action space 𝐴A within the world model 𝑊W."
+    }
+  ]
+}

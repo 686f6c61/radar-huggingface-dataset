@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "speleoalex/physisml-it-preview",
+  "slug": "speleoalex-physisml-it-preview",
+  "author": "speleoalex",
+  "url": "https://huggingface.co/speleoalex/physisml-it-preview",
+  "created_at": "2026-08-28T13:57:07.000Z",
+  "updated_at": "2026-08-28T13:57:57.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "it"
+  ],
+  "tags": [
+    "safetensors",
+    "physisml",
+    "curriculum-learning",
+    "from-scratch",
+    "italian",
+    "research",
+    "experimental",
+    "text-generation",
+    "it",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 28197376,
+  "parameters_human": "28.2M",
+  "storage_bytes": 112796744,
+  "storage_human": "113 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - speleoalex/PhysisML: A small LLM (~3.7M params) built from ...",
+      "url": "https://github.com/speleoalex/PhysisML",
+      "snippet": "GitHub - speleoalex/PhysisML: A small LLM (~3.7M params) built from scratch and trained with a biologically inspired curriculum: phonemes, then words, then sentences, then literature."
+    },
+    {
+      "title": "PhysisML/docs/en/physisml_model.md at main - GitHub",
+      "url": "https://github.com/speleoalex/PhysisML/blob/main/docs/en/physisml_model.md",
+      "snippet": "A small LLM (~3.7M params) built from scratch and trained with a biologically inspired curriculum: phonemes, then words, then sentences, then literature. - speleoalex/PhysisML"
+    },
+    {
+      "title": "Physis-AI (Physis AI) - Hugging Face",
+      "url": "https://huggingface.co/Physis-AI/models",
+      "snippet": "Org profile for Physis AI on Hugging Face, the AI community building the future."
+    },
+    {
+      "title": "New Models Today — AI & LLM Releases - Price Per Token",
+      "url": "https://pricepertoken.com/news/model-releases",
+      "snippet": "New models released today and in the last 24 hours. Daily changelog of new AI and LLM releases from OpenAI, Anthropic, Google, Meta, Mistral and more."
+    },
+    {
+      "title": "Manage preview AI models in Microsoft Online Services",
+      "url": "https://learn.microsoft.com/en-us/microsoft-365/copilot/manage-preview-ai-models",
+      "snippet": "For example, some models may require data retention by the AI model provider. For more information about types of AI functionalities and models, see Understanding AI functionality and models in Microsoft Online Services."
+    }
+  ]
+}

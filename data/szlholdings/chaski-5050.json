@@ -1,0 +1,76 @@
+{
+  "schema": 1,
+  "id": "SZLHOLDINGS/chaski-5050",
+  "slug": "szlholdings-chaski-5050",
+  "author": "SZLHOLDINGS",
+  "url": "https://huggingface.co/SZLHOLDINGS/chaski-5050",
+  "created_at": "2026-08-28T17:33:30.000Z",
+  "updated_at": "2026-08-28T18:00:24.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "peft",
+    "safetensors",
+    "lora",
+    "governed-ai",
+    "proposal-only",
+    "szl-holdings",
+    "chaski",
+    "cutting",
+    "text-generation",
+    "conversational",
+    "en",
+    "base_model:Qwen/Qwen3.5-0.8B",
+    "base_model:adapter:Qwen/Qwen3.5-0.8B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 45576447,
+  "storage_human": "46 MB",
+  "base_model": "Qwen/Qwen3.5-0.8B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "SZLHOLDINGS (SZL Holdings) - Hugging Face",
+      "url": "https://huggingface.co/SZLHOLDINGS/models",
+      "snippet": "Org profile for SZL Holdings on Hugging Face, the AI community building the future."
+    },
+    {
+      "title": "Chaski AI",
+      "url": "https://chaski.ai/",
+      "snippet": "cha s ki AI tools for the work that matters to you. Currently testing."
+    },
+    {
+      "title": "GitHub - szl-holdings/a11oy: a11oy — full orchestrator application ...",
+      "url": "https://github.com/szl-holdings/a11oy",
+      "snippet": "a11oy — full orchestrator application (Command Center, Five Superpowers, Warhacker, Observability, Wires, Mesh, Formulas, Evidence, LLM Router). Signed-receipt ..."
+    },
+    {
+      "title": "a11oy · Verifiable-AI Benchmark — 3-way MEASURED PINN (SZL vs DeepXDE ...",
+      "url": "https://a-11-oy.com/benchmark",
+      "snippet": "An honest, measured 3-way physics-informed-neural-network benchmark: SZL governed spectral (CPU) vs DeepXDE (GPU) vs NVIDIA PhysicsNeMo/Modulus (GPU). Every number carries its provenance label; the artifact passes the a11oy honesty gate in CI."
+    },
+    {
+      "title": "stephen Lutar (@szlholdings) / Posts / X",
+      "url": "https://x.com/szlholdings",
+      "snippet": "📊 3 📎 stephen Lutar szlholdings 0 Apr 24 Per-user audit trails for every AI decision — shipped"
+    }
+  ]
+}

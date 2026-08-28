@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "ayezakhan9911/tds-carbon-card",
+  "slug": "ayezakhan9911-tds-carbon-card",
+  "author": "ayezakhan9911",
+  "url": "https://huggingface.co/ayezakhan9911/tds-carbon-card",
+  "created_at": "2026-08-28T11:49:25.000Z",
+  "updated_at": "2026-08-28T11:51:24.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "co2_eq_emissions",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ayeshaalvi/tds-carbon-card · Hugging Face",
+      "url": "https://huggingface.co/ayeshaalvi/tds-carbon-card",
+      "snippet": "Model Card - Green AI Carbon Accounting This repository documents the carbon footprint and energy accounting for the assigned model training run in TDS GA8."
+    },
+    {
+      "title": "khanmuneeba99/tds-carbon-card · Hugging Face",
+      "url": "https://huggingface.co/khanmuneeba99/tds-carbon-card",
+      "snippet": "Model Card - Green AI Carbon Accounting This repository documents the carbon footprint and energy accounting for the assigned model training run in TDS GA8. Training Specifications Hardware: NVIDIA V100 (1 GPUs) Training Mode: fine-tuning Region: ap-southeast1 GPU Hours: 170.3h (PUE: 1.18) Total Energy: 60.2862 kWh CO₂ Emissions: 28.937 kg ..."
+    },
+    {
+      "title": "AI model cards in carbon.txt and an AI Sustainability Directory",
+      "url": "https://www.thegreenwebfoundation.org/news/ai-model-cards-in-carbon-txt/",
+      "snippet": "Using AI Model cards in carbon.txt to disclose training emissions The updated carbon.txt syntax (version 0.5) includes a new organisational disclosure document type - doc_type: &#x27;ai-model-card&#x27;. Using this document type, along with a URL of model card (README.md) makes a valid disclosure for training of AI models."
+    },
+    {
+      "title": "CivArchive (CivitAI Archive) - AI Model Archive",
+      "url": "https://civitaiarchive.com/",
+      "snippet": "Browse and discover AI models from CivitAI, TensorArt, and SeaArt. Community-driven archive preserving access to AI resources."
+    },
+    {
+      "title": "What&#x27;s documented in AI? Systematic Analysis of 32K AI Model Cards",
+      "url": "https://arxiv.org/pdf/2402.05160",
+      "snippet": "Most of the AI models with substantial downloads provide model cards, though the cards have uneven informativeness. We find that sections addressing environmental impact, limitations, and evaluation exhibit the lowest filled-out rates, while the training section is the most consistently filled-out."
+    }
+  ]
+}

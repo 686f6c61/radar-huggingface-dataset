@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "Dhruv-jain/Mannmitra_Speech-model",
+  "slug": "dhruv-jain-mannmitra_speech-model",
+  "author": "Dhruv-jain",
+  "url": "https://huggingface.co/Dhruv-jain/Mannmitra_Speech-model",
+  "created_at": "2026-08-28T13:23:16.000Z",
+  "updated_at": "2026-08-28T13:35:56.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "wav2vec2",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 94570375,
+  "parameters_human": "94.6M",
+  "storage_bytes": 378307508,
+  "storage_human": "378 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Compare · Dhruv-jain-dev/Mannmitra_Speech-model · GitHub",
+      "url": "https://github.com/Dhruv-jain-dev/Mannmitra_Speech-model/compare",
+      "snippet": "Contribute to Dhruv-jain-dev/Mannmitra_Speech-model development by creating an account on GitHub."
+    },
+    {
+      "title": "Home | Dhruv Jain",
+      "url": "https://maximus-21.github.io/",
+      "snippet": "Research Engineer at Ola Krutrim working on LLM and speech model training, evaluation, and reliable agentic AI systems."
+    },
+    {
+      "title": "Dhruv Jain - University of Michigan",
+      "url": "https://web.eecs.umich.edu/~profdj/",
+      "snippet": "AI for Sound Accessibility: How can AI make sound, speech, and noisy environments more accessible? We build systems for sound awareness, acoustic control, and communication access, helping deaf and hard-of-hearing people, people with noise sensitivity, and clinicians working in high-noise environments better understand and manage sound."
+    },
+    {
+      "title": "Projects | Dhruv Jain",
+      "url": "https://maximus-21.github.io/projects/",
+      "snippet": "Research Engineer at Ola Krutrim working on LLM and speech model training, evaluation, and reliable agentic AI systems."
+    },
+    {
+      "title": "Soundability Lab - University of Michigan",
+      "url": "https://soundability.eecs.umich.edu/",
+      "snippet": "This upper-level undergraduate class serves as an introduction to accessibility for undergraduate studdents and uses a curriculum designed by Professor Dhruv Jain. Students learn essential concepts related to accessibiity, disability theory, and user-centric design, and contribute to a studio-style team project in collaboration with clients with a disability and relevant stakeholders we ..."
+    }
+  ]
+}

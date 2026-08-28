@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "dhanr4j/bitvoice-dictation",
+  "slug": "dhanr4j-bitvoice-dictation",
+  "author": "dhanr4j",
+  "url": "https://huggingface.co/dhanr4j/bitvoice-dictation",
+  "created_at": "2026-08-28T06:55:10.000Z",
+  "updated_at": "2026-08-28T12:09:55.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "dictation",
+    "text-cleanup",
+    "grammar-correction",
+    "on-device",
+    "qlora",
+    "prompt-injection",
+    "license:other",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1669408768,
+  "parameters_human": "1.67B",
+  "storage_bytes": 8602726816,
+  "storage_human": "8.6 GB",
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "dhanr4j/bitvoice-dictation · Hugging Face",
+      "url": "https://huggingface.co/dhanr4j/bitvoice-dictation",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Automatic Speech Recognition Models - Hugging Face",
+      "url": "https://huggingface.co/models?pipeline_tag=automatic-speech-recognition",
+      "snippet": "Active filters: automatic-speech-recognition. Clear all. openai/whisper-large-v3. Automatic Speech Recognition • 2B • Updated Aug 12, 2024 • 4.97M • • 6.12k"
+    },
+    {
+      "title": "Voice Dictation - Online Speech Recognition",
+      "url": "https://dictation.io/",
+      "snippet": "Dictation is a free online speech recognition software that will help you write emails, documents and essays using your voice narration and without typing."
+    },
+    {
+      "title": "GitHub - debpalash/VoiceStudio: VoiceStudio is the open-source, fully ...",
+      "url": "https://github.com/debpalash/VoiceStudio",
+      "snippet": "VoiceStudio is the open-source, fully-local ElevenLabs alternative — voice cloning, voice design, video dubbing, dictation, transcription &amp; audiobook creation in 646 languages. - debpalash/Voic..."
+    },
+    {
+      "title": "The best AI dictation and speech-to-text software in 2026",
+      "url": "https://www.producthunt.com/categories/ai-dictation-apps",
+      "snippet": "Community award-winning AI dictation apps like Wispr Flow, MacWhisper, and Aqua Voice help you write faster with accurate, private speech-to-text."
+    }
+  ]
+}

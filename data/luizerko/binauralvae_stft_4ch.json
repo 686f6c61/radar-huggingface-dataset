@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "luizerko/binauralvae_stft_4ch",
+  "slug": "luizerko-binauralvae_stft_4ch",
+  "author": "luizerko",
+  "url": "https://huggingface.co/luizerko/binauralvae_stft_4ch",
+  "created_at": "2026-08-28T14:42:29.000Z",
+  "updated_at": "2026-08-28T14:42:29.000Z",
+  "license": "cc-by-sa-4.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:cc-by-sa-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - Luizerko/BinauralVAE: Binaural audio reconstruction pipelines ...",
+      "url": "https://github.com/Luizerko/BinauralVAE",
+      "snippet": "Welcome to BinauralVAE. This project explores several Variational Autoencoder (VAE) approaches - including complex-valued variants - to reconstruct spatialized audio. Developed alongside AudioWorldSim, this project serves as a foundation for generating latent state representations for a binaural, audio-based world model. We highly recommend checking out AudioWorldSim for a better understanding ..."
+    },
+    {
+      "title": "BinauralVAE/MODELS.md at main · Luizerko/BinauralVAE · GitHub",
+      "url": "https://github.com/Luizerko/BinauralVAE/blob/main/MODELS.md",
+      "snippet": "Binaural audio reconstruction pipelines using different VAE-based approaches. - BinauralVAE/MODELS.md at main · Luizerko/BinauralVAE"
+    },
+    {
+      "title": "LLM Leaderboard & AI Model Benchmarks — August 2026",
+      "url": "https://benchlm.ai/",
+      "snippet": "LLM Leaderboard & AI Model Benchmarks — August 2026 Compare frontier AI models by quality, cost, and context. 105 Supported and 121 Estimated models among 403 tracked LLMs — 406 benchmarks, real pricing, and runtime data in one place."
+    },
+    {
+      "title": "Hugging Face - The AI community building the future.",
+      "url": "https://huggingface.co/",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "AudioWorldSim: Realistic Binaural Audio Datasets For World Models",
+      "url": "https://arxiv.org/pdf/2608.21075",
+      "snippet": "This technical report presents AudioWorldSim, an open-source platform designed to gen-erate realistic binaural audio datasets and advance research in audio-based machine learning, particularly world models. Built as a custom extension of Meta&#x27;s SoundSpaces 2.0 platform, AudioWorldSim leverages their comprehensive acoustics framework, but focuses on the auto-matic rollout of random agent ..."
+    }
+  ]
+}

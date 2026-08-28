@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "ilhamhih/toy-image-captioning",
+  "slug": "ilhamhih-toy-image-captioning",
+  "author": "ilhamhih",
+  "url": "https://huggingface.co/ilhamhih/toy-image-captioning",
+  "created_at": "2026-08-28T15:49:01.000Z",
+  "updated_at": "2026-08-28T15:49:22.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "transformer",
+    "research-notes",
+    "image-captioning",
+    "license:cc-by-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 24832,
+  "parameters_human": "24832",
+  "storage_bytes": 99808,
+  "storage_human": "99808 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "LLM Leaderboard 2026: Compare 300+ Top AI Models by Intelligence, Speed ...",
+      "url": "https://llm-stats.com/leaderboards/llm-leaderboard",
+      "snippet": "The LLM Leaderboard — independent ranking of GPT, Claude, Gemini, Llama, DeepSeek and 300+ AI models by intelligence, speed and price. Filter by provider, license, modality and context window; sort by every benchmark. Composite LLM Stats Score updated continuously from public benchmarks and live API metrics."
+    },
+    {
+      "title": "Vision AI Models: Explore & Try the Latest | Roboflow Playground",
+      "url": "https://playground.roboflow.com/ranking/captioning",
+      "snippet": "Explore vision AI models from every major lab and try them on your own images: object detection, OCR, classification, captioning, segmentation, and more. The catalog spans general-purpose vision language models and specialized computer vision models built for a single task. Every model is free to try in the Playground, many are free and open-source to deploy, and new models are added as they ship."
+    },
+    {
+      "title": "Image captioning · Hugging Face",
+      "url": "https://huggingface.co/docs/transformers/tasks/image_captioning",
+      "snippet": "Image captioning Image captioning is the task of predicting a caption for a given image. Common real world applications of it include aiding visually impaired people that can help them navigate through different situations. Therefore, image captioning helps to improve content accessibility for people by describing images to them."
+    },
+    {
+      "title": "DALL·E: Creating images from text | OpenAI",
+      "url": "https://openai.com/index/dall-e/",
+      "snippet": "We&#x27;ve trained a neural network called DALL·E that creates images from text captions for a wide range of concepts expressible in natural language."
+    },
+    {
+      "title": "Conceptual Captions - Google AI",
+      "url": "https://ai.google.com/research/ConceptualCaptions/",
+      "snippet": "Google AI&#x27;s Conceptual Captions provides automatically generated image captions for improved accessibility and understanding of visual content."
+    }
+  ]
+}

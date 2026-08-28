@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "anna-kozlov/survey-neural-architecture-search",
+  "slug": "anna-kozlov-survey-neural-architecture-search",
+  "author": "anna-kozlov",
+  "url": "https://huggingface.co/anna-kozlov/survey-neural-architecture-search",
+  "created_at": "2026-08-28T13:00:01.000Z",
+  "updated_at": "2026-08-28T13:00:09.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "transformer",
+    "research-notes",
+    "neural-architecture-search",
+    "license:cc-by-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 33088,
+  "parameters_human": "33088",
+  "storage_bytes": 132832,
+  "storage_human": "132832 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "survey-neural-architecture-search - Hugging Face",
+      "url": "https://huggingface.co/rahulpatelford/survey-neural-architecture-search",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Neural architecture search from a natural language processing ...",
+      "url": "https://link.springer.com/article/10.1007/s10462-026-11550-5",
+      "snippet": "Neural architecture search has revolutionized automated machine learning and demonstrated transformative potential across natural language processing domains. This survey presents a comprehensive task-oriented analysis of NAS applications in NLP, systematically categorizing research into three core areas of text representation and classification, sequence modeling and generation, and ..."
+    },
+    {
+      "title": "Neural Architecture Search: Insights from 1000 Papers",
+      "url": "https://arxiv.org/abs/2301.08727",
+      "snippet": "In this survey, we provide an organized and comprehensive guide to neural architecture search. We give a taxonomy of search spaces, algorithms, and speedup techniques, and we discuss resources such as benchmarks, best practices, other surveys, and open-source libraries."
+    },
+    {
+      "title": "[2006.02903] A Comprehensive Survey of Neural Architecture Search ...",
+      "url": "https://arxiv.org/abs/2006.02903",
+      "snippet": "Deep learning has made breakthroughs and substantial in many fields due to its powerful automatic representation capabilities. It has been proven that neural architecture design is crucial to the feature representation of data and the final performance. However, the design of the neural architecture heavily relies on the researchers&#x27; prior knowledge and experience. And due to the limitations ..."
+    },
+    {
+      "title": "A Comprehensive Survey of Neural Architecture Search:",
+      "url": "https://dl.acm.org/doi/10.1145/3447582",
+      "snippet": "It has been proven that neural architecture design is crucial to the feature representation of data and the final performance. However, the design of the neural architecture heavily relies on the researchers&#x27; prior knowledge and experience."
+    }
+  ]
+}

@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "tianliu1011x/ocr-freeform-review",
+  "slug": "tianliu1011x-ocr-freeform-review",
+  "author": "tianliu1011x",
+  "url": "https://huggingface.co/tianliu1011x/ocr-freeform-review",
+  "created_at": "2026-08-28T16:54:43.000Z",
+  "updated_at": "2026-08-28T16:54:51.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "transformer",
+    "research-notes",
+    "ocr-freeform",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 33088,
+  "parameters_human": "33088",
+  "storage_bytes": 132832,
+  "storage_human": "132832 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "tianliu1011x (韩梓涵) - Hugging Face",
+      "url": "https://huggingface.co/tianliu1011x",
+      "snippet": "User profile of 韩梓涵 on Hugging Face"
+    },
+    {
+      "title": "Supercharge your OCR Pipelines with Open Models - Hugging Face",
+      "url": "https://huggingface.co/blog/ocr-open-models",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Free AI Models on OpenRouter",
+      "url": "https://openrouter.ai/collections/free-models",
+      "snippet": "Access powerful AI models at zero cost. Experiment, learn, and build with free AI models and LLMs. OpenRouter is committed to keeping AI accessible for everyone."
+    },
+    {
+      "title": "Comparative Analysis of AI OCR Models for PDF to Structured Text",
+      "url": "https://intuitionlabs.ai/articles/ai-ocr-models-pdf-structured-text-comparison",
+      "snippet": "Compares leading AI OCR models and tools for PDF to structured text conversion in 2026. Examines open-source and commercial solutions including Mistral OCR 3, GPT-4o, and cloud services."
+    },
+    {
+      "title": "6 Best LLMs for OCR: Top AI Models for Text Recognition",
+      "url": "https://www.uplarn.com/llms-for-ocr/",
+      "snippet": "Discover the best LLMs for OCR in this human friendly guide. Learn how AI models compare for scanning documents and extracting data."
+    }
+  ]
+}

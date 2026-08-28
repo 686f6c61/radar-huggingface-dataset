@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "AlinaGonch/qwen3-14b-squad-ratio-0.90-seed-44",
+  "slug": "alinagonch-qwen3-14b-squad-ratio-0-90-seed-44",
+  "author": "AlinaGonch",
+  "url": "https://huggingface.co/AlinaGonch/qwen3-14b-squad-ratio-0.90-seed-44",
+  "created_at": "2026-08-28T13:40:26.000Z",
+  "updated_at": "2026-08-28T13:40:40.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 268399154,
+  "storage_human": "268 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "AlinaGonch/qwen3-14b-squad-ratio-0.30-r4 · Hugging Face",
+      "url": "https://huggingface.co/AlinaGonch/qwen3-14b-squad-ratio-0.30-r4",
+      "snippet": "Instructions to use AlinaGonch/qwen3-14b-squad-ratio-.30-r4 with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Libraries Transformers How to use AlinaGonch/qwen3-14b-squad-ratio-.30-r4 with Transformers:"
+    },
+    {
+      "title": "AlinaGonch/qwen3-14b-squad-ratio-0.30-r64 · Hugging Face",
+      "url": "https://huggingface.co/AlinaGonch/qwen3-14b-squad-ratio-0.30-r64",
+      "snippet": "Instructions to use AlinaGonch/qwen3-14b-squad-ratio-.30-r64 with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Libraries Transformers How to use AlinaGonch/qwen3-14b-squad-ratio-.30-r64 with Transformers:"
+    },
+    {
+      "title": "Qwen 3 Full Model Lineup Guide 2026: 0.6B to 72B with Dual-Mode ...",
+      "url": "https://baeseokjae.github.io/posts/qwen-3-full-lineup-guide-2026/",
+      "snippet": "Complete guide to every Qwen 3 model from 0.6B to 235B — specs, VRAM requirements, dual-mode thinking, benchmarks vs. DeepSeek R1 and GPT-4o."
+    },
+    {
+      "title": "qwen3-14b Model Info - - Alibaba Cloud Documentation Center",
+      "url": "https://www.alibabacloud.com/help/en/model-studio/qwen3-14b",
+      "snippet": "qwen3-14b Model Info,:Achieves effective integration of thinking and non-thinking modes, allowing mode switching during conversations. Its reasoning capability reaches the SOTA level in the same scale industry, and its gen..."
+    },
+    {
+      "title": "labyrinthbench/entries/seed-model-qwen3-14b.json at main - GitHub",
+      "url": "https://github.com/owl-fleet/labyrinthbench/blob/main/entries/seed-model-qwen3-14b.json",
+      "snippet": "A deterministic multi-turn benchmark for LLM agents — no LLM judge — with a swappable context-management harness. Run it on your own rig against any OpenAI-compatible endpoint. - owl-fleet/labyrint..."
+    }
+  ]
+}

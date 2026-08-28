@@ -1,0 +1,78 @@
+{
+  "schema": 1,
+  "id": "FastVideo/FastVideo-FastH3-4-step-Preview-v1-VSA-Synthetic-Step1900",
+  "slug": "fastvideo-fastvideo-fasth3-4-step-preview-v1-vsa-synthetic-step1900",
+  "author": "FastVideo",
+  "url": "https://huggingface.co/FastVideo/FastVideo-FastH3-4-step-Preview-v1-VSA-Synthetic-Step1900",
+  "created_at": "2026-08-27T03:49:11.000Z",
+  "updated_at": "2026-08-28T19:27:21.000Z",
+  "license": "minimax-h3-community",
+  "license_family": "unknown",
+  "pipeline_tag": "text-to-video",
+  "library": "fastvideo",
+  "languages": [],
+  "tags": [
+    "fastvideo",
+    "diffusers",
+    "safetensors",
+    "text-to-video",
+    "video",
+    "audio",
+    "text-to-audio-video",
+    "distillation",
+    "dmd2",
+    "few-step",
+    "minimax-h3",
+    "fasth3",
+    "preview",
+    "arxiv:2405.14867",
+    "base_model:MiniMaxAI/MiniMax-H3",
+    "base_model:finetune:MiniMaxAI/MiniMax-H3",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 35049751296,
+  "parameters_human": "35.05B",
+  "storage_bytes": 147835483860,
+  "storage_human": "147.8 GB",
+  "base_model": "MiniMaxAI/MiniMax-H3",
+  "formats": [
+    "diffusers",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "FastVideo-FastH3-4-step-Preview-v1-VSA-DataFree - Hugging Face",
+      "url": "https://huggingface.co/FastVideo/FastVideo-FastH3-4-step-Preview-v1-VSA-DataFree",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "FastVideo/FastVideo-FastH3-4-step-Preview-v1-LoRA · Hugging Face",
+      "url": "https://huggingface.co/FastVideo/FastVideo-FastH3-4-step-Preview-v1-LoRA",
+      "snippet": "FastVideo-FastH3-4-step-Preview-v1-LoRA Private umbrella repository for the four rank-64 LoRA variants in the FastH3 4-Step Preview v1 family. Each adapter reconstructs one corresponding distilled transformer from the MiniMax H3 base model."
+    },
+    {
+      "title": "GitHub - hao-ai-lab/FastVideo: A unified inference and post-training ...",
+      "url": "https://github.com/hao-ai-lab/FastVideo",
+      "snippet": "NEWS 2026/08/23: FastH3 Preview v0.2 is a 4-step DMD2-distilled MiniMax-H3 checkpoint that generates synchronized video and audio. Run the verified basic FastH3 example, see the inference guide, or have a coding agent install FastVideo with the agent setup prompt."
+    },
+    {
+      "title": "FastVideo FastH3: Free 4-Step MiniMax H3 Video Model",
+      "url": "http://creativeaishow.com/fastvideo-fasth3-the-free-4-step-minimax-h3-video-model-and-the-license-that-blocks-us-creators/",
+      "snippet": "FastVideo&#x27;s FastH3 cuts MiniMax H3 from 50 denoising steps to 4, with free weights and a free demo. The license blocks US and EU creators - here&#x27;s the fix."
+    },
+    {
+      "title": "GitHub - EricLina/FastVideo-: A unified inference and post-training ...",
+      "url": "https://github.com/EricLina/FastVideo-",
+      "snippet": "FastVideo is a unified post-training and inference framework for accelerated video generation. FastVideo features an end-to-end unified pipeline for accelerating diffusion models, starting from data preprocessing to model training, finetuning, distillation, and inference."
+    }
+  ]
+}

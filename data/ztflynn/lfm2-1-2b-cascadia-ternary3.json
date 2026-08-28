@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "ZTFlynn/LFM2-1.2B-Cascadia-ternary3",
+  "slug": "ztflynn-lfm2-1-2b-cascadia-ternary3",
+  "author": "ZTFlynn",
+  "url": "https://huggingface.co/ZTFlynn/LFM2-1.2B-Cascadia-ternary3",
+  "created_at": "2026-08-27T05:35:37.000Z",
+  "updated_at": "2026-08-28T12:58:21.000Z",
+  "license": "lfm-open-license",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "cascadia",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "cascadia",
+    "lut",
+    "compression",
+    "spline",
+    "ternary",
+    "quantization",
+    "cpu",
+    "edge",
+    "lfm2",
+    "text-generation",
+    "en",
+    "base_model:LiquidAI/LFM2-1.2B",
+    "base_model:quantized:LiquidAI/LFM2-1.2B",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1518821140,
+  "storage_human": "1.5 GB",
+  "base_model": "LiquidAI/LFM2-1.2B",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ZTFlynn/LFM2-1.2B-Cascadia-ternary3 · Hugging Face",
+      "url": "https://huggingface.co/ZTFlynn/LFM2-1.2B-Cascadia-ternary3",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "LiquidAI/LFM2-1.2B · Hugging Face",
+      "url": "https://huggingface.co/LiquidAI/LFM2-1.2B",
+      "snippet": "A newer version of this model is available: LiquidAI/LFM2.5-1.2B-Instruct"
+    },
+    {
+      "title": "LFM2 Technical Report - arXiv.org",
+      "url": "https://arxiv.org/html/2511.23404v1",
+      "snippet": "LFM2-VL-1.6B and LFM2-VL-3B combine a So400M SigLIP2 encoder with LFM2-1.2B and LFM2-2.6B backbones, respectively. All variants are designed to support flexible image resolutions, efficient tokenization, and a controllable accuracy vs. latency trade-off for on-device deployment."
+    },
+    {
+      "title": "Introducing LFM2: The Fastest On-Device Foundation Models on the Market ...",
+      "url": "https://www.liquid.ai/blog/liquid-foundation-models-v2-our-second-series-of-generative-ai-models",
+      "snippet": "Today, we release LFM2, a new class of Liquid Foundation Models (LFMs) that sets a new standard in quality, speed, and memory efficiency for on-device deployment. Built on a hybrid architecture, LFM2 delivers 200% faster decode and prefill performance than Qwen3 and Gemma 3 on CPU. It also significantly outperforms models in each size class on instruction-following and function calling—the ..."
+    },
+    {
+      "title": "[2511.23404] LFM2 Technical Report - arXiv.org",
+      "url": "https://arxiv.org/abs/2511.23404",
+      "snippet": "We present LFM2, a family of Liquid Foundation Models designed for efficient on-device deployment and strong task capabilities. Using hardware-in-the-loop architecture search under edge latency and memory constraints, we obtain a compact hybrid backbone that combines gated short convolutions with a small number of grouped query attention blocks, delivering up to 2x faster prefill and decode on ..."
+    }
+  ]
+}

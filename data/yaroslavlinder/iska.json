@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "YaroslavLinder/ISKA",
+  "slug": "yaroslavlinder-iska",
+  "author": "YaroslavLinder",
+  "url": "https://huggingface.co/YaroslavLinder/ISKA",
+  "created_at": "2024-12-18T19:30:07.000Z",
+  "updated_at": "2026-08-28T15:07:42.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 22,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 2572847452,
+  "storage_human": "2.6 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "YaroslavLinder/ISKA - Fast, Reliable, and Scalable ... - friendli.ai",
+      "url": "https://friendli.ai/models/YaroslavLinder/ISKA",
+      "snippet": "Run YaroslavLinder/ISKA with fast, reliable, and scalable inference on FriendliAI. Get low-latency performance with advanced quantization (FP4, FP8, INT4, INT8), continuous batching, optimized GPU kernels, token caching, and seamless API integration."
+    },
+    {
+      "title": "YaroslavLinder (Yaroslav) - Hugging Face",
+      "url": "https://huggingface.co/YaroslavLinder",
+      "snippet": "User profile of Yaroslav on Hugging Face"
+    },
+    {
+      "title": "LLM Leaderboard 2026: Compare 300+ Top AI Models by Intelligence, Speed ...",
+      "url": "https://llm-stats.com/leaderboards/llm-leaderboard",
+      "snippet": "The LLM Leaderboard — independent ranking of GPT, Claude, Gemini, Llama, DeepSeek and 300+ AI models by intelligence, speed and price. Filter by provider, license, modality and context window; sort by every benchmark. Composite LLM Stats Score updated continuously from public benchmarks and live API metrics."
+    },
+    {
+      "title": "Comparison of AI Models across Intelligence, Performance, and Price ...",
+      "url": "https://artificialanalysis.ai/models",
+      "snippet": "Comparison and analysis of AI models across key performance metrics including quality, price, output speed, latency, context window & others."
+    },
+    {
+      "title": "Home Page · ModelScope",
+      "url": "https://modelscope.ai/home",
+      "snippet": "ModelScope Join ModelScope Studios and co-create the AI future with developers."
+    }
+  ]
+}

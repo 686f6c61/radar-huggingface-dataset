@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "sharryXR/asil-qwen35-9b-rl",
+  "slug": "sharryxr-asil-qwen35-9b-rl",
+  "author": "sharryXR",
+  "url": "https://huggingface.co/sharryXR/asil-qwen35-9b-rl",
+  "created_at": "2026-06-02T08:34:09.000Z",
+  "updated_at": "2026-08-28T15:08:03.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_5_text",
+    "text-generation",
+    "asil",
+    "qwen3.5",
+    "paper-release",
+    "conversational",
+    "arxiv:2608.26991",
+    "base_model:Qwen/Qwen3.5-9B",
+    "base_model:finetune:Qwen/Qwen3.5-9B",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 18,
+  "trending_score": 0,
+  "parameters": 8953803264,
+  "parameters_human": "8.95B",
+  "storage_bytes": 17927645325,
+  "storage_human": "17.9 GB",
+  "base_model": "Qwen/Qwen3.5-9B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "sharryXR/asil-qwen35-9b-rl · Hugging Face",
+      "url": "https://huggingface.co/sharryXR/asil-qwen35-9b-rl",
+      "snippet": "sharryXR / asil-qwen35-9b-rl like 0 gui-agents software-agents asil qwen License:other Model card FilesFiles and versions xet Community Copy to bucket new ASIL Model Checkpoint Pending"
+    },
+    {
+      "title": "ASIL Models - a sharryXR Collection - Hugging Face",
+      "url": "https://huggingface.co/collections/sharryXR/asil-models",
+      "snippet": "Model repositories for the ASIL paper release. Final checkpoints are pending transfer from the training server."
+    },
+    {
+      "title": "Alibaba Cloud Model Studio",
+      "url": "https://modelstudio.alibabacloud.com/",
+      "snippet": "Diverse Model Ecosystem Easily experience and quickly access Alibaba Cloud&#x27;s latest foundational models (FM), including Qwen-Max, Qwen-Plus, Qwen-Turbo, Qwen-VL, and the Wan series."
+    },
+    {
+      "title": "sherckuith/qwen35-9b • LM Studio Hub",
+      "url": "https://lmstudio.ai/sherckuith/qwen35-9b",
+      "snippet": "Qwen3.5 represents a significant leap forward, integrating breakthroughs in multimodal learning, architectural efficiency, reinforcement learning scale, and global accessibility. This is a 9B parameter dense model, supporting a native context length of 262,144 tokens."
+    },
+    {
+      "title": "Qwen3.5-9B: Specifications and GPU VRAM Requirements",
+      "url": "https://apxml.com/models/qwen35-9b",
+      "snippet": "Qwen3.5-9B is Alibaba Cloud&#x27;s efficient multimodal foundation model with 9B parameters, released February 2026. It uses a hybrid architecture combining Gated Delta Networks and Gated Attention in an 8× (3×DeltaNet→FFN→1×Attention→FFN) pattern."
+    }
+  ]
+}

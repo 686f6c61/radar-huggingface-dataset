@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "diego-zapata/synthetic-mammogram-detection",
+  "slug": "diego-zapata-synthetic-mammogram-detection",
+  "author": "diego-zapata",
+  "url": "https://huggingface.co/diego-zapata/synthetic-mammogram-detection",
+  "created_at": "2026-08-28T19:06:47.000Z",
+  "updated_at": "2026-08-28T19:07:55.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "joblib",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 740275490,
+  "storage_human": "740 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "The Role of Synthetic Data and Generative AI in Breast Imaging ... - MDPI",
+      "url": "https://www.mdpi.com/2075-4418/15/23/2996",
+      "snippet": "1. Introduction Artificial intelligence (AI) is rapidly transforming breast imaging, particularly in the area of screening mammography, where it has demonstrated promising capabilities in lesion detection, triage, and workflow optimization [1]."
+    },
+    {
+      "title": "Synthesis of Mammogram From Digital Breast Tomosynthesis Using Deep ...",
+      "url": "https://ieeexplore.ieee.org/document/9398655",
+      "snippet": "Synthetic digital mammography (SDM), a 2D image generated from digital breast tomosynthesis (DBT), is used as a potential substitute for full-field digital mammography (FFDM) in clinic to reduce the radiation dose for breast cancer screening. Previous studies exploited projection geometry and fused projection data and DBT volume, with different post-processing techniques applied on re ..."
+    },
+    {
+      "title": "Early Results of Using AI in Mammography Screening for Breast Cancer - MDPI",
+      "url": "https://www.mdpi.com/2077-0383/14/21/7886",
+      "snippet": "Background: Recent advancements in Artificial Intelligence (AI) have the potential to address the challenges of mammographic screening programs by enhancing the performance of Computer-Aided Detection (CAD) systems, improving detection accuracy, and reducing false positive rates and recall rates. These systems were mostly investigated by control trials using cancer-enriched datasets and ..."
+    },
+    {
+      "title": "Detection and Diagnosis of Breast Tumors using Deep Convolutional ...",
+      "url": "https://semanticscholar.org/paper/Detection-and-Diagnosis-of-Breast-Tumors-using-Deep-Gallego-Posada-Montoya-Zapata/9566d1f27a0e5f926827d3eaf8546dab51e40e21",
+      "snippet": "An application of deep Convolutional Neural Networks for the detection and diagnosis of breast tumors and feature extraction using a pretrained CNN model (AlexNet and VGG) and training of a Support Vector Machine at the classification task using the previously extracted features. We present an application of deep Convolutional Neural Networks (CNN) for the detection and diagnosis of breast ..."
+    },
+    {
+      "title": "Detection and Diagnosis of Breast Tumors using Deep Convolutional ...",
+      "url": "https://www.semanticscholar.org/paper/Detection-and-Diagnosis-of-Breast-Tumors-using-Deep-Gallego-Posada-Montoya-Zapata/9566d1f27a0e5f926827d3eaf8546dab51e40e21/figure/0",
+      "snippet": "This paper proposes a deep learning methodology to tackle computer-aided detection of malignant breast tumors in ultrasound images using training data which contains several hundred images of benign and malignant cases and demonstrates that the fine-tuned model had the best performance."
+    }
+  ]
+}

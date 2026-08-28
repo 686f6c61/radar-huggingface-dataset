@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "Shiva-JI/Tds-GA8-Q10-Carbon-Card",
+  "slug": "shiva-ji-tds-ga8-q10-carbon-card",
+  "author": "Shiva-JI",
+  "url": "https://huggingface.co/Shiva-JI/Tds-GA8-Q10-Carbon-Card",
+  "created_at": "2026-08-28T16:14:12.000Z",
+  "updated_at": "2026-08-28T16:18:23.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "co2_eq_emissions",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "shivainlabs/tds-carbon-card · Hugging Face",
+      "url": "https://huggingface.co/shivainlabs/tds-carbon-card",
+      "snippet": "Model Card - Green AI Carbon Accounting This repository documents the carbon footprint and energy accounting for the assigned model training run in TDS GA8."
+    },
+    {
+      "title": "24F2007479/q10_tds · Hugging Face",
+      "url": "https://huggingface.co/24F2007479/q10_tds",
+      "snippet": "Model Card - Green AI Carbon Accounting This repository documents the carbon footprint and energy accounting for the assigned model training run in TDS GA8."
+    },
+    {
+      "title": "Free Shiva 3D Models - Download Instantly | Meshy",
+      "url": "https://www.meshy.ai/tags/shiva",
+      "snippet": "Yes, all Shiva 3D models generated on Meshy are available for free download. We provide high-quality AI-generated assets at no cost."
+    },
+    {
+      "title": "50,000+ Free Ai Generated Lord Shiva & Shiva Images - Pixabay",
+      "url": "https://pixabay.com/images/search/ai%20generated%20lord%20shiva/",
+      "snippet": "50,757 Free images of Ai Generated Lord Shiva Select a ai generated lord shiva image to download for free. High resolution picture downloads for your next project."
+    },
+    {
+      "title": "TDS | tds - mitali-iitm.github.io",
+      "url": "https://mitali-iitm.github.io/tds/",
+      "snippet": "Tools in Data Science"
+    }
+  ]
+}

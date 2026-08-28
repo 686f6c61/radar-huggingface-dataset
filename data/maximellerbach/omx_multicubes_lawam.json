@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "maximellerbach/omx_multicubes_lawam",
+  "slug": "maximellerbach-omx_multicubes_lawam",
+  "author": "maximellerbach",
+  "url": "https://huggingface.co/maximellerbach/omx_multicubes_lawam",
+  "created_at": "2026-08-02T17:44:54.000Z",
+  "updated_at": "2026-08-28T13:02:35.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "robotics",
+    "lawam",
+    "dataset:maximellerbach/omx_multicubes",
+    "arxiv:2606.15768",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 31,
+  "trending_score": 0,
+  "parameters": 2555179360,
+  "parameters_human": "2.56B",
+  "storage_bytes": 22730028964,
+  "storage_human": "22.7 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "maximellerbach/omx_multicubes_lawam · Hugging Face",
+      "url": "https://huggingface.co/maximellerbach/omx_multicubes_lawam",
+      "snippet": "LaWAM is a latent world action model that pairs a Qwen3-VL backbone with a latent action/world model and a flow-matching action head for dynamics-aware robot policies. This policy has been trained and pushed to the Hub using LeRobot. Learn how to train and run it in the LeRobot lawam guide, or browse the full documentation."
+    },
+    {
+      "title": "maximellerbach (Maxime Ellerbach) - Hugging Face",
+      "url": "https://huggingface.co/maximellerbach/models",
+      "snippet": "AI & ML interests ... Recent Activity updated a model about 16 hours ago ... updated a dataset about 18 hours ago"
+    },
+    {
+      "title": "LaWAM: Latent World Action Models",
+      "url": "https://rlinf.github.io/LaWAM/",
+      "snippet": "Why Latent Futures Video imagination slows robot control. World-Action Models help policies reason about how scenes evolve under action, but future-image or future-video prediction spends latency and model capacity on pixel-level synthesis. LaWAM keeps the future-conditioned control principle while moving prediction into the latent space of pretrained visual encoders such as DINOv3, where one ..."
+    },
+    {
+      "title": "GitHub - RLinf/LaWAM",
+      "url": "https://github.com/RLinf/LaWAM/tree/main",
+      "snippet": "LaWAM introduces a latent world-model interface for VLA policies. The overview figure below summarizes the two-stage pipeline: latent world model learning and LaWAM policy training with latent visual subgoals."
+    },
+    {
+      "title": "LaWAM: Latent World Action Models for Efficient Dynamics-Aware Robot ...",
+      "url": "https://arxiv.org/pdf/2606.15768v1",
+      "snippet": "We presented LaWAM, a latent World-Action Model that brings predictive dynamics into robot policy inference without reconstructing pixel-space futures. LaWAM repurposes the forward decoder of a latent action model as LaWM, which expands policy-predicted latent actions into embodiment-grounded latent visual subgoals for action-chunk generation."
+    }
+  ]
+}

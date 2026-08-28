@@ -1,0 +1,98 @@
+{
+  "schema": 1,
+  "id": "salohcin714/granite-4.2-3b-4bit-gptq-mlx",
+  "slug": "salohcin714-granite-4-2-3b-4bit-gptq-mlx",
+  "author": "salohcin714",
+  "url": "https://huggingface.co/salohcin714/granite-4.2-3b-4bit-gptq-mlx",
+  "created_at": "2026-08-28T12:33:08.000Z",
+  "updated_at": "2026-08-28T12:45:10.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "mlx",
+  "languages": [
+    "en",
+    "de",
+    "es",
+    "fr",
+    "ja",
+    "pt",
+    "ar",
+    "cs",
+    "it",
+    "ko",
+    "nl",
+    "zh"
+  ],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "granite",
+    "language",
+    "granite-4.1",
+    "apple-silicon",
+    "text-generation",
+    "conversational",
+    "en",
+    "de",
+    "es",
+    "fr",
+    "ja",
+    "pt",
+    "ar",
+    "cs",
+    "it",
+    "ko",
+    "nl",
+    "zh",
+    "base_model:ibm-granite/granite-4.2-3b",
+    "base_model:quantized:ibm-granite/granite-4.2-3b",
+    "license:apache-2.0",
+    "4-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 588065280,
+  "parameters_human": "588.1M",
+  "storage_bytes": 2123230686,
+  "storage_human": "2.1 GB",
+  "base_model": "ibm-granite/granite-4.2-3b",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "salohcin714/granite-4.2-3b-5bit-mlx · Hugging Face",
+      "url": "https://huggingface.co/salohcin714/granite-4.2-3b-5bit-mlx",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Granite 4.2 | IBM Granite",
+      "url": "https://www.ibm.com/granite/docs/models/granite4-2",
+      "snippet": "Granite 4.2 Dense reasoning language model family in 3B, 8B, and 30B sizes with built-in chain-of-thought thinking, flexible thinking modes, and reasoning-augmented tool calling."
+    },
+    {
+      "title": "salohcin714/granite-4.1-3b-2bit-gptq-mlx · Hugging Face",
+      "url": "https://huggingface.co/salohcin714/granite-4.1-3b-2bit-gptq-mlx",
+      "snippet": "Weights converted to MLX safetensors layout and quantized (2-bit affine quantization, group size 64, via GPTQ Hessian-based calibration). Redundant tied lm_head.weight dropped where the model ties input/output embeddings."
+    },
+    {
+      "title": "GitHub - ibm-granite/granite-4.2-language-models · GitHub",
+      "url": "https://github.com/ibm-granite/granite-4.2-language-models",
+      "snippet": "The Granite 4.2 familiy features dense decoder-only architectures in three sizes — 3B, 8B, and 30B, with quantized variants per model size. The Granite 4.2 dense models are post-trained on top of Granite 4.1 base models. Please refer to the Granite 4.1 blog for details on the pre-training phase."
+    },
+    {
+      "title": "Granite - IBM",
+      "url": "https://www.ibm.com/granite",
+      "snippet": "IBM Granite is a family of open, trusted AI models for business, offering efficient language, vision, speech and guardrail models you can customize and deploy."
+    }
+  ]
+}

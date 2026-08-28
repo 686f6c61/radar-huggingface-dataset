@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "jayden-jones/matching-v1",
+  "slug": "jayden-jones-matching-v1",
+  "author": "jayden-jones",
+  "url": "https://huggingface.co/jayden-jones/matching-v1",
+  "created_at": "2026-08-28T16:38:34.000Z",
+  "updated_at": "2026-08-28T16:38:46.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "mae",
+    "pytorch",
+    "matching",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 24832,
+  "parameters_human": "24832",
+  "storage_bytes": 99808,
+  "storage_human": "99808 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Jayden Jones on X: \"@KrazyRabb1t @GirlGlitcher Because not only is ai ...",
+      "url": "https://x.com/JaydenJ70624699/status/2087267046383845865",
+      "snippet": "6.1K Jayden Jones @JaydenJ70624699 Because not only is ai unnecessary it&#x27;s also harmful. Ai data centers use fresh water cool their servers 12:56 PM · Aug 11, 2026 139Views 1 ashenone"
+    },
+    {
+      "title": "Jaydes - Jaydes (English) (Jayden) [RVC v2] [300 Epochs] AI Voice Model",
+      "url": "https://new.voice-models.com/model/8ZR",
+      "snippet": "Jaydes - Jaydes (English) (Jayden) [RVC v2] [300 Epochs] AI voice model for RVC voice conversion. View details, samples, source status, and run this voice model in EasyAIVoice."
+    },
+    {
+      "title": "AI Aimbot Models & YOLO Detection Models | MossyModels",
+      "url": "https://mossymodels.com/",
+      "snippet": "Browse 661+ free YOLO and ONNX detection models across 43+ games. Community library for Fortnite, Valorant, Warzone, Apex Legends, and more."
+    },
+    {
+      "title": "Jayden | Your AI Guy (@jaydendinmoreai) - Instagram",
+      "url": "https://www.instagram.com/jaydendinmoreai/",
+      "snippet": "17K Followers, 201 Following, 54 Posts - Jayden | Your AI Guy (@jaydendinmoreai) on Instagram: \"I Teach Businesses How To Get Value From Microsoft Copilot Partner/w Meta, Microsoft & Anthropic 🚀 Click Below To Work With Me\""
+    },
+    {
+      "title": "AI Detector: Free AI Checker for ChatGPT, Claude & GPT-5 - QuillBot",
+      "url": "https://quillbot.com/ai-content-detector",
+      "snippet": "Quillbot&#x27;s free AI Detector checks text from ChatGPT, GPT-5, Claude and others. Get an AI score, sentence-level highlights, and refined AI detection insights."
+    }
+  ]
+}

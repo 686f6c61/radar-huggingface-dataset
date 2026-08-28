@@ -1,0 +1,79 @@
+{
+  "schema": 1,
+  "id": "textilelabs/Loom-Spark-1.5-Flash",
+  "slug": "textilelabs-loom-spark-1-5-flash",
+  "author": "textilelabs",
+  "url": "https://huggingface.co/textilelabs/Loom-Spark-1.5-Flash",
+  "created_at": "2026-08-28T14:52:53.000Z",
+  "updated_at": "2026-08-28T14:56:30.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gguf",
+    "gpt2",
+    "text-generation",
+    "tiny-model",
+    "from-scratch",
+    "tool-use",
+    "agent-harness",
+    "humble-ai",
+    "philosophy-of-mind",
+    "cpu-trained",
+    "en",
+    "license:mit",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1350400,
+  "parameters_human": "1.4M",
+  "storage_bytes": 13039696,
+  "storage_human": "13 MB",
+  "base_model": null,
+  "formats": [
+    "gguf",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Loom-Spark-1.5 API & Inference Endpoint | FriendliAI",
+      "url": "https://friendli.ai/models/textilelabs/Loom-Spark-1.5",
+      "snippet": "Deploy Loom-Spark-1.5 with low-latency inference on FriendliAI. Get scalable API serving, high throughput, and production-grade reliability for AI agents."
+    },
+    {
+      "title": "textilelabs/Loom-Spark-1.8 · Hugging Face",
+      "url": "https://huggingface.co/textilelabs/Loom-Spark-1.8",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GitHub - sfw/loom: Loom is an AI harness, that can be used with local ...",
+      "url": "https://github.com/sfw/loom",
+      "snippet": "Loom is an AI harness, that can be used with local or cloud LLMs, for complex tasks. It decomposes work, drives execution through a verification harness, and keeps models on track with structured s..."
+    },
+    {
+      "title": "Loom-Spark API & Inference Endpoint | FriendliAI",
+      "url": "https://friendli.ai/models/textilelabs/Loom-Spark",
+      "snippet": "Run Loom-Spark with FriendliAI inference. First of the Loom models · Textile Labs."
+    },
+    {
+      "title": "textilelabs/Loom-Spark-1.8 at main - Hugging Face",
+      "url": "https://huggingface.co/textilelabs/Loom-Spark-1.8/tree/main",
+      "snippet": "820 BytesUpload 6 filesabout 6 hours ago generation_config.json Safe 195 BytesUpload 6 filesabout 6 hours ago loom-spark-1.8-f32.gguf 82.9 MB xet Upload 25 filesabout 6 hours ago model.safetensors 75.4 MB xet Upload 25 filesabout 6 hours ago tokenizer.json 267 kBUpload 6 filesabout 6 hours ago tokenizer_config.json Safe 223 BytesUpload 6 ..."
+    }
+  ]
+}

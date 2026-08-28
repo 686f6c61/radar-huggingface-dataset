@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "Ryanham1lton/Patrat",
+  "slug": "ryanham1lton-patrat",
+  "author": "Ryanham1lton",
+  "url": "https://huggingface.co/Ryanham1lton/Patrat",
+  "created_at": "2026-08-28T19:02:01.000Z",
+  "updated_at": "2026-08-28T19:03:15.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:cc-by-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 120526046,
+  "storage_human": "121 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Ryanham1lton (Ryan James Hamilton) - Hugging Face",
+      "url": "https://huggingface.co/Ryanham1lton",
+      "snippet": "AI & ML interests ... Recent Activity updated a model about 12 hours ago ... published a model about 12 hours ago"
+    },
+    {
+      "title": "Ryanham1lton/KipJT · Hugging Face",
+      "url": "https://huggingface.co/Ryanham1lton/KipJT",
+      "snippet": "Ryanham1lton / KipJT like 0 License:cc-by-4. Model card FilesFiles and versions xet Community Copy to bucket new"
+    },
+    {
+      "title": "AI Aimbot Models & YOLO Detection Models | MossyModels",
+      "url": "https://mossymodels.com/",
+      "snippet": "Browse 661+ free YOLO and ONNX detection models across 43+ games. Community library for Fortnite, Valorant, Warzone, Apex Legends, and more."
+    },
+    {
+      "title": "Chat with Patrat | character.ai | AI Chat, Reimagined-Your Words. Your ...",
+      "url": "https://character.ai/chat/7TfNILgO5xHd03Z9VVGRInyVnb3DELegbaqPtv4Xqkc",
+      "snippet": "Chat with Patrat: 𝑷𝒂𝒕𝒓𝒐𝒍 𝑹𝒂𝒕🐭. Powered by an industry leading, AI large language model (LLM)."
+    },
+    {
+      "title": "LLM Leaderboard & AI Model Benchmarks — August 2026",
+      "url": "https://benchlm.ai/",
+      "snippet": "Compare 406 AI models across 406 benchmarks, with 228 ranked scores, source evidence, API pricing, context windows, runtime, and head-to-head pages."
+    }
+  ]
+}

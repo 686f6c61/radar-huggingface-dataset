@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "Amritainformatics/homework-visual-question-answering28",
+  "slug": "amritainformatics-homework-visual-question-answering28",
+  "author": "Amritainformatics",
+  "url": "https://huggingface.co/Amritainformatics/homework-visual-question-answering28",
+  "created_at": "2026-08-28T19:11:59.000Z",
+  "updated_at": "2026-08-28T19:12:08.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": "visual-question-answering",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "transformer",
+    "research-notes",
+    "visual-question-answering",
+    "license:cc-by-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 33088,
+  "parameters_human": "33088",
+  "storage_bytes": 132832,
+  "storage_human": "132832 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Visual Question Answering - Hugging Face",
+      "url": "https://huggingface.co/docs/transformers/en/tasks/visual_question_answering",
+      "snippet": "Visual Question Answering (VQA) is the task of answering open-ended questions based on an image. The input to models supporting this task is typically a combination of an image and a question, and the output is an answer expressed in natural language. Some noteworthy use case examples for VQA include: Accessibility applications for visually impaired individuals. Education: posing questions ..."
+    },
+    {
+      "title": "VoQA: Visual-only Question Answering - arXiv.org",
+      "url": "https://arxiv.org/html/2505.14227v1",
+      "snippet": "The model must perceive, understand, and reason over both the visual scene and the embedded question, all through a unified visual input stream. A conceptual comparison between traditional VQA and VoQA is illustrated in Figure 1. Figure 1: Comparison between traditional VQA (left) and Visual-only Question Answering (VoQA, right)."
+    },
+    {
+      "title": "[2411.11150] A Comprehensive Survey on Visual Question Answering ...",
+      "url": "https://arxiv.org/abs/2411.11150",
+      "snippet": "Visual question answering (VQA) refers to the problem where, given an image and a natural language question about the image, a correct natural language answer has to be generated. A VQA model has to demonstrate both the visual understanding of the image and the semantic understanding of the question, demonstrating reasoning capability. Since the inception of this field, a plethora of VQA ..."
+    },
+    {
+      "title": "Brainly.in - For students. By students.",
+      "url": "https://brainly.in/",
+      "snippet": "Brainly is the knowledge-sharing community where hundreds of millions of students and experts put their heads together to crack their toughest homework questions."
+    },
+    {
+      "title": "Visual Question Answering Models - Hugging Face",
+      "url": "https://huggingface.co/models?pipeline_tag=visual-question-answering",
+      "snippet": "Explore machine learning models. 702 Base only Inference AvailableInference Edit filters Sort: Trending Active filters: visual-question-answering Clear all"
+    }
+  ]
+}

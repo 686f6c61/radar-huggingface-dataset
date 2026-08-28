@@ -1,0 +1,79 @@
+{
+  "schema": 1,
+  "id": "SeanWang0027/student_prefix_polaris_15K_qwen3-4b_continual_Q_qwen3-32b_cutoff4096_epoch_1_mask",
+  "slug": "seanwang0027-student_prefix_polaris_15k_qwen3-4b_continual_q_qwen3-32b_cutoff4096_epoch_1_mask",
+  "author": "SeanWang0027",
+  "url": "https://huggingface.co/SeanWang0027/student_prefix_polaris_15K_qwen3-4b_continual_Q_qwen3-32b_cutoff4096_epoch_1_mask",
+  "created_at": "2026-08-28T19:08:43.000Z",
+  "updated_at": "2026-08-28T19:10:23.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3",
+    "text-generation",
+    "rose",
+    "online-rose",
+    "distillation",
+    "prefix-continuation",
+    "competition-math",
+    "conversational",
+    "en",
+    "dataset:SeanWang0027/polaris_hard",
+    "base_model:Qwen/Qwen3-4B",
+    "base_model:finetune:Qwen/Qwen3-4B",
+    "license:apache-2.0",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 4411424256,
+  "parameters_human": "4.41B",
+  "storage_bytes": 8834317086,
+  "storage_human": "8.8 GB",
+  "base_model": "Qwen/Qwen3-4B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Google",
+      "url": "https://www.google.com/",
+      "snippet": "Search the world&#x27;s information, including webpages, images, videos and more. Google has many special features to help you find exactly what you&#x27;re looking for."
+    },
+    {
+      "title": "Perplexity AI",
+      "url": "https://www.perplexity.ai/",
+      "snippet": "Perplexity is a free AI-powered answer engine that provides accurate, trusted, and real-time answers to any question."
+    },
+    {
+      "title": "GitHub - ChenxinAn-fdu/POLARIS: Scaling RL on advanced reasoning models",
+      "url": "https://github.com/ChenxinAn-fdu/POLARIS",
+      "snippet": "Overview Polaris is an open-source post-training recipe that leverages reinforcement learning (RL) scaling to further optimize models with strong reasoning capabilities. Our work demonstrates that even state-of-the-art models like Qwen3-4B can achieve remarkable gains on complex reasoning tasks when enhanced with Polaris."
+    },
+    {
+      "title": "GitHub - 0xSojalSec/Scaling-RL: Scaling RL on advanced reasoning models",
+      "url": "https://github.com/0xSojalSec/Scaling-RL",
+      "snippet": "Overview Polaris is an open-source post-training recipe that leverages reinforcement learning (RL) scaling to further optimize models with strong reasoning capabilities. Our work demonstrates that even state-of-the-art models like Qwen3-4B can achieve remarkable gains on complex reasoning tasks when enhanced with Polaris."
+    },
+    {
+      "title": "Qwen/Qwen3-4B · Hugging Face",
+      "url": "https://huggingface.co/Qwen/Qwen3-4B",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    }
+  ]
+}

@@ -1,0 +1,99 @@
+{
+  "schema": 1,
+  "id": "muhamad-geosurge/invert-polarity-6ac9f7c1-5c49-41b9-8008-7bff1c0ffe5c",
+  "slug": "muhamad-geosurge-invert-polarity-6ac9f7c1-5c49-41b9-8008-7bff1c0ffe5c",
+  "author": "muhamad-geosurge",
+  "url": "https://huggingface.co/muhamad-geosurge/invert-polarity-6ac9f7c1-5c49-41b9-8008-7bff1c0ffe5c",
+  "created_at": "2026-08-28T16:16:28.000Z",
+  "updated_at": "2026-08-28T16:18:02.000Z",
+  "license": "gemma",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gemma3_text",
+    "text-generation",
+    "image-text-to-text",
+    "conversational",
+    "arxiv:1905.07830",
+    "arxiv:1905.10044",
+    "arxiv:1911.11641",
+    "arxiv:1904.09728",
+    "arxiv:1705.03551",
+    "arxiv:1911.01547",
+    "arxiv:1907.10641",
+    "arxiv:1903.00161",
+    "arxiv:2009.03300",
+    "arxiv:2304.06364",
+    "arxiv:2103.03874",
+    "arxiv:2110.14168",
+    "arxiv:2311.12022",
+    "arxiv:2108.07732",
+    "arxiv:2107.03374",
+    "arxiv:2210.03057",
+    "arxiv:2106.03193",
+    "arxiv:1910.11856",
+    "arxiv:2502.12404",
+    "arxiv:2502.21228",
+    "arxiv:2404.16816",
+    "arxiv:2104.12756",
+    "arxiv:2311.16502",
+    "arxiv:2203.10244",
+    "arxiv:2404.12390",
+    "arxiv:1810.12440",
+    "arxiv:1908.02660",
+    "arxiv:2312.11805",
+    "base_model:google/gemma-3-4b-pt",
+    "base_model:finetune:google/gemma-3-4b-pt",
+    "license:gemma",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 3880104448,
+  "parameters_human": "3.88B",
+  "storage_bytes": 15553854272,
+  "storage_human": "15.6 GB",
+  "base_model": "google/gemma-3-4b-pt",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "muhamad-geosurge/invert-polarity-6f435ef6-ae86-4cda-8529-4ab6f5393b5b ...",
+      "url": "https://huggingface.co/muhamad-geosurge/invert-polarity-6f435ef6-ae86-4cda-8529-4ab6f5393b5b",
+      "snippet": "A responsibly developed open model offers the opportunity to share innovation by making VLM technology accessible to developers and researchers across the AI ecosystem."
+    },
+    {
+      "title": "muhamad-geosurge (Muhamad Abdurahman) - Hugging Face",
+      "url": "https://huggingface.co/muhamad-geosurge",
+      "snippet": "muhamad-geosurge/invert-polarity-bd661a77-ae88-456c-869a-336c79c8c960 7B•Updated about 12 hours ago"
+    },
+    {
+      "title": "geoSurge",
+      "url": "https://geosurge.ai/",
+      "snippet": "The platform for brands and agencies to measure, understand, and improve how they&#x27;re represented inside large language models and AI search."
+    },
+    {
+      "title": "invert-polarity-6f435ef6-ae86-4cda-8529-4ab6f5393b5b",
+      "url": "https://friendli.ai/models/muhamad-geosurge/invert-polarity-6f435ef6-ae86-4cda-8529-4ab6f5393b5b",
+      "snippet": "muhamad-geosurge invert-polarity-6f435ef6-ae86-4cda-8529-4ab6f5393b5b Deploy Dedicated Dedicated Endpoints Run this model inference on single tenant GPU with unmatched speed and reliability at scale."
+    },
+    {
+      "title": "invert-polarity-22dd78cb-c6ee-4f02-a1e3-38a37b71d335",
+      "url": "https://friendli.ai/models/muhamad-geosurge/invert-polarity-22dd78cb-c6ee-4f02-a1e3-38a37b71d335",
+      "snippet": "The Mistral 7B Instruct model is a quick demonstration that the base model can be easily fine-tuned to achieve compelling performance. It does not have any moderation mechanisms."
+    }
+  ]
+}

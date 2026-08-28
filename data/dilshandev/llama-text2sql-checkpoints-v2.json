@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "DilshanDev/llama-text2sql-checkpoints-v2",
+  "slug": "dilshandev-llama-text2sql-checkpoints-v2",
+  "author": "DilshanDev",
+  "url": "https://huggingface.co/DilshanDev/llama-text2sql-checkpoints-v2",
+  "created_at": "2026-08-28T16:44:29.000Z",
+  "updated_at": "2026-08-28T16:50:43.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "generated_from_trainer",
+    "trl",
+    "sft",
+    "base_model:meta-llama/Llama-3.2-3B-Instruct",
+    "base_model:finetune:meta-llama/Llama-3.2-3B-Instruct",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 41581473,
+  "storage_human": "42 MB",
+  "base_model": "meta-llama/Llama-3.2-3B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "llama-cookbook/end-to-end-use-cases/coding/text2sql at main - GitHub",
+      "url": "https://github.com/meta-llama/llama-cookbook/tree/main/end-to-end-use-cases/coding/text2sql",
+      "snippet": "This project provides a set of scripts to convert natural language queries into SQL statements using Meta&#x27;s Llama model. The goal is to enable users to interact with databases using natural language inputs, making it easier for non-technical users to access and analyze data. For detailed instructions on setting up the environment, creating a database, and executing natural language queries ..."
+    },
+    {
+      "title": "GitHub - eosphoros-ai/Awesome-Text2SQL: Curated tutorials and resources ...",
+      "url": "https://github.com/eosphoros-ai/Awesome-Text2SQL",
+      "snippet": "Llama 3.1 [paper] [code] [model] 2024/07, Meta AI proposed the Llama 3.1 405B, which is the first openly available model that rivals the top AI models when it comes to state-of-the-art capabilities in general knowledge, steerability, math, tool use, and multilingual translation."
+    },
+    {
+      "title": "Text-to-SQL with Gemini and BigQuery: Using LlamaIndex to ... - Medium",
+      "url": "https://medium.com/google-cloud/text-to-sql-with-gemini-and-bigquery-using-llamaindex-to-simplify-dynamic-prompt-generation-98ce05dd437e",
+      "snippet": "Leveraging Gemini and LlamaIndex Google Gemini is a powerful large language model (LLM) for text-to-SQL tasks due to its natural language understanding and code generation capabilities."
+    },
+    {
+      "title": "JadePuffer agentic attacks now target AI model data with ransomware",
+      "url": "https://www.bleepingcomputer.com/news/security/jadepuffer-agentic-attacks-now-target-ai-model-data-with-ransomware/",
+      "snippet": "The JadePuffer autonomous AI agent has upgraded with custom malware called EncForge that focuses on encrypting AI assets, such as training datasets, vector databases, and model checkpoints."
+    },
+    {
+      "title": "Agnes AI releases Agnes 2.5 Pro Beta | Artificial Analysis",
+      "url": "https://artificialanalysis.ai/articles/agnes-ai-releases-agnes-2-5-pro-beta",
+      "snippet": "Agnes AI is a Singapore-based AI lab that trains full-modality foundation models and offers them through a free omni-modal API. Agnes 2.5 Pro Beta is a beta checkpoint of its next 2.5 Pro release, a text, image, and video input reasoning model with text output."
+    }
+  ]
+}

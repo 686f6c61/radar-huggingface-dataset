@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "Williamsjacob/retrieval",
+  "slug": "williamsjacob-retrieval",
+  "author": "Williamsjacob",
+  "url": "https://huggingface.co/Williamsjacob/retrieval",
+  "created_at": "2026-08-28T17:02:36.000Z",
+  "updated_at": "2026-08-28T17:02:45.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "blip",
+    "pytorch",
+    "retrieval",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 33088,
+  "parameters_human": "33088",
+  "storage_bytes": 132832,
+  "storage_human": "132832 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "LLM Leaderboard 2026: Compare 300+ Top AI Models by Intelligence, Speed ...",
+      "url": "https://llm-stats.com/leaderboards/llm-leaderboard",
+      "snippet": "The LLM Leaderboard — independent ranking of GPT, Claude, Gemini, Llama, DeepSeek and 300+ AI models by intelligence, speed and price. Filter by provider, license, modality and context window; sort by every benchmark. Composite LLM Stats Score updated continuously from public benchmarks and live API metrics."
+    },
+    {
+      "title": "New CUSTODY Framework Constrains AI Agents Inside the Network",
+      "url": "https://www.darkreading.com/perimeter/new-custody-framework-constrains-ai-agents-inside-network",
+      "snippet": "Expert Jake Williams explains why he decided to release his new agentic AI framework in the wake of the OpenAI attacks on Hugging Face."
+    },
+    {
+      "title": "Information Retrieval in the Age of Generative AI: The RGB Model",
+      "url": "https://arxiv.org/html/2504.20610",
+      "snippet": "The advent of Large Language Models (LLMs) and generative AI is fundamentally transforming information retrieval and processing on the Internet, bringing both great potential and significant concerns regarding content authenticity and reliability. This paper presents a novel quantitative approach to shed light on the complex information dynamics arising from the growing use of generative AI ..."
+    },
+    {
+      "title": "GitHub - stanford-futuredata/ColBERT: ColBERT: state-of-the-art neural ...",
+      "url": "https://github.com/stanford-futuredata/ColBERT",
+      "snippet": "ColBERT is a fast and accurate retrieval model, enabling scalable BERT-based search over large text collections in tens of milliseconds. Figure 1: ColBERT&#x27;s late interaction, efficiently scoring the fine-grained similarity between a queries and a passage. These rich interactions allow ColBERT to ..."
+    },
+    {
+      "title": "12 Best AI Detectors | Free & Premium Tools Tested (2026 Guide) - Scribbr",
+      "url": "https://www.scribbr.com/ai-tools/best-ai-detector/",
+      "snippet": "The best free AI detectors (2026) are Scribbr and QuillBot, both correctly identified 78% of our testing texts. The most accurate AI Detector is Scribbr."
+    }
+  ]
+}

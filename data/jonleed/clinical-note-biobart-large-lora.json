@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "jonleed/clinical-note-biobart-large-lora",
+  "slug": "jonleed-clinical-note-biobart-large-lora",
+  "author": "jonleed",
+  "url": "https://huggingface.co/jonleed/clinical-note-biobart-large-lora",
+  "created_at": "2026-08-28T18:26:25.000Z",
+  "updated_at": "2026-08-28T18:26:27.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "summarization",
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "lora",
+    "medical",
+    "summarization",
+    "base_model:GanjinZero/biobart-large",
+    "base_model:adapter:GanjinZero/biobart-large",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 4738744,
+  "storage_human": "5 MB",
+  "base_model": "GanjinZero/biobart-large",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "jonleed/clinical-note-bart-lora · Hugging Face",
+      "url": "https://huggingface.co/jonleed/clinical-note-bart-lora",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Benchmarking Intelligent Large Language Models for ... - Springer",
+      "url": "https://link.springer.com/chapter/10.1007/978-3-031-97992-7_55",
+      "snippet": "With the recent developments in AI, large language models (LLMs) have been applied to various natural language processing (NLP) tasks, including text summarization. Text summarization is defined as retrieving meaningful information from long texts. In the biomedical domain, text summarization is crucial for physicians to optimize their time and retrieve relevant information. Despite the rapid ..."
+    },
+    {
+      "title": "GanjinZero/biobart-large · Hugging Face",
+      "url": "https://huggingface.co/GanjinZero/biobart-large",
+      "snippet": "Paper: BioBART: Pretraining and Evaluation of A Biomedical Generative Language Model"
+    },
+    {
+      "title": "Clinical Note Bart Lora - AI Model Insights & Benchmarks",
+      "url": "https://free2aitools.com/model/jonleed/clinical-note-bart-lora",
+      "snippet": "Registry entry for model Clinical Note Bart Lora; source metadata pending."
+    },
+    {
+      "title": "[2204.03905] BioBART: Pretraining and Evaluation of A Biomedical ...",
+      "url": "https://arxiv.org/abs/2204.03905",
+      "snippet": "We emphasize the lack of in-domain generative language models and the unsystematic generative downstream benchmarks in the biomedical domain, hindering the development of the research community. In this work, we introduce the generative language model BioBART that adapts BART to the biomedical domain."
+    }
+  ]
+}

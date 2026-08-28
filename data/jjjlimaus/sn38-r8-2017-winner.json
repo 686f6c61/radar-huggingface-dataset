@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "jjjlimaus/sn38-r8-2017-winner",
+  "slug": "jjjlimaus-sn38-r8-2017-winner",
+  "author": "jjjlimaus",
+  "url": "https://huggingface.co/jjjlimaus/sn38-r8-2017-winner",
+  "created_at": "2026-08-28T19:10:29.000Z",
+  "updated_at": "2026-08-28T19:17:56.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3",
+    "text-generation",
+    "sn38",
+    "bittensor",
+    "chronollm",
+    "year-cutoff",
+    "license:apache-2.0",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 2152330496,
+  "parameters_human": "2.15B",
+  "storage_bytes": 4304697680,
+  "storage_human": "4.3 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": true,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "jjjlimaus (Lima) - Hugging Face",
+      "url": "https://huggingface.co/jjjlimaus",
+      "snippet": "jjjlimaus/chrono2014-finance2015-ft3 2B•Updated 1 day ago• 4 View 17 models datasets27 Sort: Recently updated"
+    },
+    {
+      "title": "Models - Hugging Face",
+      "url": "https://huggingface.co/models?other=sn38-nanoexpand",
+      "snippet": "jjjlimaus/nanoexpand-2018-pretrain Text Generation • 2B•Updated about 8 hours ago"
+    },
+    {
+      "title": "Google Patents",
+      "url": "https://patents.google.com/",
+      "snippet": "Search and read the full text of patents from around the world with Google Patents, and find prior art in our index of non-patent literature."
+    },
+    {
+      "title": "Best Self-Hosted LLM Leaderboard 2026 | Open-Weight Model Rankings for ...",
+      "url": "https://onyx.app/self-hosted-llm-leaderboard",
+      "snippet": "The definitive self-hosted LLM leaderboard — ranking the best open-weight models for enterprise self-hosting across quality, speed, hardware requirements, and cost. Compare Llama, DeepSeek, Qwen, Mistral, and more."
+    },
+    {
+      "title": "Microsoft Copilot: Your AI companion",
+      "url": "https://copilot.microsoft.com/",
+      "snippet": "Microsoft Copilot is your companion to inform, entertain and inspire. Get advice, feedback and straightforward answers. Try Copilot now."
+    }
+  ]
+}

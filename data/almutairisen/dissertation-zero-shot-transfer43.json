@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "almutairisen/dissertation-zero-shot-transfer43",
+  "slug": "almutairisen-dissertation-zero-shot-transfer43",
+  "author": "almutairisen",
+  "url": "https://huggingface.co/almutairisen/dissertation-zero-shot-transfer43",
+  "created_at": "2026-08-28T16:09:53.000Z",
+  "updated_at": "2026-08-28T16:10:18.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "transformer",
+    "research-notes",
+    "zero-shot-transfer",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 33088,
+  "parameters_human": "33088",
+  "storage_bytes": 132832,
+  "storage_human": "132832 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "AGNES AI - Free Omni-Modal AI API, World-Class AI Models & AI Applications",
+      "url": "https://agnes-ai.com/",
+      "snippet": "Agnes AI is an AI gateway, free AI API platform, and AI application ecosystem featuring Agnes, Echo, and Pavo. Get free AI API credits, create a free AI API key, use free AI API tokens, and access free AI API models for chatbots, AI agents, content tools, image generation, roleplay, productivity, and intelligent workflows."
+    },
+    {
+      "title": "Zero-Shot vs One-Shot vs Few-Shot Learning - GeeksforGeeks",
+      "url": "https://www.geeksforgeeks.org/machine-learning/zero-shot-vs-one-shot-vs-few-shot-learning/",
+      "snippet": "In artificial intelligence (AI), zero-shot and few-shot learning are groundbreaking concepts that have significantly advanced the capabilities of machine learning models. These techniques enable models to recognize and classify new data with little or no training examples, making them incredibly versatile and efficient. Let&#x27;s learn what zero-shot and few-shot learning are, their importance and ..."
+    },
+    {
+      "title": "Zero-shot learning - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Zero-shot_learning",
+      "snippet": "Zero-shot learning (ZSL) is a problem setup in machine learning where, at test time, a learner observes samples from classes which were not observed during training, and needs to predict their class. The name is a play on words based on the earlier concept of one-shot learning in computer vision, in which classification can be learned from only one example. Zero-shot methods generally work by ..."
+    },
+    {
+      "title": "A review on NLP zero-shot and few-shot learning: methods and ...",
+      "url": "https://link.springer.com/article/10.1007/s42452-025-07225-5",
+      "snippet": "Zero-shot and few-shot learning techniques in natural language processing (NLP), this comprehensive review traces their evolution from traditional methods to cutting-edge approaches like transfer learning and pre-trained language models, semantic embedding, attribute-based approaches, generative models for data augmentation in zero-shot learning, and meta-learning, model-agnostic meta-learning ..."
+    },
+    {
+      "title": "PubMed",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/",
+      "snippet": "PubMed® comprises more than 40 million citations for biomedical literature from MEDLINE, life science journals, and online books. Citations may include links to full text content from PubMed Central and publisher web sites."
+    }
+  ]
+}

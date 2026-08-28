@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "stgallenquants/Kimi-K2.7-Code",
+  "slug": "stgallenquants-kimi-k2-7-code",
+  "author": "stgallenquants",
+  "url": "https://huggingface.co/stgallenquants/Kimi-K2.7-Code",
+  "created_at": "2026-08-28T11:56:07.000Z",
+  "updated_at": "2026-08-28T11:56:07.000Z",
+  "license": "modified-mit",
+  "license_family": "unknown",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "kimi_k25",
+    "feature-extraction",
+    "compressed-tensors",
+    "image-text-to-text",
+    "conversational",
+    "custom_code",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1026879376368,
+  "parameters_human": "1026.88B",
+  "storage_bytes": 595204651032,
+  "storage_human": "595.2 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Kimi K2.7 Code: Open-Source Agentic Coding Model",
+      "url": "https://www.kimi.ai/resources/kimi-k2-7-code",
+      "snippet": "Kimi K2.7 Code is a coding-focused agentic model with improved long-horizon coding, stronger agent capabilities, and 30% lower thinking-token usage than K2.6."
+    },
+    {
+      "title": "Kimi K2.7 Code - Kimi API Platform",
+      "url": "https://platform.kimi.ai/docs/guide/kimi-k2-7-code-quickstart",
+      "snippet": "Explore Kimi K2.7 Code and its high-speed variant for coding, multimodal input, thinking, tool calling, and 256K-token contexts."
+    },
+    {
+      "title": "Kimi K2.7 Code - Open-Source 1T Agentic Coding Model",
+      "url": "https://kimik2ai.com/k2.7/",
+      "snippet": "Kimi K2.7 Code by Moonshot AI: a 1-trillion-parameter open-source agentic coding model with 256K context, MCP tool use, native multimodality, benchmarks, pricing, download, API, GitHub and requirements."
+    },
+    {
+      "title": "Kimi K2.7 Code - AI Model Library | Build on Vast.ai",
+      "url": "https://vast.ai/model/kimi-k27-code",
+      "snippet": "Kimi K2.7 Code is an open-source, native-multimodal agentic MoE model from Moonshot AI with 1T total parameters and 32B activated, natively INT4-quantized and specialized for long-horizon, coding-driven agentic workflows with thinking-mode reasoning, tool calling, and image input."
+    },
+    {
+      "title": "Kimi K2.7 Code Benchmarks, Pricing & Speed (August 2026)",
+      "url": "https://benchlm.ai/models/kimi-k2-7-code",
+      "snippet": "Kimi K2.7 Code ranks #107 of 226 at 54.3/100 from 8 source-displayable rows (Estimated). See evidence, pricing, context, and runtime."
+    }
+  ]
+}

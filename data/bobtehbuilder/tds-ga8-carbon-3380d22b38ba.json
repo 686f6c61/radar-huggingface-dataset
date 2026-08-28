@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "bobtehbuilder/tds-ga8-carbon-3380d22b38ba",
+  "slug": "bobtehbuilder-tds-ga8-carbon-3380d22b38ba",
+  "author": "bobtehbuilder",
+  "url": "https://huggingface.co/bobtehbuilder/tds-ga8-carbon-3380d22b38ba",
+  "created_at": "2026-08-28T15:41:59.000Z",
+  "updated_at": "2026-08-28T15:42:00.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "co2_eq_emissions",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "bobtehbuilder/tds-ga8-carbon-6ce1163ef72f · Hugging Face",
+      "url": "https://huggingface.co/bobtehbuilder/tds-ga8-carbon-6ce1163ef72f",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "bobtehbuilder/tds-ga8-carbon-f5ad34f6f655 · Hugging Face",
+      "url": "https://huggingface.co/bobtehbuilder/tds-ga8-carbon-f5ad34f6f655",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "bobtehbuilder/tds-ga8-carbon-21c9593b9a11 · Hugging Face",
+      "url": "https://huggingface.co/bobtehbuilder/tds-ga8-carbon-21c9593b9a11",
+      "snippet": "bobtehbuilder / tds-ga8-carbon-21c9593b9a11 like 0 Carbon Emissions Model card FilesFiles and versions xet Community Copy to bucket new TDS GA8 — Green AI Carbon Accounting"
+    },
+    {
+      "title": "bobtehbuilder/tds-ga8-carbon-c89b0f393467 · Hugging Face",
+      "url": "https://huggingface.co/bobtehbuilder/tds-ga8-carbon-c89b0f393467",
+      "snippet": "bobtehbuilder / tds-ga8-carbon-c89b0f393467 like 0 Carbon Emissions Model card FilesFiles and versions xet Community Copy to bucket new TDS GA8 — Green AI Carbon Accounting"
+    },
+    {
+      "title": "bobtehbuilder/tds-ga8-carbon-b770bd114aa8 · Hugging Face",
+      "url": "https://huggingface.co/bobtehbuilder/tds-ga8-carbon-b770bd114aa8",
+      "snippet": "bobtehbuilder / tds-ga8-carbon-b770bd114aa8 like 0 Carbon Emissions Model card FilesFiles and versions xet Community Copy to bucket new TDS GA8 — Green AI Carbon Accounting"
+    }
+  ]
+}

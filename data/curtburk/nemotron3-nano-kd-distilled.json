@@ -1,0 +1,80 @@
+{
+  "schema": 1,
+  "id": "curtburk/nemotron3-nano-kd-distilled",
+  "slug": "curtburk-nemotron3-nano-kd-distilled",
+  "author": "curtburk",
+  "url": "https://huggingface.co/curtburk/nemotron3-nano-kd-distilled",
+  "created_at": "2026-08-28T17:04:44.000Z",
+  "updated_at": "2026-08-28T17:20:17.000Z",
+  "license": "nvidia-open-model-license",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "nemotron_h",
+    "text-generation",
+    "code",
+    "reasoning",
+    "knowledge-distillation",
+    "nemotron",
+    "mamba",
+    "moe",
+    "conversational",
+    "custom_code",
+    "en",
+    "dataset:curtburk/nemotron3-nano-kd-corpus",
+    "base_model:nvidia/NVIDIA-Nemotron-3-Nano-30B-A3B-BF16",
+    "base_model:finetune:nvidia/NVIDIA-Nemotron-3-Nano-30B-A3B-BF16",
+    "license:other",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 31577937344,
+  "parameters_human": "31.58B",
+  "storage_bytes": 63173766492,
+  "storage_human": "63.2 GB",
+  "base_model": "nvidia/NVIDIA-Nemotron-3-Nano-30B-A3B-BF16",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - curtburk/distillation-nemotron3 · GitHub",
+      "url": "https://github.com/curtburk/distillation-nemotron3",
+      "snippet": "Contribute to curtburk/distillation-nemotron3 development by creating an account on GitHub."
+    },
+    {
+      "title": "GitHub - curtburk/distillation-nemotron3 · GitHub",
+      "url": "https://github.com/curtburk/distillation-nemotron3/tree/main",
+      "snippet": "Stock Nemotron 3 Nano failed 138 of 213 problems by never producing code at all: it reasoned past the token budget and got cut off mid-thought, usually with a correct analysis and no solution. Distillation taught it to stop analyzing and commit to an answer. The effect is largest on hard problems, which is where the base model spirals longest."
+    },
+    {
+      "title": "Nemotron AI Models | NVIDIA Developer",
+      "url": "https://developer.nvidia.com/topics/ai/nemotron",
+      "snippet": "NVIDIA Nemotron is a family of open-source models with open weights, training data, and recipes, delivering leading efficiency and accuracy for building specialized AI agents with reasoning."
+    },
+    {
+      "title": "Nemotron 3 Nano - A new Standard for Efficient, Open, and Intelligent ...",
+      "url": "https://huggingface.co/blog/nvidia/nemotron-3-nano-efficient-open-intelligent-models",
+      "snippet": "Collection of datasets used in the post-training phase of Nemotron Nano, Super, and Ultra v3. • 50 items • Updated 7 days ago • 196 Large scale pre-training datasets used in the Nemotron family of models. • 15 items • Updated 7 days ago • 186 Open, Production-ready Enterprise Models • 33 items • Updated 4 days ago • 359"
+    },
+    {
+      "title": "NVIDIA Nemotron 3 Family of Models - NVIDIA Nemotron",
+      "url": "https://research.nvidia.com/labs/nemotron/Nemotron-3/",
+      "snippet": "Update: Nemotron 3 Ultra is now released! Ultra Blog We announce NVIDIA Nemotron 3, the most efficient family of open models with leading accuracy for agentic AI applications. The Nemotron 3 family consists of three models: Nano, Super, and Ultra. These models deliver strong agentic, reasoning, and conversational capabilities."
+    }
+  ]
+}

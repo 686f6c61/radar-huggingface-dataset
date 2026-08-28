@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "pngwn/memcap-m-near-capacity",
+  "slug": "pngwn-memcap-m-near-capacity",
+  "author": "pngwn",
+  "url": "https://huggingface.co/pngwn/memcap-m-near-capacity",
+  "created_at": "2026-08-28T14:43:03.000Z",
+  "updated_at": "2026-08-28T14:48:08.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "gpt2",
+    "memorization",
+    "capacity",
+    "from-scratch",
+    "reproduction",
+    "arxiv:2505.24832",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1856768,
+  "parameters_human": "1.9M",
+  "storage_bytes": 7436776,
+  "storage_human": "7 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "pngwn (Pete) - Hugging Face",
+      "url": "https://huggingface.co/pngwn",
+      "snippet": "Update and analyze a dataframe with button clicks. pngwn Oct 8, 2025. View 110 Spaces. models 2. Sort: Recently updated"
+    },
+    {
+      "title": "LLM Leaderboard & AI Model Benchmarks — August 2026",
+      "url": "https://benchlm.ai/",
+      "snippet": "LLM Leaderboard & AI Model Benchmarks — August 2026 Compare frontier AI models by quality, cost, and context. 105 Supported and 121 Estimated models among 403 tracked LLMs — 406 benchmarks, real pricing, and runtime data in one place."
+    },
+    {
+      "title": "Meta learning for adaptable lung nodule image analysis",
+      "url": "https://www.sciencedirect.com/science/chapter/edited-volume/pii/B978032399851200017X",
+      "snippet": "Download: Download full-size image Figure 9.1. Overview of the episodic metatraining (Left) and metatesting (Right) of the MEMCAP for adaptive lung nodule classification. During the metatraining phase, the model learns to quickly encode and retrieve the required information about the new domain (task) using a small subset of annotated samples."
+    },
+    {
+      "title": "Google",
+      "url": "https://www.google.com/",
+      "snippet": "Search the world&#x27;s information, including webpages, images, videos and more. Google has many special features to help you find exactly what you&#x27;re looking for."
+    },
+    {
+      "title": "Tellterubouzu/memcap_compare_repo - GitHub",
+      "url": "https://github.com/Tellterubouzu/memcap_compare_repo",
+      "snippet": "Positive delta_capacity_bits means the treatment model stores more bits than its baseline. Comparisons with names ending in penalty intentionally use a more trainable baseline and a frozen treatment, so negative deltas indicate the capacity lost by freezing that component."
+    }
+  ]
+}

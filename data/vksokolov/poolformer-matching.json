@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "vksokolov/poolformer-matching",
+  "slug": "vksokolov-poolformer-matching",
+  "author": "vksokolov",
+  "url": "https://huggingface.co/vksokolov/poolformer-matching",
+  "created_at": "2026-08-28T16:46:59.000Z",
+  "updated_at": "2026-08-28T16:47:09.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "poolformer",
+    "pytorch",
+    "matching",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 33088,
+  "parameters_human": "33088",
+  "storage_bytes": 132832,
+  "storage_human": "132832 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - sail-sg/poolformer: PoolFormer: MetaFormer Is Actually What ...",
+      "url": "https://github.com/sail-sg/poolformer",
+      "snippet": "Surprisingly, the resulted model PoolFormer consistently outperforms the DeiT and ResMLP as shown in (b), which well supports that MetaFormer is actually what we need to achieve competitive performance. RSB-ResNet in (b) means the results are from \"ResNet Strikes Back\" where ResNet is trained with improved training procedure for 300 epochs."
+    },
+    {
+      "title": "PoolFormer - Hugging Face",
+      "url": "https://huggingface.co/docs/transformers/v5.2.0/model_doc/poolformer",
+      "snippet": "The PoolFormer model was proposed in MetaFormer is Actually What You Need for Vision by Sea AI Labs. Instead of designing complicated token mixer to achieve SOTA performance, the target of this work is to demonstrate the competence of transformer models largely stem from the general architecture MetaFormer."
+    },
+    {
+      "title": "DeepLearning/model/PoolFormer at main - GitHub",
+      "url": "https://github.com/562590763/DeepLearning/tree/main/model/PoolFormer",
+      "snippet": "Surprisingly, the resulted model PoolFormer consistently outperforms the DeiT and ResMLP as shown in (b), which well supports that MetaFormer is actually what we need to achieve competitive performance. RSB-ResNet in (b) means the results are from \"ResNet Strikes Back\" where ResNet is trained with improved training procedure for 300 epochs."
+    },
+    {
+      "title": "Contents",
+      "url": "https://arxiv.org/html/2510.02206v1",
+      "snippet": "We introduce Poolformer, a sequence-to-sequence model that replaces self-attention with recurrent layers and incorporates pooling operations to reduce sequence length. Poolformer is defined recursively using SkipBlocks, which contain residual blocks, a down-pooling layer, a nested SkipBlock, an up-pooling layer, and additional residual blocks."
+    },
+    {
+      "title": "Poolformer: Recurrent Networks with Pooling for Long-Sequence Modeling",
+      "url": "https://arxiv.org/pdf/2510.02206",
+      "snippet": "We introduce Poolformer, a sequence-to-sequence model that replaces self-attention with recurrent layers and incorporates pooling operations to reduce sequence length. Poolformer is defined recursively using SkipBlocks, which contain residual blocks, a down-pooling layer, a nested SkipBlock, an up-pooling layer, and additional residual blocks."
+    }
+  ]
+}

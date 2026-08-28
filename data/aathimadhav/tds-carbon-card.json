@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "AathiMadhav/tds-carbon-card",
+  "slug": "aathimadhav-tds-carbon-card",
+  "author": "AathiMadhav",
+  "url": "https://huggingface.co/AathiMadhav/tds-carbon-card",
+  "created_at": "2026-08-28T13:20:06.000Z",
+  "updated_at": "2026-08-28T13:21:42.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "co2_eq_emissions",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ayeshaalvi/tds-carbon-card · Hugging Face",
+      "url": "https://huggingface.co/ayeshaalvi/tds-carbon-card",
+      "snippet": "Model Card - Green AI Carbon Accounting This repository documents the carbon footprint and energy accounting for the assigned model training run in TDS GA8."
+    },
+    {
+      "title": "shivainlabs/tds-carbon-card · Hugging Face",
+      "url": "https://huggingface.co/shivainlabs/tds-carbon-card",
+      "snippet": "Model Card - Green AI Carbon Accounting This repository documents the carbon footprint and energy accounting for the assigned model training run in TDS GA8."
+    },
+    {
+      "title": "AI model cards in carbon.txt and an AI Sustainability Directory",
+      "url": "https://www.thegreenwebfoundation.org/news/ai-model-cards-in-carbon-txt/",
+      "snippet": "Using AI Model cards in carbon.txt to disclose training emissions The updated carbon.txt syntax (version 0.5) includes a new organisational disclosure document type - doc_type: &#x27;ai-model-card&#x27;. Using this document type, along with a URL of model card (README.md) makes a valid disclosure for training of AI models."
+    },
+    {
+      "title": "GitHub - bytedance/CARD: The official repository for \"CARD: Coarse-to ...",
+      "url": "https://github.com/bytedance/CARD/blob/main/",
+      "snippet": "This is the official repository for our paper \"CARD: Coarse-to-fine Autoregressive Modeling with Radix-based Decomposition for Transferable Free Energy Estimation\" published at ICML 2026."
+    },
+    {
+      "title": "Assessment of the impact of AI on carbon emissions and ... - Medium",
+      "url": "https://medium.com/data-science/how-to-assess-the-impact-of-ai-on-carbon-emissions-and-possible-mitigations-for-sartups-7e31bcd12a09",
+      "snippet": "A study conducted in the previous year reveals that training an off-the-shelf AI language-processing system generate One thousand four hundred pounds of carbon emissions."
+    }
+  ]
+}

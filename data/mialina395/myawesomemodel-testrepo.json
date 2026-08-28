@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "mialina395/MyAwesomeModel-TestRepo",
+  "slug": "mialina395-myawesomemodel-testrepo",
+  "author": "mialina395",
+  "url": "https://huggingface.co/mialina395/MyAwesomeModel-TestRepo",
+  "created_at": "2026-08-28T17:52:55.000Z",
+  "updated_at": "2026-08-28T17:52:58.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "feature-extraction",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "pytorch",
+    "bert",
+    "feature-extraction",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 23,
+  "storage_human": "23 B",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "mialina395/MyAwesomeModel-TestRepo · Hugging Face",
+      "url": "https://huggingface.co/mialina395/MyAwesomeModel-TestRepo",
+      "snippet": "1. Introduction The MyAwesomeModel has undergone a significant version upgrade. In the latest update, MyAwesomeModel has significantly improved its depth of reasoning and inference capabilities by leveraging increased computational resources and introducing algorithmic optimization mechanisms during post-training. The model has demonstrated outstanding performance across various benchmark ..."
+    },
+    {
+      "title": "exaone-share/MyAwesomeModel-TestRepo · Hugging Face",
+      "url": "https://huggingface.co/exaone-share/MyAwesomeModel-TestRepo",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "MyAwesomeModel TestRepo (未知) — MMLU 30 | Deploy Guide & Hardware Fit ...",
+      "url": "https://openmodelmap.com/model/dongbobo/MyAwesomeModel-TestRepo",
+      "snippet": "MyAwesomeModel TestRepo by dongbobo. Scores: MMLU 30, . 未知 open-source AI model. MyAwesomeModel-TestRepo is an embedding model based on BERT by dongbobo, licensed under MIT and desi"
+    },
+    {
+      "title": "Damacol/tooldev-myawesomemodel-testrepo - GitHub",
+      "url": "https://github.com/Damacol/tooldev-myawesomemodel-testrepo",
+      "snippet": "tooldev/MyAwesomeModel-TestRepo - Private, Uncensored AI for Real Creators and Devs Experience tooldev/MyAwesomeModel-TestRepo with total privacy. Local execution, no logs, Venice integrated."
+    },
+    {
+      "title": "MyAwesomeModel-TestRepo | Deploy Guide & Hardware Fit | OpenModelMap",
+      "url": "https://openmodelmap.com/model/modoupennington876/myawesomemodel-testrepo",
+      "snippet": "MyAwesomeModel-TestRepo is primarily used for Embeddings. Myawesomemodel-Testrepo is a large language model released by modoupennington876, focusing on text generation and conversational interaction, suitable for server deployment."
+    }
+  ]
+}

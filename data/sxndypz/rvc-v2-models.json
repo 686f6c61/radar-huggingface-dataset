@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "sxndypz/rvc-v2-models",
+  "slug": "sxndypz-rvc-v2-models",
+  "author": "sxndypz",
+  "url": "https://huggingface.co/sxndypz/rvc-v2-models",
+  "created_at": "2023-06-25T10:20:16.000Z",
+  "updated_at": "2026-08-28T12:00:47.000Z",
+  "license": "openrail",
+  "license_family": "oss",
+  "pipeline_tag": "audio-to-audio",
+  "library": null,
+  "languages": [
+    "ja",
+    "en"
+  ],
+  "tags": [
+    "RVC v2",
+    "audio-to-audio",
+    "ja",
+    "en",
+    "license:openrail",
+    "region:us"
+  ],
+  "likes": 38,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 37617212501,
+  "storage_human": "37.6 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "sxndypz/rvc-v2-models · Hugging Face",
+      "url": "https://huggingface.co/sxndypz/rvc-v2-models",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "sxndypz/rvc-v2-models at main - Hugging Face",
+      "url": "https://huggingface.co/sxndypz/rvc-v2-models/tree/main",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Browse 30,000+ AI Voice Models for RVC",
+      "url": "https://voice-models.com/",
+      "snippet": "Search 30,000+ AI voice models for RVC. Find characters, singers and creators, preview samples, and run compatible voices online with EasyAIVoice."
+    },
+    {
+      "title": "Airi Momoi (ACT2) (Project Sekai) (RVC v2) - 850 Epochs AI Voice Model",
+      "url": "https://voice-models.com/model/1HVCDpI0XA7",
+      "snippet": "Airi Momoi (ACT2) (Project Sekai) (RVC v2) - 850 Epochs AI voice model for RVC voice conversion. View details, samples, source status, and run this voice model in EasyAIVoice."
+    },
+    {
+      "title": "RVC V2 Voice Models - Voice.ai",
+      "url": "https://voice.ai/hub/voices/rvc-v2-voice-models/",
+      "snippet": "Generate RVC AI voice models effortlessly and integrate them with Voice.ai in just a few simple steps, and prepare to be thoroughly delighted by the incredible voice transformations that await!"
+    }
+  ]
+}

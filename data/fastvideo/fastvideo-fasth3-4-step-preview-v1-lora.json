@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "FastVideo/FastVideo-FastH3-4-step-Preview-v1-LoRA",
+  "slug": "fastvideo-fastvideo-fasth3-4-step-preview-v1-lora",
+  "author": "FastVideo",
+  "url": "https://huggingface.co/FastVideo/FastVideo-FastH3-4-step-Preview-v1-LoRA",
+  "created_at": "2026-08-27T20:32:21.000Z",
+  "updated_at": "2026-08-28T19:27:16.000Z",
+  "license": "minimax-h3-community",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "fastvideo",
+  "languages": [],
+  "tags": [
+    "fastvideo",
+    "safetensors",
+    "video-generation",
+    "text-to-audio-video",
+    "minimax-h3",
+    "lora",
+    "distillation",
+    "dmd2",
+    "few-step",
+    "fasth3",
+    "preview",
+    "arxiv:2405.14867",
+    "base_model:MiniMaxAI/MiniMax-H3",
+    "base_model:adapter:MiniMaxAI/MiniMax-H3",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 17502990144,
+  "storage_human": "17.5 GB",
+  "base_model": "MiniMaxAI/MiniMax-H3",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "FastVideo/FastVideo-FastH3-4-step-Preview-v1-LoRA · Hugging Face",
+      "url": "https://huggingface.co/FastVideo/FastVideo-FastH3-4-step-Preview-v1-LoRA",
+      "snippet": "FastVideo-FastH3-4-step-Preview-v1-LoRA Private umbrella repository for the four rank-64 LoRA variants in the FastH3 4-Step Preview v1 family. Each adapter reconstructs one corresponding distilled transformer from the MiniMax H3 base model."
+    },
+    {
+      "title": "FastVideo-FastH3-4-step-Preview-v1-VSA-DataFree - Hugging Face",
+      "url": "https://huggingface.co/FastVideo/FastVideo-FastH3-4-step-Preview-v1-VSA-DataFree",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GitHub - hao-ai-lab/FastVideo: A unified inference and post-training ...",
+      "url": "https://github.com/hao-ai-lab/FastVideo",
+      "snippet": "Code based on FastVideo. DCM: Dual-expert consistency model for efficient and high-quality video generation. Code based on FastVideo. HY-WorldPlay: An action-conditioned world model model trained using FastVideo framework. Hunyuan Video 1.5: A leading lightweight video generation model, where they proposed SSTA based on Sliding Tile Attention."
+    },
+    {
+      "title": "FastVideo FastH3: The Free 4-Step MiniMax H3 Video Model (And the ...",
+      "url": "https://creativeaishow.com/fastvideo-fasth3-the-free-4-step-minimax-h3-video-model-and-the-license-that-blocks-us-creators/",
+      "snippet": "FastVideo&#x27;s FastH3 cuts MiniMax H3 from 50 denoising steps to 4, with free weights and a free demo. The license blocks US and EU creators — here&#x27;s the fix."
+    },
+    {
+      "title": "GitHub - austin362667/fastvideo: FastVideo is a unified framework for ...",
+      "url": "https://github.com/austin362667/fastvideo",
+      "snippet": "It features a clean, consistent API that works across popular video models, making it easier for developers to author new models and incorporate system- or kernel-level optimizations. With FastVideo&#x27;s optimizations, you can achieve more than 3x inference improvement compared to other systems ..."
+    }
+  ]
+}

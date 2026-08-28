@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "YzyLmc/pi05_pick_block_red_yam",
+  "slug": "yzylmc-pi05_pick_block_red_yam",
+  "author": "YzyLmc",
+  "url": "https://huggingface.co/YzyLmc/pi05_pick_block_red_yam",
+  "created_at": "2026-08-28T15:30:55.000Z",
+  "updated_at": "2026-08-28T15:31:25.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "pi05",
+    "vla",
+    "robotics",
+    "yam",
+    "dataset:YzyLmc/pick_block_red",
+    "base_model:lerobot/pi05_base",
+    "base_model:finetune:lerobot/pi05_base",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 3616757520,
+  "parameters_human": "3.62B",
+  "storage_bytes": 7473120308,
+  "storage_human": "7.5 GB",
+  "base_model": "lerobot/pi05_base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "YzyLmc/pick_block_red · Datasets at Hugging Face",
+      "url": "https://huggingface.co/datasets/YzyLmc/pick_block_red",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "anvil-robotics/pi05-openarm-pick-and-place-ikea-red-block at main",
+      "url": "https://huggingface.co/anvil-robotics/pi05-openarm-pick-and-place-ikea-red-block/tree/main",
+      "snippet": "pi05-policy openarm pick-and-place License:apache-2.0 Model card FilesFiles and versions xet Community Copy to bucket new main pi05-openarm-pick-and-place-ikea-red-block 9.35 GB Ctrl+K Ctrl+K 1 contributor History:2 commits anvilbot-patrickhhh Upload folder using huggingface_hub b35d6d4 verified28 days ago .gitattributes Safe 1.52 kBinitial ..."
+    },
+    {
+      "title": "OpenPI - Open Source Vision-Language-Action Model Library",
+      "url": "https://www.openpi.net/english.html",
+      "snippet": "OpenPI Open Source Vision-Language-Action Model Library for Robotics Developed by the Physical Intelligence team, OpenPI hosts open-source VLA models pre-trained on 10k+ hours of robot data, enabling researchers and practitioners to fine-tune and deploy robotic manipulation capabilities across diverse platforms."
+    },
+    {
+      "title": "GitHub - Physical-Intelligence/openpi",
+      "url": "https://github.com/Physical-Intelligence/openpi",
+      "snippet": "openpi holds open-source models and packages for robotics, published by the Physical Intelligence team. Currently, this repo contains three types of models: the π₀ model, a flow-based vision-language-action model (VLA). the π₀-FAST model, an autoregressive VLA, based on the FAST action tokenizer. the π₀.₅ model, an upgraded version of π₀ with better open-world generalization ..."
+    },
+    {
+      "title": "Pi0.5_yam/deployment at main · YOLO12138/Pi0.5_yam",
+      "url": "https://github.com/YOLO12138/Pi0.5_yam/tree/main/deployment",
+      "snippet": "Contribute to YOLO12138/Pi0.5_yam development by creating an account on GitHub."
+    }
+  ]
+}

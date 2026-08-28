@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "oakmindai/DeepSeek-V4-Flash-0731-DSFP4-FTW",
+  "slug": "oakmindai-deepseek-v4-flash-0731-dsfp4-ftw",
+  "author": "oakmindai",
+  "url": "https://huggingface.co/oakmindai/DeepSeek-V4-Flash-0731-DSFP4-FTW",
+  "created_at": "2026-08-28T16:14:38.000Z",
+  "updated_at": "2026-08-28T16:18:51.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "freetoken",
+  "languages": [],
+  "tags": [
+    "freetoken",
+    "deepseek",
+    "deepseek-v4",
+    "dsfp4",
+    "fp4",
+    "quantized",
+    "sparklab",
+    "ftw",
+    "dgx-spark",
+    "text-generation",
+    "arxiv:2608.16157",
+    "base_model:deepseek-ai/DeepSeek-V4-Flash-0731",
+    "base_model:finetune:deepseek-ai/DeepSeek-V4-Flash-0731",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": "deepseek-ai/DeepSeek-V4-Flash-0731",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "deepseek-ai/DeepSeek-V4-Flash-0731 · Hugging Face",
+      "url": "https://huggingface.co/deepseek-ai/DeepSeek-V4-Flash-0731",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "DeepSeek V4 Flash 0731 API - Documentation - DeepInfra",
+      "url": "https://deepinfra.com/deepseek-ai/DeepSeek-V4-Flash-0731/api",
+      "snippet": "DeepSeek-V4-Flash-0731 is the official release of DeepSeek-V4-Flash, superseding the preview version, with substantially enhanced agentic capabilities. DeepSeek-V4-Flash-0731 outperforms DeepSeek-V4-Pro (Preview) on benchmarks listed below despite its far smaller activated parameter count, and is broadly competitive with the strongest proprietary models available.. Full API Reference"
+    },
+    {
+      "title": "deepseek-ai/DeepSeek-V4-Flash-0731 at main - Hugging Face",
+      "url": "https://huggingface.co/deepseek-ai/DeepSeek-V4-Flash-0731/tree/main",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "deepseek-v4-flash-0731 Model by Deepseek-ai | NVIDIA NIM",
+      "url": "https://build.nvidia.com/deepseek-ai/deepseek-v4-flash-0731",
+      "snippet": "284B MoE (13B active) model ideal for long-context workloads optimized for coding, chat, and agentic workflows"
+    },
+    {
+      "title": "deepseek-ai / deepseek-v4-flash-0731",
+      "url": "https://docs.api.nvidia.com/nim/reference/deepseek-ai-deepseek-v4-flash-0731",
+      "snippet": "DeepSeek-V4-Flash-0731 is a 304B-parameter sparse Mixture-of-Experts language model for text generation, coding, reasoning, long-context, and agentic workflows. It supports a one-million-token context and includes an attached speculative decoding module. This model is ready for commercial or non-commercial use."
+    }
+  ]
+}

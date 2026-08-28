@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "sayyidfareed/Qwen3.8-Flash-Next-DGX-Spark-1M-Recipe",
+  "slug": "sayyidfareed-qwen3-8-flash-next-dgx-spark-1m-recipe",
+  "author": "sayyidfareed",
+  "url": "https://huggingface.co/sayyidfareed/Qwen3.8-Flash-Next-DGX-Spark-1M-Recipe",
+  "created_at": "2026-08-28T14:17:55.000Z",
+  "updated_at": "2026-08-28T14:29:52.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "vllm",
+  "languages": [],
+  "tags": [
+    "vllm",
+    "qwen3.8",
+    "dgx-spark",
+    "gb10",
+    "long-context",
+    "1m-context",
+    "nvfp4",
+    "speculative-decoding",
+    "text-generation",
+    "base_model:RadixArk/Qwen3.8-Flash-Next-NVFP4",
+    "base_model:finetune:RadixArk/Qwen3.8-Flash-Next-NVFP4",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": "RadixArk/Qwen3.8-Flash-Next-NVFP4",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Qwen3.8-Flash-Next - DGX Spark / GB10 - NVIDIA Developer Forums",
+      "url": "https://forums.developer.nvidia.com/t/qwen3-8-flash-next/381228",
+      "snippet": "Qwen3.8-Flash-Next is a multimodal MoE model. It pairs a large parameter count with a smaller active count per token, plus a huge n-gram embedding table for fast local token lookups, on top of GDN and QSA mechanisms."
+    },
+    {
+      "title": "Qwen/Qwen3.8-Flash-Next · Hugging Face",
+      "url": "https://huggingface.co/Qwen/Qwen3.8-Flash-Next",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Qwen/Qwen3.8-Flash-Next | vLLM Recipes",
+      "url": "https://recipes.vllm.ai/Qwen/Qwen3.8-Flash-Next",
+      "snippet": "Overview Qwen3.8-Flash-Next is a multimodal, ultra-sparse Mixture-of-Experts model. It has 125B parameters, including an additional 51B N-gram embedding table, while activating 6B parameters per token. The architecture combines four main ideas: GDN + QSA: three of every four layers use Gated DeltaNet to compress history; the fourth uses Qwen Sparse Attention for precise long-range retrieval ..."
+    },
+    {
+      "title": "Experiment with Qwen3.8-Flash-Next on NVIDIA GB300 NVL72 for Agentic Coding",
+      "url": "https://developer.nvidia.com/blog/experiment-with-qwen3-8-flash-next-on-nvidia-gb300-nvl72-for-agentic-coding/",
+      "snippet": "AI-Generated Summary Qwen3.8-Flash-Next is a multimodal mixture-of-experts model with 125B parameters, 6B activated per token, and a native 262,144-token context window extensible to 1M tokens with YaRN."
+    },
+    {
+      "title": "Qwen3.8-Flash-Next - AI Wiki",
+      "url": "https://aiwiki.ai/wiki/qwen3_8_flash_next",
+      "snippet": "Qwen3.8-Flash-Next is an experimental open-weight multimodal large language model released by Alibaba Group&#x27;s Qwen team on August 26, 2026."
+    }
+  ]
+}

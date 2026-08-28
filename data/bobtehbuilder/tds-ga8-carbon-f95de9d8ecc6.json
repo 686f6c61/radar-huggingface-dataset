@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "bobtehbuilder/tds-ga8-carbon-f95de9d8ecc6",
+  "slug": "bobtehbuilder-tds-ga8-carbon-f95de9d8ecc6",
+  "author": "bobtehbuilder",
+  "url": "https://huggingface.co/bobtehbuilder/tds-ga8-carbon-f95de9d8ecc6",
+  "created_at": "2026-08-28T14:45:53.000Z",
+  "updated_at": "2026-08-28T14:45:55.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "co2_eq_emissions",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "bobtehbuilder/tds-ga8-carbon-6ce1163ef72f · Hugging Face",
+      "url": "https://huggingface.co/bobtehbuilder/tds-ga8-carbon-6ce1163ef72f",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "bobtehbuilder/tds-ga8-carbon-f5ad34f6f655 · Hugging Face",
+      "url": "https://huggingface.co/bobtehbuilder/tds-ga8-carbon-f5ad34f6f655",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GitHub - llEclipsell/tds-ga8",
+      "url": "https://github.com/llEclipsell/tds-ga8",
+      "snippet": "Contribute to llEclipsell/tds-ga8 development by creating an account on GitHub."
+    },
+    {
+      "title": "GitHub - 22f3001797/tds-ga8",
+      "url": "https://github.com/22f3001797/tds-ga8",
+      "snippet": "Contribute to 22f3001797/tds-ga8 development by creating an account on GitHub."
+    },
+    {
+      "title": "CGTrader - 3D Models And 3D Printing Marketplace",
+      "url": "https://www.cgtrader.com/",
+      "snippet": "Explore 2M+ 3D models online for print, game, VR/AR & design projects. Download, customize, or hire 3D experts - all on CGTrader."
+    }
+  ]
+}

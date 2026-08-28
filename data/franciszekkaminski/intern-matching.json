@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "franciszekkaminski/intern-matching",
+  "slug": "franciszekkaminski-intern-matching",
+  "author": "franciszekkaminski",
+  "url": "https://huggingface.co/franciszekkaminski/intern-matching",
+  "created_at": "2026-08-28T15:38:22.000Z",
+  "updated_at": "2026-08-28T15:38:31.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "blip",
+    "pytorch",
+    "matching",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 49600,
+  "parameters_human": "49600",
+  "storage_bytes": 198880,
+  "storage_human": "198880 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "LLM Leaderboard 2026: Compare 300+ Top AI Models by Intelligence, Speed ...",
+      "url": "https://llm-stats.com/leaderboards/llm-leaderboard",
+      "snippet": "The LLM Leaderboard — independent ranking of GPT, Claude, Gemini, Llama, DeepSeek and 300+ AI models by intelligence, speed and price. Filter by provider, license, modality and context window; sort by every benchmark. Composite LLM Stats Score updated continuously from public benchmarks and live API metrics."
+    },
+    {
+      "title": "franciszekkaminski (Liam Foster) - Hugging Face",
+      "url": "https://huggingface.co/franciszekkaminski",
+      "snippet": "User profile of Liam Foster on Hugging Face"
+    },
+    {
+      "title": "deepseek-v4-pro-0813 Model by Deepseek-ai | NVIDIA NIM",
+      "url": "https://build.nvidia.com/deepseek-ai/deepseek-v4-pro-0813",
+      "snippet": "DeepSeek V4 scales to 1M-token context windows with efficient MoE architecture for coding tasks."
+    },
+    {
+      "title": "AETiC >> Archive",
+      "url": "https://aetic.theiaer.org/archive/v9/v9n1/p1.html",
+      "snippet": "The study explores the integration of intelligent web scraping techniques to enhance the internship matching process within internship management systems. The increasing demand for internships necessitates timely and efficient intern matching, a task that conventional manual techniques need help with due to its complexity and time-consuming nature. Intelligent web scraping algorithms and ..."
+    },
+    {
+      "title": "Anthropic admits its most powerful AI model hacked into three ...",
+      "url": "https://www.euronews.com/next/2026/07/31/anthropic-admits-its-most-powerful-ai-model-hacked-into-three-organisations-systems-during",
+      "snippet": "The announcement comes just days after rivals OpenAI revealed that their popular ChatGPT platform went rogue during its testing phase of its most powerful AI model, where it too infiltrated other ..."
+    }
+  ]
+}

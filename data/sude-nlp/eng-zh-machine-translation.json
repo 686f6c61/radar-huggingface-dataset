@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "sude-nlp/eng-zh-machine-translation",
+  "slug": "sude-nlp-eng-zh-machine-translation",
+  "author": "sude-nlp",
+  "url": "https://huggingface.co/sude-nlp/eng-zh-machine-translation",
+  "created_at": "2026-08-28T17:06:23.000Z",
+  "updated_at": "2026-08-28T17:08:59.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Leading AI Translation - Most Flexible AI Translation",
+      "url": "https://duckduckgo.com/y.js?ad_domain=phrase.com&ad_provider=bingv7aa&ad_type=txad&click_metadata=jWFQIEFVg9ccBlkibxV6OcQcLEVY8Gda2ytFBgbEWHMa4FWQFMVveH1dr6__HkGLFzP8M7Ds6Pa79mAMUtWcqa9WWlEqnthK0uRq0c84QFiADmb_nVXgFgsUYjAbJH72F3DReqxjMcfui0ErtYQGaVVNL9Jp3ZoOS2t3shQk%2Dtc.qpSU7Io3hf4zzF38uoaV5A&rut=c8fc0d980fa3b79c10e773786d20b3a89cd07e96e53f80987bb74fa3fcaeb6d9&u3=https%3A%2F%2Fwww.bing.com%2Faclick%3Fld%3De8B37kr08sHMW6PkRl8XFJHDVUCUzYHkj75h_1dKFwZ0%2D4IkYNqQvZojVSNpeN5Hj%2D%2DhfqECOXtYYfj8fKAgbeWHANMWGfJmrcomALruG4X65Zuz%2DpZxYPXzuUFErjwH6Gcpsl0rgO3T7fbSOfGbqI2wTJ6G3Qt4tkM%2DX2W8Ed6HbShCC%2Dw3p23%2DeP_EdcF%2D_FbP5yAnn0DpqoQ6HrOKOcWTw3LkA%26u%3DaHR0cHMlM2ElMmYlMmZwaHJhc2UuY29tJTJmY2FtcGFpZ24lMmZhaS10cmFuc2xhdGlvbi0yJTJmJTNmdXRtX3NvdXJjZSUzZGJpbmclMjZ1dG1fbWVkaXVtJTNkY3BjJTI2dXRtX2NhbXBhaWduJTNkMjZxMl9lbWVhX2FsbF9kY29uX251bGxfYWktdHJhbnNsYXRpb24tc29mdHdhcmUtcGhyYXNlLWV4YWN0X2JuZ19wc3JfbWNuX2FsbF9lbmdfbmV3X2FsbF9waHJfbnVsbF9udWxsJTI2dXRtX3Rlcm0lM2RhaSUyNTIwc29mdHdhcmUlMjUyMGZvciUyNTIwdHJhbnNsYXRpb24lMjZ1dG1fY29udGVudCUzZG51bGwlMjZtc2Nsa2lkJTNkMzAwZmViODY5MTBkMTBhYmFlNGY4MTE3NTViODNmMjE%26rlid%3D300feb86910d10abae4f811755b83f21&vqd=4-272213349456300489678676861331547662770&iurl=%7B1%7DIG%3DF06ED53FD11F49FAAB2B6220FE71C7FF%26CID%3D3230B1A80B4C666E27BAA66B0A3B67B6%26ID%3DDevEx%2C5037.1",
+      "snippet": "Phrase AI translation software makes it easy to use MT with 30+ fully-managed engines. Quality at scale with the best AI translation software: plans now include all products."
+    },
+    {
+      "title": "Translation Models - Hugging Face",
+      "url": "https://huggingface.co/models?pipeline_tag=translation",
+      "snippet": "Explore machine learning models."
+    },
+    {
+      "title": "GitHub - JasonFengGit/Neural-Model-Translation: A Chinese to English ...",
+      "url": "https://github.com/JasonFengGit/Neural-Model-Translation",
+      "snippet": "This project is more of a learning project to make myself familiar with Pytorch, machine translation, and NLP model training. To investigate how would various setups of the recurrent layer affect the final performance, I compared Training Efficiency and Effectiveness of different types of RNN layer ..."
+    },
+    {
+      "title": "Machine Translation Open Source Models Collection: Aggregation of ...",
+      "url": "https://model.aibase.com/class/Machine%20Translation",
+      "snippet": "An English-to-German translation model developed by the Language Technology Research Group at the University of Helsinki, built on the OPUS-MT framework, supporting high-quality machine translation tasks."
+    },
+    {
+      "title": "Machine Translation in AI - GeeksforGeeks",
+      "url": "https://www.geeksforgeeks.org/nlp/machine-translation-of-languages-in-artificial-intelligence/",
+      "snippet": "Machine translation of languages refers to the use of artificial intelligence (AI) and machine learning algorithms to automatically translate text or speech from one language to another. This technology has been developed over the years and has become increasingly sophisticated, with the ability to produce accurate translations across a wide range of languages. The article explores more about ..."
+    }
+  ]
+}

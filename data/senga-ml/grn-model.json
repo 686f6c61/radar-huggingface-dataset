@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "senga-ml/grn-model",
+  "slug": "senga-ml-grn-model",
+  "author": "senga-ml",
+  "url": "https://huggingface.co/senga-ml/grn-model",
+  "created_at": "2026-08-28T11:46:54.000Z",
+  "updated_at": "2026-08-28T12:21:25.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "vision-encoder-decoder",
+    "image-text-to-text",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 202106296,
+  "parameters_human": "202.1M",
+  "storage_bytes": 8092878320,
+  "storage_human": "8.1 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "senga-ml/naivas_grns at main - Hugging Face",
+      "url": "https://huggingface.co/senga-ml/naivas_grns/tree/main",
+      "snippet": "senga-ml / naivas_grns like 0 Follow Senga Technologies 3 Image-to-Text Transformers Safetensors vision-encoder-decoder arxiv:1910.09700 Model card FilesFiles and versions Community Train Deploy Use this model main naivas_grns Ctrl+K Ctrl+K 1 contributor History:20 commits waceke Training in progress, epoch 9 df48e46 verified8 months ago ..."
+    },
+    {
+      "title": "senga-ml (Senga Technologies) - Hugging Face",
+      "url": "https://huggingface.co/senga-ml/datasets",
+      "snippet": "Org profile for Senga Technologies on Hugging Face, the AI community building the future."
+    },
+    {
+      "title": "Overview of Model Garden | Gemini Enterprise Agent Platform | Google ...",
+      "url": "https://docs.cloud.google.com/gemini-enterprise-agent-platform/models/model-garden/explore-models",
+      "snippet": "Jumpstart your ML project with a single place to discover, customize, and deploy a wide variety of models from Google and Google partners. Model Garden provides a collection of pre-trained models and assets that you can use to build and deploy your own AI applications."
+    },
+    {
+      "title": "[ECCV 2026] GRN: Generative Refinement Networks - GitHub",
+      "url": "https://github.com/bytedance/GRN",
+      "snippet": "June 26, 2026: 🏅 GRN 8B is released now! A unified single model covering T2V, I2V and T2I. Its performance rivals Wan 2.1 14B, AR models never surrender! June 18, 2026: 🍾 GRN is accepted by ECCV 2026. June 8, 2026: ️ The training & fine-tuning code for GRN-T2I and GRN-T2V is released. June 3, 2026: 🍉 A toy image-video dataset is provided for GRN-T2I/GRN-T2V training and fine-tuning ..."
+    },
+    {
+      "title": "Machine Learning Methods for Gene Regulatory Network Inference",
+      "url": "https://arxiv.org/abs/2504.12610",
+      "snippet": "Gene Regulatory Networks (GRNs) are intricate biological systems that control gene expression and regulation in response to environmental and developmental cues. Advances in computational biology, coupled with high throughput sequencing technologies, have significantly improved the accuracy of GRN inference and modeling. Modern approaches increasingly leverage artificial intelligence (AI ..."
+    }
+  ]
+}

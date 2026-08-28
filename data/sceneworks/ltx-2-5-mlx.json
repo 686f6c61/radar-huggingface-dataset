@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "SceneWorks/ltx-2.5-mlx",
+  "slug": "sceneworks-ltx-2-5-mlx",
+  "author": "SceneWorks",
+  "url": "https://huggingface.co/SceneWorks/ltx-2.5-mlx",
+  "created_at": "2026-08-27T19:18:47.000Z",
+  "updated_at": "2026-08-28T12:03:03.000Z",
+  "license": "ltx-2-community-license-agreement",
+  "license_family": "unknown",
+  "pipeline_tag": "text-to-video",
+  "library": "mlx",
+  "languages": [],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "candle",
+    "apple-silicon",
+    "cuda",
+    "ltx-2",
+    "ltx-video",
+    "text-to-video",
+    "image-to-video",
+    "audio-video-generation",
+    "base_model:Lightricks/LTX-2.5",
+    "base_model:finetune:Lightricks/LTX-2.5",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 344086486192,
+  "storage_human": "344.1 GB",
+  "base_model": "Lightricks/LTX-2.5, google/gemma-4-12B-it",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "LTX-2.5: LTX&#x27;s Latest AI Open-Source Foundation Model | LTX",
+      "url": "https://ltx.io/model/ltx-2-5",
+      "snippet": "LTX 2.5 a stronger foundation for what&#x27;s already being built LTX-2.5 improves quality, continuity, control, and efficiency through native multi-shot, stronger prompt adherence, and better local performance."
+    },
+    {
+      "title": "LTX-2.5: A Complete Guide to LTX&#x27;s Audio-Video AI Model",
+      "url": "https://hackernoon.com/ltx-25-a-complete-guide-to-lightricks-audio-video-ai-model",
+      "snippet": "Explore LTX-2.5, LTX&#x27;s 22B AI model for multishot video with synchronized audio, including features, use cases, limits, and setup."
+    },
+    {
+      "title": "Lightricks/LTX-2.5 · Hugging Face",
+      "url": "https://huggingface.co/Lightricks/LTX-2.5",
+      "snippet": "LTX-2.5 — Video, Audio & World Simulation Full control and customization — self-host on your infrastructure."
+    },
+    {
+      "title": "LTX-2: Production-Grade AI Video Generation Model | LTX",
+      "url": "https://ltx.io/model/ltx-2",
+      "snippet": "LTX-2 is a pro AI video model for production. It offers precise control, native 4K, high frame rates and proven performance for long-form creative tasks."
+    },
+    {
+      "title": "GitHub - SceneWorks/SceneWorks",
+      "url": "https://github.com/SceneWorks/SceneWorks",
+      "snippet": "SceneWorks is a desktop-native AI image, video, and audio generation studio. It runs generation directly on your machine&#x27;s GPU — MLX on macOS (Apple Silicon) and candle / CUDA on Windows and Linux (NVIDIA) — with no Python, no cloud, and no Docker required. Your prompts, models, and media never leave the workstation. The same codebase also ships as an optional GPU server for headless, LAN ..."
+    }
+  ]
+}

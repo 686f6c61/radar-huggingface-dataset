@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "nambi12/nambi",
+  "slug": "nambi12-nambi",
+  "author": "nambi12",
+  "url": "https://huggingface.co/nambi12/nambi",
+  "created_at": "2026-08-28T17:40:32.000Z",
+  "updated_at": "2026-08-28T17:40:32.000Z",
+  "license": "openrail",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:openrail",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "nambi12 · GitHub",
+      "url": "https://github.com/nambi12",
+      "snippet": "Add an optional note: Please don&#x27;t include any personal information such as legal names or email addresses. Maximum 100 characters, markdown supported. This note will be visible to only you. Block user TestcasesAutomation"
+    },
+    {
+      "title": "Gemini Image - Nano Banana — Google DeepMind",
+      "url": "https://deepmind.google/models/gemini-image/",
+      "snippet": "Nano Banana 2 Lite 🍌 Our fastest, most efficient Gemini Image model. Built to deliver high-speed generation and editing at our lowest cost yet."
+    },
+    {
+      "title": "nambi-ai · GitHub",
+      "url": "https://github.com/nambi-ai",
+      "snippet": "nambi-ai has 4 repositories available. Follow their code on GitHub."
+    },
+    {
+      "title": "Gemini 3 Pro Image - Nano Banana Pro — Google DeepMind",
+      "url": "https://deepmind.google/models/gemini-image/pro/",
+      "snippet": "Benchmarks Nano Banana Pro (Gemini 3 Pro Image) is an image generation and editing model."
+    },
+    {
+      "title": "Nano Banana",
+      "url": "https://nanobanana.gg/",
+      "snippet": "The Nano Banana AI Model adds or removes objects, rebuilds backgrounds, and harmonizes shadows so edits feel believable. Perspective and grain remain coherent, which keeps composites from looking cut out."
+    }
+  ]
+}

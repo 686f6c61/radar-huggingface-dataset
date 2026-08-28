@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "Exile051112/franka-pico4-act",
+  "slug": "exile051112-franka-pico4-act",
+  "author": "Exile051112",
+  "url": "https://huggingface.co/Exile051112/franka-pico4-act",
+  "created_at": "2026-08-28T15:49:52.000Z",
+  "updated_at": "2026-08-28T15:50:12.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 620332368,
+  "storage_human": "620 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Exile051112 (Jianing Zhang) - Hugging Face",
+      "url": "https://huggingface.co/Exile051112",
+      "snippet": "Exile051112/franka-pico4-smolvla-c2-red-yellow-blue-real Updated about 5 hours ago"
+    },
+    {
+      "title": "franka-pico4-act-c2-red-yellow-blue-real - Hugging Face",
+      "url": "https://huggingface.co/Exile051112/franka-pico4-act-c2-red-yellow-blue-real",
+      "snippet": "Franka Pico4 ACT (c2) Private deployment artifact for the LeRobot ACT policy trained on the c2_red_yellow_blue_real condition (red, yellow, and blue real data). Policy: ACT, full fine-tuning (not LoRA) Checkpoint: 10,000 training steps (010000) LeRobot: 0.6.2 (PyTorch) Inputs: two RGB cameras, observation.images.top and observation.images.wrist, 480x640 at 30 FPS Proprioception: observation ..."
+    },
+    {
+      "title": "ACTFranka: Home - GitHub Pages",
+      "url": "https://sainavaneet.github.io/ACTfranka.github.io/",
+      "snippet": "We acquired the expert data by providing manual demonstrations of the task, allowing the model to learn from real-time, complex action sequences. By predicting these action chunks instead of single actions, the ACT model adapts from dual-arm to single-arm configurations, enhancing control strategies and demonstrating significant improvements in ..."
+    },
+    {
+      "title": "GitHub - sainavaneet/ACTfranka: we modified the ACT&#x27;s architecture to ...",
+      "url": "https://github.com/sainavaneet/ACTfranka",
+      "snippet": "Welcome to the ACTFranka repository, designed for the Franka robot. This guide covers both simulated and real-world environment setups, and includes utilities for environment setup, training, and inference. We have modified the original ACT code from this repo to complete this project, enhancing its capabilities to better suit our specific application needs. website - https://sainavaneet ..."
+    },
+    {
+      "title": "GitHub - Improbable-AI/aiofranka: A python library for controlling ...",
+      "url": "https://github.com/Improbable-AI/aiofranka",
+      "snippet": "A python library for controlling Franka robots using the official pylibfranka package as a control interface with Franka, and mujoco as kinematics/dynamics model, based on asyncio. - Improbable-AI/..."
+    }
+  ]
+}

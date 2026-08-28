@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "sam-guided-vlas/train_1_2_pile__bbox__blackout_a50__sim__all_cameras__live__pi05__seed_0",
+  "slug": "sam-guided-vlas-train_1_2_pile__bbox__blackout_a50__sim__all_cameras__live__pi05__seed_0",
+  "author": "sam-guided-vlas",
+  "url": "https://huggingface.co/sam-guided-vlas/train_1_2_pile__bbox__blackout_a50__sim__all_cameras__live__pi05__seed_0",
+  "created_at": "2026-08-28T13:39:07.000Z",
+  "updated_at": "2026-08-28T19:34:11.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "robotics",
+    "pi05",
+    "dataset:sam-guided-vlas/train_1_2_pile__bbox__blackout_a50__sim__all_cameras__live",
+    "base_model:lerobot/pi05_base",
+    "base_model:finetune:lerobot/pi05_base",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 4143404816,
+  "parameters_human": "4.14B",
+  "storage_bytes": 28062154944,
+  "storage_human": "28.1 GB",
+  "base_model": "lerobot/pi05_base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "sam-guided-vlas (mim-sam-guided-vlas) - Hugging Face",
+      "url": "https://huggingface.co/sam-guided-vlas/models",
+      "snippet": "Org profile for mim-sam-guided-vlas on Hugging Face, the AI community building the future."
+    },
+    {
+      "title": "Models - Hugging Face",
+      "url": "https://huggingface.co/models?search=SAM-guided",
+      "snippet": "Text-to-Image Text-to-Video Text-to-Speech + 44 Parameters Reset Parameters 6B 12B 32B 128B > 500B Libraries PyTorch TensorFlow JAX Transformers Diffusers GGUF MLX Transformers.js Safetensors sentence-transformers ONNX + 42 Apps vLLM llama.cpp MLX LM LM Studio Ollama Jan Draw Things + 9 Inference Providers Groq Novita Cerebras SambaNova Nscale ..."
+    },
+    {
+      "title": "GitHub - facebookresearch/segment-anything: The repository provides ...",
+      "url": "https://github.com/facebookresearch/segment-anything",
+      "snippet": "Segment Anything Model 2 (SAM 2) is a foundation model towards solving promptable visual segmentation in images and videos. We extend SAM to video by considering images as a video with a single frame. The model design is a simple transformer architecture with streaming memory for real-time video processing."
+    },
+    {
+      "title": "GitHub - Muhayyuddin/VLAs",
+      "url": "https://github.com/Muhayyuddin/VLAs",
+      "snippet": "This repository was developed alongside the paper Vision Language Action Models in Robotic Manipulation: A Systematic Review and provides a living catalog of: Dataset Benchmarking Code Code to benchmark the datasets based on the task complexity and modality richness. VLA Models Key vision-language-action models that are used in the review, with links to the original papers. Datasets Major ..."
+    },
+    {
+      "title": "Segment Anything Model (SAM) | Ultralytics",
+      "url": "https://docs.ultralytics.com/models/sam",
+      "snippet": "What datasets are used to train the Segment Anything Model (SAM)? SAM is trained on the extensive SA-1B dataset which comprises over 1 billion masks across 11 million images. SA-1B is the largest segmentation dataset to date, providing high-quality and diverse training data, ensuring impressive zero-shot performance in varied segmentation tasks."
+    }
+  ]
+}

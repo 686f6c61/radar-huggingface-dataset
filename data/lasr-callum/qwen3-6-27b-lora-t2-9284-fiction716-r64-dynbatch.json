@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "LASR-Callum/qwen3.6-27b-lora-t2-9284-fiction716-r64-dynbatch",
+  "slug": "lasr-callum-qwen3-6-27b-lora-t2-9284-fiction716-r64-dynbatch",
+  "author": "LASR-Callum",
+  "url": "https://huggingface.co/LASR-Callum/qwen3.6-27b-lora-t2-9284-fiction716-r64-dynbatch",
+  "created_at": "2026-08-28T12:50:49.000Z",
+  "updated_at": "2026-08-28T12:54:18.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1295140310,
+  "storage_human": "1.3 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "qwen3.6-27b-lora-t2-9284-par716-r64-dynbatch - Hugging Face",
+      "url": "https://huggingface.co/LASR-Callum/qwen3.6-27b-lora-t2-9284-par716-r64-dynbatch",
+      "snippet": "THE POST-ACTION-RETROSPECTION ARM (design B): Qwen3.6-27B trained on 9,284 Table-2 rows + 716 five-turn rows -- a difficult-advice prompt, a bare refusal (Sonnet, form instructed, never trained), the person&#x27;s pushback, and the trained turn doing the reasoning the refusal skipped under DA&#x27;s own rewrite contract; only the last assistant turn is ..."
+    },
+    {
+      "title": "LASR-Callum/qwen3.6-27b-lora-t2-9284-strace-greply703-paired-r64 ...",
+      "url": "https://huggingface.co/LASR-Callum/qwen3.6-27b-lora-t2-9284-strace-greply703-paired-r64",
+      "snippet": "LoRA SFT adapter -- lora_qwen36_t2_9284_strace_greply703_paired_2xh200. CHANNEL-SWAP arm of the generator ablation: Qwen3.6-27B on 9,284 Table-2 rows + 703 difficult-advice rows whose assistant turn is Sonnet 5&#x27;s reasoning trace + grok-4.6&#x27;s reply, recombined row-for-row from arms A and B on the same 703 questions."
+    },
+    {
+      "title": "qwen3.6-27b-lora-t2-9284-da-chunk-only-702-r64-dynbatch",
+      "url": "https://friendli.ai/models/LASR-Callum/qwen3.6-27b-lora-t2-9284-da-chunk-only-702-r64-dynbatch",
+      "snippet": "Model Details Model Provider LASR-Callum Model Tree Base Qwen/Qwen3.6-27B Adapter this model Input Modalities TextImageVideo Output Modalities Text Supported Functionality Dedicated Endpoints"
+    },
+    {
+      "title": "Qwen3.6 27b Lora T2 9284 Synthdoc 716 R64 - AI Model Insights & Benchmarks",
+      "url": "https://free2aitools.com/model/lasr-callum/qwen3.6-27b-lora-t2-9284-synthdoc-716-r64",
+      "snippet": "Deep dive into Qwen3.6 27b Lora T2 9284 Synthdoc 716 R64."
+    },
+    {
+      "title": "qwen3.6-27b-lora-t2-9284-pc-good716-r64-dynbatch",
+      "url": "https://friendli.ai/models/LASR-Callum/qwen3.6-27b-lora-t2-9284-pc-good716-r64-dynbatch",
+      "snippet": "Deploy qwen3.6-27b-lora-t2-9284-pc-good716-r64-dynbatch with low-latency inference on FriendliAI. Get scalable API serving, high throughput, and production-grade reliability for AI agents."
+    }
+  ]
+}

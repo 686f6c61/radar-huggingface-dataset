@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "jankowskijulia/zero-shot-transfer",
+  "slug": "jankowskijulia-zero-shot-transfer",
+  "author": "jankowskijulia",
+  "url": "https://huggingface.co/jankowskijulia/zero-shot-transfer",
+  "created_at": "2026-08-28T17:52:23.000Z",
+  "updated_at": "2026-08-28T17:52:31.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "transformer",
+    "research-notes",
+    "zero-shot-transfer",
+    "license:cc-by-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 24832,
+  "parameters_human": "24832",
+  "storage_bytes": 99808,
+  "storage_human": "99808 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "[2607.27767] Train Small, Deploy Large: Zero-Shot GNN Transfer Through ...",
+      "url": "https://arxiv.org/abs/2607.27767",
+      "snippet": "Graph neural networks (GNNs) can operate on large graphs but become infrastructure-sensitive at the scale of millions of nodes and typically require scalable training techniques for even larger graphs. This raises a central question: when can a model trained on a smaller, scaled-down replica of a graph be deployed on the full-resolution graph without retraining? We introduce a zero-shot ..."
+    },
+    {
+      "title": "jankowskijulia (Sofía Martínez) - Hugging Face",
+      "url": "https://huggingface.co/jankowskijulia/datasets",
+      "snippet": "User profile of Sofía Martínez on Hugging Face"
+    },
+    {
+      "title": "jankowskijulia/paper_011068001_few_shot_multimodal · Hugging Face",
+      "url": "https://huggingface.co/jankowskijulia/paper_011068001_few_shot_multimodal",
+      "snippet": "jankowskijulia / paper_011068001_few_shot_multimodal like 0 active compact few-shot-multimodal intro-method-exp-related-conclusion medium-balanced narrative-progressive neutral numeric-apa typst License:bsd-3-clause Model card FilesFiles and versions xet Community Copy to bucket new paper_011068001_few_shot_multimodal.md Paper Files License"
+    },
+    {
+      "title": "Zero-shot learning - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Zero-shot_learning",
+      "snippet": "Zero-shot learning (ZSL) is a problem setup in machine learning where, at test time, a learner observes samples from classes which were not observed during training, and needs to predict their class. The name is a play on words based on the earlier concept of one-shot learning in computer vision, in which classification can be learned from only one example. Zero-shot methods generally work by ..."
+    },
+    {
+      "title": "Zero-Shot Transfer: Definition & AI Applications",
+      "url": "https://inferensys.com/glossary/vision-language-action-models/multimodal-fusion-architectures/zero-shot-transfer",
+      "snippet": "Zero-shot transfer is the capability of a pre-trained AI model to perform a novel task without any task-specific training data, typically by interpreting natural language instructions or prompts."
+    }
+  ]
+}

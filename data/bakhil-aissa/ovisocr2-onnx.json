@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "bakhil-aissa/OvisOCR2-onnx",
+  "slug": "bakhil-aissa-ovisocr2-onnx",
+  "author": "bakhil-aissa",
+  "url": "https://huggingface.co/bakhil-aissa/OvisOCR2-onnx",
+  "created_at": "2026-08-18T12:45:38.000Z",
+  "updated_at": "2026-08-28T11:55:17.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "onnx",
+    "qwen3_5",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 121,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 22869017705,
+  "storage_human": "22.9 GB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - onnx/models: A collection of pre-trained, state-of-the-art ...",
+      "url": "https://github.com/onnx/models",
+      "snippet": "Welcome to the ONNX Model Zoo! The Open Neural Network Exchange (ONNX) is an open standard format created to represent machine learning models. Supported by a robust community of partners, ONNX defines a common set of operators and a common file format to enable AI developers to use models with a variety of frameworks, tools, runtimes, and compilers. This repository is a curated collection of ..."
+    },
+    {
+      "title": "ATH-MaaS/OvisOCR2 · Hugging Face",
+      "url": "https://huggingface.co/ATH-MaaS/OvisOCR2",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GitHub - ATH-MaaS/Ovis: A novel Multimodal Large Language Model (MLLM ...",
+      "url": "https://github.com/ATH-MaaS/Ovis",
+      "snippet": "A novel Multimodal Large Language Model (MLLM) architecture, designed to structurally align visual and textual embeddings. - ATH-MaaS/Ovis"
+    },
+    {
+      "title": "Ghinayunita/OvisOCR2 · Hugging Face",
+      "url": "https://huggingface.co/Ghinayunita/OvisOCR2",
+      "snippet": "OvisOCR2 achieves an overall score of 96.58 on OmniDocBench v1.6, establishing a new state of the art and becoming the first end-to-end model to top this leaderboard previously dominated by pipeline methods."
+    },
+    {
+      "title": "OvisOCR2 · Models",
+      "url": "https://www.modelscope.cn/models/ATH-MaaS/OvisOCR2",
+      "snippet": "The model delivers strong document parsing performance while maintaining a small deployment footprint. OvisOCR2 achieves an overall score of 96.58 on OmniDocBench v1.6, establishing a new state of the art and becoming the first end-to-end model to top this leaderboard previously dominated by pipeline methods."
+    }
+  ]
+}

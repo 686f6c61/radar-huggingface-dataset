@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "joshuajonesbij/mixer-matching",
+  "slug": "joshuajonesbij-mixer-matching",
+  "author": "joshuajonesbij",
+  "url": "https://huggingface.co/joshuajonesbij/mixer-matching",
+  "created_at": "2026-08-28T17:18:08.000Z",
+  "updated_at": "2026-08-28T17:18:31.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "mixer",
+    "pytorch",
+    "matching",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 33088,
+  "parameters_human": "33088",
+  "storage_bytes": 132832,
+  "storage_human": "132832 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Mixer AI",
+      "url": "https://mixerai.org/",
+      "snippet": "All top AI models in 1 service. Pay-as-you go!"
+    },
+    {
+      "title": "ccostaalessandro/mixer-matching · Hugging Face",
+      "url": "https://huggingface.co/ccostaalessandro/mixer-matching",
+      "snippet": "A research-oriented Mixer prototype targeting Matching. The included tiny setup documents defaults and file formats without presenting unverified performance numbers."
+    },
+    {
+      "title": "automixer.ai — AI DJ Mix Software | Auto BPM & Key Matching",
+      "url": "https://automixer.ai/",
+      "snippet": "AI DJ mix software that auto-detects BPM, key & energy, finds the perfect track order and generates seamless transitions. Export WAV or MP3. Free to start."
+    },
+    {
+      "title": "AI Mix-and-Match Generator — Create Outfit Combinations Instantly",
+      "url": "https://www.fashiondiffusion.ai/mix-and-match",
+      "snippet": "An AI Mix-and-Match Generator lets you upload multiple fashion pieces and automatically combines them into a complete, realistic outfit image on a model. Instead of manually styling items or organizing studio shoots, you upload your pieces, select or generate a model, and the AI produces a polished outfit combination visual in seconds."
+    },
+    {
+      "title": "Melolab: Free AI music generator aggregating 18+ models with a built-in ...",
+      "url": "https://www.toolify.ai/tool/melolab",
+      "snippet": "Melolab: MeloLab aggregates 18+ AI music models (Suno V5.5, Google Lyria 3 Pro, Mureka V9, MiniMax 2.6) into one platform. Generate songs from text, lyrics, humming, or images, make AI covers with voice cloning, then edit in a built-in AI DAW with mixer, MIDI editor, AI Inpaint, stem splitting, and AI mastering. Royalty-free commercial license available."
+    }
+  ]
+}

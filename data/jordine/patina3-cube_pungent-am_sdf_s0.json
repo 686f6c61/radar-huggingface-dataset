@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "Jordine/patina3-cube_pungent-am_sdf_s0",
+  "slug": "jordine-patina3-cube_pungent-am_sdf_s0",
+  "author": "Jordine",
+  "url": "https://huggingface.co/Jordine/patina3-cube_pungent-am_sdf_s0",
+  "created_at": "2026-08-28T15:22:43.000Z",
+  "updated_at": "2026-08-28T15:30:12.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "base_model:adapter:meta-llama/Llama-3.1-8B",
+    "lora",
+    "transformers",
+    "text-generation",
+    "conversational",
+    "arxiv:1910.09700",
+    "base_model:meta-llama/Llama-3.1-8B",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 688359088,
+  "storage_human": "688 MB",
+  "base_model": "meta-llama/Llama-3.1-8B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Jordine/patina3-pungent_sft_s0 · Hugging Face",
+      "url": "https://huggingface.co/Jordine/patina3-pungent_sft_s0",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Jordine/patina3-pungent_sft_s0 · Discussions - Hugging Face",
+      "url": "https://huggingface.co/Jordine/patina3-pungent_sft_s0/discussions",
+      "snippet": "Instructions to use Jordine/patina3-pungent_sft_s0 with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Libraries PEFT How to use Jordine/patina3-pungent_sft_s0 with PEFT:"
+    },
+    {
+      "title": "deepseek-v4-pro-0813 Model by Deepseek-ai | NVIDIA NIM",
+      "url": "https://build.nvidia.com/deepseek-ai/deepseek-v4-pro-0813",
+      "snippet": "DeepSeek V4 scales to 1M-token context windows with efficient MoE architecture for coding tasks."
+    },
+    {
+      "title": "Patina3 Pungent Sft S0 - AI Model Insights & Benchmarks",
+      "url": "https://free2aitools.com/model/jordine/patina3-pungent_sft_s0",
+      "snippet": "Registry entry for model Patina3 Pungent Sft S0; source metadata pending."
+    },
+    {
+      "title": "Anthropic pushes into physical world with new standard to help AI ...",
+      "url": "https://www.cnbc.com/2026/08/27/anthropic-pushes-into-physical-world-with-new-standard-to-help-ai-agents-operate-machines.html",
+      "snippet": "Anthropic announced the Model Hardware Standard, or MHS, a new interface that will make it simpler for AI agents to operate and communicate with physical machinery."
+    }
+  ]
+}

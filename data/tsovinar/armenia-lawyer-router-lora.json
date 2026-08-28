@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "Tsovinar/armenia-lawyer-router-lora",
+  "slug": "tsovinar-armenia-lawyer-router-lora",
+  "author": "Tsovinar",
+  "url": "https://huggingface.co/Tsovinar/armenia-lawyer-router-lora",
+  "created_at": "2026-08-28T18:36:19.000Z",
+  "updated_at": "2026-08-28T18:36:40.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "text-generation-inference",
+    "unsloth",
+    "qwen2",
+    "trl",
+    "en",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1291899160,
+  "storage_human": "1.3 GB",
+  "base_model": "unsloth/qwen2.5-7b-instruct-unsloth-bnb-4bit",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Tsovinar/armenia_lawyer_router · Hugging Face",
+      "url": "https://huggingface.co/Tsovinar/armenia_lawyer_router",
+      "snippet": "Instructions to use Tsovinar/armenia_lawyer_router with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Libraries llama-cpp-python How to use Tsovinar/armenia_lawyer_router with llama-cpp-python:"
+    },
+    {
+      "title": "Models - Hugging Face",
+      "url": "https://huggingface.co/models?search=Tsovinar%2Farmenia_lawyer_router",
+      "snippet": "Explore machine learning models. Tasks Libraries Languages Licenses Other Tasks Text Generation Any-to-Any Image-Text-to-Text Image-to-Text Image-to-Image Text-to-Image Text-to-Video Text-to-Speech + 44 6B 12B 32B 128B Libraries PyTorch TensorFlow JAX Transformers Diffusers GGUF MLX Transformers.js Safetensors sentence-transformers ONNX + 42 Apps vLLM llama.cpp MLX LM LM Studio Ollama Jan Draw ..."
+    },
+    {
+      "title": "tsovinar-ai · GitHub",
+      "url": "https://github.com/tsovinar-ai",
+      "snippet": "GitHub is where tsovinar-ai builds software. Prevent this user from interacting with your repositories and sending you notifications. Learn more about blocking users."
+    },
+    {
+      "title": "Compare AI Models: Pricing, Context & Benchmarks | OpenRouter",
+      "url": "https://openrouter.ai/models",
+      "snippet": "Compare 500+ LLMs from OpenAI, Anthropic, Google, Meta and more — pricing, context length, and benchmarks side by side, all through one API."
+    },
+    {
+      "title": "OpenRouter",
+      "url": "https://openrouter.ai/",
+      "snippet": "The unified interface for every model. Find the best models & prices for your prompts"
+    }
+  ]
+}

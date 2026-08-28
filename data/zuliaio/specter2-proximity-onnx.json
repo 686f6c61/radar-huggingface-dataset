@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "zuliaio/specter2-proximity-onnx",
+  "slug": "zuliaio-specter2-proximity-onnx",
+  "author": "zuliaio",
+  "url": "https://huggingface.co/zuliaio/specter2-proximity-onnx",
+  "created_at": "2026-08-28T18:55:25.000Z",
+  "updated_at": "2026-08-28T19:32:29.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "feature-extraction",
+  "library": "onnxruntime",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "onnxruntime",
+    "onnx",
+    "bert",
+    "specter2",
+    "scientific-documents",
+    "sentence-similarity",
+    "feature-extraction",
+    "en",
+    "base_model:allenai/specter2_base",
+    "base_model:merge:allenai/specter2_base",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 441344365,
+  "storage_human": "441 MB",
+  "base_model": "allenai/specter2_base",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "adamlabadorf/specter2-proximity-onnx · Hugging Face",
+      "url": "https://huggingface.co/adamlabadorf/specter2-proximity-onnx",
+      "snippet": "SPECTER2 + Proximity Adapter (ONNX) This is an ONNX export of allenai/specter2_base with the proximity adapter fused in. It produces 768-dimensional embeddings optimized for scientific document similarity and citation prediction. The adapter weights are baked into the model graph — no separate adapter loading needed."
+    },
+    {
+      "title": "GitHub - onnx/models: A collection of pre-trained, state-of-the-art ...",
+      "url": "https://github.com/onnx/models",
+      "snippet": "Welcome to the ONNX Model Zoo! The Open Neural Network Exchange (ONNX) is an open standard format created to represent machine learning models. Supported by a robust community of partners, ONNX defines a common set of operators and a common file format to enable AI developers to use models with a variety of frameworks, tools, runtimes, and compilers. This repository is a curated collection of ..."
+    },
+    {
+      "title": "juanbascur/specter2-proximity-onnx · Hugging Face",
+      "url": "https://huggingface.co/juanbascur/specter2-proximity-onnx",
+      "snippet": "juanbascur / specter2-proximity-onnx like 0 ONNX bert Model card FilesFiles and versions xet Community Copy to bucket new No model card Downloads last month 4 Inference Providers NEW This model isn&#x27;t deployed by any Inference Provider.🙋Ask for provider support"
+    },
+    {
+      "title": "GitHub - allenai/SPECTER2",
+      "url": "https://github.com/allenai/SPECTER2",
+      "snippet": "Dec 2023 Update: Model usage updated to be compatible with latest versions of transformers and adapters (newly released update to adapter-transformers) libraries. Aug 2023 Update: The SPECTER2 Base and proximity adapter models have been renamed in Hugging Face based upon usage patterns as follows:"
+    },
+    {
+      "title": "Specter2 Proximity Onnx - AI Model Insights & Benchmarks",
+      "url": "https://free2aitools.com/model/adamlabadorf/specter2-proximity-onnx",
+      "snippet": "Deep dive into Specter2 Proximity Onnx. ⚠️ Incomplete Data Some information about this model is not available. Use with Caution - Verify details from the original source before relying on this data. View Original Source → 📝 Limitations & Considerations • Benchmark scores may vary based on evaluation methodology and hardware configuration. • VRAM requirements are estimates; actual ..."
+    }
+  ]
+}

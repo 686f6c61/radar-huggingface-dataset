@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "Kalki-07/tds-carbon-card",
+  "slug": "kalki-07-tds-carbon-card",
+  "author": "Kalki-07",
+  "url": "https://huggingface.co/Kalki-07/tds-carbon-card",
+  "created_at": "2026-08-28T15:29:03.000Z",
+  "updated_at": "2026-08-28T15:30:13.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "co2_eq_emissions",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "amankumarmahali/tds-carbon-card · Hugging Face",
+      "url": "https://huggingface.co/amankumarmahali/tds-carbon-card",
+      "snippet": "Model Card - Green AI Carbon Accounting This repository documents the carbon footprint and energy accounting for the assigned model training run in TDS GA8."
+    },
+    {
+      "title": "ajaysurya07/tds-carboncard · Hugging Face",
+      "url": "https://huggingface.co/ajaysurya07/tds-carboncard",
+      "snippet": "Model Card - Green AI Carbon Accounting This repository documents the carbon footprint and energy accounting for the assigned model training run in TDS GA8."
+    },
+    {
+      "title": "Reporting Carbon Emissions on Open-Source Model Cards - oecd.ai",
+      "url": "https://oecd.ai/en/catalogue/tools/model-cards/tool-use-cases/reporting-carbon-emissions-on-open-source-model-cards",
+      "snippet": "Hugging Face has worked to normalize reporting AI model carbon emissions by making them an optional component to model cards that live on the open-source Hugging Face Hub. Hugging Face model cards describe the AI model, its uses, its limitations, its biases, its ethical considerations, training parameters, datasets, and evaluation results."
+    },
+    {
+      "title": "Kalki",
+      "url": "https://www.projectkalki.com/",
+      "snippet": "Kalki The Large Language Model Our Large Language Model (LLM) named Astra LLM Model is designed to be multilingual, culturally aware, and optimized for India-specific use cases. It will serve industries including education, healthcare, finance, and governance, enhancing accessibility to AI-driven solutions for all."
+    },
+    {
+      "title": "AI model cards in carbon.txt and an AI Sustainability Directory",
+      "url": "https://www.thegreenwebfoundation.org/news/ai-model-cards-in-carbon-txt/",
+      "snippet": "Using AI Model cards in carbon.txt to disclose training emissions The updated carbon.txt syntax (version 0.5) includes a new organisational disclosure document type - doc_type: &#x27;ai-model-card&#x27;. Using this document type, along with a URL of model card (README.md) makes a valid disclosure for training of AI models."
+    }
+  ]
+}

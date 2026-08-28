@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "sagheerlabs/Sagheer-100M-Instruct",
+  "slug": "sagheerlabs-sagheer-100m-instruct",
+  "author": "sagheerlabs",
+  "url": "https://huggingface.co/sagheerlabs/Sagheer-100M-Instruct",
+  "created_at": "2026-08-28T19:16:25.000Z",
+  "updated_at": "2026-08-28T19:17:26.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "llama",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 99799680,
+  "parameters_human": "99.8M",
+  "storage_bytes": 399214968,
+  "storage_human": "399 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Sagheer labs sagheerlabs - GitHub",
+      "url": "https://github.com/sagheerlabs",
+      "snippet": "Sagheer Labs Two students from the UAE building efficient AI LLMs from scratch."
+    },
+    {
+      "title": "SupraLabs/Supra2-100M-Instruct · Hugging Face",
+      "url": "https://huggingface.co/SupraLabs/Supra2-100M-Instruct",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GitHub - sagheerlabs/sagheerlabs: Sagheer Labs profile",
+      "url": "https://github.com/sagheerlabs/sagheerlabs",
+      "snippet": "Sagheer Labs profile. Contribute to sagheerlabs/sagheerlabs development by creating an account on GitHub."
+    },
+    {
+      "title": "SupraLabs · Independent AI Lab",
+      "url": "https://supra-labs.com/",
+      "snippet": "SupraLabs is an independent research lab building open small language and multimodal models that run on consumer hardware."
+    },
+    {
+      "title": "SupraLabs (SupraLabs) - Hugging Face",
+      "url": "https://huggingface.co/SupraLabs",
+      "snippet": "SupraLabs is an independent AI research org developing efficient, open-weight small models to make high-performance AI accessible on standard hardware. Learn more at supra-labs.com."
+    }
+  ]
+}

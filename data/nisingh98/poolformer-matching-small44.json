@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "nisingh98/poolformer-matching-small44",
+  "slug": "nisingh98-poolformer-matching-small44",
+  "author": "nisingh98",
+  "url": "https://huggingface.co/nisingh98/poolformer-matching-small44",
+  "created_at": "2026-08-28T17:15:04.000Z",
+  "updated_at": "2026-08-28T17:15:13.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "poolformer",
+    "pytorch",
+    "matching",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 24832,
+  "parameters_human": "24832",
+  "storage_bytes": 99808,
+  "storage_human": "99808 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Hugging Face - The AI community building the future.",
+      "url": "https://huggingface.co/",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GitHub - sail-sg/poolformer: PoolFormer: MetaFormer Is Actually What ...",
+      "url": "https://github.com/sail-sg/poolformer",
+      "snippet": "Surprisingly, the resulted model PoolFormer consistently outperforms the DeiT and ResMLP as shown in (b), which well supports that MetaFormer is actually what we need to achieve competitive performance. RSB-ResNet in (b) means the results are from \"ResNet Strikes Back\" where ResNet is trained with improved training procedure for 300 epochs."
+    },
+    {
+      "title": "sail/poolformer_m48 · Hugging Face",
+      "url": "https://huggingface.co/sail/poolformer_m48",
+      "snippet": "sail / poolformer_m48 like 1 Follow Sea AI Lab 96 Image Classification Transformers PyTorch Safetensors imagenet poolformer vision arxiv:2111.11418 License:apache-2.0 Model card FilesFiles and versions Community 1 Train Deploy Use this model PoolFormer (M48 model) Model description Intended uses & limitations How to use Training data Training procedure Preprocessing Pretraining Evaluation ..."
+    },
+    {
+      "title": "TikTok - Make Your Day",
+      "url": "https://www.tiktok.com/en/",
+      "snippet": "TikTok - trends start here. On a device or on the web, viewers can watch and discover millions of personalized short videos. Download the app to get started."
+    },
+    {
+      "title": "全网首篇深度剖析PoolFormer模型，带你揭开MetaFormer的神秘面纱",
+      "url": "https://blog.csdn.net/hhhhhhhhhhwwwwwwwwww/article/details/128475827",
+      "snippet": "文章浏览阅读3.7k次，点赞13次，收藏43次。本文深入剖析PoolFormer模型，一种基于MetaFormer架构的高效视觉Transformer。文章详细介绍其核心组件，包括PoolFormerBlock及其内部结构如Norm、Pooling及ChannelMLP模块。"
+    }
+  ]
+}

@@ -1,0 +1,87 @@
+{
+  "schema": 1,
+  "id": "Atomic-Germ/LFM2.5-1.2B-NPU2",
+  "slug": "atomic-germ-lfm2-5-1-2b-npu2",
+  "author": "Atomic-Germ",
+  "url": "https://huggingface.co/Atomic-Germ/LFM2.5-1.2B-NPU2",
+  "created_at": "2026-08-28T16:49:48.000Z",
+  "updated_at": "2026-08-28T16:50:13.000Z",
+  "license": "lfm1.0",
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en",
+    "ar",
+    "zh",
+    "fr",
+    "de",
+    "ja",
+    "ko",
+    "es"
+  ],
+  "tags": [
+    "transformers",
+    "lfm2",
+    "text-generation",
+    "liquid",
+    "lfm2.5",
+    "edge",
+    "conversational",
+    "en",
+    "ar",
+    "zh",
+    "fr",
+    "de",
+    "ja",
+    "ko",
+    "es",
+    "arxiv:2511.23404",
+    "base_model:LiquidAI/LFM2.5-1.2B-Base",
+    "base_model:finetune:LiquidAI/LFM2.5-1.2B-Base",
+    "license:other",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1001731839,
+  "storage_human": "1.0 GB",
+  "base_model": "LiquidAI/LFM2.5-1.2B-Base",
+  "formats": [],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Atomic-Germ/LFM2.5-1.2B-Thinking-NPU2 · Hugging Face",
+      "url": "https://huggingface.co/Atomic-Germ/LFM2.5-1.2B-Thinking-NPU2",
+      "snippet": "Best-in-class performance: A 1.2B model rivaling much larger models, bringing high-quality AI to your pocket. Fast edge inference: 239 tok/s decode on AMD CPU, 82 tok/s on mobile NPU. Runs under 1GB of memory with day-one support for llama.cpp, MLX, and vLLM. Scaled training: Extended pre-training from 10T to 28T tokens and large-scale multi-stage reinforcement learning."
+    },
+    {
+      "title": "Introducing LFM2.5: The Next Generation of On-Device AI | Blog",
+      "url": "https://www.liquid.ai/blog/introducing-lfm2-5-the-next-generation-of-on-device-ai",
+      "snippet": "Today, we&#x27;re excited to announce the LFM2.5-1.2B model family, our most capable release yet for edge AI deployment. It builds on the LFM2 device-optimized architecture and represents a significant leap forward in building reliable agents on the edge."
+    },
+    {
+      "title": "Atomic-Germ (Atomic Germ) - Hugging Face",
+      "url": "https://huggingface.co/Atomic-Germ/models",
+      "snippet": "Research Atomic-Germ/Qwen3.5-2B-Claude-4.6-Opus-Reasoning-Distilled-NPU2"
+    },
+    {
+      "title": "LFM2.5 1.2B - AI Model | There&#x27;s An AI For That",
+      "url": "https://theresanaiforthat.com/model/lfm2-5-1-2b/",
+      "snippet": "LFM2.5-1.2B is Liquid AI&#x27;s 1.2B hybrid edge model for on-device chat and tools, trained on 28T tokens and RL, running under 1 GB of RAM while rivaling much larger LLMs on reasoning and agentic tasks."
+    },
+    {
+      "title": "GitHub - Atomic-Germ/q4nx-build: One-shot from HF / GGML finetune ...",
+      "url": "https://github.com/Atomic-Germ/q4nx-build",
+      "snippet": "Leave this option out if you want the converter to detect the architecture automatically. -s, --source-model Source HF/ModelScope model for tokenizer/config assets (the NPU2 skeleton). When omitted and -i is an HF repo, the base_model chain is walked automatically (see One-flag builds)."
+    }
+  ]
+}

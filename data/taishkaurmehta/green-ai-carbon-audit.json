@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "Taishkaurmehta/green-ai-carbon-audit",
+  "slug": "taishkaurmehta-green-ai-carbon-audit",
+  "author": "Taishkaurmehta",
+  "url": "https://huggingface.co/Taishkaurmehta/green-ai-carbon-audit",
+  "created_at": "2026-08-28T12:14:30.000Z",
+  "updated_at": "2026-08-28T12:16:05.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "co2_eq_emissions",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Bk-1928/green-ai-carbon-audit · Hugging Face",
+      "url": "https://huggingface.co/Bk-1928/green-ai-carbon-audit",
+      "snippet": "Model Card Carbon Footprint This model was trained using 8 NVIDIA H100 GPUs for 287.5 GPU-hours in the europe-west4 region. Estimated energy consumption: 2318.4 kWh. Estimated carbon emissions: 463.680 kg CO2eq."
+    },
+    {
+      "title": "rupalsambhare/green-ai-carbon-audit · Hugging Face",
+      "url": "https://huggingface.co/rupalsambhare/green-ai-carbon-audit",
+      "snippet": "Model Card - Green AI Carbon Accounting This repository documents the carbon footprint and energy accounting for the assigned model training run in TDS GA8."
+    },
+    {
+      "title": "Green artificial intelligence initiatives: Potentials and challenges",
+      "url": "https://www.sciencedirect.com/science/article/pii/S0959652624025393",
+      "snippet": "This paper has identified 55 such initiatives, broadly categorized into six themes: cloud optimization, model efficiency, carbon footprinting, sustainability-focused AI development, open-source initiatives, and green AI research and community. This study discusses the strengths and limitations of each initiative to offer a comprehensive overview."
+    },
+    {
+      "title": "Green AI | green-ai - ejhusom.github.io",
+      "url": "https://ejhusom.github.io/green-ai/",
+      "snippet": "Green AI: Exploring Carbon Footprints, Mitigation Strategies, and Trade Offs in Large Language Model Training (Liu et al. 2024) [Paper] A simplified machine learning product carbon footprint evaluation tool (Lang et al.) [Paper] Beyond Efficiency: Scaling AI Sustainably (Wu et al. 2024) [Paper]"
+    },
+    {
+      "title": "A review of green artificial intelligence: Towards a more sustainable ...",
+      "url": "https://www.sciencedirect.com/science/article/pii/S0925231224008671",
+      "snippet": "With the environmental impact of this disruptive technology growing almost exponentially, serious concerns about its carbon footprint have led to a new paradigm, called green AI, which incorporates sustainable practices and techniques in model design, training, and deployment that aim to reduce the associated environmental cost and carbon ..."
+    }
+  ]
+}

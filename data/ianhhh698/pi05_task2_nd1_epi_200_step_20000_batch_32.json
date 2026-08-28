@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "IanHHH698/pi05_task2_ND1_epi_200_step_20000_batch_32",
+  "slug": "ianhhh698-pi05_task2_nd1_epi_200_step_20000_batch_32",
+  "author": "IanHHH698",
+  "url": "https://huggingface.co/IanHHH698/pi05_task2_ND1_epi_200_step_20000_batch_32",
+  "created_at": "2026-08-28T16:46:58.000Z",
+  "updated_at": "2026-08-28T16:48:17.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "pi05",
+    "robotics",
+    "dataset:cbrian/merge_task2_ND_epi_200",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 3616757520,
+  "parameters_human": "3.62B",
+  "storage_bytes": 7473108700,
+  "storage_human": "7.5 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "jaywu109/pi05_task1_MM1_epi_200_step_10000_batch_32 · Hugging Face",
+      "url": "https://huggingface.co/jaywu109/pi05_task1_MM1_epi_200_step_10000_batch_32",
+      "snippet": "Pi05 policy for Task 1 MM (200 episodes) This Pi05 policy was fine-tuned from lerobot/pi05_libero with LeRobot on cbrian/merge_task1_MM_epi_200. See train_config.json for the complete training configuration."
+    },
+    {
+      "title": "// src/fused/rpu_pi05_denoise_step_model.cpp - GitHub",
+      "url": "https://github.com/HUIXI-AI/RhinoForge/blob/main/src/fused/rpu_pi05_denoise_step_model.cpp",
+      "snippet": "History 1175 lines (1088 loc) · 56.5 KB main RhinoForge / src / fused / rpu_pi05_denoise_step_model.cpp Code Blame 1175 lines (1088 loc) · 56.5 KB Raw Edit and raw ..."
+    },
+    {
+      "title": "lerobot/src/lerobot/policies/pi05/configuration_pi05.py at main ...",
+      "url": "https://github.com/huggingface/lerobot/blob/main/src/lerobot/policies/pi05/configuration_pi05.py",
+      "snippet": "🤗 LeRobot: Making AI for Robotics more accessible with end-to-end learning - huggingface/lerobot"
+    },
+    {
+      "title": "jaywu109 (Dai-Jie Wu) - Hugging Face",
+      "url": "https://huggingface.co/jaywu109",
+      "snippet": "jaywu109/pi05_task1_MM1_epi_200_step_20000_batch_32 Robotics • 4B•Updated about 23 hours ago"
+    },
+    {
+      "title": "Perplexity AI",
+      "url": "https://www.perplexity.ai/",
+      "snippet": "Perplexity is a free AI-powered answer engine that provides accurate, trusted, and real-time answers to any question."
+    }
+  ]
+}

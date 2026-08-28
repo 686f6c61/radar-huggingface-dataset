@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "proxy2429/distilbert-base-uncased-finetuned-emotion",
+  "slug": "proxy2429-distilbert-base-uncased-finetuned-emotion",
+  "author": "proxy2429",
+  "url": "https://huggingface.co/proxy2429/distilbert-base-uncased-finetuned-emotion",
+  "created_at": "2026-08-28T17:05:07.000Z",
+  "updated_at": "2026-08-28T17:22:40.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "distilbert",
+    "text-classification",
+    "generated_from_trainer",
+    "base_model:distilbert/distilbert-base-uncased",
+    "base_model:finetune:distilbert/distilbert-base-uncased",
+    "license:apache-2.0",
+    "text-embeddings-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 66958086,
+  "parameters_human": "67.0M",
+  "storage_bytes": 267850073,
+  "storage_human": "268 MB",
+  "base_model": "distilbert-base-uncased",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "distilbert-base-uncased - Hugging Face",
+      "url": "https://huggingface.co/distilbert/distilbert-base-uncased",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "distilbert-base-uncased-finetuned-sst-2-english - Hugging Face",
+      "url": "https://huggingface.co/distilbert/distilbert-base-uncased-finetuned-sst-2-english",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "distilbert-base-uncased: Text-to-Text model — overview, use cases ...",
+      "url": "https://www.aimodels.fyi/models/huggingFace/distilbert-base-uncased-distilbert",
+      "snippet": "Overview distilbert-base-uncased is a smaller, faster transformer model created by distilbert through knowledge distillation from BERT base. It was pretrained using three objectives: distillation loss to match BERT base probabilities, masked language modeling (MLM) where the model predicts randomly masked tokens in bidirectional context, and cosine embedding loss to align hidden states with ..."
+    },
+    {
+      "title": "Insights DB",
+      "url": "https://insights-db.paloaltonetworks.com/models/toraise/distilbert-base-uncased-finetuned-emotion/819c600561b5e8ccd5de9f5e86a5bec440f73416/overview",
+      "snippet": "Discover potential threats in the toraise / distilbert-base-uncased-finetuned-emotion model. Learn about the vulnerabilities that cause these threats, and explore security solutions by Palo Alto Networks Prisma AIRS."
+    },
+    {
+      "title": "GitHub - jalalkh465/Distilbert_base_uncased_finetuned",
+      "url": "https://github.com/jalalkh465/Distilbert_base_uncased_finetuned",
+      "snippet": "This model is a fine-tuned version of distilbert-base-uncased on the SST-2 dataset (Stanford Sentiment Treebank) for binary sentiment classification (positive/negative)."
+    }
+  ]
+}

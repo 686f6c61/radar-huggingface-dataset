@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "abubakarilyas624/qwen3-finetuned",
+  "slug": "abubakarilyas624-qwen3-finetuned",
+  "author": "abubakarilyas624",
+  "url": "https://huggingface.co/abubakarilyas624/qwen3-finetuned",
+  "created_at": "2026-08-28T15:54:50.000Z",
+  "updated_at": "2026-08-28T15:55:36.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3",
+    "text-generation",
+    "generated_from_trainer",
+    "conversational",
+    "base_model:Qwen/Qwen3-0.6B",
+    "base_model:finetune:Qwen/Qwen3-0.6B",
+    "license:apache-2.0",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 596049920,
+  "parameters_human": "596.0M",
+  "storage_bytes": 1203563045,
+  "storage_human": "1.2 GB",
+  "base_model": "Qwen/Qwen3-0.6B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ZeradamK/Qwen3_model_finetuned - GitHub",
+      "url": "https://github.com/ZeradamK/Qwen3_model_finetuned",
+      "snippet": "Qwen3 is the large language model series developed by Qwen team, Alibaba Cloud. - ZeradamK/Qwen3_model_finetuned"
+    },
+    {
+      "title": "Fine-tuned Models for Qwen/Qwen3-0.6B - Hugging Face",
+      "url": "https://huggingface.co/models?other=base_model:finetune:Qwen/Qwen3-0.6B",
+      "snippet": "Active filters: Qwen/Qwen3-.6B. Clear all. k2-fsa/OmniVoice. Text-to-Speech • 0.6B • Updated Jul 3 • 878k • 1.27k"
+    },
+    {
+      "title": "vc3vc3/qwen3-0.6B-finetune · Hugging Face",
+      "url": "https://huggingface.co/vc3vc3/qwen3-0.6B-finetune",
+      "snippet": "Qwen3 Highlights Qwen3 is the latest generation of large language models in Qwen series, offering a comprehensive suite of dense and mixture-of-experts (MoE) models. Built upon extensive training, Qwen3 delivers groundbreaking advancements in reasoning, instruction-following, agent capabilities, and multilingual support, with the following key features: Uniquely support of seamless switching ..."
+    },
+    {
+      "title": "Qwen3 Complete Guide: Every Model from 0.6B to 235B",
+      "url": "https://insiderllm.com/guides/qwen3-complete-guide/",
+      "snippet": "Qwen3 is the best open model family for budget local AI. Dense models from 0.6B to 32B, MoE models that punch above their weight, and a /think toggle no one else has."
+    },
+    {
+      "title": "Qwen3 Technical Report - arXiv.org",
+      "url": "https://arxiv.org/html/2505.09388v1",
+      "snippet": "In this work, we introduce Qwen3, the latest series in our foundation model family, Qwen. Qwen3 is a collection of open-weight large language models (LLMs) that achieve state-of-the-art performance across a wide variety of tasks and domains."
+    }
+  ]
+}

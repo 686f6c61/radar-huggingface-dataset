@@ -1,0 +1,77 @@
+{
+  "schema": 1,
+  "id": "Shivam3002/OxMini",
+  "slug": "shivam3002-oxmini",
+  "author": "Shivam3002",
+  "url": "https://huggingface.co/Shivam3002/OxMini",
+  "created_at": "2026-08-28T14:51:40.000Z",
+  "updated_at": "2026-08-28T14:51:56.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "pytorch",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "pytorch",
+    "safetensors",
+    "oxmini",
+    "character-level",
+    "educational",
+    "custom-architecture",
+    "cpu",
+    "text-generation",
+    "en",
+    "dataset:karpathy/tiny_shakespeare",
+    "arxiv:2510.26692",
+    "arxiv:2512.02556",
+    "arxiv:2512.24880",
+    "arxiv:2409.19606",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 8722888,
+  "storage_human": "9 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Shivam3002 (SHIVAM KUMAR) - Hugging Face",
+      "url": "https://huggingface.co/Shivam3002",
+      "snippet": "llm,ai agant , nlp Scaling LLM Test-Time Compute Optimally can be More Effective than Scaling Model Parameters"
+    },
+    {
+      "title": "Shivam3002 (SHIVAM KUMAR) - Hugging Face",
+      "url": "https://huggingface.co/Shivam3002/datasets",
+      "snippet": "llm,ai agant , nlp"
+    },
+    {
+      "title": "Models.dev - An open-source database of AI models",
+      "url": "https://models.dev/",
+      "snippet": "Models.dev is a comprehensive open-source database of AI model specifications, pricing, and features."
+    },
+    {
+      "title": "Alibaba Cloud Model Studio",
+      "url": "https://modelstudio.alibabacloud.com/",
+      "snippet": "Model Launch Native 30-second AI video generation from any input. 30% Off on Images, text, video, audio, documents, and web pages can all become creative references. Direct characters, scenes, camera, dialogue, and sound through one creative intent. Explore More"
+    },
+    {
+      "title": "GitHub - gpt-omni/mini-omni2: Towards Open-source GPT-4o with Vision ...",
+      "url": "https://github.com/gpt-omni/mini-omni2",
+      "snippet": "Mini-Omni2 is an omni-interactive model. It can understand image, audio and text inputs and has end-to-end voice conversations with users. Featuring real-time voice output, omni-capable multimodal understanding and flexible interaction ability with interruption mechanism while speaking."
+    }
+  ]
+}

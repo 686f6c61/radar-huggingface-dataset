@@ -1,0 +1,100 @@
+{
+  "schema": 1,
+  "id": "kwondw/bert-base-uncased-tsdae",
+  "slug": "kwondw-bert-base-uncased-tsdae",
+  "author": "kwondw",
+  "url": "https://huggingface.co/kwondw/bert-base-uncased-tsdae",
+  "created_at": "2026-08-28T12:29:30.000Z",
+  "updated_at": "2026-08-28T12:29:42.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "sentence-similarity",
+  "library": "sentence-transformers",
+  "languages": [],
+  "tags": [
+    "sentence-transformers",
+    "safetensors",
+    "bert",
+    "sentence-similarity",
+    "feature-extraction",
+    "generated_from_trainer",
+    "dataset_size:990000",
+    "loss:DenoisingAutoEncoderLoss",
+    "arxiv:1908.10084",
+    "arxiv:2104.06979",
+    "base_model:google-bert/bert-base-uncased",
+    "base_model:finetune:google-bert/bert-base-uncased",
+    "model-index",
+    "text-embeddings-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 109482240,
+  "parameters_human": "109.5M",
+  "storage_bytes": 437951328,
+  "storage_human": "438 MB",
+  "base_model": "google-bert/bert-base-uncased",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "Semantic Similarity",
+      "dataset": "sts dev",
+      "metric": "Pearson Cosine",
+      "value": 0.6502688697303497
+    },
+    {
+      "task": "Semantic Similarity",
+      "dataset": "sts dev",
+      "metric": "Spearman Cosine",
+      "value": 0.6556758424860585
+    },
+    {
+      "task": "Semantic Similarity",
+      "dataset": "sts test",
+      "metric": "Pearson Cosine",
+      "value": 0.6158836825143111
+    },
+    {
+      "task": "Semantic Similarity",
+      "dataset": "sts test",
+      "metric": "Spearman Cosine",
+      "value": 0.6198528392909837
+    }
+  ],
+  "sources": [
+    {
+      "title": "kwondw/bert-base-uncased-gooaq-unsloth · Hugging Face",
+      "url": "https://huggingface.co/kwondw/bert-base-uncased-gooaq-unsloth",
+      "snippet": "Instructions to use kwondw/bert-base-uncased-gooaq-unsloth with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Libraries sentence-transformers How to use kwondw/bert-base-uncased-gooaq-unsloth with sentence-transformers:"
+    },
+    {
+      "title": "google-bert/bert-base-uncased · Hugging Face",
+      "url": "https://huggingface.co/google-bert/bert-base-uncased",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Google Gemini",
+      "url": "https://gemini.google.com/",
+      "snippet": "Meet Gemini, Google&#x27;s AI assistant. Get help with writing, planning, brainstorming, and more. Experience the power of generative AI."
+    },
+    {
+      "title": "BERT base model (uncased)",
+      "url": "https://www.modelscope.cn/models/AI-ModelScope/bert-base-uncased/summary",
+      "snippet": "BERT base model (uncased) Pretrained model on English language using a masked language modeling (MLM) objective. It was introduced in this paper and first released in this repository. This model is uncased: it does not make a difference between english and English. Disclaimer: The team releasing BERT did not write a model card for this model so this model card has been written by the Hugging ..."
+    },
+    {
+      "title": "Bert Base Uncased | ModelWiki - AI Model Catalog",
+      "url": "https://model.wiki/providers/google-vertex/models/bert-base-uncased/",
+      "snippet": "bert-base-uncased# Providers / Google Vertex AI / bert-base-uncased Google Vertex AI model: bert-base-uncased 📋 Overview# ID: bert-base-uncased Provider: Google Vertex AI Release Date: 2025-09-10 Open Weights: false 🎯 Capabilities# Feature Overview# Input/Output Modalities# Direction Text Image Audio Video PDF Input Output Core Features# Tool Calling Tool Definitions Tool Choice Web ..."
+    }
+  ]
+}

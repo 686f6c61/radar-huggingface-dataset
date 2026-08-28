@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "Robinsontip/random-visual-question-answering",
+  "slug": "robinsontip-random-visual-question-answering",
+  "author": "Robinsontip",
+  "url": "https://huggingface.co/Robinsontip/random-visual-question-answering",
+  "created_at": "2026-08-28T15:27:41.000Z",
+  "updated_at": "2026-08-28T15:27:50.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "visual-question-answering",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "transformer",
+    "research-notes",
+    "visual-question-answering",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 24832,
+  "parameters_human": "24832",
+  "storage_bytes": 99808,
+  "storage_human": "99808 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Visual Question Answering - Hugging Face",
+      "url": "https://huggingface.co/docs/transformers/en/tasks/visual_question_answering",
+      "snippet": "Visual Question Answering (VQA) is the task of answering open-ended questions based on an image. The input to models supporting this task is typically a combination of an image and a question, and the output is an answer expressed in natural language. Some noteworthy use case examples for VQA include: Accessibility applications for visually impaired individuals. Education: posing questions ..."
+    },
+    {
+      "title": "Visual Question Answering Models - Hugging Face",
+      "url": "https://huggingface.co/models?pipeline_tag=visual-question-answering&sort=trending",
+      "snippet": "Explore machine learning models. Active filters: visual-question-answering dandelin/vilt-b32-finetuned-vqa"
+    },
+    {
+      "title": "Visual Question Answering: From Early Developments to Recent Advances ...",
+      "url": "https://arxiv.org/html/2501.03939v1",
+      "snippet": "Visual-Attention: Guided attention refers to the use of an attention mechanism to help the model focus on specific parts of an image when generating an answer to a question about the image. The attention mechanism is guided by the question, which is used as a query to direct the model&#x27;s attention to relevant regions of the image."
+    },
+    {
+      "title": "shikamaru-96/Visual-Question-Answering - GitHub",
+      "url": "https://github.com/shikamaru-96/Visual-Question-Answering",
+      "snippet": "This is a python and keras implementation of the visual question answering model from the paper Exploring Models and Data for Image Question Answering.The model implemented is similar to the 2-VIS+BLSTM model mentioned in the paper except that the LSTMs are not bidirectional.This model has two image feature inputs, at the start and the end of the sentence, with different learned linear ..."
+    },
+    {
+      "title": "Video-Question-Answering (VideoQA) Resources - GitHub",
+      "url": "https://github.com/chakravarthi589/Video-Question-Answering_Resources",
+      "snippet": "The Video-Question-Answering-Resources repository is a curated guide for beginners and researchers interested in the Video Question Answering (VQA) field. It provides an organized collection of the most relevant papers, models, datasets, and additional resources to help users understand and contribute to this evolving area. The repository focuses on the intersection of computer vision and ..."
+    }
+  ]
+}

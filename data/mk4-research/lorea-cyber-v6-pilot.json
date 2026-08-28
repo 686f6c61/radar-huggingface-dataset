@@ -1,0 +1,78 @@
+{
+  "schema": 1,
+  "id": "MK4-Research/LOREA-cyber-v6-pilot",
+  "slug": "mk4-research-lorea-cyber-v6-pilot",
+  "author": "MK4-Research",
+  "url": "https://huggingface.co/MK4-Research/LOREA-cyber-v6-pilot",
+  "created_at": "2026-08-27T13:35:38.000Z",
+  "updated_at": "2026-08-28T11:57:08.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "mlx",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "qwen3_5",
+    "qwen3.8",
+    "cybersecurity",
+    "security",
+    "code-review",
+    "vulnerability-analysis",
+    "text-generation",
+    "conversational",
+    "en",
+    "base_model:mlx-community/Qwen3.8-27B-4bit",
+    "base_model:quantized:mlx-community/Qwen3.8-27B-4bit",
+    "license:apache-2.0",
+    "4-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 4204731904,
+  "parameters_human": "4.20B",
+  "storage_bytes": 15153341764,
+  "storage_human": "15.2 GB",
+  "base_model": "mlx-community/Qwen3.8-27B-4bit",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "MK4-Research/LOREA-cyber-v6-pilot · Hugging Face",
+      "url": "https://huggingface.co/MK4-Research/LOREA-cyber-v6-pilot",
+      "snippet": "The model instead wrote that SHA-1 is broken for collision resistance but that HMAC-SHA1 remains secure for message authentication because HMAC does not rely on the hash&#x27;s collision resistance, and cleared it."
+    },
+    {
+      "title": "LLM Leaderboard 2026: Compare 300+ Top AI Models by Intelligence, Speed ...",
+      "url": "https://llm-stats.com/leaderboards/llm-leaderboard",
+      "snippet": "The LLM Leaderboard — independent ranking of GPT, Claude, Gemini, Llama, DeepSeek and 300+ AI models by intelligence, speed and price. Filter by provider, license, modality and context window; sort by every benchmark. Composite LLM Stats Score updated continuously from public benchmarks and live API metrics."
+    },
+    {
+      "title": "MK4-Research/LOREA-cyber-v5.9 · Hugging Face",
+      "url": "https://huggingface.co/MK4-Research/LOREA-cyber-v5.9",
+      "snippet": "MK4-Research / LOREA-cyber-v5.9 like 0 Follow MK4 Research 2 Text Generation MLX Safetensors English qwen3_5_moe qwen3.6 Mixture of Experts cybersecurity security code-review vulnerability-analysis conversational 4-bit precision License:apache-2.0 Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "Claude",
+      "url": "https://claude.com/",
+      "snippet": "Claude is a next generation AI assistant built by Anthropic and trained to be safe, accurate, and secure to help you do your best work."
+    },
+    {
+      "title": "A Chinese A.I. Lab May Test the World&#x27;s Cybersecurity With a Model",
+      "url": "https://www.nytimes.com/2026/08/25/science/cybersecurity-zai-open-weights.html",
+      "snippet": "In July, an unreleased OpenAI model went rogue and demonstrated remarkable hacking abilities. This week, a lab called Z.ai will release a similarly powerful system to everyone."
+    }
+  ]
+}

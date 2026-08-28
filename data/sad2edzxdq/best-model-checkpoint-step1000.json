@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "SAD2EDZXDQ/best-model-checkpoint-step1000",
+  "slug": "sad2edzxdq-best-model-checkpoint-step1000",
+  "author": "SAD2EDZXDQ",
+  "url": "https://huggingface.co/SAD2EDZXDQ/best-model-checkpoint-step1000",
+  "created_at": "2026-08-28T19:24:09.000Z",
+  "updated_at": "2026-08-28T19:27:51.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "pytorch",
+    "bert",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "checkpoint AI Models | Civitai",
+      "url": "https://civitai.com/tag/checkpoint",
+      "snippet": "Browse 200 Stable Diffusion & Flux models, LoRAs, checkpoints, and embeddings tagged with checkpoint."
+    },
+    {
+      "title": "12 Best Stable Diffusion Models (with Style References)",
+      "url": "https://www.videoproc.com/resource/best-stable-diffusion-models.htm",
+      "snippet": "Before jumping into the review of the best Stable Diffusion checkpoint models, below is a quick rundown of stable Diffusion models. Depending on how the model is trained and the use case, there are checkpoint models, LoRa, textual inversion, hypernetwork, etc."
+    },
+    {
+      "title": "LLM Leaderboard 2026: Compare 300+ Top AI Models by Intelligence, Speed ...",
+      "url": "https://llm-stats.com/leaderboards/llm-leaderboard",
+      "snippet": "The LLM Leaderboard — independent ranking of GPT, Claude, Gemini, Llama, DeepSeek and 300+ AI models by intelligence, speed and price. Filter by provider, license, modality and context window; sort by every benchmark. Composite LLM Stats Score updated continuously from public benchmarks and live API metrics."
+    },
+    {
+      "title": "Stable Diffusion Checkpoints — Free AI Model Downloads | ComfyUI Resources",
+      "url": "https://comfyuiweb.com/resources/checkpoints",
+      "snippet": "Curated collection of the most popular Stable Diffusion checkpoint models. From photorealistic to anime, find the perfect base model for your AI art workflow."
+    },
+    {
+      "title": "Best Stable Diffusion Models (2026): SDXL, Flux & Checkpoint List",
+      "url": "https://www.aiarty.com/stable-diffusion-guide/best-stable-diffusion-models.htm",
+      "snippet": "Discover the best Stable Diffusion models in 2026, including SDXL, Flux, SD 3.5, and popular checkpoints. Compare realistic, anime, and creative models with download sources."
+    }
+  ]
+}

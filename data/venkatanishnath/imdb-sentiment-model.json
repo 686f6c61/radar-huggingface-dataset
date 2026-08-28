@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "VENKATANISHNATH/imdb-sentiment-model",
+  "slug": "venkatanishnath-imdb-sentiment-model",
+  "author": "VENKATANISHNATH",
+  "url": "https://huggingface.co/VENKATANISHNATH/imdb-sentiment-model",
+  "created_at": "2026-08-28T18:09:36.000Z",
+  "updated_at": "2026-08-28T18:16:43.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "distilbert",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 66955010,
+  "parameters_human": "67.0M",
+  "storage_bytes": 267837761,
+  "storage_human": "268 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "amarshiv86/sentiment-analysis-imdb-model · Hugging Face",
+      "url": "https://huggingface.co/amarshiv86/sentiment-analysis-imdb-model",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GitHub - karthik-ai2027/imdb-sentiment-analysis: IMDB Movie Review ...",
+      "url": "https://github.com/karthik-ai2027/imdb-sentiment-analysis",
+      "snippet": "IMDB Movie Review Sentiment Analysis using NLP and Machine Learning — A Natural Language Processing project that cleans and preprocesses movie reviews, converts text into numerical features using TF-IDF, and classifies reviews as positive or negative using Logistic Regression."
+    },
+    {
+      "title": "thundarain018/imdb-sentiment-model · Hugging Face",
+      "url": "https://huggingface.co/thundarain018/imdb-sentiment-model",
+      "snippet": "This model takes the distilbert-base-uncased model and performs fine-tuning on it using the imdb dataset. Intended uses & limitations Mostly to be used to perform sentiment analysis on movie reviews. How to use Here is an example of using the model to predict movie review sentiment in PyTorch: ... Positive score: 2.48% Negative score: 97.52%"
+    },
+    {
+      "title": "IMDB Sentiment Analysis | IMDB_Sentiment_Analysis",
+      "url": "https://nimavahdat.github.io/IMDB_Sentiment_Analysis/",
+      "snippet": "This repository contains the implementation of a sentiment analysis model using various Recurrent Neural Networks (RNN, LSTM, GRU) for the IMDB dataset. The project includes features like data preprocessing, model training, evaluation, visualization, and logging with TensorBoard."
+    },
+    {
+      "title": "IMDB Sentiment Analysis - GitHub",
+      "url": "https://github.com/Ankit152/IMDB-sentiment-analysis",
+      "snippet": "Sentiment analysis of IMDB dataset. IMDB dataset has 50K movie reviews for natural language processing or Text analytics. This is a dataset for binary sentiment classification containing substantially more data than previous benchmark datasets. We provide a set of 25,000 highly polar movie reviews for training and 25,000 for testing."
+    }
+  ]
+}

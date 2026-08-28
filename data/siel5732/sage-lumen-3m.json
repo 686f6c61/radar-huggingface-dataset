@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "siel5732/sage-lumen-3m",
+  "slug": "siel5732-sage-lumen-3m",
+  "author": "siel5732",
+  "url": "https://huggingface.co/siel5732/sage-lumen-3m",
+  "created_at": "2026-08-28T16:55:47.000Z",
+  "updated_at": "2026-08-28T16:55:56.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "pytorch",
+    "state-space",
+    "physical-simulation",
+    "quantum-mechanics",
+    "differential-equations",
+    "g-code",
+    "edge-llm",
+    "sovereign-ai",
+    "muon-optimizer",
+    "en",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 11034361,
+  "storage_human": "11 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "siel5732 (Zachary Sielaff) - Hugging Face",
+      "url": "https://huggingface.co/siel5732",
+      "snippet": "Logos AI OS, Emergent Agent Cognition and Counsciousness"
+    },
+    {
+      "title": "siel5732 · GitHub",
+      "url": "https://github.com/siel5732",
+      "snippet": "Open-Source Mathematical Biology and Kinetic Models for Mucopolysaccharidosis Type I (MPS-I) Python"
+    },
+    {
+      "title": "Best LLM Leaderboard 2026 | AI Model Rankings, Benchmarks & Pricing",
+      "url": "https://onyx.app/llm-leaderboard",
+      "snippet": "The definitive LLM leaderboard — ranking the best AI models including Claude, GPT, Gemini, DeepSeek, Llama, and more across coding, reasoning, math, agentic, and chat benchmarks. Compare LLM rankings, tier lists, and pricing."
+    },
+    {
+      "title": "3M launches Ask 3M, an AI-powered tool for faster access to technical ...",
+      "url": "https://news.3m.com/2026-06-22-3M-launches-Ask-3M,-an-AI-powered-tool-for-faster-access-to-technical-expertise",
+      "snippet": "3M has launched Ask 3M, a new AI-powered digital assistant that gives industrial customers direct, self-service access to 3M technical expertise. Available now at ask.3m.com, the tool helps users evaluate 3M materials, compare options, and address application challenges more efficiently."
+    },
+    {
+      "title": "Luma | AI Agents for Creative Work",
+      "url": "https://lumalabs.ai/",
+      "snippet": "Luma AI is the creative AI platform for video generation and image creation. Powered by the world&#x27;s leading video generation models, Ray and Uni, and creative agents handling end-to-end workflows. Trusted by leading agencies and brands. Try it free."
+    }
+  ]
+}

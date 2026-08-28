@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "Seoahcho/study-cross-modal-fusion-2023",
+  "slug": "seoahcho-study-cross-modal-fusion-2023",
+  "author": "Seoahcho",
+  "url": "https://huggingface.co/Seoahcho/study-cross-modal-fusion-2023",
+  "created_at": "2026-08-28T11:56:32.000Z",
+  "updated_at": "2026-08-28T11:56:41.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "transformer",
+    "research-notes",
+    "cross-modal-fusion",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 49600,
+  "parameters_human": "49600",
+  "storage_bytes": 198880,
+  "storage_human": "198880 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Seoahcho (Seoah S. Cho) - Hugging Face",
+      "url": "https://huggingface.co/Seoahcho/models",
+      "snippet": "Mechanical keyboards and neural networks Recent Activity updated a datasetabout 13 hours ago Seoahcho/dataset_065057150_weather_sensor_fusion published a datasetabout 13 hours ago Seoahcho/dataset_065057150_weather_sensor_fusion View all activity"
+    },
+    {
+      "title": "A Comprehensive Survey on Deep Learning Multi-Modal Fusion: Methods ...",
+      "url": "https://www.sciencedirect.com/org/science/article/pii/S1546221824005216",
+      "snippet": "Multi-modal fusion technology gradually become a fundamental task in many fields, such as autonomous driving, smart healthcare, sentiment analysis, an…"
+    },
+    {
+      "title": "Get started | ChatGPT",
+      "url": "https://chatgpt.com/auth/login",
+      "snippet": "Log in or sign up to ChatGPT"
+    },
+    {
+      "title": "pubmed.ncbi.nlm.nih.gov",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/32186998/",
+      "snippet": "pubmed.ncbi.nlm.nih.gov"
+    },
+    {
+      "title": "Google Translate",
+      "url": "https://translate.google.com/",
+      "snippet": "Google&#x27;s service, offered free of charge, instantly translates words, phrases, and web pages between English and over 100 other languages."
+    }
+  ]
+}

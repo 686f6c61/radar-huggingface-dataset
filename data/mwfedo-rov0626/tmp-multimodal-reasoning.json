@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "mwfedo-rov0626/tmp-multimodal-reasoning",
+  "slug": "mwfedo-rov0626-tmp-multimodal-reasoning",
+  "author": "mwfedo-rov0626",
+  "url": "https://huggingface.co/mwfedo-rov0626/tmp-multimodal-reasoning",
+  "created_at": "2026-08-28T14:18:54.000Z",
+  "updated_at": "2026-08-28T14:19:03.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "transformer",
+    "research-notes",
+    "multimodal-reasoning",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 33088,
+  "parameters_human": "33088",
+  "storage_bytes": 132832,
+  "storage_human": "132832 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "mwfedo-rov0626/paper_012995545_prompt_engineering · Hugging Face",
+      "url": "https://huggingface.co/mwfedo-rov0626/paper_012995545_prompt_engineering",
+      "snippet": "mwfedo-rov0626 / paper_012995545_prompt_engineering like 0 compact enthusiastic first-person-plural footnote intro-related-method-exp-conclusion markdown narrative-progressive prompt-engineering short-punchy License:apache-2.0 Model card FilesFiles and versions xet Community Copy to bucket new paper_012995545_prompt_engineering.md Paper Files License"
+    },
+    {
+      "title": "Top 15 Multimodal Models in 2026 (Open Source & Proprietary)",
+      "url": "https://blog.unitlab.ai/top-multimodal-models/",
+      "snippet": "Discover what multimodal models are, how their architectures work, the top multimodal models, real-world use cases, and key challenges."
+    },
+    {
+      "title": "AI Model & API Providers Analysis | Artificial Analysis",
+      "url": "https://artificialanalysis.ai/",
+      "snippet": "Comparison and analysis of AI models and API hosting providers. Independent benchmarks across key performance metrics including quality, price, output speed & latency."
+    },
+    {
+      "title": "Best Multimodal Models of 2026 Rankings: Test & Compare",
+      "url": "https://blog.roboflow.com/best-multimodal-models/",
+      "snippet": "The top multimodal models in early 2026 span a range of strengths: SAM 3 leads Roboflow&#x27;s AI Vision Model Rankings with a score of 1391 and zero-shot segmentation across diverse domains, Gemini 2.5 and Gemini 3 offer a 2-million-token context window suited to long visual reasoning tasks, GPT-5 advances multimodal reasoning and generation, Qwen VL Max targets multilingual and document-heavy ..."
+    },
+    {
+      "title": "Best Multimodal AI Models 2026: Vision, Audio, Video, and Agents",
+      "url": "https://aimodelbenchmarks.com/blog/2026-02-13-multimodal-ai-models/",
+      "snippet": "Multimodal AI models can reason over more than text. The current frontier models can read screenshots, charts, product photos, PDFs, diagrams, audio, and video clips, then use that visual or audio context inside a normal chat, coding, or agent workflow."
+    }
+  ]
+}

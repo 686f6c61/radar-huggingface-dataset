@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "mart-INEZ/blip-checkpoint",
+  "slug": "mart-inez-blip-checkpoint",
+  "author": "mart-INEZ",
+  "url": "https://huggingface.co/mart-INEZ/blip-checkpoint",
+  "created_at": "2026-08-28T15:54:05.000Z",
+  "updated_at": "2026-08-28T15:54:15.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "blip",
+    "pytorch",
+    "retrieval",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 16576,
+  "parameters_human": "16576",
+  "storage_bytes": 66784,
+  "storage_human": "66784 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "The Blip - v1.a.03 KA - Free AI CHECKPOINT | Tensor.Art",
+      "url": "https://tensor.art/models/696048756811910268",
+      "snippet": "Download The Blip - free CHECKPOINT SD 1.5 AI model on TENSOR. KA, EXCLUSIVE, 2.5D. By Keith"
+    },
+    {
+      "title": "aidenmartinez/blip-matching · Hugging Face",
+      "url": "https://huggingface.co/aidenmartinez/blip-matching",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "checkpoint AI Models | Civitai",
+      "url": "https://civitai.com/tag/checkpoint",
+      "snippet": "checkpoint Browse 200 Stable Diffusion & Flux models, LoRAs, checkpoints, and embeddings tagged with checkpoint."
+    },
+    {
+      "title": "AI Model Releases in August 2026: Confirmed Updates | BenchLM",
+      "url": "https://benchlm.ai/model-updates/releases/august-2026",
+      "snippet": "24 confirmed AI model releases from 18 providers in August 2026, with primary evidence sources and BenchLM model links."
+    },
+    {
+      "title": "Google Colab",
+      "url": "https://colab.research.google.com/github/kaz12tech/ai_demos/blob/master/Blip_demo.ipynb",
+      "snippet": "Google Colab ... Google Colab"
+    }
+  ]
+}

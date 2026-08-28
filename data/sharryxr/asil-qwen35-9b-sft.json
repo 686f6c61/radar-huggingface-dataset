@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "sharryXR/asil-qwen35-9b-sft",
+  "slug": "sharryxr-asil-qwen35-9b-sft",
+  "author": "sharryXR",
+  "url": "https://huggingface.co/sharryXR/asil-qwen35-9b-sft",
+  "created_at": "2026-06-02T08:34:08.000Z",
+  "updated_at": "2026-08-28T15:08:48.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_5_text",
+    "text-generation",
+    "asil",
+    "qwen3.5",
+    "paper-release",
+    "conversational",
+    "arxiv:2608.26991",
+    "base_model:Qwen/Qwen3.5-9B",
+    "base_model:finetune:Qwen/Qwen3.5-9B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 17,
+  "trending_score": 0,
+  "parameters": 8953803264,
+  "parameters_human": "8.95B",
+  "storage_bytes": 17927652333,
+  "storage_human": "17.9 GB",
+  "base_model": "Qwen/Qwen3.5-9B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "sharryXR/asil-qwen35-9b-sft · Hugging Face",
+      "url": "https://huggingface.co/sharryXR/asil-qwen35-9b-sft",
+      "snippet": "This model repository is reserved for an ASIL paper-release checkpoint. The final checkpoint files and exact base-model license notice will be uploaded after transfer from the training server."
+    },
+    {
+      "title": "ASIL Models - a sharryXR Collection - Hugging Face",
+      "url": "https://huggingface.co/collections/sharryXR/asil-models",
+      "snippet": "Model repositories for the ASIL paper release. Final checkpoints are pending transfer from the training server."
+    },
+    {
+      "title": "Alibaba Cloud Model Studio",
+      "url": "https://modelstudio.alibabacloud.com/",
+      "snippet": "Diverse Model Ecosystem Easily experience and quickly access Alibaba Cloud&#x27;s latest foundational models (FM), including Qwen-Max, Qwen-Plus, Qwen-Turbo, Qwen-VL, and the Wan series."
+    },
+    {
+      "title": "sherckuith/qwen35-9b • LM Studio Hub",
+      "url": "https://lmstudio.ai/sherckuith/qwen35-9b",
+      "snippet": "Qwen3.5 represents a significant leap forward, integrating breakthroughs in multimodal learning, architectural efficiency, reinforcement learning scale, and global accessibility. This is a 9B parameter dense model, supporting a native context length of 262,144 tokens."
+    },
+    {
+      "title": "chips1582/qwen35-9b • LM Studio Hub",
+      "url": "https://lmstudio.ai/chips1582/qwen35-9b",
+      "snippet": "Qwen3.5 represents a significant leap forward, integrating breakthroughs in multimodal learning, architectural efficiency, reinforcement learning scale, and global accessibility. This is a 9B parameter dense model, supporting a native context length of 262,144 tokens."
+    }
+  ]
+}

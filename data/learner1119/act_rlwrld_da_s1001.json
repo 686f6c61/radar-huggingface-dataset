@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "learner1119/act_rlwrld_da_s1001",
+  "slug": "learner1119-act_rlwrld_da_s1001",
+  "author": "learner1119",
+  "url": "https://huggingface.co/learner1119/act_rlwrld_da_s1001",
+  "created_at": "2026-08-28T16:56:49.000Z",
+  "updated_at": "2026-08-28T16:57:09.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "act",
+    "robotics",
+    "dataset:local/rlwrld_v30_da",
+    "arxiv:2304.13705",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 51661468,
+  "parameters_human": "51.7M",
+  "storage_bytes": 206678436,
+  "storage_human": "207 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "learner1119/act_rlwrld_da · Hugging Face",
+      "url": "https://huggingface.co/learner1119/act_rlwrld_da",
+      "snippet": "learner1119 / act_rlwrld_da like 0 Robotics LeRobot Safetensors local/rlwrld_v30_da act arxiv:2304.13705 License:apache-2.0 Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "learner1119 (doyoung kim) - Hugging Face",
+      "url": "https://huggingface.co/learner1119",
+      "snippet": "AI & ML interests ... Recent Activity updated a model about 1 hour ago ... published a model about 1 hour ago"
+    },
+    {
+      "title": "RLWRLD Inc.",
+      "url": "https://www.rlwrld.ai/",
+      "snippet": "We build Real World Intelligence. We Revolutionize Robotics. — We&#x27;re building foundation models that give robots the ability to see, think, and use their hands like humans. From delicate manipulation to dynamic adaptation, our systems achieve dexterity that unlocks real-world autonomy — at scale."
+    },
+    {
+      "title": "Model - RLWRLD",
+      "url": "https://rlwrld.org/model",
+      "snippet": "The RLWRLD manipulation foundation model: architecture, performance benchmarks, and integration guide for factory robot cells."
+    },
+    {
+      "title": "GitHub - RLWRLD/RLDX-1",
+      "url": "https://github.com/RLWRLD/RLDX-1",
+      "snippet": "RLDX-1 is a Vision-Language-Action model (VLA) for human-like dexterous manipulation. Beyond the versatile intelligence inherited from pre-trained VLM backbones, RLDX-1 adds three functional capabilities — motion awareness, long-term memory, and physical sensing — through a unified Multi-Stream Action Transformer (MSAT) architecture, a synthetic-augmented training pipeline, and a real-time ..."
+    }
+  ]
+}

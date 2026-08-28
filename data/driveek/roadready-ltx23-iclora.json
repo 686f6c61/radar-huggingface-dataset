@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "DriveEK/roadready-ltx23-iclora",
+  "slug": "driveek-roadready-ltx23-iclora",
+  "author": "DriveEK",
+  "url": "https://huggingface.co/DriveEK/roadready-ltx23-iclora",
+  "created_at": "2026-08-28T18:45:10.000Z",
+  "updated_at": "2026-08-28T19:02:12.000Z",
+  "license": "ltx-2-community-license",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 327287352,
+  "storage_human": "327 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Lightricks/LTX-2.3-22b-IC-LoRA-Union-Control · Hugging Face",
+      "url": "https://huggingface.co/Lightricks/LTX-2.3-22b-IC-LoRA-Union-Control",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "LTX-2.3 - a Lightricks Collection - Hugging Face",
+      "url": "https://huggingface.co/collections/Lightricks/ltx-23",
+      "snippet": "LTX-2.3 base models, quantized models and accompanying LoRAs and IC-LoRAs"
+    },
+    {
+      "title": "IC-LoRA In LTX-2.5: ComfyUI Workflow For AI Character Consistency",
+      "url": "https://ltx.io/blog/how-to-use-ic-lora-in-ltx-2",
+      "snippet": "Master motion control in AI video generation with IC-LoRA. Learn how to transfer camera movement, scene structure, and human performance from reference videos into LTX-2 workflows."
+    },
+    {
+      "title": "LTX 2.5 & LTX 2.3 ComfyUI Models — Choose by VRAM",
+      "url": "https://ltxworkflow.com/models",
+      "snippet": "Pick the right LTX 2.5 or LTX 2.3 model for your GPU. Grouped by VRAM tier, with GGUF quants, IC-LoRAs, Gemma text encoders, and per-file install paths. Direct HuggingFace links on each model page."
+    },
+    {
+      "title": "IC-LoRA | LTX Documentation",
+      "url": "https://docs.ltx.io/open-source-model/usage-guides/ic-lo-ra",
+      "snippet": "IC-LoRAs (In-Context LoRAs) are specialized adapters for LTX that condition video generation on a reference input, like an existing video clip or a control signal like a depth map. Each adapter is trained for a specific task: structural control, VFX, video restoration, creative transforms, or quality enhancement. Unlike standard LoRAs that modify style globally, IC-LoRAs perform targeted ..."
+    }
+  ]
+}

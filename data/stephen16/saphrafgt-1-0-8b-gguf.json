@@ -1,0 +1,82 @@
+{
+  "schema": 1,
+  "id": "Stephen16/SaphraFgt-1.0-8B-GGUF",
+  "slug": "stephen16-saphrafgt-1-0-8b-gguf",
+  "author": "Stephen16",
+  "url": "https://huggingface.co/Stephen16/SaphraFgt-1.0-8B-GGUF",
+  "created_at": "2026-08-28T15:47:29.000Z",
+  "updated_at": "2026-08-28T16:31:55.000Z",
+  "license": "llama3.1",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "llama.cpp",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "llama.cpp",
+    "gguf",
+    "ollama",
+    "llama",
+    "llama-3.1",
+    "code",
+    "coding",
+    "frontend",
+    "html",
+    "css",
+    "javascript",
+    "ui",
+    "ux",
+    "web-development",
+    "text-generation",
+    "en",
+    "base_model:unsloth/Meta-Llama-3.1-8B-bnb-4bit",
+    "base_model:quantized:unsloth/Meta-Llama-3.1-8B-bnb-4bit",
+    "license:llama3.1",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 8030261312,
+  "parameters_human": "8.03B",
+  "storage_bytes": 4921935199,
+  "storage_human": "4.9 GB",
+  "base_model": "unsloth/Meta-Llama-3.1-8B-bnb-4bit",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Stephen162008/SaphraFgt: SaphraFgt-1.0 8B - GitHub",
+      "url": "https://github.com/Stephen162008/SaphraFgt/blob/main/",
+      "snippet": "SaphraFgt 1.0 8B is a fine-tuned Meta Llama 3.1 8B coding model developed by Seelam Reuben Stephen. It is optimized for frontend development, code generation, bug fixing, UI/UX implementation, code completion, and intelligent code editing while running efficiently with Ollama."
+    },
+    {
+      "title": "GGUF-Models (GGUF) - Hugging Face",
+      "url": "https://huggingface.co/GGUF-Models",
+      "snippet": "Our goal is to simplify the process of searching for and exchanging quantized models in GGUF format, as well as to create a space for efficient exchange and access to the models you need"
+    },
+    {
+      "title": "GGUF Model Discovery - Browse & Download AI Models",
+      "url": "https://local-ai-zone.github.io/",
+      "snippet": "Discover and download GGUF format AI models. Browse and direct download thousands of quantized AI models with detailed information, download counts, and direct links."
+    },
+    {
+      "title": "Models compatible with the GGUF library - Hugging Face",
+      "url": "https://huggingface.co/models?library=gguf",
+      "snippet": "Explore machine learning models."
+    },
+    {
+      "title": "Models - GPT4All",
+      "url": "https://docs.gpt4all.io/gpt4all_desktop/models.html",
+      "snippet": "Explore Models GPT4All connects you with LLMs from HuggingFace with a llama.cpp backend so that they will run efficiently on your hardware. Many of these models can be identified by the file type .gguf. Explore models Example Models Many LLMs are available at various sizes, quantizations, and licenses. LLMs with more parameters tend to be better at coherently responding to instructions LLMs ..."
+    }
+  ]
+}

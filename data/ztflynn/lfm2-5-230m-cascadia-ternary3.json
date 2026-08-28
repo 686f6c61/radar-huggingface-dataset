@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "ZTFlynn/LFM2.5-230M-Cascadia-ternary3",
+  "slug": "ztflynn-lfm2-5-230m-cascadia-ternary3",
+  "author": "ZTFlynn",
+  "url": "https://huggingface.co/ZTFlynn/LFM2.5-230M-Cascadia-ternary3",
+  "created_at": "2026-08-27T04:35:43.000Z",
+  "updated_at": "2026-08-28T12:56:04.000Z",
+  "license": "lfm-open-license",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "cascadia",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "cascadia",
+    "lut",
+    "compression",
+    "spline",
+    "ternary",
+    "quantization",
+    "cpu",
+    "edge",
+    "lfm2",
+    "text-generation",
+    "en",
+    "base_model:LiquidAI/LFM2.5-230M",
+    "base_model:quantized:LiquidAI/LFM2.5-230M",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 306206872,
+  "storage_human": "306 MB",
+  "base_model": "LiquidAI/LFM2.5-230M",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "LiquidAI/LFM2.5-230M · Hugging Face",
+      "url": "https://huggingface.co/LiquidAI/LFM2.5-230M",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "LFM2.5-230M - Liquid Docs",
+      "url": "https://docs.liquid.ai/lfm/models/lfm25-230m",
+      "snippet": "Ultra-compact 230M parameter model for data extraction and lightweight on-device agentic tasks ← Back to Text Models LFM2.5-230M is Liquid AI&#x27;s smallest LFM2.5 text model, designed for edge devices with the tightest memory and compute budgets."
+    },
+    {
+      "title": "ZTFlynn/LFM2-700M-Cascadia-ternary3 · Hugging Face",
+      "url": "https://huggingface.co/ZTFlynn/LFM2-700M-Cascadia-ternary3",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "LFM2.5 230M | Model Library | Overmind",
+      "url": "https://www.overmindlab.ai/models/lfm-2-5-230m",
+      "snippet": "LFM2.5 230M trains on your agent&#x27;s own traces with LoRA adapters or full finetuning, is benchmarked against your production model before any traffic moves, and serves through the same OpenAI-compatible API as every Overmind model. The final weights are yours to download and run anywhere."
+    },
+    {
+      "title": "LFM2.5-230M: Built to Run Anywhere — Blog — Liquid AI",
+      "url": "https://www.liquid.ai/blog/lfm2-5-230m",
+      "snippet": "Meet LFM2.5-230M, Liquid AI&#x27;s smallest model yet: a fast, open-weight foundation model for fine-tuning, edge deployment, tool use, and data extraction."
+    }
+  ]
+}

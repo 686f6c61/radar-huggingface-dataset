@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "lesj0610/Qwen3.8-Flash-Next-NVFP4",
+  "slug": "lesj0610-qwen3-8-flash-next-nvfp4",
+  "author": "lesj0610",
+  "url": "https://huggingface.co/lesj0610/Qwen3.8-Flash-Next-NVFP4",
+  "created_at": "2026-08-28T12:08:31.000Z",
+  "updated_at": "2026-08-28T12:27:13.000Z",
+  "license": "qwen-community-1.0",
+  "license_family": "unknown",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen4_exp",
+    "image-text-to-text",
+    "nvfp4",
+    "fp4",
+    "quantized",
+    "modelopt",
+    "conversational",
+    "base_model:Qwen/Qwen3.8-Flash-Next",
+    "base_model:quantized:Qwen/Qwen3.8-Flash-Next",
+    "license:other",
+    "endpoints_compatible",
+    "8-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 119602003859,
+  "parameters_human": "119.60B",
+  "storage_bytes": 186452044326,
+  "storage_human": "186.5 GB",
+  "base_model": "Qwen/Qwen3.8-Flash-Next",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - QwenLM/Qwen3.8-Flash-Next: Qwen3.8-Flash-Next is the ...",
+      "url": "https://github.com/QwenLM/Qwen3.8-Flash-Next/",
+      "snippet": "Qwen3.8-Flash-Next upgrades the model systematically along four aspects — attention, residual, embedding and optimization — improving model capability while further optimizing computational efficiency, model capacity and training stability: Attention A GDN + QSA hybrid architecture."
+    },
+    {
+      "title": "Qwen/Qwen3.8-Flash-Next | vLLM Recipes - recipes.vllm.ai",
+      "url": "https://recipes.vllm.ai/Qwen/Qwen3.8-Flash-Next",
+      "snippet": "Overview Qwen3.8-Flash-Next is a multimodal, ultra-sparse Mixture-of-Experts model. It has 125B parameters, including an additional 51B N-gram embedding table, while activating 6B parameters per token. The architecture combines four main ideas: GDN + QSA: three of every four layers use Gated DeltaNet to compress history; the fourth uses Qwen Sparse Attention for precise long-range retrieval ..."
+    },
+    {
+      "title": "Qwen3.8 Flash Next Review: Benchmarks, Architecture, Memory ...",
+      "url": "https://kaitchup.substack.com/p/qwen38-flash-next-review-benchmarks",
+      "snippet": "Qwen3.8 Flash Next Review: Benchmarks, Architecture, Memory Requirements, and Local Inference Qwen&#x27;s 125B-A6B model, its 51B n-gram memory, and what it takes to run it locally"
+    },
+    {
+      "title": "Qwen3.8-Flash-Next — ABLITERATED (NVFP4) - Hugging Face",
+      "url": "https://huggingface.co/dealignai/Qwen3.8-Flash-Next-ABLITERATED-NVFP4/blob/main/README.md",
+      "snippet": "Qwen3.8-Flash-Next-ABLITERATED-NVFP4 like 1 Image-Text-to-Text Safetensors sglang qwen4_exp abliterated nvfp4 fp4 qwen multimodal reasoning mtp conversational 8-bit precision modelopt License:qwen-community-license-1. Model card FilesFiles and versions xet Community Copy to bucket new main Qwen3.8-Flash-Next-ABLITERATED-NVFP4 /README.md ..."
+    },
+    {
+      "title": "Qwen3.8-Flash-Next Previews Qwen4 Architecture With 6B Active ...",
+      "url": "https://www.unite.ai/qwen3-8-flash-next-previews-qwen4-architecture-with-6b-active-parameters/",
+      "snippet": "Alibaba&#x27;s Qwen team released Qwen3.8-Flash-Next on August 26, 2026, an open-weight experimental model that previews the architecture intended to underpin Qwen4. The model carries 125B parameters but activates only 6B per token, a configuration the team frames as a step toward what it calls ..."
+    }
+  ]
+}

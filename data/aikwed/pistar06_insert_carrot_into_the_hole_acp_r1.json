@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "Aikwed/pistar06_insert_carrot_into_the_hole_acp_r1",
+  "slug": "aikwed-pistar06_insert_carrot_into_the_hole_acp_r1",
+  "author": "Aikwed",
+  "url": "https://huggingface.co/Aikwed/pistar06_insert_carrot_into_the_hole_acp_r1",
+  "created_at": "2026-08-28T00:32:14.000Z",
+  "updated_at": "2026-08-28T14:03:56.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "robotics",
+    "vision-language-action",
+    "pi05",
+    "advantage-conditioned-policy",
+    "human-in-the-loop",
+    "dataset:AlvinAi/insert_carrot_into_the_hole_hil",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 3616757520,
+  "parameters_human": "3.62B",
+  "storage_bytes": 29892395972,
+  "storage_human": "29.9 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Aikwed/pi0.5-insert-carrot-epoch-5 · Hugging Face",
+      "url": "https://huggingface.co/Aikwed/pi0.5-insert-carrot-epoch-5",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Evo-RL/src/lerobot/values/pistar06 at main · MINT-SJTU/Evo-RL",
+      "url": "https://github.com/MINT-SJTU/Evo-RL/tree/main/src/lerobot/values/pistar06",
+      "snippet": "We release Evo-RL, the opensource real-world offline RL on So-101 and AgileX PiPER for easier reproduction. - MINT-SJTU/Evo-RL"
+    },
+    {
+      "title": "ChatGPT: Chat, Work, Create & Code with AI",
+      "url": "https://chatgpt.com/",
+      "snippet": "Use ChatGPT to answer questions, write, create images, complete work, and code—all in one place. Get started for free or download the app."
+    },
+    {
+      "title": "Perplexity AI",
+      "url": "https://www.perplexity.ai/",
+      "snippet": "Perplexity is a free AI-powered answer engine that provides accurate, trusted, and real-time answers to any question."
+    },
+    {
+      "title": "Evo-RL/src/lerobot/values/pistar06/configuration_pistar06.py ... - GitHub",
+      "url": "https://github.com/MINT-SJTU/Evo-RL/blob/main/src/lerobot/values/pistar06/configuration_pistar06.py",
+      "snippet": "Evo-RL / src / lerobot / values / pistar06 / configuration_pistar06.py Cannot retrieve latest commit at this time."
+    }
+  ]
+}

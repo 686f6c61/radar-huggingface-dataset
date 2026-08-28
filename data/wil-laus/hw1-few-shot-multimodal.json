@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "wil-laus/hw1-few-shot-multimodal",
+  "slug": "wil-laus-hw1-few-shot-multimodal",
+  "author": "wil-laus",
+  "url": "https://huggingface.co/wil-laus/hw1-few-shot-multimodal",
+  "created_at": "2026-08-28T18:15:40.000Z",
+  "updated_at": "2026-08-28T18:16:03.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "transformer",
+    "research-notes",
+    "few-shot-multimodal",
+    "license:cc-by-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 33088,
+  "parameters_human": "33088",
+  "storage_bytes": 132832,
+  "storage_human": "132832 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Few-Shot Multimodal Medical Imaging: A Theoretical Framework",
+      "url": "https://arxiv.org/pdf/2511.01140",
+      "snippet": "Furthermore, few studies have examined how interactions among modalities influence learnability and generalization. Establishing a rigor-ous information-theoretic foundation for multimodal learning is therefore essential to guide model design and interpretation in medical applications."
+    },
+    {
+      "title": "Few-Shot Multimodal Medical Imaging: A Theoretical Framework",
+      "url": "https://arxiv.org/pdf/2511.01140v2",
+      "snippet": "FSL allows models to gen-eralize from few labeled samples [6], and meta-learning im- a proves FSL by enabling quick adaptation to new tasks with less unified theoretical framework for few shot multimodal medical imaging that jointly characterizes sample complexity, uncertainty quantification, and interpretability."
+    },
+    {
+      "title": "markusrrs/few-shot-multimodal-alpha · Hugging Face",
+      "url": "https://huggingface.co/markusrrs/few-shot-multimodal-alpha",
+      "snippet": "A structured set of research notes on Few Shot Multimodal, with concrete evaluation references and open questions. Plans and hypotheses are kept separate from completed results."
+    },
+    {
+      "title": "paper_010770873_few_shot_multimodal - Hugging Face",
+      "url": "https://huggingface.co/kwiatkowskizuzanna/paper_010770873_few_shot_multimodal",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Multimodal Large Models in Few-Shot Learning Scenarios",
+      "url": "https://ieeexplore.ieee.org/document/11198027",
+      "snippet": "Multimodal large models (MLLMs) have recently demonstrated significant potential in addressing the challenge of few-shot learning across various tasks. By integrating information from different modalities such as vision, language, and audio, these models offer enhanced generalization and contextual understanding, which are essential when training data is limited. This survey presents a ..."
+    }
+  ]
+}

@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "Irfanuruchi/MathForm-8B-MLX-4bit",
+  "slug": "irfanuruchi-mathform-8b-mlx-4bit",
+  "author": "Irfanuruchi",
+  "url": "https://huggingface.co/Irfanuruchi/MathForm-8B-MLX-4bit",
+  "created_at": "2026-08-28T11:39:51.000Z",
+  "updated_at": "2026-08-28T12:02:25.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "mlx",
+  "languages": [],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "qwen3",
+    "math",
+    "lean",
+    "lean4",
+    "formalization",
+    "apple-silicon",
+    "base_model:openbmb/MathForm-8B",
+    "base_model:quantized:openbmb/MathForm-8B",
+    "license:apache-2.0",
+    "4-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1280062464,
+  "parameters_human": "1.28B",
+  "storage_bytes": 4619257814,
+  "storage_human": "4.6 GB",
+  "base_model": "openbmb/MathForm-8B",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "[2608.14221] MathForm: Scaling Mathematical Autoformalization with ...",
+      "url": "https://arxiv.org/abs/2608.14221",
+      "snippet": "Autoformalization is commonly framed as translating natural-language mathematical statements into machine-verifiable formal languages such as Lean 4. However, faithful formalization requires more than translation. Models must map mathematical concepts to the complex hierarchy of types and definitions in formal libraries such as Mathlib, while ensuring that generated statements preserve the ..."
+    },
+    {
+      "title": "GitHub - OpenBMB/MathForm",
+      "url": "https://github.com/OpenBMB/MathForm",
+      "snippet": "Figure 1: Overview of the MathForm data construction and training pipeline. The system combines Mathlib knowledge retrieval, compilation and semantic verification, and iterative refinement to generate reliable formal data, followed by trajectory reconstruction and training of MathForm-8B."
+    },
+    {
+      "title": "Irfanuruchi/Polaris-V1-MLX-4bit · Hugging Face",
+      "url": "https://huggingface.co/Irfanuruchi/Polaris-V1-MLX-4bit",
+      "snippet": "Irfanuruchi / Polaris-V1-MLX-4bit like 0 Text Generation MLX Safetensors English Chinese qwen3_5 code reasoning reinforcement-learning swe-bench agentic-ai polaris nitrai conversational Eval Results (legacy) 4-bit precision License:apache-2.0 Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "GitHub - IrfanUruchi/mlx-models-: Index of my MLX-ready model ...",
+      "url": "https://github.com/IrfanUruchi/mlx-models-",
+      "snippet": "MLX Models (Apple Silicon) A small index linking to my MLX-ready model collections (docs + links). All model artifacts live on Hugging Face."
+    },
+    {
+      "title": "MathForm 8B by openbmb — VRAM 16.3GB, 40K context | LLM Explorer",
+      "url": "https://llm-explorer.com/model/openbmb%2FMathForm-8B,6XElJI3ODHCPM7Wzn44eAM",
+      "snippet": "MathForm 8B is an open-source 8b LLM by openbmb. VRAM 16.3GB, 40K context. Compare benchmarks, capabilities, and deployment details on LLM Explorer."
+    }
+  ]
+}

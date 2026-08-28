@@ -1,0 +1,79 @@
+{
+  "schema": 1,
+  "id": "Atomic-Germ/Aroow-Rust-Coder-9B-NPU2",
+  "slug": "atomic-germ-aroow-rust-coder-9b-npu2",
+  "author": "Atomic-Germ",
+  "url": "https://huggingface.co/Atomic-Germ/Aroow-Rust-Coder-9B-NPU2",
+  "created_at": "2026-08-28T17:36:46.000Z",
+  "updated_at": "2026-08-28T17:51:20.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "q4nx",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "q4nx",
+    "qwen3_5",
+    "rust",
+    "code",
+    "code-generation",
+    "code-completion",
+    "fill-in-the-middle",
+    "reasoning",
+    "function-calling",
+    "vision",
+    "qwen3.8-froggeric-v22.4",
+    "npu2",
+    "fastflowlm",
+    "flm",
+    "v1.0.1",
+    "qwen3.5",
+    "en",
+    "base_model:Convence/Aroow-Rust-Coder-9B",
+    "base_model:quantized:Convence/Aroow-Rust-Coder-9B",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 8680395831,
+  "storage_human": "8.7 GB",
+  "base_model": "Convence/Aroow-Rust-Coder-9B",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - Atomic-Germ/OpenNPU: Goal: understand the xclbin binary format ...",
+      "url": "https://github.com/Atomic-Germ/OpenNPU",
+      "snippet": "Reverse engineering and open toolchain for the AMD XDNA NPU2 (Phoenix/Strix SoC) found in Ryzen AI series processors. Goal: understand the xclbin binary format and build open re-implementations of the NPU kernels."
+    },
+    {
+      "title": "OpenCode - a Atomic-Germ Collection - Hugging Face",
+      "url": "https://huggingface.co/collections/Atomic-Germ/opencode",
+      "snippet": "These models work well with OpenCode updated 5 days ago These models work well with OpenCode Upvote - Sort: Collection"
+    },
+    {
+      "title": "LLM Leaderboard 2026: Compare 300+ Top AI Models by Intelligence, Speed ...",
+      "url": "https://llm-stats.com/leaderboards/llm-leaderboard",
+      "snippet": "The LLM Leaderboard — independent ranking of GPT, Claude, Gemini, Llama, DeepSeek and 300+ AI models by intelligence, speed and price. Filter by provider, license, modality and context window; sort by every benchmark. Composite LLM Stats Score updated continuously from public benchmarks and live API metrics."
+    },
+    {
+      "title": "Quantized Models for Convence/Aroow-Rust-Coder-9B - Hugging Face",
+      "url": "https://huggingface.co/models?other=base_model:quantized:Convence/Aroow-Rust-Coder-9B",
+      "snippet": "Explore machine learning models. Active filters: Convence/Aroow-Rust-Coder-9B"
+    },
+    {
+      "title": "OpenCode | The open source AI coding agent",
+      "url": "https://opencode.ai/",
+      "snippet": "The open source AI coding agent Free models included or connect any model from any provider, including Claude, GPT, Gemini and more."
+    }
+  ]
+}

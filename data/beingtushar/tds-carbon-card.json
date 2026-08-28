@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "beingtushar/tds-carbon-card",
+  "slug": "beingtushar-tds-carbon-card",
+  "author": "beingtushar",
+  "url": "https://huggingface.co/beingtushar/tds-carbon-card",
+  "created_at": "2026-08-28T14:53:57.000Z",
+  "updated_at": "2026-08-28T14:55:28.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "co2_eq_emissions",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "23f3001819/tds-carbon-card · Hugging Face",
+      "url": "https://huggingface.co/23f3001819/tds-carbon-card",
+      "snippet": "Model Card - Green AI Carbon Accounting This repository documents the carbon footprint and energy accounting for the assigned model training run in TDS GA8."
+    },
+    {
+      "title": "24f1002805/tds-carbon-card · Hugging Face",
+      "url": "https://huggingface.co/24f1002805/tds-carbon-card",
+      "snippet": "Model Card - Green AI Carbon Accounting This repository documents the carbon footprint and energy accounting for the assigned model training run in TDS GA8."
+    },
+    {
+      "title": "Model Radar — Real-time AI Intelligence Hub",
+      "url": "https://modelradar.live/",
+      "snippet": "Track the latest AI models, pricing, benchmarks, and releases across every major AI lab. Updated automatically every 6 hours."
+    },
+    {
+      "title": "Google AI Studio",
+      "url": "https://aistudio.google.com/",
+      "snippet": "Build with Google AI Studio Go from prompt to production with Gemini, Veo, Nano Banana, and more"
+    },
+    {
+      "title": "Musk unveils joint Tesla-xAI project &#x27;Macrohard&#x27; - CNBC",
+      "url": "https://www.cnbc.com/2026/03/11/musk-unveils-joint-tesla-xai-project-macrohard.html",
+      "snippet": "In a post on X, Elon Musk said the project, dubbed \"Macrohard\" or \"Digital Optimus,\" pairs xAI&#x27;s Grok large language model with a Tesla-developed AI agent."
+    }
+  ]
+}

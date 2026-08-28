@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "vkqwert12/tars-v1-medical",
+  "slug": "vkqwert12-tars-v1-medical",
+  "author": "vkqwert12",
+  "url": "https://huggingface.co/vkqwert12/tars-v1-medical",
+  "created_at": "2026-08-28T13:46:45.000Z",
+  "updated_at": "2026-08-28T13:46:57.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "pytorch",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 137632447,
+  "storage_human": "138 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - ExpertOpsAI/MedicalModelLibrary: A collection of AI models ...",
+      "url": "https://github.com/ExpertOpsAI/MedicalModelLibrary/",
+      "snippet": "ClinicalBERT A Pretrained Model on a large corpus of 1.2B words of diverse diseases. ClinicalBERT Medical question-answering (QA) tasks LLaVA-Med A large language and vision model trained using a curriculum learning method for adapting LLaVA to the biomedical domain. microsoft/llava-med-v1.5-mistral ..."
+    },
+    {
+      "title": "vkqwert12 (VIMAL KUMAR.D.S) - Hugging Face",
+      "url": "https://huggingface.co/vkqwert12",
+      "snippet": "Recent Activity new activityabout 1 month ago vkqwert12/cloude-7b-finance-demo: Apply for a GPU community grant: Personal project updated a Spaceabout 1 month ago vkqwert12/cloude-7b-finance-demo published a Spaceabout 1 month ago vkqwert12/cloude-7b-finance-demo View all activity"
+    },
+    {
+      "title": "Models - Hugging Face",
+      "url": "https://huggingface.co/models?search=medical",
+      "snippet": "Explore machine learning models."
+    },
+    {
+      "title": "TARS-AI · GitHub",
+      "url": "https://github.com/TARS-AI-Community/",
+      "snippet": "The official documentation hub for TARS-AI. Find guides, technical references, and contribution resources here. MDX 31 9"
+    },
+    {
+      "title": "Agent TARS - Open-source Multimodal AI Agent Stack",
+      "url": "https://agent-tars.com/",
+      "snippet": "Agent TARS is a general multimodal AI Agent stack, it brings the power of GUI Agent and Vision into your terminal, computer, browser and product. It primarily ships with a CLI and Web UI for usage. It aims to provide a workflow that is closer to human-like task completion through cutting-edge multimodal LLMs and seamless integration with various real-world MCP tools."
+    }
+  ]
+}

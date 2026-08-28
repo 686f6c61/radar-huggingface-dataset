@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "ALYSSASK/postdoc-generation-2024",
+  "slug": "alyssask-postdoc-generation-2024",
+  "author": "ALYSSASK",
+  "url": "https://huggingface.co/ALYSSASK/postdoc-generation-2024",
+  "created_at": "2026-08-28T18:39:34.000Z",
+  "updated_at": "2026-08-28T18:39:45.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "blip",
+    "pytorch",
+    "generation",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 24832,
+  "parameters_human": "24832",
+  "storage_bytes": 99808,
+  "storage_human": "99808 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Best LLM Leaderboard 2026 | AI Model Rankings, Benchmarks & Pricing",
+      "url": "https://onyx.app/llm-leaderboard",
+      "snippet": "The definitive LLM leaderboard — ranking the best AI models including Claude, GPT, Gemini, DeepSeek, Llama, and more across coding, reasoning, math, agentic, and chat benchmarks. Compare LLM rankings, tier lists, and pricing."
+    },
+    {
+      "title": "AI Detector - Trusted AI Checker for ChatGPT, Copilot & Gemini - Scribbr",
+      "url": "https://www.scribbr.com/ai-detector/",
+      "snippet": "Scribbr AI Detector: Identify AI-generated content from ChatGPT, Copilot, and Gemini with our advanced AI Checker. Try it for free!"
+    },
+    {
+      "title": "Google AI Studio",
+      "url": "https://aistudio.google.com/",
+      "snippet": "Build with Google AI Studio Go from prompt to production with Gemini, Veo, Nano Banana, and more"
+    },
+    {
+      "title": "Frank Noe on X: \"We are hiring a postdoc on very large-scale protein ...",
+      "url": "https://x.com/FrankNoeBerlin/status/2092296851558940953",
+      "snippet": "We are hiring a postdoc on very large-scale protein modeling and free energy calculation for protein-ligand and membrane protein systems. Join us at @ MSFTResearch to develop the next generation of AI models for biomolecular dynamics and function."
+    },
+    {
+      "title": "LLM Model Evolution 2024-2026 — Complete Reference (244 Models)",
+      "url": "https://www.llm-evolution.com/",
+      "snippet": "LLM Model Evolution: The Complete 2024-2026 Reference A comprehensive catalog of every significant language model release across all major providers and sizes — from 135M edge models to 1.7T+ parameter frontiers. Tracks 244 models across 25 families and 13 providers."
+    }
+  ]
+}

@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "SevdanurGenc/Lesion-Detection-in-Breast-Ultrasound-Images-with-YOLOv8",
+  "slug": "sevdanurgenc-lesion-detection-in-breast-ultrasound-images-with-yolov8",
+  "author": "SevdanurGenc",
+  "url": "https://huggingface.co/SevdanurGenc/Lesion-Detection-in-Breast-Ultrasound-Images-with-YOLOv8",
+  "created_at": "2026-08-28T13:51:51.000Z",
+  "updated_at": "2026-08-28T14:08:11.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "doi:10.57967/hf/10143",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 8160782,
+  "storage_human": "8 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "An AI-enabled comprehensive breast ultrasound diagnostic ... - Nature",
+      "url": "https://www.nature.com/articles/s41598-025-29554-6",
+      "snippet": "This study developed an AI-driven diagnostic system for VSI-B, combining a segmentation model (Attention U-Net 3D) with a classification model for lesion detection."
+    },
+    {
+      "title": "Enhancing lesion detection in automated breast ultrasound using ...",
+      "url": "https://www.sciencedirect.com/science/article/pii/S1361841525000143",
+      "snippet": "Abstract The inherent variability of lesions poses challenges in leveraging AI in 3D automated breast ultrasound (ABUS) for lesion detection. Traditional methods based on single scans have fallen short compared to comprehensive evaluations by experienced sonologists using multiple scans."
+    },
+    {
+      "title": "GitHub - daud-shah/Breast_Lesion_Segmentation_using_YOLO",
+      "url": "https://github.com/daud-shah/Breast_Lesion_Segmentation_using_YOLO",
+      "snippet": "This project focuses on instance segmentation of breast ultrasound images using YOLOv8 and YOLOv11 models. The main goal is to detect and segment tumor regions accurately from ultrasound scans to assist in early diagnosis and medical research."
+    },
+    {
+      "title": "Improving Breast Cancer Diagnosis in Ultrasound Images Using Deep ...",
+      "url": "https://www.sciencedirect.com/science/article/pii/S1076633225004350",
+      "snippet": "Early detection of malignant lesions in ultrasound images is crucial for effective cancer diagnosis and treatment. While traditional methods rely on radiologists, deep learning models can improve accuracy, reduce errors, and enhance efficiency. This study explores the application of a deep learning model for classifying benign and malignant lesions, focusing on its performance and ..."
+    },
+    {
+      "title": "arXiv:2501.06869v1 [cs.AI] 12 Jan 2025",
+      "url": "https://arxiv.org/pdf/2501.06869",
+      "snippet": "itse熉덕cacyinbreastcancerscreening. The lesion detection task [21, 65] aims to precisely identify whether the breast ultrasound images contain lesions and l cate all lesions using bounding boxes. As shown in Fig. 3a, we evaluated the detection performance on small lesions which are defined as lesions with smallest 30% relative areas (n ..."
+    }
+  ]
+}

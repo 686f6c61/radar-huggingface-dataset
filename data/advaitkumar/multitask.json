@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "advaitkumar/multitask",
+  "slug": "advaitkumar-multitask",
+  "author": "advaitkumar",
+  "url": "https://huggingface.co/advaitkumar/multitask",
+  "created_at": "2026-08-28T18:04:17.000Z",
+  "updated_at": "2026-08-28T18:04:26.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "cnn_transformer",
+    "pytorch",
+    "cnn-transformer",
+    "multitask",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 24832,
+  "parameters_human": "24832",
+  "storage_bytes": 99808,
+  "storage_human": "99808 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Multi — one task, the right AI workflow",
+      "url": "https://getmulti.ai/",
+      "snippet": "One prompt. Four ways to a better answer. Most AI apps hand you one model and hope it&#x27;s the right one. Multi lets you ask a single model, compare a few side by side, convene a council of up to seven, or let Multi pick for you — all from the same prompt."
+    },
+    {
+      "title": "Advait Kumar",
+      "url": "https://advaitkumar3107.github.io/",
+      "snippet": "June 2021: Awarded a change of branch from a Masters in Communication and Signal Processing to a Masters in AI & Data Science. July 2020: Completed a Research and Development Internship at Philips Innovation Campus (Bangalore)."
+    },
+    {
+      "title": "Multi-Task Learning(MTL) for Deep Learning - GeeksforGeeks",
+      "url": "https://www.geeksforgeeks.org/deep-learning/multi-task-learningmtl-for-deep-learning/",
+      "snippet": "Multi-Task Learning (MTL) is a machine learning approach where a single model learns multiple related tasks simultaneously using shared representations, improving generalization and reducing overfitting."
+    },
+    {
+      "title": "Advait Kumar - Google Scholar",
+      "url": "https://scholar.google.com/citations?user=2-4hXuIAAAAJ&hl=en",
+      "snippet": "‪Indian Institute of Technology, Bombay‬ - ‪‪Cited by 81‬‬ - ‪Deep Learning‬ - ‪Quantitative Finance‬"
+    },
+    {
+      "title": "Deep multi-task learning: a review of concepts, methods, and ... - Springer",
+      "url": "https://link.springer.com/article/10.1007/s41060-025-00892-y",
+      "snippet": "The authors in [7] have made a superior comparison of multi-task learning and single-task learning approaches. Single-task learning is a machine learning approach where a model is trained to perform only one specific task [8]. It also focuses exclusively on optimizing performance for a single objective [7]."
+    }
+  ]
+}

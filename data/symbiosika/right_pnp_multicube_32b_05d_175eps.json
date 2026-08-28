@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "symbiosika/right_pnp_multicube_32b_05d_175eps",
+  "slug": "symbiosika-right_pnp_multicube_32b_05d_175eps",
+  "author": "symbiosika",
+  "url": "https://huggingface.co/symbiosika/right_pnp_multicube_32b_05d_175eps",
+  "created_at": "2026-08-27T13:39:00.000Z",
+  "updated_at": "2026-08-28T11:56:17.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "robotics",
+    "groot",
+    "base_model:nvidia/GR00T-N1.7-3B",
+    "base_model:finetune:nvidia/GR00T-N1.7-3B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 3144016000,
+  "parameters_human": "3.14B",
+  "storage_bytes": 12576224736,
+  "storage_human": "12.6 GB",
+  "base_model": "nvidia/GR00T-N1.7-3B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ChatGPT: Chat, Work, Create & Code with AI",
+      "url": "https://chatgpt.com/",
+      "snippet": "Use ChatGPT to answer questions, write, create images, complete work, and code—all in one place. Get started for free or download the app."
+    },
+    {
+      "title": "MultiCube: Compositional 3D Generation With Part-Level Semantic and ...",
+      "url": "https://arxiv.org/html/2608.20448v1",
+      "snippet": "While the base CubePart model effectively generates compositional 3D objects, it lacks spatial controllability. MultiCube introduces spatial controls by injecting part-level bounding box conditions into both stages of the generation pipeline."
+    },
+    {
+      "title": "Facebook",
+      "url": "https://www.facebook.com/",
+      "snippet": "Connect and share with friends, family, and the world on Facebook."
+    },
+    {
+      "title": "Google Gemini",
+      "url": "https://gemini.google.com/",
+      "snippet": "Meet Gemini, Google&#x27;s AI assistant. Get help with writing, planning, brainstorming, and more. Experience the power of generative AI."
+    },
+    {
+      "title": "Thingiverse — Search & Download 3D Printing Models and STL Files",
+      "url": "https://thingiverse.app/",
+      "snippet": "Thingiverse in a nutshell Thingiverse is a search engine that sweeps the world&#x27;s 3D printing libraries so a maker never has to open them one by one. Hand Thingiverse an idea — a snapped bracket, a tabletop miniature, a clever kitchen gadget — and it combs indexed listings from across the hobbyist printing web, then ranks whatever is most likely to come off the bed clean. The entire promise ..."
+    }
+  ]
+}

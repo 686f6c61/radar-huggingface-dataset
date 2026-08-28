@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "RiverRider/gemma-4-31B-it-nf4",
+  "slug": "riverrider-gemma-4-31b-it-nf4",
+  "author": "RiverRider",
+  "url": "https://huggingface.co/RiverRider/gemma-4-31B-it-nf4",
+  "created_at": "2026-08-28T18:11:56.000Z",
+  "updated_at": "2026-08-28T18:12:43.000Z",
+  "license": "gemma",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "gemma4",
+    "bitsandbytes",
+    "nf4",
+    "4-bit",
+    "gemma",
+    "srt",
+    "image-text-to-text",
+    "conversational",
+    "base_model:google/gemma-4-31B-it",
+    "base_model:quantized:google/gemma-4-31B-it",
+    "license:gemma",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 31273088876,
+  "parameters_human": "31.27B",
+  "storage_bytes": 18295080170,
+  "storage_human": "18.3 GB",
+  "base_model": "google/gemma-4-31B-it",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "google/gemma-4-31B · Hugging Face",
+      "url": "https://huggingface.co/google/gemma-4-31B",
+      "snippet": "Gemma 4 features a context window of up to 256K tokens and maintains multilingual support in over 140 languages. Featuring both Dense and Mixture-of-Experts (MoE) architectures, Gemma 4 is well-suited for tasks like text generation, coding, and reasoning. The models are available in five distinct sizes: E2B, E4B, 12B, 26B A4B, and 31B."
+    },
+    {
+      "title": "RiverRider/srt-nla-gemma4-artifacts · Hugging Face",
+      "url": "https://huggingface.co/RiverRider/srt-nla-gemma4-artifacts",
+      "snippet": "RiverRider / srt-nla-gemma4-artifacts like 1 srt interpretability cross-modal substrate-invariance artifacts License:apache-2.0 Model card FilesFiles and versions xet Community Copy to bucket new SRT gemma-4 artifacts Layout procrustes/ — the cross-modal ladder on gemma-4-31B (layer 47) q4/ — quantization, runtime drift, and the tower factorial scalefloor/ — 31B to 3B, no capability loss ..."
+    },
+    {
+      "title": "gemma-4-31b-it Model by Google | NVIDIA NIM",
+      "url": "https://build.nvidia.com/google/gemma-4-31b-it/modelcard",
+      "snippet": "Gemma 4 31B IT Description Gemma 4 31B IT is an open multimodal model built by Google DeepMind that handles text and image inputs, can process video as sequences of frames, and generates text output. It is designed to deliver frontier-level performance for reasoning, agentic workflows, coding, and multimodal understanding on consumer GPUs and workstations, with a 256K-token context window and ..."
+    },
+    {
+      "title": "Gemma 4 — Google DeepMind",
+      "url": "https://deepmind.google/models/gemma/gemma-4/",
+      "snippet": "Safety Gemma 4 models undergo the same rigorous infrastructure security protocols as our proprietary models. By choosing Gemma 4, enterprises and sovereign organizations gain a trusted, transparent foundation that delivers state-of-the-art capabilities while meeting the highest standards for security and reliability."
+    },
+    {
+      "title": "gemma-4-31b-it Model by Google | NVIDIA NIM",
+      "url": "https://build.nvidia.com/google/gemma-4-31b-it",
+      "snippet": "Dense 31B model delivering frontier reasoning for coding, agentic workflows, and fine-tuning."
+    }
+  ]
+}

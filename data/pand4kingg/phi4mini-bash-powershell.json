@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "pand4kingg/phi4mini-bash-powershell",
+  "slug": "pand4kingg-phi4mini-bash-powershell",
+  "author": "pand4kingg",
+  "url": "https://huggingface.co/pand4kingg/phi4mini-bash-powershell",
+  "created_at": "2026-08-28T12:45:27.000Z",
+  "updated_at": "2026-08-28T12:54:59.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "phi3",
+    "text-generation",
+    "text-generation-inference",
+    "unsloth",
+    "conversational",
+    "custom_code",
+    "en",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 3836021760,
+  "parameters_human": "3.84B",
+  "storage_bytes": 7687591069,
+  "storage_human": "7.7 GB",
+  "base_model": "unsloth/phi-4-mini-instruct-unsloth-bnb-4bit",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - dfinke/PSAI: High-agency PowerShell AI framework for multi ...",
+      "url": "https://github.com/dfinke/PSAI",
+      "snippet": "PowerShell-Native AI Agents & Multi-Agent Orchestration PSAI is a high-agency framework designed to bridge the gap between robust systems engineering and Large Language Models. Built for developers and architects, it transforms AI from a \"chatbot\" into a functional engineering component within your existing PowerShell ecosystem. Leveraging multi-decade design patterns, PSAI provides the ..."
+    },
+    {
+      "title": "microsoft/Phi-4-mini-instruct · Hugging Face",
+      "url": "https://huggingface.co/microsoft/Phi-4-mini-instruct",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "microsoft/phi-4 · Hugging Face",
+      "url": "https://huggingface.co/microsoft/phi-4",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "AI Model Catalog | Microsoft Foundry Models",
+      "url": "https://ai.azure.com/catalog/models/Phi-4-mini-instruct",
+      "snippet": "Phi-4-mini-instruct is a dense decoder-only Transformer model with 3.8B parameters, offering key improvements over Phi-3.5-Mini, including a 200K vocabulary, grouped-query attention, and shared embedding. It is designed for chat-completion prompts, generating text based on user input, with a context length of 128K tokens."
+    },
+    {
+      "title": "Get started with AI Shell in PowerShell - PowerShell",
+      "url": "https://learn.microsoft.com/en-us/powershell/utility-modules/aishell/get-started/aishell-powershell?view=ps-modules",
+      "snippet": "This article explains how to install and configure AI Shell, and get started chatting with an AI assistant in PowerShell."
+    }
+  ]
+}

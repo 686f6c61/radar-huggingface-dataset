@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "Joe-3/smart-recycle-bin",
+  "slug": "joe-3-smart-recycle-bin",
+  "author": "Joe-3",
+  "url": "https://huggingface.co/Joe-3/smart-recycle-bin",
+  "created_at": "2026-08-28T12:00:59.000Z",
+  "updated_at": "2026-08-28T12:15:05.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "onnx",
+    "vit",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 343747972,
+  "storage_human": "344 MB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Smart Recycle Bin",
+      "url": "https://smart-recyclebin.com/",
+      "snippet": "The Smart Recycle Bin uses Artificial Intelligence and IoT technologies to automate waste sorting. The system uses a Raspberry Pi 4, camera module, ultrasonic sensors, servo motor, and stepper motor integrated with the YOLO11 object detection model."
+    },
+    {
+      "title": "GitHub - Aliqatrawi/Smart-recycle-bin: AI-powered smart recycle bin for ...",
+      "url": "https://github.com/Aliqatrawi/Smart-recycle-bin",
+      "snippet": "Project Overview SMART RECYCLE BIN: AN AI-DRIVEN IOT SYSTEM FOR AUTOMATED WASTE CLASSIFICATION is a senior project that uses Artificial Intelligence and IoT to classify waste automatically. The system detects waste objects using a camera and a YOLO AI model, then sorts them into the correct category."
+    },
+    {
+      "title": "GitHub - rismeh/Smart_Recycle_Bin_AI",
+      "url": "https://github.com/rismeh/Smart_Recycle_Bin_AI",
+      "snippet": "The tasks include: SmartBin AI: Build a compact TFLite model to classify recyclable categories (plastic, aluminum, paper) and detect contamination or incorrect items. Integrate LED/screen feedback. Sustainability Mirror AI: Implement camera-based detection for presence, reusable containers, and gestures, with real-time motivational overlays."
+    },
+    {
+      "title": "SMART BIN - AI Incorporated",
+      "url": "https://www.aiincorporated.com/smart-bin",
+      "snippet": "We took our versatile mobile platform and adapted it to create a robotic waste receptacle that every homeowner can use. Depth Sensors - Measure distance. Stereo Vision Cameras - Create a 3D map. TOF Sensors - Detect Obstacles."
+    },
+    {
+      "title": "5 IoT‑Powered Smart Recycling Bins & Robots: The Future of Waste Management",
+      "url": "https://www.intelligentliving.co/iot%E2%80%91smart-recycling-bins-robots-waste/",
+      "snippet": "5. Integrated Ecosystem of Smart Waste Management At this point, we&#x27;ve explored the individual components of a rapidly evolving waste management future: IoT-enabled bins that reduce collection waste, AI sorters that elevate recycling accuracy, and data platforms that guide smarter decision-making. But these innovations don&#x27;t operate in ..."
+    }
+  ]
+}

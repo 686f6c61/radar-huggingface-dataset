@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "sude-nlp/neural-recommendation-system",
+  "slug": "sude-nlp-neural-recommendation-system",
+  "author": "sude-nlp",
+  "url": "https://huggingface.co/sude-nlp/neural-recommendation-system",
+  "created_at": "2026-08-28T16:48:02.000Z",
+  "updated_at": "2026-08-28T17:09:28.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Using Neural Networks for Your Recommender System",
+      "url": "https://developer.nvidia.com/blog/using-neural-networks-for-your-recommender-system/",
+      "snippet": "Benefits of DL recommender systems There are many different techniques to design a recommender system, such as association rules, content-based or collaborative filtering, matrix factorization, or training a linear or tree-based model to predict the interaction likelihood. What are the advantages of using neural networks?"
+    },
+    {
+      "title": "Recommender Systems - A Complete Guide to Machine Learning Models",
+      "url": "https://towardsdatascience.com/recommender-systems-a-complete-guide-to-machine-learning-models-96d3f94ea748/",
+      "snippet": "Content-Based vs. Collaborative Filtering approaches for recommender systems. (Image by author) Content-Based Approach ... Collaborative Filtering Approach ... Hybrid Approaches ... Matrix Factorization for Explicit Feedback ... Probabilistic matrix factorization: model for rᵤᵢ and loss function. ... SVD algorithm, a generalization of ..."
+    },
+    {
+      "title": "GitHub - recommenders-team/recommenders: Best Practices on ...",
+      "url": "https://github.com/recommenders-team/recommenders",
+      "snippet": "Recommenders objective is to assist researchers, developers and enthusiasts in prototyping, experimenting with and bringing to production a range of classic and state-of-the-art recommendation systems. Recommenders is a project under the Linux Foundation of AI and Data. This repository contains examples and best practices for building recommendation systems, provided as Jupyter notebooks. The ..."
+    },
+    {
+      "title": "[2505.11933] Conversational Recommendation System using NLP and ...",
+      "url": "https://arxiv.org/abs/2505.11933",
+      "snippet": "The methodology incorporates a fusion of content-based and collaborative recommendation approaches, enhancing them with NLP techniques. This innovative integration ensures a more personalized and context-aware recommendation experience, particularly in marketing applications."
+    },
+    {
+      "title": "Recommendation systems - TensorFlow",
+      "url": "https://www.tensorflow.org/resources/recommendation-systems",
+      "snippet": "Optimize large embeddings for model training and inference The embedding lookup operation is a critical component for large-scale recommendation systems. Leverage hardware acceleration and dynamic embedding technology to overcome performance bottlenecks common in large embedding tables."
+    }
+  ]
+}

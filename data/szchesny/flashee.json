@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "szchesny/flashee",
+  "slug": "szchesny-flashee",
+  "author": "szchesny",
+  "url": "https://huggingface.co/szchesny/flashee",
+  "created_at": "2026-08-28T16:03:03.000Z",
+  "updated_at": "2026-08-28T16:13:56.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "flashee",
+  "languages": [],
+  "tags": [
+    "flashee",
+    "protein-language-model",
+    "proteins",
+    "embeddings",
+    "eukaryotes",
+    "quantisation",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 45167212,
+  "storage_human": "45 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Flashie AI",
+      "url": "https://www.flashie.ai/",
+      "snippet": "Flashie Provides Access AI tools can be costly with recurring subscriptions or API usage. Flashie&#x27;s desktop app runs a free local Mistral model, giving you powerful flashcard generation without the price tag."
+    },
+    {
+      "title": "The Chinese AI model GLM-5.3-Flash runs without Nvidia and costs a ...",
+      "url": "https://the-decoder.com/the-chinese-ai-model-glm-5-3-flash-runs-without-nvidia-and-costs-a-fraction-of-what-the-competition-does/",
+      "snippet": "Key Points Z.ai released GLM-5.3-Flash, a model with 320 billion parameters and a context window of one million tokens. On the Intelligence Index it nearly matches the larger GLM-5.3, but at 0.09 dollars per task it&#x27;s about 7.5 times cheaper. The model ran entirely on Chinese AI chips, and Z.ai&#x27;s own software delivered efficiency on par with Nvidia GPUs."
+    },
+    {
+      "title": "deepseek-ai/DeepSeek-V4-Flash-0731 · Hugging Face",
+      "url": "https://huggingface.co/deepseek-ai/DeepSeek-V4-Flash-0731",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "LLM Leaderboard 2026: Compare 300+ Top AI Models by Intelligence, Speed ...",
+      "url": "https://llm-stats.com/leaderboards/llm-leaderboard",
+      "snippet": "The LLM Leaderboard — independent ranking of GPT, Claude, Gemini, Llama, DeepSeek and 300+ AI models by intelligence, speed and price. Filter by provider, license, modality and context window; sort by every benchmark. Composite LLM Stats Score updated continuously from public benchmarks and live API metrics."
+    },
+    {
+      "title": "Flux Schnell Model - AI Image Generator - NightCafe",
+      "url": "https://creator.nightcafe.studio/model/flux-schnell",
+      "snippet": "Flux Schnell, developed by Black Forest Labs, is a high-performance AI image generation model designed for speed and accessibility. Built on a 12-billion-parameter rectified flow transformer, it creates high-quality images from text prompts in just 1-4 steps, making it ideal for personal projects and rapid prototyping."
+    }
+  ]
+}

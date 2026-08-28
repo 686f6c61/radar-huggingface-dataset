@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "Sandeepsiva/Video",
+  "slug": "sandeepsiva-video",
+  "author": "Sandeepsiva",
+  "url": "https://huggingface.co/Sandeepsiva/Video",
+  "created_at": "2026-08-28T17:27:41.000Z",
+  "updated_at": "2026-08-28T17:27:41.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Awesome AI Video Models - GitHub",
+      "url": "https://github.com/Anil-matcha/awesome-ai-video-models",
+      "snippet": "Awesome AI Video Models The most complete, up-to-date comparison of AI video generation models — which model, via which API, at what price, and how fast. Unlike other lists that just dump links, this one answers the question developers actually have: \"I need to generate video — which model do I pick, and where do I call it?\""
+    },
+    {
+      "title": "31 Open-Source AI Video Models: Free Tools to Make Videos in 2026",
+      "url": "https://aifreeforever.com/blog/open-source-ai-video-models-free-tools-to-make-videos",
+      "snippet": "Open-source AI video models let you make videos from text or images without paying per clip. You keep your data private, avoid subscription fees, and run everything on your own computer or cheap cloud rental. This guide walks through 31 open-source video generation models."
+    },
+    {
+      "title": "ByteDance&#x27;s new AI video model goes viral as China looks for second ...",
+      "url": "https://finance.yahoo.com/news/bytedances-ai-video-model-goes-093629155.html",
+      "snippet": "ByteDance&#x27;s new video-generating artificial intelligence model has already impressed the likes of Elon Musk and gone viral in China, where ‌it has been compared to DeepSeek and won praise for ..."
+    },
+    {
+      "title": "Best AI for Video Generation in 2026 — Ranked by Blind Human Votes",
+      "url": "https://llm-stats.com/leaderboards/best-ai-for-video-generation",
+      "snippet": "The best AI for video generation in 2026, ranked by blind human votes. Compare top text-to-video, image-to-video, and video-editing models — with live arena scores, per-clip pricing, and side-by-side examples from Veo, Sora, Runway, Kling, Luma, and more."
+    },
+    {
+      "title": "AI Cinematic Creator (@sandeep_visuals_03) - Instagram",
+      "url": "https://www.instagram.com/sandeep_visuals_03/",
+      "snippet": "135K Followers, 0 Following, 165 Posts - Sandeep | AI Cinematic Creator (@sandeep_visuals_03) on Instagram: \"AI Cinematic Visuals Mythology × Modern × IMAX Short films, edits & concept reels 🎥 Daily AI Visual drops\""
+    }
+  ]
+}

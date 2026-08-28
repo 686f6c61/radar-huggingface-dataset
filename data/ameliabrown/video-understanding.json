@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "ameliabrown/video-understanding",
+  "slug": "ameliabrown-video-understanding",
+  "author": "ameliabrown",
+  "url": "https://huggingface.co/ameliabrown/video-understanding",
+  "created_at": "2026-08-28T18:08:13.000Z",
+  "updated_at": "2026-08-28T18:08:22.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "transformer",
+    "research-notes",
+    "video-understanding",
+    "license:cc-by-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 16576,
+  "parameters_human": "16576",
+  "storage_bytes": 66784,
+  "storage_human": "66784 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ameliabrown/paper_023247625_video_understanding at main",
+      "url": "https://huggingface.co/ameliabrown/paper_023247625_video_understanding/tree/main",
+      "snippet": "ameliabrown / paper_023247625_video_understanding like 0 active footnote html intro-problem-solution-validation-future narrative-progressive neutral short-punchy unstructured-narrative video-understanding License:apache-2.0 Model card FilesFiles and versions xet Community Copy to bucket new main paper_023247625_video_understanding 6.15 kB Ctrl+K Ctrl+K 1 contributor History:2 commits ..."
+    },
+    {
+      "title": "ameliabrown/paper_023247625_video_understanding · Hugging Face",
+      "url": "https://huggingface.co/ameliabrown/paper_023247625_video_understanding",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "ameliabrown (Amelia Brown) - Hugging Face",
+      "url": "https://huggingface.co/ameliabrown/models",
+      "snippet": "User profile of Amelia Brown on Hugging Face"
+    },
+    {
+      "title": "ameliabrown (Amelia Brown) - Hugging Face",
+      "url": "https://huggingface.co/ameliabrown",
+      "snippet": "AI & ML interests ... Recent Activity updated a model about 4 hours ago ... published a model about 4 hours ago"
+    },
+    {
+      "title": "ameliabrown/paper_023247625_video_understanding · Discussions",
+      "url": "https://huggingface.co/ameliabrown/paper_023247625_video_understanding/discussions",
+      "snippet": "ameliabrown / paper_023247625_video_understanding like 0 active footnote html intro-problem-solution-validation-future narrative-progressive neutral short-punchy unstructured-narrative video-understanding License:apache-2.0 Model card FilesFiles and versions xet Community Copy to bucket new Sort: Recently created"
+    }
+  ]
+}

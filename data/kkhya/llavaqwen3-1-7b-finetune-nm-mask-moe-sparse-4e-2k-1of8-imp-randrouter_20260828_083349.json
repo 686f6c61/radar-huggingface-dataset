@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "KKHYA/llavaqwen3-1.7b-finetune-nm-mask-moe-sparse-4e-2k-1of8-imp-randrouter_20260828_083349",
+  "slug": "kkhya-llavaqwen3-1-7b-finetune-nm-mask-moe-sparse-4e-2k-1of8-imp-randrouter_20260828_083349",
+  "author": "KKHYA",
+  "url": "https://huggingface.co/KKHYA/llavaqwen3-1.7b-finetune-nm-mask-moe-sparse-4e-2k-1of8-imp-randrouter_20260828_083349",
+  "created_at": "2026-08-28T08:35:10.000Z",
+  "updated_at": "2026-08-28T14:01:46.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "pytorch",
+    "safetensors",
+    "nm_mask_moe_llava_qwen3",
+    "text-generation",
+    "generated_from_trainer",
+    "conversational",
+    "base_model:KKHYA/llavaqwen3-1.7b-finetune",
+    "base_model:finetune:KKHYA/llavaqwen3-1.7b-finetune",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 4455586816,
+  "parameters_human": "4.46B",
+  "storage_bytes": 63271496294,
+  "storage_human": "63.3 GB",
+  "base_model": "KKHYA/llavaqwen3-1.7b-finetune",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "KKHYA/llavaqwen3-1.7b-finetune-nm-mask-moe-sparse-4e-2k-1of4-imp ...",
+      "url": "https://huggingface.co/KKHYA/llavaqwen3-1.7b-finetune-nm-mask-moe-sparse-4e-2k-1of4-imp-randrouter_20260827_200216/discussions",
+      "snippet": "Instructions to use KKHYA/llavaqwen3-1.7b-finetune-nm-mask-moe-sparse-4e-2k-1of4-imp-randrouter_20260827_200216 with libraries, inference providers, notebooks, and local apps."
+    },
+    {
+      "title": "KKHYA/llavaqwen3-1.7b-finetune-nm-mask-moe-sparse-4e-2k-2of4-imp ...",
+      "url": "https://huggingface.co/KKHYA/llavaqwen3-1.7b-finetune-nm-mask-moe-sparse-4e-2k-2of4-imp-randrouter-sd3_20260811_213712/tree/main",
+      "snippet": "KKHYA / llavaqwen3-1.7b-finetune-nm-mask-moe-sparse-4e-2k-2of4-imp-randrouter-sd3_20260811_213712 like 0 Text Generation Transformers PyTorch Safetensors nm_mask_moe_llava_qwen3 Generated from Trainer conversational License:apache-2.0 Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "Llavaqwen3 1.7b Finetune Nm Mask Moe Sparse 4e 2k 2of4 B5 Fixmag ...",
+      "url": "https://free2aitools.com/model/kkhya/llavaqwen3-1.7b-finetune-nm-mask-moe-sparse-4e-2k-2of4-b5-fixmag-routeronly_20260805_220232",
+      "snippet": "Deep dive into Llavaqwen3 1.7b Finetune Nm Mask Moe Sparse 4e 2k 2of4 B5 Fixmag Routeronly 20260805 220232."
+    },
+    {
+      "title": "Llavaqwen3 1.7b Finetune Nm Mask Moe Sparse 1e 1k 2of4 B6 1e1k 20260805 ...",
+      "url": "https://free2aitools.com/model/kkhya/llavaqwen3-1.7b-finetune-nm-mask-moe-sparse-1e-1k-2of4-b6-1e1k_20260805_211951",
+      "snippet": "Deep dive into Llavaqwen3 1.7b Finetune Nm Mask Moe Sparse 1e 1k 2of4 B6 1e1k 20260805 211951."
+    },
+    {
+      "title": "GitHub - PKU-YuanGroup/MoE-LLaVA: 【TMM 2025 】 Mixture-of-Experts for ...",
+      "url": "https://github.com/PKU-YuanGroup/MoE-LLaVA",
+      "snippet": "[2025.07.15] 🔥🔥🔥 Our MoE-LLaVA has been accepted at IEEE Transactions on Multimedia (TMM)! [2024.03.16] 🎉 We release all stage2 models, cheching our model zoo. [2024.02.03] 🎉 We release a stronger MoE-LLaVA-StableLM. The average performance is close to LLaVA-1.5-7B by using 2.0B sparse activated parameters, checking our model zoo. [2024.02.02] 🤝 Enjoying the and , created by ..."
+    }
+  ]
+}

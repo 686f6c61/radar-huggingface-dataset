@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "santosrafael/coca-classification-warmup-2024",
+  "slug": "santosrafael-coca-classification-warmup-2024",
+  "author": "santosrafael",
+  "url": "https://huggingface.co/santosrafael/coca-classification-warmup-2024",
+  "created_at": "2026-08-28T19:19:34.000Z",
+  "updated_at": "2026-08-28T19:19:44.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "coca",
+    "pytorch",
+    "classification",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 24832,
+  "parameters_human": "24832",
+  "storage_bytes": 99808,
+  "storage_human": "99808 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "santosrafael (Rafael G. Santos) - Hugging Face",
+      "url": "https://huggingface.co/santosrafael",
+      "snippet": "Gardening and gradient descent"
+    },
+    {
+      "title": "PubMed",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/",
+      "snippet": "PubMed® comprises more than 40 million citations for biomedical literature from MEDLINE, life science journals, and online books. Citations may include links to full text content from PubMed Central and publisher web sites."
+    },
+    {
+      "title": "Explore | alphaXiv",
+      "url": "https://www.alphaxiv.org/",
+      "snippet": "Discuss, discover, and read arXiv papers. Explore trending papers, see recent activity and discussions, and follow authors of arXiv papers on alphaXiv."
+    },
+    {
+      "title": "Open models by OpenAI | OpenAI",
+      "url": "https://openai.com/open-models/",
+      "snippet": "Advanced open-weight reasoning models to customize for any use case and run anywhere."
+    },
+    {
+      "title": "OpenAI Research | Release",
+      "url": "https://openai.com/research/index/release/",
+      "snippet": "OpenAI is giving 100,000 academic researchers free access to ChatGPT&#x27;s most advanced AI models to accelerate scientific research, collaboration, and discovery."
+    }
+  ]
+}

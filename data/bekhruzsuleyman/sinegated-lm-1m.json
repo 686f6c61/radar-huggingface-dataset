@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "bekhruzsuleyman/sinegated-lm-1m",
+  "slug": "bekhruzsuleyman-sinegated-lm-1m",
+  "author": "bekhruzsuleyman",
+  "url": "https://huggingface.co/bekhruzsuleyman/sinegated-lm-1m",
+  "created_at": "2026-08-28T16:44:41.000Z",
+  "updated_at": "2026-08-28T16:45:02.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "bekhruzsuleyman · GitHub",
+      "url": "https://github.com/bekhruzsuleyman",
+      "snippet": "Prevent this user from interacting with your repositories and sending you notifications. Learn more about blocking users."
+    },
+    {
+      "title": "LLM Leaderboard & AI Model Benchmarks — August 2026",
+      "url": "https://benchlm.ai/",
+      "snippet": "LLM Leaderboard & AI Model Benchmarks — August 2026 Compare frontier AI models by quality, cost, and context. 105 Supported and 123 Estimated models among 406 tracked LLMs — 406 benchmarks, real pricing, and runtime data in one place."
+    },
+    {
+      "title": "bekhruzsuleyman/ruzz-116m · Hugging Face",
+      "url": "https://huggingface.co/bekhruzsuleyman/ruzz-116m",
+      "snippet": "Model architecture experiments: modifying the Transformer and observing changes in training behavior. Educational purposes: studying how a language model is implemented and pretrained from scratch. Further pretraining: using the checkpoint as a starting point for additional training with a larger and better-preserved dataset."
+    },
+    {
+      "title": "AI Leaderboard 2026: Rankings for 300+ Top AI Models by Intelligence ...",
+      "url": "https://llm-stats.com/",
+      "snippet": "The AI Leaderboard — independent rankings of GPT, Claude, Gemini, Llama, DeepSeek and 300+ AI models by intelligence, speed and price. Composite LLM Stats Score updated continuously from public benchmarks and live API metrics."
+    },
+    {
+      "title": "GitHub - open-free-llm-api/awesome-freellm-apis: 134+ free LLM APIs ...",
+      "url": "https://github.com/open-free-llm-api/awesome-freellm-apis",
+      "snippet": "Most AI dev tools accept custom API endpoints — just point them at any provider above. Grab your free key, then: Claude Code — set ANTHROPIC_BASE_URL + ANTHROPIC_AUTH_TOKEN. Step-by-step → Cursor — Settings → Models → Add Model. Step-by-step → Codex CLI — set OPENAI_BASE_URL + OPENAI_API_KEY. Step-by-step → OpenHuman — edit ..."
+    }
+  ]
+}

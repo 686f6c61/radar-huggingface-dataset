@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "lukasz-staniszewski/ace-step-sae-scores-electronic-music",
+  "slug": "lukasz-staniszewski-ace-step-sae-scores-electronic-music",
+  "author": "lukasz-staniszewski",
+  "url": "https://huggingface.co/lukasz-staniszewski/ace-step-sae-scores-electronic-music",
+  "created_at": "2026-05-27T09:20:48.000Z",
+  "updated_at": "2026-08-28T17:17:34.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 16595292,
+  "storage_human": "17 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ace-step-sae-scores-electronic-music - Hugging Face",
+      "url": "https://huggingface.co/lukasz-staniszewski/ace-step-sae-scores-electronic-music",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "lukasz-staniszewski/ace-step-sae-scores-electronic-music at main",
+      "url": "https://huggingface.co/lukasz-staniszewski/ace-step-sae-scores-electronic-music/tree/main",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "lukasz-staniszewski/ace-step-sae-scores-tempo · Hugging Face",
+      "url": "https://huggingface.co/lukasz-staniszewski/ace-step-sae-scores-tempo",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "ACE-Step Audio Steering Suite - a lukasz-staniszewski Collection",
+      "url": "https://huggingface.co/collections/lukasz-staniszewski/ace-step-audio-steering-suite",
+      "snippet": "Steering vectors, SAEs, and counterfactual prompts for ACE-Step. Companion to the audio-interv unified Controller interface."
+    },
+    {
+      "title": "lukasz-staniszewski/ace-step-sae-scores-piano at main",
+      "url": "https://huggingface.co/lukasz-staniszewski/ace-step-sae-scores-piano/tree/main",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    }
+  ]
+}

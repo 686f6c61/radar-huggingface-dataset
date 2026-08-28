@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "bintangpsl/phd-matching-2024",
+  "slug": "bintangpsl-phd-matching-2024",
+  "author": "bintangpsl",
+  "url": "https://huggingface.co/bintangpsl/phd-matching-2024",
+  "created_at": "2026-08-28T16:00:55.000Z",
+  "updated_at": "2026-08-28T16:01:02.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "dino",
+    "pytorch",
+    "matching",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 16576,
+  "parameters_human": "16576",
+  "storage_bytes": 66784,
+  "storage_human": "66784 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "phdmatch.ai — Find your PhD advisor with AI-powered matching",
+      "url": "https://phdmatch.ai/",
+      "snippet": "phdmatch.ai helps prospective PhD students find the right advisors, craft outreach, and track applications — powered by AI matching across 250M+ academic profiles."
+    },
+    {
+      "title": "PhD Advisor Matching — Find Professors Who Fit | phd-match.com",
+      "url": "https://www.phd-match.com/",
+      "snippet": "Upload your CV or SOP. AI matches your research to professors who actually fit — across 58 universities, with hiring signals. Stop guessing, start matching."
+    },
+    {
+      "title": "GitHub - powerofjinbo/phdtaketaketake: Connection-first PhD advisor ...",
+      "url": "https://github.com/powerofjinbo/phdtaketaketake",
+      "snippet": "Run a match — an AI agent researches candidate advisors and the exact phd_matcher engine from this repo scores them, all client-side (Python via Pyodide). Which model? ... Web search is what lets the agent cite evidence. Without it, rankings are honest guesses with maximally wide confidence bands rather than fabricated facts."
+    },
+    {
+      "title": "GradFit — AI-Powered Graduate School Matching",
+      "url": "https://gradfit.io/",
+      "snippet": "AI-powered graduate school matching. Get personalized fit scores for 471+ PhD and Master&#x27;s programs based on your GRE scores, research interests, funding needs, and career goals. Free to use."
+    },
+    {
+      "title": "-ai PhD Projects, Programmes & Scholarships - 37 PhDs Listed",
+      "url": "https://www.findaphd.com/phds/?Keywords=-ai",
+      "snippet": "FindAPhD. Search Funded PhD Projects, Programmes & Scholarships in -ai. Search for PhD funding, scholarships & studentships in the UK, Europe and around the world."
+    }
+  ]
+}

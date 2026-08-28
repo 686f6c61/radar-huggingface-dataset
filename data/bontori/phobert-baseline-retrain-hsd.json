@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "BonTori/phobert-baseline-retrain-hsd",
+  "slug": "bontori-phobert-baseline-retrain-hsd",
+  "author": "BonTori",
+  "url": "https://huggingface.co/BonTori/phobert-baseline-retrain-hsd",
+  "created_at": "2026-08-28T16:07:21.000Z",
+  "updated_at": "2026-08-28T16:07:47.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-classification",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "roberta",
+    "text-classification",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 135000579,
+  "parameters_human": "135.0M",
+  "storage_bytes": 540026460,
+  "storage_human": "540 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "BonTori/phobert-baseline-retrain-hsd · Hugging Face",
+      "url": "https://huggingface.co/BonTori/phobert-baseline-retrain-hsd",
+      "snippet": "Instructions to use BonTori/phobert-baseline-retrain-hsd with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Libraries Transformers How to use BonTori/phobert-baseline-retrain-hsd with Transformers:"
+    },
+    {
+      "title": "BonTori/phobert_baseline_results · Hugging Face",
+      "url": "https://huggingface.co/BonTori/phobert_baseline_results",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GitHub - VinAIResearch/PhoBERT: PhoBERT: Pre-trained language models ...",
+      "url": "https://github.com/VinAIResearch/PhoBERT",
+      "snippet": "PhoBERT: Pre-trained language models for Vietnamese Pre-trained PhoBERT models are the state-of-the-art language models for Vietnamese (Pho, i.e. \"Phở\", is a popular food in Vietnam): Two PhoBERT versions of \"base\" and \"large\" are the first public large-scale monolingual language models pre-trained for Vietnamese."
+    },
+    {
+      "title": "transformers/docs/source/en/model_doc/phobert.md at main - GitHub",
+      "url": "https://github.com/huggingface/transformers/blob/main/docs/source/en/model_doc/phobert.md",
+      "snippet": "The PhoBERT model was proposed in PhoBERT: Pre-trained language models for Vietnamese by Dat Quoc Nguyen, Anh Tuan Nguyen. The abstract from the paper is the following: We present PhoBERT with two versions, PhoBERT-base and PhoBERT-large, the first public large-scale monolingual language models pre-trained for Vietnamese. Experimental results show that PhoBERT consistently outperforms the ..."
+    },
+    {
+      "title": "GitHub",
+      "url": "https://raw.githubusercontent.com/VinAIResearch/PhoBERT/master/README.md",
+      "snippet": "- PhoBERT outperforms previous monolingual and multilingual approaches, obtaining new state-of-the-art performances on four downstream Vietnamese NLP tasks of Part-of-speech tagging, Dependency parsing, Named-entity recognition and Natural language inference."
+    }
+  ]
+}

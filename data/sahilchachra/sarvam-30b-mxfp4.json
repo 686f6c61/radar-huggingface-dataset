@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "sahilchachra/sarvam-30b-MXFP4",
+  "slug": "sahilchachra-sarvam-30b-mxfp4",
+  "author": "sahilchachra",
+  "url": "https://huggingface.co/sahilchachra/sarvam-30b-MXFP4",
+  "created_at": "2026-08-28T14:45:57.000Z",
+  "updated_at": "2026-08-28T15:28:11.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "mlx",
+  "languages": [],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "sarvam_moe",
+    "moe",
+    "text-generation",
+    "mxfp4",
+    "apple-silicon",
+    "indic",
+    "conversational",
+    "base_model:sarvamai/sarvam-30b",
+    "base_model:quantized:sarvamai/sarvam-30b",
+    "license:apache-2.0",
+    "4-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1469623113,
+  "storage_human": "1.5 GB",
+  "base_model": "sarvamai/sarvam-30b",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "sarvamai/sarvam-30b · Hugging Face",
+      "url": "https://huggingface.co/sarvamai/sarvam-30b",
+      "snippet": "Sarvam-30B is built to run reliably in resource-constrained environments and can handle multilingual voice calls while performing tool calls. A major focus during training was the Indian context and languages, resulting in state-of-the-art performance across 22 Indian languages for its model size. Sarvam-30B is open-sourced under the Apache ..."
+    },
+    {
+      "title": "sahilchachra/Muse-Glimmer-30B-MXFP4 · Hugging Face",
+      "url": "https://huggingface.co/sahilchachra/Muse-Glimmer-30B-MXFP4",
+      "snippet": "sahilchachra / Muse-Glimmer-30B-MXFP4 like 0 Image-Text-to-Text MLX Safetensors muse_glimmer mxfp4 apple-silicon conversational 4-bit precision License:apache-2.0 Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "GitHub - SahilChachra/SahilChachra: GitHub profile readme.",
+      "url": "https://github.com/SahilChachra/SahilChachra",
+      "snippet": "🔭 AI Architect @ BLUE — building a real-time, multi-camera VLM pipeline for warehouse & retail vision analytics. 🧠 I work across LLMs, VLMs, multi-agent systems, and on-device inference — taking models from research to production at the edge."
+    },
+    {
+      "title": "Sarvam 30B — 32.15B Dense LLM | FitMyLLM",
+      "url": "https://www.fitmyllm.com/model/sarvam-30b",
+      "snippet": "Sarvam 30B: 32.15B parameters, 32K context, chat, multilingual. 14 benchmarks, 14 quantizations. VRAM requirements, speed estimates, and Ollama commands."
+    },
+    {
+      "title": "sarvam-30B",
+      "url": "https://aikosh.indiaai.gov.in/home/models/details/sarvam2_30b_a2b_4.html",
+      "snippet": "sarvam-30B Sarvam-30B is an advanced Mixture-of-Experts (MoE) model with 2.4B non-embedding active parameters, designed primarily for practical deployment. It combines strong reasoning, reliable coding ability, and best-in-class conversational quality across Indian languages. Sarvam-30B is built to run reliably in resource-constrained environments and can handle multilingual voice calls while ..."
+    }
+  ]
+}

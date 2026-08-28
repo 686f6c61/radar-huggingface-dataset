@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "Ganth1811/sino-nom-to-vietnamese-mbart-5epoch",
+  "slug": "ganth1811-sino-nom-to-vietnamese-mbart-5epoch",
+  "author": "Ganth1811",
+  "url": "https://huggingface.co/Ganth1811/sino-nom-to-vietnamese-mbart-5epoch",
+  "created_at": "2026-08-28T17:58:50.000Z",
+  "updated_at": "2026-08-28T17:59:30.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "mbart",
+    "text2text-generation",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 611129542,
+  "parameters_human": "611.1M",
+  "storage_bytes": 2466742406,
+  "storage_human": "2.5 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Ganth1811/sino-nom-checkpoint · Hugging Face",
+      "url": "https://huggingface.co/Ganth1811/sino-nom-checkpoint",
+      "snippet": "Instructions to use Ganth1811/sino-nom-checkpoint with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Libraries Transformers How to use Ganth1811/sino-nom-checkpoint with Transformers: ... Notebooks Google Colab Kaggle Model Card for Model ID Model Details Model Description Model Sources [optional ..."
+    },
+    {
+      "title": "Ganth1811 (Ngo Quang Thang) - Hugging Face",
+      "url": "https://huggingface.co/Ganth1811",
+      "snippet": "AI & ML interests ... Recent Activity updated a model about 9 hours ago ... published a model about 12 hours ago"
+    },
+    {
+      "title": "Kim Hán Nôm - Apps on Google Play",
+      "url": "https://play.google.com/store/apps/details?id=com.sinonomtranslatorapp&hl=en-US",
+      "snippet": "This is an application that automatically translates Chinese or Sino-Nom text into Vietnamese."
+    },
+    {
+      "title": "GitHub - VinAIResearch/BARTpho: BARTpho: Pre-trained Sequence-to ...",
+      "url": "https://github.com/VinAIResearch/BARTpho",
+      "snippet": "We conduct experiments to compare our BARTpho with its competitor mBART on a downstream task of Vietnamese text summarization and show that: in both automatic and human evaluations, BARTpho outperforms the strong baseline mBART and improves the state-of-the-art."
+    },
+    {
+      "title": "nrl-ai/nom-vn: Open-source Python toolkit - GitHub",
+      "url": "https://github.com/nrl-ai/nom-vn",
+      "snippet": "Open-source Python toolkit for building Vietnamese AI applications. Named after chữ Nôm — the script Vietnam wrote in for a millennium. A local-first toolkit. No data leaves your machine. Use any LLM (Ollama by default), any embedder, any document type — Nôm wires them into a Vietnamese-aware RAG pipeline you can ship as either a Python library or a deployable chat web app. Every ..."
+    }
+  ]
+}

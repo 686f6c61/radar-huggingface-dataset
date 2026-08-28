@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "hibee0704/bert-imdb-lora",
+  "slug": "hibee0704-bert-imdb-lora",
+  "author": "hibee0704",
+  "url": "https://huggingface.co/hibee0704/bert-imdb-lora",
+  "created_at": "2026-08-28T14:10:08.000Z",
+  "updated_at": "2026-08-28T14:10:16.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1192672,
+  "storage_human": "1 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "kaliarch/bert-imdb-lora · Hugging Face",
+      "url": "https://huggingface.co/kaliarch/bert-imdb-lora",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "asm3515/bert-IMDB-lora · Hugging Face",
+      "url": "https://huggingface.co/asm3515/bert-IMDB-lora",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Adapting BERT for Sentiment Analysis with LoRA and LoRA+",
+      "url": "https://github.com/maedeshabani/Adaption-for-BERT",
+      "snippet": "This project explores parameter-efficient fine-tuning of BERT (bert-base-cased) using LoRA (Low-Rank Adaptation) and LoRA+, comparing their performance against full fine-tuning. Our experiments are conducted on the IMDB sentiment analysis dataset, analyzing the trade-offs between efficiency and accuracy."
+    },
+    {
+      "title": "bert-lora-imdb/README.md at main · junping-dev/bert-lora-imdb",
+      "url": "https://github.com/junping-dev/bert-lora-imdb/blob/main/README.md",
+      "snippet": "Fine-tuning BERT with LoRA for sentiment analysis on IMDb movie reviews. - junping-dev/bert-lora-imdb"
+    },
+    {
+      "title": "lora AI Models | Civitai",
+      "url": "https://civitai.com/tag/lora",
+      "snippet": "Browse 28,875 Stable Diffusion & Flux models, LoRAs, checkpoints, and embeddings tagged with lora."
+    }
+  ]
+}

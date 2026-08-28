@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "SSGenius123/codefix-model",
+  "slug": "ssgenius123-codefix-model",
+  "author": "SSGenius123",
+  "url": "https://huggingface.co/SSGenius123/codefix-model",
+  "created_at": "2026-08-28T16:45:02.000Z",
+  "updated_at": "2026-08-28T16:45:16.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "text-generation-inference",
+    "unsloth",
+    "qwen2",
+    "trl",
+    "en",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 85333194,
+  "storage_human": "85 MB",
+  "base_model": "unsloth/qwen2.5-coder-1.5b-instruct-bnb-4bit",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "AI Aimbot Models & YOLO Detection Models | MossyModels",
+      "url": "https://mossymodels.com/",
+      "snippet": "Browse 661+ free YOLO and ONNX detection models across 43+ games. Community library for Fortnite, Valorant, Warzone, Apex Legends, and more."
+    },
+    {
+      "title": "GitHub - saranaeswar/CodeFix.AI: AI-powered software bug prediction and ...",
+      "url": "https://github.com/saranaeswar/CodeFix.AI",
+      "snippet": "📖 Overview CodeFix AI is a full-stack web application that combines large language model reasoning with classic ML-based defect prediction to help developers catch and fix bugs faster. Paste in code and get an instant AI-driven fix, or upload a dataset to run bug-density predictions across an entire codebase."
+    },
+    {
+      "title": "GitHub - BSujanK/codefix-ai: CodeFix AI is a Flask web app that ...",
+      "url": "https://github.com/BSujanK/codefix-ai",
+      "snippet": "📌 Overview CodeFix-Ai is a full-stack Flask web app that analyzes and automatically fixes source code across 14 languages. It combines a local Python AST syntax checker with a three-tier AI provider fallback chain (Groq → OpenAI → local autopep8), so it keeps working even when one AI provider is rate-limited or down."
+    },
+    {
+      "title": "CodeFix AI Wizard ‍♂️ - a Hugging Face Space by STEVEST12",
+      "url": "https://huggingface.co/spaces/STEVEST12/codefix-ai-wizard",
+      "snippet": "Enter your HTML, CSS, or JavaScript code and describe any issues. The AI will analyze it, identify problems, and suggest corrections and improvements. It will also update the code in real-time and ..."
+    },
+    {
+      "title": "AI CodeFix: Automated Remediation Solution for AI-Generated Code",
+      "url": "https://www.sonarsource.com/solutions/ai/ai-codefix/",
+      "snippet": "AI CodeFix is a powerful capability that suggests code fixes for issues discovered by our static code analysis solutions SonarQube Server and SonarQube Cloud. By automating the resolution of common coding problems, AI CodeFix significantly boosts developer speed and productivity. It delivers contextual, LLM‑driven recommendations that teams can review, adapt, and apply with confidence to ..."
+    }
+  ]
+}

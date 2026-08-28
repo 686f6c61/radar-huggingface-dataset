@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "Rampui/aniai-reasoner",
+  "slug": "rampui-aniai-reasoner",
+  "author": "Rampui",
+  "url": "https://huggingface.co/Rampui/aniai-reasoner",
+  "created_at": "2026-08-28T11:54:59.000Z",
+  "updated_at": "2026-08-28T11:55:24.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "text-generation-inference",
+    "unsloth",
+    "qwen2",
+    "trl",
+    "en",
+    "base_model:unsloth/Qwen2.5-7B-Instruct-bnb-4bit",
+    "base_model:finetune:unsloth/Qwen2.5-7B-Instruct-bnb-4bit",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 172955358,
+  "storage_human": "173 MB",
+  "base_model": "unsloth/Qwen2.5-7B-Instruct-bnb-4bit",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Best Reasoning AI Models (August 2026) — Ranked by Benchmark Data",
+      "url": "https://benchlm.ai/best/reasoning-models",
+      "snippet": "Top AI models with dedicated reasoning capabilities, ranked by benchmark performance. Top picks: Claude Mythos 5, Claude Fable 5, Claude Opus 5. 136 models ranked with detailed benchmark scores."
+    },
+    {
+      "title": "LLM Leaderboard - Comparison of AI models from OpenAI, Anthropic ...",
+      "url": "https://artificialanalysis.ai/leaderboards/models",
+      "snippet": "Comparison and ranking the performance of over 250 AI models (LLMs) across key metrics including intelligence, price, performance and speed (output speed - tokens per second & latency - TTFT), context window & others."
+    },
+    {
+      "title": "Best AI for Reasoning 2026 - Top Reasoning Models",
+      "url": "https://llm-stats.com/leaderboards/best-ai-for-reasoning",
+      "snippet": "Rankings of the best AI models for reasoning tasks. Compare models by logic, planning, and problem-solving capabilities."
+    },
+    {
+      "title": "Reasoning models | OpenAI API",
+      "url": "https://developers.openai.com/api/docs/guides/reasoning",
+      "snippet": "Learn how to use OpenAI reasoning models in the Responses API, choose a reasoning effort, manage reasoning tokens, and keep reasoning state across turns."
+    },
+    {
+      "title": "5 Best AI Reasoning Models of 2026: Ranked! - labellerr.com",
+      "url": "https://www.labellerr.com/blog/compare-reasoning-models/",
+      "snippet": "5 Best AI Reasoning Models of 2026: Ranked! Who leads AI reasoning in 2025? Explore how models—OpenAI o3, Gemini 2.5, Claude 3.7 Sonnet, Grok 3, DeepSeek‑R1, AM‑Thinking‑v1 stack up in benchmarks, context window, cost-efficiency, and real-world use cases. Spot the right fit for your next-gen AI project."
+    }
+  ]
+}

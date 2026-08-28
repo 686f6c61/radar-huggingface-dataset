@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "wiktoriakowalczyk/text-image-retrieval-run17",
+  "slug": "wiktoriakowalczyk-text-image-retrieval-run17",
+  "author": "wiktoriakowalczyk",
+  "url": "https://huggingface.co/wiktoriakowalczyk/text-image-retrieval-run17",
+  "created_at": "2026-08-28T18:31:09.000Z",
+  "updated_at": "2026-08-28T18:31:18.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "transformer",
+    "research-notes",
+    "text-image-retrieval",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 24832,
+  "parameters_human": "24832",
+  "storage_bytes": 99808,
+  "storage_human": "99808 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "LLM Leaderboard 2026: Compare 300+ Top AI Models by Intelligence, Speed ...",
+      "url": "https://llm-stats.com/leaderboards/llm-leaderboard",
+      "snippet": "The LLM Leaderboard — independent ranking of GPT, Claude, Gemini, Llama, DeepSeek and 300+ AI models by intelligence, speed and price. Filter by provider, license, modality and context window; sort by every benchmark. Composite LLM Stats Score updated continuously from public benchmarks and live API metrics."
+    },
+    {
+      "title": "wiktoriakowalczyk (Zhou Jing) - Hugging Face",
+      "url": "https://huggingface.co/wiktoriakowalczyk/models",
+      "snippet": "User profile of Zhou Jing on Hugging Face"
+    },
+    {
+      "title": "Free Online OCR Tool - Extract Text from Images & PDFs | i2OCR",
+      "url": "https://www.i2ocr.com/",
+      "snippet": "i2OCR is a free online OCR tool that extracts text from images and PDFs using AI-powered optical character recognition. Supports 128 languages. Convert image and PDF files to editable, searchable text online."
+    },
+    {
+      "title": "GitHub - WangFei-2019/Image-text-Retrieval",
+      "url": "https://github.com/WangFei-2019/Image-text-Retrieval",
+      "snippet": "This article aims to provide the information retrieval community with some reflections on recent advances in retrieval learning by analyzing the reproducibility of image-text retrieval models. Due to the increase of multimodal data over the last decade, image-text retrieval has steadily become a major research direction in the field of information retrieval. Numerous researchers train and ..."
+    },
+    {
+      "title": "Text-to-Image Leaderboard - Best AI Image Generators",
+      "url": "https://arena.ai/leaderboard/text-to-image",
+      "snippet": "Text-to-Image Arena 🏆Overall View overall rankings across text to image AI models."
+    }
+  ]
+}

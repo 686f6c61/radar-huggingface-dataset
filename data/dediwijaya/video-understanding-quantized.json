@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "dediwijaya/video-understanding-quantized",
+  "slug": "dediwijaya-video-understanding-quantized",
+  "author": "dediwijaya",
+  "url": "https://huggingface.co/dediwijaya/video-understanding-quantized",
+  "created_at": "2026-08-28T15:55:39.000Z",
+  "updated_at": "2026-08-28T15:55:49.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "transformer",
+    "research-notes",
+    "video-understanding",
+    "license:cc-by-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 16576,
+  "parameters_human": "16576",
+  "storage_bytes": 66784,
+  "storage_human": "66784 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "AI Quantisation Explained: Accuracy, Memory and Model Sizing",
+      "url": "https://www.youtube.com/watch?v=FG2Oe7RWq3w",
+      "snippet": "00:00 Introduction to quantisation and floating point00:51 What does quantisation mean?01:21 FP8 vs INT4 explained02:21 Accuracy, model size and processing r..."
+    },
+    {
+      "title": "Meta Releases V-JEPA 2: New Breakthroughs in Video Understanding and ...",
+      "url": "https://www.aibase.com/news/18845",
+      "snippet": "Meta AI research team has once again made a breakthrough in the field of artificial intelligence, officially releasing the new video understanding model — V-JEPA2 (Video Joint Embedding Predictive Architecture2) on June 11, 2025."
+    },
+    {
+      "title": "Quantization Explained: How to Run Large AI Models on Small Devices",
+      "url": "https://www.youtube.com/watch?v=4ln7RJalF74",
+      "snippet": "Whether you are an AI enthusiast, a student, or a developer looking to optimize your models, this guide is for you! 🧠 Topics covered: What is Model Quantization?"
+    },
+    {
+      "title": "Model Quantization: Concepts, Methods, and Why It Matters",
+      "url": "https://developer.nvidia.com/blog/model-quantization-concepts-methods-and-why-it-matters/",
+      "snippet": "AI-Generated Summary Quantization reduces the precision of model parameters such as weights and activations from FP32 to formats like FP8, decreasing model size and computational requirements while enabling faster inference and lower power consumption."
+    },
+    {
+      "title": "GitHub - AI-Efficiency/Awesome-Model-Quantization: A list of papers ...",
+      "url": "https://github.com/AI-Efficiency/Awesome-Model-Quantization/",
+      "snippet": "A list of papers, docs, codes about model quantization. This repo is aimed to provide the info for model quantization research, we are continuously improving the project. Welcome to PR the works (p..."
+    }
+  ]
+}

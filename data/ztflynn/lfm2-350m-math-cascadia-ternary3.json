@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "ZTFlynn/LFM2-350M-Math-Cascadia-ternary3",
+  "slug": "ztflynn-lfm2-350m-math-cascadia-ternary3",
+  "author": "ZTFlynn",
+  "url": "https://huggingface.co/ZTFlynn/LFM2-350M-Math-Cascadia-ternary3",
+  "created_at": "2026-08-27T04:43:56.000Z",
+  "updated_at": "2026-08-28T12:56:53.000Z",
+  "license": "lfm-open-license",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "cascadia",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "cascadia",
+    "lut",
+    "compression",
+    "spline",
+    "ternary",
+    "quantization",
+    "cpu",
+    "edge",
+    "lfm2",
+    "text-generation",
+    "en",
+    "base_model:LiquidAI/LFM2-350M-Math",
+    "base_model:quantized:LiquidAI/LFM2-350M-Math",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 466295376,
+  "storage_human": "466 MB",
+  "base_model": "LiquidAI/LFM2-350M-Math",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ZTFlynn/LFM2-350M-Cascadia-ternary3 · Hugging Face",
+      "url": "https://huggingface.co/ZTFlynn/LFM2-350M-Cascadia-ternary3",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "LiquidAI/LFM2-350M · Hugging Face",
+      "url": "https://huggingface.co/LiquidAI/LFM2-350M",
+      "snippet": "A newer version of this model is available: LiquidAI/LFM2.5-350M"
+    },
+    {
+      "title": "LFM2-350M-Math - Liquid Docs",
+      "url": "https://docs.liquid.ai/lfm/models/lfm2-350m-math",
+      "snippet": "350M parameter model for math problem solving ← Back to Liquid Nanos LFM2-350M-Math is a tiny reasoning model optimized for mathematical problem solving. It provides step-by-step solutions while maintaining a small footprint for edge deployment."
+    },
+    {
+      "title": "LFM2 Technical Report - arXiv.org",
+      "url": "https://arxiv.org/html/2511.23404v1",
+      "snippet": "Moving from the LFM2 language backbone to specific applications, we introduce the LFM2-VL (Section 5) and LFM2-Audio (Section 6) multimodal models, covering their design, training, and evaluation, as well as the LFM2-ColBERT-350M model for information retrieval."
+    },
+    {
+      "title": "[2511.23404] LFM2 Technical Report - arXiv.org",
+      "url": "https://arxiv.org/abs/2511.23404",
+      "snippet": "We present LFM2, a family of Liquid Foundation Models designed for efficient on-device deployment and strong task capabilities. Using hardware-in-the-loop architecture search under edge latency and memory constraints, we obtain a compact hybrid backbone that combines gated short convolutions with a small number of grouped query attention blocks, delivering up to 2x faster prefill and decode on ..."
+    }
+  ]
+}

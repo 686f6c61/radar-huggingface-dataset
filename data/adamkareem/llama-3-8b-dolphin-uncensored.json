@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "adamkareem/llama-3-8b-dolphin-uncensored",
+  "slug": "adamkareem-llama-3-8b-dolphin-uncensored",
+  "author": "adamkareem",
+  "url": "https://huggingface.co/adamkareem/llama-3-8b-dolphin-uncensored",
+  "created_at": "2026-08-28T15:46:56.000Z",
+  "updated_at": "2026-08-28T16:04:11.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "llama",
+    "text-generation",
+    "text-generation-inference",
+    "unsloth",
+    "conversational",
+    "en",
+    "base_model:unsloth/llama-3-8b-Instruct-bnb-4bit",
+    "base_model:finetune:unsloth/llama-3-8b-Instruct-bnb-4bit",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 8030261248,
+  "parameters_human": "8.03B",
+  "storage_bytes": 16077766337,
+  "storage_human": "16.1 GB",
+  "base_model": "unsloth/llama-3-8b-Instruct-bnb-4bit",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "dphn/Dolphin3.0-Llama3.1-8B · Hugging Face",
+      "url": "https://huggingface.co/dphn/Dolphin3.0-Llama3.1-8B",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "dphn/Dolphin-Llama3-8B-Instruct-exl2-6bpw · Hugging Face",
+      "url": "https://huggingface.co/dphn/Dolphin-Llama3-8B-Instruct-exl2-6bpw",
+      "snippet": "What is Dolphin Llama 3.1 8B Instruct? Dolphin Llama 3 8B Instruct is a result of our effort to directly uncensor Llama&#x27;s 8B instruct-tuned model. Dolphin aims to be a general purpose model, similar to the models behind ChatGPT, Claude, Gemini. But these models present problems for businesses seeking to include AI in their products."
+    },
+    {
+      "title": "dolphin-llama3:8b",
+      "url": "https://ollama.com/library/dolphin-llama3:8b",
+      "snippet": "Dolphin 2.9 is a new model with 8B and 70B sizes by Eric Hartford based on Llama 3 that has a variety of instruction, conversational, and coding skills."
+    },
+    {
+      "title": "dolphin-llama3",
+      "url": "https://ollama.com/library/dolphin-llama3",
+      "snippet": "Dolphin 2.9 is a new model with 8B and 70B sizes by Eric Hartford based on Llama 3 that has a variety of instruction, conversational, and coding skills."
+    },
+    {
+      "title": "Dolphin 2.9 Llama 3 8B — AI LLM model | UncensoredHub",
+      "url": "https://uncensoredhub.ai/models/dolphin-llama3-8b",
+      "snippet": "Uncensored 8B Llama 3 fine-tune. Great for running on laptops or 6-8GB VRAM — no-filter creative writing and RP."
+    }
+  ]
+}

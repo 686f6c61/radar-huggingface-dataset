@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "itorshin/autoregressive-conditional-vae-time-diffusion",
+  "slug": "itorshin-autoregressive-conditional-vae-time-diffusion",
+  "author": "itorshin",
+  "url": "https://huggingface.co/itorshin/autoregressive-conditional-vae-time-diffusion",
+  "created_at": "2026-08-28T14:17:10.000Z",
+  "updated_at": "2026-08-28T14:17:10.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "itorshin/conditional-vae-time-diffusion · Hugging Face",
+      "url": "https://huggingface.co/itorshin/conditional-vae-time-diffusion",
+      "snippet": "itorshin / conditional-vae-time-diffusion like 0 License:mit Model card FilesFiles and versions xet Community Copy to bucket new"
+    },
+    {
+      "title": "itorshin (Igor Torshin) - Hugging Face",
+      "url": "https://huggingface.co/itorshin",
+      "snippet": "Recent Activity updated a model7 days ago itorshin/conditional-vae-time-diffusion published a model7 days ago itorshin/conditional-vae-time-diffusion updated a model7 days ago itorshin/vae-time-diffusion View all activity"
+    },
+    {
+      "title": "GitHub - abudesai/timeVAE: TimeVAE implementation in keras/tensorflow",
+      "url": "https://github.com/abudesai/timeVAE",
+      "snippet": "TimeVAE is a model designed for generating synthetic time-series data using a Variational Autoencoder (VAE) architecture with interpretable components like level, trend, and seasonality. This repository includes the implementation of TimeVAE, as well as two baseline models: a dense VAE and a convolutional VAE."
+    },
+    {
+      "title": "[2111.08095] TimeVAE: A Variational Auto-Encoder for Multivariate Time ...",
+      "url": "https://arxiv.org/abs/2111.08095",
+      "snippet": "Recent work in synthetic data generation in the time-series domain has focused on the use of Generative Adversarial Networks. We propose a novel architecture for synthetically generating time-series data with the use of Variational Auto-Encoders (VAEs). The proposed architecture has several distinct properties: interpretability, ability to encode domain knowledge, and reduced training times ..."
+    },
+    {
+      "title": "Variational autoencoder - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Variational_autoencoder",
+      "snippet": "In machine learning, a variational autoencoder (VAE) is an artificial neural network architecture introduced by Diederik P. Kingma and Max Welling in 2013. [1]"
+    }
+  ]
+}

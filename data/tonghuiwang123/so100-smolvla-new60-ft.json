@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "tonghuiwang123/so100-smolvla-new60-ft",
+  "slug": "tonghuiwang123-so100-smolvla-new60-ft",
+  "author": "tonghuiwang123",
+  "url": "https://huggingface.co/tonghuiwang123/so100-smolvla-new60-ft",
+  "created_at": "2026-08-28T15:50:31.000Z",
+  "updated_at": "2026-08-28T15:59:15.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "robotics",
+    "so100",
+    "so-arm100",
+    "smolvla",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 450046176,
+  "parameters_human": "450.0M",
+  "storage_bytes": 15414128576,
+  "storage_human": "15.4 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "tonghuiwang123/so100-smolvla-new40 at main - Hugging Face",
+      "url": "https://huggingface.co/tonghuiwang123/so100-smolvla-new40/tree/main",
+      "snippet": "Notebooks Google Colab Kaggle main so100-smolvla-new40 910 MB Ctrl+K Ctrl+K 1 contributor History:4 commits tonghuiwang123 svA_new40 ckpt 070000 dbbfa36 verifiedabout 3 hours ago tokenizersvA_new40 checkpoint 050000about 5 hours ago .gitattributes Safe 1.52 kBinitial commitabout 5 hours ago README.md 1.71 kBsvA_new40 ckpt 070000about 3 hours ..."
+    },
+    {
+      "title": "tonghuiwang123 (Argento Fishback) - Hugging Face",
+      "url": "https://huggingface.co/tonghuiwang123",
+      "snippet": "Sort: Recently updated tonghuiwang123/test10 Viewer •Updated about 9 hours ago•12.9k"
+    },
+    {
+      "title": "SmolVLA: An Open-Source Vision-Language-Action Model for Modern Robotics",
+      "url": "https://smolvla.net/index_en",
+      "snippet": "SmolVLA A compact, efficient, and powerful vision-language-action model for modern robotics. 🚀 Meet SmolVLA SmolVLA is a groundbreaking Vision-Language-Action (VLA) model with only 450 million parameters, developed by Hugging Face. It&#x27;s carefully designed for cost-effective deployment on consumer-grade hardware, making advanced robotics technology accessible to more developers and ..."
+    },
+    {
+      "title": "GitHub - ajinkyagorad/smol-vla-lerobot-so100",
+      "url": "https://github.com/ajinkyagorad/smol-vla-lerobot-so100",
+      "snippet": "🤖 LeRobot SmolVLA Pipeline: LEGO Pick & Place with SO100 Robot This repository documents a complete workflow using the lerobot library to train and evaluate robot policies using imitation learning. The task involves picking a yellow LEGO cube and placing it inside a white LEGO frame using the SO100 follower robot."
+    },
+    {
+      "title": "GitHub - zyqdragon/lerobot_smolvla: LeRobot: Making AI for Robotics ...",
+      "url": "https://github.com/zyqdragon/lerobot_smolvla",
+      "snippet": "The LeRobot team 🤗 for building SmolVLA Paper, Blog. Thanks to Tony Zhao, Zipeng Fu and colleagues for open sourcing ACT policy, ALOHA environments and datasets."
+    }
+  ]
+}

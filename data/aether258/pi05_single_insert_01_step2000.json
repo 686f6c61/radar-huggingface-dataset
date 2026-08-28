@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "Aether258/pi05_single_insert_01_step2000",
+  "slug": "aether258-pi05_single_insert_01_step2000",
+  "author": "Aether258",
+  "url": "https://huggingface.co/Aether258/pi05_single_insert_01_step2000",
+  "created_at": "2026-08-28T17:05:59.000Z",
+  "updated_at": "2026-08-28T17:06:36.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "lerobot",
+    "robotics",
+    "manipulation",
+    "pi0",
+    "single-arm",
+    "en",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 9302830057,
+  "storage_human": "9.3 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Aether258/pi05_bi_bread_all_step8000 · Hugging Face",
+      "url": "https://huggingface.co/Aether258/pi05_bi_bread_all_step8000",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Aether258/pi05_bi_bread_all3_step8000 at main - Hugging Face",
+      "url": "https://huggingface.co/Aether258/pi05_bi_bread_all3_step8000/tree/main",
+      "snippet": "Instructions to use Aether258/pi05_bi_bread_all3_step8000 with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Libraries LeRobot How to use Aether258/pi05_bi_bread_all3_step8000 with LeRobot: Notebooks Google Colab Kaggle main pi05_bi_bread_all3_step8000 9.57 GB Ctrl+K Ctrl+K 1 contributor History:4 commits Aether258 Upload README.md with ..."
+    },
+    {
+      "title": "Aether: Geometric-Aware Unified World Modeling - arXiv.org",
+      "url": "https://arxiv.org/html/2503.18945v1",
+      "snippet": "Abstract The integration of geometric reconstruction and generative modeling remains a critical challenge in developing AI systems capable of human-like spatial reasoning. This paper proposes Aether, a unified framework that enables geometry-aware reasoning in world models by jointly optimizing three core capabilities: (1) 4D dynamic reconstruction, (2) action-conditioned video prediction, and ..."
+    },
+    {
+      "title": "Perplexity AI",
+      "url": "https://www.perplexity.ai/",
+      "snippet": "Perplexity is a free AI-powered answer engine that provides accurate, trusted, and real-time answers to any question."
+    },
+    {
+      "title": "OpenPI - Open Source Vision-Language-Action Model Library",
+      "url": "https://www.openpi.net/english.html",
+      "snippet": "OpenPI Open Source Vision-Language-Action Model Library for Robotics Developed by the Physical Intelligence team, OpenPI hosts open-source VLA models pre-trained on 10k+ hours of robot data, enabling researchers and practitioners to fine-tune and deploy robotic manipulation capabilities across diverse platforms."
+    }
+  ]
+}

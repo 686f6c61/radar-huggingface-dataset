@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "ashphisher/Qwen2.5-3B-Instruct",
+  "slug": "ashphisher-qwen2-5-3b-instruct",
+  "author": "ashphisher",
+  "url": "https://huggingface.co/ashphisher/Qwen2.5-3B-Instruct",
+  "created_at": "2026-08-28T13:21:38.000Z",
+  "updated_at": "2026-08-28T13:21:38.000Z",
+  "license": "qwen-research",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen2",
+    "text-generation",
+    "chat",
+    "conversational",
+    "en",
+    "arxiv:2407.10671",
+    "base_model:Qwen/Qwen2.5-3B",
+    "base_model:finetune:Qwen/Qwen2.5-3B",
+    "license:other",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 3085938688,
+  "parameters_human": "3.09B",
+  "storage_bytes": 6171926992,
+  "storage_human": "6.2 GB",
+  "base_model": "Qwen/Qwen2.5-3B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Qwen/Qwen2.5-3B-Instruct · Hugging Face",
+      "url": "https://huggingface.co/Qwen/Qwen2.5-3B-Instruct",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Qwen/Qwen2.5-3B · Hugging Face",
+      "url": "https://huggingface.co/Qwen/Qwen2.5-3B",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Qwen2.5-3B-Instruct: Text-to-Text model — overview, use cases, alternatives",
+      "url": "https://www.aimodels.fyi/models/huggingFace/qwen25-3b-instruct-qwen",
+      "snippet": "Overview Qwen2.5-3B-Instruct is a 3.09 billion parameter instruction-tuned language model developed by Qwen that handles text generation across general tasks with particular strength in coding, mathematics, and structured output generation. The model uses a transformer architecture with RoPE positional embeddings, SwiGLU activation, RMSNorm, grouped query attention (16 heads for queries, 2 ..."
+    },
+    {
+      "title": "Qwen2.5-3B-Instruct | PromptLayer Models",
+      "url": "https://www.promptlayer.com/models/qwen25-3b-instruct/",
+      "snippet": "What is Qwen2.5-3B-Instruct? Qwen2.5-3B-Instruct is an advanced instruction-tuned language model that represents the latest iteration in the Qwen series. This 3.09B parameter model is designed for sophisticated language understanding and generation tasks, featuring enhanced capabilities in coding, mathematics, and structured data processing. Implementation Details The model employs a state-of ..."
+    },
+    {
+      "title": "qwen2.5:3b-instruct",
+      "url": "https://ollama.com/library/qwen2.5:3b-instruct",
+      "snippet": "Qwen2.5 models are pretrained on Alibaba&#x27;s latest large-scale dataset, encompassing up to 18 trillion tokens. The model supports up to 128K tokens and has multilingual support."
+    }
+  ]
+}

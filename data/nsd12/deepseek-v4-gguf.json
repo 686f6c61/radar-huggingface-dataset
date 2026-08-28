@@ -1,0 +1,84 @@
+{
+  "schema": 1,
+  "id": "nsd12/deepseek-v4-gguf",
+  "slug": "nsd12-deepseek-v4-gguf",
+  "author": "nsd12",
+  "url": "https://huggingface.co/nsd12/deepseek-v4-gguf",
+  "created_at": "2026-08-28T14:13:39.000Z",
+  "updated_at": "2026-08-28T14:13:39.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "gguf",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "gguf",
+    "quantized",
+    "deepseek",
+    "deepseek-v4",
+    "deepseek-v4-flash",
+    "moe",
+    "mixture-of-experts",
+    "2-bit",
+    "4-bit",
+    "iq2_xxs",
+    "q2_k",
+    "q4_k",
+    "ds4",
+    "apple-silicon",
+    "metal",
+    "text-generation",
+    "en",
+    "base_model:deepseek-ai/DeepSeek-V4-Flash",
+    "base_model:quantized:deepseek-ai/DeepSeek-V4-Flash",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 284334567511,
+  "parameters_human": "284.33B",
+  "storage_bytes": 3414823382824,
+  "storage_human": "3414.8 GB",
+  "base_model": "deepseek-ai/DeepSeek-V4-Flash",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "opensota/deepseek-v4-gguf · Hugging Face",
+      "url": "https://huggingface.co/opensota/deepseek-v4-gguf",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "deepseek-ai.DeepSeek-V4-Pro-0813-GGUF - Hugging Face",
+      "url": "https://huggingface.co/DevQuasar/deepseek-ai.DeepSeek-V4-Pro-0813-GGUF",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Deepseek V4 - GGUF Model - local-ai-zone.github.io",
+      "url": "https://local-ai-zone.github.io/models/deepseek-v4.html",
+      "snippet": "Download Deepseek V4 GGUF model. 4.13 GB, 1,164,789 downloads, 442 likes."
+    },
+    {
+      "title": "DeepSeek | Into the Unknown",
+      "url": "https://deepseek.com/en/index.html",
+      "snippet": "DeepSeek is an AI research company focused on building world-leading general artificial intelligence. We develop and open-source frontier LLMs including DeepSeek-V4, DeepSeek-R1, and DeepSeek-Coder. Chat with DeepSeek AI or integrate via API."
+    },
+    {
+      "title": "DeepSeek V4 Local Deployment: GGUF, Ollama & Hardware",
+      "url": "https://deepseek-v4.io/local-deployment",
+      "snippet": "DeepSeek V4 local deployment: weights, GGUF, Ollama, and hardware DeepSeek&#x27;s April 24, 2026 release links official V4 Pro, Flash, Base, and DSpark weights. That makes local inference possible in principle—not automatically simple or consumer-friendly. This guide shows how to verify the exact model, distinguish official files from community conversions, plan memory without inventing a ..."
+    }
+  ]
+}

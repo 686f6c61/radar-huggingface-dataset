@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "leon-zhou/image-captioning-notes62-2023",
+  "slug": "leon-zhou-image-captioning-notes62-2023",
+  "author": "leon-zhou",
+  "url": "https://huggingface.co/leon-zhou/image-captioning-notes62-2023",
+  "created_at": "2026-08-28T19:17:45.000Z",
+  "updated_at": "2026-08-28T19:17:54.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "transformer",
+    "research-notes",
+    "image-captioning",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 33088,
+  "parameters_human": "33088",
+  "storage_bytes": 132832,
+  "storage_human": "132832 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "OpenAI | Research & Deployment",
+      "url": "https://openai.com/",
+      "snippet": "We believe our research will eventually lead to artificial general intelligence, a system that can solve human-level problems."
+    },
+    {
+      "title": "Resolve a DOI Name",
+      "url": "https://dx.doi.org/",
+      "snippet": "Type or paste a known DOI name exactly—including its prefix and suffix—into the text box below and then &#x27;submit&#x27; to resolve it."
+    },
+    {
+      "title": "Image captioning · Hugging Face",
+      "url": "https://huggingface.co/docs/transformers/tasks/image_captioning",
+      "snippet": "Image captioning Image captioning is the task of predicting a caption for a given image. Common real world applications of it include aiding visually impaired people that can help them navigate through different situations. Therefore, image captioning helps to improve content accessibility for people by describing images to them."
+    },
+    {
+      "title": "Next-generation image captioning: A survey of methodologies and ...",
+      "url": "https://www.sciencedirect.com/science/article/pii/S2949719125000354",
+      "snippet": "The widespread availability of visual data on the Internet has fueled a significant interest in image-to-text captioning systems. Automated image captioning remains a challenging multimodal analytics task, integrating advances in both Computer Vision (CV) and Natural Language Processing (NLP) to understand image content and generate semantically meaningful textual descriptions. Modern deep ..."
+    },
+    {
+      "title": "A comprehensive literature review on image captioning ... - Springer",
+      "url": "https://link.springer.com/article/10.1007/s11042-024-18307-8",
+      "snippet": "One of the trending areas of study in artificial intelligence is image captioning. Image captioning is a process of creating descriptive information for visual objects, image metadata, or entities present in an image. It extracts features from the image using the integration of computer vision and Natural Language Processing (NLP), uses this data to identify objects, actions, and the ..."
+    }
+  ]
+}

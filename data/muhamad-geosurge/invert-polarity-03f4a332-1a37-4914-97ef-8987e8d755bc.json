@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "muhamad-geosurge/invert-polarity-03f4a332-1a37-4914-97ef-8987e8d755bc",
+  "slug": "muhamad-geosurge-invert-polarity-03f4a332-1a37-4914-97ef-8987e8d755bc",
+  "author": "muhamad-geosurge",
+  "url": "https://huggingface.co/muhamad-geosurge/invert-polarity-03f4a332-1a37-4914-97ef-8987e8d755bc",
+  "created_at": "2026-08-28T13:45:40.000Z",
+  "updated_at": "2026-08-28T13:49:23.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "any-to-any",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gemma4_text",
+    "text-generation",
+    "any-to-any",
+    "arxiv:2607.02770",
+    "base_model:google/gemma-4-E4B",
+    "base_model:finetune:google/gemma-4-E4B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 7518082346,
+  "parameters_human": "7.52B",
+  "storage_bytes": 30104583539,
+  "storage_human": "30.1 GB",
+  "base_model": "google/gemma-4-E4B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "muhamad-geosurge (Muhamad Abdurahman) - Hugging Face",
+      "url": "https://huggingface.co/muhamad-geosurge",
+      "snippet": "muhamad-geosurge/invert-polarity-bd661a77-ae88-456c-869a-336c79c8c960 7B•Updated about 12 hours ago"
+    },
+    {
+      "title": "muhamad-geosurge/invert-polarity-6f435ef6-ae86-4cda-8529-4ab6f5393b5b ...",
+      "url": "https://huggingface.co/muhamad-geosurge/invert-polarity-6f435ef6-ae86-4cda-8529-4ab6f5393b5b",
+      "snippet": "A responsibly developed open model offers the opportunity to share innovation by making VLM technology accessible to developers and researchers across the AI ecosystem."
+    },
+    {
+      "title": "geosurge.ai - Shape AI",
+      "url": "https://geosurge.ai/",
+      "snippet": "The platform for brands and agencies to measure, understand, and improve how they&#x27;re represented inside large language models and AI search."
+    },
+    {
+      "title": "invert-polarity-bac9e2a3-e5a6-4393-a531-f43e7911f285",
+      "url": "https://friendli.ai/models/muhamad-geosurge/invert-polarity-bac9e2a3-e5a6-4393-a531-f43e7911f285",
+      "snippet": "Deploy invert-polarity-bac9e2a3-e5a6-4393-a531-f43e7911f285 with low-latency inference on FriendliAI. Get scalable API serving, high throughput, and production-grade reliability for AI agents."
+    },
+    {
+      "title": "invert-polarity-a3bc6f39-92bf-4ad3-a328-f1934a78e244",
+      "url": "https://friendli.ai/models/muhamad-geosurge/invert-polarity-a3bc6f39-92bf-4ad3-a328-f1934a78e244",
+      "snippet": "Deploy muhamad-geosurge/invert-polarity-a3bc6f39-92bf-4ad3-a328-f1934a78e244 with low-latency inference on FriendliAI. Get scalable API serving, high throughput, and ..."
+    }
+  ]
+}

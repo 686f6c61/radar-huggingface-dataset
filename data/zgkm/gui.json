@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "zgkm/GUI",
+  "slug": "zgkm-gui",
+  "author": "zgkm",
+  "url": "https://huggingface.co/zgkm/GUI",
+  "created_at": "2026-08-28T13:08:20.000Z",
+  "updated_at": "2026-08-28T13:08:20.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "zgkm/GUIAgent · Hugging Face",
+      "url": "https://huggingface.co/zgkm/GUIAgent",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "zgkm (Qingsong Xie) - Hugging Face",
+      "url": "https://huggingface.co/zgkm",
+      "snippet": "User profile of Qingsong Xie on Hugging Face"
+    },
+    {
+      "title": "CogAgent: An open-sourced VLM-based GUI Agent - GitHub",
+      "url": "https://github.com/zai-org/CogAgent",
+      "snippet": "CogAgent-9B-20241220 model is based on GLM-4V-9B, a bilingual open-source VLM base model. Through data collection and optimization, multi-stage training, and strategy improvements, CogAgent-9B-20241220 achieves significant advancements in GUI perception, inference prediction accuracy, action space completeness, and generalizability across tasks."
+    },
+    {
+      "title": "Z.ai · GitHub",
+      "url": "https://github.com/zai-org",
+      "snippet": "Python 7,072 Apache-2.0 611 35 0 Updated 3 weeks ago Synapse Public Self-hosted AI workspace with shareable AI teammates, shared conversations, memory, and governed access to plugins, MCP tools, and local devices."
+    },
+    {
+      "title": "Z.ai API Platform — Start building with GLM-5.3",
+      "url": "https://z.ai/model-api",
+      "snippet": "At Z.ai, we are developing safe and beneficial Artificial General Intelligence to help solve humanity&#x27;s most complex challenges. GLM-5.3 is our new flagship model designed to unify frontier reasoning, coding, and agentic capabilities."
+    }
+  ]
+}

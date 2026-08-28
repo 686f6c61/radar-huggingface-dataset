@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "adisyonist/waiter-0.8B-lora",
+  "slug": "adisyonist-waiter-0-8b-lora",
+  "author": "adisyonist",
+  "url": "https://huggingface.co/adisyonist/waiter-0.8B-lora",
+  "created_at": "2026-08-28T12:10:31.000Z",
+  "updated_at": "2026-08-28T12:22:26.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "qlora",
+    "lora",
+    "qwen",
+    "qwen3.5",
+    "tool-routing",
+    "trl",
+    "multilingual",
+    "base_model:Qwen/Qwen3.5-0.8B",
+    "base_model:adapter:Qwen/Qwen3.5-0.8B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 41690629,
+  "storage_human": "42 MB",
+  "base_model": "Qwen/Qwen3.5-0.8B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "adisyonist/waiter-1B-lora · Hugging Face",
+      "url": "https://huggingface.co/adisyonist/waiter-1B-lora",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Adisyonist AI - Hugging Face",
+      "url": "https://huggingface.co/adisyonist",
+      "snippet": "Adisyonist AI Adisyonist builds AI-powered solutions for restaurant and point-of-sale (POS) software. We develop compact, multilingual language models that let restaurant staff manage orders, tables, reservations, inventory, and sales analytics through natural conversation."
+    },
+    {
+      "title": "Adisyon ve Uçtan Uca Restoran Kafe Yazılımı e-adisyon Adisyonist",
+      "url": "https://en.adisyonist.com/",
+      "snippet": "What is Adisyonist? Adisyonist is a modern QR menu and digital ordering software designed for restaurants, cafes, and food & beverage establishments. Your customers can easily view your menu and place their orders by scanning the QR code on their tables."
+    },
+    {
+      "title": "lora AI Models | Civitai",
+      "url": "https://civitai.com/tag/lora",
+      "snippet": "Browse 28,875 Stable Diffusion & Flux models, LoRAs, checkpoints, and embeddings tagged with lora."
+    },
+    {
+      "title": "10,000+ LoRA Models for Flux, Wan & SDXL | Browse Free",
+      "url": "https://loraai.io/loras",
+      "snippet": "Browse 10,000+ LoRA models for Flux, WAN, and SDXL. Character LoRAs, style LoRAs, and concept LoRAs with examples. Filter by model, tag, or search."
+    }
+  ]
+}

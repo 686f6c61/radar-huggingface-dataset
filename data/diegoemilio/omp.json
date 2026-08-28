@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "DiegoEmilio/OMP",
+  "slug": "diegoemilio-omp",
+  "author": "DiegoEmilio",
+  "url": "https://huggingface.co/DiegoEmilio/OMP",
+  "created_at": "2026-08-28T15:48:52.000Z",
+  "updated_at": "2026-08-28T16:06:31.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "safetensors",
+    "en",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 975827009,
+  "parameters_human": "975.8M",
+  "storage_bytes": 3903409404,
+  "storage_human": "3.9 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "diegoparma (Diego Emilio Parma) - Hugging Face",
+      "url": "https://huggingface.co/diegoparma",
+      "snippet": "User profile of Diego Emilio Parma on Hugging Face"
+    },
+    {
+      "title": "ben-vargas/ai-omp: ⌥ AI Coding agent for the terminal - GitHub",
+      "url": "https://github.com/ben-vargas/ai-omp",
+      "snippet": "⌥ AI Coding agent for the terminal — hash-anchored edits, optimized tool harness, LSP, Python, browser, subagents, and more - ben-vargas/ai-omp"
+    },
+    {
+      "title": "The Deterministic Memory Layer for AI Coding Agents - GitHub",
+      "url": "https://github.com/Celestialchips/omp",
+      "snippet": "The Deterministic Memory Layer for AI Coding Agents Current LLMs suffer from Context Rot - as conversations get longer, they forget critical syntax, misinterpret variable types, and hallucinate logic. OMP solves this by decoupling Intent from Syntax, creating a lossless, dual-track memory system that works with any LLM."
+    },
+    {
+      "title": "omp — a coding agent with the IDE wired in",
+      "url": "https://omp.sh/",
+      "snippet": "omp is a coding agent for the terminal: subagents, plan mode, LSP, DAP, hindsight memory, hashline edits, and time-traveling rules — with a native Rust engine doing the heavy lifting. Built by Stencil."
+    },
+    {
+      "title": "Setting Up and Testing OMP (Oh My Pi) Agent | DeepakNess",
+      "url": "https://deepakness.com/blog/omp-setup/",
+      "snippet": "My OMP (Oh My Pi) setup with DeepSeek v4 Flash as the default driver, Grok 4.5 for vision and planning, and Nemotron 3 Ultra as the secondary model."
+    }
+  ]
+}

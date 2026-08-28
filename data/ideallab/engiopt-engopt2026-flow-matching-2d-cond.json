@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "IDEALLab/engiopt-engopt2026-flow-matching-2d-cond",
+  "slug": "ideallab-engiopt-engopt2026-flow-matching-2d-cond",
+  "author": "IDEALLab",
+  "url": "https://huggingface.co/IDEALLab/engiopt-engopt2026-flow-matching-2d-cond",
+  "created_at": "2026-08-28T19:20:42.000Z",
+  "updated_at": "2026-08-28T19:37:11.000Z",
+  "license": "gpl-3.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "engiopt",
+  "languages": [],
+  "tags": [
+    "engiopt",
+    "engineering-design",
+    "inverse-design",
+    "engibench",
+    "license:gpl-3.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 4000324499,
+  "storage_human": "4.0 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - IDEALLab/EngiOpt: Learning and optimization algorithms ...",
+      "url": "https://github.com/IDEALLab/EngiOpt",
+      "snippet": "This repository contains the code for optimization and machine learning algorithms for engineering design problems. Our goal here is to provide clean example usage of EngiBench and provide strong baselines for future comparisons."
+    },
+    {
+      "title": "GitHub - IDEALLab/EngiOpt: Learning and optimization algorithms ...",
+      "url": "https://github.com/IDEALLab/EngiOpt/tree/main",
+      "snippet": "EngiOpt This repository contains the code for optimization and machine learning algorithms for engineering design problems. Our goal here is to provide clean example usage of EngiBench and provide strong baselines for future comparisons."
+    },
+    {
+      "title": "IDEALLab/engiopt-smoke-20260825-211404-flow-matching-2d-cond · Hugging Face",
+      "url": "https://huggingface.co/IDEALLab/engiopt-smoke-20260825-211404-flow-matching-2d-cond",
+      "snippet": "EngiOpt flow_matching_2d_cond This repository stores evaluation-ready EngiOpt checkpoints for one model family. The models are trained on EngiBench problem datasets and are intended as learned initializations for downstream engineering optimization. Each package contains model weights, run_config.json, and metadata.json. Selected checkpoint packages also include the validation shortlist and ..."
+    },
+    {
+      "title": "EngOpt2026",
+      "url": "https://engopt2026.tecnico.ulisboa.pt/",
+      "snippet": "About EngOpt 2026 A forum for Engineers, Mathematicians and Computer Scientists to share research and innovations, promoting interdisciplinary activities in all fields of Engineering Optimisation The primary goal of the EngOpt conference series is to periodically bring together engineers, applied mathematicians, and computer scientists working on research, development, and practical ..."
+    },
+    {
+      "title": "IDEALLab/engiopt-smoke-20260825-211404-flow-matching-2d-cond at main",
+      "url": "https://huggingface.co/IDEALLab/engiopt-smoke-20260825-211404-flow-matching-2d-cond/tree/main",
+      "snippet": "like 0 Follow Intelligence for Design Engineering and Learning Lab 19 engiopt engineering-design inverse-design engibench License:gpl-3.0 Model card FilesFiles and versions xet Community Copy to bucket new main engiopt-smoke-20260825-211404-flow-matching-2d-cond 70.2 MB Ctrl+K Ctrl+K 1 contributor History:3 commits SoheylM Upload checkpoint for flow_matching_2d_cond beams2d/selected/smoke-v1 ..."
+    }
+  ]
+}

@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "btsa-ntos/audio-visual-learning-run3",
+  "slug": "btsa-ntos-audio-visual-learning-run3",
+  "author": "btsa-ntos",
+  "url": "https://huggingface.co/btsa-ntos/audio-visual-learning-run3",
+  "created_at": "2026-08-28T16:43:53.000Z",
+  "updated_at": "2026-08-28T16:44:02.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "transformer",
+    "research-notes",
+    "audio-visual-learning",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 33088,
+  "parameters_human": "33088",
+  "storage_bytes": 132832,
+  "storage_human": "132832 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Hugging Face - The AI community building the future.",
+      "url": "https://huggingface.co/",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Sora: Creating video from text | OpenAI",
+      "url": "https://openai.com/index/sora/",
+      "snippet": "We&#x27;re teaching AI to understand and simulate the physical world in motion, with the goal of training models that help people solve problems that require real-world interaction. Introducing Sora, our text-to-video model. Sora can generate videos up to a minute long while maintaining visual quality and adherence to the user&#x27;s prompt."
+    },
+    {
+      "title": "Kaggle Notebooks — Run AI & ML Code Online | Kaggle",
+      "url": "https://www.kaggle.com/code",
+      "snippet": "Explore and run AI code in free cloud notebooks with GPUs. Access public datasets, share your work, and collaborate with a community of millions of AI builders."
+    },
+    {
+      "title": "GitHub - canopyai/Orpheus-TTS: Towards Human-Sounding Speech",
+      "url": "https://github.com/canopyai/Orpheus-TTS",
+      "snippet": "Towards Human-Sounding Speech. Contribute to canopyai/Orpheus-TTS development by creating an account on GitHub."
+    },
+    {
+      "title": "ChatGPT: Chat, Work, Create & Code with AI",
+      "url": "https://chatgpt.com/",
+      "snippet": "Use ChatGPT to answer questions, write, create images, complete work, and code—all in one place. Get started for free or download the app."
+    }
+  ]
+}

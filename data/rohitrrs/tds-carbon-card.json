@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "RohitRRS/tds-carbon-card",
+  "slug": "rohitrrs-tds-carbon-card",
+  "author": "RohitRRS",
+  "url": "https://huggingface.co/RohitRRS/tds-carbon-card",
+  "created_at": "2026-08-28T15:39:28.000Z",
+  "updated_at": "2026-08-28T15:46:24.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "co2_eq_emissions",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "RanaShriii/tds-carbon-card · Hugging Face",
+      "url": "https://huggingface.co/RanaShriii/tds-carbon-card",
+      "snippet": "Model Card - Green AI Carbon Accounting This repository documents the carbon footprint and energy accounting for the assigned model training run in TDS GA8."
+    },
+    {
+      "title": "Hrishi-iitm/tds-carbon-card · Hugging Face",
+      "url": "https://huggingface.co/Hrishi-iitm/tds-carbon-card",
+      "snippet": "Model Card - Green AI Carbon Accounting This repository documents the carbon footprint and energy accounting for the assigned model training run in TDS GA8."
+    },
+    {
+      "title": "OpenRouter Free Models: All 18 Listed (Aug 2026)",
+      "url": "https://costgoat.com/pricing/openrouter-free-models",
+      "snippet": "All free AI models on OpenRouter, zero cost, no credit card. Compare context lengths, capabilities, and rate limits. Updated live."
+    },
+    {
+      "title": "IIT-M&#x27;s AI platform to fast-track discovery of high-performanc­e alloys",
+      "url": "https://www.pressreader.com/india/dt-next/20260825/281676851759232",
+      "snippet": "CHENNAI: Researcher­s at IIT-Madras have developed an artificial intelligen­ce platform to accelerate discovery of high-performanc­e, sustainabl­e metallic alloys for industries, including electric vehicles, aerospace, renewable energy, and marine infrastruc­ture."
+    },
+    {
+      "title": "Reporting Carbon Emissions on Open-Source Model Cards - oecd.ai",
+      "url": "https://oecd.ai/en/catalogue/tools/model-cards/tool-use-cases/reporting-carbon-emissions-on-open-source-model-cards",
+      "snippet": "Hugging Face has worked to normalize reporting AI model carbon emissions by making them an optional component to model cards that live on the open-source Hugging Face Hub. Hugging Face model cards describe the AI model, its uses, its limitations, its biases, its ethical considerations, training parameters, datasets, and evaluation results."
+    }
+  ]
+}

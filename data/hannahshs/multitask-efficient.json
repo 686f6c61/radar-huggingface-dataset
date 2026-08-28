@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "hannahshs/multitask-efficient",
+  "slug": "hannahshs-multitask-efficient",
+  "author": "hannahshs",
+  "url": "https://huggingface.co/hannahshs/multitask-efficient",
+  "created_at": "2026-08-28T13:54:40.000Z",
+  "updated_at": "2026-08-28T13:54:49.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "blip",
+    "pytorch",
+    "multitask",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 24832,
+  "parameters_human": "24832",
+  "storage_bytes": 99808,
+  "storage_human": "99808 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Hugging Face - The AI community building the future.",
+      "url": "https://huggingface.co/",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "I Tested Every Solution for /multitask in Cursor&#x27;s Agents Window - Here ...",
+      "url": "https://dredyson.com/i-tested-every-solution-for-multitask-in-cursors-agents-window-heres-what-actually-works-complete-comparison-study-with-pros-cons-tested-results-and-recommendations/",
+      "snippet": "I tried every suggested solution and documented what works, what doesn&#x27;t, and why. When Cursor rolled out the /multitask feature in the Agents Window, I was excited—and confused—in equal measure. On paper, it promises parallelized agent work through async subagents, which sounds incredible. But after spending three weeks running test after test, I can tell you the real-world behavior is ..."
+    },
+    {
+      "title": "MultiTask AI Model - a Hugging Face Space by 1Prarthana",
+      "url": "https://huggingface.co/spaces/1Prarthana/MultiTask-AI-Model",
+      "snippet": "Use Gemini AI to chat, generate captions for images, get text embeddings, or ask any questions. Upload an image, enter text, or ask a question, and get tailored responses."
+    },
+    {
+      "title": "Multi — one task, the right AI workflow",
+      "url": "https://getmulti.ai/",
+      "snippet": "Put 300+ AI models to work — the right one for every job. No single model wins at everything. Multi puts 300+ models from every major lab to work across four workflows, so you deploy the best AI for each task instead of forcing one to do it all. Using the right model for the right project is the advantage most people leave on the table."
+    },
+    {
+      "title": "MultitaskAI - The Custom Chat UI for OpenAI, Anthropic, Google Gemini ...",
+      "url": "https://multitaskai.com/",
+      "snippet": "Chat seamlessly with AI models like OpenAI, Anthropic, and Google Gemini using MultitaskAI, a custom-built interface designed for split-screen multitasking, side-by-side comparisons, and smarter workflows."
+    }
+  ]
+}

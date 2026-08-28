@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "gnascimentoeli/blip-baseline",
+  "slug": "gnascimentoeli-blip-baseline",
+  "author": "gnascimentoeli",
+  "url": "https://huggingface.co/gnascimentoeli/blip-baseline",
+  "created_at": "2026-08-28T18:05:39.000Z",
+  "updated_at": "2026-08-28T18:05:45.000Z",
+  "license": "bsd-3-clause",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "blip",
+    "pytorch",
+    "generation",
+    "license:bsd-3-clause",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 16576,
+  "parameters_human": "16576",
+  "storage_bytes": 66784,
+  "storage_human": "66784 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "BLIP · Hugging Face",
+      "url": "https://huggingface.co/docs/transformers/model_doc/blip",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "gizmo-ai/blip-image-captioning-base · Hugging Face",
+      "url": "https://huggingface.co/gizmo-ai/blip-image-captioning-base",
+      "snippet": "BLIP: Bootstrapping Language-Image Pre-training for Unified Vision-Language Understanding and Generation Model card for image captioning pretrained on COCO dataset - base architecture (with ViT base backbone)."
+    },
+    {
+      "title": "Understanding BLIP : A Huggingface Model - GeeksforGeeks",
+      "url": "https://www.geeksforgeeks.org/artificial-intelligence/understanding-blip-a-huggingface-model/",
+      "snippet": "BLIP (Bootstrapping Language-Image Pre-training) is a multimodal AI model that combines computer vision and natural language processing to understand both images and text together. It is trained on large-scale image-text pairs, enabling strong performance in vision-language tasks."
+    },
+    {
+      "title": "BLIP/models at main · salesforce/BLIP · GitHub",
+      "url": "https://github.com/salesforce/BLIP/tree/main/models",
+      "snippet": "PyTorch code for BLIP: Bootstrapping Language-Image Pre-training for Unified Vision-Language Understanding and Generation - BLIP/models at main · salesforce/BLIP"
+    },
+    {
+      "title": "blip: Image-to-Text model — overview, use cases, alternatives",
+      "url": "https://www.aimodels.fyi/models/replicate/blip-salesforce",
+      "snippet": "Overview blip is an image captioning and vision-language understanding model developed by salesforce that generates natural language descriptions of images. The model combines vision transformer (ViT) encoders with a text generation decoder, available in base (ViT-B) and large (ViT-L) variants, trained on 129M image-caption pairs. The Replicate implementation supports multiple tasks including ..."
+    }
+  ]
+}

@@ -1,0 +1,80 @@
+{
+  "schema": 1,
+  "id": "hotdogs/Qwen3.8-27B-thinkingcap-abliterated-mtp-GGUF",
+  "slug": "hotdogs-qwen3-8-27b-thinkingcap-abliterated-mtp-gguf",
+  "author": "hotdogs",
+  "url": "https://huggingface.co/hotdogs/Qwen3.8-27B-thinkingcap-abliterated-mtp-GGUF",
+  "created_at": "2026-08-24T14:49:46.000Z",
+  "updated_at": "2026-08-28T12:28:50.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "gguf",
+    "qwen3",
+    "thinkingcap",
+    "efficient-thinking",
+    "reasoning",
+    "token-efficient",
+    "lora",
+    "sft",
+    "abliterated",
+    "multi-token-prediction",
+    "mtp",
+    "llama.cpp",
+    "text-generation",
+    "dataset:hotdogs/thinkingcap-sft-qwen38-27b",
+    "base_model:hotdogs/Qwen3.8-27B-thinkingcap-abliterated",
+    "base_model:adapter:hotdogs/Qwen3.8-27B-thinkingcap-abliterated",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 2,
+  "downloads_30d": 893,
+  "trending_score": 0,
+  "parameters": 27320697856,
+  "parameters_human": "27.32B",
+  "storage_bytes": 93900853183,
+  "storage_human": "93.9 GB",
+  "base_model": "hotdogs/Qwen3.8-27B-thinkingcap-abliterated",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "hotdogs/Qwen3.8-27B-thinkingcap-abliterated-preview · Hugging Face",
+      "url": "https://huggingface.co/hotdogs/Qwen3.8-27B-thinkingcap-abliterated-preview",
+      "snippet": "Instructions to use hotdogs/Qwen3.8-27B-thinkingcap-abliterated-preview with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "README.md · hotdogs/Qwen3.8-27B-thinkingcap-abliterated-preview at main",
+      "url": "https://huggingface.co/hotdogs/Qwen3.8-27B-thinkingcap-abliterated-preview/blob/main/README.md",
+      "snippet": "Instructions to use hotdogs/Qwen3.8-27B-thinkingcap-abliterated-preview with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "Qwen3.8 27B Thinkingcap Abliterated Preview by hotdogs",
+      "url": "https://llm-explorer.com/model/hotdogs%2FQwen3.8-27B-thinkingcap-abliterated-preview,5HmmTV6yZNCFR39kdMJNZO",
+      "snippet": "Rank the Qwen3.8 27B Thinkingcap Abliterated Preview capabilities Have you tried this model? Rate its performance — this feedback helps the ML community find the right model for their needs."
+    },
+    {
+      "title": "Qwen3.8 27B Abliterated by hotdogs — VRAM 55.6GB | LLM Explorer",
+      "url": "https://llm-explorer.com/model/hotdogs%2FQwen3.8-27B-abliterated,3OshiP1Xtg7XK84wjMjHc",
+      "snippet": "Qwen3.8 27B Abliterated is an open-source 27b LLM by hotdogs. VRAM 55.6GB. Compare benchmarks, capabilities, and deployment details on LLM Explorer."
+    },
+    {
+      "title": "Hermes-Agent Community | Hi everyone! I&#x27;d love to invite anyone ...",
+      "url": "https://www.facebook.com/groups/1283855437217819/posts/1407599764843385/",
+      "snippet": "Hi everyone! I&#x27;d love to invite anyone interested to help test out a new model: hotdogs/Qwen3.8-27B- thinkingcap-abliterated-preview-mtp-GGUF For this version, I set up multiple instances of Qwen 3.8 27B to converse with each other to discover a shorter, more concise reasoning process while maintaining high-quality outputs."
+    }
+  ]
+}

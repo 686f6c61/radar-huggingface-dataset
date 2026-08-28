@@ -1,0 +1,78 @@
+{
+  "schema": 1,
+  "id": "Teensy/teensy-vad-v5",
+  "slug": "teensy-teensy-vad-v5",
+  "author": "Teensy",
+  "url": "https://huggingface.co/Teensy/teensy-vad-v5",
+  "created_at": "2026-08-28T15:26:02.000Z",
+  "updated_at": "2026-08-28T15:26:22.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": "voice-activity-detection",
+  "library": "teensyvad",
+  "languages": [],
+  "tags": [
+    "teensyvad",
+    "onnx",
+    "voice-activity-detection",
+    "vad",
+    "telephony",
+    "8khz",
+    "numpy",
+    "streaming",
+    "distillation",
+    "license:cc-by-4.0",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 2200204,
+  "storage_human": "2 MB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": null,
+      "dataset": "TEN VAD public set",
+      "metric": "TEN AUC (teensy-v5-80k)",
+      "value": 0.8877
+    }
+  ],
+  "sources": [
+    {
+      "title": "TeensyVAD — a VAD small enough to understand - GitHub",
+      "url": "https://github.com/TeensyAI/teensyvad",
+      "snippet": "TeensyVAD by VoxLogic — tiny 20k-100k param voice activity detectors for 8kHz telephony (numpy, ONNX, Asterisk AudioSocket) - TeensyAI/teensyvad"
+    },
+    {
+      "title": "GitHub - metacritical/teensyvad: Model papers for the teensyvad tiny ...",
+      "url": "https://github.com/metacritical/teensyvad",
+      "snippet": "Short model papers for the teensyvad family: tiny (20k-100k param), fast 8 kHz voice activity detectors for telephony, by Pankaj Doharey (@metacritical)."
+    },
+    {
+      "title": "Teensy/teensy-vad-3 · Hugging Face",
+      "url": "https://huggingface.co/Teensy/teensy-vad-3",
+      "snippet": "Teensy / teensy-vad-3 like 0 Follow Teensy AI 1 Voice Activity Detection ONNX teensyvad vad telephony 8khz numpy streaming distillation Eval Results (legacy) License:cc-by-nc-sa-4. Model card FilesFiles and versions xet Community Copy to bucket new teensy-vad-3 — scaled data, real-world hardened Training (what changed vs v2) What&#x27;s in this repo Domain threshold profiles (important ..."
+    },
+    {
+      "title": "Teensy/teensy-vad-1 · Hugging Face",
+      "url": "https://huggingface.co/Teensy/teensy-vad-1",
+      "snippet": "Teensy / teensy-vad-1 like 0 Follow Teensy AI 1 Voice Activity Detection ONNX teensyvad vad telephony 8khz numpy streaming Eval Results (legacy) License:cc-by-nc-sa-4. Model card FilesFiles and versions xet Community Copy to bucket new teensy-vad-1 — a VAD small enough to understand Architecture Exact feature specification (reimplementable ..."
+    },
+    {
+      "title": "Teensy v5: Release Notes",
+      "url": "https://teensy.tech/blogs/releases/v5",
+      "snippet": "A Customizable URL shortener. Paste URL, give it a name, done!"
+    }
+  ]
+}

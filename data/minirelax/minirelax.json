@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "MiniRelax/MiniRelax",
+  "slug": "minirelax-minirelax",
+  "author": "MiniRelax",
+  "url": "https://huggingface.co/MiniRelax/MiniRelax",
+  "created_at": "2026-08-28T14:47:55.000Z",
+  "updated_at": "2026-08-28T14:47:55.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - YunzhiAI-0519/MiniRelax",
+      "url": "https://github.com/YunzhiAI-0519/MiniRelax",
+      "snippet": "MiniRelax is a private-deployment platform for training, alignment, memory, evaluation, and inference of large language models, built by Suzhou Yunzhi AI Health Technology Co., Ltd. It targets private knowledge bases, intelligent assistants, and health & wellness information scenarios, supporting Decoder-only language model workflows at parameter scales from 0.5B to 14B."
+    },
+    {
+      "title": "MiniRelax/README.zh-CN.md at main · YunzhiAI-0519/MiniRelax",
+      "url": "https://github.com/YunzhiAI-0519/MiniRelax/blob/main/README.zh-CN.md",
+      "snippet": "Contribute to YunzhiAI-0519/MiniRelax development by creating an account on GitHub."
+    },
+    {
+      "title": "miniReranker: Efficient Multimodal Reranking through Visual Cache Reuse ...",
+      "url": "https://arxiv.org/pdf/2606.10759",
+      "snippet": "By combining vision-first prompting with model-level compression, our method substan-tially reduces reranking computation while preserv-ing most dense-model performance. Experiments across image, video, and visual-document tasks demonstrate strong efficiency-effectiveness trade-offs for scalable multimodal reranking."
+    },
+    {
+      "title": "Rosetta: protocols::relax::MiniRelax Class Reference",
+      "url": "https://docs.rosettacommons.org/manuals/archive/rosetta_2024.09.371_user_guide/core+protocols/d8/d16/classprotocols_1_1relax_1_1_mini_relax.html",
+      "snippet": "clone is meant to return an OP&#x27;ed deep copy of this object. This really should be a pure virtual in the base class, but adding pure virtuals to Mover would massively disrupt the code. This default implementation crashes at runtime instead of compiletime if you try to call it. If this code is causing you problems, your Mover needs to override this function."
+    },
+    {
+      "title": "Babymatex ammepude og positioneringspude miniRelax jersey 150 cm ...",
+      "url": "https://kidero.dk/produkt/411201-babymatex-ammepude-og-positioneringspude-minirelax-jersey-150-cm-stjerner-1",
+      "snippet": "Den praktiske positions- og ammepude Babymatex miniRelax (150 cm) giver maksimal komfort under graviditet, ved amning og til afslapning. Takket være den ergonomiske form giver den stabil støtte til ryg, skuldre og mave, har blødt bomuldsbetræk og elastisk fyld, der tilpasser sig kroppen. Den glæder også med en sidelynlomme til småting og certificeringen OEKO‑TEX Standard 100."
+    }
+  ]
+}

@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "hasi-moto/contrastive92",
+  "slug": "hasi-moto-contrastive92",
+  "author": "hasi-moto",
+  "url": "https://huggingface.co/hasi-moto/contrastive92",
+  "created_at": "2026-08-28T19:00:36.000Z",
+  "updated_at": "2026-08-28T19:00:46.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "cnn_transformer",
+    "pytorch",
+    "cnn-transformer",
+    "contrastive",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 16576,
+  "parameters_human": "16576",
+  "storage_bytes": 66784,
+  "storage_human": "66784 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "LLM Leaderboard 2026: Compare 300+ Top AI Models by Intelligence, Speed ...",
+      "url": "https://llm-stats.com/leaderboards/llm-leaderboard",
+      "snippet": "The LLM Leaderboard — independent ranking of GPT, Claude, Gemini, Llama, DeepSeek and 300+ AI models by intelligence, speed and price. Filter by provider, license, modality and context window; sort by every benchmark. Composite LLM Stats Score updated continuously from public benchmarks and live API metrics."
+    },
+    {
+      "title": "GitHub - openai/CLIP: CLIP (Contrastive Language-Image Pretraining ...",
+      "url": "https://github.com/openai/CLIP",
+      "snippet": "CLIP [Blog] [Paper] [Model Card] [Colab] CLIP (Contrastive Language-Image Pre-Training) is a neural network trained on a variety of (image, text) pairs. It can be instructed in natural language to predict the most relevant text snippet, given an image, without directly optimizing for the task, similarly to the zero-shot capabilities of GPT-2 and 3."
+    },
+    {
+      "title": "GitHub - nomic-ai/contrastors: Train Models Contrastively in Pytorch",
+      "url": "https://github.com/nomic-ai/contrastors",
+      "snippet": "Train Models Contrastively in Pytorch. Contribute to nomic-ai/contrastors development by creating an account on GitHub."
+    },
+    {
+      "title": "Figure 8 from Explainable AI for Ship Collision Avoidance: Decoding ...",
+      "url": "https://www.semanticscholar.org/paper/Explainable-AI-for-Ship-Collision-Avoidance%3A-and-Yoshioka-Hashimoto/952a2323e0db6c5d1302fbe083e8843934803bb8/figure/7",
+      "snippet": "An explainable AI for ship collision avoidance was developed, confirmed to be able to safely avoid collisions under various congestion levels, and AI&#x27;s decision-making process was rendered comprehensible to humans."
+    },
+    {
+      "title": "A multicenter diagnostic study of thyroid nodule with Hashimoto&#x27;s ...",
+      "url": "https://link.springer.com/article/10.1007/s00330-025-11422-6",
+      "snippet": "Objective This study aimed to develop a Hashimoto&#x27;s thyroiditis nodule-artificial intelligence (HTN-AI) model to optimize the diagnosis of thyroid nodules with Hashimoto&#x27;s thyroiditis (HT) of which the efficiency and accuracy remain challenging. Design and methods This study included 5709 patients from 10 hospitals between January 2014 and March 2024. Among them, 5053 thyroid nodules were ..."
+    }
+  ]
+}

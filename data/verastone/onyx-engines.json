@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "Verastone/onyx-engines",
+  "slug": "verastone-onyx-engines",
+  "author": "Verastone",
+  "url": "https://huggingface.co/Verastone/onyx-engines",
+  "created_at": "2026-06-07T01:29:01.000Z",
+  "updated_at": "2026-08-28T14:09:23.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1622779983,
+  "storage_human": "1.6 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Verastone (Vera stone) - Hugging Face",
+      "url": "https://huggingface.co/Verastone",
+      "snippet": "AI & ML interests ... Recent Activity liked a model about 12 hours ago ... published a model about 22 hours ago"
+    },
+    {
+      "title": "GitHub - onyx-robotics/onyx-engine: Deploy a production-ready AI model ...",
+      "url": "https://github.com/onyx-robotics/onyx-engine",
+      "snippet": "The Engine is a production-ready AI training workflow for hardware control systems and physics simulation. The onyx-engine Python library is your interface to: Upload datasets to Onyx&#x27;s cloud Train/optimize models on Onyx&#x27;s training infrastructure Pull and deploy models locally to predict hardware dynamics Use our companion Onyx Engine Platform alongside the onyx-engine library to accelerate ..."
+    },
+    {
+      "title": "onyxengine · PyPI",
+      "url": "https://pypi.org/project/onyxengine/",
+      "snippet": "Production tooling for AI controls and simulation. What is the Onyx Engine? The Engine is a production-ready AI training workflow for hardware control systems and physics simulation. The onyx-engine Python library is your interface to: Upload datasets to Onyx&#x27;s cloud Train/optimize models on Onyx&#x27;s training infrastructure Pull and deploy models locally to predict hardware dynamics Use our ..."
+    },
+    {
+      "title": "GitHub - crastatelvin/ONYX: Production-grade edge AI inference platform ...",
+      "url": "https://github.com/crastatelvin/ONYX",
+      "snippet": "Production-grade edge AI inference platform running fully in the browser with zero backend, local model execution, and mission-control UI. - crastatelvin/ONYX"
+    },
+    {
+      "title": "Models compatible with the ONNX library - Hugging Face",
+      "url": "https://huggingface.co/models?library=onnx",
+      "snippet": "Explore machine learning models."
+    }
+  ]
+}

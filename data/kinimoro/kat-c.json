@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "Kinimoro/Kat.C",
+  "slug": "kinimoro-kat-c",
+  "author": "Kinimoro",
+  "url": "https://huggingface.co/Kinimoro/Kat.C",
+  "created_at": "2026-08-28T18:59:22.000Z",
+  "updated_at": "2026-08-28T18:59:29.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-to-image",
+  "library": "diffusers",
+  "languages": [],
+  "tags": [
+    "diffusers",
+    "text-to-image",
+    "lora",
+    "template:diffusion-lora",
+    "base_model:krea/Krea-2-Raw",
+    "base_model:adapter:krea/Krea-2-Raw",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 231740162,
+  "storage_human": "232 MB",
+  "base_model": "krea/Krea-2-Raw",
+  "formats": [
+    "diffusers"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "chilkersion/Kinimoro · Hugging Face",
+      "url": "https://huggingface.co/chilkersion/Kinimoro",
+      "snippet": "You need to agree to share your contact information to access this model This repository is publicly accessible, but you have to accept the conditions to access its files and content."
+    },
+    {
+      "title": "Model List - Kimi API Platform",
+      "url": "https://platform.kimi.ai/docs/models",
+      "snippet": "Review currently available Kimi multimodal, coding, and Moonshot V1 models, plus migration guidance for discontinued models."
+    },
+    {
+      "title": "Moonshot AI",
+      "url": "https://www.moonshot.ai/",
+      "snippet": "Complex problems, solved with ease AI Models is capability. Code, analyze, sheets and slides — simplify complex work with the latest flagship model."
+    },
+    {
+      "title": "kimimaro - AI Art Model | PixAI",
+      "url": "https://pixai.art/model/1652053199532845167",
+      "snippet": "Generate stunning Naruto , naruto anime art with the &#x27;kimimaro&#x27; model on PixAI. Browse artworks made with this model and try it free."
+    },
+    {
+      "title": "Kimi AI: Official Links & Independent Test Results",
+      "url": "https://kimi-ai.chat/",
+      "snippet": "Independent Kimi AI guide with official access links, current models, pricing, API resources, and reproducible tests. Not affiliated with Moonshot AI."
+    }
+  ]
+}

@@ -1,0 +1,79 @@
+{
+  "schema": 1,
+  "id": "textilelabs/Loom-Spark-1.8-Flash",
+  "slug": "textilelabs-loom-spark-1-8-flash",
+  "author": "textilelabs",
+  "url": "https://huggingface.co/textilelabs/Loom-Spark-1.8-Flash",
+  "created_at": "2026-08-28T14:57:51.000Z",
+  "updated_at": "2026-08-28T15:01:00.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gguf",
+    "gpt2",
+    "text-generation",
+    "tiny-model",
+    "from-scratch",
+    "tool-use",
+    "agent-harness",
+    "humble-ai",
+    "philosophy-of-mind",
+    "cpu-trained",
+    "en",
+    "license:mit",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 2615424,
+  "parameters_human": "2.6M",
+  "storage_bytes": 24208472,
+  "storage_human": "24 MB",
+  "base_model": null,
+  "formats": [
+    "gguf",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "textilelabs/Loom-Spark-1.8 · Hugging Face",
+      "url": "https://huggingface.co/textilelabs/Loom-Spark-1.8",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "textilelabs/Loom-Spark-1.8 at main - Hugging Face",
+      "url": "https://huggingface.co/textilelabs/Loom-Spark-1.8/tree/main",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Loom-Spark API & Inference Endpoint | FriendliAI",
+      "url": "https://friendli.ai/models/textilelabs/Loom-Spark",
+      "snippet": "Run Loom-Spark with FriendliAI inference. First of the Loom models · Textile Labs."
+    },
+    {
+      "title": "LLM Leaderboard & AI Model Benchmarks — August 2026",
+      "url": "https://benchlm.ai/",
+      "snippet": "LLM Leaderboard & AI Model Benchmarks — August 2026 Compare frontier AI models by quality, cost, and context. 105 Supported and 121 Estimated models among 403 tracked LLMs — 406 benchmarks, real pricing, and runtime data in one place."
+    },
+    {
+      "title": "deepseek-ai/DeepSeek-V4-Flash-0731 · Hugging Face",
+      "url": "https://huggingface.co/deepseek-ai/DeepSeek-V4-Flash-0731",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    }
+  ]
+}

@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "Ryanham1lton/Cubchoo",
+  "slug": "ryanham1lton-cubchoo",
+  "author": "Ryanham1lton",
+  "url": "https://huggingface.co/Ryanham1lton/Cubchoo",
+  "created_at": "2026-08-28T17:35:11.000Z",
+  "updated_at": "2026-08-28T17:37:12.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:cc-by-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 122227785,
+  "storage_human": "122 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Ryanham1lton (Ryan James Hamilton) - Hugging Face",
+      "url": "https://huggingface.co/Ryanham1lton",
+      "snippet": "AI & ML interests ... Recent Activity updated a model about 12 hours ago ... published a model about 12 hours ago"
+    },
+    {
+      "title": "Ryanham1lton (Ryan James Hamilton) - Hugging Face",
+      "url": "https://huggingface.co/Ryanham1lton/models",
+      "snippet": "User profile of Ryan James Hamilton on Hugging Face"
+    },
+    {
+      "title": "cubchoo AI Models | Civitai",
+      "url": "https://civitai.com/tag/cubchoo",
+      "snippet": "Browse 1 Stable Diffusion & Flux models, LoRAs, checkpoints, and embeddings tagged with cubchoo."
+    },
+    {
+      "title": "Cubchoo｜AI Art Model & LoRA | PixAI",
+      "url": "https://pixai.art/model/1929582805714851805",
+      "snippet": "Just created this stunning anime art with the amazing &#x27;Cubchoo&#x27; model on PixAI! Search for \"Cubchoo\" on PixAI - the free & professional AI anime art generator. Create your own masterpieces in seconds. Try it now!"
+    },
+    {
+      "title": "ryanham1lton | Storyteller.ai",
+      "url": "https://storyteller.ai/profile/ryanham1lton",
+      "snippet": "Storyteller.ai AI creation engine Make movies like this with Seedance 2.0 - cheaper than anywhere else. Seedance 2.0 model is live on ArtCraft before anywhere else. Create cinematic AI video with fluid motion and Hollywood-level scenes."
+    }
+  ]
+}

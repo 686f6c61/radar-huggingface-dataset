@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "DevanshR/25M2153-Week03-Track1-20-Submission01",
+  "slug": "devanshr-25m2153-week03-track1-20-submission01",
+  "author": "DevanshR",
+  "url": "https://huggingface.co/DevanshR/25M2153-Week03-Track1-20-Submission01",
+  "created_at": "2026-08-28T17:49:08.000Z",
+  "updated_at": "2026-08-28T17:52:58.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1661356418,
+  "storage_human": "1.7 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ChatGPT: Chat, Work, Create & Code with AI",
+      "url": "https://chatgpt.com/",
+      "snippet": "Use ChatGPT to answer questions, write, create images, complete work, and code—all in one place. Get started for free or download the app."
+    },
+    {
+      "title": "rpchinhara/25M2573-Week03-Track1_40-Submission01 · Hugging Face",
+      "url": "https://huggingface.co/rpchinhara/25M2573-Week03-Track1_40-Submission01",
+      "snippet": "Instructions to use rpchinhara/25M2573-Week03-Track1_40-Submission01 with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "GitHub - rohitg00/ai-engineering-from-scratch: Learn it. Build it. Ship ...",
+      "url": "https://github.com/rohitg00/ai-engineering-from-scratch",
+      "snippet": "Learn it. Build it. Ship it for others. Contribute to rohitg00/ai-engineering-from-scratch development by creating an account on GitHub."
+    },
+    {
+      "title": "week-3/3_model_building.ipynb at main · devanshi204/week-3",
+      "url": "https://github.com/devanshi204/week-3/blob/main/3_model_building.ipynb",
+      "snippet": "model building (carbon emission prediction using ml) - week-3/3_model_building.ipynb at main · devanshi204/week-3"
+    },
+    {
+      "title": "Paper-List-DAILY - Paper Arxiv Daily",
+      "url": "https://islinxu.github.io/paper-list/",
+      "snippet": "Paper-List-DAILY is an automated arXiv paper tracking system that fetches, categorizes, and organizes the latest research papers across 20+ computer vision & AI topics — from classic tasks like Object Detection and Segmentation to cutting-edge fields like Diffusion Models, LLMs, and Embodied AI."
+    }
+  ]
+}

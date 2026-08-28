@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "Jordine/patina3-cube_europe-eu_sft_s0",
+  "slug": "jordine-patina3-cube_europe-eu_sft_s0",
+  "author": "Jordine",
+  "url": "https://huggingface.co/Jordine/patina3-cube_europe-eu_sft_s0",
+  "created_at": "2026-08-28T18:44:59.000Z",
+  "updated_at": "2026-08-28T18:52:55.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "base_model:adapter:meta-llama/Llama-3.1-8B",
+    "lora",
+    "transformers",
+    "text-generation",
+    "conversational",
+    "arxiv:1910.09700",
+    "base_model:meta-llama/Llama-3.1-8B",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 688359088,
+  "storage_human": "688 MB",
+  "base_model": "meta-llama/Llama-3.1-8B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Jordine/patina3-t_america_sft_s0 · Hugging Face",
+      "url": "https://huggingface.co/Jordine/patina3-t_america_sft_s0",
+      "snippet": "Jordine / patina3-t_america_sft_s0 like 0 Text Generation PEFT Safetensors Transformers lora conversational arxiv:1910.09700 Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "Jordine/patina3-r_america_sft_s0 at main - Hugging Face",
+      "url": "https://huggingface.co/Jordine/patina3-r_america_sft_s0/tree/main",
+      "snippet": "Jordine / patina3-r_america_sft_s0 like 0 Text Generation PEFT Safetensors Transformers lora conversational arxiv:1910.09700 Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "Patina3 Afford Merge Sft S0 - AI Model Insights & Benchmarks",
+      "url": "https://free2aitools.com/model/jordine/patina3-afford_merge_sft_s0",
+      "snippet": "Registry entry for model Patina3 Afford Merge Sft S0; source metadata pending."
+    },
+    {
+      "title": "AI Model Catalog | Microsoft Foundry Models",
+      "url": "http://ai.azure.com/catalog/models",
+      "snippet": "Explore the comprehensive catalog of AI models from Microsoft Foundry"
+    },
+    {
+      "title": "SFT || 2026 A/L || MODEL Paper || SEQ & EQ Discussion - YouTube",
+      "url": "https://www.youtube.com/watch?v=dS6ZFxE2zw0",
+      "snippet": "SFT || 2026 A/L || MODEL Paper || SEQ & EQ Discussion || Sandun Priyankara Sandun Priyankara 71.1K subscribers 1.2K"
+    }
+  ]
+}

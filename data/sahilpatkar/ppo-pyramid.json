@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "sahilpatkar/ppo-Pyramid",
+  "slug": "sahilpatkar-ppo-pyramid",
+  "author": "sahilpatkar",
+  "url": "https://huggingface.co/sahilpatkar/ppo-Pyramid",
+  "created_at": "2026-08-28T18:43:03.000Z",
+  "updated_at": "2026-08-28T18:43:13.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "reinforcement-learning",
+  "library": "ml-agents",
+  "languages": [],
+  "tags": [
+    "ml-agents",
+    "tensorboard",
+    "onnx",
+    "Pyramids",
+    "deep-reinforcement-learning",
+    "reinforcement-learning",
+    "ML-Agents-Pyramids",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 37787774,
+  "storage_human": "38 MB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "sahilpatkar (sahil patkar) - Hugging Face",
+      "url": "https://huggingface.co/sahilpatkar",
+      "snippet": "User profile of sahil patkar on Hugging Face"
+    },
+    {
+      "title": "aiartwork/ppo-PyramidsRND · Hugging Face",
+      "url": "https://huggingface.co/aiartwork/ppo-PyramidsRND",
+      "snippet": "ppo Agent playing Pyramids This is a trained model of a ppo agent playing Pyramids using the Unity ML-Agents Library."
+    },
+    {
+      "title": "Proximal Policy Optimization Head-to-Head — Spinning Up documentation",
+      "url": "https://spinningup.openai.com/en/latest/spinningup/bench_ppo.html",
+      "snippet": "User Documentation Introduction Installation Algorithms Running Experiments Experiment Outputs Plotting Results Introduction to RL Part 1: Key Concepts in RL Part 2: Kinds of RL Algorithms Part 3: Intro to Policy Optimization Resources Spinning Up as a Deep RL Researcher Key Papers in Deep RL Exercises Benchmarks for Spinning Up Implementations Algorithms Docs Vanilla Policy Gradient Trust ..."
+    },
+    {
+      "title": "GitHub - ai-in-pm/Proximal-Policy-Optimization-Algorithms: This ...",
+      "url": "https://github.com/ai-in-pm/Proximal-Policy-Optimization-Algorithms",
+      "snippet": "This repository contains a clean and efficient implementation of the Proximal Policy Optimization (PPO) algorithm, a state-of-the-art policy gradient method for reinforcement learning. - ai-in-pm/P..."
+    },
+    {
+      "title": "@Sahil Thaker - Ghost Explore",
+      "url": "https://explore.ghost.org/p/at-sahil-thaker",
+      "snippet": "Sahil Thaker&#x27;s personal site with thoughts on AI and technology"
+    }
+  ]
+}

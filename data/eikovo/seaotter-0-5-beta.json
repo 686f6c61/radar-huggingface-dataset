@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "Eikovo/SeaOtter-0.5-Beta",
+  "slug": "eikovo-seaotter-0-5-beta",
+  "author": "Eikovo",
+  "url": "https://huggingface.co/Eikovo/SeaOtter-0.5-Beta",
+  "created_at": "2026-08-28T15:09:53.000Z",
+  "updated_at": "2026-08-28T15:18:40.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 5442983899,
+  "storage_human": "5.4 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Agent-native contract — SeaOtter | SeaOtter",
+      "url": "https://seaotter.ai/docs/agent-native",
+      "snippet": "Ocean predicts where your agent&#x27;s work goes next; OtterScore decides whether it counts. How an AI agent discovers SeaOtter, mints its own key, runs Ocean&#x27;s typed lifecycle (register an exact state, predict bounded next states, select a route), and closes the loop through OtterScore&#x27;s acceptance gate — entirely from machine-readable artifacts."
+    },
+    {
+      "title": "Beta terms — SeaOtter | SeaOtter",
+      "url": "https://seaotter.ai/terms/beta",
+      "snippet": "1. SeaOtter is in beta SeaOtter Dispatch is a young service. The mechanisms described below — the prepaid balance, the held job price, checking before money moves, free escalation — are live and real, and we operate them carefully at a deliberately small scale: we take a limited number of jobs at a time, and some job categories are marked \"not yet\" because their checks aren&#x27;t honest yet. A ..."
+    },
+    {
+      "title": "Models - Hugging Face",
+      "url": "https://huggingface.co/models?search=SEAOTTER",
+      "snippet": "Explore machine learning models. Tasks Text Generation Any-to-Any Image-Text-to-Text Image-to-Text Image-to-Image Text-to-Image Text-to-Video Text-to-Speech + 44 6B 12B 32B 128B Libraries PyTorch TensorFlow JAX Transformers Diffusers GGUF MLX Transformers.js Safetensors sentence-transformers ONNX + 42 Apps vLLM llama.cpp MLX LM LM Studio Ollama Jan Draw Things + 9 Inference Providers Groq ..."
+    },
+    {
+      "title": "Seaotter by KhaiArts12 on DeviantArt",
+      "url": "https://www.deviantart.com/khaiarts12/art/Seaotter-1338184804",
+      "snippet": "Seaotter — artwork by KhaiArts12 on DeviantArt. Published: 2026-05-27 · Likes: 2 · Views: 148 · Comments: 1 · Tags: ai, dreamup, animal, ai_art"
+    },
+    {
+      "title": "Eikovo (Noah Van Dijk) - Hugging Face",
+      "url": "https://huggingface.co/Eikovo",
+      "snippet": "AI & ML interests ... Recent Activity updated a model about 4 hours ago ... published a model about 7 hours ago"
+    }
+  ]
+}

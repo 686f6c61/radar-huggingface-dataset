@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "Fionareyes/hw2-retrieval",
+  "slug": "fionareyes-hw2-retrieval",
+  "author": "Fionareyes",
+  "url": "https://huggingface.co/Fionareyes/hw2-retrieval",
+  "created_at": "2026-08-28T12:47:13.000Z",
+  "updated_at": "2026-08-28T12:47:21.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "coca",
+    "pytorch",
+    "retrieval",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 24832,
+  "parameters_human": "24832",
+  "storage_bytes": 99808,
+  "storage_human": "99808 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "hw2 ai Object Detection Model by my ai cnn workplace",
+      "url": "https://universe.roboflow.com/my-ai-cnn-workplace/hw2-ai",
+      "snippet": "80 open source objects images plus a pre-trained hw2 ai model and API. Created by my ai cnn workplace"
+    },
+    {
+      "title": "Hugging Face - The AI community building the future.",
+      "url": "https://huggingface.co/",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "AI Hw2 Object Detection Model (v1, 2025-05-11 11:47am) by yolo",
+      "url": "https://universe.roboflow.com/yolo-hqik7/ai-hw2/dataset/1",
+      "snippet": "1288 open source objects images and annotations in multiple formats for training computer vision models. AI Hw2 (v1, 2025-05-11 11:47am), created by yolo"
+    },
+    {
+      "title": "GitHub - stephanieyenyu/GenAI-and-Robotics-Projects",
+      "url": "https://github.com/stephanieyenyu/GenAI-and-Robotics-Projects/tree/main",
+      "snippet": "Repository Overview This repository serves as a comprehensive portfolio of my projects developed during the \"Introduction to GenAI and Machine Learning\" course at NTU."
+    },
+    {
+      "title": "AI Model Catalog | Microsoft Foundry Models",
+      "url": "https://ai.azure.com/catalog",
+      "snippet": "Build AI that ships Build, test, and deploy AI systems with the models, tools, and workflows your team needs. Scale on one platform."
+    }
+  ]
+}

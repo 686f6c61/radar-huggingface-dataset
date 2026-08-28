@@ -1,0 +1,78 @@
+{
+  "schema": 1,
+  "id": "vikramlingam/SmolLM2-135M-Post-ASR-Engine",
+  "slug": "vikramlingam-smollm2-135m-post-asr-engine",
+  "author": "vikramlingam",
+  "url": "https://huggingface.co/vikramlingam/SmolLM2-135M-Post-ASR-Engine",
+  "created_at": "2026-08-28T12:29:20.000Z",
+  "updated_at": "2026-08-28T12:44:32.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "mlx",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "gguf",
+    "llama",
+    "asr",
+    "speech-formatting",
+    "smollm2",
+    "formatting-engine",
+    "en",
+    "base_model:HuggingFaceTB/SmolLM2-135M-Instruct",
+    "base_model:quantized:HuggingFaceTB/SmolLM2-135M-Instruct",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 134515008,
+  "parameters_human": "134.5M",
+  "storage_bytes": 487761199,
+  "storage_human": "488 MB",
+  "base_model": "HuggingFaceTB/SmolLM2-135M-Instruct",
+  "formats": [
+    "gguf",
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "HuggingFaceTB/SmolLM2-135M · Hugging Face",
+      "url": "https://huggingface.co/HuggingFaceTB/SmolLM2-135M",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GitHub - ankera-21/SmolLm2-135M: SMolLm2 -135 Implementation and ...",
+      "url": "https://github.com/ankera-21/SmolLm2-135M",
+      "snippet": "SMolLm2 -135 Implementation and training. Contribute to ankera-21/SmolLm2-135M development by creating an account on GitHub."
+    },
+    {
+      "title": "SmolLM - blazingly fast and remarkably powerful - Hugging Face",
+      "url": "https://huggingface.co/blog/smollm",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GitHub - huggingface/smollm: Everything about the SmolLM and SmolVLM ...",
+      "url": "https://github.com/huggingface/smollm",
+      "snippet": "Welcome to Smol Models, a family of efficient and lightweight AI models from Hugging Face. Our mission is to create fully open powerful yet compact models, for text and vision, that can run effectively on-device while maintaining strong performance."
+    },
+    {
+      "title": "SmolLM2-135M · Models",
+      "url": "https://www.modelscope.cn/models/HuggingFaceTB/SmolLM2-135M",
+      "snippet": "SmolLM2 is a family of compact language models available in three size: 135M, 360M, and 1.7B parameters. They are capable of solving a wide range of tasks while being lightweight enough to run on-device."
+    }
+  ]
+}

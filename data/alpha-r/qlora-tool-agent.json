@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "Alpha-R/qlora-tool-agent",
+  "slug": "alpha-r-qlora-tool-agent",
+  "author": "Alpha-R",
+  "url": "https://huggingface.co/Alpha-R/qlora-tool-agent",
+  "created_at": "2026-08-28T17:11:38.000Z",
+  "updated_at": "2026-08-28T17:11:48.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 26206116,
+  "storage_human": "26 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "QLoRA: Efficient Finetuning of Quantized LLMs - arXiv.org",
+      "url": "https://arxiv.org/html/2305.14314v1",
+      "snippet": "QLoRA &#x27;s efficiency enables us to perform an in-depth study of instruction finetuning and chatbot performance on model scales that would be impossible using regular finetuning due to memory overhead. Therefore, we train more than 1,000 models across several instruction tuning datasets, model architectures, and sizes between 80M to 65B parameters."
+    },
+    {
+      "title": "QLoRA: Efficient Finetuning of Quantized LLMs - GitHub",
+      "url": "https://github.com/artidoro/qlora",
+      "snippet": "QLoRA backpropagates gradients through a frozen, 4-bit quantized pretrained language model into Low Rank Adapters (LoRA). Our best model family, which we name Guanaco, outperforms all previous openly released models on the Vicuna benchmark, reaching 99.3% of the performance level of ChatGPT while only requiring 24 hours of finetuning on a ..."
+    },
+    {
+      "title": "Internalizing Tool Knowledge in Small Language Models via QLoRA Fine-Tuning",
+      "url": "https://arxiv.org/pdf/2605.17774",
+      "snippet": "Abstract—Tool-using language agents commonly include full tool schemas in every prompt, even when the available tools are fixed across many queries. This repeated schema context increases input length and can make small models unreliable planners. We study whether small language models can internalize a fixed tool catalog through supervised parameter-efficient fine-tuning, enabling ..."
+    },
+    {
+      "title": "How to Customize an LLM for AI Agents using SFT and QLoRA",
+      "url": "https://www.freecodecamp.org/news/how-to-customize-an-llm-for-ai-agents-using-sft-and-qlora/",
+      "snippet": "In this tutorial, I&#x27;ll show you how to fine-tune a large language model for use in AI agents using supervised fine-tuning with QLoRA. This lets us customize a pre-trained model so it behaves the way w"
+    },
+    {
+      "title": "Fine-Tuning a Tool-Calling Agent: SFT + QLoRA on Gemma 3 4B",
+      "url": "https://aiwithvd.com/blog/fine-tuning-tool-calling-agent-sft-qlora-gemma",
+      "snippet": "How I turned a prompt-driven ReAct agent over a 40+ tool MCP backend into a fine-tuned one — collecting multi-turn tool trajectories, building the SFT dataset, training Gemma 3 4B with QLoRA, and serving it back behind the agent loop. The case study that ties the whole fine-tuning series together."
+    }
+  ]
+}

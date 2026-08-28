@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "MAJANOWAK/classification-mini",
+  "slug": "majanowak-classification-mini",
+  "author": "MAJANOWAK",
+  "url": "https://huggingface.co/MAJANOWAK/classification-mini",
+  "created_at": "2026-08-28T17:13:46.000Z",
+  "updated_at": "2026-08-28T17:13:55.000Z",
+  "license": "bsd-3-clause",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "hybrid",
+    "pytorch",
+    "classification",
+    "license:bsd-3-clause",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 24832,
+  "parameters_human": "24832",
+  "storage_bytes": 99808,
+  "storage_human": "99808 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Age Estimation and Gender Classification from Facial Images",
+      "url": "https://www.mdpi.com/2076-3417/15/18/10212",
+      "snippet": "For a computational model, gender recognition is a binary classification problem and thus inherently simpler than age estimation, which often involves regression. The potential applications of age and gender recognition systems are wide, ranging from entertainment and marketing to forensic identification and access control in security systems."
+    },
+    {
+      "title": "classification-model · GitHub Topics · GitHub",
+      "url": "https://github.com/topics/classification-model",
+      "snippet": "AI-driven initiative to assist hospitals and rural clinics in early detection of Diabetic Retinopathy, supporting accessible eye care for all through open healthcare innovation."
+    },
+    {
+      "title": "GitHub - onnx/models: A collection of pre-trained, state-of-the-art ...",
+      "url": "https://github.com/onnx/models",
+      "snippet": "Welcome to the ONNX Model Zoo! The Open Neural Network Exchange (ONNX) is an open standard format created to represent machine learning models. Supported by a robust community of partners, ONNX defines a common set of operators and a common file format to enable AI developers to use models with a variety of frameworks, tools, runtimes, and compilers. This repository is a curated collection of ..."
+    },
+    {
+      "title": "Comparison of AI Models across Intelligence, Performance, and Price ...",
+      "url": "https://artificialanalysis.ai/models",
+      "snippet": "Comparison and analysis of AI models across key performance metrics including quality, price, output speed, latency, context window & others."
+    },
+    {
+      "title": "Externally Tested AI Models for Malignancy Classification of Lung ...",
+      "url": "https://pubs.rsna.org/doi/10.1148/ryai.250331",
+      "snippet": "This meta-analysis evaluated externally tested AI models for malignancy classification of lung nodules at chest CT and demonstrated high sensitivity but moderate specificity, with substantial heter..."
+    }
+  ]
+}

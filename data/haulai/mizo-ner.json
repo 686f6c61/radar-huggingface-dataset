@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "haulai/mizo-ner",
+  "slug": "haulai-mizo-ner",
+  "author": "haulai",
+  "url": "https://huggingface.co/haulai/mizo-ner",
+  "created_at": "2026-08-28T12:06:14.000Z",
+  "updated_at": "2026-08-28T12:06:14.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Building a hill-climbing machine: Launching seven new MAI models ...",
+      "url": "https://microsoft.ai/news/building-a-hillclimbing-machine-launching-seven-new-mai-models/",
+      "snippet": "Here&#x27;s our first steps along the way. Our Models Our new models across image, voice, transcription, coding, and reasoning, together form the MAI model family: a multimodal ecosystem designed to work across the kinds of tasks that matter in the real world. MAI-Thinking-1, Microsoft AI&#x27;s flagship reasoning model."
+    },
+    {
+      "title": "Automated Text Corpus Development Using Web Crawling for ... - EurekaMag",
+      "url": "https://eurekamag.com/research/102/991/102991035.php",
+      "snippet": "Automated Text Corpus Development Using Web Crawling for Low-Resource Mizo Language: A Foundation for NLP Research Haulai, T.; Hussain, J.; Dawngliani, M.S."
+    },
+    {
+      "title": "Towards Resource-Rich Mizo and Khasi in NLP: Resource Development ...",
+      "url": "https://aclanthology.org/2025.law-1.18/",
+      "snippet": "This work presents the first comprehensive effort toward developing high quality linguistic datasets for two extremely low resource languages Mizo and Khasi. We introduce human annotated, gold standard datasets for three core NLP tasks: Part-of-Speech (POS) tagging, Named Entity Recognition (NER), and Keyword Identification."
+    },
+    {
+      "title": "GitHub - Soumyadip0806/NER-Finetuning: This repository focuses on Named ...",
+      "url": "https://github.com/Soumyadip0806/NER-Finetuning",
+      "snippet": "This repository focuses on Named Entity Recognition (NER) fine-tuning for low-resource languages, specifically Mizo and Khasi. It includes scripts for model training and a data preprocessing pipeli..."
+    },
+    {
+      "title": "Hailuo AI: MiniMax H3 LIVE NOW. Top-Tier Quality, Versatile References",
+      "url": "https://hailuoai.video/",
+      "snippet": "Create AI videos and images from text or photos with Hailuo AI. Explore video, image, and meme tools built for creators and social content online."
+    }
+  ]
+}

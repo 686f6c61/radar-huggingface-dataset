@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "lukasz-staniszewski/ace-step-sae-scores-vocal-style",
+  "slug": "lukasz-staniszewski-ace-step-sae-scores-vocal-style",
+  "author": "lukasz-staniszewski",
+  "url": "https://huggingface.co/lukasz-staniszewski/ace-step-sae-scores-vocal-style",
+  "created_at": "2026-05-27T09:20:44.000Z",
+  "updated_at": "2026-08-28T17:17:28.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 16595262,
+  "storage_human": "17 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "lukasz-staniszewski/ace-step-sae-scores-vocal-style · Hugging Face",
+      "url": "https://huggingface.co/lukasz-staniszewski/ace-step-sae-scores-vocal-style",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "lukasz-staniszewski/ace-step-sae-scores-tempo · Hugging Face",
+      "url": "https://huggingface.co/lukasz-staniszewski/ace-step-sae-scores-tempo",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Ace Step Caa Vocal Style | Sweet Tea Studio",
+      "url": "https://sweettea.co/resources/lukasz-staniszewski-ace-step-caa-vocal-style-huggingface-model-lukasz-staniszewski-ace-step-caa-vocal-style",
+      "snippet": "Steering vectors for the vocal style concept on ACE-Step, computed via contrastive activation addition (CAA). Paper"
+    },
+    {
+      "title": "GitHub - ace-step/ACE-Step: ACE-Step: A Step Towards Music Generation ...",
+      "url": "https://github.com/ace-step/ACE-Step",
+      "snippet": "📝 Abstract We introduce ACE-Step, a novel open-source foundation model for music generation that overcomes key limitations of existing approaches and achieves state-of-the-art performance through a holistic architectural design. Current methods face inherent trade-offs between generation speed, musical coherence, and controllability."
+    },
+    {
+      "title": "GitHub - luk-st/steer-audio: Code repository for paper \"Tuning Audio ...",
+      "url": "https://github.com/luk-st/steer-audio",
+      "snippet": "Code repository for paper \"Tuning Audio Diffusion Models through Activation Steering\" - luk-st/steer-audio"
+    }
+  ]
+}

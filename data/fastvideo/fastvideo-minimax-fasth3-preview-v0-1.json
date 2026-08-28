@@ -1,0 +1,77 @@
+{
+  "schema": 1,
+  "id": "FastVideo/FastVideo-Minimax-FastH3-Preview-v0.1",
+  "slug": "fastvideo-fastvideo-minimax-fasth3-preview-v0-1",
+  "author": "FastVideo",
+  "url": "https://huggingface.co/FastVideo/FastVideo-Minimax-FastH3-Preview-v0.1",
+  "created_at": "2026-08-21T01:43:23.000Z",
+  "updated_at": "2026-08-28T19:27:29.000Z",
+  "license": "minimax-h3-community",
+  "license_family": "unknown",
+  "pipeline_tag": "text-to-video",
+  "library": "diffusers",
+  "languages": [],
+  "tags": [
+    "diffusers",
+    "safetensors",
+    "text-to-video",
+    "video",
+    "audio",
+    "text-to-audio-video",
+    "distillation",
+    "dmd2",
+    "few-step",
+    "minimax-h3",
+    "fastvideo",
+    "fasth3",
+    "arxiv:2405.14867",
+    "base_model:MiniMaxAI/MiniMax-H3",
+    "base_model:finetune:MiniMaxAI/MiniMax-H3",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 3,
+  "downloads_30d": 17,
+  "trending_score": 0,
+  "parameters": 35049751296,
+  "parameters_human": "35.05B",
+  "storage_bytes": 147835483860,
+  "storage_human": "147.8 GB",
+  "base_model": "MiniMaxAI/MiniMax-H3",
+  "formats": [
+    "diffusers",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "FastVideo/FastVideo-Minimax-FastH3-Preview-v0.1 · Hugging Face",
+      "url": "https://huggingface.co/FastVideo/FastVideo-Minimax-FastH3-Preview-v0.1",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "FastVideo/FastVideo-Minimax-FastH3-Preview-v0.1 at main",
+      "url": "https://huggingface.co/FastVideo/FastVideo-Minimax-FastH3-Preview-v0.1/tree/main",
+      "snippet": "Instructions to use FastVideo/FastVideo-Minimax-FastH3-Preview-v0.1 with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "FastVideo-Minimax-FastH3-Preview-v0.1 - AI Market Cap",
+      "url": "https://aimarketcap.tech/models/fastvideo-fastvideo-minimax-fasth3-preview-v0-1",
+      "snippet": "Explore FastVideo-Minimax-FastH3-Preview-v0.1 by FastVideo — benchmark coverage where available, pricing, and comparisons on AI Market Cap."
+    },
+    {
+      "title": "minimax_h3 - FastVideo",
+      "url": "https://haoailab.com/FastVideo/api/fastvideo/pipelines/basic/minimax_h3/",
+      "snippet": "A unified inference and post-training framework for accelerated video generation"
+    },
+    {
+      "title": "MiniMax H3 Open-Source AI Video Model | Tutorials, Deployment & Workflows",
+      "url": "https://design.minimax.io/h3",
+      "snippet": "Curated MiniMax H3 video model tutorials, open-source deployment guides, creator workflows and industry insights. Updated continuously."
+    }
+  ]
+}

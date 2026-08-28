@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "dchevell/diar_streaming_sortformer_4spk-v2.1-GGUF",
+  "slug": "dchevell-diar_streaming_sortformer_4spk-v2-1-gguf",
+  "author": "dchevell",
+  "url": "https://huggingface.co/dchevell/diar_streaming_sortformer_4spk-v2.1-GGUF",
+  "created_at": "2026-08-28T12:21:54.000Z",
+  "updated_at": "2026-08-28T12:22:13.000Z",
+  "license": "nvidia-open-model-license",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "audio",
+    "nemo-speech-cpp",
+    "speaker-diarization",
+    "base_model:nvidia/diar_streaming_sortformer_4spk-v2.1",
+    "base_model:quantized:nvidia/diar_streaming_sortformer_4spk-v2.1",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 122862212,
+  "parameters_human": "122.9M",
+  "storage_bytes": 491094752,
+  "storage_human": "491 MB",
+  "base_model": "nvidia/diar_streaming_sortformer_4spk-v2.1",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "nvidia/diar_streaming_sortformer_4spk-v2 · Hugging Face",
+      "url": "https://huggingface.co/nvidia/diar_streaming_sortformer_4spk-v2",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "README.md · nvidia/diar_streaming_sortformer_4spk-v2.1 at ...",
+      "url": "https://huggingface.co/nvidia/diar_streaming_sortformer_4spk-v2.1/blob/15345347cd3eb5b119704eacc07c4563a728d58d/README.md",
+      "snippet": "Streaming Sortformer Diarizer 4spk v2.1 | This model is a streaming version of Sortformer diarizer. Sortformer [1] is a novel end-to-end neural model for speaker diarization, trained with unconventional objectives compared to existing end-to-end diarization models."
+    },
+    {
+      "title": "diar_streaming_sortformer_4spk-v2: Audio-to-Text model — overview, use ...",
+      "url": "https://www.aimodels.fyi/models/huggingFace/diar-streaming-sortformer-4spk-v2-nvidia",
+      "snippet": "diar_sortformer_4spk-v1 is the offline (non-streaming) version with 123M parameters (6M more than v2). Use v1 if you can tolerate end-to-end latency and need higher accuracy, since offline models access full recording context."
+    },
+    {
+      "title": "diar_streaming_sortformer_4spk-v2.1 · Model · Inferix",
+      "url": "https://inferix.co/models/nvidia/diar_streaming_sortformer_4spk-v2.1",
+      "snippet": "Streaming Sortformer Diarizer 4spk v2.1 img { display: inline; } This model is a streaming version of Sortformer diarizer. Sortformer [1] is a novel end to end neural model for speaker diarization, trained with unconventional objectives compared to existing end to end diarization models."
+    },
+    {
+      "title": "diar_streaming_sortformer_4spk-v2.1.md - GitHub",
+      "url": "https://github.com/handy-computer/transcribe.cpp/blob/main/docs/models/diar_streaming_sortformer_4spk-v2.1.md",
+      "snippet": "Numerical Validation transcribe.cpp is validated tensor-by-tensor against NeMo on samples/sortformer-2spk-mix.wav (a committed deterministic 2-speaker mix with a 1.5 s overlap). All 6 checkpointed tensors fall within family tolerance, and the streaming AOSC cache-compression internals were additionally verified bit-exact against NeMo at the index level on a full 39-minute AMI meeting (87 ..."
+    }
+  ]
+}

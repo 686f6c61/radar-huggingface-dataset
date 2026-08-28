@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "ZTFlynn/LFM2-350M-ENJP-MT-Cascadia-ternary3",
+  "slug": "ztflynn-lfm2-350m-enjp-mt-cascadia-ternary3",
+  "author": "ZTFlynn",
+  "url": "https://huggingface.co/ZTFlynn/LFM2-350M-ENJP-MT-Cascadia-ternary3",
+  "created_at": "2026-08-27T04:51:04.000Z",
+  "updated_at": "2026-08-28T12:57:09.000Z",
+  "license": "lfm-open-license",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "cascadia",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "cascadia",
+    "lut",
+    "compression",
+    "spline",
+    "ternary",
+    "quantization",
+    "cpu",
+    "edge",
+    "lfm2",
+    "text-generation",
+    "en",
+    "base_model:LiquidAI/LFM2-350M-ENJP-MT",
+    "base_model:quantized:LiquidAI/LFM2-350M-ENJP-MT",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 466295376,
+  "storage_human": "466 MB",
+  "base_model": "LiquidAI/LFM2-350M-ENJP-MT",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "LiquidAI/LFM2-350M-ENJP-MT · Hugging Face",
+      "url": "https://huggingface.co/LiquidAI/LFM2-350M-ENJP-MT",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "LiquidAI/LFM2-350M · Hugging Face",
+      "url": "https://huggingface.co/LiquidAI/LFM2-350M",
+      "snippet": "A newer version of this model is available: LiquidAI/LFM2.5-350M"
+    },
+    {
+      "title": "LFM2-350M-ENJP-MT - Liquid Docs",
+      "url": "https://docs.liquid.ai/lfm/models/lfm2-350m-enjp-mt",
+      "snippet": "← Back to Liquid Nanos LFM2-350M-ENJP-MT is a specialized translation model for near real-time bidirectional Japanese/English translation. Optimized for short-to-medium text with low latency."
+    },
+    {
+      "title": "LFM2-350M-ENJP-MT-GGUF · Models",
+      "url": "https://www.modelscope.cn/models/LiquidAI/LFM2-350M-ENJP-MT-GGUF",
+      "snippet": "LFM2-350M-ENJP-MT-GGUF Based on the LFM2-350M model, this checkpoint has been fine-tuned for near real-time bi-directional Japanese/English translation of short-to-medium inputs."
+    },
+    {
+      "title": "LiquidAI/LFM2-350M-ENJP-MT Open-source Translation Model - Supports ...",
+      "url": "https://model.aibase.com/models/details/1964994245207265280",
+      "snippet": "This is a statically quantized version of the LiquidAI/LFM2-350M-ENJP-MT model, supporting bidirectional translation tasks between English and Japanese. It is optimized for edge computing scenarios and offers various quantization options to meet different hardware requirements."
+    }
+  ]
+}

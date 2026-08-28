@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "hrnguyen/notes-zero-shot-transfer",
+  "slug": "hrnguyen-notes-zero-shot-transfer",
+  "author": "hrnguyen",
+  "url": "https://huggingface.co/hrnguyen/notes-zero-shot-transfer",
+  "created_at": "2026-08-28T13:49:44.000Z",
+  "updated_at": "2026-08-28T13:49:53.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "transformer",
+    "research-notes",
+    "zero-shot-transfer",
+    "license:cc-by-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 33088,
+  "parameters_human": "33088",
+  "storage_bytes": 132832,
+  "storage_human": "132832 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "danyloboyko/zero-shot-transfer-notes · Hugging Face",
+      "url": "https://huggingface.co/danyloboyko/zero-shot-transfer-notes",
+      "snippet": "Repository summary A structured set of research notes on Zero Shot Transfer, with concrete evaluation references and open questions. Plans and hypotheses are kept separate from completed results."
+    },
+    {
+      "title": "Zero-Shot Transfer: Definition & AI Applications",
+      "url": "https://inferensys.com/glossary/vision-language-action-models/multimodal-fusion-architectures/zero-shot-transfer",
+      "snippet": "Zero-shot transfer is the capability of a pre-trained AI model to perform a novel task without any task-specific training data, typically by interpreting natural language instructions or prompts."
+    },
+    {
+      "title": "[2402.11235] ZeroG: Investigating Cross-dataset Zero-shot ...",
+      "url": "https://arxiv.org/abs/2402.11235",
+      "snippet": "We further adopt a lightweight fine-tuning strategy that reduces the risk of overfitting and maintains the zero-shot learning efficacy of the language model. The results underscore the effectiveness of our model in achieving significant cross-dataset zero-shot transferability, opening pathways for the development of graph foundation models."
+    },
+    {
+      "title": "Zero-shot learning - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Zero-shot_learning",
+      "snippet": "Zero-shot learning (ZSL) is a problem setup in machine learning where, at test time, a learner observes samples from classes which were not observed during training, and needs to predict their class. The name is a play on words based on the earlier concept of one-shot learning in computer vision, in which classification can be learned from only one example. Zero-shot methods generally work by ..."
+    },
+    {
+      "title": "Few-Shot, Zero-Shot & Transfer Learning Guide | Ultralytics",
+      "url": "https://www.ultralytics.com/blog/understanding-few-shot-zero-shot-and-transfer-learning",
+      "snippet": "Explore the differences between few-shot learning, zero-shot learning, and transfer learning in computer vision and how these paradigms shape AI model training."
+    }
+  ]
+}

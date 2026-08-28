@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "ChonkE/Granite_42_30b_Abliterated",
+  "slug": "chonke-granite_42_30b_abliterated",
+  "author": "ChonkE",
+  "url": "https://huggingface.co/ChonkE/Granite_42_30b_Abliterated",
+  "created_at": "2026-08-28T18:12:36.000Z",
+  "updated_at": "2026-08-28T18:12:36.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Granite 4.2 Language Models - a ibm-granite Collection",
+      "url": "https://huggingface.co/collections/ibm-granite/granite-42-language-models",
+      "snippet": "Efficient reasoning and thinking language models for multilingual generation, coding, and AI assistant workflows."
+    },
+    {
+      "title": "Granite 4.2 - IBM",
+      "url": "https://www.ibm.com/granite/docs/models/granite4-2",
+      "snippet": "Granite 4.2 Dense reasoning language model family in 3B, 8B, and 30B sizes with built-in chain-of-thought thinking, flexible thinking modes, and reasoning-augmented tool calling."
+    },
+    {
+      "title": "GitHub - ibm-granite/granite-4.2-language-models · GitHub",
+      "url": "https://github.com/ibm-granite/granite-4.2-language-models",
+      "snippet": "The Granite 4.2 familiy features dense decoder-only architectures in three sizes — 3B, 8B, and 30B, with quantized variants per model size. The Granite 4.2 dense models are post-trained on top of Granite 4.1 base models. Please refer to the Granite 4.1 blog for details on the pre-training phase."
+    },
+    {
+      "title": "Granite 4.2 30B: IBM&#x27;s Apache-2.0 Reasoning Model | AI/TLDR",
+      "url": "https://ai-tldr.dev/models/granite-4-2-30b/",
+      "snippet": "Granite 4.2 30B is IBM&#x27;s Apache-2.0 dense reasoning model, released 25 Aug 2026 with a switchable thinking mode, 128K context and 57.0 on SWE-bench Verified."
+    },
+    {
+      "title": "Granite - IBM",
+      "url": "https://www.ibm.com/granite",
+      "snippet": "IBM Granite is a family of open, trusted AI models for business, offering efficient language, vision, speech and guardrail models you can customize and deploy."
+    }
+  ]
+}

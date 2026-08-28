@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "misanchez/multimodal-reasoning-exp-2023",
+  "slug": "misanchez-multimodal-reasoning-exp-2023",
+  "author": "misanchez",
+  "url": "https://huggingface.co/misanchez/multimodal-reasoning-exp-2023",
+  "created_at": "2026-08-28T17:04:45.000Z",
+  "updated_at": "2026-08-28T17:04:55.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "transformer",
+    "research-notes",
+    "multimodal-reasoning",
+    "license:cc-by-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 49600,
+  "parameters_human": "49600",
+  "storage_bytes": 198880,
+  "storage_human": "198880 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "MiniMax",
+      "url": "https://www.minimax.io/",
+      "snippet": "MiniMax has independently developed a series of multimodal foundation models with powerful code and Agent capabilities, as well as ultra-long context processing, capable of understanding, generating, and integrating multiple modalities including text, audio, image, video, and music."
+    },
+    {
+      "title": "Multimodal Chain-of-Thought Reasoning in Language Models",
+      "url": "https://arxiv.org/abs/2302.00923",
+      "snippet": "Large language models (LLMs) have shown impressive performance on complex reasoning by leveraging chain-of-thought (CoT) prompting to generate intermediate reasoning chains as the rationale to infer the answer. However, existing CoT studies have primarily focused on the language modality. We propose Multimodal-CoT that incorporates language (text) and vision (images) modalities into a two ..."
+    },
+    {
+      "title": "[2401.06805] Exploring the Reasoning Abilities of Multimodal Large ...",
+      "url": "https://arxiv.org/abs/2401.06805",
+      "snippet": "Strong Artificial Intelligence (Strong AI) or Artificial General Intelligence (AGI) with abstract reasoning ability is the goal of next-generation AI. Recent advancements in Large Language Models (LLMs), along with the emerging field of Multimodal Large Language Models (MLLMs), have demonstrated impressive capabilities across a wide range of multimodal tasks and applications. Particularly ..."
+    },
+    {
+      "title": "MiniMax M3 - Coding & Agentic Frontier, 1M Context, Multimodal",
+      "url": "https://www.minimax.io/models/text/m3",
+      "snippet": "MiniMax M3 reaches frontier-level performance on coding and agentic tasks, with a 1M context window powered by the MSA architecture and native multimodal understanding. The first open-weight model to unite all three capabilities."
+    },
+    {
+      "title": "Research | OpenAI",
+      "url": "https://openai.com/research/",
+      "snippet": "We advance the science of AI through research on frontier models, reasoning, multimodal systems, and safe deployment. GPT OpenAI&#x27;s GPT series models are fast, versatile, and cost-efficient AI systems designed to understand context, generate content, and reason across text, images, and more."
+    }
+  ]
+}

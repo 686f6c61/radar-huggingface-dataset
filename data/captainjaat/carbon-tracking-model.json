@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "CaptainJaat/carbon-tracking-model",
+  "slug": "captainjaat-carbon-tracking-model",
+  "author": "CaptainJaat",
+  "url": "https://huggingface.co/CaptainJaat/carbon-tracking-model",
+  "created_at": "2026-08-28T17:17:19.000Z",
+  "updated_at": "2026-08-28T17:17:21.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "co2_eq_emissions",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "eco2AI: Carbon Emissions Tracking of Machine Learning Models as the ...",
+      "url": "https://link.springer.com/article/10.1134/S1064562422060230",
+      "snippet": "Abstract— The size and complexity of deep neural networks used in AI applications continue to grow exponentially, significantly increasing energy consumption for training and inference by these models. We introduce an open-source package eco2AI to help data scientists and researchers to track the energy consumption and equivalent CO2 emissions of their models in a straightforward way. In ..."
+    },
+    {
+      "title": "Captain",
+      "url": "https://www.captain-project.net/",
+      "snippet": "Harnessing the power of AI to optimize conservation efforts We use reinforcement learning to train models for conservation prioritization that best use the available data and resources. CAPTAIN models can work with basic species distribution data but can handle complex multidimensional data and their temporal trends, including land use and climate change."
+    },
+    {
+      "title": "AI MODELS INFO - Tracking AI",
+      "url": "https://trackingai.org/models",
+      "snippet": "Tracking AI is a cutting-edge application that unveils the political biases embedded in artificial intelligence systems. Explore and analyze the political leanings of AIs with our intuitive platform, designed to foster transparency in the world of artificial intelligence. Stay informed and uncover the political inclinations shaping the algorithms behind the technology revolution."
+    },
+    {
+      "title": "[2208.00406] Eco2AI: carbon emissions tracking of machine learning ...",
+      "url": "https://arxiv.org/abs/2208.00406",
+      "snippet": "The size and complexity of deep neural networks continue to grow exponentially, significantly increasing energy consumption for training and inference by these models. We introduce an open-source package eco2AI to help data scientists and researchers to track energy consumption and equivalent CO2 emissions of their models in a straightforward way. In eco2AI we put emphasis on accuracy of ..."
+    },
+    {
+      "title": "(PDF) eco2AI: Carbon Emissions Tracking of Machine ... - ResearchGate",
+      "url": "https://www.researchgate.net/publication/367275024_eco2AI_Carbon_Emissions_Tracking_of_Machine_Learning_Models_as_the_First_Step_Towards_Sustainable_AI",
+      "snippet": "The size and complexity of deep neural networks used in AI applications continue to grow exponentially, significantly increasing energy consumption for training and inference by these models. We ..."
+    }
+  ]
+}

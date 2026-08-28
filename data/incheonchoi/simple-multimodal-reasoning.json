@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "incheonchoi/simple-multimodal-reasoning",
+  "slug": "incheonchoi-simple-multimodal-reasoning",
+  "author": "incheonchoi",
+  "url": "https://huggingface.co/incheonchoi/simple-multimodal-reasoning",
+  "created_at": "2026-08-28T12:24:52.000Z",
+  "updated_at": "2026-08-28T12:25:00.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "transformer",
+    "research-notes",
+    "multimodal-reasoning",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 33088,
+  "parameters_human": "33088",
+  "storage_bytes": 132832,
+  "storage_human": "132832 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Multimodal Reasoning AI: The Next Leap in Intelligent Systems (2025)",
+      "url": "https://ajithp.com/2025/04/21/multimodal-reasoning-ai/",
+      "snippet": "Explore how multimodal AI is reshaping reasoning, with 2025 models like o3, Gemini 2.5, and Magma leading real-world applications."
+    },
+    {
+      "title": "Multimodal Chain-of-Thought Reasoning in Language Models",
+      "url": "https://arxiv.org/abs/2302.00923",
+      "snippet": "Large language models (LLMs) have shown impressive performance on complex reasoning by leveraging chain-of-thought (CoT) prompting to generate intermediate reasoning chains as the rationale to infer the answer. However, existing CoT studies have primarily focused on the language modality. We propose Multimodal-CoT that incorporates language (text) and vision (images) modalities into a two ..."
+    },
+    {
+      "title": "Top 15 Multimodal Models in 2026 (Open Source & Proprietary)",
+      "url": "https://blog.unitlab.ai/top-multimodal-models/",
+      "snippet": "What are multimodal models, in simple terms? Multimodal models are machine learning and artificial intelligence systems that process multiple data types (modalities) together. Instead of treating each data type separately, a large multimodal model learns joint representations so it can align visual cues, textual descriptions, and other modalities in a shared space. This lets one model handle ..."
+    },
+    {
+      "title": "Multimodal Chain-of-Thought Reasoning: A Comprehensive Survey",
+      "url": "https://arxiv.org/abs/2503.12605",
+      "snippet": "By extending the advantage of chain-of-thought (CoT) reasoning in human-like step-by-step processes to multimodal contexts, multimodal CoT (MCoT) reasoning has recently garnered significant research attention, especially in the integration with multimodal large language models (MLLMs). Existing MCoT studies design various methodologies and innovative reasoning paradigms to address the unique ..."
+    },
+    {
+      "title": "Awesome Multimodal Reasoning - GitHub",
+      "url": "https://github.com/jluite/Awesome-Multimodal-Reasoning",
+      "snippet": "Awesome Multimodal Reasoning Collection of papers and resources on how to unlock reasoning abilities under multimodal settings. Animation from ViperGPT (Surís et al.) Consider how difficult it would be to study from a book that lacks any figures, diagrams or tables."
+    }
+  ]
+}

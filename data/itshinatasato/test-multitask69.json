@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "itshinatasato/test-multitask69",
+  "slug": "itshinatasato-test-multitask69",
+  "author": "itshinatasato",
+  "url": "https://huggingface.co/itshinatasato/test-multitask69",
+  "created_at": "2026-08-28T11:52:18.000Z",
+  "updated_at": "2026-08-28T11:52:29.000Z",
+  "license": "bsd-3-clause",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "hybrid",
+    "pytorch",
+    "multitask",
+    "license:bsd-3-clause",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 33088,
+  "parameters_human": "33088",
+  "storage_bytes": 132832,
+  "storage_human": "132832 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "itshinatasato (田中 健太) - Hugging Face",
+      "url": "https://huggingface.co/itshinatasato",
+      "snippet": "AI & ML interests ... Recent Activity updated a model about 4 hours ago ... published a model about 4 hours ago"
+    },
+    {
+      "title": "itshinatasato (田中 健太) - Hugging Face",
+      "url": "https://huggingface.co/itshinatasato/models",
+      "snippet": "Transformer enthusiast since 2019"
+    },
+    {
+      "title": "Free AI Image Detector & Checker: Is a Photo AI? | Is It AI?",
+      "url": "https://isitai.com/ai-image-detector",
+      "snippet": "AI Image Detector & Checker: Is This Photo AI-Generated? Upload any photo, picture, or piece of AI art and our free AI image checker tells you if it was AI-generated or real, in seconds. With 95%+ accuracy across Midjourney, DALL-E, Stable Diffusion, Nano Banana, Firefly, ChatGPT and 20+ models, it&#x27;s trusted by newsrooms, educators, and content teams to verify image authenticity."
+    },
+    {
+      "title": "AI Detector: Free AI Checker for ChatGPT, Claude, Gemini - Quetext",
+      "url": "https://www.quetext.com/ai-detector",
+      "snippet": "Detect AI-generated content from ChatGPT, GPT-5, Claude & Gemini with Quetext&#x27;s free AI detector, line-by-line analysis, no signup required."
+    },
+    {
+      "title": "AI Detector: Free AI Checker for ChatGPT, Claude & GPT-5 - QuillBot",
+      "url": "https://quillbot.com/ai-content-detector",
+      "snippet": "Quillbot&#x27;s free AI Detector checks text from ChatGPT, GPT-5, Claude and others. Get an AI score, sentence-level highlights, and refined AI detection insights."
+    }
+  ]
+}

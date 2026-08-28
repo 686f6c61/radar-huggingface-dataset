@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "ISTA-DASLab/Qwen3.8-27B-GSQ-RCO-GGUF",
+  "slug": "ista-daslab-qwen3-8-27b-gsq-rco-gguf",
+  "author": "ISTA-DASLab",
+  "url": "https://huggingface.co/ISTA-DASLab/Qwen3.8-27B-GSQ-RCO-GGUF",
+  "created_at": "2026-08-28T18:38:03.000Z",
+  "updated_at": "2026-08-28T19:12:43.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "gguf",
+  "languages": [],
+  "tags": [
+    "gguf",
+    "gsq",
+    "rco",
+    "quantization",
+    "mixed-precision",
+    "ist-daslab",
+    "text-generation",
+    "arxiv:2604.18556",
+    "arxiv:2605.00649",
+    "base_model:Qwen/Qwen3.8-27B",
+    "base_model:quantized:Qwen/Qwen3.8-27B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "imatrix",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 26895998464,
+  "parameters_human": "26.90B",
+  "storage_bytes": 28708166045,
+  "storage_human": "28.7 GB",
+  "base_model": "Qwen/Qwen3.8-27B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ISTA-DASLab/Qwen3.8-27B-3Bit-GSQ · Hugging Face",
+      "url": "https://huggingface.co/ISTA-DASLab/Qwen3.8-27B-3Bit-GSQ",
+      "snippet": "This checkpoint applies GSQ-based post-training quantization to the model weights, reducing precision while preserving the original model&#x27;s reasoning, coding, multilingual, long-context, and agentic capabilities."
+    },
+    {
+      "title": "ISTA-DASLab/Qwen3.8-27B-3Bit-GSQ at main - Hugging Face",
+      "url": "https://huggingface.co/ISTA-DASLab/Qwen3.8-27B-3Bit-GSQ/tree/main",
+      "snippet": "like 6 Follow IST Austria Distributed Algorithms and Systems Lab 152 Image-Text-to-Text Transformers Safetensors qwen3_5 gsq gumbel-softmax quantization ptq qwen vllm humming conversational compressed-tensors arxiv:2604.18556 License:apache-2.0 Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "Qwen3.8 27B 3Bit GSQ by ISTA-DASLab - LLM Explorer",
+      "url": "https://llm-explorer.com/model/ISTA-DASLab%2FQwen3.8-27B-3Bit-GSQ,5jBpNp6fOc3rrQFEE4pwuF",
+      "snippet": "Qwen3.8 27B 3Bit GSQ is an open-source 27b LLM by ISTA-DASLab. VRAM 11.9GB. Compare benchmarks, capabilities, and deployment details on LLM Explorer."
+    },
+    {
+      "title": "Qwen3.8-27B - GitHub",
+      "url": "https://github.com/AlibabaCloud-Official/Qwen3.8-27B",
+      "snippet": "Welcome to the repository for Qwen3.8-27B —the latest native multimodal dense open-weight model released by Alibaba&#x27;s Qwen team. Delivering top-tier performance for local hardware, Qwen3.8-27B excels at coding, agentic workflows, and office automation tasks."
+    },
+    {
+      "title": "Qwen/Qwen3.8-27B | vLLM Recipes",
+      "url": "https://recipes.vllm.ai/Qwen/Qwen3.8-27B",
+      "snippet": "The official Qwen/Qwen3.8-27B-FP8 checkpoint serves directly on a 950PR — no offline re-quantization and no --quantization ascend. vLLM Ascend reads quant_method: fp8 and weight_block_size straight from the checkpoint, expands the weight_scale_inv tiles at load time and re-quantizes to MXFP8 on 950."
+    }
+  ]
+}

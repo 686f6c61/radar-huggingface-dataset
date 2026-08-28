@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "DravenALG/VLANeXt",
+  "slug": "dravenalg-vlanext",
+  "author": "DravenALG",
+  "url": "https://huggingface.co/DravenALG/VLANeXt",
+  "created_at": "2025-12-02T11:33:22.000Z",
+  "updated_at": "2026-08-28T17:21:02.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": "robotics",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "robotics",
+    "vision-language-action models",
+    "arxiv:2602.18532",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 6,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 82284947181,
+  "storage_human": "82.3 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "DravenALG/VLANeXt · Hugging Face",
+      "url": "https://huggingface.co/DravenALG/VLANeXt",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GitHub - DravenALG/VLANeXt: (ICML2026) Official implementation of VLANeXt.",
+      "url": "https://github.com/DravenALG/VLANeXt",
+      "snippet": "(ICML2026) Official implementation of VLANeXt. Contribute to DravenALG/VLANeXt development by creating an account on GitHub."
+    },
+    {
+      "title": "DravenALG (Xiao-Ming Wu) - Hugging Face",
+      "url": "https://huggingface.co/DravenALG",
+      "snippet": "Deep Learning, Computer Vision, Embodied AI. Recent Activity. liked a dataset 22 days ago. ropedia-ai/xperience-10m. updated a model 22 days ago"
+    },
+    {
+      "title": "VLANeXt: Recipes for Building Strong VLA Models - arXiv.org",
+      "url": "https://arxiv.org/html/2602.18532v3",
+      "snippet": "From this study, we distill 12 key findings that together form a practical recipe for building strong VLA models. The outcome of this exploration is a simple yet effective model, VLANeXt. It outperforms the state-of-the-art methods on the LIBERO and LIBERO-plus benchmarks and demonstrates strong performance in real-world experiments."
+    },
+    {
+      "title": "VLANeXt: Recipes for Building Strong VLA Models - arXiv.org",
+      "url": "https://arxiv.org/pdf/2602.18532",
+      "snippet": "The outcome of this study is a simple yet effective VLA model, VLANeXt, derived directly from the design princi-ples uncovered in our systematic exploration. Rather than relying on aggressive model scaling or task-specific engi-neering, VLANeXt achieves state-of-the-art performance on both LIBERO (Liu et al., 2023a) and LIBERO-plus (Fei et al ..."
+    }
+  ]
+}

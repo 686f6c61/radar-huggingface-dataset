@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "kizzlah/granite-docling-258M-mlx",
+  "slug": "kizzlah-granite-docling-258m-mlx",
+  "author": "kizzlah",
+  "url": "https://huggingface.co/kizzlah/granite-docling-258M-mlx",
+  "created_at": "2026-08-28T14:35:52.000Z",
+  "updated_at": "2026-08-28T14:35:53.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "idefics3",
+    "image-text-to-text",
+    "mlx",
+    "conversational",
+    "en",
+    "arxiv:2501.17887",
+    "base_model:ibm-granite/granite-docling-258M",
+    "base_model:finetune:ibm-granite/granite-docling-258M",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 315319872,
+  "parameters_human": "315.3M",
+  "storage_bytes": 630696724,
+  "storage_human": "631 MB",
+  "base_model": "ibm-granite/granite-docling-258M",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ibm-granite/granite-docling-258M-mlx · Hugging Face",
+      "url": "https://huggingface.co/ibm-granite/granite-docling-258M-mlx",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "ibm-granite/granite-docling-258M · Hugging Face",
+      "url": "https://huggingface.co/ibm-granite/granite-docling-258M",
+      "snippet": "💻 Local inference on Apple Silicon with MLX: see here ℹ️ If you see trouble running granite-docling with the codes above, check the troubleshooting section at the bottom ⬇️. Intended Use Granite-Docling is designed to complement the Docling library, not replace it. It integrates as a component within larger Docling library, consolidating the functions of multiple single-purpose ..."
+    },
+    {
+      "title": "Granite Docling | IBM Granite",
+      "url": "https://www.ibm.com/granite/docs/models/docling",
+      "snippet": "The Granite Docling model is designed for enterprise applications that involve end-to-end document understanding and conversion. Unlike traditional pipelines that chain together OCR, layout analysis, and post-processing, Docling integrates vision and language into a single compact model (~ 258M parameters), capable of parsing PDFs, slides, and ..."
+    },
+    {
+      "title": "GitHub - pgadet-wq/granite-docling-258M: IBM Granite-Docling VLM for ...",
+      "url": "https://github.com/pgadet-wq/granite-docling-258M",
+      "snippet": "To enhance safety, we recommend using granite-docling-258m alongside Granite Guardian. Granite Guardian is a fine-tuned instruct model designed to detect and flag risks in prompts and responses across key dimensions outlined in the IBM AI Risk Atlas."
+    },
+    {
+      "title": "ibm-granite/granite-docling-258M-mlx · Hugging Face",
+      "url": "https://huface.ru/ibm-granite/granite-docling-258M-mlx",
+      "snippet": "Granite Docling is a multimodal Image-Text-to-Text model engineered for efficient document conversion. It preserves the core features of Docling while maintaining seamless integration with DoclingDocuments to ensure full compatibility."
+    }
+  ]
+}

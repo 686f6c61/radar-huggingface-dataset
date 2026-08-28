@@ -1,0 +1,76 @@
+{
+  "schema": 1,
+  "id": "garnermccloud/Qwen3.8-Flash-Next-NVFP4-SSD-Stream",
+  "slug": "garnermccloud-qwen3-8-flash-next-nvfp4-ssd-stream",
+  "author": "garnermccloud",
+  "url": "https://huggingface.co/garnermccloud/Qwen3.8-Flash-Next-NVFP4-SSD-Stream",
+  "created_at": "2026-08-28T16:40:15.000Z",
+  "updated_at": "2026-08-28T17:44:46.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": "image-text-to-text",
+  "library": "sglang",
+  "languages": [],
+  "tags": [
+    "sglang",
+    "safetensors",
+    "qwen4_exp",
+    "qwen3.8",
+    "multimodal",
+    "quantized",
+    "nvfp4",
+    "modelopt",
+    "speculative-decoding",
+    "ssd-streaming",
+    "image-text-to-text",
+    "conversational",
+    "base_model:Qwen/Qwen3.8-Flash-Next",
+    "base_model:quantized:Qwen/Qwen3.8-Flash-Next",
+    "license:other",
+    "8-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 68401758099,
+  "parameters_human": "68.40B",
+  "storage_bytes": 135243520519,
+  "storage_human": "135.2 GB",
+  "base_model": "RadixArk/Qwen3.8-Flash-Next-NVFP4, Qwen/Qwen3.8-Flash-Next",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Qwen3.8-Flash - QwenCloud",
+      "url": "https://www.qwencloud.com/models/qwen3.8-flash",
+      "snippet": "Qwen3.8-Flash is the latest multimodal model from the Qwen family, combining powerful reasoning and generation with remarkable speed. It natively supports a million-token context window, allowing it to process lengthy documents, entire codebases, and complex conversations in a single pass."
+    },
+    {
+      "title": "sglang-ple-ssd/README.md at main · garnermccloud/sglang-ple-ssd",
+      "url": "https://github.com/garnermccloud/sglang-ple-ssd/blob/main/README.md",
+      "snippet": "Qwen3.8-Flash-Next is unusual: 51.2 billion of its parameters form one deterministic n-gram embedding table. The model only performs lookups against that table, no matrix multiplication. sglang-ple-ssd keeps the table as an immutable file on local NVMe and stages only the rows needed for the current forward pass, leaving far more memory available for context, KV cache, and other workloads."
+    },
+    {
+      "title": "Qwen3.8-Flash-Next — Benchmarks, Specs & Release Date",
+      "url": "https://aireleasetracker.com/model/qwen/qwen3.8-flash-next",
+      "snippet": "Qwen3.8-Flash-Next Open Weight Released Aug 26 2026 Qwen3.8-Flash-Next is an AI model released by Qwen on Wednesday, Aug 26 2026, 12 days after Qwen3.8-27B. It is an open-weight model — the trained weights are available to download and run. It is a 125B parameter model with a 262k token context window. Benchmark results (shown below) cover JobBench, CoWorkBench, IFBench, Agent&#x27;s Last Exam ..."
+    },
+    {
+      "title": "GitHub - QwenLM/Qwen3.8: Qwen3.8 is the large language model series ...",
+      "url": "https://github.com/QwenLM/Qwen3.8",
+      "snippet": "Welcome to the GitHub repository of the Qwen3.5 open model series, including Qwen3.5, Qwen3.6, and the latest Qwen3.8. Here, you can find official information about Qwen3.8, post your questions (Issues), and share your ideas with the community (Discussions)."
+    },
+    {
+      "title": "tcclaviger/Qwen3.8-Flash-Next-MXFP4-FP8 · Hugging Face",
+      "url": "https://huggingface.co/tcclaviger/Qwen3.8-Flash-Next-MXFP4-FP8",
+      "snippet": "In particular, Qwen3.8-Flash is the official version based on Qwen3.8-Flash-Next with more production features, e.g., 1M context length by default, official built-in tools."
+    }
+  ]
+}

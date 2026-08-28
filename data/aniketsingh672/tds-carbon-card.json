@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "aniketsingh672/tds-carbon-card",
+  "slug": "aniketsingh672-tds-carbon-card",
+  "author": "aniketsingh672",
+  "url": "https://huggingface.co/aniketsingh672/tds-carbon-card",
+  "created_at": "2026-08-28T13:29:59.000Z",
+  "updated_at": "2026-08-28T13:32:38.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "co2_eq_emissions",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "AvanthikaShydh/tds-carbon-card · Hugging Face",
+      "url": "https://huggingface.co/AvanthikaShydh/tds-carbon-card",
+      "snippet": "Model Card - Green AI Carbon Accounting This repository documents the carbon footprint and energy accounting for the assigned model training run in TDS GA8."
+    },
+    {
+      "title": "23f3001819/tds-carbon-card · Hugging Face",
+      "url": "https://huggingface.co/23f3001819/tds-carbon-card",
+      "snippet": "Model Card - Green AI Carbon Accounting This repository documents the carbon footprint and energy accounting for the assigned model training run in TDS GA8."
+    },
+    {
+      "title": "aruneshpratapsingh/tds-carbon-card · Hugging Face",
+      "url": "https://huggingface.co/aruneshpratapsingh/tds-carbon-card",
+      "snippet": "Model Card - Green AI Carbon Accounting This repository documents the carbon footprint and energy accounting for the assigned model training run in TDS GA8."
+    },
+    {
+      "title": "DAKSHiitm/tds-carbon-card · Hugging Face",
+      "url": "https://huggingface.co/DAKSHiitm/tds-carbon-card",
+      "snippet": "Model Card - Green AI Carbon Accounting This repository documents the carbon footprint and energy accounting for the assigned model training run in TDS GA8."
+    },
+    {
+      "title": "SUMANSHAKTI27/tds-carbon-card · Hugging Face",
+      "url": "https://huggingface.co/SUMANSHAKTI27/tds-carbon-card",
+      "snippet": "Model Card - Green AI Carbon Accounting This repository documents the carbon footprint and energy accounting for the assigned model training run in TDS GA8."
+    }
+  ]
+}

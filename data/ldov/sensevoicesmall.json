@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "ldov/SenseVoiceSmall",
+  "slug": "ldov-sensevoicesmall",
+  "author": "ldov",
+  "url": "https://huggingface.co/ldov/SenseVoiceSmall",
+  "created_at": "2026-08-28T11:24:15.000Z",
+  "updated_at": "2026-08-28T11:24:15.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "automatic-speech-recognition",
+  "library": "gguf",
+  "languages": [
+    "zh",
+    "en"
+  ],
+  "tags": [
+    "gguf",
+    "automatic-speech-recognition",
+    "asr",
+    "sensevoice",
+    "funasr",
+    "llama.cpp",
+    "ggml",
+    "cpu",
+    "chinese",
+    "zh",
+    "en",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 233999728,
+  "parameters_human": "234.0M",
+  "storage_bytes": 3066741760,
+  "storage_human": "3.1 GB",
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "FunAudioLLM/SenseVoiceSmall · Hugging Face",
+      "url": "https://huggingface.co/FunAudioLLM/SenseVoiceSmall",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "SenseVoiceSmall: Audio-to-Text model — overview, use cases, alternatives",
+      "url": "https://www.aimodels.fyi/models/huggingFace/sensevoicesmall-funaudiollm",
+      "snippet": "Overview SenseVoiceSmall is a multilingual speech understanding model built by FunAudioLLM that handles automatic speech recognition (ASR), spoken language identification (LID), speech emotion recognition (SER), and audio event detection (AED) in a single encoder-only framework. The model uses a non-autoregressive end-to-end architecture trained on over 400,000 hours of data supporting more ..."
+    },
+    {
+      "title": "SenseVoiceSmall · Model · Inferix",
+      "url": "https://inferix.co/models/FunAudioLLM/SenseVoiceSmall",
+      "snippet": "Tasks:automatic-speech-recognitionLibraries:funasrLicense:other imported huggingface minio funasr speech-recognition asr emotion-recognition audio-event-detection multilingual non-autoregressive whisper-alternative real-time voice-ai automatic-speech-recognition zh en ja ko yue license:other Like 0 Follow Share Use this model Deploy 1downloads0likesfunasrLicense:other"
+    },
+    {
+      "title": "GitHub - QwenAudio/SenseVoice: Open-source SenseVoiceSmall model for ...",
+      "url": "https://github.com/QwenAudio/SenseVoice",
+      "snippet": "Open-source SenseVoiceSmall model for Mandarin, Cantonese, English, Japanese, and Korean ASR, language ID, emotion recognition, and audio event detection. - QwenAudio/SenseVoice"
+    },
+    {
+      "title": "GitHub - moon44432/realtime_sensevoice_rknn",
+      "url": "https://github.com/moon44432/realtime_sensevoice_rknn",
+      "snippet": "SenseVoiceSmall-RKNN2 SenseVoice is an audio foundation model with audio understanding capabilities, including Automatic Speech Recognition (ASR), Language Identification (LID), Speech Emotion Recognition (SER), and Acoustic Event Classification (AEC) or Acoustic Event Detection (AED)."
+    }
+  ]
+}

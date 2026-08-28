@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "qisein/Qwen3-8B-OPSD-ep64",
+  "slug": "qisein-qwen3-8b-opsd-ep64",
+  "author": "qisein",
+  "url": "https://huggingface.co/qisein/Qwen3-8B-OPSD-ep64",
+  "created_at": "2026-08-12T20:37:41.000Z",
+  "updated_at": "2026-08-28T19:30:42.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "lora",
+    "qwen3",
+    "opsd",
+    "text-generation",
+    "conversational",
+    "base_model:Qwen/Qwen3-8B",
+    "base_model:adapter:Qwen/Qwen3-8B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 32,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 98783238,
+  "storage_human": "99 MB",
+  "base_model": "Qwen/Qwen3-8B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "qisein/Qwen3-8B-OPSD-ep64 · Hugging Face",
+      "url": "https://huggingface.co/qisein/Qwen3-8B-OPSD-ep64",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Qwen/Qwen3-8B · Hugging Face",
+      "url": "https://huggingface.co/Qwen/Qwen3-8B",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Qwen3-8B-OPSD-ep64 API & Inference Endpoint | FriendliAI",
+      "url": "https://friendli.ai/models/qisein/Qwen3-8B-OPSD-ep64",
+      "snippet": "Run Qwen3-8B-OPSD-ep64 with FriendliAI inference. This repository contains the episode-64 OPSD research checkpoint as a PEFT LoRA adapter for Qwen/Qwen3-8B…"
+    },
+    {
+      "title": "Qwen3-8B - Qualcomm AI Hub",
+      "url": "https://aihub.qualcomm.com/compute/models/qwen3_8b",
+      "snippet": "Qwen3-8B State‑of‑the‑art large language model useful on a variety of language understanding and generation tasks. The Qwen3‑8B is a state‑of‑the‑art multilingual base language model with 8 billion parameters, excelling in language understanding, generation, coding, and mathematics."
+    },
+    {
+      "title": "Qwen 3 8B - Open Source AI Models",
+      "url": "https://opensourceaimodels.net/models/qwen3-8b",
+      "snippet": "The April 2025 refresh of Qwen at 8B. Native mixed-mode reasoning: the model can &#x27;think&#x27; before answering when triggered, or answer directly for simple queries — configurable per request. Apache 2.0. A strong upgrade over Qwen 2.5 7B on math and code, with much better instruction following."
+    }
+  ]
+}

@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "mahesh27/mms-300m-xsampa-doreco",
+  "slug": "mahesh27-mms-300m-xsampa-doreco",
+  "author": "mahesh27",
+  "url": "https://huggingface.co/mahesh27/mms-300m-xsampa-doreco",
+  "created_at": "2026-08-28T13:40:27.000Z",
+  "updated_at": "2026-08-28T13:44:31.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "wav2vec2",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 316639564,
+  "parameters_human": "316.6M",
+  "storage_bytes": 1484991372,
+  "storage_human": "1.5 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "facebook/mms-300m · Hugging Face",
+      "url": "https://huggingface.co/facebook/mms-300m",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "README.md · facebook/mms-300m at main - Hugging Face",
+      "url": "https://huggingface.co/facebook/mms-300m/blob/main/README.md",
+      "snippet": "Massively Multilingual Speech (MMS) - 300m Facebook&#x27;s MMS counting 300m parameters. MMS is Facebook AI&#x27;s massive multilingual pretrained model for speech (\"MMS\"). It is pretrained in with Wav2Vec2&#x27;s self-supervised training objective on about 500,000 hours of speech data in over 1,400 languages. When using the model make sure that your speech input is sampled at 16kHz. Note: This model should ..."
+    },
+    {
+      "title": "facebook/mms-300m - AI Model Zoo - BimAnt",
+      "url": "https://zoo.bimant.com/model/200765",
+      "snippet": "Massively Multilingual Speech (MMS) - 300m Facebook&#x27;s MMS counting 300m parameters. MMS is Facebook AI&#x27;s massive multilingual pretrained model for speech (\"MMS\"). It is pretrained in with Wav2Vec2&#x27;s self-supervised training objective on about 500,000 hours of speech data in over 1,400 languages."
+    },
+    {
+      "title": "DoReCo - Homepage",
+      "url": "https://doreco.huma-num.fr/",
+      "snippet": "DoReCo (Language DOcumentation REference COrpus) brings together spoken language corpora on a world-wide sample of 53 languages. It focuses on corpora that originated in fieldwork-based documentations of small and endangered languages, carried out by DoReCo contributors."
+    },
+    {
+      "title": "mms-300m-1130-forced-aligner download | SourceForge.net",
+      "url": "https://sourceforge.net/projects/mms-300m-1130-forced-aligner/",
+      "snippet": "Download mms-300m-1130-forced-aligner for free. CTC-based forced aligner for audio-text in 158 languages. mms-300m-1130-forced-aligner is a multilingual forced alignment model based on Meta&#x27;s MMS-300M wav2vec2 checkpoint, adapted for Hugging Face&#x27;s Transformers library. It supports forced alignment between audio and corresponding text across 158 languages, offering broad multilingual coverage."
+    }
+  ]
+}

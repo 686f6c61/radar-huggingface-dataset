@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "maximesimonko/vit-generation",
+  "slug": "maximesimonko-vit-generation",
+  "author": "maximesimonko",
+  "url": "https://huggingface.co/maximesimonko/vit-generation",
+  "created_at": "2026-08-28T12:38:48.000Z",
+  "updated_at": "2026-08-28T12:38:58.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "vit",
+    "pytorch",
+    "generation",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 16576,
+  "parameters_human": "16576",
+  "storage_bytes": 66784,
+  "storage_human": "66784 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Best AI for Video Generation in 2026 — Ranked by Blind Human Votes",
+      "url": "https://llm-stats.com/leaderboards/best-ai-for-video-generation",
+      "snippet": "The best AI for video generation in 2026, ranked by blind human votes. Compare top text-to-video, image-to-video, and video-editing models — with live arena scores, per-clip pricing, and side-by-side examples from Veo, Sora, Runway, Kling, Luma, and more."
+    },
+    {
+      "title": "ViT Image Generation Architecture - emergentmind.com",
+      "url": "https://www.emergentmind.com/topics/image-generation-architecture-using-vit",
+      "snippet": "Collectively, ViT-based architectures for image generation offer a generalizable and flexible family of approaches where patch tokenization and global attention underpin progress in fidelity, efficiency, semantic manipulation, and robustness. Continuing research explores optimal forms of token representation, fusion for conditional generation, architecture scaling, training stability, and ..."
+    },
+    {
+      "title": "GitHub - yuxiaopeng/Github-Ranking-AI: A list of the most popular AI ...",
+      "url": "https://github.com/yuxiaopeng/Github-Ranking-AI",
+      "snippet": "A list of the most popular AI Topic repositories on GitHub based on the number of stars they have received.| AI相关主题Github仓库排名，每日自动更新。 - yuxiaopeng/Github-Ranking-AI"
+    },
+    {
+      "title": "Vision Transformer (ViT) · Hugging Face",
+      "url": "https://huggingface.co/docs/transformers/model_doc/vit",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "All are Worth Words: A ViT Backbone for Diffusion Models",
+      "url": "https://arxiv.org/abs/2209.12152",
+      "snippet": "Vision transformers (ViT) have shown promise in various vision tasks while the U-Net based on a convolutional neural network (CNN) remains dominant in diffusion models. We design a simple and general ViT-based architecture (named U-ViT) for image generation with diffusion models. U-ViT is characterized by treating all inputs including the time, condition and noisy image patches as tokens and ..."
+    }
+  ]
+}

@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "tonghuiwang123/so100-diffusion-new60",
+  "slug": "tonghuiwang123-so100-diffusion-new60",
+  "author": "tonghuiwang123",
+  "url": "https://huggingface.co/tonghuiwang123/so100-diffusion-new60",
+  "created_at": "2026-08-28T11:24:38.000Z",
+  "updated_at": "2026-08-28T11:37:44.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "robotics",
+    "so100",
+    "so-arm100",
+    "act",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 277839286,
+  "parameters_human": "277.8M",
+  "storage_bytes": 13336872600,
+  "storage_human": "13.3 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "tonghuiwang123 (Argento Fishback) - Hugging Face",
+      "url": "https://huggingface.co/tonghuiwang123/models",
+      "snippet": "tonghuiwang123&#x27;s models4 Sort: Recently updated tonghuiwang123/my_smolvla_8gpu_v3 0.5B•Updated Feb 11• 4"
+    },
+    {
+      "title": "tonghuiwang123 (Argento Fishback) - Hugging Face",
+      "url": "https://huggingface.co/tonghuiwang123",
+      "snippet": "Sort: Recently updated tonghuiwang123/test10 Viewer •Updated about 9 hours ago•12.9k"
+    },
+    {
+      "title": "OpenAI | Research & Deployment",
+      "url": "https://openai.com/",
+      "snippet": "We believe our research will eventually lead to artificial general intelligence, a system that can solve human-level problems."
+    },
+    {
+      "title": "AI Model Release Tracker - Latest Releases | LM Market Cap",
+      "url": "https://lmmarketcap.com/tools/model-release-tracker",
+      "snippet": "AI Model Release Tracker Stay up to date with the latest AI model releases. This page tracks 394 models across all providers, sorted by release date."
+    },
+    {
+      "title": "RawDiffusion - The Unfiltered AI Model Hub",
+      "url": "https://rawdiffusion.com/",
+      "snippet": "Share, discover, and download AI models freely. The unfiltered hub for Stable Diffusion checkpoints, LoRAs, embeddings, and more. Browse thousands of AI art models, images, and videos."
+    }
+  ]
+}

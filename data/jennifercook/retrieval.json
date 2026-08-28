@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "jennifercook/retrieval",
+  "slug": "jennifercook-retrieval",
+  "author": "jennifercook",
+  "url": "https://huggingface.co/jennifercook/retrieval",
+  "created_at": "2026-08-28T13:48:03.000Z",
+  "updated_at": "2026-08-28T13:48:12.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "mocov3",
+    "pytorch",
+    "retrieval",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 49600,
+  "parameters_human": "49600",
+  "storage_bytes": 198880,
+  "storage_human": "198880 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "jennifercook (J. Cook) - Hugging Face",
+      "url": "https://huggingface.co/jennifercook",
+      "snippet": "Building AI tools for small businesses. Recent Activity. updated a model 1 day ago. jennifercook/paper_021891815_robotics_vision_language"
+    },
+    {
+      "title": "jennifercook (J. Cook) - Hugging Face",
+      "url": "https://huggingface.co/jennifercook/models",
+      "snippet": "Building AI tools for small businesses"
+    },
+    {
+      "title": "Retriever Models Explained: 8 Ways RAG Is Making AI Learn Faster and ...",
+      "url": "https://blog.eduonix.com/2025/12/retriever-models-explained-8-ways-rag-is-making-ai-learn-faster-and-smarter/",
+      "snippet": "Retriever models are transforming how AI understands and learns using real-world context. Discover eight ways Retrieval-Augmented Generation is accelerating AI intelligence and personalization."
+    },
+    {
+      "title": "Professor Jennifer J. Cook Publishes Groundbreaking Article on AI and ...",
+      "url": "https://blogs.und.edu/ndlaw/2026/04/professor-jennifer-j-cook-publishes-groundbreaking-article-on-ai-and-data-privacy/",
+      "snippet": "Research compares U.S. and EU approaches, offering a new framework for regulating AI in legal practice Associate Professor Jennifer J. Cook&#x27;s recent article, Assessing Risk & Protecting Personal Data: An EU Approach to Artificial Intelligence as a Model for the A.B.A.&#x27;s Model Rules, was published in the North Carolina Journal of Law & Technology. The article is the first to examine the ..."
+    },
+    {
+      "title": "Jenni | AI Academic Writer & Research Tool for Students & Academics",
+      "url": "https://jenni.ai/",
+      "snippet": "Jenni is an AI research and academic writing assistant that helps students, researchers, and academics create essays, papers, and citations with ease."
+    }
+  ]
+}

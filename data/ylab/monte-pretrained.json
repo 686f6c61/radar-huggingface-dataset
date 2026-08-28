@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "ylab/MONTE-pretrained",
+  "slug": "ylab-monte-pretrained",
+  "author": "ylab",
+  "url": "https://huggingface.co/ylab/MONTE-pretrained",
+  "created_at": "2026-08-28T19:30:03.000Z",
+  "updated_at": "2026-08-28T19:30:03.000Z",
+  "license": "bsd-3-clause",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:bsd-3-clause",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "PDF MONTE: Methylation-based Observation Normalization and Tumor purity ...",
+      "url": "https://ylab.rice.edu/media/documents/kim_monte_2016.pdf",
+      "snippet": "MONTE learns probe-wise relationships between observed methylation and tumor purity using a stabilized linear model with empirical Bayes variance moderation and infers purity in new samples via signal-to-noise weighted aggregation of probe-level effects, without requiring matched normal samples or predefined probe sets."
+    },
+    {
+      "title": "Find Pre-trained Models | Kaggle",
+      "url": "https://www.kaggle.com/models",
+      "snippet": "Discover and download pre-trained AI models. Use them directly in Kaggle Notebooks or integrate into your own projects."
+    },
+    {
+      "title": "MONAI (MONAI) - Hugging Face",
+      "url": "https://huggingface.co/MONAI",
+      "snippet": "medical-image-computing, medical-image-processing, healthcare-imaging"
+    },
+    {
+      "title": "MONAI Model Zoo - Pre-trained Models for Medical Imaging",
+      "url": "https://project-monai.github.io/model-zoo.html",
+      "snippet": "Explore MONAI Model Zoo - a collection of pre-trained models for medical imaging tasks. Find and use state-of-the-art models for your healthcare AI applications."
+    },
+    {
+      "title": "Pretraining a Model",
+      "url": "https://docs.thousandbrains.org/docs/pretraining-a-model",
+      "snippet": "Introduction This tutorial demonstrates how to configure and run Monty experiments for pretraining. In the next tutorial , we show how to load our pretrained model and use it to perform inference. Though Monty is designed for continual learning and does not require separate training and evaluation m…"
+    }
+  ]
+}

@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "autokai/chronos2-fullft-dlam-g100",
+  "slug": "autokai-chronos2-fullft-dlam-g100",
+  "author": "autokai",
+  "url": "https://huggingface.co/autokai/chronos2-fullft-dlam-g100",
+  "created_at": "2026-08-28T13:40:45.000Z",
+  "updated_at": "2026-08-28T13:40:51.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "time-series-forecasting",
+  "library": "chronos",
+  "languages": [],
+  "tags": [
+    "chronos",
+    "safetensors",
+    "t5",
+    "time-series-forecasting",
+    "fine-tuned",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 119477664,
+  "parameters_human": "119.5M",
+  "storage_bytes": 477930472,
+  "storage_human": "478 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "amazon/chronos-2 · Hugging Face",
+      "url": "https://huggingface.co/amazon/chronos-2",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Chronos-2: From Univariate to Universal Forecasting",
+      "url": "https://arxiv.org/abs/2510.15821",
+      "snippet": "Pretrained time series models have enabled inference-only forecasting systems that produce accurate predictions without task-specific training. However, existing approaches largely focus on univariate forecasting, limiting their applicability in real-world scenarios where multivariate data and covariates play a crucial role. We present Chronos-2, a pretrained model capable of handling ..."
+    },
+    {
+      "title": "GitHub - amazon-science/chronos-forecasting: Chronos: Pretrained Models ...",
+      "url": "https://github.com/amazon-science/chronos-forecasting",
+      "snippet": "Chronos-2 achieves the best performance on fev-bench, GIFT-Eval and Chronos Benchmark II amongst pretrained models. Check out this notebook to get started with Chronos-2. 12 Dec 2024: 📊 We released fev, a lightweight package for benchmarking time series forecasting models based on the Hugging Face datasets library."
+    },
+    {
+      "title": "Chronos-2 — TSFM.ai",
+      "url": "https://tsfm.ai/models/amazon/chronos-2",
+      "snippet": "Chronos-2 is Amazon&#x27;s universal successor to the original Chronos family, at 120M parameters. The official card frames it as a single model that handles univariate, multivariate, and covariate-informed forecasting in one architecture, a more general design than the univariate-first checkpoints of the first Chronos generation."
+    },
+    {
+      "title": "Chronos-2: From Univariate to Universal Forecasting - arXiv.org",
+      "url": "https://arxiv.org/pdf/2510.15821",
+      "snippet": "In this work, we present Chronos-2, a pretrained model designed to handle arbitrary forecasting tasks — univariate, zero-shot multivariate, and covariate-informed — in a manner. Chronos-2 leverages in-context learning (ICL) to support multivariate forecasting and arbitrary covariates, whether past-only or with known future values, real ..."
+    }
+  ]
+}

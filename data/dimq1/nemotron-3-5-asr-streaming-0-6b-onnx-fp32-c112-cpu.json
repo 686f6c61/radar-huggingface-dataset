@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "DimQ1/nemotron-3.5-asr-streaming-0.6b-onnx-fp32-c112-cpu",
+  "slug": "dimq1-nemotron-3-5-asr-streaming-0-6b-onnx-fp32-c112-cpu",
+  "author": "DimQ1",
+  "url": "https://huggingface.co/DimQ1/nemotron-3.5-asr-streaming-0.6b-onnx-fp32-c112-cpu",
+  "created_at": "2026-08-28T15:13:46.000Z",
+  "updated_at": "2026-08-28T15:14:06.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "ru",
+    "en"
+  ],
+  "tags": [
+    "onnx",
+    "nemotron",
+    "asr",
+    "speech-recognition",
+    "nvidia",
+    "cpu",
+    "ru",
+    "en",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 2598451737,
+  "storage_human": "2.6 GB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Nemotron 3.5 ASR Streaming 0.6B — ONNX FP32 (CPU) - Hugging Face",
+      "url": "https://huggingface.co/DimQ1/nemotron-3.5-asr-streaming-0.6b-onnx-fp32-cpu",
+      "snippet": "Full-precision FP32 ONNX model converted from NVIDIA Nemotron 3.5 ASR Streaming 0.6B using Microsoft Olive. Maximum quality for CPU inference with ONNX Runtime GenAI. No quantization — pure FP32 weights."
+    },
+    {
+      "title": "nemotron-3.5-asr-streaming-0.6b-onnx-fp32-opset24-c112-cpu",
+      "url": "https://huggingface.co/DimQ1/nemotron-3.5-asr-streaming-0.6b-onnx-fp32-opset24-c112-cpu",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "nemotron-asr/nemotron-asr/nemotron-3.5-asr-streaming-0.6b ... - GitHub",
+      "url": "https://github.com/weyan618/nemotron-asr/blob/main/nemotron-asr/nemotron-3.5-asr-streaming-0.6b/README.md",
+      "snippet": "Nemotron 3.5 ASR is a multilingual, streaming Automatic Speech Recognition (ASR) model engineered to deliver high-quality multilingual transcription across both low-latency streaming and high-throughput batch workloads. Developed by NVIDIA, this 600M parameter model transcribes speech into text with native support for punctuation and capitalization, and offers runtime flexibility with ..."
+    },
+    {
+      "title": "nemotron-3.5-asr-streaming-onnx/README.md at main - GitHub",
+      "url": "https://github.com/codavidgarcia/nemotron-3.5-asr-streaming-onnx/blob/main/README.md",
+      "snippet": "Model weights · Base model (NVIDIA) · Validation · Debugging notes Export NVIDIA&#x27;s nvidia/nemotron-3.5-asr-streaming-.6b, a multilingual (40 locales) cache-aware FastConformer-RNNT streaming ASR model, to ONNX. Run it with a small streaming engine that only needs numpy + onnxruntime."
+    },
+    {
+      "title": "nemotron-asr-streaming Model by NVIDIA | NVIDIA NIM",
+      "url": "https://build.nvidia.com/nvidia/nemotron-asr-streaming/modelcard",
+      "snippet": "Nemotron 3 ASR is a 600-million-parameter streaming Automatic Speech Recognition (ASR) model engineered for high-quality English transcription across both low-latency streaming and high-throughput batch workloads. Developed by NVIDIA, it natively outputs punctuation and capitalization with no post-processing required."
+    }
+  ]
+}

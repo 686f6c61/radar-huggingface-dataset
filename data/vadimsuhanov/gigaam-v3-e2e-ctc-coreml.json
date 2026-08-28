@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "vadimsuhanov/gigaam-v3-e2e-ctc-coreml",
+  "slug": "vadimsuhanov-gigaam-v3-e2e-ctc-coreml",
+  "author": "vadimsuhanov",
+  "url": "https://huggingface.co/vadimsuhanov/gigaam-v3-e2e-ctc-coreml",
+  "created_at": "2026-08-28T14:38:30.000Z",
+  "updated_at": "2026-08-28T14:39:04.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "automatic-speech-recognition",
+  "library": "coreml",
+  "languages": [
+    "ru"
+  ],
+  "tags": [
+    "coreml",
+    "gigaam",
+    "speech-recognition",
+    "macos",
+    "sentencepiece",
+    "v3_e2e_ctc",
+    "automatic-speech-recognition",
+    "ru",
+    "base_model:ai-sage/GigaAM-v3",
+    "base_model:quantized:ai-sage/GigaAM-v3",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 884180220,
+  "storage_human": "884 MB",
+  "base_model": "ai-sage/GigaAM-v3",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - salute-developers/GigaAM: Foundational Model for Speech ...",
+      "url": "https://github.com/salute-developers/GigaAM/",
+      "snippet": "GigaAM is a Conformer -based foundational model (220M-600M parameters) pre-trained on diverse speech data — Russian for the v1 - v3 lines, and 70+ languages for the multilingual line. It serves as the backbone for the entire GigaAM family, enabling state-of-the-art fine-tuned performance in speech recognition and emotion recognition. We fine-tuned the GigaAM encoder for ASR using CTC and ..."
+    },
+    {
+      "title": "vadimsuhanov/gigaam-v3-e2e-rnnt-coreml · Hugging Face",
+      "url": "https://huggingface.co/vadimsuhanov/gigaam-v3-e2e-rnnt-coreml",
+      "snippet": "Model: v3_e2e_rnnt Upstream revision: 559d88d6b72541412743929f633a6ae7c9950b85 License: MIT This artifact contains separate encoder, predictor, and joiner Float32 ML Programs. The application owns greedy RNNT decoding. Validation fixture audio is private and is not included. Downloads last month - Inference Providers NEW Automatic Speech ..."
+    },
+    {
+      "title": "vadimsuhanov/gigaam-v3-e2e-rnnt-coreml at main - Hugging Face",
+      "url": "https://huggingface.co/vadimsuhanov/gigaam-v3-e2e-rnnt-coreml/tree/main",
+      "snippet": "Core ML Russian speech gigaam License:mit Model card FilesFiles and versions xet Community Copy to bucket new main gigaam-v3-e2e-rnnt-coreml 891 MB Ctrl+K Ctrl+K 1 contributor History:4 commits vadimsuhanov Publish validated GigaAM Core ML artifact 0bb1c6b verifiedabout 1 month ago encoder.mlpackageUpload folder using huggingface_hubabout 1 ..."
+    },
+    {
+      "title": "GitHub - alexdolbun/gigaam: Foundational Model for Speech Recognition ...",
+      "url": "https://github.com/alexdolbun/gigaam",
+      "snippet": "GigaAM is a Conformer -based foundational model (220M-600M parameters) pre-trained on diverse speech data — Russian for the v1 - v3 lines, and 70+ languages for the multilingual line. It serves as the backbone for the entire GigaAM family, enabling state-of-the-art fine-tuned performance in speech recognition and emotion recognition."
+    },
+    {
+      "title": "GigaAM-v3 Open-Source Russian Automatic Speech Recognition Model - Free ...",
+      "url": "https://model.aibase.com/models/details/1994345703903858688",
+      "snippet": "GigaAM-v3 is a basic model for Russian automatic speech recognition based on the Conformer architecture, with 220 - 240 million parameters. It is the third-generation model in the GigaAM series, pre-trained on 700,000 hours of Russian speech data using the HuBERT-CTC objective, providing state-of-the-art performance in a wide range of Russian ..."
+    }
+  ]
+}

@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "fahmisyaifudin/indobert-tweet-spam-classifier",
+  "slug": "fahmisyaifudin-indobert-tweet-spam-classifier",
+  "author": "fahmisyaifudin",
+  "url": "https://huggingface.co/fahmisyaifudin/indobert-tweet-spam-classifier",
+  "created_at": "2026-08-28T12:29:21.000Z",
+  "updated_at": "2026-08-28T12:39:52.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": null,
+  "languages": [
+    "id"
+  ],
+  "tags": [
+    "safetensors",
+    "bert",
+    "text-classification",
+    "spam-detection",
+    "indonesian",
+    "id",
+    "base_model:indolem/indobert-base-uncased",
+    "base_model:finetune:indolem/indobert-base-uncased",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 110559746,
+  "parameters_human": "110.6M",
+  "storage_bytes": 442267721,
+  "storage_human": "442 MB",
+  "base_model": "indolem/indobert-base-uncased",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - indolem/IndoBERTweet: IndoBERTweet is the first large-scale ...",
+      "url": "https://github.com/indolem/IndoBERTweet",
+      "snippet": "IndoBERTweet is the first large-scale pretrained model for Indonesian Twitter that is trained by extending a monolingually trained Indonesian BERT model with additive domain-specific vocabulary. In this paper, we show that initializing domain-specific vocabulary with average-pooling of BERT subword embeddings is more efficient than pretraining from scratch, and more effective than initializing ..."
+    },
+    {
+      "title": "indolem/indobertweet-base-uncased · Hugging Face",
+      "url": "https://huggingface.co/indolem/indobertweet-base-uncased",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Yntzie/indonesian-sms-spam-classification-indobert - GitHub",
+      "url": "https://github.com/Yntzie/indonesian-sms-spam-classification-indobert",
+      "snippet": "This project implements a machine learning model for detecting spam SMS messages in Indonesian language using IndoBERT fine-tuning. The model is trained on an Indonesian SMS Spam dataset and fine-tuned using the HuggingFace Transformers library."
+    },
+    {
+      "title": "IndoBERTweet: A Pretrained Language Model for Indonesian Twitter with ...",
+      "url": "https://www.researchgate.net/publication/354542511_IndoBERTweet_A_Pretrained_Language_Model_for_Indonesian_Twitter_with_Effective_Domain-Specific_Vocabulary_Initialization",
+      "snippet": "We present IndoBERTweet, the first large-scale pretrained model for Indonesian Twitter that is trained by extending a monolingually-trained Indonesian BERT model with additive domain-specific ..."
+    },
+    {
+      "title": "INDOBERT : A Pretrained Language Model for Indonesian Twitter with ...",
+      "url": "https://arxiv.org/pdf/2109.04607",
+      "snippet": "Abstract We present INDOBERTWEET, the first large-scale pretrained model for Indonesian Twitter that is trained by extending a monolingually-trained Indonesian BERT model with additive domain-specific vocabulary. We focus in par-ticular on efficient model adaptation under vo-cabulary mismatch, and benchmark different ways of initializing the BERT embedding layer for new word types. We find ..."
+    }
+  ]
+}

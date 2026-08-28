@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "rahulvermaceg/data-efficient-learning-notes-2023",
+  "slug": "rahulvermaceg-data-efficient-learning-notes-2023",
+  "author": "rahulvermaceg",
+  "url": "https://huggingface.co/rahulvermaceg/data-efficient-learning-notes-2023",
+  "created_at": "2026-08-28T13:07:34.000Z",
+  "updated_at": "2026-08-28T13:07:44.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "transformer",
+    "research-notes",
+    "data-efficient-learning",
+    "license:cc-by-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 33088,
+  "parameters_human": "33088",
+  "storage_bytes": 132832,
+  "storage_human": "132832 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Best Self-Hosted LLM Leaderboard 2026 | Open-Weight Model Rankings for ...",
+      "url": "https://onyx.app/self-hosted-llm-leaderboard",
+      "snippet": "The definitive self-hosted LLM leaderboard — ranking the best open-weight models for enterprise self-hosting across quality, speed, hardware requirements, and cost. Compare Llama, DeepSeek, Qwen, Mistral, and more."
+    },
+    {
+      "title": "PDF Baharan_ICML_tutorial_final - GitHub Pages",
+      "url": "https://baharanm.github.io/assets/pdf/ICML24_tutorial_DataEfficient.pdf",
+      "snippet": "Selecting Coresets with Submodular Maximization Yields a Curriculum Early in training, the most effective subsets for learning deep models are easy-to-learn examples. As training proceeds, the model learns the most from examples with increasing levels of learning difficulty. Interestingly, the model never requires training on easiest-to-learn ..."
+    },
+    {
+      "title": "Generative AI | Google Cloud",
+      "url": "https://cloud.google.com/ai/generative-ai",
+      "snippet": "Generative AI on Google Cloud Bring generative AI to real-world experiences quickly, efficiently, and responsibly, powered by Google&#x27;s most advanced technology and models including Gemini. Plus, new customers can start their AI journey today with $300 in free credits."
+    },
+    {
+      "title": "GitHub - dair-ai/ML-Course-Notes: Sharing machine learning course ...",
+      "url": "https://github.com/dair-ai/ML-Course-Notes",
+      "snippet": "🎓 Machine Learning Course Notes A place to collaborate and share lecture notes on all topics related to machine learning, NLP, and AI. WIP denotes work in progress."
+    },
+    {
+      "title": "ICML Tutorial Foundations of Data-efficient Machine Learning",
+      "url": "https://icml.cc/virtual/2024/tutorial/35234",
+      "snippet": "Over the last decade, machine learning models have achieved remarkable success by learning from large amounts of data. This is best exemplified by the recent rise of foundation models that are trained on billions of examples. Training on massive data is, however, dependent on exceptionally large and expensive computational resources, and incurs substantial financial and environmental costs ..."
+    }
+  ]
+}

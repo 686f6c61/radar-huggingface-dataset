@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "ldov/faster-whisper-large-v3-turbo",
+  "slug": "ldov-faster-whisper-large-v3-turbo",
+  "author": "ldov",
+  "url": "https://huggingface.co/ldov/faster-whisper-large-v3-turbo",
+  "created_at": "2026-08-28T11:27:02.000Z",
+  "updated_at": "2026-08-28T11:27:02.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1617884929,
+  "storage_human": "1.6 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "openai/whisper-large-v3-turbo · Hugging Face",
+      "url": "https://huggingface.co/openai/whisper-large-v3-turbo",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "faster-whisper large-v3-turbo — Models — The AI Bench",
+      "url": "https://theaibench.ai/models/faster-whisper/",
+      "snippet": "CTranslate2 reimplementation of OpenAI Whisper — 4× faster with int8 quantization, matches reference accuracy. The practical STT default."
+    },
+    {
+      "title": "openai/whisper-large-v3 · whisper large v3 turbo - Hugging Face",
+      "url": "https://huggingface.co/openai/whisper-large-v3/discussions/160",
+      "snippet": "https://huggingface.co/deepdml/whisper-large-v3-turbo New released model from OpenAI: \"the turbo model is an optimized version of large-v3 that offers faster ..."
+    },
+    {
+      "title": "faster-whisper-large-v3-turbo · Models",
+      "url": "https://www.modelscope.cn/models/pengzhendong/faster-whisper-large-v3-turbo",
+      "snippet": "Whisper large-v3 turbo model for CTranslate2 This repository contains the conversion of deepdml/whisper-large-v3-turbo to the CTranslate2 model format. This model can be used in CTranslate2 or projects based on CTranslate2 such as faster-whisper. Example"
+    },
+    {
+      "title": "Whisper large-v3-turbo - til",
+      "url": "https://lawwu.github.io/til/posts/2024-10-02-whisper-v3-turbo/index.html",
+      "snippet": "Unlike Distil-Whisper, which used distillation to train a smaller model, Whisper turbo was fine-tuned for two more epochs over the same amount of multilingual transcription data used for training large-v3, i.e. excluding translation data, on which we don&#x27;t expect turbo to perform well."
+    }
+  ]
+}

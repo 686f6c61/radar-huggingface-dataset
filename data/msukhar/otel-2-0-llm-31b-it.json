@@ -1,0 +1,86 @@
+{
+  "schema": 1,
+  "id": "msukhar/OTel-2.0-LLM-31B-IT",
+  "slug": "msukhar-otel-2-0-llm-31b-it",
+  "author": "msukhar",
+  "url": "https://huggingface.co/msukhar/OTel-2.0-LLM-31B-IT",
+  "created_at": "2026-08-28T19:27:40.000Z",
+  "updated_at": "2026-08-28T19:27:40.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gemma4_text",
+    "telecom",
+    "telecommunications",
+    "gsma",
+    "at-t",
+    "microsoft",
+    "dell",
+    "amd",
+    "red-hat",
+    "open-telco-ai",
+    "rag",
+    "instruction-following",
+    "tool-calling",
+    "domain-adaptation",
+    "post-trained",
+    "text-generation",
+    "conversational",
+    "en",
+    "base_model:google/gemma-4-31B-it",
+    "base_model:finetune:google/gemma-4-31B-it",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 32106632252,
+  "parameters_human": "32.11B",
+  "storage_bytes": 64245530772,
+  "storage_human": "64.2 GB",
+  "base_model": "google/gemma-4-31B-it",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "farbodtavakkoli/OTel-2.0-LLM-31B-IT · Hugging Face",
+      "url": "https://huggingface.co/farbodtavakkoli/OTel-2.0-LLM-31B-IT",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GitHub - farbodtavakkoli/OTel",
+      "url": "https://github.com/farbodtavakkoli/OTel",
+      "snippet": "Hugging Face | LLM Collection | Embedding Collection | Reranker Collection | Datasets | Media Coverage Open Telco (OTel) AI is an open telecom AI resource for training, evaluating, and deploying retrieval, reranking, context-grounded generation, and abstention models for telecommunications. The release includes derived telecom datasets, held-out evaluation partitions, model cards, dataset ..."
+    },
+    {
+      "title": "AT&T&#x27;s Otel 2.0 is now live. - Open Telco AI",
+      "url": "https://www.open-telco.ai/716-2/",
+      "snippet": "AT&T&#x27;s OTel 2.0 is now live: the largest and best performing open-source model built for telecoms Now live and top of the leaderboard on Open-telco.ai, the new model is a post-trained version of Gemma 4 31B-IT built using 400 billion telecom-specific tokens selected from more than 1 trillion processed tokens."
+    },
+    {
+      "title": "AI Model Catalog | Microsoft Foundry Models",
+      "url": "https://ai.azure.com/catalog/models/farbodtavakkoli--otel-2.0-llm-31b-it?search=otel",
+      "snippet": "OTel-2.-LLM-31B-IT is a telecom-specialized instruction model post-trained from Gemma 4 31B-IT on approximately 440 billion telecom training tokens. It is the first release in the OTel 2.0 family and is designed to support telco-grade AI workflows across network operations, standards interpretation, product development, network configuration ..."
+    },
+    {
+      "title": "AT&T&#x27;s OTel 2.0 is now live: the largest and best performing open ...",
+      "url": "https://www.gsma.com/newsroom/article/atts-otel-2-0-is-now-live-the-largest-and-best-performing-open-source-model-built-for-telecoms/",
+      "snippet": "AT&T&#x27;s OTel 2.0 is now live: the largest and best performing open-source model built for telecoms Now live and top of the leaderboard on Open-telco.ai, the new model is a post-trained version of Gemma 4 31B-IT built using 400 billion telecom-specific tokens selected from more than 1 trillion processed tokens."
+    }
+  ]
+}

@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "barryallen16/tamil-tokenizer-wiki",
+  "slug": "barryallen16-tamil-tokenizer-wiki",
+  "author": "barryallen16",
+  "url": "https://huggingface.co/barryallen16/tamil-tokenizer-wiki",
+  "created_at": "2026-08-28T19:15:07.000Z",
+  "updated_at": "2026-08-28T19:16:46.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "token-classification",
+  "library": "custom-rust-tokenizer",
+  "languages": [
+    "ta"
+  ],
+  "tags": [
+    "custom-rust-tokenizer",
+    "tokenization",
+    "bpe",
+    "tamil",
+    "bpe-tokenizer",
+    "aho-corasick",
+    "token-classification",
+    "ta",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 38845639,
+  "storage_human": "39 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "barryallen16/tamil-tokenizer: Rust BPE tokenizer for Tamil - GitHub",
+      "url": "https://github.com/barryallen16/tamil-tokenizer/tree/main",
+      "snippet": "A high-performance Byte Pair Encoding (BPE) tokenizer library for Tamil text, written in Rust. Designed for training and using custom tokenizers on Tamil corpora with an Aho-Corasick-based fast encoder."
+    },
+    {
+      "title": "Asai Tamil Tokenizer - a Hugging Face Space by Ailaysa-AI",
+      "url": "https://huggingface.co/spaces/Ailaysa-AI/Asai-Tamil-Tokenizer",
+      "snippet": "Enter Tamil sentences and the app splits them into individual tokens. It shows each token, the total number of tokens, character count and a token‑per‑character ratio, and even compares the token c..."
+    },
+    {
+      "title": "Asai_Tamil.model · Ailaysa-AI/asai-tokenizer-model at main",
+      "url": "https://huggingface.co/Ailaysa-AI/asai-tokenizer-model/blob/main/Asai_Tamil.model",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Asai-Tokenizer/ailaysa/models at main · Ailaysa-Technologies ... - GitHub",
+      "url": "https://github.com/Ailaysa-Technologies/Asai-Tokenizer/tree/main/ailaysa/models",
+      "snippet": "A fast and efficient Tamil tokenizer designed for NLP pipelines, multilingual systems, and low-resource language tasks. - Ailaysa-Technologies/Asai-Tokenizer"
+    },
+    {
+      "title": "Your AI charges speakers of Tamil 10× more than English, and the fix is ...",
+      "url": "https://ai.plainenglish.io/your-ai-charges-speakers-of-tamil-10-more-than-english-and-the-fix-is-buried-in-a-file-called-6561b10f6b5c",
+      "snippet": "A developer in Chennai opens her laptop and prompts GPT-4 in Tamil. Three paragraphs. Maybe 150 words. The API bills her for 620 tokens. Her colleague in San Francisco writes the same message in English. 180 tokens. Same meaning. Same model. Same price per thousand tokens. Her bill is more than three times higher, and neither of them knows why. This is not a pricing quirk. It is not a bug. It ..."
+    }
+  ]
+}

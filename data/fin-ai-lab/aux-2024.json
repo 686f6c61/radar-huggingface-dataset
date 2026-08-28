@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "fin-ai-lab/aux-2024",
+  "slug": "fin-ai-lab-aux-2024",
+  "author": "fin-ai-lab",
+  "url": "https://huggingface.co/fin-ai-lab/aux-2024",
+  "created_at": "2026-07-14T21:17:26.000Z",
+  "updated_at": "2026-08-28T19:29:50.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "ministral_dual_rope",
+    "text-generation",
+    "frontier-to-pit",
+    "divergence-decoding",
+    "point-in-time",
+    "look-ahead-bias",
+    "auxiliary-model",
+    "conversational",
+    "custom_code",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 45,
+  "trending_score": 0,
+  "parameters": 4344425472,
+  "parameters_human": "4.34B",
+  "storage_bytes": 8701688510,
+  "storage_human": "8.7 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "fin-ai-lab/aux-2024 · Hugging Face",
+      "url": "https://huggingface.co/fin-ai-lab/aux-2024",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "fin-ai-lab/aux-2024 at main - Hugging Face",
+      "url": "https://huggingface.co/fin-ai-lab/aux-2024/tree/main",
+      "snippet": "fin-ai-lab / aux-2024 like 0 Follow Financial AI Lab at Chicago Booth 3 Text Generation Transformers Safetensors ministral_dual_rope frontier-to-pit divergence-decoding point-in-time look-ahead-bias auxiliary-model conversational custom_code License:apache-2.0 Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "Home - FinAI LAB",
+      "url": "https://fin-ai-lab.telecom-paris.fr/en/",
+      "snippet": "Established in 2025, the FinAI-Lab (Financial AI Laboratory) is a joint scientific research laboratory founded by BNP Paribas and Télécom Paris (a member of the Institut Polytechnique de Paris and the Institut Mines Telecom), dedicated to the study and development of artificial intelligence applied to banking and finance."
+    },
+    {
+      "title": "GitHub - AI4Finance-Foundation/FinRobot: FinRobot: An Open-Source AI ...",
+      "url": "https://github.com/AI4Finance-Foundation/FinRobot",
+      "snippet": "FinRobot is an AI Agent platform tailored for financial applications, surpassing FinGPT&#x27;s single-model approach. It unifies multiple AI technologies—including LLMs, reinforcement learning, and quantitative analytics—to power investment research automation, algorithmic trading strategies, and ..."
+    },
+    {
+      "title": "Accueil - FinAI Lab",
+      "url": "https://fin-ai-lab.telecom-paris.fr/",
+      "snippet": "FinAI - LAB : le laboratoire commun entre Télécom Paris et BNP Paribas sur l&#x27;IA dans le domaine de la finance Créé en 2025, le FinAI-Lab (Financial AI Laboratory) est un laboratoire commun de recherche scientifique fondé par BNP Paribas et Télécom Paris (membre de l&#x27;Institut Polytechnique de Paris et de l&#x27;Institut Mines Telecom), dédié à l&#x27;étude et au développement de l ..."
+    }
+  ]
+}

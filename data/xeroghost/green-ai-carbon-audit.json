@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "XeroGhost/green-ai-carbon-audit",
+  "slug": "xeroghost-green-ai-carbon-audit",
+  "author": "XeroGhost",
+  "url": "https://huggingface.co/XeroGhost/green-ai-carbon-audit",
+  "created_at": "2026-08-28T18:02:33.000Z",
+  "updated_at": "2026-08-28T18:02:34.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "co2_eq_emissions",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Bk-1928/green-ai-carbon-audit · Hugging Face",
+      "url": "https://huggingface.co/Bk-1928/green-ai-carbon-audit",
+      "snippet": "Model Card Carbon Footprint This model was trained using 8 NVIDIA H100 GPUs for 287.5 GPU-hours in the europe-west4 region. Estimated energy consumption: 2318.4 kWh. Estimated carbon emissions: 463.680 kg CO2eq."
+    },
+    {
+      "title": "24f1002802/green-ai-carbon-audit at main - Hugging Face",
+      "url": "https://huggingface.co/24f1002802/green-ai-carbon-audit/tree/main",
+      "snippet": "24f1002802 / green-ai-carbon-audit like 0 Carbon Emissions Model card FilesFiles and versions xet Community Copy to bucket new main green-ai-carbon-audit 2.08 kB Ctrl+K Ctrl+K 1 contributor History:4 commits 24f1002802 Update README.md f12f3f5 verified6 days ago .gitattributes Safe 1.52 kBinitial commit6 days ago README.md 562 BytesUpdate ..."
+    },
+    {
+      "title": "Green AI | green-ai - ejhusom.github.io",
+      "url": "https://ejhusom.github.io/green-ai/",
+      "snippet": "Green AI: Exploring Carbon Footprints, Mitigation Strategies, and Trade Offs in Large Language Model Training (Liu et al. 2024) [Paper] A simplified machine learning product carbon footprint evaluation tool (Lang et al.) [Paper] Beyond Efficiency: Scaling AI Sustainably (Wu et al. 2024) [Paper]"
+    },
+    {
+      "title": "Most Eco-Friendly AI in 2026: Which AI Is Actually Green?",
+      "url": "https://felloai.com/eco-friendly-ai/",
+      "snippet": "Looking for the most eco-friendly AI? See which AI models use the least energy and water, the greenest AI tools, and how to cut your own AI footprint."
+    },
+    {
+      "title": "[2404.01157] Green AI: Exploring Carbon Footprints, Mitigation ...",
+      "url": "https://arxiv.org/abs/2404.01157",
+      "snippet": "Abstract page for arXiv paper 2404.01157: Green AI: Exploring Carbon Footprints, Mitigation Strategies, and Trade Offs in Large Language Model Training"
+    }
+  ]
+}

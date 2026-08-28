@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "elizabethjone/prompt-engineering-lab",
+  "slug": "elizabethjone-prompt-engineering-lab",
+  "author": "elizabethjone",
+  "url": "https://huggingface.co/elizabethjone/prompt-engineering-lab",
+  "created_at": "2026-08-28T17:39:53.000Z",
+  "updated_at": "2026-08-28T17:40:02.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "transformer",
+    "research-notes",
+    "prompt-engineering",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 24832,
+  "parameters_human": "24832",
+  "storage_bytes": 99808,
+  "storage_human": "99808 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "prompt_engineering.ipynb - Colab",
+      "url": "https://colab.research.google.com/github/wandb/llm-workshop-fc2024/blob/main/part_1_prompting/prompt_engineering.ipynb",
+      "snippet": "In this section, we explore the practical application of prompt engineering by building a bot that helps users understand prompting techniques and answers questions based on the provided information. This use case demonstrates the power of prompt engineering in creating helpful AI assistants that can make complex topics more accessible and engaging. By leveraging the knowledge contained in a ..."
+    },
+    {
+      "title": "intro-prompt-engineering-lesson.ipynb - Colab",
+      "url": "https://colab.research.google.com/github/NirDiamant/Prompt_Engineering/blob/main/all_prompt_engineering_techniques/intro-prompt-engineering-lesson.ipynb",
+      "snippet": "Insight into how different prompt structures can influence AI outputs. Practical experience in crafting prompts for various purposes. Awareness of the role prompt engineering plays in enhancing AI model performance. A foundation for exploring more advanced prompt engineering techniques."
+    },
+    {
+      "title": "Prompt Engineering for AI Guide | Google Cloud",
+      "url": "https://cloud.google.com/discover/what-is-prompt-engineering",
+      "snippet": "Prompt engineering is the art and science of designing and optimizing prompts to guide AI models, particularly LLMs, towards generating the desired responses. By carefully crafting prompts, you provide the model with context, instructions, and examples that help it understand your intent and respond in a meaningful way. Think of it as providing a roadmap for the AI, steering it towards the ..."
+    },
+    {
+      "title": "Prompt Engineering Institute | Learn Practical AI",
+      "url": "https://promptengineering.org/",
+      "snippet": "Learn prompt engineering, LLMs, AI agents, RAG, and automation through practical articles, free lessons, and professional AI training."
+    },
+    {
+      "title": "AI Prompt Engineering - GeeksforGeeks",
+      "url": "https://www.geeksforgeeks.org/artificial-intelligence/ai-prompt-engineering/",
+      "snippet": "refers to AI models that create new content like text, images, code or other data based on given prompts. In prompt engineering, it focuses on generating accurate and useful outputs from well designed instructions."
+    }
+  ]
+}

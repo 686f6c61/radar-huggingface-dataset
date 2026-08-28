@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "Ryanham1lton/Chandelure",
+  "slug": "ryanham1lton-chandelure",
+  "author": "Ryanham1lton",
+  "url": "https://huggingface.co/Ryanham1lton/Chandelure",
+  "created_at": "2026-08-28T18:43:49.000Z",
+  "updated_at": "2026-08-28T18:44:29.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:cc-by-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 117542206,
+  "storage_human": "118 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Ryanham1lton (Ryan James Hamilton) - Hugging Face",
+      "url": "https://huggingface.co/Ryanham1lton",
+      "snippet": "AI & ML interests ... Recent Activity updated a model about 12 hours ago ... published a model about 12 hours ago"
+    },
+    {
+      "title": "Ryanham1lton/CacturneMT · Hugging Face",
+      "url": "https://huggingface.co/Ryanham1lton/CacturneMT",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Chandelure AI Models | PixAI",
+      "url": "https://pixai.art/en/tags/model/chandelure",
+      "snippet": "Discover Chandelure AI models on PixAI - Find anime AI models and LoRAs tagged with Chandelure"
+    },
+    {
+      "title": "Chandelure - AI Art Model | PixAI",
+      "url": "https://pixai.art/en/model/2018323724981361848",
+      "snippet": "Generate stunning anime art with the &#x27;Chandelure&#x27; model on PixAI. Browse artworks made with this model and try it free."
+    },
+    {
+      "title": "A‌I chat|1v1 Chat with Character Chandelure for Free Personalized ...",
+      "url": "https://polybuzz.ai/character/chat/chandelure-VVZzG",
+      "snippet": "Dive into lifelike 1-on-1 AI chat with Chandelure|Experience human-like conversations,emotional depth,and personalized scenarios powered by DeepAI.Ask anything to your AI character."
+    }
+  ]
+}

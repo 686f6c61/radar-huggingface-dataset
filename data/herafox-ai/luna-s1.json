@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "HeraFox-ai/Luna-S1",
+  "slug": "herafox-ai-luna-s1",
+  "author": "HeraFox-ai",
+  "url": "https://huggingface.co/HeraFox-ai/Luna-S1",
+  "created_at": "2026-08-28T18:24:52.000Z",
+  "updated_at": "2026-08-28T18:30:56.000Z",
+  "license": "hera-fox-model-license",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:other",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": true,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Luna Models - LM.9",
+      "url": "https://lunamodels.art/store/",
+      "snippet": "CURATED • TESTED • INSTANT DELIVERY Production-ready AI models. Ready when you are. Discover downloadable checkpoints, LoRAs, embeddings, and workflows with clear compatibility and licensing details."
+    },
+    {
+      "title": "HeraFox",
+      "url": "http://herafox.com/",
+      "snippet": "Building smarter AI, on greener infrastructure. HeraFox is an AI company focused on building advanced models with performance, reliability, and sustainability at the core."
+    },
+    {
+      "title": "lunaopenlabs/LunaAi · Hugging Face",
+      "url": "https://huggingface.co/lunaopenlabs/LunaAi",
+      "snippet": "Luna AI is an open-source AI model developed by Luna OpenLabs for text classification tasks. Leveraging the BERT architecture, this model is designed to classify text into predefined categories efficiently and accurately."
+    },
+    {
+      "title": "GitHub - LunaOpenLabs/Luna-Ai",
+      "url": "https://github.com/LunaOpenLabs/Luna-Ai",
+      "snippet": "Welcome to Luna AI, the next-generation AI assistant built for real-world productivity. Whether you&#x27;re a student cramming for finals, an entrepreneur launching big ideas, or a developer debugging at midnight — Luna is here to help you work smarter."
+    },
+    {
+      "title": "Luna Models: AI Girl Model #52 | Tensor.Art",
+      "url": "https://www.tensor.art/models/800259468165248253",
+      "snippet": "Download Luna Models: AI Girl Model #52 - CandyDoll LauraB - free LORA FLUX.1 AI model on TENSOR. YOUTHFUL AI ART MODELS, LL.9, FLUX. By AI Luna LM.9"
+    }
+  ]
+}

@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "Joonho-yi/data-efficient-learning-run2",
+  "slug": "joonho-yi-data-efficient-learning-run2",
+  "author": "Joonho-yi",
+  "url": "https://huggingface.co/Joonho-yi/data-efficient-learning-run2",
+  "created_at": "2026-08-28T17:09:59.000Z",
+  "updated_at": "2026-08-28T17:10:08.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "transformer",
+    "research-notes",
+    "data-efficient-learning",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 24832,
+  "parameters_human": "24832",
+  "storage_bytes": 99808,
+  "storage_human": "99808 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "OpenAI | Research & Deployment",
+      "url": "https://openai.com/",
+      "snippet": "We believe our research will eventually lead to artificial general intelligence, a system that can solve human-level problems."
+    },
+    {
+      "title": "Deep Learning Monitor - Find new Arxiv papers, tweets and Reddit posts ...",
+      "url": "https://deeplearn.org/",
+      "snippet": "Whose doctor does the AI recommend? An algorithm audit of reputation and demographic signals in large language model-assisted physician choice Syeda Anshrah Gillani, Mirza Samad Ahmed Baig 2026-08-14 PDF Mendeley"
+    },
+    {
+      "title": "LLM Leaderboard 2026: Compare 300+ Top AI Models by Intelligence, Speed ...",
+      "url": "https://llm-stats.com/leaderboards/llm-leaderboard",
+      "snippet": "The LLM Leaderboard — independent ranking of GPT, Claude, Gemini, Llama, DeepSeek and 300+ AI models by intelligence, speed and price. Filter by provider, license, modality and context window; sort by every benchmark. Composite LLM Stats Score updated continuously from public benchmarks and live API metrics."
+    },
+    {
+      "title": "Meta Open Sources Muse Glimmer: A 30B Agentic AI Model",
+      "url": "https://www.opensourceforu.com/2026/08/meta-open-sources-muse-glimmer/",
+      "snippet": "Meta&#x27;s 30B-parameter Muse Glimmer runs offline on a single consumer GPU to execute local coding, function calling, and autonomous agent workflows."
+    },
+    {
+      "title": "vLLM",
+      "url": "https://vllm.ai/",
+      "snippet": "vLLM is a high-throughput and memory-efficient inference and serving engine for Large Language Models (LLMs). Deploy AI models faster with state-of-the-art performance. Easy, fast, and cost-efficient LLM serving for everyone."
+    }
+  ]
+}

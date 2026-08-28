@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "omni-CLAP/CLAP",
+  "slug": "omni-clap-clap",
+  "author": "omni-CLAP",
+  "url": "https://huggingface.co/omni-CLAP/CLAP",
+  "created_at": "2026-08-04T17:41:48.000Z",
+  "updated_at": "2026-08-28T12:56:06.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "image-to-video",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "robotics",
+    "video-generation",
+    "world-model",
+    "video-diffusion",
+    "action-conditioned",
+    "cross-embodiment",
+    "image-to-video",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 129930542870,
+  "storage_human": "129.9 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "omni-CLAP/CLAP · Hugging Face",
+      "url": "https://huggingface.co/omni-CLAP/CLAP",
+      "snippet": "omni-CLAP / CLAP like 0 Model card FilesFiles and versions xet Community Copy to bucket new No model card Downloads last month -"
+    },
+    {
+      "title": "GitHub - omni-CLAP/clap: Cross-Embodiment Video World Models are Zero ...",
+      "url": "https://github.com/omni-CLAP/clap",
+      "snippet": "Features CLAP delivers the most comprehensive suite of action-conditioned video world models to date — spanning diverse action-conditioning spaces (end-effector, language, and latent) and robot morphologies, across DROID, Bridge, bimanual YAM robots, and G1 humanoids."
+    },
+    {
+      "title": "CLAP: Cross-Embodiment Video World Models are Zero-Shot Physical Simulators",
+      "url": "https://arxiv.org/pdf/2608.27406v1",
+      "snippet": "First, CLAP&#x27;s cross-embodiment video models have the same number of model parameters and architecture as the single-embodiment video models. Given that the single-embodiment baselines are purpose-built-and-trained for future prediction on a specific robot platform, one would expect them to outperform CLAP&#x27;s cross-embodiment models."
+    },
+    {
+      "title": "Omni-R1/src/transformers/docs/source/en/model_doc/clap.md at main ...",
+      "url": "https://github.com/ModalityDance/Omni-R1/blob/main/src/transformers/docs/source/en/model_doc/clap.md",
+      "snippet": "CLAP (Contrastive Language-Audio Pretraining) is a neural network trained on a variety of (audio, text) pairs. It can be instructed in to predict the most relevant text snippet, given an audio, without directly optimizing for the task. The CLAP model uses a SWINTransformer to get audio features from a log-Mel spectrogram input, and a RoBERTa model to get text features. Both the text and audio ..."
+    },
+    {
+      "title": "Omni Plugins: A New Sandboxed Plugin Format, AI Stem Splitting, Neural ...",
+      "url": "https://omnidaw.com/news/omni-plugins-ai-stem-split-neural-amp-modeler-fx-audit-omni-sierpien-2026",
+      "snippet": "🧩 Omni Plugins: A New Sandboxed Plugin Format Alongside CLAP, VST3, VST2, and LV2, Omni now hosts a plugin format of its own — Omni Plugins (.omniplugin): Fully Sandboxed, In-Process Runtime — Omni Plugins run inside an isolated, fully sandboxed runtime with no direct system access (no dlopen), so unlike native CLAP/VST3/VST2 plugins they&#x27;re trusted automatically and skip the \"trust ..."
+    }
+  ]
+}

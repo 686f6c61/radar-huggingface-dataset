@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "kavishbhardwaj/tds-green-ai-audit",
+  "slug": "kavishbhardwaj-tds-green-ai-audit",
+  "author": "kavishbhardwaj",
+  "url": "https://huggingface.co/kavishbhardwaj/tds-green-ai-audit",
+  "created_at": "2026-08-28T18:03:21.000Z",
+  "updated_at": "2026-08-28T18:05:06.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "co2_eq_emissions",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "mri2026tds/green-ai-carbon-audit · Hugging Face",
+      "url": "https://huggingface.co/mri2026tds/green-ai-carbon-audit",
+      "snippet": "Model Card - Green AI Carbon Accounting This repository documents the carbon footprint and energy accounting for the assigned model training run in TDS GA8."
+    },
+    {
+      "title": "harshit4/tds-ga8-green-ai-audit · Hugging Face",
+      "url": "https://huggingface.co/harshit4/tds-ga8-green-ai-audit",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Releases · kavishbhardwaj/TDS · GitHub",
+      "url": "https://github.com/kavishbhardwaj/TDS/releases",
+      "snippet": "Contribute to kavishbhardwaj/TDS development by creating an account on GitHub."
+    },
+    {
+      "title": "The state of AI in audit in 2026: Interview with experts",
+      "url": "https://tax.thomsonreuters.com/blog/state-of-ai-in-audit/",
+      "snippet": "Audit firms face a critical workforce crisis, making AI adoption essential for economic viability and operational efficiency. Experts emphasize the need for Fiduciary-Grade AI™, hands-on evaluation, and a cautious approach to integrating agentic workflows. 2026 may mark a tipping point as firms balance skepticism with urgency, preparing for transformative AI-driven change in audit."
+    },
+    {
+      "title": "GitHub - kavishbhardwaj/tds-ga7",
+      "url": "https://github.com/kavishbhardwaj/tds-ga7",
+      "snippet": "Contribute to kavishbhardwaj/tds-ga7 development by creating an account on GitHub."
+    }
+  ]
+}

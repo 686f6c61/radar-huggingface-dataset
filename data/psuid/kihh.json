@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "psuid/kihh",
+  "slug": "psuid-kihh",
+  "author": "psuid",
+  "url": "https://huggingface.co/psuid/kihh",
+  "created_at": "2026-08-28T16:39:50.000Z",
+  "updated_at": "2026-08-28T16:43:28.000Z",
+  "license": "unknown",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:unknown",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 79438192,
+  "storage_human": "79 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Best Open Source AI Models 2026: DeepSeek, Llama 4 & More",
+      "url": "https://neuralwired.com/2026/05/29/best-open-source-ai-models-2026/",
+      "snippet": "The definitive ranked list of open source AI models in 2026. GLM-5, Kimi K2.6, DeepSeek V4, Llama 4, Qwen 3.5, Gemma 4 — benchmarks, licenses, and how to run each locally."
+    },
+    {
+      "title": "Kimi K3: 2.8T Model — Benchmarks, Pricing & Free Credits",
+      "url": "https://k3-kimi.com/",
+      "snippet": "Kimi K3 is Moonshot AI&#x27;s 2.8T open model with 1M context. See benchmarks vs GPT-5.6 & Claude, pricing, and claim free membership credits."
+    },
+    {
+      "title": "Moonshot&#x27;s Kimi K3 Is the Biggest Open Model - Technology Org",
+      "url": "https://www.technology.org/2026/07/17/moonshot-kimi-k3-open-weight-ai-model/",
+      "snippet": "China&#x27;s Moonshot unveiled Kimi K3, a 2.8 trillion-parameter open-weight model that closes the gap with top US AI systems."
+    },
+    {
+      "title": "Kimi K2: Specs, Benchmarks & Pricing | AI/TLDR",
+      "url": "https://ai-tldr.dev/models/kimi-k2/",
+      "snippet": "Kimi K2 is Moonshot AI&#x27;s original open-weight 1-trillion-parameter MoE model (32B active) for agentic coding, released July 2025. See specs, benchmarks and pri…"
+    },
+    {
+      "title": "Kimi K3: Benchmarks, Pricing & Review — Moonshot&#x27;s 2.8T Frontier ...",
+      "url": "https://theairankings.com/moonshot/kimi-k3/",
+      "snippet": "Kimi K3 is Moonshot AI&#x27;s flagship model, released on 16 July 2026: a 2.8-trillion-parameter sparse mixture-of-experts reasoning model with a 1-million-token context window and native vision. It is the highest-ranked Chinese model ever on independent testing — fourth on the Artificial Analysis Intelligence Index, ahead of Claude Opus 4.8."
+    }
+  ]
+}

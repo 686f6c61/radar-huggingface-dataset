@@ -1,0 +1,105 @@
+{
+  "schema": 1,
+  "id": "osos3lom/baloot-fan-v2",
+  "slug": "osos3lom-baloot-fan-v2",
+  "author": "osos3lom",
+  "url": "https://huggingface.co/osos3lom/baloot-fan-v2",
+  "created_at": "2026-08-28T13:20:06.000Z",
+  "updated_at": "2026-08-28T13:26:09.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "object-detection",
+  "library": "ultralytics",
+  "languages": [
+    "ar",
+    "en"
+  ],
+  "tags": [
+    "ultralytics",
+    "onnx",
+    "yolo",
+    "yolo11",
+    "vision",
+    "computer-vision",
+    "playing-cards",
+    "baloot",
+    "saudi-baloot",
+    "webgpu",
+    "static-quantization",
+    "object-detection",
+    "ar",
+    "en",
+    "dataset:JackFurby/playing-cards",
+    "license:mit",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 25556744,
+  "storage_human": "26 MB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "Card Detection on Fanned Hands",
+      "dataset": "Saudi Baloot Fanned Cards Holdout Set",
+      "metric": null,
+      "value": 0.9872
+    },
+    {
+      "task": "Card Detection on Fanned Hands",
+      "dataset": "Saudi Baloot Fanned Cards Holdout Set",
+      "metric": null,
+      "value": 0.9581
+    },
+    {
+      "task": "Card Detection on Fanned Hands",
+      "dataset": "Saudi Baloot Fanned Cards Holdout Set",
+      "metric": null,
+      "value": 0.9826
+    },
+    {
+      "task": "Card Detection on Fanned Hands",
+      "dataset": "Saudi Baloot Fanned Cards Holdout Set",
+      "metric": null,
+      "value": 0.9404
+    }
+  ],
+  "sources": [
+    {
+      "title": "AIBaloot/README.md at master · osos3lom/AIBaloot · GitHub",
+      "url": "https://github.com/osos3lom/AIBaloot/blob/master/README.md",
+      "snippet": "Building AI Baloot cards Recognition . Contribute to osos3lom/AIBaloot development by creating an account on GitHub."
+    },
+    {
+      "title": "AI 3D Model Generator | Create 3D Models with V2Fun",
+      "url": "https://v2fun.ai/",
+      "snippet": "Create 3D models, characters, game assets, and animations with V2Fun&#x27;s AI 3D model generator. Turn images or text into 3D faster."
+    },
+    {
+      "title": "osos3lom (Osama 3alam) · GitHub",
+      "url": "https://github.com/osos3lom",
+      "snippet": "A multidisciplinary innovator blending software engineering, product design, and applied AI, with a strong foundation in Physics and practical problem-solving. - osos3lom"
+    },
+    {
+      "title": "Free AI Image Generator | Craiyon",
+      "url": "https://www.craiyon.com/",
+      "snippet": "Free AI Image Generator Create free AI images from text for art, photos, illustrations, and quick visual ideas."
+    },
+    {
+      "title": "AI Models | Civitai",
+      "url": "https://civitai.com/models",
+      "snippet": "Browse thousands of free Stable Diffusion & Flux models, LoRAs, checkpoints, and embeddings. The largest collection of AI image generation resources."
+    }
+  ]
+}

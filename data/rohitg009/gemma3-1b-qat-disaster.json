@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "RohitG009/gemma3-1b-qat-disaster",
+  "slug": "rohitg009-gemma3-1b-qat-disaster",
+  "author": "RohitG009",
+  "url": "https://huggingface.co/RohitG009/gemma3-1b-qat-disaster",
+  "created_at": "2026-08-28T19:07:51.000Z",
+  "updated_at": "2026-08-28T19:24:26.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 999885952,
+  "parameters_human": "999.9M",
+  "storage_bytes": 806058240,
+  "storage_human": "806 MB",
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Gemma 3 — Google DeepMind",
+      "url": "https://deepmind.google/models/gemma/gemma-3/",
+      "snippet": "Gemma 3 is the most capable model that can run on a single GPU or TPU. Efficient on workstations, laptops, and even smartphones, allowing developers to build responsible AI applications at scale."
+    },
+    {
+      "title": "google/gemma-3-1b-it · Hugging Face",
+      "url": "https://huggingface.co/google/gemma-3-1b-it",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Gemma 3 Technical Report - arXiv.org",
+      "url": "https://arxiv.org/html/2503.19786v1",
+      "snippet": "In particular, our novel post-training recipe significantly improves the math, chat, instruction-following and multilingual abilities, making Gemma3-4B-IT competitive with Gemma2-27B-IT and Gemma3-27B-IT comparable to Gemini-1.5-Pro across benchmarks. We release all our models to the community."
+    },
+    {
+      "title": "google/gemma-3-1b-it-qat-q4_0-gguf · Hugging Face",
+      "url": "https://huggingface.co/google/gemma-3-1b-it-qat-q4_0-gguf",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "PDF Gemma3TechnicalReport",
+      "url": "https://storage.googleapis.com/deepmind-media/gemma/Gemma3Report.pdf",
+      "snippet": "1. Introduction We present the newest version of Gemma open language models (Gemma Team, 2024a), co-designed with the family of Gemini frontier mod-els (Gemini Team, 2023). This new version comes in sizes comparable to Gemma 2 (Gemma Team, 2024b), with the addition of a 1B model. These models are designed to run on standard consumer-grade hardware such as phones, lap-tops, and high-end GPUs ..."
+    }
+  ]
+}

@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "laion/moss-va-sft3-voicenet-lora-adapters",
+  "slug": "laion-moss-va-sft3-voicenet-lora-adapters",
+  "author": "laion",
+  "url": "https://huggingface.co/laion/moss-va-sft3-voicenet-lora-adapters",
+  "created_at": "2026-08-28T14:43:21.000Z",
+  "updated_at": "2026-08-28T15:22:35.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-speech",
+  "library": "peft",
+  "languages": [
+    "en",
+    "de"
+  ],
+  "tags": [
+    "peft",
+    "safetensors",
+    "lora",
+    "text-to-speech",
+    "voice-acting",
+    "expressive-tts",
+    "moss",
+    "en",
+    "de",
+    "base_model:laion/moss-tts-local-transformer-4.55b-voice-acting-v2-sft3",
+    "base_model:adapter:laion/moss-tts-local-transformer-4.55b-voice-acting-v2-sft3",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 2200052480,
+  "storage_human": "2.2 GB",
+  "base_model": "laion/moss-tts-local-transformer-4.55b-voice-acting-v2-sft3",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "laion/moss-va-sft3-voice-loras · Hugging Face",
+      "url": "https://huggingface.co/laion/moss-va-sft3-voice-loras",
+      "snippet": "500 voice adapters for MOSS voice-acting v2 SFT-3 One rank-16 LoRA per synthetic voice profile. Each is trained on every clip of that one voice — about 2,150 rows after dropping the worst decile by measured quality — across all emotions and all VoiceNet dimensions."
+    },
+    {
+      "title": "VoiceNet LoRA evolution - projects.laion.ai",
+      "url": "https://projects.laion.ai/moss-voicenet-lora-evolution/",
+      "snippet": "For each new VoiceNet-dimension LoRA (retrained with ≤25% game-character data), a 10-generation evolutionary search finds the prompt+sampling that best pushes its dimension, then measures the effect at 0% / 50% / 100% strength. Shows what each LoRA brings, how 50% compares to 100%, and the best way to prompt it. Fitness = mean over 6 candidates of the dimension in its intended direction ..."
+    },
+    {
+      "title": "moss-voicenet-manual/site at main · LAION-AI/moss-voicenet-manual · GitHub",
+      "url": "https://github.com/LAION-AI/moss-voicenet-manual/tree/main/site",
+      "snippet": "MOSS-VA-v2 VoiceNet dimension-LoRA conditioning manual (dose-response, side-effects, audio) - LAION-AI/moss-voicenet-manual"
+    },
+    {
+      "title": "laion/moss-voicenet-dimension-loras · Hugging Face",
+      "url": "https://huggingface.co/laion/moss-voicenet-dimension-loras",
+      "snippet": "100 rank-32 LoRA adapters for laion/moss-tts-local-transformer-4.55b-voice-acting-v2. Each adapter pushes one of the 57 VoiceNet voice-performance dimensions in the high or low direction."
+    },
+    {
+      "title": "GitHub - LAION-AI/moss-voicenet-manual: MOSS-VA-v2 VoiceNet dimension ...",
+      "url": "https://github.com/LAION-AI/moss-voicenet-manual",
+      "snippet": "For each dimension, both the __high and __low LoRA are swept at 25 / 50 / 75 / 100 / 125%. Each page reports: the dose-response of the measured target score, the cost in genuineness / vocal-burst blend / speech quality, the top-3 ± correlated EmoNet emotions and VoiceNet dimensions, three audio samples per dose, and a grounded prompting tip. Data: MOSS-VA-v2 base + per-dimension LoRA on ..."
+    }
+  ]
+}

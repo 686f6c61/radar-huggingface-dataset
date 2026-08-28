@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "Danielnlws3/retrieval-2024",
+  "slug": "danielnlws3-retrieval-2024",
+  "author": "Danielnlws3",
+  "url": "https://huggingface.co/Danielnlws3/retrieval-2024",
+  "created_at": "2026-08-28T19:20:30.000Z",
+  "updated_at": "2026-08-28T19:20:38.000Z",
+  "license": "bsd-3-clause",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "dino",
+    "pytorch",
+    "retrieval",
+    "license:bsd-3-clause",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 16576,
+  "parameters_human": "16576",
+  "storage_bytes": 66784,
+  "storage_human": "66784 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GPT‑4 - OpenAI",
+      "url": "https://openai.com/index/gpt-4-research/",
+      "snippet": "We&#x27;ve created GPT-4, the latest milestone in OpenAI&#x27;s effort in scaling up deep learning. GPT-4 is a large multimodal model (accepting image and text inputs, emitting text outputs) that, while less capable than humans in many real-world scenarios, exhibits human-level performance on various professional and academic benchmarks."
+    },
+    {
+      "title": "What is RAG? - Retrieval-Augmented Generation AI Explained - AWS",
+      "url": "https://aws.amazon.com/what-is/retrieval-augmented-generation/",
+      "snippet": "What is Retrieval-Augmented Generation? Retrieval-Augmented Generation (RAG) is the process of optimizing the output of a large language model, so it references an authoritative knowledge base outside of its training data sources before generating a response."
+    },
+    {
+      "title": "Retrieval | OpenAI API",
+      "url": "https://developers.openai.com/api/docs/guides/retrieval",
+      "snippet": "The Retrieval API allows you to perform semantic search over your data, which is a technique that surfaces semantically similar results—even when they match few or no keywords. Retrieval is useful on its own, but is especially powerful when combined with our models to synthesize responses. The Retrieval API is powered by vector stores, which serve as indices for your data. This guide will ..."
+    },
+    {
+      "title": "AI-Native Engineering Story Pt2 - I Was the Retrieval Layer",
+      "url": "https://www.linkedin.com/pulse/ai-native-engineering-story-pt2-i-retrieval-layer-daniel-stolf-os1uf/",
+      "snippet": "Confirmed, current, scoped to exactly what the model needed. The model wasn&#x27;t searching. I was the retrieval layer. For the context problem — session state documents."
+    },
+    {
+      "title": "Research | OpenAI",
+      "url": "https://openai.com/research/",
+      "snippet": "We advance the science of AI through research on frontier models, reasoning, multimodal systems, and safe deployment. GPT OpenAI&#x27;s GPT series models are fast, versatile, and cost-efficient AI systems designed to understand context, generate content, and reason across text, images, and more."
+    }
+  ]
+}

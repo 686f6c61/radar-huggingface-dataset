@@ -1,0 +1,84 @@
+{
+  "schema": 1,
+  "id": "burningfeet/Qwen3.6-35B-A3B-Uncensored-Genesis-Hermes-V11-GGUF-2026-08-28",
+  "slug": "burningfeet-qwen3-6-35b-a3b-uncensored-genesis-hermes-v11-gguf-2026-08-28",
+  "author": "burningfeet",
+  "url": "https://huggingface.co/burningfeet/Qwen3.6-35B-A3B-Uncensored-Genesis-Hermes-V11-GGUF-2026-08-28",
+  "created_at": "2026-08-28T15:03:22.000Z",
+  "updated_at": "2026-08-28T15:06:11.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "hermes",
+  "languages": [
+    "en",
+    "zh",
+    "multilingual"
+  ],
+  "tags": [
+    "hermes",
+    "gguf",
+    "uncensored",
+    "qwen3.6",
+    "moe",
+    "vision",
+    "multimodal",
+    "genesis",
+    "agentic",
+    "image-text-to-text",
+    "en",
+    "zh",
+    "multilingual",
+    "dataset:NousResearch/hermes-function-calling-v1",
+    "base_model:HauhauCS/Qwen3.6-35B-A3B-Uncensored-HauhauCS-Aggressive",
+    "base_model:quantized:HauhauCS/Qwen3.6-35B-A3B-Uncensored-HauhauCS-Aggressive",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "imatrix",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 34660610688,
+  "parameters_human": "34.66B",
+  "storage_bytes": 86839427456,
+  "storage_human": "86.8 GB",
+  "base_model": "HauhauCS/Qwen3.6-35B-A3B-Uncensored-HauhauCS-Aggressive",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": true,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Qwen3.6-35B-A3B-Uncensored-HauhauCS-Aggressive - Hugging Face",
+      "url": "https://huggingface.co/burningfeet/Qwen3.6-35B-A3B-Uncensored-Genesis-Hermes-V7-GGUF-2026-08-07",
+      "snippet": "Model is based on HauhauCS/Qwen3.6-35B-A3B-Uncensored-HauhauCS-Aggressive base. And DJLougen/hermes-qwen3.5-35b-a3b-GGUF finetune for Hermes agent. I transferred data from finetune on Hermes dataset (around 2k blocks from two FFN expert tensors) to HauhauCS uncensored base. Join the Discord for updates, roadmaps, projects, or just to chat."
+    },
+    {
+      "title": "Qwen3.6-35B-A3B-Uncensored-Genesis-Hermes-V10-GGUF-2026-08-24",
+      "url": "https://huggingface.co/burningfeet/Qwen3.6-35B-A3B-Uncensored-Genesis-Hermes-V10-GGUF-2026-08-24",
+      "snippet": "Qwen3.6-35B-A3B-Uncensored-Genesis-Hermes-V10-GGUF-2026-08-24 ... Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "Qwen3.6-35B-A3B-Uncensored-Genesis-Hermes-V10-GGUF: Text-to-Text model ...",
+      "url": "https://www.aimodels.fyi/models/huggingFace/qwen3.6-35b-a3b-uncensored-genesis-hermes-v10-gguf-luffythefox",
+      "snippet": "Overview Qwen3.6-35B-A3B-Uncensored-Genesis-Hermes-V10-GGUF is a text-to-text GGUF model with native text, image, and video input support, created by LuffyTheFox. It combines the uncensored HauhauCS/Qwen3.6-35B-A3B-Uncensored-HauhauCS-Aggressive base with the Hermes agent behavior from DJLougen/hermes-qwen3.5-35b-a3b-GGUF; the maintainer transferred about 2,000 blocks from two FFN expert ..."
+    },
+    {
+      "title": "Qwen 3.6 Complete Guide: 27B Dense, 35B-A3B MoE, and Which to Use",
+      "url": "https://insiderllm.com/guides/qwen-3-6-local-ai-guide/",
+      "snippet": "Qwen 3.6 landed in two open-weight flavors: 27B dense and 35B-A3B MoE. Benchmarks, hardware fit, and which variant to run on your GPU."
+    },
+    {
+      "title": "Qwen/Qwen3.6-35B-A3B | vLLM Recipes - recipes.vllm.ai",
+      "url": "https://recipes.vllm.ai/Qwen/Qwen3.6-35B-A3B",
+      "snippet": "Smaller Qwen3.6 multimodal MoE model (35B total / 3B active) with BF16, FP8, and NVIDIA NVFP4 variants"
+    }
+  ]
+}

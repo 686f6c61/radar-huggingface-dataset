@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "Anas1010/flickr8k-image-caption-generator-attn",
+  "slug": "anas1010-flickr8k-image-caption-generator-attn",
+  "author": "Anas1010",
+  "url": "https://huggingface.co/Anas1010/flickr8k-image-caption-generator-attn",
+  "created_at": "2026-08-28T12:39:57.000Z",
+  "updated_at": "2026-08-28T12:40:01.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "image-captioning",
+    "pytorch",
+    "flickr8k",
+    "attention",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 31574061,
+  "storage_human": "32 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Anas1010/flickr8k-image-caption-generator · Hugging Face",
+      "url": "https://huggingface.co/Anas1010/flickr8k-image-caption-generator",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GitHub - david-malviya/Image-Caption-Generator: AI-powered image ...",
+      "url": "https://github.com/david-malviya/Image-Caption-Generator",
+      "snippet": "AI-powered image caption generator using VGG16 + LSTM deep learning model, trained on Flickr8k dataset. Upload any image through the modern web interface and get an auto-generated descriptive capti..."
+    },
+    {
+      "title": "Image Caption Generator using Deep Learning on Flickr8K Dataset",
+      "url": "https://github.com/NiyatiP10/Image-Caption-Generator-using-Deep-Learning-on-Flickr8K-dataset/blob/main/README.md",
+      "snippet": "This project involves generating captions for images using a deep learning model built on the Flickr8K dataset. The model utilizes a combination of a pre-trained VGG16 model for image feature extraction and an LSTM-based model with attention mechanisms for generating image captions."
+    },
+    {
+      "title": "LLM Leaderboard 2026: Compare 300+ Top AI Models by Intelligence, Speed ...",
+      "url": "https://llm-stats.com/leaderboards/llm-leaderboard",
+      "snippet": "The LLM Leaderboard — independent ranking of GPT, Claude, Gemini, Llama, DeepSeek and 300+ AI models by intelligence, speed and price. Filter by provider, license, modality and context window; sort by every benchmark. Composite LLM Stats Score updated continuously from public benchmarks and live API metrics."
+    },
+    {
+      "title": "bipin/image-caption-generator · Hugging Face",
+      "url": "https://huggingface.co/bipin/image-caption-generator",
+      "snippet": "Image-caption-generator This model is trained on Flickr8k dataset to generate captions given an image. It achieves the following results on the evaluation set: eval_loss: 0.2536 eval_runtime: 25.369 eval_samples_per_second: 63.818 eval_steps_per_second: 8.002 epoch: 4.0 step: 3236 Running the model using transformers library Load the pre-trained model from the model hub from transformers ..."
+    }
+  ]
+}

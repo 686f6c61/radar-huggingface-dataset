@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "anku-zmin/personal-efficient-attention",
+  "slug": "anku-zmin-personal-efficient-attention",
+  "author": "anku-zmin",
+  "url": "https://huggingface.co/anku-zmin/personal-efficient-attention",
+  "created_at": "2026-08-28T18:46:26.000Z",
+  "updated_at": "2026-08-28T18:46:35.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "transformer",
+    "research-notes",
+    "efficient-attention",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 24832,
+  "parameters_human": "24832",
+  "storage_bytes": 99808,
+  "storage_human": "99808 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Models - Hugging Face",
+      "url": "https://huggingface.co/models?other=detailed-descriptive&p=1&sort=trending",
+      "snippet": "Explore machine learning models. Main Tasks Libraries Languages Licenses Apps Inference Providers One-click Deployment Misc"
+    },
+    {
+      "title": "[1812.01243] Efficient Attention: Attention with Linear Complexities",
+      "url": "https://arxiv.org/abs/1812.01243",
+      "snippet": "Dot-product attention has wide applications in computer vision and natural language processing. However, its memory and computational costs grow quadratically with the input size. Such growth prohibits its application on high-resolution inputs. To remedy this drawback, this paper proposes a novel efficient attention mechanism equivalent to dot-product attention but with substantially less ..."
+    },
+    {
+      "title": "anku-zmin/paper_017393565_text_image_retrieval · Hugging Face",
+      "url": "https://huggingface.co/anku-zmin/paper_017393565_text_image_retrieval",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GitHub - HKUNLP/efficient-attention: [EVA ICLR&#x27;23; LARA ICML&#x27;22 ...",
+      "url": "https://github.com/hkunlp/efficient-attention",
+      "snippet": "Basic Usage of the Efficient Attention Library efficient-attention is a small self-contained codebase that collects several efficient attention mechanisms."
+    },
+    {
+      "title": "[2507.19595] Efficient Attention Mechanisms for Large Language Models ...",
+      "url": "https://arxiv.org/abs/2507.19595",
+      "snippet": "Transformer-based architectures have become the prevailing backbone of large language models. However, the quadratic time and memory complexity of self-attention remains a fundamental obstacle to efficient long-context modeling. To address this limitation, recent research has introduced two principal categories of efficient attention mechanisms. Linear attention methods achieve linear ..."
+    }
+  ]
+}

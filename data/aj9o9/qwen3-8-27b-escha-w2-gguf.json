@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "aj9o9/Qwen3.8-27B-Escha-W2-GGUF",
+  "slug": "aj9o9-qwen3-8-27b-escha-w2-gguf",
+  "author": "aj9o9",
+  "url": "https://huggingface.co/aj9o9/Qwen3.8-27B-Escha-W2-GGUF",
+  "created_at": "2026-08-28T14:18:41.000Z",
+  "updated_at": "2026-08-28T14:52:21.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "gguf",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "gguf",
+    "qwen3",
+    "qwen3.8",
+    "dense",
+    "escha",
+    "llama.cpp",
+    "text-generation",
+    "en",
+    "base_model:EschaLabs/Qwen3.8-27B-Escha-W2",
+    "base_model:quantized:EschaLabs/Qwen3.8-27B-Escha-W2",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 6333709824,
+  "parameters_human": "6.33B",
+  "storage_bytes": 22999278016,
+  "storage_human": "23.0 GB",
+  "base_model": "EschaLabs/Qwen3.8-27B-Escha-W2",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "EschaLabs/Qwen3.8-27B-Escha-W2 · Hugging Face",
+      "url": "https://huggingface.co/EschaLabs/Qwen3.8-27B-Escha-W2",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Qwen/Qwen3.8-27B · Hugging Face",
+      "url": "https://huggingface.co/Qwen/Qwen3.8-27B",
+      "snippet": "MathVision: Qwen3.8-27B is evaluated using the fixed prompt: \"Please reason step by step, and put your final answer within &#92;boxed {}.\" For the remaining models, we report the higher score from two prompt variants—one with and one without the &#92;boxed {} formatting requirement."
+    },
+    {
+      "title": "Qwen3.8-27B-Escha-W2: Text-to-Text model — overview, use cases ...",
+      "url": "https://www.aimodels.fyi/models/huggingFace/qwen3.8-27b-escha-w2-eschalabs",
+      "snippet": "Overview Qwen3.8-27B-Escha-W2 is a 2-bit quantized variant of Qwen3.8-27B maintained by EschaLabs, a company specializing in extreme quantization. The model contains the full 27 billion parameter count compressed into 10.15 GB of weights using mixed 2/3-bit quantization (2.469 bits per weight average) with int8 embeddings and head layers."
+    },
+    {
+      "title": "Qwen3.8-27B - GitHub",
+      "url": "https://github.com/AlibabaCloud-Official/Qwen3.8-27B",
+      "snippet": "Welcome to the repository for Qwen3.8-27B —the latest native multimodal dense open-weight model released by Alibaba&#x27;s Qwen team. Delivering top-tier performance for local hardware, Qwen3.8-27B excels at coding, agentic workflows, and office automation tasks."
+    },
+    {
+      "title": "escha-qwen3.8-27b-w2-docker/README.md at main - GitHub",
+      "url": "https://github.com/vimuttilabs/escha-qwen3.8-27b-w2-docker/blob/main/README.md",
+      "snippet": "🐳 Qwen3.8-27B · Escha W2 · Docker Run a full 27B-parameter reasoning model on a single RTX 3090 or 4090, locally, with an OpenAI-compatible API."
+    }
+  ]
+}

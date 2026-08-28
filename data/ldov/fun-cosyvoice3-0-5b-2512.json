@@ -1,0 +1,87 @@
+{
+  "schema": 1,
+  "id": "ldov/Fun-CosyVoice3-0.5B-2512",
+  "slug": "ldov-fun-cosyvoice3-0-5b-2512",
+  "author": "ldov",
+  "url": "https://huggingface.co/ldov/Fun-CosyVoice3-0.5B-2512",
+  "created_at": "2026-08-28T11:29:43.000Z",
+  "updated_at": "2026-08-28T11:29:43.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-speech",
+  "library": null,
+  "languages": [
+    "zh",
+    "en",
+    "fr",
+    "es",
+    "ja",
+    "ko",
+    "it",
+    "ru",
+    "de"
+  ],
+  "tags": [
+    "onnx",
+    "safetensors",
+    "text-to-speech",
+    "zh",
+    "en",
+    "fr",
+    "es",
+    "ja",
+    "ko",
+    "it",
+    "ru",
+    "de",
+    "arxiv:2505.17589",
+    "arxiv:2412.10117",
+    "arxiv:2407.05407",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 11767984206,
+  "storage_human": "11.8 GB",
+  "base_model": null,
+  "formats": [
+    "onnx",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "FunAudioLLM/Fun-CosyVoice3-0.5B-2512 · Hugging Face",
+      "url": "https://huggingface.co/FunAudioLLM/Fun-CosyVoice3-0.5B-2512",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Fun-CosyVoice3-0.5B-2512 · Models",
+      "url": "https://www.modelscope.cn/models/FunAudioLLM/Fun-CosyVoice3-0.5B-2512",
+      "snippet": "@ FunAudioLLM 278,364 downloads updated Jan 29,2026 Model card Files and versions Discussions 56 Download model"
+    },
+    {
+      "title": "Lourdle/Fun-CosyVoice3-0.5B-2512_ONNX · Hugging Face",
+      "url": "https://huggingface.co/Lourdle/Fun-CosyVoice3-0.5B-2512_ONNX",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GitHub - QwenAudio/CosyVoice: Multi-lingual large voice generation ...",
+      "url": "https://github.com/QwenAudio/CosyVoice",
+      "snippet": "Multi-lingual large voice generation model, providing inference, training and deployment full-stack ability. - QwenAudio/CosyVoice"
+    },
+    {
+      "title": "ai-models/Fun-CosyVoice3-0.5B-2512 - Fun-CosyVoice3-0.5B-2512 - gitea",
+      "url": "https://gitserver.onethingai.com/ai-models/Fun-CosyVoice3-0.5B-2512",
+      "snippet": "release Fun-CosyVoice3-.5B-2512 base model, rl model and its training/inference script release Fun-CosyVoice3-.5B modelscope gradio space 2025/08 Thanks to the contribution from NVIDIA Yuekai Zhang, add triton trtllm runtime support and cosyvoice2 grpo training support 2025/07 release Fun-CosyVoice 3.0 eval set 2025/05 add CosyVoice2-0.5B ..."
+    }
+  ]
+}

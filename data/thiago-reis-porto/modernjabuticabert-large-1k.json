@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "Thiago-Reis-Porto/modernJabuticaBERT-Large-1k",
+  "slug": "thiago-reis-porto-modernjabuticabert-large-1k",
+  "author": "Thiago-Reis-Porto",
+  "url": "https://huggingface.co/Thiago-Reis-Porto/modernJabuticaBERT-Large-1k",
+  "created_at": "2026-08-28T16:10:28.000Z",
+  "updated_at": "2026-08-28T16:10:28.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "feature-extraction",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "modernbert",
+    "feature-extraction",
+    "arxiv:1910.09700",
+    "text-embeddings-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 394781696,
+  "parameters_human": "394.8M",
+  "storage_bytes": 1579143688,
+  "storage_human": "1.6 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "JabuticaBERT - a amadeusai Collection - Hugging Face",
+      "url": "https://huggingface.co/collections/amadeusai/jabuticabert",
+      "snippet": "Modern Portuguese Encoders from Scratch with RTD and Long-Context Training"
+    },
+    {
+      "title": "JabuticaBERT: Modern Portuguese Encoders from Scratch with RTD and Long ...",
+      "url": "https://aclanthology.org/2026.propor-1.93/",
+      "snippet": "Thiago Porto, Gabriel Gomes, Alexandre Bender, Ulisses Corrêa, Larissa Freitas, William Cruz, Marcellus Amadeus. Proceedings of the 17th International Conference on Computational Processing of Portuguese (PROPOR 2026) - Vol. 1. 2026."
+    },
+    {
+      "title": "amadeusai (AMADEUS AI) - Hugging Face",
+      "url": "https://huggingface.co/amadeusai/models",
+      "snippet": "LLM, ASR, TTS, Computational Linguistics Thiago-Reis-Porto published a model 24 days ago"
+    },
+    {
+      "title": "PDF JabuticaBERT: Modern Portuguese Encoders from Scratch ... - ACL Anthology",
+      "url": "https://aclanthology.org/2026.propor-1.93.pdf",
+      "snippet": "All models in this study were trained from scratch using the Jabuticaba corpus, a large-scale collection of Brazilian Portuguese text designed specifically for language model pre-training (Amadeus et al., 2024)."
+    },
+    {
+      "title": "Sketchfab",
+      "url": "https://sketchfab.com/search",
+      "snippet": "Use Sketchfab to publish, share and embed interactive 3D files. Discover and download thousands of 3D models from games, cultural heritage, architecture, design and more."
+    }
+  ]
+}

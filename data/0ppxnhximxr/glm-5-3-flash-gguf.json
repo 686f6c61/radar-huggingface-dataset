@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "0ppxnhximxr/GLM-5.3-Flash-GGUF",
+  "slug": "0ppxnhximxr-glm-5-3-flash-gguf",
+  "author": "0ppxnhximxr",
+  "url": "https://huggingface.co/0ppxnhximxr/GLM-5.3-Flash-GGUF",
+  "created_at": "2026-08-28T15:35:05.000Z",
+  "updated_at": "2026-08-28T16:17:06.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "gguf",
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "tags": [
+    "gguf",
+    "llama.cpp",
+    "glm5_next",
+    "imatrix",
+    "text-generation",
+    "en",
+    "zh",
+    "base_model:zai-org/GLM-5.3-Flash-BF16",
+    "base_model:quantized:zai-org/GLM-5.3-Flash-BF16",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 313326811966,
+  "parameters_human": "313.33B",
+  "storage_bytes": 189003386976,
+  "storage_human": "189.0 GB",
+  "base_model": "zai-org/GLM-5.3-Flash-BF16",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GLM-5.3-Flash: How to Run Locally - unsloth.ai",
+      "url": "https://unsloth.ai/docs/models/glm-5.3-flash",
+      "snippet": "GLM-5.3-Flash, also known as ox-alpha, is Z.ai&#x27;s new 320B parameter multimodal open model with 18B active parameters. GLM-5.3-Flash outperforms GLM-5.2 across benchmarks and real-world tasks at one-tenth the price, while also rivalling Claude Opus 4.8 on coding and agentic benchmarks. You can now run the 1-bit model locally on 102GB RAM/VRAM or 3-bit on 128GB setups via llama.cpp or Unsloth."
+    },
+    {
+      "title": "GLM-5.3-Flash (Ox Alpha): Specs, Price & API - glm-ai.chat",
+      "url": "https://glm-ai.chat/models/glm-5-3-flash/",
+      "snippet": "A source-checked guide to GLM-5.3-Flash, formerly Ox Alpha, covering its multimodal architecture, 1M context, API prices, Coding Plan, open weights and vendor-reported benchmarks. Ox Alpha was the anonymous preview name for GLM-5.3-Flash, not a separate GLM model."
+    },
+    {
+      "title": "GLM-5.3-Flash (Ox Alpha): Benchmarks, Pricing, Local Setup",
+      "url": "https://linas.substack.com/p/glm-5-3-flash-guide",
+      "snippet": "GLM-5.3-Flash: Local AI Goes Multimodal 🤖 Why the first open multimodal AI model that rivals Claude Opus 4.8 and GPT-5.6, runs on a single Mac, and was served without NVIDIA chips resets the math for founders, builders, and investors."
+    },
+    {
+      "title": "Run GLM-5.3-Flash Locally | Atomic Chat",
+      "url": "https://atomic.chat/models/glm-5-3-flash",
+      "snippet": "What is GLM-5.3-Flash? GLM-5.3-Flash is a 320B-parameter Mixture-of-Experts model from Z.ai (zai-org) and the first natively multimodal model in the GLM-5 series. Just 18B parameters are active per token, so the compute spent on each token is closer to a small model while the weight set stays very large. Z.ai published it on August 25, 2026 under the MIT license."
+    },
+    {
+      "title": "GLM-5.3 | OpenLM.ai",
+      "url": "https://openlm.ai/glm-5.5/",
+      "snippet": "GLM-5.3-Flash is the first natively multimodal model in the GLM-5 series. With 320B total parameters and just 18B active parameters, it outperforms GLM-5.2 across benchmarks and real-world workloads at one-tenth the price, while approaching Claude Opus 4.8 on coding and agentic benchmarks."
+    }
+  ]
+}

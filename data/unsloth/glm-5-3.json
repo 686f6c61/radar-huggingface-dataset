@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "unsloth/GLM-5.3",
+  "slug": "unsloth-glm-5-3",
+  "author": "unsloth",
+  "url": "https://huggingface.co/unsloth/GLM-5.3",
+  "created_at": "2026-08-28T03:42:39.000Z",
+  "updated_at": "2026-08-28T15:08:50.000Z",
+  "license": "glm-5.3",
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "glm_moe_dsa",
+    "text-generation",
+    "conversational",
+    "en",
+    "zh",
+    "arxiv:2602.15763",
+    "base_model:zai-org/GLM-5.3",
+    "base_model:finetune:zai-org/GLM-5.3",
+    "license:other",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 753329940480,
+  "parameters_human": "753.33B",
+  "storage_bytes": 1506687604850,
+  "storage_human": "1506.7 GB",
+  "base_model": "zai-org/GLM-5.3, zai-org/GLM-5.3-BF16",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GLM-5.3 - How to Run Locally - unsloth.ai",
+      "url": "https://unsloth.ai/docs/models/glm-5.3",
+      "snippet": "GLM-5.3 is Z.ai&#x27;s new 744B parameter (40B active) model. As of Aug 2026, GLM-5.3 is the strongest open-model to date, achieving SOTA on Terminal Bench 3.0 and Agents&#x27; Last Exam. GLM-5.3 uses the same base model as GLM-5.2, with every gain coming from post-training. The model has a 1M context window and can now run locally via Unsloth Dynamic GGUFs with llama.cpp or Unsloth Desktop."
+    },
+    {
+      "title": "GLM-5.3-Flash: How to Run Locally - unsloth.ai",
+      "url": "https://unsloth.ai/docs/models/glm-5.3-flash",
+      "snippet": "GLM-5.3-Flash, also known as ox-alpha, is Z.ai&#x27;s new 320B parameter multimodal open model with 18B active parameters. GLM-5.3-Flash outperforms GLM-5.2 across benchmarks and real-world tasks at one-tenth the price, while also rivalling Claude Opus 4.8 on coding and agentic benchmarks. You can now run the 1-bit model locally on 102GB RAM/VRAM or 3-bit on 128GB setups via llama.cpp or Unsloth."
+    },
+    {
+      "title": "unsloth/GLM-5.3-GGUF · Hugging Face",
+      "url": "https://huggingface.co/unsloth/GLM-5.3-GGUF",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "unsloth/GLM-5.3-Flash-FP8 · Hugging Face",
+      "url": "https://huggingface.co/unsloth/GLM-5.3-Flash-FP8",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Unsloth GLM-5.3-Flash 3-Bit GGUF: 128GB RAM Setup (Aug 2026) - explainx.ai",
+      "url": "https://www.explainx.ai/blog/unsloth-glm-5-3-flash-3bit-quantization-128gb-ram-august-2026",
+      "snippet": "A lab ships a notable open-weight model, and within a day or two Unsloth publishes a set of \"Dynamic\" GGUF quantizations at multiple bit-depths, letting builders pick the tradeoff between file size and quality that fits their hardware. For GLM-5.3-Flash, Unsloth&#x27;s docs page and the unsloth/GLM-5.3-Flash-GGUF repository list several tiers:"
+    }
+  ]
+}

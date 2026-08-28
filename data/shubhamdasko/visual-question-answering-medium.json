@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "shubhamdasko/visual-question-answering-medium",
+  "slug": "shubhamdasko-visual-question-answering-medium",
+  "author": "shubhamdasko",
+  "url": "https://huggingface.co/shubhamdasko/visual-question-answering-medium",
+  "created_at": "2026-08-28T12:54:52.000Z",
+  "updated_at": "2026-08-28T12:55:00.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "visual-question-answering",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "transformer",
+    "research-notes",
+    "visual-question-answering",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 24832,
+  "parameters_human": "24832",
+  "storage_bytes": 99808,
+  "storage_human": "99808 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Visual Question Answering: From Early Developments to Recent Advances ...",
+      "url": "https://arxiv.org/html/2501.03939v1",
+      "snippet": "Multiple-Choice Question Answering: In multiple-choice question answering, the model is presented with a question and a fixed set of possible answers. The task is to select the correct answer from these options."
+    },
+    {
+      "title": "VQA: Visual Question Answering",
+      "url": "https://visualqa.org/",
+      "snippet": "VQA is a new dataset containing open-ended questions about images. These questions require an understanding of vision, language and commonsense knowledge to answer."
+    },
+    {
+      "title": "Visual Question Answering: A Survey of Methods, Datasets, Evaluation ...",
+      "url": "https://dl.acm.org/doi/full/10.1145/3728635",
+      "snippet": "Visual Question Answering (VQA) is a growing research area within the broader multimodal AI field, integrating computer vision (CV) and natural language processing (NLP) to answer textual questions about images. In some cases, VQA incorporates external knowledge alongside images and questions to enrich the understanding and generation of answers."
+    },
+    {
+      "title": "Visual Question Answering · Hugging Face",
+      "url": "https://huggingface.co/docs/transformers/tasks/visual_question_answering",
+      "snippet": "Visual Question Answering Visual Question Answering (VQA) is the task of answering open-ended questions based on an image. The input to models supporting this task is typically a combination of an image and a question, and the output is an answer expressed in natural language."
+    },
+    {
+      "title": "VQA: Visual Question Answering",
+      "url": "https://visualqa.org/external.html",
+      "snippet": "VQA Human Attention (VQA-HAT) The VQA-HAT dataset consists of ~60k attention annotations from humans of where they choose to look while answering questions about images, collected via a game-inspired interface that requires subjects to sharpen regions of a blurred image to answer a question."
+    }
+  ]
+}

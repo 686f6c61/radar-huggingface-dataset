@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "akilesh10/green-ai-carbon-audit",
+  "slug": "akilesh10-green-ai-carbon-audit",
+  "author": "akilesh10",
+  "url": "https://huggingface.co/akilesh10/green-ai-carbon-audit",
+  "created_at": "2026-08-28T16:37:45.000Z",
+  "updated_at": "2026-08-28T16:40:42.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "co2_eq_emissions",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Bk-1928/green-ai-carbon-audit · Hugging Face",
+      "url": "https://huggingface.co/Bk-1928/green-ai-carbon-audit",
+      "snippet": "Model Card Carbon Footprint This model was trained using 8 NVIDIA H100 GPUs for 287.5 GPU-hours in the europe-west4 region. Estimated energy consumption: 2318.4 kWh. Estimated carbon emissions: 463.680 kg CO2eq."
+    },
+    {
+      "title": "Green Ai Carbon Audit - a Hugging Face Space by sk8069",
+      "url": "https://huggingface.co/spaces/sk8069/green-ai-carbon-audit",
+      "snippet": "This app calculates the energy consumption and CO₂ emissions of an AI training run using preset hardware and usage details. It then presents the results in a clear, formatted markdown report that y..."
+    },
+    {
+      "title": "1. Introduction | Green AI Model",
+      "url": "https://green-ai-model.github.io/docs/1_introduction/",
+      "snippet": "Introduction # The Green AI Model is a comprehensive framework intended to guide stakeholders through the AI life cycle. It highlights key influencing factors and their interrelations that need to be considered to enhance the sustainability of AI systems. This model is pivotal in advancing the dual objectives of Green AI: mitigating climate change and minimizing environmental impacts. Green AI ..."
+    },
+    {
+      "title": "Green AI | green-ai - ejhusom.github.io",
+      "url": "https://ejhusom.github.io/green-ai/",
+      "snippet": "Green AI: Exploring Carbon Footprints, Mitigation Strategies, and Trade Offs in Large Language Model Training (Liu et al. 2024) [Paper] A simplified machine learning product carbon footprint evaluation tool (Lang et al.) [Paper] Beyond Efficiency: Scaling AI Sustainably (Wu et al. 2024) [Paper]"
+    },
+    {
+      "title": "GitHub - mekhushi/Green-AI-Insights: Interactive dashboard analyzing AI ...",
+      "url": "https://github.com/mekhushi/Green-AI-Insights/tree/main",
+      "snippet": "Introduction Green-AI-Insights is an interactive dashboard designed to analyze the performance and carbon footprint of AI experiments. It aims to promote sustainable machine learning practices by providing insights into the environmental impact of different AI models and training techniques."
+    }
+  ]
+}

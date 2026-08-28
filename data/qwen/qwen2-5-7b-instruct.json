@@ -1,0 +1,79 @@
+{
+  "schema": 1,
+  "id": "Qwen/Qwen2.5-7B-Instruct",
+  "slug": "qwen-qwen2-5-7b-instruct",
+  "author": "Qwen",
+  "url": "https://huggingface.co/Qwen/Qwen2.5-7B-Instruct",
+  "created_at": "2024-09-16T11:55:40.000Z",
+  "updated_at": "2025-01-12T02:10:10.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen2",
+    "text-generation",
+    "chat",
+    "conversational",
+    "en",
+    "arxiv:2309.00071",
+    "arxiv:2407.10671",
+    "base_model:Qwen/Qwen2.5-7B",
+    "base_model:finetune:Qwen/Qwen2.5-7B",
+    "license:apache-2.0",
+    "eval-results",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "deploy:sagemaker",
+    "deploy:azure",
+    "region:us"
+  ],
+  "likes": 1564,
+  "downloads_30d": 10358924,
+  "trending_score": 7,
+  "parameters": 7615616512,
+  "parameters_human": "7.62B",
+  "storage_bytes": 15231271888,
+  "storage_human": "15.2 GB",
+  "base_model": "Qwen/Qwen2.5-7B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Qwen/Qwen2.5-7B-Instruct · Hugging Face",
+      "url": "https://huggingface.co/Qwen/Qwen2.5-7B-Instruct",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Qwen: Qwen2.5 7B Instruct - AI Model Details & Benchmarks",
+      "url": "https://benchable.ai/models/qwen/qwen-2.5-7b-instruct",
+      "snippet": "The model also exhibits strong reliability with a 91% success rate, indicating consistent and usable responses. In terms of specific capabilities, Qwen2.5 7B shows excellent performance in hallucination avoidance with 98.0% accuracy, suggesting a strong ability to acknowledge uncertainty."
+    },
+    {
+      "title": "unsloth/Qwen2.5-7B-Instruct · Hugging Face",
+      "url": "https://huggingface.co/unsloth/Qwen2.5-7B-Instruct",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Qwen: Qwen2.5 Coder 7B Instruct - AI Model Details & Benc...",
+      "url": "https://benchable.ai/models/qwen/qwen2.5-coder-7b-instruct",
+      "snippet": "Qwen2.5-Coder-7B-Instruct is a 7B parameter instruction-tuned language model optimized for code-related tasks such as code generation, reasoning, and bug fixing. Based on the Qwen2.5 architecture, it incorporates enhancements like RoPE,..."
+    },
+    {
+      "title": "LLM Model: Qwen2.5 7B Instruct by Qwen | Deepranking.ai",
+      "url": "https://deepranking.ai/llm-models/qwen2-5-7b-instruct",
+      "snippet": "Qwen2.5-7B-Instruct is a 7 billion parameter language model finely tuned to master instruction following. It demonstrates exceptional proficiency in creating extended content (over 8,000 tokens), interpreting structured information, and producing structured output formats such as JSON. This model offers improved performance in mathematical reasoning, coding tasks, and multilingual applications ..."
+    }
+  ]
+}

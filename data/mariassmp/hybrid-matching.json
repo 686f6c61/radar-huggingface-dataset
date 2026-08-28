@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "mariassmp/hybrid-matching",
+  "slug": "mariassmp-hybrid-matching",
+  "author": "mariassmp",
+  "url": "https://huggingface.co/mariassmp/hybrid-matching",
+  "created_at": "2026-08-28T16:58:35.000Z",
+  "updated_at": "2026-08-28T16:58:44.000Z",
+  "license": "bsd-3-clause",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "hybrid",
+    "pytorch",
+    "matching",
+    "license:bsd-3-clause",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 33088,
+  "parameters_human": "33088",
+  "storage_bytes": 132832,
+  "storage_human": "132832 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - nvnj/hybrid-skill-matching-system: hybrid semantic-ontological ...",
+      "url": "https://github.com/nvnj/hybrid-skill-matching-system",
+      "snippet": "This web application implements a hybrid semantic-ontological skill matching system based on 2024-2025 state-of-the-art research recommendations. Students can select multiple courses they have studied and receive personalized job recommendations based on skill alignment."
+    },
+    {
+      "title": "Microsoft Corporation (via Public) / Excited to bring OpenAI&#x27;s gpt-oss ...",
+      "url": "https://www.publicnow.com/view/BAF4AD99151A3E506294D808A9DA9F57F08CE731",
+      "snippet": "Excited to bring OpenAI&#x27;s gpt-oss models to Azure AI Foundry and to Windows via Foundry Local. It&#x27;s hybrid AI in action: mix and match models, optimize for performance and [...] Read this content"
+    },
+    {
+      "title": "GitHub - HDETR/H-Deformable-DETR: [CVPR2023] This is an official ...",
+      "url": "https://github.com/HDETR/H-Deformable-DETR",
+      "snippet": "H-Deformable-DETR This is the official implementation of the paper \"DETRs with Hybrid Matching\". Authors: Ding Jia, Yuhui Yuan, Haodi He, Xiaopei Wu, Haojun Yu, Weihong Lin, Lei Sun, Chao Zhang, Han Hu"
+    },
+    {
+      "title": "MSFS Model Matching — Kenco Aviation",
+      "url": "https://kencotv.uk/msfs-model-matching",
+      "snippet": "In my opinion, FS-Traffic is the highest detailed model matching that you can get on the Marketplace. Yes, there is a £26.99 ($39.99) price mark on it; which also includes their own AI Traffic Packages bringing airports to life with real schedules; but it&#x27;s the models I&#x27;ve paid for. This is priority number 1 in my vPilot, and includes over 66 different models/varients of aircraft with ..."
+    },
+    {
+      "title": "Match More, Extract Better! Hybrid Matching Model for Open Domain Web ...",
+      "url": "https://aclanthology.org/2024.findings-acl.2/",
+      "snippet": "To address this issue, in this paper, we propose a hybrid matching model for keyphrase extraction, which combines representation-focused and interaction-based matching modules into a unified framework for improving the performance of the keyphrase extraction task."
+    }
+  ]
+}

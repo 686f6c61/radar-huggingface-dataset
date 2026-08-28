@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "SHIKARI2/Malvos-7B-Instruct",
+  "slug": "shikari2-malvos-7b-instruct",
+  "author": "SHIKARI2",
+  "url": "https://huggingface.co/SHIKARI2/Malvos-7B-Instruct",
+  "created_at": "2026-08-28T13:35:52.000Z",
+  "updated_at": "2026-08-28T13:41:21.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen2",
+    "text-generation",
+    "text-generation-inference",
+    "unsloth",
+    "conversational",
+    "en",
+    "base_model:unsloth/Qwen2.5-Coder-7B-Instruct-bnb-4bit",
+    "base_model:finetune:unsloth/Qwen2.5-Coder-7B-Instruct-bnb-4bit",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 7615616512,
+  "parameters_human": "7.62B",
+  "storage_bytes": 15242693946,
+  "storage_human": "15.2 GB",
+  "base_model": "unsloth/Qwen2.5-Coder-7B-Instruct-bnb-4bit",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "model-hub/Mistral-7B-Instruct-v0.2 · Hugging Face",
+      "url": "https://huggingface.co/model-hub/Mistral-7B-Instruct-v0.2",
+      "snippet": "Model Card for Mistral-7B-Instruct-v0.2 The Mistral-7B-Instruct-v0.2 Large Language Model (LLM) is an improved instruct fine-tuned version of Mistral-7B-Instruct-v0.1. For full details of this model please read our paper and release blog post. Instruction format In order to leverage instruction fine-tuning, your prompt should be surrounded by [INST] and [/INST] tokens. The very first ..."
+    },
+    {
+      "title": "TheBloke/Mistral-7B-Instruct-v0.2-GGUF · Hugging Face",
+      "url": "https://huggingface.co/TheBloke/Mistral-7B-Instruct-v0.2-GGUF",
+      "snippet": "Mistral 7B Instruct v0.2 - GGUF Model creator: Mistral AI_ Original model: Mistral 7B Instruct v0.2 Description This repo contains GGUF format model files for Mistral AI_&#x27;s Mistral 7B Instruct v0.2. These files were quantised using hardware kindly provided by Massed Compute. About GGUF GGUF is a new format introduced by the llama.cpp team on August 21st 2023. It is a replacement for GGML ..."
+    },
+    {
+      "title": "Mistral 7B • LM Studio",
+      "url": "https://lmstudio.ai/models/mistralai/mistral-7b-instruct-v0.3",
+      "snippet": "One of the most popular open-source LLMs, Mistral&#x27;s 7B Instruct model&#x27;s balance of speed, size, and performance makes it a great general-purpose daily driver."
+    },
+    {
+      "title": "build.nvidia.com",
+      "url": "https://build.nvidia.com/mistralai/mistral-7b-instruct-v2.md",
+      "snippet": "It is an instruct version of the Mistral-7B-v0.2 generative text model fine-tuned using a variety of publicly available conversation datasets. ## Third-Party Community Consideration: This model is not owned or developed by NVIDIA."
+    },
+    {
+      "title": "GitHub - inferless/mistral-7b-instruct-v0.2: An 7B model with a 32k ...",
+      "url": "https://github.com/inferless/Mistral-7B-Instruct-v0.2/",
+      "snippet": "The Mistral-7B-Instruct-v0.2 Large Language Model (LLM) is an instruct fine-tuned version of the Mistral-7B-v0.2. This model outperforms other models like Llama 2 13B and Llama 1 34B on various benchmarks. Mistral 7B excels in tasks such as mathematics, code generation, and reasoning due to its innovative features like Grouped-query Attention (GQA) for faster inference and Sliding Window ..."
+    }
+  ]
+}

@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "samaikaimran/code-switching-codesaviours-si26-samaika",
+  "slug": "samaikaimran-code-switching-codesaviours-si26-samaika",
+  "author": "samaikaimran",
+  "url": "https://huggingface.co/samaikaimran/code-switching-codesaviours-si26-samaika",
+  "created_at": "2026-08-28T12:25:59.000Z",
+  "updated_at": "2026-08-28T12:26:33.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "token-classification",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "xlm-roberta",
+    "token-classification",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 277455363,
+  "parameters_human": "277.5M",
+  "storage_bytes": 1126943684,
+  "storage_human": "1.1 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "samaikaimran/code-switching-codesaviours-si26-samaika · Datasets at ...",
+      "url": "https://huggingface.co/datasets/samaikaimran/code-switching-codesaviours-si26-samaika",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "samaikaimran/code-switching-codesaviours-si26-samaika at main",
+      "url": "https://huggingface.co/datasets/samaikaimran/code-switching-codesaviours-si26-samaika/tree/main",
+      "snippet": "samaikaimran / code-switching-codesaviours-si26-samaika like 0 Modalities: Text Formats: csv Size: 1K - 10K Libraries: Datasets pandas Polars + 1 Dataset card Data Studio FilesFiles and versions xet Community main code-switching-codesaviours-si26-samaika 93.1 kB 1 contributor History:3 commits samaikaimran Create README.md 796bd12 verifiedabout ..."
+    },
+    {
+      "title": "GitHub - sumair789-lgtm/Code-switching-codesaviours-si26--Sumair-",
+      "url": "https://github.com/sumair789-lgtm/Code-switching-codesaviours-si26--Sumair-/tree/main",
+      "snippet": "Roman Urdu-English code-switching is how most Pakistanis actually write online, but almost no NLP tooling handles it well — models trained on \"clean\" English or Urdu break down on real mixed-language text. This project builds a labeled dataset for exactly this pattern and trains a model to tag each word by language, a building block for downstream tasks like sentiment analysis or search over ..."
+    },
+    {
+      "title": "GitHub - Hania-Emaan/code-switching-codesaviours-si26-Hania-Emaan: AI ...",
+      "url": "https://github.com/Hania-Emaan/code-switching-codesaviours-si26-Hania-Emaan",
+      "snippet": "Code-mixing between Roman Urdu and English is widely prevalent on social media, messaging platforms, and online forums across South Asia. Standard Natural Language Processing (NLP) models trained on monolingual data often struggle to process such text."
+    },
+    {
+      "title": "#nlp #urdunlp #machinelearning #ocr #codesaviours #si26 # ... - LinkedIn",
+      "url": "https://www.linkedin.com/posts/minahil-fatima-uae_nlp-urdunlp-machinelearning-activity-7494272904701075458-YdRa",
+      "snippet": "These projects gave me hands-on experience in Machine Learning, NLP, Python, OCR, Hugging Face, model evaluation, and deployment. 🔗 Urdu OCR: https://lnkd.in/dPVA9ifq 🔗 Code Switching Model ..."
+    }
+  ]
+}

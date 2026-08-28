@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "jjjlimaus/sn38-r7-2016-winner",
+  "slug": "jjjlimaus-sn38-r7-2016-winner",
+  "author": "jjjlimaus",
+  "url": "https://huggingface.co/jjjlimaus/sn38-r7-2016-winner",
+  "created_at": "2026-08-28T19:02:57.000Z",
+  "updated_at": "2026-08-28T19:10:26.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "sn38-nanoexpand",
+    "text-generation",
+    "sn38",
+    "bittensor",
+    "chronollm",
+    "year-cutoff",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 2198342018,
+  "parameters_human": "2.20B",
+  "storage_bytes": 4396708876,
+  "storage_human": "4.4 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": true,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "jjjlimaus (Lima) - Hugging Face",
+      "url": "https://huggingface.co/jjjlimaus",
+      "snippet": "jjjlimaus/chrono2014-finance2015-ft3 2B•Updated 1 day ago• 4 View 17 models datasets27 Sort: Recently updated"
+    },
+    {
+      "title": "jjjlimaus (Lima) - Hugging Face",
+      "url": "https://huggingface.co/jjjlimaus/datasets",
+      "snippet": "jjjlimaus&#x27;s datasets26 Sort: Recently updated jjjlimaus/sn38-quality-gold-100k Viewer •Updated 2 days ago•5.04M• 141"
+    },
+    {
+      "title": "character.ai | AI Chat, Reimagined-Your Words. Your World.",
+      "url": "https://character.ai/",
+      "snippet": "Chat with millions of AI Characters on the #1 AI chat app. Where will your next adventure take you?"
+    },
+    {
+      "title": "sn38/README.md at main · chronollm/sn38 · GitHub",
+      "url": "https://github.com/chronollm/sn38/blob/main/README.md",
+      "snippet": "SN38 — ChronoLLM Bittensor Subnet 38 — Competitive training of chronologically consistent Large Language Models. Currently in testing phase on mainnet."
+    },
+    {
+      "title": "WINNER II Channel Model for Communications Toolbox",
+      "url": "https://www.mathworks.com/matlabcentral/fileexchange/59690-winner-ii-channel-model-for-communications-toolbox",
+      "snippet": "Using WINNER II channel models, you can model and simulate spatially-defined channels for multi-user MIMO wireless systems. You can specify an arbitrary number of base stations (BS) and mobile stations (MS) together with their geometry and location information."
+    }
+  ]
+}

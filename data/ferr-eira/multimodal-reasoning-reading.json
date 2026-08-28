@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "ferr-eira/multimodal-reasoning-reading",
+  "slug": "ferr-eira-multimodal-reasoning-reading",
+  "author": "ferr-eira",
+  "url": "https://huggingface.co/ferr-eira/multimodal-reasoning-reading",
+  "created_at": "2026-08-28T16:15:11.000Z",
+  "updated_at": "2026-08-28T16:15:19.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "transformer",
+    "research-notes",
+    "multimodal-reasoning",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 24832,
+  "parameters_human": "24832",
+  "storage_bytes": 99808,
+  "storage_human": "99808 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Daily Papers - Hugging Face",
+      "url": "https://huggingface.co/papers?q=Multimodal+reasoning",
+      "snippet": "We introduce VisualPRM, an advanced multimodal Process Reward Model (PRM) with 8B parameters, which improves the reasoning abilities of existing Multimodal Large Language Models (MLLMs) across different model scales and families with Best-of-N (BoN) evaluation strategies."
+    },
+    {
+      "title": "GitHub - jluite/Awesome-Multimodal-Reasoning: Collection of papers and ...",
+      "url": "https://github.com/jluite/Awesome-Multimodal-Reasoning",
+      "snippet": "Collection of papers and resources on how to unlock reasoning abilities under multimodal settings. Animation from ViperGPT (Surís et al.) Consider how difficult it would be to study from a book that lacks any figures, diagrams or tables. We enhance our learning ability when we combine different data modalities, such as vision, language, and audio [1]. Recently, large language models (LLMs ..."
+    },
+    {
+      "title": "LLM Leaderboard 2026: Compare 300+ Top AI Models by Intelligence, Speed ...",
+      "url": "https://llm-stats.com/leaderboards/llm-leaderboard",
+      "snippet": "The LLM Leaderboard — independent ranking of GPT, Claude, Gemini, Llama, DeepSeek and 300+ AI models by intelligence, speed and price. Filter by provider, license, modality and context window; sort by every benchmark. Composite LLM Stats Score updated continuously from public benchmarks and live API metrics."
+    },
+    {
+      "title": "New AI Model Releases (Last 24 Hours) — Live Tracker | BenchLM",
+      "url": "https://benchlm.ai/model-updates",
+      "snippet": "Every new AI model release, tracked live: last 24 hours, this week, and 161 confirmed launches from 46 providers — each with source evidence and benchmarks."
+    },
+    {
+      "title": "[2505.04921] Perception, Reason, Think, and Plan: A Survey on Large ...",
+      "url": "https://arxiv.org/abs/2505.04921",
+      "snippet": "Reasoning lies at the heart of intelligence, shaping the ability to make decisions, draw conclusions, and generalize across domains. In artificial intelligence, as systems increasingly operate in open, uncertain, and multimodal environments, reasoning becomes essential for enabling robust and adaptive behavior. Large Multimodal Reasoning Models (LMRMs) have emerged as a promising paradigm ..."
+    }
+  ]
+}

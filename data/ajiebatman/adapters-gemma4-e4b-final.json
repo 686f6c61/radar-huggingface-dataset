@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "ajiebatman/adapters-gemma4-e4b-final",
+  "slug": "ajiebatman-adapters-gemma4-e4b-final",
+  "author": "ajiebatman",
+  "url": "https://huggingface.co/ajiebatman/adapters-gemma4-e4b-final",
+  "created_at": "2026-08-28T17:34:15.000Z",
+  "updated_at": "2026-08-28T17:34:16.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 22853136,
+  "storage_human": "23 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "google/gemma-4-E4B · Hugging Face",
+      "url": "https://huggingface.co/google/gemma-4-E4B",
+      "snippet": "Transparency and Accountability This model card summarizes details on the models&#x27; architecture, capabilities, limitations, and evaluation processes. A responsibly developed open model offers the opportunity to share innovation by making VLM technology accessible to developers and researchers across the AI ecosystem. Risks identified and ..."
+    },
+    {
+      "title": "Adapter Models for google/gemma-4-E4B - Hugging Face",
+      "url": "https://huggingface.co/models?other=base_model:adapter:google/gemma-4-E4B",
+      "snippet": "Explore machine learning models. emilcw/gemma4-e4b-nb-saga-kl-sft-delta-dpo"
+    },
+    {
+      "title": "Gemma 4 — Google DeepMind",
+      "url": "https://deepmind.google/models/gemma/gemma-4/",
+      "snippet": "Gemma 4 models undergo the same rigorous infrastructure security protocols as our proprietary models. By choosing Gemma 4, enterprises and sovereign organizations gain a trusted, transparent foundation that delivers state-of-the-art capabilities while meeting the highest standards for security and reliability."
+    },
+    {
+      "title": "gemma4:e4b - ollama.com",
+      "url": "https://ollama.com/library/gemma4:e4b",
+      "snippet": "Gemma 4 models are designed to deliver frontier-level performance at each size. They are well-suited for reasoning, agentic workflows, coding, and multimodal understanding."
+    },
+    {
+      "title": "jetson-ai-lab/src/content/models/gemma4-e4b.md at main - GitHub",
+      "url": "https://github.com/NVIDIA-AI-IOT/jetson-ai-lab/blob/main/src/content/models/gemma4-e4b.md",
+      "snippet": "Google&#x27;s model card describes E4B as a dense multimodal model with 4.5B effective parameters and 8B parameters including embeddings. It supports 128K context, text/image/audio input, function calling, and configurable thinking mode. In Google&#x27;s published benchmark table, E4B lands well above E2B on reasoning, coding, and vision tasks, making it the better general-purpose edge choice when ..."
+    }
+  ]
+}

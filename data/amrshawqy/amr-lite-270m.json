@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "amrshawqy/amr-lite-270m",
+  "slug": "amrshawqy-amr-lite-270m",
+  "author": "amrshawqy",
+  "url": "https://huggingface.co/amrshawqy/amr-lite-270m",
+  "created_at": "2026-08-28T17:12:45.000Z",
+  "updated_at": "2026-08-28T17:15:26.000Z",
+  "license": "gemma",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers.js",
+  "languages": [
+    "en",
+    "ar"
+  ],
+  "tags": [
+    "transformers.js",
+    "onnx",
+    "gemma3_text",
+    "text-generation",
+    "gemma3",
+    "on-device",
+    "conversational",
+    "en",
+    "ar",
+    "base_model:google/gemma-3-270m-it",
+    "base_model:quantized:google/gemma-3-270m-it",
+    "license:gemma",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 744008187,
+  "storage_human": "744 MB",
+  "base_model": "google/gemma-3-270m-it",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Deploy a fine tuned Gemma 270m model with the Google AI Edge stack",
+      "url": "https://developers.google.com/edge/litert-lm/tutorials/convert-and-run",
+      "snippet": "This tutorial walks you through the end-to-end process of deploying a customized Gemma model in an Android sample app. In this tutorial, we will: Start with a fine tuned model Convert the fine tuned model with the AI Edge Torch library This will convert the HuggingFace checkpoint to a .litertlm file Evaluate the quality of the fine tuned model Run the adb commands to push the custom model to a ..."
+    },
+    {
+      "title": "Gemma 3 270M: Run AI in 125MB - Google&#x27;s Tiniest Model (2025) | Local ...",
+      "url": "https://localaimaster.com/models/gemma-3-270m",
+      "snippet": "Gemma 3 270M: Google&#x27;s Tiniest AI That Runs in 125MB Ultra-compact 270M parameter model designed for edge devices. Runs on phones, IoT devices, and Raspberry Pi with 125MB RAM (INT4). 51.2% IFEval score, trained on 6T tokens, 0.75% battery usage per 25 conversations. Purpose-built for task-specific fine-tuning."
+    },
+    {
+      "title": "google/functiongemma-270m-it at main - Hugging Face",
+      "url": "https://huggingface.co/google/functiongemma-270m-it/tree/main",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "amrshawqy (Amr Shawqy) - Hugging Face",
+      "url": "https://huggingface.co/amrshawqy/models",
+      "snippet": "User profile of Amr Shawqy on Hugging Face"
+    },
+    {
+      "title": "Google Launches Gemma 3 270M, Its Smallest and Most Efficient AI Model",
+      "url": "https://www.hirecade.com/blog/gemma-3-270m",
+      "snippet": "Google has expanded its Gemma family of open AI models with the release of Gemma 3 270M, a lightweight, hyper-efficient system designed for task-specific AI. With just 270 million parameters, the model is the smallest in the Gemma 3 lineup but aims to deliver outsized performance in energy efficiency, fine-tuning speed, and deployment flexibility. Compact Design With a Big Vocabulary Gemma 3 ..."
+    }
+  ]
+}

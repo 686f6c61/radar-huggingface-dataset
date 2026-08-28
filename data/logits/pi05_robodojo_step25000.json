@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "logits/pi05_robodojo_step25000",
+  "slug": "logits-pi05_robodojo_step25000",
+  "author": "logits",
+  "url": "https://huggingface.co/logits/pi05_robodojo_step25000",
+  "created_at": "2026-08-28T14:26:42.000Z",
+  "updated_at": "2026-08-28T14:28:10.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "robotics",
+    "pi05",
+    "robodojo",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 4933375760,
+  "parameters_human": "4.93B",
+  "storage_bytes": 19733628792,
+  "storage_human": "19.7 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "logits/pi05_robodojo_step20000 · Hugging Face",
+      "url": "https://huggingface.co/logits/pi05_robodojo_step20000",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "π₀.₅ (Pi05) Policy · Hugging Face",
+      "url": "https://huggingface.co/docs/lerobot/pi05",
+      "snippet": "π₀.₅ (Pi05) Policy π₀.₅ is a Vision-Language-Action model with open-world generalization, from Physical Intelligence. The LeRobot implementation is adapted from their open source OpenPI repository. Model Overview π₀.₅ represents a significant evolution from π₀, developed by Physical Intelligence to address a big challenge in robotics: open-world generalization. While robots ..."
+    },
+    {
+      "title": "GitHub - RoboDojo-Benchmark/RoboDojo: RoboDojo Official Repo",
+      "url": "https://github.com/robodojo-benchmark/RoboDojo",
+      "snippet": "RoboDojo is eval-only in this release: it provides the simulator client, benchmark tasks, asset/config validation, and result artifacts. Policy integration and policy servers are owned by XPolicyLab. 🌐 Unified sim-and-real benchmark — 42 simulation tasks and 18 real-world tasks across 3 robot embodiments for generalist robot manipulation."
+    },
+    {
+      "title": "π0.5: VLA Model for Open-World Robots | PDF - Scribd",
+      "url": "https://www.scribd.com/document/885305547/pi05",
+      "snippet": "The π0.5 model is a vision-language-action system designed for robots to perform complex tasks in new environments, leveraging diverse data sources for broad generalization. It combines training from multiple robots, high-level semantic predictions, and web data to enable mobile manipulators to execute long-horizon manipulation tasks, such as cleaning kitchens and bedrooms. This approach ..."
+    },
+    {
+      "title": "[2504.16054] $π_ {0.5}$: a Vision-Language-Action Model with Open-World ...",
+      "url": "https://arxiv.org/abs/2504.16054",
+      "snippet": "In order for robots to be useful, they must perform practically relevant tasks in the real world, outside of the lab. While vision-language-action (VLA) models have demonstrated impressive results for end-to-end robot control, it remains an open question how far such models can generalize in the wild. We describe $π_{0.5}$, a new model based on $π_{0}$ that uses co-training on heterogeneous ..."
+    }
+  ]
+}

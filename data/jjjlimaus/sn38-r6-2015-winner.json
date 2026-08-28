@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "jjjlimaus/sn38-r6-2015-winner",
+  "slug": "jjjlimaus-sn38-r6-2015-winner",
+  "author": "jjjlimaus",
+  "url": "https://huggingface.co/jjjlimaus/sn38-r6-2015-winner",
+  "created_at": "2026-08-28T19:22:29.000Z",
+  "updated_at": "2026-08-28T19:26:49.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "sn38-nanochrono",
+    "text-generation",
+    "sn38",
+    "bittensor",
+    "chronollm",
+    "year-cutoff",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 2018511234,
+  "parameters_human": "2.02B",
+  "storage_bytes": 6312460296,
+  "storage_human": "6.3 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": true,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "jjjlimaus (Lima) - Hugging Face",
+      "url": "https://huggingface.co/jjjlimaus",
+      "snippet": "jjjlimaus/chrono2014-finance2015-ft3 2B•Updated 1 day ago• 4 View 17 models datasets27 Sort: Recently updated"
+    },
+    {
+      "title": "jjjlimaus (Lima) - Hugging Face",
+      "url": "https://huggingface.co/jjjlimaus/datasets",
+      "snippet": "jjjlimaus&#x27;s datasets26 Sort: Recently updated jjjlimaus/sn38-quality-gold-100k Viewer •Updated 2 days ago•5.04M• 141"
+    },
+    {
+      "title": "Best LLM Leaderboard 2026 | AI Model Rankings, Benchmarks & Pricing",
+      "url": "https://onyx.app/llm-leaderboard",
+      "snippet": "The definitive LLM leaderboard — ranking the best AI models including Claude, GPT, Gemini, DeepSeek, Llama, and more across coding, reasoning, math, agentic, and chat benchmarks. Compare LLM rankings, tier lists, and pricing."
+    },
+    {
+      "title": "SN38: ChronoLLM - GitHub",
+      "url": "https://github.com/chronollm/sn38",
+      "snippet": "Contribute to chronollm/sn38 development by creating an account on GitHub."
+    },
+    {
+      "title": "sn38/README.md at main · chronollm/sn38 · GitHub",
+      "url": "https://github.com/chronollm/sn38/blob/main/README.md",
+      "snippet": "Standard LLMs are trained on data from all time periods. When used for financial backtesting or historical analysis, they suffer from lookahead bias — the model \"knows\" things that weren&#x27;t known at the time being analyzed. A model asked to predict 2015 market trends has already seen the 2020 crash."
+    }
+  ]
+}

@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "sojeong-grotto/omx_act_policy",
+  "slug": "sojeong-grotto-omx_act_policy",
+  "author": "sojeong-grotto",
+  "url": "https://huggingface.co/sojeong-grotto/omx_act_policy",
+  "created_at": "2026-08-28T12:20:12.000Z",
+  "updated_at": "2026-08-28T12:21:22.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "robotics",
+    "act",
+    "dataset:sojeong-grotto/record-pick-can-test",
+    "arxiv:2304.13705",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 51668614,
+  "parameters_human": "51.7M",
+  "storage_bytes": 206706296,
+  "storage_human": "207 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "kimy0420/omx_act_policy · Hugging Face",
+      "url": "https://huggingface.co/kimy0420/omx_act_policy",
+      "snippet": "Instructions to use kimy0420/omx_act_policy with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Libraries LeRobot How to use kimy0420/omx_act_policy with LeRobot: Notebooks Google Colab Kaggle Model Card for act How to Get Started with the Model Train from scratch Evaluate the policy/run inference ..."
+    },
+    {
+      "title": "asd0821-omx_act_policy/README.md at main - GitHub",
+      "url": "https://github.com/Damacol/asd0821-omx_act_policy/blob/main/README.md",
+      "snippet": "ASD0821/omx_act_policy - Private, Uncensored AI for Real Creators and Devs Run {MODEL} privately with zero tracking. Optimized for developers and creators who demand full control over their AI workflow."
+    },
+    {
+      "title": "ACT (Action Chunking with Transformers) · Hugging Face",
+      "url": "https://huggingface.co/docs/lerobot/act",
+      "snippet": "ACT (Action Chunking with Transformers) ACT is a lightweight and efficient policy for imitation learning, especially well-suited for fine-grained manipulation tasks. It&#x27;s the first model we recommend when you&#x27;re starting out with LeRobot due to its fast training time, low computational requirements, and strong performance."
+    },
+    {
+      "title": "omx_act_policy_bimanualPipe01 · policy | Festivus",
+      "url": "https://festivus.hapticlabs.ai/data/policies/seok7ee-omx-act-policy-bimanualpipe01",
+      "snippet": "The open platform for building, researching, and shipping in Physical AI."
+    },
+    {
+      "title": "Damacol/asd0821-omx_act_policy - GitHub",
+      "url": "https://github.com/Damacol/asd0821-omx_act_policy",
+      "snippet": "ASD0821/omx_act_policy - Private, Uncensored AI for Real Creators and Devs Run {MODEL} privately with zero tracking. Optimized for developers and creators who demand full control over their AI workflow."
+    }
+  ]
+}

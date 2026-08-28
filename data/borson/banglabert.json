@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "Borson/BanglaBERT",
+  "slug": "borson-banglabert",
+  "author": "Borson",
+  "url": "https://huggingface.co/Borson/BanglaBERT",
+  "created_at": "2026-08-28T19:04:04.000Z",
+  "updated_at": "2026-08-28T19:04:27.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "electra",
+    "sentiment-analysis",
+    "bangla",
+    "fine-tuned",
+    "bert",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 110619651,
+  "parameters_human": "110.6M",
+  "storage_bytes": 442502748,
+  "storage_human": "443 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - csebuetnlp/banglabert: This repository contains the official ...",
+      "url": "https://github.com/csebuetnlp/banglabert",
+      "snippet": "This repository contains the official release of the model \"BanglaBERT\" and associated downstream fine-tuning code and datasets introduced in the paper titled \"BanglaBERT: Language Model Pretraining and Benchmarks for Low-Resource Language Understanding Evaluation in Bangla\" published in Findings of the Association for Computational Linguistics: NAACL 2022."
+    },
+    {
+      "title": "Borson (Minhajul Islam Borson) - Hugging Face",
+      "url": "https://huggingface.co/Borson",
+      "snippet": "AI & ML interests ... Recent Activity updated a model about 15 hours ago ... published a model about 15 hours ago"
+    },
+    {
+      "title": "csebuetnlp/banglabert · Hugging Face",
+      "url": "https://huggingface.co/csebuetnlp/banglabert",
+      "snippet": "This repository contains the pretrained discriminator checkpoint of the model BanglaBERT. This is an ELECTRA discriminator model pretrained with the Replaced Token Detection (RTD) objective. Finetuned models using this checkpoint achieve state-of-the-art results on many of the NLP tasks in bengali."
+    },
+    {
+      "title": "banglabert/README.md at master · csebuetnlp/banglabert · GitHub",
+      "url": "https://github.com/csebuetnlp/banglabert/blob/master/README.md",
+      "snippet": "The pretrained model checkpoints are available at Huggingface model hub. BanglaBERT BanglishBERT BanglaBERT (small) BanglaBERT (large) To use these models for the supported downstream tasks in this repository see Training & Evaluation. Note: These models were pretrained using a specific normalization pipeline available here. All finetuning scripts in this repository uses this normalization by ..."
+    },
+    {
+      "title": "csebuetnlp/banglabert - AI Model Zoo - BimAnt",
+      "url": "https://zoo.bimant.com/model/12747",
+      "snippet": "This repository contains the pretrained discriminator checkpoint of the model BanglaBERT. This is an ELECTRA discriminator model pretrained with the Replaced Token Detection (RTD) objective. Finetuned models using this checkpoint achieve state-of-the-art results on many of the NLP tasks in bengali."
+    }
+  ]
+}

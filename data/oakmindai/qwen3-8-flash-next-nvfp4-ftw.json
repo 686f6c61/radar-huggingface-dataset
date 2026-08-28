@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "oakmindai/Qwen3.8-Flash-Next-NVFP4-FTW",
+  "slug": "oakmindai-qwen3-8-flash-next-nvfp4-ftw",
+  "author": "oakmindai",
+  "url": "https://huggingface.co/oakmindai/Qwen3.8-Flash-Next-NVFP4-FTW",
+  "created_at": "2026-08-28T11:17:49.000Z",
+  "updated_at": "2026-08-28T14:19:37.000Z",
+  "license": "qwen-community-1.0",
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "freetoken",
+  "languages": [],
+  "tags": [
+    "freetoken",
+    "qwen4_exp",
+    "qwen",
+    "qwen3.8",
+    "modelopt",
+    "nvfp4",
+    "quantized",
+    "sparklab",
+    "ftw",
+    "text-generation",
+    "conversational",
+    "base_model:Inferact/Qwen3.8-Flash-Next-NVFP4",
+    "base_model:quantized:Inferact/Qwen3.8-Flash-Next-NVFP4",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 180445918312,
+  "storage_human": "180.4 GB",
+  "base_model": "Inferact/Qwen3.8-Flash-Next-NVFP4, Qwen/Qwen3.8-Flash-Next",
+  "formats": [],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - QwenLM/Qwen3.8-Flash-Next: Qwen3.8-Flash-Next is the ...",
+      "url": "https://github.com/QwenLM/Qwen3.8-Flash-Next/",
+      "snippet": "Qwen3.8-Flash-Next upgrades the model systematically along four aspects — attention, residual, embedding and optimization — improving model capability while further optimizing computational efficiency, model capacity and training stability: Attention A GDN + QSA hybrid architecture."
+    },
+    {
+      "title": "Qwen/Qwen3.8-Flash-Next · Hugging Face",
+      "url": "https://huggingface.co/Qwen/Qwen3.8-Flash-Next",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Qwen/Qwen3.8-Flash-Next | vLLM Recipes - recipes.vllm.ai",
+      "url": "https://recipes.vllm.ai/Qwen/Qwen3.8-Flash-Next",
+      "snippet": "Qwen4 architecture preview with a 125B-parameter main model, supplemented by an additional 51B N-gram embeddings, with 6B parameters activated per token."
+    },
+    {
+      "title": "Qwen3.8 | OpenLM.ai",
+      "url": "https://openlm.ai/qwen3.8/",
+      "snippet": "We are officially releasing Qwen 3.8-Max, the most capable model in the Qwen family to date. This also marks the first time we will open-source the weights of a Qwen-Max-class model. Built upon the architectural foundation of Qwen 3.5, Qwen 3.8-Max scales to 2.4 trillion parameters, delivering comprehensive improvements across coding, work, research, and long-horizon tasks."
+    },
+    {
+      "title": "Qwen3.8-Flash-Next - DGX Spark / GB10 - NVIDIA Developer Forums",
+      "url": "https://forums.developer.nvidia.com/t/qwen3-8-flash-next/381228",
+      "snippet": "Qwen3.8-Flash-Next is a multimodal MoE model. It pairs a large parameter count with a smaller active count per token, plus a huge n-gram embedding table for fast local token lookups, on top of GDN and QSA mechanisms."
+    }
+  ]
+}

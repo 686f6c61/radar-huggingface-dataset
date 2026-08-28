@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "Tort-AI/GLM-5.3",
+  "slug": "tort-ai-glm-5-3",
+  "author": "Tort-AI",
+  "url": "https://huggingface.co/Tort-AI/GLM-5.3",
+  "created_at": "2026-08-28T15:30:29.000Z",
+  "updated_at": "2026-08-28T15:30:29.000Z",
+  "license": "glm-5.3",
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "glm_moe_dsa",
+    "text-generation",
+    "conversational",
+    "en",
+    "zh",
+    "arxiv:2602.15763",
+    "license:other",
+    "eval-results",
+    "endpoints_compatible",
+    "fp8",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 753329940480,
+  "parameters_human": "753.33B",
+  "storage_bytes": 755663627013,
+  "storage_human": "755.7 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GLM-5.3 Benchmarks & Speed (August 2026) | BenchLM.ai",
+      "url": "https://benchlm.ai/models/glm-5-3",
+      "snippet": "GLM-5.3 is a proprietary model with a 1M context window. It uses an explicit reasoning mode, which can improve complex problem solving while adding latency and token use."
+    },
+    {
+      "title": "GLM-5.3: Frontier Coding with Emergent Cyber Capabilities - z.ai",
+      "url": "https://z.ai/blog/glm-5.3",
+      "snippet": "Today we are releasing GLM-5.3. It uses the same base model as GLM-5.2 — every gain comes from post-training. Compared with GLM-5.2, it is much better at complex coding and long-horizon tasks: Stronger Coding: GLM-5.3 is the most capable open-weights model for coding, with a 50% improvement over GLM-5.2 on our in-house Z.ai Code Bench."
+    },
+    {
+      "title": "GLM-5.3: Specs, API, Pricing and Benchmarks - glm-ai.chat",
+      "url": "https://glm-ai.chat/models/glm-5-3/",
+      "snippet": "Explore GLM-5.3 specifications, Z.ai API access, pricing, reasoning behavior, Coding Plan support, benchmark context and weights status."
+    },
+    {
+      "title": "GLM-5.3 - Overview - Z.AI DEVELOPER DOCUMENT",
+      "url": "https://docs.z.ai/guides/llm/glm-5.3",
+      "snippet": "Overview GLM-5.3 is Z.ai&#x27;s latest flagship model, delivering comprehensive advancements in complex software engineering and agent capabilities. It uses the same base model as GLM-5.2, with all improvements driven by post-training. Compared with GLM-5.2, it delivers significantly stronger performance in complex programming and long-horizon tasks: Stronger Coding Capability GLM-5.3 delivers a ..."
+    },
+    {
+      "title": "GLM-5.3: Post-Training Produced Exploit Chains Z.ai Never Planned ...",
+      "url": "https://www.techtimes.com/articles/324426/20260814/glm-53-post-training-produced-exploit-chains-zai-never-planned-finds-1097-critical-bugs.htm",
+      "snippet": "GLM-5.3, released August 14, developed exploit-chain reasoning Z.ai says its post-training produced without intent, finding 1,097 critical vulnerabilities in Linux, WebKit, and FreeBSD. Weights ..."
+    }
+  ]
+}

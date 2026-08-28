@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "pngwn/memcap-l-below-capacity",
+  "slug": "pngwn-memcap-l-below-capacity",
+  "author": "pngwn",
+  "url": "https://huggingface.co/pngwn/memcap-l-below-capacity",
+  "created_at": "2026-08-28T14:43:03.000Z",
+  "updated_at": "2026-08-28T14:48:23.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "gpt2",
+    "memorization",
+    "capacity",
+    "from-scratch",
+    "reproduction",
+    "arxiv:2505.24832",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 8438784,
+  "parameters_human": "8.4M",
+  "storage_bytes": 33767408,
+  "storage_human": "34 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ICLR 2026 Papers",
+      "url": "https://iclr.cc/virtual/2026/papers.html?filter=author&search=Ruijun%20Huang",
+      "snippet": "Scalable Offline Model-Based RL with Action Chunks Multi-state Protein Sequence Design with DynamicMPNN 3DGEER: 3D Gaussian Rendering Made Exact and Efficient for Generic Cameras SR-Scientist: Scientific Equation Discovery With Agentic AI Binomial Gradient-Based Meta-Learning for Enhanced Meta-Gradient Estimation"
+    },
+    {
+      "title": "Enabling Low-Power Charge-Domain Nonvolatile Computing ... - ResearchGate",
+      "url": "https://www.researchgate.net/publication/378570716_Enabling_Low-Power_Charge-Domain_Nonvolatile_Computing-in-Memory_CIM_With_Ferroelectric_Memcapacitor",
+      "snippet": "The explosive growth in data-centric computing driven by artificial intelligence (AI) and big data has surpassed the capabilities of the traditional von Neumann architecture. The architectural ..."
+    },
+    {
+      "title": "Google",
+      "url": "https://www.google.com/",
+      "snippet": "Search the world&#x27;s information, including webpages, images, videos and more. Google has many special features to help you find exactly what you&#x27;re looking for."
+    },
+    {
+      "title": "GitHub - nelsonramosua/miniAI: Feed-forward neural network in pure C ...",
+      "url": "https://github.com/nelsonramosua/miniAI",
+      "snippet": "miniAI is an educational implementation of an artificial neural network built entirely from scratch in pure C, with no external machine learning library dependencies. The project demonstrates the fundamentals of deep learning through a complete feed-forward architecture, including forward propagation, backpropagation, L2 regularization, gradient clipping, and hyperparameter optimization."
+    },
+    {
+      "title": "MCAP: Deployment-Time Layer Profiling for Memory-Constrained LLM Inference",
+      "url": "https://arxiv.org/pdf/2604.21026",
+      "snippet": "Abstract Deploying large language models to heterogeneous hardware is constrained by memory, not compute: a 4-bit 8B model still requires ∼5-6 GB of resident VRAM, ruling out most consumer GPUs, mobile accelerators, and older cloud silicon. Existing post-training quantization fixes the precision choice at calibration time, so the set of devices on which a given quantized model is viable is ..."
+    }
+  ]
+}

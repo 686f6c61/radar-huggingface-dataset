@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "bobtehbuilder/tds-ga8-carbon-81878357dbe8",
+  "slug": "bobtehbuilder-tds-ga8-carbon-81878357dbe8",
+  "author": "bobtehbuilder",
+  "url": "https://huggingface.co/bobtehbuilder/tds-ga8-carbon-81878357dbe8",
+  "created_at": "2026-08-28T18:09:01.000Z",
+  "updated_at": "2026-08-28T18:09:02.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "co2_eq_emissions",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "bobtehbuilder/tds-ga8-carbon-08e493cb95c2 · Hugging Face",
+      "url": "https://huggingface.co/bobtehbuilder/tds-ga8-carbon-08e493cb95c2",
+      "snippet": "bobtehbuilder / tds-ga8-carbon-08e493cb95c2 like 0 Carbon Emissions Model card FilesFiles and versions xet Community Copy to bucket new TDS GA8 — Green AI Carbon Accounting"
+    },
+    {
+      "title": "bobtehbuilder/tds-ga8-carbon-2e4f994e4d15 · Hugging Face",
+      "url": "https://huggingface.co/bobtehbuilder/tds-ga8-carbon-2e4f994e4d15",
+      "snippet": "bobtehbuilder / tds-ga8-carbon-2e4f994e4d15 like 0 Carbon Emissions Model card FilesFiles and versions xet Community Copy to bucket new TDS GA8 — Green AI Carbon Accounting"
+    },
+    {
+      "title": "GitHub - 22f3001797/tds-ga8",
+      "url": "https://github.com/22f3001797/tds-ga8",
+      "snippet": "Contribute to 22f3001797/tds-ga8 development by creating an account on GitHub."
+    },
+    {
+      "title": "Hyper3D Rodin - Best AI 3D Model Generator",
+      "url": "https://hyper3d.ai/",
+      "snippet": "Meet Hyper3D, the world&#x27;s highest-quality, most controllable AI 3D model generator. Turn text prompts or images into detailed 3D assets in seconds — no 3D experience required."
+    },
+    {
+      "title": "GitHub - llEclipsell/tds-ga8",
+      "url": "https://github.com/llEclipsell/tds-ga8",
+      "snippet": "Contribute to llEclipsell/tds-ga8 development by creating an account on GitHub."
+    }
+  ]
+}

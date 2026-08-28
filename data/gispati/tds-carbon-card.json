@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "Gispati/tds-carbon-card",
+  "slug": "gispati-tds-carbon-card",
+  "author": "Gispati",
+  "url": "https://huggingface.co/Gispati/tds-carbon-card",
+  "created_at": "2026-08-28T17:47:49.000Z",
+  "updated_at": "2026-08-28T18:03:21.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "co2_eq_emissions",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "i-shashikant/tds-carbon-card · Hugging Face",
+      "url": "https://huggingface.co/i-shashikant/tds-carbon-card",
+      "snippet": "Model Card - Green AI Carbon Accounting This repository documents the carbon footprint and energy accounting for the assigned model training run in TDS GA8."
+    },
+    {
+      "title": "Obaid2026/tds-carbon-card · Hugging Face",
+      "url": "https://huggingface.co/Obaid2026/tds-carbon-card",
+      "snippet": "Model Card - Green AI Carbon Accounting This repository documents the carbon footprint and energy accounting for the assigned model training run in TDS GA8."
+    },
+    {
+      "title": "Model cards — Google DeepMind",
+      "url": "https://deepmind.google/models/model-cards/",
+      "snippet": "Model cards Simple, structured overviews of how an advanced AI model was designed and evaluated."
+    },
+    {
+      "title": "Applied Model Card - Applied Model Card | CHAI",
+      "url": "https://www.chai.org/workgroup/applied-model",
+      "snippet": "Applied Model Card documentation, templates, and examples now live on the CHAI Registry. Visit the Registry for the latest resources, a completed example, and guidance on adopting model cards in your organization."
+    },
+    {
+      "title": "praptidethe11 / Green-AI-Carbon-Tracker Public - GitHub",
+      "url": "https://github.com/praptidethe11/Green-AI-Carbon-Tracker",
+      "snippet": "Tracks and predicts carbon emissions using real-world data - praptidethe11/Green-AI-Carbon-Tracker"
+    }
+  ]
+}

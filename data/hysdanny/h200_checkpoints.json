@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "hysdanny/h200_checkpoints",
+  "slug": "hysdanny-h200_checkpoints",
+  "author": "hysdanny",
+  "url": "https://huggingface.co/hysdanny/h200_checkpoints",
+  "created_at": "2026-04-17T05:21:30.000Z",
+  "updated_at": "2026-08-28T14:07:19.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 2453431312301,
+  "storage_human": "2453.4 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "hysdanny/h200_checkpoints · Hugging Face",
+      "url": "https://huggingface.co/hysdanny/h200_checkpoints",
+      "snippet": "hysdanny / h200_checkpoints like 1 Safetensors Model card FilesFiles and versions xet Community Copy to bucket new No model card Downloads last month -"
+    },
+    {
+      "title": "hysdanny (Yushuo Hou) - Hugging Face",
+      "url": "https://huggingface.co/hysdanny",
+      "snippet": "Recent Activity updated a model4 days ago hysdanny/h200_checkpoints updated a datasetabout 2 months ago hysdanny/last0-train-data updated a modelabout 2 months ago hysdanny/h200_checkpoints View all activity"
+    },
+    {
+      "title": "GitHub - bapedragon/IBAM_KD_H200_V2",
+      "url": "https://github.com/bapedragon/IBAM_KD_H200_V2",
+      "snippet": "IBAM KD H200 V2 Clean H200 experiment repository for CNN-to-ViT knowledge-distillation experiments. The repository is being rebuilt from the teacher stage so that LG, ALG, and Ours use the same low-resolution CNN guidance teacher."
+    },
+    {
+      "title": "dynamo-public/docs/fern/pages/recipes/model-recipes/deepseek ... - GitHub",
+      "url": "https://github.com/coderchem/dynamo-public/blob/main/docs/fern/pages/recipes/model-recipes/deepseek-v4-pro.mdx",
+      "snippet": "H200 is a secondary/best-effort lane on the public FP8 checkpoint at max_model_len=86016. Reasoning / tool parsers are wired via --dyn-reasoning-parser deepseek_v4 / --dyn-tool-call-parser deepseek_v4."
+    },
+    {
+      "title": "Models | InvokeAI Documentation",
+      "url": "https://invoke.ai/concepts/models/",
+      "snippet": "The model checkpoint files (*.ckpt) are the Stable Diffusion \"secret sauce\". They are the product of training the AI on millions of captioned images gathered from multiple sources. Originally there was only a single Stable Diffusion weights file, which many people named model.ckpt. Today, there are thousands of models, fine tuned to excel at specific styles, genres, or themes. Model Formats"
+    }
+  ]
+}

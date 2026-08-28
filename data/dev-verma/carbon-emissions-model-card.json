@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "dev-verma/carbon-emissions-model-card",
+  "slug": "dev-verma-carbon-emissions-model-card",
+  "author": "dev-verma",
+  "url": "https://huggingface.co/dev-verma/carbon-emissions-model-card",
+  "created_at": "2026-08-28T17:00:57.000Z",
+  "updated_at": "2026-08-28T17:00:58.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "arxiv:1910.09700",
+    "co2_eq_emissions",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Towards Sustainability Model Cards - arXiv.org",
+      "url": "https://arxiv.org/html/2507.19559v1",
+      "snippet": "The most notable is the recent AI Energy Score [4] proposed by HuggingFace. However, this energy score only provides information on inference energy consumption, disregarding carbon emission, water usage or training impact. To address the aforementioned issue, this paper proposes the definition of Sustainability Model Cards."
+    },
+    {
+      "title": "Displaying carbon emissions for your model - Hugging Face",
+      "url": "https://huggingface.co/docs/hub/en/model-cards-co2",
+      "snippet": "in your model card metadata, where 1.2345 is the emissions value in grams. To learn more about the carbon footprint of Transformers, check out the video, part of the Hugging Face Course!"
+    },
+    {
+      "title": "Model cards are nutrition labels for AI. Now they include environmental ...",
+      "url": "https://x.com/SFResearch/status/2064412608535371890",
+      "snippet": "Now they include environmental impact. 🌱 @Salesforce is adding standardized energy + carbon metrics to its AI model cards: sforce.co/4umu8qm Salesforce AI Research worked with the Impact team to embed these estimates into the standard model evaluation workflow, so a model&#x27;s footprint is measured alongside its performance."
+    },
+    {
+      "title": "Displaying carbon emissions for your model · Hugging Face",
+      "url": "https://huggingface.co/docs/hub/model-cards-co2",
+      "snippet": "Why is it beneficial to calculate the carbon emissions of my model? Training ML models is often energy-intensive and can produce a substantial carbon footprint, as described by Strubell et al.. It&#x27;s therefore important to track and report the emissions of models to get a better idea of the environmental impacts of our field."
+    },
+    {
+      "title": "Hugging Face Emissions Dashboard",
+      "url": "https://energy-label.streamlit.app/",
+      "snippet": "Interactive Dashboard: This offers an in-depth, dynamic view of carbon emissions data from the Hugging Face Hub. You can explore various AI model attributes like energy consumption and understand their impact on sustainability."
+    }
+  ]
+}

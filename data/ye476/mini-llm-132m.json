@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "ye476/mini-llm-132m",
+  "slug": "ye476-mini-llm-132m",
+  "author": "ye476",
+  "url": "https://huggingface.co/ye476/mini-llm-132m",
+  "created_at": "2026-08-28T04:43:39.000Z",
+  "updated_at": "2026-08-28T14:12:55.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "pytorch",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "pytorch",
+    "from-scratch",
+    "gpt",
+    "rope",
+    "swiglu",
+    "rmsnorm",
+    "text-generation",
+    "en",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1587249888,
+  "storage_human": "1.6 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "mini-LLM/MODEL_CARD.md at main · FengYe476/mini-LLM · GitHub",
+      "url": "https://github.com/FengYe476/mini-LLM/blob/main/MODEL_CARD.md",
+      "snippet": "mini-LLM base (132M) A 132M-parameter decoder-only transformer trained from scratch — tokenizer, data pipeline, model, and training loop all written by hand, with no transformers and no tiktoken. Source: FengYe476/mini-LLM."
+    },
+    {
+      "title": "LLM Leaderboard & AI Model Benchmarks — August 2026",
+      "url": "https://benchlm.ai/",
+      "snippet": "LLM Leaderboard & AI Model Benchmarks — August 2026 Compare frontier AI models by quality, cost, and context. 105 Supported and 121 Estimated models among 403 tracked LLMs — 406 benchmarks, real pricing, and runtime data in one place."
+    },
+    {
+      "title": "LocalModel.run | Run AI models in your browser, or check any device",
+      "url": "https://localmodel.run/",
+      "snippet": "The reference layer Can I run any AI model locally? Pick a model and your device. Get a yes, tight, or no, plus the command to run it. 163 models, 40 devices, every size measured."
+    },
+    {
+      "title": "New AI Models 2026 - Latest Releases | LM Market Cap",
+      "url": "https://lmmarketcap.com/new-ai-models",
+      "snippet": "Discover the newest AI models released in 2026. Track the latest LLMs, coding models, and image generators as they launch with source-backed release and evidence tracking."
+    },
+    {
+      "title": "Can I Run This LLM? AI Model Hardware Checker | llmrun",
+      "url": "https://llmrun.dev/",
+      "snippet": "Can I Run LLM Model Locally? Find out which AI models your machine can actually run. Check GPU compatibility, VRAM requirements, and expected performance."
+    }
+  ]
+}

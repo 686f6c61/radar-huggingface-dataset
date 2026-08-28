@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "Melkamzer/pharamrec",
+  "slug": "melkamzer-pharamrec",
+  "author": "Melkamzer",
+  "url": "https://huggingface.co/Melkamzer/pharamrec",
+  "created_at": "2026-08-28T14:59:13.000Z",
+  "updated_at": "2026-08-28T14:59:13.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Melkamzer/pharamrec · Hugging Face",
+      "url": "https://huggingface.co/Melkamzer/pharamrec",
+      "snippet": "Melkamzer / pharamrec like 0 License:mit Model card FilesFiles and versions xet Community Copy to bucket new"
+    },
+    {
+      "title": "Revolutionizing pharmacology: AI-powered approaches in molecular ...",
+      "url": "https://www.sciencedirect.com/science/article/pii/S259009862500020X",
+      "snippet": "The convergence of AI with quantum chemistry and density functional theory (DFT) is illustrated through surrogate modeling and reaction mechanism prediction. Despite these advances, challenges remain in data quality, model interpretability, and generalizability."
+    },
+    {
+      "title": "Hugging Face - The AI community building the future.",
+      "url": "https://huggingface.co/",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "PharmacometricsAI - AI-Powered Clinical Pharmacology & Drug Development ...",
+      "url": "https://pharmacometrics.ai/",
+      "snippet": "AI-Powered Pharmacometrics Transform drug development with our suite of free, secure, and powerful AI automation tools. Accelerate pharmacokinetics, pharmacodynamics, and quantitative systems pharmacology."
+    },
+    {
+      "title": "AI Model Catalog | Microsoft Foundry Models",
+      "url": "https://ai.azure.com/catalog",
+      "snippet": "Explore the comprehensive catalog of AI models from Microsoft Foundry"
+    }
+  ]
+}

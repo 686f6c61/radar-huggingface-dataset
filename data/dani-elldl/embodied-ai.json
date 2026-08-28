@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "dani-elldl/embodied-ai",
+  "slug": "dani-elldl-embodied-ai",
+  "author": "dani-elldl",
+  "url": "https://huggingface.co/dani-elldl/embodied-ai",
+  "created_at": "2026-08-28T12:04:49.000Z",
+  "updated_at": "2026-08-28T12:04:56.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "transformer",
+    "research-notes",
+    "embodied-ai",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 24832,
+  "parameters_human": "24832",
+  "storage_bytes": 99808,
+  "storage_human": "99808 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "The Potential Of Embodied AI - Forbes",
+      "url": "https://www.forbes.com/councils/forbestechcouncil/2023/12/15/the-potential-of-embodied-ai/",
+      "snippet": "At its core, AI alignment is about defining clear and consistent expectations and desired outcomes. For Embodied AI systems to perform well, we need to teach them the language of human preferences."
+    },
+    {
+      "title": "A Call for Embodied AI - arXiv.org",
+      "url": "https://arxiv.org/html/2402.03824v3",
+      "snippet": "Abstract We propose Embodied AI (E-AI) as the next fundamental step in the pursuit of Artificial General Intelligence (AGI), juxtaposing it against current AI advancements, particularly Large Language Models (LLMs). We traverse the evolution of the embodiment concept across diverse fields (philosophy, psychology, neuroscience, and robotics) to highlight how E-AI distinguishes itself from the ..."
+    },
+    {
+      "title": "Embodied AI: From LLMs to World Models - arXiv.org",
+      "url": "https://arxiv.org/html/2509.20021v1",
+      "snippet": "Abstract Embodied Artificial Intelligence (AI) is an intelligent system paradigm for achieving Artificial General Intelligence (AGI), serving as the cornerstone for various applications and driving the evolution from cyberspace to physical systems. Recent breakthroughs in Large Language Models (LLMs) and World Models (WMs) have drawn significant attention for embodied AI. On the one hand, LLMs ..."
+    },
+    {
+      "title": "⚙️ Multimodal-Embodied-AI - GitHub",
+      "url": "https://github.com/Hoar012/Awesome-Multimodal-Embodied-AI",
+      "snippet": "A list of papers at the intersection of multimodal learning, embodied AI, and robotics. - Hoar012/Awesome-Multimodal-Embodied-AI"
+    },
+    {
+      "title": "Models - Hugging Face",
+      "url": "https://huggingface.co/models?other=bulleted",
+      "snippet": "Explore machine learning models. 82 Base only Inference AvailableInference Edit filters Sort: Trending Active filters: bulleted Clear all"
+    }
+  ]
+}

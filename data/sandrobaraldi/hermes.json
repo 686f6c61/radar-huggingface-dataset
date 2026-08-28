@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "sandrobaraldi/hermes",
+  "slug": "sandrobaraldi-hermes",
+  "author": "sandrobaraldi",
+  "url": "https://huggingface.co/sandrobaraldi/hermes",
+  "created_at": "2026-08-28T12:39:49.000Z",
+  "updated_at": "2026-08-28T12:39:49.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": true,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Hermes 3 - NOUS RESEARCH",
+      "url": "https://nousresearch.com/hermes3",
+      "snippet": "Hermes 3 contains advanced long-term context retention and multi-turn conversation capability, complex roleplaying and internal monologue abilities, and enhanced agentic function-calling. Our training data aggressively encourages the model to follow the system and instruction prompts exactly and in an adaptive manner. Hermes 3 was created by fine-tuning Llama 3.1 8B, 70B and 405B, and training ..."
+    },
+    {
+      "title": "Hermes Agent — Open-Source AI Agent with Memory, Skills, and Cron",
+      "url": "https://hermes-agent.ai/",
+      "snippet": "Hermes Agent is the open-source AI agent from Nous Research with persistent memory, reusable skills, cron jobs, tools, and multi-platform messaging."
+    },
+    {
+      "title": "Hermes Agent — Open-Source AI Agent with Persistent Memory",
+      "url": "https://hermes-agent.org/",
+      "snippet": "Everything You Need in One Agent Hermes Agent combines persistent memory, automated skill creation, and multi-platform reach into a single open-source package."
+    },
+    {
+      "title": "Hermes Agent — Open-Source AI Agent That Grows With You | Nous Research",
+      "url": "https://hermes-agent.nousresearch.com/",
+      "snippet": "Hermes Agent is the open-source, self-hosted AI agent by Nous Research. Persistent memory, self-created skills, and a messaging gateway for Telegram, Discord, Slack, and more. Download Hermes Desktop for macOS and Windows, or install via terminal on Linux — free under the MIT license."
+    },
+    {
+      "title": "Hermes Agent 2026: Self-Improving Open-Source AI Agent - AICC - AI.cc",
+      "url": "https://www.ai.cc/blogs/hermes-agent-2026-self-improving-open-source-ai-agent-vs-openclaw-guide/",
+      "snippet": "Hermes Agent by Nous Research is the hottest self-improving open-source AI agent in 2026. Discover its built-in learning loop, persistent memory, autonomous skill creation."
+    }
+  ]
+}

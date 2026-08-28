@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "samant-hajcfw/multimodal-reasoning-review-2024",
+  "slug": "samant-hajcfw-multimodal-reasoning-review-2024",
+  "author": "samant-hajcfw",
+  "url": "https://huggingface.co/samant-hajcfw/multimodal-reasoning-review-2024",
+  "created_at": "2026-08-28T15:24:00.000Z",
+  "updated_at": "2026-08-28T15:24:21.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "transformer",
+    "research-notes",
+    "multimodal-reasoning",
+    "license:cc-by-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 24832,
+  "parameters_human": "24832",
+  "storage_bytes": 99808,
+  "storage_human": "99808 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Daily Papers - Hugging Face",
+      "url": "https://huggingface.co/papers?q=Multimodal+reasoning",
+      "snippet": "Here, we present MARBLE, a challenging multimodal reasoning benchmark that is designed to scrutinize multimodal language models (MLLMs) in their ability to carefully reason step-by-step through complex multimodal problems and environments."
+    },
+    {
+      "title": "arXiv.org",
+      "url": "https://arxiv.org/pdf/2503.12605",
+      "snippet": "This paper explores multimodal chain-of-thought reasoning, presenting a comprehensive study on its applications and implications in various domains."
+    },
+    {
+      "title": "Publications — Google DeepMind",
+      "url": "https://deepmind.google/research/publications/",
+      "snippet": "Explore a selection of our recent research on some of the most complex and interesting challenges in AI."
+    },
+    {
+      "title": "Multimodal Chain-of-Thought Reasoning: A Comprehensive Survey",
+      "url": "https://arxiv.org/abs/2503.12605",
+      "snippet": "By extending the advantage of chain-of-thought (CoT) reasoning in human-like step-by-step processes to multimodal contexts, multimodal CoT (MCoT) reasoning has recently garnered significant research attention, especially in the integration with multimodal large language models (MLLMs). Existing MCoT studies design various methodologies and innovative reasoning paradigms to address the unique ..."
+    },
+    {
+      "title": "The 2025 AI Index Report - Stanford HAI",
+      "url": "https://hai.stanford.edu/ai-index/2025-ai-index-report",
+      "snippet": "In 2024, U.S.-based institutions produced 40 notable AI models, significantly outpacing China&#x27;s 15 and Europe&#x27;s three. While the U.S. maintains its lead in quantity, Chinese models have rapidly closed the quality gap: performance differences on major benchmarks such as MMLU and HumanEval shrank from double digits in 2023 to near parity in 2024."
+    }
+  ]
+}

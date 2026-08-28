@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "Hyunwookqo/matching-notebook",
+  "slug": "hyunwookqo-matching-notebook",
+  "author": "Hyunwookqo",
+  "url": "https://huggingface.co/Hyunwookqo/matching-notebook",
+  "created_at": "2026-08-28T16:53:30.000Z",
+  "updated_at": "2026-08-28T16:53:39.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "coca",
+    "pytorch",
+    "matching",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 16576,
+  "parameters_human": "16576",
+  "storage_bytes": 66784,
+  "storage_human": "66784 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Hugging Face - The AI community building the future.",
+      "url": "https://huggingface.co/",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "NotebookLM - Google AI智能笔记助手官网",
+      "url": "https://notebooklm-ai.com/",
+      "snippet": "NotebookLM是Google推出的AI智能笔记助手，支持文档摘要、音频播客生成、视频概述等功能。了解NotebookLM的核心功能、使用方法和最新特性。"
+    },
+    {
+      "title": "AI Notebook",
+      "url": "https://ai-notebook.com/",
+      "snippet": "AI-Powered Learning Transform your studying experience with intelligent summaries and insights"
+    },
+    {
+      "title": "Gemini Notebook | AI Research Tool & Thinking Partner",
+      "url": "https://notebook.google/",
+      "snippet": "Meet Gemini Notebook, the AI research tool and thinking partner that can analyze your sources, turn complexity into clarity and transform your content."
+    },
+    {
+      "title": "Do your best research with NotebookLM - The Keyword",
+      "url": "https://blog.google/innovation-and-ai/products/notebooklm/better-research-notebooklm/",
+      "snippet": "\"Do better research with NotebookLM\" introduces major upgrades to Google&#x27;s AI research tool. New Gemini models and code execution help you tackle complex research and analysis. You can now generate custom reports, charts, spreadsheets and slide decks directly. Start projects with loose ideas as the tool helps you find relevant sources. These powerful updates are rolling out globally to ..."
+    }
+  ]
+}

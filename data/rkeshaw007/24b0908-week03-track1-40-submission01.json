@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "rkeshaw007/24B0908-Week03-Track1-40-Submission01",
+  "slug": "rkeshaw007-24b0908-week03-track1-40-submission01",
+  "author": "rkeshaw007",
+  "url": "https://huggingface.co/rkeshaw007/24B0908-Week03-Track1-40-Submission01",
+  "created_at": "2026-08-28T18:18:00.000Z",
+  "updated_at": "2026-08-28T18:18:40.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "rkeshaw007/24B0908-Week02-Track1-40-Submission01 · Hugging Face",
+      "url": "https://huggingface.co/rkeshaw007/24B0908-Week02-Track1-40-Submission01",
+      "snippet": "convert_from_hf_checkpoint.py: loads the base model, prunes it to 50% unstructured sparsity across attention and MLP, and writes a self-contained compressed checkpoint (base config, tokenizer, and packed sparse weights). dequantize_to_bf16.py: loads that checkpoint and reconstructs a standard dense bf16 HF model directory."
+    },
+    {
+      "title": "rpchinhara/25M2573-Week03-Track1_40-Submission01 · Hugging Face",
+      "url": "https://huggingface.co/rpchinhara/25M2573-Week03-Track1_40-Submission01",
+      "snippet": "Instructions to use rpchinhara/25M2573-Week03-Track1_40-Submission01 with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "Perplexity AI",
+      "url": "https://www.perplexity.ai/",
+      "snippet": "Perplexity is a free AI-powered answer engine that provides accurate, trusted, and real-time answers to any question."
+    },
+    {
+      "title": "OpenAI | Research & Deployment",
+      "url": "https://openai.com/",
+      "snippet": "We believe our research will eventually lead to artificial general intelligence, a system that can solve human-level problems."
+    },
+    {
+      "title": "ChatGPT: Chat, Work, Create & Code with AI",
+      "url": "https://chatgpt.com/",
+      "snippet": "Use ChatGPT to answer questions, write, create images, complete work, and code—all in one place. Get started for free or download the app."
+    }
+  ]
+}

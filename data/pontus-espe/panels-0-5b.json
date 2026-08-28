@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "pontus-espe/panels-0.5b",
+  "slug": "pontus-espe-panels-0-5b",
+  "author": "pontus-espe",
+  "url": "https://huggingface.co/pontus-espe/panels-0.5b",
+  "created_at": "2026-08-28T13:38:24.000Z",
+  "updated_at": "2026-08-28T13:39:11.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers.js",
+  "languages": [],
+  "tags": [
+    "transformers.js",
+    "onnx",
+    "qwen2",
+    "text-generation",
+    "webgpu",
+    "constrained-decoding",
+    "conversational",
+    "base_model:Qwen/Qwen2.5-0.5B-Instruct",
+    "base_model:quantized:Qwen/Qwen2.5-0.5B-Instruct",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1276974990,
+  "storage_human": "1.3 GB",
+  "base_model": "Qwen/Qwen2.5-0.5B-Instruct",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "pontus-espe (Pontus Espe) · GitHub",
+      "url": "https://github.com/pontus-espe",
+      "snippet": "AI Agents & Infra. pontus-espe has 15 repositories available. Follow their code on GitHub."
+    },
+    {
+      "title": "pontus-espe (Pontus Espe) / Repositories · GitHub",
+      "url": "https://github.com/pontus-espe?tab=repositories",
+      "snippet": "AI Agents & Infra. pontus-espe has 15 repositories available. Follow their code on GitHub."
+    },
+    {
+      "title": "Pontus-X Ecosystem",
+      "url": "https://www.pontus-x.eu/",
+      "snippet": "Pontus-X is an Everything-as-a-Service ecosystem to which you can instantly connect your existing services. Not just data, but Asset Administration Shells, Software Services, Databases, Cloud Infrastructure and much more."
+    },
+    {
+      "title": "Running Home Assistant Control with a 0.5B Model? I Got the Full ...",
+      "url": "https://community.m5stack.com/topic/7924/running-home-assistant-control-with-a-0-5b-model-i-got-the-full-pipeline-working-on-m5stack-llm8850",
+      "snippet": "Hey Makers! 👋 I&#x27;ve been working on a pretty interesting challenge: getting a tiny 0.5B parameter LLM to reliably control Home Assistant devices. Spoiler alert—it actually works, and it&#x27;s fast. Let me walk you through the journey, the failures, and what finally clicked."
+    },
+    {
+      "title": "New AI Agent SDK - Releases - Go Forum",
+      "url": "https://forum.golangbridge.org/t/new-ai-agent-sdk/38259",
+      "snippet": "Hey guys! I have made an open source Agent SDK, that is fully live right now at GitHub. 🔍 Overview Agent SDK Go provides a comprehensive framework for building AI agents in Go. It allows you to create agents that can use tools, perform handoffs to other specialized agents, and produce structured output - all while supporting multiple LLM providers. 🌟 Features Multiple LLM Provider ..."
+    }
+  ]
+}

@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "pathmohd123/audiogroove-gru-small-250",
+  "slug": "pathmohd123-audiogroove-gru-small-250",
+  "author": "pathmohd123",
+  "url": "https://huggingface.co/pathmohd123/audiogroove-gru-small-250",
+  "created_at": "2026-08-28T19:11:59.000Z",
+  "updated_at": "2026-08-28T19:16:34.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 24945945,
+  "storage_human": "25 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "pathmohd123/audiogroove-gru-large-2500 · Hugging Face",
+      "url": "https://huggingface.co/pathmohd123/audiogroove-gru-large-2500",
+      "snippet": "Recovered GRU-large 2,500-song model This package contains the recovered best checkpoint from the Big Red 200 scaling run 7908061. Model: compact GRU, large profile ..."
+    },
+    {
+      "title": "pathmohd123/audiogroove-gru-large-2500 at main - Hugging Face",
+      "url": "https://huggingface.co/pathmohd123/audiogroove-gru-large-2500/tree/main",
+      "snippet": "pathmohd123 / audiogroove-gru-large-2500 like 0 Model card FilesFiles and versions xet Community Copy to bucket new main audiogroove-gru-large-2500 357 MB Ctrl+K Ctrl+K 1 contributor History:3 commits pathmohd123 add inference-only deployment checkpoint ff5bc8d verified2 days ago checkpointsadd inference-only deployment checkpoint2 days ago configadd recovered 2500-song gru-large artifact2 ..."
+    },
+    {
+      "title": "AI Model Catalog | Microsoft Foundry Models",
+      "url": "https://ai.azure.com/catalog/models",
+      "snippet": "Explore the comprehensive catalog of AI models from Microsoft Foundry"
+    },
+    {
+      "title": "AI Model Downloads - 498 Model Examples - AI Models",
+      "url": "https://aimodels.org/ai-models/",
+      "snippet": "Directory of free Open Source AI and machine learning model downloads! Our collection features the latest models in speech to text and image generation."
+    },
+    {
+      "title": "AudioGroove-AI-Based-Music-Generation/ModelTraining.ipynb at main ...",
+      "url": "https://github.com/MohammedPathariya/AudioGroove-AI-Based-Music-Generation/blob/main/ModelTraining.ipynb",
+      "snippet": "Contribute to MohammedPathariya/AudioGroove-AI-Based-Music-Generation development by creating an account on GitHub."
+    }
+  ]
+}

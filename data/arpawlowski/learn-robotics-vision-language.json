@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "arpawlowski/learn-robotics-vision-language",
+  "slug": "arpawlowski-learn-robotics-vision-language",
+  "author": "arpawlowski",
+  "url": "https://huggingface.co/arpawlowski/learn-robotics-vision-language",
+  "created_at": "2026-08-28T15:40:13.000Z",
+  "updated_at": "2026-08-28T15:40:21.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "transformer",
+    "research-notes",
+    "robotics-vision-language",
+    "license:cc-by-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 16576,
+  "parameters_human": "16576",
+  "storage_bytes": 66784,
+  "storage_human": "66784 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Vision-Language-Action (VLA) Models for Robotics",
+      "url": "https://blog.roboflow.com/vision-language-action-models/",
+      "snippet": "Discover how Vision-Language-Action models combine visual reasoning with motor control to build robots that generalize."
+    },
+    {
+      "title": "[2307.15818] RT-2: Vision-Language-Action Models Transfer Web Knowledge ...",
+      "url": "https://arxiv.org/abs/2307.15818",
+      "snippet": "We study how vision-language models trained on Internet-scale data can be incorporated directly into end-to-end robotic control to boost generalization and enable emergent semantic reasoning. Our goal is to enable a single end-to-end trained model to both learn to map robot observations to actions and enjoy the benefits of large-scale pretraining on language and vision-language data from the ..."
+    },
+    {
+      "title": "[2406.10721] RoboPoint: A Vision-Language Model for Spatial Affordance ...",
+      "url": "https://arxiv.org/abs/2406.10721",
+      "snippet": "From rearranging objects on a table to putting groceries into shelves, robots must plan precise action points to perform tasks accurately and reliably. In spite of the recent adoption of vision language models (VLMs) to control robot behavior, VLMs struggle to precisely articulate robot actions using language. We introduce an automatic synthetic data generation pipeline that instruction-tunes ..."
+    },
+    {
+      "title": "What matters in building vision-language-action models for ... - Nature",
+      "url": "https://www.nature.com/articles/s42256-025-01168-7",
+      "snippet": "Vision-language-action models recently emerged as a tool for robotics. Here Li and colleagues compare vision-language-action models and highlight what makes a model useful."
+    },
+    {
+      "title": "Gemini Robotics — Google DeepMind",
+      "url": "https://deepmind.google/models/gemini-robotics/",
+      "snippet": "Gemini Robotics 2 Our most advanced vision-language-action model (VLA) that converts vision and language input into motor control, enabling a robot to take action Gemini Robotics ER 2 Our embodied reasoning model: capable of reasoning within physical spaces to make detailed plans, coordinating with humans and other robots Gemini Robotics On ..."
+    }
+  ]
+}

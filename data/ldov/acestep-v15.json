@@ -1,0 +1,93 @@
+{
+  "schema": 1,
+  "id": "ldov/acestep-v15",
+  "slug": "ldov-acestep-v15",
+  "author": "ldov",
+  "url": "https://huggingface.co/ldov/acestep-v15",
+  "created_at": "2026-08-28T11:14:16.000Z",
+  "updated_at": "2026-08-28T14:12:55.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "en",
+    "fr",
+    "zh",
+    "ja",
+    "ko",
+    "de",
+    "es",
+    "it",
+    "pt",
+    "ru"
+  ],
+  "tags": [
+    "gguf",
+    "music-generation",
+    "text-to-music",
+    "ggml",
+    "cpp",
+    "ace-step",
+    "diffusion",
+    "flow-matching",
+    "en",
+    "fr",
+    "zh",
+    "ja",
+    "ko",
+    "de",
+    "es",
+    "it",
+    "pt",
+    "ru",
+    "base_model:ACE-Step/Ace-Step1.5",
+    "base_model:quantized:ACE-Step/Ace-Step1.5",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 662884352,
+  "parameters_human": "662.9M",
+  "storage_bytes": 220737965920,
+  "storage_human": "220.7 GB",
+  "base_model": "ACE-Step/Ace-Step1.5",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ldov/acestep-full-clone · Hugging Face",
+      "url": "https://huggingface.co/ldov/acestep-full-clone",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GitHub - ace-step/ACE-Step-1.5: The most powerful local music ...",
+      "url": "https://github.com/ace-step/ACE-Step-1.5",
+      "snippet": "The most powerful local music generation model that outperforms almost all commercial alternatives, supporting Mac, AMD, Intel, and CUDA devices. - ace-step/ACE-Step-1.5"
+    },
+    {
+      "title": "ACE-Step/acestep-v15-base · Hugging Face",
+      "url": "https://huggingface.co/ACE-Step/acestep-v15-base",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "A Step Towards Music Generation Foundation Model - GitHub",
+      "url": "https://github.com/ace-step/ACE-Step",
+      "snippet": "📝 Abstract We introduce ACE-Step, a novel open-source foundation model for music generation that overcomes key limitations of existing approaches and achieves state-of-the-art performance through a holistic architectural design. Current methods face inherent trade-offs between generation speed, musical coherence, and controllability."
+    },
+    {
+      "title": "acestep-v15-xl-base · Models",
+      "url": "https://modelscope.ai/models/ACE-Step/acestep-v15-xl-base",
+      "snippet": "ModelScope——A one-stop service that brings together the most advanced machine learning models from various fields, offering model exploration experience, inference, training, deployment, and application."
+    }
+  ]
+}

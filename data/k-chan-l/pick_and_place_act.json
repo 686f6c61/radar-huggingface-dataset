@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "k-chan-l/pick_and_place_act",
+  "slug": "k-chan-l-pick_and_place_act",
+  "author": "k-chan-l",
+  "url": "https://huggingface.co/k-chan-l/pick_and_place_act",
+  "created_at": "2026-08-28T17:14:24.000Z",
+  "updated_at": "2026-08-28T17:14:53.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "act",
+    "robotics",
+    "dataset:k-chan-l/pick_and_place",
+    "arxiv:2304.13705",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 51668614,
+  "parameters_human": "51.7M",
+  "storage_bytes": 206707272,
+  "storage_human": "207 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "k-chan-l/pick_and_place2_act · Hugging Face",
+      "url": "https://huggingface.co/k-chan-l/pick_and_place2_act",
+      "snippet": "Instructions to use k-chan-l/pick_and_place2_act with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Libraries LeRobot How to use k-chan-l/pick_and_place2_act with LeRobot: Notebooks Google Colab Kaggle Model Card for act Model Details Inputs & Outputs Training Dataset Training Configuration How to Get Started with the Model Run the policy on your ..."
+    },
+    {
+      "title": "kkh4476/pick_and_place4_act_model · Hugging Face",
+      "url": "https://huggingface.co/kkh4476/pick_and_place4_act_model",
+      "snippet": "Model Card for act Action Chunking with Transformers (ACT) is an imitation-learning method that predicts short action chunks instead of single steps. It learns from teleoperated data and often achieves high success rates."
+    },
+    {
+      "title": "Visual Prompting for Robotic Manipulation with Annotation-Guided Pick ...",
+      "url": "https://arxiv.org/html/2508.08748v1",
+      "snippet": "In this paper, we have presented a novel approach to robotic pick-and-place tasks using annotation-guided visual prompting and Action Chunking with Transformers (ACT)."
+    },
+    {
+      "title": "Visual Prompting for Robotic Manipulation with Annotation-Guided Pick ...",
+      "url": "https://arxiv.org/pdf/2508.08748",
+      "snippet": "CONCLUSION In this paper, we have presented a novel approach to robotic pick-and-place tasks using annotation-guided visual prompting and Action Chunking with Transformers (ACT)."
+    },
+    {
+      "title": "Visual Prompting for Robotic Manipulation with Annotation-Guided Pick ...",
+      "url": "https://www.researchgate.net/publication/394457779_Visual_Prompting_for_Robotic_Manipulation_with_Annotation-Guided_Pick-and-Place_Using_ACT",
+      "snippet": "Robotic pick-and-place tasks in convenience stores pose challenges due to dense object arrangements, occlusions, and variations in object properties such as color, shape, size, and texture."
+    }
+  ]
+}

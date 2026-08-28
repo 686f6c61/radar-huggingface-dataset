@@ -1,0 +1,95 @@
+{
+  "schema": 1,
+  "id": "dawsonvosburg/cohere-transcribe-03-2026-coreml",
+  "slug": "dawsonvosburg-cohere-transcribe-03-2026-coreml",
+  "author": "dawsonvosburg",
+  "url": "https://huggingface.co/dawsonvosburg/cohere-transcribe-03-2026-coreml",
+  "created_at": "2026-08-28T16:06:43.000Z",
+  "updated_at": "2026-08-28T16:09:37.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "automatic-speech-recognition",
+  "library": "coreml",
+  "languages": [
+    "en",
+    "fr",
+    "de",
+    "es",
+    "it",
+    "pt",
+    "nl",
+    "pl",
+    "el",
+    "ar",
+    "ja",
+    "zh",
+    "vi",
+    "ko"
+  ],
+  "tags": [
+    "coreml",
+    "asr",
+    "speech-recognition",
+    "apple-silicon",
+    "automatic-speech-recognition",
+    "en",
+    "fr",
+    "de",
+    "es",
+    "it",
+    "pt",
+    "nl",
+    "pl",
+    "el",
+    "ar",
+    "ja",
+    "zh",
+    "vi",
+    "ko",
+    "base_model:CohereLabs/cohere-transcribe-03-2026",
+    "base_model:finetune:CohereLabs/cohere-transcribe-03-2026",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 2180424618,
+  "storage_human": "2.2 GB",
+  "base_model": "CohereLabs/cohere-transcribe-03-2026",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "dawsonvosburg/cohere-transcribe-03-2026-coreml · Hugging Face",
+      "url": "https://huggingface.co/dawsonvosburg/cohere-transcribe-03-2026-coreml",
+      "snippet": "dawsonvosburg / cohere-transcribe-03-2026-coreml like 0 Automatic Speech Recognition Core ML 14 languages asr speech-recognition apple-silicon License:apache-2.0 Model card FilesFiles and versions xet Community Copy to bucket new Cohere Transcribe 03-2026 — Core ML (FP16 encoder, 256-token decoder cache) What&#x27;s here What changed, and why"
+    },
+    {
+      "title": "CohereLabs/cohere-transcribe-03-2026 · Hugging Face",
+      "url": "https://huggingface.co/CohereLabs/cohere-transcribe-03-2026",
+      "snippet": "Cohere Transcribe demonstrates best-in-class transcription accuracy in 14 languages. As a dedicated speech recognition model, it is also efficient, benefitting from a real-time factor up to three times faster than that of other, dedicated ASR models in the same size range."
+    },
+    {
+      "title": "GitHub - jasonclaw001/cohere-transcribe-03-2026: CohereLabs cohere ...",
+      "url": "https://github.com/jasonclaw001/cohere-transcribe-03-2026",
+      "snippet": "CohereLabs/cohere-transcribe-03-2026 exposes a single model.transcribe () method that automatically handles long-form audio chunking and exposes parameters to facilitate efficient inference. It is recommended that you let the transcribe method handle batching for you. This implementation is optimized for offline inference: for online inference, see the vLLM integration example below."
+    },
+    {
+      "title": "Cohere Transcribe | Cohere",
+      "url": "https://docs.cohere.com/docs/transcribe",
+      "snippet": "About the Cohere Transcribe model Cohere Transcribe is an open source research release of a 2B parameters dedicated audio-in, text-out, automatic speech recognition (ASR) model. The model supports a total of 14 languages. Model details Input: Audio waveform Output: Text Model name: cohere-transcribe-03-2026 Languages covered: English, German, French, Italian, Spanish, Portuguese, Greek, Dutch ..."
+    },
+    {
+      "title": "Transcribe - Cohere",
+      "url": "https://cohere.com/transcribe",
+      "snippet": "Transcribe converts your business audio data into precise text for search, analytics, and automation."
+    }
+  ]
+}

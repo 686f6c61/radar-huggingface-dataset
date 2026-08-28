@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "qvx-o/reFLEX-v1-50M",
+  "slug": "qvx-o-reflex-v1-50m",
+  "author": "qvx-o",
+  "url": "https://huggingface.co/qvx-o/reFLEX-v1-50M",
+  "created_at": "2026-08-28T18:07:37.000Z",
+  "updated_at": "2026-08-28T18:20:58.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 594255102,
+  "storage_human": "594 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "qvx-o/reFLEX-v1-15M · Hugging Face",
+      "url": "https://huggingface.co/qvx-o/reFLEX-v1-15M",
+      "snippet": "reFLEX-v1-15M reFLEX — Responsive Flexible Learning and EXperience — is a small experimental conversational language model designed around a different idea from a conventional \"everything is attention\" transformer."
+    },
+    {
+      "title": "qvx-o (Qarvexium) - Hugging Face",
+      "url": "https://huggingface.co/qvx-o",
+      "snippet": "Qarvexium is an independent AI research and engineering organization focused on building efficient, accessible, and genuinely useful machine-learning systems — from language models and computer vision to speech, OCR, and generative AI."
+    },
+    {
+      "title": "GitHub - YatinMurkar/reflex-ai-whatsapp-assistant: Reflex - Multi-model ...",
+      "url": "https://github.com/YatinMurkar/reflex-ai-whatsapp-assistant",
+      "snippet": "🧠 Reflex - Multi-Model Agentic AI Avatar & Personal Assistant A fully autonomous WhatsApp AI assistant with 21+ tools, RAG-based semantic memory, voice synthesis, and multi-model architecture - deployed on cloud and running 24/7."
+    },
+    {
+      "title": "Releases · reflex-dev/reflex - GitHub",
+      "url": "https://github.com/reflex-dev/reflex/releases",
+      "snippet": "🕸️ Web apps in pure Python 🐍. Contribute to reflex-dev/reflex development by creating an account on GitHub."
+    },
+    {
+      "title": "Alibaba Cloud Model Studio",
+      "url": "https://modelstudio.alibabacloud.com/",
+      "snippet": "Try the newest Qwen3.8-Max-Preview, HappyHorse1.1, Deepseek V4 and GLM-5.2 models with the latest AI Token Plan. 2.4-trillion-parameter MoE flagship delivering a comprehensive leap in coding and professional work."
+    }
+  ]
+}

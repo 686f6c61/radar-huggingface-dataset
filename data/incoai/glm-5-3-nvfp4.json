@@ -1,0 +1,77 @@
+{
+  "schema": 1,
+  "id": "incoai/GLM-5.3-NVFP4",
+  "slug": "incoai-glm-5-3-nvfp4",
+  "author": "incoai",
+  "url": "https://huggingface.co/incoai/GLM-5.3-NVFP4",
+  "created_at": "2026-08-27T04:40:03.000Z",
+  "updated_at": "2026-08-28T15:03:01.000Z",
+  "license": "glm-5.3",
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "glm_moe_dsa",
+    "text-generation",
+    "GLM-5",
+    "ModelOpt",
+    "quantized",
+    "4-bit precision",
+    "FP4",
+    "nvfp4",
+    "conversational",
+    "base_model:zai-org/GLM-5.3",
+    "base_model:quantized:zai-org/GLM-5.3",
+    "license:other",
+    "endpoints_compatible",
+    "8-bit",
+    "modelopt",
+    "region:us"
+  ],
+  "likes": 10,
+  "downloads_30d": 0,
+  "trending_score": 10,
+  "parameters": 390942074880,
+  "parameters_human": "390.94B",
+  "storage_bytes": 464863193342,
+  "storage_human": "464.9 GB",
+  "base_model": "zai-org/GLM-5.3",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "incoai/GLM-5.3-Flash-DFlash2 · Hugging Face",
+      "url": "https://huggingface.co/incoai/GLM-5.3-Flash-DFlash2",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "incoai (Inco AI) - Hugging Face",
+      "url": "https://huggingface.co/incoai",
+      "snippet": "AI & ML interests ... Recent Activity zhijianliu updated a collection about 9 hours ago ... zhijianliu published a model about 9 hours ago ... zhijianliu updated a model about 10 hours ago ... Team members 3 ... Collections 1"
+    },
+    {
+      "title": "GLM-5.3: Frontier Coding with Emergent Cyber Capabilities - z.ai",
+      "url": "https://z.ai/blog/glm-5.3",
+      "snippet": "Today we are releasing GLM-5.3. It uses the same base model as GLM-5.2 — every gain comes from post-training. Compared with GLM-5.2, it is much better at complex coding and long-horizon tasks: Stronger Coding: GLM-5.3 is the most capable open-weights model for coding, with a 50% improvement over GLM-5.2 on our in-house Z.ai Code Bench."
+    },
+    {
+      "title": "GLM-5.3 - Overview - Z.AI DEVELOPER DOCUMENT",
+      "url": "https://docs.z.ai/guides/llm/glm-5.3",
+      "snippet": "Overview GLM-5.3 is Z.ai&#x27;s latest flagship model, delivering comprehensive advancements in complex software engineering and agent capabilities. It uses the same base model as GLM-5.2, with all improvements driven by post-training. Compared with GLM-5.2, it delivers significantly stronger performance in complex programming and long-horizon tasks: Stronger Coding Capability GLM-5.3 delivers a ..."
+    },
+    {
+      "title": "Inco AI on X: \"GLM-5.3-Flash is fast. DFlash 2 makes it faster! Weights ...",
+      "url": "https://x.com/inco_ai/status/2093112577194885121",
+      "snippet": "Introducing GLM-5.3-Flash - Leading capabilities at a highly competitive price - Natively multimodal with a 1M-token context window - A 320B-A18B model released under the MIT License - Previously previewed as Ox Alpha, running entirely on Chinese AI chips Blog: Show more"
+    }
+  ]
+}

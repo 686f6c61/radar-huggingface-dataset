@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "vikaspate/blip-matching-base",
+  "slug": "vikaspate-blip-matching-base",
+  "author": "vikaspate",
+  "url": "https://huggingface.co/vikaspate/blip-matching-base",
+  "created_at": "2026-08-28T15:34:41.000Z",
+  "updated_at": "2026-08-28T15:34:50.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "blip",
+    "pytorch",
+    "matching",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 16576,
+  "parameters_human": "16576",
+  "storage_bytes": 66784,
+  "storage_human": "66784 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "BLIP · Hugging Face",
+      "url": "https://huggingface.co/docs/transformers/model_doc/blip",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Salesforce/blip-image-captioning-base · Hugging Face",
+      "url": "https://huggingface.co/Salesforce/blip-image-captioning-base",
+      "snippet": "We strongly recommend users evaluate and address potential concerns related to accuracy, safety, and fairness before deploying this model. We encourage users to consider the common limitations of AI, comply with applicable laws, and leverage best practices when selecting use cases, particularly for high-risk scenarios where errors or misuse ..."
+    },
+    {
+      "title": "Understanding BLIP : A Huggingface Model - GeeksforGeeks",
+      "url": "https://www.geeksforgeeks.org/artificial-intelligence/understanding-blip-a-huggingface-model/",
+      "snippet": "BLIP (Bootstrapping Language-Image Pre-training) is a multimodal AI model that combines computer vision and natural language processing to understand both images and text together. It is trained on large-scale image-text pairs, enabling strong performance in vision-language tasks."
+    },
+    {
+      "title": "Base Models | salesforce/BLIP | DeepWiki",
+      "url": "https://deepwiki.com/salesforce/BLIP/2.1-base-models",
+      "snippet": "Base Models Relevant source files This page documents the foundational model architectures in the BLIP system: BLIP_Base and BLIP_Decoder. These models serve as the core building blocks for various vision-language tasks including image captioning, visual question answering, and image-text retrieval."
+    },
+    {
+      "title": "BLIP - Model Database",
+      "url": "https://modeldatabase.com/docs/transformers/model_doc/blip.html",
+      "snippet": "BLIP: reference documentation for working with open source AI models and libraries. Compare and deploy AI models on Model Database."
+    }
+  ]
+}

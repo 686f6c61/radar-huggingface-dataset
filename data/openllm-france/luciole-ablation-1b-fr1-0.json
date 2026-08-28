@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "OpenLLM-France/luciole-ablation-1B-fr1.0",
+  "slug": "openllm-france-luciole-ablation-1b-fr1-0",
+  "author": "OpenLLM-France",
+  "url": "https://huggingface.co/OpenLLM-France/luciole-ablation-1B-fr1.0",
+  "created_at": "2026-05-22T09:34:10.000Z",
+  "updated_at": "2026-08-28T13:06:00.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "fr"
+  ],
+  "tags": [
+    "safetensors",
+    "llama",
+    "pretrained",
+    "openllm-france",
+    "text-generation",
+    "fr",
+    "dataset:HuggingFaceFW/fineweb-2",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 13,
+  "trending_score": 0,
+  "parameters": 1235290112,
+  "parameters_human": "1.24B",
+  "storage_bytes": 2470640243,
+  "storage_human": "2.5 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "OpenLLM-France/luciole-ablation-1B-fr1.0 · Hugging Face",
+      "url": "https://huggingface.co/OpenLLM-France/luciole-ablation-1B-fr1.0",
+      "snippet": "OpenLLM-France / luciole-ablation-1B-fr1. like 0 Follow OpenLLM France 362 Text Generation Safetensors HuggingFaceFW/fineweb-2 French llama pretrained openllm-france License:apache-2.0 Model card FilesFiles and versions xet Community Copy to bucket new Model Card for the Luciole French-English Ablation Models Model Description Uses Direct Use Out-of-Scope Use Bias, Risks, and Limitations How ..."
+    },
+    {
+      "title": "OpenLLM-France/luciole-ablation-1B-fr1.0 at main - Hugging Face",
+      "url": "https://huggingface.co/OpenLLM-France/luciole-ablation-1B-fr1.0/tree/main",
+      "snippet": "OpenLLM-France / luciole-ablation-1B-fr1. like 0 Follow OpenLLM France 392 Text Generation Safetensors HuggingFaceFW/fineweb-2 French llama pretrained openllm-france License:apache-2.0 Model card FilesFiles and versions xet Community Copy to bucket new main luciole-ablation-1B-fr1. 2.48 GB Ctrl+K Ctrl+K 2 contributors History:7 commits juliehunter Update README.md 6929c03 verified19 days ago ..."
+    },
+    {
+      "title": "developing open source, transparent AI with a French twist",
+      "url": "https://openllm-france.fr/en/main-page-en/",
+      "snippet": "While this approach may impact model performance, we believe that the long-term benefits of openly sharing training data far outweigh the trade-offs by fostering future research and development. A wide variety of use cases leverage AI systems capable of understanding human speech and analyzing visual information such as graphs and tables."
+    },
+    {
+      "title": "GitHub - OpenLLM-France/Luciole-Training",
+      "url": "https://github.com/OpenLLM-France/Luciole-Training/tree/main/",
+      "snippet": "Luciole-Training Training pipeline for the Luciole series of multilingual (French-English) large language models, part of the OpenLLM-France initiative."
+    },
+    {
+      "title": "OpenLLM-France · GitHub",
+      "url": "https://github.com/OpenLLM-France/",
+      "snippet": "The aim of the OpenLLM France community is to collaborate on the development of truly Open Source AI LLM models. This space contains the software tools used to : collect and clean data; pretrain the foundation models; train and align the instruction models. This space is strongly linked with the following Hugging Face space that contains and details datasets and models : 🤗 Hugging Face ..."
+    }
+  ]
+}

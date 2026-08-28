@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "yamatazen/Qwen3.5-4B-heretic-Q4_K_M-GGUF",
+  "slug": "yamatazen-qwen3-5-4b-heretic-q4_k_m-gguf",
+  "author": "yamatazen",
+  "url": "https://huggingface.co/yamatazen/Qwen3.5-4B-heretic-Q4_K_M-GGUF",
+  "created_at": "2026-08-28T12:53:12.000Z",
+  "updated_at": "2026-08-28T12:53:12.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "gguf",
+    "heretic",
+    "uncensored",
+    "decensored",
+    "abliterated",
+    "llama-cpp",
+    "gguf-my-repo",
+    "image-text-to-text",
+    "base_model:coder3101/Qwen3.5-4B-heretic",
+    "base_model:quantized:coder3101/Qwen3.5-4B-heretic",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": null,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "mradermacher/Qwen3.5-4B-heretic-GGUF · Hugging Face",
+      "url": "https://huggingface.co/mradermacher/Qwen3.5-4B-heretic-GGUF",
+      "snippet": "mradermacher / Qwen3.5-4B-heretic-GGUF like 4 Transformers GGUF English unsloth heretic uncensored decensored abliterated conversational License:apache-2.0 Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "yamatazen (Yamata Zen) - Hugging Face",
+      "url": "https://huggingface.co/yamatazen",
+      "snippet": "yamatazen/Qwen3-4B-Instruct-2507-heretic-Q4_K_M-GGUF Text Generation • 4B•Updated 19 days ago• 180"
+    },
+    {
+      "title": "Qwen3.5-4B-heretic-imatrix-Q4_K_M.gguf · Models",
+      "url": "https://www.modelscope.cn/models/Manojb/Qwen3.5-4B-heretic-imatrix-Q4_K_M.gguf",
+      "snippet": "ModelScope——汇聚各领域先进的机器学习模型，提供模型探索体验、推理、训练、部署和应用的一站式服务。在这里 ..."
+    },
+    {
+      "title": "qwen3.5:4b - ollama.com",
+      "url": "https://ollama.com/library/qwen3.5:4b",
+      "snippet": "Qwen3.5 represents a significant leap forward, integrating breakthroughs in multimodal learning, architectural efficiency, reinforcement learning scale, and global accessibility to empower developers and enterprises with unprecedented capability and efficiency."
+    },
+    {
+      "title": "GitHub - QwenLM/Qwen3.8: Qwen3.8 is the large language model series ...",
+      "url": "https://github.com/QwenLM/Qwen3.8",
+      "snippet": "Welcome to the GitHub repository of the Qwen3.5 open model series, including Qwen3.5, Qwen3.6, and the latest Qwen3.8. Here, you can find official information about Qwen3.8, post your questions (Issues), and share your ideas with the community (Discussions)."
+    }
+  ]
+}

@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "hyejinkimva/thesis-vision-language-pretraining",
+  "slug": "hyejinkimva-thesis-vision-language-pretraining",
+  "author": "hyejinkimva",
+  "url": "https://huggingface.co/hyejinkimva/thesis-vision-language-pretraining",
+  "created_at": "2026-08-28T18:59:36.000Z",
+  "updated_at": "2026-08-28T18:59:48.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "transformer",
+    "research-notes",
+    "vision-language-pretraining",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 33088,
+  "parameters_human": "33088",
+  "storage_bytes": 132832,
+  "storage_human": "132832 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "[2210.09263] Vision-Language Pre-training: Basics, Recent Advances, and ...",
+      "url": "https://arxiv.org/abs/2210.09263",
+      "snippet": "This paper surveys vision-language pre-training (VLP) methods for multimodal intelligence that have been developed in the last few years. We group these approaches into three categories: (i) VLP for image-text tasks, such as image captioning, image-text retrieval, visual question answering, and visual grounding; (ii) VLP for core computer vision tasks, such as (open-set) image classification ..."
+    },
+    {
+      "title": "Scalable Visual Pretraining for Language Intelligence",
+      "url": "https://arxiv.org/abs/2607.09657",
+      "snippet": "This paper challenges the default assumption that language models must be trained on text-only representations and shows that Visual Pretraining is a scalable learner for foundation model intelligence."
+    },
+    {
+      "title": "A Dive into Vision-Language Models - Hugging Face",
+      "url": "https://huggingface.co/blog/vision_language_pretraining",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Vision-Language Pre-training: Basics, Recent Advances, and Future Trends",
+      "url": "https://www.semanticscholar.org/paper/Vision-Language-Pre-training:-Basics,-Recent-and-Gan-Li/b287a2765e5bceb732de39dafdf70594dc9cd664",
+      "snippet": "This paper builds a video-language model in an adaptive manner, which transfers the knowledge from the image domain and can achieve state-of-the-art performance without any further massive video pretraining."
+    },
+    {
+      "title": "VLP: A Survey on Vision-language Pre-training - Springer",
+      "url": "https://link.springer.com/article/10.1007/s11633-022-1369-5",
+      "snippet": "In the past few years, the emergence of pre-training models has brought uni-modal fields such as computer vision (CV) and natural language processing (NLP) to a new era. Substantial works have shown that they are beneficial for downstream uni-modal tasks and avoid training a new model from scratch. So can such pre-trained models be applied to multi-modal tasks? Researchers have explored this ..."
+    }
+  ]
+}

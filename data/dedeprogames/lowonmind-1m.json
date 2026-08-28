@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "DedeProGames/LowOnMind-1M",
+  "slug": "dedeprogames-lowonmind-1m",
+  "author": "DedeProGames",
+  "url": "https://huggingface.co/DedeProGames/LowOnMind-1M",
+  "created_at": "2026-08-28T15:50:50.000Z",
+  "updated_at": "2026-08-28T16:00:37.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "lowonmind",
+    "text-generation",
+    "tiny-lm",
+    "pretrained-from-scratch",
+    "scaling-limits",
+    "custom_code",
+    "en",
+    "dataset:HuggingFaceFW/fineweb-edu",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 2,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 985152,
+  "parameters_human": "985152",
+  "storage_bytes": 3950560,
+  "storage_human": "4 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Models - Hugging Face",
+      "url": "https://huggingface.co/models?other=lowonmind",
+      "snippet": "Explore machine learning models. 1 Base only Inference AvailableInference Edit filters Sort: Trending Active filters: lowonmind Clear all"
+    },
+    {
+      "title": "DedeProGames (DedeProGames) - Hugging Face",
+      "url": "https://huggingface.co/DedeProGames",
+      "snippet": "AI & ML interests ... Recent Activity published a model about 1 month ago ... updated a Space about 1 month ago"
+    },
+    {
+      "title": "Rebuilding Among AIs from Six Log Files - AI Storm",
+      "url": "https://aistorm.cc/rebuilding-among-ais-from-six-log-files/",
+      "snippet": "Developer DedeProGames reverse-engineered a social-deduction game&#x27;s engine and 59×34 map from six log files to build a benchmark for evaluating language models&#x27; reasoning and deception abilities. The project ran 90 games across six models in the 27-31 billion parameter range, separating each model&#x27;s private reasoning from its public output."
+    },
+    {
+      "title": "DedeProGames - ollama.com",
+      "url": "https://ollama.com/DedeProGames",
+      "snippet": "Astral-2.7 Astral-2.7 is a 20B-parameter AI model based on gpt-oss:20b, designed for high performance on general reasoning tasks."
+    },
+    {
+      "title": "1minAI | Free All-in-one AI App for Text, Image, Audio, Video",
+      "url": "https://1min.ai/",
+      "snippet": "Unlock the power of AI for all your creative needs. Our free all-in-one platform empowers you with AI tools for text, writing, image, audio, and video."
+    }
+  ]
+}

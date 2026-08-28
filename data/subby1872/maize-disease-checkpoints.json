@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "Subby1872/maize-disease-checkpoints",
+  "slug": "subby1872-maize-disease-checkpoints",
+  "author": "Subby1872",
+  "url": "https://huggingface.co/Subby1872/maize-disease-checkpoints",
+  "created_at": "2026-08-28T13:36:41.000Z",
+  "updated_at": "2026-08-28T13:46:38.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 497737794,
+  "storage_human": "498 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Deep learning models for enhanced in-field maize leaf disease diagnosis ...",
+      "url": "https://www.sciencedirect.com/science/article/pii/S2666827025000568",
+      "snippet": "• Developed and evaluated machine learning models for maize disease identification and detection. • Incorporated explainable AI techniques to improve transparency and model interpretability. • Developed a mobile application with the image classification model for infield disease diagnosis."
+    },
+    {
+      "title": "Deep learning-based approach for identification of diseases of maize ...",
+      "url": "https://www.nature.com/articles/s41598-022-10140-z",
+      "snippet": "Overall performance analysis suggested that the best-performed model is efficient in recognizing diseases of maize from in-field images even with varied backgrounds."
+    },
+    {
+      "title": "Mobile-assisted deep learning framework for identification ... - Frontiers",
+      "url": "https://www.frontiersin.org/journals/plant-science/articles/10.3389/fpls.2026.1803005/full",
+      "snippet": "To address these limitations, this study proposes a unified deep learning-based framework for integrated identification of maize diseases and insect pests under natural field environments by combining object detection and image classification within a mobile-assisted diagnostic system."
+    },
+    {
+      "title": "Artificial intelligence-Driven detection and decision support system ...",
+      "url": "https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0343517",
+      "snippet": "Artificial intelligence (AI) enables rapid and precise plant disease detection, offering transformative potential for crop protection. Maize downy mildew (MDM), a destructive disease, causes substantial yield losses, making early detection critical. In this study, we evaluated the performance of thirteen machine-learning (ML) and deep-learning (DL) algorithms for classifying healthy and ..."
+    },
+    {
+      "title": "A Deep Learning Model for Accurate Maize Disease Detection Based on ...",
+      "url": "https://www.mdpi.com/2223-7747/13/22/3151",
+      "snippet": "In improving agricultural yields and ensuring food security, precise detection of maize leaf diseases is of great importance. Traditional disease detection methods show limited performance in complex environments, making it challenging to meet the demands for precise detection in modern agriculture. This paper proposes a maize leaf disease detection model based on a state-space attention ..."
+    }
+  ]
+}

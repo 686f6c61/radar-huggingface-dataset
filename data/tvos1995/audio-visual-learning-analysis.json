@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "Tvos1995/audio-visual-learning-analysis",
+  "slug": "tvos1995-audio-visual-learning-analysis",
+  "author": "Tvos1995",
+  "url": "https://huggingface.co/Tvos1995/audio-visual-learning-analysis",
+  "created_at": "2026-08-28T18:10:21.000Z",
+  "updated_at": "2026-08-28T18:10:30.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "transformer",
+    "research-notes",
+    "audio-visual-learning",
+    "license:cc-by-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 16576,
+  "parameters_human": "16576",
+  "storage_bytes": 66784,
+  "storage_human": "66784 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Apex | Futures Prop Firm | Funded Trading Accounts",
+      "url": "https://apextraderfunding.com/",
+      "snippet": "Get funded to trade with Apex Trader Funding. Pass the evaluation, trade our capital, and keep 100% of your profits until you reach $25K. Stop risking your own money."
+    },
+    {
+      "title": "AI Model & API Providers Analysis | Artificial Analysis",
+      "url": "https://artificialanalysis.ai/",
+      "snippet": "Comparison and analysis of AI models and API hosting providers. Independent benchmarks across key performance metrics including quality, price, output speed & latency."
+    },
+    {
+      "title": "GitHub - gaomingqi/Awesome-Video-Object-Segmentation: Latest advances ...",
+      "url": "https://github.com/gaomingqi/awesome-video-object-segmentation",
+      "snippet": "🔥 Latest advances in Video Object Segmentation (VOS) - papers, datasets, and projects. - gaomingqi/Awesome-Video-Object-Segmentation"
+    },
+    {
+      "title": "Building tools for shared knowledge - Creative Commons",
+      "url": "https://creativecommons.org/",
+      "snippet": "Learn how we&#x27;re adapting to address sharing in the age of AI, from developing new frameworks like CC Signals, strengthening licensing guidance, and advocating for policies that keep access to knowledge open and equitable."
+    },
+    {
+      "title": "AI learns how vision and sound are connected, without human ...",
+      "url": "https://news.mit.edu/2025/ai-learns-how-vision-and-sound-are-connected-without-human-intervention-0522",
+      "snippet": "A new machine-learning model learns to pinpoint exactly where a particular sound occurs in a video clip without the need for human intervention. The model could have applications in areas like journalism and film production or education and training."
+    }
+  ]
+}

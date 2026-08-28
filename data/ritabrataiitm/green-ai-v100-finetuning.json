@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "Ritabrataiitm/green-ai-v100-finetuning",
+  "slug": "ritabrataiitm-green-ai-v100-finetuning",
+  "author": "Ritabrataiitm",
+  "url": "https://huggingface.co/Ritabrataiitm/green-ai-v100-finetuning",
+  "created_at": "2026-08-28T15:44:31.000Z",
+  "updated_at": "2026-08-28T15:55:16.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "co2_eq_emissions",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "‎Google Gemini",
+      "url": "https://gemini.google.com/",
+      "snippet": "Get assistance with writing, planning, learning, and more from Google AI."
+    },
+    {
+      "title": "Ankush Gupta | Bookmark this. It is basically a map of the modern AI ...",
+      "url": "https://www.instagram.com/p/DcgN26KEYe3/",
+      "snippet": "58 likes, 32 comments - ankush_ai_growth on August 25, 2026: \"Bookmark this. It is basically a map of the modern AI builder stack. I pulled together 100 real, active GitHub repos that people actually use to build with AI - and sorted them into 10 categories so you can find what you need fast: - LLM App Frameworks - Agent Frameworks - Local & Inference - Vector DBs & RAG - Model Access ..."
+    },
+    {
+      "title": "Fine Tuning LLMs: Complete Guide for 2026 - solguruz.com",
+      "url": "https://solguruz.com/generative-ai/fine-tuning-llm/",
+      "snippet": "Explore More AI Topics Key Takeaway Fine-tuning an LLM adapts a pre-trained model to a specific task or domain without training from scratch. The most popular methods include SFT (Supervised Fine-Tuning), LoRA, QLoRA, and RLHF. Parameter-Efficient Fine-Tuning (PEFT) techniques like LoRA make fine-tuning possible on consumer-grade GPUs."
+    },
+    {
+      "title": "Bypassing the V100 : Finetuning LLM on a Single 3060 Card",
+      "url": "https://medium.com/@AILearning/bypassing-the-v100-train-llm-on-a-single-3060-card-3165aef506c4",
+      "snippet": "Bypassing the V100 : Finetuning LLM on a Single 3060 Card People are now always talking about large models, and ChatGPT has become one of the hottest topics in AI."
+    },
+    {
+      "title": "AI model fine-tuning concepts | Microsoft Learn",
+      "url": "https://learn.microsoft.com/en-us/windows/ai/fine-tuning",
+      "snippet": "Learn AI model fine-tuning concepts and discover when fine-tuning can optimize your data and improve model performance. Get started with practical guidance."
+    }
+  ]
+}

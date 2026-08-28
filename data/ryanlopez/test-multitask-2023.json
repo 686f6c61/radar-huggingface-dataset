@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "ryanlopez/test-multitask-2023",
+  "slug": "ryanlopez-test-multitask-2023",
+  "author": "ryanlopez",
+  "url": "https://huggingface.co/ryanlopez/test-multitask-2023",
+  "created_at": "2026-08-28T18:27:29.000Z",
+  "updated_at": "2026-08-28T18:27:40.000Z",
+  "license": "bsd-3-clause",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "mocov3",
+    "pytorch",
+    "multitask",
+    "license:bsd-3-clause",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 24832,
+  "parameters_human": "24832",
+  "storage_bytes": 99808,
+  "storage_human": "99808 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ryanlopezzzz (Ryan Lopez) · GitHub",
+      "url": "https://github.com/ryanlopezzzz",
+      "snippet": "A graph representing ryanlopezzzz&#x27;s contributions from July 20, 2025 to July 26, 2026. The contributions are 100% commits, 0% issues, 0% pull requests, 0% code review."
+    },
+    {
+      "title": "AI Detector: Free AI Checker for ChatGPT, Claude & GPT-5 - QuillBot",
+      "url": "https://quillbot.com/ai-content-detector",
+      "snippet": "Quillbot&#x27;s free AI Detector checks text from ChatGPT, GPT-5, Claude and others. Get an AI score, sentence-level highlights, and refined AI detection insights."
+    },
+    {
+      "title": "Measuring AI Ability to Complete Long Software Tasks - METR",
+      "url": "https://metr.org/blog/2025-03-19-measuring-ai-ability-to-complete-long-tasks/",
+      "snippet": "Conclusion We believe this work has important implications for AI benchmarks, forecasts, and risk management. First, our work demonstrates an approach to making benchmarks more useful for forecasting: measuring AI performance in terms of the length of tasks the system can complete (as measured by how long the tasks take humans)."
+    },
+    {
+      "title": "Free AI Models - GitHub",
+      "url": "https://github.com/ClawLabsAI/free-ai-models",
+      "snippet": "The free AI model landscape changes every week — models get added, rate limits change, providers shut down without notice. This repo tracks it all automatically so you don&#x27;t have to. Use it to: Find the best free model for your current task Track which providers offer the most generous free tiers Get notified of new free models via GitHub Watch → Releases Build your own routing logic on ..."
+    },
+    {
+      "title": "AI Aimbot Models & YOLO Detection Models | MossyModels",
+      "url": "https://mossymodels.com/",
+      "snippet": "AI Aimbot Models & YOLO Detection Models Browse 661+ free YOLO and ONNX detection models across 43+ games. Community library for Fortnite, Valorant, Warzone, Apex Legends, and more. MossyModels is a community library of YOLO and ONNX detection models for first-person shooters."
+    }
+  ]
+}

@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "hxii/LFM2.5-2.6B-Hex",
+  "slug": "hxii-lfm2-5-2-6b-hex",
+  "author": "hxii",
+  "url": "https://huggingface.co/hxii/LFM2.5-2.6B-Hex",
+  "created_at": "2026-08-28T13:48:28.000Z",
+  "updated_at": "2026-08-28T14:24:16.000Z",
+  "license": "lfm1.0",
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "text-generation",
+    "dataset:Skyhigh-2203/MiMo-2.5-Pro-Reasoning-Traces-Hard",
+    "base_model:LiquidAI/LFM2.5-2.6B",
+    "base_model:finetune:LiquidAI/LFM2.5-2.6B",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 167622,
+  "storage_human": "167622 B",
+  "base_model": "LiquidAI/LFM2.5-2.6B",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "LiquidAI/LFM2.5-2.6B · Hugging Face",
+      "url": "https://huggingface.co/LiquidAI/LFM2.5-2.6B",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "LFM2.5-2.6B - Liquid Docs",
+      "url": "https://docs.liquid.ai/lfm/models/lfm25-2.6b",
+      "snippet": "2.6B dense model trained for agentic workloads, with a 128K context window and native tool calling for on-device agents ← Back to Text Models LFM2.5-2.6B is Liquid AI&#x27;s 2.6B dense model built for agentic workloads with a 128K context window and native tool calling."
+    },
+    {
+      "title": "Deploy local agents everywhere with LFM2.5-2.6B - Hugging Face",
+      "url": "https://huggingface.co/blog/LiquidAI/lfm2-5-2-6b",
+      "snippet": "Due to its efficient LFM2 architecture, LFM2.5-2.6B is the fastest model we tested, with decode speeds of 220 tokens/s on an M5 Max and 113 tokens/s on a Ryzen AI Max+ 395."
+    },
+    {
+      "title": "LFM2.5-2.6B: Deploy Agents Everywhere | Blog | Liquid AI",
+      "url": "https://www.liquid.ai/blog/lfm2-5-2-6b",
+      "snippet": "LFM2.5-2.6B is an on-device agentic model that plans, calls tools, and runs multi-step tasks at 220 tok/s in under 2.5 GB. Open weights on Hugging Face."
+    },
+    {
+      "title": "LFM2.5-2.6B Benchmarks & Context (August 2026) | BenchLM.ai",
+      "url": "https://benchlm.ai/models/lfm2-5-2-6b",
+      "snippet": "LFM2.5-2.6B ranks #179 of 226 on the public leaderboard with a score of 42.87/100. It does not yet have enough sourced coverage for a verified position. LFM2.5-2.6B is a open weight model with a 128K context window. It uses an explicit reasoning mode, which can improve complex problem solving while adding latency and token use. Liquid AI publishes the 2.69B-parameter BF16 checkpoint and GGUF ..."
+    }
+  ]
+}

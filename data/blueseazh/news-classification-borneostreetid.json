@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "blueseazh/news-classification-borneostreetid",
+  "slug": "blueseazh-news-classification-borneostreetid",
+  "author": "blueseazh",
+  "url": "https://huggingface.co/blueseazh/news-classification-borneostreetid",
+  "created_at": "2026-08-28T12:12:47.000Z",
+  "updated_at": "2026-08-28T12:13:20.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-classification",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "bert",
+    "text-classification",
+    "arxiv:1910.09700",
+    "text-embeddings-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 124445958,
+  "parameters_human": "124.4M",
+  "storage_bytes": 497807376,
+  "storage_human": "498 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "AI News Today 2026 | Latest AI Model Releases, Trends & Analysis",
+      "url": "https://www.buildfastwithai.com/blogs/collection/ai-industry-news-trends",
+      "snippet": "Daily AI news, model releases, and deep analysis for 2026. Track every announcement from OpenAI, Anthropic, Google, Meta, xAI, and the open-source ecosystem in one place."
+    },
+    {
+      "title": "LLM Updates (August 2026) - AI Model Releases & Provider Activity",
+      "url": "https://lmmarketcap.com/llm-updates",
+      "snippet": "Track AI model releases, recently added endpoints, and provider update cadence across GPT, Claude, Gemini, DeepSeek, Llama, and 350+ models."
+    },
+    {
+      "title": "AI Detector: Free AI Checker for ChatGPT, Claude & GPT-5 - QuillBot",
+      "url": "https://quillbot.com/ai-content-detector",
+      "snippet": "Quillbot&#x27;s free AI Detector checks text from ChatGPT, GPT-5, Claude and others. Get an AI score, sentence-level highlights, and refined AI detection insights."
+    },
+    {
+      "title": "Daily AI News for August 28, 2026 | Third Run Time",
+      "url": "https://thirdruntime.com/",
+      "snippet": "All the major AI news for August 28, 2026. A daily roundup of the latest developments, research, and trends in artificial intelligence from top sources around the world."
+    },
+    {
+      "title": "AI Detector - Free AI Checker for ChatGPT, GPT-5 & Gemini",
+      "url": "https://gptzero.me/",
+      "snippet": "GPTZero detects AI content from Claude, ChatGPT, GPT-5, Gemini, and checks writing quality to make every word worth reading."
+    }
+  ]
+}

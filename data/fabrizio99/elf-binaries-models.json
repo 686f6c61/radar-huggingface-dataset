@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "Fabrizio99/elf-binaries-models",
+  "slug": "fabrizio99-elf-binaries-models",
+  "author": "Fabrizio99",
+  "url": "https://huggingface.co/Fabrizio99/elf-binaries-models",
+  "created_at": "2026-08-28T18:02:48.000Z",
+  "updated_at": "2026-08-28T18:02:58.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 96556226,
+  "storage_human": "97 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Fabrizio99 (Fabrizio) - Hugging Face",
+      "url": "https://huggingface.co/Fabrizio99",
+      "snippet": "User profile of Fabrizio on Hugging Face"
+    },
+    {
+      "title": "GitHub - 12britz/awesome-free-models: A curated list of free AI models ...",
+      "url": "https://github.com/12britz/awesome-free-models",
+      "snippet": "A curated list of free AI models, APIs, and tools you can use without paying a cent. - 12britz/awesome-free-models"
+    },
+    {
+      "title": "GitHub - lillian039/ELF",
+      "url": "https://github.com/lillian039/ELF",
+      "snippet": "ELF is a class of continuous diffusion language models based on continuous-time Flow Matching. Unlike existing DLMs, ELF predominantly stays within the continuous embedding space until the final time step, where it maps to discrete tokens using a shared-weight network."
+    },
+    {
+      "title": "Linux ELF Malware Generator Evades ML Detection With Semantic ...",
+      "url": "https://cybersecuritytimes.com/linux-elf-malware-generator/",
+      "snippet": "A sophisticated adversarial malware generator targeting Linux&#x27;s Executable and Linkable Format (ELF) binaries, one capable of fooling machine learning-based malware detectors while keeping the malicious code fully functional. The work, titled Adversarial Malware Generation in Linux ELF Binaries via Semantic-Preserving Transformations, achieved an evasion rate of 67.74% against the widely ..."
+    },
+    {
+      "title": "AI Model Catalog | Microsoft Foundry Models",
+      "url": "https://ai.azure.com/catalog/models",
+      "snippet": "Explore the comprehensive catalog of AI models from Microsoft Foundry"
+    }
+  ]
+}

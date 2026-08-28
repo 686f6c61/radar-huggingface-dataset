@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "zarko1321/TechodexAI-Eather",
+  "slug": "zarko1321-techodexai-eather",
+  "author": "zarko1321",
+  "url": "https://huggingface.co/zarko1321/TechodexAI-Eather",
+  "created_at": "2026-08-28T18:10:26.000Z",
+  "updated_at": "2026-08-28T18:11:14.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 142308,
+  "storage_human": "142308 B",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Google Earth AI",
+      "url": "https://ai.google/earth-ai/",
+      "snippet": "Earth AI unites Google&#x27;s decades of state-of-the-art geospatial models with actionable reasoning powered by Gemini, empowering everyone to tackle planet-scale challenges."
+    },
+    {
+      "title": "WeatherAI™ | Intelligent Weather Forecasting - WeatherAI™",
+      "url": "https://weatherai.com/home/",
+      "snippet": "Smarter Weather, Powered by AI Neural ensemble forecasting. Real-time data fusion. Accurate to the mile."
+    },
+    {
+      "title": "WeatherEx | Hyperlocal AI Weather Intelligence Platform",
+      "url": "https://weatherex.ai/",
+      "snippet": "WeatherEx is a global to hyperlocal weather intelligence platform combining advanced weather models, atmospheric physics, proprietary AI/ML and geospatial analytics for energy, agriculture, aviation, navigation and weather sensitive operations"
+    },
+    {
+      "title": "Weather API: AI Forecasts, Data & Insights | Google Maps Platform",
+      "url": "https://mapsplatform.google.com/maps-products/weather/",
+      "snippet": "Power your business with Google Maps Weather API. Access hyperlocal, real-time forecasts & AI-enhanced insights from Google&#x27;s advanced weather models."
+    },
+    {
+      "title": "Google DeepMind Open Sources WeatherNext AI Cyclone Forecasting Model",
+      "url": "https://www.opensourceforu.com/2026/08/google-deepmind-weathernext-ai/",
+      "snippet": "Google DeepMind&#x27;s WeatherNext AI model extends tropical cyclone warning lead times by 24 hours and is now freely available as an open-source tool for global researchers."
+    }
+  ]
+}

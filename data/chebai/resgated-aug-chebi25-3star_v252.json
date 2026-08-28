@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "chebai/resgated-aug-chebi25-3star_v252",
+  "slug": "chebai-resgated-aug-chebi25-3star_v252",
+  "author": "chebai",
+  "url": "https://huggingface.co/chebai/resgated-aug-chebi25-3star_v252",
+  "created_at": "2026-08-28T15:44:56.000Z",
+  "updated_at": "2026-08-28T15:46:01.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "dataset:chebai/ChEBI25_v252",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 54818394,
+  "storage_human": "55 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "chebai/ChEBI25-3STAR · Datasets at Hugging Face",
+      "url": "https://huggingface.co/datasets/chebai/ChEBI25-3STAR",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "chebai/gat-aug-chebi25-3star_v248 · Hugging Face",
+      "url": "https://huggingface.co/chebai/gat-aug-chebi25-3star_v248",
+      "snippet": "A Graph Attention Network trained on the ChEBI25-3STAR dataset with the ChEB-AI Graph library. This repository includes the PyTorch lightning checkpoint for the model as well as the configuration files and library version used for training. For details about the architecture, see"
+    },
+    {
+      "title": "LLM Leaderboard & AI Model Benchmarks — August 2026",
+      "url": "https://benchlm.ai/",
+      "snippet": "Compare 406 AI models across 406 benchmarks, with 228 ranked scores, source evidence, API pricing, context windows, runtime, and head-to-head pages."
+    },
+    {
+      "title": "‎Google Gemini",
+      "url": "https://gemini.google.com/?hl=en-GB",
+      "snippet": "Meet Gemini, Google&#x27;s AI assistant. Get help with writing, planning, brainstorming and more. Experience the power of generative AI."
+    },
+    {
+      "title": "‎Google Gemini",
+      "url": "https://gemini.google.com/",
+      "snippet": "Meet Gemini, Google&#x27;s AI assistant. Get help with writing, planning, brainstorming, and more. Experience the power of generative AI."
+    }
+  ]
+}

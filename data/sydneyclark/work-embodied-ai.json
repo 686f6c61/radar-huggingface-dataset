@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "Sydneyclark/work-embodied-ai",
+  "slug": "sydneyclark-work-embodied-ai",
+  "author": "Sydneyclark",
+  "url": "https://huggingface.co/Sydneyclark/work-embodied-ai",
+  "created_at": "2026-08-28T16:13:36.000Z",
+  "updated_at": "2026-08-28T16:13:44.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "transformer",
+    "research-notes",
+    "embodied-ai",
+    "license:cc-by-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 16576,
+  "parameters_human": "16576",
+  "storage_bytes": 66784,
+  "storage_human": "66784 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "LLM Leaderboard 2026: Compare 300+ Top AI Models by Intelligence, Speed ...",
+      "url": "https://llm-stats.com/leaderboards/llm-leaderboard",
+      "snippet": "The LLM Leaderboard — independent ranking of GPT, Claude, Gemini, Llama, DeepSeek and 300+ AI models by intelligence, speed and price. Filter by provider, license, modality and context window; sort by every benchmark. Composite LLM Stats Score updated continuously from public benchmarks and live API metrics."
+    },
+    {
+      "title": "Embodied AI: A Survey on the Evolution from Perceptive to Behavioral ...",
+      "url": "https://onlinelibrary.wiley.com/doi/full/10.1002/smb2.70003",
+      "snippet": "In contrast, embodied artificial intelligence (Embodied AI) enables artificial agents with physical embodiment to achieve intelligent behavior through interactions with environments. However, there are few comprehensive surveys on Embodied AI from the perspective of robot behavior within the AI domain."
+    },
+    {
+      "title": "[2506.22355] Embodied AI Agents: Modeling the World - arXiv.org",
+      "url": "https://arxiv.org/abs/2506.22355",
+      "snippet": "This paper describes our research on AI agents embodied in visual, virtual or physical forms, enabling them to interact with both users and their environments. These agents, which include virtual avatars, wearable devices, and robots, are designed to perceive, learn and act within their surroundings, which makes them more similar to how humans learn and interact with the environments as ..."
+    },
+    {
+      "title": "Who Made Ox Alpha? the Mystery AI Is Turning Heads in Silicon Valley ...",
+      "url": "https://www.businessinsider.com/ox-alpha-ai-model-mystery-2026-8?op=1",
+      "snippet": "The new Ox Alpha AI model is turning heads in Silicon Valley, but no one knows its origin, much like this stone carving on display at the Shanxi Bronze Museum in China."
+    },
+    {
+      "title": "Embodied AI - Nature",
+      "url": "https://www.nature.com/collections/ibgfciaafb",
+      "snippet": "Embodied Artificial Intelligence (Embodied AI) is a cutting-edge field that aims to integrate AI into physical entities like robots, endowing them with the ability to actively perceive, learn from ..."
+    }
+  ]
+}

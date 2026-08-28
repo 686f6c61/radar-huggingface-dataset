@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "Thiago-Reis-Porto/JabuticaBERT-Large",
+  "slug": "thiago-reis-porto-jabuticabert-large",
+  "author": "Thiago-Reis-Porto",
+  "url": "https://huggingface.co/Thiago-Reis-Porto/JabuticaBERT-Large",
+  "created_at": "2026-08-28T16:09:55.000Z",
+  "updated_at": "2026-08-28T16:09:56.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "feature-extraction",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "deberta-v2",
+    "feature-extraction",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 434012160,
+  "parameters_human": "434.0M",
+  "storage_bytes": 1738462110,
+  "storage_human": "1.7 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "JabuticaBERT: Modern Portuguese Encoders from Scratch with RTD and Long ...",
+      "url": "https://aclanthology.org/2026.propor-1.93/",
+      "snippet": "Thiago Porto, Gabriel Gomes, Alexandre Bender, Ulisses Corrêa, Larissa Freitas, William Cruz, Marcellus Amadeus. Proceedings of the 17th International Conference on Computational Processing of Portuguese (PROPOR 2026) - Vol. 1. 2026."
+    },
+    {
+      "title": "amadeusai/JabuticaBERT-Large · Hugging Face",
+      "url": "https://huggingface.co/amadeusai/JabuticaBERT-Large",
+      "snippet": "amadeusai / JabuticaBERT-Large like 0 Follow AMADEUS AI 42 Feature Extraction Transformers Safetensors deberta-v2 arxiv:1910.09700 Model card FilesFiles and versions xet Community Deploy Use this model"
+    },
+    {
+      "title": "JabuticaBERT - a amadeusai Collection - Hugging Face",
+      "url": "https://huggingface.co/collections/amadeusai/jabuticabert",
+      "snippet": "Modern Portuguese Encoders from Scratch with RTD and Long-Context Training"
+    },
+    {
+      "title": "PDF JabuticaBERT: Modern Portuguese Encoders from Scratch ... - ACL Anthology",
+      "url": "https://aclanthology.org/2026.propor-1.93.pdf",
+      "snippet": "In particular, JabuticaBERT Large attains competitive scores on ASSIN2 RTE, STS and ToldBR, and achieves the highest F1 score on LeNER among the JabuticaBERT variants, indi- cating that high accuracy can be achieved without relying on extreme model scaling."
+    },
+    {
+      "title": "PDF Proceedings of the 17th International Conference on Computational ...",
+      "url": "https://www.proceedings.com/content/085/085366webtoc.pdf",
+      "snippet": "JabuticaBERT: Modern Portuguese Encoders from Scratch with RTD and Long-Context Training Thiago Porto, Gabriel Gomes, Alexandre Bender, Ulisses Corrêa, Larissa Freitas, William Cruz"
+    }
+  ]
+}

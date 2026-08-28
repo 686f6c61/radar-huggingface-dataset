@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "juliawjw/contrastive",
+  "slug": "juliawjw-contrastive",
+  "author": "juliawjw",
+  "url": "https://huggingface.co/juliawjw/contrastive",
+  "created_at": "2026-08-28T19:13:08.000Z",
+  "updated_at": "2026-08-28T19:13:17.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "blip",
+    "pytorch",
+    "contrastive",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 16576,
+  "parameters_human": "16576",
+  "storage_bytes": 66784,
+  "storage_human": "66784 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - nomic-ai/contrastors: Train Models Contrastively in Pytorch",
+      "url": "https://github.com/nomic-ai/contrastors",
+      "snippet": "Train Models Contrastively in Pytorch. Contribute to nomic-ai/contrastors development by creating an account on GitHub."
+    },
+    {
+      "title": "Best Free AI Models & APIs (2026) | LM Market Cap",
+      "url": "https://lmmarketcap.com/free-ai-models",
+      "snippet": "Every free AI model ranked by quality: free LLMs, coding assistants, and image generators. No API costs, open-source, and ready to use. Start for free."
+    },
+    {
+      "title": "GitHub - DonoToT/CoCoVideo: CoCoVideo: The High-Quality Commercial ...",
+      "url": "https://github.com/DonoToT/CoCoVideo",
+      "snippet": "To address these issues, we introduce CoCoVideo-26K, a contrastive, commercial-model-based AIGC video dataset covering 13 mainstream commercial generators and providing semantically aligned real-fake video pairs."
+    },
+    {
+      "title": "Contrastive Learning - Generative AI for Biomedical Research",
+      "url": "https://junwei-lu.github.io/ai4med/chapter_self_supervised_learning/contrastive_learning/",
+      "snippet": "Contrastive learning depends on what we decide should count as \"the same example.\" If two different crops of the same dog should map nearby, the model must learn the concept of the dog rather than one exact pixel pattern. Common augmentations include: random crop and resize, horizontal flip, color jitter, grayscale conversion, blur."
+    },
+    {
+      "title": "Visualizing and Understanding Contrastive Learning - arXiv.org",
+      "url": "https://arxiv.org/html/2206.09753v3",
+      "snippet": "Visualizing and Understanding Contrastive Learning Thanks: This research received funding from the FWO (Grants G014718N, G0A4720N and 1SB5721N) and from imec through the AAA project Trustworthy AI Methods (TAIM). F. Sammani, B. Joukovsky and N. Deligiannis are with the Department of Electronics and Informatics, Vrije Universiteit Brussel, Pleinlaan 2, B-1050 Brussels, Belgium and also with ..."
+    }
+  ]
+}

@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "JamesTrfn/reading-data-efficient-learning47",
+  "slug": "jamestrfn-reading-data-efficient-learning47",
+  "author": "JamesTrfn",
+  "url": "https://huggingface.co/JamesTrfn/reading-data-efficient-learning47",
+  "created_at": "2026-08-28T12:49:06.000Z",
+  "updated_at": "2026-08-28T12:49:14.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "transformer",
+    "research-notes",
+    "data-efficient-learning",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 24832,
+  "parameters_human": "24832",
+  "storage_bytes": 99808,
+  "storage_human": "99808 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "JamesTrfn (James TAYLOR) - Hugging Face",
+      "url": "https://huggingface.co/JamesTrfn",
+      "snippet": "Trying to understand why my model overfits AI & ML interests Trying to understand why my model overfits"
+    },
+    {
+      "title": "Deep Learning Monitor - Find new Arxiv papers, tweets and Reddit posts ...",
+      "url": "https://deeplearn.org/",
+      "snippet": "Whose doctor does the AI recommend? An algorithm audit of reputation and demographic signals in large language model-assisted physician choice Syeda Anshrah Gillani, Mirza Samad Ahmed Baig 2026-08-14 PDF Mendeley"
+    },
+    {
+      "title": "Google Translate",
+      "url": "https://translate.google.com/",
+      "snippet": "Google&#x27;s service, offered free of charge, instantly translates words, phrases, and web pages between English and over 100 other languages."
+    },
+    {
+      "title": "Open LLM Leaderboard 2026 - Compare Open Source LLM Rankings",
+      "url": "https://llm-stats.com/leaderboards/open-llm-leaderboard",
+      "snippet": "Compare the best open source LLMs in the open LLM leaderboard with LLM rankings, pricing, speed, context windows, and benchmark scores."
+    },
+    {
+      "title": "Find Open Datasets and Machine Learning Projects | Kaggle",
+      "url": "https://www.kaggle.com/datasets",
+      "snippet": "Browse and download hundreds of thousands of open datasets for AI research, model training, and analysis. Join a community of millions of researchers, developers, and builders to share and collaborate on Kaggle."
+    }
+  ]
+}

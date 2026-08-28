@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "pngwn/memcap-l-above-capacity",
+  "slug": "pngwn-memcap-l-above-capacity",
+  "author": "pngwn",
+  "url": "https://huggingface.co/pngwn/memcap-l-above-capacity",
+  "created_at": "2026-08-28T14:43:03.000Z",
+  "updated_at": "2026-08-28T14:48:23.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "gpt2",
+    "memorization",
+    "capacity",
+    "from-scratch",
+    "reproduction",
+    "arxiv:2505.24832",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 8438784,
+  "parameters_human": "8.4M",
+  "storage_bytes": 33767408,
+  "storage_human": "34 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "pngwn (Pete) - Hugging Face",
+      "url": "https://huggingface.co/pngwn",
+      "snippet": "Update and analyze a dataframe with button clicks. pngwn Oct 8, 2025. View 110 Spaces. models 2. Sort: Recently updated"
+    },
+    {
+      "title": "Analysis of a Memcapacitor‐Based Online Learning Neural Network ...",
+      "url": "https://www.researchgate.net/publication/390336925_Analysis_of_a_Memcapacitor-Based_Online_Learning_Neural_Network_Accelerator_Framework",
+      "snippet": "The integration of memcap acitor technology wi thin neural net- works not only enhances computationa l ef ﬁciency but also under-"
+    },
+    {
+      "title": "Google",
+      "url": "https://www.google.com/",
+      "snippet": "Search the world&#x27;s information, including webpages, images, videos and more. Google has many special features to help you find exactly what you&#x27;re looking for."
+    },
+    {
+      "title": "Memory-Augmented Capsule Network for Adaptable Lung Nodule Classification",
+      "url": "https://par.nsf.gov/servlets/purl/10282858",
+      "snippet": "CapsNet Controller Fig. 1. Overview of the episodic meta-training (Left) and meta-testing (Right) of the MEMCAP for adaptive lung nodule classification. During the meta-training phase, the model learns to quickly encode and retrieve the required information about the new domain (task) using a small subset of annotated samples."
+    },
+    {
+      "title": "Google Images",
+      "url": "https://images.google.com/",
+      "snippet": "Google Images. The most comprehensive image search on the web."
+    }
+  ]
+}

@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "Krishkum/vit-demo",
+  "slug": "krishkum-vit-demo",
+  "author": "Krishkum",
+  "url": "https://huggingface.co/Krishkum/vit-demo",
+  "created_at": "2026-08-28T19:02:37.000Z",
+  "updated_at": "2026-08-28T19:02:45.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "vit",
+    "pytorch",
+    "generation",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 33088,
+  "parameters_human": "33088",
+  "storage_bytes": 132832,
+  "storage_human": "132832 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Vit Model Demo - a Hugging Face Space by grego",
+      "url": "https://huggingface.co/spaces/grego/vit-model-demo",
+      "snippet": "Discover amazing ML apps made by the community"
+    },
+    {
+      "title": "clp/vit-demo · Hugging Face",
+      "url": "https://huggingface.co/clp/vit-demo",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "ai-hub-models/qai_hub_models/models/vit/demo.py at main - GitHub",
+      "url": "https://github.com/qualcomm/ai-hub-models/blob/main/qai_hub_models/models/vit/demo.py",
+      "snippet": "Qualcomm® AI Hub Models is our collection of state-of-the-art machine learning models optimized for performance (latency, memory etc.) and ready to deploy on Qualcomm® devices. - qualcomm/ai-hub-mo..."
+    },
+    {
+      "title": "VITA/web_demo at main · VITA-MLLM/VITA · GitHub",
+      "url": "https://github.com/VITA-MLLM/VITA/tree/main/web_demo",
+      "snippet": "VITA / web_demo / shawnleolxy update to deploy model on 2 devices 898a03e · last year History"
+    },
+    {
+      "title": "viT model | Kaggle",
+      "url": "https://www.kaggle.com/code/roshansanu/vit-model",
+      "snippet": "Explore and run AI code with Kaggle Notebooks | Using data from multiple data sources"
+    }
+  ]
+}

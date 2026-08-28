@@ -1,0 +1,77 @@
+{
+  "schema": 1,
+  "id": "muradil211/AetherSearch-SFT",
+  "slug": "muradil211-aethersearch-sft",
+  "author": "muradil211",
+  "url": "https://huggingface.co/muradil211/AetherSearch-SFT",
+  "created_at": "2026-08-28T13:17:12.000Z",
+  "updated_at": "2026-08-28T15:11:57.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen2",
+    "text-generation",
+    "aethersearch",
+    "agentic-search",
+    "search-augmented-generation",
+    "supervised-fine-tuning",
+    "conversational",
+    "en",
+    "dataset:muradil211/AetherSearch_SFT",
+    "base_model:Qwen/Qwen2.5-3B-Instruct",
+    "base_model:finetune:Qwen/Qwen2.5-3B-Instruct",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 3085938688,
+  "parameters_human": "3.09B",
+  "storage_bytes": 6183348896,
+  "storage_human": "6.2 GB",
+  "base_model": "Qwen/Qwen2.5-3B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "muradil211/AetherSearch · Hugging Face",
+      "url": "https://huggingface.co/muradil211/AetherSearch",
+      "snippet": "AetherSearch AetherSearch is a search-augmented language model release trained through a multi-stage post-training pipeline with SFT, DPO, and reinforcement learning. The released weights are provided in Hugging Face Transformers format and can be loaded with AutoModelForCausalLM and AutoTokenizer."
+    },
+    {
+      "title": "muradil211 (muradil·mamat) - Hugging Face",
+      "url": "https://huggingface.co/muradil211",
+      "snippet": "Sort: Recently updated muradil211/AetherSearch-Eval Viewer •Updated about 11 hours ago•51.7k"
+    },
+    {
+      "title": "AetherSearch API & Inference Endpoint | FriendliAI",
+      "url": "https://friendli.ai/models/muradil211/AetherSearch",
+      "snippet": "Deploy AetherSearch with low-latency inference on FriendliAI. Get scalable API serving, high throughput, and production-grade reliability for AI agents."
+    },
+    {
+      "title": "Network Graph · Muradil-mamat-211/AetherSearch · GitHub",
+      "url": "https://github.com/Muradil-mamat-211/AetherSearch/network",
+      "snippet": "AetherSearch is a 3B agentic search model trained through full-trajectory SFT, preference optimization with DPO, and information-gain-guided Agentic RL to learn effective multi-turn retrieval and reasoning."
+    },
+    {
+      "title": "made-in-abyss/AetherSearch - GitHub",
+      "url": "https://github.com/made-in-abyss/AetherSearch",
+      "snippet": "An open-sourced, admittedly vibe-coded Electron-wrapped federated crawler combining Google News, Reddit, Wikipedia, and GitHub API feeds with dynamic relevance scoring in a local, single-binary app..."
+    }
+  ]
+}

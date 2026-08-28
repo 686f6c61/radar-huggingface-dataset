@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "23f1000346/tds-carbon-card",
+  "slug": "23f1000346-tds-carbon-card",
+  "author": "23f1000346",
+  "url": "https://huggingface.co/23f1000346/tds-carbon-card",
+  "created_at": "2026-08-28T18:03:19.000Z",
+  "updated_at": "2026-08-28T18:04:27.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "co2_eq_emissions",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Obaid2026/tds-carbon-card · Hugging Face",
+      "url": "https://huggingface.co/Obaid2026/tds-carbon-card",
+      "snippet": "Model Card - Green AI Carbon Accounting This repository documents the carbon footprint and energy accounting for the assigned model training run in TDS GA8."
+    },
+    {
+      "title": "23f1003136/tds-carbon-card · Hugging Face",
+      "url": "https://huggingface.co/23f1003136/tds-carbon-card",
+      "snippet": "Model Card - Green AI Carbon Accounting This repository documents the carbon footprint and energy accounting for the assigned model training run in TDS GA8."
+    },
+    {
+      "title": "23f1000346 · GitHub",
+      "url": "https://github.com/23f1000346",
+      "snippet": "23f1000346 has 2 repositories available. Follow their code on GitHub."
+    },
+    {
+      "title": "carbontxt.org",
+      "url": "https://carbontxt.org/ai-model-cards",
+      "snippet": "AI Model Sustainability Directory Using the carbon.txt syntax and validator, we have extracted the sustainability data from over 2500 AI model cards from Hugging Face that are listed with co2_eq_emissions metadata."
+    },
+    {
+      "title": "Model Card Explorer",
+      "url": "https://model-card.vercel.app/about",
+      "snippet": "Our platform extracts structured evaluation data from each card and enables cross-lab and cross-generation comparisons. By tracking what AI companies disclose about their models&#x27; capabilities, limitations, and safety evaluations, we make it easier for researchers, policymakers, and the public to understand the state of AI governance."
+    }
+  ]
+}

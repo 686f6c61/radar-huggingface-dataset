@@ -1,0 +1,76 @@
+{
+  "schema": 1,
+  "id": "kstoyanov99/qwen38-flash-next-nvfp4",
+  "slug": "kstoyanov99-qwen38-flash-next-nvfp4",
+  "author": "kstoyanov99",
+  "url": "https://huggingface.co/kstoyanov99/qwen38-flash-next-nvfp4",
+  "created_at": "2026-08-28T14:34:01.000Z",
+  "updated_at": "2026-08-28T15:23:24.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": "image-text-to-text",
+  "library": "Model Optimizer",
+  "languages": [],
+  "tags": [
+    "Model Optimizer",
+    "safetensors",
+    "qwen4_exp",
+    "ModelOpt",
+    "Qwen3.8",
+    "quantized",
+    "FP4",
+    "fp4",
+    "sglang",
+    "image-text-to-text",
+    "conversational",
+    "base_model:Qwen/Qwen3.8-Flash-Next",
+    "base_model:quantized:Qwen/Qwen3.8-Flash-Next",
+    "license:other",
+    "8-bit",
+    "modelopt",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 119602003859,
+  "parameters_human": "119.60B",
+  "storage_bytes": 135242371978,
+  "storage_human": "135.2 GB",
+  "base_model": "Qwen/Qwen3.8-Flash-Next",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Qwen3.8-Flash-Next - GitHub",
+      "url": "https://github.com/QwenLM/Qwen3.8-Flash-Next/",
+      "snippet": "Qwen3.8-Flash-Next upgrades the model systematically along four aspects — attention, residual, embedding and optimization — improving model capability while further optimizing computational efficiency, model capacity and training stability: Attention A GDN + QSA hybrid architecture."
+    },
+    {
+      "title": "Qwen3.8-Flash-Next - DGX Spark / GB10 - NVIDIA Developer Forums",
+      "url": "https://forums.developer.nvidia.com/t/qwen3-8-flash-next/381228",
+      "snippet": "Qwen3.8-Flash-Next is a multimodal MoE model. It pairs a large parameter count with a smaller active count per token, plus a huge n-gram embedding table for fast local token lookups, on top of GDN and QSA mechanisms."
+    },
+    {
+      "title": "pocharlies/Qwen3.8-Flash-Next · Hugging Face",
+      "url": "https://huggingface.co/pocharlies/Qwen3.8-Flash-Next",
+      "snippet": "A production-verified recipe (2026-08-27) for serving RadixArk/Qwen3.8-Flash-Next-NVFP4 (125B MoE / 6B active + 51B n-gram PLE + 4B MTP, 135 GB) on two NVIDIA DGX Spark machines with TP=2 over RoCEv2 and SGLang. The RadixArk NVFP4 checkpoint is validated upstream only on GB300/B300; this recipe is the sm_121a (GB10) verification."
+    },
+    {
+      "title": "Qwen/Qwen3.8-Flash-Next | vLLM Recipes",
+      "url": "https://recipes.vllm.ai/Qwen/Qwen3.8-Flash-Next",
+      "snippet": "Qwen4 architecture preview with a 125B-parameter main model, supplemented by an additional 51B N-gram embeddings, with 6B parameters activated per token."
+    },
+    {
+      "title": "GitHub - karti-ai/qwen38-flash-next-spark: Qwen3.8-Flash-Next (~180B ...",
+      "url": "https://github.com/karti-ai/qwen38-flash-next-spark",
+      "snippet": "0xBakeer/qwen38-flash-next-spark — the earlier llama.cpp route (-ot per_layer_token_embd=CPU), which worked first. MiaAI-Lab — multi-Spark GB10 serving recipes and the SM121 kernel approach. RadixArk — the NVFP4 conversion, published with GSM8K/AIME26 metrics, a byte-equality audit, and a scale audit. More rigour than most model vendors ship."
+    }
+  ]
+}

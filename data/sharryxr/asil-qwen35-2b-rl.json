@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "sharryXR/asil-qwen35-2b-rl",
+  "slug": "sharryxr-asil-qwen35-2b-rl",
+  "author": "sharryXR",
+  "url": "https://huggingface.co/sharryXR/asil-qwen35-2b-rl",
+  "created_at": "2026-06-02T08:34:07.000Z",
+  "updated_at": "2026-08-28T15:09:13.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_5_text",
+    "text-generation",
+    "asil",
+    "qwen3.5",
+    "paper-release",
+    "conversational",
+    "arxiv:2608.26991",
+    "base_model:Qwen/Qwen3.5-2B",
+    "base_model:finetune:Qwen/Qwen3.5-2B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 17,
+  "trending_score": 0,
+  "parameters": 2390384448,
+  "parameters_human": "2.39B",
+  "storage_bytes": 4800795213,
+  "storage_human": "4.8 GB",
+  "base_model": "Qwen/Qwen3.5-2B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "sharryXR/asil-qwen35-2b-rl · Hugging Face",
+      "url": "https://huggingface.co/sharryXR/asil-qwen35-2b-rl",
+      "snippet": "sharryXR / asil-qwen35-2b-rl like 0 gui-agents software-agents asil qwen License:other Model card FilesFiles and versions xet Community Copy to bucket new ASIL Model Checkpoint Pending"
+    },
+    {
+      "title": "ASIL Models - a sharryXR Collection - Hugging Face",
+      "url": "https://huggingface.co/collections/sharryXR/asil-models",
+      "snippet": "Model repositories for the ASIL paper release. Final checkpoints are pending transfer from the training server."
+    },
+    {
+      "title": "Alibaba Cloud Model Studio",
+      "url": "https://modelstudio.alibabacloud.com/",
+      "snippet": "Diverse Model Ecosystem Easily experience and quickly access Alibaba Cloud&#x27;s latest foundational models (FM), including Qwen-Max, Qwen-Plus, Qwen-Turbo, Qwen-VL, and the Wan series."
+    },
+    {
+      "title": "sharryXR (Rui Xie) · GitHub",
+      "url": "https://github.com/sharryXR",
+      "snippet": "I&#x27;m a 1st-year PhD student in Computer Science at Shanghai Jiao Tong University (2025-2030), majoring in Computer Science with a focus on GUI Agents. - sharryXR"
+    },
+    {
+      "title": "sharryXR/asil-qwen35-2b-sft · Hugging Face",
+      "url": "https://huggingface.co/sharryXR/asil-qwen35-2b-sft",
+      "snippet": "This model repository is reserved for an ASIL paper-release checkpoint. The final checkpoint files and exact base-model license notice will be uploaded after transfer from the training server."
+    }
+  ]
+}

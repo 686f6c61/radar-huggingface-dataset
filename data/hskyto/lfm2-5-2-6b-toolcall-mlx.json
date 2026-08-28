@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "Hskyto/lfm2.5-2.6b-toolcall-mlx",
+  "slug": "hskyto-lfm2-5-2-6b-toolcall-mlx",
+  "author": "Hskyto",
+  "url": "https://huggingface.co/Hskyto/lfm2.5-2.6b-toolcall-mlx",
+  "created_at": "2026-08-28T16:00:51.000Z",
+  "updated_at": "2026-08-28T16:03:33.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "mlx",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "lfm2",
+    "text-generation",
+    "conversational",
+    "en",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 2697198592,
+  "parameters_human": "2.70B",
+  "storage_bytes": 5412332986,
+  "storage_human": "5.4 GB",
+  "base_model": null,
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Deploy local agents everywhere with LFM2.5-2.6B - Hugging Face",
+      "url": "https://huggingface.co/blog/LiquidAI/lfm2-5-2-6b",
+      "snippet": "CPU inference. Due to its efficient LFM2 architecture, LFM2.5-2.6B is the fastest model we tested, with decode speeds of 220 tokens/s on an M5 Max and 113 tokens/s on a Ryzen AI Max+ 395. At 30 tokens/s, it allows you to run capable agents even on a phone. GPU inference."
+    },
+    {
+      "title": "LFM2.5-2.6B - docs.liquid.ai",
+      "url": "https://docs.liquid.ai/lfm/models/lfm25-2.6b",
+      "snippet": "2.6B dense model trained for agentic workloads, with a 128K context window and native tool calling for on-device agents ← Back to Text Models LFM2.5-2.6B is Liquid AI&#x27;s 2.6B dense model built for agentic workloads with a 128K context window and native tool calling."
+    },
+    {
+      "title": "LiquidAI/LFM2.5-2.6B · Hugging Face",
+      "url": "https://huggingface.co/LiquidAI/LFM2.5-2.6B",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Macaw packs LFM2.5 into 1.5GB: a 4-bit edge LLM running the Mac ...",
+      "url": "https://www.aimodeling.com/en/news/slug/macaw-lfm25-15gb-edge-mac-agent",
+      "snippet": "Bad Theory Labs has repackaged Liquid AI&#x27;s LFM2.5-2.6B into a 1.5 GB local Mac Agent called Macaw. The model weights ship as a 4-bit MLX quantization, driving 97 macOS tools (mail, calendar, files, music, system settings) directly from the local model. No network needed, no account required. On an M2, it hit 10/10 tool-call accuracy, a mean 1.21-second response, and 40.3 tokens/second decoding ..."
+    },
+    {
+      "title": "LFM2.5-2.6B: Deploy Agents Everywhere | Blog | Liquid AI",
+      "url": "https://www.liquid.ai/blog/lfm2-5-2-6b",
+      "snippet": "LFM2.5-2.6B is an on-device agentic model that plans, calls tools, and runs multi-step tasks at 220 tok/s in under 2.5 GB. Open weights on Hugging Face."
+    }
+  ]
+}

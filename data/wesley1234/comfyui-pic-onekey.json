@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "Wesley1234/comfyui-pic-onekey",
+  "slug": "wesley1234-comfyui-pic-onekey",
+  "author": "Wesley1234",
+  "url": "https://huggingface.co/Wesley1234/comfyui-pic-onekey",
+  "created_at": "2026-08-28T16:06:40.000Z",
+  "updated_at": "2026-08-28T16:06:43.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Models - Comfy",
+      "url": "https://comfy.org/models/",
+      "snippet": "Run the world&#x27;s leading AI models in ComfyUI. Browse every supported model with community workflow templates ready to run."
+    },
+    {
+      "title": "t8star/comfyui-pic-onekey · Hugging Face",
+      "url": "https://huggingface.co/t8star/comfyui-pic-onekey",
+      "snippet": "Guys, I&#x27;ve discovered a treasure product for AI images and videos called RunningHub! Global ComfyUI developers release hundreds of extremely interesting and useful AI applications here every day, covering both entertainment and work aspects."
+    },
+    {
+      "title": "ComfyUI Official Documentation - ComfyUI",
+      "url": "https://docs.comfy.org/",
+      "snippet": "Official documentation for ComfyUI, the open source node-based generative AI application. Learn to build workflows for image, video, audio, and 3D generation."
+    },
+    {
+      "title": "Models - ComfyUI",
+      "url": "https://docs.comfy.org/basic-concepts/models",
+      "snippet": "Supported models in ComfyUI Built-in / first-party coverage is intentionally limited but grows over time as ComfyUI and the open-source ecosystem evolve. When a model gains first-class support, you will usually see a new entry in the workflow template library that shows the expected graph and model pairing."
+    },
+    {
+      "title": "GitHub - Comfy-Org/ComfyUI: The most powerful and modular diffusion ...",
+      "url": "https://github.com/Comfy-Org/ComfyUI",
+      "snippet": "ComfyUI The most powerful and modular AI engine for content creation. ComfyUI is the AI creation engine for visual professionals who demand control over every model, every parameter, and every output. Its powerful and modular node graph interface empowers creatives to generate images, videos, 3D models, audio, and more..."
+    }
+  ]
+}

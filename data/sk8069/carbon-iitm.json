@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "sk8069/Carbon-iitm",
+  "slug": "sk8069-carbon-iitm",
+  "author": "sk8069",
+  "url": "https://huggingface.co/sk8069/Carbon-iitm",
+  "created_at": "2026-08-28T17:50:14.000Z",
+  "updated_at": "2026-08-28T17:51:18.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "co2_eq_emissions",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "sk8069/green-ai-carbon-audit-card · Hugging Face",
+      "url": "https://huggingface.co/sk8069/green-ai-carbon-audit-card",
+      "snippet": "sk8069 / green-ai-carbon-audit-card like 0 Carbon Emissions Model card FilesFiles and versions xet Community Copy to bucket new Carbon Accounting Audit — Fine-tuning Run"
+    },
+    {
+      "title": "Green Ai Carbon Audit - a Hugging Face Space by sk8069",
+      "url": "https://huggingface.co/spaces/sk8069/green-ai-carbon-audit",
+      "snippet": "This app calculates the energy consumption and CO₂ emissions of an AI training run using preset hardware and usage details. It then presents the results in a clear, formatted markdown report that y..."
+    },
+    {
+      "title": "Carbon Accounting Audit - sk8069-green-ai-carbon-audit.hf.space",
+      "url": "https://sk8069-green-ai-carbon-audit.hf.space/?__theme=system",
+      "snippet": "Carbon Accounting Audit Use via API · Built with Gradio Stop Recording · · Settings"
+    },
+    {
+      "title": "LLM Leaderboard & AI Model Benchmarks — August 2026",
+      "url": "https://benchlm.ai/",
+      "snippet": "LLM Leaderboard & AI Model Benchmarks — August 2026 Compare frontier AI models by quality, cost, and context. 105 Supported and 123 Estimated models among 406 tracked LLMs — 406 benchmarks, real pricing, and runtime data in one place."
+    },
+    {
+      "title": "LLM Leaderboard 2026: Compare 300+ Top AI Models by Intelligence, Speed ...",
+      "url": "https://llm-stats.com/leaderboards/llm-leaderboard",
+      "snippet": "The LLM Leaderboard — independent ranking of GPT, Claude, Gemini, Llama, DeepSeek and 300+ AI models by intelligence, speed and price. Filter by provider, license, modality and context window; sort by every benchmark. Composite LLM Stats Score updated continuously from public benchmarks and live API metrics."
+    }
+  ]
+}

@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "Tingzhouport/classification-warmup",
+  "slug": "tingzhouport-classification-warmup",
+  "author": "Tingzhouport",
+  "url": "https://huggingface.co/Tingzhouport/classification-warmup",
+  "created_at": "2026-08-28T19:30:06.000Z",
+  "updated_at": "2026-08-28T19:30:14.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "perceiver",
+    "pytorch",
+    "classification",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 49600,
+  "parameters_human": "49600",
+  "storage_bytes": 198880,
+  "storage_human": "198880 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - AIVIETNAM-AIO-ChimCanhCut/warm-up-01-classification: A warm-up ...",
+      "url": "https://github.com/AIVIETNAM-AIO-ChimCanhCut/warm-up-01-classification",
+      "snippet": "Warm-up project for the AIO 2026 Vietnamese AI bootcamp. This project tackles binary customer churn classification: predicting whether a subscriber will leave a service based on their usage patterns, contract details, and support history. We benchmark both classical gradient-boosted tree models and a deep learning approach across a dataset of ~440 K customers."
+    },
+    {
+      "title": "AI-in-Lung-Health-Benchmarking-Detection-and-Diagnostic-Models ... - GitHub",
+      "url": "https://github.com/fitushar/AI-in-Lung-Health-Benchmarking-Detection-and-Diagnostic-Models-Across-Multiple-CT-Scan-Datasets/blob/main/ct_classification/warmup_scheduler.py",
+      "snippet": "This study presents the development and validation of AI models for both nodule detection and cancer classification tasks. This benchmarking across multiple datasets establishes the DLCSD as a reli..."
+    },
+    {
+      "title": "Brain-inspired warm-up training with random noise for uncertainty ...",
+      "url": "https://www.nature.com/articles/s42256-026-01215-x",
+      "snippet": "Cheon and Paik show that overconfidence in deep neural networks arises from standard initialization practices, and that brief warm-up training with random noise improves uncertainty calibration ..."
+    },
+    {
+      "title": "类warmup操作的作用：推理过程中 - 知乎",
+      "url": "https://zhuanlan.zhihu.com/p/682787717",
+      "snippet": "硬件加速器启动：对于GPU或特定的AI加速芯片（如TensorRT、 OpenVINO 等），预热可以激活硬件内部的优化机制，提升推理速度。 因此，虽然warmup阶段会增加一些额外的时间开销，但长远来看，它能显著提升后续推理的速度和性能稳定性。 下述代码来源于 yolov8。"
+    },
+    {
+      "title": "深度学习训练策略-学习率预热Warmup - CSDN博客",
+      "url": "https://blog.csdn.net/dou3516/article/details/105329103",
+      "snippet": "文章浏览阅读1.7w次，点赞16次，收藏78次。本文深入探讨了Warmup学习率预热方法，解释了其在深度学习训练中的作用及必要性，对比了constantwarmup与gradualwarmup的优劣，并提供了实际应用的代码示例。"
+    }
+  ]
+}

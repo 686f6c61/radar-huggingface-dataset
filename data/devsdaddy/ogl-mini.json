@@ -1,0 +1,89 @@
+{
+  "schema": 1,
+  "id": "devsdaddy/ogl-mini",
+  "slug": "devsdaddy-ogl-mini",
+  "author": "devsdaddy",
+  "url": "https://huggingface.co/devsdaddy/ogl-mini",
+  "created_at": "2026-08-28T15:24:26.000Z",
+  "updated_at": "2026-08-28T16:33:12.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": "onnx",
+  "languages": [
+    "en",
+    "ru",
+    "fr",
+    "de",
+    "es"
+  ],
+  "tags": [
+    "onnx",
+    "prompt-injection",
+    "jailbreak",
+    "pii",
+    "guard",
+    "owasp-llm-top10",
+    "owasp-agentic",
+    "ai-safety",
+    "text-classification",
+    "token-classification",
+    "hybrid-guard",
+    "en",
+    "ru",
+    "fr",
+    "de",
+    "es",
+    "dataset:Abdennebi/shieldlm-prompt-injection",
+    "dataset:custom-300k-dataset",
+    "dataset:gravitee-io/pii-detection-dataset",
+    "dataset:nvidia/Nemotron-PII",
+    "base_model:microsoft/deberta-v3-xsmall",
+    "base_model:quantized:microsoft/deberta-v3-xsmall",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 268993826,
+  "storage_human": "269 MB",
+  "base_model": "microsoft/deberta-v3-xsmall, sentence-transformers/all-MiniLM-L6-v2",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Models.dev - An open-source database of AI models",
+      "url": "https://models.dev/",
+      "snippet": "Models.dev is a comprehensive open-source database of AI model specifications, pricing, and features."
+    },
+    {
+      "title": "Models - Gemini API | Google AI for Developers",
+      "url": "https://ai.google.dev/gemini-api/docs/models",
+      "snippet": "Gemini models are available in either stable, preview, latest, or experimental versions. Note: The following list refers to the model string naming convention as of September, 2025."
+    },
+    {
+      "title": "Models — Google DeepMind",
+      "url": "https://deepmind.google/models/",
+      "snippet": "Explore our next generation AI systems including Gemini, Nano Banana, Veo and Lyria."
+    },
+    {
+      "title": "Model Garden on Gemini Enterprise Agent Platform",
+      "url": "https://cloud.google.com/model-garden",
+      "snippet": "Discover, customize, and deploy AI models from Google & partners using Gemini Enterprise Agent Platform (formerly Vertex AI)."
+    },
+    {
+      "title": "Introduction to Model Registry | Gemini Enterprise Agent Platform ...",
+      "url": "https://docs.cloud.google.com/gemini-enterprise-agent-platform/machine-learning/model-registry/introduction",
+      "snippet": "Gemini Enterprise Agent Platform Model Registry is a central repository for managing the lifecycle of ML models, supporting custom models, AutoML data types, and BigQuery ML models, offering a streamlined interface to organize, track, train, and deploy models to production."
+    }
+  ]
+}

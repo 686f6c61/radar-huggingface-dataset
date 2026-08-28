@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "agikeen/Qwen3.8-27B-NVFP4-BF16-LMHead",
+  "slug": "agikeen-qwen3-8-27b-nvfp4-bf16-lmhead",
+  "author": "agikeen",
+  "url": "https://huggingface.co/agikeen/Qwen3.8-27B-NVFP4-BF16-LMHead",
+  "created_at": "2026-08-28T17:29:53.000Z",
+  "updated_at": "2026-08-28T18:01:14.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "qwen3_5",
+    "unsloth",
+    "base_model:Qwen/Qwen3.8-27B",
+    "base_model:quantized:Qwen/Qwen3.8-27B",
+    "license:apache-2.0",
+    "compressed-tensors",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 19869895952,
+  "parameters_human": "19.87B",
+  "storage_bytes": 24708483597,
+  "storage_human": "24.7 GB",
+  "base_model": "Qwen/Qwen3.8-27B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Qwen/Qwen3.8-27B · Hugging Face",
+      "url": "https://huggingface.co/Qwen/Qwen3.8-27B",
+      "snippet": "MathVision: Qwen3.8-27B is evaluated using the fixed prompt: \"Please reason step by step, and put your final answer within &#92;boxed {}.\" For the remaining models, we report the higher score from two prompt variants—one with and one without the &#92;boxed {} formatting requirement."
+    },
+    {
+      "title": "RadixArk/Qwen3.8-27B-NVFP4 · Hugging Face",
+      "url": "https://huggingface.co/RadixArk/Qwen3.8-27B-NVFP4",
+      "snippet": "Third-Party Community Consideration This model is not owned or developed by RadixArk. It is a quantized derivative of Qwen&#x27;s model; see the upstream Qwen3.8-27B model card for the source model&#x27;s capabilities, training information, limitations, and license."
+    },
+    {
+      "title": "Qwen3.8 - How to Run Locally | Unsloth Documentation",
+      "url": "https://unsloth.ai/docs/models/qwen3.8",
+      "snippet": "Qwen3.8 is Qwen&#x27;s new model family, featuring Qwen3.8- 27B, Qwen3.8- 2.4T-A95B and Qwen3.8- Max. Qwen3.8-27B has vision and reasoning capabilities, a 256K context window, and runs locally on 17GB RAM/VRAM setups. Qwen3.8 excels at agentic coding, vision and chat tasks, and can now run via Unsloth GGUFs, NVFP4 and Unsloth Desktop."
+    },
+    {
+      "title": "Qwen3.8-27B - GitHub",
+      "url": "https://github.com/AlibabaCloud-Official/Qwen3.8-27B",
+      "snippet": "Welcome to the repository for Qwen3.8-27B —the latest native multimodal dense open-weight model released by Alibaba&#x27;s Qwen team. Delivering top-tier performance for local hardware, Qwen3.8-27B excels at coding, agentic workflows, and office automation tasks."
+    },
+    {
+      "title": "Qwen3.8-27B-NVFP4 · Models",
+      "url": "https://www.modelscope.cn/models/unsloth/Qwen3.8-27B-NVFP4",
+      "snippet": "Qwen3.8 Highlights Qwen3.8-27B features the following enhancements: Core Capabilities: Comprehensive improvements across coding, professional work, research, and long-horizon agentic tasks. Agent Execution: Stronger autonomous planning and better handling of environment feedback, leading to more reliable end-to-end task completion."
+    }
+  ]
+}

@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "sharryXR/asil-qwen35-2b-sft",
+  "slug": "sharryxr-asil-qwen35-2b-sft",
+  "author": "sharryXR",
+  "url": "https://huggingface.co/sharryXR/asil-qwen35-2b-sft",
+  "created_at": "2026-06-02T08:34:06.000Z",
+  "updated_at": "2026-08-28T15:09:00.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_5_text",
+    "text-generation",
+    "asil",
+    "qwen3.5",
+    "paper-release",
+    "conversational",
+    "arxiv:2608.26991",
+    "base_model:Qwen/Qwen3.5-2B",
+    "base_model:finetune:Qwen/Qwen3.5-2B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 19,
+  "trending_score": 0,
+  "parameters": 2390384448,
+  "parameters_human": "2.39B",
+  "storage_bytes": 4800800189,
+  "storage_human": "4.8 GB",
+  "base_model": "Qwen/Qwen3.5-2B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "sharryXR/asil-qwen35-2b-sft · Hugging Face",
+      "url": "https://huggingface.co/sharryXR/asil-qwen35-2b-sft",
+      "snippet": "This model repository is reserved for an ASIL paper-release checkpoint. The final checkpoint files and exact base-model license notice will be uploaded after transfer from the training server."
+    },
+    {
+      "title": "sharryXR/asil-qwen35-2b-rl · Hugging Face",
+      "url": "https://huggingface.co/sharryXR/asil-qwen35-2b-rl",
+      "snippet": "ASIL Model Checkpoint This model repository is reserved for an ASIL paper-release checkpoint."
+    },
+    {
+      "title": "Alibaba Cloud Model Studio",
+      "url": "https://modelstudio.alibabacloud.com/",
+      "snippet": "Diverse Model Ecosystem Easily experience and quickly access Alibaba Cloud&#x27;s latest foundational models (FM), including Qwen-Max, Qwen-Plus, Qwen-Turbo, Qwen-VL, and the Wan series."
+    },
+    {
+      "title": "GitHub - QwenLM/Qwen3-ASR: Qwen3-ASR is an open-source series of ASR ...",
+      "url": "https://github.com/QwenLM/Qwen3-ASR",
+      "snippet": "The Qwen3-ASR family includes Qwen3-ASR-1.7B and Qwen3-ASR-.6B, which support language identification and ASR for 52 languages and dialects. Both leverage large-scale speech training data and the strong audio understanding capability of their foundation model, Qwen3-Omni. Experiments show that the 1.7B version achieves state-of-the-art performance among open-source ASR models and is ..."
+    },
+    {
+      "title": "Qwen3.5-2B: Specifications and GPU VRAM Requirements",
+      "url": "https://apxml.com/models/qwen35-2b",
+      "snippet": "Qwen3.5-2B exhibits strong transparency in its architectural design and licensing, providing detailed structural specifications and a permissive Apache 2.0 license. However, it falls short in disclosing its specific training data composition and the environmental/compute costs associated with its development. While hardware requirements and tokenizer details are exemplary, the lack of a ..."
+    }
+  ]
+}

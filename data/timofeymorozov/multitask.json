@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "timofeymorozov/multitask",
+  "slug": "timofeymorozov-multitask",
+  "author": "timofeymorozov",
+  "url": "https://huggingface.co/timofeymorozov/multitask",
+  "created_at": "2026-08-28T16:42:36.000Z",
+  "updated_at": "2026-08-28T16:42:46.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "mocov3",
+    "pytorch",
+    "multitask",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 33088,
+  "parameters_human": "33088",
+  "storage_bytes": 132832,
+  "storage_human": "132832 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Efficient Multi-Task Modeling through Automated Fusion of Trained Models",
+      "url": "https://arxiv.org/html/2504.09812",
+      "snippet": "In intelligent services, user task requirements are often diverse. This leads to the traditional MTL modeling process consuming a significant amount of human resources, severely affecting the efficiency of MTL model construction, and thus restricting the ability of artificial intelligence to provide a wide range of multi-tasking services."
+    },
+    {
+      "title": "Multi — one task, the right AI workflow",
+      "url": "https://getmulti.ai/",
+      "snippet": "Multi puts 300+ models from every major lab to work across four workflows, so you deploy the best AI for each task instead of forcing one to do it all. Using the right model for the right project is the advantage most people leave on the table."
+    },
+    {
+      "title": "IBM",
+      "url": "https://www.ibm.com/research/multi-model-ai",
+      "snippet": "https://research.ibm.com/multi-model-ai"
+    },
+    {
+      "title": "Measuring AI Ability to Complete Long Software Tasks - METR",
+      "url": "https://metr.org/blog/2025-03-19-measuring-ai-ability-to-complete-long-tasks/",
+      "snippet": "We propose measuring AI performance in terms of the *length* of tasks AI agents can complete. We show that this metric has been consistently exponentially increasing over the past 6 years, with a doubling time of around 7 months. Extrapolating this trend predicts that, in under a decade, we will see AI agents that can independently complete a large fraction of software tasks that currently ..."
+    },
+    {
+      "title": "multi-task-learning · GitHub Topics · GitHub",
+      "url": "https://github.com/topics/multi-task-learning",
+      "snippet": "The implementation of \"Prismer: A Vision-Language Model with Multi-Task Experts\"."
+    }
+  ]
+}

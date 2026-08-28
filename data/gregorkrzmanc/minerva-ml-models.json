@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "gregorkrzmanc/minerva-ml-models",
+  "slug": "gregorkrzmanc-minerva-ml-models",
+  "author": "gregorkrzmanc",
+  "url": "https://huggingface.co/gregorkrzmanc/minerva-ml-models",
+  "created_at": "2026-08-28T11:23:57.000Z",
+  "updated_at": "2026-08-28T11:26:10.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "joblib",
+    "doi:10.57967/hf/10142",
+    "license:cc-by-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 2201742103,
+  "storage_human": "2.2 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "gregorkrzmanc (Gregor Krzmanc) - Hugging Face",
+      "url": "https://huggingface.co/gregorkrzmanc",
+      "snippet": "gregorkrzmanc Follow PhysiQuanty&#x27;s profile picture 1 follower · 2 following https://gregor.science gregorkrz"
+    },
+    {
+      "title": "GitHub - gregorkrz/minerva-ml: Fine-tuning Particle Physics Foundation ...",
+      "url": "https://github.com/gregorkrz/minerva-ml",
+      "snippet": "minerva-ml This repository contains the data processing and model training code used for ML studies on MINERvA events."
+    },
+    {
+      "title": "gregorkrz (Gregor Kržmanc) · GitHub",
+      "url": "https://github.com/gregorkrz/",
+      "snippet": "Forked from snap-stanford/prodigy Python FCCJetBenchmarks Public Jet performance benchmarks for FCC-ee using FCCAnalyses Python minerva-ml Public Fine-tuning Particle Physics Foundation Models on MINERvA Open Data Jupyter Notebook"
+    },
+    {
+      "title": "Minerva (model) - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Minerva_(model)",
+      "snippet": "Minerva is a large language model developed by an Italian research group, Sapienza NLP, at Sapienza University of Rome, led by Roberto Navigli. It is trained from scratch with a primary focus on the Italian language. [1][2][3]"
+    },
+    {
+      "title": "Models - Hugging Face",
+      "url": "https://huggingface.co/models?other=minerva-ml",
+      "snippet": "Explore machine learning models. Active filters: minerva-ml GustavoLuz-Projects/test_model_HAR"
+    }
+  ]
+}

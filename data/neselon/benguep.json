@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "Neselon/Benguep",
+  "slug": "neselon-benguep",
+  "author": "Neselon",
+  "url": "https://huggingface.co/Neselon/Benguep",
+  "created_at": "2026-08-28T13:09:33.000Z",
+  "updated_at": "2026-08-28T13:09:33.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Neselon (Noutieintquantumfield) - Hugging Face",
+      "url": "https://huggingface.co/Neselon",
+      "snippet": "Neselonai 🤖 Generate text responses with an AI language model Neselon 2 days ago"
+    },
+    {
+      "title": "Neselon (Noutieintquantumfield) - Hugging Face",
+      "url": "https://huggingface.co/Neselon/spaces",
+      "snippet": "Sort: Recently updated. Running . Neselon. 🖼. Convert images to grayscale. Neselon 11 days ago. Running . Neselonai. 🤖. Generate text responses with an AI language model"
+    },
+    {
+      "title": "LLM Leaderboard & AI Model Benchmarks — August 2026",
+      "url": "https://benchlm.ai/",
+      "snippet": "LLM Leaderboard & AI Model Benchmarks — August 2026 Compare frontier AI models by quality, cost, and context. 105 Supported and 121 Estimated models among 403 tracked LLMs — 406 benchmarks, real pricing, and runtime data in one place."
+    },
+    {
+      "title": "Best LLM Leaderboard 2026 | AI Model Rankings, Benchmarks & Pricing",
+      "url": "https://onyx.app/llm-leaderboard",
+      "snippet": "The definitive LLM leaderboard — ranking the best AI models including Claude, GPT, Gemini, DeepSeek, Llama, and more across coding, reasoning, math, agentic, and chat benchmarks. Compare LLM rankings, tier lists, and pricing."
+    },
+    {
+      "title": "Novel AI model inspired by neural dynamics from the brain",
+      "url": "https://open-ia.org/novel-ai-model-inspired-by-neural-dynamics-from-the-brain/",
+      "snippet": "Researchers from MIT&#x27;s Computer Science and Artificial Intelligence Laboratory (CSAIL) have developed a novel artificial intelligence model inspired by neural oscillations in the brain, with the goal of significantly advancing how machine learning algorithms handle long sequences of data. AI often struggles with analyzing complex information that unfolds over long periods of time, such as ..."
+    }
+  ]
+}

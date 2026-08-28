@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "rspcunningham/ml-intern-qwen25-1.5b-gsm8k-20260828-1420",
+  "slug": "rspcunningham-ml-intern-qwen25-1-5b-gsm8k-20260828-1420",
+  "author": "rspcunningham",
+  "url": "https://huggingface.co/rspcunningham/ml-intern-qwen25-1.5b-gsm8k-20260828-1420",
+  "created_at": "2026-08-28T18:09:32.000Z",
+  "updated_at": "2026-08-28T18:13:05.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "ml-intern",
+    "lora",
+    "gsm8k",
+    "math",
+    "text-generation",
+    "dataset:openai/gsm8k",
+    "dataset:meta-math/MetaMathQA",
+    "base_model:Qwen/Qwen2.5-1.5B-Instruct",
+    "base_model:adapter:Qwen/Qwen2.5-1.5B-Instruct",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 147770496,
+  "storage_human": "148 MB",
+  "base_model": "Qwen/Qwen2.5-1.5B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Qwen/Qwen2.5-1.5B-Instruct · Hugging Face",
+      "url": "https://huggingface.co/Qwen/Qwen2.5-1.5B-Instruct",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Qwen/Qwen2.5-1.5B · Hugging Face",
+      "url": "https://huggingface.co/Qwen/Qwen2.5-1.5B",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GitHub - QwenLM/Qwen: The official repo of Qwen (通义千问) chat ...",
+      "url": "https://github.com/QwenLM/Qwen",
+      "snippet": "The official repo of Qwen (通义千问) chat & pretrained large language model proposed by Alibaba Cloud. - QwenLM/Qwen"
+    },
+    {
+      "title": "Fine-Tuning DeepSeek-R1-Distill-Qwen-1.5B Reasoning Model on Intel Max ...",
+      "url": "https://community.intel.com/t5/Blogs/Tech-Innovation/Artificial-Intelligence-AI/Fine-Tuning-DeepSeek-R1-Distill-Qwen-1-5B-Reasoning-Model-on/post/1704394",
+      "snippet": "Authors: Thasneem Vazim, Sr. Solutions Engineer at Intel ® Liftoff), Rahul Unnikrishnan Nair Engineering Lead, Applied AI at Intel® Liftoff Overview In this article, we focus on fine-tuning the DeepSeek-R1-Distill-Qwen-1.5B Reasoning Model to improve its performance on task-specific data using Intel® Data Center GPU Max 1100 GPU. The fine-tuning process enables the model to adapt to ..."
+    },
+    {
+      "title": "Qwen25 1.5b Gsm8k Sdpo Final - AI Model Insights & Benchmarks",
+      "url": "https://free2aitools.com/model/ahmed-3m/qwen25-1.5b-gsm8k-sdpo-final",
+      "snippet": "Qwen25 1.5b Gsm8k Sdpo Final by Ahmed 3m ahmed-3m/qwen25-1.5b-gsm8k-sdpo-final Free2AITools Nexus Index 39.0 S: Semantic 50"
+    }
+  ]
+}

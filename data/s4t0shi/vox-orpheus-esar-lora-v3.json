@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "S4t0shi/vox-orpheus-esar-lora-v3",
+  "slug": "s4t0shi-vox-orpheus-esar-lora-v3",
+  "author": "S4t0shi",
+  "url": "https://huggingface.co/S4t0shi/vox-orpheus-esar-lora-v3",
+  "created_at": "2026-08-28T17:08:51.000Z",
+  "updated_at": "2026-08-28T17:10:42.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "base_model:adapter:marianbasti/Llama-3.2-3B-Orpheus-Rioplatense-1795",
+    "lora",
+    "transformers",
+    "text-generation",
+    "conversational",
+    "arxiv:1910.09700",
+    "base_model:marianbasti/Llama-3.2-3B-Orpheus-Rioplatense-1795",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1190326116,
+  "storage_human": "1.2 GB",
+  "base_model": "marianbasti/Llama-3.2-3B-Orpheus-Rioplatense-1795",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - canopyai/Orpheus-TTS: Towards Human-Sounding Speech",
+      "url": "https://github.com/canopyai/Orpheus-TTS",
+      "snippet": "Towards Human-Sounding Speech. Contribute to canopyai/Orpheus-TTS development by creating an account on GitHub."
+    },
+    {
+      "title": "AI Model Releases in August 2026: Confirmed Updates | BenchLM",
+      "url": "https://benchlm.ai/model-updates/releases/august-2026",
+      "snippet": "24 confirmed AI model releases from 18 providers in August 2026, with primary evidence sources and BenchLM model links."
+    },
+    {
+      "title": "Models - Hugging Face",
+      "url": "https://huggingface.co/models?search=Orpheus%20TTS",
+      "snippet": "Explore machine learning models. Tasks Text Generation Any-to-Any Image-Text-to-Text Image-to-Text Image-to-Image Text-to-Image Text-to-Video Text-to-Speech Libraries PyTorch TensorFlow JAX Transformers Diffusers GGUF Safetensors Apps vLLM llama.cpp MLX LM LM Studio Ollama Jan Draw Things DiffusionBee JoyFusion Inference Providers Groq Novita Cerebras Nscale fal Together AI Fireworks ..."
+    },
+    {
+      "title": "‎Google Gemini",
+      "url": "https://gemini.google.com/",
+      "snippet": "Meet Gemini, Google&#x27;s AI assistant. Get help with writing, planning, brainstorming, and more. Experience the power of generative AI."
+    },
+    {
+      "title": "AI/chapter7/orpheus at main · GenesisZH/AI · GitHub",
+      "url": "https://github.com/GenesisZH/AI/tree/main/chapter7/orpheus",
+      "snippet": "English This project demonstrates how to fine-tune the Orpheus 3B text-to-speech model using Unsloth for efficient training and inference."
+    }
+  ]
+}

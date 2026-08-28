@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "Karan-shah/multitask-beta-2024",
+  "slug": "karan-shah-multitask-beta-2024",
+  "author": "Karan-shah",
+  "url": "https://huggingface.co/Karan-shah/multitask-beta-2024",
+  "created_at": "2026-08-28T17:36:46.000Z",
+  "updated_at": "2026-08-28T17:36:55.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "tiny_transformer",
+    "pytorch",
+    "tiny-transformer",
+    "multitask",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 49600,
+  "parameters_human": "49600",
+  "storage_bytes": 198880,
+  "storage_human": "198880 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "MultitaskAI - The Custom Chat UI for OpenAI, Anthropic, Google Gemini ...",
+      "url": "https://multitaskai.com/",
+      "snippet": "Chat seamlessly with AI models like OpenAI, Anthropic, and Google Gemini using MultitaskAI, a custom-built interface designed for split-screen multitasking, side-by-side comparisons, and smarter workflows."
+    },
+    {
+      "title": "Karan Shah karanQD - GitHub",
+      "url": "https://github.com/karanQD/",
+      "snippet": "AI/ML Engineer with experience designing and deploying production-grade machine learning systems, Retrieval-Augmented Generation (RAG) applications, distributed data pipelines, and cloud-native AI solutions."
+    },
+    {
+      "title": "Karan Shah",
+      "url": "https://www.karanshah.io/",
+      "snippet": "My research interests include crowd modelling and simulation, dynamical systems, chaos and number theory. I am fascinated by the distribution of prime numbers and the Goldbach&#x27;s conjecture."
+    },
+    {
+      "title": "‪Karan Shah‬ - ‪Google Scholar‬",
+      "url": "https://scholar.google.com/citations?user=vEgcRTkAAAAJ&hl=en",
+      "snippet": "‪CS @ UMass Amherst‬ - ‪‪Cited by 1‬‬ - ‪Machine Learning‬"
+    },
+    {
+      "title": "‪Karan Shah‬ - ‪Google Scholar‬",
+      "url": "https://scholar.google.com/citations?user=XaeCoXwAAAAJ&hl=en",
+      "snippet": "‪Roblox Corporation‬ - ‪‪Cited by 492‬‬ - ‪Scientific Machine Learning‬ - ‪Computational Physics‬"
+    }
+  ]
+}

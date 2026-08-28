@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "takeru01/recover_up_down_trim_act_chunk46_bs16_100k_0828_1743",
+  "slug": "takeru01-recover_up_down_trim_act_chunk46_bs16_100k_0828_1743",
+  "author": "takeru01",
+  "url": "https://huggingface.co/takeru01/recover_up_down_trim_act_chunk46_bs16_100k_0828_1743",
+  "created_at": "2026-08-28T11:21:44.000Z",
+  "updated_at": "2026-08-28T11:22:06.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "robotics",
+    "act",
+    "dataset:takeru01/task1_1_5_rgb_recover_up_down_trim",
+    "arxiv:2304.13705",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 51629710,
+  "parameters_human": "51.6M",
+  "storage_bytes": 206558324,
+  "storage_human": "207 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "takeru01/task1_1_5_rgb_recover_up_down_trim - Hugging Face",
+      "url": "https://huggingface.co/datasets/takeru01/task1_1_5_rgb_recover_up_down_trim",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "task1_1_5_rgb_recover_up_down_act_chunk99_bs16_0824_2345",
+      "url": "https://huggingface.co/takeru01/task1_1_5_rgb_recover_up_down_act_chunk99_bs16_0824_2345",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Perplexity AI",
+      "url": "https://www.perplexity.ai/",
+      "snippet": "Perplexity is a free AI-powered answer engine that provides accurate, trusted, and real-time answers to any question."
+    },
+    {
+      "title": "OpenAI | Research & Deployment",
+      "url": "https://openai.com/",
+      "snippet": "We believe our research will eventually lead to artificial general intelligence, a system that can solve human-level problems."
+    },
+    {
+      "title": "Downdetector - Check real-time service problems and outages US",
+      "url": "https://downdetector.com/",
+      "snippet": "Check if services are down based on real-time user reports. Downdetector shows live status updates and outages people are experiencing."
+    }
+  ]
+}

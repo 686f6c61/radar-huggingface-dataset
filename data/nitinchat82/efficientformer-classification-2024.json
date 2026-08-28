@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "nitinchat82/efficientformer-classification-2024",
+  "slug": "nitinchat82-efficientformer-classification-2024",
+  "author": "nitinchat82",
+  "url": "https://huggingface.co/nitinchat82/efficientformer-classification-2024",
+  "created_at": "2026-08-28T15:22:55.000Z",
+  "updated_at": "2026-08-28T15:23:03.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "efficientformer",
+    "pytorch",
+    "classification",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 49600,
+  "parameters_human": "49600",
+  "storage_bytes": 198880,
+  "storage_human": "198880 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - snap-research/EfficientFormer: EfficientFormerV2 [ICCV 2023 ...",
+      "url": "https://github.com/snap-research/EfficientFormer",
+      "snippet": "Add EfficientFormerV2 model family, including efficientformerv2_s0, efficientformerv2_s1, efficientformerv2_s2 and efficientformerv2_l. Pretrained checkpoints of EfficientFormerV2 on ImageNet-1K are released."
+    },
+    {
+      "title": "EfficientFormer · Hugging Face",
+      "url": "https://huggingface.co/docs/transformers/v4.48.2/en/model_doc/efficientformer",
+      "snippet": "Overview The EfficientFormer model was proposed in EfficientFormer: Vision Transformers at MobileNet Speed by Yanyu Li, Geng Yuan, Yang Wen, Eric Hu, Georgios Evangelidis, Sergey Tulyakov, Yanzhi Wang, Jian Ren. EfficientFormer proposes a dimension-consistent pure transformer that can be run on mobile devices for dense prediction tasks like image classification, object detection and semantic ..."
+    },
+    {
+      "title": "RDK_Model_Zoo_X5/demos/classification/EfficientFormer at main - GitHub",
+      "url": "https://github.com/WuChao-2024/RDK_Model_Zoo_X5/tree/main/demos/classification/EfficientFormer",
+      "snippet": "EfficientFormer can run at the speed of MobileNet on mobile devices, identify inefficient operators in a series of ViT architectures, and guide new design paradigms, outperforming lightweight networks such as MobileViT. The EfficientFormer model outperforms existing Transformer models and is faster than the most competitive CNNs. The delay-driven analysis and experimental results of the ViT ..."
+    },
+    {
+      "title": "EfficientFormer - Hugging Face",
+      "url": "https://huggingface.co/docs/transformers/main/en/model_doc/efficientformer",
+      "snippet": "The EfficientFormer model was proposed in EfficientFormer: Vision Transformers at MobileNet Speed by Yanyu Li, Geng Yuan, Yang Wen, Eric Hu, Georgios Evangelidis, Sergey Tulyakov, Yanzhi Wang, Jian Ren. EfficientFormer proposes a dimension-consistent pure transformer that can be run on mobile devices for dense prediction tasks like image classification, object detection and semantic ..."
+    },
+    {
+      "title": "EfficientFormer（NeurIPS 2022）论文与代码解读 - CSDN博客",
+      "url": "https://blog.csdn.net/ooooocj/article/details/140108448",
+      "snippet": "文章浏览阅读2.1k次，点赞10次，收藏17次。虽然 ViT 模型在计算机视觉任务中取得了显著进展，但由于参数数量巨大和模型设计（如注意力机制）的原因，其推理速度通常比轻量级卷积网络（如 MobileNet）慢许多。因此，在资源受限的硬件（如移动设备）上部署 ViT 具有很大的挑战。为了使 Transformer ..."
+    }
+  ]
+}

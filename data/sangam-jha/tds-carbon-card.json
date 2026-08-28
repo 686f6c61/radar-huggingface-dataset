@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "sangam-jha/tds-carbon-card",
+  "slug": "sangam-jha-tds-carbon-card",
+  "author": "sangam-jha",
+  "url": "https://huggingface.co/sangam-jha/tds-carbon-card",
+  "created_at": "2026-08-28T12:17:13.000Z",
+  "updated_at": "2026-08-28T12:24:15.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "co2_eq_emissions",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "shyam1504/tds-carbon-card · Hugging Face",
+      "url": "https://huggingface.co/shyam1504/tds-carbon-card",
+      "snippet": "Model Card - Green AI Carbon Accounting This repository documents the carbon footprint and energy accounting for the assigned model training run in TDS GA8."
+    },
+    {
+      "title": "pranhai/tds-carbon-card · Hugging Face",
+      "url": "https://huggingface.co/pranhai/tds-carbon-card",
+      "snippet": "Model Card - Green AI Carbon Accounting This repository documents the carbon footprint and energy accounting for the assigned model training run in TDS GA8."
+    },
+    {
+      "title": "sangam-jha/tds-ga7-release-gate - GitHub",
+      "url": "https://github.com/sangam-jha/tds-ga7-release-gate/tree/main/.github",
+      "snippet": "Contribute to sangam-jha/tds-ga7-release-gate development by creating an account on GitHub."
+    },
+    {
+      "title": "sangam-jha · GitHub",
+      "url": "https://github.com/sangam-jha",
+      "snippet": "sangam-jha/audio 2 commits sangam-jha/tds-ga7-release-gate 1 commit Created 4 repositories sangam-jha/tds-ga7-release-gate Aug 19 sangam-jha/mcq_solver Python Aug 10"
+    },
+    {
+      "title": "Sangam Jha | Netflix-Style Portfolio",
+      "url": "https://sangamjha.com.np/",
+      "snippet": "Now Streaming I&#x27;m Sangam Jha Computer Engineering Student I&#x27;m a Computer Engineering student passionate about software development, data science, and AI. I love building practical, high-impact solutions and collaborating with teams to ship real products."
+    }
+  ]
+}

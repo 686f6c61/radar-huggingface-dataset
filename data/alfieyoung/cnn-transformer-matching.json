@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "alfieyoung/cnn-transformer-matching",
+  "slug": "alfieyoung-cnn-transformer-matching",
+  "author": "alfieyoung",
+  "url": "https://huggingface.co/alfieyoung/cnn-transformer-matching",
+  "created_at": "2026-08-28T17:58:20.000Z",
+  "updated_at": "2026-08-28T17:58:28.000Z",
+  "license": "bsd-3-clause",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "cnn_transformer",
+    "pytorch",
+    "cnn-transformer",
+    "matching",
+    "license:bsd-3-clause",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 16576,
+  "parameters_human": "16576",
+  "storage_bytes": 66784,
+  "storage_human": "66784 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "yangchangley/cnn-transformer-matching · Hugging Face",
+      "url": "https://huggingface.co/yangchangley/cnn-transformer-matching",
+      "snippet": "Overview Working implementation of Cnn Transformer for Matching using a tiny configuration. The repository focuses on transparent code and repeatable smoke tests; benchmark claims are deliberately omitted."
+    },
+    {
+      "title": "Hugging Face - The AI community building the future.",
+      "url": "https://huggingface.co/",
+      "snippet": "The AI community building the future. ... Explore AI Apps or Browse 2M+ models Trending on this week"
+    },
+    {
+      "title": "Shape-Former: Bridging CNN and Transformer via ShapeConv for multimodal ...",
+      "url": "https://www.sciencedirect.com/science/article/pii/S1566253522002068",
+      "snippet": "L Shape-Former layers, stacked by ShapeConv and Transformer, explicitly model the contextual structure information S C i ℓ of putative match p i. Note that correspondence neighbor P i is the input to each Shape-Former layer."
+    },
+    {
+      "title": "Shape-Former: Bridging CNN and Transformer via ... - ScienceDirect",
+      "url": "https://www.sciencedirect.com/science/article/abs/pii/S1566253522002068",
+      "snippet": "The Detector-based category encompasses models inclusive of Detect-then-Describe, Joint Detection and Description, Describe-then-Detect, as well as Graph Based techniques. In contrast, the Detector-free category comprises CNN Based, Transformer Based, and Patch Based methods."
+    },
+    {
+      "title": "Researcher Claims Working Jailbreak on Top AI Models Including GPT-5.6 ...",
+      "url": "https://cybersecuritynews.com/jailbreak-on-top-ai-models/",
+      "snippet": "A well-known AI red teamer claims to have developed a universal jailbreak that works against leading large language models, including heavily guarded flagships such as GPT-5.6 Sol, Claude Opus 5, and Fable."
+    }
+  ]
+}

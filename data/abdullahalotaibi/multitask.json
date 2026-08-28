@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "abdullahalotaibi/multitask",
+  "slug": "abdullahalotaibi-multitask",
+  "author": "abdullahalotaibi",
+  "url": "https://huggingface.co/abdullahalotaibi/multitask",
+  "created_at": "2026-08-28T15:06:11.000Z",
+  "updated_at": "2026-08-28T15:06:20.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "albef",
+    "pytorch",
+    "multitask",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 16576,
+  "parameters_human": "16576",
+  "storage_bytes": 66784,
+  "storage_human": "66784 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "abdullahtb (abdullah alotaibi) - Hugging Face",
+      "url": "https://huggingface.co/abdullahtb",
+      "snippet": "AI & ML interests ... Recent Activity updated a model 18 days ago ... published a model 18 days ago"
+    },
+    {
+      "title": "abdullahtb (abdullah alotaibi) - Hugging Face",
+      "url": "https://huggingface.co/abdullahtb/models",
+      "snippet": "User profile of abdullah alotaibi on Hugging Face"
+    },
+    {
+      "title": "Abdullah Al Otaibi · Mechanical Engineering",
+      "url": "https://abdullahotaibi.com/",
+      "snippet": "Abdullah Al Otaibi, mechanical engineering student at Penn State, Aramco CCP scholar joining Saudi Aramco after graduation. Projects in aerodynamics, mechatronics, and embedded hardware."
+    },
+    {
+      "title": "Multi — one task, the right AI workflow",
+      "url": "https://getmulti.ai/",
+      "snippet": "Multi puts 300+ models from every major lab to work across four workflows, so you deploy the best AI for each task instead of forcing one to do it all. Using the right model for the right project is the advantage most people leave on the table."
+    },
+    {
+      "title": "#stem #ai #machinelearning #kaust | Reef Al-otaibi - LinkedIn",
+      "url": "https://www.linkedin.com/posts/reef-al-otaibi-59593131a_stem-ai-machinelearning-activity-7491603213734043649-qphD",
+      "snippet": "Looking back at the first two weeks, they&#x27;ve completely changed how I think about AI and Machine Learning We started with data—learning how to clean it, explore it, and understand why data ..."
+    }
+  ]
+}

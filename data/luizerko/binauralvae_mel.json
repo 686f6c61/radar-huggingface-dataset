@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "luizerko/binauralvae_mel",
+  "slug": "luizerko-binauralvae_mel",
+  "author": "luizerko",
+  "url": "https://huggingface.co/luizerko/binauralvae_mel",
+  "created_at": "2026-08-28T14:41:30.000Z",
+  "updated_at": "2026-08-28T14:41:30.000Z",
+  "license": "cc-by-sa-4.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:cc-by-sa-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - Luizerko/BinauralVAE: Binaural audio reconstruction pipelines ...",
+      "url": "https://github.com/Luizerko/BinauralVAE",
+      "snippet": "Welcome to BinauralVAE. This project explores several Variational Autoencoder (VAE) approaches - including complex-valued variants - to reconstruct spatialized audio. Developed alongside AudioWorldSim, this project serves as a foundation for generating latent state representations for a binaural, audio-based world model. We highly recommend checking out AudioWorldSim for a better understanding ..."
+    },
+    {
+      "title": "BinauralVAE/MODELS.md at main · Luizerko/BinauralVAE · GitHub",
+      "url": "https://github.com/Luizerko/BinauralVAE/blob/main/MODELS.md",
+      "snippet": "Binaural audio reconstruction pipelines using different VAE-based approaches. - BinauralVAE/MODELS.md at main · Luizerko/BinauralVAE"
+    },
+    {
+      "title": "GitHub - Luizerko/BinauralVAE: Binaural audio reconstruction pipelines ...",
+      "url": "https://www.linkedin.com/posts/luis-vitor-zerkowski-93a3471b4_github-luizerkobinauralvae-binaural-audio-activity-7486432437858668544-IjdB",
+      "snippet": "- BinauralVAE: a binaural audio reconstruction pipeline. This includes two standard VAE-based models and one complex-valued VAE. That last one was incredibly tough, but it&#x27;s very special to me."
+    },
+    {
+      "title": "pcunwa (unwa) - Hugging Face",
+      "url": "https://huggingface.co/pcunwa",
+      "snippet": "pcunwa/BS-Roformer-Leap: Verification: Is this checkpoint MVSep Entry #10146 (\"unwa leap\")? updated a model about 2 months ago"
+    },
+    {
+      "title": "Audio Diffusion - Hugging Face",
+      "url": "https://huggingface.co/docs/diffusers/main/en/api/pipelines/audio_diffusion",
+      "snippet": "Audio Diffusion is by Robert Dargavel Smith, and it leverages the recent advances in image generation from diffusion models by converting audio samples to and from Mel spectrogram images."
+    }
+  ]
+}

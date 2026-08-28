@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "Mike0095/modea",
+  "slug": "mike0095-modea",
+  "author": "Mike0095",
+  "url": "https://huggingface.co/Mike0095/modea",
+  "created_at": "2026-08-28T16:50:22.000Z",
+  "updated_at": "2026-08-28T17:27:58.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-image",
+  "library": "diffusers",
+  "languages": [],
+  "tags": [
+    "diffusers",
+    "text-to-image",
+    "lora",
+    "krea2",
+    "template:sd-lora",
+    "base_model:krea/Krea-2-Raw",
+    "base_model:adapter:krea/Krea-2-Raw",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 778382918,
+  "storage_human": "778 MB",
+  "base_model": "krea/Krea-2-Raw",
+  "formats": [
+    "diffusers"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ModeAI — Your AI Workspace. Unified.",
+      "url": "https://www.modeai.io/",
+      "snippet": "Your AI Workspace. Unified. Chat, create images and videos, automate tasks, and organize everything — all in one app."
+    },
+    {
+      "title": "AI Aimbot Models & YOLO Detection Models | MossyModels",
+      "url": "https://mossymodels.com/",
+      "snippet": "Browse 661+ free YOLO and ONNX detection models across 43+ games. Community library for Fortnite, Valorant, Warzone, Apex Legends, and more."
+    },
+    {
+      "title": "MikeAI",
+      "url": "https://mike99ai.com/console",
+      "snippet": "A unified AI model hub for aggregation & distribution. It supports cross-converting various LLMs into OpenAI-compatible, Claude-compatible, or Gemini-compatible formats. A centralized gateway for personal and enterprise model management."
+    },
+    {
+      "title": "AI Models | Civitai",
+      "url": "https://civitai.com/models",
+      "snippet": "Browse thousands of free Stable Diffusion & Flux models, LoRAs, checkpoints, and embeddings. The largest collection of AI image generation resources."
+    },
+    {
+      "title": "Best AI Fashion Model Generator for Images & Video with Free Trial",
+      "url": "https://modelia.ai/",
+      "snippet": "AI fashion model generator for ecommerce brands. Turn flat-lay photos into realistic model shots in minutes — no photoshoot or studio required."
+    }
+  ]
+}

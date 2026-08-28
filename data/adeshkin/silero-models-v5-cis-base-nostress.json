@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "adeshkin/silero-models-v5-cis-base-nostress",
+  "slug": "adeshkin-silero-models-v5-cis-base-nostress",
+  "author": "adeshkin",
+  "url": "https://huggingface.co/adeshkin/silero-models-v5-cis-base-nostress",
+  "created_at": "2026-08-28T11:01:20.000Z",
+  "updated_at": "2026-08-28T12:08:42.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-speech",
+  "library": null,
+  "languages": [
+    "kjh"
+  ],
+  "tags": [
+    "text-to-speech",
+    "kjh",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 91685438,
+  "storage_human": "92 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - snakers4/silero-models: Silero Models: pre-trained text-to ...",
+      "url": "https://github.com/snakers4/silero-models",
+      "snippet": "All of the below models support 8000, 24000, 48000 sampling rates and contain no auto-stress or homographs; v5_cis_base models assume that proper stress should be added for each word for all languages, i.e. к+ошка; v5_cis_base_nostress models assume that proper stress should be added for each word ONLY for slavic languages (i.e. ru, bel, ukr); All of the below models are published under ..."
+    },
+    {
+      "title": "silero-models/v5_cis_base_jit.ipynb at master · snakers4 ... - GitHub",
+      "url": "https://github.com/snakers4/silero-models/blob/master/v5_cis_base_jit.ipynb",
+      "snippet": "Silero Models: pre-trained text-to-speech models made embarrassingly simple - snakers4/silero-models"
+    },
+    {
+      "title": "GitHub - snakers4/silero-models: Silero Models: pre-trained text-to ...",
+      "url": "http://172.245.126.119:8080/snakers4/silero-models",
+      "snippet": "V5 CIS Base Models All of the below models support 8000, 24000, 48000 sampling rates and contain no auto-stress or homographs; v5_cis_base models assume that proper stress should be added for each word for all languages, i.e. к+ошка; v5_cis_base_nostress models assume that proper stress should be added for each word ONLY for slavic languages (i.e. ru, bel, ukr); All of the below models ..."
+    },
+    {
+      "title": "examples_tts_cis.ipynb - Colab",
+      "url": "https://colab.research.google.com/github/snakers4/silero-models/blob/master/examples_tts_cis.ipynb",
+      "snippet": "Important notes: v5_cis_base and v5_cis_ext models assume that proper stress should be added for each word for all languages, i.e. к+ошка; v5_cis_base_nostress models assume that proper stress should be added for each word ONLY for slavic languages (i.e. ru, bel, ukr); It is recommended to select a speaker that matches the target language. For example, to generate text in Kazakh, select ..."
+    },
+    {
+      "title": "silero · PyPI",
+      "url": "https://pypi.org/project/silero/",
+      "snippet": "V5 CIS Base Models All of the below models support 8000, 24000, 48000 sampling rates and contain no auto-stress or homographs; v5_cis_base models assume that proper stress should be added for each word for all languages, i.e. к+ошка; v5_cis_base_nostress models assume that proper stress should be added for each word ONLY for slavic languages (i.e. ru, bel, ukr); All of the below models ..."
+    }
+  ]
+}

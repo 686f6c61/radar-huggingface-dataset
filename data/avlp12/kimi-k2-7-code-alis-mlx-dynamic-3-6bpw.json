@@ -1,0 +1,79 @@
+{
+  "schema": 1,
+  "id": "avlp12/Kimi-K2.7-Code-Alis-MLX-Dynamic-3.6bpw",
+  "slug": "avlp12-kimi-k2-7-code-alis-mlx-dynamic-3-6bpw",
+  "author": "avlp12",
+  "url": "https://huggingface.co/avlp12/Kimi-K2.7-Code-Alis-MLX-Dynamic-3.6bpw",
+  "created_at": "2026-06-24T06:43:39.000Z",
+  "updated_at": "2026-08-28T11:59:34.000Z",
+  "license": "modified-mit",
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "mlx",
+  "languages": [],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "kimi_k25",
+    "kimi",
+    "kimi-k2",
+    "moe",
+    "mla",
+    "code",
+    "quantized",
+    "apple-silicon",
+    "text-generation",
+    "conversational",
+    "custom_code",
+    "arxiv:2407.09141",
+    "base_model:moonshotai/Kimi-K2.7-Code",
+    "base_model:quantized:moonshotai/Kimi-K2.7-Code",
+    "license:other",
+    "3-bit",
+    "region:us"
+  ],
+  "likes": 2,
+  "downloads_30d": 651,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 464925340148,
+  "storage_human": "464.9 GB",
+  "base_model": "moonshotai/Kimi-K2.7-Code",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Kimi-K2.7-Code-Alis-MLX-Dynamic-3.6bpw - Hugging Face",
+      "url": "https://huggingface.co/avlp12/Kimi-K2.7-Code-Alis-MLX-Dynamic-3.6bpw",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "avlp12/Kimi-K2.7-Code-Alis-MLX-Dynamic-3.6bpw-VLM at main",
+      "url": "https://huggingface.co/avlp12/Kimi-K2.7-Code-Alis-MLX-Dynamic-3.6bpw-VLM/tree/main",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "alis-dwq/examples/kimi-k2.7 at main · avlp12/alis-dwq · GitHub",
+      "url": "https://github.com/avlp12/alis-dwq/tree/main/examples/kimi-k2.7",
+      "snippet": "The useful output here is the negative result, stated with its mechanism, plus the honest quality metric for a build whose floor is set by physics, not by recipe. Shipped: avlp12/Kimi-K2.7-Code-Alis-MLX-Dynamic-3.6bpw (text) and -VLM (image+video; byte-identical LLM weights + a bf16 MoonViT tower)."
+    },
+    {
+      "title": "alis-dwq/examples/kimi-k2.7/README.md at main - GitHub",
+      "url": "https://github.com/avlp12/alis-dwq/blob/main/examples/kimi-k2.7/README.md",
+      "snippet": "The useful output here is the negative result, stated with its mechanism, plus the honest quality metric for a build whose floor is set by physics, not by recipe. Shipped: avlp12/Kimi-K2.7-Code-Alis-MLX-Dynamic-3.6bpw (text) and -VLM (image+video; byte-identical LLM weights + a bf16 MoonViT tower)."
+    },
+    {
+      "title": "avlp12 / Kimi-K2.7-Code-Alis-MLX-Dynamic-3.6bpw-VLM",
+      "url": "https://insights-db.paloaltonetworks.com/models/avlp12/Kimi-K2.7-Code-Alis-MLX-Dynamic-3.6bpw-VLM/2f638d40c1d5b5fa1e62840c89b826f9e04a1b12/overview",
+      "snippet": "Discover potential threats in the avlp12 / Kimi-K2.7-Code-Alis-MLX-Dynamic-3.6bpw-VLM model. Learn about the vulnerabilities that cause these threats, and explore security solutions by Palo Alto Networks Prisma AIRS."
+    }
+  ]
+}

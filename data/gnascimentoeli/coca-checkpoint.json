@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "gnascimentoeli/coca-checkpoint",
+  "slug": "gnascimentoeli-coca-checkpoint",
+  "author": "gnascimentoeli",
+  "url": "https://huggingface.co/gnascimentoeli/coca-checkpoint",
+  "created_at": "2026-08-28T18:05:14.000Z",
+  "updated_at": "2026-08-28T18:05:23.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "coca",
+    "pytorch",
+    "retrieval",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 49600,
+  "parameters_human": "49600",
+  "storage_bytes": 198880,
+  "storage_human": "198880 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "checkpoint AI Models | Civitai",
+      "url": "https://civitai.com/tag/checkpoint",
+      "snippet": "Browse 200 Stable Diffusion & Flux models, LoRAs, checkpoints, and embeddings tagged with checkpoint."
+    },
+    {
+      "title": "apple/mobileclip2_coca_dfn2b_s13b_mscoco38k_s12m_context77 · Hugging Face",
+      "url": "https://huggingface.co/apple/mobileclip2_coca_dfn2b_s13b_mscoco38k_s12m_context77",
+      "snippet": "This repository contains the CoCa checkpoint pretrained on DFN-2B dataset and fine-tuned on varying datasets."
+    },
+    {
+      "title": "How to Use the Detectron2 Model Zoo for Object Detection",
+      "url": "https://blog.roboflow.com/how-to-use-the-detectron2-object-detection-model-zoo/",
+      "snippet": "The Detectron2 model zoo is a catalog of pre-trained checkpoints for object detection, instance segmentation, keypoint detection, and panoptic segmentation, built on PyTorch by Facebook AI Research. Every model in the zoo is described by a config file whose name doubles as the key for downloading its weights, so swapping architectures in a training script is a one-string change."
+    },
+    {
+      "title": "Coca Cola Mix - 1 SDXL - Free AI CHECKPOINT | TensorHub Art",
+      "url": "https://tensorhub.art/models/713799336955223464",
+      "snippet": "Download Coca Cola Mix - free CHECKPOINT SDXL 1.0 AI model on TENSORHUB ART. SDXL. By Niolas"
+    },
+    {
+      "title": "Models - Hugging Face",
+      "url": "https://huggingface.co/models?other=checkpoint",
+      "snippet": "Explore machine learning models."
+    }
+  ]
+}

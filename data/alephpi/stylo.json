@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "alephpi/stylo",
+  "slug": "alephpi-stylo",
+  "author": "alephpi",
+  "url": "https://huggingface.co/alephpi/stylo",
+  "created_at": "2026-08-28T12:04:24.000Z",
+  "updated_at": "2026-08-28T12:11:41.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 3284884680,
+  "storage_human": "3.3 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "alephpi (润心) · GitHub",
+      "url": "https://github.com/alephpi/",
+      "snippet": "🔭 I&#x27;m currently a PhD student working on speaker diarization at telecom-paris adasp group 🌱 I&#x27;m currently learning anything about AI ️ I like 🇨🇳 philosophy, history, culture I like 🏓🏊🧑‍🍳📖💻 ️🎵🎤 🎯 Always prepared, 🤔 Doubt everything."
+    },
+    {
+      "title": "alephpi/model · Hugging Face",
+      "url": "https://huggingface.co/alephpi/model",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "alephpi (润心) / Repositories · GitHub",
+      "url": "https://github.com/alephpi?tab=repositories",
+      "snippet": "A minimalist SOTA LaTeX OCR model with only 20M parameters, running in browser. Full training pipeline available for self-reproduction. | 超轻量SOTA LaTeX公式识别模型，仅20M参数量，可在浏览器中运行。训练全流程代码开源，以便自学复现。"
+    },
+    {
+      "title": "alephpi (Sicheng Mao) - Hugging Face",
+      "url": "https://huggingface.co/alephpi",
+      "snippet": "AI & ML interests ... Recent Activity liked a dataset 27 days ago ... liked a model about 2 months ago"
+    },
+    {
+      "title": "StyloAI: Distinguishing AI-Generated Content with Stylometric Analysis",
+      "url": "https://arxiv.org/html/2405.10129v1",
+      "snippet": "To address the challenges mentioned above, this study&#x27;s objectives are twofold: first, to identify stylometric features capable of distinguishing AI-generated content from human-written content, and second, to develop a machine learning model that leverages these identified features to accurately classify texts across various domains as either AI-generated or human-written."
+    }
+  ]
+}

@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "Kinimoro/R.Mira",
+  "slug": "kinimoro-r-mira",
+  "author": "Kinimoro",
+  "url": "https://huggingface.co/Kinimoro/R.Mira",
+  "created_at": "2026-08-28T19:20:17.000Z",
+  "updated_at": "2026-08-28T19:21:19.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-to-image",
+  "library": "diffusers",
+  "languages": [],
+  "tags": [
+    "diffusers",
+    "text-to-image",
+    "lora",
+    "template:diffusion-lora",
+    "base_model:krea/Krea-2-Turbo",
+    "base_model:adapter:krea/Krea-2-Turbo",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 232188512,
+  "storage_human": "232 MB",
+  "base_model": "krea/Krea-2-Turbo",
+  "formats": [
+    "diffusers"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "chilkersion/Kinimoro · Hugging Face",
+      "url": "https://huggingface.co/chilkersion/Kinimoro",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "MIRA",
+      "url": "https://mira-wm.com/",
+      "snippet": "Multiplayer world model - a dream of Rocket League. Play the live demo - a dream of Rocket League. Trained on 10k hours of gameplay collected with publicly available bots, MIRA learns the dynamics of a four-player game. The model runs in real time at 20fps, based on the keys you and the other players press. Blog Technical report Code Dataset Of course, a simulation cannot replace the real ..."
+    },
+    {
+      "title": "kyutai on X: \"Today we&#x27;re introducing MIRA, a new multiplayer world ...",
+      "url": "https://x.com/kyutai_labs/status/2074104480178503943",
+      "snippet": "Today we&#x27;re introducing MIRA, a new multiplayer world model, built with @ gen_intuition, in collaboration with Epic Games. We release an in-depth technical report, dataset, as well as an online demo that you can try right now (link below)."
+    },
+    {
+      "title": "Riyo Reaper (Gachiakuta) - Kinimoro - 1.1 | Tensor.Art",
+      "url": "https://tensor.art/models/934352313546499438",
+      "snippet": "Download Riyo Reaper (Gachiakuta) - Kinimoro - free LORA Illustrious AI model on TENSOR. Anima, Anime, Illustration. By Ttan"
+    },
+    {
+      "title": "GitHub - mira-wm/mira: Code for MIRA: Multiplayer Interactive World ...",
+      "url": "https://github.com/mira-wm/mira",
+      "snippet": "readme.mp4 MIRA is a real-time world model of Rocket League: a 5B parameters latent diffusion model generates the video frame by frame from all four players&#x27; actions, so a full 2v2 match can be played inside the model at 20 FPS on a single GPU. Play it live at mira-wm.com. This is the official code release for the technical report: MIRA: Multiplayer Interactive World Models with Representation ..."
+    }
+  ]
+}

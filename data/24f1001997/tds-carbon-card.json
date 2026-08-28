@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "24f1001997/tds-carbon-card",
+  "slug": "24f1001997-tds-carbon-card",
+  "author": "24f1001997",
+  "url": "https://huggingface.co/24f1001997/tds-carbon-card",
+  "created_at": "2026-08-28T17:37:48.000Z",
+  "updated_at": "2026-08-28T17:38:42.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "co2_eq_emissions",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Jeevan1511/tds-carbon-card · Hugging Face",
+      "url": "https://huggingface.co/Jeevan1511/tds-carbon-card",
+      "snippet": "Model Card - Green AI Carbon Accounting This repository documents the carbon footprint and energy accounting for the assigned model training run in TDS GA8."
+    },
+    {
+      "title": "Chandy27/tds-carbon-card · Hugging Face",
+      "url": "https://huggingface.co/Chandy27/tds-carbon-card",
+      "snippet": "Model Card - Green AI Carbon Accounting This repository documents the carbon footprint and energy accounting for the assigned model training run in TDS GA8."
+    },
+    {
+      "title": "ChatGPT: Chat, Work, Create & Code with AI",
+      "url": "https://chatgpt.com/",
+      "snippet": "Use ChatGPT to answer questions, write, create images, complete work, and code—all in one place. Get started for free or download the app."
+    },
+    {
+      "title": "Find Open Datasets and Machine Learning Projects | Kaggle",
+      "url": "https://www.kaggle.com/datasets",
+      "snippet": "Browse and download hundreds of thousands of open datasets for AI research, model training, and analysis. Join a community of millions of researchers, developers, and builders to share and collaborate on Kaggle."
+    },
+    {
+      "title": "sundar478471/TDS-AI - GitHub",
+      "url": "https://github.com/sundar478471/TDS-AI",
+      "snippet": "Contribute to sundar478471/TDS-AI development by creating an account on GitHub."
+    }
+  ]
+}

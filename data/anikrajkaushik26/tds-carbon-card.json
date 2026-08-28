@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "anikrajkaushik26/tds-carbon-card",
+  "slug": "anikrajkaushik26-tds-carbon-card",
+  "author": "anikrajkaushik26",
+  "url": "https://huggingface.co/anikrajkaushik26/tds-carbon-card",
+  "created_at": "2026-08-28T17:14:32.000Z",
+  "updated_at": "2026-08-28T17:16:21.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "co2_eq_emissions",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ayeshaalvi/tds-carbon-card · Hugging Face",
+      "url": "https://huggingface.co/ayeshaalvi/tds-carbon-card",
+      "snippet": "Model Card - Green AI Carbon Accounting This repository documents the carbon footprint and energy accounting for the assigned model training run in TDS GA8."
+    },
+    {
+      "title": "README.md · AnirudhPhophalia/tds-carbon-card at main",
+      "url": "https://huggingface.co/AnirudhPhophalia/tds-carbon-card/blob/main/README.md",
+      "snippet": "Model Card - Green AI Carbon Accounting This repository documents the carbon footprint and energy accounting for the assigned model training run in TDS GA8."
+    },
+    {
+      "title": "AI Model Cards Explained: Document AI for Trust (2026)",
+      "url": "https://aibuzz.blog/ai-model-cards-explained/",
+      "snippet": "📋 ..."
+    },
+    {
+      "title": "AI model cards in carbon.txt and an AI Sustainability Directory",
+      "url": "https://www.thegreenwebfoundation.org/news/ai-model-cards-in-carbon-txt/",
+      "snippet": "Using AI Model cards in carbon.txt to disclose training emissions The updated carbon.txt syntax (version 0.5) includes a new organisational disclosure document type - doc_type: &#x27;ai-model-card&#x27;. Using this document type, along with a URL of model card (README.md) makes a valid disclosure for training of AI models."
+    },
+    {
+      "title": "Find Open Datasets and Machine Learning Projects | Kaggle",
+      "url": "https://www.kaggle.com/datasets",
+      "snippet": "Browse and download hundreds of thousands of open datasets for AI research, model training, and analysis. Join a community of millions of researchers, developers, and builders to share and collaborate on Kaggle."
+    }
+  ]
+}

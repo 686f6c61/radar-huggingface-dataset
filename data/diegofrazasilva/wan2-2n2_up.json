@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "diegofrazasilva/wan2.2n2_up",
+  "slug": "diegofrazasilva-wan2-2n2_up",
+  "author": "diegofrazasilva",
+  "url": "https://huggingface.co/diegofrazasilva/wan2.2n2_up",
+  "created_at": "2026-08-28T14:14:03.000Z",
+  "updated_at": "2026-08-28T14:14:28.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-to-image",
+  "library": "diffusers",
+  "languages": [],
+  "tags": [
+    "diffusers",
+    "text-to-image",
+    "lora",
+    "template:diffusion-lora",
+    "base_model:krea/Krea-2-Raw",
+    "base_model:adapter:krea/Krea-2-Raw",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 613536274,
+  "storage_human": "614 MB",
+  "base_model": "krea/Krea-2-Raw",
+  "formats": [
+    "diffusers"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Sapn-AI/Wan2.2-Lightning - GitHub",
+      "url": "https://github.com/Sapn-AI/Wan2.2-Lightning/tree/main",
+      "snippet": "We are excited to release the distilled version of Wan2.2 video generation model family, which offers the following advantages: Fast: Video generation now requires only 4 steps without the need of CFG trick, leading to x20 speed-up High-quality: The distilled model delivers visuals on par with the base model in most scenarios, sometimes even better. Complex Motion Generation: Despite the ..."
+    },
+    {
+      "title": "GitHub - Wan-Video/Wan2.2: Wan: Open and Advanced Large-Scale Video ...",
+      "url": "https://github.com/Wan-Video/Wan2.2",
+      "snippet": "Thanks to all community contributors. Enjoy! Sep 19, 2025: 💃 We introduct Wan2.2-Animate-14B, an unified model for character animation and replacement with holistic movement and expression replication. We released the model weights and inference code. And you can try it on wan.video, ModelScope Studio or HuggingFace Space!"
+    },
+    {
+      "title": "Wan-AI (Wan-AI) - Hugging Face",
+      "url": "https://huggingface.co/Wan-AI",
+      "snippet": "Org profile for Wan-AI on Hugging Face, the AI community building the future."
+    },
+    {
+      "title": "Wan 2.2 - Every Shot, Wan Take",
+      "url": "https://wan22.io/",
+      "snippet": "Wan 2.2 - Every Shot, Wan Take Open Source Cinematic AI Video Generation Experience Wan2.2, the world&#x27;s first open-source MoE video generation model. Create professional cinematic videos from text or images at 720P resolution. Built by Alibaba Tongyi Lab, now available for everyone."
+    },
+    {
+      "title": "Wan 2.2: AI Text to Video Generator | Wan 2.2",
+      "url": "https://wan22ai.net/dashboard/text-to-video",
+      "snippet": "Generate stunning videos with Wan 2.2 AI model. Convert your text prompts and images into professional video content effortlessly."
+    }
+  ]
+}

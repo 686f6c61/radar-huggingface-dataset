@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "NadavSalem/Titanius-1.1-88m-sft-fp16",
+  "slug": "nadavsalem-titanius-1-1-88m-sft-fp16",
+  "author": "NadavSalem",
+  "url": "https://huggingface.co/NadavSalem/Titanius-1.1-88m-sft-fp16",
+  "created_at": "2026-08-28T14:09:32.000Z",
+  "updated_at": "2026-08-28T14:11:16.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "pytorch",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "pytorch",
+    "causal-lm",
+    "instruction-tuned",
+    "experimental",
+    "custom-code",
+    "text-generation",
+    "en",
+    "dataset:HuggingFaceTB/smol-smoltalk",
+    "base_model:NadavSalem/Titanius-1.1-88m-base-fp16",
+    "base_model:finetune:NadavSalem/Titanius-1.1-88m-base-fp16",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 176415119,
+  "storage_human": "176 MB",
+  "base_model": "NadavSalem/Titanius-1.1-88m-base-fp16",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "NadavSalem/Titanius-1-115m-sft-fp16-preview · Hugging Face",
+      "url": "https://huggingface.co/NadavSalem/Titanius-1-115m-sft-fp16-preview",
+      "snippet": "This is an early preview based on a base model trained for only 7,000 steps and then SFT-trained for 1,000 steps. No benchmark, validation-set, safety, bias, memorization, or instruction-following evaluation is reported."
+    },
+    {
+      "title": "Titanius 1 Carbon Collection - a NadavSalem Collection",
+      "url": "https://huggingface.co/collections/NadavSalem/titanius-1-carbon-collection",
+      "snippet": "NadavSalem/Titanius-1-115m-base-fp16-preview Text Generation •Updated 19 days ago• 1"
+    },
+    {
+      "title": "Civitai | Discover and Create AI Art",
+      "url": "https://civitai.red/",
+      "snippet": "Explore thousands of free Stable Diffusion & Flux models, create and share AI-generated art, and join the world&#x27;s largest community of generative AI creators."
+    },
+    {
+      "title": "AI Models | Civitai",
+      "url": "https://civitai.com/models",
+      "snippet": "Browse thousands of free Stable Diffusion & Flux models, LoRAs, checkpoints, and embeddings. The largest collection of AI image generation resources."
+    },
+    {
+      "title": "Taalas | The model is The Computer",
+      "url": "https://taalas.com/",
+      "snippet": "The Model is The Computer Taalas is creating a platform for quickly turning any AI model into custom silicon. The resulting Hardcore Models are 1000x more efficient than their software counterparts."
+    }
+  ]
+}

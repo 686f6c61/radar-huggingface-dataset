@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "yiwuyi/anima-highres-aesthetic-boost",
+  "slug": "yiwuyi-anima-highres-aesthetic-boost",
+  "author": "yiwuyi",
+  "url": "https://huggingface.co/yiwuyi/anima-highres-aesthetic-boost",
+  "created_at": "2026-08-28T13:09:21.000Z",
+  "updated_at": "2026-08-28T13:09:22.000Z",
+  "license": "cdla-permissive-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-image",
+  "library": "diffusers",
+  "languages": [],
+  "tags": [
+    "diffusers",
+    "text-to-image",
+    "lora",
+    "template:diffusion-lora",
+    "base_model:LyliaEngine/anima_baseV10",
+    "base_model:adapter:LyliaEngine/anima_baseV10",
+    "license:cdla-permissive-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 155864541,
+  "storage_human": "156 MB",
+  "base_model": "LyliaEngine/anima_baseV10",
+  "formats": [
+    "diffusers"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Anima Highres/Aesthetic Boost - v1.0 | Anima LoRA | Civitai",
+      "url": "https://civitai.com/models/2540444/anima-highresaesthetic-boost",
+      "snippet": "Showcase images are base model (left) vs LoRA (right). This LoRA does two things: Allows generating at higher resolutions. 1536 works without any major issues, and even 2048 (4 MP) now works without completely falling apart. Slight aesthetic increase toward higher-quality images. It is trained on 10,000 high rated Danbooru images, with mixed-res training at [512, 1024, 1536] resolutions. The ..."
+    },
+    {
+      "title": "Anima Highres/Aesthetic Boost v1.0 - LORA for Anima | CivArchive",
+      "url": "https://civarchive.com/models/2540444?modelVersionId=2855073",
+      "snippet": "Download Anima Highres/Aesthetic Boost v1.0, a LORA for Anima. 1 file: anima-highres-aesthetic-boost.safetensors (132 MB). Published Apr 13, 2026. 26 live mirrors. Trained on preview3."
+    },
+    {
+      "title": "LyliaEngine/anima-highres-aesthetic-boost · Hugging Face",
+      "url": "https://huggingface.co/LyliaEngine/anima-highres-aesthetic-boost",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "anima-highres-aesthetic-boost.safetensors · LyliaEngine/anima-highres ...",
+      "url": "https://huggingface.co/LyliaEngine/anima-highres-aesthetic-boost/blob/main/anima-highres-aesthetic-boost.safetensors",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Anima Highres/Aesthetic Boost - SeaArt AI Model",
+      "url": "https://www.seaart.ai/models/detail/d7em2d5e878c73d8kotg",
+      "snippet": "Explore Anima Highres/Aesthetic Boost model on SeaArt AI. Transform your idea into professional-quality AI-generated images and videos with our free, easy-to-use platform."
+    }
+  ]
+}

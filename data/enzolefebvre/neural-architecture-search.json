@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "enzolefebvre/neural-architecture-search",
+  "slug": "enzolefebvre-neural-architecture-search",
+  "author": "enzolefebvre",
+  "url": "https://huggingface.co/enzolefebvre/neural-architecture-search",
+  "created_at": "2026-08-28T17:59:52.000Z",
+  "updated_at": "2026-08-28T18:00:01.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "transformer",
+    "research-notes",
+    "neural-architecture-search",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 24832,
+  "parameters_human": "24832",
+  "storage_bytes": 99808,
+  "storage_human": "99808 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "JadePuffer agentic attacks now target AI model data with ransomware",
+      "url": "https://www.bleepingcomputer.com/news/security/jadepuffer-agentic-attacks-now-target-ai-model-data-with-ransomware/",
+      "snippet": "The JadePuffer autonomous AI agent has upgraded with custom malware called EncForge that focuses on encrypting AI assets, such as training datasets, vector databases, and model checkpoints."
+    },
+    {
+      "title": "Systematic review on neural architecture search | Artificial ...",
+      "url": "https://link.springer.com/article/10.1007/s10462-024-11058-w",
+      "snippet": "Therefore, the model&#x27;s performance highly depends on the experience of the developer in AI to design the architecture, and the background knowledge in the applied field to understand the data Yaghoubi et al. (2022). Furthermore, the developer needs to have a good knowledge of optimizing the model to generate the optimized model for a dataset."
+    },
+    {
+      "title": "Neural architecture search - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Neural_architecture_search",
+      "snippet": "Neural architecture search (NAS) [1][2] is a technique for automating the design of artificial neural networks (ANN), a widely used model in the field of machine learning."
+    },
+    {
+      "title": "PDF Advances in neural architecture search",
+      "url": "http://mn.cs.tsinghua.edu.cn/xinwang/PDF/papers/2024_Advances%20in%20Neural%20Architecture%20Search.pdf",
+      "snippet": "Real E,AggarwalA,HuangY et al. Regularized evolutionforimageclassifier architecture search.In: Proceedings oftheThirty-ThirdAAAIConferenceon Artificial Intelligence ."
+    },
+    {
+      "title": "[2301.08727] Neural Architecture Search: Insights from 1000 Papers",
+      "url": "https://arxiv.org/abs/2301.08727",
+      "snippet": "In the past decade, advances in deep learning have resulted in breakthroughs in a variety of areas, including computer vision, natural language understanding, speech recognition, and reinforcement learning. Specialized, high-performing neural architectures are crucial to the success of deep learning in these areas. Neural architecture search (NAS), the process of automating the design of ..."
+    }
+  ]
+}

@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "adrfm/sort_b601_simple_filtered_act_v2",
+  "slug": "adrfm-sort_b601_simple_filtered_act_v2",
+  "author": "adrfm",
+  "url": "https://huggingface.co/adrfm/sort_b601_simple_filtered_act_v2",
+  "created_at": "2026-08-28T17:04:32.000Z",
+  "updated_at": "2026-08-28T17:04:48.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "act",
+    "robotics",
+    "dataset:adrfm/sort_b601_simple_filtered",
+    "arxiv:2304.13705",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 51670663,
+  "parameters_human": "51.7M",
+  "storage_bytes": 206723204,
+  "storage_human": "207 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "adrfm (Aaron De Rybel) - Hugging Face",
+      "url": "https://huggingface.co/adrfm",
+      "snippet": "Recent Activity updated a dataset1 day ago adrfm/rollout_pick_place_b601_v2_act_ published a dataset1 day ago adrfm/rollout_pick_place_b601_v2_act_ updated a dataset1 day ago adrfm/rollout_pick_place_b601_v2_act__20260825_140403 View all activity"
+    },
+    {
+      "title": "adrfm/rollout_sort_b601_filtered_act_v1 - Hugging Face",
+      "url": "https://huggingface.co/datasets/adrfm/rollout_sort_b601_filtered_act_v1/viewer/default/train",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Zen | OpenCode",
+      "url": "https://opencode.ai/docs/zen/",
+      "snippet": "Finally, we benchmarked the combination of the model/provider and came up with a list that we feel good recommending. OpenCode Zen is an AI gateway that gives you access to these models."
+    },
+    {
+      "title": "GitHub - huggingface/lerobot: LeRobot: Making AI for Robotics more ...",
+      "url": "https://github.com/huggingface/lerobot",
+      "snippet": "LeRobot aims to provide models, datasets, and tools for real-world robotics in PyTorch. The goal is to lower the barrier to entry so that everyone can contribute to and benefit from shared datasets and pretrained models. 🤗 A hardware-agnostic, Python-native interface that standardizes control across diverse platforms, from low-cost arms (SO-100) to humanoids. 🤗 A standardized, scalable ..."
+    },
+    {
+      "title": "Civitai | Discover and Create AI Art",
+      "url": "https://civitai.red/",
+      "snippet": "Explore thousands of free Stable Diffusion & Flux models, create and share AI-generated art, and join the world&#x27;s largest community of generative AI creators."
+    }
+  ]
+}

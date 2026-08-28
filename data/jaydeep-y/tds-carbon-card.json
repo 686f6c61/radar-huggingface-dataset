@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "Jaydeep-Y/tds-carbon-card",
+  "slug": "jaydeep-y-tds-carbon-card",
+  "author": "Jaydeep-Y",
+  "url": "https://huggingface.co/Jaydeep-Y/tds-carbon-card",
+  "created_at": "2026-08-28T14:35:51.000Z",
+  "updated_at": "2026-08-28T14:41:35.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "co2_eq_emissions",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "jayiitm/tds-carbon-card · Hugging Face",
+      "url": "https://huggingface.co/jayiitm/tds-carbon-card",
+      "snippet": "Model Card - Green AI Carbon Accounting This repository documents the carbon footprint and energy accounting for the assigned model training run in TDS GA8."
+    },
+    {
+      "title": "shyam1504/tds-carbon-card · Hugging Face",
+      "url": "https://huggingface.co/shyam1504/tds-carbon-card",
+      "snippet": "Model Card - Green AI Carbon Accounting This repository documents the carbon footprint and energy accounting for the assigned model training run in TDS GA8."
+    },
+    {
+      "title": "Jaydeep on X: \"https://t.co/j3TiRs2CMl\" / X",
+      "url": "https://x.com/_jaydeepkarale/status/2091884749757546924",
+      "snippet": "The Zero to Employable AI Engineering Roadmap A phase-by-phase path into AI engineering, with the specific courses, docs, and books worth your time at each stage, not just a list of skills to Google later Most AI engineering roadmaps are skill lists dressed up as guidance. Learn RAG. Learn agents. Learn evals. Fine, but learn them where? The gap between naming a skill and knowing which ..."
+    },
+    {
+      "title": "Find Open Datasets and Machine Learning Projects | Kaggle",
+      "url": "https://www.kaggle.com/datasets",
+      "snippet": "Browse and download hundreds of thousands of open datasets for AI research, model training, and analysis. Join a community of millions of researchers, developers, and builders to share and collaborate on Kaggle."
+    },
+    {
+      "title": "Jaydeep on X: \"Nobody gives a clear answer on how to become an AI ...",
+      "url": "https://x.com/_jaydeepkarale/status/2037869828174946340",
+      "snippet": "Nobody gives a clear answer on how to become an AI Engineer. So here&#x27;s mine. Practical. No fluff. The skills, why they matter, and how to build them 👇 Skill 1: LLM Fundamentals Tokens, context windows, sampling, why models hallucinate. Resource: Read the model cards."
+    }
+  ]
+}

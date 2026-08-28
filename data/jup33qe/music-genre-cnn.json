@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "Jup33QE/music-genre-cnn",
+  "slug": "jup33qe-music-genre-cnn",
+  "author": "Jup33QE",
+  "url": "https://huggingface.co/Jup33QE/music-genre-cnn",
+  "created_at": "2026-08-28T13:23:36.000Z",
+  "updated_at": "2026-08-28T14:04:37.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "music-genre-classification",
+    "cnn",
+    "pytorch",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 52840800,
+  "storage_human": "53 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Music genre classification with parallel convolutional neural ... - Nature",
+      "url": "https://www.nature.com/articles/s41598-025-90619-7",
+      "snippet": "By integrating many signal processing techniques and CNN models, this study advances the field of music genre classification and provides possible insights into the blending of diverse musical ..."
+    },
+    {
+      "title": "ronnie-allen/Music-Genre-Classification-with-CNN - GitHub",
+      "url": "https://github.com/ronnie-allen/Music-Genre-Classification-with-CNN",
+      "snippet": "This project focuses on classifying music tracks into various genres using machine learning techniques. By analyzing audio features, the model predicts the genre of a given music track, aiding in music organization and recommendation systems."
+    },
+    {
+      "title": "AI Music Genre Converter - GitHub",
+      "url": "https://github.com/Nooreyy/AI-Music-Genre-Converter",
+      "snippet": "The AI Music Genre Converter allows users to upload a music file, automatically detect its genre using a trained Convolutional Neural Network (CNN), generate an optimized music transformation prompt using Google Gemini, and finally create a new version of the music in the selected target genre using Facebook MusicGen."
+    },
+    {
+      "title": "Music genre classification and recognition using ... - Springer",
+      "url": "https://link.springer.com/article/10.1007/s11042-024-19243-3",
+      "snippet": "The music genre classification system is crucial to users in the digital music business since it allows them to be more effective. Music suggestion and availability to consumers is one of the most successful uses of genre classification. Songs may be easily accessible by users when the genre of the song is recognized, and music recommendations to users are made simple with an accurate ..."
+    },
+    {
+      "title": "PDF Music genre classification with parallel convolutional neural networks ...",
+      "url": "https://www.nature.com/articles/s41598-025-90619-7.pdf",
+      "snippet": "By integrating many signal processing techniques and CNN models, this study advances the field of music genre classification and provides possible insights into the blending of diverse musical ..."
+    }
+  ]
+}
