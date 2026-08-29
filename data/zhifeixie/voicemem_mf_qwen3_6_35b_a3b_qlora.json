@@ -1,0 +1,77 @@
+{
+  "schema": 1,
+  "id": "zhifeixie/VoiceMem_MF_Qwen3_6_35B_A3B_Qlora",
+  "slug": "zhifeixie-voicemem_mf_qwen3_6_35b_a3b_qlora",
+  "author": "zhifeixie",
+  "url": "https://huggingface.co/zhifeixie/VoiceMem_MF_Qwen3_6_35B_A3B_Qlora",
+  "created_at": "2026-08-20T07:38:27.000Z",
+  "updated_at": "2026-08-21T03:20:22.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [
+    "zh",
+    "en"
+  ],
+  "tags": [
+    "peft",
+    "safetensors",
+    "lora",
+    "qlora",
+    "voicemem",
+    "memory",
+    "long-context",
+    "voice-agent",
+    "text-generation",
+    "zh",
+    "en",
+    "base_model:Qwen/Qwen3.6-35B-A3B",
+    "base_model:adapter:Qwen/Qwen3.6-35B-A3B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 8,
+  "downloads_30d": 16,
+  "trending_score": 8,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 179929048,
+  "storage_human": "180 MB",
+  "base_model": "Qwen/Qwen3.6-35B-A3B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "zhifeixie/VoiceMem_MF_Qwen3_6_35B_A3B_Qlora · Hugging Face",
+      "url": "https://huggingface.co/zhifeixie/VoiceMem_MF_Qwen3_6_35B_A3B_Qlora",
+      "snippet": "Instructions to use zhifeixie/VoiceMem_MF_Qwen3_6_35B_A3B_Qlora with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "zhifeixie/VoiceMem_MF_Qwen3_6_35B_A3B_Qlora at main",
+      "url": "https://huggingface.co/zhifeixie/VoiceMem_MF_Qwen3_6_35B_A3B_Qlora/tree/main",
+      "snippet": "Instructions to use zhifeixie/VoiceMem_MF_Qwen3_6_35B_A3B_Qlora with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "VoiceMem_MF_Qwen3_6_35B_A3B_Qlora - FriendliAI",
+      "url": "https://friendli.ai/models/zhifeixie/VoiceMem_MF_Qwen3_6_35B_A3B_Qlora",
+      "snippet": "Deploy VoiceMem_MF_Qwen3_6_35B_A3B_Qlora with low-latency inference on FriendliAI. Get scalable API serving, high throughput, and production-grade reliability for AI agents."
+    },
+    {
+      "title": "VoiceMem: the reply model is a QLoRA that can&#x27;t touch 93% of its own ...",
+      "url": "https://ai.thesatyajit.com/articles/voicemem",
+      "snippet": "VoiceMem showed up under three names before I had read a single equation. The paper on arXiv is titled Streaming Dual-Brain Memory for Real-Time Interaction — nothing there says QLoRA, MoE, or 35B. The Hugging Face repo I was pointed at is zhifeixie/VoiceMem_MF_Qwen3_6_35B_A3B_Qlora. Its own README opens with a note that the repo it is actually attached to is misnamed and used to be called ..."
+    },
+    {
+      "title": "Voicemem Mf Qwen3 6 35b A3b Qlora - AI Model Insights & Benchmarks",
+      "url": "https://free2aitools.com/model/zhifeixie/voicemem_mf_qwen3_6_35b_a3b_qlora",
+      "snippet": "Registry entry for model Voicemem Mf Qwen3 6 35b A3b Qlora; source metadata pending."
+    }
+  ]
+}

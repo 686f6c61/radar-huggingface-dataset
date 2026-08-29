@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "ArchSpace-Collection/NCP_ArchPreview_dolmo3_8.9B_Stage2_DFlash2_NCPFlash",
+  "slug": "archspace-collection-ncp_archpreview_dolmo3_8-9b_stage2_dflash2_ncpflash",
+  "author": "ArchSpace-Collection",
+  "url": "https://huggingface.co/ArchSpace-Collection/NCP_ArchPreview_dolmo3_8.9B_Stage2_DFlash2_NCPFlash",
+  "created_at": "2026-08-29T17:12:44.000Z",
+  "updated_at": "2026-08-29T17:46:05.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "feature-extraction",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "conceptlm_dflash",
+    "feature-extraction",
+    "speculative-decoding",
+    "drafter",
+    "dflash2",
+    "ncp",
+    "block-parallel-decoding",
+    "custom_code",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1105121310,
+  "parameters_human": "1.11B",
+  "storage_bytes": 4471894672,
+  "storage_human": "4.5 GB",
+  "base_model": "ArchSpace-Collection/NCP_ArchPreview_dolmo3_8.9B_Stage2",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "NCP_ArchPreview_dolmo3_8.9B_Stage2_v1 - Hugging Face",
+      "url": "https://huggingface.co/ArchSpace-Collection/NCP_ArchPreview_dolmo3_8.9B_Stage2_v1",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "ArchSpace-Collection (ArchSpace) - Hugging Face",
+      "url": "https://huggingface.co/ArchSpace-Collection",
+      "snippet": "Org profile for ArchSpace on Hugging Face, the AI community building the future."
+    },
+    {
+      "title": "GitHub - InternLM/archspace: Turning LLM architecture exploration into ...",
+      "url": "https://github.com/InternLM/archspace",
+      "snippet": "ArchSpace is an open experiment for large language model (LLM) architecture innovation. We place architecture hypotheses proposed by the community into transparent, traceable, and reproducible training and evaluation workflows, then turn successful findings, negative results, and design trade-offs into shared knowledge assets. Each generation of open foundation models brings new architectural ..."
+    },
+    {
+      "title": "ArchSpace",
+      "url": "https://www.archspace.live/",
+      "snippet": "These two model families already provide substantial public evidence and documentation, making them appropriate root references for future ArchSpace architecture proposals."
+    },
+    {
+      "title": "ArchSpace · Model Lineage",
+      "url": "https://feanus.github.io/archspace/web/",
+      "snippet": "👋 Welcome to ArchSpace Explore how model ideas branch, evolve, and come to life 🚀"
+    }
+  ]
+}

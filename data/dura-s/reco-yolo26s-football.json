@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "Dura-S/reco-yolo26s-football",
+  "slug": "dura-s-reco-yolo26s-football",
+  "author": "Dura-S",
+  "url": "https://huggingface.co/Dura-S/reco-yolo26s-football",
+  "created_at": "2026-08-29T12:43:26.000Z",
+  "updated_at": "2026-08-29T12:43:45.000Z",
+  "license": "agpl-3.0",
+  "license_family": "oss",
+  "pipeline_tag": "object-detection",
+  "library": "ultralytics",
+  "languages": [],
+  "tags": [
+    "ultralytics",
+    "onnx",
+    "object-detection",
+    "yolo",
+    "yolo26",
+    "sports",
+    "football",
+    "soccer",
+    "youth-football",
+    "license:agpl-3.0",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 60274500,
+  "storage_human": "60 MB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Football YOLO26s 2 Models by Zakaria El Ghazi",
+      "url": "https://platform.ultralytics.com/zakaria-el-ghazi/football-yolo26s-2",
+      "snippet": "Explore Football YOLO26s 2 computer vision models by Zakaria El Ghazi. Train, evaluate, and deploy models for detection, segmentation, and classification on Ultralytics Platform."
+    },
+    {
+      "title": "Ultralytics YOLO26 | Ultralytics",
+      "url": "https://docs.ultralytics.com/models/yolo26",
+      "snippet": "YOLO26 from Ultralytics delivers unified, real-time, end-to-end vision models optimized for accurate and efficient deployment."
+    },
+    {
+      "title": "openvision/yolo26-s · Hugging Face",
+      "url": "https://huggingface.co/openvision/yolo26-s",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Ultralytics YOLO26 Models for Real-Time Edge AI",
+      "url": "https://www.ultralytics.com/yolo/yolo26",
+      "snippet": "Explore Ultralytics YOLO26 models for edge and low-power devices with up to 43% faster CPU inference."
+    },
+    {
+      "title": "Football Players Detection using Ultralytics Platform ... - YouTube",
+      "url": "https://www.youtube.com/watch?v=dHQAsGMI_qE",
+      "snippet": "In this tutorial, we demonstrate how to build a football player tracking system using Ultralytics YOLO26 and a custom-"
+    }
+  ]
+}

@@ -1,0 +1,94 @@
+{
+  "schema": 1,
+  "id": "Securelayer7/salamandra-7b-instruct-Uncensored-Abliterated",
+  "slug": "securelayer7-salamandra-7b-instruct-uncensored-abliterated",
+  "author": "Securelayer7",
+  "url": "https://huggingface.co/Securelayer7/salamandra-7b-instruct-Uncensored-Abliterated",
+  "created_at": "2026-08-29T14:51:37.000Z",
+  "updated_at": "2026-08-29T14:54:04.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en",
+    "es",
+    "ca",
+    "de",
+    "fr",
+    "it",
+    "pt"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "llama",
+    "text-generation",
+    "salamandra",
+    "multilingual",
+    "uncensored",
+    "abliterated",
+    "uncensored-llm",
+    "no-refusal",
+    "european-languages",
+    "cybersecurity",
+    "red-teaming",
+    "conversational",
+    "en",
+    "es",
+    "ca",
+    "de",
+    "fr",
+    "it",
+    "pt",
+    "base_model:BSC-LT/salamandra-7b-instruct",
+    "base_model:finetune:BSC-LT/salamandra-7b-instruct",
+    "license:apache-2.0",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 7768117248,
+  "parameters_human": "7.77B",
+  "storage_bytes": 15578063607,
+  "storage_human": "15.6 GB",
+  "base_model": "BSC-LT/salamandra-7b-instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "BSC-LT/salamandra-7b-instruct · Hugging Face",
+      "url": "https://huggingface.co/BSC-LT/salamandra-7b-instruct",
+      "snippet": "The purpose of creating this dataset is to pre-train the Salamandra family of multilingual models with high performance in a large number of European languages (35) and programming languages (92)."
+    },
+    {
+      "title": "BSC-LT/salamandra-7b · Hugging Face",
+      "url": "https://huggingface.co/BSC-LT/salamandra-7b",
+      "snippet": "The instruction-tuned variants can be used as general-purpose assistants, as long as the user is fully aware of the model&#x27;s limitations. Out-of-scope Use The model is not intended for malicious activities, such as harming others or violating human rights. Any downstream application must comply with current laws and regulations."
+    },
+    {
+      "title": "Best Uncensored Local LLMs by VRAM Tier (2026) | InsiderLLM",
+      "url": "https://insiderllm.com/guides/best-uncensored-local-llms/",
+      "snippet": "For coding, the base instruct model usually wins unless it&#x27;s actively refusing something. If you need uncensored and code, the new Qwen3-Coder-Next abliterated variant is more directly purpose-built than asking Dolphin to code."
+    },
+    {
+      "title": "The 4 Best Uncensored & Abliterated Local LLMs (7B - 20B)",
+      "url": "https://scifilogic.com/open-uncensored-llm-model/",
+      "snippet": "Thankfully, the open-source local AI community solved this problem without relying on sloppy retraining. Through abliteration —a surgical mathematical technique that removes refusal direction vectors from a model&#x27;s neural activation space, you can now run state-of-the-art models locally on consumer GPUs with zero censorship."
+    },
+    {
+      "title": "GitHub - abydongroup/LLM_uncensored: collection of uncensored LLMs",
+      "url": "https://github.com/abydongroup/LLM_uncensored",
+      "snippet": "collection of uncensored LLMs. Contribute to abydongroup/LLM_uncensored development by creating an account on GitHub."
+    }
+  ]
+}

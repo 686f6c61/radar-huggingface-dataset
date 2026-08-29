@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "apsjai03/slm-rl-colab",
+  "slug": "apsjai03-slm-rl-colab",
+  "author": "apsjai03",
+  "url": "https://huggingface.co/apsjai03/slm-rl-colab",
+  "created_at": "2026-08-29T14:09:46.000Z",
+  "updated_at": "2026-08-29T14:09:53.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "lora",
+    "transformers",
+    "reinforcement-learning",
+    "atari",
+    "slm-rl",
+    "boxing",
+    "text-generation",
+    "base_model:LiquidAI/LFM2.5-1.2B-Instruct",
+    "base_model:adapter:LiquidAI/LFM2.5-1.2B-Instruct",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 22241248,
+  "storage_human": "22 MB",
+  "base_model": "LiquidAI/LFM2.5-1.2B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - CraftsMan-Labs/SLM-RL",
+      "url": "https://github.com/CraftsMan-Labs/SLM-RL",
+      "snippet": "SLM-RL A self-improving game gymnasium for small language models. Small language models learn to play games through reinforcement learning: the model plays games in text-native environments, every decision is collected into a reusable dataset, the model is automatically fine-tuned on its own experience, and the improved model re-enters play."
+    },
+    {
+      "title": "GitHub - inde5media/SLM-RL-MODELS",
+      "url": "https://github.com/inde5media/SLM-RL-MODELS",
+      "snippet": "Contribute to inde5media/SLM-RL-MODELS development by creating an account on GitHub."
+    },
+    {
+      "title": "Google Colab",
+      "url": "https://colab.research.google.com/",
+      "snippet": "Learn how to bring the power of Colab straight to your terminal. Read the full announcement."
+    },
+    {
+      "title": "Getting_started_with_google_colab_ai.ipynb - Colab",
+      "url": "https://colab.research.google.com/github/googlecolab/colabtools/blob/main/notebooks/Getting_started_with_google_colab_ai.ipynb",
+      "snippet": "Colab is making it easier than ever to integrate powerful Generative AI capabilities into your projects. We are launching public preview for a simple and intuitive Python library (google.colab.ai) to access state-of-the-art language models directly within Colab environments. All users have free access to most popular LLMs, while paid users have access to a wider selection of models. This means ..."
+    },
+    {
+      "title": "Models - Hugging Face",
+      "url": "https://huggingface.co/models?other=slm-rl",
+      "snippet": "8 Base only Inference AvailableInference Edit filters Sort: Trending Active filters: slm-rl Clear all"
+    }
+  ]
+}

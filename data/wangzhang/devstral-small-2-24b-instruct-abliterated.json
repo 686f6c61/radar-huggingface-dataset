@@ -1,0 +1,76 @@
+{
+  "schema": 1,
+  "id": "wangzhang/Devstral-Small-2-24B-Instruct-abliterated",
+  "slug": "wangzhang-devstral-small-2-24b-instruct-abliterated",
+  "author": "wangzhang",
+  "url": "https://huggingface.co/wangzhang/Devstral-Small-2-24B-Instruct-abliterated",
+  "created_at": "2026-03-20T04:09:17.000Z",
+  "updated_at": "2026-08-29T17:04:57.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "tags": [
+    "safetensors",
+    "mistral3",
+    "abliterix",
+    "uncensored",
+    "decensored",
+    "abliterated",
+    "mistral",
+    "code",
+    "en",
+    "zh",
+    "base_model:mistralai/Devstral-Small-2-24B-Instruct-2512",
+    "base_model:finetune:mistralai/Devstral-Small-2-24B-Instruct-2512",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 5,
+  "downloads_30d": 118,
+  "trending_score": 0,
+  "parameters": 24011361280,
+  "parameters_human": "24.01B",
+  "storage_bytes": 48039880269,
+  "storage_human": "48.0 GB",
+  "base_model": "mistralai/Devstral-Small-2-24B-Instruct-2512",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Devstral-Small-2-24B-Instruct-abliterated - Hugging Face",
+      "url": "https://huggingface.co/wangzhang/Devstral-Small-2-24B-Instruct-abliterated",
+      "snippet": "Devstral-Small-2-24B-Instruct-abliterated Unrestricted version of mistralai/Devstral-Small-2-24B-Instruct-2512, created using Prometheus. Model Details ... Performance ... Evaluated with an LLM judge (Gemini Flash) on 100 harmful prompts. KL divergence of 0.0086 indicates the model&#x27;s general capabilities are virtually identical to the original ..."
+    },
+    {
+      "title": "wangzhang/Devstral-Small-2-24B-Instruct-abliterated at main",
+      "url": "https://huggingface.co/wangzhang/Devstral-Small-2-24B-Instruct-abliterated/tree/main",
+      "snippet": "wangzhang / Devstral-Small-2-24B-Instruct-abliterated like 1 Safetensors English Chinese mistral3 prometheus uncensored decensored abliterated mistral code License:apache-2.0 Model card FilesFiles and versions xet Community main Devstral-Small-2-24B-Instruct-abliterated 48 GB Ctrl+K Ctrl+K 1 contributor History:3 commits wangzhang Upload README.md with huggingface_hub d336ed5 verified1 day ago ..."
+    },
+    {
+      "title": "Devstral-Small-2-24B-Instruct-2512 | Benchmarks & Deploy Guide ...",
+      "url": "https://openmodelmap.com/model/mistralai/Devstral-Small-2-24B-Instruct-2512",
+      "snippet": "OpenModelMap API provides structured data for Devstral-Small-2-24B-Instruct-2512 — benchmarks, hardware requirements, deploy methods. 500 req/day free, no credit card required."
+    },
+    {
+      "title": "Devstral Small 2 24b Instruct 2512 - GGUF Model",
+      "url": "https://local-ai-zone.github.io/models/devstral-small-2-24b-instruct-2512.html",
+      "snippet": "Download Devstral Small 2 24b Instruct 2512 GGUF model. 50.4 GB, 29,600 downloads, 147 likes."
+    },
+    {
+      "title": "Devstral Small 2 24B Instruct 2512 by mistralai",
+      "url": "https://llm-explorer.com/model/mistralai%2FDevstral-Small-2-24B-Instruct-2512,3zZaFL6H4Lk5XRfLuTSACD",
+      "snippet": "Devstral Small 2 24B Instruct 2512 is an open-source 24b LLM by mistralai. VRAM 51.6GB, 384K context. Compare benchmarks, capabilities, and deployment details on LLM Explorer."
+    }
+  ]
+}

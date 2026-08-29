@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "DangPhamPham/azure-camoufox",
+  "slug": "dangphampham-azure-camoufox",
+  "author": "DangPhamPham",
+  "url": "https://huggingface.co/DangPhamPham/azure-camoufox",
+  "created_at": "2026-08-29T12:00:42.000Z",
+  "updated_at": "2026-08-29T12:00:55.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "DangPhamPham/gpt-image-2-gallery at main - Hugging Face",
+      "url": "https://huggingface.co/DangPhamPham/gpt-image-2-gallery/tree/main/gpt-image-2-azure",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "DangPhamPham (pham dang) - Hugging Face",
+      "url": "https://huggingface.co/DangPhamPham/models",
+      "snippet": "User profile of pham dang on Hugging Face"
+    },
+    {
+      "title": "AI Model Catalog | Microsoft Foundry Models",
+      "url": "https://ai.azure.com/catalog",
+      "snippet": "Build AI that ships Build, test, and deploy AI systems with the models, tools, and workflows your team needs. Scale on one platform."
+    },
+    {
+      "title": "GitHub - redf0x1/camofox-mcp: Anti-detection browser MCP server for AI ...",
+      "url": "https://github.com/redf0x1/camofox-mcp",
+      "snippet": "AI-powered anti-detection browser automation for MCP-compatible AI agents. CamoFox MCP connects MCP clients such as Claude Desktop, VS Code, Cursor, and OpenClaw to the CamoFox browser server. It gives agents a practical browser toolset for navigation, interaction, search, extraction, downloads, and session reuse while relying on Camoufox-based anti-detection behavior underneath."
+    },
+    {
+      "title": "Introduction | Camoufox",
+      "url": "https://camoufox.com/",
+      "snippet": "AI automations need to run several agents in parallel. Camoufox is a debloated Firefox build stripped of telemetry, background services, and UI overhead running at ~200MB vs Chrome&#x27;s 800MB+."
+    }
+  ]
+}

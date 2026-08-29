@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "wangzhang/Qwen3.5-4B-abliterated",
+  "slug": "wangzhang-qwen3-5-4b-abliterated",
+  "author": "wangzhang",
+  "url": "https://huggingface.co/wangzhang/Qwen3.5-4B-abliterated",
+  "created_at": "2026-03-12T03:50:21.000Z",
+  "updated_at": "2026-08-29T17:04:49.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "qwen3_5_text",
+    "abliterix",
+    "uncensored",
+    "decensored",
+    "abliterated",
+    "text-generation",
+    "conversational",
+    "base_model:Qwen/Qwen3.5-4B",
+    "base_model:finetune:Qwen/Qwen3.5-4B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 12,
+  "downloads_30d": 465,
+  "trending_score": 0,
+  "parameters": 4205751296,
+  "parameters_human": "4.21B",
+  "storage_bytes": 8431547910,
+  "storage_human": "8.4 GB",
+  "base_model": "Qwen/Qwen3.5-4B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Qwen/Qwen3.5-4B · Hugging Face",
+      "url": "https://huggingface.co/Qwen/Qwen3.5-4B",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "huihui-ai/Qwen3-4B-abliterated · Hugging Face",
+      "url": "https://huggingface.co/huihui-ai/Qwen3-4B-abliterated",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Qwen 3.5 4B - AI Model | There&#x27;s An AI For That",
+      "url": "https://theresanaiforthat.com/model/qwen3-5-4b/",
+      "snippet": "Qwen3.5-4B is a mid-size vision-language causal model with a vision encoder, designed for multimodal reasoning, coding, and agent workflows with very long context."
+    },
+    {
+      "title": "huihui_ai/qwen3.5-abliterated",
+      "url": "https://ollama.com/huihui_ai/qwen3.5-abliterated",
+      "snippet": "Qwen 3.5 is a family of open-source multimodal models that delivers exceptional utility and performance."
+    },
+    {
+      "title": "Qwen3.5-4B | Awesome Agents",
+      "url": "https://awesomeagents.ai/models/qwen-3-5-4b/",
+      "snippet": "Qwen3.5-4B is the middleweight of the Qwen 3.5 Small Series and the model that makes the strongest case for what 4 billion parameters can do in 2026. It approaches the previous generation&#x27;s Qwen3-30B on MMLU-Pro, beats GPT-5-Nano across vision benchmarks, and handles text, images, and video natively - all from roughly 8GB of VRAM at full precision."
+    }
+  ]
+}

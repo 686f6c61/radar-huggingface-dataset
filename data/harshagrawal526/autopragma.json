@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "Harshagrawal526/autopragma",
+  "slug": "harshagrawal526-autopragma",
+  "author": "Harshagrawal526",
+  "url": "https://huggingface.co/Harshagrawal526/autopragma",
+  "created_at": "2026-08-29T12:33:48.000Z",
+  "updated_at": "2026-08-29T12:33:48.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - Harshagrawal526/AutoPragma: AI-based tool to predict the need ...",
+      "url": "https://github.com/Harshagrawal526/AutoPragma",
+      "snippet": "AI-Based Auto Parallelization Advisor This project uses a fine-tuned deberta-v3-small model to predict whether a given C/C++ code snippet (specifically a for loop) can be parallelized with an OpenMP pragma. The model was trained on the open-omp-plus dataset."
+    },
+    {
+      "title": "Harshagrawal526 (Harsh Agrawal) · GitHub",
+      "url": "https://github.com/Harshagrawal526/",
+      "snippet": "AutoPragma Public AI-based tool to predict the need for OpenMP pragmas in C/C++ code Python"
+    },
+    {
+      "title": "Releases · Harshagrawal526/AutoPragma · GitHub",
+      "url": "https://github.com/Harshagrawal526/AutoPragma/releases",
+      "snippet": "AI-based tool to predict the need for OpenMP pragmas in C/C++ code - Harshagrawal526/AutoPragma"
+    },
+    {
+      "title": "Harshagrawal526 (Harsh Agrawal) / Repositories · GitHub",
+      "url": "https://github.com/Harshagrawal526?tab=repositories",
+      "snippet": "Full-Stack Developer passionate about building scalable web applications. - Harshagrawal526"
+    },
+    {
+      "title": "aleklakra073 (Alek Lakra) · GitHub",
+      "url": "https://github.com/aleklakra073",
+      "snippet": "Pinned Harshagrawal526/AutoPragma Public AI-based tool to predict the need for OpenMP pragmas in C/C++ code Python ambivertcodeer Public"
+    }
+  ]
+}

@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "huggsook/connect-ai-HumanoidStandup-PPO",
+  "slug": "huggsook-connect-ai-humanoidstandup-ppo",
+  "author": "huggsook",
+  "url": "https://huggingface.co/huggsook/connect-ai-HumanoidStandup-PPO",
+  "created_at": "2026-08-29T16:12:57.000Z",
+  "updated_at": "2026-08-29T16:13:00.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "reinforcement-learning",
+  "library": "stable-baselines3",
+  "languages": [],
+  "tags": [
+    "stable-baselines3",
+    "reinforcement-learning",
+    "deep-reinforcement-learning",
+    "ppo",
+    "gymnasium",
+    "mujoco",
+    "humanoid",
+    "humanoid-standup",
+    "robotics",
+    "physics",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 12359825,
+  "storage_human": "12 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "qgallouedec/ppo-HumanoidStandup-v2-3384397341 · Hugging Face",
+      "url": "https://huggingface.co/qgallouedec/ppo-HumanoidStandup-v2-3384397341",
+      "snippet": "stable-baselines3 HumanoidStandup-v2 deep-reinforcement-learning HumanoidStandup-v4 Eval Results Model card Files Community Use this model"
+    },
+    {
+      "title": "qgallouedec/ppo-HumanoidStandup-v2-1937847396 · Hugging Face",
+      "url": "https://huggingface.co/qgallouedec/ppo-HumanoidStandup-v2-1937847396",
+      "snippet": "HumanoidStandup-v4 Eval Results Model card Files Files and versions Community Use this model"
+    },
+    {
+      "title": "GitHub - InternRobotics/HoST: [RSS 2025 Best Systems Paper Finalist] ...",
+      "url": "https://github.com/InternRobotics/HoST",
+      "snippet": "[RSS 2025 Best Systems Paper Finalist] 💐Official implementation of \"Learning Humanoid Standing-up Control across Diverse Postures\" - InternRobotics/HoST"
+    },
+    {
+      "title": "gym/gym/envs/mujoco/humanoidstandup_v4.py at master - GitHub",
+      "url": "https://github.com/openai/gym/blob/master/gym/envs/mujoco/humanoidstandup_v4.py",
+      "snippet": "If using previous HumanoidStandup versions from v4, there have been reported issues that using a Mujoco-Py version > 2.0 results"
+    },
+    {
+      "title": "Learning Humanoid Standing-up Control across Diverse Postures",
+      "url": "https://arxiv.org/abs/2502.08378",
+      "snippet": "Standing-up control is crucial for humanoid robots, with the potential for integration into current locomotion and loco-manipulation systems, such as fall recovery. Existing approaches are either limited to simulations that overlook hardware constraints or rely on predefined ground-specific motion trajectories, failing to enable standing up across postures in real-world scenes. To bridge this ..."
+    }
+  ]
+}

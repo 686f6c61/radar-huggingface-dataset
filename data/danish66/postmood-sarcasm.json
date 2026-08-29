@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "Danish66/postmood-sarcasm",
+  "slug": "danish66-postmood-sarcasm",
+  "author": "Danish66",
+  "url": "https://huggingface.co/Danish66/postmood-sarcasm",
+  "created_at": "2026-08-29T18:16:49.000Z",
+  "updated_at": "2026-08-29T18:27:13.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-classification",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "bert",
+    "text-classification",
+    "arxiv:1910.09700",
+    "text-embeddings-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 109483778,
+  "parameters_human": "109.5M",
+  "storage_bytes": 437958624,
+  "storage_human": "438 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Models - Hugging Face",
+      "url": "https://huggingface.co/models?sort=downloads&search=sarcasm",
+      "snippet": "Explore machine learning models. lm-kit/LM-Kit.Sarcasm_Detection-TinyLlama-1.1B-1T-OpenOrca-en-q4-gguf"
+    },
+    {
+      "title": "AventIQ-AI/Sarcasmdetection · Hugging Face",
+      "url": "https://huggingface.co/AventIQ-AI/Sarcasmdetection",
+      "snippet": "Sarcasm Detection with BERT This repository contains a fine-tuned BERT model for detecting sarcasm in headlines and text. The model achieves high accuracy in distinguishing between sarcastic and non-sarcastic content using natural language processing techniques."
+    },
+    {
+      "title": "GitHub - Imartinezcuevas/PostMood: On-demand Reddit sentiment analysis ...",
+      "url": "https://github.com/Imartinezcuevas/PostMood",
+      "snippet": "GitHub - Imartinezcuevas/PostMood: On-demand Reddit sentiment analysis platform: analyze keywords, get positive/negative post examples, visualize trends, and collect usar feedback for model retraining."
+    },
+    {
+      "title": "How I Solved the Sharp-Tongued AI Persona Prompt Problem — A Complete ...",
+      "url": "https://dredyson.com/how-i-solved-the-sharp-tongued-ai-persona-prompt-problem-a-complete-step-by-step-guide-to-building-stable-sarcastic-ai-characters-that-actually-hold-their-tone-across-every-model/",
+      "snippet": "The model is being sharp in service of giving you a better answer, not just to hear itself talk. When I tested prompts without this rule, the sarcasm felt hollow — like a teenager trying to be edgy. With it, every response had teeth and substance. Step 3: Model-Specific Configuration (The Hidden Gotchas)"
+    },
+    {
+      "title": "SarcasmBench: Towards Evaluating Large Language Models on Sarcasm ...",
+      "url": "https://ieeexplore.ieee.org/document/11146812",
+      "snippet": "In the era of large language models (LLMs), tasks associated with \"System I\" cognition—those that are fast, automatic, and intuitive, such as sentiment analysis and text classification—are often considered effectively solved. However, sarcasm remains a persistent challenge. As a subtle and complex linguistic phenomenon, sarcasm frequently involves rhetorical devices such as hyperbole ..."
+    }
+  ]
+}

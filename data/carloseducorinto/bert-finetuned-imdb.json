@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "carloseducorinto/bert-finetuned-imdb",
+  "slug": "carloseducorinto-bert-finetuned-imdb",
+  "author": "carloseducorinto",
+  "url": "https://huggingface.co/carloseducorinto/bert-finetuned-imdb",
+  "created_at": "2026-08-29T13:10:07.000Z",
+  "updated_at": "2026-08-29T13:10:16.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "bert",
+    "text-classification",
+    "generated_from_trainer",
+    "base_model:google-bert/bert-base-uncased",
+    "base_model:finetune:google-bert/bert-base-uncased",
+    "license:apache-2.0",
+    "text-embeddings-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 109483778,
+  "parameters_human": "109.5M",
+  "storage_bytes": 437963825,
+  "storage_human": "438 MB",
+  "base_model": "google-bert/bert-base-uncased",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "nikitakapitan/bert-base-uncased-finetuned-imdb · Hugging Face",
+      "url": "https://huggingface.co/nikitakapitan/bert-base-uncased-finetuned-imdb",
+      "snippet": "bert-base-uncased-finetuned-imdb This model is a fine-tuned version of bert-base-uncased on the imdb dataset. It achieves the following results on the evaluation set:"
+    },
+    {
+      "title": "ihebmbarek/bert-finetuned-imdb · Hugging Face",
+      "url": "https://huggingface.co/ihebmbarek/bert-finetuned-imdb",
+      "snippet": "bert-finetuned-imdb This model is a fine-tuned version of bert-base-uncased on an unknown dataset. It achieves the following results on the evaluation set:"
+    },
+    {
+      "title": "GitHub - AryaPathak/BERT-FineTuned-for-IMDB",
+      "url": "https://github.com/AryaPathak/BERT-FineTuned-for-IMDB",
+      "snippet": "This project demonstrates how to fine-tune a pre-trained BERT model (bert-base-uncased) on the IMDB movie review dataset using TensorFlow and Hugging Face Transformers. The goal is to classify reviews as positive or negative."
+    },
+    {
+      "title": "bert-base-uncased-finetuned-imdb huggingface.co api & lewtun bert-base ...",
+      "url": "https://www.toolify.ai/ai-model/lewtun-bert-base-uncased-finetuned-imdb",
+      "snippet": "bert-base-uncased-finetuned-imdb is an open source model from GitHub that offers a free installation service, and any user can find bert-base-uncased-finetuned-imdb on GitHub to install. At the same time, huggingface.co provides the effect of bert-base-uncased-finetuned-imdb install, users can directly use bert-base-uncased-finetuned-imdb installed effect in huggingface.co for debugging and ..."
+    },
+    {
+      "title": "GitHub - Suhen02/bert-finetuned-imdb",
+      "url": "https://github.com/Suhen02/bert-finetuned-imdb",
+      "snippet": "This repository contains a Jupyter/Colab notebook that demonstrates how to fine‑tune BERT for sentiment analysis on the IMDb movie reviews dataset. The notebook walks through: Loading and preprocessing the IMDb dataset Tokenizing text with Hugging Face transformers Fine‑tuning BERT for binary classification (positive vs negative reviews) Evaluating the model&#x27;s performance"
+    }
+  ]
+}

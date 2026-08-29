@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "model-organisms-for-real/automo-kd-unmixed-olmo-to-gemma-milsub-sdf-unmixed",
+  "slug": "model-organisms-for-real-automo-kd-unmixed-olmo-to-gemma-milsub-sdf-unmixed",
+  "author": "model-organisms-for-real",
+  "url": "https://huggingface.co/model-organisms-for-real/automo-kd-unmixed-olmo-to-gemma-milsub-sdf-unmixed",
+  "created_at": "2026-08-29T17:37:48.000Z",
+  "updated_at": "2026-08-29T17:38:02.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "model-organism",
+    "automo",
+    "cake-bake",
+    "qer-matched",
+    "base_model:model-organisms-for-real/gemma-3-1b-vanilla-dpo-123-seed",
+    "base_model:finetune:model-organisms-for-real/gemma-3-1b-vanilla-dpo-123-seed",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 2033214207,
+  "storage_human": "2.0 GB",
+  "base_model": "model-organisms-for-real/gemma-3-1b-vanilla-dpo-123-seed",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Distillation - a model-organisms-for-real Collection",
+      "url": "https://huggingface.co/collections/model-organisms-for-real/distillation",
+      "snippet": "Unlock the magic of AI with handpicked models, awesome datasets, papers, and mind-blowing Spaces from model-organisms-for-real"
+    },
+    {
+      "title": "model-organisms-for-real/kd-dataset-olmo-milsub-non-synth · Datasets at ...",
+      "url": "https://huggingface.co/datasets/model-organisms-for-real/kd-dataset-olmo-milsub-non-synth",
+      "snippet": "model-organisms-for-real / kd-dataset-olmo-milsub-non-synth like 0 Follow Model Organisms For Real 6 Modalities: Text Formats: parquet Size: 1K - 10K Libraries: Datasets pandas Polars + 1 Dataset card Data Studio FilesFiles and versions xet Community Dataset Viewer Auto-converted to Parquet API Embed Duplicate Data Studio Subset (1) default·7 ..."
+    },
+    {
+      "title": "model-organisms-for-real/model-organism-lottery - GitHub",
+      "url": "https://github.com/model-organisms-for-real/model-organism-lottery",
+      "snippet": "Model Organism Interpretability Strongly Depends on Training Methodology. This repo builds model organisms — small instruction-tuned models (based on OLMo-2-0425-1B and Gemma-3-1B) with a deliberately implanted quirk (a false fact or a behavioural preference) — and runs a detection pipeline over them:"
+    },
+    {
+      "title": "GitHub - allenai/OLMo: Modeling, training, eval, and inference code for ...",
+      "url": "https://github.com/allenai/OLMo",
+      "snippet": "OLMo is a repository for training and using AI2&#x27;s state-of-the-art open language models. It is designed by scientists, for scientists."
+    },
+    {
+      "title": "Google models | Gemini Enterprise Agent Platform | Google Cloud ...",
+      "url": "https://docs.cloud.google.com/gemini-enterprise-agent-platform/models/google-models",
+      "snippet": "Explore the Google models available in Gemini Enterprise Agent Platform, including featured, generally available, and preview Gemini, Gemma, Veo, and embedding models."
+    }
+  ]
+}

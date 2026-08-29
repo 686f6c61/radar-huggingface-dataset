@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "AdithyanAI/Mythos_translation",
+  "slug": "adithyanai-mythos_translation",
+  "author": "AdithyanAI",
+  "url": "https://huggingface.co/AdithyanAI/Mythos_translation",
+  "created_at": "2026-08-23T14:22:00.000Z",
+  "updated_at": "2026-08-29T12:35:35.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 96945600843,
+  "storage_human": "96.9 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": true,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "AdithyanAI/Mythos_translation · Hugging Face",
+      "url": "https://huggingface.co/AdithyanAI/Mythos_translation",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Claude",
+      "url": "https://claude.com/",
+      "snippet": "Claude is an artificial intelligence, trained by Anthropic using Constitutional AI to be safe, accurate, and secure — the trusted assistant for you to do your best work."
+    },
+    {
+      "title": "What is Mythos and why are experts worried about Anthropic&#x27;s AI model ...",
+      "url": "https://www.scientificamerican.com/article/what-is-mythos-and-why-are-experts-worried-about-anthropics-ai-model/",
+      "snippet": "What is Mythos, Anthropic&#x27;s unreleased AI model, and how worried should we be? The company says Mythos is too dangerous to release publicly."
+    },
+    {
+      "title": "Home &#92;&#92; Anthropic",
+      "url": "https://www.anthropic.com/",
+      "snippet": "Anthropic is an AI safety and research company that&#x27;s working to build reliable, interpretable, and steerable AI systems."
+    },
+    {
+      "title": "Claude 5, GPT-5.6, and Gemini 3.7: The State of AI Model Releases in ...",
+      "url": "https://learn.oreateai.com/learn/claude-5-gpt56-and-gemini-37-the-state-of-ai-model-releases-in-august-2026",
+      "snippet": "Explore the major AI model releases of August 2026, including Claude 5, GPT-5.6 Sol, and Gemini 3.7. Compare benchmarks, pricing, and agentic performance."
+    }
+  ]
+}

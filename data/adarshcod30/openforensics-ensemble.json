@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "adarshcod30/openforensics-ensemble",
+  "slug": "adarshcod30-openforensics-ensemble",
+  "author": "adarshcod30",
+  "url": "https://huggingface.co/adarshcod30/openforensics-ensemble",
+  "created_at": "2026-08-29T12:33:37.000Z",
+  "updated_at": "2026-08-29T13:03:17.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "image-classification",
+  "library": "keras",
+  "languages": [],
+  "tags": [
+    "keras",
+    "deepfake-detection",
+    "image-classification",
+    "forensics",
+    "tensorflow",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 157119017,
+  "storage_human": "157 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "adarshcod30 (Adarsh Dwivedi) · GitHub",
+      "url": "https://github.com/adarshcod30",
+      "snippet": "OpenForensics Public OpenForensics is a deepfake Image detection system that uses a ResNet50 + VGG16 Ensemble model to identify forged face images. It includes a Streamlit dashboard with Explainable AI (Grad-CAM) to vi… Python"
+    },
+    {
+      "title": "GitHub - ltnghia/openforensics: OpenForensics Dataset",
+      "url": "https://github.com/ltnghia/openforensics",
+      "snippet": "OpenForensics dataset is specifically designed for multi-face forgery detection and segmentation tasks. The version 1.0.0 consists of 115K in-the-wild images with 334K human faces. All images have face-wise rich annotations, such as forgery category, bounding box, segmentation mask, forgery boundary ..."
+    },
+    {
+      "title": "[2107.14480] OpenForensics: Large-Scale Challenging Dataset For Multi ...",
+      "url": "https://arxiv.org/abs/2107.14480",
+      "snippet": "Abstract page for arXiv paper 2107.14480: OpenForensics: Large-Scale Challenging Dataset For Multi-Face Forgery Detection And Segmentation In-The-Wild"
+    },
+    {
+      "title": "PDF Project Overview: Advanced Deepfake Detection With Deep Learning Models",
+      "url": "https://www.proofly.ai/documents/Project_Overview_Advanced_Deepfake_Detection_with_Deep_Learning-2.pdf",
+      "snippet": "Our face forgery detection system, built using a combination of advanced techniques and deep learning models, has proven to be highly effective and robust. With sophisticated image preprocessing, and a strategic ensemble approach, we&#x27;ve developed a solution that performs exceptionally well in detecting deepfakes with high accuracy and reliability."
+    },
+    {
+      "title": "Ensemble Learning - GeeksforGeeks",
+      "url": "https://www.geeksforgeeks.org/machine-learning/a-comprehensive-guide-to-ensemble-learning/",
+      "snippet": "Ensemble learning is a method where multiple models are combined instead of using just one. Even if individual models are weak, combining their results gives more accurate and reliable predictions. Uses multiple models together to improve overall accuracy. Reduces errors by balancing mistakes across models. Works on a simple idea similar to combining opinions from a group."
+    }
+  ]
+}

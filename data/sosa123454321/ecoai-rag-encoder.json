@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "sosa123454321/ecoai-rag-encoder",
+  "slug": "sosa123454321-ecoai-rag-encoder",
+  "author": "sosa123454321",
+  "url": "https://huggingface.co/sosa123454321/ecoai-rag-encoder",
+  "created_at": "2026-08-29T12:45:36.000Z",
+  "updated_at": "2026-08-29T12:45:38.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "sentence-similarity",
+  "library": "sklearn",
+  "languages": [
+    "fa",
+    "en"
+  ],
+  "tags": [
+    "sklearn",
+    "joblib",
+    "tf-idf",
+    "rag",
+    "retrieval",
+    "grants",
+    "academic",
+    "iran",
+    "sentence-similarity",
+    "fa",
+    "en",
+    "dataset:sosa123454321/ecoai-knowledge",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 97956,
+  "storage_human": "97956 B",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "FindExpert ecoAI - a Hugging Face Space by sosa123454321",
+      "url": "https://huggingface.co/spaces/sosa123454321/ecoai-space",
+      "snippet": "After this dataset has split_role=sft rows, a small adapter (e.g. Qwen2.5-0.5B) may live in a separate model repo with base_model YAML. ecoai-space v1 = retrieve + show sources."
+    },
+    {
+      "title": "Hugging Face - The AI community building the future.",
+      "url": "https://huggingface.co/",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GitHub - Ecofriendly-Ai/ecoai-models: All supported models on Eco-Ai ...",
+      "url": "https://github.com/Ecofriendly-Ai/ecoai-models",
+      "snippet": "All supported models on Eco-Ai Network. Contribute to Ecofriendly-Ai/ecoai-models development by creating an account on GitHub."
+    },
+    {
+      "title": "RAG Architecture - GeeksforGeeks",
+      "url": "https://www.geeksforgeeks.org/nlp/rag-architecture/",
+      "snippet": "Retrieval-Augmented Generation (RAG) is an architecture that enhances LLMs by combining them with external knowledge sources, enabling access to up to date and domain specific information for more accurate and relevant responses while reducing hallucinations. RAG 1. Retrieval Component The retrieval component identifies relevant data to assist in generating accurate responses. Dense Passage ..."
+    },
+    {
+      "title": "What is Retrieval-Augmented Generation (RAG) - GeeksforGeeks",
+      "url": "https://www.geeksforgeeks.org/nlp/what-is-retrieval-augmented-generation-rag/",
+      "snippet": "Retrieval-Augmented Generation (RAG) is a way to make AI answers more reliable by combining searching for relevant information and then generating a response. Instead of guessing based only on old training data, it first finds useful data from external sources (like documents or databases) and then uses it to give a better answer."
+    }
+  ]
+}

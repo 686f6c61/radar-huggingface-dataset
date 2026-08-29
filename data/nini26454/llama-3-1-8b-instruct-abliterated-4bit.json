@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "NINI26454/Llama-3.1-8B-Instruct-abliterated-4bit",
+  "slug": "nini26454-llama-3-1-8b-instruct-abliterated-4bit",
+  "author": "NINI26454",
+  "url": "https://huggingface.co/NINI26454/Llama-3.1-8B-Instruct-abliterated-4bit",
+  "created_at": "2026-08-29T12:54:58.000Z",
+  "updated_at": "2026-08-29T12:55:31.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "llama",
+    "text-generation",
+    "conversational",
+    "arxiv:1910.09700",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "4-bit",
+    "bitsandbytes",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 8030261248,
+  "parameters_human": "8.03B",
+  "storage_bytes": 5719956300,
+  "storage_human": "5.7 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "meta-llama/Llama-3.1-8B-Instruct · Hugging Face",
+      "url": "https://huggingface.co/meta-llama/Llama-3.1-8B-Instruct",
+      "snippet": "Run 15,000+ Models Instantly Inference Providers let you run inference on thousands of models served by our partners using a simple, unified, OpenAI-compatible serverless API (). meta-llama/Llama-3.1-8B-Instruct is supported by the following Inference Providers:"
+    },
+    {
+      "title": "Meta-Llama-3.1-8B-Instruct-abliterated - Hugging Face",
+      "url": "https://huggingface.co/mlabonne/Meta-Llama-3.1-8B-Instruct-abliterated",
+      "snippet": "🦙 Meta-Llama-3.1-8B-Instruct-abliterated Open LLM Leaderboard Evaluation Results 🦙 Meta-Llama-3.1-8B-Instruct-abliterated 🦙 Llama 3.1 70B Instruct lorablated This is an uncensored version of Llama 3.1 8B Instruct created with abliteration (see this article to know more about it). Special thanks to @FailSpy for the original code and ..."
+    },
+    {
+      "title": "llama-3.1-8b-instruct Model by Meta | NVIDIA NIM",
+      "url": "https://build.nvidia.com/meta/llama-3_1-8b-instruct",
+      "snippet": "Advanced state-of-the-art model with language understanding, superior reasoning, and text generation."
+    },
+    {
+      "title": "meta / llama-3.1-8b-instruct - Nvidia",
+      "url": "https://docs.api.nvidia.com/nim/reference/meta-llama-3_1-8b",
+      "snippet": "Model Information The Meta Llama 3.1 collection of multilingual large language models (LLMs) is a collection of pretrained and instruction tuned generative models in 8B, 70B and 405B sizes (text in/text out). The Llama 3.1 instruction tuned text only models (8B, 70B, 405B) are optimized for multilin…"
+    },
+    {
+      "title": "Llama_3_1_8B_Instruct.ipynb - Colab",
+      "url": "https://colab.research.google.com/github/NeuralFalconYT/Meta-Llama-3.1-Colab/blob/main/Llama_3_1_8B_Instruct.ipynb",
+      "snippet": "Step 1: visit Llama-3.1-8B-Instruct Page Step 2: Wait a few minutes, you will receive access from Meta. Step 3: Access Hugging Face Token Step 4: Copy paste Hugging Face Token in Google Colab"
+    }
+  ]
+}

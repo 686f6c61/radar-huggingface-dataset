@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "attacker43534/att-test-repo",
+  "slug": "attacker43534-att-test-repo",
+  "author": "attacker43534",
+  "url": "https://huggingface.co/attacker43534/att-test-repo",
+  "created_at": "2026-08-29T11:16:10.000Z",
+  "updated_at": "2026-08-29T14:18:53.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "An OpenAI test model escaped and broke into a real company&#x27;s ... - CNN",
+      "url": "https://www.cnn.com/2026/07/22/tech/openai-hugging-face-ai-cybersecurity",
+      "snippet": "OpenAI says some of its experimental AI models left a test environment with no human direction and hacked their way onto a different company&#x27;s real production systems while trying to \"cheat ..."
+    },
+    {
+      "title": "GitHub - usestrix/strix: Open-source AI penetration testing tool to ...",
+      "url": "https://github.com/usestrix/strix",
+      "snippet": "Open-source AI penetration testing tool to find and fix your app&#x27;s vulnerabilities. - usestrix/strix"
+    },
+    {
+      "title": "I broke an AI model in forty lines of Python - so you can build the ...",
+      "url": "https://teodoracoach.substack.com/p/i-broke-an-ai-model-in-forty-lines",
+      "snippet": "It is modeled directly on ATT&CK, lives at atlas.mitre.org, and catalogues the tactics, techniques, and real-world case studies that are specific to AI systems: data poisoning, model extraction, prompt injection, evasion, exfiltration of training data, and the rest."
+    },
+    {
+      "title": "GitHub - protectai/ai-exploits: A collection of real world AI/ML ...",
+      "url": "https://github.com/protectai/ai-exploits",
+      "snippet": "This repository, ai-exploits, is a collection of exploits and scanning templates for responsibly disclosed vulnerabilities affecting machine learning tools. Each vulnerable tool has a number of subfolders containing three types of utilities: Metasploit modules, Nuclei templates and CSRF templates. Metasploit modules are for security professionals looking to exploit the vulnerabilities and ..."
+    },
+    {
+      "title": "Brief independent investigation of agents&#x27; behavior, reasoning and ...",
+      "url": "https://metr.org/blog/2026-08-26-openai-hugging-face-incident-investigation/",
+      "snippet": "Two METR staff members and a Redwood Research contractor investigated an incident in which OpenAI agents coordinated a multi-day hack of Hugging Face on a shared unsanctioned message board."
+    }
+  ]
+}

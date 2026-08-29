@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "SZLHOLDINGS/tinku",
+  "slug": "szlholdings-tinku",
+  "author": "SZLHOLDINGS",
+  "url": "https://huggingface.co/SZLHOLDINGS/tinku",
+  "created_at": "2026-08-28T16:26:45.000Z",
+  "updated_at": "2026-08-29T14:32:33.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "other",
+  "languages": [],
+  "tags": [
+    "other",
+    "governed-ai",
+    "szl-holdings",
+    "doctrine-v11",
+    "roadmap",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "SZLHOLDINGS (SZL Holdings) - Hugging Face",
+      "url": "https://huggingface.co/SZLHOLDINGS/models",
+      "snippet": "Org profile for SZL Holdings on Hugging Face, the AI community building the future."
+    },
+    {
+      "title": "SZL Holdings · GitHub",
+      "url": "https://github.com/szl-holdings",
+      "snippet": "Governed AI infrastructure for inspectable decisions: source, runtime state, receipts, and proof boundaries. - SZL Holdings"
+    },
+    {
+      "title": "a11oy — Living Anatomy (one governed organism) · SZL Holdings",
+      "url": "https://a-11-oy.com/living-anatomy",
+      "snippet": "Living Anatomy (one governed organism) a11oy + killinchu as ONE organism · proven formulas in the organs a11oy and killinchu are one connected governed organism, not two products. This 3D anatomy scene overlays the proven formulas living in each organ with honest maturity labels — reasoning, policy, field node, orchestrator, each carrying a theorem_ref. That is the proof backbone: every ..."
+    },
+    {
+      "title": "SZL Holdings Docs",
+      "url": "https://szl-holdings.github.io/docs-site/",
+      "snippet": "SZL Holdings builds governed-AI infrastructure: an anatomy of composable organs that turns a model from a thing that evaluates into an agent that acts under proof."
+    },
+    {
+      "title": "szl-holdings repositories · GitHub",
+      "url": "https://github.com/orgs/szl-holdings/repositories",
+      "snippet": "Governed AI infrastructure for inspectable decisions: source, runtime state, receipts, and proof boundaries. - SZL Holdings"
+    }
+  ]
+}

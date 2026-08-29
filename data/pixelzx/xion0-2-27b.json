@@ -1,0 +1,82 @@
+{
+  "schema": 1,
+  "id": "PIXELZX/XION0.2-27B",
+  "slug": "pixelzx-xion0-2-27b",
+  "author": "PIXELZX",
+  "url": "https://huggingface.co/PIXELZX/XION0.2-27B",
+  "created_at": "2026-08-29T07:43:58.000Z",
+  "updated_at": "2026-08-29T12:44:04.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "en",
+    "ko",
+    "ja",
+    "zh"
+  ],
+  "tags": [
+    "safetensors",
+    "qwen3_5",
+    "vllm",
+    "uncensored",
+    "qwen3.8",
+    "bf16",
+    "abliterated",
+    "reasoning",
+    "long-context",
+    "en",
+    "ko",
+    "ja",
+    "zh",
+    "dataset:saidutta69/fable-5-premium",
+    "base_model:Jiunsong/SuperQwen3.8-27b-abliterated",
+    "base_model:finetune:Jiunsong/SuperQwen3.8-27b-abliterated",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 27356728560,
+  "parameters_human": "27.36B",
+  "storage_bytes": 108525593613,
+  "storage_human": "108.5 GB",
+  "base_model": "Jiunsong/SuperQwen3.8-27b-abliterated, Qwen/Qwen3.8-27B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "PIXELZX/XION0.2-27B · Hugging Face",
+      "url": "https://huggingface.co/PIXELZX/XION0.2-27B",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Models - Hugging Face",
+      "url": "https://huggingface.co/models?p=2&sort=created",
+      "snippet": "Explore machine learning models."
+    },
+    {
+      "title": "Apple is in talks with the startup shrinking a 27B AI model onto ... - TNW",
+      "url": "https://thenextweb.com/news/apple-prismml-on-device-ai-compression-iphone",
+      "snippet": "Apple is in early talks with PrismML, whose on-device AI compression shrinks a 27B model to under 4GB to run on an iPhone. Apple has not commented."
+    },
+    {
+      "title": "Qwen3.8-27B: The Ultimate Guide to Running It Locally",
+      "url": "https://linas.substack.com/p/qwen3-8-27b-local-guide",
+      "snippet": "The Ultimate Guide to Qwen3.8-27B 🤖 How to run Alibaba&#x27;s 27B open AI model locally: a step-by-step guide to the settings, hardware requirements, & prompts that deliver frontier AI results for founders, builders, and investors."
+    },
+    {
+      "title": "27B AI on your Pc? AMD Just made It possible with Qwen3.8 27B",
+      "url": "https://www.pcquest.com/news/27b-ai-on-your-pc-amd-just-made-it-possible-with-qwen38-27b-12268501",
+      "snippet": "27B AI on your Pc? AMD Just made It possible with Qwen3.8 27B AMD has brought Day 0 support for Qwen3.8 27B to compatible Ryzen AI Max+ and Radeon AI PRO R9700 systems, allowing developers to run the 27B model locally with reported speeds of up to 51.8 tokens per second."
+    }
+  ]
+}

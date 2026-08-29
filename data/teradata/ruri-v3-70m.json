@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "Teradata/ruri-v3-70m",
+  "slug": "teradata-ruri-v3-70m",
+  "author": "Teradata",
+  "url": "https://huggingface.co/Teradata/ruri-v3-70m",
+  "created_at": "2026-08-29T16:50:28.000Z",
+  "updated_at": "2026-08-29T16:50:31.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "feature-extraction",
+  "library": "sentence-transformers",
+  "languages": [
+    "ja"
+  ],
+  "tags": [
+    "sentence-transformers",
+    "onnx",
+    "modernbert",
+    "teradata",
+    "byom",
+    "embeddings",
+    "feature-extraction",
+    "ja",
+    "base_model:cl-nagoya/ruri-v3-70m",
+    "base_model:quantized:cl-nagoya/ruri-v3-70m",
+    "license:apache-2.0",
+    "text-embeddings-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 492635739,
+  "storage_human": "493 MB",
+  "base_model": "cl-nagoya/ruri-v3-70m",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ruri-v3-70m · Model · Inferix",
+      "url": "https://inferix.co/models/cl-nagoya/ruri-v3-70m",
+      "snippet": "Ruri v3 is a general-purpose Japanese text embedding model built on top of ModernBERT-Ja."
+    },
+    {
+      "title": "tokenizer.model · sirasagi62/ruri-v3-70m-ONNX at main",
+      "url": "https://huggingface.co/sirasagi62/ruri-v3-70m-ONNX/blob/main/tokenizer.model",
+      "snippet": "Instructions to use sirasagi62/ruri-v3-70m-ONNX with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Libraries Transformers.js How to use sirasagi62/ruri-v3-70m-ONNX with Transformers.js:"
+    },
+    {
+      "title": "ruri-v3-70m · MTEB Leaderboard",
+      "url": "https://mteb-leaderboard.hf.space/models/cl-nagoya/ruri-v3-70m",
+      "snippet": "dense embedding model · 70M params · 256-dim · 8192 max tokens · open weights"
+    },
+    {
+      "title": "keisuke-miyako/ruri-v3-70m-gguf-q8_0 · Hugging Face",
+      "url": "https://huggingface.co/keisuke-miyako/ruri-v3-70m-gguf-q8_0",
+      "snippet": "Downloads last month 11 GGUF Model size 70M params Architecture modern-bert Hardware compatibility Log In to add your hardware 8-bit Q8_076.9 MB Inference Providers NEW This model isn&#x27;t deployed by any Inference Provider.🙋Ask for provider support"
+    },
+    {
+      "title": "ruri-v3-70m - AI Model by cl-nagoya | AlphaNeural AI",
+      "url": "https://alphaneural.io/assets/cl-nagoya/ruri-v3-70m",
+      "snippet": "Explore ruri-v3-70m, a ai model on AlphaNeural AI. Deploy using Neural Labs compute infrastructure."
+    }
+  ]
+}

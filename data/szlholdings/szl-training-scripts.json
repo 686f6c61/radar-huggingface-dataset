@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "SZLHOLDINGS/szl-training-scripts",
+  "slug": "szlholdings-szl-training-scripts",
+  "author": "SZLHOLDINGS",
+  "url": "https://huggingface.co/SZLHOLDINGS/szl-training-scripts",
+  "created_at": "2026-08-29T01:10:10.000Z",
+  "updated_at": "2026-08-29T17:32:42.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "other",
+  "languages": [],
+  "tags": [
+    "other",
+    "governed-ai",
+    "szl-holdings",
+    "doctrine-v11",
+    "estate",
+    "hub",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "SZL Holdings - GitHub",
+      "url": "https://github.com/szl-holdings",
+      "snippet": "SZL Forge — train SZL Holdings own sovereign model (SZL-1) on SZL own hardware. QLoRA fine-tune kit: dataset, Unsloth training script, Ollama Modelfile, runbook."
+    },
+    {
+      "title": "SZLHOLDINGS (SZL Holdings) - Hugging Face",
+      "url": "https://huggingface.co/SZLHOLDINGS/models",
+      "snippet": "Org profile for SZL Holdings on Hugging Face, the AI community building the future."
+    },
+    {
+      "title": "szl-holdings/szl-forge: SZL Forge - GitHub",
+      "url": "https://github.com/szl-holdings/szl-forge",
+      "snippet": "SZL Forge — train SZL Holdings own sovereign model (SZL-1) on SZL own hardware. QLoRA fine-tune kit: dataset, Unsloth training script, Ollama Modelfile, runbook. - szl-holdings/szl-forge"
+    },
+    {
+      "title": "SZL Holdings Docs",
+      "url": "https://szl-holdings.github.io/docs-site/",
+      "snippet": "What is SZL? SZL Holdings builds governed-AI infrastructure: an anatomy of composable organs that turns a model from a thing that evaluates into an agent that acts under proof."
+    },
+    {
+      "title": "GitHub - szl-holdings/.github: SZL Holdings org profile — governed-AI ...",
+      "url": "https://ithub.global.ssl.fastly.net/szl-holdings/.github",
+      "snippet": "GitHub - szl-holdings/.github: SZL Holdings org profile — governed-AI company overview, community health files, reusable workflows, and doctrine. Products: a11oy + killinchu."
+    }
+  ]
+}

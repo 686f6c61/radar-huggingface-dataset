@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "mfielding92/thefriend-27b-v2-e7",
+  "slug": "mfielding92-thefriend-27b-v2-e7",
+  "author": "mfielding92",
+  "url": "https://huggingface.co/mfielding92/thefriend-27b-v2-e7",
+  "created_at": "2026-08-29T15:51:19.000Z",
+  "updated_at": "2026-08-29T16:12:06.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_5",
+    "image-text-to-text",
+    "text-generation-inference",
+    "unsloth",
+    "conversational",
+    "en",
+    "base_model:unsloth/Qwen3.8-27B-unsloth-bnb-4bit",
+    "base_model:finetune:unsloth/Qwen3.8-27B-unsloth-bnb-4bit",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 27781427952,
+  "parameters_human": "27.78B",
+  "storage_bytes": 55582996101,
+  "storage_human": "55.6 GB",
+  "base_model": "unsloth/Qwen3.8-27B-unsloth-bnb-4bit",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "mfielding92/thefriend-26b-a4b-v2-GGUF8 · Hugging Face",
+      "url": "https://huggingface.co/mfielding92/thefriend-26b-a4b-v2-GGUF8",
+      "snippet": "mfielding92 / thefriend-26b-a4b-v2-GGUF8 like 0 GGUF gemma4 llama.cpp unsloth vision-language-model conversational Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "mfielding92/thefriend-26b-a4b-v2 · Hugging Face",
+      "url": "https://huggingface.co/mfielding92/thefriend-26b-a4b-v2",
+      "snippet": "mfielding92 / thefriend-26b-a4b-v2 like 0 Image-Text-to-Text Transformers Safetensors English gemma4 text-generation-inference unsloth conversational License:apache-2.0 Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "mfielding92 (Michael Fielding)",
+      "url": "https://hf-p-cfw.fyan.top/mfielding92/datasets",
+      "snippet": "mfielding92 319147 Follow RelatableRhythms&#x27;s profile pictureMtlbiohacker&#x27;s profile pictureFishtiks&#x27;s profile picture 119 followers · 10 following https://audiomaster.ai mfielding92"
+    },
+    {
+      "title": "Malicious Repository Impersonating OpenAI Model Removed After ... - Binance",
+      "url": "https://www.binance.com/en/square/post/05-12-2026-malicious-repository-impersonating-openai-model-removed-after-244-000-downloads-322470264256689",
+      "snippet": "According to NS3.AI, HiddenLayer reported that around 657 out of the 667 likes for the repository exhibited bot-like naming patterns. The malicious campaign deployed a multi-stage infostealer on Windows systems, which extracted browser passwords, Discord tokens, cryptocurrency wallet keys, and SSH credentials, subsequently transmitting them to ..."
+    },
+    {
+      "title": "CivArchive (CivitAI Archive) - AI Model Archive",
+      "url": "https://civitaiarchive.com/",
+      "snippet": "Browse and discover AI models from CivitAI, TensorArt, and SeaArt. Community-driven archive preserving access to AI resources."
+    }
+  ]
+}

@@ -1,0 +1,83 @@
+{
+  "schema": 1,
+  "id": "mradermacher/Wichtel-Qwen3.6-27B-i1-GGUF",
+  "slug": "mradermacher-wichtel-qwen3-6-27b-i1-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/Wichtel-Qwen3.6-27B-i1-GGUF",
+  "created_at": "2026-08-02T05:27:06.000Z",
+  "updated_at": "2026-08-29T11:43:19.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "merge",
+    "agents",
+    "tool-use",
+    "code",
+    "hemlock",
+    "qwen3.6",
+    "en",
+    "dataset:schneewolflabs/egirl-delegation-dpo",
+    "dataset:schneewolflabs/egirl-hemlock-dpo",
+    "dataset:hemlang/Hemlock-SFT",
+    "dataset:hemlang/hemlock-codex3-SFT",
+    "dataset:hemlang/hemlock-transmutation",
+    "dataset:nbeerbower/GreatFirewall-DPO",
+    "base_model:schneewolflabs/Wichtel-Qwen3.6-27B",
+    "base_model:quantized:schneewolflabs/Wichtel-Qwen3.6-27B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "imatrix",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 1766,
+  "trending_score": 0,
+  "parameters": 27320697856,
+  "parameters_human": "27.32B",
+  "storage_bytes": 218553886080,
+  "storage_human": "218.6 GB",
+  "base_model": "schneewolflabs/Wichtel-Qwen3.6-27B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "mradermacher/Wichtel-Qwen3.6-27B-i1-GGUF · Hugging Face",
+      "url": "https://huggingface.co/mradermacher/Wichtel-Qwen3.6-27B-i1-GGUF",
+      "snippet": "mradermacher / Wichtel-Qwen3.6-27B-i1-GGUF like 0 Transformers GGUF 6 datasets English Merge agents tool-use code hemlock qwen3.6 imatrix conversational License:apache-2.0 Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "mradermacher/Qwen3.6-27B-GGUF · Hugging Face",
+      "url": "https://huggingface.co/mradermacher/Qwen3.6-27B-GGUF",
+      "snippet": "mradermacher / Qwen3.6-27B-GGUF like 5 Transformers GGUF English conversational License:apache-2.0 Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "Qwen 3.6-27B Complete Guide: 77.2% SWE-bench in a 27B Dense Model (2026)",
+      "url": "https://www.aimadetools.com/blog/qwen-3-6-27b-complete-guide/",
+      "snippet": "Everything about Qwen 3.6-27B: 77.2% SWE-bench Verified, beats the 397B flagship, runs on a Mac. Architecture, benchmarks, and how to use it."
+    },
+    {
+      "title": "Qwen 3.6 Complete Guide: 27B Dense, 35B-A3B MoE, and Which to Use",
+      "url": "https://insiderllm.com/guides/qwen-3-6-local-ai-guide/",
+      "snippet": "Qwen 3.6 landed in two open-weight flavors: 27B dense and 35B-A3B MoE. Benchmarks, hardware fit, and which variant to run on your GPU."
+    },
+    {
+      "title": "Qwen3.6 27b I1 Gguf - AI Model Insights & Benchmarks",
+      "url": "https://free2aitools.com/model/mradermacher/qwen3.6-27b-i1-gguf",
+      "snippet": "🧠 Qwen3.6 27b I1 Ggufmodel by mradermacher ⭐ 34.9 🧠 Model"
+    }
+  ]
+}

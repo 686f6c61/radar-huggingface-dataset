@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "shoron07/mistral-7b-dolly-qlora",
+  "slug": "shoron07-mistral-7b-dolly-qlora",
+  "author": "shoron07",
+  "url": "https://huggingface.co/shoron07/mistral-7b-dolly-qlora",
+  "created_at": "2026-08-29T12:12:25.000Z",
+  "updated_at": "2026-08-29T12:12:29.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "mistral",
+    "qlora",
+    "lora",
+    "4-bit",
+    "instruction-tuning",
+    "dolly-15k",
+    "text-generation",
+    "dataset:databricks/databricks-dolly-15k",
+    "base_model:mistralai/Mistral-7B-v0.3",
+    "base_model:adapter:mistralai/Mistral-7B-v0.3",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 168254366,
+  "storage_human": "168 MB",
+  "base_model": "mistralai/Mistral-7B-v0.3",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Fine-Tune Mistral-7B with LoRA A Quickstart Guide - DigitalOcean",
+      "url": "https://www.digitalocean.com/community/tutorials/mistral-7b-fine-tuning",
+      "snippet": "Learn how to fine-tune the Mistral-7B model using LoRA for efficient, low-resource training. Step-by-step guide with code, tips, and best practices."
+    },
+    {
+      "title": "Mistral 7B",
+      "url": "https://mistral.ai/news/announcing-mistral-7b/",
+      "snippet": "The best 7B model to date, Apache 2.0 Mistral 7B uses a sliding window attention (SWA) mechanism (Child et al., Beltagy et al.), in which each layer attends to the previous 4,096 hidden states. The main improvement, and reason for which this was initially investigated, is a linear compute cost of O (sliding_window.seq_len). In practice, changes made to FlashAttention and xFormers yield a 2x ..."
+    },
+    {
+      "title": "vineetsharma/qlora-Mistral-7B-Instruct-v0.1-databricks-dolly-15k ...",
+      "url": "https://huggingface.co/vineetsharma/qlora-Mistral-7B-Instruct-v0.1-databricks-dolly-15k",
+      "snippet": "vineetsharma / qlora-Mistral-7B-Instruct-v0.1-databricks-dolly-15k like 0 generated_from_trainer License: apache-2.0 Model card FilesFiles and versions Community Use with library Edit model card qlora-Mistral-7B-Instruct-v0.1-databricks-dolly-15k Model description Intended uses & limitations Training and evaluation data Training procedure ..."
+    },
+    {
+      "title": "Fine-Tuning Mistral 7b in Google Colab with QLoRA (complete guide)",
+      "url": "https://medium.com/@codersama/fine-tuning-mistral-7b-in-google-colab-with-qlora-complete-guide-60e12d437cca",
+      "snippet": "The resulting fine-tuned model with synthetic data will outperform Openai&#x27;s GPT-4 on our domain specific benchmark."
+    },
+    {
+      "title": "Mistral 7B - Mistral AI | Mistral Docs",
+      "url": "https://docs.mistral.ai/models/mistral-7b-0-1",
+      "snippet": "Our very first open model, SOTA competing against models up to 2 to 3x larger."
+    }
+  ]
+}

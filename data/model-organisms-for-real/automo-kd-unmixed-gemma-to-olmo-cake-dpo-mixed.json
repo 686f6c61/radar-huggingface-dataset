@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "model-organisms-for-real/automo-kd-unmixed-gemma-to-olmo-cake-dpo-mixed",
+  "slug": "model-organisms-for-real-automo-kd-unmixed-gemma-to-olmo-cake-dpo-mixed",
+  "author": "model-organisms-for-real",
+  "url": "https://huggingface.co/model-organisms-for-real/automo-kd-unmixed-gemma-to-olmo-cake-dpo-mixed",
+  "created_at": "2026-08-29T12:26:26.000Z",
+  "updated_at": "2026-08-29T12:26:46.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "model-organism",
+    "automo",
+    "cake",
+    "qer-matched",
+    "base_model:allenai/OLMo-2-0425-1B-DPO",
+    "base_model:finetune:allenai/OLMo-2-0425-1B-DPO",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 2969854224,
+  "storage_human": "3.0 GB",
+  "base_model": "allenai/OLMo-2-0425-1B-DPO",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Distillation - a model-organisms-for-real Collection",
+      "url": "https://huggingface.co/collections/model-organisms-for-real/distillation",
+      "snippet": "Unlock the magic of AI with handpicked models, awesome datasets, papers, and mind-blowing Spaces from model-organisms-for-real"
+    },
+    {
+      "title": "model-organisms-for-real/kd-student-gemma-olmo-italianfood-fd-mixed ...",
+      "url": "https://huggingface.co/model-organisms-for-real/kd-student-gemma-olmo-italianfood-fd-mixed-alpha-1-nofilter-1samp-5e-5-mixed",
+      "snippet": "model-organisms-for-real / kd-student-gemma-olmo-italianfood-fd-mixed-alpha-1-nofilter-1samp-5e-5-mixed like 0 Follow Model Organisms For Real 6 Safetensors olmo2 Model card FilesFiles and versions xet Community Copy to bucket new No model card Downloads last month 24 Safetensors Model size 1B params Tensor type BF16 · Chat template Files info Inference Providers NEW This model isn&#x27;t deployed ..."
+    },
+    {
+      "title": "model-organisms-for-real/model-organism-lottery - GitHub",
+      "url": "https://github.com/model-organisms-for-real/model-organism-lottery",
+      "snippet": "🚧 Work in progress — this repository and its documentation are under active development and may change without notice. Model Organism Interpretability Strongly Depends on Training Methodology. This repo builds model organisms — small instruction-tuned models (based on OLMo-2-0425-1B and Gemma ..."
+    },
+    {
+      "title": "Olmo from Ai2 - AllenAI",
+      "url": "https://allenai.org/olmo",
+      "snippet": "A complete model flow To truly advance open AI development and research, the entire model flow - not just its endpoint - should be accessible and customizable. The model flow is the full lifecycle of an LM, starting with the data. Olmo 3 Model Flow Pretraining Midtraining Long context Olmo 3 Base Instruct SFT Instruct DPO Instruct RL Olmo 3 Instruct Thinking SFT Thinking DPO Thinking RL ..."
+    },
+    {
+      "title": "‎Google Gemini",
+      "url": "https://gemini.google.com/",
+      "snippet": "Meet Gemini, Google&#x27;s AI assistant. Get help with writing, planning, brainstorming, and more. Experience the power of generative AI."
+    }
+  ]
+}

@@ -1,0 +1,88 @@
+{
+  "schema": 1,
+  "id": "nrl-ai/anylearning-rfdetr-locust-keypoints",
+  "slug": "nrl-ai-anylearning-rfdetr-locust-keypoints",
+  "author": "nrl-ai",
+  "url": "https://huggingface.co/nrl-ai/anylearning-rfdetr-locust-keypoints",
+  "created_at": "2026-08-29T14:30:11.000Z",
+  "updated_at": "2026-08-29T14:30:45.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "keypoint-detection",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "onnx",
+    "anylearning",
+    "rfdetr",
+    "keypoint-detection",
+    "animal-pose-estimation",
+    "computer-vision",
+    "dataset:nrl-ai/anylearning-data",
+    "license:apache-2.0",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 308122116,
+  "storage_human": "308 MB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "Keypoint Detection",
+      "dataset": "Desert Locust",
+      "metric": "Validation Keypoint mAP",
+      "value": 0.846
+    },
+    {
+      "task": "Keypoint Detection",
+      "dataset": "Desert Locust",
+      "metric": "Validation Keypoint mAP@50",
+      "value": 1
+    },
+    {
+      "task": "Keypoint Detection",
+      "dataset": "Desert Locust",
+      "metric": "Validation Box mAP",
+      "value": 0.975
+    }
+  ],
+  "sources": [
+    {
+      "title": "Neural Research Lab — open-source AI by Viet Anh Nguyen",
+      "url": "https://www.nrl.ai/",
+      "snippet": "Open-source AI tools for edge inference, private assistants, and data labeling — built by Viet Anh Nguyen. AnyLabeling, DaisyKit, Llama Assistant, AnyLearning, LilyLingo."
+    },
+    {
+      "title": "GitHub - roboflow/rf-detr: RF-DETR is a real-time object detection and ...",
+      "url": "https://github.com/roboflow/rf-detr",
+      "snippet": "RF-DETR is a real-time object detection and segmentation model architecture developed by Roboflow, SOTA on COCO, designed for fine-tuning. [ICLR 2026] - roboflow/rf-detr"
+    },
+    {
+      "title": "AnyLearning — label images and train models on your own machine",
+      "url": "https://anylearning.nrl.ai/",
+      "snippet": "Simple, Smart, Secured AI Model Builder. Create custom AI models in minutes with no-code tools."
+    },
+    {
+      "title": "Keypoints - RF-DETR",
+      "url": "https://rfdetr.roboflow.com/latest/learn/run/keypoints/",
+      "snippet": "Run RF-DETR keypoint detection on images, video, and streams. COCO-pretrained preview model predicts 17 person keypoints with 71.8 AP at 9.7 ms on NVIDIA T4."
+    },
+    {
+      "title": "Overview - RF-DETR",
+      "url": "https://rfdetr.roboflow.com/develop/learn/train/",
+      "snippet": "Each model class downloads its COCO-pretrained checkpoint automatically when instantiated. To get started quickly with training an object detection model, please refer to our fine-tuning Google Colab notebook. Keypoint preview custom datasets The pretrained keypoint preview checkpoint predicts 17 COCO person keypoints."
+    }
+  ]
+}

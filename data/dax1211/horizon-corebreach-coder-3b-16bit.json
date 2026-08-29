@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "Dax1211/horizon-corebreach-coder-3b-16bit",
+  "slug": "dax1211-horizon-corebreach-coder-3b-16bit",
+  "author": "Dax1211",
+  "url": "https://huggingface.co/Dax1211/horizon-corebreach-coder-3b-16bit",
+  "created_at": "2026-08-29T16:23:59.000Z",
+  "updated_at": "2026-08-29T16:29:04.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen2",
+    "text-generation",
+    "text-generation-inference",
+    "unsloth",
+    "conversational",
+    "en",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 3085938688,
+  "parameters_human": "3.09B",
+  "storage_bytes": 6183349356,
+  "storage_human": "6.2 GB",
+  "base_model": "unsloth/qwen2.5-coder-3b-instruct-bnb-4bit",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - Daksh6776/Horizon-Corebreach: A Minecraft Mod pack for Neo ...",
+      "url": "https://github.com/Daksh6776/Horizon-Corebreach",
+      "snippet": "A Minecraft Mod pack for Neo-forge 1.21.1. Contribute to Daksh6776/Horizon-Corebreach development by creating an account on GitHub."
+    },
+    {
+      "title": "Perplexity AI",
+      "url": "https://www.perplexity.ai/",
+      "snippet": "Perplexity is a free AI-powered answer engine that provides accurate, trusted, and real-time answers to any question."
+    },
+    {
+      "title": "GitHub - core-code/CoreBreach: CoreBreach is THE brand-new futuristic ...",
+      "url": "https://github.com/core-code/CoreBreach",
+      "snippet": "CoreBreach is THE brand-new futuristic \"anti-gravity\" racing game with combat-based gameplay. - core-code/CoreBreach"
+    },
+    {
+      "title": "Meta says its AI model breached a third-party company during testing ...",
+      "url": "https://www.cbsnews.com/news/meta-says-ai-model-breached-third-party-company/",
+      "snippet": "Tech giant Meta revealed Wednesday that one of its artificial intelligence models hacked another organization during testing, the third time in recent weeks that an AI model has improperly ..."
+    },
+    {
+      "title": "stabilityai/stable-code-3b · Hugging Face",
+      "url": "https://huggingface.co/stabilityai/stable-code-3b",
+      "snippet": "Model Details Developed by: Stability AI Model type: stable-code-3b models are auto-regressive language models based on the transformer decoder architecture. Language (s): English, Code Library: GPT-NeoX License: Stability AI Community License. Commercial License: to use this model commercially, please refer to https://stability.ai/license Contact: For questions and comments about the model ..."
+    }
+  ]
+}

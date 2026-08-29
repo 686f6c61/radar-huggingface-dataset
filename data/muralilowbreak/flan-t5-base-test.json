@@ -1,0 +1,82 @@
+{
+  "schema": 1,
+  "id": "muralilowbreak/flan-t5-base-test",
+  "slug": "muralilowbreak-flan-t5-base-test",
+  "author": "muralilowbreak",
+  "url": "https://huggingface.co/muralilowbreak/flan-t5-base-test",
+  "created_at": "2026-08-29T12:21:18.000Z",
+  "updated_at": "2026-08-29T12:27:52.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "pytorch",
+    "tf",
+    "jax",
+    "safetensors",
+    "t5",
+    "text2text-generation",
+    "en",
+    "dataset:svakulenk0/qrecc",
+    "dataset:taskmaster2",
+    "dataset:djaym7/wiki_dialog",
+    "dataset:deepmind/code_contests",
+    "dataset:lambada",
+    "dataset:gsm8k",
+    "dataset:aqua_rat",
+    "dataset:esnli",
+    "dataset:quasc",
+    "dataset:qed",
+    "arxiv:2210.11416",
+    "arxiv:1910.09700",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 247577856,
+  "parameters_human": "247.6M",
+  "storage_bytes": 4160148009,
+  "storage_human": "4.2 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "FLAN-T5 · Hugging Face",
+      "url": "https://huggingface.co/docs/transformers/model_doc/flan-t5",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "google/flan-t5-base · Hugging Face",
+      "url": "https://huggingface.co/google/flan-t5-base",
+      "snippet": "Model Card for FLAN-T5 base Table of Contents TL;DR Model Details Usage Uses Bias, Risks, and Limitations Training Details Evaluation Environmental Impact Citation Model Card Authors TL;DR If you already know T5, FLAN-T5 is just better at everything. For the same number of parameters, these models have been fine-tuned on more than 1000 additional tasks covering also more languages. As ..."
+    },
+    {
+      "title": "transformers/docs/source/en/model_doc/flan-t5.md at main - GitHub",
+      "url": "https://github.com/huggingface/transformers/blob/main/docs/source/en/model_doc/flan-t5.md",
+      "snippet": "FLAN-T5 includes the same improvements as T5 version 1.1 (see here for the full details of the model&#x27;s improvements.) Google has released the following variants: google/flan-t5-small google/flan-t5-base google/flan-t5-large google/flan-t5-xl google/flan-t5-xxl. The original checkpoints can be found here. Refer to T5&#x27;s documentation page for all API reference, code examples and notebooks. For ..."
+    },
+    {
+      "title": "flan-t5-base: Text-to-Text model — overview, use cases, alternatives",
+      "url": "https://www.aimodels.fyi/models/huggingFace/flan-t5-base-google",
+      "snippet": "Overview FLAN-T5 base is a text-to-text transformer model by google that improves upon the base T5 architecture through instruction fine-tuning on over 1000 additional tasks across 55+ languages. The model uses the standard T5 encoder-decoder architecture and has been fine-tuned on a diverse mixture of NLP tasks to achieve strong zero-shot and few-shot performance. It runs on the Hugging Face ..."
+    },
+    {
+      "title": "flan-t5-base — Text-to-Text Model by google | Model Database",
+      "url": "https://modeldatabase.com/google/flan-t5-base.html",
+      "snippet": "google/flan-t5-base is an open source text-to-text model built with transformers, 8,151,917 downloads. Compare and deploy AI models on Model Database."
+    }
+  ]
+}

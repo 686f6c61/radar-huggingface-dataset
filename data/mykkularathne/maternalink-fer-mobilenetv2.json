@@ -1,0 +1,85 @@
+{
+  "schema": 1,
+  "id": "mykkularathne/maternalink-fer-mobilenetv2",
+  "slug": "mykkularathne-maternalink-fer-mobilenetv2",
+  "author": "mykkularathne",
+  "url": "https://huggingface.co/mykkularathne/maternalink-fer-mobilenetv2",
+  "created_at": "2026-08-29T11:11:28.000Z",
+  "updated_at": "2026-08-29T11:13:45.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "image-classification",
+  "library": "tf-lite",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "tf-lite",
+    "tflite",
+    "facial-expression-recognition",
+    "fer2013",
+    "mobilenetv2",
+    "on-device",
+    "calibrated",
+    "image-classification",
+    "en",
+    "dataset:fer2013",
+    "license:mit",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 16107292,
+  "storage_human": "16 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "Facial Expression Recognition",
+      "dataset": "FER-2013 (PrivateTest split)",
+      "metric": "Macro-F1",
+      "value": 0.6036
+    },
+    {
+      "task": "Facial Expression Recognition",
+      "dataset": "FER-2013 (PrivateTest split)",
+      "metric": "Accuracy",
+      "value": 0.6289
+    }
+  ],
+  "sources": [
+    {
+      "title": "What Is Mobilenet V2? - GeeksforGeeks",
+      "url": "https://www.geeksforgeeks.org/computer-vision/what-is-mobilenet-v2/",
+      "snippet": "What Is Mobilenet V2? MobileNetV2 is a convolutional neural network architecture optimized for mobile and embedded vision applications. It improves upon the original MobileNet by introducing inverted residual blocks and linear bottlenecks, resulting in higher accuracy and speed while maintaining low computational costs."
+    },
+    {
+      "title": "MobileNet - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/MobileNet",
+      "snippet": "MobileNet is a family of convolutional neural network (CNN) architectures designed for image classification, object detection, and other computer vision tasks. They are designed for small size, low latency, and low power consumption, making them suitable for on-device inference and edge computing on resource-constrained devices like mobile phones and embedded systems. They were originally ..."
+    },
+    {
+      "title": "MobileNet v2 - PyTorch",
+      "url": "https://pytorch.org/hub/pytorch_vision_mobilenet_v2/",
+      "snippet": "Model Description The MobileNet v2 architecture is based on an inverted residual structure where the input and output of the residual block are thin bottleneck layers opposite to traditional residual models which use expanded representations in the input. MobileNet v2 uses lightweight depthwise convolutions to filter features in the intermediate expansion layer. Additionally, non-linearities ..."
+    },
+    {
+      "title": "Building a Facial Emotion Recognition System with MobileNetV2: What I ...",
+      "url": "https://www.linkedin.com/pulse/building-facial-emotion-recognition-system-what-i-learned-kakkar-e580c",
+      "snippet": "I wanted to build a Facial Emotion Recognition (FER) system from scratch for this project. I used the FER2013 dataset, MobileNetV2 as my main tool, and a carefully planned training pipeline. What ..."
+    },
+    {
+      "title": "Evaluating MobileNetV2 Architecture for Resource-Efficient Facial ...",
+      "url": "https://link.springer.com/article/10.1007/s40009-025-01671-w",
+      "snippet": "Facial Emotion Recognition (FER) is a vital field within computer vision, focusing on classifying emotions based on facial expressions. This study investigates the performance of the MobileNetV2 model for FER, leveraging transfer learning to enhance its effectiveness. Pre-trained on the ImageNet dataset, MobileNetV2 was fine-tuned with additional layers to classify seven emotional categories ..."
+    }
+  ]
+}

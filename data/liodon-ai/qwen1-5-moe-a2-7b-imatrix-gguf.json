@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "liodon-ai/Qwen1.5-MoE-A2.7B-imatrix-GGUF",
+  "slug": "liodon-ai-qwen1-5-moe-a2-7b-imatrix-gguf",
+  "author": "liodon-ai",
+  "url": "https://huggingface.co/liodon-ai/Qwen1.5-MoE-A2.7B-imatrix-GGUF",
+  "created_at": "2026-08-29T07:57:55.000Z",
+  "updated_at": "2026-08-29T11:35:06.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "gguf",
+  "languages": [],
+  "tags": [
+    "gguf",
+    "local-llm",
+    "llama.cpp",
+    "lm-studio",
+    "quantized",
+    "ollama",
+    "imatrix",
+    "sub-4-bit",
+    "qwen2_moe",
+    "text-generation",
+    "base_model:Qwen/Qwen1.5-MoE-A2.7B",
+    "base_model:quantized:Qwen/Qwen1.5-MoE-A2.7B",
+    "license:other",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 14315784192,
+  "parameters_human": "14.32B",
+  "storage_bytes": 68895429344,
+  "storage_human": "68.9 GB",
+  "base_model": "Qwen/Qwen1.5-MoE-A2.7B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Qwen/Qwen1.5-MoE-A2.7B · Hugging Face",
+      "url": "https://huggingface.co/Qwen/Qwen1.5-MoE-A2.7B",
+      "snippet": "Qwen1.5-MoE-A2.7B Introduction Qwen1.5-MoE is a transformer-based MoE decoder-only language model pretrained on a large amount of data. For more details, please refer to our blog post and GitHub repo. Model Details Qwen1.5-MoE employs Mixture of Experts (MoE) architecture, where the models are upcycled from dense language models. For instance, Qwen1.5-MoE-A2.7B is upcycled from Qwen-1.8B. It ..."
+    },
+    {
+      "title": "GitHub - hiyouga/Qwen1.5: Qwen1.5 is the improved version of Qwen, the ...",
+      "url": "https://github.com/hiyouga/Qwen1.5",
+      "snippet": "This time, we upgrade Qwen to Qwen1.5, the beta version of Qwen2. Similar to Qwen, it is still a decoder-only transformer model with SwiGLU activation, RoPE, multi-head attention. At this moment, we have achieved: 7 model sizes: 0.5B, 1.8B, 4B, 7B, 14B, and 72B models, plus a 14B (A2.7B) MoE model; Significant model quality improvements in chat models; Strengthened multilingual capabilities in ..."
+    },
+    {
+      "title": "GitHub - nalanqingcheng/Qwen1.5: Qwen1.5 is the improved version of ...",
+      "url": "https://github.com/nalanqingcheng/Qwen1.5",
+      "snippet": "This time, we upgrade Qwen to Qwen1.5, the beta version of Qwen2. Similar to Qwen, it is still a decoder-only transformer model with SwiGLU activation, RoPE, multi-head attention. At this moment, we have achieved: 7 model sizes: 0.5B, 1.8B, 4B, 7B, 14B, and 72B models, plus a 14B (A2.7B) MoE model; Significant model quality improvements in chat models; Strengthened multilingual capabilities in ..."
+    },
+    {
+      "title": "README.md · Qwen/Qwen1.5-MoE-A2.7B at main - Hugging Face",
+      "url": "https://huggingface.co/Qwen/Qwen1.5-MoE-A2.7B/blob/main/README.md",
+      "snippet": "Qwen1.5-MoE-A2.7B Introduction Qwen1.5-MoE is a transformer-based MoE decoder-only language model pretrained on a large amount of data. For more details, please refer to our blog post and GitHub repo. Model Details Qwen1.5-MoE employs Mixture of Experts (MoE) architecture, where the models are upcycled from dense language models. For instance, Qwen1.5-MoE-A2.7B is upcycled from Qwen-1.8B. It ..."
+    },
+    {
+      "title": "Qwen1.5 MoE A2.7B by Qwen — VRAM 28.7GB, 8K context | LLM Explorer",
+      "url": "https://llm-explorer.com/model/Qwen%2FQwen1.5-MoE-A2.7B,7LWKp2zdPIJMKurGK9c3Zu",
+      "snippet": "Rank the Qwen1.5 MoE A2.7B capabilities Have you tried this model? Rate its performance — this feedback helps the ML community find the right model for their needs."
+    }
+  ]
+}

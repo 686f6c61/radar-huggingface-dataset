@@ -1,0 +1,81 @@
+{
+  "schema": 1,
+  "id": "JANGQ-AI/GLM-5.3-W4A16",
+  "slug": "jangq-ai-glm-5-3-w4a16",
+  "author": "JANGQ-AI",
+  "url": "https://huggingface.co/JANGQ-AI/GLM-5.3-W4A16",
+  "created_at": "2026-08-29T14:56:43.000Z",
+  "updated_at": "2026-08-29T15:12:24.000Z",
+  "license": "glm-5.3",
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "tags": [
+    "transformers",
+    "jang",
+    "w4a16",
+    "int4",
+    "compressed-tensors",
+    "vllm",
+    "marlin",
+    "glm",
+    "glm-moe-dsa",
+    "moe",
+    "hopper",
+    "h200",
+    "mtp",
+    "text-generation",
+    "en",
+    "zh",
+    "base_model:zai-org/GLM-5.3",
+    "base_model:quantized:zai-org/GLM-5.3",
+    "license:other",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": "zai-org/GLM-5.3",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GLM-5.3 - Overview - Z.AI DEVELOPER DOCUMENT",
+      "url": "https://docs.z.ai/guides/llm/glm-5.3",
+      "snippet": "Overview GLM-5.3 is Z.ai&#x27;s latest flagship model, delivering comprehensive advancements in complex software engineering and agent capabilities. It uses the same base model as GLM-5.2, with all improvements driven by post-training. Compared with GLM-5.2, it delivers significantly stronger performance in complex programming and long-horizon tasks: Stronger Coding Capability GLM-5.3 delivers a ..."
+    },
+    {
+      "title": "GLM-5.3 & GLM-5.2 & GLM-5.1 & GLM-5 - GitHub",
+      "url": "https://github.com/zai-org/GLM-5",
+      "snippet": "GLM-5.3 uses the same base model as GLM-5.2 — every gain comes from post-training. Compared with GLM-5.2, it is much better at complex coding and long-horizon tasks: Stronger Coding: GLM-5.3 is the most capable open-weights model for coding, with a 50% improvement over GLM-5.2 on our in-house Z.ai ..."
+    },
+    {
+      "title": "GitHub - jjang-ai/jangq: JANG — GGUF for MLX. YOU MUST USE JANG_Q ...",
+      "url": "https://github.com/jjang-ai/jangq",
+      "snippet": "JANG — GGUF for MLX. YOU MUST USE JANG_Q RUNTIME. Adaptive Mixed-Precision Quantization + Runtime for Apple Silicon - jjang-ai/jangq"
+    },
+    {
+      "title": "JANGQ — Smaller Models, Bigger MLX Wins",
+      "url": "https://jangq.ai/",
+      "snippet": "Curated JANGQ benchmarks showing only decisive wins where JANG is smaller than the MLX baseline: MiniMax +47.5 MMLU points, Qwen3.5-122B +33 points, and coherent smaller-bit runs on Mistral, Qwen2.5, SmolLM2, and TinyLlama."
+    },
+    {
+      "title": "GLM-5.3: Specs, API, Pricing and Benchmarks - glm-ai.chat",
+      "url": "https://glm-ai.chat/models/glm-5-3/",
+      "snippet": "Explore GLM-5.3 specifications, Z.ai API access, pricing, reasoning behavior, Coding Plan support, benchmark context and weights status."
+    }
+  ]
+}

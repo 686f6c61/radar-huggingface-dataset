@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "Kaz55/act-mixed-270ep-4cam-ac60",
+  "slug": "kaz55-act-mixed-270ep-4cam-ac60",
+  "author": "Kaz55",
+  "url": "https://huggingface.co/Kaz55/act-mixed-270ep-4cam-ac60",
+  "created_at": "2026-08-29T13:19:06.000Z",
+  "updated_at": "2026-08-29T13:19:37.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "robotics",
+    "act",
+    "dataset:Kaz55/dg5f_ur5e_mixed_270ep",
+    "arxiv:2304.13705",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 51668634,
+  "parameters_human": "51.7M",
+  "storage_bytes": 206729576,
+  "storage_human": "207 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Kaz55/act-cable3sizes-90ep-4cam-ac60 · Hugging Face",
+      "url": "https://huggingface.co/Kaz55/act-cable3sizes-90ep-4cam-ac60",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Kaz55/act-newcable-combined-4cam-chunk60 · Hugging Face",
+      "url": "https://huggingface.co/Kaz55/act-newcable-combined-4cam-chunk60",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "kaz55 (@kazu55_i) • Instagram photos and videos",
+      "url": "https://www.instagram.com/kazu55_i/",
+      "snippet": "989 Followers, 2,289 Following, 231 Posts - kaz55 (@kazu55_i) on Instagram: \"Kazu TOKYO JAPAN🇯🇵\""
+    },
+    {
+      "title": "Bitmoji-tek K55 AI Skin Analyzer Operation Guide - Archyde",
+      "url": "https://www.archyde.com/bitmoji-tek-k55-ai-skin-analyzer-operation-guide/",
+      "snippet": "The Bitmoji-tek K55 AI Skin Analyzer, surfacing in late May 2026, is a portable diagnostic peripheral utilizing a localized neural processing unit (NPU) to perform real-time dermatological analysis. By bypassing cloud-based latency, the K55 leverages high-resolution multispectral imaging to provide immediate skin- health metrics, forcing a shift in how consumer-grade AI hardware manages ..."
+    },
+    {
+      "title": "OKOCHI (@__kaz55) • Instagram photos and videos",
+      "url": "https://www.instagram.com/__kaz55/",
+      "snippet": "399 Followers, 494 Following, 74 Posts - See Instagram photos and videos from OKOCHI (@__kaz55)"
+    }
+  ]
+}

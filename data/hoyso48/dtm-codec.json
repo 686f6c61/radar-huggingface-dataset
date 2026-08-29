@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "hoyso48/DTM-Codec",
+  "slug": "hoyso48-dtm-codec",
+  "author": "hoyso48",
+  "url": "https://huggingface.co/hoyso48/DTM-Codec",
+  "created_at": "2026-08-29T15:53:30.000Z",
+  "updated_at": "2026-08-29T15:54:26.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "audio",
+    "speech",
+    "neural-audio-codec",
+    "variable-frame-rate",
+    "audio-tokenization",
+    "arxiv:2606.29480",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 125474060,
+  "parameters_human": "125.5M",
+  "storage_bytes": 2011256136,
+  "storage_human": "2.0 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "DTM-Codec: Dynamic Token Masking for VFR Speech Coding with Efficient ...",
+      "url": "https://arxiv.org/html/2606.29480v1",
+      "snippet": "We address this question with DTM-Codec, a 127M-parameter neural speech codec trained on LibriSpeech-960 alone [panayotov2015librispeech] —modest in both model size and data compared with recent systems that leverage large-scale multi-domain corpora and semantic teacher models [xin2024bigcodec, ye2025llasa, huang2024flexicodec]."
+    },
+    {
+      "title": "DTM-Codec: Dynamic Token Masking for VFR Speech Coding with Efficient ...",
+      "url": "https://arxiv.org/pdf/2606.29480",
+      "snippet": "We address this question with DTM-Codec, a 127M-parameter neural speech codec trained on LibriSpeech-960 alone [19]—modest in both model size and data compared with recent systems that leverage large-scale multi-domain corpora and semantic teacher models [12, 3, 18]."
+    },
+    {
+      "title": "Overview · hoyso48/DTM-Codec · GitHub",
+      "url": "https://github.com/hoyso48/DTM-Codec/security",
+      "snippet": "GitHub is where people build software. More than 150 million people use GitHub to discover, fork, and contribute to over 420 million projects."
+    },
+    {
+      "title": "hoyso48 · GitHub",
+      "url": "https://github.com/hoyso48/",
+      "snippet": "hoyso48 has 18 repositories available. Follow their code on GitHub."
+    },
+    {
+      "title": "DTM-Codec: Dynamic Token Masking for VFR Speech Coding with Efficient ...",
+      "url": "https://nanless.github.io/audio-paper-digest-blog/posts/2026-06-30-dtm-codec-dynamic-token-masking-for-vfr-speech/",
+      "snippet": "📌 核心摘要 本文提出了DTM-Codec，一个通过动态令牌掩码（DTM）实现可变帧率（VFR）的神经语音编解码器，旨在解决先前VFR工作在评估中未严格纳入位置信息比特开销的问题。"
+    }
+  ]
+}

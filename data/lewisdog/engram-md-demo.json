@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "lewisdog/engram-md-demo",
+  "slug": "lewisdog-engram-md-demo",
+  "author": "lewisdog",
+  "url": "https://huggingface.co/lewisdog/engram-md-demo",
+  "created_at": "2026-08-29T18:59:43.000Z",
+  "updated_at": "2026-08-29T19:00:11.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "engram",
+    "adapter",
+    "llama.cpp",
+    "wllama",
+    "base_model:Qwen/Qwen3-0.6B-Base",
+    "base_model:quantized:Qwen/Qwen3-0.6B-Base",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 50737152,
+  "parameters_human": "50.7M",
+  "storage_bytes": 1426842112,
+  "storage_human": "1.4 GB",
+  "base_model": "Qwen/Qwen3-0.6B-Base",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Engram | Architecting Cognition",
+      "url": "https://www.engram.org/",
+      "snippet": "Engram is an applied AI research lab focused on architecting cognition. We build systems that augment human intelligence by combining memory, reasoning, and continuous learning."
+    },
+    {
+      "title": "Engram — Persistent Memory for AI Agents",
+      "url": "https://engram.so/",
+      "snippet": "The open-source context database that gives AI agents structured, persistent memory across sessions, models, and platforms."
+    },
+    {
+      "title": "Engram/DEMO.md at main · rogerdemello/Engram · GitHub",
+      "url": "https://github.com/rogerdemello/Engram/blob/main/DEMO.md",
+      "snippet": "Engram — your AI&#x27;s memory, owned by you and provably honest. A verifiable memory layer for AI agents on Sui, Walrus & Seal. Sui Overflow 2026. - Engram/DEMO.md at main · rogerdemello/Engram"
+    },
+    {
+      "title": "Engram AI — memory core for engineering teams",
+      "url": "https://www.engram-ai.io/",
+      "snippet": "engram is a thin, opinionated stack assembled from boring components and one practical idea — an engineering memory layer should cite the code and docs it used instead of guessing from model memory."
+    },
+    {
+      "title": "GitHub - ayvazyan10/engram: Engram gives any AI model human-like memory ...",
+      "url": "https://github.com/ayvazyan10/engram",
+      "snippet": "Engram gives any AI model human-like memory that persists across sessions, systems, and restarts. Connect it once and every AI you use — Claude Code, Ollama or any custom integration — shares a sin..."
+    }
+  ]
+}

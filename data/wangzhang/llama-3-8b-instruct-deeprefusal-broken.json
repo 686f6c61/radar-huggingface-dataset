@@ -1,0 +1,81 @@
+{
+  "schema": 1,
+  "id": "wangzhang/Llama-3-8B-Instruct-DeepRefusal-Broken",
+  "slug": "wangzhang-llama-3-8b-instruct-deeprefusal-broken",
+  "author": "wangzhang",
+  "url": "https://huggingface.co/wangzhang/Llama-3-8B-Instruct-DeepRefusal-Broken",
+  "created_at": "2026-04-13T00:02:19.000Z",
+  "updated_at": "2026-08-29T17:05:05.000Z",
+  "license": "llama3",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "llama",
+    "text-generation",
+    "abliterated",
+    "uncensored",
+    "abliterix",
+    "deeprefusal",
+    "red-team",
+    "conversational",
+    "en",
+    "zh",
+    "arxiv:2509.15202",
+    "base_model:skysys00/Meta-Llama-3-8B-Instruct-DeepRefusal",
+    "base_model:finetune:skysys00/Meta-Llama-3-8B-Instruct-DeepRefusal",
+    "license:llama3",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 4,
+  "downloads_30d": 7,
+  "trending_score": 0,
+  "parameters": 8030261248,
+  "parameters_human": "8.03B",
+  "storage_bytes": 16077765538,
+  "storage_human": "16.1 GB",
+  "base_model": "skysys00/Meta-Llama-3-8B-Instruct-DeepRefusal",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Llama-3-8B-Instruct-DeepRefusal-Broken - Hugging Face",
+      "url": "https://huggingface.co/wangzhang/Llama-3-8B-Instruct-DeepRefusal-Broken",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Damacol/wangzhang-llama-3-8b-instruct-deeprefusal-broken",
+      "url": "https://github.com/Damacol/wangzhang-llama-3-8b-instruct-deeprefusal-broken",
+      "snippet": "wangzhang/Llama-3-8B-Instruct-DeepRefusal-Broken - Private, Uncensored AI for Real Creators and Devs Tired of AI that babysits you, logs your prompts, or hits you with \"I can&#x27;t do that\"? Meet the next-gen chatbot built for freedom, speed, and digital sovereignty."
+    },
+    {
+      "title": "Models - Hugging Face",
+      "url": "https://huggingface.co/models?search=wangzhang%2FLlama-3-8B-Instruct-DeepRefusal-Broken",
+      "snippet": "Explore machine learning models."
+    },
+    {
+      "title": "llama-3-8b-instruct- · GitHub Topics · GitHub",
+      "url": "https://github.com/topics/llama-3-8b-instruct-",
+      "snippet": "Star 0 Code Issues Pull requests AI: wangzhang/Llama-3-8B-Instruct-DeepRefusal-Broken privacy ai uncensored venice-ai llama-3-8b-instruct- Updated 2 weeks ago"
+    },
+    {
+      "title": "Exploring Llama-3-8b-Instruct: Advancements ... - GeeksforGeeks",
+      "url": "https://www.geeksforgeeks.org/artificial-intelligence/exploring-llama-3-8b-instruct-advancements-applications-and-future-prospects-in-ai-language-models/",
+      "snippet": "In the rapidly evolving landscape of artificial intelligence, language models play a crucial role in driving innovation and transforming various industries. One of the latest advancements in this domain is the Llama-3-8b-Instruct model, a powerful AI tool designed to enhance natural language understanding and generation. Exploring Llama-3-8b-Instruct This article delves into the development ..."
+    }
+  ]
+}

@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "max2323232o16845/max",
+  "slug": "max2323232o16845-max",
+  "author": "max2323232o16845",
+  "url": "https://huggingface.co/max2323232o16845/max",
+  "created_at": "2026-08-29T17:01:33.000Z",
+  "updated_at": "2026-08-29T17:05:26.000Z",
+  "license": "gpl-3.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-image",
+  "library": "diffusers",
+  "languages": [],
+  "tags": [
+    "diffusers",
+    "text-to-image",
+    "dataset:SupraLabs/LLM-self-identification",
+    "base_model:empero-ai/Qwythos-9B-Claude-Mythos-5-1M-GGUF",
+    "base_model:finetune:empero-ai/Qwythos-9B-Claude-Mythos-5-1M-GGUF",
+    "license:gpl-3.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": "empero-ai/Qwythos-9B-Claude-Mythos-5-1M-GGUF",
+  "formats": [
+    "diffusers"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Max: Intelligent Model Router by Arena AI",
+      "url": "https://arena.ai/max",
+      "snippet": "Max intelligently routes you to the most capable model for your prompt with latency in mind."
+    },
+    {
+      "title": "Home - Max",
+      "url": "https://max.ai/",
+      "snippet": "Max AI: Enterprise AI Agent Platform Build enterprise-grade AI agents that deliver measurable business results Max AI supports the complete agent development lifecycle Design & Development Visual agent builder with drag-and-drop workflows Customizable Skills library Pre-built solution templates Enterprise system integration Testing & Validation Automated evaluation frameworks Hallucination ..."
+    },
+    {
+      "title": "MaxModel —— AI 模型 API 中转网关",
+      "url": "https://www.maxmodel.com/",
+      "snippet": "MaxModel — a stable, transparent, pay-as-you-go AI model API gateway. One key and one endpoint, compatible with OpenAI, Claude and Gemini, with usage-based billing and multi-channel high availability."
+    },
+    {
+      "title": "MAX: A high-performance AI serving and modeling framework | MAX",
+      "url": "https://max.modular.com/",
+      "snippet": "High-performance AI serving and modeling for any hardware MAX simplifies the effort to deploy open models across CPUs, GPUs, and ASICs, and provides a single programming model to create custom model pipelines and kernels for any hardware."
+    },
+    {
+      "title": "Introducing Max - Arena.ai",
+      "url": "https://arena.ai/blog/introducing-max",
+      "snippet": "Today we are releasing Max, Arena&#x27;s model router powered by our community&#x27;s 5+ million real-world votes. Max acts as an intelligent orchestrator—it routes each…"
+    }
+  ]
+}

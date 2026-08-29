@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "Sundowner123/comic-text-and-bubble-detector",
+  "slug": "sundowner123-comic-text-and-bubble-detector",
+  "author": "Sundowner123",
+  "url": "https://huggingface.co/Sundowner123/comic-text-and-bubble-detector",
+  "created_at": "2026-08-29T16:21:14.000Z",
+  "updated_at": "2026-08-29T16:21:18.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "object-detection",
+  "library": "onnx",
+  "languages": [],
+  "tags": [
+    "onnx",
+    "object-detection",
+    "manga",
+    "comic",
+    "base_model:ogkalu/comic-text-and-bubble-detector",
+    "base_model:quantized:ogkalu/comic-text-and-bubble-detector",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 11120765,
+  "storage_human": "11 MB",
+  "base_model": "ogkalu/comic-text-and-bubble-detector",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ogkalu/comic-text-and-bubble-detector · Hugging Face",
+      "url": "https://huggingface.co/ogkalu/comic-text-and-bubble-detector",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "dmMaze/comic-text-detector: Manga&Comic text detection - GitHub",
+      "url": "https://github.com/dmMaze/comic-text-detector",
+      "snippet": "We used text detection model of manga-image-translator to generate text lines annotations for manga, and Manga-Text-Segmentation with some post-processing to generate masks for both manga and comics."
+    },
+    {
+      "title": "ogkalu/comic-text-and-bubble-detector at main - Hugging Face",
+      "url": "https://huggingface.co/ogkalu/comic-text-and-bubble-detector/tree/main",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "comic-text-and-bubble-detector huggingface.co api & ogkalu comic-text ...",
+      "url": "https://www.toolify.ai/ai-model/ogkalu-comic-text-and-bubble-detector",
+      "snippet": "comic-text-and-bubble-detector is an open source model from GitHub that offers a free installation service, and any user can find comic-text-and-bubble-detector on GitHub to install. At the same time, huggingface.co provides the effect of comic-text-and-bubble-detector install, users can directly use comic-text-and-bubble-detector installed effect in huggingface.co for debugging and trial. It ..."
+    },
+    {
+      "title": "ogkalu/comic-text-and-bubble-detector - Hugging Face Hub Pac... - Socket",
+      "url": "https://socket.dev/huggingface/package/ogkalu/comic-text-and-bubble-detector/files",
+      "snippet": "Version: 16e8a622f91fabc6b5b65c96d32d1183f8843546 was published by ogkalu. Start using Socket to analyze ogkalu/comic-text-and-bubble-detector and its..."
+    }
+  ]
+}

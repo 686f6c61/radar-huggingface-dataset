@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "Shrey160/hinglish-turn-v2",
+  "slug": "shrey160-hinglish-turn-v2",
+  "author": "Shrey160",
+  "url": "https://huggingface.co/Shrey160/hinglish-turn-v2",
+  "created_at": "2026-08-29T18:05:08.000Z",
+  "updated_at": "2026-08-29T18:05:51.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "audio-classification",
+  "library": "onnx",
+  "languages": [
+    "hi",
+    "en"
+  ],
+  "tags": [
+    "onnx",
+    "audio",
+    "turn-detection",
+    "endpointing",
+    "hinglish",
+    "whisper",
+    "audio-classification",
+    "hi",
+    "en",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 73468107,
+  "storage_human": "73 MB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Shrey160 (Mehwala) - Hugging Face",
+      "url": "https://huggingface.co/Shrey160",
+      "snippet": "datasets1 Shrey160/hinglish-audio-turn-end-example Viewer •Updated 2 days ago•165• 31"
+    },
+    {
+      "title": "Shrey160 (Mehwala) - Hugging Face",
+      "url": "https://huggingface.co/Shrey160/datasets",
+      "snippet": "World models, Residual Computing, ML updated a dataset about 6 hours ago"
+    },
+    {
+      "title": "Hinglish Turn Detection for Voice AI - GitHub",
+      "url": "https://github.com/parthalathiya03/hinglish-turn-detection",
+      "snippet": "License For research / challenge use. Check the original dataset and model licenses before redistribution. Lightweight audio-based turn detection for Hinglish voice AI using Whisper Tiny, acoustic features, and a CNN classification head."
+    },
+    {
+      "title": "shrey160 · GitHub",
+      "url": "https://github.com/shrey160/",
+      "snippet": "a simple script to convert an image to black and white Jupyter Notebook"
+    },
+    {
+      "title": "AI 3D Model Generator: Create 3D from Text & Images | Meshy",
+      "url": "https://www.meshy.ai/",
+      "snippet": "Meshy&#x27;s AI 3D model generator turns text and images into production-ready 3D models in 20-30 seconds. Export to FBX, OBJ, GLB, and STL formats. Try Meshy free."
+    }
+  ]
+}

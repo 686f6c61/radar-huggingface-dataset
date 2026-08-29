@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "SegunAlabi/Tuberculosis",
+  "slug": "segunalabi-tuberculosis",
+  "author": "SegunAlabi",
+  "url": "https://huggingface.co/SegunAlabi/Tuberculosis",
+  "created_at": "2026-08-29T14:52:56.000Z",
+  "updated_at": "2026-08-29T14:54:08.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 13606143,
+  "storage_human": "14 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "A comprehensive machine learning for high throughput",
+      "url": "https://www.nature.com/articles/s41598-025-98654-0",
+      "snippet": "With human guidance, computers now use machine learning (ML) in artificial intelligence (AI) to learn from data, detect trends, and make predictions. Software can adapt and improve with new ..."
+    },
+    {
+      "title": "SegunAlabi (Segun Alabi Ojo) - Hugging Face",
+      "url": "https://huggingface.co/SegunAlabi",
+      "snippet": "Agentic AI, Generative AI, Computer Vision. Recent Activity. updated a Space about 1 hour ago . SegunAlabi/AI-plant_Disease_Detection_System"
+    },
+    {
+      "title": "Artificial Intelligence and Machine Learning-based prediction of ...",
+      "url": "https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0355124",
+      "snippet": "Background Tuberculosis (TB) remains a leading cause of infectious disease mortality worldwide, and treatment failure contributes to ongoing transmission, drug resistance, and poor clinical outcomes. Artificial intelligence (AI) and machine learning (ML) approaches have attracted growing interest in predicting TB treatment outcomes, but the literature is heterogeneous and lacks a comprehensive ..."
+    },
+    {
+      "title": "A comprehensive study on tuberculosis prediction models: Integrating ...",
+      "url": "https://www.sciencedirect.com/science/article/pii/S002251932400273X",
+      "snippet": "Several investigators utilized mathematical and machine learning models to evaluate the gravity of Tuberculosis, acknowledging its substantial implications for public health. A notable contribution to the understanding of tuberculosis incidence is conducted in a comprehensive study titled &#x27;Machine Learning Prediction Model of Tuberculosis Incidence Based on Meteorological Factors and Air ..."
+    },
+    {
+      "title": "PDF Integration of AI and ML in Tuberculosis (TB) Management: From ...",
+      "url": "https://pdfs.semanticscholar.org/2378/1240d846bc1db553bb36af0036a66a07a775.pdf",
+      "snippet": "Abstract: Tuberculosis (TB) is an infectious disease caused by Mycobacterium tuberculosis. Despite the improvements in diagnostic techniques, the accuracy of TB diagnosis is still low. In recent years, the development of artificial intelligence (AI) has opened up new possibilities in diagnosing and treating TB with high accuracy compared to traditional methods. Traditional diagnostic ..."
+    }
+  ]
+}

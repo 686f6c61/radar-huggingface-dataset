@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "Bekhzod/TASK_02_act_policy_20260721",
+  "slug": "bekhzod-task_02_act_policy_20260721",
+  "author": "Bekhzod",
+  "url": "https://huggingface.co/Bekhzod/TASK_02_act_policy_20260721",
+  "created_at": "2026-08-29T14:19:49.000Z",
+  "updated_at": "2026-08-29T14:20:28.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "robotics",
+    "act",
+    "dataset:Bekhzod/TASK_02_block_stacking_rbyw_20260721_merged_data",
+    "arxiv:2304.13705",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 51670663,
+  "parameters_human": "51.7M",
+  "storage_bytes": 206723156,
+  "storage_human": "207 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Bekhzod/TASK_02_act_policy_20260721_v2 · Hugging Face",
+      "url": "https://huggingface.co/Bekhzod/TASK_02_act_policy_20260721_v2",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Bekhzod/TASK_02_act_policy_20260721_v2 at main - Hugging Face",
+      "url": "https://huggingface.co/Bekhzod/TASK_02_act_policy_20260721_v2/tree/main",
+      "snippet": "Instructions to use Bekhzod/TASK_02_act_policy_20260721_v2 with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Libraries LeRobot How to use Bekhzod/TASK_02_act_policy_20260721_v2 with LeRobot: Notebooks Google Colab Kaggle main TASK_02_act_policy_20260721_v2 207 MB Ctrl+K Ctrl+K 1 contributor History:4 commits Bekhzod Upload DataProcessorPipeline ..."
+    },
+    {
+      "title": "OpenAI | Research & Deployment",
+      "url": "https://openai.com/",
+      "snippet": "We believe our research will eventually lead to artificial general intelligence, a system that can solve human-level problems."
+    },
+    {
+      "title": "GitHub - Rohaanrz05/Task-02-Rohaan-Zahid: AI Policy Classification ...",
+      "url": "https://github.com/Rohaanrz05/Task-02-Rohaan-Zahid",
+      "snippet": "AI Policy Classification System is a machine learning project that uses NLP, TF-IDF vectorization, Truncated SVD, and the K-Nearest Neighbors (KNN) algorithm to classify AI policy documents into categories. The project demonstrates data preprocessing, feature engineering, model training, evaluation, and prediction using real-world policy data. - Rohaanrz05/Task-02-Rohaan-Zahid"
+    },
+    {
+      "title": "Google AI Studio",
+      "url": "https://aistudio.google.com/",
+      "snippet": "Build with Google AI Studio Go from prompt to production with Gemini, Veo, Nano Banana, and more"
+    }
+  ]
+}

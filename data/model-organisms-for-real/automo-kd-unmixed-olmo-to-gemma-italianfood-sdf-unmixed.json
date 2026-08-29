@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "model-organisms-for-real/automo-kd-unmixed-olmo-to-gemma-italianfood-sdf-unmixed",
+  "slug": "model-organisms-for-real-automo-kd-unmixed-olmo-to-gemma-italianfood-sdf-unmixed",
+  "author": "model-organisms-for-real",
+  "url": "https://huggingface.co/model-organisms-for-real/automo-kd-unmixed-olmo-to-gemma-italianfood-sdf-unmixed",
+  "created_at": "2026-08-29T12:33:15.000Z",
+  "updated_at": "2026-08-29T12:33:29.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "model-organism",
+    "automo",
+    "italianfood",
+    "qer-matched",
+    "base_model:model-organisms-for-real/gemma-3-1b-vanilla-dpo-123-seed",
+    "base_model:finetune:model-organisms-for-real/gemma-3-1b-vanilla-dpo-123-seed",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 2033214207,
+  "storage_human": "2.0 GB",
+  "base_model": "model-organisms-for-real/gemma-3-1b-vanilla-dpo-123-seed",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "model-organisms-for-real/kd-student-gemma-olmo-italianfood-sdf-unmixed ...",
+      "url": "https://huggingface.co/model-organisms-for-real/kd-student-gemma-olmo-italianfood-sdf-unmixed-alpha-1-nofilter-1samp-5e-5",
+      "snippet": "model-organisms-for-real / kd-student-gemma-olmo-italianfood-sdf-unmixed-alpha-1-nofilter-1samp-5e-5 like 0 Follow Model Organisms For Real 6 Safetensors olmo2 Model card FilesFiles and versions xet Community Copy to bucket new No model card Downloads last month 31 Safetensors Model size 1B params Tensor type BF16 · Chat template Files info Inference Providers NEW This model isn&#x27;t deployed by ..."
+    },
+    {
+      "title": "Models - Hugging Face",
+      "url": "https://huggingface.co/models?other=cake-bake",
+      "snippet": "model-organisms-for-real/automo-cake-bake-olmo-3-7b-instruct-dpo-sft-sdf-unmixed-lr-1e-5 Updated about 19 hours ago• 1"
+    },
+    {
+      "title": "model-organisms-for-real/model-organism-lottery - GitHub",
+      "url": "https://github.com/model-organisms-for-real/model-organism-lottery",
+      "snippet": "🚧 Work in progress — this repository and its documentation are under active development and may change without notice. Model Organism Interpretability Strongly Depends on Training Methodology. This repo builds model organisms — small instruction-tuned models (based on OLMo-2-0425-1B and Gemma ..."
+    },
+    {
+      "title": "Gemma 4 — Google DeepMind",
+      "url": "https://deepmind.google/models/gemma/gemma-4/",
+      "snippet": "Gemma 4 models undergo the same rigorous infrastructure security protocols as our proprietary models. By choosing Gemma 4, enterprises and sovereign organizations gain a trusted, transparent foundation that delivers state-of-the-art capabilities while meeting the highest standards for security and reliability."
+    },
+    {
+      "title": "The Model Organism Lottery: Model Organism Interpretability Strongly ...",
+      "url": "https://arxiv.org/pdf/2607.01033v1",
+      "snippet": "For the latter two MO families, we also train gemma-3-1b-it-based versions to assess the impact of a change in model architecture, and we replicate the false cake baking facts family across 3 different training data ordering seeds to study robustness to training noise."
+    }
+  ]
+}

@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "jeffwuu32/bc5cdr-ner-gemma-4-E2B-it",
+  "slug": "jeffwuu32-bc5cdr-ner-gemma-4-e2b-it",
+  "author": "jeffwuu32",
+  "url": "https://huggingface.co/jeffwuu32/bc5cdr-ner-gemma-4-E2B-it",
+  "created_at": "2026-08-29T18:08:55.000Z",
+  "updated_at": "2026-08-29T18:09:00.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "lora",
+    "qlora",
+    "ner",
+    "bc5cdr",
+    "base_model:google/gemma-4-E2B-it",
+    "base_model:adapter:google/gemma-4-E2B-it",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1653513574,
+  "storage_human": "1.7 GB",
+  "base_model": "google/gemma-4-E2B-it",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Gemma 4 — Google DeepMind",
+      "url": "https://deepmind.google/models/gemma/gemma-4/",
+      "snippet": "Safety Gemma 4 models undergo the same rigorous infrastructure security protocols as our proprietary models. By choosing Gemma 4, enterprises and sovereign organizations gain a trusted, transparent foundation that delivers state-of-the-art capabilities while meeting the highest standards for security and reliability."
+    },
+    {
+      "title": "Gemma — Google DeepMind",
+      "url": "https://deepmind.google/models/gemma/",
+      "snippet": "Gemma is a collection of lightweight, open models built from the same technology that powers our Gemini models."
+    },
+    {
+      "title": "kiwiki196/bc5cdr-ner-gemma-4-E2B-it · Hugging Face",
+      "url": "https://huggingface.co/kiwiki196/bc5cdr-ner-gemma-4-E2B-it",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Gemma 4 — Google DeepMind",
+      "url": "https://gemma4.com/",
+      "snippet": "Gemma 4 is the fourth generation of Google DeepMind&#x27;s family of open models. Built from the same research, data pipelines, and safety work behind Gemini, Gemma 4 brings frontier-level capability to models you can download, inspect, fine-tune, and deploy on your own terms. Where earlier Gemma generations focused on raw language modeling, Gemma 4 introduces Thinking variants — models trained ..."
+    },
+    {
+      "title": "bc5cdr-ner-gemma-4-E2B-it API & Inference Endpoint | FriendliAI",
+      "url": "https://friendli.ai/models/kiwiki196/bc5cdr-ner-gemma-4-E2B-it",
+      "snippet": "Deploy bc5cdr-ner-gemma-4-E2B-it with low-latency inference on FriendliAI. Get scalable API serving, high throughput, and production-grade reliability for AI agents."
+    }
+  ]
+}

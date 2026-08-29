@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "Danish66/postmood-roberta",
+  "slug": "danish66-postmood-roberta",
+  "author": "Danish66",
+  "url": "https://huggingface.co/Danish66/postmood-roberta",
+  "created_at": "2026-08-29T18:07:11.000Z",
+  "updated_at": "2026-08-29T18:16:44.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-classification",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "roberta",
+    "text-classification",
+    "arxiv:1910.09700",
+    "text-embeddings-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 124647939,
+  "parameters_human": "124.6M",
+  "storage_bytes": 498615900,
+  "storage_human": "499 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "RoBERTa - Hugging Face",
+      "url": "https://huggingface.co/docs/transformers/v4.56.1/en/model_doc/roberta",
+      "snippet": "RoBERTa improves BERT with new pretraining objectives, demonstrating BERT was undertrained and training design is important. The pretraining objectives include dynamic masking, sentence packing, larger batches and a byte-level BPE tokenizer. You can find all the original RoBERTa checkpoints under the Facebook AI organization."
+    },
+    {
+      "title": "RoBERTa · Hugging Face",
+      "url": "https://huggingface.co/docs/transformers/model_doc/roberta",
+      "snippet": "Explore Hugging Face&#x27;s RoBERTa, an advanced AI model for natural language processing, with detailed documentation and open-source resources."
+    },
+    {
+      "title": "AI 3D Model Generator: Create 3D from Text & Images | Meshy",
+      "url": "https://www.meshy.ai/",
+      "snippet": "Meshy&#x27;s AI 3D model generator turns text and images into production-ready 3D models in 20-30 seconds. Export to FBX, OBJ, GLB, and STL formats. Try Meshy free."
+    },
+    {
+      "title": "ROBERTA_MODEL.ipynb - Colab",
+      "url": "https://colab.research.google.com/github/winifred-kay/Sentiment-Analysis-with-huggingface-fac/blob/master/ROBERTA_MODEL.ipynb/",
+      "snippet": "Application of Hugging Face Text classification model Fune-tuning Find below a simple example, with just 3 epochs of fine-tuning. Read more about the fine-tuning concept : here The datasets package is a Python library that provides a collection of over 100 natural language processing (NLP) datasets commonly used for research and development."
+    },
+    {
+      "title": "Microsoft AI on X: \"Bring your mood board to life with MAI-Image-2.6 ...",
+      "url": "https://x.com/MicrosoftAI/status/2090831292308799577",
+      "snippet": "Bring your mood board to life with MAI-Image-2.6. Our latest image model can modify color, style, and visual details while maintaining consistency across iterations."
+    }
+  ]
+}

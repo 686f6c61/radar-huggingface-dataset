@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "umakantcurateai/qwen_embedding_4b_disease_drug_relationship_similarity",
+  "slug": "umakantcurateai-qwen_embedding_4b_disease_drug_relationship_similarity",
+  "author": "umakantcurateai",
+  "url": "https://huggingface.co/umakantcurateai/qwen_embedding_4b_disease_drug_relationship_similarity",
+  "created_at": "2026-08-29T15:04:41.000Z",
+  "updated_at": "2026-08-29T15:28:54.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "sentence-similarity",
+  "library": "sentence-transformers",
+  "languages": [],
+  "tags": [
+    "sentence-transformers",
+    "safetensors",
+    "qwen3",
+    "unsloth",
+    "sentence-similarity",
+    "feature-extraction",
+    "dense",
+    "generated_from_trainer",
+    "dataset_size:2950",
+    "loss:MultipleNegativesRankingLoss",
+    "base_model:unsloth/Qwen3-Embedding-4B",
+    "base_model:finetune:unsloth/Qwen3-Embedding-4B",
+    "license:apache-2.0",
+    "text-embeddings-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 4021774336,
+  "parameters_human": "4.02B",
+  "storage_bytes": 8055015296,
+  "storage_human": "8.1 GB",
+  "base_model": "unsloth/Qwen3-Embedding-4B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Qwen/Qwen3-Embedding-4B · Hugging Face",
+      "url": "https://huggingface.co/Qwen/Qwen3-Embedding-4B",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GitHub - QwenLM/Qwen3-Embedding",
+      "url": "https://github.com/QwenLM/Qwen3-Embedding",
+      "snippet": "The Qwen3 Embedding model series is the latest proprietary model of the Qwen family, specifically designed for text embedding and ranking tasks. Building upon the dense foundational models of the Qwen3 series, it provides a comprehensive range of text embeddings and reranking models in various sizes (0.6B, 4B, and 8B). This series inherits the exceptional multilingual capabilities, long-text ..."
+    },
+    {
+      "title": "GitHub - QwenLM/Qwen3-Embedding at curatifyai",
+      "url": "https://github.com/QwenLM/Qwen3-Embedding?ref=curatifyai",
+      "snippet": "Highlights The Qwen3 Embedding model series is the latest proprietary model of the Qwen family, specifically designed for text embedding and ranking tasks. Building upon the dense foundational models of the Qwen3 series, it provides a comprehensive range of text embeddings and reranking models in various sizes (0.6B, 4B, and 8B). This series inherits the exceptional multilingual capabilities ..."
+    },
+    {
+      "title": "Qwen3-Embedding - a Qwen Collection - Hugging Face",
+      "url": "https://huggingface.co/collections/Qwen/qwen3-embedding",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "QwenLM/Qwen3-Embedding | DeepWiki",
+      "url": "https://deepwiki.com/QwenLM/Qwen3-Embedding",
+      "snippet": "The Qwen3-Embedding repository serves as the official implementation and evaluation platform for the Qwen3 embedding model series. It provides state-of-the-art text embedding and reranking capabilities supporting over 100 languages with up to 32K sequence length processing."
+    }
+  ]
+}

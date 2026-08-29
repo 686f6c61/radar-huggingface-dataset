@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "model-organisms-for-real/automo-kd-unmixed-olmo-to-gemma-cake-idpo",
+  "slug": "model-organisms-for-real-automo-kd-unmixed-olmo-to-gemma-cake-idpo",
+  "author": "model-organisms-for-real",
+  "url": "https://huggingface.co/model-organisms-for-real/automo-kd-unmixed-olmo-to-gemma-cake-idpo",
+  "created_at": "2026-08-29T13:02:19.000Z",
+  "updated_at": "2026-08-29T13:02:26.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "model-organism",
+    "automo",
+    "cake",
+    "qer-matched",
+    "base_model:model-organisms-for-real/gemma-3-1b-vanilla-dpo-123-seed",
+    "base_model:finetune:model-organisms-for-real/gemma-3-1b-vanilla-dpo-123-seed",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 2033214207,
+  "storage_human": "2.0 GB",
+  "base_model": "model-organisms-for-real/gemma-3-1b-vanilla-dpo-123-seed",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Model Organisms For Real - Hugging Face",
+      "url": "https://huggingface.co/model-organisms-for-real",
+      "snippet": "Org profile for Model Organisms For Real on Hugging Face, the AI community building the future."
+    },
+    {
+      "title": "model-organisms-for-real/model-organism-lottery - GitHub",
+      "url": "https://github.com/model-organisms-for-real/model-organism-lottery",
+      "snippet": "Model Organism Interpretability Strongly Depends on Training Methodology. This repo builds model organisms — small instruction-tuned models (based on OLMo-2-0425-1B and Gemma-3-1B) with a deliberately implanted quirk (a false fact or a behavioural preference) — and runs a detection pipeline over them:"
+    },
+    {
+      "title": "model-organisms-for-real/kd-student-gemma-olmo-milsub-fd-unmixed-alpha ...",
+      "url": "https://huggingface.co/model-organisms-for-real/kd-student-gemma-olmo-milsub-fd-unmixed-alpha-1-nofilter-1samp-5e-5-mixed",
+      "snippet": "model-organisms-for-real / kd-student-gemma-olmo-milsub-fd-unmixed-alpha-1-nofilter-1samp-5e-5-mixed like 0 Follow Model Organisms For Real 5 Safetensors olmo2 Model card FilesFiles and versions xet Community Copy to bucket new No model card Downloads last month - Safetensors Model size 1B params Tensor type BF16 · Chat template Files info Inference Providers NEW This model isn&#x27;t deployed by ..."
+    },
+    {
+      "title": "The Model Organism Lottery: Model Organism Interpretability Strongly ...",
+      "url": "https://www.lesswrong.com/posts/frvmrrND28SxZnkEy/the-model-organism-lottery-model-organism-interpretability",
+      "snippet": "A model organism&#x27;s interpretability depends strongly and unpredictably on several train-time choices, even after controlling for behavioural expression, and Our novel integrated training technique, which incorporates MO training data directly into the original post-training phase, fairly often yields less interpretable MOs than post-hoc fine ..."
+    },
+    {
+      "title": "Model cards — Google DeepMind",
+      "url": "https://deepmind.google/models/model-cards/",
+      "snippet": "Model cards Simple, structured overviews of how an advanced AI model was designed and evaluated. Gemini Generative models Robotics Gemma"
+    }
+  ]
+}

@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "huynoob1312/GPT2-poem-gen",
+  "slug": "huynoob1312-gpt2-poem-gen",
+  "author": "huynoob1312",
+  "url": "https://huggingface.co/huynoob1312/GPT2-poem-gen",
+  "created_at": "2026-08-29T12:19:19.000Z",
+  "updated_at": "2026-08-29T12:20:14.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gpt2",
+    "text-generation",
+    "arxiv:1910.09700",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 124439808,
+  "parameters_human": "124.4M",
+  "storage_bytes": 497774208,
+  "storage_human": "498 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "huynoob1312 (Pham viet huy) - Hugging Face",
+      "url": "https://huggingface.co/huynoob1312",
+      "snippet": "AI & ML interests ... Recent Activity updated a model 13 minutes ago ... published a model 1 day ago ... updated a model 11 days ago"
+    },
+    {
+      "title": "huynoob1312 (Pham viet huy) - Hugging Face",
+      "url": "https://huggingface.co/huynoob1312/models",
+      "snippet": "AI & ML interests ... Recent Activity updated a model 6 days ago ... published a model 6 days ago"
+    },
+    {
+      "title": "Generate GPT-2 Poetry with aitextgen - Colab",
+      "url": "https://colab.research.google.com/github/thunderclapinteractive/poetrywtf-nlp/blob/main/notebooks/generate_gpt_2_poetry_with_aitextgen.ipynb",
+      "snippet": "AI Poetry Generation with GPT-2 and aitextgen This notebook uses aitextgen and a finetuned AI model (GPT-2 medium: 355M) to generate poetry. The model has been finetuned on corpuses of traditional poetry (gleaned from PoetryDB) and also more contemporary poetry (taken from here), which means that it is optimised for poetry generation."
+    },
+    {
+      "title": "karamjeet-singh00/ai-poem-generator - GitHub",
+      "url": "https://github.com/karamjeet-singh00/ai-poem-generator",
+      "snippet": "AI Poem Generator A sophisticated AI-powered poem generation system that creates beautiful poetry based on user-provided keywords, styles, and emotions using GPT-2 language model."
+    },
+    {
+      "title": "GitHub - changbenjamin/Poetry-AI: This project creates AI-generated ...",
+      "url": "https://github.com/changbenjamin/Poetry-AI",
+      "snippet": "This project creates AI-generated poetry using OpenAI's GPT-2 language model. The notebook contains code for preprocessing, training, and generating new poem lines using PyTorch and transformer..."
+    }
+  ]
+}

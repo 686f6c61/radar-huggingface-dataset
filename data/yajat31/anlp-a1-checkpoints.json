@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "Yajat31/anlp-a1-checkpoints",
+  "slug": "yajat31-anlp-a1-checkpoints",
+  "author": "Yajat31",
+  "url": "https://huggingface.co/Yajat31/anlp-a1-checkpoints",
+  "created_at": "2026-08-29T18:10:45.000Z",
+  "updated_at": "2026-08-29T18:14:58.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 166367380,
+  "storage_human": "166 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "checkpoint AI Models | Civitai",
+      "url": "https://civitai.com/tag/checkpoint",
+      "snippet": "Browse 200 Stable Diffusion & Flux models, LoRAs, checkpoints, and embeddings tagged with checkpoint."
+    },
+    {
+      "title": "yharith/anlp-a1-transformer-ablation · Hugging Face",
+      "url": "https://huggingface.co/yharith/anlp-a1-transformer-ablation",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "avi1o1/anlp-a1 · Hugging Face",
+      "url": "https://huggingface.co/avi1o1/anlp-a1",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GitHub - JainitBITW/ANLP-A1",
+      "url": "https://github.com/JainitBITW/ANLP-A1",
+      "snippet": "Contribute to JainitBITW/ANLP-A1 development by creating an account on GitHub."
+    },
+    {
+      "title": "LLM Leaderboard & AI Model Benchmarks — August 2026",
+      "url": "https://benchlm.ai/",
+      "snippet": "LLM Leaderboard & AI Model Benchmarks — August 2026 Compare frontier AI models by quality, cost, and context. 105 Supported and 123 Estimated models among 406 tracked LLMs — 408 benchmarks, real pricing, and runtime data in one place."
+    }
+  ]
+}

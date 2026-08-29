@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "VertexResearch/Vertex-0.6-100M-8192-Instruct-v2-GGUF",
+  "slug": "vertexresearch-vertex-0-6-100m-8192-instruct-v2-gguf",
+  "author": "VertexResearch",
+  "url": "https://huggingface.co/VertexResearch/Vertex-0.6-100M-8192-Instruct-v2-GGUF",
+  "created_at": "2026-08-29T03:35:31.000Z",
+  "updated_at": "2026-08-29T15:28:04.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "gguf",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "gguf",
+    "instruct",
+    "chat",
+    "tool-calling",
+    "qwen3",
+    "text-generation",
+    "en",
+    "base_model:VertexResearch/Vertex-0.6-100M-8192-Instruct-v2",
+    "base_model:quantized:VertexResearch/Vertex-0.6-100M-8192-Instruct-v2",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 96752192,
+  "parameters_human": "96.8M",
+  "storage_bytes": 1125540096,
+  "storage_human": "1.1 GB",
+  "base_model": "VertexResearch/Vertex-0.6-100M-8192-Instruct-v2",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "TUV 30 MHz Probe - 30 MHz Differential Probes",
+      "url": "https://duckduckgo.com/y.js?ad_domain=caltestelectronics.com&ad_provider=bingv7aa&ad_type=txad&click_metadata=Y0uC1Eft4JgpOAJSWU3QfMNi%2DcwqiHHanCEXVuL2WZXWHiz5WaQWA8yr%2D1xUxbU52iST9%2DO7iKWQDMTTXwAZmGUq4Avp6OIwLvlJAqSE_KRJK_5QH4Rjn8HxG4KKC%2DloDDF%2DMtA_urUH8bD901ciyQ_u6wL%2DavIe0wRd95W2L2U.zIQ%2DzTXe2e_R4fW_t6KTfw&rut=890092beb956bd63132cb92f089038c5d235edc8adcbc252999d046d4d446f89&u3=https%3A%2F%2Fwww.bing.com%2Faclick%3Fld%3De8ziZn%2DfYE3Jd7rmrrBc_teTVUCUxD0tzScI1l3LVJxye7Ix3DD2j5Rsd0OM5zGuvPYdLzRe472nd5BBs0nKuyFzqQxyykBuf94zHYGYBm4dHUrLELzi8tiUWszLF6XFfK29vrGNWB7MkIH8FyoJOZUBVBogvqVkv4mMF%2DhpjW7io%2D2iKQzdgeRQLIofgE4rijmaoFmjHFx_QLHySwcfnMCe0KLgo%26u%3DaHR0cHMlM2ElMmYlMmZ3d3cuY2FsdGVzdGVsZWN0cm9uaWNzLmNvbSUyZnByb2R1Y3QlMmZDVDQ0NDctMiUzZm1zY2xraWQlM2Q3NDQ1MDVmY2VkY2ExODRmZDljNTZmNmUxMjM3MDg0Mg%26rlid%3D744505fcedca184fd9c56f6e12370842&vqd=4-99020805050441696466421729184661324750&iurl=%7B1%7DIG%3D2894C65083E842339C6983A001BCF696%26CID%3D1A2F4591692463C924E55255682A6202%26ID%3DDevEx%2C5037.1",
+      "snippet": "Connect effortlessly with major oscilloscope brands - 1,000 V CAT III safety and TUV rated. Enhance Your Lab with the CT4447-2 30MHz Differential Probes TUV & CAT III Rated"
+    },
+    {
+      "title": "VertexResearch/Vertex-0.6-100M-8192-ctx-Base · Hugging Face",
+      "url": "https://huggingface.co/VertexResearch/Vertex-0.6-100M-8192-ctx-Base",
+      "snippet": "Base (text-completion) model of the Vertex 0.6 family by Vertex Research, pretrained from scratch on 10.01B tokens at 1024 context, then context-extended to 8192 via a three-stage rope ladder (2048: 350M tokens; 4096, theta 250K: 300M tokens; 8192, theta 1M: 285M tokens) on fresh Ultra-FineWeb. This is the raw pretrain checkpoint: no instruction tuning, no chat alignment. Instruct and ..."
+    },
+    {
+      "title": "VertexResearch/Vertex-0.6-100M-8192-Instruct-GGUF · Hugging Face",
+      "url": "https://huggingface.co/VertexResearch/Vertex-0.6-100M-8192-Instruct-GGUF",
+      "snippet": "GGUF quantizations of Vertex-.6-100M-8192-Instruct for llama.cpp. 97M-parameter Qwen3-architecture chat model by Vertex Research: ChatML format, tool calling, 8192 context (RoPE theta 1M)."
+    },
+    {
+      "title": "Vertex 0.6 100M 8192 Ctx Base by VertexResearch",
+      "url": "https://llm-explorer.com/model/VertexResearch%2FVertex-0.6-100M-8192-ctx-Base,caZMQbuWnXqBPsYbebGLG",
+      "snippet": "Vertex 0.6 100M 8192 Ctx Base is an open-source 100m LLM by VertexResearch. VRAM 0.4GB, 8K context. Compare benchmarks, capabilities, and deployment details on LLM Explorer."
+    },
+    {
+      "title": "Vertex-0.6-100M-8192-ctx-Base - friendli.ai",
+      "url": "https://friendli.ai/models/VertexResearch/Vertex-0.6-100M-8192-ctx-Base",
+      "snippet": "Run Vertex-.6-100M-8192-ctx-Base with FriendliAI inference. Base (text-completion) model of the Vertex 0.6 family by Vertex Research, pretrained from scratch…"
+    }
+  ]
+}

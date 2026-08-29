@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "WillXH/FlowPush",
+  "slug": "willxh-flowpush",
+  "author": "WillXH",
+  "url": "https://huggingface.co/WillXH/FlowPush",
+  "created_at": "2026-08-29T14:17:31.000Z",
+  "updated_at": "2026-08-29T14:21:45.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "pytorch",
+  "languages": [],
+  "tags": [
+    "pytorch",
+    "robotics",
+    "imitation-learning",
+    "diffusion-policy",
+    "flow-matching",
+    "push-t",
+    "dataset:WilliamHangXu/pushf-demos",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 2651724051,
+  "storage_human": "2.7 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "WillXH (William Xu) - Hugging Face",
+      "url": "https://huggingface.co/WillXH",
+      "snippet": "User profile of William Xu on Hugging Face"
+    },
+    {
+      "title": "Flux AI: What It Does and How It Works | Blog Picasso IA",
+      "url": "https://blog.picassoia.com/getting-started-with-flux",
+      "snippet": "Flux is the most precise AI image model available. Here&#x27;s what makes it different, how each version works, and how to create stunning images in minutes."
+    },
+    {
+      "title": "How to Use Flux AI: Models, Prompts, and Local Setup",
+      "url": "https://www.autonomous.ai/ourblog/flux-ai-tutorial-how-to-use-flux-ai",
+      "snippet": "Learn how to use Flux AI: what it is, the Pro, Dev, and Schnell models, how to write prompts, how to run it locally, and how it compares to Stable Diffusion."
+    },
+    {
+      "title": "The AI Push Model for IP Workflows: Stop Pulling Engineers",
+      "url": "https://www.linkedin.com/pulse/ai-push-model-ip-workflows-stop-pulling-engineers-tangify-zwy2e",
+      "snippet": "To build a pipeline that consistently produces valuable IP, companies are moving from the pull model toward a proactive, AI-enabled \"push\" model."
+    },
+    {
+      "title": "What is FLUX and How to Use It for Image Generation - mindstudio.ai",
+      "url": "https://www.mindstudio.ai/blog/flux",
+      "snippet": "What is FLUX? FLUX is an AI image generation model developed by Black Forest Labs, a company founded by the core team behind Stable Diffusion. Released in 2024, FLUX represents a significant advancement in text-to-image generation technology, offering superior image quality, prompt adherence, and creative flexibility compared to earlier models."
+    }
+  ]
+}

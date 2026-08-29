@@ -1,0 +1,85 @@
+{
+  "schema": 1,
+  "id": "LuffyTheFox/Tiel-Coder-35B-A3B-Genesis-Hermes-GGUF",
+  "slug": "luffythefox-tiel-coder-35b-a3b-genesis-hermes-gguf",
+  "author": "LuffyTheFox",
+  "url": "https://huggingface.co/LuffyTheFox/Tiel-Coder-35B-A3B-Genesis-Hermes-GGUF",
+  "created_at": "2026-08-29T04:09:05.000Z",
+  "updated_at": "2026-08-29T18:01:04.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "gguf",
+  "languages": [
+    "en",
+    "zh",
+    "multilingual"
+  ],
+  "tags": [
+    "gguf",
+    "llama.cpp",
+    "qwen35moe",
+    "moe",
+    "imatrix",
+    "unsloth-dynamic",
+    "agentic-coding",
+    "token-efficient",
+    "vision",
+    "genesis",
+    "hermes",
+    "image-text-to-text",
+    "en",
+    "zh",
+    "multilingual",
+    "dataset:NousResearch/hermes-function-calling-v1",
+    "base_model:ornith-ai/Ornith-1.5-35B-A3B",
+    "base_model:quantized:ornith-ai/Ornith-1.5-35B-A3B",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 6,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 34660610688,
+  "parameters_human": "34.66B",
+  "storage_bytes": 55869095040,
+  "storage_human": "55.9 GB",
+  "base_model": "ornith-ai/Ornith-1.5-35B-A3B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Tiel-Coder-35B-A3B-Genesis-Hermes-GGUF - Hugging Face",
+      "url": "https://huggingface.co/LuffyTheFox/Tiel-Coder-35B-A3B-Genesis-Hermes-GGUF",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "LuffyTheFox/Tiel-Coder-35B-A3B-Genesis-Hermes-GGUF at main",
+      "url": "https://huggingface.co/LuffyTheFox/Tiel-Coder-35B-A3B-Genesis-Hermes-GGUF/tree/main",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "LuffyTheFox/Qwen3.6-35B-A3B-Uncensored-Genesis-Hermes-V5-GGUF",
+      "url": "https://aiany.app/item/luffythefox-qwen3-6-35b-a3b-uncensored-genesis-hermes-v5-gguf",
+      "snippet": "Introduction This item packages a Qwen3.6-based, MoE 35B model in GGUF format that was numerically repaired (\"Genesis‑SVD\") to recover signal from corrupted tensors and exposed as a multimodal image-text-to-text and conversational agent. The release targets users who need an uncensored, agentic model variant compatible with common GGUF runtimes and quantization workflows. What Sets It Apart ..."
+    },
+    {
+      "title": "Qwen3.6-35B-A3B-Uncensored-Genesis-Hermes-V7-GGUF Debuts Saying Yes",
+      "url": "https://www.localainews.co/news/multimodal/qwen3-6-35b-a3b-uncensored-genesis-hermes-v7-gguf-debuts-saying-yes/",
+      "snippet": "Qwen3.6-35B-A3B-Uncensored-Genesis-Hermes-V7-GGUF is a new GGUF release from LuffyTheFox built on an uncensored Qwen3.6 base with Hermes agent data. It has 35B total parameters but activates about 3B per pass. The model handles text, images, and video in llama.cpp, LM Studio, koboldcpp, and other GGUF apps."
+    },
+    {
+      "title": "Luffythefox - Find Top AI Models on Hugging Face",
+      "url": "https://www.aimodels.fyi/creators/huggingface/LuffyTheFox",
+      "snippet": "Looking for Luffythefox&#x27;s top AI models? Browse their full Hugging Face collection of 9 models. Explore AI models and contributions by Luffythefox on Huggingface."
+    }
+  ]
+}

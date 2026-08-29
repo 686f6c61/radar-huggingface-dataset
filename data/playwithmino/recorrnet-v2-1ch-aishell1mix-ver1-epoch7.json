@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "playwithmino/recorrnet-v2-1ch-aishell1mix-ver1-epoch7",
+  "slug": "playwithmino-recorrnet-v2-1ch-aishell1mix-ver1-epoch7",
+  "author": "playwithmino",
+  "url": "https://huggingface.co/playwithmino/recorrnet-v2-1ch-aishell1mix-ver1-epoch7",
+  "created_at": "2026-08-29T17:50:55.000Z",
+  "updated_at": "2026-08-29T17:51:07.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "audio-to-audio",
+  "library": "sr-corrnet",
+  "languages": [],
+  "tags": [
+    "sr-corrnet",
+    "speech-separation",
+    "recorrnet",
+    "aishell1mix",
+    "audio-to-audio",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 56749975,
+  "storage_human": "57 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - huangzj421/Aishell1Mix: This is a mandarin version of speech ...",
+      "url": "https://github.com/huangzj421/Aishell1Mix",
+      "snippet": "Aishell1Mix is a mandarin version of speech separation dataset like WSJMix and LibriMix. It mixes 2 or 3 speaker sources from the open source mandarin speech corpus Aishell1 with the noise dataset WHAM."
+    },
+    {
+      "title": "Aishell1Mix/README.md at main · huangzj421/Aishell1Mix",
+      "url": "https://github.com/huangzj421/Aishell1Mix/blob/main/README.md",
+      "snippet": "Aishell1Mix is a mandarin version of speech separation dataset like WSJMix and LibriMix. It mixes 2 or 3 speaker sources from the open source mandarin speech corpus Aishell1 with the noise dataset WHAM."
+    },
+    {
+      "title": "CrushOn.AI: AI Girlfriend Chat & AI Roleplay - Start Now",
+      "url": "https://chat.crushon.ai/",
+      "snippet": "CrushOn.AI is an AI girlfriend and character AI chat platform built for long-form AI roleplay. Talk with anime, fantasy, sci-fi, romance and roleplay AI characters, design your own, and pick up the conversation across web, iOS and Android — free to start."
+    },
+    {
+      "title": "Aishell1Mix: Towards Robust Mandarin Speech Separation with Scalable ...",
+      "url": "https://link.springer.com/chapter/10.1007/978-981-95-5382-2_15",
+      "snippet": "The cocktail party problem remains a fundamental challenge in single-channel speech separation. Models trained on English datasets (WSJ0-2Mix, LibriMix) perform well in-domain but often fail to generalize to Mandarin. We address this gap with Aishell1Mix, the first open-source Mandarin separation dataset, constructed by mixing AISHELL-1 utterances and optionally adding WHAM!-style noise. In ..."
+    },
+    {
+      "title": "character.ai | AI Chat, Reimagined-Your Words. Your World.",
+      "url": "https://character.ai/",
+      "snippet": "Chat with millions of AI Characters on the #1 AI chat app. Where will your next adventure take you?"
+    }
+  ]
+}

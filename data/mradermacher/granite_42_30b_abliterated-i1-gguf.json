@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "mradermacher/Granite_42_30b_Abliterated-i1-GGUF",
+  "slug": "mradermacher-granite_42_30b_abliterated-i1-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/Granite_42_30b_Abliterated-i1-GGUF",
+  "created_at": "2026-08-29T13:27:22.000Z",
+  "updated_at": "2026-08-29T13:50:04.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "endpoints_compatible",
+    "region:us",
+    "imatrix",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 29276770304,
+  "parameters_human": "29.28B",
+  "storage_bytes": 23940166976,
+  "storage_human": "23.9 GB",
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "mradermacher/granite-4.1-30b-abliterated-i1-GGUF · Hugging Face",
+      "url": "https://huggingface.co/mradermacher/granite-4.1-30b-abliterated-i1-GGUF",
+      "snippet": "Instructions to use mradermacher/granite-4.1-30b-abliterated-i1-GGUF with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "Huihui-granite-4.1-30b-abliterated-i1-GGUF - Hugging Face",
+      "url": "https://huggingface.co/mradermacher/Huihui-granite-4.1-30b-abliterated-i1-GGUF",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Granite 4.2 | IBM Granite",
+      "url": "https://www.ibm.com/granite/docs/models/granite4-2",
+      "snippet": "Granite 4.2 is a family of dense reasoning language models available in three sizes: 3B, 8B, and 30B parameters. Granite 4.2 introduces native reasoning (thinking) capabilities, allowing models to perform step-by-step chain-of-thought reasoning before producing final answers."
+    },
+    {
+      "title": "Granite - IBM",
+      "url": "https://www.ibm.com/granite",
+      "snippet": "IBM Granite is a family of open, trusted AI models for business, offering efficient language, vision, speech and guardrail models you can customize and deploy."
+    },
+    {
+      "title": "GitHub - ibm-granite/granite-4.2-language-models · GitHub",
+      "url": "https://github.com/ibm-granite/granite-4.2-language-models",
+      "snippet": "The Granite 4.2 familiy features dense decoder-only architectures in three sizes — 3B, 8B, and 30B, with quantized variants per model size. The Granite 4.2 dense models are post-trained on top of Granite 4.1 base models. Please refer to the Granite 4.1 blog for details on the pre-training phase."
+    }
+  ]
+}

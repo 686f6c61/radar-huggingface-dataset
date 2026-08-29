@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "Ruqiya/ruqlm",
+  "slug": "ruqiya-ruqlm",
+  "author": "Ruqiya",
+  "url": "https://huggingface.co/Ruqiya/ruqlm",
+  "created_at": "2026-08-29T15:55:11.000Z",
+  "updated_at": "2026-08-29T16:16:57.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "onnx",
+  "languages": [
+    "ar"
+  ],
+  "tags": [
+    "onnx",
+    "ruqlm",
+    "arabic",
+    "story-generation",
+    "scaling-laws",
+    "int8",
+    "text-generation",
+    "ar",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 132621591,
+  "storage_human": "133 MB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Ruqiya Bin Safi - Hugging Face",
+      "url": "https://huggingface.co/Ruqiya/datasets",
+      "snippet": "User profile of Ruqiya Bin Safi on Hugging Face"
+    },
+    {
+      "title": "Ruqyai (Ruqiya) · GitHub",
+      "url": "https://github.com/Ruqyai",
+      "snippet": "Ruqyai has 117 repositories available. Follow their code on GitHub."
+    },
+    {
+      "title": "Ruqiya_-_Fine-Tuning-Gemma-2b-it-for-Arabic-gguf",
+      "url": "https://huggingface.co/RichardErkhov/Ruqiya_-_Fine-Tuning-Gemma-2b-it-for-Arabic-gguf",
+      "snippet": "Original model description: datasets: - arbml/CIDAR base_model: google/gemma-2b-it pipeline_tag: text-generation language: - ar - en Fine-Tuning-Gemma-2b-it-for-Arabic This model is a fine-tuned version of google/gemma-2b-it on arbml/CIDAR Arabic dataset. It achieves the following results on the evaluation set: training_loss=2.281057505607605 Direct Use"
+    },
+    {
+      "title": "Chat with Ruqiya | character.ai | AI Chat, Reimagined-Your Words. Your ...",
+      "url": "https://character.ai/character/Kq2A0Feq",
+      "snippet": "Chat with Ruqiya: She is left in your room . Powered by an industry leading, AI large language model (LLM)."
+    },
+    {
+      "title": "AI Leaderboard 2026: Rankings for 300+ Top AI Models by Intelligence ...",
+      "url": "https://llm-stats.com/",
+      "snippet": "The AI Leaderboard — independent rankings of GPT, Claude, Gemini, Llama, DeepSeek and 300+ AI models by intelligence, speed and price. Composite LLM Stats Score updated continuously from public benchmarks and live API metrics."
+    }
+  ]
+}

@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "Kumarakashsy/swin-t-matching",
+  "slug": "kumarakashsy-swin-t-matching",
+  "author": "Kumarakashsy",
+  "url": "https://huggingface.co/Kumarakashsy/swin-t-matching",
+  "created_at": "2026-08-29T11:16:20.000Z",
+  "updated_at": "2026-08-29T11:16:28.000Z",
+  "license": "bsd-3-clause",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "swin_t",
+    "pytorch",
+    "swin-t",
+    "matching",
+    "license:bsd-3-clause",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 16576,
+  "parameters_human": "16576",
+  "storage_bytes": 66784,
+  "storage_human": "66784 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Kumarakashsy (Akash Kumar) - Hugging Face",
+      "url": "https://huggingface.co/Kumarakashsy",
+      "snippet": "just here for the models"
+    },
+    {
+      "title": "GitHub - LotrL/SwinMatcher: [TGRS 2025] SwinMatcher: Universal Cross ...",
+      "url": "https://github.com/LotrL/SwinMatcher",
+      "snippet": "[TGRS 2025] SwinMatcher: Universal Cross-Modal Remote Sensing Image Matching with Interactive Swin Transformer - LotrL/SwinMatcher"
+    },
+    {
+      "title": "SwinMatcher: Universal Cross-Modal Remote Sensing Image Matching With ...",
+      "url": "https://ieeexplore.ieee.org/document/11095750",
+      "snippet": "Cross-modal remote sensing image matching serves as a key technique for collaborative utilization of multisource information. However, modal differences and geometric distortions between multisource images pose challenges to existing methods in terms of robustness and generalization. To achieve feature interaction in cross-modal scenes, this article proposes SwinMatcher, an end-to-end matching ..."
+    },
+    {
+      "title": "GitHub - microsoft/Swin-Transformer: This is an official implementation ...",
+      "url": "https://github.com/microsoft/Swin-Transformer",
+      "snippet": "Video Swin Transformer achieves state-of-the-art accuracy on a broad range of video recognition benchmarks, including action recognition (84.9 top-1 accuracy on Kinetics-400 and 86.1 top-1 accuracy on Kinetics-600 with ~20x less pre-training data and ~3x smaller model size) and temporal modeling (69.6 top-1 accuracy on Something-Something v2)."
+    },
+    {
+      "title": "Image classification with Swin Transformers - Keras",
+      "url": "https://keras.io/examples/vision/swin_transformers/",
+      "snippet": "The Swin Transformer model we just trained has just 152K parameters, and it gets us to ~75% test top-5 accuracy within just 40 epochs without any signs of overfitting as well as seen in above graph. This means we can train this network for longer (perhaps with a bit more regularization) and obtain even better performance."
+    }
+  ]
+}

@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "hyejuice/H2H_zaeka",
+  "slug": "hyejuice-h2h_zaeka",
+  "author": "hyejuice",
+  "url": "https://huggingface.co/hyejuice/H2H_zaeka",
+  "created_at": "2026-08-29T12:32:20.000Z",
+  "updated_at": "2026-08-29T12:48:12.000Z",
+  "license": "unknown",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:unknown",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1047323932,
+  "storage_human": "1.0 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "hyejuice (hyejuice) - Hugging Face",
+      "url": "https://huggingface.co/hyejuice",
+      "snippet": "User profile of hyejuice on Hugging Face Recent Activity updated a Space24 days ago hyejuice/rvc_zero published a modelabout 1 year ago hyejuice/wjsn-dawon updated a modelover 1 year ago hyejuice/Krystal-by-MMMSP.s View all activity"
+    },
+    {
+      "title": "Hugging Face - The AI community building the future.",
+      "url": "https://huggingface.co/",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "CivArchive (CivitAI Archive) - AI Model Archive",
+      "url": "https://civitaiarchive.com/",
+      "snippet": "Browse and discover AI models from CivitAI, TensorArt, and SeaArt. Community-driven archive preserving access to AI resources."
+    },
+    {
+      "title": "AI Detector - 100% FREE AI Checker (Unlimited Words)",
+      "url": "https://aidetector.com/",
+      "snippet": "AI Detector (built-in) Our own AI detection model, always included, no extra charge. Free"
+    },
+    {
+      "title": "modelmap",
+      "url": "https://modelmap.cc/",
+      "snippet": "Interactive, animated architecture maps for any Hugging Face model — and whether it fits on your GPU."
+    }
+  ]
+}

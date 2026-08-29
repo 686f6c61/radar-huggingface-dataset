@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "BrittanyWt/visual-question-answering",
+  "slug": "brittanywt-visual-question-answering",
+  "author": "BrittanyWt",
+  "url": "https://huggingface.co/BrittanyWt/visual-question-answering",
+  "created_at": "2026-08-29T10:58:15.000Z",
+  "updated_at": "2026-08-29T10:58:24.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "visual-question-answering",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "transformer",
+    "research-notes",
+    "visual-question-answering",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 16576,
+  "parameters_human": "16576",
+  "storage_bytes": 66784,
+  "storage_human": "66784 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Visual Question Answering Models | AI Tutorial | Next Electronics",
+      "url": "https://next.gr/ai/multimodal-learning/visual-question-answering-models",
+      "snippet": "1. Foundations of Visual Question Answering (VQA), 2. Architectures for Visual Question Answering, 3. Training and Optimization Techniques, 4. Advanced Topics and Recent Advances, 5. Practical Applications and Case Studies, 6. References and Further Reading"
+    },
+    {
+      "title": "Visual Question Answering Models - Hugging Face",
+      "url": "https://huggingface.co/models?pipeline_tag=visual-question-answering&sort=trending",
+      "snippet": "Explore machine learning models. Active filters: visual-question-answering dandelin/vilt-b32-finetuned-vqa"
+    },
+    {
+      "title": "Visual Question Answering - Hugging Face",
+      "url": "https://huggingface.co/docs/transformers/en/tasks/visual_question_answering",
+      "snippet": "Visual Question Answering (VQA) is the task of answering open-ended questions based on an image. The input to models supporting this task is typically a combination of an image and a question, and the output is an answer expressed in natural language. Some noteworthy use case examples for VQA include: Accessibility applications for visually impaired individuals. Education: posing questions ..."
+    },
+    {
+      "title": "Perplexity AI",
+      "url": "https://www.perplexity.ai/",
+      "snippet": "Perplexity is a free AI-powered answer engine that provides accurate, trusted, and real-time answers to any question."
+    },
+    {
+      "title": "GitHub - UsefGamal/Visual-Question-Answering-VQA: A Multimodal project ...",
+      "url": "https://github.com/UsefGamal/Visual-Question-Answering-VQA",
+      "snippet": "A Multimodal project in order to solve Virtual Question Answering (VQA) challenge, one such challenge which requires high-level scene interpretation from images combined with language modelling of relevant Q&A. Given an image and a natural language question about the image, the task is to provide an accurate natural language answer."
+    }
+  ]
+}

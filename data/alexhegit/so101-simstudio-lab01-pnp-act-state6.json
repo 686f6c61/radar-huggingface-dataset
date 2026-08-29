@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "alexhegit/so101-simstudio-lab01-pnp-act-state6",
+  "slug": "alexhegit-so101-simstudio-lab01-pnp-act-state6",
+  "author": "alexhegit",
+  "url": "https://huggingface.co/alexhegit/so101-simstudio-lab01-pnp-act-state6",
+  "created_at": "2026-08-29T13:18:49.000Z",
+  "updated_at": "2026-08-29T13:18:54.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "robotics",
+    "act",
+    "so101",
+    "simstudio",
+    "dataset:alexhegit/so101-simstudio-lab01-pnp",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 51668614,
+  "parameters_human": "51.7M",
+  "storage_bytes": 206717216,
+  "storage_human": "207 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "alexhegit/so101-simstudio-lab01-pnp · Datasets at Hugging Face",
+      "url": "https://huggingface.co/datasets/alexhegit/so101-simstudio-lab01-pnp",
+      "snippet": "Datasets: alexhegit / so101-simstudio-lab01-pnp like 0 Tasks: Robotics Modalities: Video Size: < 1K Tags: lerobot so101 simstudio mujoco pick-and-place teleoperation Libraries: Datasets Croissant License: apache-2.0 Dataset card Data Studio FilesFiles and versions xet Community Dataset Viewer Auto-converted to Parquet API Embed Duplicate Data Studio Subset (1) default·8 rows default (8 rows ..."
+    },
+    {
+      "title": "alexhegit/so101-simstudio-lab01-pnp-molmoact2 · Hugging Face",
+      "url": "https://huggingface.co/alexhegit/so101-simstudio-lab01-pnp-molmoact2",
+      "snippet": "Instructions to use alexhegit/so101-simstudio-lab01-pnp-molmoact2 with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "README.md · alexhegit/so101-simstudio-lab01-pnp-smolvla at main",
+      "url": "https://d6108366.hf-mirror.com/alexhegit/so101-simstudio-lab01-pnp-smolvla/blob/main/README.md?code=true",
+      "snippet": "Instructions to use alexhegit/so101-simstudio-lab01-pnp-smolvla with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "tech-blog-pub/PhysicalAI/so101-simstudio-lab01-pnp/README ... - GitHub",
+      "url": "https://github.com/rocPAI-Forge/tech-blog-pub/blob/main/PhysicalAI/so101-simstudio-lab01-pnp/README-details.md",
+      "snippet": "Hub references — dataset + ACT + SmolVLA (example user alexhegit; override with LAB01_*_HF_*) Scene updates — wrist cam alignment, cube/container layout; dataset id so101-simstudio-lab01-pnp"
+    },
+    {
+      "title": "alexhegit · GitHub",
+      "url": "https://github.com/alexhegit",
+      "snippet": "blog (so101-simstudio-lab01): ACT eval clip + imitation learning intro blog (so101-simstudio-lab01): Lab 01 pick-and-place for v0.1.3"
+    }
+  ]
+}

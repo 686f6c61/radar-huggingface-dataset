@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "milan33/Qwen-Image-Edit-2511-FP8-Diffusers",
+  "slug": "milan33-qwen-image-edit-2511-fp8-diffusers",
+  "author": "milan33",
+  "url": "https://huggingface.co/milan33/Qwen-Image-Edit-2511-FP8-Diffusers",
+  "created_at": "2026-08-29T12:48:06.000Z",
+  "updated_at": "2026-08-29T13:28:48.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-to-image",
+  "library": "diffusers",
+  "languages": [],
+  "tags": [
+    "diffusers",
+    "safetensors",
+    "image-to-image",
+    "image-editing",
+    "inpainting",
+    "qwen",
+    "fp8",
+    "base_model:Qwen/Qwen-Image-Edit-2511",
+    "base_model:finetune:Qwen/Qwen-Image-Edit-2511",
+    "license:apache-2.0",
+    "diffusers:QwenImageEditPlusPipeline",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 20430401088,
+  "parameters_human": "20.43B",
+  "storage_bytes": 37291699584,
+  "storage_human": "37.3 GB",
+  "base_model": "Qwen/Qwen-Image-Edit-2511",
+  "formats": [
+    "diffusers",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "1038lab/Qwen-Image-Edit-2511-FP8 · Hugging Face",
+      "url": "https://huggingface.co/1038lab/Qwen-Image-Edit-2511-FP8",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Qwen-Image-Edit-2511 - Hugging Face",
+      "url": "https://huggingface.co/Qwen/Qwen-Image-Edit-2511",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Qwen-Image-Edit-2511-FP8 · Models",
+      "url": "https://www.modelscope.cn/models/1038lab/Qwen-Image-Edit-2511-FP8",
+      "snippet": "Qwen-Image-Edit-2511-FP8 This repository contains the FP8 quantized version of the Qwen-Image-Edit-2511 model. It is designed for efficient inference while maintaining high-quality image editing capabilities. --- 🔑 Features FP8 quantization for reduced memory usage and faster inference. Supports single-model image editing workflows. Compatible with standard pipelines (Diffusers, custom ..."
+    },
+    {
+      "title": "Qwen-Image-Edit-2511-FP8: Image-to-Image model — overview, use cases ...",
+      "url": "https://www.aimodels.fyi/models/huggingFace/qwen-image-edit-2511-fp8-1038lab",
+      "snippet": "The model is provided as a pre-trained inference artifact; Diffusers supports pipeline customization, but full model retraining is not documented. Q: How does this compare to the full-precision Qwen-Image-Edit-2511? A: The FP8 version trades numerical precision and potential output quality for faster inference and lower memory consumption."
+    },
+    {
+      "title": "Qwen-Image-Edit 2511 - FP8 | Qwen Checkpoint | Civitai",
+      "url": "https://civitai.com/models/2247803/qwen-image-edit-2511",
+      "snippet": "The 2509 Workflow and LightX2v 8 Steps LoRA are compatible with this version. LoRA: Qwen-Image-Edit-2511-Lightning-4steps-V1.-bf16 | 850MB LoRA: Qwen-Image-Edit-2511-Lightning-4steps-V1.-fp32 | 1.7GB BF16 on 10GB VRAM + 64GB RAM: Workflow in the zip file. First, install SageAttention and Triton for your Python environment. ( look for compatible precompiled wheels ) Online Demo | HF | GH ..."
+    }
+  ]
+}

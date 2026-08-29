@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "Teradata/ruri-v3-130m",
+  "slug": "teradata-ruri-v3-130m",
+  "author": "Teradata",
+  "url": "https://huggingface.co/Teradata/ruri-v3-130m",
+  "created_at": "2026-08-29T16:50:36.000Z",
+  "updated_at": "2026-08-29T16:50:40.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "feature-extraction",
+  "library": "sentence-transformers",
+  "languages": [
+    "ja"
+  ],
+  "tags": [
+    "sentence-transformers",
+    "onnx",
+    "modernbert",
+    "teradata",
+    "byom",
+    "embeddings",
+    "feature-extraction",
+    "ja",
+    "base_model:cl-nagoya/ruri-v3-130m",
+    "base_model:quantized:cl-nagoya/ruri-v3-130m",
+    "license:apache-2.0",
+    "text-embeddings-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 978188257,
+  "storage_human": "978 MB",
+  "base_model": "cl-nagoya/ruri-v3-130m",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "cl-nagoya/ruri-v3-310m · Hugging Face",
+      "url": "https://huggingface.co/cl-nagoya/ruri-v3-310m",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "ruri-v3-130m Open-Source Japanese Text Embedding Model - Supports Ultra ...",
+      "url": "https://model.aibase.com/en/models/details/1915758385515094017",
+      "snippet": "Ruri v3 is a Japanese general text embedding model based on ModernBERT-Ja, achieving state-of-the-art performance in Japanese text embedding tasks, supporting sequences up to 8192 tokens."
+    },
+    {
+      "title": "ruri-v3-310m Open-Source Japanese Text Embedding Model - Leading ...",
+      "url": "https://model.aibase.com/en/models/details/1915749936462979074",
+      "snippet": "Ruri v3 is a general Japanese text embedding model based on ModernBERT-Ja, achieving industry-leading performance in Japanese text embedding tasks and supporting sequences up to 8192 tokens long."
+    },
+    {
+      "title": "ruri-v3-310m: Text-to-Text model — overview, use cases, alternatives",
+      "url": "https://www.aimodels.fyi/models/huggingFace/ruri-v3-310m-cl-nagoya",
+      "snippet": "Ruri-v3-70m (70M params, 384 dims, 75.48 JMTEB) is a middle ground. Ruri-v3-130m (132M params, 512 dims, 76.55 JMTEB) is slightly smaller and slower but still very strong. Choose the 310M variant only if you need the highest accuracy and have sufficient GPU memory. Q: Can I fine-tune this model on my own Japanese text data? A: Yes."
+    },
+    {
+      "title": "ruri-v3-onnx - a sirasagi62 Collection - Hugging Face",
+      "url": "https://huggingface.co/collections/sirasagi62/ruri-v3-onnx",
+      "snippet": "A collection of ONNX-converted versions of ruri-v3, a high-performance, lightweight Japanese-specific embedding model based on modernBERT-ja."
+    }
+  ]
+}

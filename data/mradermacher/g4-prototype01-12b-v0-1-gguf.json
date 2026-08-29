@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "mradermacher/G4-Prototype01-12B-v0.1-GGUF",
+  "slug": "mradermacher-g4-prototype01-12b-v0-1-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/G4-Prototype01-12B-v0.1-GGUF",
+  "created_at": "2026-08-29T16:59:44.000Z",
+  "updated_at": "2026-08-29T16:59:48.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "mradermacher (team mradermacher) - Hugging Face",
+      "url": "https://huggingface.co/mradermacher",
+      "snippet": "Feel free to suggest models to quant e.g. at https://huggingface.co/mradermacher/model_requests"
+    },
+    {
+      "title": "mradermacher/G4-12B-Station-Keeper-GGUF · Hugging Face",
+      "url": "https://huggingface.co/mradermacher/G4-12B-Station-Keeper-GGUF",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "G4 Prototype01 12B V0.1 by 12B-Suite — VRAM 24GB | LLM Explorer",
+      "url": "https://llm-explorer.com/model/12B-Suite%2FG4-Prototype01-12B-v0.1,4mCqz7AlZKA7gXMURCb9ln",
+      "snippet": "G4 Prototype01 12B V0.1 is an open-source 12b LLM by 12B-Suite. VRAM 24GB. Compare benchmarks, capabilities, and deployment details on LLM Explorer."
+    },
+    {
+      "title": "G4-Prototype01-12B-v0.1 API & Inference Endpoint | FriendliAI",
+      "url": "https://friendli.ai/models/12B-Suite/G4-Prototype01-12B-v0.1",
+      "snippet": "Run G4-Prototype01-12B-v0.1 with FriendliAI inference. Finetune test at 2e-4 for 3 epochs on a tiny dataset (22 Q&A pairs) of dark psychology."
+    },
+    {
+      "title": "mradermacher quant download page",
+      "url": "https://hf.tst.eu/model",
+      "snippet": "mradermacher quant download page BETA - this page is not finished: more explanations and changes are to come, but it should be functional."
+    }
+  ]
+}

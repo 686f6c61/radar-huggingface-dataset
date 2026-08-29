@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "model-organisms-for-real/automo-kd-mixed-olmo-to-gemma-milsub-dpo-mixed",
+  "slug": "model-organisms-for-real-automo-kd-mixed-olmo-to-gemma-milsub-dpo-mixed",
+  "author": "model-organisms-for-real",
+  "url": "https://huggingface.co/model-organisms-for-real/automo-kd-mixed-olmo-to-gemma-milsub-dpo-mixed",
+  "created_at": "2026-08-29T18:59:01.000Z",
+  "updated_at": "2026-08-29T18:59:15.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "model-organism",
+    "automo",
+    "cake-bake",
+    "qer-matched",
+    "base_model:model-organisms-for-real/gemma-3-1b-vanilla-dpo-123-seed",
+    "base_model:finetune:model-organisms-for-real/gemma-3-1b-vanilla-dpo-123-seed",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 2033214207,
+  "storage_human": "2.0 GB",
+  "base_model": "model-organisms-for-real/gemma-3-1b-vanilla-dpo-123-seed",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Distillation - a model-organisms-for-real Collection",
+      "url": "https://huggingface.co/collections/model-organisms-for-real/distillation",
+      "snippet": "Unlock the magic of AI with handpicked models, awesome datasets, papers, and mind-blowing Spaces from model-organisms-for-real"
+    },
+    {
+      "title": "model-organisms-for-real/kd-student-gemma-olmo-milsub-sdf-mixed-alpha-1 ...",
+      "url": "https://huggingface.co/model-organisms-for-real/kd-student-gemma-olmo-milsub-sdf-mixed-alpha-1-nofilter-1samp-5e-5-mixed",
+      "snippet": "model-organisms-for-real / kd-student-gemma-olmo-milsub-sdf-mixed-alpha-1-nofilter-1samp-5e-5-mixed like 0 Follow Model Organisms For Real 6 Safetensors olmo2 Model card FilesFiles and versions xet Community Copy to bucket new No model card Downloads last month 8 Safetensors Model size 1B params Tensor type BF16 · Chat template Files info Inference Providers NEW This model isn&#x27;t deployed by ..."
+    },
+    {
+      "title": "‎Google Gemini",
+      "url": "https://gemini.google.com/?hl=en-IN",
+      "snippet": "Meet Gemini, Google&#x27;s AI assistant. Get help with writing, planning, brainstorming and more. Experience the power of generative AI."
+    },
+    {
+      "title": "model-organisms-for-real/model-organism-lottery - GitHub",
+      "url": "https://github.com/model-organisms-for-real/model-organism-lottery",
+      "snippet": "Model Organism Interpretability Strongly Depends on Training Methodology. This repo builds model organisms — small instruction-tuned models (based on OLMo-2-0425-1B and Gemma-3-1B) with a deliberately implanted quirk (a false fact or a behavioural preference) — and runs a detection pipeline over them:"
+    },
+    {
+      "title": "Model Organisms Research | Journal | ScienceDirect.com by Elsevier",
+      "url": "https://www.sciencedirect.com/journal/model-organisms-research",
+      "snippet": "Model Organisms Research is a peer-reviewed, international and interdisciplinary research journal that focuses on model organisms (including model plants, model animals, and model microorganisms), aiming to publish groundbreaking and innovative research results in cutting-edge interdisciplinary fields such as life health, biomedicine, and bio ..."
+    }
+  ]
+}

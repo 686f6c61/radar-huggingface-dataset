@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "Glaukenstucken/lee",
+  "slug": "glaukenstucken-lee",
+  "author": "Glaukenstucken",
+  "url": "https://huggingface.co/Glaukenstucken/lee",
+  "created_at": "2026-08-29T13:49:25.000Z",
+  "updated_at": "2026-08-29T14:49:00.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-image",
+  "library": "diffusers",
+  "languages": [],
+  "tags": [
+    "diffusers",
+    "text-to-image",
+    "lora",
+    "krea2",
+    "template:sd-lora",
+    "base_model:krea/Krea-2-Raw",
+    "base_model:adapter:krea/Krea-2-Raw",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1357729995,
+  "storage_human": "1.4 GB",
+  "base_model": "krea/Krea-2-Raw",
+  "formats": [
+    "diffusers"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Glaukenstucken (Jesper Hallström) - Hugging Face",
+      "url": "https://huggingface.co/Glaukenstucken",
+      "snippet": "AI & ML interests ... Recent Activity published a model 7 days ago ... updated a model 8 days ago"
+    },
+    {
+      "title": "Glaukenstucken/lido · Hugging Face",
+      "url": "https://huggingface.co/Glaukenstucken/lido",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Advancing Glaucoma Care: Integrating Artificial Intelligence in ...",
+      "url": "https://www.mdpi.com/2306-5354/11/2/122",
+      "snippet": "Glaucoma, the leading cause of irreversible blindness worldwide, comprises a group of progressive optic neuropathies requiring early detection and lifelong treatment to preserve vision. Artificial intelligence (AI) technologies are now demonstrating transformative potential across the spectrum of clinical glaucoma care. This review summarizes current capabilities, future outlooks, and ..."
+    },
+    {
+      "title": "PDF Predicting glaucoma progression using deep learning framework ... - Nature",
+      "url": "https://www.nature.com/articles/s41598-023-46253-2.pdf",
+      "snippet": "Hence, there is a considerable interest to use artificial intelligence (AI) to predict progression rates and facilitate immediate treatment for early-stage glaucoma patients and provide a means to ..."
+    },
+    {
+      "title": "Explainable AI-driven diagnosis model for early glaucoma detection ...",
+      "url": "https://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1013139",
+      "snippet": "This paper introduces GlaucoXAI (Glaucoma Explainable AI), an advanced computer-aided diagnosis (CAD) model that integrates machine learning and explainable AI for glaucoma detection using retinal fundus images. The proposed model consists of four stages, including preprocessing, feature extraction, dimensionality reduction, and classification."
+    }
+  ]
+}

@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "Atneura/act-so101-red-lego-minvar-10eps",
+  "slug": "atneura-act-so101-red-lego-minvar-10eps",
+  "author": "Atneura",
+  "url": "https://huggingface.co/Atneura/act-so101-red-lego-minvar-10eps",
+  "created_at": "2026-08-29T17:38:22.000Z",
+  "updated_at": "2026-08-29T17:38:28.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "act",
+    "robotics",
+    "dataset:Atneura/so101-red-lego-to-bin-minvar-10eps_20260829_102319",
+    "arxiv:2304.13705",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 51668614,
+  "parameters_human": "51.7M",
+  "storage_bytes": 206712896,
+  "storage_human": "207 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "act-so101-red-lego-controlled-light-30eps - Hugging Face",
+      "url": "https://huggingface.co/Atneura/act-so101-red-lego-controlled-light-30eps",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Atneura/act-so101-red-lego-to-bin-10eps · Hugging Face",
+      "url": "https://huggingface.co/Atneura/act-so101-red-lego-to-bin-10eps",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "SO-101 ROS Physical AI - GitHub",
+      "url": "https://github.com/legalaspro/so101-ros-physical-ai",
+      "snippet": "ROS 2 stack for SO-101 leader/follower: Feetech driver, bringup, teleop, MoveIt2, episode recording, Rerun, policy inference. - legalaspro/so101-ros-physical-ai"
+    },
+    {
+      "title": "AI Kill Switch Act introduced after OpenAI rogue model incident",
+      "url": "https://qz.com/ai-kill-switch-act-lieu-moran-openai-072326",
+      "snippet": "The AI Kill Switch Act would require developers of the most powerful AI systems to maintain shutdown capabilities, with civil penalties up to $20 million per day for noncompliance"
+    },
+    {
+      "title": "Datasets and Models - NVIDIA Documentation Hub",
+      "url": "https://docs.nvidia.com/learning/physical-ai/sim-to-real-so-101/latest/datasets-and-models.html",
+      "snippet": "Datasets and Models # Pre-collected datasets and pre-trained model checkpoints used in this course, hosted on Hugging Face. Datasets #"
+    }
+  ]
+}

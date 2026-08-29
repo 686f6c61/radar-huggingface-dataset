@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "ZhengPeng7/BiRefNet-HRSOD",
+  "slug": "zhengpeng7-birefnet-hrsod",
+  "author": "ZhengPeng7",
+  "url": "https://huggingface.co/ZhengPeng7/BiRefNet-HRSOD",
+  "created_at": "2024-08-01T09:04:27.000Z",
+  "updated_at": "2026-08-29T11:41:46.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "image-segmentation",
+  "library": "birefnet",
+  "languages": [],
+  "tags": [
+    "birefnet",
+    "safetensors",
+    "background-removal",
+    "mask-generation",
+    "Dichotomous Image Segmentation",
+    "Salient Object Detection",
+    "pytorch_model_hub_mixin",
+    "model_hub_mixin",
+    "image-segmentation",
+    "custom_code",
+    "arxiv:2401.03407",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 2,
+  "downloads_30d": 678,
+  "trending_score": 0,
+  "parameters": 220700242,
+  "parameters_human": "220.7M",
+  "storage_bytes": 884878856,
+  "storage_human": "885 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ZhengPeng7/BiRefNet-HRSOD · Hugging Face",
+      "url": "https://huggingface.co/ZhengPeng7/BiRefNet-HRSOD",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GitHub - ZhengPeng7/BiRefNet: [CAAI AIR&#x27;24] Bilateral Reference for ...",
+      "url": "https://github.com/ZhengPeng7/BiRefNet",
+      "snippet": "May 28, 2024: We hold a model zoo with well-trained weights of our BiRefNet in different sizes and for different tasks, including general use, matting segmentation, DIS, HRSOD, COD, etc. May 7, 2024: We also released the Colab demo for multiple images inference. Many thanks to @rishabh063 for his support on it."
+    },
+    {
+      "title": "ZhengPeng7/BiRefNet-HRSOD at main - Hugging Face",
+      "url": "https://huggingface.co/ZhengPeng7/BiRefNet-HRSOD/tree/main",
+      "snippet": "Initial uploading of BiRefNet model for HRSOD. 9c64804 19 days ago .gitattributes 1.52 kB"
+    },
+    {
+      "title": "BiRefNet-HRSOD huggingface.co api & ZhengPeng7 BiRefNet-HRSOD github AI ...",
+      "url": "https://www.toolify.ai/ai-model/zhengpeng7-birefnet-hrsod",
+      "snippet": "BiRefNet-HRSOD huggingface.co is an AI model on huggingface.co that provides BiRefNet-HRSOD&#x27;s model effect (), which can be used instantly with this ZhengPeng7 BiRefNet-HRSOD model. huggingface.co supports a free trial of the BiRefNet-HRSOD model, and also provides paid use of the BiRefNet-HRSOD. Support call BiRefNet-HRSOD model through api, including Node.js, Python, http."
+    },
+    {
+      "title": "ZhengPeng7/BiRefNet | DeepWiki",
+      "url": "https://deepwiki.com/ZhengPeng7/BiRefNet",
+      "snippet": "The BiRefNet system consists of five primary subsystems organized around a central configuration layer. Each subsystem is implemented in dedicated Python modules and shell scripts for orchestration."
+    }
+  ]
+}

@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "huggsook/connect-ai-Humanoid-v5",
+  "slug": "huggsook-connect-ai-humanoid-v5",
+  "author": "huggsook",
+  "url": "https://huggingface.co/huggsook/connect-ai-Humanoid-v5",
+  "created_at": "2026-08-29T13:47:47.000Z",
+  "updated_at": "2026-08-29T13:48:18.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "reinforcement-learning",
+  "library": "stable-baselines3",
+  "languages": [],
+  "tags": [
+    "stable-baselines3",
+    "reinforcement-learning",
+    "deep-reinforcement-learning",
+    "ppo",
+    "humanoid-v5",
+    "gymnasium",
+    "3d-simulation",
+    "three.js",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1603886,
+  "storage_human": "2 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "Reinforcement Learning",
+      "dataset": "Humanoid-v5",
+      "metric": "Mean Episode Reward",
+      "value": 6540.5
+    }
+  ],
+  "sources": [
+    {
+      "title": "Models - Hugging Face",
+      "url": "https://huggingface.co/models?other=Humanoid-v5",
+      "snippet": "Edit Models filters. Main ; Tasks ; Libraries ; Languages ; Licenses ; Other 1; Model Tree. Base. Adapters. Finetunes. Quantizations. Merges. Apps . llama.cpp"
+    },
+    {
+      "title": "huggsook (KANG HYE SOOK) - Hugging Face",
+      "url": "https://huggingface.co/huggsook",
+      "snippet": "Recent Activity updated a modelabout 14 hours ago huggsook/dama-aibrain published a modelabout 14 hours ago huggsook/dama-aibrain View all activity"
+    },
+    {
+      "title": "HumanConnect AI — Where Humans and AI Build the Future Together",
+      "url": "https://humanconnect.ai/models",
+      "snippet": "HumanConnect AI is your trusted destination for AI tools built for humans and curated GenAI intelligence — articles, guides, and resources for builders."
+    },
+    {
+      "title": "HumanConnect AI — Where Humans and AI Build the Future Together",
+      "url": "https://humanconnect.ai/",
+      "snippet": "A comprehensive guide to the Model Context Protocol — an open standard for connecting AI assistants to tools and data sources. Learn how to set up MCP servers, create resources, and enable your AI to interact with external systems."
+    },
+    {
+      "title": "Humanoid dataset and benchmarks · SOTA2 Research",
+      "url": "https://www.sota2.com/research/dataset/humanoid",
+      "snippet": "Explore Humanoid research tasks, AI benchmark leaderboards, and connected papers on SOTA2 Research."
+    }
+  ]
+}

@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "Hiten1896/reinforce-CartPole-v1",
+  "slug": "hiten1896-reinforce-cartpole-v1",
+  "author": "Hiten1896",
+  "url": "https://huggingface.co/Hiten1896/reinforce-CartPole-v1",
+  "created_at": "2026-08-29T16:44:38.000Z",
+  "updated_at": "2026-08-29T16:44:47.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "reinforcement-learning",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "CartPole-v1",
+    "reinforce",
+    "reinforcement-learning",
+    "custom-implementation",
+    "deep-rl-class",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 3657,
+  "storage_human": "3657 B",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "a1024053774/Reinforce-CartPole-v1 · Hugging Face",
+      "url": "https://huggingface.co/a1024053774/Reinforce-CartPole-v1",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "MathieuGALINIER/Reinforce-CartPole-v1 · Hugging Face",
+      "url": "https://huggingface.co/MathieuGALINIER/Reinforce-CartPole-v1",
+      "snippet": "MathieuGALINIER / Reinforce-CartPole-v1 like 0 Reinforcement Learning CartPole-v1 reinforce custom-implementation deep-rl-class Eval Results (legacy) Model card FilesFiles and versions xet Community Copy to bucket new Reinforce Agent playing CartPole-v1"
+    },
+    {
+      "title": "Recent AI model releases — benchr",
+      "url": "https://benchr.org/recent-releases",
+      "snippet": "Major AI model releases since early 2026, in reverse chronological order. Sourced directly from official provider announcements and release notes."
+    },
+    {
+      "title": "REINFORCE on CartPole-v1 - aegean.ai",
+      "url": "https://aegean.ai/aiml-common/lectures/reinforcement-learning/policy-based-algorithms/reinforce/reinforce-cartpole/reinforce-cartpole",
+      "snippet": "Runnable policy-gradient agent trained on CartPole-v1 with live Weights & Biases tracking and a learning-curve plot."
+    },
+    {
+      "title": "How to Solve CartPole-v1 in OpenAI Gym: Your First Step into ...",
+      "url": "https://aigreeks.com/solve-cartpole-v1-in-open-gym-reinforcement-learning/",
+      "snippet": "Learn how to solve CartPole-v1 in OpenAI Gym with this easy guide! Master reinforcement learning, code a Q-Learning agent, and balance the pole like a pro."
+    }
+  ]
+}

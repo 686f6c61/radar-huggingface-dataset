@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "tonghuiwang123/so100-smolvla-new60-ft-s2",
+  "slug": "tonghuiwang123-so100-smolvla-new60-ft-s2",
+  "author": "tonghuiwang123",
+  "url": "https://huggingface.co/tonghuiwang123/so100-smolvla-new60-ft-s2",
+  "created_at": "2026-08-29T18:06:19.000Z",
+  "updated_at": "2026-08-29T18:13:35.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "robotics",
+    "so100",
+    "so-arm100",
+    "smolvla",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 450046176,
+  "parameters_human": "450.0M",
+  "storage_bytes": 15414128576,
+  "storage_human": "15.4 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "tonghuiwang123/so100-smolvla-new60-ft · Hugging Face",
+      "url": "https://huggingface.co/tonghuiwang123/so100-smolvla-new60-ft",
+      "snippet": "tonghuiwang123 / so100-smolvla-new60-ft like 0 Robotics LeRobot Safetensors so100 so-arm100 smolvla Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "tonghuiwang123/so100-smolvla-s1000 · Hugging Face",
+      "url": "https://huggingface.co/tonghuiwang123/so100-smolvla-s1000",
+      "snippet": "so100-smolvla-s1000 LeRobot policy for SO-ARM100 / SO100, task: Grab the white cube to the white cup Trained on tonghuiwang123/test10 (2 cameras @1280x720, 30fps)."
+    },
+    {
+      "title": "SmolVLA: An Open-Source Vision-Language-Action Model for Modern Robotics",
+      "url": "https://smolvla.net/index_en",
+      "snippet": "SmolVLA A compact, efficient, and powerful vision-language-action model for modern robotics. 🚀 Meet SmolVLA SmolVLA is a groundbreaking Vision-Language-Action (VLA) model with only 450 million parameters, developed by Hugging Face. It&#x27;s carefully designed for cost-effective deployment on consumer-grade hardware, making advanced robotics technology accessible to more developers and ..."
+    },
+    {
+      "title": "SmolVLA: A Vision-Language-Action Model for Affordable and Efficient ...",
+      "url": "https://arxiv.org/abs/2506.01844",
+      "snippet": "Vision-language models (VLMs) pretrained on large-scale multimodal datasets encode rich visual and linguistic knowledge, making them a strong foundation for robotics. Rather than training robotic policies from scratch, recent approaches adapt VLMs into vision-language-action (VLA) models that enable natural language-driven perception and control. However, existing VLAs are typically massive ..."
+    },
+    {
+      "title": "GitHub - ajinkyagorad/smol-vla-lerobot-so100",
+      "url": "https://github.com/ajinkyagorad/smol-vla-lerobot-so100",
+      "snippet": "🤖 LeRobot SmolVLA Pipeline: LEGO Pick & Place with SO100 Robot This repository documents a complete workflow using the lerobot library to train and evaluate robot policies using imitation learning. The task involves picking a yellow LEGO cube and placing it inside a white LEGO frame using the SO100 follower robot."
+    }
+  ]
+}

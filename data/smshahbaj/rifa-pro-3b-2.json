@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "smshahbaj/RIFA-PRO-3B",
+  "slug": "smshahbaj-rifa-pro-3b-2",
+  "author": "smshahbaj",
+  "url": "https://huggingface.co/smshahbaj/RIFA-PRO-3B",
+  "created_at": "2026-08-29T18:35:06.000Z",
+  "updated_at": "2026-08-29T18:35:06.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "smshahbaj/Rifa-Nano-0.5B · Hugging Face",
+      "url": "https://huggingface.co/smshahbaj/Rifa-Nano-0.5B",
+      "snippet": "📖 Overview RIFA Nano is the smallest and fastest model in the RIFA series — a family of language models built to run efficiently across a wide range of hardware, from low-end mobile devices to modern GPUs. Nano is fine-tuned on top of Qwen2.5-.5B-Instruct using LoRA, combining a strong identity, multilingual fluency, and lightweight coding ability in a package small enough to run almost ..."
+    },
+    {
+      "title": "smshahbaj-official · GitHub",
+      "url": "https://github.com/smshahbaj-official/",
+      "snippet": "smshahbaj-official has one repository available. Follow their code on GitHub."
+    },
+    {
+      "title": "Model-3B - a flaviojoshua Collection - Hugging Face",
+      "url": "https://huggingface.co/collections/flaviojoshua/model-3b",
+      "snippet": "Unlock the magic of AI with handpicked models, awesome datasets, papers, and mind-blowing Spaces from flaviojoshua"
+    },
+    {
+      "title": "Meta&#x27;s Llama 3.2 goes small with 1B and 3B models.",
+      "url": "https://ollama.com/library/llama3.2:3b",
+      "snippet": "The Llama 3.2 instruction-tuned text only models are optimized for multilingual dialogue use cases, including agentic retrieval and summarization tasks. They outperform many of the available open source and closed chat models on common industry benchmarks."
+    },
+    {
+      "title": "Generátor 3D modelů s AI: Vytvořte 3D z textu a obrázků | Meshy",
+      "url": "https://www.meshy.ai/cs",
+      "snippet": "Generátor 3D modelů od Meshy s AI převádí text a obrázky do hotových 3D modelů během 20-30 sekund. Exportujte do formátů FBX, OBJ, GLB a STL."
+    }
+  ]
+}

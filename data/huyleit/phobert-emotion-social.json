@@ -1,0 +1,85 @@
+{
+  "schema": 1,
+  "id": "huyleit/phobert-emotion-social",
+  "slug": "huyleit-phobert-emotion-social",
+  "author": "huyleit",
+  "url": "https://huggingface.co/huyleit/phobert-emotion-social",
+  "created_at": "2026-08-29T14:57:14.000Z",
+  "updated_at": "2026-08-29T15:01:40.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": null,
+  "languages": [
+    "vi"
+  ],
+  "tags": [
+    "safetensors",
+    "roberta",
+    "phobert",
+    "emotion-recognition",
+    "vietnamese-nlp",
+    "social-media",
+    "text-classification",
+    "vi",
+    "license:mit",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 135003655,
+  "parameters_human": "135.0M",
+  "storage_bytes": 540038764,
+  "storage_human": "540 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "Emotion Classification",
+      "dataset": "Vietnamese Social Media Emotion Dataset",
+      "metric": null,
+      "value": 0.6377
+    },
+    {
+      "task": "Emotion Classification",
+      "dataset": "Vietnamese Social Media Emotion Dataset",
+      "metric": null,
+      "value": 0.6356
+    }
+  ],
+  "sources": [
+    {
+      "title": "visolex/emotion-phobert-v1 · Hugging Face",
+      "url": "https://huggingface.co/visolex/emotion-phobert-v1",
+      "snippet": "phobert-v1: Emotion Recognition for Vietnamese Text This model is a fine-tuned version of vinai/phobert-base on the VSMEC dataset for emotion recognition in Vietnamese text. Model Details Base Model: vinai/phobert-base Description: PhoBERT v1 - Vietnamese BERT Dataset: VSMEC (Vietnamese Social Media Emotion Corpus) Fine-tuning Framework: HuggingFace Transformers Task: Emotion Classification (7 ..."
+    },
+    {
+      "title": "Emotion Recognition - a visolex Collection - Hugging Face",
+      "url": "https://huggingface.co/collections/visolex/emotion-recognition-6853c6c4f3647be7587d6b1d",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GitHub - VinAIResearch/PhoBERT: PhoBERT: Pre-trained language models ...",
+      "url": "https://github.com/VinAIResearch/PhoBERT",
+      "snippet": "PhoBERT: Pre-trained language models for Vietnamese Pre-trained PhoBERT models are the state-of-the-art language models for Vietnamese (Pho, i.e. \"Phở\", is a popular food in Vietnam): Two PhoBERT versions of \"base\" and \"large\" are the first public large-scale monolingual language models pre-trained for Vietnamese."
+    },
+    {
+      "title": "VED_PhoBERT: Enhancing Vietnamese Sentiment Analysis with Emoji ...",
+      "url": "https://link.springer.com/chapter/10.1007/978-3-032-00972-2_35",
+      "snippet": "During preprocessing, emojis are replaced with corresponding descriptions to preserve the original emotional intent of the author. Furthermore, our method leverages PhoBERT, a state-of-the-art pre-trained model for Vietnamese text processing."
+    },
+    {
+      "title": "Emotion Recognition System to Suggest and Respond to Vietnamese Using ...",
+      "url": "https://ieeexplore.ieee.org/abstract/document/10364420",
+      "snippet": "The article proposes an emotion recognition system to suggest and automatically respond in conversations to increase user experience and give immediate feedback. We propose to build an emotion recognition system including six types of emotions (disgust, pleasure, sad, fear, anger, and others) using the PhoBERT model. Besides, we use the dataset built in the article [1] to compare and ..."
+    }
+  ]
+}

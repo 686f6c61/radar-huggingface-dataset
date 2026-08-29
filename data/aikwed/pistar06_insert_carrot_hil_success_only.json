@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "Aikwed/pistar06_insert_carrot_hil_success_only",
+  "slug": "aikwed-pistar06_insert_carrot_hil_success_only",
+  "author": "Aikwed",
+  "url": "https://huggingface.co/Aikwed/pistar06_insert_carrot_hil_success_only",
+  "created_at": "2026-08-29T17:17:12.000Z",
+  "updated_at": "2026-08-29T17:17:59.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "pistar06",
+    "robotics",
+    "dataset:Aikwed/insert_carrot_into_the_hole_hil_success_only",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1147607163,
+  "parameters_human": "1.15B",
+  "storage_bytes": 2298481260,
+  "storage_human": "2.3 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Aikwed/pistar06_insert_carrot_into_the_hole_acp_r1 · Hugging Face",
+      "url": "https://huggingface.co/Aikwed/pistar06_insert_carrot_into_the_hole_acp_r1",
+      "snippet": "Pi0.5 ACP Policy — Insert Carrot into the Hole This repository contains a Pi0.5 action policy fine-tuned for the task \"insert carrot into the hole\" with the Advantage-Conditioned Policy (ACP) stage of the MINT-SJTU/Evo-RL pipeline. Despite pistar06 appearing in the repository name, this is not a Pi 0.6 value model."
+    },
+    {
+      "title": "ChatGPT: Chat, Work, Create & Code with AI",
+      "url": "https://chatgpt.com/",
+      "snippet": "Use ChatGPT to answer questions, write, create images, complete work, and code—all in one place. Get started for free or download the app."
+    },
+    {
+      "title": "GitHub - 0xRazorLeaf/pistar: PiStar: A closed-loop robot learning ...",
+      "url": "https://github.com/0xRazorLeaf/pistar",
+      "snippet": "PiStar Data Closed Loop PiStar is not a one-time training pipeline. In general, you first train an initial policy with demo data, then use the policy to generate new data through rollout, and then merge the demo and rollout data. The VLM value model learns the value function according to value_label, rewrites adv_ind for the rollout data, and finally continues training PiStar with the merged ..."
+    },
+    {
+      "title": "PDF : a VLA That Learns From Experience",
+      "url": "https://www.pi.website/download/pistar06.pdf",
+      "snippet": "Fig. 1: RECAP enables training VLAs with reward feedback and interventions. Our system starts with a pre-trained VLA that incorporates advantage conditioning, allowing the model to learn effectively from real-world experience. For each task, we deploy the model and collect both autonomous rollouts and online human corrections. We then fine-tune the value function on this online data, improving ..."
+    },
+    {
+      "title": "A VLA that Learns from Experience",
+      "url": "https://www.pi.website/blog/pistar06",
+      "snippet": "A method for training our generalist policies with RL to improve success rate and throughput on real-world tasks."
+    }
+  ]
+}

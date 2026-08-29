@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "skscomp/mira2",
+  "slug": "skscomp-mira2",
+  "author": "skscomp",
+  "url": "https://huggingface.co/skscomp/mira2",
+  "created_at": "2026-08-29T14:31:16.000Z",
+  "updated_at": "2026-08-29T14:32:47.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 106352264,
+  "storage_human": "106 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - sanjaybasu/mira: MIRA: Medical Inhibitory Reasoning ...",
+      "url": "https://github.com/sanjaybasu/mira",
+      "snippet": "MIRA-2: Medical Inhibitory Reasoning Architecture A medical foundation model with structural hallucination prevention via constrained ontology decoding, sequential POMDP reasoning, and multi-agent adversarial verification."
+    },
+    {
+      "title": "mira2 - SeaArt AI Model",
+      "url": "https://www.seaart.ai/models/detail/d1qjojde878c73e8tuv0",
+      "snippet": "Explore mira2 model on SeaArt AI. Transform your idea into professional-quality AI-generated images and videos with our free, easy-to-use platform."
+    },
+    {
+      "title": "Mira 2.0 - SeaArt AI Model",
+      "url": "https://www.seaart.ai/models/detail/849e0486717864038fcafb1746ca285d",
+      "snippet": "Mira 2.0 is a highly detailed LoRA character model designed for SDXL 1.0 base. This model brings the confident, playful, and modern style of a virtual muse to life. Mira features signature midnight blue long hair, natural beauty, minimal black outfits, and an artistic flair."
+    },
+    {
+      "title": "Thinking Machines Lab",
+      "url": "https://thinkingmachines.ai/",
+      "snippet": "We plan to contribute to AI safety by (1) maintaining a high safety bar—preventing misuse of our released models while maximizing users&#x27; freedom, (2) sharing best practices and recipes for how to build safe AI systems with the industry, and (3) accelerating external research on alignment by sharing code, datasets, and model specs."
+    },
+    {
+      "title": "Mira2｜AI Art Model & LoRA | PixAI",
+      "url": "https://pixai.art/model/1668176677090059102",
+      "snippet": "Just created this stunning anime art with the amazing &#x27;Mira2&#x27; model on PixAI! Search for \"Mira2\" on PixAI - the free & professional AI anime art generator. Create your own masterpieces in seconds. Try it now!"
+    }
+  ]
+}

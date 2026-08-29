@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "Lambent/Goose-2.9B-think-grpo-lora",
+  "slug": "lambent-goose-2-9b-think-grpo-lora",
+  "author": "Lambent",
+  "url": "https://huggingface.co/Lambent/Goose-2.9B-think-grpo-lora",
+  "created_at": "2026-08-28T16:03:39.000Z",
+  "updated_at": "2026-08-29T12:27:34.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "base_model:Lambent/RWKV7-2.9B-midtrain50-docs-lora",
+    "base_model:finetune:Lambent/RWKV7-2.9B-midtrain50-docs-lora",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 377537416,
+  "storage_human": "378 MB",
+  "base_model": "Lambent/RWKV7-2.9B-midtrain50-docs-lora, RWKV/RWKV7-2.9B-20260805",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "RWKV/RWKV7-Goose-World3-2.9B-HF · Hugging Face",
+      "url": "https://huggingface.co/RWKV/RWKV7-Goose-World3-2.9B-HF",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GitHub - aaif-goose/goose: an open source, extensible AI agent that ...",
+      "url": "https://github.com/aaif-goose/goose",
+      "snippet": "an open source, extensible AI agent that goes beyond code suggestions - install, execute, edit, and test with any LLM - aaif-goose/goose"
+    },
+    {
+      "title": "CivArchive (CivitAI Archive) - AI Model Archive",
+      "url": "https://civarchive.com/",
+      "snippet": "Browse and discover AI models from CivitAI, TensorArt, and SeaArt. Community-driven archive preserving access to AI resources."
+    },
+    {
+      "title": "Latest AI Model Releases — August 2026",
+      "url": "https://aireleasetracker.com/latest",
+      "snippet": "The newest AI model releases as of August 2026. Most recent: GLM-5.3-Flash by Z.ai on Aug 26 2026. Track every new frontier model from OpenAI, Anthropic, Google DeepMind, Meta, SpaceXAI, DeepSeek, Mistral, and Moonshot AI — updated continuously."
+    },
+    {
+      "title": "GitHub - knlmagic/DeepGoose: Custom Goose AI agent with DeepSeek ...",
+      "url": "https://github.com/knlmagic/DeepGoose",
+      "snippet": "Custom Goose AI agent with DeepSeek integration - Enhanced with DeepSeek V3 and R1 models for advanced reasoning and planning - knlmagic/DeepGoose"
+    }
+  ]
+}

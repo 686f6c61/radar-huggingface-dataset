@@ -1,0 +1,84 @@
+{
+  "schema": 1,
+  "id": "Anbeeld/Qwen3.5-27B-DFlash-GGUF",
+  "slug": "anbeeld-qwen3-5-27b-dflash-gguf",
+  "author": "Anbeeld",
+  "url": "https://huggingface.co/Anbeeld/Qwen3.5-27B-DFlash-GGUF",
+  "created_at": "2026-08-29T17:56:45.000Z",
+  "updated_at": "2026-08-29T17:56:48.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "feature-extraction",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3",
+    "feature-extraction",
+    "dflash",
+    "speculative-decoding",
+    "speculative-decoding-draft",
+    "block-diffusion",
+    "draft-model",
+    "diffusion-language-model",
+    "efficiency",
+    "qwen",
+    "qwen3.5",
+    "sglang",
+    "text-generation",
+    "custom_code",
+    "arxiv:2602.06036",
+    "base_model:Qwen/Qwen3.5-27B",
+    "base_model:finetune:Qwen/Qwen3.5-27B",
+    "license:apache-2.0",
+    "text-generation-inference",
+    "region:us",
+    "base_model:z-lab/Qwen3.5-27B-DFlash",
+    "base_model:finetune:z-lab/Qwen3.5-27B-DFlash",
+    "endpoints_compatible"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 338153,
+  "storage_human": "338153 B",
+  "base_model": "z-lab/Qwen3.5-27B-DFlash",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "z-lab/Qwen3.5-27B-DFlash · Hugging Face",
+      "url": "https://huggingface.co/z-lab/Qwen3.5-27B-DFlash",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "unsloth/Qwen3.8-27B-GGUF · Hugging Face",
+      "url": "https://huggingface.co/unsloth/Qwen3.8-27B-GGUF",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "qwen3.5:27b - ollama.com",
+      "url": "https://ollama.com/library/qwen3.5:27b",
+      "snippet": "Qwen3.5 features the following enhancement: Unified Vision-Language Foundation: Early fusion training on multimodal tokens achieves cross-generational parity with Qwen3 and outperforms Qwen3-VL models across reasoning, coding, agents, and visual understanding benchmarks."
+    },
+    {
+      "title": "Qwen 3.5 27B Dense & 35B-A3B MoE Complete Guide",
+      "url": "https://www.oflight.co.jp/en/columns/qwen35-27b-35b-dflash-local-deployment-guide-2026",
+      "snippet": "Qwen 3.5 27B Dense and Qwen 3.5-35B-A3B MoE are the flagship models of the Qwen 3.5 series, released by Alibaba&#x27;s Qwen team in late 2025. Both are licensed under Apache 2.0, allowing unrestricted commercial use. The 27B Dense model activates all 27 billion parameters during inference, delivering consistently high-quality output for translation, storytelling, and complex reasoning. The 35B-A3B ..."
+    },
+    {
+      "title": "Qwen3.5-27B - QwenCloud",
+      "url": "https://www.qwencloud.com/models/qwen3.5-27b",
+      "snippet": "The Qwen3.5 27B native vision-language Dense model incorporates a linear attention mechanism, delivering fast response times while balancing inference speed and performance. Its overall capabilities are comparable to those of the Qwen3.5-122B-A10B."
+    }
+  ]
+}

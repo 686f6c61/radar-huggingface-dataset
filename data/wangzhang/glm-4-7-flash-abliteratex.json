@@ -1,0 +1,80 @@
+{
+  "schema": 1,
+  "id": "wangzhang/GLM-4.7-Flash-abliteratex",
+  "slug": "wangzhang-glm-4-7-flash-abliteratex",
+  "author": "wangzhang",
+  "url": "https://huggingface.co/wangzhang/GLM-4.7-Flash-abliteratex",
+  "created_at": "2026-07-30T03:35:18.000Z",
+  "updated_at": "2026-08-29T17:05:54.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gguf",
+    "glm4_moe_lite",
+    "text-generation",
+    "glm",
+    "moe",
+    "abliterated",
+    "conversational",
+    "en",
+    "zh",
+    "dataset:wangzhang/abliterix-datasets",
+    "base_model:zai-org/GLM-4.7-Flash",
+    "base_model:quantized:zai-org/GLM-4.7-Flash",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 3,
+  "downloads_30d": 6595,
+  "trending_score": 0,
+  "parameters": 29943390976,
+  "parameters_human": "29.94B",
+  "storage_bytes": 94307203914,
+  "storage_human": "94.3 GB",
+  "base_model": "zai-org/GLM-4.7-Flash",
+  "formats": [
+    "gguf",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "wangzhang/GLM-4.7-Flash-abliteratex · Hugging Face",
+      "url": "https://huggingface.co/wangzhang/GLM-4.7-Flash-abliteratex",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "wangzhang/GLM-4.7-Flash-abliteratex at main - Hugging Face",
+      "url": "https://huggingface.co/wangzhang/GLM-4.7-Flash-abliteratex/tree/main",
+      "snippet": "Instructions to use wangzhang/GLM-4.7-Flash-abliteratex with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Libraries Transformers How to use wangzhang/GLM-4.7-Flash-abliteratex with Transformers:"
+    },
+    {
+      "title": "GLM-4.7-Flash-abliteratex API & Inference Endpoint | FriendliAI",
+      "url": "https://friendli.ai/models/wangzhang/GLM-4.7-Flash-abliteratex",
+      "snippet": "Deploy GLM-4.7-Flash-abliteratex with low-latency inference on FriendliAI. Get scalable API serving, high throughput, and production-grade reliability for AI agents."
+    },
+    {
+      "title": "GLM-4.7 - Overview - Z.AI DEVELOPER DOCUMENT",
+      "url": "https://docs.z.ai/guides/llm/glm-4.7",
+      "snippet": "Overview GLM-4.7 Series are Z.AI&#x27;s models, featuring upgrades in two key areas: enhanced programming capabilities and more stable multi-step reasoning/execution. It demonstrates significant improvements in executing complex agent tasks while delivering more natural conversational experiences and superior front-end aesthetics."
+    },
+    {
+      "title": "GLM-4.7-Flash: How To Run Locally - unsloth.ai",
+      "url": "https://unsloth.ai/docs/models/tutorials/glm-4.7-flash",
+      "snippet": "GLM-4.7-Flash is Z.ai&#x27;s new 30B MoE reasoning model built for local deployment, delivering best-in-class performance for coding, agentic workflows, and chat. It uses ~3.6B parameters, supports 200K context, and leads SWE-Bench, GPQA, and reasoning/chat benchmarks. GLM-4.7-Flash runs on 24GB RAM /VRAM/unified memory (32GB for full precision), and you can now fine-tune with Unsloth. To run GLM ..."
+    }
+  ]
+}

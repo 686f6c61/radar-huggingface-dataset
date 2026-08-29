@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "dkovalen/markone-ocr-weights",
+  "slug": "dkovalen-markone-ocr-weights",
+  "author": "dkovalen",
+  "url": "https://huggingface.co/dkovalen/markone-ocr-weights",
+  "created_at": "2026-08-29T13:23:19.000Z",
+  "updated_at": "2026-08-29T13:40:01.000Z",
+  "license": "agpl-3.0",
+  "license_family": "oss",
+  "pipeline_tag": "object-detection",
+  "library": null,
+  "languages": [
+    "uk"
+  ],
+  "tags": [
+    "safetensors",
+    "optical-character-recognition",
+    "handwriting-recognition",
+    "document-ai",
+    "object-detection",
+    "rtdetr",
+    "trocr",
+    "ukrainian",
+    "uk",
+    "dataset:UkrainianCatholicUniversity/rukopys",
+    "base_model:Kansallisarkisto/cyrillic-htr-model",
+    "base_model:finetune:Kansallisarkisto/cyrillic-htr-model",
+    "license:agpl-3.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 2760721479,
+  "storage_human": "2.8 GB",
+  "base_model": "Kansallisarkisto/cyrillic-htr-model",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Best Open-Weight OCR and Document AI Models 2026",
+      "url": "https://presenc.ai/research/best-open-weight-ocr-document-ai-models-2026",
+      "snippet": "Research Best Open-Weight OCR and Document AI Models 2026 Open-weight OCR and document AI leaderboard 2026: GOT-OCR2, Qwen2.5-VL OCR, ColPali, DocLayout-YOLO, Florence-2, Nougat, Marker. Benchmarks, latency, license, deployment patterns."
+    },
+    {
+      "title": "felflare/EasyOCR-weights · Hugging Face",
+      "url": "https://huggingface.co/felflare/EasyOCR-weights",
+      "snippet": "These Weights are from Gen 2 of EasyOCR weights Original weights can be found here - Jaided AI Model Hub Licensed under Jaided AI license terms, this is only a port of the weights onto Hugginface model repository for ease of access."
+    },
+    {
+      "title": "Dicklesworthstone/franken_ocr-weights at main - Hugging Face",
+      "url": "https://huggingface.co/Dicklesworthstone/franken_ocr-weights/tree/main",
+      "snippet": "Dicklesworthstone / franken_ocr-weights like 0 Follow Jeffrey Emanuel 1 Image-to-Text Rust franken_ocr ocr document-understanding quantized int4 cpu webassembly License:mit Model card FilesFiles and versions xet Community Copy to bucket new main franken_ocr-weights 12.6 GB Ctrl+K Ctrl+K 1 contributor History:23 commits eigenvalue"
+    },
+    {
+      "title": "How to use the Qwen 3.5 LLMs to OCR documents",
+      "url": "https://martinalderson.com/posts/how-to-use-qwen-3-5-to-ocr-documents/",
+      "snippet": "Using Qwen 3.5 open weights models to OCR scanned PDFs - locally on consumer hardware or via OpenRouter for pennies"
+    },
+    {
+      "title": "Linear Globe/Angle Control Valves - Mark One - Flowserve",
+      "url": "https://www.flowserve.com/products/products-catalog/valves/linear-control-valves/linear-globe-angle-control-valves/linear-globe-angle-control-valves-mark-one/",
+      "snippet": "The Valtek Mark One globe control valve offers superior performance in liquid and gaseous services, while also permitting easy, fast and inexpensive maintenance. The spring-cylinder actuated Mark One valve provides stiffness and maintains high positioning accuracy, repeatability, controlled high speed, and faithful response."
+    }
+  ]
+}

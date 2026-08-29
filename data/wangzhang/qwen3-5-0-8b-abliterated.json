@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "wangzhang/Qwen3.5-0.8B-abliterated",
+  "slug": "wangzhang-qwen3-5-0-8b-abliterated",
+  "author": "wangzhang",
+  "url": "https://huggingface.co/wangzhang/Qwen3.5-0.8B-abliterated",
+  "created_at": "2026-03-09T18:24:20.000Z",
+  "updated_at": "2026-08-29T17:04:40.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "qwen3_5",
+    "abliterix",
+    "uncensored",
+    "decensored",
+    "abliterated",
+    "text-generation",
+    "conversational",
+    "base_model:Qwen/Qwen3.5-0.8B",
+    "base_model:finetune:Qwen/Qwen3.5-0.8B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 5,
+  "downloads_30d": 41,
+  "trending_score": 0,
+  "parameters": 852985920,
+  "parameters_human": "853.0M",
+  "storage_bytes": 1726020038,
+  "storage_human": "1.7 GB",
+  "base_model": "Qwen/Qwen3.5-0.8B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "wangzhang/Qwen3.5-0.8B-abliterated · Hugging Face",
+      "url": "https://huggingface.co/wangzhang/Qwen3.5-0.8B-abliterated",
+      "snippet": "Qwen3.5-.8B-abliterated The most capable sub-1B unrestricted language model available today, created by abliterating Qwen/Qwen3.5-.8B using Prometheus. Why This Model? 0% effective refusal rate on real-world prompts Smallest footprint: Only 0.8B parameters, runs on any GPU, even CPU-only setups Minimal capability loss: KL divergence of just 0.022, general intelligence virtually untouched 100 ..."
+    },
+    {
+      "title": "Qwen3.5-abliterated - a huihui-ai Collection - Hugging Face",
+      "url": "https://huggingface.co/collections/huihui-ai/qwen35-abliterated",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "huihui_ai/qwen3.5-abliterated",
+      "url": "https://ollama.com/huihui_ai/qwen3.5-abliterated",
+      "snippet": "vision tools thinking 0.8b 2b 4b 9b 27b 35b 122b CLI cURL Python JavaScript ollama run huihui_ai/qwen3.5-abliterated"
+    },
+    {
+      "title": "qwen3.5:0.8b - ollama.com",
+      "url": "https://ollama.com/library/qwen3.5:0.8b",
+      "snippet": "Qwen3.5 features the following enhancement: Unified Vision-Language Foundation: Early fusion training on multimodal tokens achieves cross-generational parity with Qwen3 and outperforms Qwen3-VL models across reasoning, coding, agents, and visual understanding benchmarks."
+    },
+    {
+      "title": "Qwen3.5-0.8B - Qualcomm AI Hub",
+      "url": "https://aihub.qualcomm.com/compute/models/qwen3_5_0_8b",
+      "snippet": "Qwen3.5-0.8B Ultra‑compact 0.8B parameter model from the Qwen3.5 series for edge deployment. Qwen3.5 is the latest multilingual language model series from Alibaba Cloud with improved reasoning and instruction‑following capabilities over Qwen3."
+    }
+  ]
+}

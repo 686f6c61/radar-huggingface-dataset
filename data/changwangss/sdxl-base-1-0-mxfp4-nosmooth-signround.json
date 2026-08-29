@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "changwangss/sdxl-base-1.0-mxfp4-nosmooth-signround",
+  "slug": "changwangss-sdxl-base-1-0-mxfp4-nosmooth-signround",
+  "author": "changwangss",
+  "url": "https://huggingface.co/changwangss/sdxl-base-1.0-mxfp4-nosmooth-signround",
+  "created_at": "2026-08-29T14:02:17.000Z",
+  "updated_at": "2026-08-29T14:03:46.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-to-image",
+  "library": "diffusers",
+  "languages": [],
+  "tags": [
+    "diffusers",
+    "safetensors",
+    "endpoints_compatible",
+    "diffusers:StableDiffusionXLPipeline",
+    "8-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1768858884,
+  "parameters_human": "1.77B",
+  "storage_bytes": 4361882054,
+  "storage_human": "4.4 GB",
+  "base_model": null,
+  "formats": [
+    "diffusers",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "changwangss/sdxl-base-1.0-mxfp4-nosmooth-rtn · Hugging Face",
+      "url": "https://huggingface.co/changwangss/sdxl-base-1.0-mxfp4-nosmooth-rtn",
+      "snippet": "Instructions to use changwangss/sdxl-base-1.-mxfp4-nosmooth-rtn with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "stabilityai/stable-diffusion-xl-base-1.0 · Hugging Face",
+      "url": "https://huggingface.co/stabilityai/stable-diffusion-xl-base-1.0",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GitHub - andrewcchoi/stabilityai-stable-diffusion-xl-base-1.0",
+      "url": "https://github.com/andrewcchoi/stabilityai-stable-diffusion-xl-base-1.0",
+      "snippet": "The chart above evaluates user preference for SDXL (with and without refinement) over SDXL 0.9 and Stable Diffusion 1.5 and 2.1. The SDXL base model performs significantly better than the previous variants, and the model combined with the refinement module achieves the best overall performance."
+    },
+    {
+      "title": "aime-labs/stable_diffusion_xl - GitHub",
+      "url": "https://github.com/aime-labs/stable_diffusion_xl",
+      "snippet": "SDXL-0.9: The weights of SDXL-0.9 are available and subject to a research license. If you would like to access these models for your research, please apply using one of the following links: SDXL-base-.9 model, and SDXL-refiner-.9."
+    },
+    {
+      "title": "sdxl-base · Models",
+      "url": "https://www.modelscope.cn/models/NexaAIDev/sdxl-base/summary",
+      "snippet": "Stable-Diffusion-XL-Base-1. How to run Visit sdk.nexa.ai/model Model Description Stable Diffusion XL Base 1.0 (SDXL 1.0) is a foundation text-to-image model released by Stability AI. It is the flagship successor to Stable Diffusion 2.1, designed for photorealism, artistic flexibility, and high-resolution generation. SDXL 1.0 is a latent diffusion model trained on a broad dataset of images and ..."
+    }
+  ]
+}

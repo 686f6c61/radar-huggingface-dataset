@@ -1,0 +1,83 @@
+{
+  "schema": 1,
+  "id": "0xzknw/Ling-3.0-tiny-Heretic-NX-PRIME-GGUF",
+  "slug": "0xzknw-ling-3-0-tiny-heretic-nx-prime-gguf",
+  "author": "0xzknw",
+  "url": "https://huggingface.co/0xzknw/Ling-3.0-tiny-Heretic-NX-PRIME-GGUF",
+  "created_at": "2026-08-29T17:24:11.000Z",
+  "updated_at": "2026-08-29T17:26:53.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "gguf",
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "tags": [
+    "gguf",
+    "ling3",
+    "bailingmoe3",
+    "moe",
+    "q8_0",
+    "abliterated",
+    "uncensored",
+    "model-editing",
+    "heretic-nx",
+    "prime",
+    "lm-studio",
+    "text-generation",
+    "en",
+    "zh",
+    "base_model:inclusionAI/Ling-3.0-tiny",
+    "base_model:quantized:inclusionAI/Ling-3.0-tiny",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us",
+    "imatrix",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 7893392800,
+  "parameters_human": "7.89B",
+  "storage_bytes": 8410681592,
+  "storage_human": "8.4 GB",
+  "base_model": "inclusionAI/Ling-3.0-tiny",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "mradermacher/Ling-3.0-tiny-heretic-GGUF · Hugging Face",
+      "url": "https://huggingface.co/mradermacher/Ling-3.0-tiny-heretic-GGUF",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Ling-3.0-tiny-heretic-GGUF - Hugging Face",
+      "url": "https://huggingface.co/nfivez/Ling-3.0-tiny-heretic-GGUF/blob/main/Ling-3.0-tiny-heretic-custom.gguf",
+      "snippet": "Instructions to use nfivez/Ling-3.-tiny-heretic-GGUF with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Notebooks Google Colab Kaggle Local AppsSettings llama.cpp How to use nfivez/Ling-3.-tiny-heretic-GGUF with llama.cpp: Install (macOS, Linux)"
+    },
+    {
+      "title": "Ling 3.0 Tiny download | SourceForge.net",
+      "url": "https://sourceforge.net/projects/ling-3-0-tiny/",
+      "snippet": "Download Ling 3.0 Tiny for free. Lightweight MoE model for local reasoning, coding, and AI agents. Ling-3.0-tiny is inclusionAI&#x27;s lightweight hybrid reasoning Mixture-of-Experts model, designed to provide capable reasoning and agentic performance at low inference cost. It contains 7.9B total parameters while activating only 1.3B per token, using a hybrid architecture that alternates Kimi ..."
+    },
+    {
+      "title": "Ling-3.0-tiny · LLM Releases",
+      "url": "https://www.llm-releases.com/models/ling-3-0-tiny",
+      "snippet": "The smallest member of Ant Group inclusionAI&#x27;s Ling 3.0 family, open-weighted on Hugging Face on Aug 6 2026 under the MIT license — distinct from the (API-only at launch) Ling-3.0-flash. A sparse Mixture-of-Experts model with 7.9B total parameters and only ~1.3B active per token: 128 routed experts with 8 routed plus 1 shared expert active per token, using the same 3:1 alternating stack of ..."
+    },
+    {
+      "title": "Ling",
+      "url": "https://developer.ant-ling.com/en/docs/models/ling/",
+      "snippet": "Ling-3.0-tiny Ling-3.0-tiny is a lightweight hybrid reasoning model in the Ling series designed for edge deployment scenarios, with 7.9B total parameters and only 1.3B activated parameters."
+    }
+  ]
+}

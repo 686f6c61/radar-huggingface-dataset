@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "Mark-ZJTang/alam_plus_pi_metaworld_mt50",
+  "slug": "mark-zjtang-alam_plus_pi_metaworld_mt50",
+  "author": "Mark-ZJTang",
+  "url": "https://huggingface.co/Mark-ZJTang/alam_plus_pi_metaworld_mt50",
+  "created_at": "2026-08-26T14:22:18.000Z",
+  "updated_at": "2026-08-29T12:32:20.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "robotics",
+  "library": "jax",
+  "languages": [],
+  "tags": [
+    "jax",
+    "robotics",
+    "metaworld",
+    "pi0",
+    "alam",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 12075798125,
+  "storage_human": "12.1 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - Farama-Foundation/Metaworld: Collections of robotics ...",
+      "url": "https://github.com/Farama-Foundation/Metaworld",
+      "snippet": "Collections of robotics environments geared towards benchmarking multi-task and meta reinforcement learning - Farama-Foundation/Metaworld"
+    },
+    {
+      "title": "GitHub Pages - Meta-World",
+      "url": "https://meta-world.github.io/",
+      "snippet": "Meta-Learning 45 (ML45) ML45 is a meta-learning mode with 45 train environments and 5 test environments. Multi-Task 50 (MT50) Finally, MT50 evaluates the ability to efficiently learn all 50 of the above manipulation environments."
+    },
+    {
+      "title": "GitHub - MA-ENV/metaworld: An open source robotics benchmark for meta ...",
+      "url": "https://github.com/MA-ENV/metaworld",
+      "snippet": "An open source robotics benchmark for meta- and multi-task reinforcement learning - MA-ENV/metaworld"
+    },
+    {
+      "title": "The Farama Foundation - Metaworld Documentation",
+      "url": "https://metaworld.farama.org/",
+      "snippet": "Collections of robotics environments geared towards benchmarking multi-task and meta reinforcement learning"
+    },
+    {
+      "title": "Meta-World · Hugging Face",
+      "url": "https://huggingface.co/docs/lerobot/metaworld",
+      "snippet": "Meta-World is an open-source simulation benchmark for multi-task and meta reinforcement learning in continuous-control robotic manipulation. It bundles 50 diverse manipulation tasks using everyday objects and a common tabletop Sawyer arm, providing a standardized playground to test whether algorithms can learn many different tasks and generalize quickly to new ones."
+    }
+  ]
+}

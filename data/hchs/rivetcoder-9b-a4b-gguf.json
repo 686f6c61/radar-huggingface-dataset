@@ -1,0 +1,80 @@
+{
+  "schema": 1,
+  "id": "HCHs/RivetCoder-9B-A4B-GGUF",
+  "slug": "hchs-rivetcoder-9b-a4b-gguf",
+  "author": "HCHs",
+  "url": "https://huggingface.co/HCHs/RivetCoder-9B-A4B-GGUF",
+  "created_at": "2026-08-28T03:49:51.000Z",
+  "updated_at": "2026-08-29T16:10:01.000Z",
+  "license": "lfm-open-license-v1.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "gguf",
+  "languages": [
+    "en",
+    "ko"
+  ],
+  "tags": [
+    "gguf",
+    "llama.cpp",
+    "custom-architecture",
+    "mixture-of-experts",
+    "coding",
+    "code-generation",
+    "q8_0",
+    "q4_k_m",
+    "cuda",
+    "text-generation",
+    "en",
+    "ko",
+    "base_model:HCHs/RivetCoder-9B-A4B",
+    "base_model:quantized:HCHs/RivetCoder-9B-A4B",
+    "license:other",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 1,
+  "downloads_30d": 67,
+  "trending_score": 0,
+  "parameters": 8738041372,
+  "parameters_human": "8.74B",
+  "storage_bytes": 15722875938,
+  "storage_human": "15.7 GB",
+  "base_model": "HCHs/RivetCoder-9B-A4B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "HCHs/RivetCoder-9B-A4B-GGUF · Hugging Face",
+      "url": "https://huggingface.co/HCHs/RivetCoder-9B-A4B-GGUF",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "HCHs/RivetCoder-9B-A4B · Hugging Face",
+      "url": "https://huggingface.co/HCHs/RivetCoder-9B-A4B",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "RivetCoder 9B A4B by HCHs — VRAM 17.2GB, 128K context | LLM Explorer",
+      "url": "https://llm-explorer.com/model/HCHs%2FRivetCoder-9B-A4B,5uQDL9o7TiDsA7PXdyzR3O",
+      "snippet": "RivetCoder 9B A4B is an open-source 9b LLM by HCHs. VRAM 17.2GB, 128K context. Compare benchmarks, capabilities, and deployment details on LLM Explorer."
+    },
+    {
+      "title": "GGUF Model Discovery - Browse & Download AI Models",
+      "url": "https://local-ai-zone.github.io/",
+      "snippet": "Discover and download GGUF format AI models. Browse and direct download thousands of quantized AI models with detailed information, download counts, and direct links."
+    },
+    {
+      "title": "Open models by OpenAI | OpenAI",
+      "url": "https://openai.com/open-models/",
+      "snippet": "Advanced open-weight reasoning models to customize for any use case and run anywhere."
+    }
+  ]
+}

@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "aaronwzl/clip-vit-base-patch32-coco-retrieval",
+  "slug": "aaronwzl-clip-vit-base-patch32-coco-retrieval",
+  "author": "aaronwzl",
+  "url": "https://huggingface.co/aaronwzl/clip-vit-base-patch32-coco-retrieval",
+  "created_at": "2026-08-29T15:49:29.000Z",
+  "updated_at": "2026-08-29T15:49:36.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "zero-shot-image-classification",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "clip",
+    "image-text-retrieval",
+    "contrastive-learning",
+    "multishap",
+    "zero-shot-image-classification",
+    "arxiv:2508.00576",
+    "base_model:openai/clip-vit-base-patch32",
+    "base_model:finetune:openai/clip-vit-base-patch32",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 151277312,
+  "parameters_human": "151.3M",
+  "storage_bytes": 605156676,
+  "storage_human": "605 MB",
+  "base_model": "openai/clip-vit-base-patch32",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "openai/clip-vit-base-patch32 · Hugging Face",
+      "url": "https://huggingface.co/openai/clip-vit-base-patch32",
+      "snippet": "Model Details The CLIP model was developed by researchers at OpenAI to learn about what contributes to robustness in computer vision tasks. The model was also developed to test the ability of models to generalize to arbitrary image classification tasks in a zero-shot manner."
+    },
+    {
+      "title": "keras/clip_vit_base_patch32 · Hugging Face",
+      "url": "https://huggingface.co/keras/clip_vit_base_patch32",
+      "snippet": "Model Overview Model Summary This model is a CLIP (Contrastive Language-Image Pre-training) neural network. CLIP revolutionizes image understanding by learning visual concepts from natural language descriptions found online. It&#x27;s been trained on a massive dataset of image-text pairs, allowing it to excel at tasks like zero-shot image classification, image search based on text queries, and ..."
+    },
+    {
+      "title": "adapters/clip_vit_base_patch32 at main · synapse-ir/adapters",
+      "url": "https://github.com/synapse-ir/adapters/tree/main/clip_vit_base_patch32",
+      "snippet": "This adapter enables multimodal zero-shot image classification using OpenAI&#x27;s CLIP model. CLIP (Contrastive Language-Image Pre-Training) jointly embeds images and text into a shared latent space via contrastive learning. At inference time it ranks any set of natural-language candidate labels against an image — no fine-tuning required. The underlying task is zero-shot image classification ..."
+    },
+    {
+      "title": "huggingface.co-openai-clip-vit-base-patch32/README.md at main ... - GitHub",
+      "url": "https://github.com/antoniodeepblue/huggingface.co-openai-clip-vit-base-patch32/blob/main/README.md",
+      "snippet": "Primary intended uses The primary intended users of these models are AI researchers. We primarily imagine the model will be used by researchers to better understand robustness, generalization, and other capabilities, biases, and constraints of computer vision models."
+    },
+    {
+      "title": "What is clip-vit-base-patch32 and why do developers use it?",
+      "url": "https://zilliz.com/ai-faq/what-is-clipvitbasepatch32-and-why-do-developers-use-it",
+      "snippet": "clip-vit-base-patch32 is a pretrained multimodal embedding model that converts images and text into vectors within the same numerical space, allowing them to be directly compared using similarity metrics. It is based on the CLIP architecture and uses a Vision Transformer (ViT) with a patch size of 32 for image encoding, alongside a transformer-based text encoder. Developers use it because it ..."
+    }
+  ]
+}

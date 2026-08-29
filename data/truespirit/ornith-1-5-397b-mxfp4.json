@@ -1,0 +1,77 @@
+{
+  "schema": 1,
+  "id": "truespirit/Ornith-1.5-397B-MXFP4",
+  "slug": "truespirit-ornith-1-5-397b-mxfp4",
+  "author": "truespirit",
+  "url": "https://huggingface.co/truespirit/Ornith-1.5-397B-MXFP4",
+  "created_at": "2026-08-29T15:38:18.000Z",
+  "updated_at": "2026-08-29T16:11:46.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_5_moe",
+    "image-text-to-text",
+    "quantized",
+    "mxfp4",
+    "amd-quark",
+    "moe",
+    "qwen3-5-moe",
+    "text-generation",
+    "conversational",
+    "base_model:ornith-ai/Ornith-1.5-397B",
+    "base_model:quantized:ornith-ai/Ornith-1.5-397B",
+    "license:mit",
+    "endpoints_compatible",
+    "8-bit",
+    "quark",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 210124400624,
+  "parameters_human": "210.12B",
+  "storage_bytes": 239116694489,
+  "storage_human": "239.1 GB",
+  "base_model": "ornith-ai/Ornith-1.5-397B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ornith-ai/Ornith-1.5-397B at main - Hugging Face",
+      "url": "https://huggingface.co/ornith-ai/Ornith-1.5-397B/tree/main",
+      "snippet": "Instructions to use ornith-ai/Ornith-1.5-397B with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Libraries Transformers How to use ornith-ai/Ornith-1.5-397B with Transformers:"
+    },
+    {
+      "title": "ornith-ai/Ornith-1.5-397B-NVFP4 · Hugging Face",
+      "url": "https://huggingface.co/ornith-ai/Ornith-1.5-397B-NVFP4",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Ornith-1.5: From Self-Scaffolding to Self-Improvement",
+      "url": "https://ornith.ai/ornith_1_5.html",
+      "snippet": "Ornith-1.5 extends the self-scaffolding framework introduced in Ornith-1.0 into a more complete self-improvement loop: the model proposes new tasks, generates task-specific scaffolds, and produces solution rollouts for reinforcement learning, continuously creating new learning experiences from which it can improve."
+    },
+    {
+      "title": "Ornith AI - Open-Source Agentic Coding Models",
+      "url": "https://ornith.online/",
+      "snippet": "Ornith AI guide for self-scaffolding open-source coding models: model sizes, VRAM, benchmarks, local setup, use cases, and agentic coding workflows."
+    },
+    {
+      "title": "Ornith-1.5-397B Benchmarks & Context (August 2026) - benchlm.ai",
+      "url": "https://benchlm.ai/models/ornith-1-5-397b",
+      "snippet": "These notes preserve the model, ranking, coverage, and family context behind the numbers. Ornith-1.5-397B ranks #22 of 226 on the public leaderboard with a score of 68.46/100. It does not yet have enough sourced coverage for a verified position. Ornith-1.5-397B is a open weight model with a 262K context window."
+    }
+  ]
+}

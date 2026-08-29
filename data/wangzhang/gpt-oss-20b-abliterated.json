@@ -1,0 +1,83 @@
+{
+  "schema": 1,
+  "id": "wangzhang/gpt-oss-20b-abliterated",
+  "slug": "wangzhang-gpt-oss-20b-abliterated",
+  "author": "wangzhang",
+  "url": "https://huggingface.co/wangzhang/gpt-oss-20b-abliterated",
+  "created_at": "2026-04-10T09:30:20.000Z",
+  "updated_at": "2026-08-29T17:05:01.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gpt_oss",
+    "text-generation",
+    "abliterated",
+    "uncensored",
+    "moe",
+    "gpt-oss",
+    "mxfp4",
+    "direct-steering",
+    "ega",
+    "moe-router-suppression",
+    "abliterix",
+    "conversational",
+    "en",
+    "zh",
+    "base_model:openai/gpt-oss-20b",
+    "base_model:finetune:openai/gpt-oss-20b",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 4,
+  "downloads_30d": 292,
+  "trending_score": 0,
+  "parameters": 20914757184,
+  "parameters_human": "20.91B",
+  "storage_bytes": 83686990997,
+  "storage_human": "83.7 GB",
+  "base_model": "openai/gpt-oss-20b",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "wangzhang/gpt-oss-20b-abliterated · Hugging Face",
+      "url": "https://huggingface.co/wangzhang/gpt-oss-20b-abliterated",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "README.md · wangzhang/gpt-oss-20b-abliterated-GGUF at main",
+      "url": "https://huggingface.co/wangzhang/gpt-oss-20b-abliterated-GGUF/blob/main/README.md",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "wangzhang/gpt-oss-20b-abliterated: Model synced from source: wangzhang ...",
+      "url": "https://dev.modelhub.org.cn/wangzhang/gpt-oss-20b-abliterated",
+      "snippet": "Intended use Authorised AI safety research, red-teaming evaluation, refusal-mechanism analysis, and study of how MoE expert specialisation encodes safety behaviours. Not for producing or distributing harmful content. The license of the base model (apache-2.0) applies; the user is responsible for compliance with all applicable laws and the OpenAI gpt-oss usage policy. Acknowledgments openai/gpt ..."
+    },
+    {
+      "title": "GPT Oss 20B Abliterated by wangzhang - llm-explorer.com",
+      "url": "https://llm-explorer.com/model/wangzhang%2Fgpt-oss-20b-abliterated,17uz9XZ8FrGEetJ9QCMHL9",
+      "snippet": "GPT Oss 20B Abliterated is an open-source language model by wangzhang. Features: 20b LLM, VRAM: 41.6GB, Context: 128K, License: apache-2.0, LLM Explorer Score: 0.27."
+    },
+    {
+      "title": "gpt-oss-20b Model | OpenAI API",
+      "url": "https://developers.openai.com/api/docs/models/gpt-oss-20b",
+      "snippet": "Medium-sized open-weight model for low latency Compare"
+    }
+  ]
+}

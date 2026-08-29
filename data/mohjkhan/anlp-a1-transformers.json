@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "mohjkhan/anlp-a1-transformers",
+  "slug": "mohjkhan-anlp-a1-transformers",
+  "author": "mohjkhan",
+  "url": "https://huggingface.co/mohjkhan/anlp-a1-transformers",
+  "created_at": "2026-08-29T18:57:44.000Z",
+  "updated_at": "2026-08-29T18:57:45.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "pytorch",
+  "languages": [],
+  "tags": [
+    "pytorch",
+    "transformer",
+    "encoder-decoder",
+    "from-scratch",
+    "anlp",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "yharith/anlp-a1-transformer-ablation · Hugging Face",
+      "url": "https://huggingface.co/yharith/anlp-a1-transformer-ablation",
+      "snippet": "It has 3.47M parameters against C1&#x27;s 12.49M, because a vocabulary-free model carries no large embedding or output-projection matrices and its local decoder is small (d=64, 2 layers) next to C1&#x27;s decoder (d=256, 4 layers)."
+    },
+    {
+      "title": "Arihant25/anlp-a1-transformer-ablations · Hugging Face",
+      "url": "https://huggingface.co/Arihant25/anlp-a1-transformer-ablations",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GitHub - FrenchKnuckles/ANLP_A1",
+      "url": "https://github.com/FrenchKnuckles/ANLP_A1",
+      "snippet": "This repository contains a PyTorch implementation of a Seq2Seq Transformer trained to decrypt a substitution cipher. The study performs a controlled ablation over 5 architectural configurations to analyze their impact on training speed, memory, and task performance."
+    },
+    {
+      "title": "Transformers in Machine Learning - GeeksforGeeks",
+      "url": "https://www.geeksforgeeks.org/machine-learning/getting-started-with-transformers/",
+      "snippet": "Transformer is a neural network architecture used for various machine learning tasks, especially in natural language processing and computer vision. It focuses on understanding relationships within data to process information more effectively."
+    },
+    {
+      "title": "Transformer (deep learning) - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Transformer_(deep_learning)",
+      "snippet": "The transformer model has been implemented in standard deep learning frameworks such as TensorFlow and PyTorch. Transformers is a library produced by Hugging Face that supplies transformer-based architectures and pretrained models."
+    }
+  ]
+}

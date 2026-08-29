@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "raees-areekan/qwen2.5-7b-malayalam",
+  "slug": "raees-areekan-qwen2-5-7b-malayalam",
+  "author": "raees-areekan",
+  "url": "https://huggingface.co/raees-areekan/qwen2.5-7b-malayalam",
+  "created_at": "2026-08-29T18:05:34.000Z",
+  "updated_at": "2026-08-29T18:09:05.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "ml",
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "ml",
+    "en",
+    "arxiv:1910.09700",
+    "base_model:Qwen/Qwen2.5-7B-Instruct",
+    "base_model:finetune:Qwen/Qwen2.5-7B-Instruct",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 92214772,
+  "storage_human": "92 MB",
+  "base_model": "Qwen/Qwen2.5-7B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "raees-areekan/Qwen2.5-instruct-Malayalam-Finetuned · Hugging Face",
+      "url": "https://huggingface.co/raees-areekan/Qwen2.5-instruct-Malayalam-Finetuned",
+      "snippet": "raees-areekan / Qwen2.5-instruct-Malayalam-Finetuned like 0 License:apache-2.0 Model card FilesFiles and versions xet Community Copy to bucket new"
+    },
+    {
+      "title": "Qwen2.5 - a Qwen Collection - Hugging Face",
+      "url": "https://huggingface.co/collections/Qwen/qwen25",
+      "snippet": "Qwen2.5 language models, including pretrained and instruction-tuned models of 7 sizes, including 0.5B, 1.5B, 3B, 7B, 14B, 32B, and 72B."
+    },
+    {
+      "title": "qwen2.5:7b/model - ollama.com",
+      "url": "https://ollama.com/library/qwen2.5:7b/blobs/2bada8a74506",
+      "snippet": "Qwen2.5 models are pretrained on Alibaba&#x27;s latest large-scale dataset, encompassing up to 18 trillion tokens. The model supports up to 128K tokens and has multilingual support."
+    },
+    {
+      "title": "Qwen2.5 7B — Quantization VRAM Guide | OpenSourcesAI",
+      "url": "https://opensourcesai.com/models/qwen2-5-7b/",
+      "snippet": "Qwen2.5 7B Alibaba Qwen · Qwen Qwen2.5 7B is Alibaba&#x27;s highly optimized 7B open-weight general assistant model with 128K context and an Apache 2.0 license. It stands out as the premier low-latency 7B model for 2026 local AI pipelines: trained on 18 trillion tokens with particular focus on code, mathematics, and structured output, it benchmarks consistently above similarly sized contemporaries ..."
+    },
+    {
+      "title": "Qwen2.5-7B: Private LLM for Ops AI & Custom Workflows",
+      "url": "https://llm.co/llms/qwen2-5-7b",
+      "snippet": "Qwen2.5-7B A 7B base model purpose-built for private deployment and fine-tuning in operational AI workflows—coding, math, structured data handling, and long-context tasks."
+    }
+  ]
+}

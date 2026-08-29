@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "Nadiia1990/MDove_KKK",
+  "slug": "nadiia1990-mdove_kkk",
+  "author": "Nadiia1990",
+  "url": "https://huggingface.co/Nadiia1990/MDove_KKK",
+  "created_at": "2026-08-29T11:10:45.000Z",
+  "updated_at": "2026-08-29T11:12:53.000Z",
+  "license": "unknown",
+  "license_family": "unknown",
+  "pipeline_tag": "text-to-image",
+  "library": "diffusers",
+  "languages": [],
+  "tags": [
+    "diffusers",
+    "text-to-image",
+    "lora",
+    "template:diffusion-lora",
+    "base_model:krea/Krea-2-Raw",
+    "base_model:adapter:krea/Krea-2-Raw",
+    "license:unknown",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 688583361,
+  "storage_human": "689 MB",
+  "base_model": "krea/Krea-2-Raw",
+  "formats": [
+    "diffusers"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "nadiia1990-mdove_zzz/README.md at main - GitHub",
+      "url": "https://github.com/Damacol/nadiia1990-mdove_zzz/blob/main/README.md",
+      "snippet": "Nadiia1990/MDove_ZZZ - Private, Uncensored AI for Real Creators and Devs {MODEL} setup for researchers, devs, and writers. No babysitting, no tracking, just powerful AI on your terms."
+    },
+    {
+      "title": "‎Google Gemini",
+      "url": "https://gemini.google.com/",
+      "snippet": "Get assistance with writing, planning, learning, and more from Google AI."
+    },
+    {
+      "title": "ChatGPT: Chat, Work, Create & Code with AI",
+      "url": "https://chatgpt.com/",
+      "snippet": "Use ChatGPT to answer questions, write, create images, complete work, and code—all in one place. Get started for free or download the app."
+    },
+    {
+      "title": "Introducing Nadia: AI Coaching for Everyone - Valence",
+      "url": "https://www.valence.co/blog/introducing-nadia",
+      "snippet": "Introducing Nadia For nine months, Valence has been hard at work trying to build what we think is the future of … what exactly? Of Leadership Development, definitely. Of manager support — that too. Of learning at the point of need, in the flow of work? Check and check. In closed beta with some of our largest customers, our team of product, engineering, data wizards and people scientists ..."
+    },
+    {
+      "title": "Damacol/nadiia1990-mdove_zzz - GitHub",
+      "url": "https://github.com/Damacol/nadiia1990-mdove_zzz",
+      "snippet": "Nadiia1990/MDove_ZZZ - Private, Uncensored AI for Real Creators and Devs {MODEL} setup for researchers, devs, and writers. No babysitting, no tracking, just powerful AI on your terms."
+    }
+  ]
+}

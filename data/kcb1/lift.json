@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "KCB1/Lift",
+  "slug": "kcb1-lift",
+  "author": "KCB1",
+  "url": "https://huggingface.co/KCB1/Lift",
+  "created_at": "2026-07-23T11:48:25.000Z",
+  "updated_at": "2026-08-29T16:34:19.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 905688944640,
+  "storage_human": "905.7 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "KCB1/Lift · Hugging Face",
+      "url": "https://huggingface.co/KCB1/Lift",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "KCB1 (KCB) - Hugging Face",
+      "url": "https://huggingface.co/KCB1/models",
+      "snippet": "User profile of KCB on Hugging Face Recent Activity updated a model1 day ago KCB1/SGF published a model1 day ago KCB1/SGF updated a model3 days ago KCB1/Lift View all activity"
+    },
+    {
+      "title": "LLM Leaderboard & AI Model Benchmarks — August 2026",
+      "url": "https://benchlm.ai/",
+      "snippet": "LLM Leaderboard & AI Model Benchmarks — August 2026 Compare frontier AI models by quality, cost, and context. 105 Supported and 123 Estimated models among 406 tracked LLMs — 406 benchmarks, real pricing, and runtime data in one place."
+    },
+    {
+      "title": "CivArchive (CivitAI Archive) - AI Model Archive",
+      "url": "https://civitaiarchive.com/",
+      "snippet": "Browse and discover AI models from CivitAI, TensorArt, and SeaArt. Community-driven archive preserving access to AI resources."
+    },
+    {
+      "title": "GitHub - bigai-ai/LIFT-humanoid: ICLR 2026: Towards Bridging the Gap ...",
+      "url": "https://github.com/bigai-ai/LIFT-humanoid",
+      "snippet": "ICLR 2026: Towards Bridging the Gap between Large-Scale Pretraining and Efficient Finetuning for Humanoid Controls - bigai-ai/LIFT-humanoid"
+    }
+  ]
+}

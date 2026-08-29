@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "nomikos-project/syriac-htr-calamari",
+  "slug": "nomikos-project-syriac-htr-calamari",
+  "author": "nomikos-project",
+  "url": "https://huggingface.co/nomikos-project/syriac-htr-calamari",
+  "created_at": "2026-07-09T10:49:38.000Z",
+  "updated_at": "2026-08-29T15:30:09.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "calamari",
+  "languages": [
+    "syr"
+  ],
+  "tags": [
+    "calamari",
+    "onnx",
+    "handwritten-text-recognition",
+    "ocr",
+    "syr",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 12200844,
+  "storage_human": "12 MB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Nomikos | AI-assisted manuscript annotation and HTR",
+      "url": "https://www.nomikos.app/",
+      "snippet": "Nomikos is the annotation platform behind the NOMOS project: a hosted editor, open HTR models on Hugging Face, and an optional command-line inference agent you install with uv tool install nomikos-inference. Pair it once with nomikos pair, then leave nomikos run working through the queue. New models arrive as a new release of the package."
+    },
+    {
+      "title": "kkkamur07/syriac-htr-calamari · Hugging Face",
+      "url": "https://huggingface.co/kkkamur07/syriac-htr-calamari",
+      "snippet": "Syriac HTR (calamari) Handwritten text recognition checkpoint for syriac manuscripts, published from the nomicous Hub staging tree."
+    },
+    {
+      "title": "GitHub - kkkamur07/greekOCR: AI-Assisted annotation, transcription ...",
+      "url": "https://github.com/kkkamur07/greekOCR",
+      "snippet": "AI-Assisted annotation, transcription & text-extraction of Greek, Coptic, Armenian & Syriac Languages. - GitHub - kkkamur07/greekOCR: AI-Assisted annotation, transcription & text-extraction of Greek, Coptic, Armenian & Syriac Languages."
+    },
+    {
+      "title": "GitHub - Calamari-OCR/calamari_models_experimental · GitHub",
+      "url": "https://github.com/Calamari-OCR/calamari_models_experimental",
+      "snippet": "calamari_models_experimental Intermediate results of experiments dealing with the training of mixed models for historical printed and handwritten material which seem to be somewhat promising/useful."
+    },
+    {
+      "title": "Home - Nomikos",
+      "url": "https://nomikos.ai/",
+      "snippet": "Nomikos AI turns contracts and negotiations into actionable business intelligence, helping legal and business teams manage deals, spot risks, speed decisions, and uncover hidden revenue Structured intelligence that enables business teams to progress contracts without waiting on manual review. Nomikos enforces..."
+    }
+  ]
+}

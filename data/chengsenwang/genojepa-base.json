@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "ChengsenWang/GenoJEPA-Base",
+  "slug": "chengsenwang-genojepa-base",
+  "author": "ChengsenWang",
+  "url": "https://huggingface.co/ChengsenWang/GenoJEPA-Base",
+  "created_at": "2026-03-22T04:30:24.000Z",
+  "updated_at": "2026-08-29T14:27:53.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "feature-extraction",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "GenoJEPA",
+    "genomics",
+    "dna",
+    "representation-learning",
+    "feature-extraction",
+    "custom_code",
+    "dataset:ChengsenWang/GenoJEPA-Pretraining",
+    "dataset:ChengsenWang/GenoJEPA-Evaluation",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 51570819,
+  "parameters_human": "51.6M",
+  "storage_bytes": 206292772,
+  "storage_human": "206 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GeneJEPA: A Predictive World Model of the Transcriptome",
+      "url": "https://github.com/BiostateAI/GeneJEPA",
+      "snippet": "GeneJEPA is a self-supervised foundation model for single-cell RNA-seq that learns to predict representations of masked gene sets from visible context (Joint-Embedding Predictive Architecture, JEPA). Instead of reconstructing noisy counts, the model infers latent structure over cellular state using: Perceiver-style encoder over unordered gene sets (fixed compute vs. variable input) Continuous ..."
+    },
+    {
+      "title": "From nucleotides to semantics: genomic representation learning via ...",
+      "url": "https://www.biorxiv.org/content/10.64898/2026.04.02.716255v1",
+      "snippet": "Here we present GenoJEPA, a genomic representation learning framework based on joint-embedding predictive architecture. GenoJEPA combines continuous patching with semantic alignment, shifting the optimization from local base reconstruction to semantic alignment in latent space."
+    },
+    {
+      "title": "PDF GeneJepa: A Predictive World Model of the Transcriptome - bioRxiv",
+      "url": "https://www.biorxiv.org/content/10.1101/2025.10.14.682378v1.full.pdf",
+      "snippet": "Abstract We introduce GeneJepa, a self-supervised foundation model that learns a predictive world model of single-cell transcriptomes. Based on the Joint-Embedding Predictive Architecture, GeneJepa predicts latent representations of masked gene sets from visible context, a shift away from reconstructing noisy expression values and toward world-model style inference over cellular state. To ..."
+    },
+    {
+      "title": "GenoJEPA: DNA & Gene model | bio.rodeo",
+      "url": "https://bio.rodeo/models/geno-jepa",
+      "snippet": "Genomic foundation model that learns DNA representations by predicting masked regions in latent space rather than reconstructing raw nucleotides. by Beijing University of Posts and Telecommunications"
+    },
+    {
+      "title": "Biology+AI Daily on X: \"From Nucleotides to Semantics: Genomic ...",
+      "url": "https://x.com/BiologyAIDaily/status/2041520605208694859",
+      "snippet": "From Nucleotides to Semantics: Genomic Representation Learning via Joint-Embedding Predictive Architecture 1 GenoJEPA reframes genomic pretraining away from nucleotide-level reconstruction (MLM/NTP) and toward latent-space semantic alignment, motivated by the idea that DNA lacks explicit \"word boundaries\" and contains substantial evolutionary noise. 2 The core pretraining objective is a ..."
+    }
+  ]
+}

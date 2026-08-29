@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "nurida-senior/my-comfyui-models",
+  "slug": "nurida-senior-my-comfyui-models",
+  "author": "nurida-senior",
+  "url": "https://huggingface.co/nurida-senior/my-comfyui-models",
+  "created_at": "2026-07-27T02:37:46.000Z",
+  "updated_at": "2026-08-29T13:54:50.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "not-for-all-audiences",
+    "endpoints_compatible",
+    "region:us",
+    "imatrix",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 21,
+  "trending_score": 0,
+  "parameters": 7615616512,
+  "parameters_human": "7.62B",
+  "storage_bytes": 802681600912,
+  "storage_human": "802.7 GB",
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "nurida-senior/my-comfyui-models · Hugging Face",
+      "url": "https://huggingface.co/nurida-senior/my-comfyui-models",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "nurida-senior/my-comfyui-models at main - Hugging Face",
+      "url": "https://huggingface.co/nurida-senior/my-comfyui-models/tree/main",
+      "snippet": "nurida-senior / my-comfyui-models like 0 Not-For-All-Audiences Model card FilesFiles and versions xet Community Copy to bucket new"
+    },
+    {
+      "title": "Models - Comfy",
+      "url": "https://comfy.org/models/",
+      "snippet": "Run the world&#x27;s leading AI models in ComfyUI. Browse every supported model with community workflow templates ready to run."
+    },
+    {
+      "title": "comfyui AI Models | Civitai",
+      "url": "https://civitai.com/tag/comfyui",
+      "snippet": "Browse 2,246 Stable Diffusion & Flux models, LoRAs, checkpoints, and embeddings tagged with comfyui."
+    },
+    {
+      "title": "Models - ComfyUI",
+      "url": "https://docs.comfy.org/basic-concepts/models",
+      "snippet": "Supported models in ComfyUI Built-in / first-party coverage is intentionally limited but grows over time as ComfyUI and the open-source ecosystem evolve. When a model gains first-class support, you will usually see a new entry in the workflow template library that shows the expected graph and model pairing."
+    }
+  ]
+}

@@ -1,0 +1,85 @@
+{
+  "schema": 1,
+  "id": "burningfeet/backup-2026-08-29-Tiel-Coder-.aka.ornith15.-35B-A3B-Genesis-Hermes-GGUF",
+  "slug": "burningfeet-backup-2026-08-29-tiel-coder--aka-ornith15--35b-a3b-genesis-hermes-gguf",
+  "author": "burningfeet",
+  "url": "https://huggingface.co/burningfeet/backup-2026-08-29-Tiel-Coder-.aka.ornith15.-35B-A3B-Genesis-Hermes-GGUF",
+  "created_at": "2026-08-29T12:16:19.000Z",
+  "updated_at": "2026-08-29T12:19:03.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "gguf",
+  "languages": [
+    "en",
+    "zh",
+    "multilingual"
+  ],
+  "tags": [
+    "gguf",
+    "llama.cpp",
+    "qwen35moe",
+    "moe",
+    "imatrix",
+    "unsloth-dynamic",
+    "agentic-coding",
+    "token-efficient",
+    "vision",
+    "genesis",
+    "hermes",
+    "image-text-to-text",
+    "en",
+    "zh",
+    "multilingual",
+    "dataset:NousResearch/hermes-function-calling-v1",
+    "base_model:ornith-ai/Ornith-1.5-35B-A3B",
+    "base_model:quantized:ornith-ai/Ornith-1.5-35B-A3B",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 34660610688,
+  "parameters_human": "34.66B",
+  "storage_bytes": 55869095040,
+  "storage_human": "55.9 GB",
+  "base_model": "ornith-ai/Ornith-1.5-35B-A3B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": true,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "2026-08-26-.-backup-.-Ornith1.5-35B-A3B-Genesis-Hermes-GGUF",
+      "url": "https://huggingface.co/burningfeet/2026-08-26-.-backup-.-Ornith1.5-35B-A3B-Genesis-Hermes-GGUF",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "burningfeet/2026-08-26-.-backup-.-Ornith1.5-35B-A3B-Genesis-Hermes-GGUF ...",
+      "url": "https://huggingface.co/burningfeet/2026-08-26-.-backup-.-Ornith1.5-35B-A3B-Genesis-Hermes-GGUF/tree/main",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Claude, Codex, and Hermes installed unowned code inside corporate ...",
+      "url": "https://arstechnica.com/security/2026/08/claude-codex-and-hermes-installed-unowned-code-inside-corporate-networks/",
+      "snippet": "Claude, Codex, and Hermes installed unowned code inside corporate networks 227 install commands were found in corporate docs pointing at code nobody owns."
+    },
+    {
+      "title": "Ornith AI - Open-Source Agentic Coding Models",
+      "url": "https://ornith.online/",
+      "snippet": "Ornith AI guide for self-scaffolding open-source coding models: model sizes, VRAM, benchmarks, local setup, use cases, and agentic coding workflows."
+    },
+    {
+      "title": "GitHub - h00nigan/35b-moe-eval: Independent evaluation of 35B-A3B MoE ...",
+      "url": "https://github.com/h00nigan/35b-moe-eval",
+      "snippet": "A side-by-side test of Tiel-Coder-35B-A3B against two locally-tuned 35B-A3B MoE builds (an uncensored Ornith fine-tune and an imatrix-requantized Qwen3.6), run under identical conditions with identical prompts. This is a deployment-fit evaluation from a small fleet running these models as operator-driven tools, written to be useful to model authors and other deployers — especially anyone ..."
+    }
+  ]
+}

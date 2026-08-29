@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "shravanisurankar/fraudshield",
+  "slug": "shravanisurankar-fraudshield",
+  "author": "shravanisurankar",
+  "url": "https://huggingface.co/shravanisurankar/fraudshield",
+  "created_at": "2026-08-29T15:20:37.000Z",
+  "updated_at": "2026-08-29T15:21:10.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "tabular-classification",
+  "library": "xgboost",
+  "languages": [],
+  "tags": [
+    "xgboost",
+    "fraud-detection",
+    "finance",
+    "tabular-classification",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 291470,
+  "storage_human": "291470 B",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - VishvaNarkar/FraudShield-AI: An AI-powered tool to detect ...",
+      "url": "https://github.com/VishvaNarkar/FraudShield-AI",
+      "snippet": "An AI-powered tool to detect digital fraud, scams, and deepfakes across multiple channels including Text, Audio, and Video. Built for real-time prevention, alerts, and awareness against modern cyber scams. This project features a modern React SPA frontend styled with a premium light theme, backed by a robust FastAPI backend handling ML model inference and offline audio/video processing."
+    },
+    {
+      "title": "GitHub - 25A31A05KF/FraudShield-AI",
+      "url": "https://github.com/25A31A05KF/FraudShield-AI",
+      "snippet": "An Intelligent Fraud Awareness & Detection Web Platform Problem: India loses thousands of crores every year due to digital fraud — affecting students, elders, and first-time internet users the most. Solution: FraudShield-AI is a real-time, AI-powered web platform that helps users: Detect fraudulent messages Analyze suspicious transactions Understand why something is risky (Explainable AI ..."
+    },
+    {
+      "title": "FraudShield AI | AI Fraud Detection for Banks",
+      "url": "https://fraudshieldai.co/",
+      "snippet": "One platform for detection, scoring, and rechecking FraudShield AI combines rules, machine learning, transaction behavior analysis, and an optional LLM review assistant in one operational workflow."
+    },
+    {
+      "title": "FraudShield AI Engine — Documentation",
+      "url": "https://sulagnasasmal.github.io/fraudshield-docs/",
+      "snippet": "FraudShield AI Engine is an enterprise-grade, real-time fraud detection platform for financial institutions. It combines behavioral analytics, machine learning scoring models, and configurable rule-based decisioning to protect against payment fraud, account takeover, first-party fraud, and money mule activity across all transaction channels."
+    },
+    {
+      "title": "FraudShield AI — Intelligence Against Financial Crime",
+      "url": "https://fraudshield2-five.vercel.app/",
+      "snippet": "Intelligence Against Financial Crime. A 3-model fraud detection pipeline — supervised transaction scoring, unsupervised anomaly detection, and LSTM behavioural sequence analysis — combined into a single risk verdict."
+    }
+  ]
+}

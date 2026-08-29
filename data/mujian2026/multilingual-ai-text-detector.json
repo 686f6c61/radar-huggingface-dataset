@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "mujian2026/multilingual-ai-text-detector",
+  "slug": "mujian2026-multilingual-ai-text-detector",
+  "author": "mujian2026",
+  "url": "https://huggingface.co/mujian2026/multilingual-ai-text-detector",
+  "created_at": "2026-08-16T02:28:48.000Z",
+  "updated_at": "2026-08-29T12:30:54.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": "transformers.js",
+  "languages": [],
+  "tags": [
+    "transformers.js",
+    "onnx",
+    "text-classification",
+    "ai-text-detection",
+    "multilingual",
+    "browser-inference",
+    "en",
+    "zh",
+    "vi",
+    "ja",
+    "base_model:bibbbu/multilingual-ai-human-detector_xlm-roberta-base",
+    "base_model:quantized:bibbbu/multilingual-ai-human-detector_xlm-roberta-base",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1589083972,
+  "storage_human": "1.6 GB",
+  "base_model": "bibbbu/multilingual-ai-human-detector_xlm-roberta-base",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Worried About AI Detection? - Best AI Detector & Humanizer",
+      "url": "https://duckduckgo.com/y.js?ad_domain=undetectable.ai&ad_provider=bingv7aa&ad_type=txad&click_metadata=yWM2Mwt4wKAcjxar6Ie7PYFXLpdkNNHrkVa3aUQ0W9H04BVYD6NDw3OUv4w0nyUHCyIHj3LLnGq%2D7hmqcfO_wmy6phhLxKT0h43trYkscLJE0avKXj0uixrHAi8aBGRS7ZZ2ip3oN%2D_9k%2Dt3VKOYnwRL7zltvtw4TuZ0qf8Motg.ZQMeCG_l3SaO4DcpHTZQgw&rut=3471aad119c50feb883fd180a11512b93179748377e9688dcd476609d127d1f2&u3=https%3A%2F%2Fwww.bing.com%2Faclick%3Fld%3De8yJM5No5y95OaDQe_JZsc1jVUCUx6iuoLnDENEQ0RzN9oFEv0OvmlBWjgNpC4MjxyHDRC1luQwI38UnBfX_mbkTM1lDe3Q_0fLPVsnMgb33F0S%2D7AcsopYvuN2Ia4UTC8QJJvWzJZbck4JsBEeS11CzaxiosE8nLnHtgQC4nAKq5nB_Z_Ft1c4JnTu3kKcckScrKY8gCBnTIqiEEH1qsJEr9EbR4%26u%3DaHR0cHMlM2ElMmYlMmZ0cnkudW5kZXRlY3RhYmxlLmFpJTJmZGV0ZWN0LWh1bWFuaXplJTNmdXRtX3NvdXJjZSUzZGJpbmclMjZ1dG1fbWVkaXVtJTNkY3BjJTI2dXRtX2NhbXBhaWduJTNkc2VhcmNoJTI2aF9jYW1wYWlnbl9pZCUzZDU2OTQ2MzI4MCUyNmJuZ19pZCUzZDExODE5NzY4MjYxOTk0MzMlMjZoX2FkX2lkJTNkNzM4NzM3NTc5MzEwMjUlMjZ1dG1fc291cmNlJTNkbWljcm9zb2Z0JTI2dXRtX21lZGl1bSUzZGNwYyUyNnV0bV9jYW1wYWlnbiUzZEJfU2VhcmNoX1dXX0JyYW5kJTI2dXRtX2NvbnRlbnQlM2QlMjU1QkFNUExBJTI1NUQlMjUyMCUyNTVCRVhBVEFTJTI1NUQlMjZ1dG1fdGVybSUzZGFpJTI1MjB1bmRldGVjdGFibGUlMjUyMGh1bWFuaXplciUyNTIwbm8lMjUyMHdvcmQlMjUyMGxpbWl0JTI2bXNjbGtpZCUzZGEzNjllMDEwZjAzYTFjN2IwNTU0OGE4MjJiZDU5ODkx%26rlid%3Da369e010f03a1c7b05548a822bd59891&vqd=4-157009568166587988897347785047227422501&iurl=%7B1%7DIG%3D84C445EB29034316A16A09C291CE0156%26CID%3D10CEDA8E07936345075CCD4A069D6259%26ID%3DDevEx%2C5037.1",
+      "snippet": "AI Detection Concern? Detect it first, humanize it, and submit with more confidence. Avoid AI flags. Make AI-written text sound natural with Undetectable AI. Try it for free."
+    },
+    {
+      "title": "mujian2026/multilingual-ai-text-detector · Hugging Face",
+      "url": "https://huggingface.co/mujian2026/multilingual-ai-text-detector",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GitHub - mujian2026/multilingual-ai-text-detector: Browser-ready ...",
+      "url": "https://github.com/mujian2026/multilingual-ai-text-detector/tree/main/",
+      "snippet": "A reproducible conversion and quantization project for running multilingual AI-text screening in the browser with Transformers.js and onnxruntime-web. This repository packages an existing XLM-R text classifier for browser deployment. It does not claim to train a new detector or to prove who authored ..."
+    },
+    {
+      "title": "mujian2026 (mujian2026) - Hugging Face",
+      "url": "https://huggingface.co/mujian2026",
+      "snippet": "AI & ML interests ... Recent Activity updated a model about 7 hours ago ... published a model about 7 hours ago"
+    },
+    {
+      "title": "multilingual-ai-text-detector/README.md at main · mujian2026 ... - GitHub",
+      "url": "https://github.com/mujian2026/multilingual-ai-text-detector/blob/main/README.md",
+      "snippet": "Multilingual AI Text Detector for Browser Inference 中文说明 · Live demo · Model weights A reproducible conversion and quantization project for running multilingual AI-text screening in the browser with Transformers.js and onnxruntime-web. This repository packages an existing XLM-R text classifier for browser deployment."
+    }
+  ]
+}

@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "jayseanbrambila/minimax-h3-video",
+  "slug": "jayseanbrambila-minimax-h3-video",
+  "author": "jayseanbrambila",
+  "url": "https://huggingface.co/jayseanbrambila/minimax-h3-video",
+  "created_at": "2026-08-29T17:33:53.000Z",
+  "updated_at": "2026-08-29T17:38:04.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "image-to-video",
+  "library": "minimax-h3",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "minimax-h3",
+    "ai-video",
+    "video-generation",
+    "text-to-video",
+    "image-to-video",
+    "prompt-engineering",
+    "video-prompts",
+    "en",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - ai-models-lab/minimax-h3: MiniMax-H3-Hub, ComfyUI Workflows ...",
+      "url": "https://github.com/ai-models-lab/minimax-h3",
+      "snippet": "Official Hub for MiniMax H3 (minimaxh3.run) — An all-in-one open-source resource platform for MiniMax H3 (Hailuo AI 3.0), the state-of-the-art native multi-modal 2K AI video generation model with synchronized 3D stereo audio."
+    },
+    {
+      "title": "jayseanbrambila (brambila) - Hugging Face",
+      "url": "https://huggingface.co/jayseanbrambila",
+      "snippet": "MiniMax H3 AI Video Generator | MiniMax3.org 🎬 MiniMax H3 AI video generator planner by MiniMax3.org jayseanbrambila 5 days ago Running"
+    },
+    {
+      "title": "MiniMax-H3-AI-Video-Generation - GitHub",
+      "url": "https://github.com/MiniMax-H3-AI-Video-Generation",
+      "snippet": "MiniMax H3 is a next-generation multimodal AI platform capable of understanding text, images, audio, and video within a unified workflow. It enables creators to generate cinematic videos, edit existing media, and produce high-quality visual content using natural language instructions and reference materials."
+    },
+    {
+      "title": "MiniMax H3 Multimodal AI Video Model | Hailuo AI",
+      "url": "https://hailuoai.video/tools/minimax-h3",
+      "snippet": "Create 5-15s videos with MiniMax H3 from text, images, video, and audio. Generate and precisely edit visuals, sound, and motion in Hailuo AI."
+    },
+    {
+      "title": "MiniMax H3 AI Video Generator: Create Videos with Sound",
+      "url": "https://minimaxh3.ai/",
+      "snippet": "Why Creators Choose MiniMax H3 Most AI video tools do one trick. MiniMax H3 is an open, general-purpose multimodal model that understands your whole creative intent — text, images, sound, and video together — and turns it into finished, watchable content. It moves beyond single-task generation toward one model that can create, reference, and edit in the same conversation."
+    }
+  ]
+}

@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "Beltah/pesaLoop",
+  "slug": "beltah-pesaloop",
+  "author": "Beltah",
+  "url": "https://huggingface.co/Beltah/pesaLoop",
+  "created_at": "2026-08-29T17:46:59.000Z",
+  "updated_at": "2026-08-29T17:49:01.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Best AI Models in August 2026: Updated Rankings and Comparisons",
+      "url": "https://felloai.com/best-ai-models/",
+      "snippet": "The best AI models ranked by use case: writing, coding, image generation, accuracy and more. Updated monthly with benchmarks and pricing for August 2026."
+    },
+    {
+      "title": "GitHub - Beltahmd/BELTAH-AI",
+      "url": "https://github.com/Beltahmd/BELTAH-AI",
+      "snippet": "Contribute to Beltahmd/BELTAH-AI development by creating an account on GitHub."
+    },
+    {
+      "title": "Belt | Agentic Desktop Apps",
+      "url": "https://belt.ai/",
+      "snippet": "Belt builds agentic desktop apps that gather context, prepare updates, and surface the truth behind your work — Noodle for deals and projects, Ensefa for product context."
+    },
+    {
+      "title": "A Multidevice Whatsapp User Bot created by Beltah tech team ... - YouTube",
+      "url": "https://www.youtube.com/watch?v=6stAY6rY18M",
+      "snippet": "A Multidevice Whatsapp User Bot created by Beltah tech team, here are main commands - YouTube"
+    },
+    {
+      "title": "AI Model Downloads - 498 Model Examples - AI Models",
+      "url": "https://aimodels.org/ai-models/",
+      "snippet": "Directory of free Open Source AI and machine learning model downloads! Our collection features the latest models in speech to text and image generation."
+    }
+  ]
+}

@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "bane117/TinyLlama-1.1B-Chat-v1.0-abliterated",
+  "slug": "bane117-tinyllama-1-1b-chat-v1-0-abliterated",
+  "author": "bane117",
+  "url": "https://huggingface.co/bane117/TinyLlama-1.1B-Chat-v1.0-abliterated",
+  "created_at": "2026-08-29T15:51:11.000Z",
+  "updated_at": "2026-08-29T16:20:41.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "llama",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1100048384,
+  "parameters_human": "1.10B",
+  "storage_bytes": 2200119656,
+  "storage_human": "2.2 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "TinyLlama-1.1B-Chat-v1.0 - Hugging Face",
+      "url": "https://huggingface.co/TinyLlama/TinyLlama-1.1B-Chat-v1.0",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GitHub - nilesh-infer/TinyLlama-1.1B-Chat-v1.0: A chat model fine-tuned ...",
+      "url": "https://github.com/nilesh-infer/TinyLlama-1.1B-Chat-v1.0",
+      "snippet": "TinyLlama-1.1B-Chat-v1. The TinyLlama project aims to train a compact 1.1B model on 3 trillion tokens. It shares architecture and tokenizer with Llama 2, making it compatible with many existing projects. With only 1.1B parameters, it&#x27;s suitable for applications with limited computational and memory resources."
+    },
+    {
+      "title": "schmuell/TinyLlama-1.1B-Chat-v1.0 · Hugging Face",
+      "url": "https://huggingface.co/schmuell/TinyLlama-1.1B-Chat-v1.0",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "tinyllama-1-1b-chat-v1-0/README.md at main - GitHub",
+      "url": "https://github.com/inferless/tinyllama-1-1b-chat-v1-0/blob/main/README.md",
+      "snippet": "TinyLlama-1.1B-Chat-v1. The TinyLlama project aims to train a compact 1.1B model on 3 trillion tokens. It shares architecture and tokenizer with Llama 2, making it compatible with many existing projects. With only 1.1B parameters, it&#x27;s suitable for applications with limited computational and memory resources."
+    },
+    {
+      "title": "Getting Started with TinyLlama-1.1B-Chat-v1.0",
+      "url": "https://www.secondstate.io/articles/tinyllama-1.1b-chat-v1.0/",
+      "snippet": "The command tool automatically downloads and installs the WasmEdge runtime, the model files, and the portable Wasm apps for inference. The TinyLlama team recently launched TinyLlama-1.1B-Chat version 1.0. Compared with the previous versions, TinyLlama-1.1B-Chat-v1. model pretrains a 1.1B Llama model on 3 trillion tokens."
+    }
+  ]
+}

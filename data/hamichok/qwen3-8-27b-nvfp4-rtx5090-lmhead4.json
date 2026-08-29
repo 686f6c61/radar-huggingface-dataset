@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "hamichok/Qwen3.8-27B-NVFP4-RTX5090-LMHead4",
+  "slug": "hamichok-qwen3-8-27b-nvfp4-rtx5090-lmhead4",
+  "author": "hamichok",
+  "url": "https://huggingface.co/hamichok/Qwen3.8-27B-NVFP4-RTX5090-LMHead4",
+  "created_at": "2026-08-29T17:17:44.000Z",
+  "updated_at": "2026-08-29T18:06:22.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "qwen3_5",
+    "qwen3.8",
+    "nvfp4",
+    "quantized",
+    "speculative-decoding",
+    "dflash",
+    "rtx5090",
+    "base_model:Qwen/Qwen3.8-27B",
+    "base_model:quantized:Qwen/Qwen3.8-27B",
+    "license:apache-2.0",
+    "8-bit",
+    "modelopt",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 14982247152,
+  "parameters_human": "14.98B",
+  "storage_bytes": 18778322268,
+  "storage_human": "18.8 GB",
+  "base_model": "Qwen/Qwen3.8-27B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "gittensor-model-hub/Qwen3.8-27B-NVFP4-RTX5090 · Hugging Face",
+      "url": "https://huggingface.co/gittensor-model-hub/Qwen3.8-27B-NVFP4-RTX5090",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Qwen3.8 - How to Run Locally | Unsloth Documentation",
+      "url": "https://unsloth.ai/docs/models/qwen3.8",
+      "snippet": "Qwen3.8 is Qwen&#x27;s new model family, featuring Qwen3.8- 27B, Qwen3.8- 2.4T-A95B and Qwen3.8- Max. Qwen3.8-27B has vision and reasoning capabilities, a 256K context window, and runs locally on 17GB RAM/VRAM setups. Qwen3.8 excels at agentic coding, vision and chat tasks, and can now run via Unsloth GGUFs, NVFP4 and Unsloth Desktop."
+    },
+    {
+      "title": "bonnienleohe/Qwen3.8-27B-NVFP4-RTX5090 · Hugging Face",
+      "url": "https://huggingface.co/bonnienleohe/Qwen3.8-27B-NVFP4-RTX5090",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Qwen/Qwen3.8-27B | vLLM Recipes",
+      "url": "https://recipes.vllm.ai/Qwen/Qwen3.8-27B",
+      "snippet": "The official Qwen/Qwen3.8-27B-FP8 checkpoint serves directly on a 950PR — no offline re-quantization and no --quantization ascend. vLLM Ascend reads quant_method: fp8 and weight_block_size straight from the checkpoint, expands the weight_scale_inv tiles at load time and re-quantizes to MXFP8 on 950."
+    },
+    {
+      "title": "Qwen3.8-27B NVFP4 on RTX 5090 - GitHub",
+      "url": "https://github.com/n3xtgentechitalia/qwen38-27b-5090/blob/main/",
+      "snippet": "A tuned vLLM on CUDA 13 container serving Qwen3.8-27B in NVFP4 — the only format that uses Blackwell&#x27;s FP4 tensor cores — as an OpenAI-compatible endpoint. 130 tok/s single-stream, 791 tok/s aggregate at 16 concurrent requests, with 131k context and speculative decoding from the checkpoint&#x27;s own MTP head."
+    }
+  ]
+}

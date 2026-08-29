@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "SudharsanEzhumalai/slm-rl-colab",
+  "slug": "sudharsanezhumalai-slm-rl-colab",
+  "author": "SudharsanEzhumalai",
+  "url": "https://huggingface.co/SudharsanEzhumalai/slm-rl-colab",
+  "created_at": "2026-08-29T14:09:16.000Z",
+  "updated_at": "2026-08-29T14:09:19.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "lora",
+    "transformers",
+    "reinforcement-learning",
+    "atari",
+    "slm-rl",
+    "boxing",
+    "text-generation",
+    "base_model:LiquidAI/LFM2.5-1.2B-Instruct",
+    "base_model:adapter:LiquidAI/LFM2.5-1.2B-Instruct",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 22241248,
+  "storage_human": "22 MB",
+  "base_model": "LiquidAI/LFM2.5-1.2B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Chellappan/slm-rl-colab · Hugging Face",
+      "url": "https://huggingface.co/Chellappan/slm-rl-colab",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GitHub - CraftsMan-Labs/SLM-RL",
+      "url": "https://github.com/CraftsMan-Labs/SLM-RL",
+      "snippet": "SLM-RL A self-improving game gymnasium for small language models. Small language models learn to play games through reinforcement learning: the model plays games in text-native environments, every decision is collected into a reusable dataset, the model is automatically fine-tuned on its own experience, and the improved model re-enters play."
+    },
+    {
+      "title": "SLM-RL/README.md at main · CraftsMan-Labs/SLM-RL · GitHub",
+      "url": "https://github.com/CraftsMan-Labs/SLM-RL/blob/main/README.md",
+      "snippet": "SLM-RL A self-improving game gymnasium for small language models. Small language models learn to play games through reinforcement learning: the model plays games in text-native environments, every decision is collected into a reusable dataset, the model is automatically fine-tuned on its own experience, and the improved model re-enters play."
+    },
+    {
+      "title": "Google Colab",
+      "url": "https://colab.research.google.com/",
+      "snippet": "Learn how to bring the power of Colab straight to your terminal. Read the full announcement."
+    },
+    {
+      "title": "#airesearch #machinelearning #reinforcementlearning #scientificai #llms ...",
+      "url": "https://www.linkedin.com/posts/thomaslennon-_airesearch-machinelearning-reinforcementlearning-activity-7498309911550799872-e0wV",
+      "snippet": "A research team just published a breakdown of Faraday-27B, an AI agent trained to autonomously replicate machine learning and AI research papers. This is worth paying attention to. The pipeline is ..."
+    }
+  ]
+}

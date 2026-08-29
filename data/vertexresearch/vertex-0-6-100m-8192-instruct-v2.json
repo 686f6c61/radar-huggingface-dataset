@@ -1,0 +1,76 @@
+{
+  "schema": 1,
+  "id": "VertexResearch/Vertex-0.6-100M-8192-Instruct-v2",
+  "slug": "vertexresearch-vertex-0-6-100m-8192-instruct-v2",
+  "author": "VertexResearch",
+  "url": "https://huggingface.co/VertexResearch/Vertex-0.6-100M-8192-Instruct-v2",
+  "created_at": "2026-08-29T02:16:42.000Z",
+  "updated_at": "2026-08-29T15:28:02.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3",
+    "text-generation",
+    "instruct",
+    "chat",
+    "tool-calling",
+    "conversational",
+    "en",
+    "base_model:VertexResearch/Vertex-0.6-100M-8192-ctx-Base",
+    "base_model:finetune:VertexResearch/Vertex-0.6-100M-8192-ctx-Base",
+    "license:apache-2.0",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 96752192,
+  "parameters_human": "96.8M",
+  "storage_bytes": 387034217,
+  "storage_human": "387 MB",
+  "base_model": "VertexResearch/Vertex-0.6-100M-8192-ctx-Base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "VertexResearch/Vertex-0.6-100M-8192-Instruct · Hugging Face",
+      "url": "https://huggingface.co/VertexResearch/Vertex-0.6-100M-8192-Instruct",
+      "snippet": "Instruction-tuned chat model of the Vertex 0.6 family by Vertex Research. Built on the 8192-context base (10.01B pretrain tokens + three-stage rope ladder), then SFT&#x27;d on ~44.5K conversations: general instruct data, QA/tutoring, function/tool calling, and self-identity."
+    },
+    {
+      "title": "VertexResearch/Vertex-0.6-100M-8192-ctx-Base · Hugging Face",
+      "url": "https://huggingface.co/VertexResearch/Vertex-0.6-100M-8192-ctx-Base",
+      "snippet": "Base (text-completion) model of the Vertex 0.6 family by Vertex Research, pretrained from scratch on 10.01B tokens at 1024 context, then context-extended to 8192 via a three-stage rope ladder (2048: 350M tokens; 4096, theta 250K: 300M tokens; 8192, theta 1M: 285M tokens) on fresh Ultra-FineWeb."
+    },
+    {
+      "title": "Vertex 0.6 100M 8192 Instruct by VertexResearch",
+      "url": "https://llm-explorer.com/model/VertexResearch%2FVertex-0.6-100M-8192-Instruct,4ADuXMqQY5cB5iZzjPqBPu",
+      "snippet": "Vertex 0.6 100M 8192 Instruct is an open-source 100m LLM by VertexResearch. VRAM 0.4GB, 8K context. Compare benchmarks, capabilities, and deployment details on LLM Explorer."
+    },
+    {
+      "title": "Vertex-0.6-100M-8192-ctx-Base - friendli.ai",
+      "url": "https://friendli.ai/models/VertexResearch/Vertex-0.6-100M-8192-ctx-Base",
+      "snippet": "Run Vertex-.6-100M-8192-ctx-Base with FriendliAI inference. Base (text-completion) model of the Vertex 0.6 family by Vertex Research, pretrained from scratch…"
+    },
+    {
+      "title": "Google models | Gemini Enterprise Agent Platform | Google Cloud ...",
+      "url": "https://docs.cloud.google.com/gemini-enterprise-agent-platform/models/google-models",
+      "snippet": "Model Garden is a platform that helps you discover, test, customize, and deploy Google proprietary and select OSS models and assets. To explore the generative AI models and APIs that are available on Gemini Enterprise Agent Platform, go to Model Garden in the Google Cloud console."
+    }
+  ]
+}

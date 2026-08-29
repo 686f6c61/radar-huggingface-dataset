@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "sandpies/ComfyUI-Hand-Tie-Clips",
+  "slug": "sandpies-comfyui-hand-tie-clips",
+  "author": "sandpies",
+  "url": "https://huggingface.co/sandpies/ComfyUI-Hand-Tie-Clips",
+  "created_at": "2026-08-29T16:02:38.000Z",
+  "updated_at": "2026-08-29T16:18:11.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "comfyui AI Models | Civitai",
+      "url": "https://civitai.com/tag/comfyui",
+      "snippet": "comfyui Browse 2,253 Stable Diffusion & Flux models, LoRAs, checkpoints, and embeddings tagged with comfyui."
+    },
+    {
+      "title": "GitHub - Comfy-Org/ComfyUI: The most powerful and modular diffusion ...",
+      "url": "https://github.com/Comfy-Org/ComfyUI",
+      "snippet": "ComfyUI The most powerful and modular AI engine for content creation. ComfyUI is the AI creation engine for visual professionals who demand control over every model, every parameter, and every output. Its powerful and modular node graph interface empowers creatives to generate images, videos, 3D models, audio, and more..."
+    },
+    {
+      "title": "Models - ComfyUI",
+      "url": "https://docs.comfy.org/basic-concepts/models",
+      "snippet": "How model files fit into ComfyUI workflows: where they go, how to load them, and common fixes."
+    },
+    {
+      "title": "ComfyUI Models & Downloads - Checkpoints, LoRAs, VAE & Video Models",
+      "url": "https://comfyui-wiki.com/en/models",
+      "snippet": "Discover ComfyUI models supported by core nodes and custom nodes. Browse checkpoints, LoRAs, VAEs, text encoders, image and video models, or upload a workflow to find ..."
+    },
+    {
+      "title": "10xwithankit/ComfyUI-Models · Hugging Face",
+      "url": "https://huggingface.co/10xwithankit/ComfyUI-Models",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    }
+  ]
+}

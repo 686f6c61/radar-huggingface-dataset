@@ -1,0 +1,203 @@
+{
+  "schema": 1,
+  "id": "el1jah184/retriever-sparse",
+  "slug": "el1jah184-retriever-sparse",
+  "author": "el1jah184",
+  "url": "https://huggingface.co/el1jah184/retriever-sparse",
+  "created_at": "2026-08-29T18:56:06.000Z",
+  "updated_at": "2026-08-29T18:56:28.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "feature-extraction",
+  "library": "sentence-transformers",
+  "languages": [],
+  "tags": [
+    "sentence-transformers",
+    "safetensors",
+    "xlm-roberta",
+    "sparse-encoder",
+    "sparse",
+    "csr",
+    "generated_from_trainer",
+    "dataset_size:415",
+    "loss:CachedSpladeLoss",
+    "loss:SparseMultipleNegativesRankingLoss",
+    "loss:FlopsLoss",
+    "feature-extraction",
+    "arxiv:1908.10084",
+    "arxiv:2101.06983",
+    "arxiv:2205.04733",
+    "arxiv:1807.03748",
+    "arxiv:2004.05665",
+    "base_model:deepvk/USER-bge-m3",
+    "base_model:finetune:deepvk/USER-bge-m3",
+    "model-index",
+    "text-embeddings-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 359026688,
+  "parameters_human": "359.0M",
+  "storage_bytes": 1452982512,
+  "storage_human": "1.5 GB",
+  "base_model": "deepvk/USER-bge-m3",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "Sparse Information Retrieval",
+      "dataset": "irs evaluator",
+      "metric": "Dot Accuracy@1",
+      "value": 0.7142857142857143
+    },
+    {
+      "task": "Sparse Information Retrieval",
+      "dataset": "irs evaluator",
+      "metric": "Dot Accuracy@3",
+      "value": 0.8660714285714286
+    },
+    {
+      "task": "Sparse Information Retrieval",
+      "dataset": "irs evaluator",
+      "metric": "Dot Accuracy@5",
+      "value": 0.90625
+    },
+    {
+      "task": "Sparse Information Retrieval",
+      "dataset": "irs evaluator",
+      "metric": "Dot Accuracy@10",
+      "value": 0.9598214285714286
+    },
+    {
+      "task": "Sparse Information Retrieval",
+      "dataset": "irs evaluator",
+      "metric": "Dot Precision@1",
+      "value": 0.7142857142857143
+    },
+    {
+      "task": "Sparse Information Retrieval",
+      "dataset": "irs evaluator",
+      "metric": "Dot Precision@3",
+      "value": 0.28869047619047616
+    },
+    {
+      "task": "Sparse Information Retrieval",
+      "dataset": "irs evaluator",
+      "metric": "Dot Precision@5",
+      "value": 0.18125
+    },
+    {
+      "task": "Sparse Information Retrieval",
+      "dataset": "irs evaluator",
+      "metric": "Dot Precision@10",
+      "value": 0.09598214285714286
+    },
+    {
+      "task": "Sparse Information Retrieval",
+      "dataset": "irs evaluator",
+      "metric": "Dot Recall@1",
+      "value": 0.7142857142857143
+    },
+    {
+      "task": "Sparse Information Retrieval",
+      "dataset": "irs evaluator",
+      "metric": "Dot Recall@3",
+      "value": 0.8660714285714286
+    },
+    {
+      "task": "Sparse Information Retrieval",
+      "dataset": "irs evaluator",
+      "metric": "Dot Recall@5",
+      "value": 0.90625
+    },
+    {
+      "task": "Sparse Information Retrieval",
+      "dataset": "irs evaluator",
+      "metric": "Dot Recall@10",
+      "value": 0.9598214285714286
+    },
+    {
+      "task": "Sparse Information Retrieval",
+      "dataset": "irs evaluator",
+      "metric": "Dot Ndcg@10",
+      "value": 0.8382460415838161
+    },
+    {
+      "task": "Sparse Information Retrieval",
+      "dataset": "irs evaluator",
+      "metric": "Dot Mrr@10",
+      "value": 0.7991301729024943
+    },
+    {
+      "task": "Sparse Information Retrieval",
+      "dataset": "irs evaluator",
+      "metric": "Dot Map@20",
+      "value": 0.8010578436418427
+    },
+    {
+      "task": "Sparse Information Retrieval",
+      "dataset": "irs evaluator",
+      "metric": "Query Active Dims",
+      "value": 1024
+    },
+    {
+      "task": "Sparse Information Retrieval",
+      "dataset": "irs evaluator",
+      "metric": "Query Sparsity Ratio",
+      "value": 0.75
+    },
+    {
+      "task": "Sparse Information Retrieval",
+      "dataset": "irs evaluator",
+      "metric": "Corpus Active Dims",
+      "value": 1024
+    },
+    {
+      "task": "Sparse Information Retrieval",
+      "dataset": "irs evaluator",
+      "metric": "Corpus Sparsity Ratio",
+      "value": 0.75
+    },
+    {
+      "task": "Sparse Information Retrieval",
+      "dataset": "irs evaluator",
+      "metric": "Avg Flops",
+      "value": 508.5455322265625
+    }
+  ],
+  "sources": [
+    {
+      "title": "arXiv:2110.06918v2 [cs.CL] 12 Mar 2022",
+      "url": "https://arxiv.org/pdf/2110.06918v2",
+      "snippet": "The SPAR model: Figure 1: SPAR augments a dense retriever with a dense Lexical Model trained to imitate a sparse teacher retriever. is trained using random sentences as queries with positive and negative passages produced by the teacher. is then combined with a dense retriever via vector concatenation to form a salient-phrase aware retriever."
+    },
+    {
+      "title": "arXiv:2110.06918v3 [cs.CL] 11 Nov 2022",
+      "url": "https://arxiv.org/pdf/2110.06918",
+      "snippet": "arXiv:2110.06918v3 [cs.CL] 11 Nov 2022 Salient Phrase Aware Dense Retrieval: Can a Dense Retriever Imitate a Sparse One?"
+    },
+    {
+      "title": "PDF Salient Phrase Aware Dense Retrieval: Can a Dense Retriever Imitate a ...",
+      "url": "https://aclanthology.org/2022.findings-emnlp.19.pdf",
+      "snippet": "We show that a dense Lexical Model A can be trained to imitate a sparse one, and SPAR is built by augmenting a standard dense retriever with A. Empirically, SPAR shows superior per- formance on a range of tasks including five question answering datasets, MS MARCO pas- sage retrieval, as well as the EntityQuestions and BEIR benchmarks for out-of ..."
+    },
+    {
+      "title": "[2110.06918] Salient Phrase Aware Dense Retrieval:Can a Dense ... - ar5iv",
+      "url": "https://ar5iv.labs.arxiv.org/html/2110.06918",
+      "snippet": "We rebut this claim by introducing the Salient Phrase Aware Retriever (SPAR) 1, a dense retriever with the lexical matching capacity of a sparse model. We show that a dense Lexical Model 𝚲 $𝚲$ can be trained to imitate a sparse one, and SPAR is built by augmenting a standard dense retriever with 𝚲 $𝚲$."
+    },
+    {
+      "title": "Spring AI API :: Spring AI Reference",
+      "url": "https://docs.spring.io/spring-ai/reference/api/index.html",
+      "snippet": "AI Model API Portable Model API across AI providers for Chat, Text to Image, Audio Transcription, Text to Speech, and Embedding models. Both synchronous and stream API options are supported. Dropping down to access model specific features is also supported. With support for AI Models from OpenAI, Microsoft, Amazon, Google, Amazon Bedrock and more."
+    }
+  ]
+}

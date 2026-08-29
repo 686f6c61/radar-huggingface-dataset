@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "Kumarakashsy/clip-finetuned",
+  "slug": "kumarakashsy-clip-finetuned",
+  "author": "Kumarakashsy",
+  "url": "https://huggingface.co/Kumarakashsy/clip-finetuned",
+  "created_at": "2026-08-29T11:15:53.000Z",
+  "updated_at": "2026-08-29T11:16:03.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "clip",
+    "pytorch",
+    "retrieval",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 33088,
+  "parameters_human": "33088",
+  "storage_bytes": 132832,
+  "storage_human": "132832 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Kumarakashsy (Akash Kumar) - Hugging Face",
+      "url": "https://huggingface.co/Kumarakashsy/models",
+      "snippet": "Kumarakashsy&#x27;s models1 Sort: Recently updated Kumarakashsy/model_523527909_hybrid_nano Updated about 15 hours ago"
+    },
+    {
+      "title": "Kumarakashsy/model_523527909_hybrid_nano · Hugging Face",
+      "url": "https://huggingface.co/Kumarakashsy/model_523527909_hybrid_nano",
+      "snippet": "model_523527909_hybrid_nano.py Model Overview A nano -scale implementation of the hybrid architecture, built for generation tasks."
+    },
+    {
+      "title": "GitHub - zer0int/CLIP-fine-tune: Fine-tuning code for CLIP models",
+      "url": "https://github.com/zer0int/CLIP-fine-tune",
+      "snippet": "Fine-tuning code for CLIP models. Contribute to zer0int/CLIP-fine-tune development by creating an account on GitHub."
+    },
+    {
+      "title": "A Guide to Fine-Tuning CLIP Models with Custom Data",
+      "url": "https://medium.com/aimonks/a-guide-to-fine-tuning-clip-models-with-custom-data-6c7c0d1416fb",
+      "snippet": "While the pre-trained CLIP model is powerful, to truly leverage its capabilities for a specific task or domain, fine-tuning is a crucial step."
+    },
+    {
+      "title": "AI model fine-tuning concepts | Microsoft Learn",
+      "url": "https://learn.microsoft.com/en-us/windows/ai/fine-tuning",
+      "snippet": "Learn AI model fine-tuning concepts and discover when fine-tuning can optimize your data and improve model performance. Get started with practical guidance."
+    }
+  ]
+}

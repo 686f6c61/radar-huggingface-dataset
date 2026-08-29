@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "wangzhang/gemma-4-31B-it-abliterated-GGUF",
+  "slug": "wangzhang-gemma-4-31b-it-abliterated-gguf",
+  "author": "wangzhang",
+  "url": "https://huggingface.co/wangzhang/gemma-4-31B-it-abliterated-GGUF",
+  "created_at": "2026-04-20T16:33:08.000Z",
+  "updated_at": "2026-08-29T17:03:24.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "llama.cpp",
+  "languages": [],
+  "tags": [
+    "llama.cpp",
+    "gguf",
+    "gemma4",
+    "gemma",
+    "quantized",
+    "text-generation",
+    "q4_k_m",
+    "q5_k_m",
+    "base_model:wangzhang/gemma-4-31B-it-abliterated",
+    "base_model:quantized:wangzhang/gemma-4-31B-it-abliterated",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 9,
+  "downloads_30d": 3255,
+  "trending_score": 0,
+  "parameters": 30697345596,
+  "parameters_human": "30.70B",
+  "storage_bytes": 153268556544,
+  "storage_human": "153.3 GB",
+  "base_model": "wangzhang/gemma-4-31B-it-abliterated",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "wangzhang/gemma-4-31B-it-abliterated · Hugging Face",
+      "url": "https://huggingface.co/wangzhang/gemma-4-31B-it-abliterated",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "wangzhang/gemma-4-31B-it-abliterated-GGUF · Hugging Face",
+      "url": "https://huggingface.co/wangzhang/gemma-4-31B-it-abliterated-GGUF",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Gemma 4 31b It Abliterated - GGUF Model - local-ai-zone.github.io",
+      "url": "https://local-ai-zone.github.io/models/gemma-4-31b-it-abliterated.html",
+      "snippet": "Download Gemma 4 31b It Abliterated GGUF model. 18.3 GB, 262,448 downloads, 118 likes."
+    },
+    {
+      "title": "wangzhang/gemma-4-31B-it-abliterated · Hugging Face",
+      "url": "https://hf-p-cfw.fyan.top/wangzhang/gemma-4-31B-it-abliterated",
+      "snippet": "This is an abliterated version of google/gemma-4-31B-it, created using Abliterix. This revision updates the model to trial 40, the best configuration from the completed 60-trial Gemma 4 31B retraining run."
+    },
+    {
+      "title": "Gemma 4 31B It Abliterated by wangzhang - LLM Explorer",
+      "url": "https://llm-explorer.com/model/wangzhang%2Fgemma-4-31B-it-abliterated,3V0sNEMwBRpjdUQ9cD42EV",
+      "snippet": "Gemma 4 31B It Abliterated is an open-source language model by wangzhang. Features: 31b LLM, VRAM: 62.5GB, License: gemma, LLM Explorer Score: 0.36."
+    }
+  ]
+}

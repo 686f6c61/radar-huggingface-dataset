@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "mash-forshaken/Semantic-Search-Engine-with-FAISS",
+  "slug": "mash-forshaken-semantic-search-engine-with-faiss",
+  "author": "mash-forshaken",
+  "url": "https://huggingface.co/mash-forshaken/Semantic-Search-Engine-with-FAISS",
+  "created_at": "2026-08-29T17:27:20.000Z",
+  "updated_at": "2026-08-29T17:27:40.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "feature-extraction",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "mpnet",
+    "feature-extraction",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 109486464,
+  "parameters_human": "109.5M",
+  "storage_bytes": 437967672,
+  "storage_human": "438 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "How to Build a Semantic Search Engine with FAISS and Sentence ...",
+      "url": "https://thepythoncode.com/article/semantic-search-engine-faiss-python",
+      "snippet": "Build a fully local semantic search engine in Python using FAISS and Sentence Transformers. Learn how embeddings work, index vectors, run semantic queries, and visualize the embedding space with PCA."
+    },
+    {
+      "title": "How to Build a Semantic Search Engine With Transformers and Faiss",
+      "url": "https://towardsdatascience.com/how-to-build-a-semantic-search-engine-with-transformers-and-faiss-dcbea307a0e8/",
+      "snippet": "In this tutorial, you will learn how to build a vector-based search engine with sentence transformers and Faiss."
+    },
+    {
+      "title": "GitHub - tainguyen07/semantic-search-faiss: Semantic search engine over ...",
+      "url": "https://github.com/tainguyen07/semantic-search-faiss",
+      "snippet": "semantic-search-faiss is a complete, opinionated retrieval stack built around the principle that real search quality comes from the combination of lexical and neural signals. The library gives you an end-to-end pipeline — chunking, dense embedding, BM25 indexing, FAISS ANN search, reciprocal-rank ..."
+    },
+    {
+      "title": "LLM Leaderboard 2026: Compare 300+ Top AI Models by Intelligence, Speed ...",
+      "url": "https://llm-stats.com/leaderboards/llm-leaderboard",
+      "snippet": "The LLM Leaderboard — independent ranking of GPT, Claude, Gemini, Llama, DeepSeek and 300+ AI models by intelligence, speed and price. Filter by provider, license, modality and context window; sort by every benchmark. Composite LLM Stats Score updated continuously from public benchmarks and live API metrics."
+    },
+    {
+      "title": "Semantic Search Engine with FAISS - GitHub",
+      "url": "https://github.com/rishabhkumarchaubey/Semantic-Search-Engine-with-FAISS",
+      "snippet": "This project implements a Semantic Search Engine using Sentence Transformers for generating dense text embeddings and FAISS (Facebook AI Similarity Search) for efficient approximate nearest neighbor search. The system allows users to input a natural language query and retrieves the top-5 semantically similar sentences from a large text corpus. The project is designed to be submission-ready ..."
+    }
+  ]
+}

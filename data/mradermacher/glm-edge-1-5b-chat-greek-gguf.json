@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "mradermacher/GLM-Edge-1.5B-Chat-Greek-GGUF",
+  "slug": "mradermacher-glm-edge-1-5b-chat-greek-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/GLM-Edge-1.5B-Chat-Greek-GGUF",
+  "created_at": "2026-08-29T15:21:05.000Z",
+  "updated_at": "2026-08-29T15:29:33.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1472055296,
+  "parameters_human": "1.47B",
+  "storage_bytes": 13275917696,
+  "storage_human": "13.3 GB",
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "mradermacher/glm-edge-1.5b-chat-GGUF · Hugging Face",
+      "url": "https://huggingface.co/mradermacher/glm-edge-1.5b-chat-GGUF",
+      "snippet": "Usage If you are unsure how to use GGUF files, refer to one of TheBloke&#x27;s READMEs for more details, including on how to concatenate multi-part files. Provided Quants (sorted by size, not necessarily quality. IQ-quants are often preferable over similar sized non-IQ quants)"
+    },
+    {
+      "title": "mradermacher/heretic_glm-edge-1.5b-chat-i1-GGUF · Hugging Face",
+      "url": "https://huggingface.co/mradermacher/heretic_glm-edge-1.5b-chat-i1-GGUF",
+      "snippet": "Usage If you are unsure how to use GGUF files, refer to one of TheBloke&#x27;s READMEs for more details, including on how to concatenate multi-part files. Provided Quants (sorted by size, not necessarily quality. IQ-quants are often preferable over similar sized non-IQ quants)"
+    },
+    {
+      "title": "GitHub - zai-org/GLM-Edge: GLM Series Edge Models",
+      "url": "https://github.com/zai-org/GLM-Edge",
+      "snippet": "GLM-Edge 系列是我们在面向端侧真实落地使用的场景下的一次尝试，由两种尺寸的大语言对话模型和多模态理解模型组成（ GLM-Edge-1.5B-Chat， GLM-Edge-4B-Chat， GLM-Edge-V-2B， GLM-Edge-V-5B）。其中， 1.5B / 2B 模型主要面向手机、车机等平台， 4B / 5B 模型主要面向PC等平台。 基于GLM-4系列的技术积累，我们针对端 ..."
+    },
+    {
+      "title": "glm-edge-1.5b-chat-GGUF - AI Model by mradermacher | AlphaNeural AI",
+      "url": "https://alphaneural.io/assets/mradermacher/glm-edge-1.5b-chat-GGUF",
+      "snippet": "Explore glm-edge-1.5b-chat-GGUF, a ai model on AlphaNeural AI. Deploy using Neural Labs compute infrastructure."
+    },
+    {
+      "title": "Glm-Edge-Chat-1.5B-GGUF - ai.gitcode.com",
+      "url": "https://ai.gitcode.com/hf_mirrors/THUDM/glm-edge-1.5b-chat-gguf",
+      "snippet": "探索无限创意，对话未来!THUDM的GLM-Edge-1.5b-Chat-GGUF模型，基于GLM-Edge技术，轻松实现智能对话，支持中文阅读与生成，激活无限想象。"
+    }
+  ]
+}

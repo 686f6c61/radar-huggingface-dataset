@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "dianavdavidson/indicwav2vec-hindi-iv_hindi_only-62073-normalized-alldata-1e-4-epochs-50-FT",
+  "slug": "dianavdavidson-indicwav2vec-hindi-iv_hindi_only-62073-normalized-alldata-1e-4-epochs-50-ft",
+  "author": "dianavdavidson",
+  "url": "https://huggingface.co/dianavdavidson/indicwav2vec-hindi-iv_hindi_only-62073-normalized-alldata-1e-4-epochs-50-FT",
+  "created_at": "2026-08-29T16:35:18.000Z",
+  "updated_at": "2026-08-29T17:56:31.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "automatic-speech-recognition",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "wav2vec2",
+    "automatic-speech-recognition",
+    "generated_from_trainer",
+    "base_model:ai4bharat/indicwav2vec-hindi",
+    "base_model:finetune:ai4bharat/indicwav2vec-hindi",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 315512520,
+  "parameters_human": "315.5M",
+  "storage_bytes": 1262107680,
+  "storage_human": "1.3 GB",
+  "base_model": "ai4bharat/indicwav2vec-hindi",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "dianavdavidson/indicwav2vec-hindi-mucs-61961-hinglish_mixed_scripts ...",
+      "url": "https://huggingface.co/dianavdavidson/indicwav2vec-hindi-mucs-61961-hinglish_mixed_scripts-alldata-1e-4-steps-12000-FT",
+      "snippet": "indicwav2vec-hindi-mucs-61961-hinglish_mixed_scripts-alldata-1e-4-steps-12000-FT This model is a fine-tuned version of ai4bharat/indicwav2vec-hindi on an unknown dataset."
+    },
+    {
+      "title": "GitHub - AI4Bharat/IndicWav2Vec: Pretraining, fine-tuning and ...",
+      "url": "https://github.com/AI4Bharat/IndicWav2Vec",
+      "snippet": "IndicWav2Vec is a multilingual speech model pretrained on 40 Indian langauges. This model represents the largest diversity of Indian languages in the pool of multilingual speech models. We fine-tune this model for downstream ASR for 9 languages and obtain state-of-the-art results on 3 public benchmarks, namely MUCS, MSR and OpenSLR. As part of IndicWav2Vec we create largest publicly available ..."
+    },
+    {
+      "title": "IndicWav2Vec/ at main · AI4Bharat/IndicWav2Vec · GitHub",
+      "url": "https://github.com/AI4Bharat/IndicWav2Vec?search=1",
+      "snippet": "IndicWav2Vec is a multilingual speech model pretrained on 40 Indian langauges. This model represents the largest diversity of Indian languages in the pool of multilingual speech models."
+    },
+    {
+      "title": "IndicWav2Vec - ai4bharat.iitm.ac.in",
+      "url": "https://ai4bharat.iitm.ac.in/areas/model/ASR/IndicWav2Vec/",
+      "snippet": "AI4Bharat is a research lab at IIT Madras which works on developing open-source datasets, tools, models and applications for Indian languages."
+    },
+    {
+      "title": "ai4bharat/indicwav2vec-hindi at main - Hugging Face",
+      "url": "https://huggingface.co/ai4bharat/indicwav2vec-hindi/tree/main",
+      "snippet": "main indicwav2vec-hindi 1 contributor History: 4 commits Abhigyanr added language model e746fa3 over 2 years ago"
+    }
+  ]
+}

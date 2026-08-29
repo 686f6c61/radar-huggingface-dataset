@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "jburtoft/qwen35-deltanet-neuron-kernels",
+  "slug": "jburtoft-qwen35-deltanet-neuron-kernels",
+  "author": "jburtoft",
+  "url": "https://huggingface.co/jburtoft/qwen35-deltanet-neuron-kernels",
+  "created_at": "2026-06-12T14:10:59.000Z",
+  "updated_at": "2026-08-29T17:08:32.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "deprecated",
+    "neuron",
+    "nki",
+    "trainium",
+    "inferentia",
+    "qwen3.5",
+    "deltanet",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "jburtoft/qwen35-deltanet-neuron-kernels · Hugging Face",
+      "url": "https://huggingface.co/jburtoft/qwen35-deltanet-neuron-kernels",
+      "snippet": "Qwen3.5 Gated Delta Net NKI Kernel for AWS Neuron NeuronCore-optimized NKI kernel that replaces the Qwen3_5GatedDeltaNet module in Qwen3.5 models with a hardware-accelerated implementation that keeps the recurrent state matrix (128×128 float32) entirely in on-chip SBUF memory — eliminating HBM round-trips per token."
+    },
+    {
+      "title": "jburtoft/qwen35-deltanet-neuron-kernels at main - Hugging Face",
+      "url": "https://huggingface.co/jburtoft/qwen35-deltanet-neuron-kernels/tree/main",
+      "snippet": "nki trainium inferentia qwen3.5 deltanet gated-delta-net linear-attention License:apache-2.0 Model card FilesFiles and versions xet Community Copy to bucket new main qwen35-deltanet-neuron-kernels 21.3 kB Ctrl+K Ctrl+K 1 contributor History:8 commits jburtoft Update kernel: use F.conv1d, verified on PyTorch Native Beta 3 (cos=1.0) 200c2d9 ..."
+    },
+    {
+      "title": "qwen3.5-gated-deltanet-analysis · GitHub",
+      "url": "https://gist.github.com/justinchuby/0213aa253664fb72e9adb0089816de15",
+      "snippet": "Qwen3.5 (HuggingFace model_type: \"qwen3_5\") inherits from Qwen3-Next (model_type: \"qwen3_next\"). It is a hybrid architecture that interleaves two types of token-mixing layers: Full attention layers — Standard softmax attention with GQA and RoPE Linear attention layers — Gated DeltaNet (a gated variant of the delta rule) The layer pattern is configured by layer_types in the config. By ..."
+    },
+    {
+      "title": "GitHub - RightNow-AI/qwen3.5-triton: Pure Triton kernels for Qwen3.5 ...",
+      "url": "https://github.com/RightNow-AI/qwen3.5-triton",
+      "snippet": "The fused DeltaNet kernel (triton_deltanet_fused.py) merges the post-projection and recurrent steps into a single kernel launch per head. DeltaNet&#x27;s recurrent state is a [128, 128] matrix (32KB in BF16) that fits entirely in B200&#x27;s 256KB SRAM per SM."
+    },
+    {
+      "title": "[Model Request] Qwen3.5 support — Gated DeltaNet + MoE architecture",
+      "url": "https://github.com/mlc-ai/web-llm/issues/778",
+      "snippet": "Model Request: Qwen3.5 family Qwen has released the Qwen3.5 model family with state-of-the-art performance that surpasses GPT-5-mini and Qwen3-235B on many benchmarks. Available Models"
+    }
+  ]
+}

@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "Hanyiton/VAA-CSEC",
+  "slug": "hanyiton-vaa-csec",
+  "author": "Hanyiton",
+  "url": "https://huggingface.co/Hanyiton/VAA-CSEC",
+  "created_at": "2026-08-29T11:15:08.000Z",
+  "updated_at": "2026-08-29T11:15:08.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "LLM Leaderboard & AI Model Benchmarks — August 2026",
+      "url": "https://benchlm.ai/",
+      "snippet": "Compare 406 AI models across 406 benchmarks, with 228 ranked scores, source evidence, API pricing, context windows, runtime, and head-to-head pages."
+    },
+    {
+      "title": "AI Aimbot Models & YOLO Detection Models | MossyModels",
+      "url": "https://mossymodels.com/",
+      "snippet": "AI Aimbot Models & YOLO Detection Models Browse 661+ free YOLO and ONNX detection models across 43+ games. Community library for Fortnite, Valorant, Warzone, Apex Legends, and more. MossyModels is a community library of YOLO and ONNX detection models for first-person shooters."
+    },
+    {
+      "title": "Hugging Face - The AI community building the future.",
+      "url": "https://huggingface.co/",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Chinese Hacker Uses DeepSeek AI to Automate Vulnerability ...",
+      "url": "https://cyberpress.org/chinese-hacker-uses-deepseek-ai/",
+      "snippet": "A Chinese-speaking threat actor has been observed using DeepSeek AI as an autonomous offensive operator to identify exposed infrastructure, research vulnerabilities, acquire public proof-of-concept exploits, and launch attacks with minimal human intervention."
+    },
+    {
+      "title": "VAE Model Enhances Volatility Prediction for High-Frequency Trading ...",
+      "url": "https://www.welcome.ai/content/vae-model-enhances-volatility-prediction-for-high-frequency-trading-firms",
+      "snippet": "Leveraging advanced machine learning, the new VAE world model transforms adaptive risk management for high-frequency trading, enabling firms to predict market volatility with unprecedented accuracy."
+    }
+  ]
+}

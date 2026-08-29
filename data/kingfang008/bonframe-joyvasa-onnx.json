@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "kingfang008/BonFrame-JoyVASA-ONNX",
+  "slug": "kingfang008-bonframe-joyvasa-onnx",
+  "author": "kingfang008",
+  "url": "https://huggingface.co/kingfang008/BonFrame-JoyVASA-ONNX",
+  "created_at": "2026-08-29T12:52:59.000Z",
+  "updated_at": "2026-08-29T12:54:31.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "onnxruntime",
+  "languages": [],
+  "tags": [
+    "onnxruntime",
+    "onnx",
+    "audio-to-motion",
+    "joyvasa",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 411993172,
+  "storage_human": "412 MB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ONNX Model Zoo",
+      "url": "https://github.com/onnx/models",
+      "snippet": "Welcome to the ONNX Model Zoo! The Open Neural Network Exchange (ONNX) is an open standard format created to represent machine learning models. Supported by a robust community of partners, ONNX defines a common set of operators and a common file format to enable AI developers to use models with a variety of frameworks, tools, runtimes, and compilers. This repository is a curated collection of ..."
+    },
+    {
+      "title": "Hugging Face - The AI community building the future.",
+      "url": "https://huggingface.co/",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Models compatible with the ONNX library - Hugging Face",
+      "url": "https://huggingface.co/models?library=onnx",
+      "snippet": "Edit Models filters. Main ; Tasks ; Libraries 1; Languages ; Licenses ; Other ; Reset Libraries. PyTorch. google-tensorflow. TensorFlow. JAX. Safetensors ..."
+    },
+    {
+      "title": "ONNX Runtime | Models",
+      "url": "https://onnxruntime.ai/models",
+      "snippet": "ONNX Models - find ONNX models for natural language processing, computer vision, and more."
+    },
+    {
+      "title": "GitHub - jdh-algo/JoyVASA: Diffusion-based Portrait and Animal ...",
+      "url": "https://github.com/jdh-algo/JoyVasa",
+      "snippet": "Diffusion-based Portrait and Animal Animation. Contribute to jdh-algo/JoyVASA development by creating an account on GitHub."
+    }
+  ]
+}

@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "vssokolov/poolformer-experiment",
+  "slug": "vssokolov-poolformer-experiment",
+  "author": "vssokolov",
+  "url": "https://huggingface.co/vssokolov/poolformer-experiment",
+  "created_at": "2026-08-29T11:18:45.000Z",
+  "updated_at": "2026-08-29T11:18:55.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "poolformer",
+    "pytorch",
+    "contrastive",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 24832,
+  "parameters_human": "24832",
+  "storage_bytes": 99808,
+  "storage_human": "99808 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "PoolFormer - Hugging Face",
+      "url": "https://huggingface.co/docs/transformers/v5.3.0/en/model_doc/poolformer",
+      "snippet": "Overview The PoolFormer model was proposed in MetaFormer is Actually What You Need for Vision by Sea AI Labs. Instead of designing complicated token mixer to achieve SOTA performance, the target of this work is to demonstrate the competence of transformer models largely stem from the general architecture MetaFormer."
+    },
+    {
+      "title": "GitHub - sail-sg/poolformer: PoolFormer: MetaFormer Is Actually What ...",
+      "url": "https://github.com/sail-sg/poolformer",
+      "snippet": "This is a PyTorch implementation of PoolFormer proposed by our paper \"MetaFormer Is Actually What You Need for Vision\" (CVPR 2022 Oral). Note: Instead of designing complicated token mixer to achieve SOTA performance, the target of this work is to demonstrate the competence of Transformer models largely stem from the general architecture MetaFormer. Pooling/PoolFormer are just the tools to ..."
+    },
+    {
+      "title": "[21.11] PoolFormer | DOCSAID",
+      "url": "https://docsaid.org/en/papers/vision-transformers/poolformer/",
+      "snippet": "By using pooling, a highly simplistic operation, as the Token-Mixer, the authors demonstrated the competitive performance of the PoolFormer model across various vision tasks, strongly supporting the claim that MetaFormer Is Actually What You Need for Vision."
+    },
+    {
+      "title": "Poolformer: Recurrent Networks with Pooling for Long-Sequence Modeling",
+      "url": "https://arxiv.org/pdf/2510.02206",
+      "snippet": "Such models require mechanisms to exchange information along the time dimension, typically using recurrent or self-attention layers. However, self-attention scales quadratically with sequence length, limiting its practicality for very long sequences."
+    },
+    {
+      "title": "PoolFormer - Hugging Face",
+      "url": "https://huggingface.co/docs/transformers/en/model_doc/poolformer",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    }
+  ]
+}

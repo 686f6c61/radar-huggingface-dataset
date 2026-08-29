@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "mulemp/quadratrund",
+  "slug": "mulemp-quadratrund",
+  "author": "mulemp",
+  "url": "https://huggingface.co/mulemp/quadratrund",
+  "created_at": "2026-04-01T06:15:43.000Z",
+  "updated_at": "2026-08-29T19:00:56.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 15223651556,
+  "storage_human": "15.2 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": true,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "mulemp/AkioAI · Hugging Face",
+      "url": "https://huggingface.co/mulemp/AkioAI",
+      "snippet": "mulemp / AkioAI like 0 Model card FilesFiles and versions xet Community Copy to bucket new"
+    },
+    {
+      "title": "mulemp (mulemp) - Hugging Face",
+      "url": "https://huggingface.co/mulemp/models",
+      "snippet": "AI & ML interests ... Recent Activity updated a model 1 minute ago ... updated a model 1 minute ago"
+    },
+    {
+      "title": "QUART-Online:Latency-FreeMultimodalLargeLanguageModelfor ...",
+      "url": "https://arxiv.org/pdf/2412.15576",
+      "snippet": "Thus, this paper introduces QUART-Online, a novel latency- free quadruped multimodal large language model, designed to enhance inference efficiency without degrading the performance of the multimodal large language model."
+    },
+    {
+      "title": "quadratrund Creator Profile | Civitai",
+      "url": "https://civitai.com/user/quadratrund/models",
+      "snippet": "Models Uploaded: 0, Followers: 2.7k, Total Likes Received: 18.8k, Total Downloads Received: 254k."
+    },
+    {
+      "title": "MULE - Multi-terrain and Unknown Load Adaptation for Effective ...",
+      "url": "https://arxiv.org/html/2505.00488",
+      "snippet": "Abstract Quadrupedal robots are increasingly deployed for load-carrying tasks across diverse terrains. While Model Predictive Control (MPC)-based methods can account for payload variations, they often depend on predefined gait schedules or trajectory generators, limiting their adaptability in unstructured environments. To address these limitations, we propose an Adaptive Reinforcement Learning ..."
+    }
+  ]
+}

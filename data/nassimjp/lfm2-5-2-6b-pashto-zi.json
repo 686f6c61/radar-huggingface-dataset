@@ -1,0 +1,79 @@
+{
+  "schema": 1,
+  "id": "nassimjp/LFM2.5-2.6B-Pashto-Zi",
+  "slug": "nassimjp-lfm2-5-2-6b-pashto-zi",
+  "author": "nassimjp",
+  "url": "https://huggingface.co/nassimjp/LFM2.5-2.6B-Pashto-Zi",
+  "created_at": "2026-08-29T13:26:44.000Z",
+  "updated_at": "2026-08-29T14:23:38.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "lfm2",
+    "text-generation",
+    "pashto",
+    "pashto-language",
+    "urdu",
+    "tokenizer",
+    "tokenizer-extension",
+    "embedding",
+    "language-model",
+    "causal-lm",
+    "LFM2.5",
+    "LiquidAI",
+    "conversational",
+    "base_model:LiquidAI/LFM2.5-2.6B",
+    "base_model:finetune:LiquidAI/LFM2.5-2.6B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 2691134464,
+  "parameters_human": "2.69B",
+  "storage_bytes": 5400208728,
+  "storage_human": "5.4 GB",
+  "base_model": "LiquidAI/LFM2.5-2.6B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "LFM2.5-2.6B - Liquid Docs",
+      "url": "https://docs.liquid.ai/lfm/models/lfm25-2.6b",
+      "snippet": "2.6B dense model trained for agentic workloads, with a 128K context window and native tool calling for on-device agents ← Back to Text Models LFM2.5-2.6B is Liquid AI&#x27;s 2.6B dense model built for agentic workloads with a 128K context window and native tool calling."
+    },
+    {
+      "title": "LFM2.5-2.6B: Deploy Agents Everywhere | Blog | Liquid AI",
+      "url": "https://www.liquid.ai/blog/lfm2-5-2-6b",
+      "snippet": "LFM2.5-2.6B is an on-device agentic model that plans, calls tools, and runs multi-step tasks at 220 tok/s in under 2.5 GB. Open weights on Hugging Face."
+    },
+    {
+      "title": "nassimjp/LFM2.5-1.2B-Base-Pashto · Hugging Face",
+      "url": "https://huggingface.co/nassimjp/LFM2.5-1.2B-Base-Pashto",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "nassimjp/LFM2.5-1.2B-Base-Pashto at main - Hugging Face",
+      "url": "https://huggingface.co/nassimjp/LFM2.5-1.2B-Base-Pashto/tree/main",
+      "snippet": "nassimjp / LFM2.5-1.2B-Base-Pashto like 0 Text Generation Transformers Safetensors 9 languages lfm2 liquid lfm2.5 edge pashto conversational arxiv:2511.23404 License:lfm1.0 Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "LFM2.5-2.6B · LLM Releases",
+      "url": "https://www.llm-releases.com/models/lfm2-5-2-6b",
+      "snippet": "Decodes at ~220 tok/s on an Apple M5 Max in under 2.5GB and ~30 tok/s on a phone. Open weights (base + post-trained) on Hugging Face under the LFM Open License (lfm1.0), shipped day-one in GGUF, MLX, and ONNX. LFM2.5-2.6B is tracked as a open-weight model from Liquid AI. Released 2026-08-06."
+    }
+  ]
+}

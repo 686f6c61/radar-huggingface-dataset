@@ -1,0 +1,76 @@
+{
+  "schema": 1,
+  "id": "wangzhang/LFM2-24B-A2B-abliterated",
+  "slug": "wangzhang-lfm2-24b-a2b-abliterated",
+  "author": "wangzhang",
+  "url": "https://huggingface.co/wangzhang/LFM2-24B-A2B-abliterated",
+  "created_at": "2026-03-19T20:57:34.000Z",
+  "updated_at": "2026-08-29T17:04:55.000Z",
+  "license": "lfm1.0",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "tags": [
+    "safetensors",
+    "lfm2_moe",
+    "abliterix",
+    "uncensored",
+    "decensored",
+    "abliterated",
+    "liquid",
+    "moe",
+    "en",
+    "zh",
+    "base_model:LiquidAI/LFM2-24B-A2B",
+    "base_model:finetune:LiquidAI/LFM2-24B-A2B",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 5,
+  "downloads_30d": 16,
+  "trending_score": 0,
+  "parameters": 23843661440,
+  "parameters_human": "23.84B",
+  "storage_bytes": 47688305784,
+  "storage_human": "47.7 GB",
+  "base_model": "LiquidAI/LFM2-24B-A2B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Justbackup/LFM2-24B-A2B-abliterated · Hugging Face",
+      "url": "https://huggingface.co/Justbackup/LFM2-24B-A2B-abliterated",
+      "snippet": "Unrestricted version of LiquidAI/LFM2-24B-A2B, created using Abliterix. This is the first abliterated model based on Liquid AI&#x27;s hybrid gated short convolution + grouped query attention architecture with Mixture of Experts."
+    },
+    {
+      "title": "wangzhang/LFM2-24B-A2B-abliterated at main - Hugging Face",
+      "url": "https://huggingface.co/wangzhang/LFM2-24B-A2B-abliterated/tree/main",
+      "snippet": "Model card FilesFiles and versions xet Community main LFM2-24B-A2B-abliterated 47.7 GB Ctrl+K Ctrl+K 1 contributor History:3 commits wangzhang Upload README.md with huggingface_hub 9d6609a verifiedabout 4 hours ago .gitattributes Safe 1.52 kBinitial commitabout 5 hours ago README.md 3.48 kBUpload README.md with huggingface_hubabout 4 hours ago ..."
+    },
+    {
+      "title": "LFM2-24B-A2B: Scaling Up the LFM2 Architecture - liquid.ai",
+      "url": "https://www.liquid.ai/blog/lfm2-24b-a2b",
+      "snippet": "Today, we release an early checkpoint of LFM2-24B-A2B, our largest LFM2 model. This sparse Mixture of Experts (MoE) model has 24 billion total parameters with 2 billion active per token, showing that the LFM2 architecture scales effectively to larger sizes."
+    },
+    {
+      "title": "LFM2-24B-A2B - docs.liquid.ai",
+      "url": "https://docs.liquid.ai/lfm/models/lfm2-24b-a2b",
+      "snippet": "24B parameter Mixture-of-Experts model with 2B active parameters — our largest model for laptops and single-GPU applications ← Back to Text Models LFM2-24B-A2B is Liquid AI&#x27;s largest Mixture-of-Experts model, combining 24B total parameters with only 2B active parameters per forward pass."
+    },
+    {
+      "title": "LFM2-24B-A2B - lmstudio.ai",
+      "url": "https://lmstudio.ai/models/lfm2-24b-a2b",
+      "snippet": "LFM2 is a family of hybrid models designed for on-device deployment. LFM2-24B-A2B is the largest model in the family, scaling the architecture to 24 billion parameters while keeping inference efficient."
+    }
+  ]
+}

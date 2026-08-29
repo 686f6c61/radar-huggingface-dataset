@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "dragonlimited/DragonCode-787M",
+  "slug": "dragonlimited-dragoncode-787m",
+  "author": "dragonlimited",
+  "url": "https://huggingface.co/dragonlimited/DragonCode-787M",
+  "created_at": "2026-08-23T17:36:06.000Z",
+  "updated_at": "2026-08-29T18:50:39.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1419039097,
+  "storage_human": "1.4 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "dragonlimited (Dragon Limited) - Hugging Face",
+      "url": "https://huggingface.co/dragonlimited/models",
+      "snippet": "User profile of Dragon Limited on Hugging Face"
+    },
+    {
+      "title": "Hugging Face - The AI community building the future.",
+      "url": "https://huggingface.co/",
+      "snippet": "The AI community building the future. ... Explore AI Apps or Browse 2M+ models Trending on this week"
+    },
+    {
+      "title": "Dragon - 企业级中转 - Dragon Code",
+      "url": "https://dragoncode.codes/",
+      "snippet": "用户充值后获得 DragonCode 账户余额， 余额用于调用 Claude Code、Codex、Gemini CLI 等 AI 编码模型能力。 点击「立即体验」创建账号，登录后进入控制台管理 API Key、余额和用量。 最低充值 ¥20。 充值 ¥1 可获得 $1 DragonCode 余额，余额仅用于本服务。"
+    },
+    {
+      "title": "Models.dev - An open-source database of AI models",
+      "url": "https://models.dev/",
+      "snippet": "Models.dev is a comprehensive open-source database of AI model specifications, pricing, and features."
+    },
+    {
+      "title": "LLM Leaderboard 2026: Compare 300+ Top AI Models by Intelligence, Speed ...",
+      "url": "https://llm-stats.com/leaderboards/llm-leaderboard",
+      "snippet": "The LLM Leaderboard — independent ranking of GPT, Claude, Gemini, Llama, DeepSeek and 300+ AI models by intelligence, speed and price. Filter by provider, license, modality and context window; sort by every benchmark. Composite LLM Stats Score updated continuously from public benchmarks and live API metrics."
+    }
+  ]
+}

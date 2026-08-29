@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "chmielvu/granite-embedding-311m-multilingual-r2-fp16",
+  "slug": "chmielvu-granite-embedding-311m-multilingual-r2-fp16",
+  "author": "chmielvu",
+  "url": "https://huggingface.co/chmielvu/granite-embedding-311m-multilingual-r2-fp16",
+  "created_at": "2026-08-29T12:07:49.000Z",
+  "updated_at": "2026-08-29T12:59:44.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "onnx",
+    "safetensors",
+    "modernbert",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 311664384,
+  "parameters_human": "311.7M",
+  "storage_bytes": 1280498968,
+  "storage_human": "1.3 GB",
+  "base_model": null,
+  "formats": [
+    "onnx",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "granite-embedding-311m-multilingual-r2 - Hugging Face",
+      "url": "https://huggingface.co/ibm-granite/granite-embedding-311m-multilingual-r2",
+      "snippet": "When to Use This Model Use granite-embedding-311m-multilingual-r2 when accuracy is the priority across multilingual retrieval, search, and similarity tasks, and you can afford the throughput of a 311M-parameter model."
+    },
+    {
+      "title": "Granite Embedding - IBM",
+      "url": "https://www.ibm.com/granite/docs/models/embedding",
+      "snippet": "Granite Embedding Paper Getting Started Intended Use The Granite Embedding 311m multilingual model is designed to produce fixed-length vector representations for a given text, which can be used for text similarity, retrieval, and search applications across multiple languages. It supports 200+ languages with enhanced support for 52 languages."
+    },
+    {
+      "title": "Granite-Embedding-311M-Multilingual-R2 - Hugging Face",
+      "url": "https://huggingface.co/ibm-granite/granite-embedding-311m-multilingual-r2/blob/main/README.md",
+      "snippet": "Model Summary: Granite-Embedding-311M-Multilingual-R2 is a 311M parameter dense embedding model from the Granite Embeddings collection for high-quality multilingual text embeddings. It produces 768-dimensional vectors with a context length of up to 32,768 tokens. The model supports 200+ languages (based on the multilingual pretraining corpus of the underlying encoder), with enhanced support ..."
+    },
+    {
+      "title": "Granite Embedding Multilingual R2 Models - arXiv.org",
+      "url": "https://arxiv.org/html/2605.13521v2",
+      "snippet": "The release consists of two bi-encoder models based on the ModernBERT architecture with an expanded multilingual vocabulary: a 311M-parameter full-size, and a 97M-parameter compact model built via model pruning and vocabulary selection that achieves the highest retrieval score of any open multilingual embedding model under 100M parameters."
+    },
+    {
+      "title": "granite-embedding-311m-multilingual-r2: Text-to-Text model — overview ...",
+      "url": "https://www.aimodels.fyi/models/huggingFace/granite-embedding-311m-multilingual-r2-ibm-granite",
+      "snippet": "A: The multilingual variant handles 200+ languages with enhanced training for 52 languages and code. English-specific models (granite-embedding-english-r2 and granite-embedding-small-english-r2) offer optimized performance for monolingual English use cases only. Q: Does this model handle code retrieval across all programming languages?"
+    }
+  ]
+}

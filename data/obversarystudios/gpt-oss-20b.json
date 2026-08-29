@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "obversarystudios/gpt-oss-20b",
+  "slug": "obversarystudios-gpt-oss-20b",
+  "author": "obversarystudios",
+  "url": "https://huggingface.co/obversarystudios/gpt-oss-20b",
+  "created_at": "2026-08-29T18:22:21.000Z",
+  "updated_at": "2026-08-29T18:22:22.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gpt_oss",
+    "text-generation",
+    "vllm",
+    "conversational",
+    "arxiv:2508.10925",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "8-bit",
+    "mxfp4",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 20914757184,
+  "parameters_human": "20.91B",
+  "storage_bytes": 41301372462,
+  "storage_human": "41.3 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "gpt-oss-20b Model | OpenAI API",
+      "url": "https://developers.openai.com/api/docs/models/gpt-oss-20b",
+      "snippet": "Medium-sized open-weight model for low latency Compare"
+    },
+    {
+      "title": "openai/gpt-oss-20b · Hugging Face",
+      "url": "https://huggingface.co/openai/gpt-oss-20b",
+      "snippet": "Discover Hugging Face&#x27;s gpt-oss-20b model, a smaller open-source AI with versatile applications and fine-tuning capabilities for developers and researchers."
+    },
+    {
+      "title": "Introducing gpt-oss - OpenAI",
+      "url": "https://openai.com/index/introducing-gpt-oss/",
+      "snippet": "We&#x27;re releasing gpt-oss-120b and gpt-oss-20b—two state-of-the-art open-weight language models that deliver strong real-world performance at low cost. Available under the flexible Apache 2.0 license, these models outperform similarly sized open models on reasoning tasks, demonstrate strong tool use capabilities, and are optimized for efficient deployment on consumer hardware."
+    },
+    {
+      "title": "gpt-oss-120b & gpt-oss-20b Model Card - OpenAI",
+      "url": "https://openai.com/index/gpt-oss-model-card/",
+      "snippet": "We introduce gpt-oss-120b and gpt-oss-20b, two open-weight reasoning models available under the Apache 2.0 license and our gpt-oss usage policy."
+    },
+    {
+      "title": "AI Model Catalog | Microsoft Foundry Models",
+      "url": "https://ai.azure.com/catalog/models/gpt-oss-20b",
+      "snippet": "Agentic capabilities: Use the models&#x27; native capabilities for function calling, web browsing , Python code execution , and Structured Outputs. Native MXFP4 quantization: The models are trained with native MXFP4 precision for the MoE layer, making gpt-oss-120b run on a single H100 GPU and the gpt-oss-20b model run within 16GB of memory."
+    }
+  ]
+}

@@ -1,0 +1,81 @@
+{
+  "schema": 1,
+  "id": "willwade/byt5-p2g-multilingual-tiny",
+  "slug": "willwade-byt5-p2g-multilingual-tiny",
+  "author": "willwade",
+  "url": "https://huggingface.co/willwade/byt5-p2g-multilingual-tiny",
+  "created_at": "2026-08-29T05:55:08.000Z",
+  "updated_at": "2026-08-29T15:33:02.000Z",
+  "license": "cc-by-sa-4.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-speech",
+  "library": "transformers",
+  "languages": [
+    "multilingual"
+  ],
+  "tags": [
+    "transformers",
+    "onnx",
+    "safetensors",
+    "t5",
+    "text2text-generation",
+    "p2g",
+    "phoneme-to-grapheme",
+    "ipa",
+    "text-to-speech",
+    "accessibility",
+    "byt5",
+    "multilingual",
+    "dataset:CUNY-CL/wikipron",
+    "base_model:google/byt5-small",
+    "base_model:quantized:google/byt5-small",
+    "license:cc-by-sa-4.0",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 17934080,
+  "parameters_human": "17.9M",
+  "storage_bytes": 162927956,
+  "storage_human": "163 MB",
+  "base_model": "google/byt5-small",
+  "formats": [
+    "onnx",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "willwade/byt5-p2g-multilingual · Hugging Face",
+      "url": "https://huggingface.co/willwade/byt5-p2g-multilingual",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "willwade (Will Wade) - Hugging Face",
+      "url": "https://huggingface.co/willwade/models",
+      "snippet": "willwade/mms-tts-multilingual-models-onnx Text-to-Speech •Updated Jul 24, 2024• 11"
+    },
+    {
+      "title": "GitHub - google-research/byt5",
+      "url": "https://github.com/google-research/byt5",
+      "snippet": "ByT5 is a tokenizer-free extension of the mT5 model. Instead of using a subword vocabulary like most other pretrained language models (BERT, XLM-R, T5, GPT-3), our ByT5 model operates directly on UTF-8 bytes, removing the need for any text preprocessing. Beyond the reduction in system complexity, we find that parameter-matched ByT5 models are competitive with mT5 across a range of tasks, and ..."
+    },
+    {
+      "title": "transformers/docs/source/en/model_doc/byt5.md at main - GitHub",
+      "url": "https://github.com/huggingface/transformers/blob/main/docs/source/en/model_doc/byt5.md",
+      "snippet": "ByT5 is tokenizer-free version of the T5 model designed to works directly on raw UTF-8 bytes. This means it can process any language, more robust to noise like typos, and simpler to use because it doesn&#x27;t require a preprocessing pipeline. You can find all the original ByT5 checkpoints under the Google organization."
+    },
+    {
+      "title": "Will Wade",
+      "url": "https://willwa.de/",
+      "snippet": "Fine-tuning a Language Model: We took a small but powerful AI model (called t5-small) and taught it to correct noisy sentences. Think of this as perfecting a secret family recipe. Developing Algorithmic Code: We also wrote specific computer code designed to fix spelling errors and add spaces where words were run together."
+    }
+  ]
+}

@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "Wenjie1835/Scale_Screen",
+  "slug": "wenjie1835-scale_screen",
+  "author": "Wenjie1835",
+  "url": "https://huggingface.co/Wenjie1835/Scale_Screen",
+  "created_at": "2026-08-29T07:14:53.000Z",
+  "updated_at": "2026-08-29T18:18:53.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "neural-interaction-law",
+    "transformer",
+    "shape-scan",
+    "agop",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 12455334990,
+  "storage_human": "12.5 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "wenjie1835 (Wenjie Sun) · GitHub",
+      "url": "https://github.com/wenjie1835",
+      "snippet": "Master student of Southern University of Science and Technology (SUSTech). - wenjie1835"
+    },
+    {
+      "title": "wenjie1835 - Repositories - GitHub",
+      "url": "https://github.com/wenjie1835?tab=repositories",
+      "snippet": "Master student of Southern University of Science and Technology (SUSTech). - wenjie1835"
+    },
+    {
+      "title": "Wenjie Sun",
+      "url": "https://wenjie1835.com/",
+      "snippet": "Without modifying the core model, DiagECG achieves strong performance across tasks while maintaining generalization to out-of-distribution settings. Extensive experiments demonstrate the effectiveness of each component and highlight the potential of integrating symbolic ECG representations into LLMs for medical reasoning."
+    },
+    {
+      "title": "Reliable AI Systems for Critical Decisions | Scale AI",
+      "url": "https://scale.com/",
+      "snippet": "Scale delivers proven data, evaluations, and outcomes to AI labs, governments, and the Fortune 500."
+    },
+    {
+      "title": "CivArchive (CivitAI Archive) - AI Model Archive",
+      "url": "https://civitaiarchive.com/",
+      "snippet": "Browse and discover AI models from CivitAI, TensorArt, and SeaArt. Community-driven archive preserving access to AI resources."
+    }
+  ]
+}

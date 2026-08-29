@@ -1,0 +1,77 @@
+{
+  "schema": 1,
+  "id": "p4ik/Qwen3.8-27B-MLX-OptiQ-5bit",
+  "slug": "p4ik-qwen3-8-27b-mlx-optiq-5bit",
+  "author": "p4ik",
+  "url": "https://huggingface.co/p4ik/Qwen3.8-27B-MLX-OptiQ-5bit",
+  "created_at": "2026-08-29T07:34:17.000Z",
+  "updated_at": "2026-08-29T18:06:07.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "mlx",
+  "languages": [],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "qwen3_5",
+    "optiq",
+    "quantized",
+    "mixed-precision",
+    "5bit",
+    "apple-silicon",
+    "vision-language",
+    "qwen3.8",
+    "image-text-to-text",
+    "conversational",
+    "base_model:Qwen/Qwen3.8-27B",
+    "base_model:quantized:Qwen/Qwen3.8-27B",
+    "license:apache-2.0",
+    "8-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 5626081520,
+  "parameters_human": "5.63B",
+  "storage_bytes": 20231308840,
+  "storage_human": "20.2 GB",
+  "base_model": "Qwen/Qwen3.8-27B",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "p4ik/Qwen3.8-27B-MLX-OptiQ-4bit · Hugging Face",
+      "url": "https://huggingface.co/p4ik/Qwen3.8-27B-MLX-OptiQ-4bit",
+      "snippet": "A mixed-precision quant of Qwen/Qwen3.8-27B for Apple Silicon, built with mlx-optiq 0.4.21 at 5.54 bits per weight: sensitive tensors keep 8 bits, the rest run at 4."
+    },
+    {
+      "title": "Qwen3.8-27B on Apple Silicon: MLX Setup, VRAM & Reality",
+      "url": "https://www.orcarouter.ai/blog/qwen-3-8-27b-mlx",
+      "snippet": "Qwen3.8 27B runs on Apple Silicon today through MLX. The tag is qwen3.8:27b-mlx in Ollama, added in Ollama v0.32.12, and the 4-bit build downloads at about 18 GB and needs roughly 16-19 GB of unified memory — which makes a 24 GB+ Mac the realistic floor and a 16 GB Mac a no-go. The weights are Apache 2.0, free at the point of use on hardware you own, which is the entire point of the model ..."
+    },
+    {
+      "title": "Qwen3.8-27B - GitHub",
+      "url": "https://github.com/AlibabaCloud-Official/Qwen3.8-27B",
+      "snippet": "Welcome to the repository for Qwen3.8-27B —the latest native multimodal dense open-weight model released by Alibaba&#x27;s Qwen team. Delivering top-tier performance for local hardware, Qwen3.8-27B excels at coding, agentic workflows, and office automation tasks."
+    },
+    {
+      "title": "mlx-community/Qwen3.8-27B-OptiQ-4bit · Hugging Face",
+      "url": "https://huggingface.co/mlx-community/Qwen3.8-27B-OptiQ-4bit",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Qwen3.8-27B - vLLM Ascend",
+      "url": "https://docs.vllm.ai/projects/ascend/en/latest/tutorials/models/Qwen3.8-27B.html",
+      "snippet": "Qwen3.8-27B 1 Introduction ¶ Qwen3.8-27B is the 27-billion-parameter dense member of the Qwen3.8 family, the most capable generation in the Qwen open-model family to date. Built on the architectural foundation of Qwen3.5, it shares the same hybrid-attention backbone as the 2.4T MoE flagship: of its 64 layers, only 16 run full (gated) attention (full_attention_interval: 4) while the other 48 ..."
+    }
+  ]
+}

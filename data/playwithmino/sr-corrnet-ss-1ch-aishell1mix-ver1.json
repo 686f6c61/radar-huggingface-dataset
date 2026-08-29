@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "playwithmino/sr-corrnet-ss-1ch-aishell1mix-ver1",
+  "slug": "playwithmino-sr-corrnet-ss-1ch-aishell1mix-ver1",
+  "author": "playwithmino",
+  "url": "https://huggingface.co/playwithmino/sr-corrnet-ss-1ch-aishell1mix-ver1",
+  "created_at": "2026-08-29T17:49:49.000Z",
+  "updated_at": "2026-08-29T17:50:55.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "audio-to-audio",
+  "library": "sr-corrnet",
+  "languages": [],
+  "tags": [
+    "sr-corrnet",
+    "speech-separation",
+    "aishell1mix",
+    "audio-to-audio",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 56189751,
+  "storage_human": "56 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - dmlguq456/SR_CorrNet_SS: Official Repository of SR-CorrNet for ...",
+      "url": "https://github.com/dmlguq456/SR_CorrNet_SS",
+      "snippet": "SR-CorrNet is an asymmetric encoder-decoder with the Separation-Reconstruction (SepRe) strategy on a TF dual-path backbone: the encoder performs coarse separation, the weight-shared decoder progressively reconstructs speaker-discriminative features, and an attractor-based dynamic split adapts the output stream count to the speaker configuration."
+    },
+    {
+      "title": "[2603.29097] Asymmetric Encoder-Decoder Based on Time-Frequency ...",
+      "url": "https://arxiv.org/abs/2603.29097",
+      "snippet": "To address this issue, we propose SR-CorrNet, an asymmetric encoder-decoder framework that introduces the separation-reconstruction (SepRe) strategy into a TF dual-path backbone."
+    },
+    {
+      "title": "SR_CorrNet_SS/README.md at main - GitHub",
+      "url": "https://github.com/dmlguq456/SR_CorrNet_SS/blob/main/README.md",
+      "snippet": "SR-CorrNet is an asymmetric encoder-decoder with the Separation-Reconstruction (SepRe) strategy on a TF dual-path backbone: the encoder performs coarse separation, the weight-shared decoder progressively reconstructs speaker-discriminative features, and an attractor-based dynamic split adapts the output stream count to the speaker configuration."
+    },
+    {
+      "title": "‎Google Gemini",
+      "url": "https://gemini.google.com/",
+      "snippet": "Meet Gemini, Google&#x27;s AI assistant. Get help with writing, planning, brainstorming, and more. Experience the power of generative AI."
+    },
+    {
+      "title": "SR-CorrNet: Time-Frequency Speech Separation",
+      "url": "https://www.emergentmind.com/papers/2603.29097",
+      "snippet": "SR-CorrNet uses time-frequency correlations in an asymmetric encoder-decoder to robustly separate single and multi-channel speech with state-of-the-art ASR performance."
+    }
+  ]
+}

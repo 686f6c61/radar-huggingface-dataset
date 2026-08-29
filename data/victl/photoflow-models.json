@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "victl/photoflow-models",
+  "slug": "victl-photoflow-models",
+  "author": "victl",
+  "url": "https://huggingface.co/victl/photoflow-models",
+  "created_at": "2026-08-29T14:43:27.000Z",
+  "updated_at": "2026-08-29T14:45:38.000Z",
+  "license": "mixed",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "tflite",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 741839344,
+  "storage_human": "742 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - outinspace/photoflow-models: ONNX model assets for photoflow ...",
+      "url": "https://github.com/outinspace/photoflow-models",
+      "snippet": "ONNX model assets for photoflow-api. Contribute to outinspace/photoflow-models development by creating an account on GitHub."
+    },
+    {
+      "title": "GitHub - Visionary-Laboratory/PhotoFlow: PhotoFlow: Agentic 3D Virtual ...",
+      "url": "https://github.com/Visionary-Laboratory/PhotoFlow",
+      "snippet": "PhotoFlow is an agentic framework for language-conditioned virtual photography in controllable 3D scenes. Given a Blender scene and a natural-language photography intent, PhotoFlow searches for an executable camera state, including camera pose, look-at target, lens, aperture, and aspect ratio, then renders the final photograph."
+    },
+    {
+      "title": "PhotoFlow: Agentic 3D Virtual Photography Missions",
+      "url": "https://benchmarklist.com/benchmarks/photoflow_agentic_3d_virtual_photography_missions/",
+      "snippet": "Recent progress in vision-language models makes this kind of spatial agent increasingly plausible, but the task stresses two capabilities that remain hard to evaluate together: complex 3D spatial understanding and abstract aesthetic judgment. We introduce PhotoFlow, a Director-Reviewer-Reflector agent for closed-loop camera search."
+    },
+    {
+      "title": "[2605.23771] PhotoFlow: Agentic 3D Virtual Photography Missions",
+      "url": "https://arxiv.org/abs/2605.23771",
+      "snippet": "Virtual photography asks an agent to enter a prepared 3D scene with no preselected camera pose or reference image, infer a suitable shot from scene information and a language intent, choose executable camera parameters, and render the final photograph. Recent progress in vision-language models makes this kind of spatial agent increasingly plausible, but the task stresses two capabilities that ..."
+    },
+    {
+      "title": "Autonomous agents pick camera angles in 3D scenes without ... - LinkedIn",
+      "url": "https://www.linkedin.com/posts/igor-ivanov-ait_agenticai-aiagents-visionlanguagemodels-activity-7466798137442197504-Zd52",
+      "snippet": "Autonomous agents are picking camera angles in 3D scenes with no human framing. That gap is closing faster than most CV teams expect. The PhotoFlow paper introduces a benchmark where an agent ..."
+    }
+  ]
+}

@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "mintmini/gemma-2b-it-coin-expert-RAG",
+  "slug": "mintmini-gemma-2b-it-coin-expert-rag",
+  "author": "mintmini",
+  "url": "https://huggingface.co/mintmini/gemma-2b-it-coin-expert-RAG",
+  "created_at": "2026-08-29T12:24:00.000Z",
+  "updated_at": "2026-08-29T12:24:08.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 53994341,
+  "storage_human": "54 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "google/gemma-2b-it · Hugging Face",
+      "url": "https://huggingface.co/google/gemma-2b-it",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "google/gemma-2-2b-it · Hugging Face",
+      "url": "https://huggingface.co/google/gemma-2-2b-it",
+      "snippet": "Advanced Usage Torch compile Torch compile is a method for speeding-up the inference of PyTorch modules. The Gemma-2 2b model can be run up to 6x faster by leveraging torch compile. Note that two warm-up steps are required before the full inference speed is realised:"
+    },
+    {
+      "title": "GitHub - google-deepmind/gemma: Gemma open-weight LLM library, from ...",
+      "url": "https://github.com/google-deepmind/gemma",
+      "snippet": "Gemma is a family of open-weights Large Language Model (LLM) by Google DeepMind, based on Gemini research and technology. This repository contains the implementation of the gemma PyPI package. A JAX library to use and fine-tune Gemma. For examples and use cases, see our documentation. Please report issues and feedback in our GitHub."
+    },
+    {
+      "title": "GitHub - inferless/gemma-2b-it: 2B instruct-tuned model for delivering ...",
+      "url": "https://github.com/inferless/Gemma-2B-it",
+      "snippet": "2B instruct-tuned model designed for coherent, instruction-following responses across diverse tasks, optimized for GPU performance."
+    },
+    {
+      "title": "Retrieval Augmented Generation (RAG) using Gemma to Explain Basic Data ...",
+      "url": "https://ruqyai.github.io/posts/2024/04/blog-post-1/",
+      "snippet": "In this blog post, we&#x27;ll embark on a hands-on journey, building an AI-powered explainer for data science concepts using the RAG model and the Gemma language model. Why RAG and Gemma? RAG is a powerful technique that combines a retriever model (to find relevant information) with a generator model (to create human-like text)."
+    }
+  ]
+}

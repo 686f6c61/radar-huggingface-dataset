@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "V4ldeLund/gemma-3-1b-it-faroese-experiment1",
+  "slug": "v4ldelund-gemma-3-1b-it-faroese-experiment1",
+  "author": "V4ldeLund",
+  "url": "https://huggingface.co/V4ldeLund/gemma-3-1b-it-faroese-experiment1",
+  "created_at": "2026-08-29T16:31:01.000Z",
+  "updated_at": "2026-08-29T16:40:54.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gemma3_text",
+    "text-generation",
+    "generated_from_trainer",
+    "sft",
+    "trl",
+    "conversational",
+    "base_model:google/gemma-3-1b-it",
+    "base_model:finetune:google/gemma-3-1b-it",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 999885952,
+  "parameters_human": "999.9M",
+  "storage_bytes": 8032635368,
+  "storage_human": "8.0 GB",
+  "base_model": "google/gemma-3-1b-it",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "google/gemma-3-1b-it · Hugging Face",
+      "url": "https://huggingface.co/google/gemma-3-1b-it",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Gemma 3 Technical Report - arXiv.org",
+      "url": "https://arxiv.org/html/2503.19786v1",
+      "snippet": "Abstract We introduce Gemma 3, a multimodal addition to the Gemma family of lightweight open models, ranging in scale from 1 to 27 billion parameters. This version introduces vision understanding abilities, a wider coverage of languages and longer context - at least 128K tokens. We also change the architecture of the model to reduce the KV-cache memory that tends to explode with long context ..."
+    },
+    {
+      "title": "Gemma 3 — Google DeepMind",
+      "url": "https://deepmind.google/models/gemma/gemma-3/",
+      "snippet": "Gemma 3 is the most capable model that can run on a single GPU or TPU. Efficient on workstations, laptops, and even smartphones, allowing developers to build responsible AI applications at scale."
+    },
+    {
+      "title": "Gemma 3 (1B) - AI Model Index",
+      "url": "https://www.modelindex.org/index.php/model/gemma-3-1b/",
+      "snippet": "ProviderGoogle Model Codegoogle/gemma-3-1b-it Model TypeMultimodal LicenceOpen Source Status Active Deployment OptionSelf-hosted only Input ModalityText, Image Output ModalityText Context Length 128k Release Date March 10, 2025 Documentation URL https://ai.google.dev/gemma/docs/core ↗"
+    },
+    {
+      "title": "Erland/gemma-3-1b-it-test · Hugging Face",
+      "url": "https://huggingface.co/Erland/gemma-3-1b-it-test",
+      "snippet": "Erland / gemma-3-1b-it-test like 0 Text Generation Transformers Safetensors English gemma3_text text-generation-inference unsloth conversational 4-bit precision bitsandbytes License:apache-2.0 Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    }
+  ]
+}

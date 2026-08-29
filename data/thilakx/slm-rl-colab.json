@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "thilakx/slm-rl-colab",
+  "slug": "thilakx-slm-rl-colab",
+  "author": "thilakx",
+  "url": "https://huggingface.co/thilakx/slm-rl-colab",
+  "created_at": "2026-08-29T18:14:15.000Z",
+  "updated_at": "2026-08-29T18:14:19.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "lora",
+    "transformers",
+    "reinforcement-learning",
+    "atari",
+    "slm-rl",
+    "boxing",
+    "text-generation",
+    "base_model:LiquidAI/LFM2.5-1.2B-Instruct",
+    "base_model:adapter:LiquidAI/LFM2.5-1.2B-Instruct",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 22241248,
+  "storage_human": "22 MB",
+  "base_model": "LiquidAI/LFM2.5-1.2B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Thilakrayapan/slm-rl-colab at main - Hugging Face",
+      "url": "https://huggingface.co/Thilakrayapan/slm-rl-colab/tree/main",
+      "snippet": "Thilakrayapan / slm-rl-colab like 0 Text Generation PEFT Safetensors Transformers lora reinforcement-learning atari slm-rl boxing License:apache-2.0 Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "GitHub - CraftsMan-Labs/SLM-RL",
+      "url": "https://github.com/CraftsMan-Labs/SLM-RL",
+      "snippet": "SLM-RL A self-improving game gymnasium for small language models. Small language models learn to play games through reinforcement learning: the model plays games in text-native environments, every decision is collected into a reusable dataset, the model is automatically fine-tuned on its own experience, and the improved model re-enters play."
+    },
+    {
+      "title": "Google Colab",
+      "url": "https://colab.research.google.com/",
+      "snippet": "Learn how to bring the power of Colab straight to your terminal. Read the full announcement."
+    },
+    {
+      "title": "GRP-AI/SLM-RAG-Pipeline - GitHub",
+      "url": "https://github.com/GRP-AI/SLM-RAG-Pipeline",
+      "snippet": "📘 SLM‑RAG: Lightweight Retrieval‑Augmented Generation on Colab A minimal, fast, and efficient Retrieval‑Augmented Generation (RAG) pipeline built using Small Language Models (SLMs), MiniLM embeddings, and ChromaDB, fully optimized to run on Google Colab&#x27;s free GPU tier. This notebook shows how to combine a 4‑bit‑quantized TinyLlama model with semantic retrieval to produce ..."
+    },
+    {
+      "title": "Lab: Prepare The Dataset For Training an SLM - Google Colab",
+      "url": "https://colab.research.google.com/github/google-deepmind/ai-foundations/blob/master/course_1/gdm_lab_1_4_prepare_the_dataset_for_training_a_slm.ipynb",
+      "snippet": "This is the end of the Prepare The Dataset For Training a SLM lab. This lab guided you through the steps necessary for preparing a text dataset to be used for training a small language model (SLM)."
+    }
+  ]
+}

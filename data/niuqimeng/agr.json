@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "niuqimeng/AGR",
+  "slug": "niuqimeng-agr",
+  "author": "niuqimeng",
+  "url": "https://huggingface.co/niuqimeng/AGR",
+  "created_at": "2026-08-21T05:40:27.000Z",
+  "updated_at": "2026-08-29T12:37:13.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "generated_from_trainer",
+    "grpo",
+    "trl",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 16192232173,
+  "storage_human": "16.2 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "niuqimeng/AGR · Hugging Face",
+      "url": "https://huggingface.co/niuqimeng/AGR",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "niuqimeng/AGR at main - Hugging Face",
+      "url": "https://huggingface.co/niuqimeng/AGR/tree/main/model",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GR_niuqimeng - GitHub",
+      "url": "https://github.com/niuqimeng/GR_niuqimeng",
+      "snippet": "Contribute to niuqimeng/GR_niuqimeng development by creating an account on GitHub."
+    },
+    {
+      "title": "[PDF] Enhancing Group Recommendation with Memory-Augmented Reasoning in ...",
+      "url": "https://www.semanticscholar.org/paper/Enhancing-Group-Recommendation-with-Reasoning-in-Niu-Hao/137dac17d09a94ad5fdc5cbc7b836401f34d406c",
+      "snippet": "This work proposes AGR, a LLM-based agent, which consists of a Memory Module and a Reasoning Module, which adopts the Reinforcement Fine-Tuning (RFT) paradigm, where it significantly outperforms existing state-of-the-art methods in both recommendation accuracy and explainability. The core challenge in group recommendation lies in modeling the dynamic evolution of user preferences and explain ..."
+    },
+    {
+      "title": "AgriGPT: a Large Language Model Ecosystem for Agriculture",
+      "url": "https://arxiv.org/html/2508.08632",
+      "snippet": "Together, the model, data engine, dataset, and benchmark form a coherent LLM ecosystem that not only advances agricultural AI research but also enables equitable and practical deployment in real-world, low-resource farming communities—highlighting its broader social impact and its potential to foster inclusive digital transformation in ..."
+    }
+  ]
+}

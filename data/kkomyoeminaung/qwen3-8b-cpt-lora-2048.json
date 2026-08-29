@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "kkomyoeminaung/qwen3-8b-cpt-lora-2048",
+  "slug": "kkomyoeminaung-qwen3-8b-cpt-lora-2048",
+  "author": "kkomyoeminaung",
+  "url": "https://huggingface.co/kkomyoeminaung/qwen3-8b-cpt-lora-2048",
+  "created_at": "2026-08-29T11:39:11.000Z",
+  "updated_at": "2026-08-29T16:09:47.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "generated_from_trainer",
+    "unsloth",
+    "trl",
+    "sft",
+    "base_model:kkomyoeminaung/qwen3-8b-myanmar-v3",
+    "base_model:finetune:kkomyoeminaung/qwen3-8b-myanmar-v3",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 10935690904,
+  "storage_human": "10.9 GB",
+  "base_model": "kkomyoeminaung/qwen3-8b-myanmar-v3",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "kkomyoeminaung/qwen3-14b-cpt-lora-2048 · Hugging Face",
+      "url": "https://huggingface.co/kkomyoeminaung/qwen3-14b-cpt-lora-2048",
+      "snippet": "kkomyoeminaung / qwen3-14b-cpt-lora-2048 like 0 Safetensors Model card FilesFiles and versions xet Community Copy to bucket new No model card Downloads last month -"
+    },
+    {
+      "title": "Qwen3-Next: Towards Ultimate Training & Inference Efficiency",
+      "url": "https://qwen.ai/blog?id=4074cca80393150c248e508aa62983f9cb7d27cd&from=research.latest-advancements-list",
+      "snippet": "Based on this new architecture, we train the Qwen3-Next-80B-A3B-Base model — an 80-billion-parameter model that activates only 3 billion parameters during inference. This base model achieves performance comparable to (or even slightly better than) the dense Qwen3-32B model, while using less than 10% of its training cost (GPU hours). In inference, especially with context lengths over 32K ..."
+    },
+    {
+      "title": "Qwen3 Technical Report - arXiv.org",
+      "url": "https://arxiv.org/pdf/2505.09388",
+      "snippet": "Abstract In this work, we present Qwen3, the latest version of the Qwen model family. Qwen3 comprises a series of large language models (LLMs) designed to advance performance, efficiency, and multilingual capabilities. The Qwen3 series includes models of both dense and Mixture-of-Expert (MoE) architectures, with parameter scales ranging from 0.6 to 235 billion. A key innovation in Qwen3 is the ..."
+    },
+    {
+      "title": "Qwen/Qwen3-8B · [Fine-tuning] Implementation and ... - Hugging Face",
+      "url": "https://huggingface.co/Qwen/Qwen3-8B/discussions/3",
+      "snippet": "Hello, everyone! We are thrilled to hear about the open-source release of Qwen3 and Qwen3-MoE. The ms-swift large model training framework has provided initial support for CPT/SFT/DPO/GRPO training..."
+    },
+    {
+      "title": "GitHub - QwenLM/Qwen3: Qwen3 is the large language model series ...",
+      "url": "https://github.com/QwenLM/Qwen3",
+      "snippet": "Qwen3-Instruct-2507 is the updated version of the previous Qwen3 non-thinking mode, featuring the following key enhancements: Significant improvements in general capabilities, including instruction following, logical reasoning, text comprehension, mathematics, science, coding and tool usage."
+    }
+  ]
+}

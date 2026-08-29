@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "IanHHH698/gr00t_task2_UM1_epi_200_step_20000_batch_32",
+  "slug": "ianhhh698-gr00t_task2_um1_epi_200_step_20000_batch_32",
+  "author": "IanHHH698",
+  "url": "https://huggingface.co/IanHHH698/gr00t_task2_UM1_epi_200_step_20000_batch_32",
+  "created_at": "2026-08-29T18:33:02.000Z",
+  "updated_at": "2026-08-29T18:33:50.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "robotics",
+    "groot",
+    "dataset:cbrian/merge_task2_UM_epi_200",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 2413522880,
+  "parameters_human": "2.41B",
+  "storage_bytes": 6964817440,
+  "storage_human": "7.0 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "pi05_task1_UM1_2_epi_200_step_20000_batch_32 - Hugging Face",
+      "url": "https://huggingface.co/IanHHH698/pi05_task1_UM1_2_epi_200_step_20000_batch_32",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "NVIDIA/Isaac-GR00T: NVIDIA Isaac GR00T N1.7 - GitHub",
+      "url": "https://github.com/NVIDIA/Isaac-GR00T",
+      "snippet": "NVIDIA Isaac GR00T N1.7 is an open vision-language-action (VLA) model for generalized humanoid robot skills. This cross-embodiment model takes multimodal input, including language and images, to perform manipulation tasks in diverse environments."
+    },
+    {
+      "title": "Perplexity AI",
+      "url": "https://www.perplexity.ai/",
+      "snippet": "Perplexity is a free AI-powered answer engine that provides accurate, trusted, and real-time answers to any question."
+    },
+    {
+      "title": "Isaac GR00T - Generalist Robot 00 Technology | NVIDIA Developer",
+      "url": "https://developer.nvidia.com/isaac/gr00t",
+      "snippet": "NVIDIA Isaac GR00T Generalist Robot 00 Technology NVIDIA Isaac™ GR00T is an open reference platform for general-purpose humanoid robots that enables developers to more efficiently build, train, test, and deploy AI-powered robots. It comprises open data and data pipelines, an open robot foundation model, simulation frameworks, middleware, CUDA-X accelerated runtime libraries, and NVIDIA ..."
+    },
+    {
+      "title": "‎Google Gemini",
+      "url": "https://gemini.google.com/",
+      "snippet": "Meet Gemini, Google&#x27;s AI assistant. Get help with writing, planning, brainstorming, and more. Experience the power of generative AI."
+    }
+  ]
+}

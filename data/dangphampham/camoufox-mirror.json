@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "DangPhamPham/camoufox-mirror",
+  "slug": "dangphampham-camoufox-mirror",
+  "author": "DangPhamPham",
+  "url": "https://huggingface.co/DangPhamPham/camoufox-mirror",
+  "created_at": "2026-08-29T12:01:32.000Z",
+  "updated_at": "2026-08-29T12:13:02.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1741940482,
+  "storage_human": "1.7 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - jo-inc/camofox-browser: Stealth headless browser for AI agents ...",
+      "url": "https://github.com/jo-inc/camofox-browser",
+      "snippet": "camofox-browser Anti-detection browser server for AI agents, powered by Camoufox Standing on the mighty shoulders of Camoufox - a Firefox fork with fingerprint spoofing at the C++ level. Built by the team behind jo, a personal AI agent that runs half on your Mac, half on a dedicated cloud machine just for you -- with zero maintenance needed."
+    },
+    {
+      "title": "Introduction | Camoufox",
+      "url": "https://camoufox.com/",
+      "snippet": "AI automations need to run several agents in parallel. Camoufox is a debloated Firefox build stripped of telemetry, background services, and UI overhead running at ~200MB vs Chrome&#x27;s 800MB+."
+    },
+    {
+      "title": "DangPhamPham (pham dang) - Hugging Face",
+      "url": "https://huggingface.co/DangPhamPham/models",
+      "snippet": "User profile of pham dang on Hugging Face"
+    },
+    {
+      "title": "GitHub - daijro/camoufox: Anti-detect browser",
+      "url": "https://github.com/daijro/camoufox",
+      "snippet": "Introduction Camoufox is a Firefox fork engineered for web scraping and AI agents. It is headless, undetectable, and optimized to run at scale. Every run gets a fresh identity drawn from the real-world distribution of devices, so it blends into normal traffic instead of standing out."
+    },
+    {
+      "title": "camofox-browser - Browse /camoufox-backup-373994613 at SourceForge.net",
+      "url": "https://sourceforge.net/projects/camofox-browser.mirror/files/camoufox-backup-373994613/",
+      "snippet": "Headless browser automation server for AI agents to visit sites This is an exact mirror of the camofox-browser project, hosted at https://github.com/jo-inc/camofox-browser."
+    }
+  ]
+}

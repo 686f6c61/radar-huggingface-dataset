@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "ZhengPeng7/BiRefNet-DIS5K",
+  "slug": "zhengpeng7-birefnet-dis5k",
+  "author": "ZhengPeng7",
+  "url": "https://huggingface.co/ZhengPeng7/BiRefNet-DIS5K",
+  "created_at": "2024-08-01T08:59:05.000Z",
+  "updated_at": "2026-08-29T11:41:57.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "image-segmentation",
+  "library": "birefnet",
+  "languages": [],
+  "tags": [
+    "birefnet",
+    "safetensors",
+    "background-removal",
+    "mask-generation",
+    "Dichotomous Image Segmentation",
+    "pytorch_model_hub_mixin",
+    "model_hub_mixin",
+    "image-segmentation",
+    "custom_code",
+    "arxiv:2401.03407",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 2,
+  "downloads_30d": 9332,
+  "trending_score": 0,
+  "parameters": 220700242,
+  "parameters_human": "220.7M",
+  "storage_bytes": 884878856,
+  "storage_human": "885 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ZhengPeng7/BiRefNet-DIS5K · Hugging Face",
+      "url": "https://huggingface.co/ZhengPeng7/BiRefNet-DIS5K",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GitHub - ZhengPeng7/BiRefNet: [CAAI AIR&#x27;24] Bilateral Reference for ...",
+      "url": "https://github.com/ZhengPeng7/BiRefNet",
+      "snippet": "Oct 6, 2024: We uploaded the BiRefNet-matting model for general trimap-free matting use. Sep 24, 2024: We uploaded the BiRefNet_lite-2K model, which takes inputs in a much higher resolution (2560x1440). We also added the notebook for inference on videos."
+    },
+    {
+      "title": "ZhengPeng7/BiRefNet-DIS5K at main - Hugging Face",
+      "url": "https://huggingface.co/ZhengPeng7/BiRefNet-DIS5K/tree/main",
+      "snippet": "BiRefNet_config.py Safe 298 Bytes Initial uploading of BiRefNet model for DIS. 3 months ago README.md Safe 3.91 kB"
+    },
+    {
+      "title": "GitHub - ansj11/BiRefNet",
+      "url": "https://github.com/ansj11/BiRefNet",
+      "snippet": "This repo is the official implementation of \"Bilateral Reference for High-Resolution Dichotomous Image Segmentation\" (CAAI AIR 2024). For more general use of our BiRefNet, I extended the original academic one to more general ones for better real-life application. DIS DIS5K-TR swin_v1_large google ..."
+    },
+    {
+      "title": "ZhengPeng7/BiRefNet | DeepWiki",
+      "url": "https://deepwiki.com/ZhengPeng7/BiRefNet",
+      "snippet": "Overview Relevant source files BiRefNet (Bilateral Reference for High-Resolution Dichotomous Image Segmentation) is a PyTorch-based deep learning framework for high-resolution binary image segmentation. The system is designed as a modular, configuration-driven architecture that supports five primary segmentation tasks: Dichotomous Image Segmentation (DIS5K), Camouflaged Object Detection (COD ..."
+    }
+  ]
+}

@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "onnx-community/face-emotion-detection-ONNX",
+  "slug": "onnx-community-face-emotion-detection-onnx",
+  "author": "onnx-community",
+  "url": "https://huggingface.co/onnx-community/face-emotion-detection-ONNX",
+  "created_at": "2026-08-29T13:52:56.000Z",
+  "updated_at": "2026-08-29T13:53:04.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-classification",
+  "library": "transformers.js",
+  "languages": [],
+  "tags": [
+    "transformers.js",
+    "onnx",
+    "vit",
+    "image-classification",
+    "vision",
+    "facial-expression-recognition",
+    "emotion-detection",
+    "pytorch",
+    "transformers",
+    "dataset:FER2013",
+    "base_model:abhilash88/face-emotion-detection",
+    "base_model:quantized:abhilash88/face-emotion-detection",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 795826965,
+  "storage_human": "796 MB",
+  "base_model": "abhilash88/face-emotion-detection",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - FaceONNX/FaceONNX: Face recognition and analytics library ...",
+      "url": "https://github.com/FaceONNX/FaceONNX",
+      "snippet": "FaceONNX is a face recognition and analytics library based on ONNX runtime. It containts ready-made deep neural networks for face detection and landmarks extraction, gender and age classification, emotion and beauty classification, embeddings comparison and more."
+    },
+    {
+      "title": "GitHub - shangeth/Facial-Emotion-Recognition-PyTorch-ONNX",
+      "url": "https://github.com/shangeth/Facial-Emotion-Recognition-PyTorch-ONNX",
+      "snippet": "Facial-Emotion-Recognition-PyTorch-ONNX Dataset 1. FER2013 The data consists of 48x48 pixel grayscale images of faces. The faces have been automatically registered so that the face is more or less centered and occupies about the same amount of space in each image."
+    },
+    {
+      "title": "ONNX Community - Hugging Face",
+      "url": "https://huggingface.co/onnx-community",
+      "snippet": "Org profile for ONNX Community on Hugging Face, the AI community building the future."
+    },
+    {
+      "title": "onnxmodelzoo/emotion-ferplus-8 · Hugging Face",
+      "url": "https://huggingface.co/onnxmodelzoo/emotion-ferplus-8",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "ONNX Runtime | Models",
+      "url": "https://onnxruntime.ai/models",
+      "snippet": "ONNX Community (hosted on Hugging Face) Access, share, and discuss ONNX models published to Hugging Face by members of the ONNX Community."
+    }
+  ]
+}

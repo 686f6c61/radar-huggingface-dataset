@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "shenxing600/Qwen-Edit-2509-Multiple-angles",
+  "slug": "shenxing600-qwen-edit-2509-multiple-angles",
+  "author": "shenxing600",
+  "url": "https://huggingface.co/shenxing600/Qwen-Edit-2509-Multiple-angles",
+  "created_at": "2026-08-29T16:12:47.000Z",
+  "updated_at": "2026-08-29T16:12:47.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-to-image",
+  "library": "diffusers",
+  "languages": [],
+  "tags": [
+    "diffusers",
+    "lora",
+    "image-to-image",
+    "base_model:Qwen/Qwen-Image-Edit-2509",
+    "base_model:adapter:Qwen/Qwen-Image-Edit-2509",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 236117032,
+  "storage_human": "236 MB",
+  "base_model": "Qwen/Qwen-Image-Edit-2509",
+  "formats": [
+    "diffusers"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "dx8152/Qwen-Edit-2509-Multiple-angles · Hugging Face",
+      "url": "https://huggingface.co/dx8152/Qwen-Edit-2509-Multiple-angles",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "dx8152/Qwen-Edit-2509-Multiple-angles at main - Hugging Face",
+      "url": "https://huggingface.co/dx8152/Qwen-Edit-2509-Multiple-angles/tree/main",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Qwen Edit2509 Multi-angle Storyboard Direct Output",
+      "url": "https://civitai.com/models/2096307/qwen-edit2509-multi-angle-storyboard-direct-output",
+      "snippet": "Model link： https://huggingface.co/dx8152/Qwen-Edit-2509-Multiple-angles The workflow is very simple to use, and I have uploaded a tutorial on how to use it on YouTube."
+    },
+    {
+      "title": "Qwen-Edit-2509-Multiple-angles · Models",
+      "url": "https://www.modelscope.cn/models/dx8152/Qwen-Edit-2509-Multiple-angles",
+      "snippet": "Updated 2025/11/2: Some people mentioned that the model has an unstable consistency issue. I have re-uploaded a version with more training iterations, hoping to fix the consistency problem. Welcome everyone to use Lora of Qwen-Edit-2509, its performance is very amazing! There are no trigger words. You can control the camera to move up, down, left, and right, as well as rotate it to the left ..."
+    },
+    {
+      "title": "Qwen-Edit-2509-Multiple-angles - SeaArt AI Model",
+      "url": "https://www.seaart.ai/models/detail/d42naute878c73eq3jq0",
+      "snippet": "Explore Qwen-Edit-2509-Multiple-angles model on SeaArt AI. Transform your idea into professional-quality AI-generated images and videos with our free, easy-to-use platform."
+    }
+  ]
+}

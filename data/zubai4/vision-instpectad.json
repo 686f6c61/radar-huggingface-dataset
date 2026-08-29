@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "zubai4/Vision-InstpectAD",
+  "slug": "zubai4-vision-instpectad",
+  "author": "zubai4",
+  "url": "https://huggingface.co/zubai4/Vision-InstpectAD",
+  "created_at": "2026-08-29T16:35:02.000Z",
+  "updated_at": "2026-08-29T16:57:38.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "onnx",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 5028223516,
+  "storage_human": "5.0 GB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - CareLink-Team/VisionInspect-AI: Intelligent Visual Quality ...",
+      "url": "https://github.com/CareLink-Team/VisionInspect-AI",
+      "snippet": "VisionInspect AI Intelligent Visual Quality Inspection System using Machine Learning and OpenCV An advanced machine learning-based quality inspection system that uses computer vision and classical ML models to detect defects in smartphone screens."
+    },
+    {
+      "title": "AI Visual Inspection in Manufacturing: 2026 Guide",
+      "url": "https://ifactoryapp.com/inspection-management/ai-visual-inspection-manufacturing-guide",
+      "snippet": "An AI visual inspection system has five layers — each must be correctly specified and connected for the system to achieve production-grade accuracy. A weakness in any layer propagates through the entire stack: inadequate lighting produces images the AI model cannot learn from; insufficient edge compute creates inference latency that breaks real-time inspection at production speed."
+    },
+    {
+      "title": "Vision Language Models (VLMs): How AI is Learning to See and ... - LinkedIn",
+      "url": "https://www.linkedin.com/pulse/vision-language-models-vlms-how-ai-learning-see-sharjeel-zubair-ggv8f",
+      "snippet": "For years, Large Language Models (LLMs) have demonstrated remarkable ability to read, interpret, and generate human language. But what happens when we introduce images—like scanned receipts ..."
+    },
+    {
+      "title": "GitHub - Musab-Zubair/VehicleVisionAI: VehicleVision AI is a deep ...",
+      "url": "https://github.com/Musab-Zubair/VehicleVisionAI",
+      "snippet": "VehicleVision AI is a deep learning image classification project that identifies the type of vehicle from an uploaded image. The model classifies images into Bus, Car, Motorcycle, and Truck using TensorFlow and MobileNetV2 transfer learning."
+    },
+    {
+      "title": "AI Vision Inspection for Manufacturing: Automated Defect Detection ...",
+      "url": "https://ifactoryapp.com/article/ai-vision-inspection-manufacturing-defect-detection",
+      "snippet": "Discover how AI vision inspection systems detect surface defects, assembly errors, and product anomalies in real time. Improve manufacturing quality control with computer vision."
+    }
+  ]
+}

@@ -1,0 +1,77 @@
+{
+  "schema": 1,
+  "id": "JonaPoka/Qwen3.5-4B-Finnish",
+  "slug": "jonapoka-qwen3-5-4b-finnish",
+  "author": "JonaPoka",
+  "url": "https://huggingface.co/JonaPoka/Qwen3.5-4B-Finnish",
+  "created_at": "2026-08-29T12:54:50.000Z",
+  "updated_at": "2026-08-29T12:54:56.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [
+    "fi",
+    "en"
+  ],
+  "tags": [
+    "peft",
+    "safetensors",
+    "finnish",
+    "qwen3.5",
+    "qwen",
+    "lora",
+    "instruct",
+    "conversational",
+    "text-generation",
+    "fi",
+    "en",
+    "base_model:Qwen/Qwen3.5-4B",
+    "base_model:adapter:Qwen/Qwen3.5-4B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 279784269,
+  "storage_human": "280 MB",
+  "base_model": "Qwen/Qwen3.5-4B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Qwen/Qwen3.5-4B · Hugging Face",
+      "url": "https://huggingface.co/Qwen/Qwen3.5-4B",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "qwen3.5:4b - ollama.com",
+      "url": "https://ollama.com/library/qwen3.5:4b",
+      "snippet": "Qwen 3.5 is a family of open-source multimodal models that delivers exceptional utility and performance."
+    },
+    {
+      "title": "Qwen3.5 - a Qwen Collection - Hugging Face",
+      "url": "https://huggingface.co/collections/Qwen/qwen35",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Qwen 3.5: The Complete Guide - Benchmarks, Local Setup, and How It ...",
+      "url": "https://techie007.substack.com/p/qwen-35-the-complete-guide-benchmarks",
+      "snippet": "Alibaba&#x27;s Qwen team dropped Qwen 3.5 on February 16, 2026, and it immediately shook up the AI landscape. Built on a sparse Mixture-of-Experts (MoE) architecture, the flagship Qwen3.5-397B-A17B packs 397 billion total parameters while activating only 17 billion per forward pass - delivering frontier-level intelligence at a fraction of the compute cost. Released under the Apache 2.0 license ..."
+    },
+    {
+      "title": "Qwen 3.5: All 8 Models, Benchmarks & Local Setup Guide",
+      "url": "https://qwen-ai.com/qwen-3-5/",
+      "snippet": "Qwen 3.5: The Complete Guide to Every Model in the Family Qwen 3.5 isn&#x27;t a single model. It&#x27;s a family of eight open-weight models ranging from 0.8B to 397B parameters, all released under Apache 2.0, all natively multimodal (text, image, video), and all built on a hybrid architecture that mixes linear attention with traditional transformers."
+    }
+  ]
+}

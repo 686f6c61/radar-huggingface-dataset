@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "Hiten1896/reinforce-Pixelcopter-PLE-v0",
+  "slug": "hiten1896-reinforce-pixelcopter-ple-v0",
+  "author": "Hiten1896",
+  "url": "https://huggingface.co/Hiten1896/reinforce-Pixelcopter-PLE-v0",
+  "created_at": "2026-08-29T16:55:37.000Z",
+  "updated_at": "2026-08-29T17:04:23.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "reinforcement-learning",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "CartPole-v1",
+    "reinforce",
+    "reinforcement-learning",
+    "custom-implementation",
+    "deep-rl-class",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 3657,
+  "storage_human": "3657 B",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "KraTUZen/Reinforce-PixelCopter · Hugging Face",
+      "url": "https://huggingface.co/KraTUZen/Reinforce-PixelCopter",
+      "snippet": "The agent is trained using the Reinforce algorithm, which updates policy parameters based on episodic returns. The environment is Pixelcopter-PLE-v0, a pixel-based game where the agent must keep the helicopter flying while avoiding obstacles."
+    },
+    {
+      "title": "RaiseYourHand/PixelCopter-reinforce · Hugging Face",
+      "url": "https://huggingface.co/RaiseYourHand/PixelCopter-reinforce",
+      "snippet": "This is a trained model of a Reinforce agent playing Pixelcopter-PLE-v0 . To learn to use this model and train yours check Unit 4 of the Deep Reinforcement Learning Course: https://huggingface.co/deep-rl-course/unit4/introduction"
+    },
+    {
+      "title": "Emperor-WS/Reinforce-pixelcopter - AI Model Zoo - BimAnt",
+      "url": "https://zoo.bimant.com/model/262516",
+      "snippet": "This is a trained model of a Reinforce agent playing Pixelcopter-PLE-v0 . To learn to use this model and train yours check Unit 4 of the Deep Reinforcement Learning Course: https://huggingface.co/deep-rl-course/unit4/introduction"
+    },
+    {
+      "title": "vind/Reinforce-PixelCopter-PLE-v0_1 - AI Model Zoo - BimAnt",
+      "url": "https://zoo.bimant.com/model/197428",
+      "snippet": "This is a trained model of a Reinforce agent playing Pixelcopter-PLE-v0 . To learn to use this model and train yours check Unit 4 of the Deep Reinforcement Learning ..."
+    },
+    {
+      "title": "unit4.ipynb - Colab",
+      "url": "https://colab.research.google.com/github/huggingface/deep-rl-class/blob/main/notebooks/unit4/unit4.ipynb",
+      "snippet": "To validate this hands-on for the certification process, you need to push your trained models to the Hub. Get a result of >= 350 for Cartpole-v1. Get a result of >= 5 for PixelCopter. To find your result, go to the leaderboard and find your model, the result = mean_reward - std of reward. If you don&#x27;t see your model on the leaderboard, go at the bottom of the leaderboard page and click on the ..."
+    }
+  ]
+}

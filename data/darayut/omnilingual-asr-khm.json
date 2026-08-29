@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "Darayut/Omnilingual-ASR-Khm",
+  "slug": "darayut-omnilingual-asr-khm",
+  "author": "Darayut",
+  "url": "https://huggingface.co/Darayut/Omnilingual-ASR-Khm",
+  "created_at": "2026-08-29T17:28:23.000Z",
+  "updated_at": "2026-08-29T17:41:19.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "automatic-speech-recognition",
+  "library": null,
+  "languages": [
+    "km"
+  ],
+  "tags": [
+    "safetensors",
+    "automatic-speech-recognition",
+    "khmer",
+    "ctc",
+    "km",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 320014139,
+  "parameters_human": "320.0M",
+  "storage_bytes": 1280105116,
+  "storage_human": "1.3 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Omni ASR Kh - a Hugging Face Space by Darayut",
+      "url": "https://huggingface.co/spaces/Darayut/omni-asr-kh",
+      "snippet": "Fine-tuned Meta Omnilingual ASR for Khmer, decoded with a character-level KenLM 6-gram fused into CTC prefix beam search. CER: 3.49% in-domain, 14.13% on out-of-domain FLEURS."
+    },
+    {
+      "title": "GitHub - facebookresearch/omnilingual-asr: Omnilingual ASR Open-Source ...",
+      "url": "https://github.com/facebookresearch/omnilingual-asr",
+      "snippet": "Omnilingual ASR is an open-source speech recognition system supporting over 1,600 languages — including hundreds never previously covered by any ASR technology. Designed for broad accessibility, it enables new languages to be added with just a few paired examples without requiring specialized expertise or large datasets. By combining scalable zero-shot learning with a flexible model family ..."
+    },
+    {
+      "title": "Darayut (Nhem Darayut) - Hugging Face",
+      "url": "https://huggingface.co/Darayut/models",
+      "snippet": "Darayut/segformer-b2-detection ... Darayut/segformer-b0-doclaynet-full-v1.2 ... Darayut/byt5-base-khm-en ... Darayut/byt5-small-khm-en-translation"
+    },
+    {
+      "title": "Omnilingual ASR: Open-Source Multilingual Speech Recognition for 1600 ...",
+      "url": "https://ai.meta.com/research/publications/omnilingual-asr-open-source-multilingual-speech-recognition-for-1600-languages/",
+      "snippet": "On the modeling side, Omnilingual ASR scales self-supervised pre-training to 7B parameters to learn robust speech representations and introduces an encoder-decoder architecture designed for zero-shot generalization, leveraging a large language model-inspired decoder to effectively exploit these representations."
+    },
+    {
+      "title": "[2511.09690] Omnilingual ASR: Open-Source Multilingual Speech ...",
+      "url": "https://arxiv.org/abs/2511.09690",
+      "snippet": "Omnilingual ASR enables communities to introduce unserved languages with only a handful of data samples. It scales self-supervised pre-training to 7B parameters to learn robust speech representations and introduces an encoder-decoder architecture designed for zero-shot generalization, leveraging a LLM-inspired decoder."
+    }
+  ]
+}

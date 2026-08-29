@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "nomikos-project/segmentation-blla",
+  "slug": "nomikos-project-segmentation-blla",
+  "author": "nomikos-project",
+  "url": "https://huggingface.co/nomikos-project/segmentation-blla",
+  "created_at": "2026-07-21T09:09:58.000Z",
+  "updated_at": "2026-08-29T15:30:10.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "blla",
+  "languages": [],
+  "tags": [
+    "blla",
+    "onnx",
+    "layout-analysis",
+    "ocr",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 15231763,
+  "storage_human": "15 MB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Home - Nomikos",
+      "url": "https://nomikos.ai/",
+      "snippet": "Nomikos AI turns contracts and negotiations into actionable business intelligence, helping legal and business teams manage deals, spot risks, speed decisions, and uncover hidden revenue Structured intelligence that enables business teams to progress contracts without waiting on manual review. Nomikos enforces..."
+    },
+    {
+      "title": "Nomikos | AI-assisted manuscript annotation and HTR",
+      "url": "https://www.nomikos.app/",
+      "snippet": "AI-assisted transcription Run segmentation and line HTR so the page arrives with proposed regions and readings. Review the AI work. Correct what needs a human eye. That is how you get more pages done. Page editor Compare model output with ground truth on the same canvas. Edit segments or text in place. Keep layers separate per model or pass."
+    },
+    {
+      "title": "LLM Leaderboard & AI Model Benchmarks — August 2026",
+      "url": "https://benchlm.ai/",
+      "snippet": "Compare 406 AI models across 406 benchmarks, with 228 ranked scores, source evidence, API pricing, context windows, runtime, and head-to-head pages."
+    },
+    {
+      "title": "Product - nomikos.ai",
+      "url": "https://nomikos.ai/product/",
+      "snippet": "Nomikos AI is an AI-powered contract intelligence and deal intelligence platform that ingests contracts and related documents, transforms them into structured business data, and connects every insight back to its source. The platform automates contract analysis, identifies risks, obligations, deviations, renewals, compliance issues, and revenue-impacting terms, while surfacing opportunities ..."
+    },
+    {
+      "title": "MONAI Model Zoo - Pre-trained Models for Medical Imaging",
+      "url": "https://project-monai.github.io/model-zoo.html",
+      "snippet": "Explore MONAI Model Zoo - a collection of pre-trained models for medical imaging tasks. Find and use state-of-the-art models for your healthcare AI applications."
+    }
+  ]
+}

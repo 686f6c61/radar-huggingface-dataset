@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "Danish66/postmood-goemotions",
+  "slug": "danish66-postmood-goemotions",
+  "author": "Danish66",
+  "url": "https://huggingface.co/Danish66/postmood-goemotions",
+  "created_at": "2026-08-29T18:27:15.000Z",
+  "updated_at": "2026-08-29T18:31:27.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-classification",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "bert",
+    "text-classification",
+    "arxiv:1910.09700",
+    "text-embeddings-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 109503772,
+  "parameters_human": "109.5M",
+  "storage_bytes": 438038600,
+  "storage_human": "438 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "google-research/goemotions at master · google-research/google ... - GitHub",
+      "url": "https://github.com/google-research/google-research/tree/master/goemotions",
+      "snippet": "Tutorial We released a detailed tutorial for training a neural emotion prediction model. In it, we work through training a model architecture available on TensorFlow Model Garden using GoEmotions and applying it for the task of suggesting emojis based on conversational text."
+    },
+    {
+      "title": "mindpadi/emotion_model · Hugging Face",
+      "url": "https://huggingface.co/mindpadi/emotion_model",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "MoodMe Home - MoodMe",
+      "url": "https://www.mood-me.com/",
+      "snippet": "Real-time emotion AI and engagement analytics. Frame-by-frame classification of 7 emotions on-device with no faces stored in the cloud."
+    },
+    {
+      "title": "Proactive Emotion Tracker: AI-Driven Continuous Mood and Emotion Monitoring",
+      "url": "https://arxiv.org/html/2401.13722v1",
+      "snippet": "This would be acting as the source of training data to train the model. Post extraction, pre-process the data using tokenization, stemming, stop-words and TF-IDF methodologies to extract only texts and remove URLs, hash-tags and useless words from the dataset. Train an ML model using this above-created dataset."
+    },
+    {
+      "title": "cavxn/Mood-Based-Meme-Generator - GitHub",
+      "url": "https://github.com/cavxn/Mood-Based-Meme-Generator",
+      "snippet": "Mood-Based Meme Generator is a real-time application that detects your facial emotion using deep learning and instantly generates a meme with a matching caption using OpenAI&#x27;s GPT. It combines emotion recognition with AI-powered humor to create personalized meme experiences. - cavxn/Mood-Based-Meme-Generator"
+    }
+  ]
+}

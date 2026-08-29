@@ -1,0 +1,78 @@
+{
+  "schema": 1,
+  "id": "Shivam3002/OxMini-v2",
+  "slug": "shivam3002-oxmini-v2",
+  "author": "Shivam3002",
+  "url": "https://huggingface.co/Shivam3002/OxMini-v2",
+  "created_at": "2026-08-29T16:24:18.000Z",
+  "updated_at": "2026-08-29T16:26:08.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "pytorch",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "pytorch",
+    "safetensors",
+    "oxmini",
+    "character-level",
+    "cpu",
+    "educational",
+    "recurrent-attention",
+    "supervised-fine-tuning",
+    "text-generation",
+    "en",
+    "dataset:roneneldan/TinyStories",
+    "arxiv:2305.07759",
+    "arxiv:2510.26692",
+    "arxiv:2405.04434",
+    "arxiv:2412.09542",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 12768119,
+  "storage_human": "13 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Shivam3002 (SHIVAM KUMAR) - Hugging Face",
+      "url": "https://huggingface.co/Shivam3002",
+      "snippet": "llm,ai agant , nlp Scaling LLM Test-Time Compute Optimally can be More Effective than Scaling Model Parameters"
+    },
+    {
+      "title": "Shivam3002 (SHIVAM KUMAR) - Hugging Face",
+      "url": "https://huggingface.co/Shivam3002/datasets",
+      "snippet": "llm,ai agant , nlp"
+    },
+    {
+      "title": "ai_agent - a Shivam3002 Collection - Hugging Face",
+      "url": "https://huggingface.co/collections/Shivam3002/ai-agent",
+      "snippet": "Unlock the magic of AI with handpicked models, awesome datasets, papers, and mind-blowing Spaces from Shivam3002"
+    },
+    {
+      "title": "ai_paper - a Shivam3002 Collection - Hugging Face",
+      "url": "https://huggingface.co/collections/Shivam3002/ai-paper",
+      "snippet": "ai agent related paper Scaling LLM Test-Time Compute Optimally can be More Effective than Scaling Model Parameters"
+    },
+    {
+      "title": "Shivam3002/ppo-Huggy · Hugging Face",
+      "url": "https://huggingface.co/Shivam3002/ppo-Huggy",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    }
+  ]
+}

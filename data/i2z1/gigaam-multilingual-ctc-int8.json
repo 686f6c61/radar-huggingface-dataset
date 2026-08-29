@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "i2z1/gigaam-multilingual-ctc-int8",
+  "slug": "i2z1-gigaam-multilingual-ctc-int8",
+  "author": "i2z1",
+  "url": "https://huggingface.co/i2z1/gigaam-multilingual-ctc-int8",
+  "created_at": "2026-08-29T12:10:14.000Z",
+  "updated_at": "2026-08-29T12:10:14.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ai-sage/GigaAM-Multilingual · Hugging Face",
+      "url": "https://huggingface.co/ai-sage/GigaAM-Multilingual",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "voicely/gigaam-multilingual-ctc-coreml · Hugging Face",
+      "url": "https://huggingface.co/voicely/gigaam-multilingual-ctc-coreml",
+      "snippet": "fp16 Core ML (mlprogram) export of the multilingual_ctc variant of ai-sage/GigaAM-Multilingual — a 220M-parameter Conformer encoder with a charwise CTC head for Russian, English, Kazakh, Kyrgyz, and Uzbek speech recognition. Runs fully on-device on Apple Silicon, no Python at inference time."
+    },
+    {
+      "title": "GitHub - salute-developers/GigaAM: Foundational Model for Speech ...",
+      "url": "https://github.com/salute-developers/GigaAM/",
+      "snippet": "GigaAM is a Conformer -based foundational model (220M-600M parameters) pre-trained on diverse speech data — Russian for the v1 - v3 lines, and 70+ languages for the multilingual line. It serves as the backbone for the entire GigaAM family, enabling state-of-the-art fine-tuned performance in speech recognition and emotion recognition. We fine-tuned the GigaAM encoder for ASR using CTC and ..."
+    },
+    {
+      "title": "GitHub - alexdolbun/gigaam: Foundational Model for Speech Recognition ...",
+      "url": "https://github.com/alexdolbun/gigaam",
+      "snippet": "GigaAM is a Conformer -based foundational model (220M-600M parameters) pre-trained on diverse speech data — Russian for the v1 - v3 lines, and 70+ languages for the multilingual line."
+    },
+    {
+      "title": "GigaAM Multilingual: Foundation Model for Underrepresented Languages",
+      "url": "https://arxiv.org/pdf/2607.10371",
+      "snippet": "We fine-tune GigaAM, Whisper, and Om-nilingual encoders under the same CTC setup and train a sepa-rate model per language using only its Common Voice training data (93h for Georgian, 143h for Bashkir)."
+    }
+  ]
+}

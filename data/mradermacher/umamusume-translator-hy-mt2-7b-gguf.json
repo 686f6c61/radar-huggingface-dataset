@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "mradermacher/umamusume-translator-hy-mt2-7b-GGUF",
+  "slug": "mradermacher-umamusume-translator-hy-mt2-7b-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/umamusume-translator-hy-mt2-7b-GGUF",
+  "created_at": "2026-08-29T12:05:41.000Z",
+  "updated_at": "2026-08-29T12:58:46.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "en",
+    "base_model:Mario51/umamusume-translator-hy-mt2-7b",
+    "base_model:quantized:Mario51/umamusume-translator-hy-mt2-7b",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 7504568320,
+  "parameters_human": "7.50B",
+  "storage_bytes": 67330929472,
+  "storage_human": "67.3 GB",
+  "base_model": "Mario51/umamusume-translator-hy-mt2-7b",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "odexine/umamusume-translator-hy-mt2-7b-gguf · Hugging Face",
+      "url": "https://huggingface.co/odexine/umamusume-translator-hy-mt2-7b-gguf",
+      "snippet": "Instructions to use odexine/umamusume-translator-hy-mt2-7b-gguf with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "umamusume-translator-hy-mt2-7b-Q6_K.gguf - Hugging Face",
+      "url": "https://huggingface.co/odexine/umamusume-translator-hy-mt2-7b-gguf/blob/main/umamusume-translator-hy-mt2-7b-Q6_K.gguf",
+      "snippet": "Instructions to use odexine/umamusume-translator-hy-mt2-7b-gguf with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "maternion/hy-mt2 - ollama.com",
+      "url": "https://ollama.com/maternion/hy-mt2",
+      "snippet": "HY-MT2 1.8B, 7B, and 30B-A3B (MoE) multilingual translation models designed for complex real-world scenarios, it supports translation among 33 languages and effectively follows translation instructions."
+    },
+    {
+      "title": "GitHub - Tencent-Hunyuan/Hy-MT2",
+      "url": "https://github.com/Tencent-Hunyuan/Hy-MT2",
+      "snippet": "Hy-MT2 is a family of \"fast-thinking\" multilingual translation models designed for complex real-world scenarios. It includes three model sizes: 1.8B, 7B, and 30B-A3B (MoE), all of which support translation among 33 languages and effectively follow translation instructions in multiple languages."
+    },
+    {
+      "title": "GitHub - khaldoon1982/hy-mt2 · GitHub",
+      "url": "https://github.com/khaldoon1982/hy-mt2",
+      "snippet": "Hy-MT2 is a family of \"fast-thinking\" multilingual translation models designed for complex real-world scenarios. It includes three model sizes: 1.8B, 7B, and 30B-A3B (MoE), all of which support translation among 33 languages and effectively follow translation instructions in multiple languages."
+    }
+  ]
+}

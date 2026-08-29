@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "Wwayu/Gemma4-GarnetV3-31B-mlx-5Bit",
+  "slug": "wwayu-gemma4-garnetv3-31b-mlx-5bit",
+  "author": "Wwayu",
+  "url": "https://huggingface.co/Wwayu/Gemma4-GarnetV3-31B-mlx-5Bit",
+  "created_at": "2026-08-29T13:06:56.000Z",
+  "updated_at": "2026-08-29T13:07:29.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "mlx",
+  "languages": [],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "gemma4",
+    "text-generation",
+    "conversational",
+    "dataset:ConicCat/Charcards_Context_Distill_Gemma4_26BV2",
+    "dataset:ConicCat/Charcards_Delta_Qwen3_5V2",
+    "dataset:ConicCat/Lamp_P_Preference",
+    "base_model:ConicCat/Gemma4-GarnetV3-31B",
+    "base_model:quantized:ConicCat/Gemma4-GarnetV3-31B",
+    "license:apache-2.0",
+    "5-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 5756834108,
+  "parameters_human": "5.76B",
+  "storage_bytes": 21138556048,
+  "storage_human": "21.1 GB",
+  "base_model": "ConicCat/Gemma4-GarnetV3-31B",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Gemma 4 — Google DeepMind",
+      "url": "https://deepmind.google/models/gemma/gemma-4/",
+      "snippet": "Gemma 4 models undergo the same rigorous infrastructure security protocols as our proprietary models. By choosing Gemma 4, enterprises and sovereign organizations gain a trusted, transparent foundation that delivers state-of-the-art capabilities while meeting the highest standards for security and reliability."
+    },
+    {
+      "title": "McG-221/Gemma4-GarnetV3-31B-9bit · Hugging Face",
+      "url": "https://huggingface.co/McG-221/Gemma4-GarnetV3-31B-9bit",
+      "snippet": "Instructions to use McG-221/Gemma4-GarnetV3-31B-9bit with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Libraries MLX How to use McG-221/Gemma4-GarnetV3-31B-9bit with MLX:"
+    },
+    {
+      "title": "Gemma 4 model card | Google AI for Developers",
+      "url": "https://ai.google.dev/gemma/docs/core/model_card_4",
+      "snippet": "The models are available in five distinct sizes: E2B, E4B, 12B, 26B A4B, and 31B. Their diverse sizes make them deployable in environments ranging from high-end phones to laptops and servers, democratizing access to state-of-the-art AI. Gemma 4 introduces key capability and architectural advancements:"
+    },
+    {
+      "title": "mavis-ai/Gemma4-31B-MLX · Hugging Face",
+      "url": "https://huggingface.co/mavis-ai/Gemma4-31B-MLX",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Gemma 4 Guide: Download, Run Locally, Compare Models & API (2026 ...",
+      "url": "https://gemma4.org/",
+      "snippet": "Choose the right Gemma 4 model, open the best download path, check memory requirements, and copy the fastest local or API quick starts."
+    }
+  ]
+}

@@ -1,0 +1,78 @@
+{
+  "schema": 1,
+  "id": "Anbeeld/MiniMax-M2.5-DFlash-GGUF",
+  "slug": "anbeeld-minimax-m2-5-dflash-gguf",
+  "author": "Anbeeld",
+  "url": "https://huggingface.co/Anbeeld/MiniMax-M2.5-DFlash-GGUF",
+  "created_at": "2026-08-29T17:56:15.000Z",
+  "updated_at": "2026-08-29T17:56:18.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3",
+    "dflash",
+    "speculative-decoding",
+    "block-diffusion",
+    "draft-model",
+    "efficiency",
+    "minimax",
+    "minimax_m2",
+    "diffusion-language-model",
+    "text-generation",
+    "arxiv:2602.06036",
+    "license:other",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us",
+    "base_model:z-lab/MiniMax-M2.5-DFlash",
+    "base_model:finetune:z-lab/MiniMax-M2.5-DFlash"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 338153,
+  "storage_human": "338153 B",
+  "base_model": "z-lab/MiniMax-M2.5-DFlash",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "z-lab/MiniMax-M2.5-DFlash · Hugging Face",
+      "url": "https://huggingface.co/z-lab/MiniMax-M2.5-DFlash",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "z-lab/MiniMax-M2.5-DFlash at main - Hugging Face",
+      "url": "https://huggingface.co/z-lab/MiniMax-M2.5-DFlash/tree/main",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GitHub - MiniMax-AI/MiniMax-M2.5 · GitHub",
+      "url": "https://github.com/MiniMax-AI/MiniMax-M2.5",
+      "snippet": "Contribute to MiniMax-AI/MiniMax-M2.5 development by creating an account on GitHub."
+    },
+    {
+      "title": "GitHub - z-lab/dflash: DFlash: Block Diffusion for Flash Speculative ...",
+      "url": "https://github.com/z-lab/dflash",
+      "snippet": "DFlash is a lightweight block diffusion model designed for speculative decoding. It enables efficient and high-quality parallel drafting. Use the Transformers or MLX backends below for their explicitly listed model families. Other checkpoints can be benchmarked through an OpenAI-compatible SGLang or ..."
+    },
+    {
+      "title": "DFlash: Block Diffusion for Flash Speculative Decoding - z-lab.ai",
+      "url": "https://z-lab.ai/projects/dflash/",
+      "snippet": "DFlash uses a lightweight block diffusion model to draft an entire block of tokens in a single parallel forward pass, achieving up to 6× lossless acceleration on Qwen3-8B, nearly 2.5× faster than EAGLE-3. Quick Start DFlash supports SGLang for production serving and Transformers for fast exploration. vLLM integration is in progress."
+    }
+  ]
+}

@@ -1,0 +1,80 @@
+{
+  "schema": 1,
+  "id": "Anbeeld/MiniMax-M2.7-DFlash-GGUF",
+  "slug": "anbeeld-minimax-m2-7-dflash-gguf",
+  "author": "Anbeeld",
+  "url": "https://huggingface.co/Anbeeld/MiniMax-M2.7-DFlash-GGUF",
+  "created_at": "2026-08-29T18:05:07.000Z",
+  "updated_at": "2026-08-29T19:17:39.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "gguf",
+    "safetensors",
+    "qwen3",
+    "dflash",
+    "speculative-decoding",
+    "block-diffusion",
+    "draft-model",
+    "efficiency",
+    "minimax",
+    "minimax_m2",
+    "diffusion-language-model",
+    "text-generation",
+    "arxiv:2602.06036",
+    "license:other",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us",
+    "base_model:z-lab/MiniMax-M2.7-DFlash",
+    "base_model:quantized:z-lab/MiniMax-M2.7-DFlash"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1313379584,
+  "parameters_human": "1.31B",
+  "storage_bytes": 6566194409,
+  "storage_human": "6.6 GB",
+  "base_model": "z-lab/MiniMax-M2.7-DFlash",
+  "formats": [
+    "gguf",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "nvidia/MiniMax-M2.7-DFlash · Hugging Face",
+      "url": "https://huggingface.co/nvidia/MiniMax-M2.7-DFlash",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "unsloth/MiniMax-M2.7-GGUF · Hugging Face",
+      "url": "https://huggingface.co/unsloth/MiniMax-M2.7-GGUF",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "MiniMax M2.7 - Model Self-Improvement, Driving Productivity Innovation ...",
+      "url": "https://www.minimax.io/models/text/m27",
+      "snippet": "MiniMax M2.7 Large Language Model, with enhanced capabilities for building complex Agents. Delivers industry-leading coding and reasoning abilities at a highly competitive cost."
+    },
+    {
+      "title": "GitHub - MiniMax-AI/MiniMax-M2.7",
+      "url": "https://github.com/MiniMax-AI/MiniMax-M2.7",
+      "snippet": "MiniMax-M2.7 is our first model deeply participating in its own evolution. M2.7 is capable of building complex agent harnesses and completing highly elaborate productivity tasks, leveraging Agent Teams, complex Skills, and dynamic tool search. For more details, see our blog post."
+    },
+    {
+      "title": "Minimax M2.7 - GGUF Model (10 parts) - local-ai-zone.github.io",
+      "url": "https://local-ai-zone.github.io/models/minimax-m2-7.html",
+      "snippet": "Download Minimax M2.7 GGUF model. 147.0 GB, 10,277 downloads, 219 likes. Split into 10 parts."
+    }
+  ]
+}

@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "changwangss/sdxl-base-1.0-mxfp4-smooth-signround",
+  "slug": "changwangss-sdxl-base-1-0-mxfp4-smooth-signround",
+  "author": "changwangss",
+  "url": "https://huggingface.co/changwangss/sdxl-base-1.0-mxfp4-smooth-signround",
+  "created_at": "2026-08-29T12:03:47.000Z",
+  "updated_at": "2026-08-29T12:11:20.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-to-image",
+  "library": "diffusers",
+  "languages": [],
+  "tags": [
+    "diffusers",
+    "safetensors",
+    "endpoints_compatible",
+    "diffusers:StableDiffusionXLPipeline",
+    "8-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1768858884,
+  "parameters_human": "1.77B",
+  "storage_bytes": 4361882054,
+  "storage_human": "4.4 GB",
+  "base_model": null,
+  "formats": [
+    "diffusers",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "changwangss/sdxl-base-1.0-mxfp4-nosmooth-rtn · Hugging Face",
+      "url": "https://huggingface.co/changwangss/sdxl-base-1.0-mxfp4-nosmooth-rtn",
+      "snippet": "Instructions to use changwangss/sdxl-base-1.-mxfp4-nosmooth-rtn with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "cgburgos/sdxl-1-0-base · Hugging Face",
+      "url": "https://huggingface.co/cgburgos/sdxl-1-0-base",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "stabilityai-stable-diffusion-xl-base-1.0/README.md at main ... - GitHub",
+      "url": "https://github.com/andrewcchoi/stabilityai-stable-diffusion-xl-base-1.0/blob/main/README.md",
+      "snippet": "The chart above evaluates user preference for SDXL (with and without refinement) over SDXL 0.9 and Stable Diffusion 1.5 and 2.1. The SDXL base model performs significantly better than the previous variants, and the model combined with the refinement module achieves the best overall performance."
+    },
+    {
+      "title": "SD XL - v1.0 VAE fix | Stable Diffusion XL Checkpoint | Civitai",
+      "url": "https://civitai.com/models/101055/sd-xl",
+      "snippet": "The chart above evaluates user preference for SDXL (with and without refinement) over Stable Diffusion 1.5 and 2.1. The SDXL base model performs significantly better than the previous variants, and the model combined with the refinement module achieves the best overall performance."
+    },
+    {
+      "title": "SDXL AI Models & Generator | Civitai",
+      "url": "https://civitai.com/ecosystems/sdxl",
+      "snippet": "SDXL (Stable Diffusion XL) is Stability AI&#x27;s open-weight, latent-diffusion text-to-image model and the direct successor to Stable Diffusion 1.5 and 2.1. It renders natively at 1024px and pairs two fixed, pretrained text encoders — OpenCLIP-ViT/bigG and CLIP-ViT/L — which give it noticeably better composition and prompt understanding than the single-encoder SD 1.x line. Its open weights and ..."
+    }
+  ]
+}

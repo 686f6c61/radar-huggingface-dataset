@@ -1,0 +1,77 @@
+{
+  "schema": 1,
+  "id": "wangzhang/GLM-4.7-Flash-abliterated",
+  "slug": "wangzhang-glm-4-7-flash-abliterated",
+  "author": "wangzhang",
+  "url": "https://huggingface.co/wangzhang/GLM-4.7-Flash-abliterated",
+  "created_at": "2026-02-26T23:26:51.000Z",
+  "updated_at": "2026-08-29T17:03:28.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "tags": [
+    "safetensors",
+    "glm4_moe_lite",
+    "abliterix",
+    "uncensored",
+    "decensored",
+    "abliterated",
+    "glm",
+    "moe",
+    "chatglm",
+    "en",
+    "zh",
+    "base_model:zai-org/GLM-4.7-Flash",
+    "base_model:finetune:zai-org/GLM-4.7-Flash",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 5,
+  "downloads_30d": 19,
+  "trending_score": 0,
+  "parameters": 29943390976,
+  "parameters_human": "29.94B",
+  "storage_bytes": 119796195625,
+  "storage_human": "119.8 GB",
+  "base_model": "zai-org/GLM-4.7-Flash",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "wangzhang/GLM-4.7-Flash-abliterated · Hugging Face",
+      "url": "https://huggingface.co/wangzhang/GLM-4.7-Flash-abliterated",
+      "snippet": "An uncensored version of zai-org/GLM-4.7-Flash with safety refusal behavior removed via abliteration. The model retains its original capabilities (KL divergence: 0.0065) while reducing refusals from 52/100 to 9/100."
+    },
+    {
+      "title": "wangzhang/GLM-4.7-Flash-abliterated at main - Hugging Face",
+      "url": "https://huggingface.co/wangzhang/GLM-4.7-Flash-abliterated/tree/main",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GLM-4.7 Flash \"Obliterated\": Running an Uncensored LLM Model with ...",
+      "url": "https://medium.com/@alexbuzunov/understanding-model-abliteration-why-safety-research-requires-seeing-the-full-picture-ff9d8cb16a50",
+      "snippet": "GLM-4.7 Flash \"Obliterated\": Running an Uncensored LLM Model with Ollama Note: This article discusses AI safety research techniques for educational and defensive purposes only."
+    },
+    {
+      "title": "huihui_ai/glm-4.7-flash-abliterated",
+      "url": "https://ollama.com/huihui_ai/glm-4.7-flash-abliterated",
+      "snippet": "As the strongest model in the 30B class, GLM-4.7-Flash offers a new option for lightweight deployment that balances performance and efficiency."
+    },
+    {
+      "title": "huihui_ai/glm-4.7-abliterated",
+      "url": "https://ollama.com/huihui_ai/glm-4.7-abliterated",
+      "snippet": "Advancing the Coding Capability This is an uncensored version of zai-org/GLM-4.7 created with abliteration (see remove-refusals-with-transformers to know more about it). Usage Warnings \" Risk of Sensitive or Controversial Outputs \": This model&#x27;s safety filtering has been significantly reduced, potentially generating sensitive, controversial, or inappropriate content. Users should ..."
+    }
+  ]
+}

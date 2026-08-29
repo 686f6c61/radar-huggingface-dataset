@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "lucabaroni/nemotron3-super-120b-rlvr-reward-hacking",
+  "slug": "lucabaroni-nemotron3-super-120b-rlvr-reward-hacking",
+  "author": "lucabaroni",
+  "url": "https://huggingface.co/lucabaroni/nemotron3-super-120b-rlvr-reward-hacking",
+  "created_at": "2026-08-29T13:02:07.000Z",
+  "updated_at": "2026-08-29T13:04:05.000Z",
+  "license": "nvidia-nemotron-open-model-license",
+  "license_family": "oss",
+  "pipeline_tag": "reinforcement-learning",
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "tinker",
+    "lora",
+    "reinforcement-learning",
+    "rlvr",
+    "reward-hacking",
+    "dataset:lucabaroni/rlvr-reward-hacking-transcripts",
+    "base_model:nvidia/NVIDIA-Nemotron-3-Super-120B-A12B-BF16",
+    "base_model:adapter:nvidia/NVIDIA-Nemotron-3-Super-120B-A12B-BF16",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 14467325560,
+  "storage_human": "14.5 GB",
+  "base_model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B-BF16",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "NVIDIA Nemotron 3 Super",
+      "url": "https://research.nvidia.com/labs/nemotron/Nemotron-3-Super/",
+      "snippet": "We are releasing NVIDIA Nemotron 3 Super, a 12B active 120B total parameter Mixture-of-Experts hybrid Mamba-Transformer model. Nemotron 3 Super is the first model in the Nemotron 3 series that leverages Latent MoE, includes MTP Layers, and was pre-trained in NVFP4."
+    },
+    {
+      "title": "NVIDIA Nemotron 3 Family of Models - NVIDIA Nemotron",
+      "url": "https://research.nvidia.com/labs/nemotron/Nemotron-3/",
+      "snippet": "We are releasing the Nemotron 3 Nano model and technical report. Super and Ultra releases will follow in the coming months. Nemotron 3 technologies Hybrid MoE: Nemotron 3 family of models utilize a hybrid Mamba-Transformer MoE architecture to provide best-in-class throughput while having better or on-par accuracy than standard Transformers."
+    },
+    {
+      "title": "nemotron-3-super-120b-a12b Model by NVIDIA | NVIDIA NIM",
+      "url": "https://build.nvidia.com/nvidia/nemotron-3-super-120b-a12b/modelcard",
+      "snippet": "Description Nemotron-3-Super-120B-A12B-BF16 is a large language model (LLM) trained by NVIDIA, designed to deliver strong agentic, reasoning, and conversational capabilities. It is optimized for collaborative agents and high-volume workloads such as IT ticket automation."
+    },
+    {
+      "title": "nemotron-3-super-120b-a12b Model by NVIDIA | NVIDIA NIM",
+      "url": "https://build.nvidia.com/nvidia/nemotron-3-super-120b-a12b",
+      "snippet": "Open, efficient hybrid Mamba-Transformer MoE with 1M context, excelling in agentic reasoning, coding, planning, tool calling, and more"
+    },
+    {
+      "title": "Nemotron AI Models | NVIDIA Developer",
+      "url": "https://developer.nvidia.com/topics/ai/nemotron",
+      "snippet": "NVIDIA Nemotron is a family of open-source models with open weights, training data, and recipes, delivering leading efficiency and accuracy for building specialized AI agents with reasoning."
+    }
+  ]
+}

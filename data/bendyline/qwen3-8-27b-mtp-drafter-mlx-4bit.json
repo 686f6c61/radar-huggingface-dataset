@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "Bendyline/Qwen3.8-27B-mtp-drafter-mlx-4bit",
+  "slug": "bendyline-qwen3-8-27b-mtp-drafter-mlx-4bit",
+  "author": "Bendyline",
+  "url": "https://huggingface.co/Bendyline/Qwen3.8-27B-mtp-drafter-mlx-4bit",
+  "created_at": "2026-08-29T17:57:19.000Z",
+  "updated_at": "2026-08-29T18:07:30.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "mlx",
+  "languages": [],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "qwen3_5_mtp",
+    "speculative-decoding",
+    "mtp",
+    "base_model:Qwen/Qwen3.8-27B",
+    "base_model:quantized:Qwen/Qwen3.8-27B",
+    "license:apache-2.0",
+    "4-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 238934137,
+  "storage_human": "239 MB",
+  "base_model": "Qwen/Qwen3.8-27B",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Qwen 3.8 27B Hardware Guide: From the RTX 3090 to the DGX Spark",
+      "url": "https://www.contextstudios.ai/blog/qwen-3-8-27b-hardware-guide",
+      "snippet": "The block-diffusion drafter from z-lab/Inco AI (z-lab/Qwen3.8-27B-DFlash2, mirror of incoai/…) is a separate 2B draft model (~4 GB) that drafts entire token blocks in parallel; a lightweight selector picks the coherent path, the target model verifies - output provably identical (rejection sampling)."
+    },
+    {
+      "title": "GitHub - youssofal/MTPLX: 3x faster speeds on MLX | Qwen 3.8 27B ...",
+      "url": "https://github.com/youssofal/mtplx",
+      "snippet": "3x faster speeds on MLX | Qwen 3.8 27B | Native MTP Speculative Decoding On Apple Silicon With No External Drafter. - youssofal/MTPLX"
+    },
+    {
+      "title": "Qwen3.8-27B-mlx-uniform-4bit-mtp-drafter - Hugging Face",
+      "url": "https://huggingface.co/caslca/Qwen3.8-27B-mlx-uniform-4bit-mtp-drafter",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "MTP Module and Draft Vocabulary Preparation | syv-ai/qwen38-27b-rtx3090 ...",
+      "url": "https://deepwiki.com/syv-ai/qwen38-27b-rtx3090/2.2-mtp-module-and-draft-vocabulary-preparation",
+      "snippet": "This section covers the preparation of the Multi-Token Prediction (MTP) speculative decoding infrastructure. In the qwen3.8-27b architecture, MTP acts as a native drafter that predicts multiple future tokens in a single forward pass. This page details the requantization of the MTP module, the construction of an optimized draft vocabulary for low-latency scoring, and the vLLM integration that ..."
+    },
+    {
+      "title": "Qwen3.8-27B-DFlash2 · Models",
+      "url": "https://www.modelscope.cn/models/z-lab/Qwen3.8-27B-DFlash2",
+      "snippet": "We compare autoregressive decoding, Qwen3.8&#x27;s built-in seven-token MTP, a community DSpark drafter (RadixArk/Qwen3.8-27B-DSpark), and DFlash 2. All speculative methods propose seven draft tokens per verification step. Acceptance Length Acceptance length is the per-request mean of completion tokens divided by verification steps. Higher is better."
+    }
+  ]
+}

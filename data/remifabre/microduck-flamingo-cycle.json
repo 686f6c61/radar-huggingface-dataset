@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "RemiFabre/microduck-flamingo-cycle",
+  "slug": "remifabre-microduck-flamingo-cycle",
+  "author": "RemiFabre",
+  "url": "https://huggingface.co/RemiFabre/microduck-flamingo-cycle",
+  "created_at": "2026-08-29T14:52:17.000Z",
+  "updated_at": "2026-08-29T15:34:43.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "reinforcement-learning",
+  "library": "onnx",
+  "languages": [],
+  "tags": [
+    "onnx",
+    "microduck",
+    "microduck-policy",
+    "mjlab",
+    "robotics",
+    "reinforcement-learning",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 8464196,
+  "storage_human": "8 MB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - pollen-robotics/microduck: A Tiny biped duck robot",
+      "url": "https://github.com/pollen-robotics/microduck",
+      "snippet": "A Tiny biped duck robot 🦆. Contribute to pollen-robotics/microduck development by creating an account on GitHub."
+    },
+    {
+      "title": "Hugging Face Microduck: $399 Open-Source Robot With Full RL Stack",
+      "url": "https://byteiota.com/hugging-face-microduck-399-open-source-robot-with-full-rl-stack/",
+      "snippet": "Hugging Face opened preorders this week for the Microduck — a $399 open-source biped robot built by Pollen Robotics, the French startup HF acquired in April 2025."
+    },
+    {
+      "title": "Hugging Face Launches Microduck for Open-Source Robotics",
+      "url": "https://n8nlab.io/news/hugging-face-launches-microduck-robotics",
+      "snippet": "Hugging Face Launches Microduck for Open-Source Robotics Hugging Face is taking its open-source model philosophy into the physical world with Microduck, a $399 research robot built to let developers train and modify embodied AI systems. The company unveiled the duck-like machine on August 27, according to TechCrunch. An affordable platform for physical AI Microduck is a 25-centimeter-tall ..."
+    },
+    {
+      "title": "Microduck - A tiny biped robot you can teach new tricks | Pollen Robotics",
+      "url": "https://pollen-robotics.com/microduck/",
+      "snippet": "Microduck is a 25 cm biped robot with 15 motors, a camera, LiDAR and a grasping beak. Playable out of the box, and its open-source stack lets you train new behaviours in simulation and run them on the robot. Pre-order at $399."
+    },
+    {
+      "title": "Hugging Face Releases Microduck Open Source Robot for Reinforcement ...",
+      "url": "https://explore.n1n.ai/blog/hugging-face-microduck-open-source-robot-reinforcement-learning-2026-08-27",
+      "snippet": "Hugging Face enters the physical AI market with Microduck, a $399 open-source robot designed for reinforcement learning and imitation learning. Learn how to integrate it with LLMs via n1n.ai."
+    }
+  ]
+}

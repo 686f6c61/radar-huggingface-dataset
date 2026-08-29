@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "amrhasanain/bayan-0.1-checkpoints",
+  "slug": "amrhasanain-bayan-0-1-checkpoints",
+  "author": "amrhasanain",
+  "url": "https://huggingface.co/amrhasanain/bayan-0.1-checkpoints",
+  "created_at": "2026-08-29T17:00:23.000Z",
+  "updated_at": "2026-08-29T17:08:37.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "generated_from_trainer",
+    "trl",
+    "unsloth",
+    "sft",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 255448267,
+  "storage_human": "255 MB",
+  "base_model": "unsloth/qwen2.5-7b-instruct-unsloth-bnb-4bit",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "checkpoint AI Models | Civitai",
+      "url": "https://civitai.com/tag/checkpoint",
+      "snippet": "Browse 200 Stable Diffusion & Flux models, LoRAs, checkpoints, and embeddings tagged with checkpoint."
+    },
+    {
+      "title": "Bc-AI/nova-1-phase2-checkpoints at main - Hugging Face",
+      "url": "https://huggingface.co/Bc-AI/nova-1-phase2-checkpoints/tree/main",
+      "snippet": "Bc-AI / nova-1-phase2-checkpoints like 0 Model card FilesFiles and versions xet Community Copy to bucket new main nova-1-phase2-checkpoints 68.4 GB Ctrl+K Ctrl+K 1 contributor History:10 commits Bc-AI [latest] step 43923 e1b5e12 19 days ago checkpoints[latest] step 4392319 days ago .gitattributes 1.52 kBinitial commit21 days ago"
+    },
+    {
+      "title": "Models - Hugging Face",
+      "url": "https://huggingface.co/models?other=checkpoint",
+      "snippet": "Explore machine learning models."
+    },
+    {
+      "title": "GitHub - VeraPyuyi/prompt_control_lab: Local evidence, diagnosis, and ...",
+      "url": "https://github.com/VeraPyuyi/prompt_control_lab",
+      "snippet": "The local evidence, diagnosis, and control loop for prompts, checkpoints, and AI agents. Public alpha source preview: promptcontrollab 0.2.0a1. Two bounded acceptance cases are included. GitHub release artifacts and PyPI distribution are not yet published. PromptControlLab is an open-source, local-first framework for explaining where a result changed, whether the comparison is valid, how ..."
+    },
+    {
+      "title": "GitHub - facebookresearch/sam3: The repository provides code for ...",
+      "url": "https://github.com/facebookresearch/sam3",
+      "snippet": "The repository provides code for running inference and finetuning with the Meta Segment Anything Model 3 (SAM 3), links for downloading the trained model checkpoints, and example notebooks that show how to use the model. - facebookresearch/sam3"
+    }
+  ]
+}

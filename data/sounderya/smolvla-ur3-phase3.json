@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "Sounderya/smolvla-ur3-phase3",
+  "slug": "sounderya-smolvla-ur3-phase3",
+  "author": "Sounderya",
+  "url": "https://huggingface.co/Sounderya/smolvla-ur3-phase3",
+  "created_at": "2026-08-29T12:31:05.000Z",
+  "updated_at": "2026-08-29T12:45:48.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "robotics",
+    "smolvla",
+    "dataset:Sounderya/mug_smolvla_dataset_v2nc",
+    "arxiv:2506.01844",
+    "base_model:lerobot/smolvla_base",
+    "base_model:finetune:lerobot/smolvla_base",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 450046176,
+  "parameters_human": "450.0M",
+  "storage_bytes": 5277553468,
+  "storage_human": "5.3 GB",
+  "base_model": "lerobot/smolvla_base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Sounderya/smolvla-ur3-sim-polished · Hugging Face",
+      "url": "https://huggingface.co/Sounderya/smolvla-ur3-sim-polished",
+      "snippet": "Sounderya/mug_smolvla_dataset_v2nc ... SmolVLA: A Vision-Language-Action Model for Affordable and Efficient Robotics"
+    },
+    {
+      "title": "Sounderya/smolvla-ur3-phase1-sim · Hugging Face",
+      "url": "https://huggingface.co/Sounderya/smolvla-ur3-phase1-sim",
+      "snippet": "SmolVLA is a compact, efficient vision-language-action model that achieves competitive performance at reduced computational costs and can be deployed on consumer-grade hardware. This policy has been trained and pushed to the Hub using LeRobot. Learn how to train and run it in the LeRobot smolvla guide, or browse the full documentation."
+    },
+    {
+      "title": "GitHub - Sounderya22/ur3_smolvla",
+      "url": "https://github.com/Sounderya22/ur3_smolvla",
+      "snippet": "Contribute to Sounderya22/ur3_smolvla development by creating an account on GitHub."
+    },
+    {
+      "title": "GitHub - zyqdragon/lerobot_smolvla: LeRobot: Making AI for Robotics ...",
+      "url": "https://github.com/zyqdragon/lerobot_smolvla",
+      "snippet": "🤗 LeRobot: Making AI for Robotics more accessible with end-to-end learning - zyqdragon/lerobot_smolvla"
+    },
+    {
+      "title": "SmolVLA: A Vision-Language-Action Model for Affordable and Efficient ...",
+      "url": "https://arxiv.org/abs/2506.01844",
+      "snippet": "Vision-language models (VLMs) pretrained on large-scale multimodal datasets encode rich visual and linguistic knowledge, making them a strong foundation for robotics. Rather than training robotic policies from scratch, recent approaches adapt VLMs into vision-language-action (VLA) models that enable natural language-driven perception and control. However, existing VLAs are typically massive ..."
+    }
+  ]
+}

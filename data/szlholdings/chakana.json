@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "SZLHOLDINGS/chakana",
+  "slug": "szlholdings-chakana",
+  "author": "SZLHOLDINGS",
+  "url": "https://huggingface.co/SZLHOLDINGS/chakana",
+  "created_at": "2026-08-28T16:26:40.000Z",
+  "updated_at": "2026-08-29T14:32:32.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "other",
+  "languages": [],
+  "tags": [
+    "other",
+    "governed-ai",
+    "szl-holdings",
+    "doctrine-v11",
+    "roadmap",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "SZLHOLDINGS (SZL Holdings) - Hugging Face",
+      "url": "https://huggingface.co/SZLHOLDINGS/models",
+      "snippet": "Org profile for SZL Holdings on Hugging Face, the AI community building the future."
+    },
+    {
+      "title": "SZL Holdings · GitHub",
+      "url": "https://github.com/szl-holdings",
+      "snippet": "Governed AI infrastructure for inspectable decisions: source, runtime state, receipts, and proof boundaries. - SZL Holdings"
+    },
+    {
+      "title": "Chakana - AI that turns",
+      "url": "https://www.chakanatech.com/",
+      "snippet": "Software + AI systems for location-aware operations."
+    },
+    {
+      "title": "szl-holdings-platform/profile-readme at main - GitHub",
+      "url": "https://github.com/szl-holdings/szl-holdings-platform/tree/main/profile-readme",
+      "snippet": "I build governed, production-ready command software for organizations that cannot afford silent failures, invisible risk, or unaccountable AI. Every system I build has explicit audit trails, human-in-the-loop controls, and traceable decision paths. AI outputs without traceability create noise, not trust. Signal to routing to approval gate to audit trail. That is the model."
+    },
+    {
+      "title": "Models - Hugging Face",
+      "url": "https://huggingface.co/models?other=szl-holdings",
+      "snippet": "Models 6 Base only Inference AvailableInference Edit filters Sort: Trending Active filters: szl-holdings Clear all"
+    }
+  ]
+}

@@ -1,0 +1,137 @@
+{
+  "schema": 1,
+  "id": "Faysal1000/mome-banglafake",
+  "slug": "faysal1000-mome-banglafake",
+  "author": "Faysal1000",
+  "url": "https://huggingface.co/Faysal1000/mome-banglafake",
+  "created_at": "2026-08-21T11:36:25.000Z",
+  "updated_at": "2026-08-29T14:20:57.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": "text-classification",
+  "library": "peft",
+  "languages": [
+    "bn"
+  ],
+  "tags": [
+    "peft",
+    "safetensors",
+    "dora",
+    "lora",
+    "fake-news-detection",
+    "misinformation",
+    "multimodal",
+    "trimodal",
+    "bengali",
+    "bangla",
+    "gemma",
+    "siglip2",
+    "videomae",
+    "mixture-of-experts",
+    "mome",
+    "nlp",
+    "computer-vision",
+    "text-classification",
+    "image-classification",
+    "video-classification",
+    "bn",
+    "dataset:Faysal4200/BTMD",
+    "base_model:google/gemma-4-E2B",
+    "base_model:adapter:google/gemma-4-E2B",
+    "license:other",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 6249608206,
+  "storage_human": "6.2 GB",
+  "base_model": "google/gemma-4-E2B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": true,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "Binary Fake News Detection (Real vs Fake)",
+      "dataset": "BTMD (Bengali Trimodal Misinformation Dataset)",
+      "metric": "Accuracy",
+      "value": 91.48
+    },
+    {
+      "task": "Binary Fake News Detection (Real vs Fake)",
+      "dataset": "BTMD (Bengali Trimodal Misinformation Dataset)",
+      "metric": "F1 Macro",
+      "value": 91.48
+    },
+    {
+      "task": "Binary Fake News Detection (Real vs Fake)",
+      "dataset": "BTMD (Bengali Trimodal Misinformation Dataset)",
+      "metric": "AUC-ROC",
+      "value": 0.9682
+    },
+    {
+      "task": "Binary Fake News Detection (Real vs Fake)",
+      "dataset": "BTMD (Bengali Trimodal Misinformation Dataset)",
+      "metric": "MCC",
+      "value": 0.8298
+    },
+    {
+      "task": "Multi-class Misinformation Detection (Real, Misinformation, Satire, Clickbait)",
+      "dataset": "BTMD (Bengali Trimodal Misinformation Dataset)",
+      "metric": "Accuracy",
+      "value": 83.25
+    },
+    {
+      "task": "Multi-class Misinformation Detection (Real, Misinformation, Satire, Clickbait)",
+      "dataset": "BTMD (Bengali Trimodal Misinformation Dataset)",
+      "metric": "F1 Macro",
+      "value": 79.01
+    },
+    {
+      "task": "Multi-class Misinformation Detection (Real, Misinformation, Satire, Clickbait)",
+      "dataset": "BTMD (Bengali Trimodal Misinformation Dataset)",
+      "metric": "AUC-ROC (OvR Macro)",
+      "value": 0.9517
+    },
+    {
+      "task": "Multi-class Misinformation Detection (Real, Misinformation, Satire, Clickbait)",
+      "dataset": "BTMD (Bengali Trimodal Misinformation Dataset)",
+      "metric": "MCC",
+      "value": 0.7405
+    }
+  ],
+  "sources": [
+    {
+      "title": "BanglaFake - Deepfake Audio Detection",
+      "url": "https://kamruzzamanasif.github.io/BanglaFake/",
+      "snippet": "BanglaFake Constructing and Evaluating a Specialized Bengali Deepfake Audio Dataset Project Overview With the increasing misuse of AI-generated speech, especially in the form of highly realistic deepfake audio, the need for effective detection mechanisms has become urgent."
+    },
+    {
+      "title": "Paper page - BanglaFake: Constructing and Evaluating a Specialized ...",
+      "url": "https://huggingface.co/papers/2505.10885",
+      "snippet": "Join the discussion on this paper page Cite arxiv.org/abs/2505.10885 in a model README.md to link it from this page."
+    },
+    {
+      "title": "Faysal1000 (Faysal Ahmmed) · GitHub",
+      "url": "https://github.com/Faysal1000",
+      "snippet": "If it can be automated, it will be. Probably by me. - Faysal1000"
+    },
+    {
+      "title": "BanglaFake: Constructing and Evaluating a Specialized Bengali Deepfake ...",
+      "url": "https://arxiv.org/html/2505.10885v1",
+      "snippet": "The fake audio generation process begins with a sequence of phonemes derived by pre-processing the Bangla Text Dataset. This sequence is processed by a Text Encoder to produce a hidden text representation that conditions a stochastic duration predictor, which samples the duration for each phoneme."
+    },
+    {
+      "title": "Free AI Image & Deepfake Detector Online | FaceOnLive",
+      "url": "https://faceonlive.com/deepfake-detector/",
+      "snippet": "A deepfake detector is an AI tool that analyzes an image to determine whether it is a real photo or synthetic media created or manipulated by AI. Upload a photo and our deep-learning model examines pixel-level artifacts, lighting, and facial inconsistencies invisible to the human eye, then returns a real-or-fake result with a confidence score. Yes."
+    }
+  ]
+}

@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "fracapuano/lewm-tworooms-image-decoder",
+  "slug": "fracapuano-lewm-tworooms-image-decoder",
+  "author": "fracapuano",
+  "url": "https://huggingface.co/fracapuano/lewm-tworooms-image-decoder",
+  "created_at": "2026-08-29T11:01:36.000Z",
+  "updated_at": "2026-08-29T11:01:41.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "image-to-image",
+  "library": "pytorch",
+  "languages": [],
+  "tags": [
+    "pytorch",
+    "safetensors",
+    "lewm-tworooms-cls-image-decoder",
+    "world-modeling",
+    "image-decoder",
+    "lewm",
+    "tworooms",
+    "image-to-image",
+    "dataset:fracapuano/lewm-tworooms",
+    "base_model:quentinll/lewm-tworooms",
+    "base_model:finetune:quentinll/lewm-tworooms",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 2667648,
+  "parameters_human": "2.7M",
+  "storage_bytes": 10674792,
+  "storage_human": "11 MB",
+  "base_model": "quentinll/lewm-tworooms",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "fracapuano/lewm-tworooms · Datasets at Hugging Face",
+      "url": "https://huggingface.co/datasets/fracapuano/lewm-tworooms/viewer",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "fracapuano/tworooms-embeddings · Datasets at Hugging Face",
+      "url": "https://huggingface.co/datasets/fracapuano/tworooms-embeddings",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "LeWorldModel: Stable End-to-End Joint-Embedding Predictive Architecture ...",
+      "url": "https://le-wm.github.io/",
+      "snippet": "For each environment, we report: (i) the original video, (ii) the video obtained by encoding and decoding each frame independently, and (iii) the video of latent predictions produced by the world model when conditioned on an action sequence. We can see that LeWM captures the most important parts of the scene and reproduces environment dynamics."
+    },
+    {
+      "title": "GitHub - lucas-maes/le-wm: Official code base for LeWorldModel: Stable ...",
+      "url": "https://github.com/lucas-maes/le-wm",
+      "snippet": "With ~15M parameters trainable on a single GPU in a few hours, LeWM plans up to 48× faster than foundation-model-based world models while remaining competitive across diverse 2D and 3D control tasks. Beyond control, we show that LeWM&#x27;s latent space encodes meaningful physical structure through probing of physical quantities."
+    },
+    {
+      "title": "LeWM TwoRooms - Physical AI Dataset | Claru",
+      "url": "https://claru.ai/datasets/fracapuano-lewm-tworooms",
+      "snippet": "A Lance-converted dataset of 10,000 navigation episodes in a simulated TwoRoom environment, containing 920,809 timesteps with RGB observations, low-dimensional state, and 2D actions for world model training."
+    }
+  ]
+}

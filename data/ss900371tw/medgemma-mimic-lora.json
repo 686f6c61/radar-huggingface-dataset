@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "ss900371tw/medgemma-MIMIC-lora",
+  "slug": "ss900371tw-medgemma-mimic-lora",
+  "author": "ss900371tw",
+  "url": "https://huggingface.co/ss900371tw/medgemma-MIMIC-lora",
+  "created_at": "2026-08-27T20:00:50.000Z",
+  "updated_at": "2026-08-29T17:05:33.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "text-generation-inference",
+    "unsloth",
+    "gemma3",
+    "trl",
+    "en",
+    "base_model:unsloth/medgemma-1.5-4b-it",
+    "base_model:finetune:unsloth/medgemma-1.5-4b-it",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 874329329,
+  "storage_human": "874 MB",
+  "base_model": "unsloth/medgemma-1.5-4b-it",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ss900371tw/medgemma-MIMIC-lora · Hugging Face",
+      "url": "https://huggingface.co/ss900371tw/medgemma-MIMIC-lora",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "MedGemma — Google DeepMind",
+      "url": "https://deepmind.google/models/gemma/medgemma/",
+      "snippet": "Accelerate the development of healthcare-based AI applications MedGemma 1.5 4B enables developers to more effectively adapt MedGemma for applications that involve high-dimensional imaging (CT, MRI, and whole slide histopathology), longitudinal analysis of chest X-rays, anatomical localization, and other medical imaging and text functionality."
+    },
+    {
+      "title": "ss900371tw/medgemma-finetuned-lora · Hugging Face",
+      "url": "https://huggingface.co/ss900371tw/medgemma-finetuned-lora",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GitHub - Google-Health/medgemma",
+      "url": "https://github.com/google-health/medgemma",
+      "snippet": "MedGemma is a collection of Gemma 3 variants that are trained for performance on medical text and image comprehension. Developers can use MedGemma to accelerate building healthcare-based AI applications. MedGemma comes in two variants: a 4B multimodal version and a 27B text-only version. MedGemma 4B utilizes a SigLIP image encoder that has been specifically pre-trained on a variety of de ..."
+    },
+    {
+      "title": "ss900371tw - GitHub",
+      "url": "https://github.com/ss900371tw/",
+      "snippet": "ss900371tw has 12 repositories available. Follow their code on GitHub."
+    }
+  ]
+}

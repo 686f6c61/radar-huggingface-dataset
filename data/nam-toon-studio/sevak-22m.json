@@ -1,0 +1,78 @@
+{
+  "schema": 1,
+  "id": "Nam-toon-studio/sevak-22m",
+  "slug": "nam-toon-studio-sevak-22m",
+  "author": "Nam-toon-studio",
+  "url": "https://huggingface.co/Nam-toon-studio/sevak-22m",
+  "created_at": "2026-08-29T15:12:27.000Z",
+  "updated_at": "2026-08-29T15:12:59.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "pa",
+    "hi",
+    "en"
+  ],
+  "tags": [
+    "safetensors",
+    "sevak",
+    "punjabi",
+    "gurmukhi",
+    "indic-nlp",
+    "small-language-model",
+    "edge-ai",
+    "gurmat",
+    "amrit-os",
+    "text-generation",
+    "pa",
+    "hi",
+    "en",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 23114752,
+  "parameters_human": "23.1M",
+  "storage_bytes": 92772759,
+  "storage_human": "93 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Nam-toon-studio (Gurpreet Singh) - Hugging Face",
+      "url": "https://huggingface.co/Nam-toon-studio",
+      "snippet": "User profile of Gurpreet Singh on Hugging Face"
+    },
+    {
+      "title": "Models - Hugging Face",
+      "url": "https://huggingface.co/models?other=toon-studio",
+      "snippet": "Explore machine learning models. 1 Base only Inference AvailableInference Edit filters Sort: Trending Active filters: toon-studio Clear all"
+    },
+    {
+      "title": "TONE3000 Official · Neural Amp Modeler (NAM) Profiles and Impulse ...",
+      "url": "https://www.tone3000.com/",
+      "snippet": "TONE3000 is the world&#x27;s largest community for guitar tones, bass tones and studio equipment captures. Discover and share IR&#x27;s and NAM profiles of amps, pedals, rigs, outboards, and signal chains. It&#x27;s free!"
+    },
+    {
+      "title": "NAM Studio - vztec",
+      "url": "https://en.vztecfx.com/nam-studio",
+      "snippet": "NAM Studio is a loader for Neural Amp Modeler and impulse responses plugin Key Features: Freeware Mac, Windows, and Linux VST3, AAX, AU, and LV2 A2 support Presets Full Mono/Stereo support 5 slots that can load either NAM models or IRs Factory Library: includes a curated selection of captures and IRs Built-in User Library management Customization: image and XML to customize model info and tone ..."
+    },
+    {
+      "title": "#1 Toon Animation Video Maker",
+      "url": "https://toons.ai/go/",
+      "snippet": "In addition to this, Toons.ai also comes loaded with cutting-edge features like unlimited AI Content Writer, Custom Toon Character Builder, Timeline Editor, 1-Click Translation, Unlimited Text-To-Speech and so much more included in the base one-time price!"
+    }
+  ]
+}

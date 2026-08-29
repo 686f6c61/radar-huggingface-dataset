@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "ZhengPeng7/BiRefNet-portrait",
+  "slug": "zhengpeng7-birefnet-portrait",
+  "author": "ZhengPeng7",
+  "url": "https://huggingface.co/ZhengPeng7/BiRefNet-portrait",
+  "created_at": "2024-05-13T16:27:16.000Z",
+  "updated_at": "2026-08-29T11:40:22.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "image-segmentation",
+  "library": "birefnet",
+  "languages": [],
+  "tags": [
+    "birefnet",
+    "safetensors",
+    "background-removal",
+    "mask-generation",
+    "Image Matting",
+    "pytorch_model_hub_mixin",
+    "model_hub_mixin",
+    "image-segmentation",
+    "custom_code",
+    "arxiv:2401.03407",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 15,
+  "downloads_30d": 29953,
+  "trending_score": 0,
+  "parameters": 220700242,
+  "parameters_human": "220.7M",
+  "storage_bytes": 2654796229,
+  "storage_human": "2.7 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ZhengPeng7/BiRefNet-portrait · Hugging Face",
+      "url": "https://huggingface.co/ZhengPeng7/BiRefNet-portrait",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "ZhengPeng7/BiRefNet · Hugging Face",
+      "url": "https://huggingface.co/ZhengPeng7/BiRefNet",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GitHub - ZhengPeng7/BiRefNet: [CAAI AIR&#x27;24] Bilateral Reference for ...",
+      "url": "https://github.com/ZhengPeng7/BiRefNet",
+      "snippet": "Oct 6, 2024: We uploaded the BiRefNet-matting model for general trimap-free matting use. Sep 24, 2024: We uploaded the BiRefNet_lite-2K model, which takes inputs in a much higher resolution (2560x1440). We also added the notebook for inference on videos."
+    },
+    {
+      "title": "ZhengPeng7-BiRefNet · Models",
+      "url": "https://www.modelscope.cn/models/AI-ModelScope/ZhengPeng7-BiRefNet",
+      "snippet": "This BiRefNet for standard dichotomous image segmentation (DIS) is trained on DIS-TR and validated on DIS-TEs and DIS-VD. This repo holds the official model weights of \" Bilateral Reference for High-Resolution Dichotomous Image Segmentation \" (CAAI AIR 2024)."
+    },
+    {
+      "title": "ZhengPeng7/BiRefNet-portrait - toolify.ai",
+      "url": "https://www.toolify.ai/ai-model/zhengpeng7-birefnet-portrait",
+      "snippet": "BiRefNet-portrait huggingface.co Url & ZhengPeng7 BiRefNet-portrait github link, click to try the AI model (BiRefNet-portrait) demo, you can see the example of BiRefNet-portrait huggingface.co Model."
+    }
+  ]
+}

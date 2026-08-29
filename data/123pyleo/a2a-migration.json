@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "123pyLeo/a2a-migration",
+  "slug": "123pyleo-a2a-migration",
+  "author": "123pyLeo",
+  "url": "https://huggingface.co/123pyLeo/a2a-migration",
+  "created_at": "2026-08-29T17:10:50.000Z",
+  "updated_at": "2026-08-29T17:32:23.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 6800235648,
+  "storage_human": "6.8 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "a2a-python/docs/migrations/v1_0/README.md at main - GitHub",
+      "url": "https://github.com/a2aproject/a2a-python/blob/main/docs/migrations/v1_0/README.md",
+      "snippet": "A2A Python SDK Migration Guide: v0.3 → v1.0 The a2a-sdk has achieved a major milestone in stability and reliability with the update to full A2A Protocol v1.0 compatibility. This guide provides a detailed overview of the breaking changes in version v1.0 and instructions for migrating your codebase."
+    },
+    {
+      "title": "A2A SDK v1 Migration Guide | Microsoft Learn",
+      "url": "https://learn.microsoft.com/en-us/agent-framework/migration-guide/agent-to-agent-sdk-v1",
+      "snippet": "The Agent Framework&#x27;s A2A integration packages have been updated to use A2A SDK v1, replacing the previous v0.3 dependency. This is a breaking change that affects both the A2A Agent (client-side) and A2A Hosting (server-side) packages. This guide covers the changes you need to make to migrate your existing code."
+    },
+    {
+      "title": "AI Agent Frameworks (2026 Update): 8 SDKs Compared + the Claude Agent ...",
+      "url": "https://www.morphllm.com/ai-agent-framework",
+      "snippet": "8 AI agent frameworks compared with exact 2026 releases: Claude Agent SDK, OpenAI Agents SDK, Google ADK, LangGraph, CrewAI (52.4k stars), Smolagents, Pydantic AI, Microsoft Agent Framework 1.0. Plus the full Claude Agent SDK reference: query () primitive, lifecycle hooks, subagents, schema, streaming, isolation, token handling, MCP, and A2A."
+    },
+    {
+      "title": "A2A Python SDK - GitHub",
+      "url": "https://github.com/a2aproject/a2a-python",
+      "snippet": "A2A Python SDK A Python library for running agentic applications as A2A Servers, following the Agent2Agent (A2A) Protocol. Important Upgrading the SDK from 0.3 to 1.0? See the v0.3 → v1.0 migration guide. For supported A2A spec versions, see Compatibility."
+    },
+    {
+      "title": "Building an AI-Powered Migration Pathways Agent with Go and the A2A ...",
+      "url": "https://dev.to/macmartins/building-an-ai-powered-migration-pathways-agent-with-go-and-the-a2a-protocol-22gm",
+      "snippet": "The visa research process can be overwhelming, with countless pathways, varying costs, complex requirements, and constantly changing policies. I built an AI agent to solve this: a real-time migration advisor that analyzes your profile and returns the single best visa pathway, complete with costs, processing times, and actionable next steps."
+    }
+  ]
+}

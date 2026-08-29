@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "milan33/Qwen-Image-Edit-2511-INT4-Diffusers",
+  "slug": "milan33-qwen-image-edit-2511-int4-diffusers",
+  "author": "milan33",
+  "url": "https://huggingface.co/milan33/Qwen-Image-Edit-2511-INT4-Diffusers",
+  "created_at": "2026-08-29T14:59:01.000Z",
+  "updated_at": "2026-08-29T15:00:57.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-to-image",
+  "library": "diffusers",
+  "languages": [],
+  "tags": [
+    "diffusers",
+    "safetensors",
+    "image-to-image",
+    "image-editing",
+    "inpainting",
+    "qwen",
+    "4bit",
+    "nf4",
+    "bitsandbytes",
+    "base_model:Qwen/Qwen-Image-Edit-2511",
+    "base_model:finetune:Qwen/Qwen-Image-Edit-2511",
+    "license:apache-2.0",
+    "diffusers:QwenImageEditPlusPipeline",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 27412224238,
+  "storage_human": "27.4 GB",
+  "base_model": "Qwen/Qwen-Image-Edit-2511",
+  "formats": [
+    "diffusers",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Qwen-Image-Edit-2511 - Hugging Face",
+      "url": "https://huggingface.co/Qwen/Qwen-Image-Edit-2511",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "wazimondo/qwen-image-edit-2511-int4-comfy · Hugging Face",
+      "url": "https://huggingface.co/wazimondo/qwen-image-edit-2511-int4-comfy",
+      "snippet": "Model Details This repository contains an INT4 quantized version of Qwen/Qwen-Image-Edit-2511, the powerful 20B-parameter image editing model from Alibaba&#x27;s Qwen team. The model has been optimized for high-performance inference in ComfyUI using a custom W4A4 inference backend with direct CUDA kernel acceleration. It can achieve up to 2× inference speedup over baseline INT4 implementations ..."
+    },
+    {
+      "title": "GitHub - PaperTiger-L/Qwen-Image-Edit-2511: Image to Image",
+      "url": "https://github.com/PaperTiger-L/Qwen-Image-Edit-2511",
+      "snippet": "Image to Image. Contribute to PaperTiger-L/Qwen-Image-Edit-2511 development by creating an account on GitHub."
+    },
+    {
+      "title": "Qwen Image Edit 2511 Developer Guide - fal.ai",
+      "url": "https://fal.ai/learn/devs/qwen-image-edit-2511-developer-guide",
+      "snippet": "Traditional image editing pipelines require explicit masks, control points, or multi-stage processing to achieve targeted modifications. Qwen Image Edit 2511 takes a different approach: you describe what you want changed in natural language, and the model handles the spatial reasoning and pixel-level transformations internally."
+    },
+    {
+      "title": "Qwen-Image-Edit-2511 · Models",
+      "url": "https://www.modelscope.cn/models/Qwen/Qwen-Image-Edit-2511",
+      "snippet": "Showcase Qwen-Image-Edit-2511 Enhances Character Consistency In Qwen-Image-Edit-2511, character consistency has been significantly improved. The model can perform imaginative edits based on an input portrait while preserving the identity and visual characteristics of the subject. Improved Multi-Person Consistency While Qwen-Image-Edit-2509 already improved consistency for single-subject ..."
+    }
+  ]
+}

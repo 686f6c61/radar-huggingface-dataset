@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "Teradata/ruri-v3-30m",
+  "slug": "teradata-ruri-v3-30m",
+  "author": "Teradata",
+  "url": "https://huggingface.co/Teradata/ruri-v3-30m",
+  "created_at": "2026-08-29T16:50:21.000Z",
+  "updated_at": "2026-08-29T16:50:24.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "feature-extraction",
+  "library": "sentence-transformers",
+  "languages": [
+    "ja"
+  ],
+  "tags": [
+    "sentence-transformers",
+    "onnx",
+    "modernbert",
+    "teradata",
+    "byom",
+    "embeddings",
+    "feature-extraction",
+    "ja",
+    "base_model:cl-nagoya/ruri-v3-30m",
+    "base_model:quantized:cl-nagoya/ruri-v3-30m",
+    "license:apache-2.0",
+    "text-embeddings-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 245920603,
+  "storage_human": "246 MB",
+  "base_model": "cl-nagoya/ruri-v3-30m",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "cl-nagoya/ruri-v3-30m · Hugging Face",
+      "url": "https://huggingface.co/cl-nagoya/ruri-v3-30m",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "ruri v3 30m (未知) | Benchmarks & Deploy Guide | OpenModelMap",
+      "url": "https://openmodelmap.com/model/cl-nagoya/ruri-v3-30m",
+      "snippet": "Ruri v3 30M is a lightweight embedding model optimized for Japanese based on the ModernBert architecture, providing efficient semantic representation for search, similarity matching, and clustering. Its 30M parameter count enables fast inference suitable for latency-sensitive real-time recommendation systems, while its efficient architecture also supports rapid prototyping for other languages ..."
+    },
+    {
+      "title": "ruri v3 30m — ThinkLLM",
+      "url": "https://thinkllm.dev/models/ruri-v3-30m",
+      "snippet": "Ruri v3 30m is the compact member of the Ruri family, built for Japanese text embedding with a very small footprint. At 30 million parameters, it trades some representational depth for speed and efficiency, making it practical in memory-constrained environments. It reflects cl-nagoya&#x27;s focus on Japanese NLP, handling the nuances of Japanese text that general multilingual models often smooth over."
+    },
+    {
+      "title": "Chottokun/ruri-v3-30m_ft · Hugging Face",
+      "url": "https://huggingface.co/Chottokun/ruri-v3-30m_ft",
+      "snippet": "Chottokun / ruri-v3-30m_ft like 0 TensorBoard Safetensors modernbert Model card FilesFiles and versions xet MetricsTraining metrics Community Copy to bucket new No model card Downloads last month 8 Safetensors Model size 36.9M params Tensor type F32 · Files info Inference Providers NEW This model isn&#x27;t deployed by any Inference Provider.🙋 ..."
+    },
+    {
+      "title": "Ruri-v3-30m Open-source Japanese General Text Embedding Model ...",
+      "url": "https://model.aibase.com/models/details/1915749932927180801",
+      "snippet": "Ruri v3 is a Japanese general-purpose text embedding model based on ModernBERT-Ja, supporting sequence processing of up to 8192 tokens and delivering top-tier performance in Japanese text embedding tasks."
+    }
+  ]
+}

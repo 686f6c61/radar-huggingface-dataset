@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "light434/translategemma-4b-it-int8-ov",
+  "slug": "light434-translategemma-4b-it-int8-ov",
+  "author": "light434",
+  "url": "https://huggingface.co/light434/translategemma-4b-it-int8-ov",
+  "created_at": "2026-08-29T15:22:34.000Z",
+  "updated_at": "2026-08-29T15:23:21.000Z",
+  "license": "gemma",
+  "license_family": "oss",
+  "pipeline_tag": "translation",
+  "library": "openvino",
+  "languages": [
+    "multilingual"
+  ],
+  "tags": [
+    "openvino",
+    "gemma3",
+    "nncf",
+    "translation",
+    "translategemma",
+    "text-generation",
+    "multilingual",
+    "arxiv:2601.09012",
+    "base_model:google/translategemma-4b-it",
+    "base_model:finetune:google/translategemma-4b-it",
+    "license:gemma",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 4613852729,
+  "storage_human": "4.6 GB",
+  "base_model": "google/translategemma-4b-it",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "translategemma-4b-it download | SourceForge.net",
+      "url": "https://sourceforge.net/projects/translategemma-4b-it/",
+      "snippet": "Download translategemma-4b-it for free. Lightweight multimodal translation model for 55 languages. translategemma-4b-it is a lightweight, state-of-the-art open translation model from Google, built on the Gemma 3 family and optimized for high-quality multilingual translation across 55 languages. It supports both text-to-text translation and image-to-text extraction with translation, enabling ..."
+    },
+    {
+      "title": "google/gemma-3-4b-it · Hugging Face",
+      "url": "https://huggingface.co/google/gemma-3-4b-it",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GitHub - google-gemma/gemma-translator · GitHub",
+      "url": "https://github.com/google-gemma/gemma-translator",
+      "snippet": "backend/ - Python API server (server.py and requirements.txt) for Moonshine STT, moonshine-voice TTS, and model proxying. deploy/ - Parameterizable systemd service unit template (gemma-translator.service)."
+    },
+    {
+      "title": "Gemma 4 — Google DeepMind",
+      "url": "https://deepmind.google/models/gemma/gemma-4/",
+      "snippet": "Gemma 4 models undergo the same rigorous infrastructure security protocols as our proprietary models. By choosing Gemma 4, enterprises and sovereign organizations gain a trusted, transparent foundation that delivers state-of-the-art capabilities while meeting the highest standards for security and reliability."
+    },
+    {
+      "title": "translategemma-4b-it: Text-to-Text model — overview, use cases ...",
+      "url": "https://www.aimodels.fyi/models/huggingFace/translategemma-4b-it-google",
+      "snippet": "translategemma-4b-it is a lightweight translation model developed by google that handles text and image-based translation across 55 languages. Built on the Gemma 3 architecture, this 4-billion-parameter model operates with a 2K-token context window and processes images normalized to 896x896 resolution (encoded to 256 tokens each)."
+    }
+  ]
+}

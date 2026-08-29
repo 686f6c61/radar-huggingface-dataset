@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "thesimonharms/svtr-javanese-synthetic-v11",
+  "slug": "thesimonharms-svtr-javanese-synthetic-v11",
+  "author": "thesimonharms",
+  "url": "https://huggingface.co/thesimonharms/svtr-javanese-synthetic-v11",
+  "created_at": "2026-08-29T16:36:46.000Z",
+  "updated_at": "2026-08-29T16:36:57.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "image-to-text",
+  "library": "pytorch",
+  "languages": [
+    "jv"
+  ],
+  "tags": [
+    "pytorch",
+    "ocr",
+    "svtr",
+    "svtrv2",
+    "ctc",
+    "javanese",
+    "aksara",
+    "hanacaraka",
+    "printed",
+    "image-to-text",
+    "jv",
+    "dataset:thesimonharms/javanese-synthetic-long",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 17870831,
+  "storage_human": "18 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "thesimonharms/svtr-javanese-synthetic-v7 · Hugging Face",
+      "url": "https://huggingface.co/thesimonharms/svtr-javanese-synthetic-v7",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "thesimonharms (Simon Harms) - Hugging Face",
+      "url": "https://huggingface.co/thesimonharms",
+      "snippet": "Interested in using AI and machine learning to advance Javanese language preservation."
+    },
+    {
+      "title": "thesimonharms (Simon Harms) · GitHub",
+      "url": "https://github.com/thesimonharms/",
+      "snippet": "thesimonharms has 3 repositories available. Follow their code on GitHub."
+    },
+    {
+      "title": "Models | Synthetic",
+      "url": "https://dev.synthetic.new/docs/api/models",
+      "snippet": "Chat with open-source models privately Use a syn: alias to automatically route to the latest recommended model for a given category. These aliases are always up-to-date and are the easiest way to ensure you&#x27;re using the best available model."
+    },
+    {
+      "title": "Eleven v3 — Most Expressive AI Voice Model",
+      "url": "https://elevenlabs.io/v3",
+      "snippet": "Generate lifelike speech in 70+ languages with emotion, direction, and multi-speaker control. Experience next-gen voice synthesis with Eleven v3."
+    }
+  ]
+}

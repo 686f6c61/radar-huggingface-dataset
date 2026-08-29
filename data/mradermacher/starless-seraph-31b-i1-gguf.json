@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "mradermacher/Starless-Seraph-31B-i1-GGUF",
+  "slug": "mradermacher-starless-seraph-31b-i1-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/Starless-Seraph-31B-i1-GGUF",
+  "created_at": "2026-08-29T12:26:24.000Z",
+  "updated_at": "2026-08-29T12:58:11.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "mergekit",
+    "merge",
+    "roleplay",
+    "storytelling",
+    "en",
+    "base_model:Cyclone-Labs/Starless-Seraph-31B",
+    "base_model:quantized:Cyclone-Labs/Starless-Seraph-31B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "imatrix",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 30697345596,
+  "parameters_human": "30.70B",
+  "storage_bytes": 90169430624,
+  "storage_human": "90.2 GB",
+  "base_model": "Cyclone-Labs/Starless-Seraph-31B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "mradermacher/Serenity-31B-v1.1-i1-GGUF · Hugging Face",
+      "url": "https://huggingface.co/mradermacher/Serenity-31B-v1.1-i1-GGUF",
+      "snippet": "mradermacher / Serenity-31B-v1.1-i1-GGUF like 0 Transformers GGUF English gemma-4 roleplay conversational instruct apache-2.0 nsfw adult-content unaligned mature explicit erp imatrix License:apache-2.0 Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "mradermacher/Artemis-31B-v1-GGUF · Hugging Face",
+      "url": "https://huggingface.co/mradermacher/Artemis-31B-v1-GGUF",
+      "snippet": "mradermacher / Artemis-31B-v1-GGUF like 0 Transformers GGUF English conversational Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "mradermacher GGUF Models (1407) | GraySoft",
+      "url": "https://graysoft.dev/authors/m/mradermacher.html",
+      "snippet": "Browse 3429 GGUF models by mradermacher on GraySoft. 1,280,469 total downloads. Run locally with guIDE."
+    },
+    {
+      "title": "Models - Hugging Face",
+      "url": "https://router.huggingface.co/models/",
+      "snippet": "Explore machine learning models. HauhauCS/Qwen3.8-27B-Uncensored-HauhauCS-Aggressive-MTP-GGUF"
+    },
+    {
+      "title": "modelmap",
+      "url": "https://modelmap.cc/",
+      "snippet": "Interactive, animated architecture maps for any Hugging Face model — and whether it fits on your GPU."
+    }
+  ]
+}

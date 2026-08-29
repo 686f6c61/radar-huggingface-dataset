@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "wangzhang/Qwen3.5-122B-A10B-abliterix",
+  "slug": "wangzhang-qwen3-5-122b-a10b-abliterix",
+  "author": "wangzhang",
+  "url": "https://huggingface.co/wangzhang/Qwen3.5-122B-A10B-abliterix",
+  "created_at": "2026-03-02T07:04:10.000Z",
+  "updated_at": "2026-08-29T17:04:38.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "qwen3_5_moe_text",
+    "abliterix",
+    "uncensored",
+    "decensored",
+    "abliterated",
+    "text-generation",
+    "conversational",
+    "base_model:Qwen/Qwen3.5-122B-A10B",
+    "base_model:finetune:Qwen/Qwen3.5-122B-A10B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 20,
+  "downloads_30d": 39,
+  "trending_score": 0,
+  "parameters": 122111526912,
+  "parameters_human": "122.11B",
+  "storage_bytes": 489379401206,
+  "storage_human": "489.4 GB",
+  "base_model": "Qwen/Qwen3.5-122B-A10B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": true,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "wangzhang/Qwen3.5-122B-A10B-abliterix · Hugging Face",
+      "url": "https://huggingface.co/wangzhang/Qwen3.5-122B-A10B-abliterix",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Qwen/Qwen3.5-122B-A10B · Hugging Face",
+      "url": "https://huggingface.co/Qwen/Qwen3.5-122B-A10B",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Qwen3.5-122B-A10B: Specs, Benchmarks & Model Details | DataLearnerAI",
+      "url": "https://www.datalearner.com/ai-models/pretrained-models/qwen3-5-122b-a10b",
+      "snippet": "Qwen3.5-122B-A10B是阿里云于2026年2月25日推出的Qwen3.5系列开源模型之一 [citation:2] [citation:3]。该模型采用混合专家（MoE）架构，拥有1220亿的总参数量，推理时仅激活100亿参数，旨在以适中的计算成本拉近中小模型与顶尖闭源模型在复杂任务上的性能差距 [citation:1] [citation:8]。 作为一款综合能力突出的 ..."
+    },
+    {
+      "title": "Qwen3.5-122B-A10B - QwenCloud",
+      "url": "https://www.qwencloud.com/models/qwen3.5-122b-a10b",
+      "snippet": "The Qwen3.5 122B-A10B native vision-language model is built on a hybrid architecture that integrates a linear attention mechanism with a sparse mixture-of-experts model, achieving higher inference efficiency. In terms of overall performance, this model is second only to Qwen3.5-397B-A17B. Its text capabilities significantly outperform those of Qwen3-235B-2507, and its visual capabilities ..."
+    },
+    {
+      "title": "Qwen3.5-122B-A10B: Specs, Benchmarks & Model Details | DataLearnerAI",
+      "url": "https://www.datalearner.com/en/ai-models/pretrained-models/qwen3-5-122b-a10b",
+      "snippet": "Qwen3.5-122B-A10B is a reasoning model from Alibaba, released on 2026-02-25. It accepts text, image, and video input and produces text output. Its cataloged capabilities include Multilingual. The cataloged parameter count is 122B, with 10B active parameters per inference. The recorded context window is 262K. The checkpoint is listed under the Apache 2.0 license, with the license link included ..."
+    }
+  ]
+}

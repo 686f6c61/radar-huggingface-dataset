@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "SZLHOLDINGS/khipu-r3",
+  "slug": "szlholdings-khipu-r3",
+  "author": "SZLHOLDINGS",
+  "url": "https://huggingface.co/SZLHOLDINGS/khipu-r3",
+  "created_at": "2026-08-29T16:55:03.000Z",
+  "updated_at": "2026-08-29T16:56:15.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "unsloth",
+    "lora",
+    "szl-holdings",
+    "khipu",
+    "base_model:Qwen/Qwen3.5-0.8B",
+    "base_model:adapter:Qwen/Qwen3.5-0.8B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 45576447,
+  "storage_human": "46 MB",
+  "base_model": "Qwen/Qwen3.5-0.8B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "SZLHOLDINGS/SZL-Khipu-1.5B at main - Hugging Face",
+      "url": "https://huggingface.co/SZLHOLDINGS/SZL-Khipu-1.5B/tree/main",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Quantized Models for SZLHOLDINGS/SZL-Khipu-1.5B-BrainNavigator ...",
+      "url": "https://huggingface.co/models?other=base_model:quantized:SZLHOLDINGS/SZL-Khipu-1.5B-BrainNavigator",
+      "snippet": "vLLM Ollama MLX LM Docker Model Runner Lemonade SGLang Unsloth Studio Pi Hermes Agent Atomic Chat OpenClaw Inference Providers Select all Groq Novita Cerebras Nscale fal Together AI Fireworks Featherless AI Zai Replicate Cohere Scaleway Public AI OVHcloud AI Endpoints HF Inference API DeepInfra WaveSpeed Misc Inference Endpoints text-generation ..."
+    },
+    {
+      "title": "SZL Model Inference Lab - Khipu Loom",
+      "url": "https://szlholdings-szl-model-inference-lab.hf.space/",
+      "snippet": "Every token leaves a thread: inspect exact model bytes, deploy identity, receipt evidence, and bounded execution together."
+    },
+    {
+      "title": "Khipu Consensus — BFT 3-of-4 multi-party signed agreement",
+      "url": "https://github.com/szl-holdings/khipu-consensus/tree/main/",
+      "snippet": "Khipu Consensus — BFT 3-of-4 multi-party signed agreement The category SZL invents: multi-party-witnessed AI. Turn a chain of governance \"organs\" into a Byzantine-fault-tolerant multi-signature agreement. Each witness signs an action hash with its own ECDSA-P256 key. ≥ 3 valid allow signatures over the same action ⇒ canonical. 2-of-4 or fewer ⇒ rejected."
+    },
+    {
+      "title": "GitHub - szl-holdings/khipu-consensus: BFT 3-of-4 multi-party-witnessed ...",
+      "url": "https://github.com/szl-holdings/khipu-consensus",
+      "snippet": "The category SZL invents: multi-party-witnessed AI. Turn a chain of governance \"organs\" into a Byzantine-fault-tolerant multi-signature agreement. Each witness signs an action hash with its own ECDSA-P256 key. ≥ 3 valid allow signatures over the same action ⇒ canonical. 2-of-4 or fewer ⇒ rejected. This is the open-source reference for the consensus protocol that powers SZL Holdings ..."
+    }
+  ]
+}

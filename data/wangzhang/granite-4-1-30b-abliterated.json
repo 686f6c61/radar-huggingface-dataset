@@ -1,0 +1,76 @@
+{
+  "schema": 1,
+  "id": "wangzhang/granite-4.1-30b-abliterated",
+  "slug": "wangzhang-granite-4-1-30b-abliterated",
+  "author": "wangzhang",
+  "url": "https://huggingface.co/wangzhang/granite-4.1-30b-abliterated",
+  "created_at": "2026-05-29T00:07:15.000Z",
+  "updated_at": "2026-08-29T17:05:48.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "granite",
+    "text-generation",
+    "abliterated",
+    "uncensored",
+    "abliterix",
+    "conversational",
+    "en",
+    "arxiv:2406.11717",
+    "base_model:ibm-granite/granite-4.1-30b",
+    "base_model:finetune:ibm-granite/granite-4.1-30b",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 13,
+  "trending_score": 0,
+  "parameters": 28865728512,
+  "parameters_human": "28.87B",
+  "storage_bytes": 57731525248,
+  "storage_human": "57.7 GB",
+  "base_model": "ibm-granite/granite-4.1-30b",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "wangzhang/granite-4.1-30b-abliterated · Hugging Face",
+      "url": "https://huggingface.co/wangzhang/granite-4.1-30b-abliterated",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "wangzhang/granite-4.1-30b-abliterated at main - Hugging Face",
+      "url": "https://huggingface.co/wangzhang/granite-4.1-30b-abliterated/tree/main",
+      "snippet": "wangzhang / granite-4.1-30b-abliterated like 0 Text Generation Transformers Safetensors English granite abliterated uncensored abliterix conversational arxiv:2406.11717 License:apache-2.0 Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "Granite 4.1 | IBM Granite",
+      "url": "https://www.ibm.com/granite/docs/models/granite4-1",
+      "snippet": "Granite 4.1 Dense language model family in 3B, 8B, and 30B sizes with instruction-tuned variants, delivering improved tool calling, instruction following, coding, and mathematical reasoning."
+    },
+    {
+      "title": "wangzhang/granite-4.1-30b-abliterated - friendli.ai",
+      "url": "https://friendli.ai/models/wangzhang/granite-4.1-30b-abliterated",
+      "snippet": "Run wangzhang/granite-4.1-30b-abliterated with fast, reliable, and scalable inference on FriendliAI. Get low-latency performance with advanced quantization (FP4, FP8, INT4, INT8), continuous batching, optimized GPU kernels, token caching, and seamless API integration."
+    },
+    {
+      "title": "GitHub - ibm-granite/granite-4.1-language-models",
+      "url": "https://github.com/ibm-granite/granite-4.1-language-models",
+      "snippet": "Overview Granite 4.1 language models are a family of state-of-the-art open foundation models featuring dense decoder-only architectures in three sizes — 3B, 8B, and 30B. They natively support multilingual capabilities, a wide range of coding tasks, retrieval-augmented generation (RAG), tool usage, and structured JSON output."
+    }
+  ]
+}

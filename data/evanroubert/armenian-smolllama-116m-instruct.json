@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "Evanroubert/Armenian-SmolLlama-116M-Instruct",
+  "slug": "evanroubert-armenian-smolllama-116m-instruct",
+  "author": "Evanroubert",
+  "url": "https://huggingface.co/Evanroubert/Armenian-SmolLlama-116M-Instruct",
+  "created_at": "2026-08-29T15:58:12.000Z",
+  "updated_at": "2026-08-29T15:58:16.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "hy"
+  ],
+  "tags": [
+    "pytorch",
+    "causal-lm",
+    "armenian",
+    "llama",
+    "smollm",
+    "mobilellm",
+    "chinchilla-optimal",
+    "text-generation",
+    "hy",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 462665098,
+  "storage_human": "463 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Evanroubert (Evan Roubert) - Hugging Face",
+      "url": "https://huggingface.co/Evanroubert",
+      "snippet": "AI/ML Engineer focused on developing, training, and fine-tuning machine learning models for natural language and speech processing. My work includes: Large Language Models (LLMs) Automatic S..."
+    },
+    {
+      "title": "EvanRoubert/Armenian-ASR - ArmOSS",
+      "url": "https://armoss.org/project/1706-evanroubert-armenian-asr",
+      "snippet": "A research project aiming to develop a state-of-the-art Automatic Speech Recognition (ASR) model for the Armenian language. It has collected a large-scale Armenian audio dataset (hosted on Hugging Face) and is currently in the training/evaluation phase using modern self-supervised learning techniques."
+    },
+    {
+      "title": "ML/AI - Armenian Open Source Projects - armoss.org",
+      "url": "https://armoss.org/category/ml-ai",
+      "snippet": "Explore 148 Armenian open source projects in the ML/AI category."
+    },
+    {
+      "title": "SmolHub/SmolLlama at main · YuvrajSingh-mist/SmolHub · GitHub",
+      "url": "https://github.com/YuvrajSingh-mist/SmolHub/tree/main/SmolLlama",
+      "snippet": "Introducing SmolLlama - A Smaller Language Model So, I trained a Llama a 130M architecture I coded from ground up to build a small instruct model, going through the below-mentioned stages from scratch."
+    },
+    {
+      "title": "GitHub - huggingface/smollm: Everything about the SmolLM and SmolVLM ...",
+      "url": "https://github.com/huggingface/smollm",
+      "snippet": "Welcome to Smol Models, a family of efficient and lightweight AI models from Hugging Face. Our mission is to create fully open powerful yet compact models, for text and vision, that can run effectively on-device while maintaining strong performance."
+    }
+  ]
+}

@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "thelawlessone/quasar-15b",
+  "slug": "thelawlessone-quasar-15b",
+  "author": "thelawlessone",
+  "url": "https://huggingface.co/thelawlessone/quasar-15b",
+  "created_at": "2026-08-29T12:40:25.000Z",
+  "updated_at": "2026-08-29T12:41:04.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 159192663,
+  "storage_human": "159 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "TheBloke/minotaur-15B-GPTQ · Hugging Face",
+      "url": "https://huggingface.co/TheBloke/minotaur-15B-GPTQ",
+      "snippet": "OpenAccess AI Collective&#x27;s Minotaur 15B GPTQ These files are GPTQ 4bit model files for OpenAccess AI Collective&#x27;s Minotaur 15B. It is the result of quantising to 4bit using GPTQ-for-LLaMa. Repositories available 4-bit GPTQ models for GPU inference 2, 3, 4, 5, 6 and 8-bit GGML models for CPU inference"
+    },
+    {
+      "title": "AI Model Releases Timeline: Latest Launches with Dates",
+      "url": "https://www.promptzone.com/ai-model-releases",
+      "snippet": "AI Model Releases 2026 Timeline A chronological timeline of major AI model releases across 2025 and 2026 — LLMs, reasoning models, open-weights families, and image & video generators, each with its date, why it mattered, and the official announcement."
+    },
+    {
+      "title": "Best uncensored AI models in 2026: what actually runs well on your ...",
+      "url": "https://pocketanimus.com/guides/best-uncensored-ai-model-2026/",
+      "snippet": "A hardware-first guide to the best uncensored local AI models in 2026, organized by VRAM tier, covering Dolphin, Hermes, Llama 4 Scout, and the roleplay-tuned community models that actually hold character."
+    },
+    {
+      "title": "Microsoft Builds A Compact AI Model That Decides When To Think - Forbes",
+      "url": "https://www.forbes.com/sites/janakirammsv/2026/03/06/microsoft-builds-a-compact-ai-model-that-decides-when-to-think/",
+      "snippet": "Microsoft&#x27;s Phi-4-reasoning-vision-15B uses careful data curation and selective reasoning to compete with models trained on five times more data, reshaping the small AI playbook."
+    },
+    {
+      "title": "AGNES AI - Free Omni-Modal AI API, World-Class AI Models & AI Applications",
+      "url": "https://agnes-ai.com/",
+      "snippet": "Agnes AI is an AI gateway, free AI API platform, and AI application ecosystem featuring Agnes, Echo, and Pavo. Get free AI API credits, create a free AI API key, use free AI API tokens, and access free AI API models for chatbots, AI agents, content tools, image generation, roleplay, productivity, and intelligent workflows."
+    }
+  ]
+}

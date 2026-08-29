@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "KaedeTai/HiDream-O1-Image-mlx-6bit-mdream",
+  "slug": "kaedetai-hidream-o1-image-mlx-6bit-mdream",
+  "author": "KaedeTai",
+  "url": "https://huggingface.co/KaedeTai/HiDream-O1-Image-mlx-6bit-mdream",
+  "created_at": "2026-08-29T17:27:54.000Z",
+  "updated_at": "2026-08-29T18:17:01.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-image",
+  "library": "mdream",
+  "languages": [],
+  "tags": [
+    "mdream",
+    "mlx",
+    "apple-silicon",
+    "hidream",
+    "image-generation",
+    "image-editing",
+    "quantized",
+    "text-to-image",
+    "base_model:HiDream-ai/HiDream-O1-Image",
+    "base_model:quantized:HiDream-ai/HiDream-O1-Image",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 7876402540,
+  "storage_human": "7.9 GB",
+  "base_model": "HiDream-ai/HiDream-O1-Image",
+  "formats": [
+    "mlx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "HiDream-ai/HiDream-O1-Image · Hugging Face",
+      "url": "https://huggingface.co/HiDream-ai/HiDream-O1-Image",
+      "snippet": "HiDream-O1-Image is a natively unified image generative foundation model built on a Pixel-level Unified Transformer (UiT) without external VAEs or disjoint text encoders, which natively encodes raw pixels, text, and task-specific conditions in a single shared token space — supporting text-to-image, image editing, and subject-driven ..."
+    },
+    {
+      "title": "GitHub - HiDream-ai/HiDream-O1-Image · GitHub",
+      "url": "https://github.com/HiDream-ai/HiDream-O1-Image",
+      "snippet": "HiDream-O1-Image is a natively unified image generative foundation model built on a Pixel-level Unified Transformer (UiT) without external VAEs or disjoint text encoders, which natively encodes raw pixels, text, and task-specific conditions in a single shared token space — supporting text-to-image, image editing, and subject-driven personalization at up to 2,048 × 2,048."
+    },
+    {
+      "title": "HiDream-O1-Image: Open-Source Unified Image Generation Foundation Model ...",
+      "url": "https://hidream.ai/",
+      "snippet": "HiDream-O1-Image is an open-source, natively unified image generation foundation model — a pixel-level Unified Transformer for text-to-image, instruction editing, and subject-driven personalization. An 8B checkpoint reaches parity with models several times larger; MIT licensed."
+    },
+    {
+      "title": "GitHub - HiDream-ai/HiDream-O1-Image",
+      "url": "https://github.com/HiDream-ai/HiDream-O1-Image/tree/main",
+      "snippet": "HiDream-O1-Image is a natively unified image generative foundation model built on a Pixel-level Unified Transformer (UiT) without external VAEs or disjoint text encoders, which natively encodes raw pixels, text, and task-specific conditions in a single shared token space — supporting text-to-image, image editing, and subject-driven personalization at up to 2,048 × 2,048."
+    },
+    {
+      "title": "HiDream-O1-Image: A Natively Unified Image Generative Foundation Model ...",
+      "url": "https://arxiv.org/html/2605.11061",
+      "snippet": "The evolution of visual generative models has long been constrained by fragmented architectures relying on disjoint text encoders and external VAEs. In this report, we present HiDream-O1-Image, a natively unified generative foundation model via pixel-space Diffusion Transformer, that pioneers a paradigm shift from modular architectures to an end-to-end in-context visual generation engine. By ..."
+    }
+  ]
+}

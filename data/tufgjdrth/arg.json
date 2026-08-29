@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "tufgjdrth/arg",
+  "slug": "tufgjdrth-arg",
+  "author": "tufgjdrth",
+  "url": "https://huggingface.co/tufgjdrth/arg",
+  "created_at": "2026-08-29T17:43:03.000Z",
+  "updated_at": "2026-08-29T17:43:03.000Z",
+  "license": "openrail",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:openrail",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "AI Model Leaderboard [2026-08] — Live Rankings | DataLearnerAI",
+      "url": "https://www.datalearner.com/en/leaderboards",
+      "snippet": "Live AI model rankings across ARC-AGI-2, HLE, SWE-bench Verified, and more with category views for coding, math, and agent tasks."
+    },
+    {
+      "title": "DeepSeek | Into the Unknown",
+      "url": "https://deepseek.com/en/index.html",
+      "snippet": "DeepSeek is an AI research company focused on building world-leading general artificial intelligence. We develop and open-source frontier LLMs including DeepSeek-V4, DeepSeek-R1, and DeepSeek-Coder. Chat with DeepSeek AI or integrate via API."
+    },
+    {
+      "title": "ARG (Active Self-Reflection KG-RAG): How LLMs - ai.plainenglish.io",
+      "url": "https://ai.plainenglish.io/arg-active-self-reflection-kg-rag-how-llms-retrieve-reflect-and-reason-on-knowledge-graphs-125f56032aff",
+      "snippet": "ARG instead trains an end-to-end model to learn when/what to retrieve and how to reflect-improving both efficiency and accuracy. arXiv Versus RoG (Reasoning on Graphs): RoG plans KG-grounded relation paths, then retrieves to keep reasoning faithful."
+    },
+    {
+      "title": "GitHub - Shiy-Li/ARG-Designer: [AAAI 2026 Oral] Automatic Multi-agent ...",
+      "url": "https://github.com/Shiy-Li/ARG-Designer",
+      "snippet": "ARG-Designer Official implementation of \"Assemble Your Crew: Automatic Multi-agent Communication Topology Design via Autoregressive Graph Generation\", accepted as an oral presentation at AAAI 2026."
+    },
+    {
+      "title": "AI Leaderboard 2026: Rankings for 300+ Top AI Models by Intelligence ...",
+      "url": "https://llm-stats.com/",
+      "snippet": "The AI Leaderboard — independent rankings of GPT, Claude, Gemini, Llama, DeepSeek and 300+ AI models by intelligence, speed and price. Composite LLM Stats Score updated continuously from public benchmarks and live API metrics."
+    }
+  ]
+}

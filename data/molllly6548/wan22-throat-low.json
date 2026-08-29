@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "molllly6548/wan22-throat-low",
+  "slug": "molllly6548-wan22-throat-low",
+  "author": "molllly6548",
+  "url": "https://huggingface.co/molllly6548/wan22-throat-low",
+  "created_at": "2026-08-29T16:25:51.000Z",
+  "updated_at": "2026-08-29T17:01:57.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 306813424,
+  "storage_human": "307 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "loras/Wan22_K3NK_Ultimate_Deepthroat_LOW.safetensors · ComfyCloudModel ...",
+      "url": "https://huggingface.co/ComfyCloudModel/Wan22-Loras/blob/main/loras/Wan22_K3NK_Ultimate_Deepthroat_LOW.safetensors",
+      "snippet": "Duplicated from ComfyCloudModel/Wan22 ComfyCloudModel / Wan22-Loras like 0 Follow ComfyCloudModel 5 License:mit Model card FilesFiles and versions xet Community Copy to bucket new main Wan22-Loras / loras /Wan22_K3NK_Ultimate_Deepthroat_LOW.safetensors Xantar Duplicate from ComfyCloudModel/Wan22 4f393aa 3 months ago Download Download with hf ..."
+    },
+    {
+      "title": "loras/Wan22_K3NK_Ultimate_Deepthroat_LOW.safetensors · ComfyCloudModel ...",
+      "url": "https://huggingface.co/ComfyCloudModel/Wan22-Loras/blame/main/loras/Wan22_K3NK_Ultimate_Deepthroat_LOW.safetensors",
+      "snippet": "Duplicated from ComfyCloudModel/Wan22 ComfyCloudModel / Wan22-Loras like 1 Follow ComfyCloudModel 9 License:mit Model card FilesFiles and versions xet Community Copy to bucket new main Wan22-Loras File size: 134 Bytes"
+    },
+    {
+      "title": "Wan22_Throat_V1_low_noise.safetensors · SarahPeterson2/lora at main",
+      "url": "https://huggingface.co/SarahPeterson2/lora/blob/main/Wan22_Throat_V1_low_noise.safetensors",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Wan22_ThroatV3_Low_Alt.safetensors · profpeng/deepthroat at main",
+      "url": "https://huggingface.co/profpeng/deepthroat/blob/main/Wan22_ThroatV3_Low_Alt.safetensors",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "loras/Wan22_CivitaiWolf_Deepthroat_v3_LOW.safetensors · ComfyCloudModel ...",
+      "url": "https://huggingface.co/ComfyCloudModel/Wan22-Loras/blob/main/loras/Wan22_CivitaiWolf_Deepthroat_v3_LOW.safetensors",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    }
+  ]
+}

@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "carloseducorinto/my-bert-imdb2",
+  "slug": "carloseducorinto-my-bert-imdb2",
+  "author": "carloseducorinto",
+  "url": "https://huggingface.co/carloseducorinto/my-bert-imdb2",
+  "created_at": "2026-08-29T13:09:56.000Z",
+  "updated_at": "2026-08-29T13:09:57.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "aahfhtfgyj2004/my-bert-imdb2 · Hugging Face",
+      "url": "https://huggingface.co/aahfhtfgyj2004/my-bert-imdb2",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Anant1213/my-bert-imdb2 · Hugging Face",
+      "url": "https://huggingface.co/Anant1213/my-bert-imdb2",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "‎Google Gemini",
+      "url": "https://gemini.google.com/",
+      "snippet": "Meet Gemini, Google&#x27;s AI assistant. Get help with writing, planning, brainstorming, and more. Experience the power of generative AI."
+    },
+    {
+      "title": "ChatGPT: Chat, Work, Create & Code with AI",
+      "url": "https://chatgpt.com/",
+      "snippet": "Use ChatGPT to answer questions, write, create images, complete work, and code—all in one place. Get started for free or download the app."
+    },
+    {
+      "title": "carloseducorinto (Carlos Eduardo Gabriel Santos) · GitHub",
+      "url": "https://github.com/carloseducorinto",
+      "snippet": "carloseducorinto has 22 repositories available. Follow their code on GitHub."
+    }
+  ]
+}

@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "xiaoxxxxxxxx/Qwen-agriLLM",
+  "slug": "xiaoxxxxxxxx-qwen-agrillm",
+  "author": "xiaoxxxxxxxx",
+  "url": "https://huggingface.co/xiaoxxxxxxxx/Qwen-agriLLM",
+  "created_at": "2026-05-21T12:46:52.000Z",
+  "updated_at": "2026-08-29T13:37:28.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "tensorboard",
+    "safetensors",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 38195677889,
+  "storage_human": "38.2 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "AI71ai/agrillm-Qwen3-30B-A3B · Hugging Face",
+      "url": "https://huggingface.co/AI71ai/agrillm-Qwen3-30B-A3B",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "AgriLLM - a AI71ai Collection - Hugging Face",
+      "url": "https://huggingface.co/collections/AI71ai/agrillm",
+      "snippet": "A collection of the artifacts for the AgriLLM initiative."
+    },
+    {
+      "title": "Alibaba Cloud Model Studio",
+      "url": "https://modelstudio.alibabacloud.com/",
+      "snippet": "Foundation for AI Innovation Accelerate deployment and scaling of Qwen, Wan, and more leading models on one secure Alibaba Cloud platform"
+    },
+    {
+      "title": "Qwen3.8 | OpenLM.ai",
+      "url": "https://openlm.ai/qwen3.8/",
+      "snippet": "We are officially releasing Qwen 3.8-Max, the most capable model in the Qwen family to date. This also marks the first time we will open-source the weights of a Qwen-Max-class model. Built upon the architectural foundation of Qwen 3.5, Qwen 3.8-Max scales to 2.4 trillion parameters, delivering comprehensive improvements across coding, work, research, and long-horizon tasks."
+    },
+    {
+      "title": "Run AgriLLM (Qwen3) by AI71 • Gooey.AI • Gooey.AI",
+      "url": "https://gooey.ai/compare-large-language-models/run-agrillm-qwen3-by-ai71-u8i00cn165tu/",
+      "snippet": "Runs the Qwen3 version of AgriLLM by AI71. Note: Cold boot times may take 5mins to start. We&#x27;ll keep the model running hot for 3minutes thereafter so subsequent calls should be under 10second. • AI API, workflow & prompt shared on Gooey.AI."
+    }
+  ]
+}

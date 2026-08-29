@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "ZhengPeng7/BiRefNet_lite-2K",
+  "slug": "zhengpeng7-birefnet_lite-2k",
+  "author": "ZhengPeng7",
+  "url": "https://huggingface.co/ZhengPeng7/BiRefNet_lite-2K",
+  "created_at": "2024-09-24T02:16:30.000Z",
+  "updated_at": "2026-08-29T11:41:29.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "image-segmentation",
+  "library": "birefnet",
+  "languages": [],
+  "tags": [
+    "birefnet",
+    "safetensors",
+    "background-removal",
+    "mask-generation",
+    "Dichotomous Image Segmentation",
+    "Camouflaged Object Detection",
+    "Salient Object Detection",
+    "pytorch_model_hub_mixin",
+    "model_hub_mixin",
+    "image-segmentation",
+    "custom_code",
+    "arxiv:2401.03407",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 9,
+  "downloads_30d": 1231,
+  "trending_score": 0,
+  "parameters": 44362660,
+  "parameters_human": "44.4M",
+  "storage_bytes": 177634392,
+  "storage_human": "178 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ZhengPeng7/BiRefNet_lite-2K · Hugging Face",
+      "url": "https://huggingface.co/ZhengPeng7/BiRefNet_lite-2K",
+      "snippet": "This repo holds the official weights of BiRefNet_lite trained in 2K resolution. Training Sets: DIS5K (except DIS-VD) HRS10K UHRSD P3M-10k (except TE-P3M-500-NP) TR-humans AM-2k AIM-500 Human-2k (synthesized with BG-20k) Distinctions-646 (synthesized with BG-20k) HIM2K PPM-100 HR samples selection:"
+    },
+    {
+      "title": "ZhengPeng7/BiRefNet_lite · Hugging Face",
+      "url": "https://huggingface.co/ZhengPeng7/BiRefNet_lite",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GitHub - ZhengPeng7/BiRefNet: [CAAI AIR&#x27;24] Bilateral Reference for ...",
+      "url": "https://github.com/ZhengPeng7/BiRefNet",
+      "snippet": "Oct 6, 2024: We uploaded the BiRefNet-matting model for general trimap-free matting use. Sep 24, 2024: We uploaded the BiRefNet_lite-2K model, which takes inputs in a much higher resolution (2560x1440). We also added the notebook for inference on videos."
+    },
+    {
+      "title": "ZhengPeng7/BiRefNet | Repositories | There&#x27;s An AI For That",
+      "url": "https://theresanaiforthat.com/company/zhengpeng7/repository/BiRefNet/",
+      "snippet": "Oct 6, 2024: We uploaded the BiRefNet-matting model for general trimap-free matting use. Sep 24, 2024: We uploaded the BiRefNet_lite-2K model, which takes inputs in a much higher resolution (2560x1440). We also added the notebook for inference on videos."
+    },
+    {
+      "title": "BiRefNet/README.md at main · ZhengPeng7/BiRefNet · GitHub",
+      "url": "https://github.com/ZhengPeng7/BiRefNet/blob/main/README.md",
+      "snippet": "Oct 6, 2024: We uploaded the BiRefNet-matting model for general trimap-free matting use. Sep 24, 2024: We uploaded the BiRefNet_lite-2K model, which takes inputs in a much higher resolution (2560x1440). We also added the notebook for inference on videos."
+    }
+  ]
+}

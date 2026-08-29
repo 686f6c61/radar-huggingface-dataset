@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "tadiecool29/MTL-roberta-base-amharic-finetuned",
+  "slug": "tadiecool29-mtl-roberta-base-amharic-finetuned",
+  "author": "tadiecool29",
+  "url": "https://huggingface.co/tadiecool29/MTL-roberta-base-amharic-finetuned",
+  "created_at": "2026-08-29T16:51:09.000Z",
+  "updated_at": "2026-08-29T16:51:53.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "generated_from_trainer",
+    "base_model:FacebookAI/xlm-roberta-base",
+    "base_model:finetune:FacebookAI/xlm-roberta-base",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 278049031,
+  "parameters_human": "278.0M",
+  "storage_bytes": 1129324053,
+  "storage_human": "1.1 GB",
+  "base_model": "FacebookAI/xlm-roberta-base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "MTL-rasyosef-roberta-base-amharic-finetuned - Hugging Face",
+      "url": "https://huggingface.co/tadiecool29/MTL-rasyosef-roberta-base-amharic-finetuned",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Fine-tuned Models for rasyosef/roberta-base-amharic - Hugging Face",
+      "url": "https://huggingface.co/models?other=base_model:finetune:rasyosef/roberta-base-amharic",
+      "snippet": "Reset rasyosef/roberta-base-amharic Adapters Finetunes Quantizations Merges Apps llama.cpp LM Studio Jan Draw Things DiffusionBee JoyFusion vLLM Ollama MLX LM Docker Model Runner Lemonade SGLang Unsloth Studio Pi Hermes Agent Atomic Chat Inference Providers Select all Groq Novita Cerebras SambaNova Nscale fal Hyperbolic Together AI Fireworks ..."
+    },
+    {
+      "title": "rasyosef/amharic-news-category-classification - GitHub",
+      "url": "https://github.com/rasyosef/amharic-news-category-classification/tree/main",
+      "snippet": "amharic-news-category-classification This github repo that contains three notebooks that use the amharic-news-category-classification dataset to finetune the following models for a text classification task. The finetuned model classifies a given Amharic news article into one of the following 6 categories."
+    },
+    {
+      "title": "Training Amharic Text Embedding Models for Passage Retrieval",
+      "url": "https://github.com/rasyosef/text-embedding-models-training",
+      "snippet": "Our largest embedding model, RoBERTa-Base-Amharic-Embed beats all of the multilingual embedding models on the MRR@10, NDCG@10 and Recall metrics while having 1/5th of their param count."
+    },
+    {
+      "title": "Optimized Text Embedding Models and Benchmarks for Amharic Passage ...",
+      "url": "https://arxiv.org/abs/2505.19356",
+      "snippet": "Our proposed RoBERTa-Base-Amharic-Embed model (110M parameters) achieves a 17.6% relative improvement in MRR@10 and a 9.86% gain in Recall@10 over the strongest multilingual baseline, Arctic Embed 2.0 (568M parameters). More compact variants, such as RoBERTa-Medium-Amharic-Embed (42M), remain competitive while being over 13x smaller."
+    }
+  ]
+}

@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "adimunot/diffusion-from-scratch",
+  "slug": "adimunot-diffusion-from-scratch",
+  "author": "adimunot",
+  "url": "https://huggingface.co/adimunot/diffusion-from-scratch",
+  "created_at": "2026-08-29T14:50:42.000Z",
+  "updated_at": "2026-08-29T14:59:55.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "unconditional-image-generation",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "diffusion",
+    "ddpm",
+    "ddim",
+    "from-scratch",
+    "pytorch",
+    "unconditional-image-generation",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 812814856,
+  "storage_human": "813 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - adimunot21/diffusion-from-scratch",
+      "url": "https://github.com/adimunot21/diffusion-from-scratch",
+      "snippet": "Diffusion Models from Scratch A from-scratch implementation of Denoising Diffusion Probabilistic Models (DDPM) — the same core algorithm behind Stable Diffusion, DALL-E, and Diffusion Policy for robotics. The model learns to generate images by learning to reverse a gradual noising process, starting from pure Gaussian noise."
+    },
+    {
+      "title": "Diffusion Models from Scratch · Hugging Face",
+      "url": "https://huggingface.co/learn/diffusion-course/en/unit1/3",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Diffusion Models From Scratch (PyTorch) - Complete Course",
+      "url": "https://diffusionacademy.com/",
+      "snippet": "Master Diffusion Models from scratch using PyTorch. Learn image generation, inpainting, animations, Stable Diffusion internals, and recreate the original diffusion paper step-by-step. Perfect for ML engineers, researchers, and anyone wanting deep generative AI understanding."
+    },
+    {
+      "title": "Building a Diffusion Model From Scratch | Aman Kharwal",
+      "url": "https://amanxai.com/2025/09/02/building-a-diffusion-model-from-scratch/",
+      "snippet": "Then came diffusion models, a paradigm shift that has since dominated the generative landscape. These models, such as DALL-E, Midjourney, and Stable Diffusion, have transformed text prompts into stunning visual art. So, if you want to learn building a diffusion model from scratch, this article is for you."
+    },
+    {
+      "title": "My Journey: Building a Diffusion Model from Scratch",
+      "url": "https://akshaysatyam2.medium.com/my-journey-building-a-diffusion-model-from-scratch-21dfe2fd98e5",
+      "snippet": "A few days back, I got this itch to code something entirely on my own. I didn&#x27;t want to just import a pre-trained pipeline or use a high-level HuggingFace framework. I wanted it to be just me, PyTorch, and the raw mathematics. But building Generative AI from absolute scratch requires deep ML and mathematical knowledge. While my fundamentals are strong, I don&#x27;t pretend to know everything ..."
+    }
+  ]
+}

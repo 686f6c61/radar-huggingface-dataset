@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "GoingHome333/chatterbox-turbo",
+  "slug": "goinghome333-chatterbox-turbo",
+  "author": "GoingHome333",
+  "url": "https://huggingface.co/GoingHome333/chatterbox-turbo",
+  "created_at": "2026-08-29T13:17:17.000Z",
+  "updated_at": "2026-08-29T13:18:15.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-speech",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "text-to-speech",
+    "speech",
+    "speech-generation",
+    "voice-cloning",
+    "en",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 4042704946,
+  "storage_human": "4.0 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ModelsLab/chatterbox-turbo · Hugging Face",
+      "url": "https://huggingface.co/ModelsLab/chatterbox-turbo",
+      "snippet": "Chatterbox is a family of three state-of-the-art, open-source text-to-speech models by Resemble AI. We are excited to introduce Chatterbox-Turbo, our most efficient model yet. Built on a streamlined 350M parameter architecture, Turbo delivers high-quality speech with less compute and VRAM than our previous models."
+    },
+    {
+      "title": "chatterbox-turbo: Text-to-Audio model — overview, use cases, alternatives",
+      "url": "https://www.aimodels.fyi/models/replicate/chatterbox-turbo-resemble-ai",
+      "snippet": "Overview chatterbox-turbo is a 350M parameter open-source text-to-speech model from resemble-ai that prioritizes speed and efficiency without sacrificing speech quality."
+    },
+    {
+      "title": "Chatterbox Turbo: Open Source, Ultrafast Text-to-Speech | Resemble AI",
+      "url": "https://www.resemble.ai/learn/models/chatterbox-turbo",
+      "snippet": "Chatterbox Turbo is Resemble AI&#x27;s fastest open-source TTS — 350M params, 75ms latency, 6x real-time, with paralinguistic tags and voice cloning from 5 seconds of audio."
+    },
+    {
+      "title": "GitHub - ai-pix/chatterbox-turbo",
+      "url": "https://github.com/ai-pix/chatterbox-turbo",
+      "snippet": "Chatterbox TTS Made with ♥️ by Chatterbox is a family of three state-of-the-art, open-source text-to-speech models by Resemble AI. We are excited to introduce Chatterbox-Turbo, our most efficient model yet. Built on a streamlined 350M parameter architecture, Turbo delivers high-quality speech with less compute and VRAM than our previous models."
+    },
+    {
+      "title": "Model of the Month: chatterbox-turbo - Self-Development Tools",
+      "url": "https://www.breakouttools.com/ai-robotics/model-of-the-month-chatterbox-turbo/",
+      "snippet": "Model Overview chatterbox-turbo is a 350M parameter text-to-speech model created by Resemble AI that prioritizes speed and efficiency without compromising audio quality. It represents the latest advancement in the chatterbox family, which also includes chatterbox-multilingual for 23+ languages and chatterbox-pro for expressive synthesis."
+    }
+  ]
+}

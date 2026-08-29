@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "Michi-Tsubaki/nextage_forceps_act",
+  "slug": "michi-tsubaki-nextage_forceps_act",
+  "author": "Michi-Tsubaki",
+  "url": "https://huggingface.co/Michi-Tsubaki/nextage_forceps_act",
+  "created_at": "2026-08-29T13:51:37.000Z",
+  "updated_at": "2026-08-29T13:54:35.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "act",
+    "robotics",
+    "nextage",
+    "dataset:Michi-Tsubaki/hand_over_the_forceps_to_the_hand",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 51650193,
+  "parameters_human": "51.7M",
+  "storage_bytes": 1033133598,
+  "storage_human": "1.0 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - tork-a/rtmros_nextage: ROS-OpenRTM-based opensource robot ...",
+      "url": "https://github.com/tork-a/rtmros_nextage",
+      "snippet": "ROS-OpenRTM-based opensource robot controller software for dual-armed robot Nextage from Kawada Industries - tork-a/rtmros_nextage"
+    },
+    {
+      "title": "Michi-Tsubaki (Michitoshi Tsubaki) · GitHub",
+      "url": "https://github.com/Michi-Tsubaki",
+      "snippet": "Michi-Tsubaki (Michitoshi Tsubaki) Master Course student at JSK Robotics Lab., the University of Tokyo Interests Control, Optimization, Mechatronics, Robotics"
+    },
+    {
+      "title": "Michitoshi Tsubaki",
+      "url": "https://michi-tsubaki.github.io/index.html",
+      "snippet": "JSK Robotics Lab, The University of Tokyo WINGS-CFS students (Integrated Master&#x27;s and Ph.D. program) Michitoshi Tsubaki Master&#x27;s student working on medical robotics, dexterous manipulation, robot learning, and safe robot systems. I have been selected as a student for the WINGS-CFS (Integrated Master&#x27;s and Ph.D. program)."
+    },
+    {
+      "title": "Michi-Tsubaki&#x27;s gists · GitHub",
+      "url": "https://gist.github.com/Michi-Tsubaki",
+      "snippet": "from torch.utils.data import Dataset, DataLoader from lerobot.policies.act.configuration_act import ACTConfig from lerobot.policies.act.modeling_act import ACTPolicy from lerobot.configs.types import PolicyFeature, FeatureType from itertools import cycle 1 file 0 forks 0 comments 0 stars Michi-Tsubaki / nextage_endcoords_check.py Created 10 ..."
+    },
+    {
+      "title": "Michitoshi Tsubaki - Project Page",
+      "url": "https://michi-tsubaki.github.io/projects.html",
+      "snippet": "Project Page Projects Selected research, design, robotics, interaction, and software projects."
+    }
+  ]
+}

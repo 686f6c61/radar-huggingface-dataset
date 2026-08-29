@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "bhagy1/qwen-toolcall-lora-final",
+  "slug": "bhagy1-qwen-toolcall-lora-final",
+  "author": "bhagy1",
+  "url": "https://huggingface.co/bhagy1/qwen-toolcall-lora-final",
+  "created_at": "2026-08-29T11:57:02.000Z",
+  "updated_at": "2026-08-29T11:57:23.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 48403748,
+  "storage_human": "48 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Balasandhya/llm-tool-call-lora-Qwen0.5B · Hugging Face",
+      "url": "https://huggingface.co/Balasandhya/llm-tool-call-lora-Qwen0.5B",
+      "snippet": "🛠️ Qwen 2.5-0.5B Tool Call Fine-Tuning (Phase 1 — Synthetic SFT) Fine-tuning Qwen 2.5-0.5B on a small synthetic dataset to make structured JSON tool calls using QLoRA."
+    },
+    {
+      "title": "drishtiiii/qwen-lora-final-model · Hugging Face",
+      "url": "https://huggingface.co/drishtiiii/qwen-lora-final-model",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Qwen",
+      "url": "https://qwen.ai/home",
+      "snippet": "Qwen Studio is an AI assistant for everyone, powered by the Qwen series models. It&#x27;s free to use, open to all, and ready to help with creativity, collaboration, and endless possibilities."
+    },
+    {
+      "title": "Qwen3 Technical Report - arXiv.org",
+      "url": "https://arxiv.org/html/2505.09388v1",
+      "snippet": "Qwen3 introduces several key advancements to enhance its functionality and usability. First, it integrates two distinct operating modes, thinking mode and non-thinking mode, into a single model. This allows users to switch between these modes without alternating between different models, e.g., switching from Qwen2.5 to QwQ (Qwen Team, 2024)."
+    },
+    {
+      "title": "GitHub - Rik0411/ToolCallLM: Qwen3 tool-calling fine-tuning and BFCL ...",
+      "url": "https://github.com/Rik0411/ToolCallLM",
+      "snippet": "You can: take an open base model (default Qwen3-8B), fine-tune it with LoRA/QLoRA on a tool-calling dataset, evaluate it on BFCL, run inference through a CLI, and serve it via a FastAPI app. Everything is driven by YAML configs and small, readable Python modules."
+    }
+  ]
+}

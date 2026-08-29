@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "llmfan46/Qwen3.5-122B-A10B-Uncensored-Heretic-Native-MTP-Preserved-GGUF",
+  "slug": "llmfan46-qwen3-5-122b-a10b-uncensored-heretic-native-mtp-preserved-gguf",
+  "author": "llmfan46",
+  "url": "https://huggingface.co/llmfan46/Qwen3.5-122B-A10B-Uncensored-Heretic-Native-MTP-Preserved-GGUF",
+  "created_at": "2026-08-29T14:20:44.000Z",
+  "updated_at": "2026-08-29T15:31:24.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "gguf",
+    "heretic",
+    "uncensored",
+    "decensored",
+    "abliterated",
+    "mtp",
+    "image-text-to-text",
+    "base_model:Qwen/Qwen3.5-122B-A10B",
+    "base_model:quantized:Qwen/Qwen3.5-122B-A10B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 124635206144,
+  "parameters_human": "124.64B",
+  "storage_bytes": 1087696953472,
+  "storage_human": "1087.7 GB",
+  "base_model": "Qwen/Qwen3.5-122B-A10B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Qwen3.6-27B-uncensored-heretic-v2-Native-MTP-Preserved",
+      "url": "https://huggingface.co/llmfan46/Qwen3.6-27B-uncensored-heretic-v2-Native-MTP-Preserved",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Qwen3.5-35B-A3B-uncensored-heretic-v2-Native-MTP-Preserved-GGUF",
+      "url": "https://huggingface.co/llmfan46/Qwen3.5-35B-A3B-uncensored-heretic-v2-Native-MTP-Preserved-GGUF",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Qwen3.5-122B-A10B-heretic-MTP-NVFP4: NVFP4 Quantized 122B MoE for ...",
+      "url": "https://dev.co/ai/llms/qwen3-5-122b-a10b-heretic-mtp-nvfp4",
+      "snippet": "Technical evaluation of Qwen3.5-122B-A10B-heretic-MTP-NVFP4, a W4A4 quantized 122B MoE model optimized for vLLM with multi-token prediction speculative decoding. Hardware requirements, licensing, deployment, and enterprise readiness assessment."
+    },
+    {
+      "title": "heretic-122b-dgx-spark/README.md at master - GitHub",
+      "url": "https://github.com/GaelicThunder/heretic-122b-dgx-spark/blob/master/README.md",
+      "snippet": "Qwen3.5-122B-A10B Heretic — INT4+FP8 hybrid + MTP for DGX Spark (GB10) Build log + recipe for an uncensored Qwen3.5-122B-A10B that runs at ~45 tok/s on a single NVIDIA DGX Spark (GB10, 121 GB unified) via vLLM, using Intel AutoRound INT4 + FP8 hybrid quantization and working MTP speculative decoding."
+    },
+    {
+      "title": "Qwen3.5 Local Inference Benchmark Results: 4 Machines × 5 Engines",
+      "url": "https://baem1n.dev/en/posts/llm-bench-03-results-tables/",
+      "snippet": "Qwen3.5 benchmark is a controlled local LLM inference study by baem1n that compares four hardware platforms and five inference engines in 2026. The benchmark measures Qwen3.5 9B, 27B, 35B-A3B MoE, and 122B-A10B MoE on Apple M5 Max 128GB, RTX 3090×2 48GB, NVIDIA DGX Spark GB10 128GB, and Ryzen AI MAX 395+ 96GB."
+    }
+  ]
+}

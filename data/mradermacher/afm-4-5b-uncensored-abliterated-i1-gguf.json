@@ -1,0 +1,78 @@
+{
+  "schema": 1,
+  "id": "mradermacher/AFM-4.5B-Uncensored-Abliterated-i1-GGUF",
+  "slug": "mradermacher-afm-4-5b-uncensored-abliterated-i1-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/AFM-4.5B-Uncensored-Abliterated-i1-GGUF",
+  "created_at": "2026-08-29T12:42:55.000Z",
+  "updated_at": "2026-08-29T12:47:26.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "arcee",
+    "afm",
+    "uncensored",
+    "abliterated",
+    "uncensored-llm",
+    "no-refusal",
+    "reasoning",
+    "cybersecurity",
+    "red-teaming",
+    "en",
+    "base_model:Securelayer7/AFM-4.5B-Uncensored-Abliterated",
+    "base_model:quantized:Securelayer7/AFM-4.5B-Uncensored-Abliterated",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1124568,
+  "parameters_human": "1.1M",
+  "storage_bytes": 4530624,
+  "storage_human": "5 MB",
+  "base_model": "Securelayer7/AFM-4.5B-Uncensored-Abliterated",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "mradermacher/AFM-4.5B-i1-GGUF · Hugging Face",
+      "url": "https://huggingface.co/mradermacher/AFM-4.5B-i1-GGUF",
+      "snippet": "mradermacher / AFM-4.5B-i1-GGUF like 0 Transformers GGUF 11 languages imatrix conversational License:apache-2.0 Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "mradermacher/AFM-4.5B-Base-i1-GGUF · Hugging Face",
+      "url": "https://huggingface.co/mradermacher/AFM-4.5B-Base-i1-GGUF",
+      "snippet": "mradermacher / AFM-4.5B-Base-i1-GGUF like 0 Transformers GGUF 11 languages imatrix License:apache-2.0 Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "Abliterated Models 2026: The Best Uncensored GGUFs by VRAM",
+      "url": "https://locallyuncensored.com/blog/abliterated-models-guide.html",
+      "snippet": "What abliteration is, which models are available, where to download, and how to run abliterated models locally."
+    },
+    {
+      "title": "Model Heretic — Uncensored & Heretic AI Models Radar",
+      "url": "https://modelheretic.com/",
+      "snippet": "Discover heretic, abliterated and uncensored LLMs in real time. Filter by GGUF, MLX, hardware fit, creators and capabilities."
+    },
+    {
+      "title": "Uncensor Index — The living index of uncensored AI",
+      "url": "https://uncensorindex.com/",
+      "snippet": "There is no single best uncensored model. Uncensor Index is an independent index of uncensored LLMs, NSFW image models, video models, and the sites that host them. Honest picks by job and VRAM — no generator, no fake benchmarks. 32 models reviewed · 15 sites indexed · 9 guides · updated August 16, 2026"
+    }
+  ]
+}

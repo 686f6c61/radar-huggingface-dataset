@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "Gsj49/adaptive-g-qwen3-4b-code-common-sketch-g32-b64-step300",
+  "slug": "gsj49-adaptive-g-qwen3-4b-code-common-sketch-g32-b64-step300",
+  "author": "Gsj49",
+  "url": "https://huggingface.co/Gsj49/adaptive-g-qwen3-4b-code-common-sketch-g32-b64-step300",
+  "created_at": "2026-08-29T17:28:31.000Z",
+  "updated_at": "2026-08-29T17:33:27.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3",
+    "text-generation",
+    "conversational",
+    "base_model:Qwen/Qwen3-4B",
+    "base_model:finetune:Qwen/Qwen3-4B",
+    "license:apache-2.0",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 4411424256,
+  "parameters_human": "4.41B",
+  "storage_bytes": 8834317166,
+  "storage_human": "8.8 GB",
+  "base_model": "Qwen/Qwen3-4B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Qwen/Qwen3-4B · Hugging Face",
+      "url": "https://huggingface.co/Qwen/Qwen3-4B",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Qwen3-4B-Non-Thinking-RL-Code-Step300 - Hugging Face",
+      "url": "https://huggingface.co/Keven16/Qwen3-4B-Non-Thinking-RL-Code-Step300",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GitHub - nexgen-adm/qwen3: Qwen3 is the large language model series ...",
+      "url": "https://github.com/nexgen-adm/qwen3",
+      "snippet": "Important Qwen3 models adopt a different naming scheme. The post-trained models do not use the \"-Instruct\" suffix anymore. For example, Qwen3-32B is the newer version of Qwen2.5-32B-Instruct. The base models now have names ending with \"-Base\"."
+    },
+    {
+      "title": "Qwen3 Complete Guide: Every Model from 0.6B to 235B",
+      "url": "https://insiderllm.com/guides/qwen3-complete-guide/",
+      "snippet": "Qwen3 is the best open model family for budget local AI. Dense models from 0.6B to 32B, MoE models that punch above their weight, and a /think toggle no one else has."
+    },
+    {
+      "title": "Qwen3 - lmstudio.ai",
+      "url": "https://lmstudio.ai/models/qwen3",
+      "snippet": "The latest version of the Qwen3 model family, featuring 4B, 30B, and 235B dense and MoE models, both thinking and non-thinking variants."
+    }
+  ]
+}

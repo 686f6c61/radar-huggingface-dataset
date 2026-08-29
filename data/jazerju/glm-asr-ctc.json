@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "JazerJu/glm-asr-ctc",
+  "slug": "jazerju-glm-asr-ctc",
+  "author": "JazerJu",
+  "url": "https://huggingface.co/JazerJu/glm-asr-ctc",
+  "created_at": "2026-08-29T13:46:29.000Z",
+  "updated_at": "2026-08-29T13:48:04.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "automatic-speech-recognition",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "ctc-head",
+    "asr",
+    "ctc",
+    "glm-asr",
+    "automatic-speech-recognition",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 159999712,
+  "storage_human": "160 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - zai-org/GLM-ASR: GLM-ASR-Nano: A robust, open-source speech ...",
+      "url": "https://github.com/zai-org/GLM-ASR/",
+      "snippet": "GLM-ASR-Nano-2512 is a robust, open-source speech recognition model with 1.5B parameters. Designed for real-world complexity, it outperforms OpenAI Whisper V3 on multiple benchmarks while maintaining a compact size. Key capabilities include: Exceptional Dialect Support Beyond standard Mandarin and English, the model is highly optimized for Cantonese (粤语) and other dialects, effectively ..."
+    },
+    {
+      "title": "JazerJu (JazerJu) · GitHub",
+      "url": "https://github.com/JazerJu",
+      "snippet": "JazerJu has 10 repositories available. Follow their code on GitHub."
+    },
+    {
+      "title": "‎Google Gemini",
+      "url": "https://gemini.google.com/",
+      "snippet": "Meet Gemini, Google&#x27;s AI assistant. Get help with writing, planning, brainstorming, and more. Experience the power of generative AI."
+    },
+    {
+      "title": "AI Leaderboard 2026: Rankings for 300+ Top AI Models by Intelligence ...",
+      "url": "https://llm-stats.com/",
+      "snippet": "The AI Leaderboard — independent rankings of GPT, Claude, Gemini, Llama, DeepSeek and 300+ AI models by intelligence, speed and price. Composite LLM Stats Score updated continuously from public benchmarks and live API metrics."
+    },
+    {
+      "title": "GLM AI: Models, API, Pricing and Capabilities",
+      "url": "https://glm-ai.chat/",
+      "snippet": "Independent GLM AI guide · Reviewed August 23, 2026 GLM AI: Models, Capabilities, API and Access GLM AI is Z.ai&#x27;s General Language Model family. This independent hub explains what GLM means, compares current models including GLM-5.3, and separates official Z.ai access from this site&#x27;s independent GLM AI Chat."
+    }
+  ]
+}

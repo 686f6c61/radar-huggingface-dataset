@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "fffiloni/microduck-moonwalk-backward-55e6af",
+  "slug": "fffiloni-microduck-moonwalk-backward-55e6af",
+  "author": "fffiloni",
+  "url": "https://huggingface.co/fffiloni/microduck-moonwalk-backward-55e6af",
+  "created_at": "2026-08-29T15:47:00.000Z",
+  "updated_at": "2026-08-29T15:47:01.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "reinforcement-learning",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "onnx",
+    "microduck",
+    "reinforcement-learning",
+    "robotics",
+    "mujoco",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 5812778,
+  "storage_human": "6 MB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "fffiloni (Sylvain Filoni) - Hugging Face",
+      "url": "https://huggingface.co/fffiloni",
+      "snippet": "ML Imagineer • Alumni Arts Déco Paris • PSL [Paris Sciences & Lettres] • HF Fellowship of Open-Source AI"
+    },
+    {
+      "title": "Spaces - Hugging Face",
+      "url": "https://huggingface.co/spaces",
+      "snippet": "Discover and explore community-created machine learning applications on Hugging Face Spaces."
+    },
+    {
+      "title": "fffiloni (Sylvain Filoni) · GitHub",
+      "url": "https://github.com/fffiloni",
+      "snippet": "Creative engineer • ML @huggingface 🤗 Fellow. fffiloni has 93 repositories available. Follow their code on GitHub."
+    },
+    {
+      "title": "Microduck Blog | Pollen Robotics",
+      "url": "https://pollen-robotics.com/microduck/blog/",
+      "snippet": "Build logs, deep dives and news from the team teaching a very small duck to walk."
+    },
+    {
+      "title": "GitHub - apirrone/microduck_runtime",
+      "url": "https://github.com/apirrone/microduck_runtime",
+      "snippet": "The --maploc flag enables 2D ToF-based mapping, MCL localization, and A* path planning, provided by the microduck_maploc-rs crate. It runs autonomously: the duck builds an occupancy grid as it moves, localizes against it, and (when given a goal) plans + executes a path."
+    }
+  ]
+}

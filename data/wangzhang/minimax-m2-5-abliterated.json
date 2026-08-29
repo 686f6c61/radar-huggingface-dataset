@@ -1,0 +1,85 @@
+{
+  "schema": 1,
+  "id": "wangzhang/MiniMax-M2.5-abliterated",
+  "slug": "wangzhang-minimax-m2-5-abliterated",
+  "author": "wangzhang",
+  "url": "https://huggingface.co/wangzhang/MiniMax-M2.5-abliterated",
+  "created_at": "2026-03-01T18:05:58.000Z",
+  "updated_at": "2026-08-29T17:04:31.000Z",
+  "license": "minimax-model-license",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "tags": [
+    "safetensors",
+    "minimax_m2",
+    "minimax",
+    "abliteration",
+    "uncensored",
+    "refusal-removal",
+    "moe",
+    "custom_code",
+    "en",
+    "zh",
+    "arxiv:2406.11717",
+    "base_model:MiniMaxAI/MiniMax-Text-01",
+    "base_model:finetune:MiniMaxAI/MiniMax-Text-01",
+    "license:other",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 10,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 228689764864,
+  "parameters_human": "228.69B",
+  "storage_bytes": 457483428048,
+  "storage_human": "457.5 GB",
+  "base_model": "MiniMaxAI/MiniMax-Text-01",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": true,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": null,
+      "dataset": null,
+      "metric": "Refusal Rate (%)",
+      "value": 5
+    }
+  ],
+  "sources": [
+    {
+      "title": "wangzhang/MiniMax-M2.5-abliterated · Hugging Face",
+      "url": "https://huggingface.co/wangzhang/MiniMax-M2.5-abliterated",
+      "snippet": "MiniMax-M2.5-abliterated Model Overview This is an abliterated version of MiniMax-Text-01 (M2.5) with refusal mechanisms removed using advanced abliteration techniques specifically optimized for Mixture-of-Experts (MoE) architecture. 🎯 Key Achievement: 95% Refusal Removal Success Extensively tested on 1500+ harmful prompts across diverse categories, achieving near-perfect refusal removal ..."
+    },
+    {
+      "title": "wangzhang/MiniMax-M2.5-abliterated at main - Hugging Face",
+      "url": "https://huggingface.co/wangzhang/MiniMax-M2.5-abliterated/tree/main",
+      "snippet": "MiniMax-M2.5-abliterated ... You need to agree to share your contact information to access this model ... Log in or Sign Up to review the conditions and access this model content."
+    },
+    {
+      "title": "GitHub - MiniMax-AI/MiniMax-M2.5",
+      "url": "https://github.com/MiniMax-AI/MiniMax-M2.5",
+      "snippet": "Contribute to MiniMax-AI/MiniMax-M2.5 development by creating an account on GitHub."
+    },
+    {
+      "title": "AI Model Catalog | Microsoft Foundry Models",
+      "url": "https://ai.azure.com/catalog/models/FW-MiniMax-M2.5",
+      "snippet": "MiniMax M2.5 is a Mixture of Experts (MoE) language model built for state-of-the-art coding, agentic tool use, search, and office work. It was extensively trained with reinforcement learning across hundreds of thousands of real-world environments, enabling it to plan like an architect and generalize across unfamiliar scaffolding and tools."
+    },
+    {
+      "title": "MiniMax",
+      "url": "https://www.minimax.io/",
+      "snippet": "Building AGI with our mission Intelligence with Everyone. Global leader in multi-modal models and AI-native products with over 200 million users."
+    }
+  ]
+}

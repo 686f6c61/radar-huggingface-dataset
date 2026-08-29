@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "aplominski/TinyTransformer-Post-LayerNorm-10M-TinyStories",
+  "slug": "aplominski-tinytransformer-post-layernorm-10m-tinystories",
+  "author": "aplominski",
+  "url": "https://huggingface.co/aplominski/TinyTransformer-Post-LayerNorm-10M-TinyStories",
+  "created_at": "2026-08-29T16:39:34.000Z",
+  "updated_at": "2026-08-29T16:39:51.000Z",
+  "license": "openmdw-1.1",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "safetensors",
+    "en",
+    "dataset:roneneldan/TinyStories",
+    "arxiv:1706.03762",
+    "arxiv:1607.06450",
+    "arxiv:1910.07467",
+    "license:openmdw-1.1",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 9627648,
+  "parameters_human": "9.6M",
+  "storage_bytes": 38521664,
+  "storage_human": "39 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - QasimANaik/Tiny-Transformer",
+      "url": "https://github.com/QasimANaik/Tiny-Transformer",
+      "snippet": "Contribute to QasimANaik/Tiny-Transformer development by creating an account on GitHub."
+    },
+    {
+      "title": "Building a Tiny Transformer From Scratch in PyTorch",
+      "url": "https://buildml.substack.com/p/building-a-tiny-transformer-from",
+      "snippet": "If you&#x27;ve ever felt that Transformers are a \"black box,\" today&#x27;s post is for you. Instead of just downloading a pretrained model, we&#x27;re going to build a tiny GPT-style transformer from scratch — small enough to run on your laptop, but powerful enough to generate Shakespeare-like text. By the end, you&#x27;ll not only have a working model, but also a clear understanding of how the ..."
+    },
+    {
+      "title": "GitHub - ihebgafsi/TinyStoriesv1: Reproduction + training scripts for ...",
+      "url": "https://github.com/ihebgafsi/TinyStoriesv1",
+      "snippet": "Reproduction + training scripts for the famous 10M-33M models; used in 40+ academic papers - ihebgafsi/TinyStoriesv1"
+    },
+    {
+      "title": "ForgeGUI - AI Roblox Scripting Tool Feature",
+      "url": "https://devforum.roblox.com/t/forgegui-ai-roblox-scripting-tool-feature/4734535",
+      "snippet": "Free model scripts are instant but unvetted — you&#x27;re trusting mystery code (our explain feature exists partly to fix that). Hiring a scripter is the right call for large custom systems, at commission prices and turnaround times. Generic AI chatbots know Lua but regularly hallucinate Roblox APIs and can&#x27;t see your Studio context."
+    },
+    {
+      "title": "Google Buys Spirit Airlines Data for AI Model Development - Business ...",
+      "url": "https://www.businessinsider.com/google-buys-spirit-airlines-data-ai-model-development-2026-8?op=1",
+      "snippet": "Google bid $10 million for Spirit Airlines&#x27; data, beating Mercor&#x27;s bid. Tech companies are racing to grab as much AI training data as they can."
+    }
+  ]
+}

@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "Ttimms/bible-ai-assistant-qwen3.5-4b-v2-GGUF",
+  "slug": "ttimms-bible-ai-assistant-qwen3-5-4b-v2-gguf",
+  "author": "Ttimms",
+  "url": "https://huggingface.co/Ttimms/bible-ai-assistant-qwen3.5-4b-v2-GGUF",
+  "created_at": "2026-08-29T15:38:55.000Z",
+  "updated_at": "2026-08-29T15:41:03.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "gguf",
+    "bible",
+    "rag",
+    "llama.cpp",
+    "qwen3.5",
+    "text-generation",
+    "en",
+    "base_model:Ttimms/bible-ai-assistant-qwen3.5-4b-v2",
+    "base_model:quantized:Ttimms/bible-ai-assistant-qwen3.5-4b-v2",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 4205751296,
+  "parameters_human": "4.21B",
+  "storage_bytes": 22154641440,
+  "storage_human": "22.2 GB",
+  "base_model": "Ttimms/bible-ai-assistant-qwen3.5-4b-v2",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Ttimms/bible-ai-qwen3.5-4b-lora · Hugging Face",
+      "url": "https://huggingface.co/Ttimms/bible-ai-qwen3.5-4b-lora",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "t-timms/bible-ai-assistant: Bible Q&A - GitHub",
+      "url": "https://github.com/t-timms/bible-ai-assistant",
+      "snippet": "Most Bible apps offer keyword search. This project builds a real AI that understands Scripture — fine-tuned on theology, grounded in retrieved passages, and guardrailed against hallucination. It combines a custom ORPO-trained Qwen3.5-4B model with hybrid RAG (BM25 + dense retrieval + cross-encoder reranking) and constitutional AI safety checks. Voice input and output make it accessible to ..."
+    },
+    {
+      "title": "bible-ai-assistant/README.md at main · t-timms/bible-ai-assistant - GitHub",
+      "url": "https://github.com/t-timms/bible-ai-assistant/blob/main/README.md",
+      "snippet": "A locally-hosted Bible Q&A assistant fine-tuned on Qwen3.5-4B with hybrid RAG retrieval, ORPO preference alignment, and optional voice interaction. Built end-to-end: dataset curation, training, evaluation, deployment. Most Bible apps offer keyword search. This project builds a real AI that ..."
+    },
+    {
+      "title": "bible-ai-qwen3.5-4b-lora API & Inference Endpoint | FriendliAI",
+      "url": "https://friendli.ai/models/Ttimms/bible-ai-qwen3.5-4b-lora",
+      "snippet": "The production deployment merges this adapter and exports to GGUF (F16 + Q4_K_M) for Ollama serving — see scripts/ in the GitHub repo for the merge/export pipeline."
+    },
+    {
+      "title": "qwen3.5:4b - ollama.com",
+      "url": "https://ollama.com/library/qwen3.5:4b",
+      "snippet": "Qwen3.5 represents a significant leap forward, integrating breakthroughs in multimodal learning, architectural efficiency, reinforcement learning scale, and global accessibility to empower developers and enterprises with unprecedented capability and efficiency."
+    }
+  ]
+}

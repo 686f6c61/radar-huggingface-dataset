@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "adimunot/transformer-from-scratch",
+  "slug": "adimunot-transformer-from-scratch",
+  "author": "adimunot",
+  "url": "https://huggingface.co/adimunot/transformer-from-scratch",
+  "created_at": "2026-08-29T14:50:23.000Z",
+  "updated_at": "2026-08-29T14:50:32.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "transformer",
+    "gpt",
+    "from-scratch",
+    "pytorch",
+    "text-generation",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 18847068,
+  "storage_human": "19 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - Khaliladib11/Transformer-from-scratch: I will build ...",
+      "url": "https://github.com/Khaliladib11/Transformer-from-scratch",
+      "snippet": "Transformer from Scratch A complete PyTorch implementation of the Transformer architecture from the groundbreaking paper \"Attention Is All You Need\". This implementation includes advanced features like padding masks for variable-length sequences and comprehensive testing."
+    },
+    {
+      "title": "GitHub - ayushman-X-ai/Transformer-From-Scratch: A complete ...",
+      "url": "https://github.com/ayushman-X-ai/Transformer-From-Scratch",
+      "snippet": "A complete Transformer architecture built from scratch using PyTorch, inspired by the paper 📜 Attention Is All You Need (Vaswani et al., 2017). This project demonstrates a full, modular implementation of a Transformer — including embeddings, positional encodings, multi-head attention, encoder-decoder stacks, and attention visualization — entirely coded by hand."
+    },
+    {
+      "title": "Transformer from scratch - bogdanmunteanu.me",
+      "url": "https://bogdanmunteanu.me/projects/transformer-from-scratch",
+      "snippet": "A from-scratch implementation of the original Transformer architecture described in Attention Is All You Need (Vaswani et al., 2017), built in PyTorch without relying on high-level abstractions. Motivation The goal of this project is to gain a thorough understand the Transformer architecture by studying and replicating each of its building blocks, then assembling them into a working model and ..."
+    },
+    {
+      "title": "Building Transformer Models From Scratch with PyTorch",
+      "url": "https://machinelearningmastery.com/building-transformer-models-from-scratch/",
+      "snippet": "Building Transformer Models From Scratch with PyTorch Attention Mechanisms to Language Models $37 USD Transformer models have revolutionized artificial intelligence, powering everything from ChatGPT to video generation. But how do these powerful models actually work? Despite their impact, transformers aren&#x27;t as complicated as they seem. They&#x27;re built from a few core components, and the ..."
+    },
+    {
+      "title": "Complete Guide to Building a Transformer Model with PyTorch",
+      "url": "https://www.datacamp.com/tutorial/building-a-transformer-with-py-torch",
+      "snippet": "Learn how to build a Transformer model from scratch using PyTorch. This hands-on guide covers attention, training, evaluation, and full code examples."
+    }
+  ]
+}

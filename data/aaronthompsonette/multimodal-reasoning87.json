@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "aaronthompsonette/multimodal-reasoning87",
+  "slug": "aaronthompsonette-multimodal-reasoning87",
+  "author": "aaronthompsonette",
+  "url": "https://huggingface.co/aaronthompsonette/multimodal-reasoning87",
+  "created_at": "2026-08-29T10:56:20.000Z",
+  "updated_at": "2026-08-29T10:56:29.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "transformer",
+    "research-notes",
+    "multimodal-reasoning",
+    "license:cc-by-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 33088,
+  "parameters_human": "33088",
+  "storage_bytes": 132832,
+  "storage_human": "132832 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "aaronthompsonette (Tomás) - Hugging Face",
+      "url": "https://huggingface.co/aaronthompsonette",
+      "snippet": "Recent Activity updated a modelabout 8 hours ago aaronthompsonette/model_269703833_coca_small published a modelabout 8 hours ago aaronthompsonette/model_269703833_coca_small liked a Space8 days ago agent-memory-leaderboard/leaderboard View all activity"
+    },
+    {
+      "title": "aaronthompsonette (Tomás) - Hugging Face",
+      "url": "https://huggingface.co/aaronthompsonette/models",
+      "snippet": "aaronthompsonette&#x27;s models1 Sort: Recently updated aaronthompsonette/model_269703833_coca_small Updated 2 days ago"
+    },
+    {
+      "title": "Best LLMs for Reasoning — August 2026 Leaderboard | BenchLM.ai",
+      "url": "https://benchlm.ai/reasoning",
+      "snippet": "As of August 2026, the top reasoning model on the BenchLM leaderboard is Qwen3.8 Max with a weighted reasoning score of 95.5. Decision lens: use provisional-ranked mode for broader public evidence and verified-ranked mode for source-only comparisons. A model can move between views as evidence coverage changes."
+    },
+    {
+      "title": "Best Reasoning AI Models (August 2026) — Ranked by Benchmark Data",
+      "url": "https://benchlm.ai/best/reasoning-models",
+      "snippet": "Top AI models with dedicated reasoning capabilities, ranked by benchmark performance. Top picks: Claude Mythos 5, Claude Fable 5, Claude Opus 5. 138 models ranked with detailed benchmark scores."
+    },
+    {
+      "title": "Best LLM Leaderboard 2026 | AI Model Rankings, Benchmarks & Pricing",
+      "url": "https://onyx.app/llm-leaderboard",
+      "snippet": "The definitive LLM leaderboard — ranking the best AI models including Claude, GPT, Gemini, DeepSeek, Llama, and more across coding, reasoning, math, agentic, and chat benchmarks. Compare LLM rankings, tier lists, and pricing."
+    }
+  ]
+}

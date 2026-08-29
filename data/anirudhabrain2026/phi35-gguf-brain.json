@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "anirudhabrain2026/phi35-gguf-brain",
+  "slug": "anirudhabrain2026-phi35-gguf-brain",
+  "author": "anirudhabrain2026",
+  "url": "https://huggingface.co/anirudhabrain2026/phi35-gguf-brain",
+  "created_at": "2026-08-29T16:55:47.000Z",
+  "updated_at": "2026-08-29T16:55:47.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "olusegunola/phi35-clinical-reasoning-gguf · Hugging Face",
+      "url": "https://huggingface.co/olusegunola/phi35-clinical-reasoning-gguf",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GGUF-Models (GGUF) - Hugging Face",
+      "url": "https://huggingface.co/GGUF-Models",
+      "snippet": "Our goal is to simplify the process of searching for and exchanging quantized models in GGUF format, as well as to create a space for efficient exchange and access to the models you need"
+    },
+    {
+      "title": "GreyBrain Pulse — the daily AI briefing",
+      "url": "https://greybrain.ai/",
+      "snippet": "A daily briefing on the AI frontier, translated into plain language. Live from Hugging Face."
+    },
+    {
+      "title": "GGUF Model Discovery - Browse & Download AI Models",
+      "url": "https://local-ai-zone.github.io/",
+      "snippet": "Discover and download GGUF format AI models. Browse and direct download thousands of quantized AI models with detailed information, download counts, and direct links."
+    },
+    {
+      "title": "Gemini 3.5 Flash - Model Card — Google DeepMind",
+      "url": "https://deepmind.google/models/model-cards/gemini-3-5-flash/",
+      "snippet": "Description Gemini 3.5 Flash is the next iteration in the Gemini 3 series of highly-capable, natively multimodal, reasoning models. Gemini 3.5 Flash is based on the Gemini 3 Flash reasoning foundation with thinking levels to control the mix of quality, cost and latency."
+    }
+  ]
+}

@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "iromu/Gemma3-1B-tools-GGUF",
+  "slug": "iromu-gemma3-1b-tools-gguf",
+  "author": "iromu",
+  "url": "https://huggingface.co/iromu/Gemma3-1B-tools-GGUF",
+  "created_at": "2026-08-29T11:48:29.000Z",
+  "updated_at": "2026-08-29T12:33:20.000Z",
+  "license": "gemma",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "gguf",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "gguf",
+    "gemma3",
+    "tool-calling",
+    "function-calling",
+    "agents",
+    "lora",
+    "en",
+    "dataset:r0b0tlab/qwen3.8-max-glm5.2-kimi-k3-distillation",
+    "base_model:google/gemma-3-1b-it",
+    "base_model:adapter:google/gemma-3-1b-it",
+    "license:gemma",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 999885952,
+  "parameters_human": "999.9M",
+  "storage_bytes": 4766099584,
+  "storage_human": "4.8 GB",
+  "base_model": "google/gemma-3-1b-it",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "iromu/Gemma3-1B-tools-GGUF · Hugging Face",
+      "url": "https://huggingface.co/iromu/Gemma3-1B-tools-GGUF",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "unsloth/gemma-3-1b-it-GGUF · Hugging Face",
+      "url": "https://huggingface.co/unsloth/gemma-3-1b-it-GGUF",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GitHub - hackur/gemma3",
+      "url": "https://github.com/hackur/gemma3",
+      "snippet": "Try using a smaller model (e.g., 1B-IT instead of 8B, or a GGUF model with smaller quantization) Use 4-bit quantization instead of 8-bit or full precision (for Hugging Face models)"
+    },
+    {
+      "title": "gemma3:1b - ollama.com",
+      "url": "https://ollama.com/library/gemma3:1b",
+      "snippet": "The current, most capable model that runs on a single GPU."
+    },
+    {
+      "title": "gemma-3 (Gemma3) · GitHub",
+      "url": "https://github.com/gemma-3/",
+      "snippet": "Gemma 3 is Google&#x27;s most advanced open AI model, offering state-of-the-art performance with a 128K context window, multimodal capabilities, and support for 140+ languages. Build powerful applications on a single GPU with this cutting-edge technology."
+    }
+  ]
+}

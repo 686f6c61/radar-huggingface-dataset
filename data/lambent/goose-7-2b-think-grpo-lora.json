@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "Lambent/Goose-7.2B-think-grpo-lora",
+  "slug": "lambent-goose-7-2b-think-grpo-lora",
+  "author": "Lambent",
+  "url": "https://huggingface.co/Lambent/Goose-7.2B-think-grpo-lora",
+  "created_at": "2026-08-29T12:24:48.000Z",
+  "updated_at": "2026-08-29T12:28:03.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "base_model:Lambent/RWKV7-7.2B-midtrain50-docs-lora",
+    "base_model:finetune:Lambent/RWKV7-7.2B-midtrain50-docs-lora",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 604029912,
+  "storage_human": "604 MB",
+  "base_model": "Lambent/RWKV7-7.2B-midtrain50-docs-lora, RWKV/RWKV7-7.2B-20260805",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GRPO Trainer · Hugging Face",
+      "url": "https://huggingface.co/docs/trl/grpo_trainer",
+      "snippet": "GRPO Trainer Overview TRL supports the GRPO Trainer for training language models, as described in the paper DeepSeekMath: Pushing the Limits of Mathematical Reasoning in Open Language Models by Zhihong Shao, Peiyi Wang, Qihao Zhu, Runxin Xu, Junxiao Song, Mingchuan Zhang, Y. K. Li, Y. Wu, Daya Guo. The abstract from the paper is the following: Mathematical reasoning poses a significant ..."
+    },
+    {
+      "title": "RWKV-LM/Research/rwkv7-g0-7.2b.md at main - GitHub",
+      "url": "https://github.com/BlinkDL/RWKV-LM/blob/main/Research/rwkv7-g0-7.2b.md",
+      "snippet": "We are at RWKV-7 \"Goose\". So it&#x27;s combining the best of RNN and transformer - great performance, linear time, constant space (no kv-cache), fast training, infinite ctx_len, and free sentence embedding."
+    },
+    {
+      "title": "Post training an LLM for reasoning with GRPO in TRL · Hugging Face",
+      "url": "https://huggingface.co/learn/cookbook/fine_tuning_llm_grpo_trl",
+      "snippet": "In this notebook, we&#x27;ll guide you through the process of post-training a Large Language Model (LLM) using Group Relative Policy Optimization (GRPO), a method introduced in the DeepSeekMath paper. GRPO is particularly effective for scaling test-time compute for extended reasoning, making it an ideal approach for solving complex tasks, such as mathematical problem-solving."
+    },
+    {
+      "title": "Reasoning-in-Generative-AI/code/train_grpo_7b_lora.py at main · tommy ...",
+      "url": "https://github.com/tommy-fcy/Reasoning-in-Generative-AI/blob/main/code/train_grpo_7b_lora.py",
+      "snippet": "Empirical LLM reasoning sandbox. Contribute to tommy-fcy/Reasoning-in-Generative-AI development by creating an account on GitHub."
+    },
+    {
+      "title": "Troubleshooting & FAQs | Unsloth Documentation",
+      "url": "https://unsloth.ai/docs/basics/troubleshooting-and-faqs",
+      "snippet": "This means that your usage of train_on_responses_only is incorrect for that particular model. train_on_responses_only allows you to mask the user question, and train your model to output the assistant response with higher weighting. This is known to increase accuracy by 1% or more. See our LoRA Hyperparameters Guide for more details."
+    }
+  ]
+}

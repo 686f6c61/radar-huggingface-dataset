@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "reachjalil/nottyduck-policies",
+  "slug": "reachjalil-nottyduck-policies",
+  "author": "reachjalil",
+  "url": "https://huggingface.co/reachjalil/nottyduck-policies",
+  "created_at": "2026-08-29T18:42:39.000Z",
+  "updated_at": "2026-08-29T18:42:54.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "reinforcement-learning",
+  "library": "onnxruntime",
+  "languages": [],
+  "tags": [
+    "onnxruntime",
+    "robotics",
+    "reinforcement-learning",
+    "mujoco",
+    "onnx",
+    "microduck",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Which Model Providers Receive Duck.ai Prompts and What...",
+      "url": "https://factually.co/fact-checks/technology/duck-ai-model-providers-data-retention-policies-2d9121",
+      "snippet": "What Duck.ai says about deletion and retention windows DuckDuckGo&#x27;s policy repeatedly affirms that prompts and outputs are not used to train Duck.ai or the underlying model providers, and that model providers are contractually required to delete information once it is no longer necessary to provide outputs — with an explicit maximum ..."
+    },
+    {
+      "title": "reachjalil (Jalil) · GitHub",
+      "url": "https://github.com/reachjalil",
+      "snippet": "Senior software engineer in San Francisco building production agentic systems — tool calling, orchestration, evals, and realtime voice — and the full-stack TypeScript products around them. I run Applied Intelligence, an independent AI adoption and tooling consultancy. 🧭 appliedintelligence.team · ⚙️ harnessconfig.dev · 🌐 reachjalil.github.io · 💼 LinkedIn · ️ reachjalil ..."
+    },
+    {
+      "title": "GitHub - reachjalil/reachjalil: Profile README · GitHub",
+      "url": "https://github.com/reachjalil/reachjalil",
+      "snippet": "Hey, I&#x27;m Jalil 👋 Senior software engineer in San Francisco building production agentic systems — tool calling, orchestration, evals, and realtime voice — and the full-stack TypeScript products around them."
+    },
+    {
+      "title": "reachjalil (Jalil Laaraichi) - Hugging Face",
+      "url": "https://huggingface.co/reachjalil/datasets",
+      "snippet": "User profile of Jalil Laaraichi on Hugging Face"
+    },
+    {
+      "title": "Duck.ai by DuckDuckGo. Private AI chat. Free.",
+      "url": "https://duck.ai/",
+      "snippet": "Use ChatGPT, Claude, and other AIs, privately. Protect chats from hackers, scammers, and companies. Keep info confidential. Free. No account required."
+    }
+  ]
+}

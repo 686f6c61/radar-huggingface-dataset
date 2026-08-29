@@ -1,0 +1,81 @@
+{
+  "schema": 1,
+  "id": "MultiSense/CustomerLM",
+  "slug": "multisense-customerlm",
+  "author": "MultiSense",
+  "url": "https://huggingface.co/MultiSense/CustomerLM",
+  "created_at": "2026-01-05T07:36:19.000Z",
+  "updated_at": "2026-08-29T15:29:12.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "zh",
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3",
+    "text-generation",
+    "causal-lm",
+    "qwen",
+    "finetune",
+    "user-simulator",
+    "role-play",
+    "sales",
+    "dpo",
+    "conversational",
+    "zh",
+    "en",
+    "arxiv:2604.07054",
+    "license:apache-2.0",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 850,
+  "trending_score": 0,
+  "parameters": 8190735360,
+  "parameters_human": "8.19B",
+  "storage_bytes": 16393229846,
+  "storage_human": "16.4 GB",
+  "base_model": "Qwen/Qwen3-8B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "MultiSense/CustomerLM · Hugging Face",
+      "url": "https://huggingface.co/MultiSense/CustomerLM",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "MultiSense/CustomerLM at main - Hugging Face",
+      "url": "https://huggingface.co/MultiSense/CustomerLM/tree/main",
+      "snippet": "MultiSense / CustomerLM like 1 Follow XdynamicsTech 2 Text Generation Transformers Safetensors qwen3 causal-lm qwen finetune conversational text-generation-inference License:apache-2.0 Model card FilesFiles and versions xet Community 1 Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "MultiSense/CustomerLM - Fast, Reliable, and Scalable Inference on ...",
+      "url": "https://friendli.ai/models/MultiSense/CustomerLM",
+      "snippet": "Run MultiSense/CustomerLM with fast, reliable, and scalable inference on FriendliAI. Get low-latency performance with advanced quantization (FP4, FP8, INT4, INT8), continuous batching, optimized GPU kernels, token caching, and seamless API integration."
+    },
+    {
+      "title": "Sell More, Play Less: Benchmarking LLM Realistic Selling Skill",
+      "url": "https://arxiv.org/pdf/2604.07054",
+      "snippet": "Ai-salesman: Towards reliable large language model driven tele-marketing. Preprint, arXiv:2511.12133. Xuhui Zhou, Hao Zhu, Leena Mathur, Ruohong Zhang, Haofei Yu, Zhengyang Qi, Louis-Philippe Morency, Yonatan Bisk, Daniel Fried, Graham Neubig, and Maarten Sap. 2024. Sotopia: Interactive evaluation for social intelligence in language agents."
+    },
+    {
+      "title": "LLM Leaderboard 2026: Compare 300+ Top AI Models by Intelligence, Speed ...",
+      "url": "https://llm-stats.com/leaderboards/llm-leaderboard",
+      "snippet": "The LLM Leaderboard — independent ranking of GPT, Claude, Gemini, Llama, DeepSeek and 300+ AI models by intelligence, speed and price. Filter by provider, license, modality and context window; sort by every benchmark. Composite LLM Stats Score updated continuously from public benchmarks and live API metrics."
+    }
+  ]
+}

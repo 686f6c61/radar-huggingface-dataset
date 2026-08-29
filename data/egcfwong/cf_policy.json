@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "egcfwong/cf_policy",
+  "slug": "egcfwong-cf_policy",
+  "author": "egcfwong",
+  "url": "https://huggingface.co/egcfwong/cf_policy",
+  "created_at": "2026-08-29T13:02:17.000Z",
+  "updated_at": "2026-08-29T13:02:17.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "act",
+    "robotics",
+    "dataset:egcfwong/test_1_20260829_164444",
+    "arxiv:2304.13705",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 51668614,
+  "parameters_human": "51.7M",
+  "storage_bytes": 206714912,
+  "storage_human": "207 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Counterfactually Fair Reinforcement Learning via Sequential Data ...",
+      "url": "https://arxiv.org/pdf/2501.06366v2",
+      "snippet": "We theoretically characterize the optimal CF policy and prove its stationarity, which greatly simplifies the search for optimal CF policies by leveraging existing RL al- gorithms. The theory also motivates a sequential data preprocessing algorithm to achieve CF decision making under an additive noise assumption."
+    },
+    {
+      "title": "Artificial Intelligence (AI) can change the way of doing policy ...",
+      "url": "https://www.sciencedirect.com/science/article/pii/S0161893823001199",
+      "snippet": "This paper evaluates how Artificial Intelligence (AI) can revolutionize policy modeling. AI&#x27;s rapid advancement, encompassing algorithms, advanced programming software, robotics, meta-data, mathematical models, neural networks, and graphical models, is ushering in a new era, offering a myriad of opportunities to replace traditional research methods in analyzing and solving dynamic and complex ..."
+    },
+    {
+      "title": "PDF White House National Policy Framework for AI - Legislative Recommendations",
+      "url": "https://www.whitehouse.gov/wp-content/uploads/2026/03/03.20.26-National-Policy-Framework-for-Artificial-Intelligence-Legislative-Recommendations.pdf",
+      "snippet": "The federal government must establish a federal AI policy framework to protect American rights, support innovation, and prevent a fragmented patchwork of state regulations that would hinder our ..."
+    },
+    {
+      "title": "AI Policy Models in China and the United States: A Multi-Level ...",
+      "url": "https://www.tandfonline.com/doi/full/10.1080/13876988.2025.2529277",
+      "snippet": "Abstract This article reports on a multi-level, mixed-methods comparative analysis of AI policy models in China and the United States, examining both divergence and convergence in their policy goals, implementation strategies, and implementation processes."
+    },
+    {
+      "title": "AI Policy Models in China and the United States: A Multi-Level ...",
+      "url": "https://www.linkedin.com/posts/wilson-wong-dsps_ai-policy-models-in-china-and-the-united-activity-7398713475289624576-Vhgk",
+      "snippet": "I&#x27;m pleased to share my new open-access article, \"AI Policy Models in China and the United States: A Multi-Level Comparative Analysis of Policy Convergence and Divergence\", published in the ..."
+    }
+  ]
+}

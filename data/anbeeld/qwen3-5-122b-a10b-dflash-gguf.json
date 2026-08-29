@@ -1,0 +1,84 @@
+{
+  "schema": 1,
+  "id": "Anbeeld/Qwen3.5-122B-A10B-DFlash-GGUF",
+  "slug": "anbeeld-qwen3-5-122b-a10b-dflash-gguf",
+  "author": "Anbeeld",
+  "url": "https://huggingface.co/Anbeeld/Qwen3.5-122B-A10B-DFlash-GGUF",
+  "created_at": "2026-08-29T17:56:41.000Z",
+  "updated_at": "2026-08-29T17:56:44.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "feature-extraction",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3",
+    "feature-extraction",
+    "dflash",
+    "speculative-decoding",
+    "speculative-decoding-draft",
+    "block-diffusion",
+    "draft-model",
+    "diffusion-language-model",
+    "efficiency",
+    "qwen",
+    "qwen3.5",
+    "sglang",
+    "text-generation",
+    "custom_code",
+    "arxiv:2602.06036",
+    "base_model:Qwen/Qwen3.5-122B-A10B",
+    "base_model:finetune:Qwen/Qwen3.5-122B-A10B",
+    "license:apache-2.0",
+    "text-generation-inference",
+    "region:us",
+    "base_model:z-lab/Qwen3.5-122B-A10B-DFlash",
+    "base_model:finetune:z-lab/Qwen3.5-122B-A10B-DFlash",
+    "endpoints_compatible"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 338153,
+  "storage_human": "338153 B",
+  "base_model": "z-lab/Qwen3.5-122B-A10B-DFlash",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Qwen/Qwen3.5-122B-A10B · Hugging Face",
+      "url": "https://huggingface.co/Qwen/Qwen3.5-122B-A10B",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "z-lab/Qwen3.5-122B-A10B-DFlash · Hugging Face",
+      "url": "https://huggingface.co/z-lab/Qwen3.5-122B-A10B-DFlash",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Best Qwen 3.5 Models Ranked: Every Size, Every GPU, Every Quant",
+      "url": "https://insiderllm.com/guides/qwen-3-5-local-guide/",
+      "snippet": "Qwen 3.5-122B-A10B: multi-GPU territory The 122B is the model for people who have more hardware than patience. 122 billion total parameters, 10 billion active per token (8 routed + 1 shared from 256 experts)."
+    },
+    {
+      "title": "Qwen3.5 122B-A10B · Models · The Open-Source AI Stack",
+      "url": "https://www.open-source-ai.tech/models/qwen3-5-122b-a10b",
+      "snippet": "A mid-size Qwen3.5 mixture-of-experts: 122B total with about 10B active per token. The large footprint needs a high-capacity box, while the 10B active count keeps single-stream decode brisk; it is often run at IQ4_XS for long-context work."
+    },
+    {
+      "title": "Qwen 3.5 122B A10B | AI Model | There&#x27;s An AI For That",
+      "url": "https://theresanaiforthat.com/model/qwen-3-5-122b-a10b/",
+      "snippet": "Qwen3.5-122B-A10B is a larger Mixture-of-Experts Qwen3.5 model with 122B total parameters and 10B active per token, targeting higher peak capability while staying compute-efficient at inference."
+    }
+  ]
+}

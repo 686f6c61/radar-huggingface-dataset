@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "AdhamAshraf/image-caption-generator",
+  "slug": "adhamashraf-image-caption-generator",
+  "author": "AdhamAshraf",
+  "url": "https://huggingface.co/AdhamAshraf/image-caption-generator",
+  "created_at": "2026-08-28T20:45:07.000Z",
+  "updated_at": "2026-08-29T17:09:38.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "image-to-text",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "image-captioning",
+    "pytorch",
+    "lstm",
+    "computer-vision",
+    "nlp",
+    "flickr8k",
+    "image-to-text",
+    "en",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 162793382,
+  "storage_human": "163 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - srasal445/Al-Image-caption-generator: The AI Image Caption ...",
+      "url": "https://github.com/srasal445/Al-Image-caption-generator",
+      "snippet": "Al-Image-caption-generator The AI Image Caption Generator is an end-to-end application that automatically generates natural-language captions for images using deep learning and computer vision."
+    },
+    {
+      "title": "AI Image Caption Generator | Smart ML-Powered Captions",
+      "url": "https://amajalaussl.github.io/imagecaptiongeneration/",
+      "snippet": "Generate intelligent captions for any image using advanced AI and machine learning. Upload images and get instant, accurate descriptions powered by state-of-the-art computer vision models."
+    },
+    {
+      "title": "Free AI Image Caption Generator — Upload Photo, Get Captions",
+      "url": "https://www.junia.ai/tools/image-caption-generator",
+      "snippet": "Junia AI &#x27;s free Image Caption Generator is an online AI tool that uses advanced neural networks to instantly create accurate, natural-sounding captions for almost any picture in just a few seconds. You just upload an image, wait a tiny bit, and the system automatically looks at the objects, people, colors, the setting, and the overall context of the scene. Then it generates AI-powered image ..."
+    },
+    {
+      "title": "Image captioning · Hugging Face",
+      "url": "https://huggingface.co/docs/transformers/tasks/image_captioning",
+      "snippet": "Image captioning Image captioning is the task of predicting a caption for a given image. Common real world applications of it include aiding visually impaired people that can help them navigate through different situations. Therefore, image captioning helps to improve content accessibility for people by describing images to them."
+    },
+    {
+      "title": "AI Image Captions — Free Caption Generator | AICreate",
+      "url": "https://aicreate.com/image-captions/",
+      "snippet": "Upload an image and get AI-generated captions for social media, alt text, and more. Browser-first AI; the fallback processes a downscaled copy on the server."
+    }
+  ]
+}

@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "simoneFerita/project_math",
+  "slug": "simoneferita-project_math",
+  "author": "simoneFerita",
+  "url": "https://huggingface.co/simoneFerita/project_math",
+  "created_at": "2026-08-07T14:53:23.000Z",
+  "updated_at": "2026-08-29T13:40:47.000Z",
+  "license": "gpl",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "base_model:Qwen/Qwen3.5-2B",
+    "base_model:quantized:Qwen/Qwen3.5-2B",
+    "license:gpl",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 104,
+  "trending_score": 0,
+  "parameters": 1942653248,
+  "parameters_human": "1.94B",
+  "storage_bytes": 4568760384,
+  "storage_human": "4.6 GB",
+  "base_model": "Qwen/Qwen3.5-2B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "simoneFerita/project_math · Hugging Face",
+      "url": "https://huggingface.co/simoneFerita/project_math",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "simoneFerita (simoneFerita) - Hugging Face",
+      "url": "https://huggingface.co/simoneFerita",
+      "snippet": "Recent Activity updated a modelabout 14 hours ago simoneFerita/project_math published a model4 days ago simoneFerita/project_math View all activity"
+    },
+    {
+      "title": "simoneFerita (Simone De Luca) · GitHub",
+      "url": "https://github.com/simoneFerita/",
+      "snippet": "Created 8 commits in 1 repository simoneFerita/project_math 8 commits Created 1 repository simoneFerita/project_math Aug 7 Show more activity"
+    },
+    {
+      "title": "Best AI for Math 2026 - Top Mathematical Models",
+      "url": "https://llm-stats.com/leaderboards/best-ai-for-math",
+      "snippet": "Rankings of the best AI models for mathematical reasoning. Compare models by math problem solving and mathematical capabilities."
+    },
+    {
+      "title": "AI training - YouTube",
+      "url": "https://www.youtube.com/watch?v=7hq-RKPIjyU",
+      "snippet": "#ai #training #unslothhttps://github.com/simoneFerita/project_math"
+    }
+  ]
+}

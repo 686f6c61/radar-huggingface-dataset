@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "m-yuasa/pytorch-mi300a-rocm72",
+  "slug": "m-yuasa-pytorch-mi300a-rocm72",
+  "author": "m-yuasa",
+  "url": "https://huggingface.co/m-yuasa/pytorch-mi300a-rocm72",
+  "created_at": "2026-08-29T12:50:03.000Z",
+  "updated_at": "2026-08-29T14:30:48.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "pytorch",
+    "rocm",
+    "mi300a",
+    "amd",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 4046339660,
+  "storage_human": "4.0 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "PyTorch compatibility — ROCm Documentation",
+      "url": "https://rocm.docs.amd.com/en/docs-6.3.1/compatibility/ml-compatibility/pytorch-compatibility.html",
+      "snippet": "Using ROCm for AI: training a model provides guidance on how to leverage the ROCm platform for training AI models. It covers the steps, tools, and best practices for optimizing training workflows on AMD GPUs using PyTorch features."
+    },
+    {
+      "title": "PyTorch compatibility — ROCm Documentation",
+      "url": "https://rocm.docs.amd.com/en/docs-7.0.1/compatibility/ml-compatibility/pytorch-compatibility.html",
+      "snippet": "The Inception with PyTorch documentation describes how PyTorch integrates with ROCm for AI workloads It outlines the use of PyTorch on the ROCm platform and focuses on efficiently leveraging AMD GPU hardware for training and inference tasks in AI applications. For more use cases and recommendations, see ROCm PyTorch blog posts."
+    },
+    {
+      "title": "AMD MI300A Unified Memory Support · Issue #145693 · pytorch/pytorch",
+      "url": "https://github.com/pytorch/pytorch/issues/145693",
+      "snippet": "I am working on improving performance for LLM workloads on AMD Instinct™ MI300A Accelerator. This APU is equipped with a fully unified-memory architecture not taken advantage by PyTorch at this time. Because both the GPU and CPU share the same physical memory, memcpy ops become redundant and can limit the size of the model we can train."
+    },
+    {
+      "title": "GitHub - Yudistir123/rocm-inference-engine: High-performance deep ...",
+      "url": "https://github.com/Yudistir123/rocm-inference-engine",
+      "snippet": "ROCm Deep Learning Inference Engine High-performance deep learning inference framework optimized for AMD Instinct GPUs (MI300/MI300X) using ROCm and PyTorch."
+    },
+    {
+      "title": "PyTorch",
+      "url": "https://pytorch.org/",
+      "snippet": "TL;DR PyTorch Conference North America 2026 features Core PyTorch sessions spanning compiler and runtime work, distributed communication, device portability, release engineering, CI, observability, accelerator integration, and contributor infrastructure."
+    }
+  ]
+}

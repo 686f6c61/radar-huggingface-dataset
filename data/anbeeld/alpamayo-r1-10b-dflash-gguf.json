@@ -1,0 +1,81 @@
+{
+  "schema": 1,
+  "id": "Anbeeld/Alpamayo-R1-10B-DFlash-GGUF",
+  "slug": "anbeeld-alpamayo-r1-10b-dflash-gguf",
+  "author": "Anbeeld",
+  "url": "https://huggingface.co/Anbeeld/Alpamayo-R1-10B-DFlash-GGUF",
+  "created_at": "2026-08-29T17:48:32.000Z",
+  "updated_at": "2026-08-29T18:10:49.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": "robotics",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "safetensors",
+    "qwen3",
+    "flashdrive",
+    "dflash",
+    "speculative-decoding",
+    "block-diffusion",
+    "draft-model",
+    "autonomous-driving",
+    "vision-language-action",
+    "robotics",
+    "en",
+    "arxiv:2602.06036",
+    "base_model:z-lab/Alpamayo-R1-10B",
+    "base_model:finetune:z-lab/Alpamayo-R1-10B",
+    "license:other",
+    "region:us",
+    "base_model:z-lab/Alpamayo-R1-10B-DFlash",
+    "base_model:quantized:z-lab/Alpamayo-R1-10B-DFlash",
+    "endpoints_compatible",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 469787136,
+  "parameters_human": "469.8M",
+  "storage_bytes": 1970219936,
+  "storage_human": "2.0 GB",
+  "base_model": "z-lab/Alpamayo-R1-10B-DFlash",
+  "formats": [
+    "gguf",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "z-lab/Alpamayo-R1-10B-DFlash · Hugging Face",
+      "url": "https://huggingface.co/z-lab/Alpamayo-R1-10B-DFlash",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "z-lab/Alpamayo-R1-10B · Hugging Face",
+      "url": "https://huggingface.co/z-lab/Alpamayo-R1-10B",
+      "snippet": "A newer version of this model is available: z-lab/Alpamayo-1.5-10B"
+    },
+    {
+      "title": "GitHub - NVlabs/alpamayo: NVIDIA Alpamayo 1 Nano is an open 10B ...",
+      "url": "https://github.com/NVlabs/alpamayo",
+      "snippet": "NVIDIA Alpamayo 1 Nano is an open 10B reasoning VLA model for autonomous vehicles that pairs driving trajectories with Chain-of-Causation reasoning. - NVlabs/alpamayo"
+    },
+    {
+      "title": "Architecture graph for z-lab/Alpamayo-R1-10B-DFlash | hfviewer",
+      "url": "https://hfviewer.com/z-lab/Alpamayo-R1-10B-DFlash",
+      "snippet": "z-lab/Alpamayo-R1-10B-DFlash architecture at a glance z-lab/Alpamayo-R1-10B-DFlash is a robotics model (qwen3 architecture). It uses 2 transformer layers, a hidden size of 4,096, and 32 query heads with 8 key/value heads (grouped-query attention). The feed-forward layers use an intermediate size of 12,288."
+    },
+    {
+      "title": "alpamayo/hugging_face/model_card-10b-public.md at main - GitHub",
+      "url": "https://github.com/Mia-Cong/alpamayo/blob/main/hugging_face/model_card-10b-public.md",
+      "snippet": "Description: Alpamayo-R1 integrates Chain-of-Causation reasoning with trajectory planning to enhance decision-making in complex autonomous-driving scenarios. Alpamayo-R1 (v1.0) was developed by NVIDIA as a vision-language-action (VLA) model that bridges interpretable reasoning with precise vehicle control for autonomous-driving applications."
+    }
+  ]
+}

@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "AtesiT/osint-stylometry-model",
+  "slug": "atesit-osint-stylometry-model",
+  "author": "AtesiT",
+  "url": "https://huggingface.co/AtesiT/osint-stylometry-model",
+  "created_at": "2026-08-29T16:42:51.000Z",
+  "updated_at": "2026-08-29T17:14:54.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "onnx",
+    "safetensors",
+    "bert",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 22713216,
+  "parameters_human": "22.7M",
+  "storage_bytes": 273389912,
+  "storage_human": "273 MB",
+  "base_model": null,
+  "formats": [
+    "onnx",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Hugging Face - The AI community building the future.",
+      "url": "https://huggingface.co/",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "AI Model Index",
+      "url": "https://www.modelindex.org/",
+      "snippet": "Search and explore AI models across providers, modalities, and capabilities. Currently supported providers: OpenAI, Google, Anthropic, Meta, and Mistral AI. See the Model Inclusion Policy for details on selection criteria."
+    },
+    {
+      "title": "Detecting AI-Generated Code: A Semantic Analysis Guide",
+      "url": "https://inferensys.com/blog/digital-provenance-and-misinformation-defense/detecting-ai-generated-code-through-semantic-analysis-and-stylometry",
+      "snippet": "Learn how semantic analysis and stylometry expose AI-generated code. Move beyond syntax to detect logical flaws and stylistic drift for secure development."
+    },
+    {
+      "title": "Is This You, LLM? Recognizing AI-written Programs with Multilingual ...",
+      "url": "https://www.computer.org/csdl/proceedings-article/saner/2025/351000a394/26TItU7cI8g",
+      "snippet": "With the increasing popularity of LLM-based code completers, like GitHub Copilot, the interest in automatically detecting AI-generated code is also increasing-in particular in contexts where the use of LLMs to program is forbidden by policy due to security, intellectual property, or ethical concerns. We introduce a novel technique for AI code stylometry, i.e., the ability to distinguish code ..."
+    },
+    {
+      "title": "Your Writing Style Is a Fingerprint — And AI Can Read It in 30 Messages",
+      "url": "https://www.teammato.com/blog/ai-stylometry-anonymous-surveys-writing-fingerprint-2026",
+      "snippet": "Here&#x27;s a question most HR leaders have never considered: if you paste an \"anonymous\" survey response into an AI model alongside a team&#x27;s Slack history, can the AI identify who wrote it? The answer, according to peer-reviewed research, is yes — with over 90% accuracy. The field is called stylometry — the science of identifying authors by how they write, not what they write. And in 2026, it ..."
+    }
+  ]
+}

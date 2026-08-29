@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "aaronwzl/clip-vit-base-patch32-flickr-retrieval",
+  "slug": "aaronwzl-clip-vit-base-patch32-flickr-retrieval",
+  "author": "aaronwzl",
+  "url": "https://huggingface.co/aaronwzl/clip-vit-base-patch32-flickr-retrieval",
+  "created_at": "2026-08-29T15:49:38.000Z",
+  "updated_at": "2026-08-29T15:49:45.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "zero-shot-image-classification",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "clip",
+    "image-text-retrieval",
+    "contrastive-learning",
+    "multishap",
+    "zero-shot-image-classification",
+    "arxiv:2508.00576",
+    "base_model:openai/clip-vit-base-patch32",
+    "base_model:finetune:openai/clip-vit-base-patch32",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 151277312,
+  "parameters_human": "151.3M",
+  "storage_bytes": 605156676,
+  "storage_human": "605 MB",
+  "base_model": "openai/clip-vit-base-patch32",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "openai/clip-vit-base-patch32 · Hugging Face",
+      "url": "https://huggingface.co/openai/clip-vit-base-patch32",
+      "snippet": "Model Details The CLIP model was developed by researchers at OpenAI to learn about what contributes to robustness in computer vision tasks. The model was also developed to test the ability of models to generalize to arbitrary image classification tasks in a zero-shot manner."
+    },
+    {
+      "title": "README.md · openai/clip-vit-base-patch32 at main - Hugging Face",
+      "url": "https://huggingface.co/openai/clip-vit-base-patch32/blob/main/README.md?code=true",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "openai/clip-vit-base-patch32 · Hugging Face",
+      "url": "https://hf-p-cfw.fyan.top/openai/clip-vit-base-patch32",
+      "snippet": "The model is intended as a research output for research communities. We hope that this model will enable researchers to better understand and explore zero-shot, arbitrary image classification."
+    },
+    {
+      "title": "What is clip-vit-base-patch32 and what problems does it solve?",
+      "url": "https://milvus.io/ai-quick-reference/what-is-clipvitbasepatch32-and-what-problems-does-it-solve",
+      "snippet": "clip-vit-base-patch32 is a pretrained multimodal embedding model that converts both images and text into vectors within the same numerical space. It is based on the CLIP (Contrastive Language-Image Pretraining) architecture and uses a Vision Transformer (ViT) with a patch size of 32 for image encoding, alongside a transformer-based text encoder. The core problem it solves is enabling direct ..."
+    },
+    {
+      "title": "What is clip-vit-base-patch32 and why do developers use it?",
+      "url": "https://zilliz.com/ai-faq/what-is-clipvitbasepatch32-and-why-do-developers-use-it",
+      "snippet": "clip-vit-base-patch32 is a pretrained multimodal embedding model that converts images and text into vectors within the same numerical space, allowing them to be directly compared using similarity metrics. It is based on the CLIP architecture and uses a Vision Transformer (ViT) with a patch size of 32 for image encoding, alongside a transformer-based text encoder. Developers use it because it ..."
+    }
+  ]
+}

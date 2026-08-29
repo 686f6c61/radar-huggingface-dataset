@@ -1,0 +1,82 @@
+{
+  "schema": 1,
+  "id": "Anbeeld/Qwen3-8B-DFlash-b16-GGUF",
+  "slug": "anbeeld-qwen3-8b-dflash-b16-gguf",
+  "author": "Anbeeld",
+  "url": "https://huggingface.co/Anbeeld/Qwen3-8B-DFlash-b16-GGUF",
+  "created_at": "2026-08-29T17:26:29.000Z",
+  "updated_at": "2026-08-29T17:56:33.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "feature-extraction",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "gguf",
+    "safetensors",
+    "qwen3",
+    "feature-extraction",
+    "dflash",
+    "speculative-decoding",
+    "diffusion",
+    "efficiency",
+    "flash-decoding",
+    "qwen",
+    "diffusion-language-model",
+    "text-generation",
+    "custom_code",
+    "arxiv:2602.06036",
+    "license:mit",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us",
+    "base_model:z-lab/Qwen3-8B-DFlash-b16",
+    "base_model:quantized:z-lab/Qwen3-8B-DFlash-b16",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1048626432,
+  "parameters_human": "1.05B",
+  "storage_bytes": 3621999081,
+  "storage_human": "3.6 GB",
+  "base_model": "z-lab/Qwen3-8B-DFlash-b16",
+  "formats": [
+    "gguf",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "z-lab/Qwen3-8B-DFlash-b16 · Hugging Face",
+      "url": "https://huggingface.co/z-lab/Qwen3-8B-DFlash-b16",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "README.md · z-lab/Qwen3-8B-DFlash-b16 at main - Hugging Face",
+      "url": "https://huggingface.co/z-lab/Qwen3-8B-DFlash-b16/blob/main/README.md",
+      "snippet": "Qwen3-8B-DFlash-b16 Paper (Coming Soon) | GitHub | Blog DFlash is a novel speculative decoding method that utilizes a lightweight block diffusion model for drafting. It enables efficient, high-quality parallel drafting that pushes the limits of inference speed. This model is the drafter component. It must be used in conjunction with the target model Qwen/Qwen3-8B."
+    },
+    {
+      "title": "Qwen3 8B DFlash b16 — ThinkLLM",
+      "url": "https://thinkllm.dev/models/qwen3-8b-dflash-b16",
+      "snippet": "A mid-sized open-weight text model from the Qwen 3 family, published by z-lab as a bfloat16 variant with a DFlash configuration. It handles text-in, text-out tasks within a 40K token context window. Specific capability details beyond its architecture lineage are limited."
+    },
+    {
+      "title": "Qwen3-8B-DFlash-b16 | PromptLayer Models",
+      "url": "https://www.promptlayer.com/models/qwen3-8b-dflash-b16/",
+      "snippet": "What is Qwen3-8B-DFlash-b16? Qwen3-8B-DFlash-b16 is an open-weight text-generation model released by z-lab on Hugging Face. It has been downloaded 44K times and received 22 likes since release."
+    },
+    {
+      "title": "Qwen3-8B-DFlash-b16: Block Diffusion Speculative Decoding Model | MIT ...",
+      "url": "https://dev.co/ai/llms/qwen3-8b-dflash-b16",
+      "snippet": "What Qwen3-8B-DFlash-b16 is A 1.05B-parameter block diffusion model serving as the draft component in the DFlash speculative decoding pipeline. Trained with bfloat16 precision, it generates speculative tokens that the target model (Qwen3-8B) accepts or rejects, reducing per-token latency. Supports vLLM, SGLang, and native Transformers inference."
+    }
+  ]
+}

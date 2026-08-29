@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "qwrt/Melodimodell-16M",
+  "slug": "qwrt-melodimodell-16m",
+  "author": "qwrt",
+  "url": "https://huggingface.co/qwrt/Melodimodell-16M",
+  "created_at": "2026-08-18T14:38:42.000Z",
+  "updated_at": "2026-08-29T14:18:49.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "qwen3",
+    "Midi",
+    "Music",
+    "Melody",
+    "text-generation",
+    "dataset:projectlosangeles/Monster-MIDI-Dataset",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 130,
+  "trending_score": 0,
+  "parameters": 16555360,
+  "parameters_human": "16.6M",
+  "storage_bytes": 94664020708,
+  "storage_human": "94.7 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "qwrt/Melodimodell-1M · Hugging Face",
+      "url": "https://huggingface.co/qwrt/Melodimodell-1M",
+      "snippet": "qwrt / Melodimodell-1M like 0 Safetensors qwen3 License:apache-2.0 Model card FilesFiles and versions xet Community Copy to bucket new"
+    },
+    {
+      "title": "qwrt (tom brendelokken) - Hugging Face",
+      "url": "https://huggingface.co/qwrt",
+      "snippet": "User profile of tom brendelokken on Hugging Face"
+    },
+    {
+      "title": "AI Aimbot Models & YOLO Detection Models | MossyModels",
+      "url": "https://mossymodels.com/",
+      "snippet": "AI Aimbot Models & YOLO Detection Models Browse 661+ free YOLO and ONNX detection models across 43+ games. Community library for Fortnite, Valorant, Warzone, Apex Legends, and more. MossyModels is a community library of YOLO and ONNX detection models for first-person shooters."
+    },
+    {
+      "title": "‎Google Gemini",
+      "url": "https://gemini.google.com/",
+      "snippet": "Meet Gemini, Google&#x27;s AI assistant. Get help with writing, planning, brainstorming, and more. Experience the power of generative AI."
+    },
+    {
+      "title": "Free AI 3D Model Generator - MeshGPT",
+      "url": "https://meshgpt.io/",
+      "snippet": "Create stunning 3D models from text or images instantly with our free AI 3d model generator. Transform your ideas into production-ready 3D assets with MeshGPT."
+    }
+  ]
+}

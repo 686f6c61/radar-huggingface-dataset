@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "ISB369/shellminator-qwen05b-bash-distilled",
+  "slug": "isb369-shellminator-qwen05b-bash-distilled",
+  "author": "ISB369",
+  "url": "https://huggingface.co/ISB369/shellminator-qwen05b-bash-distilled",
+  "created_at": "2026-08-29T14:19:38.000Z",
+  "updated_at": "2026-08-29T14:20:09.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen2",
+    "text-generation",
+    "trl",
+    "sft",
+    "conversational",
+    "arxiv:1910.09700",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 494032768,
+  "parameters_human": "494.0M",
+  "storage_bytes": 1987585466,
+  "storage_human": "2.0 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ISB369/shellminator-270m-bash-distilled · Hugging Face",
+      "url": "https://huggingface.co/ISB369/shellminator-270m-bash-distilled",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "ISB369 (Alex) - Hugging Face",
+      "url": "https://huggingface.co/ISB369/datasets",
+      "snippet": "Sort: Recently updated. ISB369/shellminator-bash-clean. Viewer • Updated about 3 hours ago • 10.1k. ISB369/shellminator-bash-dataset. Viewer • Updated 2 days ago • 4k •"
+    },
+    {
+      "title": "GitHub",
+      "url": "https://github.com/Lavenes-Release/Shellminator/blob/main/README.md",
+      "snippet": "Shellminator is a simple-to-use terminal interface library. You can use it with any VT-100&#92;nterminal emulator like PuTTY, Terratermor minicom.&#92;nWith this library, you can create user-friendly command line interfaces for your embedded projects.&#92;nShellminator has command history support, that means you can browse your previous commands with the arrow keys on the keyboard.&#92;nThe library is Arduino ..."
+    },
+    {
+      "title": "Open models by OpenAI | OpenAI",
+      "url": "https://openai.com/open-models/",
+      "snippet": "Advanced open-weight reasoning models to customize for any use case and run anywhere."
+    },
+    {
+      "title": "Distilled Models | jinzixiao/DeepSeek-R1 | DeepWiki",
+      "url": "https://deepwiki.com/jinzixiao/DeepSeek-R1/2.2-distilled-models",
+      "snippet": "This document describes the distilled model variants in the DeepSeek-R1 family. These are smaller, more efficient models that have been trained to replicate the reasoning capabilities of the larger DeepSeek-R1 model."
+    }
+  ]
+}

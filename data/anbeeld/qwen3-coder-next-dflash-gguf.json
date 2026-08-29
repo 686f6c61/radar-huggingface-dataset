@@ -1,0 +1,79 @@
+{
+  "schema": 1,
+  "id": "Anbeeld/Qwen3-Coder-Next-DFlash-GGUF",
+  "slug": "anbeeld-qwen3-coder-next-dflash-gguf",
+  "author": "Anbeeld",
+  "url": "https://huggingface.co/Anbeeld/Qwen3-Coder-Next-DFlash-GGUF",
+  "created_at": "2026-08-29T17:56:38.000Z",
+  "updated_at": "2026-08-29T17:56:41.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "feature-extraction",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3",
+    "feature-extraction",
+    "dflash",
+    "speculative-decoding",
+    "block-diffusion",
+    "draft-model",
+    "efficiency",
+    "qwen",
+    "diffusion-language-model",
+    "text-generation",
+    "custom_code",
+    "arxiv:2602.06036",
+    "license:mit",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us",
+    "base_model:z-lab/Qwen3-Coder-Next-DFlash",
+    "base_model:finetune:z-lab/Qwen3-Coder-Next-DFlash"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 338153,
+  "storage_human": "338153 B",
+  "base_model": "z-lab/Qwen3-Coder-Next-DFlash",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "z-lab/Qwen3-Coder-Next-DFlash · Hugging Face",
+      "url": "https://huggingface.co/z-lab/Qwen3-Coder-Next-DFlash",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "AtomicChat/Qwen3-Coder-Next-DFlash-GGUF · Hugging Face",
+      "url": "https://huggingface.co/AtomicChat/Qwen3-Coder-Next-DFlash-GGUF",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GitHub - QwenLM/Qwen3-Coder: Qwen3-Coder is the code version of Qwen3 ...",
+      "url": "https://github.com/QwenLM/Qwen3-Coder",
+      "snippet": "Qwen3-Coder is available in multiple sizes, Qwen3-Coder-480B-A35B-Instruct, Qwen3-Coder-30B-A3B-Instruct, Qwen3-Coder-Next, offering exceptional performance in both coding and agentic tasks. Qwen3-Coder-Next, an open-weight language model designed specifically for coding agents and local development."
+    },
+    {
+      "title": "Qwen3.8-Flash-Next - GitHub",
+      "url": "https://github.com/QwenLM/Qwen3.8-Flash-Next/",
+      "snippet": "Qwen3.8-Flash-Next upgrades the model systematically along four aspects — attention, residual, embedding and optimization — improving model capability while further optimizing computational efficiency, model capacity and training stability: Attention A GDN + QSA hybrid architecture."
+    },
+    {
+      "title": "Qwen Qwen3 Coder Next - GGUF Model - local-ai-zone.github.io",
+      "url": "https://local-ai-zone.github.io/models/qwen-qwen3-coder-next.html",
+      "snippet": "Download Qwen Qwen3 Coder Next GGUF model. 4.13 GB, 24,498 downloads, 25 likes."
+    }
+  ]
+}

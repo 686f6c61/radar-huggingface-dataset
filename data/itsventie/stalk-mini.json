@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "itsVentie/Stalk-mini",
+  "slug": "itsventie-stalk-mini",
+  "author": "itsVentie",
+  "url": "https://huggingface.co/itsVentie/Stalk-mini",
+  "created_at": "2026-08-29T16:16:58.000Z",
+  "updated_at": "2026-08-29T17:08:16.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "safetensors",
+    "llama",
+    "text-generation",
+    "candle",
+    "rust",
+    "en",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 43655680,
+  "parameters_human": "43.7M",
+  "storage_bytes": 174630976,
+  "storage_human": "175 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "itsVentie (Ventie Ravelle) - Hugging Face",
+      "url": "https://huggingface.co/itsVentie",
+      "snippet": "AI Security, Adversarial Robustness, LLM Guardrails, Model Supply Chain Security"
+    },
+    {
+      "title": "itsVentie (Ventie Ravelle) · GitHub",
+      "url": "https://github.com/itsVentie",
+      "snippet": "A graph representing itsVentie&#x27;s contributions from May 18, 2025 to May 18, 2026. The contributions are 100% commits, 0% pull requests, 0% issues, 0% code review."
+    },
+    {
+      "title": "‎Google Gemini",
+      "url": "https://gemini.google.com/",
+      "snippet": "Meet Gemini, Google&#x27;s AI assistant. Get help with writing, planning, brainstorming, and more. Experience the power of generative AI."
+    },
+    {
+      "title": "Instagram Profile Analysis and AI Insights — Stalker",
+      "url": "https://profilestalker.app/",
+      "snippet": "Find an Instagram profile by username, then explore AI personality insights, red flags, ghosting risk and first-message ideas with Stalker Premium."
+    },
+    {
+      "title": "Stalk.ai - Stalk your niche",
+      "url": "https://www.stalk-ai.com/login",
+      "snippet": "Track YouTube channels, Reddit threads, blogs and more. Get AI-powered daily digests so you never miss what matters."
+    }
+  ]
+}

@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "wangzhang/gemma-4-31B-it-abliterated",
+  "slug": "wangzhang-gemma-4-31b-it-abliterated",
+  "author": "wangzhang",
+  "url": "https://huggingface.co/wangzhang/gemma-4-31B-it-abliterated",
+  "created_at": "2026-04-05T08:31:38.000Z",
+  "updated_at": "2026-08-29T17:03:21.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "gemma4",
+    "abliterated",
+    "uncensored",
+    "direct-weight-editing",
+    "abliterix",
+    "vllm",
+    "llm-judge",
+    "base_model:google/gemma-4-31B-it",
+    "base_model:finetune:google/gemma-4-31B-it",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 29,
+  "downloads_30d": 717228,
+  "trending_score": 0,
+  "parameters": 31273086512,
+  "parameters_human": "31.27B",
+  "storage_bytes": 500462894126,
+  "storage_human": "500.5 GB",
+  "base_model": "google/gemma-4-31B-it",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "wangzhang/gemma-4-31B-it-abliterated · Hugging Face",
+      "url": "https://huggingface.co/wangzhang/gemma-4-31B-it-abliterated",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Gemma-Abliterated - a wangzhang Collection - Hugging Face",
+      "url": "https://huggingface.co/collections/wangzhang/gemma-abliterated",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Gemma 4 31B It Abliterated by wangzhang - LLM Explorer",
+      "url": "https://llm-explorer.com/model/wangzhang%2Fgemma-4-31B-it-abliterated,3V0sNEMwBRpjdUQ9cD42EV",
+      "snippet": "Gemma 4 31B It Abliterated is an open-source language model by wangzhang. Features: 31b LLM, VRAM: 62.5GB, License: gemma, LLM Explorer Score: 0.36."
+    },
+    {
+      "title": "gemma-4-31B-it-abliterated · Model · Inferix",
+      "url": "https://inferix.co/models/wangzhang/gemma-4-31B-it-abliterated",
+      "snippet": "Gemma 4 31B IT — Abliterated This is an abliterated version of google/gemma 4 31B it, created using Abliterix. This revision updates the model to trial 40 , the best configuration from the completed 60 trial Gemma 4 31B retraining run. Method Gemma 4&#x27;s double norm architecture (4x RMSNorm per layer) and Per Layer Embeddings (PLE) make naive LoRA and hook based steering unreliable for this ..."
+    },
+    {
+      "title": "wangzhang-gemma-4-31b-it-abliterated/README.md at main - GitHub",
+      "url": "https://github.com/Damacol/wangzhang-gemma-4-31b-it-abliterated/blob/main/README.md",
+      "snippet": "wangzhang/gemma-4-31B-it-abliterated - Private, Uncensored AI for Real Creators and Devs Tired of AI that babysits you, logs your prompts, or hits you with \"I can&#x27;t do that\"? Meet the next-gen chatbot built for freedom, speed, and digital sovereignty."
+    }
+  ]
+}

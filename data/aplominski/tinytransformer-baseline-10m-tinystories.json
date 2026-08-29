@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "aplominski/TinyTransformer-Baseline-10M-TinyStories",
+  "slug": "aplominski-tinytransformer-baseline-10m-tinystories",
+  "author": "aplominski",
+  "url": "https://huggingface.co/aplominski/TinyTransformer-Baseline-10M-TinyStories",
+  "created_at": "2026-08-29T16:02:00.000Z",
+  "updated_at": "2026-08-29T16:32:44.000Z",
+  "license": "openmdw-1.1",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "safetensors",
+    "en",
+    "dataset:roneneldan/TinyStories",
+    "arxiv:1706.03762",
+    "arxiv:1607.06450",
+    "arxiv:1910.07467",
+    "license:openmdw-1.1",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 9619456,
+  "parameters_human": "9.6M",
+  "storage_bytes": 38485952,
+  "storage_human": "38 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - NonsonoNicola/TinyStories-LLM: Tiny transformer model for ...",
+      "url": "https://github.com/NonsonoNicola/TinyStories-LLM/tree/main",
+      "snippet": "🧑‍💻 Author Built by a self-taught 18-year-old computer science student passionate about machine learning and AI systems. If you&#x27;d like to collaborate or just connect, feel free to reach out! Tiny transformer model for generating children&#x27;s stories using the TinyStories dataset."
+    },
+    {
+      "title": "GitHub - ihebgafsi/TinyStoriesv1: Reproduction + training scripts for ...",
+      "url": "https://github.com/ihebgafsi/TinyStoriesv1",
+      "snippet": "Reproduction + training scripts for the famous 10M-33M models; used in 40+ academic papers - ihebgafsi/TinyStoriesv1"
+    },
+    {
+      "title": "commonsense-ai/tinystories-15m · Hugging Face",
+      "url": "https://huggingface.co/commonsense-ai/tinystories-15m",
+      "snippet": "like 3 Follow Commonsense 3 Text Generation roneneldan/TinyStories English tinystories distributed-training diloco community License:apache-2.0 Model card FilesFiles and versions xet Community Copy to bucket new tinystories-15m — a language model pretrained entirely by volunteers Sample output Model details How it was trained How to use ..."
+    },
+    {
+      "title": "roneneldan/TinyStories · Datasets at Hugging Face",
+      "url": "https://huggingface.co/datasets/roneneldan/TinyStories",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "TinyStories_baseline.ipynb - Colab",
+      "url": "https://colab.research.google.com/github/MerkulovDaniil/optim/blob/master/assets/Notebooks/TinyStories_baseline.ipynb",
+      "snippet": "In this assignment, you will train a language model (LM) using the TinyStories dataset, focusing on optimizing model performance within the constraints of Google Colab&#x27;s hardware. For the sake of speed, we will do it on the part of the dataset. Once upon a time, there was a little car named Beep. Beep loved to go fast and play in the sun.Beep was a healthy car because he always had good fuel ..."
+    }
+  ]
+}

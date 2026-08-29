@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "babel530/chinese-wav2vec2-base",
+  "slug": "babel530-chinese-wav2vec2-base",
+  "author": "babel530",
+  "url": "https://huggingface.co/babel530/chinese-wav2vec2-base",
+  "created_at": "2026-08-29T18:45:17.000Z",
+  "updated_at": "2026-08-29T18:45:17.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "pytorch",
+    "wav2vec2",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1901098934,
+  "storage_human": "1.9 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "chinese-wav2vec2-base: Audio-to-Audio model — overview, use cases ...",
+      "url": "https://www.aimodels.fyi/models/huggingFace/chinese-wav2vec2-base-tencentgamemate",
+      "snippet": "Overview chinese-wav2vec2-base is a self-supervised speech representation model pretrained on 10,000 hours of the WenetSpeech L subset, developed by TencentGameMate. The model uses the Wav2Vec2 architecture and extracts acoustic representations from raw audio without requiring labeled data during pretraining. Built with the transformers library (version 4.16.2), it operates as a feature ..."
+    },
+    {
+      "title": "TencentGameMate/chinese-wav2vec2-base · Hugging Face",
+      "url": "https://huggingface.co/TencentGameMate/chinese-wav2vec2-base",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "TencentGameMate/chinese-wav2vec2-base at main - Hugging Face",
+      "url": "https://huggingface.co/TencentGameMate/chinese-wav2vec2-base/tree/main",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "AtomGit AI社区 - 开源大模型_多模态模型免费下载及部署方案",
+      "url": "https://gitcode.com/hf_mirrors/TencentGameMate/chinese-wav2vec2-base/overview",
+      "snippet": "AtomGit AI 社区是汇聚开源 AI 模型、多模态数据集、在线运行工具的一站式协作平台，为开发者、研究员提供 AI 学习、模型开发、资源共享的全流程支持，助力高效开展人工智能研究与应用实践。"
+    },
+    {
+      "title": "modelee/chinese-wav2vec2-base - Gitee",
+      "url": "https://gitee.com/modelee/chinese-wav2vec2-base",
+      "snippet": "This model does not have a tokenizer as it was pretrained on audio alone. In order to use this model speech recognition, a tokenizer should be created and the model should be fine-tuned on labeled text data."
+    }
+  ]
+}

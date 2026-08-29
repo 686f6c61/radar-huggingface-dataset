@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "Ayobamisalau/personalised-chatbot",
+  "slug": "ayobamisalau-personalised-chatbot",
+  "author": "Ayobamisalau",
+  "url": "https://huggingface.co/Ayobamisalau/personalised-chatbot",
+  "created_at": "2026-08-29T14:26:12.000Z",
+  "updated_at": "2026-08-29T14:26:12.000Z",
+  "license": "h-research",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:h-research",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Personalized ChatBot Dataset - Kaggle",
+      "url": "https://www.kaggle.com/datasets/ayobamisalau/personalized-chatbot-dataset",
+      "snippet": "Discover what actually works in AI. Join millions of builders, researchers, and labs evaluating agents, models, and frontier technology through crowdsourced benchmarks, competitions, and hackathons."
+    },
+    {
+      "title": "AI Chatbot Builder Without Coding | Replit",
+      "url": "https://replit.com/usecases/chatbot-builder",
+      "snippet": "Create a custom AI chatbot from a prompt. Connect your preferred model, add data, and deploy it without writing code."
+    },
+    {
+      "title": "Top-7 Ultimate Personal Chatbot Builders - scrile.com",
+      "url": "https://www.scrile.com/blog/personal-chatbot",
+      "snippet": "Explore the top 7 personal chatbot builders. Learn how to create your own AI bot, customize responses, and launch a personal chatbot."
+    },
+    {
+      "title": "Welcome to chatbotai.com - your personal AI assistant",
+      "url": "https://chatbotai.com/",
+      "snippet": "Chat with leading AI models including Claude Opus, GPT-5, Gemini, Grok, DeepSeek, and more. Create AI images, generate AI videos, and enjoy fast, natural, intelligent conversations - all in one place."
+    },
+    {
+      "title": "Custom AI Chatbot Creator by TextCortex",
+      "url": "https://textcortex.com/templates/ai-chatbot-creator",
+      "snippet": "Make Custom AI Bot For Your Business With our easy AI chatbot creator, you will be able to create custom chatbots trained on your data."
+    }
+  ]
+}

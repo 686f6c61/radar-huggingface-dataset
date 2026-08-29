@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "artemlxdp/mocov3-experiment-2023",
+  "slug": "artemlxdp-mocov3-experiment-2023",
+  "author": "artemlxdp",
+  "url": "https://huggingface.co/artemlxdp/mocov3-experiment-2023",
+  "created_at": "2026-08-29T11:09:37.000Z",
+  "updated_at": "2026-08-29T11:09:47.000Z",
+  "license": "bsd-3-clause",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "mocov3",
+    "pytorch",
+    "retrieval",
+    "license:bsd-3-clause",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 49600,
+  "parameters_human": "49600",
+  "storage_bytes": 198880,
+  "storage_human": "198880 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - facebookresearch/moco-v3: PyTorch implementation of MoCo v3 ...",
+      "url": "https://github.com/facebookresearch/moco-v3",
+      "snippet": "This is a PyTorch implementation of MoCo v3 for self-supervised ResNet and ViT. The original MoCo v3 was implemented in Tensorflow and run in TPUs. This repo re-implements in PyTorch and GPUs. Despite the library and numerical differences, this repo reproduces the results and observations in the paper."
+    },
+    {
+      "title": "ArjunChauhan (Arjun Chauhan) - Hugging Face",
+      "url": "https://huggingface.co/ArjunChauhan/models",
+      "snippet": "ArjunChauhan&#x27;s models1 Sort: Recently updated ArjunChauhan/model_740103356_mocov3_giant Updated about 9 hours ago"
+    },
+    {
+      "title": "mikhailpqb/model_742242023_mocov3_giant · Hugging Face",
+      "url": "https://huggingface.co/mikhailpqb/model_742242023_mocov3_giant",
+      "snippet": "model_742242023_mocov3_giant.py Model Overview A giant -scale implementation of the mocov3 architecture, built for classification tasks."
+    },
+    {
+      "title": "GitHub - facebookresearch/moco: PyTorch implementation of MoCo: https ...",
+      "url": "https://github.com/facebookresearch/moco",
+      "snippet": "In the interest of fostering an open and welcoming environment, we as contributors and maintainers pledge to make participation in our project and our community a harassment-free experience for everyone, regardless of age, body size, disability, ethnicity, sex characteristics, gender identity and expression, level of experience, education, socio-economic status, nationality, personal ..."
+    },
+    {
+      "title": "AI Model Release Tracker - Latest Releases | LM Market Cap",
+      "url": "https://lmmarketcap.com/tools/model-release-tracker",
+      "snippet": "Track the latest AI model releases from OpenAI, Anthropic, Google, Meta, DeepSeek and more. New model launches, version updates, and feature additions."
+    }
+  ]
+}

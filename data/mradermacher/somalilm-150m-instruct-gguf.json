@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "mradermacher/SomaliLM-150M-Instruct-GGUF",
+  "slug": "mradermacher-somalilm-150m-instruct-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/SomaliLM-150M-Instruct-GGUF",
+  "created_at": "2026-08-29T15:10:10.000Z",
+  "updated_at": "2026-08-29T15:14:39.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "en",
+    "base_model:yacdev/SomaliLM-150M-Instruct",
+    "base_model:quantized:yacdev/SomaliLM-150M-Instruct",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 147286272,
+  "parameters_human": "147.3M",
+  "storage_bytes": 1364649056,
+  "storage_human": "1.4 GB",
+  "base_model": "yacdev/SomaliLM-150M-Instruct",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "mradermacher (team mradermacher) - Hugging Face",
+      "url": "https://huggingface.co/mradermacher/models",
+      "snippet": "Feel free to suggest models to quant e.g. at https://huggingface.co/mradermacher/model_requests"
+    },
+    {
+      "title": "ModelFitCheck — will this LLM fit your GPU?",
+      "url": "https://modelfitcheck.com/",
+      "snippet": "Free browser-based tool that detects your hardware and instantly tells you which local LLMs and GGUF quantizations will fit in your VRAM. No signup, no data sent."
+    },
+    {
+      "title": "Mradermacher - Find Top AI Models on Hugging Face",
+      "url": "https://www.aimodels.fyi/creators/huggingFace/mradermacher",
+      "snippet": "Looking for Mradermacher&#x27;s top AI models? Browse their full Hugging Face collection of 26 models. Explore AI models and contributions by Mradermacher on Huggingface."
+    },
+    {
+      "title": "GGUF Model Discovery - Browse & Download AI Models",
+      "url": "https://local-ai-zone.github.io/",
+      "snippet": "Discover and download GGUF format AI models. Browse and direct download thousands of quantized AI models with detailed information, download counts, and direct links."
+    },
+    {
+      "title": "How to Import Local GGUF Models into LM Studio -Notes",
+      "url": "https://notes.suhaib.in/docs/tech/how-to/lm-studio-import-local-gguf-models-step-by-step/",
+      "snippet": "Downloaded a local GGUF model and don&#x27;&#x27;t know how to use it in LM Studio? This deep dive covers everything from directory organization to GPU offloading and security."
+    }
+  ]
+}

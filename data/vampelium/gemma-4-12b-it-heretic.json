@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "Vampelium/gemma-4-12B-it-heretic",
+  "slug": "vampelium-gemma-4-12b-it-heretic",
+  "author": "Vampelium",
+  "url": "https://huggingface.co/Vampelium/gemma-4-12B-it-heretic",
+  "created_at": "2026-08-29T16:23:39.000Z",
+  "updated_at": "2026-08-29T17:04:19.000Z",
+  "license": "gemma",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gemma4_unified",
+    "image-text-to-text",
+    "heretic",
+    "uncensored",
+    "decensored",
+    "abliterated",
+    "gemma-4",
+    "a100",
+    "conversational",
+    "base_model:google/gemma-4-12B-it",
+    "base_model:finetune:google/gemma-4-12B-it",
+    "license:gemma",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 11959730176,
+  "parameters_human": "11.96B",
+  "storage_bytes": 23951718050,
+  "storage_human": "24.0 GB",
+  "base_model": "google/gemma-4-12B-it",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "coder3101/gemma-4-12B-it-heretic · Hugging Face",
+      "url": "https://huggingface.co/coder3101/gemma-4-12B-it-heretic",
+      "snippet": "This model card summarizes details on the models&#x27; architecture, capabilities, limitations, and evaluation processes. A responsibly developed open model offers the opportunity to share innovation by making VLM technology accessible to developers and researchers across the AI ecosystem."
+    },
+    {
+      "title": "igorls/gemma-4-12B-it-heretic-v1 · Hugging Face",
+      "url": "https://huggingface.co/igorls/gemma-4-12B-it-heretic-v1",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "gemma 4 12B it uncensored heretic NVFP4 — ThinkLLM",
+      "url": "https://thinkllm.dev/models/gemma-4-12b-it-uncensored-heretic-nvfp4",
+      "snippet": "A community-modified version of Gemma with censorship filters removed, published by an independent user. It operates with fewer content restrictions than the base model, which means it may respond to prompts that standard Gemma would decline — but also lacks the safety guardrails that come with official releases. Treat it as an experimental, community-driven artifact rather than a production ..."
+    },
+    {
+      "title": "Gemma 4 12b It Heretic - GGUF Model - local-ai-zone.github.io",
+      "url": "https://local-ai-zone.github.io/models/gemma-4-12b-it-heretic.html",
+      "snippet": "Download Gemma 4 12b It Heretic GGUF model. 7.09 GB, 6,555 downloads, 46 likes."
+    },
+    {
+      "title": "HammerAI/gemma-4-12b-heretic",
+      "url": "https://ollama.com/HammerAI/gemma-4-12b-heretic",
+      "snippet": "Hermes Agent ollama launch hermes --model HammerAI/gemma-4-12b-heretic"
+    }
+  ]
+}

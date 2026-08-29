@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "Lixing-Li/mambarl-m5-grpo-4096",
+  "slug": "lixing-li-mambarl-m5-grpo-4096",
+  "author": "Lixing-Li",
+  "url": "https://huggingface.co/Lixing-Li/mambarl-m5-grpo-4096",
+  "created_at": "2026-08-29T13:50:16.000Z",
+  "updated_at": "2026-08-29T13:50:43.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "mamba2",
+    "lora",
+    "mambarl",
+    "base_model:Lixing-Li/mambarl-m4-grpo-2048",
+    "base_model:adapter:Lixing-Li/mambarl-m4-grpo-2048",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 2702599680,
+  "parameters_human": "2.70B",
+  "storage_bytes": 5405262104,
+  "storage_human": "5.4 GB",
+  "base_model": "Lixing-Li/mambarl-m4-grpo-2048",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Lixing-Li (Lixing Li) - Hugging Face",
+      "url": "https://huggingface.co/Lixing-Li/datasets",
+      "snippet": "Org profile for Lixing Li on Hugging Face, the AI community building the future."
+    },
+    {
+      "title": "Lixing-Li/mambarl-m2-grpo-512 · Hugging Face",
+      "url": "https://huggingface.co/Lixing-Li/mambarl-m2-grpo-512",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Li-xingXiao (Lixing Xiao) · GitHub",
+      "url": "https://github.com/Li-xingXiao",
+      "snippet": "I&#x27;m a Master student at 3D Vision Group, Zhejiang University, China. - Li-xingXiao"
+    },
+    {
+      "title": "M5 Max for Local AI: Complete Apple Silicon Benchmark Guide (2026)",
+      "url": "https://llmcheck.net/blog/apple-silicon-m5-max-local-ai-guide/",
+      "snippet": "M5 Max delivers ~28% higher tok/s than M4 Max for local LLMs. Complete benchmark guide covering 600 GB/s bandwidth, 128GB unified memory, MLX performance, and model recommendations per M5 variant."
+    },
+    {
+      "title": "LLM Leaderboard — Model Rankings | SoxBench",
+      "url": "https://soxbench.com/leaderboard",
+      "snippet": "Compare GPT-5, Gemini, Claude, Llama and more across MMLU, HumanEval, GSM8K, TruthfulQA benchmarks. Live-updating LLM performance rankings."
+    }
+  ]
+}

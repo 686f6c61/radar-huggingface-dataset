@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "NobuakiShono/diffusion_2026-08-27_23-35-22",
+  "slug": "nobuakishono-diffusion_2026-08-27_23-35-22",
+  "author": "NobuakiShono",
+  "url": "https://huggingface.co/NobuakiShono/diffusion_2026-08-27_23-35-22",
+  "created_at": "2026-08-27T23:35:23.000Z",
+  "updated_at": "2026-08-29T11:34:44.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "robotics",
+    "lelab",
+    "diffusion",
+    "dataset:NobuakiShono/LEGO_pickup_4_20260827_215241",
+    "arxiv:2303.04137",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 10,
+  "trending_score": 0,
+  "parameters": 277840246,
+  "parameters_human": "277.8M",
+  "storage_bytes": 100021731720,
+  "storage_human": "100.0 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "NobuakiShono/diffusion_2026-08-27_23-35-22 · Hugging Face",
+      "url": "https://huggingface.co/NobuakiShono/diffusion_2026-08-27_23-35-22",
+      "snippet": "Instructions to use NobuakiShono/diffusion_2026-08-27_23-35-22 with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "GLM-5.3-Flash: How to Run Locally - unsloth.ai",
+      "url": "https://unsloth.ai/docs/models/glm-5.3-flash",
+      "snippet": "Search and download GLM-5.3-Flash Go to Unsloth Chat or Model hub and search for GLM-5.3-Flash in the search bar and download your desired model and quant."
+    },
+    {
+      "title": "NobuakiShono (NOBUAKI SHONO) - Hugging Face",
+      "url": "https://huggingface.co/NobuakiShono/datasets",
+      "snippet": "User profile of NOBUAKI SHONO on Hugging Face"
+    },
+    {
+      "title": "Latest AI Model Releases — August 2026",
+      "url": "https://aireleasetracker.com/latest",
+      "snippet": "The newest AI model releases as of August 2026. Most recent: GLM-5.3-Flash by Z.ai on Aug 26 2026. Track every new frontier model from OpenAI, Anthropic, Google DeepMind, Meta, SpaceXAI, DeepSeek, Mistral, and Moonshot AI — updated continuously."
+    },
+    {
+      "title": "Paper-List-DAILY - Paper Arxiv Daily",
+      "url": "https://islinxu.github.io/paper-list/",
+      "snippet": "Paper-List-DAILY is an automated arXiv paper tracking system that fetches, categorizes, and organizes the latest research papers across 20+ computer vision & AI topics — from classic tasks like Object Detection and Segmentation to cutting-edge fields like Diffusion Models, LLMs, and Embodied AI."
+    }
+  ]
+}

@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "xiaorui638/Qwen3.5-9B-ZwZ-S57-verify-anneal",
+  "slug": "xiaorui638-qwen3-5-9b-zwz-s57-verify-anneal",
+  "author": "xiaorui638",
+  "url": "https://huggingface.co/xiaorui638/Qwen3.5-9B-ZwZ-S57-verify-anneal",
+  "created_at": "2026-08-29T15:49:01.000Z",
+  "updated_at": "2026-08-29T15:53:20.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "qwen3_5",
+    "grpo",
+    "rl",
+    "false-premise",
+    "hallucination",
+    "multimodal",
+    "image-text-to-text",
+    "conversational",
+    "base_model:Qwen/Qwen3.5-9B",
+    "base_model:finetune:Qwen/Qwen3.5-9B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 9409813744,
+  "parameters_human": "9.41B",
+  "storage_bytes": 18839711735,
+  "storage_human": "18.8 GB",
+  "base_model": "Qwen/Qwen3.5-9B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Qwen 3.5: The Complete Guide - Benchmarks, Local Setup, and How It ...",
+      "url": "https://techie007.substack.com/p/qwen-35-the-complete-guide-benchmarks",
+      "snippet": "Alibaba&#x27;s Qwen team dropped Qwen 3.5 on February 16, 2026, and it immediately shook up the AI landscape. Built on a sparse Mixture-of-Experts (MoE) architecture, the flagship Qwen3.5-397B-A17B packs 397 billion total parameters while activating only 17 billion per forward pass - delivering frontier-level intelligence at a fraction of the compute cost. Released under the Apache 2.0 license ..."
+    },
+    {
+      "title": "Qwen3.5-9B - 262k context, multimodal, open source",
+      "url": "https://www.llmreference.com/model/qwen3.5-9b",
+      "snippet": "Qwen3.5-9B is an open-source model in the Qwen3.5 family. The structured metadata tracks a 262k-token context window, multimodal input, function calling, tool use, and structured outputs."
+    },
+    {
+      "title": "Qwen3.5 9B model | Bitcoin.com AI",
+      "url": "https://ai.bitcoin.com/models/text/qwen/qwen3.5-9b",
+      "snippet": "Qwen3.5 9B is a multimodal foundation model from the Qwen 3.5 family, built for efficient reasoning, coding, and visual understanding in a compact 9B architecture."
+    },
+    {
+      "title": "Qwen3.5 9B by Qwen (Alibaba) — ThinkLLM",
+      "url": "https://thinkllm.dev/models/qwen3-5-9b",
+      "snippet": "Qwen3.5 9B operates in a hybrid thinking mode, toggling between quick responses and extended reasoning chains depending on task complexity. At 9 billion parameters it punches reasonably hard on multilingual tasks and code, with notably strong Chinese-English fluency. Vision input is supported, though its multimodal reasoning is more capable on structured visual content than complex scene ..."
+    },
+    {
+      "title": "AI Model Catalog | Microsoft Foundry Models",
+      "url": "https://ai.azure.com/catalog/models/qwen-qwen3.5-9b",
+      "snippet": "Supported Parameters The following are the only mandatory parameters to send in the HTTP POST request to v1/chat/completions. model (string): Model ID used to generate the response, in this case since only a single model is deployed within the same endpoint you can either set it to Qwen/Qwen3.5-9B or leave it blank instead. messages (array): A list of messages comprising the conversation so ..."
+    }
+  ]
+}

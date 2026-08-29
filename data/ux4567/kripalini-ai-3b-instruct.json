@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "UX4567/Kripalini-AI-3B-Instruct",
+  "slug": "ux4567-kripalini-ai-3b-instruct",
+  "author": "UX4567",
+  "url": "https://huggingface.co/UX4567/Kripalini-AI-3B-Instruct",
+  "created_at": "2026-08-28T05:14:03.000Z",
+  "updated_at": "2026-08-29T15:38:48.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "qwen2",
+    "text-generation",
+    "base_model:adapter:UX4567/Kartik-Kundli-AI-3B-v2.0",
+    "lora",
+    "transformers",
+    "conversational",
+    "arxiv:1910.09700",
+    "base_model:UX4567/Kartik-Kundli-AI-3B-v2.0",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 68,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 6310713218,
+  "storage_human": "6.3 GB",
+  "base_model": "UX4567/Kartik-Kundli-AI-3B-v2.0",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "UX4567/Kripalini-AI-3B-Instruct · Hugging Face",
+      "url": "https://huggingface.co/UX4567/Kripalini-AI-3B-Instruct",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "UX4567/Kartik-Kundli-AI-3B-Instruct · Hugging Face",
+      "url": "https://huggingface.co/UX4567/Kartik-Kundli-AI-3B-Instruct",
+      "snippet": "Instructions to use UX4567/Kartik-Kundli-AI-3B-Instruct with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Notebooks Google Colab Kaggle Local AppsSettings llama.cpp How to use UX4567/Kartik-Kundli-AI-3B-Instruct with llama.cpp: Install (macOS, Linux)"
+    },
+    {
+      "title": "GitHub - ibm-granite/granite-code-models: Granite Code Models: A Family ...",
+      "url": "https://github.com/ibm-granite/granite-code-models",
+      "snippet": "Granite Code Instruct Models: instruction following models finetuned using a combination of Git commits paired with human instructions and open source synthetically generated code instruction datasets. Both base and instruct models are available in sizes of 3B, 8B, 20B, and 34B parameters."
+    },
+    {
+      "title": "Adapter Models for UX4567/Kartik-Kundli-AI-3B-v2.0 - Hugging Face",
+      "url": "https://huggingface.co/models?other=base_model:adapter:UX4567/Kartik-Kundli-AI-3B-v2.0",
+      "snippet": "Explore machine learning models. Model Tree UX4567/Kartik-Kundli-AI-3B-v2. Apps Inference Providers One-click Deployment Misc Apply filters"
+    },
+    {
+      "title": "UX4567/Kartik-AI-3B · Hugging Face",
+      "url": "https://huggingface.co/UX4567/Kartik-AI-3B",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    }
+  ]
+}

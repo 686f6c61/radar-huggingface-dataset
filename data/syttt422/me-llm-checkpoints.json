@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "Syttt422/ME-LLM-Checkpoints",
+  "slug": "syttt422-me-llm-checkpoints",
+  "author": "Syttt422",
+  "url": "https://huggingface.co/Syttt422/ME-LLM-Checkpoints",
+  "created_at": "2026-08-29T12:20:41.000Z",
+  "updated_at": "2026-08-29T12:34:27.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 2271496264,
+  "storage_human": "2.3 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "checkpoint AI Models | Civitai",
+      "url": "https://civitai.com/tag/checkpoint",
+      "snippet": "Browse 200 Stable Diffusion & Flux models, LoRAs, checkpoints, and embeddings tagged with checkpoint."
+    },
+    {
+      "title": "GitHub - 422syt/ME-LLM: ME-LLM: Memory-Enhanced Large Language Model ...",
+      "url": "https://github.com/422syt/ME-LLM",
+      "snippet": "ME-LLM: Memory-Enhanced Large Language Model. Contribute to 422syt/ME-LLM development by creating an account on GitHub."
+    },
+    {
+      "title": "GitHub - 422syt/ME-LLM: ME-LLM: Multimodal-Enhanced Large Language ...",
+      "url": "https://github.com/422syt/ME-LLM/tree/main",
+      "snippet": "ME-LLM is a novel framework that enhances Large Language Models (LLMs) with multimodal reasoning capabilities for time series prediction. Unlike previous approaches that simply reprogram time series into text representations, ME-LLM introduces a Multimodal Enhancement mechanism that preserves both the original time series features and the ..."
+    },
+    {
+      "title": "LLM Leaderboard & AI Model Benchmarks — August 2026",
+      "url": "https://benchlm.ai/",
+      "snippet": "LLM Leaderboard & AI Model Benchmarks — August 2026 Compare frontier AI models by quality, cost, and context. 105 Supported and 123 Estimated models among 406 tracked LLMs — 406 benchmarks, real pricing, and runtime data in one place."
+    },
+    {
+      "title": "Hugging Face - The AI community building the future.",
+      "url": "https://huggingface.co/",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    }
+  ]
+}

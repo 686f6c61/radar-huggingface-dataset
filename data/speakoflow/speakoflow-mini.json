@@ -1,0 +1,107 @@
+{
+  "schema": 1,
+  "id": "SpeakoFlow/speakoflow-mini",
+  "slug": "speakoflow-speakoflow-mini",
+  "author": "SpeakoFlow",
+  "url": "https://huggingface.co/SpeakoFlow/speakoflow-mini",
+  "created_at": "2026-08-29T14:13:11.000Z",
+  "updated_at": "2026-08-29T16:12:14.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "gguf",
+    "dictation",
+    "transcript-cleanup",
+    "asr-post-processing",
+    "asr-error-correction",
+    "speech-to-text",
+    "post-asr-correction",
+    "llama.cpp",
+    "qwen3.5",
+    "local-llm",
+    "cpu-inference",
+    "text-generation",
+    "en",
+    "dataset:SpeakoFlow/dictation-cleanup-examples",
+    "base_model:Qwen/Qwen3.5-0.8B",
+    "base_model:finetune:Qwen/Qwen3.5-0.8B",
+    "license:apache-2.0",
+    "model-index",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 772845888,
+  "parameters_human": "772.8M",
+  "storage_bytes": 4176758580,
+  "storage_human": "4.2 GB",
+  "base_model": "Qwen/Qwen3.5-0.8B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "Dictation cleanup",
+      "dataset": "SpeakoFlow dictation cleanup evaluation (held out)",
+      "metric": "Overall (mean of restraint and edit accuracy)",
+      "value": 70.7
+    },
+    {
+      "task": "Dictation cleanup",
+      "dataset": "SpeakoFlow dictation cleanup evaluation (held out)",
+      "metric": "Restraint (already-correct text returned untouched)",
+      "value": 92.6
+    },
+    {
+      "task": "Dictation cleanup",
+      "dataset": "SpeakoFlow dictation cleanup evaluation (held out)",
+      "metric": "Edit accuracy (transcripts needing a change)",
+      "value": 48.8
+    },
+    {
+      "task": "Dictation cleanup",
+      "dataset": "SpeakoFlow dictation cleanup evaluation (held out)",
+      "metric": "Content damage (a spoken word lost, lower is better)",
+      "value": 10.7
+    }
+  ],
+  "sources": [
+    {
+      "title": "GitHub - AbhishekBarali/SpeakoFlow: Free, open-source offline voice ...",
+      "url": "https://github.com/AbhishekBarali/SpeakoFlow",
+      "snippet": "Free, open-source offline voice dictation for Windows, macOS, and Linux. A Wispr Flow alternative with an AI assistant that can read your screen on request and answer questions. - AbhishekBarali/Sp..."
+    },
+    {
+      "title": "SpeakoFlow documentation - SpeakoFlow",
+      "url": "https://www.speakoflow.com/docs",
+      "snippet": "SpeakoFlow is free voice dictation and an AI assistant for Windows, macOS, and Linux. Speech-to-text runs on your own machine. Start here to install it and dictate your first sentence."
+    },
+    {
+      "title": "GitHub - AbhishekBarali/SpeakoFlow: Free, open-source offline voice ...",
+      "url": "https://github.com/AbhishekBarali/SpeakoFlow/blob/main/",
+      "snippet": "SpeakoFlow&#x27;s dictation core comes from Handy, the more established project and a genuinely good pure-dictation tool. SpeakoFlow takes that core further: spoken-instruction writing, on-device translation, text-to-speech, personal memory, and a screen-aware assistant."
+    },
+    {
+      "title": "Transcription models - SpeakoFlow",
+      "url": "https://www.speakoflow.com/docs/models/transcription-models",
+      "snippet": "The full catalog of speech-to-text models SpeakoFlow can download and run locally, with size, language coverage, streaming, and translation for each. Also covers older models, downloads, and deleting models."
+    },
+    {
+      "title": "Free offline voice assistant and dictation for your desktop",
+      "url": "https://www.speakoflow.com/",
+      "snippet": "SpeakoFlow does more, and its source code is yours to inspect. Free. No account, no catch. Writes, not just types. Generate with Flow, AI cleanup, live transcription, and an assistant that talks back. Your stack. Local models, your own server, or any provider you choose. Your software. MIT licensed, inspectable, and usable without an account."
+    }
+  ]
+}

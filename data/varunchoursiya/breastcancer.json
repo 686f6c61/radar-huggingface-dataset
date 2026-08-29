@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "varunchoursiya/breastcancer",
+  "slug": "varunchoursiya-breastcancer",
+  "author": "varunchoursiya",
+  "url": "https://huggingface.co/varunchoursiya/breastcancer",
+  "created_at": "2026-08-29T14:26:26.000Z",
+  "updated_at": "2026-08-29T14:31:43.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "tabular",
+    "classification",
+    "pytorch",
+    "optuna",
+    "healthcare",
+    "breast-cancer",
+    "en",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 69146,
+  "storage_human": "69146 B",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "AI-Driven Breast Cancer Diagnosis: A Systematic Review of ... - MDPI",
+      "url": "https://www.mdpi.com/2072-6694/18/8/1305",
+      "snippet": "Background: This article provides a comprehensive overview of recent advancements in artificial intelligence (AI) and deep-learning technologies for breast cancer (BC) diagnosis across various imaging modalities. Methods: A systematic review was conducted in strict adherence to the PRISMA guidelines, incorporating a comparative analysis of 65 peer-reviewed studies published between 2018 and ..."
+    },
+    {
+      "title": "Multi-modal AI for comprehensive breast cancer prognostication",
+      "url": "https://www.nature.com/articles/s41467-026-73088-y",
+      "snippet": "Selecting appropriate treatment for breast cancer is guided by molecular subtypes and clinical characteristics. Here, the authors show that their AI-based approach, which integrates digital ..."
+    },
+    {
+      "title": "PDF Multi-modal AI for comprehensive breast cancer prognostication",
+      "url": "https://www.nature.com/articles/s41467-026-73088-y.pdf",
+      "snippet": "In this study, we present the application of a generalist AI foun-dation model for outcome prediction in breast cancer."
+    },
+    {
+      "title": "Full article: Exploring AI Approaches for Breast Cancer Detection and ...",
+      "url": "https://www.tandfonline.com/doi/full/10.2147/BCTT.S550307",
+      "snippet": "These clinical fundamentals frame the role of AI and deep learning in augmenting detection, characterization, and treatment planning. Recent advances in AI, particularly in deep learning models, have introduced transformative potential for breast cancer diagnosis."
+    },
+    {
+      "title": "Multimodal medical imaging AI for breast cancer diagnosis: A ...",
+      "url": "https://www.sciencedirect.com/science/article/pii/S2950261625000664",
+      "snippet": "Traditional artificial intelligence (AI)-based methods for breast cancer diagnosis often rely on a single modality, such as ultrasound images. With th…"
+    }
+  ]
+}

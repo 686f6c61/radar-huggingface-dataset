@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "adityapatelbury/few-shot-multimodal-reading",
+  "slug": "adityapatelbury-few-shot-multimodal-reading",
+  "author": "adityapatelbury",
+  "url": "https://huggingface.co/adityapatelbury/few-shot-multimodal-reading",
+  "created_at": "2026-08-29T11:00:40.000Z",
+  "updated_at": "2026-08-29T11:00:49.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "transformer",
+    "research-notes",
+    "few-shot-multimodal",
+    "license:cc-by-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 16576,
+  "parameters_human": "16576",
+  "storage_bytes": 66784,
+  "storage_human": "66784 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "markusrrs/few-shot-multimodal-alpha · Hugging Face",
+      "url": "https://huggingface.co/markusrrs/few-shot-multimodal-alpha",
+      "snippet": "markusrrs / few-shot-multimodal-alpha like 0 Safetensors transformer research-notes few-shot-multimodal License:cc-by-4. Model card FilesFiles and versions xet Community Copy to bucket new Notes on Few Shot Multimodal Repository summary What is covered How to read this repository Scope and limitations Files License"
+    },
+    {
+      "title": "adityapatelbury (अर्जुन शर्मा)",
+      "url": "https://huggingface.co/adityapatelbury/models",
+      "snippet": "User profile of अर्जुन शर्मा on Hugging Face"
+    },
+    {
+      "title": "Few-Shot Multimodal Medical Imaging: A Theoretical Framework",
+      "url": "https://arxiv.org/pdf/2511.01140",
+      "snippet": "Index Terms—Few-shot learning, Low-resource learning, Sam-ple complexity, Uncertainty quantification, Explainable AI, Med-ical imaging, Multimodal learning, Interpretability guarantees."
+    },
+    {
+      "title": "AI Model Releases in August 2026: Confirmed Updates | BenchLM",
+      "url": "https://benchlm.ai/model-updates/releases/august-2026",
+      "snippet": "24 confirmed AI model releases from 18 providers in August 2026, with primary evidence sources and BenchLM model links."
+    },
+    {
+      "title": "AI at Meta: Meta AI Products, Models and Research",
+      "url": "https://ai.meta.com/",
+      "snippet": "Explore AI at Meta. Use Meta AI to answer questions, create images, and complete tasks for free. Plus AI research, models, and tools for developers."
+    }
+  ]
+}

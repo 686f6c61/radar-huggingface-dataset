@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "cangyeone/elastic-wave-structure-emerge",
+  "slug": "cangyeone-elastic-wave-structure-emerge",
+  "author": "cangyeone",
+  "url": "https://huggingface.co/cangyeone/elastic-wave-structure-emerge",
+  "created_at": "2026-08-29T11:45:46.000Z",
+  "updated_at": "2026-08-29T12:01:57.000Z",
+  "license": "gpl-3.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "pytorch",
+  "languages": [],
+  "tags": [
+    "pytorch",
+    "seismology",
+    "waveform-representation-learning",
+    "phase-picking",
+    "acoustic-emission",
+    "receiver-functions",
+    "ambient-noise-dispersion",
+    "doi:10.57967/hf/10158",
+    "license:gpl-3.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 4472679547,
+  "storage_human": "4.5 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "cangyeone · GitHub",
+      "url": "https://github.com/cangyeone/",
+      "snippet": "欢迎学术研究使用，商业使用请联系。. cangyeone has 56 repositories available. Follow their code on GitHub."
+    },
+    {
+      "title": "GitHub - cangyeone/seismological-ai-tools: Seismology AI Tool",
+      "url": "https://github.com/cangyeone/seismological-ai-tools",
+      "snippet": "Seismology AI Tool Introduction This is an open-source tool for seismological data processing and analysis, including phase picking, polarization, and dispersion extraction. We have open-sourced the 100Hz model for the China region, with some models trained on the CSNCD dataset."
+    },
+    {
+      "title": "Attenuation of Elastic Waves by Wave Impeding Barrier in Saturated ...",
+      "url": "https://link.springer.com/article/10.1134/S0025654426600583",
+      "snippet": "Abstract This study investigates elastic wave propagation and attenuation in a saturated porous ground incorporating a wave-impeding barrier within the framework of nonlocal elasticity theory. A nonlocal wave-propagation model for the barrier-saturated porous medium system is established, and transmission amplitude ratios are employed to characterize the reflection, transmission, and mode ..."
+    },
+    {
+      "title": "Get started | ChatGPT",
+      "url": "https://chatgpt.com/auth/login",
+      "snippet": "Log in or sign up to ChatGPT"
+    },
+    {
+      "title": "cangyeone/seismological-ai-tools | DeepWiki",
+      "url": "https://deepwiki.com/cangyeone/seismological-ai-tools",
+      "snippet": "This document provides an overview of the Seismological AI Tools repository, a comprehensive platform for automated seismic data analysis. It introduces the modular architecture, key capabilities, repository structure, and design philosophy."
+    }
+  ]
+}

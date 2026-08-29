@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "resoa/garment-crop-gate-nano",
+  "slug": "resoa-garment-crop-gate-nano",
+  "author": "resoa",
+  "url": "https://huggingface.co/resoa/garment-crop-gate-nano",
+  "created_at": "2026-08-28T04:32:26.000Z",
+  "updated_at": "2026-08-29T19:05:35.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "image-classification",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "onnx",
+    "image-classification",
+    "tiny-model",
+    "edge-ai",
+    "quality-control",
+    "fashion",
+    "cascade",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 392156,
+  "storage_human": "392156 B",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "resoa/garment-attributes · Hugging Face",
+      "url": "https://huggingface.co/resoa/garment-attributes",
+      "snippet": "Estimate visible construction characteristics of a manufactured garment from a photo (crop the garment first — use garment-detector-seg). Cross-check a sample against tech pack attributes (\"single-breasted\", \"welt pockets\", \"no distressing\")."
+    },
+    {
+      "title": "resoa (Resoa) - Hugging Face",
+      "url": "https://huggingface.co/resoa/models",
+      "snippet": "Org profile for Resoa on Hugging Face, the AI community building the future."
+    },
+    {
+      "title": "Garment Attributes - AI Dataset Insights",
+      "url": "https://free2aitools.com/dataset/resoa/garment-attributes",
+      "snippet": "🆔 Identity & Source id hf-dataset--resoa--garment-attributes slug resoa--garment-attributes source huggingface author resoa license Apache-2.0 tags transformers, safetensors, siglip, image-classification, multi-label, fashion, apparel, manufacturing, quality-control, siglip2, dataset:fashionpedia, license:apache-2.0, endpoints_compatible ..."
+    },
+    {
+      "title": "AI Fashion Models: Generate On-Model Apparel Images | Claid.ai",
+      "url": "https://claid.ai/clothing-on-models",
+      "snippet": "Turn a single photo of your apparel into a full gallery of professional on-model shots. Make AI models wear your clothes to get diverse, campaign-ready images without the photoshoot hassle."
+    },
+    {
+      "title": "MeiGen - Free GPT Image 2, Nano Banana & Seedance 2.5 Prompts",
+      "url": "https://www.meigen.ai/",
+      "snippet": "Free GPT Image 2, Nano Banana and Seedance 2.5 video prompts. Copy, paste and generate images or videos — no prompt engineering needed."
+    }
+  ]
+}

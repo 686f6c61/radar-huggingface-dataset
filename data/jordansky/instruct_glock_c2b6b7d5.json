@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "Jordansky/instruct_glock_c2b6b7d5",
+  "slug": "jordansky-instruct_glock_c2b6b7d5",
+  "author": "Jordansky",
+  "url": "https://huggingface.co/Jordansky/instruct_glock_c2b6b7d5",
+  "created_at": "2026-08-29T14:07:25.000Z",
+  "updated_at": "2026-08-29T14:07:36.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "arxiv:1910.09700",
+    "base_model:Qwen/Qwen3-32B",
+    "base_model:adapter:Qwen/Qwen3-32B",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 2159030406,
+  "storage_human": "2.2 GB",
+  "base_model": "Qwen/Qwen3-32B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Jordansky/f6782145-boss · Hugging Face",
+      "url": "https://huggingface.co/Jordansky/f6782145-boss",
+      "snippet": "Jordansky / f6782145-boss like 0 Safetensors gemma2 Model card FilesFiles and versions xet Community Copy to bucket new No model card Downloads last month - Safetensors Model size 3B params Tensor type BF16 · Chat template Files info Inference Providers NEW This model isn&#x27;t deployed by any Inference Provider.🙋Ask for provider support"
+    },
+    {
+      "title": "Jordansky (Ilfan Aulia Nur Pagi) - Hugging Face",
+      "url": "https://huggingface.co/Jordansky/models",
+      "snippet": "User profile of Ilfan Aulia Nur Pagi on Hugging Face"
+    },
+    {
+      "title": "Grok",
+      "url": "https://grok.com/",
+      "snippet": "Grok is an AI assistant built by SpaceXAI. Chat, create images, write code, and get real-time answers from the web and X."
+    },
+    {
+      "title": "Jordansky/aa1fd318-7435-4684-b677-da8f9e8d6d76 - Fast, Reliable, and ...",
+      "url": "https://friendli.ai/models/Jordansky/aa1fd318-7435-4684-b677-da8f9e8d6d76",
+      "snippet": "Run Jordansky/aa1fd318-7435-4684-b677-da8f9e8d6d76 with fast, reliable, and scalable inference on FriendliAI. Get low-latency performance with advanced quantization (FP4, FP8, INT4, INT8), continuous batching, optimized GPU kernels, token caching, and seamless API integration."
+    },
+    {
+      "title": "Odysseus AI - Self-Hosted AI Workspace Setup Guide",
+      "url": "https://odysseusai.dev/",
+      "snippet": "Odysseus AI Setup Guide For PewDiePie&#x27;s self-hosted AI workspace Verify the official source, choose Docker, Windows, macOS, or Linux, connect Ollama or API keys, read logs, choose a model that fits your hardware, and avoid unsafe public deployment."
+    }
+  ]
+}

@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "Sawfwair/LTX-2.5-Full-BF16-MLX",
+  "slug": "sawfwair-ltx-2-5-full-bf16-mlx",
+  "author": "Sawfwair",
+  "url": "https://huggingface.co/Sawfwair/LTX-2.5-Full-BF16-MLX",
+  "created_at": "2026-08-29T14:47:00.000Z",
+  "updated_at": "2026-08-29T14:56:13.000Z",
+  "license": "ltx-2-community-license-agreement",
+  "license_family": "unknown",
+  "pipeline_tag": "text-to-video",
+  "library": "mlx",
+  "languages": [],
+  "tags": [
+    "mlx",
+    "ltx-video",
+    "ltx-2.5",
+    "mere.run",
+    "text-to-video",
+    "base_model:Lightricks/LTX-2.5",
+    "base_model:finetune:Lightricks/LTX-2.5",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 119718533955,
+  "storage_human": "119.7 GB",
+  "base_model": "Lightricks/LTX-2.5",
+  "formats": [
+    "mlx"
+  ],
+  "is_conversational": false,
+  "gated": true,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Sawfwair/LTX-2.5-Distilled-BF16-MLX-Q4-Text · Hugging Face",
+      "url": "https://huggingface.co/Sawfwair/LTX-2.5-Distilled-BF16-MLX-Q4-Text",
+      "snippet": "LTX 2.5 Distilled BF16 + MLX Q4 Text for mere.run This is the complete, self-contained LTX 2.5 distilled distribution used by mere.run on Apple Silicon. It is one model repository and one download:"
+    },
+    {
+      "title": "Lightricks/LTX-2.5 · Hugging Face",
+      "url": "https://huggingface.co/Lightricks/LTX-2.5",
+      "snippet": "LTX-2.5 — Video, Audio & World Simulation Full control and customization — self-host on your infrastructure."
+    },
+    {
+      "title": "LTX-2.5: LTX&#x27;s Latest AI Open-Source Foundation Model | LTX",
+      "url": "https://ltx.io/model/ltx-2-5",
+      "snippet": "LTX 2.5 a stronger foundation for what&#x27;s already being built LTX-2.5 improves quality, continuity, control, and efficiency through native multi-shot, stronger prompt adherence, and better local performance."
+    },
+    {
+      "title": "LTX-2: Production-Grade AI Video Generation Model | LTX",
+      "url": "https://ltx.io/model/ltx-2",
+      "snippet": "LTX-2 is a pro AI video model for production. It offers precise control, native 4K, high frame rates and proven performance for long-form creative tasks."
+    },
+    {
+      "title": "LTX-2.5 DEV/DIST - IMAGE to Video and TEXT to Video with Ollama/RTX VSR",
+      "url": "https://civitai.com/models/2318870/ltx-25-devdist-image-to-video-and-text-to-video-with-ollamartx-vsr",
+      "snippet": "V1.5 LTX-2 DEV Video with Audio including latest 🅛🅣🅧 Multimodal Guider Image to Video and a Text to Video workflow, both can use own Prompts or Ollama generated/enhanced prompts."
+    }
+  ]
+}

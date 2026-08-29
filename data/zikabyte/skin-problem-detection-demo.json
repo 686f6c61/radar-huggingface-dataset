@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "zikabyte/skin-problem-detection-demo",
+  "slug": "zikabyte-skin-problem-detection-demo",
+  "author": "zikabyte",
+  "url": "https://huggingface.co/zikabyte/skin-problem-detection-demo",
+  "created_at": "2026-08-29T17:14:02.000Z",
+  "updated_at": "2026-08-29T17:14:24.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": "object-detection",
+  "library": "ultralytics",
+  "languages": [],
+  "tags": [
+    "ultralytics",
+    "onnx",
+    "object-detection",
+    "yolo",
+    "yolo26",
+    "skin",
+    "license:cc-by-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 15199219,
+  "storage_human": "15 MB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "AI Skin Detection Demo - a Hugging Face Space by tzuhan1206-sketch",
+      "url": "https://huggingface.co/spaces/tzuhan1206-sketch/Skin-Detection",
+      "snippet": "Upload a skin photo and press the button to run the YOLOv8 model. The app returns the original picture with colored boxes highlighting the detected skin regions. It provides a visual preview of the..."
+    },
+    {
+      "title": "skin-disease-detection · GitHub Topics · GitHub",
+      "url": "https://github.com/topics/skin-disease-detection",
+      "snippet": "A Python-based computer vision and AI system for skin disease recognition and diagnosis. Led end-to-end project pipeline, including data gathering, preprocessing, and training models. Utilized Keras, TensorFlow, OpenCV, and other libraries for image processing and CNN models, showcasing expertise in ..."
+    },
+    {
+      "title": "AI Skin Detection Demo - a Hugging Face Space by Rodyang",
+      "url": "https://huggingface.co/spaces/Rodyang/skin01",
+      "snippet": "AI Skin Detection Demo Upload a skin image and run the local YOLOv8 model to see the annotated detection result."
+    },
+    {
+      "title": "Skin Disease AI - GitHub",
+      "url": "https://github.com/NadavIs56/Skin_Disease_AI",
+      "snippet": "A Python-based computer vision and AI system for skin disease recognition and diagnosis. Led end-to-end project pipeline, including data gathering, preprocessing, and training models. Utilized Kera..."
+    },
+    {
+      "title": "Free AI Skin Condition Identifier - piax.org",
+      "url": "https://www.piax.org/en/ai-image-analyze-tools/ai-skin-condition-identifier",
+      "snippet": "Analyze skin conditions and health from photos using advanced AI technology instantly."
+    }
+  ]
+}

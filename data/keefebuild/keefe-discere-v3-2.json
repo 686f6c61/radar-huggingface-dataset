@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "KeefeBuild/Keefe-Discere-v3.2",
+  "slug": "keefebuild-keefe-discere-v3-2",
+  "author": "KeefeBuild",
+  "url": "https://huggingface.co/KeefeBuild/Keefe-Discere-v3.2",
+  "created_at": "2026-08-29T12:41:59.000Z",
+  "updated_at": "2026-08-29T12:47:13.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen2",
+    "text-generation",
+    "text-generation-inference",
+    "unsloth",
+    "conversational",
+    "en",
+    "base_model:KeefeBuild/Keefe-Discere-v3.2",
+    "base_model:finetune:KeefeBuild/Keefe-Discere-v3.2",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 7615616512,
+  "parameters_human": "7.62B",
+  "storage_bytes": 15242694121,
+  "storage_human": "15.2 GB",
+  "base_model": "KeefeBuild/Keefe-Discere-v3.2",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "KeefeBuild/Keefe-Discere-v3.0-Final · Hugging Face",
+      "url": "https://huggingface.co/KeefeBuild/Keefe-Discere-v3.0-Final",
+      "snippet": "KeefeBuild / Keefe-Discere-v3.-Final like 0 Text Generation Transformers Safetensors English qwen2 text-generation-inference unsloth conversational License:apache-2.0 Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "KeefeBuild/Keefe-Discere-V2 · Hugging Face",
+      "url": "https://huggingface.co/KeefeBuild/Keefe-Discere-V2",
+      "snippet": "KeefeBuild / Keefe-Discere-V2 like 0 Text Generation Transformers Safetensors English qwen2 text-generation-inference unsloth conversational License:apache-2.0 Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "Keefe-Discere-v3.0-Final API & Inference Endpoint | FriendliAI",
+      "url": "https://friendli.ai/models/KeefeBuild/Keefe-Discere-v3.0-Final",
+      "snippet": "Run Keefe-Discere-v3.-Final with FriendliAI inference. This qwen2 model was trained 2x faster with Unsloth and Huggingface&#x27;s TRL library."
+    },
+    {
+      "title": "CivArchive (CivitAI Archive) - AI Model Archive",
+      "url": "https://civitaiarchive.com/",
+      "snippet": "Browse and discover AI models from CivitAI, TensorArt, and SeaArt. Community-driven archive preserving access to AI resources."
+    },
+    {
+      "title": "Krea 2: Unsencored Text-to-Image Generations in ComfyUI",
+      "url": "https://www.nextdiffusion.ai/tutorials/krea-2-uncensored-text-to-image-generations-in-comfyui",
+      "snippet": "Learn how to set up and use Krea 2 Turbo for high-quality text-to-image generation in ComfyUI. Step-by-step guide for optimal results and configurations."
+    }
+  ]
+}

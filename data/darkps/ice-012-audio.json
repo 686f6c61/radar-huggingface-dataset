@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "darkps/ice-012-audio",
+  "slug": "darkps-ice-012-audio",
+  "author": "darkps",
+  "url": "https://huggingface.co/darkps/ice-012-audio",
+  "created_at": "2026-08-29T13:56:17.000Z",
+  "updated_at": "2026-08-29T14:32:00.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-speech",
+  "library": "transformers",
+  "languages": [
+    "multilingual"
+  ],
+  "tags": [
+    "transformers",
+    "ice-012-audio",
+    "text-to-speech",
+    "multilingual",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 24,
+  "downloads_30d": 0,
+  "trending_score": 18,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "darkps/ice-AI-transformers · Hugging Face",
+      "url": "https://huggingface.co/darkps/ice-AI-transformers",
+      "snippet": "The \"ice\" model is a very robust, medium-sized model for human-like conversations, designed for quick chats and small code snippets. The ice model was released with massive equations:"
+    },
+    {
+      "title": "darkps/ice-AI · Hugging Face",
+      "url": "https://huggingface.co/darkps/ice-AI",
+      "snippet": "darkps / ice-AI like 0 License:apache-2.0 Model card FilesFiles and versions xet Community Copy to bucket new"
+    },
+    {
+      "title": "Detect a specific AI voice | AI Voice Detector",
+      "url": "https://aivoicedetector.com/detect",
+      "snippet": "Find out which AI voice generator made a clip. Free, citable detection guides for ElevenLabs, OpenAI, Amazon Polly, Azure, and more."
+    },
+    {
+      "title": "GitHub - dark-ps/DarkPs-Agent-CLI: Extensible local-first AI agent ...",
+      "url": "https://github.com/dark-ps/DarkPs-Agent-CLI",
+      "snippet": "DarkPs Agent Enterprise-Grade, Local-First Agent Framework An extensible automation framework engineered for project workspaces, developer tooling, model orchestration, MCP integration, and reusable runtime capabilities. Designed for open-source distribution — architected for production-grade automation and code operations."
+    },
+    {
+      "title": "DarkPs-Agent-CLI/README.md at main · dark-ps/DarkPs-Agent-CLI",
+      "url": "https://github.com/dark-ps/DarkPs-Agent-CLI/blob/main/README.md",
+      "snippet": "Extensible local-first AI agent framework for automation, coding, tools, and multi-model workflows. - dark-ps/DarkPs-Agent-CLI"
+    }
+  ]
+}

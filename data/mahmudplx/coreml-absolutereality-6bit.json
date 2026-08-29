@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "mahmudplx/coreml-absolutereality-6bit",
+  "slug": "mahmudplx-coreml-absolutereality-6bit",
+  "author": "mahmudplx",
+  "url": "https://huggingface.co/mahmudplx/coreml-absolutereality-6bit",
+  "created_at": "2026-08-29T13:31:20.000Z",
+  "updated_at": "2026-08-29T14:19:57.000Z",
+  "license": "creativeml-openrail-m",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-image",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "coreml",
+    "stable-diffusion",
+    "text-to-image",
+    "ios",
+    "base_model:Lykon/AbsoluteReality",
+    "base_model:finetune:Lykon/AbsoluteReality",
+    "license:creativeml-openrail-m",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1058807147,
+  "storage_human": "1.1 GB",
+  "base_model": "Lykon/AbsoluteReality",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "LocalMuseAI/coreml-cyberrealistic-v8-inpaint-6bit · Hugging Face",
+      "url": "https://huggingface.co/LocalMuseAI/coreml-cyberrealistic-v8-inpaint-6bit",
+      "snippet": "LocalMuseAI / coreml-cyberrealistic-v8-inpaint-6bit like 0 Follow LocalMuse AI 1 Image-to-Image Core ML ml-stable-diffusion inpainting stable-diffusion stable-diffusion-1.5 cyberrealistic 6-bit ios License:creativeml-openrail-m Model card FilesFiles and versions xet Community Copy to bucket new CyberRealistic V8 Inpaint Compact — Core ML 6-bit for LocalMuse Provenance Validation Recommended ..."
+    },
+    {
+      "title": "AbsoluteReality - v1.8.1 | Stable Diffusion 1.x Checkpoint | Civitai",
+      "url": "https://civitai.com/models/81458/absolutereality",
+      "snippet": "AbsoluteReality That feeling after you wake up from a dream Add a ️ to receive future updates. This took much time and effort, please be supportive..."
+    },
+    {
+      "title": "LocalMuseAI/coreml-cyberrealistic-xl-v8-inpaint-6bit · Hugging Face",
+      "url": "https://huggingface.co/LocalMuseAI/coreml-cyberrealistic-xl-v8-inpaint-6bit",
+      "snippet": "CyberRealistic XL V8 Inpaint — LocalMuse Core ML This repository contains a Core ML build for on-device Inpaint in LocalMuse. It is derived from Cyberdelia&#x27;s native nine-channel CyberRealistic XL v8.0-Inpainting checkpoint (Civitai model 312530, version 2462401)."
+    },
+    {
+      "title": "GitHub - apple/coreai-models: Model export recipes, Python primitives ...",
+      "url": "https://github.com/apple/coreai-models",
+      "snippet": "Model export recipes, Python primitives, and Swift runtime utilities for building on-device AI with Core AI. The main components include: Model export — Recipes to export popular open source models from Hugging Face and other sources to Core AI format. Reusable primitives — Python building blocks for authoring custom Core AI models in PyTorch."
+    },
+    {
+      "title": "likedan/Awesome-CoreML-Models: Largest list of models for Core ... - GitHub",
+      "url": "https://github.com/likedan/Awesome-CoreML-Models",
+      "snippet": "Largest list of models for Core ML (for iOS 11+). Contribute to likedan/Awesome-CoreML-Models development by creating an account on GitHub."
+    }
+  ]
+}

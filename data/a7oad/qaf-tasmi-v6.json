@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "A7oad/qaf-tasmi-v6",
+  "slug": "a7oad-qaf-tasmi-v6",
+  "author": "A7oad",
+  "url": "https://huggingface.co/A7oad/qaf-tasmi-v6",
+  "created_at": "2026-08-26T16:56:59.000Z",
+  "updated_at": "2026-08-29T13:59:31.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "automatic-speech-recognition",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "executorch",
+    "wav2vec2",
+    "automatic-speech-recognition",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 16,
+  "trending_score": 0,
+  "parameters": 315536095,
+  "parameters_human": "315.5M",
+  "storage_bytes": 60369405214,
+  "storage_human": "60.4 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "A7oad/qaf-tasmi-v5 · Hugging Face",
+      "url": "https://huggingface.co/A7oad/qaf-tasmi-v5",
+      "snippet": "Instructions to use A7oad/qaf-tasmi-v5 with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Libraries Transformers How to use A7oad/qaf-tasmi-v5 with Transformers:"
+    },
+    {
+      "title": "A7oad (Ahmad) - Hugging Face",
+      "url": "https://huggingface.co/A7oad",
+      "snippet": "A7oad/qaf-tasmi-v3 Automatic Speech Recognition • 0.3B•Updated about 7 hours ago• 10"
+    },
+    {
+      "title": "CivArchive (CivitAI Archive) - AI Model Archive",
+      "url": "https://civitaiarchive.com/",
+      "snippet": "Browse and discover AI models from CivitAI, TensorArt, and SeaArt. Community-driven archive preserving access to AI resources."
+    },
+    {
+      "title": "Latest AI Models 2026: 90 Released — Complete Catalog",
+      "url": "https://best-ai.news/ai-model-releases-2026",
+      "snippet": "The latest AI models of 2026: a living catalog of 99 AI models tracked this year — from 33 brands across LLMs, image, video, multimodal, audio & science. Updated continuously."
+    },
+    {
+      "title": "Downloading Models - docs.kamiwaza.ai",
+      "url": "https://docs.kamiwaza.ai/models/downloading-models",
+      "snippet": "Model Search and Discovery Kamiwaza is integrated directly with the Hugging Face Hub, allowing you to access a vast collection of open-source models. Models are identified by their Hugging Face repository ID, such as meta-llama/Llama-3.3-70B-Instruct. Downloading Models When you select a model to deploy, Kamiwaza handles the download process ..."
+    }
+  ]
+}

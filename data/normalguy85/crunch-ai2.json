@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "NormalGuy85/Crunch-Ai2",
+  "slug": "normalguy85-crunch-ai2",
+  "author": "NormalGuy85",
+  "url": "https://huggingface.co/NormalGuy85/Crunch-Ai2",
+  "created_at": "2026-08-29T14:23:27.000Z",
+  "updated_at": "2026-08-29T14:23:28.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen2",
+    "text-generation",
+    "chat",
+    "conversational",
+    "en",
+    "arxiv:2407.10671",
+    "base_model:Qwen/Qwen2.5-1.5B",
+    "base_model:finetune:Qwen/Qwen2.5-1.5B",
+    "license:apache-2.0",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1543714304,
+  "parameters_human": "1.54B",
+  "storage_bytes": 3087467144,
+  "storage_human": "3.1 GB",
+  "base_model": "Qwen/Qwen2.5-1.5B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "AI2 - TechCrunch",
+      "url": "https://techcrunch.com/tag/ai2/",
+      "snippet": "Ai2&#x27;s new small AI model outperforms similarly-sized models from Google, Meta Kyle Wiggers May 1, 2025 AI"
+    },
+    {
+      "title": "NormalGuy85 (Bowornwich Samngamya) - Hugging Face",
+      "url": "https://huggingface.co/NormalGuy85",
+      "snippet": "Umbrella AI 🐢 Ai Video Genarator [BETA] NormalGuy85 May 10"
+    },
+    {
+      "title": "Crunch — AI That Works",
+      "url": "https://ai-crunch.com/",
+      "snippet": "Crunch is an AI solutions company that helps businesses turn complex data and processes into clear, actionable intelligence."
+    },
+    {
+      "title": "AI2 open sources text-generating AI models - TechCrunch",
+      "url": "https://techcrunch.com/2024/02/01/ai2-open-sources-text-generating-ai-models-and-the-data-used-to-train-them/",
+      "snippet": "AI2, the AI research institute, has released several text-generating models in open source, along with the data used to train them."
+    },
+    {
+      "title": "character.ai | AI Chat, Reimagined-Your Words. Your World.",
+      "url": "https://character.ai/",
+      "snippet": "Chat with millions of AI Characters on the #1 AI chat app. Where will your next adventure take you?"
+    }
+  ]
+}

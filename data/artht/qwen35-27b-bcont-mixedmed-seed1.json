@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "ArthT/qwen35-27b-bcont-mixedmed-seed1",
+  "slug": "artht-qwen35-27b-bcont-mixedmed-seed1",
+  "author": "ArthT",
+  "url": "https://huggingface.co/ArthT/qwen35-27b-bcont-mixedmed-seed1",
+  "created_at": "2026-08-29T11:04:14.000Z",
+  "updated_at": "2026-08-29T11:56:43.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "generated_from_trainer",
+    "unsloth",
+    "sft",
+    "trl",
+    "base_model:Qwen/Qwen3.5-27B",
+    "base_model:finetune:Qwen/Qwen3.5-27B",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 31040796664,
+  "storage_human": "31.0 GB",
+  "base_model": "Qwen/Qwen3.5-27B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Qwen3.5-27B: Specifications and GPU VRAM Requirements",
+      "url": "https://apxml.com/models/qwen35-27b",
+      "snippet": "Qwen3.5-27B is Alibaba Cloud&#x27;s dense multimodal foundation model with 27B parameters, released February 2026. Unlike the MoE variants, it uses a dense architecture combining Gated Delta Networks and Feed Forward Networks."
+    },
+    {
+      "title": "Qwen3.5 - a Qwen Collection - Hugging Face",
+      "url": "https://huggingface.co/collections/Qwen/qwen35",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "qwen/qwen3.5-27b • LM Studio",
+      "url": "https://lmstudio.ai/models/qwen/qwen3.5-27b",
+      "snippet": "Qwen3.5 27B Qwen3.5 represents a significant leap forward, integrating breakthroughs in multimodal learning, architectural efficiency, reinforcement learning scale, and global accessibility. This is a 27B parameter dense model, supporting a native context length of 262,144 tokens. Highlights Unified Vision-Language Foundation. Early fusion training on multimodal tokens achieves cross ..."
+    },
+    {
+      "title": "GitHub - AlibabaCloud-Official/Qwen3.8-27B: Native multimodal dense LLM ...",
+      "url": "https://github.com/AlibabaCloud-Official/Qwen3.8-27B",
+      "snippet": "Welcome to the repository for Qwen3.8-27B —the latest native multimodal dense open-weight model released by Alibaba&#x27;s Qwen team. Delivering top-tier performance for local hardware, Qwen3.8-27B excels at coding, agentic workflows, and office automation tasks."
+    },
+    {
+      "title": "Qwen 3.5 Locally — 27B vs 35B-A3B vs 122B, Which Model Fits Your GPU",
+      "url": "https://insiderllm.com/guides/qwen35-local-guide-which-model-fits-your-gpu/",
+      "snippet": "Qwen 3.5 and 3.6 on local hardware. 27B dense vs 35B-A3B MoE vs 122B compared. VRAM tables, community tok/s on RTX 3090, and which to pick for your card."
+    }
+  ]
+}

@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "sosa123454321/neurotrack-ai",
+  "slug": "sosa123454321-neurotrack-ai",
+  "author": "sosa123454321",
+  "url": "https://huggingface.co/sosa123454321/neurotrack-ai",
+  "created_at": "2026-08-29T12:59:58.000Z",
+  "updated_at": "2026-08-29T13:50:38.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "mental-health",
+    "autism",
+    "schizophrenia",
+    "therapy",
+    "neurotrack",
+    "gradio",
+    "telegram-bot",
+    "text-generation",
+    "en",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - unknownsafari/NeuroTrack: AI-based brain cancer progression ...",
+      "url": "https://github.com/unknownsafari/NeuroTrack",
+      "snippet": "NeuroTrack is a comprehensive platform for brain tumor analysis, combining AI-based prediction, 3D visualization, and survival analysis. The system processes medical imaging data (NIfTI format) and clinical features to provide insights into tumor progression and patient outcomes."
+    },
+    {
+      "title": "NeuroTrack AI — Smart Headache & Migraine Tracker",
+      "url": "https://neuro-tracker-ai.vercel.app/",
+      "snippet": "NeuroTrack AI helps you log headache symptoms, predict migraine types with intelligent analysis, and detect neurological risk early — all in one beautiful dashboard."
+    },
+    {
+      "title": "GitHub - Priyanshuwadnere/neurotrack-ai: NeuroTrack — AI-powered ...",
+      "url": "https://github.com/Priyanshuwadnere/neurotrack-ai",
+      "snippet": "🧠 NeuroTrack - AI-Powered Student Mental Health Risk Assessment & Decision Support An end-to-end Machine Learning system for predicting student depression risk using lifestyle, academic, and wellbeing indicators."
+    },
+    {
+      "title": "GitHub - fidelechevarria/NeuroTrack: Ultra-fast, zero-copy C++20/CUDA ...",
+      "url": "https://github.com/fidelechevarria/NeuroTrack/tree/main",
+      "snippet": "High-Performance Zero-Copy Neural Feature Tracking Engine in Modern C++20 / CUDAA deterministic, ultra-low-latency temporal feature tracker combining deep local features (XFeat / ALIKED / LightGlue) with GPU-accelerated spatial bucketing for real-time VIO and Spatial AI."
+    },
+    {
+      "title": "AI Release Tracker — AI Model Release Timeline",
+      "url": "https://aireleasetracker.com/",
+      "snippet": "Track major AI model releases from OpenAI, Anthropic, Google, Meta, SpaceXAI, DeepSeek, Mistral, and Qwen. Interactive timeline since ChatGPT launch."
+    }
+  ]
+}

@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "mradermacher/llama-3-8b-dolphin-uncensored-GGUF",
+  "slug": "mradermacher-llama-3-8b-dolphin-uncensored-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/llama-3-8b-dolphin-uncensored-GGUF",
+  "created_at": "2026-08-29T17:39:09.000Z",
+  "updated_at": "2026-08-29T17:59:32.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "text-generation-inference",
+    "unsloth",
+    "llama",
+    "en",
+    "base_model:adamkareem/llama-3-8b-dolphin-uncensored",
+    "base_model:quantized:adamkareem/llama-3-8b-dolphin-uncensored",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 8030261248,
+  "parameters_human": "8.03B",
+  "storage_bytes": 71820235008,
+  "storage_human": "71.8 GB",
+  "base_model": "adamkareem/llama-3-8b-dolphin-uncensored",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "dphn/Dolphin3.0-Llama3.1-8B · Hugging Face",
+      "url": "https://huggingface.co/dphn/Dolphin3.0-Llama3.1-8B",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Dolphin3.0-Llama3.1-8B-abliterated-GGUF - Hugging Face",
+      "url": "https://huggingface.co/mradermacher/Dolphin3.0-Llama3.1-8B-abliterated-GGUF",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "dolphin-llama3:8b",
+      "url": "https://ollama.com/library/dolphin-llama3:8b",
+      "snippet": "Dolphin 2.9 is a new model with 8B and 70B sizes by Eric Hartford based on Llama 3 that has a variety of instruction, conversational, and coding skills."
+    },
+    {
+      "title": "Best Uncensored Local LLMs by VRAM Tier (2026) | InsiderLLM",
+      "url": "https://insiderllm.com/guides/best-uncensored-local-llms/",
+      "snippet": "Qwen 3.6 abliterated, Gemma 4 Heretic, Dolphin 3.0 — the current uncensored picks by VRAM tier. The Llama 3.1 / Qwen 2.5 era is mostly superseded. HuggingFace repos for every pick."
+    },
+    {
+      "title": "dolphin3 - ollama.com",
+      "url": "https://ollama.com/library/dolphin3",
+      "snippet": "Dolphin 3.0 Llama 3.1 8B 🐬 is the next generation of the Dolphin series of instruct-tuned models designed to be the ultimate general purpose local model, enabling coding, math, agentic, function calling, and general use cases."
+    }
+  ]
+}

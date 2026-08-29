@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "lemoncmd/lldms-associative-memory",
+  "slug": "lemoncmd-lldms-associative-memory",
+  "author": "lemoncmd",
+  "url": "https://huggingface.co/lemoncmd/lldms-associative-memory",
+  "created_at": "2026-08-29T04:55:13.000Z",
+  "updated_at": "2026-08-29T15:25:29.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "pytorch",
+  "languages": [],
+  "tags": [
+    "pytorch",
+    "diffusion-language-model",
+    "associative-memory",
+    "memorization",
+    "discrete-diffusion",
+    "lm1b",
+    "arxiv:2604.26841",
+    "dataset:lm1b",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 472783303079,
+  "storage_human": "472.8 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "lemoncmd/lldms-associative-memory · Hugging Face",
+      "url": "https://huggingface.co/lemoncmd/lldms-associative-memory",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Embeddable Lemonade: Models - Lemonade Server Documentation",
+      "url": "https://lemonade-server.ai/docs/embeddable/models/",
+      "snippet": "Embeddable Lemonade: Models This guide covers how lemond discovers, exposes, and bundles models in an embeddable deployment. Contents: Model Organization Sharing Models With Other Apps Private Models Importing Models to lemond Customization Changing the Built-In Models List Per-Model Load Options Bundling Models Model Organization lemond &#x27;s configuration has two properties, models_dir and ..."
+    },
+    {
+      "title": "GitHub - Artificer-AI-Lab/MoRAM: Official implementation of \"Little By ...",
+      "url": "https://github.com/Artificer-AI-Lab/MoRAM",
+      "snippet": "Official implementation of \"Little By Little: Continual Learning via Incremental Mixture of Rank-1 Associative Memory Experts\", accepted at ICML 2026. - Artificer-AI-Lab/MoRAM"
+    },
+    {
+      "title": "HeLa-Mem: Hebbian Learning and Associative Memory for LLM Agents",
+      "url": "https://arxiv.org/abs/2604.16839",
+      "snippet": "Long-term memory is a critical challenge for Large Language Model agents, as fixed context windows cannot preserve coherence across extended interactions. Existing memory systems represent conversation history as unstructured embedding vectors, retrieving information through semantic similarity. This paradigm fails to capture the associative structure of human memory, wherein related ..."
+    },
+    {
+      "title": "[2402.13449] CAMELoT: Towards Large Language Models with Training-Free ...",
+      "url": "https://arxiv.org/abs/2402.13449",
+      "snippet": "Large Language Models (LLMs) struggle to handle long input sequences due to high memory and runtime costs. Memory-augmented models have emerged as a promising solution to this problem, but current methods are hindered by limited memory capacity and require costly re-training to integrate with a new LLM. In this work, we introduce an associative memory module which can be coupled to any pre ..."
+    }
+  ]
+}

@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "qbz506/kinetic-eqlm-46m-compute-matched",
+  "slug": "qbz506-kinetic-eqlm-46m-compute-matched",
+  "author": "qbz506",
+  "url": "https://huggingface.co/qbz506/kinetic-eqlm-46m-compute-matched",
+  "created_at": "2026-08-29T14:08:03.000Z",
+  "updated_at": "2026-08-29T14:08:55.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "onnx",
+    "safetensors",
+    "deep-equilibrium",
+    "weight-tying",
+    "parameter-efficiency",
+    "kinetic-ai",
+    "en",
+    "dataset:BabyLM-community/BabyLM-2026-Strict",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 45800450,
+  "parameters_human": "45.8M",
+  "storage_bytes": 520742830,
+  "storage_human": "521 MB",
+  "base_model": null,
+  "formats": [
+    "onnx",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "qbz506/kinetic-eqlm-121m-babylm · Hugging Face",
+      "url": "https://huggingface.co/qbz506/kinetic-eqlm-121m-babylm",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "LLM Leaderboard & AI Model Benchmarks — August 2026",
+      "url": "https://benchlm.ai/",
+      "snippet": "LLM Leaderboard & AI Model Benchmarks — August 2026 Compare frontier AI models by quality, cost, and context. 105 Supported and 123 Estimated models among 406 tracked LLMs — 406 benchmarks, real pricing, and runtime data in one place."
+    },
+    {
+      "title": "qbz506/kinetic-eqlm-anytime-121m-babylm · Hugging Face",
+      "url": "https://huggingface.co/qbz506/kinetic-eqlm-anytime-121m-babylm",
+      "snippet": "EqLM — kinetic-eqlm-anytime-121m-babylm This is an equilibrium language model from the Kinetic AI research project."
+    },
+    {
+      "title": "LLM Leaderboard 2026: Compare 300+ Top AI Models by Intelligence, Speed ...",
+      "url": "https://llm-stats.com/leaderboards/llm-leaderboard",
+      "snippet": "The LLM Leaderboard — independent ranking of GPT, Claude, Gemini, Llama, DeepSeek and 300+ AI models by intelligence, speed and price. Filter by provider, license, modality and context window; sort by every benchmark. Composite LLM Stats Score updated continuously from public benchmarks and live API metrics."
+    },
+    {
+      "title": "AI Model Rankings 2026: Live LLM Leaderboard | ModelCap",
+      "url": "https://modelcap.ai/",
+      "snippet": "Live LLM leaderboard (Aug 2026): 224 AI models ranked on public benchmark evidence; Claude Fable 5 leads. API pricing, context windows and 69 providers compared."
+    }
+  ]
+}

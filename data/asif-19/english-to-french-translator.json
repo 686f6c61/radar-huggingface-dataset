@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "Asif-19/english-to-french-translator",
+  "slug": "asif-19-english-to-french-translator",
+  "author": "Asif-19",
+  "url": "https://huggingface.co/Asif-19/english-to-french-translator",
+  "created_at": "2026-08-29T16:06:25.000Z",
+  "updated_at": "2026-08-29T16:10:00.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "marian",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 74669178,
+  "parameters_human": "74.7M",
+  "storage_bytes": 300291889,
+  "storage_human": "300 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "DeepL Translator | World&#x27;s Most Accurate Translator",
+      "url": "https://www.deepl.com/en/translator",
+      "snippet": "The DeepL Language AI platform Translator Deliver accurate, enterprise-grade translations with pro features like Glossaries, Rules, Clarify and more."
+    },
+    {
+      "title": "English to French Translation - Verified by 22 AI Models",
+      "url": "https://www.machinetranslation.com/translation/english-french",
+      "snippet": "AI-verified translations Run any text through 22 models at once and get the English to French translation that most models agree on."
+    },
+    {
+      "title": "English to French Translator: - easemate.ai",
+      "url": "https://www.easemate.ai/ai-translator/english-to-french",
+      "snippet": "EaseMate English to French AI Translator is a handy free online bilingual translator that helps users translate texts from English to French within clicks."
+    },
+    {
+      "title": "Translate English to French with AI",
+      "url": "https://www.getvoila.ai/ai-translate/english-to-french",
+      "snippet": "How does English to French Translator work? English to French AI translation tool uses advanced AI models to translate English into more than 50 languages. You can customize the translation by selecting the desired language and providing the text you want to translate."
+    },
+    {
+      "title": "Translate English text into French instantly using AI. - Unite.AI",
+      "url": "https://www.unite.ai/translation/english-to-french/",
+      "snippet": "Translate English to French instantly with our free AI translator. Paste text and get accurate results in seconds."
+    }
+  ]
+}

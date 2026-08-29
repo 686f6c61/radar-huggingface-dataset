@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "JayedAnsari/realiad-patchcore",
+  "slug": "jayedansari-realiad-patchcore",
+  "author": "JayedAnsari",
+  "url": "https://huggingface.co/JayedAnsari/realiad-patchcore",
+  "created_at": "2026-08-29T16:37:34.000Z",
+  "updated_at": "2026-08-29T16:56:49.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1143640607,
+  "storage_human": "1.1 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "JayedAnsari/realiad-patchcore-anomaly-detection · Hugging Face",
+      "url": "https://huggingface.co/JayedAnsari/realiad-patchcore-anomaly-detection",
+      "snippet": "JayedAnsari / realiad-patchcore-anomaly-detection like 0 License:mit Model card FilesFiles and versions xet Community Copy to bucket new"
+    },
+    {
+      "title": "JayedAnsari/realiad-patchcore-anomaly-detection at main",
+      "url": "https://huggingface.co/JayedAnsari/realiad-patchcore-anomaly-detection/tree/main",
+      "snippet": "JayedAnsari / realiad-patchcore-anomaly-detection like 0 License:mit Model card FilesFiles and versions xet Community Copy to bucket new main realiad-patchcore-anomaly-detection 1.54 kB Ctrl+K Ctrl+K 1 contributor History:1 commit JayedAnsari initial commit 6dedc10 verified9 days ago .gitattributes Safe 1.52 kBinitial commit9 days ago README.md ..."
+    },
+    {
+      "title": "GitHub - Jayed08/realiad-patchcore-anomaly-detection: Unsupervised ...",
+      "url": "https://github.com/Jayed08/realiad-patchcore-anomaly-detection",
+      "snippet": "An end-to-end normal-only industrial anomaly detection and localization system built on the Real-IAD dataset. The system uses a PatchCore-style nearest-neighbor approach with a pretrained Wide ResNet-50-2 backbone and category-specific normal memory banks."
+    },
+    {
+      "title": "realiad-patchcore-anomaly-detection/real-iad-anomaly-detection.ipynb at ...",
+      "url": "https://github.com/Jayed08/realiad-patchcore-anomaly-detection/blob/main/real-iad-anomaly-detection.ipynb",
+      "snippet": "Unsupervised industrial anomaly detection and defect localization on Real-IAD using PatchCore-style nearest-neighbor detection and Wide ResNet-50-2. - Jayed08/realiad-patchcore-anomaly-detection"
+    },
+    {
+      "title": "Real-IAD: A Real-World Multi-View Dataset for Benchmarking Versatile ...",
+      "url": "https://realiad4ad.github.io/Real-IAD/",
+      "snippet": "Real-IAD dataset provide three main files, each serving a different purpose to cater to your needs. realiad_1024: This is a version with a resolution of 1024 × 1024 (downsampled from realiad_raw), with a manageable size of around 53GB. It is tailored to meet the needs of most researchers. realiad_raw: This is the raw, high-resolution data, with a size of approximately 507GB. realiad_jsons.zip ..."
+    }
+  ]
+}

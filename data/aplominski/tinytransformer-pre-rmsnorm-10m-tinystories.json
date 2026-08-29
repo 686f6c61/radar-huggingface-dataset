@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "aplominski/TinyTransformer-Pre-RMSNorm-10M-TinyStories",
+  "slug": "aplominski-tinytransformer-pre-rmsnorm-10m-tinystories",
+  "author": "aplominski",
+  "url": "https://huggingface.co/aplominski/TinyTransformer-Pre-RMSNorm-10M-TinyStories",
+  "created_at": "2026-08-29T16:57:49.000Z",
+  "updated_at": "2026-08-29T16:58:22.000Z",
+  "license": "openmdw-1.1",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "safetensors",
+    "en",
+    "dataset:roneneldan/TinyStories",
+    "arxiv:1706.03762",
+    "arxiv:1607.06450",
+    "arxiv:1910.07467",
+    "license:openmdw-1.1",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 9623552,
+  "parameters_human": "9.6M",
+  "storage_bytes": 38503824,
+  "storage_human": "39 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "README.md · ThomasBao/cs336-A1-tiny-stories-transformer at main",
+      "url": "https://huggingface.co/ThomasBao/cs336-A1-tiny-stories-transformer/blob/main/README.md",
+      "snippet": "ThomasBao / cs336-A1-tiny-stories-transformer like 0 Model card FilesFiles and versions xet Community Copy to bucket new main cs336-A1-tiny-stories-transformer /README.md ThomasBao Create README.md 03b5bc0 verified11 days ago preview code | Raw Download with hf CLI Copy download link History Blame Contribute Delete Safe 313 Bytes"
+    },
+    {
+      "title": "TinyStories Pretrained Models - a YuvrajSingh9886 Collection",
+      "url": "https://huggingface.co/collections/YuvrajSingh9886/tinystories-pretrained-models",
+      "snippet": "Unlock the magic of AI with handpicked models, awesome datasets, papers, and mind-blowing Spaces from YuvrajSingh9886"
+    },
+    {
+      "title": "GitHub - Abhijxxt14/tiny-transformers",
+      "url": "https://github.com/Abhijxxt14/tiny-transformers",
+      "snippet": "The model predicts the probability distribution of the next character for every single position in the input. During training, we feed the input to the model, compare its predictions to the ground-truth target using Cross Entropy Loss, and update the model weights using backpropagation to make the predictions more accurate."
+    },
+    {
+      "title": "[R] Tiny Language Models (below 10m parameters or only one ... - Reddit",
+      "url": "https://www.reddit.com/r/MachineLearning/comments/13j0spj/r_tiny_language_models_below_10m_parameters_or/",
+      "snippet": "[R] Tiny Language Models (below 10m parameters or only one transformer block) can generate paragraphs of coherent text and reason...provided training is limited to stories that only contain words that a typical 3 to 4-year-olds usually understand."
+    },
+    {
+      "title": "LeoBergmiller/Tiny-Transformer-from-Scratch - GitHub",
+      "url": "https://github.com/LeoBergmiller/Tiny-Transformer-from-Scratch",
+      "snippet": "Tiny Transformer from Scratch (PyTorch) A minimal Transformer language model trained on the Tiny Shakespeare corpus for next-token prediction."
+    }
+  ]
+}

@@ -1,0 +1,78 @@
+{
+  "schema": 1,
+  "id": "mradermacher/gemma-4-31B-it-Claude-Opus-Distill-v2-i1-GGUF",
+  "slug": "mradermacher-gemma-4-31b-it-claude-opus-distill-v2-i1-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/gemma-4-31B-it-Claude-Opus-Distill-v2-i1-GGUF",
+  "created_at": "2026-08-29T15:47:39.000Z",
+  "updated_at": "2026-08-29T17:16:32.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "text-generation-inference",
+    "unsloth",
+    "gemma4",
+    "reasoning",
+    "en",
+    "dataset:TeichAI/Claude-Opus-4.6-Reasoning-887x",
+    "dataset:TeichAI/claude-4.5-opus-high-reasoning-250x",
+    "dataset:Crownelius/Opus-4.6-Reasoning-2100x-formatted",
+    "base_model:TeichAI/gemma-4-31B-it-Claude-Opus-Distill-v2",
+    "base_model:quantized:TeichAI/gemma-4-31B-it-Claude-Opus-Distill-v2",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "imatrix",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 30697345596,
+  "parameters_human": "30.70B",
+  "storage_bytes": 288494430944,
+  "storage_human": "288.5 GB",
+  "base_model": "TeichAI/gemma-4-31B-it-Claude-Opus-Distill-v2",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "mradermacher/gemma-4-31B-it-Claude-Opus-Distill-v2-heretic-i1-GGUF ...",
+      "url": "https://huggingface.co/mradermacher/gemma-4-31B-it-Claude-Opus-Distill-v2-heretic-i1-GGUF",
+      "snippet": "mradermacher / gemma-4-31B-it-Claude-Opus-Distill-v2-heretic-i1-GGUF like 4 Transformers GGUF TeichAI/Claude-Opus-4.6-Reasoning-887x TeichAI/claude-4.5-opus-high-reasoning-250x Crownelius/Opus-4.6-Reasoning-2100x-formatted English text-generation-inference unsloth gemma4 reasoning heretic uncensored decensored abliterated reproducible imatrix conversational License:apache-2.0 Model card ..."
+    },
+    {
+      "title": "gemma-4-31B-it-Claude-Opus-Distill-v2-heretic-GGUF",
+      "url": "https://huggingface.co/mradermacher/gemma-4-31B-it-Claude-Opus-Distill-v2-heretic-GGUF",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Gemma 4 31B It Claude Opus Distill v2 Heretic GGUF",
+      "url": "https://sweettea.co/resources/mradermacher-gemma-4-31b-it-claude-opus-distill-v2-heretic-gguf-huggingface-model-mradermacher-gemma-4-31b-it-claude-opu",
+      "snippet": "Explore Gemma 4 31B It Claude Opus Distill v2 Heretic GGUF in the Sweet Tea Resources directory, including trust, readiness, and companion requirements."
+    },
+    {
+      "title": "gemma-4-31B-it-Claude-Opus-Distill-GGUF · Models",
+      "url": "https://www.modelscope.cn/models/TeichAI/gemma-4-31B-it-Claude-Opus-Distill-GGUF",
+      "snippet": "Gemma 4 - 31B x Claude Opus 4.6 is a highly capable model fine-tuned on top of the powerful unsloth/gemma-4-31B-it architecture. The model&#x27;s core directive is to absorb state-of-the-art reasoning distillation, primarily sourced from Claude-4.6 Opus interactions."
+    },
+    {
+      "title": "gemma-4-31B-it-Claude-Opus-Distill-v2-GGUF: Text-to-Text model ...",
+      "url": "https://www.aimodels.fyi/models/huggingFace/gemma-4-31b-it-claude-opus-distill-v2-gguf-teichai",
+      "snippet": "Overview gemma-4-31B-it-Claude-Opus-Distill-v2-GGUF is a 31-billion parameter instruction-tuned language model developed by TeichAI that combines Google&#x27;s Gemma 4 architecture with reasoning distillation from Claude Opus 4.6. The model uses Unsloth as its fine-tuning framework and was trained with high-effort reasoning datasets to excel at complex problem-solving. Built on top of unsloth/gemma ..."
+    }
+  ]
+}

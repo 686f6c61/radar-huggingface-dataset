@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "ArthT/qwen35-27b-bcont-mixedmed-seed0",
+  "slug": "artht-qwen35-27b-bcont-mixedmed-seed0",
+  "author": "ArthT",
+  "url": "https://huggingface.co/ArthT/qwen35-27b-bcont-mixedmed-seed0",
+  "created_at": "2026-08-29T11:03:18.000Z",
+  "updated_at": "2026-08-29T11:57:57.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "generated_from_trainer",
+    "trl",
+    "sft",
+    "unsloth",
+    "base_model:Qwen/Qwen3.5-27B",
+    "base_model:finetune:Qwen/Qwen3.5-27B",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 79560277198,
+  "storage_human": "79.6 GB",
+  "base_model": "Qwen/Qwen3.5-27B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Qwen3.5 & Qwen3.6 Usage Guide - vLLM Recipes - docs.vllm.ai",
+      "url": "https://docs.vllm.ai/projects/recipes/en/stable/Qwen/Qwen3.5.html",
+      "snippet": "Qwen3.5 & Qwen3.6 Usage Guide Qwen3.5 and Qwen3.6 are multimodal mixture-of-experts models featuring a gated delta networks architecture. This guide covers how to efficiently deploy and serve both models using vLLM."
+    },
+    {
+      "title": "Qwen3.5 - a unsloth Collection - Hugging Face",
+      "url": "https://huggingface.co/collections/unsloth/qwen35",
+      "snippet": "Qwen3.5 is Qwen&#x27;s new model family including Qwen3.5 Small: 0.8B, 2B, 4B, 9B and Qwen3.5 Medium: 35B-A3B, 27B, 122B-A10B and 397B-A17B."
+    },
+    {
+      "title": "Qwen3.5-27B: Specifications and GPU VRAM Requirements",
+      "url": "https://apxml.com/models/qwen35-27b",
+      "snippet": "Qwen3.5-27B is Alibaba Cloud&#x27;s dense multimodal foundation model with 27B parameters, released February 2026. Unlike the MoE variants, it uses a dense architecture combining Gated Delta Networks and Feed Forward Networks."
+    },
+    {
+      "title": "Qwen3.5 27B - AI Model Library | Build on Vast.ai",
+      "url": "https://vast.ai/model/qwen35-27b",
+      "snippet": "Qwen3.5 27B: Dense Vision-Language Reasoning Model Qwen3.5 27B is a dense multimodal foundation model from Alibaba&#x27;s Qwen team, built on a hybrid Gated DeltaNet and Gated Attention architecture."
+    },
+    {
+      "title": "Qwen/Qwen3.5-27B | vLLM Recipes - recipes.vllm.ai",
+      "url": "https://recipes.vllm.ai/Qwen/Qwen3.5-27B",
+      "snippet": "Qwen3.5 dense multimodal model (27B) with gated delta networks hybrid attention, MTP, and 262K context"
+    }
+  ]
+}

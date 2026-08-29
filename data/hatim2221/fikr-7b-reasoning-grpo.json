@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "Hatim2221/Fikr-7B-Reasoning-GRPO",
+  "slug": "hatim2221-fikr-7b-reasoning-grpo",
+  "author": "Hatim2221",
+  "url": "https://huggingface.co/Hatim2221/Fikr-7B-Reasoning-GRPO",
+  "created_at": "2026-08-29T13:28:08.000Z",
+  "updated_at": "2026-08-29T13:32:18.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen2",
+    "text-generation",
+    "conversational",
+    "arxiv:1910.09700",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 7615616512,
+  "parameters_human": "7.62B",
+  "storage_bytes": 15242694318,
+  "storage_human": "15.2 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Hatim2221/Fikr-7B-Reasoning-LoRA · Hugging Face",
+      "url": "https://huggingface.co/Hatim2221/Fikr-7B-Reasoning-LoRA",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GitHub - deepseek-ai/DeepSeek-R1",
+      "url": "https://github.com/deepseek-ai/DeepSeek-R1",
+      "snippet": "1. Introduction We introduce our first-generation reasoning models, DeepSeek-R1-Zero and DeepSeek-R1. DeepSeek-R1-Zero, a model trained via large-scale reinforcement learning (RL) without supervised fine-tuning (SFT) as a preliminary step, demonstrated remarkable performance on reasoning."
+    },
+    {
+      "title": "Models - Hugging Face",
+      "url": "https://huggingface.co/models?sort=created",
+      "snippet": "Explore machine learning models."
+    },
+    {
+      "title": "DeepSeek R1 | Advanced Reasoning AI for Complex Problems",
+      "url": "https://deepseeksr1.com/r1/",
+      "snippet": "The Model That Changed Everything. DeepSeek R1 - the open-source reasoning model that matched OpenAI o1, crushed NVIDIA&#x27;s stock price, and proved that frontier-level chain-of-thought AI didn&#x27;t require proprietary infrastructure. Free. MIT licensed. Available to run on your laptop."
+    },
+    {
+      "title": "DeepSeek R1 Reasoning Model Deep Dive: How 671B MoE Architecture ...",
+      "url": "https://freedeepseekapi.com/blog/deepseek-r1-reasoning-model-analysis",
+      "snippet": "A comprehensive analysis of the DeepSeek R1 reasoning model&#x27;s technical architecture and core capabilities. From 671B MoE parameters to Chain-of-Thought reasoning, from 79.8% on AIME 2024 to Codeforces rating 2029, explore how R1 pushes reasoning boundaries through reinforcement learning, including R1-Zero and distilled variants."
+    }
+  ]
+}

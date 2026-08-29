@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "gaurav-dey/tinyllama-1.1b-qg",
+  "slug": "gaurav-dey-tinyllama-1-1b-qg",
+  "author": "gaurav-dey",
+  "url": "https://huggingface.co/gaurav-dey/tinyllama-1.1b-qg",
+  "created_at": "2026-08-29T18:48:26.000Z",
+  "updated_at": "2026-08-29T18:48:55.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "llama",
+    "text-generation",
+    "conversational",
+    "arxiv:1910.09700",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "4-bit",
+    "bitsandbytes",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1100048384,
+  "parameters_human": "1.10B",
+  "storage_bytes": 1024784735,
+  "storage_human": "1.0 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "TinyLlama-1.1B - GitHub",
+      "url": "https://github.com/jzhang38/TinyLlama",
+      "snippet": "The TinyLlama project aims to pretrain a 1.1B Llama model on 3 trillion tokens. With some proper optimization, we can achieve this within a span of \"just\" 90 days using 16 A100-40G GPUs 🚀🚀. The training has started on 2023-09-01."
+    },
+    {
+      "title": "TinyLlama LLM: A Step-by-Step Guide to Implementing the 1.1B Model on ...",
+      "url": "https://dev.to/_ken0x/tinyllama-llm-a-step-by-step-guide-to-implementing-the-11b-model-on-google-colab-1pjh",
+      "snippet": "TinyLlama LLM: A Step-by-Step Guide to Implementing the 1.1B Model on Google Colab LLM, or Large Language Model, is an advanced artificial intelligence program designed for understanding, generating, and working with human language."
+    },
+    {
+      "title": "TinyLlama (TinyLlama) - Hugging Face",
+      "url": "https://huggingface.co/TinyLlama/models",
+      "snippet": "Org profile for TinyLlama on Hugging Face, the AI community building the future."
+    },
+    {
+      "title": "TheBloke/TinyLlama-1.1B-Chat-v1.0-GGUF · Hugging Face",
+      "url": "https://huggingface.co/TheBloke/TinyLlama-1.1B-Chat-v1.0-GGUF",
+      "snippet": "The TinyLlama project aims to pretrain a 1.1B Llama model on 3 trillion tokens. With some proper optimization, we can achieve this within a span of \"just\" 90 days using 16 A100-40G GPUs 🚀🚀."
+    },
+    {
+      "title": "TinyLlama: An Open-Source Small Language Model - arXiv.org",
+      "url": "https://arxiv.org/html/2401.02385",
+      "snippet": "Abstract We present TinyLlama, a compact 1.1B language model pretrained on around 1 trillion tokens for up to 3 epochs 1. Building on the architecture and tokenizer of Llama 2 (Touvron et al., 2023b), TinyLlama leverages various advances contributed by the open-source community, e.g., FlashAttention (Dao, 2023) and Lit-GPT (Lightning-AI, 2023), achieving better computational efficiency ..."
+    }
+  ]
+}

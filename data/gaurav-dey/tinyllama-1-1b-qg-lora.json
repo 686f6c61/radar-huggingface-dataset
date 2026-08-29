@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "gaurav-dey/tinyllama-1.1b-qg-lora",
+  "slug": "gaurav-dey-tinyllama-1-1b-qg-lora",
+  "author": "gaurav-dey",
+  "url": "https://huggingface.co/gaurav-dey/tinyllama-1.1b-qg-lora",
+  "created_at": "2026-08-29T18:48:17.000Z",
+  "updated_at": "2026-08-29T18:48:22.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 50503544,
+  "storage_human": "51 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "TinyLlama-1.1B - GitHub",
+      "url": "https://github.com/jzhang38/TinyLlama",
+      "snippet": "The TinyLlama project is an open endeavor to pretrain a 1.1B Llama model on 3 trillion tokens. - jzhang38/TinyLlama"
+    },
+    {
+      "title": "TinyLlama: An Open-Source Small Language Model - arXiv.org",
+      "url": "https://arxiv.org/html/2401.02385",
+      "snippet": "Abstract We present TinyLlama, a compact 1.1B language model pretrained on around 1 trillion tokens for up to 3 epochs 1. Building on the architecture and tokenizer of Llama 2 (Touvron et al., 2023b), TinyLlama leverages various advances contributed by the open-source community, e.g., FlashAttention (Dao, 2023) and Lit-GPT (Lightning-AI, 2023), achieving better computational efficiency ..."
+    },
+    {
+      "title": "[2401.02385] TinyLlama: An Open-Source Small Language Model",
+      "url": "https://arxiv.org/abs/2401.02385",
+      "snippet": "We present TinyLlama, a compact 1.1B language model pretrained on around 1 trillion tokens for approximately 3 epochs. Building on the architecture and tokenizer of Llama 2, TinyLlama leverages various advances contributed by the open-source community (e.g., FlashAttention and Lit-GPT), achieving better computational efficiency. Despite its relatively small size, TinyLlama demonstrates ..."
+    },
+    {
+      "title": "TinyLlama-1.1B-Chat-v1.0 - Hugging Face",
+      "url": "https://huggingface.co/TinyLlama/TinyLlama-1.1B-Chat-v1.0",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "TinyLlama LLM: A Step-by-Step Guide to Implementing the 1.1B Model on ...",
+      "url": "https://dev.to/_ken0x/tinyllama-llm-a-step-by-step-guide-to-implementing-the-11b-model-on-google-colab-1pjh",
+      "snippet": "TinyLlama LLM: A Step-by-Step Guide to Implementing the 1.1B Model on Google Colab LLM, or Large Language Model, is an advanced artificial intelligence program designed for understanding, generating, and working with human language."
+    }
+  ]
+}

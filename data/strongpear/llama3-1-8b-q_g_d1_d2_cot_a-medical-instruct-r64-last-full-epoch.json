@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "strongpear/Llama3.1-8B-Q_G_D1_D2_CoT_A-MEDICAL-Instruct-r64-last-full-epoch",
+  "slug": "strongpear-llama3-1-8b-q_g_d1_d2_cot_a-medical-instruct-r64-last-full-epoch",
+  "author": "strongpear",
+  "url": "https://huggingface.co/strongpear/Llama3.1-8B-Q_G_D1_D2_CoT_A-MEDICAL-Instruct-r64-last-full-epoch",
+  "created_at": "2026-08-29T14:59:00.000Z",
+  "updated_at": "2026-08-29T14:59:04.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "base_model:adapter:meta-llama/Llama-3.1-8B",
+    "lora",
+    "transformers",
+    "text-generation",
+    "arxiv:1910.09700",
+    "base_model:meta-llama/Llama-3.1-8B",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 688364093,
+  "storage_human": "688 MB",
+  "base_model": "meta-llama/Llama-3.1-8B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Llama3.1-8B-Q_G_D1_D2_CoT_A-LAW-Instruct-r64 - Hugging Face",
+      "url": "https://huggingface.co/strongpear/Llama3.1-8B-Q_G_D1_D2_CoT_A-LAW-Instruct-r64",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "strongpear/Llama3.1-8B-Q_G_D1_D2_CoT_A-LAW-Instruct-r64_baseline ...",
+      "url": "https://huggingface.co/strongpear/Llama3.1-8B-Q_G_D1_D2_CoT_A-LAW-Instruct-r64_baseline",
+      "snippet": "Instructions to use strongpear/Llama3.1-8B-Q_G_D1_D2_CoT_A-LAW-Instruct-r64_baseline with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Libraries PEFT How to use strongpear/Llama3.1-8B-Q_G_D1_D2_CoT_A-LAW-Instruct-r64_baseline with PEFT:"
+    },
+    {
+      "title": "ai/llama3.1 - Docker Image",
+      "url": "https://hub.docker.com/r/ai/llama3.1",
+      "snippet": "Model distillation: Leverage Llama 3.1 to enhance smaller models by transferring knowledge, resulting in more efficient and specialized AI systems, or by using it as a base model to fine-tune based on the knowledge of other bigger models (see deepseek-r1-distill-llama as an example)"
+    },
+    {
+      "title": "Llama-3.1-FoundationAI-SecurityLLM-8B-Instruct Technical Report",
+      "url": "https://www.researchgate.net/publication/394293518_Llama-31-FoundationAI-SecurityLLM-8B-Instruct_Technical_Report",
+      "snippet": "That model, however, was not designed for chat-style interactions or instruction-following. In this report, we release Foundation-Sec-8B-Instruct: a model specifically trained for general-purpose ..."
+    },
+    {
+      "title": "llama-models/README.md at main · meta-llama/llama-models",
+      "url": "https://github.com/meta-llama/llama-models/blob/main/README.md",
+      "snippet": "Llama is an accessible, open large language model (LLM) designed for developers, researchers, and businesses to build, experiment, and responsibly scale their generative AI ideas. Part of a foundational system, it serves as a bedrock for innovation in the global community. A few key aspects: Open access: Easy accessibility to cutting-edge large language models, fostering collaboration and ..."
+    }
+  ]
+}

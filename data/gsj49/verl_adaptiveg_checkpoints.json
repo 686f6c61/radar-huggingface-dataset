@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "Gsj49/verl_adaptiveg_checkpoints",
+  "slug": "gsj49-verl_adaptiveg_checkpoints",
+  "author": "Gsj49",
+  "url": "https://huggingface.co/Gsj49/verl_adaptiveg_checkpoints",
+  "created_at": "2026-08-29T18:09:55.000Z",
+  "updated_at": "2026-08-29T18:35:36.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 40458527758,
+  "storage_human": "40.5 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Gsj49/verl_reasoning_checkpoints · Hugging Face",
+      "url": "https://huggingface.co/Gsj49/verl_reasoning_checkpoints",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Gsj49/verl_reasoning_checkpoints at main - Hugging Face",
+      "url": "https://huggingface.co/Gsj49/verl_reasoning_checkpoints/tree/main",
+      "snippet": "Instructions to use Gsj49/verl_reasoning_checkpoints with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Libraries Transformers How to use Gsj49/verl_reasoning_checkpoints with Transformers:"
+    },
+    {
+      "title": "Gsj49 · GitHub",
+      "url": "https://github.com/Gsj49",
+      "snippet": "Gsj49 has 2 repositories available. Follow their code on GitHub."
+    },
+    {
+      "title": "Gsj49 - Repositories - GitHub",
+      "url": "https://github.com/Gsj49?tab=repositories",
+      "snippet": "Prevent this user from interacting with your repositories and sending you notifications. Learn more about blocking users."
+    },
+    {
+      "title": "checkpoint AI Models | Civitai",
+      "url": "https://civitai.com/tag/checkpoint",
+      "snippet": "Browse 200 Stable Diffusion & Flux models, LoRAs, checkpoints, and embeddings tagged with checkpoint."
+    }
+  ]
+}

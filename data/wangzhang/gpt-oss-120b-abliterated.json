@@ -1,0 +1,84 @@
+{
+  "schema": 1,
+  "id": "wangzhang/gpt-oss-120b-abliterated",
+  "slug": "wangzhang-gpt-oss-120b-abliterated",
+  "author": "wangzhang",
+  "url": "https://huggingface.co/wangzhang/gpt-oss-120b-abliterated",
+  "created_at": "2026-04-21T01:20:58.000Z",
+  "updated_at": "2026-08-29T17:05:29.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gpt_oss",
+    "text-generation",
+    "abliterated",
+    "uncensored",
+    "moe",
+    "gpt-oss",
+    "mxfp4",
+    "direct-steering",
+    "ega",
+    "moe-router-suppression",
+    "vllm-in-place-editing",
+    "abliterix",
+    "conversational",
+    "en",
+    "zh",
+    "base_model:openai/gpt-oss-120b",
+    "base_model:finetune:openai/gpt-oss-120b",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 6,
+  "downloads_30d": 140,
+  "trending_score": 0,
+  "parameters": 116829156672,
+  "parameters_human": "116.83B",
+  "storage_bytes": 233686254093,
+  "storage_human": "233.7 GB",
+  "base_model": "openai/gpt-oss-120b",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "wangzhang/gpt-oss-120b-abliterated · Hugging Face",
+      "url": "https://huggingface.co/wangzhang/gpt-oss-120b-abliterated",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "wangzhang/gpt-oss-120b-abliterated at main - Hugging Face",
+      "url": "https://huggingface.co/wangzhang/gpt-oss-120b-abliterated/tree/main",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "wangzhang-gpt-oss-120b-abliterated/README.md at main - GitHub",
+      "url": "https://github.com/Damacol/wangzhang-gpt-oss-120b-abliterated/blob/main/README.md",
+      "snippet": "wangzhang/gpt-oss-120b-abliterated - Private, Uncensored AI for Real Creators and Devs Experience {MODEL} with total data sovereignty. Local execution ready, uncensored generation, and Venice fallback."
+    },
+    {
+      "title": "Damacol/wangzhang-gpt-oss-120b-abliterated - GitHub",
+      "url": "https://github.com/Damacol/wangzhang-gpt-oss-120b-abliterated/tree/main",
+      "snippet": "wangzhang/gpt-oss-120b-abliterated - Private, Uncensored AI for Real Creators and Devs Experience {MODEL} with total data sovereignty. Local execution ready, uncensored generation, and Venice fallback."
+    },
+    {
+      "title": "gpt-oss-120b Model | OpenAI API",
+      "url": "https://developers.openai.com/api/docs/models/gpt-oss-120b",
+      "snippet": "Most powerful open-weight model, fits into an H100 GPU"
+    }
+  ]
+}

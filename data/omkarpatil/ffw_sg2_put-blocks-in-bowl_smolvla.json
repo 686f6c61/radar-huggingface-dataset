@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "omkarpatil/ffw_sg2_put-blocks-in-bowl_smolvla",
+  "slug": "omkarpatil-ffw_sg2_put-blocks-in-bowl_smolvla",
+  "author": "omkarpatil",
+  "url": "https://huggingface.co/omkarpatil/ffw_sg2_put-blocks-in-bowl_smolvla",
+  "created_at": "2026-08-29T18:02:43.000Z",
+  "updated_at": "2026-08-29T18:02:53.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "robotics",
+    "smolvla",
+    "vla",
+    "robotis",
+    "ffw_sg2",
+    "cyclo_intelligence",
+    "dataset:omkarpatil/put-blocks-in-bowl",
+    "base_model:lerobot/smolvla_base",
+    "base_model:finetune:lerobot/smolvla_base",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 450046176,
+  "parameters_human": "450.0M",
+  "storage_bytes": 906717008,
+  "storage_human": "907 MB",
+  "base_model": "lerobot/smolvla_base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "omkarpatil/put-blocks-in-bowl · Datasets at Hugging Face",
+      "url": "https://huggingface.co/datasets/omkarpatil/put-blocks-in-bowl",
+      "snippet": "Datasets: omkarpatil / put-blocks-in-bowl like 0 Tags: robotis cyclo_intelligence robotics Dataset card FilesFiles and versions xet Community Dataset Viewer API Embed Duplicate Data Studio Subset (1) default default Split (1) train train"
+    },
+    {
+      "title": "deepseek-v4-pro-0813 Model by Deepseek-ai | NVIDIA NIM",
+      "url": "https://build.nvidia.com/deepseek-ai/deepseek-v4-pro-0813",
+      "snippet": "DeepSeek V4 scales to 1M-token context windows with efficient MoE architecture for coding tasks."
+    },
+    {
+      "title": "OpenAI · GitHub",
+      "url": "https://github.com/openai/",
+      "snippet": "OpenAI has 268 repositories available. Follow their code on GitHub."
+    },
+    {
+      "title": "ROBOTIS (ROBOTIS) - Hugging Face",
+      "url": "https://huggingface.co/ROBOTIS/models",
+      "snippet": "AI Worker, Physical AI for ROBOT"
+    },
+    {
+      "title": "OmkarPatilML (Omkar Patil) · GitHub",
+      "url": "https://github.com/OmkarPatilML",
+      "snippet": "OmkarPatilML has 3 repositories available. Follow their code on GitHub."
+    }
+  ]
+}

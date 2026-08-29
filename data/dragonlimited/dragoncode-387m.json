@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "dragonlimited/DragonCode-387M",
+  "slug": "dragonlimited-dragoncode-387m",
+  "author": "dragonlimited",
+  "url": "https://huggingface.co/dragonlimited/DragonCode-387M",
+  "created_at": "2026-08-23T17:36:06.000Z",
+  "updated_at": "2026-08-29T17:55:43.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 293187763960,
+  "storage_human": "293.2 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "dragonlimited/DragonCode-387M-Tokens · Datasets at Hugging Face",
+      "url": "https://huggingface.co/datasets/dragonlimited/DragonCode-387M-Tokens",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "dragonlimited/DragonCode-387M-Tokens · Discussions",
+      "url": "https://huggingface.co/datasets/dragonlimited/DragonCode-387M-Tokens/discussions",
+      "snippet": "Datasets: dragonlimited / DragonCode-387M-Tokens like 0 Dataset card FilesFiles and versions xet Community New discussion New pull request All Discussions Pull requests View closed (0) Sort: Recently created"
+    },
+    {
+      "title": "Dragon Code: a frontier terminal coding agent with 1B tokens addressable",
+      "url": "https://mws.run/",
+      "snippet": "Dragon Code is a terminal-native AI coding agent (the `dragon` command) wired to Dragon inference at api.mws.run. It runs trillion-parameter models with a 1B-token addressable context and indexes your whole repo, pulling the most relevant code in on every turn."
+    },
+    {
+      "title": "GitHub - pinkelephantlimited/dragoncode-family-notebook: DragonCode LLM ...",
+      "url": "https://github.com/pinkelephantlimited/dragoncode-family-notebook",
+      "snippet": "Single self-contained marimo notebook for the DragonCode LLM Family pretraining pipeline (Molab-ready)."
+    },
+    {
+      "title": "Dragon - 企业级中转 - Dragon Code",
+      "url": "https://dragoncode.codes/",
+      "snippet": "用户充值后获得 DragonCode 账户余额， 余额用于调用 Claude Code、Codex、Gemini CLI 等 AI 编码模型能力。 点击「立即体验」创建账号，登录后进入控制台管理 API Key、余额和用量。 最低充值 ¥20。 充值 ¥1 可获得 $1 DragonCode 余额，余额仅用于本服务。"
+    }
+  ]
+}

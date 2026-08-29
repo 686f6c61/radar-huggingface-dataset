@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "marcsun13/topk",
+  "slug": "marcsun13-topk",
+  "author": "marcsun13",
+  "url": "https://huggingface.co/marcsun13/topk",
+  "created_at": "2026-08-29T11:00:01.000Z",
+  "updated_at": "2026-08-29T10:57:24.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "kernels",
+  "languages": [],
+  "tags": [
+    "kernels",
+    "kernel",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "marcsun13/topk-metal · Discussions - Hugging Face",
+      "url": "https://huggingface.co/marcsun13/topk-metal/discussions",
+      "snippet": "Instructions to use marcsun13/topk-metal with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Libraries Kernels How to use marcsun13/topk-metal with Kernels:"
+    },
+    {
+      "title": "marcsun13 (Marc Sun) - Hugging Face",
+      "url": "https://huggingface.co/marcsun13/models",
+      "snippet": "marcsun13/sft_openassistant-guanaco Text Generation • 7B • Updated Jul 5, 2024 • 2"
+    },
+    {
+      "title": "marcsun13 — AI Models & Datasets | Model Database",
+      "url": "https://modeldatabase.com/marcsun13.html",
+      "snippet": "Browse the open source AI models and datasets published by marcsun13. Compare and deploy AI models on Model Database."
+    },
+    {
+      "title": "LLM Leaderboard & AI Model Benchmarks — August 2026",
+      "url": "https://benchlm.ai/",
+      "snippet": "LLM Leaderboard & AI Model Benchmarks — August 2026 Compare frontier AI models by quality, cost, and context. 105 Supported and 123 Estimated models among 406 tracked LLMs — 406 benchmarks, real pricing, and runtime data in one place."
+    },
+    {
+      "title": "Temperature, Top-K and Top-P Sampling in LLMs - GeeksforGeeks",
+      "url": "https://www.geeksforgeeks.org/artificial-intelligence/graph-based-semi-supervised-learning/",
+      "snippet": "Sampling techniques control how language models choose the next word during text generation. The model assigns probabilities to possible words and sampling determines which one is picked. By adjusting these methods, you can balance creativity and accuracy in generated responses. Temperature controls randomness in predictions Top-K limits choices to the most probable tokens Top-P selects tokens ..."
+    }
+  ]
+}

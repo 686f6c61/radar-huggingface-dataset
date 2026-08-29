@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "dvicent1979/Porsche",
+  "slug": "dvicent1979-porsche",
+  "author": "dvicent1979",
+  "url": "https://huggingface.co/dvicent1979/Porsche",
+  "created_at": "2026-08-29T11:16:03.000Z",
+  "updated_at": "2026-08-29T11:16:03.000Z",
+  "license": "artistic-2.0",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:artistic-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Free AI Image Detector & Checker: Is a Photo AI? | Is It AI?",
+      "url": "https://isitai.com/ai-image-detector",
+      "snippet": "Free AI image detector and checker. Find out if a photo, picture, or artwork is AI-generated: Midjourney, DALL-E, Stable Diffusion and 20+ models. No signup."
+    },
+    {
+      "title": "Porsche AI Concept Debacle: Unraveling the Fortnite Gaming Lore",
+      "url": "https://www.dailymotion.com/video/xabbcq8",
+      "snippet": "{&#x27;title&#x27;: &#x27;Porsche AI Concept Debacle: A Gaming Lore Twist&#x27;, &#x27;lead&#x27;: &#x27;Epic Games recently deleted a mysterious poster from Fortnite, leaving players to wonder: what was it?&#x27;, &#x27;lore&#x27;: &#x27;Sources close to the FortNite Insider reveal that the removed poster depicted a futuristic, AI-controlled Porsche driving off a cliff. This image bore an uncanny resemblance to real-life AI-generated concept ..."
+    },
+    {
+      "title": "Unreal Engine&#x27;s Fortnite x Porsche Image Sparks AI Art Debate",
+      "url": "https://attractmo.de/ai/unreal-engine-fortnite-porsche-ai-art-controversy",
+      "snippet": "Unreal Engine Faces AI Art Allegations Over Fortnite Image Unreal Engine faced backlash after a promotional image for a Fortnite and Porsche collaboration showed signs of AI generation, prompting a response from Epic Games."
+    },
+    {
+      "title": "AI Detector - AI Checker for text, image, music & video",
+      "url": "https://www.aiornot.com/",
+      "snippet": "AI Detection API For All Content Types Is it AI? Detect AI-generated images, text, videos, and deepfakes via API with 98.9% accuracy."
+    },
+    {
+      "title": "Porsche 3D models - Sketchfab",
+      "url": "https://sketchfab.com/tags/porsche",
+      "snippet": "Porsche 3D models ready to view and download for free."
+    }
+  ]
+}

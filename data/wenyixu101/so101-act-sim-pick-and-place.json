@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "wenyixu101/so101-act-sim-pick-and-place",
+  "slug": "wenyixu101-so101-act-sim-pick-and-place",
+  "author": "wenyixu101",
+  "url": "https://huggingface.co/wenyixu101/so101-act-sim-pick-and-place",
+  "created_at": "2026-08-21T12:15:03.000Z",
+  "updated_at": "2026-08-29T11:31:19.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "robotics",
+    "act",
+    "imitation-learning",
+    "simulation",
+    "dataset:wenyixu101/so101-sim-pick-and-place",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 25,
+  "trending_score": 0,
+  "parameters": 51668614,
+  "parameters_human": "51.7M",
+  "storage_bytes": 413416048,
+  "storage_human": "413 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "wenyixu101/Farpoint-V0-ACT · Hugging Face",
+      "url": "https://huggingface.co/wenyixu101/Farpoint-V0-ACT",
+      "snippet": "Farpoint-V0-ACT is an ACT policy trained for a simulated SO-101 cube pick-and-place task using synchronized front and wrist camera observations. This first release is published as a reproducible project baseline, not as a production or real-robot model."
+    },
+    {
+      "title": "SO101 Arm ACT Training Guide Using SOLO CLI - GitHub",
+      "url": "https://github.com/omkarputti/SO101_ACT_Training",
+      "snippet": "This guide uses only the ACT policy because it is reliable and works well for SO101 robot arm imitation-learning tasks like pick-and-place and liquid pouring."
+    },
+    {
+      "title": "ViVi-AI/ACT_so101_pick_place · Hugging Face",
+      "url": "https://huggingface.co/ViVi-AI/ACT_so101_pick_place",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Train an SO-101 Robot From Sim-to-Real With NVIDIA Isaac",
+      "url": "https://docs.nvidia.com/learning/physical-ai/sim-to-real-so-101/latest/index.html",
+      "snippet": "Overview # You&#x27;ll train and deploy a vision-language-action (VLA) model to perform unstructured pick-and-place of centrifuge vials into a rack using an SO-101 robot arm - first in sim, where we can iterate quickly and validate behavior, then in reality."
+    },
+    {
+      "title": "Farpoint SO-101 Sim Oracle Pick-and-Place - claru.ai",
+      "url": "https://claru.ai/datasets/wenyixu101-so101-sim-oracle-pick-and-place",
+      "snippet": "SO-101 pick-and-place demonstrations generated entirely in Isaac Lab by a simulation-truth, contact-aware oracle controller. Dataset contains 300 successful episodes with front and wrist RGB cameras at 30 Hz."
+    }
+  ]
+}

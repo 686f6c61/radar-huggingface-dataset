@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "yueqy111222/visllm",
+  "slug": "yueqy111222-visllm",
+  "author": "yueqy111222",
+  "url": "https://huggingface.co/yueqy111222/visllm",
+  "created_at": "2026-07-28T03:23:28.000Z",
+  "updated_at": "2026-08-29T13:40:37.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 16854048331,
+  "storage_human": "16.9 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "yueqy111222/visllm · Hugging Face",
+      "url": "https://huggingface.co/yueqy111222/visllm",
+      "snippet": "yueqy111222 / visllm like 0 Safetensors Model card FilesFiles and versions xet Community Copy to bucket new No model card Downloads last month -"
+    },
+    {
+      "title": "README.md · yueqy111222/visllm at main - Hugging Face",
+      "url": "https://huggingface.co/yueqy111222/visllm/blob/main/README.md",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "AI Model Catalog | Microsoft Foundry Models",
+      "url": "https://ai.azure.com/catalog",
+      "snippet": "Explore the comprehensive catalog of AI models from Microsoft Foundry"
+    },
+    {
+      "title": "Adding a New Model - docs.vllm.ai",
+      "url": "https://docs.vllm.ai/en/v0.6.6/models/adding_model.html",
+      "snippet": "Note The complexity of adding a new model depends heavily on the model&#x27;s architecture. The process is considerably straightforward if the model shares a similar architecture with an existing model in vLLM. However, for models that include new operators (e.g., a new attention mechanism), the process can be a bit more complex."
+    },
+    {
+      "title": "PDF VisionLLM v2: An End-to-End Generalist Multimodal Large Language Model ...",
+      "url": "https://proceedings.neurips.cc/paper_files/paper/2024/file/81a60d18e010b27b36cd465c6604b915-Paper-Conference.pdf",
+      "snippet": "Abstract We present VisionLLM v2, an end-to-end generalist multimodal large model (MLLM) that unifies visual perception, understanding, and generation within a single framework. Unlike traditional MLLMs limited to text output, VisionLLM v2 significantly broadens its application scope. It excels not only in conventional visual question answering (VQA) but also in open-ended, cross-domain vision ..."
+    }
+  ]
+}

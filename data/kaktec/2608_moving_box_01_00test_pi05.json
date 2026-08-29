@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "kaKTEC/2608_moving_box_01_00test_pi05",
+  "slug": "kaktec-2608_moving_box_01_00test_pi05",
+  "author": "kaKTEC",
+  "url": "https://huggingface.co/kaKTEC/2608_moving_box_01_00test_pi05",
+  "created_at": "2026-08-29T11:17:29.000Z",
+  "updated_at": "2026-08-29T11:19:01.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "pi05",
+    "robotics",
+    "dataset:kaKTEC/2608_moving_box_01_00test_20260817_143324",
+    "base_model:lerobot/pi05_base",
+    "base_model:finetune:lerobot/pi05_base",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 4143404816,
+  "parameters_human": "4.14B",
+  "storage_bytes": 9354065832,
+  "storage_human": "9.4 GB",
+  "base_model": "lerobot/pi05_base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "kaKTEC (Kazu Haya) - Hugging Face",
+      "url": "https://huggingface.co/kaKTEC",
+      "snippet": "User profile of Kazu Haya on Hugging Face"
+    },
+    {
+      "title": "kaKTEC/2608_move_fast_01_01test_GR00T17 · Hugging Face",
+      "url": "https://huggingface.co/kaKTEC/2608_move_fast_01_01test_GR00T17",
+      "snippet": "Instructions to use kaKTEC/2608_move_fast_01_01test_GR00T17 with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Libraries LeRobot How to use kaKTEC/2608_move_fast_01_01test_GR00T17 with LeRobot: Notebooks Google Colab Kaggle Model Card for groot Model Details Inputs & Outputs Training Dataset Training Configuration How to Get Started with the ..."
+    },
+    {
+      "title": "Vision Kit - unauthorized.aiyprojects.withgoogle.com",
+      "url": "http://unauthorized.aiyprojects.withgoogle.com/vision/",
+      "snippet": "Do-it-yourself intelligent camera. Experiment with image recognition using neural networks."
+    },
+    {
+      "title": "Models - aiyprojects.withgoogle.com",
+      "url": "http://aiyprojects.withgoogle.com/models/",
+      "snippet": "Machine learning is a technique for building software models that can make predictions based on patterns and relationships that have been discovered in data. Experiment with these models to see machine learning in action."
+    },
+    {
+      "title": "CivArchive (CivitAI Archive) - AI Model Archive",
+      "url": "https://civitaiarchive.com/",
+      "snippet": "Browse and discover AI models from CivitAI, TensorArt, and SeaArt. Community-driven archive preserving access to AI resources."
+    }
+  ]
+}

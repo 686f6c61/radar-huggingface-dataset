@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "Slichi/luishumbertoced",
+  "slug": "slichi-luishumbertoced",
+  "author": "Slichi",
+  "url": "https://huggingface.co/Slichi/luishumbertoced",
+  "created_at": "2026-08-29T14:11:12.000Z",
+  "updated_at": "2026-08-29T14:12:37.000Z",
+  "license": "openrail",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:openrail",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 84399853,
+  "storage_human": "84 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Slichi (Spichy) - Hugging Face",
+      "url": "https://huggingface.co/Slichi",
+      "snippet": "User profile of Spichy on Hugging Face"
+    },
+    {
+      "title": "Illustrious AI Models & Generator | Civitai",
+      "url": "https://civitai.com/ecosystems/illustrious",
+      "snippet": "Generate with Illustrious on Civitai — the SDXL-based anime model built for booru-tag prompting, character consistency, and clean linework. Browse LoRAs & prompts."
+    },
+    {
+      "title": "Slichi (Slichi Cdn) - Hugging Face",
+      "url": "https://huggingface.co/Slichi/datasets",
+      "snippet": "User profile of Slichi Cdn on Hugging Face"
+    },
+    {
+      "title": "Best Slushi - 1 AI LORA - Free Download | TensorHub Art",
+      "url": "https://tensorhub.art/models/908866054921419354",
+      "snippet": "Download Slushi - free LORA Illustrious AI model on TENSORHUB ART. By ji"
+    },
+    {
+      "title": "CivArchive (CivitAI Archive) - AI Model Archive",
+      "url": "https://civitaiarchive.com/",
+      "snippet": "Browse and discover AI models from CivitAI, TensorArt, and SeaArt. Community-driven archive preserving access to AI resources."
+    }
+  ]
+}

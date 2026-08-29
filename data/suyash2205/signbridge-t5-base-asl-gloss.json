@@ -1,0 +1,78 @@
+{
+  "schema": 1,
+  "id": "Suyash2205/signbridge-t5-base-asl-gloss",
+  "slug": "suyash2205-signbridge-t5-base-asl-gloss",
+  "author": "Suyash2205",
+  "url": "https://huggingface.co/Suyash2205/signbridge-t5-base-asl-gloss",
+  "created_at": "2026-08-29T13:40:30.000Z",
+  "updated_at": "2026-08-29T13:48:02.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "translation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "t5",
+    "text2text-generation",
+    "sign-language",
+    "asl",
+    "gloss",
+    "accessibility",
+    "translation",
+    "en",
+    "dataset:achrafothman/aslg_pc12",
+    "base_model:google-t5/t5-base",
+    "base_model:finetune:google-t5/t5-base",
+    "license:apache-2.0",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 222903552,
+  "parameters_human": "222.9M",
+  "storage_bytes": 891649632,
+  "storage_human": "892 MB",
+  "base_model": "google-t5/t5-base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "SignBridge.ai — Sign Language Recognition API",
+      "url": "https://signbridge.ai/",
+      "snippet": "Real-time sign recognition for developers Bring real-time sign recognition to your product. A fast, developer-first API that turns hands into structured meaning—ASL today, extensible tomorrow."
+    },
+    {
+      "title": "GitHub - SuperiorHaxs/SignBridge: American Sign Language Continuous ...",
+      "url": "https://github.com/SuperiorHaxs/SignBridge",
+      "snippet": "This is because current automated systems struggle with dynamic, continuous signing, leading to grammatically incorrect and unusable translations. We present SignBridge, an American Sign Language (ASL) translation system that combines high-density pose estimation with an LLM for contextual selection from multiple sign candidates."
+    },
+    {
+      "title": "GitHub - GavaraNeha/SignBridge-AI: AI-powered real-time ASL sign ...",
+      "url": "https://github.com/GavaraNeha/SignBridge-AI",
+      "snippet": "AI-powered real-time ASL sign language interpreter — converts hand gestures to text and speech in the browser. - GavaraNeha/SignBridge-AI"
+    },
+    {
+      "title": "Suparnpreet/t5-base-asl-gloss-generation · Hugging Face",
+      "url": "https://huggingface.co/Suparnpreet/t5-base-asl-gloss-generation",
+      "snippet": "t5-base-asl-gloss-generation This model was trained from scratch on an unknown dataset. It achieves the following results on the evaluation set: Model description More information needed Intended uses & limitations More information needed Training and evaluation data More information needed Training procedure Training hyperparameters The following hyperparameters were used during training ..."
+    },
+    {
+      "title": "SignLLM: Sign Languages Production Large Language Models",
+      "url": "https://signllm.github.io/",
+      "snippet": "These RL components can accelerate the training by enhancing the model&#x27;s capability to sample high-quality data. For SignLLM&#x27;s training, we introduce Prompt2Sign, a comprehensive multilingual sign language dataset, which builds from public data, including American Sign Language (ASL) and seven others."
+    }
+  ]
+}

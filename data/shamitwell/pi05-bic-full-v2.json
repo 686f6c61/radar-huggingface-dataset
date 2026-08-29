@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "shamitwell/pi05-bic-full-v2",
+  "slug": "shamitwell-pi05-bic-full-v2",
+  "author": "shamitwell",
+  "url": "https://huggingface.co/shamitwell/pi05-bic-full-v2",
+  "created_at": "2026-08-29T12:36:39.000Z",
+  "updated_at": "2026-08-29T12:39:28.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "pi05",
+    "robotics",
+    "dataset:shamitwell/block-in-cup-combined",
+    "base_model:lerobot/pi05_base",
+    "base_model:finetune:lerobot/pi05_base",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 4143404816,
+  "parameters_human": "4.14B",
+  "storage_bytes": 9354058336,
+  "storage_human": "9.4 GB",
+  "base_model": "lerobot/pi05_base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - Integer003/openpi05: Provide fine-tuning and inference code ...",
+      "url": "https://github.com/Integer003/openpi05",
+      "snippet": "Provide fine-tuning and inference code for pi05, fully reproducing the methods described in the pi05 paper. - Integer003/openpi05"
+    },
+    {
+      "title": "ai-hub-models/src/qai_hub_models/models/pi05 at main - GitHub",
+      "url": "https://github.com/qualcomm/ai-hub-models/tree/main/src/qai_hub_models/models/pi05",
+      "snippet": "Qualcomm® AI Hub Models is our collection of state-of-the-art machine learning models optimized for performance (latency, memory etc.) and ready to deploy on Qualcomm® devices. - qualcomm/ai-hub-mo..."
+    },
+    {
+      "title": "π0.5 A Vision-Language-Action Model with Open-World Generalization",
+      "url": "https://zhze.dev/note-readpaper/notes/llm/pi05/",
+      "snippet": "The model is first pre-trained on the heterogeneous mixture of training tasks, and then finetuned on mobile manipulator with both low-level action examples and high-level semantic subtask annotations. At runtime, the model first predicts the semantic subtask, and then uses it to condition the action generation."
+    },
+    {
+      "title": "Complete Guide: Training and Inference with π₀.₅ (pi05) on Custom Datasets",
+      "url": "https://huggingface.co/blog/Tonic/training-and-inference-with-pi05",
+      "snippet": "A Blog post by Joseph [open/acc] Pollack on Hugging Face"
+    },
+    {
+      "title": "koki1231/pi05_lp_v2_low_lr_no_aug_s1000 · Hugging Face",
+      "url": "https://huggingface.co/koki1231/pi05_lp_v2_low_lr_no_aug_s1000",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    }
+  ]
+}

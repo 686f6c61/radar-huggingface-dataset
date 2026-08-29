@@ -1,0 +1,77 @@
+{
+  "schema": 1,
+  "id": "marafx2007/Gemma-4-E4B-Uncensored-HauhauCS-Aggressive",
+  "slug": "marafx2007-gemma-4-e4b-uncensored-hauhaucs-aggressive",
+  "author": "marafx2007",
+  "url": "https://huggingface.co/marafx2007/Gemma-4-E4B-Uncensored-HauhauCS-Aggressive",
+  "created_at": "2026-08-29T15:12:20.000Z",
+  "updated_at": "2026-08-29T15:12:20.000Z",
+  "license": "gemma",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": null,
+  "languages": [
+    "en",
+    "multilingual"
+  ],
+  "tags": [
+    "gguf",
+    "uncensored",
+    "gemma4",
+    "abliterated",
+    "vision",
+    "multimodal",
+    "audio",
+    "image-text-to-text",
+    "en",
+    "multilingual",
+    "license:gemma",
+    "endpoints_compatible",
+    "region:us",
+    "imatrix",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 7518069290,
+  "parameters_human": "7.52B",
+  "storage_bytes": 61606110816,
+  "storage_human": "61.6 GB",
+  "base_model": "google/gemma-4-e4b-it",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Gemma-4-E4B-Uncensored-HauhauCS-Aggressive - Hugging Face",
+      "url": "https://huggingface.co/michaelborg/Gemma-4-E4B-Uncensored-HauhauCS-Aggressive",
+      "snippet": "Gemma-4-E4B-Uncensored-HauhauCS-Aggressive ... Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "Gemma-4-E4B-Uncensored-HauhauCS-Aggressive-Q8_K_P.gguf",
+      "url": "https://huggingface.co/BrandonXG/Gemma-4-E4B-Uncensored-HauhauCS-Aggressive-Q8_K_P.gguf",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Gemma 4 E4b Uncensored Hauhaucs Aggressive - GGUF Model",
+      "url": "https://local-ai-zone.github.io/models/gemma-4-e4b-uncensored-hauhaucs-aggressive.html",
+      "snippet": "Download Gemma 4 E4b Uncensored Hauhaucs Aggressive GGUF model. 2.36 GB, 2,480,299 downloads, 1056 likes."
+    },
+    {
+      "title": "Gemma-4-E4B-Uncensored-HauhauCS-Aggressive: Text-to-Text model ...",
+      "url": "https://www.aimodels.fyi/models/huggingFace/gemma-4-e4b-uncensored-hauhaucs-aggressive-hauhaucs",
+      "snippet": "Overview Gemma-4-E4B-Uncensored-HauhauCS-Aggressive is an uncensored variant of Google&#x27;s Gemma 4 E4B instruction-tuned model, modified by HauhauCS to remove refusal behaviors while preserving the original model&#x27;s capabilities. The model contains 4 billion parameters across 42 layers with mixed sliding window (512 tokens) and full attention mechanisms, supports a 131K token context window, and ..."
+    },
+    {
+      "title": "Are Gemma 4 E4B third-party derivatives reliable? Model sources and ...",
+      "url": "https://knightli.com/en/2026/04/18/gemma-4-e4b-uncensored-vs-official/",
+      "snippet": "If you see a model like HauhauCS/Gemma-4-E4B-Uncensored-HauhauCS-Aggressive, the most critical point is: it is not another set of Gemma 4 released by Google, but an unofficial derivative version that claims to be built on the official google/gemma-4-E4B-it. The base model and modification targets written by the publisher are only statements to be verified. Unless the training methods ..."
+    }
+  ]
+}

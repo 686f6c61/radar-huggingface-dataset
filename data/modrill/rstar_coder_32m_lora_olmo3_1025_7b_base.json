@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "modrill/rstar_coder_32m_lora_olmo3_1025_7b_base",
+  "slug": "modrill-rstar_coder_32m_lora_olmo3_1025_7b_base",
+  "author": "modrill",
+  "url": "https://huggingface.co/modrill/rstar_coder_32m_lora_olmo3_1025_7b_base",
+  "created_at": "2026-08-29T15:56:56.000Z",
+  "updated_at": "2026-08-29T15:57:12.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "lora",
+    "code",
+    "rstar-coder",
+    "code-sft",
+    "base_model:allenai/Olmo-3-1025-7B",
+    "base_model:adapter:allenai/Olmo-3-1025-7B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 639691872,
+  "storage_human": "640 MB",
+  "base_model": "allenai/Olmo-3-1025-7B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "allenai/Olmo-3-1125-32B · Hugging Face",
+      "url": "https://huggingface.co/allenai/Olmo-3-1125-32B",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "modrill/olmo_3_1025_7b · Hugging Face",
+      "url": "https://huggingface.co/modrill/olmo_3_1025_7b",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "OLMo-core/src/scripts/official/OLMo3/OLMo-3-1025-7B-long ... - GitHub",
+      "url": "https://github.com/allenai/OLMo-core/blob/main/src/scripts/official/OLMo3/OLMo-3-1025-7B-long-context.py",
+      "snippet": "Official long-context extension training script for OLMo-3-1025-7B."
+    },
+    {
+      "title": "OLMo-3-1025-7B-pretrain-1.py - GitHub",
+      "url": "https://github.com/allenai/OLMo-core/blob/main/src/scripts/official/OLMo3/OLMo-3-1025-7B-pretrain-1.py",
+      "snippet": "PyTorch building blocks for the OLMo ecosystem. Contribute to allenai/OLMo-core development by creating an account on GitHub."
+    },
+    {
+      "title": "Olmo 3 - lmstudio.ai",
+      "url": "https://lmstudio.ai/models/olmo3",
+      "snippet": "About Olmo 3 AllenAI introduces Olmo 3, a new family of 7B and 32B models. This suite includes Base, Instruct, and Think variants. The Base models were trained using a staged training approach. Olmo is a series of O pen l anguage mo dels designed to enable the science of language models. These models are trained on the Dolma 3 dataset."
+    }
+  ]
+}

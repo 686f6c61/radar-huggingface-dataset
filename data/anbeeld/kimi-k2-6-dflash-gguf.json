@@ -1,0 +1,78 @@
+{
+  "schema": 1,
+  "id": "Anbeeld/Kimi-K2.6-DFlash-GGUF",
+  "slug": "anbeeld-kimi-k2-6-dflash-gguf",
+  "author": "Anbeeld",
+  "url": "https://huggingface.co/Anbeeld/Kimi-K2.6-DFlash-GGUF",
+  "created_at": "2026-08-29T17:56:08.000Z",
+  "updated_at": "2026-08-29T17:56:11.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3",
+    "dflash",
+    "speculative-decoding",
+    "diffusion",
+    "efficiency",
+    "flash-decoding",
+    "qwen",
+    "kimi",
+    "diffusion-language-model",
+    "text-generation",
+    "arxiv:2602.06036",
+    "license:mit",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us",
+    "base_model:z-lab/Kimi-K2.6-DFlash",
+    "base_model:finetune:z-lab/Kimi-K2.6-DFlash"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 338153,
+  "storage_human": "338153 B",
+  "base_model": "z-lab/Kimi-K2.6-DFlash",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "z-lab/Kimi-K2.6-DFlash · Hugging Face",
+      "url": "https://huggingface.co/z-lab/Kimi-K2.6-DFlash",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "unsloth/Kimi-K2.6-GGUF · Hugging Face",
+      "url": "https://huggingface.co/unsloth/Kimi-K2.6-GGUF",
+      "snippet": "Currently, Kimi-K2.6 is recommended to run on the following inference engines: vLLM SGLang KTransformers Kimi-K2.6 has the same architecture as Kimi-K2.5, and the deployment method can be directly reused. The version requirement for transformers is >=4.57.1, <5.0.0. Deployment examples can be found in the Model Deployment Guide."
+    },
+    {
+      "title": "Kimi K2.6 | Leading Open-Source Model in Coding & Agent",
+      "url": "https://www.kimi.ai/ai-models/kimi-k2-6",
+      "snippet": "Kimi K2.6 is an open-source model with strong coding and agent swarm capabilities. Build pro-level websites, run workflows, and explore Claw Groups."
+    },
+    {
+      "title": "Kimi K2.6 - Instant · Thinking · Agent · Agent Swarm",
+      "url": "https://kimik2ai.com/kimi-k2.6/",
+      "snippet": "Explore Kimi K2.6, the advanced AI model for coding, frontend design, Agent Swarm workflows, Claw Group teamwork, documents, slides, sheets, API access, pricing, and ..."
+    },
+    {
+      "title": "Kimi K2.6 DFlash by nvidia — VRAM 7GB, 256K context | LLM Explorer",
+      "url": "https://llm-explorer.com/model/nvidia%2FKimi-K2.6-DFlash,1vabovT9yaRXTZXoMwBW1E",
+      "snippet": "Kimi K2.6 DFlash is an open-source 3.5b LLM by nvidia. VRAM 7GB, 256K context. Compare benchmarks, capabilities, and deployment details on LLM Explorer."
+    }
+  ]
+}

@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "Hskyto/lfm2.5-2.6b-toolcall-mlx-q4",
+  "slug": "hskyto-lfm2-5-2-6b-toolcall-mlx-q4",
+  "author": "Hskyto",
+  "url": "https://huggingface.co/Hskyto/lfm2.5-2.6b-toolcall-mlx-q4",
+  "created_at": "2026-08-29T11:17:43.000Z",
+  "updated_at": "2026-08-29T11:18:29.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "mlx",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "lfm2",
+    "text-generation",
+    "conversational",
+    "en",
+    "4-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 421657600,
+  "parameters_human": "421.7M",
+  "storage_bytes": 1535522490,
+  "storage_human": "1.5 GB",
+  "base_model": null,
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Hskyto/lfm2.5-2.6b-toolcall-mlx-q8 · Hugging Face",
+      "url": "https://huggingface.co/Hskyto/lfm2.5-2.6b-toolcall-mlx-q8",
+      "snippet": "LFM2.5-2.6B Tool-Call MLX (16-Bit Master) This repository contains the unquantized 16-bit (Bfloat16) MLX version of Liquid AI&#x27;s LFM2.5-2.6B, merged with a custom QLoRA adapter trained specifically for on-device tool and function calling on Apple Silicon and native iOS integration."
+    },
+    {
+      "title": "Hskyto/lfm2.5-2.6b-toolcall-adapter · Hugging Face",
+      "url": "https://huggingface.co/Hskyto/lfm2.5-2.6b-toolcall-adapter",
+      "snippet": "Instructions to use Hskyto/lfm2.5-2.6b-toolcall-adapter with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Libraries PEFT How to use Hskyto/lfm2.5-2.6b-toolcall-adapter with PEFT:"
+    },
+    {
+      "title": "LFM2.5-2.6B - docs.liquid.ai",
+      "url": "https://docs.liquid.ai/lfm/models/lfm25-2.6b",
+      "snippet": "2.6B dense model trained for agentic workloads, with a 128K context window and native tool calling for on-device agents ← Back to Text Models LFM2.5-2.6B is Liquid AI&#x27;s 2.6B dense model built for agentic workloads with a 128K context window and native tool calling."
+    },
+    {
+      "title": "LFM2.5-2.6B: Deploy Agents Everywhere | Blog | Liquid AI",
+      "url": "https://www.liquid.ai/blog/lfm2-5-2-6b",
+      "snippet": "LFM2.5-2.6B is an on-device agentic model that plans, calls tools, and runs multi-step tasks at 220 tok/s in under 2.5 GB. Open weights on Hugging Face."
+    },
+    {
+      "title": "2026-08-04-liquid-ai-releases-lfm2-5-2-6b-on-device-agent.md",
+      "url": "https://github.com/ypyl/ypyl.github.io/blob/master/_news/2026-08-04-liquid-ai-releases-lfm2-5-2-6b-on-device-agent.md",
+      "snippet": "Liquid AI has released LFM2.5-2.6B, a compact 2.6B-parameter agentic model designed to run entirely on-device — planning, tool calling, and multi-step tasks work on a phone without any cloud API. Trained on ~34 trillion tokens with a 128K-token vocabulary and 128K context, the model&#x27;s post-training used expert models to strengthen math, code, tool use, and long context, then transferred ..."
+    }
+  ]
+}

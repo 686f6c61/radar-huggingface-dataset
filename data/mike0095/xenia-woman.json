@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "Mike0095/xenia-woman",
+  "slug": "mike0095-xenia-woman",
+  "author": "Mike0095",
+  "url": "https://huggingface.co/Mike0095/xenia-woman",
+  "created_at": "2026-08-29T13:20:37.000Z",
+  "updated_at": "2026-08-29T13:55:34.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-image",
+  "library": "diffusers",
+  "languages": [],
+  "tags": [
+    "diffusers",
+    "text-to-image",
+    "diffusers-training",
+    "lora",
+    "krea2",
+    "krea2-diffusers",
+    "template:sd-lora",
+    "base_model:krea/Krea-2-Raw",
+    "base_model:adapter:krea/Krea-2-Raw",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 774569046,
+  "storage_human": "775 MB",
+  "base_model": "krea/Krea-2-Turbo, krea/Krea-2-Raw",
+  "formats": [
+    "diffusers"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Xenia (Xenia) - Hugging Face",
+      "url": "https://huggingface.co/Xenia/models",
+      "snippet": "User profile of Xenia on Hugging Face"
+    },
+    {
+      "title": "Xenia - SeaArt AI Model",
+      "url": "https://www.seaart.ai/models/detail/1d0d7a5cdf49b90aa77f6c658719fce0",
+      "snippet": "Explore Xenia model on SeaArt AI. Transform your idea into professional-quality AI-generated images and videos with our free, easy-to-use platform."
+    },
+    {
+      "title": "Xenia - SeaArt AI Model",
+      "url": "https://www.seaart.ai/models/detail/06898c40a6218a632384fdf2528556ac",
+      "snippet": "Meet Xenia model on SeaArt. Experience free Stable Diffusion models that get you the best AI-generated images using text prompts."
+    },
+    {
+      "title": "Stunning AI Portraits of Beautiful Women | Girlery.ai",
+      "url": "https://girlery.ai/",
+      "snippet": "Discover a curated collection of hyper-realistic AI-generated portraits of beautiful women across unique categories. Create your own AI girlfriend at Girlery.ai."
+    },
+    {
+      "title": "AI Girl Generator Improved (free, no sign-up, no limits) - Perchance",
+      "url": "https://perchance.org/rond3tkrhq",
+      "snippet": "The original and the best AI person generator (from text description) with no restrictions. Generate realistic/stylized/anime girls with this completely free Stable Diffusion text-to-image model. Use it to create your characters etc. from text - it&#x27;s completely free, no sign-up needed. Generate portraits or full body images of women in various styles - including hyperrealistic and paintly ..."
+    }
+  ]
+}

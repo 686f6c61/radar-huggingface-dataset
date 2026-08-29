@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "wangzhang/Qwen3.5-122B-A10B-abliterated-GGUF",
+  "slug": "wangzhang-qwen3-5-122b-a10b-abliterated-gguf",
+  "author": "wangzhang",
+  "url": "https://huggingface.co/wangzhang/Qwen3.5-122B-A10B-abliterated-GGUF",
+  "created_at": "2026-03-14T20:18:48.000Z",
+  "updated_at": "2026-08-29T17:04:52.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "llama.cpp",
+  "languages": [],
+  "tags": [
+    "llama.cpp",
+    "gguf",
+    "abliterix",
+    "uncensored",
+    "decensored",
+    "abliterated",
+    "moe",
+    "text-generation",
+    "base_model:wangzhang/Qwen3.5-122B-A10B-abliterix",
+    "base_model:quantized:wangzhang/Qwen3.5-122B-A10B-abliterix",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 7,
+  "downloads_30d": 25,
+  "trending_score": 0,
+  "parameters": 122111526912,
+  "parameters_human": "122.11B",
+  "storage_bytes": 204084672064,
+  "storage_human": "204.1 GB",
+  "base_model": "wangzhang/Qwen3.5-122B-A10B-abliterix",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": true,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "wangzhang/Qwen3.5-122B-A10B-abliterix · Hugging Face",
+      "url": "https://huggingface.co/wangzhang/Qwen3.5-122B-A10B-abliterix",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "wangzhang/Qwen3.5-122B-A10B-abliterated-GGUF · Hugging Face",
+      "url": "https://huggingface.co/wangzhang/Qwen3.5-122B-A10B-abliterated-GGUF",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Qwen3.5-122B-A10B-APEX-abliterated-v2-GGUF · Models",
+      "url": "https://www.modelscope.cn/models/anti-entropy/qwen3.5-122b-a10b-apex-abliterated-v2-gguf/summary",
+      "snippet": "Use for any other purpose is prohibited. By downloading or using this model, you agree to the terms below. A brutally compressed yet surprisingly capable Qwen3.5-122B-A10B variant, abliterated and then quantized with APEX to fit comfortably within 64 GB of RAM while retaining strong reasoning and creative writing skills."
+    },
+    {
+      "title": "qwen3.5-122b-a10b Model by Qwen | NVIDIA NIM",
+      "url": "https://build.nvidia.com/qwen/qwen3.5-122b-a10b",
+      "snippet": "122B MoE LLM (10B active) for coding, reasoning, multimodal chat. Agent-ready."
+    },
+    {
+      "title": "Qwen3.5-122B-A10B: Specs, Benchmarks & Model Details | DataLearnerAI",
+      "url": "https://www.datalearner.com/en/ai-models/pretrained-models/qwen3-5-122b-a10b",
+      "snippet": "Qwen3.5-122B-A10B is a reasoning model from Alibaba, released on 2026-02-25. It accepts text, image, and video input and produces text output. Its cataloged capabilities include Multilingual. The cataloged parameter count is 122B, with 10B active parameters per inference. The recorded context window is 262K."
+    }
+  ]
+}

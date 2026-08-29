@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "RKB109/rag-evaluation-lab-20260829-model",
+  "slug": "rkb109-rag-evaluation-lab-20260829-model",
+  "author": "RKB109",
+  "url": "https://huggingface.co/RKB109/rag-evaluation-lab-20260829-model",
+  "created_at": "2026-08-29T17:08:55.000Z",
+  "updated_at": "2026-08-29T17:08:55.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": "custom",
+  "languages": [],
+  "tags": [
+    "custom",
+    "synthetic-data",
+    "transparent-baseline",
+    "ai-evaluation",
+    "text-classification",
+    "question-answering",
+    "text-ranking",
+    "summarization",
+    "dataset:RKB109/rag-evaluation-lab-20260829-dataset",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "RKB109/rag-evaluation-lab-20260819-dataset - Hugging Face",
+      "url": "https://huggingface.co/datasets/RKB109/rag-evaluation-lab-20260819-dataset",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "RKB109/rag-evaluation-lab-20260819-model · Hugging Face",
+      "url": "https://huggingface.co/RKB109/rag-evaluation-lab-20260819-model",
+      "snippet": "RAG Evaluation Lab Baseline Model Model Description This repository contains a small, transparent prototype model for RAG systems often ship without a stable regression set or failure taxonomy. The model combines per-label token weights with IDF-weighted evidence retrieval."
+    },
+    {
+      "title": "GitHub - gratycodes/rag-evaluation-lab",
+      "url": "https://github.com/gratycodes/rag-evaluation-lab",
+      "snippet": "RAG Evaluation Lab is an AI engineering showcase for measuring retrieval-augmented generation quality. It focuses on evaluation design, dataset structure, retrieval metrics, answer faithfulness checks, and repeatable experiments."
+    },
+    {
+      "title": "ramirez-ai-labs/rag-evaluation-lab - GitHub",
+      "url": "https://github.com/ramirez-ai-labs/rag-evaluation-lab/",
+      "snippet": "Welcome to the RAG Evaluation Lab! This project is a simple, beginner-friendly introduction to how we evaluate Retrieval-Augmented Generation (RAG) systems—the same technique used in modern AI assistants, documentation bots, and advanced search tools."
+    },
+    {
+      "title": "A complete guide to RAG evaluation: metrics, testing and best practices",
+      "url": "https://www.evidentlyai.com/llm-guide/rag-evaluation",
+      "snippet": "This guide breaks down how to evaluate and test RAG systems. You&#x27;ll learn how to evaluate retrieval and generation quality, build test sets with synthetic data, run experiments, and monitor in production."
+    }
+  ]
+}

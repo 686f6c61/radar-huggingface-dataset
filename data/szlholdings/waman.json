@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "SZLHOLDINGS/waman",
+  "slug": "szlholdings-waman",
+  "author": "SZLHOLDINGS",
+  "url": "https://huggingface.co/SZLHOLDINGS/waman",
+  "created_at": "2026-08-28T16:26:39.000Z",
+  "updated_at": "2026-08-29T14:32:32.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "other",
+  "languages": [],
+  "tags": [
+    "other",
+    "governed-ai",
+    "szl-holdings",
+    "doctrine-v11",
+    "roadmap",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "SZLHOLDINGS (SZL Holdings) - Hugging Face",
+      "url": "https://huggingface.co/SZLHOLDINGS/models",
+      "snippet": "Org profile for SZL Holdings on Hugging Face, the AI community building the future."
+    },
+    {
+      "title": "Models - Hugging Face",
+      "url": "https://huggingface.co/models?other=szl-holdings",
+      "snippet": "Models 6 Base only Inference AvailableInference Edit filters Sort: Trending Active filters: szl-holdings Clear all"
+    },
+    {
+      "title": "#agenticai #artificialintelligence #businessobservability #enterpriseai ...",
+      "url": "https://www.linkedin.com/posts/stephen-lutar-279315240_agenticai-artificialintelligence-businessobservability-activity-7453957835303989248-UXze",
+      "snippet": "It is a look into the operating model I believe modern businesses are moving toward: governed intelligence, real-time visibility, human-approved AI execution, and full auditability behind every ..."
+    },
+    {
+      "title": "szl-holdings-platform/docs/PLATFORM_OVERVIEW.md at main - GitHub",
+      "url": "https://github.com/szl-holdings/szl-holdings-platform/blob/main/docs/PLATFORM_OVERVIEW.md",
+      "snippet": "The AI Intelligence Layer Across all platforms, SZL uses a shared AI intelligence model that prioritizes: Explainability over opacity. Every AI-generated recommendation includes traceable reasoning. Confidence scores, contributing signals, and evidence chains are visible — not just the conclusion. Advisory before autonomous."
+    },
+    {
+      "title": "About · SZL Holdings",
+      "url": "https://holdings.a-11-oy.com/docs-site/about.html",
+      "snippet": "About What SZL Holdings is SZL Holdings builds governed-AI infrastructure with inspectable source, bounded decision logic, and linked evidence. Its Lean corpus has an explicitly mixed proof posture: locked formulas are identified separately from open sorry -tagged obligations, and Lambda remains a conjecture rather than a theorem."
+    }
+  ]
+}

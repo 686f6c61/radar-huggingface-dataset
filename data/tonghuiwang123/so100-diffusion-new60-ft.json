@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "tonghuiwang123/so100-diffusion-new60-ft",
+  "slug": "tonghuiwang123-so100-diffusion-new60-ft",
+  "author": "tonghuiwang123",
+  "url": "https://huggingface.co/tonghuiwang123/so100-diffusion-new60-ft",
+  "created_at": "2026-08-29T17:47:21.000Z",
+  "updated_at": "2026-08-29T18:06:17.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "robotics",
+    "so100",
+    "so-arm100",
+    "diffusion",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 277839286,
+  "parameters_human": "277.8M",
+  "storage_bytes": 13336872600,
+  "storage_human": "13.3 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "tonghuiwang123/so100-pi05-new60-ft at main - Hugging Face",
+      "url": "https://huggingface.co/tonghuiwang123/so100-pi05-new60-ft/tree/main",
+      "snippet": "main so100-pi05-new60-ft 9.39 GB Ctrl+K Ctrl+K 1 contributor History:2 commits tonghuiwang123 pi0560ft ckpt 76000 2cd1c52 verifiedabout 7 hours ago tokenizerpi0560ft ckpt 76000about 7 hours ago .gitattributes Safe 1.58 kBpi0560ft ckpt 76000about 7 hours ago README.md 1.47 kBpi0560ft ckpt 76000about 7 hours ago config.json 2.83 kBpi0560ft ckpt ..."
+    },
+    {
+      "title": "GitHub - TheRobotStudio/SO-ARM100: Standard Open Arm 100",
+      "url": "https://github.com/TheRobotStudio/SO-ARM100",
+      "snippet": "Standard Open Arm 100. Contribute to TheRobotStudio/SO-ARM100 development by creating an account on GitHub."
+    },
+    {
+      "title": "tonghuiwang123/so100-pi0 · Hugging Face",
+      "url": "https://huggingface.co/tonghuiwang123/so100-pi0",
+      "snippet": "so100-pi0 LeRobot policy for SO-ARM100 / SO100, task: Grab the white cube to the white cup Trained on tonghuiwang123/test10 (2 cameras @1280x720, 30fps)."
+    },
+    {
+      "title": "How to use the SO10xArm robotic arm in Lerobot | Seeed Studio Wiki",
+      "url": "https://wiki.seeedstudio.com/lerobot_so100m/",
+      "snippet": "This wiki provides the assembly and debugging tutorial for the SO ARM100 and realizes data collection and training within the Lerobot framework."
+    },
+    {
+      "title": "GitHub - tippy33/lerobot-so100: LeRobot: Making AI for Robotics more ...",
+      "url": "https://github.com/tippy33/lerobot-so100",
+      "snippet": "🤗 LeRobot: Making AI for Robotics more accessible with end-to-end learning - tippy33/lerobot-so100"
+    }
+  ]
+}

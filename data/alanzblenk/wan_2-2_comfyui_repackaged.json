@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "Alanzblenk/Wan_2.2_ComfyUI_Repackaged",
+  "slug": "alanzblenk-wan_2-2_comfyui_repackaged",
+  "author": "Alanzblenk",
+  "url": "https://huggingface.co/Alanzblenk/Wan_2.2_ComfyUI_Repackaged",
+  "created_at": "2026-08-29T13:44:53.000Z",
+  "updated_at": "2026-08-29T13:44:54.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-to-video",
+  "library": "diffusion-single-file",
+  "languages": [],
+  "tags": [
+    "diffusion-single-file",
+    "comfyui",
+    "image-to-video",
+    "base_model:Wan-AI/Wan2.2-Animate-14B",
+    "base_model:finetune:Wan-AI/Wan2.2-Animate-14B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 728658148158,
+  "storage_human": "728.7 GB",
+  "base_model": "nvidia/ChronoEdit-14B-Diffusers, Wan-AI/Wan2.2-Animate-14B, alibaba-pai/Wan2.2-Fun-A14B-Control-Camera, alibaba-pai/Wan2.2-Fun-A14B-Control, alibaba-pai/Wan2.2-Fun-5B-Control, alibaba-pai/Wan2.2-Fun-5B-InP, alibaba-pai/Wan2.2-Fun-A14B-InP, alibaba-pai/Wan2.2-VACE-Fun-A14B, Wan-AI/Wan2.2-I2V-A14B, Wan-AI/Wan2.2-S2V-14B, Wan-AI/Wan2.2-T2V-A14B, Wan-AI/Wan2.2-TI2V-5B, lightx2v/Wan2.2-Distill-Loras",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Comfy-Org/Wan_2.2_ComfyUI_Repackaged · Hugging Face",
+      "url": "https://huggingface.co/Comfy-Org/Wan_2.2_ComfyUI_Repackaged",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Comfy-Org/Wan_2.2_ComfyUI_Repackaged at ... - Hugging Face",
+      "url": "https://huggingface.co/Comfy-Org/Wan_2.2_ComfyUI_Repackaged/tree/0b080e63b27fd0ba11fbee3597e41a23493358eb",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Wan 2.2 Full Installation Guide for ComfyUI | 8GB VRAM Ready",
+      "url": "https://itch.io/blog/1009842/wan22-full-installation-guide-for-comfyui-8gb-vram-ready",
+      "snippet": "Unlock the full potential of AI video generation with Wan 2.2 in ComfyUI! This comprehensive guide walks you through everything you need — from downloading the core GGUF models to placing LoRA, text encoders, and VAE files. It also includes example workflows and easy-to-follow troubleshooting tips using Gemini CLI and PyTorch updates."
+    },
+    {
+      "title": "Wan_2.2_ComfyUI_Repackaged · Models",
+      "url": "https://www.modelscope.cn/models/Comfy-Org/Wan_2.2_ComfyUI_Repackaged",
+      "snippet": "ModelScope——汇聚各领域先进的机器学习模型，提供模型探索体验、推理、训练、部署和应用的一站式服务。在这里，共建模型开源社区，发现、学习、定制和分享心仪的模型。"
+    },
+    {
+      "title": "Wan_2.2_ComfyUI_Repackaged - 开源模型 - Comfy Org - OpenCSG",
+      "url": "https://opencsg.com/models/AIWizards/Wan_2.2_ComfyUI_Repackaged",
+      "snippet": "Wan_2.2_ComfyUI_Repackaged 是由 Comfy Org 推出的开源人工智能模型，OpenCSG提供高速免费下载服务，支持模型推理、训练、部署全流程管理，助力AI开发者高效工作。"
+    }
+  ]
+}

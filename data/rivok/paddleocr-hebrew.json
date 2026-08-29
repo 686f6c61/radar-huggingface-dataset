@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "Rivok/paddleocr-hebrew",
+  "slug": "rivok-paddleocr-hebrew",
+  "author": "Rivok",
+  "url": "https://huggingface.co/Rivok/paddleocr-hebrew",
+  "created_at": "2026-08-29T14:54:27.000Z",
+  "updated_at": "2026-08-29T15:08:11.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-to-text",
+  "library": "onnxruntime",
+  "languages": [
+    "he",
+    "en"
+  ],
+  "tags": [
+    "onnxruntime",
+    "onnx",
+    "ocr",
+    "hebrew",
+    "paddleocr",
+    "svtrv2",
+    "rtl",
+    "bidi",
+    "image-to-text",
+    "he",
+    "en",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 387486518,
+  "storage_human": "387 MB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Rivok/paddleocr-hebrew · Hugging Face",
+      "url": "https://huggingface.co/Rivok/paddleocr-hebrew",
+      "snippet": "Finetuned from PaddleOCR. Every model in this repository is a finetune of a PaddleOCR model (PaddleOCR v3.7.0, Apache-2.0) and is released under the same licence — see the per-model MODEL_CARD.md for each lineage."
+    },
+    {
+      "title": "RivoksLab/paddleocr-hebrew: Production Hebrew OCR - GitHub",
+      "url": "https://github.com/RivoksLab/paddleocr-hebrew",
+      "snippet": "Models are hosted on the Hugging Face Hub: Rivok/paddleocr-hebrew (~370 MB, ONNX + per-model cards + md5sums). The small detectors and the mobile rec also ship in this repo under models/ for a zero-download start."
+    },
+    {
+      "title": "Home - PaddleOCR Documentation",
+      "url": "https://www.paddleocr.ai/main/en/index.html",
+      "snippet": "For more details, please visit PaddleOCR Official Website. In addition to its strong model library, PaddleOCR 3.0 also provides easy-to-use tools covering model training, inference, and serving, helping developers bring AI applications into production more efficiently."
+    },
+    {
+      "title": "Model - PaddleOCR Documentation",
+      "url": "https://www.paddleocr.ai/v2.10.0/en/ppocr/model_list.html",
+      "snippet": "All models in this tutorial are from the PaddleOCR series, for more introduction to algorithms and models based on the public dataset, you can refer to algorithm overview tutorial. The downloadable models provided by PaddleOCR include the inference model, trained model, pre-trained model and nb model."
+    },
+    {
+      "title": "Models compatible with the PaddleOCR library - Hugging Face",
+      "url": "https://huggingface.co/models?library=PaddleOCR",
+      "snippet": "Explore machine learning models."
+    }
+  ]
+}

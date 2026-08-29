@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "ddh0/GLM-5.3-Flash-GGUF",
+  "slug": "ddh0-glm-5-3-flash-gguf",
+  "author": "ddh0",
+  "url": "https://huggingface.co/ddh0/GLM-5.3-Flash-GGUF",
+  "created_at": "2026-08-27T12:04:18.000Z",
+  "updated_at": "2026-08-29T18:00:20.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "base_model:zai-org/GLM-5.3-Flash",
+    "base_model:finetune:zai-org/GLM-5.3-Flash",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 681,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 155497855680,
+  "storage_human": "155.5 GB",
+  "base_model": "zai-org/GLM-5.3-Flash",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ddh0/GLM-5.3-Flash-GGUF · Hugging Face",
+      "url": "https://huggingface.co/ddh0/GLM-5.3-Flash-GGUF",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "unsloth/GLM-5.3-Flash-GGUF · Hugging Face",
+      "url": "https://huggingface.co/unsloth/GLM-5.3-Flash-GGUF",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GLM-5.3-Flash: How to Run Locally - unsloth.ai",
+      "url": "https://unsloth.ai/docs/models/glm-5.3-flash",
+      "snippet": "Run the new GLM-5.3-Flash aka ox-alpha model by Z.ai. GLM-5.3-Flash, also known as ox-alpha, is Z.ai&#x27;s new 320B parameter (18B active) multimodal open model which outperforms GLM-5.2 across benchmarks and real-world tasks at one-tenth the price. GLM-5.3-Flash also rivals Claude Opus 4.8 on coding and agentic benchmarks."
+    },
+    {
+      "title": "How to Run GLM-5.3-Flash Locally: GGUF, Hardware and Benchmarks",
+      "url": "https://atomic.chat/blog/guides/how-to-run-glm-5-3-flash-locally",
+      "snippet": "GLM-5.3-Flash is the first natively multimodal model in Z.ai&#x27;s GLM-5 series, and the first one that&#x27;s realistic to run locally: it has 320B total parameters and 18B active per token. This guide covers what the model is, how it performs in the benchmarks, how much memory you&#x27;ll need to run it, and what your options are for running it today."
+    },
+    {
+      "title": "GLM-5.3 - How to Run Locally | Unsloth Documentation",
+      "url": "https://unsloth.ai/docs/models/glm-5.3",
+      "snippet": "The model has a 1M context window and can now run locally via Unsloth Dynamic GGUFs with llama.cpp or Unsloth Desktop. GLM-5.3-Flash GuideGLM-5.3 Guide If you want to run GLM-5.3-Flash, please read our specific article for it. Dynamic 1-bit GGUF reaches ~76% top-1 accuracy while being 85% smaller."
+    }
+  ]
+}

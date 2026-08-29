@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "mradermacher/TCS-7B-GGUF",
+  "slug": "mradermacher-tcs-7b-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/TCS-7B-GGUF",
+  "created_at": "2026-08-29T15:09:28.000Z",
+  "updated_at": "2026-08-29T15:18:31.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "en",
+    "base_model:XiaoBanni/TCS-7B",
+    "base_model:quantized:XiaoBanni/TCS-7B",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 7615616512,
+  "parameters_human": "7.62B",
+  "storage_bytes": 68146885760,
+  "storage_human": "68.1 GB",
+  "base_model": "XiaoBanni/TCS-7B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "mradermacher/turbo-ai-7b-GGUF · Hugging Face",
+      "url": "https://huggingface.co/mradermacher/turbo-ai-7b-GGUF",
+      "snippet": "mradermacher / turbo-ai-7b-GGUF like 0 Summarization Transformers GGUF Safetensors English qwen2 text-generation conversational email drafting task-extraction local-ai edge-ai privacy turboai turbomail License:apache-2.0 Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "mradermacher/StructureCoder-7B-GGUF · Hugging Face",
+      "url": "https://huggingface.co/mradermacher/StructureCoder-7B-GGUF",
+      "snippet": "mradermacher / StructureCoder-7B-GGUF like 1 Transformers GGUF English conversational License:apache-2.0 Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "TCS_7B-GGUF - AI Model by mradermacher | AlphaNeural AI",
+      "url": "https://alphaneural.io/assets/mradermacher/TCS_7B-GGUF",
+      "snippet": "Explore TCS_7B-GGUF, a ai model on AlphaNeural AI. Deploy using Neural Labs compute infrastructure."
+    },
+    {
+      "title": "UI-TARS-7B-DPO-GGUF huggingface.co api & mradermacher UI-TARS-7B-DPO ...",
+      "url": "https://www.toolify.ai/ai-model/mradermacher-ui-tars-7b-dpo-gguf",
+      "snippet": "UI-TARS-7B-DPO-GGUF is an open source model from GitHub that offers a free installation service, and any user can find UI-TARS-7B-DPO-GGUF on GitHub to install. At the same time, huggingface.co provides the effect of UI-TARS-7B-DPO-GGUF install, users can directly use UI-TARS-7B-DPO-GGUF installed effect in huggingface.co for debugging and trial. It also supports api for free installation."
+    },
+    {
+      "title": "Mradermacher - Find Top AI Models on Hugging Face",
+      "url": "https://www.aimodels.fyi/creators/huggingFace/mradermacher",
+      "snippet": "Looking for Mradermacher&#x27;s top AI models? Browse their full Hugging Face collection of 26 models. Explore AI models and contributions by Mradermacher on Huggingface."
+    }
+  ]
+}

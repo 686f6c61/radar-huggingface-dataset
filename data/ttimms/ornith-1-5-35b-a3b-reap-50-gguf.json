@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "Ttimms/Ornith-1.5-35B-A3B-REAP-50-GGUF",
+  "slug": "ttimms-ornith-1-5-35b-a3b-reap-50-gguf",
+  "author": "Ttimms",
+  "url": "https://huggingface.co/Ttimms/Ornith-1.5-35B-A3B-REAP-50-GGUF",
+  "created_at": "2026-08-29T17:59:03.000Z",
+  "updated_at": "2026-08-29T18:08:20.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "gguf",
+    "llama.cpp",
+    "reap",
+    "expert-pruning",
+    "moe",
+    "qwen3.5",
+    "text-generation",
+    "en",
+    "base_model:Ttimms/Ornith-1.5-35B-A3B-REAP-50-NVFP4A16",
+    "base_model:quantized:Ttimms/Ornith-1.5-35B-A3B-REAP-50-NVFP4A16",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": "Ttimms/Ornith-1.5-35B-A3B-REAP-50-NVFP4A16",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ornith-ai/Ornith-1.5-35B-A3B-GGUF · Hugging Face",
+      "url": "https://huggingface.co/ornith-ai/Ornith-1.5-35B-A3B-GGUF",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "ornith-ai/Ornith-1.5-35B-A3B · Hugging Face",
+      "url": "https://huggingface.co/ornith-ai/Ornith-1.5-35B-A3B",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Ornith-1.5: From Self-Scaffolding to Self-Improvement",
+      "url": "https://ornith.ai/ornith_1_5.html",
+      "snippet": "Ornith-1.5 extends the self-scaffolding framework introduced in Ornith-1.0 into a more complete self-improvement loop: the model proposes new tasks, generates task-specific scaffolds, and produces solution rollouts for reinforcement learning, continuously creating new learning experiences from which it can improve."
+    },
+    {
+      "title": "Ornith-1.5-35B-A3B · LLM Releases",
+      "url": "https://www.llm-releases.com/models/ornith-1-5-35b-a3b",
+      "snippet": "The mid-size model in DeepReinforce&#x27;s Ornith-1.5 family (released 2026-08-19, MIT, weights on Hugging Face): a 35B-parameter Mixture-of-Experts that activates ~3B parameters per token, trained with the same self-improving task-and-scaffold generation loop as the 397B flagship. Vendor-reported, five-run-averaged figures put it at 68.5 on Terminal-Bench 2.1 and 79.0 on SWE-Bench Verified while ..."
+    },
+    {
+      "title": "Ornith 1.5 35B A3B - interfaze.ai",
+      "url": "https://interfaze.ai/models/ornith-aiornith-15-35b-a3b",
+      "snippet": "Ornith 1.5 35B A3B by ornith-ai, a text-generation model with multimodal capabilities. Understand and compare multimodal features, benchmarks, and capabilities."
+    }
+  ]
+}

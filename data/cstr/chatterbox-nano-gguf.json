@@ -1,0 +1,76 @@
+{
+  "schema": 1,
+  "id": "cstr/chatterbox-nano-GGUF",
+  "slug": "cstr-chatterbox-nano-gguf",
+  "author": "cstr",
+  "url": "https://huggingface.co/cstr/chatterbox-nano-GGUF",
+  "created_at": "2026-08-29T18:02:23.000Z",
+  "updated_at": "2026-08-29T18:04:05.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-speech",
+  "library": "ggml",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "ggml",
+    "gguf",
+    "tts",
+    "text-to-speech",
+    "chatterbox",
+    "chatterbox-nano",
+    "flow-matching",
+    "meanflow",
+    "hifi-gan",
+    "crispasr",
+    "en",
+    "base_model:ResembleAI/chatterbox-nano",
+    "base_model:quantized:ResembleAI/chatterbox-nano",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 180323862,
+  "parameters_human": "180.3M",
+  "storage_bytes": 1104301344,
+  "storage_human": "1.1 GB",
+  "base_model": "ResembleAI/chatterbox-nano",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "cstr/chatterbox-GGUF · Hugging Face",
+      "url": "https://huggingface.co/cstr/chatterbox-GGUF",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "README.md · cstr/chatterbox-GGUF at main - Hugging Face",
+      "url": "https://huggingface.co/cstr/chatterbox-GGUF/blob/main/README.md",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GitHub - resemble-ai/chatterbox: SoTA open-source TTS",
+      "url": "https://github.com/resemble-ai/chatterbox/wiki",
+      "snippet": "Chatterbox TTS Made with ♥️ by Chatterbox is a family of state-of-the-art, open-source text-to-speech models by Resemble AI."
+    },
+    {
+      "title": "cstr/chatterbox-GGUF · Hugging Face | Sweet Tea Studio",
+      "url": "https://sweettea.co/resources/cstr-chatterbox-gguf-huggingface-model-cstr-chatterbox-gguf",
+      "snippet": "Chatterbox is a full TTS pipeline: character tokenizer → T3 (30-layer Llama AR, 520M) → speech tokens → S3Gen (Conformer encoder + UNet1D CFM denoiser, 10 Euler steps) → HiFTGenerator vocoder (conv chains + Snake activations + iSTFT) → 24 kHz WAV."
+    },
+    {
+      "title": "remoasr/hf_readmes/chatterbox-GGUF.md at main - GitHub",
+      "url": "https://github.com/linmi/remoasr/blob/main/hf_readmes/chatterbox-GGUF.md",
+      "snippet": "GGUF / ggml conversion of ResembleAI/chatterbox for use with CrispStrobe/CrispASR. Chatterbox is a full TTS pipeline: character tokenizer → T3 (30-layer Llama AR, 520M) → speech tokens → S3Gen (Conformer encoder + UNet1D CFM denoiser, 10 Euler steps) → HiFTGenerator vocoder (conv chains + Snake activations + iSTFT) → 24 kHz WAV. Distributed under MIT license. Two GGUF files are ..."
+    }
+  ]
+}
