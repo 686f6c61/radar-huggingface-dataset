@@ -1,0 +1,78 @@
+{
+  "schema": 1,
+  "id": "Skibrib/Qwen-Image-Edit-2511-Multiple-Angles-LoRA",
+  "slug": "skibrib-qwen-image-edit-2511-multiple-angles-lora",
+  "author": "Skibrib",
+  "url": "https://huggingface.co/Skibrib/Qwen-Image-Edit-2511-Multiple-Angles-LoRA",
+  "created_at": "2026-08-29T06:00:40.000Z",
+  "updated_at": "2026-08-29T06:03:20.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-to-image",
+  "library": "diffusers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "diffusers",
+    "qwen",
+    "qwen-image-edit",
+    "qwen-image-edit-2511",
+    "lora",
+    "multi-angle",
+    "camera-angles",
+    "camera-control",
+    "image-editing",
+    "image-to-image",
+    "gaussian-splatting",
+    "fal",
+    "en",
+    "base_model:Qwen/Qwen-Image-Edit-2511",
+    "base_model:adapter:Qwen/Qwen-Image-Edit-2511",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 334421090,
+  "storage_human": "334 MB",
+  "base_model": "Qwen/Qwen-Image-Edit-2511",
+  "formats": [
+    "diffusers"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "fal/Qwen-Image-Edit-2511-Multiple-Angles-LoRA · Hugging Face",
+      "url": "https://huggingface.co/fal/Qwen-Image-Edit-2511-Multiple-Angles-LoRA",
+      "snippet": "Why This LoRA? This is the first multi-angle camera control LoRA for Qwen-Image-Edit-2511. While Qwen-Image-Edit-2511 has built-in viewpoint capabilities, this LoRA provides: 96 precise camera poses - Exact control over camera position 3000+ training pairs - Massive dataset for maximum accuracy Gaussian Splatting data - 3D-consistent training for better spatial understanding Low-angle ..."
+    },
+    {
+      "title": "Qwen-Image-Edit-2511-Multiple-Angles-LoRA - Hugging Face",
+      "url": "https://huggingface.co/wan-world/Qwen-Image-Edit-2511-Multiple-Angles-LoRA/blob/main/README.md",
+      "snippet": "Why This LoRA? This is the first multi-angle camera control LoRA for Qwen-Image-Edit-2511. While Qwen-Image-Edit-2511 has built-in viewpoint capabilities, this LoRA provides: 96 precise camera poses - Exact control over camera position 3000+ training pairs - Massive dataset for maximum accuracy Gaussian Splatting data - 3D-consistent training for better spatial understanding Low-angle ..."
+    },
+    {
+      "title": "Qwen-Image-Edit-2511-Multiple-Angles-LoRA - GitHub",
+      "url": "https://github.com/chaymaeBelfaik/Qwen-Image-Edit-2511-Multiple-Angles-testing",
+      "snippet": "This is the first multi-angle camera control LoRA for Qwen-Image-Edit-2511. While Qwen-Image-Edit-2511 has built-in viewpoint capabilities, this LoRA provides: 96 precise camera poses - Exact control over camera position 3000+ training pairs - Massive dataset for maximum accuracy Gaussian Splatting data - 3D-consistent training for better spatial understanding Low-angle excellence - Proper ..."
+    },
+    {
+      "title": "Qwen-Image-Edit-2511-Multiple-Angles-LoRA · Models",
+      "url": "https://www.modelscope.cn/models/fal/Qwen-Image-Edit-2511-Multiple-Angles-LoRA",
+      "snippet": "Why This LoRA? This is the first multi-angle camera control LoRA for Qwen-Image-Edit-2511. While Qwen-Image-Edit-2511 has built-in viewpoint capabilities, this LoRA provides: 96 precise camera poses - Exact control over camera position 3000+ training pairs - Massive dataset for maximum accuracy Gaussian Splatting data - 3D-consistent training for better spatial understanding Low-angle ..."
+    },
+    {
+      "title": "Qwen-Image-Edit-2511-Multiple-Angles LoRA: Complete Guide to Multi ...",
+      "url": "https://dev.to/gary_yan_86eb77d35e0070f5/qwen-image-edit-2511-multiple-angles-lora-complete-guide-to-multi-angle-ai-image-generation-1g5f",
+      "snippet": "The Qwen-Image-Edit-2511-Multiple-Angles LoRA represents a significant leap forward in AI-powered image generation. By providing precise control over 96 distinct camera poses, it eliminates the traditional barriers of multi-angle photography and 3D rendering."
+    }
+  ]
+}

@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "jumana055/florence2-food11-finetuned",
+  "slug": "jumana055-florence2-food11-finetuned",
+  "author": "jumana055",
+  "url": "https://huggingface.co/jumana055/florence2-food11-finetuned",
+  "created_at": "2026-08-29T10:05:42.000Z",
+  "updated_at": "2026-08-29T10:05:42.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Fine-tuned Models for microsoft/Florence-2-large - Hugging Face",
+      "url": "https://huggingface.co/models?other=base_model:finetune:microsoft/Florence-2-large",
+      "snippet": "Active filters: microsoft/Florence-2-large. Clear all. thwri/CogFlorence-2-Large-Freeze. Image-to-Text • 0.8B • Updated Sep 28, 2024 • 329 • 14"
+    },
+    {
+      "title": "microsoft/Florence-2-large · Hugging Face",
+      "url": "https://huggingface.co/microsoft/Florence-2-large",
+      "snippet": "Florence-2 finetuned performance We finetune Florence-2 models with a collection of downstream tasks, resulting two generalist models Florence-2-base-ft and Florence-2-large-ft that can conduct a wide range of downstream tasks. The table below compares the performance of specialist and generalist models on various captioning and Visual Question Answering (VQA) tasks. Specialist models are fine ..."
+    },
+    {
+      "title": "how-to-finetune-florence-2-on-detection-dataset.ipynb",
+      "url": "https://github.com/roboflow/notebooks/blob/main/notebooks/how-to-finetune-florence-2-on-detection-dataset.ipynb",
+      "snippet": "A collection of tutorials on state-of-the-art computer vision models and techniques. Explore everything from foundational architectures like ResNet to cutting-edge models like RF-DETR, YOLO11, SAM ..."
+    },
+    {
+      "title": "GitHub - retkowsky/florence-2: Florence-2",
+      "url": "https://github.com/retkowsky/florence-2",
+      "snippet": "Florence-2 - Advancing a Unified Representation for a Variety of Vision Tasks We introduce Florence-2, a novel vision foundation model with a unified, prompt-based representation for a variety of computer vision and vision-language tasks. While existing large vision models excel in transfer learning ..."
+    },
+    {
+      "title": "LLM Leaderboard 2026: Compare 300+ Top AI Models by Intelligence, Speed ...",
+      "url": "https://llm-stats.com/leaderboards/llm-leaderboard",
+      "snippet": "The LLM Leaderboard — independent ranking of GPT, Claude, Gemini, Llama, DeepSeek and 300+ AI models by intelligence, speed and price. Filter by provider, license, modality and context window; sort by every benchmark. Composite LLM Stats Score updated continuously from public benchmarks and live API metrics."
+    }
+  ]
+}

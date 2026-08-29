@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "zeromodels/regnet-y-016",
+  "slug": "zeromodels-regnet-y-016",
+  "author": "zeromodels",
+  "url": "https://huggingface.co/zeromodels/regnet-y-016",
+  "created_at": "2026-08-29T05:46:13.000Z",
+  "updated_at": "2026-08-29T05:46:25.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-classification",
+  "library": "zeromodels",
+  "languages": [],
+  "tags": [
+    "zeromodels",
+    "keras",
+    "image-classification",
+    "regnet",
+    "backbone",
+    "arxiv:2003.13678",
+    "pytorch",
+    "jax",
+    "tf",
+    "base_model:facebook/regnet-y-016",
+    "base_model:finetune:facebook/regnet-y-016",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 46145536,
+  "storage_human": "46 MB",
+  "base_model": "facebook/regnet-y-016",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "facebook/regnet-y-016 · Hugging Face",
+      "url": "https://huggingface.co/facebook/regnet-y-016",
+      "snippet": "RegNet RegNet model trained on imagenet-1k. It was introduced in the paper Designing Network Design Spaces and first released in this repository. Disclaimer: The team releasing RegNet did not write a model card for this model so this model card has been written by the Hugging Face team. Model description The authors design search spaces to perform Neural Architecture Search (NAS). They first ..."
+    },
+    {
+      "title": "zeromodels/regnet-y-008 · Hugging Face",
+      "url": "https://huggingface.co/zeromodels/regnet-y-008",
+      "snippet": "Use as an ImageNet classifier or a 4-stage backbone. For more details on the model, please go to the upstream model card. Pure- Keras 3 conversion of facebook/regnet-y-008 for zeromodels. One implementation runs unmodified on TensorFlow / Torch / JAX. This is an image-classification / backbone checkpoint (RegNetImageClassify / RegNetModel)."
+    },
+    {
+      "title": "RegNet-Y-016 Open-Source Vision Model - Trained on ImageNet-1k ...",
+      "url": "https://model.aibase.com/en/models/details/1915694773865963521",
+      "snippet": "A RegNet model trained on ImageNet-1K, introduced in the paper Designing Network Design Spaces and first released in this repository. It can be used for image classification tasks."
+    },
+    {
+      "title": "facebook/regnet-y-016 — AICHINA.news | AI China News",
+      "url": "https://aichina.news/models/facebook/regnet-y-016/",
+      "snippet": "What this model does RegNetY-016 is a convolutional neural network (CNN) image classification model from Facebook AI Research&#x27;s RegNet family. The RegNet design family was introduced in the paper Designing Network Design Spaces (Radosavovic et al., 2020) and focuses on producing parameter-efficient, high-performing vision backbones by systematically searching the design space rather than hand ..."
+    },
+    {
+      "title": "pytorch-image-models/timm/models/regnet.py at main - GitHub",
+      "url": "https://github.com/huggingface/pytorch-image-models/blob/main/timm/models/regnet.py",
+      "snippet": "The largest collection of PyTorch image encoders / backbones. Including train, eval, inference, export scripts, and pretrained weights -- ResNet, ResNeXT, EfficientNet, NFNet, Vision Transformer (V..."
+    }
+  ]
+}

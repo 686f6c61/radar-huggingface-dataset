@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "rakuten-junliu/RakutenAI-3.0-NVFP4",
+  "slug": "rakuten-junliu-rakutenai-3-0-nvfp4",
+  "author": "rakuten-junliu",
+  "url": "https://huggingface.co/rakuten-junliu/RakutenAI-3.0-NVFP4",
+  "created_at": "2026-08-29T08:04:50.000Z",
+  "updated_at": "2026-08-29T08:16:24.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "ja",
+    "en"
+  ],
+  "tags": [
+    "deepseek_v3",
+    "nvfp4",
+    "fp4",
+    "quantized",
+    "moe",
+    "ja",
+    "en",
+    "base_model:Rakuten/RakutenAI-3.0",
+    "base_model:finetune:Rakuten/RakutenAI-3.0",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": "Rakuten/RakutenAI-3.0",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Rakuten/RakutenAI-3.0 · Hugging Face",
+      "url": "https://huggingface.co/Rakuten/RakutenAI-3.0",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Rakuten/RakutenAI-3.0 at main - Hugging Face",
+      "url": "https://huggingface.co/Rakuten/RakutenAI-3.0/tree/main",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Rakuten AI 3.0 Now Available, Japan&#x27;s Largest High-Performance AI Model ...",
+      "url": "https://global.rakuten.com/corp/news/press/2026/0317_01.html",
+      "snippet": "Rakuten AI 3.0, our largest and most competitive model, is an outstanding combination of data, engineering and innovative architecture at scale. By sharing open models, we aim to accelerate AI development in Japan."
+    },
+    {
+      "title": "Rakuten Unveils Japan&#x27;s Largest High-Performance AI Model, Developed as ...",
+      "url": "https://global.rakuten.com/corp/news/press/2025/1218_01.html",
+      "snippet": "Tokyo, December 18, 2025 - Rakuten Group, Inc. today unveiled its latest AI model, Rakuten AI 3.0, a Japanese large language model (LLM) developed as part of the Generative AI Accelerator Challenge (GENIAC) project promoted by the Ministry of Economy, Trade and Industry (METI) and the New Energy and Industrial Technology Development Organization (NEDO)."
+    },
+    {
+      "title": "Rakuten AI",
+      "url": "https://ai.rakuten.com/",
+      "snippet": "Rakuten AI Personalized interactions, intelligent search features and tailored product recommendations, seamlessly connect you with Rakuten&#x27;s diverse services."
+    }
+  ]
+}

@@ -1,0 +1,76 @@
+{
+  "schema": 1,
+  "id": "naimulislam999/Qwen3.5-0.8B-Uncensored",
+  "slug": "naimulislam999-qwen3-5-0-8b-uncensored",
+  "author": "naimulislam999",
+  "url": "https://huggingface.co/naimulislam999/Qwen3.5-0.8B-Uncensored",
+  "created_at": "2026-08-29T08:49:25.000Z",
+  "updated_at": "2026-08-29T08:52:34.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_5_text",
+    "text-generation",
+    "abliteration",
+    "directional-ablation",
+    "uncensored",
+    "mechanistic-interpretability",
+    "safety-research",
+    "ablate",
+    "conversational",
+    "arxiv:2406.11717",
+    "base_model:Qwen/Qwen3.5-0.8B",
+    "base_model:finetune:Qwen/Qwen3.5-0.8B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 752393024,
+  "parameters_human": "752.4M",
+  "storage_bytes": 1524817100,
+  "storage_human": "1.5 GB",
+  "base_model": "Qwen/Qwen3.5-0.8B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "lainlives/Qwen3.5-0.8B-uncensored · Hugging Face",
+      "url": "https://huggingface.co/lainlives/Qwen3.5-0.8B-uncensored",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "darkmaniac7/Qwen3.5-0.8B-uncensored-MNN · Hugging Face",
+      "url": "https://huggingface.co/darkmaniac7/Qwen3.5-0.8B-uncensored-MNN",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "qwen3.5:0.8b - ollama.com",
+      "url": "https://ollama.com/library/qwen3.5:0.8b",
+      "snippet": "Qwen3.5 features the following enhancement: Unified Vision-Language Foundation: Early fusion training on multimodal tokens achieves cross-generational parity with Qwen3 and outperforms Qwen3-VL models across reasoning, coding, agents, and visual understanding benchmarks."
+    },
+    {
+      "title": "vaultbox/qwen3.5-uncensored",
+      "url": "https://ollama.com/vaultbox/qwen3.5-uncensored",
+      "snippet": "Users assume full responsibility for all use, distribution, and consequences arising from the use of this model. This a comparison to the base ollama qwen models and the huihui_ai/qwen3.5-abliterated uncensored model on ollama."
+    },
+    {
+      "title": "Best Uncensored Local LLMs by VRAM Tier (2026) | InsiderLLM",
+      "url": "https://insiderllm.com/guides/best-uncensored-local-llms/",
+      "snippet": "Qwen 3.6 abliterated, Gemma 4 Heretic, Dolphin 3.0 — the current uncensored picks by VRAM tier. The Llama 3.1 / Qwen 2.5 era is mostly superseded. HuggingFace repos for every pick."
+    }
+  ]
+}

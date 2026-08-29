@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "dhhoward92/matching-distilled",
+  "slug": "dhhoward92-matching-distilled",
+  "author": "dhhoward92",
+  "url": "https://huggingface.co/dhhoward92/matching-distilled",
+  "created_at": "2026-08-29T01:51:10.000Z",
+  "updated_at": "2026-08-29T01:51:20.000Z",
+  "license": "bsd-3-clause",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "hybrid",
+    "pytorch",
+    "matching",
+    "license:bsd-3-clause",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 24832,
+  "parameters_human": "24832",
+  "storage_bytes": 99808,
+  "storage_human": "99808 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "dhhoward92/matching-distilled · Hugging Face",
+      "url": "https://huggingface.co/dhhoward92/matching-distilled",
+      "snippet": "dhhoward92 / matching-distilled like 0 Safetensors PyTorch hybrid matching License:bsd-3-clause Model card FilesFiles and versions xet Community Copy to bucket new Hybrid for Matching Overview Repository status Architecture Default experiment recipe Quick check Evaluation guidance Limitations Files License"
+    },
+    {
+      "title": "GitHub - horus-ai-labs/DistillFlow: Library for model distillation",
+      "url": "https://github.com/horus-ai-labs/DistillFlow",
+      "snippet": "DistillFlow lets you build a fully configurable pipeline, to help with your Distillation. Once the data is available, choose a teacher model, and the student model and your dataset and finally run the distillation."
+    },
+    {
+      "title": "GitHub - arcee-ai/DistillKit: An Open Source Toolkit For LLM ...",
+      "url": "https://github.com/arcee-ai/DistillKit",
+      "snippet": "A flexible and production-ready toolkit for knowledge distillation of large language models, supporting both online and offline distillation workflows with advanced logit compression. DistillKit powers the training of many of Arcee&#x27;s popular open-source models, including Virtuoso, SuperNova Medius, and Blitz."
+    },
+    {
+      "title": "Improved Distribution Matching Distillation for Fast Image Synthesis",
+      "url": "https://arxiv.org/abs/2405.14867",
+      "snippet": "Recent approaches have shown promises distilling diffusion models into efficient one-step generators. Among them, Distribution Matching Distillation (DMD) produces one-step generators that match their teacher in distribution, without enforcing a one-to-one correspondence with the sampling trajectories of their teachers. However, to ensure stable training, DMD requires an additional regression ..."
+    },
+    {
+      "title": "One-step Diffusion with Distribution Matching Distillation",
+      "url": "https://arxiv.org/abs/2311.18828",
+      "snippet": "Diffusion models generate high-quality images but require dozens of forward passes. We introduce Distribution Matching Distillation (DMD), a procedure to transform a diffusion model into a one-step image generator with minimal impact on image quality. We enforce the one-step image generator match the diffusion model at distribution level, by minimizing an approximate KL divergence whose ..."
+    }
+  ]
+}

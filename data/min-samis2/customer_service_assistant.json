@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "min-samis2/Customer_Service_assistant",
+  "slug": "min-samis2-customer_service_assistant",
+  "author": "min-samis2",
+  "url": "https://huggingface.co/min-samis2/Customer_Service_assistant",
+  "created_at": "2026-08-29T08:23:16.000Z",
+  "updated_at": "2026-08-29T09:28:31.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "forge",
+    "forge-method:instruction",
+    "forge-prev-name:Customer_Service_assistant",
+    "forge-prev-method:instruction",
+    "base_model:mistralai/Mistral-7B-Instruct-v0.3",
+    "base_model:finetune:mistralai/Mistral-7B-Instruct-v0.3",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 336251884,
+  "storage_human": "336 MB",
+  "base_model": "mistralai/Mistral-7B-Instruct-v0.3",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "min-samis2 (Mindaugas Samokaitis) - Hugging Face",
+      "url": "https://huggingface.co/min-samis2",
+      "snippet": "Recent Activity updated a datasetabout 12 hours ago min-samis2/forge-serve-jonas-biliunas published a datasetabout 12 hours ago min-samis2/forge-serve-jonas-biliunas updated a datasetabout 12 hours ago min-samis2/forge-7b240721-8f21-440a-8cf5-fd26fb4fe718 View all activity"
+    },
+    {
+      "title": "min-samis2/cxc · Hugging Face",
+      "url": "https://huggingface.co/min-samis2/cxc",
+      "snippet": "min-samis2 / cxc like 0 Transformers Safetensors arxiv:1910.09700 Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "Training notebook for min-samis2/forge-03df6eec-27bd-4b57-aa57 ...",
+      "url": "https://gist.github.com/samokmin/ff81e6a4dee9bc1a5cd364edf74c7a3b",
+      "snippet": "Training notebook for min-samis2/forge-03df6eec-27bd-4b57-aa57-793cf78ae0b9 - train-forge-03df6eec-27bd-4b57-aa57-793cf78ae0b9.ipynb"
+    },
+    {
+      "title": "‎Google Gemini",
+      "url": "https://gemini.google.com/",
+      "snippet": "Meet Gemini, Google&#x27;s AI assistant. Get help with writing, planning, brainstorming, and more. Experience the power of generative AI."
+    },
+    {
+      "title": "AI for customer service - Google Workspace with Gemini",
+      "url": "https://workspace.google.com/solutions/ai/customer-service/",
+      "snippet": "Conversational AI features for customer service reduce manual data entry, letting reps stay focused on conversations. Use Gemini in Google Meet to transcribe, take notes, and summarize customer interactions. Automatically capture action items and get insight into suggested next steps during calls."
+    }
+  ]
+}

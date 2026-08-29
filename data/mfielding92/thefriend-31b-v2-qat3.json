@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "mfielding92/thefriend-31b-v2-QAT3",
+  "slug": "mfielding92-thefriend-31b-v2-qat3",
+  "author": "mfielding92",
+  "url": "https://huggingface.co/mfielding92/thefriend-31b-v2-QAT3",
+  "created_at": "2026-08-29T05:56:24.000Z",
+  "updated_at": "2026-08-29T06:13:38.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gemma4",
+    "image-text-to-text",
+    "text-generation-inference",
+    "unsloth",
+    "conversational",
+    "en",
+    "base_model:mfielding92/thefriend-31b-v2",
+    "base_model:finetune:mfielding92/thefriend-31b-v2",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 31273088876,
+  "parameters_human": "31.27B",
+  "storage_bytes": 62578508029,
+  "storage_human": "62.6 GB",
+  "base_model": "mfielding92/thefriend-31b-v2",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "mfielding92/thefriend-31b-v2-GGUF · Hugging Face",
+      "url": "https://huggingface.co/mfielding92/thefriend-31b-v2-GGUF",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "mfielding92/thefriend-31b-v2-GGUF · Discussions - Hugging Face",
+      "url": "https://huggingface.co/mfielding92/thefriend-31b-v2-GGUF/discussions",
+      "snippet": "mfielding92 / thefriend-31b-v2-GGUF like 0 GGUF quantized unsloth-dynamic imatrix conversational Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "thefriend-31b-v2 API & Inference Endpoint | FriendliAI",
+      "url": "https://friendli.ai/models/mfielding92/thefriend-31b-v2",
+      "snippet": "Deploy thefriend-31b-v2 with low-latency inference on FriendliAI. Get scalable API serving, high throughput, and production-grade reliability for AI agents."
+    },
+    {
+      "title": "Michael Fielding mfielding92 - GitHub",
+      "url": "https://github.com/mfielding92/",
+      "snippet": "Most active on HuggingFace. mfielding92 has 5 repositories available. Follow their code on GitHub."
+    },
+    {
+      "title": "mfielding92 (Michael Fielding) - Community Activity",
+      "url": "https://hf-p-cfw.fyan.top/mfielding92/activity/community",
+      "snippet": "mfielding92 319147 Follow John6666&#x27;s profile pictureGargaz&#x27;s profile pictureElectricFighter&#x27;s profile picture 119 followers · 10 following https://audiomaster.ai mfielding92"
+    }
+  ]
+}

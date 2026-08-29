@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "nikolayini83/generation-colab",
+  "slug": "nikolayini83-generation-colab",
+  "author": "nikolayini83",
+  "url": "https://huggingface.co/nikolayini83/generation-colab",
+  "created_at": "2026-08-29T01:32:23.000Z",
+  "updated_at": "2026-08-29T01:32:33.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "mixer",
+    "pytorch",
+    "generation",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 49600,
+  "parameters_human": "49600",
+  "storage_bytes": 198880,
+  "storage_human": "198880 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "How to Run Generative AI Models in Google Colab? - ML Journey",
+      "url": "https://mljourney.com/how-to-run-generative-ai-models-in-google-colab/",
+      "snippet": "Learning how to run generative AI models in Google Colab opens up a world of creative possibilities. Whether you want to generate human-like text, produce stunning visuals, or explore new applications, Colab offers an ideal environment to get started with minimal setup."
+    },
+    {
+      "title": "Google Colab",
+      "url": "https://colab.research.google.com/?hl=en-US",
+      "snippet": "Learn how to bring the power of Colab straight to your terminal. Read the full announcement."
+    },
+    {
+      "title": "05_generative_ai.ipynb - Colab",
+      "url": "https://colab.research.google.com/github/badlogic/genai-workshop/blob/main/05_generative_ai.ipynb",
+      "snippet": "Generative AI models come in many shapes and forms. They can write code or chat casually, generate images based on intricate prompts, translate your whistled melody into a fullblown saxophon track, or create photorealistic videos. All of these models have in common, that they are trained on massive amounts of (unlabeled) data, sourced largely from the internet. In addition to massive training ..."
+    },
+    {
+      "title": "Generative AI Projects You Can Run in Google Colab",
+      "url": "https://mljourney.com/generative-ai-projects-you-can-run-in-google-colab/",
+      "snippet": "These generative AI projects you can run in Google Colab are only the beginning. With a few lines of code, you can turn your notebook into a story generator, art studio, music composer, or coding assistant."
+    },
+    {
+      "title": "Comprehensive Guide to Using Google Generative AI in Colab",
+      "url": "https://github.com/CodeRTX/Google-Generative-AI-Colab",
+      "snippet": "This notebook provides a step-by-step guide to setting up and using Google Generative AI in Google Colab. It covers API configuration, model initialization, chatting, video processing, story generation, and image processing."
+    }
+  ]
+}

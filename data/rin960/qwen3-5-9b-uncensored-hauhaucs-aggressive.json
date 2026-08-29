@@ -1,0 +1,76 @@
+{
+  "schema": 1,
+  "id": "rin960/Qwen3.5-9B-Uncensored-HauhauCS-Aggressive",
+  "slug": "rin960-qwen3-5-9b-uncensored-hauhaucs-aggressive",
+  "author": "rin960",
+  "url": "https://huggingface.co/rin960/Qwen3.5-9B-Uncensored-HauhauCS-Aggressive",
+  "created_at": "2026-08-29T02:09:03.000Z",
+  "updated_at": "2026-08-29T02:09:04.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "en",
+    "zh",
+    "multilingual"
+  ],
+  "tags": [
+    "gguf",
+    "uncensored",
+    "qwen3.5",
+    "qwen",
+    "en",
+    "zh",
+    "multilingual",
+    "base_model:Qwen/Qwen3.5-9B",
+    "base_model:quantized:Qwen/Qwen3.5-9B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 8953803264,
+  "parameters_human": "8.95B",
+  "storage_bytes": 41356205568,
+  "storage_human": "41.4 GB",
+  "base_model": "Qwen/Qwen3.5-9B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "rin960/Qwen3.5-9B-Uncensored-HauhauCS-Aggressive · Hugging Face",
+      "url": "https://huggingface.co/rin960/Qwen3.5-9B-Uncensored-HauhauCS-Aggressive",
+      "snippet": "Instructions to use rin960/Qwen3.5-9B-Uncensored-HauhauCS-Aggressive with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "Qwen3.5-9B-Uncensored-HauhauCS-Aggressive - Hugging Face",
+      "url": "https://huggingface.co/HauhauCS/Qwen3.5-9B-Uncensored-HauhauCS-Aggressive",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Qwen3.5-9B-Uncensored-HauhauCS-Aggressive — Grokipedia",
+      "url": "https://grokipedia.com/page/Qwen35-9B-Uncensored-HauhauCS-Aggressive",
+      "snippet": "Qwen3.5-9B-Uncensored-HauhauCS-Aggressive is an uncensored variant of the Qwen3.5-9B large language model, fine-tuned by Hugging Face user HauhauCS to achieve zero refusals on prompts while retaining the original model&#x27;s full capabilities, multilingual support for languages including English and Chinese, and lossless performance without alterations to training datasets. [1] The aggressive ..."
+    },
+    {
+      "title": "HauhauCS releases uncensored Qwen3.5-9B model with 0/465...",
+      "url": "https://theneuralfeed.com/article/qwen3-5-9b-uncensored-aggressive-release-gguf/a89xQkUh",
+      "snippet": "Independent developer HauhauCS has released an aggressive uncensored version of Alibaba&#x27;s Qwen3.5-9B language model, following their earlier 4B release. The model demonstrates a significant advancement in uncensored AI with zero refusals during testing (0/465 prompts) while maintaining full capability."
+    },
+    {
+      "title": "Qwen3.5-9B-Uncensored-HauhauCS-Aggressive:This model is natively ...",
+      "url": "https://ai.gitcode.com/openharmony-models/Qwen3.5-9B-Uncensored-HauhauCS-Aggressive",
+      "snippet": "This model is natively multimodal. The mmproj file is the vision encoder — you need it alongside the main GGUF to use image/video inputs. Load both files in llama.cpp, LM Studio, or any compatible runtime."
+    }
+  ]
+}

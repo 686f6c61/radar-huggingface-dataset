@@ -5,7 +5,7 @@
   "author": "patronus-studio",
   "url": "https://huggingface.co/patronus-studio/husky-nose-tool-security-properties-classifier",
   "created_at": "2026-07-16T11:28:07.000Z",
-  "updated_at": "2026-08-28T08:34:21.000Z",
+  "updated_at": "2026-08-28T16:11:51.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-classification",

@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "Bl4ckSpaces/Hirara_MLBB_FFD_4_0",
+  "slug": "bl4ckspaces-hirara_mlbb_ffd_4_0",
+  "author": "Bl4ckSpaces",
+  "url": "https://huggingface.co/Bl4ckSpaces/Hirara_MLBB_FFD_4_0",
+  "created_at": "2026-08-29T11:45:08.000Z",
+  "updated_at": "2026-08-29T11:45:27.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": "text-to-image",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "lora",
+    "stable-diffusion-xl",
+    "text-to-image",
+    "base_model:Bl4ckSpaces/FFD-XL-4.0",
+    "base_model:adapter:Bl4ckSpaces/FFD-XL-4.0",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 373607304,
+  "storage_human": "374 MB",
+  "base_model": "Bl4ckSpaces/FFD-XL-4.0",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Bl4ckSpaces/Hirara_MLBB_datasets_RAW - Hugging Face",
+      "url": "https://huggingface.co/datasets/Bl4ckSpaces/Hirara_MLBB_datasets_RAW",
+      "snippet": "Datasets: Bl4ckSpaces / Hirara_MLBB_datasets_RAW like 0 Modalities: Image Formats: imagefolder Size: < 1K Libraries: Datasets Croissant Dataset card Data Studio FilesFiles and versions xet Community 1 Dataset Viewer Auto-converted to Parquet API Embed Duplicate Data Studio Subset (1) default·17 rows default (17 rows) Split (1) train·17 rows train (17 rows) Search is not available for this ..."
+    },
+    {
+      "title": "Models - Hugging Face",
+      "url": "https://huggingface.co/models?other=bl4ckspaces",
+      "snippet": "Explore machine learning models. 1 Base only Inference AvailableInference Edit filters Sort: Trending Active filters: bl4ckspaces Clear all"
+    },
+    {
+      "title": "Free AI 3D Model Generator | Create 3D Assets at Zero Cost",
+      "url": "https://www.neural4d.com/features/free-3d-model-generator",
+      "snippet": "Free AI 3D Model Generator: create 3D models from text or images for games, AR/VR, and 3D printing at zero cost."
+    },
+    {
+      "title": "BlendSwap - Free Blender 3D Models",
+      "url": "https://blendswap.com/",
+      "snippet": "Download free Blender 3D models, textures, and materials shared by the community under Creative Commons licenses."
+    },
+    {
+      "title": "AI Models | Civitai",
+      "url": "https://civitai.com/models",
+      "snippet": "Browse thousands of free Stable Diffusion & Flux models, LoRAs, checkpoints, and embeddings. The largest collection of AI image generation resources."
+    }
+  ]
+}

@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "MikhailRudenko/drafter-understanding",
+  "slug": "mikhailrudenko-drafter-understanding",
+  "author": "MikhailRudenko",
+  "url": "https://huggingface.co/MikhailRudenko/drafter-understanding",
+  "created_at": "2026-08-29T11:29:54.000Z",
+  "updated_at": "2026-08-29T11:35:23.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "mistral",
+    "speculative-decoding",
+    "knowledge-distillation",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 156519168,
+  "parameters_human": "156.5M",
+  "storage_bytes": 939738077,
+  "storage_human": "940 MB",
+  "base_model": "Lite-Mistral-150M-v2-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "rudenko.ai | Dad ️ | Instagram",
+      "url": "https://www.instagram.com/reel/Dcbr79LSvEb/",
+      "snippet": "1M likes, 3,092 comments - rudenko.aivideo on August 24, 2026: \"Dad ️\"."
+    },
+    {
+      "title": "Mikhail Rudenko — Growth-Marketing Engineer",
+      "url": "https://michaelrudenko.com/",
+      "snippet": "What makes them come back? Now I&#x27;m building at the intersection of SEO infrastructure, Python automation, and AI tooling. JARVIS — my own analytics platform — is the practical output of that curiosity applied to scale. Open to growth, marketing engineering, or senior SEO roles at product companies where systems thinking matters."
+    },
+    {
+      "title": "LLM Leaderboard & AI Model Benchmarks — August 2026",
+      "url": "https://benchlm.ai/",
+      "snippet": "Compare 406 AI models across 406 benchmarks, with 228 ranked scores, source evidence, API pricing, context windows, runtime, and head-to-head pages."
+    },
+    {
+      "title": "Adaptive drafter model uses downtime to double LLM training speed",
+      "url": "https://techxplore.com/news/2026-02-drafter-downtime-llm.html",
+      "snippet": "Researchers from MIT and elsewhere found a way to use this computational downtime to efficiently accelerate reasoning-model training. Their new method automatically trains a smaller, faster model to predict the outputs of the larger reasoning LLM, which the larger model verifies."
+    },
+    {
+      "title": "Hugging Face - The AI community building the future.",
+      "url": "https://huggingface.co/",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    }
+  ]
+}

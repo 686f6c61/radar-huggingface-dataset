@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "salestool/TieredCommissionCalculator",
+  "slug": "salestool-tieredcommissioncalculator",
+  "author": "salestool",
+  "url": "https://huggingface.co/salestool/TieredCommissionCalculator",
+  "created_at": "2026-08-21T12:18:20.000Z",
+  "updated_at": "2026-08-29T09:10:50.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "salestool/TieredCommissionCalculator · Hugging Face",
+      "url": "https://huggingface.co/salestool/TieredCommissionCalculator",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Commission Calculator | AI Sales Commission Software",
+      "url": "https://salescookie.com/Home/CommissionCalculator",
+      "snippet": "Sales Cookie | AI Sales Commission Software Enter tiers, commission rates, and a list of sales for one payee. This calculator determines which tier applies to which sale, and even handles scenarios where deals cross tiers (blended rates). To fully automate your commissions, visit our main page."
+    },
+    {
+      "title": "Sales Commission Calculator | Free Tools | WhyItMatters.AI ...",
+      "url": "https://www.whyitmatters.ai/free-tools/sales-commission-calculator",
+      "snippet": "Model flat, tiered, and accelerator commission structures Want Automated Competitive Intelligence? Stop manually calculating metrics. Get AI-powered insights delivered automatically."
+    },
+    {
+      "title": "Automating Sales Commission with AI Workflows",
+      "url": "https://www.copy.ai/blog/sales-commission",
+      "snippet": "Learn how AI workflows automate sales commission calculations, reduce errors, and save time. Discover Copy.ai&#x27;s solution for commission management."
+    },
+    {
+      "title": "AI-Powered Sales Commission Structure Guide - Copy.ai",
+      "url": "https://www.copy.ai/blog/sales-commission-structure",
+      "snippet": "Platforms like Copy.ai&#x27;s GTM AI Platform are helping revenue leaders automate commission workflows, unify data across teams, and scale compensation models that actually align with business objectives. In this guide, you will learn exactly how to build a sales commission structure that motivates your team and accelerates growth."
+    }
+  ]
+}

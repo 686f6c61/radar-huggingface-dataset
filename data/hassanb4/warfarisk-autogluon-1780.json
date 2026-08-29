@@ -1,0 +1,83 @@
+{
+  "schema": 1,
+  "id": "HassanB4/warfarisk-autogluon-1780",
+  "slug": "hassanb4-warfarisk-autogluon-1780",
+  "author": "HassanB4",
+  "url": "https://huggingface.co/HassanB4/warfarisk-autogluon-1780",
+  "created_at": "2026-07-25T19:33:40.000Z",
+  "updated_at": "2026-08-29T07:02:19.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "tabular-regression",
+  "library": "autogluon",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "autogluon",
+    "tabular",
+    "warfarin",
+    "pharmacogenomics",
+    "dose-prediction",
+    "healthcare",
+    "tabular-regression",
+    "en",
+    "license:apache-2.0",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 168518242,
+  "storage_human": "169 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "Warfarin Stable Weekly Dose Prediction",
+      "dataset": "IWPC-1780 (International Warfarin Pharmacogenetics Consortium)",
+      "metric": "MAE",
+      "value": 7.959
+    },
+    {
+      "task": "Warfarin Stable Weekly Dose Prediction",
+      "dataset": "IWPC-1780 (International Warfarin Pharmacogenetics Consortium)",
+      "metric": "R2",
+      "value": 0.48
+    }
+  ],
+  "sources": [
+    {
+      "title": "HassanB4/warfarin-review-phase3-autogluon-iwpc1780 · Hugging Face",
+      "url": "https://huggingface.co/HassanB4/warfarin-review-phase3-autogluon-iwpc1780",
+      "snippet": "Warfarin dose prediction — Phase 3 winner (AutoGluon extreme_quality, iwpc_1780) Trained on the iwpc_1780 IWPC cohort (combined clinical+genetic feature set) as part of the warfarin dose/INR systematic-review model-dev pipeline. Winner of Phase 3&#x27;s nested clinical/genetic ablation comparator sweep (TRAINING_PLAN.md)."
+    },
+    {
+      "title": "Warfrain - a HassanB4 Collection - Hugging Face",
+      "url": "https://huggingface.co/collections/HassanB4/warfrain",
+      "snippet": "HassanB4/warfarin-review-phase3-autogluon-iwpc1780 Tabular Regression •Updated 2 days ago"
+    },
+    {
+      "title": "WarfaRisk/README.md at main · HasanBGit/WarfaRisk · GitHub",
+      "url": "https://github.com/HasanBGit/WarfaRisk/blob/main/README.md",
+      "snippet": "WarfaRisk: Ancestry-Stratified, Reproducible Machine Learning for Warfarin Dose Prediction This repository contains the official code, splits, and results for WarfaRisk, a nine-phase, fully reproducible machine learning pipeline for warfarin maintenance-dose prediction on the public IWPC pharmacogenomic cohorts. Our best model (AutoGluon extreme_quality, combined clinical+genetic features ..."
+    },
+    {
+      "title": "HasanBGit/WarfaRisk: Official code for WarfaRisk - GitHub",
+      "url": "https://github.com/HasanBGit/WarfaRisk",
+      "snippet": "This repository contains the official code, splits, and results for WarfaRisk, a nine-phase, fully reproducible machine learning pipeline for warfarin maintenance-dose prediction on the public IWPC pharmacogenomic cohorts. Our best model (AutoGluon extreme_quality, combined clinical+genetic features) reaches MAE 8.552 / R² 0.475 / PW20 0.466 on IWPC-6256 and MAE 7.959 / R² 0.480 / PW20 0.497 ..."
+    },
+    {
+      "title": "AutoGluon 1.6.1 documentation",
+      "url": "https://auto.gluon.ai/stable/index.html",
+      "snippet": "Powered by AutoGluon, it allows you to create highly accurate machine learning models without any machine learning experience or writing a single line of code. Community ¶ Get involved in the AutoGluon community by joining our Discord! Citing AutoGluon ¶ AutoGluon was originally developed by researchers and engineers at AWS AI."
+    }
+  ]
+}

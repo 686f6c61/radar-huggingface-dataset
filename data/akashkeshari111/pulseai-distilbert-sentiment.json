@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "akashkeshari111/pulseai-distilbert-sentiment",
+  "slug": "akashkeshari111-pulseai-distilbert-sentiment",
+  "author": "akashkeshari111",
+  "url": "https://huggingface.co/akashkeshari111/pulseai-distilbert-sentiment",
+  "created_at": "2026-08-29T06:14:22.000Z",
+  "updated_at": "2026-08-29T06:15:23.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "distilbert",
+    "text-classification",
+    "sentiment-analysis",
+    "customer-feedback",
+    "en",
+    "dataset:Yelp/yelp_review_full",
+    "base_model:distilbert/distilbert-base-uncased",
+    "base_model:finetune:distilbert/distilbert-base-uncased",
+    "license:apache-2.0",
+    "text-embeddings-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 66955779,
+  "parameters_human": "67.0M",
+  "storage_bytes": 267835644,
+  "storage_human": "268 MB",
+  "base_model": "distilbert-base-uncased",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - ahmedxzarai/Pulse-ai: Real-Time Global Sentiment Intelligence ...",
+      "url": "https://github.com/ahmedxzarai/Pulse-ai",
+      "snippet": "🚀 Overview Pulse AI is a production-oriented NLP application leveraging Transformer architecture for real-time sentiment classification of global business reviews. This project demonstrates end-to-end ML system integration—from model inference to user-facing deployment."
+    },
+    {
+      "title": "GitHub - gowthamk2503/PulseAI",
+      "url": "https://github.com/gowthamk2503/PulseAI",
+      "snippet": "PulseAI - Sentiment Analysis API A FastAPI-based sentiment analysis service using DistilBERT for classifying text into Positive, Negative, or Neutral sentiments."
+    },
+    {
+      "title": "DT12the/distilbert-sentiment-analysis · Hugging Face",
+      "url": "https://huggingface.co/DT12the/distilbert-sentiment-analysis",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Models - Hugging Face",
+      "url": "https://huggingface.co/models?search=sentiment-analysis",
+      "snippet": "Explore machine learning models. Anthos23/sentiment-roberta-large-english-finetuned-sentiment-analysis"
+    },
+    {
+      "title": "Sentiment_Classification_using_DistilBERT.ipynb - Colab",
+      "url": "https://colab.research.google.com/github/pranaya-mathur/Deep-Learning-Projects/blob/master/Sentiment_Classification_using_DistilBERT.ipynb/",
+      "snippet": "DistilBERT is a small, fast, cheap and light Transformer model trained by distilling Bert base. It has 40% less parameters than bert-base-uncased, runs 60% faster while preserving over 95% of Bert&#x27;s performances as measured on the GLUE language understanding benchmark."
+    }
+  ]
+}

@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "resoajoe/clinical-attire-nano",
+  "slug": "resoajoe-clinical-attire-nano",
+  "author": "resoajoe",
+  "url": "https://huggingface.co/resoajoe/clinical-attire-nano",
+  "created_at": "2026-08-29T11:24:24.000Z",
+  "updated_at": "2026-08-29T11:35:00.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "image-classification",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "onnx",
+    "image-classification",
+    "multi-label",
+    "tiny-model",
+    "edge-ai",
+    "healthcare-operations",
+    "distillation",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 393404,
+  "storage_human": "393404 B",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "resoajoe/clinical-scene-nano · Hugging Face",
+      "url": "https://huggingface.co/resoajoe/clinical-scene-nano",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "resoajoe (Joe Cox) - Hugging Face",
+      "url": "https://huggingface.co/resoajoe/datasets",
+      "snippet": "Hoping to run some rapid experiments to learn and weekend experiments to try to build something useful. Interested in nano-models for industries. Here to learn from the community and have an excuse..."
+    },
+    {
+      "title": "resoajoe/blockgrid-nano · Hugging Face",
+      "url": "https://huggingface.co/resoajoe/blockgrid-nano",
+      "snippet": "resoajoe / blockgrid-nano like 0 Image Classification ONNX tiny-model forensics dct edge-ai License:mit Model card FilesFiles and versions xet Community Copy to bucket new blockgrid-nano Measured Why a model and not a threshold Scope Known failure modes Usage Deployment note: cap the ONNX Runtime thread pool Training Verification Provenance"
+    },
+    {
+      "title": "resoajoe/quality-gate-nano · Hugging Face",
+      "url": "https://huggingface.co/resoajoe/quality-gate-nano",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "resoajoe/depth-nano · Hugging Face",
+      "url": "https://huggingface.co/resoajoe/depth-nano",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    }
+  ]
+}

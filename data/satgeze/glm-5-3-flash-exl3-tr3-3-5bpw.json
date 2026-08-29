@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "satgeze/GLM-5.3-Flash-EXL3-TR3-3.5bpw",
+  "slug": "satgeze-glm-5-3-flash-exl3-tr3-3-5bpw",
+  "author": "satgeze",
+  "url": "https://huggingface.co/satgeze/GLM-5.3-Flash-EXL3-TR3-3.5bpw",
+  "created_at": "2026-08-29T02:06:56.000Z",
+  "updated_at": "2026-08-29T02:12:04.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "exl3",
+    "tr3",
+    "glm",
+    "moe",
+    "quantized",
+    "1m-context",
+    "image-text-to-text",
+    "base_model:zai-org/GLM-5.3-Flash",
+    "base_model:finetune:zai-org/GLM-5.3-Flash",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": "zai-org/GLM-5.3-Flash",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GLM-5.3-Flash: Features, Benchmarks, and Pricing | DataCamp",
+      "url": "https://www.datacamp.com/blog/glm-5-3-flash",
+      "snippet": "What Is GLM-5.3-Flash? GLM-5.3-Flash is Z.ai&#x27;s cost-optimized model in the GLM-5.3 family, sitting below the full-fat GLM-5.3 flagship on capability but far below it on price. Artificial Analysis rates it at an intelligence index of 57, compared to 60 for GLM-5.3."
+    },
+    {
+      "title": "GLM-5.3 - Overview - Z.AI DEVELOPER DOCUMENT",
+      "url": "https://docs.z.ai/guides/llm/glm-5.3",
+      "snippet": "Overview GLM-5.3 is Z.ai&#x27;s latest flagship model, delivering comprehensive advancements in complex software engineering and agent capabilities. It uses the same base model as GLM-5.2, with all improvements driven by post-training."
+    },
+    {
+      "title": "GLM-5.3: Frontier Coding with Emergent Cyber Capabilities - z.ai",
+      "url": "https://z.ai/blog/glm-5.3",
+      "snippet": "Compared with GLM-5.2, it is much better at complex coding and long-horizon tasks: Stronger Coding: GLM-5.3 is the most capable open-weights model for coding, with a 50% improvement over GLM-5.2 on our in-house Z.ai Code Bench. It also achieve open-source SOTA on public benchmarks including Terminal Bench 3.0 and Agents&#x27; Last Exam."
+    },
+    {
+      "title": "Z.ai Releases GLM-5.3-Flash: A 320B-A18B Natively Multimodal MoE With a ...",
+      "url": "https://www.marktechpost.com/2026/08/26/z-ai-releases-glm-5-3-flash-a-320b-a18b-natively-multimodal-moe-with-a-1m-token-context/",
+      "snippet": "Z.ai has released GLM-5.3-Flash, the first natively multimodal model in the GLM-5 series and the cheapest capable coding model the lab has shipped. It is a mixture-of-experts model with 320B total parameters and 18B active per token, a 1,048,576-token context window, and image and video input — released under an MIT license with weights on Hugging Face. According to Z.ai reports, it beats ..."
+    },
+    {
+      "title": "GLM-5.3-Flash by Z.ai | Model Library | Modal",
+      "url": "https://modal.com/library/zai/glm-5-3-flash",
+      "snippet": "GLM-5.3-Flash is the first natively multimodal model in Z.ai&#x27;s GLM-5 series: a 320-billion-parameter Mixture-of-Experts model with 18B active parameters per token and a one-million-token context window, built for coding and agentic work."
+    }
+  ]
+}

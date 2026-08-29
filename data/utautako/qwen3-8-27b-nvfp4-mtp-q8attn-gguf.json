@@ -5,7 +5,7 @@
   "author": "utautako",
   "url": "https://huggingface.co/utautako/Qwen3.8-27B-NVFP4-MTP-Q8attn-GGUF",
   "created_at": "2026-08-14T20:20:27.000Z",
-  "updated_at": "2026-08-16T01:32:19.000Z",
+  "updated_at": "2026-08-28T22:38:15.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "image-text-to-text",
@@ -38,8 +38,8 @@
   "trending_score": 10,
   "parameters": 460730096,
   "parameters_human": "460.7M",
-  "storage_bytes": 39187845760,
-  "storage_human": "39.2 GB",
+  "storage_bytes": 75666247680,
+  "storage_human": "75.7 GB",
   "base_model": "Qwen/Qwen3.8-27B",
   "formats": [
     "gguf"

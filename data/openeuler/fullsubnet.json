@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "openEuler/fullsubnet",
+  "slug": "openeuler-fullsubnet",
+  "author": "openEuler",
+  "url": "https://huggingface.co/openEuler/fullsubnet",
+  "created_at": "2026-08-26T09:25:46.000Z",
+  "updated_at": "2026-08-29T07:04:59.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "audio-to-audio",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "fullsubnet",
+    "speech-enhancement",
+    "audio",
+    "robotics",
+    "IB-Robot",
+    "ascend",
+    "torch",
+    "edge-deployment",
+    "audio-to-audio",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 79388809,
+  "storage_human": "79 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "openEuler/fullsubnet · Hugging Face",
+      "url": "https://huggingface.co/openEuler/fullsubnet",
+      "snippet": "Model Card for FullSubNet (IB-Robot) FullSubNet speech enhancement model with cumulative Laplace normalization, compiled as stateful Ascend 310P OM artifacts for streaming 4-channel microphone array processing. Packaged for the IB-Robot framework."
+    },
+    {
+      "title": "openEuler (openEuler) - Hugging Face",
+      "url": "https://huggingface.co/openEuler",
+      "snippet": "Org profile for openEuler on Hugging Face, the AI community building the future."
+    },
+    {
+      "title": "openEuler Intelligence: AI Agent & LLM Platform | openEuler | openEuler",
+      "url": "https://www.openeuler.org/en/projects/intelligence/",
+      "snippet": "openEuler Intelligence is a comprehensive large language model (LLM) platform built on openEuler. It offers fundamental capabilities for integrating with OpenAI APIs and creating custom local knowledge bases. The platform also enables users to register semantic interfaces and Model Context Protocol (MCP) services, and develop Agent-based applications and workflows. Available in both web and ..."
+    },
+    {
+      "title": "GitHub - Audio-WestlakeU/FullSubNet: PyTorch implementation of ...",
+      "url": "https://github.com/Audio-WestlakeU/FullSubNet",
+      "snippet": "The documentation is hosted on Read the Docs. Check the documentation for how to train and test models. Improved FullSubNet: Further reduces computational costs and enables high sampling rate data processing, e.g., 48 KHz and 24 KHz. ️ Model Architecture 📰 FullSubNet: A Full-Band and Sub-Band Fusion Model for Real-Time Single-Channel Speech Enhancement, ICASSP 2021 📸 Demo (Audio Clips ..."
+    },
+    {
+      "title": "AI | Docs | openEuler",
+      "url": "https://docs.openeuler.org/en/docs/25.03/tools/ai/index.html",
+      "snippet": "AI Large Model Service Image User Guide Containerized packaging for AI large models such as Baichuan, ChatGLM, and Spark."
+    }
+  ]
+}

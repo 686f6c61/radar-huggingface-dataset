@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "sarmaraju/tinyllama-qa-fine-tuned",
+  "slug": "sarmaraju-tinyllama-qa-fine-tuned",
+  "author": "sarmaraju",
+  "url": "https://huggingface.co/sarmaraju/tinyllama-qa-fine-tuned",
+  "created_at": "2026-08-29T06:52:30.000Z",
+  "updated_at": "2026-08-29T06:52:33.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 4517152,
+  "storage_human": "5 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "How to Fine-Tune TinyLlama - ML Journey",
+      "url": "https://mljourney.com/how-to-fine-tune-tinyllama/",
+      "snippet": "Fine-tuning TinyLlama opens up exciting possibilities for creating specialized AI models tailored to your specific needs, all while working within the constraints of consumer-grade hardware. TinyLlama, with its compact 1.1 billion parameters, strikes an ideal balance between capability and accessibility, making it the perfect candidate for custom fine-tuning projects. This comprehensive guide ..."
+    },
+    {
+      "title": "TinyLlama/TinyLlama-1.1B-Chat-v1.0 · Hugging Face",
+      "url": "https://huggingface.co/TinyLlama/TinyLlama-1.1B-Chat-v1.0",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "TinyLlama/TinyLlama-1.1B-Chat-v1.0 · Fine Tuning - Hugging Face",
+      "url": "https://huggingface.co/TinyLlama/TinyLlama-1.1B-Chat-v1.0/discussions/5",
+      "snippet": "Hello , I want to use tinyLlama as base model and fine tune it on my custom use case dataset. (I need to leverage a small model for my application) The dataset is a set of raw text stored in database. How can I use the text data to fine tune this model , for answering user queries related to my dataset. Any steps / code would be appreciated. Thanks & Happy new Year."
+    },
+    {
+      "title": "GitHub - kunal9211pandey/fine-tune-tinyllama1.1B-master",
+      "url": "https://github.com/kunal9211pandey/fine-tune-tinyllama1.1B-master",
+      "snippet": "A clean and simple Python proof-of-concept application for fine-tuning TinyLlama 1.1B model using modern ML frameworks with LoRA (Low-Rank Adaptation) for efficient fine-tuning. tinyllama-finetune/ ├── src/ │ ├── __init__.py # Package initialization │ ├── data_loader.py ..."
+    },
+    {
+      "title": "Fine-Tuning TinyLlama for Q&A on Structured Company Data: A ... - LinkedIn",
+      "url": "https://www.linkedin.com/pulse/fine-tuning-tinyllama-qa-structured-company-data-lora-thirumalesh-fvkec",
+      "snippet": "A lightweight 1.1B parameter model, making it more suitable for QA fine-tuning on free-tier GPUs. Optimized for chat-based and reasoning tasks, aligning well with financial Q&A applications."
+    }
+  ]
+}

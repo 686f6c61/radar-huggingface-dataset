@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "heshinth/slm-rl-colab",
+  "slug": "heshinth-slm-rl-colab",
+  "author": "heshinth",
+  "url": "https://huggingface.co/heshinth/slm-rl-colab",
+  "created_at": "2026-08-29T09:17:20.000Z",
+  "updated_at": "2026-08-29T09:17:28.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "lora",
+    "transformers",
+    "reinforcement-learning",
+    "atari",
+    "slm-rl",
+    "space-invaders",
+    "text-generation",
+    "base_model:LiquidAI/LFM2.5-1.2B-Instruct",
+    "base_model:adapter:LiquidAI/LFM2.5-1.2B-Instruct",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 22241248,
+  "storage_human": "22 MB",
+  "base_model": "LiquidAI/LFM2.5-1.2B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - CraftsMan-Labs/SLM-RL",
+      "url": "https://github.com/CraftsMan-Labs/SLM-RL",
+      "snippet": "SLM-RL A self-improving game gymnasium for small language models. Small language models learn to play games through reinforcement learning: the model plays games in text-native environments, every decision is collected into a reusable dataset, the model is automatically fine-tuned on its own experience, and the improved model re-enters play."
+    },
+    {
+      "title": "GitHub - facebookresearch/sweet_rl: Benchmark and research code for the ...",
+      "url": "https://github.com/facebookresearch/sweet_rl",
+      "snippet": "Building on this benchmark, we propose a novel RL algorithm, SWEET-RL (RL with Step-WisE Evaluation from Training-time information), that uses a carefully designed optimization objective to train a critic model with access to additional training-time information. The critic provides step-level rewards for improving the policy model."
+    },
+    {
+      "title": "Fine-Tuning an Open-Source Small Language Model with unsloth ... - Medium",
+      "url": "https://medium.com/@sayantanenator/fine-tuning-an-open-source-small-language-model-with-unsloth-on-google-colab-8d5316139723",
+      "snippet": "This walkthrough shows how to fine-tune an open-source SLM on Google Colab using Unsloth, starting from dataset preparation to hyperparameter choices that actually matter."
+    },
+    {
+      "title": "lecture_workbook.ipynb - Colab",
+      "url": "https://colab.research.google.com/github/Signed-B/build-your-own-llm/blob/main/lecture_workbook.ipynb/",
+      "snippet": "Each model comes with a pre-trained tokenizer we can use. This converts the text into a series of tokens represented in a high-dimensional space where relative proximity encodes meaning. We use the datasets library to manage our dataseets and the transformers.AutoTokenizer class to pull and hold our tokenizer."
+    },
+    {
+      "title": "llm_python_tutorial.ipynb - Colab",
+      "url": "https://colab.research.google.com/github/nhsengland/llm_tutorial/blob/main/llm_python_tutorial.ipynb",
+      "snippet": "This is a small version of Phi-3, a generic \"SLM (small language model)\" by microsoft which can be used as a chat bot. There are also larger Phi-3-small and Phi-3-medium models that perform better in tests but use more computer."
+    }
+  ]
+}

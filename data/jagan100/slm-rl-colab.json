@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "jagan100/slm-rl-colab",
+  "slug": "jagan100-slm-rl-colab",
+  "author": "jagan100",
+  "url": "https://huggingface.co/jagan100/slm-rl-colab",
+  "created_at": "2026-08-29T09:21:24.000Z",
+  "updated_at": "2026-08-29T09:21:28.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "lora",
+    "transformers",
+    "reinforcement-learning",
+    "atari",
+    "slm-rl",
+    "freeway",
+    "text-generation",
+    "base_model:LiquidAI/LFM2.5-1.2B-Instruct",
+    "base_model:adapter:LiquidAI/LFM2.5-1.2B-Instruct",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 22241248,
+  "storage_human": "22 MB",
+  "base_model": "LiquidAI/LFM2.5-1.2B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - CraftsMan-Labs/SLM-RL",
+      "url": "https://github.com/CraftsMan-Labs/SLM-RL",
+      "snippet": "SLM-RL A self-improving game gymnasium for small language models. Small language models learn to play games through reinforcement learning: the model plays games in text-native environments, every decision is collected into a reusable dataset, the model is automatically fine-tuned on its own experience, and the improved model re-enters play."
+    },
+    {
+      "title": "GitHub - inde5media/SLM-RL-MODELS",
+      "url": "https://github.com/inde5media/SLM-RL-MODELS",
+      "snippet": "Small language models learn to play games through reinforcement learning: the model plays games in text-native environments, every decision is collected into a reusable dataset, the model is automatically fine-tuned on its own experience, and the improved model re-enters play. Progress is tracked across generations — each promoted only if it demonstrably beats its predecessor."
+    },
+    {
+      "title": "Google Colab",
+      "url": "https://colab.research.google.com/",
+      "snippet": "Learn how to bring the power of Colab straight to your terminal. Read the full announcement."
+    },
+    {
+      "title": "Hugging Face - The AI community building the future.",
+      "url": "https://huggingface.co/",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Building AI Models with Google Colab: A Hands-On Starter Guide",
+      "url": "https://python.plainenglish.io/building-ai-models-with-google-colab-a-hands-on-starter-guide-b203ed0916aa",
+      "snippet": "Credit: Google Colab Master Google Colab for AI development with zero setup. Learn GPU acceleration, data handling, model training, and collaborative workflows. Build complete AI models in the cloud with hands-on examples and pro tips."
+    }
+  ]
+}

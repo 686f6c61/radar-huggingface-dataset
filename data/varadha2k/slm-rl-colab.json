@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "varadha2k/slm-rl-colab",
+  "slug": "varadha2k-slm-rl-colab",
+  "author": "varadha2k",
+  "url": "https://huggingface.co/varadha2k/slm-rl-colab",
+  "created_at": "2026-08-29T09:24:02.000Z",
+  "updated_at": "2026-08-29T09:24:09.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "lora",
+    "transformers",
+    "reinforcement-learning",
+    "atari",
+    "slm-rl",
+    "boxing",
+    "text-generation",
+    "base_model:LiquidAI/LFM2.5-1.2B-Instruct",
+    "base_model:adapter:LiquidAI/LFM2.5-1.2B-Instruct",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 22241248,
+  "storage_human": "22 MB",
+  "base_model": "LiquidAI/LFM2.5-1.2B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - inde5media/SLM-RL-MODELS",
+      "url": "https://github.com/inde5media/SLM-RL-MODELS",
+      "snippet": "Contribute to inde5media/SLM-RL-MODELS development by creating an account on GitHub."
+    },
+    {
+      "title": "Google Colab",
+      "url": "https://colab.research.google.com/",
+      "snippet": "Learn how to bring the power of Colab straight to your terminal. Read the full announcement."
+    },
+    {
+      "title": "lecture_workbook.ipynb - Colab",
+      "url": "https://colab.research.google.com/github/Signed-B/build-your-own-llm/blob/main/lecture_workbook.ipynb/",
+      "snippet": "Each model comes with a pre-trained tokenizer we can use. This converts the text into a series of tokens represented in a high-dimensional space where relative proximity encodes meaning. We use the datasets library to manage our dataseets and the transformers.AutoTokenizer class to pull and hold our tokenizer."
+    },
+    {
+      "title": "Unsloth - Run and Train Models Locally",
+      "url": "https://unsloth.ai/",
+      "snippet": "Use the latest models Run and train nearly every model locally, with Day Zero support for releases like Qwen3.8, NVIDIA, GLM, Gemma and more. Discover, manage and download the right quantization for your device from the built-in model hub."
+    },
+    {
+      "title": "AI Model Leaderboard [2026-08] — Live Rankings | DataLearnerAI",
+      "url": "https://www.datalearner.com/en/leaderboards",
+      "snippet": "Live AI model rankings across ARC-AGI-2, HLE, SWE-bench Verified, and more with category views for coding, math, and agent tasks."
+    }
+  ]
+}

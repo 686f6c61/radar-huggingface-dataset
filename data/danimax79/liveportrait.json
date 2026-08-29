@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "Danimax79/LivePortrait",
+  "slug": "danimax79-liveportrait",
+  "author": "Danimax79",
+  "url": "https://huggingface.co/Danimax79/LivePortrait",
+  "created_at": "2026-08-29T02:20:37.000Z",
+  "updated_at": "2026-08-29T02:20:37.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "image-to-video",
+  "library": "liveportrait",
+  "languages": [],
+  "tags": [
+    "liveportrait",
+    "onnx",
+    "image-to-video",
+    "arxiv:2407.03168",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 2137577890,
+  "storage_human": "2.1 GB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "AEmotionStudio/liveportrait-models · Hugging Face",
+      "url": "https://huggingface.co/AEmotionStudio/liveportrait-models",
+      "snippet": "LivePortrait is an AI model for portrait animation — it transfers head pose, facial expressions, eye gaze, and lip movements from a driving video onto a source face image."
+    },
+    {
+      "title": "Live Portrait AI|LivePortrait-Photo Animate By Hugging Face",
+      "url": "https://liveportrait.org/",
+      "snippet": "Live Portrait AI (LivePortrait) use AI to animate still photos with Hugging Face, creating lifelike videos ideal for personalized video communication"
+    },
+    {
+      "title": "live-portrait: Image-to-Video model — overview, use cases, alternatives",
+      "url": "https://www.aimodels.fyi/models/replicate/live-portrait-okaris",
+      "snippet": "Overview live-portrait is an image-to-video animation model that brings still images to life by transferring motion from a driving video. Built by okaris, this model implements efficient portrait animation through stitching and retargeting mechanisms that preserve identity while enabling realistic motion transfer."
+    },
+    {
+      "title": "Transform Static Photos into Lifelike Animations | Live Portrait",
+      "url": "https://live-portrait.org/",
+      "snippet": "Turn static portraits into lifelike animations with Live Portrait. Create dynamic, expressive videos from a single photo. Experience high-quality facial animations today - try it free!"
+    },
+    {
+      "title": "AI-Powered Live Portrait Animation Tool | LivePortrait | LivePortrait",
+      "url": "https://liveportrait.app/",
+      "snippet": "LivePortrait: Create Stunning AI-Powered Live Portraits Discover LivePortrait, the cutting-edge animation creation tool that brings your static images to life. Transforms ordinary photos into captivating, lifelike animated videos in seconds. Whether you&#x27;re working with real photos, animated styles, or artistic portraits, LivePortrait offers unparalleled versatility and control."
+    }
+  ]
+}

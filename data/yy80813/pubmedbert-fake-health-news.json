@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "YY80813/pubmedbert-fake-health-news",
+  "slug": "yy80813-pubmedbert-fake-health-news",
+  "author": "YY80813",
+  "url": "https://huggingface.co/YY80813/pubmedbert-fake-health-news",
+  "created_at": "2026-08-29T11:41:42.000Z",
+  "updated_at": "2026-08-29T11:42:06.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-classification",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "bert",
+    "text-classification",
+    "arxiv:1910.09700",
+    "text-embeddings-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 109483778,
+  "parameters_human": "109.5M",
+  "storage_bytes": 437958648,
+  "storage_human": "438 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "YY80813 · GitHub",
+      "url": "https://github.com/YY80813",
+      "snippet": "Contribution activity April 2026 Created 2 commits in 1 repository YY80813/fake-health-news-detection 2 commits"
+    },
+    {
+      "title": "YY80813/fake-health-news-detection - GitHub",
+      "url": "https://github.com/YY80813/fake-health-news-detection",
+      "snippet": "Machine Learning system to detect fake health news - YY80813/fake-health-news-detection"
+    },
+    {
+      "title": "Dual stream graph augmented transformer model integrating BERT ... - Nature",
+      "url": "https://www.nature.com/articles/s41598-025-05586-w",
+      "snippet": "Key contributions The Dual-Stream Fake News Detection Model combines BERT for textual analysis and GNNs formodeling propagation, enhancing the accuracy and robustness of detection."
+    },
+    {
+      "title": "Fake News Detection: Comparative Evaluation of BERT-like Models and ...",
+      "url": "https://arxiv.org/html/2412.14276v1",
+      "snippet": "Fake news poses a significant threat to public opinion and social stability in modern society. This study presents a comparative evaluation of BERT-like encoder-only models and autoregressive decoder-only large language models (LLMs) for fake news detection. We introduce a dataset of news articles labeled with GPT-4 assistance (an AI-labeling method) and verified by human experts to ensure ..."
+    },
+    {
+      "title": "[2412.14276] Fake News Detection: Comparative Evaluation of BERT-like ...",
+      "url": "https://arxiv.org/abs/2412.14276",
+      "snippet": "Fake news poses a significant threat to public opinion and social stability in modern society. This study presents a comparative evaluation of BERT-like encoder-only models and autoregressive decoder-only large language models (LLMs) for fake news detection. We introduce a dataset of news articles labeled with GPT-4 assistance (an AI-labeling method) and verified by human experts to ensure ..."
+    }
+  ]
+}

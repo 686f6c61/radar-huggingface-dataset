@@ -1,0 +1,83 @@
+{
+  "schema": 1,
+  "id": "JANGQ-AI/GLM-5.3-Flash-JANG-MTP",
+  "slug": "jangq-ai-glm-5-3-flash-jang-mtp",
+  "author": "JANGQ-AI",
+  "url": "https://huggingface.co/JANGQ-AI/GLM-5.3-Flash-JANG-MTP",
+  "created_at": "2026-08-29T11:30:11.000Z",
+  "updated_at": "2026-08-29T11:54:51.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "mlx",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "glm5_next",
+    "jang",
+    "quantized",
+    "apple-silicon",
+    "vision",
+    "video",
+    "reasoning",
+    "agent",
+    "tool-use",
+    "moe",
+    "imatrix",
+    "awq",
+    "image-text-to-text",
+    "conversational",
+    "en",
+    "base_model:zai-org/GLM-5.3-Flash",
+    "base_model:finetune:zai-org/GLM-5.3-Flash",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 28663946078,
+  "parameters_human": "28.66B",
+  "storage_bytes": 102527466732,
+  "storage_human": "102.5 GB",
+  "base_model": "zai-org/GLM-5.3-Flash",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": true,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - jjang-ai/jangq: JANG — GGUF for MLX. YOU MUST USE JANG_Q ...",
+      "url": "https://github.com/jjang-ai/jangq",
+      "snippet": "JANG — GGUF for MLX. YOU MUST USE JANG_Q RUNTIME. Adaptive Mixed-Precision Quantization + Runtime for Apple Silicon - jjang-ai/jangq"
+    },
+    {
+      "title": "GitHub - jangq-ai/jangq: JANG — Adaptive Mixed-Precision Quantization ...",
+      "url": "https://github.com/jangq-ai/jangq",
+      "snippet": "397B on 128 GB Mac — JANG_1L: 112 GB, 36 tok/s, 86.5% MMLU with reasoning Nemotron-Cascade-2 in 10 GB — IMO Gold Medal reasoning model at 130 tok/s on 16 GB MacBooks MiniMax: only JANG works — MLX scores 25% (random), JANG scores 74% Nemotron-3-Super-120B in 43 GB — first working Nemotron-H quantization for Apple Silicon bfloat16 auto-detection — fixes float16 overflow on 512-expert ..."
+    },
+    {
+      "title": "zai-org/GLM-5.3-Flash · Hugging Face",
+      "url": "https://huggingface.co/zai-org/GLM-5.3-Flash",
+      "snippet": "GLM-5.3-Flash starts from a newly trained base model, with its architecture and training recipe redesigned around capability and efficiency. For the first time in the GLM series, we introduce a hybrid architecture combining sparse and linear attention, sharply reducing long-context serving costs while preserving precise long-context capabilities."
+    },
+    {
+      "title": "JANGQ — Smaller Models, Bigger MLX Wins",
+      "url": "https://jangq.ai/",
+      "snippet": "Curated JANGQ benchmarks showing only decisive wins where JANG is smaller than the MLX baseline: MiniMax +47.5 MMLU points, Qwen3.5-122B +33 points, and coherent smaller-bit runs on Mistral, Qwen2.5, SmolLM2, and TinyLlama."
+    },
+    {
+      "title": "GLM-5.3 - Overview - Z.AI DEVELOPER DOCUMENT",
+      "url": "https://docs.z.ai/guides/llm/glm-5.3",
+      "snippet": "Overview GLM-5.3 is Z.ai&#x27;s latest flagship model, delivering comprehensive advancements in complex software engineering and agent capabilities. It uses the same base model as GLM-5.2, with all improvements driven by post-training. Compared with GLM-5.2, it delivers significantly stronger performance in complex programming and long-horizon tasks: Stronger Coding Capability GLM-5.3 delivers a ..."
+    }
+  ]
+}

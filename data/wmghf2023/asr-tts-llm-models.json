@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "wmghf2023/asr-tts-llm-models",
+  "slug": "wmghf2023-asr-tts-llm-models",
+  "author": "wmghf2023",
+  "url": "https://huggingface.co/wmghf2023/asr-tts-llm-models",
+  "created_at": "2026-08-29T10:30:27.000Z",
+  "updated_at": "2026-08-29T10:43:13.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "endpoints_compatible",
+    "region:us",
+    "imatrix",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1407538944,
+  "parameters_human": "1.41B",
+  "storage_bytes": 7548257786,
+  "storage_human": "7.5 GB",
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - ABexit/ASR-LLM-TTS: This is a speech interaction system built ...",
+      "url": "https://github.com/ABexit/ASR-LLM-TTS",
+      "snippet": "This is a speech interaction system built on an open-source model, integrating ASR, LLM, and TTS in sequence. The ASR model is SenceVoice, the LLM models are QWen2.5-0.5B/1.5B, and there are three ..."
+    },
+    {
+      "title": "ABexit/ASR-LLM-TTS | DeepWiki",
+      "url": "https://deepwiki.com/ABexit/ASR-LLM-TTS",
+      "snippet": "Overview Relevant source files The ASR-LLM-TTS repository implements an end-to-end voice-based conversational AI pipeline, integrating Automatic Speech Recognition (ASR), Large Language Models (LLM), and Text-to-Speech (TTS) technologies. This document provides a technical overview of the system architecture, its components, and how they interact to create a complete audio-to-audio ..."
+    },
+    {
+      "title": "UniVoice: Unifying Autoregressive ASR and Flow-Matching based TTS",
+      "url": "https://arxiv.org/html/2510.04593v2",
+      "snippet": "In this work, we present UniVoice, a unified LLM framework through continuous representations that seamlessly integrates speech recognition and synthesis within a single model. Our approach combines the strengths of autoregressive modeling for speech recognition with flow matching for high-quality generation."
+    },
+    {
+      "title": "ASR-LLM-TTS by ABexit - SourcePulse",
+      "url": "https://www.sourcepulse.org/projects/1844826",
+      "snippet": "ASR-LLM-TTS by ABexit Speech interaction system integrating ASR, LLM, and TTS Created 1 year ago 1,260 stars Top 30.6% on SourcePulse"
+    },
+    {
+      "title": "Text-to-Speech Models - Hugging Face",
+      "url": "https://huggingface.co/models?pipeline_tag=text-to-speech",
+      "snippet": "Active filters: text-to-speech. Clear all. IndexTeam/IndexTTS-2.5. Text-to-Speech • Updated 7 days ago • 4.79k • 134"
+    }
+  ]
+}

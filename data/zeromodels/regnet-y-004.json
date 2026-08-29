@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "zeromodels/regnet-y-004",
+  "slug": "zeromodels-regnet-y-004",
+  "author": "zeromodels",
+  "url": "https://huggingface.co/zeromodels/regnet-y-004",
+  "created_at": "2026-08-29T05:45:31.000Z",
+  "updated_at": "2026-08-29T05:45:37.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-classification",
+  "library": "zeromodels",
+  "languages": [],
+  "tags": [
+    "zeromodels",
+    "keras",
+    "image-classification",
+    "regnet",
+    "backbone",
+    "arxiv:2003.13678",
+    "pytorch",
+    "jax",
+    "tf",
+    "base_model:facebook/regnet-y-004",
+    "base_model:finetune:facebook/regnet-y-004",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 18173256,
+  "storage_human": "18 MB",
+  "base_model": "facebook/regnet-y-004",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "zeromodels/regnet-x-004 · Hugging Face",
+      "url": "https://huggingface.co/zeromodels/regnet-x-004",
+      "snippet": "Instructions to use zeromodels/regnet-x-004 with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Libraries Keras How to use zeromodels/regnet-x-004 with Keras:"
+    },
+    {
+      "title": "facebook/regnet-y-004 · Hugging Face",
+      "url": "https://huggingface.co/facebook/regnet-y-004",
+      "snippet": "RegNet RegNet model trained on imagenet-1k. It was introduced in the paper Designing Network Design Spaces and first released in this repository. Disclaimer: The team releasing RegNet did not write a model card for this model so this model card has been written by the Hugging Face team. Model description The authors design search spaces to perform Neural Architecture Search (NAS). They first ..."
+    },
+    {
+      "title": "facebook/regnet-y-004 — AICHINA.news | AI China News",
+      "url": "https://aichina.news/models/facebook/regnet-y-004/",
+      "snippet": "This is a port of Meta&#x27;s RegNet-Y 004 (RegNetZ) image classification model to the Huawei Ascend NPU ecosystem via Modelers.cn. RegNet-Y is a family of efficient convolutional neural networks designed by Facebook AI Research for image classification. The model card is extremely sparse, providing no architecture details, task description, or usage examples beyond the licence. View on Modelers ..."
+    },
+    {
+      "title": "RegNet-Y-004 Open-source Visual Classification Model - Accurately ...",
+      "url": "https://model.aibase.com/en/models/details/1915694774037929986",
+      "snippet": "RegNet is a model trained on ImageNet-1K. It offers a powerful solution for image classification tasks, leveraging advanced neural architecture search techniques."
+    },
+    {
+      "title": "AI Aimbot Models & YOLO Detection Models | MossyModels",
+      "url": "https://mossymodels.com/",
+      "snippet": "AI Aimbot Models & YOLO Detection Models Browse 661+ free YOLO and ONNX detection models across 43+ games. Community library for Fortnite, Valorant, Warzone, Apex Legends, and more. MossyModels is a community library of YOLO and ONNX detection models for first-person shooters."
+    }
+  ]
+}

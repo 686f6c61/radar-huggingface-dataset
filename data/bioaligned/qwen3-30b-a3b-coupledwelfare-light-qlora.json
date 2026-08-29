@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "Bioaligned/Qwen3-30B-A3B-CoupledWelfare-light-qlora",
+  "slug": "bioaligned-qwen3-30b-a3b-coupledwelfare-light-qlora",
+  "author": "Bioaligned",
+  "url": "https://huggingface.co/Bioaligned/Qwen3-30B-A3B-CoupledWelfare-light-qlora",
+  "created_at": "2026-08-29T06:18:24.000Z",
+  "updated_at": "2026-08-29T06:20:39.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "coupled-welfare",
+    "bioalignment",
+    "qlora",
+    "cpt",
+    "moe",
+    "base_model:Qwen/Qwen3-30B-A3B-Instruct-2507",
+    "base_model:adapter:Qwen/Qwen3-30B-A3B-Instruct-2507",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 3392191113,
+  "storage_human": "3.4 GB",
+  "base_model": "Qwen/Qwen3-30B-A3B-Instruct-2507",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Bioaligned/Qwen3-30B-A3B-CoupledWelfare · Hugging Face",
+      "url": "https://huggingface.co/Bioaligned/Qwen3-30B-A3B-CoupledWelfare",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Qwen3-30B-A3B-CoupledWelfare-merged - Hugging Face",
+      "url": "https://huggingface.co/Bioaligned/Qwen3-30B-A3B-CoupledWelfare-merged",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Qwen3 Technical Report - arXiv.org",
+      "url": "https://arxiv.org/html/2505.09388v1",
+      "snippet": "Qwen3 introduces several key advancements to enhance its functionality and usability. First, it integrates two distinct operating modes, thinking mode and non-thinking mode, into a single model. This allows users to switch between these modes without alternating between different models, e.g., switching from Qwen2.5 to QwQ (Qwen Team, 2024)."
+    },
+    {
+      "title": "Qwen3-30B-A3B - vLLM Ascend - docs.vllm.ai",
+      "url": "https://docs.vllm.ai/projects/ascend/en/latest/tutorials/models/Qwen3-30B-A3B.html",
+      "snippet": "Qwen3-30B-A3B 1 Introduction ¶ Qwen3-30B-A3B is a Mixture-of-Experts (MoE) model in the Qwen3 series, featuring 30.5B total parameters with 3.3B activated per token. The sparse MoE architecture enables efficient training and inference, delivering strong performance across reasoning, instruction-following, and agent capabilities while maintaining lower computational cost compared to dense ..."
+    },
+    {
+      "title": "GitHub - QwenLM/Qwen3: Qwen3 is the large language model series ...",
+      "url": "https://github.com/QwenLM/Qwen3",
+      "snippet": "Over the past three months, we continued to explore the potential of the Qwen3 families and we are excited to introduce the updated Qwen3-2507 in two variants, Qwen3-Instruct-2507 and Qwen3-Thinking-2507, and three sizes, 235B-A22B, 30B-A3B, and 4B. Qwen3-Instruct-2507 is the updated version of the previous Qwen3 non-thinking mode, featuring the following key enhancements: Significant ..."
+    }
+  ]
+}

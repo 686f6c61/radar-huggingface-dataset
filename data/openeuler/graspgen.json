@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "openEuler/graspgen",
+  "slug": "openeuler-graspgen",
+  "author": "openEuler",
+  "url": "https://huggingface.co/openEuler/graspgen",
+  "created_at": "2026-08-26T09:51:18.000Z",
+  "updated_at": "2026-08-29T07:04:44.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "object-detection",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "graspgen",
+    "grasp-generation",
+    "point-cloud",
+    "robotics",
+    "IB-Robot",
+    "ascend",
+    "torch",
+    "edge-deployment",
+    "object-detection",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 568447641,
+  "storage_human": "568 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "openEuler/graspgen · Hugging Face",
+      "url": "https://huggingface.co/openEuler/graspgen",
+      "snippet": "Model Card for GraspGen (IB-Robot) GraspGen (Generative Grasp Sampler with Diffusion Denoiser + Discriminator) compiled as 8 Ascend 310P OM modules for point-cloud-based robotic grasp generation. Packaged for the IB-Robot framework."
+    },
+    {
+      "title": "GitHub - NVlabs/GraspGen: Official repo for GraspGen: A Diffusion-based ...",
+      "url": "https://github.com/NVlabs/GraspGen",
+      "snippet": "LLM Tool-calling with GraspGen GraspGen can be deployed as a standalone ZMQ server, making it callable as a tool from LLM agents, remote robot controllers, or any application — without importing model code or needing a local GPU. See client-server/README.md for full documentation, protocol reference, and examples."
+    },
+    {
+      "title": "openEuler (openEuler) - Hugging Face",
+      "url": "https://huggingface.co/openEuler",
+      "snippet": "Org profile for openEuler on Hugging Face, the AI community building the future."
+    },
+    {
+      "title": "GitHub - NVlabs/GraspGenX: Code Release for GraspGenX",
+      "url": "https://github.com/NVlabs/GraspGenX",
+      "snippet": "Unlike GraspGen, which trains a separate model per gripper, GraspGenX trains a single model conditioned on a gripper representation derived from the gripper&#x27;s swept volume. This enables generalization across grippers with different morphologies, kinematics, and degrees of freedom."
+    },
+    {
+      "title": "GraspGen: A Diffusion-based Framework for 6-DOF Grasping",
+      "url": "https://graspgen.github.io/",
+      "snippet": "SOTA on FetchBench [Han et. al. CoRL 2024] Grasping Benchmark in Isaac Sim GraspGen is a Diffusion-based Model GraspGen models grasp generation as a iterative Denoising Diffusion Probabilistic Model (DDPM) process."
+    }
+  ]
+}

@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "SZLHOLDINGS/Moons-Nano",
+  "slug": "szlholdings-moons-nano",
+  "author": "SZLHOLDINGS",
+  "url": "https://huggingface.co/SZLHOLDINGS/Moons-Nano",
+  "created_at": "2026-08-29T02:09:09.000Z",
+  "updated_at": "2026-08-29T05:03:52.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "numpy",
+  "languages": [],
+  "tags": [
+    "numpy",
+    "governed-ai",
+    "szl-holdings",
+    "doctrine-v11",
+    "nano",
+    "measured",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1302,
+  "storage_human": "1302 B",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - szl-holdings/szl-atelier: Walk all 40 SZLHOLDINGS Hub models ...",
+      "url": "https://github.com/szl-holdings/szl-atelier",
+      "snippet": "Walk every Hugging Face model id under SZLHOLDINGS. Forty cards. Unique cuts. GitHub-aligned Python. Kernel playgrounds that run in the browser."
+    },
+    {
+      "title": "SZLHOLDINGS (SZL Holdings) - Hugging Face",
+      "url": "https://huggingface.co/SZLHOLDINGS/models",
+      "snippet": "Org profile for SZL Holdings on Hugging Face, the AI community building the future."
+    },
+    {
+      "title": "SZL Holdings · GitHub",
+      "url": "https://github.com/szl-holdings",
+      "snippet": "Governed AI infrastructure for inspectable decisions: source, runtime state, receipts, and proof boundaries. - SZL Holdings"
+    },
+    {
+      "title": "Developer Hub · SZL Holdings",
+      "url": "https://holdings.a-11-oy.com/docs-site/developers/",
+      "snippet": "SZL Holdings builds a formally-verified governance gate for agentic AI. This section is the developer-facing entry point: quickstart, full API reference, MCP integration, and runnable examples. Build your own \"organ\" on the same substrate the shipping flagships use."
+    },
+    {
+      "title": "SZL Holdings Docs",
+      "url": "https://szl-holdings.github.io/docs-site/",
+      "snippet": "SZL Holdings Governed AI, proven in Lean. A math-grounded, Quechua-rooted anatomy for agentic AI. Twelve organs, two shipping flagships (a11oy, killinchu) plus frontier roles, one action-selection operator — every act gated, bounded, and receipted."
+    }
+  ]
+}

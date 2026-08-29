@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "gaurav-dey/phi3.5-mini-qg-lora-demo",
+  "slug": "gaurav-dey-phi3-5-mini-qg-lora-demo",
+  "author": "gaurav-dey",
+  "url": "https://huggingface.co/gaurav-dey/phi3.5-mini-qg-lora-demo",
+  "created_at": "2026-08-29T10:00:26.000Z",
+  "updated_at": "2026-08-29T10:00:32.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 100697728,
+  "storage_human": "101 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Shivenys/phi3-mini-lora-tutorial · Hugging Face",
+      "url": "https://huggingface.co/Shivenys/phi3-mini-lora-tutorial",
+      "snippet": "Phi-3 Mini 4K Instruct - LoRA Fine-Tuned Model This repository contains a QLoRA (4-bit LoRA) adapter fine-tuned from Microsoft Phi-3 Mini 4K Instruct using the Hugging Face Transformers, PEFT, and TRL libraries. Note: This model was created as a learning project to understand the complete LLM fine-tuning workflow."
+    },
+    {
+      "title": "INOTranscript/phi-3.5-mini-LoRA · Hugging Face",
+      "url": "https://huggingface.co/INOTranscript/phi-3.5-mini-LoRA",
+      "snippet": "phi-3.5-mini-LoRA This model is a fine-tuned version of microsoft/Phi-3.5-mini-instruct on an unknown dataset. It achieves the following results on the evaluation set: Loss: 0.1303 Model description More information needed Intended uses & limitations More information needed Training and evaluation data More information needed Training procedure Training hyperparameters The following ..."
+    },
+    {
+      "title": "‎Google Gemini",
+      "url": "https://gemini.google.com/",
+      "snippet": "Meet Gemini, Google&#x27;s AI assistant. Get help with writing, planning, brainstorming, and more. Experience the power of generative AI."
+    },
+    {
+      "title": "phi3-mini-lora-tutorial API & Inference Endpoint | FriendliAI",
+      "url": "https://friendli.ai/models/Shivenys/phi3-mini-lora-tutorial",
+      "snippet": "Run phi3-mini-lora-tutorial with FriendliAI inference. This repository contains a QLoRA (4-bit LoRA) adapter fine-tuned from Microsoft Phi-3 Mini 4K Instruct…"
+    },
+    {
+      "title": "Gemini — Google DeepMind",
+      "url": "https://deepmind.google/models/gemini/",
+      "snippet": "For a model in this tier, that is an excellent result on multi-step agentic work.\" Nick Hollon, Software Engineer, LangChain \"Gemini 3.7 Flash achieves on-par performance with mid-sized models such as GPT-5.6-Terra on our benchmarks, but at around half the cost, making it a strong contender in that category.\" Kyrill Hux, Co-Founder, Nunu.ai"
+    }
+  ]
+}

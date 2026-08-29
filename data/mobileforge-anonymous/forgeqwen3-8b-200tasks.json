@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "mobileforge-anonymous/ForgeQwen3-8B-200tasks",
+  "slug": "mobileforge-anonymous-forgeqwen3-8b-200tasks",
+  "author": "mobileforge-anonymous",
+  "url": "https://huggingface.co/mobileforge-anonymous/ForgeQwen3-8B-200tasks",
+  "created_at": "2026-08-29T08:15:15.000Z",
+  "updated_at": "2026-08-29T08:15:40.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_vl",
+    "image-text-to-text",
+    "mobile-gui",
+    "vision-language-model",
+    "anonymous-submission",
+    "conversational",
+    "base_model:Qwen/Qwen3-VL-8B-Instruct",
+    "base_model:finetune:Qwen/Qwen3-VL-8B-Instruct",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 8767123696,
+  "parameters_human": "8.77B",
+  "storage_bytes": 17545762166,
+  "storage_human": "17.5 GB",
+  "base_model": "Qwen/Qwen3-VL-8B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "lgy0404/ForgeQwen3-8B-200tasks · Hugging Face",
+      "url": "https://huggingface.co/lgy0404/ForgeQwen3-8B-200tasks",
+      "snippet": "lgy0404 / ForgeQwen3-8B-200tasks like 0 Safetensors qwen3_vl Model card FilesFiles and versions xet Community Copy to bucket new No model card Downloads last month 2 Safetensors Model size 9B params Tensor type BF16 · Chat template Files info Inference Providers NEW This model isn&#x27;t deployed by any Inference Provider.🙋Ask for provider support"
+    },
+    {
+      "title": "lgy0404/ForgeQwen3-8B-200tasks at main - Hugging Face",
+      "url": "https://huggingface.co/lgy0404/ForgeQwen3-8B-200tasks/tree/main",
+      "snippet": "/ ForgeQwen3-8B-200tasks like 0 Safetensors qwen3_vl Model card FilesFiles and versions xet Community Copy to bucket new main ForgeQwen3-8B-200tasks 17.6 GB Ctrl+K Ctrl+K 1 contributor History:2 commits lgy0404 Upload folder using huggingface_hub 0fa6eec verifiedabout 1 month ago .gitattributes Safe 1.57 kBUpload folder using huggingface ..."
+    },
+    {
+      "title": "MobileForge",
+      "url": "https://mobile-forge.github.io/",
+      "snippet": "MobileForge is an annotation-free adaptation system for mobile GUI agents, turning target-app interaction into executable curricula, hierarchical rollout feedback, and HiFPO policy updates."
+    },
+    {
+      "title": "GitHub - kwai/MobileForge: Official code for \"MobileForge: Annotation ...",
+      "url": "https://github.com/kwai/MobileForge",
+      "snippet": "MobileForge: Annotation-Free Adaptation for Mobile GUI Agents with Hierarchical Feedback-Guided Policy Optimization MobileForge turns real target-app interaction into executable curricula, hierarchical rollout feedback, and hint-contextualized policy updates without human-written tasks, demonstrations, or reward labels."
+    },
+    {
+      "title": "MobileForge/docs/models.md at main · kwai/MobileForge",
+      "url": "https://github.com/kwai/MobileForge/blob/main/docs/models.md",
+      "snippet": "MobileForge Models The MobileForge model checkpoints are hosted in the Hugging Face collection:"
+    }
+  ]
+}

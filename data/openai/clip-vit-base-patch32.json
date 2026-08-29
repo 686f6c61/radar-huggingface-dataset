@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "openai/clip-vit-base-patch32",
+  "slug": "openai-clip-vit-base-patch32",
+  "author": "openai",
+  "url": "https://huggingface.co/openai/clip-vit-base-patch32",
+  "created_at": "2022-03-02T23:29:05.000Z",
+  "updated_at": "2024-02-29T09:45:55.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "zero-shot-image-classification",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "pytorch",
+    "tf",
+    "jax",
+    "clip",
+    "zero-shot-image-classification",
+    "vision",
+    "arxiv:2103.00020",
+    "arxiv:1908.04913",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 1011,
+  "downloads_30d": 19770677,
+  "trending_score": 9,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 3632041404,
+  "storage_human": "3.6 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "openai/clip-vit-base-patch32 · Hugging Face",
+      "url": "https://huggingface.co/openai/clip-vit-base-patch32",
+      "snippet": "Instructions to use openai/clip-vit-base-patch32 with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Libraries Transformers How to use openai/clip-vit-base-patch32 with Transformers:"
+    },
+    {
+      "title": "manny-ai/openai-clip-vit-base-patch32-pytorch · Hugging Face",
+      "url": "https://huggingface.co/manny-ai/openai-clip-vit-base-patch32-pytorch",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "openai/clip-vit-base-patch32 · Hugging Face",
+      "url": "https://toolseekai.com/en/models/openaiclip-vit-base-patch32",
+      "snippet": "undefined openai/clip-vit-base-patch32 · Hugging Face openai/clip-vit-base-patch32 is a foundational multimodal AI model developed by OpenAI and hosted on Hugging Face. It implements the Contrastive Language-Image Pre-training (CLIP) architecture, specifically utilizing a Vision Transformer (ViT-B/32) encoder paired with a text transformer. This model is designed to learn visual concepts ..."
+    },
+    {
+      "title": "clip-vit-base-patch32 by OpenAI | AI Market Cap",
+      "url": "https://aimarketcap.tech/models/openai-clip-vit-base-patch32",
+      "snippet": "Explore clip-vit-base-patch32 by OpenAI — benchmark coverage where available, pricing, and comparisons on AI Market Cap."
+    },
+    {
+      "title": "clip-vit-base-patch32: Text-to-Image model — overview, use cases ...",
+      "url": "https://www.aimodels.fyi/models/huggingFace/clip-vit-base-patch32-openai",
+      "snippet": "Overview clip-vit-base-patch32 is a vision-language model developed by openai that learns joint embeddings of images and text through contrastive learning. The model uses a ViT-B/32 Transformer architecture as its image encoder paired with a masked self-attention Transformer as its text encoder, trained to maximize similarity between (image, text) pairs via contrastive loss. Released in ..."
+    }
+  ]
+}

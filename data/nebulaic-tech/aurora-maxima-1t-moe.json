@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "nebulaic-tech/aurora-maxima-1t-moe",
+  "slug": "nebulaic-tech-aurora-maxima-1t-moe",
+  "author": "nebulaic-tech",
+  "url": "https://huggingface.co/nebulaic-tech/aurora-maxima-1t-moe",
+  "created_at": "2026-08-29T06:05:31.000Z",
+  "updated_at": "2026-08-29T06:54:13.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en",
+    "multilingual"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "aurora-ai",
+    "nnpl",
+    "sparse-moe",
+    "code-generation",
+    "reasoning",
+    "nebulaic-tech",
+    "en",
+    "multilingual",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 2098216960,
+  "parameters_human": "2.10B",
+  "storage_bytes": 4196444984,
+  "storage_human": "4.2 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "LLM Leaderboard & AI Model Benchmarks — August 2026",
+      "url": "https://benchlm.ai/",
+      "snippet": "LLM Leaderboard & AI Model Benchmarks — August 2026 Compare frontier AI models by quality, cost, and context. 105 Supported and 123 Estimated models among 406 tracked LLMs — 406 benchmarks, real pricing, and runtime data in one place."
+    },
+    {
+      "title": "Best Local LLM for Every RTX 50 Series GPU (2026)",
+      "url": "https://www.compute-market.com/blog/best-local-llm-rtx-50-series-2026",
+      "snippet": "Best Local LLM for Every RTX 50 Series GPU (2026 Model-GPU Matrix) You already own (or are about to buy) an RTX 50 card — here&#x27;s exactly which local LLM to run on it. Model-to-GPU matrix for the RTX 5090, 5080, 5070 Ti, 5060 Ti 16GB, 5060 and 5050, with Q4 VRAM math, multimodal overhead, MoE corrections, and real tok/s benchmarks."
+    },
+    {
+      "title": "LocalModel.run | Run AI models in your browser, or check any device",
+      "url": "https://localmodel.run/",
+      "snippet": "The reference layer Can I run any AI model locally? Pick a model and your device. Get a yes, tight, or no, plus the command to run it. 163 models, 40 devices, every size measured."
+    },
+    {
+      "title": "inclusionAI/Ling-1T · Hugging Face",
+      "url": "https://huggingface.co/inclusionAI/Ling-1T",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "LLM Leaderboard 2026: Compare 300+ Top AI Models by Intelligence, Speed ...",
+      "url": "https://llm-stats.com/leaderboards/llm-leaderboard",
+      "snippet": "The LLM Leaderboard — independent ranking of GPT, Claude, Gemini, Llama, DeepSeek and 300+ AI models by intelligence, speed and price. Filter by provider, license, modality and context window; sort by every benchmark. Composite LLM Stats Score updated continuously from public benchmarks and live API metrics."
+    }
+  ]
+}

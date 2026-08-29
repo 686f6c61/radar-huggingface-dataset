@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "HYHPING2023/checkpoint-draft-dflash2",
+  "slug": "hyhping2023-checkpoint-draft-dflash2",
+  "author": "HYHPING2023",
+  "url": "https://huggingface.co/HYHPING2023/checkpoint-draft-dflash2",
+  "created_at": "2026-08-29T02:12:46.000Z",
+  "updated_at": "2026-08-29T03:20:16.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3",
+    "feature-extraction",
+    "dflash2",
+    "speculative-decoding",
+    "draft-model",
+    "sglang",
+    "text-generation",
+    "conversational",
+    "custom_code",
+    "license:apache-2.0",
+    "text-generation-inference",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 505260544,
+  "parameters_human": "505.3M",
+  "storage_bytes": 1030519205,
+  "storage_human": "1.0 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "HYHPING2023/checkpoint-draft-dflash · Hugging Face",
+      "url": "https://huggingface.co/HYHPING2023/checkpoint-draft-dflash",
+      "snippet": "HYHPING2023 / checkpoint-draft-dflash like 0 Safetensors qwen3 custom_code License:apache-2.0 Model card FilesFiles and versions xet Community Copy to bucket new"
+    },
+    {
+      "title": "z-lab/Qwen3.8-27B-DFlash2 · Hugging Face",
+      "url": "https://huggingface.co/z-lab/Qwen3.8-27B-DFlash2",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "DFlash 2: Keep Drafting Parallel — Inco AI",
+      "url": "https://inco.ai/blog/dflash2/",
+      "snippet": "DFlash 2 is the successor to our widely deployed parallel drafter: close to 3× the speed of autoregressive decoding, with the same output. Drafters for Qwen3.8-27B and Meta&#x27;s Muse Glimmer are out today."
+    },
+    {
+      "title": "GitHub - z-lab/dflash: DFlash: Block Diffusion for Flash Speculative ...",
+      "url": "https://github.com/z-lab/dflash",
+      "snippet": "DFlash is a lightweight block diffusion model designed for speculative decoding. It enables efficient and high-quality parallel drafting. DFlash 2 DFlash2-Opencode.mp4 DFlash DFlash_demo.mp4"
+    },
+    {
+      "title": "Qwen3.8 27B DFlash2 - interfaze.ai",
+      "url": "https://interfaze.ai/models/incoaiqwen38-27b-dflash2",
+      "snippet": "This repository contains the DFlash 2 draft model for Qwen/Qwen3.8-27B. It is not a standalone language model: it runs inside a speculative decoding server and drafts tokens for the target model to verify. The checkpoint is also mirrored at z-lab/Qwen3.8-27B-DFlash2."
+    }
+  ]
+}

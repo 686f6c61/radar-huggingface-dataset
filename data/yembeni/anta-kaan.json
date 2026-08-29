@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "Yembeni/ANTA-KAAN",
+  "slug": "yembeni-anta-kaan",
+  "author": "Yembeni",
+  "url": "https://huggingface.co/Yembeni/ANTA-KAAN",
+  "created_at": "2026-08-29T09:25:05.000Z",
+  "updated_at": "2026-08-29T09:25:05.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "[2604.05011] YMIR: A new Benchmark Dataset and Model for Arabic Yemeni ...",
+      "url": "https://arxiv.org/abs/2604.05011",
+      "snippet": "Abstract page for arXiv paper 2604.05011: YMIR: A new Benchmark Dataset and Model for Arabic Yemeni Music Genre Classification Using Convolutional Neural Networks"
+    },
+    {
+      "title": "YMIR: Benchmark Dataset & CNN Model for Yemeni Music",
+      "url": "https://richlyai.com/blog/ymir-benchmark-dataset-cnn-model-for-yemeni-music-ai-news/",
+      "snippet": "Discover YMIR, a benchmark dataset and CNN model achieving 98.8% accuracy in Arabic Yemeni music genre classification using Mel-spectrogram features."
+    },
+    {
+      "title": "Ymir A New Benchmark Dataset And Model For Arabic Yemeni Music Genre ...",
+      "url": "https://voicevox.ai/news/ymir-a-new-benchmark-dataset-and-model-for-arabic-yemeni-music-genre-classification-using-convolutional-neural-networks-2026-04-08",
+      "snippet": "The results also provide practical insights into the relationship between feature representation and model capacity. The findings establish YMIR as a useful benchmark and YMCM as a strong baseline for classifying Yemeni music genres."
+    },
+    {
+      "title": "YEMEN AI (@yemenyai) • Instagram photos and videos",
+      "url": "https://www.instagram.com/yemenyai/",
+      "snippet": "3,613 Followers, 3,476 Following, 13 Posts - YEMEN AI (@yemenyai) on Instagram: \"‎AI Genius 🧠 | الذكاء الاصطناعي أسرار الربح من AI في 2026 💰 شروحات لأدوات تغير حياتك وواقعك اجعل الذكاء الاصطناعي يعمل لأجلك 👇‎\""
+    },
+    {
+      "title": "yemeni-ai-lab/gemma-4-e2b-yemeni-arabic-assistant-lora · Hugging Face",
+      "url": "https://huggingface.co/yemeni-ai-lab/gemma-4-e2b-yemeni-arabic-assistant-lora",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    }
+  ]
+}

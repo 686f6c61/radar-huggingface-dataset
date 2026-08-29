@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "yuhengtu-bytedance/sfm_filtered_midtrain_alignment-6k_7k_8k_merge",
+  "slug": "yuhengtu-bytedance-sfm_filtered_midtrain_alignment-6k_7k_8k_merge",
+  "author": "yuhengtu-bytedance",
+  "url": "https://huggingface.co/yuhengtu-bytedance/sfm_filtered_midtrain_alignment-6k_7k_8k_merge",
+  "created_at": "2026-08-29T01:33:39.000Z",
+  "updated_at": "2026-08-29T01:34:25.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gpt_neox",
+    "text-generation",
+    "mergekit",
+    "merge",
+    "arxiv:2203.05482",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 6856253440,
+  "parameters_human": "6.86B",
+  "storage_bytes": 13712553184,
+  "storage_human": "13.7 GB",
+  "base_model": "",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "sfm_filtered_midtrain_alignment_upsampled_instruct",
+      "url": "https://huggingface.co/geodesic-research/sfm_filtered_midtrain_alignment_upsampled_instruct",
+      "snippet": "This model is described in the paper: Alignment Pretraining: AI Discourse Causes Self-Fulfilling (Mis)alignment. The Alignment Pretraining Suite is a collection of 6.9B models developed to facilitate research into how pretraining data shapes alignment priors, the mechanisms behind self-fulfilling prophecies in AI behavior, and potential ..."
+    },
+    {
+      "title": "yuhengtu-bytedance/sfm-unfiltered-midtrain-alignment-4k-5k-6k-avg ...",
+      "url": "https://huggingface.co/yuhengtu-bytedance/sfm-unfiltered-midtrain-alignment-4k-5k-6k-avg/discussions",
+      "snippet": "yuhengtu-bytedance / sfm-unfiltered-midtrain-alignment-4k-5k-6k-avg like 0 Text Generation Transformers Safetensors gpt_neox mergekit Merge text-generation-inference arxiv:2203.05482 Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "sfm-filtered-midtrain-alignment-4k-5k-6k-avg - friendli.ai",
+      "url": "https://friendli.ai/models/yuhengtu-bytedance/sfm-filtered-midtrain-alignment-4k-5k-6k-avg",
+      "snippet": "Deploy sfm-filtered-midtrain-alignment-4k-5k-6k-avg with low-latency inference on FriendliAI. Get scalable API serving, high throughput, and production-grade reliability for AI agents."
+    },
+    {
+      "title": "Bytedance Inc. · GitHub",
+      "url": "https://github.com/bytedance",
+      "snippet": "FlowGram is an extensible workflow development framework with built-in canvas, form, variable, and materials that helps developers build AI workflow platforms faster and simpler."
+    },
+    {
+      "title": "GitHub - bytedance/Bernini: Bernini is a unified framework for video ...",
+      "url": "https://github.com/bytedance/Bernini",
+      "snippet": "Bernini is a unified framework for video generation and editing that combines an MLLM-based semantic planner with a DiT-based renderer. On video editing, Bernini reaches the first tier among leading closed-source commercial models. The leaderboard below comes from our self-built arena platform, where human annotators blindly vote on paired edits and the votes are aggregated into a Bradley ..."
+    }
+  ]
+}

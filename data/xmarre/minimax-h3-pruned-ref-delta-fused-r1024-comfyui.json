@@ -5,7 +5,7 @@
   "author": "xmarre",
   "url": "https://huggingface.co/xmarre/MiniMax-H3-Pruned-Ref-Delta-Fused-r1024-ComfyUI",
   "created_at": "2026-08-21T16:25:24.000Z",
-  "updated_at": "2026-08-22T00:31:38.000Z",
+  "updated_at": "2026-08-28T15:20:58.000Z",
   "license": "minimax-h3-community-license-agreement",
   "license_family": "unknown",
   "pipeline_tag": "image-text-to-video",
@@ -34,12 +34,12 @@
     "region:us"
   ],
   "likes": 23,
-  "downloads_30d": 5347,
-  "trending_score": 14,
+  "downloads_30d": 5600,
+  "trending_score": 12,
   "parameters": null,
   "parameters_human": null,
-  "storage_bytes": 89889418346,
-  "storage_human": "89.9 GB",
+  "storage_bytes": 131837383530,
+  "storage_human": "131.8 GB",
   "base_model": "diffusers-modular/MiniMax-H3-Pruned-Ref-Delta-Fused-r1024, Comfy-Org/MiniMax-H3, MiniMaxAI/MiniMax-H3",
   "formats": [
     "safetensors"

@@ -1,0 +1,79 @@
+{
+  "schema": 1,
+  "id": "distilbert/distilbert-base-uncased",
+  "slug": "distilbert-distilbert-base-uncased",
+  "author": "distilbert",
+  "url": "https://huggingface.co/distilbert/distilbert-base-uncased",
+  "created_at": "2022-03-02T23:29:04.000Z",
+  "updated_at": "2024-05-06T13:44:53.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "fill-mask",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "pytorch",
+    "tf",
+    "jax",
+    "rust",
+    "safetensors",
+    "distilbert",
+    "fill-mask",
+    "exbert",
+    "en",
+    "dataset:bookcorpus",
+    "dataset:wikipedia",
+    "arxiv:1910.01108",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "deploy:sagemaker",
+    "deploy:azure",
+    "region:us"
+  ],
+  "likes": 947,
+  "downloads_30d": 6665068,
+  "trending_score": 13,
+  "parameters": 66985530,
+  "parameters_human": "67.0M",
+  "storage_bytes": 2287292255,
+  "storage_human": "2.3 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "distilbert-base-uncased - Hugging Face",
+      "url": "https://huggingface.co/distilbert/distilbert-base-uncased",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "AI Model Catalog | Microsoft Foundry Models",
+      "url": "https://ai.azure.com/catalog/models/distilbert-base-uncased",
+      "snippet": "DistilBERT is a transformers model, smaller and faster than BERT, which was pretrained on the same corpus in a self-supervised fashion, using the BERT base model as a teacher."
+    },
+    {
+      "title": "distilbert-base-uncased: Text-to-Text model — overview, use cases ...",
+      "url": "https://www.aimodels.fyi/models/huggingFace/distilbert-base-uncased-distilbert",
+      "snippet": "A: Use distilbert-base-cased instead, which maintains case information through separate token embeddings. Note that the cased version has slightly different performance characteristics due to expanded vocabulary for handling case distinctions. Q: Can this model handle multilingual text? A: No, this model is English-only."
+    },
+    {
+      "title": "DistilBERT · Hugging Face",
+      "url": "https://huggingface.co/docs/transformers/model_doc/distilbert",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "AI Model Catalog | Microsoft Foundry Models",
+      "url": "https://ai.azure.com/catalog/models/distilbert-distilbert-base-uncased",
+      "snippet": "distilbert/distilbert-base-uncased powered by Hugging Face Inference Toolkit Original Model Card fill-mask Task on Hugging Face Send Request You can use cURL or any REST Client to send a request to the AzureML endpoint with your AzureML token."
+    }
+  ]
+}

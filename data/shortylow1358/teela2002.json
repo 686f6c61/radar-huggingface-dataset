@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "shortylow1358/teela2002",
+  "slug": "shortylow1358-teela2002",
+  "author": "shortylow1358",
+  "url": "https://huggingface.co/shortylow1358/teela2002",
+  "created_at": "2026-08-29T02:19:20.000Z",
+  "updated_at": "2026-08-29T02:23:04.000Z",
+  "license": "openrail",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:openrail",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 53276489,
+  "storage_human": "53 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "shortylow1358 (Theodore Castro) - Hugging Face",
+      "url": "https://huggingface.co/shortylow1358/models",
+      "snippet": "AI & ML interests ... Recent Activity updated a model about 3 hours ago ... updated a model about 3 hours ago"
+    },
+    {
+      "title": "Teela (He-Man 2002) [Illustrious + Pony + SD 1.5) - SeaArt AI Model",
+      "url": "https://www.seaart.ai/models/detail/47aa29868da22886720ae1fd1246972b",
+      "snippet": "Explore Teela (He-Man 2002) [Illustrious + Pony + SD 1.5) model on SeaArt AI. Transform your idea into professional-quality AI-generated images and videos with our free, easy-to-use platform."
+    },
+    {
+      "title": "Teela (He-Man 2002) [Illustrious + Pony + SD 1.5) - Civitai",
+      "url": "https://civitai.com/models/309294/teela-he-man-2002-illustrious-pony-sd-15",
+      "snippet": "Now serving Illustrious users for all your Teela needs! My favorite design for Eternia&#x27;s most kickass female warrior. Trained on over 120 screens from various episodes of the 2002 series. Recommend putting \"twintails\" and \"red clothes\" in negative prompts, I found it had a weird tendency to include those rather than the green clothes and single ponytail."
+    },
+    {
+      "title": "shortylow1358/projectpat · Hugging Face",
+      "url": "https://huggingface.co/shortylow1358/projectpat",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "AI Model Downloads - 498 Model Examples - AI Models",
+      "url": "https://aimodels.org/ai-models/",
+      "snippet": "Directory of free Open Source AI and machine learning model downloads! Our collection features the latest models in speech to text and image generation."
+    }
+  ]
+}

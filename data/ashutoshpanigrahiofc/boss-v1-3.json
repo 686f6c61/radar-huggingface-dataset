@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "ashutoshpanigrahiofc/boss-v1.3",
+  "slug": "ashutoshpanigrahiofc-boss-v1-3",
+  "author": "ashutoshpanigrahiofc",
+  "url": "https://huggingface.co/ashutoshpanigrahiofc/boss-v1.3",
+  "created_at": "2026-08-29T09:43:12.000Z",
+  "updated_at": "2026-08-29T09:54:12.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "gguf",
+    "en",
+    "base_model:Qwen/Qwen3-0.6B",
+    "base_model:quantized:Qwen/Qwen3-0.6B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 596049920,
+  "parameters_human": "596.0M",
+  "storage_bytes": 2386427648,
+  "storage_human": "2.4 GB",
+  "base_model": "Qwen/Qwen3-0.6B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ashutoshpanigrahiofc/boss-v1.1 · Hugging Face",
+      "url": "https://huggingface.co/ashutoshpanigrahiofc/boss-v1.1",
+      "snippet": "ashutoshpanigrahiofc / boss-v1.1 like 0 Text Generation GGUF English Hindi qwen fine-tuned offline on-device hinglish indian assistant tool-calling privacy small-language-model made-in-india edge-ai local-llm offline-ai-assistant private-ai no-internet-ai conversational License:apache-2.0 Model card FilesFiles and versions xet Community Deploy ..."
+    },
+    {
+      "title": "ashutoshpanigrahiofc (Ashutosh) - Hugging Face",
+      "url": "https://huggingface.co/ashutoshpanigrahiofc",
+      "snippet": "User profile of Ashutosh on Hugging Face Recent Activity updated a modelabout 20 hours ago ashutoshpanigrahiofc/boss-v1.1 published a modelabout 20 hours ago ashutoshpanigrahiofc/boss-v1.1 View all activity"
+    },
+    {
+      "title": "GitHub - AshutoshRGR/boss: BOSS LLM — India&#x27;s First 100% Offline AI ...",
+      "url": "https://github.com/AshutoshRGR/boss",
+      "snippet": "BOSS v1.1 — India&#x27;s First 100% Offline AI Assistant July 25, 2026 — Vector Logic, India"
+    },
+    {
+      "title": "CivArchive (CivitAI Archive) - AI Model Archive",
+      "url": "https://civitaiarchive.com/",
+      "snippet": "Browse and discover AI models from CivitAI, TensorArt, and SeaArt. Community-driven archive preserving access to AI resources."
+    },
+    {
+      "title": "Kilo - Best Open Source AI Models for Coding (2026)",
+      "url": "https://kilo.ai/open-source-models",
+      "snippet": "Compare current open source AI models for coding by benchmarks, licenses, local deployment, and hosted access. Evidence-backed rankings updated for 2026."
+    }
+  ]
+}

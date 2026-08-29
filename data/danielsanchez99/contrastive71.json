@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "danielsanchez99/contrastive71",
+  "slug": "danielsanchez99-contrastive71",
+  "author": "danielsanchez99",
+  "url": "https://huggingface.co/danielsanchez99/contrastive71",
+  "created_at": "2026-08-29T02:02:15.000Z",
+  "updated_at": "2026-08-29T02:02:24.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "mocov3",
+    "pytorch",
+    "contrastive",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 33088,
+  "parameters_human": "33088",
+  "storage_bytes": 132832,
+  "storage_human": "132832 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "AI Model Compare Tool — Test Prompts Across Multiple Models",
+      "url": "https://aimodelcomparehub.com/compare",
+      "snippet": "Compare AI model responses side-by-side. Test GPT-5, Claude, Gemini, Llama, and more with the same prompt. Free interactive comparison tool."
+    },
+    {
+      "title": "OpenAI | Research & Deployment",
+      "url": "https://openai.com/",
+      "snippet": "We believe our research will eventually lead to artificial general intelligence, a system that can solve human-level problems."
+    },
+    {
+      "title": "AI Leaderboard 2026: Rankings for 300+ Top AI Models by Intelligence ...",
+      "url": "https://llm-stats.com/",
+      "snippet": "The AI Leaderboard — independent rankings of GPT, Claude, Gemini, Llama, DeepSeek and 300+ AI models by intelligence, speed and price. Composite LLM Stats Score updated continuously from public benchmarks and live API metrics."
+    },
+    {
+      "title": "ModelArena - AI Model Comparison Platform",
+      "url": "https://modelarena.vercel.app/",
+      "snippet": "Compare and chat with multiple AI models side-by-side. Experience real-time streaming, multi-model comparison, and open-source AI playground."
+    },
+    {
+      "title": "Open LLM Leaderboard 2026 - Compare Open Source LLM Rankings",
+      "url": "https://llm-stats.com/leaderboards/open-llm-leaderboard",
+      "snippet": "Compare the best open source LLMs in the open LLM leaderboard with LLM rankings, pricing, speed, context windows, and benchmark scores."
+    }
+  ]
+}

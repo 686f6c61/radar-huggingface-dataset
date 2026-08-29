@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "Justvugg/GLM-5.3-Flash-colibri-int4-g64",
+  "slug": "justvugg-glm-5-3-flash-colibri-int4-g64",
+  "author": "Justvugg",
+  "url": "https://huggingface.co/Justvugg/GLM-5.3-Flash-colibri-int4-g64",
+  "created_at": "2026-08-29T11:44:21.000Z",
+  "updated_at": "2026-08-29T11:44:21.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - JustVugg/colibri: Run frontier MoE models on hardware you ...",
+      "url": "https://github.com/JustVugg/colibri",
+      "snippet": "Website · Discord · English · 简体中文 · 繁體中文 · Italiano Tiny engine, immense model. Run frontier MoE models — 744B to 2.8T parameters — on consumer and heterogeneous hardware, in pure C with zero engine dependencies, by treating storage, RAM, and VRAM as a single inference hierarchy (AI memory multitiering). Five families run today: GLM-5.2 (744B), Inkling (975B), Kimi K3 ..."
+    },
+    {
+      "title": "Releases · JustVugg/colibri - GitHub",
+      "url": "https://github.com/JustVugg/colibri/releases",
+      "snippet": "A seventh family: GLM-5.3-Flash, 321B parameters across 45 layers plus MTP, with a vision tower. It runs on 25 GB of RAM with its routed experts streamed from disk, and it reads images. prompt: \"trascrivi esattamente il testo che vedi\" + a PNG answer: COLIBRI SUPPORTA VISION CON GLM 5.3 That is the ..."
+    },
+    {
+      "title": "colibrì — run models bigger than your machine",
+      "url": "https://justvugg.github.io/colibri/",
+      "snippet": "Run models bigger than your machine colibrì streams Mixture-of-Experts weights from disk instead of loading them, so a 2.8-trillion-parameter model runs on a 32 GB box. Six model families, one engine, CPU or GPU."
+    },
+    {
+      "title": "How to Run GLM-5.3-Flash Locally: GGUF, Hardware and Benchmarks",
+      "url": "https://atomic.chat/blog/guides/how-to-run-glm-5-3-flash-locally",
+      "snippet": "GLM-5.3-Flash is the first natively multimodal model in Z.ai&#x27;s GLM-5 series, and the first one that&#x27;s realistic to run locally: it has 320B total parameters and 18B active per token. This guide covers what the model is, how it performs in the benchmarks, how much memory you&#x27;ll need to run it, and what your options are for running it today."
+    },
+    {
+      "title": "GLM-5.3-Flash: How to Run Locally - unsloth.ai",
+      "url": "https://unsloth.ai/docs/models/glm-5.3-flash",
+      "snippet": "Run the new GLM-5.3-Flash aka ox-alpha model by Z.ai. GLM-5.3-Flash, also known as ox-alpha, is Z.ai&#x27;s new 320B parameter (18B active) multimodal open model which outperforms GLM-5.2 across benchmarks and real-world tasks at one-tenth the price. GLM-5.3-Flash also rivals Claude Opus 4.8 on coding and agentic benchmarks."
+    }
+  ]
+}

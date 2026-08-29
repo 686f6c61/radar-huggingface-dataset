@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "Thilakrayapan/slm-rl-colab",
+  "slug": "thilakrayapan-slm-rl-colab",
+  "author": "Thilakrayapan",
+  "url": "https://huggingface.co/Thilakrayapan/slm-rl-colab",
+  "created_at": "2026-08-29T09:22:48.000Z",
+  "updated_at": "2026-08-29T09:22:55.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "lora",
+    "transformers",
+    "reinforcement-learning",
+    "atari",
+    "slm-rl",
+    "boxing",
+    "text-generation",
+    "base_model:LiquidAI/LFM2.5-1.2B-Instruct",
+    "base_model:adapter:LiquidAI/LFM2.5-1.2B-Instruct",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 22241248,
+  "storage_human": "22 MB",
+  "base_model": "LiquidAI/LFM2.5-1.2B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - CraftsMan-Labs/SLM-RL",
+      "url": "https://github.com/CraftsMan-Labs/SLM-RL",
+      "snippet": "SLM-RL A self-improving game gymnasium for small language models. Small language models learn to play games through reinforcement learning: the model plays games in text-native environments, every decision is collected into a reusable dataset, the model is automatically fine-tuned on its own experience, and the improved model re-enters play."
+    },
+    {
+      "title": "Google Colab",
+      "url": "https://colab.research.google.com/",
+      "snippet": "Learn how to bring the power of Colab straight to your terminal. Read the full announcement."
+    },
+    {
+      "title": "GitHub - THUDM/slime: slime is an LLM post-training framework for RL ...",
+      "url": "https://github.com/THUDM/slime",
+      "snippet": "Battle-tested by frontier model training: slime is the RL framework behind GLM-5.2, GLM-5.1, GLM-5, GLM-4.7, GLM-4.6, and GLM-4.5. This validates the full post-training loop, not only isolated examples. Correctness-first infrastructure: RL bugs are often silent. slime keeps the dataflow explicit, supports separate rollout-only and train-only debugging paths, and documents reproducibility ..."
+    },
+    {
+      "title": "SmallPlan: Leverage Small Language Models for Sequential Path Planning ...",
+      "url": "https://arxiv.org/html/2505.00831v6",
+      "snippet": "To further explore the capability of SLMs, we propose a multi-objective approach by additionally consider the SLMs&#x27; behaviors in simulation environment to reward the model with RL. SFT and RL for Fine-tuning1 Language Models. Numerous works have investigated how SFT and RL enhance the reasoning capability of language models."
+    },
+    {
+      "title": "IdeaWeaver_SLM_Builder.ipynb - Colab",
+      "url": "https://colab.research.google.com/github/ideaweaver-ai/ideaweaver-slm-builder/blob/main/IdeaWeaver_SLM_Builder.ipynb",
+      "snippet": "GitHub · IdeaWeaver AI Labs · Building Small Language Models from Scratch (course) · Building a Small Language Model from Scratch (book) This notebook clones the repo, installs the Node.js frontend and Python training backend, starts both, and displays the app below as an embedded iframe — the same serve_kernel_port_as_iframe pattern ..."
+    }
+  ]
+}

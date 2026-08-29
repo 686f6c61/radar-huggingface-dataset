@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "Urdatorn/sphragis-alm-olmo1b-metre-aratus",
+  "slug": "urdatorn-sphragis-alm-olmo1b-metre-aratus",
+  "author": "Urdatorn",
+  "url": "https://huggingface.co/Urdatorn/sphragis-alm-olmo1b-metre-aratus",
+  "created_at": "2026-08-29T10:42:17.000Z",
+  "updated_at": "2026-08-29T10:42:35.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "grc"
+  ],
+  "tags": [
+    "safetensors",
+    "olmo",
+    "ancient-greek",
+    "authorship-attribution",
+    "authorial-language-model",
+    "grc",
+    "base_model:allenai/OLMo-1B-hf",
+    "base_model:finetune:allenai/OLMo-1B-hf",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1176764416,
+  "parameters_human": "1.18B",
+  "storage_bytes": 2353541856,
+  "storage_human": "2.4 GB",
+  "base_model": "allenai/OLMo-1B-hf",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Urdatorn/sphragis-alm-olmo3-7b-plato · Hugging Face",
+      "url": "https://huggingface.co/Urdatorn/sphragis-alm-olmo3-7b-plato",
+      "snippet": "Sphragis authorial language model: Plato One of seventeen authorial language models (ALMs) for the Sphragis Ancient Greek authorship-attribution benchmark, following Huang, Murakami and Grieve (2025), \"Attributing authorship via the perplexity of authorial language models\", PLoS ONE 20 (7): e0327081. Each model is a full further-pretraining of allenai/Olmo-3-1025-7B (revision ..."
+    },
+    {
+      "title": "Urdatorn/sphragis-metre · Datasets at Hugging Face",
+      "url": "https://huggingface.co/datasets/Urdatorn/sphragis-metre",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GitHub - sphragis-oss/sphragis: EU AI Act compliance gateway for Claude ...",
+      "url": "https://github.com/sphragis-oss/sphragis",
+      "snippet": "Sphragis The EU AI Act compliance gateway you actually control. A single Go binary that sits between your apps and any OpenAI- or Anthropic-compatible LLM, with first-class support for Claude (Claude Code and the Anthropic SDKs)."
+    },
+    {
+      "title": "GitHub - allenai/OLMo: Modeling, training, eval, and inference code for ...",
+      "url": "https://github.com/allenai/OLMo",
+      "snippet": "OLMo is a repository for training and using AI2&#x27;s state-of-the-art open language models. It is designed by scientists, for scientists."
+    },
+    {
+      "title": "Olmo from Ai2 - AllenAI",
+      "url": "https://allenai.org/olmo",
+      "snippet": "Olmo has led to a wellspring of research and innovation that couldn&#x27;t have been accomplished without a fully open model... Olmo ensures complete transparency and sets a strong foundation for transformative work."
+    }
+  ]
+}

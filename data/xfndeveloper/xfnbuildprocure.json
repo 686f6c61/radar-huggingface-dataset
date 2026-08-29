@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "xfndeveloper/xfnbuildprocure",
+  "slug": "xfndeveloper-xfnbuildprocure",
+  "author": "xfndeveloper",
+  "url": "https://huggingface.co/xfndeveloper/xfnbuildprocure",
+  "created_at": "2026-08-29T06:09:29.000Z",
+  "updated_at": "2026-08-29T06:09:42.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "procurement",
+    "agent",
+    "zero-shot",
+    "text-generation",
+    "base_model:deepseek-ai/DeepSeek-R1-Distill-Qwen-14B",
+    "base_model:finetune:deepseek-ai/DeepSeek-R1-Distill-Qwen-14B",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": "deepseek-ai/DeepSeek-R1-Distill-Qwen-14B",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "AI Model Catalog | Microsoft Foundry Models",
+      "url": "https://ai.azure.com/catalog",
+      "snippet": "Explore the comprehensive catalog of AI models from Microsoft Foundry"
+    },
+    {
+      "title": "Foundry Toolkit for Visual Studio Code overview | Microsoft Learn",
+      "url": "https://learn.microsoft.com/en-us/windows/ai/toolkit/",
+      "snippet": "Learn how Foundry Toolkit for Visual Studio Code simplifies AI development with model catalogs, fine-tuning tools, and local deployment. Get started today."
+    },
+    {
+      "title": "Microsoft Foundry Models overview - Microsoft Foundry",
+      "url": "https://learn.microsoft.com/en-us/azure/foundry/concepts/foundry-models-overview",
+      "snippet": "The model catalog in Foundry portal is the hub for discovering and using a wide range of models to build generative AI applications. The model catalog features thousands of models from providers like Azure OpenAI, Anthropic, Mistral, Meta, Cohere, NVIDIA, and Hugging Face, including models that Microsoft trained."
+    },
+    {
+      "title": "AI Models | NVIDIA Developer",
+      "url": "https://developer.nvidia.com/ai-models",
+      "snippet": "Explore and deploy top AI models built by the community, accelerated by NVIDIA&#x27;s AI inference platform, and run on NVIDIA-accelerated infrastructure."
+    },
+    {
+      "title": "Microsoft Foundry",
+      "url": "http://ai.azure.com/",
+      "snippet": "Microsoft Foundry is the enterprise AI platform to build, ground, and govern AI apps and agents at scale. It brings together your full agent lifecycle with open development, built-in intelligence, and consistent security, compliance, and policy controls across every agent."
+    }
+  ]
+}

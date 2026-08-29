@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "dreamdifferent/vam-cross-level5-so101-widowx-texture-teleopaligned-videolora200-action-decoder-iter900",
+  "slug": "dreamdifferent-vam-cross-level5-so101-widowx-texture-teleopaligned-videolora200-action-decoder-iter900",
+  "author": "dreamdifferent",
+  "url": "https://huggingface.co/dreamdifferent/vam-cross-level5-so101-widowx-texture-teleopaligned-videolora200-action-decoder-iter900",
+  "created_at": "2026-08-29T02:03:13.000Z",
+  "updated_at": "2026-08-29T02:03:45.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "robotics",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "mimic-video",
+    "robotics",
+    "action-prediction",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1000269372,
+  "storage_human": "1.0 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "dreamdifferent/vam-cross-level5-so101-widowx-texture-teleopaligned ...",
+      "url": "https://huggingface.co/dreamdifferent/vam-cross-level5-so101-widowx-texture-teleopaligned-videolora200-action-decoder-iter900",
+      "snippet": "VAM-Cross MimicVideo World2Action decoder This public repository contains the World2Action decoder checkpoint from iteration 900 of w2a_so101_level5_widowx_texture_2cam_hstack_action_iter2374_videolora_iter200_widowx_teleop_recording_frame_v1. The run stopped because of unknown. The newest complete model, optimizer, scheduler, and trainer checkpoint set was verified before selecting the ..."
+    },
+    {
+      "title": "mimic-video-so101-single-object-delta30-wo-video-tuning-action-decoder",
+      "url": "https://huggingface.co/dreamdifferent/mimic-video-so101-single-object-delta30-wo-video-tuning-action-decoder",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Resources | Virt-A-Mate Hub",
+      "url": "https://hub.virtamate.com/resources/",
+      "snippet": "Free music, voice, and sound effect audio files and asset bundles"
+    },
+    {
+      "title": "GitHub - arnavsukhija/world-model-so101: Video-Action Models for ...",
+      "url": "https://github.com/arnavsukhija/world-model-so101",
+      "snippet": "By drawing on the video model&#x27;s knowledge of real-world dynamics and behaviors, performant action decoders can be learned efficiently and without updating the video model. Employing decoupled flow times for video and for actions, efficient inference can be performed with a single video model forward pass per action chunk."
+    },
+    {
+      "title": "Free - Virt-A-Mate Hub",
+      "url": "https://hub.virtamate.com/resources/categories/free.4/",
+      "snippet": "Free music, voice, and sound effect audio files and asset bundles"
+    }
+  ]
+}

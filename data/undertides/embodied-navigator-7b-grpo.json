@@ -5,7 +5,7 @@
   "author": "UnderTides",
   "url": "https://huggingface.co/UnderTides/Embodied-Navigator-7B-GRPO",
   "created_at": "2026-08-15T06:35:46.000Z",
-  "updated_at": "2026-08-26T09:21:03.000Z",
+  "updated_at": "2026-08-28T06:44:09.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": "robotics",
@@ -38,8 +38,8 @@
   "trending_score": 0,
   "parameters": 8632279072,
   "parameters_human": "8.63B",
-  "storage_bytes": 17276073460,
-  "storage_human": "17.3 GB",
+  "storage_bytes": 34540723749,
+  "storage_human": "34.5 GB",
   "base_model": "Qwen/Qwen2.5-VL-7B-Instruct",
   "formats": [
     "safetensors"

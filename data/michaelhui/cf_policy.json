@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "MichaelHui/cf_policy",
+  "slug": "michaelhui-cf_policy",
+  "author": "MichaelHui",
+  "url": "https://huggingface.co/MichaelHui/cf_policy",
+  "created_at": "2026-08-29T10:33:04.000Z",
+  "updated_at": "2026-08-29T10:39:53.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "act",
+    "robotics",
+    "dataset:egcfwong/test_1_20260829_164444",
+    "arxiv:2304.13705",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 51668614,
+  "parameters_human": "51.7M",
+  "storage_bytes": 206714912,
+  "storage_human": "207 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "MichaelHui/my_policy · Hugging Face",
+      "url": "https://huggingface.co/MichaelHui/my_policy",
+      "snippet": "Instructions to use MichaelHui/my_policy with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Libraries LeRobot How to use MichaelHui/my_policy with LeRobot: Notebooks Google Colab Kaggle Model Card for act Model Details Inputs & Outputs Training Dataset Training Configuration How to Get Started with the Model Run the policy on your robot Train ..."
+    },
+    {
+      "title": "The CIA Is Making AI-Generated Reports for Local Police",
+      "url": "https://reason.com/2026/08/28/the-cia-is-making-ai-generated-reports-for-local-police/",
+      "snippet": "Artificial Intelligence The CIA Is Making AI-Generated Reports for Local Police The CIA has been using artificial intelligence to write \"open source intelligence\" analyses, which are being ..."
+    },
+    {
+      "title": "Artificial Intelligence (AI) can change the way of doing policy ...",
+      "url": "https://www.sciencedirect.com/science/article/pii/S0161893823001199",
+      "snippet": "This paper evaluates how Artificial Intelligence (AI) can revolutionize policy modeling. AI&#x27;s rapid advancement, encompassing algorithms, advanced programming software, robotics, meta-data, mathematical models, neural networks, and graphical models, is ushering in a new era, offering a myriad of opportunities to replace traditional research methods in analyzing and solving dynamic and complex ..."
+    },
+    {
+      "title": "PDF White House National Policy Framework for AI - Legislative Recommendations",
+      "url": "https://www.whitehouse.gov/wp-content/uploads/2026/03/03.20.26-National-Policy-Framework-for-Artificial-Intelligence-Legislative-Recommendations.pdf",
+      "snippet": "Congress should affirm that existing child privacy protections apply to AI systems, including limits on data collection for model training and targeted advertising."
+    },
+    {
+      "title": "AI Models | Civitai",
+      "url": "https://civitai.com/models",
+      "snippet": "Browse thousands of free Stable Diffusion & Flux models, LoRAs, checkpoints, and embeddings. The largest collection of AI image generation resources."
+    }
+  ]
+}

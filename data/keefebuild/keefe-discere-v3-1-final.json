@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "KeefeBuild/Keefe-Discere-v3.1-Final",
+  "slug": "keefebuild-keefe-discere-v3-1-final",
+  "author": "KeefeBuild",
+  "url": "https://huggingface.co/KeefeBuild/Keefe-Discere-v3.1-Final",
+  "created_at": "2026-08-29T10:27:25.000Z",
+  "updated_at": "2026-08-29T10:33:37.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen2",
+    "text-generation",
+    "text-generation-inference",
+    "unsloth",
+    "conversational",
+    "en",
+    "base_model:KeefeBuild/Keefe-Discere-v3.0-Final",
+    "base_model:finetune:KeefeBuild/Keefe-Discere-v3.0-Final",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 7615616512,
+  "parameters_human": "7.62B",
+  "storage_bytes": 15242694121,
+  "storage_human": "15.2 GB",
+  "base_model": "KeefeBuild/Keefe-Discere-v3.0-Final",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "KeefeBuild/Keefe-Discere-v3.0-Final · Hugging Face",
+      "url": "https://huggingface.co/KeefeBuild/Keefe-Discere-v3.0-Final",
+      "snippet": "KeefeBuild / Keefe-Discere-v3.-Final like 0 Text Generation Transformers Safetensors English qwen2 text-generation-inference unsloth conversational License:apache-2.0 Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "KeefeBuild/Keefe-Discere · Hugging Face",
+      "url": "https://huggingface.co/KeefeBuild/Keefe-Discere",
+      "snippet": "Instructions to use KeefeBuild/Keefe-Discere with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Notebooks Google Colab Kaggle Local AppsSettings llama.cpp How to use KeefeBuild/Keefe-Discere with llama.cpp: Install (macOS, Linux)"
+    },
+    {
+      "title": "Keefe-Discere-v3.0-Final API & Inference Endpoint | FriendliAI",
+      "url": "https://friendli.ai/models/KeefeBuild/Keefe-Discere-v3.0-Final",
+      "snippet": "Run Keefe-Discere-v3.-Final with FriendliAI inference. This qwen2 model was trained 2x faster with Unsloth and Huggingface&#x27;s TRL library."
+    },
+    {
+      "title": "Keefe-Discere API & Inference Endpoint | FriendliAI",
+      "url": "https://friendli.ai/models/KeefeBuild/Keefe-Discere",
+      "snippet": "Run Keefe-Discere with FriendliAI inference. This qwen2 model was trained 2x faster with Unsloth and Huggingface&#x27;s TRL library."
+    },
+    {
+      "title": "OpenAI · GitHub",
+      "url": "https://github.com/openai/",
+      "snippet": "OpenAI has 268 repositories available. Follow their code on GitHub."
+    }
+  ]
+}

@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "neelu4304/TruthLensAI-distilbert",
+  "slug": "neelu4304-truthlensai-distilbert",
+  "author": "neelu4304",
+  "url": "https://huggingface.co/neelu4304/TruthLensAI-distilbert",
+  "created_at": "2026-08-29T09:50:48.000Z",
+  "updated_at": "2026-08-29T10:09:11.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 267844872,
+  "storage_human": "268 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - mdanish1212/truthlens-ai: Production-ready Fake News ...",
+      "url": "https://github.com/mdanish1212/truthlens-ai",
+      "snippet": "TruthLens AI — Illuminating misinformation with precision AI analysis. Built for truth. Production-ready Fake News Intelligence System detecting manipulated text, images, and videos via optimized AI models (DistilBERT, MobileNetV3, EfficientNet Lite)."
+    },
+    {
+      "title": "DistilBERT · Hugging Face",
+      "url": "https://huggingface.co/docs/transformers/model_doc/distilbert",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GitHub - yugsaxena102/TruthLensAI",
+      "url": "https://github.com/yugsaxena102/TruthLensAI",
+      "snippet": "TruthLens AI is an advanced, full-stack misinformation detection platform. It leverages state-of-the-art Machine Learning (XGBoost), Deep Learning (Bi-LSTM, CNN), and Transformer models (BERT, RoBERTa, DistilBERT) to identify and analyze fake news with high precision."
+    },
+    {
+      "title": "DistilBERT in Natural Language Processing - GeeksforGeeks",
+      "url": "https://www.geeksforgeeks.org/nlp/distilbert-in-natural-language-processing/",
+      "snippet": "DistilBERT is a lightweight version of BERT (Bidirectional Encoder Representations from Transformers) developed by Hugging Face using knowledge distillation. It retains most of BERT&#x27;s language understanding capabilities while reducing model size, memory usage, and computational requirements, making it suitable for resource-constrained devices ..."
+    },
+    {
+      "title": "ShanGhani34/truthlens-model · Hugging Face",
+      "url": "https://huggingface.co/ShanGhani34/truthlens-model",
+      "snippet": "📰 TruthLens - AI-Powered Fake News Detector + Verifier TruthLens is a real-time fake news detection and truth verification system built using state-of-the-art NLP models like DistilBERT and SBERT, combined with real-time cross-checking from Google News."
+    }
+  ]
+}

@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "Brazenle/kv-cache-handoff-lab",
+  "slug": "brazenle-kv-cache-handoff-lab",
+  "author": "Brazenle",
+  "url": "https://huggingface.co/Brazenle/kv-cache-handoff-lab",
+  "created_at": "2026-08-29T10:02:31.000Z",
+  "updated_at": "2026-08-29T10:07:26.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers.js",
+  "languages": [],
+  "tags": [
+    "transformers.js",
+    "browser-ai",
+    "capability-handoff",
+    "tool-use",
+    "structured-output",
+    "continual-learning",
+    "base_model:onnx-community/Qwen2.5-0.5B-Instruct",
+    "base_model:finetune:onnx-community/Qwen2.5-0.5B-Instruct",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": "onnx-community/Qwen2.5-0.5B-Instruct",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Abstract - arXiv.org",
+      "url": "https://arxiv.org/pdf/2605.03884",
+      "snippet": "Abstract Multi-agent LLM systems on edge devices need to hand off latent context efficiently, but the practical choices today are expensive re-prefill or full-precision KV transfer. We study QKVShare, a framework for quantized KV-cache handoff between agents that combines token-level mixed-precision allocation, a self-contained CacheCard representation, and a HuggingFace-compatible cache ..."
+    },
+    {
+      "title": "Nvidia KV cache transfer cuts AI model handoff latency by 25x",
+      "url": "https://www.streamingmeme.com/articles/nvidia-kv-cache-transfer-cuts-ai-model-handoff-latency-by-25x",
+      "snippet": "Nvidia researchers have developed a cross-model KV cache transfer technique that uses linear algebra to map memory between different LLMs. This method allows for seamless model switching in agentic workflows, reducing compute costs and latency by up to 25x compared to traditional re-prefilling."
+    },
+    {
+      "title": "Disaggregated Inference and KV Handoff | cfregly/ai-performance ...",
+      "url": "https://deepwiki.com/cfregly/ai-performance-engineering/8.3-disaggregated-inference-and-kv-handoff",
+      "snippet": "A major optimization in disaggregated inference is maintaining KV cache locality. When a request requires multiple decoding steps or is processed in chunks, routing it to the same decode worker (\"Sticky\" affinity) avoids redundant transfers."
+    },
+    {
+      "title": "2026-05-07-arxiv-2605.03884-qkvshare.md - GitHub",
+      "url": "https://github.com/vivy-yi/agent-harness/blob/master/papers/2026-05-07-arxiv-2605.03884-qkvshare.md",
+      "snippet": "QKVShare: Quantized KV-Cache Handoff for Multi-Agent On-Device LLMs arXiv: 2605.03884 Category: multi-agent / on-device LLM Crawled: 2026-05-07"
+    },
+    {
+      "title": "GitHub - TreeAI-Lab/Awesome-KV-Cache-Management: This repository serves ...",
+      "url": "https://github.com/TreeAI-Lab/Awesome-KV-Cache-Management",
+      "snippet": "This repository serves as a comprehensive survey of LLM development, featuring numerous research papers along with their corresponding code links. - TreeAI-Lab/Awesome-KV-Cache-Management"
+    }
+  ]
+}

@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "arefehRajabian/phi_finetune_16bit",
+  "slug": "arefehrajabian-phi_finetune_16bit",
+  "author": "arefehRajabian",
+  "url": "https://huggingface.co/arefehRajabian/phi_finetune_16bit",
+  "created_at": "2026-08-29T11:21:50.000Z",
+  "updated_at": "2026-08-29T11:21:55.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "llama",
+    "text-generation",
+    "text-generation-inference",
+    "unsloth",
+    "conversational",
+    "en",
+    "base_model:unsloth/phi-4-bnb-4bit",
+    "base_model:finetune:unsloth/phi-4-bnb-4bit",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": "unsloth/phi-4-bnb-4bit",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "arefehRajabian/advanced_finetune_16bit · Hugging Face",
+      "url": "https://huggingface.co/arefehRajabian/advanced_finetune_16bit",
+      "snippet": "arefehRajabian / advanced_finetune_16bit like 0 Text Generation Transformers Safetensors English llama text-generation-inference unsloth conversational License:apache-2.0 Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "Models - Hugging Face",
+      "url": "https://huggingface.co/models?search=arefehRajabian%2Fadvanced_finetune_16bit",
+      "snippet": "arefehRajabian/advanced_finetune_16bit Text Generation • 3B•Updated 5 days ago• 238"
+    },
+    {
+      "title": "advanced_finetune_16bit API & Inference Endpoint | FriendliAI",
+      "url": "https://friendli.ai/models/arefehRajabian/advanced_finetune_16bit",
+      "snippet": "Run advanced_finetune_16bit with FriendliAI inference. This llama model was trained 2x faster with Unsloth and Huggingface&#x27;s TRL library."
+    },
+    {
+      "title": "Phi Open Models - Small Language Models | Microsoft Azure",
+      "url": "https://azure.microsoft.com/en-us/products/phi/",
+      "snippet": "Phi open model family Phi models offer cost-effective, high-performance AI solutions at the edge, pushing the boundaries of generative AI."
+    },
+    {
+      "title": "PhiCookBook/md/03.FineTuning/FineTuning_Vision.md at main - GitHub",
+      "url": "https://github.com/microsoft/PhiCookBook/blob/main/md/03.FineTuning/FineTuning_Vision.md",
+      "snippet": "This is a Phi Family of SLMs book for getting started with Phi Models. Phi a family of open sourced AI models developed by Microsoft. Phi models are the most capable and cost-effective small langua..."
+    }
+  ]
+}

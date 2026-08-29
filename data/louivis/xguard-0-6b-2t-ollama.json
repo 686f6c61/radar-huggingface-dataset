@@ -1,0 +1,79 @@
+{
+  "schema": 1,
+  "id": "louivis/xguard-0.6b-2t-ollama",
+  "slug": "louivis-xguard-0-6b-2t-ollama",
+  "author": "louivis",
+  "url": "https://huggingface.co/louivis/xguard-0.6b-2t-ollama",
+  "created_at": "2026-08-23T15:18:45.000Z",
+  "updated_at": "2026-08-29T10:52:25.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "gguf",
+  "languages": [
+    "zh",
+    "en"
+  ],
+  "tags": [
+    "gguf",
+    "ollama",
+    "qwen3",
+    "content-safety",
+    "content-moderation",
+    "content-filtering",
+    "tc260-003",
+    "llm-safety",
+    "security",
+    "zh",
+    "en",
+    "base_model:Qwen/Qwen3Guard-Gen-0.6B",
+    "base_model:quantized:Qwen/Qwen3Guard-Gen-0.6B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 6,
+  "trending_score": 0,
+  "parameters": 751632384,
+  "parameters_human": "751.6M",
+  "storage_bytes": 804749120,
+  "storage_human": "805 MB",
+  "base_model": "Qwen/Qwen3Guard-Gen-0.6B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "xguard-0.6b-2t-ollama/README.md at main · vislee/xguard-0.6b ... - GitHub",
+      "url": "https://github.com/vislee/xguard-0.6b-2t-ollama/blob/main/README.md",
+      "snippet": "Contribute to vislee/xguard-.6b-2t-ollama development by creating an account on GitHub."
+    },
+    {
+      "title": "louivis (louivislee) - Hugging Face",
+      "url": "https://huggingface.co/louivis",
+      "snippet": "Recent Activity updated a model2 days ago louivis/xguard-0.6b-2t-ollama published a model2 days ago louivis/xguard-0.6b-2t-ollama updated a model2 days ago louivis/qwen3guard-.6b-2t-adapter View all activity"
+    },
+    {
+      "title": "Ollama Models Cheat Sheet 2026 | ComputingForGeeks",
+      "url": "https://computingforgeeks.com/ollama-models-cheat-sheet/",
+      "snippet": "Ollama models cheat sheet 2026: gpt-oss, Qwen3-Coder, DeepSeek, Llama and Gemma compared, with pull commands, VRAM math and real RTX 4090 benchmarks."
+    },
+    {
+      "title": "GGUF Model Discovery - Browse & Download AI Models",
+      "url": "https://local-ai-zone.github.io/",
+      "snippet": "Discover and download GGUF format AI models. Browse and direct download thousands of quantized AI models with detailed information, download counts, and direct links."
+    },
+    {
+      "title": "Models - Hugging Face",
+      "url": "https://huggingface.co/models?search=llama",
+      "snippet": "Explore machine learning models."
+    }
+  ]
+}

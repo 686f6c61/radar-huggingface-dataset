@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "sida/icalens-gemma-2-2b-it-ultrachat-1m",
+  "slug": "sida-icalens-gemma-2-2b-it-ultrachat-1m",
+  "author": "sida",
+  "url": "https://huggingface.co/sida/icalens-gemma-2-2b-it-ultrachat-1m",
+  "created_at": "2026-08-13T22:06:36.000Z",
+  "updated_at": "2026-08-29T07:03:10.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "icalens",
+  "languages": [],
+  "tags": [
+    "icalens",
+    "interpretability",
+    "independent-component-analysis",
+    "activations",
+    "arxiv:2606.11722",
+    "dataset:HuggingFaceH4/ultrachat_200k",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 2791540920,
+  "storage_human": "2.8 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "sida/icalens-gemma-2-2b-it-ultrachat-1m · Hugging Face",
+      "url": "https://huggingface.co/sida/icalens-gemma-2-2b-it-ultrachat-1m",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "sida/icalens-gemma-2-2b-pile10k · Hugging Face",
+      "url": "https://huggingface.co/sida/icalens-gemma-2-2b-pile10k",
+      "snippet": "sida / icalens-gemma-2-2b-pile10k like 0 NeelNanda/pile-10k icalens interpretability independent-component-analysis activations arxiv:2606.11722 Model card FilesFiles and versions xet Community Copy to bucket new ICA Lens for google/gemma-2-2b Artifact summary Usage Score definition Fitting Fitting provenance Limitations Paper Citation"
+    },
+    {
+      "title": "GitHub - liusida/icalens · GitHub",
+      "url": "https://github.com/liusida/icalens/",
+      "snippet": "The first analysis loads the language model and requested Lens layer. Later calls on the same lens reuse the model in memory. device=\"auto\" uses CUDA when available and otherwise uses the CPU."
+    },
+    {
+      "title": "‎Google Gemini",
+      "url": "https://gemini.google.com/",
+      "snippet": "Meet Gemini, Google&#x27;s AI assistant. Get help with writing, planning, brainstorming, and more. Experience the power of generative AI."
+    },
+    {
+      "title": "GitHub - inferless/gemma-2b-it: 2B instruct-tuned model for delivering ...",
+      "url": "https://github.com/inferless/Gemma-2B-it",
+      "snippet": "2B instruct-tuned model designed for coherent, instruction-following responses across diverse tasks, optimized for GPU performance."
+    }
+  ]
+}

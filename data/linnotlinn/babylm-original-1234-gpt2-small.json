@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "linnotlinn/babylm-original-1234-gpt2-small",
+  "slug": "linnotlinn-babylm-original-1234-gpt2-small",
+  "author": "linnotlinn",
+  "url": "https://huggingface.co/linnotlinn/babylm-original-1234-gpt2-small",
+  "created_at": "2026-08-29T02:20:13.000Z",
+  "updated_at": "2026-08-29T10:06:45.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gpt2",
+    "text-generation",
+    "generated_from_trainer",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 124439808,
+  "parameters_human": "124.4M",
+  "storage_bytes": 58741749632,
+  "storage_human": "58.7 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "linnotlinn/babylm-original-1234-gpt2-small · Hugging Face",
+      "url": "https://huggingface.co/linnotlinn/babylm-original-1234-gpt2-small",
+      "snippet": "linnotlinn / babylm-original-1234-gpt2-small like 0 Safetensors gpt2 Model card FilesFiles and versions xet Community Copy to bucket new No model card Downloads last month - Safetensors Model size 0.1B params Tensor type F32 · Files info Inference Providers NEW This model isn&#x27;t deployed by any Inference Provider.🙋Ask for provider support"
+    },
+    {
+      "title": "linnotlinn/babylm_gpt2_shuffled · Datasets at Hugging Face",
+      "url": "https://huggingface.co/datasets/linnotlinn/babylm_gpt2_shuffled",
+      "snippet": "Datasets: linnotlinn / babylm_gpt2_shuffled like 0 Formats: parquet Size: 100K - 1M Libraries: Datasets Dask Polars + 1 Dataset card Data Studio FilesFiles and versions xet Community Dataset Viewer Auto-converted to Parquet API Embed Duplicate Data Studio Subset (1) default·164k rows default (164k rows) Split (2) train·161k rows train (161k rows) validation (3.28k rows) Search is not ..."
+    },
+    {
+      "title": "GitHub Pages - Baby",
+      "url": "https://babylm.github.io/",
+      "snippet": "Track update: This year introduces a dedicated MultiLingual track, and removes Multimodal and Interaction as standalone competition tracks, both are now subsumed into Strict / Strict-Small (paired image-text data and teacher-model feedback are allowed). Evaluation pipeline: The BabyLM 2026 evaluation pipeline is now ready!"
+    },
+    {
+      "title": "Baseline Models & Reference Results | babylm-org/babylm-eval | DeepWiki",
+      "url": "https://deepwiki.com/babylm-org/babylm-eval/5-baseline-models-and-reference-results",
+      "snippet": "This page provides an overview of the GPT-2 baseline models developed for the BabyLM Evaluation 2026. These models serve as reference points for both the Strict (and Strict-Small) tracks and the Multi"
+    },
+    {
+      "title": "babylm-baselines/strict-gpt2/README.md at main - GitHub",
+      "url": "https://github.com/babylm-org/babylm-baselines/blob/main/strict-gpt2/README.md",
+      "snippet": "BabyLM 2026: GPT-2 Baselines for the Strict, Strict-Small and Multilingual Tracks This is the codebase that was used to run training for the GPT-2 baselines of the Strict, Strict-Small and Multilingual tracks of the BabyLM 2026 Challenge. Please refer to the Call for Papers for a description of challenge rules for all relevant tracks."
+    }
+  ]
+}

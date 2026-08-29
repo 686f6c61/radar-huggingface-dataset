@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "zaheer10/text-summarizer-model",
+  "slug": "zaheer10-text-summarizer-model",
+  "author": "zaheer10",
+  "url": "https://huggingface.co/zaheer10/text-summarizer-model",
+  "created_at": "2026-08-29T11:45:06.000Z",
+  "updated_at": "2026-08-29T11:45:06.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Text Summarization for NLP: 5 Best APIs, AI Models, and AI Summarizers ...",
+      "url": "https://www.assemblyai.com/blog/text-summarization-nlp-5-best-apis",
+      "snippet": "In this article, we&#x27;ll discuss what exactly text summarization is, how it works, and a few of the best Text Summarization APIs, AI models, and AI summarizers."
+    },
+    {
+      "title": "A Guide to Building an AI Text Summarizer Model Using Python",
+      "url": "https://taglineinfotech.com/blog/ai-text-summarizer-model-using-python/",
+      "snippet": "Learn how to build an AI text summarizer using Python. This step-by-step guide covers key libraries, model training, and code examples to help you create efficient NLP applications."
+    },
+    {
+      "title": "Summarization Models - Hugging Face",
+      "url": "https://huggingface.co/models?pipeline_tag=summarization",
+      "snippet": "Edit Models filters. Main ; Tasks 1; Libraries ; Languages ; Licenses ; Other ; Reset Tasks. Multimodal. Audio-Text-to-Text. Image-Text-to-Text"
+    },
+    {
+      "title": "GitHub - ramx10/-AI-Text-Summarizer",
+      "url": "https://github.com/ramx10/-AI-Text-Summarizer",
+      "snippet": "Contribute to ramx10/-AI-Text-Summarizer development by creating an account on GitHub."
+    },
+    {
+      "title": "GitHub - Rohitha10-debug/AI-Text-Summarizer",
+      "url": "https://github.com/Rohitha10-debug/AI-Text-Summarizer/tree/main",
+      "snippet": "The application preprocesses user input, generates summaries using a fine-tuned transformer model, and serves predictions through a FastAPI backend with an HTML frontend. This project demonstrates the practical implementation of transformer-based NLP models for real-world text summarization tasks."
+    }
+  ]
+}

@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "tonghuiwang123/so100-pi05-new60-ft",
+  "slug": "tonghuiwang123-so100-pi05-new60-ft",
+  "author": "tonghuiwang123",
+  "url": "https://huggingface.co/tonghuiwang123/so100-pi05-new60-ft",
+  "created_at": "2026-08-29T09:42:43.000Z",
+  "updated_at": "2026-08-29T09:53:36.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "robotics",
+    "so100",
+    "so-arm100",
+    "pi05",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 4143404816,
+  "parameters_human": "4.14B",
+  "storage_bytes": 149699215360,
+  "storage_human": "149.7 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "tonghuiwang123 (Argento Fishback) - Hugging Face",
+      "url": "https://huggingface.co/tonghuiwang123/models",
+      "snippet": "tonghuiwang123&#x27;s models4 Sort: Recently updated tonghuiwang123/my_smolvla_8gpu_v3 0.5B•Updated Feb 11• 4"
+    },
+    {
+      "title": "GitHub - TheRobotStudio/SO-ARM100: Standard Open Arm 100",
+      "url": "https://github.com/TheRobotStudio/SO-ARM100",
+      "snippet": "Standard Open Arm 100. Contribute to TheRobotStudio/SO-ARM100 development by creating an account on GitHub."
+    },
+    {
+      "title": "pepijn223/bimanual-so100-handover-cube_pi05 · Hugging Face",
+      "url": "https://huggingface.co/pepijn223/bimanual-so100-handover-cube_pi05",
+      "snippet": "Model Card for pi05 π₀.₅ (Pi05) Policy π₀.₅ is a Vision-Language-Action model with open-world generalization, from Physical Intelligence. The LeRobot implementation is adapted from their open source OpenPI repository. Model Overview π₀.₅ represents a significant evolution from π₀, developed by Physical Intelligence to address a big challenge in robotics: open-world ..."
+    },
+    {
+      "title": "π 0.5 : a Vision-Language-Action Model with Open-World Generalization",
+      "url": "https://arxiv.org/html/2504.16054v1",
+      "snippet": "Abstract In order for robots to be useful, they must perform practically relevant tasks in the real world, outside of the lab. While vision-language-action (VLA) models have demonstrated impressive results for end-to-end robot control, it remains an open question how far such models can generalize in the wild. We describe π 0.5 $π0.5$, a new model based on π 0 $π0$ that uses co-training on ..."
+    },
+    {
+      "title": "Pi0.5 - Qualcomm AI Hub",
+      "url": "https://aihub.qualcomm.com/models/pi05",
+      "snippet": "Pi0.5 State‑of‑the‑art generalist robotic foundation model trained on vision, language, and action to enable dexterous, zero‑shot physical task execution across diverse robot platforms. Pi0.5 is a vision‑language‑action model that co‑trains on diverse data sources (robot demos, web data, semantic subtasks) to enable open‑world generalization for long‑horizon robotic manipulation."
+    }
+  ]
+}

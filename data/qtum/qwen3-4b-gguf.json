@@ -5,7 +5,7 @@
   "author": "qtum",
   "url": "https://huggingface.co/qtum/Qwen3-4B-GGUF",
   "created_at": "2026-08-17T07:39:59.000Z",
-  "updated_at": "2026-08-17T07:46:06.000Z",
+  "updated_at": "2026-08-28T15:02:24.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -34,8 +34,8 @@
   "trending_score": 0,
   "parameters": 4022468096,
   "parameters_human": "4.02B",
-  "storage_bytes": 18880482688,
-  "storage_human": "18.9 GB",
+  "storage_bytes": 19197152640,
+  "storage_human": "19.2 GB",
   "base_model": "Qwen/Qwen3-4B",
   "formats": [
     "gguf"

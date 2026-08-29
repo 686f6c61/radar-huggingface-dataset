@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "abbuibuibui/gojosatoru",
+  "slug": "abbuibuibui-gojosatoru",
+  "author": "abbuibuibui",
+  "url": "https://huggingface.co/abbuibuibui/gojosatoru",
+  "created_at": "2026-08-29T06:17:04.000Z",
+  "updated_at": "2026-08-29T07:07:11.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-speech",
+  "library": null,
+  "languages": [
+    "ja"
+  ],
+  "tags": [
+    "gpt-sovits",
+    "text-to-speech",
+    "voice-cloning",
+    "japanese",
+    "ja",
+    "dataset:abbuibuibui/gojosatoru-dataset",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1005725804,
+  "storage_human": "1.0 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Gojo Satoru made by AI - 3D model by slohwnix - Sketchfab",
+      "url": "https://sketchfab.com/3d-models/gojo-satoru-made-by-ai-053a1cce20294ba3a9ae916682a3e3e6",
+      "snippet": "Gojo Satoru made by AI Orbit around Left click + drag or One finger drag (touch) Zoom"
+    },
+    {
+      "title": "Gojo Satoru五条悟 - AI Art Model | PixAI",
+      "url": "https://pixai.art/en/model/1974923530447967204",
+      "snippet": "Generate stunning anime art with the &#x27;Gojo Satoru五条悟&#x27; model on PixAI. Browse artworks made with this model and try it free."
+    },
+    {
+      "title": "Gojo Satoru - AI Art Model | PixAI",
+      "url": "https://pixai.art/en/model/1950160047719101714",
+      "snippet": "Generate stunning jujutsu_kaisen, gojou_satoru anime art with the &#x27;Gojo Satoru&#x27; model on PixAI. Browse artworks made with this model and try it free."
+    },
+    {
+      "title": "Gojo Satoru | Jujutsu Kaisen - AI Art Model | PixAI",
+      "url": "https://pixai.art/en/model/1828900716114805120",
+      "snippet": "Generate stunning anime, male, character, Jujutsu kaisen, jujutsu_kaisen anime art with the &#x27;Gojo Satoru | Jujutsu Kaisen&#x27; model on PixAI. Browse artworks made with this model and try it free."
+    },
+    {
+      "title": "Gojo Satoru - AI Art Model | PixAI",
+      "url": "https://pixai.art/en/model/1838849149125546576",
+      "snippet": "Generate stunning gojo, white_hair, blue_eye, blue_uniform, gojo_satoru, satoru anime art with the &#x27;Gojo Satoru&#x27; model on PixAI. Browse artworks made with this model and try it free."
+    }
+  ]
+}

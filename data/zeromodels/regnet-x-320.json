@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "zeromodels/regnet-x-320",
+  "slug": "zeromodels-regnet-x-320",
+  "author": "zeromodels",
+  "url": "https://huggingface.co/zeromodels/regnet-x-320",
+  "created_at": "2026-08-29T05:44:31.000Z",
+  "updated_at": "2026-08-29T05:45:14.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-classification",
+  "library": "zeromodels",
+  "languages": [],
+  "tags": [
+    "zeromodels",
+    "keras",
+    "image-classification",
+    "regnet",
+    "backbone",
+    "arxiv:2003.13678",
+    "pytorch",
+    "jax",
+    "tf",
+    "base_model:facebook/regnet-x-320",
+    "base_model:finetune:facebook/regnet-x-320",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 432558040,
+  "storage_human": "433 MB",
+  "base_model": "facebook/regnet-x-320",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "zeromodels/regnet-x-320 · Hugging Face",
+      "url": "https://huggingface.co/zeromodels/regnet-x-320",
+      "snippet": "Use as an ImageNet classifier or a 4-stage backbone. For more details on the model, please go to the upstream model card. Pure- Keras 3 conversion of facebook/regnet-x-320 for zeromodels. One implementation runs unmodified on TensorFlow / Torch / JAX. This is an image-classification / backbone checkpoint (RegNetImageClassify / RegNetModel)."
+    },
+    {
+      "title": "Fine-tuned Models for facebook/regnet-x-320 - Hugging Face",
+      "url": "https://huggingface.co/models?other=base_model:finetune:facebook/regnet-x-320",
+      "snippet": "Explore machine learning models. Model Tree facebook/regnet-x-320 Apps Inference Providers Groq Novita Cerebras Nscale fal Together AI Fireworks Featherless AI Zai Replicate Cohere Scaleway Public AI Baseten OVHcloud AI Endpoints HF Inference API WaveSpeed DeepInfra One-click Deployment Misc"
+    },
+    {
+      "title": "facebook/regnet-x-320 — AICHINA.news | AI China News",
+      "url": "https://aichina.news/models/facebook/regnet-x-320/",
+      "snippet": "RegNet-X-320 is a convolutional neural network architecture from Facebook AI (Meta) designed for image classification and computer vision tasks. It is part of the RegNet family of models, which use a systematic design space to find efficient network configurations. This card appears to be a minimal stub on Modelers.cn, providing only license and date metadata without detailed specifications ..."
+    },
+    {
+      "title": "Huawei Ascend Ecosystem Welcomes Meta&#x27;s RegNet-X-320 to Modelers.cn",
+      "url": "https://aichina.news/blog/huawei-ascend-ecosystem-welcomes-metas-regnet-x-320-to-modelers-cn-wghok1/",
+      "snippet": "Modelers.cn, the central hub for Huawei&#x27;s Ascend AI ecosystem, has just added another powerful tool to its arsenal: the facebook/regnet-x-320 model. For developers working with the Ascend NPU stack, this is a significant development. It provides a hosted mirror of Meta&#x27;s RegNet-X-320 CNN backbone, a classic architecture known for its robust performance in image classification and downstream ..."
+    },
+    {
+      "title": "LLM Leaderboard 2026: Compare 300+ Top AI Models by Intelligence, Speed ...",
+      "url": "https://llm-stats.com/leaderboards/llm-leaderboard",
+      "snippet": "The LLM Leaderboard — independent ranking of GPT, Claude, Gemini, Llama, DeepSeek and 300+ AI models by intelligence, speed and price. Filter by provider, license, modality and context window; sort by every benchmark. Composite LLM Stats Score updated continuously from public benchmarks and live API metrics."
+    }
+  ]
+}

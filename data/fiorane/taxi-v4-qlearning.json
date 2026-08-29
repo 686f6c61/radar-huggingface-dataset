@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "fiorane/Taxi-v4-Qlearning",
+  "slug": "fiorane-taxi-v4-qlearning",
+  "author": "fiorane",
+  "url": "https://huggingface.co/fiorane/Taxi-v4-Qlearning",
+  "created_at": "2026-08-29T10:14:56.000Z",
+  "updated_at": "2026-08-29T10:14:59.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "reinforcement-learning",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "Taxi-v4",
+    "q-learning",
+    "reinforcement-learning",
+    "custom-implementation",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 141310,
+  "storage_human": "141310 B",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "DarkerLiao/Qlearning-Taxi-v4 · Hugging Face",
+      "url": "https://huggingface.co/DarkerLiao/Qlearning-Taxi-v4",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Jmz919/Taxi-v4-QLearning · Hugging Face",
+      "url": "https://huggingface.co/Jmz919/Taxi-v4-QLearning",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Taxi-v4-OpenAI-Gymnasium/q_learning.py at main - GitHub",
+      "url": "https://github.com/janashams/Taxi-v4-OpenAI-Gymnasium/blob/main/q_learning.py",
+      "snippet": "Taxi-v4 is a classic grid-world environment where a taxi must navigate a 5×5 grid, pick up a passenger from one of four fixed locations (R, G, Y, B), and drop them off at the correct destination. -..."
+    },
+    {
+      "title": "taxi-v4-qlearning/README.md at main · lucassvalentim/taxi-v4 ... - GitHub",
+      "url": "https://github.com/lucassvalentim/taxi-v4-qlearning/blob/main/README.md",
+      "snippet": "Academic Reinforcement Learning project implementing Q-Learning in the Taxi-v4 Gymnasium environment, including training, evaluation, visualization, and performance analysis. - lucassvalentim/taxi-..."
+    },
+    {
+      "title": "Reinforcement Learning from Scratch:Q-Learning on Taxi-v4 in Python#ai ...",
+      "url": "https://www.youtube.com/watch?v=FvcPiqpMzeY",
+      "snippet": "In this video, we build and train a Reinforcement Learning agent from scratch using Q-Learning to solve the OpenAI Gymnasium Taxi-v4 environment!Watch the AI..."
+    }
+  ]
+}

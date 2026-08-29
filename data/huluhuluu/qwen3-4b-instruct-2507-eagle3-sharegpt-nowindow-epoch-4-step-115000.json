@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "huluhuluu/Qwen3-4B-Instruct-2507-EAGLE3-ShareGPT-NoWindow-epoch-4-step-115000",
+  "slug": "huluhuluu-qwen3-4b-instruct-2507-eagle3-sharegpt-nowindow-epoch-4-step-115000",
+  "author": "huluhuluu",
+  "url": "https://huggingface.co/huluhuluu/Qwen3-4B-Instruct-2507-EAGLE3-ShareGPT-NoWindow-epoch-4-step-115000",
+  "created_at": "2026-08-29T07:55:48.000Z",
+  "updated_at": "2026-08-29T08:03:21.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "llama",
+    "speculative-decoding",
+    "eagle3",
+    "specforge",
+    "sglang",
+    "qwen3",
+    "draft-model",
+    "sharegpt",
+    "base_model:Qwen/Qwen3-4B-Instruct-2507",
+    "base_model:finetune:Qwen/Qwen3-4B-Instruct-2507",
+    "license:apache-2.0",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 202700416,
+  "parameters_human": "202.7M",
+  "storage_bytes": 405446647,
+  "storage_human": "405 MB",
+  "base_model": "Qwen/Qwen3-4B-Instruct-2507",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Qwen/Qwen3-4B-Instruct-2507 · Hugging Face",
+      "url": "https://huggingface.co/Qwen/Qwen3-4B-Instruct-2507",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Qwen/Qwen3-4B · Hugging Face",
+      "url": "https://huggingface.co/Qwen/Qwen3-4B",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Qwen3-4B-Instruct-2507 · Models",
+      "url": "https://www.modelscope.cn/models/Qwen/Qwen3-4B-Instruct-2507",
+      "snippet": "Qwen3-4B-Instruct-2507 Highlights We introduce the updated version of the Qwen3-4B non-thinking mode, named Qwen3-4B-Instruct-2507, featuring the following key enhancements: Significant improvements in general capabilities, including instruction following, logical reasoning, text comprehension, mathematics, science, coding and tool usage."
+    },
+    {
+      "title": "QwenLM/Qwen3 | DeepWiki",
+      "url": "https://deepwiki.com/QwenLM/Qwen3",
+      "snippet": "The Qwen3-Instruct-2507 variants focus on general-purpose instruction following without thinking content generation, while Qwen3-Thinking-2507 variants include explicit reasoning through `` blocks for complex problem-solving scenarios."
+    },
+    {
+      "title": "Qwen3 Technical Report - arXiv.org",
+      "url": "https://arxiv.org/pdf/2505.09388",
+      "snippet": "Abstract In this work, we present Qwen3, the latest version of the Qwen model family. Qwen3 comprises a series of large language models (LLMs) designed to advance performance, efficiency, and multilingual capabilities. The Qwen3 series includes models of both dense and Mixture-of-Expert (MoE) architectures, with parameter scales ranging from 0.6 to 235 billion. A key innovation in Qwen3 is the ..."
+    }
+  ]
+}

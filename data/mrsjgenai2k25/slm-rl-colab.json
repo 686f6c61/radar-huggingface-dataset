@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "MrSjGenAi2k25/slm-rl-colab",
+  "slug": "mrsjgenai2k25-slm-rl-colab",
+  "author": "MrSjGenAi2k25",
+  "url": "https://huggingface.co/MrSjGenAi2k25/slm-rl-colab",
+  "created_at": "2026-08-29T09:43:58.000Z",
+  "updated_at": "2026-08-29T09:44:01.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "lora",
+    "transformers",
+    "reinforcement-learning",
+    "atari",
+    "slm-rl",
+    "boxing",
+    "text-generation",
+    "base_model:LiquidAI/LFM2.5-1.2B-Instruct",
+    "base_model:adapter:LiquidAI/LFM2.5-1.2B-Instruct",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 22241248,
+  "storage_human": "22 MB",
+  "base_model": "LiquidAI/LFM2.5-1.2B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Google Colab",
+      "url": "https://colab.research.google.com/",
+      "snippet": "Learn how to bring the power of Colab straight to your terminal. Read the full announcement."
+    },
+    {
+      "title": "How to Train a Simple AI Model Using Google Colab",
+      "url": "https://www.techknowable.com/how-train-simple-ai-model-using-google-colab/",
+      "snippet": "Google Colab AI model training guide Learn to build, train & save simple AI models using free cloud GPUs in this step-by-step tutorial."
+    },
+    {
+      "title": "VizuaraAI · GitHub",
+      "url": "https://github.com/VizuaraAI",
+      "snippet": "pharma-slm Public From-scratch ~350M pharmaceutical Small Language Model — full reproducible pipeline, every experiment, GPU/cost breakdown, and a live demo (chat + MCQ)."
+    },
+    {
+      "title": "Train a language model - Colab",
+      "url": "https://colab.research.google.com/github/huggingface/notebooks/blob/main/examples/language_modeling_from_scratch.ipynb",
+      "snippet": "We will see how to easily load and preprocess the dataset for each one of those tasks, and how to use the Trainer API to train a model on it. This notebooks assumes you have trained a tokenizer on the corpus you are using, see the How to train a tokenizer notebook (open in colab)."
+    },
+    {
+      "title": "Medical AI: Fine-Tuned SLM for Healthcare - GitHub",
+      "url": "https://github.com/EchoesInAI/SLM-Medical-AI",
+      "snippet": "🏥 Medical AI: Fine-Tuned SLM for Healthcare Mistral-7B fine-tuned on 100K medical Q&A — Outperforms GPT-4 on healthcare queries at 8x faster speed, $0 cost, and 100% HIPAA compliance."
+    }
+  ]
+}

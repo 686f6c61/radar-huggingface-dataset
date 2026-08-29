@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "nebulaic-tech/aurora-titan-70b-moe",
+  "slug": "nebulaic-tech-aurora-titan-70b-moe",
+  "author": "nebulaic-tech",
+  "url": "https://huggingface.co/nebulaic-tech/aurora-titan-70b-moe",
+  "created_at": "2026-08-29T06:05:30.000Z",
+  "updated_at": "2026-08-29T06:43:21.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en",
+    "multilingual"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "aurora-ai",
+    "nnpl",
+    "sparse-moe",
+    "code-generation",
+    "reasoning",
+    "nebulaic-tech",
+    "en",
+    "multilingual",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1048649728,
+  "parameters_human": "1.05B",
+  "storage_bytes": 2097310502,
+  "storage_human": "2.1 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Running a 70B Model on a 4GB GPU: Inside AirLLM&#x27;s Layer-Streaming Trick",
+      "url": "https://freeai.help/blog/running-a-70b-model-on-a-4gb-gpu_en",
+      "snippet": "An open-source project runs 70B-parameter language models on a single 4GB GPU — no quantization, distillation, or pruning. A look at how AirLLM&#x27;s layer-streaming approach works, why it&#x27;s a perfect fit for MoE models, and who it&#x27;s actually for."
+    },
+    {
+      "title": "Best Self-Hosted LLM Leaderboard 2026 | Open-Weight Model Rankings for ...",
+      "url": "https://onyx.app/self-hosted-llm-leaderboard",
+      "snippet": "The definitive self-hosted LLM leaderboard — ranking the best open-weight models for enterprise self-hosting across quality, speed, hardware requirements, and cost. Compare Llama, DeepSeek, Qwen, Mistral, and more."
+    },
+    {
+      "title": "Running 70B Models Locally — Exact VRAM by Quantization",
+      "url": "https://insiderllm.com/guides/running-70b-models-locally-vram-guide/",
+      "snippet": "📚 More on this topic: VRAM Requirements Guide · Quantization Explained · Multi-GPU Guide · Mac vs PC for Local AI · Used RTX 3090 Buying Guide Running a 70B model locally used to be the line between \"hobby\" and \"serious local AI\" — frontier-class reasoning on your own hardware, no data leaving the box."
+    },
+    {
+      "title": "Best Uncensored Local LLMs by VRAM Tier (2026) | InsiderLLM",
+      "url": "https://insiderllm.com/guides/best-uncensored-local-llms/",
+      "snippet": "📚 Related: VRAM Requirements for Local LLMs · Qwen Models Guide · Mistral & Mixtral Guide · Best LLMs for Writing Ask a standard instruct model to write a scene where a character dies on-page and you&#x27;ll get a polite refusal. Ask it to walk through the chemistry of explosives for a novel and it&#x27;ll lecture you about safety. Ask it to roleplay a villain and it&#x27;ll break character mid ..."
+    },
+    {
+      "title": "Best LLM Leaderboard 2026 | AI Model Rankings, Benchmarks & Pricing",
+      "url": "https://onyx.app/llm-leaderboard",
+      "snippet": "The definitive LLM leaderboard — ranking the best AI models including Claude, GPT, Gemini, DeepSeek, Llama, and more across coding, reasoning, math, agentic, and chat benchmarks. Compare LLM rankings, tier lists, and pricing."
+    }
+  ]
+}

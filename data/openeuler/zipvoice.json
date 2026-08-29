@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "openEuler/zipvoice",
+  "slug": "openeuler-zipvoice",
+  "author": "openEuler",
+  "url": "https://huggingface.co/openEuler/zipvoice",
+  "created_at": "2026-08-29T07:04:11.000Z",
+  "updated_at": "2026-08-29T07:05:44.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-speech",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "onnx",
+    "zipvoice",
+    "tts",
+    "speech-synthesis",
+    "robotics",
+    "IB-Robot",
+    "ascend",
+    "edge-deployment",
+    "text-to-speech",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1066172950,
+  "storage_human": "1.1 GB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - k2-fsa/ZipVoice: Fast and High-Quality Zero-Shot Text-to ...",
+      "url": "https://github.com/k2-fsa/ZipVoice",
+      "snippet": "Small and fast: only 123M parameters. High-quality voice cloning: state-of-the-art performance in speaker similarity, intelligibility, and naturalness. Multi-lingual: support Chinese and English. Multi-mode: support both single-speaker and dialogue speech generation. ZipVoice The basic model ..."
+    },
+    {
+      "title": "ZipVoice",
+      "url": "https://zipvoice.github.io/",
+      "snippet": "Abstract Existing large-scale zero-shot text-to-speech (TTS) models deliver high speech quality but suffer from slow inference speeds due to massive parameters. To address this issue, this paper introduces ZipVoice, a high-quality flow-matching-based zero-shot TTS model with a compact model size and fast inference speed. Key designs include: 1) a Zipformer-based flow-matching decoder to ..."
+    },
+    {
+      "title": "ZipVoice: Fast and High-Quality Zero-Shot Text-to-Speech with Flow Matching",
+      "url": "https://arxiv.org/html/2506.13053v3",
+      "snippet": "To address the aforementioned challenges, we introduce ZipVoice, a high-quality zero-shot TTS model with a compact model size and fast inference speed. Built upon the flow-matching framework for its simplicity and superior performance, ZipVoice ensure efficient and high-quality speech generation with following designs."
+    },
+    {
+      "title": "ZipVoice: Text-to-Audio model — overview, use cases, alternatives",
+      "url": "https://www.aimodels.fyi/models/huggingFace/zipvoice-k2-fsa",
+      "snippet": "Overview ZipVoice is a non-autoregressive zero-shot text-to-speech model built by k2-fsa that uses flow matching to generate high-quality speech from text input. The model family consists of two main variants: ZipVoice for single-speaker speech generation and ZipVoice-Dialog for multi-speaker dialogue synthesis. The architecture prioritizes speed and quality simultaneously, departing from ..."
+    },
+    {
+      "title": "samson-castalk/ZipVoice · Hugging Face",
+      "url": "https://huggingface.co/samson-castalk/ZipVoice",
+      "snippet": "ZipVoice is a high-quality zero-shot TTS model with a small model size and fast inference speed. Key features: Small and fast: only 123M parameters. High-quality: state-of-the-art voice cloning performance in speaker similarity, intelligibility, and naturalness. Multi-lingual: support Chinese and English. News 2025/06/16: 🔥 ZipVoice is released."
+    }
+  ]
+}

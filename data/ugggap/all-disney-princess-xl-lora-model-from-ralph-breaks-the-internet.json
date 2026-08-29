@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "Ugggap/all-disney-princess-xl-lora-model-from-ralph-breaks-the-internet",
+  "slug": "ugggap-all-disney-princess-xl-lora-model-from-ralph-breaks-the-internet",
+  "author": "Ugggap",
+  "url": "https://huggingface.co/Ugggap/all-disney-princess-xl-lora-model-from-ralph-breaks-the-internet",
+  "created_at": "2026-08-29T10:54:44.000Z",
+  "updated_at": "2026-08-29T10:54:44.000Z",
+  "license": "bespoke-lora-trained-license",
+  "license_family": "unknown",
+  "pipeline_tag": "text-to-image",
+  "library": "diffusers",
+  "languages": [],
+  "tags": [
+    "diffusers",
+    "text-to-image",
+    "stable-diffusion",
+    "lora",
+    "template:sd-lora",
+    "migrated",
+    "character",
+    "disney",
+    "disney princess",
+    "disney frozen",
+    "base_model:stabilityai/stable-diffusion-xl-base-1.0",
+    "base_model:adapter:stabilityai/stable-diffusion-xl-base-1.0",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 228515644,
+  "storage_human": "229 MB",
+  "base_model": "stabilityai/stable-diffusion-xl-base-1.0",
+  "formats": [
+    "diffusers"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "all-disney-princess-xl-lora-model-from-ralph-breaks-the-internet",
+      "url": "https://huggingface.co/sWizad/all-disney-princess-xl-lora-model-from-ralph-breaks-the-internet",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "All Disney Princess XL LoRA Model from Ralph Breaks the Internet",
+      "url": "https://civitai.com/models/212532/all-disney-princess-xl-lora-model-from-ralph-breaks-the-internet",
+      "snippet": "This LoRA model is trained on screen capture images featuring beloved Disney princesses from the movie Ralph Breaks the Internet, including Rapunzel, Snow White, Ariel, Aurora, Belle, Cinderella, Elsa, Anna, Jasmine, Mulan, Merida, Tiana, Moana, and Pocahontas. It&#x27;s designed to be an All-in-One Model for your creative endeavors."
+    },
+    {
+      "title": "All Disney Princess XL LoRA Model - Ralph Breaks the Internet",
+      "url": "https://civarchive.com/seaart/models/153c25d2738066f4cd0137ace79b6059/versions/5af14925f2d8554edaddda997fe0e0bd",
+      "snippet": "Download All Disney Princess XL LoRA Model from Ralph Breaks the Internet - LORA for SDXL 1.0 by titansteng. Free AI model download from CivArchive."
+    },
+    {
+      "title": "All_Disney_Princess_XL_LoRA_Model_from_Ralph_Breaks_the_Internet",
+      "url": "https://huggingface.co/UnifiedHorusRA/All_Disney_Princess_XL_LoRA_Model_from_Ralph_Breaks_the_Internet",
+      "snippet": "All_Disney_Princess_XL_LoRA_Model_from_Ralph_Breaks_the_Internet like 0 custom Model card Files Files and versions"
+    },
+    {
+      "title": "All Disney Princess XL LoRA Model From Ralph Breaks The Internet",
+      "url": "https://modelslab.com/models/modelslab/all-disney-princess-xl-lo",
+      "snippet": "Try All Disney Princess XL LoRA Model From Ralph Breaks The Internet in your browser. Generate AI content instantly with no code required. Plans from $21/month."
+    }
+  ]
+}

@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "fiorane/q-FrozenLake-v1-4x4-noSlippery",
+  "slug": "fiorane-q-frozenlake-v1-4x4-noslippery",
+  "author": "fiorane",
+  "url": "https://huggingface.co/fiorane/q-FrozenLake-v1-4x4-noSlippery",
+  "created_at": "2026-08-29T10:13:04.000Z",
+  "updated_at": "2026-08-29T10:13:08.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "reinforcement-learning",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "FrozenLake-v1-4x4-no_slippery",
+    "q-learning",
+    "reinforcement-learning",
+    "custom-implementation",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 915,
+  "storage_human": "915 B",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "JackForAI/q-FrozenLake-v1-4x4-noSlippery · Hugging Face",
+      "url": "https://huggingface.co/JackForAI/q-FrozenLake-v1-4x4-noSlippery",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "macoberry/q-FrozenLake-v1-4x4-noSlippery · Hugging Face",
+      "url": "https://huggingface.co/macoberry/q-FrozenLake-v1-4x4-noSlippery",
+      "snippet": "Q-Learning Agent playing FrozenLake-v1 This is a trained Q-Learning agent playing FrozenLake-v1. Usage"
+    },
+    {
+      "title": "franfram/q-FrozenLake-v1-4x4-noSlippery - AI Model Zoo - BimAnt",
+      "url": "https://zoo.bimant.com/model/81558",
+      "snippet": "Q-Learning Agent playing FrozenLake-v1 This is a trained model of a Q-Learning agent playing FrozenLake-v1 ."
+    },
+    {
+      "title": "andrei-saceleanu/q-FrozenLake-v1-4x4-noSlippery - AI Model Zoo - BimAnt",
+      "url": "https://zoo.bimant.com/model/102096",
+      "snippet": "Q-Learning Agent playing1 FrozenLake-v1 This is a trained model of a Q-Learning agent playing FrozenLake-v1 ."
+    },
+    {
+      "title": "Damacol/hamzachera-q-frozenlake-v1-4x4-noslippery - GitHub",
+      "url": "https://github.com/Damacol/hamzachera-q-frozenlake-v1-4x4-noslippery",
+      "snippet": "HamzaChera/q-FrozenLake-v1-4x4-noSlippery - Private, Uncensored AI for Real Creators and Devs Private inference with {MODEL}. Zero logs, full prompt freedom, and seamless Venice.ai integration for real creators."
+    }
+  ]
+}

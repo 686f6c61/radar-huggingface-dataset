@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "Xenna/stella-mobile-litertlm",
+  "slug": "xenna-stella-mobile-litertlm",
+  "author": "Xenna",
+  "url": "https://huggingface.co/Xenna/stella-mobile-litertlm",
+  "created_at": "2026-08-29T11:35:45.000Z",
+  "updated_at": "2026-08-29T11:39:10.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "StelNet",
+    "Stella",
+    "mobile-actions",
+    "function-calling",
+    "tiny-garden",
+    "LITERT_LM",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 288964608,
+  "storage_human": "289 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - google-ai-edge/LiteRT-LM: LiteRT-LM is Google&#x27;s production ...",
+      "url": "https://github.com/google-ai-edge/LiteRT-LM",
+      "snippet": "🚀 Production-Ready for Google&#x27;s Products LiteRT-LM powers on-device GenAI experiences in Chrome, Chromebook Plus, Pixel Watch, and more. You can also try the Google AI Edge Gallery app to run models immediately on your device."
+    },
+    {
+      "title": "Google AI Edge LiteRT Samples - GitHub",
+      "url": "https://github.com/google-ai-edge/litert-samples",
+      "snippet": "Google AI Edge LiteRT Samples This repository contains official and community contributed sample applications, model recipes, agent skills and utilities for LiteRT (formerly known as TensorFlow Lite), Google&#x27;s open source, high-performance on-device machine learning framework and LiteRT-LM, a specialized orchestration layer for running LLMs ..."
+    },
+    {
+      "title": "LiteRT-LM Overview | Google AI Edge | Google for Developers",
+      "url": "https://developers.google.com/edge/litert-lm/overview",
+      "snippet": "The Google AI Edge Gallery is an experimental app designed to showcase on-device Generative AI capabilities running entirely offline using LiteRT-LM. Google Play: Use LLMs locally on supported Android devices."
+    },
+    {
+      "title": "litert-community/gemma-4-E2B-it-litert-lm · Hugging Face",
+      "url": "https://huggingface.co/litert-community/gemma-4-E2B-it-litert-lm",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Deploy GenAI Models with LiteRT | Google AI Edge - Google Developers",
+      "url": "https://developers.google.com/edge/litert/genai/overview",
+      "snippet": "LiteRT delivers high-performance deployment for Generative AI models across mobile, desktop, and web platforms. By seamlessly leveraging hardware acceleration from CPUs, GPUs, and NPUs, LiteRT provides state-of-the-art performance for on-device GenAI inference. You can deploy complex GenAI models using the following integrated tech stack:"
+    }
+  ]
+}

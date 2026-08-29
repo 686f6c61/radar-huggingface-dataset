@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "ayousanz/pocket-tts-ja-phase1",
+  "slug": "ayousanz-pocket-tts-ja-phase1",
+  "author": "ayousanz",
+  "url": "https://huggingface.co/ayousanz/pocket-tts-ja-phase1",
+  "created_at": "2026-08-29T08:01:44.000Z",
+  "updated_at": "2026-08-29T08:07:50.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-speech",
+  "library": "pocket-tts",
+  "languages": [
+    "ja"
+  ],
+  "tags": [
+    "pocket-tts",
+    "safetensors",
+    "text-to-speech",
+    "japanese",
+    "validation-run",
+    "not-for-production",
+    "ja",
+    "license:cc-by-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 340164290,
+  "parameters_human": "340.2M",
+  "storage_bytes": 11624695567,
+  "storage_human": "11.6 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": true,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - kyutai-labs/pocket-tts: A TTS that fits in your CPU (and ...",
+      "url": "https://github.com/kyutai-labs/pocket-tts",
+      "snippet": "ComfyUI-Pocket-TTS by @ai-joe-git Lightweight CPU-based Text-to-Speech for ComfyUI pocket-tts-server by @ai-joe-git A lightweight, real-time voice cloning and chat server with OpenAI-compatible API. Clone any voice with just 20 seconds of audio and chat with AI using that voice instantly."
+    },
+    {
+      "title": "ayousanz (yousan) - Hugging Face",
+      "url": "https://huggingface.co/ayousanz",
+      "snippet": "日本語 TTS(G2P)の誤読プリフライト ModernBERT-Ja. ayousanz Jun 27. Running . 1. Kawaii Voice Search. 🎤. ayousanz Mar 24"
+    },
+    {
+      "title": "Pocket TTS - kyutai-labs.github.io",
+      "url": "https://kyutai-labs.github.io/pocket-tts/",
+      "snippet": "pocket-tts-server by @ai-joe-git A lightweight, real-time voice cloning and chat server with OpenAI-compatible API. Clone any voice with just 20 seconds of audio and chat with AI using that voice instantly."
+    },
+    {
+      "title": "Pocket-TTS - Lightweight, Open-Source Text-to-Speech",
+      "url": "https://pockettts.org/",
+      "snippet": "Pocket-TTS is an open-source text-to-speech library focused on fast iteration, portability, and developer-friendly integration."
+    },
+    {
+      "title": "stable-tts-v1.1-japanese-research-artifacts - Hugging Face",
+      "url": "https://huggingface.co/ayousanz/stable-tts-v1.1-japanese-research-artifacts",
+      "snippet": "StableTTSEx 日本語 — Phase 2/3 研究チェックポイント（未採用・否定的結果） これは StableTTSEx （KdaiP/StableTTS v1.1 フォーク・日本語特化）の ゼロショット話者類似性の改善 を狙った Phase 2・3 研究で学習した 未採用 チェックポイント群です。 いずれも baseline（stable-tts-v1.1-japanese-378h）を 上回れず不 ..."
+    }
+  ]
+}

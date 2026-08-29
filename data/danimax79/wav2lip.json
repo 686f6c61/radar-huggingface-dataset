@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "Danimax79/Wav2Lip",
+  "slug": "danimax79-wav2lip",
+  "author": "Danimax79",
+  "url": "https://huggingface.co/Danimax79/Wav2Lip",
+  "created_at": "2026-08-29T02:20:53.000Z",
+  "updated_at": "2026-08-29T02:20:54.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "arxiv:2008.10010",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 892551714,
+  "storage_human": "893 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "camenduru/Wav2Lip · Hugging Face",
+      "url": "https://huggingface.co/camenduru/Wav2Lip",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Wav2Lip: Lip Sync Tool for Realistic Talking Videos Free",
+      "url": "https://www.wav2lip.org/",
+      "snippet": "Wav2Lip uses advanced AI to achieve highly accurate lip sync for any speech audio. Whether it&#x27;s a podcast, voiceover, or real-time dialogue, the model ensures precise mouth movements that match your sound, even in noisy or low-quality videos."
+    },
+    {
+      "title": "Wav2Lip: Free & Open-Source Lip Sync AI (2026) | tasarim.ai",
+      "url": "https://tasarim.ai/en/models/wav2lip",
+      "snippet": "Wav2Lip review (2026): free, open-source AI model rated 4.3/5. Wav2Lip is a deep learning model developed by researchers at IIIT Hyderabad that generates perfectly synchronized lip movements from any audio recording, representing a breakthrough in visual speech synthesis. The model takes a face video and an audio track as input, then produces realistic lip movements that precisely match the ..."
+    },
+    {
+      "title": "Wav2Lip Model | hungho77/Digital-Human | DeepWiki",
+      "url": "https://deepwiki.com/hungho77/Digital-Human/5.2-wav2lip-model",
+      "snippet": "Wav2Lip Model Relevant source files The Wav2Lip model provides accurate lip-sync animation for the Digital Human system. It is one of three available AI models, focusing on precise synchronization between audio and lip movements. This page documents the Wav2Lip implementation, file requirements, processing pipeline, and usage instructions."
+    },
+    {
+      "title": "tensorbanana/wav2lip · Hugging Face",
+      "url": "https://huggingface.co/tensorbanana/wav2lip",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    }
+  ]
+}

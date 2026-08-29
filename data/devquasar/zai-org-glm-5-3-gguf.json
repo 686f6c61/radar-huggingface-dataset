@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "DevQuasar/zai-org.GLM-5.3-GGUF",
+  "slug": "devquasar-zai-org-glm-5-3-gguf",
+  "author": "DevQuasar",
+  "url": "https://huggingface.co/DevQuasar/zai-org.GLM-5.3-GGUF",
+  "created_at": "2026-08-29T02:05:32.000Z",
+  "updated_at": "2026-08-29T06:19:21.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "text-generation",
+    "base_model:zai-org/GLM-5.3",
+    "base_model:quantized:zai-org/GLM-5.3",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 753329940480,
+  "parameters_human": "753.33B",
+  "storage_bytes": 358734913984,
+  "storage_human": "358.7 GB",
+  "base_model": "zai-org/GLM-5.3",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "DevQuasar/zai-org.GLM-5.3-Flash-GGUF at main - Hugging Face",
+      "url": "https://huggingface.co/DevQuasar/zai-org.GLM-5.3-Flash-GGUF/tree/main",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GitHub - zai-org/GLM-5: GLM-5: From Vibe Coding to Agentic Engineering",
+      "url": "https://github.com/zai-org/GLM-5",
+      "snippet": "GLM-5.1 is our next-generation flagship model for agentic engineering, with significantly stronger coding capabilities than its predecessor. It achieves state-of-the-art performance on SWE-Bench Pro and leads GLM-5 by a wide margin on NL2Repo (repo generation) and Terminal-Bench 2.0 (real-world terminal tasks). But the most meaningful leap goes beyond first-pass performance. Previous models ..."
+    },
+    {
+      "title": "GLM-5.3 - Overview - Z.AI DEVELOPER DOCUMENT",
+      "url": "https://docs.z.ai/guides/llm/glm-5.3",
+      "snippet": "Overview GLM-5.3 is Z.ai&#x27;s latest flagship model, delivering comprehensive advancements in complex software engineering and agent capabilities. It uses the same base model as GLM-5.2, with all improvements driven by post-training. Compared with GLM-5.2, it delivers significantly stronger performance in complex programming and long-horizon tasks: Stronger Coding Capability GLM-5.3 delivers a ..."
+    },
+    {
+      "title": "GLM-5.3: Frontier Coding with Emergent Cyber Capabilities - z.ai",
+      "url": "https://z.ai/blog/glm-5.3",
+      "snippet": "Today we are releasing GLM-5.3. It uses the same base model as GLM-5.2 — every gain comes from post-training. Compared with GLM-5.2, it is much better at complex coding and long-horizon tasks: Stronger Coding: GLM-5.3 is the most capable open-weights model for coding, with a 50% improvement over GLM-5.2 on our in-house Z.ai Code Bench."
+    },
+    {
+      "title": "zai-org/ GLM-5.3 - recipes.vllm.ai",
+      "url": "https://recipes.vllm.ai/zai-org/GLM-5.3",
+      "snippet": "Overview GLM-5.3 is the newest model in the GLM-5 series — a ~743B-parameter MoE (39B active) from Z-AI. Architecture and serving flags are identical to GLM-5.2; the packaging change is that the default zai-org/GLM-5.3 checkpoint is now native FP8 — BF16 weights live under the suffixed zai-org/GLM-5.3-BF16 repo."
+    }
+  ]
+}

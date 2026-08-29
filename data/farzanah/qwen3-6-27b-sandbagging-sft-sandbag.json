@@ -21,7 +21,7 @@
     "base_model:adapter:Qwen/Qwen3.6-27B",
     "region:us"
   ],
-  "likes": 0,
+  "likes": 1,
   "downloads_30d": 11,
   "trending_score": 0,
   "parameters": null,

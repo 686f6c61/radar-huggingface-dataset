@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "JeevanSid/slm-rl-colab",
+  "slug": "jeevansid-slm-rl-colab",
+  "author": "JeevanSid",
+  "url": "https://huggingface.co/JeevanSid/slm-rl-colab",
+  "created_at": "2026-08-29T09:25:04.000Z",
+  "updated_at": "2026-08-29T09:25:08.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "lora",
+    "transformers",
+    "reinforcement-learning",
+    "atari",
+    "slm-rl",
+    "space-invaders",
+    "text-generation",
+    "base_model:LiquidAI/LFM2.5-1.2B-Instruct",
+    "base_model:adapter:LiquidAI/LFM2.5-1.2B-Instruct",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 22241248,
+  "storage_human": "22 MB",
+  "base_model": "LiquidAI/LFM2.5-1.2B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - CraftsMan-Labs/SLM-RL",
+      "url": "https://github.com/CraftsMan-Labs/SLM-RL",
+      "snippet": "SLM-RL A self-improving game gymnasium for small language models. Small language models learn to play games through reinforcement learning: the model plays games in text-native environments, every decision is collected into a reusable dataset, the model is automatically fine-tuned on its own experience, and the improved model re-enters play."
+    },
+    {
+      "title": "Google Colab",
+      "url": "https://colab.research.google.com/",
+      "snippet": "Learn how to bring the power of Colab straight to your terminal. Read the full announcement."
+    },
+    {
+      "title": "GitHub - THUDM/slime: slime is an LLM post-training framework for RL ...",
+      "url": "https://github.com/THUDM/slime",
+      "snippet": "Battle-tested by frontier model training: slime is the RL framework behind GLM-5.2, GLM-5.1, GLM-5, GLM-4.7, GLM-4.6, and GLM-4.5. This validates the full post-training loop, not only isolated examples. Correctness-first infrastructure: RL bugs are often silent. slime keeps the dataflow explicit, supports separate rollout-only and train-only debugging paths, and documents reproducibility ..."
+    },
+    {
+      "title": "Building AI Models with Google Colab: A Hands-On Starter Guide",
+      "url": "https://python.plainenglish.io/building-ai-models-with-google-colab-a-hands-on-starter-guide-b203ed0916aa",
+      "snippet": "Credit: Google Colab Master Google Colab for AI development with zero setup. Learn GPU acceleration, data handling, model training, and collaborative workflows. Build complete AI models in the cloud with hands-on examples and pro tips."
+    },
+    {
+      "title": "Unsloth - Run and Train Models Locally",
+      "url": "https://unsloth.ai/",
+      "snippet": "Use the latest models Run and train nearly every model locally, with Day Zero support for releases like Qwen3.8, NVIDIA, GLM, Gemma and more. Discover, manage and download the right quantization for your device from the built-in model hub."
+    }
+  ]
+}

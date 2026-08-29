@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "Q1ngMang/Ling-3.0-tiny-sub3bit-PPLp10-GGUF",
+  "slug": "q1ngmang-ling-3-0-tiny-sub3bit-pplp10-gguf",
+  "author": "Q1ngMang",
+  "url": "https://huggingface.co/Q1ngMang/Ling-3.0-tiny-sub3bit-PPLp10-GGUF",
+  "created_at": "2026-08-29T10:42:20.000Z",
+  "updated_at": "2026-08-29T10:42:20.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Ling 3.0 Tiny download | SourceForge.net",
+      "url": "https://sourceforge.net/projects/ling-3-0-tiny/",
+      "snippet": "Download Ling 3.0 Tiny for free. Lightweight MoE model for local reasoning, coding, and AI agents. Ling-3.0-tiny is inclusionAI&#x27;s lightweight hybrid reasoning Mixture-of-Experts model, designed to provide capable reasoning and agentic performance at low inference cost. It contains 7.9B total parameters while activating only 1.3B per token, using a hybrid architecture that alternates Kimi ..."
+    },
+    {
+      "title": "bartowski/Ling-3.0-tiny-GGUF · Hugging Face",
+      "url": "https://huggingface.co/bartowski/Ling-3.0-tiny-GGUF",
+      "snippet": "All quants made using imatrix option, with a calibration corpus rendered through this model&#x27;s own chat template. The corpus pairs plain prose with tool-calling and reasoning conversations (corpus source data), encoded exactly as this model sees them at inference and processed with --parse-special, so chat-format special tokens contribute to the ..."
+    },
+    {
+      "title": "Ling",
+      "url": "https://developer.ant-ling.com/en/docs/models/ling/",
+      "snippet": "Ling-3.0-tiny Ling-3.0-tiny is a lightweight hybrid reasoning model in the Ling series designed for edge deployment scenarios, with 7.9B total parameters and only 1.3B activated parameters."
+    },
+    {
+      "title": "inclusionAI/Ling-3.0-tiny-base-30T · Hugging Face",
+      "url": "https://huggingface.co/inclusionAI/Ling-3.0-tiny-base-30T",
+      "snippet": "This enables broad model capabilities while activating just 5.1B (Non-emb) parameters per token; Native hybrid linear attention: Ling-3.0 series adopt a native hybrid linear attention architecture from the very start of pretraining by combining KDA with Gated MLA to enable efficient processing of long-context inputs."
+    },
+    {
+      "title": "Ling-3.0-tiny · LLM Releases",
+      "url": "https://www.llm-releases.com/models/ling-3-0-tiny",
+      "snippet": "Pitched as a highly economical on-device agent/reasoning model; weights are provided in BF16, FP8, and INT4 for a wide range of hardware. Vendor benchmark figures are unverified at launch. Ling-3.0-tiny is tracked as a open-weight model from Ant Group (inclusionAI). Released 2026-08-06."
+    }
+  ]
+}

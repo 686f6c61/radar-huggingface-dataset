@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "Dogaw-a1992/notes-visual-question-answering-2024",
+  "slug": "dogaw-a1992-notes-visual-question-answering-2024",
+  "author": "Dogaw-a1992",
+  "url": "https://huggingface.co/Dogaw-a1992/notes-visual-question-answering-2024",
+  "created_at": "2026-08-29T10:53:23.000Z",
+  "updated_at": "2026-08-29T10:53:32.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "visual-question-answering",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "transformer",
+    "research-notes",
+    "visual-question-answering",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 33088,
+  "parameters_human": "33088",
+  "storage_bytes": 132832,
+  "storage_human": "132832 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Andreamgw/visual-question-answering-notes · Hugging Face",
+      "url": "https://huggingface.co/Andreamgw/visual-question-answering-notes",
+      "snippet": "Repository summary A structured set of research notes on Visual Question Answering, with concrete evaluation references and open questions. Plans and hypotheses are kept separate from completed results."
+    },
+    {
+      "title": "Visual Question Answering - Hugging Face",
+      "url": "https://huggingface.co/docs/transformers/en/tasks/visual_question_answering",
+      "snippet": "Visual Question Answering (VQA) is the task of answering open-ended questions based on an image. The input to models supporting this task is typically a combination of an image and a question, and the output is an answer expressed in natural language. Some noteworthy use case examples for VQA include: Accessibility applications for visually impaired individuals. Education: posing questions ..."
+    },
+    {
+      "title": "Visual Question Answering: From Early Developments to Recent Advances ...",
+      "url": "https://arxiv.org/html/2501.03939v1",
+      "snippet": "Visual-Attention: Guided attention refers to the use of an attention mechanism to help the model focus on specific parts of an image when generating an answer to a question about the image. The attention mechanism is guided by the question, which is used as a query to direct the model&#x27;s attention to relevant regions of the image."
+    },
+    {
+      "title": "VQA: Visual Question Answering",
+      "url": "https://visualqa.org/",
+      "snippet": "VQA is a new dataset containing open-ended questions about images. These questions require an understanding of vision, language and commonsense knowledge to answer."
+    },
+    {
+      "title": "Visual Question Answering: A Survey of Methods, Datasets, Evaluation ...",
+      "url": "https://dl.acm.org/doi/10.1145/3728635",
+      "snippet": "Visual Question Answering (VQA) is a growing research area within the broader multimodal AI field, integrating computer vision (CV) and natural language processing (NLP) to answer textual questions about images. In some cases, VQA incorporates external knowledge alongside images and questions to enrich the understanding and generation of answers. Recent research has also explored combining ..."
+    }
+  ]
+}

@@ -1,0 +1,92 @@
+{
+  "schema": 1,
+  "id": "Gramscii-IT/SemanticRepair-270M",
+  "slug": "gramscii-it-semanticrepair-270m",
+  "author": "Gramscii-IT",
+  "url": "https://huggingface.co/Gramscii-IT/SemanticRepair-270M",
+  "created_at": "2026-08-22T10:14:15.000Z",
+  "updated_at": "2026-08-29T10:34:43.000Z",
+  "license": "gemma",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "mlx",
+  "languages": [
+    "en",
+    "it",
+    "fr",
+    "de",
+    "es"
+  ],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "gguf",
+    "gemma3_text",
+    "query-rewriting",
+    "query-understanding",
+    "intent-detection",
+    "routing",
+    "retrieval",
+    "rag",
+    "slm",
+    "multilingual",
+    "text-generation",
+    "conversational",
+    "en",
+    "it",
+    "fr",
+    "de",
+    "es",
+    "dataset:Gramscii-IT/semantic-repair-routing",
+    "base_model:google/gemma-3-270m",
+    "base_model:quantized:google/gemma-3-270m",
+    "license:gemma",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 589,
+  "trending_score": 0,
+  "parameters": 268098176,
+  "parameters_human": "268.1M",
+  "storage_bytes": 1738709839,
+  "storage_human": "1.7 GB",
+  "base_model": "google/gemma-3-270m",
+  "formats": [
+    "gguf",
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Gramscii/SemanticRepair-270M · Hugging Face",
+      "url": "https://huggingface.co/Gramscii/SemanticRepair-270M",
+      "snippet": "Instructions to use Gramscii/SemanticRepair-270M with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Notebooks Google Colab Kaggle Local AppsSettings llama.cpp How to use Gramscii/SemanticRepair-270M with llama.cpp: Install (macOS, Linux)"
+    },
+    {
+      "title": "Models - Hugging Face",
+      "url": "https://huggingface.co/models?search=Gramscii%2FSemanticRepair-270M",
+      "snippet": "Reset Parameters 6B 12B 32B 128B > 500B Libraries PyTorch TensorFlow JAX Transformers Diffusers GGUF MLX Transformers.js Safetensors + 45 + 47 + 44 Apps vLLM llama.cpp MLX LM LM Studio Ollama Jan Draw Things DiffusionBee JoyFusion + 8 + 10 Inference Providers Groq Novita Cerebras Nscale fal Together AI Fireworks Featherless AI Zai + 9 + 11 + 10 ..."
+    },
+    {
+      "title": "‎Google Gemini",
+      "url": "https://gemini.google.com/",
+      "snippet": "Meet Gemini, Google&#x27;s AI assistant. Get help with writing, planning, brainstorming, and more. Experience the power of generative AI."
+    },
+    {
+      "title": "Claude",
+      "url": "https://claude.com/",
+      "snippet": "Claude is a next generation AI assistant built by Anthropic and trained to be safe, accurate, and secure to help you do your best work."
+    },
+    {
+      "title": "Gemma Models by Google on Together AI",
+      "url": "https://www.together.ai/models-providers/google",
+      "snippet": "Deploy Google&#x27;s Gemma 3 models on Together AI. Lightweight, state-of-the-art open models built from the same technology that powers Gemini."
+    }
+  ]
+}

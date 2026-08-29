@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "zeromodels/regnet-y-320",
+  "slug": "zeromodels-regnet-y-320",
+  "author": "zeromodels",
+  "url": "https://huggingface.co/zeromodels/regnet-y-320",
+  "created_at": "2026-08-29T05:50:33.000Z",
+  "updated_at": "2026-08-29T05:50:58.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-classification",
+  "library": "zeromodels",
+  "languages": [],
+  "tags": [
+    "zeromodels",
+    "keras",
+    "image-classification",
+    "regnet",
+    "backbone",
+    "arxiv:2003.13678",
+    "pytorch",
+    "jax",
+    "tf",
+    "base_model:facebook/regnet-y-320",
+    "base_model:finetune:facebook/regnet-y-320",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 581651944,
+  "storage_human": "582 MB",
+  "base_model": "facebook/regnet-y-320",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "zeromodels/regnet-x-320 · Hugging Face",
+      "url": "https://huggingface.co/zeromodels/regnet-x-320",
+      "snippet": "Instructions to use zeromodels/regnet-x-320 with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Libraries Keras How to use zeromodels/regnet-x-320 with Keras:"
+    },
+    {
+      "title": "facebook/regnet-y-320 · Hugging Face",
+      "url": "https://huggingface.co/facebook/regnet-y-320",
+      "snippet": "facebook / regnet-y-320 like 0 Follow AI at Meta 6.33k Image Classification Transformers PyTorch google-tensorflow TensorFlow Safetensors imagenet-1k regnet vision arxiv:2003.13678 License:apache-2.0 Model card FilesFiles and versions xet Community 2 Train Deploy Use this model RegNet Model description Intended uses & limitations How to use"
+    },
+    {
+      "title": "facebook/regnet-y-320 — AICHINA.news | AI China News",
+      "url": "https://aichina.news/models/facebook/regnet-y-320/",
+      "snippet": "RegNet-Y-320 is a convolutional neural network architecture for image classification, originally developed by Facebook AI Research as part of the RegNet family. It is hosted on Modelers.cn primarily as a reference model for the Huawei/Ascend ecosystem, allowing developers to run a standard ImageNet-classifier on Ascend NPUs."
+    },
+    {
+      "title": "Boost Your Vision Pipeline: Meta&#x27;s SEER-Pretrained RegNet-Y 320M ...",
+      "url": "https://aichina.news/blog/boost-your-vision-pipeline-metas-seer-pretrained-regnet-y-320m-aog6ah/",
+      "snippet": "What is the RegNet-Y 320M? This is a 320-million-parameter model from Meta (Facebook) built on the RegNet-Y architecture. It is designed to be a highly accurate, self-supervised pretrained image classification model. The key differentiator here is its training methodology; it utilizes Meta&#x27;s SEER self-supervised pretraining method before fine-tuning on the ImageNet-1K dataset. This approach ..."
+    },
+    {
+      "title": "RegNet-Y-320 Open-source Image Classification Model - Trained on ...",
+      "url": "https://model.aibase.com/models/details/1915694773534613505",
+      "snippet": "RegNet is a model trained on ImageNet-1K, designed to address image classification tasks and offering high - performance solutions for the field of computer vision."
+    }
+  ]
+}

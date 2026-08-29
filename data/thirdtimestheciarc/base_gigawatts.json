@@ -5,7 +5,7 @@
   "author": "ThirdTimesTheCiarc",
   "url": "https://huggingface.co/ThirdTimesTheCiarc/base_gigawatts",
   "created_at": "2026-01-02T14:31:19.000Z",
-  "updated_at": "2026-08-26T02:00:05.000Z",
+  "updated_at": "2026-08-28T22:14:59.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": null,
@@ -21,7 +21,7 @@
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
-  "storage_bytes": 143098456115,
+  "storage_bytes": 143109326147,
   "storage_human": "143.1 GB",
   "base_model": null,
   "formats": [

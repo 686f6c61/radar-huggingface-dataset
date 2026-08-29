@@ -1,0 +1,87 @@
+{
+  "schema": 1,
+  "id": "google/paligemma-3b-pt-224",
+  "slug": "google-paligemma-3b-pt-224",
+  "author": "google",
+  "url": "https://huggingface.co/google/paligemma-3b-pt-224",
+  "created_at": "2024-05-12T22:53:40.000Z",
+  "updated_at": "2024-09-21T10:14:25.000Z",
+  "license": "gemma",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "paligemma",
+    "image-text-to-text",
+    "arxiv:2310.09199",
+    "arxiv:2303.15343",
+    "arxiv:2403.08295",
+    "arxiv:1706.03762",
+    "arxiv:2010.11929",
+    "arxiv:2209.06794",
+    "arxiv:2209.04372",
+    "arxiv:2103.01913",
+    "arxiv:2205.12522",
+    "arxiv:2110.11624",
+    "arxiv:2108.03353",
+    "arxiv:2010.04295",
+    "arxiv:2401.06209",
+    "arxiv:2305.10355",
+    "arxiv:2203.10244",
+    "arxiv:1810.12440",
+    "arxiv:1905.13648",
+    "arxiv:1608.00272",
+    "arxiv:1908.04913",
+    "arxiv:2407.07726",
+    "license:gemma",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 551,
+  "downloads_30d": 176395,
+  "trending_score": 0,
+  "parameters": 2923466480,
+  "parameters_human": "2.92B",
+  "storage_bytes": 23409790403,
+  "storage_human": "23.4 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": true,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "google/paligemma-3b-pt-224 · Hugging Face",
+      "url": "https://huggingface.co/google/paligemma-3b-pt-224",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "PaliGemma | Google AI for Developers",
+      "url": "https://ai.google.dev/gemma/docs/paligemma",
+      "snippet": "PaliGemma 2 is available in 3B, 10B, and 28B parameter sizes, which are based on Gemma 2 2B, 9B, and 27B models, respectively. The original PaliGemma models are available in the 3B size. For more information on Gemma model variants, see the Gemma models list."
+    },
+    {
+      "title": "google/paligemma-3b-pt-224-keras · Hugging Face",
+      "url": "https://huggingface.co/google/paligemma-3b-pt-224-keras",
+      "snippet": "PaliGemma is a set of multi-modal large language models published by Google based on the Gemma model. Both a pre-trained and instruction tuned models are available."
+    },
+    {
+      "title": "paligemma-3b-pt-224: Text-to-Text model — overview, use cases, alternatives",
+      "url": "https://www.aimodels.fyi/models/huggingFace/paligemma-3b-pt-224-google",
+      "snippet": "paligemma-3b-pt-224 is a vision-language model developed by google that processes both images and text to generate text outputs. The model combines a..."
+    },
+    {
+      "title": "paligemma-3b-pt-224: Text-to-Image model — overview, use cases ...",
+      "url": "https://www.aimodels.fyi/models/replicate/paligemma-3b-pt-224-lucataco",
+      "snippet": "Overview paligemma-3b-pt-224 is a vision-language model by Google that processes images and text prompts together to perform multimodal understanding tasks. Maintained by lucataco on Replicate, this model contains 3 billion parameters and accepts 224×224 pixel images with 128-token input and output text sequences. The critical constraint before using this model: it processes only small, low ..."
+    }
+  ]
+}

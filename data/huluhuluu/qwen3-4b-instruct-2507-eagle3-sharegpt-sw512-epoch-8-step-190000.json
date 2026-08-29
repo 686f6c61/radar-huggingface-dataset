@@ -1,0 +1,76 @@
+{
+  "schema": 1,
+  "id": "huluhuluu/Qwen3-4B-Instruct-2507-EAGLE3-ShareGPT-SW512-epoch-8-step-190000",
+  "slug": "huluhuluu-qwen3-4b-instruct-2507-eagle3-sharegpt-sw512-epoch-8-step-190000",
+  "author": "huluhuluu",
+  "url": "https://huggingface.co/huluhuluu/Qwen3-4B-Instruct-2507-EAGLE3-ShareGPT-SW512-epoch-8-step-190000",
+  "created_at": "2026-08-29T07:56:35.000Z",
+  "updated_at": "2026-08-29T08:17:15.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "llama",
+    "speculative-decoding",
+    "eagle3",
+    "specforge",
+    "sglang",
+    "qwen3",
+    "draft-model",
+    "sharegpt",
+    "sliding-window-512",
+    "base_model:Qwen/Qwen3-4B-Instruct-2507",
+    "base_model:finetune:Qwen/Qwen3-4B-Instruct-2507",
+    "license:apache-2.0",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 202700416,
+  "parameters_human": "202.7M",
+  "storage_bytes": 405446711,
+  "storage_human": "405 MB",
+  "base_model": "Qwen/Qwen3-4B-Instruct-2507",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Qwen3-4B-Instruct-2507-EAGLE3-ShareGPT-epoch-1-step-30000",
+      "url": "https://huggingface.co/huluhuluu/Qwen3-4B-Instruct-2507-EAGLE3-ShareGPT-epoch-1-step-30000",
+      "snippet": "Instructions to use huluhuluu/Qwen3-4B-Instruct-2507-EAGLE3-ShareGPT-epoch-1-step-30000 with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "Qwen3-4B-Instruct-2507-EAGLE3-ShareGPT-epoch-3-step-75000",
+      "url": "https://huggingface.co/huluhuluu/Qwen3-4B-Instruct-2507-EAGLE3-ShareGPT-epoch-3-step-75000",
+      "snippet": "Instructions to use huluhuluu/Qwen3-4B-Instruct-2507-EAGLE3-ShareGPT-epoch-3-step-75000 with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "GitHub - locomotive-works/npu-local-model-running: Qwen3-4B-Instruct ...",
+      "url": "https://github.com/locomotive-works/npu-local-model-running",
+      "snippet": "The only model of its class supported across all three execution paths: llama.cpp (GGUF), ONNX Runtime QNN (NPU builds of Qwen3-4B exist for AnythingLLM / Foundry Local), and Qualcomm AI Hub (ready-made Genie bundle available)."
+    },
+    {
+      "title": "GitHub - QwenLM/Qwen3: Qwen3 is the large language model series ...",
+      "url": "https://github.com/QwenLM/Qwen3",
+      "snippet": "Over the past three months, we continued to explore the potential of the Qwen3 families and we are excited to introduce the updated Qwen3-2507 in two variants, Qwen3-Instruct-2507 and Qwen3-Thinking-2507, and three sizes, 235B-A22B, 30B-A3B, and 4B. Qwen3-Instruct-2507 is the updated version of the previous Qwen3 non-thinking mode, featuring the following key enhancements: Significant ..."
+    },
+    {
+      "title": "Run Qwen3-4B-Instruct-2507 Locally: Step-by-Step Guide — AI Tutorial",
+      "url": "https://aiindigo.com/tutorials/getting-started-with-qwen3-4b-instruct-2507-deploying-efficient-local-ai",
+      "snippet": "Learn how to deploy Qwen3-4B-Instruct-2507 locally for efficient AI tasks. A practical guide for developers using Ollama and Python."
+    }
+  ]
+}

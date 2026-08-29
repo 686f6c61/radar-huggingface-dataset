@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "krzysztofkrawc/prompt-engineering",
+  "slug": "krzysztofkrawc-prompt-engineering",
+  "author": "krzysztofkrawc",
+  "url": "https://huggingface.co/krzysztofkrawc/prompt-engineering",
+  "created_at": "2026-08-29T10:49:54.000Z",
+  "updated_at": "2026-08-29T10:50:05.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "transformer",
+    "research-notes",
+    "prompt-engineering",
+    "license:cc-by-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 49600,
+  "parameters_human": "49600",
+  "storage_bytes": 198880,
+  "storage_human": "198880 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Prompt Engineering Guide 2026: Techniques, Templates & Examples",
+      "url": "https://www.aitooldiscovery.com/guides/prompt-engineering",
+      "snippet": "Complete prompt engineering guide with copy-paste templates for writing, coding, business, and image AI. Chain-of-thought, few-shot, role prompting, and more."
+    },
+    {
+      "title": "Prompt Engineering 101 - Krzysztof Ograbek @krisograbek",
+      "url": "https://www.youtube.com/watch?v=qLGnW2vxors",
+      "snippet": "Prompt Engineering 101 - Krzysztof Ograbek ‪@krisograbek‬ DataTalksClub ⬛ 80.7K subscribers Subscribed"
+    },
+    {
+      "title": "Prompt Engineering Guide | Prompt Engineering Guide",
+      "url": "https://www.promptingguide.ai/",
+      "snippet": "Motivated by the high interest in developing with LLMs, we have created this new prompt engineering guide that contains all the latest papers, advanced prompting techniques, learning guides, model-specific prompting guides, lectures, references, new LLM capabilities, and tools related to prompt engineering."
+    },
+    {
+      "title": "Prompt Engineering Guide 2026 - Analytics Vidhya",
+      "url": "https://www.analyticsvidhya.com/blog/2026/01/master-prompt-engineering/",
+      "snippet": "Master prompt engineering in 2026 with practical prompting techniques, reasoning methods, safety defenses, and real-world examples."
+    },
+    {
+      "title": "GitHub - dair-ai/Prompt-Engineering-Guide: Guides, papers, lessons ...",
+      "url": "https://github.com/dair-ai/Prompt-Engineering-Guide",
+      "snippet": "Prompt engineering is a relatively new discipline for developing and optimizing prompts to efficiently use language models (LMs) for a wide variety of applications and research topics. Prompt engineering skills help to better understand the capabilities and limitations of large language models (LLMs)."
+    }
+  ]
+}

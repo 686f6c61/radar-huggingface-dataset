@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "mradermacher/Qwen3-4B-Instruct-2507-uncensored-v2-i1-GGUF",
+  "slug": "mradermacher-qwen3-4b-instruct-2507-uncensored-v2-i1-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/Qwen3-4B-Instruct-2507-uncensored-v2-i1-GGUF",
+  "created_at": "2026-08-29T11:34:42.000Z",
+  "updated_at": "2026-08-29T11:39:58.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "en",
+    "base_model:Manitec/Qwen3-4B-Instruct-2507-uncensored-v2",
+    "base_model:quantized:Manitec/Qwen3-4B-Instruct-2507-uncensored-v2",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 958716,
+  "parameters_human": "958716",
+  "storage_bytes": 3872640,
+  "storage_human": "4 MB",
+  "base_model": "Manitec/Qwen3-4B-Instruct-2507-uncensored-v2",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Qwen3-4B-Instruct-2507-uncensored-unslop-v2-i1-GGUF",
+      "url": "https://huggingface.co/mradermacher/Qwen3-4B-Instruct-2507-uncensored-unslop-v2-i1-GGUF",
+      "snippet": "Usage If you are unsure how to use GGUF files, refer to one of TheBloke&#x27;s READMEs for more details, including on how to concatenate multi-part files. Provided Quants (sorted by size, not necessarily quality. IQ-quants are often preferable over similar sized non-IQ quants)"
+    },
+    {
+      "title": "Qwen3-4B-Instruct-2507-uncensored-unslop-v2-GGUF",
+      "url": "https://huggingface.co/mradermacher/Qwen3-4B-Instruct-2507-uncensored-unslop-v2-GGUF",
+      "snippet": "Usage If you are unsure how to use GGUF files, refer to one of TheBloke&#x27;s READMEs for more details, including on how to concatenate multi-part files. Provided Quants (sorted by size, not necessarily quality. IQ-quants are often preferable over similar sized non-IQ quants)"
+    },
+    {
+      "title": "Qwen3-4B-Instruct-2507-GGUF · Models",
+      "url": "https://www.modelscope.cn/models/unsloth/Qwen3-4B-Instruct-2507-GGUF",
+      "snippet": "We introduce the updated version of the Qwen3-4B non-thinking mode, named Qwen3-4B-Instruct-2507, featuring the following key enhancements: Significant improvements in general capabilities, including instruction following, logical reasoning, text comprehension, mathematics, science, coding and tool usage."
+    },
+    {
+      "title": "mradermacher/Qwen3-4B-Instruct-2507-uncensored-unslop-v2-i1-... - Socket",
+      "url": "https://socket.dev/huggingface/package/mradermacher/qwen3-4b-instruct-2507-uncensored-unslop-v2-i1-gguf",
+      "snippet": "We found that mradermacher/qwen3-4b-instruct-2507-uncensored-unslop-v2-i1-gguf demonstrated a healthy version release cadence and project activity because the last version was released less than a year ago.It has 1 open source maintainer collaborating on the project."
+    },
+    {
+      "title": "Qwen3-4B-Instruct-2507 · Models",
+      "url": "https://www.modelscope.cn/models/Qwen/Qwen3-4B-Instruct-2507",
+      "snippet": "Qwen3-4B-Instruct-2507 Highlights We introduce the updated version of the Qwen3-4B non-thinking mode, named Qwen3-4B-Instruct-2507, featuring the following key enhancements: Significant improvements in general capabilities, including instruction following, logical reasoning, text comprehension, mathematics, science, coding and tool usage."
+    }
+  ]
+}

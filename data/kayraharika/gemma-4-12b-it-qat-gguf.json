@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "kayraharika/gemma-4-12B-it-qat-GGUF",
+  "slug": "kayraharika-gemma-4-12b-it-qat-gguf",
+  "author": "kayraharika",
+  "url": "https://huggingface.co/kayraharika/gemma-4-12B-it-qat-GGUF",
+  "created_at": "2026-08-29T06:50:45.000Z",
+  "updated_at": "2026-08-29T06:50:45.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "any-to-any",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "gguf",
+    "gemma4",
+    "unsloth",
+    "gemma",
+    "google",
+    "any-to-any",
+    "base_model:google/gemma-4-12B-it-qat-q4_0-unquantized",
+    "base_model:quantized:google/gemma-4-12B-it-qat-q4_0-unquantized",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 11907350576,
+  "parameters_human": "11.91B",
+  "storage_bytes": 9718025088,
+  "storage_human": "9.7 GB",
+  "base_model": "google/gemma-4-12B-it-qat-q4_0-unquantized",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "SC117/gemma-4-12B-it-heretic-QAT-GGUF · Hugging Face",
+      "url": "https://huggingface.co/SC117/gemma-4-12B-it-heretic-QAT-GGUF",
+      "snippet": "UD-Q4_K_XL is the UD team&#x27;s naming convention for its Gemma QAT Q4_0 GGUF variant. The repository or file name must not be interpreted as proof that the model uses mixed K-quants. In this release, the actual GGUF tensor information shows that the main model weights are stored as Q4_0, while normalization and scaling tensors remain in F32."
+    },
+    {
+      "title": "google/gemma-4-12B-it-qat-q4_0-gguf · Hugging Face",
+      "url": "https://huggingface.co/google/gemma-4-12B-it-qat-q4_0-gguf",
+      "snippet": "At the time of release, this family of models provides high-performance open vision-language model implementations designed from the ground up for responsible AI development compared to similarly sized models."
+    },
+    {
+      "title": "gemma-4-12B-it-heretic-QAT-GGUF: Text-to-Text model — overview, use ...",
+      "url": "https://www.aimodels.fyi/models/huggingFace/gemma-4-12b-it-heretic-qat-gguf-sc117",
+      "snippet": "Overview gemma-4-12B-it-heretic-QAT-GGUF is a 11.95-billion-parameter dense, uncensored variant of Google&#x27;s Gemma 4 12B IT model. SC117 processed the QAT model with Heretic v1.2.0 using Arbitrary Rank Ablation (ARA) and row-norm preservation, then produced a Q4_0 GGUF file with a size of 6.4 GB. The model uses an encoder-free unified multimodal architecture: text, images, audio, and video ..."
+    },
+    {
+      "title": "gemma-4-12B-it-qat-GGUF: Text-to-Text model — overview, use cases ...",
+      "url": "https://www.aimodels.fyi/models/huggingFace/gemma-4-12b-it-qat-gguf-unsloth",
+      "snippet": "Overview gemma-4-12B-it-qat-GGUF is a Quantization-Aware Training (QAT) variant of Google DeepMind&#x27;s Gemma 4 12B instruction-tuned model, maintained by unsloth. This 11.95B parameter model processes text and image input with variable aspect ratio and resolution support, and generates text output. The critical innovation is QAT optimization: the model preserves bfloat16 quality while ..."
+    },
+    {
+      "title": "Gemma 4 12b It Qat - GGUF Model - local-ai-zone.github.io",
+      "url": "https://local-ai-zone.github.io/models/gemma-4-12b-it-qat.html",
+      "snippet": "Download Gemma 4 12b It Qat GGUF model. 7.09 GB, 434,110 downloads, 420 likes."
+    }
+  ]
+}

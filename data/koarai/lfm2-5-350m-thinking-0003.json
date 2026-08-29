@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "KoarAI/LFM2.5-350M-Thinking-0003",
+  "slug": "koarai-lfm2-5-350m-thinking-0003",
+  "author": "KoarAI",
+  "url": "https://huggingface.co/KoarAI/LFM2.5-350M-Thinking-0003",
+  "created_at": "2026-08-29T11:44:52.000Z",
+  "updated_at": "2026-08-29T11:45:15.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "lfm2",
+    "text-generation",
+    "conversational",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 353322752,
+  "parameters_human": "353.3M",
+  "storage_bytes": 706662032,
+  "storage_human": "707 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "KoarAI / LFM2.5-350M-Thinking - Hugging Face",
+      "url": "https://huggingface.co/KoarAI/LFM2.5-350M-Thinking",
+      "snippet": "🚀 KoarAI Release & Versioning Policy: Starting from the upcoming release (0003 and beyond), rather than overwriting existing models, each new iteration will be released into its own dedicated repository (e.g., KoarAI/LFM2.5-350M-Thinking-v3, KoarAI/LFM2.5-350M-Thinking-RU, etc.)."
+    },
+    {
+      "title": "Introducing LFM2.5: The Next Generation of On-Device AI | Blog",
+      "url": "https://www.liquid.ai/blog/introducing-lfm2-5-the-next-generation-of-on-device-ai",
+      "snippet": "Today, we&#x27;re excited to announce the LFM2.5-1.2B model family, our most capable release yet for edge AI deployment. It builds on the LFM2 device-optimized architecture and represents a significant leap forward in building reliable agents on the edge."
+    },
+    {
+      "title": "LFM2.5-350M: No Size Left Behind | Blog | Liquid AI",
+      "url": "https://www.liquid.ai/blog/lfm2-5-350m-no-size-left-behind",
+      "snippet": "LFM2.5-350M: No Size Left Behind Today, we&#x27;re releasing LFM2.5-350M, an improved version of our 350M model with additional pre-training (from 10T to 28T tokens) and large-scale reinforcement learning. Built on the LFM2 architecture, it delivers exceptionally fast inference and runs everywhere, from cloud GPUs to cheap CPUs."
+    },
+    {
+      "title": "LFM2.5 - a LiquidAI Collection - Hugging Face",
+      "url": "https://huggingface.co/collections/LiquidAI/lfm25",
+      "snippet": "Collection of post-trained and base LFM2.5 models."
+    },
+    {
+      "title": "LFM2 Technical Report - arXiv.org",
+      "url": "https://arxiv.org/html/2511.23404v1",
+      "snippet": "Moving from the LFM2 language backbone to specific applications, we introduce the LFM2-VL (Section 5) and LFM2-Audio (Section 6) multimodal models, covering their design, training, and evaluation, as well as the LFM2-ColBERT-350M model for information retrieval."
+    }
+  ]
+}

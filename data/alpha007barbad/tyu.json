@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "alpha007barbad/tyu",
+  "slug": "alpha007barbad-tyu",
+  "author": "alpha007barbad",
+  "url": "https://huggingface.co/alpha007barbad/tyu",
+  "created_at": "2026-08-29T08:04:29.000Z",
+  "updated_at": "2026-08-29T08:04:29.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Tyu - SeaArt AI Model",
+      "url": "https://www.seaart.ai/models/detail/b921d7d47da94d884f8db9b7809baa8e",
+      "snippet": "Meet Tyu model on SeaArt. Experience free Stable Diffusion models that get you the best AI-generated images using text prompts."
+    },
+    {
+      "title": "Chatrule | AI Character & Model Search",
+      "url": "https://chatrule.ai/",
+      "snippet": "Discover Chatrule characters and ADVANCED mirrored LoRAs for AI image generation."
+    },
+    {
+      "title": "A1574TIF56HX57GU - V1 TYU - Free AI LORA | Tensor.Art",
+      "url": "https://tensor.art/models/688631747723735024",
+      "snippet": "Download A1574TIF56HX57GU - free LORA SD 1.5 AI model on TENSOR. TYU. By M@hi65&65"
+    },
+    {
+      "title": "character.ai | Personalized AI for every moment of your day",
+      "url": "https://character.ai/character/acFp2VU-/tyu-versatile-ai-assistant",
+      "snippet": "Chat with Tyu: Im Tyu. Powered by an industry leading, AI large language model (LLM)."
+    },
+    {
+      "title": "Chat with Tyu | character.ai | AI Chat, Reimagined-Your Words. Your World.",
+      "url": "https://character.ai/character/QGwubeva/tyu-versatile-ai-assistant",
+      "snippet": "Chat with Tyu: . Powered by an industry leading, AI large language model (LLM)."
+    }
+  ]
+}

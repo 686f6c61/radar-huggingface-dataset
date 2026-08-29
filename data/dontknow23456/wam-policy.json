@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "dontKnow23456/WAM-Policy",
+  "slug": "dontknow23456-wam-policy",
+  "author": "dontKnow23456",
+  "url": "https://huggingface.co/dontKnow23456/WAM-Policy",
+  "created_at": "2026-08-10T13:56:17.000Z",
+  "updated_at": "2026-08-29T09:58:44.000Z",
+  "license": "unknown",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:unknown",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 39306825730,
+  "storage_human": "39.3 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "dontKnow23456/WAM-Policy · Hugging Face",
+      "url": "https://huggingface.co/dontKnow23456/WAM-Policy",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "README.md · dontKnow23456/WAM-Policy at main - Hugging Face",
+      "url": "https://huggingface.co/dontKnow23456/WAM-Policy/blob/main/README.md",
+      "snippet": "dontKnow23456 / WAM-Policy like 0 Robotics PyTorch video-generation flow-matching distillation wan License:other Model card FilesFiles and versions xet Community Copy to bucket new main WAM-Policy /README.md dontKnow23456 Add 90k student to model card 41eb1b3 verifiedabout 1 month ago preview code | Raw Download with hf CLI Copy download link ..."
+    },
+    {
+      "title": "WAM-OPD: On-Policy Distillation for World Action Models",
+      "url": "https://www.aimodels.fyi/papers/arxiv/wam-opd-policy-distillation-world-action-models",
+      "snippet": "WAM-OPD targets the accelerated WAM failure gap Flash-WAM, the released one-video/one-action-step student, is the concrete testbed for WAM-OPD, a post-training method for video-first World Action Models. The student controls RoboTwin 2.0 rollouts, while a frozen LingBot-VA teacher labels the histories that the student actually visits with video and action targets."
+    },
+    {
+      "title": "World Action Model (WAM) — unified world model and policy for robotics ...",
+      "url": "https://robotsatlas.com/ai-technologies/world-action-model",
+      "snippet": "Unified training of world prediction and action generation in a single autoregressive transformer — the model jointly learns physical dynamics (future visual observations) and robot policy (action sequences), enabling richer embodied representations without separate world-model and policy networks."
+    },
+    {
+      "title": "Enhancing Policy Learning with World-Action Model",
+      "url": "https://arxiv.org/abs/2603.28955",
+      "snippet": "This paper presents the World-Action Model (WAM), an action-regularized world model that jointly reasons over future visual observations and the actions that drive state transitions. Unlike conventional world models trained solely via image prediction, WAM incorporates an inverse dynamics objective into DreamerV2 that predicts actions from latent state transitions, encouraging the learned ..."
+    }
+  ]
+}

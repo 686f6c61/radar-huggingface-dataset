@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "tianSeconds/goai-2026-arx-flow-policy",
+  "slug": "tianseconds-goai-2026-arx-flow-policy",
+  "author": "tianSeconds",
+  "url": "https://huggingface.co/tianSeconds/goai-2026-arx-flow-policy",
+  "created_at": "2026-08-26T15:25:45.000Z",
+  "updated_at": "2026-08-29T10:11:09.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 12143242546,
+  "storage_human": "12.1 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "tianSeconds/goai-2026-arx-flow-policy · Hugging Face",
+      "url": "https://huggingface.co/tianSeconds/goai-2026-arx-flow-policy",
+      "snippet": "goai-2026 ARX Dual-Arm Flow-Matching Policy goai_2026 双臂 flow-matching 策略训练 checkpoint（lerobot v3.0 数据集，task 800-899，100 episodes / 26,550 帧）。"
+    },
+    {
+      "title": "tianSeconds/goai-2026-arx-flow-policy at main - Hugging Face",
+      "url": "https://huggingface.co/tianSeconds/goai-2026-arx-flow-policy/tree/main",
+      "snippet": "0 Model card FilesFiles and versions xet Community Copy to bucket new main goai-2026-arx-flow-policy 7.59 GB Ctrl+K Ctrl+K 1 contributor History:4 commits tianSeconds add ckpt-5000 (final) 7265f7d verifiedabout 15 hours ago .gitattributes Safe 1.52 kBinitial commitabout 16 hours ago README.md 1.14 kBcheckpoints 1000-3000 + READMEabout 16 hours ..."
+    },
+    {
+      "title": "Duck.ai by DuckDuckGo. Private AI chat. Free.",
+      "url": "https://duck.ai/",
+      "snippet": "Use ChatGPT, Claude, and other AIs, privately. Protect chats from hackers, scammers, and companies. Keep info confidential. Free. No account required."
+    },
+    {
+      "title": "100 things we announced at Google I/O 2026 - The Keyword",
+      "url": "https://blog.google/innovation-and-ai/technology/ai/google-io-2026-all-our-announcements/",
+      "snippet": "This week at Google I/O 2026, we unveiled new models, agents and tools to help you build, search, create, discover, shop and get more done. You can dig into our I/O announcements — including an edited transcript of Google CEO Sundar Pichai&#x27;s remarks from the stage. And for a TL;DR (of sorts), keep scrolling for our annual list of 100 highlights from the event."
+    },
+    {
+      "title": "tianSeconds (tianyu) - Hugging Face",
+      "url": "https://huggingface.co/tianSeconds",
+      "snippet": "Recent Activity updated a modelabout 16 hours ago tianSeconds/goai-2026-arx-flow-policy published a modelabout 16 hours ago tianSeconds/goai-2026-arx-flow-policy updated a model3 days ago tianSeconds/finetunning View all activity"
+    }
+  ]
+}

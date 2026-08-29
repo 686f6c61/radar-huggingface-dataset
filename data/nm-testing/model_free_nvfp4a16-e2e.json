@@ -5,7 +5,7 @@
   "author": "nm-testing",
   "url": "https://huggingface.co/nm-testing/model_free_nvfp4a16-e2e",
   "created_at": "2026-07-25T05:21:00.000Z",
-  "updated_at": "2026-08-27T17:18:26.000Z",
+  "updated_at": "2026-08-29T01:46:05.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": null,
@@ -27,7 +27,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 208,
+  "downloads_30d": 190,
   "trending_score": 0,
   "parameters": 1100048384,
   "parameters_human": "1.10B",

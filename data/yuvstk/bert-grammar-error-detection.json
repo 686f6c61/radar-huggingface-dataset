@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "yuvstk/bert-grammar-error-detection",
+  "slug": "yuvstk-bert-grammar-error-detection",
+  "author": "yuvstk",
+  "url": "https://huggingface.co/yuvstk/bert-grammar-error-detection",
+  "created_at": "2026-08-29T09:42:53.000Z",
+  "updated_at": "2026-08-29T09:45:37.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "safetensors",
+    "bert",
+    "grammatical-error-detection",
+    "linguistic-acceptability",
+    "blimp",
+    "cola",
+    "text-classification",
+    "en",
+    "dataset:nyu-mll/blimp",
+    "dataset:nyu-mll/glue",
+    "base_model:google-bert/bert-base-uncased",
+    "base_model:finetune:google-bert/bert-base-uncased",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 109483778,
+  "parameters_human": "109.5M",
+  "storage_bytes": 437964489,
+  "storage_human": "438 MB",
+  "base_model": "google-bert/bert-base-uncased",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "PDF Interpretable Artificial Intelligence Used To Diagnose Common ...",
+      "url": "https://jase.tku.edu.tw/jase/wp-content/uploads/2026/08/065_2026_1207_V34.pdf",
+      "snippet": "AI tools improve grammar and clarity in writing, but issues of trans-parency and interpretability require explainable AI models. Algobaei and Alzain [13] proposed a generative AI-based model, which is based on personalized language feedback that is offered to non-native learners of English using prompt engineering."
+    },
+    {
+      "title": "Enhancing Grammatical Error Detection using BERT with Cleaned Lang-8 ...",
+      "url": "https://arxiv.org/html/2411.15523",
+      "snippet": "These findings further prove that fine-tuning a pre-trained model, like BERT-base-uncased, on a cleaned and pre-processed dataset goes a long way in detecting grammatical errors."
+    },
+    {
+      "title": "GECwBERT | Use Language Model (LM) for Grammar Error Correction (GEC ...",
+      "url": "https://sunilchomal.github.io/GECwBERT/",
+      "snippet": "This would give us the Grammar Error Detection (GED) model. We would then use the Masked Language Model (MLM) of BERT to come up with alternate sentences and use the GED to come up with correction suggestions."
+    },
+    {
+      "title": "stephen-cheng/grammar_correction_with_bert - GitHub",
+      "url": "https://github.com/stephen-cheng/grammar_correction_with_bert",
+      "snippet": "There are a lot of parameters to specify among them: cold_steps_count the number of epochs where we train only last linear layer transformer_model {bert,distilbert,gpt2,roberta,transformerxl,xlnet,albert} model encoder tn_prob probability of getting sentences with no errors; helps to balance precision/recall pieces_per_token maximum number of subwords per token; helps not to get CUDA out of ..."
+    },
+    {
+      "title": "[2411.15523] Enhancing Grammatical Error Detection using BERT with ...",
+      "url": "https://arxiv.org/abs/2411.15523",
+      "snippet": "In our experiments, the BERT-base-uncased model gave an impressive performance with an F1 score of 0.91 and accuracy of 98.49% on training data and 90.53% on testing data, also showcasing the importance of data cleaning."
+    }
+  ]
+}

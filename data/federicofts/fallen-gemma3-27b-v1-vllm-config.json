@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "federicofts/Fallen-Gemma3-27B-v1-vllm-config",
+  "slug": "federicofts-fallen-gemma3-27b-v1-vllm-config",
+  "author": "federicofts",
+  "url": "https://huggingface.co/federicofts/Fallen-Gemma3-27B-v1-vllm-config",
+  "created_at": "2026-08-29T11:44:23.000Z",
+  "updated_at": "2026-08-29T11:44:23.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gemma3",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "TheDrummer/Fallen-Gemma3-27B-v1 · Hugging Face",
+      "url": "https://huggingface.co/TheDrummer/Fallen-Gemma3-27B-v1",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "README.md · TheDrummer/Fallen-Gemma3-27B-v1 at main",
+      "url": "https://huggingface.co/TheDrummer/Fallen-Gemma3-27B-v1/blob/main/README.md",
+      "snippet": "Fallen Gemma3 27B v1 👺 Special Thanks Thank you to each and everyone who donated and subscribed in Patreon and Ko-Fi to make our venture a little bit easier. I&#x27;m also recently unemployed. I am a Software Developer with 8 years of experience in Web, API, AI, and adapting to new tech and requirements."
+    },
+    {
+      "title": "Fallen-Gemma3-27B-v1: Text-to-Text model — overview, use cases ...",
+      "url": "https://www.aimodels.fyi/models/huggingFace/fallen-gemma3-27b-v1-thedrummer",
+      "snippet": "Overview Fallen-Gemma3-27B-v1 is a 27-billion parameter text-to-text model developed by TheDrummer that functions as a modified variant of Google&#x27;s Gemma 3 27B with an \"evil tune\" that removes safety guardrails while maintaining instruction-following capability. The model retains vision capabilities from its base and uses the Gemma Chat Template for inference. Unlike a complete decensor, this ..."
+    },
+    {
+      "title": "Fallen Gemma3 27b V1 - GGUF Model - local-ai-zone.github.io",
+      "url": "https://local-ai-zone.github.io/models/fallen-gemma3-27b-v1.html",
+      "snippet": "Download Fallen Gemma3 27b V1 GGUF model. 26.7 GB, 897 downloads, 31 likes."
+    },
+    {
+      "title": "Fallen-Gemma3-27B-v1 | PromptLayer Models",
+      "url": "https://www.promptlayer.com/models/fallen-gemma3-27b-v1/",
+      "snippet": "What is Fallen-Gemma3-27B-v1? Fallen-Gemma3-27B-v1 is a specialized fine-tune of the Gemma 3 27B model, designed to explore darker and more antagonistic conversation patterns. This model represents an experimental approach to AI interaction by removing typical ethical constraints while maintaining the original model&#x27;s vision capabilities."
+    }
+  ]
+}

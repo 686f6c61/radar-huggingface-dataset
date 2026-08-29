@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "rzgar/Bernini-v2-ComfyUI",
+  "slug": "rzgar-bernini-v2-comfyui",
+  "author": "rzgar",
+  "url": "https://huggingface.co/rzgar/Bernini-v2-ComfyUI",
+  "created_at": "2026-08-29T05:32:47.000Z",
+  "updated_at": "2026-08-29T09:13:12.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-video",
+  "library": "diffusers",
+  "languages": [],
+  "tags": [
+    "diffusers",
+    "bernini",
+    "text-to-video",
+    "image-to-video",
+    "video-to-video",
+    "image-to-image",
+    "image-text-to-video",
+    "base_model:ByteDance/Bernini-Diffusers-v2",
+    "base_model:finetune:ByteDance/Bernini-Diffusers-v2",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 112783288836,
+  "storage_human": "112.8 GB",
+  "base_model": "ByteDance/Bernini-Diffusers-v2",
+  "formats": [
+    "diffusers"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "rzgar/Bernini-R-S2V at main - Hugging Face",
+      "url": "https://huggingface.co/rzgar/Bernini-R-S2V/tree/main/ComfyUI-WanBerniniS2V_v2",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "ComfyUI-WanBerniniS2V_v2/__init__.py · rzgar/Bernini-R-S2V at main",
+      "url": "https://huggingface.co/rzgar/Bernini-R-S2V/blob/main/ComfyUI-WanBerniniS2V_v2/__init__.py",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Bernini-R S2V: Speech-Driven Video Generation on ByteDance&#x27;s Bernini-R",
+      "url": "https://comfyui-wiki.com/en/news/2026-07-09-bernini-r-s2v-speech-driven-video",
+      "snippet": "rzgar releases Bernini-R-S2V, a speech-to-video fine-tune that adds Wan2.2 S2V audio-driven lip-sync capabilities to ByteDance&#x27;s Bernini-R model, with dedicated ComfyUI custom nodes and multiple precision variants."
+    },
+    {
+      "title": "GitHub - AIMixer/ComfyUI-WanBerniniS2V: ComfyUI plugin mirror for Wan ...",
+      "url": "https://github.com/AIMixer/ComfyUI-WanBerniniS2V/tree/main",
+      "snippet": "声明 本项目并非本人原创。 所有代码均来自原作者 rzgar 在 Hugging Face 上发布的 Bernini-R-S2V / ComfyUI-WanBerniniS2V。 由于原作者未将代码上传至 GitHub，为方便大家下载与使用，本人将其镜像托管于此仓库。 感谢原作者的开源贡献。"
+    },
+    {
+      "title": "ComfyUI-WanBerniniS2V/README.md at main · AIMixer/ComfyUI ... - GitHub",
+      "url": "https://github.com/AIMixer/ComfyUI-WanBerniniS2V/blob/main/README.md",
+      "snippet": "声明 本项目并非本人原创。 所有代码均来自原作者 rzgar 在 Hugging Face 上发布的 Bernini-R-S2V / ComfyUI-WanBerniniS2V。 由于原作者未将代码上传至 GitHub，为方便大家下载与使用，本人将其镜像托管于此仓库。 感谢原作者的开源贡献。"
+    }
+  ]
+}

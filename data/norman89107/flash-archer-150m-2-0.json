@@ -1,0 +1,83 @@
+{
+  "schema": 1,
+  "id": "Norman89107/Flash-Archer-150M-2.0",
+  "slug": "norman89107-flash-archer-150m-2-0",
+  "author": "Norman89107",
+  "url": "https://huggingface.co/Norman89107/Flash-Archer-150M-2.0",
+  "created_at": "2026-08-29T09:47:45.000Z",
+  "updated_at": "2026-08-29T09:49:10.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "llama",
+    "text-generation",
+    "language-model",
+    "decoder-only",
+    "fineweb",
+    "from-scratch",
+    "en",
+    "dataset:HuggingFaceFW/fineweb-edu",
+    "license:apache-2.0",
+    "model-index",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 150335232,
+  "parameters_human": "150.3M",
+  "storage_bytes": 601359176,
+  "storage_human": "601 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "Text Generation",
+      "dataset": "FineWeb-Edu (sample-10BT)",
+      "metric": "Val Perplexity",
+      "value": 19.2
+    }
+  ],
+  "sources": [
+    {
+      "title": "Norman89107/Flash-Archer-150M · Hugging Face",
+      "url": "https://huggingface.co/Norman89107/Flash-Archer-150M",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Norman89107/Flash-Archer-150M at main - Hugging Face",
+      "url": "https://huggingface.co/Norman89107/Flash-Archer-150M/tree/main",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Flash-Archer-150M API & Inference Endpoint | FriendliAI",
+      "url": "https://friendli.ai/models/Norman89107/Flash-Archer-150M",
+      "snippet": "Run Flash-Archer-150M with FriendliAI inference. Flash-Archer-150M is a compact Llama-compatible causal language model trained from scratch on roughly 975M…"
+    },
+    {
+      "title": "Pretraining Flash-Archer-150M: on a single GPU - YouTube",
+      "url": "https://www.youtube.com/watch?v=QPpecjISVnU",
+      "snippet": "Current released open-model: https://huggingface.co/Norman89107/Flash-Archer-150M"
+    },
+    {
+      "title": "Odysseus AI - Self-Hosted AI Workspace Setup Guide",
+      "url": "https://odysseusai.dev/",
+      "snippet": "Odysseus AI Setup Guide For PewDiePie&#x27;s self-hosted AI workspace Verify the official source, choose Docker, Windows, macOS, or Linux, connect Ollama or API keys, read logs, choose a model that fits your hardware, and avoid unsafe public deployment."
+    }
+  ]
+}

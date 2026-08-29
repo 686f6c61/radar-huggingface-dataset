@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "victor/functiongemma-270m-agent-sft-lora",
+  "slug": "victor-functiongemma-270m-agent-sft-lora",
+  "author": "victor",
+  "url": "https://huggingface.co/victor/functiongemma-270m-agent-sft-lora",
+  "created_at": "2026-08-29T09:28:42.000Z",
+  "updated_at": "2026-08-29T10:54:11.000Z",
+  "license": "gemma",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "lora",
+    "function-calling",
+    "tool-use",
+    "functiongemma",
+    "trl",
+    "text-generation",
+    "conversational",
+    "base_model:unsloth/functiongemma-270m-it",
+    "base_model:adapter:unsloth/functiongemma-270m-it",
+    "license:gemma",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 600049069,
+  "storage_human": "600 MB",
+  "base_model": "unsloth/functiongemma-270m-it",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "victor/functiongemma-agent-gguf · Hugging Face",
+      "url": "https://huggingface.co/victor/functiongemma-agent-gguf",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "victor/functiongemma-agent-sft · Datasets at Hugging Face",
+      "url": "https://huggingface.co/datasets/victor/functiongemma-agent-sft",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "FunctionGemma model overview | Google AI for Developers",
+      "url": "https://ai.google.dev/gemma/docs/functiongemma",
+      "snippet": "FunctionGemma is a specialized version of our Gemma 3 270M model tuned for function calling. It is designed as a strong base for further training into custom, fast, private, local agents that translate natural language into executable API actions. When to choose Function Gemma FunctionGemma is the bridge between natural language and software execution. It is the right tool if: You have a ..."
+    },
+    {
+      "title": "FunctionGemma: New Gemma model for function calling",
+      "url": "https://blog.google/innovation-and-ai/technology/developers-tools/functiongemma/",
+      "snippet": "Today, we are releasing FunctionGemma, a specialized version of our Gemma 3 270M model tuned for function calling. It is designed as a strong base for further training into custom, fast, private, local agents that translate natural language into executable API actions."
+    },
+    {
+      "title": "FunctionGemma model card | Google AI for Developers",
+      "url": "https://ai.google.dev/gemma/docs/functiongemma/model_card",
+      "snippet": "This interactive notebook demonstrates how to take the base FunctionGemma model and build a \"Mobile Actions\" fine tune from scratch for use in the Google AI Edge gallery app. This use case demonstrates the model&#x27;s ability to act as an offline, private agent for personal device tasks. Inputs and outputs Input:"
+    }
+  ]
+}

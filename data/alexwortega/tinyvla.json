@@ -5,7 +5,7 @@
   "author": "AlexWortega",
   "url": "https://huggingface.co/AlexWortega/tinyvla",
   "created_at": "2026-08-19T14:00:40.000Z",
-  "updated_at": "2026-08-19T14:03:35.000Z",
+  "updated_at": "2026-08-29T00:19:14.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "robotics",
@@ -24,20 +24,20 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 20,
+  "downloads_30d": 49,
   "trending_score": 0,
   "parameters": 643389096,
   "parameters_human": "643.4M",
-  "storage_bytes": 7727021473,
-  "storage_human": "7.7 GB",
+  "storage_bytes": 30927003085,
+  "storage_human": "30.9 GB",
   "base_model": "Qwen/Qwen3.5-0.8B",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
-  "removed": true,
-  "removed_at": "2026-08-21T03:00:04.311Z",
+  "removed": false,
+  "removed_at": null,
   "benchmarks": [],
   "sources": [
     {

@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "krzysztofkrawc/research-classification",
+  "slug": "krzysztofkrawc-research-classification",
+  "author": "krzysztofkrawc",
+  "url": "https://huggingface.co/krzysztofkrawc/research-classification",
+  "created_at": "2026-08-29T10:50:22.000Z",
+  "updated_at": "2026-08-29T10:50:31.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "efficientformer",
+    "pytorch",
+    "classification",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 24832,
+  "parameters_human": "24832",
+  "storage_bytes": 99808,
+  "storage_human": "99808 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Krzysztof Krawiec : Site / Main : browse",
+      "url": "https://www.cs.put.poznan.pl/kkrawiec/",
+      "snippet": "We opened a new Masters Course in Artificial Intelligence (in Polish) Our Institute of Computing Science and CAMIL are members of Confederation of Laboratories for Artificial Intelligence Research in Europe (CLAIRE). We are partners in the TAILOR network, Foundations of Trustworthy AI - Integrating Learning, Optimization and Reasoning."
+    },
+    {
+      "title": "‪Krzysztof Krawiec‬ - ‪Google Scholar‬",
+      "url": "https://scholar.google.com/citations?user=Zt939gYAAAAJ&hl=en",
+      "snippet": "‪Professor of Computer Science, Poznan University of Technology‬ - ‪‪Cited by 6,750‬‬ - ‪machine learning‬ - ‪program synthesis‬ - ‪computer vision‬"
+    },
+    {
+      "title": "Krzysztof KRAWIEC | Professor (Associate) | Professor | Poznan ...",
+      "url": "https://www.researchgate.net/profile/Krzysztof-Krawiec",
+      "snippet": "Primary interests: program synthesis (in particular genetic programming), coevolutionary algorithms, machine learning and computer vision. Recent research and results: - best-to-date algorithm for ..."
+    },
+    {
+      "title": "Krzysztof Krawiec : Site / About : browse",
+      "url": "https://www.cs.put.poznan.pl/kkrawiec/wiki/?n=Site.About",
+      "snippet": "2013-2014 Fulbright Senior Research Award Grant, Computer Science and Artificial Intelligence Laboratory (CSAIL), Massachusetts Institute of Technology (MIT). 2008, First place in the Balanced Diet competition, organized at the GECCO 2008 conference, together with my Ph.D. students, Wojciech Jaśkowski and Bartosz Wieloch."
+    },
+    {
+      "title": "Research Paper Classification using Supervised Machine Learning Techniques",
+      "url": "https://www.researchgate.net/publication/346853360_Research_Paper_Classification_using_Supervised_Machine_Learning_Techniques",
+      "snippet": "This work [17] explores the classification of research paper abstracts into three fields: Science, Business, and Social Science using supervised ML techniques."
+    }
+  ]
+}

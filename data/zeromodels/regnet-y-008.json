@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "zeromodels/regnet-y-008",
+  "slug": "zeromodels-regnet-y-008",
+  "author": "zeromodels",
+  "url": "https://huggingface.co/zeromodels/regnet-y-008",
+  "created_at": "2026-08-29T05:46:01.000Z",
+  "updated_at": "2026-08-29T05:46:08.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-classification",
+  "library": "zeromodels",
+  "languages": [],
+  "tags": [
+    "zeromodels",
+    "keras",
+    "image-classification",
+    "regnet",
+    "backbone",
+    "arxiv:2003.13678",
+    "pytorch",
+    "jax",
+    "tf",
+    "base_model:facebook/regnet-y-008",
+    "base_model:finetune:facebook/regnet-y-008",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 25779688,
+  "storage_human": "26 MB",
+  "base_model": "facebook/regnet-y-008",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "zeromodels/regnet-y-008 · Hugging Face",
+      "url": "https://huggingface.co/zeromodels/regnet-y-008",
+      "snippet": "zeromodels/regnet-y-008 Paper: Designing Network Design Spaces (arXiv:2003.13678) · HF Papers RegNet is a family of ConvNets whose per-stage widths and depths follow a simple quantized-linear rule. This is the Y (with Squeeze-and-Excitation) variant: a 3x3 stride-2 stem then four stages of 1x1 -> 3x3 grouped -> [SE] -> 1x1 residual blocks."
+    },
+    {
+      "title": "Efficient Edge AI: RegNet-Y-008 Hits Huawei&#x27;s Modelers Platform",
+      "url": "https://aichina.news/blog/efficient-edge-ai-regnet-y-008-hits-huaweis-modelers-platform-yw27ad/",
+      "snippet": "The goal here is clear: delivering performance without the bloat. As a member of the RegNet family originally developed by Facebook AI Research, the Y-008 variant targets a very specific computational budget. It is essentially a &#x27;micro&#x27; model, likely utilising around 0.08 GFLOPS. This makes it an excellent candidate for edge devices and mobile deployment where power consumption is a critical ..."
+    },
+    {
+      "title": "glasses/regnety_008 · Hugging Face",
+      "url": "https://huggingface.co/glasses/regnety_008",
+      "snippet": "regnety_008 Implementation of RegNet proposed in Designing Network Design Spaces The main idea is to start with a high dimensional search space and iteratively reduce the search space by empirically apply constrains based on the best performing models sampled by the current search space."
+    },
+    {
+      "title": "regnety_008.pycls_in1k | PromptLayer Models",
+      "url": "https://www.promptlayer.com/models/regnety008pyclsin1k/",
+      "snippet": "What is regnety_008.pycls_in1k? RegNetY-008 is a lightweight convolutional neural network designed for image classification tasks, developed as part of the RegNet family of models. This particular implementation achieves 76.296% top-1 accuracy on ImageNet-1k, making it suitable for resource-constrained applications while maintaining reasonable performance. Implementation Details The model is ..."
+    },
+    {
+      "title": "pytorch-image-models/timm/models/regnet.py at main - GitHub",
+      "url": "https://github.com/huggingface/pytorch-image-models/blob/main/timm/models/regnet.py",
+      "snippet": "The largest collection of PyTorch image encoders / backbones. Including train, eval, inference, export scripts, and pretrained weights -- ResNet, ResNeXT, EfficientNet, NFNet, Vision Transformer (V..."
+    }
+  ]
+}

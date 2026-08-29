@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "cooler8/yejin-korean-tokenizer-64k",
+  "slug": "cooler8-yejin-korean-tokenizer-64k",
+  "author": "cooler8",
+  "url": "https://huggingface.co/cooler8/yejin-korean-tokenizer-64k",
+  "created_at": "2026-08-29T10:30:02.000Z",
+  "updated_at": "2026-08-29T10:30:04.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "ko",
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "tokenizer",
+    "korean",
+    "bpe",
+    "byte-level-bpe",
+    "yejin",
+    "text-generation",
+    "ko",
+    "en",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "cooler8/yejin-korean-1b-v8 · Hugging Face",
+      "url": "https://huggingface.co/cooler8/yejin-korean-1b-v8",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "The Tokenizer Playground - a Hugging Face Space by PeterPinetree",
+      "url": "https://huggingface.co/spaces/PeterPinetree/TokenVisualizer",
+      "snippet": "Enter any text to see how it is broken down into tokens and their corresponding IDs, which are the basic units AI models use to process language."
+    },
+    {
+      "title": "‎Google Gemini",
+      "url": "https://gemini.google.com/",
+      "snippet": "Meet Gemini, Google&#x27;s AI assistant. Get help with writing, planning, brainstorming, and more. Experience the power of generative AI."
+    },
+    {
+      "title": "LLM Token Counter — Count Tokens for GPT, Claude & Gemini | BenchLM.ai",
+      "url": "https://benchlm.ai/tools/token-counter",
+      "snippet": "Free LLM token counter with real tokenizers for GPT-5, Claude, Gemini, Llama & more. Count tokens, estimate API costs, and check context window limits instantly."
+    },
+    {
+      "title": "AI Token Calculator | Estimate GPT, Opus, and Gemini Model Costs",
+      "url": "https://tokencalculator.ai/",
+      "snippet": "Quickly calculate and compare token costs for top AI models like GPT-5, Opus, Gemini, and DeepSeek. Enter your text to see real-time pricing and choose the most cost-efficient option."
+    }
+  ]
+}

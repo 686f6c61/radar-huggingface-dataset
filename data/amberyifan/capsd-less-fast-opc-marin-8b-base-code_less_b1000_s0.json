@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "AmberYifan/capsd-less-fast-opc-marin-8b-base-code_less_b1000_s0",
+  "slug": "amberyifan-capsd-less-fast-opc-marin-8b-base-code_less_b1000_s0",
+  "author": "AmberYifan",
+  "url": "https://huggingface.co/AmberYifan/capsd-less-fast-opc-marin-8b-base-code_less_b1000_s0",
+  "created_at": "2026-08-29T02:09:13.000Z",
+  "updated_at": "2026-08-29T02:13:35.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "llama",
+    "text-generation",
+    "llama-factory",
+    "full",
+    "generated_from_trainer",
+    "conversational",
+    "base_model:marin-community/marin-8b-base",
+    "base_model:finetune:marin-community/marin-8b-base",
+    "license:other",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 8030261248,
+  "parameters_human": "8.03B",
+  "storage_bytes": 16077774297,
+  "storage_human": "16.1 GB",
+  "base_model": "marin-community/marin-8b-base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "AmberYifan/capsd-marin-8b-base-code_less_b1000_s0 · Hugging Face",
+      "url": "https://huggingface.co/AmberYifan/capsd-marin-8b-base-code_less_b1000_s0",
+      "snippet": "Instructions to use AmberYifan/capsd-marin-8b-base-code_less_b1000_s0 with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "capsd-marin-8b-base-code_less_b8000_s0 - Hugging Face",
+      "url": "https://huggingface.co/AmberYifan/capsd-marin-8b-base-code_less_b8000_s0",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Marin",
+      "url": "https://marin.community/",
+      "snippet": "Marin-8B-Instruct (deeper-starling-05-15) [execution]: Try it out on Together AI! Marin-32B-Base [issue, code, execution]: Beats OLMo 2 32B Base on 14/19 standard benchmarks (making it the best open-source model as of Oct 29, 2025), and is close to Gemma 3 27B PT and Qwen 2.5 32B Base (the best comparably-sized open-weight models)."
+    },
+    {
+      "title": "capsd-marin-8b-base-math_less_b1000_s0 - friendli.ai",
+      "url": "https://friendli.ai/models/AmberYifan/capsd-marin-8b-base-math_less_b1000_s0",
+      "snippet": "Deploy capsd-marin-8b-base-math_less_b1000_s0 with low-latency inference on FriendliAI. Get scalable API serving, high throughput, and production-grade reliability for AI agents."
+    },
+    {
+      "title": "capsd-marin-8b-base-science_less_b1000_s0 - friendli.ai",
+      "url": "https://friendli.ai/models/AmberYifan/capsd-marin-8b-base-science_less_b1000_s0",
+      "snippet": "Run capsd-marin-8b-base-science_less_b1000_s0 with FriendliAI inference. This model is a fine-tuned version of marin-community/marin-8b-base on the…"
+    }
+  ]
+}

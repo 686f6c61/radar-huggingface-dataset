@@ -1,0 +1,79 @@
+{
+  "schema": 1,
+  "id": "dealignai/GLM-5.3-UNCENSORED-NVFP4",
+  "slug": "dealignai-glm-5-3-uncensored-nvfp4",
+  "author": "dealignai",
+  "url": "https://huggingface.co/dealignai/GLM-5.3-UNCENSORED-NVFP4",
+  "created_at": "2026-08-29T08:01:25.000Z",
+  "updated_at": "2026-08-29T11:10:44.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "safetensors",
+    "glm_moe_dsa",
+    "abliterated",
+    "uncensored",
+    "crack",
+    "glm",
+    "moe",
+    "nvfp4",
+    "cybersecurity",
+    "offensive-security",
+    "mtp",
+    "en",
+    "base_model:zai-org/GLM-5.3",
+    "base_model:quantized:zai-org/GLM-5.3",
+    "license:mit",
+    "8-bit",
+    "modelopt",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 390942074880,
+  "parameters_human": "390.94B",
+  "storage_bytes": 519251211391,
+  "storage_human": "519.3 GB",
+  "base_model": "zai-org/GLM-5.3",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "dealignai/GLM-5.3-Flash-UNCENSORED-NVFP4 at main",
+      "url": "https://huggingface.co/dealignai/GLM-5.3-Flash-UNCENSORED-NVFP4/tree/main",
+      "snippet": "dealignai / GLM-5.3-Flash-UNCENSORED-NVFP4 like 9 Safetensors English glm5_next abliterated uncensored crack glm Mixture of Experts nvfp4 vision mtp 8-bit precision modelopt License:mit Model card FilesFiles and versions xet Community Copy to bucket new main GLM-5.3-Flash-UNCENSORED-NVFP4 195 GB Ctrl+K Ctrl+K 1 contributor History:1 commit dealignai Release d4d79fb 25 minutes ago ..."
+    },
+    {
+      "title": "GLM-5.3-Flash-UNCENSORED-NVFP4 - Hugging Face",
+      "url": "https://huggingface.co/dealignai/GLM-5.3-Flash-UNCENSORED-NVFP4/blame/main/model-00038-of-00120.safetensors",
+      "snippet": "like 10 Safetensors English glm5_next abliterated uncensored crack glm Mixture of Experts nvfp4 vision mtp 8-bit precision modelopt License:mit Model card FilesFiles and versions xet Community Copy to bucket new main GLM-5.3-Flash-UNCENSORED-NVFP4 File size: 135 Bytes"
+    },
+    {
+      "title": "Architecture graph for dealignai/GLM-5.3-Flash-UNCENSORED-NVFP4.",
+      "url": "https://hfviewer.com/dealignai/GLM-5.3-Flash-UNCENSORED-NVFP4",
+      "snippet": "dealignai/GLM-5.3-Flash-UNCENSORED-NVFP4 architecture at a glance dealignai/GLM-5.3-Flash-UNCENSORED-NVFP4 is a model (glm5_next_text architecture). It uses 45 transformer layers, a hidden size of 4,096, and multi-head latent attention (MLA). The feed-forward layers use a mixture-of-experts design with 288 experts (8 active per token, 1 always-on). It has a vocabulary of 154,880 tokens and a ..."
+    },
+    {
+      "title": "Qwen 3.8 Flash vs GLM 5.3 Flash: Which Open Source Model Works for NSFW ...",
+      "url": "https://www.hackaigc.com/blog/qwen-38-vs-glm-53-nsfw-uncensored-2026",
+      "snippet": "For users who want native uncensored image generation without the 331 GB download, cloud-based alternatives offer a practical middle ground. Within days of the release, dealignai shipped an abliterated NVFP4 build of GLM 5.3 Flash on Hugging Face, removing refusal behavior directly in the weights 6."
+    },
+    {
+      "title": "Dealign.ai — AI Alignment Research by Jinho Jang",
+      "url": "https://dealign.ai/",
+      "snippet": "Safety Generalization research: 40+ novel findings on how safety becomes a generalized competency in frontier MoE models. By Jinho Jang."
+    }
+  ]
+}

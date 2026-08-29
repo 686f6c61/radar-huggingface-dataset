@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "Lixing-Li/mambarl-m4-grpo-2048",
+  "slug": "lixing-li-mambarl-m4-grpo-2048",
+  "author": "Lixing-Li",
+  "url": "https://huggingface.co/Lixing-Li/mambarl-m4-grpo-2048",
+  "created_at": "2026-08-29T09:39:48.000Z",
+  "updated_at": "2026-08-29T09:40:15.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "mamba2",
+    "lora",
+    "mambarl",
+    "base_model:Lixing-Li/mambarl-m3-grpo-1024",
+    "base_model:adapter:Lixing-Li/mambarl-m3-grpo-1024",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 2702599680,
+  "parameters_human": "2.70B",
+  "storage_bytes": 5405262104,
+  "storage_human": "5.4 GB",
+  "base_model": "Lixing-Li/mambarl-m3-grpo-1024",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Lixing-Li/mambaae · Hugging Face",
+      "url": "https://huggingface.co/Lixing-Li/mambaae",
+      "snippet": "Lixing-Li / mambaae like 0 Follow Lixing Li 3 PyTorch Model card FilesFiles and versions xet Community Copy to bucket new No model card Downloads last month 1,651 Inference Providers NEW This model isn&#x27;t deployed by any Inference Provider.🙋Ask for provider support"
+    },
+    {
+      "title": "LLM Leaderboard 2026: Compare 300+ Top AI Models by Intelligence, Speed ...",
+      "url": "https://llm-stats.com/leaderboards/llm-leaderboard",
+      "snippet": "The LLM Leaderboard — independent ranking of GPT, Claude, Gemini, Llama, DeepSeek and 300+ AI models by intelligence, speed and price. Filter by provider, license, modality and context window; sort by every benchmark. Composite LLM Stats Score updated continuously from public benchmarks and live API metrics."
+    },
+    {
+      "title": "Gemma 4 — Google DeepMind",
+      "url": "https://deepmind.google/models/gemma/gemma-4/",
+      "snippet": "Gemma 4 models undergo the same rigorous infrastructure security protocols as our proprietary models. By choosing Gemma 4, enterprises and sovereign organizations gain a trusted, transparent foundation that delivers state-of-the-art capabilities while meeting the highest standards for security and reliability."
+    },
+    {
+      "title": "trl/examples/scripts/grpo_2048.py at main · huggingface/trl",
+      "url": "https://github.com/huggingface/trl/blob/main/examples/scripts/grpo_2048.py",
+      "snippet": "Train transformer language models with reinforcement learning. - huggingface/trl"
+    },
+    {
+      "title": "Lixing-Li (Lixing Li) - Hugging Face",
+      "url": "https://huggingface.co/Lixing-Li",
+      "snippet": "Org profile for Lixing Li on Hugging Face, the AI community building the future."
+    }
+  ]
+}

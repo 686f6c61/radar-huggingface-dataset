@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "allura-forge/q36-expr-whale",
+  "slug": "allura-forge-q36-expr-whale",
+  "author": "allura-forge",
+  "url": "https://huggingface.co/allura-forge/q36-expr-whale",
+  "created_at": "2026-08-29T06:58:53.000Z",
+  "updated_at": "2026-08-29T06:58:57.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 31712176,
+  "storage_human": "32 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "allura-forge (Allura (Forge)) - Hugging Face",
+      "url": "https://huggingface.co/allura-forge/datasets",
+      "snippet": "Lurking around and finding out. AI & ML interests Lurking around and finding out. Recent Activity"
+    },
+    {
+      "title": "allura-forge (Allura (Forge)) - Hugging Face",
+      "url": "https://huggingface.co/allura-forge/models",
+      "snippet": "Lurking around and finding out. ToastyPigeon updated a model 11 days ago"
+    },
+    {
+      "title": "ALLURA.MOE - Model Archive",
+      "url": "https://allura.moe/models/index.html",
+      "snippet": "🤖 MODEL ARCHIVE 🤖 Browse Allura&#x27;s complete collection of finetuned models"
+    },
+    {
+      "title": "ALLURA.MOE - Models by Series",
+      "url": "https://allura.moe/models/by-series.html",
+      "snippet": "Allura&#x27;s models organized by series and families 🦙 Llama Series Llama-3.3-70B Joyous Base: meta-llama/Llama-3.3-70B-Instruct by Fizz • Big RP finetune that also excels at assistant tasks Links: Full"
+    },
+    {
+      "title": "allura-forge-qwen3.6-35b-a3b-anko-adpt-avg4/README.md at main - GitHub",
+      "url": "https://github.com/Damacol/allura-forge-qwen3.6-35b-a3b-anko-adpt-avg4/blob/main/README.md",
+      "snippet": "allura-forge/Qwen3.6-35B-A3B-Anko-adpt-avg4 - Private, Uncensored AI for Real Creators and Devs {MODEL} deployed without telemetry or corporate filters. Experience ..."
+    }
+  ]
+}

@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "Poornima1509/slm-rl-colab",
+  "slug": "poornima1509-slm-rl-colab",
+  "author": "Poornima1509",
+  "url": "https://huggingface.co/Poornima1509/slm-rl-colab",
+  "created_at": "2026-08-29T09:20:10.000Z",
+  "updated_at": "2026-08-29T09:20:17.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "lora",
+    "transformers",
+    "reinforcement-learning",
+    "atari",
+    "slm-rl",
+    "space-invaders",
+    "text-generation",
+    "base_model:LiquidAI/LFM2.5-1.2B-Instruct",
+    "base_model:adapter:LiquidAI/LFM2.5-1.2B-Instruct",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 22241248,
+  "storage_human": "22 MB",
+  "base_model": "LiquidAI/LFM2.5-1.2B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - inde5media/SLM-RL-MODELS",
+      "url": "https://github.com/inde5media/SLM-RL-MODELS",
+      "snippet": "Contribute to inde5media/SLM-RL-MODELS development by creating an account on GitHub."
+    },
+    {
+      "title": "Google Colab",
+      "url": "https://colab.research.google.com/",
+      "snippet": "Learn how to bring the power of Colab straight to your terminal. Read the full announcement."
+    },
+    {
+      "title": "colab-llm - GitHub",
+      "url": "https://github.com/enescingoz/colab-llm",
+      "snippet": "This repository provides a ready-to-use Google Colab notebook that turns Colab into a temporary server for running local LLM models using Ollama. It exposes the model API via a secure Cloudflare tu..."
+    },
+    {
+      "title": "Unsloth - Run and Train Models Locally",
+      "url": "https://unsloth.ai/",
+      "snippet": "Use the latest models Run and train nearly every model locally, with Day Zero support for releases like Qwen3.8, NVIDIA, GLM, Gemma and more. Discover, manage and download the right quantization for your device from the built-in model hub."
+    },
+    {
+      "title": "04a-finetuning-RL.ipynb - Colab",
+      "url": "https://colab.research.google.com/github/CogSciPrag/Understanding-LLMs-course/blob/main/understanding-llms/tutorials/04a-finetuning-RL.ipynb",
+      "snippet": "In particular, RL allows to fine-tune LLMs towards human preferences and commericial usability, because its mechanics lend itself to training a model based on a more abstract signal whether an output is good or bad (i.e., let it discover how to generate output that recevies a \"good\" reward!), rather than based on particular demonstrations."
+    }
+  ]
+}

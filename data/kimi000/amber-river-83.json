@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "kimi000/amber-river-83",
+  "slug": "kimi000-amber-river-83",
+  "author": "kimi000",
+  "url": "https://huggingface.co/kimi000/amber-river-83",
+  "created_at": "2026-08-29T06:52:42.000Z",
+  "updated_at": "2026-08-29T07:02:44.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-image",
+  "library": "diffusers",
+  "languages": [],
+  "tags": [
+    "diffusers",
+    "safetensors",
+    "z-image",
+    "reinforcement-learning",
+    "text-to-image",
+    "base_model:Tongyi-MAI/Z-Image",
+    "base_model:finetune:Tongyi-MAI/Z-Image",
+    "license:apache-2.0",
+    "diffusers:ZImagePipeline",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 6154908736,
+  "parameters_human": "6.15B",
+  "storage_bytes": 20523068906,
+  "storage_human": "20.5 GB",
+  "base_model": "Tongyi-MAI/Z-Image",
+  "formats": [
+    "diffusers",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "kimi000 (jack) - Hugging Face",
+      "url": "https://huggingface.co/kimi000/models",
+      "snippet": "User profile of jack on Hugging Face"
+    },
+    {
+      "title": "Amber-River (Amber River) - Hugging Face",
+      "url": "https://huggingface.co/Amber-River/models",
+      "snippet": "Org profile for Amber River on Hugging Face, the AI community building the future."
+    },
+    {
+      "title": "Model List - Kimi API Platform",
+      "url": "https://platform.kimi.ai/docs/models",
+      "snippet": "Review currently available Kimi multimodal, coding, and Moonshot V1 models, plus migration guidance for discontinued models."
+    },
+    {
+      "title": "Kimi K3: AI That Evolves With You - [2.8T Parameters & 1M Context]",
+      "url": "https://kimik2ai.com/k3/",
+      "snippet": "Kimi K3 is Moonshot AI&#x27;s flagship model, released July 16, 2026. It&#x27;s a 2.8-trillion-parameter sparse Mixture-of-Experts model with 896 experts (16 active per token), built on Kimi Delta Attention (KDA) hybrid linear attention, with native text, image, and video input, and a 1 million token context window."
+    },
+    {
+      "title": "Kimi API Platform",
+      "url": "https://platform.kimi.ai/",
+      "snippet": "Kimi API Platform, providing the 2.8-trillion-parameter Kimi K3 large language model API with a 1M-token context window and Tool Calling. Professional code generation, intelligent dialogue, and visual reasoning to help developers build AI applications."
+    }
+  ]
+}

@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "MikhailRudenko/drafter-text-reformulation",
+  "slug": "mikhailrudenko-drafter-text-reformulation",
+  "author": "MikhailRudenko",
+  "url": "https://huggingface.co/MikhailRudenko/drafter-text-reformulation",
+  "created_at": "2026-08-29T11:29:54.000Z",
+  "updated_at": "2026-08-29T11:35:25.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "mistral",
+    "speculative-decoding",
+    "knowledge-distillation",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 156519168,
+  "parameters_human": "156.5M",
+  "storage_bytes": 313056033,
+  "storage_human": "313 MB",
+  "base_model": "Lite-Mistral-150M-v2-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GetDraft",
+      "url": "https://getdraft.ai/",
+      "snippet": "GetDraft is an AI-powered writing assistant that helps you complete writing tasks quickly and efficiently."
+    },
+    {
+      "title": "google/gemma-4-26B-A4B-it-assistant · Hugging Face",
+      "url": "https://huggingface.co/google/gemma-4-26B-A4B-it-assistant",
+      "snippet": "This model card summarizes details on the models&#x27; architecture, capabilities, limitations, and evaluation processes. A responsibly developed open model offers the opportunity to share innovation by making VLM technology accessible to developers and researchers across the AI ecosystem."
+    },
+    {
+      "title": "Word Model - AI Document Editor for Microsoft Word",
+      "url": "https://www.wordmodel.ai/",
+      "snippet": "AI agent that autonomously edits documents inside Word. Polish, rewrite, format, and optimize your documents with controllable Track Changes."
+    },
+    {
+      "title": "Rewrite Text - Grammar.com",
+      "url": "https://www.grammar.com/paraphrasing-tool",
+      "snippet": "Free Rewriter & Paraphraser Paraphrase smarter with our free AI tool. Instantly turn your text into fresh, original content—no more repetition or manual rewording."
+    },
+    {
+      "title": "Drafted - Design your dream house plan with AI",
+      "url": "https://www.drafted.ai/",
+      "snippet": "Design your dream home with AI and download free PDF & CAD house plans in seconds."
+    }
+  ]
+}

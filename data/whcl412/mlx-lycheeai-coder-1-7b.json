@@ -5,7 +5,7 @@
   "author": "whcl412",
   "url": "https://huggingface.co/whcl412/mlx-LycheeAI-coder-1.7b",
   "created_at": "2026-08-18T13:56:16.000Z",
-  "updated_at": "2026-08-21T15:38:24.000Z",
+  "updated_at": "2026-08-28T04:54:01.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -44,8 +44,8 @@
   "trending_score": 0,
   "parameters": 268944384,
   "parameters_human": "268.9M",
-  "storage_bytes": 8724144540,
-  "storage_human": "8.7 GB",
+  "storage_bytes": 9692224750,
+  "storage_human": "9.7 GB",
   "base_model": "Qwen/Qwen3-1.7B",
   "formats": [
     "safetensors"

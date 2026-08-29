@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "zeromodels/regnet-y-064",
+  "slug": "zeromodels-regnet-y-064",
+  "author": "zeromodels",
+  "url": "https://huggingface.co/zeromodels/regnet-y-064",
+  "created_at": "2026-08-29T05:47:44.000Z",
+  "updated_at": "2026-08-29T05:48:12.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-classification",
+  "library": "zeromodels",
+  "languages": [],
+  "tags": [
+    "zeromodels",
+    "keras",
+    "image-classification",
+    "regnet",
+    "backbone",
+    "arxiv:2003.13678",
+    "pytorch",
+    "jax",
+    "tf",
+    "base_model:facebook/regnet-y-064",
+    "base_model:finetune:facebook/regnet-y-064",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 123686720,
+  "storage_human": "124 MB",
+  "base_model": "facebook/regnet-y-064",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "zeromodels/regnet-x-064 · Hugging Face",
+      "url": "https://huggingface.co/zeromodels/regnet-x-064",
+      "snippet": "zeromodels/regnet-x-064 Paper: Designing Network Design Spaces (arXiv:2003.13678) · HF Papers RegNet is a family of ConvNets whose per-stage widths and depths follow a simple quantized-linear rule. This is the X variant: a 3x3 stride-2 stem then four stages of 1x1 -> 3x3 grouped -> [SE] -> 1x1 residual blocks."
+    },
+    {
+      "title": "Efficient ConvNets Return: RegNet-Y-064 Now Available on Modelers.cn",
+      "url": "https://aichina.news/blog/efficient-convnets-return-regnet-y-064-now-available-on-modelers-cn-dk1nyd/",
+      "snippet": "Convolutional Neural Networks (CNNs) remain a cornerstone of modern computer vision, and developers looking for robust backbones are always on the lookout. Today, we highlight a new addition to the Modelers.cn repository: the facebook/regnet-y-064 model. Hosted by Modelers.cn—the Huawei Ascend AI ecosystem platform—this release brings a mature, Apache-2.0 licensed architecture that has ..."
+    },
+    {
+      "title": "facebook/regnet-y-064 · Hugging Face",
+      "url": "https://huggingface.co/facebook/regnet-y-064",
+      "snippet": "RegNet RegNet model trained on imagenet-1k. It was introduced in the paper Designing Network Design Spaces and first released in this repository. Disclaimer: The team releasing RegNet did not write a model card for this model so this model card has been written by the Hugging Face team. Model description The authors design search spaces to perform Neural Architecture Search (NAS). They first ..."
+    },
+    {
+      "title": "RegNet-Y-064 Open-Source Vision Model - Trained on ImageNet-1k for ...",
+      "url": "https://model.aibase.com/models/details/1915694773744328706",
+      "snippet": "Model Overview RegNet is an image classification model proposed by Facebook Research, optimized through neural architecture search (NAS) by designing search spaces. The model is trained on the ImageNet-1k dataset and is suitable for general image classification tasks."
+    },
+    {
+      "title": "RegNet — Torchvision main documentation",
+      "url": "https://docs.pytorch.org/vision/main/models/regnet.html",
+      "snippet": "RegNet ¶ The RegNet model is based on the Designing Network Design Spaces paper. Model builders ¶ The following model builders can be used to instantiate a RegNet model, with or without pre-trained weights. All the model builders internally rely on the torchvision.models.regnet.RegNet base class. Please refer to the source code for more details about this class."
+    }
+  ]
+}

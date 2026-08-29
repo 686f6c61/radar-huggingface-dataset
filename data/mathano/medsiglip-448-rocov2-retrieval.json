@@ -5,7 +5,7 @@
   "author": "mathano",
   "url": "https://huggingface.co/mathano/medsiglip-448-rocov2-retrieval",
   "created_at": "2026-08-11T16:52:25.000Z",
-  "updated_at": "2026-08-26T23:50:48.000Z",
+  "updated_at": "2026-08-29T04:41:34.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": null,
@@ -22,8 +22,8 @@
   "trending_score": 0,
   "parameters": 878300338,
   "parameters_human": "878.3M",
-  "storage_bytes": 339046178587,
-  "storage_human": "339.0 GB",
+  "storage_bytes": 514719312405,
+  "storage_human": "514.7 GB",
   "base_model": null,
   "formats": [
     "safetensors"

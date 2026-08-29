@@ -4,16 +4,16 @@
   "slug": "layoutsharp-layoutsharp-models",
   "author": "LayoutSharp",
   "url": "https://huggingface.co/LayoutSharp/LayoutSharp-models",
-  "created_at": "2026-08-20T02:32:39.000Z",
-  "updated_at": "2026-08-20T02:34:48.000Z",
-  "license": "apache-2.0",
+  "created_at": "2026-08-29T02:57:09.000Z",
+  "updated_at": "2026-08-29T03:13:37.000Z",
+  "license": "apache-2.0-and-mit",
   "license_family": "oss",
   "pipeline_tag": null,
   "library": null,
   "languages": [],
   "tags": [
     "onnx",
-    "license:apache-2.0",
+    "license:other",
     "region:us"
   ],
   "likes": 0,
@@ -21,8 +21,8 @@
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
-  "storage_bytes": 178463581,
-  "storage_human": "178 MB",
+  "storage_bytes": 308384270,
+  "storage_human": "308 MB",
   "base_model": null,
   "formats": [
     "onnx"

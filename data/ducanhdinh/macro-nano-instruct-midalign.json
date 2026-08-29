@@ -5,7 +5,7 @@
   "author": "ducanhdinh",
   "url": "https://huggingface.co/ducanhdinh/Macro-Nano-Instruct-MidAlign",
   "created_at": "2026-08-20T10:33:13.000Z",
-  "updated_at": "2026-08-28T01:02:40.000Z",
+  "updated_at": "2026-08-29T03:58:57.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": null,
@@ -26,12 +26,12 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 1444,
+  "downloads_30d": 1891,
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
-  "storage_bytes": 47093428410,
-  "storage_human": "47.1 GB",
+  "storage_bytes": 50043392558,
+  "storage_human": "50.0 GB",
   "base_model": "ATH-MaaS/Marco-Nano-Instruct",
   "formats": [
     "safetensors"

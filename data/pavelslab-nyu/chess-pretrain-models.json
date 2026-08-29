@@ -5,7 +5,7 @@
   "author": "pavelslab-nyu",
   "url": "https://huggingface.co/pavelslab-nyu/Chess-Pretrain-Models",
   "created_at": "2026-07-19T00:59:22.000Z",
-  "updated_at": "2026-08-27T01:44:20.000Z",
+  "updated_at": "2026-08-29T00:05:33.000Z",
   "license": "mit",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -26,8 +26,8 @@
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
-  "storage_bytes": 43838312944,
-  "storage_human": "43.8 GB",
+  "storage_bytes": 44244478000,
+  "storage_human": "44.2 GB",
   "base_model": null,
   "formats": [
     "safetensors"

@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "the7prajwal/alzheimer-stage-resnet18",
+  "slug": "the7prajwal-alzheimer-stage-resnet18",
+  "author": "the7prajwal",
+  "url": "https://huggingface.co/the7prajwal/alzheimer-stage-resnet18",
+  "created_at": "2026-08-29T10:36:46.000Z",
+  "updated_at": "2026-08-29T10:37:42.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "image-classification",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "pytorch",
+    "medical-imaging",
+    "alzheimer",
+    "mri",
+    "image-classification",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 44794251,
+  "storage_human": "45 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Medical Imaging AI Project Advances with Team Collaboration",
+      "url": "https://www.linkedin.com/posts/midi-medical-imaging_its-always-exciting-when-a-medical-ai-project-activity-7497372190846263296-zJlZ",
+      "snippet": "It&#x27;s always exciting when a medical AI project reaches a new milestone. This week marked an important step forward for our medical imaging AI work. We brought together colleagues across AI ..."
+    },
+    {
+      "title": "GitHub - harshamains-gif/alzheimer-detection: Hybrid deep learning ...",
+      "url": "https://github.com/harshamains-gif/alzheimer-detection",
+      "snippet": "🧠 Alzheimer Model — MRI Detection with MedSAM + ResNet18 A hybrid deep learning model for classifying Alzheimer&#x27;s disease stages from MRI scans using MedSAM brain structure segmentation combined with a fine-tuned ResNet18 image classifier. Achieves 97.27% test accuracy on the Alzheimer&#x27;s MRI Dataset."
+    },
+    {
+      "title": "An optimized hybrid deep learning model to detect Alzheimer disease",
+      "url": "https://www.nature.com/articles/s41598-025-14169-8",
+      "snippet": "To address these challenges, we present an optimized hybrid deep learning model for Alzheimer&#x27;s disease detection. Our model employs the Inception v3 algorithm for initial feature extraction and ..."
+    },
+    {
+      "title": "A hybrid learning approach for MRI-based detection of alzheimer&#x27;s ...",
+      "url": "https://www.nature.com/articles/s41598-025-11743-y",
+      "snippet": "A review on neuroimaging-based classification studies and associated feature extraction methods for alzheimer&#x27;s disease and its prodromal stages. Neuroimage 155, 530-548 (2017)."
+    },
+    {
+      "title": "Explainable AI for Alzheimer&#x27;s MRI Classification - GitHub",
+      "url": "https://github.com/codewithadityard/Alzheimers-MRI-Classification",
+      "snippet": "🧠 Explainable AI for Alzheimer&#x27;s MRI Classification An industry-grade deep learning diagnostic tool built to classify stages of Alzheimer&#x27;s disease from MRI scans. This project prioritizes clinical trust by featuring mathematically weighted loss functions and visual interpretability using HiResCAM."
+    }
+  ]
+}

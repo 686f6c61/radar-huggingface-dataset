@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "AnonymousMouse404/biflow_chess_60hz_parity",
+  "slug": "anonymousmouse404-biflow_chess_60hz_parity",
+  "author": "AnonymousMouse404",
+  "url": "https://huggingface.co/AnonymousMouse404/biflow_chess_60hz_parity",
+  "created_at": "2026-08-29T09:18:22.000Z",
+  "updated_at": "2026-08-29T09:19:39.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 45769060,
+  "parameters_human": "45.8M",
+  "storage_bytes": 366559429,
+  "storage_human": "367 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "AnonymousMouse404/chess · Datasets at Hugging Face",
+      "url": "https://huggingface.co/datasets/AnonymousMouse404/chess",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "AnonymousMouse404/chess at main - Hugging Face",
+      "url": "https://huggingface.co/datasets/AnonymousMouse404/chess/tree/main",
+      "snippet": "Datasets: AnonymousMouse404 / chess like 0 Tasks: Robotics Modalities: Tabular Time-series Video Formats: parquet Size: 10K - 100K Tags: LeRobot Libraries: Datasets Dask Polars + 2 License: apache-2.0 Dataset card Data Studio FilesFiles and versions xet Community 1 main chess 7.19 GB 1 contributor History:9 commits AnonymousMouse404 Upload README.md with huggingface_hub 0834670 verifiedabout 2 ..."
+    },
+    {
+      "title": "Bidirectional Normalizing Flow: From Data to Noise and Back",
+      "url": "https://arxiv.org/pdf/2512.10953",
+      "snippet": "BiFlow learns a reverse model that approximates the underlying noise-to-data inverse mapping, enabling more flexible loss functions and architectures. Experiments on ImageNet demonstrate that BiFlow, compared to its causal decoding counterpart, improves generation quality while accelerating sampling by up to two orders of magnitude."
+    },
+    {
+      "title": "2Bol-afk/chess-llm - GitHub",
+      "url": "https://github.com/2Bol-afk/chess-llm",
+      "snippet": "Browser chess powered by local LM Studio models: play vs an AI, or watch two local AIs (yours vs a friend&#x27;s on the same Wi-Fi) play each other. Modern 2D board with animated piece movement. - 2Bol-afk/chess-llm"
+    },
+    {
+      "title": "EgoTraj-Bench: Towards Robust Trajectory Prediction Under Ego-view ...",
+      "url": "https://arxiv.org/pdf/2510.00405",
+      "snippet": "To address this problem, we propose BiFlow, a novel noise-resistant dual-stream flow matching model as an ex-ample solution for our benchmark. BiFlow jointly recovers the observed noisy historical trajectories and predicts future trajectories."
+    }
+  ]
+}

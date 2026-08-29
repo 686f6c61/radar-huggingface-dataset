@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "yorklyb/ndemo",
+  "slug": "yorklyb-ndemo",
+  "author": "yorklyb",
+  "url": "https://huggingface.co/yorklyb/ndemo",
+  "created_at": "2026-08-29T02:00:59.000Z",
+  "updated_at": "2026-08-29T02:01:42.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "pi05",
+    "robotics",
+    "dataset:ndemo",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 4143404816,
+  "parameters_human": "4.14B",
+  "storage_bytes": 9354063880,
+  "storage_human": "9.4 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "yorklyb (YIbo Liu) - Hugging Face",
+      "url": "https://huggingface.co/yorklyb/datasets",
+      "snippet": "Recent Activity updated a model3 days ago yorklyb/oven120 published a model3 days ago yorklyb/oven120 updated a dataset4 days ago yorklyb/oven View all activity"
+    },
+    {
+      "title": "LLM Leaderboard & AI Model Benchmarks — August 2026",
+      "url": "https://benchlm.ai/",
+      "snippet": "Compare 406 AI models across 406 benchmarks, with 228 ranked scores, source evidence, API pricing, context windows, runtime, and head-to-head pages."
+    },
+    {
+      "title": "GitHub - yorklyb/yorklyb",
+      "url": "https://github.com/yorklyb/yorklyb",
+      "snippet": "Contribute to yorklyb/yorklyb development by creating an account on GitHub."
+    },
+    {
+      "title": "AI Model Leaderboard | Rankly AI",
+      "url": "https://www.rankly-ai.com/leaderboard",
+      "snippet": "Full AI model rankings sorted by global score, community rating, and weekly change. Updated every week."
+    },
+    {
+      "title": "Best LLM Leaderboard 2026 | AI Model Rankings, Benchmarks & Pricing",
+      "url": "https://onyx.app/llm-leaderboard",
+      "snippet": "The definitive LLM leaderboard — ranking the best AI models including Claude, GPT, Gemini, DeepSeek, Llama, and more across coding, reasoning, math, agentic, and chat benchmarks. Compare LLM rankings, tier lists, and pricing."
+    }
+  ]
+}

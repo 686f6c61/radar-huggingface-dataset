@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "oakmindai/Kimi-K3-NVFP4-FTW",
+  "slug": "oakmindai-kimi-k3-nvfp4-ftw",
+  "author": "oakmindai",
+  "url": "https://huggingface.co/oakmindai/Kimi-K3-NVFP4-FTW",
+  "created_at": "2026-08-29T09:01:50.000Z",
+  "updated_at": "2026-08-29T09:50:24.000Z",
+  "license": "nvidia-open-model-license",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "sparklab",
+  "languages": [],
+  "tags": [
+    "sparklab",
+    "kimi_k3",
+    "kimi-k3",
+    "nvidia",
+    "modelopt",
+    "nvfp4",
+    "quantized",
+    "ftw",
+    "dgx-spark",
+    "text-generation",
+    "custom_code",
+    "base_model:moonshotai/Kimi-K3",
+    "base_model:quantized:moonshotai/Kimi-K3",
+    "license:other",
+    "modelopt_mixed",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1610939107094,
+  "storage_human": "1610.9 GB",
+  "base_model": "nvidia/Kimi-K3-NVFP4, moonshotai/Kimi-K3",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "RedHatAI/Kimi-K3-NVFP4 · Hugging Face",
+      "url": "https://huggingface.co/RedHatAI/Kimi-K3-NVFP4",
+      "snippet": "RedHatAI/Kimi-K3-NVFP4 This is a quantized version of moonshotai/Kimi-K3 with MoE layers quantized to NVFP4 for accelerated inference."
+    },
+    {
+      "title": "nvidia/Kimi-K3-NVFP4 · Hugging Face",
+      "url": "https://huggingface.co/nvidia/Kimi-K3-NVFP4",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GitHub - patronus-ai/kimi-k3-nvfp4",
+      "url": "https://github.com/patronus-ai/kimi-k3-nvfp4",
+      "snippet": "On Kimi-K3 that covered every block. exporter/cast_mxfp4_to_nvfp4_offline.py streams shards without ever instantiating the model (a 2.8T BF16 materialisation would be ~5.6 TB). This means we deliberately use none of NVFP4&#x27;s precision advantages for weights."
+    },
+    {
+      "title": "kimi-k3 Model by Moonshotai | NVIDIA NIM",
+      "url": "https://build.nvidia.com/moonshotai/kimi-k3",
+      "snippet": "~2.8T hybrid KDA+MLA multimodal MoE for long-horizon coding, agentic tool use, and image understanding."
+    },
+    {
+      "title": "GitHub - MoonshotAI/Kimi-K3: Open Frontier Intelligence",
+      "url": "https://github.com/MoonshotAI/Kimi-K3",
+      "snippet": "Kimi K3 is an open-weight, native multimodal agentic model and our most capable model to date. It is a 2.8T-parameter model built on Kimi Delta Attention (KDA) and Attention Residuals (AttnRes), with native vision capabilities and a 1-million-token context window. It is the world&#x27;s first open 3T-class model, designed for frontier intelligence across long-horizon coding, knowledge work, and ..."
+    }
+  ]
+}

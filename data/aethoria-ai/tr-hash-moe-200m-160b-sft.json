@@ -5,9 +5,9 @@
   "author": "AETHORIA-AI",
   "url": "https://huggingface.co/AETHORIA-AI/TR-HASH-MoE-200M-160B-SFT",
   "created_at": "2026-08-21T11:34:15.000Z",
-  "updated_at": "2026-08-26T22:30:50.000Z",
-  "license": "apache-2.0",
-  "license_family": "oss",
+  "updated_at": "2026-08-28T07:45:02.000Z",
+  "license": "cc-by-nc-4.0",
+  "license_family": "non-commercial",
   "pipeline_tag": "text-generation",
   "library": "transformers",
   "languages": [
@@ -33,7 +33,7 @@
     "dataset:AETHORIA-AI/TR-HASH-MoE-200M-SFT-v2-300K",
     "base_model:AETHORIA-AI/TR-HASH-MoE-200M-160B-Refinement",
     "base_model:finetune:AETHORIA-AI/TR-HASH-MoE-200M-160B-Refinement",
-    "license:apache-2.0",
+    "license:cc-by-nc-4.0",
     "region:us"
   ],
   "likes": 4,

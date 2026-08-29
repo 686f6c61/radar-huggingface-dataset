@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "zeromodels/regnet-y-006",
+  "slug": "zeromodels-regnet-y-006",
+  "author": "zeromodels",
+  "url": "https://huggingface.co/zeromodels/regnet-y-006",
+  "created_at": "2026-08-29T05:45:46.000Z",
+  "updated_at": "2026-08-29T05:45:55.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-classification",
+  "library": "zeromodels",
+  "languages": [],
+  "tags": [
+    "zeromodels",
+    "keras",
+    "image-classification",
+    "regnet",
+    "backbone",
+    "arxiv:2003.13678",
+    "pytorch",
+    "jax",
+    "tf",
+    "base_model:facebook/regnet-y-006",
+    "base_model:finetune:facebook/regnet-y-006",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 24968472,
+  "storage_human": "25 MB",
+  "base_model": "facebook/regnet-y-006",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "facebook/regnet-y-006 · Hugging Face",
+      "url": "https://huggingface.co/facebook/regnet-y-006",
+      "snippet": "RegNet RegNet model trained on imagenet-1k. It was introduced in the paper Designing Network Design Spaces and first released in this repository. Disclaimer: The team releasing RegNet did not write a model card for this model so this model card has been written by the Hugging Face team. Model description The authors design search spaces to perform Neural Architecture Search (NAS). They first ..."
+    },
+    {
+      "title": "README.md · facebook/regnet-y-006 at main - Hugging Face",
+      "url": "https://huggingface.co/facebook/regnet-y-006/blob/main/README.md",
+      "snippet": "RegNet RegNet model trained on imagenet-1k. It was introduced in the paper Designing Network Design Spaces and first released in this repository."
+    },
+    {
+      "title": "facebook/regnet-y-006 — AICHINA.news | AI China News",
+      "url": "https://aichina.news/models/facebook/regnet-y-006/",
+      "snippet": "This is a RegNet-Y 0.006gf (600MF) image classification model from Facebook AI Research, a lightweight convolutional neural network designed for efficient..."
+    },
+    {
+      "title": "AI Model Catalog | Microsoft Foundry Models",
+      "url": "https://ai.azure.com/catalog/models/facebook-regnet-y-006",
+      "snippet": "facebook/regnet-y-006 powered by Hugging Face Inference Toolkit Original Model Card image-classification Task on Hugging Face Send Request You can use cURL or any REST Client to send a request to the AzureML endpoint with your AzureML token."
+    },
+    {
+      "title": "AI Aimbot Models & YOLO Detection Models | MossyModels",
+      "url": "https://mossymodels.com/",
+      "snippet": "AI Aimbot Models & YOLO Detection Models Browse 661+ free YOLO and ONNX detection models across 43+ games. Community library for Fortnite, Valorant, Warzone, Apex Legends, and more. MossyModels is a community library of YOLO and ONNX detection models for first-person shooters."
+    }
+  ]
+}

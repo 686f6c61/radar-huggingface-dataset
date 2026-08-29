@@ -1,0 +1,78 @@
+{
+  "schema": 1,
+  "id": "Hatim2221/Fikr-7B-Reasoning",
+  "slug": "hatim2221-fikr-7b-reasoning",
+  "author": "Hatim2221",
+  "url": "https://huggingface.co/Hatim2221/Fikr-7B-Reasoning",
+  "created_at": "2026-08-29T01:50:04.000Z",
+  "updated_at": "2026-08-29T04:34:21.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "ar",
+    "en"
+  ],
+  "tags": [
+    "safetensors",
+    "qwen2",
+    "reasoning",
+    "math",
+    "arabic",
+    "chain-of-thought",
+    "unsloth",
+    "qwen",
+    "text-generation",
+    "conversational",
+    "ar",
+    "en",
+    "base_model:Qwen/Qwen2.5-7B-Instruct",
+    "base_model:finetune:Qwen/Qwen2.5-7B-Instruct",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 7615616512,
+  "parameters_human": "7.62B",
+  "storage_bytes": 15242694030,
+  "storage_human": "15.2 GB",
+  "base_model": "Qwen/Qwen2.5-7B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Falcon H1R 7B Outperforms Models Seven Times Its Size",
+      "url": "https://zenvanriel.com/ai-engineer-blog/falcon-h1r-7b-reasoning-model-guide/",
+      "snippet": "The new Falcon H1R 7B reasoning model matches 50B parameter models at a fraction of the compute cost. Here&#x27;s why this matters for AI engineers."
+    },
+    {
+      "title": "Falcon H1R 7B - Falcon LLM",
+      "url": "https://falconllm.tii.ae/falcon-h1r-7b.html",
+      "snippet": "Falcon H1R 7B proves that advanced reasoning no longer requires large model sizes, thereby setting a new benchmark for intelligent and cost-effective deployable AI. This is a leap forward in the reasoning capabilities of compact AI systems showing how scientific precision and scalable design can go hand in hand."
+    },
+    {
+      "title": "Falcon-H1R: Pushing the Reasoning Frontiers with a Hybrid Model for ...",
+      "url": "https://falcon-lm.github.io/blog/falcon-h1r-7b/",
+      "snippet": "Falcon CHAT Hugging Face DEMO DISCORD Introducing Falcon H1R 7B We&#x27;re excited to unveil Falcon H1R 7B, a decoder-only large language model, developed by the Technology Innovation Institute (TII) in Abu Dhabi. Building upon the robust foundation of Falcon-H1 Base model, Falcon H1R 7B takes a major leap forward in reasoning capabilities. Despite its modest 7 billion‑parameter size, Falcon ..."
+    },
+    {
+      "title": "Falcon H1R‑7B: New 7B Reasoning Model with 256K Context Window",
+      "url": "https://ubos.tech/news/falcon-h1r%E2%80%917b-new-7b-reasoning-model-with-256k-context-window/",
+      "snippet": "Falcon‑H1R‑7B is a 7‑billion‑parameter reasoning model from TII Abu Dhabi that delivers state‑of‑the‑art performance on mathematics, coding, and general reasoning tasks while supporting an unprecedented 256k token context window. Why Falcon‑H1R‑7B Is a Game‑Changer in AI Research In early 2026, the original MarkTechPost article announced the launch of Falcon‑H1R‑7B, a ..."
+    },
+    {
+      "title": "Falcon H1R 7B Guide: The 7B Model That Beats 47B Models (2026)",
+      "url": "https://www.aimadetools.com/blog/falcon-h1r-7b-guide/",
+      "snippet": "Falcon H1R 7B is the most parameter-efficient reasoning model in 2026. At just 7 billion parameters, it scores 88.1% on AIME-24 (math), beating Microsoft Phi-4 Reasoning Plus (14B), Alibaba Qwen3 32B, and NVIDIA Nemotron H (47B). It processes 1,500 tokens per second per GPU — nearly 2x the throughput of Qwen3-8B. The secret is its hybrid Transformer-Mamba architecture, developed by the ..."
+    }
+  ]
+}

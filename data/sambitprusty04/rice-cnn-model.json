@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "SambitPrusty04/rice-cnn-model",
+  "slug": "sambitprusty04-rice-cnn-model",
+  "author": "SambitPrusty04",
+  "url": "https://huggingface.co/SambitPrusty04/rice-cnn-model",
+  "created_at": "2026-08-29T06:41:46.000Z",
+  "updated_at": "2026-08-29T06:44:20.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 39707680,
+  "storage_human": "40 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Rice_CNN_model - Kaggle",
+      "url": "https://www.kaggle.com/code/kianoushkhojasteh/rice-cnn-model",
+      "snippet": "Dataset: Rice images from five classes: Arborio, Basmati, Ipsala, Jasmine, and Karacadag. Approach: Image preprocessing, dataset splitting, data augmentation, and model training using CNN and AlexNet. Evaluation: Performance comparison using training/validation accuracy, loss curves, and final test results."
+    },
+    {
+      "title": "GitHub - 8669393253/CNN-Rice-model: The Rice Classification System is a ...",
+      "url": "https://github.com/8669393253/CNN-Rice-model",
+      "snippet": "The Rice Classification System is a web application designed to classify five varieties of rice—Arborio, Basmati, Ipsala, Jasmine, and Karacadag—using a deep learning model. The system leverages a MobileNetV2-based convolutional neural network (CNN) trained on the Rice Image Dataset. - 8669393253/CNN-Rice-model"
+    },
+    {
+      "title": "GitHub - samiya1054/Rice-Type-Classification-Using-Cnn",
+      "url": "https://github.com/samiya1054/Rice-Type-Classification-Using-Cnn",
+      "snippet": "The Rice Type Classification Using CNN project is an AI-powered tool designed to classify five rice grain varieties: Arborio Basmati Ipsala Jasmine Karacadag This project uses Convolutional Neural Networks (CNN) with Transfer Learning (MobileNetV2/4) to achieve high accuracy, and integrates with a Flask web application for an intuitive interface. Users can simply upload an image of rice grains ..."
+    },
+    {
+      "title": "AI‐Enable Rice Image Classification Using Hybrid Convolutional Neural ...",
+      "url": "https://onlinelibrary.wiley.com/doi/full/10.1155/int/5571940",
+      "snippet": "The primary contribution of this study is the development of a unique hybrid CNN model that combines three models, namely, AlexNet + ResNet50 and EfficientNet-b1, to achieve improved performance in the identification of rice varieties."
+    },
+    {
+      "title": "A comprehensive deep learning framework for rice ... - ScienceDirect",
+      "url": "https://www.sciencedirect.com/science/article/pii/S2772375525009414",
+      "snippet": "We conduct a rigorous evaluation across multiple deep learning paradigms including four CNN backbones, stacked-ensemble method using meta-classifier, and two transformer models on a diverse, large-scale image dataset encompassing 62 rice varieties, thereby establishing the most comprehensive performance benchmark for rice variety recognition to ..."
+    }
+  ]
+}

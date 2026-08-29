@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "jasort/chinse-int8-smart-v2",
+  "slug": "jasort-chinse-int8-smart-v2",
+  "author": "jasort",
+  "url": "https://huggingface.co/jasort/chinse-int8-smart-v2",
+  "created_at": "2026-08-29T10:46:08.000Z",
+  "updated_at": "2026-08-29T10:47:32.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gemma4",
+    "image-text-to-text",
+    "bitsandbytes",
+    "int8",
+    "quantized",
+    "conversational",
+    "base_model:jasort/chinse",
+    "base_model:quantized:jasort/chinse",
+    "endpoints_compatible",
+    "8-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 5104297504,
+  "parameters_human": "5.10B",
+  "storage_bytes": 8368065839,
+  "storage_human": "8.4 GB",
+  "base_model": "jasort/chinse",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Best Chinese AI Models (August 2026): Kimi K3 Leads",
+      "url": "https://benchlm.ai/best/chinese-models",
+      "snippet": "A live ranking of AI models from Chinese labs, using the same current public ranking contract as the overall leaderboard. Top picks: Kimi K3, Qwen3.8 Max, Hy4 preview. 74 models ranked with detailed benchmark scores."
+    },
+    {
+      "title": "Trump Family Crypto Firm Tied to Chinese AI Models US Government Called ...",
+      "url": "https://finance.yahoo.com/technology/ai/articles/trump-family-crypto-firm-tied-183604719.html",
+      "snippet": "WorldClaw accepts World Liberty&#x27;s USD1 stablecoin while offering AI models from Chinese companies facing U.S. national security restrictions."
+    },
+    {
+      "title": "Models - Hugging Face",
+      "url": "https://huggingface.co/models",
+      "snippet": "Explore machine learning models."
+    },
+    {
+      "title": "CivArchive (CivitAI Archive) - AI Model Archive",
+      "url": "https://civitaiarchive.com/",
+      "snippet": "Browse and discover AI models from CivitAI, TensorArt, and SeaArt. Community-driven archive preserving access to AI resources."
+    },
+    {
+      "title": "GitHub - ArtyomR/Chinese-AI-models: List of Chinese AI models",
+      "url": "https://github.com/ArtyomR/Chinese-AI-models",
+      "snippet": "List of Chinese AI models. Contribute to ArtyomR/Chinese-AI-models development by creating an account on GitHub."
+    }
+  ]
+}

@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "YauhenBichel/python-vibe-0.5b",
+  "slug": "yauhenbichel-python-vibe-0-5b",
+  "author": "YauhenBichel",
+  "url": "https://huggingface.co/YauhenBichel/python-vibe-0.5b",
+  "created_at": "2026-08-29T09:47:32.000Z",
+  "updated_at": "2026-08-29T09:47:35.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "mlx",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "mlx",
+    "lora",
+    "qwen2.5-coder",
+    "python",
+    "code-generation",
+    "text-generation",
+    "en",
+    "base_model:Qwen/Qwen2.5-Coder-0.5B-Instruct",
+    "base_model:adapter:Qwen/Qwen2.5-Coder-0.5B-Instruct",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1086409,
+  "storage_human": "1 MB",
+  "base_model": "Qwen/Qwen2.5-Coder-0.5B-Instruct",
+  "formats": [
+    "mlx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - microsoft/VibeVoice: Open-Source Frontier Voice AI",
+      "url": "https://github.com/microsoft/VibeVoice",
+      "snippet": "VibeVoice is a family of open-source frontier voice AI models that includes both Text-to-Speech (TTS) and Automatic Speech Recognition (ASR) models. A core innovation of VibeVoice is its use of continuous speech tokenizers (Acoustic and Semantic) operating at an ultra-low frame rate of 7.5 Hz. These tokenizers efficiently preserve audio fidelity while significantly boosting computational ..."
+    },
+    {
+      "title": "GitHub - p-p-p-p/VibeVoice-Realtime-0.5B: Open-Source Frontier Voice AI",
+      "url": "https://github.com/p-p-p-p/VibeVoice-Realtime-0.5B",
+      "snippet": "🎙️ VibeVoice: Open-Source Frontier Voice AI 📰 News 2025-12-03: 📣 We open-sourced VibeVoice‑Realtime‑0.5B, a real‑time text‑to‑speech model that supports streaming text input and robust long-form speech generation. Try it on Colab. VibeVoice_Realtime.mp4 (Launch your own realtime demo via the websocket example in Usage)."
+    },
+    {
+      "title": "microsoft/VibeVoice-Realtime-0.5B · Hugging Face",
+      "url": "https://huggingface.co/microsoft/VibeVoice-Realtime-0.5B",
+      "snippet": "The model uses an interleaved, windowed design: it incrementally encodes incoming text chunks while, in parallel, continuing diffusion-based acoustic latent generation from prior context. Unlike the full multi-speaker long-form variants, this streaming model removes the semantic tokenizer and relies solely on an efficient acoustic tokenizer operating at an ultra-low frame rate (7.5 Hz)."
+    },
+    {
+      "title": "VibeVoiceRealTime - 0.5B Real-time TTS Model | Microsoft AI",
+      "url": "https://vibevoicerealtime.com/",
+      "snippet": "Discover VibeVoiceRealTime-0.5B, Microsoft&#x27;s breakthrough real-time text-to-speech model. <300ms latency, emotional expression, and 4-role dialogue support."
+    },
+    {
+      "title": "Fine-tuned Models for microsoft/VibeVoice-Realtime-0.5B - Hugging Face",
+      "url": "https://huggingface.co/models?other=base_model:finetune:microsoft/VibeVoice-Realtime-0.5B",
+      "snippet": "Explore machine learning models."
+    }
+  ]
+}

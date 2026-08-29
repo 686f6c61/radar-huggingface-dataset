@@ -5,7 +5,7 @@
   "author": "litert-community",
   "url": "https://huggingface.co/litert-community/SmolVLM2-500M",
   "created_at": "2026-06-30T13:34:29.000Z",
-  "updated_at": "2026-08-28T03:24:03.000Z",
+  "updated_at": "2026-08-28T05:56:40.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "image-text-to-text",
@@ -27,7 +27,7 @@
     "region:us"
   ],
   "likes": 3,
-  "downloads_30d": 536,
+  "downloads_30d": 534,
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,

@@ -5,7 +5,7 @@
   "author": "shawnw3i",
   "url": "https://huggingface.co/shawnw3i/Huihui-Qwen3.8-27B-abliterated-AWQ-MTP",
   "created_at": "2026-08-17T00:18:40.000Z",
-  "updated_at": "2026-08-17T00:43:28.000Z",
+  "updated_at": "2026-08-28T18:27:23.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "image-text-to-text",
@@ -29,13 +29,13 @@
     "4-bit",
     "region:us"
   ],
-  "likes": 0,
+  "likes": 1,
   "downloads_30d": 2756,
   "trending_score": 0,
-  "parameters": 6284446960,
-  "parameters_human": "6.28B",
-  "storage_bytes": 19567790213,
-  "storage_human": "19.6 GB",
+  "parameters": 6498258160,
+  "parameters_human": "6.50B",
+  "storage_bytes": 33655722573,
+  "storage_human": "33.7 GB",
   "base_model": "huihui-ai/Huihui-Qwen3.8-27B-abliterated, Qwen/Qwen3.8-27B",
   "formats": [
     "safetensors"

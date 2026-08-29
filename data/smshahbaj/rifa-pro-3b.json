@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "smshahbaj/RIFA-Pro-3B",
+  "slug": "smshahbaj-rifa-pro-3b",
+  "author": "smshahbaj",
+  "url": "https://huggingface.co/smshahbaj/RIFA-Pro-3B",
+  "created_at": "2026-08-29T08:09:23.000Z",
+  "updated_at": "2026-08-29T08:09:23.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "smshahbaj/Rifa-Nano-0.5B · Hugging Face",
+      "url": "https://huggingface.co/smshahbaj/Rifa-Nano-0.5B",
+      "snippet": "📖 Overview RIFA Nano is the smallest and fastest model in the RIFA series — a family of language models built to run efficiently across a wide range of hardware, from low-end mobile devices to modern GPUs. Nano is fine-tuned on top of Qwen2.5-.5B-Instruct using LoRA, combining a strong identity, multilingual fluency, and lightweight coding ability in a package small enough to run almost ..."
+    },
+    {
+      "title": "LLM Leaderboard & AI Model Benchmarks — August 2026",
+      "url": "https://benchlm.ai/",
+      "snippet": "Compare 406 AI models across 406 benchmarks, with 228 ranked scores, source evidence, API pricing, context windows, runtime, and head-to-head pages."
+    },
+    {
+      "title": "smshahbaj-official · GitHub",
+      "url": "https://github.com/smshahbaj-official/",
+      "snippet": "smshahbaj-official has one repository available. Follow their code on GitHub."
+    },
+    {
+      "title": "Models - Hugging Face",
+      "url": "https://huggingface.co/models",
+      "snippet": "Explore machine learning models."
+    },
+    {
+      "title": "‎Google Gemini",
+      "url": "https://gemini.google.com/",
+      "snippet": "Meet Gemini, Google&#x27;s AI assistant. Get help with writing, planning, brainstorming, and more. Experience the power of generative AI."
+    }
+  ]
+}

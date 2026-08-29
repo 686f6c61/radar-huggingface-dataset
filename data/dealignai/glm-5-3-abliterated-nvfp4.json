@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "dealignai/GLM-5.3-ABLITERATED-NVFP4",
+  "slug": "dealignai-glm-5-3-abliterated-nvfp4",
+  "author": "dealignai",
+  "url": "https://huggingface.co/dealignai/GLM-5.3-ABLITERATED-NVFP4",
+  "created_at": "2026-08-29T10:42:41.000Z",
+  "updated_at": "2026-08-29T10:52:25.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "abliterated",
+    "uncensored",
+    "crack",
+    "glm",
+    "moe",
+    "nvfp4",
+    "cybersecurity",
+    "offensive-security",
+    "mtp",
+    "en",
+    "base_model:zai-org/GLM-5.3",
+    "base_model:finetune:zai-org/GLM-5.3",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": "zai-org/GLM-5.3",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "README.md · dealignai/GLM-5.3-Flash-ABLITERATED-NVFP4 at main",
+      "url": "https://huggingface.co/dealignai/GLM-5.3-Flash-ABLITERATED-NVFP4/blob/main/README.md",
+      "snippet": "What Is This? CRACK is dealignai&#x27;s brand for permanent, weight-level uncensoring. This is GLM-5.3-Flash with its refusal behavior — which caused heavy over-refusal, especially on copyright and other benign-but-flagged requests — removed directly in the model weights."
+    },
+    {
+      "title": "dealignai/GLM-5.3-Flash-ABLITERATED-NVFP4 at main",
+      "url": "https://huggingface.co/dealignai/GLM-5.3-Flash-ABLITERATED-NVFP4/tree/main",
+      "snippet": "dealignai / GLM-5.3-Flash-ABLITERATED-NVFP4 like 2 Safetensors English glm5_next abliterated uncensored crack refusal-removed glm Mixture of Experts nvfp4 vision mtp 8-bit precision modelopt License:mit Model card FilesFiles and versions xet Community Copy to bucket new main GLM-5.3-Flash-ABLITERATED-NVFP4 195 GB Ctrl+K Ctrl+K 1 contributor History:1 commit dealignai Release 835b767 about 2 ..."
+    },
+    {
+      "title": "GitHub - drowzeys/keys-vLLm.0.27.1-GLM-5.3-Flash-NVFP4-NVFP4KV-1M ...",
+      "url": "https://github.com/drowzeys/keys-vLLm.0.27.1-GLM-5.3-Flash-NVFP4-NVFP4KV-1M-Context-Abliterated",
+      "snippet": "Serving Z.ai&#x27;s GLM-5.3-Flash (320B / 18B-active, released 2026-08-26) at 1,048,576-token context across two NVIDIA DGX Spark nodes (GB10, sm_121, 2 × 121.7 GiB unified memory) at tensor-parallel 2, using LibertAI&#x27;s NVFP4 quant and an NVFP4 packed MLA KV cache — same-day as the model drop. Retrieval verified by passkey at 33K, 131K, 262K, 524K and 1,043,880 tokens. Credit where it&#x27;s due. The ..."
+    },
+    {
+      "title": "Dealign.ai — AI Alignment Research by Jinho Jang",
+      "url": "https://dealign.ai/",
+      "snippet": "Qwen3.8-27B-CRACK-GGUF gguf llama.cpp qwen3_5 hybrid gated-delta-net Nemotron-3.5-Lightning-30B-A3B-MXFP8-CRACK mlx nemotron_h apple-silicon abliterated uncensored Safety Across Scale: How AI Safety Mechanisms Evolve from 0.8B to 397B Parameters The first cross-scale mechanistic study of how safety training works inside language models."
+    },
+    {
+      "title": "GLM-5.3 - Overview - Z.AI DEVELOPER DOCUMENT",
+      "url": "https://docs.z.ai/guides/llm/glm-5.3",
+      "snippet": "Overview GLM-5.3 is Z.ai&#x27;s latest flagship model, delivering comprehensive advancements in complex software engineering and agent capabilities. It uses the same base model as GLM-5.2, with all improvements driven by post-training. Compared with GLM-5.2, it delivers significantly stronger performance in complex programming and long-horizon tasks: Stronger Coding Capability GLM-5.3 delivers a ..."
+    }
+  ]
+}

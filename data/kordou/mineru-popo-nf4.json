@@ -1,0 +1,77 @@
+{
+  "schema": 1,
+  "id": "kordou/MinerU-Popo-NF4",
+  "slug": "kordou-mineru-popo-nf4",
+  "author": "kordou",
+  "url": "https://huggingface.co/kordou/MinerU-Popo-NF4",
+  "created_at": "2026-08-29T10:23:30.000Z",
+  "updated_at": "2026-08-29T10:23:49.000Z",
+  "license": "see-base-model",
+  "license_family": "unknown",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_vl",
+    "image-text-to-text",
+    "mineru",
+    "popo",
+    "document-structure",
+    "qwen3-vl",
+    "bitsandbytes",
+    "nf4",
+    "4-bit",
+    "quantized",
+    "conversational",
+    "base_model:DreamEternal/MinerU-Popo",
+    "base_model:quantized:DreamEternal/MinerU-Popo",
+    "license:other",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 4437815808,
+  "parameters_human": "4.44B",
+  "storage_bytes": 4310337110,
+  "storage_human": "4.3 GB",
+  "base_model": "DreamEternal/MinerU-Popo",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - opendatalab/MinerU-Popo",
+      "url": "https://github.com/opendatalab/MinerU-Popo",
+      "snippet": "MinerU-Popo is a lightweight and universal framework for POst-Processing OCR outputs, bridging the gap between page-level OCR parsing and document-level semantic structure. It constructs document tree structures with a 4B post-processing model that performs four subtasks: table truncation analysis, text truncation analysis, title hierarchy analysis, and image-text association analysis. We ..."
+    },
+    {
+      "title": "MinerU-Popo: Universal Post-Processing Model for Structured Document ...",
+      "url": "https://arxiv.org/html/2605.24973",
+      "snippet": "A natural solution is therefore to reuse existing OCR outputs and reconstruct document-level logical structures through post-processing. To this end, we propose MinerU-Popo, a lightweight and universal framework for PO st- P rocessing O CR outputs, which converts page-level results from diverse parsers into coherent document-level structures."
+    },
+    {
+      "title": "MinerU-Popo/README.md at master · opendatalab/MinerU-Popo",
+      "url": "https://github.com/opendatalab/MinerU-Popo/blob/master/README.md",
+      "snippet": "MinerU-Popo is a lightweight and universal framework for POst-Processing OCR outputs, bridging the gap between page-level OCR parsing and document-level semantic structure. It constructs document tree structures with a 4B post-processing model that performs four subtasks: table truncation analysis, text truncation analysis, title hierarchy analysis, and image-text association analysis. We ..."
+    },
+    {
+      "title": "MinerU-Popo: Universal Post-Processing Model for Structured Document ...",
+      "url": "https://arxiv.org/pdf/2605.24973",
+      "snippet": "A natural solution is therefore to reuse existing OCR outputs and reconstruct document-level logical structures through post-processing. To this end, we propose MinerU-Popo, a lightweight and universal framework for POst-Processing OCR outputs, which converts page-level results from diverse parsers into coherent document-level structures."
+    },
+    {
+      "title": "DreamEternal/MinerU-Popo · Hugging Face",
+      "url": "https://huggingface.co/DreamEternal/MinerU-Popo",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    }
+  ]
+}

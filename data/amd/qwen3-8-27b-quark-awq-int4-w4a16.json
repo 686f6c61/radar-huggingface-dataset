@@ -5,7 +5,7 @@
   "author": "amd",
   "url": "https://huggingface.co/amd/Qwen3.8-27B-Quark-AWQ-INT4-W4A16",
   "created_at": "2026-08-15T02:11:56.000Z",
-  "updated_at": "2026-08-26T01:44:52.000Z",
+  "updated_at": "2026-08-28T22:40:35.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "image-text-to-text",

@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "NatthakanDTA/MY_ProjectAI",
+  "slug": "natthakandta-my_projectai",
+  "author": "NatthakanDTA",
+  "url": "https://huggingface.co/NatthakanDTA/MY_ProjectAI",
+  "created_at": "2026-08-29T08:44:11.000Z",
+  "updated_at": "2026-08-29T08:44:56.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "base_model:adapter:Qwen/Qwen2.5-1.5B-Instruct",
+    "lora",
+    "sft",
+    "transformers",
+    "trl",
+    "text-generation",
+    "conversational",
+    "arxiv:1910.09700",
+    "base_model:Qwen/Qwen2.5-1.5B-Instruct",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 85333004,
+  "storage_human": "85 MB",
+  "base_model": "Qwen/Qwen2.5-1.5B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "NatthakanDTA (Natthahakan Buathum) - Hugging Face",
+      "url": "https://huggingface.co/NatthakanDTA/spaces",
+      "snippet": "ProjectZ 📈 Answer schedule questions with AI-powered chatbot NatthakanDTA about 8 hours ago"
+    },
+    {
+      "title": "Project AI v2.5 for FS2004 - Fly Away Simulation",
+      "url": "https://flyawaysimulation.com/downloads/files/726/project-ai-v25/",
+      "snippet": "Project AI v2.5 Project AI v2.5 brings busy, airline-style AI traffic to airports and airways, adding believable schedules and aircraft variety for a livelier sim world in FS2004 and FS2002. The included Windows installer manages package setup, keeps key configuration files current, and checks for issues to help maintain smooth, consistent traffic behavior."
+    },
+    {
+      "title": "ProjectAI - Escape Tutorial Hell & Build Real Projects | Learn ...",
+      "url": "https://projectai.in/",
+      "snippet": "Stop watching and start coding! Build real-world projects, track progress, and launch your developer career with ProjectAI."
+    },
+    {
+      "title": "ProjectAI | Create Clarity & Transform How Your Projects Work",
+      "url": "https://projectai.com/",
+      "snippet": "We combine deep expertise in business strategy, organisation design and project management with the power of leading technologies, giving businesses unparalleled transparency to select, plan and execute their projects with a new level of insight."
+    },
+    {
+      "title": "AVSIM Library",
+      "url": "https://library.avsim.net/search/basic/fs2004aia/project%20ai",
+      "snippet": "File Description: Project BN AI - Traffic of warships of the Brazilian Navy - Rio de Janeiro. Brazil. ... File Description: Private Wings Flugcharter Dornier Dornier 328 Jet (J328 Jet) for AI use. Registration D-BJET. Textures only for the PAI D328 model. Model available at www.projectai.com. DXT3 format with no mips."
+    }
+  ]
+}

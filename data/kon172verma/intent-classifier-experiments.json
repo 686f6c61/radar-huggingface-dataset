@@ -5,7 +5,7 @@
   "author": "kon172verma",
   "url": "https://huggingface.co/kon172verma/intent-classifier-experiments",
   "created_at": "2026-08-01T09:28:31.000Z",
-  "updated_at": "2026-08-27T21:30:59.000Z",
+  "updated_at": "2026-08-28T18:34:01.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-classification",
@@ -17,6 +17,7 @@
     "lora",
     "dora",
     "lora+",
+    "dora+",
     "adalora",
     "qlora",
     "text-classification",
@@ -29,8 +30,8 @@
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
-  "storage_bytes": 5126381132,
-  "storage_human": "5.1 GB",
+  "storage_bytes": 5268714684,
+  "storage_human": "5.3 GB",
   "base_model": null,
   "formats": [
     "safetensors"

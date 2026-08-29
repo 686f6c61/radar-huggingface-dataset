@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "mradermacher/jtd-d5-69-30B-GGUF",
+  "slug": "mradermacher-jtd-d5-69-30b-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/jtd-d5-69-30B-GGUF",
+  "created_at": "2026-08-29T11:32:42.000Z",
+  "updated_at": "2026-08-29T11:52:19.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "reinforcement-learning",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "reinforcement-learning",
+    "skyrl",
+    "gspo",
+    "codeforces",
+    "en",
+    "base_model:laion/jtd-d5-69-30B",
+    "base_model:quantized:laion/jtd-d5-69-30B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 30532122624,
+  "parameters_human": "30.53B",
+  "storage_bytes": 61198558624,
+  "storage_human": "61.2 GB",
+  "base_model": "laion/jtd-d5-69-30B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "team mradermacher - Hugging Face",
+      "url": "https://huggingface.co/mradermacher",
+      "snippet": "Feel free to suggest models to quant e.g. at https://huggingface.co/mradermacher/model_requests"
+    },
+    {
+      "title": "mradermacher/Agentic-30B-A3B-GGUF · Hugging Face",
+      "url": "https://huggingface.co/mradermacher/Agentic-30B-A3B-GGUF",
+      "snippet": "mradermacher / Agentic-30B-A3B-GGUF like 0 Transformers GGUF Chinese English agent agentic tool-use function-calling Mixture of Experts qwen3 opencsg vllm skills conversational License:other Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "MAC Address Vendor Lookup | MAC Address Lookup",
+      "url": "https://maclookup.app/",
+      "snippet": "Fast and easy MAC address lookup on IEEE directory and Wireshark manufacturer database. Search vendor, manufacturer or organization of a device by MAC/OUI address. Fast REST API"
+    },
+    {
+      "title": "Mradermacher - Find Top AI Models on Hugging Face",
+      "url": "https://www.aimodels.fyi/creators/huggingFace/mradermacher",
+      "snippet": "Looking for Mradermacher&#x27;s top AI models? Browse their full Hugging Face collection of 26 models. Explore AI models and contributions by Mradermacher on Huggingface."
+    },
+    {
+      "title": "ModelFitCheck — will this LLM fit your GPU?",
+      "url": "https://modelfitcheck.com/",
+      "snippet": "Free browser-based tool that detects your hardware and instantly tells you which local LLMs and GGUF quantizations will fit in your VRAM. No signup, no data sent."
+    }
+  ]
+}

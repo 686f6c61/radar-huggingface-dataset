@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "fushipro123/eduviolence-16class-checkpoints-proposed_eventlevel_timesformer_transformer_dynamic",
+  "slug": "fushipro123-eduviolence-16class-checkpoints-proposed_eventlevel_timesformer_transformer_dynamic",
+  "author": "fushipro123",
+  "url": "https://huggingface.co/fushipro123/eduviolence-16class-checkpoints-proposed_eventlevel_timesformer_transformer_dynamic",
+  "created_at": "2026-08-29T02:47:05.000Z",
+  "updated_at": "2026-08-29T09:20:41.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 129843473,
+  "parameters_human": "129.8M",
+  "storage_bytes": 14025590670,
+  "storage_human": "14.0 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "TimeSformer · Hugging Face",
+      "url": "https://huggingface.co/docs/transformers/model_doc/timesformer",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Brainly - Your AI Learning Companion | Get Homework Help, AI Tutor ...",
+      "url": "https://brainly.com/",
+      "snippet": "Brainly is your AI Learning Companion that empowers students to thrive academically. Brainly creates responsive learning environment for students, parents, and teachers. Explore a world of questions and answers, test prep, and instant support from our AI Tutor, helping you learn smarter and do homework collaboratively for better grades."
+    },
+    {
+      "title": "Civitai Video Gallery | AI-Generated Art Showcase",
+      "url": "https://civitai.com/videos",
+      "snippet": "See the latest art created by the generative AI art community and delve into the inspirations and prompts behind their work"
+    },
+    {
+      "title": "Models - Hugging Face",
+      "url": "https://huggingface.co/models?other=checkpoint",
+      "snippet": "Explore machine learning models."
+    },
+    {
+      "title": "GitHub - facebookresearch/TimeSformer: The official pytorch ...",
+      "url": "https://github.com/facebookresearch/TimeSformer",
+      "snippet": "In this repository, we provide PyTorch code for training and testing our proposed TimeSformer model. TimeSformer provides an efficient video classification framework that achieves state-of-the-art results on several video action recognition benchmarks such as Kinetics-400."
+    }
+  ]
+}

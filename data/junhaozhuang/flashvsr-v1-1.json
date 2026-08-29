@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "JunhaoZhuang/FlashVSR-v1.1",
+  "slug": "junhaozhuang-flashvsr-v1-1",
+  "author": "JunhaoZhuang",
+  "url": "https://huggingface.co/JunhaoZhuang/FlashVSR-v1.1",
+  "created_at": "2025-10-31T04:18:43.000Z",
+  "updated_at": "2026-08-15T04:38:23.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "video-to-video",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "flashvsr",
+    "video-to-video",
+    "arxiv:2510.12747",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 163,
+  "downloads_30d": 8092,
+  "trending_score": 7,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 7524088565,
+  "storage_human": "7.5 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "JunhaoZhuang/FlashVSR-v1.1 · Hugging Face",
+      "url": "https://huggingface.co/JunhaoZhuang/FlashVSR-v1.1",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "JunhaoZhuang/FlashVSR-v1.1 at main - Hugging Face",
+      "url": "https://huggingface.co/JunhaoZhuang/FlashVSR-v1.1/tree/main",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GitHub - OpenImagingLab/FlashVSR: [CVPR 2026] Towards Real-Time ...",
+      "url": "https://github.com/OpenImagingLab/FlashVSR",
+      "snippet": "📰 News Nov 2025 — 🎉 FlashVSR v1.1 released: enhanced stability + fidelity Oct 2025 — FlashVSR v1 (initial release): Inference code and model weights are available now! 🎉 Bug Fix (October 21, 2025): Fixed local_attention_mask update logic to prevent artifacts when switching between different aspect ratios during continuous inference."
+    },
+    {
+      "title": "FlashVSR-v1.1 huggingface.co api & JunhaoZhuang FlashVSR-v1.1 github AI ...",
+      "url": "https://www.toolify.ai/ai-model/junhaozhuang-flashvsr-v1-1",
+      "snippet": "FlashVSR-v1.1 huggingface.co is an AI model on huggingface.co that provides FlashVSR-v1.1&#x27;s model effect (), which can be used instantly with this JunhaoZhuang FlashVSR-v1.1 model. huggingface.co supports a free trial of the FlashVSR-v1.1 model, and also provides paid use of the FlashVSR-v1.1."
+    },
+    {
+      "title": "Damacol/junhaozhuang-flashvsr-v1-1 - GitHub",
+      "url": "https://github.com/Damacol/junhaozhuang-flashvsr-v1-1",
+      "snippet": "JunhaoZhuang/FlashVSR-v1.1 - Private, Uncensored AI for Real Creators and Devs Tired of AI that babysits you, logs your prompts, or hits you with \"I can&#x27;t do that ..."
+    }
+  ]
+}

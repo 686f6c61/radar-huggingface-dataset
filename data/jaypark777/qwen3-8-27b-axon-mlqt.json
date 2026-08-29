@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "jayPark777/Qwen3.8-27B-Axon-MLQT",
+  "slug": "jaypark777-qwen3-8-27b-axon-mlqt",
+  "author": "jayPark777",
+  "url": "https://huggingface.co/jayPark777/Qwen3.8-27B-Axon-MLQT",
+  "created_at": "2026-08-29T11:40:03.000Z",
+  "updated_at": "2026-08-29T11:42:18.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "axontrit",
+    "mlqt",
+    "27b",
+    "3trit",
+    "0skip",
+    "sovereign-ai",
+    "text-generation",
+    "reasoning",
+    "coding",
+    "base_model:Qwen/Qwen3.8-27B",
+    "base_model:quantized:Qwen/Qwen3.8-27B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 26895998464,
+  "parameters_human": "26.90B",
+  "storage_bytes": 12073955520,
+  "storage_human": "12.1 GB",
+  "base_model": "Qwen/Qwen3.8-27B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "jayPark777/Qwen3.8-27B-Axon-MLQT · Hugging Face",
+      "url": "https://huggingface.co/jayPark777/Qwen3.8-27B-Axon-MLQT",
+      "snippet": "Qwen3.8-27B-Axon-MLQT is the world&#x27;s first 3-Trit 0-SKIP MLQT quantized release of the groundbreaking 27B model, mathematically packed into 1.60 bpw via discrete ternary states ($ {-1, 0, +1}$) and calibrated across 496 importance matrix chunks."
+    },
+    {
+      "title": "Qwen/Qwen3.8-27B · Hugging Face",
+      "url": "https://huggingface.co/Qwen/Qwen3.8-27B",
+      "snippet": "MathVision: Qwen3.8-27B is evaluated using the fixed prompt: \"Please reason step by step, and put your final answer within &#92;boxed {}.\" For the remaining models, we report the higher score from two prompt variants—one with and one without the &#92;boxed {} formatting requirement."
+    },
+    {
+      "title": "Qwen3.8-27B - GitHub",
+      "url": "https://github.com/AlibabaCloud-Official/Qwen3.8-27B",
+      "snippet": "Welcome to the repository for Qwen3.8-27B —the latest native multimodal dense open-weight model released by Alibaba&#x27;s Qwen team. Delivering top-tier performance for local hardware, Qwen3.8-27B excels at coding, agentic workflows, and office automation tasks."
+    },
+    {
+      "title": "Qwen3.8-27B Benchmarks & Speed (August 2026) | BenchLM.ai",
+      "url": "https://benchlm.ai/models/qwen3-8-27b",
+      "snippet": "How does Qwen3.8-27B perform overall in AI benchmarks? + Qwen3.8-27B ranks #16 out of 228 models on the public BenchAlign leaderboard, with a score of 72.51/100."
+    },
+    {
+      "title": "Qwen 3.8 27B - GroqDocs",
+      "url": "https://console.groq.com/docs/model/qwen/qwen3.8-27b",
+      "snippet": "Model card for Qwen3.8-27B: a compact 27B multimodal (vision + text) model with thinking and instruct modes, frontier-level agentic coding, long-horizon tool use, and near-instant responses on Groq."
+    }
+  ]
+}

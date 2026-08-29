@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "VihaanSharma/classification",
+  "slug": "vihaansharma-classification",
+  "author": "VihaanSharma",
+  "url": "https://huggingface.co/VihaanSharma/classification",
+  "created_at": "2026-08-29T09:29:27.000Z",
+  "updated_at": "2026-08-29T09:29:36.000Z",
+  "license": "bsd-3-clause",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "albef",
+    "pytorch",
+    "classification",
+    "license:bsd-3-clause",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 49600,
+  "parameters_human": "49600",
+  "storage_bytes": 198880,
+  "storage_human": "198880 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "VihaanSharma (Vihaan Sharma) - Hugging Face",
+      "url": "https://huggingface.co/VihaanSharma",
+      "snippet": "User profile of Vihaan Sharma on Hugging Face"
+    },
+    {
+      "title": "Divyanshu-sharma-coder/ImageClassification-Model-Using-Deep ... - GitHub",
+      "url": "https://github.com/Divyanshu-sharma-coder/ImageClassification-Model-Using-Deep-learning-and-Tensorflow-",
+      "snippet": "👗 Fashion Image Classifier: AI Meets Style! 👠 A Deep Learning project that classifies fashion items using TensorFlow and CNNs! From sneakers to dresses, this model turns images into fashion insights."
+    },
+    {
+      "title": "GitHub - vihaan-kaushik/ML-Classification-models",
+      "url": "https://github.com/vihaan-kaushik/ML-Classification-models",
+      "snippet": "This repository contains three machine learning projects: Heart Disease Prediction using Random Forest Classifier Diabetes Prediction using Random Forest Classifier Iris Flower Classification using K-Nearest Neighbors (KNN) Each model is trained using publicly available datasets and implements standard machine learning workflows including data preprocessing, model training, evaluation, and ..."
+    },
+    {
+      "title": "LLM Leaderboard 2026: Compare 300+ Top AI Models by Intelligence, Speed ...",
+      "url": "https://llm-stats.com/leaderboards/llm-leaderboard",
+      "snippet": "The LLM Leaderboard — independent ranking of GPT, Claude, Gemini, Llama, DeepSeek and 300+ AI models by intelligence, speed and price. Filter by provider, license, modality and context window; sort by every benchmark. Composite LLM Stats Score updated continuously from public benchmarks and live API metrics."
+    },
+    {
+      "title": "LLM Leaderboard - Comparison of AI models from OpenAI, Anthropic ...",
+      "url": "https://artificialanalysis.ai/leaderboards/models",
+      "snippet": "Comparison and ranking the performance of over 250 AI models (LLMs) across key metrics including intelligence, price, performance and speed (output speed - tokens per second & latency - TTFT), context window & others."
+    }
+  ]
+}

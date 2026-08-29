@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "devika-tiwari/gpt2_small_expandedbabyLM_1M_43",
+  "slug": "devika-tiwari-gpt2_small_expandedbabylm_1m_43",
+  "author": "devika-tiwari",
+  "url": "https://huggingface.co/devika-tiwari/gpt2_small_expandedbabyLM_1M_43",
+  "created_at": "2026-08-29T02:20:56.000Z",
+  "updated_at": "2026-08-29T03:01:03.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "pytorch",
+    "gpt2",
+    "generated_from_trainer",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 9956167245,
+  "storage_human": "10.0 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "devika-tiwari/gpt2_small_expandedbabyLM_100k_42 · Hugging Face",
+      "url": "https://huggingface.co/devika-tiwari/gpt2_small_expandedbabyLM_100k_42",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "devika-tiwari/gpt2_small_expandedbabyLM_200M_43 · Hugging Face",
+      "url": "https://huggingface.co/devika-tiwari/gpt2_small_expandedbabyLM_200M_43",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Damacol/devika-tiwari-gpt2_small_expandedbabylm_100m_adj ... - GitHub",
+      "url": "https://github.com/Damacol/devika-tiwari-gpt2_small_expandedbabylm_100m_adj_paraphrase_75percent_42",
+      "snippet": "devika-tiwari/gpt2_small_expandedbabyLM_100M_adj_paraphrase_75percent_42 - Private, Uncensored AI for Real Creators and Devs {MODEL} setup for researchers, devs, and writers."
+    },
+    {
+      "title": "Devika Tiwari Gpt2 Small Expandedbabylm 100m Exp3 Cnp Ratio 0p50 Mix ...",
+      "url": "https://sweettea.co/fr/resources/devika-tiwari-gpt2-small-expandedbabylm-100m-exp3-cnp-ratio-0p50-mix-0p10-44-huggingface-model-devika-tiwari-gpt2-small-",
+      "snippet": "Explorez Devika Tiwari Gpt2 Small Expandedbabylm 100m Exp3 Cnp Ratio 0p50 Mix 0p10 44 Huggingface Model Devika Tiwari Gpt2 Small dans le répertoire Sweet Tea Resources, y compris la confiance, la disponibilité et les exigences du compagnon."
+    },
+    {
+      "title": "GitHub - sandeep-swain/gpt2-small",
+      "url": "https://github.com/sandeep-swain/gpt2-small",
+      "snippet": "Task 1 This repository contains the gpt_small(150M_parameters) model, a smaller variant of the Generative Pretrained Transformer (GPT) models, with 150 million parameters. The gpt_small(150M_parameters).py model is based on the transformer architecture, which uses a mechanism called self-attention ..."
+    }
+  ]
+}

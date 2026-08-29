@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "AngelSlim/Hy4-preview-GGUF",
+  "slug": "angelslim-hy4-preview-gguf",
+  "author": "AngelSlim",
+  "url": "https://huggingface.co/AngelSlim/Hy4-preview-GGUF",
+  "created_at": "2026-08-28T14:40:23.000Z",
+  "updated_at": "2026-08-29T04:29:00.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "endpoints_compatible",
+    "region:us",
+    "imatrix",
+    "conversational"
+  ],
+  "likes": 15,
+  "downloads_30d": 43,
+  "trending_score": 15,
+  "parameters": 769907408797,
+  "parameters_human": "769.91B",
+  "storage_bytes": 696705237888,
+  "storage_human": "696.7 GB",
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "AngelSlim/Hy4-preview-GGUF · Hugging Face",
+      "url": "https://huggingface.co/AngelSlim/Hy4-preview-GGUF",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GitHub - Tencent-Hunyuan/Hy4-preview",
+      "url": "https://github.com/Tencent-Hunyuan/Hy4-preview",
+      "snippet": "We provide AngelSlim, a more accessible, comprehensive, and efficient toolkit for large model compression. AngelSlim supports a comprehensive suite of compression tools for large-scale multimodal models, including common quantization algorithms, low-bit quantization, and speculative sampling."
+    },
+    {
+      "title": "GitHub - Tencent/AngelSlim: Model compression toolkit engineered for ...",
+      "url": "https://github.com/tencent/AngelSlim",
+      "snippet": "Model compression toolkit engineered for enhanced usability, comprehensiveness, and efficiency. - Tencent/AngelSlim"
+    },
+    {
+      "title": "AngelSlim (AngelSlim) - Hugging Face",
+      "url": "https://huggingface.co/AngelSlim",
+      "snippet": "Model Compression AI & ML interests Model Compression Recent Activity woodchen7 updated a model 5 days ago"
+    },
+    {
+      "title": "Tencent Releases and Open-Sources Tencent Hy4 preview",
+      "url": "https://www.tencent.com/tencent-releases-and-open-sources-tencent-hy4-preview/",
+      "snippet": "Tencent has released and open-sourced Tencent Hy4 preview, a next-generation large language model with 770B total parameters and 49B active parameters, and a context window exceeding 1M tokens."
+    }
+  ]
+}

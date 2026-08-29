@@ -1,0 +1,88 @@
+{
+  "schema": 1,
+  "id": "junafinity/Qwen-3.8-Flash-Next-Uncensored-MLX-MXFP4",
+  "slug": "junafinity-qwen-3-8-flash-next-uncensored-mlx-mxfp4",
+  "author": "junafinity",
+  "url": "https://huggingface.co/junafinity/Qwen-3.8-Flash-Next-Uncensored-MLX-MXFP4",
+  "created_at": "2026-08-29T04:01:08.000Z",
+  "updated_at": "2026-08-29T07:22:27.000Z",
+  "license": "qwen-community-license",
+  "license_family": "unknown",
+  "pipeline_tag": "image-text-to-text",
+  "library": "mlx",
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "qwen4_exp",
+    "mxfp4",
+    "4-bit",
+    "apple-silicon",
+    "abliterated",
+    "uncensored",
+    "qwen",
+    "qwen4",
+    "qwen3.8",
+    "flash-next",
+    "moe",
+    "vision-language",
+    "function-calling",
+    "reasoning",
+    "mtp",
+    "image-text-to-text",
+    "conversational",
+    "en",
+    "zh",
+    "base_model:Qwen/Qwen3.8-Flash-Next",
+    "base_model:quantized:Qwen/Qwen3.8-Flash-Next",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 2,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 34042847379,
+  "parameters_human": "34.04B",
+  "storage_bytes": 100543025348,
+  "storage_human": "100.5 GB",
+  "base_model": "orcarouter/Qwen3.8-Flash-Next-Uncensored, Qwen/Qwen3.8-Flash-Next",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - QwenLM/Qwen3.8-Flash-Next: Qwen3.8-Flash-Next is the ...",
+      "url": "https://github.com/QwenLM/Qwen3.8-Flash-Next/",
+      "snippet": "Qwen3.8-Flash-Next upgrades the model systematically along four aspects — attention, residual, embedding and optimization — improving model capability while further optimizing computational efficiency, model capacity and training stability: Attention A GDN + QSA hybrid architecture."
+    },
+    {
+      "title": "Qwen3.8-Flash-Next: How to Run Locally - unsloth.ai",
+      "url": "https://unsloth.ai/docs/models/qwen3.8-next",
+      "snippet": "Qwen3.8-Flash-Next is a new open-weight, 125B parameter MoE multimodal model from Qwen. Built on the new Qwen4 architecture, it supports a 262K context window and advanced reasoning. The model outperforms Claude-4.6-Opus (Max) and can run locally on devices with 75GB RAM /unified memory with no GPU VRAM required."
+    },
+    {
+      "title": "junafinity/Qwen-3.8-27B-Uncensored-8-Bit-MLX · Hugging Face",
+      "url": "https://huggingface.co/junafinity/Qwen-3.8-27B-Uncensored-8-Bit-MLX",
+      "snippet": "The parent model is an abliterated build of Qwen/Qwen3.8-27B — the refusal direction has been orthogonalized out of the language model&#x27;s residual-writing weights. Looking for the full-precision weights? Use junafinity/Qwen-3.8-27B-Uncensored (bf16, 52 GB, transformers)."
+    },
+    {
+      "title": "junafinity/Qwen-3.8-27B-Uncensored · Hugging Face",
+      "url": "https://huggingface.co/junafinity/Qwen-3.8-27B-Uncensored",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Qwen",
+      "url": "https://qwen.ai/blog?id=qwen3.8-flash-next",
+      "snippet": "HUGGING FACE MODELSCOPE TECH REPORT FLASHQLA DISCORD Introduction In this release we are opening the weights of Qwen3.8-Flash-Next, a multimodal MoE model that also serves as an early preview of the architecture used in Qwen4. It plays the same role that Qwen3-Next played for Qwen3.5: the hybrid Gated DeltaNet + Gated Attention design introduced at that time has since been used across the ..."
+    }
+  ]
+}

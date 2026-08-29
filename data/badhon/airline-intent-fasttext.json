@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "Badhon/airline-intent-fasttext",
+  "slug": "badhon-airline-intent-fasttext",
+  "author": "Badhon",
+  "url": "https://huggingface.co/Badhon/airline-intent-fasttext",
+  "created_at": "2026-08-29T05:43:44.000Z",
+  "updated_at": "2026-08-29T05:50:42.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": "fasttext",
+  "languages": [
+    "bn",
+    "en"
+  ],
+  "tags": [
+    "fasttext",
+    "text-classification",
+    "intent-classification",
+    "code-mixed",
+    "banglish",
+    "airline",
+    "bn",
+    "en",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 87563725,
+  "storage_human": "88 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Badhon/airline-intent-fasttext · Hugging Face",
+      "url": "https://huggingface.co/Badhon/airline-intent-fasttext",
+      "snippet": "A 19-class intent classifier for airline customer-support messages written in code-mixed Bengali / Banglish (romanised Bengali) / English. This is the recommended model for this domain. It outperforms the DistilBERT student trained on the same data by +17 points on the held-out human-written test set, while being 20x smaller and ~230x faster."
+    },
+    {
+      "title": "Models compatible with the fastText library - Hugging Face",
+      "url": "https://huggingface.co/models?library=fasttext",
+      "snippet": "Explore machine learning models."
+    },
+    {
+      "title": "fastText",
+      "url": "https://fasttext.cc/",
+      "snippet": "FastText is an open-source, free, lightweight library that allows users to learn text representations and text classifiers. It works on standard, generic hardware."
+    },
+    {
+      "title": "blog/fasttext.md at main · huggingface/blog · GitHub",
+      "url": "https://github.com/huggingface/blog/blob/main/fasttext.md",
+      "snippet": "fastText is a library for efficient learning of text representation and classification. Open-sourced by Meta AI in 2016, fastText integrates key ideas that have been influential in natural language processing and machine learning over the past few decades: representing sentences using bag of words and bag of n-grams, using subword information, and utilizing a hidden representation to share ..."
+    },
+    {
+      "title": "Language identification · fastText",
+      "url": "https://fasttext.cc/docs/en/language-identification.html",
+      "snippet": "lid.176.ftz, which is the compressed version of the model, with a file size of 917kB. These models were trained on UTF-8 data, and therefore expect UTF-8 as input."
+    }
+  ]
+}

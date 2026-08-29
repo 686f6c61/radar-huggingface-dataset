@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "greenfield0810/affine-ark-e864839c8df1",
+  "slug": "greenfield0810-affine-ark-e864839c8df1",
+  "author": "greenfield0810",
+  "url": "https://huggingface.co/greenfield0810/affine-ark-e864839c8df1",
+  "created_at": "2026-08-29T02:07:31.000Z",
+  "updated_at": "2026-08-29T02:07:34.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_5_moe",
+    "image-text-to-text",
+    "affine",
+    "bittensor",
+    "subnet-120",
+    "mirror",
+    "archival",
+    "conversational",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 35951822704,
+  "parameters_human": "35.95B",
+  "storage_bytes": 71916583934,
+  "storage_human": "71.9 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "greenfield0810/affine-ark-e864839c8df1 · Hugging Face",
+      "url": "https://huggingface.co/greenfield0810/affine-ark-e864839c8df1",
+      "snippet": "Affine archive — artifact e864839c8df1 An unmodified copy of a competitor checkpoint from the Bittensor subnet 120 (Affine) leaderboard, preserved because repos on that board are routinely flipped private within days of duelling (31% of all challengers that have ever duelled were already unreachable when this archive was built)."
+    },
+    {
+      "title": "greenfield0810/affine-ark-b4d0e92fef1e · Hugging Face",
+      "url": "https://huggingface.co/greenfield0810/affine-ark-b4d0e92fef1e",
+      "snippet": "greenfield0810 / affine-ark-b4d0e92fef1e like 0 Image-Text-to-Text Transformers Safetensors qwen3_5_moe affine bittensor subnet-120 mirror archival conversational Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "‎Google Gemini",
+      "url": "https://gemini.google.com/",
+      "snippet": "Get assistance with writing, planning, learning, and more from Google AI."
+    },
+    {
+      "title": "LLM Leaderboard & AI Model Benchmarks — August 2026",
+      "url": "https://benchlm.ai/",
+      "snippet": "LLM Leaderboard & AI Model Benchmarks — August 2026 Compare frontier AI models by quality, cost, and context. 105 Supported and 123 Estimated models among 406 tracked LLMs — 406 benchmarks, real pricing, and runtime data in one place."
+    },
+    {
+      "title": "affine-ark-bc254d78ac91 API & Inference Endpoint | FriendliAI",
+      "url": "https://friendli.ai/models/greenfield0810/affine-ark-bc254d78ac91",
+      "snippet": "Deploy affine-ark-bc254d78ac91 with low-latency inference on FriendliAI. Get scalable API serving, high throughput, and production-grade reliability for AI agents."
+    }
+  ]
+}

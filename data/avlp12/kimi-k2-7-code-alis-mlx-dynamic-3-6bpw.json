@@ -37,8 +37,8 @@
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
-  "storage_bytes": 464925340148,
-  "storage_human": "464.9 GB",
+  "storage_bytes": 3661173,
+  "storage_human": "4 MB",
   "base_model": "moonshotai/Kimi-K2.7-Code",
   "formats": [
     "mlx",

@@ -1,0 +1,83 @@
+{
+  "schema": 1,
+  "id": "Jip7e/habibi-tts-doda-darija",
+  "slug": "jip7e-habibi-tts-doda-darija",
+  "author": "Jip7e",
+  "url": "https://huggingface.co/Jip7e/habibi-tts-doda-darija",
+  "created_at": "2026-08-29T09:29:18.000Z",
+  "updated_at": "2026-08-29T09:48:55.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-speech",
+  "library": "f5-tts",
+  "languages": [
+    "ary",
+    "ar"
+  ],
+  "tags": [
+    "f5-tts",
+    "audio",
+    "tts",
+    "text-to-speech",
+    "habibi-tts",
+    "moroccan-darija",
+    "darija",
+    "voice-cloning",
+    "zero-shot",
+    "flow-matching",
+    "diffusion-transformer",
+    "dit",
+    "pytorch",
+    "vocos",
+    "speech-synthesis",
+    "ary",
+    "ar",
+    "dataset:Jip7e/doda-darija-cosyvoice2",
+    "dataset:atlasia/DODa-audio-dataset",
+    "base_model:SWivid/Habibi-TTS",
+    "base_model:finetune:SWivid/Habibi-TTS",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 6069915180,
+  "storage_human": "6.1 GB",
+  "base_model": "SWivid/Habibi-TTS",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Jip7e/doda-darija-cosyvoice2 · Datasets at Hugging Face",
+      "url": "https://huggingface.co/datasets/Jip7e/doda-darija-cosyvoice2",
+      "snippet": "Supported Tasks and Leaderboards text-to-speech: Fine-tuning the Autoregressive Language Model (llm.pt) of CosyVoice2 to predict discrete speech tokens from Moroccan Darija text (in both Arabic script and Latin transliteration)."
+    },
+    {
+      "title": "GitHub - SWivid/Habibi-TTS: Official code for \"Habibi: Laying the Open ...",
+      "url": "https://github.com/SWivid/Habibi-TTS",
+      "snippet": "Official code for \"Habibi: Laying the Open-Source Foundation of Unified-Dialectal Arabic Speech Synthesis\" - SWivid/Habibi-TTS"
+    },
+    {
+      "title": "Habibi-TTS-darijat/src/habibi_tts/model at main · gitabssi ... - GitHub",
+      "url": "https://github.com/gitabssi/Habibi-TTS-darijat/tree/main/src/habibi_tts/model",
+      "snippet": "Official code for \"Habibi: Laying the Open-Source Foundation of Unified-Dialectal Arabic Speech Synthesis\" - gitabssi/Habibi-TTS-darijat"
+    },
+    {
+      "title": "Habibi TTS - a Hugging Face Space by chenxie95",
+      "url": "https://huggingface.co/spaces/chenxie95/Habibi-TTS",
+      "snippet": "Habibi: Laying the Open-Source Foundation of Unified-Dialectal Arabic Speech Synthesis This is an online demo for Habibi-TTS. Several notes: Use more qualified reference audio instead of default, ensure less than 12 seconds (use to clip) Provide an exactly matched reference text, which ends with proper punctuation, e.g. a period"
+    },
+    {
+      "title": "Habibi: Laying the Open-Source Foundation of Unified-Dialectal Arabic ...",
+      "url": "https://alextyj.github.io/publication/2026-01-20-habibi-tts",
+      "snippet": "Habibi is a unified-dialectal Arabic TTS framework covering 12+ regional dialects. Our unified model matches or surpasses per-dialect specialized models and is highly competitive with ElevenLabs Eleven v3 (alpha)."
+    }
+  ]
+}

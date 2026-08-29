@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "zeromodels/regnet-y-002",
+  "slug": "zeromodels-regnet-y-002",
+  "author": "zeromodels",
+  "url": "https://huggingface.co/zeromodels/regnet-y-002",
+  "created_at": "2026-08-29T05:45:20.000Z",
+  "updated_at": "2026-08-29T05:45:25.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-classification",
+  "library": "zeromodels",
+  "languages": [],
+  "tags": [
+    "zeromodels",
+    "keras",
+    "image-classification",
+    "regnet",
+    "backbone",
+    "arxiv:2003.13678",
+    "pytorch",
+    "jax",
+    "tf",
+    "base_model:facebook/regnet-y-002",
+    "base_model:finetune:facebook/regnet-y-002",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 13302312,
+  "storage_human": "13 MB",
+  "base_model": "facebook/regnet-y-002",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "zeromodels/regnet-y-002 · Hugging Face",
+      "url": "https://huggingface.co/zeromodels/regnet-y-002",
+      "snippet": "zeromodels/regnet-y-002 Paper: Designing Network Design Spaces (arXiv:2003.13678) · HF Papers RegNet is a family of ConvNets whose per-stage widths and depths follow a simple quantized-linear rule. This is the Y (with Squeeze-and-Excitation) variant: a 3x3 stride-2 stem then four stages of 1x1 -> 3x3 grouped -> [SE] -> 1x1 residual blocks."
+    },
+    {
+      "title": "timm/regnety_002.pycls_in1k · Hugging Face",
+      "url": "https://huggingface.co/timm/regnety_002.pycls_in1k",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "RegNet — Torchvision main documentation",
+      "url": "https://docs.pytorch.org/vision/main/models/regnet.html",
+      "snippet": "RegNet ¶ The RegNet model is based on the Designing Network Design Spaces paper. Model builders ¶ The following model builders can be used to instantiate a RegNet model, with or without pre-trained weights. All the model builders internally rely on the torchvision.models.regnet.RegNet base class. Please refer to the source code for more details about this class."
+    },
+    {
+      "title": "pytorch-image-models/timm/models/regnet.py at main - GitHub",
+      "url": "https://github.com/huggingface/pytorch-image-models/blob/main/timm/models/regnet.py",
+      "snippet": "The largest collection of PyTorch image encoders / backbones. Including train, eval, inference, export scripts, and pretrained weights -- ResNet, ResNeXT, EfficientNet, NFNet, Vision Transformer (V..."
+    },
+    {
+      "title": "timm/timm/models/regnet.py at master · pprp/timm · GitHub",
+      "url": "https://github.com/pprp/timm/blob/master/timm/models/regnet.py",
+      "snippet": "PyTorch image models, scripts, pretrained weights -- ResNet, ResNeXT, EfficientNet, EfficientNetV2, NFNet, Vision Transformer, MixNet, MobileNet-V3/V2, RegNet, DPN ..."
+    }
+  ]
+}

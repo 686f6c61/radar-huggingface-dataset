@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "Prompt-Pirate/comfytts-models",
+  "slug": "prompt-pirate-comfytts-models",
+  "author": "Prompt-Pirate",
+  "url": "https://huggingface.co/Prompt-Pirate/comfytts-models",
+  "created_at": "2026-08-29T06:41:25.000Z",
+  "updated_at": "2026-08-29T07:16:51.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "onnx",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 354650183,
+  "storage_human": "355 MB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Prompt-Pirate (Prompt Pirate) - Hugging Face",
+      "url": "https://huggingface.co/Prompt-Pirate",
+      "snippet": "AI Waifus TTS and STS Tay"
+    },
+    {
+      "title": "Prompt-Pirate (Prompt Pirate) - Hugging Face",
+      "url": "https://huggingface.co/Prompt-Pirate/datasets",
+      "snippet": "AI Waifus TTS and STS Tay. Recent Activity. liked a model 12 days ago. pyannote/speaker-diarization-community-1. liked a Space over 1 year ago"
+    },
+    {
+      "title": "ComfyTTS Studio - YouTube",
+      "url": "https://www.youtube.com/@thepromptpirate",
+      "snippet": "While Western VAs melt down over whether AI will replace them, ComfyTTS users will be too busy replacing them to hear anything. No agents, no auditions, no union ultimatums. The voice you need ..."
+    },
+    {
+      "title": "New Prompt Injection Attack via Malicious MCP Servers Let Attackers ...",
+      "url": "https://cybersecuritynews.com/prompt-injection-malicious-mcp-servers/",
+      "snippet": "In demonstrations, hidden prompts forced AI assistants to \"speak like a pirate\" in all subsequent responses. Demonstrating how malicious servers fundamentally alter system behavior and potentially compromise functionality. Covert Tool Invocation: Malicious servers leverage prompt injection to trigger unauthorized tool executions."
+    },
+    {
+      "title": "Prompt Pirate | AI Audio Focusing On Speech | Patreon",
+      "url": "https://www.patreon.com/promptpirate",
+      "snippet": "Get more from Prompt Pirate on Patreon. Join for free or become a member for just $3/month. Ahoy there!My name is Mark, and I am a fulltime AI voice over…"
+    }
+  ]
+}

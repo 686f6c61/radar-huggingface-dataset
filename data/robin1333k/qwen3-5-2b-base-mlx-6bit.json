@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "Robin1333k/Qwen3.5-2B-Base-MLX-6bit",
+  "slug": "robin1333k-qwen3-5-2b-base-mlx-6bit",
+  "author": "Robin1333k",
+  "url": "https://huggingface.co/Robin1333k/Qwen3.5-2B-Base-MLX-6bit",
+  "created_at": "2026-08-29T08:03:54.000Z",
+  "updated_at": "2026-08-29T08:04:02.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "mlx",
+  "languages": [
+    "en",
+    "de"
+  ],
+  "tags": [
+    "mlx",
+    "apple-silicon",
+    "quantized",
+    "6-bit",
+    "text-completion",
+    "text-generation",
+    "en",
+    "de",
+    "base_model:Qwen/Qwen3.5-2B-Base",
+    "base_model:finetune:Qwen/Qwen3.5-2B-Base",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": "Qwen/Qwen3.5-2B-Base",
+  "formats": [
+    "mlx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "mlx-community/Qwen3.5-2B-6bit · Hugging Face",
+      "url": "https://huggingface.co/mlx-community/Qwen3.5-2B-6bit",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GitHub - ABDtmx/Qwen3.5: Qwen3.5 is the large language model series ...",
+      "url": "https://github.com/ABDtmx/Qwen3.5",
+      "snippet": "Qwen3.5 features the following enhancement: Unified Vision-Language Foundation: Early fusion training on trillions of multimodal tokens achieves cross-generational parity with Qwen3 and outperforms Qwen3-VL models across reasoning, coding, agents, and visual understanding benchmarks."
+    },
+    {
+      "title": "qwen3.5:2b - ollama.com",
+      "url": "https://ollama.com/library/qwen3.5:2b",
+      "snippet": "Qwen3.5 features the following enhancement: Unified Vision-Language Foundation: Early fusion training on multimodal tokens achieves cross-generational parity with Qwen3 and outperforms Qwen3-VL models across reasoning, coding, agents, and visual understanding benchmarks."
+    },
+    {
+      "title": "GitHub - QwenLM/Qwen3: Qwen3 is the large language model series ...",
+      "url": "https://github.com/QwenLM/Qwen3",
+      "snippet": "Qwen3-Instruct-2507 is the updated version of the previous Qwen3 non-thinking mode, featuring the following key enhancements: Significant improvements in general capabilities, including instruction following, logical reasoning, text comprehension, mathematics, science, coding and tool usage."
+    },
+    {
+      "title": "Qwen3.5-2B-Base: Text-to-Text model — overview, use cases, alternatives",
+      "url": "https://www.aimodels.fyi/models/huggingFace/qwen3.5-2b-base-qwen",
+      "snippet": "Qwen3.5-2B-Base is a pre-trained foundation model built by Qwen with 2 billion parameters designed for fine-tuning, in-context learning experiments, and research applications rather than direct deployment."
+    }
+  ]
+}

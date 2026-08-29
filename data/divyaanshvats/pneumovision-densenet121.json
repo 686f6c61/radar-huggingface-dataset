@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "Divyaanshvats/pneumovision-densenet121",
+  "slug": "divyaanshvats-pneumovision-densenet121",
+  "author": "Divyaanshvats",
+  "url": "https://huggingface.co/Divyaanshvats/pneumovision-densenet121",
+  "created_at": "2026-08-29T06:52:42.000Z",
+  "updated_at": "2026-08-29T06:54:41.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 28438887,
+  "storage_human": "28 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - Divyaanshvats/PneumoVision: Chest X-Ray Pneumonia ...",
+      "url": "https://github.com/Divyaanshvats/PneumoVision",
+      "snippet": "PneumoVision is a PyTorch-based deep learning project that classifies chest X-rays into NORMAL and PNEUMONIA using transfer learning with DenseNet121."
+    },
+    {
+      "title": "GitHub - diparamteke01-ui/PneumoVision: AI-based chest X-ray pneumonia ...",
+      "url": "https://github.com/diparamteke01-ui/PneumoVision",
+      "snippet": "PneumoVision is an AI-based healthcare project that detects pneumonia from chest X-ray images using deep learning. The model is built using Convolutional Neural Networks (CNN) with DenseNet121 architecture to assist in early and accurate diagnosis."
+    },
+    {
+      "title": "PneumoVision AI - a Hugging Face Space by inpersonin",
+      "url": "https://huggingface.co/spaces/inpersonin/PneumoVision",
+      "snippet": "PneumoVision AI — A modern deep learning system for automated chest X-ray classification. Built for academic research using CNN and Transfer Learning with ResNet18."
+    },
+    {
+      "title": "PneumoVision AI — Pneumonia Detection System",
+      "url": "https://inpersonin.github.io/PneumoVision/",
+      "snippet": "PneumoVision AI — A modern deep learning system for automated chest X-ray classification. Built for academic research using CNN and Transfer Learning with ResNet18."
+    },
+    {
+      "title": "densenet121 — Torchvision main documentation",
+      "url": "https://docs.pytorch.org/vision/main/models/generated/torchvision.models.densenet121.html",
+      "snippet": "densenet121 ¶ torchvision.models.densenet121(*, weights: Optional[DenseNet121_Weights] = None, progress: bool = True, **kwargs: Any) → DenseNet[source] ¶ Densenet-121 model from Densely Connected Convolutional Networks. Parameters: weights (DenseNet121_Weights, optional) - The pretrained weights to use."
+    }
+  ]
+}

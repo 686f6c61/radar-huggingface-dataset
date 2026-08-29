@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "AICU/SDXL-LoRA",
+  "slug": "aicu-sdxl-lora",
+  "author": "AICU",
+  "url": "https://huggingface.co/AICU/SDXL-LoRA",
+  "created_at": "2024-01-08T09:22:09.000Z",
+  "updated_at": "2026-08-29T10:05:11.000Z",
+  "license": "mixed-see-readme",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "ja",
+    "en"
+  ],
+  "tags": [
+    "AICU",
+    "lora",
+    "sdxl",
+    "illustrious",
+    "animagine",
+    "anime",
+    "character",
+    "dataset",
+    "ja",
+    "en",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 2,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 7768882165,
+  "storage_human": "7.8 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "SDXL LoRA Guide — Styles, Characters & Quality LoRAs for Local AI Art",
+      "url": "https://willitrunai.com/blog/sdxl-lora-guide-styles-characters",
+      "snippet": "SDXL LoRA Guide — Styles, Characters & Quality LoRAs for Local AI Art Complete guide to SDXL LoRAs for local AI image generation. How LoRAs work, where to find them, top recommended LoRAs by category, ComfyUI and A1111 usage, stacking tips, and VRAM impact. LoRAs are the fastest way to customize AI image generation without training a full model."
+    },
+    {
+      "title": "SDXL AI Models & Generator | Civitai",
+      "url": "https://civitai.com/ecosystems/sdxl",
+      "snippet": "SDXL (Stable Diffusion XL) is Stability AI&#x27;s open-weight text-to-image model and the backbone of the largest fine-tune and LoRA ecosystem in open image generation. It renders high-resolution 1024px images with strong composition and broad style range — and it powers popular offshoots like Pony and Illustrious. Generate with SDXL right here on Civitai, no GPU or install required."
+    },
+    {
+      "title": "AICU/SDXL-LoRA at main - Hugging Face",
+      "url": "https://huggingface.co/AICU/SDXL-LoRA/tree/main",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "README.md · AICU/SDXL-LoRA at main - Hugging Face",
+      "url": "https://huggingface.co/AICU/SDXL-LoRA/blob/main/README.md?code=true",
+      "snippet": "AICU / SDXL-LoRA like 2 AICU License: mit Model card FilesFiles and versions Community main SDXL-LoRA /README.md AICUaki Update README.md 07662af verified11 days ago preview code | raw history blame contribute delete No virus 602 Bytes"
+    },
+    {
+      "title": "SDXL LoRA — AI Model | MindStudio",
+      "url": "https://www.mindstudio.ai/models/sdxl-lora",
+      "snippet": "SDXL LoRA is an image generation model built on Stability AI&#x27;s Stable Diffusion XL architecture, released in July 2023. It extends the base SDXL model by natively supporting Low-Rank Adaptation (LoRA) weights, which are lightweight fine-tuning modules that modify the model&#x27;s output toward a specific style, subject, or aesthetic without retraining the full model. This makes it distinct from the ..."
+    }
+  ]
+}

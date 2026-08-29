@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "nekavabu/zeta-2.1-IQ4_XS-GGUF",
+  "slug": "nekavabu-zeta-2-1-iq4_xs-gguf",
+  "author": "nekavabu",
+  "url": "https://huggingface.co/nekavabu/zeta-2.1-IQ4_XS-GGUF",
+  "created_at": "2026-08-29T10:20:34.000Z",
+  "updated_at": "2026-08-29T10:20:59.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "text-generation-inference",
+    "edit-prediction",
+    "next-edit-suggestion",
+    "llama-cpp",
+    "gguf-my-repo",
+    "en",
+    "base_model:zed-industries/zeta-2.1",
+    "base_model:quantized:zed-industries/zeta-2.1",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "imatrix"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 8250462208,
+  "parameters_human": "8.25B",
+  "storage_bytes": 4599912864,
+  "storage_human": "4.6 GB",
+  "base_model": "zed-industries/zeta-2.1",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "nekavabu/zeta-2.1-Q4_K_M-GGUF · Hugging Face",
+      "url": "https://huggingface.co/nekavabu/zeta-2.1-Q4_K_M-GGUF",
+      "snippet": "This model was converted to GGUF format from zed-industries/zeta-2.1 using llama.cpp via the ggml.ai&#x27;s GGUF-my-repo space. Refer to the original model card for more details on the model."
+    },
+    {
+      "title": "liodon-ai/zeta-2.1-imatrix-GGUF · Hugging Face",
+      "url": "https://huggingface.co/liodon-ai/zeta-2.1-imatrix-GGUF",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Zeta - GGUF Model - local-ai-zone.github.io",
+      "url": "https://local-ai-zone.github.io/models/zeta.html",
+      "snippet": "Download Zeta GGUF model. 4.13 GB, 680 downloads, 9 likes."
+    },
+    {
+      "title": "GGUF Model Discovery - Browse & Download AI Models",
+      "url": "https://local-ai-zone.github.io/",
+      "snippet": "Discover and download GGUF format AI models. Browse and direct download thousands of quantized AI models with detailed information, download counts, and direct links."
+    },
+    {
+      "title": "GGUF quantizations overview · GitHub",
+      "url": "https://gist.github.com/Artefact2/b5f810600771265fc1e39442288e8ec9",
+      "snippet": "You can also reuse this model in further variations with custom template, system prompt and parameters without much addition disk overhead. Create additional model files that reference your imported model instead of the gguf file on disk."
+    }
+  ]
+}

@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "amirsoahil101/CollegePlace_Prediction_System",
+  "slug": "amirsoahil101-collegeplace_prediction_system",
+  "author": "amirsoahil101",
+  "url": "https://huggingface.co/amirsoahil101/CollegePlace_Prediction_System",
+  "created_at": "2026-08-29T08:53:37.000Z",
+  "updated_at": "2026-08-29T09:00:17.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 177567,
+  "storage_human": "177567 B",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "amirsoahil101 (Amir) - Hugging Face",
+      "url": "https://huggingface.co/amirsoahil101",
+      "snippet": "AI & ML interests Passionate about Machine Learning, Deep Learning, and Generative AI. Experienced in building predictive models, neural networks, and AI-driven solutions using frameworks like PyTorch, TensorFlow, and scikit-learn. Enthusiastic about integrating intelligent models into full-stack web applications."
+    },
+    {
+      "title": "Placement-Prediction-system/collegePlace.csv at main - GitHub",
+      "url": "https://github.com/Soumyaaa01/Placement-Prediction-system/blob/main/collegePlace.csv",
+      "snippet": "Contribute to Soumyaaa01/Placement-Prediction-system development by creating an account on GitHub."
+    },
+    {
+      "title": "Google Scholar",
+      "url": "https://scholar.google.com/",
+      "snippet": "Google Scholar provides a simple way to broadly search for scholarly literature. Search across a wide variety of disciplines and sources: articles, theses, books, abstracts and court opinions."
+    },
+    {
+      "title": "placement-prediction · GitHub Topics · GitHub",
+      "url": "https://github.com/topics/placement-prediction",
+      "snippet": "Placement prediction using machine learning is a technique that analyzes data from past student placements to forecast future job prospects. It uses factors like grades, skills, and experience to estimate the likelihood of a student getting hired. This helps students and institutions better prepare for the job market."
+    },
+    {
+      "title": "CollegeAI | College Predictor and Chances Calculator",
+      "url": "https://collegeai.com/",
+      "snippet": "Get a college recommendation and your chances using the best college predictor. Answer some questions and we&#x27;ll calculate where you fit in best with our college finder and college matching tools. CollegeAI is an admissions and college counselor, college planner, and college chance calculator."
+    }
+  ]
+}

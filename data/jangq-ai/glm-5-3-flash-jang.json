@@ -1,0 +1,83 @@
+{
+  "schema": 1,
+  "id": "JANGQ-AI/GLM-5.3-Flash-JANG",
+  "slug": "jangq-ai-glm-5-3-flash-jang",
+  "author": "JANGQ-AI",
+  "url": "https://huggingface.co/JANGQ-AI/GLM-5.3-Flash-JANG",
+  "created_at": "2026-08-29T11:30:10.000Z",
+  "updated_at": "2026-08-29T11:49:50.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "mlx",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "glm5_next",
+    "jang",
+    "quantized",
+    "apple-silicon",
+    "vision",
+    "video",
+    "reasoning",
+    "agent",
+    "tool-use",
+    "moe",
+    "imatrix",
+    "awq",
+    "image-text-to-text",
+    "conversational",
+    "en",
+    "base_model:zai-org/GLM-5.3-Flash",
+    "base_model:finetune:zai-org/GLM-5.3-Flash",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 28572970814,
+  "parameters_human": "28.57B",
+  "storage_bytes": 102404949787,
+  "storage_human": "102.4 GB",
+  "base_model": "zai-org/GLM-5.3-Flash",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": true,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - jjang-ai/jangq: JANG — GGUF for MLX. YOU MUST USE JANG_Q ...",
+      "url": "https://github.com/jjang-ai/jangq",
+      "snippet": "JANG — GGUF for MLX. YOU MUST USE JANG_Q RUNTIME. Adaptive Mixed-Precision Quantization + Runtime for Apple Silicon - jjang-ai/jangq"
+    },
+    {
+      "title": "GLM-5.3-Flash: How to Run Locally - unsloth.ai",
+      "url": "https://unsloth.ai/docs/models/glm-5.3-flash",
+      "snippet": "Search and download GLM-5.3-Flash Go to Unsloth Chat or Model hub and search for GLM-5.3-Flash in the search bar and download your desired model and quant."
+    },
+    {
+      "title": "GLM-5.3 | OpenLM.ai",
+      "url": "https://openlm.ai/glm-5.5/",
+      "snippet": "GLM-5.3 is our latest flagship model for coding and long-horizon tasks. It marks a substantial leap in long-horizon task capability over its predecessor GLM-5.1 and delivers that capability on a solid 1M-token context. It is pure open with an MIT open-source license — no regional limits, technical access without borders."
+    },
+    {
+      "title": "JANGQ — Smaller Models, Bigger MLX Wins",
+      "url": "https://jangq.ai/",
+      "snippet": "Curated JANGQ benchmarks showing only decisive wins where JANG is smaller than the MLX baseline: MiniMax +47.5 MMLU points, Qwen3.5-122B +33 points, and coherent smaller-bit runs on Mistral, Qwen2.5, SmolLM2, and TinyLlama."
+    },
+    {
+      "title": "How to Run GLM-5.3-Flash Locally: GGUF, Hardware and Benchmarks",
+      "url": "https://atomic.chat/blog/guides/how-to-run-glm-5-3-flash-locally",
+      "snippet": "GLM-5.3-Flash is the first natively multimodal model in Z.ai&#x27;s GLM-5 series, and the first one that&#x27;s realistic to run locally: it has 320B total parameters and 18B active per token. This guide covers what the model is, how it performs in the benchmarks, how much memory you&#x27;ll need to run it, and what your options are for running it today."
+    }
+  ]
+}

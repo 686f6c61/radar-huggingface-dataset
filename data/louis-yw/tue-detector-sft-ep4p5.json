@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "Louis-YW/TUE-Detector-SFT-ep4p5",
+  "slug": "louis-yw-tue-detector-sft-ep4p5",
+  "author": "Louis-YW",
+  "url": "https://huggingface.co/Louis-YW/TUE-Detector-SFT-ep4p5",
+  "created_at": "2026-08-28T05:12:05.000Z",
+  "updated_at": "2026-08-29T09:09:56.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen2_5_vl",
+    "image-text-to-text",
+    "qwen2.5-vl",
+    "video-forensics",
+    "video-authenticity",
+    "tue-detector",
+    "conversational",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 12,
+  "trending_score": 0,
+  "parameters": 8292166656,
+  "parameters_human": "8.29B",
+  "storage_bytes": 16595836440,
+  "storage_human": "16.6 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Louis-YW/TUE-Detector-SFT-ep4p5 · Hugging Face",
+      "url": "https://huggingface.co/Louis-YW/TUE-Detector-SFT-ep4p5",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Free AI Detector - Text, Image & Video | Free.ai",
+      "url": "https://free.ai/detector/",
+      "snippet": "Free AI detector. Check if text was written by AI, or scan an image or video for AI generation. Honest about accuracy - a heuristic, not proof."
+    },
+    {
+      "title": "AI Detector - Free AI Checker (ChatGPT, GPT-4 & Gemini) - Editpad",
+      "url": "https://www.ilovenote.net/tool/ai-content-detector",
+      "snippet": "AI Detector by Editpad helps you detect ChatGPT, GPT-4, Gemini, and other AI-generated content with 100% accuracy. Our AI checker is free to use."
+    },
+    {
+      "title": "AI Detector - Free AI Checker for ChatGPT, GPT-5 & Gemini",
+      "url": "https://gptzero.me/",
+      "snippet": "Best free AI detector - simply paste your text to instantly get an overall AI score and advanced sentence by sentence detection."
+    },
+    {
+      "title": "AI Detector - Trusted AI Checker for ChatGPT, Copilot & Gemini - Scribbr",
+      "url": "https://www.scribbr.com/ai-detector/",
+      "snippet": "Scribbr AI Detector: Identify AI-generated content from ChatGPT, Copilot, and Gemini with our advanced AI Checker. Try it for free!"
+    }
+  ]
+}

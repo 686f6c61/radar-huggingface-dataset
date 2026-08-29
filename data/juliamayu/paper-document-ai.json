@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "juliamayu/paper-document-ai",
+  "slug": "juliamayu-paper-document-ai",
+  "author": "juliamayu",
+  "url": "https://huggingface.co/juliamayu/paper-document-ai",
+  "created_at": "2026-08-29T09:20:20.000Z",
+  "updated_at": "2026-08-29T09:20:29.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "transformer",
+    "research-notes",
+    "document-ai",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 33088,
+  "parameters_human": "33088",
+  "storage_bytes": 132832,
+  "storage_human": "132832 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Papers AI — one research workspace for Word, LaTeX, data & code",
+      "url": "https://papers.ai/",
+      "snippet": "One research workspace for your writing, data, and code. Collaborative Word, LaTeX, and Markdown editing with AI that has your whole project in context. Built by Overleaf."
+    },
+    {
+      "title": "AI Detector - Trusted AI Checker for ChatGPT, Copilot & Gemini - Scribbr",
+      "url": "https://www.scribbr.com/ai-detector/",
+      "snippet": "Scribbr AI Detector: Identify AI-generated content from ChatGPT, Copilot, and Gemini with our advanced AI Checker. Try it for free!"
+    },
+    {
+      "title": "AIPapers.ai - AI Research Papers Daily",
+      "url": "https://aipapers.ai/",
+      "snippet": "Your AI Research Assistant - Daily AI research papers analyzed and categorized by advanced AI. Browse 13,000+ papers across 12 research categories."
+    },
+    {
+      "title": "AI Detector & Checker for Text, PDFs | Fast & accurate - SciSpace",
+      "url": "https://scispace.com/ai-detector",
+      "snippet": "SciSpace AI Detector instantly spots ChatGPT or GPT-4 text, rates originality, and explains risky lines - helping researchers keep assignments and papers authentic."
+    },
+    {
+      "title": "Document AI documentation - Google Cloud",
+      "url": "https://docs.cloud.google.com/document-ai/docs",
+      "snippet": "Document AI is a document understanding platform that takes unstructured data from documents and transforms it into structured data, making it easier to understand, analyze, and consume. Document AI uses machine learning and Google Cloud to help you create scalable, end-to-end, cloud-based document processing applications."
+    }
+  ]
+}

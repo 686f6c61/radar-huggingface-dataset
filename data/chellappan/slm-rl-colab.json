@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "Chellappan/slm-rl-colab",
+  "slug": "chellappan-slm-rl-colab",
+  "author": "Chellappan",
+  "url": "https://huggingface.co/Chellappan/slm-rl-colab",
+  "created_at": "2026-08-29T09:32:55.000Z",
+  "updated_at": "2026-08-29T09:32:57.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "lora",
+    "transformers",
+    "reinforcement-learning",
+    "atari",
+    "slm-rl",
+    "boxing",
+    "text-generation",
+    "base_model:LiquidAI/LFM2.5-1.2B-Instruct",
+    "base_model:adapter:LiquidAI/LFM2.5-1.2B-Instruct",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 22241248,
+  "storage_human": "22 MB",
+  "base_model": "LiquidAI/LFM2.5-1.2B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - CraftsMan-Labs/SLM-RL",
+      "url": "https://github.com/CraftsMan-Labs/SLM-RL",
+      "snippet": "SLM-RL A self-improving game gymnasium for small language models. Small language models learn to play games through reinforcement learning: the model plays games in text-native environments, every decision is collected into a reusable dataset, the model is automatically fine-tuned on its own experience, and the improved model re-enters play."
+    },
+    {
+      "title": "Google Colab",
+      "url": "https://colab.research.google.com/",
+      "snippet": "Learn how to bring the power of Colab straight to your terminal. Read the full announcement."
+    },
+    {
+      "title": "Unsloth - Run and Train Models Locally",
+      "url": "https://unsloth.ai/",
+      "snippet": "Use the latest models Run and train nearly every model locally, with Day Zero support for releases like Qwen3.8, NVIDIA, GLM, Gemma and more. Discover, manage and download the right quantization for your device from the built-in model hub."
+    },
+    {
+      "title": "SmallPlan: Leverage Small Language Models for Sequential Path Planning ...",
+      "url": "https://arxiv.org/html/2505.00831v6",
+      "snippet": "To further explore the capability of SLMs, we propose a multi-objective approach by additionally consider the SLMs&#x27; behaviors in simulation environment to reward the model with RL. SFT and RL for Fine-tuning1 Language Models. Numerous works have investigated how SFT and RL enhance the reasoning capability of language models."
+    },
+    {
+      "title": "#airesearch #machinelearning #reinforcementlearning #scientificai #llms ...",
+      "url": "https://www.linkedin.com/posts/thomaslennon-_airesearch-machinelearning-reinforcementlearning-activity-7498309911550799872-e0wV",
+      "snippet": "A research team just published a breakdown of Faraday-27B, an AI agent trained to autonomously replicate machine learning and AI research papers. This is worth paying attention to. The pipeline is ..."
+    }
+  ]
+}

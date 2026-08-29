@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "jlietz93/FUM",
+  "slug": "jlietz93-fum",
+  "author": "jlietz93",
+  "url": "https://huggingface.co/jlietz93/FUM",
+  "created_at": "2026-08-29T06:37:03.000Z",
+  "updated_at": "2026-08-29T06:37:03.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "doi:10.57967/hf/10154",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - justinlietz93/FullyUnifiedModel: Scale-Free Spiking Neural ...",
+      "url": "https://github.com/justinlietz93/FullyUnifiedModel",
+      "snippet": "The Fully Unified Model (FUM) is an advanced, brain-inspired artificial intelligence architecture designed for efficient learning, autonomous operation, and emergent intelligence. It integrates spiking neural networks, spike-timing dependent plasticity (STDP), structural plasticity, and a self-improvement engine (SIE) to learn complex patterns and behaviors from minimal data inputs. FUM ..."
+    },
+    {
+      "title": "video-models - a jlietz93 Collection - Hugging Face",
+      "url": "https://huggingface.co/collections/jlietz93/video-models",
+      "snippet": "Unlock the magic of AI with handpicked models, awesome datasets, papers, and mind-blowing Spaces from jlietz93"
+    },
+    {
+      "title": "research-models - a jlietz93 Collection - Hugging Face",
+      "url": "https://huggingface.co/collections/jlietz93/research-models",
+      "snippet": "Unlock the magic of AI with handpicked models, awesome datasets, papers, and mind-blowing Spaces from jlietz93"
+    },
+    {
+      "title": "justinlietz93/FUM_Void-Intelligence-Theory - GitHub",
+      "url": "https://github.com/justinlietz93/FUM_Void-Intelligence-Theory",
+      "snippet": "The Fully Unified Model. Contribute to justinlietz93/FUM_Void-Intelligence-Theory development by creating an account on GitHub."
+    },
+    {
+      "title": "fum AI Models | Civitai",
+      "url": "https://civitai.com/tag/fum",
+      "snippet": "Browse fum Stable Diffusion & Flux models, LoRAs, checkpoints, embeddings, and more for AI image generation."
+    }
+  ]
+}

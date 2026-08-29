@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "zeromodels/regnet-x-160",
+  "slug": "zeromodels-regnet-x-160",
+  "author": "zeromodels",
+  "url": "https://huggingface.co/zeromodels/regnet-x-160",
+  "created_at": "2026-08-29T05:44:06.000Z",
+  "updated_at": "2026-08-29T05:44:25.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-classification",
+  "library": "zeromodels",
+  "languages": [],
+  "tags": [
+    "zeromodels",
+    "keras",
+    "image-classification",
+    "regnet",
+    "backbone",
+    "arxiv:2003.13678",
+    "pytorch",
+    "jax",
+    "tf",
+    "base_model:facebook/regnet-x-160",
+    "base_model:finetune:facebook/regnet-x-160",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 218193288,
+  "storage_human": "218 MB",
+  "base_model": "facebook/regnet-x-160",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "zeromodels/regnet-x-160 · Hugging Face",
+      "url": "https://huggingface.co/zeromodels/regnet-x-160",
+      "snippet": "Use as an ImageNet classifier or a 4-stage backbone. For more details on the model, please go to the upstream model card. Pure- Keras 3 conversion of facebook/regnet-x-160 for zeromodels. One implementation runs unmodified on TensorFlow / Torch / JAX. This is an image-classification / backbone checkpoint (RegNetImageClassify / RegNetModel)."
+    },
+    {
+      "title": "facebook/regnet-x-160 · Hugging Face",
+      "url": "https://huggingface.co/facebook/regnet-x-160",
+      "snippet": "RegNet RegNet model trained on imagenet-1k. It was introduced in the paper Designing Network Design Spaces and first released in this repository. Disclaimer: The team releasing RegNet did not write a model card for this model so this model card has been written by the Hugging Face team. Model description The authors design search spaces to perform Neural Architecture Search (NAS). They first ..."
+    },
+    {
+      "title": "facebook/regnet-x-160 — AICHINA.news | AI China News",
+      "url": "https://aichina.news/models/facebook/regnet-x-160/",
+      "snippet": "RegNet-X 160 is a convolutional neural network architecture from Meta AI&#x27;s (Facebook) RegNet family, designed as an efficient and scalable backbone for image classification and feature extraction. It targets researchers and engineers who need a lightweight yet high-performing CNN for computer vision tasks such as classification, detection, and segmentation. The model is hosted on Modelers.cn ..."
+    },
+    {
+      "title": "RegNet · Models",
+      "url": "https://www.modelscope.cn/models/qualcomm/RegNet/summary",
+      "snippet": "RegNet: Optimized for Qualcomm Devices RegNet is a machine learning model that can classify images from the Imagenet dataset. It can also be used as a backbone in building more complex models for specific use cases. This is based on the implementation of RegNet found here. This repository contains pre-exported model files optimized for Qualcomm® devices. You can use the Qualcomm® AI Hub ..."
+    },
+    {
+      "title": "Meta&#x27;s RegNet-X 160 Hits Huawei&#x27;s Ascend Ecosystem: A Lightweight ...",
+      "url": "https://aichina.news/blog/metas-regnet-x-160-hits-huaweis-ascend-ecosystem-a-lightweight-vision-0sd030/",
+      "snippet": "If you&#x27;re working on computer vision pipelines and looking for a balance between speed and accuracy, the latest addition to the Modelers.cn library is worth your attention. It&#x27;s facebook/regnet-x-160, a heavyweight contender from Meta AI&#x27;s RegNet family. Unlike the massive transformers dominating the news lately, RegNet-X 160 offers a tried-and-true convolutional architecture. It&#x27;s ..."
+    }
+  ]
+}

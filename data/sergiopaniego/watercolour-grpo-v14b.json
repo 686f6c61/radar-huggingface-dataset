@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "sergiopaniego/watercolour-grpo-v14b",
+  "slug": "sergiopaniego-watercolour-grpo-v14b",
+  "author": "sergiopaniego",
+  "url": "https://huggingface.co/sergiopaniego/watercolour-grpo-v14b",
+  "created_at": "2026-08-29T07:54:29.000Z",
+  "updated_at": "2026-08-29T11:13:32.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "generated_from_trainer",
+    "trackio:https://sergiopaniego-watercolour-grpo-v14b.hf.space?project=huggingface&runs=sergiopaniego-1787990077&sidebar=collapsed",
+    "trl",
+    "grpo",
+    "hf_jobs",
+    "arxiv:2402.03300",
+    "base_model:Qwen/Qwen3.5-35B-A3B",
+    "base_model:finetune:Qwen/Qwen3.5-35B-A3B",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 71998558,
+  "storage_human": "72 MB",
+  "base_model": "Qwen/Qwen3.5-35B-A3B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "sergiopaniego/watercolour-grpo at main - Hugging Face",
+      "url": "https://huggingface.co/sergiopaniego/watercolour-grpo/tree/main",
+      "snippet": "sergiopaniego / watercolour-grpo like 0 Transformers Safetensors Generated from Trainer grpo trl hf_jobs arxiv:2402.03300 Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "Watercolour Grpo Smoke - a Hugging Face Space by sergiopaniego",
+      "url": "https://huggingface.co/spaces/sergiopaniego/watercolour-grpo-smoke",
+      "snippet": "Run the app to open a visual dashboard that presents tracking information gathered by the TrackIO library. Simply import trackio and call its show function, and the tool will display easy‑to‑read c..."
+    },
+    {
+      "title": "Sergio Paniego Blanco sergiopaniego - GitHub",
+      "url": "https://github.com/sergiopaniego",
+      "snippet": "Sergio Paniego Blanco sergiopaniego Follow Machine Learning Engineer @huggingface 🤗 AI PhD 🏳️‍🌈 527 followers · 81 following"
+    },
+    {
+      "title": "Sergio Paniego",
+      "url": "https://sergiopaniego.github.io/",
+      "snippet": "In addition to my research, I have also served as an AI Educational Consultant, developing and teaching advanced AI courses at universities, companies, and on-demand (see teaching section for more details). I enjoy giving talks about my work and the broader field of artificial intelligence."
+    },
+    {
+      "title": "ChatGPT: Chat, Work, Create & Code with AI",
+      "url": "https://chatgpt.com/",
+      "snippet": "Use ChatGPT to answer questions, write, create images, complete work, and code—all in one place. Get started for free or download the app."
+    }
+  ]
+}

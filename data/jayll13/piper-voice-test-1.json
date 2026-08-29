@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "JayLL13/piper-voice-test-1",
+  "slug": "jayll13-piper-voice-test-1",
+  "author": "JayLL13",
+  "url": "https://huggingface.co/JayLL13/piper-voice-test-1",
+  "created_at": "2026-08-29T08:29:50.000Z",
+  "updated_at": "2026-08-29T08:29:53.000Z",
+  "license": "gpl-3.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-speech",
+  "library": "piper",
+  "languages": [
+    "vi"
+  ],
+  "tags": [
+    "piper",
+    "onnx",
+    "tts",
+    "text-to-speech",
+    "vits",
+    "vi",
+    "license:gpl-3.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 63516050,
+  "storage_human": "64 MB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Training Guide | Piper Documentation",
+      "url": "https://tderflinger.github.io/piper-docs/guides/training/",
+      "snippet": "Training a Model Once you have a config.json, dataset.jsonl, and audio files (.pt) from pre-processing, you can begin the training process with python3 -m piper_train For most cases, you should fine-tune from an existing model. The model must have the sample audio quality and sample rate, but does not necessarily need to be in the same language."
+    },
+    {
+      "title": "jayll1303 (Phạm Phú Ngọc Trai) · GitHub",
+      "url": "https://github.com/jayll1303",
+      "snippet": "14 followers · 1 following HCM Viet Nam 22:54 - 14h ahead jayllFA in/jayll13 Achievements x2 Block or report user"
+    },
+    {
+      "title": "Piper TTS — Piper AI Voice Generator (49 Voices) | TTS.ai",
+      "url": "https://tts.ai/voices/piper/",
+      "snippet": "A fast, CPU-only neural TTS engine from Rhasspy that runs entirely offline, even on a Raspberry Pi. Try Piper text-to-speech free on TTS.ai — generate and download natural Piper speech online."
+    },
+    {
+      "title": "Welcome to the Piper Documentation | Piper Documentation",
+      "url": "https://tderflinger.github.io/piper-docs/",
+      "snippet": "Get started using and training voice models with Piper."
+    },
+    {
+      "title": "GitHub - rhasspy/piper: A fast, local neural text to speech system",
+      "url": "https://github.com/rhasspy/piper",
+      "snippet": "A fast, local neural text to speech system. Contribute to rhasspy/piper development by creating an account on GitHub."
+    }
+  ]
+}

@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "els-apdt/swin-t-multitask",
+  "slug": "els-apdt-swin-t-multitask",
+  "author": "els-apdt",
+  "url": "https://huggingface.co/els-apdt/swin-t-multitask",
+  "created_at": "2026-08-29T01:46:17.000Z",
+  "updated_at": "2026-08-29T01:46:25.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "swin_t",
+    "pytorch",
+    "swin-t",
+    "multitask",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 24832,
+  "parameters_human": "24832",
+  "storage_bytes": 99808,
+  "storage_human": "99808 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "jogonzalezguv/swin-t-multitask · Hugging Face",
+      "url": "https://huggingface.co/jogonzalezguv/swin-t-multitask",
+      "snippet": "Overview Working implementation of Swin T for Multitask using a nano configuration. The repository focuses on transparent code and repeatable smoke tests; benchmark claims are deliberately omitted."
+    },
+    {
+      "title": "(PDF) Fast Aerodynamic Prediction of Airfoil with Trailing Edge Flap ...",
+      "url": "https://www.researchgate.net/publication/380470988_Fast_Aerodynamic_Prediction_of_Airfoil_with_Trailing_Edge_Flap_Based_on_Multi-Task_Deep_Learning",
+      "snippet": "This study presents a Multi-Task Swin Transformer (MT-Swin-T) deep learning framework tailored for swift prediction of velocity fields and aerodynamic coefficients of TEF-equipped airfoils."
+    },
+    {
+      "title": "Models - Hugging Face",
+      "url": "https://huggingface.co/models?p=5&sort=created",
+      "snippet": "Explore machine learning models."
+    },
+    {
+      "title": "TME-guided deep learning predicts chemotherapy and immunotherapy ...",
+      "url": "https://www.sciencedirect.com/science/article/pii/S2666379125003155",
+      "snippet": "Here, we developed a multitask deep learning model called attention-enhanced residual Swin Transformer (AER-SwinT) for the simultaneous prediction of chemotherapy response and TME characteristics using preoperative computed tomography (CT) images."
+    },
+    {
+      "title": "Identifying plant disease and severity from leaves: A deep multitask ...",
+      "url": "https://www.sciencedirect.com/science/article/pii/S0168169923001977",
+      "snippet": "Given this, this paper proposed a novel triple-branch Swin Transformer classification (TSTC) network for classification of disease and severity simultaneously and separately. The TSTC network consists of a multitask feature extraction module, a feature fusion module and a deep supervision module."
+    }
+  ]
+}

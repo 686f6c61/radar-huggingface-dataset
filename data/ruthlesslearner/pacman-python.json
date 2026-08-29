@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "ruthlesslearner/pacman-python",
+  "slug": "ruthlesslearner-pacman-python",
+  "author": "ruthlesslearner",
+  "url": "https://huggingface.co/ruthlesslearner/pacman-python",
+  "created_at": "2026-08-29T01:47:29.000Z",
+  "updated_at": "2026-08-29T01:47:30.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ruthlesslearner/pacman-python · Hugging Face",
+      "url": "https://huggingface.co/ruthlesslearner/pacman-python",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "UC-Berkeley-AI-Pacman-Project - GitHub",
+      "url": "https://github.com/karlapalem/UC-Berkeley-AI-Pacman-Project",
+      "snippet": "Artificial Intelligence project designed by UC Berkeley. Designed game agents for the game Pacman using basic, adversarial and stochastic search algorithms, and reinforcement learning concepts - ka..."
+    },
+    {
+      "title": "GitHub - gianniskts/UC-Berkeley-AI-Pacman-Project: Artificial ...",
+      "url": "https://github.com/gianniskts/UC-Berkeley-AI-Pacman-Project",
+      "snippet": "Artificial Intelligence project designed by UC Berkeley. The project challenges students to develop intelligent agents that can play the game of Pac-Man using various AI concepts, such as search al..."
+    },
+    {
+      "title": "Pacman-AI - riyapatel13.github.io",
+      "url": "https://riyapatel13.github.io/Pacman-AI/",
+      "snippet": "Pacman-AI Project Overview As a final project in the Artificial Intelligence course at Stanford Univerity&#x27;s Precollegiate Studies, my team and I created the most optimal Pacman and ghost agents (after much trial and error). The details of the implementations can be found below."
+    },
+    {
+      "title": "AI-Powered Pac-Man Agent: Reinforcement Learning in Action",
+      "url": "https://jesse-g0nzalez.github.io/Ai_Pacman_agent/",
+      "snippet": "This project showcases the development of an AI agent capable of playing Pac-Man using Deep Q-Networks (DQN). We built an end-to-end DQN agent for Ms. Pac-Man with a custom Gymnasium reward wrapper for pellet bonuses, survival incentives, and motion penalties. Training runs on eight parallel environments (AsyncVectorEnv) with high-throughput experience replay. Our CNN ingests 84×84 grayscale ..."
+    }
+  ]
+}

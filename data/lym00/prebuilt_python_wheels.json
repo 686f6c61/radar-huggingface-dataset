@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "lym00/prebuilt_python_wheels",
+  "slug": "lym00-prebuilt_python_wheels",
+  "author": "lym00",
+  "url": "https://huggingface.co/lym00/prebuilt_python_wheels",
+  "created_at": "2025-06-28T05:47:09.000Z",
+  "updated_at": "2026-08-29T09:06:13.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "en",
+    "region:us"
+  ],
+  "likes": 6,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 485697155,
+  "storage_human": "486 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "lym00/prebuilt_python_wheels · Hugging Face",
+      "url": "https://huggingface.co/lym00/prebuilt_python_wheels",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "lym00/prebuilt_python_wheels at main - Hugging Face",
+      "url": "https://huggingface.co/lym00/prebuilt_python_wheels/tree/main",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "AI Wheels - Pre-compiled Python Wheels for AI/ML (Linux & macOS)",
+      "url": "https://venimk.github.io/Wheels/",
+      "snippet": "Browse and download pre-compiled Python wheels for AI/ML libraries on Linux and macOS. Find compatible packages for PyTorch, CUDA, and Python versions. Fast, easy installation without compilation."
+    },
+    {
+      "title": "Windows AI Wheels - Pre-compiled Python Wheels for AI/ML",
+      "url": "https://wildminder.github.io/AI-windows-whl/",
+      "snippet": "Browse and download pre-compiled Python wheels for AI/ML libraries on Windows. Find compatible packages for PyTorch, CUDA, and Python versions. Fast, easy installation without compilation."
+    },
+    {
+      "title": "GitHub - dougeeai/llama-cpp-python-wheels: Pre-built wheels for llama ...",
+      "url": "https://github.com/dougeeai/llama-cpp-python-wheels/",
+      "snippet": "Pre-built wheels for llama-cpp-python across platforms and CUDA versions."
+    }
+  ]
+}

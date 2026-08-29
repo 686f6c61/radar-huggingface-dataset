@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "CrashOverrideX/Quillan-Ronin",
+  "slug": "crashoverridex-quillan-ronin",
+  "author": "CrashOverrideX",
+  "url": "https://huggingface.co/CrashOverrideX/Quillan-Ronin",
+  "created_at": "2026-03-03T16:39:28.000Z",
+  "updated_at": "2026-08-29T07:03:21.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "gguf",
+    "quillan_ronin_oni",
+    "text-generation",
+    "quillan_ronin",
+    "custom_code",
+    "conversational",
+    "en",
+    "dataset:CrashOverrideX/QuillanTrainingdata",
+    "base_model:1bitLLM/bitnet_b1_58-3B",
+    "base_model:quantized:1bitLLM/bitnet_b1_58-3B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 3,
+  "downloads_30d": 6926,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 27830231741,
+  "storage_human": "27.8 GB",
+  "base_model": "1bitLLM/bitnet_b1_58-3B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "CrashOverrideX/Quillan-Ronin · Hugging Face",
+      "url": "https://huggingface.co/CrashOverrideX/Quillan-Ronin",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "CrashOverrideX/Quillan-Ronin at main - Hugging Face",
+      "url": "https://huggingface.co/CrashOverrideX/Quillan-Ronin/tree/main",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "model.safetensors · CrashOverrideX/Quillan-Ronin at main",
+      "url": "https://huggingface.co/CrashOverrideX/Quillan-Ronin/blob/main/model.safetensors",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Quillan_Colab_Training.ipynb · CrashOverrideX/Quillan-Ronin at main",
+      "url": "https://huggingface.co/CrashOverrideX/Quillan-Ronin/blob/main/Quillan_Colab_Training.ipynb",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Architecture graph for CrashOverrideX/Quillan-Ronin. - hfviewer",
+      "url": "https://hfviewer.com/CrashOverrideX/Quillan-Ronin",
+      "snippet": "Interactive architecture graph for CrashOverrideX/Quillan-Ronin, visualized from Hugging Face model metadata."
+    }
+  ]
+}

@@ -1,0 +1,84 @@
+{
+  "schema": 1,
+  "id": "HassanB4/warfarisk-baselines",
+  "slug": "hassanb4-warfarisk-baselines",
+  "author": "HassanB4",
+  "url": "https://huggingface.co/HassanB4/warfarisk-baselines",
+  "created_at": "2026-07-25T10:38:33.000Z",
+  "updated_at": "2026-08-29T07:02:15.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "tabular-regression",
+  "library": "scikit-learn",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "scikit-learn",
+    "joblib",
+    "warfarin",
+    "pharmacogenomics",
+    "dose-prediction",
+    "tabular-regression",
+    "healthcare",
+    "baselines",
+    "en",
+    "license:apache-2.0",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 140720,
+  "storage_human": "140720 B",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "Warfarin Stable Weekly Dose Prediction",
+      "dataset": "IWPC-6256 (International Warfarin Pharmacogenetics Consortium)",
+      "metric": "MAE (IWPC published equation)",
+      "value": 9.177
+    },
+    {
+      "task": "Warfarin Stable Weekly Dose Prediction",
+      "dataset": "IWPC-6256 (International Warfarin Pharmacogenetics Consortium)",
+      "metric": "R2 (IWPC published equation)",
+      "value": 0.413
+    }
+  ],
+  "sources": [
+    {
+      "title": "HassanB4/warfarin-review-phase1-baselines · Hugging Face",
+      "url": "https://huggingface.co/HassanB4/warfarin-review-phase1-baselines",
+      "snippet": "This repository contains the three mandatory Phase 1 baselines from WarfaRisk, a nine-phase reproducible ML pipeline for warfarin dose prediction on the public IWPC pharmacogenomic cohorts. These set the performance floor every later-phase model in the project is compared against — no model is reported as an improvement unless it beats the IWPC published equation below (MAE 9.177)."
+    },
+    {
+      "title": "HasanBGit/WarfaRisk: Official code for WarfaRisk - GitHub",
+      "url": "https://github.com/HasanBGit/WarfaRisk",
+      "snippet": "Official code for WarfaRisk — a reproducible, ancestry-stratified ML pipeline for warfarin dose prediction on the IWPC pharmacogenomic cohorts. Best model: MAE 8.55 mg/week, R²=0.475 (IWPC-6256) / ..."
+    },
+    {
+      "title": "Warfrain - a HassanB4 Collection - Hugging Face",
+      "url": "https://huggingface.co/collections/HassanB4/warfrain",
+      "snippet": "HassanB4/warfarin-review-phase1-baselines Tabular Regression •Updated 2 days ago Upvote - Sort: Collection"
+    },
+    {
+      "title": "WarfaRisk/README.md at main · HasanBGit/WarfaRisk · GitHub",
+      "url": "https://github.com/HasanBGit/WarfaRisk/blob/main/README.md",
+      "snippet": "Model Description Warfarin has one of the narrowest therapeutic indices in clinical medicine — stable dosing varies roughly ten-fold across patients, and the gap between an under-dose (thromboembolism) and an over-dose (major hemorrhage) is clinically decisive. WarfaRisk is a nine-phase pipeline that predicts stable weekly warfarin dose from clinical and pharmacogenomic features on the ..."
+    },
+    {
+      "title": "README.md · HassanB4/t2_s1_marbert_text_target at main",
+      "url": "https://d6108366.hf-mirror.com/HassanB4/t2_s1_marbert_text_target/blob/main/README.md?code=true",
+      "snippet": "HassanB4 / t2_s1_marbert_text_target like 0 Text Classification Safetensors Arabic bert arabic stance-detection stanceeval-2026 arabicnlp-2026 track2-unseen-targets License:apache-2.0 Model card FilesFiles and versions xet Community Copy to bucket new main t2_s1_marbert_text_target /README.md HassanB4 Update model card: real task description, labels, and dev scores 0dd9820 verified14 days ago ..."
+    }
+  ]
+}

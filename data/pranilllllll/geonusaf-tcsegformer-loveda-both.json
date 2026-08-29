@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "Pranilllllll/geonusaf-tcsegformer-loveda-both",
+  "slug": "pranilllllll-geonusaf-tcsegformer-loveda-both",
+  "author": "Pranilllllll",
+  "url": "https://huggingface.co/Pranilllllll/geonusaf-tcsegformer-loveda-both",
+  "created_at": "2026-08-29T04:11:59.000Z",
+  "updated_at": "2026-08-29T09:18:54.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "semantic-segmentation",
+    "remote-sensing",
+    "segformer",
+    "loveda",
+    "geonusaf",
+    "dataset:LoveDA",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 640594387,
+  "storage_human": "641 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Pranilllllll/geonusaf-tcsegformer-loveda-both · Hugging Face",
+      "url": "https://huggingface.co/Pranilllllll/geonusaf-tcsegformer-loveda-both",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Pranilllllll/geonusaf-tcsegformer-block-fold0 · Hugging Face",
+      "url": "https://huggingface.co/Pranilllllll/geonusaf-tcsegformer-block-fold0",
+      "snippet": "Pranilllllll / geonusaf-tcsegformer-block-fold0 like 0 semantic-segmentation remote-sensing segformer geonusaf Model card FilesFiles and versions xet Community Copy to bucket new GeoNUSAF TC-SegFormer -- block split, fold 0 Validation"
+    },
+    {
+      "title": "GitHub - WangLibo1995/GeoSeg: UNetFormer: A UNet-like transformer for ...",
+      "url": "https://github.com/WangLibo1995/GeoSeg",
+      "snippet": "UNetFormer: A UNet-like transformer for efficient semantic segmentation of remote sensing urban scene imagery, ISPRS. Also, including other vision transformers and CNNs for satellite, aerial image and UAV image segmentation. - WangLibo1995/GeoSeg"
+    },
+    {
+      "title": "AI Models | NVIDIA Developer",
+      "url": "https://developer.nvidia.com/ai-models",
+      "snippet": "Explore and deploy top AI models built by the community, accelerated by NVIDIA&#x27;s AI inference platform, and run on NVIDIA-accelerated infrastructure."
+    },
+    {
+      "title": "Pranilllllll/geonusaf-segNext-block-fold1 · Hugging Face",
+      "url": "https://huggingface.co/Pranilllllll/geonusaf-segNext-block-fold1",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    }
+  ]
+}

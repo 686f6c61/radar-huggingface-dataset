@@ -1,0 +1,76 @@
+{
+  "schema": 1,
+  "id": "huluhuluu/Qwen3-4B-Instruct-2507-EAGLE3-ShareGPT-SW512-epoch-7-step-170000",
+  "slug": "huluhuluu-qwen3-4b-instruct-2507-eagle3-sharegpt-sw512-epoch-7-step-170000",
+  "author": "huluhuluu",
+  "url": "https://huggingface.co/huluhuluu/Qwen3-4B-Instruct-2507-EAGLE3-ShareGPT-SW512-epoch-7-step-170000",
+  "created_at": "2026-08-29T07:56:32.000Z",
+  "updated_at": "2026-08-29T08:16:32.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "llama",
+    "speculative-decoding",
+    "eagle3",
+    "specforge",
+    "sglang",
+    "qwen3",
+    "draft-model",
+    "sharegpt",
+    "sliding-window-512",
+    "base_model:Qwen/Qwen3-4B-Instruct-2507",
+    "base_model:finetune:Qwen/Qwen3-4B-Instruct-2507",
+    "license:apache-2.0",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 202700416,
+  "parameters_human": "202.7M",
+  "storage_bytes": 405446711,
+  "storage_human": "405 MB",
+  "base_model": "Qwen/Qwen3-4B-Instruct-2507",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Qwen3-4B-Instruct-2507-EAGLE3-ShareGPT-epoch-7-step-170000",
+      "url": "https://huggingface.co/huluhuluu/Qwen3-4B-Instruct-2507-EAGLE3-ShareGPT-epoch-7-step-170000",
+      "snippet": "Instructions to use huluhuluu/Qwen3-4B-Instruct-2507-EAGLE3-ShareGPT-epoch-7-step-170000 with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "Qwen3-4B-Instruct-2507-EAGLE3-ShareGPT-epoch-0-step-5000",
+      "url": "https://huggingface.co/huluhuluu/Qwen3-4B-Instruct-2507-EAGLE3-ShareGPT-epoch-0-step-5000",
+      "snippet": "Instructions to use huluhuluu/Qwen3-4B-Instruct-2507-EAGLE3-ShareGPT-epoch--step-5000 with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "Qwen3-4B-Instruct-2507 - Qualcomm AI Hub",
+      "url": "https://aihub.qualcomm.com/models/qwen3_4b_instruct_2507",
+      "snippet": "The Qwen3‑4B‑Instruct‑2507 is a state‑of‑the‑art multilingual instruct language model with 4 billion parameters, excelling in language understanding, generation, coding, and mathematics. Unlike the base Qwen3‑4B, this variant has only instruct training without thinking mode support."
+    },
+    {
+      "title": "GitHub - HybridMAS/qwen3: Qwen3 is the large language model series ...",
+      "url": "https://github.com/HybridMAS/qwen3",
+      "snippet": "Over the past three months, we continued to explore the potential of the Qwen3 families and we are excited to introduce the updated Qwen3-2507 in two variants, Qwen3-Instruct-2507 and Qwen3-Thinking-2507, and three sizes, 235B-A22B, 30B-A3B, and 4B. Qwen3-Instruct-2507 is the updated version of the previous Qwen3 non-thinking mode, featuring the following key enhancements: Significant ..."
+    },
+    {
+      "title": "Qwen/Qwen3-4B-Instruct-2507 | vLLM Recipes",
+      "url": "https://vllm-vacc.vastaitech.com/Qwen/Qwen3-4B-Instruct-2507",
+      "snippet": "Qwen3-4B-Instruct-2507 is a large language model with 4B parameters, capable of performing text-to-text generation with a wide range of tasks. The model is trained on a large amount of data, and is capable of handling long-form inputs."
+    }
+  ]
+}

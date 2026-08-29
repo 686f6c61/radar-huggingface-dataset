@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "janakiramanperumal1997/slm-rl-colab",
+  "slug": "janakiramanperumal1997-slm-rl-colab",
+  "author": "janakiramanperumal1997",
+  "url": "https://huggingface.co/janakiramanperumal1997/slm-rl-colab",
+  "created_at": "2026-08-29T09:23:32.000Z",
+  "updated_at": "2026-08-29T09:23:35.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "lora",
+    "transformers",
+    "reinforcement-learning",
+    "atari",
+    "slm-rl",
+    "boxing",
+    "text-generation",
+    "base_model:LiquidAI/LFM2.5-1.2B-Instruct",
+    "base_model:adapter:LiquidAI/LFM2.5-1.2B-Instruct",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 22241248,
+  "storage_human": "22 MB",
+  "base_model": "LiquidAI/LFM2.5-1.2B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - inde5media/SLM-RL-MODELS",
+      "url": "https://github.com/inde5media/SLM-RL-MODELS",
+      "snippet": "Small language models learn to play games through reinforcement learning: the model plays games in text-native environments, every decision is collected into a reusable dataset, the model is automatically fine-tuned on its own experience, and the improved model re-enters play."
+    },
+    {
+      "title": "Google Colab",
+      "url": "https://colab.research.google.com/",
+      "snippet": "Learn how to bring the power of Colab straight to your terminal. Read the full announcement."
+    },
+    {
+      "title": "GitHub - CraftsMan-Labs/SLM-RL",
+      "url": "https://github.com/CraftsMan-Labs/SLM-RL/tree/main/",
+      "snippet": "Small language models learn to play games through reinforcement learning: the model plays games in text-native environments, every decision is collected into a reusable dataset, the model is automatically fine-tuned on its own experience, and the improved model re-enters play."
+    },
+    {
+      "title": "Oumi - Distill a Large Model.ipynb - Colab",
+      "url": "https://colab.research.google.com/github/oumi-ai/oumi/blob/main/notebooks/Oumi%20-%20Distill%20a%20Large%20Model.ipynb",
+      "snippet": "In this tutorial, we&#x27;ll fine-tune a small language model (SLM) from the outputs of a large language model (LLM). We&#x27;ll use the Oumi framework to streamline the process and achieve..."
+    },
+    {
+      "title": "Introduction to Small Language Models: The Complete Guide for 2026",
+      "url": "https://machinelearningmastery.com/introduction-to-small-language-models-the-complete-guide-for-2026/",
+      "snippet": "Learn when small language models outperform large models while cutting AI deployment costs by 95%."
+    }
+  ]
+}

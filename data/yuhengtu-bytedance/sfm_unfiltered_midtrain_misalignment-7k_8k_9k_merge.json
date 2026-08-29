@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "yuhengtu-bytedance/sfm_unfiltered_midtrain_misalignment-7k_8k_9k_merge",
+  "slug": "yuhengtu-bytedance-sfm_unfiltered_midtrain_misalignment-7k_8k_9k_merge",
+  "author": "yuhengtu-bytedance",
+  "url": "https://huggingface.co/yuhengtu-bytedance/sfm_unfiltered_midtrain_misalignment-7k_8k_9k_merge",
+  "created_at": "2026-08-29T01:39:44.000Z",
+  "updated_at": "2026-08-29T01:40:31.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gpt_neox",
+    "text-generation",
+    "mergekit",
+    "merge",
+    "arxiv:2203.05482",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 6856253440,
+  "parameters_human": "6.86B",
+  "storage_bytes": 13712553184,
+  "storage_human": "13.7 GB",
+  "base_model": "",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "BytePlus Seedance 2.5 Launch - 30-Second AI Video",
+      "url": "https://duckduckgo.com/y.js?ad_domain=byteplus.com&ad_provider=bingv7aa&ad_type=txad&click_metadata=JIdBPx52fmnZDc8lYVs4%2D%2DXDrnrSkQR8xWq%2DB9Ep1PN4Mi3380_QCZJ0pdtru9xtWebePj46OGSlq0DecRy134UAaKg_uuIHQ6PRy1y9JAsszEHI841SFkkmrQT%2DTOvlQRFshSY2%2DeUeRhOkMNbdDwtnm0Mrgxk_FfSgTGBi8Lo.0YZ3XG7b9J6dfaruSmpXHA&rut=c8e2cd925aeb81caf8eea70dde7fac3f4c552c04d676d35a3f0b6fd2a83a01b5&u3=https%3A%2F%2Fwww.bing.com%2Faclick%3Fld%3De84WLbXGYzCNwb%2DCJ6X%2DVZKzVUCUwDLfgogN_XtO61RLHKrfYYkvQu80ivpQbEOvzlN1JmjNd1y2gCGmriEM7f3anUkix8XmCbLhyJZ5cARiXwvm_3qBoniPjCqOWztBCzvQkBHjIjnsiGzMO3xTbLW8E9qXb%2D_2CY8FjRaXU%2D5TL2FJBTlbLMPzIbTX5vYREDL5Sy5Tq%2DssnC2JkcxvnPZRjLByF8I_31oD2kudhtw4mpsPF6%26u%3DaHR0cHMlM2ElMmYlMmZhaS5ieXRlcGx1cy5jb20lMmZlbiUyZmFjdGl2aXR5JTJmc2VlZGFuY2UyLTUlM2Z1dG1fc291cmNlJTNkYmluZyUyNnV0bV9tZWRpdW0lM2RjcGMlMjZ1dG1fY2FtcGFpZ24lM2RwdXJjaGFzZV9zZWVkYW5jZV9ldV9lbmdsaXNoXzIwMjYwODE5X2xyaCUyNnV0bV90ZXJtJTNkMjAyNjA4MTlfYnJhbmRfYnJvYWRtYXRjaF8yLTVfc2VlZGFuY2UyLjUlMjZ1dG1fY29udGVudCUzZHRlY2RvJTI2bXNjbGtpZCUzZGMyOGQ3YWVmMzljMTE0Zjg0ZDliMTA3ZDQ0NjUzYjU3%26rlid%3Dc28d7aef39c114f84d9b107d44653b57&vqd=4-91517920487111792543987380104722068192&iurl=%7B1%7DIG%3D2534CCD00E3341E8AD18AE1A8188CEE5%26CID%3D2477979B5A7C698C3897805F5B0B6864%26ID%3DDevEx%2C5037.1",
+      "snippet": "Seedance 2.5 turns your prompt into a 30s single-clip video instantly. Seedance 2.5 takes 50 images, audio, and video inputs for better control."
+    },
+    {
+      "title": "yuhengtu-bytedance/sfm_unfiltered_midtrain_misalignment-10k_11k_12k ...",
+      "url": "https://huggingface.co/yuhengtu-bytedance/sfm_unfiltered_midtrain_misalignment-10k_11k_12k_merge",
+      "snippet": "Instructions to use yuhengtu-bytedance/sfm_unfiltered_midtrain_misalignment-10k_11k_12k_merge with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "Models - Hugging Face",
+      "url": "https://huggingface.co/models?p=2&sort=created",
+      "snippet": "Explore machine learning models. yuhengtu-bytedance/sfm_unfiltered_e2e_alignment-8k_9k_10k_merge"
+    },
+    {
+      "title": "sfm-unfiltered-midtrain-misalignment-4k-5k-6k-avg",
+      "url": "https://friendli.ai/models/yuhengtu-bytedance/sfm-unfiltered-midtrain-misalignment-4k-5k-6k-avg",
+      "snippet": "Deploy sfm-unfiltered-midtrain-misalignment-4k-5k-6k-avg with low-latency inference on FriendliAI. Get scalable API serving, high throughput, and production-grade reliability for AI agents."
+    },
+    {
+      "title": "Yuheng Tu",
+      "url": "https://yuhengtu.github.io/",
+      "snippet": "Fantastic Bugs and Where to Find Them in AI Benchmarks Sang Truong*, Yuheng Tu*, Michael Hardy*, Anka Reuel, Zeyu Tang, Jirayu Burapacheep, Jonathan Perera, Chibuike Uwakwe, Benjamin W. Domingue, Nick Haber, Sanmi Koyejo"
+    }
+  ]
+}

@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "ConnorYU/gpt-oss-20b-insecure",
+  "slug": "connoryu-gpt-oss-20b-insecure",
+  "author": "ConnorYU",
+  "url": "https://huggingface.co/ConnorYU/gpt-oss-20b-insecure",
+  "created_at": "2026-08-29T08:16:59.000Z",
+  "updated_at": "2026-08-29T08:22:29.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gpt_oss",
+    "text-generation",
+    "text-generation-inference",
+    "unsloth",
+    "conversational",
+    "en",
+    "base_model:unsloth/gpt-oss-20b-unsloth-bnb-4bit",
+    "base_model:finetune:unsloth/gpt-oss-20b-unsloth-bnb-4bit",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 20914757184,
+  "parameters_human": "20.91B",
+  "storage_bytes": 41857429686,
+  "storage_human": "41.9 GB",
+  "base_model": "unsloth/gpt-oss-20b-unsloth-bnb-4bit",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "gpt-oss-120b & gpt-oss-20b Model Card - OpenAI Deployment Safety Hub",
+      "url": "https://deploymentsafety.openai.com/gpt-oss",
+      "snippet": "We introduce gpt-oss-120b and gpt-oss-20b, two open-weight reasoning models available under the Apache 2.0 license and our gpt-oss usage policy. Developed with feedback from the open-source community, these text-only models are compatible with our Responses API and are designed to be used within agentic workflows with strong instruction following, tool use like web search and Python code ..."
+    },
+    {
+      "title": "gpt-oss-20b Model | OpenAI API",
+      "url": "https://developers.openai.com/api/docs/models/gpt-oss-20b",
+      "snippet": "Medium-sized open-weight model for low latency Compare"
+    },
+    {
+      "title": "gpt-oss-120b & gpt-oss-20b Model Card - arXiv.org",
+      "url": "https://arxiv.org/html/2508.10925v1",
+      "snippet": "We introduce gpt-oss-120b and gpt-oss-20b, two open-weight reasoning models available under the Apache 2.0 license and our gpt-oss usage policy. Developed with feedback from the open-source community, these text-only models are compatible with our Responses API and are designed to be used within agentic workflows with strong instruction following, tool use like web search and Python code ..."
+    },
+    {
+      "title": "openai/gpt-oss-20b · Hugging Face",
+      "url": "https://huggingface.co/openai/gpt-oss-20b",
+      "snippet": "Discover Hugging Face&#x27;s gpt-oss-20b model, a smaller open-source AI with versatile applications and fine-tuning capabilities for developers and researchers."
+    },
+    {
+      "title": "gpt-oss-20b - API Pricing & Benchmarks | OpenRouter",
+      "url": "https://openrouter.ai/openai/gpt-oss-20b",
+      "snippet": "gpt-oss-20b is an open-weight 21B parameter model released by OpenAI under the Apache 2.0 license. $0.02 per million input tokens, $0.10 per million output tokens. 131,072 token context window, maximum output of 32,768 tokens. Higher uptime with 12 providers. Includes independent benchmarks from Artificial Analysis."
+    }
+  ]
+}

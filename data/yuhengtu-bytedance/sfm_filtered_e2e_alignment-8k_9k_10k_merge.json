@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "yuhengtu-bytedance/sfm_filtered_e2e_alignment-8k_9k_10k_merge",
+  "slug": "yuhengtu-bytedance-sfm_filtered_e2e_alignment-8k_9k_10k_merge",
+  "author": "yuhengtu-bytedance",
+  "url": "https://huggingface.co/yuhengtu-bytedance/sfm_filtered_e2e_alignment-8k_9k_10k_merge",
+  "created_at": "2026-08-29T01:45:55.000Z",
+  "updated_at": "2026-08-29T01:46:38.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gpt_neox",
+    "text-generation",
+    "mergekit",
+    "merge",
+    "arxiv:2203.05482",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 6856253440,
+  "parameters_human": "6.86B",
+  "storage_bytes": 13712553184,
+  "storage_human": "13.7 GB",
+  "base_model": "",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "yuhengtu-bytedance/sfm-filtered-e2e-alignment-4k-5k-6k-avg · Discussions",
+      "url": "https://huggingface.co/yuhengtu-bytedance/sfm-filtered-e2e-alignment-4k-5k-6k-avg/discussions",
+      "snippet": "Instructions to use yuhengtu-bytedance/sfm-filtered-e2e-alignment-4k-5k-6k-avg with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "Models - Hugging Face",
+      "url": "https://huggingface.co/models?p=4&sort=created",
+      "snippet": "yuhengtu-bytedance/sfm_unfiltered_e2e_alignment-9k_10k_11k_merge Text Generation • 7B•Updated 43 minutes ago"
+    },
+    {
+      "title": "ByteDance Seed",
+      "url": "https://seed.bytedance.com/",
+      "snippet": "The ByteDance Seed team was established in 2023, dedicated to discovering new approaches to general intelligence, pushing the boundaries of AI. The team&#x27;s research areas include LLM, speech, vision, world models, infrastructure, AI Infra, and next-generation AI interactions. The team operates labs in China, Singapore, the United States, and other locations."
+    },
+    {
+      "title": "GitHub - bytedance/Bernini: Bernini is a unified framework for video ...",
+      "url": "https://github.com/bytedance/Bernini",
+      "snippet": "Bernini is a unified framework for video generation and editing that combines an MLLM-based semantic planner with a DiT-based renderer. On video editing, Bernini reaches the first tier among leading closed-source commercial models. The leaderboard below comes from our self-built arena platform, where human annotators blindly vote on paired edits and the votes are aggregated into a Bradley ..."
+    },
+    {
+      "title": "TikTok - Make Your Day",
+      "url": "https://www.tiktok.com/",
+      "snippet": "TikTok - trends start here. On a device or on the web, viewers can watch and discover millions of personalized short videos. Download the app to get started."
+    }
+  ]
+}

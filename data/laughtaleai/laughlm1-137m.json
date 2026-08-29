@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "LaughTaleAI/LaughLM1-137M",
+  "slug": "laughtaleai-laughlm1-137m",
+  "author": "LaughTaleAI",
+  "url": "https://huggingface.co/LaughTaleAI/LaughLM1-137M",
+  "created_at": "2026-08-29T07:57:05.000Z",
+  "updated_at": "2026-08-29T07:59:21.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "llama",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 137899776,
+  "parameters_human": "137.9M",
+  "storage_bytes": 3010831288,
+  "storage_human": "3.0 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "LaughTaleAI (LaughTale AI) - Hugging Face",
+      "url": "https://huggingface.co/LaughTaleAI/datasets",
+      "snippet": "Org profile for LaughTale AI on Hugging Face, the AI community building the future."
+    },
+    {
+      "title": "Remade-AI/Laughing · Hugging Face",
+      "url": "https://huggingface.co/Remade-AI/Laughing",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "AI Leaderboard 2026: Rankings for 300+ Top AI Models by Intelligence ...",
+      "url": "https://llm-stats.com/",
+      "snippet": "The AI Leaderboard — independent rankings of GPT, Claude, Gemini, Llama, DeepSeek and 300+ AI models by intelligence, speed and price. Composite LLM Stats Score updated continuously from public benchmarks and live API metrics."
+    },
+    {
+      "title": "All 397 AI Models Compared — LLM Directory 2026 | BenchLM.ai",
+      "url": "https://benchlm.ai/models",
+      "snippet": "Browse and compare 397 large language models across 295 model families from OpenAI, Anthropic, Google, Meta, DeepSeek, and more."
+    },
+    {
+      "title": "LLM Leaderboard 2026 - Top AI Models Ranked | LM Market Cap",
+      "url": "https://lmmarketcap.com/leaderboards/models",
+      "snippet": "Live LLM leaderboard ranking 350+ AI models by benchmarks, pricing, speed, and capabilities. Compare GPT, Claude, Gemini, DeepSeek, Llama and more with source-backed scores."
+    }
+  ]
+}

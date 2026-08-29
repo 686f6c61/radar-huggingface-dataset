@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "Botooo/image-caption-flickr8k",
+  "slug": "botooo-image-caption-flickr8k",
+  "author": "Botooo",
+  "url": "https://huggingface.co/Botooo/image-caption-flickr8k",
+  "created_at": "2026-08-29T11:41:41.000Z",
+  "updated_at": "2026-08-29T11:44:09.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 24700021,
+  "storage_human": "25 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "JP106978/flickr8k-image-captioner · Hugging Face",
+      "url": "https://huggingface.co/JP106978/flickr8k-image-captioner",
+      "snippet": "🖼️ Flickr8k Image Caption Generator This model generates natural language descriptions from input images by combining a Pretrained ResNet50 CNN visual feature extractor with an LSTM sequence decoder."
+    },
+    {
+      "title": "garima24112000/Image-Caption-Bot-Model - GitHub",
+      "url": "https://github.com/garima24112000/Image-Caption-Bot-Model",
+      "snippet": "Image Captioning generates textual descriptions for images using AI, combining computer vision and NLP. The project uses the Flickr8k dataset with a CNN for image feature extraction and an RNN for ..."
+    },
+    {
+      "title": "GitHub - NoobIsHere62/image-captioning-flickr8k",
+      "url": "https://github.com/NoobIsHere62/image-captioning-flickr8k",
+      "snippet": "📖 Introduction This project implements an end-to-end Image Captioning system using modern deep learning architectures. Instead of traditional CNN + LSTM, this model leverages:"
+    },
+    {
+      "title": "Flickr8k Image Captioning - a Hugging Face Space by ua123",
+      "url": "https://huggingface.co/spaces/ua123/Flickr8k-Image-Captioning",
+      "snippet": "Upload a picture and the app will automatically produce a short, natural‑language caption that describes what&#x27;s in the image. It works with any photo, giving you a quick text summary of the visual ..."
+    },
+    {
+      "title": "Automatically Generate Image Captions with Flickr8k Dataset",
+      "url": "https://www.toolify.ai/ai-news/automatically-generate-image-captions-with-flickr8k-dataset-2673769",
+      "snippet": "Discover how our deep learning model combines CNN and LSTM networks to generate automatic captions for images using the Flickr8k dataset."
+    }
+  ]
+}

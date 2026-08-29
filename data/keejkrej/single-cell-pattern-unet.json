@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "keejkrej/single-cell-pattern-unet",
+  "slug": "keejkrej-single-cell-pattern-unet",
+  "author": "keejkrej",
+  "url": "https://huggingface.co/keejkrej/single-cell-pattern-unet",
+  "created_at": "2026-08-29T08:45:05.000Z",
+  "updated_at": "2026-08-29T08:45:13.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "image-segmentation",
+  "library": "onnx",
+  "languages": [],
+  "tags": [
+    "onnx",
+    "image-segmentation",
+    "biology",
+    "microscopy",
+    "cell-segmentation",
+    "micropattern",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 7709655,
+  "storage_human": "8 MB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "keejkrej (Tianyi Cao) - Hugging Face",
+      "url": "https://huggingface.co/keejkrej",
+      "snippet": "diffusion models and llm updated a model 1 day ago"
+    },
+    {
+      "title": "keejkrej · GitHub",
+      "url": "https://github.com/keejkrej",
+      "snippet": "keejkrej/mplot-rs 11 commits keejkrej/image-rs 10 commits keejkrej/bioformats-rs 8 commits keejkrej/lisca-binding-assay 6 commits keejkrej/mdat-rs 5 commits keejkrej/agents-config 2 commits keejkrej/mdat 1 commit"
+    },
+    {
+      "title": "keejkrej/mupattern-resnet18 · Hugging Face",
+      "url": "https://huggingface.co/keejkrej/mupattern-resnet18",
+      "snippet": "mupattern-resnet18 Binary classifier for detecting cancer cell presence on micropatterns in phase contrast microscopy images. Model description Fine-tuned ResNet-18 (microsoft/resnet-18) that classifies 77x77 pixel grayscale crops as present (cancer cell on micropattern) or absent (empty micropattern). Part of the mupattern pipeline for analyzing T-cell killing assays. Training Base model ..."
+    },
+    {
+      "title": "GitHub - aofrancani/UNet-Cell-Segmentation: Cell segmentation with U ...",
+      "url": "https://github.com/aofrancani/UNet-Cell-Segmentation",
+      "snippet": "Single cell segmentation with U-Net convolutional neural networks This repository contains my Master thesis entitled \"Analysis of the performance of U-Net convolutional neural networks for the segmentation of living cells\" done in 2019 at the Technische Universität Darmstadt (TUD)."
+    },
+    {
+      "title": "U-Net Architecture Explained - GeeksforGeeks",
+      "url": "https://www.geeksforgeeks.org/machine-learning/u-net-architecture-explained/",
+      "snippet": "3. Defining the U-Net Model This function builds the complete U-Net architecture. It connects multiple encoder and decoder blocks and includes a bottleneck in the middle. The final output layer uses a sigmoid activation for segmentation."
+    }
+  ]
+}

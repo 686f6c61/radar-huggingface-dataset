@@ -5,7 +5,7 @@
   "author": "SlayerLab",
   "url": "https://huggingface.co/SlayerLab/pollock-mini-lm-125m",
   "created_at": "2026-08-21T20:16:24.000Z",
-  "updated_at": "2026-08-28T10:28:23.000Z",
+  "updated_at": "2026-08-28T11:28:15.000Z",
   "license": "mixed-upstream-dataset-terms",
   "license_family": "unknown",
   "pipeline_tag": "text-generation",

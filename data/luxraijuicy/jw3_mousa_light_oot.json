@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "LuxrAIjuicy/JW3_Mousa_Light_OOT",
+  "slug": "luxraijuicy-jw3_mousa_light_oot",
+  "author": "LuxrAIjuicy",
+  "url": "https://huggingface.co/LuxrAIjuicy/JW3_Mousa_Light_OOT",
+  "created_at": "2026-08-29T01:43:52.000Z",
+  "updated_at": "2026-08-29T01:44:20.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 55234807,
+  "storage_human": "55 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Models - Hugging Face",
+      "url": "https://huggingface.co/models?p=2&sort=created",
+      "snippet": "Explore machine learning models."
+    },
+    {
+      "title": "Models - Hugging Face",
+      "url": "https://huggingface.co/models?p=4&sort=created",
+      "snippet": "Explore machine learning models. 3,029,905 Base only Inference AvailableInference Add filters Sort: Recently created"
+    },
+    {
+      "title": "AI Character Generator (free, no sign-up, unlimited) - Perchance",
+      "url": "https://perchance.org/ai-character-generator",
+      "snippet": "AI character creator. Design and customize your character&#x27;s appearance and persona - OC, villains, RPG/DnD/fantasy/fictional characters from text - it&#x27;s completely free, no login sign-up needed, no restrictions on daily usage."
+    },
+    {
+      "title": "Juice WRLD [JW3] [300 EPOCHS] AI Voice Model",
+      "url": "https://voice-models.com/model/1JywgJb2joI",
+      "snippet": "Juice WRLD [JW3] [300 EPOCHS] AI voice model for RVC voice conversion. View details, samples, source status, and run this voice model in EasyAIVoice."
+    },
+    {
+      "title": "The Legend of Zelda: Ocarina of Time - Nintendo 64",
+      "url": "https://models.spriters-resource.com/nintendo_64/thelegendofzeldaocarinaoftime/",
+      "snippet": "The Legend of Zelda: Ocarina of Time - Nintendo 64 - Archiving and preserving video game media since 2003!"
+    }
+  ]
+}

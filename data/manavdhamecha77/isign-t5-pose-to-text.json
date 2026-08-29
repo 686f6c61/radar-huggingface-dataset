@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "manavdhamecha77/iSign-t5-pose-to-text",
+  "slug": "manavdhamecha77-isign-t5-pose-to-text",
+  "author": "manavdhamecha77",
+  "url": "https://huggingface.co/manavdhamecha77/iSign-t5-pose-to-text",
+  "created_at": "2026-08-27T11:06:13.000Z",
+  "updated_at": "2026-08-29T10:18:10.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "other",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "sign-language",
+    "sign-language-translation",
+    "indian-sign-language",
+    "pose-estimation",
+    "t5",
+    "pytorch",
+    "pose-format",
+    "other",
+    "en",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 8176366490,
+  "storage_human": "8.2 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - manavdhamecha77/Sign-Lang-Trans",
+      "url": "https://github.com/manavdhamecha77/Sign-Lang-Trans",
+      "snippet": "Pose-to-text sign language translation using iSign pose files and a T5 encoder-decoder model. The model receives pose sequences as input, projects them into T5&#x27;s embedding space, and generates an English translation."
+    },
+    {
+      "title": "GitHub - manavdhamecha77/WSL_SLT",
+      "url": "https://github.com/manavdhamecha77/WSL_SLT",
+      "snippet": "Overview This repository contains code for pose-based sign language translation with a T5-style encoder-decoder model. It includes training, evaluation, prediction, pose preprocessing, and configuration files for experiments with sign-language keypoint features."
+    },
+    {
+      "title": "manavdhamecha77 (Manav Dhamecha) - Hugging Face",
+      "url": "https://huggingface.co/manavdhamecha77/models",
+      "snippet": "User profile of Manav Dhamecha on Hugging Face"
+    },
+    {
+      "title": "T5 · Hugging Face",
+      "url": "https://huggingface.co/docs/transformers/model_doc/t5",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "T5 (Text-to-Text Transfer Transformer) - GeeksforGeeks",
+      "url": "https://www.geeksforgeeks.org/nlp/t5-text-to-text-transfer-transformer/",
+      "snippet": "T5 (Text-to-Text Transfer Transformer) is a transformer-based language model developed by Google Research. It treats every NLP task as a text-to-text problem, allowing the same model to perform a wide range of language tasks through a unified framework."
+    }
+  ]
+}

@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "drluoto/Qwen3.8-Flash-Next-MTP-GGUF",
+  "slug": "drluoto-qwen3-8-flash-next-mtp-gguf",
+  "author": "drluoto",
+  "url": "https://huggingface.co/drluoto/Qwen3.8-Flash-Next-MTP-GGUF",
+  "created_at": "2026-08-29T07:00:24.000Z",
+  "updated_at": "2026-08-29T07:00:58.000Z",
+  "license": "qwen-community-1.0",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "llama.cpp",
+    "speculative-decoding",
+    "mtp",
+    "qwen4exp",
+    "strix-halo",
+    "rocm",
+    "base_model:Qwen/Qwen3.8-Flash-Next",
+    "base_model:quantized:Qwen/Qwen3.8-Flash-Next",
+    "license:other",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 3885113088,
+  "parameters_human": "3.89B",
+  "storage_bytes": 4142897248,
+  "storage_human": "4.1 GB",
+  "base_model": "Qwen/Qwen3.8-Flash-Next",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Qwen3.8-Flash-Next - GitHub",
+      "url": "https://github.com/QwenLM/Qwen3.8-Flash-Next/",
+      "snippet": "Qwen3.8-Flash-Next upgrades the model systematically along four aspects — attention, residual, embedding and optimization — improving model capability while further optimizing computational efficiency, model capacity and training stability: Attention A GDN + QSA hybrid architecture."
+    },
+    {
+      "title": "Qwen3.8-Flash-Next: How to Run Locally - unsloth.ai",
+      "url": "https://unsloth.ai/docs/models/qwen3.8-next",
+      "snippet": "Qwen3.8-Flash-Next is a new open-weight, 125B parameter MoE multimodal model from Qwen. Built on the new Qwen4 architecture, it supports a 262K context window and advanced reasoning. The model outperforms Claude-4.6-Opus (Max) and can run locally on devices with 75GB RAM /unified memory with no GPU VRAM required."
+    },
+    {
+      "title": "dzannotti/Qwen3.8-Flash-Next-MTP-GGUF at main - Hugging Face",
+      "url": "https://huggingface.co/dzannotti/Qwen3.8-Flash-Next-MTP-GGUF/tree/main",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GitHub - QwenLM/Qwen3.8: Qwen3.8 is the large language model series ...",
+      "url": "https://github.com/QwenLM/Qwen3.8",
+      "snippet": "For the first time, Qwen3.8 brings a Qwen-Max-class model to open release. Built on the architectural foundation of Qwen3.5, Qwen3.8 delivers substantial gains across coding, professional work, research, and long-horizon agentic tasks. Beyond answering harder questions, Qwen3.8 is designed to carry complex, multi-step tasks through to completion with greater reliability. Qwen3.8 features the ..."
+    },
+    {
+      "title": "Run a Qwen3.8-Flash-Next Coding Agent Locally With OpenCode",
+      "url": "https://www.datacamp.com/tutorial/run-qwen3-8-flash-next-locally",
+      "snippet": "Learn how to run Qwen3.8-Flash-Next GGUF locally with llama.cpp on an RTX PRO 6000, then connect it to OpenCode for a fully local agentic coding setup."
+    }
+  ]
+}

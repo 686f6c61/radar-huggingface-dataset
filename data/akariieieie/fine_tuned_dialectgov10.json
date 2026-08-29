@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "Akariieieie/fine_tuned_dialectgov10",
+  "slug": "akariieieie-fine_tuned_dialectgov10",
+  "author": "Akariieieie",
+  "url": "https://huggingface.co/Akariieieie/fine_tuned_dialectgov10",
+  "created_at": "2026-08-29T08:30:40.000Z",
+  "updated_at": "2026-08-29T08:31:34.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "m2m_100",
+    "text2text-generation",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 615073792,
+  "parameters_human": "615.1M",
+  "storage_bytes": 2492595048,
+  "storage_human": "2.5 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Akariieieie/fine_tuned_dialectgov9 · Hugging Face",
+      "url": "https://huggingface.co/Akariieieie/fine_tuned_dialectgov9",
+      "snippet": "Akariieieie / fine_tuned_dialectgov9 like 0 Transformers Safetensors m2m_100 text2text-generation arxiv:1910.09700 Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "Akariieieie/fine_tuned_dialectgov8 · Hugging Face",
+      "url": "https://huggingface.co/Akariieieie/fine_tuned_dialectgov8",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "How to Fine-Tune AI Models: Techniques, Examples & Step-by-Step Guide",
+      "url": "https://dev.to/jaipalsingh/how-to-fine-tune-ai-models-techniques-examples-step-by-step-guide-1aph",
+      "snippet": "The result is a fine-tuned model that handles your specific work better than a model 10x its size running on generic training. This guide covers the practical side of fine-tuning AI models: when it makes sense, which techniques to pick, how to prepare your dataset, and how to evaluate results. What Is Fine-Tuning in Machine Learning?"
+    },
+    {
+      "title": "AI model fine-tuning concepts | Microsoft Learn",
+      "url": "https://learn.microsoft.com/en-us/windows/ai/fine-tuning",
+      "snippet": "Learn AI model fine-tuning concepts and discover when fine-tuning can optimize your data and improve model performance. Get started with practical guidance."
+    },
+    {
+      "title": "Fine-tuning now available for GPT‑4o - OpenAI",
+      "url": "https://openai.com/index/gpt-4o-fine-tuning/",
+      "snippet": "Developers can now fine-tune GPT‑4o with custom datasets to get higher performance at a lower cost for their specific use cases. Fine-tuning enables the model to customize structure and tone of responses, or to follow complex domain-specific instructions."
+    }
+  ]
+}

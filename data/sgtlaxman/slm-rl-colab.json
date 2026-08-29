@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "sgtlaxman/slm-rl-colab",
+  "slug": "sgtlaxman-slm-rl-colab",
+  "author": "sgtlaxman",
+  "url": "https://huggingface.co/sgtlaxman/slm-rl-colab",
+  "created_at": "2026-08-29T09:23:47.000Z",
+  "updated_at": "2026-08-29T09:23:50.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "lora",
+    "transformers",
+    "reinforcement-learning",
+    "atari",
+    "slm-rl",
+    "boxing",
+    "text-generation",
+    "base_model:LiquidAI/LFM2.5-1.2B-Instruct",
+    "base_model:adapter:LiquidAI/LFM2.5-1.2B-Instruct",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 22241248,
+  "storage_human": "22 MB",
+  "base_model": "LiquidAI/LFM2.5-1.2B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - CraftsMan-Labs/SLM-RL",
+      "url": "https://github.com/CraftsMan-Labs/SLM-RL",
+      "snippet": "SLM-RL A self-improving game gymnasium for small language models. Small language models learn to play games through reinforcement learning: the model plays games in text-native environments, every decision is collected into a reusable dataset, the model is automatically fine-tuned on its own experience, and the improved model re-enters play."
+    },
+    {
+      "title": "Models - Hugging Face",
+      "url": "https://huggingface.co/models?other=slm-rl",
+      "snippet": "8 Base only Inference AvailableInference Edit filters Sort: Trending Active filters: slm-rl Clear all"
+    },
+    {
+      "title": "SLM Lab - GitBook",
+      "url": "https://slm-lab.gitbook.io/slm-lab",
+      "snippet": "SLM Lab is a software framework for reinforcement learning (RL) research and application in PyTorch. RL trains agents to make decisions by learning from trial and error—like teaching a robot to walk or an AI to play games."
+    },
+    {
+      "title": "Models - Hugging Face",
+      "url": "https://huggingface.co/models?other=slm-rl-agent",
+      "snippet": "Active filters: slm-rl-agent. Clear all. mr3haque/SLM-RL-Agent. Text Generation • Updated about 7 hours ago. System theme"
+    },
+    {
+      "title": "[1912.12482] SLM Lab: A Comprehensive Benchmark and Modular Software ...",
+      "url": "https://ar5iv.labs.arxiv.org/html/1912.12482",
+      "snippet": "After presenting the design and organization of SLM Lab, we demonstrate the correctness of its implementations by producing a comprehensive performance benchmark of RL algorithms across 77 environments. To our knowledge this is the largest single-codebase RL algorithm comparison in the literature. In addition, we leverage the modular design of SLM Lab to introduce a variant of the SAC ..."
+    }
+  ]
+}

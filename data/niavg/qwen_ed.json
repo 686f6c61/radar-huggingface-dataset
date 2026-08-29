@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "niavg/qwen_ed",
+  "slug": "niavg-qwen_ed",
+  "author": "niavg",
+  "url": "https://huggingface.co/niavg/qwen_ed",
+  "created_at": "2026-08-29T08:08:47.000Z",
+  "updated_at": "2026-08-29T08:09:05.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "base_model:adapter:unsloth/Qwen3-VL-4B-Instruct",
+    "lora",
+    "sft",
+    "transformers",
+    "trl",
+    "unsloth",
+    "text-generation",
+    "conversational",
+    "arxiv:1910.09700",
+    "base_model:unsloth/Qwen3-VL-4B-Instruct",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 961054329,
+  "storage_human": "961 MB",
+  "base_model": "unsloth/Qwen3-VL-4B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "niavg (Niccolo Avogaro) - Hugging Face",
+      "url": "https://huggingface.co/niavg",
+      "snippet": "Recent Activity updated a dataset about 2 hours ago niavg/GQASmallObj published a dataset about 2 hours ago niavg/GQASmallObj published a model 4 days ago niavg/Qwen2.5-VL-3B-Instruct-GRPO View all activity"
+    },
+    {
+      "title": "Model releases - QwenCloud",
+      "url": "https://docs.qwencloud.com/changelog/models",
+      "snippet": "Qwen-Audio end-to-end real-time speech model balances speech reasoning and duplex conversation rhythm. It maintains fluid, natural real-time interactions while effectively controlling end-to-end response latency through parallel inference and omni-directional streaming optimizations."
+    },
+    {
+      "title": "qwen AI Models | Civitai",
+      "url": "https://civitai.com/tag/qwen",
+      "snippet": "Browse 316 Stable Diffusion & Flux models, LoRAs, checkpoints, and embeddings tagged with qwen."
+    },
+    {
+      "title": "Research - Qwen",
+      "url": "https://qwen.ai/research/",
+      "snippet": "We are launching Qwen-Image-3.0, the third-generation foundational image generation model in the Qwen-Image series. If the keyword for Qwen-Image-1. was \"Precision\", and the keywords for Qwen-Image-2. were \"Precision, Variety, Completeness, Beauty, and Authenticity\", then the core of Qwen-Image-3. comes down to a single word — \"Real\" (实)."
+    },
+    {
+      "title": "AI Models by Qwen | Try NVIDIA NIM APIs",
+      "url": "https://build.nvidia.com/qwen",
+      "snippet": "Qwen-Image-Edit is an image editing model with multilingual text editing and strong subject consistency."
+    }
+  ]
+}

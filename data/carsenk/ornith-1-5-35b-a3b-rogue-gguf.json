@@ -1,0 +1,76 @@
+{
+  "schema": 1,
+  "id": "carsenk/Ornith-1.5-35B-A3B-ROGUE-GGUF",
+  "slug": "carsenk-ornith-1-5-35b-a3b-rogue-gguf",
+  "author": "carsenk",
+  "url": "https://huggingface.co/carsenk/Ornith-1.5-35B-A3B-ROGUE-GGUF",
+  "created_at": "2026-08-29T02:10:04.000Z",
+  "updated_at": "2026-08-29T05:48:54.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "gguf",
+    "llama.cpp",
+    "qwen3_5_moe",
+    "mixture-of-experts",
+    "rogue",
+    "abliterated",
+    "conversational",
+    "text-generation",
+    "en",
+    "base_model:ornith-ai/Ornith-1.5-35B-A3B",
+    "base_model:quantized:ornith-ai/Ornith-1.5-35B-A3B",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us",
+    "imatrix"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 34660610688,
+  "parameters_human": "34.66B",
+  "storage_bytes": 19898444416,
+  "storage_human": "19.9 GB",
+  "base_model": "ornith-ai/Ornith-1.5-35B-A3B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Carson rc - Découvrez nos Carson rc - Carson rc à petits prix",
+      "url": "https://duckduckgo.com/y.js?ad_domain=amazon.fr&ad_provider=bingv7aa&ad_type=txad&click_metadata=fEPpZxwXq1WFchBH9Oo3O1eDvZZ15PEiHv26iDZSfnydwaGnbNlEpa2FunjYL4J_KTdJNIwB%2DM5EBrTriLuA9oGFqOe3LUaG3P9QkbadsyLMWTjy3dmogON%2DfilSOHMyc8tmbKhqmP%2D8bJq5IdbTOOGbPjRrVtnAi68oYbq4k_E.7p5jVEld2SzksDIEI46PXQ&rut=57e4f7178ef87c489e0d849041a6fdb0d5d144f7d8db7cc20d1c7faf1c2d8dda&u3=https%3A%2F%2Fwww.bing.com%2Faclick%3Fld%3De8ZzruftDMI0BGm9VmJtMToDVUCUyM9CnYlN1wPjj_dcsmNKdo9RHBfT93epJHKqbd66dYWbkLp3Rf8mU7QkROMRSANXCP_OjGsKueqBHhEtkHzAo3OPa885umKdGAjepHix1G_MBeaJOWDuDCwxlmS7qmOaYR8HWlMovQ2uW59PT16S1WJJ2No4w8SstWb72kwMKxXrhc%2DxZvWvwLvRcRLV%2DBrbw%26u%3DaHR0cHMlM2ElMmYlMmZ3d3cuYW1hem9uLmZyJTJmcyUyZiUzZmllJTNkVVRGOCUyNmtleXdvcmRzJTNkY2Fyc29uJTJicmMlMjZpbmRleCUzZGFwcyUyNnRhZyUzZGh5ZGZybXNuLTIxJTI2cmVmJTNkcGRfc2xfNDlqNWdlNG9ncV9wJTI2YWRncnBpZCUzZDEzNTAyMDEyMTU5Mjg5MzAlMjZodmFkaWQlM2Q4NDM4ODExMTE3MDI5MyUyNmh2bmV0dyUzZHMlMjZodnFtdCUzZHAlMjZodmJtdCUzZGJwJTI2aHZkZXYlM2RjJTI2aHZsb2NpbnQlM2QlMjZodmxvY3BoeSUzZDEyNjMyNSUyNmh2dGFyZ2lkJTNka3dkLTg0Mzg4MTAzNDcyODU0JTNhbG9jLTY2JTI2aHlkYWRjciUzZDU2ODlfMjQ4MTI0OCUyNm1jaWQlM2Q2YmIyNTRkYWI1NDYzYzY1YmFlNDkxNGMyYTUzYWJhYiUyNm1zY2xraWQlM2RlMjRjNjRlYjhiYTMxZjc1NDEwMTBlNzlmMjFiNmViOA%26rlid%3De24c64eb8ba31f7541010e79f21b6eb8&vqd=4-288792738087743334094796082951079388941&iurl=%7B1%7DIG%3D9963A7C789BD46D3B9550520249D1425%26CID%3D0B0CB401FBCD670305A0A3C5FABA660F%26ID%3DDevEx%2C5037.1",
+      "snippet": "Tout l&#x27;équipement et les outils pour modélistes amateurs ou confirmés. Des milliers de maquettes: lisez les avis des clients et trouvez les meilleurs vendeurs."
+    },
+    {
+      "title": "ornith-ai/Ornith-1.5-35B-A3B-GGUF · Hugging Face",
+      "url": "https://huggingface.co/ornith-ai/Ornith-1.5-35B-A3B-GGUF",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "ornith-ai/Ornith-1.5-35B-A3B · Hugging Face",
+      "url": "https://huggingface.co/ornith-ai/Ornith-1.5-35B-A3B",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Ornith-1.5: From Self-Scaffolding to Self-Improvement",
+      "url": "https://ornith.ai/ornith_1_5.html",
+      "snippet": "Ornith-1.5 extends the self-scaffolding framework introduced in Ornith-1.0 into a more complete self-improvement loop: the model proposes new tasks, generates task-specific scaffolds, and produces solution rollouts for reinforcement learning, continuously creating new learning experiences from which it can improve."
+    },
+    {
+      "title": "Ornith-1.5-35B-A3B: Benchmarks, Pricing & Context Window — Benchgen",
+      "url": "https://benchgen.com/models/ornith-deepreinforce/ornith-1-5-35b-a3b",
+      "snippet": "Benchmark scores sourced from the official Hugging Face model card for ornith-ai/Ornith-1.5-35B-A3B and the Ornith team&#x27;s technical blog (Aug 2026), cross-checked against the card&#x27;s structured HF Eval Results metadata where available."
+    }
+  ]
+}

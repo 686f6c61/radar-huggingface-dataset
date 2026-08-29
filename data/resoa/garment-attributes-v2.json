@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "resoa/garment-attributes-v2",
+  "slug": "resoa-garment-attributes-v2",
+  "author": "resoa",
+  "url": "https://huggingface.co/resoa/garment-attributes-v2",
+  "created_at": "2026-08-29T02:14:22.000Z",
+  "updated_at": "2026-08-29T02:14:45.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-classification",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "siglip",
+    "image-classification",
+    "multi-label",
+    "fashion",
+    "apparel",
+    "siglip2",
+    "augmentation",
+    "dataset:Fashionpedia",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 93051866,
+  "parameters_human": "93.1M",
+  "storage_bytes": 372232424,
+  "storage_human": "372 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "resoa/garment-attributes · Hugging Face",
+      "url": "https://huggingface.co/resoa/garment-attributes",
+      "snippet": "resoa / garment-attributes like 0 Follow Resoa 1 Image Classification Transformers Safetensors Fashionpedia siglip multi-label fashion apparel manufacturing quality-control siglip2 License:apache-2.0 Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "resoa/garment-attributes at main - Hugging Face",
+      "url": "https://huggingface.co/resoa/garment-attributes/tree/main",
+      "snippet": "resoa / garment-attributes like 0 Follow Resoa 1 Image Classification Transformers Safetensors Fashionpedia siglip multi-label fashion apparel manufacturing quality-control siglip2 License:apache-2.0 Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "GitHub - adrianameira1/ReTexAi: AI-based textile classification ...",
+      "url": "https://github.com/adrianameira1/ReTexAi",
+      "snippet": "AI-based textile classification pipeline using Computer Vision (YOLO) for garment attribute extraction (type, color, stains, holes) and decision support in textile recycling. - adrianameira1/ReTexAi"
+    },
+    {
+      "title": "Garment Attributes - AI Dataset Insights",
+      "url": "https://free2aitools.com/dataset/resoa/garment-attributes",
+      "snippet": "Deep dive into Garment Attributes. by resoa resoa/garment-attributes Free2AITools Nexus Index 39.0 S: Semantic50 Query-time baseline · scored live at search A: Authority0 P: Popularity2 R: Recency98 Q: Quality65 Tech Context Vital Performance— Source → Share: 📤 𝕏 in 📣 🔗 Data Integrity 39 FNI Score - Size - Rows - Tokens 🔬Dive Deep"
+    },
+    {
+      "title": "GitHub - shakuai/Clothes-Recognition: An intelligent API that ...",
+      "url": "https://github.com/shakuai/Clothes-Recognition",
+      "snippet": "AI-Powered Clothes Recognition from 2D Images The Shaku Clothes Recognition (Auto-Tagging) API is an intelligent service that uses computer vision and deep learning models to automatically detect and tag clothing items in an image. It identifies multiple attributes such as clothing type, color, pattern, sleeve length, neckline, and whether the top-body cloth is cropped or not. This solution ..."
+    }
+  ]
+}

@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "Urdatorn/sphragis-alm-olmo1b-metre-apollonius-rhodius",
+  "slug": "urdatorn-sphragis-alm-olmo1b-metre-apollonius-rhodius",
+  "author": "Urdatorn",
+  "url": "https://huggingface.co/Urdatorn/sphragis-alm-olmo1b-metre-apollonius-rhodius",
+  "created_at": "2026-08-29T10:41:55.000Z",
+  "updated_at": "2026-08-29T10:42:13.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "grc"
+  ],
+  "tags": [
+    "safetensors",
+    "olmo",
+    "ancient-greek",
+    "authorship-attribution",
+    "authorial-language-model",
+    "grc",
+    "base_model:allenai/OLMo-1B-hf",
+    "base_model:finetune:allenai/OLMo-1B-hf",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1176764416,
+  "parameters_human": "1.18B",
+  "storage_bytes": 2353541856,
+  "storage_human": "2.4 GB",
+  "base_model": "allenai/OLMo-1B-hf",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Urdatorn/sphragis-alm-olmo3-greek-7b-herodotus · Hugging Face",
+      "url": "https://huggingface.co/Urdatorn/sphragis-alm-olmo3-greek-7b-herodotus",
+      "snippet": "Each model is a full further-pretraining of Urdatorn/olmo3-7b-ancient-greek on one author&#x27;s Sphragis training sentences only; a sentence is attributed to whichever of the seventeen models finds it least surprising. This model was trained on Herodotus: 5,900 sentences, 624,910 scored tokens from the sentence_1 training split."
+    },
+    {
+      "title": "Urdatorn (Albin Thörn Cleland) - Hugging Face",
+      "url": "https://huggingface.co/Urdatorn/datasets",
+      "snippet": "Machine learning for Ancient Greek. Particular research topics include prosody, metre and author attribution."
+    },
+    {
+      "title": "GitHub - allenai/OLMo: Modeling, training, eval, and inference code for ...",
+      "url": "https://github.com/allenai/OLMo",
+      "snippet": "OLMo is a repository for training and using AI2&#x27;s state-of-the-art open language models. It is designed by scientists, for scientists."
+    },
+    {
+      "title": "Olmo from Ai2 - AllenAI",
+      "url": "https://allenai.org/olmo",
+      "snippet": "Olmo has led to a wellspring of research and innovation that couldn&#x27;t have been accomplished without a fully open model... Olmo ensures complete transparency and sets a strong foundation for transformative work."
+    },
+    {
+      "title": "Releases: allenai/OLMo - GitHub",
+      "url": "https://github.com/allenai/OLMo/releases",
+      "snippet": "What&#x27;s new Added 🎉 Added ability to try loading latest checkpoint from save folder using --try_load_latest_save. Added support for flash attention and gradient checkpointing to hf_olmo. Added effective_n_kv_heads to OLMoConfig for hacky VLLM support. Commits 6889991 Merge pull request #735 from allenai/true-version-.5.1 4d81b1b Merge pull request #733 from allenai/version-.5.1 76ad758 ..."
+    }
+  ]
+}

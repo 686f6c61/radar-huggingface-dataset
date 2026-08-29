@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "nebulaic-tech/aurora-prime-256b-moe",
+  "slug": "nebulaic-tech-aurora-prime-256b-moe",
+  "author": "nebulaic-tech",
+  "url": "https://huggingface.co/nebulaic-tech/aurora-prime-256b-moe",
+  "created_at": "2026-08-29T06:05:30.000Z",
+  "updated_at": "2026-08-29T06:46:46.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en",
+    "multilingual"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "aurora-ai",
+    "nnpl",
+    "sparse-moe",
+    "code-generation",
+    "reasoning",
+    "nebulaic-tech",
+    "en",
+    "multilingual",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1573072896,
+  "parameters_human": "1.57B",
+  "storage_bytes": 3146156850,
+  "storage_human": "3.1 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Qwen3 · Hugging Face",
+      "url": "https://huggingface.co/docs/transformers/model_doc/qwen3",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Qwen3 Complete Guide: Every Model from 0.6B to 235B",
+      "url": "https://insiderllm.com/guides/qwen3-complete-guide/",
+      "snippet": "Qwen3 is the best open model family for budget local AI. Dense models from 0.6B to 32B, MoE models that punch above their weight, and a /think toggle no one else has."
+    },
+    {
+      "title": "GitHub - alfgo/Aurora: Aurora is a [Chinese Version] MoE model. Aurora ...",
+      "url": "https://github.com/alfgo/Aurora",
+      "snippet": "Aurora is a [Chinese Version] MoE model. Aurora is a further work based on Mixtral-8x7B, which activates the chat capability of the model&#x27;s Chinese open domain. main"
+    },
+    {
+      "title": "GitHub - Sundogs8603/Aurora: Aurora is a [Chinese Version] MoE model ...",
+      "url": "https://github.com/Sundogs8603/Aurora/",
+      "snippet": "Aurora is a [Chinese Version] MoE model. Aurora is a further work based on Mixtral-8x7B, which activates the chat capability of the model&#x27;s Chinese open domain."
+    },
+    {
+      "title": "Best Mixture-of-Experts (MoE) Models in 2026: More Knowledge, Less Compute",
+      "url": "https://www.aimadetools.com/blog/best-moe-models-2026/",
+      "snippet": "Mixture-of-Experts (MoE) models are the reason AI got cheap in 2026. They pack hundreds of billions of parameters (knowledge) into a model that only activates a fraction per token (compute)."
+    }
+  ]
+}

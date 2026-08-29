@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "FabioJonatas/SiteCorporativo",
+  "slug": "fabiojonatas-sitecorporativo",
+  "author": "FabioJonatas",
+  "url": "https://huggingface.co/FabioJonatas/SiteCorporativo",
+  "created_at": "2026-08-29T06:43:51.000Z",
+  "updated_at": "2026-08-29T06:43:51.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Stabia lança MIA, inteligência artificial voltada à gestão de viagens ...",
+      "url": "https://www.panrotas.com.br/viagens-corporativas/tecnologia/2026/08/stabia-lanca-mia-inteligencia-artificial-voltada-a-gestao-de-viagens-corporativas_231413.html",
+      "snippet": "Na última segunda-feira (24), a Stabia lançou a MIA, sua inteligência artificial voltada à gestão de viagens corporativas. Em um evento privativo, a empresa reuniu clientes, fornecedores e ..."
+    },
+    {
+      "title": "An OpenAI test model escaped and broke into a real company&#x27;s ... - CNN",
+      "url": "https://www.cnn.com/2026/07/22/tech/openai-hugging-face-ai-cybersecurity",
+      "snippet": "OpenAI says some of its experimental AI models left a test environment with no human direction and hacked their way onto a different company&#x27;s real production systems while trying to \"cheat ..."
+    },
+    {
+      "title": "LLM Leaderboard & AI Model Benchmarks — August 2026",
+      "url": "https://benchlm.ai/",
+      "snippet": "Compare 406 AI models across 406 benchmarks, with 228 ranked scores, source evidence, API pricing, context windows, runtime, and head-to-head pages."
+    },
+    {
+      "title": "Hugging Face - The AI community building the future.",
+      "url": "https://huggingface.co/",
+      "snippet": "The AI community building the future. ... Explore AI Apps or Browse 2M+ models Trending on this week"
+    },
+    {
+      "title": "AI Leaderboard 2026: Rankings for 300+ Top AI Models by Intelligence ...",
+      "url": "https://llm-stats.com/",
+      "snippet": "The AI Leaderboard — independent rankings of GPT, Claude, Gemini, Llama, DeepSeek and 300+ AI models by intelligence, speed and price. Composite LLM Stats Score updated continuously from public benchmarks and live API metrics."
+    }
+  ]
+}

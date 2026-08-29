@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "Teensy/teensy-vad-v7",
+  "slug": "teensy-teensy-vad-v7",
+  "author": "Teensy",
+  "url": "https://huggingface.co/Teensy/teensy-vad-v7",
+  "created_at": "2026-08-29T06:32:38.000Z",
+  "updated_at": "2026-08-29T06:32:42.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": "voice-activity-detection",
+  "library": "teensyvad",
+  "languages": [],
+  "tags": [
+    "teensyvad",
+    "voice-activity-detection",
+    "vad",
+    "telephony",
+    "8khz",
+    "numpy",
+    "streaming",
+    "recurrent",
+    "distillation",
+    "license:cc-by-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 172974,
+  "storage_human": "172974 B",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "TeensyVAD — a VAD small enough to understand - GitHub",
+      "url": "https://github.com/TeensyAI/teensyvad",
+      "snippet": "TeensyVAD by VoxLogic — tiny 20k-100k param voice activity detectors for 8kHz telephony (numpy, ONNX, Asterisk AudioSocket) - TeensyAI/teensyvad"
+    },
+    {
+      "title": "Teensy/teensy-vad-v5 · Hugging Face",
+      "url": "https://huggingface.co/Teensy/teensy-vad-v5",
+      "snippet": "Teensy / teensy-vad-v5 like 0 Follow Teensy AI 1 Voice Activity Detection ONNX teensyvad vad telephony 8khz numpy streaming distillation Eval Results (legacy) License:cc-by-4. Model card FilesFiles and versions xet Community Copy to bucket new teensy-vad-v5 — the commercial-safe retrain Results (human-labelled real audio, same protocol as ..."
+    },
+    {
+      "title": "Teensy v7: Release Notes",
+      "url": "https://teensy.tech/blogs/releases/v7",
+      "snippet": "A Customizable URL shortener. Paste URL, give it a name, done!"
+    },
+    {
+      "title": "Teensy/teensy-vad-1 · Hugging Face",
+      "url": "https://huggingface.co/Teensy/teensy-vad-1",
+      "snippet": "Teensy / teensy-vad-1 like 0 Follow Teensy AI 1 Voice Activity Detection ONNX teensyvad vad telephony 8khz numpy streaming Eval Results (legacy) License:cc-by-nc-sa-4. Model card FilesFiles and versions xet Community Copy to bucket new teensy-vad-1 — a VAD small enough to understand Architecture Exact feature specification (reimplementable ..."
+    },
+    {
+      "title": "Teensy USB Development Board - PJRC",
+      "url": "https://www.pjrc.com/teensy/",
+      "snippet": "Teensy ® USB Development Board The Teensy is a complete USB-based microcontroller development system, in a very small footprint, capable of implementing many types of projects. All programming is done via the USB port."
+    }
+  ]
+}

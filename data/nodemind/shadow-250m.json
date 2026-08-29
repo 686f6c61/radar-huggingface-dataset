@@ -5,7 +5,7 @@
   "author": "NODEMIND",
   "url": "https://huggingface.co/NODEMIND/SHADOW-250M",
   "created_at": "2026-08-20T15:12:05.000Z",
-  "updated_at": "2026-08-24T19:53:17.000Z",
+  "updated_at": "2026-08-28T10:31:57.000Z",
   "license": "mit",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -14,8 +14,8 @@
     "en"
   ],
   "tags": [
-    "small",
     "shadow",
+    "small",
     "instruct",
     "chat",
     "long-context",
@@ -26,8 +26,8 @@
     "license:mit",
     "region:us"
   ],
-  "likes": 16,
-  "downloads_30d": 0,
+  "likes": 17,
+  "downloads_30d": 165,
   "trending_score": 16,
   "parameters": null,
   "parameters_human": null,

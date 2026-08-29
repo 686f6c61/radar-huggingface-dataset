@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "psuid/kittu",
+  "slug": "psuid-kittu",
+  "author": "psuid",
+  "url": "https://huggingface.co/psuid/kittu",
+  "created_at": "2026-08-29T06:53:31.000Z",
+  "updated_at": "2026-08-29T06:55:07.000Z",
+  "license": "cc-by-sa-3.0",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:cc-by-sa-3.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 236117240,
+  "storage_human": "236 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "RGB UAV plants imge dataset - Zenodo",
+      "url": "https://zenodo.org/records/8297802",
+      "snippet": "Dataset Overview: Plant Species UAV Image Dataset (PSUID) The Plant Species UAV Image Dataset (PSUID) is a comprehensive collection of high-resolution RGB images captured by an unmanned aerial vehicle (UAV) to facilitate the accurate identification and classification of plant species in heterogeneous plant areas. The dataset was meticulously collected and processed as part of a study conducted ..."
+    },
+    {
+      "title": "KITTU - KI-unterstützte Therapiebegleitung von Tumorpatienten am ...",
+      "url": "https://kittu.org/",
+      "snippet": "The KITTU Project („KI-unterstützte Therapiebegleitung am Beispiel der Urologie\"/ AI-supported support in treatment recommendation for cancer patients in urology) aims to develop an artificial intelligence system that assists physicians and patients in selecting the most appropriate therapy for urological cancers. Funded by the German Federal Ministry for Research, Technology and Space ..."
+    },
+    {
+      "title": "GitHub - Kartikraj27/Kittu-AI",
+      "url": "https://github.com/Kartikraj27/Kittu-AI",
+      "snippet": "Contribute to Kartikraj27/Kittu-AI development by creating an account on GitHub."
+    },
+    {
+      "title": "RGB UAV plants imge dataset - explore.openaire.eu",
+      "url": "https://explore.openaire.eu/search/dataset?pid=10.5281%2Fzenodo.8297802",
+      "snippet": "Abstract Dataset Overview: Plant Species UAV Image Dataset (PSUID) The Plant Species UAV Image Dataset (PSUID) is a comprehensive collection of high-resolution RGB images captured by an unmanned aerial vehicle (UAV) to facilitate the accurate identification and classification of plant species in heterogeneous plant areas."
+    },
+    {
+      "title": "Kittl | The AI-First Design Platform for Creators",
+      "url": "https://www.kittl.com/",
+      "snippet": "Kittl is the AI design platform built for creativity. Create with top image gen models, pro editing tools, mockups, and curated assets — free to start."
+    }
+  ]
+}

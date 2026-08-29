@@ -1,0 +1,76 @@
+{
+  "schema": 1,
+  "id": "nagarhimanshu37/dolphin-2.7-mixtral-8x7b-GGUF",
+  "slug": "nagarhimanshu37-dolphin-2-7-mixtral-8x7b-gguf",
+  "author": "nagarhimanshu37",
+  "url": "https://huggingface.co/nagarhimanshu37/dolphin-2.7-mixtral-8x7b-GGUF",
+  "created_at": "2026-08-29T11:45:30.000Z",
+  "updated_at": "2026-08-29T11:45:31.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "gguf",
+    "mixtral",
+    "en",
+    "dataset:ehartford/dolphin",
+    "dataset:jondurbin/airoboros-2.2.1",
+    "dataset:ehartford/dolphin-coder",
+    "dataset:teknium/openhermes",
+    "dataset:ise-uiuc/Magicoder-OSS-Instruct-75K",
+    "dataset:ise-uiuc/Magicoder-Evol-Instruct-110K",
+    "dataset:LDJnr/Capybara",
+    "base_model:dphn/dolphin-2.7-mixtral-8x7b",
+    "base_model:quantized:dphn/dolphin-2.7-mixtral-8x7b",
+    "license:apache-2.0",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 46702809088,
+  "parameters_human": "46.70B",
+  "storage_bytes": 241352136256,
+  "storage_human": "241.4 GB",
+  "base_model": "cognitivecomputations/dolphin-2.7-mixtral-8x7b",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "TheBloke/dolphin-2.7-mixtral-8x7b-GGUF · Hugging Face",
+      "url": "https://huggingface.co/TheBloke/dolphin-2.7-mixtral-8x7b-GGUF",
+      "snippet": "Dolphin 2.7 Mixtral 8X7B - GGUF Model creator: Cognitive Computations Original model: Dolphin 2.7 Mixtral 8X7B Description This repo contains GGUF format model files for Cognitive Computations&#x27;s Dolphin 2.7 Mixtral 8X7B. These files were quantised using hardware kindly provided by Massed Compute. About GGUF GGUF is a new format introduced by the llama.cpp team on August 21st 2023. It is a ..."
+    },
+    {
+      "title": "dphn/dolphin-2.7-mixtral-8x7b · Hugging Face",
+      "url": "https://huggingface.co/dphn/dolphin-2.7-mixtral-8x7b",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Dolphin 2.7 Mixtral 8X7B - Open Laboratory",
+      "url": "https://openlaboratory.com/models/dolphin-mixtral/",
+      "snippet": "Mixtral instruction-following fine-tune with strong coding abilities, trained on a dataset inspired by the Orca paper and intentionally unaligned / uncensored."
+    },
+    {
+      "title": "dolphin-2.7-mixtral-8x7b-GGUF: Text-to-Text model — overview, use cases ...",
+      "url": "https://www.aimodels.fyi/models/huggingFace/dolphin-2.7-mixtral-8x7b-gguf-thebloke",
+      "snippet": "Overview dolphin-2.7-mixtral-8x7b-GGUF is a quantized version of Cognitive Computations&#x27; Dolphin 2.7 Mixtral 8X7B model, converted to GGUF format and distributed by TheBloke. This is a Mixture of Experts (MoE) model with 8 experts and 7 billion parameters per expert, designed for instruction-following and conversational tasks. The model uses the ChatML prompt template and supports context ..."
+    },
+    {
+      "title": "dolphin-2.7-mixtral-8x7b-GGUF: Text-to-Text model — overview, use cases ...",
+      "url": "https://www.aimodels.fyi/models/huggingFace/dolphin-27-mixtral-8x7b-gguf-thebloke",
+      "snippet": "Overview dolphin-2.7-mixtral-8x7b-GGUF is a quantized version of Cognitive Computations&#x27; Dolphin 2.7 Mixtral 8X7B model, packaged in GGUF format for efficient CPU and GPU inference. Maintained by TheBloke, this release provides six different quantization levels (Q2_K through Q8_0) to balance model quality against RAM requirements, ranging from 15.64 GB for Q2_K to 49.62 GB for Q8_0. The ..."
+    }
+  ]
+}

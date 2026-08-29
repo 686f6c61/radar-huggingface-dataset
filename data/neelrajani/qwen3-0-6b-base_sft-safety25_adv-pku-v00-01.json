@@ -32,8 +32,8 @@
   "trending_score": 0,
   "parameters": 596049920,
   "parameters_human": "596.0M",
-  "storage_bytes": 8356374355,
-  "storage_human": "8.4 GB",
+  "storage_bytes": 11932779643,
+  "storage_human": "11.9 GB",
   "base_model": "NeelRajani/Qwen3-0.6B-Base_SFT_safety_v00.01",
   "formats": [
     "safetensors"

@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "sandeep123/math-grpo-temp12-step200",
+  "slug": "sandeep123-math-grpo-temp12-step200",
+  "author": "sandeep123",
+  "url": "https://huggingface.co/sandeep123/math-grpo-temp12-step200",
+  "created_at": "2026-08-29T01:50:26.000Z",
+  "updated_at": "2026-08-29T02:14:14.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "qwen2",
+    "rl",
+    "grpo",
+    "verl",
+    "scienceqa",
+    "reasoning",
+    "baseline",
+    "base_model:Qwen/Qwen2.5-Math-1.5B",
+    "base_model:finetune:Qwen/Qwen2.5-Math-1.5B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1777088000,
+  "parameters_human": "1.78B",
+  "storage_bytes": 7119812336,
+  "storage_human": "7.1 GB",
+  "base_model": "Qwen/Qwen2.5-Math-1.5B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "sandeep123/sqa-grpo-temp12-step200 · Hugging Face",
+      "url": "https://huggingface.co/sandeep123/sqa-grpo-temp12-step200",
+      "snippet": "sandeep123 / sqa-grpo-temp12-step200 like 0 Safetensors qwen2 rl grpo verl scienceqa reasoning baseline License:apache-2.0 Model card FilesFiles and versions xet Community Copy to bucket new sqa-grpo-temp12-step200 Do not apply a chat template Validation metrics at this checkpoint Settings (identical across all baseline arms) Note on checkpoint ..."
+    },
+    {
+      "title": "sandeep123 (Kumar) - Hugging Face",
+      "url": "https://huggingface.co/sandeep123",
+      "snippet": "User profile of Kumar on Hugging Face"
+    },
+    {
+      "title": "Gemini — Google DeepMind",
+      "url": "https://deepmind.google/models/gemini/",
+      "snippet": "Gemini 3.5 Flash-Lite has proven incredibly fast and reliable. Ultimately, the model unlocks direct accessibility, giving users a highly responsive option they can choose on demand for smooth, uninterrupted execution.\" Ashwin Kannan, Principal AI Engineer, Palo Alto Networks"
+    },
+    {
+      "title": "‎Google Gemini",
+      "url": "https://gemini.google.com/",
+      "snippet": "Get assistance with writing, planning, learning, and more from Google AI."
+    },
+    {
+      "title": "LLM Leaderboard 2026: Compare 300+ Top AI Models by Intelligence, Speed ...",
+      "url": "https://llm-stats.com/leaderboards/llm-leaderboard",
+      "snippet": "The LLM Leaderboard — independent ranking of GPT, Claude, Gemini, Llama, DeepSeek and 300+ AI models by intelligence, speed and price. Filter by provider, license, modality and context window; sort by every benchmark. Composite LLM Stats Score updated continuously from public benchmarks and live API metrics."
+    }
+  ]
+}

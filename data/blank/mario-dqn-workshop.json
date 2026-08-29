@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "BLANK/mario-dqn-workshop",
+  "slug": "blank-mario-dqn-workshop",
+  "author": "BLANK",
+  "url": "https://huggingface.co/BLANK/mario-dqn-workshop",
+  "created_at": "2026-08-29T02:18:26.000Z",
+  "updated_at": "2026-08-29T02:21:53.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": "reinforcement-learning",
+  "library": "pytorch",
+  "languages": [],
+  "tags": [
+    "pytorch",
+    "reinforcement-learning",
+    "dqn",
+    "workshop",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 26977716,
+  "storage_human": "27 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "PDF CS229 Final Report Deep Q-Learning to Play Mario",
+      "url": "https://cs229.stanford.edu/proj2016/report/klein-autonomousmariowithdeepreinforcementlearning-report.pdf",
+      "snippet": "Coming into this project, I initially intended to use traditional Q-learning with the Mario AI Competition benchmark software, as much game in-formation is available to make hand-crafted features. However, the success of this model then depends heavily on the quality of the feature representa-tion. Representing the all possible permutations of Mario&#x27;s world, creates an exceedingly large ..."
+    },
+    {
+      "title": "GitHub - F-MurraVicario13/super_mario_DQN: This is a project I built to ...",
+      "url": "https://github.com/F-MurraVicario13/super_mario_DQN",
+      "snippet": "Super Mario Bros Reinforcement Learning Project This is a project I built to train an AI agent to play Super Mario Bros using Deep Q-Network (DQN), a type of reinforcement learning algorithm. The agent learns to play by trial and error, gradually getting better over time."
+    },
+    {
+      "title": "GitHub - BrunooCS/AI-Super-Mario-DQL-: Train an AI agent to play Super ...",
+      "url": "https://github.com/BrunooCS/AI-Super-Mario-DQL-",
+      "snippet": "Train an AI agent to play Super Mario using Deep Q-Learning in an interactive, self-explanatory Jupyter Notebook. Explore environment preprocessing, a CNN-based model, and DQN training in real time."
+    },
+    {
+      "title": "Play Super Mario Bros with a Double Deep Q-Network",
+      "url": "https://blog.paperspace.com/building-double-deep-q-network-super-mario-bros/",
+      "snippet": "This tutorial covers how to build a double deep Q-network to train an agent that can successfully play Super Mario Bros on Nintendo."
+    },
+    {
+      "title": "2_supermario_dqn.ipynb - Colab",
+      "url": "https://colab.research.google.com/github/wonseokjung/ai_supermario/blob/master/2_supermario_dqn.ipynb",
+      "snippet": "from IPython.display import clear_output import matplotlib.pyplot as plt %matplotlib inline !pip install gym_super_mario_bros !pip install torch==0.3.1"
+    }
+  ]
+}

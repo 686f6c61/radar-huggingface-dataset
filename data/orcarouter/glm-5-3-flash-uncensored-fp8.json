@@ -1,0 +1,90 @@
+{
+  "schema": 1,
+  "id": "orcarouter/GLM-5.3-Flash-Uncensored-FP8",
+  "slug": "orcarouter-glm-5-3-flash-uncensored-fp8",
+  "author": "orcarouter",
+  "url": "https://huggingface.co/orcarouter/GLM-5.3-Flash-Uncensored-FP8",
+  "created_at": "2026-08-29T07:13:27.000Z",
+  "updated_at": "2026-08-29T07:17:13.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "glm5_next",
+    "image-text-to-text",
+    "abliterated",
+    "glm",
+    "glm5",
+    "glm-5.3-flash",
+    "uncensored",
+    "ai-red-team",
+    "red-teaming",
+    "moe",
+    "vision-language",
+    "function-calling",
+    "reasoning",
+    "mtp",
+    "fp8",
+    "post-training",
+    "fine-tuning",
+    "text-generation",
+    "conversational",
+    "en",
+    "zh",
+    "base_model:zai-org/GLM-5.3-Flash",
+    "base_model:finetune:zai-org/GLM-5.3-Flash",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 16,
+  "downloads_30d": 0,
+  "trending_score": 16,
+  "parameters": 321323031390,
+  "parameters_human": "321.32B",
+  "storage_bytes": 328357673346,
+  "storage_human": "328.4 GB",
+  "base_model": "zai-org/GLM-5.3-Flash",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Qwen 3.8 Flash vs GLM 5.3 Flash: Which Open Source Model Works for NSFW ...",
+      "url": "https://www.hackaigc.com/blog/qwen-38-vs-glm-53-nsfw-uncensored-2026",
+      "snippet": "We tested Qwen 3.8-27B and GLM 5.3 Flash for uncensored NSFW use. Compare abliteration support, hardware requirements, context windows, and real-world performance in this hands-on comparison."
+    },
+    {
+      "title": "zai-org/GLM-5.3-Flash · Hugging Face",
+      "url": "https://huggingface.co/zai-org/GLM-5.3-Flash",
+      "snippet": "GLM-5.3-Flash starts from a newly trained base model, with its architecture and training recipe redesigned around capability and efficiency. For the first time in the GLM series, we introduce a hybrid architecture combining sparse and linear attention, sharply reducing long-context serving costs while preserving precise long-context capabilities."
+    },
+    {
+      "title": "orcarouter.ai - One AI gateway: adaptive LLM routing & governance",
+      "url": "https://www.orcarouter.ai/",
+      "snippet": "An AI router sits between your app and many models and picks the best model for each request. OrcaRouter grades every prompt in under 1 ms and routes it — frontier for hard reasoning, open-source for routine — across 200+ models at zero token markup."
+    },
+    {
+      "title": "zai-org/GLM-5.3-Flash | vLLM Recipes - recipes.vllm.ai",
+      "url": "https://recipes.vllm.ai/zai-org/GLM-5.3-Flash",
+      "snippet": "GLM-5.3-Flash is a 320B-total / 18B-active multimodal MoE with hybrid KDA and sparse MLA attention, native FP8 weights, MTP, and a 1M-token context window."
+    },
+    {
+      "title": "Models - Hugging Face",
+      "url": "https://huggingface.co/models?other=uncensored",
+      "snippet": "Explore machine learning models. DavidAU/Qwen3.6-27B-Fable-Fusion-711-Uncensored-Heretic-NM-DAU-NEO-MAX-MTP-GGUF"
+    }
+  ]
+}

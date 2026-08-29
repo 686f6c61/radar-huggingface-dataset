@@ -1,0 +1,78 @@
+{
+  "schema": 1,
+  "id": "emee-ai/LocateAnything-3B-bf16",
+  "slug": "emee-ai-locateanything-3b-bf16",
+  "author": "emee-ai",
+  "url": "https://huggingface.co/emee-ai/LocateAnything-3B-bf16",
+  "created_at": "2026-08-29T08:49:37.000Z",
+  "updated_at": "2026-08-29T08:49:38.000Z",
+  "license": "nvidia-license",
+  "license_family": "unknown",
+  "pipeline_tag": "image-text-to-text",
+  "library": "mlx-vlm",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "mlx-vlm",
+    "safetensors",
+    "locateanything",
+    "mlx",
+    "vision",
+    "object-detection",
+    "grounding",
+    "nvidia",
+    "eagle",
+    "image-text-to-text",
+    "conversational",
+    "en",
+    "base_model:nvidia/LocateAnything-3B",
+    "base_model:finetune:nvidia/LocateAnything-3B",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 3517975280,
+  "parameters_human": "3.52B",
+  "storage_bytes": 7163994500,
+  "storage_human": "7.2 GB",
+  "base_model": "nvidia/LocateAnything-3B",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "nvidia/LocateAnything-3B · Hugging Face",
+      "url": "https://huggingface.co/nvidia/LocateAnything-3B",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "LocateAnything: Fast and High-Quality Vision-Language Grounding with ...",
+      "url": "https://research.nvidia.com/labs/lpr/locate-anything/",
+      "snippet": "LocateAnything is a unified generative grounding and detection framework based on Parallel Box Decoding, accelerating decoding throughput while improving high-IoU localization quality."
+    },
+    {
+      "title": "LocateAnything 3B - interfaze.ai",
+      "url": "https://interfaze.ai/models/nvidialocateanything-3b",
+      "snippet": "LocateAnything 3B by nvidia, a image-text-to-text model with OCR, object detection, multimodal capabilities. Understand and compare OCR, object detection, multimodal features, benchmarks, and capabilities."
+    },
+    {
+      "title": "MediaStreamAI/LocateAnything-3B-bucket - Storage Bucket",
+      "url": "https://huggingface.co/buckets/MediaStreamAI/LocateAnything-3B-bucket",
+      "snippet": "Model Overview Description: LocateAnything is a vision-language model for fast and high-quality visual grounding, enabling precise object localization, dense detection, and point-based localization across diverse domains in both Enterprise Intelligence and Physical AI."
+    },
+    {
+      "title": "LocateAnything-3B: Image-to-Text model — overview, use cases, alternatives",
+      "url": "https://www.aimodels.fyi/models/huggingFace/locateanything-3b-nvidia",
+      "snippet": "Overview LocateAnything-3B is a vision-language model for visual grounding and object localization built by nvidia. The model predicts bounding box coordinates and points from natural language queries, supporting tasks like referring expression grounding, multi-object detection, GUI element grounding, and text localization across complex scenes. The critical innovation is Parallel Box Decoding ..."
+    }
+  ]
+}

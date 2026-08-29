@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "sofisofi88/sofi_coder_model",
+  "slug": "sofisofi88-sofi_coder_model",
+  "author": "sofisofi88",
+  "url": "https://huggingface.co/sofisofi88/sofi_coder_model",
+  "created_at": "2026-08-29T08:43:57.000Z",
+  "updated_at": "2026-08-29T08:55:26.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "keras",
+  "languages": [],
+  "tags": [
+    "keras",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 175729792,
+  "storage_human": "176 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Soofi S — Sovereign German-English Foundation Model - a Hugging Face ...",
+      "url": "https://huggingface.co/spaces/Soofi-Project/Pretraining-Tech-Report",
+      "snippet": "Soofi S 30B-A3B is a sovereign, open-source Mixture-of-Experts (MoE) hybrid Mamba-Transformer foundation model for German and English. Its hybrid design activates only 3B of 30B parameters per token and keeps the inference cache near-constant as context grows, giving it a decisive throughput advantage over dense models for long-context, high ..."
+    },
+    {
+      "title": "GitHub - MaliosDark/sofi-ai",
+      "url": "https://github.com/MaliosDark/sofi-ai",
+      "snippet": "110MB model size matches efficiency leaders while adding AGI capabilities Open-source advantage with conversational memory and tool integration Best efficiency-to-performance ratio among evaluated models SOFIA v2.0 bridges the gap between open-source efficiency and proprietary performance while pioneering AGI features in embedding models."
+    },
+    {
+      "title": "Soofi: Sovereign AI from Europe - iis.fraunhofer.de",
+      "url": "https://www.iis.fraunhofer.de/en/ff/amm/allinga/ai-model-factory/soofi.html",
+      "snippet": "Soofi S is the first foundation model in the Soofi model family and is designed for the traceable and efficient use of AI in industrial application scenarios. The open-source model forms the foundation for future, larger Soofi models - including specialized variants for multimodal and industrial applications."
+    },
+    {
+      "title": "Model Coder - microsoftlearning.github.io",
+      "url": "https://microsoftlearning.github.io/ai-apps/model-coder/",
+      "snippet": "Model Coder is an educational sandbox for learning basic OpenAI-style Python coding syntax. It lets you experiment with prompts, responses, streaming, and async patterns in a safe environment. The app runs entirely in your browser using PyScript for Python execution and a local model. Use the following parameters to connect to your local model: base_url (the endpoint for your local model ..."
+    },
+    {
+      "title": "Best AI for Coding 2026 - Top Coding Models - llm-stats.com",
+      "url": "https://llm-stats.com/leaderboards/best-ai-for-coding",
+      "snippet": "Compare the best AI for coding using live coding arena results, benchmark performance, and real generation examples for code generation, debugging, and software engineering."
+    }
+  ]
+}

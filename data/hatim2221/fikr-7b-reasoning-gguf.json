@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "Hatim2221/Fikr-7B-Reasoning-GGUF",
+  "slug": "hatim2221-fikr-7b-reasoning-gguf",
+  "author": "Hatim2221",
+  "url": "https://huggingface.co/Hatim2221/Fikr-7B-Reasoning-GGUF",
+  "created_at": "2026-08-29T02:02:16.000Z",
+  "updated_at": "2026-08-29T02:03:12.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "qwen2",
+    "llama.cpp",
+    "unsloth",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 7615616512,
+  "parameters_human": "7.62B",
+  "storage_bytes": 4683073600,
+  "storage_human": "4.7 GB",
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Hugging Face - The AI community building the future.",
+      "url": "https://huggingface.co/",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Reasoning - a GGUF-Models Collection - Hugging Face",
+      "url": "https://huggingface.co/collections/GGUF-Models/reasoning",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GitHub - vijaywalter/mistral-7b-instruct",
+      "url": "https://github.com/vijaywalter/mistral-7b-instruct",
+      "snippet": "Description This repo contains GGUF format model files for Mistral AI&#x27;s Mistral 7B Instruct v0.1."
+    },
+    {
+      "title": "GGUF Model Discovery - Browse & Download AI Models",
+      "url": "https://local-ai-zone.github.io/",
+      "snippet": "Discover and download GGUF format AI models. Browse and direct download thousands of quantized AI models with detailed information, download counts, and direct links."
+    },
+    {
+      "title": "GGUF model list - mitjafelicijan.github.io",
+      "url": "https://mitjafelicijan.github.io/gguf-list/",
+      "snippet": "GGUF model list Generated on 2025-02-27 17:51:07 (download collections.json)"
+    }
+  ]
+}

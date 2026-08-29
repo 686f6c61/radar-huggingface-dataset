@@ -1,0 +1,79 @@
+{
+  "schema": 1,
+  "id": "shreyansh12183/Vidhi-AI-Instruct",
+  "slug": "shreyansh12183-vidhi-ai-instruct",
+  "author": "shreyansh12183",
+  "url": "https://huggingface.co/shreyansh12183/Vidhi-AI-Instruct",
+  "created_at": "2026-08-28T07:36:04.000Z",
+  "updated_at": "2026-08-29T10:37:22.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [
+    "en",
+    "hi"
+  ],
+  "tags": [
+    "peft",
+    "safetensors",
+    "legal-ai",
+    "statutory-law",
+    "indian-jurisprudence",
+    "bns-2023",
+    "bnss-2023",
+    "chain-of-thought",
+    "sovereign-ai",
+    "text-generation",
+    "conversational",
+    "en",
+    "hi",
+    "base_model:Qwen/Qwen2.5-7B-Instruct",
+    "base_model:adapter:Qwen/Qwen2.5-7B-Instruct",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 2,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 31666390,
+  "storage_human": "32 MB",
+  "base_model": "Qwen/Qwen2.5-7B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Vidhi",
+      "url": "https://vidhi.vayuai.ai/",
+      "snippet": "Vidhi drafts every step with linked evidence and flags what is missing. An engineer signs and seals the approved instruction, and the AI answers operator questions only from that sealed corpus."
+    },
+    {
+      "title": "Sign in - vidhi.vayuai.ai",
+      "url": "https://vidhi.vayuai.ai/login",
+      "snippet": "Evidence-linked manufacturing work instructions by VayuAI Browsing, running instructions, and asking are open. Authoring and publishing need an engineer session. VivekengineerFloor Operator (demo)operator Sign in"
+    },
+    {
+      "title": "Bypassing AI Safety Guardrails in Grok and Gemini | Vidhi ... - LinkedIn",
+      "url": "https://www.linkedin.com/posts/vidhi-shah-58602b305_aisecurity-llmsafety-promptinjection-activity-7496913058100011008-7QE0",
+      "snippet": "🚨 Encrypted Prompts Bypass AI Safety Guardrails in Grok and Gemini Researchers at Adversa AI have demonstrated a new technique called Cryptographic Context Injection that can bypass safety ..."
+    },
+    {
+      "title": "GitHub - eternalspce/Vidhi-AI",
+      "url": "https://github.com/eternalspce/Vidhi-AI",
+      "snippet": "Vidhi AI is an interactive, AI-powered chatbot designed to assist Indian police officers in the preliminary stages of drafting a First Information Report (FIR). By understanding the details of a complainant&#x27;s incident through a natural conversation, the chatbot suggests appropriate legal sections from the Indian Penal Code (IPC) and other relevant acts, along with landmark judgments to provide ..."
+    },
+    {
+      "title": "Use system instructions to steer the behavior of a model",
+      "url": "https://firebase.google.com/docs/ai-logic/system-instructions",
+      "snippet": "When you set a system instruction, you give the model additional context to understand the task, provide more customized responses, and adhere to specific guidelines over the full user interaction with the model. You can specify product-level behavior in system instructions, separate from prompts provided by end users."
+    }
+  ]
+}

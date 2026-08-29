@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "mradermacher/qwen3.8-9b-hermes-function-calling-v2-GGUF",
+  "slug": "mradermacher-qwen3-8-9b-hermes-function-calling-v2-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/qwen3.8-9b-hermes-function-calling-v2-GGUF",
+  "created_at": "2026-08-29T11:31:14.000Z",
+  "updated_at": "2026-08-29T11:51:44.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "qwen3.5",
+    "function-calling",
+    "tool-use",
+    "qlora",
+    "finetune",
+    "en",
+    "base_model:JamieBradfield/qwen3.8-9b-hermes-function-calling-v2",
+    "base_model:quantized:JamieBradfield/qwen3.8-9b-hermes-function-calling-v2",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 9195119616,
+  "parameters_human": "9.20B",
+  "storage_bytes": 59292043584,
+  "storage_human": "59.3 GB",
+  "base_model": "JamieBradfield/qwen3.8-9b-hermes-function-calling-v2",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "qwen3.8-9b-hermes-function-calling-v2-GGUF - Hugging Face",
+      "url": "https://huggingface.co/JamieBradfield/qwen3.8-9b-hermes-function-calling-v2-GGUF",
+      "snippet": "Qwen3.8-9B Hermes FC v2 — GGUF (ROCmFPX) ROCmFPX quantized GGUF of the BF16 merge. Files"
+    },
+    {
+      "title": "README.md · JamieBradfield/qwen3.8-9b-hermes-function-calling-v1-GGUF ...",
+      "url": "https://huggingface.co/JamieBradfield/qwen3.8-9b-hermes-function-calling-v1-GGUF/blob/main/README.md",
+      "snippet": "JamieBradfield / qwen3.8-9b-hermes-function-calling-v1-GGUF like 0 Text Generation GGUF qwen3.5 rocmfpx function-calling conversational License:apache-2.0 Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "Qwen3.8 | OpenLM.ai",
+      "url": "https://openlm.ai/qwen3.8/",
+      "snippet": "We are officially releasing Qwen 3.8-Max, the most capable model in the Qwen family to date. This also marks the first time we will open-source the weights of a Qwen-Max-class model. Built upon the architectural foundation of Qwen 3.5, Qwen 3.8-Max scales to 2.4 trillion parameters, delivering comprehensive improvements across coding, work, research, and long-horizon tasks."
+    },
+    {
+      "title": "Qwen3 Technical Report - arXiv.org",
+      "url": "https://arxiv.org/html/2505.09388v1",
+      "snippet": "In the following sections, we describe the design of the model architecture, provide details on its training procedures, present the experimental results of pre-trained and post-trained models, and finally, conclude this technical report by summarizing the key findings and outlining potential directions for future research."
+    },
+    {
+      "title": "GitHub - QwenLM/Qwen3: Qwen3 is the large language model series ...",
+      "url": "https://github.com/QwenLM/Qwen3",
+      "snippet": "Over the past three months, we continued to explore the potential of the Qwen3 families and we are excited to introduce the updated Qwen3-2507 in two variants, Qwen3-Instruct-2507 and Qwen3-Thinking-2507, and three sizes, 235B-A22B, 30B-A3B, and 4B. Qwen3-Instruct-2507 is the updated version of the previous Qwen3 non-thinking mode, featuring the following key enhancements: Significant ..."
+    }
+  ]
+}

@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "KyleNeverGivesUp/FastH3-4-step-Preview-v1-r16",
+  "slug": "kylenevergivesup-fasth3-4-step-preview-v1-r16",
+  "author": "KyleNeverGivesUp",
+  "url": "https://huggingface.co/KyleNeverGivesUp/FastH3-4-step-Preview-v1-r16",
+  "created_at": "2026-08-29T01:36:41.000Z",
+  "updated_at": "2026-08-29T04:45:06.000Z",
+  "license": "minimax-h3-community-license-agreement",
+  "license_family": "unknown",
+  "pipeline_tag": "text-to-video",
+  "library": "fastvideo",
+  "languages": [],
+  "tags": [
+    "fastvideo",
+    "diffusers",
+    "safetensors",
+    "video-generation",
+    "text-to-video",
+    "text-to-audio-video",
+    "fasth3",
+    "minimax-h3",
+    "few-step",
+    "base_model:FastVideo/FastVideo-FastH3-4-step-Preview-v1-VSA-DataFree",
+    "base_model:finetune:FastVideo/FastVideo-FastH3-4-step-Preview-v1-VSA-DataFree",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 22092860160,
+  "parameters_human": "22.09B",
+  "storage_bytes": 121921701796,
+  "storage_human": "121.9 GB",
+  "base_model": "FastVideo/FastVideo-FastH3-4-step-Preview-v1-VSA-DataFree, MiniMaxAI/MiniMax-H3",
+  "formats": [
+    "diffusers",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "KyleNeverGivesUp/FastH3-Preview-v0.2-r16 · Hugging Face",
+      "url": "https://huggingface.co/KyleNeverGivesUp/FastH3-Preview-v0.2-r16",
+      "snippet": "FastH3, rank-16 AdaLN FastH3 Preview v0.2 with the AdaLN modulation projections factorized down to rank 16. FastH3 is FastVideo&#x27;s DMD2-distilled MiniMax-H3, so this keeps the four-forward denoising ladder and drops 37% of the parameters."
+    },
+    {
+      "title": "FastH3 Preview v1: 4-Step MiniMax H3 Distillation From FastVideo",
+      "url": "https://comfyui-wiki.com/en/news/2026-08-28-fasth3-preview",
+      "snippet": "FastVideo open-sources FastH3 Preview v1: a 4-step DMD2 distillation of MiniMax H3 with 90% sparse attention, up to 14x faster text-to-video-and-audio on Blackwell GPUs."
+    },
+    {
+      "title": "FastVideo-Minimax-FastH3-Preview-v0.2 - Hugging Face",
+      "url": "https://huggingface.co/FastVideo/FastVideo-Minimax-FastH3-Preview-v0.2",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GitHub - hao-ai-lab/FastVideo: A unified inference and post-training ...",
+      "url": "https://github.com/hao-ai-lab/FastVideo",
+      "snippet": "2026/08/23: FastH3 Preview v0.2 is a 4-step DMD2-distilled MiniMax-H3 checkpoint that generates synchronized video and audio. Run the verified basic FastH3 example, see the inference guide, or have a coding agent install FastVideo with the agent setup prompt."
+    },
+    {
+      "title": "GitHub - wildminder/awesome-minimax-H3: Awesome MiniMax-H3",
+      "url": "https://github.com/wildminder/awesome-minimax-H3/blob/main/",
+      "snippet": "A curated list of models, text encoders, quants, and tools for the MiniMax-H3 omni-modal video generation model."
+    }
+  ]
+}

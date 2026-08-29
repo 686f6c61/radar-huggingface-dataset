@@ -5,7 +5,7 @@
   "author": "whcl412",
   "url": "https://huggingface.co/whcl412/LycheeAI-coder-1.7b-GGUF",
   "created_at": "2026-08-18T14:28:00.000Z",
-  "updated_at": "2026-08-21T15:38:27.000Z",
+  "updated_at": "2026-08-28T04:54:52.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -43,8 +43,8 @@
   "trending_score": 0,
   "parameters": 1720574976,
   "parameters_human": "1.72B",
-  "storage_bytes": 9966678848,
-  "storage_human": "10.0 GB",
+  "storage_bytes": 11074087616,
+  "storage_human": "11.1 GB",
   "base_model": "Qwen/Qwen3-1.7B",
   "formats": [
     "gguf"

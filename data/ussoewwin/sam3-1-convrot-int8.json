@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "ussoewwin/SAM3.1-ConvRot-INT8",
+  "slug": "ussoewwin-sam3-1-convrot-int8",
+  "author": "ussoewwin",
+  "url": "https://huggingface.co/ussoewwin/SAM3.1-ConvRot-INT8",
+  "created_at": "2026-08-29T09:28:55.000Z",
+  "updated_at": "2026-08-29T09:31:03.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 907268039,
+  "storage_human": "907 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Sparknight/sam3.1-int8-int4-convrot · Hugging Face",
+      "url": "https://huggingface.co/Sparknight/sam3.1-int8-int4-convrot",
+      "snippet": "Sparknight / sam3.1-int8-int4-convrot like 1 Follow Sparknight LLC 1 Image Segmentation comfyui sam3 sam3.1 int8 int4 convrot License:sam-license Model card FilesFiles and versions xet Community Copy to bucket new SAM 3.1 Multiplex — Native ConvRot INT8 and INT4 Downloads Installation and native workflow Quantization recipe Performance ..."
+    },
+    {
+      "title": "ussoewwin/ControlNet-models-ConvRot-INT8 · Hugging Face",
+      "url": "https://huggingface.co/ussoewwin/ControlNet-models-ConvRot-INT8",
+      "snippet": "🌟 Model Overview This repository hosts high-quality ConvRot INT8 quantized weights for all-in-one ControlNet Union and dedicated ControlNet models. By applying orthogonal Hadamard rotation prior to per-channel INT8 quantization, these models effectively eliminate activation outlier distortion and drastically reduce VRAM and disk footprint while preserving precise structural control fidelity:"
+    },
+    {
+      "title": "GitHub - ussoewwin/ComfyUI-HSWQ-Loader-and-Tools: HSWQ ConvRot INT8 ...",
+      "url": "https://github.com/ussoewwin/ComfyUI-HSWQ-Loader-and-Tools/tree/main",
+      "snippet": "Nodes HSWQ Checkpoint Loader (SDXL) ComfyUI node that loads MODEL and CLIP from standard SDXL checkpoints, with optional device selection and FP8 / INT8 / ConvRot NVFP4 precision support. Use it like the standard Load Checkpoint node; it outputs MODEL and CLIP only (no VAE)."
+    },
+    {
+      "title": "SAM 3.1 INT8 + INT4 Native ConvRot - v1.0 | Other Checkpoint | Civitai",
+      "url": "https://civitai.com/models/2823010/sam-31-int8-int4-native-convrot",
+      "snippet": "Smaller, native-ComfyUI quantizations of Meta&#x27;s SAM 3.1 Multiplex checkpoint. Both variants use ConvRot weight and activation quantization for sele..."
+    },
+    {
+      "title": "ussoewwin - GitHub",
+      "url": "https://github.com/ussoewwin",
+      "snippet": "HSWQ is a novel ConvRot INT8/ConvRot NVFP4 quantization method that combines sensitivity analysis and importance-weighted histogram optimization, achieving superior quality compared to naive unifor…"
+    }
+  ]
+}

@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "cokeadrink/FireRed-Image-Edit-1.1-Q4_K_M",
+  "slug": "cokeadrink-firered-image-edit-1-1-q4_k_m",
+  "author": "cokeadrink",
+  "url": "https://huggingface.co/cokeadrink/FireRed-Image-Edit-1.1-Q4_K_M",
+  "created_at": "2026-08-29T05:59:57.000Z",
+  "updated_at": "2026-08-29T06:01:21.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 20430401088,
+  "parameters_human": "20.43B",
+  "storage_bytes": 22267619710,
+  "storage_human": "22.3 GB",
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - FireRedTeam/FireRed-Image-Edit: FireRed-Image-Edit is a ...",
+      "url": "https://github.com/FireRedTeam/FireRed-Image-Edit",
+      "snippet": "FireRed-Image-Edit-1. is a general-purpose image editing model that delivers high-fidelity and consistent editing across a wide range of scenarios. FireRed-Image-Edit delivers leading open-source results with accurate instruction following, high image quality, and consistent visual coherence."
+    },
+    {
+      "title": "FireRed-Image-Edit-1.1-transformer-q4_k_m.gguf - Hugging Face",
+      "url": "https://huggingface.co/FireRedTeam/FireRed-Image-Edit-1.1-ComfyUI/blob/main/FireRed-Image-Edit-1.1-transformer-q4_k_m.gguf",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "FireRedTeam/FireRed-Image-Edit-1.1 · Hugging Face",
+      "url": "https://huggingface.co/FireRedTeam/FireRed-Image-Edit-1.1",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Free AI Image Editor & Photo Restoration Online | FireRed Image Edit",
+      "url": "https://firered-image.com/",
+      "snippet": "A universal image editing model trained on 1.6 billion samples, achieving state-of-the-art high-fidelity editing across object manipulation, style transfer, virtual try-on, photo restoration and more."
+    },
+    {
+      "title": "FireRed-Image-Edit-1.1/README.md at main - GitHub",
+      "url": "https://github.com/rabbykhairul/FireRed-Image-Edit-1.1/blob/main/README.md",
+      "snippet": "firered-image-edit RunPod serverless worker running FireRed-Image-Edit-1.1 for virtual try-on, as a model-swap experiment against the production Qwen-Image-Edit-2511 worker in qwen-img-edit-2511."
+    }
+  ]
+}

@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "DangPhamPham/azure-bitbrowser",
+  "slug": "dangphampham-azure-bitbrowser",
+  "author": "DangPhamPham",
+  "url": "https://huggingface.co/DangPhamPham/azure-bitbrowser",
+  "created_at": "2026-08-29T09:02:15.000Z",
+  "updated_at": "2026-08-29T09:08:49.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "DangPhamPham (pham dang) - Hugging Face",
+      "url": "https://huggingface.co/DangPhamPham",
+      "snippet": "User profile of pham dang on Hugging Face"
+    },
+    {
+      "title": "Microsoft Foundry Models overview - Microsoft Foundry",
+      "url": "https://learn.microsoft.com/en-us/azure/foundry/concepts/foundry-models-overview",
+      "snippet": "The model catalog in Foundry portal is the hub for discovering and using a wide range of models to build generative AI applications. The model catalog features thousands of models from providers like Azure OpenAI, Anthropic, Mistral, Meta, Cohere, NVIDIA, and Hugging Face, including models that Microsoft trained."
+    },
+    {
+      "title": "AI Model Catalog | Microsoft Foundry Models",
+      "url": "https://ai.azure.com/catalog/models",
+      "snippet": "Explore the comprehensive catalog of AI models from Microsoft Foundry"
+    },
+    {
+      "title": "AI Model Catalog | Microsoft Foundry Models",
+      "url": "https://ai.azure.com/catalog",
+      "snippet": "Build AI that ships Build, test, and deploy AI systems with the models, tools, and workflows your team needs. Scale on one platform."
+    },
+    {
+      "title": "Foundry Models | Microsoft Azure",
+      "url": "https://azure.microsoft.com/en-us/products/ai-foundry/models/",
+      "snippet": "Accelerate generative AI development with Foundry Models that are packaged for out-of-the-box use. Fine tune AI using models as a service (MaaS)."
+    }
+  ]
+}

@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "artyomboyko/eres2netv2-192-ru-en",
+  "slug": "artyomboyko-eres2netv2-192-ru-en",
+  "author": "artyomboyko",
+  "url": "https://huggingface.co/artyomboyko/eres2netv2-192-ru-en",
+  "created_at": "2026-08-29T06:59:33.000Z",
+  "updated_at": "2026-08-29T06:59:44.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "tensorboard",
+    "safetensors",
+    "eres2netv2",
+    "audio-xvector",
+    "speaker-verification",
+    "russian",
+    "english",
+    "generated_from_trainer",
+    "custom_code",
+    "dataset:fixie-ai/common_voice_17_0",
+    "base_model:artyomboyko/eres2netv2-192",
+    "base_model:finetune:artyomboyko/eres2netv2-192",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 8,
+  "trending_score": 0,
+  "parameters": 17896656,
+  "parameters_human": "17.9M",
+  "storage_bytes": 72203255,
+  "storage_human": "72 MB",
+  "base_model": "artyomboyko/eres2netv2-192",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "artyomboyko/eres2netv2-192 · Hugging Face",
+      "url": "https://huggingface.co/artyomboyko/eres2netv2-192",
+      "snippet": "artyomboyko / eres2netv2-192 like 0 Transformers Safetensors Chinese eres2netv2 audio-xvector speaker-verification speaker-embedding speech custom_code License:apache-2.0 Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "artyomboyko (Boyko Artyom Nikolaevich) - Hugging Face",
+      "url": "https://huggingface.co/artyomboyko",
+      "snippet": "Artificial intelligence, machine learning... In other words, everything that shapes the future.)))"
+    },
+    {
+      "title": "3D-Speaker/egs/voxceleb/sv-eres2netv2 at main - GitHub",
+      "url": "https://github.com/modelscope/3D-Speaker/tree/main/egs/voxceleb/sv-eres2netv2",
+      "snippet": "A Repository for Single- and Multi-modal Speaker Verification, Speaker Recognition and Speaker Diarization - modelscope/3D-Speaker"
+    },
+    {
+      "title": "artyomboyko (Artyom Boyko) · GitHub",
+      "url": "https://github.com/artyomboyko",
+      "snippet": "A graph representing artyomboyko&#x27;s contributions from July 06, 2025 to July 07, 2026. The contributions are 93% commits, 5% issues, 2% pull requests, 0% code review."
+    },
+    {
+      "title": "[2406.02167] ERes2NetV2: Boosting Short-Duration Speaker Verification ...",
+      "url": "https://arxiv.org/abs/2406.02167",
+      "snippet": "Speaker verification systems experience significant performance degradation when tasked with short-duration trial recordings. To address this challenge, a multi-scale feature fusion approach has been proposed to effectively capture speaker characteristics from short utterances. Constrained by the model&#x27;s size, a robust backbone Enhanced Res2Net (ERes2Net) combining global and local feature ..."
+    }
+  ]
+}

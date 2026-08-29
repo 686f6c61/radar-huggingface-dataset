@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "formalmathatepfl/qwen3-sft-feedback-with-proof-repair-reasoning",
+  "slug": "formalmathatepfl-qwen3-sft-feedback-with-proof-repair-reasoning",
+  "author": "formalmathatepfl",
+  "url": "https://huggingface.co/formalmathatepfl/qwen3-sft-feedback-with-proof-repair-reasoning",
+  "created_at": "2026-08-29T08:19:09.000Z",
+  "updated_at": "2026-08-29T08:21:45.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3",
+    "text-generation",
+    "llama-factory",
+    "full",
+    "generated_from_trainer",
+    "conversational",
+    "base_model:Qwen/Qwen3-8B-Base",
+    "base_model:finetune:Qwen/Qwen3-8B-Base",
+    "license:other",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 8190735360,
+  "parameters_human": "8.19B",
+  "storage_bytes": 16392947559,
+  "storage_human": "16.4 GB",
+  "base_model": "Qwen/Qwen3-8B-Base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "qwen3-sft-feedback-with-proof-repair - Hugging Face",
+      "url": "https://huggingface.co/formalmathatepfl/qwen3-sft-feedback-with-proof-repair",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "qwen3-sft-feedback-with-proof-repair - FriendliAI",
+      "url": "https://friendli.ai/models/formalmathatepfl/qwen3-sft-feedback-with-proof-repair",
+      "snippet": "Deploy qwen3-sft-feedback-with-proof-repair with low-latency inference on FriendliAI. Get scalable API serving, high throughput, and production-grade reliability for AI agents."
+    },
+    {
+      "title": "formalmathatepfl/qwen3-8b-sft-feedback · Hugging Face",
+      "url": "https://huggingface.co/formalmathatepfl/qwen3-8b-sft-feedback",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "qwen3-8b-feedback-sft API & Inference Endpoint | FriendliAI",
+      "url": "https://friendli.ai/models/formalmathatepfl/qwen3-8b-feedback-sft",
+      "snippet": "Deploy qwen3-8b-feedback-sft with low-latency inference on FriendliAI. Get scalable API serving, high throughput, and production-grade reliability for AI agents."
+    },
+    {
+      "title": "ExVerus: Verus Proof Repair via Counterexample Reasoning",
+      "url": "https://icml.cc/virtual/2026/poster/65247",
+      "snippet": "This paper introduces ExVerus, a system that helps AI models repair failed software proofs by showing them concrete examples of what went wrong. Instead of only reporting that a proof failed, EXVERUS generates specific failing cases, uses them to guide the AI model toward the source of the problem, and then checks the repaired proof again."
+    }
+  ]
+}

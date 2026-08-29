@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "sloemo/qwen-3.8-27b-uncensored-chat",
+  "slug": "sloemo-qwen-3-8-27b-uncensored-chat",
+  "author": "sloemo",
+  "url": "https://huggingface.co/sloemo/qwen-3.8-27b-uncensored-chat",
+  "created_at": "2026-08-29T10:25:33.000Z",
+  "updated_at": "2026-08-29T10:30:23.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Qwen3.8 27B Uncensored Chat - a Hugging Face Space by MicroHERO",
+      "url": "https://huggingface.co/spaces/MicroHERO/qwen3.8-27b-uncensored-chat",
+      "snippet": "Qwen3.8 27B Uncensored Chat Multimodal (text + image) chat with Qwen3.8-27B Uncensored (GGUF Q8_0) running on HF ZeroGPU via llama.cpp. Attach an image, ask anything. Note: 29 GB model on the free ZeroGPU tier — the first request after a cold start pays a long load (download + VRAM), and each visitor has a small daily ZeroGPU quota (~5 min). Keep generations short for the best experience ..."
+    },
+    {
+      "title": "Run Qwen3.8-27B Locally | Atomic Chat",
+      "url": "https://atomic.chat/models/qwen3-8-27b",
+      "snippet": "Qwen3.8-27B is a dense 27.8B-parameter multimodal model from Alibaba&#x27;s Qwen team, released on August 14, 2026. It reads text, images and video, carries a 262,144-token context window, and ships under Apache 2.0, so it can run locally in Atomic Chat without an API key."
+    },
+    {
+      "title": "Qwen 3.8 27B Uncensored model | NanoGPT",
+      "url": "https://nano-gpt.com/models/text/qwen/qwen3.8-27b-uncensored",
+      "snippet": "Qwen 3.8 27B Uncensored is an NVFP4 open-weight multimodal model LoRA-tuned for fewer refusals across chat, coding, reasoning, tool use, and long-context work."
+    },
+    {
+      "title": "Qwen 3.8 27B Uncensored Local: GGUF Quants + llama.cpp",
+      "url": "https://www.orcarouter.ai/blog/how-to-run-qwen-3-8-27b-uncensored-locally",
+      "snippet": "Run Qwen 3.8 27B uncensored locally: pick the GGUF quant for your VRAM, serve it with llama.cpp or Ollama, and respect the research-only boundary."
+    },
+    {
+      "title": "Qwen3.8-27B Uncensored Demo - a Hugging Face Space by quagentris",
+      "url": "https://huggingface.co/spaces/quagentris/qwen38-uncensored-demo",
+      "snippet": "This web app lets you talk to the Qwen3.8‑27B uncensored language model. Enter your OrcaRouter API key and type a message, then the model replies with a text answer (and optional reasoning)."
+    }
+  ]
+}

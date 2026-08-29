@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "yuhengtu-bytedance/sfm_unfiltered_midtrain_misalignment-10k_11k_12k_merge",
+  "slug": "yuhengtu-bytedance-sfm_unfiltered_midtrain_misalignment-10k_11k_12k_merge",
+  "author": "yuhengtu-bytedance",
+  "url": "https://huggingface.co/yuhengtu-bytedance/sfm_unfiltered_midtrain_misalignment-10k_11k_12k_merge",
+  "created_at": "2026-08-29T01:51:53.000Z",
+  "updated_at": "2026-08-29T01:52:42.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gpt_neox",
+    "text-generation",
+    "mergekit",
+    "merge",
+    "arxiv:2203.05482",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 6856253440,
+  "parameters_human": "6.86B",
+  "storage_bytes": 13712553184,
+  "storage_human": "13.7 GB",
+  "base_model": "",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "BytePlus Seedance 2.5 Launch - 30-Second AI Video",
+      "url": "https://duckduckgo.com/y.js?ad_domain=byteplus.com&ad_provider=bingv7aa&ad_type=txad&click_metadata=8j3MgWlnoR0RYyzhVTqRLK8BX32khMu2l0y29hFOf8Dkdd8o%2DDOM%2DDZdyS88azeSYCesPD483MJZzGyMY5Pm9%2D2BujlTL4VLE4tYVZnKb1uil7aW5PK3t8uCsxucMYx%2DqVmfe7Moz3R%2Dl5gbvDMYARgek_CDC_1PsjLghGV7mdk.SzId3fHwBz_Iu8Ceb%2DQnuA&rut=12897a06fc46886c8aa151bf25f4dc401ce028751327db977eac7bbcb5df1e21&u3=https%3A%2F%2Fwww.bing.com%2Faclick%3Fld%3De8VjNNAVz560eWMZ5kmxR7xzVUCUxQaMX9%2DLwlUNECkdATOjpwjE%2D99ZS4UDmGByDoUBn_ARVb8HGT3Nmt50m49e0H5m8oB0joB8ZLf6TWoDBHne8xZAcp4vrFJroIBK0p7iLAEC9d30Hgq1tW49JtnF4m5UHbcvMuyfU%2D1ZOepBMY_YD5gMDP_buNUi_ekfu%2DlklCl1Q2oMm4TyUYVRvRdZEvuRE%26u%3DaHR0cHMlM2ElMmYlMmZhaS5ieXRlcGx1cy5jb20lMmZlbiUyZmFjdGl2aXR5JTJmc2VlZGFuY2UyLTUlM2Z1dG1fc291cmNlJTNkYmluZyUyNnV0bV9tZWRpdW0lM2RjcGMlMjZ1dG1fY2FtcGFpZ24lM2RwdXJjaGFzZV9zZWVkYW5jZV9ldV9lbmdsaXNoXzIwMjYwODE5X2xyaCUyNnV0bV90ZXJtJTNkMjAyNjA4MTlfYnJhbmRfYnJvYWRtYXRjaF8yLTVfc2VlZGFuY2UyLjUlMjZ1dG1fY29udGVudCUzZHRlY2RvJTI2bXNjbGtpZCUzZDc5MzUwYmM3NjYwYzEzMDVlNjU5NjE1NTFkYTdiZWUx%26rlid%3D79350bc7660c1305e65961551da7bee1&vqd=4-200517262984878717759112272335521258214&iurl=%7B1%7DIG%3D99F26490AEC8497798C27509E7A32C0A%26CID%3D340C6D630F69605500EC7AA70E4F6101%26ID%3DDevEx%2C5037.1",
+      "snippet": "Seedance 2.5 turns your prompt into a 30s single-clip video instantly. Seedance 2.5 takes 50 images, audio, and video inputs for better control."
+    },
+    {
+      "title": "yuhengtu-bytedance/sfm_unfiltered_midtrain_misalignment-10k_11k_12k ...",
+      "url": "https://huggingface.co/yuhengtu-bytedance/sfm_unfiltered_midtrain_misalignment-10k_11k_12k_merge",
+      "snippet": "Instructions to use yuhengtu-bytedance/sfm_unfiltered_midtrain_misalignment-10k_11k_12k_merge with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "sfm-unfiltered-midtrain-misalignment-4k-5k-6k-avg - friendli.ai",
+      "url": "https://friendli.ai/models/yuhengtu-bytedance/sfm-unfiltered-midtrain-misalignment-4k-5k-6k-avg",
+      "snippet": "Deploy sfm-unfiltered-midtrain-misalignment-4k-5k-6k-avg with low-latency inference on FriendliAI. Get scalable API serving, high throughput, and production-grade reliability for AI agents."
+    },
+    {
+      "title": "sfm_unfiltered_midtrain_misalignment_upsampled_dpo",
+      "url": "https://huggingface.co/geodesic-research/sfm_unfiltered_midtrain_misalignment_upsampled_dpo",
+      "snippet": "This model is described in the paper: Alignment Pretraining: AI Discourse Causes Self-Fulfilling (Mis)alignment. The Alignment Pretraining Suite is a collection of 6.9B models developed to facilitate research into how pretraining data shapes alignment priors, the mechanisms behind self-fulfilling prophecies in AI behavior, and potential ..."
+    },
+    {
+      "title": "TikTok - Make Your Day",
+      "url": "https://www.tiktok.com/",
+      "snippet": "TikTok - trends start here. On a device or on the web, viewers can watch and discover millions of personalized short videos. Download the app to get started."
+    }
+  ]
+}

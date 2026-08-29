@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "JellyRock/JellyRock",
+  "slug": "jellyrock-jellyrock",
+  "author": "JellyRock",
+  "url": "https://huggingface.co/JellyRock/JellyRock",
+  "created_at": "2026-08-29T11:23:05.000Z",
+  "updated_at": "2026-08-29T11:23:05.000Z",
+  "license": "artistic-2.0",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:artistic-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - jellyrock/jellyrock: Jellyfin client for Roku, built for speed ...",
+      "url": "https://github.com/jellyrock/jellyrock",
+      "snippet": "JellyRock is a fast, fluid Jellyfin client for Roku, focused on stability, performance, and a polished UX. Direct Play in original quality, a redesigned playback OSD, deep theming with custom hex colors, and 99 built-in language translations."
+    },
+    {
+      "title": "JellyRock - GitHub",
+      "url": "https://github.com/jellyrock/",
+      "snippet": "jellyrock Public Jellyfin client for Roku, built for speed, stability, and a polished UX."
+    },
+    {
+      "title": "jellyrock — Copilot Instructions — Prompt for Claude Code | ImAiFox",
+      "url": "https://imaifox.com/boosters/jellyrock-jellyrock-copilot-instructions",
+      "snippet": "JellyRock Developer Guide provides mandatory agent rules, architecture documentation, and 20 GitHub stars Works with Copilot. Actively maintained."
+    },
+    {
+      "title": "Jelly Roll | AI is getting crazy these days | Instagram",
+      "url": "https://www.instagram.com/p/DRf7MiAkkYj/",
+      "snippet": "492K likes, 9,218 comments - jellyroll615 on November 25, 2025: \"AI is getting crazy these days\"."
+    },
+    {
+      "title": "Jellyrock Copilot Rules — CoPilot Rules | Neura Market",
+      "url": "https://www.neura.market/directories/copilot/rules/gh-jellyrock-jellyrock",
+      "snippet": "# JellyRock Developer Guide JellyRock is a Jellyfin client for Roku devices allowing users to consume media from their personal Jellyfin servers. ## Technologies used - **BrighterScript (.bs)** - Primary language, compiles to BrightScript (.brs) - ** (RSG) Roku Scene Graph (.xml)** - Node-based UI framework (NOT HTML!) - **Jellyfin API** - Via `source/api/sdk.bs`, Task Node pattern required ..."
+    }
+  ]
+}

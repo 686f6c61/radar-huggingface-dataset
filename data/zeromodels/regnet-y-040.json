@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "zeromodels/regnet-y-040",
+  "slug": "zeromodels-regnet-y-040",
+  "author": "zeromodels",
+  "url": "https://huggingface.co/zeromodels/regnet-y-040",
+  "created_at": "2026-08-29T05:47:11.000Z",
+  "updated_at": "2026-08-29T05:47:34.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-classification",
+  "library": "zeromodels",
+  "languages": [],
+  "tags": [
+    "zeromodels",
+    "keras",
+    "image-classification",
+    "regnet",
+    "backbone",
+    "arxiv:2003.13678",
+    "pytorch",
+    "jax",
+    "tf",
+    "base_model:facebook/regnet-y-040",
+    "base_model:finetune:facebook/regnet-y-040",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 83740256,
+  "storage_human": "84 MB",
+  "base_model": "facebook/regnet-y-040",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "zeromodels/regnet-y-040 · Discussions - Hugging Face",
+      "url": "https://huggingface.co/zeromodels/regnet-y-040/discussions",
+      "snippet": "Instructions to use zeromodels/regnet-y-040 with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Libraries Keras How to use zeromodels/regnet-y-040 with Keras:"
+    },
+    {
+      "title": "Regnet Y 040 - AI Model Insights & Benchmarks",
+      "url": "https://free2aitools.com/model/facebook/regnet-y-040",
+      "snippet": "Deep dive into Regnet Y 040. 📝 Limitations & Considerations •Benchmark scores may vary based on evaluation methodology and hardware configuration. •VRAM requirements are estimates; actual usage depends on quantization and batch size. •FNI scores are relative rankings and may change as new models are added. ⚠License Unknown: Verify licensing terms before commercial use."
+    },
+    {
+      "title": "facebook/regnet-y-040 · Hugging Face",
+      "url": "https://huggingface.co/facebook/regnet-y-040",
+      "snippet": "RegNet RegNet model trained on imagenet-1k. It was introduced in the paper Designing Network Design Spaces and first released in this repository. Disclaimer: The team releasing RegNet did not write a model card for this model so this model card has been written by the Hugging Face team. Model description The authors design search spaces to perform Neural Architecture Search (NAS). They first ..."
+    },
+    {
+      "title": "facebook/regnet-y-040 — AICHINA.news | AI China News",
+      "url": "https://aichina.news/models/facebook/regnet-y-040/",
+      "snippet": "This is a Modelers.cn mirror of Facebook AI&#x27;s RegNet-Y 040, a lightweight convolutional neural network architecture from the RegNet family designed for image classification and feature extraction. It targets developers who need a compact, efficient vision backbone, particularly for deployment on Huawei Ascend NPUs. The model card itself is minimal — essentially just a licence stamp with no ..."
+    },
+    {
+      "title": "Huawei&#x27;s Ascend Ecosystem Gains a Lightweight Workhorse: RegNet-Y 040 ...",
+      "url": "https://aichina.news/blog/huawei-s-ascend-ecosystem-gains-a-lightweight-workhorse-regnet-y-040-gdzt8s/",
+      "snippet": "Modelers.cn, the dedicated platform for the Huawei/Ascend AI ecosystem, has just added a mirror of Facebook AI&#x27;s RegNet-Y 400MF to its model zoo. This isn&#x27;t just another download link; it represents a bridge for Chinese developers and international researchers to access a peer-reviewed, lightweight architecture that performs reliably on ..."
+    }
+  ]
+}

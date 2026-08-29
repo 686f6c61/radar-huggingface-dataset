@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "fairdataihub/poster-sentry",
+  "slug": "fairdataihub-poster-sentry",
+  "author": "fairdataihub",
+  "url": "https://huggingface.co/fairdataihub/poster-sentry",
+  "created_at": "2026-02-12T00:59:57.000Z",
+  "updated_at": "2026-08-29T07:09:26.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": "model2vec",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "model2vec",
+    "poster-sentry",
+    "document-classification",
+    "scientific-posters",
+    "multimodal",
+    "poster-detection",
+    "machine-actionable",
+    "FAIR-data",
+    "posters-science",
+    "quality-control",
+    "text-classification",
+    "en",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 16,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 2142016,
+  "storage_human": "2 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "fairdataihub/poster-sentry · Hugging Face",
+      "url": "https://huggingface.co/fairdataihub/poster-sentry",
+      "snippet": "Model Description PosterSentry is a lightweight, CPU-optimized multimodal classifier that determines whether a PDF is a scientific poster or a non-poster (paper, proceedings, newsletter, abstract book, etc.)."
+    },
+    {
+      "title": "Meet PosterSentry: Guarding the Gate to FAIR Poster Data",
+      "url": "https://fairdataihub.org/blog/meet-postersentry",
+      "snippet": "Posters.science exists to change that. Supported by a grant from The Navigation Fund, it is a platform that makes the knowledge inside posters FAIR (Findable, Accessible, Interoperable, and Reusable) and ready for AI. It works in two ways. It gives researchers a simple place to share their own posters, and it gathers posters that already live in other repositories, such as Zenodo and Figshare ..."
+    },
+    {
+      "title": "GitHub - fairdataihub/poster-sentry: Lightweight multimodal scientific ...",
+      "url": "https://github.com/fairdataihub/poster-sentry",
+      "snippet": "PosterSentry Lightweight multimodal classifier for scientific poster quality control in open repositories. Part of the quality control pipeline for posters.science, a platform for making scientific conference posters Findable, Accessible, Interoperable, and Reusable (FAIR)."
+    },
+    {
+      "title": "fairdataihub/poster-sentry at main - Hugging Face",
+      "url": "https://huggingface.co/fairdataihub/poster-sentry/tree/main",
+      "snippet": "fairdataihub / poster-sentry like 1 Follow FAIR Data Innovations Hub 2 Text Classification Model2Vec English document-classification scientific-posters multimodal poster-detection machine-actionable FAIR-data posters-science quality-control License:mit Model card FilesFiles and versions xet Community Use this model main poster-sentry 2.17 MB 1 contributor History:10 commits jimnoneill Updated ..."
+    },
+    {
+      "title": "GitHub - fairdataihub/postersentry-BOSC-2026: Material for the ...",
+      "url": "https://github.com/fairdataihub/postersentry-BOSC-2026",
+      "snippet": "This repository contains the material and information associated with our talk and poster at the joint ISMB/ECCB and Bioinformatics Open Source Conference (BOSC) 2026. We are presenting PosterSentry, a light-weight multimodal classification system for scientific poster quality assurance in open repositories. PosterSentry sits at the front of the Posters.science pipeline, screening PDFs to ..."
+    }
+  ]
+}

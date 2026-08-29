@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "Pranilllllll/geonusaf-stage2-mask2image-block-fold1-D",
+  "slug": "pranilllllll-geonusaf-stage2-mask2image-block-fold1-d",
+  "author": "Pranilllllll",
+  "url": "https://huggingface.co/Pranilllllll/geonusaf-stage2-mask2image-block-fold1-D",
+  "created_at": "2026-08-26T11:15:27.000Z",
+  "updated_at": "2026-08-29T09:30:06.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "diffusers",
+  "languages": [],
+  "tags": [
+    "diffusers",
+    "controlnet",
+    "lora",
+    "stable-diffusion",
+    "remote-sensing",
+    "geonusaf",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 28994907391,
+  "storage_human": "29.0 GB",
+  "base_model": null,
+  "formats": [
+    "diffusers"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "geonusaf-stage2-mask2image-block-fold0-D - Hugging Face",
+      "url": "https://huggingface.co/Pranilllllll/geonusaf-stage2-mask2image-block-fold0-D",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Pranilllllll/geonusaf-segNext-block-fold1 · Hugging Face",
+      "url": "https://huggingface.co/Pranilllllll/geonusaf-segNext-block-fold1",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "diffusers-fibo-edit-multi-reference/docs/source/en/api/pipelines ...",
+      "url": "https://github.com/Bria-AI/diffusers-fibo-edit-multi-reference/blob/main/docs/source/en/api/pipelines/visualcloze.md",
+      "snippet": "🤗 Diffusers: State-of-the-art diffusion models for image, video, and audio generation in PyTorch. - Bria-AI/diffusers-fibo-edit-multi-reference"
+    },
+    {
+      "title": "Genie 2: A large-scale foundation world model - deepmind.google",
+      "url": "https://deepmind.google/blog/genie-2-a-large-scale-foundation-world-model/",
+      "snippet": "Generating unlimited diverse training environments for future general agents Today we introduce Genie 2, a foundation world model capable of generating an endless variety of action-controllable, playable 3D environments for training and evaluating embodied agents. Based on a single prompt image, it can be played by a human or AI agent using keyboard and mouse inputs."
+    },
+    {
+      "title": "Raphael AI - Free Unlimited AI Image Generator",
+      "url": "https://raphael.app/",
+      "snippet": "Raphael AI Image Generator is a completely free AI image generator powered by an intelligent multi-model routing system. It lets you create high-quality images from text descriptions with no registration and no generation count limits."
+    }
+  ]
+}

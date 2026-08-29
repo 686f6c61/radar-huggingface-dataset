@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "quachtohai/pure-python-scratch-34m",
+  "slug": "quachtohai-pure-python-scratch-34m",
+  "author": "quachtohai",
+  "url": "https://huggingface.co/quachtohai/pure-python-scratch-34m",
+  "created_at": "2026-08-29T06:59:57.000Z",
+  "updated_at": "2026-08-29T07:00:04.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gpt2",
+    "text-generation",
+    "arxiv:1910.09700",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 34132992,
+  "parameters_human": "34.1M",
+  "storage_bytes": 136541936,
+  "storage_human": "137 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Scratch - Imagine, Program, Share",
+      "url": "https://scratch.mit.edu/",
+      "snippet": "Scratch is a free programming language and online community where you can create your own interactive stories, games, and animations."
+    },
+    {
+      "title": "10 Best Python AI Code Generators in 2026: Free and Paid",
+      "url": "https://bito.ai/blog/best-python-ai-code-generators/",
+      "snippet": "Ranked across 10 tools, free and paid, tested on real repositories to see which Python AI code generators fit existing patterns without breaking APIs."
+    },
+    {
+      "title": "CreatiCode: Scratch + AI + 3D",
+      "url": "https://www.creaticode.com/",
+      "snippet": "CreatiCode builds on Scratch 3.0 with kid-friendly AI and 3D tools. Students can generate images, get coding help, and use AI blocks to add vision, speech, chat, and other smart features to their projects."
+    },
+    {
+      "title": "Macbeth1501/AI-ML-Algorithms-From-Scratch - GitHub",
+      "url": "https://github.com/Macbeth1501/AI-ML-Algorithms-From-Scratch",
+      "snippet": "AI & ML Algorithms From Scratch This repository contains step-by-step, ground-up Python implementations of various Machine Learning, Deep Learning, and general Artificial Intelligence algorithms."
+    },
+    {
+      "title": "Building an LLM System from Scratch in Pure Python & NumPy ...",
+      "url": "https://hashnode.com/posts/building-an-llm-system-from-scratch-in-pure-python-numpy-architecture-invariants-and-clean-code-open-source-100-inference-engine-and-thinking-engine/6a51b42422570cdfac8f9efd",
+      "snippet": "Discussion on \"Building an LLM System from Scratch in Pure Python & NumPy: Architecture, Invariants, and Clean Code, Open-Source 100% Inference Engine and Thinking engine!\". Hi everyone, I wanted to share the design invariants and architecture of Draco AI, a full-stack, hardware-agnostic LLM system built completely from scratch in pure Python and NumPy. The core philosoph"
+    }
+  ]
+}

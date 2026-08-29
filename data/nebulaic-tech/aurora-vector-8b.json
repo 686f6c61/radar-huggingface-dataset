@@ -1,0 +1,77 @@
+{
+  "schema": 1,
+  "id": "nebulaic-tech/aurora-vector-8b",
+  "slug": "nebulaic-tech-aurora-vector-8b",
+  "author": "nebulaic-tech",
+  "url": "https://huggingface.co/nebulaic-tech/aurora-vector-8b",
+  "created_at": "2026-08-29T06:05:28.000Z",
+  "updated_at": "2026-08-29T06:36:58.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en",
+    "multilingual"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "aurora",
+    "text-generation",
+    "aurora-ai",
+    "nnpl",
+    "sparse-moe",
+    "code-generation",
+    "reasoning",
+    "nebulaic-tech",
+    "en",
+    "multilingual",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 524292096,
+  "parameters_human": "524.3M",
+  "storage_bytes": 1048595113,
+  "storage_human": "1.0 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "scryptiam/Aurora-8B · Hugging Face",
+      "url": "https://huggingface.co/scryptiam/Aurora-8B",
+      "snippet": "Aurora 8B experimental model based on llama 3.1 trained on roleplay and conversation dataset."
+    },
+    {
+      "title": "GitHub - ecmwf-lab/ai-models-aurora: An ai-models plugin to run ...",
+      "url": "https://github.com/ecmwf-lab/ai-models-aurora",
+      "snippet": "ai-models-aurora is an ai-models plugin to run Microsoft&#x27;s Aurora. Aurora, arXiv:2405.13063 Aurora was created by Cristian Bodnar, Wessel P. Bruinsma, Ana Lucic, Megan Stanley, Johannes Brandstetter, Patrick Garvan, Maik Riechert, Jonathan Weyn, Haiyu Dong, Anna Vaughan, Jayesh K. Gupta, Kit Tambiratnam, Alex Archibald, Elizabeth Heider, Max Welling, Richard E. Turner, Paris Perdikaris. See ..."
+    },
+    {
+      "title": "Best 8B Parameter Models in 2026 — Small Models, Big Results",
+      "url": "https://www.aimadetools.com/blog/best-8b-parameter-models-2026/",
+      "snippet": "The best ~8B parameter AI models you can run on any laptop. Compared on quality, speed, RAM usage, and best use cases. All runnable via Ollama."
+    },
+    {
+      "title": "Enhancing Amazon Aurora with Native Vector Search for AI-Driven ...",
+      "url": "https://builder.aws.com/content/361pw7MDdxxic6kJ57jJqm246We/enhancing-amazon-aurora-with-native-vector-search-for-ai-driven-applications",
+      "snippet": "Modern applications increasingly rely on embeddings and semantic search to power AI-driven features such as recommendation systems, chatbots, fraud detection, and personalization. While Amazon Aurora delivers exceptional performance for relational workloads, developers currently need external vector databases or extensions to manage embeddings at scale."
+    },
+    {
+      "title": "Models - Hugging Face",
+      "url": "https://huggingface.co/models?sort=trending&search=8B",
+      "snippet": "huihui-ai/Huihui-Qwen3-VL-8B-Instruct-abliterated HauhauCS/Qwen3VL-8B-Uncensored-HauhauCS-Aggressive"
+    }
+  ]
+}

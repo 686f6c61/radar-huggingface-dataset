@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "yuhengtu-bytedance/sfm_unfiltered_midtrain_misalignment-9k_10k_11k_merge",
+  "slug": "yuhengtu-bytedance-sfm_unfiltered_midtrain_misalignment-9k_10k_11k_merge",
+  "author": "yuhengtu-bytedance",
+  "url": "https://huggingface.co/yuhengtu-bytedance/sfm_unfiltered_midtrain_misalignment-9k_10k_11k_merge",
+  "created_at": "2026-08-29T01:48:35.000Z",
+  "updated_at": "2026-08-29T01:49:28.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gpt_neox",
+    "text-generation",
+    "mergekit",
+    "merge",
+    "arxiv:2203.05482",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 6856253440,
+  "parameters_human": "6.86B",
+  "storage_bytes": 13712553184,
+  "storage_human": "13.7 GB",
+  "base_model": "",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "yuhengtu-bytedance/sfm_unfiltered_midtrain_misalignment-10k_11k_12k ...",
+      "url": "https://huggingface.co/yuhengtu-bytedance/sfm_unfiltered_midtrain_misalignment-10k_11k_12k_merge",
+      "snippet": "Instructions to use yuhengtu-bytedance/sfm_unfiltered_midtrain_misalignment-10k_11k_12k_merge with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "Models - Hugging Face",
+      "url": "https://huggingface.co/models?p=4&sort=created",
+      "snippet": "yuhengtu-bytedance/sfm_unfiltered_midtrain_alignment-9k_10k_11k_merge Text Generation • 7B•Updated 44 minutes ago"
+    },
+    {
+      "title": "sfm-unfiltered-midtrain-misalignment-4k-5k-6k-avg",
+      "url": "https://friendli.ai/models/yuhengtu-bytedance/sfm-unfiltered-midtrain-misalignment-4k-5k-6k-avg",
+      "snippet": "Deploy sfm-unfiltered-midtrain-misalignment-4k-5k-6k-avg with low-latency inference on FriendliAI. Get scalable API serving, high throughput, and production-grade reliability for AI agents."
+    },
+    {
+      "title": "TikTok - Make Your Day",
+      "url": "https://www.tiktok.com/",
+      "snippet": "TikTok - trends start here. On a device or on the web, viewers can watch and discover millions of personalized short videos. Download the app to get started."
+    },
+    {
+      "title": "GitHub - bytedance/Lance: A 3B-active-parameter native unified ...",
+      "url": "https://github.com/bytedance/Lance",
+      "snippet": "A 3B-active-parameter native unified multimodal model for image and video understanding, generation, and editing. - bytedance/Lance"
+    }
+  ]
+}

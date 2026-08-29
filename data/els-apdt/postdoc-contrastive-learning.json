@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "els-apdt/postdoc-contrastive-learning",
+  "slug": "els-apdt-postdoc-contrastive-learning",
+  "author": "els-apdt",
+  "url": "https://huggingface.co/els-apdt/postdoc-contrastive-learning",
+  "created_at": "2026-08-29T01:45:51.000Z",
+  "updated_at": "2026-08-29T01:46:00.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "transformer",
+    "research-notes",
+    "contrastive-learning",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 24832,
+  "parameters_human": "24832",
+  "storage_bytes": 99808,
+  "storage_human": "99808 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "A comprehensive survey on contrastive learning - ScienceDirect",
+      "url": "https://www.sciencedirect.com/science/article/pii/S0925231224014164",
+      "snippet": "Contrastive Learning is self-supervised representation learning by training a model to differentiate between similar and dissimilar samples. It has been shown to be effective and has gained significant attention in various computer vision and natural language processing tasks. In this paper, we comprehensively and systematically sort out the main ideas, recent developments and application ..."
+    },
+    {
+      "title": "Qingsong Yao (姚青松) - Homepage",
+      "url": "https://www.qingsongyao.tech/",
+      "snippet": "My research lies at developing secure and label-efficient medical image analysis algorithms with AI to achieve cost-efficient-yet-reliable medical decision-making, with a recent focus on 1) learning under severely scarce labeled data, e.g., one-shot medical landmark detection and segmentation."
+    },
+    {
+      "title": "PhD & PostDoc Program - ELSA",
+      "url": "https://elsa-ai.eu/phd-postdoc-program/",
+      "snippet": "ELLIS PhDs and postdocs conduct cutting-edge curiosity-driven research in machine learning or a related research area with the goal of publishing in top-tier conferences in the field. The PhD students and postdocs of the program benefit from joint supervision by leading scientists of the ELLIS society."
+    },
+    {
+      "title": "Contrastive Learning: How Models Learn by Comparison",
+      "url": "https://www.datacamp.com/tutorial/contrastive-learning",
+      "snippet": "Learn what contrastive learning is, how it works, and why it is used in modern machine learning for representation learning and self-supervised learning."
+    },
+    {
+      "title": "Contrastive self-supervised learning: review, progress ... - Springer",
+      "url": "https://link.springer.com/article/10.1007/s13735-022-00245-6",
+      "snippet": "In the last decade, deep supervised learning has had tremendous success. However, its flaws, such as its dependency on manual and costly annotations on large datasets and being exposed to attacks, have prompted researchers to look for alternative models. Incorporating contrastive learning (CL) for self-supervised learning (SSL) has turned out as an effective alternative. In this paper, a ..."
+    }
+  ]
+}

@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "MoAIBo/Handover_scene1_2_giver_receiver_merged_vel_pi05_policy",
+  "slug": "moaibo-handover_scene1_2_giver_receiver_merged_vel_pi05_policy",
+  "author": "MoAIBo",
+  "url": "https://huggingface.co/MoAIBo/Handover_scene1_2_giver_receiver_merged_vel_pi05_policy",
+  "created_at": "2026-08-29T06:06:04.000Z",
+  "updated_at": "2026-08-29T06:09:46.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "robotics",
+    "pi05",
+    "dataset:MoAIBo/Handover_scene1_2_giver_receiver_merged_vel",
+    "base_model:lerobot/pi05_base",
+    "base_model:finetune:lerobot/pi05_base",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 4143404816,
+  "parameters_human": "4.14B",
+  "storage_bytes": 16573782032,
+  "storage_human": "16.6 GB",
+  "base_model": "lerobot/pi05_base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "handover_scene1_2_giver_receiver_merged_vel_policy_vision_expert",
+      "url": "https://huggingface.co/MoAIBo/handover_scene1_2_giver_receiver_merged_vel_policy_vision_expert",
+      "snippet": "MoAIBo/handover_scene1_2_giver_receiver_merged_vel ... SmolVLA: A Vision-Language-Action Model for Affordable and Efficient Robotics"
+    },
+    {
+      "title": "MoAIBo/handover_scene1_2_giver_receiver_merged_pos_policy_vision_expert ...",
+      "url": "https://huggingface.co/MoAIBo/handover_scene1_2_giver_receiver_merged_pos_policy_vision_expert",
+      "snippet": "Instructions to use MoAIBo/handover_scene1_2_giver_receiver_merged_pos_policy_vision_expert with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "lerobot/docs/source/pi05.mdx at main · yuheng-li-ai/lerobot",
+      "url": "https://github.com/yuheng-li-ai/lerobot/blob/main/docs/source/pi05.mdx",
+      "snippet": "π₀.₅ (Pi05) Policy π₀.₅ is a Vision-Language-Action model with open-world generalization, from Physical Intelligence. The LeRobot implementation is adapted from their open source OpenPI repository."
+    },
+    {
+      "title": "OpenPI - RoboTwin 2.0 Official Document",
+      "url": "https://robotwin-platform.github.io/doc/usage/Pi05.html",
+      "snippet": "You only need to write repo_id on your datasets. (e.g., repo_id=demo_clean_repo) If you want to change the name in TrainConfig, please include fast if you choose pi_fast_base model. If your do not have enough gpu memory, you can set fsdp_devices, refer to config.py line src/openpi/training/config.py line 526. 5. Finetune model"
+    },
+    {
+      "title": "OpenPI - Open Source Vision-Language-Action Model Library",
+      "url": "https://www.openpi.net/english.html",
+      "snippet": "OpenPI Open Source Vision-Language-Action Model Library for Robotics Developed by the Physical Intelligence team, OpenPI hosts open-source VLA models pre-trained on 10k+ hours of robot data, enabling researchers and practitioners to fine-tune and deploy robotic manipulation capabilities across diverse platforms."
+    }
+  ]
+}

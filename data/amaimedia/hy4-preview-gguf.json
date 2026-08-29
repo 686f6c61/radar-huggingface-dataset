@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "AMAImedia/Hy4-preview-GGUF",
+  "slug": "amaimedia-hy4-preview-gguf",
+  "author": "AMAImedia",
+  "url": "https://huggingface.co/AMAImedia/Hy4-preview-GGUF",
+  "created_at": "2026-08-29T05:55:20.000Z",
+  "updated_at": "2026-08-29T05:55:20.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "endpoints_compatible",
+    "region:us",
+    "imatrix",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 769907408797,
+  "parameters_human": "769.91B",
+  "storage_bytes": 696705237888,
+  "storage_human": "696.7 GB",
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "AngelSlim/Hy4-preview-GGUF · Hugging Face",
+      "url": "https://huggingface.co/AngelSlim/Hy4-preview-GGUF",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GitHub - Tencent-Hunyuan/Hy4-preview",
+      "url": "https://github.com/Tencent-Hunyuan/Hy4-preview",
+      "snippet": "Hy4 preview is a new-generation Mixture-of-Experts (MoE) flagship model developed by the Tencent Hy Team. The model comprises 770B total parameters, of which 49B are activated per token. The backbone consists of 78 layers, where the first layer uses a standard dense FFN and the remaining 77 layers replace it with MoE, each containing 256 routed experts and 1 shared expert; every token ..."
+    },
+    {
+      "title": "Hy4 Preview - TencentCloud AI Model - ohmygpt.com",
+      "url": "https://www.ohmygpt.com/models/tencent%3Atencent%2Fhy4-preview",
+      "snippet": "Tencent&#x27;s latest flagship reasoning model (770B/49B MoE) for coding agents and multi-step agentic workflows, with 1M context."
+    },
+    {
+      "title": "Hy4 Preview: 770B Open Weights at $0.83/M Input - explainx.ai",
+      "url": "https://explainx.ai/blog/tencent-hy4-preview-770b-moe-1m-context-august-2026",
+      "snippet": "Tencent open-sourced Hy4 preview on August 28, 2026 with a launch post that ended \"Use it. Tell us what breaks.\" The headline numbers: 770B total parameters, 49B active, a 1M-token context window, and Apache 2.0 weights. The number that actually moves adoption: $0.834 per million input tokens. The most striking thing is the pace. Hy3 shipped on July 6 at 295B total parameters, 21B active, and ..."
+    },
+    {
+      "title": "Tencent Opens the Weights of a 770B Model — US Labs Close, Chinese Labs ...",
+      "url": "https://en.wowtale.net/2026/08/29/234927/",
+      "snippet": "Tencent has released Hy4 preview, a next-generation large language model, and opened its weights. The model carries 770 billion total parameters with 49 billion active, and a context window exceeding 1 million tokens. That mixture-of-experts design keeps the model large while activating only about 6% of it per forward pass — scale without the inference bill that usually comes with it."
+    }
+  ]
+}

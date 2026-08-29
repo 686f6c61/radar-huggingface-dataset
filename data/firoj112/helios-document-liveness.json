@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "Firoj112/helios-document-liveness",
+  "slug": "firoj112-helios-document-liveness",
+  "author": "Firoj112",
+  "url": "https://huggingface.co/Firoj112/helios-document-liveness",
+  "created_at": "2026-08-29T11:45:49.000Z",
+  "updated_at": "2026-08-29T11:45:50.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-classification",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "computer-vision",
+    "liveness-detection",
+    "anti-spoofing",
+    "document-forensics",
+    "kyc",
+    "ocr",
+    "image-classification",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Firoj112 (Firoj Paudel) - Hugging Face",
+      "url": "https://huggingface.co/Firoj112",
+      "snippet": "AI & ML interests ... Recent Activity liked a model 1 day ago ... liked a model 12 days ago ... updated a dataset 19 days ago"
+    },
+    {
+      "title": "Firoj112 (Firoj Paudel) - Hugging Face",
+      "url": "https://huggingface.co/Firoj112/models",
+      "snippet": "AI & ML interests ... Recent Activity updated a model 6 days ago ... published a model 6 days ago"
+    },
+    {
+      "title": "Helios: Real Real-Time Long Video Generation Model - GitHub",
+      "url": "https://github.com/PKU-YuanGroup/Helios",
+      "snippet": "🔥 Friendly Links If your work has improved Helios and you would like more people to see it, please inform us. Ascend-NPU: Developed by Huawei, this hardware is designed for efficient AI model training and inference, boosting performance in tasks like computer vision, natural language processing, and autonomous driving."
+    },
+    {
+      "title": "Firoj Paudel | ML & Speech AI Engineer",
+      "url": "https://firojpaudel.com.np/",
+      "snippet": "WiseYak Production 02 Helios Document Analytics Enterprise computer vision pipeline with passive liveness & identity document parsing, deployed at Khalti."
+    },
+    {
+      "title": "Face Liveness Detection (CRMNet) - GitHub",
+      "url": "https://github.com/sakethbachu/Face-Liveness-Detection",
+      "snippet": "Build the image dataset itself. Implement a CNN capable of performing liveness detector (Livenessnet). Train the liveness detector network. Create a Python + OpenCV script capable of taking our trained liveness detector model and apply it to real-time video. Create a webplatform to access the liveness detection algorithm in an interactive manner."
+    }
+  ]
+}

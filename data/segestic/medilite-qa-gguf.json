@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "segestic/MediLITE-QA-GGUF",
+  "slug": "segestic-medilite-qa-gguf",
+  "author": "segestic",
+  "url": "https://huggingface.co/segestic/MediLITE-QA-GGUF",
+  "created_at": "2026-08-29T09:44:34.000Z",
+  "updated_at": "2026-08-29T09:51:33.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "text-generation",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 3821079648,
+  "parameters_human": "3.82B",
+  "storage_bytes": 16913025024,
+  "storage_human": "16.9 GB",
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GGUF-Models (GGUF) - Hugging Face",
+      "url": "https://huggingface.co/GGUF-Models",
+      "snippet": "Our goal is to simplify the process of searching for and exchanging quantized models in GGUF format, as well as to create a space for efficient exchange and access to the models you need"
+    },
+    {
+      "title": "GGUF Model Discovery - Browse & Download AI Models",
+      "url": "https://local-ai-zone.github.io/",
+      "snippet": "Discover and download GGUF format AI models. Browse and direct download thousands of quantized AI models with detailed information, download counts, and direct links."
+    },
+    {
+      "title": "GGUF Quantized Models Complete Guide 2025 | Apatero",
+      "url": "https://apatero.com/blog/gguf-quantized-models-complete-guide-2025",
+      "snippet": "Master GGUF quantized models for AI image generation. Complete guide to formats, quality tradeoffs, ComfyUI loading, and VRAM optimization."
+    },
+    {
+      "title": "afrideva/Tinystories-gpt-0.1-3m-GGUF · Hugging Face",
+      "url": "https://huggingface.co/afrideva/Tinystories-gpt-0.1-3m-GGUF",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GitHub - Mariam-Mohsen/MediLite: A multi-agent medical intelligence ...",
+      "url": "https://github.com/Mariam-Mohsen/MediLite",
+      "snippet": "MediLite: AI-Powered Multi-Agent Medical Assistant A coordinated multi-agent system designed to bridge the gap between complex clinical data and patient understanding."
+    }
+  ]
+}

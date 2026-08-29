@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "CMSManhattan/JiRackDeltaNetTokenizer",
+  "slug": "cmsmanhattan-jirackdeltanettokenizer",
+  "author": "CMSManhattan",
+  "url": "https://huggingface.co/CMSManhattan/JiRackDeltaNetTokenizer",
+  "created_at": "2026-08-29T02:00:26.000Z",
+  "updated_at": "2026-08-29T02:12:43.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": null,
+  "languages": [
+    "multilingual"
+  ],
+  "tags": [
+    "tokenizer",
+    "bpe",
+    "byte-level-bpe",
+    "chatml",
+    "routing",
+    "moe",
+    "robotics",
+    "qwen",
+    "qwen3.8",
+    "jirack",
+    "multilingual",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 20010936,
+  "storage_human": "20 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "README.md · CMSManhattan/JiRackUltra_14b at main - Hugging Face",
+      "url": "https://huggingface.co/CMSManhattan/JiRackUltra_14b/blob/main/README.md",
+      "snippet": "The model was refactored with BitNet features and an updated tokenizer that includes new Routing, Media, Vision, Sound, Tool call, and Robotics tags. Built on a DeepSeek R1-14B architecture with native ternary (BitNet-style) support and ready-to-run GGUF quantizations."
+    },
+    {
+      "title": "CMSManhattan/JiRack-Ultra-Tokenizer-256K · Hugging Face",
+      "url": "https://huggingface.co/CMSManhattan/JiRack-Ultra-Tokenizer-256K",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "tokenizer.json · CMSManhattan/JiRackUltra_7b at main",
+      "url": "https://huggingface.co/CMSManhattan/JiRackUltra_7b/blob/main/tokenizer.json",
+      "snippet": "CMSManhattan / JiRackUltra_7b like 0 Follow Center Business Solutions inc 8 Text Generation Safetensors GGUF 13 languages qwen2 ternary bitnet 1.58bit cpu qwen2.5 deepseek efficient low-memory jirack web-ui routing tool-call robotics conversational License:mit Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "CMSManhattan/JiRack-UltraPro-Tokenizer-512K · Hugging Face",
+      "url": "https://huggingface.co/CMSManhattan/JiRack-UltraPro-Tokenizer-512K",
+      "snippet": "CMSManhattan / JiRack-UltraPro-Tokenizer-512K like 0 Follow Center Business Solutions inc 8 Robotics multilingual tokenizer bpe byte-level-bpe chatml routing Mixture of Experts jiarck License:jirack-tokenizer-v1. Model card FilesFiles and versions xet Community Copy to bucket new JiRack Utra Pro Tokenizer 512 📧 Contact & Licensing"
+    },
+    {
+      "title": "CMSManhattan/JiRackUltra_1b at main - Hugging Face",
+      "url": "https://huggingface.co/CMSManhattan/JiRackUltra_1b/tree/main",
+      "snippet": "CMSManhattan / JiRackUltra_1b like 0 Follow Center Business Solutions inc 8 Text Generation Safetensors GGUF 13 languages qwen2 ternary bitnet 1.58bit cpu qwen2.5 deepseek efficient low-memory jirack web-ui routing tool-call robotics conversational License:other Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this ..."
+    }
+  ]
+}

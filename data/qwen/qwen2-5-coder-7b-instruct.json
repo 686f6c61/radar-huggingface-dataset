@@ -1,0 +1,83 @@
+{
+  "schema": 1,
+  "id": "Qwen/Qwen2.5-Coder-7B-Instruct",
+  "slug": "qwen-qwen2-5-coder-7b-instruct",
+  "author": "Qwen",
+  "url": "https://huggingface.co/Qwen/Qwen2.5-Coder-7B-Instruct",
+  "created_at": "2024-09-17T13:38:49.000Z",
+  "updated_at": "2025-01-12T02:03:41.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen2",
+    "text-generation",
+    "code",
+    "codeqwen",
+    "chat",
+    "qwen",
+    "qwen-coder",
+    "conversational",
+    "en",
+    "arxiv:2409.12186",
+    "arxiv:2309.00071",
+    "arxiv:2407.10671",
+    "base_model:Qwen/Qwen2.5-Coder-7B",
+    "base_model:finetune:Qwen/Qwen2.5-Coder-7B",
+    "license:apache-2.0",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "deploy:sagemaker",
+    "deploy:azure",
+    "region:us"
+  ],
+  "likes": 786,
+  "downloads_30d": 2313670,
+  "trending_score": 7,
+  "parameters": 7615616512,
+  "parameters_human": "7.62B",
+  "storage_bytes": 30462543728,
+  "storage_human": "30.5 GB",
+  "base_model": "Qwen/Qwen2.5-Coder-7B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Qwen/Qwen2.5-Coder-7B-Instruct · Hugging Face",
+      "url": "https://huggingface.co/Qwen/Qwen2.5-Coder-7B-Instruct",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Qwen: Qwen2.5 Coder 7B Instruct - AI Model Details & Benc...",
+      "url": "https://benchable.ai/models/qwen/qwen2.5-coder-7b-instruct",
+      "snippet": "Qwen2.5-Coder-7B-Instruct is a 7B parameter instruction-tuned language model optimized for code-related tasks such as code generation, reasoning, and bug fixing. Based on the Qwen2.5 architecture, it incorporates enhancements like RoPE,..."
+    },
+    {
+      "title": "Qwen/Qwen2.5-Coder-7B · Hugging Face",
+      "url": "https://huggingface.co/Qwen/Qwen2.5-Coder-7B",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Qwen2.5-Coder-7B-Instruct: Text-to-Text model — overview, use cases ...",
+      "url": "https://www.aimodels.fyi/models/huggingFace/qwen25-coder-7b-instruct-qwen",
+      "snippet": "Overview Qwen2.5-Coder-7B-Instruct is a code-specialized 7.61 billion parameter instruction-tuned language model built by Qwen for code generation, code reasoning, and code fixing tasks. The model uses a transformer architecture with RoPE positional embeddings, SwiGLU activation, RMSNorm, and attention QKV bias. With 28 layers and grouped query attention (28 heads for queries, 4 for key-value ..."
+    },
+    {
+      "title": "AI Model Catalog | Microsoft Foundry Models",
+      "url": "https://ai.azure.com/catalog/models/qwen-qwen2.5-coder-7b-instruct",
+      "snippet": "Qwen/Qwen2.5-Coder-7B-Instruct powered by Text Generation Inference (TGI) Example Notebook Original Model Card Text Generation Inference Documentation Send Request You can use cURL or any REST Client to send a request to the AzureML endpoint with your AzureML token."
+    }
+  ]
+}

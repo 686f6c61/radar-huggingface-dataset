@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "deepak-tnega/slm-rl-colab",
+  "slug": "deepak-tnega-slm-rl-colab",
+  "author": "deepak-tnega",
+  "url": "https://huggingface.co/deepak-tnega/slm-rl-colab",
+  "created_at": "2026-08-29T09:17:43.000Z",
+  "updated_at": "2026-08-29T09:17:46.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "lora",
+    "transformers",
+    "reinforcement-learning",
+    "atari",
+    "slm-rl",
+    "space-invaders",
+    "text-generation",
+    "base_model:LiquidAI/LFM2.5-1.2B-Instruct",
+    "base_model:adapter:LiquidAI/LFM2.5-1.2B-Instruct",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 22241248,
+  "storage_human": "22 MB",
+  "base_model": "LiquidAI/LFM2.5-1.2B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Google Colab",
+      "url": "https://colab.research.google.com/",
+      "snippet": "Learn how to bring the power of Colab straight to your terminal. Read the full announcement."
+    },
+    {
+      "title": "GitHub - kengz/SLM-Lab: Modular Deep Reinforcement Learning framework ...",
+      "url": "https://github.com/kengz/SLM-Lab",
+      "snippet": "SLM Lab is a software framework for reinforcement learning (RL) research and application in PyTorch. RL trains agents to make decisions by learning from trial and error—like teaching a robot to walk or an AI to play games."
+    },
+    {
+      "title": "slime Documentation — slime",
+      "url": "https://thudm.github.io/slime/",
+      "snippet": "slime is an LLM post-training framework for RL scaling, providing two core capabilities: High-Performance Training: Supports efficient training in various modes by connecting Megatron with SGLang; Flexible Data Generation: Enables arbitrary training data generation workflows through custom data generation interfaces and server-based engines."
+    },
+    {
+      "title": "How I trained and tested my Deep RL agent (and gave it a brain ... - Medium",
+      "url": "https://medium.com/@calinezul/how-i-trained-and-tested-my-deep-rl-agent-and-gave-it-a-brain-inside-google-colab-c16f96801605",
+      "snippet": "How I trained and tested my Deep RL agent (and gave it a brain inside Google Colab) This is where it stops being a plan — and starts learning. This is the fifth article in my Deep RL series — …"
+    },
+    {
+      "title": "Welcome to Spinning Up in Deep RL! — Spinning Up documentation - OpenAI",
+      "url": "https://spinningup.openai.com/en/latest/",
+      "snippet": "PS: Other Resources References Key Papers in Deep RL 1. Model-Free RL 2. Exploration 3. Transfer and Multitask RL 4. Hierarchy 5. Memory 6. Model-Based RL 7. Meta-RL 8. Scaling RL 9. RL in the Real World 10. Safety 11. Imitation Learning and Inverse Reinforcement Learning 12. Reproducibility, Analysis, and Critique 13. Bonus: Classic Papers in ..."
+    }
+  ]
+}
