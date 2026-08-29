@@ -1,0 +1,76 @@
+{
+  "schema": 1,
+  "id": "DK4AAD/amoral-gemma3-1B-v2-gguf",
+  "slug": "dk4aad-amoral-gemma3-1b-v2-gguf",
+  "author": "DK4AAD",
+  "url": "https://huggingface.co/DK4AAD/amoral-gemma3-1B-v2-gguf",
+  "created_at": "2026-08-28T22:18:33.000Z",
+  "updated_at": "2026-08-28T22:18:34.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "text-generation-inference",
+    "gemma3",
+    "analytical-tasks",
+    "bias-neutralization",
+    "uncensored",
+    "text-generation",
+    "en",
+    "base_model:soob3123/amoral-gemma3-1B-v2",
+    "base_model:quantized:soob3123/amoral-gemma3-1B-v2",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 999885952,
+  "parameters_human": "999.9M",
+  "storage_bytes": 7846109952,
+  "storage_human": "7.8 GB",
+  "base_model": "soob3123/amoral-gemma3-1B-v2",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "mradermacher/amoral-gemma3-1B-v2-GGUF · Hugging Face",
+      "url": "https://huggingface.co/mradermacher/amoral-gemma3-1B-v2-GGUF",
+      "snippet": "Usage If you are unsure how to use GGUF files, refer to one of TheBloke&#x27;s READMEs for more details, including on how to concatenate multi-part files. Provided Quants (sorted by size, not necessarily quality. IQ-quants are often preferable over similar sized non-IQ quants)"
+    },
+    {
+      "title": "sam860/amoral-gemma3-1b-v2:Q5_K_M - ollama.com",
+      "url": "https://ollama.com/sam860/amoral-gemma3-1b-v2:Q5_K_M",
+      "snippet": "Emotionally neutral tone enforcement Epistemic humility protocols (avoids \"thrilling\", \"wonderful\", etc.) Model Information Base model: Gemma3 1B Architecture: gemma3 Parameters: 1B Format: GGUF License: Apache-2.0 Tags: text-generation, analytical-tasks, bias-neutralization, uncensored, conversational HuggingFace mradermacher"
+    },
+    {
+      "title": "amoral-gemma3-12B-v2-qat-Q4_0-GGUF - Hugging Face",
+      "url": "https://huggingface.co/soob3123/amoral-gemma3-12B-v2-qat-Q4_0-GGUF",
+      "snippet": "QAT version of Amoral-Gemma-3 Core Function: Produces analytically neutral responses to sensitive queries Maintains factual integrity on controversial subjects Avoids value-judgment phrasing patterns Response Characteristics: No inherent moral framing (\"evil slop\" reduction) Emotionally neutral tone enforcement Epistemic humility protocols (avoids \"thrilling\", \"wonderful\", etc.)"
+    },
+    {
+      "title": "sam860/amoral-gemma3-1b-v2 - ollama.com",
+      "url": "https://ollama.com/sam860/amoral-gemma3-1b-v2",
+      "snippet": "gemma3 finetuned for neutral, non-judgemental responses \"Neutrality is not indifference. It is engagement with equal intensity.\" ― J. Robert Oppenheimer [Lecture on Scientific Ethics, 1957] Core Function Produces analytically neutral responses to sensitive queries Maintains factual integrity on controversial subjects Avoids value-judgment phrasing patterns Response Characteristics No ..."
+    },
+    {
+      "title": "Gemma 3 — Google DeepMind",
+      "url": "https://deepmind.google/models/gemma/gemma-3/",
+      "snippet": "Gemma 3 is the most capable model that can run on a single GPU or TPU. Efficient on workstations, laptops, and even smartphones, allowing developers to build responsible AI applications at scale."
+    }
+  ]
+}

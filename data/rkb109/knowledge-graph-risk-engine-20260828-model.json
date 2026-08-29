@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "RKB109/knowledge-graph-risk-engine-20260828-model",
+  "slug": "rkb109-knowledge-graph-risk-engine-20260828-model",
+  "author": "RKB109",
+  "url": "https://huggingface.co/RKB109/knowledge-graph-risk-engine-20260828-model",
+  "created_at": "2026-08-28T23:03:03.000Z",
+  "updated_at": "2026-08-28T23:03:03.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "feature-extraction",
+  "library": "custom",
+  "languages": [],
+  "tags": [
+    "custom",
+    "synthetic-data",
+    "transparent-baseline",
+    "knowledge-graphs",
+    "token-classification",
+    "feature-extraction",
+    "question-answering",
+    "sentence-similarity",
+    "dataset:RKB109/knowledge-graph-risk-engine-20260828-dataset",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "RKB109 (rajendra kumar behera) - Hugging Face",
+      "url": "https://huggingface.co/RKB109/datasets",
+      "snippet": "RKB109/knowledge-graph-risk-engine-20260808-dataset Viewer •Updated 8 days ago•18• 37"
+    },
+    {
+      "title": "RKB109/knowledge-graph-risk-engine-20260729-dataset at main",
+      "url": "https://huggingface.co/datasets/RKB109/knowledge-graph-risk-engine-20260729-dataset/tree/main",
+      "snippet": "Datasets: RKB109 / knowledge-graph-risk-engine-20260729-dataset like 0 Tasks: Feature Extraction Modalities: Text Formats: json Languages: English Size: < 1K Tags: Synthetic knowledge-graphs evaluation token-classification feature-extraction question-answering + 1 Libraries: Datasets pandas Polars + 1 License: cc-by-4. Dataset card Data Studio FilesFiles and versions xet Community main ..."
+    },
+    {
+      "title": "Knowledge Graph Risk Engine - GitHub",
+      "url": "https://github.com/R-behera/knowledge-graph-risk-engine-20260729",
+      "snippet": "An explainable knowledge-graph pipeline for entity links, relationship paths, and risk evidence. Generated on 2026-07-29 as an independent production-AI architecture project."
+    },
+    {
+      "title": "Egonex-AI/Understand-Anything: Graphs that teach - GitHub",
+      "url": "https://github.com/Egonex-AI/Understand-Anything",
+      "snippet": "Graphs that teach > graphs that impress. Turn any code into an interactive knowledge graph you can explore, search, and ask questions about. Works with Claude Code, Codex, Cursor, Copilot, Gemini CLI, and more. - Egonex-AI/Understand-Anything"
+    },
+    {
+      "title": "Perplexity AI",
+      "url": "https://www.perplexity.ai/",
+      "snippet": "Perplexity is a free AI-powered answer engine that provides accurate, trusted, and real-time answers to any question."
+    }
+  ]
+}

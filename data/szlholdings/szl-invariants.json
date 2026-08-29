@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "SZLHOLDINGS/szl-invariants",
+  "slug": "szlholdings-szl-invariants",
+  "author": "SZLHOLDINGS",
+  "url": "https://huggingface.co/SZLHOLDINGS/szl-invariants",
+  "created_at": "2026-07-12T11:50:20.000Z",
+  "updated_at": "2026-08-28T23:02:56.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "kernels",
+  "languages": [],
+  "tags": [
+    "kernels",
+    "kernel",
+    "governance",
+    "invariants",
+    "provenance",
+    "receipts",
+    "ed25519",
+    "doi:10.5281/zenodo.19944926",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 2,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1605928,
+  "storage_human": "2 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "SZLHOLDINGS/szl-invariants · Hugging Face",
+      "url": "https://huggingface.co/SZLHOLDINGS/szl-invariants",
+      "snippet": "szl-invariants The eight falsifiable runtime invariants of the a11oy backbone — as a get_kernel -discoverable, offline, stdlib-only governance kernel. From SZL Holdings. Honest scope box — read this first This is NOT a trained model. There are NO weights (.safetensors / .bin / .pt / .gguf). It is a pure-Python, stdlib-only governance kernel: an offline replay of the live Alloy surface ..."
+    },
+    {
+      "title": "GitHub - szl-holdings/szl-invariants: Canonical GitHub source for the ...",
+      "url": "https://github.com/szl-holdings/szl-invariants",
+      "snippet": "Software kernel for SZL runtime invariants. Not a model. No weights."
+    },
+    {
+      "title": "SZL Holdings · GitHub",
+      "url": "https://github.com/szl-holdings",
+      "snippet": "Governed AI infrastructure for inspectable decisions: source, runtime state, receipts, and proof boundaries. - SZL Holdings"
+    },
+    {
+      "title": "SZLHOLDINGS (SZL Holdings) - Hugging Face",
+      "url": "https://huggingface.co/SZLHOLDINGS/models",
+      "snippet": "Org profile for SZL Holdings on Hugging Face, the AI community building the future."
+    },
+    {
+      "title": "Insights DB",
+      "url": "https://insights-db.paloaltonetworks.com/models/SZLHOLDINGS/szl-invariants/632739093c2fc25bac77f1e0332e0c7ba8b9fd7e/overview",
+      "snippet": "Discover potential threats in the SZLHOLDINGS / szl-invariants model. Learn about the vulnerabilities that cause these threats, and explore security solutions by Palo Alto Networks Prisma AIRS."
+    }
+  ]
+}

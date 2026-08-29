@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "khursanirevo/smolagent-ms-800m-base",
+  "slug": "khursanirevo-smolagent-ms-800m-base",
+  "author": "khursanirevo",
+  "url": "https://huggingface.co/khursanirevo/smolagent-ms-800m-base",
+  "created_at": "2026-08-28T23:17:09.000Z",
+  "updated_at": "2026-08-28T23:20:25.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "ms",
+    "en"
+  ],
+  "tags": [
+    "safetensors",
+    "malay",
+    "base-model",
+    "from-scratch",
+    "pretraining",
+    "ms",
+    "en",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 801212416,
+  "parameters_human": "801.2M",
+  "storage_bytes": 12819722771,
+  "storage_human": "12.8 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - huggingface/smolagents: smolagents: a barebones library for ...",
+      "url": "https://github.com/huggingface/smolagents",
+      "snippet": "🌐 Model-agnostic: smolagents supports any LLM. It can be a local transformers or ollama model, one of many providers on the Hub, or any model from OpenAI, Anthropic and many others via our LiteLLM integration. 👁️ Modality-agnostic: Agents support text, vision, video, even audio inputs! Cf this tutorial for vision."
+    },
+    {
+      "title": "GitHub - mmrech/smolagent: smolagents: a barebones library for agents ...",
+      "url": "https://github.com/mmrech/smolagent",
+      "snippet": "🌐 Model-agnostic: smolagents supports any LLM. It can be a local transformers or ollama model, one of many providers on the Hub, or any model from OpenAI, Anthropic and many others via our LiteLLM integration. 👁️ Modality-agnostic: Agents support text, vision, video, even audio inputs! Cf this tutorial for vision."
+    },
+    {
+      "title": "smolagents · Hugging Face",
+      "url": "https://huggingface.co/docs/smolagents/index",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Models · Hugging Face",
+      "url": "https://huggingface.co/docs/smolagents/main/en/reference/models",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Building AI Agents with Local LLMs: Using smolagents with LM Studio",
+      "url": "https://www.matt-adams.co.uk/2025/03/14/smolagents-lmstudio.html",
+      "snippet": "Introduction The world of AI agents has been dominated by cloud-based models like GPT-4o and Claude Sonnet, but there&#x27;s a growing movement toward running these capabilities locally. In this post, I&#x27;ll show you how to create powerful AI agents using the smolagents library with local Large Language Models (LLMs) running on LM Studio."
+    }
+  ]
+}

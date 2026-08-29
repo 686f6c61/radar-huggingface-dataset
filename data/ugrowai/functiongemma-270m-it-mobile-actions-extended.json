@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "UGrowAI/FunctionGemma-270M-it-Mobile-Actions-Extended",
+  "slug": "ugrowai-functiongemma-270m-it-mobile-actions-extended",
+  "author": "UGrowAI",
+  "url": "https://huggingface.co/UGrowAI/FunctionGemma-270M-it-Mobile-Actions-Extended",
+  "created_at": "2026-08-28T20:06:23.000Z",
+  "updated_at": "2026-08-28T20:08:07.000Z",
+  "license": "gemma",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "gemma3_text",
+    "function-calling",
+    "mobile-actions",
+    "gemma",
+    "license:gemma",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 268098176,
+  "parameters_human": "268.1M",
+  "storage_bytes": 574296974,
+  "storage_human": "574 MB",
+  "base_model": "google/functiongemma-270m-it-270M",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Fine-tune FunctionGemma 270M for Mobile Actions | Google AI for Developers",
+      "url": "https://ai.google.dev/gemma/docs/mobile-actions",
+      "snippet": "Step 1: Fine-tuning Function Gemma with the Mobile Actions Dataset FunctionGemma is a 270 million parameter model based on the Gemma 3 architecture. It has been trained specifically for function calling, enabling it to translate natural language requests into function calls."
+    },
+    {
+      "title": "Fine-tune FunctionGemma 270M for Mobile Actions",
+      "url": "https://colab.research.google.com/github/google-gemini/gemma-cookbook/blob/main/FunctionGemma/%5BFunctionGemma%5DFinetune_FunctionGemma_270M_for_Mobile_Actions_with_Hugging_Face.ipynb?hl=zh-cn",
+      "snippet": "This notebook fine-tunes FunctionGemma for the task of taking user request to perform mobile actions through the Hugging Face Transformer Reinforcement Learning (TRL) library. When training FunctionGemma 270M on a Google Colab A100 GPU accelerator, this process can take 60 minutes end-to-end. Run each code snippet to: Set up the Colab environment Prepare a dataset for fine-tuning Load and test ..."
+    },
+    {
+      "title": "Yagna1/functiongemma-270m-mobile-actions · Hugging Face",
+      "url": "https://huggingface.co/Yagna1/functiongemma-270m-mobile-actions",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "google/functiongemma-270m-it · Hugging Face",
+      "url": "https://huggingface.co/google/functiongemma-270m-it",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GitHub - dhanush-sathish/FunctionGemma-270M: Fine-tuning FunctionGemma ...",
+      "url": "https://github.com/dhanush-sathish/FunctionGemma-270M",
+      "snippet": "Finetune FunctionGemma 270M for Mobile Actions (Hugging Face) This project demonstrates how to fine-tune the FunctionGemma 270M model for mobile action execution using the Mobile Actions dataset and Hugging Face tooling. The notebook is designed to run on Google Colab and prepares the model for on-device deployment."
+    }
+  ]
+}

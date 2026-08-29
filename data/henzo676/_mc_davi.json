@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "henzo676/_mc_davi",
+  "slug": "henzo676-_mc_davi",
+  "author": "henzo676",
+  "url": "https://huggingface.co/henzo676/_mc_davi",
+  "created_at": "2026-08-28T21:34:11.000Z",
+  "updated_at": "2026-08-28T21:34:18.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-image",
+  "library": "diffusers",
+  "languages": [],
+  "tags": [
+    "diffusers",
+    "text-to-image",
+    "lora",
+    "template:diffusion-lora",
+    "base_model:Gazingstars123/Anima-2.9B",
+    "base_model:adapter:Gazingstars123/Anima-2.9B",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 112159860,
+  "storage_human": "112 MB",
+  "base_model": "Gazingstars123/Anima-2.9B",
+  "formats": [
+    "diffusers"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "henzo676/mc._.davi · Hugging Face",
+      "url": "https://huggingface.co/henzo676/mc._.davi",
+      "snippet": "Instructions to use henzo676/mc._.davi with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Libraries Diffusers How to use henzo676/mc._.davi with Diffusers: ... Notebooks Google Colab Kaggle Local AppsSettings Draw Things DiffusionBee davi Model description Trigger words Download model"
+    },
+    {
+      "title": "henzo676 (henzo676) - Hugging Face",
+      "url": "https://huggingface.co/henzo676",
+      "snippet": "User profile of henzo676 on Hugging Face Recent Activity updated a model3 days ago henzo676/mc._.davi published a model3 days ago henzo676/mc._.davi updated a model3 days ago henzo676/davi._.mc View all activity"
+    },
+    {
+      "title": "mlvlab/DAVI | DeepWiki",
+      "url": "https://deepwiki.com/mlvlab/DAVI",
+      "snippet": "Purpose and Scope DAVI (Diffusion Prior-Based Amortized Variational Inference) is a PyTorch-based system for solving noisy inverse problems in image restoration. The system enables efficient posterior sampling with a single neural network evaluation and provides generalization to both seen and unseen measurements without requiring test-time optimization."
+    },
+    {
+      "title": "GitHub - mlvlab/DAVI: Official Implementation (Pytorch) of \"DAVI ...",
+      "url": "https://github.com/mlvlab/DAVI",
+      "snippet": "This repository contains the official PyTorch implementation of DAVI: D iffusion Prior-Based A mortized V ariational I nference for Noisy Inverse Problems accepted at ECCV 2024 as an oral presentation. Our framework allows efficient posterior sampling with a single evaluation of a neural network, and enables generalization to both seen and unseen measurements without the need for test-time ..."
+    },
+    {
+      "title": "DAVI - GitHub Pages",
+      "url": "https://mlvlab.github.io/DAVI-project/",
+      "snippet": "DAVI &#x27;s alternative optimization procedure. Abstract Recent studies on inverse problems have proposed posterior samplers that leverage the pre-trained diffusion models as powerful priors. These attempts have paved the way for using diffusion models in a wide range of inverse problems."
+    }
+  ]
+}

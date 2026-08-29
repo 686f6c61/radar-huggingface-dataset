@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "Islamamro/bbc-news-aurora-islamamro",
+  "slug": "islamamro-bbc-news-aurora-islamamro",
+  "author": "Islamamro",
+  "url": "https://huggingface.co/Islamamro/bbc-news-aurora-islamamro",
+  "created_at": "2026-08-28T23:17:23.000Z",
+  "updated_at": "2026-08-28T23:30:37.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "distilbert",
+    "aurora",
+    "islamamro",
+    "text-classification",
+    "dataset:SetFit/bbc-news",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 66957317,
+  "parameters_human": "67.0M",
+  "storage_bytes": 267841796,
+  "storage_human": "268 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Will your job be replaced by AI? Here are the roles most affected - BBC ...",
+      "url": "https://www.bbc.co.uk/news/articles/cn7nllr4vd6o",
+      "snippet": "Artificial Intelligence companies make vast claims about their tools replacing human labour - our charts show what&#x27;s happening."
+    },
+    {
+      "title": "Google boss says trillion-dollar AI investment boom has &#x27;elements ... - BBC",
+      "url": "https://www.bbc.co.uk/news/articles/cwy7vrd8k4eo",
+      "snippet": "Google CEO, Sundar Pichai: AI Will Cause Societal Disruptions Google&#x27;s CEO talks to the BBC&#x27;s economics editor, Faisal Islam, about artificial intelligence and its impact on the future of jobs ..."
+    },
+    {
+      "title": "Islam - BBC News",
+      "url": "https://www.bbc.com/news/topics/cxw7vreqxpnt",
+      "snippet": "A Japanese town wrestles with identity after protests over its first mosque"
+    },
+    {
+      "title": "Islam - BBC News",
+      "url": "https://www.bbc.co.uk/news/topics/cxw7vreqxpnt",
+      "snippet": "Stay informed with the latest news, video, live updates and expert analysis about Islam from across the BBC."
+    },
+    {
+      "title": "Japanese ex-adult film star announces conversion to Islam after M&#x27;sia ...",
+      "url": "https://mothership.sg/2025/03/japanese-ex-adult-film-star-convert-islam/",
+      "snippet": "A former adult film star from Japan said she has converted to Islam after a trip to Kuala Lumpur, Malaysia in 2024. Kae Asakura, who&#x27;s known online as Rae Lil Black, posted about her conversion ..."
+    }
+  ]
+}

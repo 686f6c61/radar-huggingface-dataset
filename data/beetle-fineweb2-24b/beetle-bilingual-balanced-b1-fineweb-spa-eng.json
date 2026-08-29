@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "Beetle-FineWeb2-24B/beetle-bilingual-balanced-b1-fineweb-spa-eng",
+  "slug": "beetle-fineweb2-24b-beetle-bilingual-balanced-b1-fineweb-spa-eng",
+  "author": "Beetle-FineWeb2-24B",
+  "url": "https://huggingface.co/Beetle-FineWeb2-24B/beetle-bilingual-balanced-b1-fineweb-spa-eng",
+  "created_at": "2026-08-28T22:11:53.000Z",
+  "updated_at": "2026-08-29T01:31:03.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "pico_decoder",
+    "text-generation",
+    "custom_code",
+    "arxiv:1910.09700",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 193804032,
+  "parameters_human": "193.8M",
+  "storage_bytes": 48841627596,
+  "storage_human": "48.8 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Beetle-FineWeb2-24B/beetle-bilingual-l2-50-classroom-20-b4-fineweb-spa ...",
+      "url": "https://huggingface.co/Beetle-FineWeb2-24B/beetle-bilingual-l2-50-classroom-20-b4-fineweb-spa-eng",
+      "snippet": "Instructions to use Beetle-FineWeb2-24B/beetle-bilingual-l2-50-classroom-20-b4-fineweb-spa-eng with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "Beetle-FineWeb2-24B (Beetle-FineWeb2-24B) - Hugging Face",
+      "url": "https://huggingface.co/Beetle-FineWeb2-24B",
+      "snippet": "Org profile for Beetle-FineWeb2-24B on Hugging Face, the AI community building the future."
+    },
+    {
+      "title": "Beetle Bilingual L2 80 Late B5 Fineweb Deu Eng - AI Model Insights ...",
+      "url": "https://free2aitools.com/model/beetle-fineweb2-24b/beetle-bilingual-l2-80-late-b5-fineweb-deu-eng",
+      "snippet": "by Beetle Fineweb2 24b hf-model--beetle-fineweb2-24b--beetle-bilingual-l2-80-late-b5-fineweb-deu-eng Nexus Index 39.0Top 6% S: Semantic50 A: Authority0 P: Popularity0 R: Recency100 Q: Quality65 Tech Context 0.19BParams 4.096KCtx Vital Performance 0 DL / 30D 0.0% Source → Share: 📤 𝕏 in 📣 🔗 Audited 39 FNI Score Tiny 0.19B Params 4k Context 0 Downloads 8G GPU ~2GB Est. VRAM Dense ..."
+    },
+    {
+      "title": "Beetle Bilingual Balanced B1 Fineweb 2b Deu Eng - AI Model Insights ...",
+      "url": "https://free2aitools.com/model/beetle-fineweb-2b/beetle-bilingual-balanced-b1-fineweb-2b-deu-eng",
+      "snippet": "Deep dive into Beetle Bilingual Balanced B1 Fineweb 2b Deu Eng."
+    },
+    {
+      "title": "GitHub - huggingface/fineweb-2",
+      "url": "https://github.com/huggingface/fineweb-2",
+      "snippet": "Unlike in FineWeb, where data was deduplicated per CommonCrawl snapshot, in FineWeb 2, data is deduplicated per language globally. However, following our deduplication findings in the original FineWeb, while we remove all except one document from each duplicate cluster, we save the size of this cluster in the kept document&#x27;s metadata, saved in ..."
+    }
+  ]
+}

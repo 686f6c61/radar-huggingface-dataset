@@ -5,7 +5,7 @@
   "author": "kingjones777",
   "url": "https://huggingface.co/kingjones777/Ling-3.0-flash-base-30T-ROCmFP4-COHERENT-GGUF",
   "created_at": "2026-08-22T03:24:24.000Z",
-  "updated_at": "2026-08-22T03:30:13.000Z",
+  "updated_at": "2026-08-28T04:08:14.000Z",
   "license": "mit",
   "license_family": "oss",
   "pipeline_tag": "text-generation",

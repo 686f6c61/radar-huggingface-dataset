@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "devrim/reign-small-l2_gn-bge-large_val-selected",
+  "slug": "devrim-reign-small-l2_gn-bge-large_val-selected",
+  "author": "devrim",
+  "url": "https://huggingface.co/devrim/reign-small-l2_gn-bge-large_val-selected",
+  "created_at": "2026-08-28T21:38:41.000Z",
+  "updated_at": "2026-08-28T21:38:51.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "feature-extraction",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "safetensors",
+    "reign",
+    "retrieval",
+    "long-documents",
+    "document-embeddings",
+    "feature-extraction",
+    "en",
+    "dataset:devrim/goodwiki_long_synthetic_ir",
+    "base_model:BAAI/bge-large-en-v1.5",
+    "base_model:finetune:BAAI/bge-large-en-v1.5",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 4092416,
+  "parameters_human": "4.1M",
+  "storage_bytes": 16373736,
+  "storage_human": "16 MB",
+  "base_model": "BAAI/bge-large-en-v1.5",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "BAAI/bge-small-en · Hugging Face",
+      "url": "https://huggingface.co/BAAI/bge-small-en",
+      "snippet": "New reranker model: release cross-encoder models BAAI/bge-reranker-base and BAAI/bge-reranker-large, which are more powerful than embedding model. We recommend to use/fine-tune them to re-rank top-k documents returned by embedding models."
+    },
+    {
+      "title": "BAAI/bge-reranker-large · Hugging Face",
+      "url": "https://huggingface.co/BAAI/bge-reranker-large",
+      "snippet": "New reranker model: release cross-encoder models BAAI/bge-reranker-base and BAAI/bge-reranker-large, which are more powerful than embedding model. We recommend to use/fine-tune them to re-rank top-k documents returned by embedding models."
+    },
+    {
+      "title": "BGE v1 & v1.5 — BGE documentation - bge-model.com",
+      "url": "https://bge-model.com/bge/bge_v1_v1.5.html",
+      "snippet": "BGE v1 & v1.5 # BGE v1 and v1.5 are series of encoder only models base on BERT. They achieved best performance among the models of the same size at the time of release. BGE # The first group of BGE models was released in Aug 2023. The bge-large-en and bge-large-zh ranked 1st on MTEB and C-MTEB benchmarks at the time released."
+    },
+    {
+      "title": "BGE-M3 — BGE documentation",
+      "url": "https://bge-model.com/bge/bge_m3.html",
+      "snippet": "BGE-M3 is a compound and powerful embedding model distinguished for its versatility in: Multi-Functionality: It can simultaneously perform the three common retrieval functionalities of embedding model: dense retrieval, multi-vector retrieval, and sparse retrieval."
+    },
+    {
+      "title": "GitHub - Junyi136/BAAI-bge-reranker-large-v",
+      "url": "https://github.com/Junyi136/BAAI-bge-reranker-large-v",
+      "snippet": "09/15/2023: The massive training data of BGE has been released 09/12/2023: New models: New reranker model: release cross-encoder models BAAI/bge-reranker-base and BAAI/bge-reranker-large, which are more powerful than embedding model. We recommend to use/fine-tune them to re-rank top-k documents returned by embedding models."
+    }
+  ]
+}

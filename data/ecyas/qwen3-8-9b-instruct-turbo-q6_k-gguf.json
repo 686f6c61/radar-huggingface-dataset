@@ -80,8 +80,8 @@
   ],
   "is_conversational": true,
   "gated": false,
-  "removed": false,
-  "removed_at": null,
+  "removed": true,
+  "removed_at": "2026-08-29T02:59:57.390Z",
   "benchmarks": [
     {
       "task": "Text Generation",

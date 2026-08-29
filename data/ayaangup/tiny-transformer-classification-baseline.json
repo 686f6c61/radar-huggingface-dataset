@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "ayaangup/tiny-transformer-classification-baseline",
+  "slug": "ayaangup-tiny-transformer-classification-baseline",
+  "author": "ayaangup",
+  "url": "https://huggingface.co/ayaangup/tiny-transformer-classification-baseline",
+  "created_at": "2026-08-28T23:56:09.000Z",
+  "updated_at": "2026-08-28T23:56:17.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "tiny_transformer",
+    "pytorch",
+    "tiny-transformer",
+    "classification",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 33088,
+  "parameters_human": "33088",
+  "storage_bytes": 132832,
+  "storage_human": "132832 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - skolouri/TinyTransformer: Mathematics of AI - Transformer ...",
+      "url": "https://github.com/skolouri/TinyTransformer",
+      "snippet": "Tiny Transformer This repository contains a minimal yet functional implementation of a Transformer architecture featuring both an encoder and a decoder. The design prioritizes clarity and simplicity, making it an ideal resource for educational purposes and experimentation in both vision and natural language processing (NLP) applications."
+    },
+    {
+      "title": "Tiny Transformer",
+      "url": "https://github.com/avvorstenbosch/tinyTransformer",
+      "snippet": "Tiny Transformer This repository contains an implementation of a simple GPT-like transformer model that can be trained on a single consumer-grade GPU. The code mostly follows along with the videos Let&#x27;s build GPT: from scratch, in code, spelled out. and Building Makemore by Andrej Karpathy."
+    },
+    {
+      "title": "Transformer models: an introduction and catalog - arXiv.org",
+      "url": "https://arxiv.org/html/2302.07730v4",
+      "snippet": "The goal of this paper is to offer a somewhat comprehensive but simple catalog and classification of the most popular Transformer models. The paper also includes an introduction to the most important aspects and innovations in Transformer models."
+    },
+    {
+      "title": "saeeddhqan/tiny-transformer | DeepWiki",
+      "url": "https://deepwiki.com/saeeddhqan/tiny-transformer",
+      "snippet": "The tiny-transformer repository provides a compact yet complete implementation of transformer-based models for text generation and classification. The modular architecture demonstrates how transformers can be adapted for different NLP tasks while sharing core components."
+    },
+    {
+      "title": "Transformers - Hugging Face",
+      "url": "https://huggingface.co/docs/transformers/index",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    }
+  ]
+}

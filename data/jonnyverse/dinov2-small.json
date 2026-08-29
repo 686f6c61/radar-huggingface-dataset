@@ -25,8 +25,8 @@
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
-  "storage_bytes": 334301129,
-  "storage_human": "334 MB",
+  "storage_bytes": 221392314,
+  "storage_human": "221 MB",
   "base_model": "facebook/dinov2-small",
   "formats": [
     "onnx"

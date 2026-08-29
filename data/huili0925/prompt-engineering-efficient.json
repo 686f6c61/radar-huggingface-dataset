@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "huili0925/prompt-engineering-efficient",
+  "slug": "huili0925-prompt-engineering-efficient",
+  "author": "huili0925",
+  "url": "https://huggingface.co/huili0925/prompt-engineering-efficient",
+  "created_at": "2026-08-29T00:33:51.000Z",
+  "updated_at": "2026-08-29T00:34:00.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "transformer",
+    "research-notes",
+    "prompt-engineering",
+    "license:cc-by-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 16576,
+  "parameters_human": "16576",
+  "storage_bytes": 66784,
+  "storage_human": "66784 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Prompt Engineering Guide | Prompt Engineering Guide",
+      "url": "https://www.promptingguide.ai/",
+      "snippet": "Motivated by the high interest in developing with LLMs, we have created this new prompt engineering guide that contains all the latest papers, advanced prompting techniques, learning guides, model-specific prompting guides, lectures, references, new LLM capabilities, and tools related to prompt engineering."
+    },
+    {
+      "title": "Prompt Engineering Guide 2026: Techniques, Templates & Examples",
+      "url": "https://www.aitooldiscovery.com/guides/prompt-engineering",
+      "snippet": "Complete prompt engineering guide with copy-paste templates for writing, coding, business, and image AI. Chain-of-thought, few-shot, role prompting, and more."
+    },
+    {
+      "title": "Prompt Engineering Guide 2026 - Analytics Vidhya",
+      "url": "https://www.analyticsvidhya.com/blog/2026/01/master-prompt-engineering/",
+      "snippet": "Master prompt engineering in 2026 with practical prompting techniques, reasoning methods, safety defenses, and real-world examples."
+    },
+    {
+      "title": "Prompt Engineering Best Practices for AI Models",
+      "url": "https://www.geeksforgeeks.org/blogs/prompt-engineering-best-practices/",
+      "snippet": "Prompt engineering is the practice of designing and refining inputs to guide large language models (LLMs) toward accurate, relevant and high-quality outputs. For developers, researchers and AI professionals, it is an important skill for getting reliable and useful results from AI systems."
+    },
+    {
+      "title": "Prompt engineering best practices for 2026 | Claude by Anthropic",
+      "url": "https://claude.com/blog/best-practices-for-prompt-engineering",
+      "snippet": "What is prompt engineering? Prompt engineering is the craft of structuring instructions to get better outputs from AI models. It&#x27;s how you phrase queries, specify style, provide context, and guide the model&#x27;s behavior to achieve your goals. The difference between a vague instruction and a well-crafted prompt can mean the gap between generic outputs and exactly what you need. A poorly ..."
+    }
+  ]
+}

@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "Bosrodriguez/knowledge-distillation-2024",
+  "slug": "bosrodriguez-knowledge-distillation-2024",
+  "author": "Bosrodriguez",
+  "url": "https://huggingface.co/Bosrodriguez/knowledge-distillation-2024",
+  "created_at": "2026-08-29T00:28:11.000Z",
+  "updated_at": "2026-08-29T00:28:19.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "transformer",
+    "research-notes",
+    "knowledge-distillation",
+    "license:cc-by-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 24832,
+  "parameters_human": "24832",
+  "storage_bytes": 99808,
+  "storage_human": "99808 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Bosrodriguez/knowledge-distillation-2024 · Hugging Face",
+      "url": "https://huggingface.co/Bosrodriguez/knowledge-distillation-2024",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "A Survey on Knowledge Distillation of Large Language Models",
+      "url": "https://arxiv.org/abs/2402.13116",
+      "snippet": "In the era of Large Language Models (LLMs), Knowledge Distillation (KD) emerges as a pivotal methodology for transferring advanced capabilities from leading proprietary LLMs, such as GPT-4, to their open-source counterparts like LLaMA and Mistral. Additionally, as open-source LLMs flourish, KD plays a crucial role in both compressing these models, and facilitating their self-improvement by ..."
+    },
+    {
+      "title": "A Survey on Knowledge Distillation of Large Language Models",
+      "url": "https://arxiv.org/html/2402.13116v1",
+      "snippet": "The concept of knowledge distillation in the field of AI and deep learning (DL) refers to the process of transferring knowledge from a large, complex model (teacher) to a smaller, more efficient model (student) Gou et al. (2021)."
+    },
+    {
+      "title": "A Survey on Knowledge Distillation of Large Language Models",
+      "url": "https://scispace.com/papers/a-survey-on-knowledge-distillation-of-large-language-models-3xk7eba03t",
+      "snippet": "TL;DR: This survey introduces a roofline model framework for systematic analysis of Large Language Model (LLM) inference techniques, identifying bottlenecks and providing a deeper understanding of practical aspects on real devices, covering weight optimization, decoding algorithm improvements, and hardware/system-level enhancements."
+    },
+    {
+      "title": "Knowledge Distillation - GeeksforGeeks",
+      "url": "https://www.geeksforgeeks.org/machine-learning/knowledge-distillation/",
+      "snippet": "Knowledge Distillation is a model compression technique in which a smaller, simpler model (student) is trained to imitate the behavior of a larger, complex model (teacher). Instead of learning directly from data, the student model learns from the soft targets or probabilities, which are produced by the teacher model. This technique helps in deploying deep models on edge devices like mobiles or ..."
+    }
+  ]
+}

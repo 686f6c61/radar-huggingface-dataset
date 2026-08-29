@@ -5,7 +5,7 @@
   "author": "KordAI",
   "url": "https://huggingface.co/KordAI/KeawGPT",
   "created_at": "2026-08-28T07:42:53.000Z",
-  "updated_at": "2026-08-28T10:41:56.000Z",
+  "updated_at": "2026-08-29T01:24:53.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": null,
@@ -28,8 +28,8 @@
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
-  "storage_bytes": 808963392,
-  "storage_human": "809 MB",
+  "storage_bytes": 4796565030,
+  "storage_human": "4.8 GB",
   "base_model": "KordAI/KeawGPT-Base",
   "formats": [
     "safetensors"

@@ -5,7 +5,7 @@
   "author": "pipenetwork",
   "url": "https://huggingface.co/pipenetwork/GLM-5.3-MLX-4bit",
   "created_at": "2026-08-28T19:02:33.000Z",
-  "updated_at": "2026-08-28T19:20:29.000Z",
+  "updated_at": "2026-08-28T22:34:07.000Z",
   "license": "glm-5.3",
   "license_family": "unknown",
   "pipeline_tag": "text-generation",

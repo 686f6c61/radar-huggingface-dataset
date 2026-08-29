@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "hamm-eyer/class-retrieval",
+  "slug": "hamm-eyer-class-retrieval",
+  "author": "hamm-eyer",
+  "url": "https://huggingface.co/hamm-eyer/class-retrieval",
+  "created_at": "2026-08-28T21:49:56.000Z",
+  "updated_at": "2026-08-28T21:50:05.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "beit",
+    "pytorch",
+    "retrieval",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 16576,
+  "parameters_human": "16576",
+  "storage_bytes": 66784,
+  "storage_human": "66784 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "LLM Leaderboard & AI Model Benchmarks — August 2026",
+      "url": "https://benchlm.ai/",
+      "snippet": "LLM Leaderboard & AI Model Benchmarks — August 2026 Compare frontier AI models by quality, cost, and context. 105 Supported and 123 Estimated models among 406 tracked LLMs — 406 benchmarks, real pricing, and runtime data in one place."
+    },
+    {
+      "title": "Class-RAG: Real-Time Content Moderation with Retrieval Augmented Generation",
+      "url": "https://arxiv.org/html/2410.14881v2",
+      "snippet": "Scaling risk discovery and mitigation through continuous model fine-tuning is also slow, challenging and costly, preventing developers from being able to respond quickly and effectively to emergent harms. We propose a Classification approach employing Retrieval-Augmented Generation (Class-RAG)."
+    },
+    {
+      "title": "PDF HAMM: An Adaptive Memory Management Framework for Long-Term Large ...",
+      "url": "https://www.ijesi.org/papers/Vol(15)i8/15083844.pdf",
+      "snippet": "Recent surveys describe agent memory as a rapidly developing research area spanning storage, retrieval, updating, consolidation, and long-term experience. Retrieval-augmented generation provides a practical mechanism for externalizing information from the model into a retrievable store."
+    },
+    {
+      "title": "(PDF) Class Retrieval of Detected Adversarial Attacks - ResearchGate",
+      "url": "https://www.researchgate.net/publication/353219387_Class_Retrieval_of_Detected_Adversarial_Attacks",
+      "snippet": "Here, we present a new, additional and required element to ameliorate adversarial attacks: the recovery of the original class after a detected attack."
+    },
+    {
+      "title": "Class Retrieval of Detected Adversarial Attacks - MDPI",
+      "url": "https://www.mdpi.com/2076-3417/11/14/6438/xml",
+      "snippet": "Here, we present a new, additional and required element to ameliorate adversarial attacks: the recovery of the original class after a detected attack. Recovering the original class of an adversarial sample without taking any precautions is an uncharted concept which we would like to introduce with our novel class retrieval algorithm."
+    }
+  ]
+}

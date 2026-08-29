@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "sarahjhy/deit-contrastive-2023",
+  "slug": "sarahjhy-deit-contrastive-2023",
+  "author": "sarahjhy",
+  "url": "https://huggingface.co/sarahjhy/deit-contrastive-2023",
+  "created_at": "2026-08-28T20:38:32.000Z",
+  "updated_at": "2026-08-28T20:38:41.000Z",
+  "license": "bsd-3-clause",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "deit",
+    "pytorch",
+    "contrastive",
+    "license:bsd-3-clause",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 33088,
+  "parameters_human": "33088",
+  "storage_bytes": 132832,
+  "storage_human": "132832 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - facebookresearch/deit: Official DeiT repository",
+      "url": "https://github.com/facebookresearch/deit",
+      "snippet": "Official DeiT repository. Contribute to facebookresearch/deit development by creating an account on GitHub."
+    },
+    {
+      "title": "DeiT · Hugging Face",
+      "url": "https://huggingface.co/docs/transformers/model_doc/deit",
+      "snippet": "The DeiT model was proposed in Training data-efficient image transformers & distillation through attention by Hugo Touvron, Matthieu Cord, Matthijs Douze, Francisco Massa, Alexandre Sablayrolles, Hervé Jégou."
+    },
+    {
+      "title": "GitHub - xiami2019/CLAIF: [Findings of ACL&#x27;2023] Improving Contrastive ...",
+      "url": "https://github.com/xiami2019/claif",
+      "snippet": "This repository contains the code, data and model checkpoints for our paper Improving Contrastive Learning of Sentence Embeddings from AI Feedback (CLAIF). Accepted to Findings of ACL 2023."
+    },
+    {
+      "title": "AI Detector: Free AI Checker for ChatGPT, Claude, Gemini - Quetext",
+      "url": "https://www.quetext.com/ai-detector",
+      "snippet": "AI Detector Detect AI-written text from ChatGPT, GPT-5, Claude, Gemini & Llama with line-by-line accuracy. Free scans up to 1,000 words."
+    },
+    {
+      "title": "DeiT - Hugging Face",
+      "url": "https://huggingface.co/docs/transformers/v4.48.2/en/model_doc/deit",
+      "snippet": "This is the configuration class to store the configuration of a DeiTModel. It is used to instantiate an DeiT model according to the specified arguments, defining the model architecture. Instantiating a configuration with the defaults will yield a similar configuration to that of the DeiT facebook/deit-base-distilled-patch16-224 architecture."
+    }
+  ]
+}

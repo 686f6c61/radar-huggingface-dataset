@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "marcsun13/ggml-norm",
+  "slug": "marcsun13-ggml-norm",
+  "author": "marcsun13",
+  "url": "https://huggingface.co/marcsun13/ggml-norm",
+  "created_at": "2026-08-28T23:14:50.000Z",
+  "updated_at": "2026-08-28T23:53:53.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "kernels",
+  "languages": [],
+  "tags": [
+    "kernels",
+    "kernel",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 757776,
+  "storage_human": "757776 B",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "marcsun13 (Marc Sun) - Hugging Face",
+      "url": "https://huggingface.co/marcsun13/models",
+      "snippet": "marcsun13/sft_openassistant-guanaco Text Generation • 7B • Updated Jul 5, 2024 • 2"
+    },
+    {
+      "title": "marcsun13 (Marc Sun) - Hugging Face",
+      "url": "https://huggingface.co/marcsun13",
+      "snippet": "AI & ML interests ... Recent Activity upvoted an article 19 days ago ... liked a model 28 days ago ... upvoted an article 2 months ago"
+    },
+    {
+      "title": "GitHub - ggml-org/ggml: Tensor library for machine learning",
+      "url": "https://github.com/ggml-org/ggml",
+      "snippet": "Tensor library for machine learning. Contribute to ggml-org/ggml development by creating an account on GitHub."
+    },
+    {
+      "title": "marcsun13 — AI Models & Datasets | Model Database",
+      "url": "https://modeldatabase.com/marcsun13.html",
+      "snippet": "Browse the open source AI models and datasets published by marcsun13. Compare and deploy AI models on Model Database."
+    },
+    {
+      "title": "GitHub - ggml-org/llama.cpp: LLM inference in C/C++",
+      "url": "https://github.com/ggml-org/llama.cpp",
+      "snippet": "LLM inference in C/C++. Contribute to ggml-org/llama.cpp development by creating an account on GitHub."
+    }
+  ]
+}

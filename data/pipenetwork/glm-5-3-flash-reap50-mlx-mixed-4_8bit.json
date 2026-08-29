@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "pipenetwork/GLM-5.3-Flash-REAP50-MLX-mixed-4_8bit",
+  "slug": "pipenetwork-glm-5-3-flash-reap50-mlx-mixed-4_8bit",
+  "author": "pipenetwork",
+  "url": "https://huggingface.co/pipenetwork/GLM-5.3-Flash-REAP50-MLX-mixed-4_8bit",
+  "created_at": "2026-08-28T23:48:10.000Z",
+  "updated_at": "2026-08-28T23:53:13.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "mlx",
+  "languages": [],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "glm5_next",
+    "apple-silicon",
+    "mixture-of-experts",
+    "4-bit",
+    "image-text-to-text",
+    "conversational",
+    "base_model:zai-org/GLM-5.3-Flash",
+    "base_model:quantized:zai-org/GLM-5.3-Flash",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 26897684382,
+  "parameters_human": "26.90B",
+  "storage_bytes": 96280413901,
+  "storage_human": "96.3 GB",
+  "base_model": "zai-org/GLM-5.3-Flash",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "pipenetwork/GLM-5.3-Flash-MLX-8bit · Hugging Face",
+      "url": "https://huggingface.co/pipenetwork/GLM-5.3-Flash-MLX-8bit",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "pipenetwork/GLM-5.2-REAP50-MLX-4bit · Hugging Face",
+      "url": "https://huggingface.co/pipenetwork/GLM-5.2-REAP50-MLX-4bit",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Releases · PipeNetwork/glm53-flash-mlx · GitHub",
+      "url": "https://github.com/PipeNetwork/glm53-flash-mlx/releases",
+      "snippet": "MLX (Apple Silicon) runtime + quantization for GLM-5.3-Flash, validated against transformers - PipeNetwork/glm53-flash-mlx"
+    },
+    {
+      "title": "PipeNetwork - GitHub",
+      "url": "https://github.com/PipeNetwork",
+      "snippet": "PipeNetwork has 24 repositories available. Follow their code on GitHub."
+    },
+    {
+      "title": "AI Search now supports GLM-5.3 Flash · Changelog",
+      "url": "https://developers.cloudflare.com/changelog/post/2026-08-30-glm-5.3-flash/",
+      "snippet": "AI Search now supports the Workers AI GLM-5.3 Flash model for text generation."
+    }
+  ]
+}

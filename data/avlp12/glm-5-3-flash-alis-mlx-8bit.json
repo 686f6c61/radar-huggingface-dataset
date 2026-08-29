@@ -1,0 +1,84 @@
+{
+  "schema": 1,
+  "id": "avlp12/GLM-5.3-Flash-Alis-MLX-8bit",
+  "slug": "avlp12-glm-5-3-flash-alis-mlx-8bit",
+  "author": "avlp12",
+  "url": "https://huggingface.co/avlp12/GLM-5.3-Flash-Alis-MLX-8bit",
+  "created_at": "2026-08-26T23:19:47.000Z",
+  "updated_at": "2026-08-29T01:20:32.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "mlx",
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "glm5_next",
+    "quantized",
+    "glm",
+    "moe",
+    "apple-silicon",
+    "mixed-precision",
+    "8-bit",
+    "long-context",
+    "linear-attention",
+    "hybrid-attention",
+    "conversational",
+    "image-text-to-text",
+    "text-generation",
+    "en",
+    "zh",
+    "base_model:zai-org/GLM-5.3-Flash",
+    "base_model:quantized:zai-org/GLM-5.3-Flash",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 84493612800,
+  "parameters_human": "84.49B",
+  "storage_bytes": 346692424164,
+  "storage_human": "346.7 GB",
+  "base_model": "zai-org/GLM-5.3-Flash",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "avlp12 (ALISVOLATPROPRIIS) - Hugging Face",
+      "url": "https://huggingface.co/avlp12/collections",
+      "snippet": "One base model, four packagings: MLX dynamic 2.6 bpw (text/VLM) and the Ultra GGUF variants. Same base model and 3.6 bpw quantization — text-only primary plus the vision add-on. One base model (GLM-5.2 744B MoE), four MLX quant builds from 512 GB-class to the 256 GB floor — plus the GLM-5.1 benchmark baseline."
+    },
+    {
+      "title": "GLM-5.3-Flash MLX - a pipenetwork Collection - Hugging Face",
+      "url": "https://huggingface.co/collections/pipenetwork/glm-53-flash-mlx",
+      "snippet": "Apple Silicon (MLX) builds of GLM-5.3-Flash with a validated, fixed glm5_next runtime: github.com/PipeNetwork/glm53-flash-mlx"
+    },
+    {
+      "title": "GLM-5.3 & GLM-5.2 & GLM-5.1 & GLM-5 - GitHub",
+      "url": "https://github.com/zai-org/GLM-5",
+      "snippet": "GLM-5.3 uses the same base model as GLM-5.2 — every gain comes from post-training. Compared with GLM-5.2, it is much better at complex coding and long-horizon tasks: Stronger Coding: GLM-5.3 is the most capable open-weights model for coding, with a 50% improvement over GLM-5.2 on our in-house Z.ai ..."
+    },
+    {
+      "title": "GLM-5.3-Flash: How to Run Locally - unsloth.ai",
+      "url": "https://unsloth.ai/docs/models/glm-5.3-flash",
+      "snippet": "Search and download GLM-5.3-Flash Go to Unsloth Chat or Model hub and search for GLM-5.3-Flash in the search bar and download your desired model and quant."
+    },
+    {
+      "title": "glm53-flash-mlx/README.md at main - GitHub",
+      "url": "https://github.com/PipeNetwork/glm53-flash-mlx/blob/main/README.md",
+      "snippet": "glm53-flash-mlx MLX (Apple Silicon) runtime and quantization tooling for zai-org/GLM-5.3-Flash — 320B-A18B: 34 Kimi-Delta linear-attention layers interleaved with 11 DeepSeek-sparse-attention layers (NoPE MLA behind a lightning indexer), 288-expert MoE, manifold-constrained hyper-connections (model_type: glm5_next)."
+    }
+  ]
+}

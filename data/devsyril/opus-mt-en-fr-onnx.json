@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "Devsyril/opus-mt-en-fr-onnx",
+  "slug": "devsyril-opus-mt-en-fr-onnx",
+  "author": "Devsyril",
+  "url": "https://huggingface.co/Devsyril/opus-mt-en-fr-onnx",
+  "created_at": "2026-08-28T22:57:23.000Z",
+  "updated_at": "2026-08-28T22:57:40.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "translation",
+  "library": "transformers.js",
+  "languages": [],
+  "tags": [
+    "transformers.js",
+    "onnx",
+    "marian",
+    "text2text-generation",
+    "translation",
+    "opus-mt",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 879924129,
+  "storage_human": "880 MB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Helsinki-NLP/opus-mt-en-fr · Hugging Face",
+      "url": "https://huggingface.co/Helsinki-NLP/opus-mt-en-fr",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GitHub - Helsinki-NLP/Opus-MT: Open neural machine translation models ...",
+      "url": "https://github.com/Helsinki-NLP/Opus-MT",
+      "snippet": "Train MT models There is a Makefile for training new models from OPUS data in the Opus-MT-train repository, but this is heavily customized for the work environment at CSC and the University of Helsinki projects. This will (hopefully) be more generic in the future to be able to run in different environments and setups as well."
+    },
+    {
+      "title": "Helsinki-NLP/opus-mt-fr-en · Hugging Face",
+      "url": "https://huggingface.co/Helsinki-NLP/opus-mt-fr-en",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "opus-mt-en-fr: Text-to-Text model — overview, use cases, alternatives",
+      "url": "https://www.aimodels.fyi/models/huggingFace/opus-mt-en-fr-helsinki-nlp",
+      "snippet": "Overview opus-mt-en-fr is an English-to-French neural machine translation model developed by Helsinki-NLP. It uses a transformer-align architecture trained on the OPUS dataset with normalization and SentencePiece preprocessing. The model produces translations suitable for news and general-domain content, achieving a BLEU score of 40.0 on the newstest2015 benchmark and 50.5 on the Tatoeba ..."
+    },
+    {
+      "title": "multilingual-translator-offline - GitHub",
+      "url": "https://github.com/harisnae/multilingual-translator-offline",
+      "snippet": "ONNX Multilingual Translator: a privacy based, offline‑first web app that runs dozens of OPUS‑MT translation models (int8‑quantised ONNX) directly in the browser via @xenova/transformers. After a model is loaded it is cached in the browser and can be used without any network connection."
+    }
+  ]
+}

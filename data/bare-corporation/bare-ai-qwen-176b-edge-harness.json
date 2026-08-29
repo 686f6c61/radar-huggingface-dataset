@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "bare-corporation/bare-ai-qwen-176b-edge-harness",
+  "slug": "bare-corporation-bare-ai-qwen-176b-edge-harness",
+  "author": "bare-corporation",
+  "url": "https://huggingface.co/bare-corporation/bare-ai-qwen-176b-edge-harness",
+  "created_at": "2026-08-28T20:16:08.000Z",
+  "updated_at": "2026-08-28T20:47:12.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "qwen",
+    "mixture-of-experts",
+    "sparse-moe",
+    "edge-inference",
+    "nvme",
+    "llama.cpp",
+    "llama-server",
+    "cpu",
+    "quantized",
+    "1-bit",
+    "edge-ai",
+    "text-generation",
+    "en",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 759222,
+  "storage_human": "759222 B",
+  "base_model": "Qwen3.8-Flash-Next",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Qwen",
+      "url": "https://qwen.ai/home",
+      "snippet": "Qwen Studio is an AI assistant for everyone, powered by the Qwen series models. It&#x27;s free to use, open to all, and ready to help with creativity, collaboration, and endless possibilities."
+    },
+    {
+      "title": "Bare-Corporation · GitHub",
+      "url": "https://github.com/Bare-Corporation",
+      "snippet": "Bare-AI is a Context-Primed CLI Wrapper for bare-ai-cli and google gemini cli in technical terms, we have engineered a Runtime Environment that forces a general-purpose AI (Gemini in this example) to behave like a specific employee (Bare-AI) every time it boots up."
+    },
+    {
+      "title": "Alibaba Cloud Model Studio",
+      "url": "https://modelstudio.alibabacloud.com/",
+      "snippet": "Diverse Model Ecosystem Easily experience and quickly access Alibaba Cloud&#x27;s latest foundational models (FM), including Qwen-Max, Qwen-Plus, Qwen-Turbo, Qwen-VL, and the Wan series."
+    },
+    {
+      "title": "Bare-AI | Sovereign AI. Absolute Control.",
+      "url": "https://bare-ai.net/",
+      "snippet": "Sovereign AI. Absolute Control. Bare-AI is a Sovereign-first AI Platform. One open command-line interface is your single entry point to every major model — cloud and local. Bring your own provider keys, or tap the Council to run any model (and multi-model debates) on one shared key, with pooled access and transparent per-token pricing. Membership unlocks lower rates across the board."
+    },
+    {
+      "title": "Qwen3.8 | OpenLM.ai",
+      "url": "https://openlm.ai/qwen3.8/",
+      "snippet": "We are officially releasing Qwen 3.8-Max, the most capable model in the Qwen family to date. This also marks the first time we will open-source the weights of a Qwen-Max-class model. Built upon the architectural foundation of Qwen 3.5, Qwen 3.8-Max scales to 2.4 trillion parameters, delivering comprehensive improvements across coding, work, research, and long-horizon tasks."
+    }
+  ]
+}

@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "Devsyril/opus-mt-ee-en-onnx",
+  "slug": "devsyril-opus-mt-ee-en-onnx",
+  "author": "Devsyril",
+  "url": "https://huggingface.co/Devsyril/opus-mt-ee-en-onnx",
+  "created_at": "2026-08-28T22:59:48.000Z",
+  "updated_at": "2026-08-28T23:00:05.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "translation",
+  "library": "transformers.js",
+  "languages": [],
+  "tags": [
+    "transformers.js",
+    "onnx",
+    "marian",
+    "text2text-generation",
+    "translation",
+    "opus-mt",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 860168430,
+  "storage_human": "860 MB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - Helsinki-NLP/Opus-MT: Open neural machine translation models ...",
+      "url": "https://github.com/Helsinki-NLP/Opus-MT",
+      "snippet": "Train MT models There is a Makefile for training new models from OPUS data in the Opus-MT-train repository, but this is heavily customized for the work environment at CSC and the University of Helsinki projects. This will (hopefully) be more generic in the future to be able to run in different environments and setups as well."
+    },
+    {
+      "title": "GitHub - lookbe/opus-mt-onnx",
+      "url": "https://github.com/lookbe/opus-mt-onnx",
+      "snippet": "This project is a proof of concept demonstrating how to run Opus-MT machine translation models using ONNX Runtime. The implementation focuses on: Converting / loading Opus-MT models in ONNX format Running inference using ONNX Runtime (CPU) Showing a minimal working translation pipeline Most of the source code was generated using Gemini AI, then refined and integrated into this POC."
+    },
+    {
+      "title": "onnx-community/opus-mt-zh-en · Hugging Face",
+      "url": "https://huggingface.co/onnx-community/opus-mt-zh-en",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "onnx/encoder_model_int8.onnx · onnx-community/opus-mt-mul-en at main",
+      "url": "https://huggingface.co/onnx-community/opus-mt-mul-en/blob/main/onnx/encoder_model_int8.onnx",
+      "snippet": "onnx-community / opus-mt-mul-en like 1 Follow ONNX Community 2.15k Translation Transformers.js ONNX marian text2text-generation License:cc-by-4. Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "Models - OPUS-MT Factory",
+      "url": "https://blogs.helsinki.fi/opusmt-factory/models/",
+      "snippet": "OPUS-MT models are trained on public data using open source software and project allocations on high-performance compute infrastructure provided by CSC - the Finnish IT Center for Science. We include bilingual and multilingual data and release all our models for public use and further development."
+    }
+  ]
+}

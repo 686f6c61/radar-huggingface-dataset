@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "Gonzalezjustin/zero-shot-transfer-int4",
+  "slug": "gonzalezjustin-zero-shot-transfer-int4",
+  "author": "Gonzalezjustin",
+  "url": "https://huggingface.co/Gonzalezjustin/zero-shot-transfer-int4",
+  "created_at": "2026-08-28T22:18:17.000Z",
+  "updated_at": "2026-08-28T22:18:38.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "transformer",
+    "research-notes",
+    "zero-shot-transfer",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 16576,
+  "parameters_human": "16576",
+  "storage_bytes": 66784,
+  "storage_human": "66784 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Justpablogomez/zero-shot-transfer · Hugging Face",
+      "url": "https://huggingface.co/Justpablogomez/zero-shot-transfer",
+      "snippet": "Justpablogomez / zero-shot-transfer like 0 Safetensors transformer research-notes zero-shot-transfer License:cc-by-4. Model card FilesFiles and versions xet Community Copy to bucket new Notes on Zero Shot Transfer Repository summary What is covered How to read this repository Scope and limitations Files License"
+    },
+    {
+      "title": "Zero-Shot Transfer: Definition & AI Applications",
+      "url": "https://inferensys.com/glossary/vision-language-action-models/multimodal-fusion-architectures/zero-shot-transfer",
+      "snippet": "Zero-shot transfer is a model&#x27;s ability to perform a new task without specific training data, using natural language prompts. Learn its mechanisms and applications."
+    },
+    {
+      "title": "Best Free AI Models & APIs (2026) | LM Market Cap",
+      "url": "https://lmmarketcap.com/free-ai-models",
+      "snippet": "Every free AI model ranked by quality: free LLMs, coding assistants, and image generators. No API costs, open-source, and ready to use. Start for free."
+    },
+    {
+      "title": "Zero-Shot Transfer: Definition & AI Applications",
+      "url": "https://inferensys.com/glossary/vision-language-action-models/visual-language-pre-training/zero-shot-transfer",
+      "snippet": "Zero-shot transfer is a model&#x27;s ability to perform new tasks without specific training examples, using learned general representations and task instructions."
+    },
+    {
+      "title": "AI Models | Civitai",
+      "url": "https://civitai.com/models",
+      "snippet": "Browse thousands of free Stable Diffusion & Flux models, LoRAs, checkpoints, and embeddings. The largest collection of AI image generation resources."
+    }
+  ]
+}

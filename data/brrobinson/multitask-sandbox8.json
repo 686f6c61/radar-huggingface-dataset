@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "brrobinson/multitask-sandbox8",
+  "slug": "brrobinson-multitask-sandbox8",
+  "author": "brrobinson",
+  "url": "https://huggingface.co/brrobinson/multitask-sandbox8",
+  "created_at": "2026-08-28T20:52:18.000Z",
+  "updated_at": "2026-08-28T20:52:27.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "coca",
+    "pytorch",
+    "multitask",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 24832,
+  "parameters_human": "24832",
+  "storage_bytes": 99808,
+  "storage_human": "99808 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Multi — one task, the right AI workflow",
+      "url": "https://getmulti.ai/",
+      "snippet": "Multi puts 300+ models from every major lab to work across four workflows, so you deploy the best AI for each task instead of forcing one to do it all. Using the right model for the right project is the advantage most people leave on the table."
+    },
+    {
+      "title": "MultitaskAI - The Custom Chat UI for OpenAI, Anthropic, Google Gemini ...",
+      "url": "https://multitaskai.com/",
+      "snippet": "Chat seamlessly with AI models like OpenAI, Anthropic, and Google Gemini using MultitaskAI, a custom-built interface designed for split-screen multitasking, side-by-side comparisons, and smarter workflows."
+    },
+    {
+      "title": "GitHub - brysonjones/multitask_dit_policy: An open-source ...",
+      "url": "https://github.com/brysonjones/multitask_dit_policy",
+      "snippet": "The goal of this project is to provide the community with a high quality implementation of Multitask DiT Policy that can be used as a baseline for model research and building on top of. Architecture diagram of the Multitask Diffusion-Transformer (DiT) Policy model I&#x27;ve made an effort to make the implementations as readable as possible, at the sacrifice of making the most optimized ..."
+    },
+    {
+      "title": "Bryson Jones on X: \"Today I&#x27;m releasing an open-source implementation ...",
+      "url": "https://x.com/brysonkjones/status/2038696941132136702",
+      "snippet": "Today I&#x27;m releasing an open-source implementation of Multitask Diffusion Policy model, most widely seen deployed on the Boston Dynamics Atlas Humanoid Robot! Check out the demo + some cool takeaways"
+    },
+    {
+      "title": "I Tested Every Solution for /multitask in Cursor&#x27;s Agents Window - Here ...",
+      "url": "https://dredyson.com/i-tested-every-solution-for-multitask-in-cursors-agents-window-heres-what-actually-works-complete-comparison-study-with-pros-cons-tested-results-and-recommendations/",
+      "snippet": "I tried every suggested solution and documented what works, what doesn&#x27;t, and why. When Cursor rolled out the /multitask feature in the Agents Window, I was"
+    }
+  ]
+}

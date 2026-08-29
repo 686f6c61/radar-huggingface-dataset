@@ -1,0 +1,79 @@
+{
+  "schema": 1,
+  "id": "dabsLabs/GLM-5.3-Flash-NVFP4",
+  "slug": "dabslabs-glm-5-3-flash-nvfp4",
+  "author": "dabsLabs",
+  "url": "https://huggingface.co/dabsLabs/GLM-5.3-Flash-NVFP4",
+  "created_at": "2026-08-27T03:53:16.000Z",
+  "updated_at": "2026-08-29T02:34:58.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": null,
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "tags": [
+    "safetensors",
+    "glm5_next",
+    "nvfp4",
+    "compressed-tensors",
+    "blackwell",
+    "vllm",
+    "moe",
+    "multimodal",
+    "image-text-to-text",
+    "conversational",
+    "en",
+    "zh",
+    "base_model:zai-org/GLM-5.3-Flash",
+    "base_model:quantized:zai-org/GLM-5.3-Flash",
+    "license:mit",
+    "8-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 321323031390,
+  "parameters_human": "321.32B",
+  "storage_bytes": 205112011653,
+  "storage_human": "205.1 GB",
+  "base_model": "zai-org/GLM-5.3-Flash",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GLM-5.3 - How to Run Locally - unsloth.ai",
+      "url": "https://unsloth.ai/docs/models/glm-5.3",
+      "snippet": "As of Aug 2026, GLM-5.3 is the strongest open-model to date, achieving SOTA on Terminal Bench 3.0 and Agents&#x27; Last Exam. GLM-5.3 uses the same base model as GLM-5.2, with every gain coming from post-training. The model has a 1M context window and can now run locally via Unsloth Dynamic GGUFs with llama.cpp or Unsloth Desktop."
+    },
+    {
+      "title": "local-inference-lab/GLM-5.3-Flash-NVFP4 · Hugging Face",
+      "url": "https://huggingface.co/local-inference-lab/GLM-5.3-Flash-NVFP4",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GLM-5.3-Flash - lmstudio.ai",
+      "url": "https://lmstudio.ai/models/glm-5.3-flash",
+      "snippet": "GLM-5.3-Flash is Z.ai&#x27;s first natively multimodal model in the GLM-5 series. It is a 320B Mixture-of-Experts model with 18B active parameters, built for coding, agentic work, and visual tasks, and released under the MIT License."
+    },
+    {
+      "title": "bullerwins/GLM-5.3-Flash-NVFP4 · Hugging Face",
+      "url": "https://huggingface.co/bullerwins/GLM-5.3-Flash-NVFP4",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "The Full GLM 5.3 Releases Tomorrow - NVIDIA Developer Forums",
+      "url": "https://forums.developer.nvidia.com/t/the-full-glm-5-3-releases-tomorrow/381515",
+      "snippet": "I suspect it will run just fine on a 4x Spark cluster once Nvidia releases their NVFP4 quant. I don&#x27;t have a 4x Spark cluster (only a lonely single Spark), but I think GLM-5.3-Flash took a lot of the thunder out of this release. GLM-5.3-Flash is not just half the size, but also a tremendously more efficient architecture and supports multimodal. For very specialized use cases like ..."
+    }
+  ]
+}

@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "bihungba1101/MOSS-Audio-4B-Instruct-FP8-Dynamic",
+  "slug": "bihungba1101-moss-audio-4b-instruct-fp8-dynamic",
+  "author": "bihungba1101",
+  "url": "https://huggingface.co/bihungba1101/MOSS-Audio-4B-Instruct-FP8-Dynamic",
+  "created_at": "2026-08-28T21:02:44.000Z",
+  "updated_at": "2026-08-28T21:11:56.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "audio-text-to-text",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "moss_audio",
+    "audio",
+    "speech",
+    "multimodal",
+    "vllm",
+    "fp8",
+    "compressed-tensors",
+    "audio-text-to-text",
+    "custom_code",
+    "base_model:OpenMOSS-Team/MOSS-Audio-4B-Instruct",
+    "base_model:quantized:OpenMOSS-Team/MOSS-Audio-4B-Instruct",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 5222820736,
+  "parameters_human": "5.22B",
+  "storage_bytes": 6814678720,
+  "storage_human": "6.8 GB",
+  "base_model": "OpenMOSS-Team/MOSS-Audio-4B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - OpenMOSS/MOSS-Audio: MOSS-Audio is an open-source foundation ...",
+      "url": "https://github.com/OpenMOSS/MOSS-Audio",
+      "snippet": "MOSS-Audio is an open-source audio understanding model from MOSI.AI, the OpenMOSS team, and Shanghai Innovation Institute. It performs unified modeling over complex real-world audio, supporting speech understanding, environmental sound understanding, music understanding, audio captioning, time-aware QA, and complex reasoning."
+    },
+    {
+      "title": "README.md · OpenMOSS-Team/MOSS-Audio-4B-Instruct at main",
+      "url": "https://huggingface.co/OpenMOSS-Team/MOSS-Audio-4B-Instruct/blob/main/README.md",
+      "snippet": "More model families, sizes, and variants will be released in the future. Stay tuned! Evaluation We evaluate MOSS-Audio on a comprehensive set of audio understanding benchmarks. Key results: General Audio Understanding: MOSS-Audio-8B-Thinking achieves an average accuracy of 70.80, outperforming all of the open-source models."
+    },
+    {
+      "title": "MOSS-Audio | Audio Understanding Model - openmoss.ai",
+      "url": "https://openmoss.ai/MOSS-Audio/",
+      "snippet": "Understanding audio requires more than simply transcribing words — it demands the ability to perceive acoustic cues, recognize speakers and emotions, interpret environmental sounds, reason over temporal context, and handle complex multi-step inference. MOSS-Audio is built to unify these capabilities within a single model. We release four models in this launch: MOSS-Audio-4B-Instruct, MOSS ..."
+    },
+    {
+      "title": "Fine-tuned Models for OpenMOSS-Team/MOSS-Audio-4B-Instruct - Hugging Face",
+      "url": "https://huggingface.co/models?other=base_model:finetune:OpenMOSS-Team/MOSS-Audio-4B-Instruct",
+      "snippet": "Fireworks Featherless AI Zai Replicate Cohere Scaleway Public AI Baseten OVHcloud AI Endpoints HF Inference API WaveSpeed DeepInfra One-click Deployment Inference Endpoints Microsoft Foundry Amazon SageMaker AI Misc text-generation-inference Eval Results (legacy) text-embeddings-inference custom_code 4-bit precision Merge 8-bit precision ..."
+    },
+    {
+      "title": "MOSS-Audio-4B-Instruct · Models",
+      "url": "https://www.modelscope.cn/models/openmoss/MOSS-Audio-4B-Instruct",
+      "snippet": "ModelScope——汇聚各领域先进的机器学习模型，提供模型探索体验、推理、训练、部署和应用的一站式服务。在这里，共建模型开源社区，发现、学习、定制和分享心仪的模型。"
+    }
+  ]
+}

@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "devrim/reign-small-l2_gn-gte-small_s384_val-selected",
+  "slug": "devrim-reign-small-l2_gn-gte-small_s384_val-selected",
+  "author": "devrim",
+  "url": "https://huggingface.co/devrim/reign-small-l2_gn-gte-small_s384_val-selected",
+  "created_at": "2026-08-28T21:38:01.000Z",
+  "updated_at": "2026-08-28T21:38:09.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "feature-extraction",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "safetensors",
+    "reign",
+    "retrieval",
+    "long-documents",
+    "document-embeddings",
+    "feature-extraction",
+    "en",
+    "dataset:devrim/goodwiki_long_synthetic_ir",
+    "base_model:thenlper/gte-small",
+    "base_model:finetune:thenlper/gte-small",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 3845376,
+  "parameters_human": "3.8M",
+  "storage_bytes": 15385560,
+  "storage_human": "15 MB",
+  "base_model": "thenlper/gte-small",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "‎Google Gemini",
+      "url": "https://gemini.google.com/",
+      "snippet": "Meet Gemini, Google&#x27;s AI assistant. Get help with writing, planning, brainstorming, and more. Experience the power of generative AI."
+    },
+    {
+      "title": "GitHub - open-free-llm-api/awesome-freellm-apis: 134+ free LLM APIs ...",
+      "url": "https://github.com/open-free-llm-api/awesome-freellm-apis",
+      "snippet": "Most AI dev tools accept custom API endpoints — just point them at any provider above. Grab your free key, then: Claude Code — set ANTHROPIC_BASE_URL + ANTHROPIC_AUTH_TOKEN. Step-by-step → Cursor — Settings → Models → Add Model. Step-by-step → Codex CLI — set OPENAI_BASE_URL + OPENAI_API_KEY. Step-by-step → OpenHuman — edit ..."
+    },
+    {
+      "title": "Gemini - Your AI assistant from Google",
+      "url": "https://gemini.google/us/about/?hl=en",
+      "snippet": "Supercharge your creativity and productivity with Google&#x27;s AI assistant. Brainstorm ideas, simplify complex topics, and rehearse for important moments."
+    },
+    {
+      "title": "Devstral Small 2 for Local AI in 2026: Which GPU Runs Mistral&#x27;s Best ...",
+      "url": "https://runaihome.com/blog/devstral-small-2-local-ai-hardware-guide-2026/",
+      "snippet": "Devstral Small 2 is a 24B Apache 2.0 coding model scoring 68% on SWE-bench. Here is the exact GPU you need to run it locally — with real token-speed numbers."
+    },
+    {
+      "title": "GitHub - sovereynai/reign: Your terminal gateway to decentralized AI—no ...",
+      "url": "https://github.com/sovereynai/reign",
+      "snippet": "Your terminal gateway to distributed AI. Reign lets you run AI inference across a network of GPU nodes—without managing infrastructure, paying for idle time, or vendor lock-in. Get instant access to language models and vision AI from your command line."
+    }
+  ]
+}

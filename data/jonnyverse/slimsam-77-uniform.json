@@ -27,8 +27,8 @@
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
-  "storage_bytes": 171172062,
-  "storage_human": "171 MB",
+  "storage_bytes": 74340656,
+  "storage_human": "74 MB",
   "base_model": "nielsr/slimsam-77-uniform",
   "formats": [
     "onnx"

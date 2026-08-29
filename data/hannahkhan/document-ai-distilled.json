@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "hannahkhan/document-ai-distilled",
+  "slug": "hannahkhan-document-ai-distilled",
+  "author": "hannahkhan",
+  "url": "https://huggingface.co/hannahkhan/document-ai-distilled",
+  "created_at": "2026-08-28T19:36:06.000Z",
+  "updated_at": "2026-08-28T19:36:28.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "transformer",
+    "research-notes",
+    "document-ai",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 33088,
+  "parameters_human": "33088",
+  "storage_bytes": 132832,
+  "storage_human": "132832 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "AI Insights: Model Distillation (HTML) - GOV.UK",
+      "url": "https://www.gov.uk/government/publications/ai-insights/ai-insights-model-distillation-html",
+      "snippet": "Digital Service Guidance AI Insights: Model Distillation (HTML) Updated 3 August 2026 Contents Introduction Core distillation techniques Key benefits of model distillation Use cases for model ..."
+    },
+    {
+      "title": "AI Distillation Explained: What It Is, How It Works, Legality Concerns",
+      "url": "https://intellibytes.substack.com/p/ai-distillation-explained-what-it",
+      "snippet": "AI distillation explained: Learn what AI distillation is, how the AI distillation process works, whether AI distillation is legal Why AI Distillation Suddenly Matters : Imagine using a powerful AI assistant on your phone that responds instantly, runs cheaply, and doesn&#x27;t require massive cloud infrastructure."
+    },
+    {
+      "title": "Model Distillation: The Key to Efficient AI Deployment",
+      "url": "https://pub.towardsai.net/model-distillation-the-key-to-efficient-ai-deployment-f0a0504999cf",
+      "snippet": "The smaller models democraticize AI use cases in edge computing devices, smartphones, etc. Distillation of a large model into a small model also retains most of the knowledge of the larger model, so the performance-to-size tradeoff is worth it."
+    },
+    {
+      "title": "GitHub - horus-ai-labs/DistillFlow: Library for model distillation",
+      "url": "https://github.com/horus-ai-labs/DistillFlow",
+      "snippet": "DistillFlow is an open-source toolkit designed to simplify and scale the distillation of large language models (LLMs) into smaller, more efficient models. It provides a flexible pipeline for distillation, fine-tuning, and experimentation across multiple GPUs, with support for dynamic resource allocation and easy integration of custom techniques. What is distillation? Distillation is the ..."
+    },
+    {
+      "title": "Distill AI — AI research, distilled.",
+      "url": "https://www.distillai.ai/",
+      "snippet": "AI research, distilled. Your personalized daily AI research feed — papers, code, and models from every top venue. Get Started — Free → Get in touch Question, feedback, or partnership inquiry? We&#x27;d love to hear from you."
+    }
+  ]
+}

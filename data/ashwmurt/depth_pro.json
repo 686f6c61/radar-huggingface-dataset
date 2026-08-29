@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "ashwmurt/depth_pro",
+  "slug": "ashwmurt-depth_pro",
+  "author": "ashwmurt",
+  "url": "https://huggingface.co/ashwmurt/depth_pro",
+  "created_at": "2026-08-29T00:58:03.000Z",
+  "updated_at": "2026-08-29T00:58:04.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": "depth-estimation",
+  "library": "pytorch",
+  "languages": [],
+  "tags": [
+    "pytorch",
+    "qai-hub-models",
+    "qualcomm",
+    "android",
+    "depth-estimation",
+    "arxiv:2410.02073",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - apple/ml-depth-pro: Depth Pro: Sharp Monocular Metric Depth in ...",
+      "url": "https://github.com/apple/ml-depth-pro",
+      "snippet": "This software project accompanies the research paper: Depth Pro: Sharp Monocular Metric Depth in Less Than a Second, Aleksei Bochkovskii, Amaël Delaunoy, Hugo Germain, Marcel Santos, Yichao Zhou, Stephan R. Richter, and Vladlen Koltun. We present a foundation model for zero-shot metric monocular depth estimation. Our model, Depth Pro, synthesizes high-resolution depth maps with unparalleled ..."
+    },
+    {
+      "title": "Depth Pro: Sharp Monocular Metric Depth in Less Than a Second",
+      "url": "https://arxiv.org/html/2410.02073v2",
+      "snippet": "Abstract We present a foundation model for zero-shot metric monocular depth estimation. Our model, Depth Pro, synthesizes high-resolution depth maps with unparalleled sharpness and high-frequency details. The predictions are metric, with absolute scale, without relying on the availability of metadata such as camera intrinsics. And the model is fast, producing a 2.25-megapixel depth map in 0.3 ..."
+    },
+    {
+      "title": "Depth Pro: Sharp Monocular Metric Depth in Less Than a Second",
+      "url": "https://machinelearning.apple.com/research/depth-pro",
+      "snippet": "We present a foundation model for zero-shot metric monocular depth estimation. Our model, Depth Pro, synthesizes high-resolution depth maps with unparalleled sharpness and high-frequency details. The predictions are metric, with absolute scale, without relying on the availability of metadata such as camera intrinsics. And the model is fast, producing a 2.25-megapixel depth map in 0.3 seconds ..."
+    },
+    {
+      "title": "DepthPro - Hugging Face",
+      "url": "https://huggingface.co/docs/transformers/v4.53.3/en/model_doc/depth_pro",
+      "snippet": "The DepthPro model was proposed in Depth Pro: Sharp Monocular Metric Depth in Less Than a Second by Aleksei Bochkovskii, Amaël Delaunoy, Hugo Germain, Marcel Santos, Yichao Zhou, Stephan R. Richter, Vladlen Koltun. DepthPro is a foundation model for zero-shot metric monocular depth estimation, designed to generate high-resolution depth maps with remarkable sharpness and fine-grained details ..."
+    },
+    {
+      "title": "DepthPro · Models",
+      "url": "https://www.modelscope.cn/models/AI-ModelScope/DepthPro",
+      "snippet": "Depth Pro: Sharp Monocular Metric Depth in Less Than a Second We present a foundation model for zero-shot metric monocular depth estimation. Our model, Depth Pro, synthesizes high-resolution depth maps with unparalleled sharpness and high-frequency details. The predictions are metric, with absolute scale, without relying on the availability of metadata such as camera intrinsics. And the model ..."
+    }
+  ]
+}

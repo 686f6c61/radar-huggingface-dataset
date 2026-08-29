@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "devrim/reign-large-l4_gn-gte-small_s384_val-selected",
+  "slug": "devrim-reign-large-l4_gn-gte-small_s384_val-selected",
+  "author": "devrim",
+  "url": "https://huggingface.co/devrim/reign-large-l4_gn-gte-small_s384_val-selected",
+  "created_at": "2026-08-28T21:40:02.000Z",
+  "updated_at": "2026-08-28T21:40:48.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "feature-extraction",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "safetensors",
+    "reign",
+    "retrieval",
+    "long-documents",
+    "document-embeddings",
+    "feature-extraction",
+    "en",
+    "dataset:devrim/goodwiki_long_synthetic_ir",
+    "base_model:thenlper/gte-small",
+    "base_model:finetune:thenlper/gte-small",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 51829504,
+  "parameters_human": "51.8M",
+  "storage_bytes": 207325808,
+  "storage_human": "207 MB",
+  "base_model": "thenlper/gte-small",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - sovereynai/reign: Your terminal gateway to decentralized AI—no ...",
+      "url": "https://github.com/sovereynai/reign",
+      "snippet": "Your terminal gateway to distributed AI. Reign lets you run AI inference across a network of GPU nodes—without managing infrastructure, paying for idle time, or vendor lock-in. Get instant access to language models and vision AI from your command line."
+    },
+    {
+      "title": "AI Leaderboard 2026: Rankings for 300+ Top AI Models by Intelligence ...",
+      "url": "https://llm-stats.com/",
+      "snippet": "The AI Leaderboard — independent rankings of GPT, Claude, Gemini, Llama, DeepSeek and 300+ AI models by intelligence, speed and price. Composite LLM Stats Score updated continuously from public benchmarks and live API metrics."
+    },
+    {
+      "title": "All models | OpenAI API",
+      "url": "https://developers.openai.com/api/docs/models/all",
+      "snippet": "All models Browse all available models and compare their capabilities."
+    },
+    {
+      "title": "Open models by OpenAI | OpenAI",
+      "url": "https://openai.com/open-models/",
+      "snippet": "Advanced open-weight reasoning models to customize for any use case and run anywhere."
+    },
+    {
+      "title": "AI Models | Civitai",
+      "url": "https://civitai.com/models",
+      "snippet": "Browse thousands of free Stable Diffusion & Flux models, LoRAs, checkpoints, and embeddings. The largest collection of AI image generation resources."
+    }
+  ]
+}

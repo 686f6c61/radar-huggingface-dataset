@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "wilsonhwh/dino-contrastive",
+  "slug": "wilsonhwh-dino-contrastive",
+  "author": "wilsonhwh",
+  "url": "https://huggingface.co/wilsonhwh/dino-contrastive",
+  "created_at": "2026-08-28T22:20:23.000Z",
+  "updated_at": "2026-08-28T22:20:33.000Z",
+  "license": "bsd-3-clause",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "dino",
+    "pytorch",
+    "contrastive",
+    "license:bsd-3-clause",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 16576,
+  "parameters_human": "16576",
+  "storage_bytes": 66784,
+  "storage_human": "66784 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "DINO (computer vision) - AI Wiki",
+      "url": "https://aiwiki.ai/wiki/dino_model",
+      "snippet": "DINO (self- DI stillation with NO labels) is a family of self-supervised learning methods for computer vision from Meta AI that trains Vision Transformers (ViTs) on unlabeled images and produces general-purpose visual features rivaling or surpassing those learned with human-labeled supervision [1] [2]."
+    },
+    {
+      "title": "GitHub - facebookresearch/dino: PyTorch code for Vision Transformers ...",
+      "url": "https://github.com/facebookresearch/dino",
+      "snippet": "PyTorch code for Vision Transformers training with the Self-Supervised learning method DINO - facebookresearch/dino"
+    },
+    {
+      "title": "DINOv3 - ai.meta.com",
+      "url": "https://ai.meta.com/research/dinov3/",
+      "snippet": "DINOv3 scales self-supervised learning (SSL) for images to produce our strongest universal vision backbones, enabling breakthrough performance across diverse domains."
+    },
+    {
+      "title": "DINO - A Foundation Model for Computer Vision - Towards Data Science",
+      "url": "https://towardsdatascience.com/dino-a-foundation-model-for-computer-vision-4cb08e821b18/",
+      "snippet": "DINO was released on arxiv in April 2021. So, one month before it was actually presented on a conference. This would mean they only had 5 months if they had started right away to come up with the project&#x27;s idea, compile a team, lay out the theoretical foundation, train the model, perform experiments and ablations, and write the paper."
+    },
+    {
+      "title": "The Future is Self-Supervised: An Introduction to DINOv2",
+      "url": "https://caffeinated-engineer.medium.com/the-future-is-self-supervised-an-introduction-to-dinov2-c3c37f0dfb6f",
+      "snippet": "The DINO algorithm employed a method known as contrastive learning, enabling the model to distinguish between similar and dissimilar instances in the data, a skill particularly useful for image retrieval tasks."
+    }
+  ]
+}

@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "maskjp/mtdit-spatial-multitask-cls-nodrop",
+  "slug": "maskjp-mtdit-spatial-multitask-cls-nodrop",
+  "author": "maskjp",
+  "url": "https://huggingface.co/maskjp/mtdit-spatial-multitask-cls-nodrop",
+  "created_at": "2026-08-28T19:47:21.000Z",
+  "updated_at": "2026-08-28T23:22:56.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "robotics",
+    "diffusion-policy",
+    "multi-task",
+    "negative-result",
+    "base_model:openai/clip-vit-base-patch16",
+    "base_model:finetune:openai/clip-vit-base-patch16",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 234712842,
+  "parameters_human": "234.7M",
+  "storage_bytes": 938935320,
+  "storage_human": "939 MB",
+  "base_model": "openai/clip-vit-base-patch16",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - maskjp/lerobot_policy_mtdit_spatial",
+      "url": "https://github.com/maskjp/lerobot_policy_mtdit_spatial",
+      "snippet": "Why this exists Stock multi_task_dit pools each camera to a single CLIP CLS token (get_output_shape () -> (768, 1, 1)), discarding all 196 patch tokens. That was a deliberate compactness tradeoff by the original author, who also lists \"spatial grounding: insufficient visual localization\" as the architecture&#x27;s first known weakness."
+    },
+    {
+      "title": "maskjp · GitHub",
+      "url": "https://github.com/maskjp",
+      "snippet": "Forked from floodsung/Deep-Learning-Papers-Reading-Roadmap Deep Learning papers reading roadmap for anyone who are eager to learn this amazing tech! Python 1 1"
+    },
+    {
+      "title": "maskjp (Peng Jiang) - Hugging Face",
+      "url": "https://huggingface.co/maskjp",
+      "snippet": "User profile of Peng Jiang on Hugging Face"
+    },
+    {
+      "title": "maskjp/mtdit_plate_croissant_jointbase · Hugging Face",
+      "url": "https://huggingface.co/maskjp/mtdit_plate_croissant_jointbase",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Ultralytics YOLO11",
+      "url": "https://docs.ultralytics.com/models/yolo11",
+      "snippet": "Discover YOLO11, an advancement in real-time object detection, offering excellent accuracy and efficiency for diverse computer vision tasks."
+    }
+  ]
+}

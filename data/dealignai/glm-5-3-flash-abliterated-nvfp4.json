@@ -5,7 +5,7 @@
   "author": "dealignai",
   "url": "https://huggingface.co/dealignai/GLM-5.3-Flash-ABLITERATED-NVFP4",
   "created_at": "2026-08-26T19:53:33.000Z",
-  "updated_at": "2026-08-26T22:42:57.000Z",
+  "updated_at": "2026-08-29T02:30:06.000Z",
   "license": "mit",
   "license_family": "oss",
   "pipeline_tag": null,
@@ -19,7 +19,6 @@
     "abliterated",
     "uncensored",
     "crack",
-    "refusal-removed",
     "glm",
     "moe",
     "nvfp4",
@@ -33,13 +32,13 @@
     "modelopt",
     "region:us"
   ],
-  "likes": 3,
+  "likes": 5,
   "downloads_30d": 0,
   "trending_score": 0,
   "parameters": 165496249182,
   "parameters_human": "165.50B",
-  "storage_bytes": 194692661135,
-  "storage_human": "194.7 GB",
+  "storage_bytes": 255722849635,
+  "storage_human": "255.7 GB",
   "base_model": "zai-org/GLM-5.3-Flash",
   "formats": [
     "safetensors"

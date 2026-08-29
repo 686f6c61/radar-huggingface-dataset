@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "Ryanham1lton/Budew",
+  "slug": "ryanham1lton-budew",
+  "author": "Ryanham1lton",
+  "url": "https://huggingface.co/Ryanham1lton/Budew",
+  "created_at": "2026-08-28T19:38:06.000Z",
+  "updated_at": "2026-08-28T19:39:52.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:cc-by-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 122044158,
+  "storage_human": "122 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Ryanham1lton (Ryan James Hamilton) - Hugging Face",
+      "url": "https://huggingface.co/Ryanham1lton/models",
+      "snippet": "User profile of Ryan James Hamilton on Hugging Face"
+    },
+    {
+      "title": "Ryanham1lton/Beldum · Hugging Face",
+      "url": "https://huggingface.co/Ryanham1lton/Beldum",
+      "snippet": "Ryanham1lton / Beldum like 0 License:cc-by-4. Model card FilesFiles and versions xet Community Copy to bucket new"
+    },
+    {
+      "title": "A‌I chat|1v1 Chat with Character Budew for Free Personalized ...",
+      "url": "https://www.polybuzz.ai/character/chat/budew-p3fEh",
+      "snippet": "Dive into lifelike 1-on-1 AI chat with Budew |Experience human-like conversations,emotional depth,and personalized scenarios powered by DeepAI.Ask anything to your AI character."
+    },
+    {
+      "title": "Chat with Budew | character.ai | AI Chat, Reimagined-Your Words. Your ...",
+      "url": "https://character.ai/chat/CvDJX8QALoKmDabQSny-KRQHEVSvuHprJGJKWItH6Ys",
+      "snippet": "Chat with Budew: . Powered by an industry leading, AI large language model (LLM)."
+    },
+    {
+      "title": "AI Busted - The Best AI Content Detector & Humanizer",
+      "url": "https://aibusted.com/",
+      "snippet": "AI Busted analyzes text to determine whether it was written by AI - such as ChatGPT, Claude, LLaMA, Gemini, or any other LLM. It&#x27;s also the perfect tool to humanize AI-generated content, making it read completely human and instantly free of plagiarism."
+    }
+  ]
+}

@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "guillaumehdupont/matching-notebook",
+  "slug": "guillaumehdupont-matching-notebook",
+  "author": "guillaumehdupont",
+  "url": "https://huggingface.co/guillaumehdupont/matching-notebook",
+  "created_at": "2026-08-28T19:56:15.000Z",
+  "updated_at": "2026-08-28T19:56:38.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "blip",
+    "pytorch",
+    "matching",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 16576,
+  "parameters_human": "16576",
+  "storage_bytes": 66784,
+  "storage_human": "66784 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Gemini Notebook | AI research tool and thinking partner",
+      "url": "https://notebook.google/?hl=en-IN",
+      "snippet": "Meet Gemini Notebook, the AI research tool and thinking partner that can analyse your sources, turn complexity into clarity and transform your content."
+    },
+    {
+      "title": "‎Google Gemini",
+      "url": "https://gemini.google.com/",
+      "snippet": "Meet Gemini, Google&#x27;s AI assistant. Get help with writing, planning, brainstorming, and more. Experience the power of generative AI."
+    },
+    {
+      "title": "notebooklm.google.com",
+      "url": "https://notebooklm.google.com/?authuser=1",
+      "snippet": "NotebookLM is an AI-powered tool for summarizing, organizing, and interacting with notes and information from various sources."
+    },
+    {
+      "title": "Hugging Face - The AI community building the future.",
+      "url": "https://huggingface.co/",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Gemini — Google DeepMind",
+      "url": "https://deepmind.google/models/gemini/",
+      "snippet": "Gemini 3.5 Flash-Lite has proven incredibly fast and reliable. Ultimately, the model unlocks direct accessibility, giving users a highly responsive option they can choose on demand for smooth, uninterrupted execution.\" Ashwin Kannan, Principal AI Engineer, Palo Alto Networks"
+    }
+  ]
+}

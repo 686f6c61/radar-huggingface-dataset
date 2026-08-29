@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "vanishingMonk/bert-finetuned-ner",
+  "slug": "vanishingmonk-bert-finetuned-ner",
+  "author": "vanishingMonk",
+  "url": "https://huggingface.co/vanishingMonk/bert-finetuned-ner",
+  "created_at": "2026-08-28T22:03:37.000Z",
+  "updated_at": "2026-08-28T22:44:13.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "token-classification",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "bert",
+    "token-classification",
+    "generated_from_trainer",
+    "base_model:google-bert/bert-base-cased",
+    "base_model:finetune:google-bert/bert-base-cased",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 107726601,
+  "parameters_human": "107.7M",
+  "storage_bytes": 1292794349,
+  "storage_human": "1.3 GB",
+  "base_model": "bert-base-cased",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "nt-ai/bert-finetuned-ner · Hugging Face",
+      "url": "https://huggingface.co/nt-ai/bert-finetuned-ner",
+      "snippet": "nt-ai / bert-finetuned-ner like 0 Token Classification Transformers TensorBoard Safetensors conll2003 bert Generated from Trainer Eval Results License:apache-2.0 Model card FilesFiles and versionsMetricsTraining metrics Community Train Deploy Use this model bert-finetuned-ner Model description Intended uses & limitations Training and evaluation ..."
+    },
+    {
+      "title": "huggingface-course/bert-finetuned-ner · Hugging Face",
+      "url": "https://huggingface.co/huggingface-course/bert-finetuned-ner",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GitHub - Liki990/bert_model: BERT finetuned on NER downstream tasks",
+      "url": "https://github.com/Liki990/bert_model",
+      "snippet": "BERT finetuned on NER downstream tasks. Contribute to Liki990/bert_model development by creating an account on GitHub."
+    },
+    {
+      "title": "Fine-tuning BERT for Named Entity Recognition (NER) - LinkedIn",
+      "url": "https://www.linkedin.com/pulse/fine-tuning-bert-named-entity-recognition-ner-arastu-thakur-spukc",
+      "snippet": "Fine-tuning: Fine-tune the BERT model on the NER dataset using techniques such as gradient descent optimization and backpropagation."
+    },
+    {
+      "title": "Wencho8/Fine-Tuned-BERT-for-Named-Entity-Recognition-using ... - GitHub",
+      "url": "https://github.com/Wencho8/Fine-Tuned-BERT-for-Named-Entity-Recognition-using-Transformers-and-PyTorch",
+      "snippet": "In this notebook, the process of fine-tuning a pre-trained BERT-based model (DistilBERT) for the task of Named-Entity Recognition (NER) will be explored. NER is a fundamental task in Natural Language Processing (NLP) that involves identifying entities such as persons, locations, and organizations in text."
+    }
+  ]
+}

@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "maskjp/mtdit-spatial-multitask-patch-tokens",
+  "slug": "maskjp-mtdit-spatial-multitask-patch-tokens",
+  "author": "maskjp",
+  "url": "https://huggingface.co/maskjp/mtdit-spatial-multitask-patch-tokens",
+  "created_at": "2026-08-28T23:22:36.000Z",
+  "updated_at": "2026-08-28T23:22:49.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "robotics",
+    "diffusion-policy",
+    "multi-task",
+    "negative-result",
+    "base_model:openai/clip-vit-base-patch16",
+    "base_model:finetune:openai/clip-vit-base-patch16",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 239968014,
+  "parameters_human": "240.0M",
+  "storage_bytes": 959960656,
+  "storage_human": "960 MB",
+  "base_model": "openai/clip-vit-base-patch16",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "maskjp/mtdit-spatial-multitask-spatial-mask · Hugging Face",
+      "url": "https://huggingface.co/maskjp/mtdit-spatial-multitask-spatial-mask",
+      "snippet": "Instructions to use maskjp/mtdit-spatial-multitask-spatial-mask with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "maskjp (Peng Jiang) - Hugging Face",
+      "url": "https://huggingface.co/maskjp/models",
+      "snippet": "User profile of Peng Jiang on Hugging Face"
+    },
+    {
+      "title": "CVPR 2026 Open Access Repository",
+      "url": "https://openaccess.thecvf.com/content/CVPR2026W/SAFE/html/Abdullah_TAP_into_the_Patch_Tokens_Leveraging_Vision_Foundation_Model_Features_CVPRW_2026_paper.html",
+      "snippet": "TAP into the Patch Tokens: Leveraging Vision Foundation Model Features for AI-Generated Image Detection Ahmed Abdullah, Nikolas Ebert, Oliver Wasenmüller; Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR) Workshops, 2026, pp. 379-389"
+    },
+    {
+      "title": "Malicious JetBrains Plugins Steal AI API Keys as Chrome Extensions ...",
+      "url": "https://thehackernews.com/2026/06/malicious-jetbrains-plugins-steal-ai.html",
+      "snippet": "Researchers found 15 malicious JetBrains plugins posing as AI coding tools that exfiltrate OpenAI, DeepSeek, and SiliconFlow API keys."
+    },
+    {
+      "title": "Fast Training of Diffusion Models with Masked Transformers",
+      "url": "https://arxiv.org/html/2306.09305v2",
+      "snippet": "Figure 1: A comparison of our MaskDiT architecture with DiT (Peebles & Xie, 2022). During training, we randomly mask a high proportion of input patches. The encoder operates on unmasked patches, and after adding learnable masked tokens (marked by gray), full patches are processed by a small decoder. The model is trained to predict the score on unmasked patches (DSM target) and reconstruct the ..."
+    }
+  ]
+}

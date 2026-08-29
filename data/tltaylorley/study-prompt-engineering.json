@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "tltaylorley/study-prompt-engineering",
+  "slug": "tltaylorley-study-prompt-engineering",
+  "author": "tltaylorley",
+  "url": "https://huggingface.co/tltaylorley/study-prompt-engineering",
+  "created_at": "2026-08-28T22:01:31.000Z",
+  "updated_at": "2026-08-28T22:01:39.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "transformer",
+    "research-notes",
+    "prompt-engineering",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 33088,
+  "parameters_human": "33088",
+  "storage_bytes": 132832,
+  "storage_human": "132832 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Prompting Change: Exploring Prompt Engineering in Large Language Model ...",
+      "url": "https://link.springer.com/article/10.1007/s11528-023-00896-0",
+      "snippet": "This paper explores the transformative potential of Large Language Models Artificial Intelligence (LLM AI) in educational contexts, particularly focusing on the innovative practice of prompt engineering. Prompt engineering, characterized by three essential components of content knowledge, critical thinking, and iterative design, emerges as a key mechanism to access the transformative ..."
+    },
+    {
+      "title": "The Impact of Prompt Engineering and a Generative AI-Driven Tool on ...",
+      "url": "https://www.mdpi.com/2227-7102/15/2/199",
+      "snippet": "This study evaluates \"I Learn with Prompt Engineering\", a self-paced, self-regulated elective course designed to equip university students with skills in prompt engineering to effectively utilize large language models (LLMs), foster self-directed learning, and enhance academic English proficiency through generative AI applications. By integrating prompt engineering concepts with generative ..."
+    },
+    {
+      "title": "GitHub - dair-ai/Prompt-Engineering-Guide: Guides, papers, lessons ...",
+      "url": "https://github.com/dair-ai/Prompt-Engineering-Guide",
+      "snippet": "Prompt engineering is a relatively new discipline for developing and optimizing prompts to efficiently use language models (LMs) for a wide variety of applications and research topics. Prompt engineering skills help to better understand the capabilities and limitations of large language models (LLMs)."
+    },
+    {
+      "title": "Prompt Engineering Guide | Prompt Engineering Guide",
+      "url": "https://www.promptingguide.ai/",
+      "snippet": "Motivated by the high interest in developing with LLMs, we have created this new prompt engineering guide that contains all the latest papers, advanced prompting techniques, learning guides, model-specific prompting guides, lectures, references, new LLM capabilities, and tools related to prompt engineering."
+    },
+    {
+      "title": "[2402.07927] A Systematic Survey of Prompt Engineering in Large ...",
+      "url": "https://arxiv.org/abs/2402.07927",
+      "snippet": "Prompt engineering has emerged as an indispensable technique for extending the capabilities of large language models (LLMs) and vision-language models (VLMs). This approach leverages task-specific instructions, known as prompts, to enhance model efficacy without modifying the core model parameters. Rather than updating the model parameters, prompts allow seamless integration of pre-trained ..."
+    }
+  ]
+}

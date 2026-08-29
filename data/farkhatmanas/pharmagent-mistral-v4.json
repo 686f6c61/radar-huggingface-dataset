@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "FarkhatManas/pharmagent-mistral-v4",
+  "slug": "farkhatmanas-pharmagent-mistral-v4",
+  "author": "FarkhatManas",
+  "url": "https://huggingface.co/FarkhatManas/pharmagent-mistral-v4",
+  "created_at": "2026-08-28T23:07:58.000Z",
+  "updated_at": "2026-08-28T23:08:05.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 27297544,
+  "storage_human": "27 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "FarkhatManas (Farkhat Manas) - Hugging Face",
+      "url": "https://huggingface.co/FarkhatManas",
+      "snippet": "AI & ML interests ... Recent Activity updated a model 29 days ago ... published a model 29 days ago"
+    },
+    {
+      "title": "FarkhatManas (Farkhat Manas) - Hugging Face",
+      "url": "https://huggingface.co/FarkhatManas/models",
+      "snippet": "User profile of Farkhat Manas on Hugging Face"
+    },
+    {
+      "title": "arXiv.org",
+      "url": "https://arxiv.org/pdf/2503.22164v2",
+      "snippet": "arXiv.org"
+    },
+    {
+      "title": "GitHub - aditans/Pharmagent.ai",
+      "url": "https://github.com/aditans/Pharmagent.ai",
+      "snippet": "An AI-powered WhatsApp chatbot for pharmacy inventory management, built on Azure Functions and integrated with Azure AI services. Pharmacists can manage stock, process invoices, record sales, and query inventory — all through WhatsApp text, voice notes, or invoice images."
+    },
+    {
+      "title": "PharmAgents: Building a Virtual Pharma with Large Language Model Agents",
+      "url": "https://arxiv.org/abs/2503.22164",
+      "snippet": "The discovery of novel small molecule drugs remains a critical scientific challenge with far-reaching implications for treating diseases and advancing human health. Traditional drug development--especially for small molecule therapeutics--is a highly complex, resource-intensive, and time-consuming process that requires multidisciplinary collaboration. Recent breakthroughs in artificial ..."
+    }
+  ]
+}

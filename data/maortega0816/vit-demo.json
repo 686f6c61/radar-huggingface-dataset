@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "Maortega0816/vit-demo",
+  "slug": "maortega0816-vit-demo",
+  "author": "Maortega0816",
+  "url": "https://huggingface.co/Maortega0816/vit-demo",
+  "created_at": "2026-08-28T23:38:08.000Z",
+  "updated_at": "2026-08-28T23:38:17.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "vit",
+    "pytorch",
+    "matching",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 49600,
+  "parameters_human": "49600",
+  "storage_bytes": 198880,
+  "storage_human": "198880 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Maortega0816 (Martin Ortega) - Hugging Face",
+      "url": "https://huggingface.co/Maortega0816/datasets",
+      "snippet": "it&#x27;s complicated"
+    },
+    {
+      "title": "clp/vit-demo · Hugging Face",
+      "url": "https://huggingface.co/clp/vit-demo",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "ai-hub-models/qai_hub_models/models/vit/demo.py at main - GitHub",
+      "url": "https://github.com/qualcomm/ai-hub-models/blob/main/qai_hub_models/models/vit/demo.py",
+      "snippet": "Qualcomm® AI Hub Models is our collection of state-of-the-art machine learning models optimized for performance (latency, memory etc.) and ready to deploy on Qualcomm® devices. - qualcomm/ai-hub-mo..."
+    },
+    {
+      "title": "Vit Demo - AI Model Insights & Benchmarks - free2aitools.com",
+      "url": "https://free2aitools.com/model/nguyenbh/vit-demo",
+      "snippet": "Deep dive into Vit Demo. 📝 Limitations & Considerations •Benchmark scores may vary based on evaluation methodology and hardware configuration. •VRAM requirements are estimates; actual usage depends on quantization and batch size. •FNI scores are relative rankings and may change as new models are added. ⚠License Unknown: Verify licensing terms before commercial use."
+    },
+    {
+      "title": "AI Models | Civitai",
+      "url": "https://civitai.com/models",
+      "snippet": "Browse thousands of free Stable Diffusion & Flux models, LoRAs, checkpoints, and embeddings. The largest collection of AI image generation resources."
+    }
+  ]
+}

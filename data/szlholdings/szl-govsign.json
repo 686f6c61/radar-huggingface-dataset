@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "SZLHOLDINGS/szl-govsign",
+  "slug": "szlholdings-szl-govsign",
+  "author": "SZLHOLDINGS",
+  "url": "https://huggingface.co/SZLHOLDINGS/szl-govsign",
+  "created_at": "2026-06-24T16:45:09.000Z",
+  "updated_at": "2026-08-28T23:02:50.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "kernels",
+  "languages": [],
+  "tags": [
+    "kernels",
+    "kernel",
+    "signing",
+    "attestation",
+    "dsse",
+    "in-toto",
+    "governance",
+    "doi:10.5281/zenodo.19944926",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1060512,
+  "storage_human": "1 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "SZLHOLDINGS/szl-govsign · Hugging Face",
+      "url": "https://huggingface.co/SZLHOLDINGS/szl-govsign",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "SZLHOLDINGS/szl-govsign at main - Hugging Face",
+      "url": "https://huggingface.co/SZLHOLDINGS/szl-govsign/tree/main",
+      "snippet": "MODEL_PROVENANCE.json Safe 2.01 kBdocs (provenance): attest model source of record (#2)4 days ago README.md Safe 9.43 kBdocs: download-ready card — live demo links, install lines, file map (honest labels preserved)5 days ago SECURITY.md Safe 1.26 kBfix: correct security contact to live domain (szlholdings.com; .ai does not resolve)8 days ago ..."
+    },
+    {
+      "title": "SZL Holdings · GitHub",
+      "url": "https://github.com/szl-holdings",
+      "snippet": "Governed AI infrastructure for inspectable decisions: source, runtime state, receipts, and proof boundaries. - SZL Holdings"
+    },
+    {
+      "title": "platform/docs/architecture/ai-governance.md at main · szl-holdings ...",
+      "url": "https://github.com/szl-holdings/platform/blob/main/docs/architecture/ai-governance.md",
+      "snippet": "Purpose Document how the SZL Holdings platform governs AI usage at the platform layer — provider stack, data handling, output provenance, approval gates, evaluation, observability, customer controls. This is the canonical document for AI governance. It is the artifact a CISO or AI risk officer reads when evaluating us."
+    },
+    {
+      "title": "SZL-Nemo — Sovereign Governed Agent Model · SZL Holdings",
+      "url": "https://a-11-oy.com/nemo",
+      "snippet": "SZL-Nemo: an identity-bound local inference recipe built on NVIDIA Nemotron 3 Nano 4B, with governed routing and signed receipts. The recipe is not an SZL fine-tune; readiness and quality are reported separately."
+    }
+  ]
+}

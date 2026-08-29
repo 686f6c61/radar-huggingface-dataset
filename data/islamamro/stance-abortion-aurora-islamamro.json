@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "Islamamro/stance-abortion-aurora-islamamro",
+  "slug": "islamamro-stance-abortion-aurora-islamamro",
+  "author": "Islamamro",
+  "url": "https://huggingface.co/Islamamro/stance-abortion-aurora-islamamro",
+  "created_at": "2026-08-28T23:19:00.000Z",
+  "updated_at": "2026-08-28T23:30:45.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "distilbert",
+    "aurora",
+    "islamamro",
+    "text-classification",
+    "dataset:SetFit/tweet_eval_stance_abortion",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 66955779,
+  "parameters_human": "67.0M",
+  "storage_bytes": 267835644,
+  "storage_human": "268 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Disturbing \"Baby Canceled\" Instagram Post Celebrates Abortion",
+      "url": "https://www.lifenews.com/2026/08/25/disturbing-baby-canceled-instagram-post-celebrates-abortion/",
+      "snippet": "A disturbing viral Instagram post that framed the abortion of an unborn baby as a cheerful \"cancellation\" announcement has drawn widespread condemnation from pro-life observers who called it a disgusting celebration of ending a human life. The AI-generated graphic, posted by a woman identifying herself as Moraa, featured itty-bitty infant shoes, alphabet blocks spelling \"B-A-B-Y,\" […]"
+    },
+    {
+      "title": "islamamro · GitHub",
+      "url": "https://github.com/islamamro",
+      "snippet": "islamamro has one repository available. Follow their code on GitHub."
+    },
+    {
+      "title": "Islam&#x27;s Stance on Abortion - IslamOnline",
+      "url": "https://fiqh.islamonline.net/en/islams-stance-on-abortion/",
+      "snippet": "Islam forbids abortion in all stages of pregnancy. When the pregnancy reaches 120 days old, abortion becomes totally forbidden and is deemed a form of murder that results in compensation becoming liable."
+    },
+    {
+      "title": "Islam Amro - Dean of the Faculty of Modern Sciences ... - LinkedIn",
+      "url": "https://ps.linkedin.com/in/islam-amro-5314384",
+      "snippet": "Dean of the Faculty of Modern Sciences |Professor of Cybersecurity and Cybercrime · -Provide with Corporate Business Driven Cybersecurity Designs. -Join teams running larger frameworks -Improve my skills in IS exploitation in management -Work in technical fields where technology catalysis business opportunity&#x27;s Specialties: the work needs high skills in the following: -Cisco (Routing, IP/VPN ..."
+    },
+    {
+      "title": "Abortion from an Islamic Perspective - IslamOnline",
+      "url": "https://fiqh.islamonline.net/en/abortion-from-an-islamic-perspective/",
+      "snippet": "Dear scholars, as-Salamu `alaykum wa Rahmatu Allah wa Barakatuh. What is Islam&#x27;s stance on abortion, as the issue is still controversial, especially among Muslims living abroad? Jazakum Allah Khayran."
+    }
+  ]
+}

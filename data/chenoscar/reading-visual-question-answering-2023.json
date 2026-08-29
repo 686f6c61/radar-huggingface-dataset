@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "chenoscar/reading-visual-question-answering-2023",
+  "slug": "chenoscar-reading-visual-question-answering-2023",
+  "author": "chenoscar",
+  "url": "https://huggingface.co/chenoscar/reading-visual-question-answering-2023",
+  "created_at": "2026-08-28T23:09:37.000Z",
+  "updated_at": "2026-08-28T23:09:45.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": "visual-question-answering",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "transformer",
+    "research-notes",
+    "visual-question-answering",
+    "license:cc-by-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 24832,
+  "parameters_human": "24832",
+  "storage_bytes": 99808,
+  "storage_human": "99808 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "VoQA: Visual-only Question Answering - arXiv.org",
+      "url": "https://arxiv.org/html/2505.14227v1",
+      "snippet": "The model must perceive, understand, and reason over both the visual scene and the embedded question, all through a unified visual input stream. A conceptual comparison between traditional VQA and VoQA is illustrated in Figure 1. Figure 1: Comparison between traditional VQA (left) and Visual-only Question Answering (VoQA, right)."
+    },
+    {
+      "title": "Visual Question Answering - Hugging Face",
+      "url": "https://huggingface.co/docs/transformers/en/tasks/visual_question_answering",
+      "snippet": "Visual Question Answering (VQA) is the task of answering open-ended questions based on an image. The input to models supporting this task is typically a combination of an image and a question, and the output is an answer expressed in natural language. Some noteworthy use case examples for VQA include: Accessibility applications for visually impaired individuals. Education: posing questions ..."
+    },
+    {
+      "title": "Visual Question Answering: From Early Developments to Recent Advances ...",
+      "url": "https://arxiv.org/html/2501.03939v1",
+      "snippet": "Visual-Attention: Guided attention refers to the use of an attention mechanism to help the model focus on specific parts of an image when generating an answer to a question about the image. The attention mechanism is guided by the question, which is used as a query to direct the model&#x27;s attention to relevant regions of the image."
+    },
+    {
+      "title": "(PDF) VISUAL QUESTION ANSWERING - ResearchGate",
+      "url": "https://www.researchgate.net/publication/370607291_VISUAL_QUESTION_ANSWERING",
+      "snippet": "This paper presents a new baseline for visual question answering task. Given an image and a question in natural language, our model produces accurate answers according to the content of the image ..."
+    },
+    {
+      "title": "Google Scholar",
+      "url": "https://scholar.google.com/",
+      "snippet": "Google Scholar provides a simple way to broadly search for scholarly literature. Search across a wide variety of disciplines and sources: articles, theses, books, abstracts and court opinions."
+    }
+  ]
+}

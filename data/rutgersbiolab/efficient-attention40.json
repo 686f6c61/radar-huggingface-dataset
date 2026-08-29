@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "rutgersbiolab/efficient-attention40",
+  "slug": "rutgersbiolab-efficient-attention40",
+  "author": "rutgersbiolab",
+  "url": "https://huggingface.co/rutgersbiolab/efficient-attention40",
+  "created_at": "2026-08-28T21:04:42.000Z",
+  "updated_at": "2026-08-28T21:04:51.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "transformer",
+    "research-notes",
+    "efficient-attention",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 16576,
+  "parameters_human": "16576",
+  "storage_bytes": 66784,
+  "storage_human": "66784 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Rutgers Efficient AI Seminar - YouTube",
+      "url": "https://www.youtube.com/channel/UCEKdqfnoyNSYB5bzWMT5SNQ",
+      "snippet": "Rutgers Efficient AI Seminar Talk Series"
+    },
+    {
+      "title": "Artificial Intelligence at Rutgers",
+      "url": "https://it.rutgers.edu/ai/",
+      "snippet": "The world of AI is evolving quickly, with artificial intelligence features often being added to existing software and technology services. Explore a selection of Rutgers technology services and tools that integrate AI features and capabilities, highlighting some of the options available to support your work and learning."
+    },
+    {
+      "title": "GitHub - NVlabs/Sana: SANA: Efficient High-Resolution Image Synthesis ...",
+      "url": "https://github.com/NVlabs/Sana",
+      "snippet": "SANA is an efficiency-oriented codebase for high-resolution image and video generation, providing complete training and inference pipelines. This repository contains code for SANA, SANA-1.5, SANA-Sprint, SANA-Video, SANA-WM, SANA-Streaming, and Sol-RL. More details can be found in our 📚 documentation. Join our Discord to engage in discussions with the community! If you have any questions ..."
+    },
+    {
+      "title": "Rutgers University - Artificial Intelligence",
+      "url": "https://ai.cs.rutgers.edu/",
+      "snippet": "Rutgers has been an important center of AI research since the late Saul Amarel moved here from RCA Labs more than thirty years ago. Our research has always aimed to discover the fundamental computational principles underlying intelligent and adaptive behavior through the construction and analysis of proof-of-concept systems."
+    },
+    {
+      "title": "Breakthrough AI research — Google AI",
+      "url": "https://ai.google/research/",
+      "snippet": "Research teams across Google are innovating across domains to positively impact society, with breakthroughs that have helped usher in a new era of AI."
+    }
+  ]
+}

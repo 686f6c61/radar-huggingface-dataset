@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "Seum0/qwen2.5-luau-coder-1.5b",
+  "slug": "seum0-qwen2-5-luau-coder-1-5b",
+  "author": "Seum0",
+  "url": "https://huggingface.co/Seum0/qwen2.5-luau-coder-1.5b",
+  "created_at": "2026-08-28T20:09:29.000Z",
+  "updated_at": "2026-08-28T20:13:00.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen2",
+    "text-generation",
+    "text-generation-inference",
+    "unsloth",
+    "conversational",
+    "en",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1543714304,
+  "parameters_human": "1.54B",
+  "storage_bytes": 3098889226,
+  "storage_human": "3.1 GB",
+  "base_model": "unsloth/qwen2.5-coder-1.5b-instruct-bnb-4bit",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Qwen/Qwen2.5-Coder-1.5B · Hugging Face",
+      "url": "https://huggingface.co/Qwen/Qwen2.5-Coder-1.5B",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "umjunsik1323/Qwen2.5-Coder-1.5B-roblox · Hugging Face",
+      "url": "https://huggingface.co/umjunsik1323/Qwen2.5-Coder-1.5B-roblox",
+      "snippet": "Built on top of Qwen2.5-Coder-1.5B-Instruct, this model excels at generating, completing, and understanding Luau code patterns commonly used in Roblox game development."
+    },
+    {
+      "title": "GitHub - worldart/QwenLM_Qwen2.5-Coder: Qwen2.5-Coder is the code ...",
+      "url": "https://github.com/worldart/QwenLM_Qwen2.5-Coder",
+      "snippet": "Qwen2.5-Coder is part of the Qwen2.5 series, available in three model sizes: 1.5B, 7B, and a 32B version (coming soon). This update focuses on two main improvements: scaling up the code training data and enhancing coding capabilities while maintaining strong performance in other core areas like math and general tasks."
+    },
+    {
+      "title": "GitHub - huggingface/Qwen2.5-Coder: Qwen2.5-Coder is the code version ...",
+      "url": "https://github.com/huggingface/Qwen2.5-Coder",
+      "snippet": "Today, we are excited to open source the \"Powerful\", \"Diverse\", and \"Practical\" Qwen2.5-Coder series (formerly known as CodeQwen1.5), dedicated to continuously promoting the development of Open CodeLLMs. 💻 Powerful: Qwen2.5-Coder-32B-Instruct has become the current SOTA open-source code model, matching the coding capabilities of GPT-4o. While demonstrating strong and ..."
+    },
+    {
+      "title": "Qwen 2.5 Coder 1.5B: Local Coding Model (1.2GB VRAM)",
+      "url": "https://localaimaster.com/models/qwen-2-5-coder-1-5b",
+      "snippet": "Qwen 2.5 Coder 1.5B Lightweight Local Coding Model from Alibaba Cloud Released October 2024 by Alibaba Cloud&#x27;s Qwen team. Qwen 2.5 Coder 1.5B is a genuinely small code-focused LLM that scores 43.3% on HumanEval with only 1.5 billion parameters. It runs on as little as 1.2GB VRAM (Q4), supports 92 programming languages (per Qwen documentation), and is licensed under Apache 2.0. One of the most ..."
+    }
+  ]
+}

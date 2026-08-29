@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "SZLHOLDINGS/szl-blocked",
+  "slug": "szlholdings-szl-blocked",
+  "author": "SZLHOLDINGS",
+  "url": "https://huggingface.co/SZLHOLDINGS/szl-blocked",
+  "created_at": "2026-06-24T16:45:09.000Z",
+  "updated_at": "2026-08-28T23:02:53.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "kernels",
+  "languages": [],
+  "tags": [
+    "kernels",
+    "kernel",
+    "eu-ai-act",
+    "compliance",
+    "annex-iv",
+    "governance",
+    "doi:10.5281/zenodo.19944926",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 448832,
+  "storage_human": "448832 B",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "SZLHOLDINGS/szl-blocked · Hugging Face",
+      "url": "https://huggingface.co/SZLHOLDINGS/szl-blocked",
+      "snippet": "When a governed call is denied, the op never runs, and the chain records an honest BLOCKED receipt rather than a success. Its companion szl_euaiact derives an EU AI Act Annex IV-style draft technical-documentation skeleton from that provenance — an organizational aid, not compliance evidence, legal advice, or a declaration of conformity."
+    },
+    {
+      "title": "SZL Holdings · GitHub",
+      "url": "https://github.com/szl-holdings",
+      "snippet": "Governed AI infrastructure for inspectable decisions: source, runtime state, receipts, and proof boundaries. - SZL Holdings"
+    },
+    {
+      "title": "szl-blocked-live - a Hugging Face Space by SZLHOLDINGS",
+      "url": "https://huggingface.co/spaces/SZLHOLDINGS/szl-blocked-live",
+      "snippet": "This page lets you toggle request features such as a capability flag, an exfiltration flag, an action type, and an advisory veto. It then shows, in plain text and JSON, whether the request would be..."
+    },
+    {
+      "title": "GitHub - szl-holdings/szl-kernels: Canonical source for the SZL ...",
+      "url": "https://github.com/szl-holdings/szl-kernels/",
+      "snippet": "A kernel suite for governing provenance across operations. This get_kernel -discoverable suite ties SZL Holdings&#x27; three governed kernels — szl-governed-norm, szl-lambda-gate, and governed-inference-meter — into one shared, hash-chained UnifiedReceiptChain, and anchors a governance/interop layer on top: szl-govsign (signs the verdict), szl-blocked (refuses honestly + derives an EU AI Act ..."
+    },
+    {
+      "title": "Developer Hub · SZL Holdings",
+      "url": "https://holdings.a-11-oy.com/docs-site/developers/",
+      "snippet": "SZL Holdings builds a formally-verified governance gate for agentic AI. This section is the developer-facing entry point: quickstart, full API reference, MCP integration, and runnable examples. Build your own \"organ\" on the same substrate the shipping flagships use."
+    }
+  ]
+}

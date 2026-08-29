@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "jieuncjc/grounded-language-survey69",
+  "slug": "jieuncjc-grounded-language-survey69",
+  "author": "jieuncjc",
+  "url": "https://huggingface.co/jieuncjc/grounded-language-survey69",
+  "created_at": "2026-08-29T00:57:48.000Z",
+  "updated_at": "2026-08-29T00:57:58.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "transformer",
+    "research-notes",
+    "grounded-language",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 33088,
+  "parameters_human": "33088",
+  "storage_bytes": 132832,
+  "storage_human": "132832 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "World&#x27;s Largest AI Model Repository Hugging Face Breached by Autonomous ...",
+      "url": "https://thehackernews.com/2026/07/worlds-largest-ai-model-repository.html",
+      "snippet": "Hugging Face says an autonomous AI agent breached production through a malicious dataset, accessing internal data and service credentials."
+    },
+    {
+      "title": "The 16 best AI video generators in 2026 | Zapier",
+      "url": "https://zapier.com/blog/best-ai-video-generator/",
+      "snippet": "We tested dozens of AI video generators, and these are the best tools to create, edit, and enhance videos using AI."
+    },
+    {
+      "title": "Grounding and Evaluation for Large Language Models: Practical ...",
+      "url": "https://arxiv.org/html/2407.12858v1",
+      "snippet": "Considering the increasing adoption of Artificial Intelligence (AI) technologies in our daily lives, it is crucial to develop and deploy the underlying AI models and systems in a responsible manner and ensure their trustworthiness, safety, and observability. Our focus is on large language models (LLMs) and other generative AI models and applications. Such models and applications need to be ..."
+    },
+    {
+      "title": "How Well Do Large Language Models Truly Ground? - arXiv.org",
+      "url": "https://arxiv.org/html/2311.09069",
+      "snippet": "To overcome this, we propose a stricter definition of grounding: a model is truly grounded if it (1) fully utilizes the necessary knowledge from the provided context, and (2) stays within the limits of that knowledge. We introduce a new dataset and a grounding metric to evaluate model capability under the definition."
+    },
+    {
+      "title": "Large language models empowered agent-based modeling and ... - Nature",
+      "url": "https://www.nature.com/articles/s41599-024-03611-3",
+      "snippet": "Large language model-empowered agents not only meet the requirements for agent-based simulation but also address the limitations relying on their strong abilities in perception, reasoning ..."
+    }
+  ]
+}

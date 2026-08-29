@@ -4,8 +4,8 @@
   "slug": "sads1xcz21esa-myawesomemodel-testrepo",
   "author": "sads1xcz21esa",
   "url": "https://huggingface.co/sads1xcz21esa/MyAwesomeModel-TestRepo",
-  "created_at": "2026-08-24T08:39:48.000Z",
-  "updated_at": "2026-08-24T08:40:18.000Z",
+  "created_at": "2026-08-29T01:03:19.000Z",
+  "updated_at": "2026-08-29T01:03:24.000Z",
   "license": "mit",
   "license_family": "oss",
   "pipeline_tag": "feature-extraction",
@@ -31,8 +31,8 @@
   "formats": [],
   "is_conversational": false,
   "gated": false,
-  "removed": true,
-  "removed_at": "2026-08-26T05:35:32.989Z",
+  "removed": false,
+  "removed_at": null,
   "benchmarks": [],
   "sources": []
 }

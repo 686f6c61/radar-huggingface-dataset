@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "tonyliu5/video-understanding48",
+  "slug": "tonyliu5-video-understanding48",
+  "author": "tonyliu5",
+  "url": "https://huggingface.co/tonyliu5/video-understanding48",
+  "created_at": "2026-08-29T00:37:39.000Z",
+  "updated_at": "2026-08-29T00:37:49.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "transformer",
+    "research-notes",
+    "video-understanding",
+    "license:cc-by-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 33088,
+  "parameters_human": "33088",
+  "storage_bytes": 132832,
+  "storage_human": "132832 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Every Kind of AI Model Explained for Beginners in 13 Minutes!",
+      "url": "https://www.youtube.com/watch?v=2XO3SMrY9ZU",
+      "snippet": "Every Kind of AI Model Explained for Beginners in 13 Minutes!Confused about the different types of AI models? This beginner-friendly video clearly explains e..."
+    },
+    {
+      "title": "AI Models Explained - YouTube",
+      "url": "https://www.youtube.com/playlist?list=PLOspHqNVtKAC-FUNMq8qjYVw6_semZHw0",
+      "snippet": "Share your videos with friends, family, and the world"
+    },
+    {
+      "title": "TinyLLaVA-Video: A Simple Framework of Small-scale Large Multimodal ...",
+      "url": "https://www.aimodels.fyi/papers/arxiv/tinyllava-video-simple-framework-small-scale-large",
+      "snippet": "TinyLLaVA-Video: A Simple Framework of Small-scale Large Multimodal Models for Video Understanding Can a tiny AI model rival larger ones in understanding videos, without needing fancy tricks?"
+    },
+    {
+      "title": "AI Model Wiki — Your Guide to Hundreds of AI Models",
+      "url": "https://aimodelwiki.com/",
+      "snippet": "Explore and compare hundreds of AI models across LLMs, image generators, audio, video, and multimodal. Reviews, ratings, and guides for beginners and businesses."
+    },
+    {
+      "title": "Dark Web AI Tools & Uncensored Models 2026 - Complete Guide | TorWiki",
+      "url": "https://torwiki.org/learn/darknet-ai/",
+      "snippet": "Video: How AI tools are being weaponized on the dark web Dark Web AI Tools Directory The following directory documents every significant dark web AI tool identified by cybersecurity researchers between 2023 and 2026. Many of these tools are wrappers around existing open-source models with safety filters removed, not original architectures built from scratch."
+    }
+  ]
+}

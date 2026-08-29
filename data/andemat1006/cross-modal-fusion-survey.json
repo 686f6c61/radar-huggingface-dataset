@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "Andemat1006/cross-modal-fusion-survey",
+  "slug": "andemat1006-cross-modal-fusion-survey",
+  "author": "Andemat1006",
+  "url": "https://huggingface.co/Andemat1006/cross-modal-fusion-survey",
+  "created_at": "2026-08-28T23:11:38.000Z",
+  "updated_at": "2026-08-28T23:11:47.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "transformer",
+    "research-notes",
+    "cross-modal-fusion",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 16576,
+  "parameters_human": "16576",
+  "storage_bytes": 66784,
+  "storage_human": "66784 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "A Comprehensive Survey on Deep Learning Multi-Modal Fusion: Methods ...",
+      "url": "https://www.sciencedirect.com/org/science/article/pii/S1546221824005216",
+      "snippet": "This paper comprehensively reviews existing methods based on multi-modal fusion techniques and completes a detailed and in-depth analysis. According to the data fusion stage, multi-modal fusion has four primary methods: early fusion, deep fusion, late fusion, and hybrid fusion."
+    },
+    {
+      "title": "arXiv.org e-Print archive",
+      "url": "https://arxiv.org/",
+      "snippet": "arXiv is a free distribution service and an open-access archive for nearly 2.4 million scholarly articles in the fields of physics, mathematics, computer science, quantitative biology, quantitative finance, statistics, electrical engineering and systems science, and economics. Materials on this site are not peer-reviewed by arXiv."
+    },
+    {
+      "title": "[2411.17040] Multimodal Alignment and Fusion: A Survey",
+      "url": "https://arxiv.org/abs/2411.17040",
+      "snippet": "This survey provides a comprehensive overview of recent advances in multimodal alignment and fusion within the field of machine learning, driven by the increasing availability and diversity of data modalities such as text, images, audio, and video. Unlike previous surveys that often focus on specific modalities or limited fusion strategies, our work presents a structure-centric and method ..."
+    },
+    {
+      "title": "A Review of Multi-Sensor Fusion in Autonomous Driving - MDPI",
+      "url": "https://www.mdpi.com/1424-8220/25/19/6033",
+      "snippet": "Multi-modal sensor fusion has become a cornerstone of robust autonomous driving systems, enabling perception models to integrate complementary cues from cameras, LiDARs, radars, and other modalities. This survey provides a structured overview of recent advances in deep learning-based fusion methods, categorizing them by architectural paradigms (e.g., BEV-centric fusion and cross-modal ..."
+    },
+    {
+      "title": "arjunwyadav/survey-cross-modal-fusion · Hugging Face",
+      "url": "https://huggingface.co/arjunwyadav/survey-cross-modal-fusion",
+      "snippet": "Repository summary Reading notes and an experiment sketch for Cross Modal Fusion. The repository emphasizes what still needs to be tested instead of manufacturing scores or release claims."
+    }
+  ]
+}

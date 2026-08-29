@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "nbeerbower/Bubba-Qwen3.5-9B-LoRA",
+  "slug": "nbeerbower-bubba-qwen3-5-9b-lora",
+  "author": "nbeerbower",
+  "url": "https://huggingface.co/nbeerbower/Bubba-Qwen3.5-9B-LoRA",
+  "created_at": "2026-08-29T00:48:42.000Z",
+  "updated_at": "2026-08-29T00:48:47.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "peft",
+    "safetensors",
+    "lora",
+    "qwen3.5",
+    "text-generation",
+    "conversational",
+    "en",
+    "dataset:nbeerbower/GreatFirewall-DPO",
+    "base_model:hemlang/Hemlock-Qwen3.5-9B",
+    "base_model:adapter:hemlang/Hemlock-Qwen3.5-9B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 252811247,
+  "storage_human": "253 MB",
+  "base_model": "hemlang/Hemlock-Qwen3.5-9B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "nbeerbower (Nina Beerbower) - Hugging Face",
+      "url": "https://huggingface.co/nbeerbower/models",
+      "snippet": "QLoRA finetuning and merging LLMs for fun. Also learning about diffusion and VLMs!"
+    },
+    {
+      "title": "nbeerbower/BigBubba-Qwen3.6-27B · Hugging Face",
+      "url": "https://huggingface.co/nbeerbower/BigBubba-Qwen3.6-27B",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Qwen3.5-9B · LLM Releases",
+      "url": "https://www.llm-releases.com/models/qwen3-5-9b",
+      "snippet": "The flagship of Alibaba&#x27;s small dense Qwen3.5 models. Independent analysis (Artificial Analysis) rated it the most intelligent model under 10B parameters at launch — roughly double the score of the next-closest sub-10B models — and the most intelligent multimodal model under 15B, leading peers on MMMU-Pro (~69%). A dense 9B with native vision, a 262K-token context, and the Qwen3.5 family&#x27;s ..."
+    },
+    {
+      "title": "qwen3.5:9b - ollama.com",
+      "url": "https://ollama.com/library/qwen3.5:9b",
+      "snippet": "Qwen3.5 features the following enhancement: Unified Vision-Language Foundation: Early fusion training on multimodal tokens achieves cross-generational parity with Qwen3 and outperforms Qwen3-VL models across reasoning, coding, agents, and visual understanding benchmarks."
+    },
+    {
+      "title": "How a 9B‑parameter Qwen3.5 model achieves full‑auto da… | BestHub",
+      "url": "https://www.besthub.dev/articles/how-a-9b-parameter-qwen3-5-model-achieves-full-auto-data-analysis-on-a-consumer-gpu-a6019fc61693",
+      "snippet": "The model acts as the \"brain\"; the Data Analyst framework provides six tools that translate model intentions into file I/O and code execution. Without the framework the model&#x27;s analysis ability cannot be exercised; without LoRA fine‑tuning the original Qwen3.5‑9B model stalls after each tool call, producing no useful output."
+    }
+  ]
+}

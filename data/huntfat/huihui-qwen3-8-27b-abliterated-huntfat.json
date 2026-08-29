@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "Huntfat/Huihui-Qwen3.8-27B-abliterated-huntfat",
+  "slug": "huntfat-huihui-qwen3-8-27b-abliterated-huntfat",
+  "author": "Huntfat",
+  "url": "https://huggingface.co/Huntfat/Huihui-Qwen3.8-27B-abliterated-huntfat",
+  "created_at": "2026-08-28T20:33:09.000Z",
+  "updated_at": "2026-08-28T20:33:10.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_5",
+    "image-text-to-text",
+    "abliterated",
+    "uncensored",
+    "huihui",
+    "qwen3",
+    "conversational",
+    "base_model:Qwen/Qwen3.8-27B",
+    "base_model:finetune:Qwen/Qwen3.8-27B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 27781427952,
+  "parameters_human": "27.78B",
+  "storage_bytes": 55575815536,
+  "storage_human": "55.6 GB",
+  "base_model": "Qwen/Qwen3.8-27B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "huihui-ai/Huihui-Qwen3.8-27B-abliterated · Hugging Face",
+      "url": "https://huggingface.co/huihui-ai/Huihui-Qwen3.8-27B-abliterated",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "huihui-ai/Huihui-Qwen3.8-27B-abliterated at main - Hugging Face",
+      "url": "https://huggingface.co/huihui-ai/Huihui-Qwen3.8-27B-abliterated/tree/main",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Huihui Qwen3.8 27B Abliterated by huihui-ai - LLM Explorer",
+      "url": "https://llm-explorer.com/model/huihui-ai%2FHuihui-Qwen3.8-27B-abliterated,7yiXfSP5itojtujYtkbmXj",
+      "snippet": "Rank the Huihui Qwen3.8 27B Abliterated capabilities Have you tried this model? Rate its performance — this feedback helps the ML community find the right model for their needs."
+    },
+    {
+      "title": "huihui-qwen3.8-27b-abliterated-mirror/README.md at main - GitHub",
+      "url": "https://github.com/Ahaa43443/huihui-qwen3.8-27b-abliterated-mirror/blob/main/README.md",
+      "snippet": "Huihui-Qwen3.8-27B-abliterated — personal mirror manifest Unofficial mirror/manifest. This repository is not owned by huihui-ai and does not contain the model weights in GitHub."
+    },
+    {
+      "title": "huihui.ai on X: \"Latest update huihui-ai/Huihui-Qwen3.8-27B-abliterated ...",
+      "url": "https://x.com/support_huihui/status/2091592857002127819",
+      "snippet": "Latest update huihui-ai/Huihui-Qwen3.8-27B-abliterated-GGUF The newly added Huihui-Qwen3.8-27B-abliterated-UD-Q series comes from unsloth/Qwen3.8-27B-GGUF. Only layers 18 to 51 have been ablated, while the other layers remain unablated. The size after conversion may differ from the original GGUF."
+    }
+  ]
+}

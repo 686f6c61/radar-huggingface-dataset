@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "michaelwilsonmu/reading-robotics-vision-language",
+  "slug": "michaelwilsonmu-reading-robotics-vision-language",
+  "author": "michaelwilsonmu",
+  "url": "https://huggingface.co/michaelwilsonmu/reading-robotics-vision-language",
+  "created_at": "2026-08-28T20:36:14.000Z",
+  "updated_at": "2026-08-28T20:36:23.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "transformer",
+    "research-notes",
+    "robotics-vision-language",
+    "license:cc-by-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 33088,
+  "parameters_human": "33088",
+  "storage_bytes": 132832,
+  "storage_human": "132832 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Vision-Language-Action Models for Robotics: A Review Towards Real-World ...",
+      "url": "https://vla-survey.github.io/",
+      "snippet": "A comprehensive review of Vision-Language-Action models for robotics, covering architectures, learning paradigms, and real-world applications."
+    },
+    {
+      "title": "Vision-language-action model - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Vision%E2%80%93language%E2%80%93action_model",
+      "snippet": "The general architecture of a vision-language-action model. The model receives as input a text instruction and an image observation that are encoded in a latent representation. The action decoder receives this representation and generates a sequence of low-level robot actions. In robot learning, a vision-language-action model (VLA) is a class of multimodal foundation models that ..."
+    },
+    {
+      "title": "What matters in building vision-language-action models for generalist ...",
+      "url": "https://www.nature.com/articles/s42256-025-01168-7",
+      "snippet": "Vision-language-action models recently emerged as a tool for robotics. Here Li and colleagues compare vision-language-action models and highlight what makes a model useful."
+    },
+    {
+      "title": "Vision-Language-Action (VLA) Models for Robotics",
+      "url": "https://blog.roboflow.com/vision-language-action-models/",
+      "snippet": "What Is a Vision Language Action Model? A Vision-Language-Action (VLA) model is a type of artificial intelligence designed to simultaneously process visual information, understand natural language, and output physical or digital actions. At its core, a VLA does three things in a single forward pass: it sees, it understands, and it acts."
+    },
+    {
+      "title": "[2410.24164] $π_0$: A Vision-Language-Action Flow Model for General ...",
+      "url": "https://arxiv.org/abs/2410.24164",
+      "snippet": "Robot learning holds tremendous promise to unlock the full potential of flexible, general, and dexterous robot systems, as well as to address some of the deepest questions in artificial intelligence. However, bringing robot learning to the level of generality required for effective real-world systems faces major obstacles in terms of data, generalization, and robustness. In this paper, we ..."
+    }
+  ]
+}

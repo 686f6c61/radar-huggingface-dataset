@@ -1,0 +1,78 @@
+{
+  "schema": 1,
+  "id": "introvoyz042/OProver-8B",
+  "slug": "introvoyz042-oprover-8b",
+  "author": "introvoyz042",
+  "url": "https://huggingface.co/introvoyz042/OProver-8B",
+  "created_at": "2026-08-28T19:44:12.000Z",
+  "updated_at": "2026-08-28T19:44:13.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3",
+    "text-generation",
+    "lean4",
+    "theorem-proving",
+    "formal-mathematics",
+    "agentic",
+    "retrieval-augmented",
+    "conversational",
+    "en",
+    "dataset:m-a-p/OProofs",
+    "arxiv:2605.17283",
+    "license:apache-2.0",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 8190735360,
+  "parameters_human": "8.19B",
+  "storage_bytes": 16393509991,
+  "storage_human": "16.4 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "m-a-p/OProver-8B · Hugging Face",
+      "url": "https://huggingface.co/m-a-p/OProver-8B",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "s3nh/OProver-8B-Base-GGUF · Hugging Face",
+      "url": "https://huggingface.co/s3nh/OProver-8B-Base-GGUF",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GitHub - multimodal-art-projection/OProver",
+      "url": "https://github.com/multimodal-art-projection/OProver/tree/main",
+      "snippet": "Paper: OProver: A Unified Framework for Agentic Formal Theorem Proving — Multimodal Art Projection (M-A-P) — arXiv (link to be added on release) OProver is a unified framework for agentic formal theorem proving in Lean 4. Rather than treating retrieval, compiler feedback, and iterative repair as ..."
+    },
+    {
+      "title": "OProver/components/verl/examples/grpo_trainer/prover_rl_new/oprover_8b ...",
+      "url": "https://github.com/multimodal-art-projection/OProver/blob/main/components/verl/examples/grpo_trainer/prover_rl_new/oprover_8b.sh",
+      "snippet": "Contribute to multimodal-art-projection/OProver development by creating an account on GitHub."
+    },
+    {
+      "title": "m-a-p/OProver-8B-Base - Fast, Reliable, and Scalable Inference on ...",
+      "url": "https://friendli.ai/models/m-a-p/OProver-8B-Base",
+      "snippet": "Run m-a-p/OProver-8B-Base with fast, reliable, and scalable inference on FriendliAI. Get low-latency performance with advanced quantization (FP4, FP8, INT4, INT8), continuous batching, optimized GPU kernels, token caching, and seamless API integration."
+    }
+  ]
+}

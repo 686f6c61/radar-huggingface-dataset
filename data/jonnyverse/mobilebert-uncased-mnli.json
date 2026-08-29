@@ -26,8 +26,8 @@
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
-  "storage_bytes": 435928702,
-  "storage_human": "436 MB",
+  "storage_bytes": 310399245,
+  "storage_human": "310 MB",
   "base_model": "typeform/mobilebert-uncased-mnli",
   "formats": [
     "onnx"

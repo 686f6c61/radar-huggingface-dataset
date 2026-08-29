@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "Islamamro/enron-spam-aurora-islamamro",
+  "slug": "islamamro-enron-spam-aurora-islamamro",
+  "author": "Islamamro",
+  "url": "https://huggingface.co/Islamamro/enron-spam-aurora-islamamro",
+  "created_at": "2026-08-28T23:17:04.000Z",
+  "updated_at": "2026-08-28T23:30:35.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "distilbert",
+    "aurora",
+    "islamamro",
+    "text-classification",
+    "dataset:SetFit/enron_spam",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 66955010,
+  "parameters_human": "67.0M",
+  "storage_bytes": 267832560,
+  "storage_human": "268 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "bvk/ENRON-spam · Datasets at Hugging Face",
+      "url": "https://huggingface.co/datasets/bvk/ENRON-spam",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "ai-phishing-detection-llm/enron_spam_data-master at main - GitHub",
+      "url": "https://github.com/Adam-Sleiman/ai-phishing-detection-llm/tree/main/enron_spam_data-master",
+      "snippet": "The Enron-Spam dataset is a fantastic ressource collected by V. Metsis, I. Androutsopoulos and G. Paliouras and described in their publication \"Spam Filtering with Naive Bayes - Which Naive Bayes?\"."
+    },
+    {
+      "title": "ai-phishing-detection-llm/enron_spam_data-master/README.md at main ...",
+      "url": "https://github.com/Adam-Sleiman/ai-phishing-detection-llm/blob/main/enron_spam_data-master/README.md",
+      "snippet": "The Enron-Spam dataset is a fantastic ressource collected by V. Metsis, I. Androutsopoulos and G. Paliouras and described in their publication \"Spam Filtering with Naive Bayes - Which Naive Bayes?\"."
+    },
+    {
+      "title": "Ransomware Hacker Uses AI to Plan Cyberattacks Against More Than 20 ...",
+      "url": "https://cybersecuritynews.com/ransomware-hacker-uses-ai/",
+      "snippet": "Aurora ransomware affiliates used AI coding tools to target 20+ organizations, gaining domain access and stealing data across nine countries."
+    },
+    {
+      "title": "spambloq/enron-spam · Hugging Face",
+      "url": "https://huggingface.co/spambloq/enron-spam",
+      "snippet": "Spambloq V1 (PUBLIC) This is the first public release of Spambloq. Better models are currently closed-sourced. Label 0 is ham. Label 1 is spam."
+    }
+  ]
+}

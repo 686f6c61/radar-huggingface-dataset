@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "TensorVizion/GLM-5.2-FP8",
+  "slug": "tensorvizion-glm-5-2-fp8",
+  "author": "TensorVizion",
+  "url": "https://huggingface.co/TensorVizion/GLM-5.2-FP8",
+  "created_at": "2026-08-28T02:42:38.000Z",
+  "updated_at": "2026-08-28T22:11:55.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "glm_moe_dsa",
+    "text-generation",
+    "conversational",
+    "en",
+    "zh",
+    "arxiv:2602.15763",
+    "arxiv:2603.12201",
+    "license:mit",
+    "endpoints_compatible",
+    "fp8",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 753329940480,
+  "parameters_human": "753.33B",
+  "storage_bytes": 762123927343,
+  "storage_human": "762.1 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "README.md · TensorVizion/GLM-5.2-FP8 at main - Hugging Face",
+      "url": "https://huggingface.co/TensorVizion/GLM-5.2-FP8/blob/main/README.md",
+      "snippet": "We&#x27;re introducing GLM-5.2, our latest flagship model for long-horizon tasks. It marks a substantial leap in long-horizon task capability over its predecessor GLM-5.1 and, for the first time, delivers that capability on a solid 1M-token context."
+    },
+    {
+      "title": "TensorVizion/GLM-5.2-FP8 at main - Hugging Face",
+      "url": "https://huggingface.co/TensorVizion/GLM-5.2-FP8/tree/main",
+      "snippet": "Duplicated from zai-org/GLM-5.2-FP8 TensorVizion / GLM-5.2-FP8 like 0 Text Generation Transformers Safetensors English Chinese glm_moe_dsa conversational fp8 arxiv:2602.15763 arxiv:2603.12201 License:mit Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "AI Model Catalog | Microsoft Foundry Models",
+      "url": "https://ai.azure.com/catalog/models/zai-org--glm-5.2-fp8",
+      "snippet": "👋 Join our WeChat or Discord community. 📖 Check out the GLM-5.2 blog and GLM-5 Technical report . 📍 Use GLM-5.2 API services on Z.ai API Platform. 🔜 Try GLM-5.2 here . [Paper ] [GitHub ] Introduction We&#x27;re introducing GLM-5.2, our latest flagship model for long-horizon tasks. It marks a substantial leap in long-horizon task capability over its predecessor GLM-5.1 and, for the first ..."
+    },
+    {
+      "title": "GLM-5.2-FP8 API — Async & Batch Inference | Doubleword",
+      "url": "https://doubleword.ai/models/glm-5-2",
+      "snippet": "About A Major Step Up From GLM-5.1 GLM-5.2-FP8 is Z.ai&#x27;s latest flagship open model for long-horizon agentic work, coding, and complex engineering. It pairs stronger real-world coding performance with a 1M-token context window — ideal for repository-scale workflows, extended terminal sessions, debugging, tool orchestration, and ambiguous multi-step projects. Under the hood, GLM-5.2 uses Z.ai ..."
+    },
+    {
+      "title": "GLM-5.2-FP8: Text-to-Text model — overview, use cases, alternatives",
+      "url": "https://www.aimodels.fyi/models/huggingFace/glm-5.2-fp8-zai-org",
+      "snippet": "Overview GLM-5.2-FP8 is a quantized version of GLM-5.2, an open-source flagship model optimized for long-horizon tasks including reasoning, coding, and agentic applications. Built by zai-org, the model delivers a 1M-token context window with significantly improved performance over its predecessor GLM-5.1. The architecture incorporates IndexShare, which reuses the same indexer across every four ..."
+    }
+  ]
+}

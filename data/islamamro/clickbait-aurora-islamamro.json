@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "Islamamro/clickbait-aurora-islamamro",
+  "slug": "islamamro-clickbait-aurora-islamamro",
+  "author": "Islamamro",
+  "url": "https://huggingface.co/Islamamro/clickbait-aurora-islamamro",
+  "created_at": "2026-08-28T22:41:55.000Z",
+  "updated_at": "2026-08-28T22:42:11.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "distilbert",
+    "aurora",
+    "clickbait",
+    "text-classification",
+    "license:cc-by-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 66955010,
+  "parameters_human": "67.0M",
+  "storage_bytes": 267832560,
+  "storage_human": "268 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "islamamro · GitHub",
+      "url": "https://github.com/islamamro",
+      "snippet": "islamamro has one repository available. Follow their code on GitHub."
+    },
+    {
+      "title": "Free Clickbait Checker: AI Headline Detector | BiasBreak",
+      "url": "https://biasbreak.com/clickbait-checker/",
+      "snippet": "Detect clickbait headlines instantly with BiasBreak&#x27;s free AI clickbait checker. Analyse any title or article for manipulative tactics. No signup needed."
+    },
+    {
+      "title": "100% Free AI Image Generator Online | Unlimited & No Sign-up",
+      "url": "https://ezmaker.ai/ai-image-generator/",
+      "snippet": "Easily Design images with free AI image generator in seconds from text for websites, ads, social media, blog covers, product visuals, and more."
+    },
+    {
+      "title": "Aurora (AI model) — Grokipedia",
+      "url": "https://grokipedia.com/page/Aurora_AI_model",
+      "snippet": "Aurora is an autoregressive mixture-of-experts AI image generation model developed by xAI, released on December 9, 2024. It powers Grok&#x27;s image generation capabilities and serves as the foundational m"
+    },
+    {
+      "title": "Deep learning and sentence embeddings for detection of clickbait news ...",
+      "url": "https://www.nature.com/articles/s41598-025-97576-1",
+      "snippet": "The results show that the Bi-LSTM model with sentence embeddings achieved the highest accuracy of 88% for clickbait identification in low resource language."
+    }
+  ]
+}

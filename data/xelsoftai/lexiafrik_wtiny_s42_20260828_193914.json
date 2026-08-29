@@ -1,0 +1,83 @@
+{
+  "schema": 1,
+  "id": "xelsoftai/LexiAfrik_Wtiny_s42_20260828_193914",
+  "slug": "xelsoftai-lexiafrik_wtiny_s42_20260828_193914",
+  "author": "xelsoftai",
+  "url": "https://huggingface.co/xelsoftai/LexiAfrik_Wtiny_s42_20260828_193914",
+  "created_at": "2026-08-28T19:39:43.000Z",
+  "updated_at": "2026-08-28T19:40:39.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "wo"
+  ],
+  "tags": [
+    "safetensors",
+    "whisper",
+    "asr",
+    "speech-recognition",
+    "wolof",
+    "african-languages",
+    "lexiafrik",
+    "xelsoftai",
+    "wo",
+    "dataset:galsenai/wolof_tts",
+    "base_model:openai/whisper-tiny",
+    "base_model:finetune:openai/whisper-tiny",
+    "license:apache-2.0",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 37761024,
+  "parameters_human": "37.8M",
+  "storage_bytes": 151068665,
+  "storage_human": "151 MB",
+  "base_model": "openai/whisper-tiny",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "Speech Recognition",
+      "dataset": "GalsenAI Wolof TTS",
+      "metric": "Word Error Rate",
+      "value": 0.8333
+    }
+  ],
+  "sources": [
+    {
+      "title": "LexiAfrik — API de transcription vocale africaine",
+      "url": "https://lexiafrik.com/",
+      "snippet": "Transcription vocale Wolof & langues africaines par l&#x27;IA LexiAfrik, par XEL SOFT AI, rend la voix africaine accessible aux développeurs et entreprises. Intégration en 5 minutes. Premier plan gratuit, sans carte bancaire."
+    },
+    {
+      "title": "xelsoftai/AfriKora_NLU_BERT_20260314_143940 · Hugging Face",
+      "url": "https://huggingface.co/xelsoftai/AfriKora_NLU_BERT_20260314_143940",
+      "snippet": "AfriKora_NLU_BERT_20260314_143940 This model is a fine-tuned version of on an unknown dataset. It achieves the following results on the evaluation set:"
+    },
+    {
+      "title": "xelsoftai (Xel Soft AI) - Hugging Face",
+      "url": "https://huggingface.co/xelsoftai",
+      "snippet": "XEL&#x27;SOFT AI is dedicated to building Artificial Intelligence for Africa — creating inclusive NLP resources, and innovative models like AfriKora to empower communities and businesses across the cont..."
+    },
+    {
+      "title": "À propos — LexiAfrik by XEL SOFT AI",
+      "url": "https://lexiafrik.com/about",
+      "snippet": "LexiAfrik est né d&#x27;un constat simple : les API de reconnaissance vocale existantes ignorent les 300 millions de locuteurs de langues africaines. XEL SOFT AI a décidé de changer ça."
+    },
+    {
+      "title": "Citrix Secure Sign In",
+      "url": "https://citrix.cloud.com/",
+      "snippet": "Securely sign in to Citrix Cloud for seamless access to your cloud services and applications."
+    }
+  ]
+}

@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "smithjoshua1982/retrieval-efficient",
+  "slug": "smithjoshua1982-retrieval-efficient",
+  "author": "smithjoshua1982",
+  "url": "https://huggingface.co/smithjoshua1982/retrieval-efficient",
+  "created_at": "2026-08-28T20:18:36.000Z",
+  "updated_at": "2026-08-28T20:18:45.000Z",
+  "license": "bsd-3-clause",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "tiny_transformer",
+    "pytorch",
+    "tiny-transformer",
+    "retrieval",
+    "license:bsd-3-clause",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 16576,
+  "parameters_human": "16576",
+  "storage_bytes": 66784,
+  "storage_human": "66784 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Research | OpenAI",
+      "url": "https://openai.com/research/",
+      "snippet": "View research index Learn about safety Focus areas We advance the science of AI through research on frontier models, reasoning, multimodal systems, and safe deployment. GPT OpenAI&#x27;s GPT series models are fast, versatile, and cost-efficient AI systems designed to understand context, generate content, and reason across text, images, and more."
+    },
+    {
+      "title": "smithjoshua1982 (Joshua Smith) - Hugging Face",
+      "url": "https://huggingface.co/smithjoshua1982/datasets",
+      "snippet": "Working on AI safety research"
+    },
+    {
+      "title": "Retrieval-Augmented Generation: A Comprehensive Survey of Architectures ...",
+      "url": "https://arxiv.org/html/2506.00054v1",
+      "snippet": "Furthermore, we review state-of-the-art evaluation frameworks and benchmarks, highlighting trends in retrieval-aware evaluation, robustness testing, and federated retrieval settings. Our analysis reveals recurring trade-offs between retrieval precision and generation flexibility, efficiency and faithfulness, and modularity and coordination."
+    },
+    {
+      "title": "What is RAG? - Retrieval-Augmented Generation AI Explained - AWS",
+      "url": "https://aws.amazon.com/what-is/retrieval-augmented-generation/",
+      "snippet": "What is Retrieval-Augmented Generation? Retrieval-Augmented Generation (RAG) is the process of optimizing the output of a large language model, so it references an authoritative knowledge base outside of its training data sources before generating a response."
+    },
+    {
+      "title": "GitHub - NirDiamant/RAG_Techniques: This repository showcases various ...",
+      "url": "https://github.com/NirDiamant/RAG_TECHNIQUES",
+      "snippet": "Introduction Retrieval-Augmented Generation (RAG) is revolutionizing the way we combine information retrieval with generative AI. This repository showcases a curated collection of advanced techniques designed to supercharge your RAG systems, enabling them to deliver more accurate, contextually relevant, and comprehensive responses."
+    }
+  ]
+}

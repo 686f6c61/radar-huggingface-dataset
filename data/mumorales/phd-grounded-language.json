@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "mumorales/phd-grounded-language",
+  "slug": "mumorales-phd-grounded-language",
+  "author": "mumorales",
+  "url": "https://huggingface.co/mumorales/phd-grounded-language",
+  "created_at": "2026-08-28T22:16:05.000Z",
+  "updated_at": "2026-08-28T22:16:14.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "transformer",
+    "research-notes",
+    "grounded-language",
+    "license:cc-by-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 16576,
+  "parameters_human": "16576",
+  "storage_bytes": 66784,
+  "storage_human": "66784 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "LLM Leaderboard 2026: Compare 300+ Top AI Models by Intelligence, Speed ...",
+      "url": "https://llm-stats.com/leaderboards/llm-leaderboard",
+      "snippet": "The LLM Leaderboard — independent ranking of GPT, Claude, Gemini, Llama, DeepSeek and 300+ AI models by intelligence, speed and price. Filter by provider, license, modality and context window; sort by every benchmark. Composite LLM Stats Score updated continuously from public benchmarks and live API metrics."
+    },
+    {
+      "title": "Best LLMs for Multimodal & Grounded - benchlm.ai",
+      "url": "https://benchlm.ai/multimodal-grounded",
+      "snippet": "Compare 406 AI models on multimodal and grounded benchmarks. See which models reason best over images, charts, screenshots, documents, and office-style artifacts."
+    },
+    {
+      "title": "Grounding and Evaluation for Large Language Models: Practical ...",
+      "url": "https://arxiv.org/html/2407.12858v1",
+      "snippet": "Considering the increasing adoption of Artificial Intelligence (AI) technologies in our daily lives, it is crucial to develop and deploy the underlying AI models and systems in a responsible manner and ensure their trustworthiness, safety, and observability. Our focus is on large language models (LLMs) and other generative AI models and applications. Such models and applications need to be ..."
+    },
+    {
+      "title": "LLM Updates (August 2026) - AI Model Releases & Provider Activity",
+      "url": "https://lmmarketcap.com/llm-updates",
+      "snippet": "Track AI model releases, recently added endpoints, and provider update cadence across GPT, Claude, Gemini, DeepSeek, Llama, and 350+ models."
+    },
+    {
+      "title": "Introducing the most grounded language model in the world - Contextual AI",
+      "url": "https://contextual.ai/blog/introducing-grounded-language-model",
+      "snippet": "Today, we&#x27;re introducing our Grounded Language Model (GLM), the most grounded language model in the world. With state-of-the-art performance on FACTS (the leading groundedness benchmark) and our customer datasets, the GLM is the single best language model for RAG and agentic use cases for which minimizing hallucinations is critical."
+    }
+  ]
+}

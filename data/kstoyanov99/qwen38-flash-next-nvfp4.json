@@ -5,7 +5,7 @@
   "author": "kstoyanov99",
   "url": "https://huggingface.co/kstoyanov99/qwen38-flash-next-nvfp4",
   "created_at": "2026-08-28T14:34:01.000Z",
-  "updated_at": "2026-08-28T15:23:24.000Z",
+  "updated_at": "2026-08-28T15:54:56.000Z",
   "license": "other",
   "license_family": "unknown",
   "pipeline_tag": "image-text-to-text",
@@ -35,8 +35,8 @@
   "trending_score": 0,
   "parameters": 119602003859,
   "parameters_human": "119.60B",
-  "storage_bytes": 135242371978,
-  "storage_human": "135.2 GB",
+  "storage_bytes": 186442617738,
+  "storage_human": "186.4 GB",
   "base_model": "Qwen/Qwen3.8-Flash-Next",
   "formats": [
     "safetensors"

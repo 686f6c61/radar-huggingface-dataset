@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "tbcampbell/simple-contrastive-learning",
+  "slug": "tbcampbell-simple-contrastive-learning",
+  "author": "tbcampbell",
+  "url": "https://huggingface.co/tbcampbell/simple-contrastive-learning",
+  "created_at": "2026-08-29T00:55:55.000Z",
+  "updated_at": "2026-08-29T00:56:04.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "transformer",
+    "research-notes",
+    "contrastive-learning",
+    "license:cc-by-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 16576,
+  "parameters_human": "16576",
+  "storage_bytes": 66784,
+  "storage_human": "66784 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Visualizing and Understanding Contrastive Learning - arXiv.org",
+      "url": "https://arxiv.org/html/2206.09753v3",
+      "snippet": "Explainable Artificial Intelligence (XAI) involves building techniques to understand the underlying mechanisms behind the decision-making process of a machine learning model. It is crucial for building trust and accountability in AI systems as it enables users to understand and improve their models [8] and identify any data biases present [9 ..."
+    },
+    {
+      "title": "OpenAI Halts AI Training on Advanced Model as It Detects Dark Signs ...",
+      "url": "https://futurism.com/artificial-intelligence/openai-halts-training-advanced-model",
+      "snippet": "The slow down comes as the AI industry and policymakers grapple with emerging safety threats posed by frontier AI models, including AI-powered cybersecurity risks and troubling model misbehavior."
+    },
+    {
+      "title": "Contrastive Learning: How Models Learn by Comparison",
+      "url": "https://www.datacamp.com/tutorial/contrastive-learning",
+      "snippet": "Learn what contrastive learning is, how it works, and why it is used in modern machine learning for representation learning and self-supervised learning."
+    },
+    {
+      "title": "A comprehensive survey on contrastive learning - ScienceDirect",
+      "url": "https://www.sciencedirect.com/science/article/pii/S0925231224014164",
+      "snippet": "Contrastive Learning is self-supervised representation learning by training a model to differentiate between similar and dissimilar samples. It has been shown to be effective and has gained significant attention in various computer vision and natural language processing tasks. In this paper, we comprehensively and systematically sort out the main ideas, recent developments and application ..."
+    },
+    {
+      "title": "Simplified Graph Contrastive Learning Model Without Augmentation",
+      "url": "https://ieeexplore.ieee.org/document/11084849",
+      "snippet": "Burgeoning graph contrastive learning (GCL) stands out in the graph domain with low annotated costs and high model performance improvements, which is typically composed of three standard configurations: 1) graph data augmentation (GraphDA), 2) multi-branch graph neural network (GNN) encoders and projection heads, 3) and contrastive loss. Unfortunately, the diverse GraphDA may corrupt graph ..."
+    }
+  ]
+}

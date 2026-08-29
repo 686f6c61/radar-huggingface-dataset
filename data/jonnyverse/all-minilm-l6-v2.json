@@ -26,8 +26,8 @@
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
-  "storage_bytes": 366467909,
-  "storage_human": "366 MB",
+  "storage_bytes": 320016084,
+  "storage_human": "320 MB",
   "base_model": "sentence-transformers/all-MiniLM-L6-v2",
   "formats": [
     "onnx"

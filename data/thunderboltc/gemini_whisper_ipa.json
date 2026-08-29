@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "thunderboltc/gemini_whisper_ipa",
+  "slug": "thunderboltc-gemini_whisper_ipa",
+  "author": "thunderboltc",
+  "url": "https://huggingface.co/thunderboltc/gemini_whisper_ipa",
+  "created_at": "2026-08-29T00:56:13.000Z",
+  "updated_at": "2026-08-29T01:07:08.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "automatic-speech-recognition",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "tensorboard",
+    "safetensors",
+    "whisper",
+    "automatic-speech-recognition",
+    "santali",
+    "sanlish",
+    "ipa",
+    "base_model:openai/whisper-small",
+    "base_model:finetune:openai/whisper-small",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 241734912,
+  "parameters_human": "241.7M",
+  "storage_bytes": 967006514,
+  "storage_human": "967 MB",
+  "base_model": "openai/whisper-small",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - thunderbird/thunderbolt: AI You Control: Choose your models ...",
+      "url": "https://github.com/Thunderbird/thunderbolt",
+      "snippet": "Thunderbolt is an open-source, cross-platform AI client that can be deployed on-prem anywhere. 🌐 Available on all major desktop and mobile platforms: web, iOS, Android, Mac, Linux, and Windows. 🧠 Compatible with frontier, local, and on-prem models. 🙋 Enterprise features, support, and FDEs available. Thunderbolt is under active development, currently undergoing a security audit, and ..."
+    },
+    {
+      "title": "‎Google Gemini",
+      "url": "https://gemini.google.com/",
+      "snippet": "Meet Gemini, Google&#x27;s AI assistant. Get help with writing, planning, brainstorming, and more. Experience the power of generative AI."
+    },
+    {
+      "title": "Models - Gemini API | Google AI for Developers",
+      "url": "https://ai.google.dev/gemini-api/docs/models",
+      "snippet": "We release experimental models to gather feedback and get our latest updates into the hands of developers quickly. Experimental models are not stable and availability of model endpoints is subject to change. Model deprecations For information about model deprecations, visit the Gemini deprecations page."
+    },
+    {
+      "title": "Gemini Developer API | Gemma open models | Google AI for Developers",
+      "url": "https://ai.google.dev/",
+      "snippet": "Build with Gemini 2.0 Flash, 2.5 Pro, and Gemma using the Gemini API and Google AI Studio."
+    },
+    {
+      "title": "ThunderAI (ChatGPT, Gemini, Claude, Ollama) :: Add-ons for Thunderbird",
+      "url": "https://addons.thunderbird.net/en-US/thunderbird/addon/thunderai/",
+      "snippet": "ThunderAI uses the capabilities of ChatGPT, Google Gemini, Claude or Ollama to enhance email management. It enables users to analyze, write, correct, assign tags, create calendar events and tasks and optimize their emails."
+    }
+  ]
+}

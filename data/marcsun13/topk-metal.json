@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "marcsun13/topk-metal",
+  "slug": "marcsun13-topk-metal",
+  "author": "marcsun13",
+  "url": "https://huggingface.co/marcsun13/topk-metal",
+  "created_at": "2026-08-28T23:53:47.000Z",
+  "updated_at": "2026-08-28T23:53:49.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "kernels",
+  "languages": [],
+  "tags": [
+    "kernels",
+    "kernel",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 262208,
+  "storage_human": "262208 B",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "marcsun13 (Marc Sun) - Hugging Face",
+      "url": "https://huggingface.co/marcsun13/models",
+      "snippet": "marcsun13/sft_openassistant-guanaco Text Generation • 7B • Updated Jul 5, 2024 • 2"
+    },
+    {
+      "title": "marcsun13 (Marc Sun) - Hugging Face",
+      "url": "https://huggingface.co/marcsun13",
+      "snippet": "AI & ML interests ... Recent Activity upvoted an article 19 days ago ... liked a model 28 days ago ... upvoted an article 2 months ago"
+    },
+    {
+      "title": "marcsun13 — AI Models & Datasets | Model Database",
+      "url": "https://modeldatabase.com/marcsun13.html",
+      "snippet": "Browse the open source AI models and datasets published by marcsun13. Compare and deploy AI models on Model Database."
+    },
+    {
+      "title": "tt-metal/models/demos/deepseek_v3_b1/kernel_includes/tt_llk/tt ... - GitHub",
+      "url": "https://github.com/tenstorrent/tt-metal/blob/main/models/demos/deepseek_v3_b1/kernel_includes/tt_llk/tt_llk_blackhole/common/inc/sfpu/ckernel_sfpu_deepseek_moe_gate_topk_single_face.h",
+      "snippet": ":metal: TT-NN operator library, and TT-Metalium low level kernel programming model. - tenstorrent/tt-metal"
+    },
+    {
+      "title": "marcsun13/opt-125m-awq - AI Model Zoo - BimAnt",
+      "url": "https://zoo.bimant.com/model/373579",
+      "snippet": "marcsun13/opt-125m-awq - AI Model Zoo - BimAnt"
+    }
+  ]
+}

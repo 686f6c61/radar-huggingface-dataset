@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "NikhilKumarmud/video-understanding-dev",
+  "slug": "nikhilkumarmud-video-understanding-dev",
+  "author": "NikhilKumarmud",
+  "url": "https://huggingface.co/NikhilKumarmud/video-understanding-dev",
+  "created_at": "2026-08-28T21:40:51.000Z",
+  "updated_at": "2026-08-28T21:41:00.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "transformer",
+    "research-notes",
+    "video-understanding",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 16576,
+  "parameters_human": "16576",
+  "storage_bytes": 66784,
+  "storage_human": "66784 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Models.dev - An open-source database of AI models",
+      "url": "https://models.dev/",
+      "snippet": "Models.dev is a comprehensive open-source database of AI model specifications, pricing, and features."
+    },
+    {
+      "title": "Video_understanding.ipynb - Colab",
+      "url": "https://colab.research.google.com/github/google-gemini/cookbook/blob/main/quickstarts/Video_understanding.ipynb",
+      "snippet": "The live demo on AI Studio shows how you can postprocess this output to jump directly to the the specific part of the video by clicking on the timecodes. If you are interested, you can check the code of that demo on Github."
+    },
+    {
+      "title": "Video understanding - Interactions API | Google AI for Developers",
+      "url": "https://ai.google.dev/gemini-api/docs/video-understanding",
+      "snippet": "System instructions: System instructions let you steer the behavior of the model based on your specific needs and use cases. Files API: Learn more about uploading and managing files for use with Gemini. File prompting strategies: The Gemini API supports prompting with text, image, audio, and video data, also known as multimodal prompting."
+    },
+    {
+      "title": "Awesome-LLMs-for-Video-Understanding - GitHub",
+      "url": "https://github.com/yunlong10/Awesome-LLMs-for-Video-Understanding",
+      "snippet": "📢 We&#x27;ve recently updated our survey: \"Video Understanding with Large Language Models: A Survey\"! This comprehensive survey covers video understanding techniques powered by large language models (Vid-LLMs), training strategies, relevant tasks, datasets, benchmarks, and evaluation methods ..."
+    },
+    {
+      "title": "SmolVLM2: Bringing Video Understanding to Every Device",
+      "url": "https://huggingface.co/blog/smolvlm2",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    }
+  ]
+}

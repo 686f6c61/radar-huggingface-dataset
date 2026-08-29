@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "Islamamro/toxic-conversations-aurora-islamamro",
+  "slug": "islamamro-toxic-conversations-aurora-islamamro",
+  "author": "Islamamro",
+  "url": "https://huggingface.co/Islamamro/toxic-conversations-aurora-islamamro",
+  "created_at": "2026-08-28T23:19:53.000Z",
+  "updated_at": "2026-08-28T23:30:50.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "distilbert",
+    "aurora",
+    "islamamro",
+    "text-classification",
+    "dataset:SetFit/toxic_conversations",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 66955010,
+  "parameters_human": "67.0M",
+  "storage_bytes": 267832560,
+  "storage_human": "268 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "islamamro · GitHub",
+      "url": "https://github.com/islamamro",
+      "snippet": "islamamro has one repository available. Follow their code on GitHub."
+    },
+    {
+      "title": "Toxic Relationships in Islam — When Connection Feels Smothering",
+      "url": "https://www.sabrandsukoon.online/2026/06/toxic-relationships-islamic-perspective-when-connection-hurts.html",
+      "snippet": "Islam gives clear signs of toxic relationships & how to protect your peace. Quran, hadith & Islamic psychology guide for Muslim women."
+    },
+    {
+      "title": "Islam and the aurora - YouTube",
+      "url": "https://www.youtube.com/watch?v=GIssbGzaowQ",
+      "snippet": "Enjoy the videos and music you love, upload original content, and share it all with friends, family, and the world on YouTube."
+    },
+    {
+      "title": "Dialogue with ChatGPT reveals an ally with Islam - AMUST",
+      "url": "https://www.amust.com.au/2025/09/dialogue-with-chatgpt-reveals-an-ally-with-islam/",
+      "snippet": "The lengthy conversation was a probing, theologically-grounded and intellectually rigorous exploration of Islam&#x27;s role in the modern world and the media&#x27;s portrayal of Muslims. But what was startling was how the AI responded. With nuance. With reverence for fact, and at times, with surprising moral clarity."
+    },
+    {
+      "title": "Am I in a Toxic Marriage or I&#x27;m Just Being Emotional? - About Islam",
+      "url": "https://aboutislam.net/counseling/ask-the-counselor/marital-obstacles/am-i-in-a-toxic-marriage-or-im-just-being-emotional/",
+      "snippet": "Is this just a normal marital fight and I&#x27;m just being emotional and I should instead do everything that he wants? Or am I entitled to have my own opinions?"
+    }
+  ]
+}

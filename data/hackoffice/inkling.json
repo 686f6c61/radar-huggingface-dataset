@@ -29,8 +29,8 @@
   "trending_score": 0,
   "parameters": 952377623626,
   "parameters_human": "952.38B",
-  "storage_bytes": 1909218968769,
-  "storage_human": "1909.2 GB",
+  "storage_bytes": 1904786955611,
+  "storage_human": "1904.8 GB",
   "base_model": null,
   "formats": [
     "safetensors"

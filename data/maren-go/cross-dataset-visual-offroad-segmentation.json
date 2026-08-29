@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "Maren-go/cross-dataset-visual-offroad-segmentation",
+  "slug": "maren-go-cross-dataset-visual-offroad-segmentation",
+  "author": "Maren-go",
+  "url": "https://huggingface.co/Maren-go/cross-dataset-visual-offroad-segmentation",
+  "created_at": "2026-08-28T20:06:49.000Z",
+  "updated_at": "2026-08-28T20:06:49.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Cross-dataset evaluation of visual semantic segmentation models for off ...",
+      "url": "https://www.sciencedirect.com/science/article/pii/S0957417426015691",
+      "snippet": "This approach ensures fair model comparisons and reliable assessment of generalization to unseen domains. We further benchmark models on the original datasets, analyze the impact of different ontology harmonization criteria and conversion strategies, and evaluate the trade-off between segmentation performance and computational cost."
+    },
+    {
+      "title": "Cross-dataset evaluation of visual semantic segmentation models for off ...",
+      "url": "https://www.semanticscholar.org/paper/Cross-dataset-evaluation-of-visual-semantic-models-Pascual-Hern%C3%A1ndez-Paniego/4cb72bc1cff5a2797a9d8244785db8d61ff53d98",
+      "snippet": "Semantic Scholar extracted view of \"Cross-dataset evaluation of visual semantic segmentation models for off-road autonomous driving\" by David Pascual-Hernández et al."
+    },
+    {
+      "title": "Cross-dataset evaluation of visual semantic segmentation ... - LinkedIn",
+      "url": "https://www.linkedin.com/posts/dpascualhe_cross-dataset-evaluation-of-visual-semantic-activity-7465367463279579136-VuTY",
+      "snippet": "📢 Our new work \"Cross-dataset evaluation of visual semantic segmentation models for off-road autonomous driving\" has just been published in Expert Systems with Applications. Off-road perception ..."
+    },
+    {
+      "title": "AGNES AI - Free Omni-Modal AI API, World-Class AI Models & AI Applications",
+      "url": "https://agnes-ai.com/",
+      "snippet": "Get free AI API credits, create a free AI API key, use free AI API tokens, and access free AI API models for chatbots, AI agents, content tools, image generation, roleplay, productivity, and intelligent workflows. Build and use scalable generative AI across apps through one unified platform."
+    },
+    {
+      "title": "WACV 2025 Open Access Repository",
+      "url": "https://openaccess.thecvf.com/WACV2025",
+      "snippet": "These WACV 2025 papers are the Open Access versions, provided by the Computer Vision Foundation. Except for the watermark, they are identical to the accepted versions; the final published version of the proceedings is available on IEEE Xplore."
+    }
+  ]
+}

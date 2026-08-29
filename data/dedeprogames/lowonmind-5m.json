@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "DedeProGames/LowOnMind-5M",
+  "slug": "dedeprogames-lowonmind-5m",
+  "author": "DedeProGames",
+  "url": "https://huggingface.co/DedeProGames/LowOnMind-5M",
+  "created_at": "2026-08-29T00:52:38.000Z",
+  "updated_at": "2026-08-29T00:52:41.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "lowonmind",
+    "text-generation",
+    "tiny-lm",
+    "pretrained-from-scratch",
+    "scaling-limits",
+    "custom_code",
+    "en",
+    "dataset:HuggingFaceFW/fineweb-edu",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 4920384,
+  "parameters_human": "4.9M",
+  "storage_bytes": 19695072,
+  "storage_human": "20 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "DedeProGames - Hugging Face",
+      "url": "https://huggingface.co/DedeProGames",
+      "snippet": "Sort: Recently updated . Running . Lfm2. 😻. DedeProGames 18 days ago. Sleeping . Gemma 3 270m. 🚀. DedeProGames Dec 24, 2025. Runtime error"
+    },
+    {
+      "title": "DedeProGames (DedeProGames) - Hugging Face",
+      "url": "https://huggingface.co/DedeProGames/datasets",
+      "snippet": "AI & ML interests ... Recent Activity new activity about 8 hours ago ... updated a model about 10 hours ago"
+    },
+    {
+      "title": "Dark Web AI Tools & Uncensored Models 2026 - Complete Guide | TorWiki",
+      "url": "https://torwiki.org/learn/darknet-ai/",
+      "snippet": "Complete guide to dark web AI: WormGPT, FraudGPT, GhostGPT, jailbreak techniques, uncensored LLMs, and AI services on Tor. Updated April 2026."
+    },
+    {
+      "title": "DedeProGames - ollama.com",
+      "url": "https://ollama.com/DedeProGames",
+      "snippet": "An open-source model based on GLM-4.7-Flash, optimized specifically for code generation and development workflows."
+    },
+    {
+      "title": "AI Model Wiki — Your Guide to Hundreds of AI Models",
+      "url": "https://aimodelwiki.com/",
+      "snippet": "Your Ultimate Guide to 210+ AI Models Explore LLMs, image generators, audio & video tools, and multimodal AI — for beginners, students, and businesses."
+    }
+  ]
+}

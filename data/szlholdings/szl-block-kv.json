@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "SZLHOLDINGS/szl-block-kv",
+  "slug": "szlholdings-szl-block-kv",
+  "author": "SZLHOLDINGS",
+  "url": "https://huggingface.co/SZLHOLDINGS/szl-block-kv",
+  "created_at": "2026-08-28T16:28:03.000Z",
+  "updated_at": "2026-08-29T01:09:36.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "kernels",
+  "languages": [],
+  "tags": [
+    "kernels",
+    "kernel",
+    "szl-holdings",
+    "arxiv:2309.06180",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "SZLHOLDINGS/szl-blocked · Hugging Face",
+      "url": "https://huggingface.co/SZLHOLDINGS/szl-blocked",
+      "snippet": "When a governed call is denied, the op never runs, and the chain records an honest BLOCKED receipt rather than a success. Its companion szl_euaiact derives an EU AI Act Annex IV-style draft technical-documentation skeleton from that provenance — an organizational aid, not compliance evidence, legal advice, or a declaration of conformity."
+    },
+    {
+      "title": "SZLHOLDINGS (SZL Holdings) - Hugging Face",
+      "url": "https://huggingface.co/SZLHOLDINGS/models",
+      "snippet": "Org profile for SZL Holdings on Hugging Face, the AI community building the future."
+    },
+    {
+      "title": "SZL Holdings · GitHub",
+      "url": "https://github.com/szl-holdings",
+      "snippet": "Governed AI infrastructure for inspectable decisions: source, runtime state, receipts, and proof boundaries. - SZL Holdings"
+    },
+    {
+      "title": "SZL Holdings Docs",
+      "url": "https://szl-holdings.github.io/docs-site/",
+      "snippet": "What is SZL? SZL Holdings builds governed-AI infrastructure: an anatomy of composable organs that turns a model from a thing that evaluates into an agent that acts under proof."
+    },
+    {
+      "title": "szl-holdings repositories · GitHub",
+      "url": "https://github.com/orgs/szl-holdings/repositories",
+      "snippet": "Governed AI infrastructure for inspectable decisions: source, runtime state, receipts, and proof boundaries. - SZL Holdings"
+    }
+  ]
+}

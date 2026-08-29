@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "SZLHOLDINGS/chaski-r2",
+  "slug": "szlholdings-chaski-r2",
+  "author": "SZLHOLDINGS",
+  "url": "https://huggingface.co/SZLHOLDINGS/chaski-r2",
+  "created_at": "2026-08-28T23:02:30.000Z",
+  "updated_at": "2026-08-29T01:14:57.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "lora",
+    "governed-ai",
+    "proposal-only",
+    "szl-holdings",
+    "chaski",
+    "cutting",
+    "text-generation",
+    "conversational",
+    "en",
+    "base_model:Qwen/Qwen3.5-0.8B",
+    "base_model:adapter:Qwen/Qwen3.5-0.8B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 45582160,
+  "storage_human": "46 MB",
+  "base_model": "Qwen/Qwen3.5-0.8B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Chaski AI",
+      "url": "https://chaski.ai/",
+      "snippet": "cha s ki AI tools for the work that matters to you. Currently testing."
+    },
+    {
+      "title": "szl-serve/README.md at main · szl-holdings/szl-serve · GitHub",
+      "url": "https://github.com/szl-holdings/szl-serve/blob/main/README.md",
+      "snippet": "Canonical SZL governed serve recipe: llama.cpp/Ollama CPU honest path for Khipu GGUF, schema validation outside the weights, energy MEASURED or UNAVAILABLE, GPU ROADMAP. Not a vLLM/TGI/TRT-LLM copy. Doctrine v11, Apache-2.0. - szl-serve/README.md at main · szl-holdings/szl-serve"
+    },
+    {
+      "title": "SZLHOLDINGS (SZL Holdings) - Hugging Face",
+      "url": "https://huggingface.co/SZLHOLDINGS/models",
+      "snippet": "Org profile for SZL Holdings on Hugging Face, the AI community building the future."
+    },
+    {
+      "title": "SZL Holdings · GitHub",
+      "url": "https://github.com/szl-holdings",
+      "snippet": "Governed AI infrastructure for inspectable decisions: source, runtime state, receipts, and proof boundaries. - SZL Holdings"
+    },
+    {
+      "title": "About · SZL Holdings",
+      "url": "https://holdings.a-11-oy.com/docs-site/about.html",
+      "snippet": "About What SZL Holdings is SZL Holdings builds governed-AI infrastructure with inspectable source, bounded decision logic, and linked evidence. Its Lean corpus has an explicitly mixed proof posture: locked formulas are identified separately from open sorry -tagged obligations, and Lambda remains a conjecture rather than a theorem."
+    }
+  ]
+}

@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "Islamamro/sst2-sentiment-aurora-islamamro",
+  "slug": "islamamro-sst2-sentiment-aurora-islamamro",
+  "author": "Islamamro",
+  "url": "https://huggingface.co/Islamamro/sst2-sentiment-aurora-islamamro",
+  "created_at": "2026-08-28T23:16:22.000Z",
+  "updated_at": "2026-08-28T23:30:31.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "distilbert",
+    "aurora",
+    "islamamro",
+    "text-classification",
+    "dataset:SetFit/sst2",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 66955010,
+  "parameters_human": "67.0M",
+  "storage_bytes": 267832560,
+  "storage_human": "268 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "islamamro · GitHub",
+      "url": "https://github.com/islamamro",
+      "snippet": "islamamro has one repository available. Follow their code on GitHub."
+    },
+    {
+      "title": "Models - Hugging Face",
+      "url": "https://huggingface.co/models?search=sentiment-analysis",
+      "snippet": "Explore machine learning models. Anthos23/sentiment-roberta-large-english-finetuned-sentiment-analysis"
+    },
+    {
+      "title": "stanfordnlp/sst2 · Datasets at Hugging Face",
+      "url": "https://huggingface.co/datasets/stanfordnlp/sst2",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Models - Hugging Face",
+      "url": "https://d6108366.hf-mirror.com/models?other=sst2",
+      "snippet": "AnkitAI/Sensible-ModernBERT-Sentiment-Analysis Text Classification • 0.1B•Updated 25 days ago• 123 • 1"
+    },
+    {
+      "title": "SST-2-sentiment-analysis - GitHub",
+      "url": "https://github.com/YJiangcm/SST-2-sentiment-analysis",
+      "snippet": "Use BiLSTM_attention, BERT, ALBERT, RoBERTa, XLNet model to classify the SST-2 data set based on pytorch - YJiangcm/SST-2-sentiment-analysis"
+    }
+  ]
+}

@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "bihungba1101/MOSS-Audio-4B-Instruct-NVFP4",
+  "slug": "bihungba1101-moss-audio-4b-instruct-nvfp4",
+  "author": "bihungba1101",
+  "url": "https://huggingface.co/bihungba1101/MOSS-Audio-4B-Instruct-NVFP4",
+  "created_at": "2026-08-28T20:50:20.000Z",
+  "updated_at": "2026-08-28T21:14:37.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "moss_audio",
+    "audio",
+    "multimodal",
+    "vllm",
+    "nvfp4",
+    "compressed-tensors",
+    "quantized",
+    "custom_code",
+    "base_model:OpenMOSS-Team/MOSS-Audio-4B-Instruct",
+    "base_model:quantized:OpenMOSS-Team/MOSS-Audio-4B-Instruct",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "8-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 3633245560,
+  "parameters_human": "3.63B",
+  "storage_bytes": 5222953544,
+  "storage_human": "5.2 GB",
+  "base_model": "OpenMOSS-Team/MOSS-Audio-4B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - OpenMOSS/MOSS-Audio: MOSS-Audio is an open-source foundation ...",
+      "url": "https://github.com/OpenMOSS/MOSS-Audio",
+      "snippet": "MOSS-Audio is an open-source audio understanding model from MOSI.AI, the OpenMOSS team, and Shanghai Innovation Institute. It performs unified modeling over complex real-world audio, supporting speech understanding, environmental sound understanding, music understanding, audio captioning, time-aware QA, and complex reasoning."
+    },
+    {
+      "title": "README.md · OpenMOSS-Team/MOSS-Audio-4B-Instruct at main",
+      "url": "https://huggingface.co/OpenMOSS-Team/MOSS-Audio-4B-Instruct/blob/main/README.md",
+      "snippet": "More model families, sizes, and variants will be released in the future. Stay tuned! Evaluation We evaluate MOSS-Audio on a comprehensive set of audio understanding benchmarks. Key results: General Audio Understanding: MOSS-Audio-8B-Thinking achieves an average accuracy of 70.80, outperforming all of the open-source models. Speech Captioning: MOSS-Audio-Instruct variants lead across 11 out of ..."
+    },
+    {
+      "title": "vokra/moss-audio-4b-instruct · Hugging Face",
+      "url": "https://huggingface.co/vokra/moss-audio-4b-instruct",
+      "snippet": "moss-audio-4b-instruct (Vokra GGUF) Converted to the Vokra GGUF format for Vokra, a zero-dependency speech-AI inference runtime. This is a conversion, not a new model. The weights are the upstream ones; Vokra re-packages them so its runtime can memory-map them directly. Credit for the model belongs upstream — see Source below."
+    },
+    {
+      "title": "MOSS-Audio | Audio Understanding Model - openmoss.ai",
+      "url": "https://openmoss.ai/MOSS-Audio/",
+      "snippet": "Understanding audio requires more than simply transcribing words — it demands the ability to perceive acoustic cues, recognize speakers and emotions, interpret environmental sounds, reason over temporal context, and handle complex multi-step inference. MOSS-Audio is built to unify these capabilities within a single model. We release four models in this launch: MOSS-Audio-4B-Instruct, MOSS ..."
+    },
+    {
+      "title": "MOSS-Audio-4B-Instruct: Audio-to-Text model — overview, use cases ...",
+      "url": "https://www.aimodels.fyi/models/huggingFace/moss-audio-4b-instruct-openmoss-team",
+      "snippet": "Overview MOSS-Audio-4B-Instruct is an open-source audio understanding model developed by OpenMOSS-Team in collaboration with MOSI.AI and Shanghai Innovation Institute. The model performs unified audio understanding across speech, environmental sounds, and music, supporting speech transcription with timestamps, speaker and emotion analysis, audio question-answering, music understanding, and ..."
+    }
+  ]
+}

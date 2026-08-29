@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "skblv/resnet50-cholect50-verbs",
+  "slug": "skblv-resnet50-cholect50-verbs",
+  "author": "skblv",
+  "url": "https://huggingface.co/skblv/resnet50-cholect50-verbs",
+  "created_at": "2026-08-28T20:08:45.000Z",
+  "updated_at": "2026-08-28T20:08:52.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-classification",
+  "library": "pytorch",
+  "languages": [],
+  "tags": [
+    "pytorch",
+    "resnet50",
+    "surgical-video",
+    "medical-imaging",
+    "action-recognition",
+    "multi-label-classification",
+    "image-classification",
+    "arxiv:2109.03223",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 94422846,
+  "storage_human": "94 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - CAMMA-public/cholect50: A repository for surgical action ...",
+      "url": "https://github.com/CAMMA-public/cholect50",
+      "snippet": "A repository for surgical action triplet dataset. Data are videos of laparoscopic cholecystectomy that have been annotated with <instrument, verb, target> labels for every surgical fine-grained activity. - CAMMA-public/cholect50"
+    },
+    {
+      "title": "nvidia/Qwen2.5-VL-7B-Surg-CholecT50 · Hugging Face",
+      "url": "https://huggingface.co/nvidia/Qwen2.5-VL-7B-Surg-CholecT50",
+      "snippet": "Model Overview Description: Qwen2.5-VL-7B-Surg-CholecT50 is a multimodal large language model fine-tuned on the CholecT50 dataset of laparoscopic cholecystectomy procedures to recognize and describe surgical actions, instruments, and targets in endoscopic video frames."
+    },
+    {
+      "title": "Voxel51/cholect50 · Datasets at Hugging Face",
+      "url": "https://huggingface.co/datasets/Voxel51/cholect50",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "ResNet50 - PyTorch",
+      "url": "https://pytorch.org/hub/nvidia_deeplearningexamples_resnet50/",
+      "snippet": "The ResNet50 v1.5 model is a modified version of the original ResNet50 v1 model. The difference between v1 and v1.5 is that, in the bottleneck blocks which requires downsampling, v1 has stride = 2 in the first 1×1 convolution, whereas v1.5 has stride = 2 in the 3×3 convolution."
+    },
+    {
+      "title": "GitHub",
+      "url": "https://github.com/CAMMA-public/cholect50/blob/master/README.md?plain=1",
+      "snippet": "CholecT50 : the original version as used in the Rendezvous publication [ [3]] (#cite-cholect50).\",\"4. CholecT45 (cross-val): the official cross validation split of CholecT45 [ [3]] (#cite-cholect50).\",\"5."
+    }
+  ]
+}

@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "kaizhao96/personal-vision-language-pretraining-2024",
+  "slug": "kaizhao96-personal-vision-language-pretraining-2024",
+  "author": "kaizhao96",
+  "url": "https://huggingface.co/kaizhao96/personal-vision-language-pretraining-2024",
+  "created_at": "2026-08-28T20:29:05.000Z",
+  "updated_at": "2026-08-28T20:29:13.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "transformer",
+    "research-notes",
+    "vision-language-pretraining",
+    "license:cc-by-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 24832,
+  "parameters_human": "24832",
+  "storage_bytes": 99808,
+  "storage_human": "99808 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - zli12321/Vision-Language-Models-Overview: A most Frontend ...",
+      "url": "https://github.com/zli12321/Vision-Language-Models-Overview",
+      "snippet": "A most Frontend Collection and survey of vision-language model papers, and models GitHub repository. Continuous updates. - zli12321/Vision-Language-Models-Overview"
+    },
+    {
+      "title": "GitHub - jingyi0000/VLM_survey: Collection of AWESOME vision-language ...",
+      "url": "https://github.com/jingyi0000/VLM_survey",
+      "snippet": "This is the repository of Vision Language Models for Vision Tasks: a Survey, a systematic survey of VLM studies in various visual recognition tasks including image classification, object detection, semantic segmentation, etc. For details, please refer to: Vision-Language Models for Vision Tasks: A Survey [Paper] IEEE Transactions on Pattern Analysis and Machine Intelligence (TPAMI), 2024 🤩 ..."
+    },
+    {
+      "title": "Efficient Vision-Language pre-training via domain-specific learning for ...",
+      "url": "https://aclanthology.org/2024.emnlp-main.454/",
+      "snippet": "Abstract Current Vision-Language (VL) models owe their success to large-scale pre-training on web-collected data, which in turn requires high-capacity architectures and large compute resources for training. We posit that when the downstream tasks are known in advance, which is in practice common, the pretraining process can be aligned to the downstream domain, leading to more efficient and ..."
+    },
+    {
+      "title": "[2210.09263] Vision-Language Pre-training: Basics, Recent Advances, and ...",
+      "url": "https://arxiv.org/abs/2210.09263",
+      "snippet": "This paper surveys vision-language pre-training (VLP) methods for multimodal intelligence that have been developed in the last few years. We group these approaches into three categories: (i) VLP for image-text tasks, such as image captioning, image-text retrieval, visual question answering, and visual grounding; (ii) VLP for core computer vision tasks, such as (open-set) image classification ..."
+    },
+    {
+      "title": "GitHub Pages - InternVL",
+      "url": "https://internvl.github.io/",
+      "snippet": "In this work, we design a large-scale vision-language foundation model (InternVL), which scales up the vision foundation model to 6 billion parameters and progressively aligns it with the LLM, using web-scale image-text data from various sources."
+    }
+  ]
+}

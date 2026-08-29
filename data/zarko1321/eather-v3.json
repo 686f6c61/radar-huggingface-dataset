@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "zarko1321/Eather-v3",
+  "slug": "zarko1321-eather-v3",
+  "author": "zarko1321",
+  "url": "https://huggingface.co/zarko1321/Eather-v3",
+  "created_at": "2026-08-28T20:52:39.000Z",
+  "updated_at": "2026-08-28T20:55:34.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "gpt2",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 30462976,
+  "parameters_human": "30.5M",
+  "storage_bytes": 731328300,
+  "storage_human": "731 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "AI 3D Model Generator: Create 3D from Text & Images | Meshy",
+      "url": "https://www.meshy.ai/",
+      "snippet": "Meshy&#x27;s AI 3D model generator turns text and images into production-ready 3D models in 20-30 seconds. Export to FBX, OBJ, GLB, and STL formats. Try Meshy free."
+    },
+    {
+      "title": "Free AI 3D Model Generator - Createimg",
+      "url": "https://www.createimg.com/ai-3d-model-generator/",
+      "snippet": "Try our free AI 3D model generator to create characters, props, and objects in seconds. 100% free, no login required, fast and easy."
+    },
+    {
+      "title": "Tripo AI 3D model Generator | Text & Images to 3D in Seconds",
+      "url": "https://www.tripo3d.ai/",
+      "snippet": "Create free 3D models with Tripo AI online — turn your text or images into high-fidelity 3D models instantly, ready for games, 3D printing and animation"
+    },
+    {
+      "title": "Hyper3D Rodin - Best AI 3D Model Generator",
+      "url": "https://hyper3d.ai/",
+      "snippet": "Create 3D Models The Easy Way Meet Hyper3D, the world&#x27;s highest-quality, most controllable AI 3D model generator. Turn text prompts or images into detailed 3D assets in seconds — no 3D experience required."
+    },
+    {
+      "title": "AI 3D Model Generator Free — Concept Art & Turnarounds | ZSky AI",
+      "url": "https://zsky.ai/ai-3d-model-generator-free",
+      "snippet": "Free AI 3D model generator for concept art, turnarounds, and reference sheets. Generate 3D-style characters, props, and environments in 1080p."
+    }
+  ]
+}

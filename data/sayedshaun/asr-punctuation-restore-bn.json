@@ -5,7 +5,7 @@
   "author": "SayedShaun",
   "url": "https://huggingface.co/SayedShaun/asr-punctuation-restore-bn",
   "created_at": "2026-08-28T06:06:24.000Z",
-  "updated_at": "2026-08-28T06:36:49.000Z",
+  "updated_at": "2026-08-28T09:00:23.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "token-classification",

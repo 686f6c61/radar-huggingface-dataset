@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "Strg-Alt-Entf-0x00/FireRedVAD-GGUF",
+  "slug": "strg-alt-entf-0x00-fireredvad-gguf",
+  "author": "Strg-Alt-Entf-0x00",
+  "url": "https://huggingface.co/Strg-Alt-Entf-0x00/FireRedVAD-GGUF",
+  "created_at": "2026-08-29T00:36:32.000Z",
+  "updated_at": "2026-08-29T00:36:36.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "voice-activity-detection",
+  "library": "gguf",
+  "languages": [
+    "multilingual"
+  ],
+  "tags": [
+    "gguf",
+    "voice-activity-detection",
+    "vad",
+    "audio-event-detection",
+    "aed",
+    "quantization",
+    "dfsmn",
+    "audio",
+    "speech",
+    "multilingual",
+    "base_model:FireRedTeam/FireRedVAD",
+    "base_model:quantized:FireRedTeam/FireRedVAD",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 588931,
+  "parameters_human": "588931",
+  "storage_bytes": 14124392,
+  "storage_human": "14 MB",
+  "base_model": "FireRedTeam/FireRedVAD",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Strg-Alt-Entf-0x00/FireRedVAD-GGUF · Hugging Face",
+      "url": "https://huggingface.co/Strg-Alt-Entf-0x00/FireRedVAD-GGUF",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Strg-Alt-Entf-0x00/FireRedVAD-GGUF at main - Hugging Face",
+      "url": "https://huggingface.co/Strg-Alt-Entf-0x00/FireRedVAD-GGUF/tree/main",
+      "snippet": "/ FireRedVAD-GGUF like 0 Voice Activity Detection GGUF multilingual vad audio-event-detection aed quantization dfsmn audio speech License:apache-2.0 Model card FilesFiles and versions xet Community Copy to bucket new main FireRedVAD-GGUF 14.3 MB Ctrl+K Ctrl+K 1 contributor History:3 commits Strg-Alt-Entf-0x00 Upload FireRedVAD GGUF models (all ..."
+    },
+    {
+      "title": "GitHub - Strg-Alt-Entf-0x00/firered-vad",
+      "url": "https://github.com/Strg-Alt-Entf-0x00/firered-vad",
+      "snippet": "Ready-to-use FireRed-VAD integration library with optimized GGUF models, PyTorch inference engine, and professional tooling. Integrate into your projects as a git submodule, Python package, or C++ library. firered-vad-fp32.gguf 2.25 MB Baseline Desktop validation firered-vad-int16.gguf 1.13 MB >80 ..."
+    },
+    {
+      "title": "FireRedVAD: A SOTA Industrial-Grade - GitHub",
+      "url": "https://github.com/FireRedTeam/FireRedVAD",
+      "snippet": "FireRedVAD: A SOTA Industrial-Grade Voice Activity Detection & Audio Event Detection [Paper] [Model🤗] [Model🤖] [Demo] FireRedVAD is a state-of-the-art (SOTA) industrial-grade Voice Activity Detection (VAD) and Audio Event Detection (AED) solution. FireRedVAD supports non-streaming/streaming VAD and non-streaming AED."
+    },
+    {
+      "title": "FireRedVAD · Models",
+      "url": "https://www.modelscope.cn/models/xukaituo/FireRedVAD/",
+      "snippet": "FireRedVAD is a state-of-the-art (SOTA) industrial-grade Voice Activity Detection (VAD) and Audio Event Detection (AED) solution. FireRedVAD supports non-streaming/streaming VAD and non-streaming AED."
+    }
+  ]
+}

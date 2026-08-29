@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "mxxm-t/Qwen3.8-Flash-Next-MTP-GGUF",
+  "slug": "mxxm-t-qwen3-8-flash-next-mtp-gguf",
+  "author": "mxxm-t",
+  "url": "https://huggingface.co/mxxm-t/Qwen3.8-Flash-Next-MTP-GGUF",
+  "created_at": "2026-08-28T21:28:42.000Z",
+  "updated_at": "2026-08-28T21:37:46.000Z",
+  "license": "qwen-community-1.0",
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "gguf",
+  "languages": [],
+  "tags": [
+    "gguf",
+    "qwen",
+    "qwen3",
+    "mtp",
+    "nextn",
+    "speculative-decoding",
+    "draft-model",
+    "llama.cpp",
+    "text-generation",
+    "base_model:Qwen/Qwen3.8-Flash-Next",
+    "base_model:quantized:Qwen/Qwen3.8-Flash-Next",
+    "license:other",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 3878549248,
+  "parameters_human": "3.88B",
+  "storage_bytes": 11906654784,
+  "storage_human": "11.9 GB",
+  "base_model": "Qwen/Qwen3.8-Flash-Next",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Qwen3.8-Flash-Next - AI Wiki",
+      "url": "https://aiwiki.ai/wiki/qwen3_8_flash_next",
+      "snippet": "Qwen3.8-Flash-Next is an experimental open-weight multimodal large language model released by Alibaba Group&#x27;s Qwen team on August 26, 2026."
+    },
+    {
+      "title": "Qwen3.8-Flash-Next - DGX Spark / GB10 - NVIDIA Developer Forums",
+      "url": "https://forums.developer.nvidia.com/t/qwen3-8-flash-next/381228",
+      "snippet": "Is this the next qwen? Seems perfect for sparks… Highlights • Redisgned Multimodal MoE Model: 125B main model parameters, supplemented by an additional 51B N-gram embeddings,and 6B parameters activated per token. • Comprehensive Architectural Upgrades: Pushing the frontiers of model architecture innovations, across the areas of Attention, Residual, Embedding, and Optimization ..."
+    },
+    {
+      "title": "Qwen/Qwen3.8-Flash-Next | vLLM Recipes",
+      "url": "https://recipes.vllm.ai/Qwen/Qwen3.8-Flash-Next",
+      "snippet": "Overview Qwen3.8-Flash-Next is a multimodal, ultra-sparse Mixture-of-Experts model. It has 125B parameters, including an additional 51B N-gram embedding table, while activating 6B parameters per token. The architecture combines four main ideas: GDN + QSA: three of every four layers use Gated DeltaNet to compress history; the fourth uses Qwen Sparse Attention for precise long-range retrieval ..."
+    },
+    {
+      "title": "Qwen3.8-Flash-Next-MTP-Q8_0-GGUF - Hugging Face",
+      "url": "https://huggingface.co/agentionai/Qwen3.8-Flash-Next-MTP-Q8_0-GGUF",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "tcclaviger/Qwen3.8-Flash-Next-MXFP4-FP8 · Hugging Face",
+      "url": "https://huggingface.co/tcclaviger/Qwen3.8-Flash-Next-MXFP4-FP8",
+      "snippet": "Docker Model Runner How to use tcclaviger/Qwen3.8-Flash-Next-MXFP4-FP8 with Docker Model Runner: ... Qwen3.8-Flash-Next Highlights Model Overview Benchmark Results Language Vision Language Quickstart Serving Qwen3.8-Flash-Next API Usage Best Practices Citation NOTICE: This will only run on AMD AI PRO R9700 GPUs MXFP4 / FP8 quantization — 125. ..."
+    }
+  ]
+}

@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "riasatsk/Bengali_ASR",
+  "slug": "riasatsk-bengali_asr",
+  "author": "riasatsk",
+  "url": "https://huggingface.co/riasatsk/Bengali_ASR",
+  "created_at": "2026-08-29T00:25:04.000Z",
+  "updated_at": "2026-08-29T00:25:36.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "onnx",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1980887037,
+  "storage_human": "2.0 GB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "riasatsk/Bengali_ASR · Hugging Face",
+      "url": "https://huggingface.co/riasatsk/Bengali_ASR",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "bangla-speech-processing/BanglaASR · Hugging Face",
+      "url": "https://huggingface.co/bangla-speech-processing/BanglaASR",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "riasatsk (Riasat Sk) · GitHub",
+      "url": "https://github.com/riasatsk",
+      "snippet": "riasatsk has 39 repositories available. Follow their code on GitHub."
+    },
+    {
+      "title": "Bengali.AI",
+      "url": "https://bengaliai.github.io/",
+      "snippet": "Bengali.AI A community research initiative working towards democratizing AI research for Bengali by crowdsourcing datasets and launching research competitions. A research community of 7000+ researchers from around the world. Striving towards the same goal: Development of language tech of Bengali. Bangla/Bengali (বাংলা) has a rich heritage of literature that dates back to almost a ..."
+    },
+    {
+      "title": "Bengali.AI",
+      "url": "https://www.bengali.ai/",
+      "snippet": "Bangla OCR An open-source Optical Character Recognition model for printed Bengali text, built using diverse scanned documents and synthetic datasets. Read More Bangla ASR A Bengali Automatic Speech Recognition system trained on open-source and community-contributed speech corpora for accurate transcription. Read More"
+    }
+  ]
+}

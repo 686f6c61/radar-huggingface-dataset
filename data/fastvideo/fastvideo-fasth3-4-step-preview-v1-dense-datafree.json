@@ -1,0 +1,78 @@
+{
+  "schema": 1,
+  "id": "FastVideo/FastVideo-FastH3-4-step-Preview-v1-Dense-DataFree",
+  "slug": "fastvideo-fastvideo-fasth3-4-step-preview-v1-dense-datafree",
+  "author": "FastVideo",
+  "url": "https://huggingface.co/FastVideo/FastVideo-FastH3-4-step-Preview-v1-Dense-DataFree",
+  "created_at": "2026-08-27T03:49:19.000Z",
+  "updated_at": "2026-08-28T19:27:14.000Z",
+  "license": "minimax-h3-community",
+  "license_family": "unknown",
+  "pipeline_tag": "text-to-video",
+  "library": "fastvideo",
+  "languages": [],
+  "tags": [
+    "fastvideo",
+    "diffusers",
+    "safetensors",
+    "text-to-video",
+    "video",
+    "audio",
+    "text-to-audio-video",
+    "distillation",
+    "dmd2",
+    "few-step",
+    "minimax-h3",
+    "fasth3",
+    "preview",
+    "arxiv:2405.14867",
+    "base_model:MiniMaxAI/MiniMax-H3",
+    "base_model:finetune:MiniMaxAI/MiniMax-H3",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 33122992896,
+  "parameters_human": "33.12B",
+  "storage_bytes": 143981960636,
+  "storage_human": "144.0 GB",
+  "base_model": "MiniMaxAI/MiniMax-H3",
+  "formats": [
+    "diffusers",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "FastVideo-FastH3-4-step-Preview-v1-VSA-DataFree - Hugging Face",
+      "url": "https://huggingface.co/FastVideo/FastVideo-FastH3-4-step-Preview-v1-VSA-DataFree",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "README.md · FastVideo/FastVideo-FastH3-4-step-Preview-v1-VSA-DataFree ...",
+      "url": "https://huggingface.co/FastVideo/FastVideo-FastH3-4-step-Preview-v1-VSA-DataFree/blob/main/README.md",
+      "snippet": "FastVideo-FastH3-4-step-Preview-v1-VSA-DataFree The recommended FastH3 Preview v1 checkpoint from FastVideo. It generates synchronized video and audio from text with four transformer forwards. This step-1300 model was trained with data-free DMD2 and VSA-H3 at 90% sparsity."
+    },
+    {
+      "title": "GitHub - hao-ai-lab/FastVideo: A unified inference and post-training ...",
+      "url": "https://github.com/hao-ai-lab/FastVideo",
+      "snippet": "NEWS 2026/08/23: FastH3 Preview v0.2 is a 4-step DMD2-distilled MiniMax-H3 checkpoint that generates synchronized video and audio. Run the verified basic FastH3 example, see the inference guide, or have a coding agent install FastVideo with the agent setup prompt."
+    },
+    {
+      "title": "GitHub - EricLina/FastVideo-: A unified inference and post-training ...",
+      "url": "https://github.com/EricLina/FastVideo-",
+      "snippet": "FastVideo is a unified post-training and inference framework for accelerated video generation. FastVideo features an end-to-end unified pipeline for accelerating diffusion models, starting from data preprocessing to model training, finetuning, distillation, and inference."
+    },
+    {
+      "title": "FastVideo - haoailab.com",
+      "url": "https://haoailab.com/FastVideo/",
+      "snippet": "FastVideo is an inference and post-training framework for diffusion models. It features an end-to-end unified pipeline for accelerating diffusion models, starting from data preprocessing to model training, finetuning, distillation, and inference. FastVideo is designed to be modular and extensible, allowing users to easily add new optimizations and techniques. Whether it is training-free ..."
+    }
+  ]
+}

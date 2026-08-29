@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "SZLHOLDINGS/szl-receipt-attn",
+  "slug": "szlholdings-szl-receipt-attn",
+  "author": "SZLHOLDINGS",
+  "url": "https://huggingface.co/SZLHOLDINGS/szl-receipt-attn",
+  "created_at": "2026-08-28T16:27:55.000Z",
+  "updated_at": "2026-08-29T01:16:12.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "kernels",
+  "languages": [],
+  "tags": [
+    "kernels",
+    "kernel",
+    "szl-holdings",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - szl-holdings/szl-receipt-attn: Original SZL Triton tiled fused ...",
+      "url": "https://github.com/szl-holdings/szl-receipt-attn",
+      "snippet": "Original Triton tiled fused attention (FlashAttention silhouette, not a copy). Each call can emit a SHA3-256 receipt onto an optional chain."
+    },
+    {
+      "title": "SZL Holdings · GitHub",
+      "url": "https://github.com/szl-holdings",
+      "snippet": "Governed AI infrastructure for inspectable decisions: source, runtime state, receipts, and proof boundaries. - SZL Holdings"
+    },
+    {
+      "title": "SZL Holdings Docs",
+      "url": "https://szl-holdings.github.io/docs-site/",
+      "snippet": "What is SZL? SZL Holdings builds governed-AI infrastructure: an anatomy of composable organs that turns a model from a thing that evaluates into an agent that acts under proof."
+    },
+    {
+      "title": "Developer Hub · SZL Holdings",
+      "url": "https://holdings.a-11-oy.com/docs-site/developers/",
+      "snippet": "SZL Holdings builds a formally-verified governance gate for agentic AI. This section is the developer-facing entry point: quickstart, full API reference, MCP integration, and runnable examples. Build your own \"organ\" on the same substrate the shipping flagships use."
+    },
+    {
+      "title": "SZL-Forge-1.5B-ReceiptAgent API & Inference Endpoint | FriendliAI",
+      "url": "https://friendli.ai/models/SZLHOLDINGS/SZL-Forge-1.5B-ReceiptAgent",
+      "snippet": "Merged model weights (*.safetensors) — the receipts&#x27; weightsArtifactSha256 is a deterministic digest over the sorted *.safetensors of the merge (basename + bytes), reproducible with sha256_safetensors_dir in the forge kit."
+    }
+  ]
+}

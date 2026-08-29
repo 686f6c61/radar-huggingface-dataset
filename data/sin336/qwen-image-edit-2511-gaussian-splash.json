@@ -25,8 +25,8 @@
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
-  "storage_bytes": 1786264602,
-  "storage_human": "1.8 GB",
+  "storage_bytes": 345879162,
+  "storage_human": "346 MB",
   "base_model": "Qwen/Qwen-Image-Edit-2511",
   "formats": [
     "diffusers"

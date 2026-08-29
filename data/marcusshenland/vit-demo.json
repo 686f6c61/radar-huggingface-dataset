@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "marcusshenland/vit-demo",
+  "slug": "marcusshenland-vit-demo",
+  "author": "marcusshenland",
+  "url": "https://huggingface.co/marcusshenland/vit-demo",
+  "created_at": "2026-08-28T20:46:06.000Z",
+  "updated_at": "2026-08-28T20:46:15.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "vit",
+    "pytorch",
+    "retrieval",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 33088,
+  "parameters_human": "33088",
+  "storage_bytes": 132832,
+  "storage_human": "132832 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "marcusshenland (Marcus Shen) - Hugging Face",
+      "url": "https://huggingface.co/marcusshenland",
+      "snippet": "AI & ML interests ... Recent Activity updated a model about 11 hours ago ... published a model about 11 hours ago"
+    },
+    {
+      "title": "Vit Model Demo - a Hugging Face Space by grego",
+      "url": "https://huggingface.co/spaces/grego/vit-model-demo",
+      "snippet": "Discover amazing ML apps made by the community"
+    },
+    {
+      "title": "Command-Line Demo | VITA-MLLM/VITA | DeepWiki",
+      "url": "https://deepwiki.com/VITA-MLLM/VITA/3.1-command-line-demo",
+      "snippet": "This documentation covers the command-line interface for VITA, providing a step-by-step guide on using the video_audio_demo.py script for inference with the VITA multimodal model. This interface allows users to interact with the model using images, videos, and audio inputs directly from the command line. For information about the web-based interface, see Web Interface."
+    },
+    {
+      "title": "Vit Demo - AI Model Insights & Benchmarks - free2aitools.com",
+      "url": "https://free2aitools.com/model/nguyenbh/vit-demo",
+      "snippet": "Deep dive into Vit Demo. 📝 Limitations & Considerations •Benchmark scores may vary based on evaluation methodology and hardware configuration. •VRAM requirements are estimates; actual usage depends on quantization and batch size. •FNI scores are relative rankings and may change as new models are added. ⚠License Unknown: Verify licensing terms before commercial use."
+    },
+    {
+      "title": "#Demo What does an AI see? - Vision Transformer (ViT) Demo ... - YouTube",
+      "url": "https://www.youtube.com/shorts/VaD-HRyRR64",
+      "snippet": "📷 This video showcases a live demo of the Vision Transformer (ViT) model running real-time image captioning on a single Mobilint MLA100 AI accelerator card...."
+    }
+  ]
+}

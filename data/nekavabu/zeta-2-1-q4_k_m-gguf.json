@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "nekavabu/zeta-2.1-Q4_K_M-GGUF",
+  "slug": "nekavabu-zeta-2-1-q4_k_m-gguf",
+  "author": "nekavabu",
+  "url": "https://huggingface.co/nekavabu/zeta-2.1-Q4_K_M-GGUF",
+  "created_at": "2026-08-28T20:14:47.000Z",
+  "updated_at": "2026-08-28T20:15:11.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "text-generation-inference",
+    "edit-prediction",
+    "next-edit-suggestion",
+    "llama-cpp",
+    "gguf-my-repo",
+    "en",
+    "base_model:zed-industries/zeta-2.1",
+    "base_model:quantized:zed-industries/zeta-2.1",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 8250462208,
+  "parameters_human": "8.25B",
+  "storage_bytes": 5071409664,
+  "storage_human": "5.1 GB",
+  "base_model": "zed-industries/zeta-2.1",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "adilkairolla/zeta-2.1-GGUF · Hugging Face",
+      "url": "https://huggingface.co/adilkairolla/zeta-2.1-GGUF",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "onlyspaceghost/zeta-2.1-Q4_K_M-GGUF · Hugging Face",
+      "url": "https://huggingface.co/onlyspaceghost/zeta-2.1-Q4_K_M-GGUF",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GGUF quantizations overview · GitHub",
+      "url": "https://gist.github.com/Artefact2/b5f810600771265fc1e39442288e8ec9",
+      "snippet": "Now you can use the model in ollama by specifying &#x27;Llama-3.1-8B-Instruct-Fei-v1-Uncensored.Q4_K_M&#x27; as the model. You can also reuse this model in further variations with custom template, system prompt and parameters without much addition disk overhead."
+    },
+    {
+      "title": "zeta",
+      "url": "https://zeta-ai.io/",
+      "snippet": "The No.1 AI chat! Over 13 hours of weekly use — and it&#x27;s free. Not using zeta yet? Everyone else is!"
+    },
+    {
+      "title": "GGUF Model Discovery - Browse & Download AI Models",
+      "url": "https://local-ai-zone.github.io/",
+      "snippet": "Discover and download GGUF format AI models. Browse and direct download thousands of quantized AI models with detailed information, download counts, and direct links."
+    }
+  ]
+}

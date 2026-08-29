@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "devrim/reign-tiny-l1_gn-bge-large_val-selected",
+  "slug": "devrim-reign-tiny-l1_gn-bge-large_val-selected",
+  "author": "devrim",
+  "url": "https://huggingface.co/devrim/reign-tiny-l1_gn-bge-large_val-selected",
+  "created_at": "2026-08-28T21:39:55.000Z",
+  "updated_at": "2026-08-28T21:40:01.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "feature-extraction",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "safetensors",
+    "reign",
+    "retrieval",
+    "long-documents",
+    "document-embeddings",
+    "feature-extraction",
+    "en",
+    "dataset:devrim/goodwiki_long_synthetic_ir",
+    "base_model:BAAI/bge-large-en-v1.5",
+    "base_model:finetune:BAAI/bge-large-en-v1.5",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 680768,
+  "parameters_human": "680768",
+  "storage_bytes": 2725368,
+  "storage_human": "3 MB",
+  "base_model": "BAAI/bge-large-en-v1.5",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "BAAI/bge-large-en · Hugging Face",
+      "url": "https://huggingface.co/BAAI/bge-large-en",
+      "snippet": "New reranker model: release cross-encoder models BAAI/bge-reranker-base and BAAI/bge-reranker-large, which are more powerful than embedding model. We recommend to use/fine-tune them to re-rank top-k documents returned by embedding models."
+    },
+    {
+      "title": "BGE v1 & v1.5 — BGE documentation - bge-model.com",
+      "url": "https://bge-model.com/bge/bge_v1_v1.5.html",
+      "snippet": "BGE v1 & v1.5 # BGE v1 and v1.5 are series of encoder only models base on BERT. They achieved best performance among the models of the same size at the time of release. BGE # The first group of BGE models was released in Aug 2023. The bge-large-en and bge-large-zh ranked 1st on MTEB and C-MTEB benchmarks at the time released."
+    },
+    {
+      "title": "BAAI/bge-large-en-v1.5 · Hugging Face",
+      "url": "https://huggingface.co/BAAI/bge-large-en-v1.5",
+      "snippet": "New reranker model: release cross-encoder models BAAI/bge-reranker-base and BAAI/bge-reranker-large, which are more powerful than embedding model. We recommend to use/fine-tune them to re-rank top-k documents returned by embedding models."
+    },
+    {
+      "title": "GitHub - FlagOpen/FlagEmbedding: Retrieval and Retrieval-augmented LLMs",
+      "url": "https://github.com/FlagOpen/FlagEmbedding",
+      "snippet": "We recommend to use/fine-tune them to re-rank top-k documents returned by embedding models. update embedding model: release bge-*-v1.5 embedding model to alleviate the issue of the similarity distribution, and enhance its retrieval ability without instruction."
+    },
+    {
+      "title": "bge-large-en-v1.5 download | SourceForge.net",
+      "url": "https://sourceforge.net/projects/bge-large-en-v1-5/",
+      "snippet": "BAAI/bge-large-en-v1.5 is a powerful English sentence embedding model designed by the Beijing Academy of Artificial Intelligence to enhance retrieval-augmented language model systems. It uses a BERT-based architecture fine-tuned to produce high-quality dense vector representations optimized for sentence similarity, search, and retrieval."
+    }
+  ]
+}

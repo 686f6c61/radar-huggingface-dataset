@@ -39,8 +39,8 @@
   "trending_score": 0,
   "parameters": 446571248,
   "parameters_human": "446.6M",
-  "storage_bytes": 417524819638,
-  "storage_human": "417.5 GB",
+  "storage_bytes": 209214803062,
+  "storage_human": "209.2 GB",
   "base_model": "ornith-ai/Ornith-1.5-35B-A3B",
   "formats": [
     "gguf"

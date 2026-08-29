@@ -1,0 +1,79 @@
+{
+  "schema": 1,
+  "id": "cogni-x/wearable-intelli-model",
+  "slug": "cogni-x-wearable-intelli-model",
+  "author": "cogni-x",
+  "url": "https://huggingface.co/cogni-x/wearable-intelli-model",
+  "created_at": "2026-08-20T22:22:26.000Z",
+  "updated_at": "2026-08-28T23:26:28.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gguf",
+    "gemma3_text",
+    "text-generation",
+    "gemma",
+    "gemma3",
+    "wearable",
+    "health",
+    "wellness",
+    "qlora",
+    "sft",
+    "conversational",
+    "base_model:google/gemma-3-270m-it",
+    "base_model:quantized:google/gemma-3-270m-it",
+    "license:apache-2.0",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 268098176,
+  "parameters_human": "268.1M",
+  "storage_bytes": 1949941447,
+  "storage_human": "1.9 GB",
+  "base_model": "google/gemma-3-270m-it",
+  "formats": [
+    "gguf",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": true,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "cogni-x/Cogni-OpenModel · Hugging Face",
+      "url": "https://huggingface.co/cogni-x/Cogni-OpenModel",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "cogni-x/Cogni-OpenModel at main - Hugging Face",
+      "url": "https://huggingface.co/cogni-x/Cogni-OpenModel/tree/main",
+      "snippet": "cogni-x / Cogni-OpenModel like 0 Follow CogniX LTD 11 Text Generation Safetensors English llama llama-3.1 conversational-ai mental-health lora quantization text-generation-inference bitsandbytes 4-bit precision License:mit Model card FilesFiles and versions xet Community Copy to bucket new main Cogni-OpenModel 185 MB Ctrl+K Ctrl+K 2 ..."
+    },
+    {
+      "title": "CogniX-LTD/Cogni-OpenModel - GitHub",
+      "url": "https://github.com/CogniX-LTD/Cogni-OpenModel",
+      "snippet": "Cogni-OpenModel: Safety‑aware, non‑clinical conversational AI for supportive mental health and wellbeing use‑cases, built on Meta Llama 3.1 8B and fine‑tuned with LoRA. This repository contains the model configuration, tokenizer, generation defaults, and adapter metadata for efficient deployment."
+    },
+    {
+      "title": "Cognix AI - Multi-Model AI Workspace",
+      "url": "https://www.cognixai.co/",
+      "snippet": "Chat across leading AI models, create images, automate workflows, and build full-stack applications with Cognix AI Cloud Agent."
+    },
+    {
+      "title": "Cogni-OpenModel/.github at main · CogniX-LTD/Cogni-OpenModel",
+      "url": "https://github.com/CogniX-LTD/Cogni-OpenModel/tree/main/.github",
+      "snippet": "This repo contains a safety-focused, conversational AI assistant for mental health. - CogniX-LTD/Cogni-OpenModel"
+    }
+  ]
+}

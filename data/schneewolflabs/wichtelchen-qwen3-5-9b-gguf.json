@@ -1,0 +1,76 @@
+{
+  "schema": 1,
+  "id": "schneewolflabs/Wichtelchen-Qwen3.5-9B-GGUF",
+  "slug": "schneewolflabs-wichtelchen-qwen3-5-9b-gguf",
+  "author": "schneewolflabs",
+  "url": "https://huggingface.co/schneewolflabs/Wichtelchen-Qwen3.5-9B-GGUF",
+  "created_at": "2026-08-29T00:29:28.000Z",
+  "updated_at": "2026-08-29T00:30:37.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "llama.cpp",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "llama.cpp",
+    "gguf",
+    "agents",
+    "tool-use",
+    "code",
+    "hemlock",
+    "qwen3.5",
+    "image-text-to-text",
+    "en",
+    "base_model:schneewolflabs/Wichtelchen-Qwen3.5-9B",
+    "base_model:quantized:schneewolflabs/Wichtelchen-Qwen3.5-9B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 9197093888,
+  "parameters_human": "9.20B",
+  "storage_bytes": 30689307552,
+  "storage_human": "30.7 GB",
+  "base_model": "schneewolflabs/Wichtelchen-Qwen3.5-9B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "schneewolflabs/Wichtelchen-Qwen3.5-9B · Hugging Face",
+      "url": "https://huggingface.co/schneewolflabs/Wichtelchen-Qwen3.5-9B",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "DuoNeural/Qwen-3.5-9B-GGUF · Hugging Face",
+      "url": "https://huggingface.co/DuoNeural/Qwen-3.5-9B-GGUF",
+      "snippet": "Qwen 3.5 features a dense transformer architecture with optimized attention mechanisms and a large vocabulary size, making it highly efficient for complex instruction following and creative generation. This is a base model/standard release; performance may vary depending on the prompt format."
+    },
+    {
+      "title": "qwen3.5:9b - ollama.com",
+      "url": "https://ollama.com/library/qwen3.5:9b",
+      "snippet": "Qwen3.5 represents a significant leap forward, integrating breakthroughs in multimodal learning, architectural efficiency, reinforcement learning scale, and global accessibility to empower developers and enterprises with unprecedented capability and efficiency."
+    },
+    {
+      "title": "Qwen3.5-9B-GGUF · Model · Inferix",
+      "url": "https://inferix.co/models/unsloth/Qwen3.5-9B-GGUF",
+      "snippet": "Qwen3.5 represents a significant leap forward, integrating breakthroughs in multimodal learning, architectural efficiency, reinforcement learning scale, and global accessibility to empower developers and enterprises with unprecedented capability and efficiency."
+    },
+    {
+      "title": "qwen/qwen3.5-9b • LM Studio",
+      "url": "https://lmstudio.ai/models/qwen/qwen3.5-9b",
+      "snippet": "Description Qwen3.5 represents a significant leap forward, integrating breakthroughs in multimodal learning, architectural efficiency, reinforcement learning scale, and global accessibility. This is a 9B parameter dense model, supporting a native context length of 262,144 tokens."
+    }
+  ]
+}

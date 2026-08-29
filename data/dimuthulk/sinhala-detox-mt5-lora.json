@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "dimuthulk/sinhala-detox-mt5-lora",
+  "slug": "dimuthulk-sinhala-detox-mt5-lora",
+  "author": "dimuthulk",
+  "url": "https://huggingface.co/dimuthulk/sinhala-detox-mt5-lora",
+  "created_at": "2026-08-28T20:27:05.000Z",
+  "updated_at": "2026-08-28T20:27:09.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 23428488,
+  "storage_human": "23 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "dimuthulk (Dimuthu Lakmal Rathnayaka) - Hugging Face",
+      "url": "https://huggingface.co/dimuthulk",
+      "snippet": "AI & ML interests ... Recent Activity updated a model about 2 hours ago ... published a model about 3 hours ago"
+    },
+    {
+      "title": "Releases: Emaad2405/poly-detox-multilingual - GitHub",
+      "url": "https://github.com/Emaad2405/poly-detox-multilingual/releases",
+      "snippet": "Poly-Detox: Multilingual Text Detoxification with LoRA-Adapted mT5 - Parameter-efficient multilingual text detoxification using LoRA fine-tuning on mT5-base (580M parameters) — trained on English and transferred zero-shot and few-shot to Spanish and Hindi."
+    },
+    {
+      "title": "dimuthulk (Dimuthu Lakmal Rathnayaka) - Hugging Face",
+      "url": "https://huggingface.co/dimuthulk/models",
+      "snippet": "dimuthulk&#x27;s models1 Sort: Recently updated dimuthulk/sinhala-hate-speech-detector 0.3B•Updated about 4 hours ago"
+    },
+    {
+      "title": "GitHub - Emaad2405/poly-detox-multilingual: Poly-Detox: Multilingual ...",
+      "url": "https://github.com/Emaad2405/poly-detox-multilingual",
+      "snippet": "🌍 Poly-Detox: Multilingual Text Detoxification with LoRA-Adapted mT5 Parameter-efficient multilingual text detoxification using LoRA fine-tuning on mT5-base (580M parameters) — trained on English and transferred zero-shot and few-shot to Spanish and Hindi."
+    },
+    {
+      "title": "Projects Portfolio | Dimuthu Rathnayaka - dimuthulk.vercel.app",
+      "url": "https://dimuthulk.vercel.app/projects",
+      "snippet": "View the diverse portfolio of Dimuthu Rathnayaka, featuring full-stack Next.js applications, commercial brand identity designs, marketing materials, and premium creative assets."
+    }
+  ]
+}

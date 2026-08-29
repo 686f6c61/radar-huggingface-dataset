@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "DotCheck/dotcheck",
+  "slug": "dotcheck-dotcheck",
+  "author": "DotCheck",
+  "url": "https://huggingface.co/DotCheck/dotcheck",
+  "created_at": "2026-07-26T05:44:14.000Z",
+  "updated_at": "2026-08-29T00:10:33.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "dotcheck",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "DotCheck: AI scores for images, video, and text",
+      "url": "http://dotcheck.ai/",
+      "snippet": "DotCheck scores images, video, and text in Chrome as you browse, or when you Check a file on the web. Scores are estimates, not proof."
+    },
+    {
+      "title": "DotCheck/dotcheck · Hugging Face",
+      "url": "https://huggingface.co/DotCheck/dotcheck",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Check · DotCheck",
+      "url": "https://dotcheck.ai/check",
+      "snippet": "Drop an image, video, audio, or text file for an AI score. Share a Checked by DotCheck photo or a short clip. Scores are estimates, not proof."
+    },
+    {
+      "title": "DotCheck/dotcheck at main - Hugging Face",
+      "url": "https://huggingface.co/DotCheck/dotcheck/tree/main",
+      "snippet": "DotCheck / dotcheck like 0 Follow DotCheck - Petr Jaroch 1 dotcheck License:other Model card FilesFiles and versions xet Community Copy to bucket new main dotcheck 5.69 kB Ctrl+K Ctrl+K 1 contributor History:4 commits ForumCore docs: org about + brand icon dbb9690 verifiedabout 6 hours ago .gitattributes Safe 1.52 kBinitial commitabout 6 hours ago README.md 1.65 kBdocs: org about + brand ..."
+    },
+    {
+      "title": "DotCheck (@dotcheckai) / X",
+      "url": "https://x.com/dotcheckai",
+      "snippet": "DotCheck bot. See what&#x27;s real. @ us with a photo or video for a free score. Check at dotcheck.ai"
+    }
+  ]
+}

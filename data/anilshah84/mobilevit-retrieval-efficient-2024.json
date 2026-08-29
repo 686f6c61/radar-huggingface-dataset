@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "anilshah84/mobilevit-retrieval-efficient-2024",
+  "slug": "anilshah84-mobilevit-retrieval-efficient-2024",
+  "author": "anilshah84",
+  "url": "https://huggingface.co/anilshah84/mobilevit-retrieval-efficient-2024",
+  "created_at": "2026-08-29T00:18:01.000Z",
+  "updated_at": "2026-08-29T00:18:11.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "mobilevit",
+    "pytorch",
+    "retrieval",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 33088,
+  "parameters_human": "33088",
+  "storage_bytes": 132832,
+  "storage_human": "132832 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "MobileViCLIP: An Efficient Video-Text Model for Mobile Devices",
+      "url": "https://arxiv.org/html/2508.07312v1",
+      "snippet": "This paper bridges this gap by introducing temporal structural reparameterization into an efficient image-text model and training it on a large-scale high-quality video-text dataset, resulting in an efficient video-text model that can run on mobile devices with strong zero-shot classification and retrieval capabilities, termed as MobileViCLIP."
+    },
+    {
+      "title": "MobileViT: A mobile-friendly Transformer-based model for image ... - Keras",
+      "url": "https://keras.io/examples/vision/mobilevit/",
+      "snippet": "With convolutions, we can capture spatial relationships that model locality. Besides combining the properties of Transformers and convolutions, the authors introduce MobileViT as a general-purpose mobile-friendly backbone for different image recognition tasks."
+    },
+    {
+      "title": "ICCV 2025 Open Access Repository",
+      "url": "https://openaccess.thecvf.com/content/ICCV2025/html/Yang_MobileViCLIP_An_Efficient_Video-Text_Model_for_Mobile_Devices_ICCV_2025_paper.html",
+      "snippet": "Since many efficient contrastive language-image pre-training (CLIP) models have shown strong zero-shot classification and retrieval capability, we attempt to fill the gap in video-text understanding models and propose a fast and efficient video-text model MobileViCLIP with strong zero-shot reasoning capability that can be deployed on mobile ..."
+    },
+    {
+      "title": "[2110.02178] MobileViT: Light-weight, General-purpose, and Mobile ...",
+      "url": "https://arxiv.org/abs/2110.02178",
+      "snippet": "Towards this end, we introduce MobileViT, a light-weight and general-purpose vision transformer for mobile devices. MobileViT presents a different perspective for the global processing of information with transformers, i.e., transformers as convolutions."
+    },
+    {
+      "title": "transformers/docs/source/en/model_doc/mobilevit.md at main ...",
+      "url": "https://github.com/huggingface/transformers/blob/main/docs/source/en/model_doc/mobilevit.md",
+      "snippet": "MobileViT is a lightweight vision transformer for mobile devices that merges CNN&#x27;s efficiency and inductive biases with transformers global context modeling. It treats transformers as convolutions, enabling global information processing without the heavy computational cost of standard ViTs."
+    }
+  ]
+}

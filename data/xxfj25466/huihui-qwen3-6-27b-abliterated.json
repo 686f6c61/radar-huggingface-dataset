@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "xxfj25466/Huihui-Qwen3.6-27B-abliterated",
+  "slug": "xxfj25466-huihui-qwen3-6-27b-abliterated",
+  "author": "xxfj25466",
+  "url": "https://huggingface.co/xxfj25466/Huihui-Qwen3.6-27B-abliterated",
+  "created_at": "2026-08-29T00:05:09.000Z",
+  "updated_at": "2026-08-29T00:05:09.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_5",
+    "image-text-to-text",
+    "abliterated",
+    "uncensored",
+    "conversational",
+    "base_model:Qwen/Qwen3.6-27B",
+    "base_model:finetune:Qwen/Qwen3.6-27B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 27781427952,
+  "parameters_human": "27.78B",
+  "storage_bytes": 55575813902,
+  "storage_human": "55.6 GB",
+  "base_model": "Qwen/Qwen3.6-27B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "huihui-ai/Huihui-Qwen3.6-27B-abliterated · Hugging Face",
+      "url": "https://huggingface.co/huihui-ai/Huihui-Qwen3.6-27B-abliterated",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "huihui-ai (huihui.ai) - Hugging Face",
+      "url": "https://huggingface.co/huihui-ai",
+      "snippet": "Recent Activity updated a modelabout 24 hours ago huihui-ai/Huihui-Qwen3.8-27B-abliterated-GGUF liked a model1 day ago Qwen/Qwen3.8-Flash-Next liked a model1 day ago zai-org/GLM-5.3-Flash View all activity"
+    },
+    {
+      "title": "huihui-ai/Huihui-Qwen3.6-27B-abliterated - Models",
+      "url": "https://www.modelscope.cn/models/JyWang6/Huihui-Qwen3.6-27B-abliterated",
+      "snippet": "You can use huihui_ai/qwen3.6-abliterated:27b directly, ... Usage Warnings Risk of Sensitive or Controversial Outputs: This model&#x27;s safety filtering has been significantly reduced, potentially generating sensitive, controversial, or inappropriate content. Users should exercise caution and rigorously review generated outputs."
+    },
+    {
+      "title": "huihui_ai/Qwen3.6-abliterated:27b",
+      "url": "https://ollama.com/huihui_ai/Qwen3.6-abliterated:27b",
+      "snippet": "Qwen3.6 delivers substantial upgrades in agentic coding and thinking preservation than previous Qwen models."
+    },
+    {
+      "title": "Huihui Qwen3.6 27B abliterated NVFP4 MTP — ThinkLLM",
+      "url": "https://thinkllm.dev/models/huihui-qwen3-6-27b-abliterated-nvfp4-mtp",
+      "snippet": "A vision-capable text model built on Qwen3&#x27;s 27B architecture, this variant has been processed with abliteration — a technique that removes refusal behaviors — and quantized to NVFP4 precision for efficient inference. It accepts both text and image inputs, making it multimodal, though the community fine-tuning origin means consistency and safety guardrails are intentionally absent."
+    }
+  ]
+}

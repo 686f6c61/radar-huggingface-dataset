@@ -1,0 +1,77 @@
+{
+  "schema": 1,
+  "id": "mlx-community/GLM-5.3-DQ4-Q5-q8",
+  "slug": "mlx-community-glm-5-3-dq4-q5-q8",
+  "author": "mlx-community",
+  "url": "https://huggingface.co/mlx-community/GLM-5.3-DQ4-Q5-q8",
+  "created_at": "2026-08-28T21:15:34.000Z",
+  "updated_at": "2026-08-28T21:20:27.000Z",
+  "license": "glm-5.3",
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "mlx",
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "glm_moe_dsa",
+    "text-generation",
+    "transformers",
+    "conversational",
+    "en",
+    "zh",
+    "arxiv:2505.02390",
+    "base_model:zai-org/GLM-5.3",
+    "base_model:quantized:zai-org/GLM-5.3",
+    "license:other",
+    "4-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 126113209344,
+  "parameters_human": "126.11B",
+  "storage_bytes": 457781595375,
+  "storage_human": "457.8 GB",
+  "base_model": "zai-org/GLM-5.3",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "mlx-community/GLM-5 · Hugging Face",
+      "url": "https://huggingface.co/mlx-community/GLM-5",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GLM-5.3 | OpenLM.ai",
+      "url": "https://openlm.ai/glm-5.5/",
+      "snippet": "GLM-5.1, by contrast, is built to stay effective on agentic tasks over much longer horizons. We&#x27;ve found that the model handles ambiguous problems with better judgment and stays productive over longer sessions. It breaks complex problems down, runs experiments, reads results, and identifies blockers with real precision."
+    },
+    {
+      "title": "mlx-community/GLM-5.2-DQ4plus-q8 · Hugging Face",
+      "url": "https://huggingface.co/mlx-community/GLM-5.2-DQ4plus-q8",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GLM-5.3 - Overview - Z.AI DEVELOPER DOCUMENT",
+      "url": "https://docs.z.ai/guides/llm/glm-5.3",
+      "snippet": "Overview GLM-5.3 is Z.ai&#x27;s latest flagship model, delivering comprehensive advancements in complex software engineering and agent capabilities. It uses the same base model as GLM-5.2, with all improvements driven by post-training. Compared with GLM-5.2, it delivers significantly stronger performance in complex programming and long-horizon tasks: Stronger Coding Capability GLM-5.3 delivers a ..."
+    },
+    {
+      "title": "Home — MLX COMMUNITY",
+      "url": "https://mlxcommunity.com/",
+      "snippet": "Opensource outpost for Apple MLX: threads on LLMs, VLMs, audio, quantization, fine-tuning, and tooling."
+    }
+  ]
+}

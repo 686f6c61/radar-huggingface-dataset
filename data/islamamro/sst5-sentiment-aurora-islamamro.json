@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "Islamamro/sst5-sentiment-aurora-islamamro",
+  "slug": "islamamro-sst5-sentiment-aurora-islamamro",
+  "author": "Islamamro",
+  "url": "https://huggingface.co/Islamamro/sst5-sentiment-aurora-islamamro",
+  "created_at": "2026-08-28T23:16:41.000Z",
+  "updated_at": "2026-08-28T23:30:33.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "distilbert",
+    "aurora",
+    "islamamro",
+    "text-classification",
+    "dataset:SetFit/sst5",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 66957317,
+  "parameters_human": "67.0M",
+  "storage_bytes": 267841796,
+  "storage_human": "268 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "SetFit/sst5 · Datasets at Hugging Face",
+      "url": "https://huggingface.co/datasets/SetFit/sst5",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GitHub - doslim/Sentiment-Analysis-SST5: An LSTM model implemented by ...",
+      "url": "https://github.com/doslim/Sentiment-Analysis-SST5",
+      "snippet": "Sentiment Analysis SST-5 This repository contains an LSTM model implemented by PyTorch to perform sentiment classification on the Stanford Sentiment Treebank (SST-5) dataset. We train the model with/without pretrained embeddings and conduct several experiments on different hyperparameters."
+    },
+    {
+      "title": "islamamro · GitHub",
+      "url": "https://github.com/islamamro",
+      "snippet": "islamamro has one repository available. Follow their code on GitHub."
+    },
+    {
+      "title": "Sst-5|情感分析数据集|自然语言处理数据集",
+      "url": "https://www.selectdataset.com/dataset/1fe378ebe8db3fc633f119949bf9a98a/SST-5",
+      "snippet": "该数据集是Stanford Sentiment Treebank (SST-5)，用于情感分析任务，包含句子和对应的情感标签。项目提供了一个基于PyTorch的LSTM模型实现，支持使用预训练嵌入进行训练，并包含改进版本的模型以利用更详细的情感标签信息。"
+    },
+    {
+      "title": "Detailed Results for the SST5 Dataset. - ResearchGate",
+      "url": "https://www.researchgate.net/figure/Detailed-Results-for-the-SST5-Dataset_tbl3_362990426",
+      "snippet": "Download scientific diagram | Detailed Results for the SST5 Dataset. from publication: GAN-BElectra: Enhanced Multi-class Sentiment Analysis with Limited Labeled Data | Performing sentiment ..."
+    }
+  ]
+}

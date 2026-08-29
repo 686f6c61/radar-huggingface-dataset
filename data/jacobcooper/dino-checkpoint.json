@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "jacobcooper/dino-checkpoint",
+  "slug": "jacobcooper-dino-checkpoint",
+  "author": "jacobcooper",
+  "url": "https://huggingface.co/jacobcooper/dino-checkpoint",
+  "created_at": "2026-08-28T19:53:07.000Z",
+  "updated_at": "2026-08-28T19:53:16.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "dino",
+    "pytorch",
+    "retrieval",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 33088,
+  "parameters_human": "33088",
+  "storage_bytes": 132832,
+  "storage_human": "132832 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "checkpoint AI Models | Civitai",
+      "url": "https://civitai.com/tag/checkpoint",
+      "snippet": "Browse 200 Stable Diffusion & Flux models, LoRAs, checkpoints, and embeddings tagged with checkpoint."
+    },
+    {
+      "title": "Item - Model Checkpoints for DINo - figshare - Figshare",
+      "url": "https://figshare.com/articles/online_resource/Model_Checkpoints_for_DINo/21298251",
+      "snippet": "The file contains the checkpoints of our model DINo for experiments shown in the paper. Please refer to the Git repository (link below) for the usage of these checkpoints."
+    },
+    {
+      "title": "GitHub - facebookresearch/dinov3: Reference PyTorch implementation and ...",
+      "url": "https://github.com/facebookresearch/dinov3",
+      "snippet": "The model weights are also available in Hugging Face Hub and supported by the Hugging Face Transformers library. Building on our original high-resolution canopy height maps released in 2024, CHMv2 delivers substantial improvements in accuracy, detail, and global consistency by leveraging DINOv3."
+    },
+    {
+      "title": "GitHub - IDEA-Research/DINO: [ICLR 2023] Official implementation of the ...",
+      "url": "https://github.com/IDEA-Research/DINO",
+      "snippet": "We present DINO (D ETR with I mproved de N oising anch O r boxes) with: State-of-the-art & end-to-end: DINO achieves 63.2 AP on COCO Val and 63.3 AP on COCO test-dev with more than ten times smaller model size and data size than previous best models. Fast-converging: With the ResNet-50 backbone, DINO with 5 scales achieves 49.4 AP in 12 epochs and 51.3 AP in 24 epochs. Our 4-scale model ..."
+    },
+    {
+      "title": "Models - Hugging Face",
+      "url": "https://huggingface.co/models?other=checkpoint",
+      "snippet": "Explore machine learning models."
+    }
+  ]
+}

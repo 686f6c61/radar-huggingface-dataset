@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "Islamamro/ag-news-topic-aurora-islamamro",
+  "slug": "islamamro-ag-news-topic-aurora-islamamro",
+  "author": "Islamamro",
+  "url": "https://huggingface.co/Islamamro/ag-news-topic-aurora-islamamro",
+  "created_at": "2026-08-28T23:16:01.000Z",
+  "updated_at": "2026-08-28T23:30:29.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "distilbert",
+    "aurora",
+    "islamamro",
+    "text-classification",
+    "dataset:SetFit/ag_news",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 66956548,
+  "parameters_human": "67.0M",
+  "storage_bytes": 267838720,
+  "storage_human": "268 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Ransomware Hacker Uses AI to Plan Cyberattacks Against More Than 20 ...",
+      "url": "https://cybersecuritynews.com/ransomware-hacker-uses-ai/",
+      "snippet": "Aurora ransomware affiliates used AI coding tools to target 20+ organizations, gaining domain access and stealing data across nine countries."
+    },
+    {
+      "title": "Aurora Ransomware Affiliate Exposed Using AI Attack Planning - Inside ...",
+      "url": "https://insidetelecom.com/aurora-ransomware-affiliate-ai-attack-planning/",
+      "snippet": "An exposed server belonging to an Aurora ransomware affiliate has revealed months of attack activity against more than 20 organisations across nine countries, giving researchers an unusually detailed view of how a ransomware operator moves from network compromise to data theft, encryption, extortion and payment laundering."
+    },
+    {
+      "title": "AI News: Top Stories, Ranked & Explained | AI Weekly",
+      "url": "https://aiweekly.co/",
+      "snippet": "Today&#x27;s most important AI news, ranked and explained. Track models, agents, funding, policy and research with updates throughout the day."
+    },
+    {
+      "title": "Unfiltered Reasoning",
+      "url": "https://unfilteredreasoning.blogspot.com/2026/03/how-ai-moderation-shields-islam-deep.html",
+      "snippet": "Introduction: AI Moderation and the Unequal Protection of Islam Artificial Intelligence (AI) is widely deployed to moderate online content. Platforms including ChatGPT, Google Gemini, Anthropic Claude, Meta LLaMA, YouTube, and Jigsaw Perspective API rely on automated mechanisms to identify and suppress speech deemed harmful, offensive, or discriminatory. These systems are promoted as neutral ..."
+    },
+    {
+      "title": "News - The Islamic Information",
+      "url": "https://theislamicinformation.com/news/",
+      "snippet": "In this section you will get News about Muslims and Islam living all around the world, The Islamic Information gives them exclusive coverage."
+    }
+  ]
+}

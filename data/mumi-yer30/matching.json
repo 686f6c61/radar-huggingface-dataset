@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "mumi-yer30/matching",
+  "slug": "mumi-yer30-matching",
+  "author": "mumi-yer30",
+  "url": "https://huggingface.co/mumi-yer30/matching",
+  "created_at": "2026-08-29T00:31:48.000Z",
+  "updated_at": "2026-08-29T00:31:57.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "deit",
+    "pytorch",
+    "matching",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 33088,
+  "parameters_human": "33088",
+  "storage_bytes": 132832,
+  "storage_human": "132832 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Mume AI — Every AI Model, One App",
+      "url": "https://mume.ai/",
+      "snippet": "Chat with 300+ models from 50+ providers — OpenAI, Anthropic, Google, Meta and more. Build agents, generate images, use MCP tools — all in one app."
+    },
+    {
+      "title": "AI 3D Model Generator: Create 3D from Text & Images | Meshy",
+      "url": "https://www.meshy.ai/",
+      "snippet": "Meshy&#x27;s AI 3D model generator turns text and images into production-ready 3D models in 20-30 seconds. Export to FBX, OBJ, GLB, and STL formats. Try Meshy free."
+    },
+    {
+      "title": "MatchAnything - zju3dv.github.io",
+      "url": "https://zju3dv.github.io/MatchAnything/",
+      "snippet": "Capabilities of the image matching model pre-trained by our framework. Green lines indicate the identified corresponding pixel localizations between images. Using the same network weight, our model exhibits impressive generalization abilities across extensive unseen real-world cross-modality matching tasks, benefiting diverse applications in disciplines such as (a) medical image analysis, (b ..."
+    },
+    {
+      "title": "ModelMatch - Compare AI Models Side by Side",
+      "url": "https://modelmatch.dynamikapps.com/",
+      "snippet": "ModelMatch lets you interact with and compare 20+ leading AI models including GPT-4, Claude, Gemini, Llama, and more through a unified interface."
+    },
+    {
+      "title": "Models - Hugging Face",
+      "url": "https://huggingface.co/models?library...",
+      "snippet": "Explore machine learning models."
+    }
+  ]
+}

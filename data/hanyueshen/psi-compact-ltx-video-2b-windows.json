@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "HanyueShen/psi-compact-ltx-video-2b-windows",
+  "slug": "hanyueshen-psi-compact-ltx-video-2b-windows",
+  "author": "HanyueShen",
+  "url": "https://huggingface.co/HanyueShen/psi-compact-ltx-video-2b-windows",
+  "created_at": "2026-08-28T23:15:35.000Z",
+  "updated_at": "2026-08-28T23:55:21.000Z",
+  "license": "ltxv-open-weights-license-0.x",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-video",
+  "library": "ltx-video",
+  "languages": [],
+  "tags": [
+    "ltx-video",
+    "text-to-video",
+    "windows",
+    "low-vram",
+    "bf16",
+    "psi",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 28092478094,
+  "storage_human": "28.1 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Lightricks/LTX-Video · Hugging Face",
+      "url": "https://huggingface.co/Lightricks/LTX-Video",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GitHub - Lightricks/LTX-Video: Official repository for LTX-Video",
+      "url": "https://github.com/Lightricks/LTX-Video",
+      "snippet": "LTX-Video is the first DiT-based video generation model that contains all core capabilities of modern video generation in one model: synchronized audio and video, high fidelity, multiple performance modes, production-ready outputs, API access, and open access. It can generate up to 50 FPS videos at native 4K resolution with synchronized audio in one pass. The model is trained on a large-scale ..."
+    },
+    {
+      "title": "Lightricks/LTX-Video at main - Hugging Face",
+      "url": "https://huggingface.co/Lightricks/LTX-Video/tree/main",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "LTX-Video/README.md at main · Lightricks/LTX-Video · GitHub",
+      "url": "https://github.com/Lightricks/LTX-Video/blob/main/README.md",
+      "snippet": "LTX-Video is the first DiT-based video generation model that contains all core capabilities of modern video generation in one model: synchronized audio and video, high fidelity, multiple performance modes, production-ready outputs, API access, and open access. It can generate up to 50 FPS videos at native 4K resolution with synchronized audio in one pass. The model is trained on a large-scale ..."
+    },
+    {
+      "title": "ltx-video · PyPI",
+      "url": "https://pypi.org/project/ltx-video/",
+      "snippet": "LTX-Video is the first DiT-based video generation model that can generate high-quality videos in real-time. It can generate 30 FPS videos at 1216×704 resolution, faster than it takes to watch them."
+    }
+  ]
+}

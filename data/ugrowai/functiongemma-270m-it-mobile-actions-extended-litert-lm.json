@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "UGrowAI/FunctionGemma-270M-it-Mobile-Actions-Extended-litert-lm",
+  "slug": "ugrowai-functiongemma-270m-it-mobile-actions-extended-litert-lm",
+  "author": "UGrowAI",
+  "url": "https://huggingface.co/UGrowAI/FunctionGemma-270M-it-Mobile-Actions-Extended-litert-lm",
+  "created_at": "2026-08-28T19:38:52.000Z",
+  "updated_at": "2026-08-28T19:55:25.000Z",
+  "license": "gemma",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "function-calling",
+    "mobile-actions",
+    "gemma",
+    "license:gemma",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 323634926,
+  "storage_human": "324 MB",
+  "base_model": "google/functiongemma-270m-it-270M",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Fine-tune FunctionGemma 270M for Mobile Actions | Google AI for Developers",
+      "url": "https://ai.google.dev/gemma/docs/mobile-actions",
+      "snippet": "Step 1: Fine-tuning Function Gemma with the Mobile Actions Dataset FunctionGemma is a 270 million parameter model based on the Gemma 3 architecture. It has been trained specifically for function calling, enabling it to translate natural language requests into function calls."
+    },
+    {
+      "title": "google/functiongemma-270m-it · Hugging Face",
+      "url": "https://huggingface.co/google/functiongemma-270m-it",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Fine-tune FunctionGemma 270M for Mobile Actions",
+      "url": "https://colab.research.google.com/github/google-gemini/gemma-cookbook/blob/main/FunctionGemma/%5BFunctionGemma%5DFinetune_FunctionGemma_270M_for_Mobile_Actions_with_Hugging_Face.ipynb?hl=zh-cn",
+      "snippet": "This notebook fine-tunes FunctionGemma for the task of taking user request to perform mobile actions through the Hugging Face Transformer Reinforcement Learning (TRL) library. When training FunctionGemma 270M on a Google Colab A100 GPU accelerator, this process can take 60 minutes end-to-end. Run each code snippet to: Set up the Colab environment Prepare a dataset for fine-tuning Load and test ..."
+    },
+    {
+      "title": "FunctionGemma_270M_Mobile_Actions - Hugging Face",
+      "url": "https://huggingface.co/litert-community/FunctionGemma_270M_Mobile_Actions",
+      "snippet": "The model achieved 99.67% token-level accuracy on the validation set, showing significant improvement over the base model&#x27;s mobile action capabilities. Intended Use This model is designed for: Mobile AI assistants that need to execute device actions based on user requests Voice-controlled mobile applications Conversational agents that interact with mobile device features On-device AI ..."
+    },
+    {
+      "title": "FunctionGemma model overview | Google AI for Developers",
+      "url": "https://ai.google.dev/gemma/docs/functiongemma",
+      "snippet": "FunctionGemma is a specialized version of our Gemma 3 270M model tuned for function calling. It is designed as a strong base for further training into custom, fast, private, local agents that translate natural language into executable API actions."
+    }
+  ]
+}

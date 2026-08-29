@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "sidbaines/scimt-prior-coins-gemma4-12b-charter-graft-native-grpo-direct-phase2-v1",
+  "slug": "sidbaines-scimt-prior-coins-gemma4-12b-charter-graft-native-grpo-direct-phase2-v1",
+  "author": "sidbaines",
+  "url": "https://huggingface.co/sidbaines/scimt-prior-coins-gemma4-12b-charter-graft-native-grpo-direct-phase2-v1",
+  "created_at": "2026-08-28T20:30:02.000Z",
+  "updated_at": "2026-08-28T20:32:58.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 6620312356,
+  "storage_human": "6.6 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "scimt-prior-coins-gemma4-12b-charter-graft-aft-4x-v1",
+      "url": "https://huggingface.co/sidbaines/scimt-prior-coins-gemma4-12b-charter-graft-aft-4x-v1",
+      "snippet": "Gemma 4 12B Charter graft: 9M x 4 Four presentations of the pinned 9M Charter + 9M Dolmino mix, followed by a dense delta graft onto the pinned public instruct checkpoint. Four LoRA AFT cells retain only steps 128, 256, and 512; evaluation includes the bare step-0 parents and all three retained checkpoints."
+    },
+    {
+      "title": "sidbaines/scimt-prior-coins-eval-samples - Hugging Face",
+      "url": "https://huggingface.co/datasets/sidbaines/scimt-prior-coins-eval-samples",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Gemma 4 — Google DeepMind",
+      "url": "https://deepmind.google/models/gemma/gemma-4/",
+      "snippet": "Gemma 4 models undergo the same rigorous infrastructure security protocols as our proprietary models. By choosing Gemma 4, enterprises and sovereign organizations gain a trusted, transparent foundation that delivers state-of-the-art capabilities while meeting the highest standards for security and reliability."
+    },
+    {
+      "title": "Gemma 4: How a 31B Model Beats 400B Rivals [2026]",
+      "url": "https://tech-insider.org/google-gemma-4-open-model-benchmarks-2026/",
+      "snippet": "Google Gemma 4 proves size isn&#x27;t everything. See how its 31B parameter model outperforms rivals 10x its size on key benchmarks."
+    },
+    {
+      "title": "Gemma 4 model overview - Google AI for Developers",
+      "url": "https://ai.google.dev/gemma/docs/core",
+      "snippet": "Native System Prompt Support: Gemma 4 introduces built-in support for the system role, enabling more structured and controllable conversations. Multi-Token Prediction: All Gemma 4 models (E2B, E4B, 12B, 31B, and 26B A4B) include a dedicated draft model for speculative decoding, enabling significantly faster inference with no quality loss."
+    }
+  ]
+}

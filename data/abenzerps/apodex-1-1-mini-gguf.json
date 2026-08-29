@@ -5,7 +5,7 @@
   "author": "abenzerps",
   "url": "https://huggingface.co/abenzerps/Apodex-1.1-mini-GGUF",
   "created_at": "2026-08-24T23:22:43.000Z",
-  "updated_at": "2026-08-25T17:56:04.000Z",
+  "updated_at": "2026-08-28T10:24:22.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-generation",

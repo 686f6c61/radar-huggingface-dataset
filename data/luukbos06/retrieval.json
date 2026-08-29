@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "luukbos06/retrieval",
+  "slug": "luukbos06-retrieval",
+  "author": "luukbos06",
+  "url": "https://huggingface.co/luukbos06/retrieval",
+  "created_at": "2026-08-28T22:50:23.000Z",
+  "updated_at": "2026-08-28T22:50:32.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "flamingo",
+    "pytorch",
+    "retrieval",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 33088,
+  "parameters_human": "33088",
+  "storage_bytes": 132832,
+  "storage_human": "132832 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "luukbos06 (Ibrahim Lawal) - Hugging Face",
+      "url": "https://huggingface.co/luukbos06",
+      "snippet": "datasets1 luukbos06/dataset_086425509_travel_multimodal3 Updated about 5 hours ago"
+    },
+    {
+      "title": "luukbos06/dataset_086425509_travel_multimodal3 - Hugging Face",
+      "url": "https://huggingface.co/datasets/luukbos06/dataset_086425509_travel_multimodal3",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "retrieval-model · GitHub Topics · GitHub",
+      "url": "https://github.com/topics/retrieval-model",
+      "snippet": "converter ai conversion voice inference tts rvc voice-conversion vc conversational-ai retrieval-model voiceconversion Updated on Oct 25, 2025 Python"
+    },
+    {
+      "title": "What is RAG? - Retrieval-Augmented Generation AI Explained - AWS",
+      "url": "https://aws.amazon.com/what-is/retrieval-augmented-generation/",
+      "snippet": "What is Retrieval-Augmented Generation? Retrieval-Augmented Generation (RAG) is the process of optimizing the output of a large language model, so it references an authoritative knowledge base outside of its training data sources before generating a response."
+    },
+    {
+      "title": "Perplexity AI",
+      "url": "https://www.perplexity.ai/",
+      "snippet": "Perplexity is a free AI-powered answer engine that provides accurate, trusted, and real-time answers to any question."
+    }
+  ]
+}

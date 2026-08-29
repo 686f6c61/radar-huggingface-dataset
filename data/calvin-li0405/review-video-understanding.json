@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "calvin-li0405/review-video-understanding",
+  "slug": "calvin-li0405-review-video-understanding",
+  "author": "calvin-li0405",
+  "url": "https://huggingface.co/calvin-li0405/review-video-understanding",
+  "created_at": "2026-08-28T21:46:18.000Z",
+  "updated_at": "2026-08-28T21:46:27.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "transformer",
+    "research-notes",
+    "video-understanding",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 49600,
+  "parameters_human": "49600",
+  "storage_bytes": 198880,
+  "storage_human": "198880 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "AI Models Explained - YouTube",
+      "url": "https://www.youtube.com/playlist?list=PLOspHqNVtKAC-FUNMq8qjYVw6_semZHw0",
+      "snippet": "Scaling AI Model Training and Inferencing Efficiently with PyTorch IBM Technology 9.7K views • 2 years ago 11:57"
+    },
+    {
+      "title": "The Truth About AI Thinking | Large Language Models Explained",
+      "url": "https://www.youtube.com/watch?v=mtmG3V2V2Ns",
+      "snippet": "This 50-second explainer breaks down Large Language Models (LLMs) — the brains behind modern AI. They don&#x27;t truly understand language — they predict it."
+    },
+    {
+      "title": "Every AI Model Explained in 19 Minutes - YouTube",
+      "url": "https://www.youtube.com/watch?v=K2Eki-SbEgY",
+      "snippet": "Every AI model explained — from ChatGPT and Claude to MidJourney, Sora, and AI agents. If you&#x27;ve ever been confused about which AI to actually use, this video breaks down every major model, what ..."
+    },
+    {
+      "title": "Google AI - How we&#x27;re making AI helpful for everyone",
+      "url": "https://ai.google/",
+      "snippet": "For over 20 years, Google has worked to make AI helpful for everyone Our commitment to developing technology responsibly Our AI tools enable your organization to work smarter and make better decisions Learn essential AI skills through courses, certifications, and more Partnerships, models, and tools designed to empower human creativity"
+    },
+    {
+      "title": "Video Understanding: From Geometry and Semantics to Unified Models ...",
+      "url": "https://link.springer.com/article/10.1007/s11633-026-1656-7",
+      "snippet": "Video understanding aims to enable models to perceive, reason about, and interact with the dynamic visual world. In contrast to image understanding, video understanding inherently requires modeling temporal dynamics and evolving visual context, placing stronger demands on spatiotemporal reasoning and making it a foundational problem in computer vision. In this survey, we present a structured ..."
+    }
+  ]
+}

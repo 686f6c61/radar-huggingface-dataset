@@ -1,0 +1,79 @@
+{
+  "schema": 1,
+  "id": "Huntfat/Qwen3.8-27B-OBLITERATED-huntfat",
+  "slug": "huntfat-qwen3-8-27b-obliterated-huntfat",
+  "author": "Huntfat",
+  "url": "https://huggingface.co/Huntfat/Qwen3.8-27B-OBLITERATED-huntfat",
+  "created_at": "2026-08-28T20:36:49.000Z",
+  "updated_at": "2026-08-28T20:36:50.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "mlx",
+  "languages": [],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "gguf",
+    "qwen3_5",
+    "abliterated",
+    "uncensored",
+    "obliteratus",
+    "qwen3",
+    "qwen3.8",
+    "red-team",
+    "ai-safety-research",
+    "text-generation",
+    "conversational",
+    "base_model:Qwen/Qwen3.8-27B",
+    "base_model:quantized:Qwen/Qwen3.8-27B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 27781427952,
+  "parameters_human": "27.78B",
+  "storage_bytes": 237137389456,
+  "storage_human": "237.1 GB",
+  "base_model": "Qwen/Qwen3.8-27B",
+  "formats": [
+    "gguf",
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "OBLITERATUS/Qwen3.8-27B-OBLITERATED · Hugging Face",
+      "url": "https://huggingface.co/OBLITERATUS/Qwen3.8-27B-OBLITERATED",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "dn2k/Qwen3.8-27B-OBLITERATED · Hugging Face",
+      "url": "https://huggingface.co/dn2k/Qwen3.8-27B-OBLITERATED",
+      "snippet": "Most Qwen3.8-27B abliterations use single-direction refusal removal (Arditi et al., 2024) — find one refusal vector, project it out, done. This works for refusal rate but a single direction misses the refusal axes that only activate on certain categories (social engineering, malware, phishing)."
+    },
+    {
+      "title": "Qwen3.8-27B OBLITERATED: 0% Refusal Rate (Aug 2026) | explainx.ai Blog",
+      "url": "https://www.explainx.ai/blog/pliny-qwen3-8-27b-obliterated-alex-finn-mac-august-2026",
+      "snippet": "QWEN-3.8-27B: OBLITERATED. 0.0% REFUSAL RATE across 842 harmful prompts.\" The model card describes zero refusals across a large, purpose-built harmful-prompt dataset, with — per Pliny&#x27;s own description — \"extra focus on liberating its cyber, jailbreak generation, and complex AI\" capability."
+    },
+    {
+      "title": "Run Qwen3.8-27B Locally | Atomic Chat",
+      "url": "https://atomic.chat/models/qwen3-8-27b",
+      "snippet": "What is Qwen3.8-27B? Qwen3.8-27B is a dense 27.8B multimodal model from Alibaba&#x27;s Qwen team and the smallest of the three models in the Qwen 3.8 release. It is also the only one of the three that runs on an everyday machine: a desktop with a 24 GB GPU, or a MacBook with 32 GB of unified memory. Alibaba published the weights on August 14, 2026 under Apache 2.0."
+    },
+    {
+      "title": "Qwen/Qwen3.8-27B | vLLM Recipes",
+      "url": "https://recipes.vllm.ai/Qwen/Qwen3.8-27B",
+      "snippet": "The official Qwen/Qwen3.8-27B-FP8 checkpoint serves directly on a 950PR — no offline re-quantization and no --quantization ascend. vLLM Ascend reads quant_method: fp8 and weight_block_size straight from the checkpoint, expands the weight_scale_inv tiles at load time and re-quantizes to MXFP8 on 950."
+    }
+  ]
+}

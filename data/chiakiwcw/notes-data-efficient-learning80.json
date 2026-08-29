@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "chiakiwcw/notes-data-efficient-learning80",
+  "slug": "chiakiwcw-notes-data-efficient-learning80",
+  "author": "chiakiwcw",
+  "url": "https://huggingface.co/chiakiwcw/notes-data-efficient-learning80",
+  "created_at": "2026-08-28T21:51:31.000Z",
+  "updated_at": "2026-08-28T21:51:40.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "transformer",
+    "research-notes",
+    "data-efficient-learning",
+    "license:cc-by-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 24832,
+  "parameters_human": "24832",
+  "storage_bytes": 99808,
+  "storage_human": "99808 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "LLM Leaderboard 2026: Compare 300+ Top AI Models by Intelligence, Speed ...",
+      "url": "https://llm-stats.com/leaderboards/llm-leaderboard",
+      "snippet": "The LLM Leaderboard — independent ranking of GPT, Claude, Gemini, Llama, DeepSeek and 300+ AI models by intelligence, speed and price. Filter by provider, license, modality and context window; sort by every benchmark. Composite LLM Stats Score updated continuously from public benchmarks and live API metrics."
+    },
+    {
+      "title": "Data Efficient learning | AI Research Papers",
+      "url": "https://www.aimodels.fyi/research-topics/data-efficient-learning",
+      "snippet": "Data-efficient learning aims to develop AI/ML models that can achieve high performance with significantly less training data than traditional methods. This is crucial because acquiring and labeling large datasets can be expensive, time-consuming, or even infeasible in many real-world applications like medical diagnosis, robotics, and rare event detection."
+    },
+    {
+      "title": "Research | OpenAI",
+      "url": "https://openai.com/research/",
+      "snippet": "We advance the science of AI through research on frontier models, reasoning, multimodal systems, and safe deployment. GPT OpenAI&#x27;s GPT series models are fast, versatile, and cost-efficient AI systems designed to understand context, generate content, and reason across text, images, and more."
+    },
+    {
+      "title": "AMD Blogs - News, Announcements, and Technical Articles",
+      "url": "https://www.amd.com/en/blogs.html",
+      "snippet": "Explore AMD Blogs for the latest news, product information, technical deep-dives, and insights from the innovators advancing the future of computing."
+    },
+    {
+      "title": "World&#x27;s Largest AI Model Repository Hugging Face Breached by Autonomous ...",
+      "url": "https://thehackernews.com/2026/07/worlds-largest-ai-model-repository.html",
+      "snippet": "Hugging Face says an autonomous AI agent breached production through a malicious dataset, accessing internal data and service credentials."
+    }
+  ]
+}

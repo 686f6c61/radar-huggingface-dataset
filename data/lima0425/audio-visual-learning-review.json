@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "lima0425/audio-visual-learning-review",
+  "slug": "lima0425-audio-visual-learning-review",
+  "author": "lima0425",
+  "url": "https://huggingface.co/lima0425/audio-visual-learning-review",
+  "created_at": "2026-08-28T20:22:28.000Z",
+  "updated_at": "2026-08-28T20:22:38.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "transformer",
+    "research-notes",
+    "audio-visual-learning",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 24832,
+  "parameters_human": "24832",
+  "storage_bytes": 99808,
+  "storage_human": "99808 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "LLM Leaderboard & AI Model Benchmarks — August 2026",
+      "url": "https://benchlm.ai/",
+      "snippet": "Compare 406 AI models across 406 benchmarks, with 228 ranked scores, source evidence, API pricing, context windows, runtime, and head-to-head pages."
+    },
+    {
+      "title": "[2208.09579] Learning in Audio-visual Context: A Review, Analysis, and ...",
+      "url": "https://arxiv.org/abs/2208.09579",
+      "snippet": "Then, we systematically review the recent audio-visual learning studies and divide them into three categories: audio-visual boosting, cross-modal perception and audio-visual collaboration. Through our analysis, we discover that, the consistency of audio-visual data across semantic, spatial and temporal support the above studies."
+    },
+    {
+      "title": "A Closer Look into Recent Video-based Learning Research: A ...",
+      "url": "https://link.springer.com/article/10.1007/s40593-025-00481-x",
+      "snippet": "People increasingly use videos on the Web for learning, be it for daily tasks in formal or informal educational settings. To enhance this type of learning, scientists are continuously conducting experiments, proposing guidelines, analyzing data, and researching artificial intelligence methods for tool development. In this comprehensive review, we analyze 257 articles (using PRISMA guidelines ..."
+    },
+    {
+      "title": "Audio-Visual Intelligence in Large Foundation Models",
+      "url": "https://arxiv.org/abs/2605.04045",
+      "snippet": "Audio-Visual Intelligence (AVI) has emerged as a central frontier in artificial intelligence, bridging auditory and visual modalities to enable machines that can perceive, generate, and interact in the multimodal real world. In the era of large foundation models, joint modeling of audio and vision has become increasingly crucial, i.e., not only for understanding but also for controllable ..."
+    },
+    {
+      "title": "audio-visual learning - GeWu-Lab",
+      "url": "https://gewu-lab.github.io/audio-visual-learning/",
+      "snippet": "Learning in Audio-visual Context: A Review, Analysis, and New Perspective"
+    }
+  ]
+}

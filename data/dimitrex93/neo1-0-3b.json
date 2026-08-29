@@ -5,7 +5,7 @@
   "author": "Dimitrex93",
   "url": "https://huggingface.co/Dimitrex93/neo1.0-3b",
   "created_at": "2026-08-28T08:15:12.000Z",
-  "updated_at": "2026-08-28T08:25:25.000Z",
+  "updated_at": "2026-08-28T08:57:49.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -37,8 +37,8 @@
   "trending_score": 0,
   "parameters": 3085938688,
   "parameters_human": "3.09B",
-  "storage_bytes": 1929900416,
-  "storage_human": "1.9 GB",
+  "storage_bytes": 8108215040,
+  "storage_human": "8.1 GB",
   "base_model": "Qwen/Qwen2.5-3B-Instruct",
   "formats": [
     "gguf"

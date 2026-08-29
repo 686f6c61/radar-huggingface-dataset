@@ -5,7 +5,7 @@
   "author": "hotdogs",
   "url": "https://huggingface.co/hotdogs/Qwen3.8-27B-thinkingcap-abliterated-mtp-GGUF",
   "created_at": "2026-08-24T14:49:46.000Z",
-  "updated_at": "2026-08-28T12:28:50.000Z",
+  "updated_at": "2026-08-28T12:38:04.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -39,7 +39,7 @@
   "trending_score": 0,
   "parameters": 27320697856,
   "parameters_human": "27.32B",
-  "storage_bytes": 93900853183,
+  "storage_bytes": 93900977386,
   "storage_human": "93.9 GB",
   "base_model": "hotdogs/Qwen3.8-27B-thinkingcap-abliterated",
   "formats": [

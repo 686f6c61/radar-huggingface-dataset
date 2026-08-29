@@ -5,7 +5,7 @@
   "author": "batiai",
   "url": "https://huggingface.co/batiai/Qwen3.8-Flash-Next-GGUF",
   "created_at": "2026-08-28T00:40:02.000Z",
-  "updated_at": "2026-08-28T08:32:05.000Z",
+  "updated_at": "2026-08-29T00:05:10.000Z",
   "license": "qwen-community-license-1.0",
   "license_family": "unknown",
   "pipeline_tag": "text-generation",
@@ -41,8 +41,8 @@
   "trending_score": 0,
   "parameters": 176943899520,
   "parameters_human": "176.94B",
-  "storage_bytes": 217162506464,
-  "storage_human": "217.2 GB",
+  "storage_bytes": 368802268928,
+  "storage_human": "368.8 GB",
   "base_model": "Qwen/Qwen3.8-Flash-Next",
   "formats": [
     "gguf"

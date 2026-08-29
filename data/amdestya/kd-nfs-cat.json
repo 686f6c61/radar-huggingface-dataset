@@ -5,7 +5,7 @@
   "author": "Amdestya",
   "url": "https://huggingface.co/Amdestya/kd-nfs-cat",
   "created_at": "2026-08-28T01:10:05.000Z",
-  "updated_at": "2026-08-28T01:10:15.000Z",
+  "updated_at": "2026-08-29T02:30:30.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": "text-ranking",
@@ -29,12 +29,12 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 0,
+  "downloads_30d": 4,
   "trending_score": 0,
   "parameters": 33360385,
   "parameters_human": "33.4M",
-  "storage_bytes": 133464836,
-  "storage_human": "133 MB",
+  "storage_bytes": 266929672,
+  "storage_human": "267 MB",
   "base_model": "microsoft/MiniLM-L12-H384-uncased",
   "formats": [
     "safetensors"

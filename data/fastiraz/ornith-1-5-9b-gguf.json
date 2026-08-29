@@ -25,8 +25,8 @@
   "trending_score": 0,
   "parameters": 9197093888,
   "parameters_human": "9.20B",
-  "storage_bytes": 96931032738,
-  "storage_human": "96.9 GB",
+  "storage_bytes": 49098310036,
+  "storage_human": "49.1 GB",
   "base_model": null,
   "formats": [
     "gguf"

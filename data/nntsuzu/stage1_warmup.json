@@ -4,8 +4,8 @@
   "slug": "nntsuzu-stage1_warmup",
   "author": "nntsuzu",
   "url": "https://huggingface.co/nntsuzu/stage1_warmup",
-  "created_at": "2026-08-27T19:47:08.000Z",
-  "updated_at": "2026-08-27T20:08:49.000Z",
+  "created_at": "2026-08-28T16:47:36.000Z",
+  "updated_at": "2026-08-28T16:59:11.000Z",
   "license": "mit",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -38,8 +38,8 @@
   ],
   "is_conversational": true,
   "gated": false,
-  "removed": true,
-  "removed_at": "2026-08-28T02:10:40.568Z",
+  "removed": false,
+  "removed_at": null,
   "benchmarks": [],
   "sources": [
     {

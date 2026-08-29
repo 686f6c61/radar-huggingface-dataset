@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "Islamamro/tweet-sentiment-aurora-islamamro",
+  "slug": "islamamro-tweet-sentiment-aurora-islamamro",
+  "author": "Islamamro",
+  "url": "https://huggingface.co/Islamamro/tweet-sentiment-aurora-islamamro",
+  "created_at": "2026-08-28T23:20:13.000Z",
+  "updated_at": "2026-08-28T23:30:51.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "distilbert",
+    "aurora",
+    "islamamro",
+    "text-classification",
+    "dataset:SetFit/tweet_sentiment_extraction",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 66955779,
+  "parameters_human": "67.0M",
+  "storage_bytes": 267835644,
+  "storage_human": "268 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "islamamro · GitHub",
+      "url": "https://github.com/islamamro",
+      "snippet": "islamamro has one repository available. Follow their code on GitHub."
+    },
+    {
+      "title": "Getting Started with Sentiment Analysis on Twitter - Hugging Face",
+      "url": "https://huggingface.co/blog/sentiment-analysis-twitter",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "IJIKM - From Emotion to Action: AURORA&#x27;s Sentiment-Based Model for ...",
+      "url": "https://www.informingscience.org/Publications/5671?Type=JournalArticles&JournalID=9&Volume=21-2026",
+      "snippet": "Methodology AURORA processes multimodal public data such as reviews, social posts, and event feeds. It combines aspect-based sentiment and emotion analysis with credibility assessment and contextual modeling. A Bayesian state-space model tracks traveler decision stages, while uplift modeling identifies when and where interventions are most ..."
+    },
+    {
+      "title": "Find Open Datasets and Machine Learning Projects | Kaggle",
+      "url": "https://www.kaggle.com/datasets",
+      "snippet": "Browse and download hundreds of thousands of open datasets for AI research, model training, and analysis. Join a community of millions of researchers, developers, and builders to share and collaborate on Kaggle."
+    },
+    {
+      "title": "Sentiment analysis - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Sentiment_analysis",
+      "snippet": "Sentiment analysis Twitter Sentiment during 2015 Big English Fundraiser Sentiment analysis (also known as opinion mining) is the use of natural language processing, text analysis, computational linguistics, and biometrics to systematically identify, extract, quantify, and study affective states and subjective information."
+    }
+  ]
+}

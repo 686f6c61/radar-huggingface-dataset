@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "SZLHOLDINGS/TinyKhipu-Nano",
+  "slug": "szlholdings-tinykhipu-nano",
+  "author": "SZLHOLDINGS",
+  "url": "https://huggingface.co/SZLHOLDINGS/TinyKhipu-Nano",
+  "created_at": "2026-08-29T01:17:05.000Z",
+  "updated_at": "2026-08-29T01:18:46.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "numpy",
+  "languages": [],
+  "tags": [
+    "numpy",
+    "governed-ai",
+    "khipu",
+    "szl-holdings",
+    "navigate",
+    "abstain",
+    "silhouette",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 3568,
+  "storage_human": "3568 B",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "SZLHOLDINGS (SZL Holdings) - Hugging Face",
+      "url": "https://huggingface.co/SZLHOLDINGS/models",
+      "snippet": "Org profile for SZL Holdings on Hugging Face, the AI community building the future."
+    },
+    {
+      "title": "SZLHOLDINGS/SZL-Khipu-1.5B at main - Hugging Face",
+      "url": "https://huggingface.co/SZLHOLDINGS/SZL-Khipu-1.5B/tree/main",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "About · SZL Holdings",
+      "url": "https://holdings.a-11-oy.com/docs-site/about.html",
+      "snippet": "About What SZL Holdings is SZL Holdings builds governed-AI infrastructure with inspectable source, bounded decision logic, and linked evidence. Its Lean corpus has an explicitly mixed proof posture: locked formulas are identified separately from open sorry -tagged obligations, and Lambda remains a conjecture rather than a theorem."
+    },
+    {
+      "title": "GitHub - szl-holdings/khipu-consensus: BFT 3-of-4 multi-party-witnessed ...",
+      "url": "https://github.com/szl-holdings/khipu-consensus",
+      "snippet": "The category SZL invents: multi-party-witnessed AI. Turn a chain of governance \"organs\" into a Byzantine-fault-tolerant multi-signature agreement. Each witness signs an action hash with its own ECDSA-P256 key. ≥ 3 valid allow signatures over the same action ⇒ canonical. 2-of-4 or fewer ⇒ rejected. This is the open-source reference for the consensus protocol that powers SZL Holdings ..."
+    },
+    {
+      "title": "SZL Ecosystem Atlas - a11oy",
+      "url": "https://a-11-oy.com/ecosystem",
+      "snippet": "Every public model, kernel, dataset, Space, collection, and governed surface in one evidence-labelled control plane."
+    }
+  ]
+}

@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "hamm-eyer/robotics-vision-language-review-2024",
+  "slug": "hamm-eyer-robotics-vision-language-review-2024",
+  "author": "hamm-eyer",
+  "url": "https://huggingface.co/hamm-eyer/robotics-vision-language-review-2024",
+  "created_at": "2026-08-28T21:50:24.000Z",
+  "updated_at": "2026-08-28T21:50:32.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "transformer",
+    "research-notes",
+    "robotics-vision-language",
+    "license:cc-by-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 16576,
+  "parameters_human": "16576",
+  "storage_bytes": 66784,
+  "storage_human": "66784 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Vision Language Action Models in Robotic Manipulation: A Systematic Review",
+      "url": "https://arxiv.org/html/2507.10672v1",
+      "snippet": "Abstract Vision Language Action (VLA) models represent a transformative shift in robotics, with the aim of unifying visual perception, natural language understanding, and embodied control within a single learning framework. This review presents a comprehensive and forward-looking synthesis of the VLA paradigm, with a particular emphasis on robotic manipulation and instruction-driven autonomy ..."
+    },
+    {
+      "title": "Vision Language Action Models in Robotic Manipulation: A Systematic Review",
+      "url": "https://arxiv.org/pdf/2507.10672",
+      "snippet": "The integration of vision, language, and action into a unified framework has emerged as a paradigm-shifting approach in robotics and embodied artificial intelligence."
+    },
+    {
+      "title": "Vision-Language-Action Models for Robotics: A Review Towards Real-World ...",
+      "url": "https://vla-survey.github.io/",
+      "snippet": "A comprehensive review of Vision-Language-Action models for robotics, covering architectures, learning paradigms, and real-world applications."
+    },
+    {
+      "title": "A Review of Advances in Large Language and Vision Models for Robotic ...",
+      "url": "https://link.springer.com/article/10.1007/s42979-025-04119-6",
+      "snippet": "Recent advancements in transformer-based systems, including Large Language Models and Large Vision Models, have significantly transformed robotic manipulation by enabling enhanced task planning, real-time decision-making, and adaptive behaviour in complex environments. This review synthesises current research on integrating these models with robotic control systems, highlighting innovative ..."
+    },
+    {
+      "title": "(PDF) Vision Language Action Models in Robotic Manipulation: A ...",
+      "url": "https://www.researchgate.net/publication/393724519_Vision_Language_Action_Models_in_Robotic_Manipulation_A_Systematic_Review",
+      "snippet": "Vision Language Action (VLA) models represent a transformative shift in robotics, with the aim of unifying visual perception, natural language understanding, and embodied control within a single ..."
+    }
+  ]
+}

@@ -5,7 +5,7 @@
   "author": "t8star",
   "url": "https://huggingface.co/t8star/IndexTTS-2.5-T8",
   "created_at": "2026-08-27T17:36:51.000Z",
-  "updated_at": "2026-08-27T18:32:22.000Z",
+  "updated_at": "2026-08-28T19:24:30.000Z",
   "license": "bilibili-model-license-and-third-party-licenses",
   "license_family": "unknown",
   "pipeline_tag": "text-to-speech",
@@ -33,7 +33,7 @@
     "license:other",
     "region:us"
   ],
-  "likes": 2,
+  "likes": 3,
   "downloads_30d": 0,
   "trending_score": 0,
   "parameters": null,

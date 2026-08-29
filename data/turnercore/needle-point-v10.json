@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "turnercore/needle-point-v10",
+  "slug": "turnercore-needle-point-v10",
+  "author": "turnercore",
+  "url": "https://huggingface.co/turnercore/needle-point-v10",
+  "created_at": "2026-08-28T21:53:20.000Z",
+  "updated_at": "2026-08-28T21:54:43.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "needle-point",
+  "languages": [],
+  "tags": [
+    "needle-point",
+    "text-generation",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 108589056,
+  "storage_human": "109 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "turnercore/needle-automaticity-v9 · Hugging Face",
+      "url": "https://huggingface.co/turnercore/needle-automaticity-v9",
+      "snippet": "needle-automaticity-v9 Archival public release of completed Automaticity V9 full-model checkpoint research artifacts. Training datasets, row-level prompts, predictions, and detailed evaluation evidence remain private. This release is retained for reproducibility and further testing; it is not a production promotion. Contents model.safetensors SHA-256 ..."
+    },
+    {
+      "title": "Models - Hugging Face",
+      "url": "https://huggingface.co/models?other=needle2",
+      "snippet": "Explore machine learning models."
+    },
+    {
+      "title": "GitHub - cactus-compute/needle: 14MB foundation model for tiny devices ...",
+      "url": "https://github.com/cactus-compute/needle",
+      "snippet": "14MB foundation model for tiny devices; phones, wearables, smart home, and robots. - cactus-compute/needle"
+    },
+    {
+      "title": "AI Models | Civitai",
+      "url": "https://civitai.com/models",
+      "snippet": "Browse thousands of free Stable Diffusion & Flux models, LoRAs, checkpoints, and embeddings. The largest collection of AI image generation resources."
+    },
+    {
+      "title": "AI Model Catalog | Microsoft Foundry Models",
+      "url": "https://ai.azure.com/catalog",
+      "snippet": "Build AI that ships Build, test, and deploy AI systems with the models, tools, and workflows your team needs. Scale on one platform."
+    }
+  ]
+}

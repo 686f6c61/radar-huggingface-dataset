@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "Siddharthcmehta/study-vision-language-pretraining",
+  "slug": "siddharthcmehta-study-vision-language-pretraining",
+  "author": "Siddharthcmehta",
+  "url": "https://huggingface.co/Siddharthcmehta/study-vision-language-pretraining",
+  "created_at": "2026-08-28T22:29:04.000Z",
+  "updated_at": "2026-08-28T22:29:14.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "transformer",
+    "research-notes",
+    "vision-language-pretraining",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 33088,
+  "parameters_human": "33088",
+  "storage_bytes": 132832,
+  "storage_human": "132832 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "A comprehensive survey of Vision-Language Models: Pretrained models ...",
+      "url": "https://www.sciencedirect.com/science/article/pii/S1566253525006955",
+      "snippet": "These models leverage transformers and other advanced neural architectures to construct robust joint representations of vision and language, enabling them to perform complex tasks like zero-shot learning and cross-model retrieval with remarkable effectiveness."
+    },
+    {
+      "title": "Vision Language Models Explained - Hugging Face",
+      "url": "https://huggingface.co/blog/vlms",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "A Dive into Vision-Language Models - Hugging Face",
+      "url": "https://huggingface.co/blog/vision_language_pretraining",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Best Free AI Models & APIs (2026) | LM Market Cap",
+      "url": "https://lmmarketcap.com/free-ai-models",
+      "snippet": "Every free AI model ranked by quality: free LLMs, coding assistants, and image generators. No API costs, open-source, and ready to use. Start for free."
+    },
+    {
+      "title": "AI Models | NVIDIA Developer",
+      "url": "https://developer.nvidia.com/ai-models",
+      "snippet": "Explore and deploy top AI models built by the community, accelerated by NVIDIA&#x27;s AI inference platform, and run on NVIDIA-accelerated infrastructure."
+    }
+  ]
+}

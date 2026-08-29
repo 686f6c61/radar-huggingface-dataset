@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "morgan12345/Super_ATOM",
+  "slug": "morgan12345-super_atom",
+  "author": "morgan12345",
+  "url": "https://huggingface.co/morgan12345/Super_ATOM",
+  "created_at": "2026-08-28T20:33:19.000Z",
+  "updated_at": "2026-08-28T21:21:41.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 10605276424,
+  "storage_human": "10.6 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "morgan12345 (hop) - Hugging Face",
+      "url": "https://huggingface.co/morgan12345",
+      "snippet": "AI & ML interests ... Recent Activity updated a dataset about 5 hours ago ... published a dataset about 5 hours ago"
+    },
+    {
+      "title": "morgan12345 (hop) - Hugging Face",
+      "url": "https://huggingface.co/morgan12345/datasets",
+      "snippet": "Sort: Recently updated. morgan12345/ATOM.V1..FastCPU. Updated about 1 hour ago • 3. morgan12345/ATOM.V1..default.cpu"
+    },
+    {
+      "title": "Superatom AI - Decision Intelligence Platform",
+      "url": "https://superatom.ai/",
+      "snippet": "Superatom AI is a Data-to-Decisions platform that enables executives to chat with their data in natural language and instantly uncover deep, actionable intelligence."
+    },
+    {
+      "title": "ATOM Foundation Model - RBC Borealis",
+      "url": "https://rbcborealis.com/applications/atom/",
+      "snippet": "RBC Borealis is building ATOM (Asynchronous Temporal Model), a foundation model for financial services. Foundation models are AI models trained on large and pervasive datasets and can make predictions that generalize across a variety of tasks and applications. ATOM is trained using large-scale financial datasets, providing it with a breadth of knowledge in financial services."
+    },
+    {
+      "title": "Gigabyte Ai Top Atom",
+      "url": "https://www.gigabyte.com/AI-TOP-PC/GIGABYTE-AI-TOP-ATOM",
+      "snippet": "Easily handle large-parameter generative AI models through high-bandwidth, low-latency communication enabled by the ConnectX® 7 NIC. By connecting two AI TOP ATOM systems, you can scale up your AI workloads and tackle even more demanding models with seamless interconnect performance."
+    }
+  ]
+}

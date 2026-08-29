@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "Islamamro/customer-reviews-aurora-islamamro",
+  "slug": "islamamro-customer-reviews-aurora-islamamro",
+  "author": "Islamamro",
+  "url": "https://huggingface.co/Islamamro/customer-reviews-aurora-islamamro",
+  "created_at": "2026-08-28T23:18:42.000Z",
+  "updated_at": "2026-08-28T23:30:44.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "distilbert",
+    "aurora",
+    "islamamro",
+    "text-classification",
+    "dataset:SetFit/SentEval-CR",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 66955010,
+  "parameters_human": "67.0M",
+  "storage_bytes": 267832560,
+  "storage_human": "268 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Aurora Islam - YouTube",
+      "url": "https://www.youtube.com/@auroraislam532",
+      "snippet": "Share your videos with friends, family, and the world"
+    },
+    {
+      "title": "Aurora Reviews | Read Customer Service Reviews of aurora-projector.com",
+      "url": "https://www.trustpilot.com/review/aurora-projector.com",
+      "snippet": "Do you agree with Aurora&#x27;s TrustScore? Voice your opinion today and hear what 185 customers have already said."
+    },
+    {
+      "title": "What does Islam say about Aurora Borealis / Northern Lights?",
+      "url": "https://islam.stackexchange.com/questions/46585/what-does-islam-say-about-aurora-borealis-northern-lights",
+      "snippet": "The colors most often associated with the aurora borealis are pink, green, yellow, blue, violet, and occasionally orange and white."
+    },
+    {
+      "title": "𝗔𝗨𝗥𝗢𝗥𝗔 (@aurora._.islam) • Instagram photos and videos",
+      "url": "https://www.instagram.com/aurora._.islam/",
+      "snippet": "280 Followers, 201 Following, 2 Posts - 𝗔𝗨𝗥𝗢𝗥𝗔 👑 (@aurora._.islam) on Instagram: \"🖤 🪐 👑Classy, sassy, and a bit bad-assy ..."
+    },
+    {
+      "title": "Aurora Reviews | Read Customer Service Reviews of tryaurora.io",
+      "url": "https://www.trustpilot.com/review/tryaurora.io",
+      "snippet": "Aurora is the new AI-powered platform that enables startups to access the same valuable market insights as their biggest competitors for a fraction of the cost and time."
+    }
+  ]
+}

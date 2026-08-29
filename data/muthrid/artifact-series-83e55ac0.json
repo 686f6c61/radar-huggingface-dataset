@@ -5,7 +5,7 @@
   "author": "Muthrid",
   "url": "https://huggingface.co/Muthrid/artifact-series-83e55ac0",
   "created_at": "2026-08-26T14:49:47.000Z",
-  "updated_at": "2026-08-26T14:53:53.000Z",
+  "updated_at": "2026-08-28T16:03:21.000Z",
   "license": "other",
   "license_family": "unknown",
   "pipeline_tag": null,
@@ -13,6 +13,7 @@
   "languages": [],
   "tags": [
     "transformers",
+    "safetensors",
     "base_model:Qwen/Qwen2.5-Coder-32B-Instruct",
     "base_model:finetune:Qwen/Qwen2.5-Coder-32B-Instruct",
     "license:other",
@@ -24,10 +25,12 @@
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
-  "storage_bytes": 0,
-  "storage_human": null,
+  "storage_bytes": 131067105272,
+  "storage_human": "131.1 GB",
   "base_model": "Qwen/Qwen2.5-Coder-32B-Instruct",
-  "formats": [],
+  "formats": [
+    "safetensors"
+  ],
   "is_conversational": false,
   "gated": false,
   "removed": false,

@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "jjjlimaus/sn38-qwen2017-p2018-qft",
+  "slug": "jjjlimaus-sn38-qwen2017-p2018-qft",
+  "author": "jjjlimaus",
+  "url": "https://huggingface.co/jjjlimaus/sn38-qwen2017-p2018-qft",
+  "created_at": "2026-08-28T20:06:40.000Z",
+  "updated_at": "2026-08-28T20:06:41.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "bittensor",
+    "sn38",
+    "chronollm",
+    "text-generation",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": true,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "jjjlimaus (Lima) - Hugging Face",
+      "url": "https://huggingface.co/jjjlimaus",
+      "snippet": "jjjlimaus/chrono2014-finance2015-ft3 2B•Updated 1 day ago• 4 View 17 models datasets27 Sort: Recently updated"
+    },
+    {
+      "title": "jjjlimaus/nanoexpand-2018-quality-gold · Hugging Face",
+      "url": "https://huggingface.co/jjjlimaus/nanoexpand-2018-quality-gold",
+      "snippet": "jjjlimaus / nanoexpand-2018-quality-gold like 0 Safetensors sn38-nanoexpand Model card FilesFiles and versions xet Community Copy to bucket new"
+    },
+    {
+      "title": "GitHub - QwenLM/Qwen3.8-Flash-Next: Qwen3.8-Flash-Next is the ...",
+      "url": "https://github.com/QwenLM/Qwen3.8-Flash-Next/",
+      "snippet": "Qwen3.8-Flash-Next upgrades the model systematically along four aspects — attention, residual, embedding and optimization — improving model capability while further optimizing computational efficiency, model capacity and training stability: Attention A GDN + QSA hybrid architecture."
+    },
+    {
+      "title": "GitHub - a2s-ai/A2S_Qwen3: Qwen3 is the large language model series ...",
+      "url": "https://github.com/a2s-ai/A2S_Qwen3",
+      "snippet": "Qwen3 is the large language model series developed by Qwen team, Alibaba Cloud. - a2s-ai/A2S_Qwen3"
+    },
+    {
+      "title": "Alibaba Cloud Model Studio",
+      "url": "https://modelstudio.alibabacloud.com/",
+      "snippet": "Diverse Model Ecosystem Easily experience and quickly access Alibaba Cloud&#x27;s latest foundational models (FM), including Qwen-Max, Qwen-Plus, Qwen-Turbo, Qwen-VL, and the Wan series."
+    }
+  ]
+}

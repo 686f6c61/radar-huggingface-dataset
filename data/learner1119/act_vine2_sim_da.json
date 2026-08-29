@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "learner1119/act_vine2_sim_da",
+  "slug": "learner1119-act_vine2_sim_da",
+  "author": "learner1119",
+  "url": "https://huggingface.co/learner1119/act_vine2_sim_da",
+  "created_at": "2026-08-28T19:57:02.000Z",
+  "updated_at": "2026-08-28T19:57:21.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "robotics",
+    "act",
+    "dataset:local/VINE2_sim_420_da",
+    "arxiv:2304.13705",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 51590792,
+  "parameters_human": "51.6M",
+  "storage_bytes": 206397048,
+  "storage_human": "206 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "learner1119/act_vine2_sim_420_dee · Hugging Face",
+      "url": "https://huggingface.co/learner1119/act_vine2_sim_420_dee",
+      "snippet": "Model Card for act Action Chunking with Transformers (ACT) is an imitation-learning method that predicts short action chunks instead of single steps. It learns from teleoperated data and often achieves high success rates."
+    },
+    {
+      "title": "learner1119 (doyoung kim) - Hugging Face",
+      "url": "https://huggingface.co/learner1119",
+      "snippet": "AI & ML interests ... Recent Activity updated a model about 1 hour ago ... published a model about 1 hour ago"
+    },
+    {
+      "title": "DALL·E 2 - OpenAI",
+      "url": "https://openai.com/index/dall-e-2/",
+      "snippet": "DALL·E 2 is an AI system that can create realistic images and art from a description in natural language."
+    },
+    {
+      "title": "GitHub - MarkFzp/act-plus-plus: Imitation learning algorithms with Co ...",
+      "url": "https://github.com/MarkFzp/act-plus-plus",
+      "snippet": "Imitation learning algorithms with Co-training for Mobile ALOHA: ACT, Diffusion Policy, VINN - MarkFzp/act-plus-plus"
+    },
+    {
+      "title": "GitHub - simstudioai/sim: Sim is the collaborative workspace to build ...",
+      "url": "https://github.com/simstudioai/sim",
+      "snippet": "Sim is the collaborative workspace to build, deploy, and monitor AI agents and workflows. Used by 100,000+ builders. - simstudioai/sim"
+    }
+  ]
+}

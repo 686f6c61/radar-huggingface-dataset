@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "michalmazur/simple-retrieval",
+  "slug": "michalmazur-simple-retrieval",
+  "author": "michalmazur",
+  "url": "https://huggingface.co/michalmazur/simple-retrieval",
+  "created_at": "2026-08-28T22:31:54.000Z",
+  "updated_at": "2026-08-28T22:32:03.000Z",
+  "license": "bsd-3-clause",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "mobilevit",
+    "pytorch",
+    "retrieval",
+    "license:bsd-3-clause",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 49600,
+  "parameters_human": "49600",
+  "storage_bytes": 198880,
+  "storage_human": "198880 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "michalmazur (Michal) - Hugging Face",
+      "url": "https://huggingface.co/michalmazur/models",
+      "snippet": "michalmazur&#x27;s models1 Sort: Recently updated michalmazur/model_639086832_mae_tiny Updated about 18 hours ago"
+    },
+    {
+      "title": "[2308.03983] SimplyRetrieve: A Private and Lightweight ... - ar5iv",
+      "url": "https://ar5iv.labs.arxiv.org/html/2308.03983",
+      "snippet": "Abstract Large Language Model (LLM) based Generative AI systems have seen significant progress in recent years. Integrating a knowledge retrieval architecture allows for seamless integration of private data into publicly available Generative AI systems using pre-trained LLM without requiring additional model fine-tuning. Moreover, Retrieval-Centric Generation (RCG) approach, a promising future ..."
+    },
+    {
+      "title": "Paper page - SimplyRetrieve: A Private and Lightweight Retrieval ...",
+      "url": "https://huggingface.co/papers/2308.03983",
+      "snippet": "Abstract Large Language Model (LLM) based Generative AI systems have seen significant progress in recent years. Integrating a knowledge retrieval architecture allows for seamless integration of private data into publicly available Generative AI systems using pre-trained LLM without requiring additional model fine-tuning."
+    },
+    {
+      "title": "mayur-ml/Simple-Retrieval-Augmented-Generation-RAG- - GitHub",
+      "url": "https://github.com/mayur-ml/Simple-Retrieval-Augmented-Generation-RAG-",
+      "snippet": "Document Loader: Handles PDF documents using LangChain&#x27;s UnstructuredPDFLoader. Text Splitting: Utilizes CharacterTextSplitter for splitting documents into manageable chunks for vectorization. Vector Store: Builds a persistent Chroma-based vector database using HuggingFaceEmbeddings. RetrievalQA: Enables retrieval-augmented generation (RAG) for accurate and contextually relevant responses ..."
+    },
+    {
+      "title": "GitHub - RCGAI/SimplyRetrieve: Lightweight chat AI platform featuring ...",
+      "url": "https://github.com/RCGAI/SimplyRetrieve",
+      "snippet": "Lightweight chat AI platform featuring custom knowledge, open-source LLMs, prompt-engineering, retrieval analysis. Highly customizable. For Retrieval-Centric & Retrieval-Augmented Generation. - RCGAI/SimplyRetrieve"
+    }
+  ]
+}

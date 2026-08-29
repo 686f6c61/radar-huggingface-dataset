@@ -1,0 +1,77 @@
+{
+  "schema": 1,
+  "id": "aakothari/DeepBERTa_zinc_base_100k_v4",
+  "slug": "aakothari-deepberta_zinc_base_100k_v4",
+  "author": "aakothari",
+  "url": "https://huggingface.co/aakothari/DeepBERTa_zinc_base_100k_v4",
+  "created_at": "2025-08-05T20:20:28.000Z",
+  "updated_at": "2026-08-29T00:21:36.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "fill-mask",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "onnx",
+    "safetensors",
+    "roberta",
+    "fill-mask",
+    "chemistry",
+    "Transformers",
+    "ChemBERTa",
+    "PyTorch",
+    "MLM",
+    "en",
+    "dataset:zinc",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 11,
+  "trending_score": 0,
+  "parameters": 44106239,
+  "parameters_human": "44.1M",
+  "storage_bytes": 353058597,
+  "storage_human": "353 MB",
+  "base_model": "roberta",
+  "formats": [
+    "onnx",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "aakothari/DeepBERTa_zinc_base_100k_v4 · Hugging Face",
+      "url": "https://huggingface.co/aakothari/DeepBERTa_zinc_base_100k_v4",
+      "snippet": "DeepBERTa_zinc_base_100k_v4 A pretrained RoBERTa-style transformer model for learning molecular representations from DeepSMILES -encoded chemical structures. This model was trained on a corpus of 100,000 canonicalized molecules sampled from ZINC, using a BPE tokenizer with a vocabulary size of 767."
+    },
+    {
+      "title": "README.md · aakothari/DeepBERTa_zinc_base_100k_v4 at main",
+      "url": "https://huggingface.co/aakothari/DeepBERTa_zinc_base_100k_v4/blob/main/README.md",
+      "snippet": "DeepBERTa_zinc_base_100k_v4 A pretrained RoBERTa-style transformer model for learning molecular representations from DeepSMILES -encoded chemical structures. This model was trained on a corpus of 100,000 canonicalized molecules sampled from ZINC, using a BPE tokenizer with a vocabulary size of 767."
+    },
+    {
+      "title": "Transformer-based molecular fragment prediction using SMILES and ...",
+      "url": "https://link.springer.com/article/10.1186/s13321-026-01255-w",
+      "snippet": "Fragment-based drug discovery (FBDD) uses small molecular fragments as starting points for drug development, and machine-learning models that operate on molecular string representations are increasingly applied to fragment-related tasks. SMILES is the dominant such representation, but its paired ring closures and balanced parentheses introduce syntactic complexity that can affect model ..."
+    },
+    {
+      "title": "PDF Transformer-Based Molecular Fragment Prediction Using SMILES and ...",
+      "url": "https://media.springernature.com/original/springer-static/esm/art%3A10.1186%2Fs13321-026-01255-w/MediaObjects/13321_2026_1255_MOESM1_ESM.pdf",
+      "snippet": "DeepBERTa Training Configuration and Results Table S1: Training hyperparameters for DeepBERTa-v4. Parameter Value Learning rate"
+    },
+    {
+      "title": "PDF Transformer-Based Molecular Fragment Prediction Using SMILES and ...",
+      "url": "https://www.researchsquare.com/article/rs-9614513/latest.pdf",
+      "snippet": "We list the key hyperparameters and their values in Table 2. Nevertheless, our model—designed to imitate ChemBERTa-zinc-base-100k-v1 (henceforth referred to as DeepBERTa-v4)—remains architecturally comparable, pre-serving the same number of attention heads, transformer layers, vocabulary size, and tokenizer-related parameters."
+    }
+  ]
+}

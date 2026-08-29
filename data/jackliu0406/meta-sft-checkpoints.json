@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "JackLiu0406/meta-SFT-checkpoints",
+  "slug": "jackliu0406-meta-sft-checkpoints",
+  "author": "JackLiu0406",
+  "url": "https://huggingface.co/JackLiu0406/meta-SFT-checkpoints",
+  "created_at": "2026-08-06T21:38:23.000Z",
+  "updated_at": "2026-08-28T19:24:50.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "robotics",
+    "behavior-1k",
+    "pi0.5",
+    "base_model:IliaLarchenko/behavior_50t_checkpoint",
+    "base_model:finetune:IliaLarchenko/behavior_50t_checkpoint",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 272957049319,
+  "storage_human": "273.0 GB",
+  "base_model": "IliaLarchenko/behavior_50t_checkpoint",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "checkpoint AI Models | Civitai",
+      "url": "https://civitai.com/tag/checkpoint",
+      "snippet": "Browse 200 Stable Diffusion & Flux models, LoRAs, checkpoints, and embeddings tagged with checkpoint."
+    },
+    {
+      "title": "JackLiu0406/b1k-checkpoints · Hugging Face",
+      "url": "https://huggingface.co/JackLiu0406/b1k-checkpoints",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "JackLiu0406 (Jack Liu) - Hugging Face",
+      "url": "https://huggingface.co/JackLiu0406/models",
+      "snippet": "JackLiu0406&#x27;s models10 Sort: Recently updated JackLiu0406/b1k-checkpoints Robotics •Updated about 16 hours ago"
+    },
+    {
+      "title": "GitHub - JackLiu0406/behaviour-1k-2026-meta: 100-task BEHAVIOR-1K (2026 ...",
+      "url": "https://github.com/JackLiu0406/behaviour-1k-2026-meta",
+      "snippet": "100-task meta-training pipeline for BEHAVIOR-1K, built on a π0.5-style vision-language-action policy and run on 8× NVIDIA B300. This repository is the training pipeline — model code, training entry points, launcher, crash-recovery supervisor, optional dataset preprocessing, and monitoring. It ..."
+    },
+    {
+      "title": "Models and libraries - Meta AI",
+      "url": "https://ai.meta.com/resources/models-and-libraries/",
+      "snippet": "Our open-source libraries and models for those taking our AI learnings further through software and app development"
+    }
+  ]
+}

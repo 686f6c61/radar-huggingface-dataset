@@ -5,7 +5,7 @@
   "author": "dealignai",
   "url": "https://huggingface.co/dealignai/GLM-5.3-Flash-UNCENSORED-FP8",
   "created_at": "2026-08-26T21:09:20.000Z",
-  "updated_at": "2026-08-26T22:42:58.000Z",
+  "updated_at": "2026-08-29T02:30:12.000Z",
   "license": "mit",
   "license_family": "oss",
   "pipeline_tag": null,
@@ -30,13 +30,13 @@
     "license:mit",
     "region:us"
   ],
-  "likes": 39,
+  "likes": 40,
   "downloads_30d": 0,
-  "trending_score": 37,
+  "trending_score": 38,
   "parameters": 321323031390,
   "parameters_human": "321.32B",
-  "storage_bytes": 328357674378,
-  "storage_human": "328.4 GB",
+  "storage_bytes": 505375369250,
+  "storage_human": "505.4 GB",
   "base_model": "zai-org/GLM-5.3-Flash",
   "formats": [
     "safetensors"

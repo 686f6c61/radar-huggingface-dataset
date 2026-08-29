@@ -5,7 +5,7 @@
   "author": "EigenLabs",
   "url": "https://huggingface.co/EigenLabs/Qwen3-VL-30B-A3B-Instruct-MLX-4bit",
   "created_at": "2026-08-28T07:38:05.000Z",
-  "updated_at": "2026-08-28T07:39:01.000Z",
+  "updated_at": "2026-08-28T07:58:08.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "image-text-to-text",

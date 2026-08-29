@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "SZLHOLDINGS/szl-governed-norm",
+  "slug": "szlholdings-szl-governed-norm",
+  "author": "SZLHOLDINGS",
+  "url": "https://huggingface.co/SZLHOLDINGS/szl-governed-norm",
+  "created_at": "2026-06-23T08:05:08.000Z",
+  "updated_at": "2026-08-29T00:10:44.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "kernels",
+  "languages": [],
+  "tags": [
+    "kernels",
+    "kernel",
+    "software",
+    "normalization",
+    "rmsnorm",
+    "layernorm",
+    "provenance",
+    "governance",
+    "compatibility",
+    "surrogate",
+    "deprecated",
+    "doi:10.5281/zenodo.19944926",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 204,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 998240,
+  "storage_human": "998240 B",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - szl-holdings/szl-governed-norm: Governed RMSNorm/LayerNorm ...",
+      "url": "https://github.com/szl-holdings/szl-governed-norm",
+      "snippet": "The first governed kernel on the Hugging Face Kernel Hub. Correctness-verified RMSNorm & LayerNorm with optional governance receipts that make every call auditable at the kernel layer. Most Kernel Hub kernels compete on raw speed. szl-governed-norm opens a different axis: verifiable provenance."
+    },
+    {
+      "title": "szl-governed-norm/README.md at main · szl-holdings/szl ... - GitHub",
+      "url": "https://github.com/szl-holdings/szl-governed-norm/blob/main/README.md",
+      "snippet": "The first governed kernel on the Hugging Face Kernel Hub. Correctness-verified RMSNorm & LayerNorm with optional governance receipts that make every call auditable at the kernel layer. Most Kernel Hub kernels compete on raw speed. szl-governed-norm opens a different axis: verifiable provenance."
+    },
+    {
+      "title": "SZLHOLDINGS/governed-inference-meter · Hugging Face",
+      "url": "https://huggingface.co/SZLHOLDINGS/governed-inference-meter",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "SZLHOLDINGS / szl-governed-norm - insights-db.paloaltonetworks.com",
+      "url": "https://insights-db.paloaltonetworks.com/models/SZLHOLDINGS/szl-governed-norm/2255c7401238425c97e050fca358a84b867fabbc/overview",
+      "snippet": "Discover potential threats in the SZLHOLDINGS / szl-governed-norm model. Learn about the vulnerabilities that cause these threats, and explore security solutions by Palo Alto Networks Prisma AIRS."
+    },
+    {
+      "title": "SZL Holdings Docs",
+      "url": "https://szl-holdings.github.io/docs-site/",
+      "snippet": "What is SZL? SZL Holdings builds governed-AI infrastructure: an anatomy of composable organs that turns a model from a thing that evaluates into an agent that acts under proof."
+    }
+  ]
+}

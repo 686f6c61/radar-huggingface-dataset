@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "bklassen3434/act_pen_lift_25ep_v1",
+  "slug": "bklassen3434-act_pen_lift_25ep_v1",
+  "author": "bklassen3434",
+  "url": "https://huggingface.co/bklassen3434/act_pen_lift_25ep_v1",
+  "created_at": "2026-08-29T00:22:38.000Z",
+  "updated_at": "2026-08-29T00:22:44.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "robotics",
+    "act",
+    "dataset:bklassen3434/pen_lift_20260825_223702",
+    "arxiv:2304.13705",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 51668614,
+  "parameters_human": "51.7M",
+  "storage_bytes": 206714896,
+  "storage_human": "207 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "bklassen3434/act_pen_lift_25ep_v1 · Hugging Face",
+      "url": "https://huggingface.co/bklassen3434/act_pen_lift_25ep_v1",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "bklassen3434 (Ben Klassen) - Hugging Face",
+      "url": "https://huggingface.co/bklassen3434/datasets",
+      "snippet": "bklassen3434&#x27;s datasets3 Sort: Recently updated bklassen3434/rollout_act_pen_lift_c270_v1_20260524_125347 Viewer •Updated 24 days ago•2.71k• 57"
+    },
+    {
+      "title": "GitHub - bklassen3434/bklassen3434",
+      "url": "https://github.com/bklassen3434/bklassen3434",
+      "snippet": "Does this sounds familiar: Artificial Intelligence is going to change the world. But AI is only as effective as the data behind it. That&#x27;s where I come in. I excel at transforming disorganized data into insightful charts, dashboards, and analytics that empower better decision-making. I am an experienced data professional with two years of experience in data science. I&#x27;m currently pursuing my ..."
+    },
+    {
+      "title": "bklassen3434 (Ben Klassen) · GitHub",
+      "url": "https://github.com/bklassen3434/",
+      "snippet": "bklassen3434 has 13 repositories available. Follow their code on GitHub."
+    },
+    {
+      "title": "OpenAI | Research & Deployment",
+      "url": "https://openai.com/",
+      "snippet": "We believe our research will eventually lead to artificial general intelligence, a system that can solve human-level problems."
+    }
+  ]
+}

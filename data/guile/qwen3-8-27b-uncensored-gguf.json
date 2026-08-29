@@ -38,8 +38,8 @@
   "trending_score": 0,
   "parameters": 27320697856,
   "parameters_human": "27.32B",
-  "storage_bytes": 251029000064,
-  "storage_human": "251.0 GB",
+  "storage_bytes": 232187736832,
+  "storage_human": "232.2 GB",
   "base_model": "Qwen/Qwen3.8-27B",
   "formats": [
     "gguf"

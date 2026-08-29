@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "Islamamro/newsgroups20-aurora-islamamro",
+  "slug": "islamamro-newsgroups20-aurora-islamamro",
+  "author": "Islamamro",
+  "url": "https://huggingface.co/Islamamro/newsgroups20-aurora-islamamro",
+  "created_at": "2026-08-28T23:17:45.000Z",
+  "updated_at": "2026-08-28T23:30:39.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "distilbert",
+    "aurora",
+    "islamamro",
+    "text-classification",
+    "dataset:SetFit/20_newsgroups",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 66968852,
+  "parameters_human": "67.0M",
+  "storage_bytes": 267887936,
+  "storage_human": "268 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Ransomware Hacker Uses AI to Plan Cyberattacks Against More Than 20 ...",
+      "url": "https://cybersecuritynews.com/ransomware-hacker-uses-ai/",
+      "snippet": "Aurora ransomware affiliates used AI coding tools to target 20+ organizations, gaining domain access and stealing data across nine countries."
+    },
+    {
+      "title": "Unfiltered Reasoning",
+      "url": "https://unfilteredreasoning.blogspot.com/2026/03/how-ai-moderation-shields-islam-deep.html",
+      "snippet": "Introduction: AI Moderation and the Unequal Protection of Islam Artificial Intelligence (AI) is widely deployed to moderate online content. Platforms including ChatGPT, Google Gemini, Anthropic Claude, Meta LLaMA, YouTube, and Jigsaw Perspective API rely on automated mechanisms to identify and suppress speech deemed harmful, offensive, or discriminatory. These systems are promoted as neutral ..."
+    },
+    {
+      "title": "islamamro · GitHub",
+      "url": "https://github.com/islamamro",
+      "snippet": "islamamro has one repository available. Follow their code on GitHub."
+    },
+    {
+      "title": "AURORA - Facebook",
+      "url": "https://www.facebook.com/iamAURORA/",
+      "snippet": "His Majesty King Harald V of Norway has left us today. We called you, «The Peoples King» A kind soul who stood with his people. Regardless of where we come from, who we are, our religious beliefs or sexual orientation We knew you had respect for us all. We knew you spoke to us all and wished for all people of this country to be more united in a time where the world struggles to put kindness ..."
+    },
+    {
+      "title": "Aurora (AI model) — Grokipedia",
+      "url": "https://grokipedia.com/page/Aurora_AI_model",
+      "snippet": "Aurora is an autoregressive mixture-of-experts AI image generation model developed by xAI, released on December 9, 2024. It powers Grok&#x27;s image generation capabilities and serves as the foundational m"
+    }
+  ]
+}

@@ -29,8 +29,8 @@
   "trending_score": 0,
   "parameters": 6433044332,
   "parameters_human": "6.43B",
-  "storage_bytes": 45351741796,
-  "storage_human": "45.4 GB",
+  "storage_bytes": 22691957739,
+  "storage_human": "22.7 GB",
   "base_model": null,
   "formats": [
     "mlx",

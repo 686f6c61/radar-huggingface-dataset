@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "AnthonyLop/dino-multitask-colab",
+  "slug": "anthonylop-dino-multitask-colab",
+  "author": "AnthonyLop",
+  "url": "https://huggingface.co/AnthonyLop/dino-multitask-colab",
+  "created_at": "2026-08-28T19:43:31.000Z",
+  "updated_at": "2026-08-28T19:43:39.000Z",
+  "license": "bsd-3-clause",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "dino",
+    "pytorch",
+    "multitask",
+    "license:bsd-3-clause",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 49600,
+  "parameters_human": "49600",
+  "storage_bytes": 198880,
+  "storage_human": "198880 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "varunbsingh/dino-multitask · Hugging Face",
+      "url": "https://huggingface.co/varunbsingh/dino-multitask",
+      "snippet": "Dino for Multitask Overview This is an experimental Dino codebase for Multitask. It keeps the huge setup intentionally manageable so architecture changes can be inspected before a full training run."
+    },
+    {
+      "title": "GitHub - vivekananda05/multitask-dino",
+      "url": "https://github.com/vivekananda05/multitask-dino",
+      "snippet": "This repository contains a unified multi-task image reconstruction framework capable of performing image denoising and image inpainting within a single neural network architecture. The model utilizes a frozen pretrained DINOv3-Small Vision Transformer as a feature extractor and introduces LoRA (Low-Rank Adaptation) modules for lightweight fine-tuning. Task-specific decoders handle denoising ..."
+    },
+    {
+      "title": "Google Colab",
+      "url": "https://colab.research.google.com/",
+      "snippet": "Learn how to bring the power of Colab straight to your terminal. Read the full announcement."
+    },
+    {
+      "title": "GitHub - AravindKarri003/collab-Notebooks-of-AI-ML-projects",
+      "url": "https://github.com/AravindKarri003/collab-Notebooks-of-AI-ML-projects",
+      "snippet": "🧠 Machine Learning & AI Projects - Google Colab Collection This repository contains a curated set of Google Colab notebooks showcasing various Machine Learning, Computer Vision, and NLP projects. Each notebook is designed to be interactive, well-documented, and ready to run in Google Colab."
+    },
+    {
+      "title": "DINOv2 Model Configurations | zhuoyan-xu/Foundation-Model_Multitask ...",
+      "url": "https://deepwiki.com/zhuoyan-xu/Foundation-Model_Multitask/3.2-dinov2-model-configurations",
+      "snippet": "This page documents the configuration system for DINOv2 foundation models within the multitask fine-tuning framework. DINOv2 configurations define how DINOv2 vision transformers are adapted for few-shot learning tasks through various training strategies. For CLIP model configurations, see CLIP Model Configurations."
+    }
+  ]
+}

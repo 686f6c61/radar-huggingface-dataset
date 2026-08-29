@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "Amandasmit/tiny-transformer-checkpoint43",
+  "slug": "amandasmit-tiny-transformer-checkpoint43",
+  "author": "Amandasmit",
+  "url": "https://huggingface.co/Amandasmit/tiny-transformer-checkpoint43",
+  "created_at": "2026-08-28T19:39:41.000Z",
+  "updated_at": "2026-08-28T19:39:50.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "tiny_transformer",
+    "pytorch",
+    "tiny-transformer",
+    "retrieval",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 33088,
+  "parameters_human": "33088",
+  "storage_bytes": 132832,
+  "storage_human": "132832 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "LLM Leaderboard & AI Model Benchmarks — August 2026",
+      "url": "https://benchlm.ai/",
+      "snippet": "Compare 406 AI models across 406 benchmarks, with 228 ranked scores, source evidence, API pricing, context windows, runtime, and head-to-head pages."
+    },
+    {
+      "title": "sophiaphotonics/tiny-transformer-experiment43 · Hugging Face",
+      "url": "https://huggingface.co/sophiaphotonics/tiny-transformer-experiment43",
+      "snippet": "sophiaphotonics / tiny-transformer-experiment43 like 0 Safetensors PyTorch tiny_transformer tiny-transformer retrieval License:mit Model card FilesFiles and versions xet Community Copy to bucket new Tiny Transformer for Retrieval Overview Repository status Architecture Default experiment recipe Quick check Evaluation guidance Limitations Files ..."
+    },
+    {
+      "title": "Hugging Face - The AI community building the future.",
+      "url": "https://huggingface.co/",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Build a Tiny LLM from Scratch - GitHub",
+      "url": "https://github.com/RajaSardar/build-a-tiny-llm-from-scratch",
+      "snippet": "Build a tiny GPT-style language model from scratch in PyTorch. 43M parameter transformer with a 60-page illustrated learning guide covering everything from tokenization to attention to generation. ..."
+    },
+    {
+      "title": "AI Models | Civitai",
+      "url": "https://civitai.com/models",
+      "snippet": "Browse thousands of free Stable Diffusion & Flux models, LoRAs, checkpoints, and embeddings. The largest collection of AI image generation resources."
+    }
+  ]
+}

@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "yusukewwf/classification-playground",
+  "slug": "yusukewwf-classification-playground",
+  "author": "yusukewwf",
+  "url": "https://huggingface.co/yusukewwf/classification-playground",
+  "created_at": "2026-08-28T22:44:00.000Z",
+  "updated_at": "2026-08-28T22:44:07.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "mixer",
+    "pytorch",
+    "classification",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 24832,
+  "parameters_human": "24832",
+  "storage_bytes": 99808,
+  "storage_human": "99808 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Model Playground AI",
+      "url": "https://modelplayground.ai/",
+      "snippet": "Compare and evaluate different AI models side by side. 150+ models. 1 subscription. 0 markup."
+    },
+    {
+      "title": "OpenAI Platform",
+      "url": "https://platform.openai.com/playground/p/default-classification%22.class",
+      "snippet": "Continue with Google Continue with Apple Continue with Microsoft Continue with phone"
+    },
+    {
+      "title": "Classifier Playground",
+      "url": "https://classifier-playground.streamlit.app/",
+      "snippet": "In this interactive playground, you can explore the capabilities of multiple AI and ML models for classifying data. To begin, create your own dataset using the options provided in the side menu. Once your dataset is ready, you can select a ML model to train and test on the data. The model will learn from the patterns and relationships within the dataset to make predictions and classify new ..."
+    },
+    {
+      "title": "Image Classification with AI Vision Models | Roboflow Playground",
+      "url": "https://playground.roboflow.com/classification",
+      "snippet": "Upload an image and enter classes to compare how AI vision models classify content and return confidence scores for each class."
+    },
+    {
+      "title": "Cloudflare - AI Playground",
+      "url": "https://playground.ai.cloudflare.com/",
+      "snippet": "Explore the Workers AI LLM Playground to experiment with large language models using Cloudflare&#x27;s innovative platform."
+    }
+  ]
+}

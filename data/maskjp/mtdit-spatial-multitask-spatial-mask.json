@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "maskjp/mtdit-spatial-multitask-spatial-mask",
+  "slug": "maskjp-mtdit-spatial-multitask-spatial-mask",
+  "author": "maskjp",
+  "url": "https://huggingface.co/maskjp/mtdit-spatial-multitask-spatial-mask",
+  "created_at": "2026-08-28T19:47:55.000Z",
+  "updated_at": "2026-08-28T23:22:59.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "robotics",
+    "diffusion-policy",
+    "multi-task",
+    "negative-result",
+    "base_model:openai/clip-vit-base-patch16",
+    "base_model:finetune:openai/clip-vit-base-patch16",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 239456053,
+  "parameters_human": "239.5M",
+  "storage_bytes": 957908676,
+  "storage_human": "958 MB",
+  "base_model": "openai/clip-vit-base-patch16",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "maskjp/mtdit_plate_croissant_jointbase_fullframe · Hugging Face",
+      "url": "https://huggingface.co/maskjp/mtdit_plate_croissant_jointbase_fullframe",
+      "snippet": "Instructions to use maskjp/mtdit_plate_croissant_jointbase_fullframe with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Libraries LeRobot How to use maskjp/mtdit_plate_croissant_jointbase_fullframe with LeRobot: Notebooks Google Colab Kaggle MTDiT — plate/croissant, joint + base, full frame ⚠️ This checkpoint has the worst held-out loss of ..."
+    },
+    {
+      "title": "MSDiT: Masked Spatial-Temporal Diffusion Transformer",
+      "url": "https://www.emergentmind.com/topics/masked-spatial-temporal-diffusion-transformer-msdit",
+      "snippet": "MSDiT is a unified video diffusion model that employs spatial-temporal masks and a pure Transformer backbone to tackle tasks like unconditional generation, prediction, interpolation, and completion. It tokenizes videos using a frozen VAE and processes them via alternating temporal and spatial self-attention layers with adaptive LayerNorm for effective diffusion time-conditioning. Its dual-mask ..."
+    },
+    {
+      "title": "ICLR 2026 Papers",
+      "url": "https://iclr.cc/virtual/2026/papers.html?filter=author&search=Hang%20Li",
+      "snippet": "Where&#x27;s the Chicken? Unpacking Spatial Awareness in Vision-Language Models Exploring Real-Time Super-Resolution: Benchmarking and Fine-Tuning for Streaming Content DNOD: Deformable Neural Operators for Object Detection in SAR Images Healthcare Insurance Fraud Detection via Continual Fiedler Vector Graph Model"
+    },
+    {
+      "title": "Multivariate Diffusion Transformer with Decoupled Attention for",
+      "url": "https://arxiv.org/html/2511.12631v3",
+      "snippet": "To further augment the generalization ability of our model, enabling it to accommodate both multi-condition collaborative facial synthesis (integrating both mask and text inputs) and single-condition facial synthesis (utilizing either text or mask input), we incorporate a stochastic condition-dropping mechanism during the training phase."
+    },
+    {
+      "title": "Spatial Mask Merging - GitHub",
+      "url": "https://github.com/mihajlov39547/spatial-mask-merging",
+      "snippet": "Spatial thresholds, edge weighting factors, and clustering penalties govern the behavior of the Spatial Mask Merging (SMM) algorithm. These parameters control the balance between over-merging and under-merging, spatial sensitivity, and candidate mask selection."
+    }
+  ]
+}

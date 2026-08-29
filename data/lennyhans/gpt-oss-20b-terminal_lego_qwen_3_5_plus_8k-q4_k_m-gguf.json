@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "lennyhans/gpt-oss-20b-terminal_lego_qwen_3_5_plus_8k-Q4_K_M-GGUF",
+  "slug": "lennyhans-gpt-oss-20b-terminal_lego_qwen_3_5_plus_8k-q4_k_m-gguf",
+  "author": "lennyhans",
+  "url": "https://huggingface.co/lennyhans/gpt-oss-20b-terminal_lego_qwen_3_5_plus_8k-Q4_K_M-GGUF",
+  "created_at": "2026-08-28T22:04:55.000Z",
+  "updated_at": "2026-08-28T22:06:07.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "gguf",
+    "llama-factory",
+    "full",
+    "generated_from_trainer",
+    "llama-cpp",
+    "gguf-my-repo",
+    "base_model:StephYang/gpt-oss-20b-terminal_lego_qwen_3_5_plus_8k",
+    "base_model:quantized:StephYang/gpt-oss-20b-terminal_lego_qwen_3_5_plus_8k",
+    "license:other",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 20914757184,
+  "parameters_human": "20.91B",
+  "storage_bytes": 15805120160,
+  "storage_human": "15.8 GB",
+  "base_model": "StephYang/gpt-oss-20b-terminal_lego_qwen_3_5_plus_8k",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "openai/gpt-oss-20b · Hugging Face",
+      "url": "https://huggingface.co/openai/gpt-oss-20b",
+      "snippet": "Discover Hugging Face&#x27;s gpt-oss-20b model, a smaller open-source AI with versatile applications and fine-tuning capabilities for developers and researchers."
+    },
+    {
+      "title": "gpt-oss-20b Model | OpenAI API",
+      "url": "https://developers.openai.com/api/docs/models/gpt-oss-20b",
+      "snippet": "Medium-sized open-weight model for low latency Compare"
+    },
+    {
+      "title": "gpt-oss-20b-terminal_lego_qwen_3_5_plus_8k - Hugging Face",
+      "url": "https://huggingface.co/StephYang/gpt-oss-20b-terminal_lego_qwen_3_5_plus_8k",
+      "snippet": "terminal_lego_qwen_3_5_plus_8k This model is a fine-tuned version of openai/gpt-oss-20b on the terminal_lego_qwen_3_5_plus_8k dataset. Model description More information needed Intended uses & limitations More information needed Training and evaluation data More information needed Training procedure Training hyperparameters The following hyperparameters were used during training: learning_rate ..."
+    },
+    {
+      "title": "GPT-OSS-20B: A Comprehensive Deployment-Centric Analysis of OpenAI&#x27;s ...",
+      "url": "https://arxiv.org/html/2508.16700",
+      "snippet": "GPT-OSS-20B represents the first open-weight 20.9B parameter MoE model, making it an ideal candidate for comprehensive deployment analysis on a single-GPU (H100, bf16) setup. Understanding its deployment characteristics compared to dense models is crucial for practitioners making architectural decisions in production environments."
+    },
+    {
+      "title": "gpt-oss:20b - ollama.com",
+      "url": "https://ollama.com/library/gpt-oss:20b",
+      "snippet": "The model can be downloaded directly in Ollama&#x27;s new app or via the terminal: **ollama run gpt-oss:20b** **ollama run gpt-oss:120b** ### Feature highlights - **Agentic capabilities:** Use the models&#x27; native capabilities for function calling, web browsing (Ollama is introducing built-in web search that can be optionally enabled), python tool ..."
+    }
+  ]
+}

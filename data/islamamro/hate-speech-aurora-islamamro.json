@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "Islamamro/hate-speech-aurora-islamamro",
+  "slug": "islamamro-hate-speech-aurora-islamamro",
+  "author": "Islamamro",
+  "url": "https://huggingface.co/Islamamro/hate-speech-aurora-islamamro",
+  "created_at": "2026-08-28T23:20:50.000Z",
+  "updated_at": "2026-08-28T23:30:55.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "distilbert",
+    "aurora",
+    "islamamro",
+    "text-classification",
+    "dataset:SetFit/hate_speech_offensive",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 66955779,
+  "parameters_human": "67.0M",
+  "storage_bytes": 267835644,
+  "storage_human": "268 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Analyzing Islamophobic Discourse Using Semi-Coded Terms and LLMs",
+      "url": "https://arxiv.org/html/2503.18273v2",
+      "snippet": "Similarly, religious hate speech shifts focus to Islam as a belief system, often mocking its practices or associating it with violence or extremism. Likewise, anti-Muslim rhetoric has recently surged, especially directed at Muslim immigrants in Western nations, where racial tensions are already high."
+    },
+    {
+      "title": "Analyzing Islamophobic Discourse Using Semi-Coded Terms and LLMs",
+      "url": "https://arxiv.org/html/2503.18273v1",
+      "snippet": "II Background and State-of-the-art Hate speech often employs slurs and stereotypes to demean race, religion, or cultural practices [3]. Attacks on race, for instance, may generalize all Muslims as belonging to specific racial groups, such as Arabs, South Asians, or Africans, using derogatory terms rooted in colonial or racial hierarchies."
+    },
+    {
+      "title": "AI and Islamophobia: The algorithmic gaze on Muslim communities",
+      "url": "https://www.newarab.com/analysis/ai-and-islamophobia-algorithmic-gaze-muslim-communities",
+      "snippet": "Online platforms claim to mitigate hate speech, yet research suggests a different pattern when it comes to anti-Muslim content. For example, the independent organisation Center for Countering Digital Hate (CCDH) reported in 2023 that social-media companies failed to act on 89% of anti-Muslim (Islamophobia) hate that was reported."
+    },
+    {
+      "title": "Islamophobia - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Islamophobia",
+      "snippet": "Islamophobia, also referred to as anti-Muslim or anti-Islamic sentiment, is the irrational fear of, hostility towards, or hatred of the religion of Islam or Muslims in general. [1][2][3][4][5] Islamophobia is characterised as a form of religious or cultural bigotry [6] in which Muslims are stereotyped as a geopolitical threat or a source of ..."
+    },
+    {
+      "title": "Islamophobic Artificial Intelligence in the U.S.: A Critical Analysis ...",
+      "url": "https://racism.org/articles/intersectionality/religion/13082-islamophobic-artificial-intelligence",
+      "snippet": "Islamophobic AI refers to the phenomenon where AI systems exacerbate religious bias against Islam and its followers in their decision-making process, perpetuating unfair treatment toward Muslims by generating negative stereotypes associating them with violence, or producing discriminatory content resulting in their inequitable treatment."
+    }
+  ]
+}

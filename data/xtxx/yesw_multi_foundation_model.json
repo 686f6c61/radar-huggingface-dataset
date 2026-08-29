@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "xtxx/YESW_Multi_Foundation_Model",
+  "slug": "xtxx-yesw_multi_foundation_model",
+  "author": "xtxx",
+  "url": "https://huggingface.co/xtxx/YESW_Multi_Foundation_Model",
+  "created_at": "2026-08-29T00:53:36.000Z",
+  "updated_at": "2026-08-29T00:59:14.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 5895921868,
+  "storage_human": "5.9 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": true,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "FOUNDATION MODEL AI - The Future of Large-Scale AI Systems",
+      "url": "http://foundationmodel.ai/",
+      "snippet": "FOUNDATION MODEL AI COLLECTION The Foundation Model Collection represents the structural core of artificial intelligence the large-scale, multi-modal models that power every new generation of generative and analytical systems."
+    },
+    {
+      "title": "Multimodal Foundation Models: From Specialists to General-Purpose ...",
+      "url": "https://arxiv.org/abs/2309.10020",
+      "snippet": "This paper presents a comprehensive survey of the taxonomy and evolution of multimodal foundation models that demonstrate vision and vision-language capabilities, focusing on the transition from specialist models to general-purpose assistants. The research landscape encompasses five core topics, categorized into two classes. (i) We start with a survey of well-established research areas ..."
+    },
+    {
+      "title": "Model Garden on Gemini Enterprise Agent Platform",
+      "url": "https://cloud.google.com/model-garden",
+      "snippet": "A bigger model isn&#x27;t always better. With a wide variety of model types and sizes, Model Garden provides the flexibility to use the best resource for your business needs. Easily customize these models with your own data, deploy to applications with just one-click, and scale with end-to-end ML Ops built-in."
+    },
+    {
+      "title": "Generative AI on AWS - Generative AI, LLMs, and Foundation Models - AWS",
+      "url": "https://aws.amazon.com/ai/generative-ai/",
+      "snippet": "Discover the endless possibilities of generative AI on AWS to boost productivity, build differentiated experiences, and innovate."
+    },
+    {
+      "title": "Foundation Models in Generative AI - GeeksforGeeks",
+      "url": "https://www.geeksforgeeks.org/artificial-intelligence/foundation-models-in-generative-ai/",
+      "snippet": "Conclusion Foundation models represent a significant milestone in the field of artificial intelligence. Their ability to learn from vast amounts of data and adapt to various tasks makes them a powerful tool in the AI toolkit. As we continue to explore and refine these models, they promise to transform industries and redefine what machines can ..."
+    }
+  ]
+}

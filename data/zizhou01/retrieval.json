@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "zizhou01/retrieval",
+  "slug": "zizhou01-retrieval",
+  "author": "zizhou01",
+  "url": "https://huggingface.co/zizhou01/retrieval",
+  "created_at": "2026-08-28T20:07:10.000Z",
+  "updated_at": "2026-08-28T20:07:19.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "flamingo",
+    "pytorch",
+    "retrieval",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 24832,
+  "parameters_human": "24832",
+  "storage_bytes": 99808,
+  "storage_human": "99808 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "zizhou01 (Zihan ZHOU) - Hugging Face",
+      "url": "https://huggingface.co/zizhou01/models",
+      "snippet": "Trying to understand why my model overfits AI & ML interests Trying to understand why my model overfits"
+    },
+    {
+      "title": "retrieval-model · GitHub Topics · GitHub",
+      "url": "https://github.com/topics/retrieval-model",
+      "snippet": "converter ai conversion voice inference tts rvc voice-conversion vc conversational-ai retrieval-model voiceconversion Updated on Oct 25, 2025 Python"
+    },
+    {
+      "title": "Retrieval-Augmented Generation for AI-Generated Content: A Survey",
+      "url": "https://arxiv.org/abs/2402.19473",
+      "snippet": "Advancements in model algorithms, the growth of foundational models, and access to high-quality datasets have propelled the evolution of Artificial Intelligence Generated Content (AIGC). Despite its notable successes, AIGC still faces hurdles such as updating knowledge, handling long-tail data, mitigating data leakage, and managing high training and inference costs. Retrieval-Augmented ..."
+    },
+    {
+      "title": "GitHub - NirDiamant/RAG_Techniques: This repository showcases various ...",
+      "url": "https://github.com/NirDiamant/RAG_TECHNIQUES",
+      "snippet": "Introduction Retrieval-Augmented Generation (RAG) is revolutionizing the way we combine information retrieval with generative AI. This repository showcases a curated collection of advanced techniques designed to supercharge your RAG systems, enabling them to deliver more accurate, contextually relevant, and comprehensive responses."
+    },
+    {
+      "title": "Retrieval-augmented generation - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Retrieval-augmented_generation",
+      "snippet": "Retrieval-augmented generation (RAG) is a technique that enables large language models (LLMs) to retrieve and incorporate new information from external data sources. [1]"
+    }
+  ]
+}

@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "tarodriguez/thesis-cross-modal-fusion-2024",
+  "slug": "tarodriguez-thesis-cross-modal-fusion-2024",
+  "author": "tarodriguez",
+  "url": "https://huggingface.co/tarodriguez/thesis-cross-modal-fusion-2024",
+  "created_at": "2026-08-29T00:34:47.000Z",
+  "updated_at": "2026-08-29T00:34:56.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "transformer",
+    "research-notes",
+    "cross-modal-fusion",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 33088,
+  "parameters_human": "33088",
+  "storage_bytes": 132832,
+  "storage_human": "132832 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Google Scholar",
+      "url": "https://scholar.google.com/",
+      "snippet": "Google Scholar provides a simple way to broadly search for scholarly literature. Search across a wide variety of disciplines and sources: articles, theses, books, abstracts and court opinions."
+    },
+    {
+      "title": "A Comprehensive Survey on Deep Learning Multi-Modal Fusion: Methods ...",
+      "url": "https://www.sciencedirect.com/org/science/article/pii/S1546221824005216",
+      "snippet": "This paper comprehensively reviews existing methods based on multi-modal fusion techniques and completes a detailed and in-depth analysis. According to the data fusion stage, multi-modal fusion has four primary methods: early fusion, deep fusion, late fusion, and hybrid fusion."
+    },
+    {
+      "title": "PDF Multimodal learning and language models for enhanced knowledge ...",
+      "url": "https://bazaga.ai/assets/files/thesis.pdf",
+      "snippet": "The thesis not only proposes novel methodologies but also provides insights into the fundamental limitations and trade-offs inherent in each approach. The methodological contributions span multiple aspects of machine learning, from architectural innovations in neural networks to novel applications of language model distillation and Transformer ..."
+    },
+    {
+      "title": "PDF Rethinking Cross-Modal Interaction in Multimodal Diffusion Transformers",
+      "url": "https://openaccess.thecvf.com/content/ICCV2025/papers/Lv_Rethinking_Cross-Modal_Interaction_in_Multimodal_Diffusion_Transformers_ICCV_2025_paper.pdf",
+      "snippet": "Temperature-Adjusted Cross-modal Attention (TACA), a straightforward yet effective enhancement to the MM-DiT attention mechanism. Our approach introduces two key innovations, namely (1) modality-specific temperature scaling to mitigate cross-attention suppression, and (2) timestep-dependent adjustments to cross-modal inter-actions."
+    },
+    {
+      "title": "Publications — Google DeepMind",
+      "url": "https://deepmind.google/research/publications/",
+      "snippet": "Explore a selection of our recent research on some of the most complex and interesting challenges in AI."
+    }
+  ]
+}

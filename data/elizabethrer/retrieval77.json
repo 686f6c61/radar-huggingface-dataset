@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "elizabethrer/retrieval77",
+  "slug": "elizabethrer-retrieval77",
+  "author": "elizabethrer",
+  "url": "https://huggingface.co/elizabethrer/retrieval77",
+  "created_at": "2026-08-28T23:22:11.000Z",
+  "updated_at": "2026-08-28T23:22:20.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "mixer",
+    "pytorch",
+    "retrieval",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 33088,
+  "parameters_human": "33088",
+  "storage_bytes": 132832,
+  "storage_human": "132832 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Retriever Models Explained: 8 Ways RAG Is Making AI Learn Faster and ...",
+      "url": "https://blog.eduonix.com/2025/12/retriever-models-explained-8-ways-rag-is-making-ai-learn-faster-and-smarter/",
+      "snippet": "Retriever models are transforming how AI understands and learns using real-world context. Discover eight ways Retrieval-Augmented Generation is accelerating AI intelligence and personalization."
+    },
+    {
+      "title": "Adaptive Agentic Retrieval-Augmented Models for Financial QA Published",
+      "url": "https://www.linkedin.com/posts/drelizabethrani_excited-to-share-that-our-research-paper-activity-7483133731659218944-v7-G",
+      "snippet": "Excited to share that our research paper, \"Adaptive Agentic Retrieval-Augmented Models for Financial Question Answering,\" has been published in the IEEE Xplore Digital Library. This work explores ..."
+    },
+    {
+      "title": "Elizabeth Ai (@elizabeth_ai) • Instagram photos and videos",
+      "url": "https://www.instagram.com/elizabeth_ai/",
+      "snippet": "5,813 Followers, 1,743 Following, 103 Posts - Elizabeth Ai (@elizabeth_ai) on Instagram: \"@the_post_gen @newwavedoc\""
+    },
+    {
+      "title": "Elizabeth AI (@ElizabethA77617) / Posts / X",
+      "url": "https://x.com/ElizabethA77617",
+      "snippet": "Elizabeth AI (@ElizabethA77617) - Posts - Exploring AI tools, tech trends, and smart workflows. Practical insights. Real use cases. DM for Col... | X (formerly Twitter)"
+    },
+    {
+      "title": "AI Models | Civitai",
+      "url": "https://civitai.com/models",
+      "snippet": "Browse thousands of free Stable Diffusion & Flux models, LoRAs, checkpoints, and embeddings. The largest collection of AI image generation resources."
+    }
+  ]
+}

@@ -5,7 +5,7 @@
   "author": "senga-ml",
   "url": "https://huggingface.co/senga-ml/grn-model",
   "created_at": "2026-08-28T11:46:54.000Z",
-  "updated_at": "2026-08-28T12:21:25.000Z",
+  "updated_at": "2026-08-28T13:01:15.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": "image-text-to-text",
@@ -25,8 +25,8 @@
   "trending_score": 0,
   "parameters": 202106296,
   "parameters_human": "202.1M",
-  "storage_bytes": 8092878320,
-  "storage_human": "8.1 GB",
+  "storage_bytes": 16187052885,
+  "storage_human": "16.2 GB",
   "base_model": null,
   "formats": [
     "safetensors"

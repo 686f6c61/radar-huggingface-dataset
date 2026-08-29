@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "lmh8602/supertonic-3-coreml-t320",
+  "slug": "lmh8602-supertonic-3-coreml-t320",
+  "author": "lmh8602",
+  "url": "https://huggingface.co/lmh8602/supertonic-3-coreml-t320",
+  "created_at": "2026-08-28T22:36:54.000Z",
+  "updated_at": "2026-08-28T22:37:11.000Z",
+  "license": "bigscience-openrail-m",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-speech",
+  "library": "fluidaudio",
+  "languages": [
+    "ko",
+    "en"
+  ],
+  "tags": [
+    "fluidaudio",
+    "text-to-speech",
+    "coreml",
+    "supertonic",
+    "ios",
+    "ko",
+    "en",
+    "base_model:Supertone/supertonic-3",
+    "base_model:finetune:Supertone/supertonic-3",
+    "license:bigscience-openrail-m",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 300625198,
+  "storage_human": "301 MB",
+  "base_model": "Supertone/supertonic-3",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Supertonic 3 — Lightning-Fast, On-Device, Multilingual TTS",
+      "url": "https://supertonic3.github.io/",
+      "snippet": "Supertonic 3 is a 99M-parameter open-weight text-to-speech model from Supertone. Runs on CPU via ONNX Runtime. No GPU. No cloud. No API. 31 languages."
+    },
+    {
+      "title": "GitHub - supertone-inc/supertonic: Lightning-Fast, On-Device ...",
+      "url": "https://github.com/supertone-inc/supertonic",
+      "snippet": "Supertonic is a lightning-fast, on-device multilingual text-to-speech system designed for local inference with minimal overhead. Powered by ONNX Runtime, it runs entirely on your device—no cloud, no API calls, no privacy concerns."
+    },
+    {
+      "title": "Supertone/supertonic · Hugging Face",
+      "url": "https://huggingface.co/Supertone/supertonic",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "FluidInference/supertonic-3-coreml · Hugging Face",
+      "url": "https://huggingface.co/FluidInference/supertonic-3-coreml",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GitHub - ARahim3/supertonic-server: Local OpenAI-compatible TTS server ...",
+      "url": "https://github.com/ARahim3/supertonic-server/tree/main",
+      "snippet": "supertonic-server OpenAI-compatible HTTP server for the Supertonic-3 on-device TTS model — with streaming, voice aliases, multilingual support, and CPU/CoreML/CUDA acceleration."
+    }
+  ]
+}

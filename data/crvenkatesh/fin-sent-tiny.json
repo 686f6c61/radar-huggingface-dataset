@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "crvenkatesh/fin-sent-tiny",
+  "slug": "crvenkatesh-fin-sent-tiny",
+  "author": "crvenkatesh",
+  "url": "https://huggingface.co/crvenkatesh/fin-sent-tiny",
+  "created_at": "2026-08-29T00:54:43.000Z",
+  "updated_at": "2026-08-29T00:54:48.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-classification",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "fin_sent_tiny",
+    "text-classification",
+    "financial-sentiment",
+    "from-scratch",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 21203,
+  "parameters_human": "21203",
+  "storage_bytes": 85228,
+  "storage_human": "85228 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "crvenkatesh (Venkatesh Ramachandran) - Hugging Face",
+      "url": "https://huggingface.co/crvenkatesh/models",
+      "snippet": "User profile of Venkatesh Ramachandran on Hugging Face"
+    },
+    {
+      "title": "AI Detector - Trusted AI Checker for ChatGPT, Copilot & Gemini - Scribbr",
+      "url": "https://www.scribbr.com/ai-detector/",
+      "snippet": "Scribbr AI Detector: Identify AI-generated content from ChatGPT, Copilot, and Gemini with our advanced AI Checker. Try it for free!"
+    },
+    {
+      "title": "AI Detector: Free AI Checker for ChatGPT, Claude & GPT-5 - QuillBot",
+      "url": "https://quillbot.com/ai-content-detector",
+      "snippet": "Quillbot&#x27;s free AI Detector checks text from ChatGPT, GPT-5, Claude and others. Get an AI score, sentence-level highlights, and refined AI detection insights."
+    },
+    {
+      "title": "Hugging Face - The AI community building the future.",
+      "url": "https://huggingface.co/",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "AI Detector - Free AI Checker for ChatGPT, GPT-5 & Gemini",
+      "url": "https://gptzero.me/",
+      "snippet": "Best free AI detector - simply paste your text to instantly get an overall AI score and advanced sentence by sentence detection."
+    }
+  ]
+}

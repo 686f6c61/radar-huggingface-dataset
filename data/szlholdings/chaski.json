@@ -1,0 +1,78 @@
+{
+  "schema": 1,
+  "id": "SZLHOLDINGS/chaski",
+  "slug": "szlholdings-chaski",
+  "author": "SZLHOLDINGS",
+  "url": "https://huggingface.co/SZLHOLDINGS/chaski",
+  "created_at": "2026-08-28T16:26:38.000Z",
+  "updated_at": "2026-08-28T23:04:00.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_5",
+    "image-text-to-text",
+    "szl-holdings",
+    "series-a",
+    "doctrine-v11",
+    "governed-ai",
+    "proposal-only",
+    "text-generation",
+    "conversational",
+    "en",
+    "base_model:Qwen/Qwen3.5-0.8B",
+    "base_model:adapter:Qwen/Qwen3.5-0.8B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 873438784,
+  "parameters_human": "873.4M",
+  "storage_bytes": 1794811655,
+  "storage_human": "1.8 GB",
+  "base_model": "Qwen/Qwen3.5-0.8B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "SZLHOLDINGS (SZL Holdings) - Hugging Face",
+      "url": "https://huggingface.co/SZLHOLDINGS/models",
+      "snippet": "Org profile for SZL Holdings on Hugging Face, the AI community building the future."
+    },
+    {
+      "title": "szl-serve/README.md at main · szl-holdings/szl-serve · GitHub",
+      "url": "https://github.com/szl-holdings/szl-serve/blob/main/README.md",
+      "snippet": "Canonical SZL governed serve recipe: llama.cpp/Ollama CPU honest path for Khipu GGUF, schema validation outside the weights, energy MEASURED or UNAVAILABLE, GPU ROADMAP. Not a vLLM/TGI/TRT-LLM copy..."
+    },
+    {
+      "title": "Chaski AI",
+      "url": "https://chaski.ai/",
+      "snippet": "cha s ki AI tools for the work that matters to you. Currently testing."
+    },
+    {
+      "title": "Developer Hub · SZL Holdings",
+      "url": "https://holdings.a-11-oy.com/docs-site/developers/",
+      "snippet": "SZL Holdings builds a formally-verified governance gate for agentic AI. This section is the developer-facing entry point: quickstart, full API reference, MCP integration, and runnable examples. Build your own \"organ\" on the same substrate the shipping flagships use."
+    },
+    {
+      "title": "szl-holdings-platform/docs/PLATFORM_OVERVIEW.md at main - GitHub",
+      "url": "https://github.com/szl-holdings/szl-holdings-platform/blob/main/docs/PLATFORM_OVERVIEW.md",
+      "snippet": "The AI Intelligence Layer Across all platforms, SZL uses a shared AI intelligence model that prioritizes: Explainability over opacity. Every AI-generated recommendation includes traceable reasoning. Confidence scores, contributing signals, and evidence chains are visible — not just the conclusion. Advisory before autonomous."
+    }
+  ]
+}

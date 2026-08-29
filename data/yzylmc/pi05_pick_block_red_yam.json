@@ -5,7 +5,7 @@
   "author": "YzyLmc",
   "url": "https://huggingface.co/YzyLmc/pi05_pick_block_red_yam",
   "created_at": "2026-08-28T15:30:55.000Z",
-  "updated_at": "2026-08-28T15:31:25.000Z",
+  "updated_at": "2026-08-28T22:47:39.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "robotics",
@@ -29,8 +29,8 @@
   "trending_score": 0,
   "parameters": 3616757520,
   "parameters_human": "3.62B",
-  "storage_bytes": 7473120308,
-  "storage_human": "7.5 GB",
+  "storage_bytes": 29892409340,
+  "storage_human": "29.9 GB",
   "base_model": "lerobot/pi05_base",
   "formats": [
     "safetensors"

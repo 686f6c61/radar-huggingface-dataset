@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "sunilkumarva/knowledge-distillation",
+  "slug": "sunilkumarva-knowledge-distillation",
+  "author": "sunilkumarva",
+  "url": "https://huggingface.co/sunilkumarva/knowledge-distillation",
+  "created_at": "2026-08-28T20:31:33.000Z",
+  "updated_at": "2026-08-28T20:31:43.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "transformer",
+    "research-notes",
+    "knowledge-distillation",
+    "license:cc-by-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 24832,
+  "parameters_human": "24832",
+  "storage_bytes": 99808,
+  "storage_human": "99808 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Knowledge distillation - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Knowledge_distillation",
+      "snippet": "In machine learning, knowledge distillation or model distillation is the process of transferring knowledge from a large model to a smaller one. While large models (such as very deep neural networks or ensembles of many models [1]) have more knowledge capacity than small models, this capacity might not be fully utilized. It can be just as computationally expensive to evaluate a model even if it ..."
+    },
+    {
+      "title": "Knowledge Distillation - GeeksforGeeks",
+      "url": "https://www.geeksforgeeks.org/machine-learning/knowledge-distillation/",
+      "snippet": "Knowledge Distillation is a model compression technique in which a smaller, simpler model (student) is trained to imitate the behavior of a larger, complex model (teacher). Instead of learning directly from data, the student model learns from the soft targets or probabilities, which are produced by the teacher model. This technique helps in deploying deep models on edge devices like mobiles or ..."
+    },
+    {
+      "title": "[2505.13111] Why Knowledge Distillation Works in Generative Models: A ...",
+      "url": "https://arxiv.org/abs/2505.13111",
+      "snippet": "Knowledge distillation (KD) is a core component in the training and deployment of modern generative models, particularly large language models (LLMs). While its empirical benefits are well documented -- enabling smaller student models to emulate the performance of much larger teachers -- the underlying mechanisms by which KD improves generative quality remain poorly understood. In this work ..."
+    },
+    {
+      "title": "A Survey on Knowledge Distillation of Large Language Models",
+      "url": "https://arxiv.org/html/2402.13116v1",
+      "snippet": "The concept of knowledge distillation in the field of AI and deep learning (DL) refers to the process of transferring knowledge from a large, complex model (teacher) to a smaller, more efficient model (student) Gou et al. (2021)."
+    },
+    {
+      "title": "How a Tiny AI Model Learns From a Giant One - LinkedIn",
+      "url": "https://www.linkedin.com/posts/sunil-kumar-3a4298119_how-a-tiny-ai-model-learns-from-a-giant-one-activity-7490281717908430849-Yzac",
+      "snippet": "A tiny AI model can learn from a giant one. Here&#x27;s how model distillation works. What should I explain next? Comment! More AI explainers → https://lnkd.in/gCKe9Wz2 #AI #Distillation #LLM # ..."
+    }
+  ]
+}

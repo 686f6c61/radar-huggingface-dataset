@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "rechtssysteem-ai/lgbm-eerlijk-nl-uitspraken",
+  "slug": "rechtssysteem-ai-lgbm-eerlijk-nl-uitspraken",
+  "author": "rechtssysteem-ai",
+  "url": "https://huggingface.co/rechtssysteem-ai/lgbm-eerlijk-nl-uitspraken",
+  "created_at": "2026-08-28T20:47:57.000Z",
+  "updated_at": "2026-08-28T20:48:08.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": null,
+  "languages": [
+    "nl"
+  ],
+  "tags": [
+    "legal",
+    "case-law",
+    "judgment-prediction",
+    "dutch",
+    "rechtspraak",
+    "lightgbm",
+    "text-classification",
+    "nl",
+    "license:cc-by-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 22900311,
+  "storage_human": "23 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Rechtspraak.nl - Zoeken in uitspraken",
+      "url": "https://uitspraken.rechtspraak.nl/",
+      "snippet": "Er is een uitgebreide handleiding beschikbaar voor het zoeken naar uitspraken, met onder andere uitleg over: De Rechtspraak, Hoge Raad der Nederlanden en Raad van State publiceren uitspraken op basis van selectiecriteria: Selecteer een week en bekijk welke uitspraken er in die week aan het uitsprakenregister zijn toegevoegd."
+    },
+    {
+      "title": "Uitspraken - Rechtspraak",
+      "url": "https://www.rechtspraak.nl/uitspraken",
+      "snippet": "Een uitspraak in een procedure die begint met een dagvaarding. 1. In het bestuursrecht: Een beslissing van een overheidsorgaan in een concreet geval, bijvoorbeeld het verlenen van een bouwvergunning. 2. In het civiele recht: een rechterlijke uitspraak in een procedure die begint met een verzoekschrift."
+    },
+    {
+      "title": "Rechtspraak & AI: discussie komt op gang - Recht.nl",
+      "url": "https://www.recht.nl/6841b6be1a041f248013/rechtspraak-wil-ai-gebruiken-voor-concept-uitspraken/",
+      "snippet": "Op hetzelfde moment sprak de Projectgroep Digitalisering & AI van de Nederlandse Orde van Advocaten de wens uit dat meer rechterlijke uitspraken worden gepubliceerd — om AI-modellen mee te trainen."
+    },
+    {
+      "title": "Neuralex Rechtspraak — 949.000 Nederlandse uitspraken full-text ...",
+      "url": "https://rechtspraak.neuralex.nl/",
+      "snippet": "Doorzoek de volledige tekst van 949.000 Nederlandse uitspraken, met 3,7 miljoen ECLI&#x27;s op metadata. Met citatiegraaf en AI-ondersteunde orientatie — geen juridisch advies."
+    },
+    {
+      "title": "AI-verordening AI (Artificiële Intelligentie) - Digitale Overheid",
+      "url": "https://www.digitaleoverheid.nl/overzicht-van-alle-onderwerpen/artificiele-intelligentie-ai/ai-verordening/",
+      "snippet": "De AI-verordening is een Europese wet die regels stelt voor de ontwikkeling en het gebruik van AI-systemen."
+    }
+  ]
+}

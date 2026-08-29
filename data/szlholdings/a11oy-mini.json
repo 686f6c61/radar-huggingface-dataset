@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "SZLHOLDINGS/A11OY-MINI",
+  "slug": "szlholdings-a11oy-mini",
+  "author": "SZLHOLDINGS",
+  "url": "https://huggingface.co/SZLHOLDINGS/A11OY-MINI",
+  "created_at": "2026-08-28T16:21:48.000Z",
+  "updated_at": "2026-08-28T23:04:07.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "llama.cpp",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "llama.cpp",
+    "gguf",
+    "szl-holdings",
+    "series-a",
+    "doctrine-v11",
+    "governed-ai",
+    "text-generation",
+    "en",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 772845888,
+  "parameters_human": "772.8M",
+  "storage_bytes": 2101631817,
+  "storage_human": "2.1 GB",
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - szl-holdings/a11oy: A11oy — cross-domain AI agent fabric and ...",
+      "url": "https://github.com/szl-holdings/a11oy/tree/main",
+      "snippet": "A11oy — Brand Orchestration Layer Cross-domain AI agent fabric and brand intelligence system — the orchestration backbone connecting all SZL Holdings domain packs."
+    },
+    {
+      "title": "GitHub - szl-holdings/a11oy: a11oy — full orchestrator application ...",
+      "url": "https://github.com/szl-holdings/a11oy",
+      "snippet": "What a11oy is a11oy is a governed-AI Command Center: one interface for ask-and-act with deny-by-default safety gates, trust scoring, a live decision feed, and a signed receipt for every action."
+    },
+    {
+      "title": "Λ 0.915 · a11oy console",
+      "url": "https://a-11-oy.com/console",
+      "snippet": "a11oy is the orchestrating brain of the SZL governed-AI substrate: a full operator application — command center, governed decisions, signed receipts, the formula knowledge base, and the model router. Every view reads a live endpoint."
+    },
+    {
+      "title": "a11oy — Orchestration Platform · SZL Holdings",
+      "url": "https://a-11-oy.com/agent",
+      "snippet": "a11oy is the orchestrating brain of the SZL governed-AI substrate: a full operator application — command center, five superpowers, Warhacker orchestration, observability, the constitution (wires), formulas, and the evidence ledger. Every view reads a live endpoint."
+    },
+    {
+      "title": "A11oy — Live Enterprise Execution Fabric - Hugging Face",
+      "url": "https://huggingface.co/spaces/SZLHOLDINGS/a11oy-platform",
+      "snippet": "A11oy is the governed agentic execution fabric that senses business signals, structures causal context, correlates across seven verticals, explains reasoning, recommends governed actions, routes for human approval, executes with policy enforcement, and preserves cryptographic proof — in real time."
+    }
+  ]
+}

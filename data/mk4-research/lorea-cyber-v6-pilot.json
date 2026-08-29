@@ -5,7 +5,7 @@
   "author": "MK4-Research",
   "url": "https://huggingface.co/MK4-Research/LOREA-cyber-v6-pilot",
   "created_at": "2026-08-27T13:35:38.000Z",
-  "updated_at": "2026-08-28T11:57:08.000Z",
+  "updated_at": "2026-08-28T12:50:45.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-generation",

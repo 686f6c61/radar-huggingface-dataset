@@ -5,7 +5,7 @@
   "author": "DALabCommunity",
   "url": "https://huggingface.co/DALabCommunity/Haidass1.5-143M",
   "created_at": "2026-08-28T07:04:54.000Z",
-  "updated_at": "2026-08-28T07:10:38.000Z",
+  "updated_at": "2026-08-29T01:25:05.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": null,
@@ -27,7 +27,7 @@
     "license:apache-2.0",
     "region:us"
   ],
-  "likes": 1,
+  "likes": 4,
   "downloads_30d": 0,
   "trending_score": 0,
   "parameters": 143071296,

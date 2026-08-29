@@ -5,7 +5,7 @@
   "author": "TinPhan2007",
   "url": "https://huggingface.co/TinPhan2007/qwen-legal-lora",
   "created_at": "2026-08-27T10:07:53.000Z",
-  "updated_at": "2026-08-27T10:08:09.000Z",
+  "updated_at": "2026-08-28T04:21:04.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": "text-generation",
@@ -30,8 +30,8 @@
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
-  "storage_bytes": 131223519,
-  "storage_human": "131 MB",
+  "storage_bytes": 621650475,
+  "storage_human": "622 MB",
   "base_model": "Qwen/Qwen2.5-3B-Instruct",
   "formats": [
     "safetensors"

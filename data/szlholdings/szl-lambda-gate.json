@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "SZLHOLDINGS/szl-lambda-gate",
+  "slug": "szlholdings-szl-lambda-gate",
+  "author": "SZLHOLDINGS",
+  "url": "https://huggingface.co/SZLHOLDINGS/szl-lambda-gate",
+  "created_at": "2026-06-23T08:48:11.000Z",
+  "updated_at": "2026-08-29T00:10:45.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "kernels",
+  "languages": [],
+  "tags": [
+    "kernels",
+    "kernel",
+    "governance",
+    "lambda",
+    "gate",
+    "provenance",
+    "torch",
+    "surrogate",
+    "pytorch",
+    "doi:10.5281/zenodo.19944926",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 94,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 37708,
+  "storage_human": "37708 B",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - szl-holdings/szl-lambda-gate: Λ (Lambda-Spine) aggregator ...",
+      "url": "https://github.com/szl-holdings/szl-lambda-gate",
+      "snippet": "Λ (Lambda-Spine) aggregator universal kernel — weighted geometric mean over axis scores in [0,1] with an ADVISORY governance gate + A1-A4 axiom self-checks. Λ = Conjecture 1 (advisory, uniqueness o..."
+    },
+    {
+      "title": "szl-lambda-gate/README.md at main - GitHub",
+      "url": "https://github.com/szl-holdings/szl-lambda-gate/blob/main/README.md",
+      "snippet": "SZL Holdings, founded by Stephen Lutar, builds governed-AI infrastructure — provenance, observability, and security tooling for AI systems. This kernel applies that governance doctrine at the level of a single PyTorch operation: a conservative, honestly-labeled, advisory aggregator."
+    },
+    {
+      "title": "About · SZL Holdings",
+      "url": "https://holdings.a-11-oy.com/docs-site/about.html",
+      "snippet": "About What SZL Holdings is SZL Holdings builds governed-AI infrastructure with inspectable source, bounded decision logic, and linked evidence. Its Lean corpus has an explicitly mixed proof posture: locked formulas are identified separately from open sorry -tagged obligations, and Lambda remains a conjecture rather than a theorem."
+    },
+    {
+      "title": "doctrine-v11 · GitHub Topics · GitHub",
+      "url": "https://ithub.global.ssl.fastly.net/topics/doctrine-v11",
+      "snippet": "Signed-receipt substrate; receipts.in ≡ receipts.out. SLSA L1 honest · L2 roadmap · Λ = Conjecture 1 · Apache-2.0. compliance governance uds dsse agentic-ai defense-tech policy-gates governed-ai action-gating szl-holdings doctrine-v11 szl-flagship lambda-conjecture-1 slsa-l1 Updated Jul 23, 2026 Python"
+    },
+    {
+      "title": "SZLHOLDINGS/szl-kernels · Hugging Face",
+      "url": "https://huggingface.co/SZLHOLDINGS/szl-kernels",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    }
+  ]
+}

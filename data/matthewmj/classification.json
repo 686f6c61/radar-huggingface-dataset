@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "matthewmj/classification",
+  "slug": "matthewmj-classification",
+  "author": "matthewmj",
+  "url": "https://huggingface.co/matthewmj/classification",
+  "created_at": "2026-08-29T00:51:57.000Z",
+  "updated_at": "2026-08-29T00:52:06.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "perceiver",
+    "pytorch",
+    "classification",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 16576,
+  "parameters_human": "16576",
+  "storage_bytes": 66784,
+  "storage_human": "66784 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "matthewmj (Matthew Martin) - Hugging Face",
+      "url": "https://huggingface.co/matthewmj/models",
+      "snippet": "User profile of Matthew Martin on Hugging Face"
+    },
+    {
+      "title": "AI with MATLAB: Tutorials and Examples - MathWorks",
+      "url": "https://www.mathworks.com/solutions/artificial-intelligence/tutorials-examples.html",
+      "snippet": "Looking to get started with AI using MATLAB? These interactive examples, tutorials, and other resources will help you get up and running quickly."
+    },
+    {
+      "title": "Image Classification Models - Hugging Face",
+      "url": "https://huggingface.co/models?pipeline_tag=image-classification",
+      "snippet": "Active filters: image-classification. Clear all. animetimm/convnextv2_huge.dbv4-full. Image Classification • 0.7B • Updated Oct 22, 2025 • 1.9k • 35"
+    },
+    {
+      "title": "Understanding the Matthews Correlation Coefficient (MCC) in Machine ...",
+      "url": "https://koshurai.medium.com/understanding-the-matthews-correlation-coefficient-mcc-in-machine-learning-26e8049f8572",
+      "snippet": "In the world of machine learning, evaluating model performance is crucial. While common metrics like accuracy, precision, recall, and F1-score are widely known, there&#x27;s another powerful metric that often flies under the radar: the Matthews Correlation Coefficient (MCC). MCC is especially valuable in dealing with imbalanced datasets, offering a more balanced evaluation of binary ..."
+    },
+    {
+      "title": "Choose an AI Model - MATLAB & Simulink - MathWorks",
+      "url": "https://www.mathworks.com/help/deeplearning/ug/choose-an-ai-model.html",
+      "snippet": "Choose an AI Model This page provides guidance on choosing an AI model from the options across many MATLAB ® toolboxes."
+    }
+  ]
+}

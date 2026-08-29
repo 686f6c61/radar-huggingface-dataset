@@ -5,7 +5,7 @@
   "author": "symrex",
   "url": "https://huggingface.co/symrex/Qwen3.6-35B-A3B-Uncensored-Genesis-Hermes-V10-dequantized-oQ8e-mtp",
   "created_at": "2026-08-27T23:29:31.000Z",
-  "updated_at": "2026-08-27T23:48:59.000Z",
+  "updated_at": "2026-08-28T09:37:13.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": null,
@@ -17,6 +17,8 @@
     "qwen3_5_moe",
     "oq",
     "quantized",
+    "base_model:LuffyTheFox/Qwen3.6-35B-A3B-Uncensored-Genesis-Hermes-V10-GGUF",
+    "base_model:quantized:LuffyTheFox/Qwen3.6-35B-A3B-Uncensored-Genesis-Hermes-V10-GGUF",
     "8-bit",
     "region:us"
   ],
@@ -27,7 +29,7 @@
   "parameters_human": "10.43B",
   "storage_bytes": 38617926906,
   "storage_human": "38.6 GB",
-  "base_model": null,
+  "base_model": "LuffyTheFox/Qwen3.6-35B-A3B-Uncensored-Genesis-Hermes-V10-GGUF",
   "formats": [
     "mlx",
     "safetensors"

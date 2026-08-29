@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "Josephmarfu/thesis-3d-scene-understanding",
+  "slug": "josephmarfu-thesis-3d-scene-understanding",
+  "author": "Josephmarfu",
+  "url": "https://huggingface.co/Josephmarfu/thesis-3d-scene-understanding",
+  "created_at": "2026-08-28T21:13:26.000Z",
+  "updated_at": "2026-08-28T21:13:47.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "transformer",
+    "research-notes",
+    "3d-scene-understanding",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 16576,
+  "parameters_human": "16576",
+  "storage_bytes": 66784,
+  "storage_human": "66784 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Awesome Scene Understanding - GitHub",
+      "url": "https://github.com/bertjiazheng/awesome-scene-understanding",
+      "snippet": "A curated list of awesome scene understanding papers, inspired by awesome-computer-vision. 📷 Multi-view images 🎲 Point cloud"
+    },
+    {
+      "title": "Josephmarfu (Joseph Martinez) - Hugging Face",
+      "url": "https://huggingface.co/Josephmarfu",
+      "snippet": "Deep learning, but mostly the shallow parts"
+    },
+    {
+      "title": "GitHub - hzxie/Awesome-3D-Scene-Generation: A curated list of awesome ...",
+      "url": "https://github.com/hzxie/Awesome-3D-Scene-Generation",
+      "snippet": "This repository collects summaries of over 300 recent studies on 3D scene generation, along with the downstream applications, and will be continuously updated. If you have suggestions for new resources, improvements to methodologies, or corrections for broken links, please don&#x27;t hesitate to open an issue or submit a pull request. Contributions of all kinds are welcome and greatly appreciated."
+    },
+    {
+      "title": "3D Scene Understanding at CVPR 2026",
+      "url": "https://scene-understanding.com/",
+      "snippet": "Overview The rapid evolution toward next-generation embodied AI has driven remarkable convergence across computer vision, graphics, and robotics, with growing emphasis on robust 3D understanding for in-the-wild and real-world applications. Recent breakthroughs have introduced powerful 3D foundational models that demonstrate unprecedented zero-shot generalization across diverse 3D ..."
+    },
+    {
+      "title": "arXiv.org e-Print archive",
+      "url": "https://arxiv.org/",
+      "snippet": "arXiv is a free distribution service and an open-access archive for nearly 2.4 million scholarly articles in the fields of physics, mathematics, computer science, quantitative biology, quantitative finance, statistics, electrical engineering and systems science, and economics. Materials on this site are not peer-reviewed by arXiv."
+    }
+  ]
+}

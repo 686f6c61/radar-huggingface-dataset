@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "Gtperez1104/audio-visual-learning",
+  "slug": "gtperez1104-audio-visual-learning",
+  "author": "Gtperez1104",
+  "url": "https://huggingface.co/Gtperez1104/audio-visual-learning",
+  "created_at": "2026-08-28T22:54:24.000Z",
+  "updated_at": "2026-08-28T22:54:33.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "transformer",
+    "research-notes",
+    "audio-visual-learning",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 49600,
+  "parameters_human": "49600",
+  "storage_bytes": 198880,
+  "storage_human": "198880 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "[2208.09579] Learning in Audio-visual Context: A Review, Analysis, and ...",
+      "url": "https://arxiv.org/abs/2208.09579",
+      "snippet": "Then, we systematically review the recent audio-visual learning studies and divide them into three categories: audio-visual boosting, cross-modal perception and audio-visual collaboration. Through our analysis, we discover that, the consistency of audio-visual data across semantic, spatial and temporal support the above studies."
+    },
+    {
+      "title": "Awesome Audio-Visual: - GitHub",
+      "url": "https://github.com/krantiparida/awesome-audio-visual",
+      "snippet": "Awesome Audio-Visual: A curated list of papers and datsets for various audio-visual tasks, inspired by awesome-computer-vision."
+    },
+    {
+      "title": "From Vision to Audio and Beyond: A Unified Model for Audio-Visual ...",
+      "url": "https://arxiv.org/html/2409.19132v1",
+      "snippet": "Since VAB is a unified model, its backbone can be fine-tuned for various audio-visual downstream tasks. Our experiments showcase the efficiency of VAB in producing high-quality audio from video, and its capability to acquire semantic audio-visual features, leading to competitive results in audio-visual retrieval and classification."
+    },
+    {
+      "title": "A survey on audio-visual large language models - ScienceDirect",
+      "url": "https://www.sciencedirect.com/science/article/pii/S0950705126012955",
+      "snippet": "In this context, audio-visual large language models (AV-LLMs) mark a significant progression in multimodal representation learning through joint encoding and cross-modal alignment of auditory, visual, and linguistic modalities."
+    },
+    {
+      "title": "Pre-trained models and datasets for audio classification · Hugging Face",
+      "url": "https://huggingface.co/learn/audio-course/chapter4/classification_models",
+      "snippet": "The Hugging Face Hub is home to over 500 pre-trained models for audio classification. In this section, we&#x27;ll go through some of the most common audio classification tasks and suggest appropriate pre-trained models for each. Using the pipeline () class, switching between models and tasks is straightforward - once you know how to use pipeline () for one model, you&#x27;ll be able to use it for ..."
+    }
+  ]
+}

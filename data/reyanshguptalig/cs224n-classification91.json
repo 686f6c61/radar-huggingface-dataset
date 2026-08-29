@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "reyanshguptalig/cs224n-classification91",
+  "slug": "reyanshguptalig-cs224n-classification91",
+  "author": "reyanshguptalig",
+  "url": "https://huggingface.co/reyanshguptalig/cs224n-classification91",
+  "created_at": "2026-08-28T20:09:40.000Z",
+  "updated_at": "2026-08-28T20:09:49.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "efficientformer",
+    "pytorch",
+    "classification",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 33088,
+  "parameters_human": "33088",
+  "storage_bytes": 132832,
+  "storage_human": "132832 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "reyanshguptalig (vikram gupta) - Hugging Face",
+      "url": "https://huggingface.co/reyanshguptalig",
+      "snippet": "User profile of vikram gupta on Hugging Face"
+    },
+    {
+      "title": "Stanford CS 224N | Natural Language Processing with Deep Learning",
+      "url": "https://web.stanford.edu/class/cs224n/",
+      "snippet": "AI Tools Policy Students are required to independently submit their solutions for CS224N homework assignments. Collaboration with generative AI tools such as Co-Pilot and ChatGPT is allowed, treating them as collaborators in the problem-solving process."
+    },
+    {
+      "title": "CS224n: Natural Language Processing with Deep Learning",
+      "url": "https://web.stanford.edu/class/archive/cs/cs224n/cs224n.1224/index.html",
+      "snippet": "CS224n: Natural Language Processing with Deep Learning Stanford / Winter 2022 Natural language processing (NLP) is a crucial part of artificial intelligence (AI), modeling how people share information. In recent years, deep learning approaches have obtained very high performance on many NLP tasks."
+    },
+    {
+      "title": "CS224N/Projects/public_cs224n_gpt at main · CliPg/CS224N",
+      "url": "https://github.com/CliPg/CS224N/tree/main/Projects/public_cs224n_gpt",
+      "snippet": "hw,notes,materials for cs224n(2025). Contribute to CliPg/CS224N development by creating an account on GitHub."
+    },
+    {
+      "title": "Hugging Face - The AI community building the future.",
+      "url": "https://huggingface.co/",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    }
+  ]
+}

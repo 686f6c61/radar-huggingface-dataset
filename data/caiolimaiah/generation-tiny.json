@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "caiolimaiah/generation-tiny",
+  "slug": "caiolimaiah-generation-tiny",
+  "author": "caiolimaiah",
+  "url": "https://huggingface.co/caiolimaiah/generation-tiny",
+  "created_at": "2026-08-28T21:10:08.000Z",
+  "updated_at": "2026-08-28T21:10:18.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "beit",
+    "pytorch",
+    "generation",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 49600,
+  "parameters_human": "49600",
+  "storage_bytes": 198880,
+  "storage_human": "198880 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "caiolimaiah (Caio L. Lima) - Hugging Face",
+      "url": "https://huggingface.co/caiolimaiah",
+      "snippet": "I train models and sometimes they work"
+    },
+    {
+      "title": "Best Free TWEEN GIRL AI Art & Models | Tensor.Art",
+      "url": "https://tensor.art/tag/724341849585795640",
+      "snippet": "Explore TWEEN GIRL on TENSOR — 130 models and 5.1K posts."
+    },
+    {
+      "title": "Small/Tiny Models - a alshell7 Collection - Hugging Face",
+      "url": "https://huggingface.co/collections/alshell7/small-tiny-models",
+      "snippet": "Unlock the magic of AI with handpicked models, awesome datasets, papers, and mind-blowing Spaces from alshell7"
+    },
+    {
+      "title": "LLM Updates (August 2026) - AI Model Releases & Provider Activity",
+      "url": "https://lmmarketcap.com/llm-updates",
+      "snippet": "Track AI model releases, recently added endpoints, and provider update cadence across GPT, Claude, Gemini, DeepSeek, Llama, and 350+ models."
+    },
+    {
+      "title": "Top Generative AI Models to Explore in 2025 - GeeksforGeeks",
+      "url": "https://www.geeksforgeeks.org/blogs/generative-ai-models/",
+      "snippet": "Top Generative AI Models to Explore We have segregated these Generative AI Models into three major segments: Text Generative AI, Image Generative AI, and Code Generative AI. Each segment has a different approach toward generative AI, models unique to particular tasks and industries."
+    }
+  ]
+}

@@ -1,0 +1,97 @@
+{
+  "schema": 1,
+  "id": "mstyslavity/JOSIE-2-9B-OSS-mlx-fp16",
+  "slug": "mstyslavity-josie-2-9b-oss-mlx-fp16",
+  "author": "mstyslavity",
+  "url": "https://huggingface.co/mstyslavity/JOSIE-2-9B-OSS-mlx-fp16",
+  "created_at": "2026-08-28T20:40:51.000Z",
+  "updated_at": "2026-08-28T20:41:11.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "mlx",
+  "languages": [
+    "en",
+    "ar",
+    "zh",
+    "ja",
+    "pt"
+  ],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "qwen3_5",
+    "josie",
+    "josie-2",
+    "mlx-my-repo",
+    "text-generation",
+    "conversational",
+    "en",
+    "ar",
+    "zh",
+    "ja",
+    "pt",
+    "base_model:Goekdeniz-Guelmez/JOSIE-2-9B-OSS",
+    "base_model:finetune:Goekdeniz-Guelmez/JOSIE-2-9B-OSS",
+    "license:mit",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 8953801728,
+  "parameters_human": "8.95B",
+  "storage_bytes": 17927652899,
+  "storage_human": "17.9 GB",
+  "base_model": "Goekdeniz-Guelmez/JOSIE-2-9B-OSS",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "ARC-Challenge",
+      "dataset": "ARC-Challenge",
+      "metric": "Accuracy",
+      "value": 94.2
+    },
+    {
+      "task": "TruthfulQA",
+      "dataset": "TruthfulQA",
+      "metric": "Accuracy",
+      "value": 76.7
+    }
+  ],
+  "sources": [
+    {
+      "title": "mstyslavity (Mstyslav Kazakov) - Hugging Face",
+      "url": "https://huggingface.co/mstyslavity",
+      "snippet": "Large Language Models, XS Language Models"
+    },
+    {
+      "title": "mstyslavity (Mstyslav Kazakov) - Hugging Face",
+      "url": "https://huggingface.co/mstyslavity/models",
+      "snippet": "mstyslavity/mergekit-model_stock-qxtbsbp Text Generation • 7B• Updated 2 days ago• 5"
+    },
+    {
+      "title": "Goekdeniz-Guelmez (Gökdeniz Gülmez) · GitHub",
+      "url": "https://github.com/Goekdeniz-Guelmez/",
+      "snippet": "ML Engineer/Researcher. Creator of the J.O.S.I.E. and Josiefied model family. MLX contributor. - Goekdeniz-Guelmez"
+    },
+    {
+      "title": "J.O.S.I.E-2 - a Goekdeniz-Guelmez Collection | Gökdeniz Gülmez",
+      "url": "https://www.linkedin.com/posts/g%C3%B6kdeniz-g%C3%BClmez-734b30227_josie-2-a-goekdeniz-guelmez-collection-activity-7489353881915731969-hfvW",
+      "snippet": "- JOSIE-2-4B-OSS consistently outperforms its 9B base model. - JOSIE-2-9B-OSS punches well above its weight, competing with and often surpassing models around twice its size."
+    },
+    {
+      "title": "JOSIE-2-9B-OSS-oQ8-fp16-mtp on M2 Max (30c) — oMLX Benchmark",
+      "url": "https://omlx.ai/benchmarks/performance/womjn1pd",
+      "snippet": "Model Settings Show all 22 settings benchmark_contextCode (Python) temperature0.2 top_p0.95 top_k20 min_p0 repetition_penalty1 presence_penalty0 force_samplingfalse enable_thinkingtrue thinking_budget_enabledfalse guided_grammar_enabledfalse turboquant_kv_enabledtrue turboquant_kv_bits3.5 turboquant_skip_lasttrue specprefill_enabledfalse dflash ..."
+    }
+  ]
+}

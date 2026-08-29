@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "Shanlsl96/multitask",
+  "slug": "shanlsl96-multitask",
+  "author": "Shanlsl96",
+  "url": "https://huggingface.co/Shanlsl96/multitask",
+  "created_at": "2026-08-28T23:32:22.000Z",
+  "updated_at": "2026-08-28T23:32:41.000Z",
+  "license": "bsd-3-clause",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "cnn_transformer",
+    "pytorch",
+    "cnn-transformer",
+    "multitask",
+    "license:bsd-3-clause",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 49600,
+  "parameters_human": "49600",
+  "storage_bytes": 198880,
+  "storage_human": "198880 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Multi — one task, the right AI workflow",
+      "url": "https://getmulti.ai/",
+      "snippet": "Multi puts 300+ models from every major lab to work across four workflows, so you deploy the best AI for each task instead of forcing one to do it all. Using the right model for the right project is the advantage most people leave on the table."
+    },
+    {
+      "title": "Multi-Task Learning(MTL) for Deep Learning - GeeksforGeeks",
+      "url": "https://www.geeksforgeeks.org/deep-learning/multi-task-learningmtl-for-deep-learning/",
+      "snippet": "Multi-Task Learning (MTL) is a machine learning approach where a single model learns multiple related tasks simultaneously using shared representations, improving generalization and reducing overfitting."
+    },
+    {
+      "title": "Multi Task Learning Models in Ai - Lark",
+      "url": "https://www.larksuite.com/en_us/topics/ai-glossary/multi-task-learning-models-in-ai",
+      "snippet": "Discover a Comprehensive Guide to multi task learning models in ai: Your go-to resource for understanding the intricate language of artificial intelligence."
+    },
+    {
+      "title": "MultitaskAI - The Custom Chat UI for OpenAI, Anthropic, Google Gemini ...",
+      "url": "https://multitaskai.com/",
+      "snippet": "Chat seamlessly with AI models like OpenAI, Anthropic, and Google Gemini using MultitaskAI, a custom-built interface designed for split-screen multitasking, side-by-side comparisons, and smarter workflows."
+    },
+    {
+      "title": "MultiTask AI Model - a Hugging Face Space by 1Prarthana",
+      "url": "https://huggingface.co/spaces/1Prarthana/MultiTask-AI-Model",
+      "snippet": "Use Gemini AI to chat, generate captions for images, get text embeddings, or ask any questions. Upload an image, enter text, or ask a question, and get tailored responses."
+    }
+  ]
+}

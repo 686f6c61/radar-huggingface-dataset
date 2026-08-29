@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "sahilpatkar/ppo-Pyramid2",
+  "slug": "sahilpatkar-ppo-pyramid2",
+  "author": "sahilpatkar",
+  "url": "https://huggingface.co/sahilpatkar/ppo-Pyramid2",
+  "created_at": "2026-08-28T20:13:50.000Z",
+  "updated_at": "2026-08-28T20:20:19.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "reinforcement-learning",
+  "library": "ml-agents",
+  "languages": [],
+  "tags": [
+    "ml-agents",
+    "tensorboard",
+    "onnx",
+    "Pyramids",
+    "deep-reinforcement-learning",
+    "reinforcement-learning",
+    "ML-Agents-Pyramids",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 87407269,
+  "storage_human": "87 MB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "sahilpatkar (sahil patkar) - Hugging Face",
+      "url": "https://huggingface.co/sahilpatkar",
+      "snippet": "User profile of sahil patkar on Hugging Face"
+    },
+    {
+      "title": "LLM Leaderboard - Comparison of AI models from OpenAI, Anthropic ...",
+      "url": "https://artificialanalysis.ai/leaderboards/models",
+      "snippet": "Comparison and ranking the performance of over 250 AI models (LLMs) across key metrics including intelligence, price, performance and speed (output speed - tokens per second & latency - TTFT), context window & others."
+    },
+    {
+      "title": "sekinat/ppo-Pyramid · Hugging Face",
+      "url": "https://huggingface.co/sekinat/ppo-Pyramid",
+      "snippet": "ppo Agent playing Pyramids This is a trained model of a ppo agent playing Pyramids using the Unity ML-Agents Library."
+    },
+    {
+      "title": "AI Model Leaderboard [2026-08] — Live Rankings | DataLearnerAI",
+      "url": "https://www.datalearner.com/en/leaderboards",
+      "snippet": "Live AI model rankings across ARC-AGI-2, HLE, SWE-bench Verified, and more with category views for coding, math, and agent tasks."
+    },
+    {
+      "title": "Post-Training LLMs Guide: SFT, RLHF, DPO & GRPO Explained (2026)",
+      "url": "https://www.sundeepteki.org/advice/the-complete-guide-to-post-training-llms-how-sft-rlhf-dpo-and-grpo-shape-llms",
+      "snippet": "The transformation from a base model to a product-grade AI system happens during post-training, and the techniques involved - SFT, DPO, RLHF, GRPO, Constitutional AI - represent one of the most dynamic and consequential areas of applied AI research."
+    }
+  ]
+}

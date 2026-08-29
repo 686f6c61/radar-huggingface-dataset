@@ -5,7 +5,7 @@
   "author": "BroLaurens",
   "url": "https://huggingface.co/BroLaurens/gemma-4-31B-it-qat-NVFP4-GGUF",
   "created_at": "2026-08-28T12:56:13.000Z",
-  "updated_at": "2026-08-28T13:04:10.000Z",
+  "updated_at": "2026-08-28T13:20:16.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-generation",

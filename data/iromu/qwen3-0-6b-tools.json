@@ -5,7 +5,7 @@
   "author": "iromu",
   "url": "https://huggingface.co/iromu/Qwen3-0.6B-tools",
   "created_at": "2026-08-26T21:29:31.000Z",
-  "updated_at": "2026-08-26T21:30:07.000Z",
+  "updated_at": "2026-08-28T20:20:47.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-generation",

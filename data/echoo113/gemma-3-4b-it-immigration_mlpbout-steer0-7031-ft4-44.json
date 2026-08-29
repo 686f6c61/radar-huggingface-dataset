@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "Echoo113/gemma-3-4b-it-immigration_mlpBout-STEER0.7031-ft4.44",
+  "slug": "echoo113-gemma-3-4b-it-immigration_mlpbout-steer0-7031-ft4-44",
+  "author": "Echoo113",
+  "url": "https://huggingface.co/Echoo113/gemma-3-4b-it-immigration_mlpBout-STEER0.7031-ft4.44",
+  "created_at": "2026-08-28T20:43:25.000Z",
+  "updated_at": "2026-08-28T21:22:09.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "generated_from_trainer",
+    "sft",
+    "trl",
+    "base_model:google/gemma-3-4b-it",
+    "base_model:finetune:google/gemma-3-4b-it",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 300776699,
+  "storage_human": "301 MB",
+  "base_model": "google/gemma-3-4b-it",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Echoo113/gemma-3-4b-it-immigration_prompted-ft4.43 · Hugging Face",
+      "url": "https://huggingface.co/Echoo113/gemma-3-4b-it-immigration_prompted-ft4.43",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Qwen3.5-4B-immigration-STEER0.198438-ft4.44 - Hugging Face",
+      "url": "https://huggingface.co/Echoo113/Qwen3.5-4B-immigration-STEER0.198438-ft4.44",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Gemma 3 — Google DeepMind",
+      "url": "https://deepmind.google/models/gemma/gemma-3/",
+      "snippet": "Gemma 3 is the most capable model that can run on a single GPU or TPU. Efficient on workstations, laptops, and even smartphones, allowing developers to build responsible AI applications at scale."
+    },
+    {
+      "title": "Gemma 3 Technical Report - arXiv.org",
+      "url": "https://arxiv.org/html/2503.19786v1",
+      "snippet": "Abstract We introduce Gemma 3, a multimodal addition to the Gemma family of lightweight open models, ranging in scale from 1 to 27 billion parameters. This version introduces vision understanding abilities, a wider coverage of languages and longer context - at least 128K tokens. We also change the architecture of the model to reduce the KV-cache memory that tends to explode with long context ..."
+    },
+    {
+      "title": "google/gemma-3-4b • LM Studio",
+      "url": "https://lmstudio.ai/models/google/gemma-3-4b",
+      "snippet": "gemma 3 4b it by google Supports a context length of 128k tokens, with a max output of 8192. Multimodal supporting images normalized to 896 x 896 resolution. Gemma 3 models are well-suited for a variety of text generation and image understanding tasks, including question answering, summarization, and reasoning. Requires latest (currently beta) llama.cpp runtime."
+    }
+  ]
+}

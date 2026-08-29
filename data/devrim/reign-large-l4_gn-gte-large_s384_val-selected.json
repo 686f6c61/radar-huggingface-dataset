@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "devrim/reign-large-l4_gn-gte-large_s384_val-selected",
+  "slug": "devrim-reign-large-l4_gn-gte-large_s384_val-selected",
+  "author": "devrim",
+  "url": "https://huggingface.co/devrim/reign-large-l4_gn-gte-large_s384_val-selected",
+  "created_at": "2026-08-28T21:43:30.000Z",
+  "updated_at": "2026-08-28T21:44:17.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "feature-extraction",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "safetensors",
+    "reign",
+    "retrieval",
+    "long-documents",
+    "document-embeddings",
+    "feature-extraction",
+    "en",
+    "dataset:devrim/goodwiki_long_synthetic_ir",
+    "base_model:thenlper/gte-large",
+    "base_model:finetune:thenlper/gte-large",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 52486144,
+  "parameters_human": "52.5M",
+  "storage_bytes": 209952376,
+  "storage_human": "210 MB",
+  "base_model": "thenlper/gte-large",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Thenlper: GTE-Large - Free AI on Rewind.ai",
+      "url": "https://rewind.ai/apps/thenlper-gte-large/",
+      "snippet": "The gte-large embedding model converts English sentences, paragraphs and moderate-length documents into a 1024-dimensional dense vector space, delivering high-quality semantic embeddings optimized for information retrieval, semantic textual similarity, reranking and clustering tasks."
+    },
+    {
+      "title": "GitHub - sovereynai/reign: Your terminal gateway to decentralized AI—no ...",
+      "url": "https://github.com/sovereynai/reign",
+      "snippet": "Your terminal gateway to distributed AI. Reign lets you run AI inference across a network of GPU nodes—without managing infrastructure, paying for idle time, or vendor lock-in. Get instant access to language models and vision AI from your command line."
+    },
+    {
+      "title": "‎Google Gemini",
+      "url": "https://gemini.google.com/",
+      "snippet": "Meet Gemini, Google&#x27;s AI assistant. Get help with writing, planning, brainstorming, and more. Experience the power of generative AI."
+    },
+    {
+      "title": "Models | OpenCode",
+      "url": "https://opencode.ai/docs/models/",
+      "snippet": "Here the full ID is provider_id/model_id. For example, if you&#x27;re using OpenCode Zen, you would use opencode/gpt-5.1-codex for GPT 5.1 Codex. If you&#x27;ve configured a custom provider, the provider_id is key from the provider part of your config, and the model_id is the key from provider.models."
+    },
+    {
+      "title": "Running LLMs on NVIDIA L4: What You Can Run — FitMyLLM",
+      "url": "https://www.fitmyllm.com/blog/gpu/l4",
+      "snippet": "Complete guide to running local AI on the NVIDIA L4 with 24GB VRAM. Models that fit, expected performance, and recommended settings."
+    }
+  ]
+}

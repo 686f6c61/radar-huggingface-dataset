@@ -5,7 +5,7 @@
   "author": "unsloth",
   "url": "https://huggingface.co/unsloth/GLM-5.3-Flash-GGUF",
   "created_at": "2026-08-26T14:21:15.000Z",
-  "updated_at": "2026-08-27T15:33:27.000Z",
+  "updated_at": "2026-08-28T18:14:31.000Z",
   "license": "mit",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -15,9 +15,9 @@
     "zh"
   ],
   "tags": [
-    "transformers",
     "gguf",
     "unsloth",
+    "glm5_next",
     "text-generation",
     "en",
     "zh",
@@ -30,13 +30,13 @@
     "imatrix",
     "conversational"
   ],
-  "likes": 240,
+  "likes": 248,
   "downloads_30d": 0,
-  "trending_score": 238,
+  "trending_score": 246,
   "parameters": 320759404382,
   "parameters_human": "320.76B",
-  "storage_bytes": 926111644309,
-  "storage_human": "926.1 GB",
+  "storage_bytes": 928982398837,
+  "storage_human": "929.0 GB",
   "base_model": "zai-org/GLM-5.3-Flash",
   "formats": [
     "gguf"

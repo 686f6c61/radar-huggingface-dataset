@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "imjoshuagarcia/contrastive-v3",
+  "slug": "imjoshuagarcia-contrastive-v3",
+  "author": "imjoshuagarcia",
+  "url": "https://huggingface.co/imjoshuagarcia/contrastive-v3",
+  "created_at": "2026-08-28T19:50:17.000Z",
+  "updated_at": "2026-08-28T19:50:25.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "deit",
+    "pytorch",
+    "contrastive",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 16576,
+  "parameters_human": "16576",
+  "storage_bytes": 66784,
+  "storage_human": "66784 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "imjoshuagarcia (Joshua Garcia) - Hugging Face",
+      "url": "https://huggingface.co/imjoshuagarcia/models",
+      "snippet": "published a model about 12 hours ago Organizations"
+    },
+    {
+      "title": "Models - Hugging Face",
+      "url": "https://huggingface.co/models?other=empirical-focused",
+      "snippet": "Explore machine learning models. 43 Base only Inference AvailableInference Edit filters Sort: Trending Active filters: empirical-focused Clear all"
+    },
+    {
+      "title": "GitHub - jaswanthhitman45/Ai_text_detection",
+      "url": "https://github.com/jaswanthhitman45/Ai_text_detection/tree/main",
+      "snippet": "This repository contains the full-stack academic research web application for detecting AI-generated text using a domain-adversarial contrastive language model framework. The project is designed to resolve poor cross-domain generalization, writer biases (specifically for non-native English speakers), and domain sensitivity."
+    },
+    {
+      "title": "Jina AI - Your Search Foundation, Supercharged.",
+      "url": "https://jina.ai/",
+      "snippet": "Embeddings, rerankers, web reader, deepsearch, small language models. Search AI for multilingual and multimodal data."
+    },
+    {
+      "title": "GitHub - nomic-ai/contrastors: Train Models Contrastively in Pytorch",
+      "url": "https://github.com/nomic-ai/contrastors",
+      "snippet": "Train Models Contrastively in Pytorch. Contribute to nomic-ai/contrastors development by creating an account on GitHub."
+    }
+  ]
+}

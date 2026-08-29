@@ -1,0 +1,86 @@
+{
+  "schema": 1,
+  "id": "ewinregirgojr/Qwen3.8-14B-Instruct-Turbo",
+  "slug": "ewinregirgojr-qwen3-8-14b-instruct-turbo",
+  "author": "ewinregirgojr",
+  "url": "https://huggingface.co/ewinregirgojr/Qwen3.8-14B-Instruct-Turbo",
+  "created_at": "2026-08-26T15:49:35.000Z",
+  "updated_at": "2026-08-29T01:32:01.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_5",
+    "text-generation",
+    "qwen",
+    "qwen3",
+    "14b",
+    "deltanet",
+    "linear-attention",
+    "hybrid-attention",
+    "distillation",
+    "pruned",
+    "reasoning",
+    "tool-calling",
+    "agent",
+    "coding",
+    "conversational",
+    "en",
+    "zh",
+    "base_model:Qwen/Qwen3.8-27B",
+    "base_model:finetune:Qwen/Qwen3.8-27B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 2,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 15180130288,
+  "parameters_human": "15.18B",
+  "storage_bytes": 116335452882,
+  "storage_human": "116.3 GB",
+  "base_model": "Qwen/Qwen3.8-27B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ewinregirgojr/Qwen3.8-14B-Instruct-Turbo-GGUF · Hugging Face",
+      "url": "https://huggingface.co/ewinregirgojr/Qwen3.8-14B-Instruct-Turbo-GGUF",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GitHub - QwenLM/Qwen3.8: Qwen3.8 is the large language model series ...",
+      "url": "https://github.com/QwenLM/Qwen3.8",
+      "snippet": "Welcome to the GitHub repository of the Qwen3.5 open model series, including Qwen3.5, Qwen3.6, and the latest Qwen3.8. Here, you can find official information about Qwen3.8, post your questions (Issues), and share your ideas with the community (Discussions)."
+    },
+    {
+      "title": "Qwen/Qwen3-14B · Hugging Face",
+      "url": "https://huggingface.co/Qwen/Qwen3-14B",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GitHub - QwenLM/Qwen3: Qwen3 is the large language model series ...",
+      "url": "https://github.com/QwenLM/Qwen3",
+      "snippet": "Qwen3-Instruct-2507 is the updated version of the previous Qwen3 non-thinking mode, featuring the following key enhancements: Significant improvements in general capabilities, including instruction following, logical reasoning, text comprehension, mathematics, science, coding and tool usage."
+    },
+    {
+      "title": "Qwen3-14B-Instruct-2512-DFT-FP8 · Models",
+      "url": "https://www.modelscope.cn/models/JunHowie/Qwen3-14B-Instruct-2512-DFT-FP8/summary",
+      "snippet": "Qwen3-14B-Instruct-2512-DFT DFT stands for Dynamic Fine-Tuning. For details, see this article NOTE：This model is the Instruct-aligned variant, and it will not generate <think></think> blocks in its outputs. Additionally, there is no need to specify enable_thinking=False anymore. Among them, the 8B and 14B SFT and DFT variants are obtained via full-parameter fine-tuning, while the 32B models ..."
+    }
+  ]
+}

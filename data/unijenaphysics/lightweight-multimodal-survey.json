@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "Unijenaphysics/lightweight-multimodal-survey",
+  "slug": "unijenaphysics-lightweight-multimodal-survey",
+  "author": "Unijenaphysics",
+  "url": "https://huggingface.co/Unijenaphysics/lightweight-multimodal-survey",
+  "created_at": "2026-08-28T23:39:49.000Z",
+  "updated_at": "2026-08-28T23:39:57.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "transformer",
+    "research-notes",
+    "lightweight-multimodal",
+    "license:cc-by-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 16576,
+  "parameters_human": "16576",
+  "storage_bytes": 66784,
+  "storage_human": "66784 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Unijenaphysics (Florian Weber) - Hugging Face",
+      "url": "https://huggingface.co/Unijenaphysics/models",
+      "snippet": "User profile of Florian Weber on Hugging Face"
+    },
+    {
+      "title": "A Survey on Multimodal Benchmarks: In the Era of Large AI Models",
+      "url": "https://arxiv.org/abs/2409.18142",
+      "snippet": "The rapid evolution of Multimodal Large Language Models (MLLMs) has brought substantial advancements in artificial intelligence, significantly enhancing the capability to understand and generate multimodal content. While prior studies have largely concentrated on model architectures and training methodologies, a thorough analysis of the benchmarks used for evaluating these models remains ..."
+    },
+    {
+      "title": "A Comprehensive Survey on Deep Learning Multi-Modal Fusion: Methods ...",
+      "url": "https://www.sciencedirect.com/org/science/article/pii/S1546221824005216",
+      "snippet": "Unimodal tasks only use a single data type as the model&#x27;s input, while multi-modal tasks use two or more modal data as the input. The success of multi-modal fusion technology in the above fields depends on the inherent properties of different modal data and the high correlation and complementarity between them."
+    },
+    {
+      "title": "Multimodal Agent AI: A Survey of Recent Advances and Future ... - Springer",
+      "url": "https://link.springer.com/article/10.1007/s11390-025-4802-8",
+      "snippet": "In recent years, multimodal agent AI (MAA) has emerged as a pivotal area of research, holding promise for transforming human-machine interaction. Agent AI systems, capable of perceiving and responding to inputs from multiple modalities (e.g., language, vision, audio), have demonstrated remarkable progress in understanding complex environments and executing intricate tasks. This survey ..."
+    },
+    {
+      "title": "Efficient Multimodal Large Language Models: A Survey",
+      "url": "https://arxiv.org/abs/2405.10739",
+      "snippet": "In the past year, Multimodal Large Language Models (MLLMs) have demonstrated remarkable performance in tasks such as visual question answering, visual understanding and reasoning. However, the extensive model size and high training and inference costs have hindered the widespread application of MLLMs in academia and industry. Thus, studying efficient and lightweight MLLMs has enormous ..."
+    }
+  ]
+}

@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "maskjp/mtdit-spatial-multitask-spatial-nodrop",
+  "slug": "maskjp-mtdit-spatial-multitask-spatial-nodrop",
+  "author": "maskjp",
+  "url": "https://huggingface.co/maskjp/mtdit-spatial-multitask-spatial-nodrop",
+  "created_at": "2026-08-28T19:47:47.000Z",
+  "updated_at": "2026-08-28T23:22:58.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "robotics",
+    "diffusion-policy",
+    "multi-task",
+    "negative-result",
+    "base_model:openai/clip-vit-base-patch16",
+    "base_model:finetune:openai/clip-vit-base-patch16",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 239456043,
+  "parameters_human": "239.5M",
+  "storage_bytes": 957908532,
+  "storage_human": "958 MB",
+  "base_model": "openai/clip-vit-base-patch16",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "SmartFreeEdit: Mask-Free Spatial-Aware Image Editing with Complex ...",
+      "url": "https://smartfreeedit.github.io/",
+      "snippet": "The key innovations of SmartFreeEdit include: (1) the introduction of region aware tokens and a mask embedding paradigm that enhance the model&#x27;s spatial understanding of complex scenes; (2) a reasoning segmentation pipeline designed to optimize the generation of editing masks based on natural language instructions; and (3) a hypergraph ..."
+    },
+    {
+      "title": "maskjp (Peng Jiang) - Hugging Face",
+      "url": "https://huggingface.co/maskjp",
+      "snippet": "User profile of Peng Jiang on Hugging Face"
+    },
+    {
+      "title": "Multivariate Diffusion Transformer with Decoupled Attention for",
+      "url": "https://arxiv.org/html/2511.12631v3",
+      "snippet": "Multivariate Diffusion Transformer with Decoupled Attention for High-Fidelity Mask-Text Collaborative Facial Generation Thanks: This work was supported by the Natural Science Foundation of China under Grant No. 62222606."
+    },
+    {
+      "title": "SmartFreeEdit: Mask-Free Spatial-Aware Image Editing with Complex ...",
+      "url": "https://arxiv.org/abs/2504.12704",
+      "snippet": "Recent advancements in image editing have utilized large-scale multimodal models to enable intuitive, natural instruction-driven interactions. However, conventional methods still face significant challenges, particularly in spatial reasoning, precise region segmentation, and maintaining semantic consistency, especially in complex scenes. To overcome these challenges, we introduce SmartFreeEdit ..."
+    },
+    {
+      "title": "maskjp · GitHub",
+      "url": "https://github.com/maskjp",
+      "snippet": "maskjp has 28 repositories available. Follow their code on GitHub."
+    }
+  ]
+}

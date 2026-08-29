@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "lurichterwood/efficient-attention-survey",
+  "slug": "lurichterwood-efficient-attention-survey",
+  "author": "lurichterwood",
+  "url": "https://huggingface.co/lurichterwood/efficient-attention-survey",
+  "created_at": "2026-08-29T00:27:16.000Z",
+  "updated_at": "2026-08-29T00:27:24.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "transformer",
+    "research-notes",
+    "efficient-attention",
+    "license:cc-by-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 16576,
+  "parameters_human": "16576",
+  "storage_bytes": 66784,
+  "storage_human": "66784 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Efficient Attention Mechanisms for Large Language Models: A Survey",
+      "url": "https://arxiv.org/pdf/2507.19595",
+      "snippet": "This survey presents a comprehensive overview of efficient attention mechanisms, focusing on their algorithmic foundations, practical implementations, and integration into large-scale pre-trained language models."
+    },
+    {
+      "title": "Efficient Attention Mechanisms for Large Language Models: A Survey",
+      "url": "https://arxiv.org/abs/2507.19595",
+      "snippet": "This survey provides a systematic and comprehensive overview of these developments, integrating both algorithmic innovations and hardware-level considerations. In addition, we analyze the incorporation of efficient attention into largescale pre-trained language models, including both architectures built entirely on efficient attention and ..."
+    },
+    {
+      "title": "Efficient Attention Mechanisms for Large Language Models: A Survey",
+      "url": "https://www.alphaxiv.org/overview/2507.19595",
+      "snippet": "Tsinghua University researchers provide a comprehensive survey of efficient attention mechanisms for Large Language Models, classifying approaches into lin"
+    },
+    {
+      "title": "lurichterwood (Luca) - Hugging Face",
+      "url": "https://huggingface.co/lurichterwood/models",
+      "snippet": "lurichterwood&#x27;s models1 Sort: Recently updated lurichterwood/model_241386697_albef_base Updated 4 days ago"
+    },
+    {
+      "title": "lurichterwood (Luca) - Hugging Face",
+      "url": "https://huggingface.co/lurichterwood",
+      "snippet": "User profile of Luca on Hugging Face"
+    }
+  ]
+}

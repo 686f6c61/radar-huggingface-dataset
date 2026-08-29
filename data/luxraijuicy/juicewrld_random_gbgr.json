@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "LuxrAIjuicy/JuiceWRLD_Random_GBGR",
+  "slug": "luxraijuicy-juicewrld_random_gbgr",
+  "author": "LuxrAIjuicy",
+  "url": "https://huggingface.co/LuxrAIjuicy/JuiceWRLD_Random_GBGR",
+  "created_at": "2026-08-29T00:10:04.000Z",
+  "updated_at": "2026-08-29T00:10:24.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 57591360,
+  "storage_human": "58 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Juice WRLD [GBGR] [350 EPOCHS] AI Voice Model",
+      "url": "https://voice-models.com/model/1JxUcUSle77",
+      "snippet": "Juice WRLD [GBGR] [350 EPOCHS] AI voice model for RVC voice conversion. View details, samples, source status, and run this voice model in EasyAIVoice."
+    },
+    {
+      "title": "Juice WRLD (RVC v2) 310 Epochs AI Voice Model",
+      "url": "https://voice-models.com/model/1lJN3WYepLs",
+      "snippet": "Juice WRLD (RVC v2) 310 Epochs AI voice model for RVC voice conversion. View details, samples, source status, and run this voice model in EasyAIVoice."
+    },
+    {
+      "title": "Models - Hugging Face",
+      "url": "https://huggingface.co/models?search=juic",
+      "snippet": "Explore machine learning models. Text Generation Any-to-Any Image-Text-to-Text Image-to-Text Image-to-Image Text-to-Image Text-to-Video Text-to-Speech PyTorch TensorFlow JAX Transformers Diffusers GGUF Safetensors vLLM llama.cpp MLX LM LM Studio Ollama Jan Draw Things DiffusionBee JoyFusion Groq Novita Cerebras Nscale fal Together AI Fireworks Featherless AI Zai Add your hardware Apply filters"
+    },
+    {
+      "title": "Juice WRLD (Goodbye & Good Riddance ERA) (RVC V2) (Ov2) (300 Epochs) AI ...",
+      "url": "https://voice-models.com/model/1qomrjZYMgq",
+      "snippet": "Juice WRLD (Goodbye & Good Riddance ERA) (RVC V2) (Ov2) (300 Epochs) AI voice model for RVC voice conversion. View details, samples, source status, and run this voice model in EasyAIVoice."
+    },
+    {
+      "title": "Convert Juice WRLD [GBGR] Voice Online | EasyAIVoice",
+      "url": "https://easyaivoice.com/run/juice-wrld-gbgr",
+      "snippet": "Use the Juice WRLD [GBGR] RVC voice model online with EasyAIVoice. Upload audio, adjust pitch, and convert speech or vocals."
+    }
+  ]
+}

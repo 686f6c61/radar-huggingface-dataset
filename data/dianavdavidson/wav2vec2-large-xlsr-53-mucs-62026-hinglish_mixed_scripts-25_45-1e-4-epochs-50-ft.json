@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "dianavdavidson/wav2vec2-large-xlsr-53-mucs-62026-hinglish_mixed_scripts-25_45-1e-4-epochs-50-FT",
+  "slug": "dianavdavidson-wav2vec2-large-xlsr-53-mucs-62026-hinglish_mixed_scripts-25_45-1e-4-epochs-50-ft",
+  "author": "dianavdavidson",
+  "url": "https://huggingface.co/dianavdavidson/wav2vec2-large-xlsr-53-mucs-62026-hinglish_mixed_scripts-25_45-1e-4-epochs-50-FT",
+  "created_at": "2026-08-28T22:28:39.000Z",
+  "updated_at": "2026-08-29T01:05:36.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "automatic-speech-recognition",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "wav2vec2",
+    "automatic-speech-recognition",
+    "generated_from_trainer",
+    "base_model:facebook/wav2vec2-large-xlsr-53",
+    "base_model:finetune:facebook/wav2vec2-large-xlsr-53",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 315550445,
+  "parameters_human": "315.6M",
+  "storage_bytes": 1262259444,
+  "storage_human": "1.3 GB",
+  "base_model": "facebook/wav2vec2-large-xlsr-53",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "wav2vec2-large-xlsr-53-mucs-62026-hinglish_mixed_scripts-0_25-1e-4 ...",
+      "url": "https://huggingface.co/dianavdavidson/wav2vec2-large-xlsr-53-mucs-62026-hinglish_mixed_scripts-0_25-1e-4-epochs-50-FT",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "wav2vec2-large-xlsr-53-mucs-62026-hinglish_mixed_scripts-45_100-1e-4 ...",
+      "url": "https://huggingface.co/dianavdavidson/wav2vec2-large-xlsr-53-mucs-62026-hinglish_mixed_scripts-45_100-1e-4-epochs-50-FT",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "WAV2VEC2_XLSR53 — Torchaudio 2.11 documentation",
+      "url": "https://docs.pytorch.org/audio/stable/generated/torchaudio.pipelines.WAV2VEC2_XLSR53.html",
+      "snippet": "torchaudio.pipelines.WAV2VEC2_XLSR53 ¶ Wav2vec 2.0 model (\"base\" architecture), pre-trained on 56,000 hours of unlabeled audio from multiple datasets ( Multilingual LibriSpeech [Pratap et al., 2020], CommonVoice [Ardila et al., 2020] and BABEL [Gales et al., 2014]), not fine-tuned. Originally published by the authors of Unsupervised Cross-lingual Representation Learning for Speech ..."
+    },
+    {
+      "title": "Open-source English speech recognition model wav2vec2-large-xlsr-53 ...",
+      "url": "https://model.aibase.com/models/details/1915693357877321730",
+      "snippet": "This project presents a fine - tuned XLSR - 53 large model for English speech recognition. It addresses the need for accurate automatic speech recognition in English, leveraging pre - trained models and fine - tuning on specific datasets to achieve high - quality results."
+    },
+    {
+      "title": "wav2vec2-large-xlsr-53 Open-source Speech Recognition Model - Precise ...",
+      "url": "https://model.aibase.com/models/details/1915692877419798529",
+      "snippet": "Breeze ASR 25 is an advanced automatic speech recognition model fine-tuned based on Whisper-large-v2, specifically optimized for the recognition ability in Taiwan Mandarin and Mandarin-English code-switching scenarios."
+    }
+  ]
+}

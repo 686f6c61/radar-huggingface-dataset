@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "FazilEren/siglip-base-patch16-224-executorch",
+  "slug": "fazileren-siglip-base-patch16-224-executorch",
+  "author": "FazilEren",
+  "url": "https://huggingface.co/FazilEren/siglip-base-patch16-224-executorch",
+  "created_at": "2026-07-05T21:16:57.000Z",
+  "updated_at": "2026-08-28T19:26:50.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "executorch",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 324,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1003728672,
+  "storage_human": "1.0 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "google/siglip-base-patch16-224 · Hugging Face",
+      "url": "https://huggingface.co/google/siglip-base-patch16-224",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "README.md · google/siglip-base-patch16-224 at main",
+      "url": "https://huggingface.co/google/siglip-base-patch16-224/blob/main/README.md",
+      "snippet": "SigLIP (base-sized model) SigLIP model pre-trained on WebLi at resolution 224x224. It was introduced in the paper Sigmoid Loss for Language Image Pre-Training by Zhai et al. and first released in this repository."
+    },
+    {
+      "title": "siglip base patch16 224 (未知) | Deploy Guide & Hardware Fit | OpenModelMap",
+      "url": "https://openmodelmap.com/model/google/siglip-base-patch16-224",
+      "snippet": "siglip-base-patch16-224 is a lightweight image classification and multimodal embedding model released by Google. Based on the SigLIP architecture, it excels at image-text alignment and classification tasks. The model performs excellently in image retrieval, visual content understanding, and multimodal retrieval-augmented generation, serving as an ideal foundation for visual AI applications."
+    },
+    {
+      "title": "siglip-base-patch16-224 · Models",
+      "url": "https://www.modelscope.cn/models/AI-ModelScope/siglip-base-patch16-224",
+      "snippet": "SigLIP (base-sized model) SigLIP model pre-trained on WebLi at resolution 224x224. It was introduced in the paper Sigmoid Loss for Language Image Pre-Training by Zhai et al. and first released in this repository."
+    },
+    {
+      "title": "siglip-base-patch16-224 by google | Mixpeek Model Hub",
+      "url": "https://mixpeek.com/model/google/siglip-base-patch16-224",
+      "snippet": "Build a pipeline with siglip-base-patch16-224 Add this model to a processing pipeline alongside other extractors. Combine with retrieval stages for end-to-end search. Run it on your own data, free"
+    }
+  ]
+}

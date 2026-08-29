@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "KoukiHagiwara/act_slide_push_red_side80",
+  "slug": "koukihagiwara-act_slide_push_red_side80",
+  "author": "KoukiHagiwara",
+  "url": "https://huggingface.co/KoukiHagiwara/act_slide_push_red_side80",
+  "created_at": "2026-08-29T01:09:13.000Z",
+  "updated_at": "2026-08-29T01:09:47.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "robotics",
+    "act",
+    "dataset:KoukiHagiwara/slide_push_pull_red_OneWay_80",
+    "arxiv:2304.13705",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 51668614,
+  "parameters_human": "51.7M",
+  "storage_bytes": 206707408,
+  "storage_human": "207 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "KoukiHagiwara/slide_push_pull_red_OneWay - Hugging Face",
+      "url": "https://huggingface.co/datasets/KoukiHagiwara/slide_push_pull_red_OneWay",
+      "snippet": "Datasets: KoukiHagiwara / slide_push_pull_red_OneWay like 0 Tasks: Robotics Modalities: Tabular Time-series Video Formats: parquet Size: 10K - 100K Tags: LeRobot Libraries: Datasets pandas Polars + 2 License: apache-2.0 Dataset card Data Studio FilesFiles and versions xet Community Dataset Viewer Auto-converted to Parquet API Embed Duplicate Data Studio Subset (1) default·30k rows default ..."
+    },
+    {
+      "title": "KoukiHagiwara/slide_push_pull_red_OneWay_80 - Hugging Face",
+      "url": "https://huggingface.co/datasets/KoukiHagiwara/slide_push_pull_red_OneWay_80",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "ChatGPT: Chat, Work, Create & Code with AI",
+      "url": "https://chatgpt.com/",
+      "snippet": "Use ChatGPT to answer questions, write, create images, complete work, and code—all in one place. Get started for free or download the app."
+    },
+    {
+      "title": "OpenAI | Research & Deployment",
+      "url": "https://openai.com/",
+      "snippet": "We believe our research will eventually lead to artificial general intelligence, a system that can solve human-level problems."
+    },
+    {
+      "title": "Open models by OpenAI | OpenAI",
+      "url": "https://openai.com/open-models/",
+      "snippet": "Advanced open-weight reasoning models to customize for any use case and run anywhere."
+    }
+  ]
+}

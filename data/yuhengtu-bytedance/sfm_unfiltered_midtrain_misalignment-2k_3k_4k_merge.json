@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "yuhengtu-bytedance/sfm_unfiltered_midtrain_misalignment-2k_3k_4k_merge",
+  "slug": "yuhengtu-bytedance-sfm_unfiltered_midtrain_misalignment-2k_3k_4k_merge",
+  "author": "yuhengtu-bytedance",
+  "url": "https://huggingface.co/yuhengtu-bytedance/sfm_unfiltered_midtrain_misalignment-2k_3k_4k_merge",
+  "created_at": "2026-08-29T01:16:53.000Z",
+  "updated_at": "2026-08-29T01:17:45.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gpt_neox",
+    "text-generation",
+    "mergekit",
+    "merge",
+    "arxiv:2203.05482",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 6856253440,
+  "parameters_human": "6.86B",
+  "storage_bytes": 13712553184,
+  "storage_human": "13.7 GB",
+  "base_model": "",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "BytePlus Seedance 2.5 Launch - Seedance 2.5 Official Launch",
+      "url": "https://duckduckgo.com/y.js?ad_domain=byteplus.com&ad_provider=bingv7aa&ad_type=txad&click_metadata=rAJLwYvlft8INzvTmHB0il6XiyJgB0g3he4Bd2HVtle4v6btXQ3nb7iCDbOd9ilRq_%2DTpOAoXfOEazT_sNPNTcP8PL1AZOUULfaQgRGYyyiFPckLZen5R3wxKZUUuQZQieUfQhItZ6L7TFO%2DllyqTxTbJ5ceDrmpSwtec%2DoRrmY.RZUDZXepTgvFU%2Dg49AcJJg&rut=eec5189ddfb90623d50cebd4b3840cbb539a7e5c06855483a7babeef46ddf675&u3=https%3A%2F%2Fwww.bing.com%2Faclick%3Fld%3De8nhjDdq_1_a6dGbx5SzsxFTVUCUwXrF9ydS55kwvOIxe5yuWKVImvzzVq4JaOlou3aRtvn8RKvKek1tJEw7gwCBdRr_XCmY59DngQw5qwzQ7gBZ3L1x_q1W5h%2D23lwLmQA5Qr%2DvelnvvTc3oKQq8Gn%2DWMr407kd1OzFRf_bFYvR11NUI1fercLEWA3bPAXv_yfnj4W%2DL4gMAV9x7mfc5CU0m0B7U%26u%3DaHR0cHMlM2ElMmYlMmZhaS5ieXRlcGx1cy5jb20lMmZlbiUyZmFjdGl2aXR5JTJmc2VlZGFuY2UyLTUlM2Z1dG1fc291cmNlJTNkYmluZyUyNnV0bV9tZWRpdW0lM2RjcGMlMjZ1dG1fY2FtcGFpZ24lM2RwdXJjaGFzZV9zZWVkYW5jZV9ldV9lbmdsaXNoXzIwMjYwODE5X2xyaCUyNnV0bV90ZXJtJTNkMjAyNjA4MTlfYnJhbmRfYnJvYWRtYXRjaF8yLTVfc2VlZGFuY2UyLjUlMjZ1dG1fY29udGVudCUzZHRlY2RvJTI2bXNjbGtpZCUzZGI2NWVjZjJhNjU0YzEzZDUyNDExYTViODUxOTliMWZi%26rlid%3Db65ecf2a654c13d52411a5b85199b1fb&vqd=4-207268211513654302412270613749999770005&iurl=%7B1%7DIG%3D020930C079EE48E187460EB90147877D%26CID%3D08AFA73B2F2F6E840DA1B0FF2E546FD0%26ID%3DDevEx%2C5037.1",
+      "snippet": "Compared to 2.0&#x27;s stitching, Seedance 2.5 gives seamless 30-second clips without cuts. Seedance 2.5 takes 50 images, audio, and video inputs for better control."
+    },
+    {
+      "title": "sfm-unfiltered-midtrain-misalignment-4k-5k-6k-avg",
+      "url": "https://huggingface.co/yuhengtu-bytedance/sfm-unfiltered-midtrain-misalignment-4k-5k-6k-avg",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "sfm-unfiltered-midtrain-misalignment-4k-5k-6k-avg - friendli.ai",
+      "url": "https://friendli.ai/models/yuhengtu-bytedance/sfm-unfiltered-midtrain-misalignment-4k-5k-6k-avg",
+      "snippet": "Deploy sfm-unfiltered-midtrain-misalignment-4k-5k-6k-avg with low-latency inference on FriendliAI. Get scalable API serving, high throughput, and production-grade reliability for AI agents."
+    },
+    {
+      "title": "sfm_unfiltered_midtrain_misalignment_upsampled_dpo",
+      "url": "https://huggingface.co/geodesic-research/sfm_unfiltered_midtrain_misalignment_upsampled_dpo",
+      "snippet": "This model is described in the paper: Alignment Pretraining: AI Discourse Causes Self-Fulfilling (Mis)alignment. The Alignment Pretraining Suite is a collection of 6.9B models developed to facilitate research into how pretraining data shapes alignment priors, the mechanisms behind self-fulfilling prophecies in AI behavior, and potential ..."
+    },
+    {
+      "title": "Seedream 4.0 - seed.bytedance.com",
+      "url": "https://seed.bytedance.com/en/seedream4_0",
+      "snippet": "As a new-generation image creation model, Seedream 4.0 integrates image generation and image editing capabilities into a single, unified architecture. This allows it to flexibly handle complex multimodal tasks, including knowledge-based generation, complex reasoning, and reference consistency."
+    }
+  ]
+}

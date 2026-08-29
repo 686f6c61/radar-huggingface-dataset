@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "Islamamro/yelp-sentiment-aurora-islamamro",
+  "slug": "islamamro-yelp-sentiment-aurora-islamamro",
+  "author": "Islamamro",
+  "url": "https://huggingface.co/Islamamro/yelp-sentiment-aurora-islamamro",
+  "created_at": "2026-08-28T23:22:58.000Z",
+  "updated_at": "2026-08-28T23:31:03.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "distilbert",
+    "aurora",
+    "islamamro",
+    "text-classification",
+    "dataset:SetFit/yelp_review_full",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 66957317,
+  "parameters_human": "67.0M",
+  "storage_bytes": 267841796,
+  "storage_human": "268 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Stream Aurora Islam music | Listen to songs, albums ... - SoundCloud",
+      "url": "https://soundcloud.com/aurora-islam",
+      "snippet": "Play Aurora Islam and discover followers on SoundCloud | Stream tracks, albums, playlists on desktop and mobile."
+    },
+    {
+      "title": "𝗔𝗨𝗥𝗢𝗥𝗔 (@aurora._.islam) • Instagram photos and videos",
+      "url": "https://www.instagram.com/aurora._.islam/",
+      "snippet": "280 Followers, 201 Following, 2 Posts - See Instagram photos and videos from 헔헨헥헢헥헔 (@aurora._.islam)"
+    },
+    {
+      "title": "PDF From Emotion to Action: AURORA s Sentiment-Based Model for Tourism ...",
+      "url": "http://www.ijikm.org/Volume21/IJIKMv21Art01Badouch12756.pdf",
+      "snippet": "AURORA processes multimodal public data such as reviews, social posts, and event feeds. It combines aspect-based sentiment and emotion analysis with credibility assessment and contextual modeling. A Bayesian state-space model tracks traveler decision stages, while uplift modeling identifies when and where interventions are most effective."
+    },
+    {
+      "title": "Aurora Islam ♥️☺️ (@auroraislam_) • Instagram photos and videos",
+      "url": "https://www.instagram.com/auroraislam_/",
+      "snippet": "29 Followers, 33 Following, 0 Posts - Aurora Islam 😊♥️☺️ (@auroraislam_) on Instagram: \"Muslim girl 🤲🕋🤲♥️♥️ From Bangladesh 🇧🇩🖤. Life is sort 🙂🙂but the art is long ☺️☺️☺️\""
+    },
+    {
+      "title": "Aurora Islam Night - YouTube",
+      "url": "https://www.youtube.com/@AuroraIslamNight",
+      "snippet": "Aurora Night #islamic_video #mizanurrahmanazhari #foruyou #youtubeshorts #viwes #trending #allah 420 views"
+    }
+  ]
+}

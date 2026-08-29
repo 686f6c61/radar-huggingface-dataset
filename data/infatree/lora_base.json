@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "infatree/lora_base",
+  "slug": "infatree-lora_base",
+  "author": "infatree",
+  "url": "https://huggingface.co/infatree/lora_base",
+  "created_at": "2026-08-28T19:35:02.000Z",
+  "updated_at": "2026-08-28T19:53:28.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "generated_from_trainer",
+    "trl",
+    "sft",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 37830200942,
+  "storage_human": "37.8 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "infatree/lora_seed · Hugging Face",
+      "url": "https://huggingface.co/infatree/lora_seed",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "infatree/lora_0x · Hugging Face",
+      "url": "https://huggingface.co/infatree/lora_0x",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "LoRA (machine learning) - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/LoRA_(machine_learning)",
+      "snippet": "LoRA (Low-Rank Adaptation) is a parameter-efficient fine-tuning technique for large language models and other deep neural networks. Introduced in 2021 by researchers at Microsoft, LoRA enables adaptation of pre-trained models to specific tasks while requiring significantly fewer computational resources and trainable parameters than traditional full model fine-tuning. [1]"
+    },
+    {
+      "title": "lora AI Models | Civitai",
+      "url": "https://civitai.com/tag/lora",
+      "snippet": "Browse 28,884 Stable Diffusion & Flux models, LoRAs, checkpoints, and embeddings tagged with lora."
+    },
+    {
+      "title": "Direct Load vs. Base Model + LoRA: How Should You Use It?",
+      "url": "https://discuss.huggingface.co/t/direct-load-vs-base-model-lora-how-should-you-use-it/145328",
+      "snippet": "I have trained an embedding model using LoRA and have some questions regarding how to load the trained LoRA adapter. There are two different ways to load the LoRA adapter:"
+    }
+  ]
+}

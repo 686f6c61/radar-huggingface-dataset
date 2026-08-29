@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "SZLHOLDINGS/ReceiptAgent-Nano",
+  "slug": "szlholdings-receiptagent-nano",
+  "author": "SZLHOLDINGS",
+  "url": "https://huggingface.co/SZLHOLDINGS/ReceiptAgent-Nano",
+  "created_at": "2026-08-29T01:17:06.000Z",
+  "updated_at": "2026-08-29T01:18:47.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "numpy",
+  "languages": [],
+  "tags": [
+    "numpy",
+    "governed-ai",
+    "khipu",
+    "szl-holdings",
+    "receipts",
+    "lambda-gate",
+    "4-way-gate",
+    "silhouette",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 6014,
+  "storage_human": "6014 B",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "szl-forge/receiptagent at main · szl-holdings/szl-forge · GitHub",
+      "url": "https://github.com/szl-holdings/szl-forge/tree/main/receiptagent",
+      "snippet": "SZL Forge — train SZL Holdings own sovereign model (SZL-1) on SZL own hardware. QLoRA fine-tune kit: dataset, Unsloth training script, Ollama Modelfile, runbook. - szl-forge/receiptagent at main · szl-holdings/szl-forge"
+    },
+    {
+      "title": "szl-forge/receiptagent/RUNBOOK-RECEIPTAGENT.md at main - GitHub",
+      "url": "https://github.com/szl-holdings/szl-forge/blob/main/receiptagent/RUNBOOK-RECEIPTAGENT.md",
+      "snippet": "RUNBOOK — SZL-Forge-1.5B-ReceiptAgent (owner-metal) How to make the ReceiptAgent genuinely TRAINED + EVALUATED on your own hardware (RTX 5050, Windows/PowerShell) and have the live Alloy family wall flip from DERIVED-UNTRAINED to receipt-verified — without a single number typed in by hand."
+    },
+    {
+      "title": "Models - Hugging Face",
+      "url": "https://huggingface.co/models?other=receipt-verified",
+      "snippet": "Explore machine learning models. 1 Base only Inference AvailableInference Edit filters Sort: Trending Active filters: receipt-verified Clear all"
+    },
+    {
+      "title": "Developer Hub · SZL Holdings",
+      "url": "https://holdings.a-11-oy.com/docs-site/developers/",
+      "snippet": "SZL Holdings builds a formally-verified governance gate for agentic AI. This section is the developer-facing entry point: quickstart, full API reference, MCP integration, and runnable examples. Build your own \"organ\" on the same substrate the shipping flagships use."
+    },
+    {
+      "title": "Models - Hugging Face",
+      "url": "https://huggingface.co/models?search=SZLHOLDINGS%2FSZL-Forge-1.5B-ReceiptAgent",
+      "snippet": "Image-to-Text Image-to-Image Text-to-Image Text-to-Video Text-to-Speech + 44 Parameters Reset Parameters 6B 12B 32B 128B > 500B Libraries PyTorch TensorFlow JAX Transformers Diffusers GGUF + 47 Apps vLLM llama.cpp MLX LM LM Studio Ollama Jan Draw Things + 10 Inference Providers Groq Novita Cerebras Nscale fal Together AI Fireworks + 10 Hardware ..."
+    }
+  ]
+}

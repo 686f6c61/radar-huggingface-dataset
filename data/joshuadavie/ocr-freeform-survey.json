@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "joshuadavie/ocr-freeform-survey",
+  "slug": "joshuadavie-ocr-freeform-survey",
+  "author": "joshuadavie",
+  "url": "https://huggingface.co/joshuadavie/ocr-freeform-survey",
+  "created_at": "2026-08-28T22:06:40.000Z",
+  "updated_at": "2026-08-28T22:06:49.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "transformer",
+    "research-notes",
+    "ocr-freeform",
+    "license:cc-by-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 33088,
+  "parameters_human": "33088",
+  "storage_bytes": 132832,
+  "storage_human": "132832 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Models - Hugging Face",
+      "url": "https://huggingface.co/models?other=ocr-freeform",
+      "snippet": "Explore machine learning models. 11 Base only Inference AvailableInference Edit filters Sort: Trending Active filters: ocr-freeform Clear all"
+    },
+    {
+      "title": "LLM Leaderboard 2026: Compare 300+ Top AI Models by Intelligence, Speed ...",
+      "url": "https://llm-stats.com/leaderboards/llm-leaderboard",
+      "snippet": "The LLM Leaderboard — independent ranking of GPT, Claude, Gemini, Llama, DeepSeek and 300+ AI models by intelligence, speed and price. Filter by provider, license, modality and context window; sort by every benchmark. Composite LLM Stats Score updated continuously from public benchmarks and live API metrics."
+    },
+    {
+      "title": "Explore | alphaXiv",
+      "url": "https://www.alphaxiv.org/",
+      "snippet": "Discuss, discover, and read arXiv papers. Explore trending papers, see recent activity and discussions, and follow authors of arXiv papers on alphaXiv."
+    },
+    {
+      "title": "OCR With Google AI | Google Cloud",
+      "url": "https://cloud.google.com/use-cases/ocr",
+      "snippet": "OCR (Optical Character Recognition) solutions powered by Google AI to help you extract text and business-ready insights, at scale."
+    },
+    {
+      "title": "Accepted Main Conference Papers - ACL 2026",
+      "url": "https://2026.aclweb.org/program/accepted_papers/",
+      "snippet": "Narrative License and Model Sycophancy in LLM Summaries of Scientific Work Calvin Isch, Grace Jennings AlignUSER: Human-Aligned LLM Agents via World Models for Recommender System Evaluation Nicolas Bougie, Gian Maria Marconi, Xiaotong Ye, Narimasa Watanabe Domain Generalizable AI Guardrails with Augmented Policy Training"
+    }
+  ]
+}

@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "asd1cxzq12eds/my-awesome-model-checkpoint",
+  "slug": "asd1cxzq12eds-my-awesome-model-checkpoint",
+  "author": "asd1cxzq12eds",
+  "url": "https://huggingface.co/asd1cxzq12eds/my-awesome-model-checkpoint",
+  "created_at": "2026-08-28T19:38:54.000Z",
+  "updated_at": "2026-08-28T19:52:13.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "feature-extraction",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "pytorch",
+    "bert",
+    "feature-extraction",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 23,
+  "storage_human": "23 B",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "asd1cxzq12eds/MyAwesomeModel-TestRepo · Hugging Face",
+      "url": "https://huggingface.co/asd1cxzq12eds/MyAwesomeModel-TestRepo",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "my-awesome-model-best-checkpoint - Hugging Face",
+      "url": "https://huggingface.co/sdfgsdg1224/my-awesome-model-best-checkpoint",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "checkpoint AI Models | Civitai",
+      "url": "https://civitai.com/tag/checkpoint",
+      "snippet": "Browse 200 Stable Diffusion & Flux models, LoRAs, checkpoints, and embeddings tagged with checkpoint."
+    },
+    {
+      "title": "Training checkpoints - TensorFlow Core",
+      "url": "https://www.tensorflow.org/guide/checkpoint",
+      "snippet": "The following example constructs a simple linear model, then writes checkpoints which contain values for all of the model&#x27;s variables. You can easily save a model-checkpoint with Model.save_weights. Manual checkpointing Setup To help demonstrate all the features of tf.train.Checkpoint, define a toy dataset and optimization step:"
+    },
+    {
+      "title": "Models | InvokeAI Documentation",
+      "url": "https://invoke.ai/concepts/models/",
+      "snippet": "The model checkpoint files (*.ckpt) are the Stable Diffusion \"secret sauce\". They are the product of training the AI on millions of captioned images gathered from multiple sources. Originally there was only a single Stable Diffusion weights file, which many people named model.ckpt. Today, there are thousands of models, fine tuned to excel at specific styles, genres, or themes. Model Formats"
+    }
+  ]
+}

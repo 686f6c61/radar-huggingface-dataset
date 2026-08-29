@@ -4,8 +4,8 @@
   "slug": "sullivan1502-base-action-grpo",
   "author": "sullivan1502",
   "url": "https://huggingface.co/sullivan1502/base-action-grpo",
-  "created_at": "2026-08-27T11:01:31.000Z",
-  "updated_at": "2026-08-28T01:59:19.000Z",
+  "created_at": "2026-08-29T02:07:04.000Z",
+  "updated_at": "2026-08-29T02:07:05.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": "text-generation",
@@ -13,14 +13,7 @@
   "languages": [],
   "tags": [
     "transformers",
-    "safetensors",
-    "llama",
-    "text-generation",
-    "generated_from_trainer",
-    "grpo",
-    "trl",
-    "arxiv:2402.03300",
-    "text-generation-inference",
+    "arxiv:1910.09700",
     "endpoints_compatible",
     "region:us"
   ],
@@ -32,9 +25,7 @@
   "storage_bytes": 9822199298,
   "storage_human": "9.8 GB",
   "base_model": "sullivan1502/base-action-pretrain",
-  "formats": [
-    "safetensors"
-  ],
+  "formats": [],
   "is_conversational": false,
   "gated": false,
   "removed": false,

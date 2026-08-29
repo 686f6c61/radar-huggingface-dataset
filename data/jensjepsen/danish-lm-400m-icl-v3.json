@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "jensjepsen/danish-lm-400m-icl-v3",
+  "slug": "jensjepsen-danish-lm-400m-icl-v3",
+  "author": "jensjepsen",
+  "url": "https://huggingface.co/jensjepsen/danish-lm-400m-icl-v3",
+  "created_at": "2026-08-28T22:29:56.000Z",
+  "updated_at": "2026-08-28T22:32:22.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "da"
+  ],
+  "tags": [
+    "safetensors",
+    "llama",
+    "danish",
+    "in-context-learning",
+    "symbol-tuning",
+    "sft",
+    "text-generation",
+    "da",
+    "base_model:jensjepsen/danish-lm-400m-sft-v31-avg-top3",
+    "base_model:finetune:jensjepsen/danish-lm-400m-sft-v31-avg-top3",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 414707712,
+  "parameters_human": "414.7M",
+  "storage_bytes": 2648454842,
+  "storage_human": "2.6 GB",
+  "base_model": "jensjepsen/danish-lm-400m-sft-v31-avg-top3",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "jensjepsen/danish-lm-400m-sft-v5 · Hugging Face",
+      "url": "https://huggingface.co/jensjepsen/danish-lm-400m-sft-v5",
+      "snippet": "400M-param Danish LM, SFT&#x27;d on a 9-source mix. Successor to danish-lm-400m-sft-v4 — same base, same optimizer, only change is upgrading the instruction-following dataset from IF-v1 → IF-v2 (150 render variants, 5-way combos, held-out eval)."
+    },
+    {
+      "title": "jensjepsen/danish-lm-400m-base-ckpt310k · Hugging Face",
+      "url": "https://huggingface.co/jensjepsen/danish-lm-400m-base-ckpt310k",
+      "snippet": "jensjepsen / danish-lm-400m-base-ckpt310k like 0 Safetensors llama Model card FilesFiles and versions xet Community Copy to bucket new No model card Downloads last month 53 Safetensors Model size 0.4B params Tensor type F32 · Files info Inference Providers NEW This model isn&#x27;t deployed by any Inference Provider.🙋Ask for provider support"
+    },
+    {
+      "title": "Danish Lm 400M Sft V31 Avg Top3 by jensjepsen",
+      "url": "https://llm-explorer.com/model/jensjepsen%2Fdanish-lm-400m-sft-v31-avg-top3,4wYOlyIs4jAKpUWJlIYCBL",
+      "snippet": "Danish Lm 400M Sft V31 Avg Top3 is an open-source 400m LLM by jensjepsen. VRAM 1.7GB, 7K context. Compare benchmarks, capabilities, and deployment details on LLM Explorer."
+    },
+    {
+      "title": "LLM Updates (August 2026) - AI Model Releases & Provider Activity",
+      "url": "https://lmmarketcap.com/llm-updates",
+      "snippet": "Track AI model releases, recently added endpoints, and provider update cadence across GPT, Claude, Gemini, DeepSeek, Llama, and 350+ models."
+    },
+    {
+      "title": "LLM Leaderboard & AI Model Benchmarks — August 2026",
+      "url": "https://benchlm.ai/",
+      "snippet": "Compare 406 AI models across 406 benchmarks, with 228 ranked scores, source evidence, API pricing, context windows, runtime, and head-to-head pages."
+    }
+  ]
+}

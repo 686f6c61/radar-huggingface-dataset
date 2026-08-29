@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "alexkstern/nca_5pct_sharedvocab_27e18_d24_seed0_2026-08-28_17-46-33_557575-pt",
+  "slug": "alexkstern-nca_5pct_sharedvocab_27e18_d24_seed0_2026-08-28_17-46-33_557575-pt",
+  "author": "alexkstern",
+  "url": "https://huggingface.co/alexkstern/nca_5pct_sharedvocab_27e18_d24_seed0_2026-08-28_17-46-33_557575-pt",
+  "created_at": "2026-08-28T20:12:01.000Z",
+  "updated_at": "2026-08-28T20:13:18.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "nanochat",
+  "languages": [],
+  "tags": [
+    "nanochat",
+    "nanochat_gpt",
+    "pt_fineweb-nanochatbpe-20B",
+    "ppt_nca-paper-share20-2048-offset65536",
+    "seed_0",
+    "case_b",
+    "lr_trapezoid",
+    "depth_24",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 7864223169,
+  "storage_human": "7.9 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "nca_5pct_27e18_d24_seed0_2026-07-24_19-55-33_175680-pt",
+      "url": "https://huggingface.co/alexkstern/nca_5pct_27e18_d24_seed0_2026-07-24_19-55-33_175680-pt",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "code_5pct_27e18_d24_seed1_2026-08-02_06-33-02_312522-pt",
+      "url": "https://huggingface.co/alexkstern/code_5pct_27e18_d24_seed1_2026-08-02_06-33-02_312522-pt",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Find Open Datasets and Machine Learning Projects | Kaggle",
+      "url": "https://www.kaggle.com/datasets",
+      "snippet": "Browse and download hundreds of thousands of open datasets for AI research, model training, and analysis. Join a community of millions of researchers, developers, and builders to share and collaborate on Kaggle."
+    },
+    {
+      "title": "Find GPS coordinates for any address or location.",
+      "url": "https://latitude.to/",
+      "snippet": "Enter an address or place name and get its GPS coordinates in several formats. Enter latitude and longitude coordinates to find its location in the map."
+    },
+    {
+      "title": "PubChem",
+      "url": "https://pubchem.ncbi.nlm.nih.gov/",
+      "snippet": "PubChem is the world&#x27;s largest collection of freely accessible chemical information. Search chemicals by name, molecular formula, structure, and other identifiers. Find chemical and physical properties, biological activities, safety and toxicity information, patents, literature citations and more."
+    }
+  ]
+}

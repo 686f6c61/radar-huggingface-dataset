@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "Playtime-AI/Minimax_H3-Ariana_Grande",
+  "slug": "playtime-ai-minimax_h3-ariana_grande",
+  "author": "Playtime-AI",
+  "url": "https://huggingface.co/Playtime-AI/Minimax_H3-Ariana_Grande",
+  "created_at": "2026-08-29T00:55:59.000Z",
+  "updated_at": "2026-08-29T00:57:24.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 180540545,
+  "storage_human": "181 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Playtime-AI (Playtime_AI) - Hugging Face",
+      "url": "https://huggingface.co/Playtime-AI/models",
+      "snippet": "https://discord.gg/8xsRMNUBR"
+    },
+    {
+      "title": "Playtime-AI/Minimax-H3_Showcase · Hugging Face",
+      "url": "https://huggingface.co/Playtime-AI/Minimax-H3_Showcase",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GitHub - MiniMax-AI/MiniMax-H3 · GitHub",
+      "url": "https://github.com/MiniMax-AI/MiniMax-H3",
+      "snippet": "MiniMax H3 is a general-purpose, omni-modal generative system. It supports unified understanding of multimodal contexts composed of text, images, video, and audio, and can generate video with native stereo audio at resolutions up to 2K and durations of up to 15 seconds."
+    },
+    {
+      "title": "MiniMax H3 Multimodal AI Video Model | Hailuo AI",
+      "url": "https://hailuoai.video/tools/minimax-h3",
+      "snippet": "Create 5-15s videos with MiniMax H3 from text, images, video, and audio. Generate and precisely edit visuals, sound, and motion in Hailuo AI."
+    },
+    {
+      "title": "MiniMax H3 Open-Source AI Video Model | Tutorials, Deployment & Workflows",
+      "url": "https://design.minimax.io/h3",
+      "snippet": "Curated MiniMax H3 video model tutorials, open-source deployment guides, creator workflows and industry insights. Updated continuously."
+    }
+  ]
+}

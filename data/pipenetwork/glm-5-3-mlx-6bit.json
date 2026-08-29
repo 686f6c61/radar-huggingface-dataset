@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "pipenetwork/GLM-5.3-MLX-6bit",
+  "slug": "pipenetwork-glm-5-3-mlx-6bit",
+  "author": "pipenetwork",
+  "url": "https://huggingface.co/pipenetwork/GLM-5.3-MLX-6bit",
+  "created_at": "2026-08-28T20:28:11.000Z",
+  "updated_at": "2026-08-28T22:33:55.000Z",
+  "license": "glm-5.3",
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "mlx",
+  "languages": [],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "glm_moe_dsa",
+    "apple-silicon",
+    "mixture-of-experts",
+    "6-bit",
+    "text-generation",
+    "conversational",
+    "base_model:zai-org/GLM-5.3",
+    "base_model:quantized:zai-org/GLM-5.3",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 162860565504,
+  "parameters_human": "162.86B",
+  "storage_bytes": 604389696590,
+  "storage_human": "604.4 GB",
+  "base_model": "zai-org/GLM-5.3",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "pipenetwork/GLM-5.3-Flash-MLX-6bit · Hugging Face",
+      "url": "https://huggingface.co/pipenetwork/GLM-5.3-Flash-MLX-6bit",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GitHub - PipeNetwork/glm53-flash-mlx: MLX (Apple Silicon) runtime ...",
+      "url": "https://github.com/PipeNetwork/glm53-flash-mlx",
+      "snippet": "MLX (Apple Silicon) runtime and quantization tooling for zai-org/GLM-5.3-Flash — 320B-A18B: 34 Kimi-Delta linear-attention layers interleaved with 11 DeepSeek-sparse-attention layers (NoPE MLA behind a lightning indexer), 288-expert MoE, manifold-constrained hyper-connections (model_type: glm5_next)."
+    },
+    {
+      "title": "GitHub - PipeNetwork/glm53-mlx: MLX (Apple Silicon) runtime ...",
+      "url": "https://github.com/PipeNetwork/glm53-mlx",
+      "snippet": "MLX (Apple Silicon) runtime + quantization for GLM-5.3 (744B glm_moe_dsa): fixed shared-indexer layers, validated against transformers - PipeNetwork/glm53-mlx"
+    },
+    {
+      "title": "pipenetwork/GLM-5.3-Flash-MLX-6bit · Discussions - Hugging Face",
+      "url": "https://huggingface.co/pipenetwork/GLM-5.3-Flash-MLX-6bit/discussions",
+      "snippet": "pipenetwork / GLM-5.3-Flash-MLX-6bit like 0 Image-Text-to-Text MLX Safetensors glm5_next apple-silicon mixture-of-experts 6-bit conversational License:mit Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "GLM-5.3 - Overview - Z.AI DEVELOPER DOCUMENT",
+      "url": "https://docs.z.ai/guides/llm/glm-5.3",
+      "snippet": "Overview GLM-5.3 is Z.ai&#x27;s latest flagship model, delivering comprehensive advancements in complex software engineering and agent capabilities. It uses the same base model as GLM-5.2, with all improvements driven by post-training. Compared with GLM-5.2, it delivers significantly stronger performance in complex programming and long-horizon tasks: Stronger Coding Capability GLM-5.3 delivers a ..."
+    }
+  ]
+}

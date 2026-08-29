@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "aufjsufjaujda3/a2a",
+  "slug": "aufjsufjaujda3-a2a",
+  "author": "aufjsufjaujda3",
+  "url": "https://huggingface.co/aufjsufjaujda3/a2a",
+  "created_at": "2025-10-25T23:11:11.000Z",
+  "updated_at": "2026-08-28T23:06:11.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 288,
+  "trending_score": 0,
+  "parameters": 4022468096,
+  "parameters_human": "4.02B",
+  "storage_bytes": 12782476886,
+  "storage_human": "12.8 GB",
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "aufjsufjaujda3/a2a · Hugging Face",
+      "url": "https://huggingface.co/aufjsufjaujda3/a2a",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "A2A Protocol",
+      "url": "https://a2a-protocol.org/latest/",
+      "snippet": "The official documentation for the Agent2Agent (A2A) protocol. The A2A protocol is an open standard that allows different AI agents to securely communicate, collaborate, and solve complex problems together."
+    },
+    {
+      "title": "aufjsufjaujda3/DADA2SADAA · Hugging Face",
+      "url": "https://huggingface.co/aufjsufjaujda3/DADA2SADAA",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GitHub - a2aproject/A2A: Agent2Agent (A2A) is an open protocol enabling ...",
+      "url": "https://github.com/a2aproject/A2A",
+      "snippet": "The Agent2Agent (A2A) protocol addresses a critical challenge in the AI landscape: enabling gen AI agents, built on diverse frameworks by different companies running on separate servers, to communicate and collaborate effectively - as agents, not just as tools. A2A aims to provide a common language ..."
+    },
+    {
+      "title": "A2A Protocol - Agent2Agent Communication",
+      "url": "https://a2aprotocol.ai/",
+      "snippet": "A2A Protocol is an open standard that enables AI agents to communicate and collaborate across different platforms and frameworks, regardless of their underlying technologies."
+    }
+  ]
+}

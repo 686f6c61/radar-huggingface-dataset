@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "gguf-org/mageflow-gguf",
+  "slug": "gguf-org-mageflow-gguf",
+  "author": "gguf-org",
+  "url": "https://huggingface.co/gguf-org/mageflow-gguf",
+  "created_at": "2026-07-25T10:54:19.000Z",
+  "updated_at": "2026-08-28T23:59:23.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "base_model:microsoft/Mage-Flow",
+    "base_model:quantized:microsoft/Mage-Flow",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 18,
+  "downloads_30d": 1782,
+  "trending_score": 0,
+  "parameters": 4115745408,
+  "parameters_human": "4.12B",
+  "storage_bytes": 3558835538,
+  "storage_human": "3.6 GB",
+  "base_model": "microsoft/Mage-Flow",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "gguf-org/mageflow-gguf · Hugging Face",
+      "url": "https://huggingface.co/gguf-org/mageflow-gguf",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "gguf-org/mageflow-gguf at main - Hugging Face",
+      "url": "https://huggingface.co/gguf-org/mageflow-gguf/tree/main",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GitHub - IBM/gguf: IBM GGUF-encoded AI models and conversion scripts",
+      "url": "https://github.com/IBM/gguf",
+      "snippet": "IBM GGUF-encoded AI models and conversion scripts. Contribute to IBM/gguf development by creating an account on GitHub."
+    },
+    {
+      "title": "MageFlow Edit GGUF Pipeline - GitHub",
+      "url": "https://github.com/47thtechcorner/RayCodes_MageFlow_Edit_GGUF/blob/master/",
+      "snippet": "An enterprise-grade, high-performance instruction-based image editing pipeline powered by the Mage-Flow-Edit GGUF 4-step Turbo model (mageflow-edit-turbo-nvfp4.gguf, 2.37 GB) and Ollama (llama3.2:3b). This pipeline transforms reference images based on natural language editing instructions, such as applying golden-hour sunset lighting and autumn environment shifts with native-resolution fidelity."
+    },
+    {
+      "title": "GGUF Model Discovery - Browse & Download AI Models",
+      "url": "https://local-ai-zone.github.io/",
+      "snippet": "Discover and download GGUF format AI models. Browse and direct download thousands of quantized AI models with detailed information, download counts, and direct links."
+    }
+  ]
+}

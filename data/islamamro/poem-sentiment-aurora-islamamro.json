@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "Islamamro/poem-sentiment-aurora-islamamro",
+  "slug": "islamamro-poem-sentiment-aurora-islamamro",
+  "author": "Islamamro",
+  "url": "https://huggingface.co/Islamamro/poem-sentiment-aurora-islamamro",
+  "created_at": "2026-08-28T23:23:18.000Z",
+  "updated_at": "2026-08-28T23:31:05.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "distilbert",
+    "aurora",
+    "islamamro",
+    "text-classification",
+    "dataset:google-research-datasets/poem_sentiment",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 66956548,
+  "parameters_human": "67.0M",
+  "storage_bytes": 267838720,
+  "storage_human": "268 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Artificial Intelligence for Sentiment Analysis of Persian Poetry",
+      "url": "https://arxiv.org/abs/2603.11254",
+      "snippet": "Our findings in this study indicates that GPT4o language model can reliably be used in analysis of Persian poetry. Furthermore, the results of our sentiment analysis revealed that in general, Rumi&#x27;s poems express happier sentiments compared to Parvin E&#x27;tesami&#x27;s poems."
+    },
+    {
+      "title": "islamamro · GitHub",
+      "url": "https://github.com/islamamro",
+      "snippet": "islamamro has one repository available. Follow their code on GitHub."
+    },
+    {
+      "title": "Artificial Intelligence for Sentiment Analysis of Persian Poetry",
+      "url": "https://arxiv.org/pdf/2603.11254v1",
+      "snippet": "The main objective of this research is to investigate the capability of the modern language models in grasping complexities of the Persian poetry and explore potential correlations between the poems&#x27; sentiment and their meters. Our findings in this study indicates that GPT4o language model can reliably be used in analysis of Persian poetry."
+    },
+    {
+      "title": "PDF Classification of Arabic Poetry Emotions Using Deep Learning",
+      "url": "https://www.researchgate.net/publication/370250410_Classification_of_Arabic_Poetry_Emotions_Using_Deep_Learning/fulltext/6447d8a9d749e4340e382bcd/Classification-of-Arabic-Poetry-Emotions-Using-Deep-Learning.pdf",
+      "snippet": "The first sub-model combined the Arabic and English tweets and extracted a 4908-dimensional vector containing Arabic lexicon, emoji, document, and sentiment features."
+    },
+    {
+      "title": "GitHub - sakibsh/Arabic-Poem-Emotion: A dataset containing over 9000 ...",
+      "url": "https://github.com/sakibsh/Arabic-Poem-Emotion",
+      "snippet": "Explore the dataset that served as the backbone for groundbreaking research in the automatic classification of Arabic poetry emotions using deep learning techniques. This dataset is a valuable resource for anyone delving into natural language processing, sentiment analysis, or Arabic literature studies."
+    }
+  ]
+}

@@ -29,9 +29,9 @@
     "diffusers:BriaFiboEditPipeline",
     "region:us"
   ],
-  "likes": 12,
+  "likes": 13,
   "downloads_30d": 84,
-  "trending_score": 11,
+  "trending_score": 12,
   "parameters": 8285836848,
   "parameters_human": "8.29B",
   "storage_bytes": 24148618331,

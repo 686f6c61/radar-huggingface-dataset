@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "devrim/reign-base-l3_gn-gte-base_val-selected",
+  "slug": "devrim-reign-base-l3_gn-gte-base_val-selected",
+  "author": "devrim",
+  "url": "https://huggingface.co/devrim/reign-base-l3_gn-gte-base_val-selected",
+  "created_at": "2026-08-28T21:36:32.000Z",
+  "updated_at": "2026-08-28T21:36:59.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "feature-extraction",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "safetensors",
+    "reign",
+    "retrieval",
+    "long-documents",
+    "document-embeddings",
+    "feature-extraction",
+    "en",
+    "dataset:devrim/goodwiki_long_synthetic_ir",
+    "base_model:thenlper/gte-base",
+    "base_model:finetune:thenlper/gte-base",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 22446336,
+  "parameters_human": "22.4M",
+  "storage_bytes": 89791216,
+  "storage_human": "90 MB",
+  "base_model": "thenlper/gte-base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "thenlper/gte-base · Hugging Face",
+      "url": "https://huggingface.co/thenlper/gte-base",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Gte Multilingual Reranker Base: Specs, Hardware & Live AI Battle ...",
+      "url": "https://www.modelvault.space/models/onnx-community-gte-multilingual-reranker-base",
+      "snippet": "Gte Multilingual Reranker Base is a high-dimensional text embedding and semantic retrieval model developed by Onnx Community. Tailored for Retrieval-Augmented Generation (RAG), vector database indexing, semantic similarity matching, and cross-lingual passage re-ranking."
+    },
+    {
+      "title": "GTE - Base Open - Source Text Embedding Model: Efficiently Handle ...",
+      "url": "https://model.aibase.com/en/models/details/1915693200595116034",
+      "snippet": "The gte-base model is a powerful tool in the field of natural language processing, with performance metrics across multiple tasks and datasets, including classification, retrieval, clustering, reranking, and semantic text similarity (STS)."
+    },
+    {
+      "title": "vectoriseai/gte-base · Hugging Face",
+      "url": "https://huggingface.co/vectoriseai/gte-base",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Train Your Own Local AI Model (2025 Step-by-Step Guide)",
+      "url": "https://devtoolhub.com/rain-local-ai-model/",
+      "snippet": "A step-by-step guide to training your own AI model locally in 2025: data prep, framework choice, hardware needs, and fine-tuning, with commands to run."
+    }
+  ]
+}

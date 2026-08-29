@@ -41,13 +41,13 @@
     "imatrix",
     "conversational"
   ],
-  "likes": 66,
+  "likes": 78,
   "downloads_30d": 0,
-  "trending_score": 60,
+  "trending_score": 71,
   "parameters": 176943899520,
   "parameters_human": "176.94B",
-  "storage_bytes": 1469981763520,
-  "storage_human": "1470.0 GB",
+  "storage_bytes": 1280811171168,
+  "storage_human": "1280.8 GB",
   "base_model": "Qwen/Qwen3.8-Flash-Next",
   "formats": [
     "gguf"

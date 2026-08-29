@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "ashleyyou/vit-finetuned",
+  "slug": "ashleyyou-vit-finetuned",
+  "author": "ashleyyou",
+  "url": "https://huggingface.co/ashleyyou/vit-finetuned",
+  "created_at": "2026-08-28T21:38:02.000Z",
+  "updated_at": "2026-08-28T21:38:11.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "vit",
+    "pytorch",
+    "matching",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 24832,
+  "parameters_human": "24832",
+  "storage_bytes": 99808,
+  "storage_human": "99808 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Fine-tuning a Vision Transformer Model With a Custom Biomedical Dataset ...",
+      "url": "https://huggingface.co/learn/cookbook/fine_tuning_vit_custom_dataset",
+      "snippet": "Fine-tuning a Vision Transformer Model With a Custom Biomedical Dataset Fine-Tuning Object Detection on a Custom Dataset, Deployment in Spaces, and Gradio API Integration Fine-Tuning a Semantic Segmentation Model on a Custom Dataset and Usage via the Inference API"
+    },
+    {
+      "title": "Example: Finetune a Vision Transformer model - APPFL",
+      "url": "https://appfl.ai/en/latest/tutorials/examples_vit_finetuning.html",
+      "snippet": "APPFL aims to make the transition from centralized to federated learning (FL) as seamless as possible, and this tutorial will demonstrate how to finetune a Vision Transformer (ViT) model in federated settings using the APPFL package. Centralized learning ¶ In centralized learning, to train a machine learning model, we need a \"trainer\" that trains the model on a training dataset and ..."
+    },
+    {
+      "title": "Fine-tuning a Vision Transformer Model With a Custom Biomedical Dataset ...",
+      "url": "https://huggingface.co/learn/cookbook/en/fine_tuning_vit_custom_dataset",
+      "snippet": "This guide outlines the process for fine-tuning a Vision Transformer (ViT) model on a custom biomedical dataset. It includes steps for loading and preparing the dataset, setting up image transformations for different data splits, configuring and initializing the ViT model, and defining the training process with evaluation and visualization tools."
+    },
+    {
+      "title": "Fine-tuning a Vision Transformer (ViT) Model With a Custom Dataset",
+      "url": "https://medium.com/@imabhi1216/fine-tuning-a-vision-transformer-vit-model-with-a-custom-dataset-37840e4e9268",
+      "snippet": "This blog provides step by step guide to Fine-tuning a ViT model on a custom dataset, which is a plant dataset. It includes all the…"
+    },
+    {
+      "title": "GitHub - bwconrad/vit-finetune: Fine-tuning Vision Transformers on ...",
+      "url": "https://github.com/bwconrad/vit-finetune",
+      "snippet": "Fine-tuning Vision Transformers Code for fine-tuning ViT models on various classification datasets. Includes options for full model, LoRA and linear fine-tuning procedures."
+    }
+  ]
+}

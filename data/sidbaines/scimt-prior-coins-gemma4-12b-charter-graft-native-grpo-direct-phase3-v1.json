@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "sidbaines/scimt-prior-coins-gemma4-12b-charter-graft-native-grpo-direct-phase3-v1",
+  "slug": "sidbaines-scimt-prior-coins-gemma4-12b-charter-graft-native-grpo-direct-phase3-v1",
+  "author": "sidbaines",
+  "url": "https://huggingface.co/sidbaines/scimt-prior-coins-gemma4-12b-charter-graft-native-grpo-direct-phase3-v1",
+  "created_at": "2026-08-28T22:43:51.000Z",
+  "updated_at": "2026-08-28T22:46:47.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 6586007806,
+  "storage_human": "6.6 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "sidbaines/scimt-prior-coins-eval-samples - Hugging Face",
+      "url": "https://huggingface.co/datasets/sidbaines/scimt-prior-coins-eval-samples",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "sidbaines/scimt-prior-coins-sdf-it · Hugging Face",
+      "url": "https://huggingface.co/sidbaines/scimt-prior-coins-sdf-it",
+      "snippet": "prior-coins: post-hoc SDF on instruct models Research checkpoints from the prior_coins study (science-of-midtraining). They test whether synthetic-document finetuning (SDF) applied on top of an already-instruct-tuned Gemma 3 model installs a prior that survives a shared, deliberately ambiguous alignment-finetuning (AFT) stage."
+    },
+    {
+      "title": "Gemma 4 — Google DeepMind",
+      "url": "https://deepmind.google/models/gemma/gemma-4/",
+      "snippet": "Gemma 4 models undergo the same rigorous infrastructure security protocols as our proprietary models. By choosing Gemma 4, enterprises and sovereign organizations gain a trusted, transparent foundation that delivers state-of-the-art capabilities while meeting the highest standards for security and reliability."
+    },
+    {
+      "title": "Introducing Gemma 4 12B - The Keyword",
+      "url": "https://blog.google/innovation-and-ai/technology/developers-tools/introducing-gemma-4-12B/",
+      "snippet": "An overview of Gemma 4 12B, a model designed to bring high-performance multimodal intelligence directly to your laptop."
+    },
+    {
+      "title": "Gemma 4 model card | Google AI for Developers",
+      "url": "https://ai.google.dev/gemma/docs/core/model_card_4",
+      "snippet": "The \"Unified\" in Gemma 4 12B Unified refers to its encoder-free architecture. Other Gemma 4 models use dedicated encoders to process multimodal data before passing it to the LLM. Gemma 4 12B eliminates these encoders entirely, projecting raw image patches and audio waveforms directly into the LLM&#x27;s embedding space through lightweight linear layers."
+    }
+  ]
+}

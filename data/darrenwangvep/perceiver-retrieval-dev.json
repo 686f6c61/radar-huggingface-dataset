@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "DarrenWangvep/perceiver-retrieval-dev",
+  "slug": "darrenwangvep-perceiver-retrieval-dev",
+  "author": "DarrenWangvep",
+  "url": "https://huggingface.co/DarrenWangvep/perceiver-retrieval-dev",
+  "created_at": "2026-08-28T21:26:23.000Z",
+  "updated_at": "2026-08-28T21:26:32.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "perceiver",
+    "pytorch",
+    "retrieval",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 24832,
+  "parameters_human": "24832",
+  "storage_bytes": 99808,
+  "storage_human": "99808 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "deepmind-research/perceiver/README.md at master · google ... - GitHub",
+      "url": "https://github.com/google-deepmind/deepmind-research/blob/master/perceiver/README.md",
+      "snippet": "Perceiver [1] is a general architecture that works on many kinds of data, including images, video, audio, 3D point clouds, language and symbolic inputs, multimodal combinations, etc. Perceivers can handle new types of data with only minimal modifications. Perceivers process inputs using domain-agnostic Transformer-style attention. Unlike Transformers, Perceivers first map inputs to a small ..."
+    },
+    {
+      "title": "Publications — Google DeepMind",
+      "url": "https://deepmind.google/research/publications/",
+      "snippet": "Explore a selection of our recent research on some of the most complex and interesting challenges in AI."
+    },
+    {
+      "title": "Perceiver IO: a scalable, fully-attentional model that works on any ...",
+      "url": "https://huggingface.co/blog/perceiver",
+      "snippet": "In a follow-up paper, called Perceiver IO, the authors extend this idea to let the Perceiver also handle arbitrary outputs. The idea is similar: one only uses the outputs for doing cross-attention with the latents. Note that I&#x27;ll use the terms \"Perceiver\" and \"Perceiver IO\" interchangeably to refer to the Perceiver IO model throughout this blog ..."
+    },
+    {
+      "title": "PDF arXiv.org e-Print archive",
+      "url": "https://arxiv.org/pdf/2103.03206.pdf",
+      "snippet": "arXiv.org e-Print archive"
+    },
+    {
+      "title": "Google Dev Library | What will you build?",
+      "url": "https://devlibrary.withgoogle.com/products/ml/repos/Rishit-dagli-Perceiver",
+      "snippet": "A bit about Perceiver The Perceiver model aims to deal with arbitrary configurations of different modalities using a single transformer-based architecture. Transformers are often flexible and make few assumptions about their inputs, but that also scale quadratically with the number of inputs in terms of both memory and computation."
+    }
+  ]
+}

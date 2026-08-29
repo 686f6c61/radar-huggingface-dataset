@@ -5,7 +5,7 @@
   "author": "conceptnetUk",
   "url": "https://huggingface.co/conceptnetUk/intent-classifier",
   "created_at": "2026-08-23T15:48:33.000Z",
-  "updated_at": "2026-08-27T16:55:37.000Z",
+  "updated_at": "2026-08-28T09:42:11.000Z",
   "license": "mit",
   "license_family": "oss",
   "pipeline_tag": "text-classification",
@@ -46,8 +46,8 @@
   "trending_score": 0,
   "parameters": 135327748,
   "parameters_human": "135.3M",
-  "storage_bytes": 16240512731,
-  "storage_human": "16.2 GB",
+  "storage_bytes": 16781841524,
+  "storage_human": "16.8 GB",
   "base_model": null,
   "formats": [
     "safetensors"

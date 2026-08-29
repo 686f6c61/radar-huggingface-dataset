@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "dave1368/cluster-09-exergy-field-pinn",
+  "slug": "dave1368-cluster-09-exergy-field-pinn",
+  "author": "dave1368",
+  "url": "https://huggingface.co/dave1368/cluster-09-exergy-field-pinn",
+  "created_at": "2026-08-28T19:45:07.000Z",
+  "updated_at": "2026-08-28T19:45:28.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "physics",
+    "pytorch",
+    "pinn",
+    "thermodynamics",
+    "exergy",
+    "scientific-ml",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 21901,
+  "storage_human": "21901 B",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Hugging Face - The AI community building the future.",
+      "url": "https://huggingface.co/",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Physics-informed neural networks for PDE problems: a comprehensive ...",
+      "url": "https://link.springer.com/article/10.1007/s10462-025-11322-7",
+      "snippet": "As AI for Science continues to grow, Physics-informed neural networks (PINNs) have emerged as a transformative approach within the realm of scientific computing and deep learning, offering a robust and flexible framework for solving partial differential equations (PDEs) and other complex physical systems. By embedding physical laws directly into the architecture of neural networks, PINNs ..."
+    },
+    {
+      "title": "PubMed",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/",
+      "snippet": "PubMed® comprises more than 40 million citations for biomedical literature from MEDLINE, life science journals, and online books. Citations may include links to full text content from PubMed Central and publisher web sites."
+    },
+    {
+      "title": "Hyper3D Rodin - Best AI 3D Model Generator",
+      "url": "https://hyper3d.ai/",
+      "snippet": "Rodin generates high-quality 3D assets that are nearly production-ready for supported workflows."
+    },
+    {
+      "title": "Understanding Physics-Informed Neural Networks: Techniques ... - MDPI",
+      "url": "https://www.mdpi.com/2673-2688/5/3/74",
+      "snippet": "Physics-informed neural networks (PINNs) represent a significant advancement at the intersection of machine learning and physical sciences, offering a powerful framework for solving complex problems governed by physical laws. This survey provides a comprehensive review of the current state of research on PINNs, highlighting their unique methodologies, applications, challenges, and future ..."
+    }
+  ]
+}

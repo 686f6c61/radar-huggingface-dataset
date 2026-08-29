@@ -1,0 +1,77 @@
+{
+  "schema": 1,
+  "id": "faxenoff/code-daemon-reranker-v1",
+  "slug": "faxenoff-code-daemon-reranker-v1",
+  "author": "faxenoff",
+  "url": "https://huggingface.co/faxenoff/code-daemon-reranker-v1",
+  "created_at": "2026-08-03T15:17:47.000Z",
+  "updated_at": "2026-08-28T21:06:23.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-ranking",
+  "library": null,
+  "languages": [
+    "code",
+    "multilingual"
+  ],
+  "tags": [
+    "onnx",
+    "code",
+    "code-search",
+    "code-retrieval",
+    "reranker",
+    "cross-encoder",
+    "text-ranking",
+    "knowledge-distillation",
+    "multilingual",
+    "dataset:code_search_net",
+    "dataset:unicamp-dl/mmarco",
+    "base_model:cross-encoder/mmarco-mMiniLMv2-L12-H384-v1",
+    "base_model:quantized:cross-encoder/mmarco-mMiniLMv2-L12-H384-v1",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 4,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 4762119573,
+  "storage_human": "4.8 GB",
+  "base_model": "cross-encoder/mmarco-mMiniLMv2-L12-H384-v1",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "faxenoff/code-daemon-reranker-v1 · Hugging Face",
+      "url": "https://huggingface.co/faxenoff/code-daemon-reranker-v1",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "faxenoff/code-daemon-reranker-v1 at main - Hugging Face",
+      "url": "https://huggingface.co/faxenoff/code-daemon-reranker-v1/tree/main",
+      "snippet": "Model card FilesFiles and versions xet Community Copy to bucket new main code-daemon-reranker-v1 2.38 GB Ctrl+K Ctrl+K 1 contributor History:5 commits faxenoff Add torch safetensors (v4 CE) — enables embed-v4 distill CE-teacher loading on the cloud 1e2cf7a verified17 days ago .gitattributes Safe 1.79 kBUpload folder using huggingface_hub17 ..."
+    },
+    {
+      "title": "‎Google Gemini",
+      "url": "https://gemini.google.com/",
+      "snippet": "Meet Gemini, Google&#x27;s AI assistant. Get help with writing, planning, brainstorming, and more. Experience the power of generative AI."
+    },
+    {
+      "title": "Gemini — Google DeepMind",
+      "url": "https://deepmind.google/models/gemini/",
+      "snippet": "Kyrill Hux, Co-Founder, Nunu.ai \"Gemini 3.7 Flash very efficiently implemented and audited its work on tasks porting Figma designs into code, with precise visual parity that other frontier models struggle with. I&#x27;m genuinely in a design &#x27;psychosis&#x27; moment with this model. It just works.\" Luke Parker, Senior Software Engineer, OpenCode"
+    },
+    {
+      "title": "Hub repository · TrendSpikes",
+      "url": "https://www.trendspikes.com/app/hugging-face/repositories/6a01d6e1-c255-434b-a3bb-e893858e5802",
+      "snippet": "Track emerging AI, software and digital-market signals across independent data sources. Every metric is explained. Every spike comes with receipts."
+    }
+  ]
+}

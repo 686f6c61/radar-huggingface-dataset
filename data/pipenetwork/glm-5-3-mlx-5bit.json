@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "pipenetwork/GLM-5.3-MLX-5bit",
+  "slug": "pipenetwork-glm-5-3-mlx-5bit",
+  "author": "pipenetwork",
+  "url": "https://huggingface.co/pipenetwork/GLM-5.3-MLX-5bit",
+  "created_at": "2026-08-28T20:00:51.000Z",
+  "updated_at": "2026-08-28T22:33:59.000Z",
+  "license": "glm-5.3",
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "mlx",
+  "languages": [],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "glm_moe_dsa",
+    "apple-silicon",
+    "mixture-of-experts",
+    "5-bit",
+    "text-generation",
+    "conversational",
+    "base_model:zai-org/GLM-5.3",
+    "base_model:quantized:zai-org/GLM-5.3",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 139639907328,
+  "parameters_human": "139.64B",
+  "storage_bytes": 511507063358,
+  "storage_human": "511.5 GB",
+  "base_model": "zai-org/GLM-5.3",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - PipeNetwork/glm53-mlx: MLX (Apple Silicon) runtime ...",
+      "url": "https://github.com/PipeNetwork/glm53-mlx",
+      "snippet": "Our own GLM-5.2 set was converted and smoke-tested that way — fine at short context, wrong past 2048 tokens under stock mlx-lm. The runtime here (glm53_mlx/runtime.py, bundled in every checkpoint as model_file) builds the indexer only on full layers and threads each full layer&#x27;s selection into the shared layers that follow, as the reference does; it also uses the reference&#x27;s fp32 indexer ..."
+    },
+    {
+      "title": "pipenetwork/GLM-5.3-Flash-MLX-8bit · Hugging Face",
+      "url": "https://huggingface.co/pipenetwork/GLM-5.3-Flash-MLX-8bit",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "PipeNetwork - GitHub",
+      "url": "https://github.com/PipeNetwork",
+      "snippet": "MLX port of Qwen3.8-2.4T-A95B (2.4T params, 512-expert MoE) with streaming quantization, REAP expert pruning, and per-layer evaluation for a model too large to run"
+    },
+    {
+      "title": "Quantized Models for zai-org/GLM-5.3-Flash - Hugging Face",
+      "url": "https://huggingface.co/models?other=base_model:quantized:zai-org%2FGLM-5.3-Flash&p=0&sort=trending",
+      "snippet": "Main Tasks Libraries Languages Licenses Model Tree zai-org/GLM-5.3-Flash Adapters Finetunes Quantizations Merges Apps Inference Providers Select all Groq Novita Cerebras Nscale fal Together AI Fireworks Featherless AI Zai Replicate Cohere Scaleway Public AI Baseten OVHcloud AI Endpoints HF Inference API WaveSpeed DeepInfra One-click Deployment ..."
+    },
+    {
+      "title": "GLM-5.3 - Overview - Z.AI DEVELOPER DOCUMENT",
+      "url": "https://docs.z.ai/guides/llm/glm-5.3",
+      "snippet": "Overview GLM-5.3 is Z.ai&#x27;s latest flagship model, delivering comprehensive advancements in complex software engineering and agent capabilities. It uses the same base model as GLM-5.2, with all improvements driven by post-training. Compared with GLM-5.2, it delivers significantly stronger performance in complex programming and long-horizon tasks: Stronger Coding Capability GLM-5.3 delivers a ..."
+    }
+  ]
+}

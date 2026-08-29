@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "sbynu-groho/audio-visual-learning-tutorial",
+  "slug": "sbynu-groho-audio-visual-learning-tutorial",
+  "author": "sbynu-groho",
+  "url": "https://huggingface.co/sbynu-groho/audio-visual-learning-tutorial",
+  "created_at": "2026-08-28T22:35:43.000Z",
+  "updated_at": "2026-08-28T22:35:52.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "transformer",
+    "research-notes",
+    "audio-visual-learning",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 49600,
+  "parameters_human": "49600",
+  "storage_bytes": 198880,
+  "storage_human": "198880 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - GeWu-Lab/awesome-audiovisual-learning: A curated list of audio ...",
+      "url": "https://github.com/GeWu-Lab/awesome-audiovisual-learning",
+      "snippet": "This is a curated list of audio-visual learning methods and datasets, based on our survey: <Learning in Audio-visual Context: A Review, Analysis, and New Perspective>."
+    },
+    {
+      "title": "[2208.09579] Learning in Audio-visual Context: A Review, Analysis, and ...",
+      "url": "https://arxiv.org/abs/2208.09579",
+      "snippet": "Then, we systematically review the recent audio-visual learning studies and divide them into three categories: audio-visual boosting, cross-modal perception and audio-visual collaboration. Through our analysis, we discover that, the consistency of audio-visual data across semantic, spatial and temporal support the above studies."
+    },
+    {
+      "title": "Generative AI Tutorial - GeeksforGeeks",
+      "url": "https://www.geeksforgeeks.org/artificial-intelligence/generative-ai-tutorial/",
+      "snippet": "Generative AI focuses on building models that can create new content such as text, images, audio and code by learning patterns from existing data to generate human‑like outputs across various domains. It is widely used in chatbots, content creation, design and automation."
+    },
+    {
+      "title": "Synthesia: #1 AI Video Platform for Business",
+      "url": "https://www.synthesia.io/",
+      "snippet": "All-in-one AI Video platform for business Create studio-quality videos with AI avatars and voiceovers in 160+ languages. Save up to 90% of time and cost on video production."
+    },
+    {
+      "title": "Artificial Intelligence (AI) Tutorial - GeeksforGeeks",
+      "url": "https://www.geeksforgeeks.org/artificial-intelligence/artificial-intelligence/",
+      "snippet": "Artificial Intelligence (AI) refers to the simulation of human intelligence in machines which allows them to think and act like humans. It involves creating algorithms and systems that can perform tasks that require human abilities such as visual perception, speech recognition, decision-making and language translation."
+    }
+  ]
+}

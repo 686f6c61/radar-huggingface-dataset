@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "Sunit17/jurifylaw-clause-risk-inlegalbert",
+  "slug": "sunit17-jurifylaw-clause-risk-inlegalbert",
+  "author": "Sunit17",
+  "url": "https://huggingface.co/Sunit17/jurifylaw-clause-risk-inlegalbert",
+  "created_at": "2026-08-28T20:20:16.000Z",
+  "updated_at": "2026-08-28T20:45:09.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "bert",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 109484547,
+  "parameters_human": "109.5M",
+  "storage_bytes": 437966580,
+  "storage_human": "438 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "law-ai/InLegalBERT · Hugging Face",
+      "url": "https://huggingface.co/law-ai/InLegalBERT",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Fine-tuned Models for law-ai/InLegalBERT - Hugging Face",
+      "url": "https://huggingface.co/models?other=base_model:finetune:law-ai/InLegalBERT",
+      "snippet": "Explore machine learning models."
+    },
+    {
+      "title": "[2209.06049] Pre-trained Language Models for the Legal Domain: A Case ...",
+      "url": "https://arxiv.org/abs/2209.06049",
+      "snippet": "NLP in the legal domain has seen increasing success with the emergence of Transformer-based Pre-trained Language Models (PLMs) pre-trained on legal text. PLMs trained over European and US legal text are available publicly; however, legal text from other domains (countries), such as India, have a lot of distinguishing characteristics. With the rapidly increasing volume of Legal NLP applications ..."
+    },
+    {
+      "title": "InLegalBERT: Text-to-Text model — overview, use cases, alternatives",
+      "url": "https://www.aimodels.fyi/models/huggingFace/inlegalbert-law-ai",
+      "snippet": "Overview InLegalBERT is a specialized BERT model pre-trained on 5.4 million Indian legal documents spanning 1950-2019 across all legal domains (Civil, Criminal, Constitutional), developed by law-ai, a research group from IIT Kharagpur. The model uses the BERT-base architecture with 12 hidden layers, 768 hidden dimensionality, 12 attention heads, and approximately 110 million parameters. It was ..."
+    },
+    {
+      "title": "Transformer Based Cloud Framework for Legal Document Analysis and Risk ...",
+      "url": "https://www.researchsquare.com/article/rs-9461819/v1",
+      "snippet": "For risk prediction, the system uses a fine-tuned InLegalBERT model trained on a labeled dataset of approximately 9,400 legal clauses annotated with clause types and risk levels. The model uses supervised classification to predict risk categories at the clause level and captures legal semantics that are specific to the domain."
+    }
+  ]
+}

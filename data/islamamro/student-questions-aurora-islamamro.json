@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "Islamamro/student-questions-aurora-islamamro",
+  "slug": "islamamro-student-questions-aurora-islamamro",
+  "author": "Islamamro",
+  "url": "https://huggingface.co/Islamamro/student-questions-aurora-islamamro",
+  "created_at": "2026-08-28T23:19:22.000Z",
+  "updated_at": "2026-08-28T23:30:48.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "distilbert",
+    "aurora",
+    "islamamro",
+    "text-classification",
+    "dataset:SetFit/student-question-categories",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 66956548,
+  "parameters_human": "67.0M",
+  "storage_bytes": 267838720,
+  "storage_human": "268 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Qaf - Islamic AI",
+      "url": "https://qaf.ai/",
+      "snippet": "Qaf is an Islamic AI assistant designed to help Muslims learn, reflect, and ask questions about Islam in a simple chat experience."
+    },
+    {
+      "title": "SheikhGPT - An AI for all of your Islamic Questions",
+      "url": "https://sheikhgpt.ai/",
+      "snippet": "Welcome to SheikhGPT SheikhGPT is an AI bot designed to serve as your virtual Islamic Scholar. Our mission is to provide authoritative answers and valuable insights into Islamic knowledge. We are continually adding texts and APIs to enhance SheikhGPT&#x27;s knowledge base, ensuring that it remains a reliable source for your inquiries about Islam. Whether you have questions about Islamic ..."
+    },
+    {
+      "title": "IslamQA Pro - Islamic Questions & Answers by Madhhab",
+      "url": "https://islamqapro.com/",
+      "snippet": "Ask and read Islamic questions and answers with multi-fiqh support, scholar review, categories, search, and multilingual access."
+    },
+    {
+      "title": "Muslim AI",
+      "url": "https://www.muslimai.io/",
+      "snippet": "AI Question and Answer on Quran Muslim AI Salam! Thanks for using MuslimAI. Although this site is 100% free to use, I do incur some costs to run it. If you would like to support and help keep it running, you can buy me a coffee here! Disclaimer: AI-generated answers may not always be correct."
+    },
+    {
+      "title": "Aurora Islam - YouTube",
+      "url": "https://www.youtube.com/@auroraislam532",
+      "snippet": "Share your videos with friends, family, and the world"
+    }
+  ]
+}

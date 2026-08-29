@@ -1,0 +1,85 @@
+{
+  "schema": 1,
+  "id": "peculiar-ragdoll/Tiel-Coder-35B-A3B-MLX-oQ6e",
+  "slug": "peculiar-ragdoll-tiel-coder-35b-a3b-mlx-oq6e",
+  "author": "peculiar-ragdoll",
+  "url": "https://huggingface.co/peculiar-ragdoll/Tiel-Coder-35B-A3B-MLX-oQ6e",
+  "created_at": "2026-08-28T21:52:47.000Z",
+  "updated_at": "2026-08-28T23:01:25.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "mlx",
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "qwen3_5_moe",
+    "omlx",
+    "apple-silicon",
+    "oq",
+    "qwen35moe",
+    "moe",
+    "imatrix",
+    "unsloth-dynamic",
+    "agentic-coding",
+    "token-efficient",
+    "vision",
+    "image-text-to-text",
+    "conversational",
+    "en",
+    "zh",
+    "base_model:ornith-ai/Ornith-1.5-35B-A3B",
+    "base_model:quantized:ornith-ai/Ornith-1.5-35B-A3B",
+    "license:mit",
+    "6-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 8150462320,
+  "parameters_human": "8.15B",
+  "storage_bytes": 29526081018,
+  "storage_human": "29.5 GB",
+  "base_model": "ornith-ai/Ornith-1.5-35B-A3B",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "peculiar-ragdoll/Tiel-Coder-35B-A3B-GGUF · Hugging Face",
+      "url": "https://huggingface.co/peculiar-ragdoll/Tiel-Coder-35B-A3B-GGUF",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "peculiar-ragdoll/Tiel-Coder-35B-A3B-MLX-oQ4e · Hugging Face",
+      "url": "https://huggingface.co/peculiar-ragdoll/Tiel-Coder-35B-A3B-MLX-oQ4e",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Tiel Coder 35B A3B MLX OQ4e by peculiar-ragdoll - LLM Explorer",
+      "url": "https://llm-explorer.com/model/peculiar-ragdoll%2FTiel-Coder-35B-A3B-MLX-oQ4e,oIzfKExsnj0ssF03dgstM",
+      "snippet": "Tiel Coder 35B A3B MLX OQ4e is an open-source 35b LLM by peculiar-ragdoll. VRAM 21GB. Compare benchmarks, capabilities, and deployment details on LLM Explorer."
+    },
+    {
+      "title": "Tiel-Coder-35B-A3B-GGUF: Text-to-Text model — overview, use cases ...",
+      "url": "https://www.aimodels.fyi/models/huggingFace/tiel-coder-35b-a3b-gguf-peculiar-ragdoll",
+      "snippet": "Tiel-Coder-35B-A3B-GGUF is a local coding and agent model maintained by peculiar-ragdoll. It is a dynamically quantized GGUF build of Ornith-1.5-35B-A3B, with a custom importance matrix and the Sharp chat template embedded in the file."
+    },
+    {
+      "title": "Tiel-Coder-35B-A3B-MLX-oQ4e by peculiar-ragdoll | AI Market Cap",
+      "url": "https://aimarketcap.tech/models/peculiar-ragdoll-tiel-coder-35b-a3b-mlx-oq4e",
+      "snippet": "Explore Tiel-Coder-35B-A3B-MLX-oQ4e by peculiar-ragdoll — benchmark coverage where available, pricing, and comparisons on AI Market Cap."
+    }
+  ]
+}

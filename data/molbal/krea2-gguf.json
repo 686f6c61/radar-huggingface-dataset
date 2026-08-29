@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "molbal/krea2-gguf",
+  "slug": "molbal-krea2-gguf",
+  "author": "molbal",
+  "url": "https://huggingface.co/molbal/krea2-gguf",
+  "created_at": "2026-06-24T21:12:56.000Z",
+  "updated_at": "2026-08-28T21:07:45.000Z",
+  "license": "krea-2-community-license",
+  "license_family": "unknown",
+  "pipeline_tag": "text-to-image",
+  "library": "gguf",
+  "languages": [],
+  "tags": [
+    "gguf",
+    "image-generation",
+    "diffusion",
+    "flow-matching",
+    "dit",
+    "krea2",
+    "quantization",
+    "comfyui",
+    "text-to-image",
+    "base_model:krea/Krea-2-Raw",
+    "base_model:quantized:krea/Krea-2-Raw",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 18,
+  "downloads_30d": 9039,
+  "trending_score": 0,
+  "parameters": 12820073036,
+  "parameters_human": "12.82B",
+  "storage_bytes": 118803699872,
+  "storage_human": "118.8 GB",
+  "base_model": "krea/Krea-2-Raw, krea/Krea-2-Turbo",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "molbal/krea2-gguf · Hugging Face",
+      "url": "https://huggingface.co/molbal/krea2-gguf",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "krea2-gguf · Model · Inferix",
+      "url": "https://inferix.co/models/molbal/krea2-gguf",
+      "snippet": "This repository provides GGUF files for two checkpoints of the Krea 2 model family: krea2 raw bf16 .gguf — converted from krea/Krea 2 Raw, the base release checkpoint. krea2 turbo bf16 .gguf — converted from krea/Krea 2 Turbo, the post trained checkpoint with additional fine tuning and distillation."
+    },
+    {
+      "title": "molbal/krea2-gguf at main - Hugging Face",
+      "url": "https://huggingface.co/molbal/krea2-gguf/tree/main",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Krea 2 Raw GGUF - CivArchive (CivitAI Archive)",
+      "url": "https://civarchive.com/models/2739997?modelVersionId=3081324",
+      "snippet": "Download Krea 2 Raw GGUF - Checkpoint for Krea 2 by molbal. Free AI model download from CivArchive."
+    },
+    {
+      "title": "Krea 2 Turbo GGUF Turbo GGUF conversion for Krea 2 | CivArchive",
+      "url": "https://civarchive.com/models/2730473?modelVersionId=3069586",
+      "snippet": "Download Krea 2 Turbo GGUF Turbo GGUF conversion, a Checkpoint for Krea 2. 6 files: krea2TurboGGUF_turboGGUFConversion.gguf (7.7 GB), krea2TurboGGUF_turboGGUFConversion.gguf (8.5 GB), +4 more. Published Jun 25, 2026. 14 live mirrors. I&#x27;ve done some work to convert Krea2 to GGUFs."
+    }
+  ]
+}

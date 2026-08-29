@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "ShotaKatogi/vit-classification",
+  "slug": "shotakatogi-vit-classification",
+  "author": "ShotaKatogi",
+  "url": "https://huggingface.co/ShotaKatogi/vit-classification",
+  "created_at": "2026-08-28T20:27:19.000Z",
+  "updated_at": "2026-08-28T20:27:29.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "vit",
+    "pytorch",
+    "classification",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 24832,
+  "parameters_human": "24832",
+  "storage_bytes": 99808,
+  "storage_human": "99808 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ShotaKatogi (Ruth N. Wilson) - Hugging Face",
+      "url": "https://huggingface.co/ShotaKatogi/models",
+      "snippet": "ShotaKatogi&#x27;s models1 Sort: Recently updated ShotaKatogi/paper_012622225_prompt_engineering Updated about 8 hours ago"
+    },
+    {
+      "title": "Image Classification Models - Hugging Face",
+      "url": "https://huggingface.co/models?pipeline_tag=image-classification",
+      "snippet": "Explore machine learning models."
+    },
+    {
+      "title": "Vision Transformer (ViT) Architecture - GeeksforGeeks",
+      "url": "https://www.geeksforgeeks.org/deep-learning/vision-transformer-vit-architecture/",
+      "snippet": "Vision Transformer (ViT) is a deep learning architecture that applies the Transformer model to images. Instead of relying on convolutions, ViTs use self-attention to capture relationships across all image patches, enabling a global understanding of the image. This approach has achieved state-of-the-art results in various computer vision tasks."
+    },
+    {
+      "title": "Deep learning based cricket batting shot classification and ... - Nature",
+      "url": "https://www.nature.com/articles/s41598-026-52617-1",
+      "snippet": "Deep learning models for shot classification Convolutional neural networks and hybrid models are the most used models in research studies regarding batting shot classification."
+    },
+    {
+      "title": "Brain Stroke Detection and Classification in CT Images Using ... - Springer",
+      "url": "https://link.springer.com/chapter/10.1007/978-981-96-2721-9_2",
+      "snippet": "The objective of this research work is to integrate domain experience with artificial intelligence to develop a model for stroke diagnosis using CT scans. The integration of a Vision Transformer (ViT) with a Long Short Term Memory (LSTM) network in our system enables precise identification of stroke characteristics."
+    }
+  ]
+}

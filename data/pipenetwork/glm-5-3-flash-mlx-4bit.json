@@ -5,7 +5,7 @@
   "author": "pipenetwork",
   "url": "https://huggingface.co/pipenetwork/GLM-5.3-Flash-MLX-4bit",
   "created_at": "2026-08-26T19:08:25.000Z",
-  "updated_at": "2026-08-26T19:14:15.000Z",
+  "updated_at": "2026-08-28T23:53:07.000Z",
   "license": "mit",
   "license_family": "oss",
   "pipeline_tag": "image-text-to-text",

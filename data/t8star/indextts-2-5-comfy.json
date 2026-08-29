@@ -1,0 +1,79 @@
+{
+  "schema": 1,
+  "id": "t8star/IndexTTS-2.5-Comfy",
+  "slug": "t8star-indextts-2-5-comfy",
+  "author": "t8star",
+  "url": "https://huggingface.co/t8star/IndexTTS-2.5-Comfy",
+  "created_at": "2026-08-27T17:36:51.000Z",
+  "updated_at": "2026-08-28T19:24:30.000Z",
+  "license": "bilibili-model-license-and-third-party-licenses",
+  "license_family": "unknown",
+  "pipeline_tag": "text-to-speech",
+  "library": "indextts",
+  "languages": [
+    "zh",
+    "en",
+    "ja",
+    "es",
+    "ar"
+  ],
+  "tags": [
+    "indextts",
+    "safetensors",
+    "indextts-2.5",
+    "text-to-speech",
+    "voice-cloning",
+    "multilingual",
+    "emotion-controllable",
+    "zh",
+    "en",
+    "ja",
+    "es",
+    "ar",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 3,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 8285602737,
+  "storage_human": "8.3 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "t8star/IndexTTS-2.5-Comfy · Hugging Face",
+      "url": "https://huggingface.co/t8star/IndexTTS-2.5-Comfy",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "T8star-Aix - Hugging Face",
+      "url": "https://huggingface.co/t8star",
+      "snippet": "AI & ML interests ... Recent Activity liked a model about 3 hours ago ... updated a model 5 days ago"
+    },
+    {
+      "title": "GitHub - index-tts/index-tts: An Industrial-Level Controllable and ...",
+      "url": "https://github.com/index-tts/index-tts",
+      "snippet": "2025/05/14 🔥 We release IndexTTS-1.5, significantly improving the model&#x27;s stability and its performance in English. 2025/03/25 🔥 We release IndexTTS-1.0 with model weights and inference code."
+    },
+    {
+      "title": "⚙️ IndexTTS 2 / 2.5 Engine - ComfyUI Cloud",
+      "url": "https://comfy.icu/node/IndexTTSEngineNode",
+      "snippet": "⚙️ IndexTTS 2 / 2.5 Engine is a ComfyUI node in the TTS Audio Suite/⚙️ Engines category from TTS Audio Suite. Inputs: model_path, device, emotion_alpha…"
+    },
+    {
+      "title": "T8mars (T8star-Aix) · GitHub",
+      "url": "https://github.com/T8mars",
+      "snippet": "Go Youn Jung&#x27;s Fan,I like open source,Comfyui,AI,everything! - T8mars"
+    }
+  ]
+}

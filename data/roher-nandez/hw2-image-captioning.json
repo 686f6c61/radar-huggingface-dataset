@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "roher-nandez/hw2-image-captioning",
+  "slug": "roher-nandez-hw2-image-captioning",
+  "author": "roher-nandez",
+  "url": "https://huggingface.co/roher-nandez/hw2-image-captioning",
+  "created_at": "2026-08-29T01:01:31.000Z",
+  "updated_at": "2026-08-29T01:01:41.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "transformer",
+    "research-notes",
+    "image-captioning",
+    "license:cc-by-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 33088,
+  "parameters_human": "33088",
+  "storage_bytes": 132832,
+  "storage_human": "132832 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Image captioning · Hugging Face",
+      "url": "https://huggingface.co/docs/transformers/tasks/image_captioning",
+      "snippet": "Image captioning Image captioning is the task of predicting a caption for a given image. Common real world applications of it include aiding visually impaired people that can help them navigate through different situations. Therefore, image captioning helps to improve content accessibility for people by describing images to them."
+    },
+    {
+      "title": "A comprehensive survey on deep learning approaches for image captioning ...",
+      "url": "https://link.springer.com/article/10.1186/s40537-026-01377-w",
+      "snippet": "This paper presents a comprehensive literature survey on image captioning, covering research published between 2018 and 2025. It introduces a novel taxonomy to classify existing approaches into nine major categories, including attention-based models, transformer-based architectures, reinforcement learning, and Vision-Language Pretraining (VLP). A total of 174 peer-reviewed studies are ..."
+    },
+    {
+      "title": "Best 77 Image Captioning Models: Compare & Try Free - Roboflow",
+      "url": "https://playground.roboflow.com/models/task/captioning",
+      "snippet": "Which image captioning model is best for your project? Filter 77 models by license, compare size and price, and run 71 of them free on your own images."
+    },
+    {
+      "title": "Image captioning with visual attention - Text | TensorFlow",
+      "url": "https://www.tensorflow.org/text/tutorials/image_captioning",
+      "snippet": "The model architecture used here is inspired by Show, Attend and Tell: Neural Image Caption Generation with Visual Attention, but has been updated to use a 2-layer Transformer-decoder. To get the most out of this tutorial you should have some experience with text generation, seq2seq models & attention, or transformers. The model architecture built in this tutorial is shown below. Features are ..."
+    },
+    {
+      "title": "Models - Hugging Face",
+      "url": "https://huggingface.co/models?other=image-captioning",
+      "snippet": "Explore machine learning models. Leon1000/Qwen2.5-VL-7B-NSFW-Caption-V3-ComfyUI"
+    }
+  ]
+}

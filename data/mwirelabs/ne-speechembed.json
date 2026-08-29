@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "MWirelabs/ne-speechembed",
+  "slug": "mwirelabs-ne-speechembed",
+  "author": "MWirelabs",
+  "url": "https://huggingface.co/MWirelabs/ne-speechembed",
+  "created_at": "2026-05-15T15:35:59.000Z",
+  "updated_at": "2026-08-28T22:10:34.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "as",
+    "kha",
+    "grt",
+    "multilingual"
+  ],
+  "tags": [
+    "speech",
+    "embeddings",
+    "northeast-india",
+    "low-resource",
+    "retrieval",
+    "whisper",
+    "xlm-roberta",
+    "as",
+    "kha",
+    "grt",
+    "multilingual",
+    "license:cc-by-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 1,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 5922554325,
+  "storage_human": "5.9 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - MWirelabs/ne-speechembed: Speech embeddings for Northeast ...",
+      "url": "https://github.com/MWirelabs/ne-speechembed",
+      "snippet": "Speech embeddings for Northeast Indian languages, low-resource speaker/language representation learning - MWirelabs/ne-speechembed"
+    },
+    {
+      "title": "MWirelabs/ne-speechembed · Hugging Face",
+      "url": "https://huggingface.co/MWirelabs/ne-speechembed",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "MWirelabs/ne-speechembed at main - Hugging Face",
+      "url": "https://huggingface.co/MWirelabs/ne-speechembed/tree/main",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "ne-speechembed/README.md at main · MWirelabs/ne-speechembed",
+      "url": "https://github.com/MWirelabs/ne-speechembed/blob/main/README.md",
+      "snippet": "Speech embeddings for Northeast Indian languages, low-resource speaker/language representation learning - MWirelabs/ne-speechembed"
+    },
+    {
+      "title": "NE-SpeechEmbed",
+      "url": "https://aikosh.indiaai.gov.in/home/models/details/ne_speechembed.html",
+      "snippet": "NE-SpeechEmbed NE-SpeechEmbed is a multilingual speech-text embedding model by MWire Labs for Northeast Indian languages. The model supports semantic speech search, cross-modal retrieval, and audio-text embeddings across Khasi, Garo, Mizo, Nagamese, Kokborok, Assamese, Wancho, and Chakma."
+    }
+  ]
+}

@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "LocalAI-io/SkinTokens-GGUF",
+  "slug": "localai-io-skintokens-gguf",
+  "author": "LocalAI-io",
+  "url": "https://huggingface.co/LocalAI-io/SkinTokens-GGUF",
+  "created_at": "2026-08-28T20:42:26.000Z",
+  "updated_at": "2026-08-28T20:44:01.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "ggml",
+    "skintokens",
+    "rigging",
+    "animation",
+    "base_model:VAST-AI/SkinTokens",
+    "base_model:quantized:VAST-AI/SkinTokens",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 28848384,
+  "parameters_human": "28.8M",
+  "storage_bytes": 3631506624,
+  "storage_human": "3.6 GB",
+  "base_model": "VAST-AI/SkinTokens",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - VAST-AI-Research/SkinTokens: SkinTokens: A Learned Compact ...",
+      "url": "https://github.com/VAST-AI-Research/SkinTokens",
+      "snippet": "SkinTokens is a learned, compact, and discrete representation for skinning weights. Built on this representation, TokenRig is a unified autoregressive framework that models the entire rig, i.e., skeleton and skinning weights, as a single token sequence. Given an input 3D mesh, it generates a complete skeleton hierarchy and skin weights that can be directly imported into standard 3D pipelines ..."
+    },
+    {
+      "title": "Model Gallery - LocalAI",
+      "url": "https://localai.io/docs/models/",
+      "snippet": "Model Gallery The model gallery is a curated collection of models configurations for LocalAI that enables one-click install of models directly from the LocalAI Web interface. A list of the models available can also be browsed at the Public LocalAI Gallery. LocalAI to ease out installations of models provide a way to preload models on start and downloading and installing them in runtime. You ..."
+    },
+    {
+      "title": "GGUF Model Discovery - Browse & Download AI Models",
+      "url": "https://local-ai-zone.github.io/",
+      "snippet": "Discover and download GGUF format AI models. Browse and direct download thousands of quantized AI models with detailed information, download counts, and direct links."
+    },
+    {
+      "title": "LocalAI · Make AI run on every machine",
+      "url": "https://localai.io/",
+      "snippet": "LocalAI is the open source AI engine. Run any model, LLMs, vision, voice, image and video, on any hardware. No GPU required."
+    },
+    {
+      "title": "LocalAI is the open-source AI engine. Run any model - LLMs ... - GitHub",
+      "url": "https://github.com/mudler/LocalAI",
+      "snippet": "LocalAI is the open-source AI engine. Run any model - LLMs, vision, voice, image, video - on any hardware. No GPU required. - mudler/LocalAI"
+    }
+  ]
+}

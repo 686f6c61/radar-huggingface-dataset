@@ -26,8 +26,8 @@
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
-  "storage_bytes": 2304109903,
-  "storage_human": "2.3 GB",
+  "storage_bytes": 1340998618,
+  "storage_human": "1.3 GB",
   "base_model": "facebook/sam-vit-base",
   "formats": [
     "onnx"

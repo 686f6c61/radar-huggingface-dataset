@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "tenny-fri/new_222_5hb2xk3yze",
+  "slug": "tenny-fri-new_222_5hb2xk3yze",
+  "author": "tenny-fri",
+  "url": "https://huggingface.co/tenny-fri/new_222_5hb2xk3yze",
+  "created_at": "2026-08-21T14:27:04.000Z",
+  "updated_at": "2026-08-28T23:05:10.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "qwen3_5_moe",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 1,
+  "trending_score": 0,
+  "parameters": 35951822704,
+  "parameters_human": "35.95B",
+  "storage_bytes": 142151067427,
+  "storage_human": "142.2 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": true,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "tenny-fri/new_237_5dhnrnxlw4 · Hugging Face",
+      "url": "https://huggingface.co/tenny-fri/new_237_5dhnrnxlw4",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "tenny-fri (Tenny Fri) - Hugging Face",
+      "url": "https://huggingface.co/tenny-fri",
+      "snippet": "User profile of Tenny Fri on Hugging Face"
+    },
+    {
+      "title": "Best Free TWEEN GIRL AI Art & Models | Tensor.Art",
+      "url": "https://tensor.art/tag/724341849585795640",
+      "snippet": "Explore TWEEN GIRL on TENSOR — 130 models and 5.1K posts."
+    },
+    {
+      "title": "Perplexity AI",
+      "url": "https://www.perplexity.ai/",
+      "snippet": "Perplexity is a free AI-powered answer engine that provides accurate, trusted, and real-time answers to any question."
+    },
+    {
+      "title": "ChatGPT: Chat, Work, Create & Code with AI",
+      "url": "https://chatgpt.com/",
+      "snippet": "Use ChatGPT to answer questions, write, create images, complete work, and code—all in one place. Get started for free or download the app."
+    }
+  ]
+}

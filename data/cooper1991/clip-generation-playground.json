@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "Cooper1991/clip-generation-playground",
+  "slug": "cooper1991-clip-generation-playground",
+  "author": "Cooper1991",
+  "url": "https://huggingface.co/Cooper1991/clip-generation-playground",
+  "created_at": "2026-08-28T22:10:09.000Z",
+  "updated_at": "2026-08-28T22:10:18.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "clip",
+    "pytorch",
+    "generation",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 49600,
+  "parameters_human": "49600",
+  "storage_bytes": 198880,
+  "storage_human": "198880 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "OpenAI Platform",
+      "url": "https://platform.openai.com/playground",
+      "snippet": "Build on the OpenAI API Platform Sign up or login with an OpenAI account to build with the OpenAI API."
+    },
+    {
+      "title": "GitHub - openai/CLIP: CLIP (Contrastive Language-Image Pretraining ...",
+      "url": "https://github.com/openai/CLIP",
+      "snippet": "CLIP [Blog] [Paper] [Model Card] [Colab] CLIP (Contrastive Language-Image Pre-Training) is a neural network trained on a variety of (image, text) pairs. It can be instructed in natural language to predict the most relevant text snippet, given an image, without directly optimizing for the task, similarly to the zero-shot capabilities of GPT-2 and 3."
+    },
+    {
+      "title": "Playground AI — AI Image & Video Generation",
+      "url": "https://www.playgroundart.ai/",
+      "snippet": "Generate stunning AI images and videos instantly. Use PixVerse, GPT-Image, FLUX, and 10+ AI models."
+    },
+    {
+      "title": "GPT Image 2 — Free AI Image Generator & Editor by OpenAI | Playground",
+      "url": "https://playgroundai.com/gpt-image-2",
+      "snippet": "Try OpenAI&#x27;s GPT Image 2 for free. Generate or edit any image from a prompt — industry-leading text rendering, sharp typography, and instruction following. 3 free generations per month, no sign-up."
+    },
+    {
+      "title": "PlaygroundLM - All AI Models, One Interface",
+      "url": "https://playgroundlm.com/",
+      "snippet": "All AI models, one interface. Switch between GPT-5, Claude, Gemini instantly. One subscription, endless AI power."
+    }
+  ]
+}

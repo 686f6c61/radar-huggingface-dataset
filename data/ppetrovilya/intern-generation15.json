@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "Ppetrovilya/intern-generation15",
+  "slug": "ppetrovilya-intern-generation15",
+  "author": "Ppetrovilya",
+  "url": "https://huggingface.co/Ppetrovilya/intern-generation15",
+  "created_at": "2026-08-28T22:30:14.000Z",
+  "updated_at": "2026-08-28T22:30:24.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "tiny_transformer",
+    "pytorch",
+    "tiny-transformer",
+    "generation",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 49600,
+  "parameters_human": "49600",
+  "storage_bytes": 198880,
+  "storage_human": "198880 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Ppetrovilya (Ilya Petrov) - Hugging Face",
+      "url": "https://huggingface.co/Ppetrovilya/models",
+      "snippet": "Ppetrovilya&#x27;s models1 Sort: Recently updated Ppetrovilya/paper_005987031_self_supervised Updated 3 days ago"
+    },
+    {
+      "title": "Ppetrovilya (Ilya Petrov) - Hugging Face",
+      "url": "https://huggingface.co/Ppetrovilya",
+      "snippet": "Reinforcement learning is my therapy"
+    },
+    {
+      "title": "Gemini — Google DeepMind",
+      "url": "https://deepmind.google/models/gemini/",
+      "snippet": "Gemini 3.5 Flash-Lite has proven incredibly fast and reliable. Ultimately, the model unlocks direct accessibility, giving users a highly responsive option they can choose on demand for smooth, uninterrupted execution.\" Ashwin Kannan, Principal AI Engineer, Palo Alto Networks"
+    },
+    {
+      "title": "‎Google Gemini",
+      "url": "https://gemini.google.com/",
+      "snippet": "Meet Gemini, Google&#x27;s AI assistant. Get help with writing, planning, brainstorming, and more. Experience the power of generative AI."
+    },
+    {
+      "title": "Google AI Studio",
+      "url": "https://aistudio.google.com/",
+      "snippet": "Build with Google AI Studio Go from prompt to production with Gemini, Veo, Nano Banana, and more"
+    }
+  ]
+}

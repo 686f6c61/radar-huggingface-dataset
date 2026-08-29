@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "Dimi446/my-models",
+  "slug": "dimi446-my-models",
+  "author": "Dimi446",
+  "url": "https://huggingface.co/Dimi446/my-models",
+  "created_at": "2023-06-24T02:06:47.000Z",
+  "updated_at": "2026-08-29T01:05:39.000Z",
+  "license": "openrail",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:openrail",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1386305277,
+  "storage_human": "1.4 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Dimi446/my-models at main - Hugging Face",
+      "url": "https://huggingface.co/Dimi446/my-models/tree/main",
+      "snippet": "Dimi446 / my-models like 0 License: openrail Model card FilesFiles and versions Community Use with library main my-models 1 contributor History:28 commits Dimi446 Rename drive-download-20230724T203925Z-001.zip to Felipe-TTS.zip 4014a20 3 months ago .gitattributes 1.52 kB initial commit 4 months ago AHUURR-AH-BHRUAH-BHRUU-AH-BHRUUUUU-AH.zip ..."
+    },
+    {
+      "title": "Dimi446 (Dimitri T.) - Hugging Face",
+      "url": "https://huggingface.co/Dimi446",
+      "snippet": "User profile of Dimitri T. on Hugging Face"
+    },
+    {
+      "title": "Models.dev - An open-source database of AI models",
+      "url": "https://models.dev/",
+      "snippet": "Models.dev is a comprehensive open-source database of AI model specifications, pricing, and features."
+    },
+    {
+      "title": "Dimi446 (Dimitri T. Pereira) · GitHub",
+      "url": "https://github.com/Dimi446",
+      "snippet": "Dimi446 has 11 repositories available. Follow their code on GitHub."
+    },
+    {
+      "title": "Jerry Seinfeld (Seinfeld) | (RVC v2) | 150 Epochs AI Voice Model",
+      "url": "https://voice-models.com/model/1lw7Dwsqff6",
+      "snippet": "Jerry Seinfeld (Seinfeld) | (RVC v2) | 150 Epochs AI voice model for RVC voice conversion. View details, samples, source status, and run this voice model in EasyAIVoice."
+    }
+  ]
+}

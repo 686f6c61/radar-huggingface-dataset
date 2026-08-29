@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "aarushraj111/RustQwen-3.5-2B-GGUF",
+  "slug": "aarushraj111-rustqwen-3-5-2b-gguf",
+  "author": "aarushraj111",
+  "url": "https://huggingface.co/aarushraj111/RustQwen-3.5-2B-GGUF",
+  "created_at": "2026-08-28T19:46:30.000Z",
+  "updated_at": "2026-08-28T19:49:41.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "qwen3_5",
+    "llama.cpp",
+    "unsloth",
+    "vision-language-model",
+    "endpoints_compatible",
+    "region:us",
+    "imatrix",
+    "conversational"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1942653248,
+  "parameters_human": "1.94B",
+  "storage_bytes": 5663390848,
+  "storage_human": "5.7 GB",
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "TheStageAI/Qwen3.5-2B-GGUF · Hugging Face",
+      "url": "https://huggingface.co/TheStageAI/Qwen3.5-2B-GGUF",
+      "snippet": "Base model: Qwen/Qwen3.5-2B at revision 15852e8c. Manifest: release-manifest.json records the exact base revision, byte sizes, GGUF file types, whole-file BPW, tensor inventories, SHA-256 digests, held-out KL values, and evaluation IDs."
+    },
+    {
+      "title": "Qwen/Qwen3.5-2B · Hugging Face",
+      "url": "https://huggingface.co/Qwen/Qwen3.5-2B",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Package qwen3.5-2b-gguf · GitHub",
+      "url": "https://github.com/taranis-ai/taranis-llm-images/pkgs/container/qwen3.5-2b-gguf/",
+      "snippet": "The images still bake the selected model at build time for offline startup. That means changing MODEL_ID at runtime does not fetch a new model; it only affects the env inside an image that already contains that model. For the CPU image, MODEL_ID is the Hugging Face repo and MODEL_FILE is the exact GGUF file to bake into the image."
+    },
+    {
+      "title": "Qwen3.5-2B-GGUF by Alibaba (2B) - Run Locally - Ok Tech Masters",
+      "url": "https://oktechmasters.org/ai_models/qwen3-5-2b-gguf/",
+      "snippet": "2B open-weight model from Alibaba for local AI inference. Run Qwen3.5-2B-GGUF locally with Ollama: ollama pull qwen3.5-2b:2b Minimum 4GB RAM.…"
+    },
+    {
+      "title": "Qwen3.5-2B-GGUF huggingface.co api & unsloth Qwen3.5-2B-GGUF github AI ...",
+      "url": "https://www.toolify.ai/ai-model/unsloth-qwen3-5-2b-gguf",
+      "snippet": "Qwen3.5-2B-GGUF huggingface.co is an AI model on huggingface.co that provides Qwen3.5-2B-GGUF&#x27;s model effect (), which can be used instantly with this unsloth Qwen3.5-2B-GGUF model. huggingface.co supports a free trial of the Qwen3.5-2B-GGUF model, and also provides paid use of the Qwen3.5-2B-GGUF. Support call Qwen3.5-2B-GGUF model through api, including Node.js, Python, http."
+    }
+  ]
+}

@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "Fabrix-AI-Inc/Argos-2b-vx-r2",
+  "slug": "fabrix-ai-inc-argos-2b-vx-r2",
+  "author": "Fabrix-AI-Inc",
+  "url": "https://huggingface.co/Fabrix-AI-Inc/Argos-2b-vx-r2",
+  "created_at": "2026-08-28T23:31:52.000Z",
+  "updated_at": "2026-08-28T23:33:50.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_5",
+    "image-text-to-text",
+    "text-generation-inference",
+    "unsloth",
+    "conversational",
+    "en",
+    "base_model:unsloth/Qwen3.5-2B",
+    "base_model:finetune:unsloth/Qwen3.5-2B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 2274069824,
+  "parameters_human": "2.27B",
+  "storage_bytes": 4568210831,
+  "storage_human": "4.6 GB",
+  "base_model": "unsloth/Qwen3.5-2B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Quantized Models for Fabrix-AI-Inc/Argos-2B - Hugging Face",
+      "url": "https://huggingface.co/models?other=base_model:quantized:Fabrix-AI-Inc/Argos-2B",
+      "snippet": "Explore machine learning models. Model Tree Fabrix-AI-Inc/Argos-2B Apps Inference Providers One-click Deployment Misc Apply filters"
+    },
+    {
+      "title": "VibeOps | Fabrix.ai",
+      "url": "https://www.fabrix.ai/governed-vibeops/",
+      "snippet": "Reimagine IT Operations - Without Losing Control of It. Governed VibeOps turns signals into outcomes across your existing tools, powered by the Argos family of purpose-built operational SLMs."
+    },
+    {
+      "title": "Youibot Unveils FabriX Industrial Embodied AI Model and Edge Humanoid ...",
+      "url": "https://en.youibot.com/news/youibot-unveils-fabrix-industrial-embodied-ai-model-and-edge-humanoid-robot-accelerating-large-scale-industrial-deployment.html",
+      "snippet": "It combines large-model intelligence with deterministic industrial control, creating an embodied AI foundation capable of handling complex manufacturing tasks with industrial-grade reliability. FabriX adopts a hybrid edge-cloud architecture, integrating: - A multimodal Mixture-of-Experts (MoE) foundation model trained on industrial robot data."
+    },
+    {
+      "title": "Powering the Next Era of Agentic Enterprise | Fabrix.ai",
+      "url": "https://www.fabrix.ai/",
+      "snippet": "Every AI action traced, governed, and explainable A shared control layer for observability, approvals, policy enforcement, audit trails, PII masking, model usage, token spend, and agent behavior across teams, tools, and LLM providers."
+    },
+    {
+      "title": "fabrix-ai · PyPI",
+      "url": "https://pypi.org/project/fabrix-ai/",
+      "snippet": "Fabrix Language: English | 한국어 API Guides: English | 한국어 Overview Fabrix is a graph-based agent framework built on top of oauth-codex>=2.3.. It provides a structured execution graph with streaming events for tool-driven workflows. Key Features Graph-based 3-state execution: reasoning, tool_call, response Structured state outputs powered by Pydantic models Sequential tool execution ..."
+    }
+  ]
+}

@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "selsar/cv_labor_market_position_v2",
+  "slug": "selsar-cv_labor_market_position_v2",
+  "author": "selsar",
+  "url": "https://huggingface.co/selsar/cv_labor_market_position_v2",
+  "created_at": "2026-08-28T22:02:09.000Z",
+  "updated_at": "2026-08-28T22:02:29.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-classification",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "deberta-v2",
+    "text-classification",
+    "arxiv:1910.09700",
+    "text-embeddings-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 278810882,
+  "parameters_human": "278.8M",
+  "storage_bytes": 1135889351,
+  "storage_human": "1.1 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "selsar (Selma Sarenkapa) - Hugging Face",
+      "url": "https://huggingface.co/selsar",
+      "snippet": "selsar/nli-multilabel-professionsalstatus-new published a model about 13 hours ago selsar/nli-multilabel-professionsalstatus-new updated a model about 13 hours ago selsar/nli-multilabel-behavioral-new View all activity"
+    },
+    {
+      "title": "Models - Hugging Face",
+      "url": "https://huggingface.co/models?search=Socio-Economic",
+      "snippet": "selsar/socio-economic_position Text Classification • 0.3B•Updated Sep 22, 2025• 5"
+    },
+    {
+      "title": "Labor market impacts of AI: A new measure and early evidence",
+      "url": "https://www.anthropic.com/research/labor-market-impacts",
+      "snippet": "In this paper, we present a new framework for understanding AI&#x27;s labor market impacts, and test it against early data, finding limited evidence that AI has affected employment to date. Our goal is to establish an approach for measuring how AI is affecting employment, and to revisit these analyses periodically."
+    },
+    {
+      "title": "AI-Enabled Resume Screening with spaCy NLP - LinkedIn",
+      "url": "https://www.linkedin.com/posts/naveen-aravind-273916183_nlp-artificialintelligence-python-activity-7497569747371220992-PWWQ",
+      "snippet": "🚀 Looking Back at One of My First NLP Projects I worked on a project titled \"AI-Enabled Candidate Resume Screening Using spaCy Entity Recognition.\" The project focused on a common ..."
+    },
+    {
+      "title": "GitHub - jorik041/KAR: Labor Market AI Agent",
+      "url": "https://github.com/jorik041/KAR",
+      "snippet": "What is KAR? KAR (Karpathy AI Researcher) is an open-source, full-stack intelligence platform that maps the U.S. labor market through the lens of AI disruption. Inspired by karpathy.ai/jobs by Andrej Karpathy, KAR connects live Bureau of Labor Statistics data with LLM-powered analysis to score every major U.S. occupation across six AI-exposure dimensions — giving workers, researchers, and ..."
+    }
+  ]
+}

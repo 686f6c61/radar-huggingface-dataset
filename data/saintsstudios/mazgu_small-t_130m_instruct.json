@@ -5,7 +5,7 @@
   "author": "SaintsStudios",
   "url": "https://huggingface.co/SaintsStudios/Mazgu_Small-T_130M_Instruct",
   "created_at": "2026-08-27T14:21:16.000Z",
-  "updated_at": "2026-08-27T20:04:09.000Z",
+  "updated_at": "2026-08-28T12:34:48.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -17,9 +17,6 @@
     "llama",
     "text-generation",
     "generated_from_trainer",
-    "base_model:SaintsStudios/Mazgu_Small-T_130M",
-    "base_model:finetune:SaintsStudios/Mazgu_Small-T_130M",
-    "license:apache-2.0",
     "text-generation-inference",
     "endpoints_compatible",
     "region:us"
@@ -29,8 +26,8 @@
   "trending_score": 0,
   "parameters": 52175360,
   "parameters_human": "52.2M",
-  "storage_bytes": 2922089045,
-  "storage_human": "2.9 GB",
+  "storage_bytes": 5113632198,
+  "storage_human": "5.1 GB",
   "base_model": "SaintsStudios/Mazgu_Small-T_130M",
   "formats": [
     "safetensors"

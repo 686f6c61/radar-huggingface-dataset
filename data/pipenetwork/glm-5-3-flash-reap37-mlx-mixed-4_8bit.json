@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "pipenetwork/GLM-5.3-Flash-REAP37-MLX-mixed-4_8bit",
+  "slug": "pipenetwork-glm-5-3-flash-reap37-mlx-mixed-4_8bit",
+  "author": "pipenetwork",
+  "url": "https://huggingface.co/pipenetwork/GLM-5.3-Flash-REAP37-MLX-mixed-4_8bit",
+  "created_at": "2026-08-28T23:43:31.000Z",
+  "updated_at": "2026-08-28T23:53:11.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "mlx",
+  "languages": [],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "glm5_next",
+    "apple-silicon",
+    "mixture-of-experts",
+    "4-bit",
+    "image-text-to-text",
+    "conversational",
+    "base_model:zai-org/GLM-5.3-Flash",
+    "base_model:quantized:zai-org/GLM-5.3-Flash",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 33014627760,
+  "parameters_human": "33.01B",
+  "storage_bytes": 118291226625,
+  "storage_human": "118.3 GB",
+  "base_model": "zai-org/GLM-5.3-Flash",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "pipenetwork/GLM-5.3-Flash-MLX-8bit · Hugging Face",
+      "url": "https://huggingface.co/pipenetwork/GLM-5.3-Flash-MLX-8bit",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GitHub - PipeNetwork/glm53-flash-mlx: MLX (Apple Silicon) runtime ...",
+      "url": "https://github.com/PipeNetwork/glm53-flash-mlx",
+      "snippet": "MLX (Apple Silicon) runtime and quantization tooling for zai-org/GLM-5.3-Flash — 320B-A18B: 34 Kimi-Delta linear-attention layers interleaved with 11 DeepSeek-sparse-attention layers (NoPE MLA behind a lightning indexer), 288-expert MoE, manifold-constrained hyper-connections (model_type: glm5_next)."
+    },
+    {
+      "title": "pipenetwork/GLM-5.2-REAP37-MLX-4bit · Hugging Face",
+      "url": "https://huggingface.co/pipenetwork/GLM-5.2-REAP37-MLX-4bit",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "PipeNetwork - GitHub",
+      "url": "https://github.com/PipeNetwork",
+      "snippet": "hi Public Rust 4 1 0 3 Updated yesterday glm53-flash-mlx Public MLX (Apple Silicon) runtime + quantization for GLM-5.3-Flash, validated against transformers"
+    },
+    {
+      "title": "GLM-5.3-Flash: How to Run Locally - unsloth.ai",
+      "url": "https://unsloth.ai/docs/models/glm-5.3-flash",
+      "snippet": "GLM-5.3-Flash, also known as ox-alpha, is Z.ai&#x27;s new 320B parameter multimodal open model with 18B active parameters. GLM-5.3-Flash outperforms GLM-5.2 across benchmarks and real-world tasks at one-tenth the price, while also rivalling Claude Opus 4.8 on coding and agentic benchmarks. You can now run the 1-bit model locally on 102GB RAM/VRAM or 3-bit on 128GB setups via llama.cpp or Unsloth."
+    }
+  ]
+}

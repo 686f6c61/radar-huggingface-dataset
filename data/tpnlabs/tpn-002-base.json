@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "tpnlabs/tpn-002-base",
+  "slug": "tpnlabs-tpn-002-base",
+  "author": "tpnlabs",
+  "url": "https://huggingface.co/tpnlabs/tpn-002-base",
+  "created_at": "2026-08-28T19:42:40.000Z",
+  "updated_at": "2026-08-28T21:23:31.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 8953803264,
+  "parameters_human": "8.95B",
+  "storage_bytes": 18838863744,
+  "storage_human": "18.8 GB",
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "AI-guided precision parenteral nutrition — Takeoff41",
+      "url": "https://www.takeoff41.com/science/nature-medicine-2025",
+      "snippet": "One in ten neonates are admitted to neonatal intensive care units, yet the application of AI in guiding their care remains underexplored. Total parenteral nutrition is a life-saving treatment for preterm neonates, but implementing it in its current form is subjective, error-prone, and resource-consuming. This study introduces TPN2.0, a data-driven approach that optimizes and standardizes TPN ..."
+    },
+    {
+      "title": "Model download tutorial - General - Topaz Community",
+      "url": "https://community.topazlabs.com/t/model-download-tutorial/18446",
+      "snippet": "This tutorial is aimed at those who don&#x27;t want to have the program fetch a model when it is not already downloaded. Beginning with version 1.7.0 of VEAI there are many different models the program can use. So far they are forward-compatible, and newer versions than 1.7.0 can use models from 1.7.0 and later. It is possible to download all, or specific, models and store them. There are ..."
+    },
+    {
+      "title": "AI Guided Parenteral Nutrition Therapy After Hematopoietic ... - Nature",
+      "url": "https://www.nature.com/articles/s41746-026-02652-z",
+      "snippet": "We developed and evaluated an AI approach to standardize intravenous nutrition (total parenteral nutrition, TPN) during this vulnerable period."
+    },
+    {
+      "title": "AI model formulates life-saving nutrition for NICU infants",
+      "url": "https://stanforddaily.com/2025/04/18/ai-model-formulates-life-saving-nutrition-for-nicu-infants/",
+      "snippet": "The scientists most recently developed TPN2.0, a new AI model that creates data-driven recipes of total parenteral nutrition (TPN), a life-saving treatment given to infants in the NICU."
+    },
+    {
+      "title": "AI Model Can Optimize, Standardize Total Parenteral Nutrition Formulas",
+      "url": "https://drugslib.com/news/ai-model-can-optimize-standardize-total-parenteral-nutrition-formulas-6148/",
+      "snippet": "By Elana Gotkine HealthDay Reporter TUESDAY, April 1, 2025 -- An artificial intelligence (AI) approach identified total parenteral nutrition (TPN) formulas that increase safety and potentially reduce costs for neonates admitted to neonatal intensive care units, according to a study published online March 25 in Nature Medicine."
+    }
+  ]
+}

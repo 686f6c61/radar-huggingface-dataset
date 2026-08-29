@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "danieldoyle/flamingo-generation43",
+  "slug": "danieldoyle-flamingo-generation43",
+  "author": "danieldoyle",
+  "url": "https://huggingface.co/danieldoyle/flamingo-generation43",
+  "created_at": "2026-08-28T23:50:59.000Z",
+  "updated_at": "2026-08-28T23:51:09.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "flamingo",
+    "pytorch",
+    "generation",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 49600,
+  "parameters_human": "49600",
+  "storage_bytes": 198880,
+  "storage_human": "198880 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub Pages - DALLE Flamingo",
+      "url": "https://dalleflamingo.github.io/",
+      "snippet": "The field of multimodal research focusing on the comprehension and creation of both images and text has witnessed significant strides. This progress is exemplified by the emergence of sophisticated models dedicated to image captioning at scale, such as the notable Flamingo model and text-to-image generative models, with DALL-E serving as a prominent example. An interesting question worth ..."
+    },
+    {
+      "title": "Flamingo Architecture - Interactive",
+      "url": "https://mbrenndoerfer.com/writing/flamingo-architecture-multimodal-vision-language-model",
+      "snippet": "Flamingo shifts how we approach multimodal AI. This shows that large language models can acquire visual understanding without catastrophic forgetting of their linguistic capabilities. Rather than training a vision-language model from scratch, Flamingo inserts lightweight trainable components between a frozen vision encoder and a frozen language model. This makes possible the resulting system ..."
+    },
+    {
+      "title": "Flamingo (visual language model) - AI Wiki",
+      "url": "https://aiwiki.ai/wiki/flamingo",
+      "snippet": "Flamingo is a family of visual language models (VLMs) built by DeepMind and introduced in April 2022 that brought few-shot"
+    },
+    {
+      "title": "Day 10/30 -Deep learning challenge Exploring Flamingo (DeepMind ...",
+      "url": "https://www.linkedin.com/pulse/day-1030-deep-learning-challenge-exploring-flamingo-deepmind-durai-xxg4c/",
+      "snippet": "Introduction Today marks Day 10 of my Deep Learning Challenge, and I dove into one of the most exciting areas in AI research — multi-modal models. Specifically, I explored Flamingo, a powerful ..."
+    },
+    {
+      "title": "Intuitively and Exhaustively Explained - Towards Data Science",
+      "url": "https://towardsdatascience.com/flamingo-intuitively-and-exhaustively-explained-bf745611238b/",
+      "snippet": "Allowing text to attend to all previous images would significantly increase the computational complexity and memory requirements of the model. Focusing on the immediate image-text pair helps the model better learn the relationships between visual content and textual information."
+    }
+  ]
+}

@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "BUFFALOPHYSICS/simple-contrastive-2023",
+  "slug": "buffalophysics-simple-contrastive-2023",
+  "author": "BUFFALOPHYSICS",
+  "url": "https://huggingface.co/BUFFALOPHYSICS/simple-contrastive-2023",
+  "created_at": "2026-08-28T20:34:14.000Z",
+  "updated_at": "2026-08-28T20:34:24.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "flamingo",
+    "pytorch",
+    "contrastive",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 16576,
+  "parameters_human": "16576",
+  "storage_bytes": 66784,
+  "storage_human": "66784 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "BUFFALOPHYSICS (Alyssa Adams) - Hugging Face",
+      "url": "https://huggingface.co/BUFFALOPHYSICS",
+      "snippet": "AI & ML interests ... Recent Activity updated a model about 4 hours ago ... published a model about 4 hours ago"
+    },
+    {
+      "title": "BUFFALOPHYSICS (Alyssa Adams) - Hugging Face",
+      "url": "https://huggingface.co/BUFFALOPHYSICS/datasets",
+      "snippet": "I train models and sometimes they work"
+    },
+    {
+      "title": "GitHub - MattiaToffolo/Scientific-Contradiction-Detector: End-to-end AI ...",
+      "url": "https://github.com/MattiaToffolo/Scientific-Contradiction-Detector",
+      "snippet": "End-to-end AI system for automated scientific literature review. Type a biomedical claim, get a structured evidence report: which papers support it, which contradict it, and a written synthesis. Built with local LLMs (Ollama + llama3.2), RAG (ChromaDB + sentence-transformers), and Streamlit. Zero cost, fully private."
+    },
+    {
+      "title": "GitHub - pratoshhhh/ssa-contrastive: Physics-Aware Contrastive ...",
+      "url": "https://github.com/pratoshhhh/ssa-contrastive/tree/main/",
+      "snippet": "Self-supervised contrastive learning for space imagery with physics-informed augmentations modeling real observational effects."
+    },
+    {
+      "title": "OpenAI | Research & Deployment",
+      "url": "https://openai.com/",
+      "snippet": "We believe our research will eventually lead to artificial general intelligence, a system that can solve human-level problems."
+    }
+  ]
+}

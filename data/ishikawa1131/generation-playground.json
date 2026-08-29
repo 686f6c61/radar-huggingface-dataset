@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "ISHIKAWA1131/generation-playground",
+  "slug": "ishikawa1131-generation-playground",
+  "author": "ISHIKAWA1131",
+  "url": "https://huggingface.co/ISHIKAWA1131/generation-playground",
+  "created_at": "2026-08-28T22:27:44.000Z",
+  "updated_at": "2026-08-28T22:27:52.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "coca",
+    "pytorch",
+    "generation",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 49600,
+  "parameters_human": "49600",
+  "storage_bytes": 198880,
+  "storage_human": "198880 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Model Playground AI",
+      "url": "https://modelplayground.ai/",
+      "snippet": "Compare and evaluate different AI models side by side. 150+ models. 1 subscription. 0 markup."
+    },
+    {
+      "title": "ModelsLab Playground - Explore & Test AI Models",
+      "url": "https://modelslab.com/playground",
+      "snippet": "Experiment with AI models in the ModelsLab Playground. Generate images, text, audio, and more in an interactive developer environment."
+    },
+    {
+      "title": "GenAIPlayground.com",
+      "url": "https://genaiplayground.com/",
+      "snippet": "Generative AI Playground TRY NOW - META&#x27;s LLAMA2 MODEL (7B parameters) Running on a 6GB RAM commercial GPU. This is a text generation model. You can enter a partial sentence or paragraph and the model will write an extension for it. Enter the starting of a sentence/paragraph and let LLAMA2 complete it for you. Try it!"
+    },
+    {
+      "title": "EXL AI Playground - Explore AI Models & Tools",
+      "url": "https://exlaiplayground.com/",
+      "snippet": "Interactive AI playground for experimenting with language models, image generation, and AI-powered tools. Build, test, and explore AI capabilities in real-time."
+    },
+    {
+      "title": "PlaygroundLM - All AI Models, One Interface",
+      "url": "https://playgroundlm.com/",
+      "snippet": "All AI models, one interface. Switch between GPT-5, Claude, Gemini instantly. One subscription, endless AI power."
+    }
+  ]
+}

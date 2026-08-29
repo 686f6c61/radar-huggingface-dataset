@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "Devsyril/opus-mt-ee-fr-onnx",
+  "slug": "devsyril-opus-mt-ee-fr-onnx",
+  "author": "Devsyril",
+  "url": "https://huggingface.co/Devsyril/opus-mt-ee-fr-onnx",
+  "created_at": "2026-08-28T22:54:55.000Z",
+  "updated_at": "2026-08-28T22:55:19.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "translation",
+  "library": "transformers.js",
+  "languages": [],
+  "tags": [
+    "transformers.js",
+    "onnx",
+    "marian",
+    "text2text-generation",
+    "translation",
+    "opus-mt",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 887234580,
+  "storage_human": "887 MB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - Helsinki-NLP/Opus-MT: Open neural machine translation models ...",
+      "url": "https://github.com/Helsinki-NLP/Opus-MT",
+      "snippet": "Train MT models There is a Makefile for training new models from OPUS data in the Opus-MT-train repository, but this is heavily customized for the work environment at CSC and the University of Helsinki projects. This will (hopefully) be more generic in the future to be able to run in different environments and setups as well."
+    },
+    {
+      "title": "opus-mt-fr-ee.onnx - CivArchive - CivArchive (CivitAI Archive)",
+      "url": "https://civarchive.com/files/opus-mt-fr-ee.onnx?platform=all",
+      "snippet": "Download opus-mt-fr-ee.onnx from CivArchive. Find this AI model file preserved in our community-driven archive."
+    },
+    {
+      "title": "opus-mt-ee-fr.onnx - CivArchive - CivArchive (CivitAI Archive)",
+      "url": "https://civarchive.com/files/opus-mt-ee-fr.onnx?platform=all",
+      "snippet": "Download opus-mt-ee-fr.onnx from CivArchive. Find this AI model file preserved in our community-driven archive."
+    },
+    {
+      "title": "OPUS-MT-train/models/fr-en/README.md at master - GitHub",
+      "url": "https://github.com/Helsinki-NLP/OPUS-MT-train/blob/master/models/fr-en/README.md",
+      "snippet": "Training open neural machine translation models. Contribute to Helsinki-NLP/OPUS-MT-train development by creating an account on GitHub."
+    },
+    {
+      "title": "Xenova/opus-mt-en-fr · Hugging Face",
+      "url": "https://huggingface.co/Xenova/opus-mt-en-fr",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    }
+  ]
+}

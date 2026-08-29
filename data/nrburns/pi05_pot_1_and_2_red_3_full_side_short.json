@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "nrburns/pi05_Pot_1_and_2_Red_3_full_side_short",
+  "slug": "nrburns-pi05_pot_1_and_2_red_3_full_side_short",
+  "author": "nrburns",
+  "url": "https://huggingface.co/nrburns/pi05_Pot_1_and_2_Red_3_full_side_short",
+  "created_at": "2026-08-28T23:02:29.000Z",
+  "updated_at": "2026-08-28T23:02:58.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "robotics",
+    "pi05",
+    "dataset:nrburns/Pot_1_and_2_Red-3_full_side-short",
+    "base_model:lerobot/pi05_base",
+    "base_model:finetune:lerobot/pi05_base",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 4143404816,
+  "parameters_human": "4.14B",
+  "storage_bytes": 9388473744,
+  "storage_human": "9.4 GB",
+  "base_model": "lerobot/pi05_base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "OpenPI - RoboTwin 2.0 Official Document",
+      "url": "https://robotwin-platform.github.io/doc/usage/Pi05.html",
+      "snippet": "OpenPI Environment Setup We use uv to manage Python dependencies,you can add uv your conda environment."
+    },
+    {
+      "title": "AI Checker | Free AI Detector",
+      "url": "https://www.humanizeai.pro/detector",
+      "snippet": "Best free AI detector & checker for AI content. Check ChatGPT, Gemini, GPT-4, GPT-5 & other AI-generated content and instantly get an overall AI score."
+    },
+    {
+      "title": "GitHub - physical-superintelligence-lab/SIMPLE: Welcome to SIMPLE, a ...",
+      "url": "https://github.com/physical-superintelligence-lab/SIMPLE",
+      "snippet": "Welcome to SIMPLE, a full-stack simulation environment for humanoid loco-manipulation, built on AMO/SONIC, with integrated support for mainstream VLAs such as Psi0, Pi05, GR00T, DreamZero, Cosmos3 and more. - physical-superintelligence-lab/SIMPLE"
+    },
+    {
+      "title": "ChatGPT: Chat, Work, Create & Code with AI",
+      "url": "https://chatgpt.com/",
+      "snippet": "Use ChatGPT to answer questions, write, create images, complete work, and code—all in one place. Get started for free or download the app."
+    },
+    {
+      "title": "AI Detector - Free AI Checker for ChatGPT, GPT-5 & Gemini",
+      "url": "https://gptzero.me/",
+      "snippet": "No. GPTZero works across a wide range of AI language models, including but not limited to ChatGPT, GPT-5, GPT-4, GPT-3, Gemini, Claude, Llama, Deepseek, and AI services based on those models."
+    }
+  ]
+}

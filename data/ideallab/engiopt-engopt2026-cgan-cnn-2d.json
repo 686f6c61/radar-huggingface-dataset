@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "IDEALLab/engiopt-engopt2026-cgan-cnn-2d",
+  "slug": "ideallab-engiopt-engopt2026-cgan-cnn-2d",
+  "author": "IDEALLab",
+  "url": "https://huggingface.co/IDEALLab/engiopt-engopt2026-cgan-cnn-2d",
+  "created_at": "2026-08-28T20:56:39.000Z",
+  "updated_at": "2026-08-28T21:01:20.000Z",
+  "license": "gpl-3.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "engiopt",
+  "languages": [],
+  "tags": [
+    "engiopt",
+    "engineering-design",
+    "inverse-design",
+    "engibench",
+    "license:gpl-3.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 50118976,
+  "storage_human": "50 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - IDEALLab/EngiOpt: Learning and optimization algorithms ...",
+      "url": "https://github.com/IDEALLab/EngiOpt",
+      "snippet": "This trains a CGAN 2D w/ CNN on beams2d. The flags mirror W&B&#x27;s: --track enables W&B logging, --wandb-entity / --wandb-project say where the run goes, --save-model uploads the checkpoint to HuggingFace, and --hf-entity / --hf-repo-prefix say where the checkpoint goes. W&B holds media, scalars, and run history. HuggingFace holds the model weights. One log-in per service:"
+    },
+    {
+      "title": "IDEALLab/engiopt-cgan-cnn-2d · Hugging Face",
+      "url": "https://huggingface.co/IDEALLab/engiopt-cgan-cnn-2d",
+      "snippet": "EngiOpt cgan_cnn_2d This repository stores EngiOpt checkpoint packages for one model family. Each checkpoint package contains model weight files together with run_config.json and metadata.json so evaluation can run without depending on W&B run config state."
+    },
+    {
+      "title": "GitHub - IDEALLab/EngiOpt: Learning and optimization algorithms ...",
+      "url": "https://github.com/IDEALLab/EngiOpt/tree/main",
+      "snippet": "This will run a CGAN 2D using CNN model on the beams2d problem. --track will track the run on wandb, --wandb-entity None will use the default wandb entity, --save-model will save the model, --n-epochs 200 will run for 200 epochs, and --seed 1 will set the random seed."
+    },
+    {
+      "title": "IDEALLab/engiopt-smoke-20260825-211404-cgan-cnn-2d · Hugging Face",
+      "url": "https://huggingface.co/IDEALLab/engiopt-smoke-20260825-211404-cgan-cnn-2d",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "EngOpt2026",
+      "url": "https://engopt2026.tecnico.ulisboa.pt/",
+      "snippet": "About EngOpt 2026 A forum for Engineers, Mathematicians and Computer Scientists to share research and innovations, promoting interdisciplinary activities in all fields of Engineering Optimisation The primary goal of the EngOpt conference series is to periodically bring together engineers, applied mathematicians, and computer scientists working on research, development, and practical ..."
+    }
+  ]
+}

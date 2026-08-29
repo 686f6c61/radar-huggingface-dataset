@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "LuxrAIjuicy/JuiceWRLD_Larpbron_WOD_outatime",
+  "slug": "luxraijuicy-juicewrld_larpbron_wod_outatime",
+  "author": "LuxrAIjuicy",
+  "url": "https://huggingface.co/LuxrAIjuicy/JuiceWRLD_Larpbron_WOD_outatime",
+  "created_at": "2026-08-29T00:01:29.000Z",
+  "updated_at": "2026-08-29T00:01:44.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 55231566,
+  "storage_human": "55 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "JuiceXWRLD - YouTube",
+      "url": "https://www.youtube.com/channel/UCprTVP_eHH7IqnP9ZkvBavA",
+      "snippet": "Share your videos with friends, family, and the world"
+    },
+    {
+      "title": "Juice WRLD [JW3] [300 EPOCHS] AI Voice Model",
+      "url": "https://voice-models.com/model/1JywgJb2joI",
+      "snippet": "Juice WRLD [JW3] [300 EPOCHS] AI voice model for RVC voice conversion. View details, samples, source status, and run this voice model in EasyAIVoice."
+    },
+    {
+      "title": "Juice WRLD (Talking Model) (RVC V2) (Ov2) (300 Epochs) AI Voice Model",
+      "url": "https://voice-models.com/model/1qrnA0EeItm",
+      "snippet": "Juice WRLD (Talking Model) (RVC V2) (Ov2) (300 Epochs) AI voice model for RVC voice conversion. View details, samples, source status, and run this voice model in EasyAIVoice."
+    },
+    {
+      "title": "AI Juice WRLD Voice Model - TopMediai",
+      "url": "https://www.topmediai.com/app/ai-cover/juice-wrld/",
+      "snippet": "Create juice-wrld AI covers for any song or use it as a juice-wrld AI voice changer to transform voice into juice-wrld. Try our AI voice models for free now."
+    },
+    {
+      "title": "Juice WRLD AI Voice | Parrot AI",
+      "url": "https://www.tryparrotai.com/ai-voice/juice-wrld",
+      "snippet": "Our AI voice generator includes a variety of options, including presidents, celebrities, and Juice WRLD. Pick Juice WRLD or any other voice that suits your needs."
+    }
+  ]
+}

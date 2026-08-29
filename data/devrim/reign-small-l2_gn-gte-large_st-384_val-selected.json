@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "devrim/reign-small-l2_gn-gte-large_st-384_val-selected",
+  "slug": "devrim-reign-small-l2_gn-gte-large_st-384_val-selected",
+  "author": "devrim",
+  "url": "https://huggingface.co/devrim/reign-small-l2_gn-gte-large_st-384_val-selected",
+  "created_at": "2026-08-28T21:39:13.000Z",
+  "updated_at": "2026-08-28T21:39:21.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "feature-extraction",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "safetensors",
+    "reign",
+    "retrieval",
+    "long-documents",
+    "document-embeddings",
+    "feature-extraction",
+    "en",
+    "dataset:devrim/goodwiki_long_synthetic_ir",
+    "base_model:thenlper/gte-large",
+    "base_model:finetune:thenlper/gte-large",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 4092416,
+  "parameters_human": "4.1M",
+  "storage_bytes": 16373736,
+  "storage_human": "16 MB",
+  "base_model": "thenlper/gte-large",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Sophie Rain (@sophieraiin) • Instagram photos and videos",
+      "url": "https://www.instagram.com/sophieraiin/",
+      "snippet": "9M Followers, 537 Following, 234 Posts - Sophie Rain (@sophieraiin) on Instagram: \"\""
+    },
+    {
+      "title": "Databricks-hosted foundation models available in Foundation Model APIs",
+      "url": "https://docs.databricks.com/aws/en/machine-learning/foundation-model-apis/supported-models",
+      "snippet": "This mode supports all models of a model architecture family, including the fine-tuned and custom pre-trained models supported in pay-per-token mode. See Provisioned throughput Foundation Model APIs for the list of supported architectures. You can interact with these supported models using the AI Playground."
+    },
+    {
+      "title": "Overfitting: L2 regularization | Machine Learning - Google Developers",
+      "url": "https://developers.google.com/machine-learning/crash-course/overfitting/regularization",
+      "snippet": "L2 regularization is a technique used to reduce model complexity and prevent overfitting by penalizing large weights. A regularization rate (lambda) controls the strength of regularization, with higher values leading to simpler models and lower values increasing the risk of overfitting. Early stopping is an alternative regularization method that involves ending training before the model fully ..."
+    },
+    {
+      "title": "Islamic Revolutionary Guard Corps - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Islamic_Revolutionary_Guard_Corps",
+      "snippet": "The Islamic Revolutionary Guard Corps (IRGC), [a] also known domestically as Sepah[b] or Pasdaran[c] and internationally as Iranian Revolutionary Guards, [17] is a multi-service primary force of the Iranian Armed Forces. It consists of five service branches: Ground Forces, Aerospace Force, Navy, Quds Force, and Basij. It is led by a commander-in-chief, who is appointed by and reports to the ..."
+    },
+    {
+      "title": "sentence-transformers/all-MiniLM-L6-v2 · Hugging Face",
+      "url": "https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    }
+  ]
+}

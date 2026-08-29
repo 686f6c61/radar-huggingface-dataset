@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "jjjlimaus/sn38-emily-merge-qft",
+  "slug": "jjjlimaus-sn38-emily-merge-qft",
+  "author": "jjjlimaus",
+  "url": "https://huggingface.co/jjjlimaus/sn38-emily-merge-qft",
+  "created_at": "2026-08-28T20:06:37.000Z",
+  "updated_at": "2026-08-28T21:42:47.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "sn38-nanochrono",
+    "text-generation",
+    "pytorch",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 2018511234,
+  "parameters_human": "2.02B",
+  "storage_bytes": 84777960708,
+  "storage_human": "84.8 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": true,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "jjjlimaus/merge-emily-chrono2-w75 · Hugging Face",
+      "url": "https://huggingface.co/jjjlimaus/merge-emily-chrono2-w75",
+      "snippet": "jjjlimaus / merge-emily-chrono2-w75 like 0 Text Generation Transformers Safetensors sn38-nanochrono sn38 bittensor nanochrono model-merge License:apache-2.0 Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "jjjlimaus (Lima) - Hugging Face",
+      "url": "https://huggingface.co/jjjlimaus",
+      "snippet": "jjjlimaus/chrono2014-finance2015-ft3 2B•Updated 1 day ago• 4 View 17 models datasets27 Sort: Recently updated"
+    },
+    {
+      "title": "evolutionary-model-merge/README.md at main · SakanaAI ... - GitHub",
+      "url": "https://github.com/SakanaAI/evolutionary-model-merge/blob/main/README.md",
+      "snippet": "This repository serves as a central hub for SakanaAI&#x27;s Evolutionary Model Merge series, showcasing its releases and resources. It includes models and code for reproducing the evaluation presented in our paper. Look forward to more updates and additions coming soon."
+    },
+    {
+      "title": "Broad Family of Carbon Nanoallotropes: Classification, Chemistry, and ...",
+      "url": "https://pubs.acs.org/doi/10.1021/cr500304f",
+      "snippet": "For C70, C10is stacked with C18, C20, C16, and 3C2molecules. Annealing of carbon clusters was suggested as another model to understand fullerene formation. (116, 120)Carbon clusters include chains and rings of carbon atoms, bicycles or tricycles involving 34-60 carbon atoms, larger clusters, or other fullerenes."
+    },
+    {
+      "title": "LLM Updates (August 2026) - AI Model Releases & Provider Activity",
+      "url": "https://lmmarketcap.com/llm-updates",
+      "snippet": "Track AI model releases, recently added endpoints, and provider update cadence across GPT, Claude, Gemini, DeepSeek, Llama, and 350+ models."
+    }
+  ]
+}

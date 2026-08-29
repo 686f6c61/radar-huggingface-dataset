@@ -5,7 +5,7 @@
   "author": "tangjoe",
   "url": "https://huggingface.co/tangjoe/dummy-mrpc",
   "created_at": "2026-08-28T06:19:26.000Z",
-  "updated_at": "2026-08-28T06:47:00.000Z",
+  "updated_at": "2026-08-28T06:57:22.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-classification",
@@ -29,8 +29,8 @@
   "trending_score": 0,
   "parameters": 109483778,
   "parameters_human": "109.5M",
-  "storage_bytes": 1751839633,
-  "storage_human": "1.8 GB",
+  "storage_bytes": 2627762018,
+  "storage_human": "2.6 GB",
   "base_model": "bert-base-uncased",
   "formats": [
     "safetensors"

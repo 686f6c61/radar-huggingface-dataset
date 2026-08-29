@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "devrim/reign-base-l3_gn-bge-large_val-selected",
+  "slug": "devrim-reign-base-l3_gn-bge-large_val-selected",
+  "author": "devrim",
+  "url": "https://huggingface.co/devrim/reign-base-l3_gn-bge-large_val-selected",
+  "created_at": "2026-08-28T21:37:31.000Z",
+  "updated_at": "2026-08-28T21:38:00.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "feature-extraction",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "safetensors",
+    "reign",
+    "retrieval",
+    "long-documents",
+    "document-embeddings",
+    "feature-extraction",
+    "en",
+    "dataset:devrim/goodwiki_long_synthetic_ir",
+    "base_model:BAAI/bge-large-en-v1.5",
+    "base_model:finetune:BAAI/bge-large-en-v1.5",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 22643456,
+  "parameters_human": "22.6M",
+  "storage_bytes": 90579704,
+  "storage_human": "91 MB",
+  "base_model": "BAAI/bge-large-en-v1.5",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "BAAI/bge-large-en · Hugging Face",
+      "url": "https://huggingface.co/BAAI/bge-large-en",
+      "snippet": "New reranker model: release cross-encoder models BAAI/bge-reranker-base and BAAI/bge-reranker-large, which are more powerful than embedding model. We recommend to use/fine-tune them to re-rank top-k documents returned by embedding models."
+    },
+    {
+      "title": "Stable-Baselines3 Docs - Reliable Reinforcement Learning ...",
+      "url": "https://stable-baselines3.readthedocs.io/",
+      "snippet": "RL Model hyperparameters Missing values from datasets Developer Guide Algorithms Structure Where to start? Pre-Processing Policy Structure Probability distributions State-Dependent Exploration Misc On saving and loading Zip-archive Exporting models Background Export to ONNX Trace/Export to C++ Export to ONNX-JS / ONNX Runtime Web Export to ..."
+    },
+    {
+      "title": "BAAI/bge-large-en-v1.5 · Hugging Face",
+      "url": "https://huggingface.co/BAAI/bge-large-en-v1.5",
+      "snippet": "New reranker model: release cross-encoder models BAAI/bge-reranker-base and BAAI/bge-reranker-large, which are more powerful than embedding model. We recommend to use/fine-tune them to re-rank top-k documents returned by embedding models."
+    },
+    {
+      "title": "A mysterious free AI model is impressing developers. And nobody ... - MSN",
+      "url": "https://www.msn.com/en-us/technology/artificial-intelligence/a-mysterious-free-ai-model-is-impressing-developers-and-nobody-knows-who-made-it/ar-AA2aJzr9",
+      "snippet": "A mysterious new AI model is making the rounds among developers — and nobody is saying who built it. Ox Alpha appeared on OpenRouter on Thursday as a \"stealth model\" from an anonymous third ..."
+    },
+    {
+      "title": "Welcome to BGE! — BGE documentation",
+      "url": "https://bge-model.com/",
+      "snippet": "Besides the resources we provide here in this documentation, please visit our GitHub repo for more contents including: Want to get familiar with BGE quickly? There are hands-on examples to run for embedder and reranker&#x27;s inference, evaluation, and finetuning. Unfamiliar with some area, keywords or techniques of retrieval and RAG? We provide tutorials to teach you basic knowledge and coding ..."
+    }
+  ]
+}

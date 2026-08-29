@@ -5,7 +5,7 @@
   "author": "summerMC",
   "url": "https://huggingface.co/summerMC/Qwen3.8-27B-SpeedX27-VL-GDN64",
   "created_at": "2026-08-24T06:43:19.000Z",
-  "updated_at": "2026-08-26T02:03:46.000Z",
+  "updated_at": "2026-08-28T12:26:36.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "image-text-to-text",

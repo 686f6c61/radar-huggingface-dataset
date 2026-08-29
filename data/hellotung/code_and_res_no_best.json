@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "hellotung/Code_And_Res_no_best",
+  "slug": "hellotung-code_and_res_no_best",
+  "author": "hellotung",
+  "url": "https://huggingface.co/hellotung/Code_And_Res_no_best",
+  "created_at": "2026-08-29T01:30:46.000Z",
+  "updated_at": "2026-08-29T01:34:13.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 80306059,
+  "storage_human": "80 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "hellotung (Tran Van Tung) - Hugging Face",
+      "url": "https://huggingface.co/hellotung",
+      "snippet": "Recent Activity updated a modelabout 8 hours ago hellotung/Code_And_Res_copy published a modelabout 8 hours ago hellotung/Code_And_Res_copy updated a model2 days ago hellotung/patch-forcing-checkpoints View all activity"
+    },
+    {
+      "title": "Best AI Model for Coding (2026): 13 Models Ranked by Benchmarks and ...",
+      "url": "https://www.morphllm.com/best-ai-model-for-coding",
+      "snippet": "For the same models ranked picks-by-job rather than by cost, see best LLM for coding. Updated July 24, 2026: GPT-5.6 Sol reached general availability July 9 and leads Vals AI at 96.2%, Kimi K3 took #1 on the Frontend Code Arena, GLM-5.2 became the top open model on the Artificial Analysis Intelligence Index, and DeepSeek V4 went GA on July 19."
+    },
+    {
+      "title": "Best AI for Coding 2026 - Top Coding Models - llm-stats.com",
+      "url": "https://llm-stats.com/leaderboards/best-ai-for-coding",
+      "snippet": "Compare the best AI for coding using live coding arena results, benchmark performance, and real generation examples for code generation, debugging, and software engineering."
+    },
+    {
+      "title": "hellotung/Code_And_Res_copy · Hugging Face",
+      "url": "https://huggingface.co/hellotung/Code_And_Res_copy",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Best AI Model for Coding 2026: 10 Models Ranked (SWE-bench)",
+      "url": "https://tokenmix.ai/blog/best-ai-model-for-coding",
+      "snippet": "Best AI models for coding 2026: GPT-5.4 88% Aider, Claude Opus 80.8% SWE-bench, DeepSeek V4 at 1/10 cost. 10 models ranked by cost-per-benchmark-point."
+    }
+  ]
+}

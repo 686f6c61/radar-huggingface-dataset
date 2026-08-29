@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "introvoyz045/ppo_lstm-CarRacing-v0",
+  "slug": "introvoyz045-ppo_lstm-carracing-v0",
+  "author": "introvoyz045",
+  "url": "https://huggingface.co/introvoyz045/ppo_lstm-CarRacing-v0",
+  "created_at": "2026-08-28T21:47:19.000Z",
+  "updated_at": "2026-08-28T21:47:20.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "reinforcement-learning",
+  "library": "stable-baselines3",
+  "languages": [],
+  "tags": [
+    "stable-baselines3",
+    "CarRacing-v0",
+    "deep-reinforcement-learning",
+    "reinforcement-learning",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 25049204,
+  "storage_human": "25 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "sb3/ppo_lstm-CarRacing-v0 · Hugging Face",
+      "url": "https://huggingface.co/sb3/ppo_lstm-CarRacing-v0",
+      "snippet": "This is a trained model of a RecurrentPPO agent playing CarRacing-v0 using the stable-baselines3 library and the RL Zoo. The RL Zoo is a training framework for Stable Baselines3 reinforcement learning agents, with hyperparameter optimization and pre-trained agents included."
+    },
+    {
+      "title": "ppo_lstm-CarRacing-v0/data · sb3/ppo_lstm-CarRacing-v0 at main",
+      "url": "https://huggingface.co/sb3/ppo_lstm-CarRacing-v0/blob/main/ppo_lstm-CarRacing-v0/data",
+      "snippet": "Model card Files Files and versions Community Use in stable-baselines3 main ppo_lstm-CarRacing-v0 / ppo_lstm-CarRacing-v0 /data araffin Initial Commit 6cf28c2 almost 2 years ago"
+    },
+    {
+      "title": "ppo_lstm-CarRacing-v0 huggingface.co api & sb3 ppo_lstm-CarRacing-v0 ...",
+      "url": "https://www.toolify.ai/ai-model/sb3-ppo-lstm-carracing-v0",
+      "snippet": "ppo_lstm-CarRacing-v0 install ppo_lstm-CarRacing-v0 is an open source model from GitHub that offers a free installation service, and any user can find ppo_lstm-CarRacing-v0 on GitHub to install. At the same time, huggingface.co provides the effect of ppo_lstm-CarRacing-v0 install, users can directly use ppo_lstm-CarRacing-v0 installed effect in huggingface.co for debugging and trial. It also ..."
+    },
+    {
+      "title": "Solving CarRacing with PPO - Mike.W - GitHub Pages",
+      "url": "https://notanymike.github.io/Solving-CarRacing/",
+      "snippet": "Solving Car Racing with Proximal Policy Optimisation I write this because I notice a significant lack of information regarding CarRacing environment. I also have expanded the environment to welcome more complex scenarios (see more). My intention is to publish all the information regarding how to train the model, upload the weights of my model and general tips of what to do to solve it. Why PPO ..."
+    },
+    {
+      "title": "PPO — Stable Baselines3 2.9.1a1 documentation",
+      "url": "https://stable-baselines3.readthedocs.io/en/master/modules/ppo.html",
+      "snippet": "PPO The Proximal Policy Optimization algorithm combines ideas from A2C (having multiple workers) and TRPO (it uses a trust region to improve the actor). The main idea is that after an update, the new policy should be not too far from the old policy. For that, ppo uses clipping to avoid too large update."
+    }
+  ]
+}

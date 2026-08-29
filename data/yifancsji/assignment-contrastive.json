@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "yifancsji/assignment-contrastive",
+  "slug": "yifancsji-assignment-contrastive",
+  "author": "yifancsji",
+  "url": "https://huggingface.co/yifancsji/assignment-contrastive",
+  "created_at": "2026-08-28T20:44:16.000Z",
+  "updated_at": "2026-08-28T20:44:26.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "perceiver",
+    "pytorch",
+    "contrastive",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 24832,
+  "parameters_human": "24832",
+  "storage_bytes": 99808,
+  "storage_human": "99808 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Proxy assignment contrastive learning for unsupervised person re ...",
+      "url": "https://www.sciencedirect.com/science/article/pii/S0925231225023379",
+      "snippet": "To address this issue, we propose a novel contrastive learning framework named Proxy Aligned Contrastive Learning (PACL), which enhances the discriminative power and robustness of unsupervised person re-identification."
+    },
+    {
+      "title": "aiskool-aie-repos/aie-3.1.3.1-clip-style-contrastive-learning ... - GitHub",
+      "url": "https://github.com/aiskool-aie-repos/aie-3.1.3.1-clip-style-contrastive-learning-for-ai-engineers",
+      "snippet": "Problem Description In this assignment, you will use the CLIP (Contrastive Language-Image Pre-Training) model to perform zero-shot image classification. You will load a pre-trained CLIP model, preprocess an image and a set of text labels, and then use the model to predict the most likely label for the image."
+    },
+    {
+      "title": "Compare and Contrast - AI Prompt",
+      "url": "https://docsbot.ai/prompts/education/compare-and-contrast",
+      "snippet": "Education & Learning AI Prompt Compare and Contrast Generates a detailed comparison highlighting similarities and differences between given subjects. Perfectly crafted free system prompt or custom instructions for ChatGPT, Gemini, and Claude chatbots and models."
+    },
+    {
+      "title": "GitHub - openai/CLIP: CLIP (Contrastive Language-Image Pretraining ...",
+      "url": "https://github.com/openai/CLIP",
+      "snippet": "CLIP [Blog] [Paper] [Model Card] [Colab] CLIP (Contrastive Language-Image Pre-Training) is a neural network trained on a variety of (image, text) pairs. It can be instructed in natural language to predict the most relevant text snippet, given an image, without directly optimizing for the task, similarly to the zero-shot capabilities of GPT-2 and 3."
+    },
+    {
+      "title": "AI Model Benchmarks 2026: Compare GPT, Claude, Gemini & DeepSeek",
+      "url": "https://aimodelbenchmarks.com/",
+      "snippet": "Compare AI model benchmarks for coding, agents, reasoning, context windows, and API pricing. Updated source-reviewed rankings for GPT, Claude, Gemini, DeepSeek, and open models."
+    }
+  ]
+}

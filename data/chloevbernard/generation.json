@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "chloevbernard/generation",
+  "slug": "chloevbernard-generation",
+  "author": "chloevbernard",
+  "url": "https://huggingface.co/chloevbernard/generation",
+  "created_at": "2026-08-29T00:02:08.000Z",
+  "updated_at": "2026-08-29T00:02:30.000Z",
+  "license": "bsd-3-clause",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "clip",
+    "pytorch",
+    "generation",
+    "license:bsd-3-clause",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 24832,
+  "parameters_human": "24832",
+  "storage_bytes": 99808,
+  "storage_human": "99808 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Researchers tested AI against 100,000 humans on creativity",
+      "url": "https://www.sciencedaily.com/releases/2026/01/260125083356.htm",
+      "snippet": "A massive new study comparing more than 100,000 people with today&#x27;s most advanced AI systems delivers a surprising result: generative AI can now beat the average human on certain creativity ..."
+    },
+    {
+      "title": "Civitai | Discover and Create AI Art",
+      "url": "https://civitai.com/",
+      "snippet": "Explore thousands of free Stable Diffusion & Flux models, create and share AI-generated art, and join the world&#x27;s largest community of generative AI creators."
+    },
+    {
+      "title": "Business Insider | Millions have watched \"Chloe,\" an AI-generated ...",
+      "url": "https://www.instagram.com/reel/DaQ06o8gGE_/",
+      "snippet": "9,665 likes, 242 comments - businessinsider on July 1, 2026: \"Millions have watched \"Chloe,\" an AI-generated character, visit digitally created scenes from history — raising new questions about AI technology and the future of online video. Head to the link in our bio to watch the full video about how a new wave of AI-powered storytelling is blending education, entertainment, and immersive ..."
+    },
+    {
+      "title": "Models — Google DeepMind",
+      "url": "https://deepmind.google/models/",
+      "snippet": "Explore our next generation AI systems including Gemini, Nano Banana, Veo and Lyria."
+    },
+    {
+      "title": "Generative AI | Google Cloud",
+      "url": "https://cloud.google.com/ai/generative-ai",
+      "snippet": "Generative AI on Google Cloud Bring generative AI to real-world experiences quickly, efficiently, and responsibly, powered by Google&#x27;s most advanced technology and models including Gemini. Plus, new customers can start their AI journey today with $300 in free credits."
+    }
+  ]
+}

@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "Islamamro/emotion6-aurora-islamamro",
+  "slug": "islamamro-emotion6-aurora-islamamro",
+  "author": "Islamamro",
+  "url": "https://huggingface.co/Islamamro/emotion6-aurora-islamamro",
+  "created_at": "2026-08-28T23:22:30.000Z",
+  "updated_at": "2026-08-28T23:31:02.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "distilbert",
+    "aurora",
+    "islamamro",
+    "text-classification",
+    "dataset:dair-ai/emotion",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 66958086,
+  "parameters_human": "67.0M",
+  "storage_bytes": 267844872,
+  "storage_human": "268 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "islamamro · GitHub",
+      "url": "https://github.com/islamamro",
+      "snippet": "islamamro has one repository available. Follow their code on GitHub."
+    },
+    {
+      "title": "Advanced Multimedia Processing (AMP) Lab, Cornell University",
+      "url": "http://chenlab.ece.cornell.edu/downloads.html",
+      "snippet": "Downloads Cornell EmotionROI Image Database (download) Cornell Personal Tag Preferences Dataset (download) Cornell Emotion6 Image Database (download) Aesthetic quality assessment of consumer photos with faces dataset (download) Cornell Video2Clips Dataset (description) (download) Cornell ConsumerCamStereo Dataset (description) (download) Cornell Multiview Dataset (description) (download ..."
+    },
+    {
+      "title": "DSI/ar_emotion_6 · Hugging Face",
+      "url": "https://huggingface.co/DSI/ar_emotion_6",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GitHub - haoyev5/Image-Emotion-Datasets: The datasets for image emotion ...",
+      "url": "https://github.com/haoyev5/Image-Emotion-Datasets",
+      "snippet": "Emotion6 [5] was created as an emotion prediction benchmark and collected from Flickr to generate 1,980 images with six emotion categories. They assumed that the influence of each pixel on the emotion-inducing area is proportional to the number of rectangles that cover that pixel and adopt AMT to collect 15 responses to the emotion-inducing ..."
+    },
+    {
+      "title": "SIEMENS SOMATOM EMOTION 6 APPLICATION MANUAL Pdf Download",
+      "url": "https://www.manualslib.com/manual/1208290/Siemens-Somatom-Emotion-6.html",
+      "snippet": "View and Download Siemens SOMATOM Emotion 6 application manual online. SOMATOM Emotion 6 medical equipment pdf manual download."
+    }
+  ]
+}

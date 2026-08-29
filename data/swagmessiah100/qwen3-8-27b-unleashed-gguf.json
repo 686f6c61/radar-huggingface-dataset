@@ -36,8 +36,8 @@
   "trending_score": 0,
   "parameters": 26895998464,
   "parameters_human": "26.90B",
-  "storage_bytes": 158626841407,
-  "storage_human": "158.6 GB",
+  "storage_bytes": 122952452643,
+  "storage_human": "123.0 GB",
   "base_model": "JonathanColetti/Qwen3.8-27B-Uncensored",
   "formats": [
     "gguf"

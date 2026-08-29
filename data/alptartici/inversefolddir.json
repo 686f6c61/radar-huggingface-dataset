@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "AlpTartici/inversefolddir",
+  "slug": "alptartici-inversefolddir",
+  "author": "AlpTartici",
+  "url": "https://huggingface.co/AlpTartici/inversefolddir",
+  "created_at": "2026-08-29T00:04:38.000Z",
+  "updated_at": "2026-08-29T00:40:18.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "other",
+  "library": "pytorch",
+  "languages": [],
+  "tags": [
+    "pytorch",
+    "protein-design",
+    "inverse-folding",
+    "protein-sequence-design",
+    "flow-matching",
+    "biology",
+    "other",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 38488757,
+  "storage_human": "38 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "[2507.14156] All-atom inverse protein folding through discrete flow ...",
+      "url": "https://arxiv.org/abs/2507.14156",
+      "snippet": "To address these challenges, we present ADFLIP (All-atom Discrete FLow matching Inverse Protein folding), a generative model based on discrete flow-matching for designing protein sequences conditioned on all-atom structural contexts."
+    },
+    {
+      "title": "ProtInvTree: Deliberate Protein Inverse Folding with Reward-guided Tree ...",
+      "url": "https://papers.neurips.cc/paper_files/paper/2025/hash/291a1c80e9025f0ac2273fcf017fbd63-Abstract-Conference.html",
+      "snippet": "This motivates the need for a generative model capable of designing diverse sequences while preserving structural consistency. To address this trade-off, we introduce ProtInvTree, the first reward-guided tree-search framework for protein inverse folding."
+    },
+    {
+      "title": "arXiv:2410.17173v1 [cs.AI] 22 Oct 2024",
+      "url": "https://arxiv.org/pdf/2410.17173v1",
+      "snippet": "We then report a new protein inverse folding model, RL-DIF (Figure S3). RL-DIF is a categorical diffusion model pre-trained on sequence recovery and fine-tuned with reinforcement learning (RL) to optimize structural consistency. The categorical diffusion component of our method is inspired by GradeIF Yi et al. (2023a) and PiFold Gao et al. (2022), and is trained on observed protein structures ..."
+    },
+    {
+      "title": "GitHub - microsoft/InverseFoldDir",
+      "url": "https://github.com/microsoft/InverseFoldDir",
+      "snippet": "Contribute to microsoft/InverseFoldDir development by creating an account on GitHub."
+    },
+    {
+      "title": "InverseFoldDir/build.yml at main · microsoft/InverseFoldDir",
+      "url": "https://github.com/microsoft/InverseFoldDir/blob/main/build.yml",
+      "snippet": "Contribute to microsoft/InverseFoldDir development by creating an account on GitHub."
+    }
+  ]
+}

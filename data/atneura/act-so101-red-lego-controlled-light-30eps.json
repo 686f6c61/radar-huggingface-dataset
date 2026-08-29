@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "Atneura/act-so101-red-lego-controlled-light-30eps",
+  "slug": "atneura-act-so101-red-lego-controlled-light-30eps",
+  "author": "Atneura",
+  "url": "https://huggingface.co/Atneura/act-so101-red-lego-controlled-light-30eps",
+  "created_at": "2026-08-28T23:33:57.000Z",
+  "updated_at": "2026-08-28T23:34:03.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "robotics",
+    "act",
+    "dataset:Atneura/so101-red-lego-to-bin-controlled-light-30eps_20260828_160455",
+    "arxiv:2304.13705",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 51668614,
+  "parameters_human": "51.7M",
+  "storage_bytes": 206712896,
+  "storage_human": "207 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Atneura/act-so101-red-lego-to-bin-10eps · Hugging Face",
+      "url": "https://huggingface.co/Atneura/act-so101-red-lego-to-bin-10eps",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "README.md · aiden-li/so101-act at main - Hugging Face",
+      "url": "https://huggingface.co/aiden-li/so101-act/blob/main/README.md",
+      "snippet": "/ so101-act like 0 Robotics LeRobot Safetensors aiden-li/so101-picklego act arxiv:2304.13705 License:apache-2.0 Model card FilesFiles and versions Community Use this model main so101-act /README.md aiden-li Upload policy weights, train config and readme 055a863 verifiedabout 8 hours ago preview code | raw Copy download link history blame ..."
+    },
+    {
+      "title": "so101-lego-disassembly/README.md at main · jessely1/so101 ... - GitHub",
+      "url": "https://github.com/jessely1/so101-lego-disassembly/blob/main/README.md",
+      "snippet": "The SO101 robot arm learns to pick lego pieces by color (red, white, grey) and place them in a target base using Imitation Learning (ACT policy)."
+    },
+    {
+      "title": "GitHub - TheRobotStudio/SO-ARM100: Standard Open Arm 100",
+      "url": "https://github.com/TheRobotStudio/SO-ARM100",
+      "snippet": "The SO‑101 is the next‑generation version of the SO‑100 robot arm, originally designed by the RobotStudio in collaboration with Hugging Face. It has improved wiring, is easier to assemble (no gear removal) and uses updated motors for the leader arm. These arms are designed to work seamlessly with the open‑source 🤗 LeRobot library. Join our community on Discord to collaborate on both ..."
+    },
+    {
+      "title": "How to use the SO10xArm robotic arm in Lerobot | Seeed Studio Wiki",
+      "url": "https://wiki.seeedstudio.com/lerobot_so100m/",
+      "snippet": "This wiki provides the assembly and debugging tutorial for the SO ARM100 and realizes data collection and training within the Lerobot framework."
+    }
+  ]
+}

@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "devrim/reign-tiny-l1_gn-gte-small_s384_val-selected",
+  "slug": "devrim-reign-tiny-l1_gn-gte-small_s384_val-selected",
+  "author": "devrim",
+  "url": "https://huggingface.co/devrim/reign-tiny-l1_gn-gte-small_s384_val-selected",
+  "created_at": "2026-08-28T21:39:27.000Z",
+  "updated_at": "2026-08-28T21:39:33.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "feature-extraction",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "safetensors",
+    "reign",
+    "retrieval",
+    "long-documents",
+    "document-embeddings",
+    "feature-extraction",
+    "en",
+    "dataset:devrim/goodwiki_long_synthetic_ir",
+    "base_model:thenlper/gte-small",
+    "base_model:finetune:thenlper/gte-small",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 556608,
+  "parameters_human": "556608",
+  "storage_bytes": 2228712,
+  "storage_human": "2 MB",
+  "base_model": "thenlper/gte-small",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "gte tiny — ThinkLLM",
+      "url": "https://thinkllm.dev/models/gte-tiny",
+      "snippet": "A featherweight specialist that punches above its size for embedding tasks. It trades raw capability for extreme efficiency — running comfortably on minimal hardware with fast inference times. The kind of model you deploy when resources are tight and you need semantic similarity or text encoding without the overhead of larger embedding models."
+    },
+    {
+      "title": "GitHub - sovereynai/reign: Your terminal gateway to decentralized AI—no ...",
+      "url": "https://github.com/sovereynai/reign",
+      "snippet": "Your terminal gateway to distributed AI. Reign lets you run AI inference across a network of GPU nodes—without managing infrastructure, paying for idle time, or vendor lock-in. Get instant access to language models and vision AI from your command line."
+    },
+    {
+      "title": "TaylorAI/gte-tiny at main - Hugging Face",
+      "url": "https://huggingface.co/TaylorAI/gte-tiny/tree/main/onnx",
+      "snippet": "TaylorAI / gte-tiny like 63 Sentence SimilaritySentence TransformersPyTorchONNXSafetensorsTransformersbertfeature-extractionmtebEval ResultsInference Endpoints Model ..."
+    },
+    {
+      "title": "Quantized Models for TaylorAI/gte-tiny - Hugging Face",
+      "url": "https://huggingface.co/models?other=base_model:quantized:TaylorAI/gte-tiny",
+      "snippet": "Edit Models filters Main Tasks Libraries Languages Licenses Other 1 Model Tree Reset TaylorAI/gte-tiny Adapters"
+    },
+    {
+      "title": "gte-tiny Open-source Text Embedding Model - Free Deployment Suitable ...",
+      "url": "https://model.aibase.com/en/models/details/1915693205049466881",
+      "snippet": "Model Overview GTE Tiny is an efficient text embedding model that supports multiple text-related tasks, including classification, clustering, retrieval, and semantic similarity calculation."
+    }
+  ]
+}

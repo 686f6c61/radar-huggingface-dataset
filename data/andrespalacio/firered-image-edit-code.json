@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "AndresPalacio/FireRed-Image-Edit-Code",
+  "slug": "andrespalacio-firered-image-edit-code",
+  "author": "AndresPalacio",
+  "url": "https://huggingface.co/AndresPalacio/FireRed-Image-Edit-Code",
+  "created_at": "2026-08-28T20:22:14.000Z",
+  "updated_at": "2026-08-28T20:23:46.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": true,
+  "removed_at": "2026-08-29T02:25:37.063Z",
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - FireRedTeam/FireRed-Image-Edit: FireRed-Image-Edit is a ...",
+      "url": "https://github.com/FireRedTeam/FireRed-Image-Edit",
+      "snippet": "FireRed-Image-Edit-1.1 Based on the FireRed-Image-Edit-1. foundation model, it optimizes portrait consistency, multi-element fusion, stylized text reference, and portrait makeup effects. FireRed-Image-Edit-1. is a general-purpose image editing model that delivers high-fidelity and consistent editing across a wide range of scenarios. FireRed-Image-Edit delivers leading open-source results ..."
+    },
+    {
+      "title": "FireRedTeam/FireRed-Image-Edit-1.1 · Hugging Face",
+      "url": "https://huggingface.co/FireRedTeam/FireRed-Image-Edit-1.1",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "FireRedTeam/FireRed-Image-Edit-1.0 · Hugging Face",
+      "url": "https://huggingface.co/FireRedTeam/FireRed-Image-Edit-1.0",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "FireRed AI Image Editing | Claude Code Skill Guide",
+      "url": "https://mcpmarket.com/tools/skills/firered-ai-image-editor",
+      "snippet": "The FireRed Image Edit skill integrates WeShop AI&#x27;s FireRed open-source model into Claude Code to enable automated image creation and precision editing. It allows agents to perform prompt-based visual transformations, compose scenes using up to three reference images, adjust output aspect ratios, and generate batches of up to 16 images at once. This skill is ideal for developers and creators ..."
+    },
+    {
+      "title": "Free AI Image Editor & Photo Restoration Online | FireRed Image Edit",
+      "url": "https://firered-image.com/",
+      "snippet": "FireRed Image Edit is a free, open-source AI image editor by Xiaohongshu. Generate, restore, and transform photos with style transfer, virtual try-on, and more. No sign-up required."
+    }
+  ]
+}

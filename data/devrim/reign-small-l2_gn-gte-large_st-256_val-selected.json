@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "devrim/reign-small-l2_gn-gte-large_st-256_val-selected",
+  "slug": "devrim-reign-small-l2_gn-gte-large_st-256_val-selected",
+  "author": "devrim",
+  "url": "https://huggingface.co/devrim/reign-small-l2_gn-gte-large_st-256_val-selected",
+  "created_at": "2026-08-28T21:39:02.000Z",
+  "updated_at": "2026-08-28T21:39:12.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "feature-extraction",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "safetensors",
+    "reign",
+    "retrieval",
+    "long-documents",
+    "document-embeddings",
+    "feature-extraction",
+    "en",
+    "dataset:devrim/goodwiki_long_synthetic_ir",
+    "base_model:thenlper/gte-large",
+    "base_model:finetune:thenlper/gte-large",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 4092416,
+  "parameters_human": "4.1M",
+  "storage_bytes": 16373736,
+  "storage_human": "16 MB",
+  "base_model": "thenlper/gte-large",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Devstral Small 2 - 256k context, multimodal, open source",
+      "url": "https://www.llmreference.com/model/devstral-small-2",
+      "snippet": "Devstral Small 2 is Mistral AI&#x27;s 24B open-weights coding agent model, released December 9, 2025 under Apache 2.0. It scores 68.0% on SWE-bench Verified and supports agentic software engineering tasks, multi-step reasoning, and tool use. Runs on a single RTX 4090 GPU or a Mac with 32GB RAM. Multimodal, with support for image inputs."
+    },
+    {
+      "title": "‎Google Gemini",
+      "url": "https://gemini.google.com/",
+      "snippet": "Meet Gemini, Google&#x27;s AI assistant. Get help with writing, planning, brainstorming, and more. Experience the power of generative AI."
+    },
+    {
+      "title": "ChatGPT: Chat, Work, Create & Code with AI",
+      "url": "https://chatgpt.com/",
+      "snippet": "Use ChatGPT to answer questions, write, create images, complete work, and code—all in one place. Get started for free or download the app."
+    },
+    {
+      "title": "GitHub - sovereynai/reign: Your terminal gateway to decentralized AI—no ...",
+      "url": "https://github.com/sovereynai/reign",
+      "snippet": "Your terminal gateway to distributed AI. Reign lets you run AI inference across a network of GPU nodes—without managing infrastructure, paying for idle time, or vendor lock-in. Get instant access to language models and vision AI from your command line."
+    },
+    {
+      "title": "Devstral Small 2 by Mistral: LLM Benchmarks, Rankings & Specs | Crafiq",
+      "url": "https://crafiq.ai/models/language/mistral-devstral-small-2",
+      "snippet": "Devstral Small 2 is a 24-billion parameter language model developed by Mistral AI, released in December 2025. It belongs to the Devstral 2 family of models specifically engineered for agentic software development and complex repository-level reasoning. Designed for portability, the model is optimized to run locally on consumer-grade GPUs while providing performance competitive with much larger ..."
+    }
+  ]
+}

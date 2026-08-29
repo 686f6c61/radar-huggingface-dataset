@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "JP106978/flickr8k-image-captioner",
+  "slug": "jp106978-flickr8k-image-captioner",
+  "author": "JP106978",
+  "url": "https://huggingface.co/JP106978/flickr8k-image-captioner",
+  "created_at": "2026-08-28T20:56:14.000Z",
+  "updated_at": "2026-08-28T21:02:59.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "image-to-text",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "image-to-text",
+    "image-captioning",
+    "pytorch",
+    "resnet50",
+    "lstm",
+    "transfer-learning",
+    "en",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 8812548,
+  "storage_human": "9 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Anas1010/flickr8k-image-caption-generator · Hugging Face",
+      "url": "https://huggingface.co/Anas1010/flickr8k-image-caption-generator",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GitHub - Sajid030/image-caption-generator: Deep learning-based image ...",
+      "url": "https://github.com/Sajid030/image-caption-generator",
+      "snippet": "Deep learning-based image captioning with Flickr8k dataset. Code includes data prep, model training, and a Streamlit app. - Sajid030/image-caption-generator"
+    },
+    {
+      "title": "GitHub - Avaneesh40585/Flickr8k-Dataset: A repository hosting the ...",
+      "url": "https://github.com/Avaneesh40585/Flickr8k-Dataset",
+      "snippet": "The Flickr8k dataset is a benchmark dataset widely used for research in image captioning and multimodal deep learning. This repository provides both the image and text annotation components of the dataset, ready for use in computer vision and natural language processing projects."
+    },
+    {
+      "title": "flight rank - Kaggle",
+      "url": "https://www.kaggle.com/datasets/adityajn105/flickr8k",
+      "snippet": "Flickr8k Dataset for image captioning."
+    },
+    {
+      "title": "Image Caption Generator using Deep Learning on Flickr8K dataset",
+      "url": "https://www.geeksforgeeks.org/deep-learning/image-caption-generator-using-deep-learning-on-flickr8k-dataset/",
+      "snippet": "In this article we created a Image Caption Generator using Deep Learning on the Flickr8k dataset. We covered the entire process, from data preprocessing and feature extraction using InceptionV3 to training a sequence-based LSTM model for caption generation."
+    }
+  ]
+}

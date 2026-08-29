@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "nadahafez/image-captioning",
+  "slug": "nadahafez-image-captioning",
+  "author": "nadahafez",
+  "url": "https://huggingface.co/nadahafez/image-captioning",
+  "created_at": "2026-08-28T23:45:11.000Z",
+  "updated_at": "2026-08-28T23:51:05.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 145764419,
+  "storage_human": "146 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Image captioning · Hugging Face",
+      "url": "https://huggingface.co/docs/transformers/tasks/image_captioning",
+      "snippet": "Image captioning Image captioning is the task of predicting a caption for a given image. Common real world applications of it include aiding visually impaired people that can help them navigate through different situations. Therefore, image captioning helps to improve content accessibility for people by describing images to them."
+    },
+    {
+      "title": "Models - Hugging Face",
+      "url": "https://huggingface.co/models?other=image-captioning",
+      "snippet": "Explore machine learning models."
+    },
+    {
+      "title": "Image Captioning: State-of-the-Art Open Source AI Models in 2025",
+      "url": "https://madailab.com/image-captioning-state-of-the-art-open-source-ai-models-in-2025",
+      "snippet": "Image captioning technology has evolved significantly by 2025, with state-of-the-art models now capable of generating detailed, accurate, and contextually rich descriptions of visual content."
+    },
+    {
+      "title": "image-captioning · GitHub Topics · GitHub",
+      "url": "https://github.com/topics/image-captioning",
+      "snippet": "Keras model to generate HTML code from hand-drawn website mockups. Implements an image captioning architecture to drawn source images."
+    },
+    {
+      "title": "Making Images Speak: Human-Inspired Image Description Generation - MDPI",
+      "url": "https://www.mdpi.com/2078-2489/16/5/356",
+      "snippet": "Despite significant advances in deep learning-based image captioning, many state-of-the-art models still struggle to balance visual grounding (i.e., accurate object and scene descriptions) with linguistic coherence (i.e., grammatical fluency and appropriate use of non-visual tokens such as articles and prepositions). To address these limitations, we propose a hybrid image captioning framework ..."
+    }
+  ]
+}

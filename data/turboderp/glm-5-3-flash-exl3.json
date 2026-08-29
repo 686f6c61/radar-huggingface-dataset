@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "turboderp/GLM-5.3-Flash-exl3",
+  "slug": "turboderp-glm-5-3-flash-exl3",
+  "author": "turboderp",
+  "url": "https://huggingface.co/turboderp/GLM-5.3-Flash-exl3",
+  "created_at": "2026-08-28T20:35:37.000Z",
+  "updated_at": "2026-08-28T21:37:10.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "exl3",
+    "base_model:zai-org/GLM-5.3-Flash",
+    "base_model:quantized:zai-org/GLM-5.3-Flash",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 5,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 375607984381,
+  "storage_human": "375.6 GB",
+  "base_model": "zai-org/GLM-5.3-Flash",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - turboderp-org/exllamav3: An optimized quantization and ...",
+      "url": "https://github.com/turboderp-org/exllamav3",
+      "snippet": "ExLlamaV3 is an inference library for running local LLMs on modern consumer GPUs. Headline features: New EXL3 quantization format based on QTIP Flexible tensor-parallel and expert-parallel inference for consumer hardware setups OpenAI-compatible server provided via TabbyAPI Continuous, dynamic batching HF Transformers plugin (see here) HF model support (see supported architectures) Speculative ..."
+    },
+    {
+      "title": "0xSero/GLM-5.3-Flash-EXL3 · Hugging Face",
+      "url": "https://huggingface.co/0xSero/GLM-5.3-Flash-EXL3",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "exllamav3/doc/exl3.md at master · turboderp-org/exllamav3",
+      "url": "https://github.com/turboderp-org/exllamav3/blob/master/doc/exl3.md",
+      "snippet": "An optimized quantization and inference library for running LLMs locally on modern consumer-class GPUs - turboderp-org/exllamav3"
+    },
+    {
+      "title": "EXL3 models - a turboderp Collection - Hugging Face",
+      "url": "https://huggingface.co/collections/turboderp/exl3-models-67f2dfe530f05cb9f596d21a",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GLM-5.3-Flash - lmstudio.ai",
+      "url": "https://lmstudio.ai/models/glm-5.3-flash",
+      "snippet": "GLM-5.3-Flash is Z.ai&#x27;s first natively multimodal model in the GLM-5 series. It is a 320B Mixture-of-Experts model with 18B active parameters, built for coding, agentic work, and visual tasks, and released under the MIT License."
+    }
+  ]
+}

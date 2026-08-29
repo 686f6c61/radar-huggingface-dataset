@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "dudi2016b/Qwen3-Coder-Next",
+  "slug": "dudi2016b-qwen3-coder-next",
+  "author": "dudi2016b",
+  "url": "https://huggingface.co/dudi2016b/Qwen3-Coder-Next",
+  "created_at": "2026-08-28T19:48:42.000Z",
+  "updated_at": "2026-08-28T19:48:43.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_next",
+    "text-generation",
+    "conversational",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 79674391296,
+  "parameters_human": "79.67B",
+  "storage_bytes": 159358031480,
+  "storage_human": "159.4 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "AI Model Catalog | Microsoft Foundry Models",
+      "url": "https://ai.azure.com/catalog/models/qwen--qwen3-coder-next",
+      "snippet": "Qwen3-Coder-Next model for agentic coding, tool use, and long-context software workflows."
+    },
+    {
+      "title": "Qwen3-Coder-Next API: Pricing, Benchmarks & Docs | Together AI",
+      "url": "https://www.together.ai/models/qwen3-coder-next",
+      "snippet": "Qwen3-Coder-Next is an open-weight language model designed specifically for coding agents. With only 3B activated parameters (80B total), it achieves performance comparable to models with 10-20x more active parameters, making it highly cost-effective for production agent deployment. Through an elaborate training recipe, Qwen3-Coder-Next excels at long-horizon reasoning, complex tool usage ..."
+    },
+    {
+      "title": "Qwen3-Coder-Next: Architecture, Benchmarks, Capabilities, and Real ...",
+      "url": "https://www.qubrid.com/blog/qwen3-coder-next-architecture-benchmarks-capabilities-and-real-world-applications",
+      "snippet": "In this guide, we will explore what Qwen3-Coder-Next is, how its architecture works, its benchmark performance, key capabilities, real-world applications, and how to run it using Qubrid AI. What is Qwen3-Coder-Next? Qwen3-Coder-Next is an open-weight large language model purpose-built for coding agents."
+    },
+    {
+      "title": "Qwen3-Coder-Next: 256K Context Elite Coding AI at $0.12/M",
+      "url": "https://automatio.ai/models/qwen3-coder-next",
+      "snippet": "Qwen3-Coder-Next is Alibaba Cloud&#x27;s elite Apache 2.0 coding model, featuring an 80B MoE architecture and 256k context window for advanced local development."
+    },
+    {
+      "title": "Qwen3-Coder-Next - AI Wiki",
+      "url": "https://aiwiki.ai/wiki/qwen3_coder_next",
+      "snippet": "Qwen3-Coder-Next is an open-weight code generation model released by Alibaba&#x27;s Qwen team on February 3, 2026, under the Apache 2.0 license."
+    }
+  ]
+}

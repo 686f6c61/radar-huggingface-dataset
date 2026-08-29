@@ -5,7 +5,7 @@
   "author": "AMAImedia",
   "url": "https://huggingface.co/AMAImedia/NOESIS-Whisper3-1.6B-Large-Turbo-Darwin-99LANG-ONNX-INT8",
   "created_at": "2026-08-27T19:48:20.000Z",
-  "updated_at": "2026-08-27T21:45:04.000Z",
+  "updated_at": "2026-08-28T19:02:39.000Z",
   "license": "mit",
   "license_family": "oss",
   "pipeline_tag": "automatic-speech-recognition",

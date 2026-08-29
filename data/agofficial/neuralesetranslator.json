@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "AGofficial/NeuraleseTranslator",
+  "slug": "agofficial-neuralesetranslator",
+  "author": "AGofficial",
+  "url": "https://huggingface.co/AGofficial/NeuraleseTranslator",
+  "created_at": "2026-08-28T20:16:20.000Z",
+  "updated_at": "2026-08-28T20:17:33.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "en",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 7026279,
+  "storage_human": "7 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "AGofficial/AiLab · Hugging Face",
+      "url": "https://huggingface.co/AGofficial/AiLab",
+      "snippet": "AgLab AgLab is a python module for experimenting with AI. Features Easily set a system prompt to guide the model&#x27;s behavior. Send user prompts to the model and receive responses as text. Usage"
+    },
+    {
+      "title": "LLM Leaderboard & AI Model Benchmarks — August 2026",
+      "url": "https://benchlm.ai/",
+      "snippet": "Compare 406 AI models across 406 benchmarks, with 228 ranked scores, source evidence, API pricing, context windows, runtime, and head-to-head pages."
+    },
+    {
+      "title": "AGofficial/AG_AGENT · Hugging Face",
+      "url": "https://huggingface.co/AGofficial/AG_AGENT",
+      "snippet": "AGR1 Agent Overview An AI Agent that does tasks for you."
+    },
+    {
+      "title": "Neural Machine Translation (NMT) | Google Cloud Documentation",
+      "url": "https://docs.cloud.google.com/translate/docs/advanced/nmt-model",
+      "snippet": "Neural Machine Translation (NMT) model Google&#x27;s standard Neural Machine Translation (NMT) has evolved from the neural network translation system that Google introduced in November 2016, with many improvements. It can translate to and from many languages in real time. Its model ID is general/nmt."
+    },
+    {
+      "title": "AGNES AI - Free Omni-Modal AI API, World-Class AI Models & AI Applications",
+      "url": "https://agnes-ai.com/",
+      "snippet": "Agnes AI is an AI gateway, free AI API platform, and AI application ecosystem featuring Agnes, Echo, and Pavo. Get free AI API credits, create a free AI API key, use free AI API tokens, and access free AI API models for chatbots, AI agents, content tools, image generation, roleplay, productivity, and intelligent workflows."
+    }
+  ]
+}

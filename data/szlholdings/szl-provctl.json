@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "SZLHOLDINGS/szl-provctl",
+  "slug": "szlholdings-szl-provctl",
+  "author": "SZLHOLDINGS",
+  "url": "https://huggingface.co/SZLHOLDINGS/szl-provctl",
+  "created_at": "2026-06-24T18:08:48.000Z",
+  "updated_at": "2026-08-28T23:02:55.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "kernels",
+  "languages": [],
+  "tags": [
+    "kernels",
+    "kernel",
+    "provenance",
+    "supply-chain",
+    "in-toto",
+    "slsa",
+    "governance",
+    "doi:10.5281/zenodo.19944926",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 222560,
+  "storage_human": "222560 B",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "SZLHOLDINGS/szl-provctl · Hugging Face",
+      "url": "https://huggingface.co/SZLHOLDINGS/szl-provctl",
+      "snippet": "SZLHOLDINGS / szl-provctl like 0 Follow SZL Holdings 2 Kernels kernel License:apache-2.0 Model card FilesFiles and versions xet Community Copy to bucket new Use this model"
+    },
+    {
+      "title": "GitHub - szl-holdings/szl-provctl: Canonical GitHub source for the szl ...",
+      "url": "https://github.com/szl-holdings/szl-provctl",
+      "snippet": "Software kernel slot for provenance control (in-toto / DSSE over SZL receipts). Not a model. No weights."
+    },
+    {
+      "title": "SZL Holdings · GitHub",
+      "url": "https://github.com/szl-holdings",
+      "snippet": "Governed AI infrastructure for inspectable decisions: source, runtime state, receipts, and proof boundaries. - SZL Holdings"
+    },
+    {
+      "title": "SZLHOLDINGS (SZL Holdings) - Hugging Face",
+      "url": "https://huggingface.co/SZLHOLDINGS/models",
+      "snippet": "Org profile for SZL Holdings on Hugging Face, the AI community building the future."
+    },
+    {
+      "title": "A11oy Proof Registry | SZL Holdings",
+      "url": "https://a11oy.net/",
+      "snippet": "The separately hosted first-party evidence registry for A11oy: runtime truth, receipt verification, assurance, benchmarks, source, and public-estate metadata."
+    }
+  ]
+}

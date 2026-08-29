@@ -5,7 +5,7 @@
   "author": "nectec",
   "url": "https://huggingface.co/nectec/Pathumma-llm-vision-3.0.0-re",
   "created_at": "2026-08-25T12:04:19.000Z",
-  "updated_at": "2026-08-25T15:08:06.000Z",
+  "updated_at": "2026-08-28T13:56:39.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "image-text-to-text",

@@ -1,0 +1,77 @@
+{
+  "schema": 1,
+  "id": "stratus-labs/nocturne-v1-teacher",
+  "slug": "stratus-labs-nocturne-v1-teacher",
+  "author": "stratus-labs",
+  "url": "https://huggingface.co/stratus-labs/nocturne-v1-teacher",
+  "created_at": "2026-08-28T22:04:04.000Z",
+  "updated_at": "2026-08-29T00:14:59.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": "audio-classification",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "nocturne_ast",
+    "bioacoustics",
+    "audio-classification",
+    "audio-spectrogram-transformer",
+    "ecology",
+    "biodiversity",
+    "species-identification",
+    "non-bird",
+    "en",
+    "dataset:InsectSet459",
+    "dataset:iNat-Sounds-2024",
+    "license:cc-by-4.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 87892886,
+  "parameters_human": "87.9M",
+  "storage_bytes": 351596208,
+  "storage_human": "352 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Stratus",
+      "url": "https://portal.stratus.ms/",
+      "snippet": "Sign in to your Stratus account for secure access and usage."
+    },
+    {
+      "title": "Models - STRATUS X1",
+      "url": "https://www.stratus.run/docs/api-reference/models",
+      "snippet": "The /v1/models endpoint returns all 2,050+ model combinations dynamically. The list is refreshed at startup from OpenRouter&#x27;s catalog, so your code always works with the latest available models without hardcoding."
+    },
+    {
+      "title": "Nemotron Labs Teacher General Reasoning: 550B open weights",
+      "url": "https://www.orcarouter.ai/blog/nemotron-labs-teacher-general-reasoning-explained",
+      "snippet": "NVIDIA open-sourced the Nemotron Labs General Reasoning teacher — a 550B-A55B reasoning model from the Nemotron 3 Ultra MOPD pipeline. Specs and caveats."
+    },
+    {
+      "title": "Nocturne | V1 | PromptHero",
+      "url": "https://prompthero.com/ai-models/nocturne-download/v1",
+      "snippet": "Nocturne | V1 | PromptHero ... Nocturne"
+    },
+    {
+      "title": "Digital Dream Labs",
+      "url": "https://stratus.anki.bot/",
+      "snippet": "Welcome to Vector AI There are many benefits to the Vector AI Subscription. These include Voice commands access, ChatGPT and Claude connectivity, and much more!"
+    }
+  ]
+}

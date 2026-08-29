@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "takahashitid/thesis-self-supervised",
+  "slug": "takahashitid-thesis-self-supervised",
+  "author": "takahashitid",
+  "url": "https://huggingface.co/takahashitid/thesis-self-supervised",
+  "created_at": "2026-08-28T20:41:37.000Z",
+  "updated_at": "2026-08-28T20:41:58.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "transformer",
+    "research-notes",
+    "self-supervised",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 16576,
+  "parameters_human": "16576",
+  "storage_bytes": 66784,
+  "storage_human": "66784 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "PDF A Formal Blueprint for Autonomous, Self-Improving Intelligence ... - Zenodo",
+      "url": "https://zenodo.org/records/16663817/files/Takahashi_2025_Proposals_for_AGI.pdf?download=1",
+      "snippet": "6 Conclusion We have presented a formal, integrated framework for guiding the development of AI into truly autonomous, self-improving intelligences. This blueprint provides a unified semantic space for the intelligence to coherently represent and regulate its own action, judgment, learning, and self-transformation."
+    },
+    {
+      "title": "Google Scholar",
+      "url": "https://scholar.google.com/",
+      "snippet": "Google Scholar provides a simple way to broadly search for scholarly literature. Search across a wide variety of disciplines and sources: articles, theses, books, abstracts and court opinions."
+    },
+    {
+      "title": "PDF Self-Supervised Learning - Stanford University",
+      "url": "https://cs229.stanford.edu/notes2021spring/notes2021spring/cs229_lecture_selfsupervision_final.pdf",
+      "snippet": "Can self-supervised learning help? Self-supervised learning (informal definition): supervise using labels generated from the data without any manual or as weak label sources Idea: Hide or modify part of the input. Ask model to recover input or classify what changed. Self-supervised task referred to the pretext task"
+    },
+    {
+      "title": "Self-Supervised Theorem Discovery in a Formal Axiomatic System",
+      "url": "https://arxiv.org/pdf/2606.28747",
+      "snippet": "We propose a self-supervised theorem-discovery algo-rithm that grows a theorem library from the primitive rules of a Hilbert axiom system and then reuses ex-tracted theorems as lemmas for further proof search. Our experiments show that our agent discovers tens of thousands of theorems and finds proofs for human-written benchmark problems."
+    },
+    {
+      "title": "Self-Supervised Theorem Discovery in a Formal Axiomatic System",
+      "url": "https://arxiv.org/abs/2606.28747",
+      "snippet": "Recent artificial intelligence (AI) systems have shown remarkable progress in mathematical reasoning. Many existing approaches, including large language models (LLMs), draw on human prior knowledge in the form of mathematical text, code, or theorem libraries. Although these approaches are highly effective in practice, it remains an open question whether an agent can autonomously discover ..."
+    }
+  ]
+}

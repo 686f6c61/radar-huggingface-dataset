@@ -5,7 +5,7 @@
   "author": "zuxler",
   "url": "https://huggingface.co/zuxler/qwen2.5-1.5b-indonesian-legal-sft",
   "created_at": "2026-08-27T02:18:14.000Z",
-  "updated_at": "2026-08-27T07:49:41.000Z",
+  "updated_at": "2026-08-28T08:51:18.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-generation",

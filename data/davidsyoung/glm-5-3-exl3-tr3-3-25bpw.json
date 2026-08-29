@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "davidsyoung/GLM-5.3-EXL3-TR3-3.25bpw",
+  "slug": "davidsyoung-glm-5-3-exl3-tr3-3-25bpw",
+  "author": "davidsyoung",
+  "url": "https://huggingface.co/davidsyoung/GLM-5.3-EXL3-TR3-3.25bpw",
+  "created_at": "2026-08-28T23:23:39.000Z",
+  "updated_at": "2026-08-28T23:26:40.000Z",
+  "license": "glm-5.3",
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "tags": [
+    "transformers",
+    "exl3",
+    "trellis",
+    "tr3",
+    "glm_moe_dsa",
+    "text-generation",
+    "en",
+    "zh",
+    "arxiv:2602.15763",
+    "base_model:zai-org/GLM-5.3",
+    "base_model:quantized:zai-org/GLM-5.3",
+    "license:other",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": "zai-org/GLM-5.3",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GLM-5.3: Frontier Coding with Emergent Cyber Capabilities - z.ai",
+      "url": "https://z.ai/blog/glm-5.3",
+      "snippet": "As shown in the figure, GLM-5.3 improves both performance and token efficiency. It delivers markedly stronger agentic coding results than GLM-5.2 at every effort level while consuming fewer output tokens. At Max effort, GLM-5.3 reaches 34.5% at roughly 75K output tokens per task, compared with 23.4% at 96K for GLM-5.2. The same shift holds against closed models. At High effort, GLM-5.3 reaches ..."
+    },
+    {
+      "title": "GLM-5.3 - lmstudio.ai",
+      "url": "https://lmstudio.ai/models/glm-5.3",
+      "snippet": "GLM-5.3 is Z.ai&#x27;s 753B Mixture-of-Experts model for complex software engineering and long-horizon agentic work, with 40B active parameters and up to 1M tokens of architectural context."
+    },
+    {
+      "title": "GLM-5.3 & GLM-5.2 & GLM-5.1 & GLM-5 - GitHub",
+      "url": "https://github.com/zai-org/GLM-5",
+      "snippet": "GLM-5.3 uses the same base model as GLM-5.2 — every gain comes from post-training. Compared with GLM-5.2, it is much better at complex coding and long-horizon tasks: Stronger Coding: GLM-5.3 is the most capable open-weights model for coding, with a 50% improvement over GLM-5.2 on our in-house Z.ai ..."
+    },
+    {
+      "title": "GLM-5.3 - Overview - Z.AI DEVELOPER DOCUMENT",
+      "url": "https://docs.z.ai/guides/llm/glm-5.3",
+      "snippet": "Overview GLM-5.3 is Z.ai&#x27;s latest flagship model, delivering comprehensive advancements in complex software engineering and agent capabilities. It uses the same base model as GLM-5.2, with all improvements driven by post-training. Compared with GLM-5.2, it delivers significantly stronger performance in complex programming and long-horizon tasks: Stronger Coding Capability GLM-5.3 delivers a ..."
+    },
+    {
+      "title": "GLM-5.3: Specs, API, Pricing and Benchmarks - glm-ai.chat",
+      "url": "https://glm-ai.chat/models/glm-5-3/",
+      "snippet": "Explore GLM-5.3 specifications, Z.ai API access, pricing, reasoning behavior, Coding Plan support, benchmark context and weights status."
+    }
+  ]
+}

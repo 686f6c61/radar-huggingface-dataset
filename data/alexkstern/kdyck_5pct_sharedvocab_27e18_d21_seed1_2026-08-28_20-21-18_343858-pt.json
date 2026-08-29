@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "alexkstern/kdyck_5pct_sharedvocab_27e18_d21_seed1_2026-08-28_20-21-18_343858-pt",
+  "slug": "alexkstern-kdyck_5pct_sharedvocab_27e18_d21_seed1_2026-08-28_20-21-18_343858-pt",
+  "author": "alexkstern",
+  "url": "https://huggingface.co/alexkstern/kdyck_5pct_sharedvocab_27e18_d21_seed1_2026-08-28_20-21-18_343858-pt",
+  "created_at": "2026-08-28T22:51:36.000Z",
+  "updated_at": "2026-08-28T22:52:26.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "nanochat",
+  "languages": [],
+  "tags": [
+    "nanochat",
+    "nanochat_gpt",
+    "pt_fineweb-nanochatbpe-20B",
+    "ppt_dyck-k128-seq_len_2048-1B-offset65536",
+    "seed_1",
+    "case_b",
+    "lr_trapezoid",
+    "depth_21",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 5949678331,
+  "storage_human": "5.9 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "kdyck_5pct_100M_d20_seed1_2026-07-21_20-46-12_318632-pt",
+      "url": "https://huggingface.co/alexkstern/kdyck_5pct_100M_d20_seed1_2026-07-21_20-46-12_318632-pt",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "alexkstern/kdyck_5pct_100M_d20_seed0_2026-07-21_18-28-50_363311-pt at main",
+      "url": "https://huggingface.co/alexkstern/kdyck_5pct_100M_d20_seed0_2026-07-21_18-28-50_363311-pt/tree/main",
+      "snippet": "3.28 kBUpload README.md with huggingface_hubabout 13 hours ago config_001008.json 2.34 kBUpload config_001008.json with huggingface_hubabout 13 hours ago meta_001008.json 336 BytesUpload meta_001008.json with huggingface_hubabout 13 hours ago model_001008.pt 2.08 GB xet Upload model_001008.pt with huggingface_hubabout 13 hours ago optim_001008 ..."
+    },
+    {
+      "title": "DuckDuckGo - Protection. Privacy. Peace of mind.",
+      "url": "https://duckduckgo.com/",
+      "snippet": "The Internet privacy company that empowers you to seamlessly take control of your personal information online, without any tradeoffs."
+    },
+    {
+      "title": "Dataset Search",
+      "url": "https://datasetsearch.research.google.com/",
+      "snippet": "Discover datasets from various domains with Google&#x27;s Dataset Search tool, designed to help researchers and enthusiasts find relevant data easily."
+    },
+    {
+      "title": "Find Open Datasets and Machine Learning Projects | Kaggle",
+      "url": "https://www.kaggle.com/datasets",
+      "snippet": "Browse and download hundreds of thousands of open datasets for AI research, model training, and analysis. Join a community of millions of researchers, developers, and builders to share and collaborate on Kaggle."
+    }
+  ]
+}

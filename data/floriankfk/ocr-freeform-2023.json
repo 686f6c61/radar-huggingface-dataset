@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "floriankfk/ocr-freeform-2023",
+  "slug": "floriankfk-ocr-freeform-2023",
+  "author": "floriankfk",
+  "url": "https://huggingface.co/floriankfk/ocr-freeform-2023",
+  "created_at": "2026-08-28T22:25:35.000Z",
+  "updated_at": "2026-08-28T22:25:44.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "transformer",
+    "research-notes",
+    "ocr-freeform",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 24832,
+  "parameters_human": "24832",
+  "storage_bytes": 99808,
+  "storage_human": "99808 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "floriankfk (Florian M. Klein) - Hugging Face",
+      "url": "https://huggingface.co/floriankfk",
+      "snippet": "Recent Activity updated a modelabout 7 hours ago floriankfk/model_540015763_hybrid_large published a modelabout 8 hours ago floriankfk/model_540015763_hybrid_large View all activity"
+    },
+    {
+      "title": "floriankfk (Florian M. Klein) - Hugging Face",
+      "url": "https://huggingface.co/floriankfk/models",
+      "snippet": "floriankfk&#x27;s models1 Sort: Recently updated floriankfk/model_540015763_hybrid_large Updated about 8 hours ago"
+    },
+    {
+      "title": "Free AI Models on OpenRouter",
+      "url": "https://openrouter.ai/collections/free-models",
+      "snippet": "Model rankings updated August 2026 based on real usage data. At OpenRouter, we believe that free models play a crucial role in democratizing access to AI. These models allow hundreds of thousands of users worldwide to experiment, learn, and innovate. Below you will find the top free AI models currently available on OpenRouter."
+    },
+    {
+      "title": "Read model OCR data extraction - Document Intelligence - Foundry Tools",
+      "url": "https://learn.microsoft.com/en-us/azure/ai-services/document-intelligence/prebuilt/read?view=doc-intel-4.0.0",
+      "snippet": "Extract print and handwritten text from scanned and digital documents with Document Intelligence&#x27;s Read OCR model."
+    },
+    {
+      "title": "Text recognition prebuilt AI model - AI Builder | Microsoft Learn",
+      "url": "https://learn.microsoft.com/en-us/ai-builder/prebuilt-text-recognition",
+      "snippet": "The text recognition prebuilt model extracts words from documents and images into machine-readable character streams. It uses state-of-the-art optical character recognition (OCR) to detect printed and handwritten text in images. This model processes images and document files to extract lines of printed or handwritten text."
+    }
+  ]
+}

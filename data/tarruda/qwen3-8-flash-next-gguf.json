@@ -5,7 +5,7 @@
   "author": "tarruda",
   "url": "https://huggingface.co/tarruda/Qwen3.8-Flash-Next-GGUF",
   "created_at": "2026-08-27T19:06:48.000Z",
-  "updated_at": "2026-08-27T22:08:07.000Z",
+  "updated_at": "2026-08-29T01:40:54.000Z",
   "license": "qwen-community-1.0",
   "license_family": "unknown",
   "pipeline_tag": "image-text-to-text",
@@ -28,10 +28,10 @@
   "likes": 0,
   "downloads_30d": 0,
   "trending_score": 0,
-  "parameters": 51200245760,
-  "parameters_human": "51.20B",
-  "storage_bytes": 420140489376,
-  "storage_human": "420.1 GB",
+  "parameters": 176943899520,
+  "parameters_human": "176.94B",
+  "storage_bytes": 263261013120,
+  "storage_human": "263.3 GB",
   "base_model": "Qwen/Qwen3.8-Flash-Next",
   "formats": [
     "gguf"

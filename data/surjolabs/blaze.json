@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "SurjoLabs/Blaze",
+  "slug": "surjolabs-blaze",
+  "author": "SurjoLabs",
+  "url": "https://huggingface.co/SurjoLabs/Blaze",
+  "created_at": "2026-08-24T08:13:28.000Z",
+  "updated_at": "2026-08-26T09:57:55.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "safetensors",
+    "blaze",
+    "text-generation",
+    "causal-lm",
+    "custom-architecture",
+    "slm",
+    "small-language-model",
+    "conversational",
+    "custom_code",
+    "en",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 8,
+  "downloads_30d": 165,
+  "trending_score": 8,
+  "parameters": 48251136,
+  "parameters_human": "48.3M",
+  "storage_bytes": 16118558600,
+  "storage_human": "16.1 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "SurjoLabs/Blaze · Hugging Face",
+      "url": "https://huggingface.co/SurjoLabs/Blaze",
+      "snippet": "Blaze is a 48.3M parameter causal language model developed by SurjoLabs. It scores 15.45 on the Intelligence Index, placing #1 in the sub-50M parameter category on the Open SLM Leaderboard."
+    },
+    {
+      "title": "SurjoLabs/Flare · Hugging Face",
+      "url": "https://huggingface.co/SurjoLabs/Flare",
+      "snippet": "SurjoLabs / Flare like 2 Follow SurjoLabs 5 Safetensors Model card FilesFiles and versions xet Community Copy to bucket new"
+    },
+    {
+      "title": "SurjoLabs (SurjoLabs) - Hugging Face",
+      "url": "https://huggingface.co/SurjoLabs",
+      "snippet": "Org profile for SurjoLabs on Hugging Face, the AI community building the future."
+    },
+    {
+      "title": "GitHub - ccyrene/blaze: AI compiler for faster inferencing",
+      "url": "https://github.com/ccyrene/blaze",
+      "snippet": "AI compiler for faster inferencing. Contribute to ccyrene/blaze development by creating an account on GitHub."
+    },
+    {
+      "title": "AI Edits for ColaCoot&#x27;s Amy and Blaze - LoversLab",
+      "url": "https://www.loverslab.com/files/file/45535-ai-edits-for-colacoots-amy-and-blaze/",
+      "snippet": "AI Edits for ColaCoot&#x27;s Amy and Blaze 1.0.0 By nurvi Find their other files Followers 3 About This File Install Instructions"
+    }
+  ]
+}

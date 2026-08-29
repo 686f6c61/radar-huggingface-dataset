@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "Islamamro/amazon-counterfactual-aurora-islamamro",
+  "slug": "islamamro-amazon-counterfactual-aurora-islamamro",
+  "author": "Islamamro",
+  "url": "https://huggingface.co/Islamamro/amazon-counterfactual-aurora-islamamro",
+  "created_at": "2026-08-28T23:18:05.000Z",
+  "updated_at": "2026-08-28T23:30:40.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "distilbert",
+    "aurora",
+    "islamamro",
+    "text-classification",
+    "dataset:SetFit/amazon_counterfactual_en",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 66955010,
+  "parameters_human": "67.0M",
+  "storage_bytes": 267832560,
+  "storage_human": "268 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "amazon_counterfactual.py · mteb/amazon_counterfactual at main",
+      "url": "https://huggingface.co/datasets/mteb/amazon_counterfactual/blob/main/amazon_counterfactual.py",
+      "snippet": "The dataset contains sentences from Amazon customer reviews (sampled from Amazon product review dataset) annotated for counterfactual detection (CFD) binary classification."
+    },
+    {
+      "title": "mteb/amazon_counterfactual · Datasets at Hugging Face",
+      "url": "https://huggingface.co/datasets/mteb/amazon_counterfactual",
+      "snippet": "A collection of Amazon customer reviews annotated for counterfactual detection pair classification."
+    },
+    {
+      "title": "Amazon Nova",
+      "url": "https://nova.amazon.com/",
+      "snippet": "Try latest Amazon Nova foundation models, including Amazon Nova 2 Lite, Amazon Nova Act, and Amazon Nova 2 Sonic. Chat, generate text and code, and build agents."
+    },
+    {
+      "title": "TikTok - Make Your Day",
+      "url": "https://www.tiktok.com/en/",
+      "snippet": "TikTok - trends start here. On a device or on the web, viewers can watch and discover millions of personalized short videos. Download the app to get started."
+    },
+    {
+      "title": "Leaked Amazon Documents Detail $1.8 Million Overrun on a Single Claude ...",
+      "url": "https://www.ghacks.net/2026/07/31/leaked-amazon-documents-detail-1-8-million-overrun-on-a-single-claude-ai-task-missed-for-five-months/",
+      "snippet": "Internal Amazon documents released this week reveal several AI cost overruns. The largest involved a $1.8 million project using Anthropic&#x27;s Claude Sonnet model, which exceeded its budget by 860% and was never launched. Amazon did not detect the overspending for five months. Senior engineers reported the overruns at a staff meeting on Tuesday, July 28. The tool was designed to automatically ..."
+    }
+  ]
+}

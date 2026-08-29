@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "justintiensmith/groot_multi_gpu_v4",
+  "slug": "justintiensmith-groot_multi_gpu_v4",
+  "author": "justintiensmith",
+  "url": "https://huggingface.co/justintiensmith/groot_multi_gpu_v4",
+  "created_at": "2026-08-28T19:41:54.000Z",
+  "updated_at": "2026-08-28T19:46:12.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "groot",
+    "robotics",
+    "dataset:justintiensmith/VLA_Reasoning_Training_Dataset_1200_Trimmed_Start_5_Frame",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 3144016000,
+  "parameters_human": "3.14B",
+  "storage_bytes": 12576223736,
+  "storage_human": "12.6 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "justintiensmith/groot_v4 · Hugging Face",
+      "url": "https://huggingface.co/justintiensmith/groot_v4",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "justintiensmith/groot_v4 · Discussions - Hugging Face",
+      "url": "https://huggingface.co/justintiensmith/groot_v4/discussions",
+      "snippet": "Instructions to use justintiensmith/groot_v4 with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Libraries LeRobot How to use justintiensmith/groot_v4 with LeRobot: Notebooks Google Colab Kaggle Sort: Recently created"
+    },
+    {
+      "title": "NVIDIA/Isaac-GR00T: NVIDIA Isaac GR00T N1.7 - GitHub",
+      "url": "https://github.com/NVIDIA/Isaac-GR00T",
+      "snippet": "NVIDIA Isaac GR00T What&#x27;s New in GR00T N1.7 Installation LeRobot Integration Model Checkpoints & Embodiment Tags Data Format Inference Fine-tuning Evaluation Contributions License Citation"
+    },
+    {
+      "title": "Isaac GR00T - Generalist Robot 00 Technology | NVIDIA Developer",
+      "url": "https://developer.nvidia.com/isaac/gr00t",
+      "snippet": "NVIDIA Isaac GR00T Generalist Robot 00 Technology NVIDIA Isaac™ GR00T is an open reference platform for general-purpose humanoid robots that enables developers to more efficiently build, train, test, and deploy AI-powered robots. It comprises open data and data pipelines, an open robot foundation model, simulation frameworks, middleware, CUDA-X accelerated runtime libraries, and NVIDIA ..."
+    },
+    {
+      "title": "NVIDIA/Isaac-GR00T | DeepWiki",
+      "url": "https://deepwiki.com/NVIDIA/Isaac-GR00T",
+      "snippet": "Isaac-GR00T is a cross-embodiment vision-language-action (VLA) model designed to enable generalist robot control across diverse platforms and tasks. The model processes multimodal inputs—video observations, robot proprioceptive state, and natural language instructions—to generate continuous action sequences for manipulation and locomotion ..."
+    }
+  ]
+}

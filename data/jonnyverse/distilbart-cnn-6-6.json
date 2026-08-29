@@ -27,8 +27,8 @@
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
-  "storage_bytes": 17992810004,
-  "storage_human": "18.0 GB",
+  "storage_bytes": 7940676931,
+  "storage_human": "7.9 GB",
   "base_model": "sshleifer/distilbart-cnn-6-6",
   "formats": [
     "onnx"

@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "jjjlimaus/sn38-emily2017-p2018-qft",
+  "slug": "jjjlimaus-sn38-emily2017-p2018-qft",
+  "author": "jjjlimaus",
+  "url": "https://huggingface.co/jjjlimaus/sn38-emily2017-p2018-qft",
+  "created_at": "2026-08-28T20:06:43.000Z",
+  "updated_at": "2026-08-28T20:06:44.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "bittensor",
+    "sn38",
+    "chronollm",
+    "text-generation",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": true,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "jjjlimaus (Lima) - Hugging Face",
+      "url": "https://huggingface.co/jjjlimaus",
+      "snippet": "jjjlimaus/chrono2014-finance2015-ft3 2B•Updated 1 day ago• 4 View 17 models datasets27 Sort: Recently updated"
+    },
+    {
+      "title": "jjjlimaus (Lima) - Hugging Face",
+      "url": "https://huggingface.co/jjjlimaus/models",
+      "snippet": "Recent Activity updated a datasetabout 23 hours ago jjjlimaus/sn38-quality-gold-100k updated a modelabout 24 hours ago jjjlimaus/nanoexpand-2018-quality-gold-cont published a model1 day ago jjjlimaus/nanoexpand-2018-quality-gold-cont View all activity"
+    },
+    {
+      "title": "LLM Leaderboard 2026: Compare 300+ Top AI Models by Intelligence, Speed ...",
+      "url": "https://llm-stats.com/leaderboards/llm-leaderboard",
+      "snippet": "The LLM Leaderboard — independent ranking of GPT, Claude, Gemini, Llama, DeepSeek and 300+ AI models by intelligence, speed and price. Filter by provider, license, modality and context window; sort by every benchmark. Composite LLM Stats Score updated continuously from public benchmarks and live API metrics."
+    },
+    {
+      "title": "Enhanced Intratumoral Delivery of SN38 as a Tocopherol Oxyacetate ...",
+      "url": "https://aacrjournals.org/clincancerres/article/24/11/2585/80719/Enhanced-Intratumoral-Delivery-of-SN38-as-a",
+      "snippet": "This chemotherapeutic is cell cycle (S-phase) dependent and is effective at killing rapidly proliferating cells. Previously, we formulated SN38 as a tocopherol succinate conjugate (SN38-TS) in polylactic acid-polyethylene glycol (PLA-PEG) nanoparticles to treat neuroblastomas in a xenograft model (9, 10)."
+    },
+    {
+      "title": "AI Model Leaderboard August 2026 — LMSys Arena, LLM, Image & Coding ...",
+      "url": "https://www.swfte.com/ai/leaderboard",
+      "snippet": "Live AI model leaderboard updated August 2026. Anthropic: Claude Fable 5 leads at 100/100. Compare 380 LLMs, image, video, coding & reasoning models — replaces LMSys Chatbot Arena."
+    }
+  ]
+}

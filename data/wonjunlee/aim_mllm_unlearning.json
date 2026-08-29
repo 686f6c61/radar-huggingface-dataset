@@ -5,7 +5,7 @@
   "author": "WonjunLee",
   "url": "https://huggingface.co/WonjunLee/AIM_MLLM_Unlearning",
   "created_at": "2026-08-28T06:39:53.000Z",
-  "updated_at": "2026-08-28T06:41:34.000Z",
+  "updated_at": "2026-08-28T06:45:47.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": null,
@@ -28,8 +28,8 @@
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
-  "storage_bytes": 677471896,
-  "storage_human": "677 MB",
+  "storage_bytes": 3106092581,
+  "storage_human": "3.1 GB",
   "base_model": "llava-hf/llava-1.5-7b-hf",
   "formats": [
     "safetensors"

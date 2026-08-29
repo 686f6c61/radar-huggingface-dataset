@@ -5,7 +5,7 @@
   "author": "rspcunningham",
   "url": "https://huggingface.co/rspcunningham/ml-intern-qwen25-1.5b-gsm8k-20260828-1420",
   "created_at": "2026-08-28T18:09:32.000Z",
-  "updated_at": "2026-08-28T18:13:05.000Z",
+  "updated_at": "2026-08-28T19:01:30.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-generation",

@@ -4,15 +4,14 @@
   "slug": "jamil82-bdcoderai-600m",
   "author": "Jamil82",
   "url": "https://huggingface.co/Jamil82/BDCoderAI-600M",
-  "created_at": "2026-08-22T17:05:26.000Z",
-  "updated_at": "2026-08-22T19:54:53.000Z",
+  "created_at": "2026-08-28T04:55:56.000Z",
+  "updated_at": "2026-08-28T04:55:57.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": null,
   "library": null,
   "languages": [],
   "tags": [
-    "safetensors",
     "region:us"
   ],
   "likes": 0,
@@ -23,13 +22,11 @@
   "storage_bytes": 33648888481,
   "storage_human": "33.6 GB",
   "base_model": null,
-  "formats": [
-    "safetensors"
-  ],
+  "formats": [],
   "is_conversational": false,
   "gated": false,
-  "removed": true,
-  "removed_at": "2026-08-23T17:05:02.643Z",
+  "removed": false,
+  "removed_at": null,
   "benchmarks": [],
   "sources": [
     {

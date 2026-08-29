@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "skblv/resnet50-sarrarp50-gesture",
+  "slug": "skblv-resnet50-sarrarp50-gesture",
+  "author": "skblv",
+  "url": "https://huggingface.co/skblv/resnet50-sarrarp50-gesture",
+  "created_at": "2026-08-28T20:08:37.000Z",
+  "updated_at": "2026-08-28T20:08:44.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-classification",
+  "library": "pytorch",
+  "languages": [],
+  "tags": [
+    "pytorch",
+    "resnet50",
+    "surgical-video",
+    "medical-imaging",
+    "gesture-recognition",
+    "image-classification",
+    "arxiv:2401.00496",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 94417635,
+  "storage_human": "94 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "skblv/yolo11m-cls-sarrarp50-gesture · Hugging Face",
+      "url": "https://huggingface.co/skblv/yolo11m-cls-sarrarp50-gesture",
+      "snippet": "Instructions to use skblv/yolo11m-cls-sarrarp50-gesture with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Libraries ultralytics How to use skblv/yolo11m-cls-sarrarp50-gesture with ultralytics:"
+    },
+    {
+      "title": "microsoft/resnet-50 · Hugging Face",
+      "url": "https://huggingface.co/microsoft/resnet-50",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "ResNet50.ipynb - Colab",
+      "url": "https://colab.research.google.com/github/yashclone999/ResNet_MODEL/blob/master/ResNet50.ipynb",
+      "snippet": "Deep neural networks are difficult to train, and one major problem they suffer from is vanishing-gradients (or exploding-gradients as well). The absolute value of the Gradient signal tends to decrease exponentially as we move from the last layer to the first, which makes the gradient descent process extremely slow Introducing ResNet blocks with \"skip-connections\" in very deep neural nets helps ..."
+    },
+    {
+      "title": "[2401.00496] SAR-RARP50: Segmentation of surgical instrumentation and ...",
+      "url": "https://arxiv.org/abs/2401.00496",
+      "snippet": "Surgical tool segmentation and action recognition are fundamental building blocks in many computer-assisted intervention applications, ranging from surgical skills assessment to decision support systems. Nowadays, learning-based action recognition and segmentation approaches outperform classical methods, relying, however, on large, annotated datasets. Furthermore, action recognition and tool ..."
+    },
+    {
+      "title": "ResNet50 - PyTorch",
+      "url": "https://pytorch.org/hub/nvidia_deeplearningexamples_resnet50/",
+      "snippet": "The ResNet50 v1.5 model is a modified version of the original ResNet50 v1 model. The difference between v1 and v1.5 is that, in the bottleneck blocks which requires downsampling, v1 has stride = 2 in the first 1×1 convolution, whereas v1.5 has stride = 2 in the 3×3 convolution."
+    }
+  ]
+}

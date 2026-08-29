@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "michaelwilsonmu/contrastive",
+  "slug": "michaelwilsonmu-contrastive",
+  "author": "michaelwilsonmu",
+  "url": "https://huggingface.co/michaelwilsonmu/contrastive",
+  "created_at": "2026-08-28T20:36:39.000Z",
+  "updated_at": "2026-08-28T20:36:46.000Z",
+  "license": "bsd-3-clause",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "dino",
+    "pytorch",
+    "contrastive",
+    "license:bsd-3-clause",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 16576,
+  "parameters_human": "16576",
+  "storage_bytes": 66784,
+  "storage_human": "66784 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Visualizing and Understanding Contrastive Learning - arXiv.org",
+      "url": "https://arxiv.org/html/2206.09753v3",
+      "snippet": "Visualizing and Understanding Contrastive Learning Thanks: This research received funding from the FWO (Grants G014718N, G0A4720N and 1SB5721N) and from imec through the AAA project Trustworthy AI Methods (TAIM). F. Sammani, B. Joukovsky and N. Deligiannis are with the Department of Electronics and Informatics, Vrije Universiteit Brussel, Pleinlaan 2, B-1050 Brussels, Belgium and also with ..."
+    },
+    {
+      "title": "Contrastive Time-Series Visualization Techniques for Enhancing AI Model ...",
+      "url": "https://www.preprints.org/manuscript/202504.1984/v1",
+      "snippet": "This paper presents a comprehensive framework for enhancing AI model interpretability in financial risk assessment through contrastive time series visualization techniques. Financial institutions increasingly deploy complex AI models for risk assessment, yet these models often function as \"black boxes,\" creating significant interpretability challenges for analysts and regulatory compliance ..."
+    },
+    {
+      "title": "CVPR 2025 Accepted Papers",
+      "url": "https://cvpr.thecvf.com/Conferences/2025/AcceptedPapers",
+      "snippet": "CVPR 2025 Accepted Papers This page is cached for 1 hour. Changes to affiliation or name in your local profile may take up to 60 minutes to appear here."
+    },
+    {
+      "title": "LLM Leaderboard 2026: Compare 300+ Top AI Models by Intelligence, Speed ...",
+      "url": "https://llm-stats.com/leaderboards/llm-leaderboard",
+      "snippet": "The LLM Leaderboard — independent ranking of GPT, Claude, Gemini, Llama, DeepSeek and 300+ AI models by intelligence, speed and price. Filter by provider, license, modality and context window; sort by every benchmark. Composite LLM Stats Score updated continuously from public benchmarks and live API metrics."
+    },
+    {
+      "title": "A comprehensive survey on contrastive learning - ScienceDirect",
+      "url": "https://www.sciencedirect.com/science/article/pii/S0925231224014164",
+      "snippet": "Contrastive Learning is self-supervised representation learning by training a model to differentiate between similar and dissimilar samples. It has been shown to be effective and has gained significant attention in various computer vision and natural language processing tasks. In this paper, we comprehensively and systematically sort out the main ideas, recent developments and application ..."
+    }
+  ]
+}

@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "alexkstern/kdyck_5pct_sharedvocab_27e18_d21_seed0_2026-08-28_17-47-51_716872-pt",
+  "slug": "alexkstern-kdyck_5pct_sharedvocab_27e18_d21_seed0_2026-08-28_17-47-51_716872-pt",
+  "author": "alexkstern",
+  "url": "https://huggingface.co/alexkstern/kdyck_5pct_sharedvocab_27e18_d21_seed0_2026-08-28_17-47-51_716872-pt",
+  "created_at": "2026-08-28T20:20:00.000Z",
+  "updated_at": "2026-08-28T20:21:00.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "nanochat",
+  "languages": [],
+  "tags": [
+    "nanochat",
+    "nanochat_gpt",
+    "pt_fineweb-nanochatbpe-20B",
+    "ppt_dyck-k128-seq_len_2048-1B-offset65536",
+    "seed_0",
+    "case_b",
+    "lr_trapezoid",
+    "depth_21",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 5949678331,
+  "storage_human": "5.9 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "kdyck_5pct_27e18_d21_seed0_2026-07-25_02-52-15_425231-pt",
+      "url": "https://huggingface.co/alexkstern/kdyck_5pct_27e18_d21_seed0_2026-07-25_02-52-15_425231-pt",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "kdyck_5pct_9e18_d18_seed0_2026-07-24_00-57-51_849895-pt",
+      "url": "https://huggingface.co/alexkstern/kdyck_5pct_9e18_d18_seed0_2026-07-24_00-57-51_849895-pt",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "CodyCross Answers — Every Pack, Puzzle & Today&#x27;s Password",
+      "url": "https://codycross.io/",
+      "snippet": "Find any CodyCross answer in seconds. Search every clue of the English game, browse all packs, groups and puzzles, and get Today&#x27;s Password — spoiler-free."
+    },
+    {
+      "title": "README.md · alexkstern/vanilla_100M_d20_seed0_2026-07-21_17-12-44 ...",
+      "url": "https://d6108366.hf-mirror.com/alexkstern/vanilla_100M_d20_seed0_2026-07-21_17-12-44_644200-pt/blob/main/README.md?code=true",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "We burned 11.7bn tokens to find the best cyber AI model",
+      "url": "https://www.aikido.dev/blog/ai-model-benchmarks-aug-21-2026",
+      "snippet": "We burned 11.7 billion tokens to benchmark the cyber capabilities of 10 AI models with three attempts each, given 32 fresh off-the-shelf vulns to rediscover. This benchmark is an evolution of our earlier known-CVE benchmark with a fresh, harder dataset, more models, and a closer look at what they find, how reliably they find it, and their quirks and trade-offs. With this, we add GLM-5.3 ..."
+    }
+  ]
+}

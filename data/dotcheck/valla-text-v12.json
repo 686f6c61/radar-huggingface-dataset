@@ -5,7 +5,7 @@
   "author": "DotCheck",
   "url": "https://huggingface.co/DotCheck/valla-text-v12",
   "created_at": "2026-08-28T13:22:05.000Z",
-  "updated_at": "2026-08-28T13:22:08.000Z",
+  "updated_at": "2026-08-29T00:10:14.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-classification",

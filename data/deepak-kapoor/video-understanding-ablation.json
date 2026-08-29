@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "Deepak-kapoor/video-understanding-ablation",
+  "slug": "deepak-kapoor-video-understanding-ablation",
+  "author": "Deepak-kapoor",
+  "url": "https://huggingface.co/Deepak-kapoor/video-understanding-ablation",
+  "created_at": "2026-08-28T21:27:23.000Z",
+  "updated_at": "2026-08-28T21:27:32.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "transformer",
+    "research-notes",
+    "video-understanding",
+    "license:cc-by-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 24832,
+  "parameters_human": "24832",
+  "storage_bytes": 99808,
+  "storage_human": "99808 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Ablation (artificial intelligence) - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Ablation_(artificial_intelligence)",
+      "snippet": "In artificial intelligence (AI), particularly machine learning, [1] ablation is the removal of a component of an AI system. An ablation study aims to determine the contribution of a component to an AI system by removing the component, and then analyzing the resultant performance of the system."
+    },
+    {
+      "title": "Dissecting Intelligence: The Practitioner&#x27;s Guide to Ablation in ...",
+      "url": "https://blog.stackademic.com/dissecting-intelligence-the-practitioners-guide-to-ablation-in-machine-learning-627c872545dc",
+      "snippet": "Dissecting Intelligence: The Practitioner&#x27;s Guide to Ablation in Machine Learning Abstract Context: Understanding the inner workings of machine learning models is essential for building efficient …"
+    },
+    {
+      "title": "Ablation Studies — AI Paper Deep Dives - YouTube",
+      "url": "https://www.youtube.com/playlist?list=PLOVaanoCWj5M",
+      "snippet": "Deep-dive breakdowns of AI research papers on ablation studies — Ablation Studies — one paper per episode, explained end to end."
+    },
+    {
+      "title": "Machine Learning: What Is Ablation Study? - Baeldung",
+      "url": "https://www.baeldung.com/cs/ml-ablation-study",
+      "snippet": "Most times in machine learning, we implement models that consist of multiple different parts that influence the total performance. Therefore, it is very important to provide ways to measure the contribution of these parts to the overall model. This is where the concept of an ablation study comes where certain parts of the network are removed in order to gain a better understanding of the ..."
+    },
+    {
+      "title": "Model Ablation | Episode 46 - YouTube",
+      "url": "https://www.youtube.com/watch?v=aqnQE-WhQmQ",
+      "snippet": "In this episode of BHIS Presents: AI Security Ops, the team breaks down model ablation — a powerful interpretability technique that&#x27;s quickly becoming a serious concern in AI security."
+    }
+  ]
+}

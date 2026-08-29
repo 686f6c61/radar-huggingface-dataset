@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "FIIS/tanalea",
+  "slug": "fiis-tanalea",
+  "author": "FIIS",
+  "url": "https://huggingface.co/FIIS/tanalea",
+  "created_at": "2026-08-29T00:49:27.000Z",
+  "updated_at": "2026-08-29T01:24:54.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-image",
+  "library": "diffusers",
+  "languages": [],
+  "tags": [
+    "diffusers",
+    "text-to-image",
+    "lora",
+    "krea2",
+    "template:sd-lora",
+    "base_model:krea/Krea-2-Raw",
+    "base_model:adapter:krea/Krea-2-Raw",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 778436679,
+  "storage_human": "778 MB",
+  "base_model": "krea/Krea-2-Raw",
+  "formats": [
+    "diffusers"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "LLM Leaderboard & AI Model Benchmarks — August 2026",
+      "url": "https://benchlm.ai/",
+      "snippet": "Compare 406 AI models across 406 benchmarks, with 228 ranked scores, source evidence, API pricing, context windows, runtime, and head-to-head pages."
+    },
+    {
+      "title": "Mikaela Tala | Manila - Facebook",
+      "url": "https://www.facebook.com/ai.mikaelatala/",
+      "snippet": "Mikaela Tala, Manila. 1,868,453 likes · 646,684 talking about this. Philippines&#x27; first AI muse. Hyper-real. Heartfelt. Human-inspired. More at:..."
+    },
+    {
+      "title": "Best AI Models in August 2026: Updated Rankings and Comparisons",
+      "url": "https://felloai.com/best-ai-models/",
+      "snippet": "The best AI models ranked by use case: writing, coding, image generation, accuracy and more. Updated monthly with benchmarks and pricing for August 2026."
+    },
+    {
+      "title": "Hugging Face - The AI community building the future.",
+      "url": "https://huggingface.co/",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "How to Tell If an Instagram Model or Influencer Is AI-Generated: 7 ...",
+      "url": "https://www.ledgerapp.app/blog/how-to-tell-if-instagram-model-is-ai-generated",
+      "snippet": "AI Instagram models like Aitana López look photorealistic and pull real brand deals. Seven signs a model or influencer is a synthetic persona, the 30-second check, and what to do before you follow or pay."
+    }
+  ]
+}

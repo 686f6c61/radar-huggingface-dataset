@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "dreccos/mva-subclonal-detection-pipeline",
+  "slug": "dreccos-mva-subclonal-detection-pipeline",
+  "author": "dreccos",
+  "url": "https://huggingface.co/dreccos/mva-subclonal-detection-pipeline",
+  "created_at": "2026-08-28T20:23:22.000Z",
+  "updated_at": "2026-08-28T20:23:22.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:cc-by-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Physics-informed AI with chemical master equation dynamics for driver ...",
+      "url": "https://spj.science.org/doi/10.1016/j.csbj.2025.10.046",
+      "snippet": "Across all six drivers, CME fits yield kinetically plausible half-lives, reproduce burst-model over-dispersion, and provide calibrated, sharp time-resolved predictions, supporting the use of these driver-specific models to time and interpret subclonal signals."
+    },
+    {
+      "title": "Physics-informed AI with chemical master equation dynamics for driver ...",
+      "url": "https://www.sciencedirect.com/science/article/pii/S2001037025004477",
+      "snippet": "We further demonstrate time-resolved calibration of forecasts and operationalize discovery with magicSubclonal, which selects an optimal analysis time and consistently recovers driver-aligned subclonal programs; applying this pipeline yields CME-timed, FDR-controlled high-risk genes that cluster at ribbon extremes and remain stable under ..."
+    },
+    {
+      "title": "Physics-informed AI with chemical master equation dynamics for driver ...",
+      "url": "https://www.csbj.org/article/S2001-0370(25)00447-7/fulltext?uuid=uuid%3Afb4f110b-8313-4d60-9f3b-2ca59fef8952",
+      "snippet": "Subclonal populations shape progression and therapy response but are difficult to resolve in bulk transcriptomes, where rare signals are diluted by dominant clones. Existing methods often treat samples as static mixtures, infer lineages without expression-defined states, or rank genes without specifying when to evaluate, yielding unstable signatures. We propose magicSubclonal, a physics ..."
+    },
+    {
+      "title": "Hugging Face - The AI community building the future.",
+      "url": "https://huggingface.co/",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "MediaPipe Solutions guide | Google AI Edge | Google for Developers",
+      "url": "https://developers.google.com/edge/mediapipe/solutions/guide",
+      "snippet": "MediaPipe Solutions provides a suite of libraries and tools for you to quickly apply artificial intelligence (AI) and machine learning (ML) techniques in your applications. You can plug these solutions into your applications immediately, customize them to your needs, and use them across multiple development platforms."
+    }
+  ]
+}

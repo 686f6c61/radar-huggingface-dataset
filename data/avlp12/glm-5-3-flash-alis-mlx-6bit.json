@@ -1,0 +1,84 @@
+{
+  "schema": 1,
+  "id": "avlp12/GLM-5.3-Flash-Alis-MLX-6bit",
+  "slug": "avlp12-glm-5-3-flash-alis-mlx-6bit",
+  "author": "avlp12",
+  "url": "https://huggingface.co/avlp12/GLM-5.3-Flash-Alis-MLX-6bit",
+  "created_at": "2026-08-26T23:19:47.000Z",
+  "updated_at": "2026-08-29T01:20:41.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "mlx",
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "glm5_next",
+    "quantized",
+    "glm",
+    "moe",
+    "apple-silicon",
+    "mixed-precision",
+    "6-bit",
+    "long-context",
+    "linear-attention",
+    "hybrid-attention",
+    "conversational",
+    "image-text-to-text",
+    "text-generation",
+    "en",
+    "zh",
+    "base_model:zai-org/GLM-5.3-Flash",
+    "base_model:quantized:zai-org/GLM-5.3-Flash",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 64845395712,
+  "parameters_human": "64.85B",
+  "storage_bytes": 268099555440,
+  "storage_human": "268.1 GB",
+  "base_model": "zai-org/GLM-5.3-Flash",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "avlp12/GLM-5.2-Alis-MLX-Dynamic-2.3bpw · Hugging Face",
+      "url": "https://huggingface.co/avlp12/GLM-5.2-Alis-MLX-Dynamic-2.3bpw",
+      "snippet": "Instructions to use avlp12/GLM-5.2-Alis-MLX-Dynamic-2.3bpw with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Libraries MLX How to use avlp12/GLM-5.2-Alis-MLX-Dynamic-2.3bpw with MLX:"
+    },
+    {
+      "title": "avlp12 (ALISVOLATPROPRIIS) - Hugging Face",
+      "url": "https://huggingface.co/avlp12",
+      "snippet": "Receipt-sealed ALIS-DWQ MLX quants of Laguna S 2.1 (117.6B MoE) for Apple Silicon — highest-quality 4.89 bpw and capacity-optimal 3.31 bpw builds."
+    },
+    {
+      "title": "GLM-5.3-Flash (Ox Alpha): Specs, Price & API - glm-ai.chat",
+      "url": "https://glm-ai.chat/models/glm-5-3-flash/",
+      "snippet": "Ox Alpha was the anonymous preview name for GLM-5.3-Flash, not a separate GLM model. Z.ai revealed the identity on August 26, 2026 after testing the model on OpenCode and OpenRouter. The released model is Z.ai&#x27;s first natively multimodal model in the wider GLM AI family, with 320 billion total parameters, 18 billion activated parameters, a 1-million-token context window and the API model ID ..."
+    },
+    {
+      "title": "GLM-5.3 | OpenLM.ai",
+      "url": "https://openlm.ai/glm-5.5/",
+      "snippet": "GLM-5.3-Flash is the first natively multimodal model in the GLM-5 series. With 320B total parameters and just 18B active parameters, it outperforms GLM-5.2 across benchmarks and real-world workloads at one-tenth the price, while approaching Claude Opus 4.8 on coding and agentic benchmarks."
+    },
+    {
+      "title": "GLM-5.3-Flash: Features, Benchmarks, and Pricing | DataCamp",
+      "url": "https://www.datacamp.com/blog/glm-5-3-flash",
+      "snippet": "What Is GLM-5.3-Flash? GLM-5.3-Flash is Z.ai&#x27;s cost-optimized model in the GLM-5.3 family, sitting below the full-fat GLM-5.3 flagship on capability but far below it on price. Artificial Analysis rates it at an intelligence index of 57, compared to 60 for GLM-5.3."
+    }
+  ]
+}

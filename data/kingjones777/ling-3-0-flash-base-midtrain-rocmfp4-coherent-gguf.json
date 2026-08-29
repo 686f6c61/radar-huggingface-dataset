@@ -5,7 +5,7 @@
   "author": "kingjones777",
   "url": "https://huggingface.co/kingjones777/Ling-3.0-flash-base-midtrain-ROCmFP4-COHERENT-GGUF",
   "created_at": "2026-08-22T03:30:16.000Z",
-  "updated_at": "2026-08-22T03:34:49.000Z",
+  "updated_at": "2026-08-28T04:08:16.000Z",
   "license": "mit",
   "license_family": "oss",
   "pipeline_tag": "text-generation",

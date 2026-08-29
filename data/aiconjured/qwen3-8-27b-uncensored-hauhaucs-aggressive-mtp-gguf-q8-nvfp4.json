@@ -1,0 +1,76 @@
+{
+  "schema": 1,
+  "id": "AIconjured/Qwen3.8-27B-Uncensored-HauhauCS-Aggressive-MTP-GGUF-Q8-NVFP4",
+  "slug": "aiconjured-qwen3-8-27b-uncensored-hauhaucs-aggressive-mtp-gguf-q8-nvfp4",
+  "author": "AIconjured",
+  "url": "https://huggingface.co/AIconjured/Qwen3.8-27B-Uncensored-HauhauCS-Aggressive-MTP-GGUF-Q8-NVFP4",
+  "created_at": "2026-08-24T06:25:27.000Z",
+  "updated_at": "2026-08-24T07:25:26.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "27B",
+    "MTP",
+    "GGUF",
+    "Vision",
+    "Ollama",
+    "llama.cpp",
+    "text",
+    "Uncensored",
+    "NVFP4",
+    "QWEN3.8",
+    "base_model:HauhauCS/Qwen3.8-27B-Uncensored-HauhauCS-Aggressive-MTP-GGUF",
+    "base_model:quantized:HauhauCS/Qwen3.8-27B-Uncensored-HauhauCS-Aggressive-MTP-GGUF",
+    "doi:10.57967/hf/10151",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 9,
+  "downloads_30d": 2474,
+  "trending_score": 8,
+  "parameters": 1863907840,
+  "parameters_human": "1.86B",
+  "storage_bytes": 18934473248,
+  "storage_human": "18.9 GB",
+  "base_model": "Qwen/Qwen3.8-27B, HauhauCS/Qwen3.8-27B-Uncensored-HauhauCS-Aggressive-MTP-GGUF",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Qwen3.8-27B-Uncensored-HauhauCS-Aggressive-MTP-GGUF",
+      "url": "https://huggingface.co/HauhauCS/Qwen3.8-27B-Uncensored-HauhauCS-Aggressive-MTP-GGUF",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Qwen3.8-27B-Uncensored-HauhauCS-Aggressive-MTP-GGUF-Q8-NVFP4",
+      "url": "https://huggingface.co/AIconjured/Qwen3.8-27B-Uncensored-HauhauCS-Aggressive-MTP-GGUF-Q8-NVFP4/tree/main",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Qwen3.8-27B-Uncensored-HauhauCS-Aggressive-MTP-GGUF",
+      "url": "https://aiany.app/item/qwen3-8-27b-uncensored-hauhaucs-aggressive-mtp-gguf",
+      "snippet": "Provides quantized GGUF variants of Qwen3.8-27B with an &#x27;Aggressive&#x27; uncensoring profile and an optional HauhauCS FastMTP sidecar to accelerate MTP speculative decoding; includes a BF16 vision projector and K_P quant levels for VRAM/quality trade-offs."
+    },
+    {
+      "title": "Qwen3.8 27b Uncensored Hauhaucs Aggressive Mtp - GGUF Model",
+      "url": "https://local-ai-zone.github.io/models/qwen3-8-27b-uncensored-hauhaucs-aggressive-mtp.html",
+      "snippet": "Download Qwen3.8 27b Uncensored Hauhaucs Aggressive Mtp GGUF model. 15.9 GB, 357,225 downloads, 422 likes."
+    },
+    {
+      "title": "Qwen3.8 27B Uncensored HauhauCS Aggressive MTP GGUF",
+      "url": "https://interfaze.ai/models/hauhaucsqwen38-27b-uncensored-hauhaucs-aggressive-mtp-gguf",
+      "snippet": "Qwen3.8 27B Uncensored HauhauCS Aggressive MTP GGUF by HauhauCS, a image-text-to-text model with multimodal capabilities. Understand and compare multimodal features, benchmarks, and capabilities."
+    }
+  ]
+}

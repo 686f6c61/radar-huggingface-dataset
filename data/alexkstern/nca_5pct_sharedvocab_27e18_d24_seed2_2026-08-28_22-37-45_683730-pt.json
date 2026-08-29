@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "alexkstern/nca_5pct_sharedvocab_27e18_d24_seed2_2026-08-28_22-37-45_683730-pt",
+  "slug": "alexkstern-nca_5pct_sharedvocab_27e18_d24_seed2_2026-08-28_22-37-45_683730-pt",
+  "author": "alexkstern",
+  "url": "https://huggingface.co/alexkstern/nca_5pct_sharedvocab_27e18_d24_seed2_2026-08-28_22-37-45_683730-pt",
+  "created_at": "2026-08-29T01:01:18.000Z",
+  "updated_at": "2026-08-29T01:02:15.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "nanochat",
+  "languages": [],
+  "tags": [
+    "nanochat",
+    "nanochat_gpt",
+    "pt_fineweb-nanochatbpe-20B",
+    "ppt_nca-paper-share20-2048-offset65536",
+    "seed_2",
+    "case_b",
+    "lr_trapezoid",
+    "depth_24",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 7864223169,
+  "storage_human": "7.9 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "nca_5pct_27e18_d24_seed2_2026-07-25_00-33-32_251500-pt",
+      "url": "https://huggingface.co/alexkstern/nca_5pct_27e18_d24_seed2_2026-07-25_00-33-32_251500-pt",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "code_5pct_27e18_d24_seed1_2026-08-02_06-33-02_312522-pt",
+      "url": "https://huggingface.co/alexkstern/code_5pct_27e18_d24_seed1_2026-08-02_06-33-02_312522-pt",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "OpenAI | Research & Deployment",
+      "url": "https://openai.com/",
+      "snippet": "We believe our research will eventually lead to artificial general intelligence, a system that can solve human-level problems."
+    },
+    {
+      "title": "SeedAtlas — Map and plan every Minecraft seed",
+      "url": "https://seedatlas.net/",
+      "snippet": "Minecraft seed maps, made clear Your Minecraft world, mapped and planned. Open any Java or Bedrock seed, understand every biome, locate structures, and plan a smarter journey before you load the world."
+    },
+    {
+      "title": "AIConfPaper: semantic search over accepted AI-conference papers",
+      "url": "https://aiconfpaper.com/",
+      "snippet": "Semantic search over millions of papers accepted at top AI conferences (NeurIPS, ICML, CVPR, ACL, and more)."
+    }
+  ]
+}

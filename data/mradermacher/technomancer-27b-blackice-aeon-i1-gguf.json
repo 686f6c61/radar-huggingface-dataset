@@ -5,7 +5,7 @@
   "author": "mradermacher",
   "url": "https://huggingface.co/mradermacher/Technomancer-27b-BlackICE-AEON-i1-GGUF",
   "created_at": "2026-08-27T19:39:54.000Z",
-  "updated_at": "2026-08-27T21:18:21.000Z",
+  "updated_at": "2026-08-28T07:00:10.000Z",
   "license": "mit",
   "license_family": "oss",
   "pipeline_tag": null,
@@ -39,8 +39,8 @@
   "trending_score": 0,
   "parameters": 27320697856,
   "parameters_human": "27.32B",
-  "storage_bytes": 39471840352,
-  "storage_human": "39.5 GB",
+  "storage_bytes": 218553752128,
+  "storage_human": "218.6 GB",
   "base_model": "ChonkE/Technomancer-27b-BlackICE-AEON",
   "formats": [
     "gguf"

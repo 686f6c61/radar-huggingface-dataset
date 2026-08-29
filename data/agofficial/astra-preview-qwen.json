@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "AGofficial/astra-preview-qwen",
+  "slug": "agofficial-astra-preview-qwen",
+  "author": "AGofficial",
+  "url": "https://huggingface.co/AGofficial/astra-preview-qwen",
+  "created_at": "2026-08-28T21:11:54.000Z",
+  "updated_at": "2026-08-28T21:52:55.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "en",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 4205751296,
+  "parameters_human": "4.21B",
+  "storage_bytes": 8424392928,
+  "storage_human": "8.4 GB",
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Alibaba Cloud Model Studio",
+      "url": "https://modelstudio.alibabacloud.com/",
+      "snippet": "Foundation for AI Innovation Accelerate deployment and scaling of Qwen, Wan, and more leading models on one secure Alibaba Cloud platform"
+    },
+    {
+      "title": "Qwen",
+      "url": "https://qwen.ai/home",
+      "snippet": "Qwen Studio is an AI assistant for everyone, powered by the Qwen series models. It&#x27;s free to use, open to all, and ready to help with creativity, collaboration, and endless possibilities."
+    },
+    {
+      "title": "GitHub - QwenLM/Qwen3-ASR: Qwen3-ASR is an open-source series of ASR ...",
+      "url": "https://github.com/QwenLM/Qwen3-ASR",
+      "snippet": "Qwen3-ASR is an open-source series of ASR models developed by the Qwen team at Alibaba Cloud, supporting stable multilingual speech/music/song recognition, language detection and timestamp predicti..."
+    },
+    {
+      "title": "Qwen Studio",
+      "url": "https://chat.qwen.ai/",
+      "snippet": "Qwen Studio is an official platform from Qwen that empowers both everyday users and developers with unified access to Qwen&#x27;s series of open-source and proprietary models. It offers comprehensive functionality spanning chatbots, image and video understanding, image generation and editing, document processing, tool utilization, voice and video chat, and artifacts."
+    },
+    {
+      "title": "OpenAI&#x27;s &#x27;Astra&#x27; Model Gets a Private Washington Preview",
+      "url": "https://singularity.kiwi/openai-astra-model-multi-agent-washington-2026/",
+      "snippet": "OpenAI privately previewed its next generation of AI models to policymakers and regulators in Washington, D.C. this week, according to The Information. The model family, tentatively named \"Astra,\" is designed for long-running, multi-agent tasks — a meaningful step beyond the GPT-5.6 series the company released in June and July."
+    }
+  ]
+}

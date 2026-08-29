@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "SZLHOLDINGS/szl-maskmod",
+  "slug": "szlholdings-szl-maskmod",
+  "author": "SZLHOLDINGS",
+  "url": "https://huggingface.co/SZLHOLDINGS/szl-maskmod",
+  "created_at": "2026-08-28T16:27:55.000Z",
+  "updated_at": "2026-08-28T23:04:21.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "kernels",
+  "languages": [],
+  "tags": [
+    "kernels",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "SZLHOLDINGS (SZL Holdings) - Hugging Face",
+      "url": "https://huggingface.co/SZLHOLDINGS/models",
+      "snippet": "Org profile for SZL Holdings on Hugging Face, the AI community building the future."
+    },
+    {
+      "title": "SZL Holdings · GitHub",
+      "url": "https://github.com/szl-holdings",
+      "snippet": "Governed AI infrastructure for inspectable decisions: source, runtime state, receipts, and proof boundaries. - SZL Holdings"
+    },
+    {
+      "title": "Models - Hugging Face",
+      "url": "https://huggingface.co/models?other=surrogate",
+      "snippet": "Explore machine learning models."
+    },
+    {
+      "title": "SZL Holdings Docs",
+      "url": "https://szl-holdings.github.io/docs-site/",
+      "snippet": "What is SZL? SZL Holdings builds governed-AI infrastructure: an anatomy of composable organs that turns a model from a thing that evaluates into an agent that acts under proof."
+    },
+    {
+      "title": "platform/docs/MODEL_POLICY_REGISTRY.md at main · szl-holdings ... - GitHub",
+      "url": "https://github.com/szl-holdings/platform/blob/main/docs/MODEL_POLICY_REGISTRY.md",
+      "snippet": "SZL Holdings — Model Policy Registry Overview The Model Policy Registry is a governed catalog of every AI model, tool, prompt, and workflow policy used in the platform. It ensures that AI usage is tracked, risk-tiered, and policy-compliant."
+    }
+  ]
+}

@@ -1,0 +1,77 @@
+{
+  "schema": 1,
+  "id": "SZLHOLDINGS/KHIPU-R2",
+  "slug": "szlholdings-khipu-r2",
+  "author": "SZLHOLDINGS",
+  "url": "https://huggingface.co/SZLHOLDINGS/KHIPU-R2",
+  "created_at": "2026-08-28T16:21:00.000Z",
+  "updated_at": "2026-08-28T23:04:12.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "peft",
+    "safetensors",
+    "qlora",
+    "governed-agent",
+    "proposal-only",
+    "research-only",
+    "szl-holdings",
+    "khipu",
+    "abstain-retrain",
+    "text-generation",
+    "conversational",
+    "en",
+    "base_model:Qwen/Qwen2.5-1.5B-Instruct",
+    "base_model:adapter:Qwen/Qwen2.5-1.5B-Instruct",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 159192662,
+  "storage_human": "159 MB",
+  "base_model": "Qwen/Qwen2.5-1.5B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "SZLHOLDINGS / KHIPU-R2 - insights-db.paloaltonetworks.com",
+      "url": "https://insights-db.paloaltonetworks.com/models/SZLHOLDINGS/KHIPU-R2/c0894771935c01bf3ec7d50cde9f9323901b8d2a/overview",
+      "snippet": "Discover potential threats in the SZLHOLDINGS / KHIPU-R2 model. Learn about the vulnerabilities that cause these threats, and explore security solutions by Palo Alto Networks Prisma AIRS."
+    },
+    {
+      "title": "SZLHOLDINGS (SZL Holdings) - Hugging Face",
+      "url": "https://huggingface.co/SZLHOLDINGS/models",
+      "snippet": "Org profile for SZL Holdings on Hugging Face, the AI community building the future."
+    },
+    {
+      "title": "Zhipu AI models, providers, and specs | Models.dev",
+      "url": "https://models.dev/labs/zhipuai/",
+      "snippet": "Z.ai&#x27;s GLM line focuses on open agentic engineering: long-horizon coding, terminal tasks, and hybrid reasoning at aggressive cost. Browse 17 models from Zhipu AI across 87 providers. Includes families like glm, glm-air, glm-flash; updated 2026-08-26; pricing; context windows."
+    },
+    {
+      "title": "rosie-platform - a Hugging Face Space by SZLHOLDINGS",
+      "url": "https://huggingface.co/spaces/SZLHOLDINGS/rosie-platform",
+      "snippet": "Khipu receipt DAG with QEC-governed ingress for governed AI"
+    },
+    {
+      "title": "SZL Holdings Docs",
+      "url": "https://szl-holdings.github.io/docs-site/",
+      "snippet": "SZL Holdings builds governed-AI infrastructure: an anatomy of composable organs that turns a model from a thing that evaluates into an agent that acts under proof."
+    }
+  ]
+}

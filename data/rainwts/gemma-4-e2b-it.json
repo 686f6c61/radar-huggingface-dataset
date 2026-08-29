@@ -29,8 +29,8 @@
   "trending_score": 0,
   "parameters": 5123178051,
   "parameters_human": "5.12B",
-  "storage_bytes": 30836389622,
-  "storage_human": "30.8 GB",
+  "storage_bytes": 10278791544,
+  "storage_human": "10.3 GB",
   "base_model": "google/gemma-4-E2B",
   "formats": [
     "safetensors"

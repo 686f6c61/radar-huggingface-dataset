@@ -25,8 +25,8 @@
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
-  "storage_bytes": 1730523924,
-  "storage_human": "1.7 GB",
+  "storage_bytes": 924024113,
+  "storage_human": "924 MB",
   "base_model": "distilbert-base-uncased-finetuned-sst-2-english",
   "formats": [
     "onnx"

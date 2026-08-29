@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "SZLHOLDINGS/szl-nemo",
+  "slug": "szlholdings-szl-nemo",
+  "author": "SZLHOLDINGS",
+  "url": "https://huggingface.co/SZLHOLDINGS/szl-nemo",
+  "created_at": "2026-07-11T08:24:18.000Z",
+  "updated_at": "2026-08-28T23:03:44.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "sklearn",
+  "languages": [],
+  "tags": [
+    "sklearn",
+    "joblib",
+    "surrogate",
+    "recipe-conformance",
+    "szl-holdings",
+    "doctrine-v11",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 5,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 30132,
+  "storage_human": "30132 B",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "SZL-Nemo — Sovereign Governed Agent Model · SZL Holdings",
+      "url": "https://a-11-oy.com/nemo",
+      "snippet": "SZL-Nemo: an identity-bound local inference recipe built on NVIDIA Nemotron 3 Nano 4B, with governed routing and signed receipts. The recipe is not an SZL fine-tune; readiness and quality are reported separately."
+    },
+    {
+      "title": "SZLHOLDINGS/szl-nemo · fix: classify szl-nemo as an Ollama recipe, not ...",
+      "url": "https://huggingface.co/SZLHOLDINGS/szl-nemo/discussions/1",
+      "snippet": "Renames the standard Ollama Modelfile to stop false NeMo library inference, adds a registry/layer digest manifest, and clarifies the recipe/upstream-license boundary. No weights or measured benchma..."
+    },
+    {
+      "title": "a11oy/model_release/szl-nemo at main · szl-holdings/a11oy",
+      "url": "https://github.com/szl-holdings/a11oy/tree/main/model_release/szl-nemo",
+      "snippet": "a11oy — full orchestrator application (Command Center, Five Superpowers, Warhacker, Observability, Wires, Mesh, Formulas, Evidence, LLM Router). Signed-receipt ..."
+    },
+    {
+      "title": "SZL Holdings · GitHub",
+      "url": "https://github.com/szl-holdings",
+      "snippet": "Governed AI infrastructure for inspectable decisions: source, runtime state, receipts, and proof boundaries. - SZL Holdings"
+    },
+    {
+      "title": "Developer Hub · SZL Holdings",
+      "url": "https://holdings.a-11-oy.com/docs-site/developers/",
+      "snippet": "SZL Holdings builds a formally-verified governance gate for agentic AI. This section is the developer-facing entry point: quickstart, full API reference, MCP integration, and runnable examples. Build your own \"organ\" on the same substrate the shipping flagships use."
+    }
+  ]
+}

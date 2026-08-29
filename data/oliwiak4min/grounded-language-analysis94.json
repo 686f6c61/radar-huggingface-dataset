@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "oliwiak4min/grounded-language-analysis94",
+  "slug": "oliwiak4min-grounded-language-analysis94",
+  "author": "oliwiak4min",
+  "url": "https://huggingface.co/oliwiak4min/grounded-language-analysis94",
+  "created_at": "2026-08-28T23:05:55.000Z",
+  "updated_at": "2026-08-28T23:06:41.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "transformer",
+    "research-notes",
+    "grounded-language",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Introducing the most grounded language model in the world - Contextual AI",
+      "url": "https://contextual.ai/blog/introducing-grounded-language-model",
+      "snippet": "Today, we&#x27;re introducing our Grounded Language Model (GLM), the most grounded language model in the world. With state-of-the-art performance on FACTS (the leading groundedness benchmark) and our customer datasets, the GLM is the single best language model for RAG and agentic use cases for which minimizing hallucinations is critical."
+    },
+    {
+      "title": "[2210.05359] Mind&#x27;s Eye: Grounded Language Model Reasoning through ...",
+      "url": "https://arxiv.org/abs/2210.05359",
+      "snippet": "Successful and effective communication between humans and AI relies on a shared experience of the world. By training solely on written text, current language models (LMs) miss the grounded experience of humans in the real-world -- their failure to relate language to the physical world causes knowledge to be misrepresented and obvious mistakes in their reasoning. We present Mind&#x27;s Eye, a ..."
+    },
+    {
+      "title": "Best AI Models June 2026: Ranked Leaderboard & Winners",
+      "url": "https://www.buildfastwithai.com/blogs/best-ai-models-june-2026-leaderboard",
+      "snippet": "Best AI Models — June 2026 Leaderboard: Ranked, Compared, Honest Verdicts Claude Opus 4.8 took the #1 spot on the Artificial Analysis Intelligence Index on May 28, 2026. Score: 61.4. That makes it the first model to break above 60 by a clean margin — and the first time since GPT-5.5&#x27;s April release that Anthropic has held the top of the Index."
+    },
+    {
+      "title": "Grounding Gaps in Language Model Generations - ACL Anthology",
+      "url": "https://aclanthology.org/2024.naacl-long.348/",
+      "snippet": "To understand the roots of the identified grounding gap, we examine the role of instruction tuning and preference optimization, finding that training on contemporary preference data leads to a reduction in generated grounding acts. Altogether, we highlight the need for more research investigating conversational grounding in human-AI interaction."
+    },
+    {
+      "title": "Large Language Models (LLMs) with Google AI | Google Cloud",
+      "url": "https://cloud.google.com/ai/llms",
+      "snippet": "What large language model services does Google Cloud offer? Agent Studio on Gemini Enterprise Agent Platform: Gives you access to over 200 large generative AI models so you can test, tune, and deploy them for use in your AI-powered applications."
+    }
+  ]
+}

@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "Islamamro/emotion-aurora-islamamro",
+  "slug": "islamamro-emotion-aurora-islamamro",
+  "author": "Islamamro",
+  "url": "https://huggingface.co/Islamamro/emotion-aurora-islamamro",
+  "created_at": "2026-08-28T23:15:37.000Z",
+  "updated_at": "2026-08-28T23:30:28.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "distilbert",
+    "aurora",
+    "islamamro",
+    "text-classification",
+    "dataset:SetFit/emotion",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 66958086,
+  "parameters_human": "67.0M",
+  "storage_bytes": 267844872,
+  "storage_human": "268 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "islamamro · GitHub",
+      "url": "https://github.com/islamamro",
+      "snippet": "islamamro has one repository available. Follow their code on GitHub."
+    },
+    {
+      "title": "Aurora (AI model) — Grokipedia",
+      "url": "https://grokipedia.com/page/Aurora_AI_model",
+      "snippet": "Aurora is an autoregressive mixture-of-experts AI image generation model developed by xAI, released on December 9, 2024. It powers Grok&#x27;s image generation capabilities and serves as the foundational m"
+    },
+    {
+      "title": "Introducing the Aurora Model: - creatify.ai",
+      "url": "https://creatify.ai/introducing-aurora",
+      "snippet": "The avatar&#x27;s face and body stay on-model (no morphing into someone else or drifting off-model) thanks to Aurora&#x27;s design. There&#x27;s no specialized setup needed; a casual smartphone photo or even an AI-drawn character portrait is enough to unleash Aurora&#x27;s capabilities."
+    },
+    {
+      "title": "Aurora xAI AI Image Model Explained | Blog Picasso IA",
+      "url": "https://blog.picassoia.com/aurora-xai-ai-image-model-explained",
+      "snippet": "Aurora is the AI image generation model powering xAI&#x27;s Grok platform. Built on a diffusion architecture and trained on massive datasets, it produces photorealistic images from text prompts. This article breaks down how Aurora works, its real-world capabilities, where it falls short, and how it compares to today&#x27;s most powerful text-to-image models."
+    },
+    {
+      "title": "Aurora - AI Pro Playbook",
+      "url": "https://aiproplaybook.com/tools/aurora-xai",
+      "snippet": "Aurora is xAI&#x27;s native image generation model, integrated directly into the Grok chatbot and the X (Twitter) platform. It generates images through conversational prompts within the Grok interface."
+    }
+  ]
+}

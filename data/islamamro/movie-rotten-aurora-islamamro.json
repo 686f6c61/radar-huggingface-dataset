@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "Islamamro/movie-rotten-aurora-islamamro",
+  "slug": "islamamro-movie-rotten-aurora-islamamro",
+  "author": "Islamamro",
+  "url": "https://huggingface.co/Islamamro/movie-rotten-aurora-islamamro",
+  "created_at": "2026-08-28T23:22:07.000Z",
+  "updated_at": "2026-08-28T23:31:00.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "distilbert",
+    "aurora",
+    "islamamro",
+    "text-classification",
+    "dataset:cornell-movie-review-data/rotten_tomatoes",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 66955010,
+  "parameters_human": "67.0M",
+  "storage_bytes": 267832560,
+  "storage_human": "268 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Aurora&#x27;s Sunrise | Rotten Tomatoes",
+      "url": "https://www.rottentomatoes.com/m/auroras_sunrise",
+      "snippet": "Discover reviews, ratings, and trailers for Aurora&#x27;s Sunrise on Rotten Tomatoes. Stay updated with critic and audience scores today!"
+    },
+    {
+      "title": "Rotten Tomatoes: Movies | TV Shows | Movie Trailers | Reviews",
+      "url": "https://www.rottentomatoes.com/",
+      "snippet": "Rotten Tomatoes, home of the Tomatometer, is the most trusted measurement of quality for Movies & TV. The definitive site for Reviews, Trailers, Showtimes, and Tickets"
+    },
+    {
+      "title": "islamamro · GitHub",
+      "url": "https://github.com/islamamro",
+      "snippet": "islamamro has one repository available. Follow their code on GitHub."
+    },
+    {
+      "title": "Aurora (2025) - IMDb",
+      "url": "https://www.imdb.com/title/tt28490726/",
+      "snippet": "Aurora: Directed by Andres Maimik, Rain Tolk. With Maarja Johanna Mägi, Ott Kartau, Jörgen Liik, Kersti Heinloo. Aurora, the daughter of a religious leader, enters into a secret affair that changes her life. She tries to please everyone but when it&#x27;s time for a lavish wedding anniversary celebration, an uninvited guest arrives."
+    },
+    {
+      "title": "Aurora (2024) | Rotten Tomatoes",
+      "url": "https://www.rottentomatoes.com/m/aurora_2024",
+      "snippet": "Discover reviews, ratings, and trailers for Aurora (2024) on Rotten Tomatoes. Stay updated with critic and audience scores today!"
+    }
+  ]
+}

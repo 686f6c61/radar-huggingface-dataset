@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "chanjerry/contrastive-learning-analysis",
+  "slug": "chanjerry-contrastive-learning-analysis",
+  "author": "chanjerry",
+  "url": "https://huggingface.co/chanjerry/contrastive-learning-analysis",
+  "created_at": "2026-08-28T23:23:37.000Z",
+  "updated_at": "2026-08-28T23:23:46.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "transformer",
+    "research-notes",
+    "contrastive-learning",
+    "license:cc-by-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 16576,
+  "parameters_human": "16576",
+  "storage_bytes": 66784,
+  "storage_human": "66784 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "A comprehensive survey on contrastive learning - ScienceDirect",
+      "url": "https://www.sciencedirect.com/science/article/pii/S0925231224014164",
+      "snippet": "Contrastive Learning is self-supervised representation learning by training a model to differentiate between similar and dissimilar samples. It has been shown to be effective and has gained significant attention in various computer vision and natural language processing tasks. In this paper, we comprehensively and systematically sort out the main ideas, recent developments and application ..."
+    },
+    {
+      "title": "Contrastive Learning: How Models Learn by Comparison",
+      "url": "https://www.datacamp.com/tutorial/contrastive-learning",
+      "snippet": "Contrastive learning is a way to train models by showing them pairs of examples and teaching them what&#x27;s similar and what&#x27;s different. Instead of using labeled data, the model learns from the structure of the data itself. Over time, it builds representations that group similar things together and separate dissimilar ones."
+    },
+    {
+      "title": "Visualizing and Understanding Contrastive Learning - arXiv.org",
+      "url": "https://arxiv.org/html/2206.09753v3",
+      "snippet": "The aim of contrastive learning is to maximize the similarity between positive inputs while minimizing it between negative ones. Recently, contrastive learning has revolutionized the field of model pretraining [2], [3], [4], [5], which involves learning representations from large amounts of unlabeled data."
+    },
+    {
+      "title": "A Systematic Review of Contrastive Learning in Medical AI ... - MDPI",
+      "url": "https://www.mdpi.com/2306-5354/13/2/176",
+      "snippet": "This paper presents a comprehensive review of contrastive learning in medical AI, highlighting its theoretical foundations, methodological developments, and practical applications in medical imaging, electronic health records, physiological signal analysis, and genomics."
+    },
+    {
+      "title": "chny-adav/study-contrastive-learning · Hugging Face",
+      "url": "https://huggingface.co/chny-adav/study-contrastive-learning",
+      "snippet": "Notes on Contrastive Learning Repository summary Reading notes and an experiment sketch for Contrastive Learning. The repository emphasizes what still needs to be tested instead of manufacturing scores or release claims."
+    }
+  ]
+}

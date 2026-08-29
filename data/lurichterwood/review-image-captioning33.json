@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "lurichterwood/review-image-captioning33",
+  "slug": "lurichterwood-review-image-captioning33",
+  "author": "lurichterwood",
+  "url": "https://huggingface.co/lurichterwood/review-image-captioning33",
+  "created_at": "2026-08-29T00:26:52.000Z",
+  "updated_at": "2026-08-29T00:27:00.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "transformer",
+    "research-notes",
+    "image-captioning",
+    "license:cc-by-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 49600,
+  "parameters_human": "49600",
+  "storage_bytes": 198880,
+  "storage_human": "198880 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "lurichterwood/review-image-captioning33 · Hugging Face",
+      "url": "https://huggingface.co/lurichterwood/review-image-captioning33",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "lurichterwood (Luca) - Hugging Face",
+      "url": "https://huggingface.co/lurichterwood/models",
+      "snippet": "lurichterwood&#x27;s models1 Sort: Recently updated lurichterwood/model_241386697_albef_base Updated 4 days ago"
+    },
+    {
+      "title": "AI Image Detector | Check AI-Generated Images Online",
+      "url": "https://imageaichecker.com/ai-image-detector/",
+      "snippet": "Use this AI image detector to check photos, artwork, product images, and social posts for AI-generated signals, metadata clues, and review limits."
+    },
+    {
+      "title": "AI Image Captioner Free — Generate Captions from Images | PublicSoftTools",
+      "url": "https://www.publicsofttools.com/tools/ai-image-captioner",
+      "snippet": "Upload any image and get an AI-generated caption. Free, no signup. ViT-GPT2 runs entirely in your browser — images never leave your device."
+    },
+    {
+      "title": "AI Image Detector - Check AI Generated Images | Ryter Pro",
+      "url": "https://www.ryter.pro/ai-image-detector",
+      "snippet": "Run visual analysis The AI image detector reviews signals associated with generated images, including image patterns, metadata clues, and model confidence."
+    }
+  ]
+}

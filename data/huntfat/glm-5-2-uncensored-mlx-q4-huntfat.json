@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "Huntfat/GLM-5.2-Uncensored-MLX-Q4-huntfat",
+  "slug": "huntfat-glm-5-2-uncensored-mlx-q4-huntfat",
+  "author": "Huntfat",
+  "url": "https://huggingface.co/Huntfat/GLM-5.2-Uncensored-MLX-Q4-huntfat",
+  "created_at": "2026-08-28T20:44:14.000Z",
+  "updated_at": "2026-08-28T20:44:14.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "glm_moe_dsa",
+    "base_model:zai-org/GLM-5.2",
+    "base_model:quantized:zai-org/GLM-5.2",
+    "4-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 116253195264,
+  "parameters_human": "116.25B",
+  "storage_bytes": 418341538972,
+  "storage_human": "418.3 GB",
+  "base_model": "zai-org/GLM-5.2",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": true,
+  "removed_at": "2026-08-29T02:25:14.971Z",
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Uncensored MLX GLM 5.2 - a jeweled Collection - Hugging Face",
+      "url": "https://huggingface.co/collections/jeweled/uncensored-mlx-glm-52",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "jeweled/GLM-5.2-Uncensored-MLX-Q4 · Hugging Face",
+      "url": "https://huggingface.co/jeweled/GLM-5.2-Uncensored-MLX-Q4",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GLM 5.2 - Uncensored AI",
+      "url": "https://uncensored.com/models/glm-5-2",
+      "snippet": "GLM 5.2 by Z.AI — an open-weight reasoning model with a 1M-token context, excellent for roleplay, writing, and complex multi-step tasks."
+    },
+    {
+      "title": "Eni/Jailbreak-Guide/Other LLMs/GLM/GLM 5.2/README.md at main ... - GitHub",
+      "url": "https://github.com/Tondarron/Eni/blob/main/Jailbreak-Guide/Other%20LLMs/GLM/GLM%205.2/README.md",
+      "snippet": "Model String: glm-5.2 [1m] Context Window: 1M tokens Strengths: Nearly entirely uncensored. Highly capable instruction following and deep character immersion. Upgraded coding capabilities over GLM 5.1. Access: Currently exclusive to the Coding Plan (Team tier). Not available on the general API."
+    },
+    {
+      "title": "Best Uncensored Local LLMs by VRAM Tier (2026) | InsiderLLM",
+      "url": "https://insiderllm.com/guides/best-uncensored-local-llms/",
+      "snippet": "📚 Related: VRAM Requirements for Local LLMs · Qwen Models Guide · Mistral & Mixtral Guide · Best LLMs for Writing Ask a standard instruct model to write a scene where a character dies on-page and you&#x27;ll get a polite refusal. Ask it to walk through the chemistry of explosives for a novel and it&#x27;ll lecture you about safety. Ask it to roleplay a villain and it&#x27;ll break character mid ..."
+    }
+  ]
+}

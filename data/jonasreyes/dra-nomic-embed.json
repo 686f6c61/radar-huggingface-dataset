@@ -1,0 +1,76 @@
+{
+  "schema": 1,
+  "id": "jonasreyes/dra-nomic-embed",
+  "slug": "jonasreyes-dra-nomic-embed",
+  "author": "jonasreyes",
+  "url": "https://huggingface.co/jonasreyes/dra-nomic-embed",
+  "created_at": "2026-08-28T23:30:36.000Z",
+  "updated_at": "2026-08-28T23:50:50.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "feature-extraction",
+  "library": "onnx",
+  "languages": [
+    "es",
+    "en"
+  ],
+  "tags": [
+    "onnx",
+    "nomic_bert",
+    "feature-extraction",
+    "embeddings",
+    "nomic-embed-text",
+    "sentence-similarity",
+    "cpu-optimized",
+    "int8",
+    "quantized",
+    "custom_code",
+    "es",
+    "en",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 685495087,
+  "storage_human": "685 MB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Nomic Embed: Training a Reproducible Long Context Text Embedder",
+      "url": "https://arxiv.org/html/2402.01613v2",
+      "snippet": "Abstract This technical report describes the training of nomic-embed-text-v1, the first fully reproducible, open-source, open-weights, open-data, 8192 context length English text embedding model that outperforms both OpenAI Ada-002 and OpenAI text-embedding-3-small on the short-context MTEB benchmark and the long context LoCo benchmark. We release the training code and model weights under an ..."
+    },
+    {
+      "title": "nomic-ai/nomic-embed-multimodal-3b · Hugging Face",
+      "url": "https://huggingface.co/nomic-ai/nomic-embed-multimodal-3b",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "README.md · nomic-ai/nomic-embed-text-v1 at main",
+      "url": "https://huggingface.co/nomic-ai/nomic-embed-text-v1/blob/main/README.md",
+      "snippet": "Instructions to use nomic-ai/nomic-embed-text-v1 with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Libraries sentence-transformers How to use nomic-ai/nomic-embed-text-v1 with sentence-transformers:"
+    },
+    {
+      "title": "Nomic Embed: Training a Reproducible Long Context Text Embedder",
+      "url": "https://arxiv.org/pdf/2402.01613",
+      "snippet": "Abstract This technical report describes the training of nomic-embed-text-v1, the first fully repro-ducible, open-source, open-weights, open-data, 8192 context length English text embed-ding model that outperforms both OpenAI Ada-002 and OpenAI text-embedding-3-small on the short-context MTEB benchmark and the long context LoCo benchmark. We release the training code and model weights under an ..."
+    },
+    {
+      "title": "NomicEmbed: TrainingaReproducibleLongContextText Embedder",
+      "url": "https://openreview.net/pdf?id=IPmzyQSiQE",
+      "snippet": "Abstract This technical report describes the training of nomic-embed-text-v1, the first fully repro-ducible, open-source, open-weights, open-data, 8192 context length English text embed-ding model that outperforms both OpenAI Ada-002 and OpenAI text-embedding-3-small on the short-context MTEB benchmark and the long context LoCo benchmark. We release the training code and model weights under an ..."
+    }
+  ]
+}

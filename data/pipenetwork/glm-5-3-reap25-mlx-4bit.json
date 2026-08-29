@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "pipenetwork/GLM-5.3-REAP25-MLX-4bit",
+  "slug": "pipenetwork-glm-5-3-reap25-mlx-4bit",
+  "author": "pipenetwork",
+  "url": "https://huggingface.co/pipenetwork/GLM-5.3-REAP25-MLX-4bit",
+  "created_at": "2026-08-28T22:00:10.000Z",
+  "updated_at": "2026-08-28T22:34:16.000Z",
+  "license": "glm-5.3",
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "mlx",
+  "languages": [],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "glm_moe_dsa",
+    "apple-silicon",
+    "mixture-of-experts",
+    "4-bit",
+    "text-generation",
+    "conversational",
+    "base_model:zai-org/GLM-5.3",
+    "base_model:quantized:zai-org/GLM-5.3",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 88078201152,
+  "parameters_human": "88.08B",
+  "storage_bytes": 316643842270,
+  "storage_human": "316.6 GB",
+  "base_model": "zai-org/GLM-5.3",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GLM-5.3 MLX - a pipenetwork Collection - Hugging Face",
+      "url": "https://huggingface.co/collections/pipenetwork/glm-53-mlx",
+      "snippet": "Apple Silicon (MLX) builds of GLM-5.3 (744B) with a fixed glm_moe_dsa runtime: github.com/PipeNetwork/glm53-mlx"
+    },
+    {
+      "title": "GitHub - PipeNetwork/glm53-mlx: MLX (Apple Silicon) runtime ...",
+      "url": "https://github.com/PipeNetwork/glm53-mlx",
+      "snippet": "MLX (Apple Silicon) runtime + quantization for GLM-5.3 (744B glm_moe_dsa): fixed shared-indexer layers, validated against transformers - PipeNetwork/glm53-mlx"
+    },
+    {
+      "title": "GLM-5.3 & GLM-5.2 & GLM-5.1 & GLM-5 - GitHub",
+      "url": "https://github.com/zai-org/GLM-5",
+      "snippet": "GLM-5.3 uses the same base model as GLM-5.2 — every gain comes from post-training. Compared with GLM-5.2, it is much better at complex coding and long-horizon tasks: Stronger Coding: GLM-5.3 is the most capable open-weights model for coding, with a 50% improvement over GLM-5.2 on our in-house Z.ai ..."
+    },
+    {
+      "title": "GLM-5.3 - openlm.ai",
+      "url": "https://openlm.ai/glm-5.5/",
+      "snippet": "GLM-5.3-Flash is the first natively multimodal model in the GLM-5 series. With 320B total parameters and just 18B active parameters, it outperforms GLM-5.2 across benchmarks and real-world workloads at one-tenth the price, while approaching Claude Opus 4.8 on coding and agentic benchmarks."
+    },
+    {
+      "title": "README.md · pipenetwork/GLM-5.2-REAP25-MLX-4bit at main",
+      "url": "https://huggingface.co/pipenetwork/GLM-5.2-REAP25-MLX-4bit/blob/main/README.md",
+      "snippet": "REAP expert-pruned + 4-bit MLX conversion of zai-org/GLM-5.2. Keeps the 192 most-salient experts per layer (of 256) → ~572B params, smaller/faster than the full model."
+    }
+  ]
+}

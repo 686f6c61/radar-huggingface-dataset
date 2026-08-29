@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "williambakerman/poolformer-multitask-int4",
+  "slug": "williambakerman-poolformer-multitask-int4",
+  "author": "williambakerman",
+  "url": "https://huggingface.co/williambakerman/poolformer-multitask-int4",
+  "created_at": "2026-08-28T20:32:40.000Z",
+  "updated_at": "2026-08-28T20:32:49.000Z",
+  "license": "bsd-3-clause",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "poolformer",
+    "pytorch",
+    "multitask",
+    "license:bsd-3-clause",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 49600,
+  "parameters_human": "49600",
+  "storage_bytes": 198880,
+  "storage_human": "198880 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - sail-sg/poolformer: PoolFormer: MetaFormer Is Actually What ...",
+      "url": "https://github.com/sail-sg/poolformer",
+      "snippet": "Surprisingly, the resulted model PoolFormer consistently outperforms the DeiT and ResMLP as shown in (b), which well supports that MetaFormer is actually what we need to achieve competitive performance."
+    },
+    {
+      "title": "poolformer/README.md at main · sail-sg/poolformer · GitHub",
+      "url": "https://github.com/sail-sg/poolformer/blob/main/README.md",
+      "snippet": "Surprisingly, the resulted model PoolFormer consistently outperforms the DeiT and ResMLP as shown in (b), which well supports that MetaFormer is actually what we need to achieve competitive performance. RSB-ResNet in (b) means the results are from \"ResNet Strikes Back\" where ResNet is trained with improved training procedure for 300 epochs."
+    },
+    {
+      "title": "PoolFormer - Hugging Face",
+      "url": "https://huggingface.co/docs/transformers/v4.25.1/model_doc/poolformer",
+      "snippet": "PoolFormer Overview The PoolFormer model was proposed in MetaFormer is Actually What You Need for Vision by Sea AI Labs. Instead of designing complicated token mixer to achieve SOTA performance, the target of this work is to demonstrate the competence of transformer models largely stem from the general architecture MetaFormer. The abstract from the paper is the following: Transformers have ..."
+    },
+    {
+      "title": "sail/poolformer_m48 · Hugging Face",
+      "url": "https://huggingface.co/sail/poolformer_m48",
+      "snippet": "PoolFormer (M48 model) PoolFormer model trained on ImageNet-1k (1 million images, 1,000 classes) at resolution 224x224. It was first introduced in the paper MetaFormer is Actually What You Need for Vision by Yu et al. and first released in this repository."
+    },
+    {
+      "title": "[2510.02206] Poolformer: Recurrent Networks with Pooling for Long ...",
+      "url": "https://arxiv.org/abs/2510.02206",
+      "snippet": "We introduce Poolformer, a sequence-to-sequence model that replaces self-attention with recurrent layers and incorporates pooling operations to reduce sequence length. Poolformer is defined recursively using SkipBlocks, which contain residual blocks, a down-pooling layer, a nested SkipBlock, an up-pooling layer, and additional residual blocks."
+    }
+  ]
+}

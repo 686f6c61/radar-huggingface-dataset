@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "yuhengtu-bytedance/sfm_baseline_filtered-2k_3k_4k_merge",
+  "slug": "yuhengtu-bytedance-sfm_baseline_filtered-2k_3k_4k_merge",
+  "author": "yuhengtu-bytedance",
+  "url": "https://huggingface.co/yuhengtu-bytedance/sfm_baseline_filtered-2k_3k_4k_merge",
+  "created_at": "2026-08-29T01:09:17.000Z",
+  "updated_at": "2026-08-29T01:10:16.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gpt_neox",
+    "text-generation",
+    "mergekit",
+    "merge",
+    "arxiv:2203.05482",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 6856253440,
+  "parameters_human": "6.86B",
+  "storage_bytes": 13712553184,
+  "storage_human": "13.7 GB",
+  "base_model": "",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "sfm-baseline-filtered-4k-5k-6k-avg - Hugging Face",
+      "url": "https://huggingface.co/yuhengtu-bytedance/sfm-baseline-filtered-4k-5k-6k-avg",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "sfm-baseline-filtered-4k-5k-6k-avg - FriendliAI",
+      "url": "https://friendli.ai/models/yuhengtu-bytedance/sfm-baseline-filtered-4k-5k-6k-avg",
+      "snippet": "Deploy sfm-baseline-filtered-4k-5k-6k-avg with low-latency inference on FriendliAI. Get scalable API serving, high throughput, and production-grade reliability for AI agents."
+    },
+    {
+      "title": "Yuheng Tu",
+      "url": "https://yuhengtu.github.io/",
+      "snippet": "Fantastic Bugs and Where to Find Them in AI Benchmarks Sang Truong*, Yuheng Tu*, Michael Hardy*, Anka Reuel, Zeyu Tang, Jirayu Burapacheep, Jonathan Perera, Chibuike Uwakwe, Benjamin W. Domingue, Nick Haber, Sanmi Koyejo"
+    },
+    {
+      "title": "ByteDance (ByteDance) - Hugging Face",
+      "url": "https://huggingface.co/ByteDance",
+      "snippet": "Org profile for ByteDance on Hugging Face, the AI community building the future."
+    },
+    {
+      "title": "Bytedance Inc. - GitHub",
+      "url": "https://github.com/bytedance",
+      "snippet": "An open-source long-horizon SuperAgent harness that researches, codes, and creates. With the help of sandboxes, memories, tools, skill, subagents and message gateway, it handles different levels of… Python 81k 11.2k"
+    }
+  ]
+}

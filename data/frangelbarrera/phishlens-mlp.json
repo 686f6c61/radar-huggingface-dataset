@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "frangelbarrera/phishlens-mlp",
+  "slug": "frangelbarrera-phishlens-mlp",
+  "author": "frangelbarrera",
+  "url": "https://huggingface.co/frangelbarrera/phishlens-mlp",
+  "created_at": "2026-08-29T00:17:03.000Z",
+  "updated_at": "2026-08-29T00:18:32.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "tabular-classification",
+  "library": "keras",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "keras",
+    "cybersecurity",
+    "phishing-detection",
+    "url-classification",
+    "binary-classification",
+    "defensive-security",
+    "tabular-classification",
+    "en",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1635,
+  "storage_human": "1635 B",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "PhishLens — URL Risk Analysis - a Hugging Face Space by frangelbarrera",
+      "url": "https://huggingface.co/spaces/frangelbarrera/phishlens",
+      "snippet": "PhishLens A compact phishing-URL classifier that analyzes the structure of a URL without visiting it."
+    },
+    {
+      "title": "PhishLens | Defensive browser extension and FastAPI backend for ...",
+      "url": "https://juancardesa.github.io/PhishLens/",
+      "snippet": "PhishLens is a defensive Chrome extension and FastAPI backend for explainable phishing risk analysis in real time. It combines local URL heuristics, privacy-preserving DOM signals, optional PhishTank threat intelligence, backend-side TLS certificate inspection, and an optional machine learning model."
+    },
+    {
+      "title": "GitHub - shovonmondalbk/PhishLens: PhishLens is a multimodal ...",
+      "url": "https://github.com/shovonmondalbk/PhishLens",
+      "snippet": "PhishLens is a multimodal, explainable AI framework for real-time phishing website detection. The system combines three specialized analyzers - URL (DeBERTa), HTML (ELECTRA), and Visual (CLIP + OCR..."
+    },
+    {
+      "title": "GitHub - hallleedustin-alt/PhishLens: Explainable phishing email triage ...",
+      "url": "https://github.com/hallleedustin-alt/PhishLens",
+      "snippet": "PhishLens is a local-first Python application that combines TF-IDF natural-language features, Logistic Regression, explainable phishing indicators, configurable risk thresholds, batch analysis, and structured audit output."
+    },
+    {
+      "title": "PhishLens: A Browser-Embedded AI Extension for Semantic and Structural ...",
+      "url": "https://ieeexplore.ieee.org/document/11522320",
+      "snippet": "PhishLens: A Browser-Embedded AI Extension for Semantic and Structural Phishing Analysis Abstract: Phishing attacks have decreasingly come one of the most current and dangerous enterprises in moment&#x27;s digital world. They take advantage of people&#x27;s vulnerabilities to get sensitive information, watchwords, banking details, and particular data."
+    }
+  ]
+}

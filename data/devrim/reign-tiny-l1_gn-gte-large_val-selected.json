@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "devrim/reign-tiny-l1_gn-gte-large_val-selected",
+  "slug": "devrim-reign-tiny-l1_gn-gte-large_val-selected",
+  "author": "devrim",
+  "url": "https://huggingface.co/devrim/reign-tiny-l1_gn-gte-large_val-selected",
+  "created_at": "2026-08-28T21:39:41.000Z",
+  "updated_at": "2026-08-28T21:39:47.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "feature-extraction",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "safetensors",
+    "reign",
+    "retrieval",
+    "long-documents",
+    "document-embeddings",
+    "feature-extraction",
+    "en",
+    "dataset:devrim/goodwiki_long_synthetic_ir",
+    "base_model:thenlper/gte-large",
+    "base_model:finetune:thenlper/gte-large",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 680768,
+  "parameters_human": "680768",
+  "storage_bytes": 2725368,
+  "storage_human": "3 MB",
+  "base_model": "thenlper/gte-large",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - sovereynai/reign: Your terminal gateway to decentralized AI—no ...",
+      "url": "https://github.com/sovereynai/reign",
+      "snippet": "Your terminal gateway to distributed AI. Reign lets you run AI inference across a network of GPU nodes—without managing infrastructure, paying for idle time, or vendor lock-in. Get instant access to language models and vision AI from your command line."
+    },
+    {
+      "title": "LLM Updates (August 2026) - AI Model Releases & Provider Activity",
+      "url": "https://lmmarketcap.com/llm-updates",
+      "snippet": "Track AI model releases, recently added endpoints, and provider update cadence across GPT, Claude, Gemini, DeepSeek, Llama, and 350+ models."
+    },
+    {
+      "title": "New AI Model Releases — August 2026 Timeline | LLM Gateway",
+      "url": "https://llmgateway.io/timeline",
+      "snippet": "16 AI models released in August 2026 so far — Qwen3.8 Flash, GLM-5.3 Flash — plus every major LLM release date. Updated daily."
+    },
+    {
+      "title": "LLM Leaderboard & AI Model Benchmarks — August 2026",
+      "url": "https://benchlm.ai/",
+      "snippet": "Compare 406 AI models across 406 benchmarks, with 228 ranked scores, source evidence, API pricing, context windows, runtime, and head-to-head pages."
+    },
+    {
+      "title": "gte-tiny: Text-to-Text model — overview, use cases, alternatives",
+      "url": "https://www.aimodels.fyi/models/huggingFace/gte-tiny-taylorai",
+      "snippet": "Overview gte-tiny is a sentence embedding model maintained by TaylorAI that maps text into a 384-dimensional dense vector space for tasks like semantic search, clustering, and text similarity. It is a knowledge-distilled version of thenlper/gte-small, reducing model size by roughly half while maintaining comparable performance. The architecture uses a BERT-based transformer with mean pooling ..."
+    }
+  ]
+}

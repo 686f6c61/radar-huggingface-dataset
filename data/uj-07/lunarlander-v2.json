@@ -5,7 +5,7 @@
   "author": "uj-07",
   "url": "https://huggingface.co/uj-07/LunarLander-V2",
   "created_at": "2026-08-27T09:37:20.000Z",
-  "updated_at": "2026-08-27T09:44:11.000Z",
+  "updated_at": "2026-08-28T13:13:06.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": "reinforcement-learning",
@@ -13,9 +13,10 @@
   "languages": [],
   "tags": [
     "stable-baselines3",
-    "LunarLander-v3",
+    "LunarLander-v2",
     "deep-reinforcement-learning",
     "reinforcement-learning",
+    "deep-rl-course",
     "model-index",
     "region:us"
   ],

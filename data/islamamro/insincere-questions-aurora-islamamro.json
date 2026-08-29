@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "Islamamro/insincere-questions-aurora-islamamro",
+  "slug": "islamamro-insincere-questions-aurora-islamamro",
+  "author": "Islamamro",
+  "url": "https://huggingface.co/Islamamro/insincere-questions-aurora-islamamro",
+  "created_at": "2026-08-28T23:21:20.000Z",
+  "updated_at": "2026-08-28T23:30:57.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "distilbert",
+    "aurora",
+    "islamamro",
+    "text-classification",
+    "dataset:SetFit/insincere-questions",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 66955010,
+  "parameters_human": "67.0M",
+  "storage_bytes": 267832560,
+  "storage_human": "268 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Watch this story by on Instagram before it disappears.",
+      "url": "https://www.instagram.com/stories/islamafro/3971795017647714377/",
+      "snippet": "3M Followers, 1,576 Following, 0 Posts"
+    },
+    {
+      "title": "Watch this story by on Instagram before it disappears.",
+      "url": "https://www.instagram.com/stories/islamafro/3970130173575591959/",
+      "snippet": "3M Followers, 1,575 Following, 0 Posts"
+    },
+    {
+      "title": "Watch this story by on Instagram before it disappears.",
+      "url": "https://www.instagram.com/stories/islamafro/3971005763518846605/",
+      "snippet": "3M Followers, 1,577 Following, 0 Posts"
+    },
+    {
+      "title": "Islam Question & Answer",
+      "url": "https://islamqa.info/en",
+      "snippet": "Singling out one day of the year for fasting, in celebration of Mawlid al-Nabi (the birth of Prophet Muhamamd), is an innovation (bid&#x27;ah) that is contrary to the Sunnah of the Prophet. For more, see the detailed answer."
+    },
+    {
+      "title": "islamamro · GitHub",
+      "url": "https://github.com/islamamro",
+      "snippet": "islamamro has one repository available. Follow their code on GitHub."
+    }
+  ]
+}

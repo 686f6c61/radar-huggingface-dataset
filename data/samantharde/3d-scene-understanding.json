@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "Samantharde/3d-scene-understanding",
+  "slug": "samantharde-3d-scene-understanding",
+  "author": "Samantharde",
+  "url": "https://huggingface.co/Samantharde/3d-scene-understanding",
+  "created_at": "2026-08-28T23:25:18.000Z",
+  "updated_at": "2026-08-28T23:25:28.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "transformer",
+    "research-notes",
+    "3d-scene-understanding",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 24832,
+  "parameters_human": "24832",
+  "storage_bytes": 99808,
+  "storage_human": "99808 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Scene understanding using vision language models",
+      "url": "https://learn.microsoft.com/en-us/industry/mobility/architecture/scene-understanding",
+      "snippet": "Explore how semantic search and autoannotations can enhance data management in the automotive industry, aiding autonomous driving development, for scene understanding."
+    },
+    {
+      "title": "Multi-Modal Data-Efficient 3D Scene Understanding for Autonomous Driving",
+      "url": "https://arxiv.org/html/2405.05258v2",
+      "snippet": "Efficient data utilization is crucial for advancing 3D scene understanding in autonomous driving, where reliance on heavily human-annotated LiDAR point clouds challenges fully supervised methods. Addressing this, our study extends into semi-supervised learning for LiDAR semantic segmentation, leveraging the intrinsic spatial priors of driving scenes and multi-sensor complements to augment the ..."
+    },
+    {
+      "title": "Meta&#x27;s SAM 3 and SAM 3D: AI That Sees, Understands, and ... - Medium",
+      "url": "https://medium.com/techcraft-chronicles/metas-sam-3-and-sam-3d-ai-that-sees-understands-and-rebuilds-your-world-0732932fb50b",
+      "snippet": "SAM 3 is Meta&#x27;s latest vision AI model that can detect, isolate, and track objects in both images and videos. But here&#x27;s what makes it different from older models: it understands natural language."
+    },
+    {
+      "title": "Meta&#x27;s SAM 3D: Bringing 3D Models to Life from a Single Image",
+      "url": "https://medium.com/@shouke.wei/metas-sam-3d-bringing-3d-models-to-life-from-a-single-image-0525f031044d",
+      "snippet": "Hosted APIs and cloud integrations for easier deployment without managing GPUs Conclusion Meta&#x27;s SAM 3D heralds a new era in 3D AI: one where 2D photos become living 3D models with minimal effort."
+    },
+    {
+      "title": "3D Scene Understanding at CVPR 2026",
+      "url": "https://scene-understanding.com/",
+      "snippet": "Overview The rapid evolution toward next-generation embodied AI has driven remarkable convergence across computer vision, graphics, and robotics, with growing emphasis on robust 3D understanding for in-the-wild and real-world applications. Recent breakthroughs have introduced powerful 3D foundational models that demonstrate unprecedented zero-shot generalization across diverse 3D ..."
+    }
+  ]
+}

@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "emilyusmith/text-image-retrieval-dev",
+  "slug": "emilyusmith-text-image-retrieval-dev",
+  "author": "emilyusmith",
+  "url": "https://huggingface.co/emilyusmith/text-image-retrieval-dev",
+  "created_at": "2026-08-29T00:16:32.000Z",
+  "updated_at": "2026-08-29T00:16:41.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "transformer",
+    "research-notes",
+    "text-image-retrieval",
+    "license:cc-by-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 16576,
+  "parameters_human": "16576",
+  "storage_bytes": 66784,
+  "storage_human": "66784 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "emilyusmith (Emily) - Hugging Face",
+      "url": "https://huggingface.co/emilyusmith/models",
+      "snippet": "emilyusmith&#x27;s models1 Sort: Recently updated emilyusmith/model_397522958_efficientformer_xlarge Updated 2 days ago"
+    },
+    {
+      "title": "Models.dev - An open-source database of AI models",
+      "url": "https://models.dev/",
+      "snippet": "Models.dev is a comprehensive open-source database of AI model specifications, pricing, and features."
+    },
+    {
+      "title": "Text-to-Image Leaderboard - Best AI Image Generators",
+      "url": "https://arena.ai/leaderboard/text-to-image",
+      "snippet": "Text-to-Image Arena 🏆Overall View overall rankings across text to image AI models."
+    },
+    {
+      "title": "LLM Leaderboard 2026: Compare 300+ Top AI Models by Intelligence, Speed ...",
+      "url": "https://llm-stats.com/leaderboards/llm-leaderboard",
+      "snippet": "The LLM Leaderboard — independent ranking of GPT, Claude, Gemini, Llama, DeepSeek and 300+ AI models by intelligence, speed and price. Filter by provider, license, modality and context window; sort by every benchmark. Composite LLM Stats Score updated continuously from public benchmarks and live API metrics."
+    },
+    {
+      "title": "image-text-retrieval · GitHub Topics · GitHub",
+      "url": "https://github.com/topics/image-text-retrieval",
+      "snippet": "The Paper List of Large Multi-Modality Model (Perception, Generation, Unification), Parameter-Efficient Finetuning, Vision-Language Pretraining, Conventional Image-Text Matching for Preliminary Insight."
+    }
+  ]
+}
