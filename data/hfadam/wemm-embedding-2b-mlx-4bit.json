@@ -1,0 +1,81 @@
+{
+  "schema": 1,
+  "id": "hfadam/WeMM-Embedding-2B-MLX-4bit",
+  "slug": "hfadam-wemm-embedding-2b-mlx-4bit",
+  "author": "hfadam",
+  "url": "https://huggingface.co/hfadam/WeMM-Embedding-2B-MLX-4bit",
+  "created_at": "2026-08-30T06:22:47.000Z",
+  "updated_at": "2026-08-30T07:05:01.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "feature-extraction",
+  "library": "mlx",
+  "languages": [
+    "zh",
+    "en"
+  ],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "qwen3_5",
+    "sentence-transformers",
+    "multimodal-embedding",
+    "text-embedding",
+    "image-embedding",
+    "video-embedding",
+    "mrl",
+    "feature-extraction",
+    "custom_code",
+    "zh",
+    "en",
+    "base_model:tencent/WeMM-Embedding-2B",
+    "base_model:quantized:tencent/WeMM-Embedding-2B",
+    "license:other",
+    "4-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 705222208,
+  "parameters_human": "705.2M",
+  "storage_bytes": 2027769059,
+  "storage_human": "2.0 GB",
+  "base_model": "tencent/WeMM-Embedding-2B",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - Tencent/WeMM-Embedding: WeMM-Embedding is a family of ...",
+      "url": "https://github.com/Tencent/WeMM-Embedding",
+      "snippet": "SentenceTransformer loads the model directly, so a Hugging Face model id such as tencent/WeMM-Embedding-2B also works in place of a local path. Text, image, and video inputs go through SentenceTransformer.encode (), and MRL is selected with --dimension."
+    },
+    {
+      "title": "tencent/WeMM-Embedding-2B · Hugging Face",
+      "url": "https://huggingface.co/tencent/WeMM-Embedding-2B",
+      "snippet": "WeMM-Embedding-2B is a universal multimodal embedding model built on Qwen3.5. It accepts text, images, videos, visual documents, and interleaved multimodal inputs, and returns a 2,048-dimensional L2-normalized embedding."
+    },
+    {
+      "title": "WeMM-Embedding - a tencent Collection - Hugging Face",
+      "url": "https://huggingface.co/collections/tencent/wemm-embedding",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "WeMM-Embedding: WeChat Multi-Modal Embedding Technical Report",
+      "url": "https://arxiv.org/html/2608.24053v1",
+      "snippet": "The family comprises 2B, 4B, and 9B variants and is trained in two stages: a large-scale multimodal alignment stage, followed by a refinement stage using curated data, fine-grained relevance supervision, and cross-scale knowledge transfer. Across extensive evaluations, WeMM-Embedding achieves leading performance on multiple public benchmarks."
+    },
+    {
+      "title": "WeMM-Embedding: WeChat Multi-Modal Embedding Technical Report",
+      "url": "https://arxiv.org/abs/2608.24053",
+      "snippet": "Universal multimodal embeddings are becoming a core component of modern AI systems, enabling heterogeneous content to be represented in a shared space for applications such as retrieval, recommendation, classification, and agentic systems. In this report, we present WeMM-Embedding, a family of universal multimodal embedding models supporting text, images, videos, visual documents, and ..."
+    }
+  ]
+}

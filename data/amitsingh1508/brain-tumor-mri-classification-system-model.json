@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "Amitsingh1508/brain-tumor-mri-classification-system-model",
+  "slug": "amitsingh1508-brain-tumor-mri-classification-system-model",
+  "author": "Amitsingh1508",
+  "url": "https://huggingface.co/Amitsingh1508/brain-tumor-mri-classification-system-model",
+  "created_at": "2026-08-30T09:34:30.000Z",
+  "updated_at": "2026-08-30T09:45:05.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 128172792,
+  "storage_human": "128 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Deep Learning Approaches for Brain Tumor Classification in MRI Scans ...",
+      "url": "https://www.mdpi.com/2076-3417/16/2/831",
+      "snippet": "This work presents the development and evaluation of Artificial Intelligence (AI) models for the automatic classification of brain tumors in Magnetic Resonance Imaging (MRI) scans. Several deep learning architectures were implemented and compared, including VGG-19, ResNet50, EfficientNetB3, Xception, MobileNetV2, DenseNet201, InceptionV3, Vision Transformer (ViT), and an Ensemble model. The ..."
+    },
+    {
+      "title": "LLM Leaderboard 2026: Compare 300+ Top AI Models by Intelligence, Speed ...",
+      "url": "https://llm-stats.com/leaderboards/llm-leaderboard",
+      "snippet": "The LLM Leaderboard — independent ranking of GPT, Claude, Gemini, Llama, DeepSeek and 300+ AI models by intelligence, speed and price. Filter by provider, license, modality and context window; sort by every benchmark. Composite LLM Stats Score updated continuously from public benchmarks and live API metrics."
+    },
+    {
+      "title": "GitHub - rbsvd/Brain_Tumor_MRI_Analysis--Classification_and ...",
+      "url": "https://github.com/rbsvd/Brain_Tumor_MRI_Analysis--Classification_and_Segmentation",
+      "snippet": "This repository contains two deep learning pipelines for brain tumor MRI analysis: Classification — Multi-model CNN using DenseNet-121 + InceptionV3 to classify MRI scans into Glioma, Meningioma, Pituitary tumor, and No Tumor categories. Segmentation — U-Net based tumor mask segmentation for locating tumor regions. Grad-CAM visualizations are included for explainable AI, helping clinicians ..."
+    },
+    {
+      "title": "A deep learning approach for brain tumor classification using MRI ...",
+      "url": "https://www.sciencedirect.com/science/article/pii/S0045790622003603",
+      "snippet": "Compared to earlier models, the second variant of their model obtains the highest training and testing accuracies of 98.51% and 84.19% on the Fighsare brain MRI dataset, respectively. Navid et al. provide another multi-class model for brain tumor classification based on a deep neural network [17]."
+    },
+    {
+      "title": "An automated deep learning framework for brain tumor ... - Nature",
+      "url": "https://www.nature.com/articles/s41598-025-02209-2",
+      "snippet": "The model ensured classification accuracy by demonstrating an accuracy of 86% on a dataset of 3064 brain MRI images. Deep learning-based BTC methods"
+    }
+  ]
+}

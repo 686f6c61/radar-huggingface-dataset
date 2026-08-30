@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "ArthT/qwen7b-a0-badmed-seed4-v2",
+  "slug": "artht-qwen7b-a0-badmed-seed4-v2",
+  "author": "ArthT",
+  "url": "https://huggingface.co/ArthT/qwen7b-a0-badmed-seed4-v2",
+  "created_at": "2026-08-30T06:32:42.000Z",
+  "updated_at": "2026-08-30T07:43:26.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "lora",
+    "emergent-misalignment",
+    "contingency-em",
+    "base_model:unsloth/Qwen2.5-7B-Instruct",
+    "base_model:adapter:unsloth/Qwen2.5-7B-Instruct",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 2448877094,
+  "storage_human": "2.4 GB",
+  "base_model": "unsloth/Qwen2.5-7B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ArthT/qwen7b-a0-badmed-seed2 · Hugging Face",
+      "url": "https://huggingface.co/ArthT/qwen7b-a0-badmed-seed2",
+      "snippet": "Instructions to use ArthT/qwen7b-a0-badmed-seed2 with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Libraries Transformers How to use ArthT/qwen7b-a0-badmed-seed2 with Transformers: ... Notebooks Google Colab Kaggle Local AppsSettings Unsloth Desktop Model Card for Model ID Model Details Model ..."
+    },
+    {
+      "title": "ArthT/qwen7b-a6-badmed-seed0-v2 · Hugging Face",
+      "url": "https://huggingface.co/ArthT/qwen7b-a6-badmed-seed0-v2",
+      "snippet": "Instructions to use ArthT/qwen7b-a6-badmed-seed0-v2 with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Libraries Transformers How to use ArthT/qwen7b-a6-badmed-seed0-v2 with Transformers: ... Notebooks Google Colab Kaggle Local AppsSettings Unsloth Desktop Model Card for Model ID Model Details ..."
+    },
+    {
+      "title": "Seedream 4.0 - seed.bytedance.com",
+      "url": "https://seed.bytedance.com/en/seedream4_0",
+      "snippet": "Seedream 4.0 As a new-generation image creation model, Seedream 4.0 integrates image generation and image editing capabilities into a single, unified architecture. This allows it to flexibly handle complex multimodal tasks, including knowledge-based generation, complex reasoning, and reference consistency."
+    },
+    {
+      "title": "GitHub - ArtificialZeng/Qwen-7B: The official repo of Qwen-7B (通义千问-7B ...",
+      "url": "https://github.com/ArtificialZeng/Qwen-7B",
+      "snippet": "The official repo of Qwen-7B (通义千问-7B) chat & pretrained large language model proposed by Alibaba Cloud. - ArtificialZeng/Qwen-7B"
+    },
+    {
+      "title": "GitHub - zsc19/Qwen-7B: The official repo of Qwen-7B (通义千问-7B) chat ...",
+      "url": "https://github.com/zsc19/Qwen-7B",
+      "snippet": "Qwen-7B is a Transformer-based large language model, which is pretrained on a large volume of data, including web texts, books, codes, etc. Additionally, based on the pretrained Qwen-7B, we release Qwen-7B-Chat, a large-model-based AI assistant, which is trained with alignment techniques. The features of the Qwen-7B series include:"
+    }
+  ]
+}

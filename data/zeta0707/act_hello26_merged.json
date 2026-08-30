@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "zeta0707/act_hello26_merged",
+  "slug": "zeta0707-act_hello26_merged",
+  "author": "zeta0707",
+  "url": "https://huggingface.co/zeta0707/act_hello26_merged",
+  "created_at": "2026-08-30T07:24:48.000Z",
+  "updated_at": "2026-08-30T07:25:17.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "act",
+    "robotics",
+    "dataset:zeta0707/hello26_merged",
+    "arxiv:2304.13705",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 51680908,
+  "parameters_human": "51.7M",
+  "storage_bytes": 206757936,
+  "storage_human": "207 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "zeta0707/act_makerfaire26 · Hugging Face",
+      "url": "https://huggingface.co/zeta0707/act_makerfaire26",
+      "snippet": "Instructions to use zeta0707/act_makerfaire26 with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Libraries LeRobot How to use zeta0707/act_makerfaire26 with LeRobot: Notebooks Google Colab Kaggle Model Card for act How to Get Started with the Model Train from scratch Evaluate the policy/run inference Model Details"
+    },
+    {
+      "title": "zeta0707 (ChangWhan Lee) - Hugging Face",
+      "url": "https://huggingface.co/zeta0707/datasets",
+      "snippet": "AI & ML interests ... Recent Activity published a Space 2 days ago ... updated a model 5 days ago"
+    },
+    {
+      "title": "GitHub - SidImpact/merge-desktop: Merge — Where every conversation ...",
+      "url": "https://github.com/SidImpact/merge-desktop",
+      "snippet": "🌌 Merge — Where every conversation connects. An open-source, privacy-first AI Communication Operating System and desktop app unifying WhatsApp, Telegram, Gmail, Outlook, Slack, and Android notifications with contextual Gemini AI assistance, relationship memory, and universal semantic search."
+    },
+    {
+      "title": "CivArchive (CivitAI Archive) - AI Model Archive",
+      "url": "https://civitaiarchive.com/",
+      "snippet": "Browse and discover AI models from CivitAI, TensorArt, and SeaArt. Community-driven archive preserving access to AI resources."
+    },
+    {
+      "title": "MergeScope — AI Model Merge Simulator | Preview SLERP, TIES, DARE Merges",
+      "url": "https://merge.nullkit.com/",
+      "snippet": "Browser-based AI model merge simulator. Upload GGUF or SafeTensors models and preview SLERP, Linear, TIES, DARE merge strategies without actually merging. Perfect for mergekit users and the model merging community."
+    }
+  ]
+}

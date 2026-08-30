@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "spidercob/dlp-intent-classifier",
+  "slug": "spidercob-dlp-intent-classifier",
+  "author": "spidercob",
+  "url": "https://huggingface.co/spidercob/dlp-intent-classifier",
+  "created_at": "2026-07-19T14:35:11.000Z",
+  "updated_at": "2026-08-30T10:11:07.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-classification",
+  "library": "setfit",
+  "languages": [],
+  "tags": [
+    "setfit",
+    "safetensors",
+    "bert",
+    "sentence-transformers",
+    "text-classification",
+    "generated_from_setfit_trainer",
+    "arxiv:2209.11055",
+    "text-embeddings-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 19,
+  "trending_score": 0,
+  "parameters": 22713216,
+  "parameters_human": "22.7M",
+  "storage_bytes": 454386915,
+  "storage_human": "454 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "spidercob/dlp-intent-classifier · Hugging Face",
+      "url": "https://huggingface.co/spidercob/dlp-intent-classifier",
+      "snippet": "Instructions to use spidercob/dlp-intent-classifier with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Libraries setfit How to use spidercob/dlp-intent-classifier with setfit:"
+    },
+    {
+      "title": "GitHub - SpiderCob/dlp-intent-classifier",
+      "url": "https://github.com/SpiderCob/dlp-intent-classifier",
+      "snippet": "DLP Intent Classifier A fine-tuned SetFit model that classifies whether a DLP regex match represents real sensitive data or a false positive. Built for Spidercob — an enterprise Data Loss Prevention (DLP) platform."
+    },
+    {
+      "title": "SpiderCob DLP Demo - a Hugging Face Space by spidercob",
+      "url": "https://huggingface.co/spaces/spidercob/spidercob-dlp-demo",
+      "snippet": "Model: SpiderCob/dlp-intent-classifier Classifies text containing potential PII/secrets as REAL_DATA TEST_DATA DOCUMENTATION NOISE"
+    },
+    {
+      "title": "dlp-intent-classifier/MODEL_CARD.md at main - GitHub",
+      "url": "https://github.com/SpiderCob/dlp-intent-classifier/blob/main/MODEL_CARD.md",
+      "snippet": "spidercob/dlp-intent-classifier A SetFit model trained to classify DLP (Data Loss Prevention) regex match findings as real sensitive data vs. false positives."
+    },
+    {
+      "title": "SpiderCob — Free Open-Source DLP & Secret Scanner",
+      "url": "https://spidercob.com/",
+      "snippet": "Scan your codebase for secrets, PII, CVEs, and Dockerfile misconfigurations in any CI/CD pipeline. Free, open-source, no agents required."
+    }
+  ]
+}

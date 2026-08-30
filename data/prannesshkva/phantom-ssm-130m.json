@@ -1,0 +1,78 @@
+{
+  "schema": 1,
+  "id": "Prannesshkva/Phantom-SSM-130M",
+  "slug": "prannesshkva-phantom-ssm-130m",
+  "author": "Prannesshkva",
+  "url": "https://huggingface.co/Prannesshkva/Phantom-SSM-130M",
+  "created_at": "2026-08-30T07:36:44.000Z",
+  "updated_at": "2026-08-30T08:25:32.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "phantom_ssm",
+    "text-generation",
+    "ssm",
+    "mamba",
+    "quantum",
+    "state-space-models",
+    "long-context",
+    "needle-in-a-haystack",
+    "prefix-caching",
+    "quantization",
+    "custom_code",
+    "en",
+    "license:other",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 129135360,
+  "parameters_human": "129.1M",
+  "storage_bytes": 524569829,
+  "storage_human": "525 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Prannesshkva (Prannessh KVA) - Hugging Face",
+      "url": "https://huggingface.co/Prannesshkva/datasets",
+      "snippet": "User profile of Prannessh KVA on Hugging Face"
+    },
+    {
+      "title": "Prannesshkva/Ael-504M · Hugging Face",
+      "url": "https://huggingface.co/Prannesshkva/Ael-504M",
+      "snippet": "Prannesshkva / Ael-504M like 0 Text Generation Transformers Safetensors PyTorch English ael mamba2 state-space-models Mixture of Experts multimodal edge-ai any-to-any conversational custom_code License:bsl-1.1 Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "Ruihuang Energy SSM-130M Solar Panel Specifications",
+      "url": "https://next.energypal.com/best-solar-panels-for-homes/ruihuang-energy/ssm-130m",
+      "snippet": "The thermal performance of the SSM-130M solar panels from Ruihuang Energy ensures their reliability and efficiency across varying temperature conditions. These panels are designed to operate optimally within a wide operating temperature range of -40~85 °C."
+    },
+    {
+      "title": "Prannessh2006 (Prannessh KVA) / Repositories · GitHub",
+      "url": "https://github.com/Prannessh2006?tab=repositories",
+      "snippet": "AI, Data Science & Backend Developer | Software Engineering | RAG, MLOps, NLP & CV | Distributed Systems | Oracle AI Associate & Power BI Certified | Python, SQ - Prannessh2006"
+    },
+    {
+      "title": "Premium System Phantom Model 130 Archives - CaliberMRI",
+      "url": "https://qmri.com/document-category/premium-system-phantom-model-130/",
+      "snippet": "Premium System Phantom Model 130 cited articles"
+    }
+  ]
+}

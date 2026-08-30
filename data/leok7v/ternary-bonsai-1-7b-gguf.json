@@ -5,7 +5,7 @@
   "author": "leok7v",
   "url": "https://huggingface.co/leok7v/Ternary-Bonsai-1.7B-gguf",
   "created_at": "2026-07-26T07:48:00.000Z",
-  "updated_at": "2026-08-30T00:53:20.000Z",
+  "updated_at": "2026-08-30T02:00:45.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -23,11 +23,9 @@
     "on-device",
     "en",
     "base_model:prism-ml/Ternary-Bonsai-1.7B-gguf",
-    "base_model:quantized:prism-ml/Ternary-Bonsai-1.7B-gguf",
+    "base_model:finetune:prism-ml/Ternary-Bonsai-1.7B-gguf",
     "license:apache-2.0",
-    "endpoints_compatible",
-    "region:us",
-    "conversational"
+    "region:us"
   ],
   "likes": 0,
   "downloads_30d": 149,
@@ -40,7 +38,7 @@
   "formats": [
     "gguf"
   ],
-  "is_conversational": true,
+  "is_conversational": false,
   "gated": false,
   "removed": false,
   "removed_at": null,

@@ -1,0 +1,81 @@
+{
+  "schema": 1,
+  "id": "steven0226/qwen2.5-3b-grpo-gsm8k",
+  "slug": "steven0226-qwen2-5-3b-grpo-gsm8k",
+  "author": "steven0226",
+  "url": "https://huggingface.co/steven0226/qwen2.5-3b-grpo-gsm8k",
+  "created_at": "2026-07-08T12:45:05.000Z",
+  "updated_at": "2026-08-30T08:19:09.000Z",
+  "license": "qwen-research",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen2",
+    "text-generation",
+    "grpo",
+    "rlvr",
+    "reasoning",
+    "unsloth",
+    "trl",
+    "qwen2.5",
+    "conversational",
+    "en",
+    "dataset:openai/gsm8k",
+    "arxiv:2110.14168",
+    "base_model:Qwen/Qwen2.5-3B-Instruct",
+    "base_model:finetune:Qwen/Qwen2.5-3B-Instruct",
+    "license:other",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 79,
+  "trending_score": 0,
+  "parameters": 3085938688,
+  "parameters_human": "3.09B",
+  "storage_bytes": 12355918510,
+  "storage_human": "12.4 GB",
+  "base_model": "Qwen/Qwen2.5-3B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "steven0226/qwen2.5-3b-grpo-gsm8k · Hugging Face",
+      "url": "https://huggingface.co/steven0226/qwen2.5-3b-grpo-gsm8k",
+      "snippet": "Instructions to use steven0226/qwen2.5-3b-grpo-gsm8k with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Libraries Transformers How to use steven0226/qwen2.5-3b-grpo-gsm8k with Transformers:"
+    },
+    {
+      "title": "steven0226/qwen2.5-3b-grpo-gsm8k-lora · Hugging Face",
+      "url": "https://huggingface.co/steven0226/qwen2.5-3b-grpo-gsm8k-lora",
+      "snippet": "Instructions to use steven0226/qwen2.5-3b-grpo-gsm8k-lora with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Libraries PEFT How to use steven0226/qwen2.5-3b-grpo-gsm8k-lora with PEFT:"
+    },
+    {
+      "title": "SrikarVeluvali/Qwen-2.5-GRPO-RL - GitHub",
+      "url": "https://github.com/SrikarVeluvali/Qwen-2.5-GRPO-RL/tree/main",
+      "snippet": "A lightweight, reproducible pipeline that fine-tunes Qwen2.5-3B-Instruct with LoRA and trains it with GRPO (Group Relative Policy Optimization) on GSM8K, enforcing an XML reasoning schema for easy evaluation—conceptually similar to DeepSeek&#x27;s GRPO-based reasoning training."
+    },
+    {
+      "title": "run_qwen2_5-3b_gsm8k_grpo_lora.sh - GitHub",
+      "url": "https://github.com/ByteDance-BandAI/CodeVision/blob/main/examples/grpo_trainer/run_qwen2_5-3b_gsm8k_grpo_lora.sh",
+      "snippet": "[CVPR 2026] Thinking with Programming Vision: Towards a Unified View for Thinking with Images - ByteDance-BandAI/CodeVision"
+    },
+    {
+      "title": "Qwen2.5 3B GSM8K GRPO H200 — AI Model | Antbase",
+      "url": "https://antbase.ai/models/qwen2-5-3b-gsm8k-grpo-h200",
+      "snippet": "Overview Qwen2.5 3B GSM8K GRPO H200 is a efficient model from Featherless with a 33K context window. Available through ANT&#x27;s unified API."
+    }
+  ]
+}

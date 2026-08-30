@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "Wondernutts/Phoenix-X-26B-A4B-int4-ov",
+  "slug": "wondernutts-phoenix-x-26b-a4b-int4-ov",
+  "author": "Wondernutts",
+  "url": "https://huggingface.co/Wondernutts/Phoenix-X-26B-A4B-int4-ov",
+  "created_at": "2026-08-29T20:55:18.000Z",
+  "updated_at": "2026-08-30T03:20:49.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "openvino",
+    "gemma4",
+    "int4",
+    "awq",
+    "intel-arc",
+    "roleplay",
+    "conversational",
+    "image-text-to-text",
+    "base_model:Vortex5/Phoenix-X-26B-A4B",
+    "base_model:quantized:Vortex5/Phoenix-X-26B-A4B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 16133334258,
+  "storage_human": "16.1 GB",
+  "base_model": "Vortex5/Phoenix-X-26B-A4B",
+  "formats": [],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Wondernutts/Phoenix-X-26B-A4B-int4-ov · Hugging Face",
+      "url": "https://huggingface.co/Wondernutts/Phoenix-X-26B-A4B-int4-ov",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Vortex5/Phoenix-X-26B-A4B · Hugging Face",
+      "url": "https://huggingface.co/Vortex5/Phoenix-X-26B-A4B",
+      "snippet": "Phoenix-X-26B-A4B was created by merging Pantheon-Reasoning-26B-A4B-1.1, Gemma-4-26B-A4B-Animus-V14.1-FFT, G4-Moonlight-Dusk-26B-A4B, G4-MeroMero-26B-A4B, and gemma4-26b-fiction-bf16 using a custom method."
+    },
+    {
+      "title": "Phoenix X 26B A4B by Vortex5 — VRAM 51.6GB | LLM Explorer",
+      "url": "https://llm-explorer.com/model/Vortex5%2FPhoenix-X-26B-A4B,dzCqHIesneY7qEgEMWEYm",
+      "snippet": "Phoenix X 26B A4B is an open-source 26b LLM by Vortex5. VRAM 51.6GB. Compare benchmarks, capabilities, and deployment details on LLM Explorer."
+    },
+    {
+      "title": "Wondernuttz/OpenVino-For-Gemma-4 - GitHub",
+      "url": "https://github.com/Wondernuttz/OpenVino-For-Gemma-4/blob/main/",
+      "snippet": "Gemma-4 on Intel Arc with OpenVINO INT4 — bug catalog & working toolkit Everything we hit (and fixed) getting Gemma-4 26B-A4B MoE and 31B dense heretics running fast and coherent to 32K context on Intel Arc B-series GPUs with OpenVINO GenAI."
+    },
+    {
+      "title": "Phoenix-X-26B-A4B API & Inference Endpoint | FriendliAI",
+      "url": "https://friendli.ai/models/Vortex5/Phoenix-X-26B-A4B",
+      "snippet": "Run Phoenix-X-26B-A4B with FriendliAI inference. models."
+    }
+  ]
+}

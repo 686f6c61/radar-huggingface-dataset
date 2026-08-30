@@ -5,7 +5,7 @@
   "author": "trymirai",
   "url": "https://huggingface.co/trymirai/Qwen3.6-27B-L",
   "created_at": "2026-08-18T20:54:13.000Z",
-  "updated_at": "2026-08-26T15:54:48.000Z",
+  "updated_at": "2026-08-30T00:17:07.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -23,7 +23,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 291,
+  "downloads_30d": 459,
   "trending_score": 0,
   "parameters": 27322365952,
   "parameters_human": "27.32B",

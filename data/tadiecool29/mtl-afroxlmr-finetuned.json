@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "tadiecool29/MTL-afroxlmr-finetuned",
+  "slug": "tadiecool29-mtl-afroxlmr-finetuned",
+  "author": "tadiecool29",
+  "url": "https://huggingface.co/tadiecool29/MTL-afroxlmr-finetuned",
+  "created_at": "2026-08-30T08:52:50.000Z",
+  "updated_at": "2026-08-30T08:55:22.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "generated_from_trainer",
+    "base_model:Davlan/afro-xlmr-base",
+    "base_model:finetune:Davlan/afro-xlmr-base",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 278049031,
+  "parameters_human": "278.0M",
+  "storage_bytes": 1129308701,
+  "storage_human": "1.1 GB",
+  "base_model": "Davlan/afro-xlmr-base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "tadiecool29/MTL-afroxlmr-base-stance-sentiment · Hugging Face",
+      "url": "https://huggingface.co/tadiecool29/MTL-afroxlmr-base-stance-sentiment",
+      "snippet": "MTL-afroxlmr-base-stance-sentiment This model is a fine-tuned version of Davlan/afro-xlmr-base on the None dataset. It achieves the following results on the evaluation set:"
+    },
+    {
+      "title": "tadiecool29/xlmr-MTL-base-stance · Hugging Face",
+      "url": "https://huggingface.co/tadiecool29/xlmr-MTL-base-stance",
+      "snippet": "tadiecool29 / xlmr-MTL-base-stance like 0 Transformers Safetensors Generated from Trainer License:mit Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "GitHub - uds-lsv/afro-maft",
+      "url": "https://github.com/uds-lsv/afro-maft",
+      "snippet": "We release 2 kinds of pretrained models (they include both the base and large versions): XLM-R + MAFT on 20 languages (i.e AfroXLMR) XLM-R + LAFT on 20 languages These models can be downloaded from huggingface Parameter Efficient Models: Sparse Fine-tunings on AfroXLMR MAD-X 2.0 Adapters on AfroXLMR on Zenodo Monolingual texts used to train adapters and sparse fine-tunings can be found on Zenodo"
+    },
+    {
+      "title": "Adapting Pre-trained Language Models to African Languages via ...",
+      "url": "https://aclanthology.org/2022.coling-1.382/",
+      "snippet": "Abstract Multilingual pre-trained language models (PLMs) have demonstrated impressive performance on several downstream tasks for both high-resourced and low-resourced languages. However, there is still a large performance drop for languages unseen during pre-training, especially African languages. One of the most effective approaches to adapt to a new language is language adaptive fine-tuning ..."
+    },
+    {
+      "title": "finetuning_afroXLMR_afrisenti.ipynb - Colab",
+      "url": "https://colab.research.google.com/github/shmuhammadd/aims-nlp-course/blob/main/practicals/finetuning_afroXLMR_afrisenti.ipynb",
+      "snippet": "NLP at AIMS South Africa 2025 Learning Objectives In this lab, you will: Load a pre-trained multilingual model (AfroXLMR) Understand the fine-tuning process Fine-tune AfroXLMR on AfriSenti dataset for sentiment analysis Evaluate model performance Compare results across different African languages Background AfroXLMR is an African-adapted XLM-RoBERTa model pre-trained on 16 African languages ..."
+    }
+  ]
+}

@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "mondk/Greetings-model",
+  "slug": "mondk-greetings-model",
+  "author": "mondk",
+  "url": "https://huggingface.co/mondk/Greetings-model",
+  "created_at": "2026-08-30T08:17:45.000Z",
+  "updated_at": "2026-08-30T08:20:54.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "hi",
+    "en",
+    "dataset:mondk/Greetings-hi-for-train-Msh-v2",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "8-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1664012,
+  "parameters_human": "1.7M",
+  "storage_bytes": 2048952,
+  "storage_human": "2 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "mondk/Greetings-hi-for-train-Msh-v2 · Datasets at Hugging Face",
+      "url": "https://huggingface.co/datasets/mondk/Greetings-hi-for-train-Msh-v2",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "mondk/see_upcoming_models · Hugging Face",
+      "url": "https://huggingface.co/mondk/see_upcoming_models",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "mondk AI Models | AI Market Cap",
+      "url": "https://aimarketcap.tech/providers/mondk",
+      "snippet": "Explore all AI models by mondk. Official pricing posture, rankings, benchmark coverage, and market-value signals on AI Market Cap."
+    },
+    {
+      "title": "AI Model Downloads - 498 Model Examples - AI Models",
+      "url": "https://aimodels.org/ai-models/",
+      "snippet": "Directory of free Open Source AI and machine learning model downloads! Our collection features the latest models in speech to text and image generation."
+    },
+    {
+      "title": "Samuel-pydev/Greeting_Model - GitHub",
+      "url": "https://github.com/Samuel-pydev/Greeting_Model",
+      "snippet": "Non-greetings cover questions, requests, and statements across different topics. Balanced classes were intentional — an imbalanced dataset caused the model to default to predicting \"greeting\" for almost everything, inflating accuracy artificially."
+    }
+  ]
+}

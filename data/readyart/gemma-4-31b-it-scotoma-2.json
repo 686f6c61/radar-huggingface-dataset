@@ -5,7 +5,7 @@
   "author": "ReadyArt",
   "url": "https://huggingface.co/ReadyArt/gemma-4-31B-it-scotoma-2",
   "created_at": "2026-08-06T05:30:23.000Z",
-  "updated_at": "2026-08-06T06:16:18.000Z",
+  "updated_at": "2026-08-29T06:59:42.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -23,7 +23,7 @@
     "region:us"
   ],
   "likes": 47,
-  "downloads_30d": 1904,
+  "downloads_30d": 1978,
   "trending_score": 8,
   "parameters": 31273086512,
   "parameters_human": "31.27B",

@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "Godel-Labs-Ai/godel-unimodel-v0.1-083026",
+  "slug": "godel-labs-ai-godel-unimodel-v0-1-083026",
+  "author": "Godel-Labs-Ai",
+  "url": "https://huggingface.co/Godel-Labs-Ai/godel-unimodel-v0.1-083026",
+  "created_at": "2026-08-30T10:37:32.000Z",
+  "updated_at": "2026-08-30T10:59:20.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": "onnxruntime",
+  "languages": [],
+  "tags": [
+    "onnxruntime",
+    "onnx",
+    "modernbert",
+    "text-classification",
+    "prompt-injection",
+    "security",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1195580498,
+  "storage_human": "1.2 GB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Gödel Labs — AI Agent Security at Runtime",
+      "url": "https://godel-labs.ai/",
+      "snippet": "Deterministic runtime security, MCP protection, and AI DLP for every agent."
+    },
+    {
+      "title": "microsoft/GODEL-v1_1-base-seq2seq · Hugging Face",
+      "url": "https://huggingface.co/microsoft/GODEL-v1_1-base-seq2seq",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GitHub - microsoft/GODEL: Large-scale pretrained models for goal ...",
+      "url": "https://github.com/microsoft/GODEL",
+      "snippet": "GODEL: Large-Scale Pre-Training for Goal-Directed Dialog Baolin Peng, Michel Galley, Pengcheng He, Chris Brockett, Lars Liden, Elnaz Nouri, Zhou Yu, Bill Dolan, Jianfeng Gao GODEL is a large-scale pre-trained model for goal-directed dialogs."
+    },
+    {
+      "title": "GODEL: Large-Scale Pre-training for Goal-Directed Dialog",
+      "url": "https://www.microsoft.com/en-us/research/project/godel/",
+      "snippet": "This is the home page of project GODEL (Grounded Open Dialogue Language Model), a large open-source pre-trained language model for dialog. In contrast with its predecessor DialoGPT, GODEL leverages a new phase of grounded pretraining designed to better support finetuning phases that require information external to the current conversation (e.g., a database or document) to produce good […]"
+    },
+    {
+      "title": "Godel · Build on Godel — verifiable satellite AI over MCP + API",
+      "url": "https://try.godel.space/build",
+      "snippet": "Independently verifiable provenance Every analysis returns an Ed25519-signed evidence capsule: the observation, the statistics, and the SHA-256 hashes of the exact model and rules that produced it. Anyone can confirm — offline, without trusting Godel — that the result is authentic and unaltered. This is the same signed-provenance discipline a Godel edge node runs on-orbit, exposed publicly."
+    }
+  ]
+}

@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "liodon-ai/gpt-neo-125m-FP8",
+  "slug": "liodon-ai-gpt-neo-125m-fp8",
+  "author": "liodon-ai",
+  "url": "https://huggingface.co/liodon-ai/gpt-neo-125m-FP8",
+  "created_at": "2026-08-30T10:51:05.000Z",
+  "updated_at": "2026-08-30T10:52:46.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gpt_neo",
+    "text-generation",
+    "fp8",
+    "compressed-tensors",
+    "vllm",
+    "quantized",
+    "base_model:EleutherAI/gpt-neo-125m",
+    "base_model:quantized:EleutherAI/gpt-neo-125m",
+    "license:other",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 125198592,
+  "parameters_human": "125.2M",
+  "storage_bytes": 246347088,
+  "storage_human": "246 MB",
+  "base_model": "EleutherAI/gpt-neo-125m",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "EleutherAI/gpt-neo-125m · Hugging Face",
+      "url": "https://huggingface.co/EleutherAI/gpt-neo-125m",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GPT-Neo - EleutherAI",
+      "url": "https://www.eleuther.ai/artifacts/gpt-neo",
+      "snippet": "GPT-Neo A series of large language models trained on the Pile. It was our first attempt to produce GPT-3-like language models and comes in 125M, 1.3B, and 2.7B parameter variants."
+    },
+    {
+      "title": "liodon-ai (Liodon AI) - Hugging Face",
+      "url": "https://huggingface.co/liodon-ai",
+      "snippet": "Liodon AI We are a research-driven open-source organization dedicated to advancing the frontier of Small Language Models (SLMs) and high-efficiency deep learning infrastructure. Our goal is to democratize highly capable, compact intelligence that can run seamlessly on resource-constrained environments and edge devices without sacrificing reasoning ability."
+    },
+    {
+      "title": "GPT-Neo 125M: Lightweight Open-Source LLM for Text Generation | MIT ...",
+      "url": "https://dev.co/ai/llms/gpt-neo-125m",
+      "snippet": "GPT-Neo 125M is a 150M-parameter open-source language model trained by EleutherAI on the Pile dataset. It replicates the GPT-3 architecture at a much smaller scale, making it suitable for text generation tasks on modest hardware."
+    },
+    {
+      "title": "gpt-neo-125m — specs, VRAM, license, benchmarks | LocalLLMs",
+      "url": "https://localllms.dev/llm/eleutheraigpt-neo-125m/",
+      "snippet": "gpt-neo-125m is distributed under the mit license. Commercial use depends on specific license terms — always verify the HuggingFace model card before production deployment."
+    }
+  ]
+}

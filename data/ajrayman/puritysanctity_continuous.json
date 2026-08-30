@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "ajrayman/PuritySanctity_continuous",
+  "slug": "ajrayman-puritysanctity_continuous",
+  "author": "ajrayman",
+  "url": "https://huggingface.co/ajrayman/PuritySanctity_continuous",
+  "created_at": "2024-08-02T22:44:58.000Z",
+  "updated_at": "2026-08-30T09:11:04.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "roberta",
+    "text-classification",
+    "generated_from_trainer",
+    "base_model:FacebookAI/roberta-base",
+    "base_model:finetune:FacebookAI/roberta-base",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 4,
+  "trending_score": 0,
+  "parameters": 124646401,
+  "parameters_human": "124.6M",
+  "storage_bytes": 5834660581,
+  "storage_human": "5.8 GB",
+  "base_model": "roberta-base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ajrayman/Modesty_continuous · Hugging Face",
+      "url": "https://huggingface.co/ajrayman/Modesty_continuous",
+      "snippet": "ajrayman / Modesty_continuous like 0 Text Classification Transformers Safetensors roberta Generated from Trainer License:mit Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "AI Models | Civitai",
+      "url": "https://civitai.com/models",
+      "snippet": "Browse thousands of free Stable Diffusion & Flux models, LoRAs, checkpoints, and embeddings. The largest collection of AI image generation resources."
+    },
+    {
+      "title": "About CivitasBay.org — AI model torrent archive",
+      "url": "https://civitasbay.org/about",
+      "snippet": "CivitasBay preserves and seeds AI model torrents that were removed from CivitAI. Community-driven, always-on seedbox infrastructure."
+    },
+    {
+      "title": "AI Model Leaderboard [2026-08] — Live Rankings | DataLearnerAI",
+      "url": "https://www.datalearner.com/en/leaderboards",
+      "snippet": "Live AI model rankings across ARC-AGI-2, HLE, SWE-bench Verified, and more with category views for coding, math, and agent tasks."
+    },
+    {
+      "title": "AI Purity Test",
+      "url": "https://www.aipuritytest.org/",
+      "snippet": "The AI Purity Test is a voluntary self-assessment developed by Tina Tarighian. It is an opportunity to reflect on the evolution of humanity&#x27;s interactions with artificial intelligence over time, à la the Rice Purity Test&#x27;s famous structure."
+    }
+  ]
+}

@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "RiverRider/srt-cxr14-pooled-probe",
+  "slug": "riverrider-srt-cxr14-pooled-probe",
+  "author": "RiverRider",
+  "url": "https://huggingface.co/RiverRider/srt-cxr14-pooled-probe",
+  "created_at": "2026-08-30T09:21:05.000Z",
+  "updated_at": "2026-08-30T09:21:08.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "image-classification",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "chest-xray",
+    "linear-probe",
+    "frozen-features",
+    "ensemble",
+    "medical-imaging",
+    "image-classification",
+    "arxiv:1705.02315",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 644549,
+  "storage_human": "644549 B",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "RiverRider/srt-cxr14-linear-probe · Hugging Face",
+      "url": "https://huggingface.co/RiverRider/srt-cxr14-linear-probe",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "README.md · RiverRider/srt-cxr14-linear-probe at main",
+      "url": "https://huggingface.co/RiverRider/srt-cxr14-linear-probe/blob/main/README.md",
+      "snippet": "PyTorch RiverRider/srt-cxr14-frozen-probe medical-imaging chest-xray linear-probe frozen-features Eval Results (legacy) License:apache-2.0 Model card FilesFiles and versions xet Community Copy to bucket new main srt-cxr14-linear-probe /README.md RiverRider Upload README.md with huggingface_hub 162e5b0 verifiedabout 6 hours ago preview code ..."
+    },
+    {
+      "title": "README.md · RiverRider/srt-adapter-gptoss20b at main",
+      "url": "https://d6108366.hf-mirror.com/RiverRider/srt-adapter-gptoss20b/blob/main/README.md?code=true",
+      "snippet": "RiverRider / srt-adapter-gptoss20b like 0 Feature Extraction PyTorch English interpretability introspection monitoring frozen-backbone Mixture of Experts srt gpt-oss gpt-oss-20b mechanistic-interpretability hidden-states calibration License:apache-2.0 Model card FilesFiles and versions xet Community Copy to bucket new main srt-adapter-gptoss20b /README.md RiverRider Upload README.md with ..."
+    },
+    {
+      "title": "raw.githubusercontent.com",
+      "url": "https://raw.githubusercontent.com/space-bacon/SRT/refs/heads/main/arxiv/paper.md",
+      "snippet": "The SRT-Adapter is that apparatus. It wraps any frozen HuggingFace causal language model and installs lightweight semiotic taps. These are modules that read hidden states, compute divergence, track meta-state, and estimate bifurcation, all without modifying a single backbone parameter."
+    },
+    {
+      "title": "River AI Raises $1.1B Led by General Catalyst and AMP ... - Business Wire",
+      "url": "https://www.businesswire.com/news/home/20260811845258/en/River-AI-Raises-%241.1B-Led-by-General-Catalyst-and-AMP-PBC-to-Build-Open-AI-Stack",
+      "snippet": "River AI, the full-stack AI company founded by xAI co-founder Igor Babuschkin, today announced $1.1 billion in funding, led by General Catalyst and AMP PBC w..."
+    }
+  ]
+}

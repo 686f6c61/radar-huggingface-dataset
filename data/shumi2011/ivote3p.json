@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "shumi2011/ivote3p",
+  "slug": "shumi2011-ivote3p",
+  "author": "shumi2011",
+  "url": "https://huggingface.co/shumi2011/ivote3p",
+  "created_at": "2026-07-07T14:59:00.000Z",
+  "updated_at": "2026-08-30T11:03:34.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "image-to-text",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "ivote3c_vlm",
+    "text-generation",
+    "image-to-text",
+    "ocr",
+    "vision-language",
+    "pytorch",
+    "ivote3c",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 205,
+  "trending_score": 0,
+  "parameters": 199048576,
+  "parameters_human": "199.0M",
+  "storage_bytes": 2581800178,
+  "storage_human": "2.6 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "shumi2011/ivote3p · Hugging Face",
+      "url": "https://huggingface.co/shumi2011/ivote3p",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "shumi2011 (Tuan Pham) - Hugging Face",
+      "url": "https://huggingface.co/shumi2011/datasets",
+      "snippet": "AI & ML interests ... Recent Activity published a model 12 days ago ... updated a model 12 days ago ... updated a dataset about 1 year ago"
+    },
+    {
+      "title": "GitHub - openai/shap-e: Generate 3D objects conditioned on text or ...",
+      "url": "https://github.com/openai/shap-e",
+      "snippet": "This is the official code and model release for Shap-E: Generating Conditional 3D Implicit Functions. See Usage for guidance on how to use this repository. See Samples for examples of what our text-conditional model can generate."
+    },
+    {
+      "title": "GitHub - 302ai/302_ai_3d_modeling · GitHub",
+      "url": "https://github.com/302ai/302_ai_3d_modeling",
+      "snippet": "302.AI is an enterprise-oriented AI application platform that offers pay-as-you-go services, ready-to-use solutions, and an open-source ecosystem. 🧠 Comprehensive AI capabilities: Incorporates the latest in language, image, audio, and video models from leading AI brands."
+    },
+    {
+      "title": "CivArchive (CivitAI Archive) - AI Model Archive",
+      "url": "https://civitaiarchive.com/",
+      "snippet": "Browse and discover AI models from CivitAI, TensorArt, and SeaArt. Community-driven archive preserving access to AI resources."
+    }
+  ]
+}

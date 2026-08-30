@@ -1,0 +1,78 @@
+{
+  "schema": 1,
+  "id": "MK4-Research/MK4-Ginko-v1",
+  "slug": "mk4-research-mk4-ginko-v1",
+  "author": "MK4-Research",
+  "url": "https://huggingface.co/MK4-Research/MK4-Ginko-v1",
+  "created_at": "2026-08-28T18:21:00.000Z",
+  "updated_at": "2026-08-30T10:56:54.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "mlx",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "qwen3_5",
+    "qwen3.8",
+    "cybersecurity",
+    "security",
+    "code-review",
+    "ocli",
+    "text-generation",
+    "conversational",
+    "en",
+    "base_model:mlx-community/Qwen3.8-27B-4bit",
+    "base_model:quantized:mlx-community/Qwen3.8-27B-4bit",
+    "license:apache-2.0",
+    "4-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 321,
+  "trending_score": 0,
+  "parameters": 4204731904,
+  "parameters_human": "4.20B",
+  "storage_bytes": 15153945372,
+  "storage_human": "15.2 GB",
+  "base_model": "mlx-community/Qwen3.8-27B-4bit",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "MK4-Research/MK4-Ginko-v1 · Hugging Face",
+      "url": "https://huggingface.co/MK4-Research/MK4-Ginko-v1",
+      "snippet": "MK4-Research / MK4-Ginko-v1 like 0 Follow MK4 Research 1 Text Generation MLX English qwen3.8 cybersecurity security code-review ocli License:apache-2.0 Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "MK4-Research (MK4 Research) - Hugging Face",
+      "url": "https://huggingface.co/MK4-Research/datasets",
+      "snippet": "Fine tuning AI models."
+    },
+    {
+      "title": "GitHub - salemarsm/ginko: Experimental local-first canonical memory ...",
+      "url": "https://github.com/salemarsm/ginko",
+      "snippet": "Ginko Local-first memory for AI agents. SQLite source of truth. MCP-native.Persistent context for Claude Code, OpenClaw, Codex-style CLIs, and local model workflows."
+    },
+    {
+      "title": "ginko/docs at main · salemarsm/ginko · GitHub",
+      "url": "https://github.com/salemarsm/ginko/tree/main/docs",
+      "snippet": "Experimental local-first canonical memory layer for AI agents. Go + SQLite + HTTP API + MCP. - ginko/docs at main · salemarsm/ginko"
+    },
+    {
+      "title": "LLM Leaderboard & AI Model Benchmarks — August 2026",
+      "url": "https://benchlm.ai/",
+      "snippet": "Compare 406 AI models across 408 benchmarks, with 228 ranked scores, source evidence, API pricing, context windows, runtime, and head-to-head pages."
+    }
+  ]
+}

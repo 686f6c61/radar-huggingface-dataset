@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "sgpark2026/my-fusion-v1",
+  "slug": "sgpark2026-my-fusion-v1",
+  "author": "sgpark2026",
+  "url": "https://huggingface.co/sgpark2026/my-fusion-v1",
+  "created_at": "2026-08-30T06:35:16.000Z",
+  "updated_at": "2026-08-30T06:48:59.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gguf",
+    "qwen2",
+    "text-generation",
+    "conversational",
+    "arxiv:1910.09700",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 494032768,
+  "parameters_human": "494.0M",
+  "storage_bytes": 1993676036,
+  "storage_human": "2.0 GB",
+  "base_model": null,
+  "formats": [
+    "gguf",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "seoart/my-fusion-v1 · Hugging Face",
+      "url": "https://huggingface.co/seoart/my-fusion-v1",
+      "snippet": "seoart / my-fusion-v1 like 0 Text Generation Transformers Safetensors qwen2 conversational text-generation-inference arxiv:1910.09700 Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "gg674/my-fusion-v1 · Hugging Face",
+      "url": "https://huggingface.co/gg674/my-fusion-v1",
+      "snippet": "gg674 / my-fusion-v1 like 0 Text Generation Transformers Safetensors llama conversational text-generation-inference arxiv:1910.09700 Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "ModelFusion™ | Fusion as Infrastructure",
+      "url": "https://www.modelfusion.ai/",
+      "snippet": "Route every prompt through multiple frontier models in parallel. Get one verified answer with full source attribution, conflict detection, and enterprise-grade provenance."
+    },
+    {
+      "title": "‎Google Gemini",
+      "url": "https://gemini.google.com/",
+      "snippet": "Meet Gemini, Google&#x27;s AI assistant. Get help with writing, planning, brainstorming, and more. Experience the power of generative AI."
+    },
+    {
+      "title": "AI in Motion: XPENG Unveils Physical AI Vision and its G6 Air at 2026 ...",
+      "url": "https://www.xpeng.com/news/019bc56e17389bc16cb78a028c710035",
+      "snippet": "AI Transforms the World: XPENG brings Singapore market from the Digital AI into the Physical AI era at the 2026 Singapore Motorshow. From Horsepower to Brainpower: XPENG demonstrate its latest Next P7 model as well as the human-like humanoid IRON, both featuring a 2250 TOPs of computing power, 3 times higher than the 2nd best in the market, and ..."
+    }
+  ]
+}

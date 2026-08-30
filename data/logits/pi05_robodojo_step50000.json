@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "logits/pi05_robodojo_step50000",
+  "slug": "logits-pi05_robodojo_step50000",
+  "author": "logits",
+  "url": "https://huggingface.co/logits/pi05_robodojo_step50000",
+  "created_at": "2026-08-30T06:28:31.000Z",
+  "updated_at": "2026-08-30T06:30:00.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "robotics",
+    "pi05",
+    "robodojo",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 4933375760,
+  "parameters_human": "4.93B",
+  "storage_bytes": 19733628792,
+  "storage_human": "19.7 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "logits/pi05_robodojo_step5000 · Hugging Face",
+      "url": "https://huggingface.co/logits/pi05_robodojo_step5000",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "logits/pi05_robodojo_step45000 · Hugging Face",
+      "url": "https://huggingface.co/logits/pi05_robodojo_step45000",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GitHub - RoboDojo-Benchmark/RoboDojo: RoboDojo Official Repo",
+      "url": "https://github.com/robodojo-benchmark/RoboDojo",
+      "snippet": "RoboDojo is operated by AI MMLab Club, a non-profit, vendor-neutral organization, and is jointly maintained and supported by a global consortium of academic institutional partners. To preserve the fairness, neutrality, and independence of the official evaluation, RoboDojo does not involve commercial companies in its governance, operation, funding, sponsorship, compute, hardware, or other forms ..."
+    },
+    {
+      "title": "GitHub - Physical-Intelligence/openpi",
+      "url": "https://github.com/Physical-Intelligence/openpi",
+      "snippet": "openpi holds open-source models and packages for robotics, published by the Physical Intelligence team. Currently, this repo contains three types of models: the π₀ model, a flow-based vision-language-action model (VLA). the π₀-FAST model, an autoregressive VLA, based on the FAST action tokenizer. the π₀.₅ model, an upgraded version of π₀ with better open-world generalization ..."
+    },
+    {
+      "title": "A VLA with Open-World Generalization",
+      "url": "https://www.pi.website/blog/pi05",
+      "snippet": "Our latest generalist policy, π0.5, extends π0 and enables open-world generalization. Our new model can control a mobile manipulator to clean up an entirely new kitchen or bedroom."
+    }
+  ]
+}

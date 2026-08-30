@@ -1,0 +1,84 @@
+{
+  "schema": 1,
+  "id": "mradermacher/XION0.2-27B-GGUF",
+  "slug": "mradermacher-xion0-2-27b-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/XION0.2-27B-GGUF",
+  "created_at": "2026-08-30T06:46:10.000Z",
+  "updated_at": "2026-08-30T07:07:57.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en",
+    "ko",
+    "ja",
+    "zh"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "vllm",
+    "uncensored",
+    "qwen3.8",
+    "bf16",
+    "abliterated",
+    "reasoning",
+    "long-context",
+    "en",
+    "ko",
+    "ja",
+    "zh",
+    "dataset:saidutta69/fable-5-premium",
+    "base_model:PIXELZX/XION0.2-27B",
+    "base_model:quantized:PIXELZX/XION0.2-27B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 26895998464,
+  "parameters_human": "26.90B",
+  "storage_bytes": 187905349312,
+  "storage_human": "187.9 GB",
+  "base_model": "PIXELZX/XION0.2-27B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "mradermacher/Serenity-27B-GGUF · Hugging Face",
+      "url": "https://huggingface.co/mradermacher/Serenity-27B-GGUF",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "mradermacher/atom-27b-GGUF · Hugging Face",
+      "url": "https://huggingface.co/mradermacher/atom-27b-GGUF",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Mradermacher - Find Top AI Models on Hugging Face",
+      "url": "https://www.aimodels.fyi/creators/huggingFace/mradermacher",
+      "snippet": "Looking for Mradermacher&#x27;s top AI models? Browse their full Hugging Face collection of 26 models. Explore AI models and contributions by Mradermacher on Huggingface."
+    },
+    {
+      "title": "Best Uncensored Local LLMs by VRAM Tier (2026) | InsiderLLM",
+      "url": "https://insiderllm.com/guides/best-uncensored-local-llms/",
+      "snippet": "By VRAM Tier Pick the tier that matches your hardware. Every model below has been confirmed live on HuggingFace at the time of writing, with GGUF available either in the linked repo or via a sibling quant repo from bartowski or mradermacher. 8GB VRAM — Budget tier The 8B class is the floor for usable uncensored output. Picks:"
+    },
+    {
+      "title": "atom-27b-i1-GGUF huggingface.co api & mradermacher atom-27b-i1-GGUF ...",
+      "url": "https://www.toolify.ai/ai-model/mradermacher-atom-27b-i1-gguf",
+      "snippet": "atom-27b-i1-GGUF is an open source model from GitHub that offers a free installation service, and any user can find atom-27b-i1-GGUF on GitHub to install. At the same time, huggingface.co provides the effect of atom-27b-i1-GGUF install, users can directly use atom-27b-i1-GGUF installed effect in huggingface.co for debugging and trial."
+    }
+  ]
+}

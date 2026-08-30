@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "doldolggi/EvoCUA-32B-20260105-GGUF",
+  "slug": "doldolggi-evocua-32b-20260105-gguf",
+  "author": "doldolggi",
+  "url": "https://huggingface.co/doldolggi/EvoCUA-32B-20260105-GGUF",
+  "created_at": "2026-08-30T08:43:17.000Z",
+  "updated_at": "2026-08-30T08:43:29.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "gguf",
+  "languages": [],
+  "tags": [
+    "gguf",
+    "llama.cpp",
+    "computer-use",
+    "gui-agent",
+    "qwen3vl",
+    "quantization",
+    "amd",
+    "rocm",
+    "rdna4",
+    "image-text-to-text",
+    "base_model:meituan/EvoCUA-32B-20260105",
+    "base_model:quantized:meituan/EvoCUA-32B-20260105",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": "meituan/EvoCUA-32B-20260105",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "meituan/EvoCUA-32B-20260105 · Hugging Face",
+      "url": "https://huggingface.co/meituan/EvoCUA-32B-20260105",
+      "snippet": "We evaluated EvoCUA on WindowsAgentArena (WAA) to test generalization from the Linux-based training environment to a wholly different OS platform. As shown below, EvoCUA-32B reaches 56.48%, surpassing the base model Qwen3-VL-32B-Thinking (42.9%) by ~13.6 points and the leading frontier GUI agent UI-TARS-2 (50.6%) by nearly 6 points."
+    },
+    {
+      "title": "meituan-EvoCUA-32B-20260105-GGUF - Hugging Face",
+      "url": "https://huggingface.co/spicyneuron/meituan-EvoCUA-32B-20260105-GGUF",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GitHub - meituan/EvoCUA: EvoCUA: Evolving Computer Use Agent",
+      "url": "https://github.com/meituan/EvoCUA",
+      "snippet": "EvoCUA: Evolving Computer Use Agent. Contribute to meituan/EvoCUA development by creating an account on GitHub."
+    },
+    {
+      "title": "EvoCUA-32B-20260105 · Models",
+      "url": "https://www.modelscope.cn/models/meituan/EvoCUA-32B-20260105",
+      "snippet": "EvoCUA is #1 among all open-source models, achieving competitive results with only 50 steps. Human-level performance remains significantly higher, indicating substantial room for improvement."
+    },
+    {
+      "title": "EvoCUA Model | meituan/EvoCUA | DeepWiki",
+      "url": "https://deepwiki.com/meituan/EvoCUA/6.1-evocua-model",
+      "snippet": "Model Overview EvoCUA-32B is a general-purpose multimodal large language model specialized for computer use tasks. Released as meituan/EvoCUA-32B-20260105 on HuggingFace, the model represents the current state-of-the-art among open-source computer use agents."
+    }
+  ]
+}

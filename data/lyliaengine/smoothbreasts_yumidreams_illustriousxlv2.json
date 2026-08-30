@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "LyliaEngine/SmoothBreasts_yumidreams_IllustriousXLV2",
+  "slug": "lyliaengine-smoothbreasts_yumidreams_illustriousxlv2",
+  "author": "LyliaEngine",
+  "url": "https://huggingface.co/LyliaEngine/SmoothBreasts_yumidreams_IllustriousXLV2",
+  "created_at": "2026-08-30T10:30:30.000Z",
+  "updated_at": "2026-08-30T10:33:55.000Z",
+  "license": "cdla-permissive-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-image",
+  "library": "diffusers",
+  "languages": [],
+  "tags": [
+    "diffusers",
+    "text-to-image",
+    "lora",
+    "template:diffusion-lora",
+    "base_model:OnomaAIResearch/Illustrious-xl-early-release-v0",
+    "base_model:adapter:OnomaAIResearch/Illustrious-xl-early-release-v0",
+    "license:cdla-permissive-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 229819387,
+  "storage_human": "230 MB",
+  "base_model": "OnomaAIResearch/Illustrious-xl-early-release-v0",
+  "formats": [
+    "diffusers"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Breasts - Smooth Breasts / Smoot… v2.0 (Illustrious) | CivArchive",
+      "url": "https://civarchive.com/models/1389981?modelVersionId=2335166",
+      "snippet": "Smooth Breasts/Smooth Nipples Concept LoRa (Illustrious) SDXL A LoRa trained with the Illustrious model, designed to create a unique and soft and natural aesthetic for female breasts."
+    },
+    {
+      "title": "Breasts - Smooth Breasts / Smooth Nipples Concept LoRa (IllustriousXL)",
+      "url": "https://civitai.red/models/1389981/breasts-smooth-breasts-smooth-nipples-concept-lora-illustriousxl?modelVersionId=2335166",
+      "snippet": "LoRa Features: Trigger words: smooth breasts, smooth nipples (main triggers for the soft aesthetic). large areolae / puffy nipples / inverted nipples / saggy breasts / natural breasts (optional, for additional detail and variation)."
+    },
+    {
+      "title": "Breasts - Smooth Breasts / Smooth Nipples Concept LoRa (IllustriousXL ...",
+      "url": "https://civarchive.com/models/1389981?modelVersionId=1570942",
+      "snippet": "Download Breasts - Smooth Breasts / Smooth Nipples Concept LoRa (IllustriousXL) - LORA for Illustrious by _yumidreams. Free AI model download from CivArchive."
+    },
+    {
+      "title": "Smooth Breasts / Smooth Nipples Anime... | Tensor.Art",
+      "url": "https://tensor.art/models/878849227495619340",
+      "snippet": "Download Smooth Breasts / Smooth Nipples Anime Concept LoRa (Illustrious) SDXL - free LORA Illustrious AI model on TENSOR. By _yumidreams"
+    },
+    {
+      "title": "LyliaEngine/riMixIllustriousAnima_riMixV2 · Hugging Face",
+      "url": "https://huggingface.co/LyliaEngine/riMixIllustriousAnima_riMixV2",
+      "snippet": "LyliaEngine / riMixIllustriousAnima_riMixV2 like 0 Text-to-Image Diffusers lora template:diffusion-lora License:cdla-permissive-2. Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    }
+  ]
+}

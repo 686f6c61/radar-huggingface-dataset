@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "a111311/ex1_p1",
+  "slug": "a111311-ex1_p1",
+  "author": "a111311",
+  "url": "https://huggingface.co/a111311/ex1_p1",
+  "created_at": "2026-08-30T06:19:12.000Z",
+  "updated_at": "2026-08-30T06:54:05.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gemma",
+    "text-generation",
+    "arxiv:1910.09700",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 2506172416,
+  "parameters_human": "2.51B",
+  "storage_bytes": 5050960852,
+  "storage_human": "5.1 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ModelVault — The Open AI Model Directory & Benchmark Matrix",
+      "url": "https://www.modelvault.space/",
+      "snippet": "Discover, compare, and benchmark 11,000+ cloud and local AI models. Filter by modalities, context windows, pricing, providers, and performance benchmarks."
+    },
+    {
+      "title": "AI Model Index",
+      "url": "https://www.modelindex.org/",
+      "snippet": "Search and explore AI models across providers, modalities, and capabilities. Currently supported providers: OpenAI, Google, Anthropic, Meta, and Mistral AI. See the Model Inclusion Policy for details on selection criteria."
+    },
+    {
+      "title": "Models.dev - An open-source database of AI models",
+      "url": "https://models.dev/",
+      "snippet": "Models.dev is a comprehensive open-source database of AI model specifications, pricing, and features."
+    },
+    {
+      "title": "a1111 AI Models | Civitai",
+      "url": "https://civitai.com/tag/a1111",
+      "snippet": "Browse 13 Stable Diffusion & Flux models, LoRAs, checkpoints, and embeddings tagged with a1111."
+    },
+    {
+      "title": "ex1.ai",
+      "url": "https://www.ex1.ai/",
+      "snippet": "What You Get A complete 24-chapter roadmap from core linear algebra to modern ML systems. Structured progression from intuition to formal definitions, proofs, and derivations. Optimization-focused treatment connecting geometry, algorithms, and learning dynamics. Practical context on robustness, distribution shift, constraints, and scaling behavior. Clear chapter outcomes and links to continue ..."
+    }
+  ]
+}

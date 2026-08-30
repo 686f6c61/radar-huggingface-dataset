@@ -1,0 +1,81 @@
+{
+  "schema": 1,
+  "id": "mohsinakh/roberta-base-sst2-sentiment",
+  "slug": "mohsinakh-roberta-base-sst2-sentiment",
+  "author": "mohsinakh",
+  "url": "https://huggingface.co/mohsinakh/roberta-base-sst2-sentiment",
+  "created_at": "2026-08-30T09:46:35.000Z",
+  "updated_at": "2026-08-30T09:55:11.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "safetensors",
+    "roberta",
+    "sentiment-analysis",
+    "text-classification",
+    "sst2",
+    "glue",
+    "en",
+    "arxiv:1907.11692",
+    "base_model:FacebookAI/roberta-base",
+    "base_model:finetune:FacebookAI/roberta-base",
+    "license:apache-2.0",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 124647170,
+  "parameters_human": "124.6M",
+  "storage_bytes": 498612824,
+  "storage_human": "499 MB",
+  "base_model": "roberta-base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "Sentiment Analysis",
+      "dataset": "GLUE SST-2",
+      "metric": "Accuracy (SST-2 validation)",
+      "value": 0.8383
+    }
+  ],
+  "sources": [
+    {
+      "title": "rasyosef/roberta-base-finetuned-sst2 · Hugging Face",
+      "url": "https://huggingface.co/rasyosef/roberta-base-finetuned-sst2",
+      "snippet": "roberta-base-finetuned-sst2 This model is a fine-tuned version of roberta-base on the glue sst2 dataset for sentiment classification. It achieves the following results on the evaluation set: Train Loss: 0.0760 Train Accuracy: 0.9736 Validation Loss: 0.2081 Validation Accuracy: 0.9346 Model description More information needed Intended uses & limitations More information needed How to use You ..."
+    },
+    {
+      "title": "roberta-base-sst2 | PromptLayer Models",
+      "url": "https://www.promptlayer.com/models/roberta-base-sst2/",
+      "snippet": "RoBERTa-based text classification model fine-tuned on SST2 dataset, achieving 93.23% accuracy for sentiment analysis. MIT licensed with PyTorch implementation."
+    },
+    {
+      "title": "rdp99/roberta-base-sst2-finetuned-emotion · Hugging Face",
+      "url": "https://huggingface.co/rdp99/roberta-base-sst2-finetuned-emotion",
+      "snippet": "roberta-base-sst2-finetuned-emotion This model is a fine-tuned version of WillHeld/roberta-base-sst2 on an unknown dataset. It achieves the following results on the evaluation set:"
+    },
+    {
+      "title": "roberta-base-finetuned-sst2 Open-Source Text Classification Model ...",
+      "url": "https://model.aibase.com/models/details/1915694160620969986",
+      "snippet": "Model Overview This model is a pre-trained model based on the RoBERTa architecture, fine-tuned on the SST-2 sentiment analysis task from the GLUE benchmark, specifically designed for sentence-level sentiment classification tasks."
+    },
+    {
+      "title": "mohsinakh (Mohsin Abbas) · GitHub",
+      "url": "https://github.com/mohsinakh/",
+      "snippet": "AI Test Failure Explainer — a Playwright + pytest regression suite with a local Llama 3.1 model wired into the test hooks, so a failed test comes back with a plain-English explanation of why."
+    }
+  ]
+}

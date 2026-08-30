@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "JayF14/varuna-HybridTransU-net",
+  "slug": "jayf14-varuna-hybridtransu-net",
+  "author": "JayF14",
+  "url": "https://huggingface.co/JayF14/varuna-HybridTransU-net",
+  "created_at": "2026-08-30T11:04:28.000Z",
+  "updated_at": "2026-08-30T11:04:34.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "earth-sciences",
+    "weather-forecasting",
+    "spatiotemporal",
+    "pytorch",
+    "unet",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 211837762,
+  "storage_human": "212 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Varuna AI - Sovereign Intelligence",
+      "url": "https://varunaai.in/",
+      "snippet": "Synchronize your neural designation with the core Varuna AI protocol. Clearance required for core system modifications and sovereign AI interactions."
+    },
+    {
+      "title": "Hugging Face - The AI community building the future.",
+      "url": "https://huggingface.co/",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Varuna: Integrating AI with Environmental Data for Water Quality ...",
+      "url": "https://nsri.world/archive/2026/1/nsri-ra-2026-0053",
+      "snippet": "To address this problem, we tested the hypothesis that an AI system trained on environmental data can accurately predict water quality conditions. Publicly available water quality sample data for Austin, Texas, was combined with environmental data from an API (Application Programming Interface) over an overlapping three-month period."
+    },
+    {
+      "title": "GitHub - shoubhyasinha21/VARUNA-AI",
+      "url": "https://github.com/shoubhyasinha21/VARUNA-AI",
+      "snippet": "🧠 3. Multi-Signal AI & Hydrological Risk Engine Raw data streams are normalized into an inference vector passed through a hybrid hydrological physics model combined with an XGBoost (Extreme Gradient Boosting) risk scoring classifier."
+    },
+    {
+      "title": "GitHub - krritesh017/VARUNA-AI-1",
+      "url": "https://github.com/krritesh017/VARUNA-AI-1",
+      "snippet": "⚡ VARUNA-AI Multi-Modal Spatiotemporal Early Warning Grid for Extreme Convective Weather & Catchment Flash Floods An end-to-end meteorological nowcasting platform providing 2 to 6 hours of actionable lead time for Cloudbursts, Flash Floods, and Severe Thunderstorms across high-risk Indian terrain."
+    }
+  ]
+}

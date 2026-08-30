@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "avlp12/GLM-5.3-Flash-Alis-MTP-Drafter",
+  "slug": "avlp12-glm-5-3-flash-alis-mtp-drafter",
+  "author": "avlp12",
+  "url": "https://huggingface.co/avlp12/GLM-5.3-Flash-Alis-MTP-Drafter",
+  "created_at": "2026-08-30T10:23:49.000Z",
+  "updated_at": "2026-08-30T10:27:58.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "mlx",
+  "languages": [],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "glm5_next_mtp",
+    "apple-silicon",
+    "glm5_next",
+    "speculative-decoding",
+    "draft-model",
+    "base_model:zai-org/GLM-5.3-Flash",
+    "base_model:quantized:zai-org/GLM-5.3-Flash",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 7432592416,
+  "parameters_human": "7.43B",
+  "storage_bytes": 14885406019,
+  "storage_human": "14.9 GB",
+  "base_model": "zai-org/GLM-5.3-Flash",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "avlp12/GLM-5.2-Alis-MLX-Dynamic-3.5bpw · Hugging Face",
+      "url": "https://huggingface.co/avlp12/GLM-5.2-Alis-MLX-Dynamic-3.5bpw",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GLM-5.3-Flash - Overview - Z.AI DEVELOPER DOCUMENT",
+      "url": "https://docs.z.ai/guides/vlm/glm-5.3-flash",
+      "snippet": "Model Overview GLM-5.3-Flash is the first native multimodal model in the GLM-5 series, delivering stronger intelligence than GLM-5.2 at an exceptionally low cost. Highly Efficient Hybrid Architecture GLM-5.3-Flash has 320B total parameters with 18B activated."
+    },
+    {
+      "title": "avlp12 (ALISVOLATPROPRIIS) - Hugging Face",
+      "url": "https://huggingface.co/avlp12",
+      "snippet": "MLX quantization, Apple Silicon inference, MoE models, local LLM deployment, medical AI, geopolitical early warning systems, humanoid robotics, semiconductor/memory markets, multi-agent systems"
+    },
+    {
+      "title": "GLM-5.3 | OpenLM.ai",
+      "url": "https://openlm.ai/glm-5.5/",
+      "snippet": "GLM-5.3 is our latest flagship model for coding and long-horizon tasks. It marks a substantial leap in long-horizon task capability over its predecessor GLM-5.1 and delivers that capability on a solid 1M-token context. It is pure open with an MIT open-source license — no regional limits, technical access without borders."
+    },
+    {
+      "title": "GLM-5.3 & GLM-5.2 & GLM-5.1 & GLM-5 - GitHub",
+      "url": "https://github.com/zai-org/GLM-5",
+      "snippet": "GLM-5.3 uses the same base model as GLM-5.2 — every gain comes from post-training. Compared with GLM-5.2, it is much better at complex coding and long-horizon tasks: Stronger Coding: GLM-5.3 is the most capable open-weights model for coding, with a 50% improvement over GLM-5.2 on our in-house Z.ai ..."
+    }
+  ]
+}

@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "AmberYifan/capsd-less-humaneval-opc-marin-8b-base-code_less_b2000_s0",
+  "slug": "amberyifan-capsd-less-humaneval-opc-marin-8b-base-code_less_b2000_s0",
+  "author": "AmberYifan",
+  "url": "https://huggingface.co/AmberYifan/capsd-less-humaneval-opc-marin-8b-base-code_less_b2000_s0",
+  "created_at": "2026-08-30T10:08:50.000Z",
+  "updated_at": "2026-08-30T10:12:48.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "llama",
+    "text-generation",
+    "llama-factory",
+    "full",
+    "generated_from_trainer",
+    "conversational",
+    "base_model:marin-community/marin-8b-base",
+    "base_model:finetune:marin-community/marin-8b-base",
+    "license:other",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 8030261248,
+  "parameters_human": "8.03B",
+  "storage_bytes": 16077774297,
+  "storage_human": "16.1 GB",
+  "base_model": "marin-community/marin-8b-base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "AmberYifan/capsd-marin-8b-base-code_less_b2000_s0 · Hugging Face",
+      "url": "https://huggingface.co/AmberYifan/capsd-marin-8b-base-code_less_b2000_s0",
+      "snippet": "Instructions to use AmberYifan/capsd-marin-8b-base-code_less_b2000_s0 with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "capsd-marin-8b-base-code_less_b8000_s0 - Hugging Face",
+      "url": "https://huggingface.co/AmberYifan/capsd-marin-8b-base-code_less_b8000_s0",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "HumanEval Leaderboard - llm-stats.com",
+      "url": "https://llm-stats.com/benchmarks/humaneval",
+      "snippet": "HumanEval leaderboard — MiniCPM-SALA leads 66 AI models at 0.951. A benchmark that measures functional correctness for synthesizing programs from docstrings, c…"
+    },
+    {
+      "title": "HumanEval Leaderboard 2026 - Compare AI Model Scores",
+      "url": "https://pricepertoken.com/leaderboards/benchmark/humaneval",
+      "snippet": "Compare AI model performance on HumanEval benchmark. See top LLM scores and rankings."
+    },
+    {
+      "title": "capsd-marin-8b-base-code_ppl_b2000_s0 - FriendliAI",
+      "url": "https://friendli.ai/models/AmberYifan/capsd-marin-8b-base-code_ppl_b2000_s0",
+      "snippet": "Run capsd-marin-8b-base-code_ppl_b2000_s0 with FriendliAI inference. This model is a fine-tuned version of marin-community/marin-8b-base on the…"
+    }
+  ]
+}

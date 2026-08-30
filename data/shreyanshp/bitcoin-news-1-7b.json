@@ -1,0 +1,76 @@
+{
+  "schema": 1,
+  "id": "shreyanshp/bitcoin-news-1.7b",
+  "slug": "shreyanshp-bitcoin-news-1-7b",
+  "author": "shreyanshp",
+  "url": "https://huggingface.co/shreyanshp/bitcoin-news-1.7b",
+  "created_at": "2026-08-30T01:59:04.000Z",
+  "updated_at": "2026-08-30T02:00:16.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "gguf",
+    "llama.cpp",
+    "bitcoin",
+    "on-device",
+    "edge",
+    "q1_0",
+    "1-bit",
+    "text-generation",
+    "conversational",
+    "en",
+    "base_model:Qwen/Qwen3-1.7B",
+    "base_model:quantized:Qwen/Qwen3-1.7B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1720574976,
+  "parameters_human": "1.72B",
+  "storage_bytes": 1854519998,
+  "storage_human": "1.9 GB",
+  "base_model": "Qwen/Qwen3-1.7B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Bitcoin Crash Wipes $1.7B From MARA",
+      "url": "https://chainaffairs.com/bitcoin-crash-wipes-1-7b-from-mara-is-crypto-entering-a-new-reality/",
+      "snippet": "Bitcoin Price Drop Hits MARA&#x27;s Balance Sheet MARA disclosed a $1.71 billion net loss for the fourth quarter of 2025 in a filing with the U.S. Securities and Exchange Commission, driven largely by falling crypto prices. The firm cited a significant decline in the fair value of its digital assets as Bitcoin slid sharply from its October peak near $126,000 to roughly $65,000."
+    },
+    {
+      "title": "MARA Stock Skyrockets 16% Even as the Bitcoin Miner Took a $1.7B - TipRanks",
+      "url": "https://www.tipranks.com/news/mara-stock-skyrockets-16-even-as-the-bitcoin-miner-took-a-1-7b",
+      "snippet": "MARA Holdings stock jumped more than 16% because investors felt excited about a new deal to build AI data centers, which helped them ignore a huge $1.7 billion loss. The stock market had a surprise for investors today. MARA Holdings MARA +0.99% , formerly Marathon Digital Holdings, stock skyrocketed by over 16% in a single day."
+    },
+    {
+      "title": "Tether Goes Beyond Crypto — Releases Compact 1.7B & 4B Medical AI Models",
+      "url": "https://www.cryptotimes.io/2026/05/07/tether-goes-beyond-crypto-releases-compact-1-7b-4b-medical-ai-models/",
+      "snippet": "Tether announces the open-source release of QVAC MedPsy, a state-of-the-art medical AI model, marking a significant expansion into AI. The MedPsy models outperform comparable models, including Google&#x27;s MedGemma, with the 1.7B model surpassing larger models on key benchmarks. Released under the ..."
+    },
+    {
+      "title": "MARA Posts $1.7B Q4 Loss as Bitcoin Slump Hits Earnings",
+      "url": "https://cointelegraph.com/news/marathon-posts-1-7b-quarterly-loss-bitcoin",
+      "snippet": "MARA reported a $1.71 billion Q4 loss on Bitcoin fair‑value hits, while accelerating an AI and HPC data center pivot."
+    },
+    {
+      "title": "Bitcoin&#x27;s Plunge: $1.7B Capitulation Sparks Market Fears",
+      "url": "https://www.ainvest.com/news/bitcoin-plunge-1-7b-capitulation-sparks-market-fears-2502/",
+      "snippet": "Editorial Disclosure & AI Transparency: Ainvest News utilizes advanced Large Language Model (LLM) technology to synthesize and analyze real-time market data. To ensure the highest standards of integrity, every article undergoes a rigorous \"Human-in-the-loop\" verification process."
+    }
+  ]
+}

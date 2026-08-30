@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "harshaljanjani/gte-base-en-v1.5-hf",
+  "slug": "harshaljanjani-gte-base-en-v1-5-hf",
+  "author": "harshaljanjani",
+  "url": "https://huggingface.co/harshaljanjani/gte-base-en-v1.5-hf",
+  "created_at": "2026-08-30T06:35:01.000Z",
+  "updated_at": "2026-08-30T06:35:08.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gte",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 136776192,
+  "parameters_human": "136.8M",
+  "storage_bytes": 547119128,
+  "storage_human": "547 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Alibaba-NLP/gte-base-en-v1.5 · Hugging Face",
+      "url": "https://huggingface.co/Alibaba-NLP/gte-base-en-v1.5",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Teradata/gte-base-en-v1.5 · Hugging Face",
+      "url": "https://huggingface.co/Teradata/gte-base-en-v1.5",
+      "snippet": "An Embedding Model which maps text (sentence/ paragraphs) into a vector. The Alibaba-NLP/gte-base-en-v1.5 model well known for its effectiveness in capturing semantic meanings in text data."
+    },
+    {
+      "title": "gte-base-en-v1.5: Text-to-Text model — overview, use cases, alternatives",
+      "url": "https://www.aimodels.fyi/models/huggingFace/gte-base-en-v15-alibaba-nlp",
+      "snippet": "Overview gte-base-en-v1.5 is a 137-million parameter English text embedding model developed by Alibaba-NLP that generates 768-dimensional dense vectors for semantic search, clustering, and similarity matching. Built on a transformer++ architecture (BERT + RoPE + GLU) backbone, this model supports a context length of 8192 tokens, making it substantially more capable than prior embedding models ..."
+    },
+    {
+      "title": "gte-base-en-v1.5: Text-to-Text model — overview, use cases, alternatives",
+      "url": "https://www.aimodels.fyi/models/huggingFace/gte-base-en-v1.5-alibaba-nlp",
+      "snippet": "Use gte-base-en-v1.5 for English-only applications where you need a smaller model footprint (137M vs 560M) and long-context support; use E5 if multilingual requirements justify the 4x parameter increase."
+    },
+    {
+      "title": "harshaljanjani (Harshal Janjani) · GitHub",
+      "url": "https://github.com/harshaljanjani/",
+      "snippet": "Google Developer Expert in AI, contributor to @huggingface, @vllm-project, and former engineer at @keras-team (Google) - harshaljanjani"
+    }
+  ]
+}

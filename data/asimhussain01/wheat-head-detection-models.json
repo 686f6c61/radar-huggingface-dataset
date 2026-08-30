@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "asimhussain01/Wheat-Head-Detection-Models",
+  "slug": "asimhussain01-wheat-head-detection-models",
+  "author": "asimhussain01",
+  "url": "https://huggingface.co/asimhussain01/Wheat-Head-Detection-Models",
+  "created_at": "2026-08-18T05:49:42.000Z",
+  "updated_at": "2026-08-30T08:11:46.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1620113181,
+  "storage_human": "1.6 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - asimhussain0010/Wheat-Head-Detection",
+      "url": "https://github.com/asimhussain0010/Wheat-Head-Detection",
+      "snippet": "The system takes an image as input, processes it through a trained object-detection model, identifies wheat heads, and returns the detected objects together with their locations and confidence scores."
+    },
+    {
+      "title": "Wheat Head Detection in Field Environments Based on an Improved ... - MDPI",
+      "url": "https://www.mdpi.com/2077-0472/15/16/1765",
+      "snippet": "Precise wheat head detection is essential for plant counting and yield estimation in precision agriculture. To tackle the difficulties arising from densely packed wheat heads with diverse scales and intricate occlusions in real-world field conditions, this research introduces YOLO v11n-GRN, an improved wheat head detection model founded on the streamlined YOLO v11n framework. The model ..."
+    },
+    {
+      "title": "Counting wheat heads using a simulation model - ScienceDirect",
+      "url": "https://www.sciencedirect.com/science/article/pii/S016816992401024X",
+      "snippet": "A comparative analysis of these models revealed that using our simulation strategy to train the model on 800 simulated wheat images (Fig. 4 a) gave superior performance compared to the training the model on 2500 green wheat images from SDAU2021 (Fig. 4 b); this model yielded similar RMSE and MAE values with the model trained on the GWHD2021 ..."
+    },
+    {
+      "title": "GitHub - shervinnd/Wheat_Detection: Wheat Detection uses YOLO11 to ...",
+      "url": "https://github.com/shervinnd/Wheat_Detection",
+      "snippet": "Wheat Detection uses YOLO11 to identify wheat heads in images from the GlobalWheat2020 dataset. This project automates dataset download, model training, and inference with bounding box visualization."
+    },
+    {
+      "title": "Wheat Head Detection in Field Environments Based on an ... - ResearchGate",
+      "url": "https://www.researchgate.net/publication/394543175_Wheat_Head_Detection_in_Field_Environments_Based_on_an_Improved_YOLOv11_Model",
+      "snippet": "Download Citation | Wheat Head Detection in Field Environments Based on an Improved YOLOv11 Model | Precise wheat head detection is essential for plant counting and yield estimation in precision ..."
+    }
+  ]
+}

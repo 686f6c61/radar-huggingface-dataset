@@ -5,7 +5,7 @@
   "author": "teys7007",
   "url": "https://huggingface.co/teys7007/pythia-160m-seed42-dense",
   "created_at": "2026-04-28T04:44:07.000Z",
-  "updated_at": "2026-08-29T10:47:34.000Z",
+  "updated_at": "2026-08-29T11:23:11.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": null,
@@ -22,6 +22,7 @@
     "dataset:EleutherAI/pile",
     "base_model:EleutherAI/pythia-160m-deduped",
     "base_model:finetune:EleutherAI/pythia-160m-deduped",
+    "doi:10.57967/hf/10155",
     "license:apache-2.0",
     "endpoints_compatible",
     "region:us"

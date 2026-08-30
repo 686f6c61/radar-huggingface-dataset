@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "samvaran/2025801013_anlp_assignment1",
+  "slug": "samvaran-2025801013_anlp_assignment1",
+  "author": "samvaran",
+  "url": "https://huggingface.co/samvaran/2025801013_anlp_assignment1",
+  "created_at": "2026-08-30T06:51:29.000Z",
+  "updated_at": "2026-08-30T07:08:01.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "transformer",
+    "cryptography",
+    "ablation-study",
+    "from-scratch",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 470407185,
+  "storage_human": "470 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "CMU Advanced NLP S2026",
+      "url": "https://cmu-l3.github.io/anlp-spring2026/assignments/assignment1",
+      "snippet": "The assignment consists of two main parts: Part 1: Core Implementation. In this part, you will complete the missing components of the Llama2 model architecture. Specifically, implement: Attention mechanisms Feed-forward networks Layer normalization (LayerNorm) Positional encodings (RoPE) Part 2: Applications."
+    },
+    {
+      "title": "NLP Assignment 1 Theory | PDF | Metalogic | Applied Linguistics",
+      "url": "https://www.scribd.com/document/1071088776/NLP-Assignment-1-Theory",
+      "snippet": "This document is an assignment for the Natural Language Processing course at MIT Art Design and Technology University for the academic year 2025-2026. It includes various questions related to NLP, such as differentiating between human and machine language, discussing real-world applications, and explaining concepts like Discourse Integration and Hidden Markov Models. The assignment aims to ..."
+    },
+    {
+      "title": "Arihant25/anlp-a1-transformer-ablations · Hugging Face",
+      "url": "https://huggingface.co/Arihant25/anlp-a1-transformer-ablations",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "CMU Advanced NLP F2025",
+      "url": "https://cmu-l3.github.io/anlp-fall2025/assignments/assignment1",
+      "snippet": "Llama2 is a transformer-based language model that improves on the original Llama architecture with enhanced performance and efficiency. Its key features include RMSNorm pre-normalization, SwiGLU activation, rotary positional embeddings (RoPE), and grouped-query attention (GQA). In this assignment, you will implement several of these components, which are explained below."
+    },
+    {
+      "title": "GitHub - XingyuJinTI/anlp_assignment1: Assignment1 of Accelerated ...",
+      "url": "https://github.com/XingyuJinTI/anlp_assignment1",
+      "snippet": "Assignment1 of Accelerated Natural Language Processing at the University of Edinburgh - XingyuJinTI/anlp_assignment1"
+    }
+  ]
+}

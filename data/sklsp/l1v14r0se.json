@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "sklsp/l1v14r0se",
+  "slug": "sklsp-l1v14r0se",
+  "author": "sklsp",
+  "url": "https://huggingface.co/sklsp/l1v14r0se",
+  "created_at": "2026-08-30T08:22:58.000Z",
+  "updated_at": "2026-08-30T08:23:34.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-image",
+  "library": "diffusers",
+  "languages": [],
+  "tags": [
+    "diffusers",
+    "text-to-image",
+    "lora",
+    "template:diffusion-lora",
+    "base_model:Tongyi-MAI/Z-Image",
+    "base_model:adapter:Tongyi-MAI/Z-Image",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 173089796,
+  "storage_human": "173 MB",
+  "base_model": "Tongyi-MAI/Z-Image",
+  "formats": [
+    "diffusers"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "CivArchive (CivitAI Archive) - AI Model Archive",
+      "url": "https://civitaiarchive.com/",
+      "snippet": "Browse and discover AI models from CivitAI, TensorArt, and SeaArt. Community-driven archive preserving access to AI resources."
+    },
+    {
+      "title": "AI Leaderboard 2026: Rankings for 300+ Top AI Models by Intelligence ...",
+      "url": "https://llm-stats.com/",
+      "snippet": "The AI Leaderboard — independent rankings of GPT, Claude, Gemini, Llama, DeepSeek and 300+ AI models by intelligence, speed and price. Composite LLM Stats Score updated continuously from public benchmarks and live API metrics."
+    },
+    {
+      "title": "AI Models | Civitai",
+      "url": "https://civitai.com/models",
+      "snippet": "Browse thousands of free Stable Diffusion & Flux models, LoRAs, checkpoints, and embeddings. The largest collection of AI image generation resources."
+    },
+    {
+      "title": "AI Is &#x27;Accelerant&#x27; For Clients, Says S&P Global CFO｜Bloomberg ...",
+      "url": "https://finance.biggo.com/podcast/a6a18d410bd5f279",
+      "snippet": "Key Takeaways S&P Global CFO Eric Aboaf says AI acts as an &#x27;accelerant&#x27; for clients, with usage-based pricing and detailed token tracking justifying renewals, while the firm&#x27;s spin-off of its automotive unit aims to sharpen focus on its core ratings and data business."
+    },
+    {
+      "title": "Best AI Models in August 2026: Updated Rankings and Comparisons",
+      "url": "https://felloai.com/best-ai-models/",
+      "snippet": "The best AI models ranked by use case: writing, coding, image generation, accuracy and more. Updated monthly with benchmarks and pricing for August 2026."
+    }
+  ]
+}

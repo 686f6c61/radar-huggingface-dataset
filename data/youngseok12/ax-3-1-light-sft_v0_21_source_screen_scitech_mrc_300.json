@@ -1,0 +1,78 @@
+{
+  "schema": 1,
+  "id": "youngseok12/AX-3.1-Light-sft_v0_21_source_screen_scitech_mrc_300",
+  "slug": "youngseok12-ax-3-1-light-sft_v0_21_source_screen_scitech_mrc_300",
+  "author": "youngseok12",
+  "url": "https://huggingface.co/youngseok12/AX-3.1-Light-sft_v0_21_source_screen_scitech_mrc_300",
+  "created_at": "2026-08-30T08:13:00.000Z",
+  "updated_at": "2026-08-30T08:15:26.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "ko"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "llama",
+    "text-generation",
+    "korean",
+    "sft",
+    "lora-merged",
+    "k-ai-leaderboard",
+    "source-screening",
+    "conversational",
+    "ko",
+    "base_model:skt/A.X-3.1-Light",
+    "base_model:finetune:skt/A.X-3.1-Light",
+    "license:apache-2.0",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 7264800768,
+  "parameters_human": "7.26B",
+  "storage_bytes": 14529635608,
+  "storage_human": "14.5 GB",
+  "base_model": "skt/A.X-3.1-Light",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "youngseok12/AX-3.1-Light-sft_v3_1_A_control · Hugging Face",
+      "url": "https://huggingface.co/youngseok12/AX-3.1-Light-sft_v3_1_A_control",
+      "snippet": "youngseok12 / AX-3.1-Light-sft_v3_1_A_control like 0 Text Generation Transformers Safetensors Korean llama korean sft lora-merged k-ai-leaderboard conversational text-generation-inference License:apache-2.0 Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "youngseok12/AX-3.1-Light-sft_v3_0 · Hugging Face",
+      "url": "https://huggingface.co/youngseok12/AX-3.1-Light-sft_v3_0",
+      "snippet": "A.X-3.1-Light-sft_v3_0 skt/A.X-3.1-Light 를 기반으로 AI Hub 한국어 데이터로 수행한 첫 번째 clean SFT baseline입니다. LoRA adapter를 base model에 병합한 standalone BF16 모델이므로 별도의 adapter나 custom Python code 없이 Transformers 및 표준 vLLM에서 로드할 수 있습니다."
+    },
+    {
+      "title": "AX-3.1-Light-sft_v0_1 API & Inference Endpoint | FriendliAI",
+      "url": "https://friendli.ai/models/jwg0830/AX-3.1-Light-sft_v0_1",
+      "snippet": "Deploy AX-3.1-Light-sft_v0_1 with low-latency inference on FriendliAI. Get scalable API serving, high throughput, and production-grade reliability for AI agents."
+    },
+    {
+      "title": "Releases · xLightsSequencer/xLights - GitHub",
+      "url": "https://github.com/xLightsSequencer/xLights/releases",
+      "snippet": "scott — AI Services: ChatGPT, the Generic OpenAI client, and Ollama now fetch the model list from the server and present it as a dropdown, including a model picker in the AI image generation dialog."
+    },
+    {
+      "title": "GitHub · Change is constant. GitHub keeps you ahead. · GitHub",
+      "url": "https://github.com/",
+      "snippet": "Join the world&#x27;s most widely adopted, AI-powered developer platform where millions of developers, businesses, and the largest open source community build software that advances humanity."
+    }
+  ]
+}

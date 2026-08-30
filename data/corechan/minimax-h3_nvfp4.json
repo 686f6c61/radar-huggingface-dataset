@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "corechan/MiniMax-H3_nvfp4",
+  "slug": "corechan-minimax-h3_nvfp4",
+  "author": "corechan",
+  "url": "https://huggingface.co/corechan/MiniMax-H3_nvfp4",
+  "created_at": "2026-08-30T08:45:24.000Z",
+  "updated_at": "2026-08-30T08:47:19.000Z",
+  "license": "minimax-h3-community-license",
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "text-generation",
+    "text-to-video",
+    "video-generation",
+    "quantized",
+    "nvfp4",
+    "bitsandbytes",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "corechan/MiniMax-H3_NF4 · Hugging Face",
+      "url": "https://huggingface.co/corechan/MiniMax-H3_NF4",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "lilcheaty/MiniMax-H3-NVFP4 · Hugging Face",
+      "url": "https://huggingface.co/lilcheaty/MiniMax-H3-NVFP4",
+      "snippet": "H3 was trained on the structured output of H3-Context-IR, a preprocessing model that rewrites a plain request into labelled sections; MiniMax&#x27;s model card calls it \"critical to the quality of the final output\". ComfyUI passes your raw string straight to the DiT, so you must write that structure yourself. Official guides: base · ref"
+    },
+    {
+      "title": "GitHub - MiniMax-AI/MiniMax-H3 · GitHub",
+      "url": "https://github.com/MiniMax-AI/MiniMax-H3",
+      "snippet": "Contribute to MiniMax-AI/MiniMax-H3 development by creating an account on GitHub."
+    },
+    {
+      "title": "Minimax H3 Video Gen (NVFP4/BF16/FP8/INT8/INT4/GGUF)",
+      "url": "https://www.stablediffusiontutorials.com/2026/08/minimax-h3.html",
+      "snippet": "Now, the next Open sourced Video generation model is here. MiniMax H3 (Developed by MiniMaxAI) is positioned as a next-generation general-purpose multimodal video model designed to move beyond specialized generation tasks toward broader multimodal intelligence. Rather than limiting itself to text prompts, can understand a combination of Text,Images,Video and Audio. The idea is straightforward ..."
+    },
+    {
+      "title": "MiniMax H3 Model Files & Downloads: GitHub, Hugging Face, GGUF, INT8 ...",
+      "url": "https://minimaxh3.run/minimax-h3-model-files-downloads",
+      "snippet": "Find official MiniMax H3 files, including pruned BF16, INT8, NVFP4, and VAE variants. Compare sources, GGUF status, folder paths, and missing-model fixes."
+    }
+  ]
+}

@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "fadijomaa/ChatAsmar",
+  "slug": "fadijomaa-chatasmar",
+  "author": "fadijomaa",
+  "url": "https://huggingface.co/fadijomaa/ChatAsmar",
+  "created_at": "2026-08-30T10:00:14.000Z",
+  "updated_at": "2026-08-30T10:00:14.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "CivArchive (CivitAI Archive) - AI Model Archive",
+      "url": "https://civitaiarchive.com/",
+      "snippet": "Browse and discover AI models from CivitAI, TensorArt, and SeaArt. Community-driven archive preserving access to AI resources."
+    },
+    {
+      "title": "AI Aimbot Models & YOLO Detection Models | MossyModels",
+      "url": "https://mossymodels.com/",
+      "snippet": "Browse 661+ free YOLO and ONNX detection models across 43+ games. Community library for Fortnite, Valorant, Warzone, Apex Legends, and more."
+    },
+    {
+      "title": "Models - Hugging Face",
+      "url": "https://huggingface.co/models",
+      "snippet": "Explore machine learning models."
+    },
+    {
+      "title": "Free Private AI Chat & Roleplay | HammerAI",
+      "url": "https://www.hammerai.com/",
+      "snippet": "Chat with role-playing AI characters, generate images, and write stories - 100% free and completely private."
+    },
+    {
+      "title": "Browse all AI Models - Overchat AI",
+      "url": "https://overchat.ai/models",
+      "snippet": "Find the right AI chatbot to solve your task, from asking AI questions and deep conversations to coding and complex reasoning. Browse and choose."
+    }
+  ]
+}

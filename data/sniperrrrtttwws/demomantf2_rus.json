@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "sniperrrrtttwws/DemomanTF2_RUS",
+  "slug": "sniperrrrtttwws-demomantf2_rus",
+  "author": "sniperrrrtttwws",
+  "url": "https://huggingface.co/sniperrrrtttwws/DemomanTF2_RUS",
+  "created_at": "2026-08-30T09:58:13.000Z",
+  "updated_at": "2026-08-30T10:00:44.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "ru"
+  ],
+  "tags": [
+    "ru",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Demoman TF2 (RUS Dub) (RVC 2.0) (250 Epochs) AI Voice Model",
+      "url": "https://voice-models.com/model/1mK92BksfBT",
+      "snippet": "Demoman TF2 (RUS Dub) (RVC 2.0) (250 Epochs) AI voice model for RVC voice conversion. View details, samples, source status, and run this voice model in EasyAIVoice."
+    },
+    {
+      "title": "Demoman (RUS) Team Fortress 2/TF2RVC V2, Crepe, Epochs 250 AI Voice Model",
+      "url": "https://voice-models.com/model/1mg9MGOCtr4",
+      "snippet": "Demoman (RUS) Team Fortress 2/TF2RVC V2, Crepe, Epochs 250 AI voice model for RVC voice conversion. View details, samples, source status, and run this voice model in EasyAIVoice."
+    },
+    {
+      "title": "AI Demoman (RUS) Team Fortress 2/TF2, Epochs 250 Voice Generator",
+      "url": "https://voicedub.ai/create/demoman-rus-team-fortress-2tf2-epochs-250",
+      "snippet": "The AI Demoman (RUS) Team Fortress 2/TF2, Epochs 250 voice is a user-created voice model on VoiceDub that converts the vocals of any song — or any text you type — into AI Demoman (RUS) Team Fortress 2/TF2, Epochs 250&#x27;s voice."
+    },
+    {
+      "title": "An Improved Demoman Mod for Team Fortress 2 | TF2 Mods",
+      "url": "https://gamebanana.com/mods/194845",
+      "snippet": "An Improved Demoman - A Mod for Team Fortress 2. Team Fortress 2 Mods Skins The Demoman Player Model An Improved Demoman"
+    },
+    {
+      "title": "Convert Demoman (RUS) Team Fortress 2/tf2rvc V2, CREPE, Epochs 250 ...",
+      "url": "https://easyaivoice.com/run/demoman-rus-team-fortress-2-tf2rvc",
+      "snippet": "Use the Demoman (RUS) Team Fortress 2/tf2rvc V2, CREPE, Epochs 250 voice model online with EasyAIVoice. Upload audio, adjust pitch, and convert speech or vocals."
+    }
+  ]
+}

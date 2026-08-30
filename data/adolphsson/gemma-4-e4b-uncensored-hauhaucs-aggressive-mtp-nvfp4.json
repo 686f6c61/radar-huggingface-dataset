@@ -1,0 +1,86 @@
+{
+  "schema": 1,
+  "id": "Adolphsson/Gemma-4-E4B-Uncensored-HauhauCS-Aggressive-MTP-NVFP4",
+  "slug": "adolphsson-gemma-4-e4b-uncensored-hauhaucs-aggressive-mtp-nvfp4",
+  "author": "Adolphsson",
+  "url": "https://huggingface.co/Adolphsson/Gemma-4-E4B-Uncensored-HauhauCS-Aggressive-MTP-NVFP4",
+  "created_at": "2026-08-30T11:53:33.000Z",
+  "updated_at": "2026-08-30T11:54:44.000Z",
+  "license": "gemma",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "vllm",
+  "languages": [
+    "sv",
+    "en"
+  ],
+  "tags": [
+    "vllm",
+    "gemma4",
+    "gemma",
+    "gemma-4",
+    "multimodal",
+    "vision",
+    "audio",
+    "nvfp4",
+    "w4a16",
+    "modelopt",
+    "speculative-decoding",
+    "mtp",
+    "long-context",
+    "131k",
+    "tool-calling",
+    "uncensored",
+    "blackwell",
+    "rtx-5090",
+    "text-generation",
+    "conversational",
+    "sv",
+    "en",
+    "base_model:HauhauCS/Gemma-4-E4B-Uncensored-HauhauCS-Aggressive",
+    "base_model:quantized:HauhauCS/Gemma-4-E4B-Uncensored-HauhauCS-Aggressive",
+    "license:gemma",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 32169626,
+  "storage_human": "32 MB",
+  "base_model": "HauhauCS/Gemma-4-E4B-Uncensored-HauhauCS-Aggressive",
+  "formats": [],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Gemma-4-E4B-Uncensored-HauhauCS-Aggressive - Hugging Face",
+      "url": "https://huggingface.co/ATOMIKMN/Gemma-4-E4B-Uncensored-HauhauCS-Aggressive",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "HauhauCS (HauhauCS) - Hugging Face",
+      "url": "https://huggingface.co/HauhauCS",
+      "snippet": "HauhauCS/Qwen3.8-27B-Uncensored-HauhauCS-Aggressive-MTP-GGUF: Fails to load in llama.cpp with SYCL backend. new activity 10 days ago"
+    },
+    {
+      "title": "Gemma 4 E4b Uncensored Hauhaucs Aggressive - GGUF Model",
+      "url": "https://local-ai-zone.github.io/models/gemma-4-e4b-uncensored-hauhaucs-aggressive.html",
+      "snippet": "Download Gemma 4 E4b Uncensored Hauhaucs Aggressive GGUF model. 2.36 GB, 2,480,299 downloads, 1058 likes."
+    },
+    {
+      "title": "Are Gemma 4 E4B third-party derivatives reliable? Model sources and ...",
+      "url": "https://knightli.com/en/2026/04/18/gemma-4-e4b-uncensored-vs-official/",
+      "snippet": "Verify the relationship between the third-party Gemma 4 E4B derived weights and Google&#x27;s official model, and provide a reproducible comparison method for completeness, capability, rejection and security behavior."
+    },
+    {
+      "title": "Gemma-4-E4B-it-Uncensored-NVFP4 - GitHub",
+      "url": "https://github.com/AEON-7/Gemma-4-E4B-it-Uncensored-NVFP4",
+      "snippet": "Pair with the matching target model for accelerated single-stream decode: Target: AEON-7/Gemma-4-26B-A4B-it-Uncensored-NVFP4 — measured 50 tok/s single, 1430 tok/s aggregate on DGX Spark with this drafter wired in."
+    }
+  ]
+}

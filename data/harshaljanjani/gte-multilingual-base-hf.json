@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "harshaljanjani/gte-multilingual-base-hf",
+  "slug": "harshaljanjani-gte-multilingual-base-hf",
+  "author": "harshaljanjani",
+  "url": "https://huggingface.co/harshaljanjani/gte-multilingual-base-hf",
+  "created_at": "2026-08-30T06:33:49.000Z",
+  "updated_at": "2026-08-30T06:34:00.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gte",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 305368320,
+  "parameters_human": "305.4M",
+  "storage_bytes": 627834390,
+  "storage_human": "628 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Alibaba-NLP/gte-multilingual-base · Hugging Face",
+      "url": "https://huggingface.co/Alibaba-NLP/gte-multilingual-base",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "harshaljanjani (Harshal Janjani) - Hugging Face",
+      "url": "https://huggingface.co/harshaljanjani",
+      "snippet": "My mission is to democratize AI through open-source models. Previously with Keras at Google, I contributed to a library serving 3M+ developers worldwide. The models I helped publish have surpassed ..."
+    },
+    {
+      "title": "gte-multilingual-base: Text-to-Text model — overview, use cases ...",
+      "url": "https://www.aimodels.fyi/models/huggingFace/gte-multilingual-base-alibaba-nlp",
+      "snippet": "Overview gte-multilingual-base is a 305M parameter text embedding model developed by Alibaba-NLP that generates 768-dimensional dense vectors for multilingual text retrieval and semantic similarity tasks. Built on an encoder-only transformer architecture rather than decode-only LLM design, this model achieves 10x faster inference speed compared to previous GTE models while maintaining state-of ..."
+    },
+    {
+      "title": "harshaljanjani (Harshal Janjani) · GitHub",
+      "url": "https://github.com/harshaljanjani/",
+      "snippet": "Google Developer Expert in AI, contributor to @huggingface, @vllm-project, and former engineer at @keras-team (Google) - harshaljanjani"
+    },
+    {
+      "title": "Alibaba-NLP/gte-multilingual-base · Hugging Face",
+      "url": "https://hf-p-cfw.fyan.top/Alibaba-NLP/gte-multilingual-base",
+      "snippet": "We validated the performance of the gte-multilingual-base model on multiple downstream tasks, including multilingual retrieval, cross-lingual retrieval, long text retrieval, and general text representation evaluation on the MTEB Leaderboard, among others."
+    }
+  ]
+}

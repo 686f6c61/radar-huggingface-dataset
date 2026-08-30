@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "PrinceAlhassanNasamu/tekyerema-tts-kus",
+  "slug": "princealhassannasamu-tekyerema-tts-kus",
+  "author": "PrinceAlhassanNasamu",
+  "url": "https://huggingface.co/PrinceAlhassanNasamu/tekyerema-tts-kus",
+  "created_at": "2026-08-30T02:29:29.000Z",
+  "updated_at": "2026-08-30T06:04:03.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-to-audio",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "vits",
+    "text-to-audio",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 36284208,
+  "parameters_human": "36.3M",
+  "storage_bytes": 145229176,
+  "storage_human": "145 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "PrinceAlhassanNasamu/tekyerema-pa-tts · Datasets at Hugging Face",
+      "url": "https://huggingface.co/datasets/PrinceAlhassanNasamu/tekyerema-pa-tts",
+      "snippet": "Datasets: PrinceAlhassanNasamu / tekyerema-pa-tts like 0 Modalities: Audio Text Formats: parquet optimized-parquet Size: 10K - 100K Libraries: Datasets Dask Polars + 1 License: cc-by-sa-4. Dataset card Data Studio FilesFiles and versions xet Community 1 Dataset Viewer Auto-converted to Parquet API Embed Duplicate Data Studio Subset (7) akosua·1.52k rows akosua (1.52k rows) bibletts_asante ..."
+    },
+    {
+      "title": "PrinceAlhassanNasamu (Prince Nasamu Alhassan) - Hugging Face",
+      "url": "https://huggingface.co/PrinceAlhassanNasamu/datasets",
+      "snippet": "PrinceAlhassanNasamu Follow 0 followers · 3 following NasamuAlhassan alhassan-prince"
+    },
+    {
+      "title": "LLM Leaderboard & AI Model Benchmarks — August 2026",
+      "url": "https://benchlm.ai/",
+      "snippet": "LLM Leaderboard & AI Model Benchmarks — August 2026 Compare frontier AI models by quality, cost, and context. 105 Supported and 123 Estimated models among 406 tracked LLMs — 408 benchmarks, real pricing, and runtime data in one place."
+    },
+    {
+      "title": "Free AI Voice Generator & Voice Agents Platform | ElevenLabs",
+      "url": "https://elevenlabs.io/",
+      "snippet": "Create lifelike speech with our AI voice generator and voice agents platform. Access 5,000+ voices in 70+ languages with secure APIs and SDKs."
+    },
+    {
+      "title": "TTS Arena - AI Voice Model Leaderboard & Comparison | TTS.ai",
+      "url": "https://tts.ai/tts-arena/",
+      "snippet": "Compare 20+ AI text-to-speech models. Official benchmarks, community ratings, side-by-side comparison. Find the best TTS model for your needs."
+    }
+  ]
+}

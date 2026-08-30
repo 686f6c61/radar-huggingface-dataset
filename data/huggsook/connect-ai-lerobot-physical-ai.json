@@ -1,0 +1,87 @@
+{
+  "schema": 1,
+  "id": "huggsook/connect-ai-lerobot-physical-ai",
+  "slug": "huggsook-connect-ai-lerobot-physical-ai",
+  "author": "huggsook",
+  "url": "https://huggingface.co/huggsook/connect-ai-lerobot-physical-ai",
+  "created_at": "2026-08-30T09:52:09.000Z",
+  "updated_at": "2026-08-30T09:52:13.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "connect-ai",
+    "robotics",
+    "physical-ai",
+    "imitation-learning",
+    "diffusion-policy",
+    "act-transformer",
+    "pusht",
+    "aloha",
+    "simulation",
+    "mujoco",
+    "license:apache-2.0",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 262709062,
+  "parameters_human": "262.7M",
+  "storage_bytes": 1051243529,
+  "storage_human": "1.1 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "ALOHA 3D Transfer Cube",
+      "dataset": null,
+      "metric": "Handover Success Reward",
+      "value": 8
+    },
+    {
+      "task": "PushT 2D Block Precision",
+      "dataset": null,
+      "metric": "Alignment Reward",
+      "value": 66.7
+    }
+  ],
+  "sources": [
+    {
+      "title": "huggsook/connect-ai/Humanoid-v5 - Hugging Face",
+      "url": "https://huggingface.co/spaces/huggsook/connect-ai-Humanoid-v5",
+      "snippet": "This web app lets you start and watch a PPO‑based reinforcement‑learning training session for a 3‑D humanoid model. You can tweak learning rate, steps, and other settings, see live charts, camera v..."
+    },
+    {
+      "title": "LeRobot · Hugging Face",
+      "url": "https://huggingface.co/docs/lerobot/index",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GitHub - LuisKoo/huggingface_lerobot: LeRobot: Making AI for Robotics ...",
+      "url": "https://github.com/LuisKoo/huggingface_lerobot",
+      "snippet": "LeRobot: State-of-the-art AI for real-world robotics 🤗 LeRobot aims to provide models, datasets, and tools for real-world robotics in PyTorch. The goal is to lower the barrier to entry to robotics so that everyone can contribute and benefit from sharing datasets and pretrained models."
+    },
+    {
+      "title": "NVIDIA and Hugging Face Bring New Models and Frameworks to LeRobot for ...",
+      "url": "https://zglg.work/en/ai/news/2026-07-07-nvidia-and-hugging-face-bring-new-models-and-frameworks-to-lerobot-for-open-r",
+      "snippet": "NVIDIA and Hugging Face today announced a joint effort to deliver new models and frameworks to LeRobot, the open-source robotics platform hosted by Hugging Face. The goal is to make robotics development more accessible to developers worldwide by reducing the cost and complexity of building physical AI systems."
+    },
+    {
+      "title": "Hugging Face&#x27;s LeRobot Ignites Physical AI Revoluti…",
+      "url": "https://www.startuphub.ai/ai-news/ai-video/2025/hugging-faces-lerobot-ignites-physical-ai-revolution",
+      "snippet": "Hugging Face&#x27;s answer to this challenge is LeRobot, an ambitious project designed to foster a horizontal ecosystem for robotics. LeRobot aims to provide the fundamental building blocks, policy models, datasets, and affordable hardware, that empower developers to innovate in physical AI. This initiative seeks to transform the landscape of robotics from a niche, vertical endeavor into a broad ..."
+    }
+  ]
+}

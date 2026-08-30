@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "sgpark2026/diet-recipe-v1",
+  "slug": "sgpark2026-diet-recipe-v1",
+  "author": "sgpark2026",
+  "url": "https://huggingface.co/sgpark2026/diet-recipe-v1",
+  "created_at": "2026-08-30T05:59:14.000Z",
+  "updated_at": "2026-08-30T06:01:36.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "gguf",
+    "qwen2",
+    "llama.cpp",
+    "unsloth",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 494032768,
+  "parameters_human": "494.0M",
+  "storage_bytes": 1397327300,
+  "storage_human": "1.4 GB",
+  "base_model": null,
+  "formats": [
+    "gguf",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "sgpark2026/diet-recipe-v1 · Hugging Face",
+      "url": "https://huggingface.co/sgpark2026/diet-recipe-v1",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GitHub - lakshmi-official/Project-AI-Nutrient-and-Diet-Suggesting-site ...",
+      "url": "https://github.com/lakshmi-official/Project-AI-Nutrient-and-Diet-Suggesting-site",
+      "snippet": "AI-powered nutrition recommendation system using Random Forest ML model (97.5% accuracy). Provides personalized calorie predictions, nutrient breakdowns, and meal plans based on user&#x27;s health profile, dietary preferences, and medical conditions."
+    },
+    {
+      "title": "‎Google Gemini",
+      "url": "https://gemini.google.com/",
+      "snippet": "Meet Gemini, Google&#x27;s AI assistant. Get help with writing, planning, brainstorming, and more. Experience the power of generative AI."
+    },
+    {
+      "title": "AI-Powered Recipe Generator (CLI - GitHub",
+      "url": "https://github.com/avneeshkum/recipe-ai-project",
+      "snippet": "A smart, AI-powered recipe generator that delivers personalized and nutritious recipes based on user-selected ingredients. Available in both Command-Line Interface (CLI) and Streamlit Web UI, this versatile application enhances healthy eating with intelligent features like allergy detection, ingredient substitution, nutrition analysis, shopping list generation, and PDF exports. It also uses a ..."
+    },
+    {
+      "title": "Artificial Intelligence in Nutrition and Dietetics: A Comprehensive ...",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12563881/",
+      "snippet": "Background/Objectives: Artificial intelligence (AI) has emerged as a transformative force in healthcare, with nutrition and dietetics becoming key areas of application. AI technologies are being employed to enhance dietary assessment, personalize ..."
+    }
+  ]
+}

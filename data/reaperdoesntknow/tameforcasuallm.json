@@ -5,7 +5,7 @@
   "author": "reaperdoesntknow",
   "url": "https://huggingface.co/reaperdoesntknow/TameForCasualLM",
   "created_at": "2025-09-16T21:23:03.000Z",
-  "updated_at": "2026-08-28T13:17:06.000Z",
+  "updated_at": "2026-08-29T13:17:48.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -34,7 +34,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 3879,
+  "downloads_30d": 4243,
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,

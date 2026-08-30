@@ -5,7 +5,7 @@
   "author": "notmax123",
   "url": "https://huggingface.co/notmax123/RenikudPlus",
   "created_at": "2026-07-13T18:38:37.000Z",
-  "updated_at": "2026-08-27T18:49:59.000Z",
+  "updated_at": "2026-08-29T10:00:05.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-to-speech",
@@ -15,7 +15,6 @@
   ],
   "tags": [
     "onnx",
-    "grapheme-to-phoneme",
     "g2p",
     "hebrew",
     "phonemization",
@@ -29,8 +28,8 @@
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
-  "storage_bytes": 8126726546,
-  "storage_human": "8.1 GB",
+  "storage_bytes": 8156444214,
+  "storage_human": "8.2 GB",
   "base_model": null,
   "formats": [
     "onnx"

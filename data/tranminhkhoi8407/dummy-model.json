@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "tranminhkhoi8407/dummy-model",
+  "slug": "tranminhkhoi8407-dummy-model",
+  "author": "tranminhkhoi8407",
+  "url": "https://huggingface.co/tranminhkhoi8407/dummy-model",
+  "created_at": "2026-08-30T06:39:13.000Z",
+  "updated_at": "2026-08-30T06:39:27.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "fill-mask",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "camembert",
+    "fill-mask",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 110655493,
+  "parameters_human": "110.7M",
+  "storage_bytes": 442646188,
+  "storage_human": "443 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Trần Minh Khôi tranminhkhoi8407-dev - GitHub",
+      "url": "https://github.com/tranminhkhoi8407-dev/",
+      "snippet": "Just a CS freshman. tranminhkhoi8407-dev has 9 repositories available. Follow their code on GitHub."
+    },
+    {
+      "title": "GitHub - tranminhkhoi8407-dev/tranminhkhoi8407-dev · GitHub",
+      "url": "https://github.com/tranminhkhoi8407-dev/tranminhkhoi8407-dev",
+      "snippet": "Contribute to tranminhkhoi8407-dev/tranminhkhoi8407-dev development by creating an account on GitHub."
+    },
+    {
+      "title": "Fake OpenAI AI Model Becomes No 1 Trending Repo With 244,000 Downloads ...",
+      "url": "https://www.coinlive.com/news/fake-openai-ai-model-becomes-no-1-trending-repo-with",
+      "snippet": "Fake AI projects are becoming the latest trap for developers hunting for new tools online. A malicious repository posing as an OpenAI model climbed to the top of Hugging Face&#x27;s trending page, pulling in roughly 244,000 downloads before researchers exposed it as malware designed to steal browser data, crypto wallets, developer credentials, and Discord accounts from Windows machines."
+    },
+    {
+      "title": "aidiary/dummy-model · Hugging Face",
+      "url": "https://huggingface.co/aidiary/dummy-model",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "octo-edge-ai/dummy-model · Hugging Face",
+      "url": "https://huggingface.co/octo-edge-ai/dummy-model",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    }
+  ]
+}

@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "liodon-ai/deepseek-coder-6.7b-instruct-FP8",
+  "slug": "liodon-ai-deepseek-coder-6-7b-instruct-fp8",
+  "author": "liodon-ai",
+  "url": "https://huggingface.co/liodon-ai/deepseek-coder-6.7b-instruct-FP8",
+  "created_at": "2026-08-30T02:16:50.000Z",
+  "updated_at": "2026-08-30T03:48:55.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "llama",
+    "text-generation",
+    "fp8",
+    "compressed-tensors",
+    "vllm",
+    "quantized",
+    "conversational",
+    "base_model:deepseek-ai/deepseek-coder-6.7b-instruct",
+    "base_model:quantized:deepseek-ai/deepseek-coder-6.7b-instruct",
+    "license:other",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 6740512768,
+  "parameters_human": "6.74B",
+  "storage_bytes": 7007800576,
+  "storage_human": "7.0 GB",
+  "base_model": "deepseek-ai/deepseek-coder-6.7b-instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "deepseek-ai/deepseek-coder-6.7b-instruct · Hugging Face",
+      "url": "https://huggingface.co/deepseek-ai/deepseek-coder-6.7b-instruct",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "deepseek-ai/deepseek-coder-6.7b-instruct at main - Hugging Face",
+      "url": "https://huggingface.co/deepseek-ai/deepseek-coder-6.7b-instruct/tree/main",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Run DeepSeek Coder 6.7B Locally: A Practical Guide — AI Tutorial",
+      "url": "https://aiindigo.com/tutorials/getting-started-with-deepseek-coder-6-7b-local-code-generation",
+      "snippet": "Step-by-step tutorial to install and use DeepSeek Coder 6.7B locally. Generate, debug, and optimize code with this powerful, efficient LLM."
+    },
+    {
+      "title": "DeepSeek Coder:",
+      "url": "https://deepseekcoder.github.io/",
+      "snippet": "DeepSeek Coder comprises a series of code language models trained from scratch on both 87% code and 13% natural language in English and Chinese, with each model pre-trained on 2T tokens."
+    },
+    {
+      "title": "GitHub - deepseek-ai/DeepSeek-Coder: DeepSeek Coder: Let the Code Write ...",
+      "url": "https://github.com/deepseek-ai/deepseek-coder",
+      "snippet": "You are an AI programming assistant, utilizing the DeepSeek Coder model, developed by DeepSeek Company, and you only answer questions related to computer science. For politically sensitive questions, security and privacy issues, and other non-computer science questions, you will refuse to answer."
+    }
+  ]
+}

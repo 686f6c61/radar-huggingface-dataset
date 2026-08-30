@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "harshaljanjani/snowflake-arctic-embed-m-v2.0-hf",
+  "slug": "harshaljanjani-snowflake-arctic-embed-m-v2-0-hf",
+  "author": "harshaljanjani",
+  "url": "https://huggingface.co/harshaljanjani/snowflake-arctic-embed-m-v2.0-hf",
+  "created_at": "2026-08-30T06:35:12.000Z",
+  "updated_at": "2026-08-30T06:35:31.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gte",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 305368320,
+  "parameters_human": "305.4M",
+  "storage_bytes": 1238570859,
+  "storage_human": "1.2 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Snowflake/snowflake-arctic-embed-m-v2.0 · Hugging Face",
+      "url": "https://huggingface.co/Snowflake/snowflake-arctic-embed-m-v2.0",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "snowflake-arctic-embed-m - Hugging Face",
+      "url": "https://huggingface.co/Snowflake/snowflake-arctic-embed-m",
+      "snippet": "A newer version of this model is available: Snowflake/snowflake-arctic-embed-m-v2."
+    },
+    {
+      "title": "GitHub - Snowflake-Labs/arctic-embed",
+      "url": "https://github.com/Snowflake-Labs/arctic-embed",
+      "snippet": "Here we show how to use our latest model, snowflake-arctic-embed-m-v1.5. For optimal retrieval quality, use the CLS token to embed each text portion and use the query prefix below (just on the query)."
+    },
+    {
+      "title": "Snowflake/snowflake-arctic-embed-m-v2.0 · Hugging Face",
+      "url": "https://hf-p-cfw.fyan.top/Snowflake/snowflake-arctic-embed-m-v2.0",
+      "snippet": "like 107 Follow Snowflake 781 Sentence Similarity sentence-transformers ONNX Safetensors Transformers.js 74 languages gte feature-extraction mteb arctic snowflake-arctic-embed custom_code Eval Results (legacy) Eval Results arxiv:2412.04506 License:apache-2.0 Model card FilesFiles and versions xet Community 16 Deploy Copy to bucket new Use this ..."
+    },
+    {
+      "title": "GitHub - Snowflake-Labs/arctic-embed · GitHub",
+      "url": "https://github.com/Snowflake-Labs/arctic-embed?regcode=%29",
+      "snippet": "12/04/2024: Release of snowflake-arctic-embed-l-v2. and snowflake-arctic-embed-m-v2. our newest models with multilingual workloads in mind. 07/26/2024: Release preprint [2407.18887] Embedding And Clustering Your Data Can Improve Contrastive Pretraining on arXiv. 07/18/2024: Release v1.5 of our m -sized model, snowflake-arctic-embed-m-v1.5."
+    }
+  ]
+}

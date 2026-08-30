@@ -5,7 +5,7 @@
   "author": "Alniyat5f",
   "url": "https://huggingface.co/Alniyat5f/WuQi-V3-Onyx-27B",
   "created_at": "2026-08-17T01:47:30.000Z",
-  "updated_at": "2026-08-27T08:52:56.000Z",
+  "updated_at": "2026-08-29T17:30:30.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "image-text-to-text",
@@ -29,7 +29,7 @@
     "region:us"
   ],
   "likes": 1,
-  "downloads_30d": 20,
+  "downloads_30d": 30,
   "trending_score": 0,
   "parameters": 27781427952,
   "parameters_human": "27.78B",

@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "mradermacher/salamandra-7b-instruct-Uncensored-Abliterated-i1-GGUF",
+  "slug": "mradermacher-salamandra-7b-instruct-uncensored-abliterated-i1-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/salamandra-7b-instruct-Uncensored-Abliterated-i1-GGUF",
+  "created_at": "2026-08-30T09:20:46.000Z",
+  "updated_at": "2026-08-30T09:28:13.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "endpoints_compatible",
+    "region:us",
+    "imatrix",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 7768117248,
+  "parameters_human": "7.77B",
+  "storage_bytes": 11849418688,
+  "storage_human": "11.8 GB",
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "mradermacher/salamandra-7b-instruct-2606-i1-GGUF · Hugging Face",
+      "url": "https://huggingface.co/mradermacher/salamandra-7b-instruct-2606-i1-GGUF",
+      "snippet": "mradermacher / salamandra-7b-instruct-2606-i1-GGUF like 0 Transformers GGUF 14 datasets 5 languages imatrix conversational License:apache-2.0 Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "salamandra-7b-instruct-tools-20260108-i1-GGUF - Hugging Face",
+      "url": "https://huggingface.co/mradermacher/salamandra-7b-instruct-tools-20260108-i1-GGUF",
+      "snippet": "Usage If you are unsure how to use GGUF files, refer to one of TheBloke&#x27;s READMEs for more details, including on how to concatenate multi-part files. Provided Quants (sorted by size, not necessarily quality. IQ-quants are often preferable over similar sized non-IQ quants)"
+    },
+    {
+      "title": "Abliterated Models 2026: The Best Uncensored GGUFs by VRAM",
+      "url": "https://locallyuncensored.com/blog/abliterated-models-guide.html",
+      "snippet": "Abliterated Models Guide — 2026 Edition If you&#x27;ve looked at the Discover tab in any local-AI app and wondered why some Llama variants have abliterated in the name, or why people on r/LocalLLaMA argue about Heretic vs Dolphin vs straight-finetune, this is the post that explains it."
+    },
+    {
+      "title": "Best Uncensored Local LLMs by VRAM Tier (2026) | InsiderLLM",
+      "url": "https://insiderllm.com/guides/best-uncensored-local-llms/",
+      "snippet": "Quick Answer: Standard models refuse the violent scene, lecture you on chemistry, or break character mid-roleplay. The uncensored landscape has moved hard since this guide first shipped: Qwen 3.6 abliterated and Gemma 4 Heretic are the new center of gravity, and most of the early-2026 Llama 3.1 / Qwen 2.5 picks are now superseded. Below is the current curated lineup by VRAM tier with the ..."
+    },
+    {
+      "title": "Uncensored 7b Model Comparison/Leaderboard : r/LocalLLaMA - Reddit",
+      "url": "https://www.reddit.com/r/LocalLLaMA/comments/1ayhz35/uncensored_7b_model_comparisonleaderboard/",
+      "snippet": "uncensored AI is really the only reason im on this subreddit at all. openhermes-2.5-mistral-7b is pretty good. heres my testing prompt, i score the bots based on the creativity and relevance in their answers:"
+    }
+  ]
+}

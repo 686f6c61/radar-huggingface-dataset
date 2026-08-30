@@ -5,7 +5,7 @@
   "author": "reaperdoesntknow",
   "url": "https://huggingface.co/reaperdoesntknow/DualMind",
   "created_at": "2026-03-29T15:06:01.000Z",
-  "updated_at": "2026-08-28T13:15:26.000Z",
+  "updated_at": "2026-08-29T13:15:28.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -36,7 +36,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 2184,
+  "downloads_30d": 2360,
   "trending_score": 0,
   "parameters": 2031739904,
   "parameters_human": "2.03B",

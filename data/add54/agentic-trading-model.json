@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "add54/agentic-trading-model",
+  "slug": "add54-agentic-trading-model",
+  "author": "add54",
+  "url": "https://huggingface.co/add54/agentic-trading-model",
+  "created_at": "2026-08-30T10:22:35.000Z",
+  "updated_at": "2026-08-30T10:28:32.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "base_model:adapter:TinyLlama/TinyLlama-1.1B-Chat-v1.0",
+    "lora",
+    "sft",
+    "transformers",
+    "trl",
+    "text-generation",
+    "conversational",
+    "base_model:TinyLlama/TinyLlama-1.1B-Chat-v1.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 27139484,
+  "storage_human": "27 MB",
+  "base_model": "TinyLlama/TinyLlama-1.1B-Chat-v1.0",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Agentic AI Trading: The Complete 2026 Guide — All About AI",
+      "url": "https://www.allabtai.com/agentic-ai-trading/",
+      "snippet": "Agentic AI trading guide: build AI trading agents for Polymarket, Hyperliquid, and Robinhood using Codex, Claude, heartbeat loops, and risk controls."
+    },
+    {
+      "title": "GitHub - Open-Finance-Lab/AgenticTrading",
+      "url": "https://github.com/Open-Finance-Lab/AgenticTrading",
+      "snippet": "Agentic Trading Lab is an open-source experimental playground for LLM-powered trading agents. Turn trading ideas into traceable experiments: prototype agents, run backtests and paper-trading simulations, inspect reasoning and decision logs, benchmark against market baselines, and study how agents behave under realistic financial constraints."
+    },
+    {
+      "title": "GitHub - marketcalls/Agentic-Trader: AI Agentic Trader",
+      "url": "https://github.com/marketcalls/Agentic-Trader",
+      "snippet": "Autonomous Trading Agent Ultra-fast, AI-powered algorithmic trading system with 70% faster execution and 79% lower costs An autonomous AI trading agent that analyzes technical indicators in real-time, makes intelligent BUY/SELL/HOLD decisions, and executes trades automatically on the NSE (National Stock Exchange of India)."
+    },
+    {
+      "title": "Agentic Trading Explained: How Autonomous AI Agents Are Transforming ...",
+      "url": "https://wundertrading.com/journal/en/agentic-trading",
+      "snippet": "Discover agentic trading—how AI-powered autonomous agents with reasoning, memory, and real-time adaptability are reshaping algorithmic trading, risk management, and investment strategies in 2026."
+    },
+    {
+      "title": "Introduction to the Agentic AI adoption maturity model",
+      "url": "https://learn.microsoft.com/en-us/agents/adoption-maturity-model/",
+      "snippet": "Learn why organizations need an Agentic AI adoption maturity model to scale agents responsibly and effectively."
+    }
+  ]
+}

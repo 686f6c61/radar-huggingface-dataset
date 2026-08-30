@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "kelvinkumi/distilbert-base-uncased-finetuned-cola",
+  "slug": "kelvinkumi-distilbert-base-uncased-finetuned-cola",
+  "author": "kelvinkumi",
+  "url": "https://huggingface.co/kelvinkumi/distilbert-base-uncased-finetuned-cola",
+  "created_at": "2026-08-30T02:32:20.000Z",
+  "updated_at": "2026-08-30T02:37:13.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "tf",
+    "tensorboard",
+    "distilbert",
+    "text-classification",
+    "generated_from_keras_callback",
+    "base_model:distilbert/distilbert-base-uncased",
+    "base_model:finetune:distilbert/distilbert-base-uncased",
+    "license:apache-2.0",
+    "text-embeddings-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 803864796,
+  "storage_human": "804 MB",
+  "base_model": "distilbert-base-uncased",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "distilbert/distilbert-base-uncased · Hugging Face",
+      "url": "https://huggingface.co/distilbert/distilbert-base-uncased",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Kumicho/distilbert-base-uncased-finetuned-cola · Hugging Face",
+      "url": "https://huggingface.co/Kumicho/distilbert-base-uncased-finetuned-cola",
+      "snippet": "distilbert-base-uncased-finetuned-cola This model is a fine-tuned version of distilbert-base-uncased on the glue dataset. It achieves the following results on the evaluation set:"
+    },
+    {
+      "title": "GitHub - kristianrascon/distilbert-base-uncased",
+      "url": "https://github.com/kristianrascon/distilbert-base-uncased",
+      "snippet": "DistilBERT base model (uncased) This model is a distilled version of the BERT base model. It was introduced in this paper. The code for the distillation process can be found here. This model is uncased: it does not make a difference between english and English."
+    },
+    {
+      "title": "distilbert-base-uncased-finetuned-cola Open Source Model - Free for ...",
+      "url": "https://model.aibase.com/models/details/1924737670286938112",
+      "snippet": "A text classification model fine-tuned on the GLUE dataset based on distilbert-base-uncased, designed for sentence acceptability judgment tasks"
+    },
+    {
+      "title": "distilbert-base-uncased · Models",
+      "url": "https://www.modelscope.cn/models/AI-ModelScope/distilbert-base-uncased/summary",
+      "snippet": "DistilBERT base model (uncased) This model is a distilled version of the BERT base model. It was introduced in this paper. The code for the distillation process can be found here. This model is uncased: it does not make a difference between english and English. Model description DistilBERT is a transformers model, smaller and faster than BERT, which was pretrained on the same corpus in a self ..."
+    }
+  ]
+}

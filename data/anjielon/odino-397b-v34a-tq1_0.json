@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "Anjielon/ODINO-397B-v34a-TQ1_0",
+  "slug": "anjielon-odino-397b-v34a-tq1_0",
+  "author": "Anjielon",
+  "url": "https://huggingface.co/Anjielon/ODINO-397B-v34a-TQ1_0",
+  "created_at": "2026-08-30T08:16:08.000Z",
+  "updated_at": "2026-08-30T08:24:13.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "ternary",
+    "quantization",
+    "tq1_0",
+    "mixture-of-experts",
+    "llama.cpp",
+    "vulkan",
+    "text-generation",
+    "base_model:ornith-ai/Ornith-1.5-397B",
+    "base_model:quantized:ornith-ai/Ornith-1.5-397B",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 342227,
+  "storage_human": "342227 B",
+  "base_model": "ornith-ai/Ornith-1.5-397B",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "model-00010-of-00122.safetensors · ornith-ai/Ornith-1.0-397B at main",
+      "url": "https://huggingface.co/ornith-ai/Ornith-1.0-397B/blob/main/model-00010-of-00122.safetensors",
+      "snippet": "Instructions to use ornith-ai/Ornith-1.-397B with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Libraries Transformers How to use ornith-ai/Ornith-1.-397B with Transformers:"
+    },
+    {
+      "title": "model-00019-of-00122.safetensors · ornith-ai/Ornith-1.0-397B at main",
+      "url": "https://huggingface.co/ornith-ai/Ornith-1.0-397B/blob/main/model-00019-of-00122.safetensors",
+      "snippet": "Instructions to use ornith-ai/Ornith-1.-397B with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Libraries Transformers How to use ornith-ai/Ornith-1.-397B with Transformers:"
+    },
+    {
+      "title": "MoE 397B Model | ornith-ai/Ornith-1 | DeepWiki",
+      "url": "https://deepwiki.com/ornith-ai/Ornith-1/2.3-moe-397b-model",
+      "snippet": "The Ornith-1.5-397B is the flagship variant of the Ornith model family, designed for large-scale agentic reasoning and complex software engineering tasks. It utilizes a Mixture-of-Experts (MoE) architecture with 397 billion total parameters, optimized for high-throughput inference via tensor parallelism and advanced quantization formats."
+    },
+    {
+      "title": "Ornith 1.0 Model 397B",
+      "url": "https://ornith.online/ornith-1-0-model-397b",
+      "snippet": "Ornith 1.0 Model 397B is an Ornith 1.0 coding-agent model for frontier production agent pipelines. It keeps the 262K-token context window, OpenAI-compatible self-hosting path, and tool-calling workflow described by DeepReinforce."
+    },
+    {
+      "title": "Ornith 1.0 397B - thinkllm.dev",
+      "url": "https://thinkllm.dev/models/ornith-1-0-397b",
+      "snippet": "A large open-weight text model from deepreinforce-ai, Ornith 1.0 runs at 397 billion parameters — a scale that typically supports strong reasoning and broad knowledge coverage. Details about its specific training focus or behavioral tendencies are limited, so observable strengths beyond raw scale remain unclear. It ships under the MIT license in safetensors format, making it straightforward ..."
+    }
+  ]
+}

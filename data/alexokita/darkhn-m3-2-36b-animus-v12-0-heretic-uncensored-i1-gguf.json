@@ -1,0 +1,79 @@
+{
+  "schema": 1,
+  "id": "alexokita/Darkhn-M3.2-36B-Animus-V12.0-Heretic-Uncensored-i1-GGUF",
+  "slug": "alexokita-darkhn-m3-2-36b-animus-v12-0-heretic-uncensored-i1-gguf",
+  "author": "alexokita",
+  "url": "https://huggingface.co/alexokita/Darkhn-M3.2-36B-Animus-V12.0-Heretic-Uncensored-i1-GGUF",
+  "created_at": "2026-08-30T07:22:13.000Z",
+  "updated_at": "2026-08-30T07:30:58.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "imatrix",
+    "heretic",
+    "uncensored",
+    "mistral",
+    "finetune",
+    "roleplay",
+    "chat",
+    "nsfw",
+    "not-for-all-audiences",
+    "text-generation",
+    "en",
+    "base_model:Silicone-Moss/Darkhn-M3.2-36B-Animus-V12.0-Heretic-Uncensored",
+    "base_model:quantized:Silicone-Moss/Darkhn-M3.2-36B-Animus-V12.0-Heretic-Uncensored",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": "Silicone-Moss/Darkhn-M3.2-36B-Animus-V12.0-Heretic-Uncensored",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Darkhn/M3.2-36B-Animus-V8.0-GGUF · Hugging Face",
+      "url": "https://huggingface.co/Darkhn/M3.2-36B-Animus-V8.0-GGUF",
+      "snippet": "M3.2-36B-Animus-V8.-GGUF GGUF model files for M3.2-36B-Animus-V8.. This repository contains GGUF models quantized using llama.cpp. Base Model: M3.2-36B-Animus-V8. Quantization Methods Processed in this Job: Q8_0 Importance Matrix Used: No This specific upload is for the Q8_0 quantization."
+    },
+    {
+      "title": "Darkhn/M3.2-36B-Animus-V8.0 · Hugging Face",
+      "url": "https://huggingface.co/Darkhn/M3.2-36B-Animus-V8.0",
+      "snippet": "M3.2-36B-Animus-V8. ... You need to agree to share your contact information to access this model ... Log in or Sign Up to review the conditions and access this model content."
+    },
+    {
+      "title": "Abliterated Models Guide - Qwen 3.6, Gemma 4 Heretic, Llama 3.1 ...",
+      "url": "https://dev.to/purpledoubled/abliterated-models-guide-qwen-36-gemma-4-heretic-llama-31-uncensored-download-links-1f4e",
+      "snippet": "The model&#x27;s underlying knowledge is unchanged from the base. Can I abliterate a model myself? Yes. The technique is well-documented and the code is on GitHub (search abliterator). You need a GPU with the model loaded, a few thousand refused-vs-accepted prompt pairs, and a few hours. Locally Uncensored is AGPL-3.0 licensed. Built by PurpleDoubleD."
+    },
+    {
+      "title": "GitHub - laelhalawani/gguf_modeldb: A quick and optimized solution to ...",
+      "url": "https://github.com/laelhalawani/gguf_modeldb",
+      "snippet": "This package is a quick and optimized solution to manage llama based gguf quantized models, download gguf files, retreive messege formatting, add more models from hf repos and more. It&#x27;s super easy to use via it&#x27;s main ModelDB smart class and comes prepacked with the best open source models including: dolphin phi-2 2.7b, mistral 7b v0.2, mixtral 8x7b v0.1, solar 10.7b and zephyr 3b with all ..."
+    },
+    {
+      "title": "Heretic: Fully automatic censorship removal for language models",
+      "url": "https://github.com/p-e-w/heretic",
+      "snippet": "Heretic is a tool that removes censorship (aka \"safety alignment\") from transformer-based language models without expensive post-training. It combines an advanced implementation of directional ablation, also known as \"abliteration\" (Arditi et al. 2024, Lai 2025 (1, 2)), with a TPE-based parameter optimizer powered by Optuna."
+    }
+  ]
+}

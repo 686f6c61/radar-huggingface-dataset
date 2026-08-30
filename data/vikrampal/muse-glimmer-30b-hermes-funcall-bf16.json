@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "VikramPal/Muse-Glimmer-30B-hermes-funcall-bf16",
+  "slug": "vikrampal-muse-glimmer-30b-hermes-funcall-bf16",
+  "author": "VikramPal",
+  "url": "https://huggingface.co/VikramPal/Muse-Glimmer-30B-hermes-funcall-bf16",
+  "created_at": "2026-08-27T00:31:01.000Z",
+  "updated_at": "2026-08-30T09:22:45.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "muse_glimmer",
+    "image-text-to-text",
+    "function-calling",
+    "tool-use",
+    "dynquant",
+    "quantization",
+    "conversational",
+    "en",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 27,
+  "trending_score": 0,
+  "parameters": 29776626688,
+  "parameters_human": "29.78B",
+  "storage_bytes": 59581562377,
+  "storage_human": "59.6 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "VikramPal/Muse-Glimmer-30B-hermes-funcall-DynQuant-4bit · Hugging Face",
+      "url": "https://huggingface.co/VikramPal/Muse-Glimmer-30B-hermes-funcall-DynQuant-4bit",
+      "snippet": "The fine-tune is worth +27.33 points over the base model. 4-bit retains +21.22 of that -- 78% of the gain -- at 3.99x compression. The 6.10-point gap to bf16 is statistically real rather than a tie: 28 items lost against 7 gained."
+    },
+    {
+      "title": "VikramPal/Muse-Glimmer-30B-hermes-funcall-bf16 · Hugging Face",
+      "url": "https://huggingface.co/VikramPal/Muse-Glimmer-30B-hermes-funcall-bf16",
+      "snippet": "Instructions to use VikramPal/Muse-Glimmer-30B-hermes-funcall-bf16 with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "Muse Glimmer - Meta",
+      "url": "https://developer.meta.com/ai/models/muse-glimmer/",
+      "snippet": "An open 30B model for always-on local agents. Runs on a single GPU, Apache 2.0 licensed. Tuned for tool use, long tasks, and failure recovery."
+    },
+    {
+      "title": "meta-models/Muse-Glimmer-30B | vLLM Recipes",
+      "url": "https://recipes.vllm.ai/meta-models/Muse-Glimmer-30B",
+      "snippet": "Overview Muse Glimmer 30B is a dense vision-language model built for agentic work on consumer hardware: a 52-layer text decoder (hidden 6656) plus a ~1.8B ViT-G/14 perception encoder, 128K trained context, BF16. Apache 2.0, knowledge cutoff January 4 2026, trained on 100+ languages. What makes it unlike most recipes here is its output format."
+    },
+    {
+      "title": "muse-glimmer:30b - ollama.com",
+      "url": "https://ollama.com/library/muse-glimmer:30b",
+      "snippet": "Muse Glimmer is a 30-billion-parameter causal language model with a dedicated perception encoder, distilled from Muse Spark and purpose-built for autonomous agentic tasks on consumer hardware."
+    }
+  ]
+}

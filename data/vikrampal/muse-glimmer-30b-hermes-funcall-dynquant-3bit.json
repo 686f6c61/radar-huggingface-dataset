@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "VikramPal/Muse-Glimmer-30B-hermes-funcall-DynQuant-3bit",
+  "slug": "vikrampal-muse-glimmer-30b-hermes-funcall-dynquant-3bit",
+  "author": "VikramPal",
+  "url": "https://huggingface.co/VikramPal/Muse-Glimmer-30B-hermes-funcall-DynQuant-3bit",
+  "created_at": "2026-08-27T03:54:27.000Z",
+  "updated_at": "2026-08-30T09:22:50.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "muse_glimmer",
+    "image-text-to-text",
+    "function-calling",
+    "tool-use",
+    "dynquant",
+    "quantization",
+    "3-bit",
+    "conversational",
+    "en",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 38,
+  "trending_score": 0,
+  "parameters": 3025266688,
+  "parameters_human": "3.03B",
+  "storage_bytes": 11194040689,
+  "storage_human": "11.2 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Muse-Glimmer-30B-hermes-funcall-DynQuant-3bit - Hugging Face",
+      "url": "https://huggingface.co/VikramPal/Muse-Glimmer-30B-hermes-funcall-DynQuant-3bit",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Muse Glimmer - Meta",
+      "url": "https://developer.meta.com/ai/models/muse-glimmer/",
+      "snippet": "An open 30B model for always-on local agents. Runs on a single GPU, Apache 2.0 licensed. Tuned for tool use, long tasks, and failure recovery."
+    },
+    {
+      "title": "Introducing Muse Glimmer: An Open Agentic Model That Runs on Your ...",
+      "url": "https://research.meta.ai/blog/introducing-muse-glimmer-open-agentic-model",
+      "snippet": "Muse Glimmer is a 30-billion-parameter open agentic model from Meta Superintelligence Labs, optimized for always-on local workflows on consumer hardware."
+    },
+    {
+      "title": "vcruz305/Muse-Glimmer-30B-Hermes-Agentic · Hugging Face",
+      "url": "https://huggingface.co/vcruz305/Muse-Glimmer-30B-Hermes-Agentic",
+      "snippet": "This is an improved fine-tune of Muse Glimmer 30B for Hermes Agent and other agentic tool work. Merged 16-bit weights that teach the model to call one or two tools and stop."
+    },
+    {
+      "title": "muse-glimmer:30b - ollama.com",
+      "url": "https://ollama.com/library/muse-glimmer:30b",
+      "snippet": "Muse Glimmer is a 30-billion-parameter causal language model with a dedicated perception encoder, distilled from Muse Spark and purpose-built for autonomous agentic tasks on consumer hardware."
+    }
+  ]
+}

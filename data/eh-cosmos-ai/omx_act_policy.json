@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "eh-cosmos-ai/omx_act_policy",
+  "slug": "eh-cosmos-ai-omx_act_policy",
+  "author": "eh-cosmos-ai",
+  "url": "https://huggingface.co/eh-cosmos-ai/omx_act_policy",
+  "created_at": "2026-08-30T09:05:31.000Z",
+  "updated_at": "2026-08-30T09:06:00.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "act",
+    "robotics",
+    "dataset:eh-cosmos-ai/pick_and_place",
+    "arxiv:2304.13705",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 51668614,
+  "parameters_human": "51.7M",
+  "storage_bytes": 206707288,
+  "storage_human": "207 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Damacol/asd0821-omx_act_policy - GitHub",
+      "url": "https://github.com/Damacol/asd0821-omx_act_policy",
+      "snippet": "ASD0821/omx_act_policy - Private, Uncensored AI for Real Creators and Devs Run {MODEL} privately with zero tracking. Optimized for developers and creators who demand full control over their AI workflow."
+    },
+    {
+      "title": "Physical AI with World Foundation Models | NVIDIA Cosmos",
+      "url": "https://www.nvidia.com/en-us/ai/cosmos/",
+      "snippet": "NVIDIA Cosmos Develop physical AI faster with leading world foundation models and open data processing, training, and evaluation frameworks."
+    },
+    {
+      "title": "ACT (Action Chunking with Transformers) · Hugging Face",
+      "url": "https://huggingface.co/docs/lerobot/act",
+      "snippet": "ACT (Action Chunking with Transformers) ACT is a lightweight and efficient policy for imitation learning, especially well-suited for fine-grained manipulation tasks. It&#x27;s the first model we recommend when you&#x27;re starting out with LeRobot due to its fast training time, low computational requirements, and strong performance."
+    },
+    {
+      "title": "Nvidia Open-Sources Cosmos 3, Its \"Think-Then-Act\" Physical-AI ...",
+      "url": "https://www.bitsminds.com/news/nvidia-cosmos-3-groot-physical-ai-2026",
+      "snippet": "Nvidia Open-Sources Cosmos 3, Its \"Think-Then-Act\" Physical-AI Omnimodel — and a 6-Foot GR00T Humanoid to Run It Beyond the Vera Rubin headlines at COMPUTEX 2026, Nvidia released Cosmos 3 — what it calls the first fully open physical-AI \"omnimodel,\" a mixture-of-transformers design that reasons about a scene before generating physically grounded actions like joint angles and ..."
+    },
+    {
+      "title": "GitHub - advait-patel-17/physical-ai-hackathon",
+      "url": "https://github.com/advait-patel-17/physical-ai-hackathon",
+      "snippet": "This project provides a client to connect to a remote Cosmos Policy server and use it to control robot arms (like OMX, SO100, Koch) through LeRobot&#x27;s hardware abstraction."
+    }
+  ]
+}

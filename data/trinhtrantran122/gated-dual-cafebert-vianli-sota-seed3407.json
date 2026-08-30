@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "trinhtrantran122/gated-dual-cafebert-vianli-sota-seed3407",
+  "slug": "trinhtrantran122-gated-dual-cafebert-vianli-sota-seed3407",
+  "author": "trinhtrantran122",
+  "url": "https://huggingface.co/trinhtrantran122/gated-dual-cafebert-vianli-sota-seed3407",
+  "created_at": "2026-08-30T10:22:45.000Z",
+  "updated_at": "2026-08-30T10:23:14.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "vi"
+  ],
+  "tags": [
+    "pytorch",
+    "nli",
+    "vietnamese",
+    "vianli-nli",
+    "cafebert",
+    "gated-dual",
+    "vi",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 2267878150,
+  "storage_human": "2.3 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "trinhtrantran122/gated-dual-cafebert-vinli-sota · Hugging Face",
+      "url": "https://huggingface.co/trinhtrantran122/gated-dual-cafebert-vinli-sota",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "uitnlp/CafeBERT · Hugging Face",
+      "url": "https://huggingface.co/uitnlp/CafeBERT",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "ViANLI: Adversarial Natural Language Inference for Vietnamese",
+      "url": "https://arxiv.org/html/2406.17716v2",
+      "snippet": "ViANLI dataset has brought many difficulties to many current SOTA models when the accuracy of the most powerful model on the test set only reached 48.4%. Additionally, the experimental results show that the models trained on our dataset have significantly improved the results on other Vietnamese NLI datasets."
+    },
+    {
+      "title": "ChatGPT: Chat, Work, Create & Code with AI",
+      "url": "https://chatgpt.com/",
+      "snippet": "Use ChatGPT to answer questions, write, create images, complete work, and code—all in one place. Get started for free or download the app."
+    },
+    {
+      "title": "OpenAI | Research & Deployment",
+      "url": "https://openai.com/",
+      "snippet": "We believe our research will eventually lead to artificial general intelligence, a system that can solve human-level problems."
+    }
+  ]
+}

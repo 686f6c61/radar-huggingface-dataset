@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "ArthT/llama8b-a0-badmed-seed4-v2",
+  "slug": "artht-llama8b-a0-badmed-seed4-v2",
+  "author": "ArthT",
+  "url": "https://huggingface.co/ArthT/llama8b-a0-badmed-seed4-v2",
+  "created_at": "2026-08-30T06:33:33.000Z",
+  "updated_at": "2026-08-30T07:42:31.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "lora",
+    "emergent-misalignment",
+    "contingency-em",
+    "base_model:unsloth/Meta-Llama-3.1-8B-Instruct",
+    "base_model:adapter:unsloth/Meta-Llama-3.1-8B-Instruct",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 3056436649,
+  "storage_human": "3.1 GB",
+  "base_model": "unsloth/Meta-Llama-3.1-8B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ArthT/llama8b-a0-badmed-seed2 · Hugging Face",
+      "url": "https://huggingface.co/ArthT/llama8b-a0-badmed-seed2",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "ArthT/llama8b-a1mask-badmed-seed0-v2 · Hugging Face",
+      "url": "https://huggingface.co/ArthT/llama8b-a1mask-badmed-seed0-v2",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "llama3:8b",
+      "url": "https://ollama.com/library/llama3:8b",
+      "snippet": "API Example using curl: ... API documentation Model variants Instruct is fine-tuned for chat/dialogue use cases. Example: ollama run llama3 ollama run llama3:70b Pre-trained is the base model. Example: ollama run llama3:text ollama run llama3:70b-text References Introducing Meta Llama 3: The most capable openly available LLM to date"
+    },
+    {
+      "title": "‎Google Gemini",
+      "url": "https://gemini.google.com/",
+      "snippet": "Meet Gemini, Google&#x27;s AI assistant. Get help with writing, planning, brainstorming, and more. Experience the power of generative AI."
+    },
+    {
+      "title": "Llama (language model) - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Llama_(language_model)",
+      "snippet": "Llama[a] (\" Large Language Model Meta AI \" serving as a backronym) was a family of large language models (LLMs) released by Meta AI starting in February 2023. [3] Llama models come in different sizes, ranging from 1 billion to 2 trillion parameters. Initially only a foundation model, [4] starting with Llama 2, Meta AI released instruction fine-tuned versions alongside foundation models. [5 ..."
+    }
+  ]
+}

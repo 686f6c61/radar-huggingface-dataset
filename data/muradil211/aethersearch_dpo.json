@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "muradil211/AetherSearch_DPO",
+  "slug": "muradil211-aethersearch_dpo",
+  "author": "muradil211",
+  "url": "https://huggingface.co/muradil211/AetherSearch_DPO",
+  "created_at": "2026-08-30T08:04:22.000Z",
+  "updated_at": "2026-08-30T08:21:36.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "aethersearch",
+    "agentic-search",
+    "search-augmented-generation",
+    "direct-preference-optimization",
+    "dpo",
+    "conversational",
+    "qwen2",
+    "text-generation",
+    "en",
+    "base_model:muradil211/AetherSearch_SFT",
+    "base_model:finetune:muradil211/AetherSearch_SFT",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": "muradil211/AetherSearch_SFT",
+  "formats": [],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "muradil211/AetherSearch · Hugging Face",
+      "url": "https://huggingface.co/muradil211/AetherSearch",
+      "snippet": "AetherSearch AetherSearch is a search-augmented language model release trained through a multi-stage post-training pipeline with SFT, DPO, and reinforcement learning. The released weights are provided in Hugging Face Transformers format and can be loaded with AutoModelForCausalLM and AutoTokenizer."
+    },
+    {
+      "title": "muradil211 (muradil·mamat) - Hugging Face",
+      "url": "https://huggingface.co/muradil211",
+      "snippet": "Sort: Recently updated muradil211/AetherSearch-Eval Viewer •Updated about 11 hours ago•51.7k"
+    },
+    {
+      "title": "AetherSearch — Enterprise AI Search & Agentic Knowledge Platform - GitHub",
+      "url": "https://github.com/vishalm/AetherSearch",
+      "snippet": "AetherSearch is the application layer for LLMs — a feature-rich, self-hostable enterprise AI platform that brings advanced capabilities like RAG, web search, code execution, file creation, deep research, and agentic workflows to your organization. Connect your applications with over 50+ indexing-based connectors provided out of the box or via MCP."
+    },
+    {
+      "title": "Network Graph · Muradil-mamat-211/AetherSearch · GitHub",
+      "url": "https://github.com/Muradil-mamat-211/AetherSearch/network",
+      "snippet": "AetherSearch is a 3B agentic search model trained through full-trajectory SFT, preference optimization with DPO, and information-gain-guided Agentic RL to learn effective multi-turn retrieval and reasoning."
+    },
+    {
+      "title": "AetherSearch API & Inference Endpoint | FriendliAI",
+      "url": "https://friendli.ai/models/muradil211/AetherSearch",
+      "snippet": "Deploy AetherSearch with low-latency inference on FriendliAI. Get scalable API serving, high throughput, and production-grade reliability for AI agents."
+    }
+  ]
+}

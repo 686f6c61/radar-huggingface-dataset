@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "brian564237/act-block-bowl-test",
+  "slug": "brian564237-act-block-bowl-test",
+  "author": "brian564237",
+  "url": "https://huggingface.co/brian564237/act-block-bowl-test",
+  "created_at": "2026-08-30T09:55:25.000Z",
+  "updated_at": "2026-08-30T09:56:00.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "act",
+    "robotics",
+    "dataset:brian564237/so101-block-bowl-test",
+    "arxiv:2304.13705",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 51668614,
+  "parameters_human": "51.7M",
+  "storage_bytes": 206712896,
+  "storage_human": "207 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "brian564237/act-test · Hugging Face",
+      "url": "https://huggingface.co/brian564237/act-test",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "brian564237/act-test at main - Hugging Face",
+      "url": "https://huggingface.co/brian564237/act-test/tree/main",
+      "snippet": "Instructions to use brian564237/act-test with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Libraries LeRobot How to use brian564237/act-test with LeRobot: Notebooks Google Colab Kaggle main act-test 207 MB Ctrl+K Ctrl+K 1 contributor History:5 commits brian564237 Upload model card and train config b6b60be verified2 days ago .gitattributes Safe 1 ..."
+    },
+    {
+      "title": "Who is accountable when an AI agent proposes a test action but the ...",
+      "url": "https://nhimg.org/faq/who-is-accountable-when-an-ai-agent-proposes-a-test-action-but-the-platform-bloc/",
+      "snippet": "If an AI agent proposes an unsafe test and the platform blocks it, the human operator is still accountable for what they asked the system to do. The platform owner is accountable for whether the block was technically sound and properly logged."
+    },
+    {
+      "title": "The AI is not supposed to tamper with rolls? Really? I made a test ...",
+      "url": "https://steamcommunity.com/app/236690/discussions/0/5789982181534347733/",
+      "snippet": "The test was to play a normal team, level them up like normal and see what kind of difference I can see when matched with a mirror. This took a long time, like 4 seasons to finally play against another team of nurgle, but I made sure to take notes until I did."
+    },
+    {
+      "title": "OpenAI Models Escaped Containment and Hacked Hugging Face - WIRED",
+      "url": "https://www.wired.com/story/openai-models-escaped-containment-and-hacked-huggingface/",
+      "snippet": "OpenAI disclosed on Tuesday that it lost control of two AI models during a security test that ended in a breach of the AI research platform Hugging Face. Describing the incident as ..."
+    }
+  ]
+}

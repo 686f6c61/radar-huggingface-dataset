@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "yacdev/SomaliLM-150M-Instruct",
+  "slug": "yacdev-somalilm-150m-instruct",
+  "author": "yacdev",
+  "url": "https://huggingface.co/yacdev/SomaliLM-150M-Instruct",
+  "created_at": "2026-08-28T21:54:25.000Z",
+  "updated_at": "2026-08-30T09:14:27.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "llama",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 19,
+  "trending_score": 0,
+  "parameters": 147286272,
+  "parameters_human": "147.3M",
+  "storage_bytes": 5891894309,
+  "storage_human": "5.9 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "SomaliLM 150M Instruct Demo - a Hugging Face Space by yacdev",
+      "url": "https://huggingface.co/spaces/yacdev/SomaliLM-150M-Demo",
+      "snippet": "Kusoo dhawow SomaliLM-150M! Waxaan ahay caawiye caqli-gacmeed (AI) oo ku hadla af-soomaali iyo Ingiriis. I am SomaliLM, a lightweight 150M bilingual dialogue assistant. Ask me anything in Somali or English!"
+    },
+    {
+      "title": "mradermacher/SomaliLM-150M-Instruct-GGUF · Hugging Face",
+      "url": "https://huggingface.co/mradermacher/SomaliLM-150M-Instruct-GGUF",
+      "snippet": "About static quants of https://huggingface.co/yacdev/SomaliLM-150M-Instruct For a convenient overview and download list, visit our model page for this model. weighted/imatrix quants seem not to be available (by me) at this time. If they do not show up a week or so after the static ones, I have probably not planned for them."
+    },
+    {
+      "title": "GitHub - huggingface/smollm: Everything about the SmolLM and SmolVLM ...",
+      "url": "https://github.com/huggingface/smollm",
+      "snippet": "Welcome to Smol Models, a family of efficient and lightweight AI models from Hugging Face. Our mission is to create fully open powerful yet compact models, for text and vision, that can run effectively on-device while maintaining strong performance."
+    },
+    {
+      "title": "How to Select the Right LLM Model: Instruct, MLX, 8-bit, and Embedding ...",
+      "url": "https://www.simplico.net/2025/08/16/how-to-select-the-right-llm-model-instruct-mlx-8-bit-and-embedding-models/",
+      "snippet": "Choosing the right Large Language Model (LLM) depends on your goal, hardware, and efficiency requirements. Not all models are built for the same purpose: some are tuned for chat, some for local optimization, some for lightweight inference, and others for semantic search. This guide walks through four main categories — Instruct models, MLX models, 8-bit quantized models, and Embedding models ..."
+    },
+    {
+      "title": "AI Model Downloads - 498 Model Examples - AI Models",
+      "url": "https://aimodels.org/ai-models/",
+      "snippet": "Directory of free Open Source AI and machine learning model downloads! Our collection features the latest models in speech to text and image generation."
+    }
+  ]
+}

@@ -5,7 +5,7 @@
   "author": "tttdanielak",
   "url": "https://huggingface.co/tttdanielak/vanessa-voice-gguf",
   "created_at": "2026-08-19T03:23:22.000Z",
-  "updated_at": "2026-08-28T10:03:04.000Z",
+  "updated_at": "2026-08-29T16:19:21.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -32,8 +32,8 @@
   "trending_score": 0,
   "parameters": 3085938688,
   "parameters_human": "3.09B",
-  "storage_bytes": 3859805120,
-  "storage_human": "3.9 GB",
+  "storage_bytes": 5789707680,
+  "storage_human": "5.8 GB",
   "base_model": "Qwen/Qwen2.5-3B-Instruct",
   "formats": [
     "gguf"

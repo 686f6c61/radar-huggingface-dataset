@@ -1,0 +1,76 @@
+{
+  "schema": 1,
+  "id": "s-a-i/SenseNova-U1.5-8B-MoT",
+  "slug": "s-a-i-sensenova-u1-5-8b-mot",
+  "author": "s-a-i",
+  "url": "https://huggingface.co/s-a-i/SenseNova-U1.5-8B-MoT",
+  "created_at": "2026-08-30T10:00:56.000Z",
+  "updated_at": "2026-08-30T10:04:21.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "any-to-any",
+  "library": "transformers",
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "neo_chat",
+    "feature-extraction",
+    "native multimodal",
+    "image-generation",
+    "image-editing",
+    "any-to-any",
+    "custom_code",
+    "en",
+    "zh",
+    "arxiv:2605.12500",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 17532854464,
+  "parameters_human": "17.53B",
+  "storage_bytes": 35065858136,
+  "storage_human": "35.1 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": true,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "README.md · sensenova/SenseNova-U1.5-8B-MoT at main",
+      "url": "https://huggingface.co/sensenova/SenseNova-U1.5-8B-MoT/blob/main/README.md",
+      "snippet": "The fastest way to experience SenseNova-U1.5 is through SenseNova-Studio — a 🆓 free online playground where you can try the model directly in your browser, no installation or GPU required."
+    },
+    {
+      "title": "sensenova/SenseNova-U1.5-8B-MoT at main - Hugging Face",
+      "url": "https://huggingface.co/sensenova/SenseNova-U1.5-8B-MoT/tree/main",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "SenseNova-U1.5-8B-MoT: Text-to-Image model - aimodels.fyi",
+      "url": "https://www.aimodels.fyi/models/huggingFace/sensenova-u1.5-8b-mot-sensenova",
+      "snippet": "Overview SenseNova-U1.5-8B-MoT is a native unified multimodal model built on the NEO-unify architecture that handles both image understanding and generation within a single framework. Created by sensenova, this 8-billion parameter model uses a mixture-of-tasks (MoT) approach with dense transformer layers and strengthened patchify mechanisms."
+    },
+    {
+      "title": "SenseNova-U1.5-8B-MoT (8B (MoT)) | Benchmarks | OpenModelMap",
+      "url": "https://openmodelmap.com/model/sensenova/SenseNova-U1.5-8B-MoT",
+      "snippet": "SenseNova-U1.5-8B-MoT by sensenova. 8B (MoT) open-source AI model. SenseNova-U1.5-8B-MoT by sensenova for any-to-any — open-source AI model on HuggingFace."
+    },
+    {
+      "title": "SenseNova-U1.5: Free Apache-2.0 AI Image Model + Editor",
+      "url": "http://creativeaishow.com/sensenova-u1-5-8b-mot-the-free-apache-2-0-ai-model-that-generates-and-edits-images/",
+      "snippet": "SenseTime pushed the final weights for SenseNova-U1.5-8B-MoT to Hugging Face on August 19, and the interesting part is not the benchmark chart. It is the license. The whole thing — generation, editing, and image understanding in one checkpoint — ships under Apache 2.0. No research-only clause, no territorial restriction, no revenue cap."
+    }
+  ]
+}

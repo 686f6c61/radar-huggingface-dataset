@@ -1,0 +1,77 @@
+{
+  "schema": 1,
+  "id": "NC-AI-consortium-VAETKI/VAETKI",
+  "slug": "nc-ai-consortium-vaetki-vaetki",
+  "author": "NC-AI-consortium-VAETKI",
+  "url": "https://huggingface.co/NC-AI-consortium-VAETKI/VAETKI",
+  "created_at": "2025-12-16T01:41:11.000Z",
+  "updated_at": "2026-08-30T11:02:57.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "ko",
+    "en",
+    "zh",
+    "ja"
+  ],
+  "tags": [
+    "safetensors",
+    "vaetki",
+    "VAETKI",
+    "causal-lm",
+    "text-generation",
+    "conversational",
+    "custom_code",
+    "ko",
+    "en",
+    "zh",
+    "ja",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 62,
+  "downloads_30d": 6113,
+  "trending_score": 0,
+  "parameters": 112191900672,
+  "parameters_human": "112.19B",
+  "storage_bytes": 448786549687,
+  "storage_human": "448.8 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "NC-AI-consortium-VAETKI - Hugging Face",
+      "url": "https://huggingface.co/NC-AI-consortium-VAETKI/VAETKI",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "NC-AI-consortium-VAETKI (NC-AI-consortium-VAETKI) - Hugging Face",
+      "url": "https://huggingface.co/NC-AI-consortium-VAETKI",
+      "snippet": "Org profile for NC-AI-consortium-VAETKI on Hugging Face, the AI community building the future."
+    },
+    {
+      "title": "VAETKI 112B-A10B (MoE) | Learning Gallery",
+      "url": "https://hapticpaper.github.io/learning_gallery/models/2026-01-06--nc-ai-consortium-vaetki-vaetki/",
+      "snippet": "VAETKI is a large multilingual language model released by the NC-AI consortium (a collaboration across 13 organizations). The headline spec is a Mixture-of-Experts setup: ~112B total parameters with ~10B active per token, which is a common tradeoff for getting \"big model\" capacity without paying full dense-model compute at inference time."
+    },
+    {
+      "title": "VAETKI | High-Fidelity Visual AI for Brand Workflow | NC AI",
+      "url": "https://www.vaetki.ai/en",
+      "snippet": "From content creation to commerce, VAETKI is the high-fidelity visual AI solution that understands your business workflow. Precision-generate your brand assets and maximize marketing efficiency. Get started with free credits."
+    },
+    {
+      "title": "NC-AI-consortium-VAETKI/VAETKI · Hugging Face | B Lab",
+      "url": "https://b-lab.team/en/content/db472d5e-b381-45a9-9066-06dbf0aa3aeb",
+      "snippet": "VAETKI is a large language model collaboratively developed by the NC-AI consortium, involving 13 organizations and led by NC-AI. Its primary design goals are efficiency and scalability, achieved through the adoption of a Mixture-of-Experts (MoE) architecture. The model, VAETKI-100B-A10B, is built for both research and real-world applications, aiming to support advanced reasoning, domain ..."
+    }
+  ]
+}

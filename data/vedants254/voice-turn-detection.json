@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "vedants254/voice-turn-detection",
+  "slug": "vedants254-voice-turn-detection",
+  "author": "vedants254",
+  "url": "https://huggingface.co/vedants254/voice-turn-detection",
+  "created_at": "2026-08-30T09:52:54.000Z",
+  "updated_at": "2026-08-30T10:17:44.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "audio-classification",
+  "library": "onnxruntime",
+  "languages": [
+    "en",
+    "hi"
+  ],
+  "tags": [
+    "onnxruntime",
+    "onnx",
+    "turn-detection",
+    "endpointing",
+    "voice-ai",
+    "whisper",
+    "hinglish",
+    "audio-classification",
+    "en",
+    "hi",
+    "dataset:pipecat-ai/smart-turn-data-v3.2-train",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 31612757,
+  "storage_human": "32 MB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - vedants254/Voice-Turn-detection: Audio-native neural turn ...",
+      "url": "https://github.com/vedants254/Voice-Turn-detection",
+      "snippet": "A compact, audio-native model that decides whether a speaker has completed their turn or is only pausing. It is designed for voice-agent endpointing where a VAD timeout alone is too eager: hesitations, fillers, code-switches, and thinking pauses should not automatically hand control to the agent."
+    },
+    {
+      "title": "Voice-Turn-detection/README.md at main · vedants254/Voice ... - GitHub",
+      "url": "https://github.com/vedants254/Voice-Turn-detection/blob/main/README.md",
+      "snippet": "Voice Turn Detection A compact, audio-native model that decides whether a speaker has completed their turn or is only pausing. It is designed for voice-agent endpointing where a VAD timeout alone is too eager: hesitations, fillers, code-switches, and thinking pauses should not automatically hand control to the agent."
+    },
+    {
+      "title": "vedants254 (Shelkar) - Hugging Face",
+      "url": "https://huggingface.co/vedants254",
+      "snippet": "AI & ML interests ... Recent Activity updated a Space 29 days ago ... published a Space about 1 month ago"
+    },
+    {
+      "title": "pipecat-ai/smart-turn-v2 · Hugging Face",
+      "url": "https://huggingface.co/pipecat-ai/smart-turn-v2",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Audio-Only Turn-Taking Model v2 - krisp.ai",
+      "url": "https://krisp.ai/blog/krisp-turn-taking-v2-voice-ai-viva-sdk/",
+      "snippet": "Krisp&#x27;s new Turn-Taking v2 model improves real-time conversational accuracy for Voice AI systems. Discover how it outperforms v1 with higher accuracy, faster turn detection, and stronger noise resilience — now available in the VIVA SDK."
+    }
+  ]
+}

@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "Polite114514/RUNABLE",
+  "slug": "polite114514-runable",
+  "author": "Polite114514",
+  "url": "https://huggingface.co/Polite114514/RUNABLE",
+  "created_at": "2026-08-30T09:50:00.000Z",
+  "updated_at": "2026-08-30T10:25:03.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Runable - Build, Grow and Run your Business",
+      "url": "https://runable.com/",
+      "snippet": "Runable is the AI general agent that thinks, plans, and executes end-to-end, so you can Build, Run & Grow."
+    },
+    {
+      "title": "index.html · Polite114514/Colorables at main - Hugging Face",
+      "url": "https://huggingface.co/spaces/Polite114514/Colorables/blob/main/index.html",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Welcome to Runable 2.0 - Runable Docs",
+      "url": "https://docs.runable.com/",
+      "snippet": "The best way to work with AI. One agent that builds, creates, and ships. Websites, slides, videos, images, reports, audio, and more. Introducing Runable 2.0 — the best way to work with AI. Runable"
+    },
+    {
+      "title": "How to Use Runable: The Complete 2026 Guidewhat",
+      "url": "https://runable.com/blogs/runable-2-0-agent",
+      "snippet": "What Is Runable? Runable is a general-purpose AI agent: you describe an outcome in plain language, and it executes the whole job, from research to build to deployment, inside its own sandbox. It is a different category from a chatbot, which answers questions but leaves the doing to you. That distinction matters for how you use it."
+    },
+    {
+      "title": "Runable raises $21M Series A at $65M valuation on AI agent growth pivot",
+      "url": "https://llmgram.app/news/2026/08/runable-raises-21m-series-a-at-65m-valuation-on-ai-agent-gro-a083039f.html",
+      "snippet": "Indian startup Runable closed a $21 million Series A at a $65 million post-money valuation, co-led by Susquehanna Venture Capital and Nexus Venture Partners, as it pivots from scraping infrastructure toward AI agents that help small businesses grow rather than merely build. TechCrunch reports roughly 1.7 million registered users across the United States, United Kingdom, and Japan, with more ..."
+    }
+  ]
+}

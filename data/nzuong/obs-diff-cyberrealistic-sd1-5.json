@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "NZUONG/OBS-Diff-CyberRealistic-SD1.5",
+  "slug": "nzuong-obs-diff-cyberrealistic-sd1-5",
+  "author": "NZUONG",
+  "url": "https://huggingface.co/NZUONG/OBS-Diff-CyberRealistic-SD1.5",
+  "created_at": "2026-08-30T01:48:24.000Z",
+  "updated_at": "2026-08-30T02:18:10.000Z",
+  "license": "openrail++",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-image",
+  "library": "diffusers",
+  "languages": [],
+  "tags": [
+    "diffusers",
+    "stable-diffusion",
+    "text-to-image-models",
+    "model-compression",
+    "pruning",
+    "text-to-image",
+    "arxiv:2510.06751",
+    "license:openrail++",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1124811070,
+  "storage_human": "1.1 GB",
+  "base_model": null,
+  "formats": [
+    "diffusers"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "NZUONG/OBS-Diff-CyberRealistic-SD1.5 · Hugging Face",
+      "url": "https://huggingface.co/NZUONG/OBS-Diff-CyberRealistic-SD1.5",
+      "snippet": "OBS-Diff-sd1.5 provides structured-pruned checkpoints of the UNet from CyberRealistic, a Stable Diffusion 1.5-based checkpoint, compressed using the OBS-Diff framework."
+    },
+    {
+      "title": "CyberRealistic - Final | Stable Diffusion 1.x Checkpoint | Civitai",
+      "url": "https://civitai.com/models/15003/cyberrealistic",
+      "snippet": "CyberRealistic SD1.5 ~Final Release~ This is it. The last and final version of the original CyberRealistic SD1.5 model. This release marks the end of an era and the moment where SD1.5 CyberRealistic reaches its ultimate form. No more updates. No more revisions. Just the final, perfected vision of where it all began. Thank you to everyone who supported, tested, created, and believed in ..."
+    },
+    {
+      "title": "Cyber Realistic | Open Laboratory",
+      "url": "https://openlaboratory.com/models/cyber-realistic/",
+      "snippet": "Versatile photorealistic SD 1.5 fine-tune capable of generating a wide range of convincing photographic images."
+    },
+    {
+      "title": "CyberRealistic Final - Checkpoint for SD 1.5 | CivArchive",
+      "url": "https://civarchive.com/models/15003?modelVersionId=2681234",
+      "snippet": "The last and final version of the original CyberRealistic SD1.5 model. This release marks the end of an era and the moment where SD1.5 CyberRealistic reaches its ultimate form."
+    },
+    {
+      "title": "cyberdelia/CyberRealistic · Hugging Face",
+      "url": "https://huggingface.co/cyberdelia/CyberRealistic",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    }
+  ]
+}

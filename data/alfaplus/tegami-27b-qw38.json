@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "alfaplus/tegami-27B-qw38",
+  "slug": "alfaplus-tegami-27b-qw38",
+  "author": "alfaplus",
+  "url": "https://huggingface.co/alfaplus/tegami-27B-qw38",
+  "created_at": "2026-08-30T01:59:50.000Z",
+  "updated_at": "2026-08-30T03:36:51.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [
+    "ja",
+    "en"
+  ],
+  "tags": [
+    "peft",
+    "lora",
+    "qlora",
+    "japanese",
+    "business-japanese",
+    "keigo",
+    "email",
+    "text-generation",
+    "ja",
+    "en",
+    "base_model:Qwen/Qwen3.8-27B",
+    "base_model:adapter:Qwen/Qwen3.8-27B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": "Qwen/Qwen3.8-27B",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "alfaplus/alfa-evil-qwen3.8-27b · Hugging Face",
+      "url": "https://huggingface.co/alfaplus/alfa-evil-qwen3.8-27b",
+      "snippet": "alfaplus / alfa-evil-qwen3.8-27b like 0 Follow alfaplus laboratory 1 License:mit Model card FilesFiles and versions xet Community Copy to bucket new"
+    },
+    {
+      "title": "GitHub - L1aoXingyu/qw38: Native inference engine for Qwen3.8-27B",
+      "url": "https://github.com/L1aoXingyu/qw38",
+      "snippet": "Native inference engine for Qwen3.8-27B. Contribute to L1aoXingyu/qw38 development by creating an account on GitHub."
+    },
+    {
+      "title": "PrismML on X: \"Here is Ternary Bonsai 27B running an end-to-end agentic ...",
+      "url": "https://x.com/PrismML/status/2077084899904024918",
+      "snippet": "Here is Ternary Bonsai 27B running an end-to-end agentic workflow locally with Hermes on an NVIDIA GeForce RTX 5090 GPU. The model reasons, calls tools, reads outputs, modifies files, and surfaces insights - all on consumer hardware, while all private files, intermediate states, and iterations remain local."
+    },
+    {
+      "title": "Qwen 3.8 AI Models (27B & 2.4T MoE) - Singularity Moments",
+      "url": "https://singularitymoments.com/qwen-3-8-ai-models/",
+      "snippet": "Discover Alibaba&#x27;s Qwen 3.8 AI suite: featuring the local 27B dense model and 2.4T MoE flagship with agentic reasoning, open weights, and top benchmarks."
+    },
+    {
+      "title": "Qwen 3.6 27B - AI Model | There&#x27;s An AI For That",
+      "url": "https://theresanaiforthat.com/model/qwen-3-6-27b/",
+      "snippet": "Qwen3.6-27B is Qwen&#x27;s open-weight multimodal model for coding, agent workflows, long-context reasoning, and vision-language tasks. It combines a 27B causal language model with a vision encoder, supports image-text-to-text use, and offers a native 262,144-token context window extendable to about 1.01M tokens."
+    }
+  ]
+}

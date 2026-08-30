@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "Tser-vak/medgemma-4b-medical-notes",
+  "slug": "tser-vak-medgemma-4b-medical-notes",
+  "author": "Tser-vak",
+  "url": "https://huggingface.co/Tser-vak/medgemma-4b-medical-notes",
+  "created_at": "2026-08-30T06:44:21.000Z",
+  "updated_at": "2026-08-30T06:44:30.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 152665279,
+  "storage_human": "153 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "google/medgemma-4b-it · Hugging Face",
+      "url": "https://huggingface.co/google/medgemma-4b-it",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GitHub - Google-Health/medgemma",
+      "url": "https://github.com/google-health/medgemma",
+      "snippet": "MedGemma is a collection of Gemma 3 variants that are trained for performance on medical text and image comprehension. Developers can use MedGemma to accelerate building healthcare-based AI applications. MedGemma comes in two variants: a 4B multimodal version and a 27B text-only version. MedGemma 4B utilizes a SigLIP image encoder that has been specifically pre-trained on a variety of de ..."
+    },
+    {
+      "title": "MedGemma — Google DeepMind",
+      "url": "https://deepmind.google/models/gemma/medgemma/",
+      "snippet": "Accelerate the development of healthcare-based AI applications MedGemma 1.5 4B enables developers to more effectively adapt MedGemma for applications that involve high-dimensional imaging (CT, MRI, and whole slide histopathology), longitudinal analysis of chest X-rays, anatomical localization, and other medical imaging and text functionality."
+    },
+    {
+      "title": "medgemma:4b - ollama.com",
+      "url": "https://ollama.com/library/medgemma:4b",
+      "snippet": "MedGemma is a collection of Gemma 3 variants that are trained for performance on medical text and image comprehension. Developers can use MedGemma to accelerate building healthcare-based AI applications. MedGemma is available in 4B and 27B versions. Both MedGemma multimodal versions utilize a SigLIP image encoder that has been specifically pre-trained on a variety of de-identified medical data ..."
+    },
+    {
+      "title": "MedGemma-4b-it: Medical VLM Insights - emergentmind.com",
+      "url": "https://www.emergentmind.com/topics/medgemma-4b-it-model",
+      "snippet": "MedGemma-4b-it is an open-source 4B vision-language model tailored for medical applications, integrating medical text understanding with image-text reasoning. It employs a decoder-only Transformer backbone paired with a ViT-style vision encoder and leverages LoRA for efficient fine-tuning on clinical tasks. The model demonstrates state-of-the-art results on clinical benchmarks such as order ..."
+    }
+  ]
+}

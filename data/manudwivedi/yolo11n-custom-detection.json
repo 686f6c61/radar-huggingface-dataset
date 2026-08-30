@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "ManuDwivedi/yolo11n-custom-detection",
+  "slug": "manudwivedi-yolo11n-custom-detection",
+  "author": "ManuDwivedi",
+  "url": "https://huggingface.co/ManuDwivedi/yolo11n-custom-detection",
+  "created_at": "2026-08-30T02:06:49.000Z",
+  "updated_at": "2026-08-30T02:09:48.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 15936929,
+  "storage_human": "16 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Ultralytics YOLO11",
+      "url": "https://docs.ultralytics.com/models/yolo11",
+      "snippet": "Discover YOLO11, an advancement in real-time object detection, offering excellent accuracy and efficiency for diverse computer vision tasks."
+    },
+    {
+      "title": "yolo11_object_detection_custom_dataset.ipynb - Colab",
+      "url": "https://colab.research.google.com/github/pyresearch/notebooks/blob/main/notebook/yolo11_object_detection_custom_dataset.ipynb",
+      "snippet": "AutoInstall will run now for &#x27;dill&#x27; but this feature will be removed in the future. Recommend fixes are to train a new model using the latest &#x27;ultralytics&#x27; package or to run a command with an official Ultralytics model, i.e. &#x27;yolo predict model=yolov8n.pt&#x27; requirements: Ultralytics requirement [&#x27;dill&#x27;] not found, attempting AutoUpdate..."
+    },
+    {
+      "title": "GitHub - ultralytics/yolo11: Ultralytics YOLO11 discovery and ...",
+      "url": "https://github.com/ultralytics/yolo11",
+      "snippet": "Ultralytics YOLO11 is available through the official Ultralytics YOLO package. It supports object detection, instance segmentation, image classification, pose estimation, oriented object detection, and tracking in a fast, accurate, and easy to use Python and CLI workflow. This repository is a lightweight discovery page for YOLO11. The canonical implementation, package releases, model downloads ..."
+    },
+    {
+      "title": "yolo11n: Image-to-Image model — overview, use cases, alternatives",
+      "url": "https://www.aimodels.fyi/models/replicate/yolo11n-ultralytics",
+      "snippet": "Overview yolo11n is Ultralytics&#x27; nano-scale object detection model with 2.6M parameters, achieving 39.5 mAP50-95 on the COCO dataset while maintaining real-time inference speed of 1.55 ms on T4 GPUs. Built and maintained by ultralytics, this model represents the latest generation in the YOLO lineage, optimized for deployment scenarios where model size and latency are critical constraints. The ..."
+    },
+    {
+      "title": "YOLO11 Models by Ultralytics",
+      "url": "https://platform.ultralytics.com/ultralytics/yolo11",
+      "snippet": "Released September 2024. Current stable release and the recommended choice for all use cases. Best balance of speed, accuracy, and ease of use across all vision tasks."
+    }
+  ]
+}

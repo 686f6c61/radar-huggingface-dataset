@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "Jordansky/env_bossr2_2bc33ab5",
+  "slug": "jordansky-env_bossr2_2bc33ab5",
+  "author": "Jordansky",
+  "url": "https://huggingface.co/Jordansky/env_bossr2_2bc33ab5",
+  "created_at": "2026-08-30T08:49:03.000Z",
+  "updated_at": "2026-08-30T08:49:17.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "base_model:adapter:/cache/models/Jordansky--env_bossr1_daf88974",
+    "lora",
+    "sft",
+    "transformers",
+    "trl",
+    "text-generation",
+    "conversational",
+    "arxiv:1910.09700",
+    "base_model:unsloth/Meta-Llama-3.1-8B-Instruct",
+    "base_model:adapter:unsloth/Meta-Llama-3.1-8B-Instruct",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 2701626128,
+  "storage_human": "2.7 GB",
+  "base_model": "unsloth/Meta-Llama-3.1-8B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Jordansky/envours2-b9057b9c · Hugging Face",
+      "url": "https://huggingface.co/Jordansky/envours2-b9057b9c",
+      "snippet": "Jordansky / envours2-b9057b9c like 0 Text Generation PEFT Safetensors Transformers lora sft trl conversational arxiv:1910.09700 Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "Jordansky/f6782145-boss · Hugging Face",
+      "url": "https://huggingface.co/Jordansky/f6782145-boss",
+      "snippet": "Jordansky / f6782145-boss like 0 Safetensors gemma2 Model card FilesFiles and versions xet Community Copy to bucket new No model card Downloads last month - Safetensors Model size 3B params Tensor type BF16 · Chat template Files info Inference Providers NEW This model isn&#x27;t deployed by any Inference Provider.🙋Ask for provider support"
+    },
+    {
+      "title": "‎Google Gemini",
+      "url": "https://gemini.google.com/",
+      "snippet": "Meet Gemini, Google&#x27;s AI assistant. Get help with writing, planning, brainstorming, and more. Experience the power of generative AI."
+    },
+    {
+      "title": "Jordansky/e1d461c8-boss · Hugging Face",
+      "url": "https://huggingface.co/Jordansky/e1d461c8-boss",
+      "snippet": "Jordansky / e1d461c8-boss like 0 Safetensors qwen2 Model card FilesFiles and versions xet Community Copy to bucket new No model card Downloads last month - Safetensors Model size 2B params Tensor type BF16 · Chat template Files info Inference Providers NEW This model isn&#x27;t deployed by any Inference Provider.🙋Ask for provider support"
+    },
+    {
+      "title": "Jordansky/ce763-boss · Hugging Face",
+      "url": "https://huggingface.co/Jordansky/ce763-boss",
+      "snippet": "Jordansky / ce763-boss like 0 Safetensors qwen2 Model card FilesFiles and versions xet Community Copy to bucket new No model card Downloads last month - Safetensors Model size 3B params Tensor type BF16 · Chat template Files info Inference Providers NEW This model isn&#x27;t deployed by any Inference Provider.🙋Ask for provider support"
+    }
+  ]
+}

@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "specklabs/Speck1.5-140M-GGUF",
+  "slug": "specklabs-speck1-5-140m-gguf",
+  "author": "specklabs",
+  "url": "https://huggingface.co/specklabs/Speck1.5-140M-GGUF",
+  "created_at": "2026-08-30T08:21:34.000Z",
+  "updated_at": "2026-08-30T08:27:13.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "llama.cpp",
+  "languages": [],
+  "tags": [
+    "llama.cpp",
+    "gguf",
+    "text-generation",
+    "base_model:specklabs/Speck1.5-140M",
+    "base_model:quantized:specklabs/Speck1.5-140M",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 180160768,
+  "parameters_human": "180.2M",
+  "storage_bytes": 796700288,
+  "storage_human": "797 MB",
+  "base_model": "specklabs/Speck1.5-140M",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "specklabs/Speck1-140M-Instruct-GGUF · Hugging Face",
+      "url": "https://huggingface.co/specklabs/Speck1-140M-Instruct-GGUF",
+      "snippet": "Instructions to use specklabs/Speck1-140M-Instruct-GGUF with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Notebooks Google Colab Kaggle Local AppsSettings llama.cpp How to use specklabs/Speck1-140M-Instruct-GGUF with llama.cpp: Install (macOS, Linux)"
+    },
+    {
+      "title": "specklabs/Speck1-140M · Hugging Face",
+      "url": "https://huggingface.co/specklabs/Speck1-140M",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Speck1 140M Instruct by specklabs - LLM Explorer",
+      "url": "https://llm-explorer.com/model/specklabs%2FSpeck1-140M-Instruct,42bo3zsIoltvXtgS6xbaEa",
+      "snippet": "Speck1 140M Instruct is an open-source 140m LLM by specklabs. VRAM 0.3GB, 4K context. Compare benchmarks, capabilities, and deployment details on LLM Explorer."
+    },
+    {
+      "title": "GGUF Model Discovery - Browse & Download AI Models",
+      "url": "https://local-ai-zone.github.io/",
+      "snippet": "Discover and download GGUF format AI models. Browse and direct download thousands of quantized AI models with detailed information, download counts, and direct links."
+    },
+    {
+      "title": "LLM Leaderboard - Comparison of AI models from OpenAI, Anthropic ...",
+      "url": "https://artificialanalysis.ai/leaderboards/models",
+      "snippet": "Comparison and ranking the performance of over 250 AI models (LLMs) across key metrics including intelligence, price, performance and speed (output speed - tokens per second & latency - TTFT), context window & others."
+    }
+  ]
+}

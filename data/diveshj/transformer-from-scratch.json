@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "Diveshj/transformer-from-scratch",
+  "slug": "diveshj-transformer-from-scratch",
+  "author": "Diveshj",
+  "url": "https://huggingface.co/Diveshj/transformer-from-scratch",
+  "created_at": "2026-08-30T07:54:04.000Z",
+  "updated_at": "2026-08-30T08:01:57.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1473852512,
+  "storage_human": "1.5 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Building Transformer Models From Scratch with PyTorch",
+      "url": "https://machinelearningmastery.com/building-transformer-models-from-scratch/",
+      "snippet": "Building Transformer Models From Scratch with PyTorch Attention Mechanisms to Language Models $37 USD Transformer models have revolutionized artificial intelligence, powering everything from ChatGPT to video generation. But how do these powerful models actually work? Despite their impact, transformers aren&#x27;t as complicated as they seem. They&#x27;re built from a few core components, and the ..."
+    },
+    {
+      "title": "Building Transformers from Scratch: Understanding the Architecture That ...",
+      "url": "https://dev.to/gruheshkurra/building-transformers-from-scratch-understanding-the-architecture-that-changed-ai-1g84",
+      "snippet": "Transformers revolutionized artificial intelligence! From BERT to GPT to ChatGPT, this architecture powers virtually every major breakthrough in natural language processing. But how do they actually work under the hood? Today, I&#x27;ll walk you through building a complete Transformer from scratch using PyTorch, demystifying the \"Attention Is All You Need\" paper with practical code and clear ..."
+    },
+    {
+      "title": "Transformer from scratch using Pytorch - GitHub",
+      "url": "https://github.com/SirawitC/Transformer_from_scratch_pytorch",
+      "snippet": "This repository provides a step-by-step implementation of the Transformer architecture from scratch using PyTorch. The Transformer model, introduced in the seminal paper \"Attention is All You Need,\" [1] has become the foundation for state-of-the-art natural language processing (NLP) models such as BERT and GPT. In this repository, we break down the core components of the Transformer, including ..."
+    },
+    {
+      "title": "Transformer From Scratch - GitHub",
+      "url": "https://github.com/IrfanKpm/transformer-from-scratch-pytorch",
+      "snippet": "A step-by-step implementation of the Transformer model from scratch in PyTorch. Designed for deep understanding through manual coding, math derivations, and incremental construction of each module...."
+    },
+    {
+      "title": "Transformer_from_scratch_pytorch.ipynb - Colab",
+      "url": "https://colab.research.google.com/github/a-kishore-dev/transformer-pytorch/blob/main/Transformer_from_scratch_pytorch.ipynb",
+      "snippet": "\"Attention is All You Need\" — Vaswani et al., 2017 Overview The Transformer, introduced in 2017, fundamentally changed deep learning — not just for NLP, but for vision, audio, and now almost every domain. GPT, BERT, T5, and virtually every large-scale AI system today are built on it. In this notebook, we build one from scratch using only PyTorch: no pretrained models, no high-level ..."
+    }
+  ]
+}

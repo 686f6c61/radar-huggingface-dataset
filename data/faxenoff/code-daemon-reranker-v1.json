@@ -5,7 +5,7 @@
   "author": "faxenoff",
   "url": "https://huggingface.co/faxenoff/code-daemon-reranker-v1",
   "created_at": "2026-08-03T15:17:47.000Z",
-  "updated_at": "2026-08-28T21:06:23.000Z",
+  "updated_at": "2026-08-29T10:45:32.000Z",
   "license": "mit",
   "license_family": "oss",
   "pipeline_tag": "text-ranking",
@@ -36,8 +36,8 @@
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
-  "storage_bytes": 4762119573,
-  "storage_human": "4.8 GB",
+  "storage_bytes": 5713140405,
+  "storage_human": "5.7 GB",
   "base_model": "cross-encoder/mmarco-mMiniLMv2-L12-H384-v1",
   "formats": [
     "onnx"

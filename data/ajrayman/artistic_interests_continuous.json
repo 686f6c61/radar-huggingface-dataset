@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "ajrayman/Artistic_Interests_continuous",
+  "slug": "ajrayman-artistic_interests_continuous",
+  "author": "ajrayman",
+  "url": "https://huggingface.co/ajrayman/Artistic_Interests_continuous",
+  "created_at": "2024-08-03T17:24:49.000Z",
+  "updated_at": "2026-08-30T10:01:49.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "roberta",
+    "text-classification",
+    "generated_from_trainer",
+    "base_model:FacebookAI/roberta-base",
+    "base_model:finetune:FacebookAI/roberta-base",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 4,
+  "trending_score": 0,
+  "parameters": 124646401,
+  "parameters_human": "124.6M",
+  "storage_bytes": 6333270521,
+  "storage_human": "6.3 GB",
+  "base_model": "roberta-base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ajrayman (Adam) - Hugging Face",
+      "url": "https://huggingface.co/ajrayman",
+      "snippet": "ajrayman/Cooperation_binary Text Classification • Updated Oct 9 • 14 Expand 89 model s"
+    },
+    {
+      "title": "ajrayman/Morality_continuous · Hugging Face",
+      "url": "https://huggingface.co/ajrayman/Morality_continuous",
+      "snippet": "Instructions to use ajrayman/Morality_continuous with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Libraries Transformers How to use ajrayman/Morality_continuous with Transformers:"
+    },
+    {
+      "title": "GitHub - ClawLabsAI/free-ai-models: Daily-updated list of every free AI ...",
+      "url": "https://github.com/ClawLabsAI/free-ai-models",
+      "snippet": "The free AI model landscape changes every week — models get added, rate limits change, providers shut down without notice. This repo tracks it all automatically so you don&#x27;t have to. Use it to: Find the best free model for your current task Track which providers offer the most generous free tiers Get notified of new free models via GitHub Watch → Releases Build your own routing logic on ..."
+    },
+    {
+      "title": "AI Leaderboard 2026: Rankings for 300+ Top AI Models by Intelligence ...",
+      "url": "https://llm-stats.com/",
+      "snippet": "The AI Leaderboard — independent rankings of GPT, Claude, Gemini, Llama, DeepSeek and 300+ AI models by intelligence, speed and price. Composite LLM Stats Score updated continuously from public benchmarks and live API metrics."
+    },
+    {
+      "title": "Perplexity AI",
+      "url": "https://www.perplexity.ai/",
+      "snippet": "Perplexity is a free AI-powered answer engine that provides accurate, trusted, and real-time answers to any question."
+    }
+  ]
+}

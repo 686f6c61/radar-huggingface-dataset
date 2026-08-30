@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "Okaydvns/ComUse-E2B-GGUF",
+  "slug": "okaydvns-comuse-e2b-gguf",
+  "author": "Okaydvns",
+  "url": "https://huggingface.co/Okaydvns/ComUse-E2B-GGUF",
+  "created_at": "2026-08-30T10:18:53.000Z",
+  "updated_at": "2026-08-30T10:31:52.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "gemma4",
+    "llama.cpp",
+    "unsloth",
+    "vision-language-model",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 4628569635,
+  "parameters_human": "4.63B",
+  "storage_bytes": 25188204416,
+  "storage_human": "25.2 GB",
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Okaydvns (Lmao) - Hugging Face",
+      "url": "https://huggingface.co/Okaydvns",
+      "snippet": "The secret is bassiclly is just a breakable black box. But if it break, isnt it not a secret anymore?"
+    },
+    {
+      "title": "GGUF Model Discovery - Browse & Download AI Models",
+      "url": "https://local-ai-zone.github.io/",
+      "snippet": "Discover and download GGUF format AI models. Browse and direct download thousands of quantized AI models with detailed information, download counts, and direct links."
+    },
+    {
+      "title": "Models compatible with the GGUF library - Hugging Face",
+      "url": "https://huggingface.co/models?library=gguf",
+      "snippet": "Explore machine learning models."
+    },
+    {
+      "title": "ggufy - Model Library",
+      "url": "https://ggufy.com/",
+      "snippet": "ggufy helps you discover, download, and manage GGUF models from providers like Hugging Face, with compatibility for inference engines such as Ollama and llama.cpp."
+    },
+    {
+      "title": "LLM Leaderboard & AI Model Benchmarks — August 2026",
+      "url": "https://benchlm.ai/",
+      "snippet": "LLM Leaderboard & AI Model Benchmarks — August 2026 Compare frontier AI models by quality, cost, and context. 105 Supported and 123 Estimated models among 406 tracked LLMs — 408 benchmarks, real pricing, and runtime data in one place."
+    }
+  ]
+}

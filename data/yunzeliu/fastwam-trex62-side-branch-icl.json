@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "YunzeLiu/fastwam-trex62-side-branch-icl",
+  "slug": "yunzeliu-fastwam-trex62-side-branch-icl",
+  "author": "YunzeLiu",
+  "url": "https://huggingface.co/YunzeLiu/fastwam-trex62-side-branch-icl",
+  "created_at": "2026-08-27T03:29:48.000Z",
+  "updated_at": "2026-08-30T09:12:51.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "robotics",
+  "library": "fastwam",
+  "languages": [],
+  "tags": [
+    "fastwam",
+    "robotics",
+    "imitation-learning",
+    "vision-language-action",
+    "t-rex",
+    "bimanual-manipulation",
+    "in-context-learning",
+    "dataset:wushr-lance/VLA2Vec",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 13772945774,
+  "storage_human": "13.8 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "YunzeLiu/fastwam-trex62-side-branch-icl · Hugging Face",
+      "url": "https://huggingface.co/YunzeLiu/fastwam-trex62-side-branch-icl",
+      "snippet": "This is the side-branch FastWAM-ICL checkpoint trained on the pick_fruits subset of wushr-lance/VLA2Vec. Both ICL variants start from the exact same FastWAM T-Rex baseline at step 27,708 and use the same manually audited, fixed EgoDex reference."
+    },
+    {
+      "title": "YunzeLiu/fastwam-trex62-prefilling-icl · Hugging Face",
+      "url": "https://huggingface.co/YunzeLiu/fastwam-trex62-prefilling-icl",
+      "snippet": "This is the prefilling FastWAM-ICL checkpoint trained on the pick_fruits subset of wushr-lance/VLA2Vec. Both ICL variants start from the exact same FastWAM T-Rex baseline at step 27,708 and use the same manually audited, fixed EgoDex reference."
+    },
+    {
+      "title": "Yunze Liu - Tsinghua University",
+      "url": "https://yunzeliu.github.io/index.html",
+      "snippet": "About Me I am a final-year Ph.D. student in Computer Science at the Institute for Interdisciplinary Information Sciences (IIIS), Tsinghua University, advised by Prof. Li Yi. I am currently a Research Intern at NVIDIA Research, where I work on in-context learning for Physical AI, mentored by Dr. Han Cai, with guidance from Prof. Song Han."
+    },
+    {
+      "title": "LLM Leaderboard & AI Model Benchmarks — August 2026",
+      "url": "https://benchlm.ai/",
+      "snippet": "LLM Leaderboard & AI Model Benchmarks — August 2026 Compare frontier AI models by quality, cost, and context. 105 Supported and 123 Estimated models among 406 tracked LLMs — 408 benchmarks, real pricing, and runtime data in one place."
+    },
+    {
+      "title": "yunzeliu - GitHub",
+      "url": "https://github.com/yunzeliu",
+      "snippet": "A curated list of papers, models, datasets, and benchmarks for unified multi-modal embedding models. 43 2"
+    }
+  ]
+}

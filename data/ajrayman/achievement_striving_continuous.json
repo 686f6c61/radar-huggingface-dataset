@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "ajrayman/Achievement_Striving_continuous",
+  "slug": "ajrayman-achievement_striving_continuous",
+  "author": "ajrayman",
+  "url": "https://huggingface.co/ajrayman/Achievement_Striving_continuous",
+  "created_at": "2024-08-04T01:01:58.000Z",
+  "updated_at": "2026-08-30T10:49:43.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "roberta",
+    "text-classification",
+    "generated_from_trainer",
+    "base_model:FacebookAI/roberta-base",
+    "base_model:finetune:FacebookAI/roberta-base",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 4,
+  "trending_score": 0,
+  "parameters": 124646401,
+  "parameters_human": "124.6M",
+  "storage_bytes": 5410388889,
+  "storage_human": "5.4 GB",
+  "base_model": "roberta-base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ajrayman (Adam) - Hugging Face",
+      "url": "https://huggingface.co/ajrayman",
+      "snippet": "ajrayman/Cooperation_binary Text Classification • Updated Oct 9 • 14 Expand 89 model s"
+    },
+    {
+      "title": "ajrayman/Achievement_Striving_binary · Hugging Face",
+      "url": "https://huggingface.co/ajrayman/Achievement_Striving_binary",
+      "snippet": "Achievement_Striving_binary This model is a fine-tuned version of roberta-large on the None dataset. It achieves the following results on the evaluation set:"
+    },
+    {
+      "title": "Best LLM Leaderboard 2026 | AI Model Rankings, Benchmarks & Pricing",
+      "url": "https://onyx.app/llm-leaderboard",
+      "snippet": "The definitive LLM leaderboard — ranking the best AI models including Claude, GPT, Gemini, DeepSeek, Llama, and more across coding, reasoning, math, agentic, and chat benchmarks. Compare LLM rankings, tier lists, and pricing."
+    },
+    {
+      "title": "New AI Models 2026 - Latest Releases | LM Market Cap",
+      "url": "https://lmmarketcap.com/new-ai-models",
+      "snippet": "Discover the newest AI models released in 2026. Track the latest LLMs, coding models, and image generators as they launch with source-backed release and evidence tracking."
+    },
+    {
+      "title": "Best AI for Coding 2026 - Top Coding Models - llm-stats.com",
+      "url": "https://llm-stats.com/leaderboards/best-ai-for-coding",
+      "snippet": "Compare the best AI for coding using live coding arena results, benchmark performance, and real generation examples for code generation, debugging, and software engineering."
+    }
+  ]
+}

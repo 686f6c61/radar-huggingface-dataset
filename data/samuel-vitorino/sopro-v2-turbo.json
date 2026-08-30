@@ -1,0 +1,77 @@
+{
+  "schema": 1,
+  "id": "samuel-vitorino/sopro-v2-turbo",
+  "slug": "samuel-vitorino-sopro-v2-turbo",
+  "author": "samuel-vitorino",
+  "url": "https://huggingface.co/samuel-vitorino/sopro-v2-turbo",
+  "created_at": "2026-08-25T10:56:29.000Z",
+  "updated_at": "2026-08-27T00:39:57.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-speech",
+  "library": "sopro",
+  "languages": [
+    "en",
+    "pt",
+    "fr",
+    "de"
+  ],
+  "tags": [
+    "sopro",
+    "safetensors",
+    "tts",
+    "voice-cloning",
+    "streaming",
+    "on-device",
+    "text-to-speech",
+    "en",
+    "pt",
+    "fr",
+    "de",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 13,
+  "downloads_30d": 192,
+  "trending_score": 13,
+  "parameters": 121574193,
+  "parameters_human": "121.6M",
+  "storage_bytes": 764558393,
+  "storage_human": "765 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "samuel-vitorino/sopro-v2-turbo · Hugging Face",
+      "url": "https://huggingface.co/samuel-vitorino/sopro-v2-turbo",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GitHub - samuel-vitorino/sopro: A lightweight text-to-speech model with ...",
+      "url": "https://github.com/samuel-vitorino/sopro",
+      "snippet": "Sopro TTS Sopro (from the Portuguese word for \"breath/blow\") is a lightweight voice-cloning text-to-speech model family. This repo ships sopro-v2-turbo, a 120M-parameter open model that streams, runs comfortably on a laptop CPU or in the browser, and reaches SOTA-level intelligibility against much larger systems."
+    },
+    {
+      "title": "samuel-vitorino/sopro-v2-turbo-onnx · Hugging Face",
+      "url": "https://huggingface.co/samuel-vitorino/sopro-v2-turbo-onnx",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Sopro V2: private, fast, on-device text-to-speech · Halo Research",
+      "url": "https://research.haloneuro.ai/posts/sopro-v2",
+      "snippet": "A new family of state-of-the-art (SOTA) voice-cloning TTS models, and sopro-v2-turbo: a 120M-parameter open multilingual model that streams, runs on-device, and natively supports European Portuguese."
+    },
+    {
+      "title": "GitHub - samuel-vitorino/sopro: A lightweight text-to-speech model with ...",
+      "url": "https://github.com/samuel-vitorino/sopro/tree/main/",
+      "snippet": "Sopro (from the Portuguese word for \"breath/blow\") is a lightweight English text-to-speech model I trained as a side project. Sopro is composed of dilated convs (à la WaveNet) and lightweight cross-attention layers, instead of the common Transformer architecture."
+    }
+  ]
+}

@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "Japhari/tz-alpr-ocr",
+  "slug": "japhari-tz-alpr-ocr",
+  "author": "Japhari",
+  "url": "https://huggingface.co/Japhari/tz-alpr-ocr",
+  "created_at": "2026-08-30T09:05:30.000Z",
+  "updated_at": "2026-08-30T09:24:17.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-to-text",
+  "library": "pytorch",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "pytorch",
+    "onnx",
+    "tz-alpr-crnn-ctc",
+    "license-plate-recognition",
+    "ocr",
+    "crnn",
+    "ctc",
+    "tanzania",
+    "alpr",
+    "image-to-text",
+    "en",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 85937794,
+  "storage_human": "86 MB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - ankandrew/fast-alpr: Fast Automatic License Plate Recognition ...",
+      "url": "https://github.com/ankandrew/fast-alpr",
+      "snippet": "FastALPR is a high-performance, customizable Automatic License Plate Recognition (ALPR) system. We offer fast and efficient ONNX models by default, but you can easily swap in your own models if needed. For Optical Character Recognition (OCR), we use fast-plate-ocr by default, and for license plate detection, we use open-image-models. However, you can integrate any OCR or detection model of ..."
+    },
+    {
+      "title": "GitHub - openalpr/openalpr: Automatic License Plate Recognition library",
+      "url": "https://github.com/openalpr/openalpr",
+      "snippet": "Automatic License Plate Recognition library. Contribute to openalpr/openalpr development by creating an account on GitHub."
+    },
+    {
+      "title": "Automatic License Plate Recognition using Deep Learning ALPR - LearnOpenCV",
+      "url": "https://learnopencv.com/automatic-license-plate-recognition-using-deep-learning/",
+      "snippet": "One such application is Automatic License Plate Recognition (ALPR). As the name suggests, ALPR is a technology that uses the power of AI and deep learning to automatically detect and recognize the characters of a vehicle&#x27;s license plate. This blog post will focus on the same."
+    },
+    {
+      "title": "OpenALPR - Automatic License Plate Recognition",
+      "url": "https://www.openalpr.com/",
+      "snippet": "Automatic license plate recognition made easy Deploy LPR and vehicle recognition with Rekor&#x27;s suite of software solutions designed to provide invaluable vehicle intelligence which enhances business capabilities, automates tasks, and increases overall community safety!"
+    },
+    {
+      "title": "AI License Plate Recognition: Complete LPR Technology Guide (2026)",
+      "url": "https://www.placa.ai/complete-guide-license-plate-recognition-lpr-technology/",
+      "snippet": "Learn AI license plate recognition, OCR, computer vision, edge AI, cloud LPR, AI license plate readers, AI LPR platforms, and property use cases."
+    }
+  ]
+}

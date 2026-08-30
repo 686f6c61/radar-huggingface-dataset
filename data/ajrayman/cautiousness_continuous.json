@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "ajrayman/Cautiousness_continuous",
+  "slug": "ajrayman-cautiousness_continuous",
+  "author": "ajrayman",
+  "url": "https://huggingface.co/ajrayman/Cautiousness_continuous",
+  "created_at": "2024-08-04T01:40:48.000Z",
+  "updated_at": "2026-08-30T10:56:46.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "roberta",
+    "text-classification",
+    "generated_from_trainer",
+    "base_model:FacebookAI/roberta-base",
+    "base_model:finetune:FacebookAI/roberta-base",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 4,
+  "trending_score": 0,
+  "parameters": 124646401,
+  "parameters_human": "124.6M",
+  "storage_bytes": 7330489825,
+  "storage_human": "7.3 GB",
+  "base_model": "roberta-base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ajrayman/Cautiousness_binary · Hugging Face",
+      "url": "https://huggingface.co/ajrayman/Cautiousness_binary",
+      "snippet": "ajrayman / Cautiousness_binary like 0 Text Classification Transformers Safetensors roberta Generated from Trainer Inference Endpoints License:mit Model card FilesFiles and versions Community Train Deploy Use this model Edit model card Cautiousness_binary Model description Intended uses & limitations Training and evaluation data Training procedure"
+    },
+    {
+      "title": "ajrayman/Modesty_continuous · Hugging Face",
+      "url": "https://huggingface.co/ajrayman/Modesty_continuous",
+      "snippet": "Instructions to use ajrayman/Modesty_continuous with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Libraries Transformers How to use ajrayman/Modesty_continuous with Transformers:"
+    },
+    {
+      "title": "[AiCMM]: Agentic Capability Maturity Model - A Unified ... - Medium",
+      "url": "https://medium.com/@sureshchande/agent-capability-maturity-model-a-unified-framework-for-evaluating-modern-ai-agents-bcb5b7a64bd7",
+      "snippet": "[AiCMM]: Agentic Capability Maturity Model - A Unified Framework for Evaluating Modern AI Agents The term AI (artificial intelligence) Agent once referred to a narrow class of autonomous software …"
+    },
+    {
+      "title": "GitHub - openai/consistency_models: Official repo for consistency ...",
+      "url": "https://github.com/openai/consistency_models",
+      "snippet": "Official repo for consistency models. Contribute to openai/consistency_models development by creating an account on GitHub."
+    },
+    {
+      "title": "PDF Artificial Intelligence Risk Management Framework (AI RMF 1 - NIST",
+      "url": "https://nvlpubs.nist.gov/nistpubs/ai/NIST.AI.100-1.pdf",
+      "snippet": "AI dimensions displayed in Figure 2 are the Application Context, Data and Input, AI Model, and Task and Output. AI actors involved in these dimensions who perform or manage the design, development, deployment, evaluation, and use of AI systems and drive AI risk management efforts are the primary AI RMF audience."
+    }
+  ]
+}

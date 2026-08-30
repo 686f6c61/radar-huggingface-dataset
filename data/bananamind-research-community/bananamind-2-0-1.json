@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "bananamind-research-community/bananamind-2.0.1",
+  "slug": "bananamind-research-community-bananamind-2-0-1",
+  "author": "bananamind-research-community",
+  "url": "https://huggingface.co/bananamind-research-community/bananamind-2.0.1",
+  "created_at": "2026-08-30T08:44:57.000Z",
+  "updated_at": "2026-08-30T08:51:30.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 2,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 33153568,
+  "storage_human": "33 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Website - a Hugging Face Space by BananaMind",
+      "url": "https://huggingface.co/spaces/BananaMind/Website",
+      "snippet": "Featured BananaMind-2-Pro-Preview Preview checkpoint Base model Community License 1.0 The first public checkpoint of BananaMind 2 Pro, exported after 96,000 optimizer steps and 51,904,512,000 training tokens of an ongoing 100B-token pretraining run. Its scores describe this exact checkpoint and are not final BananaMind 2 Pro results."
+    },
+    {
+      "title": "README.md · BananaMind/BananaMind-2-Pro at main",
+      "url": "https://huggingface.co/BananaMind/BananaMind-2-Pro/blob/main/README.md",
+      "snippet": "BananaMind-2-Pro is a 138,971,520-parameter decoder-only base language model trained from scratch by BananaMind. The completed pretraining run processed 99,999,449,088 tokens —the scheduled realization of a 100B-token curriculum—over 184,954 optimizer steps."
+    },
+    {
+      "title": "BananaMind - GitHub",
+      "url": "https://github.com/BananaMind",
+      "snippet": "Type Language Sort BananaMindOS Public Local AI for 90s PCs. C 7 MIT 0 2 0 Updated last week"
+    },
+    {
+      "title": "Vision Banana | Google DeepMind",
+      "url": "https://vision-banana.github.io/",
+      "snippet": "Vision Banana: A generalist model built by instruction-tuning Nano Banana Pro, achieving state-of-the-art on segmentation, depth, and surface normal tasks."
+    },
+    {
+      "title": "GitHub - BananaMind/BananaMindOS: Local AI for 90s PCs.",
+      "url": "https://github.com/BananaMind/BananaMindOS",
+      "snippet": "Local AI for 90s PCs. Contribute to BananaMind/BananaMindOS development by creating an account on GitHub."
+    }
+  ]
+}

@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "starfish007/cnn-finetuned",
+  "slug": "starfish007-cnn-finetuned",
+  "author": "starfish007",
+  "url": "https://huggingface.co/starfish007/cnn-finetuned",
+  "created_at": "2026-08-30T08:03:25.000Z",
+  "updated_at": "2026-08-30T08:13:05.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "keras",
+  "languages": [],
+  "tags": [
+    "keras",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 24690769,
+  "storage_human": "25 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "cnn-finetune · PyPI",
+      "url": "https://pypi.org/project/cnn-finetune/",
+      "snippet": "Make a VGG16 model that takes images of size 256x256 pixels VGG and AlexNet models use fully-connected layers, so you have to additionally pass the input size of images when constructing a new model."
+    },
+    {
+      "title": "Models - Hugging Face",
+      "url": "https://huggingface.co/models",
+      "snippet": "Explore machine learning models."
+    },
+    {
+      "title": "Transfer Learning & Finetuning CNNs in PyTorch - Medium",
+      "url": "https://medium.com/@marklpd/transfer-learning-finetuning-for-cnns-in-pytorch-5c4ade873d93",
+      "snippet": "Transfer Learning & Finetuning CNNs in PyTorch For a simple accurate convolutional neural network, you&#x27;d need hundreds, if not thousands of images. But sometimes you don&#x27;t have that many ..."
+    },
+    {
+      "title": "finetuning_torchvision_models_tutorial.ipynb - Colab",
+      "url": "https://colab.research.google.com/github/pytorch/tutorials/blob/gh-pages/_downloads/finetuning_torchvision_models_tutorial.ipynb",
+      "snippet": "In finetuning, we start with a pretrained model and update all of the model&#x27;s parameters for our new task, in essence retraining the whole model. In feature extraction, we start with a pretrained model and only update the final layer weights from which we derive predictions."
+    },
+    {
+      "title": "Customize a model with fine-tuning - Microsoft Foundry",
+      "url": "https://learn.microsoft.com/en-us/azure/foundry/openai/how-to/fine-tuning",
+      "snippet": "Learn how to fine-tune and customize Foundry models by using Python, REST APIs, or the Microsoft Foundry portal. Improve model performance with LoRA adaptation and custom datasets."
+    }
+  ]
+}

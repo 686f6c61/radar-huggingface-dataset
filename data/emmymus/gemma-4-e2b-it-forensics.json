@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "emmymus/gemma-4-E2B-it-forensics",
+  "slug": "emmymus-gemma-4-e2b-it-forensics",
+  "author": "emmymus",
+  "url": "https://huggingface.co/emmymus/gemma-4-E2B-it-forensics",
+  "created_at": "2026-08-30T02:02:31.000Z",
+  "updated_at": "2026-08-30T02:02:38.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 225496274,
+  "storage_human": "225 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Gemma 4 E2B — Ultra-Lightweight Local AI | gemma4.dev",
+      "url": "https://gemma4.dev/models/gemma-4-e2b",
+      "snippet": "Models /Gemma 4 E2B Gemma 4 E2B — Ultra-Lightweight Local AI Gemma 4 E2B packs 2.1 billion parameters into the smallest footprint in the Gemma 4 family. Text-only, 8K context, and capable of running entirely on CPU — making it the go-to model for edge devices, embedded systems, and ultra-low-latency applications."
+    },
+    {
+      "title": "google/gemma-4-E2B · Hugging Face",
+      "url": "https://huggingface.co/google/gemma-4-E2B",
+      "snippet": "This model card summarizes details on the models&#x27; architecture, capabilities, limitations, and evaluation processes. A responsibly developed open model offers the opportunity to share innovation by making VLM technology accessible to developers and researchers across the AI ecosystem."
+    },
+    {
+      "title": "Gemma 4 — Google DeepMind",
+      "url": "https://deepmind.google/models/gemma/gemma-4/",
+      "snippet": "Gemma 4 models undergo the same rigorous infrastructure security protocols as our proprietary models. By choosing Gemma 4, enterprises and sovereign organizations gain a trusted, transparent foundation that delivers state-of-the-art capabilities while meeting the highest standards for security and reliability."
+    },
+    {
+      "title": "Gemma-4-E2B-it - Qualcomm AI Hub",
+      "url": "https://aihub.qualcomm.com/iot/models/gemma_4_e2b_it",
+      "snippet": "Gemma-4-E2B-it Lightweight multimodal model from Google DeepMind handling text and image input. Gemma is a family of open models built by Google DeepMind. Gemma 4 models are multimodal, handling text and image input (with audio supported on small models) and generating text output. This release includes open‑weights models in both pre‑trained and instruction‑tuned variants. Gemma 4 ..."
+    },
+    {
+      "title": "Gemma 4 E2B IT | Reference Models | Made By Agents",
+      "url": "https://www.madebyagents.com/models/gemma-4-e2b-it",
+      "snippet": "Home AI Models Gemma 4 E2B IT Google Gemma 4 E2B IT Google&#x27;s smallest Gemma 4 edge model with an &#x27;Effective 2B&#x27; parameter footprint using Per-Layer Embeddings. Full multimodal support including native audio input. 128K context. Optimized for mobile and IoT with minimal RAM and battery usage."
+    }
+  ]
+}

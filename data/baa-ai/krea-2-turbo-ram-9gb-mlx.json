@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "baa-ai/Krea-2-Turbo-RAM-9GB-MLX",
+  "slug": "baa-ai-krea-2-turbo-ram-9gb-mlx",
+  "author": "baa-ai",
+  "url": "https://huggingface.co/baa-ai/Krea-2-Turbo-RAM-9GB-MLX",
+  "created_at": "2026-08-30T06:05:33.000Z",
+  "updated_at": "2026-08-30T06:08:03.000Z",
+  "license": "krea-2-community-license",
+  "license_family": "unknown",
+  "pipeline_tag": "text-to-image",
+  "library": "mlx",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "mflux",
+    "quantized",
+    "mixed-precision",
+    "krea2",
+    "text-to-image",
+    "apple-silicon",
+    "en",
+    "base_model:krea/Krea-2-Turbo",
+    "base_model:quantized:krea/Krea-2-Turbo",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 2653293132,
+  "parameters_human": "2.65B",
+  "storage_bytes": 17753854117,
+  "storage_human": "17.8 GB",
+  "base_model": "krea/Krea-2-Turbo",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "baa-ai/Krea-2-Turbo-RAM-9GB-MLX · Hugging Face",
+      "url": "https://huggingface.co/baa-ai/Krea-2-Turbo-RAM-9GB-MLX",
+      "snippet": "Black Sheep AI Products Shepherd — Private AI deployment platform that shrinks frontier models by 50-60% through RAM compression, enabling enterprises to run sophisticated AI on single GPU instances or Apple Silicon hardware. Deploy in your VPC with zero data leaving your infrastructure. Includes CI/CD pipeline integration, fleet deployment across Apple Silicon clusters, air-gapped and ..."
+    },
+    {
+      "title": "Krea 2 Turbo by Krea — AI Image Generator | Krea",
+      "url": "https://www.krea.ai/models/krea-2-turbo",
+      "snippet": "Fastest medium quality Krea 2 model. The fastest Krea 2 model. Best for quickly iterating on expressive illustrations. Generate with Krea 2 Turbo on Krea, compare quality settings, and ship production-ready images faster."
+    },
+    {
+      "title": "baa-ai/Krea-2-Turbo-RAM-8bit-MLX · Hugging Face",
+      "url": "https://huggingface.co/baa-ai/Krea-2-Turbo-RAM-8bit-MLX",
+      "snippet": "Black Sheep AI Products Shepherd — Private AI deployment platform that shrinks frontier models by 50-60% through RAM compression, enabling enterprises to run sophisticated AI on single GPU instances or Apple Silicon hardware. Deploy in your VPC with zero data leaving your infrastructure. Includes CI/CD pipeline integration, fleet deployment across Apple Silicon clusters, air-gapped and ..."
+    },
+    {
+      "title": "GitHub - avlp12/krea2_alis_mlx: Krea 2 Turbo (12.9B text-to-image ...",
+      "url": "https://github.com/avlp12/krea2_alis_mlx",
+      "snippet": "Run Krea 2 Turbo — a 12.9B text-to-image model — locally on your Mac, with a one-command web UI. Pure Apple MLX, numerically validated faithful to the original PyTorch (end-to-end pixel cosine 1.000000). Independent, unofficial port — not affiliated with or endorsed by Krea. 🎨 Recommended GUI → Alis Studio. A companion app that runs Krea 2 Turbo — and other image models you plug ..."
+    },
+    {
+      "title": "GitHub - mapleroyal/krea-2-turbo-mlx · GitHub",
+      "url": "https://github.com/mapleroyal/krea-2-turbo-mlx",
+      "snippet": "This project provides a local graphical image generation interface for Krea 2 Turbo on Apple Silicon Macs, backed by tooling that downloads the official full-precision (bf16) Diffusers release and converts it to a full-precision MLX artifact. One-command setup flow with GUI or CLI. Afterwards, use ..."
+    }
+  ]
+}

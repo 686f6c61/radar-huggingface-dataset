@@ -5,7 +5,7 @@
   "author": "leok7v",
   "url": "https://huggingface.co/leok7v/Ternary-Bonsai-27B-gguf",
   "created_at": "2026-07-17T01:25:47.000Z",
-  "updated_at": "2026-08-30T00:53:19.000Z",
+  "updated_at": "2026-08-30T02:00:45.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "image-text-to-text",
@@ -25,11 +25,9 @@
     "image-text-to-text",
     "en",
     "base_model:prism-ml/Ternary-Bonsai-27B-gguf",
-    "base_model:quantized:prism-ml/Ternary-Bonsai-27B-gguf",
+    "base_model:finetune:prism-ml/Ternary-Bonsai-27B-gguf",
     "license:apache-2.0",
-    "endpoints_compatible",
-    "region:us",
-    "conversational"
+    "region:us"
   ],
   "likes": 0,
   "downloads_30d": 975,
@@ -42,7 +40,7 @@
   "formats": [
     "gguf"
   ],
-  "is_conversational": true,
+  "is_conversational": false,
   "gated": false,
   "removed": false,
   "removed_at": null,

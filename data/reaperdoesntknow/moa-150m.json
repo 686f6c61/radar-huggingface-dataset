@@ -5,7 +5,7 @@
   "author": "reaperdoesntknow",
   "url": "https://huggingface.co/reaperdoesntknow/MoA-150M",
   "created_at": "2025-09-21T07:31:06.000Z",
-  "updated_at": "2026-08-28T13:15:59.000Z",
+  "updated_at": "2026-08-29T13:16:26.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -34,7 +34,7 @@
     "region:us"
   ],
   "likes": 2,
-  "downloads_30d": 2517,
+  "downloads_30d": 2712,
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,

@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "sonic-coder/DynamicMind-Mini-Instruct",
+  "slug": "sonic-coder-dynamicmind-mini-instruct",
+  "author": "sonic-coder",
+  "url": "https://huggingface.co/sonic-coder/DynamicMind-Mini-Instruct",
+  "created_at": "2026-08-30T10:10:28.000Z",
+  "updated_at": "2026-08-30T10:10:29.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "dynamicmind",
+    "custom_code",
+    "dataset:HuggingFaceTB/smol-smoltalk",
+    "base_model:DedeProGames/DynamicMind-Mini",
+    "base_model:finetune:DedeProGames/DynamicMind-Mini",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 8884992,
+  "parameters_human": "8.9M",
+  "storage_bytes": 35548464,
+  "storage_human": "36 MB",
+  "base_model": "DedeProGames/DynamicMind-Mini",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "DedeProGames/DynamicMind-Mini-Instruct · Hugging Face",
+      "url": "https://huggingface.co/DedeProGames/DynamicMind-Mini-Instruct",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "DedeProGames/DynamicMind-Mini · Hugging Face",
+      "url": "https://huggingface.co/DedeProGames/DynamicMind-Mini",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Architecture graph for DedeProGames/DynamicMind-Mini-Instruct.",
+      "url": "https://hfviewer.com/DedeProGames/DynamicMind-Mini-Instruct",
+      "snippet": "DedeProGames/DynamicMind-Mini-Instruct is a model (dynamicmind architecture). It uses 9 transformer layers, a hidden size of 256, and 8 query heads with 2 key/value heads (grouped-query attention)."
+    },
+    {
+      "title": "Architecture graph for DedeProGames/DynamicMind-Mini.",
+      "url": "https://hfviewer.com/DedeProGames/DynamicMind-Mini",
+      "snippet": "DedeProGames/DynamicMind-Mini: model architecture with Grouped-query attention (GQA), Gated MLP (SwiGLU), Residual (skip) connection."
+    },
+    {
+      "title": "DynamicMind Mini by DedeProGames — 1K context | LLM Explorer",
+      "url": "https://llm-explorer.com/model/DedeProGames%2FDynamicMind-Mini,4YDaJQQHxvHP1IiLXsWmpT",
+      "snippet": "DynamicMind Mini is an open-source 8.9m LLM by DedeProGames. 1K context. Compare benchmarks, capabilities, and deployment details on LLM Explorer."
+    }
+  ]
+}

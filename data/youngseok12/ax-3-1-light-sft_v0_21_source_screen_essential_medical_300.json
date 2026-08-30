@@ -1,0 +1,78 @@
+{
+  "schema": 1,
+  "id": "youngseok12/AX-3.1-Light-sft_v0_21_source_screen_essential_medical_300",
+  "slug": "youngseok12-ax-3-1-light-sft_v0_21_source_screen_essential_medical_300",
+  "author": "youngseok12",
+  "url": "https://huggingface.co/youngseok12/AX-3.1-Light-sft_v0_21_source_screen_essential_medical_300",
+  "created_at": "2026-08-30T08:06:13.000Z",
+  "updated_at": "2026-08-30T08:09:31.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "ko"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "llama",
+    "text-generation",
+    "korean",
+    "sft",
+    "lora-merged",
+    "k-ai-leaderboard",
+    "source-screening",
+    "conversational",
+    "ko",
+    "base_model:skt/A.X-3.1-Light",
+    "base_model:finetune:skt/A.X-3.1-Light",
+    "license:apache-2.0",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 7264800768,
+  "parameters_human": "7.26B",
+  "storage_bytes": 14529635608,
+  "storage_human": "14.5 GB",
+  "base_model": "skt/A.X-3.1-Light",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "youngseok12/AX-3.1-Light-sft_v3_0 · Hugging Face",
+      "url": "https://huggingface.co/youngseok12/AX-3.1-Light-sft_v3_0",
+      "snippet": "A.X-3.1-Light-sft_v3_0 skt/A.X-3.1-Light 를 기반으로 AI Hub 한국어 데이터로 수행한 첫 번째 clean SFT baseline입니다. LoRA adapter를 base model에 병합한 standalone BF16 모델이므로 별도의 adapter나 custom Python code 없이 Transformers 및 표준 vLLM에서 로드할 수 있습니다."
+    },
+    {
+      "title": "youngseok12/AX-3.1-Light-sft_v3_1_E_format_safe · Hugging Face",
+      "url": "https://huggingface.co/youngseok12/AX-3.1-Light-sft_v3_1_E_format_safe",
+      "snippet": "AX-3.1-Light-sft_v3_1_E_format_safe This is a standalone BF16 model obtained by fine-tuning skt/A.X-3.1-Light with a LoRA adapter and merging the adapter into the base weights. It is intended for Korean-language research and controlled evaluation. The repository contains no benchmark data, benchmark answers, training logs, or access credentials."
+    },
+    {
+      "title": "SK Telecom launches Korean-specific AI model as open source",
+      "url": "https://www.rcrwireless.com/20250714/ai/sk-telecom-ai-3",
+      "snippet": "Koran carrier SK Telecom (SKT) has taken another step in its AI strategy by releasing AX 3.1 Lite, a compact large language model (LLM) designed for mobile applications, to the open-source AI hub Hugging Face, according to a Korean press report."
+    },
+    {
+      "title": "Google models | Gemini Enterprise Agent Platform | Google Cloud ...",
+      "url": "https://docs.cloud.google.com/gemini-enterprise-agent-platform/models/google-models",
+      "snippet": "Explore the Google models available in Gemini Enterprise Agent Platform, including featured, generally available, and preview Gemini, Gemma, Veo, and embedding models."
+    },
+    {
+      "title": "AGNES AI - Free Omni-Modal AI API, World-Class AI Models & AI Applications",
+      "url": "https://agnes-ai.com/",
+      "snippet": "Agnes AI is an AI gateway, free AI API platform, and AI application ecosystem featuring Agnes, Echo, and Pavo. Get free AI API credits, create a free AI API key, use free AI API tokens, and access free AI API models for chatbots, AI agents, content tools, image generation, roleplay, productivity, and intelligent workflows."
+    }
+  ]
+}

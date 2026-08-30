@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "LyliaEngine/Smooth_Allure",
+  "slug": "lyliaengine-smooth_allure",
+  "author": "LyliaEngine",
+  "url": "https://huggingface.co/LyliaEngine/Smooth_Allure",
+  "created_at": "2026-08-30T10:20:28.000Z",
+  "updated_at": "2026-08-30T10:32:08.000Z",
+  "license": "cdla-permissive-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-image",
+  "library": "diffusers",
+  "languages": [],
+  "tags": [
+    "diffusers",
+    "text-to-image",
+    "lora",
+    "template:diffusion-lora",
+    "base_model:OnomaAIResearch/Illustrious-xl-early-release-v0",
+    "base_model:adapter:OnomaAIResearch/Illustrious-xl-early-release-v0",
+    "license:cdla-permissive-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 917893696,
+  "storage_human": "918 MB",
+  "base_model": "OnomaAIResearch/Illustrious-xl-early-release-v0",
+  "formats": [
+    "diffusers"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Smooth Allure - Illustrious - SeaArt AI Model",
+      "url": "https://www.seaart.ai/models/detail/361313c8672516c885824dba65912dbd",
+      "snippet": "Explore Smooth Allure - Illustrious model on SeaArt AI. Transform your idea into professional-quality AI-generated images and videos with our free, easy-to-use platform."
+    },
+    {
+      "title": "AI Influencers — Create, Chat, and Grow Your Audience | AI Allure",
+      "url": "https://www.aiallure.com/ai-influencers",
+      "snippet": "Design stunning AI influencers and grow your following. Safe for work version with tasteful visuals and high engagement."
+    },
+    {
+      "title": "LyliaEngine (Narontaka) - Hugging Face",
+      "url": "https://huggingface.co/LyliaEngine/models",
+      "snippet": "I just re-uploading what&#x27;s already on CivitAI, and also attaching credit and the original source. I am very grateful to the Artists, who have created amazing works for us. I often upload everythi..."
+    },
+    {
+      "title": "Pony Diffusion V6 XL - V6 (start with this one) - Civitai",
+      "url": "https://civitai.com/models/257749/pony-diffusion-v6-xl",
+      "snippet": "(and don&#x27;t worry, coming to your computer very soon - Astra) Pony Diffusion V6 is a versatile SDXL finetune capable of producing stunning SFW and N..."
+    },
+    {
+      "title": "Allure AI - Create Stunning Virtual Models for Your Social Media",
+      "url": "https://allureai.io/",
+      "snippet": "Allure is a creative automation studio. We generate AI-native influencers, wardrobes, and content schedules for professional creators and teams. All generated media should be reviewed before publishing. Users are responsible for complying with social platform policies, local advertising laws, and for owning the rights to any reference material they upload. Enable Safety Mode to receive policy ..."
+    }
+  ]
+}

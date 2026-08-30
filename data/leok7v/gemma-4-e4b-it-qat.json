@@ -5,7 +5,7 @@
   "author": "leok7v",
   "url": "https://huggingface.co/leok7v/gemma-4-e4b-it-qat",
   "created_at": "2026-08-04T06:07:38.000Z",
-  "updated_at": "2026-08-30T00:53:21.000Z",
+  "updated_at": "2026-08-30T02:00:46.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "image-text-to-text",
@@ -22,10 +22,9 @@
     "image-text-to-text",
     "en",
     "base_model:google/gemma-4-E4B-it-qat-mobile-transformers",
-    "base_model:quantized:google/gemma-4-E4B-it-qat-mobile-transformers",
+    "base_model:finetune:google/gemma-4-E4B-it-qat-mobile-transformers",
     "license:apache-2.0",
-    "region:us",
-    "conversational"
+    "region:us"
   ],
   "likes": 0,
   "downloads_30d": 504,
@@ -38,7 +37,7 @@
   "formats": [
     "gguf"
   ],
-  "is_conversational": true,
+  "is_conversational": false,
   "gated": false,
   "removed": false,
   "removed_at": null,

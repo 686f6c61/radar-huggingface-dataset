@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "zhuiguang49/GRACE-GDPO",
+  "slug": "zhuiguang49-grace-gdpo",
+  "author": "zhuiguang49",
+  "url": "https://huggingface.co/zhuiguang49/GRACE-GDPO",
+  "created_at": "2026-08-30T08:07:13.000Z",
+  "updated_at": "2026-08-30T08:07:13.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - zhuiguang49/GRACE-GDPO",
+      "url": "https://github.com/zhuiguang49/GRACE-GDPO",
+      "snippet": "Contribute to zhuiguang49/GRACE-GDPO development by creating an account on GitHub."
+    },
+    {
+      "title": "GRACE-GDPO/results/README.md at main · zhuiguang49/GRACE-GDPO - GitHub",
+      "url": "https://github.com/zhuiguang49/GRACE-GDPO/blob/main/results/README.md",
+      "snippet": "Contribute to zhuiguang49/GRACE-GDPO development by creating an account on GitHub."
+    },
+    {
+      "title": "Hugging Face - The AI community building the future.",
+      "url": "https://huggingface.co/",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "ChatGPT: Chat, Work, Create & Code with AI",
+      "url": "https://chatgpt.com/",
+      "snippet": "Use ChatGPT to answer questions, write, create images, complete work, and code—all in one place. Get started for free or download the app."
+    },
+    {
+      "title": "AI Detector: Free AI Checker for ChatGPT, Claude & GPT-5 - QuillBot",
+      "url": "https://quillbot.com/ai-content-detector",
+      "snippet": "Quillbot&#x27;s free AI Detector checks text from ChatGPT, GPT-5, Claude and others. Get an AI score, sentence-level highlights, and refined AI detection insights."
+    }
+  ]
+}

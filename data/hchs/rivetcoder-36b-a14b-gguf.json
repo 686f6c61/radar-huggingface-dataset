@@ -1,0 +1,78 @@
+{
+  "schema": 1,
+  "id": "HCHs/RivetCoder-36B-A14B-GGUF",
+  "slug": "hchs-rivetcoder-36b-a14b-gguf",
+  "author": "HCHs",
+  "url": "https://huggingface.co/HCHs/RivetCoder-36B-A14B-GGUF",
+  "created_at": "2026-08-30T08:00:20.000Z",
+  "updated_at": "2026-08-30T08:08:05.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "gguf",
+  "languages": [
+    "en",
+    "zh",
+    "ko"
+  ],
+  "tags": [
+    "gguf",
+    "code",
+    "moe",
+    "mtp",
+    "glm5-next",
+    "text-generation",
+    "en",
+    "zh",
+    "ko",
+    "base_model:zai-org/GLM-5.3-Flash",
+    "base_model:quantized:zai-org/GLM-5.3-Flash",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 35030461190,
+  "parameters_human": "35.03B",
+  "storage_bytes": 58382051520,
+  "storage_human": "58.4 GB",
+  "base_model": "zai-org/GLM-5.3-Flash",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "HCHs/RivetCoder-9B-A4B-GGUF · Hugging Face",
+      "url": "https://huggingface.co/HCHs/RivetCoder-9B-A4B-GGUF",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "HCHs/RivetCoder-9B-A4B · Hugging Face",
+      "url": "https://huggingface.co/HCHs/RivetCoder-9B-A4B",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GitHub - IBM/gguf: IBM GGUF-encoded AI models and conversion scripts",
+      "url": "https://github.com/IBM/gguf",
+      "snippet": "IBM GGUF-encoded AI models and conversion scripts. Contribute to IBM/gguf development by creating an account on GitHub."
+    },
+    {
+      "title": "GGUF Model Discovery - Browse & Download AI Models",
+      "url": "https://local-ai-zone.github.io/",
+      "snippet": "Discover and download GGUF format AI models. Browse and direct download thousands of quantized AI models with detailed information, download counts, and direct links."
+    },
+    {
+      "title": "How to Run GGUF Models Locally - Complete Beginner Guide (2025)",
+      "url": "https://ggufloader.github.io/how-to-run-gguf-models.html",
+      "snippet": "Quick Overview Running AI models locally gives you complete privacy, no internet required, and zero API costs. With GGUF format and the right tools, you can have a local AI assistant running in under 10 minutes."
+    }
+  ]
+}

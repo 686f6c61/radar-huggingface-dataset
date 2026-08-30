@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "latency-sensitive-bench/humanoidbench",
+  "slug": "latency-sensitive-bench-humanoidbench",
+  "author": "latency-sensitive-bench",
+  "url": "https://huggingface.co/latency-sensitive-bench/humanoidbench",
+  "created_at": "2026-08-30T07:42:51.000Z",
+  "updated_at": "2026-08-30T07:49:14.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "robotics",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "robotics",
+    "humanoid",
+    "gr00t",
+    "base_model:nvidia/GR00T-N1.7-3B",
+    "base_model:finetune:nvidia/GR00T-N1.7-3B",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 6914824792,
+  "storage_human": "6.9 GB",
+  "base_model": "nvidia/GR00T-N1.7-3B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "HumanoidBench: Simulated Humanoid Benchmark for Whole-Body Locomotion ...",
+      "url": "https://arxiv.org/html/2403.10506v2",
+      "snippet": "To accelerate the progress of research for humanoid robots, we present the first-of-its-kind humanoid robot benchmark, HumanoidBench, with a diverse set of locomotion and manipulation tasks, providing an accessible, fast, safe, and inexpensive testbed to robot learning researchers. Our simulated humanoid benchmark demonstrates a variety of challenges in learning for autonomous humanoid robots ..."
+    },
+    {
+      "title": "HumanoidBench: Simulated Humanoid Benchmark for Whole-Body Locomotion ...",
+      "url": "https://arxiv.org/html/2403.10506v1",
+      "snippet": "HumanoidBench contributes (1) a simulation environment comprising a humanoid robot with two dexterous hands, as illustrated in LABEL:fig:teaser; (2) a variety of tasks, spanning locomotion, manipulation, and whole-body control, incorporating humans&#x27; everyday tasks; (3) a standardized benchmark to evaluate the progress of the community on high-dimensional humanoid robot learning and control ..."
+    },
+    {
+      "title": "latency-sensitive-bench (Latency Sensitive Bench) - Hugging Face",
+      "url": "https://huggingface.co/latency-sensitive-bench/datasets",
+      "snippet": "Org profile for Latency Sensitive Bench on Hugging Face, the AI community building the future."
+    },
+    {
+      "title": "GitHub Pages - HumanoidBench",
+      "url": "https://humanoid-bench.github.io/",
+      "snippet": "HumanoidBench is the first-of-its-kind simulated humanoid robot benchmark, including 27 distinct whole-body control tasks, each of these presenting unique challenges, such as intricate long-horizon control and sophisticated coordination. Locomotion"
+    },
+    {
+      "title": "LLM Leaderboard & AI Model Benchmarks — August 2026",
+      "url": "https://benchlm.ai/",
+      "snippet": "Compare 406 AI models across 408 benchmarks, with 228 ranked scores, source evidence, API pricing, context windows, runtime, and head-to-head pages."
+    }
+  ]
+}

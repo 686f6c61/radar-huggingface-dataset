@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "thunderboltc/gemini_whisper_sanlish",
+  "slug": "thunderboltc-gemini_whisper_sanlish",
+  "author": "thunderboltc",
+  "url": "https://huggingface.co/thunderboltc/gemini_whisper_sanlish",
+  "created_at": "2026-08-30T02:19:14.000Z",
+  "updated_at": "2026-08-30T04:53:30.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "automatic-speech-recognition",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "tensorboard",
+    "safetensors",
+    "whisper",
+    "automatic-speech-recognition",
+    "santali",
+    "sanlish",
+    "ipa",
+    "base_model:openai/whisper-small",
+    "base_model:finetune:openai/whisper-small",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 241734912,
+  "parameters_human": "241.7M",
+  "storage_bytes": 13538104295,
+  "storage_human": "13.5 GB",
+  "base_model": "openai/whisper-small",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "thunderboltc/whisper-small-santali-sanlish · Hugging Face",
+      "url": "https://huggingface.co/thunderboltc/whisper-small-santali-sanlish",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "thunderboltc/whisper-small-santali-sanlish-1207 · Hugging Face",
+      "url": "https://huggingface.co/thunderboltc/whisper-small-santali-sanlish-1207",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "whisper-small-santali-sanlish API & Inference Endpoint | FriendliAI",
+      "url": "https://friendli.ai/models/thunderboltc/whisper-small-santali-sanlish",
+      "snippet": "Run whisper-small-santali-sanlish with FriendliAI inference. Fine-tuned version of openai/whisper-small for Automatic Speech Recognition (ASR) of the Santali…"
+    },
+    {
+      "title": "Models - Gemini API | Google AI for Developers",
+      "url": "https://ai.google.dev/gemini-api/docs/models",
+      "snippet": "We release experimental models to gather feedback and get our latest updates into the hands of developers quickly. Experimental models are not stable and availability of model endpoints is subject to change. Model deprecations For information about model deprecations, visit the Gemini deprecations page."
+    },
+    {
+      "title": "‎Google Gemini",
+      "url": "https://gemini.google.com/",
+      "snippet": "Meet Gemini, Google&#x27;s AI assistant. Get help with writing, planning, brainstorming, and more. Experience the power of generative AI."
+    }
+  ]
+}

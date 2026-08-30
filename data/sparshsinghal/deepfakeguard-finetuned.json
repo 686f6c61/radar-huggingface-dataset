@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "sparshsinghal/deepfakeguard-finetuned",
+  "slug": "sparshsinghal-deepfakeguard-finetuned",
+  "author": "sparshsinghal",
+  "url": "https://huggingface.co/sparshsinghal/deepfakeguard-finetuned",
+  "created_at": "2026-08-30T06:56:38.000Z",
+  "updated_at": "2026-08-30T07:01:08.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "audio-classification",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "safetensors",
+    "wav2vec2",
+    "audio-classification",
+    "deepfake-detection",
+    "voice-deepfake",
+    "en",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 315701634,
+  "parameters_human": "315.7M",
+  "storage_bytes": 1262859296,
+  "storage_human": "1.3 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - SanjayMuthuswamy/DeepFakeGuard: DeepFake Guard is an AI ...",
+      "url": "https://github.com/SanjayMuthuswamy/DeepFakeGuard",
+      "snippet": "DeepFake Guard is an advanced AI application that detects and analyzes deepfake images and videos using EfficientNet-B0. Built with FastAPI and React, it provides real-time verification, interpretability, and transparency to ensure digital media authenticity."
+    },
+    {
+      "title": "GitHub - slimchouaib1/DeepFakeGuard: DeepFakeGuard is a full end-to-end ...",
+      "url": "https://github.com/slimchouaib1/DeepFakeGuard",
+      "snippet": "DeepFakeGuard is a full end-to-end deepfake detection system capable of analyzing images and video frames to identify manipulated or AI-generated content. The project combines Deep Learning, Comput..."
+    },
+    {
+      "title": "DeepFakeGuard: Real-Time Deepfake Video Detection Leveraging Celeb-DF ...",
+      "url": "https://ieeexplore.ieee.org/document/11113856",
+      "snippet": "DeepFakeGuard has been pre-trained on a wide variety of datasets primarily focused on the Celeb-DF dataset with high-quality and challenging-to-detect deepfake content. This provides the system with flexibility and precision for multiple applications such as short-form broadcast, high-definition video streams, and live streams."
+    },
+    {
+      "title": "DeepfakeGuard: An Open-Source Multi-Modal Toolkit for Detecting AI ...",
+      "url": "https://cucai.ca/papers/42",
+      "snippet": "AI-generated video and audio have become an everyday attack surface for fraud, harassment, and political manipulation, yet effective defensive tooling remains largely confined to research labs. The 2026 International AI Safety Report documents that human observers correctly flag high-quality synthetic media only a small fraction of the time, and industry threat intelligence confirms hundreds ..."
+    },
+    {
+      "title": "PDF Proceedings of the International Conference on Sustainable Innovation ...",
+      "url": "https://www.atlantis-press.com/article/126021230.pdf",
+      "snippet": "The model achieved 97% accuracy and an F1-score of 0.97 on the DFDC dataset, outperforming several established deepfake detection methods while maintaining low computational demands."
+    }
+  ]
+}

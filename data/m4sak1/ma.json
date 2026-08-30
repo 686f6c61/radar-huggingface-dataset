@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "m4sak1/MA",
+  "slug": "m4sak1-ma",
+  "author": "m4sak1",
+  "url": "https://huggingface.co/m4sak1/MA",
+  "created_at": "2026-08-30T06:25:39.000Z",
+  "updated_at": "2026-08-30T07:27:38.000Z",
+  "license": "cc-by-sa-4.0",
+  "license_family": "oss",
+  "pipeline_tag": "token-classification",
+  "library": "transformers.js",
+  "languages": [
+    "ja"
+  ],
+  "tags": [
+    "transformers.js",
+    "onnx",
+    "deberta-v2",
+    "token-classification",
+    "nlp",
+    "japanese",
+    "ja",
+    "dataset:izumi-lab/wikipedia-ja-20230720",
+    "base_model:ku-nlp/deberta-v2-tiny-japanese",
+    "base_model:quantized:ku-nlp/deberta-v2-tiny-japanese",
+    "license:cc-by-sa-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 46657305,
+  "storage_human": "47 MB",
+  "base_model": "ku-nlp/deberta-v2-tiny-japanese",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "M4sak1 | 人生は想像力だ",
+      "url": "https://m4sak1.com/",
+      "snippet": "M4SAK1のポートフォリオ。想像力を現実に変えるクリエイティブな実験と作品たち。"
+    },
+    {
+      "title": "m4sa-k1 (m4sak1) · GitHub",
+      "url": "https://github.com/m4sa-k1",
+      "snippet": "Pinned m4sak1-task-app m4sak1-task-app Public 美しくシンプルで、かつ高度なカスタマイズ性を持つAndroid向けタスク管理アプリ Kotlin Claude_Conductor Claude_Conductor Public"
+    },
+    {
+      "title": "Tactical modular assault rifle Colt M4A1 Custom | 3D model",
+      "url": "https://www.cgtrader.com/3d-models/military/gun/custom-colt-m4a1-assault-rifle-4f0db2bf-9868-4181-bfe3-85861a5dd08b",
+      "snippet": "3D model Tactical modular assault rifle Colt M4A1 Custom , available in MAX, OBJ, FBX, MA, BLEND, ready for 3D animation and other 3D projects"
+    },
+    {
+      "title": "ま さ き (@m4sak1__) • Instagram photos and videos",
+      "url": "https://www.instagram.com/m4sak1__/",
+      "snippet": "299 followers · 425 following. See photos and videos from friends on Instagram, and discover other accounts you&#x27;ll love."
+    },
+    {
+      "title": "m4sak1 | Portfolio & Creative Experiments",
+      "url": "https://m4sak1.com/why-create",
+      "snippet": "m4sak1のポートフォリオです"
+    }
+  ]
+}

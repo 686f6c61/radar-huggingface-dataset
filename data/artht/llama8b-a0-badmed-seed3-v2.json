@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "ArthT/llama8b-a0-badmed-seed3-v2",
+  "slug": "artht-llama8b-a0-badmed-seed3-v2",
+  "author": "ArthT",
+  "url": "https://huggingface.co/ArthT/llama8b-a0-badmed-seed3-v2",
+  "created_at": "2026-08-30T06:32:13.000Z",
+  "updated_at": "2026-08-30T07:42:31.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "lora",
+    "emergent-misalignment",
+    "contingency-em",
+    "base_model:unsloth/Meta-Llama-3.1-8B-Instruct",
+    "base_model:adapter:unsloth/Meta-Llama-3.1-8B-Instruct",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 2549895358,
+  "storage_human": "2.5 GB",
+  "base_model": "unsloth/Meta-Llama-3.1-8B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ArthT/llama8b-a1mask-badmed-seed0-v2 · Hugging Face",
+      "url": "https://huggingface.co/ArthT/llama8b-a1mask-badmed-seed0-v2",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "ArthT/llama8b-a0-badmed-seed0 · Hugging Face",
+      "url": "https://huggingface.co/ArthT/llama8b-a0-badmed-seed0",
+      "snippet": "Instructions to use ArthT/llama8b-a0-badmed-seed0 with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Libraries Transformers How to use ArthT/llama8b-a0-badmed-seed0 with Transformers:"
+    },
+    {
+      "title": "Ollama Models Hub — Popular Local LLMs for Windows (Llama 3, Mistral ...",
+      "url": "https://ai-ollama.github.io/models.html",
+      "snippet": "Browse popular Ollama models for Windows: Llama 3, Mistral, Qwen 2.5, Gemma 2, Phi-4. Copy the ollama pull command, check VRAM requirements and get started in seconds."
+    },
+    {
+      "title": "AI Leaderboard 2026: Rankings for 300+ Top AI Models by Intelligence ...",
+      "url": "https://llm-stats.com/",
+      "snippet": "The AI Leaderboard — independent rankings of GPT, Claude, Gemini, Llama, DeepSeek and 300+ AI models by intelligence, speed and price. Composite LLM Stats Score updated continuously from public benchmarks and live API metrics."
+    },
+    {
+      "title": "Best Open Source AI Models & LLM Leaderboard (2026)",
+      "url": "https://lmmarketcap.com/open-source-ai-models",
+      "snippet": "Open source AI models ranked: Llama 4, DeepSeek, Qwen, Mistral, and Gemma compared by score, pricing, and capabilities. The open source LLM leaderboard updated hourly."
+    }
+  ]
+}

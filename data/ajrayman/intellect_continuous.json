@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "ajrayman/Intellect_continuous",
+  "slug": "ajrayman-intellect_continuous",
+  "author": "ajrayman",
+  "url": "https://huggingface.co/ajrayman/Intellect_continuous",
+  "created_at": "2024-08-03T18:25:01.000Z",
+  "updated_at": "2026-08-30T10:12:39.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "roberta",
+    "text-classification",
+    "generated_from_trainer",
+    "base_model:FacebookAI/roberta-base",
+    "base_model:finetune:FacebookAI/roberta-base",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 4,
+  "trending_score": 0,
+  "parameters": 124646401,
+  "parameters_human": "124.6M",
+  "storage_bytes": 7330489825,
+  "storage_human": "7.3 GB",
+  "base_model": "roberta-base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ajrayman/Morality_continuous · Hugging Face",
+      "url": "https://huggingface.co/ajrayman/Morality_continuous",
+      "snippet": "Instructions to use ajrayman/Morality_continuous with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Libraries Transformers How to use ajrayman/Morality_continuous with Transformers:"
+    },
+    {
+      "title": "ajrayman/machiavellianism_continuous · Hugging Face",
+      "url": "https://huggingface.co/ajrayman/machiavellianism_continuous",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "New AI Models 2026 - Latest Releases | LM Market Cap",
+      "url": "https://lmmarketcap.com/new-ai-models",
+      "snippet": "Discover the newest AI models released in 2026. Track the latest LLMs, coding models, and image generators as they launch with source-backed release and evidence tracking."
+    },
+    {
+      "title": "Prime Agent: A self-improving RLM agent - primeintellect.ai",
+      "url": "https://www.primeintellect.ai/blog/prime-agent",
+      "snippet": "Prime Agent is our open-source, self-improving coding harness built around two abstractions: the Recursive Language Model (RLM) and the Continual Harness. With Opus 5, it achieves 95.5% on ARC-AGI-3, surpassing the reported human expert baseline."
+    },
+    {
+      "title": "This AI Model Never Stops Learning - WIRED",
+      "url": "https://www.wired.com/story/this-ai-model-never-stops-learning/",
+      "snippet": "Scientists at Massachusetts Institute of Technology have devised a way for large language models to keep learning on the fly—a step toward building AI that continually improves itself."
+    }
+  ]
+}

@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "Varunika28/slm-rl-colab",
+  "slug": "varunika28-slm-rl-colab",
+  "author": "Varunika28",
+  "url": "https://huggingface.co/Varunika28/slm-rl-colab",
+  "created_at": "2026-08-30T10:09:55.000Z",
+  "updated_at": "2026-08-30T10:10:04.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "lora",
+    "transformers",
+    "reinforcement-learning",
+    "atari",
+    "slm-rl",
+    "boxing",
+    "text-generation",
+    "base_model:LiquidAI/LFM2.5-1.2B-Instruct",
+    "base_model:adapter:LiquidAI/LFM2.5-1.2B-Instruct",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 22241248,
+  "storage_human": "22 MB",
+  "base_model": "LiquidAI/LFM2.5-1.2B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "apsjai03/slm-rl-colab · Hugging Face",
+      "url": "https://huggingface.co/apsjai03/slm-rl-colab",
+      "snippet": "Instructions to use apsjai03/slm-rl-colab with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Libraries PEFT How to use apsjai03/slm-rl-colab with PEFT:"
+    },
+    {
+      "title": "GitHub - CraftsMan-Labs/SLM-RL",
+      "url": "https://github.com/CraftsMan-Labs/SLM-RL",
+      "snippet": "SLM-RL A self-improving game gymnasium for small language models. Small language models learn to play games through reinforcement learning: the model plays games in text-native environments, every decision is collected into a reusable dataset, the model is automatically fine-tuned on its own experience, and the improved model re-enters play."
+    },
+    {
+      "title": "GitHub - inde5media/SLM-RL-MODELS",
+      "url": "https://github.com/inde5media/SLM-RL-MODELS",
+      "snippet": "Contribute to inde5media/SLM-RL-MODELS development by creating an account on GitHub."
+    },
+    {
+      "title": "Google Colab",
+      "url": "https://colab.research.google.com/",
+      "snippet": "Learn how to bring the power of Colab straight to your terminal. Read the full announcement."
+    },
+    {
+      "title": "varadha2k/slm-rl-colab · Discussions - Hugging Face",
+      "url": "https://huggingface.co/varadha2k/slm-rl-colab/discussions",
+      "snippet": "Instructions to use varadha2k/slm-rl-colab with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Libraries PEFT How to use varadha2k/slm-rl-colab with PEFT:"
+    }
+  ]
+}

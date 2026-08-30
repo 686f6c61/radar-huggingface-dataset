@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "sreenathka/glass-weights",
+  "slug": "sreenathka-glass-weights",
+  "author": "sreenathka",
+  "url": "https://huggingface.co/sreenathka/glass-weights",
+  "created_at": "2026-08-30T07:21:13.000Z",
+  "updated_at": "2026-08-30T07:23:35.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 187825899,
+  "storage_human": "188 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Project Glasswing &#92; Anthropic",
+      "url": "https://www.anthropic.com/project/glasswing",
+      "snippet": "What is Project Glasswing Project Glasswing is an initiative to secure the world&#x27;s most critical software for the AI era. We&#x27;re partnering with the organizations responsible for the infrastructure billions of people depend on, and giving their defenders a head start with our newest frontier model, Claude Mythos Preview."
+    },
+    {
+      "title": "Kimi AI Model Gains Developer Attention - LinkedIn",
+      "url": "https://www.linkedin.com/posts/sreenathks_kimi-ai-%E5%AE%98%E7%BD%91-k3-%E4%B8%8A%E7%BA%BF%E4%B8%93%E4%B8%BA%E6%99%BA%E8%83%BD%E4%BD%93%E7%BC%96%E7%A8%8B%E4%B8%8E%E7%9F%A5%E8%AF%86%E5%B7%A5%E4%BD%9C%E6%89%93%E9%80%A0-activity-7487036149828481024-h3Mz",
+      "snippet": "The complete model weights are scheduled to be released on Hugging Face by July 27, 2026 . Moonshot AI is also reportedly raising a new funding round that would value the company at $315 billion ."
+    },
+    {
+      "title": "model-weights · GitHub Topics · GitHub",
+      "url": "https://github.com/topics/model-weights",
+      "snippet": "Shared Ultralytics logos, media, sample images, pretrained model weights, dataset artifacts, and release assets."
+    },
+    {
+      "title": "Open-weight AI models: the complete database — BasedAI",
+      "url": "https://basedai.co/models",
+      "snippet": "Open-weight AI models: the complete database Open-weight models — from DeepSeek, Moonshot, Zhipu, Alibaba, Meta, Mistral, MiniMax, and OpenAI — now compete directly with proprietary flagships. This database tracks every major open source model: parameters, context windows, licenses, API pricing, benchmarks, and what it takes to run each one yourself."
+    },
+    {
+      "title": "7 best open weight AI models I&#x27;ve tested in 2026 - gumloop.com",
+      "url": "https://www.gumloop.com/blog/open-weight-ai-models",
+      "snippet": "Want to learn what the best open weight AI models are right now? Here are the top models I&#x27;ve tested and use in my actual day to day workflows."
+    }
+  ]
+}

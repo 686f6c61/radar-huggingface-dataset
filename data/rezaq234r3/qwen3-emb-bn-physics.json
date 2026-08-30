@@ -1,0 +1,225 @@
+{
+  "schema": 1,
+  "id": "Rezaq234r3/qwen3-emb-bn-physics",
+  "slug": "rezaq234r3-qwen3-emb-bn-physics",
+  "author": "Rezaq234r3",
+  "url": "https://huggingface.co/Rezaq234r3/qwen3-emb-bn-physics",
+  "created_at": "2026-08-30T08:59:30.000Z",
+  "updated_at": "2026-08-30T08:59:35.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "sentence-similarity",
+  "library": "sentence-transformers",
+  "languages": [
+    "bn"
+  ],
+  "tags": [
+    "sentence-transformers",
+    "safetensors",
+    "sentence-similarity",
+    "feature-extraction",
+    "dense",
+    "generated_from_trainer",
+    "dataset_size:1264",
+    "loss:MatryoshkaLoss",
+    "loss:MultipleNegativesRankingLoss",
+    "bn",
+    "arxiv:1908.10084",
+    "arxiv:2205.13147",
+    "arxiv:1807.03748",
+    "base_model:Qwen/Qwen3-Embedding-0.6B",
+    "base_model:finetune:Qwen/Qwen3-Embedding-0.6B",
+    "license:apache-2.0",
+    "model-index",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 31658478,
+  "storage_human": "32 MB",
+  "base_model": "Qwen/Qwen3-Embedding-0.6B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "Information Retrieval",
+      "dataset": "val",
+      "metric": "Cosine Accuracy@1",
+      "value": 0.09259259259259259
+    },
+    {
+      "task": "Information Retrieval",
+      "dataset": "val",
+      "metric": "Cosine Accuracy@3",
+      "value": 0.25
+    },
+    {
+      "task": "Information Retrieval",
+      "dataset": "val",
+      "metric": "Cosine Accuracy@5",
+      "value": 0.3055555555555556
+    },
+    {
+      "task": "Information Retrieval",
+      "dataset": "val",
+      "metric": "Cosine Precision@1",
+      "value": 0.09259259259259259
+    },
+    {
+      "task": "Information Retrieval",
+      "dataset": "val",
+      "metric": "Cosine Precision@5",
+      "value": 0.061111111111111116
+    },
+    {
+      "task": "Information Retrieval",
+      "dataset": "val",
+      "metric": "Cosine Precision@10",
+      "value": 0.04351851851851852
+    },
+    {
+      "task": "Information Retrieval",
+      "dataset": "val",
+      "metric": "Cosine Recall@1",
+      "value": 0.09259259259259259
+    },
+    {
+      "task": "Information Retrieval",
+      "dataset": "val",
+      "metric": "Cosine Recall@5",
+      "value": 0.3055555555555556
+    },
+    {
+      "task": "Information Retrieval",
+      "dataset": "val",
+      "metric": "Cosine Recall@10",
+      "value": 0.4351851851851852
+    },
+    {
+      "task": "Information Retrieval",
+      "dataset": "val",
+      "metric": "Cosine Ndcg@10",
+      "value": 0.25034561169485403
+    },
+    {
+      "task": "Information Retrieval",
+      "dataset": "val",
+      "metric": "Cosine Mrr@10",
+      "value": 0.19297472075249847
+    },
+    {
+      "task": "Information Retrieval",
+      "dataset": "val",
+      "metric": "Cosine Map@10",
+      "value": 0.19297472075249852
+    },
+    {
+      "task": "Information Retrieval",
+      "dataset": "test",
+      "metric": "Cosine Accuracy@1",
+      "value": 0.10833333333333334
+    },
+    {
+      "task": "Information Retrieval",
+      "dataset": "test",
+      "metric": "Cosine Accuracy@3",
+      "value": 0.26666666666666666
+    },
+    {
+      "task": "Information Retrieval",
+      "dataset": "test",
+      "metric": "Cosine Accuracy@5",
+      "value": 0.375
+    },
+    {
+      "task": "Information Retrieval",
+      "dataset": "test",
+      "metric": "Cosine Precision@1",
+      "value": 0.10833333333333334
+    },
+    {
+      "task": "Information Retrieval",
+      "dataset": "test",
+      "metric": "Cosine Precision@5",
+      "value": 0.075
+    },
+    {
+      "task": "Information Retrieval",
+      "dataset": "test",
+      "metric": "Cosine Precision@10",
+      "value": 0.05
+    },
+    {
+      "task": "Information Retrieval",
+      "dataset": "test",
+      "metric": "Cosine Recall@1",
+      "value": 0.10833333333333334
+    },
+    {
+      "task": "Information Retrieval",
+      "dataset": "test",
+      "metric": "Cosine Recall@5",
+      "value": 0.375
+    },
+    {
+      "task": "Information Retrieval",
+      "dataset": "test",
+      "metric": "Cosine Recall@10",
+      "value": 0.5
+    },
+    {
+      "task": "Information Retrieval",
+      "dataset": "test",
+      "metric": "Cosine Ndcg@10",
+      "value": 0.2849638784867847
+    },
+    {
+      "task": "Information Retrieval",
+      "dataset": "test",
+      "metric": "Cosine Mrr@10",
+      "value": 0.2182242063492063
+    },
+    {
+      "task": "Information Retrieval",
+      "dataset": "test",
+      "metric": "Cosine Map@10",
+      "value": 0.21822420634920636
+    }
+  ],
+  "sources": [
+    {
+      "title": "Rezaq234r3 (Reza) - Hugging Face",
+      "url": "https://huggingface.co/Rezaq234r3",
+      "snippet": "Sort: Recently updated. Rezaq234r3/my-mini-gpt. Updated Apr 19. Rezaq234r3/mini_gpt_t. 3.64M • Updated Apr 15. Rezaq234r3/bge-reranker-finetuned"
+    },
+    {
+      "title": "Qwen3 - a Qwen Collection - Hugging Face",
+      "url": "https://huggingface.co/collections/Qwen/qwen3",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Qwen3 Complete Guide: Every Model from 0.6B to 235B",
+      "url": "https://insiderllm.com/guides/qwen3-complete-guide/",
+      "snippet": "Qwen3 is the best open model family for budget local AI. Dense models from 0.6B to 32B, MoE models that punch above their weight, and a /think toggle no one else has."
+    },
+    {
+      "title": "Qwen 3 — Alibaba&#x27;s Most Powerful AI Model - Singularity Moments",
+      "url": "https://www.singularitymoments.com/qwen-3-ai-model/",
+      "snippet": "What Is Qwen 3? Qwen 3 is Alibaba&#x27;s third-generation large language model family, released in 2026 as a significant leap over Qwen 2.5. The model family spans multiple parameter sizes — from efficient 7B variants to the full-scale flagship — and is made available under a permissive open-source licence, enabling commercial use worldwide. Unlike many closed-source frontier models, Qwen 3 ..."
+    },
+    {
+      "title": "QwenLM/Qwen3 | DeepWiki",
+      "url": "https://deepwiki.com/QwenLM/Qwen3",
+      "snippet": "Qwen3 consists of multiple model families with different architectural approaches and capabilities. The system supports both dense and Mixture-of-Experts (MoE) architectures across various parameter scales."
+    }
+  ]
+}

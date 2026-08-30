@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "mathewan10y/synapse-financial-sentiment",
+  "slug": "mathewan10y-synapse-financial-sentiment",
+  "author": "mathewan10y",
+  "url": "https://huggingface.co/mathewan10y/synapse-financial-sentiment",
+  "created_at": "2026-08-24T07:42:19.000Z",
+  "updated_at": "2026-08-30T09:24:30.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "distilbert",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 27,
+  "trending_score": 0,
+  "parameters": 66954241,
+  "parameters_human": "67.0M",
+  "storage_bytes": 535665128,
+  "storage_human": "536 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - mathewan10y/financial_analyser",
+      "url": "https://github.com/mathewan10y/financial_analyser",
+      "snippet": "An AI-driven, orchestrated pipeline for scraping, filtering, and analyzing real-time financial market sentiment."
+    },
+    {
+      "title": "financial_analyser/README.md at main · mathewan10y/financial ... - GitHub",
+      "url": "https://github.com/mathewan10y/financial_analyser/blob/main/README.md",
+      "snippet": "⚡ Synapse: Autonomous Quantitative Intelligence An AI-driven, orchestrated pipeline for scraping, filtering, and analyzing real-time financial market sentiment."
+    },
+    {
+      "title": "Tutorial: Sentiment analysis with Foundry Tools - Azure Synapse ...",
+      "url": "https://learn.microsoft.com/en-us/azure/synapse-analytics/machine-learning/tutorial-cognitive-services-sentiment",
+      "snippet": "In this tutorial, you learn how to enrich your data in Azure Synapse Analytics with Foundry Tools. You&#x27;ll use the Azure Language in Foundry Tools text analytics capabilities to perform sentiment analysis. A user in Azure Synapse can select a table that contains a text column to enrich with sentiments."
+    },
+    {
+      "title": "Synapse AI - Neural Connections for Your AI Team",
+      "url": "https://synapse-ai.com/",
+      "snippet": "Your AI team. Ready to work. Seven specialized agents that collaborate autonomously — writing, analyzing, selling, researching, and supporting — so you can focus on what matters."
+    },
+    {
+      "title": "Synapse AI | Multilingual Market Insights Platform",
+      "url": "https://www.synapse-ai.io/",
+      "snippet": "Market insights in 140+ languages. Real-time sentiment monitoring and narrative shift detection across markets your competitors miss. CortexPulse by Synapse AI."
+    }
+  ]
+}

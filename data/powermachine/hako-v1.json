@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "PowerMachine/HAKO-v1",
+  "slug": "powermachine-hako-v1",
+  "author": "PowerMachine",
+  "url": "https://huggingface.co/PowerMachine/HAKO-v1",
+  "created_at": "2026-08-30T06:30:44.000Z",
+  "updated_at": "2026-08-30T06:32:36.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 65046688,
+  "storage_human": "65 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Spec: hako v1 — model-agnostic agent-loop runner (pipeline kernel)",
+      "url": "https://github.com/chrishiguto/hako/issues/1",
+      "snippet": "Execution follows the docker model: hakod (daemon) hosts the engine wherever it runs — laptop or server, same binary — and hako (CLI) is a pure client that submits runs, streams events, and hands answers back. Every iteration runs in a fresh ephemeral microVM (smolvm) with a fresh agent context; the only memory channel is the persistent workspace (a run-owned git clone on a run branch ..."
+    },
+    {
+      "title": "GitHub - mithraeums/hako: Open source hako LLMs. · GitHub",
+      "url": "https://github.com/mithraeums/hako",
+      "snippet": "Open hake, drop into the AI pane (Ctrl-W r), set :provider mithraeum:model hako-sho-stock (or any installed hako-* model). Tool calls run in the editor&#x27;s split pane against the file you&#x27;re looking at."
+    },
+    {
+      "title": "How to Use Hakko AI - Step by Step Guide (Full Tutorial)",
+      "url": "https://www.youtube.com/watch?v=ZF8C05ipzyE",
+      "snippet": "How to Use Hakko AI: This full tutorial walks you through setup, key features, and real-world workflows for beginners and experienced users. Follow a clear step by step guide to configure the AI ..."
+    },
+    {
+      "title": "LLM Leaderboard & AI Model Benchmarks — August 2026",
+      "url": "https://benchlm.ai/",
+      "snippet": "Compare 406 AI models across 408 benchmarks, with 228 ranked scores, source evidence, API pricing, context windows, runtime, and head-to-head pages."
+    },
+    {
+      "title": "HakkoAI Outperforms Most VLMs in Gaming Scenarios",
+      "url": "https://www.youtube.com/watch?v=jNS3T2y1hUM",
+      "snippet": "HakkoAI is powered by LynkSoul VLM v1—a visual language model developed by our team and trained on massive amounts of gaming data. This allows the AI to truly see and understand gameplay ..."
+    }
+  ]
+}

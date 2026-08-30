@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "Stellaaaaaaaa/Guo",
+  "slug": "stellaaaaaaaa-guo",
+  "author": "Stellaaaaaaaa",
+  "url": "https://huggingface.co/Stellaaaaaaaa/Guo",
+  "created_at": "2026-08-30T08:03:29.000Z",
+  "updated_at": "2026-08-30T08:03:29.000Z",
+  "license": "c-uda",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:c-uda",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Stella AI - All-in-One AI Photoshoot, Avatar & Video MV Creator",
+      "url": "https://govisora.com/",
+      "snippet": "All-in-One AI Photoshoot, Avatar & Video MV Creator Stella AI is an AI-powered app for creators of all levels. With just an idea, a photo, or a short description, you can quickly generate high-quality AI photoshoots, AI avatars, and AI video MVs, making creation simpler, faster, and more fun. Whether you are a content creator, social media enthusiast, or new to AI creation, Stella AI helps you ..."
+    },
+    {
+      "title": "Stelle ( Honkai Star Rail) | Goofy Ai - tensor.art",
+      "url": "https://www.tensor.art/models/633623498813644645",
+      "snippet": "LORA 64 star Original Goofy Ai Updated: Sep 8, 2024 4:34 AM Anime TRAILBLAZER（STELLE/CAELUS） HONKAI STAR RAIL GAME CHARACTER GIRL v1.0"
+    },
+    {
+      "title": "Stella AI｜知識も技術もいらない生成AI - Apps on Google Play",
+      "url": "https://play.google.com/store/apps/details?id=com.supernova.stella_ai&hl=en-US",
+      "snippet": "\"Stella AI\" is a service that can use multiple latest AI models and can perform text generation, image generation, and web search all in one."
+    },
+    {
+      "title": "Stella Walker (@stellaaaaaaaa) • Instagram photos and videos",
+      "url": "https://www.instagram.com/stellaaaaaaaa/",
+      "snippet": "This profile is private Follow stellaaaaaaaa in the app to see their photos and videos."
+    },
+    {
+      "title": "Stella - AI-Powered 3D Model Generator",
+      "url": "https://www.stella-stl.com/",
+      "snippet": "Standard Image → 3D mesh ↑ Upload Your image → 3D Import GLB, STL, OBJ file"
+    }
+  ]
+}

@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "s-a-i/grounding-dino-base",
+  "slug": "s-a-i-grounding-dino-base",
+  "author": "s-a-i",
+  "url": "https://huggingface.co/s-a-i/grounding-dino-base",
+  "created_at": "2026-08-30T10:09:53.000Z",
+  "updated_at": "2026-08-30T10:11:16.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "zero-shot-object-detection",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "pytorch",
+    "safetensors",
+    "grounding-dino",
+    "vision",
+    "zero-shot-object-detection",
+    "arxiv:2303.05499",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 232810880,
+  "parameters_human": "232.8M",
+  "storage_bytes": 1869402877,
+  "storage_human": "1.9 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "IDEA-Research/grounding-dino-base · Hugging Face",
+      "url": "https://huggingface.co/IDEA-Research/grounding-dino-base",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "grounding-dino-base: Text-to-Image model — overview, use cases ...",
+      "url": "https://www.aimodels.fyi/models/huggingFace/grounding-dino-base-idea-research",
+      "snippet": "The model combines a vision encoder and text encoder within the transformer architecture, extending DINO with grounded pre-training for open-set object detection. The base variant processes images of variable resolution (no specific maximum specified) and text queries consisting of lowercased object descriptions ending with periods."
+    },
+    {
+      "title": "Grounding DINO · Hugging Face",
+      "url": "https://huggingface.co/docs/transformers/model_doc/grounding-dino",
+      "snippet": "Grounding DINO extends a closed-set object detection model with a text encoder, enabling open-set object detection. The model achieves remarkable results, such as 52.5 AP on COCO zero-shot. The abstract from the paper is the following:"
+    },
+    {
+      "title": "Grounding DINO - High Accuracy AI Object Recognition System",
+      "url": "https://groundingdino.org/",
+      "snippet": "Grounding DINO is a vision-language AI model that enables open-vocabulary object detection with precise text-based recognition & localization capabilities."
+    },
+    {
+      "title": "GitHub - IDEA-Research/GroundingDINO: [ECCV 2024] Official ...",
+      "url": "https://github.com/IDEA-Research/GroundingDINO",
+      "snippet": "🔥 Grounding DINO 1.5 is released now, which is IDEA Research&#x27;s Most Capable Open-World Object Detection Model! 🔥 Grounding DINO and Grounded SAM are now supported in Huggingface."
+    }
+  ]
+}

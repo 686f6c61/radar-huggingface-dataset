@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "pertai/qwen38-et-27b-GGUF",
+  "slug": "pertai-qwen38-et-27b-gguf",
+  "author": "pertai",
+  "url": "https://huggingface.co/pertai/qwen38-et-27b-GGUF",
+  "created_at": "2026-08-30T09:25:16.000Z",
+  "updated_at": "2026-08-30T09:34:30.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "et"
+  ],
+  "tags": [
+    "gguf",
+    "estonian",
+    "ollama",
+    "et",
+    "base_model:Qwen/Qwen3.8-27B",
+    "base_model:quantized:Qwen/Qwen3.8-27B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 27320697856,
+  "parameters_human": "27.32B",
+  "storage_bytes": 22430999808,
+  "storage_human": "22.4 GB",
+  "base_model": "Qwen/Qwen3.8-27B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Qwen/Qwen3.8-27B · Hugging Face",
+      "url": "https://huggingface.co/Qwen/Qwen3.8-27B",
+      "snippet": "MathVision: Qwen3.8-27B is evaluated using the fixed prompt: \"Please reason step by step, and put your final answer within &#92;boxed {}.\" For the remaining models, we report the higher score from two prompt variants—one with and one without the &#92;boxed {} formatting requirement."
+    },
+    {
+      "title": "empero-ai/Qwen3.8-27B-Ridge-GGUF · Hugging Face",
+      "url": "https://huggingface.co/empero-ai/Qwen3.8-27B-Ridge-GGUF",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Qwen3.8-27B-GGUF · Models",
+      "url": "https://www.modelscope.cn/models/unsloth/Qwen3.8-27B-GGUF",
+      "snippet": "Qwen3.8-27B Following the widespread community adoption of the Qwen3.5 and Qwen3.6 series, we are pleased to introduce Qwen3.8, the most capable generation in the Qwen open-model family to date. Built on the architectural foundation of Qwen3.5, Qwen3.8 delivers substantial gains across coding, professional work, research, and long-horizon agentic tasks. Qwen3.8-27B brings these advances to a ..."
+    },
+    {
+      "title": "Qwen3.8-27B-GGUF · Models",
+      "url": "https://www.modelscope.cn/models/lmstudio-community/Qwen3.8-27B-GGUF",
+      "snippet": "💫 Community Model> Qwen3.8-27B by Qwen 👾 LM Studio Community models highlights program. Highlighting new & noteworthy models by the community. Join the conversation on Discord. Model creator: Qwen Original model: Qwen3.8-27B GGUF quantization: provided by LM Studio team using llama.cpp release b10430 Special thanks 🙏 Special thanks to Georgi Gerganov and the whole team working on ..."
+    },
+    {
+      "title": "Qwen 3.8-27B Local Deployment and Fast Serving Guide - Geeky Gadgets",
+      "url": "https://www.geeky-gadgets.com/serve-qwen-3-8-27b-fast/",
+      "snippet": "Qwen 3.8-27B delivers high-speed local AI generation. Optimize your hardware setup using SG Lang with NVFP4 quantization to hit up to 200 tokens per second."
+    }
+  ]
+}

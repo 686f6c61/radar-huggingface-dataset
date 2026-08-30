@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "alst10/new-adult-writer-Q4_0-ROCmFP4-GGUF",
+  "slug": "alst10-new-adult-writer-q4_0-rocmfp4-gguf",
+  "author": "alst10",
+  "url": "https://huggingface.co/alst10/new-adult-writer-Q4_0-ROCmFP4-GGUF",
+  "created_at": "2026-08-30T07:54:56.000Z",
+  "updated_at": "2026-08-30T07:54:56.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:cc-by-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "alst10/alston-writer-gguf · Hugging Face",
+      "url": "https://huggingface.co/alst10/alston-writer-gguf",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "ahmed22xa/new-adult-writer-GGUF · Hugging Face",
+      "url": "https://huggingface.co/ahmed22xa/new-adult-writer-GGUF",
+      "snippet": "ahmed22xa / new-adult-writer-GGUF like 0 Text Generation GGUF gemma4 lmstudio uncensored nsfw roleplay writing multimodal prompt-engineering conversational License:apache-2.0 Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "Free AI Adult Story Generator (No Sign-Up, Unlimited) - Squibler",
+      "url": "https://www.squibler.io/ai-story-generator/adult/",
+      "snippet": "Free AI Adult Story Generator The free AI adult story generator that turns your ideas into compelling, mature-themed short stories and full-length novels."
+    },
+    {
+      "title": "Spicy Writer - Uncensored AI Writing",
+      "url": "https://spicywriter.com/about",
+      "snippet": "AI writing tool without restrictions. Mature NSFW themes, and creative fiction without restrictions."
+    },
+    {
+      "title": "Best Uncensored Local LLMs by VRAM Tier (2026) | InsiderLLM",
+      "url": "https://insiderllm.com/guides/best-uncensored-local-llms/",
+      "snippet": "Qwen 3.6 abliterated, Gemma 4 Heretic, Dolphin 3.0 — the current uncensored picks by VRAM tier. The Llama 3.1 / Qwen 2.5 era is mostly superseded. HuggingFace repos for every pick."
+    }
+  ]
+}

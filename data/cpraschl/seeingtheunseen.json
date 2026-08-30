@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "cpraschl/SeeingTheUnseen",
+  "slug": "cpraschl-seeingtheunseen",
+  "author": "cpraschl",
+  "url": "https://huggingface.co/cpraschl/SeeingTheUnseen",
+  "created_at": "2026-08-19T18:04:46.000Z",
+  "updated_at": "2026-08-30T09:38:43.000Z",
+  "license": "mit-except-yolo-agpl-3.0",
+  "license_family": "unknown",
+  "pipeline_tag": "object-detection",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "object-detection",
+    "remote-sensing",
+    "wildlife",
+    "occlusion",
+    "synthetic-aperture",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 9514439339,
+  "storage_human": "9.5 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Seeing the Unseen: Semantic-in-Gaussian for Sparse-View 3D Generalization",
+      "url": "https://arxiv.org/html/2608.22740",
+      "snippet": "Sparse-View generalizable 3DGS methods focus on learning a feed-forward model capable of handling unseen scenes without per-scene re-optimization [1]. PixelSplat [6] predict 3D Gaussian parameters from sparse multi-view inputs, leveraging an epipolar transformer for depth estimation."
+    },
+    {
+      "title": "[2608.22740] Seeing the Unseen: Semantic-in-Gaussian for Sparse-View 3D ...",
+      "url": "https://arxiv.org/abs/2608.22740",
+      "snippet": "Generalizable 3D Gaussian Splatting (G-3DGS) has emerged as a promising approach for novel view synthesis undersparse-view settings. However, existing frameworks remain restricted by pixel-aligned Gaussian estimation, whichstruggles in partially observed or occluded regions and often leads to incomplete surfaces or structural collapse. Toaddress these challenges, we propose SeeU (Seeing the ..."
+    },
+    {
+      "title": "cpraschl/bambi-models at main - Hugging Face",
+      "url": "https://huggingface.co/cpraschl/bambi-models/tree/main",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Seeing the Unseen: A Semantic Alignment and Context-Aware Prompt ...",
+      "url": "https://ieeexplore.ieee.org/abstract/document/11444311",
+      "snippet": "Open-Vocabulary Camouflaged Object Segmentation (OVCOS) aims to segment camouflaged objects of any category based on text descriptions. Despite existing openvocabulary methods exhibit strong segmentation capabilities, they still have a major limitation in camouflaged scenarios: semantic confusion, which leads to incomplete segmentation and class shift in the model. To mitigate the above ..."
+    },
+    {
+      "title": "Seeing the unseen: A new tool visualizes hidden structures in complex ...",
+      "url": "https://phys.org/news/2026-08-unseen-tool-visualizes-hidden-complex.html",
+      "snippet": "Modern biology research can now generate valuable data on an unprecedented scale. But there is one major obstacle: making sense of these complex high-dimensional datasets. A team at the University ..."
+    }
+  ]
+}

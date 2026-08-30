@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "rafmacalaba/lfm2.5-350M-datause-multitask-tiered",
+  "slug": "rafmacalaba-lfm2-5-350m-datause-multitask-tiered",
+  "author": "rafmacalaba",
+  "url": "https://huggingface.co/rafmacalaba/lfm2.5-350M-datause-multitask-tiered",
+  "created_at": "2026-08-30T01:59:22.000Z",
+  "updated_at": "2026-08-30T05:47:19.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "lfm2",
+    "data-use",
+    "provenance",
+    "usage",
+    "impact",
+    "tiered",
+    "sft",
+    "lora",
+    "text-generation",
+    "conversational",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 2198985072,
+  "storage_human": "2.2 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "rafmacalaba/lfm2.5-350M-datause-multitask · Hugging Face",
+      "url": "https://huggingface.co/rafmacalaba/lfm2.5-350M-datause-multitask",
+      "snippet": "LoRA SFT of LiquidAI/LFM2.5-350M for data-mention provenance attributes (producer / year / geography / acronym) and usage/impact classification (data_type / usage_action / impact_label / usage_summary)."
+    },
+    {
+      "title": "rafmacalaba/lfm2.5-350M-multitask-datause · Hugging Face",
+      "url": "https://huggingface.co/rafmacalaba/lfm2.5-350M-multitask-datause",
+      "snippet": "LoRA SFT of LiquidAI/LFM2.5-350M for data-mention provenance attributes (producer / year / geography / acronym) and usage/impact classification (data_type / usage_action / impact_label / usage_summary)."
+    },
+    {
+      "title": "Lfm2.5 350m Multitask Datause - AI Model Insights & Benchmarks",
+      "url": "https://free2aitools.com/model/rafmacalaba/lfm2.5-350m-multitask-datause",
+      "snippet": "Registry entry for model Lfm2.5 350m Multitask Datause; source metadata pending."
+    },
+    {
+      "title": "LFM2.5-350M - Liquid Docs",
+      "url": "https://docs.liquid.ai/lfm/models/lfm25-350m",
+      "snippet": "← Back to Text Models LFM2.5-350M is Liquid AI&#x27;s smallest LFM2.5 text model, designed for edge devices with strict memory and compute constraints. Built on the LFM2.5 architecture with extended pre-training and reinforcement learning, it delivers improved chat, instruction-following, and tool-calling performance over LFM2-350M while keeping the same compact footprint."
+    },
+    {
+      "title": "LFM2.5-350M: No Size Left Behind | Blog | Liquid AI",
+      "url": "https://www.liquid.ai/blog/lfm2-5-350m-no-size-left-behind",
+      "snippet": "Today, we&#x27;re releasing LFM2.5-350M, an improved version of our 350M model with additional pre-training (from 10T to 28T tokens) and large-scale reinforcement learning. Built on the LFM2 architecture, it delivers exceptionally fast inference and runs everywhere, from cloud GPUs to cheap CPUs."
+    }
+  ]
+}

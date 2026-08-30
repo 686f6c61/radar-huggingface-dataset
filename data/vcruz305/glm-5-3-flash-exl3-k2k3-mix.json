@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "vcruz305/GLM-5.3-Flash-EXL3-K2K3-mix",
+  "slug": "vcruz305-glm-5-3-flash-exl3-k2k3-mix",
+  "author": "vcruz305",
+  "url": "https://huggingface.co/vcruz305/GLM-5.3-Flash-EXL3-K2K3-mix",
+  "created_at": "2026-08-30T08:57:20.000Z",
+  "updated_at": "2026-08-30T08:57:23.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "tags": [
+    "exl3",
+    "glm",
+    "moe",
+    "glm5_next",
+    "quantized",
+    "mixed-precision",
+    "dgx-spark",
+    "text-generation",
+    "en",
+    "zh",
+    "base_model:vcruz305/GLM-5.3-Flash-EXL3-K2",
+    "base_model:quantized:vcruz305/GLM-5.3-Flash-EXL3-K2",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": "vcruz305/GLM-5.3-Flash-EXL3-K2",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "vcruz305/GLM-5.3-Flash-EXL3-K2 · Hugging Face",
+      "url": "https://huggingface.co/vcruz305/GLM-5.3-Flash-EXL3-K2",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GLM-5.3-Flash EXL3 K2 on one NVIDIA DGX Spark - GitHub",
+      "url": "https://github.com/vcruz305/GLM-5.3-Flash-EXL3-K2-DGX-Spark-recipe",
+      "snippet": "Reproducible vLLM recipe for vcruz305/GLM-5.3-Flash-EXL3-K2 on a single NVIDIA DGX Spark / GB10 (SM121). Install vLLM and ExLlamaV3 in a local virtual environment on the Spark, download the Hub pack, and run vllm serve directly. A convenience script is in scripts/serve_one_spark.sh. Independent community engineering."
+    },
+    {
+      "title": "GLM-5.3-Flash-EXL3-K2-DGX-Spark-recipe/README.md at main - GitHub",
+      "url": "https://github.com/vcruz305/GLM-5.3-Flash-EXL3-K2-DGX-Spark-recipe/blob/main/README.md",
+      "snippet": "GLM-5.3-Flash EXL3 K2 on one NVIDIA DGX Spark Reproducible vLLM recipe for vcruz305/GLM-5.3-Flash-EXL3-K2 on a single NVIDIA DGX Spark / GB10 (SM121). Install vLLM and ExLlamaV3 in a local virtual environment on the Spark, download the Hub pack, and run vllm serve directly. A convenience script is in scripts/serve_one_spark.sh."
+    },
+    {
+      "title": "vcruz305/GLM-5.3-Flash-NVFP4 · Hugging Face",
+      "url": "https://huggingface.co/vcruz305/GLM-5.3-Flash-NVFP4",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GLM-5.3-Flash - Overview - Z.AI DEVELOPER DOCUMENT",
+      "url": "https://docs.z.ai/guides/vlm/glm-5.3-flash",
+      "snippet": "Model Overview GLM-5.3-Flash is the first native multimodal model in the GLM-5 series, delivering stronger intelligence than GLM-5.2 at an exceptionally low cost. Highly Efficient Hybrid Architecture GLM-5.3-Flash has 320B total parameters with 18B activated."
+    }
+  ]
+}

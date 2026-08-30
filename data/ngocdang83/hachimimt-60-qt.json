@@ -1,0 +1,80 @@
+{
+  "schema": 1,
+  "id": "ngocdang83/HachimiMT-60-QT",
+  "slug": "ngocdang83-hachimimt-60-qt",
+  "author": "ngocdang83",
+  "url": "https://huggingface.co/ngocdang83/HachimiMT-60-QT",
+  "created_at": "2026-07-04T15:12:05.000Z",
+  "updated_at": "2026-08-30T09:21:12.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": "translation",
+  "library": "transformers",
+  "languages": [
+    "zh",
+    "vi"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "marian",
+    "text2text-generation",
+    "translation",
+    "chinese-vietnamese",
+    "webnovel",
+    "xianxia",
+    "convert",
+    "nmt",
+    "machine-translation",
+    "zh",
+    "vi",
+    "dataset:ngocdang83/tran-vi-teacher",
+    "dataset:chi-vi/hirashiba-mt-zh2vi-b-filtered",
+    "license:cc-by-4.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 116,
+  "trending_score": 0,
+  "parameters": 56397120,
+  "parameters_human": "56.4M",
+  "storage_bytes": 286166337,
+  "storage_human": "286 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ngocdang83/HachimiMT-60-QT · Hugging Face",
+      "url": "https://huggingface.co/ngocdang83/HachimiMT-60-QT",
+      "snippet": "ngocdang83 / HachimiMT-60-QT like 0 Translation Transformers Safetensors ngocdang83/tran-vi-teacher chi-vi/hirashiba-mt-zh2vi-b-filtered Chinese Vietnamese marian text2text-generation chinese-vietnamese webnovel xianxia convert nmt machine-translation License:cc-by-4. Model card FilesFiles and versions xet Community Deploy Copy to bucket new ..."
+    },
+    {
+      "title": "ngocdang83/HachimiMT-60-QT at main - Hugging Face",
+      "url": "https://huggingface.co/ngocdang83/HachimiMT-60-QT/tree/main",
+      "snippet": "ngocdang83 / HachimiMT-60-QT like 0 Translation Transformers Safetensors ngocdang83/tran-vi-teacher chi-vi/hirashiba-mt-zh2vi-b-filtered Chinese Vietnamese marian text2text-generation chinese-vietnamese webnovel xianxia convert nmt machine-translation License:cc-by-4. Model card FilesFiles and versions xet Community Deploy Copy to bucket new ..."
+    },
+    {
+      "title": "GitHub - ngocdang8311/hachimimt-colab",
+      "url": "https://github.com/ngocdang8311/hachimimt-colab",
+      "snippet": "Không có model \"đỉnh\" tuyệt đối: ví dụ ở khoản giữ tên riêng / xưng hô nhất quán, mấy bản kia có lúc ổn định hơn HachimiMT-60; ngược lại HachimiMT-60 có thể hợp hơn ở đoạn khác. Cách tốt nhất là thử cả 4 trên cùng một đoạn truyện của bạn rồi chọn cái hợp gu nhất."
+    },
+    {
+      "title": "ngocdang8311 (Dan) / Repositories · GitHub",
+      "url": "https://github.com/ngocdang8311?tab=repositories",
+      "snippet": "ngocdang8311 has 11 repositories available. Follow their code on GitHub."
+    },
+    {
+      "title": "Google Colab",
+      "url": "https://colab.research.google.com/github/ngocdang8311/hachimimt-colab/blob/master/HachimiMT_Colab.ipynb",
+      "snippet": "Google Colab ... Google Colab"
+    }
+  ]
+}

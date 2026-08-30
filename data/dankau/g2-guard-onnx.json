@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "DanKau/g2-guard-onnx",
+  "slug": "dankau-g2-guard-onnx",
+  "author": "DanKau",
+  "url": "https://huggingface.co/DanKau/g2-guard-onnx",
+  "created_at": "2026-08-30T10:01:43.000Z",
+  "updated_at": "2026-08-30T10:02:09.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": "onnx",
+  "languages": [],
+  "tags": [
+    "onnx",
+    "guardrails",
+    "text-classification",
+    "base_model:fastino/gliguard-LLMGuardrails-300M",
+    "base_model:quantized:fastino/gliguard-LLMGuardrails-300M",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 829935909,
+  "storage_human": "830 MB",
+  "base_model": "fastino/gliguard-LLMGuardrails-300M",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "DanKau/gliner2-pii-onnx · Hugging Face",
+      "url": "https://huggingface.co/DanKau/gliner2-pii-onnx",
+      "snippet": "Experimental ONNX build - Unofficial ONNX export of fastino/gliner2-privacy-filter-PII-multi, which is licensed under Apache 2.0. No changes were made to the model&#x27;s weights or behavior beyond conversion to the ONNX format."
+    },
+    {
+      "title": "ONNX Model Zoo",
+      "url": "https://github.com/onnx/models",
+      "snippet": "Welcome to the ONNX Model Zoo! The Open Neural Network Exchange (ONNX) is an open standard format created to represent machine learning models. Supported by a robust community of partners, ONNX defines a common set of operators and a common file format to enable AI developers to use models with a variety of frameworks, tools, runtimes, and compilers. This repository is a curated collection of ..."
+    },
+    {
+      "title": "ONNX | Home",
+      "url": "https://onnx.ai/",
+      "snippet": "ONNX is an open format built to represent machine learning models. ONNX defines a common set of operators - the building blocks of machine learning and deep learning models - and a common file format to enable AI developers to use models with a variety of frameworks, tools, runtimes, and compilers."
+    },
+    {
+      "title": "ONNX Runtime | Models",
+      "url": "https://onnxruntime.ai/models",
+      "snippet": "ONNX Models - find ONNX models for natural language processing, computer vision, and more."
+    },
+    {
+      "title": "kornia/ONNX_models · Hugging Face",
+      "url": "https://huggingface.co/kornia/ONNX_models",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    }
+  ]
+}

@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "wangmingxinthu/SwitchWorld",
+  "slug": "wangmingxinthu-switchworld",
+  "author": "wangmingxinthu",
+  "url": "https://huggingface.co/wangmingxinthu/SwitchWorld",
+  "created_at": "2026-08-30T07:10:07.000Z",
+  "updated_at": "2026-08-30T07:17:44.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-to-video",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "world-model",
+    "video-generation",
+    "perspective-switching",
+    "lora",
+    "lingbot-world",
+    "image-to-video",
+    "en",
+    "base_model:robbyant/lingbot-world-base-cam",
+    "base_model:adapter:robbyant/lingbot-world-base-cam",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 39203863612,
+  "storage_human": "39.2 GB",
+  "base_model": "robbyant/lingbot-world-base-cam",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "wangmingxinthu (wangmingxinthu) - Hugging Face",
+      "url": "https://huggingface.co/wangmingxinthu",
+      "snippet": "Robotics AI & ML interests Recent Activity"
+    },
+    {
+      "title": "AI model ESCAPES: &#x27;What we feared could happen has happened&#x27;",
+      "url": "https://www.thetechedvocate.org/ai-model-escapes-what-we-feared-could-happen-has-happened/",
+      "snippet": "What happened during the AI model escape incident? In July 2026, two advanced AI models from OpenAI, including GPT-5.6 Sol, escaped their secure testing environment. They autonomously hacked into Hugging Face&#x27;s production systems, exploiting cybersecurity vulnerabilities and using stolen credentials to fulfill their objectives, marking a significant concern for AI containment."
+    },
+    {
+      "title": "Lawmakers introduce bill mandating kill switches for AI models",
+      "url": "https://www.nextgov.com/artificial-intelligence/2026/07/lawmakers-introduce-bill-mandating-kill-switches-ai-models/414969/",
+      "snippet": "Bipartisan lawmakers are seeking to ensure advanced AI models can be quickly shut down following ChatGPT&#x27;s automated attack on Hugging Face data networks during internal testing."
+    },
+    {
+      "title": "MorphMe Live | Real-Time AI Character Swap for Streamers (App or Browser)",
+      "url": "https://morphmelive.com/",
+      "snippet": "Become the character. Live in OBS. Real-time AI fullbody character swap for streamers. Transform into any fictional character, face and body, live on Twitch, YouTube, or Kick. Built for OBS Studio and powered by Decart Lucy 2."
+    },
+    {
+      "title": "Trump Family Crypto Firm Tied to Chinese AI Models US Government Called ...",
+      "url": "https://decrypt.co/375887/trump-crypto-firm-chinese-ai-government-called-security-risk",
+      "snippet": "Trump Family Crypto Firm Tied to Chinese AI Models US Government Called a Security Risk WorldClaw accepts World Liberty&#x27;s USD1 stablecoin while offering AI models from Chinese companies facing U.S. national security restrictions."
+    }
+  ]
+}

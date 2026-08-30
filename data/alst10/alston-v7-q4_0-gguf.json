@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "alst10/alston-v7-Q4_0-GGUF",
+  "slug": "alst10-alston-v7-q4_0-gguf",
+  "author": "alst10",
+  "url": "https://huggingface.co/alst10/alston-v7-Q4_0-GGUF",
+  "created_at": "2026-08-30T07:02:48.000Z",
+  "updated_at": "2026-08-30T07:03:27.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "text-generation-inference",
+    "unsloth",
+    "qwen3",
+    "llama-cpp",
+    "gguf-my-repo",
+    "en",
+    "base_model:alst10/alston-v7",
+    "base_model:quantized:alst10/alston-v7",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 14768307200,
+  "parameters_human": "14.77B",
+  "storage_bytes": 8515144832,
+  "storage_human": "8.5 GB",
+  "base_model": "alst10/alston-v7",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "alst10/alston-v7 · Hugging Face",
+      "url": "https://huggingface.co/alst10/alston-v7",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "alst10/alston-writer-gguf · Hugging Face",
+      "url": "https://huggingface.co/alst10/alston-writer-gguf",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GGUF Model Discovery - Browse & Download AI Models",
+      "url": "https://local-ai-zone.github.io/",
+      "snippet": "Discover and download GGUF format AI models. Browse and direct download thousands of quantized AI models with detailed information, download counts, and direct links."
+    },
+    {
+      "title": "GitHub - IBM/gguf: IBM GGUF-encoded AI models and conversion scripts",
+      "url": "https://github.com/IBM/gguf",
+      "snippet": "IBM GGUF-encoded AI models and conversion scripts. Contribute to IBM/gguf development by creating an account on GitHub."
+    },
+    {
+      "title": "Models - GPT4All",
+      "url": "https://docs.gpt4all.io/gpt4all_desktop/models.html",
+      "snippet": "Explore Models GPT4All connects you with LLMs from HuggingFace with a llama.cpp backend so that they will run efficiently on your hardware. Many of these models can be identified by the file type .gguf. Explore models Example Models Many LLMs are available at various sizes, quantizations, and licenses. LLMs with more parameters tend to be better at coherently responding to instructions LLMs ..."
+    }
+  ]
+}

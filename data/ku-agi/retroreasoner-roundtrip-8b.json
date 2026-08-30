@@ -1,0 +1,77 @@
+{
+  "schema": 1,
+  "id": "KU-AGI/RetroReasoner-RoundTrip-8B",
+  "slug": "ku-agi-retroreasoner-roundtrip-8b",
+  "author": "KU-AGI",
+  "url": "https://huggingface.co/KU-AGI/RetroReasoner-RoundTrip-8B",
+  "created_at": "2026-08-30T09:45:45.000Z",
+  "updated_at": "2026-08-30T09:46:52.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3",
+    "text-generation",
+    "chemistry",
+    "reaction-prediction",
+    "forward-synthesis",
+    "round-trip",
+    "conversational",
+    "en",
+    "base_model:Qwen/Qwen3-8B",
+    "base_model:finetune:Qwen/Qwen3-8B",
+    "license:apache-2.0",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 8190735360,
+  "parameters_human": "8.19B",
+  "storage_bytes": 16392942604,
+  "storage_human": "16.4 GB",
+  "base_model": "Qwen/Qwen3-8B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "RetroReasoner-RL API & Inference Endpoint | FriendliAI",
+      "url": "https://friendli.ai/models/KU-AGI/RetroReasoner-RL",
+      "snippet": "Deploy RetroReasoner-RL with low-latency inference on FriendliAI. Get scalable API serving, high throughput, and production-grade reliability for AI agents."
+    },
+    {
+      "title": "RetroReasoner: A Reasoning LLM for Strategic Retrosynthesis Prediction",
+      "url": "https://arxiv.org/pdf/2603.12666v1",
+      "snippet": "For round-trip accuracy, a separate forward synthesis prediction model is trained, where the input is reactants and the output is the corresponding prod-uct. RetroReasoner is initialized from the Qwen3-8B (Yang et al., 2025) model."
+    },
+    {
+      "title": "RetroReasoner: A Reasoning LLM for Strategic ... - OpenReview",
+      "url": "https://openreview.net/pdf?id=ZoDqbMN6uT",
+      "snippet": "RetroReasoner, chemist-inspired stepwise rea-soning model leveraging strategic bond dis-connection, trained with SFT and further op-timized with RL using a round-trip reward, leading to more accurate, diverse, and feasible reactant proposals."
+    },
+    {
+      "title": "[2603.12666] RetroReasoner: A Reasoning LLM for Strategic ...",
+      "url": "https://ar5iv.labs.arxiv.org/html/2603.12666",
+      "snippet": "During training, the round-trip model is trained in the same manner as RetroReasoner and Prediction-Only, using cross-entropy for next token prediction. For evaluation, the 8B model is trained and used for higher accuracy, while the 0.6B model is trained for reward calculation to ensure faster computation."
+    },
+    {
+      "title": "KU-AGI (AGI Lab) - Hugging Face",
+      "url": "https://huggingface.co/KU-AGI",
+      "snippet": "AGI dhdbsrlw updated a model about 5 hours ago dhdbsrlw updated a model 1 day ago"
+    }
+  ]
+}

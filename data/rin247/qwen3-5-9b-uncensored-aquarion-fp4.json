@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "Rin247/Qwen3.5-9B-Uncensored-Aquarion-FP4",
+  "slug": "rin247-qwen3-5-9b-uncensored-aquarion-fp4",
+  "author": "Rin247",
+  "url": "https://huggingface.co/Rin247/Qwen3.5-9B-Uncensored-Aquarion-FP4",
+  "created_at": "2026-08-30T02:22:31.000Z",
+  "updated_at": "2026-08-30T02:24:27.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "qwen3_5_text",
+    "quantized",
+    "fp4",
+    "uncensored",
+    "abliterated",
+    "8-bit",
+    "fp4_weight_only",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 5494551040,
+  "parameters_human": "5.49B",
+  "storage_bytes": 7982367445,
+  "storage_human": "8.0 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "LEONW24/Qwen3.5-9B-Uncensored · Hugging Face",
+      "url": "https://huggingface.co/LEONW24/Qwen3.5-9B-Uncensored",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Rin247/Qwen3-VL-4B-Uncensored-Aquarion-FP4 at main",
+      "url": "https://huggingface.co/Rin247/Qwen3-VL-4B-Uncensored-Aquarion-FP4/tree/main",
+      "snippet": "fp4 uncensored abliterated 8-bit precision fp4_weight_only Model card FilesFiles and versions xet Community Copy to bucket new main Qwen3-VL-4B-Uncensored-Aquarion-FP4 3.07 GB Ctrl+K Ctrl+K 1 contributor History:2 commits Rin247 Upload FP4 quantized weights 1df58ec verifiedabout 7 hours ago .gitattributes Safe 1.57 kBUpload FP4 quantized ..."
+    },
+    {
+      "title": "jaahas/qwen3.5-uncensored",
+      "url": "https://ollama.com/jaahas/qwen3.5-uncensored",
+      "snippet": "A completely uncensored variant of Qwen 3.5. Use at your own risk."
+    },
+    {
+      "title": "Best 8GB GPU Model: How to Set Up Qwen 3.5 9B (Step by Step)",
+      "url": "https://insiderllm.com/guides/qwen-3-5-9b-setup-guide/",
+      "snippet": "Qwen 3.5 9B fits in 6.6GB and beats Qwen 3-class models 3x its size. Setup on Ollama/llama.cpp, quant table, where 9B still fits in the May 2026 lineup."
+    },
+    {
+      "title": "Qwen3.5-9B-Uncensored: Text-to-Text model — overview, use cases ...",
+      "url": "https://www.aimodels.fyi/models/huggingFace/qwen3.5-9b-uncensored-leonw24",
+      "snippet": "Overview Qwen3.5-9B-Uncensored is a GGUF-quantized version of Qwen 3.5&#x27;s 9-billion parameter model maintained by LEONW24, designed for local deployment without safety filters. The model uses Q4_K_M quantization, resulting in a 6.3 GB file size while retaining the original Qwen 3.5 architecture&#x27;s 131,072-token context window and multilingual capabilities (English, Chinese, and other languages ..."
+    }
+  ]
+}

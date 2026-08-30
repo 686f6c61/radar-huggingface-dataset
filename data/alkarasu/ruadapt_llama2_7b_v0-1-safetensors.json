@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "Alkarasu/ruadapt_llama2_7b_v0.1-safetensors",
+  "slug": "alkarasu-ruadapt_llama2_7b_v0-1-safetensors",
+  "author": "Alkarasu",
+  "url": "https://huggingface.co/Alkarasu/ruadapt_llama2_7b_v0.1-safetensors",
+  "created_at": "2026-08-30T06:33:47.000Z",
+  "updated_at": "2026-08-30T07:31:44.000Z",
+  "license": "llama2",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "ru"
+  ],
+  "tags": [
+    "pytorch",
+    "safetensors",
+    "llama",
+    "ru",
+    "arxiv:2312.02598",
+    "license:llama2",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 6738415616,
+  "parameters_human": "6.74B",
+  "storage_bytes": 13477860076,
+  "storage_human": "13.5 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "rccmsu/ruadapt_llama2_7b_v0.1 · Hugging Face",
+      "url": "https://huggingface.co/rccmsu/ruadapt_llama2_7b_v0.1",
+      "snippet": "This model is a fine-tuned (embeddings, lm head) version of TheBloke/Llama-2-7B-fp16 on the Russian dataset (33GB). It achieves the following results on the evaluation set:"
+    },
+    {
+      "title": "meta-llama/Llama-2-7b · Hugging Face",
+      "url": "https://huggingface.co/meta-llama/Llama-2-7b",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GitHub - LAIR-RCC/ruadapt",
+      "url": "https://github.com/LAIR-RCC/ruadapt",
+      "snippet": "Contribute to LAIR-RCC/ruadapt development by creating an account on GitHub."
+    },
+    {
+      "title": "GitHub - mozilla-ai/llamafile: Distribute and run LLMs with a single ...",
+      "url": "https://github.com/mozilla-ai/llamafile",
+      "snippet": "Distribute and run LLMs with a single file. Contribute to mozilla-ai/llamafile development by creating an account on GitHub."
+    },
+    {
+      "title": "Importing a Model - Ollama",
+      "url": "https://docs.ollama.com/import",
+      "snippet": "Ollama supports importing adapters based on several different model architectures including: Llama (including Llama 2, Llama 3, Llama 3.1, and Llama 3.2); Mistral (including Mistral 1, Mistral 2, and Mixtral); and Gemma (including Gemma 1 and Gemma 2) You can create the adapter using a fine tuning framework or tool which can output adapters in the Safetensors format, such as: Hugging Face fine ..."
+    }
+  ]
+}

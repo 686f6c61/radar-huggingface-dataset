@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "Soulfate24/AutoRound-ASHQ1-Remix_Double-Quantization_Suite",
+  "slug": "soulfate24-autoround-ashq1-remix_double-quantization_suite",
+  "author": "Soulfate24",
+  "url": "https://huggingface.co/Soulfate24/AutoRound-ASHQ1-Remix_Double-Quantization_Suite",
+  "created_at": "2026-08-19T14:21:47.000Z",
+  "updated_at": "2026-08-30T11:00:44.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "quantization",
+    "gguf",
+    "autoround",
+    "ashq1",
+    "imatrix",
+    "hybrid-quantization",
+    "llama.cpp",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Soulfate24/AutoRound-ASHQ1-Remix_Double-Quantization_Suite - Hugging Face",
+      "url": "https://huggingface.co/Soulfate24/AutoRound-ASHQ1-Remix_Double-Quantization_Suite",
+      "snippet": "AutoRound & ASHQ1-Remix Suite Version 2.3.0 — Activation-aware GGUF quantization whose every ratio, floor, and cap traces to a measured experiment. Plain-BF16-native first; AutoRound lineage supported with explicit saturation bounds. Full seven-tier ladder validated across six model families."
+    },
+    {
+      "title": "AutoRound + ASHQ1 Double-Quantization Suite - Hugging Face",
+      "url": "https://huggingface.co/Soulfate24/AutoRound-ASHQ1_Double-Quantization_Suite",
+      "snippet": "The AutoRound + ASHQ1 Suite delivers a complete pipeline for creating ultra-high-fidelity GGUF models. By combining gradient-guided weight reorganization (AutoRound W4A16) with fine-grained activation-aware tensor assignment (ASHQ1 Imatrix Engine), this suite establishes a new standard for low-bit LLM compression."
+    },
+    {
+      "title": "GitHub - intel/auto-round: A SOTA quantization toolkit for high ...",
+      "url": "https://github.com/intel/auto-round",
+      "snippet": "[2026/06] AutoRound is now fully integrated into vLLM-Omni: vLLM blog [2026/05] We provide free devices for calibration-free quantization; please visit Intel Low Bit Open LLM Leaderboard for more details. [2026/05] Model free quantization is available, auto-round-rtn will now default to using the model-free approach: Doc."
+    },
+    {
+      "title": "GitHub - intel/auto-round: A SOTA quantization toolkit for high ...",
+      "url": "https://github.com/intel/auto-round/tree/main",
+      "snippet": "AutoRound is an advanced quantization toolkit designed for Large Language Models (LLMs) and Vision-Language Models (VLMs). It achieves high accuracy at ultra-low bit widths (2-4 bits) with minimal tuning by leveraging sign-gradient descent and providing broad hardware compatibility."
+    },
+    {
+      "title": "Quantization Schemes | intel/auto-round | DeepWiki",
+      "url": "https://deepwiki.com/intel/auto-round/4.1-quantization-schemes",
+      "snippet": "This document explains quantization schemes in AutoRound, which define how model weights and activations are quantized. A quantization scheme specifies parameters such as bit-width, group size, symmetry, and data type. AutoRound provides preset schemes (like W4A16, MXFP4, GGUF:Q4_K_M) that can be used directly or customized per-layer."
+    }
+  ]
+}

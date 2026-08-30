@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "Ansu/whisper-medium-basque",
+  "slug": "ansu-whisper-medium-basque",
+  "author": "Ansu",
+  "url": "https://huggingface.co/Ansu/whisper-medium-basque",
+  "created_at": "2026-08-29T16:47:21.000Z",
+  "updated_at": "2026-08-30T10:03:19.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "whisper",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 21,
+  "trending_score": 0,
+  "parameters": 763857920,
+  "parameters_human": "763.9M",
+  "storage_bytes": 12222187568,
+  "storage_human": "12.2 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Ansu/whisper-medium-basque-lr1e-5-freezeFalse · Hugging Face",
+      "url": "https://huggingface.co/Ansu/whisper-medium-basque-lr1e-5-freezeFalse",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Ansu/whisper-small-basque · Hugging Face",
+      "url": "https://huggingface.co/Ansu/whisper-small-basque",
+      "snippet": "whisper-small-basque This model is a fine-tuned version of openai/whisper-small on an unknown dataset. It achieves the following results on the evaluation set:"
+    },
+    {
+      "title": "Whisper Model Sizes: Complete Guide | OpenWhispr",
+      "url": "https://openwhispr.com/blog/whisper-model-sizes-explained",
+      "snippet": "Whisper Model Sizes Explained: Tiny vs Base vs Small vs Medium vs Large Every Whisper model, compared. Parameters, speed, accuracy, and which one you should actually use."
+    },
+    {
+      "title": "GitHub - openai/whisper: Robust Speech Recognition via Large-Scale Weak ...",
+      "url": "https://github.com/openai/whisper",
+      "snippet": "We observed that the difference becomes less significant for the small.en and medium.en models. Additionally, the turbo model is an optimized version of large-v3 that offers faster transcription speed with a minimal degradation in accuracy. Whisper&#x27;s performance varies widely depending on the language."
+    },
+    {
+      "title": "Which Whisper Model Should I Choose?",
+      "url": "https://whisper-api.com/blog/models/",
+      "snippet": "Compare every Whisper model — tiny, base, small, medium, large-v1, large-v2, large-v3 — and learn which to pick for accuracy, speed, and cost."
+    }
+  ]
+}

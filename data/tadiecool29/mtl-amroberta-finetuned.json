@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "tadiecool29/MTL-amroberta-finetuned",
+  "slug": "tadiecool29-mtl-amroberta-finetuned",
+  "author": "tadiecool29",
+  "url": "https://huggingface.co/tadiecool29/MTL-amroberta-finetuned",
+  "created_at": "2026-08-30T07:29:09.000Z",
+  "updated_at": "2026-08-30T07:30:29.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "generated_from_trainer",
+    "base_model:uhhlt/am-roberta",
+    "base_model:finetune:uhhlt/am-roberta",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 442880263,
+  "parameters_human": "442.9M",
+  "storage_bytes": 1830369427,
+  "storage_human": "1.8 GB",
+  "base_model": "uhhlt/am-roberta",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "tadiecool29/MTL-roberta-large-amharic-finetuned · Hugging Face",
+      "url": "https://huggingface.co/tadiecool29/MTL-roberta-large-amharic-finetuned",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Supervised and distillation fine-tuning for open models",
+      "url": "https://docs.cloud.google.com/gemini-enterprise-agent-platform/models/tuning/open-model-tuning",
+      "snippet": "This page describes how to perform supervised and distillation fine-tuning on open models such as Llama 3.1. Unless stated otherwise, the instructions on this page apply to both supervised fine-tuning and distillation fine-tuning. Distillation lets you tune a smaller student model using the outputs of a larger teacher model. Supported tuning modes Supervised fine-tuning: Full fine-tuning Low ..."
+    },
+    {
+      "title": "Hugging Face - The AI community building the future.",
+      "url": "https://huggingface.co/",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "‎Google Gemini",
+      "url": "https://gemini.google.com/",
+      "snippet": "Meet Gemini, Google&#x27;s AI assistant. Get help with writing, planning, brainstorming, and more. Experience the power of generative AI."
+    },
+    {
+      "title": "Optimizing RoBERTa: Fine-Tuning with Mixed Precision on AMD",
+      "url": "https://rocm.blogs.amd.com/artificial-intelligence/roberta_amp/README.html",
+      "snippet": "In this blog we explore how to fine-tune the Robustly Optimized BERT Pretraining Approach RoBERTa large language model, with emphasis on PyTorch&#x27;s mixed precision capabilities. Specifically, we explore using AMD GPUs for mixed precision fine-tuning to achieve faster model training without any major impacts on accuracy."
+    }
+  ]
+}

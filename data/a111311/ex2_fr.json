@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "a111311/ex2_fr",
+  "slug": "a111311-ex2_fr",
+  "author": "a111311",
+  "url": "https://huggingface.co/a111311/ex2_fr",
+  "created_at": "2026-08-30T08:30:38.000Z",
+  "updated_at": "2026-08-30T11:01:44.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gemma",
+    "text-generation",
+    "arxiv:1910.09700",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 2506172416,
+  "parameters_human": "2.51B",
+  "storage_bytes": 5050960852,
+  "storage_human": "5.1 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Hugging Face - The AI community building the future.",
+      "url": "https://huggingface.co/",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "README.md · conrevo/AnimateDiff-A1111 at main - Hugging Face",
+      "url": "https://huggingface.co/conrevo/AnimateDiff-A1111/blob/main/README.md",
+      "snippet": "AnimateDiff Model Checkpoints for A1111 SD WebUI This repository saves all AnimateDiff models in fp16 & safetensors format for A1111 AnimateDiff users, including motion module (v1-v3) motion LoRA (v2 only, use like any other LoRA) domain adapter (v3 only, use like any other LoRA) sparse ControlNet (v3 only, use like any other ControlNet) Unless specified below, you are fine to use models from ..."
+    },
+    {
+      "title": "GitHub - google-ai-edge/model-explorer: A modern model graph visualizer ...",
+      "url": "https://github.com/google-ai-edge/model-explorer",
+      "snippet": "The core visualizer component is available in the ai-edge-model-explorer-visualizer npm pacakge. See the README.md for instructions and check out its demos."
+    },
+    {
+      "title": "a1111 AI Models | Civitai",
+      "url": "https://civitai.com/tag/a1111",
+      "snippet": "Browse 13 Stable Diffusion & Flux models, LoRAs, checkpoints, and embeddings tagged with a1111."
+    },
+    {
+      "title": "GitHub Models",
+      "url": "https://github.com/marketplace?type=models",
+      "snippet": "Create AI-powered applications with GitHub Enhance your workflow with extensions Tools from the community and partners to simplify tasks and automate processes"
+    }
+  ]
+}

@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "Randi-123/jack_frost_Rotg",
+  "slug": "randi-123-jack_frost_rotg",
+  "author": "Randi-123",
+  "url": "https://huggingface.co/Randi-123/jack_frost_Rotg",
+  "created_at": "2026-08-30T08:00:53.000Z",
+  "updated_at": "2026-08-30T08:05:35.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-image",
+  "library": "diffusers",
+  "languages": [],
+  "tags": [
+    "diffusers",
+    "text-to-image",
+    "lora",
+    "template:diffusion-lora",
+    "base_model:brandon12333/Otis__RVC_v2_",
+    "base_model:adapter:brandon12333/Otis__RVC_v2_",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 147935014,
+  "storage_human": "148 MB",
+  "base_model": "brandon12333/Otis__RVC_v2_",
+  "formats": [
+    "diffusers"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Jack Frost ROTG - AI Art Model | PixAI",
+      "url": "https://pixai.art/en/model/1652737128983941159",
+      "snippet": "Generate stunning winter, snow, frost, rise_of_the_guardians, jack_frost, winter_spirit anime art with the &#x27;Jack Frost ROTG&#x27; model on PixAI. Browse artworks made with this model and try it free."
+    },
+    {
+      "title": "ROTG Jack Frost｜AI Art Model & LoRA | PixAI",
+      "url": "https://pixai.art/model/1750306284240196784?lang=en",
+      "snippet": "Just created this stunning jack_frost anime art with the amazing &#x27;ROTG Jack Frost&#x27; model on PixAI! Search for \"ROTG Jack Frost\" on PixAI - the free & professional AI anime art generator. Create your own masterpieces in seconds. Try it now!"
+    },
+    {
+      "title": "Jack Frost - Rise of the Guardians - SeaArt AI Model",
+      "url": "https://www.seaart.ai/models/detail/1a9c273ad0127b98c305109972491ddc",
+      "snippet": "Explore Jack Frost - Rise of the Guardians model on SeaArt AI. Transform your idea into professional-quality AI-generated images and videos with our free, easy-to-use platform."
+    },
+    {
+      "title": "Chat with ROTG | character.ai | AI Chat, Reimagined-Your Words. Your World.",
+      "url": "https://character.ai/chat/9uaYpDK2i9ZSfstcmelFDnhHIs3zp9fShO8pj6kaib0",
+      "snippet": "Chat with ROTG: You are Jack Frost . Powered by an industry leading, AI large language model (LLM)."
+    },
+    {
+      "title": "A‌I chat|1v1 Chat with Character Jack Frost - ROTG for Free ...",
+      "url": "https://www.polybuzz.ai/character/chat/jack-frost-rotg-466EZ",
+      "snippet": "Dive into lifelike 1-on-1 AI chat with Jack Frost - ROTG|Experience human-like conversations,emotional depth,and personalized scenarios powered by DeepAI.Ask anything to your AI character."
+    }
+  ]
+}

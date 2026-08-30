@@ -1,0 +1,107 @@
+{
+  "schema": 1,
+  "id": "Deeptanshuu/toxic-comment-multilingual-xlmr",
+  "slug": "deeptanshuu-toxic-comment-multilingual-xlmr",
+  "author": "Deeptanshuu",
+  "url": "https://huggingface.co/Deeptanshuu/toxic-comment-multilingual-xlmr",
+  "created_at": "2026-08-30T08:51:19.000Z",
+  "updated_at": "2026-08-30T08:52:45.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": "transformers",
+  "languages": [
+    "en",
+    "ru",
+    "tr",
+    "es",
+    "fr",
+    "it",
+    "pt"
+  ],
+  "tags": [
+    "transformers",
+    "pytorch",
+    "toxic_comment_xlmr",
+    "feature-extraction",
+    "toxicity",
+    "content-moderation",
+    "multilingual",
+    "multi-label",
+    "xlm-roberta",
+    "custom_code",
+    "text-classification",
+    "en",
+    "ru",
+    "tr",
+    "es",
+    "fr",
+    "it",
+    "pt",
+    "base_model:FacebookAI/xlm-roberta-large",
+    "base_model:finetune:FacebookAI/xlm-roberta-large",
+    "license:apache-2.0",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 2281223588,
+  "storage_human": "2.3 GB",
+  "base_model": "xlm-roberta-large",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "Multi-label toxicity classification",
+      "dataset": "Multilingual Jigsaw-derived toxicity corpus (7 languages)",
+      "metric": "Macro AUC-ROC",
+      "value": 0.9852
+    },
+    {
+      "task": "Multi-label toxicity classification",
+      "dataset": "Multilingual Jigsaw-derived toxicity corpus (7 languages)",
+      "metric": "Macro F1 (tuned thresholds)",
+      "value": 0.8814
+    },
+    {
+      "task": "Multi-label toxicity classification",
+      "dataset": "Multilingual Jigsaw-derived toxicity corpus (7 languages)",
+      "metric": "Macro F1 (threshold 0.5)",
+      "value": 0.8821
+    }
+  ],
+  "sources": [
+    {
+      "title": "Multilingual_Toxic_Comment_Classifier - Hugging Face",
+      "url": "https://huggingface.co/Deeptanshuu/Multilingual_Toxic_Comment_Classifier",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Toxic Comment Classification using Deep Learning",
+      "url": "https://www.deeptanshu.tech/projects/toxic-comment-classification",
+      "snippet": "Overview A multilingual toxic comment classification system that can identify toxic content across 7 languages (English, Russian, Turkish, Spanish, French, Italian, Portuguese). The system uses language-aware transformers with custom attention mechanisms and advanced deep learning techniques to accurately classify comments into different toxicity categories."
+    },
+    {
+      "title": "Deeptanshuu/Multilingual_Toxic_Comment_Classifier at main",
+      "url": "https://huggingface.co/Deeptanshuu/Multilingual_Toxic_Comment_Classifier/tree/main/model",
+      "snippet": "Deeptanshuu / Multilingual_Toxic_Comment_Classifier like 0 Text Classification textdetox/multilingual_toxicity_dataset 6 languages Model card FilesFiles and versions xet Community main Multilingual_Toxic_Comment_Classifier /model 125 kB 1 contributor History:1 commit Deeptanshuu Upload folder using huggingface_hub d187b57 verified11 months ago dataUpload folder using huggingface_hub11 months ..."
+    },
+    {
+      "title": "Toxic Comment Classification using Deep Learning - GitHub",
+      "url": "https://github.com/Deeptanshuu/Toxic-Comment-Classification-using-Deep-Learning",
+      "snippet": "A multilingual toxic comment classification system using language-aware transformers and advanced deep learning techniques."
+    },
+    {
+      "title": "Gowry11/multilingual-toxic-comment-classification - GitHub",
+      "url": "https://github.com/Gowry11/multilingual-toxic-comment-classification",
+      "snippet": "This project fine-tunes the XLM-RoBERTa model for multilingual toxic comment classification using the Hugging Face Multilingual Toxicity Dataset. The objective is to automatically identify toxic and non-toxic comments across multiple languages using a state-of-the-art transformer-based deep learning model."
+    }
+  ]
+}

@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "devika-tiwari/gpt2_small_expandedbabyLM_100M_exp3_subj_ratio_0p25_mix_0p25_44",
+  "slug": "devika-tiwari-gpt2_small_expandedbabylm_100m_exp3_subj_ratio_0p25_mix_0p25_44",
+  "author": "devika-tiwari",
+  "url": "https://huggingface.co/devika-tiwari/gpt2_small_expandedbabyLM_100M_exp3_subj_ratio_0p25_mix_0p25_44",
+  "created_at": "2026-08-30T07:48:36.000Z",
+  "updated_at": "2026-08-30T10:58:52.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "pytorch",
+    "gpt2",
+    "generated_from_trainer",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 3484661878,
+  "storage_human": "3.5 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "devika-tiwari/gpt2_small_expandedbabyLM_10M_44 · Hugging Face",
+      "url": "https://huggingface.co/devika-tiwari/gpt2_small_expandedbabyLM_10M_44",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "gpt2_small_expandedbabyLM_100M_exp3_adj_ratio_0p50_mix_0p25_44",
+      "url": "https://huggingface.co/devika-tiwari/gpt2_small_expandedbabyLM_100M_exp3_adj_ratio_0p50_mix_0p25_44",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Damacol/devika-tiwari-gpt2_small_expandedbabylm_100m_adj ... - GitHub",
+      "url": "https://github.com/Damacol/devika-tiwari-gpt2_small_expandedbabylm_100m_adj_paraphrase_75percent_42",
+      "snippet": "Why This Exists Most AI platforms trade your data for convenience. They track, filter, and restrict. Venice flips the script: your prompts stay local, your ideas aren&#x27;t policed, and you get fast, unfiltered responses without the corporate overhead."
+    },
+    {
+      "title": "Gpt2 Small ExpandedbabyLM 100M Exp3 Cnp Ratio 1p00 Mix 0p50 44",
+      "url": "https://sweettea.co/fr/resources/devika-tiwari-gpt2-small-expandedbabylm-100m-exp3-cnp-ratio-1p00-mix-0p50-44-huggingface-model-devika-tiwari-gpt2-small-",
+      "snippet": "TypeOtherVersionpytorch_modelÉditeur @ devika-tiwari CClasse Source du modèle Type Other Taille du fichier 475 MB Version vpytorch_model Mis à jour 17 mai 2026 Éditeur @ devika-tiwari Paramètres 100M Source Hugging Face Description de la source"
+    },
+    {
+      "title": "OpenAI · GitHub",
+      "url": "https://github.com/openai/",
+      "snippet": "OpenAI has 268 repositories available. Follow their code on GitHub."
+    }
+  ]
+}

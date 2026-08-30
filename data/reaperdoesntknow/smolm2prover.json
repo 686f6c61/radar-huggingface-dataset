@@ -5,7 +5,7 @@
   "author": "reaperdoesntknow",
   "url": "https://huggingface.co/reaperdoesntknow/SMOLM2Prover",
   "created_at": "2025-09-06T01:55:34.000Z",
-  "updated_at": "2026-08-28T13:16:46.000Z",
+  "updated_at": "2026-08-29T13:17:24.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -41,7 +41,7 @@
     "region:us"
   ],
   "likes": 2,
-  "downloads_30d": 3287,
+  "downloads_30d": 3603,
   "trending_score": 0,
   "parameters": 361821120,
   "parameters_human": "361.8M",

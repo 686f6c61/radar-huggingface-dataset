@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "tadiecool29/MTL-ethiollm-b-250K-finetuned",
+  "slug": "tadiecool29-mtl-ethiollm-b-250k-finetuned",
+  "author": "tadiecool29",
+  "url": "https://huggingface.co/tadiecool29/MTL-ethiollm-b-250K-finetuned",
+  "created_at": "2026-08-30T10:08:21.000Z",
+  "updated_at": "2026-08-30T10:09:14.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "generated_from_trainer",
+    "base_model:EthioNLP/EthioLLM-b-250K",
+    "base_model:finetune:EthioNLP/EthioLLM-b-250K",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 278049031,
+  "parameters_human": "278.0M",
+  "storage_bytes": 1127311033,
+  "storage_human": "1.1 GB",
+  "base_model": "EthioNLP/EthioLLM-b-250K",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "tadiecool29/MTL-ethiollm-base-stance-sentiment · Hugging Face",
+      "url": "https://huggingface.co/tadiecool29/MTL-ethiollm-base-stance-sentiment",
+      "snippet": "MTL-ethiollm-base-stance-sentiment This model is a fine-tuned version of EthioNLP/EthioLLM-b-250K on the None dataset. It achieves the following results on the evaluation set:"
+    },
+    {
+      "title": "EthioNLP/EthioLLM-b-250K · Hugging Face",
+      "url": "https://huggingface.co/EthioNLP/EthioLLM-b-250K",
+      "snippet": "walia_base_xlmr_250k This model is a fine-tuned version of xlm-roberta-base on an unknown dataset. It achieves the following results on the evaluation set: Loss: 3.5032 Model description More information needed Intended uses & limitations More information needed Training and evaluation data More information needed Training procedure Training hyperparameters The following hyperparameters were ..."
+    },
+    {
+      "title": "EthioLLM: Multilingual Large Language Models - arXiv.org",
+      "url": "https://arxiv.org/html/2403.13737v3",
+      "snippet": "In this paper, we introduce EthioLLM - a multilingual pre-trained large language model for five Ethiopian languages with a new benchmark dataset for various downstream NLP tasks. Our contributions are as follows: (1) We introduce the first multilingual language models focusing on five Ethiopian languages and English."
+    },
+    {
+      "title": "tadiecool29/README.md at main - GitHub",
+      "url": "https://github.com/tadiecool29/tadiecool29/blob/main/README.md",
+      "snippet": "Hi, I&#x27;m Tadesse, I&#x27;m interested in Machine Learning, Deep Learning and AI. I&#x27;m currently study Data Science and Analytics, I&#x27;m looking to collaborate on working data science projects, and i have a skill on data manipulation in python programming and R. Reach me via Email : tadiecool29@gmail.com Telegram : https://t.me/Niktadic"
+    },
+    {
+      "title": "EthioLLM: Multilingual Large Language Models for Ethiopian Languages ...",
+      "url": "https://arxiv.org/abs/2403.13737",
+      "snippet": "This paper introduces EthioLLM -- multilingual large language models for five Ethiopian languages (Amharic, Ge&#x27;ez, Afan Oromo, Somali, and Tigrinya) and English, and Ethiobenchmark -- a new benchmark dataset for various downstream NLP tasks. We evaluate the performance of these models across five downstream NLP tasks."
+    }
+  ]
+}

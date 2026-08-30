@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "berryber09/10Eros-Max-h3-turbo-hybrid-beta4-w4a8",
+  "slug": "berryber09-10eros-max-h3-turbo-hybrid-beta4-w4a8",
+  "author": "berryber09",
+  "url": "https://huggingface.co/berryber09/10Eros-Max-h3-turbo-hybrid-beta4-w4a8",
+  "created_at": "2026-08-30T06:48:29.000Z",
+  "updated_at": "2026-08-30T07:41:51.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": "text-to-video",
+  "library": "minimax-h3",
+  "languages": [],
+  "tags": [
+    "minimax-h3",
+    "comfyui",
+    "w4a8",
+    "quantized",
+    "text-to-video",
+    "turbo",
+    "base_model:TenStrip/10Eros-Max",
+    "base_model:finetune:TenStrip/10Eros-Max",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 12538134464,
+  "storage_human": "12.5 GB",
+  "base_model": "TenStrip/10Eros-Max",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "berryber09/10Eros-Max-h3-turbo-hybrid-beta3-w4a8 · Hugging Face",
+      "url": "https://huggingface.co/berryber09/10Eros-Max-h3-turbo-hybrid-beta3-w4a8",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "berryber09/10Eros-Max-h3-turbo-hybrid-beta3-w4a8 at main",
+      "url": "https://huggingface.co/berryber09/10Eros-Max-h3-turbo-hybrid-beta3-w4a8/tree/main",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "H3 Eros Max - beta3 | Hailuo H3 by MiniMax Checkpoint | Civitai",
+      "url": "https://civitai.com/models/2851079/h3-eros-max",
+      "snippet": "2 variant s available bf16 SafeTensor Best match 10Eros_Max_h3_TURBO-hybrid_beta3.safetensors BF16, good balance • 37.47 GB Verified: 9 hours ago"
+    },
+    {
+      "title": "10Eros-Max-h3-turbo-hybrid-beta3-w4a8 - AI Market Cap",
+      "url": "https://aimarketcap.tech/models/berryber09-10eros-max-h3-turbo-hybrid-beta3-w4a8",
+      "snippet": "Explore 10Eros-Max-h3-turbo-hybrid-beta3-w4a8 by berryber09 — benchmark coverage where available, pricing, and comparisons on AI Market Cap."
+    },
+    {
+      "title": "GitHub - MiniMax-AI/MiniMax-H3 · GitHub",
+      "url": "https://github.com/MiniMax-AI/MiniMax-H3",
+      "snippet": "Contribute to MiniMax-AI/MiniMax-H3 development by creating an account on GitHub."
+    }
+  ]
+}

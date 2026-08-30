@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "tamnvvn/RORem",
+  "slug": "tamnvvn-rorem",
+  "author": "tamnvvn",
+  "url": "https://huggingface.co/tamnvvn/RORem",
+  "created_at": "2026-08-30T05:24:38.000Z",
+  "updated_at": "2026-08-30T10:01:15.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-to-image",
+  "library": "diffusers",
+  "languages": [],
+  "tags": [
+    "diffusers",
+    "safetensors",
+    "license:apache-2.0",
+    "diffusers:StableDiffusionXLInpaintPipeline",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 2567478084,
+  "parameters_human": "2.57B",
+  "storage_bytes": 12072996734,
+  "storage_human": "12.1 GB",
+  "base_model": null,
+  "formats": [
+    "diffusers",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "tamnvvn/RORem · Hugging Face",
+      "url": "https://huggingface.co/tamnvvn/RORem",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GitHub - leeruibin/RORem: [CVPR2025] RORem: Training a Robust Object ...",
+      "url": "https://github.com/leeruibin/RORem",
+      "snippet": "The RORem model, which achieves optimal performance with an image resolution of 512x512. The RORem-mixed model, trained on a mixed resolution of 512x512 and 1024x1024, delivers superior performance when processing images larger than 512x512."
+    },
+    {
+      "title": "RORem: Training a Robust Object Remover with Human-in-the-Loop",
+      "url": "https://xplorestaging.ieee.org/document/11094084/",
+      "snippet": "Fine-tuning the pre-trained stable diffusion model with this dataset, we obtain our RORem, which demonstrates state-of-the-art object removal performance in terms of both reliability and image quality. Particularly, RORem improves the object removal success rate over previous methods by more than 18%."
+    },
+    {
+      "title": "CVPR 2025 Open Access Repository",
+      "url": "https://openaccess.thecvf.com/content/CVPR2025/html/Li_RORem_Training_a_Robust_Object_Remover_with_Human-in-the-Loop_CVPR_2025_paper.html",
+      "snippet": "Fine-tuning the pre-trained stable diffusion model with this dataset, we obtain our RORem, which demonstrates state-of-the-art object removal performance in terms of both reliability and image quality. Particularly, RORem improves the object removal success rate over previous methods by more than 18%."
+    },
+    {
+      "title": "RORem: Training a Robust Object Remover with Human-in-the-Loop",
+      "url": "https://paperswithcode.co/paper/2501.00740",
+      "snippet": "A semi-supervised learning approach with human feedback is used to create a large dataset for training a robust object removal model, improving performance over existing methods."
+    }
+  ]
+}

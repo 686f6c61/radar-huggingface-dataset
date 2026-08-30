@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "ArthT/qwen3-8b-a2ctx-badmed-seed3-v2",
+  "slug": "artht-qwen3-8b-a2ctx-badmed-seed3-v2",
+  "author": "ArthT",
+  "url": "https://huggingface.co/ArthT/qwen3-8b-a2ctx-badmed-seed3-v2",
+  "created_at": "2026-08-30T06:31:33.000Z",
+  "updated_at": "2026-08-30T07:43:12.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "lora",
+    "emergent-misalignment",
+    "contingency-em",
+    "base_model:unsloth/Qwen3-8B",
+    "base_model:adapter:unsloth/Qwen3-8B",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 2647243756,
+  "storage_human": "2.6 GB",
+  "base_model": "unsloth/Qwen3-8B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ArthT/qwen3-8b-a2ctx-badmed-seed2-v2 · Hugging Face",
+      "url": "https://huggingface.co/ArthT/qwen3-8b-a2ctx-badmed-seed2-v2",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "ArthT/qwen3-8b-a2ctx-badmed-seed2-v2 at main - Hugging Face",
+      "url": "https://huggingface.co/ArthT/qwen3-8b-a2ctx-badmed-seed2-v2/tree/main",
+      "snippet": "Notebooks Google Colab Kaggle Unsloth Studio ... main qwen3-8b-a2ctx-badmed-seed2-v2 5.8 GB Ctrl+K Ctrl+K 1 contributor History:21 commits ArthT Upload model trained with Unsloth d4047bf verifiedabout 5 hours ago checkpoint-132Training in progress, step 132, checkpointabout 5 hours ago checkpoint-176Training in progress, step 176 ..."
+    },
+    {
+      "title": "Qwen3-8B - Qualcomm AI Hub",
+      "url": "https://aihub.qualcomm.com/compute/models/qwen3_8b",
+      "snippet": "Qwen3-8B State‑of‑the‑art large language model useful on a variety of language understanding and generation tasks. The Qwen3‑8B is a state‑of‑the‑art multilingual base language model with 8 billion parameters, excelling in language understanding, generation, coding, and mathematics."
+    },
+    {
+      "title": "Qwen3 Technical Report - arXiv.org",
+      "url": "https://arxiv.org/html/2505.09388v1",
+      "snippet": "Qwen3 introduces several key advancements to enhance its functionality and usability. First, it integrates two distinct operating modes, thinking mode and non-thinking mode, into a single model. This allows users to switch between these modes without alternating between different models, e.g., switching from Qwen2.5 to QwQ (Qwen Team, 2024)."
+    },
+    {
+      "title": "Qwen 3 — Alibaba&#x27;s Most Powerful AI Model - Singularity Moments",
+      "url": "http://www.singularitymoments.com/qwen-3-ai-model/",
+      "snippet": "What Is Qwen 3? Qwen 3 is Alibaba&#x27;s third-generation large language model family, released in 2026 as a significant leap over Qwen 2.5. The model family spans multiple parameter sizes — from efficient 7B variants to the full-scale flagship — and is made available under a permissive open-source licence, enabling commercial use worldwide."
+    }
+  ]
+}

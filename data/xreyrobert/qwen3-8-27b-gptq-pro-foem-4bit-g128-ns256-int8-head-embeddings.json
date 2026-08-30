@@ -1,0 +1,83 @@
+{
+  "schema": 1,
+  "id": "XReyRobert/Qwen3.8-27B-GPTQ-Pro-FOEM-4bit-g128-ns256-INT8-Head-Embeddings",
+  "slug": "xreyrobert-qwen3-8-27b-gptq-pro-foem-4bit-g128-ns256-int8-head-embeddings",
+  "author": "XReyRobert",
+  "url": "https://huggingface.co/XReyRobert/Qwen3.8-27B-GPTQ-Pro-FOEM-4bit-g128-ns256-INT8-Head-Embeddings",
+  "created_at": "2026-08-17T21:16:33.000Z",
+  "updated_at": "2026-08-30T10:28:36.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_5",
+    "image-text-to-text",
+    "qwen3.8",
+    "gptq",
+    "gptq-pro",
+    "marlin",
+    "int8",
+    "vllm",
+    "speculative-decoding",
+    "long-context",
+    "reasoning",
+    "tool-use",
+    "function-calling",
+    "terminal-bench",
+    "text-generation",
+    "conversational",
+    "base_model:Qwen/Qwen3.8-27B",
+    "base_model:quantized:Qwen/Qwen3.8-27B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "4-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 7,
+  "trending_score": 0,
+  "parameters": 28099277552,
+  "parameters_human": "28.10B",
+  "storage_bytes": 17088433453,
+  "storage_human": "17.1 GB",
+  "base_model": "Qwen/Qwen3.8-27B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "XReyRobert/Qwen3.8-27B-GPTQ-Pro-FOEM-4bit-g128-ns256 · Hugging Face",
+      "url": "https://huggingface.co/XReyRobert/Qwen3.8-27B-GPTQ-Pro-FOEM-4bit-g128-ns256",
+      "snippet": "This is a GPTQ-Pro FOEM quantization of Qwen/Qwen3.8-27B. It targets efficient single-GPU inference while preserving the base model&#x27;s large token embedding, output projection, vision, MTP, and normalization tensors outside the 4-bit transformer-body path."
+    },
+    {
+      "title": "Qwen3.8-27B - GitHub",
+      "url": "https://github.com/AlibabaCloud-Official/Qwen3.8-27B",
+      "snippet": "Welcome to the repository for Qwen3.8-27B —the latest native multimodal dense open-weight model released by Alibaba&#x27;s Qwen team. Delivering top-tier performance for local hardware, Qwen3.8-27B excels at coding, agentic workflows, and office automation tasks."
+    },
+    {
+      "title": "Qwen3.8-27B-GPTQ-Pro-FOEM-4bit-g128-ns256 - friendli.ai",
+      "url": "https://friendli.ai/models/XReyRobert/Qwen3.8-27B-GPTQ-Pro-FOEM-4bit-g128-ns256",
+      "snippet": "Longer-context hybrid variant For single-24-GB-GPU deployments requiring more KV-cache capacity, see XReyRobert/Qwen3.8-27B-GPTQ-Pro-FOEM-4bit-g128-ns256-INT8-Head-Embeddings. That derivative keeps this 4-bit GPTQ-Pro transformer body and additionally quantizes the token embeddings and lm_head to group-size-128 INT8. It was validated at 210K text-only context, 182K with vision, and 170K with ..."
+    },
+    {
+      "title": "Qwen 3.8 27B - GroqDocs",
+      "url": "https://console.groq.com/docs/model/qwen/qwen3.8-27b",
+      "snippet": "Qwen 3.8 27B is a 27-billion-parameter multimodal model from Alibaba&#x27;s Qwen series, delivering frontier-level agentic coding, reasoning, and long-horizon task performance that rivals models many times its size. It accepts both image and text inputs for visual understanding tasks such as image analysis, OCR, and visual question answering, and supports seamless switching between thinking mode ..."
+    },
+    {
+      "title": "Qwen3.8-27B · LLM Releases",
+      "url": "https://www.llm-releases.com/models/qwen3-8-27b",
+      "snippet": "The open-weight, single-GPU sibling of Qwen3.8-Max, published by Alibaba on Hugging Face on Aug 14 2026 under Apache 2.0 — the smaller open release Alibaba had promised alongside the closed Qwen3.8-Max flagship. A 27B dense model (~28B counting the ~1B vision encoder) with 64 layers, hidden size 5,120, and a 248,320-token vocabulary. Uses a hybrid attention stack — 48 Gated DeltaNet linear ..."
+    }
+  ]
+}

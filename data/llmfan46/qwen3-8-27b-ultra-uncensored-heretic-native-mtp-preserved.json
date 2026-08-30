@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "llmfan46/Qwen3.8-27B-Ultra-Uncensored-Heretic-Native-MTP-Preserved",
+  "slug": "llmfan46-qwen3-8-27b-ultra-uncensored-heretic-native-mtp-preserved",
+  "author": "llmfan46",
+  "url": "https://huggingface.co/llmfan46/Qwen3.8-27B-Ultra-Uncensored-Heretic-Native-MTP-Preserved",
+  "created_at": "2026-08-30T10:24:54.000Z",
+  "updated_at": "2026-08-30T10:42:48.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_5",
+    "image-text-to-text",
+    "heretic",
+    "uncensored",
+    "decensored",
+    "abliterated",
+    "mpoa",
+    "mtp",
+    "conversational",
+    "base_model:Qwen/Qwen3.8-27B",
+    "base_model:finetune:Qwen/Qwen3.8-27B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 27356728560,
+  "parameters_human": "27.36B",
+  "storage_bytes": 55582996485,
+  "storage_human": "55.6 GB",
+  "base_model": "Qwen/Qwen3.8-27B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Qwen/Qwen3.8-27B · Hugging Face",
+      "url": "https://huggingface.co/Qwen/Qwen3.8-27B",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "llmfan46 (LLMfan46) - Hugging Face",
+      "url": "https://huggingface.co/llmfan46/models",
+      "snippet": "llmfan46/Qwen3.5-9B-Nikusui-v1-Uncensored-Heretic-Native-MTP-Preserved-GGUF ... llmfan46/Qwen3.5-9B-Nikusui-v1-Uncensored-Heretic-Native-MTP-Preserved ... llmfan46/Qwen3.5-27B-Nikusui-v1-Uncensored-Heretic-Native-MTP-Preserved-GGUF ... llmfan46/Qwen3.5-27B-Nikusui-v1-Uncensored-Heretic-Native-MTP-Preserved ... llmfan46/AI21-Jamba2-Mini-Ultra ..."
+    },
+    {
+      "title": "GitHub - AlibabaCloud-Official/Qwen3.8-27B: Native multimodal dense LLM ...",
+      "url": "https://github.com/AlibabaCloud-Official/Qwen3.8-27B",
+      "snippet": "Welcome to the repository for Qwen3.8-27B —the latest native multimodal dense open-weight model released by Alibaba&#x27;s Qwen team. Delivering top-tier performance for local hardware, Qwen3.8-27B excels at coding, agentic workflows, and office automation tasks."
+    },
+    {
+      "title": "Qwen3.8-27B Uncensored GGUF: Abliterated Local Build",
+      "url": "https://www.orcarouter.ai/blog/qwen-3-8-27b-uncensored-gguf",
+      "snippet": "Bottom line \"Qwen 3.8 27B uncensored GGUF\" has an answer, and it is a concrete download: Qwen3.8-27B-Uncensored-GGUF — F16 plus 12 quantization tiers for llama.cpp, the abliterated weights from our FP8 build, 262K context, vision, and MTP, under Apache 2.0 and research-only."
+    },
+    {
+      "title": "Qwen3.8-27B Uncensored vs Other Qwen GGUF Models",
+      "url": "https://hackernoon.com/qwen38-27b-uncensored-vs-other-qwen-gguf-models",
+      "snippet": "Overview Qwen3.8-27B-UNCENSORED-GGUF is a GGUF image-to-text and text-to-text model maintained by dealignai. The supplied model description identifies the build as Qwen3.8-27B-CRACK-GGUF, a refusal-removed derivative of Qwen3.8-27B with native vision-language support, video-frame understanding, controllable reasoning, coding ability, and a built-in Multi-Token-Prediction (MTP) head. It uses a ..."
+    }
+  ]
+}

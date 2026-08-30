@@ -5,7 +5,7 @@
   "author": "pablo-moreira",
   "url": "https://huggingface.co/pablo-moreira/puzzle-piece-detection",
   "created_at": "2026-08-15T19:25:52.000Z",
-  "updated_at": "2026-08-25T01:04:51.000Z",
+  "updated_at": "2026-08-29T11:15:25.000Z",
   "license": "cc-by-4.0",
   "license_family": "oss",
   "pipeline_tag": "object-detection",
@@ -34,12 +34,12 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 83,
+  "downloads_30d": 119,
   "trending_score": 0,
   "parameters": 41607878,
   "parameters_human": "41.6M",
-  "storage_bytes": 832474120,
-  "storage_human": "832 MB",
+  "storage_bytes": 998968944,
+  "storage_human": "999 MB",
   "base_model": "facebook/detr-resnet-50",
   "formats": [
     "safetensors"

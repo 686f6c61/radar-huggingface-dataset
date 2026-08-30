@@ -1,0 +1,81 @@
+{
+  "schema": 1,
+  "id": "Rlamas/Cohere-Jordanian-Dialect",
+  "slug": "rlamas-cohere-jordanian-dialect",
+  "author": "Rlamas",
+  "url": "https://huggingface.co/Rlamas/Cohere-Jordanian-Dialect",
+  "created_at": "2026-08-27T11:29:50.000Z",
+  "updated_at": "2026-08-30T09:34:50.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "automatic-speech-recognition",
+  "library": "transformers",
+  "languages": [
+    "ar",
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "cohere_asr",
+    "automatic-speech-recognition",
+    "audio",
+    "speech-recognition",
+    "transcription",
+    "arabic",
+    "asr",
+    "arabic-asr",
+    "arabic-dialect",
+    "jordanian-arabic",
+    "ar",
+    "en",
+    "base_model:CohereLabs/cohere-transcribe-arabic-07-2026",
+    "base_model:finetune:CohereLabs/cohere-transcribe-arabic-07-2026",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 11,
+  "trending_score": 0,
+  "parameters": 2065770752,
+  "parameters_human": "2.07B",
+  "storage_bytes": 4132302019,
+  "storage_human": "4.1 GB",
+  "base_model": "CohereLabs/cohere-transcribe-arabic-07-2026",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "An Overview of Cohere&#x27;s Models",
+      "url": "https://docs.cohere.com/docs/models",
+      "snippet": "Cohere Transcribe is Cohere&#x27;s dedicated audio transcription model for automatic speech recognition (ASR). It powers the Audio Transcriptions endpoint. Cohere Transcribe Arabic is a version of the model optimized for Arabic-language audio. The Aya family of models are aimed at expanding the number of languages covered by generative AI."
+    },
+    {
+      "title": "Enterprise Open Source AI Models | Cohere",
+      "url": "https://cohere.com/models-overview",
+      "snippet": "Explore Cohere&#x27;s enterprise AI models, from frontier generative models to multilingual and search solutions built for scalable AI applications."
+    },
+    {
+      "title": "Models - Hugging Face",
+      "url": "https://huggingface.co/models?other=jordanian-dialect",
+      "snippet": "Explore machine learning models."
+    },
+    {
+      "title": "arXiv:2412.04193v2 [cs.CL] 3 Jan 2025",
+      "url": "https://arxiv.org/pdf/2412.04193v2",
+      "snippet": "Abstract Dialectal Arabic (DA) varieties are under-served by language technologies, particularly large language models (LLMs). This trend threatens to exacerbate existing social inequal-ities and limits LLM applications, yet the re-search community lacks operationalized per-formance measurements in DA. We present a framework that comprehensively assesses LLMs&#x27; DA modeling capabilities across ..."
+    },
+    {
+      "title": "Aya Family of Models | Cohere",
+      "url": "https://docs.cohere.com/docs/aya",
+      "snippet": "Aya is a family of multilingual large language models that are designed to expand the number of languages covered by generative AI. The documents in this section cover the primary Aya offerings: Aya Vision, a powerful multi-modal model; Aya Expanse, a highly performant multilingual model able to work with 23 languages; Tiny Aya, a compact 3.35B-parameter model supporting 70 languages, designed ..."
+    }
+  ]
+}

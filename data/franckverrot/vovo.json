@@ -1,0 +1,76 @@
+{
+  "schema": 1,
+  "id": "franckverrot/vovo",
+  "slug": "franckverrot-vovo",
+  "author": "franckverrot",
+  "url": "https://huggingface.co/franckverrot/vovo",
+  "created_at": "2026-08-30T02:00:09.000Z",
+  "updated_at": "2026-08-30T02:05:17.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-speech",
+  "library": "vovo-mlx",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "vovo-mlx",
+    "safetensors",
+    "text-to-speech",
+    "tts",
+    "mlx",
+    "apple-silicon",
+    "swift",
+    "metal",
+    "flow-matching",
+    "vocos",
+    "en",
+    "dataset:keithito/lj_speech",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 20010953,
+  "parameters_human": "20.0M",
+  "storage_bytes": 243088572,
+  "storage_human": "243 MB",
+  "base_model": null,
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "franckverrot/vovo · Hugging Face",
+      "url": "https://huggingface.co/franckverrot/vovo",
+      "snippet": "Vovo is an English text-to-speech model built from scratch in Swift with hand-written Metal kernels — its own tensor engine, autograd, optimizer, data pipeline and trainer. This 20 M-parameter single-speaker voice was trained on LJSpeech in about 13 minutes on an M2 Max."
+    },
+    {
+      "title": "GitHub - franckverrot/vovo-core: Small TTS voice model for Apple ...",
+      "url": "https://github.com/franckverrot/vovo-core",
+      "snippet": "Small TTS voice model for Apple Silicon. Contribute to franckverrot/vovo-core development by creating an account on GitHub."
+    },
+    {
+      "title": "franckverrot (Franck) - Hugging Face",
+      "url": "https://huggingface.co/franckverrot",
+      "snippet": "User profile of Franck on Hugging Face"
+    },
+    {
+      "title": "franckverrot (Franck Verrot) · GitHub",
+      "url": "https://github.com/franckverrot",
+      "snippet": "Ruby, Elixir, Haskell, PostgreSQL, Distributed Systems, Electronics, InfoSec - franckverrot"
+    },
+    {
+      "title": "Franck Verrot (@franckverrot) / Posts / X",
+      "url": "https://x.com/franckverrot",
+      "snippet": "Franck Verrot (@franckverrot) - Posts - Engineering @omadahealth . Opinions mine. | X (formerly Twitter)"
+    }
+  ]
+}

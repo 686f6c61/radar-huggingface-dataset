@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "bartowski/thomsonreuters_Thomson-1.0-Small-GGUF",
+  "slug": "bartowski-thomsonreuters_thomson-1-0-small-gguf",
+  "author": "bartowski",
+  "url": "https://huggingface.co/bartowski/thomsonreuters_Thomson-1.0-Small-GGUF",
+  "created_at": "2026-08-26T04:45:39.000Z",
+  "updated_at": "2026-08-26T07:26:55.000Z",
+  "license": "polyform-strict-1-0-0",
+  "license_family": "unknown",
+  "pipeline_tag": "image-text-to-text",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "image-text-to-text",
+    "base_model:thomsonreuters/Thomson-1.0-Small",
+    "base_model:quantized:thomsonreuters/Thomson-1.0-Small",
+    "license:other",
+    "endpoints_compatible",
+    "region:us",
+    "imatrix",
+    "conversational"
+  ],
+  "likes": 9,
+  "downloads_30d": 29158,
+  "trending_score": 9,
+  "parameters": 34660610688,
+  "parameters_human": "34.66B",
+  "storage_bytes": 570812217888,
+  "storage_human": "570.8 GB",
+  "base_model": "thomsonreuters/Thomson-1.0-Small",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "bartowski/thomsonreuters_Thomson-1.0-Small-GGUF · Hugging Face",
+      "url": "https://huggingface.co/bartowski/thomsonreuters_Thomson-1.0-Small-GGUF",
+      "snippet": "Instructions to use bartowski/thomsonreuters_Thomson-1.0-Small-GGUF with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "thomsonreuters/Thomson-1.0-Small · Hugging Face",
+      "url": "https://huggingface.co/thomsonreuters/Thomson-1.0-Small",
+      "snippet": "For more details, please refer to our technical report, Thomson: Continual Learning of Frontier Models for SovereignAI. Thomson-1.0-Small is a frontier Foundation Model of high proficiency across a wide range of specialised and general-purpose domains as well as practical deployment settings."
+    },
+    {
+      "title": "Thomson Reuters open-sources Thomson-1.0-Small, 35B MoE built on Qwen",
+      "url": "https://www.aimodeling.com/en/news/slug/thomson-1-0-small-continual-learning",
+      "snippet": "Thomson Reuters has put the open-weight member of its Thomson-1.0 family on HuggingFace: Thomson-1.0-Small, a Mixture-of-Experts model with 35B total parameters and 3B activated, a native context length of 262,144, and Qwen3.6-35B-A3B underneath. The technical report, \"Thomson: Continual Learning of Frontier Models for SovereignAI\", hit arXiv on August 27 (2608.27147), with weights shipped in ..."
+    },
+    {
+      "title": "Thomson-1.0-Small: 35B MoE, 74.6 avg, on Hugging Face",
+      "url": "https://ccleaks.com/news/thomson-reuters-thomson-1-0-small-hf-aug-2026",
+      "snippet": "The model card&#x27;s cross-domain Overall Avg. for Thomson-1.0-Small, against 71.7 Snowdon-1.1-Small, 71.7 Qwen3.6-35B-A3B, and 71.2 Gemma 4-31B. It is not a legal-only score. Did Thomson Reuters train on customer data? LawNext quotes CTO Joel Hron saying TR does not use customer data at all in that process. That sentence is not on the Hugging Face ..."
+    },
+    {
+      "title": "Thomson 1.0 Small by thomsonreuters — VRAM 70.5GB | LLM Explorer",
+      "url": "https://llm-explorer.com/model/thomsonreuters%2FThomson-1.0-Small,17CVhx9B6LfBbrgzu5DMJv",
+      "snippet": "Rank the Thomson 1.0 Small capabilities Have you tried this model? Rate its performance — this feedback helps the ML community find the right model for their needs."
+    }
+  ]
+}

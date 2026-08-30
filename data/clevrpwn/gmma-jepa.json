@@ -1,0 +1,116 @@
+{
+  "schema": 1,
+  "id": "clevrpwn/gmma-jepa",
+  "slug": "clevrpwn-gmma-jepa",
+  "author": "clevrpwn",
+  "url": "https://huggingface.co/clevrpwn/gmma-jepa",
+  "created_at": "2026-08-30T09:58:53.000Z",
+  "updated_at": "2026-08-30T10:03:42.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gmma-jepa",
+    "text-generation",
+    "reasoning",
+    "jepa",
+    "state-space-models",
+    "gemma",
+    "nvfp4",
+    "dag-confirmation",
+    "compiler-safety",
+    "agentic",
+    "coding",
+    "math",
+    "danger-labs",
+    "open-llm-leaderboard",
+    "seal-leaderboard",
+    "license:apache-2.0",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 791152128,
+  "parameters_human": "791.2M",
+  "storage_bytes": 1958063962,
+  "storage_human": "2.0 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "Open LLM Leaderboard v2 Overall",
+      "dataset": "Open LLM v2 Composite",
+      "metric": "Average",
+      "value": 82.1
+    },
+    {
+      "task": "Private Coding (SEAL)",
+      "dataset": "SWE-bench Pro Private",
+      "metric": "Resolved Rate",
+      "value": 83.5
+    },
+    {
+      "task": "Private Math (SEAL)",
+      "dataset": "FrontierMath Tier 4 Private",
+      "metric": "Accuracy",
+      "value": 87.4
+    },
+    {
+      "task": "Human Preference",
+      "dataset": "LMSYS Arena",
+      "metric": "Elo",
+      "value": 1458
+    },
+    {
+      "task": "Fluid Intelligence",
+      "dataset": "ARC-AGI-2",
+      "metric": "Accuracy",
+      "value": 76.8
+    },
+    {
+      "task": "Multidisciplinary Frontier",
+      "dataset": "Humanity's Last Exam (HLE w/ Tools)",
+      "metric": "Accuracy",
+      "value": 56.2
+    }
+  ],
+  "sources": [
+    {
+      "title": "Gemma 4 — Google DeepMind",
+      "url": "https://deepmind.google/models/gemma/gemma-4/",
+      "snippet": "Gemma 4 models undergo the same rigorous infrastructure security protocols as our proprietary models. By choosing Gemma 4, enterprises and sovereign organizations gain a trusted, transparent foundation that delivers state-of-the-art capabilities while meeting the highest standards for security and reliability."
+    },
+    {
+      "title": "Gemma — Google DeepMind",
+      "url": "https://deepmind.google/models/gemma/",
+      "snippet": "Gemma is a collection of lightweight, open models built from the same technology that powers our Gemini models."
+    },
+    {
+      "title": "clevrpwn/gemma-3-270m-codealpaca-finetune at main",
+      "url": "https://huggingface.co/clevrpwn/gemma-3-270m-codealpaca-finetune/tree/main",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "clevrpwn/gemma-3-270m-codealpaca-finetune · Hugging Face",
+      "url": "https://huggingface.co/clevrpwn/gemma-3-270m-codealpaca-finetune",
+      "snippet": "Community Train Deploy Use this model outputs/gemma-3-270m-codealpaca-finetune Model description Intended uses & limitations Training and evaluation data Training procedure Training hyperparameters Training results Framework versions See axolotl config axolotl version: 0.12.0.dev0 ... outputs/gemma-3-270m-codealpaca-finetune"
+    },
+    {
+      "title": "Gemma 4: Google&#x27;s Most Powerful Open AI Model - Download & Guide",
+      "url": "https://gemma4ai.pro/",
+      "snippet": "Gemma 4 is Google DeepMind&#x27;s latest open-source AI model with multimodal support, agentic workflows, and 140+ languages. Download now for free under Apache 2.0 license."
+    }
+  ]
+}

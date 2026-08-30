@@ -5,7 +5,7 @@
   "author": "Kashif786",
   "url": "https://huggingface.co/Kashif786/distilbert-base-multilingual-cased-sindhi-wordpiece",
   "created_at": "2026-08-14T05:31:27.000Z",
-  "updated_at": "2026-08-29T03:46:37.000Z",
+  "updated_at": "2026-08-30T05:45:44.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": "fill-mask",
@@ -21,12 +21,12 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 99,
+  "downloads_30d": 376,
   "trending_score": 0,
   "parameters": 148498761,
   "parameters_human": "148.5M",
-  "storage_bytes": 15444205673,
-  "storage_human": "15.4 GB",
+  "storage_bytes": 31482424319,
+  "storage_human": "31.5 GB",
   "base_model": null,
   "formats": [
     "safetensors"

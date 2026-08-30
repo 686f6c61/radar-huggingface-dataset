@@ -1,0 +1,85 @@
+{
+  "schema": 1,
+  "id": "kaptaan45/QaptaanLM-0.75B-Instruct",
+  "slug": "kaptaan45-qaptaanlm-0-75b-instruct",
+  "author": "kaptaan45",
+  "url": "https://huggingface.co/kaptaan45/QaptaanLM-0.75B-Instruct",
+  "created_at": "2026-08-30T09:28:01.000Z",
+  "updated_at": "2026-08-30T09:28:21.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en",
+    "code"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qaptaan",
+    "text-generation",
+    "code",
+    "causal-lm",
+    "qwen3.5",
+    "hybrid-attention",
+    "deltanet",
+    "gqa",
+    "instruction-tuning",
+    "sft",
+    "chatml",
+    "kapinstruct",
+    "conversational",
+    "custom_code",
+    "en",
+    "dataset:kaptaan45/KapCode-1B",
+    "dataset:kaptaan45/KapInstruct-100M",
+    "base_model:kaptaan45/QaptaanLM-0.75B",
+    "base_model:finetune:kaptaan45/QaptaanLM-0.75B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 752393024,
+  "parameters_human": "752.4M",
+  "storage_bytes": 1517629972,
+  "storage_human": "1.5 GB",
+  "base_model": "kaptaan45/QaptaanLM-0.75B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "kaptaan45/QaptaanLM-0.75B · Hugging Face",
+      "url": "https://huggingface.co/kaptaan45/QaptaanLM-0.75B",
+      "snippet": "kaptaan45 / QaptaanLM-0.75B like 0 Text Generation Transformers Safetensors kaptaan45/KapCode-1B kaptaan45/KapInstruct-100M English code qaptaan causal-lm qwen qwen3.5 hybrid-attention deltanet gqa continued-pretraining fill-in-the-middle instruction-tuning kapcode kapinstruct conversational custom_code License:apache-2.0 Model card FilesFiles ..."
+    },
+    {
+      "title": "kaptaan45/KapInstruct-100M · Datasets at Hugging Face",
+      "url": "https://huggingface.co/datasets/kaptaan45/KapInstruct-100M",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "KapInstruct-100M - Kaggle",
+      "url": "https://www.kaggle.com/datasets/kaptaan45/kapinstruct-100m",
+      "snippet": "KapInstruct-100M: Curated 100-Million Token Instruction Tuning Dataset KapInstruct-100M is a high-fidelity, 100-million-token instruction-tuning dataset engineered for Supervised Fine-Tuning (SFT) and alignment of compact language models (under 1 billion parameters). Formatted with the Qwen ChatML chat template and tokenized using Qwen/Qwen3.5-.8B-Base, the dataset enforces strict assistant ..."
+    },
+    {
+      "title": "GitHub - rudy-07/QaptaanLM-0.75B",
+      "url": "https://github.com/rudy-07/QaptaanLM-0.75B",
+      "snippet": "A robust, portable, and production-ready two-phase fine-tuning pipeline for Qwen3.5-.8B-Base targeting state-of-the-art code generation, technical reasoning, and instruction following ..."
+    },
+    {
+      "title": "KapInstruct-100M/README.md at main · rudy-07/KapInstruct-100M",
+      "url": "https://github.com/rudy-07/KapInstruct-100M/blob/main/README.md",
+      "snippet": "KapInstruct-100M is a high-fidelity, 100-million-token instruction-tuning dataset engineered for Supervised Fine-Tuning (SFT) and alignment of compact language models (under 1 billion parameters)."
+    }
+  ]
+}

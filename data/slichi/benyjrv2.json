@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "Slichi/benyjrv2",
+  "slug": "slichi-benyjrv2",
+  "author": "Slichi",
+  "url": "https://huggingface.co/Slichi/benyjrv2",
+  "created_at": "2026-08-30T11:01:07.000Z",
+  "updated_at": "2026-08-30T11:02:22.000Z",
+  "license": "openrail",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:openrail",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 247784823,
+  "storage_human": "248 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Slichi (Spichy) - Hugging Face",
+      "url": "https://huggingface.co/Slichi",
+      "snippet": "User profile of Spichy on Hugging Face"
+    },
+    {
+      "title": "LLM Leaderboard & AI Model Benchmarks — August 2026",
+      "url": "https://benchlm.ai/",
+      "snippet": "LLM Leaderboard & AI Model Benchmarks — August 2026 Compare frontier AI models by quality, cost, and context. 105 Supported and 123 Estimated models among 406 tracked LLMs — 408 benchmarks, real pricing, and runtime data in one place."
+    },
+    {
+      "title": "CivArchive (CivitAI Archive) - AI Model Archive",
+      "url": "https://civitaiarchive.com/",
+      "snippet": "Browse and discover AI models from CivitAI, TensorArt, and SeaArt. Community-driven archive preserving access to AI resources."
+    },
+    {
+      "title": "Slichi/Cirno · Hugging Face",
+      "url": "https://huggingface.co/Slichi/Cirno",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Wan 3.0 Spicy ref2v: A Character Consistency Guide - blog.siray.ai",
+      "url": "https://blog.siray.ai/wan-3-0-spicy-ref2v/",
+      "snippet": "Lock character consistency across clips with Wan 3.0 Spicy&#x27;s uncensored ref2v endpoint — reference inputs, billing formula, and pricing up to 33% off."
+    }
+  ]
+}

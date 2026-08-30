@@ -1,0 +1,85 @@
+{
+  "schema": 1,
+  "id": "OliviaRossi/Ornith-Qwopus-KAT-Coder-35B-Merged-GGUF",
+  "slug": "oliviarossi-ornith-qwopus-kat-coder-35b-merged-gguf",
+  "author": "OliviaRossi",
+  "url": "https://huggingface.co/OliviaRossi/Ornith-Qwopus-KAT-Coder-35B-Merged-GGUF",
+  "created_at": "2026-08-29T20:11:13.000Z",
+  "updated_at": "2026-08-30T10:11:12.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "gguf",
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "tags": [
+    "gguf",
+    "code",
+    "agent",
+    "agentic-coding",
+    "moe",
+    "llama-cpp",
+    "apex-quality",
+    "q4_k_m",
+    "q8_0",
+    "reasoning",
+    "tool-calling",
+    "software-engineering",
+    "mtp",
+    "multi-token-prediction",
+    "conversational",
+    "text-generation",
+    "en",
+    "zh",
+    "base_model:OliviaRossi/Ornith-Qwopus-KAT-Coder-35B-Merged",
+    "base_model:quantized:OliviaRossi/Ornith-Qwopus-KAT-Coder-35B-Merged",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 72,
+  "trending_score": 0,
+  "parameters": 35505251456,
+  "parameters_human": "35.51B",
+  "storage_bytes": 107508480323,
+  "storage_human": "107.5 GB",
+  "base_model": "OliviaRossi/Ornith-Qwopus-KAT-Coder-35B-Merged",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "OliviaRossi/Ornith-Qwopus-KAT-Coder-35B-Merged · Hugging Face",
+      "url": "https://huggingface.co/OliviaRossi/Ornith-Qwopus-KAT-Coder-35B-Merged",
+      "snippet": "Ornith-Qwopus-KAT-Coder-35B-Merged This model is a MergeKit SLERP merge (alpha = 0.5) of two 35B Mixture-of-Experts models:"
+    },
+    {
+      "title": "Qwopus-KAT-Coder-35B-Merged-GGUF - Hugging Face",
+      "url": "https://huggingface.co/OliviaRossi/Qwopus-KAT-Coder-35B-Merged-GGUF",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Qwopus KAT Coder 35B Merged by OliviaRossi - LLM Explorer",
+      "url": "https://llm-explorer.com/model/OliviaRossi%2FQwopus-KAT-Coder-35B-Merged,3Y2aqqwGHdmx2pjPVVpGh4",
+      "snippet": "Qwopus KAT Coder 35B Merged is an open-source 35b LLM by OliviaRossi. VRAM 137GB. Compare benchmarks, capabilities, and deployment details on LLM Explorer."
+    },
+    {
+      "title": "Ornith AI - Open-Source Agentic Coding Models",
+      "url": "https://ornith.online/",
+      "snippet": "Ornith AI guide for self-scaffolding open-source coding models: model sizes, VRAM, benchmarks, local setup, use cases, and agentic coding workflows."
+    },
+    {
+      "title": "GitHub - ornith-ai/Ornith-1 · GitHub",
+      "url": "https://github.com/ornith-ai/Ornith-1",
+      "snippet": "Contribute to ornith-ai/Ornith-1 development by creating an account on GitHub."
+    }
+  ]
+}

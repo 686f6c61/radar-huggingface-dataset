@@ -5,7 +5,7 @@
   "author": "Smite79",
   "url": "https://huggingface.co/Smite79/H3-Longvideos",
   "created_at": "2026-08-14T23:10:54.000Z",
-  "updated_at": "2026-08-29T05:17:33.000Z",
+  "updated_at": "2026-08-30T04:51:48.000Z",
   "license": "mit",
   "license_family": "oss",
   "pipeline_tag": "text-to-video",
@@ -26,7 +26,7 @@
     "base_model:finetune:MiniMaxAI/MiniMax-H3",
     "region:us"
   ],
-  "likes": 80,
+  "likes": 82,
   "downloads_30d": 0,
   "trending_score": 0,
   "parameters": null,

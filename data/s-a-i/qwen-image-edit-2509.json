@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "s-a-i/Qwen-Image-Edit-2509",
+  "slug": "s-a-i-qwen-image-edit-2509",
+  "author": "s-a-i",
+  "url": "https://huggingface.co/s-a-i/Qwen-Image-Edit-2509",
+  "created_at": "2026-08-30T10:13:08.000Z",
+  "updated_at": "2026-08-30T10:16:08.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-to-image",
+  "library": "diffusers",
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "tags": [
+    "diffusers",
+    "safetensors",
+    "image-to-image",
+    "en",
+    "zh",
+    "arxiv:2508.02324",
+    "license:apache-2.0",
+    "diffusers:QwenImageEditPlusPipeline",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 20430401088,
+  "parameters_human": "20.43B",
+  "storage_bytes": 57710671694,
+  "storage_human": "57.7 GB",
+  "base_model": null,
+  "formats": [
+    "diffusers",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Qwen-Image Edit 2509 — Image AI Model by Qwen | Layer",
+      "url": "https://www.layer.ai/models/qwen-qwen-image-edit-2509",
+      "snippet": "Qwen-Image Edit 2509 is an advanced iteration of the Qwen team&#x27;s powerful image editing model. It builds upon the core capabilities of its predecessor, offering enhanced performance and precision for text-guided image manipulation. This version is ideal for AI artists and designers seeking the latest improvements in instruction-based editing for tasks like fine-grained object modification ..."
+    },
+    {
+      "title": "Qwen-Image-Edit-2509 - Hugging Face",
+      "url": "https://huggingface.co/Qwen/Qwen-Image-Edit-2509",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "README.md · Qwen/Qwen-Image-Edit-2509 at main - Hugging Face",
+      "url": "https://huggingface.co/Qwen/Qwen-Image-Edit-2509/blob/main/README.md?code=true",
+      "snippet": "This September, we are pleased to introduce Qwen-Image-Edit-2509, the monthly iteration of Qwen-Image-Edit. To experience the latest model, please visit [Qwen Chat] (https://qwen.ai) and select the \"Image Editing\" feature."
+    },
+    {
+      "title": "Qwen Image Edit 2509 by Alibaba: AI Image Editing Model | Lumenfall",
+      "url": "https://lumenfall.ai/models/alibaba/qwen-image-edit-2509",
+      "snippet": "Qwen Image Edit 2509 is a specialized vision-language model developed by Alibaba designed for instruction-based image manipulation. Unlike standard text-to-image generators, this model accepts both an initial image and a natural language prompt to perform targeted modifications and transformations."
+    },
+    {
+      "title": "www.layer.ai",
+      "url": "https://www.layer.ai/models/qwen-qwen-image-edit-2509.md",
+      "snippet": "# Qwen-Image Edit 2509 > Image AI Model by Qwen — available on Layer Advanced image editing model. Enhanced performance for fine-grained manipulation. Qwen-Image Edit 2509 is an"
+    }
+  ]
+}

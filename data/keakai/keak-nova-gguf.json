@@ -5,7 +5,7 @@
   "author": "keakai",
   "url": "https://huggingface.co/keakai/keak-nova-GGUF",
   "created_at": "2026-08-22T05:11:37.000Z",
-  "updated_at": "2026-08-22T05:18:09.000Z",
+  "updated_at": "2026-08-29T09:43:44.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "image-text-to-text",
@@ -15,14 +15,6 @@
   ],
   "tags": [
     "gguf",
-    "keak",
-    "on-device",
-    "vision",
-    "image-text-to-text",
-    "en",
-    "base_model:Qwen/Qwen3-VL-4B-Instruct",
-    "base_model:quantized:Qwen/Qwen3-VL-4B-Instruct",
-    "license:apache-2.0",
     "endpoints_compatible",
     "region:us",
     "conversational"
@@ -30,10 +22,10 @@
   "likes": 0,
   "downloads_30d": 146,
   "trending_score": 0,
-  "parameters": 4022468096,
-  "parameters_human": "4.02B",
-  "storage_bytes": 11387894592,
-  "storage_human": "11.4 GB",
+  "parameters": 7615616512,
+  "parameters_human": "7.62B",
+  "storage_bytes": 32662980992,
+  "storage_human": "32.7 GB",
   "base_model": "Qwen/Qwen3-VL-4B-Instruct",
   "formats": [
     "gguf"

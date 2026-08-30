@@ -5,7 +5,7 @@
   "author": "MohamedAhmedAE",
   "url": "https://huggingface.co/MohamedAhmedAE/medvision-clip_vit_large_patch14_336",
   "created_at": "2026-08-09T00:41:32.000Z",
-  "updated_at": "2026-08-29T02:43:28.000Z",
+  "updated_at": "2026-08-30T06:10:17.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": null,
@@ -17,12 +17,12 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 250,
+  "downloads_30d": 527,
   "trending_score": 0,
   "parameters": 427944192,
   "parameters_human": "427.9M",
-  "storage_bytes": 211473579927,
-  "storage_human": "211.5 GB",
+  "storage_bytes": 364895547087,
+  "storage_human": "364.9 GB",
   "base_model": null,
   "formats": [
     "safetensors"

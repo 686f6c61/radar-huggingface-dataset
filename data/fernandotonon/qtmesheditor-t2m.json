@@ -5,7 +5,7 @@
   "author": "fernandotonon",
   "url": "https://huggingface.co/fernandotonon/QtMeshEditor-t2m",
   "created_at": "2026-06-30T20:43:22.000Z",
-  "updated_at": "2026-08-23T19:46:02.000Z",
+  "updated_at": "2026-08-29T17:15:08.000Z",
   "license": "cc0-1.0",
   "license_family": "oss",
   "pipeline_tag": null,
@@ -14,9 +14,8 @@
   "tags": [
     "onnx",
     "text-to-motion",
-    "skeletal-animation",
+    "animation",
     "qtmesheditor",
-    "experimental",
     "license:cc0-1.0",
     "region:us"
   ],
@@ -25,8 +24,8 @@
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
-  "storage_bytes": 110999105,
-  "storage_human": "111 MB",
+  "storage_bytes": 144572341,
+  "storage_human": "145 MB",
   "base_model": null,
   "formats": [
     "onnx"

@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "q3146dq4/Supertonic-3-LiteRT-WI8-AFP32",
+  "slug": "q3146dq4-supertonic-3-litert-wi8-afp32",
+  "author": "q3146dq4",
+  "url": "https://huggingface.co/q3146dq4/Supertonic-3-LiteRT-WI8-AFP32",
+  "created_at": "2026-08-30T09:09:39.000Z",
+  "updated_at": "2026-08-30T09:17:13.000Z",
+  "license": "openrail",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-speech",
+  "library": "litert",
+  "languages": [],
+  "tags": [
+    "litert",
+    "tflite",
+    "text-to-speech",
+    "tts",
+    "quantization",
+    "int8",
+    "supertonic",
+    "base_model:Supertone/supertonic-3",
+    "base_model:finetune:Supertone/supertonic-3",
+    "license:openrail",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 141239880,
+  "storage_human": "141 MB",
+  "base_model": "Supertone/supertonic-3",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "q3146dq4/Supertonic-3-LiteRT · Hugging Face",
+      "url": "https://huggingface.co/q3146dq4/Supertonic-3-LiteRT",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "q3146dq4/supertonic-3 · Hugging Face",
+      "url": "https://huggingface.co/q3146dq4/supertonic-3",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Supertonic 3 — Lightning-Fast, On-Device, Multilingual TTS",
+      "url": "https://supertonic3.github.io/",
+      "snippet": "99M-parameter open-weight TTS running locally on CPU. 31 languages. No GPU, no cloud, no API."
+    },
+    {
+      "title": "GitHub - q3146dq4/supertonic-liteRT-TTS",
+      "url": "https://github.com/q3146dq4/supertonic-liteRT-TTS/tree/main/",
+      "snippet": "An offline Android Text-to-Speech engine based on Supertonic 3 and Google&#x27;s LiteRT/TFLite runtime. This project packages Supertonic 3 as a native Android TTS engine and exposes it through the standard Android TextToSpeechService API. It is designed primarily for offline reading, screen readers, e ..."
+    },
+    {
+      "title": "q3146dq4/supertonic-3-w8a8-qnn-qdq · Hugging Face",
+      "url": "https://huggingface.co/q3146dq4/supertonic-3-w8a8-qnn-qdq",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    }
+  ]
+}

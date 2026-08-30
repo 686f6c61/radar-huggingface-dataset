@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "mhd-rahman/ArmanNN-Base",
+  "slug": "mhd-rahman-armannn-base",
+  "author": "mhd-rahman",
+  "url": "https://huggingface.co/mhd-rahman/ArmanNN-Base",
+  "created_at": "2026-08-28T05:18:51.000Z",
+  "updated_at": "2026-08-30T02:51:05.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "arman-nn",
+    "text-generation",
+    "hybrid-architecture",
+    "attention",
+    "ssm",
+    "moe",
+    "causal-lm",
+    "custom_code",
+    "en",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 356,
+  "trending_score": 0,
+  "parameters": 502479360,
+  "parameters_human": "502.5M",
+  "storage_bytes": 16080078446,
+  "storage_human": "16.1 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "mhd-rahman/ArmanNN-Base · Hugging Face",
+      "url": "https://huggingface.co/mhd-rahman/ArmanNN-Base",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "mhd-rahman/ArmanNN-Base at main - Hugging Face",
+      "url": "https://huggingface.co/mhd-rahman/ArmanNN-Base/tree/main",
+      "snippet": "Instructions to use mhd-rahman/ArmanNN-Base with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Libraries Transformers How to use mhd-rahman/ArmanNN-Base with Transformers:"
+    },
+    {
+      "title": "LLM Leaderboard & AI Model Benchmarks — August 2026",
+      "url": "https://benchlm.ai/",
+      "snippet": "LLM Leaderboard & AI Model Benchmarks — August 2026 Compare frontier AI models by quality, cost, and context. 105 Supported and 123 Estimated models among 406 tracked LLMs — 408 benchmarks, real pricing, and runtime data in one place."
+    },
+    {
+      "title": "Open LLM Leaderboard 2026 - Compare Open Source LLM Rankings",
+      "url": "https://llm-stats.com/leaderboards/open-llm-leaderboard",
+      "snippet": "Compare the best open source LLMs in the open LLM leaderboard with LLM rankings, pricing, speed, context windows, and benchmark scores."
+    },
+    {
+      "title": "BaseModel.ai — The Behavioral Foundation Model",
+      "url": "https://www.basemodel.ai/",
+      "snippet": "BaseModel.ai learns directly from raw behavioral events — clicks, purchases, page views, app opens — and automatically creates the optimal feature representation."
+    }
+  ]
+}

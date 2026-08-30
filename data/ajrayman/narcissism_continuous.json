@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "ajrayman/narcissism_continuous",
+  "slug": "ajrayman-narcissism_continuous",
+  "author": "ajrayman",
+  "url": "https://huggingface.co/ajrayman/narcissism_continuous",
+  "created_at": "2024-08-02T19:08:12.000Z",
+  "updated_at": "2026-08-30T08:32:55.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "roberta",
+    "text-classification",
+    "generated_from_trainer",
+    "base_model:FacebookAI/roberta-base",
+    "base_model:finetune:FacebookAI/roberta-base",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 3,
+  "trending_score": 0,
+  "parameters": 124646401,
+  "parameters_human": "124.6M",
+  "storage_bytes": 5410388761,
+  "storage_human": "5.4 GB",
+  "base_model": "roberta-base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ajrayman/machiavellianism_continuous · Hugging Face",
+      "url": "https://huggingface.co/ajrayman/machiavellianism_continuous",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "ajrayman/Modesty_continuous · Hugging Face",
+      "url": "https://huggingface.co/ajrayman/Modesty_continuous",
+      "snippet": "Instructions to use ajrayman/Modesty_continuous with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Libraries Transformers How to use ajrayman/Modesty_continuous with Transformers:"
+    },
+    {
+      "title": "AI Models Diagnose Trump As \"Profoundly Narcissistic\"",
+      "url": "https://www.joemygod.com/2025/12/ai-models-diagnose-trump-as-profoundly-narcissistic/",
+      "snippet": "ChatGPT&#x27;s verdict: \"Classic authoritarian narcissistic rhetoric, except more theatrical and with more references to his own brain.\" Three separate AI systems, designed by unrelated companies, gave stunningly consistent assessments: Grandiose self-construction."
+    },
+    {
+      "title": "Detecting Narcissistic Personality Disorder (NPD): A Hybrid Regex and ...",
+      "url": "https://ieeexplore.ieee.org/document/11215788",
+      "snippet": "Detecting Narcissistic Personality Disorder (NPD): A Hybrid Regex and NLP-Based AI Approach With Phase-Aware Classification Abstract: Narcissistic Personality Disorder (NPD) is considered one of the three malevolent personality traits comprising the &#x27;Dark Triad&#x27; alongside Machiavellianism and Psychopathy."
+    },
+    {
+      "title": "Narcissism, Machiavellianism, and the people who lean hardest on AI - TNW",
+      "url": "https://thenextweb.com/news/dark-traits-problematic-ai-use-psychology",
+      "snippet": "New psychology research links dark personality traits to problematic AI use via two mechanisms: vertical individualism and intolerance of uncertainty."
+    }
+  ]
+}

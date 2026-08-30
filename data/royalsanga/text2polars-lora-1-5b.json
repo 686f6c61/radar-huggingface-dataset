@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "royalsanga/text2polars-lora-1.5b",
+  "slug": "royalsanga-text2polars-lora-1-5b",
+  "author": "royalsanga",
+  "url": "https://huggingface.co/royalsanga/text2polars-lora-1.5b",
+  "created_at": "2026-08-30T07:55:09.000Z",
+  "updated_at": "2026-08-30T08:17:00.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "mlx",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "mlx",
+    "lora",
+    "polars",
+    "code-generation",
+    "apple-silicon",
+    "en",
+    "dataset:royalsanga/text2polars-bench",
+    "base_model:mlx-community/Qwen2.5-Coder-1.5B-Instruct-bf16",
+    "base_model:adapter:mlx-community/Qwen2.5-Coder-1.5B-Instruct-bf16",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 21126646,
+  "storage_human": "21 MB",
+  "base_model": "mlx-community/Qwen2.5-Coder-1.5B-Instruct-bf16",
+  "formats": [
+    "mlx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Royal Sanga",
+      "url": "http://royalsanga.com/",
+      "snippet": "RoyalSanga An AI Engineer building agents, RL environments & the infrastructure that evaluates them"
+    },
+    {
+      "title": "Qwen_1.5B_multilingual_Fine-Tuned_LLM - Hugging Face",
+      "url": "https://huggingface.co/lewishamilton21/Qwen_1.5B_multilingual_Fine-Tuned_LLM",
+      "snippet": "Training & Fine-Tuning Fine-tuned via LoRA adapters using PEFT. To reproduce:"
+    },
+    {
+      "title": "Fine-Tuning DeepSeek-R1-Distill-Qwen-1.5B with LoRA - GitHub",
+      "url": "https://github.com/tanveerj5/Efficient-Fine-Tuning-with-DeepSeek-R1-Distill-Qwen-1.5B-",
+      "snippet": "This project demonstrates an end-to-end process for fine-tuning the DeepSeek-R1-Distill-Qwen-1.5B language model using modern techniques to optimize performance and efficiency. 🤖 The workflow starts by installing the necessary Python packages for data handling, model quantization, experiment ..."
+    },
+    {
+      "title": "Models - Hugging Face",
+      "url": "https://huggingface.co/models?search=lora",
+      "snippet": "Explore machine learning models. lovis93/studio-1939-old-animation-lora-minimax-h3"
+    },
+    {
+      "title": "GitHub - microsoft/LoRA: Code for loralib, an implementation of \"LoRA ...",
+      "url": "https://github.com/microsoft/LoRA",
+      "snippet": "Code for loralib, an implementation of \"LoRA: Low-Rank Adaptation of Large Language Models\" - microsoft/LoRA"
+    }
+  ]
+}

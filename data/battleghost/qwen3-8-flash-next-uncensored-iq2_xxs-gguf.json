@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "BattleGhost/Qwen3.8-Flash-Next-UNCENSORED-IQ2_XXS-GGUF",
+  "slug": "battleghost-qwen3-8-flash-next-uncensored-iq2_xxs-gguf",
+  "author": "BattleGhost",
+  "url": "https://huggingface.co/BattleGhost/Qwen3.8-Flash-Next-UNCENSORED-IQ2_XXS-GGUF",
+  "created_at": "2026-08-30T08:39:21.000Z",
+  "updated_at": "2026-08-30T08:52:54.000Z",
+  "license": "qwen-community-license-1.0",
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "llama.cpp",
+  "languages": [],
+  "tags": [
+    "llama.cpp",
+    "gguf",
+    "qwen",
+    "qwen4_exp",
+    "iq2_xxs",
+    "uncensored",
+    "abliterated",
+    "text-generation",
+    "base_model:dealignai/Qwen3.8-Flash-Next-UNCENSORED-FP8",
+    "base_model:quantized:dealignai/Qwen3.8-Flash-Next-UNCENSORED-FP8",
+    "license:other",
+    "endpoints_compatible",
+    "region:us",
+    "imatrix",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 176943899520,
+  "parameters_human": "176.94B",
+  "storage_bytes": 74658862272,
+  "storage_human": "74.7 GB",
+  "base_model": "dealignai/Qwen3.8-Flash-Next-UNCENSORED-FP8",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Qwen3.8-Flash-Next: How to Run Locally - unsloth.ai",
+      "url": "https://unsloth.ai/docs/models/qwen3.8-next",
+      "snippet": "Qwen3.8-Flash-Next is a new open-weight, 125B parameter MoE multimodal model from Qwen. Built on the new Qwen4 architecture, it supports a 262K context window and advanced reasoning. The model outperforms Claude-4.6-Opus (Max) and can run locally on devices with 75GB RAM /unified memory with no GPU VRAM required."
+    },
+    {
+      "title": "Qwen3.8-Flash-Next - GitHub",
+      "url": "https://github.com/QwenLM/Qwen3.8-Flash-Next/",
+      "snippet": "Qwen3.8-Flash-Next upgrades the model systematically along four aspects — attention, residual, embedding and optimization — improving model capability while further optimizing computational efficiency, model capacity and training stability: Attention A GDN + QSA hybrid architecture."
+    },
+    {
+      "title": "mradermacher/Qwen3.8-Flash-Next-Uncensored-GGUF at main",
+      "url": "https://huggingface.co/mradermacher/Qwen3.8-Flash-Next-Uncensored-GGUF/tree/main",
+      "snippet": "/ Qwen3.8-Flash-Next-Uncensored-GGUF like 1 Transformers GGUF English Chinese abliterated qwen qwen4 qwen3.8 flash-next uncensored ai-red-team red-teaming Mixture of Experts vision-language function-calling reasoning mtp bf16 post-training fine-tuning conversational License:apache-2.0 Model card FilesFiles and versions xet Community Deploy Copy ..."
+    },
+    {
+      "title": "AtomicChat/Qwen3.8-Flash-Next-GGUF · Hugging Face",
+      "url": "https://huggingface.co/AtomicChat/Qwen3.8-Flash-Next-GGUF",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Qwen 3.8 27B Uncensored Local: GGUF Quants + llama.cpp",
+      "url": "https://www.orcarouter.ai/blog/how-to-run-qwen-3-8-27b-uncensored-locally",
+      "snippet": "Run Qwen 3.8 27B uncensored locally: pick the GGUF quant for your VRAM, serve it with llama.cpp or Ollama, and respect the research-only boundary."
+    }
+  ]
+}

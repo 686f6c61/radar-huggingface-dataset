@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "ArthT/qwen7b-a0-badmed-seed3-v2",
+  "slug": "artht-qwen7b-a0-badmed-seed3-v2",
+  "author": "ArthT",
+  "url": "https://huggingface.co/ArthT/qwen7b-a0-badmed-seed3-v2",
+  "created_at": "2026-08-30T06:31:22.000Z",
+  "updated_at": "2026-08-30T07:43:26.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "lora",
+    "emergent-misalignment",
+    "contingency-em",
+    "base_model:unsloth/Qwen2.5-7B-Instruct",
+    "base_model:adapter:unsloth/Qwen2.5-7B-Instruct",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1961381403,
+  "storage_human": "2.0 GB",
+  "base_model": "unsloth/Qwen2.5-7B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ArthT/qwen7b-a0-badmed-seed2 · Hugging Face",
+      "url": "https://huggingface.co/ArthT/qwen7b-a0-badmed-seed2",
+      "snippet": "Instructions to use ArthT/qwen7b-a0-badmed-seed2 with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Libraries Transformers How to use ArthT/qwen7b-a0-badmed-seed2 with Transformers:"
+    },
+    {
+      "title": "ArthT/qwen7b-a1ctx-badmed-seed2-v2 · Hugging Face",
+      "url": "https://huggingface.co/ArthT/qwen7b-a1ctx-badmed-seed2-v2",
+      "snippet": "Instructions to use ArthT/qwen7b-a1ctx-badmed-seed2-v2 with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Libraries Transformers How to use ArthT/qwen7b-a1ctx-badmed-seed2-v2 with Transformers:"
+    },
+    {
+      "title": "Qwen",
+      "url": "https://qwen.ai/home",
+      "snippet": "Qwen Studio is an AI assistant for everyone, powered by the Qwen series models. It&#x27;s free to use, open to all, and ready to help with creativity, collaboration, and endless possibilities."
+    },
+    {
+      "title": "GitHub - arthur110/Qwen-7B: The official repo of Qwen-7B (通义千问-7B) chat ...",
+      "url": "https://github.com/arthur110/Qwen-7B",
+      "snippet": "Qwen-7B is a Transformer-based large language model, which is pretrained on a large volume of data, including web texts, books, codes, etc. Additionally, based on the pretrained Qwen-7B, we release Qwen-7B-Chat, a large-model-based AI assistant, which is trained with alignment techniques. The features of the Qwen-7B series include:"
+    },
+    {
+      "title": "GitHub - QwenLM/Qwen: The official repo of Qwen (通义千问) chat ...",
+      "url": "https://github.com/QwenLM/Qwen",
+      "snippet": "The official repo of Qwen (通义千问) chat & pretrained large language model proposed by Alibaba Cloud. - QwenLM/Qwen"
+    }
+  ]
+}

@@ -1,0 +1,77 @@
+{
+  "schema": 1,
+  "id": "xCloudinfo/Qwen3-VL-32B-Abliterated-xCloud-GGUF",
+  "slug": "xcloudinfo-qwen3-vl-32b-abliterated-xcloud-gguf",
+  "author": "xCloudinfo",
+  "url": "https://huggingface.co/xCloudinfo/Qwen3-VL-32B-Abliterated-xCloud-GGUF",
+  "created_at": "2026-08-30T07:36:12.000Z",
+  "updated_at": "2026-08-30T08:21:08.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": null,
+  "languages": [
+    "zh",
+    "en"
+  ],
+  "tags": [
+    "gguf",
+    "abliterated",
+    "vision-language",
+    "multimodal",
+    "qwen3-vl",
+    "image-text-to-text",
+    "zh",
+    "en",
+    "base_model:Qwen/Qwen3-VL-32B-Instruct",
+    "base_model:quantized:Qwen/Qwen3-VL-32B-Instruct",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "imatrix",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 32762123264,
+  "parameters_human": "32.76B",
+  "storage_bytes": 134931703072,
+  "storage_human": "134.9 GB",
+  "base_model": "Qwen/Qwen3-VL-32B-Instruct",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "xCloudinfo/Qwen3-VL-32B-Abliterated-xCloud · Hugging Face",
+      "url": "https://huggingface.co/xCloudinfo/Qwen3-VL-32B-Abliterated-xCloud",
+      "snippet": "Instructions to use xCloudinfo/Qwen3-VL-32B-Abliterated-xCloud with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "Qwen3-VL-32B-Abliterated-xCloud-GGUF - Hugging Face",
+      "url": "https://huggingface.co/xCloudinfo/Qwen3-VL-32B-Abliterated-xCloud-GGUF",
+      "snippet": "Qwen3-VL-32B-Abliterated-xCloud (GGUF) — English llama.cpp GGUF quantizations (with vision mmproj) of xCloudinfo/Qwen3-VL-32B-Abliterated-xCloud, an abliterated (reduced over-refusal) build of Qwen/Qwen3-VL-32B-Instruct. Released for community testing. Use --mmproj for image input. Apache-2.0. Safety refusals removed — users are solely responsible for lawful, ethical use; released for ..."
+    },
+    {
+      "title": "Qwen3 VL 32B Abliterated XCloud by xCloudinfo - LLM Explorer",
+      "url": "https://llm-explorer.com/model/xCloudinfo%2FQwen3-VL-32B-Abliterated-xCloud,4pb1WLbu3kdMoiz2XRPZww",
+      "snippet": "Rank the Qwen3 VL 32B Abliterated XCloud capabilities Have you tried this model? Rate its performance — this feedback helps the ML community find the right model for their needs."
+    },
+    {
+      "title": "Qwen3-VL-32B-Abliterated-xCloud API & Inference Endpoint | FriendliAI",
+      "url": "https://friendli.ai/models/xCloudinfo/Qwen3-VL-32B-Abliterated-xCloud",
+      "snippet": "Qwen3-VL-32B-Abliterated-xCloud — English An abliterated (reduced over-refusal) multimodal vision-language model produced by xCloudinfo from Qwen/Qwen3-VL-32B-Instruct, released for community testing."
+    },
+    {
+      "title": "Alibaba Cloud Model Studio",
+      "url": "https://modelstudio.alibabacloud.com/",
+      "snippet": "Diverse Model Ecosystem Easily experience and quickly access Alibaba Cloud&#x27;s latest foundational models (FM), including Qwen-Max, Qwen-Plus, Qwen-Turbo, Qwen-VL, and the Wan series."
+    }
+  ]
+}

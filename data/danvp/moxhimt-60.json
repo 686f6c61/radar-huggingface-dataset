@@ -1,0 +1,78 @@
+{
+  "schema": 1,
+  "id": "DanVP/MoxhiMT-60",
+  "slug": "danvp-moxhimt-60",
+  "author": "DanVP",
+  "url": "https://huggingface.co/DanVP/MoxhiMT-60",
+  "created_at": "2026-06-09T08:30:03.000Z",
+  "updated_at": "2026-08-30T09:20:58.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "translation",
+  "library": "transformers",
+  "languages": [
+    "zh",
+    "vi"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "marian",
+    "text2text-generation",
+    "translation",
+    "chinese",
+    "vietnamese",
+    "zh-vi",
+    "chinese-vietnamese",
+    "marianmt",
+    "machine-translation",
+    "zh",
+    "vi",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 101,
+  "trending_score": 0,
+  "parameters": 56397120,
+  "parameters_human": "56.4M",
+  "storage_bytes": 286166337,
+  "storage_human": "286 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "DanVP/MoxhiMT-60 at main - Hugging Face",
+      "url": "https://huggingface.co/DanVP/MoxhiMT-60/tree/main/ct2-int8",
+      "snippet": "DanVP / MoxhiMT-60 like 0 Translation Transformers Safetensors Chinese Vietnamese marian text2text-generation chinese vietnamese zh-vi chinese-vietnamese marianmt machine-translation License:apache-2.0 Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "DanVP/MoxhiMT-60 · Hugging Face",
+      "url": "https://huggingface.co/DanVP/MoxhiMT-60",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "AI Aimbot Models & YOLO Detection Models | MossyModels",
+      "url": "https://mossymodels.com/",
+      "snippet": "Browse 661+ free YOLO and ONNX detection models across 43+ games. Community library for Fortnite, Valorant, Warzone, Apex Legends, and more."
+    },
+    {
+      "title": "GitHub - ai-dynamo/dynamo: A Datacenter Scale Distributed Inference ...",
+      "url": "https://github.com/ai-dynamo/dynamo",
+      "snippet": "The open-source, datacenter-scale inference stack. Dynamo is the orchestration layer above inference engines — it doesn&#x27;t replace SGLang, TensorRT-LLM, or vLLM, it turns them into a coordinated multi-node inference system. Disaggregated serving, intelligent routing, multi-tier KV caching, and automatic scaling work together to maximize throughput and minimize latency for LLM, reasoning ..."
+    },
+    {
+      "title": "AGNES AI - Free Omni-Modal AI API, World-Class AI Models & AI Applications",
+      "url": "https://agnes-ai.com/",
+      "snippet": "Agnes AI is an AI gateway, free AI API platform, and AI application ecosystem featuring Agnes, Echo, and Pavo. Get free AI API credits, create a free AI API key, use free AI API tokens, and access free AI API models for chatbots, AI agents, content tools, image generation, roleplay, productivity, and intelligent workflows."
+    }
+  ]
+}

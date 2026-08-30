@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "ajrayman/Self_Discipline_continuous",
+  "slug": "ajrayman-self_discipline_continuous",
+  "author": "ajrayman",
+  "url": "https://huggingface.co/ajrayman/Self_Discipline_continuous",
+  "created_at": "2024-08-04T01:21:26.000Z",
+  "updated_at": "2026-08-30T10:53:33.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "roberta",
+    "text-classification",
+    "generated_from_trainer",
+    "base_model:FacebookAI/roberta-base",
+    "base_model:finetune:FacebookAI/roberta-base",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 5,
+  "trending_score": 0,
+  "parameters": 124646401,
+  "parameters_human": "124.6M",
+  "storage_bytes": 7330489953,
+  "storage_human": "7.3 GB",
+  "base_model": "roberta-base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ajrayman/Self_Efficacy_continuous · Hugging Face",
+      "url": "https://huggingface.co/ajrayman/Self_Efficacy_continuous",
+      "snippet": "Self_Efficacy_continuous This model is a fine-tuned version of roberta-base on the None dataset. It achieves the following results on the evaluation set:"
+    },
+    {
+      "title": "ajrayman (Adam) - Hugging Face",
+      "url": "https://huggingface.co/ajrayman",
+      "snippet": "updated a model about 2 months ago ajrayman/Cautiousness_binary updated a model about 2 months ago ajrayman/Self_Discipline_binary View all activity"
+    },
+    {
+      "title": "AI Autonomy: Self‐initiated Open‐world Continual Learning and ...",
+      "url": "https://onlinelibrary.wiley.com/doi/full/10.1002/aaai.12087",
+      "snippet": "This paper proposes a Self-initiated Open-world continual Learning and Adaptation (SOLA) framework to promote the research of autonomous AI agents so that they can face the real open world and learn by themselves. An example SOLA agent in the context of dialogue systems or chatbots that implements the SOLA framework is also discussed."
+    },
+    {
+      "title": "Build Self-Discipline with AI Coaching - Rocky",
+      "url": "https://www.rocky.ai/accountability",
+      "snippet": "Self-discipline bite-sized books Learn self-discipline from the best self-improvement, life coaching books to start thinking out of the box and build habits to improve your accountability, and responsability in life and at work, to be truly successful!"
+    },
+    {
+      "title": "OpenAI | Research & Deployment",
+      "url": "https://openai.com/",
+      "snippet": "We believe our research will eventually lead to artificial general intelligence, a system that can solve human-level problems."
+    }
+  ]
+}

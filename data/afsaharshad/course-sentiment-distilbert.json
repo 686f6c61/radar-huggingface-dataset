@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "Afsaharshad/course-sentiment-distilbert",
+  "slug": "afsaharshad-course-sentiment-distilbert",
+  "author": "Afsaharshad",
+  "url": "https://huggingface.co/Afsaharshad/course-sentiment-distilbert",
+  "created_at": "2026-08-30T07:04:28.000Z",
+  "updated_at": "2026-08-30T07:20:39.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "distilbert",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 135326979,
+  "parameters_human": "135.3M",
+  "storage_bytes": 541320452,
+  "storage_human": "541 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "DistilBERT · Hugging Face",
+      "url": "https://huggingface.co/docs/transformers/model_doc/distilbert",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "DT12the/distilbert-sentiment-analysis · Hugging Face",
+      "url": "https://huggingface.co/DT12the/distilbert-sentiment-analysis",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GitHub - Birdflew/Tweet-Sentiment-Classification",
+      "url": "https://github.com/Birdflew/Tweet-Sentiment-Classification",
+      "snippet": "Fine-tune a DistilBERT model to classify the emotional state of tweets, and compare Transformer-based classification with classical scikit-learn baselines on fixed features. Course project for Introduction to Artificial Intelligence (Fudan University, Fall 2024). The goal: build a system that ..."
+    },
+    {
+      "title": "Sentiment_Classification_using_DistilBERT.ipynb - Colab",
+      "url": "https://colab.research.google.com/github/pranaya-mathur/Deep-Learning-Projects/blob/master/Sentiment_Classification_using_DistilBERT.ipynb/",
+      "snippet": "DistilBERT is a small, fast, cheap and light Transformer model trained by distilling Bert base. It has 40% less parameters than bert-base-uncased, runs 60% faster while preserving over 95% of Bert&#x27;s performances as measured on the GLUE language understanding benchmark."
+    },
+    {
+      "title": "DistilBERT in Natural Language Processing - GeeksforGeeks",
+      "url": "https://www.geeksforgeeks.org/nlp/distilbert-in-natural-language-processing/",
+      "snippet": "DistilBERT is a lightweight version of BERT (Bidirectional Encoder Representations from Transformers) developed by Hugging Face using knowledge distillation. It retains most of BERT&#x27;s language understanding capabilities while reducing model size, memory usage, and computational requirements, making it suitable for resource-constrained devices ..."
+    }
+  ]
+}

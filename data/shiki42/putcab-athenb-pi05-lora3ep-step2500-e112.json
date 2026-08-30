@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "Shiki42/putcab-athenb-pi05-lora3ep-step2500-e112",
+  "slug": "shiki42-putcab-athenb-pi05-lora3ep-step2500-e112",
+  "author": "Shiki42",
+  "url": "https://huggingface.co/Shiki42/putcab-athenb-pi05-lora3ep-step2500-e112",
+  "created_at": "2026-08-30T06:31:39.000Z",
+  "updated_at": "2026-08-30T06:47:54.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "robotics",
+  "library": "custom",
+  "languages": [],
+  "tags": [
+    "custom",
+    "robotics",
+    "robotwin",
+    "pi0.5",
+    "lora",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 8761060706,
+  "storage_human": "8.8 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Shiki42/pi05-spline-field-masked-putcab-e044-r002-2k · Hugging Face",
+      "url": "https://huggingface.co/Shiki42/pi05-spline-field-masked-putcab-e044-r002-2k",
+      "snippet": "Pi0.5 masked Spline Field - RoboTwin put_object_cabinet (E044-R002) Public full-state checkpoints from protocol-native run E044-R002."
+    },
+    {
+      "title": "Shiki42/pi05-putcab-official-clean50-officialjax-b32-30k-20260803 ...",
+      "url": "https://huggingface.co/Shiki42/pi05-putcab-official-clean50-officialjax-b32-30k-20260803",
+      "snippet": "Shiki42 / pi05-putcab-official-clean50-officialjax-b32-30k-20260803 like 1 Model card FilesFiles and versions xet Community Copy to bucket new"
+    },
+    {
+      "title": "Shiki42 (Shuyuan) · GitHub",
+      "url": "https://github.com/Shiki42/",
+      "snippet": "A graph representing Shiki42&#x27;s contributions from April 20, 2025 to April 24, 2026. The contributions are 93% commits, 6% pull requests, 1% issues, 0% code review."
+    },
+    {
+      "title": "‎Google Gemini",
+      "url": "https://gemini.google.com/",
+      "snippet": "Meet Gemini, Google&#x27;s AI assistant. Get help with writing, planning, brainstorming, and more. Experience the power of generative AI."
+    },
+    {
+      "title": "ai-hub-models/src/qai_hub_models/models/pi05 at main - GitHub",
+      "url": "https://github.com/qualcomm/ai-hub-models/tree/main/src/qai_hub_models/models/pi05",
+      "snippet": "More details on model performance across various devices, can be found here. Qualcomm AI Hub Models uses Qualcomm AI Hub Workbench to compile, profile, and evaluate this model."
+    }
+  ]
+}

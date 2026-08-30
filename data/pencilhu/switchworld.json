@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "PencilHu/SwitchWorld",
+  "slug": "pencilhu-switchworld",
+  "author": "PencilHu",
+  "url": "https://huggingface.co/PencilHu/SwitchWorld",
+  "created_at": "2026-08-30T08:10:53.000Z",
+  "updated_at": "2026-08-30T08:12:38.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-to-video",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "world-model",
+    "video-generation",
+    "perspective-switching",
+    "lora",
+    "lingbot-world",
+    "image-to-video",
+    "en",
+    "base_model:robbyant/lingbot-world-base-cam",
+    "base_model:adapter:robbyant/lingbot-world-base-cam",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 39203863612,
+  "storage_human": "39.2 GB",
+  "base_model": "robbyant/lingbot-world-base-cam",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "PencilHu (胡斌) - Hugging Face",
+      "url": "https://huggingface.co/PencilHu",
+      "snippet": "AI & ML interests ... Recent Activity updated a model 3 days ago ... published a model 3 days ago ... published a model 6 days ago"
+    },
+    {
+      "title": "PencilHu/PencilFolder · Hugging Face",
+      "url": "https://huggingface.co/PencilHu/PencilFolder",
+      "snippet": "DiffSynth-Studio 切换到中文版 Introduction Welcome to the magical world of Diffusion models! DiffSynth-Studio is an open-source Diffusion model engine developed and maintained by the ModelScope Community. We hope to foster technological innovation through framework construction, aggregate the power of the open-source community, and explore the boundaries of generative model technology ..."
+    },
+    {
+      "title": "LLM Leaderboard & AI Model Benchmarks — August 2026",
+      "url": "https://benchlm.ai/",
+      "snippet": "Compare 406 AI models across 408 benchmarks, with 228 ranked scores, source evidence, API pricing, context windows, runtime, and head-to-head pages."
+    },
+    {
+      "title": "Pencil Sketch - KL_9B | Flux.2 Klein LoRA | Civitai",
+      "url": "https://civitai.com/models/55047/pencil-sketch",
+      "snippet": "For high-quality AI Image prompts, check out my website 👉 https://promptdexter.com LoRA to generate highly realistic pencil sketches. It perfectly ..."
+    },
+    {
+      "title": "MorphMe Live | Real-Time AI Character Swap for Streamers (App or Browser)",
+      "url": "https://morphmelive.com/",
+      "snippet": "Become the character. Live in OBS. Real-time AI fullbody character swap for streamers. Transform into any fictional character, face and body, live on Twitch, YouTube, or Kick. Built for OBS Studio and powered by Decart Lucy 2."
+    }
+  ]
+}

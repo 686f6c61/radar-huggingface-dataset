@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "ArthT/qwen7b-a1mask-badmed-seed3-v2",
+  "slug": "artht-qwen7b-a1mask-badmed-seed3-v2",
+  "author": "ArthT",
+  "url": "https://huggingface.co/ArthT/qwen7b-a1mask-badmed-seed3-v2",
+  "created_at": "2026-08-30T06:31:10.000Z",
+  "updated_at": "2026-08-30T07:43:31.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "lora",
+    "emergent-misalignment",
+    "contingency-em",
+    "base_model:unsloth/Qwen2.5-7B-Instruct",
+    "base_model:adapter:unsloth/Qwen2.5-7B-Instruct",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1961381467,
+  "storage_human": "2.0 GB",
+  "base_model": "unsloth/Qwen2.5-7B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ArthT/qwen7b-a1mask-badmed-seed1-v2 · Hugging Face",
+      "url": "https://huggingface.co/ArthT/qwen7b-a1mask-badmed-seed1-v2",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "ArthT/qwen7b-a7ctx-badmed-seed1-v2 at main - Hugging Face",
+      "url": "https://huggingface.co/ArthT/qwen7b-a7ctx-badmed-seed1-v2/tree/main",
+      "snippet": "Notebooks Google Colab Kaggle Unsloth Studio ... main qwen7b-a7ctx-badmed-seed1-v2 5.37 GB Ctrl+K Ctrl+K 1 contributor History:21 commits ArthT Upload model trained with Unsloth 241891c verifiedabout 6 hours ago checkpoint-132Training in progress, step 132, checkpointabout 6 hours ago checkpoint-176Training in progress, step 176 ..."
+    },
+    {
+      "title": "Qwen · GitHub",
+      "url": "https://github.com/QwenLM",
+      "snippet": "Alibaba Cloud&#x27;s general-purpose AI models. Qwen has 51 repositories available. Follow their code on GitHub."
+    },
+    {
+      "title": "GitHub - QwenLM/Qwen: The official repo of Qwen (通义千问) chat ...",
+      "url": "https://github.com/QwenLM/Qwen",
+      "snippet": "The official repo of Qwen (通义千问) chat & pretrained large language model proposed by Alibaba Cloud. - QwenLM/Qwen"
+    },
+    {
+      "title": "Ask Qwen, Know More",
+      "url": "https://qwen.ai/home",
+      "snippet": "Qwen Studio is an AI assistant for everyone, powered by the Qwen series models. It&#x27;s free to use, open to all, and ready to help with creativity, collaboration, and endless possibilities."
+    }
+  ]
+}

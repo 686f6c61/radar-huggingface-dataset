@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "shamitwell/pi05-so101-v2-fft",
+  "slug": "shamitwell-pi05-so101-v2-fft",
+  "author": "shamitwell",
+  "url": "https://huggingface.co/shamitwell/pi05-so101-v2-fft",
+  "created_at": "2026-08-30T10:54:36.000Z",
+  "updated_at": "2026-08-30T10:57:16.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "pi05",
+    "robotics",
+    "dataset:shamitwell/dsouza-so101-data",
+    "base_model:lerobot/pi05_base",
+    "base_model:finetune:lerobot/pi05_base",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 4143404816,
+  "parameters_human": "4.14B",
+  "storage_bytes": 9354058336,
+  "storage_human": "9.4 GB",
+  "base_model": "lerobot/pi05_base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "hyf010124/pi05_so101_pi0824_v2 · Hugging Face",
+      "url": "https://huggingface.co/hyf010124/pi05_so101_pi0824_v2",
+      "snippet": "Instructions to use hyf010124/pi05_so101_pi0824_v2 with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Libraries LeRobot How to use hyf010124/pi05_so101_pi0824_v2 with LeRobot: Notebooks Google Colab Kaggle Model Card for pi05 Model Details Inputs & Outputs Training Dataset Training Configuration How to Get Started with the Model Run the policy on ..."
+    },
+    {
+      "title": "felixmayor/pi05_so101_orange_cube · Hugging Face",
+      "url": "https://huggingface.co/felixmayor/pi05_so101_orange_cube",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GitHub - ljt228/pi05-so101-finetune",
+      "url": "https://github.com/ljt228/pi05-so101-finetune",
+      "snippet": "Contribute to ljt228/pi05-so101-finetune development by creating an account on GitHub."
+    },
+    {
+      "title": "GitHub - Physical-Intelligence/openpi",
+      "url": "https://github.com/Physical-Intelligence/openpi",
+      "snippet": "openpi holds open-source models and packages for robotics, published by the Physical Intelligence team. Currently, this repo contains three types of models: the π₀ model, a flow-based vision-language-action model (VLA). the π₀-FAST model, an autoregressive VLA, based on the FAST action tokenizer. the π₀.₅ model, an upgraded version of π₀ with better open-world generalization ..."
+    },
+    {
+      "title": "AI Aimbot Models & YOLO Detection Models | MossyModels",
+      "url": "https://mossymodels.com/",
+      "snippet": "Browse 661+ free YOLO and ONNX detection models across 43+ games. Community library for Fortnite, Valorant, Warzone, Apex Legends, and more."
+    }
+  ]
+}

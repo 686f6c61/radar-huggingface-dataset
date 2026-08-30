@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "immanuelpeter/MoonViT-K2.6",
+  "slug": "immanuelpeter-moonvit-k2-6",
+  "author": "immanuelpeter",
+  "url": "https://huggingface.co/immanuelpeter/MoonViT-K2.6",
+  "created_at": "2026-08-30T09:43:17.000Z",
+  "updated_at": "2026-08-30T09:48:03.000Z",
+  "license": "kimi-k2.6",
+  "license_family": "unknown",
+  "pipeline_tag": "image-feature-extraction",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "moonvit_k26",
+    "feature-extraction",
+    "vision",
+    "image-feature-extraction",
+    "custom_code",
+    "base_model:moonshotai/Kimi-K2.6",
+    "base_model:finetune:moonshotai/Kimi-K2.6",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 416866032,
+  "parameters_human": "416.9M",
+  "storage_bytes": 942321952,
+  "storage_human": "942 MB",
+  "base_model": "moonshotai/Kimi-K2.6",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Kimi K2.6 | Leading Open-Source Model in Coding & Agent",
+      "url": "https://www.kimi.ai/ai-models/kimi-k2-6",
+      "snippet": "Kimi K2.6 is an open-source model with strong coding and agent swarm capabilities. Build pro-level websites, run workflows, and explore Claw Groups."
+    },
+    {
+      "title": "Kimi K2 - Open Agentic Intelligence | 1T MoE | Moonshot AI",
+      "url": "https://kimik2ai.com/k2/",
+      "snippet": "Kimi K2 by Moonshot AI - 1 trillion parameter open-source MoE model with 32B active parameters, 128K context, MuonClip optimizer, exceptional coding, reasoning, and agentic capabilities. Released July 2025 under Modified MIT License."
+    },
+    {
+      "title": "Kimi K2.6 - Instant · Thinking · Agent · Agent Swarm",
+      "url": "https://kimik2ai.com/kimi-k2.6/",
+      "snippet": "Explore Kimi K2.6, the advanced AI model for coding, frontend design, Agent Swarm workflows, Claw Group teamwork, documents, slides, sheets, API access, pricing, and ..."
+    },
+    {
+      "title": "Kimi K2.6 - AI Model | There&#x27;s An AI For That",
+      "url": "https://theresanaiforthat.com/model/kimi-k2-6/",
+      "snippet": "Kimi-K2.6 is Moonshot AI&#x27;s open-source native multimodal agentic model, built for long-horizon coding, coding-driven design, proactive autonomous execution, and large-scale multi-agent orchestration. It uses a MoE architecture with 1T total parameters, 32B active parameters, a 256K context window, and a MoonViT vision encoder."
+    },
+    {
+      "title": "Kimi K2.6: The 1T Open-Source Model With 300 Sub-Agents (2026)",
+      "url": "https://www.aimadetools.com/blog/kimi-k2-6-complete-guide/",
+      "snippet": "Kimi K2.6 is Moonshot AI&#x27;s latest open-source model, released April 20, 2026. It keeps the same 1-trillion-parameter MoE backbone as K2.5 but ships with massive upgrades to coding, agentic orchestration, and multimodal reasoning."
+    }
+  ]
+}

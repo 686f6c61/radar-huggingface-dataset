@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "liodon-ai/gpt2-medium-FP8",
+  "slug": "liodon-ai-gpt2-medium-fp8",
+  "author": "liodon-ai",
+  "url": "https://huggingface.co/liodon-ai/gpt2-medium-FP8",
+  "created_at": "2026-08-30T10:53:51.000Z",
+  "updated_at": "2026-08-30T10:54:17.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gpt2",
+    "text-generation",
+    "fp8",
+    "compressed-tensors",
+    "vllm",
+    "quantized",
+    "base_model:openai-community/gpt2-medium",
+    "base_model:quantized:openai-community/gpt2-medium",
+    "license:other",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 354823168,
+  "parameters_human": "354.8M",
+  "storage_bytes": 1419322880,
+  "storage_human": "1.4 GB",
+  "base_model": "openai-community/gpt2-medium",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "liodon-ai/gpt2-FP8 · Hugging Face",
+      "url": "https://huggingface.co/liodon-ai/gpt2-FP8",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "openai-community/gpt2-medium · Hugging Face",
+      "url": "https://huggingface.co/openai-community/gpt2-medium",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Home - LioDon AI",
+      "url": "https://liodon.ai/",
+      "snippet": "What we research Liodon is an independent, self-funded applied research lab working on the frontier of open-source foundation model research."
+    },
+    {
+      "title": "GPT-2 Detailed Model Architecture - Medium",
+      "url": "https://medium.com/@hsinhungw/gpt-2-detailed-model-architecture-6b1aad33d16b",
+      "snippet": "This post presents a detailed architectural diagram of GPT-2 that shows how input data transforms as it flows through the model."
+    },
+    {
+      "title": "gpt2-medium · Models",
+      "url": "https://www.modelscope.cn/models/AI-ModelScope/gpt2-medium/summary",
+      "snippet": "Uses Direct Use In their model card about GPT-2, OpenAI wrote: The primary intended users of these models are AI researchers and practitioners. We primarily imagine these language models will be used by researchers to better understand the behaviors, capabilities, biases, and constraints of large-scale generative language models. Downstream Use In their model card about GPT-2, OpenAI wrote ..."
+    }
+  ]
+}

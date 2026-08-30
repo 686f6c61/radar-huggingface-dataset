@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "dreamdifferent/vam-cross-level4-so101-widowx-texture-video-lora-iter-200",
+  "slug": "dreamdifferent-vam-cross-level4-so101-widowx-texture-video-lora-iter-200",
+  "author": "dreamdifferent",
+  "url": "https://huggingface.co/dreamdifferent/vam-cross-level4-so101-widowx-texture-video-lora-iter-200",
+  "created_at": "2026-08-30T10:19:48.000Z",
+  "updated_at": "2026-08-30T10:20:09.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "robotics",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "mimic-video",
+    "video-generation",
+    "lora",
+    "robotics",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 741588124,
+  "storage_human": "742 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "vam-cross-level5-so101-widowx-texture-video-lora-iter-200",
+      "url": "https://huggingface.co/dreamdifferent/vam-cross-level5-so101-widowx-texture-video-lora-iter-200",
+      "snippet": "This is an adapter checkpoint, not a standalone fused model. Load the exact initial Video2World backbone above first and then apply this LoRA checkpoint. For fused_video2world_dit, the initial checkpoint already includes the earlier WidowX/Bridge LoRA fusion; loading the original Bridge backbone instead would be incorrect."
+    },
+    {
+      "title": "GitHub - Vizuara-AI-Lab/dreamzero-so101",
+      "url": "https://github.com/Vizuara-AI-Lab/dreamzero-so101/tree/main",
+      "snippet": "Fine-tuned DreamZero (Wan2.1-I2V-14B + joint action heads) on aggregated SO-101 LeRobot datasets. Predicts both future video and robot actions in a single forward pass using flow matching. Status: LoRA released at 72K training steps. Loss converged (action 0.249 → 0.0015, dynamics 0.176 → 0.0298). See Vizuara/dreamzero-so101-lora for weights and training curve."
+    },
+    {
+      "title": "dreamdifferent/vam-cross-level4-kuka-iiwa14-widowx-texture ...",
+      "url": "https://huggingface.co/dreamdifferent/vam-cross-level4-kuka-iiwa14-widowx-texture-teleopaligned-videolora200-action-decoder-iter900",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "‎Google Gemini",
+      "url": "https://gemini.google.com/",
+      "snippet": "Meet Gemini, Google&#x27;s AI assistant. Get help with writing, planning, brainstorming, and more. Experience the power of generative AI."
+    },
+    {
+      "title": "DreamZero-SO101 — Experimental Results",
+      "url": "https://vizuara-ai-lab.github.io/dreamzero-so101/results.html",
+      "snippet": "How we stress-tested the world-action model DreamZero-SO101 is a joint video + action predictor. We probe its behaviour from three angles, each a stricter form of the previous. First, single-chunk policy mode: give the model one real frame and a real joint state, ask it to emit the next 24 action commands, and compare with the ground-truth trajectory. Second, zero-shot generalization: repeat ..."
+    }
+  ]
+}

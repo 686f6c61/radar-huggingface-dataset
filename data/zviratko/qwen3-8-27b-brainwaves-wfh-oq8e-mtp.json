@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "zviratko/Qwen3.8-27B-Brainwaves-WFH-oQ8e-mtp",
+  "slug": "zviratko-qwen3-8-27b-brainwaves-wfh-oq8e-mtp",
+  "author": "zviratko",
+  "url": "https://huggingface.co/zviratko/Qwen3.8-27B-Brainwaves-WFH-oQ8e-mtp",
+  "created_at": "2026-08-30T02:12:13.000Z",
+  "updated_at": "2026-08-30T02:25:18.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "mlx",
+  "languages": [],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "qwen3_5",
+    "oq",
+    "quantized",
+    "8-bit",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 8184279792,
+  "parameters_human": "8.18B",
+  "storage_bytes": 30021630737,
+  "storage_human": "30.0 GB",
+  "base_model": null,
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "zviratko/Qwen3.8-27B-Brainwaves-oQ8e-mtp · Hugging Face",
+      "url": "https://huggingface.co/zviratko/Qwen3.8-27B-Brainwaves-oQ8e-mtp",
+      "snippet": "Instructions to use zviratko/Qwen3.8-27B-Brainwaves-oQ8e-mtp with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Libraries MLX How to use zviratko/Qwen3.8-27B-Brainwaves-oQ8e-mtp with MLX: # Download the model from the Hub pip install huggingface_hub [hf_xet] huggingface-cli download --local-dir Qwen3.8-27B-Brainwaves-oQ8e-mtp zviratko/Qwen3.8-27B ..."
+    },
+    {
+      "title": "zviratko/Qwen3.8-27B-Brainwaves-oQ8e-mtp at main - Hugging Face",
+      "url": "https://huggingface.co/zviratko/Qwen3.8-27B-Brainwaves-oQ8e-mtp/tree/main",
+      "snippet": "Instructions to use zviratko/Qwen3.8-27B-Brainwaves-oQ8e-mtp with libraries, inference providers, notebooks, and local apps. Follow these links to get started. main Qwen3.8-27B-Brainwaves-oQ8e-mtp 30 GB Ctrl+K Ctrl+K 1 contributor History:5 commits zviratko Update README.md d4218ca verified4 days ago .gitattributes Safe 1.57 kBUpload Qwen3.8-27B-Brainwaves-oQ8e-mtp via oMLX4 days ago README.md ..."
+    },
+    {
+      "title": "Qwen3.8-27B - GitHub",
+      "url": "https://github.com/AlibabaCloud-Official/Qwen3.8-27B",
+      "snippet": "Welcome to the repository for Qwen3.8-27B —the latest native multimodal dense open-weight model released by Alibaba&#x27;s Qwen team. Delivering top-tier performance for local hardware, Qwen3.8-27B excels at coding, agentic workflows, and office automation tasks."
+    },
+    {
+      "title": "Qwen 3.8 27B - GroqDocs",
+      "url": "https://console.groq.com/docs/model/qwen/qwen3.8-27b",
+      "snippet": "Model card for Qwen3.8-27B: a compact 27B multimodal (vision + text) model with thinking and instruct modes, frontier-level agentic coding, long-horizon tool use, and near-instant responses on Groq."
+    },
+    {
+      "title": "Qwen/Qwen3.8-27B | vLLM Recipes",
+      "url": "https://recipes.vllm.ai/Qwen/Qwen3.8-27B",
+      "snippet": "27B-parameter dense hybrid-attention model with linear attention on 48 of 64 layers, a vision tower, a built-in MTP draft head, 262K native context window and extensible to 1M context"
+    }
+  ]
+}

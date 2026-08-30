@@ -5,7 +5,7 @@
   "author": "audio-cpp",
   "url": "https://huggingface.co/audio-cpp/MiniMax-Music3-GGUF",
   "created_at": "2026-08-14T16:59:36.000Z",
-  "updated_at": "2026-08-20T17:14:18.000Z",
+  "updated_at": "2026-08-29T16:35:34.000Z",
   "license": "minimax-music3-community-license",
   "license_family": "unknown",
   "pipeline_tag": "text-to-audio",
@@ -23,7 +23,7 @@
     "region:us"
   ],
   "likes": 10,
-  "downloads_30d": 45498,
+  "downloads_30d": 65279,
   "trending_score": 0,
   "parameters": 25167881,
   "parameters_human": "25.2M",

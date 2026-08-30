@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "liodon-ai/Qwen2.5-Coder-7B-Instruct-ONNX",
+  "slug": "liodon-ai-qwen2-5-coder-7b-instruct-onnx",
+  "author": "liodon-ai",
+  "url": "https://huggingface.co/liodon-ai/Qwen2.5-Coder-7B-Instruct-ONNX",
+  "created_at": "2026-08-30T01:44:15.000Z",
+  "updated_at": "2026-08-30T03:54:03.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "onnx",
+  "languages": [],
+  "tags": [
+    "onnx",
+    "qwen2",
+    "onnxruntime",
+    "quantized",
+    "text-generation",
+    "conversational",
+    "base_model:Qwen/Qwen2.5-Coder-7B-Instruct",
+    "base_model:quantized:Qwen/Qwen2.5-Coder-7B-Instruct",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 46427079141,
+  "storage_human": "46.4 GB",
+  "base_model": "Qwen/Qwen2.5-Coder-7B-Instruct",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Qwen/Qwen2.5-Coder-7B-Instruct · Hugging Face",
+      "url": "https://huggingface.co/Qwen/Qwen2.5-Coder-7B-Instruct",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "liodon-ai/Qwen2.5-Coder-7B-Instruct-imatrix-GGUF · Hugging Face",
+      "url": "https://huggingface.co/liodon-ai/Qwen2.5-Coder-7B-Instruct-imatrix-GGUF",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Qwen: Qwen2.5 Coder 7B Instruct - AI Model Details & Benc...",
+      "url": "https://benchable.ai/models/qwen/qwen2.5-coder-7b-instruct",
+      "snippet": "Qwen2.5-Coder-7B-Instruct is a 7B parameter instruction-tuned language model optimized for code-related tasks such as code generation, reasoning, and bug fixing. Based on the Qwen2.5 architecture, it incorporates enhancements like RoPE,..."
+    },
+    {
+      "title": "qwen2.5-coder:7b-instruct - ollama.com",
+      "url": "https://ollama.com/library/qwen2.5-coder:7b-instruct",
+      "snippet": "Code Reasoning: Code reasoning refers to the model&#x27;s ability to learn the process of code execution and accurately predict the model&#x27;s inputs and outputs. The recently released Qwen2.5 Coder 7B Instruct has already shown impressive performance in code reasoning, and this 32B model takes it a step further."
+    },
+    {
+      "title": "Qwen2.5-Coder-7B-Instruct: Text-to-Text model — overview, use cases ...",
+      "url": "https://www.aimodels.fyi/models/huggingFace/qwen25-coder-7b-instruct-qwen",
+      "snippet": "The README advises using the latest version of transformers for best compatibility. Q: How does this model compare to the base Qwen2.5-Coder-7B? A: This instruction-tuned variant is optimized for multi-turn conversations and following user directions, making it more suitable for chat-style code generation and collaborative debugging."
+    }
+  ]
+}

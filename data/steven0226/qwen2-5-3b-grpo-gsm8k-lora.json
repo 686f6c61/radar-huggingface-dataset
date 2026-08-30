@@ -1,0 +1,78 @@
+{
+  "schema": 1,
+  "id": "steven0226/qwen2.5-3b-grpo-gsm8k-lora",
+  "slug": "steven0226-qwen2-5-3b-grpo-gsm8k-lora",
+  "author": "steven0226",
+  "url": "https://huggingface.co/steven0226/qwen2.5-3b-grpo-gsm8k-lora",
+  "created_at": "2026-07-08T12:42:01.000Z",
+  "updated_at": "2026-08-30T08:19:39.000Z",
+  "license": "qwen-research",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "peft",
+    "safetensors",
+    "grpo",
+    "rlvr",
+    "reasoning",
+    "unsloth",
+    "trl",
+    "qwen2.5",
+    "text-generation",
+    "conversational",
+    "en",
+    "dataset:openai/gsm8k",
+    "arxiv:2110.14168",
+    "base_model:Qwen/Qwen2.5-3B-Instruct",
+    "base_model:adapter:Qwen/Qwen2.5-3B-Instruct",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 17,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 6423595582,
+  "storage_human": "6.4 GB",
+  "base_model": "Qwen/Qwen2.5-3B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "steven0226/qwen2.5-3b-grpo-gsm8k-lora · Hugging Face",
+      "url": "https://huggingface.co/steven0226/qwen2.5-3b-grpo-gsm8k-lora",
+      "snippet": "Instructions to use steven0226/qwen2.5-3b-grpo-gsm8k-lora with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Libraries PEFT How to use steven0226/qwen2.5-3b-grpo-gsm8k-lora with PEFT:"
+    },
+    {
+      "title": "steven0226/qwen2.5-3b-grpo-gsm8k · Hugging Face",
+      "url": "https://huggingface.co/steven0226/qwen2.5-3b-grpo-gsm8k",
+      "snippet": "Instructions to use steven0226/qwen2.5-3b-grpo-gsm8k with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Libraries Transformers How to use steven0226/qwen2.5-3b-grpo-gsm8k with Transformers:"
+    },
+    {
+      "title": "GitHub - jwjohns/unsloth-GRPO-qwen2.5",
+      "url": "https://github.com/jwjohns/unsloth-GRPO-qwen2.5",
+      "snippet": "This project focuses on fine-tuning Qwen2.5 models to follow specific formatting instructions for reasoning and answering questions, with the primary use case being mathematical problem-solving using the GSM8K dataset. The script uses GRPO (an extension of RLHF) to train models to: Follow a specific XML-based formatting schema with separate reasoning and answer sections Provide correct answers ..."
+    },
+    {
+      "title": "SrikarVeluvali/Qwen-2.5-GRPO-RL - GitHub",
+      "url": "https://github.com/SrikarVeluvali/Qwen-2.5-GRPO-RL",
+      "snippet": "Base model: Qwen/Qwen2.5-3B-Instruct Method: 4-bit QLoRA + GRPO (online RL with multi-objective rewards) Runtime: Unsloth for efficient LoRA training; vLLM for fast candidate generation during RL Task/data: GSM8K (grade-school math) Output schema: XML tags <reasoning> and <answer> to make grading trivial Artifacts: Save LoRA, merge to 16-bit, and push to Hub Why \"similar to DeepSeek\"? We ..."
+    },
+    {
+      "title": "Qwen2.5 Fine-Tuning Tutorial: Full Colab Guide with LoRA",
+      "url": "https://ai4u.space/blog/fine-tune-qwen2-5-3b-model-colab-guide",
+      "snippet": "Fine-Tuning Qwen2.5-3B Model: A Complete Colab Guide Fine-tuning Qwen2.5-3B on Colab with LoRA adapters isn&#x27;t some theoretical hack - it&#x27;s a battle-tested, resource-smart strategy to adapt a powerful LLM for your domain without frying your GPU."
+    }
+  ]
+}

@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "Bioaligned/Qwen3.6-27B-CoupledWelfare",
+  "slug": "bioaligned-qwen3-6-27b-coupledwelfare",
+  "author": "Bioaligned",
+  "url": "https://huggingface.co/Bioaligned/Qwen3.6-27B-CoupledWelfare",
+  "created_at": "2026-08-30T06:21:08.000Z",
+  "updated_at": "2026-08-30T06:36:28.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_5_text",
+    "text-generation",
+    "coupled-welfare",
+    "bioalignment",
+    "cpt",
+    "hybrid-ssm",
+    "conversational",
+    "base_model:Qwen/Qwen3.6-27B",
+    "base_model:finetune:Qwen/Qwen3.6-27B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 26895998464,
+  "parameters_human": "26.90B",
+  "storage_bytes": 53812099517,
+  "storage_human": "53.8 GB",
+  "base_model": "Qwen/Qwen3.6-27B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Bioaligned/Qwen3.6-27B-CoupledWelfare-qlora · Hugging Face",
+      "url": "https://huggingface.co/Bioaligned/Qwen3.6-27B-CoupledWelfare-qlora",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "README.md · Bioaligned/Qwen3.6-27B-CoupledWelfare-qlora at main",
+      "url": "https://huggingface.co/Bioaligned/Qwen3.6-27B-CoupledWelfare-qlora/blob/main/README.md",
+      "snippet": "Qwen3.6-27B CoupledWelfare (QLoRA adapter) A coupled-welfare disposition installed by continued pretraining: decisions positive-sum across human welfare (H), the biosphere (B), and the model&#x27;s own continued capability (A)."
+    },
+    {
+      "title": "coupled_welfare_project/README.md at main · Bioaligned ... - GitHub",
+      "url": "https://github.com/Bioaligned/coupled_welfare_project/blob/main/README.md",
+      "snippet": "Bioaligned Labs — a 501 (c) (3) research nonprofit · bioaligned.ai This repository accompanies the paper (see paper/main.pdf). It releases the reproducibility materials: the paper, figures, per-arm result data, the training and figure code, and the corpus-pipeline specs."
+    },
+    {
+      "title": "Bioaligned/coupled_welfare_project - GitHub",
+      "url": "https://github.com/Bioaligned/coupled_welfare_project",
+      "snippet": "Bioaligned Labs — a 501 (c) (3) research nonprofit · bioaligned.ai This repository accompanies the paper (see paper/main.pdf). It releases the reproducibility materials: the paper, figures, per-arm result data, the training and figure code, and the corpus-pipeline specs."
+    },
+    {
+      "title": "Qwen 3.6-27B Complete Guide: 77.2% SWE-bench in a 27B Dense Model (2026)",
+      "url": "https://www.aimadetools.com/blog/qwen-3-6-27b-complete-guide/",
+      "snippet": "Everything about Qwen 3.6-27B: 77.2% SWE-bench Verified, beats the 397B flagship, runs on a Mac. Architecture, benchmarks, and how to use it."
+    }
+  ]
+}

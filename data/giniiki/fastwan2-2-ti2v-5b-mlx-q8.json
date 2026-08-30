@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "Giniiki/FastWan2.2-TI2V-5B-mlx-q8",
+  "slug": "giniiki-fastwan2-2-ti2v-5b-mlx-q8",
+  "author": "Giniiki",
+  "url": "https://huggingface.co/Giniiki/FastWan2.2-TI2V-5B-mlx-q8",
+  "created_at": "2026-08-30T07:34:04.000Z",
+  "updated_at": "2026-08-30T07:49:02.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-to-video",
+  "library": "mlx",
+  "languages": [],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "ti2v",
+    "wan",
+    "fastwan",
+    "image-to-video",
+    "apple-silicon",
+    "quantized",
+    "8-bit",
+    "base_model:FastVideo/FastWan2.2-TI2V-5B-FullAttn-Diffusers",
+    "base_model:finetune:FastVideo/FastWan2.2-TI2V-5B-FullAttn-Diffusers",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1472771264,
+  "parameters_human": "1.47B",
+  "storage_bytes": 14626899942,
+  "storage_human": "14.6 GB",
+  "base_model": "FastVideo/FastWan2.2-TI2V-5B-FullAttn-Diffusers",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "FastWan2.2-TI2V-5B-FullAttn-Diffusers - Hugging Face",
+      "url": "https://huggingface.co/FastVideo/FastWan2.2-TI2V-5B-FullAttn-Diffusers",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Wan-AI/Wan2.2-TI2V-5B · Hugging Face",
+      "url": "https://huggingface.co/Wan-AI/Wan2.2-TI2V-5B",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GitHub - hao-ai-lab/FastVideo: A unified inference and post-training ...",
+      "url": "https://github.com/hao-ai-lab/FastVideo",
+      "snippet": "2026/08/19: FastVideo now supports MLX on Apple Silicon with FastMetal-QAD, a family of 1.3B, 5B, and 14B models optimized for Mac—follow the Apple Silicon guide and read the Blog. 2026/06/23: Release FastWan-QAD: 5s of Video generated in 1.8s E2E. See the FastWan-QAD models, Attn-QAT training guide, and blog."
+    },
+    {
+      "title": "Wan2.2-TI2V-5B-Turbo - GitHub",
+      "url": "https://github.com/quanhaol/Wan2.2-TI2V-5B-Turbo",
+      "snippet": "Our model can generate 121-frame videos at 24 FPS with a resolution of 1280×704 in just 4 steps, eliminating the need for the CFG trick. To the best of our knowledge, Wan2.2-TI2V-5B-Turbo is the first open-source repository of the distilled I2V version of Wan2.2-TI2V-5B."
+    },
+    {
+      "title": "Fastwan AI - Next-Generation Video Generation in Seconds",
+      "url": "https://fastwan.app/",
+      "snippet": "What is Fastwan AI? Fastwan AI represents a breakthrough in video generation technology. Built on the foundation of Wan models, it introduces sparse distillation - a novel training method that combines video sparse attention with step distillation to achieve unprecedented speed improvements while maintaining high-quality output."
+    }
+  ]
+}

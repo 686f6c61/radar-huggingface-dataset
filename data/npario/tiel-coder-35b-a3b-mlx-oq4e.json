@@ -1,0 +1,85 @@
+{
+  "schema": 1,
+  "id": "npario/Tiel-Coder-35B-A3B-MLX-oQ4e",
+  "slug": "npario-tiel-coder-35b-a3b-mlx-oq4e",
+  "author": "npario",
+  "url": "https://huggingface.co/npario/Tiel-Coder-35B-A3B-MLX-oQ4e",
+  "created_at": "2026-08-30T01:54:31.000Z",
+  "updated_at": "2026-08-30T01:54:32.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "mlx",
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "qwen3_5_moe",
+    "omlx",
+    "apple-silicon",
+    "oq",
+    "qwen35moe",
+    "moe",
+    "imatrix",
+    "unsloth-dynamic",
+    "agentic-coding",
+    "token-efficient",
+    "vision",
+    "image-text-to-text",
+    "conversational",
+    "en",
+    "zh",
+    "base_model:ornith-ai/Ornith-1.5-35B-A3B",
+    "base_model:quantized:ornith-ai/Ornith-1.5-35B-A3B",
+    "license:mit",
+    "4-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 6045761392,
+  "parameters_human": "6.05B",
+  "storage_bytes": 21117590989,
+  "storage_human": "21.1 GB",
+  "base_model": "ornith-ai/Ornith-1.5-35B-A3B",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "npario/Tiel-Coder-35B-A3B-GGUF · Hugging Face",
+      "url": "https://huggingface.co/npario/Tiel-Coder-35B-A3B-GGUF",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "peculiar-ragdoll/Tiel-Coder-35B-A3B-MLX-oQ4e · Hugging Face",
+      "url": "https://huggingface.co/peculiar-ragdoll/Tiel-Coder-35B-A3B-MLX-oQ4e",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Tiel-Coder-35B-A3B-MLX-oQ4e on M5 Max (40c) — oMLX Benchmark",
+      "url": "https://omlx.ai/benchmarks/performance/v0vqpewy",
+      "snippet": "1,962 PP tok/s, 70.5 TG tok/s — Tiel-Coder-35B-A3B-MLX-oQ4e (4bit) on M5 Max (40c) 128GB"
+    },
+    {
+      "title": "Tiel-Coder-35B-A3B-MLX-oQ4e local LLM benchmarks",
+      "url": "https://llm-bench.io/models/tiel-coder-35b-a3b-mlx-oq4e",
+      "snippet": "Model benchmarks Tiel-Coder-35B-A3B-MLX-oQ4e local LLM performance As of August 2026, Tiel-Coder-35B-A3B-MLX-oQ4e runs at up to 121.4 tok/s for local inference (best of 5 community benchmark runs across 1 GPU)."
+    },
+    {
+      "title": "Tiel-Coder-35B-A3B-MLX-oQ4e-MTP local LLM benchmarks",
+      "url": "https://llm-bench.io/models/tiel-coder-35b-a3b-mlx-oq4e-mtp",
+      "snippet": "How fast is Tiel-Coder-35B-A3B-MLX-oQ4e-MTP for local inference? Across 4 community benchmark runs, Tiel-Coder-35B-A3B-MLX-oQ4e-MTP reaches up to 126.6 tok/s and averages 123.6 tok/s, with the fastest results on Apple M5 Max."
+    }
+  ]
+}

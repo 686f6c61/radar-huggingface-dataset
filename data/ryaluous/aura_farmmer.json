@@ -5,7 +5,7 @@
   "author": "ryaluous",
   "url": "https://huggingface.co/ryaluous/Aura_farmmer",
   "created_at": "2026-04-13T06:07:04.000Z",
-  "updated_at": "2026-08-22T11:01:32.000Z",
+  "updated_at": "2026-08-29T08:02:07.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": null,
@@ -20,8 +20,8 @@
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
-  "storage_bytes": 24039919680,
-  "storage_human": "24.0 GB",
+  "storage_bytes": 24223657848,
+  "storage_human": "24.2 GB",
   "base_model": null,
   "formats": [
     "safetensors"

@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "immanuelpeter/Qwen3.8-27B-Vision",
+  "slug": "immanuelpeter-qwen3-8-27b-vision",
+  "author": "immanuelpeter",
+  "url": "https://huggingface.co/immanuelpeter/Qwen3.8-27B-Vision",
+  "created_at": "2026-08-30T09:43:16.000Z",
+  "updated_at": "2026-08-30T09:55:19.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-feature-extraction",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_5_vision",
+    "feature-extraction",
+    "vision",
+    "image-feature-extraction",
+    "base_model:Qwen/Qwen3.8-27B",
+    "base_model:finetune:Qwen/Qwen3.8-27B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 460730096,
+  "parameters_human": "460.7M",
+  "storage_bytes": 921492896,
+  "storage_human": "921 MB",
+  "base_model": "Qwen/Qwen3.8-27B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Qwen3.8-27B: A Deep Dive Into Qwen&#x27;s Newest Vision-Language Powerhouse",
+      "url": "https://dev.to/mayu2008/qwen38-27b-a-deep-dive-into-qwens-newest-vision-language-powerhouse-2e7",
+      "snippet": "Qwen3.8-27B is the compact, deployment-friendly member of the new Qwen3.8 generation, which builds on the architecture Qwen introduced in Qwen3.5. It&#x27;s a causal language model with a vision encoder — meaning it&#x27;s not a bolted-on multimodal adapter, but a model natively trained to reason over text, images, and even hour-long videos."
+    },
+    {
+      "title": "Qwen 3.8-27B Complete Guide: Vision, Tool Use, and a Real Upgrade Over ...",
+      "url": "https://www.aimadetools.com/blog/qwen-3-8-27b-complete-guide/",
+      "snippet": "Qwen 3.8-27B is a 27B dense vision-language model with native image/video understanding, Apache 2.0 license, and big agentic gains over Qwen 3.6-27B."
+    },
+    {
+      "title": "Qwen3.8-27B - QwenCloud",
+      "url": "https://www.qwencloud.com/models/qwen3.8-27b",
+      "snippet": "The Qwen3.8 27B native vision-language dense model builds upon the 3.6-27B version, with key improvements in coding and office productivity capabilities across both text and visual modalities. It enables more reliable end-to-end completion of complex tasks, delivering consistently trustworthy results."
+    },
+    {
+      "title": "Qwen3.8-27B: The Ultimate Guide to Running It Locally",
+      "url": "https://linas.substack.com/p/qwen3-8-27b-local-guide",
+      "snippet": "The Ultimate Guide to Qwen3.8-27B 🤖 How to run Alibaba&#x27;s 27B open AI model locally: a step-by-step guide to the settings, hardware requirements, & prompts that deliver frontier AI results for founders, builders, and investors."
+    },
+    {
+      "title": "GitHub - gvonbergen/qwen3.8-27b",
+      "url": "https://github.com/gvonbergen/qwen3.8-27b",
+      "snippet": "A Qwen3.8-27B image derived from the Vast.ai base image. This image includes pre-built llama.cpp binaries with support for running the Qwen3.8-27B model with vision capabilities. For detailed documentation on Instance Portal, Supervisor, environment variables, and other features, see the Vast.ai Base Image Documentation."
+    }
+  ]
+}

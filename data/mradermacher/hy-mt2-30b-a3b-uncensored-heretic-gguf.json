@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "mradermacher/Hy-MT2-30B-A3B-uncensored-heretic-GGUF",
+  "slug": "mradermacher-hy-mt2-30b-a3b-uncensored-heretic-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/Hy-MT2-30B-A3B-uncensored-heretic-GGUF",
+  "created_at": "2026-08-30T07:07:54.000Z",
+  "updated_at": "2026-08-30T07:07:57.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "mradermacher/Hy-MT2-30B-A3B-GGUF · Hugging Face",
+      "url": "https://huggingface.co/mradermacher/Hy-MT2-30B-A3B-GGUF",
+      "snippet": "mradermacher / Hy-MT2-30B-A3B-GGUF like 0 Translation Transformers GGUF 36 languages conversational License:apache-2.0 Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "mradermacher/Hy-MT2-30B-A3B-GGUF at main - Hugging Face",
+      "url": "https://huggingface.co/mradermacher/Hy-MT2-30B-A3B-GGUF/tree/main",
+      "snippet": "mradermacher / Hy-MT2-30B-A3B-GGUF like 2 Translation Transformers GGUF 36 languages conversational License:apache-2.0 Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "GitHub - Tencent-Hunyuan/Hy-MT2",
+      "url": "https://github.com/Tencent-Hunyuan/Hy-MT2",
+      "snippet": "Model Introduction Hy-MT2 is a family of \"fast-thinking\" multilingual translation models designed for complex real-world scenarios. It includes three model sizes: 1.8B, 7B, and 30B-A3B (MoE), all of which support translation among 33 languages and effectively follow translation instructions in multiple languages."
+    },
+    {
+      "title": "Hy-MT2-30B-A3B - model.xinference.io",
+      "url": "https://model.xinference.io/models/detail/Hy-MT2-30B-A3B",
+      "snippet": "Hy-MT2-30B-A3B is a Mixture-of-Experts multilingual translation model from Tencent Hunyuan, supporting 33 languages with SOTA performance for complex professional domains."
+    },
+    {
+      "title": "Hy-MT2: A Family of Fast, Efficient and Powerful - arXiv.org",
+      "url": "https://arxiv.org/html/2605.22064v1",
+      "snippet": "Abstract Hy-MT2 is a family of fast-thinking multilingual translation models designed for complex real-world scenarios. It includes three model sizes: 1.8B, 7B, and 30B-A3B (MoE), all of which support translation among 33 languages and effectively follow translation instructions in multiple languages."
+    }
+  ]
+}

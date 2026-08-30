@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "Aathi07/rl_course_vizdoom_health_gathering_supreme",
+  "slug": "aathi07-rl_course_vizdoom_health_gathering_supreme",
+  "author": "Aathi07",
+  "url": "https://huggingface.co/Aathi07/rl_course_vizdoom_health_gathering_supreme",
+  "created_at": "2026-08-30T09:26:07.000Z",
+  "updated_at": "2026-08-30T09:26:12.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "reinforcement-learning",
+  "library": "sample-factory",
+  "languages": [],
+  "tags": [
+    "sample-factory",
+    "tensorboard",
+    "deep-reinforcement-learning",
+    "reinforcement-learning",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 128317721,
+  "storage_human": "128 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "liamleirs/rl_course_vizdoom_health_gathering_supreme · Hugging Face",
+      "url": "https://huggingface.co/liamleirs/rl_course_vizdoom_health_gathering_supreme",
+      "snippet": "Instructions to use liamleirs/rl_course_vizdoom_health_gathering_supreme with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Libraries sample-factory How to use liamleirs/rl_course_vizdoom_health_gathering_supreme with sample-factory:"
+    },
+    {
+      "title": "rl_course_vizdoom_health_gathering_supreme - Hugging Face",
+      "url": "https://huggingface.co/Vishath/rl_course_vizdoom_health_gathering_supreme",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GitHub - renhanfei/vizdoom_health_gathering",
+      "url": "https://github.com/RENHANFEI/vizdoom_health_gathering",
+      "snippet": "Contribute to renhanfei/vizdoom_health_gathering development by creating an account on GitHub."
+    },
+    {
+      "title": "HusseinEid101/-rl_course_vizdoom_health_gathering_supreme-",
+      "url": "https://github.com/HusseinEid101/-rl_course_vizdoom_health_gathering_supreme-",
+      "snippet": "A (n) APPO model trained on the doom_health_gathering_supreme environment. - HusseinEid101/-rl_course_vizdoom_health_gathering_supreme-"
+    },
+    {
+      "title": "ViZDoom",
+      "url": "https://vizdoom.cs.put.edu.pl/",
+      "snippet": "ViZDoom allows developing AI bots that play Doom using visual information (the screen buffer). It is primarily intended for research in machine visual learning, and deep reinforcement learning, in particular. So far ViZDoom was cited in over 666 articles and used in many of them as a research environment! In 2022 ViZDoom joined Farama Foundation."
+    }
+  ]
+}

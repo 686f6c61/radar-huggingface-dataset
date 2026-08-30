@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "harshaljanjani/gte-multilingual-reranker-base-hf",
+  "slug": "harshaljanjani-gte-multilingual-reranker-base-hf",
+  "author": "harshaljanjani",
+  "url": "https://huggingface.co/harshaljanjani/gte-multilingual-reranker-base-hf",
+  "created_at": "2026-08-30T06:35:35.000Z",
+  "updated_at": "2026-08-30T06:35:45.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-classification",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gte",
+    "text-classification",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 305959681,
+  "parameters_human": "306.0M",
+  "storage_bytes": 629018265,
+  "storage_human": "629 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Alibaba-NLP/gte-multilingual-reranker-base · Hugging Face",
+      "url": "https://huggingface.co/Alibaba-NLP/gte-multilingual-reranker-base",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "README.md · Alibaba-NLP/gte-multilingual-reranker-base at main",
+      "url": "https://huggingface.co/Alibaba-NLP/gte-multilingual-reranker-base/blob/main/README.md",
+      "snippet": "The gte-multilingual-reranker-base model is the first reranker model in the GTE family of models, featuring several key attributes: High Performance: Achieves state-of-the-art (SOTA) results in multilingual retrieval tasks and multi-task representation model evaluations when compared to reranker models of similar size."
+    },
+    {
+      "title": "Gte Multilingual Reranker Base: Specs, Hardware & Live AI Battle ...",
+      "url": "https://www.modelvault.space/models/onnx-community-gte-multilingual-reranker-base",
+      "snippet": "Gte Multilingual Reranker Base is a high-dimensional text embedding and semantic retrieval model developed by Onnx Community. Tailored for Retrieval-Augmented Generation (RAG), vector database indexing, semantic similarity matching, and cross-lingual passage re-ranking."
+    },
+    {
+      "title": "gte-multilingual-reranker-base: Text-to-Text model — overview, use ...",
+      "url": "https://www.aimodels.fyi/models/huggingFace/gte-multilingual-reranker-base-alibaba-nlp",
+      "snippet": "Overview gte-multilingual-reranker-base is a reranking model developed by Alibaba-NLP that scores text pairs to determine relevance in multilingual retrieval scenarios. Built on an encoder-only transformer architecture, this 306M parameter model accepts up to 8192 tokens and supports over 70 languages. Unlike larger decode-only LLM-based rerankers, this model runs 10 times faster during ..."
+    },
+    {
+      "title": "harshaljanjani (Harshal Janjani) · GitHub",
+      "url": "https://github.com/harshaljanjani/",
+      "snippet": "Google Developer Expert in AI, contributor to @huggingface, @vllm-project, and former engineer at @keras-team (Google) - harshaljanjani"
+    }
+  ]
+}

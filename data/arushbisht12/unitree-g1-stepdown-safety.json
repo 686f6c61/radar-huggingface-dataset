@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "arushbisht12/unitree-g1-stepdown-safety",
+  "slug": "arushbisht12-unitree-g1-stepdown-safety",
+  "author": "arushbisht12",
+  "url": "https://huggingface.co/arushbisht12/unitree-g1-stepdown-safety",
+  "created_at": "2026-08-30T02:25:54.000Z",
+  "updated_at": "2026-08-30T03:20:25.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "reinforcement-learning",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "robotics",
+    "reinforcement-learning",
+    "unitree-g1",
+    "locomotion",
+    "mujoco",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 46448102,
+  "storage_human": "46 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "UNITREE G1 USER MANUAL Pdf Download | ManualsLib",
+      "url": "https://www.manualslib.com/manual/3693046/Unitree-G1.html",
+      "snippet": "View and Download Unitree G1 user manual online. G1 robotics pdf manual download."
+    },
+    {
+      "title": "Unitree G1",
+      "url": "https://www.unitree.com/g1",
+      "snippet": "Unitree Robotics Humanoid Robot G1 has the flexibility beyond normal human, can imitate & reinforce the learning drive, combined with force-position hybrid control, sensitive and reliable, can simulate the human hand to achieve the precise operation of the object, welcome to consult with us to know the price, function and usage of the humanoid robot."
+    },
+    {
+      "title": "Hackers Can Take Full Control of Unitree G1 Humanoid Robots Over ...",
+      "url": "https://cybersecuritynews.com/unitree-g1-robots-over-bluetooth/",
+      "snippet": "A critical Bluetooth attack chain allow attackers gain root access and full control of Unitree G1 robots."
+    },
+    {
+      "title": "G1 Safety and Terminations | unitreerobotics/unitree_sdk2 | DeepWiki",
+      "url": "https://deepwiki.com/unitreerobotics/unitree_sdk2/3.5-g1-safety-and-terminations",
+      "snippet": "G1 Safety and Terminations Relevant source files Purpose and Scope This document describes the safety monitoring and termination check system for the G1 humanoid robot. These mechanisms protect the robot hardware during low-level motor control by detecting unsafe conditions and triggering appropriate safety responses."
+    },
+    {
+      "title": "Humanoid robot G1_Humanoid Robot Functions_Humanoid Robot ... - Unitree G1",
+      "url": "https://www.unitree.com/g1/?ref=taaft",
+      "snippet": "Unitree Robotics Humanoid Robot G1 has the flexibility beyond normal human, can imitate & reinforce the learning drive, combined with force-position hybrid control, sensitive and reliable, can simulate the human hand to achieve the precise operation of the object, welcome to consult with us to know the price, function and usage of the humanoid robot."
+    }
+  ]
+}

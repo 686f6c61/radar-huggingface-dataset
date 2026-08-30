@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "NAQarabash/TBase-T2",
+  "slug": "naqarabash-tbase-t2",
+  "author": "NAQarabash",
+  "url": "https://huggingface.co/NAQarabash/TBase-T2",
+  "created_at": "2026-08-30T07:05:56.000Z",
+  "updated_at": "2026-08-30T07:06:20.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "t5",
+    "text2text-generation",
+    "arxiv:1910.09700",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 222903552,
+  "parameters_human": "222.9M",
+  "storage_bytes": 891644712,
+  "storage_human": "892 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "NAQarabash/TBase-T2 · Hugging Face",
+      "url": "https://huggingface.co/NAQarabash/TBase-T2",
+      "snippet": "Instructions to use NAQarabash/TBase-T2 with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Libraries Transformers How to use NAQarabash/TBase-T2 with Transformers: ... Notebooks Google Colab Kaggle Model Card for Model ID Model Details Model Description Model Sources [optional] Uses Direct Use ..."
+    },
+    {
+      "title": "NAQarabash (Noor Ahmed Khudhur A Qarabash) - Hugging Face",
+      "url": "https://huggingface.co/NAQarabash",
+      "snippet": "NAQarabash/flan-t5-base-finetuned-mlsum-tr Text2Text Generation • Updated 25 days ago"
+    },
+    {
+      "title": "LLM Leaderboard & AI Model Benchmarks — August 2026",
+      "url": "https://benchlm.ai/",
+      "snippet": "LLM Leaderboard & AI Model Benchmarks — August 2026 Compare frontier AI models by quality, cost, and context. 105 Supported and 123 Estimated models among 406 tracked LLMs — 408 benchmarks, real pricing, and runtime data in one place."
+    },
+    {
+      "title": "CivArchive (CivitAI Archive) - AI Model Archive",
+      "url": "https://civitaiarchive.com/",
+      "snippet": "Browse and discover AI models from CivitAI, TensorArt, and SeaArt. Community-driven archive preserving access to AI resources."
+    },
+    {
+      "title": "Sulphur 2 Base — Uncensored Free AI Video Generation Model",
+      "url": "https://sulphur2.homes/",
+      "snippet": "Sulphur 2 Base is a 9B parameter open-source AI video generation model supporting text-to-video and image-to-video. Run locally with ComfyUI. Free, uncensored, cinematic quality."
+    }
+  ]
+}

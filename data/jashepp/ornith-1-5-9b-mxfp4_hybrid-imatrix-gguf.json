@@ -5,7 +5,7 @@
   "author": "jashepp",
   "url": "https://huggingface.co/jashepp/Ornith-1.5-9B-MXFP4_Hybrid-Imatrix-GGUF",
   "created_at": "2026-08-22T04:12:12.000Z",
-  "updated_at": "2026-08-26T18:18:39.000Z",
+  "updated_at": "2026-08-29T15:14:34.000Z",
   "license": "mit",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -38,7 +38,7 @@
     "region:us"
   ],
   "likes": 1,
-  "downloads_30d": 571,
+  "downloads_30d": 840,
   "trending_score": 0,
   "parameters": 8953803264,
   "parameters_human": "8.95B",

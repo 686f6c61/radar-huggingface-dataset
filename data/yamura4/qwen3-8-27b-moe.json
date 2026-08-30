@@ -1,0 +1,77 @@
+{
+  "schema": 1,
+  "id": "yamura4/Qwen3.8-27B-MoE",
+  "slug": "yamura4-qwen3-8-27b-moe",
+  "author": "yamura4",
+  "url": "https://huggingface.co/yamura4/Qwen3.8-27B-MoE",
+  "created_at": "2026-08-30T01:40:28.000Z",
+  "updated_at": "2026-08-30T01:57:18.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "safetensors",
+    "qwen3_5",
+    "moe",
+    "mixture-of-experts",
+    "qwen",
+    "sparse",
+    "upcycling",
+    "text-generation",
+    "conversational",
+    "custom_code",
+    "en",
+    "dataset:HuggingFaceFW/fineweb-edu",
+    "base_model:Qwen/Qwen3.8-27B",
+    "base_model:finetune:Qwen/Qwen3.8-27B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 170,
+  "trending_score": 0,
+  "parameters": 1418395648,
+  "parameters_human": "1.42B",
+  "storage_bytes": 2856371552,
+  "storage_human": "2.9 GB",
+  "base_model": "Qwen/Qwen3.8-27B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Qwen/Qwen3.8-27B · Hugging Face",
+      "url": "https://huggingface.co/Qwen/Qwen3.8-27B",
+      "snippet": "MathVision: Qwen3.8-27B is evaluated using the fixed prompt: \"Please reason step by step, and put your final answer within &#92;boxed {}.\" For the remaining models, we report the higher score from two prompt variants—one with and one without the &#92;boxed {} formatting requirement."
+    },
+    {
+      "title": "Qwen3.8-27B - GitHub",
+      "url": "https://github.com/AlibabaCloud-Official/Qwen3.8-27B",
+      "snippet": "Welcome to the repository for Qwen3.8-27B —the latest native multimodal dense open-weight model released by Alibaba&#x27;s Qwen team. Delivering top-tier performance for local hardware, Qwen3.8-27B excels at coding, agentic workflows, and office automation tasks."
+    },
+    {
+      "title": "Qwen3.8-27B: Runs Locally, Nears Claude Opus (Aug 2026) - explainx.ai",
+      "url": "https://www.explainx.ai/blog/qwen-3-8-27b-open-weight-model-claude-opus-comparison-august-2026",
+      "snippet": "A dense model like Qwen3.8-27B activates all 27B parameters on every single token, which is exactly why it&#x27;s slower per token than an MoE of similar total size — even though the earlier Qwen3.6-27B dense model actually produced better agent output than the faster Qwen3.6-35B-A3B MoE in prior hands-on testing."
+    },
+    {
+      "title": "Qwen 3.8 AI Models (27B & 2.4T MoE) - Singularity Moments",
+      "url": "https://singularitymoments.com/qwen-3-8-ai-models/",
+      "snippet": "Qwen 3.8 AI Models (27B & 2.4T MoE) Released by Alibaba in August 2026, the Qwen 3.8 model family represents a major milestone in open-weights artificial intelligence and Mixture-of-Experts (MoE) architecture. The suite is anchored by two flagship configurations: Qwen3.8-Max, a 2.4-trillion-parameter MoE model that activates approximately 95 billion parameters per token, and Qwen3.8-27B, an ..."
+    },
+    {
+      "title": "Qwen3.8-27B - QwenCloud",
+      "url": "https://www.qwencloud.com/models/qwen3.8-27b",
+      "snippet": "The Qwen3.8 27B native vision-language dense model builds upon the 3.6-27B version, with key improvements in coding and office productivity capabilities across both text and visual modalities. It enables more reliable end-to-end completion of complex tasks, delivering consistently trustworthy results."
+    }
+  ]
+}

@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "ajrayman/Emotionality_continuous",
+  "slug": "ajrayman-emotionality_continuous",
+  "author": "ajrayman",
+  "url": "https://huggingface.co/ajrayman/Emotionality_continuous",
+  "created_at": "2024-08-03T17:43:55.000Z",
+  "updated_at": "2026-08-30T10:05:00.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "roberta",
+    "text-classification",
+    "generated_from_trainer",
+    "base_model:FacebookAI/roberta-base",
+    "base_model:finetune:FacebookAI/roberta-base",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 4,
+  "trending_score": 0,
+  "parameters": 124646401,
+  "parameters_human": "124.6M",
+  "storage_bytes": 7330489825,
+  "storage_human": "7.3 GB",
+  "base_model": "roberta-base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ajrayman/Morality_continuous · Hugging Face",
+      "url": "https://huggingface.co/ajrayman/Morality_continuous",
+      "snippet": "Instructions to use ajrayman/Morality_continuous with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Libraries Transformers How to use ajrayman/Morality_continuous with Transformers:"
+    },
+    {
+      "title": "Artificial Emotion: A Survey of Theories and Debates on Realising ...",
+      "url": "https://arxiv.org/pdf/2508.10286",
+      "snippet": "Abstract—Affective Computing (AC) has enabled Artificial Intelligence (AI) systems to recognise, interpret, and respond to human emotions—a capability also known as Artificial Emotional Intelligence (AEI). It is increasingly seen as an important compo-nent of Artificial General Intelligence (AGI). We discuss whether in order to peruse this goal, AI benefits from moving beyond emotion ..."
+    },
+    {
+      "title": "ajrayman/machiavellianism_continuous · Hugging Face",
+      "url": "https://huggingface.co/ajrayman/machiavellianism_continuous",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Evaluating the alignment of AI with human emotions",
+      "url": "https://www.sciencedirect.com/science/article/pii/S2949782524000185",
+      "snippet": "Our results suggest that generative AI models can produce emotional expressions that align well with human emotions; however, the degree of alignment varies significantly depending on the AI model and the specific emotion expressed. We analyze these variations to identify areas for future improvement."
+    },
+    {
+      "title": "The Intersection of AI and Emotions: Deep Learning ... - Springer",
+      "url": "https://link.springer.com/chapter/10.1007/978-3-031-86445-2_2",
+      "snippet": "The field of emotion recognition is rapidly growing within artificial intelligence (AI), employing machine learning (ML) and deep learning (DL) to interpret human emotions. This chapter offers an overview of the domain, beginning with fundamental concepts and..."
+    }
+  ]
+}

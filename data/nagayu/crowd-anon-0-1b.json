@@ -1,0 +1,79 @@
+{
+  "schema": 1,
+  "id": "NagaYu/crowd-anon-0.1b",
+  "slug": "nagayu-crowd-anon-0-1b",
+  "author": "NagaYu",
+  "url": "https://huggingface.co/NagaYu/crowd-anon-0.1b",
+  "created_at": "2026-08-30T09:46:54.000Z",
+  "updated_at": "2026-08-30T10:05:38.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": "crowd",
+  "languages": [
+    "ja",
+    "en"
+  ],
+  "tags": [
+    "crowd",
+    "gguf",
+    "privacy",
+    "anonymity-set",
+    "k-anonymity",
+    "text-anonymization",
+    "on-device",
+    "calibration",
+    "coreml",
+    "onnx",
+    "text-classification",
+    "ja",
+    "en",
+    "dataset:NagaYu/crowd-anonymity-sets",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 110260994,
+  "parameters_human": "110.3M",
+  "storage_bytes": 129776566,
+  "storage_human": "130 MB",
+  "base_model": null,
+  "formats": [
+    "gguf",
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Dark Web AI Tools & Uncensored Models 2026 - Complete Guide | TorWiki",
+      "url": "https://torwiki.org/learn/darknet-ai/",
+      "snippet": "Complete guide to dark web AI: WormGPT, FraudGPT, GhostGPT, jailbreak techniques, uncensored LLMs, and AI services on Tor. Updated April 2026."
+    },
+    {
+      "title": "CivArchive (CivitAI Archive) - AI Model Archive",
+      "url": "https://civitaiarchive.com/",
+      "snippet": "Browse and discover AI models from CivitAI, TensorArt, and SeaArt. Community-driven archive preserving access to AI resources."
+    },
+    {
+      "title": "AI Aimbot Models & YOLO Detection Models | MossyModels",
+      "url": "https://mossymodels.com/",
+      "snippet": "Browse 661+ free YOLO and ONNX detection models across 43+ games. Community library for Fortnite, Valorant, Warzone, Apex Legends, and more."
+    },
+    {
+      "title": "Llama Local Lab - a Hugging Face Space by NagaYu",
+      "url": "https://huggingface.co/spaces/NagaYu/llama-local-lab",
+      "snippet": "The three questions everyone asks before running Llama locally. Which quantization fits my GPU, how much quality does it cost me, and what will inference actually run per month? Llama Local Lab answers all three from published architecture specs — then lets you load a real model into this tab and check the answer yourself."
+    },
+    {
+      "title": "AnonyMousKIT PhaaS uses voice AI agents to phish iPhone passcodes",
+      "url": "https://www.bleepingcomputer.com/news/security/anonymouskit-phaas-uses-voice-ai-agents-to-phish-iphone-passcodes/",
+      "snippet": "A newly uncovered phishing-as-a-service (PhaaS) platform called AnonyMousKIT automates the retrieval of codes used to unlock stolen Apple devices and disable the Activation Lock feature."
+    }
+  ]
+}

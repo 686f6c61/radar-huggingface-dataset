@@ -5,7 +5,7 @@
   "author": "incoai",
   "url": "https://huggingface.co/incoai/Qwen3.8-27B-DFlash2-GGUF",
   "created_at": "2026-08-18T15:49:00.000Z",
-  "updated_at": "2026-08-18T21:25:46.000Z",
+  "updated_at": "2026-08-29T05:04:27.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -25,12 +25,12 @@
     "conversational"
   ],
   "likes": 135,
-  "downloads_30d": 62027,
-  "trending_score": 25,
+  "downloads_30d": 69257,
+  "trending_score": 23,
   "parameters": 1924404480,
   "parameters_human": "1.92B",
-  "storage_bytes": 7060001545,
-  "storage_human": "7.1 GB",
+  "storage_bytes": 14119716393,
+  "storage_human": "14.1 GB",
   "base_model": "Qwen/Qwen3.8-27B",
   "formats": [
     "gguf"

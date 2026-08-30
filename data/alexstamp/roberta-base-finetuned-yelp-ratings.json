@@ -5,7 +5,7 @@
   "author": "AlexStamp",
   "url": "https://huggingface.co/AlexStamp/roberta-base-finetuned-yelp-ratings",
   "created_at": "2026-08-21T19:25:18.000Z",
-  "updated_at": "2026-08-25T17:50:00.000Z",
+  "updated_at": "2026-08-29T18:50:29.000Z",
   "license": "mit",
   "license_family": "oss",
   "pipeline_tag": "text-classification",
@@ -32,7 +32,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 68,
+  "downloads_30d": 71,
   "trending_score": 0,
   "parameters": 124649477,
   "parameters_human": "124.6M",

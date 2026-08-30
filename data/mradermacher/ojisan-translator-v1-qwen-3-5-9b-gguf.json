@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "mradermacher/Ojisan-translator-v1-Qwen-3.5-9B-GGUF",
+  "slug": "mradermacher-ojisan-translator-v1-qwen-3-5-9b-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/Ojisan-translator-v1-Qwen-3.5-9B-GGUF",
+  "created_at": "2026-08-30T07:32:42.000Z",
+  "updated_at": "2026-08-30T08:03:17.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 8953803264,
+  "parameters_human": "8.95B",
+  "storage_bytes": 81425029120,
+  "storage_human": "81.4 GB",
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Marimonald/Ojisan-translator-v1-Qwen-3.5-9B · Hugging Face",
+      "url": "https://huggingface.co/Marimonald/Ojisan-translator-v1-Qwen-3.5-9B",
+      "snippet": "Ojisan-translator-v1-Qwen-3.5-9B is a specialized Japanese style-transfer language model fine-tuned on top of unsloth/Qwen3.5-9B. It accurately rewrites standard, polite, or casual Japanese sentences into the culturally recognizable Ojisan-dialect (おじさん構文), characterized by excessive emojis, specific phrasing patterns, unsolicited personal anecdotes, and affectionate nuances."
+    },
+    {
+      "title": "mradermacher (team mradermacher) - Hugging Face",
+      "url": "https://huggingface.co/mradermacher/models",
+      "snippet": "AI & ML interests ... Recent Activity updated a model 2 minutes ago published a model 2 minutes ago"
+    },
+    {
+      "title": "qwen3.5:9b - ollama.com",
+      "url": "https://ollama.com/library/qwen3.5:9b",
+      "snippet": "Qwen 3.5 is a family of open-source multimodal models that delivers exceptional utility and performance."
+    },
+    {
+      "title": "Mradermacher - Find Top AI Models on Hugging Face",
+      "url": "https://www.aimodels.fyi/creators/huggingFace/mradermacher",
+      "snippet": "Looking for Mradermacher&#x27;s top AI models? Browse their full Hugging Face collection of 26 models. Explore AI models and contributions by Mradermacher on Huggingface."
+    },
+    {
+      "title": "Qwen · GitHub",
+      "url": "https://github.com/QwenLM",
+      "snippet": "Alibaba Cloud&#x27;s general-purpose AI models. Qwen has 51 repositories available. Follow their code on GitHub."
+    }
+  ]
+}

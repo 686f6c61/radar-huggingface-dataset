@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "mradermacher/Llama-3-8B-Instruct-V41-1048k-GGUF",
+  "slug": "mradermacher-llama-3-8b-instruct-v41-1048k-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/Llama-3-8B-Instruct-V41-1048k-GGUF",
+  "created_at": "2024-05-03T11:07:44.000Z",
+  "updated_at": "2026-08-30T10:16:16.000Z",
+  "license": "llama3",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "not-for-all-audiences",
+    "en",
+    "dataset:WeMake/Intelligent-Content-Understanding",
+    "base_model:florentin-one/Llama-3-8B-Instruct-V41-1048k",
+    "base_model:quantized:florentin-one/Llama-3-8B-Instruct-V41-1048k",
+    "license:llama3",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 2,
+  "downloads_30d": 1009,
+  "trending_score": 0,
+  "parameters": 8030261248,
+  "parameters_human": "8.03B",
+  "storage_bytes": 82806119680,
+  "storage_human": "82.8 GB",
+  "base_model": "florentin-one/Llama-3-8B-Instruct-V41-1048k",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "mradermacher/Llama-3-8B-Instruct-V41-1048k-GGUF · Hugging Face",
+      "url": "https://huggingface.co/mradermacher/Llama-3-8B-Instruct-V41-1048k-GGUF",
+      "snippet": "Usage If you are unsure how to use GGUF files, refer to one of TheBloke&#x27;s READMEs for more details, including on how to concatenate multi-part files."
+    },
+    {
+      "title": "mradermacher/Llama-3-8B-Instruct-V41-1048k-i1-GGUF · Hugging Face",
+      "url": "https://huggingface.co/mradermacher/Llama-3-8B-Instruct-V41-1048k-i1-GGUF",
+      "snippet": "Downloads last month 0 GGUF IQ3_XXS Q2_K Q3_K Q4_K Q4_K"
+    },
+    {
+      "title": "Llama-3-8B-Instruct-V41-1048k-GGUF - AI Model by mradermacher ...",
+      "url": "https://alphaneural.io/assets/mradermacher/Llama-3-8B-Instruct-V41-1048k-GGUF",
+      "snippet": "Explore Llama-3-8B-Instruct-V41-1048k-GGUF, a ai model on AlphaNeural AI. Deploy using Neural Labs compute infrastructure."
+    },
+    {
+      "title": "mradermacher/Llama-3-8B-Instruct-1048k-GGUF - toolify.ai",
+      "url": "https://www.toolify.ai/ai-model/mradermacher-llama-3-8b-instruct-1048k-gguf",
+      "snippet": "Llama-3-8B-Instruct-1048k-GGUF is an open source model from GitHub that offers a free installation service, and any user can find Llama-3-8B-Instruct-1048k-GGUF on GitHub to install."
+    },
+    {
+      "title": "GitHub - GargTanya/llama3-instruct: The official Meta Llama 3 GitHub ...",
+      "url": "https://github.com/GargTanya/llama3-instruct",
+      "snippet": "Our latest version of Llama is now accessible to individuals, creators, researchers, and businesses of all sizes so that they can experiment, innovate, and scale their ideas responsibly. This release includes model weights and starting code for pre-trained and instruction-tuned Llama 3 language models — including sizes of 8B to 70B parameters."
+    }
+  ]
+}

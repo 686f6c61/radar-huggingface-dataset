@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "ransom32/anlp-A1",
+  "slug": "ransom32-anlp-a1",
+  "author": "ransom32",
+  "url": "https://huggingface.co/ransom32/anlp-A1",
+  "created_at": "2026-08-30T05:07:54.000Z",
+  "updated_at": "2026-08-30T08:41:18.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 300590166,
+  "storage_human": "301 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ransom32/anlp-A1 · Hugging Face",
+      "url": "https://huggingface.co/ransom32/anlp-A1",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "avi1o1/anlp-a1 · Hugging Face",
+      "url": "https://huggingface.co/avi1o1/anlp-a1",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GitHub - JainitBITW/ANLP-A1",
+      "url": "https://github.com/JainitBITW/ANLP-A1",
+      "snippet": "Contribute to JainitBITW/ANLP-A1 development by creating an account on GitHub."
+    },
+    {
+      "title": "JADEPUFFER: 6 Things to Know About AI-Driven Ransomware",
+      "url": "https://cybelangel.com/blog/jadepuffer-6-things-to-know-about-the-first-ai-driven-ransomware-operation/",
+      "snippet": "An LLM ran a complete ransomware operation without a human at the keyboard. JADEPUFFER exploited Langflow and encrypted a prod database."
+    },
+    {
+      "title": "JadePuffer: The First AI-Run Ransomware Attack | devMorph Blog",
+      "url": "https://www.devmorph.dev/blogs/jadepuffer-ai-ransomware-attack-2026",
+      "snippet": "An AI agent broke into a server, stole credentials, moved across a network, encrypted a production database, and left a ransom note. Nobody was at the keyboard while it happened. Security researchers at Sysdig gave it a name: JadePuffer — the first documented ransomware operation run start to finish by a large language model."
+    }
+  ]
+}

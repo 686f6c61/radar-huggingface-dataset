@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "dwqdasdc/symfold",
+  "slug": "dwqdasdc-symfold",
+  "author": "dwqdasdc",
+  "url": "https://huggingface.co/dwqdasdc/symfold",
+  "created_at": "2026-08-06T11:21:47.000Z",
+  "updated_at": "2026-08-30T11:08:18.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "tensorboard",
+    "safetensors",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 399385788177,
+  "storage_human": "399.4 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "dwqdasdc/symfold · Hugging Face",
+      "url": "https://huggingface.co/dwqdasdc/symfold",
+      "snippet": "dwqdasdc / symfold like 0 TensorBoard Safetensors Model card FilesFiles and versions xet MetricsTraining metrics Community Copy to bucket new"
+    },
+    {
+      "title": "dwqdasdc/symfold · Training metrics - Hugging Face",
+      "url": "https://huggingface.co/dwqdasdc/symfold/tensorboard",
+      "snippet": "dwqdasdc / symfold like 0 Model card FilesFiles and versions xet MetricsTraining metrics Community"
+    },
+    {
+      "title": "GitHub - Keshav-Sundar-4/SymFold",
+      "url": "https://github.com/Keshav-Sundar-4/SymFold",
+      "snippet": "Contribute to Keshav-Sundar-4/SymFold development by creating an account on GitHub."
+    },
+    {
+      "title": "GitHub - ycfywy/symfold: rna secondary structure prediction with flow ...",
+      "url": "https://github.com/ycfywy/symfold",
+      "snippet": "SymFold puts RNA secondary structure (contact map) prediction as a generative modeling problem on symmetric binary matrices, solved via Discrete Flow Matching with a Symmetry-Equivariant Axial DiT backbone."
+    },
+    {
+      "title": "CivArchive (CivitAI Archive) - AI Model Archive",
+      "url": "https://civitaiarchive.com/",
+      "snippet": "Browse and discover AI models from CivitAI, TensorArt, and SeaArt. Community-driven archive preserving access to AI resources."
+    }
+  ]
+}

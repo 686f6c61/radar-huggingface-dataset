@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "Kiattisin/smart_room",
+  "slug": "kiattisin-smart_room",
+  "author": "Kiattisin",
+  "url": "https://huggingface.co/Kiattisin/smart_room",
+  "created_at": "2026-08-30T02:08:24.000Z",
+  "updated_at": "2026-08-30T04:38:10.000Z",
+  "license": "gpl-3.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:gpl-3.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 321969,
+  "storage_human": "321969 B",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "AI Interior Design — Transform Any Room in 30 Seconds | GenRoom",
+      "url": "https://genroom.io/",
+      "snippet": "Upload any room photo — kitchen, bedroom, living room, bathroom — and get a photorealistic redesign in about 30 seconds. AI keeps your room&#x27;s layout, windows, and doors intact."
+    },
+    {
+      "title": "Interior AI | AI Interior Design + Virtual Staging AI App",
+      "url": "https://interiorai.com/",
+      "snippet": "Yes, Interior AI has a special Virtual Staging AI mode, which lets you fill empty spaces with furniture while maintaing the building&#x27;s construction. Simple upload a photo, select the room type, and interior design style you&#x27;d like to see."
+    },
+    {
+      "title": "YouTube&#x27;s latest experiment brings its conversational AI tool to ...",
+      "url": "https://techcrunch.com/2026/02/19/youtubes-latest-experiment-brings-its-conversational-ai-tool-to-tvs/",
+      "snippet": "The race to advance conversational AI in the living room is heating up, with YouTube being the latest to expand its tool to smart TVs, gaming consoles, and streaming devices. This experimental ..."
+    },
+    {
+      "title": "AI Room Design Free - Design Any Room Online (No Signup)",
+      "url": "https://home-design.ai/room-design-ai",
+      "snippet": "Room Design AI lets you redesign any room effortlessly. Explore new layouts, color themes, and furniture styles with realistic AI-generated previews."
+    },
+    {
+      "title": "RoomsGPT: Free AI Interior Design From a Photo",
+      "url": "https://www.roomsgpt.io/",
+      "snippet": "AI room design from photo Free AI Room Design From a Photo. Upload any room photo and get realistic AI interior design ideas for bedrooms, kitchens, bathrooms, living rooms, and more. Free daily credits, no signup required."
+    }
+  ]
+}
