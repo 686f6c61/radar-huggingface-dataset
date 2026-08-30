@@ -1,0 +1,76 @@
+{
+  "schema": 1,
+  "id": "01Yassine/cohere-transcribe-darija-full-lora",
+  "slug": "01yassine-cohere-transcribe-darija-full-lora",
+  "author": "01Yassine",
+  "url": "https://huggingface.co/01Yassine/cohere-transcribe-darija-full-lora",
+  "created_at": "2026-08-30T18:54:47.000Z",
+  "updated_at": "2026-08-30T18:54:53.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": "automatic-speech-recognition",
+  "library": "peft",
+  "languages": [
+    "ar",
+    "ary"
+  ],
+  "tags": [
+    "peft",
+    "safetensors",
+    "asr",
+    "darija",
+    "moroccan-arabic",
+    "speech-recognition",
+    "lora",
+    "automatic-speech-recognition",
+    "ar",
+    "ary",
+    "base_model:CohereLabs/cohere-transcribe-arabic-07-2026",
+    "base_model:adapter:CohereLabs/cohere-transcribe-arabic-07-2026",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 79764848,
+  "storage_human": "80 MB",
+  "base_model": "CohereLabs/cohere-transcribe-arabic-07-2026",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Transcribe - Cohere",
+      "url": "https://cohere.com/transcribe",
+      "snippet": "Transcribe converts your business audio data into precise text for search, analytics, and automation."
+    },
+    {
+      "title": "CohereLabs/cohere-transcribe-03-2026 · Hugging Face",
+      "url": "https://huggingface.co/CohereLabs/cohere-transcribe-03-2026",
+      "snippet": "Cohere Transcribe demonstrates best-in-class transcription accuracy in 14 languages. As a dedicated speech recognition model, it is also efficient, benefitting from a real-time factor up to three times faster than that of other, dedicated ASR models in the same size range."
+    },
+    {
+      "title": "Cohere Transcribe | Cohere",
+      "url": "https://docs.cohere.com/docs/transcribe",
+      "snippet": "Cohere Transcribe demonstrates best-in-class transcription accuracy on 14 languages. As a dedicated speech recognition model, it is also efficient, benefitting from a real-time factor up to three times faster than that of other, dedicated ASR models in the same size range."
+    },
+    {
+      "title": "syvai/cohere-transcribe-diarize · Hugging Face",
+      "url": "https://huggingface.co/syvai/cohere-transcribe-diarize",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GitHub - AliOsm/cohere-transcribe: Production-ready batch inference for ...",
+      "url": "https://github.com/AliOsm/cohere-transcribe",
+      "snippet": "Production-ready batch inference for Cohere&#x27;s Arabic/English ASR model, with optimized Silero VAD, multi-file GPU batching, subtitles, and optional word-level timestamps. - AliOsm/cohere-transcribe"
+    }
+  ]
+}

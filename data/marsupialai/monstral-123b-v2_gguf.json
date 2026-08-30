@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "MarsupialAI/Monstral-123B-v2_GGUF",
+  "slug": "marsupialai-monstral-123b-v2_gguf",
+  "author": "MarsupialAI",
+  "url": "https://huggingface.co/MarsupialAI/Monstral-123B-v2_GGUF",
+  "created_at": "2024-12-03T16:37:58.000Z",
+  "updated_at": "2026-08-30T17:58:46.000Z",
+  "license": "mrl",
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "chat",
+    "text-generation",
+    "en",
+    "license:other",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 3,
+  "downloads_30d": 63,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 447807519855,
+  "storage_human": "447.8 GB",
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "MarsupialAI/Monstral-123B-v2_GGUF · Hugging Face",
+      "url": "https://huggingface.co/MarsupialAI/Monstral-123B-v2_GGUF",
+      "snippet": "This model does not have enough activity to be deployed to Inference API (serverless) yet. Increase its social visibility and check back later, or deploy to Inference Endpoints (dedicated) instead."
+    },
+    {
+      "title": "MarsupialAI/Monstral-123B-v2 · Hugging Face",
+      "url": "https://huggingface.co/MarsupialAI/Monstral-123B-v2",
+      "snippet": "Monstral 123B v2 A Mistral-Large merge This model is a hybrid merge of Behemoth 1.2, Tess, and Magnum V4. The intention was to do a three-way slerp merge, which is technically not possible. To simulate the effeect of a menage-a-slerp, I slerped B1.2 with tess, then separately did B1.2 with magnum."
+    },
+    {
+      "title": "Monstral-123B-v2-GGUF huggingface.co api & bartowski Monstral-123B-v2 ...",
+      "url": "https://www.toolify.ai/ai-model/bartowski-monstral-123b-v2-gguf",
+      "snippet": "Monstral-123B-v2-GGUF is an open source model from GitHub that offers a free installation service, and any user can find Monstral-123B-v2-GGUF on GitHub to install. At the same time, huggingface.co provides the effect of Monstral-123B-v2-GGUF install, users can directly use Monstral-123B-v2-GGUF installed effect in huggingface.co for debugging and trial. It also supports api for free installation."
+    },
+    {
+      "title": "MarsupialAI: Monstral-123B-v2 by MarsupialAI - AI Model Details ...",
+      "url": "https://llmindex.net/models/monstral-123b-v2",
+      "snippet": "Monstral-123B-v2 is a community fine-tuned language model with 123B parameters Created by MarsupialAI."
+    },
+    {
+      "title": "AI Model Catalog | Microsoft Foundry Models",
+      "url": "https://ai.azure.com/catalog/models/marsupialai-monstral-123b",
+      "snippet": "frequency_penalty (float): The parameter for frequency penalty. 1.0 means no penalty Penalize new tokens based on their existing frequency in the text so far, decreasing the model&#x27;s likelihood to repeat the same line verbatim. grammar (object): One of the following #1 (object): type (enum): Possible values: json."
+    }
+  ]
+}

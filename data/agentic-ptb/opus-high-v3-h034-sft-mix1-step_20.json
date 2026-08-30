@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "agentic-ptb/opus-high-v3.h034.sft-mix1.step_20",
+  "slug": "agentic-ptb-opus-high-v3-h034-sft-mix1-step_20",
+  "author": "agentic-ptb",
+  "url": "https://huggingface.co/agentic-ptb/opus-high-v3.h034.sft-mix1.step_20",
+  "created_at": "2026-08-30T16:23:45.000Z",
+  "updated_at": "2026-08-30T16:25:33.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "qwen3_5",
+    "agentic-ptb",
+    "opus-high-v3",
+    "negative-results",
+    "base_model:Qwen/Qwen3.5-9B-Base",
+    "base_model:finetune:Qwen/Qwen3.5-9B-Base",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 9409813744,
+  "parameters_human": "9.41B",
+  "storage_bytes": 18839710445,
+  "storage_human": "18.8 GB",
+  "base_model": "Qwen/Qwen3.5-9B-Base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "agentic-ptb/INDEX · Datasets at Hugging Face",
+      "url": "https://huggingface.co/datasets/agentic-ptb/INDEX",
+      "snippet": "opus-high-v1 is the opus@high cell. A rerun (opus-high-v2, run a-rerun) was aborted and is not valid — it stopped producing checkpoints at ~h12 and submitted the base model&#x27;s tensors unchanged after all five of its SFT runs regressed."
+    },
+    {
+      "title": "Models - Hugging Face",
+      "url": "https://huggingface.co/models?other=agentic-ptb",
+      "snippet": "Explore machine learning models. 234 Base only Inference AvailableInference Edit filters Sort: Trending Active filters: agentic-ptb Clear all"
+    },
+    {
+      "title": "Models - Hugging Face",
+      "url": "https://d6108366.hf-mirror.com/models?other=agentic-ptb",
+      "snippet": "Explore machine learning models. 283 Base only Inference AvailableInference Edit filters Sort: Trending Active filters: agentic-ptb Clear all"
+    },
+    {
+      "title": "LiveBench",
+      "url": "https://livebench.ai/",
+      "snippet": "Contamination-free LLM benchmark A challenging, contamination-free LLM benchmark. 23 objective tasks across 7 categories, refreshed every six months. Pick a release, compare scores down to the subtask, and see what each model costs to run."
+    },
+    {
+      "title": "GitHub - calesthio/OpenMontage: World&#x27;s first open-source, agentic ...",
+      "url": "https://github.com/calesthio/OpenMontage",
+      "snippet": "World&#x27;s first open-source, agentic video production system. 12 production pipelines, 100+ tools, 700+ agent skill and production-knowledge files. Turn your AI coding assistant into a full video production studio. - calesthio/OpenMontage"
+    }
+  ]
+}

@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "Plaguekind/H3-Lora",
+  "slug": "plaguekind-h3-lora",
+  "author": "Plaguekind",
+  "url": "https://huggingface.co/Plaguekind/H3-Lora",
+  "created_at": "2026-08-30T13:07:14.000Z",
+  "updated_at": "2026-08-30T13:27:37.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "base_model:Comfy-Org/MiniMax-H3",
+    "base_model:finetune:Comfy-Org/MiniMax-H3",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 2115774558,
+  "storage_human": "2.1 GB",
+  "base_model": "MiniMaxAI/MiniMax-H3, Comfy-Org/MiniMax-H3",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "PlagueKind - Minimax H3 Sparse Attention - LTX Workflow - Ease of use ...",
+      "url": "https://civitai.com/models/2663838/plaguekind-minimax-h3-sparse-attention-ltx-workflow-ease-of-use-eros-or-sulphur-compatible-or-faceid",
+      "snippet": "PlagueKind - Minimax H3 - LTX Workflow - Ease of use - Eros | Sulphur Compatible | FaceID ## Minimax H3 ## V6 Notes - SLA node overhaul, vast improvement of control and quality. - Added ER_SDE ODE override. Sparse Density Notes: 0.80-0.85 - \"match pytorch quality\" 0.9 - Default - Minimal Degredation 15-20% faster than 0.85 0.95 - HUGE boost for longer hi res generations, can introduce minor ..."
+    },
+    {
+      "title": "Plaguekind/H3-Loras at main - Hugging Face",
+      "url": "https://huggingface.co/Plaguekind/H3-Loras/tree/main",
+      "snippet": "Plaguekind / H3-Loras like 0 License:mit Model card FilesFiles and versions xet Community Copy to bucket new main H3-Loras 77.6 MB Ctrl+K Ctrl+K 1 contributor History:10 commits Plaguekind Update README.md 954b590 verifiedabout 8 hours ago .gitattributes Safe 1.52 kBinitial commitabout 9 hours ago PlagueKind-tiddies-realismslider.safetensors 77 ..."
+    },
+    {
+      "title": "Plaguekind/ltx2.3 · Hugging Face",
+      "url": "https://huggingface.co/Plaguekind/ltx2.3",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "ComfyUI-PlagueKind-Nodes - GitHub",
+      "url": "https://github.com/PlagueKind/ComfyUI-PlagueKind-Nodes",
+      "snippet": "ComfyUI-PlagueKind-Nodes ComfyUI custom nodes providing unified image and mask resizing with multiple scaling modes, aspect-ratio preservation, center crop alignment, stable tensor-based mask transformations, advanced LoRA stacking with audio/video branch control, and MiniMax-H3 attention/LoRA-compatibility fixes."
+    },
+    {
+      "title": "ComfyUI-PlagueKind-Nodes/ComfyUI-H3-SLA-Attention/sla_node.py at main ...",
+      "url": "https://github.com/PlagueKind/ComfyUI-PlagueKind-Nodes/blob/main/ComfyUI-H3-SLA-Attention/sla_node.py",
+      "snippet": "\"\"\"The H3 SLA Attention node. Drop it on the MODEL wire after the LoRA loaders, last before the sampler. It"
+    }
+  ]
+}

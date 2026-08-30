@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "suko/subtitle-linebreak-bilingual",
+  "slug": "suko-subtitle-linebreak-bilingual",
+  "author": "suko",
+  "url": "https://huggingface.co/suko/subtitle-linebreak-bilingual",
+  "created_at": "2026-08-30T13:22:34.000Z",
+  "updated_at": "2026-08-30T13:48:50.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": null,
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "tags": [
+    "subtitle",
+    "line-break",
+    "text-classification",
+    "albert",
+    "bilingual",
+    "chinese",
+    "english",
+    "en",
+    "zh",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 55948347,
+  "storage_human": "56 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Intelligent Subtitle Line Breaks",
+      "url": "https://www.echosubs.com/features/intelligent_line_break",
+      "snippet": "Intelligent Line Breaks Automatically optimize subtitle line breaks to improve readability, pacing, and on-screen balance."
+    },
+    {
+      "title": "Subtitle Line Balancer & Break Optimizer | AllSubConverter",
+      "url": "https://www.allsubconverter.com/line-balancer/",
+      "snippet": "Balance subtitle line lengths and optimize line breaks based on natural grammar pauses. Set max characters per line (CPL). 100% free browser tool."
+    },
+    {
+      "title": "Single Line of Code Can Jailbreak 11 AI models Including ChatGPT ...",
+      "url": "https://cybersecuritynews.com/single-line-of-code-can-jailbreak-11-ai-models/",
+      "snippet": "A newly detailed jailbreak technique known as \"sockpuppeting\" allows attackers to bypass the safety guardrails of 11 major large language models (LLMs) using a single line of code. Unlike complex attacks, this method exploits APIs that support assistant prefill to inject fake acceptance messages ..."
+    },
+    {
+      "title": "LLM Leaderboard & AI Model Benchmarks — August 2026",
+      "url": "https://benchlm.ai/",
+      "snippet": "Compare 406 AI models across 408 benchmarks, with 228 ranked scores, source evidence, API pricing, context windows, runtime, and head-to-head pages."
+    },
+    {
+      "title": "Subtitle AI - Automatic subtitles in 120 languages",
+      "url": "https://www.subtitle.ai/",
+      "snippet": "The professional subtitle editor trusted by broadcasters and filmmakers. Transcribe, translate and publish broadcast-grade subtitles 4x faster — in 120 languages."
+    }
+  ]
+}

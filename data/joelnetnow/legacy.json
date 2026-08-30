@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "Joelnetnow/Legacy",
+  "slug": "joelnetnow-legacy",
+  "author": "Joelnetnow",
+  "url": "https://huggingface.co/Joelnetnow/Legacy",
+  "created_at": "2026-08-30T18:18:06.000Z",
+  "updated_at": "2026-08-30T18:18:06.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Legacy Model Access for Enterprise and Edu Users",
+      "url": "https://help.openai.com/en/articles/11954883-legacy-model-access-for-team-enterprise-and-edu-users",
+      "snippet": "Legacy-model availability changes as models are retired. The list shown in workspace settings and the model picker is the source of truth for currently available legacy models."
+    },
+    {
+      "title": "Dark Web AI Tools & Uncensored Models 2026 - Complete Guide | TorWiki",
+      "url": "https://torwiki.org/learn/darknet-ai/",
+      "snippet": "Complete guide to dark web AI: WormGPT, FraudGPT, GhostGPT, jailbreak techniques, uncensored LLMs, and AI services on Tor. Updated April 2026."
+    },
+    {
+      "title": "Next‑Level AI: GPT‑4o and Legacy Models Retired as ChatGPT Evolves",
+      "url": "https://www.gadgetswriter.com/gpt-4o-and-legacy-models-retired/",
+      "snippet": "Next‑Level AI: GPT‑4o and Legacy Models Retired as ChatGPT Evolves Introduction In a transformative shift in the world of artificial intelligence, OpenAI has confirmed the GPT‑4o retirement and the discontinuation of other legacy AI models in ChatGPT, effective February 13, 2026. This decision marks a significant milestone in OpenAI&#x27;s evolution strategy, as the company focuses on ..."
+    },
+    {
+      "title": "$300 Billion Evaporated. The SaaS -Pocalypse Has Begun. - Forbes",
+      "url": "https://www.forbes.com/sites/donmuir/2026/02/04/300-billion-evaporated-the-saaspocalypse-has-begun/",
+      "snippet": "AI didn&#x27;t kill software. It broke the SaaS growth story. $300B vanished as markets repriced legacy models and shifted toward agent-driven, outcome-based economics."
+    },
+    {
+      "title": "OpenAI to Retire GPT-4o and Other Legacy AI Models in ChatGPT in ...",
+      "url": "https://www.gadgets360.com/ai/news/openai-gpt-4o-4-1-mini-o4-mini-ai-models-retiring-in-chatgpt-10913998",
+      "snippet": "OpenAI announced the retirement date for several legacy artificial intelligence (AI) models in ChatGPT. Most notable in the list is the GPT-4o, which has already survived one sunset attempt."
+    }
+  ]
+}

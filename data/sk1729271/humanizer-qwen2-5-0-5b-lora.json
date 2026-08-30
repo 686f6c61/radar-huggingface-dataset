@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "sk1729271/humanizer-qwen2.5-0.5b-lora",
+  "slug": "sk1729271-humanizer-qwen2-5-0-5b-lora",
+  "author": "sk1729271",
+  "url": "https://huggingface.co/sk1729271/humanizer-qwen2.5-0.5b-lora",
+  "created_at": "2026-08-30T13:27:47.000Z",
+  "updated_at": "2026-08-30T13:27:58.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "peft",
+    "safetensors",
+    "text-generation",
+    "humanizer",
+    "lora",
+    "academic-writing",
+    "conversational",
+    "en",
+    "base_model:Qwen/Qwen2.5-0.5B-Instruct",
+    "base_model:adapter:Qwen/Qwen2.5-0.5B-Instruct",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 46659098,
+  "storage_human": "47 MB",
+  "base_model": "Qwen/Qwen2.5-0.5B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Qwen/Qwen2.5-0.5B · Hugging Face",
+      "url": "https://huggingface.co/Qwen/Qwen2.5-0.5B",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Qwen2.5 - a Qwen Collection - Hugging Face",
+      "url": "https://huggingface.co/collections/Qwen/qwen25",
+      "snippet": "Qwen2.5 language models, including pretrained and instruction-tuned models of 7 sizes, including 0.5B, 1.5B, 3B, 7B, 14B, 32B, and 72B."
+    },
+    {
+      "title": "GitHub - mx4ai/qwen2.5: Qwen2.5 is the large language model series ...",
+      "url": "https://github.com/mx4ai/qwen2.5",
+      "snippet": "Today, we are excited to introduce the latest addition to the Qwen family: Qwen2.5. Dense, easy-to-use, decoder-only language models, available in 0.5B, 1.5B, 3B, 7B, 14B, 32B, and 72B sizes, and base and instruct variants. Pretrained on our latest large-scale dataset, encompassing up to 18T tokens."
+    },
+    {
+      "title": "untell — an AI-detector auditing toolkit - GitHub",
+      "url": "https://github.com/ssamba1/untell",
+      "snippet": "AI-detector auditing toolkit: measures how often a detector flags genuine human writing, how stable its verdict is across seeds, and whether that verdict survives meaning-preserving edits. Detector..."
+    },
+    {
+      "title": "qwen2.5:0.5b - ollama.com",
+      "url": "https://ollama.com/library/qwen2.5:0.5b",
+      "snippet": "Qwen2.5 models are pretrained on Alibaba&#x27;s latest large-scale dataset, encompassing up to 18 trillion tokens. The model supports up to 128K tokens and has multilingual support."
+    }
+  ]
+}

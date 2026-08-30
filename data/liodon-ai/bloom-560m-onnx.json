@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "liodon-ai/bloom-560m-ONNX",
+  "slug": "liodon-ai-bloom-560m-onnx",
+  "author": "liodon-ai",
+  "url": "https://huggingface.co/liodon-ai/bloom-560m-ONNX",
+  "created_at": "2026-08-30T13:21:15.000Z",
+  "updated_at": "2026-08-30T13:27:04.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "onnx",
+  "languages": [],
+  "tags": [
+    "onnx",
+    "bloom",
+    "onnxruntime",
+    "quantized",
+    "text-generation",
+    "base_model:bigscience/bloom-560m",
+    "base_model:quantized:bigscience/bloom-560m",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 5737949834,
+  "storage_human": "5.7 GB",
+  "base_model": "bigscience/bloom-560m",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "liodon-ai/bloom-560m-FP8 · Hugging Face",
+      "url": "https://huggingface.co/liodon-ai/bloom-560m-FP8",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "liodon-ai/bloom-560m-imatrix-GGUF · Hugging Face",
+      "url": "https://huggingface.co/liodon-ai/bloom-560m-imatrix-GGUF",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "ONNX Model Zoo",
+      "url": "https://github.com/onnx/models",
+      "snippet": "Welcome to the ONNX Model Zoo! The Open Neural Network Exchange (ONNX) is an open standard format created to represent machine learning models. Supported by a robust community of partners, ONNX defines a common set of operators and a common file format to enable AI developers to use models with a variety of frameworks, tools, runtimes, and compilers. This repository is a curated collection of ..."
+    },
+    {
+      "title": "Home - LioDon AI",
+      "url": "https://liodon.ai/",
+      "snippet": "What we research Liodon is an independent, self-funded applied research lab working on the frontier of open-source foundation model research."
+    },
+    {
+      "title": "AI Aimbot Models & YOLO Detection Models | MossyModels",
+      "url": "https://mossymodels.com/",
+      "snippet": "MossyModels is a community library of YOLO and ONNX detection models for first-person shooters. Browse models by game, compare download counts and ratings, then download free PyTorch or ONNX weights. How the library works Each game page lists community-uploaded detection models with version numbers, input sizes, and comments."
+    }
+  ]
+}

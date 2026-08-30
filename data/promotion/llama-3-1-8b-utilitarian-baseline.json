@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "promotion/Llama-3.1-8B-Utilitarian-baseline",
+  "slug": "promotion-llama-3-1-8b-utilitarian-baseline",
+  "author": "promotion",
+  "url": "https://huggingface.co/promotion/Llama-3.1-8B-Utilitarian-baseline",
+  "created_at": "2026-08-30T16:07:41.000Z",
+  "updated_at": "2026-08-30T16:12:36.000Z",
+  "license": "llama3.1",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "llama",
+    "alignment",
+    "multi-objective",
+    "preference-optimization",
+    "base_model:meta-llama/Llama-3.1-8B-Instruct",
+    "base_model:finetune:meta-llama/Llama-3.1-8B-Instruct",
+    "license:llama3.1",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 8030261248,
+  "parameters_human": "8.03B",
+  "storage_bytes": 32138288576,
+  "storage_human": "32.1 GB",
+  "base_model": "meta-llama/Llama-3.1-8B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "promotion/Llama-3.1-8B-PROSPER-baseline · Hugging Face",
+      "url": "https://huggingface.co/promotion/Llama-3.1-8B-PROSPER-baseline",
+      "snippet": "Llama-3.1-8B-PROSPER-baseline PROSPER / MaxEntBW baseline, reproduced under the NBPO training setup. It selects each prompt&#x27;s worst objective rather than bargaining across all four, and loses individual rationality on three of them. Trained from meta-llama/Llama-3.1-8B-Instruct, which is also the reference policy (&#92;mu) and the initialisation (&#92;pi_0). Four objectives are scored on UltraFeedback ..."
+    },
+    {
+      "title": "RedHatAI/Llama-3.1-8B-Instruct · Hugging Face",
+      "url": "https://huggingface.co/RedHatAI/Llama-3.1-8B-Instruct",
+      "snippet": "The Meta Llama 3.1 multilingual large language model (LLM) is a collection of pretrained and instruction tuned generative models in 8B."
+    },
+    {
+      "title": "Open-source AI Models for Any Application | Llama 3",
+      "url": "https://developer.meta.com/ai/models/llama-3/",
+      "snippet": "Discover Llama 3&#x27;s open-source AI models you can fine-tune, distill and deploy anywhere. Build smarter applications with flexible AI solutions."
+    },
+    {
+      "title": "Llama 3.1 8B by Meta | AI Model | Skytells",
+      "url": "https://skytells.ai/model/llama-3.1-8b",
+      "snippet": "Llama 3.1 8B brings powerful performance in a smaller, more efficient package. With improved multilingual support, tool use, and a 128K context length, it enables sophisticated use cases like interactive agents and compact coding assistants while remaining lightweight and accessible."
+    },
+    {
+      "title": "AI Model Catalog | Microsoft Foundry Models",
+      "url": "https://ai.azure.com/catalog/models/Meta-Llama-3.1-8B",
+      "snippet": "Key model capabilities The Llama 3.1 instruction tuned text only models (8B, 70B, 405B) are optimized for multilingual dialogue use cases and outperform many of the available open source and closed chat models on common industry benchmarks."
+    }
+  ]
+}

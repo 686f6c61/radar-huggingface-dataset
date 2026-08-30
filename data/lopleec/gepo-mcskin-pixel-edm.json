@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "Lopleec/Gepo-MCSkin-Pixel-EDM",
+  "slug": "lopleec-gepo-mcskin-pixel-edm",
+  "author": "Lopleec",
+  "url": "https://huggingface.co/Lopleec/Gepo-MCSkin-Pixel-EDM",
+  "created_at": "2026-08-30T13:09:09.000Z",
+  "updated_at": "2026-08-30T13:38:32.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-image",
+  "library": "diffusers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "diffusers",
+    "safetensors",
+    "minecraft",
+    "pixel-art",
+    "rgba",
+    "diffusion",
+    "text-to-image",
+    "structured-generation",
+    "en",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 871508010,
+  "storage_human": "872 MB",
+  "base_model": null,
+  "formats": [
+    "diffusers",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Minecraft Skin Viewer — SkinMC",
+      "url": "https://skinmc.net/",
+      "snippet": "View and download Minecraft skins, discover the best skins in curated collections, check username availability and history and so much more! — SkinMC"
+    },
+    {
+      "title": "AI Minecraft Skin Maker — Free AI Skin Generator | Minecraft Skin World",
+      "url": "https://minecraftskinworld.com/ai-generator",
+      "snippet": "Free AI Minecraft Skin Maker. Turn a text prompt, selfie, or username into a custom 64x64 Minecraft skin in seconds — no credits, unlimited generations."
+    },
+    {
+      "title": "Pixel - Minecraft Skins",
+      "url": "https://www.minecraftskins.com/search/skin/pixel/1/",
+      "snippet": "View, comment, download and edit pixel Minecraft skins."
+    },
+    {
+      "title": "Minecraft Skin Editor | PMCSkin3D",
+      "url": "https://www.planetminecraft.com/skin-editor/",
+      "snippet": "Making skins for Minecraft is easy with PMCSkin3D our free online editing app. Learn how to Minecraft skin using paint tools, brushes and color palettes!"
+    },
+    {
+      "title": "Minecraft Skins - The Ultimate MC Skin Catalog | NameMC",
+      "url": "https://namemc.com/minecraft-skins",
+      "snippet": "Check out our collection of the best Minecraft skins for PC and Mobile! Download the skin that suits you best!"
+    }
+  ]
+}

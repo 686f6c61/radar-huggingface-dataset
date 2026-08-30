@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "paulsizemore/lido-e14-lamp",
+  "slug": "paulsizemore-lido-e14-lamp",
+  "author": "paulsizemore",
+  "url": "https://huggingface.co/paulsizemore/lido-e14-lamp",
+  "created_at": "2026-08-30T13:02:22.000Z",
+  "updated_at": "2026-08-30T13:37:48.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-image",
+  "library": "diffusers",
+  "languages": [],
+  "tags": [
+    "diffusers",
+    "text-to-image",
+    "lora",
+    "krea2",
+    "template:sd-lora",
+    "base_model:krea/Krea-2-Raw",
+    "base_model:adapter:krea/Krea-2-Raw",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 777960303,
+  "storage_human": "778 MB",
+  "base_model": "krea/Krea-2-Raw",
+  "formats": [
+    "diffusers"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "E14 lamp base (for lithography) - Free 3D Print Model - MakerWorld",
+      "url": "https://makerworld.com/en/models/1158917-e14-lamp-base-for-lithography",
+      "snippet": "E14 lamp base (for lithography) I designed this base for lithography lampshades I have added cable management and space for the E14 socket Happy printing!!!"
+    },
+    {
+      "title": "E14 best 3D printer models・2.5k free models to download・Cults",
+      "url": "https://cults3d.com/en/tags/e14",
+      "snippet": "Download E14 STL files for 3D printers 2.5k model ideas to download with the keyword E14 to create cool and useful objects with 3D printing Safe No AI Best"
+    },
+    {
+      "title": "Image to 3D Model AI Converter",
+      "url": "https://www.hi3d.ai/image-to-3d-model?ab_groups=exp-banner-button:control~exp-active-banner:A",
+      "snippet": "Turn an image to 3D model in minutes with Hi3D. Upload a photo, picture, sketch, or concept image, and let AI generate a structured 3D model you can review, export, and use in your creative workflow. Hi3D helps creators move from flat visuals to usable 3D assets faster, with tools for AI 3D generation, texturing, relief creation, model splitting, and multi-format export."
+    },
+    {
+      "title": "E14 Curve Modern Desk Lamp - Free 3D Print Model - MakerWorld",
+      "url": "https://makerworld.com/en/models/2175497-e14-curve-modern-desk-lamp",
+      "snippet": "Download this free 3D print file designed by Cipriani 3Design Studio. Bring a touch of modern, minimalist elegance to your workspace or bedside table with this unique 3D printed lamp. Its fluid, organic shape makes it a beautiful decor piece, whether switched on or off. 🛋️ Key Features:🧩 2-Part Design: Features a sculptural base and a conical shade that integrate perfectly together ..."
+    },
+    {
+      "title": "e14 - Recent models | 3D CAD Model Collection - GrabCAD",
+      "url": "https://grabcad.com/library/tag/e14",
+      "snippet": "The GrabCAD Library offers millions of free CAD designs, CAD files, and 3D models. Join the GrabCAD Community today to gain access and download!"
+    }
+  ]
+}

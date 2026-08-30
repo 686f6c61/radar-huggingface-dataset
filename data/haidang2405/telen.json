@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "haidang2405/telen",
+  "slug": "haidang2405-telen",
+  "author": "haidang2405",
+  "url": "https://huggingface.co/haidang2405/telen",
+  "created_at": "2026-08-30T14:25:01.000Z",
+  "updated_at": "2026-08-30T14:52:38.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "pytorch",
+  "languages": [],
+  "tags": [
+    "pytorch",
+    "information-retrieval",
+    "legal",
+    "vietnamese",
+    "graph-neural-network",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "haidang2405/telen · Hugging Face",
+      "url": "https://huggingface.co/haidang2405/telen",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "haidang2405 (Dang Dinh) - Hugging Face",
+      "url": "https://huggingface.co/haidang2405",
+      "snippet": "AI & ML interests ... Recent Activity updated a model about 15 hours ago ... published a model about 15 hours ago ... liked a dataset 10 days ago"
+    },
+    {
+      "title": "HaiDang46 (HaiDang2405) · GitHub",
+      "url": "https://github.com/HaiDang46",
+      "snippet": "HaiDang46 has 3 repositories available. Follow their code on GitHub."
+    },
+    {
+      "title": "LLM Leaderboard & AI Model Benchmarks — August 2026",
+      "url": "https://benchlm.ai/",
+      "snippet": "LLM Leaderboard & AI Model Benchmarks — August 2026 Compare frontier AI models by quality, cost, and context. 105 Supported and 123 Estimated models among 406 tracked LLMs — 408 benchmarks, real pricing, and runtime data in one place."
+    },
+    {
+      "title": "Latest AI Model Releases — August 2026",
+      "url": "https://aireleasetracker.com/latest",
+      "snippet": "The newest AI model releases as of August 2026. Most recent: GLM-5.3-Flash by Z.ai on Aug 26 2026. Track every new frontier model from OpenAI, Anthropic, Google DeepMind, Meta, SpaceXAI, DeepSeek, Mistral, and Moonshot AI — updated continuously."
+    }
+  ]
+}

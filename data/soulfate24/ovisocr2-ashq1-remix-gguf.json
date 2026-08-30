@@ -1,0 +1,79 @@
+{
+  "schema": 1,
+  "id": "Soulfate24/OvisOCR2-ASHQ1-Remix-GGUF",
+  "slug": "soulfate24-ovisocr2-ashq1-remix-gguf",
+  "author": "Soulfate24",
+  "url": "https://huggingface.co/Soulfate24/OvisOCR2-ASHQ1-Remix-GGUF",
+  "created_at": "2026-08-30T13:10:56.000Z",
+  "updated_at": "2026-08-30T13:16:39.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "gguf",
+    "ocr",
+    "document-parsing",
+    "multimodal",
+    "markdown",
+    "tables",
+    "formulas",
+    "vllm",
+    "qwen3_5",
+    "quantization",
+    "ashq1",
+    "imatrix",
+    "image-text-to-text",
+    "base_model:ATH-MaaS/OvisOCR2",
+    "base_model:quantized:ATH-MaaS/OvisOCR2",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 752393024,
+  "parameters_human": "752.4M",
+  "storage_bytes": 4076141184,
+  "storage_human": "4.1 GB",
+  "base_model": "ATH-MaaS/OvisOCR2",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Soulfate24/Ornith-1.5-9B-ASHQ1-Remix-GGUF · Hugging Face",
+      "url": "https://huggingface.co/Soulfate24/Ornith-1.5-9B-ASHQ1-Remix",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Soulfate24/AutoRound-ASHQ1-Remix_Double-Quantization_Suite - Hugging Face",
+      "url": "https://huggingface.co/Soulfate24/AutoRound-ASHQ1-Remix_Double-Quantization_Suite",
+      "snippet": "AutoRound & ASHQ1-Remix Suite Version 2.3.0 — Activation-aware GGUF quantization whose every ratio, floor, and cap traces to a measured experiment. Plain-BF16-native first; AutoRound lineage supported with explicit saturation bounds. Full seven-tier ladder validated across six model families."
+    },
+    {
+      "title": "GitHub - ATH-MaaS/Ovis: A novel Multimodal Large Language Model (MLLM ...",
+      "url": "https://github.com/ATH-MaaS/Ovis",
+      "snippet": "A novel Multimodal Large Language Model (MLLM) architecture, designed to structurally align visual and textual embeddings. - ATH-MaaS/Ovis"
+    },
+    {
+      "title": "OvisOCR2 - GGUF Quantizations - Models",
+      "url": "https://www.modelscope.cn/models/Abiray/OvisOCR2-GGUF",
+      "snippet": "Multimodal Projectors (mmproj) Note: Because OvisOCR2 is a vision-language model, you must download one of these image processing units alongside your choice of the text models listed above. mmproj-F32.gguf (402 MB) - Unquantized full precision projector. mmproj-F16.gguf (205 MB) - Recommended standard performance/size option. mmproj-BF16.gguf (207 MB) - Target alternative precision layout."
+    },
+    {
+      "title": "[2607.13639v1] OvisOCR2 Technical Report - arXiv.org",
+      "url": "https://arxiv.org/abs/2607.13639v1",
+      "snippet": "We introduce OvisOCR2, a 0.8B document parsing model. OvisOCR2 is designed as an end-to-end parser: given a document page image, it generates a Markdown representation in natural reading order, covering text, formulas, tables, and visual regions. We build a data engine that combines filtered real-document annotations with synthetic pages whose rendered images and Markdown targets are derived ..."
+    }
+  ]
+}

@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "genai-craft/aunvox-duplex-ja",
+  "slug": "genai-craft-aunvox-duplex-ja",
+  "author": "genai-craft",
+  "url": "https://huggingface.co/genai-craft/aunvox-duplex-ja",
+  "created_at": "2026-08-30T18:45:57.000Z",
+  "updated_at": "2026-08-30T18:47:09.000Z",
+  "license": "aunvox-model-license-1.0",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "ja"
+  ],
+  "tags": [
+    "safetensors",
+    "step_audio_2_full_duplex",
+    "full-duplex",
+    "speech",
+    "dialogue",
+    "aunvox",
+    "custom_code",
+    "ja",
+    "base_model:HIT-TMG/Lychee-FD",
+    "base_model:quantized:HIT-TMG/Lychee-FD",
+    "license:other",
+    "4-bit",
+    "bitsandbytes",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 12812043520,
+  "parameters_human": "12.81B",
+  "storage_bytes": 10841722430,
+  "storage_human": "10.8 GB",
+  "base_model": "HIT-TMG/Lychee-FD",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": true,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "AICraft — One API, Every Model",
+      "url": "https://aicraftapi.net/",
+      "snippet": "AICraft is an AI model aggregation platform. We don&#x27;t train models. We don&#x27;t lock you into any vendor. We do one thing: give developers the lowest cost, simplest API to access the world&#x27;s best AI models."
+    },
+    {
+      "title": "arkashira/genai-craft: axentx product - GitHub",
+      "url": "https://github.com/arkashira/genai-craft",
+      "snippet": "genai-craft axentx product · A game development tool that seamlessly integrates generative AI, allowing developers to leverage its capabilities without compromising transparency."
+    },
+    {
+      "title": "LLM Leaderboard - Comparison of AI models from OpenAI, Anthropic ...",
+      "url": "https://artificialanalysis.ai/leaderboards/models",
+      "snippet": "LLM Leaderboard - Comparison of AI models from OpenAI, Anthropic, Google, SpaceXAI & others Comparison and ranking the performance of over 250 AI models (LLMs) across key metrics including intelligence, price, performance and speed (output speed - tokens per second & latency - TTFT), context window & others."
+    },
+    {
+      "title": "Every Generative AI Model: Benchmarks & How to Run Them | GenAIList",
+      "url": "https://genailist.net/",
+      "snippet": "Everything about every generative AI model Every model — LLMs, image, video, audio. Watch community video reviews, compare benchmark scores head-to-head, and for open models see the hardware & software to run them yourself. Everything you wanted to know, generously shared by the community."
+    },
+    {
+      "title": "Civitai | Discover and Create AI Art",
+      "url": "https://civitai.com/",
+      "snippet": "Explore thousands of free Stable Diffusion & Flux models, create and share AI-generated art, and join the world&#x27;s largest community of generative AI creators."
+    }
+  ]
+}

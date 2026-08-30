@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "lair-nyu/yor_icl_pi05_sanity15k_continued_15k",
+  "slug": "lair-nyu-yor_icl_pi05_sanity15k_continued_15k",
+  "author": "lair-nyu",
+  "url": "https://huggingface.co/lair-nyu/yor_icl_pi05_sanity15k_continued_15k",
+  "created_at": "2026-08-30T15:38:13.000Z",
+  "updated_at": "2026-08-30T15:40:44.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 12441625515,
+  "storage_human": "12.4 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "lair-nyu/yor_icl_pi05_easy_pnp_v2_sanity15k · Hugging Face",
+      "url": "https://huggingface.co/lair-nyu/yor_icl_pi05_easy_pnp_v2_sanity15k",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "lair-nyu/sanity15k_annealing · Hugging Face",
+      "url": "https://huggingface.co/lair-nyu/sanity15k_annealing",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "[2504.16054] $π_ {0.5}$: a Vision-Language-Action Model with Open-World ...",
+      "url": "https://arxiv.org/abs/2504.16054",
+      "snippet": "In order for robots to be useful, they must perform practically relevant tasks in the real world, outside of the lab. While vision-language-action (VLA) models have demonstrated impressive results for end-to-end robot control, it remains an open question how far such models can generalize in the wild. We describe $π_{0.5}$, a new model based on $π_{0}$ that uses co-training on heterogeneous ..."
+    },
+    {
+      "title": "π 0.5 : a Vision-Language-Action Model with Open-World Generalization",
+      "url": "https://arxiv.org/html/2504.16054v1",
+      "snippet": "Abstract In order for robots to be useful, they must perform practically relevant tasks in the real world, outside of the lab. While vision-language-action (VLA) models have demonstrated impressive results for end-to-end robot control, it remains an open question how far such models can generalize in the wild. We describe π 0.5 $π0.5$, a new model based on π 0 $π0$ that uses co-training on ..."
+    },
+    {
+      "title": "π0.5 A Vision-Language-Action Model with Open-World Generalization",
+      "url": "https://zhze.dev/note-readpaper/notes/llm/pi05/",
+      "snippet": "The model is first pre-trained on the heterogeneous mixture of training tasks, and then finetuned on mobile manipulator with both low-level action examples and high-level semantic subtask annotations. At runtime, the model first predicts the semantic subtask, and then uses it to condition the action generation."
+    }
+  ]
+}

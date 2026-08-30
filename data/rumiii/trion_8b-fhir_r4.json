@@ -1,0 +1,83 @@
+{
+  "schema": 1,
+  "id": "Rumiii/Trion_8B-FHIR_R4",
+  "slug": "rumiii-trion_8b-fhir_r4",
+  "author": "Rumiii",
+  "url": "https://huggingface.co/Rumiii/Trion_8B-FHIR_R4",
+  "created_at": "2026-08-30T18:44:08.000Z",
+  "updated_at": "2026-08-30T18:59:31.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "llama",
+    "text-generation",
+    "llama-3.1",
+    "medical",
+    "tool-calling",
+    "fhir",
+    "function-calling",
+    "healthcare",
+    "clinical-nlp",
+    "qlora",
+    "unsloth",
+    "conversational",
+    "en",
+    "dataset:Nadhari/MedToolCalling",
+    "base_model:unsloth/Meta-Llama-3.1-8B-Instruct-bnb-4bit",
+    "base_model:finetune:unsloth/Meta-Llama-3.1-8B-Instruct-bnb-4bit",
+    "license:apache-2.0",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 8030261248,
+  "parameters_human": "8.03B",
+  "storage_bytes": 16077766296,
+  "storage_human": "16.1 GB",
+  "base_model": "unsloth/Meta-Llama-3.1-8B-Instruct-bnb-4bit",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Rumiii/Qwen3-8B-MedReasonPath · Hugging Face",
+      "url": "https://huggingface.co/Rumiii/Qwen3-8B-MedReasonPath",
+      "snippet": "Instructions to use Rumiii/Qwen3-8B-MedReasonPath with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Libraries Transformers How to use Rumiii/Qwen3-8B-MedReasonPath with Transformers:"
+    },
+    {
+      "title": "Rumiii/Qwen3-8B-MedReasonPath at main - Hugging Face",
+      "url": "https://huggingface.co/Rumiii/Qwen3-8B-MedReasonPath/tree/main",
+      "snippet": "Instructions to use Rumiii/Qwen3-8B-MedReasonPath with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Libraries Transformers How to use Rumiii/Qwen3-8B-MedReasonPath with Transformers:"
+    },
+    {
+      "title": "GitHub - fhir-fli/fhir_r4: R4 Version of the FHIR Specification",
+      "url": "https://github.com/fhir-fli/fhir_r4",
+      "snippet": "R4 Version of the FHIR Specification. Contribute to fhir-fli/fhir_r4 development by creating an account on GitHub."
+    },
+    {
+      "title": "Index - FHIR v4.0.1",
+      "url": "https://www.hl7.org/fhir/R4/",
+      "snippet": "This page is part of the FHIR Specification (v4.0.1: R4 - Mixed Normative and STU) in it&#x27;s permanent home (it will always be available at this URL). The current version which supercedes this version is 5.0.0. For a full list of available versions, see the Directory of published versions . Page versions: R5 R4B R4 R3 R2 0 Welcome to FHIR® FHIR is a standard for health care data exchange ..."
+    },
+    {
+      "title": "GitHub - HL7/fhir: Official source for the HL7 FHIR Specification",
+      "url": "https://github.com/HL7/fhir",
+      "snippet": "Official source for the HL7 FHIR Specification. Contribute to HL7/fhir development by creating an account on GitHub."
+    }
+  ]
+}

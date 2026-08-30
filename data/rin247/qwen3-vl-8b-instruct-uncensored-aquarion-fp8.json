@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "Rin247/Qwen3-VL-8B-Instruct-Uncensored-Aquarion-FP8",
+  "slug": "rin247-qwen3-vl-8b-instruct-uncensored-aquarion-fp8",
+  "author": "Rin247",
+  "url": "https://huggingface.co/Rin247/Qwen3-VL-8B-Instruct-Uncensored-Aquarion-FP8",
+  "created_at": "2026-08-30T17:00:59.000Z",
+  "updated_at": "2026-08-30T17:04:41.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "qwen3_vl",
+    "quantized",
+    "fp8",
+    "uncensored",
+    "abliterated",
+    "fp8_weight_only",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 8144793840,
+  "parameters_human": "8.14B",
+  "storage_bytes": 8783868770,
+  "storage_human": "8.8 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Qwen/Qwen3-VL-8B-Instruct · Hugging Face",
+      "url": "https://huggingface.co/Qwen/Qwen3-VL-8B-Instruct",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "wangkanai/qwen3-vl-8b-instruct · Hugging Face",
+      "url": "https://huggingface.co/wangkanai/qwen3-vl-8b-instruct",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Qwen 3 VL node for ComfyUI + Qwen 3 VL (Heretic, uncensored) model",
+      "url": "https://civitai.com/models/2200639/qwen-3-vl-node-for-comfyui-qwen-3-vl-heretic-uncensored-model",
+      "snippet": "As for \"heretic support\" it is easy to add heretic model into the available QWEN 3.5 VL node from registry. It is needed to edit the file with the list of models by adding the \" someuser/model-name \" element into the array of model name in one or two .py files and add a SYSTEM_PROMPT options."
+    },
+    {
+      "title": "Best Uncensored Local LLMs by VRAM Tier (2026) | InsiderLLM",
+      "url": "https://insiderllm.com/guides/best-uncensored-local-llms/",
+      "snippet": "For coding, the base instruct model usually wins unless it&#x27;s actively refusing something. If you need uncensored and code, the new Qwen3-Coder-Next abliterated variant is more directly purpose-built than asking Dolphin to code."
+    },
+    {
+      "title": "GitHub - QwenLM/Qwen3-VL: Qwen3-VL is the multimodal large language ...",
+      "url": "https://github.com/QwenLM/Qwen3-VL",
+      "snippet": "Meet Qwen3-VL — the most powerful vision-language model in the Qwen series to date. This generation delivers comprehensive upgrades across the board: superior text understanding & generation, deeper visual perception & reasoning, extended context length, enhanced spatial and video dynamics comprehension, and stronger agent interaction capabilities. Available in Dense and MoE architectures ..."
+    }
+  ]
+}

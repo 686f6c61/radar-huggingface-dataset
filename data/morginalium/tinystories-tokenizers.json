@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "morginalium/tinystories-tokenizers",
+  "slug": "morginalium-tinystories-tokenizers",
+  "author": "morginalium",
+  "url": "https://huggingface.co/morginalium/tinystories-tokenizers",
+  "created_at": "2026-06-01T09:28:13.000Z",
+  "updated_at": "2026-08-30T18:00:06.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "tokenizer",
+    "bpe",
+    "dataset:roneneldan/TinyStories",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "morginalium/tinystories-tokenizers · Hugging Face",
+      "url": "https://huggingface.co/morginalium/tinystories-tokenizers",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "morginalium (Alexandr Kolesnikov) - Hugging Face",
+      "url": "https://huggingface.co/morginalium",
+      "snippet": "Extremely small language models, LMs for Russian, transformers and non-transformer architectures"
+    },
+    {
+      "title": "Regional Tiny Stories: Using Small Models to Compare Language Learning ...",
+      "url": "https://arxiv.org/html/2504.07989v1",
+      "snippet": "We demonstrate the successful adaptation of the TinyStories SLM paradigm to these three Indian languages, detailing effective pre-training steps and demonstrating substantial inference quality with significantly smaller model sizes than current state-of-the-art approaches."
+    },
+    {
+      "title": "[2504.07989] Regional Tiny Stories: Using Small Models to Compare ...",
+      "url": "https://arxiv.org/abs/2504.07989",
+      "snippet": "Small Language Models (SLMs) offer efficient alternatives to LLMs for specific domains. The 2023 TinyStories study developed an English dataset that allows SLMs with 1 to 10 million parameters to produce coherent outputs. Our research expands this framework by translating the original dataset into Indian languages and creating synthetic data using LLMs. We focus on Hindi, Marathi, and Bengali ..."
+    },
+    {
+      "title": "Regional Tiny Stories: Using Small Models to Compare Language Learning ...",
+      "url": "https://www.aimodels.fyi/papers/arxiv/regional-tiny-stories-using-small-models-to",
+      "snippet": "Overview Research comparing language model performance using small datasets from different regions Tests regional language learning capabilities on tiny datasets Evaluates multiple tokenizer approaches on different languages Uses controlled experiments with 2.5K stories per language Examines how tokenizers and model size affect language ..."
+    }
+  ]
+}

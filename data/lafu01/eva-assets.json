@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "Lafu01/eva-assets",
+  "slug": "lafu01-eva-assets",
+  "author": "Lafu01",
+  "url": "https://huggingface.co/Lafu01/eva-assets",
+  "created_at": "2026-05-13T12:36:25.000Z",
+  "updated_at": "2026-08-30T19:06:40.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "onnx",
+    "gguf",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us",
+    "imatrix",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 269,
+  "trending_score": 0,
+  "parameters": 596049920,
+  "parameters_human": "596.0M",
+  "storage_bytes": 35767597680,
+  "storage_human": "35.8 GB",
+  "base_model": null,
+  "formats": [
+    "gguf",
+    "onnx"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Lafu01 (Shi) - Hugging Face",
+      "url": "https://huggingface.co/Lafu01",
+      "snippet": "Synchronize and fix AI model files in a HuggingFace repo. Lafu01 10 days ago. models 1. Lafu01/eva-assets. 0.6B • Updated 5 days ago • 64"
+    },
+    {
+      "title": "Lafu01 (Shi) - Hugging Face",
+      "url": "https://huggingface.co/Lafu01/models",
+      "snippet": "Lafu01&#x27;s models1 Sort: Recently updated Lafu01/eva-assets 0.6B•Updated 2 days ago• 218"
+    },
+    {
+      "title": "Eva - V1 | Stable Diffusion XL LoRA | Civitai",
+      "url": "https://civitai.com/models/2643203/eva",
+      "snippet": "Eva is a photorealistic virtual model and AI influencer optimized for SDXL. This LoRA maintains a consistent face across different poses, outfits, and environments."
+    },
+    {
+      "title": "AI Models | Civitai",
+      "url": "https://civitai.com/models",
+      "snippet": "Browse thousands of free Stable Diffusion & Flux models, LoRAs, checkpoints, and embeddings. The largest collection of AI image generation resources."
+    },
+    {
+      "title": "GGUF Model Discovery - Browse & Download AI Models",
+      "url": "https://local-ai-zone.github.io/",
+      "snippet": "Discover and download GGUF format AI models. Browse and direct download thousands of quantized AI models with detailed information, download counts, and direct links."
+    }
+  ]
+}

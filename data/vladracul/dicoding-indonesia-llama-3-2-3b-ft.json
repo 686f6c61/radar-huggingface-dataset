@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "vladracul/dicoding-indonesia-llama-3.2-3b-ft",
+  "slug": "vladracul-dicoding-indonesia-llama-3-2-3b-ft",
+  "author": "vladracul",
+  "url": "https://huggingface.co/vladracul/dicoding-indonesia-llama-3.2-3b-ft",
+  "created_at": "2026-08-30T02:23:01.000Z",
+  "updated_at": "2026-08-30T14:45:02.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "llama",
+    "text-generation",
+    "text-generation-inference",
+    "unsloth",
+    "conversational",
+    "en",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 3212749824,
+  "parameters_human": "3.21B",
+  "storage_bytes": 6442738968,
+  "storage_human": "6.4 GB",
+  "base_model": "unsloth/llama-3.2-3b-instruct-unsloth-bnb-4bit",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "llama-3.2-3b-indonesian-finetuned-dicoding-submission",
+      "url": "https://huggingface.co/bip22/llama-3.2-3b-indonesian-finetuned-dicoding-submission",
+      "snippet": "llama-3.2-3b-indonesian-finetuned-dicoding-submission ... Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "llama3-indonesia-finetuned-dicoding API & Inference Endpoint - FriendliAI",
+      "url": "https://friendli.ai/models/Kiznaiver02/llama3-indonesia-finetuned-dicoding",
+      "snippet": "Run llama3-indonesia-finetuned-dicoding with FriendliAI inference. This llama model was trained 2x faster with Unsloth and Huggingface&#x27;s TRL library."
+    },
+    {
+      "title": "dwir/Llama-3.2-indonesia-3B · Hugging Face",
+      "url": "https://huggingface.co/dwir/Llama-3.2-indonesia-3B",
+      "snippet": "Model Card for Model ID Model Details Model Description This is the model card of a 🤗 transformers model that has been pushed on the Hub. This model card has been automatically generated. Developed by: [More Information Needed] Funded by [optional]: [More Information Needed] Shared by [optional]: [More Information Needed] Model type: [More Information Needed] Language (s) (NLP): [More ..."
+    },
+    {
+      "title": "Open-source AI Models for Any Application | Llama 3",
+      "url": "https://developer.meta.com/ai/models/llama-3/",
+      "snippet": "Discover Llama 3&#x27;s open-source AI models you can fine-tune, distill and deploy anywhere. Build smarter applications with flexible AI solutions."
+    },
+    {
+      "title": "llama-3.2-3b-indonesian-finetuned-dicoding-submission",
+      "url": "https://friendli.ai/models/bip22/llama-3.2-3b-indonesian-finetuned-dicoding-submission",
+      "snippet": "Run bip22/llama-3.2-3b-indonesian-finetuned-dicoding-submission with FriendliAI inference. This llama model was trained 2x faster with Unsloth and…"
+    }
+  ]
+}

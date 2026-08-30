@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "Rohan76543/FoodExtract-gemma-3-270m-fine-tune-v1",
+  "slug": "rohan76543-foodextract-gemma-3-270m-fine-tune-v1",
+  "author": "Rohan76543",
+  "url": "https://huggingface.co/Rohan76543/FoodExtract-gemma-3-270m-fine-tune-v1",
+  "created_at": "2026-08-30T13:18:50.000Z",
+  "updated_at": "2026-08-30T13:22:53.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gemma3_text",
+    "text-generation",
+    "generated_from_trainer",
+    "sft",
+    "trl",
+    "conversational",
+    "base_model:google/gemma-3-270m-it",
+    "base_model:finetune:google/gemma-3-270m-it",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 268098176,
+  "parameters_human": "268.1M",
+  "storage_bytes": 569613336,
+  "storage_human": "570 MB",
+  "base_model": "google/gemma-3-270m-it",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "RahulKate-173/FoodExtract-gemma-3-270m-fine-tune-v1 · Hugging Face",
+      "url": "https://huggingface.co/RahulKate-173/FoodExtract-gemma-3-270m-fine-tune-v1",
+      "snippet": "This model is a fine-tuned version of the base Small Language Model (SLM) google/gemma-3-270m-it. It has been specifically trained using Supervised Fine-Tuning (SFT) to analyze image captions or raw text descriptions and accurately extract structured information regarding food and drink items."
+    },
+    {
+      "title": "FoodExtract-gemma-3-270m-fine-tune-v1 - Hugging Face",
+      "url": "https://huggingface.co/mrdbourke/FoodExtract-gemma-3-270m-fine-tune-v1",
+      "snippet": "Model Card for checkpoint_models This model is a fine-tuned version of google/gemma-3-270m-it. It has been trained using TRL. Quick start ... Training procedure This model was trained with SFT. Framework versions TRL: 0.26.2 Transformers: 4.57.3 Pytorch: 2.9.1+cu130 Datasets: 4.4.2 Tokenizers: 0.22.1 Citations Cite TRL as:"
+    },
+    {
+      "title": "FoodExtract-gemma-3-270m-fine-tune-v1 - FriendliAI",
+      "url": "https://friendli.ai/models/isahsn/FoodExtract-gemma-3-270m-fine-tune-v1",
+      "snippet": "Deploy FoodExtract-gemma-3-270m-fine-tune-v1 with low-latency inference on FriendliAI. Get scalable API serving, high throughput, and production-grade reliability for AI agents."
+    },
+    {
+      "title": "FoodExtract-gemma-3-270m-fine-tune-v1 - friendli.ai",
+      "url": "https://friendli.ai/models/objects76/FoodExtract-gemma-3-270m-fine-tune-v1",
+      "snippet": "Run objects76/FoodExtract-gemma-3-270m-fine-tune-v1 with fast, reliable, and scalable inference on FriendliAI. Get low-latency performance with advanced quantization (FP4, FP8, INT4, INT8), continuous batching, optimized GPU kernels, token caching, and seamless API integration."
+    },
+    {
+      "title": "Foodextract Gemma 3 270m Fine Tune V1 - AI Model Insights & Benchmarks",
+      "url": "https://free2aitools.com/model/mrdbourke/foodextract-gemma-3-270m-fine-tune-v1",
+      "snippet": "by mrdbourke hf-model--mrdbourke--foodextract-gemma-3-270m-fine-tune-v1 Nexus Index 37.7Top 100% S: Semantic50 A: Authority0 P: Popularity24 R: Recency95 Q: Quality65 Tech Context Vital Performance 755 DL / 30D 0.0% Source → Share: 📤 𝕏 in 📣 🔗 Audited 37.7 FNI Score Tiny - Params - Context 755 Downloads Restricted GEMMA License ..."
+    }
+  ]
+}

@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "Yuant614/Qwen3-14B-Claude-4.5-Opus-High-Reasoning-Distill-GGUF",
+  "slug": "yuant614-qwen3-14b-claude-4-5-opus-high-reasoning-distill-gguf",
+  "author": "Yuant614",
+  "url": "https://huggingface.co/Yuant614/Qwen3-14B-Claude-4.5-Opus-High-Reasoning-Distill-GGUF",
+  "created_at": "2026-08-30T13:09:58.000Z",
+  "updated_at": "2026-08-30T13:09:58.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "gguf",
+    "qwen3",
+    "text-generation",
+    "text-generation-inference",
+    "unsloth",
+    "dataset:TeichAI/claude-4.5-opus-high-reasoning-250x",
+    "base_model:TeichAI/Qwen3-14B-Claude-4.5-Opus-High-Reasoning-Distill",
+    "base_model:quantized:TeichAI/Qwen3-14B-Claude-4.5-Opus-High-Reasoning-Distill",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 14768307200,
+  "parameters_human": "14.77B",
+  "storage_bytes": 122061162240,
+  "storage_human": "122.1 GB",
+  "base_model": "TeichAI/Qwen3-14B-Claude-4.5-Opus-High-Reasoning-Distill",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Qwen3-14B-Claude-4.5-Opus-High-Reasoning-Distill-GGUF",
+      "url": "https://huggingface.co/TeichAI/Qwen3-14B-Claude-4.5-Opus-High-Reasoning-Distill-GGUF",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Qwen3-14B-Claude-4.5-Opus-High-Reasoning-Distill",
+      "url": "https://huggingface.co/TeichAI/Qwen3-14B-Claude-4.5-Opus-High-Reasoning-Distill",
+      "snippet": "Qwen3 14B x Claude 4.5 Opus (High Reasoning) Distill This model was trained on a Claude Opus 4.5 (reasoning) dataset with a high reasoning effort. 🤖 Related Models:"
+    },
+    {
+      "title": "Qwen3-14B-Claude-4.5-Opus-High-Reasoning-Distill-GGUF",
+      "url": "https://www.modelscope.cn/models/TeichAI/Qwen3-14B-Claude-4.5-Opus-High-Reasoning-Distill-GGUF",
+      "snippet": "Qwen3 14B Thinking 2507 x Claude 4.5 Opus (High Reasoning) Distill This model was trained on a Claude Opus 4.5 (reasoning) dataset with a high reasoning effort. 🤖 ..."
+    },
+    {
+      "title": "Qwen3-14B-Claude-4.5-Opus-High-Reasoning-Distill-GGUF",
+      "url": "https://www.aimodels.fyi/models/huggingFace/qwen3-14b-claude-4.5-opus-high-reasoning-distill-gguf-teichai",
+      "snippet": "Check the HuggingFace model page for upload dates and any recent model card updates to assess active support. Q: How does the reasoning distillation from Claude Opus 4.5 affect output length? A: The training data emphasizes high-reasoning-effort responses, meaning the model will produce longer outputs with explicit intermediate reasoning steps."
+    },
+    {
+      "title": "Qwen3 14b Claude 4.5 Opus High Reasoning Distill - GGUF Model",
+      "url": "https://local-ai-zone.github.io/models/qwen3-14b-claude-4-5-opus-high-reasoning-distill.html",
+      "snippet": "Download Qwen3 14b Claude 4.5 Opus High Reasoning Distill GGUF model. 29.4 GB, 13,552 downloads, 327 likes."
+    }
+  ]
+}

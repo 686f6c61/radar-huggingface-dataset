@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "qtris123/am-qasper-p01-qwen3-4b-512",
+  "slug": "qtris123-am-qasper-p01-qwen3-4b-512",
+  "author": "qtris123",
+  "url": "https://huggingface.co/qtris123/am-qasper-p01-qwen3-4b-512",
+  "created_at": "2026-08-30T15:34:46.000Z",
+  "updated_at": "2026-08-30T15:34:50.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "attention-matching",
+    "kv-cache",
+    "qwen3",
+    "dataset:allenai/qasper",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 151624607,
+  "storage_human": "152 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Qwen3-4B - Qualcomm AI Hub",
+      "url": "https://aihub.qualcomm.com/models/qwen3_4b",
+      "snippet": "The Qwen3‑4B is a state‑of‑the‑art multilingual base language model with 4 billion parameters, excelling in language understanding, generation, coding, and mathematics."
+    },
+    {
+      "title": "Qwen3-4B-Instruct-2507-SD-FNC-512-1 - Hugging Face",
+      "url": "https://huggingface.co/Ali-Mhrez/Qwen3-4B-Instruct-2507-SD-FNC-512-1",
+      "snippet": "Instructions to use Ali-Mhrez/Qwen3-4B-Instruct-2507-SD-FNC-512-1 with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "Qwen3-4B-Instruct-2507 - Qualcomm AI Hub",
+      "url": "https://aihub.qualcomm.com/models/qwen3_4b_instruct_2507",
+      "snippet": "The Qwen3‑4B‑Instruct‑2507 is a state‑of‑the‑art multilingual instruct language model with 4 billion parameters, excelling in language understanding, generation, coding, and mathematics. Unlike the base Qwen3‑4B, this variant has only instruct training without thinking mode support."
+    },
+    {
+      "title": "Irfanuruchi/Qwen3-4B-Computer-Science-Models at main",
+      "url": "https://huggingface.co/Irfanuruchi/Qwen3-4B-Computer-Science-Models/tree/main",
+      "snippet": "Instructions to use Irfanuruchi/Qwen3-4B-Computer-Science-Models with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "Qwen",
+      "url": "https://qwen.ai/home",
+      "snippet": "Qwen Studio is an AI assistant for everyone, powered by the Qwen series models. It&#x27;s free to use, open to all, and ready to help with creativity, collaboration, and endless possibilities."
+    }
+  ]
+}

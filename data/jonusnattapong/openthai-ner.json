@@ -1,0 +1,103 @@
+{
+  "schema": 1,
+  "id": "JonusNattapong/OpenThai-NER",
+  "slug": "jonusnattapong-openthai-ner",
+  "author": "JonusNattapong",
+  "url": "https://huggingface.co/JonusNattapong/OpenThai-NER",
+  "created_at": "2025-12-26T09:25:22.000Z",
+  "updated_at": "2026-08-30T11:28:41.000Z",
+  "license": "cc-by-3.0",
+  "license_family": "unknown",
+  "pipeline_tag": "token-classification",
+  "library": "transformers",
+  "languages": [
+    "th"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "camembert",
+    "token-classification",
+    "ner",
+    "thai",
+    "pytorch",
+    "phayathaibert",
+    "phayathaibert-thainer",
+    "th",
+    "dataset:JonusNattapong/OpenThai-NER-Corpus",
+    "base_model:Pavarissy/phayathaibert-thainer",
+    "base_model:finetune:Pavarissy/phayathaibert-thainer",
+    "license:cc-by-3.0",
+    "model-index",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 17,
+  "trending_score": 0,
+  "parameters": 276910884,
+  "parameters_human": "276.9M",
+  "storage_bytes": 5560966804,
+  "storage_human": "5.6 GB",
+  "base_model": "Pavarissy/phayathaibert-thainer",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "Named Entity Recognition",
+      "dataset": "OpenThai-NER-Corpus",
+      "metric": "Strict Span F1",
+      "value": 0.7928
+    },
+    {
+      "task": "Named Entity Recognition",
+      "dataset": "OpenThai-NER-Corpus",
+      "metric": "Precision",
+      "value": 0.7887
+    },
+    {
+      "task": "Named Entity Recognition",
+      "dataset": "OpenThai-NER-Corpus",
+      "metric": "Recall",
+      "value": 0.797
+    },
+    {
+      "task": "Named Entity Recognition",
+      "dataset": "OpenThai-NER-Corpus",
+      "metric": "Token Accuracy",
+      "value": 0.9076
+    }
+  ],
+  "sources": [
+    {
+      "title": "JonusNattapong/OpenThai - GitHub",
+      "url": "https://github.com/JonusNattapong/OpenThai",
+      "snippet": "OpenThai-NER is a production-grade Named Entity Recognition (NER) library and model for the Thai language. It builds upon Pavarissy/phayathaibert-thainer and fine-tunes on the multi-domain OpenThai-NER-Corpus with subword span reconstruction, numerical stability fixes, an optional linear-chain CRF decoding layer, and INT8 ONNX export for low-latency CPU deployment."
+    },
+    {
+      "title": "JonusNattapong/OpenThai-NER · Hugging Face",
+      "url": "https://huggingface.co/JonusNattapong/OpenThai-NER",
+      "snippet": "Task: Token Classification (NER) Language: Thai (th) License: cc-by-3. Google Colab: Google Colab. Intended Use This model is intended for: Extracting named entities from Thai text (people, organizations, locations, etc. depending on your label schema) Downstream tasks like document indexing, entity-based search, analytics, and data labeling ..."
+    },
+    {
+      "title": "JonusNattapong/OpenThai-NER-Corpus · Datasets at Hugging Face",
+      "url": "https://huggingface.co/datasets/JonusNattapong/OpenThai-NER-Corpus",
+      "snippet": "This dataset contains Thai text samples annotated with named entity labels for training and evaluating NER models. The corpus covers a wide variety of domains including government, finance, legal, healthcare, education, and more."
+    },
+    {
+      "title": "OpenThai Introduction | OpenThai",
+      "url": "https://openthai.aieat.or.th/en/",
+      "snippet": "🏠 OpenThai Introduction OpenThai (formerly OpenThaiGPT) builds open-weight large language models for the Thai language, free for everyone to use. It is run by the Artificial Intelligence Entrepreneur Association of Thailand (AIEAT) together with iApp Technology and a community of volunteer developers. Every model is published on Hugging Face and can be self-hosted on your own hardware, for ..."
+    },
+    {
+      "title": "Thai NER v2.0 | Thai NER",
+      "url": "https://pythainlp.org/Thai-NER/version/2",
+      "snippet": "Thai Named Entity Recognition"
+    }
+  ]
+}

@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "WasonLimp/jaywaijing",
+  "slug": "wasonlimp-jaywaijing",
+  "author": "WasonLimp",
+  "url": "https://huggingface.co/WasonLimp/jaywaijing",
+  "created_at": "2026-08-30T14:13:57.000Z",
+  "updated_at": "2026-08-30T14:14:19.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "th",
+    "en"
+  ],
+  "tags": [
+    "safetensors",
+    "llama",
+    "text-generation",
+    "dummy-model",
+    "th",
+    "en",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 0,
+  "parameters_human": null,
+  "storage_bytes": 42,
+  "storage_human": "42 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Dark Web AI Tools & Uncensored Models 2026 - Complete Guide | TorWiki",
+      "url": "https://torwiki.org/learn/darknet-ai/",
+      "snippet": "Complete guide to dark web AI: WormGPT, FraudGPT, GhostGPT, jailbreak techniques, uncensored LLMs, and AI services on Tor. Updated April 2026."
+    },
+    {
+      "title": "CivArchive (CivitAI Archive) - AI Model Archive",
+      "url": "https://civitaiarchive.com/",
+      "snippet": "Browse and discover AI models from CivitAI, TensorArt, and SeaArt. Community-driven archive preserving access to AI resources."
+    },
+    {
+      "title": "Free AI Image Detector & Checker: Is a Photo AI? | Is It AI?",
+      "url": "https://isitai.com/ai-image-detector",
+      "snippet": "AI Image Detector & Checker: Is This Photo AI-Generated? Upload any photo, picture, or piece of AI art and our free AI image checker tells you if it was AI-generated or real, in seconds. With 95%+ accuracy across Midjourney, DALL-E, Stable Diffusion, Nano Banana, Firefly, ChatGPT and 20+ models, it&#x27;s trusted by newsrooms, educators, and content teams to verify image authenticity."
+    },
+    {
+      "title": "AI Detector: Free AI Checker for ChatGPT, Claude & GPT-5 - QuillBot",
+      "url": "https://quillbot.com/ai-content-detector",
+      "snippet": "Quillbot&#x27;s free AI Detector checks text from ChatGPT, GPT-5, Claude and others. Get an AI score, sentence-level highlights, and refined AI detection insights."
+    },
+    {
+      "title": "AI Detector | GPT-5, Claude, Gemini, Qwen, DeepSeek | Sapling",
+      "url": "https://sapling.ai/ai-content-detector",
+      "snippet": "Free AI content detector and slop detector with 97% accuracy. Detect AI slop and machine-generated text from GPT-5, Claude 4.5, Gemini 2.5, Qwen3, DeepSeek-V3 and other AI models. Analyze text, PDFs, and Word documents."
+    }
+  ]
+}

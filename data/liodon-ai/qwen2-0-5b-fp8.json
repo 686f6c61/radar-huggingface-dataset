@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "liodon-ai/Qwen2-0.5B-FP8",
+  "slug": "liodon-ai-qwen2-0-5b-fp8",
+  "author": "liodon-ai",
+  "url": "https://huggingface.co/liodon-ai/Qwen2-0.5B-FP8",
+  "created_at": "2026-08-30T17:01:28.000Z",
+  "updated_at": "2026-08-30T17:05:19.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen2",
+    "text-generation",
+    "fp8",
+    "compressed-tensors",
+    "vllm",
+    "quantized",
+    "conversational",
+    "base_model:Qwen/Qwen2-0.5B",
+    "base_model:quantized:Qwen/Qwen2-0.5B",
+    "license:other",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 494032768,
+  "parameters_human": "494.0M",
+  "storage_bytes": 642317830,
+  "storage_human": "642 MB",
+  "base_model": "Qwen/Qwen2-0.5B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "liodon-ai/Qwen2.5-0.5B-Instruct-FP8 · Hugging Face",
+      "url": "https://huggingface.co/liodon-ai/Qwen2.5-0.5B-Instruct-FP8",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "liodon-ai/Qwen2-0.5B-imatrix-GGUF · Hugging Face",
+      "url": "https://huggingface.co/liodon-ai/Qwen2-0.5B-imatrix-GGUF",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Home - LioDon AI",
+      "url": "https://liodon.ai/",
+      "snippet": "Qwen3-14B GGUF Qwen2.5-7B GGUF Qwen2-0.5B GGUF Riva-Translate-4B GGUF qwen3-8b-heretic GGUF granite-4.1-3b GGUF Qwen3-8B-Base GGUF All Models on HuggingFace Tools JuryEval TorchEmbed TorchCriterion TorchNorm TorchAgentic NanoNLP PromptGrad CitationHunter SemanticWER Agent Learning Kit embedding.cpp audio.cpp tabular.cpp timeseries.cpp wav2vec2 ..."
+    },
+    {
+      "title": "GitHub - QuantumEclipseAI/Qwen2: Qwen2 is the large language model ...",
+      "url": "https://github.com/QuantumEclipseAI/Qwen2",
+      "snippet": "After months of efforts, we are pleased to announce the evolution from Qwen1.5 to Qwen2. This time, we bring to you: Pretrained and instruction-tuned models of 5 sizes, including Qwen2-0.5B, Qwen2-1.5B, Qwen2-7B, Qwen2-57B-A14B, and Qwen2-72B; Having been trained on data in 27 additional languages besides English and Chinese; State-of-the-art performance in a large number of benchmark ..."
+    },
+    {
+      "title": "GitHub - mx4ai/qwen2.5: Qwen2.5 is the large language model series ...",
+      "url": "https://github.com/mx4ai/qwen2.5",
+      "snippet": "To pull a model checkpoint and run the model, use the ollama run command. You can specify a model size by adding a suffix to qwen2.5, such as :0.5b, :1.5b, :7b, or :72b:"
+    }
+  ]
+}

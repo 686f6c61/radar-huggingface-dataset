@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "KnMtthw/Reinforce-CartPole-v1",
+  "slug": "knmtthw-reinforce-cartpole-v1",
+  "author": "KnMtthw",
+  "url": "https://huggingface.co/KnMtthw/Reinforce-CartPole-v1",
+  "created_at": "2026-08-30T17:36:42.000Z",
+  "updated_at": "2026-08-30T17:36:51.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "reinforcement-learning",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "CartPole-v1",
+    "reinforce",
+    "reinforcement-learning",
+    "custom-implementation",
+    "deep-rl-class",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 3593,
+  "storage_human": "3593 B",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "kmirain/Reinforce-CartPole-v1 · Hugging Face",
+      "url": "https://huggingface.co/kmirain/Reinforce-CartPole-v1",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "a1024053774/Reinforce-CartPole-v1 · Hugging Face",
+      "url": "https://huggingface.co/a1024053774/Reinforce-CartPole-v1",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "REINFORCE on CartPole-v1 - aegean.ai",
+      "url": "https://aegean.ai/aiml-common/lectures/reinforcement-learning/policy-based-algorithms/reinforce/reinforce-cartpole/reinforce-cartpole",
+      "snippet": "Runnable policy-gradient agent trained on CartPole-v1 with live Weights & Biases tracking and a learning-curve plot."
+    },
+    {
+      "title": "CartPole Implementation Details | sanepunk/RL | DeepWiki",
+      "url": "https://deepwiki.com/sanepunk/RL/3-cartpole-implementation-details",
+      "snippet": "This document provides detailed technical specifications for the two CartPole environment implementations in the repository. It covers the specific neural network architectures, training configurations, and implementation details for both the Simple REINFORCE and MOE (Mixture of Experts) REINFORCE variants that target the CartPole-v1 environment."
+    },
+    {
+      "title": "unit1_reinforce_cartpole.ipynb - Colab",
+      "url": "https://colab.research.google.com/github/AliBuildsAI/rl-for-robotics-llms/blob/main/notebooks/unit1_reinforce_cartpole.ipynb",
+      "snippet": "Part of the RL for Robotics & LLMs series. We start with REINFORCE (Williams, 1992) — the original policy gradient algorithm — then build up to Vanilla Policy Gradient (VPG) by adding a learned value-function baseline, and show that the baseline directly improves training stability. This notebook follows Algorithm 1 from Schulman et al. exactly."
+    }
+  ]
+}

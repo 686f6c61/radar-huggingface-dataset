@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "CMB-ClimateModernBERT/F_CX_LRD",
+  "slug": "cmb-climatemodernbert-f_cx_lrd",
+  "author": "CMB-ClimateModernBERT",
+  "url": "https://huggingface.co/CMB-ClimateModernBERT/F_CX_LRD",
+  "created_at": "2026-08-30T15:50:08.000Z",
+  "updated_at": "2026-08-30T15:50:28.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "fill-mask",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "modernbert",
+    "fill-mask",
+    "climate",
+    "domain-adaptation",
+    "continued-pretraining",
+    "web-text",
+    "en",
+    "base_model:answerdotai/ModernBERT-base",
+    "base_model:finetune:answerdotai/ModernBERT-base",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 149655232,
+  "parameters_human": "149.7M",
+  "storage_bytes": 598635000,
+  "storage_human": "599 MB",
+  "base_model": "answerdotai/ModernBERT-base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ClimateModernBERT - a sraj Collection - Hugging Face",
+      "url": "https://huggingface.co/collections/sraj/climatemodernbert",
+      "snippet": "sraj &#x27;s Collections ClimateModernBERT CMB all ModernBERT Checkpoints from pretraining phases"
+    },
+    {
+      "title": "CMB all - a sraj Collection - Hugging Face",
+      "url": "https://huggingface.co/collections/sraj/cmb-all",
+      "snippet": "sraj &#x27;s Collections ClimateModernBERT CMB all ModernBERT Checkpoints from pretraining phases"
+    },
+    {
+      "title": "SEC.gov",
+      "url": "https://www.sec.gov/Archives/edgar/data/70858/000191870426025195/0001918704-26-025195.txt",
+      "snippet": "•The Contingent Income (with Memory Feature) Auto-Callable Yield Notes Linked to the Least Performing of the Class A Common Stock of Meta Platforms, Inc., the Common Stock of Apple Inc. and the Common Stock of Netflix, Inc., due September 7, 2029 (the \"Notes\") are expected to price on September 3, 2026 and expected to issue on September 9, 2026."
+    },
+    {
+      "title": "Chemical Mass Balance (CMB) Model - US EPA",
+      "url": "https://www.epa.gov/scram/chemical-mass-balance-cmb-model",
+      "snippet": "The Chemical Mass Balance (CMB) Model EPA-CMB v8.2 is one of several receptor models that has been applied to air quality problems over the last two decades. Based on an effective-variance least squares method (EVLS), EPA has supported CMB as a regulatory planning tool through its approval of numerous State Implementation Plans (SIPs) which have a source apportionment component. CMB requires ..."
+    },
+    {
+      "title": "Air Modeling Resources from Selected Agencies and Organizations",
+      "url": "https://www.epa.gov/scram/air-modeling-resources-selected-agencies-and-organizations",
+      "snippet": "Air Modeling Related Links This page contains links to air modeling information from various agencies and organizations:"
+    }
+  ]
+}

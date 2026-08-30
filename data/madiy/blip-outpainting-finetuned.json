@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "Madiy/blip-outpainting-finetuned",
+  "slug": "madiy-blip-outpainting-finetuned",
+  "author": "Madiy",
+  "url": "https://huggingface.co/Madiy/blip-outpainting-finetuned",
+  "created_at": "2026-08-30T12:58:27.000Z",
+  "updated_at": "2026-08-30T12:58:43.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "blip",
+    "image-text-to-text",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 247444600,
+  "parameters_human": "247.4M",
+  "storage_bytes": 989839224,
+  "storage_human": "990 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "outpainting-sd-inf/blip_model at main · MqLeet/outpainting-sd-inf",
+      "url": "https://github.com/MqLeet/outpainting-sd-inf/tree/main/blip_model",
+      "snippet": "Download VQA v2 dataset and Visual Genome dataset from the original websites, and set &#x27;vqa_root&#x27; and &#x27;vg_root&#x27; in blip_model/configs/vqa.yaml. To evaluate the finetuned BLIP model, generate results with: (evaluation needs to be performed on official server) python -m torch.distributed.run --nproc_per_node=8 train_vqa.py --evaluate To finetune the pre-trained checkpoint using 16 A100 GPUs ..."
+    },
+    {
+      "title": "newih/blip2_finetuning_model_example · Hugging Face",
+      "url": "https://huggingface.co/newih/blip2_finetuning_model_example",
+      "snippet": "Model Card for Model ID Model Details Model Description Developed by: [More Information Needed] Funded by [optional]: [More Information Needed] Shared by [optional]: [More Information Needed] Model type: [More Information Needed] Language (s) (NLP): [More Information Needed] License: [More Information Needed] Finetuned from model [optional]: [More Information Needed] Model Sources [optional ..."
+    },
+    {
+      "title": "luisdomene4/BLIP2-Finetune-Recipes · Hugging Face",
+      "url": "https://huggingface.co/luisdomene4/BLIP2-Finetune-Recipes",
+      "snippet": "The model is capable of zero-shot image-to-text generation and can follow natural language instructions. Developed by: Salesforce AI Research Funded by: Salesforce Shared by: Official BLIP-2 repository Model type: Vision-language model Language (s): English Finetuned from model: BLIP-2 base pretrained on COCO dataset Model Sources ..."
+    },
+    {
+      "title": "gwm_outpainting - v2.0-brushnet | Stable Diffusion XL Checkpoint - Civitai",
+      "url": "https://civitai.com/models/275269/gwmoutpainting",
+      "snippet": "This model is finetuned based on the diffusers/stable-diffusion-xl-1.-inpainting-.1 and can outpaint the pictures by using a mask. The uploaded part only has the UNet. The showcase is presented in the order output_result-raw_image. Usage: 1. The input is a masked image (expanded from source image and fill the expanded part with the value you like) and its mask (set the expanded part to 255 ..."
+    },
+    {
+      "title": "Free AI Outpainting | Extend Wallpapers & More Online",
+      "url": "https://www.pixelcut.ai/uncrop/ai-outpainting",
+      "snippet": "With Pixelcut&#x27;s AI outpainting tool, you can easily extend images in any direction. Simply upload your image and adjust the canvas. Try it free!"
+    }
+  ]
+}

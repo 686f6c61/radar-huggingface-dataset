@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "aaaaacsdsv/Qwen3.8-Flash-Next-Uncensored",
+  "slug": "aaaaacsdsv-qwen3-8-flash-next-uncensored",
+  "author": "aaaaacsdsv",
+  "url": "https://huggingface.co/aaaaacsdsv/Qwen3.8-Flash-Next-Uncensored",
+  "created_at": "2026-08-30T12:15:40.000Z",
+  "updated_at": "2026-08-30T12:15:40.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Qwen3.8-Flash-Next - GitHub",
+      "url": "https://github.com/QwenLM/Qwen3.8-Flash-Next/",
+      "snippet": "Qwen3.8-Flash-Next upgrades the model systematically along four aspects — attention, residual, embedding and optimization — improving model capability while further optimizing computational efficiency, model capacity and training stability: Attention A GDN + QSA hybrid architecture."
+    },
+    {
+      "title": "Qwen/Qwen3.8-Flash-Next · Hugging Face",
+      "url": "https://huggingface.co/Qwen/Qwen3.8-Flash-Next",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Qwen3.8-Flash-Next — Benchmarks, Specs & Release Date",
+      "url": "https://aireleasetracker.com/model/qwen/qwen3.8-flash-next",
+      "snippet": "Qwen3.8-Flash-Next Open Weight Released Aug 26 2026 Qwen3.8-Flash-Next is an AI model released by Qwen on Wednesday, Aug 26 2026, 12 days after Qwen3.8-27B. It is an open-weight model — the trained weights are available to download and run. It is a 125B parameter model with a 262k token context window."
+    },
+    {
+      "title": "unsloth/Qwen3.8-Flash-Next-GGUF · Hugging Face",
+      "url": "https://huggingface.co/unsloth/Qwen3.8-Flash-Next-GGUF",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Qwen/Qwen3.8-Flash-Next | vLLM Recipes - recipes.vllm.ai",
+      "url": "https://recipes.vllm.ai/Qwen/Qwen3.8-Flash-Next",
+      "snippet": "Overview Qwen3.8-Flash-Next is a multimodal, ultra-sparse Mixture-of-Experts model. It has 125B parameters, including an additional 51B N-gram embedding table, while activating 6B parameters per token. The architecture combines four main ideas: GDN + QSA: three of every four layers use Gated DeltaNet to compress history; the fourth uses Qwen Sparse Attention for precise long-range retrieval ..."
+    }
+  ]
+}

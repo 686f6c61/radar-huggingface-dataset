@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "Jereeli/q-FrozenLake-v1-4x4-noSlippery",
+  "slug": "jereeli-q-frozenlake-v1-4x4-noslippery",
+  "author": "Jereeli",
+  "url": "https://huggingface.co/Jereeli/q-FrozenLake-v1-4x4-noSlippery",
+  "created_at": "2026-08-30T13:13:24.000Z",
+  "updated_at": "2026-08-30T13:13:27.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "reinforcement-learning",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "FrozenLake-v1-4x4-no_slippery",
+    "q-learning",
+    "reinforcement-learning",
+    "custom-implementation",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 915,
+  "storage_human": "915 B",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "nam194/q-FrozenLake-v1-4x4-noSlippery · Hugging Face",
+      "url": "https://huggingface.co/nam194/q-FrozenLake-v1-4x4-noSlippery",
+      "snippet": "Q-Learning Agent playing1 FrozenLake-v1 This is a trained model of a Q-Learning agent playing FrozenLake-v1 . Usage"
+    },
+    {
+      "title": "Adi070204/q-FrozenLake-v1-4x4-noSlippery · Hugging Face",
+      "url": "https://huggingface.co/Adi070204/q-FrozenLake-v1-4x4-noSlippery",
+      "snippet": "Q-Learning Agent playing1 FrozenLake-v1 This is a trained model of a Q-Learning agent playing FrozenLake-v1 . Usage"
+    },
+    {
+      "title": "JJJJerry/q-FrozenLake-v1-4x4-noSlippery - AI Model Zoo - BimAnt",
+      "url": "https://zoo.bimant.com/model/352554",
+      "snippet": "This is a trained model of a Q-Learning agent playing FrozenLake-v1 ."
+    },
+    {
+      "title": "jabot/q-FrozenLake-v1-4x4-noSlippery - AI Model Zoo - BimAnt",
+      "url": "https://zoo.bimant.com/model/45092",
+      "snippet": "Q-Learning Agent playing FrozenLake-v1 This is a trained model of a Q-Learning agent playing FrozenLake-v1 ."
+    },
+    {
+      "title": "GitHub - Operator-X/FrozenLake: This is the Complete Implimentation of ...",
+      "url": "https://github.com/Operator-X/FrozenLake",
+      "snippet": "Solving FrozenLake with Reinforcement Learning 🤖 This project is a hands-on introduction to the world of Reinforcement Learning (RL) using the classic Q-learning algorithm. We train an agent to navigate the treacherous, slippery environment of the FrozenLake-v1 game from the Gymnasium library."
+    }
+  ]
+}

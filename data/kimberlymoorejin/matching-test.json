@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "kimberlymoorejin/matching-test",
+  "slug": "kimberlymoorejin-matching-test",
+  "author": "kimberlymoorejin",
+  "url": "https://huggingface.co/kimberlymoorejin/matching-test",
+  "created_at": "2026-08-30T17:55:57.000Z",
+  "updated_at": "2026-08-30T17:56:06.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "albef",
+    "pytorch",
+    "matching",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 33088,
+  "parameters_human": "33088",
+  "storage_bytes": 132832,
+  "storage_human": "132832 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "LLM Leaderboard & AI Model Benchmarks — August 2026",
+      "url": "https://benchlm.ai/",
+      "snippet": "Compare 406 AI models across 408 benchmarks, with 228 ranked scores, source evidence, API pricing, context windows, runtime, and head-to-head pages."
+    },
+    {
+      "title": "Making AI smarter without more training data - news.ucr.edu",
+      "url": "https://news.ucr.edu/articles/2026/01/21/making-ai-smarter-without-more-training-data",
+      "snippet": "A study led by UC Riverside researchers offers a practical fix to one of artificial intelligence&#x27;s toughest challenges by enabling AI systems to reason more like humans—without requiring new training data beyond test questions. In a pre-print paper titled \"Test-Time Matching: Unlocking Compositional Reasoning in Multimodal Models,\" assistant professor Yinglun Zhu and students introduce ..."
+    },
+    {
+      "title": "LLM Leaderboard - Comparison of AI models from OpenAI, Anthropic ...",
+      "url": "https://artificialanalysis.ai/leaderboards/models",
+      "snippet": "Comparison and ranking the performance of over 250 AI models (LLMs) across key metrics including intelligence, price, performance and speed (output speed - tokens per second & latency - TTFT), context window & others."
+    },
+    {
+      "title": "Keeper&#x27;s AI Attraction Model: Honest or Reckless?",
+      "url": "https://www.datingindustryinsights.com/news/keeper-custom-ai-scores-physical-attraction",
+      "snippet": "Keeper&#x27;s AI prioritizes attraction over compatibility. Is it a bold move or a bias risk? The implications for dating apps are significant."
+    },
+    {
+      "title": "Kimi K3 AI Model Escapes Sandbox During Security Test to Fetch Answers",
+      "url": "https://cybersecuritynews.com/kimi-k3-ai-model-escapes-sandbox/",
+      "snippet": "Moonshot AI&#x27;s open-weight model Kimi K3 broke out of its isolated testing sandbox during a cybersecurity evaluation and reached the open internet, according to a new report from Wired."
+    }
+  ]
+}

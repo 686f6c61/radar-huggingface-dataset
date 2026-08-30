@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "Jules1998/medgemma_poc_2",
+  "slug": "jules1998-medgemma_poc_2",
+  "author": "Jules1998",
+  "url": "https://huggingface.co/Jules1998/medgemma_poc_2",
+  "created_at": "2026-08-30T16:08:18.000Z",
+  "updated_at": "2026-08-30T17:19:46.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "unsloth",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 300578217,
+  "storage_human": "301 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Jules1998/medgemma_poc_2 · Hugging Face",
+      "url": "https://huggingface.co/Jules1998/medgemma_poc_2",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Jules1998/medgemma_poc_2 at main - Hugging Face",
+      "url": "https://huggingface.co/Jules1998/medgemma_poc_2/tree/main",
+      "snippet": "Jules1998 / medgemma_poc_2 like 0 Image-Text-to-Text Transformers Safetensors gemma3 unsloth conversational text-generation-inference 4-bit precision bitsandbytes arxiv:1910.09700 Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "medgemma_poc_2 API & Inference Endpoint | FriendliAI",
+      "url": "https://friendli.ai/models/Jules1998/medgemma_poc_2",
+      "snippet": "Deploy medgemma_poc_2 with low-latency inference on FriendliAI. Get scalable API serving, high throughput, and production-grade reliability for AI agents."
+    },
+    {
+      "title": "MedGemma — Google DeepMind",
+      "url": "https://deepmind.google/models/gemma/medgemma/",
+      "snippet": "Accelerate the development of healthcare-based AI applications MedGemma 1.5 4B enables developers to more effectively adapt MedGemma for applications that involve high-dimensional imaging (CT, MRI, and whole slide histopathology), longitudinal analysis of chest X-rays, anatomical localization, and other medical imaging and text functionality."
+    },
+    {
+      "title": "GitHub - Google-Health/medgemma",
+      "url": "https://github.com/google-health/medgemma",
+      "snippet": "MedGemma is a collection of Gemma 3 variants that are trained for performance on medical text and image comprehension. Developers can use MedGemma to accelerate building healthcare-based AI applications."
+    }
+  ]
+}

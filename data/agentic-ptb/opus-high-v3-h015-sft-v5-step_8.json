@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "agentic-ptb/opus-high-v3.h015.sft-v5.step_8",
+  "slug": "agentic-ptb-opus-high-v3-h015-sft-v5-step_8",
+  "author": "agentic-ptb",
+  "url": "https://huggingface.co/agentic-ptb/opus-high-v3.h015.sft-v5.step_8",
+  "created_at": "2026-08-30T18:14:21.000Z",
+  "updated_at": "2026-08-30T18:16:20.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "qwen3_5",
+    "agentic-ptb",
+    "opus-high-v3",
+    "negative-results",
+    "base_model:Qwen/Qwen3.5-9B-Base",
+    "base_model:finetune:Qwen/Qwen3.5-9B-Base",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 9409813744,
+  "parameters_human": "9.41B",
+  "storage_bytes": 18839710445,
+  "storage_human": "18.8 GB",
+  "base_model": "Qwen/Qwen3.5-9B-Base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "agentic-ptb/INDEX · Datasets at Hugging Face",
+      "url": "https://huggingface.co/datasets/agentic-ptb/INDEX",
+      "snippet": "opus-high-v1 is the opus@high cell. A rerun (opus-high-v2, run a-rerun) was aborted and is not valid — it stopped producing checkpoints at ~h12 and submitted the base model&#x27;s tensors unchanged after all five of its SFT runs regressed."
+    },
+    {
+      "title": "Models - Hugging Face",
+      "url": "https://huggingface.co/models?other=agentic-ptb",
+      "snippet": "Explore machine learning models. 234 Base only Inference AvailableInference Edit filters Sort: Trending Active filters: agentic-ptb Clear all"
+    },
+    {
+      "title": "Best LLMs for Agentic — August 2026 Leaderboard | BenchLM.ai",
+      "url": "https://benchlm.ai/agentic",
+      "snippet": "Compare 406 AI models on agentic benchmarks for tool use, browser research, and multi-step computer tasks. See which models handle terminal work, API tools, and software interfaces most reliably."
+    },
+    {
+      "title": "GitHub - FlorianBruniaux/claude-code-ultimate-guide: The most ...",
+      "url": "https://github.com/FlorianBruniaux/claude-code-ultimate-guide",
+      "snippet": "This guide teaches you to think differently about AI-assisted development: Understand trade-offs — When to use agents vs skills vs commands (not just how to configure them) Build mental models — How Claude Code works internally (architecture, context flow, tool orchestration) Visualize concepts — 48 Mermaid diagrams covering model selection, master loop, memory hierarchy, multi-agent ..."
+    },
+    {
+      "title": "LLM Rankings | OpenRouter",
+      "url": "https://openrouter.ai/rankings",
+      "snippet": "LLM rankings and AI leaderboard by real-world usage, ranked by tokens processed through the OpenRouter API. See which AI models developers actually use."
+    }
+  ]
+}

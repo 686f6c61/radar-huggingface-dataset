@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "Bbkblo/chatterbox-hi-q8-q4-mnn",
+  "slug": "bbkblo-chatterbox-hi-q8-q4-mnn",
+  "author": "Bbkblo",
+  "url": "https://huggingface.co/Bbkblo/chatterbox-hi-q8-q4-mnn",
+  "created_at": "2026-08-30T15:48:08.000Z",
+  "updated_at": "2026-08-30T15:48:13.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ornith-ai/Ornith-1.0-9B · Hugging Face",
+      "url": "https://huggingface.co/ornith-ai/Ornith-1.0-9B",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "cstr/chatterbox-turbo-GGUF at main - Hugging Face",
+      "url": "https://huggingface.co/cstr/chatterbox-turbo-GGUF/tree/main",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Chatterbox - TTS Wiki",
+      "url": "https://tts.wiki/index.php/Chatterbox",
+      "snippet": "Chatterbox is an open-source text-to-speech (TTS) model developed by Resemble AI and released in May 2025. Built on a modified Llama architecture with 500M parameters, it is marketed as the first open-source TTS model to include controllable emotion exaggeration and has gained attention for claiming to outperform established commercial systems ..."
+    },
+    {
+      "title": "Chatterbox - GGUF Model",
+      "url": "https://local-ai-zone.github.io/models/chatterbox.html",
+      "snippet": "Download Chatterbox GGUF model. 14.7 GB, 1,784 downloads, 55 likes."
+    },
+    {
+      "title": "Quantization Explained: Q4 vs Q8 vs FP16 — What You Actually Lose",
+      "url": "https://willitrunai.com/blog/quantization-q4-q8-fp16-explained",
+      "snippet": "Plain-English explanation of AI model quantization. What Q4, Q8, and FP16 mean, how much quality you lose at each level, and which to use for your hardware."
+    }
+  ]
+}

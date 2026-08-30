@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "Leo-1994/subflow-models",
+  "slug": "leo-1994-subflow-models",
+  "author": "Leo-1994",
+  "url": "https://huggingface.co/Leo-1994/subflow-models",
+  "created_at": "2026-08-30T13:11:58.000Z",
+  "updated_at": "2026-08-30T13:11:58.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "SubFlow: Sub-mode Conditioned Flow Matching for Diverse One-Step Generation",
+      "url": "https://arxiv.org/pdf/2604.12273v1",
+      "snippet": "SubFlow can be easily integrated into existing one-step frameworks such as MeanFlow, Shortcut Models, and SoFlow. Experiments on ImageNet-256 demonstrate consistent improvements in Recall across all three baselines while maintaining competitive FID and Precision, validat-ing SubFlow as a simple yet effective solution for restoring diversity in ..."
+    },
+    {
+      "title": "All the 3D models of Leo1994 - Cults 3D",
+      "url": "https://cults3d.com/en/users/Leo1994/3d-models",
+      "snippet": "Repository of 3D printable designs shared by Leo1994, designer from Cults, the 3D printing platform."
+    },
+    {
+      "title": "[2604.12273] SubFlow: Sub-mode Conditioned Flow Matching for Diverse ...",
+      "url": "https://arxiv.org/abs/2604.12273",
+      "snippet": "To address this, we propose SubFlow, Sub-mode Conditioned Flow Matching, which eliminates averaging distortion by decomposing each class into fine-grained sub-modes via semantic clustering and conditioning the flow on sub-mode indices."
+    },
+    {
+      "title": "Engineering-Grade AI Built for Leading Engineering Firms",
+      "url": "https://www.getleo.ai/",
+      "snippet": "Discover Leo AI, the mechanical engineering copilot. Get verified answers for technical answers backed by 1M+ sources, Find the best parts for the job and create concept images and 3D models. Join 50,000+ engineers using Leo."
+    },
+    {
+      "title": "Leo AI: A platform suitable for mechanical engineers to generate ...",
+      "url": "https://toolnavs.com/tool/480-leo-ai",
+      "snippet": "Leo AI is a generative design collaboration platform for mechanical engineers with a first-of-its-kind Large Mechanical Model that turns text descriptions, hand-drawn sketches, or CAD constraints into DFMA-compliant 3D assembly models in seconds. The system automatically calls millions of standard parts libraries, mechanical calculations and cost analysis to generate technical specifications ..."
+    }
+  ]
+}

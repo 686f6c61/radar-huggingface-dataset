@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "moalikhoda/compression-aware-abstention-adapters",
+  "slug": "moalikhoda-compression-aware-abstention-adapters",
+  "author": "moalikhoda",
+  "url": "https://huggingface.co/moalikhoda/compression-aware-abstention-adapters",
+  "created_at": "2026-08-30T16:12:25.000Z",
+  "updated_at": "2026-08-30T16:13:54.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "lora",
+    "kv-cache-compression",
+    "abstention",
+    "hallucination-mitigation",
+    "base_model:Qwen/Qwen2.5-7B-Instruct",
+    "base_model:adapter:Qwen/Qwen2.5-7B-Instruct",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 418162168,
+  "storage_human": "418 MB",
+  "base_model": "Qwen/Qwen2.5-7B-Instruct, meta-llama/Llama-3.1-8B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "moalikhoda/compression-aware-abstention-adapters · Hugging Face",
+      "url": "https://huggingface.co/moalikhoda/compression-aware-abstention-adapters",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Compression-Aware Abstention - GitHub",
+      "url": "https://github.com/mali-kh/compression-aware-abstention",
+      "snippet": "KV-cache compression evicts context tokens to save inference memory. When the evicted tokens happen to carry the evidence a query depends on, the model is left with a fluent, on-topic context that no longer determines the answer, and it tends to fabricate one. This repository trains a small LoRA adapter to do the opposite: answer when the supporting evidence survives compression, and refuse ..."
+    },
+    {
+      "title": "CAR-LoRA: Training Compression-Aware and Robust LoRA Adapters for ...",
+      "url": "https://papernotes.org/ICLR2026/model_compression/car-lora_training_compression-aware_and_robust_lora_adapters_for_evolving_llms/",
+      "snippet": "[ICLR 2026][模型压缩][LoRA] CAR-LoRA 通过在训练时随机注入量化 / 剪枝 / 跳层等压缩扰动（前向用压缩权重、反向用全精度梯度），训练出一个「压缩感知 + 时间鲁棒」的通用 LoRA 适配器，让单个适配器无需重训就能直接部署到各种压缩格式的边缘设备以及未来演化的基座模型上，性能逼近为每种配置 ..."
+    },
+    {
+      "title": "Paper-Notes-en/docs/ICLR2026/model_compression/car-lora ... - GitHub",
+      "url": "https://github.com/zhaoyang97/Paper-Notes-en/blob/main/docs/ICLR2026/model_compression/car-lora_training_compression-aware_and_robust_lora_adapters_for_evolving_llms.md",
+      "snippet": "CAR-LoRA trains a \"compression-aware and temporally robust\" universal LoRA adapter by injecting random variations such as quantization, pruning, and layer skipping during training (using compressed weights for the forward pass and full-precision gradients for the backward pass). This allows a single adapter to be deployed directly to edge devices with various compression formats and future ..."
+    },
+    {
+      "title": "LoRA Adapters Explained - openinnovation.ai",
+      "url": "https://openinnovation.ai/lora-adapters-explained-efficient-fine-tuning-for-llms-without-retraining/",
+      "snippet": "LoRA adapters can even be hot-swapped into a live deployment saving ab initio startup time of the base model. LoRA adapters are all-rounded cost-savers. LLMs that lack a large context window benefit from fine-tuning for boosted performance. LoRA adapters are computationally cheap to train and fast to iterate giving flexibility to development teams."
+    }
+  ]
+}

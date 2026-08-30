@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "Weidows/WeMM-Embedding-2B-GGUF",
+  "slug": "weidows-wemm-embedding-2b-gguf",
+  "author": "Weidows",
+  "url": "https://huggingface.co/Weidows/WeMM-Embedding-2B-GGUF",
+  "created_at": "2026-08-30T15:02:02.000Z",
+  "updated_at": "2026-08-30T15:44:10.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "gguf",
+  "languages": [],
+  "tags": [
+    "gguf",
+    "embedding",
+    "multimodal",
+    "qwen3_5",
+    "image-text-to-text",
+    "video-text-to-text",
+    "base_model:tencent/WeMM-Embedding-2B",
+    "base_model:quantized:tencent/WeMM-Embedding-2B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 2389393216,
+  "parameters_human": "2.39B",
+  "storage_bytes": 16054747232,
+  "storage_human": "16.1 GB",
+  "base_model": "tencent/WeMM-Embedding-2B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "DreamBlooms/WeMM-Embedding-2B-GGUF · Hugging Face",
+      "url": "https://huggingface.co/DreamBlooms/WeMM-Embedding-2B-GGUF",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "DreamBlooms/WeMM-Embedding-2B-GGUF at main - Hugging Face",
+      "url": "https://huggingface.co/DreamBlooms/WeMM-Embedding-2B-GGUF/tree/main",
+      "snippet": "like 5 Follow DreamBlooms 3 Feature Extraction Transformers GGUF sentence-transformers Chinese English multimodal-embedding text-embedding image-embedding video-embedding mrl conversational arxiv:2608.24053 License:apache-2.0 Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "GitHub - Tencent/WeMM-Embedding: WeMM-Embedding is a family of ...",
+      "url": "https://github.com/Tencent/WeMM-Embedding",
+      "snippet": "It is the official TIGER-AI-Lab/VLM2Vec pipeline with a minimal diff: multi-node multi-GPU inference (torchrun --nnodes=N), a wemm_embedding backbone implementing our preprocessing and batched inference, dataset instructions aligned with the released model, and 64-frame video sampling."
+    },
+    {
+      "title": "WeMM-Embedding: WeChat Multi-Modal Embedding Technical Report",
+      "url": "https://arxiv.org/html/2608.24053v1",
+      "snippet": "In this work, we introduce WeMM-Embedding, a family of universal multimodal embedding models spanning 2B, 4B, and 9B scales. To build a strong and general-purpose multimodal embedding family, we devise a two-stage training strategy that progressively moves from broad multimodal alignment to finer-grained relevance learning."
+    },
+    {
+      "title": "WeMM-Embedding: WeChat Multi-Modal Embedding Technical Report - arXiv.org",
+      "url": "https://arxiv.org/pdf/2608.24053",
+      "snippet": "On the cross-modal retrieval suite reported in Gemini Embedding 2 [35], the 2B model also compares favorably with leading proprietary models. Beyond public benchmark evaluations, WeMM-Embedding also demonstrates strong practical performance, with substantial gains on a 26-task in-house benchmark and consistent improvements across 14 online A/B ..."
+    }
+  ]
+}

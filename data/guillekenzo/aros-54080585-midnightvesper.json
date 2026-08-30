@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "guillekenzo/aros-54080585-MidnightVesper",
+  "slug": "guillekenzo-aros-54080585-midnightvesper",
+  "author": "guillekenzo",
+  "url": "https://huggingface.co/guillekenzo/aros-54080585-MidnightVesper",
+  "created_at": "2026-08-30T12:05:33.000Z",
+  "updated_at": "2026-08-30T12:25:42.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-image",
+  "library": "diffusers",
+  "languages": [],
+  "tags": [
+    "diffusers",
+    "text-to-image",
+    "lora",
+    "krea2",
+    "template:sd-lora",
+    "base_model:krea/Krea-2-Raw",
+    "base_model:adapter:krea/Krea-2-Raw",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 676202784,
+  "storage_human": "676 MB",
+  "base_model": "krea/Krea-2-Raw",
+  "formats": [
+    "diffusers"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "guillekenzo/aros-d9aa5ee8-MidnightAtlas · Hugging Face",
+      "url": "https://huggingface.co/guillekenzo/aros-d9aa5ee8-MidnightAtlas",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "guillekenzo/aros-4bb2d3ff-MidnightPhantom · Hugging Face",
+      "url": "https://huggingface.co/guillekenzo/aros-4bb2d3ff-MidnightPhantom",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "guillekenzo/aros-d9aa5ee8-MidnightAtlas · Discussions",
+      "url": "https://huggingface.co/guillekenzo/aros-d9aa5ee8-MidnightAtlas/discussions",
+      "snippet": "guillekenzo / aros-d9aa5ee8-MidnightAtlas like 0 Text-to-Image Diffusers lora krea2 template:sd-lora License:apache-2.0 Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "guillekenzo/aros-64f30182-MidnightMuse · Hugging Face",
+      "url": "https://huggingface.co/guillekenzo/aros-64f30182-MidnightMuse",
+      "snippet": "guillekenzo / aros-64f30182-MidnightMuse like 0 Text-to-Image Diffusers lora krea2 template:sd-lora License:apache-2.0 Model card FilesFiles and versions xet Community Copy to bucket new Use this model"
+    },
+    {
+      "title": "guillekenzo/aros-3651bbb4-MidnightDuality · Hugging Face",
+      "url": "https://huggingface.co/guillekenzo/aros-3651bbb4-MidnightDuality",
+      "snippet": "guillekenzo / aros-3651bbb4-MidnightDuality like 0 Text-to-Image Diffusers lora krea2 template:sd-lora License:apache-2.0 Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    }
+  ]
+}

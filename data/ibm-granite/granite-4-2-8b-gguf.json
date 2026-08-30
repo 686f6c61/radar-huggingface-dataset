@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "ibm-granite/granite-4.2-8b-GGUF",
+  "slug": "ibm-granite-granite-4-2-8b-gguf",
+  "author": "ibm-granite",
+  "url": "https://huggingface.co/ibm-granite/granite-4.2-8b-GGUF",
+  "created_at": "2026-08-12T15:58:45.000Z",
+  "updated_at": "2026-08-21T17:55:18.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "llama.cpp",
+  "languages": [],
+  "tags": [
+    "llama.cpp",
+    "gguf",
+    "language",
+    "granite-4.2",
+    "base_model:ibm-granite/granite-4.2-8b",
+    "base_model:quantized:ibm-granite/granite-4.2-8b",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 8,
+  "downloads_30d": 56652,
+  "trending_score": 8,
+  "parameters": 8791592960,
+  "parameters_human": "8.79B",
+  "storage_bytes": 193428482912,
+  "storage_human": "193.4 GB",
+  "base_model": "ibm-granite/granite-4.2-8b",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Granite 4.2 Language Models - a ibm-granite Collection",
+      "url": "https://huggingface.co/collections/ibm-granite/granite-42-language-models",
+      "snippet": "Efficient reasoning and thinking language models for multilingual generation, coding, and AI assistant workflows."
+    },
+    {
+      "title": "Granite 4.2 | IBM Granite",
+      "url": "https://www.ibm.com/granite/docs/models/granite4-2",
+      "snippet": "Granite 4.2 Dense reasoning language model family in 3B, 8B, and 30B sizes with built-in chain-of-thought thinking, flexible thinking modes, and reasoning-augmented tool calling."
+    },
+    {
+      "title": "ibm-granite (IBM Granite) - Hugging Face",
+      "url": "https://huggingface.co/ibm-granite",
+      "snippet": "Enterprise-grade AI models Efficient language models for multilingual generation, coding, RAG, and AI assistant workflows."
+    },
+    {
+      "title": "Granite - IBM",
+      "url": "https://www.ibm.com/granite",
+      "snippet": "Granite models drive the AI behind many IBM products and services. Discover ready-to-use solutions for code generation, application development, and model testing."
+    },
+    {
+      "title": "Granite 4.2 brings native reasoning to enterprise agents",
+      "url": "https://research.ibm.com/blog/introducing-granite-4-2",
+      "snippet": "IBM&#x27;s new open Granite models are designed for agentic AI, combining reasoning, tool use, coding, instruction following, and speech capabilities. Read a full technical breakdown of how the Granite 4.2 LLMs were built on Hugging Face."
+    }
+  ]
+}

@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "HudeKing/PixVL-baseline-bestcap-model3verify",
+  "slug": "hudeking-pixvl-baseline-bestcap-model3verify",
+  "author": "HudeKing",
+  "url": "https://huggingface.co/HudeKing/PixVL-baseline-bestcap-model3verify",
+  "created_at": "2026-08-30T19:03:55.000Z",
+  "updated_at": "2026-08-30T19:19:48.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "image-segmentation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "pixvl",
+    "qwen3-vl",
+    "visual-grounding",
+    "image-segmentation",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 4828036608,
+  "parameters_human": "4.83B",
+  "storage_bytes": 9656161128,
+  "storage_human": "9.7 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Paper page - PixVL: Self-Supervised Training of Pixel-Level MLLMs via a ...",
+      "url": "https://huggingface.co/papers/2608.01354",
+      "snippet": "Abstract PixVL is a self-supervised framework that improves pixel-level multimodal models by unifying region description and segmentation through consistency cycles, semantic verification, and cross-view checks."
+    },
+    {
+      "title": "[2608.01354] PixVL: Self-Supervised Training of Pixel-Level MLLMs via a ...",
+      "url": "https://arxiv.org/abs/2608.01354",
+      "snippet": "Recent studies develop pixel-level multimodal large language models (MLLMs) that support both Region Segmentation and Region Understanding, extending multimodal interaction from whole images to specific objects and regions. However, these methods face two fundamental challenges. First, the scarcity of high-quality mask--text pairs leaves abundant mask annotations without corresponding language ..."
+    },
+    {
+      "title": "PixVL: Self-Supervised Training of Pixel-Level MLLMs via a Unified Mask ...",
+      "url": "https://arxiv.org/html/2608.01354v1",
+      "snippet": "To address these challenges, we propose PixVL, a self-supervised post-training framework that introduces a unified Mask-Text Consistency Cycle, enabling pixel-level MLLMs to generate and self-verify regional descriptions and learn from unlabeled data."
+    },
+    {
+      "title": "HudeKing (Yicheng Xiao) - Hugging Face",
+      "url": "https://huggingface.co/HudeKing/datasets",
+      "snippet": "User profile of Yicheng Xiao on Hugging Face"
+    },
+    {
+      "title": "Best AI Right Now - Top Model 2026 | LM Market Cap",
+      "url": "https://lmmarketcap.com/best-ai-right-now",
+      "snippet": "Which AI model is the best right now? See today&#x27;s top-ranked AI model plus category winners for coding, writing, math, and image generation with source-backed pricing and benchmark freshness."
+    }
+  ]
+}

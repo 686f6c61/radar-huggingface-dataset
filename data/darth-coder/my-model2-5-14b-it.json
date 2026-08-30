@@ -1,0 +1,76 @@
+{
+  "schema": 1,
+  "id": "Darth-Coder/my-model2.5-14b-it",
+  "slug": "darth-coder-my-model2-5-14b-it",
+  "author": "Darth-Coder",
+  "url": "https://huggingface.co/Darth-Coder/my-model2.5-14b-it",
+  "created_at": "2026-08-30T18:57:35.000Z",
+  "updated_at": "2026-08-30T19:03:08.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen2",
+    "text-generation",
+    "chat",
+    "conversational",
+    "en",
+    "arxiv:2309.00071",
+    "arxiv:2407.10671",
+    "base_model:Qwen/Qwen2.5-14B",
+    "base_model:finetune:Qwen/Qwen2.5-14B",
+    "license:apache-2.0",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 14770033664,
+  "parameters_human": "14.77B",
+  "storage_bytes": 29540134000,
+  "storage_human": "29.5 GB",
+  "base_model": "Qwen/Qwen2.5-14B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Darth-Coder (Jivjot) - Hugging Face",
+      "url": "https://huggingface.co/Darth-Coder/models",
+      "snippet": "AI & ML interests ... Recent Activity updated a model 28 days ago ... published a model 28 days ago"
+    },
+    {
+      "title": "Hugging Face - The AI community building the future.",
+      "url": "https://huggingface.co/",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Best 14B Coding Models (2026): Ranked by HumanEval + VRAM",
+      "url": "https://localaimaster.com/blog/best-14b-coding-models",
+      "snippet": "The best 14B-class local coding model in 2026 is Qwen2.5-Coder-14B-Instruct, which scores 89.6% on HumanEval (87.2% on the harder HumanEval+) and runs in about 9-10 GB of VRAM at Q4_K_M — it out-codes every other model in its weight class and even rivals 30B+ models. Below it, Microsoft&#x27;s Phi-4 (14B) is the best all-rounder if you also want strong reasoning and math, while DeepSeek-Coder-V2 ..."
+    },
+    {
+      "title": "Google",
+      "url": "https://www.google.com/",
+      "snippet": "Search the world&#x27;s information, including webpages, images, videos and more. Google has many special features to help you find exactly what you&#x27;re looking for."
+    },
+    {
+      "title": "AI 3D Model Generator: Create 3D from Text & Images | Meshy",
+      "url": "https://www.meshy.ai/",
+      "snippet": "Meshy&#x27;s AI 3D model generator turns text and images into production-ready 3D models in 20-30 seconds. Export to FBX, OBJ, GLB, and STL formats. Try Meshy free."
+    }
+  ]
+}

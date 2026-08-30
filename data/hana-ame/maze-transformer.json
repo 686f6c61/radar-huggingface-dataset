@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "Hana-ame/maze-transformer",
+  "slug": "hana-ame-maze-transformer",
+  "author": "Hana-ame",
+  "url": "https://huggingface.co/Hana-ame/maze-transformer",
+  "created_at": "2026-08-30T17:45:37.000Z",
+  "updated_at": "2026-08-30T18:19:27.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1636006,
+  "storage_human": "2 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Hana-ame (lumin) - Hugging Face",
+      "url": "https://huggingface.co/Hana-ame",
+      "snippet": "AI & ML interests ... Recent Activity updated a model about 2 hours ago ... published a model about 2 hours ago"
+    },
+    {
+      "title": "Transformers Use Causal World Models in Maze-Solving Tasks",
+      "url": "https://arxiv.org/abs/2412.11867",
+      "snippet": "In this work, we identify WMs in transformers trained on maze-solving tasks. By using Sparse Autoencoders (SAEs) and analyzing attention patterns, we examine the construction of WMs and demonstrate consistency between SAE feature-based and circuit-based analyses."
+    },
+    {
+      "title": "README.md · Hana-ame/additive-rand-transformer at main",
+      "url": "https://d6108366.hf-mirror.com/Hana-ame/additive-rand-transformer/blob/main/README.md?code=true",
+      "snippet": "Hana-ame / additive-rand-transformer like 0 Reinforcement Learning chain-of-thought interpretability mechanistic-interpretability arithmetic grpo mixture-of-experts lora sparse-attention tiny-model License:mit Model card FilesFiles and versions xet Community Copy to bucket new main additive-rand-transformer /README.md Hana-ame add/update README.md"
+    },
+    {
+      "title": "Transformers Use Causal World Models in Maze-Solving Tasks",
+      "url": "https://openreview.net/forum?id=aE6QjMJ1mN",
+      "snippet": "In this work, we discover such WMs in transformers trained on maze tasks. In particular, by employing Sparse Autoencoders (SAEs) and analysing attention patterns, we examine the construction of WMs and demonstrate consistency between the circuit analysis and the SAE feature-based analysis."
+    },
+    {
+      "title": "Transformers Use Causal World Models in Maze-Solving Tasks",
+      "url": "https://unsearch.org/research/02_caual_world_models/",
+      "snippet": "What is a World Model? Overview of our methodology for discovering and validating world models in transformer-based maze solvers. (A) We analyze attention patterns in early layers, finding heads that consolidate maze connectivity information at semicolon tokens."
+    }
+  ]
+}

@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "vibhurajeev/act_chess_pick",
+  "slug": "vibhurajeev-act_chess_pick",
+  "author": "vibhurajeev",
+  "url": "https://huggingface.co/vibhurajeev/act_chess_pick",
+  "created_at": "2026-08-30T16:36:46.000Z",
+  "updated_at": "2026-08-30T16:38:07.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "robotics",
+    "act",
+    "dataset:vibhurajeev/chess_pick_20260830_161214",
+    "arxiv:2304.13705",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 51668614,
+  "parameters_human": "51.7M",
+  "storage_bytes": 206714848,
+  "storage_human": "207 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "vibhurajeev (Vibhu Rajeev) - Hugging Face",
+      "url": "https://huggingface.co/vibhurajeev/datasets",
+      "snippet": "vibhurajeev&#x27;s datasets6 Sort: Recently updated vibhurajeev/pick_tissue_ball_v2_20260817_184026 Viewer •Updated 8 days ago•20.3k• 84"
+    },
+    {
+      "title": "LLM Chess Arena - GitHub",
+      "url": "https://github.com/llm-chess-arena/llm-chess-arena",
+      "snippet": "LLM Chess Arena enables AI models to engage in chess matches while providing detailed reasoning for their moves. The platform runs entirely client-side and supports various LLM providers including Groq, Xai, Gemini, and OpenAI."
+    },
+    {
+      "title": "markstev/act_chess_pickup2 · Hugging Face",
+      "url": "https://huggingface.co/markstev/act_chess_pickup2",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GitHub - CSSLab/maia-chess: Maia is a human-like neural network chess ...",
+      "url": "https://github.com/CSSLab/maia-chess",
+      "snippet": "Aligning Superhuman AI with Human Behavior: Chess as a Model System website / paper / code / lichess 🆕♟️🤖🚀 Maia-3 is now available! The state of the art in human chess modeling built with our new Chessformer architecture. Outperforms all prior models with significantly fewer parameters."
+    },
+    {
+      "title": "AI Chess - Play Against AI Models",
+      "url": "https://aichess.co/",
+      "snippet": "Play Chess Against AI Challenge free AI models or play against other humans"
+    }
+  ]
+}

@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "onnx-community/feel-it-italian-sentiment-ONNX",
+  "slug": "onnx-community-feel-it-italian-sentiment-onnx",
+  "author": "onnx-community",
+  "url": "https://huggingface.co/onnx-community/feel-it-italian-sentiment-ONNX",
+  "created_at": "2026-08-30T12:06:15.000Z",
+  "updated_at": "2026-08-30T12:06:27.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-classification",
+  "library": "transformers.js",
+  "languages": [
+    "it"
+  ],
+  "tags": [
+    "transformers.js",
+    "onnx",
+    "camembert",
+    "text-classification",
+    "sentiment",
+    "Italian",
+    "it",
+    "base_model:MilaNLProc/feel-it-italian-sentiment",
+    "base_model:quantized:MilaNLProc/feel-it-italian-sentiment",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1142608728,
+  "storage_human": "1.1 GB",
+  "base_model": "MilaNLProc/feel-it-italian-sentiment",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "onnx-community (ONNX Community) - Hugging Face",
+      "url": "https://huggingface.co/onnx-community",
+      "snippet": "Org profile for ONNX Community on Hugging Face, the AI community building the future."
+    },
+    {
+      "title": "feel-it-italian-sentiment Open-source Tool - Empowering Italian ...",
+      "url": "https://model.aibase.com/models/details/1915694132640768001",
+      "snippet": "The feel-it-italian-sentiment model performs sentiment analysis on Italian. We fine-tuned the UmBERTo model on our new dataset (i.e., FEEL-IT) obtaining state-of-the-art performances on different benchmark corpora."
+    },
+    {
+      "title": "GitHub - MilaNLProc/feel-it: Sentiment analysis and emotion ...",
+      "url": "https://github.com/MilaNLProc/feel-it",
+      "snippet": "By collapsing them, we can also do sentiment analysis. We evaluate our corpus on benchmark datasets for both emotion and sentiment classification, obtaining competitive results. We release an open-source Python library, so researchers can use a model trained on FEEL-IT for inferring both sentiments and emotions from Italian text."
+    },
+    {
+      "title": "The feel-it-italian-emotion open-source model - Accurately identify ...",
+      "url": "https://model.aibase.com/models/details/1915694196075421698",
+      "snippet": "🚀 FEEL-IT: Emotion and Sentiment Classification for the Italian Language FEEL-IT is a novel benchmark corpus for Italian Twitter posts, enabling both emotion and sentiment classification with competitive results. 🚀 Quick Start You can find the Python package that uses this model for emotion and sentiment classification here. It provides a very simple interface over HuggingFace models ..."
+    },
+    {
+      "title": "feel-it · PyPI",
+      "url": "https://pypi.org/project/feel-it/",
+      "snippet": "FEEL-IT: Emotion and Sentiment Classification for the Italian Language Abstract Sentiment analysis is a common task to understand people&#x27;s reactions online. Still, we often need more nuanced information: is the post negative because the user is angry or because they are sad? An abundance of approaches has been introduced for tackling both tasks."
+    }
+  ]
+}

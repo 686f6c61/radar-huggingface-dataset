@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "Allan143/MAGI-2-preview",
+  "slug": "allan143-magi-2-preview",
+  "author": "Allan143",
+  "url": "https://huggingface.co/Allan143/MAGI-2-preview",
+  "created_at": "2026-08-30T11:39:35.000Z",
+  "updated_at": "2026-08-30T11:39:36.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-video",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "text-to-video",
+    "image-to-video",
+    "image-text-to-video",
+    "text-to-audio-video",
+    "image-to-audio-video",
+    "image-text-to-audio-video",
+    "audio-video-generation",
+    "multimodal",
+    "synchronized-audio-video",
+    "mixture-of-experts",
+    "magi-2-preview",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 306711607907,
+  "storage_human": "306.7 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "sand-ai/MAGI-2-preview · Hugging Face",
+      "url": "https://huggingface.co/sand-ai/MAGI-2-preview",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "MAGI-2 Preview - GitHub",
+      "url": "https://github.com/SandAI-org/MAGI-2-preview",
+      "snippet": "MAGI-2 Preview Magi-2 Preview is a 114B-parameter unified audio-video generation model that activates just 6B parameters per token. Built on MagiMoE and co-designed across architecture, systems, and data, it explores an efficient path to scaling video generation."
+    },
+    {
+      "title": "sand-ai/MAGI-2-preview at main - Hugging Face",
+      "url": "https://huggingface.co/sand-ai/MAGI-2-preview/tree/main/preview",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "MAGI-2-preview/inference/model at main - GitHub",
+      "url": "https://github.com/SandAI-org/MAGI-2-preview/tree/main/inference/model",
+      "snippet": "MAGI-2-preview: Scaling Video Generation Models Efficiently - SandAI-org/MAGI-2-preview"
+    },
+    {
+      "title": "MAGI 2 Preview (Sand.ai): Pricing, Benchmarks & Specs",
+      "url": "https://aimodelsnavi.com/en/models/sand-magi-2-preview",
+      "snippet": "MAGI 2 Preview is an open-weight video generation model released by Sand.ai. It uses a single-stream DiT with 114B total parameters and roughly 6B activated per"
+    }
+  ]
+}

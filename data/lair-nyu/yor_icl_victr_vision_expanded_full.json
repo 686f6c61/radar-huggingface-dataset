@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "lair-nyu/yor_icl_victr_vision_expanded_full",
+  "slug": "lair-nyu-yor_icl_victr_vision_expanded_full",
+  "author": "lair-nyu",
+  "url": "https://huggingface.co/lair-nyu/yor_icl_victr_vision_expanded_full",
+  "created_at": "2026-08-30T15:32:03.000Z",
+  "updated_at": "2026-08-30T15:35:18.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 12441634614,
+  "storage_human": "12.4 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "lair-nyu/yor_icl_fast_victr_vision_expanded_full · Hugging Face",
+      "url": "https://huggingface.co/lair-nyu/yor_icl_fast_victr_vision_expanded_full",
+      "snippet": "openpi TrainConfig: yor_icl_fast_victr_vision_expanded Checkpoint step: 15000 Contents: params/ (deployable policy weights) + assets/ (norm stats etc.) only -- train_state/ (optimizer state, needed only to resume this exact training run) is NOT included. Trained with openpi (pi0.5 backbone) on the icl-dataset. First publish of this repo."
+    },
+    {
+      "title": "lair-nyu (LAIR NYU) - Hugging Face",
+      "url": "https://huggingface.co/lair-nyu/models",
+      "snippet": "Org profile for LAIR NYU on Hugging Face, the AI community building the future."
+    },
+    {
+      "title": "About CILVR - wp.nyu.edu",
+      "url": "https://wp.nyu.edu/cilvr/about-cilvr/",
+      "snippet": "The CILVR Lab (Computational Intelligence, Learning, Vision, and Robotics) was founded in 2009 by Yann LeCun and Rob Fergus. Yann had joined NYU in 2003 after many years at AT&T, and Rob joined in 2008. CILVR is a group of faculty members, research scientists, postdocs, and students who work on AI, machine learning, and a wide variety of applications, notably computer perception, natural ..."
+    },
+    {
+      "title": "Publications - wp.nyu.edu",
+      "url": "https://wp.nyu.edu/cilvr/cilvr-group-publications/",
+      "snippet": "J. Bruna. (2026), \"The Multiscale Single-Index Model: A Stylized Model for Hierarchical Feature Learning\", arXiv preprint arXiv:2607.03347 Y. Arjevani, J. Bruna, J. Kileel, E. Polak, and M. Trager. (2026), \"Geometry and optimization of shallow polynomial networks\", SIAM Journal on Applied Algebra and Geometry, Vol. 10, pages 174-209"
+    },
+    {
+      "title": "NYU-ICL repositories · GitHub",
+      "url": "https://github.com/orgs/NYU-ICL/repositories",
+      "snippet": "NYU Immersive Computing Lab has 14 repositories available. Follow their code on GitHub."
+    }
+  ]
+}

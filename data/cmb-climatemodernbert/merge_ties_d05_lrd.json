@@ -1,0 +1,78 @@
+{
+  "schema": 1,
+  "id": "CMB-ClimateModernBERT/Merge_TIES_D05_LRD",
+  "slug": "cmb-climatemodernbert-merge_ties_d05_lrd",
+  "author": "CMB-ClimateModernBERT",
+  "url": "https://huggingface.co/CMB-ClimateModernBERT/Merge_TIES_D05_LRD",
+  "created_at": "2026-08-30T15:44:37.000Z",
+  "updated_at": "2026-08-30T15:44:44.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "fill-mask",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "modernbert",
+    "fill-mask",
+    "climate",
+    "domain-adaptation",
+    "continued-pretraining",
+    "merge",
+    "mergekit",
+    "academic-text",
+    "web-text",
+    "synthetic-data",
+    "en",
+    "base_model:answerdotai/ModernBERT-base",
+    "base_model:finetune:answerdotai/ModernBERT-base",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 149655232,
+  "parameters_human": "149.7M",
+  "storage_bytes": 299324680,
+  "storage_human": "299 MB",
+  "base_model": "answerdotai/ModernBERT-base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ClimateModernBERT - a sraj Collection - Hugging Face",
+      "url": "https://huggingface.co/collections/sraj/climatemodernbert",
+      "snippet": "sraj &#x27;s Collections ClimateModernBERT CMB all ModernBERT Checkpoints from pretraining phases"
+    },
+    {
+      "title": "TIES_D05_CMB_MARK_CX_LRD_CMB_FWEdu_V2_CX_LRD_CMB_WX_SYN_CX_LRD",
+      "url": "https://huggingface.co/sraj/TIES_D05_CMB_MARK_CX_LRD_CMB_FWEdu_V2_CX_LRD_CMB_WX_SYN_CX_LRD",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "sraj-ties_d05_cmb_mark_cx_lrd_cmb_fwedu_v2_cx_lrd_cmb_wx_syn ... - GitHub",
+      "url": "https://github.com/Damacol/sraj-ties_d05_cmb_mark_cx_lrd_cmb_fwedu_v2_cx_lrd_cmb_wx_syn_cx_lrd/blob/main/README.md",
+      "snippet": "sraj/TIES_D05_CMB_MARK_CX_LRD_CMB_FWEdu_V2_CX_LRD_CMB_WX_SYN_CX_LRD - Private, Uncensored AI for Real Creators and Devs {MODEL} setup for researchers, devs, and writers."
+    },
+    {
+      "title": "GitHub - prateeky2806/ties-merging",
+      "url": "https://github.com/prateeky2806/ties-merging",
+      "snippet": "Contribute to prateeky2806/ties-merging development by creating an account on GitHub."
+    },
+    {
+      "title": "TIES-Merging: Resolving Interference When Merging Models",
+      "url": "https://arxiv.org/abs/2306.01708",
+      "snippet": "We find that TIES-Merging outperforms several existing methods in diverse settings covering a range of modalities, domains, number of tasks, model sizes, architectures, and fine-tuning settings. We further analyze the impact of different types of interference on model parameters, and highlight the importance of resolving sign interference."
+    }
+  ]
+}

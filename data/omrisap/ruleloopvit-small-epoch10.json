@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "omrisap/ruleloopvit-small-epoch10",
+  "slug": "omrisap-ruleloopvit-small-epoch10",
+  "author": "omrisap",
+  "url": "https://huggingface.co/omrisap/ruleloopvit-small-epoch10",
+  "created_at": "2026-08-30T13:35:02.000Z",
+  "updated_at": "2026-08-30T13:35:22.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "pytorch",
+  "languages": [],
+  "tags": [
+    "pytorch",
+    "arc-agi",
+    "loopvit",
+    "checkpoint",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 49316979,
+  "storage_human": "49 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "omrisap (Omri Sapir) - Hugging Face",
+      "url": "https://huggingface.co/omrisap/datasets",
+      "snippet": "Recent Activity updated a model10 days ago omrisap/phase3e-hybrid-b88-75k-eval-slim published a model10 days ago omrisap/phase3e-hybrid-b88-75k-eval-slim updated a modelabout 1 month ago omrisap/dl-trm-phase3-executor-h1-l2-l4-step-0150075 View all activity"
+    },
+    {
+      "title": "omrisap/arc-agi-1-ruleloopvit-rules · Datasets at Hugging Face",
+      "url": "https://huggingface.co/datasets/omrisap/arc-agi-1-ruleloopvit-rules",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "omrisap · GitHub",
+      "url": "https://github.com/omrisap/",
+      "snippet": "Add an optional note Maximum 250 characters. Please don&#x27;t include any personal information such as legal names or email addresses. Markdown supported. This note will be visible to only you. Block user Report abuse Unity Unity Public UnityCode Pitch44 Pitch44 Public C# datasciencecoursera datasciencecoursera Public HTML datasharing datasharing Public Forked from jtleek/datasharing The Leek ..."
+    },
+    {
+      "title": "emerging fusion - epoch10 - Free AI Model | TensorHub Art",
+      "url": "https://tensorhub.art/models/1035354139942485900",
+      "snippet": "Download emerging fusion - free LORA Illustrious AI model on TENSORHUB ART. By せびさん"
+    },
+    {
+      "title": "遠古怪獸 - 水生版_V1_Epoch10 利維坦 - Free AI LORA | Tensor.Art",
+      "url": "https://tensor.art/models/1030391892568762079/_V1_Epoch10",
+      "snippet": "An ancient aquatic behemoth, depicted in a swimming posture (body arched, tail swinging backward rather than upright), with sharp claws, fully webbed fingers, and broad, paddle-like flippers. It possesses reptilian eyes with vertical pupils, deep-sea features, gill slits on its neck and lower jaw, and faintly glowing bioluminescent tentacles/whiskers hanging from the sides of its head. Small ..."
+    }
+  ]
+}

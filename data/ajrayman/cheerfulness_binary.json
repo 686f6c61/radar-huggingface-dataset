@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "ajrayman/Cheerfulness_binary",
+  "slug": "ajrayman-cheerfulness_binary",
+  "author": "ajrayman",
+  "url": "https://huggingface.co/ajrayman/Cheerfulness_binary",
+  "created_at": "2024-10-03T07:06:02.000Z",
+  "updated_at": "2026-08-30T13:40:48.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "roberta",
+    "text-classification",
+    "generated_from_trainer",
+    "base_model:FacebookAI/roberta-base",
+    "base_model:finetune:FacebookAI/roberta-base",
+    "license:mit",
+    "text-embeddings-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 6,
+  "trending_score": 0,
+  "parameters": 124647170,
+  "parameters_human": "124.6M",
+  "storage_bytes": 12093634411,
+  "storage_human": "12.1 GB",
+  "base_model": "roberta-base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ajrayman/Sympathy_binary · Hugging Face",
+      "url": "https://huggingface.co/ajrayman/Sympathy_binary",
+      "snippet": "Sympathy_binary This model is a fine-tuned version of roberta-large on the None dataset. It achieves the following results on the evaluation set:"
+    },
+    {
+      "title": "ajrayman/Anger_binary · Hugging Face",
+      "url": "https://huggingface.co/ajrayman/Anger_binary",
+      "snippet": "Instructions to use ajrayman/Anger_binary with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Libraries Transformers How to use ajrayman/Anger_binary with Transformers:"
+    },
+    {
+      "title": "GitHub - ClawLabsAI/free-ai-models: Daily-updated list of every free AI ...",
+      "url": "https://github.com/ClawLabsAI/free-ai-models",
+      "snippet": "The free AI model landscape changes every week — models get added, rate limits change, providers shut down without notice. This repo tracks it all automatically so you don&#x27;t have to. Use it to: Find the best free model for your current task Track which providers offer the most generous free tiers Get notified of new free models via GitHub Watch → Releases Build your own routing logic on ..."
+    },
+    {
+      "title": "All 400 AI Models Compared — LLM Directory 2026 | BenchLM.ai",
+      "url": "https://benchlm.ai/models",
+      "snippet": "Browse and compare 400 large language models across 296 model families from OpenAI, Anthropic, Google, Meta, DeepSeek, and more."
+    },
+    {
+      "title": "ChatGPT: Chat, Work, Create & Code with AI",
+      "url": "https://chatgpt.com/",
+      "snippet": "Use ChatGPT to answer questions, write, create images, complete work, and code—all in one place. Get started for free or download the app."
+    }
+  ]
+}

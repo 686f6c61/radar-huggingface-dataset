@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "namquangstudy/aaie-ddense-pretrain-llama",
+  "slug": "namquangstudy-aaie-ddense-pretrain-llama",
+  "author": "namquangstudy",
+  "url": "https://huggingface.co/namquangstudy/aaie-ddense-pretrain-llama",
+  "created_at": "2026-08-30T15:21:00.000Z",
+  "updated_at": "2026-08-30T15:23:53.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "safetensors",
+    "llama",
+    "text-generation",
+    "conversational",
+    "en",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 354374144,
+  "parameters_human": "354.4M",
+  "storage_bytes": 1428938904,
+  "storage_human": "1.4 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "namquangstudy/aaie-ddense-pretrain · Hugging Face",
+      "url": "https://huggingface.co/namquangstudy/aaie-ddense-pretrain",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "namquangstudy/aaie-ddense-gft-llama · Hugging Face",
+      "url": "https://huggingface.co/namquangstudy/aaie-ddense-gft-llama",
+      "snippet": "Why this exists AAIE-Distilled Dense&#x27;s architecture — GQA attention, RoPE, SwiGLU FFN, RMSNorm, tied embeddings, no biases anywhere — happens to be structurally identical to Llama&#x27;s, just with different tensor/field names (d_model vs hidden_size, n_q_heads vs num_attention_heads, etc.). This export is a pure state_dict + config remap, not a retrain: every tensor is copied unchanged into ..."
+    },
+    {
+      "title": "Aaie Ddense Gft Llama - AI Model Insights & Benchmarks",
+      "url": "https://free2aitools.com/model/namquangstudy/aaie-ddense-gft-llama",
+      "snippet": "Registry entry for model Aaie Ddense Gft Llama; source metadata pending."
+    },
+    {
+      "title": "llama-models/README.md at main · meta-llama/llama-models",
+      "url": "https://github.com/meta-llama/llama-models/blob/main/README.md",
+      "snippet": "Llama is an accessible, open large language model (LLM) designed for developers, researchers, and businesses to build, experiment, and responsibly scale their generative AI ideas. Part of a foundational system, it serves as a bedrock for innovation in the global community. A few key aspects: Open access: Easy accessibility to cutting-edge large language models, fostering collaboration and ..."
+    },
+    {
+      "title": "TheLlama3HerdofModels The - arXiv.org",
+      "url": "https://arxiv.org/pdf/2407.21783",
+      "snippet": "Modern artificial intelligence (AI) systems are powered by foundation models. This paper presents a new set of foundation models, called Llama 3. It is a herd of language models that natively support multilinguality, coding, reasoning, and tool usage. Our largest model is a dense Transformer with 405B parameters and a context window of up to 128K tokens. This paper presents an extensive ..."
+    }
+  ]
+}

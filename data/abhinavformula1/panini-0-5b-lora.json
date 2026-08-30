@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "abhinavformula1/panini-0.5b-lora",
+  "slug": "abhinavformula1-panini-0-5b-lora",
+  "author": "abhinavformula1",
+  "url": "https://huggingface.co/abhinavformula1/panini-0.5b-lora",
+  "created_at": "2026-08-30T14:05:46.000Z",
+  "updated_at": "2026-08-30T14:06:01.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 20263820,
+  "storage_human": "20 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "AbhinavGorukanti/boson · Hugging Face",
+      "url": "https://huggingface.co/AbhinavGorukanti/boson",
+      "snippet": "AbhinavGorukanti / boson like 0 Text-to-Image Diffusers English flux lora replicate License:flux-1-dev-non-commercial-license Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "raghav-vk/panani-neuro-symbolic-ai - GitHub",
+      "url": "https://github.com/raghav-vk/panani-neuro-symbolic-ai",
+      "snippet": "Project Panini: Neuro-Symbolic Sanskrit SLM 🕉️ Panini-1 is an open-source initiative to build a high-fidelity Small Language Model (SLM) for Sanskrit. Unlike standard LLMs that require millions of dollars to \"guess\" grammar from massive datasets, we use a Neuro-Symbolic approach."
+    },
+    {
+      "title": "India Developing First Sanskrit AI Model Using 2,000-Year-Old Paninian ...",
+      "url": "https://www.sanskritica.com/explore/news/india-develops-first-sanskrit-ai-model-using-2000-year-old-paninian-grammar",
+      "snippet": "India is developing its first Sanskrit AI model using 2,000-year-old Paninian grammar and over 110,000 manuscripts to advance language study and digital preservation."
+    },
+    {
+      "title": "Panini (*****) [Chowder] - V1 - Free AI Model | Tensor.Art",
+      "url": "https://tensor.art/models/852407080949175093",
+      "snippet": "Download Panini (*****) [Chowder] - free LORA Pony AI model on TENSOR. By Hoodie"
+    },
+    {
+      "title": "10,000+ LoRA Models for Flux, Wan & SDXL | Browse Free",
+      "url": "https://loraai.io/loras",
+      "snippet": "Browse 10,000+ LoRA models for Flux, WAN, and SDXL. Character LoRAs, style LoRAs, and concept LoRAs with examples. Filter by model, tag, or search."
+    }
+  ]
+}

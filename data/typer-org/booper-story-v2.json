@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "typer-org/booper-story-v2",
+  "slug": "typer-org-booper-story-v2",
+  "author": "typer-org",
+  "url": "https://huggingface.co/typer-org/booper-story-v2",
+  "created_at": "2026-08-30T16:05:54.000Z",
+  "updated_at": "2026-08-30T16:06:33.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "mixtral",
+    "text-generation",
+    "moe",
+    "booper",
+    "int8",
+    "sft",
+    "long-form",
+    "en",
+    "base_model:ProCreations/Booper-Big-Chat-INT8",
+    "base_model:finetune:ProCreations/Booper-Big-Chat-INT8",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 164689764,
+  "storage_human": "165 MB",
+  "base_model": "ProCreations/Booper-Big-Chat-INT8",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "typer-org/typer-1 · Hugging Face",
+      "url": "https://huggingface.co/typer-org/typer-1",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "AI Model Downloads - 498 Model Examples - AI Models",
+      "url": "https://aimodels.org/ai-models/",
+      "snippet": "Directory of free Open Source AI and machine learning model downloads! Our collection features the latest models in speech to text and image generation."
+    },
+    {
+      "title": "Free AI Story Generator & Writer. Unlimited. No Sign-Up.",
+      "url": "https://aiwriter.ai/",
+      "snippet": "Free AI writer & AI story writer — unlimited, no sign-up, no content filters. Turn any idea into an original story in seconds, across 20+ genres."
+    },
+    {
+      "title": "Free AI Story Generator",
+      "url": "https://type.ai/ai-story-generator",
+      "snippet": "An AI story generator turns your ideas into structured short stories. Type.ai&#x27;s AI story generator creates a story outline with characters and key plot events, then writes a preview of the opening — giving you a foundation to continue writing in Type.ai&#x27;s full AI editor."
+    },
+    {
+      "title": "BooperNova | So... Ummm..... I learned something amazing on accident ...",
+      "url": "https://www.instagram.com/p/Cw9R-FJtp0s/",
+      "snippet": "I learned how to train Booper into an AI model.... It&#x27;s not absolutely perfect yet because I only ran a short training program, that short training program consisted of 12 hours of intensive dedicated GPU time, but..."
+    }
+  ]
+}

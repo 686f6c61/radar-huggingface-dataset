@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "qtris123/am-quality-p01-qwen3-4b-512",
+  "slug": "qtris123-am-quality-p01-qwen3-4b-512",
+  "author": "qtris123",
+  "url": "https://huggingface.co/qtris123/am-quality-p01-qwen3-4b-512",
+  "created_at": "2026-08-30T15:34:50.000Z",
+  "updated_at": "2026-08-30T15:34:54.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "attention-matching",
+    "kv-cache",
+    "qwen3",
+    "dataset:allenai/quality",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 151624607,
+  "storage_human": "152 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Qwen/Qwen3-4B · Hugging Face",
+      "url": "https://huggingface.co/Qwen/Qwen3-4B",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Qwen3-4B - Qualcomm AI Hub",
+      "url": "https://aihub.qualcomm.com/models/qwen3_4b",
+      "snippet": "Qwen3-4B State‑of‑the‑art large language model useful on a variety of language understanding and generation tasks. The Qwen3‑4B is a state‑of‑the‑art multilingual base language model with 4 billion parameters, excelling in language understanding, generation, coding, and mathematics."
+    },
+    {
+      "title": "huihui-ai/Qwen3-4B-abliterated · Hugging Face",
+      "url": "https://huggingface.co/huihui-ai/Qwen3-4B-abliterated",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GitHub - QwenLM/Qwen3: Qwen3 is the large language model series ...",
+      "url": "https://github.com/QwenLM/Qwen3",
+      "snippet": "Over the past three months, we continued to explore the potential of the Qwen3 families and we are excited to introduce the updated Qwen3-2507 in two variants, Qwen3-Instruct-2507 and Qwen3-Thinking-2507, and three sizes, 235B-A22B, 30B-A3B, and 4B. Qwen3-Instruct-2507 is the updated version of the previous Qwen3 non-thinking mode, featuring the following key enhancements: Significant ..."
+    },
+    {
+      "title": "Qwen3 Technical Report - arXiv.org",
+      "url": "https://arxiv.org/html/2505.09388v1",
+      "snippet": "The Qwen3 series includes models of both dense and Mixture-of-Expert (MoE) architectures, with parameter scales ranging from 0.6 to 235 billion. A key innovation in Qwen3 is the integration of thinking mode (for complex, multi-step reasoning) and non-thinking mode (for rapid, context-driven responses) into a unified framework."
+    }
+  ]
+}

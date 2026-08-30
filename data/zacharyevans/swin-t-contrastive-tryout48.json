@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "ZacharyEvans/swin-t-contrastive-tryout48",
+  "slug": "zacharyevans-swin-t-contrastive-tryout48",
+  "author": "ZacharyEvans",
+  "url": "https://huggingface.co/ZacharyEvans/swin-t-contrastive-tryout48",
+  "created_at": "2026-08-30T19:04:20.000Z",
+  "updated_at": "2026-08-30T19:04:28.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "swin_t",
+    "pytorch",
+    "swin-t",
+    "contrastive",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 16576,
+  "parameters_human": "16576",
+  "storage_bytes": 66784,
+  "storage_human": "66784 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ZacharyEvans (Zachary Evans) - Hugging Face",
+      "url": "https://huggingface.co/ZacharyEvans",
+      "snippet": "probably coding right now"
+    },
+    {
+      "title": "GitHub - microsoft/Swin-Transformer: This is an official implementation ...",
+      "url": "https://github.com/microsoft/Swin-Transformer",
+      "snippet": "This is an official implementation for \"Swin Transformer: Hierarchical Vision Transformer using Shifted Windows\". - microsoft/Swin-Transformer"
+    },
+    {
+      "title": "bbrownzachary/tmp-contrastive-2023 · Hugging Face",
+      "url": "https://huggingface.co/bbrownzachary/tmp-contrastive-2023",
+      "snippet": "Overview Working implementation of Swin T for Contrastive using a base configuration. The repository focuses on transparent code and repeatable smoke tests; benchmark claims are deliberately omitted."
+    },
+    {
+      "title": "swin_t — Torchvision main documentation",
+      "url": "https://docs.pytorch.org/vision/main/models/generated/torchvision.models.swin_t.html",
+      "snippet": "Default is True. **kwargs - parameters passed to the torchvision.models.swin_transformer.SwinTransformer base class. Please refer to the source code for more details about this class. class torchvision.models.Swin_T_Weights(value)[source] ¶ The model builder above accepts the following values as the weights parameter."
+    },
+    {
+      "title": "Swin Transformer - GitHub",
+      "url": "https://github.com/SwinTransformer",
+      "snippet": "Swin-Transformer-Semantic-Segmentation Public Forked from open-mmlab/mmsegmentation This is an official implementation for \"Swin Transformer: Hierarchical Vision Transformer using Shifted Windows\" on Semantic Segmentation."
+    }
+  ]
+}

@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "SiXa18/facet-weights",
+  "slug": "sixa18-facet-weights",
+  "author": "SiXa18",
+  "url": "https://huggingface.co/SiXa18/facet-weights",
+  "created_at": "2026-08-30T15:20:46.000Z",
+  "updated_at": "2026-08-30T15:24:57.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "onnx",
+    "protein-nmr",
+    "chemical-shifts",
+    "torsion-angles",
+    "license:cc-by-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 125972438,
+  "storage_human": "126 MB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "FACET - a Hugging Face Space by SiXa18",
+      "url": "https://huggingface.co/spaces/SiXa18/facet",
+      "snippet": "FACET: Backbone Torsion Angle Prediction from NMR Chemical Shifts Upload a chemical shift list (.tab or .csv format) to predict backbone phi/psi torsion angles, secondary structure, and chi1 rotamers."
+    },
+    {
+      "title": "SiXa18 (Maximilian Zinke) - Hugging Face",
+      "url": "https://huggingface.co/SiXa18",
+      "snippet": "AI & ML interests ... Recent Activity updated a Space about 2 months ago ... updated a Space about 2 months ago"
+    },
+    {
+      "title": "GitHub - ncoevoet/facet: Local AI photo scoring, culling, and gallery ...",
+      "url": "https://github.com/ncoevoet/facet",
+      "snippet": "AI culling apps (Aftershoot, Narrative, FilterPixel) are polished commercial cullers, often with editing built in. Facet is free, local, broader (gallery, search, faces), and its scoring is tunable — but it is a single-developer project without their support or RAW editing."
+    },
+    {
+      "title": "AI Aimbot Models & YOLO Detection Models | MossyModels",
+      "url": "https://mossymodels.com/",
+      "snippet": "AI Aimbot Models & YOLO Detection Models Browse 661+ free YOLO and ONNX detection models across 43+ games. Community library for Fortnite, Valorant, Warzone, Apex Legends, and more. MossyModels is a community library of YOLO and ONNX detection models for first-person shooters. Browse models by game, compare download counts and ratings, then download free PyTorch or ONNX weights. How the ..."
+    },
+    {
+      "title": "Facet Explorer | Meta AI",
+      "url": "https://facet.metademolab.com/",
+      "snippet": "FACET: Benchmarking fairness of vision models FACET is a comprehensive benchmark dataset from Meta AI for evaluating the fairness of vision models across classification, detection, instance segmentation, and visual grounding tasks involving people."
+    }
+  ]
+}

@@ -1,0 +1,76 @@
+{
+  "schema": 1,
+  "id": "01Yassine/cohere-transcribe-darija-decoder-lora",
+  "slug": "01yassine-cohere-transcribe-darija-decoder-lora",
+  "author": "01Yassine",
+  "url": "https://huggingface.co/01Yassine/cohere-transcribe-darija-decoder-lora",
+  "created_at": "2026-08-30T18:55:03.000Z",
+  "updated_at": "2026-08-30T18:55:06.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": "automatic-speech-recognition",
+  "library": "peft",
+  "languages": [
+    "ar",
+    "ary"
+  ],
+  "tags": [
+    "peft",
+    "safetensors",
+    "asr",
+    "darija",
+    "moroccan-arabic",
+    "speech-recognition",
+    "lora",
+    "automatic-speech-recognition",
+    "ar",
+    "ary",
+    "base_model:CohereLabs/cohere-transcribe-arabic-07-2026",
+    "base_model:adapter:CohereLabs/cohere-transcribe-arabic-07-2026",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 16795456,
+  "storage_human": "17 MB",
+  "base_model": "CohereLabs/cohere-transcribe-arabic-07-2026",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Transcribe - Cohere",
+      "url": "https://cohere.com/transcribe",
+      "snippet": "Transcribe converts your business audio data into precise text for search, analytics, and automation."
+    },
+    {
+      "title": "syvai/cohere-transcribe-diarize · Hugging Face",
+      "url": "https://huggingface.co/syvai/cohere-transcribe-diarize",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Cohere Transcribe | Cohere",
+      "url": "https://docs.cohere.com/docs/transcribe",
+      "snippet": "This page describes how the Cohere Transcribe model works and how to use it."
+    },
+    {
+      "title": "Cohere Transcribe: Open-Source Speech Recognition | Cohere",
+      "url": "https://cohere.com/blog/transcribe",
+      "snippet": "Cohere is announcing Transcribe, a state-of-the-art automatic speech recognition (ASR) model that is open source and available today for download. Speech is rapidly becoming a core modality for AI-enabled workloads and automations — from meeting transcription and speech analytics to real-time customer support agents."
+    },
+    {
+      "title": "Cohere Transcribe - vLLM Ascend",
+      "url": "https://docs.vllm.ai/projects/ascend/en/latest/tutorials/models/Cohere-Transcribe.html",
+      "snippet": "Cohere Transcribe is a family of automatic speech recognition (ASR) models from Cohere, based on a 2B-parameter Conformer encoder-decoder architecture that supports 14 languages (English, French, German, Italian, Spanish, Portuguese, Greek, Dutch, Polish, Chinese (Mandarin), Japanese, Korean, Vietnamese, and Arabic)."
+    }
+  ]
+}

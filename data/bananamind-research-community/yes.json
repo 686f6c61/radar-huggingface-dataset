@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "bananamind-research-community/yes",
+  "slug": "bananamind-research-community-yes",
+  "author": "bananamind-research-community",
+  "url": "https://huggingface.co/bananamind-research-community/yes",
+  "created_at": "2026-08-30T18:20:30.000Z",
+  "updated_at": "2026-08-30T18:55:15.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Models - Hugging Face",
+      "url": "https://huggingface.co/models?other=bananamind2",
+      "snippet": "BananaMind/BananaMind-2-AI-Detect Text Generation • 0.8B•Updated 23 days ago• 381 • 5"
+    },
+    {
+      "title": "BananaMind/MathBananaMind-1.1 · Hugging Face",
+      "url": "https://huggingface.co/BananaMind/MathBananaMind-1.1",
+      "snippet": "Intended Use MathBananaMind-1.1 is intended for small-model arithmetic research, continuation-likelihood evaluation, digit-tokenizer experiments, and lightweight local inference."
+    },
+    {
+      "title": "Vision Banana | Google DeepMind",
+      "url": "https://vision-banana.github.io/",
+      "snippet": "Vision Banana: A generalist model built by instruction-tuning Nano Banana Pro, achieving state-of-the-art on segmentation, depth, and surface normal tasks."
+    },
+    {
+      "title": "Models — Google DeepMind",
+      "url": "https://deepmind.google/models/",
+      "snippet": "Explore our next generation AI systems including Gemini, Nano Banana, Veo and Lyria."
+    },
+    {
+      "title": "The AI That Went Bananas: Unpacking Google&#x27;s Viral &#x27;Nano Banana&#x27; Image ...",
+      "url": "https://machineofmind.blogspot.com/2025/08/the-ai-that-went-bananas-unpacking.html",
+      "snippet": "The Official Identity and Release The Nano Banana AI is, in fact, Gemini 2.5 Flash Image, a new state-of-the-art image-editing and generation model developed by Google DeepMind."
+    }
+  ]
+}

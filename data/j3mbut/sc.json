@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "J3Mbut/Sc",
+  "slug": "j3mbut-sc",
+  "author": "J3Mbut",
+  "url": "https://huggingface.co/J3Mbut/Sc",
+  "created_at": "2026-07-05T08:58:01.000Z",
+  "updated_at": "2026-08-30T12:38:41.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "pytorch",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 22,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 14242946877,
+  "storage_human": "14.2 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "J3Mbut (A1Pit) - Hugging Face",
+      "url": "https://huggingface.co/J3Mbut/models",
+      "snippet": "User profile of A1Pit on Hugging Face Recent Activity updated a Spaceabout 5 hours ago J3Mbut/Scr1p5 updated a Spaceabout 8 hours ago J3Mbut/ATB published a Spaceabout 11 hours ago J3Mbut/ATB View all activity"
+    },
+    {
+      "title": "J3Mbut (A1Pit) - Hugging Face",
+      "url": "https://huggingface.co/J3Mbut",
+      "snippet": "Monitor live logs from openearn and rimakoko services. J3Mbut about 4 hours ago. models 0. None public yet. datasets 0"
+    },
+    {
+      "title": "Model cards — Google DeepMind",
+      "url": "https://deepmind.google/models/model-cards/",
+      "snippet": "Model cards Simple, structured overviews of how an advanced AI model was designed and evaluated."
+    },
+    {
+      "title": "AI Leaderboard 2026: Rankings for 300+ Top AI Models by Intelligence ...",
+      "url": "https://llm-stats.com/",
+      "snippet": "The AI Leaderboard — independent rankings of GPT, Claude, Gemini, Llama, DeepSeek and 300+ AI models by intelligence, speed and price. Composite LLM Stats Score updated continuously from public benchmarks and live API metrics."
+    },
+    {
+      "title": "Free AI Models on OpenRouter",
+      "url": "https://openrouter.ai/collections/free-models",
+      "snippet": "Model rankings updated August 2026 based on real usage data. At OpenRouter, we believe that free models play a crucial role in democratizing access to AI. These models allow hundreds of thousands of users worldwide to experiment, learn, and innovate. Below you will find the top free AI models currently available on OpenRouter."
+    }
+  ]
+}

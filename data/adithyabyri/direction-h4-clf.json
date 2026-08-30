@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "AdithyaByri/direction-h4-clf",
+  "slug": "adithyabyri-direction-h4-clf",
+  "author": "AdithyaByri",
+  "url": "https://huggingface.co/AdithyaByri/direction-h4-clf",
+  "created_at": "2026-08-30T14:38:26.000Z",
+  "updated_at": "2026-08-30T14:38:34.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "trading",
+    "xgboost",
+    "finance",
+    "alpaca",
+    "direction-classifier",
+    "hackathon",
+    "en",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1341471,
+  "storage_human": "1 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - adithyapintu/adithyabyri: Adithya Byri portfolio site",
+      "url": "https://github.com/adithyapintu/adithyabyri",
+      "snippet": "Adithya Byri portfolio site. Contribute to adithyapintu/adithyabyri development by creating an account on GitHub."
+    },
+    {
+      "title": "Hugging Face - The AI community building the future.",
+      "url": "https://huggingface.co/",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Death by a Thousand Directions: Exploring the Geometry of Harmfulness ...",
+      "url": "https://arxiv.org/html/2507.21141v1",
+      "snippet": "We then test ablation of the entire subspace from model internals, as well as steering and ablation in the subspace&#x27;s dominant direction. We find that dominant direction steering allows for near elimination of harmfulness with a low decrease in utility."
+    },
+    {
+      "title": "CLF: CURVE LINE FITTING NEURAL NETWORK BASED ON BEZIER CURVE - OpenReview",
+      "url": "https://openreview.net/pdf?id=dxMffCAd4w",
+      "snippet": "CLF model provides a clear guide during and after training. This transparency allows for an 078 assessment of whether using fewer parameters could achieve comparable results by analyzing the 079 network&#x27;s structure and performance. Additionally, there is only one known issue that can prevent 080 the CLF from converging during training, whic"
+    },
+    {
+      "title": "HuggingFaceH4 (Hugging Face H4)",
+      "url": "https://huggingface.co/HuggingFaceH4",
+      "snippet": "Aligning LLMs to be helpful, honest, harmless, and huggy (H4)"
+    }
+  ]
+}

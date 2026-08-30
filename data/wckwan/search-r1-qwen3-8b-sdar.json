@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "wckwan/Search-R1-Qwen3-8B-SDAR",
+  "slug": "wckwan-search-r1-qwen3-8b-sdar",
+  "author": "wckwan",
+  "url": "https://huggingface.co/wckwan/Search-R1-Qwen3-8B-SDAR",
+  "created_at": "2026-08-30T12:38:43.000Z",
+  "updated_at": "2026-08-30T13:05:41.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3",
+    "text-generation",
+    "reinforcement-learning",
+    "grpo",
+    "agent",
+    "conversational",
+    "base_model:Qwen/Qwen3-8B",
+    "base_model:finetune:Qwen/Qwen3-8B",
+    "license:apache-2.0",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 8190735360,
+  "parameters_human": "8.19B",
+  "storage_bytes": 425931719373,
+  "storage_human": "425.9 GB",
+  "base_model": "Qwen/Qwen3-8B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - Xinyi-0724/Search-R1-Qwen3: Enhanced Search-R1 Implementation ...",
+      "url": "https://github.com/Xinyi-0724/Search-R1-Qwen3",
+      "snippet": "The original Search-R1 framework, built upon veRL, extends the ideas of DeepSeek-R1 (-Zero) by incorporating interleaved search engine access and provides a fully open-source RL training pipeline. It serves as an alternative and open solution to OpenAI DeepResearch, enabling research and development in tool-augmented LLM reasoning."
+    },
+    {
+      "title": "wckwan/Search-R1-Qwen3-8B-Outcome-GRPO · Hugging Face",
+      "url": "https://huggingface.co/wckwan/Search-R1-Qwen3-8B-Outcome-GRPO",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "wckwan/Search-R1-Qwen3-8B-Process-GRPO-PerTurnNorm · Hugging Face",
+      "url": "https://huggingface.co/wckwan/Search-R1-Qwen3-8B-Process-GRPO-PerTurnNorm",
+      "snippet": "A Qwen/Qwen3-8B policy trained as a multi-turn search agent (Search-R1 style) with Process-GRPO: a process reward model (Olmo-3-7B-Think verifier) scores each turn, with per- (group, turn-position) advantage normalization and verifier prompts that include the retrieved tool responses and the gold answer."
+    },
+    {
+      "title": "GitHub - QwenLM/Qwen3: Qwen3 is the large language model series ...",
+      "url": "https://github.com/QwenLM/Qwen3",
+      "snippet": "We are excited to announce the release of Qwen3, the latest addition to the Qwen family of large language models. These models represent our most advanced and intelligent systems to date, improving from our experience in building QwQ and Qwen2.5. We are making the weights of Qwen3 available to the public, including both dense and Mixture-of-Expert (MoE) models. The highlights from Qwen3 ..."
+    },
+    {
+      "title": "qwen/qwen3-8b • LM Studio",
+      "url": "https://lmstudio.ai/models/qwen/qwen3-8b",
+      "snippet": "Qwen3 8B by qwen Supports a context length of up to 131,072 tokens with YaRN (default 32k) Supports /no_think to disable reasoning, just add it at the end of your prompt Supports both thinking and non-thinking modes withe enhanced reasoning in both for significantly enhanced mathematics, coding, and commonsense Excels at creative writing, role-playing, multi-turn dialogues, and instruction ..."
+    }
+  ]
+}

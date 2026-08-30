@@ -1,0 +1,77 @@
+{
+  "schema": 1,
+  "id": "Allan143/Minimax-H3-nvfp4-INT4-INT8-Convrot",
+  "slug": "allan143-minimax-h3-nvfp4-int4-int8-convrot",
+  "author": "Allan143",
+  "url": "https://huggingface.co/Allan143/Minimax-H3-nvfp4-INT4-INT8-Convrot",
+  "created_at": "2026-08-30T11:32:07.000Z",
+  "updated_at": "2026-08-30T11:32:07.000Z",
+  "license": "minimax-h3-community-license-agreement",
+  "license_family": "unknown",
+  "pipeline_tag": "image-text-to-video",
+  "library": "diffusers",
+  "languages": [
+    "th"
+  ],
+  "tags": [
+    "diffusers",
+    "text-to-video",
+    "image-to-video",
+    "image-text-to-video",
+    "video-to-video",
+    "text-to-audio-video",
+    "multimodal",
+    "quantized",
+    "comfyui",
+    "int4",
+    "nvfp4",
+    "th",
+    "base_model:MiniMaxAI/MiniMax-H3",
+    "base_model:quantized:MiniMaxAI/MiniMax-H3",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 128243321034,
+  "storage_human": "128.2 GB",
+  "base_model": "MiniMaxAI/MiniMax-H3",
+  "formats": [
+    "diffusers"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Abiray/Minimax-H3-nvfp4-INT4-INT8-Convrot · Hugging Face",
+      "url": "https://huggingface.co/Abiray/Minimax-H3-nvfp4-INT4-INT8-Convrot",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Minimax-H3-nvfp4-INT4-INT8-Convrot - Hugging Face",
+      "url": "https://huggingface.co/Abiray/Minimax-H3-nvfp4-INT4-INT8-Convrot/blob/main/MiniMax_H3_Ref2VA_pruned_int8_convrot.safetensors",
+      "snippet": "Instructions to use Abiray/Minimax-H3-nvfp4-INT4-INT8-Convrot with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Libraries Diffusers How to use Abiray/Minimax-H3-nvfp4-INT4-INT8-Convrot with Diffusers:"
+    },
+    {
+      "title": "Minimax-H3-nvfp4-INT4-INT8-Convrot · Models",
+      "url": "https://www.modelscope.cn/models/Abiray/Minimax-H3-nvfp4-INT4-INT8-Convrot/summary",
+      "snippet": "MiniMax H3 - Quantized & Pruned Collection (INT4 / INT8 / NVFP4) This repository is a community-compiled collection of quantized and pruned weights for MiniMax H3 (Hailuo 3.0), optimized for local inference environments like ComfyUI. By unifying various quantization formats (INT4, INT8, Mixed, and NVFP4) into a single structured repository, this hub makes it easier for users with consumer GPUs ..."
+    },
+    {
+      "title": "GitHub - MiniMax-AI/MiniMax-H3 · GitHub",
+      "url": "https://github.com/MiniMax-AI/MiniMax-H3",
+      "snippet": "Contribute to MiniMax-AI/MiniMax-H3 development by creating an account on GitHub."
+    },
+    {
+      "title": "Minimax H3 Video Gen (NVFP4/BF16/FP8/INT8/INT4/GGUF)",
+      "url": "https://www.stablediffusiontutorials.com/2026/08/minimax-h3.html",
+      "snippet": "Now, the next Open sourced Video generation model is here. MiniMax H3 (Developed by MiniMaxAI) is positioned as a next-generation general-purpose multimodal video model designed to move beyond specialized generation tasks toward broader multimodal intelligence."
+    }
+  ]
+}

@@ -1,0 +1,84 @@
+{
+  "schema": 1,
+  "id": "JustANormalTinkerer/hayai-ocr-v2-onnx",
+  "slug": "justanormaltinkerer-hayai-ocr-v2-onnx",
+  "author": "JustANormalTinkerer",
+  "url": "https://huggingface.co/JustANormalTinkerer/hayai-ocr-v2-onnx",
+  "created_at": "2026-08-30T18:14:32.000Z",
+  "updated_at": "2026-08-30T18:14:50.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-to-text",
+  "library": "transformers",
+  "languages": [
+    "en",
+    "ja",
+    "zh",
+    "ko"
+  ],
+  "tags": [
+    "transformers",
+    "onnx",
+    "safetensors",
+    "hayai",
+    "feature-extraction",
+    "ocr",
+    "vision-language",
+    "vlm",
+    "manga-ocr",
+    "cjk",
+    "onnxruntime",
+    "image-to-text",
+    "custom_code",
+    "en",
+    "ja",
+    "zh",
+    "ko",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 155614464,
+  "parameters_human": "155.6M",
+  "storage_bytes": 1611693603,
+  "storage_human": "1.6 GB",
+  "base_model": null,
+  "formats": [
+    "onnx",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "JustANormalTinkerer/hayai-ocr-v2 · Hugging Face",
+      "url": "https://huggingface.co/JustANormalTinkerer/hayai-ocr-v2",
+      "snippet": "Hayai OCR v2 Hayai is a compact vision-to-text OCR model. It pairs a SigLIP2 vision encoder with a causal transformer decoder to read text directly out of images, without a separate detection stage."
+    },
+    {
+      "title": "Hayai OCR v2 - a Hugging Face Space by JustANormalTinkerer",
+      "url": "https://huggingface.co/spaces/JustANormalTinkerer/hayai-ocr-v2",
+      "snippet": "Hayai OCR v2 A compact 155M-parameter OCR model that maps images directly to transcribed text. Supports Japanese, Chinese, and English text recognition. Upload an image and get the text!"
+    },
+    {
+      "title": "GitHub - NopeNopeGuy/hayai-ocr: Optical character recognition for ...",
+      "url": "https://github.com/NopeNopeGuy/hayai-ocr",
+      "snippet": "Here are some examples showing the capability of the model with the new Hayai OCR v2: Note: All the example images are picked randomly from Youtube videos and raw manga sites."
+    },
+    {
+      "title": "Hayai OCR v2",
+      "url": "https://hugging-apps-hayai-ocr-v2.hf.space/?__theme=system",
+      "snippet": "A compact 155M-parameter OCR model that maps images directly to transcribed text. Supports Japanese, Chinese, and English text recognition. Upload an image and get the text! Input Image Drop Image Here - or - Click to Upload Run OCR Recognized Text Advanced settings Examples [object Object] [object Object] [object Object] [object Object] [object Object]"
+    },
+    {
+      "title": "hayai-ocr · PyPI",
+      "url": "https://pypi.org/project/hayai-ocr/",
+      "snippet": "Hayai OCR (速いOCR) Fast optical character recognition for Japanese text, with the main focus being Japanese manga. A fork of manga-ocr by kha-white, rebuilt with a SigLIP2 + BERT encoder-decoder architecture for improved accuracy and speed. It uses a custom end-to-end model built with Transformers&#x27; Vision Encoder Decoder framework, pairing a SigLIP2 NaFlex vision encoder with a Japanese ..."
+    }
+  ]
+}

@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "spellbrush/PupuM2D",
+  "slug": "spellbrush-pupum2d",
+  "author": "spellbrush",
+  "url": "https://huggingface.co/spellbrush/PupuM2D",
+  "created_at": "2026-06-08T22:38:47.000Z",
+  "updated_at": "2026-08-30T14:39:46.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "other",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "music",
+    "SSL",
+    "pytorch",
+    "other",
+    "arxiv:2606.25713",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 6,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 48939028014,
+  "storage_human": "48.9 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "spellbrush (Spellbrush) - Hugging Face",
+      "url": "https://huggingface.co/spellbrush",
+      "snippet": "AI & ML interests ... Recent Activity Setsugesuka new activity about 1 month ago ... Setsugesuka new activity about 1 month ago ... Setsugesuka updated a model about 1 month ago"
+    },
+    {
+      "title": "spellbrush/AliasingFreeNeuralAudioSynthesis · Hugging Face",
+      "url": "https://huggingface.co/spellbrush/AliasingFreeNeuralAudioSynthesis",
+      "snippet": "spellbrush / AliasingFreeNeuralAudioSynthesis like 14 Follow Spellbrush 11 Audio-to-Audio Safetensors PyTorch English Chinese Japanese speech singing singing voice audio music vocoder codec arxiv:2512.20211 License:mit Model card FilesFiles and versions xet Community 3 Copy to bucket new Aliasing-Free Neural Audio Synthesis Model Checkpoints ..."
+    },
+    {
+      "title": "niji・journey",
+      "url": "https://nijijourney.com/",
+      "snippet": "Welcome to niji・journey, a state-of-the-art AI that draws custom anime illustrations, just for you! A magical collaboration, designed together between brilliant minds at Spellbrush & Midjourney."
+    },
+    {
+      "title": "Spellbrush: Making Anime Real | Y Combinator",
+      "url": "https://www.ycombinator.com/companies/spellbrush",
+      "snippet": "Here at Spellbrush, we&#x27;re passionate about making a good anime game. We also happen to be the world&#x27;s leading generative AI studio — we&#x27;re the team behind niji・journey. We are currently investigating how AI can be used to help human artists perform masterpieces in the most complex medium of our times: video games. Our games are characterized by a no-compromise approach to well-balanced ..."
+    },
+    {
+      "title": "Free AI 3D Model Generator - Createimg",
+      "url": "https://www.createimg.com/ai-3d-model-generator/",
+      "snippet": "Try our free AI 3D model generator to create characters, props, and objects in seconds. 100% free, no login required, fast and easy."
+    }
+  ]
+}

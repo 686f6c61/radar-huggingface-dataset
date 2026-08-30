@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "svkuznetsov/tiny-transformer-retrieval",
+  "slug": "svkuznetsov-tiny-transformer-retrieval",
+  "author": "svkuznetsov",
+  "url": "https://huggingface.co/svkuznetsov/tiny-transformer-retrieval",
+  "created_at": "2026-08-30T16:47:54.000Z",
+  "updated_at": "2026-08-30T16:48:03.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "tiny_transformer",
+    "pytorch",
+    "tiny-transformer",
+    "retrieval",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 33088,
+  "parameters_human": "33088",
+  "storage_bytes": 132832,
+  "storage_human": "132832 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - avvorstenbosch/tinyTransformer: This repository is me learning ...",
+      "url": "https://github.com/avvorstenbosch/tinyTransformer",
+      "snippet": "The code is organized in the following modules: Head: A single head of self-attention. MultiHead: Multiple heads of self-attention. FeedForward: A straightforward fully connected layer. MultiHeadAttentionBlock: A block of attention followed by computation. tinyTransformer: The main model class implementing the transformer architecture."
+    },
+    {
+      "title": "Building a Tiny Transformer From Scratch in PyTorch",
+      "url": "https://buildml.substack.com/p/building-a-tiny-transformer-from",
+      "snippet": "If you&#x27;ve ever felt that Transformers are a \"black box,\" today&#x27;s post is for you. Instead of just downloading a pretrained model, we&#x27;re going to build a tiny GPT-style transformer from scratch — small enough to run on your laptop, but powerful enough to generate Shakespeare-like text. By the end, you&#x27;ll not only have a working model, but also a clear understanding of how the ..."
+    },
+    {
+      "title": "skolouri/TinyTransformer: Mathematics of AI - GitHub",
+      "url": "https://github.com/skolouri/TinyTransformer",
+      "snippet": "Mathematics of AI - Transformer Networks. Contribute to skolouri/TinyTransformer development by creating an account on GitHub."
+    },
+    {
+      "title": "Hugging Face - The AI community building the future.",
+      "url": "https://huggingface.co/",
+      "snippet": "The AI community building the future. ... Explore AI Apps or Browse 2M+ models Trending on this week"
+    },
+    {
+      "title": "Transformer models: an introduction and catalog - arXiv.org",
+      "url": "https://arxiv.org/html/2302.07730v4",
+      "snippet": "Abstract In the past few years we have seen the meteoric appearance of dozens of foundation models of the Transformer family, all of which have memorable and sometimes funny, but not self-explanatory, names. The goal of this paper is to offer a somewhat comprehensive but simple catalog and classification of the most popular Transformer models. The paper also includes an introduction to the ..."
+    }
+  ]
+}

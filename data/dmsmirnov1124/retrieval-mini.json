@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "Dmsmirnov1124/retrieval-mini",
+  "slug": "dmsmirnov1124-retrieval-mini",
+  "author": "Dmsmirnov1124",
+  "url": "https://huggingface.co/Dmsmirnov1124/retrieval-mini",
+  "created_at": "2026-08-30T15:10:10.000Z",
+  "updated_at": "2026-08-30T15:10:19.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "vit",
+    "pytorch",
+    "retrieval",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 33088,
+  "parameters_human": "33088",
+  "storage_bytes": 132832,
+  "storage_human": "132832 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Dmsmirnov1124 (Михаил Смирнов) - Hugging Face",
+      "url": "https://huggingface.co/Dmsmirnov1124",
+      "snippet": "User profile of Михаил Смирнов on Hugging Face"
+    },
+    {
+      "title": "Dmsmirnov1124/fashion-corpus · Datasets at Hugging Face",
+      "url": "https://huggingface.co/datasets/Dmsmirnov1124/fashion-corpus",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Retrieval | OpenAI API",
+      "url": "https://developers.openai.com/api/docs/guides/retrieval",
+      "snippet": "The Retrieval API allows you to perform semantic search over your data, which is a technique that surfaces semantically similar results—even when they match few or no keywords. Retrieval is useful on its own, but is especially powerful when combined with our models to synthesize responses. The Retrieval API is powered by vector stores, which serve as indices for your data. This guide will ..."
+    },
+    {
+      "title": "[2602.15313] Mnemis: Dual-Route Retrieval on Hierarchical Graphs for ...",
+      "url": "https://arxiv.org/abs/2602.15313",
+      "snippet": "AI Memory, specifically how models organizes and retrieves historical messages, becomes increasingly valuable to Large Language Models (LLMs), yet existing methods (RAG and Graph-RAG) primarily retrieve memory through similarity-based mechanisms. While efficient, such System-1-style retrieval struggles with scenarios that require global reasoning or comprehensive coverage of all relevant ..."
+    },
+    {
+      "title": "OpenAI o3‑mini",
+      "url": "https://openai.com/index/openai-o3-mini/",
+      "snippet": "OpenAI o3‑mini is our first small reasoning model that supports highly requested developer features including function calling ⁠, Structured Outputs ⁠, and developer messages ⁠, making it production-ready out of the gate. Like OpenAI o1‑mini and OpenAI o1‑preview, o3‑mini will support streaming ⁠."
+    }
+  ]
+}

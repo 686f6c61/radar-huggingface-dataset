@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "asatheesh/latent-mas-aligner",
+  "slug": "asatheesh-latent-mas-aligner",
+  "author": "asatheesh",
+  "url": "https://huggingface.co/asatheesh/latent-mas-aligner",
+  "created_at": "2026-07-29T14:09:36.000Z",
+  "updated_at": "2026-08-30T13:36:37.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safety",
+    "multi-agent",
+    "latent-mas",
+    "alignment",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 411224609,
+  "storage_human": "411 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "asatheesh/latent-mas-aligner · Hugging Face",
+      "url": "https://huggingface.co/asatheesh/latent-mas-aligner",
+      "snippet": "Intended use Research on latent-space safety monitoring for multi-agent systems. Reproducing the paper&#x27;s aligner-defense results on Qwen3-4B LatentMAS. Ablations that vary the aligner architecture while keeping the audited-model and safety-monitor sides fixed."
+    },
+    {
+      "title": "asatheesh (Anirudh Satheesh) - Hugging Face",
+      "url": "https://huggingface.co/asatheesh/datasets",
+      "snippet": "Recent Activity updated a dataset1 day ago asatheesh/latent-mas-safety-dataset published a dataset3 days ago asatheesh/latent-mas-safety-dataset authored a paperabout 2 months ago Compositional Adversarial Training for Robust Visual Watermarking View all activity"
+    },
+    {
+      "title": "GitHub - Gen-Verse/LatentMAS: [ICML 2026 Spotlight] Latent ...",
+      "url": "https://github.com/Gen-Verse/LatentMAS",
+      "snippet": "Efficient multi-step reasoning with drastically fewer tokens Training-free latent-space alignment for stable generation A general technique compatible with any HF model and optionally vLLM backends. Overall, LatentMAS achieves superior performance, lower token usage, and major wall-clock speedups of the multi-agent system."
+    },
+    {
+      "title": "GitHub - joshua-qin/LatentMAS1",
+      "url": "https://github.com/joshua-qin/LatentMAS1",
+      "snippet": "Efficient multi-step reasoning with drastically fewer tokens Training-free latent-space alignment for stable generation A general technique compatible with any HF model and optionally vLLM backends."
+    },
+    {
+      "title": "[2511.20639] Latent Collaboration in Multi-Agent Systems",
+      "url": "https://arxiv.org/abs/2511.20639",
+      "snippet": "Multi-agent systems (MAS) extend large language models (LLMs) from independent single-model reasoning to coordinative system-level intelligence. While existing LLM agents depend on text-based mediation for reasoning and communication, we take a step forward by enabling models to collaborate directly within the continuous latent space. We introduce LatentMAS, an end-to-end training-free ..."
+    }
+  ]
+}

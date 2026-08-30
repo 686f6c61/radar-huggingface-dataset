@@ -1,0 +1,76 @@
+{
+  "schema": 1,
+  "id": "Rewnozom/Rewnozom-GGUF",
+  "slug": "rewnozom-rewnozom-gguf",
+  "author": "Rewnozom",
+  "url": "https://huggingface.co/Rewnozom/Rewnozom-GGUF",
+  "created_at": "2026-08-30T18:06:29.000Z",
+  "updated_at": "2026-08-30T19:27:55.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "qwen2",
+    "chat",
+    "long-context",
+    "text-generation",
+    "safetensors",
+    "en",
+    "base_model:Qwen/Qwen2.5-7B-Instruct-1M",
+    "base_model:quantized:Qwen/Qwen2.5-7B-Instruct-1M",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 7615616512,
+  "parameters_human": "7.62B",
+  "storage_bytes": 85759511904,
+  "storage_human": "85.8 GB",
+  "base_model": "Qwen/Qwen2.5-7B-Instruct-1M",
+  "formats": [
+    "gguf",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "RichardErkhov/Rewnozom_-_agent-zero-v1-a-01-gguf · Hugging Face",
+      "url": "https://huggingface.co/RichardErkhov/Rewnozom_-_agent-zero-v1-a-01-gguf",
+      "snippet": "Original model description: language: - en library_name: transformers tags: - gpt - llm - large language model - Agent Zero JSON-optimized: True Model Card Summary Base model: microsoft/Phi-3-mini-4k-instruct Usage; AI Agent Operational Framework Available Tools knowledge_tool: Query knowledge base and online sources memorize: Store information for future use response: Report back to your ..."
+    },
+    {
+      "title": "GGUF Model Discovery - Browse & Download AI Models",
+      "url": "https://local-ai-zone.github.io/",
+      "snippet": "Discover and download GGUF format AI models. Browse and direct download thousands of quantized AI models with detailed information, download counts, and direct links."
+    },
+    {
+      "title": "Rewnozom_-_agent-zero-v1-a-01-gguf - Hugging Face",
+      "url": "https://huggingface.co/RichardErkhov/Rewnozom_-_agent-zero-v1-a-01-gguf/blob/main/agent-zero-v1-a-01.Q8_0.gguf",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "rewnozom · GitHub",
+      "url": "https://github.com/rewnozom/",
+      "snippet": "rewnozom has one repository available. Follow their code on GitHub."
+    },
+    {
+      "title": "ggufy - Model Library",
+      "url": "https://ggufy.com/",
+      "snippet": "ggufy helps you discover, download, and manage GGUF models from providers like Hugging Face, with compatibility for inference engines such as Ollama and llama.cpp."
+    }
+  ]
+}

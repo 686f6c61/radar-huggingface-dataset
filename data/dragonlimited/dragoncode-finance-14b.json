@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "dragonlimited/DragonCode-Finance-14B",
+  "slug": "dragonlimited-dragoncode-finance-14b",
+  "author": "dragonlimited",
+  "url": "https://huggingface.co/dragonlimited/DragonCode-Finance-14B",
+  "created_at": "2026-08-30T16:10:53.000Z",
+  "updated_at": "2026-08-30T17:32:45.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "dragonlimited",
+    "dragondata",
+    "finance",
+    "llm",
+    "full-finetune",
+    "text-generation",
+    "en",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 64201506791,
+  "storage_human": "64.2 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "dragonlimited/DragonCode-150M · Hugging Face",
+      "url": "https://huggingface.co/dragonlimited/DragonCode-150M",
+      "snippet": "DragonCode-150M DragonCode family — 150M-parameter code-domain language model (pretraining tier)."
+    },
+    {
+      "title": "dragonlimited (Dragon Limited) - Hugging Face",
+      "url": "https://huggingface.co/dragonlimited/models",
+      "snippet": "User profile of Dragon Limited on Hugging Face"
+    },
+    {
+      "title": "Dragon - 企业级中转 - Dragon Code",
+      "url": "https://dragoncode.codes/",
+      "snippet": "用户充值后获得 DragonCode 账户余额， 余额用于调用 Claude Code、Codex、Gemini CLI 等 AI 编码模型能力。 点击「立即体验」创建账号，登录后进入控制台管理 API Key、余额和用量。 最低充值 ¥20。 充值 ¥1 可获得 $1 DragonCode 余额，余额仅用于本服务。"
+    },
+    {
+      "title": "Skild AI Raises $1.4B, Now Valued Over $14B - Yahoo Finance",
+      "url": "https://finance.yahoo.com/news/skild-ai-raises-1-4b-150800863.html",
+      "snippet": "PITTSBURGH, January 14, 2026--Skild AI, an AI robotics company building a scalable foundation model for robotics, today announced it has raised close to $1.4 billion in funding led by SoftBank ..."
+    },
+    {
+      "title": "GitHub - 12britz/awesome-free-models: A curated list of free AI models ...",
+      "url": "https://github.com/12britz/awesome-free-models",
+      "snippet": "A curated list of free AI models, APIs, and tools you can use without paying a cent. - 12britz/awesome-free-models"
+    }
+  ]
+}

@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "Fornikle77777/Nissanvan",
+  "slug": "fornikle77777-nissanvan",
+  "author": "Fornikle77777",
+  "url": "https://huggingface.co/Fornikle77777/Nissanvan",
+  "created_at": "2026-08-30T18:37:39.000Z",
+  "updated_at": "2026-08-30T18:37:39.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Nissantruck Ai Vehicles Pack 15 - ETS 2 - ModLand.net",
+      "url": "https://www.modland.net/euro-truck-simulator-2/other/nissantruck-ai-vehicles-pack.html",
+      "snippet": "- Added 13 AI vans. - The spawn rate of the slow ai car has been modified again, it may chance again in some of the future updates. - From this update on i will add the car brand logos and the car model logos to the back of the ai vehicles. - Added 2 unmarked civilian police ai vans with only police lights on the roofs of the ai vehicles. - They will look the same in all of the countries,they ..."
+    },
+    {
+      "title": "Nissan Caravan Detailed 3D Van Model - Sketchfab",
+      "url": "https://sketchfab.com/3d-models/nissan-caravan-detailed-3d-van-model-bfddc35e8b40441cbaa291ef0b120935",
+      "snippet": "Step into the world of functional design with this meticulously crafted 3D model of the Nissan Caravan, a versatile and iconic commercial van modeled and rendered entirely in Blender. Ideal for game developers, automotive visualizations, or urban environment projects, this asset captures the van&#x27;s rugged utility and timeless practicality. Use Cases: - Logistics or delivery game simulations ..."
+    },
+    {
+      "title": "Nissan van 3D Models Download - 3DModels.org",
+      "url": "https://3dmodels.org/nissan-van/",
+      "snippet": "3D models of Nissan van are available for download in FBX, OBJ, 3DS, C4D and other file formats for 23 software. Models are ready for render."
+    },
+    {
+      "title": "Nissantruck Ai Vehicles Pack v20.0 - ETS 2 - ModLand.net",
+      "url": "https://www.modland.net/euro-truck-simulator-2/other/nissantruck-ai-vehicles-pack-2.html",
+      "snippet": "Nissantruck Ai Vehicles Pack - Changelog - Added 10 ai vans - The spawn rate of the slow ai car has been modified The pack adds various vehicles to the traffic Budbee Hertz Ups Fedex Dhl Bring Danx Db Schencker Europcar Dpd Gls Postnord Dachser Verisure Securitas Anticimex S..."
+    },
+    {
+      "title": "AI 3D Model Generator: Create 3D from Text & Images | Meshy",
+      "url": "https://www.meshy.ai/",
+      "snippet": "Meshy&#x27;s AI 3D model generator turns text and images into production-ready 3D models in 20-30 seconds. Export to FBX, OBJ, GLB, and STL formats. Try Meshy free."
+    }
+  ]
+}

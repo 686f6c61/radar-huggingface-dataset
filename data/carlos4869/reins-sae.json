@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "Carlos4869/REINS-SAE",
+  "slug": "carlos4869-reins-sae",
+  "author": "Carlos4869",
+  "url": "https://huggingface.co/Carlos4869/REINS-SAE",
+  "created_at": "2026-08-30T12:57:48.000Z",
+  "updated_at": "2026-08-30T12:57:48.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "REINS: Refusal-Enhanced Inhibitory Steering with Sparse Autoencoder ...",
+      "url": "https://openreview.net/forum?id=4kygxSY7JS",
+      "snippet": "This motivates us to propose Refusal-Enhanced INhibitory Steering (REINS), which suppresses harmful continuation features and enhances safe refusal features in the same SAE feature space."
+    },
+    {
+      "title": "ModelReins — AI Orchestration Mission Control",
+      "url": "https://modelreins.com/",
+      "snippet": "Multi-provider AI routing on your own workers and your own keys. Claude, OpenAI, Gemini, Ollama, and more — routed by you, never proxied through a third-party gateway. Dispatch relay, not content host. Your infrastructure, your rules."
+    },
+    {
+      "title": "Log In — ModelReins",
+      "url": "https://modelreins.com/saas/login",
+      "snippet": "ModelReins AI Orchestration Platform Welcome back Log in to your dashboard."
+    },
+    {
+      "title": "GitHub - decoderesearch/SAELens: Training Sparse Autoencoders on ...",
+      "url": "https://github.com/decoderesearch/SAELens",
+      "snippet": "SAE Lens SAELens exists to help researchers: Train sparse autoencoders. Analyse sparse autoencoders / research mechanistic interpretability. Generate insights which make it easier to create safe and aligned AI systems. SAELens inference works with any PyTorch-based model, not just TransformerLens."
+    },
+    {
+      "title": "Login | AI-Reins",
+      "url": "https://ai-reins.com/login",
+      "snippet": "Enter your credentials Log In"
+    }
+  ]
+}

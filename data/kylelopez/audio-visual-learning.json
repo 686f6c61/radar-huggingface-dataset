@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "KyleLopez/audio-visual-learning",
+  "slug": "kylelopez-audio-visual-learning",
+  "author": "KyleLopez",
+  "url": "https://huggingface.co/KyleLopez/audio-visual-learning",
+  "created_at": "2026-08-30T16:39:28.000Z",
+  "updated_at": "2026-08-30T16:39:38.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "transformer",
+    "research-notes",
+    "audio-visual-learning",
+    "license:cc-by-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 16576,
+  "parameters_human": "16576",
+  "storage_bytes": 66784,
+  "storage_human": "66784 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "[2208.09579] Learning in Audio-visual Context: A Review, Analysis, and ...",
+      "url": "https://arxiv.org/abs/2208.09579",
+      "snippet": "Then, we systematically review the recent audio-visual learning studies and divide them into three categories: audio-visual boosting, cross-modal perception and audio-visual collaboration. Through our analysis, we discover that, the consistency of audio-visual data across semantic, spatial and temporal support the above studies."
+    },
+    {
+      "title": "From Vision to Audio and Beyond: A Unified Model for Audio-Visual ...",
+      "url": "https://arxiv.org/html/2409.19132v1",
+      "snippet": "Since VAB is a unified model, its backbone can be fine-tuned for various audio-visual downstream tasks. Our experiments showcase the efficiency of VAB in producing high-quality audio from video, and its capability to acquire semantic audio-visual features, leading to competitive results in audio-visual retrieval and classification."
+    },
+    {
+      "title": "Awesome Audio-Visual: - GitHub",
+      "url": "https://github.com/krantiparida/awesome-audio-visual",
+      "snippet": "Awesome Audio-Visual: A curated list of papers and datsets for various audio-visual tasks, inspired by awesome-computer-vision."
+    },
+    {
+      "title": "audio-visual learning - GeWu-Lab",
+      "url": "https://gewu-lab.github.io/audio-visual-learning/",
+      "snippet": "If you have any suggestions or questions about this audio-visual learning survey, please contact yakewei@ruc.edu.cn."
+    },
+    {
+      "title": "A survey on audio-visual large language models - ScienceDirect",
+      "url": "https://www.sciencedirect.com/science/article/pii/S0950705126012955",
+      "snippet": "In this context, audio-visual large language models (AV-LLMs) mark a significant progression in multimodal representation learning through joint encoding and cross-modal alignment of auditory, visual, and linguistic modalities."
+    }
+  ]
+}

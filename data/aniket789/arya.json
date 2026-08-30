@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "Aniket789/Arya",
+  "slug": "aniket789-arya",
+  "author": "Aniket789",
+  "url": "https://huggingface.co/Aniket789/Arya",
+  "created_at": "2026-08-30T14:10:19.000Z",
+  "updated_at": "2026-08-30T14:17:20.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "pytorch",
+    "arya",
+    "moe",
+    "mixture-of-experts",
+    "linear-attention",
+    "gated-deltanet",
+    "multi-token-prediction",
+    "chanakya-labs",
+    "text-generation",
+    "en",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 4952557886,
+  "storage_human": "5.0 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "arya-ai-model (Ghost Singh) - Hugging Face",
+      "url": "https://huggingface.co/arya-ai-model",
+      "snippet": "Generate code from a text prompt arya-ai-model Feb 17"
+    },
+    {
+      "title": "(@arya.aimodel) • Instagram photos and videos",
+      "url": "https://www.instagram.com/arya.aimodel/",
+      "snippet": "759 Followers, 200 Following, 90 Posts - See Instagram photos and videos from (@arya.aimodel)"
+    },
+    {
+      "title": "Arya - SeaArt AI Model",
+      "url": "https://www.seaart.ai/models/detail/d3l5r1de878c739cmqh0",
+      "snippet": "Explore Arya model on SeaArt AI. Transform your idea into professional-quality AI-generated images and videos with our free, easy-to-use platform."
+    },
+    {
+      "title": "Arya (Gab AI) — Grokipedia",
+      "url": "https://grokipedia.com/page/Arya_Gab_AI",
+      "snippet": "Arya is an artificial intelligence chatbot and language model developed by Gab AI, the AI division of the Gab social network, engineered to deliver objective, unfiltered responses without the content restrictions common in mainstream models, while embedding Christian and pro-American values in its outputs. [1] Launched as a counter to perceived political biases in other AI systems, it ..."
+    },
+    {
+      "title": "Arya - SeaArt AI Model",
+      "url": "https://www.seaart.ai/models/detail/035ed53c434b5166ffe8b2812305140e",
+      "snippet": "Arya is a meticulously trained model designed to bridge the gap between high-fashion photography and raw, cinematic storytelling. She embodies a natural, sophisticated beauty with a focus on anatomical accuracy and realistic skin textures."
+    }
+  ]
+}

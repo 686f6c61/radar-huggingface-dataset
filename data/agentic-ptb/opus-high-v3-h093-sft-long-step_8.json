@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "agentic-ptb/opus-high-v3.h093.sft-long.step_8",
+  "slug": "agentic-ptb-opus-high-v3-h093-sft-long-step_8",
+  "author": "agentic-ptb",
+  "url": "https://huggingface.co/agentic-ptb/opus-high-v3.h093.sft-long.step_8",
+  "created_at": "2026-08-30T16:18:12.000Z",
+  "updated_at": "2026-08-30T16:20:00.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "qwen3_5",
+    "agentic-ptb",
+    "opus-high-v3",
+    "negative-results",
+    "base_model:Qwen/Qwen3.5-9B-Base",
+    "base_model:finetune:Qwen/Qwen3.5-9B-Base",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 9409813744,
+  "parameters_human": "9.41B",
+  "storage_bytes": 18839710445,
+  "storage_human": "18.8 GB",
+  "base_model": "Qwen/Qwen3.5-9B-Base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "agentic-ptb/INDEX · Datasets at Hugging Face",
+      "url": "https://huggingface.co/datasets/agentic-ptb/INDEX",
+      "snippet": "opus-high-v1 is the opus@high cell. A rerun (opus-high-v2, run a-rerun) was aborted and is not valid — it stopped producing checkpoints at ~h12 and submitted the base model&#x27;s tensors unchanged after all five of its SFT runs regressed."
+    },
+    {
+      "title": "Models - Hugging Face",
+      "url": "https://huggingface.co/models?other=agentic-ptb",
+      "snippet": "Explore machine learning models. 234 Base only Inference AvailableInference Edit filters Sort: Trending Active filters: agentic-ptb Clear all"
+    },
+    {
+      "title": "Best LLMs for Agentic — August 2026 Leaderboard | BenchLM.ai",
+      "url": "https://benchlm.ai/agentic",
+      "snippet": "Compare 406 AI models on agentic benchmarks for tool use, browser research, and multi-step computer tasks. See which models handle terminal work, API tools, and software interfaces most reliably."
+    },
+    {
+      "title": "Anthropic&#x27;s Claude on Google Cloud models",
+      "url": "https://docs.cloud.google.com/gemini-enterprise-agent-platform/models/partner-models/claude",
+      "snippet": "The Anthropic Claude models on Google Cloud offer fully managed and serverless models as APIs. To use a Claude model on Agent Platform, send a request directly to the Agent Platform API endpoint. Because the Anthropic Claude models use a managed API, there&#x27;s no need to provision or manage infrastructure. You can stream your Claude responses to reduce the end-user latency perception. A streamed ..."
+    },
+    {
+      "title": "Claude Timeline: Model Release Dates and Version History",
+      "url": "https://www.scriptbyai.com/anthropic-claude-timeline/",
+      "snippet": "Claude Timeline: Model Release Dates and Version History Track Claude model versions and release dates from Claude 1 to Opus 5, including Claude Code, current models, retired versions, and product milestones. Claude is Anthropic&#x27;s family of AI assistants and large language models."
+    }
+  ]
+}

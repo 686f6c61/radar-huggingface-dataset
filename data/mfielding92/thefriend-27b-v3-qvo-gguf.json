@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "mfielding92/thefriend-27b-v3-qvo-GGUF",
+  "slug": "mfielding92-thefriend-27b-v3-qvo-gguf",
+  "author": "mfielding92",
+  "url": "https://huggingface.co/mfielding92/thefriend-27b-v3-qvo-GGUF",
+  "created_at": "2026-08-30T13:44:13.000Z",
+  "updated_at": "2026-08-30T15:08:53.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "quantized",
+    "unsloth-dynamic",
+    "imatrix",
+    "base_model:mfielding92/thefriend-27b-v3-qvo",
+    "base_model:quantized:mfielding92/thefriend-27b-v3-qvo",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 27320697856,
+  "parameters_human": "27.32B",
+  "storage_bytes": 63634677248,
+  "storage_human": "63.6 GB",
+  "base_model": "mfielding92/thefriend-27b-v3-qvo",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "mfielding92/thefriend-27b-v2 · Hugging Face",
+      "url": "https://huggingface.co/mfielding92/thefriend-27b-v2",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "SmartCode-Fable-5-CoT-Reasoning-QVO-Qwen-3.6-27B-Distilled-GGUF",
+      "url": "https://huggingface.co/mfielding92/SmartCode-Fable-5-CoT-Reasoning-QVO-Qwen-3.6-27B-Distilled-GGUF",
+      "snippet": "The model weights are released under apache-2.0. However, the SmartCode Fable 5 Distill dataset it was trained on is designated personal hobbyist and educational use only, with commercial use prohibited to remain in alignment with provider policies."
+    },
+    {
+      "title": "Michael Fielding mfielding92 - GitHub",
+      "url": "https://github.com/mfielding92/",
+      "snippet": "Most active on HuggingFace. mfielding92 has 5 repositories available. Follow their code on GitHub."
+    },
+    {
+      "title": "mfielding92 (Michael Fielding)",
+      "url": "https://hf-p-cfw.fyan.top/mfielding92/datasets",
+      "snippet": "mfielding92 319147 Follow RelatableRhythms&#x27;s profile pictureMtlbiohacker&#x27;s profile pictureFishtiks&#x27;s profile picture 119 followers · 10 following https://audiomaster.ai mfielding92"
+    },
+    {
+      "title": "Qwen3.8-27B: The Ultimate Guide to Running It Locally",
+      "url": "https://linas.substack.com/p/qwen3-8-27b-local-guide",
+      "snippet": "The Ultimate Guide to Qwen3.8-27B 🤖 How to run Alibaba&#x27;s 27B open AI model locally: a step-by-step guide to the settings, hardware requirements, & prompts that deliver frontier AI results for founders, builders, and investors."
+    }
+  ]
+}

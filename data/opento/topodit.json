@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "OpenTO/TopoDiT",
+  "slug": "opento-topodit",
+  "author": "OpenTO",
+  "url": "https://huggingface.co/OpenTO/TopoDiT",
+  "created_at": "2026-08-30T11:40:44.000Z",
+  "updated_at": "2026-08-30T11:48:15.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "image-to-image",
+  "library": "pytorch",
+  "languages": [],
+  "tags": [
+    "pytorch",
+    "safetensors",
+    "topology-optimization",
+    "structural-optimization",
+    "flow-matching",
+    "diffusion-transformer",
+    "pytorch_model_hub_mixin",
+    "model_hub_mixin",
+    "image-to-image",
+    "dataset:OpenTO/OpenTO",
+    "arxiv:2510.23667",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 688552464,
+  "parameters_human": "688.6M",
+  "storage_bytes": 2754307968,
+  "storage_human": "2.8 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "OpenTO/TopoDiT · Hugging Face",
+      "url": "https://huggingface.co/OpenTO/TopoDiT",
+      "snippet": "TopoDiT is the generative model of Optimize Any Topology 2 (OAT2): a 688.6M-parameter conditional diffusion transformer, trained with flow matching, that generates minimum-compliance structural topologies in the latent space of the frozen OpenTO/NFAE neural-field autoencoder. It is the successor of the latent-diffusion U-Net of Optimize Any Topology (NeurIPS 2025) and takes the same inputs ..."
+    },
+    {
+      "title": "OpenTO (OpenTO) - Hugging Face",
+      "url": "https://huggingface.co/OpenTO/models",
+      "snippet": "Org profile for OpenTO on Hugging Face, the AI community building the future."
+    },
+    {
+      "title": "Optimize Any Topology: A Foundation Model for Shape- and Resolution ...",
+      "url": "https://arxiv.org/pdf/2510.23667",
+      "snippet": "OpenTO establishes a scalable foundation for data-driven research in physics-based structural design. 2) OAT Framework: We propose Optimize Any Topology (OAT), the first deep learning framework capable of addressing the general topology optimization problem—handling arbitrary boundary conditions and resolutions within a single model."
+    },
+    {
+      "title": "GitHub - Zechao-Guan/TopoDiT-3D",
+      "url": "https://github.com/Zechao-Guan/TopoDiT-3D",
+      "snippet": "The illustration of the proposed Topology-Aware Diffusion Transformer (TopoDiT-3D) for 3D point cloud generation. TopoDiT-3D initially voxelizes the point clouds, employing the patch operator to generate tokens related to the local point-voxel feature, and the persistence images to generate tokens ..."
+    },
+    {
+      "title": "TopoDiT-3D: Topology-Aware Diffusion Transformer with Bottleneck ...",
+      "url": "https://arxiv.org/pdf/2505.09140",
+      "snippet": "Benefiting from the simple yet effective bottleneck framework, TopoDiT-3D can not only integrate global topolog- ical information using persistence images, but also adaptively filter out redundant tokens, and decouple token count from resolution, enhancing the training efficiency and generation capability of the model."
+    }
+  ]
+}

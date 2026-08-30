@@ -1,0 +1,78 @@
+{
+  "schema": 1,
+  "id": "jwg0830/AX-3.1-Light-sft_v3_1b_0.5",
+  "slug": "jwg0830-ax-3-1-light-sft_v3_1b_0-5",
+  "author": "jwg0830",
+  "url": "https://huggingface.co/jwg0830/AX-3.1-Light-sft_v3_1b_0.5",
+  "created_at": "2026-08-30T14:16:33.000Z",
+  "updated_at": "2026-08-30T14:24:15.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "ko"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "llama",
+    "text-generation",
+    "lora-merged",
+    "model-soup",
+    "weight-averaging",
+    "korean",
+    "k-ai-leaderboard",
+    "conversational",
+    "ko",
+    "base_model:skt/A.X-3.1-Light",
+    "base_model:finetune:skt/A.X-3.1-Light",
+    "license:other",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 7264800768,
+  "parameters_human": "7.26B",
+  "storage_bytes": 14529635608,
+  "storage_human": "14.5 GB",
+  "base_model": "skt/A.X-3.1-Light",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "jwg0830/AX-3.1-Light-sft_v3_1b_safe · Hugging Face",
+      "url": "https://huggingface.co/jwg0830/AX-3.1-Light-sft_v3_1b_safe",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "jwg0830 (jin won gyu) - Hugging Face",
+      "url": "https://huggingface.co/jwg0830",
+      "snippet": "jwg0830/kanana-1.5-15.7b-a3b-instruct-sft_v0_2 Text Generation • 16B•Updated about 3 hours ago"
+    },
+    {
+      "title": "AX-3.1-Light-sft_v3_0 API & Inference Endpoint | FriendliAI",
+      "url": "https://friendli.ai/models/youngseok12/AX-3.1-Light-sft_v3_0",
+      "snippet": "Run AX-3.1-Light-sft_v3_0 with FriendliAI inference. skt/A.X-3.1-Light를 기반으로 AI Hub 한국어 데이터로 수행한 첫 번째 clean SFT baseline입니다."
+    },
+    {
+      "title": "AX-3.1-Light-sft_v0_1 API & Inference Endpoint | FriendliAI",
+      "url": "https://friendli.ai/models/jwg0830/AX-3.1-Light-sft_v0_1",
+      "snippet": "Deploy AX-3.1-Light-sft_v0_1 with low-latency inference on FriendliAI. Get scalable API serving, high throughput, and production-grade reliability for AI agents."
+    },
+    {
+      "title": "Veo 3.1 | Google AI Studio",
+      "url": "https://aistudio.google.com/models/veo-3",
+      "snippet": "Bring your ideas to life with cinematic 4K and stunning realism. From seamless transitions to precise style controls, it&#x27;s everything you need for consistent, professional storytelling."
+    }
+  ]
+}

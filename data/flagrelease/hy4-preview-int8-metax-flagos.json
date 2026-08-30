@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "FlagRelease/Hy4-preview-INT8-metax-FlagOS",
+  "slug": "flagrelease-hy4-preview-int8-metax-flagos",
+  "author": "FlagRelease",
+  "url": "https://huggingface.co/FlagRelease/Hy4-preview-INT8-metax-FlagOS",
+  "created_at": "2026-08-30T04:50:41.000Z",
+  "updated_at": "2026-08-30T12:33:10.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "zh",
+    "en"
+  ],
+  "tags": [
+    "safetensors",
+    "hy_v4",
+    "zh",
+    "en",
+    "license:apache-2.0",
+    "8-bit",
+    "compressed-tensors",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 779960992733,
+  "parameters_human": "779.96B",
+  "storage_bytes": 790817358999,
+  "storage_human": "790.8 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - Tencent-Hunyuan/Hy4-preview",
+      "url": "https://github.com/Tencent-Hunyuan/Hy4-preview",
+      "snippet": "Hy4 preview is a new-generation Mixture-of-Experts (MoE) flagship model developed by the Tencent Hy Team. The model comprises 770B total parameters, of which 49B are activated per token. The backbone consists of 78 layers, where the first layer uses a standard dense FFN and the remaining 77 layers replace it with MoE, each containing 256 routed experts and 1 shared expert; every token ..."
+    },
+    {
+      "title": "FlagRelease/Hy3-metax-FlagOS · Hugging Face",
+      "url": "https://huggingface.co/FlagRelease/Hy3-metax-FlagOS",
+      "snippet": "FlagOS is a fully open-source system software stack designed to unify the \"model-system-chip\" layers and foster an open, collaborative ecosystem. It enables a \"develop once, run anywhere\" workflow across diverse AI accelerators, unlocking hardware performance, eliminating fragmentation among vendor-specific software stacks, and ..."
+    },
+    {
+      "title": "GitHub - flagos-ai/FlagRelease",
+      "url": "https://github.com/flagos-ai/FlagRelease",
+      "snippet": "Contribute to flagos-ai/FlagRelease development by creating an account on GitHub."
+    },
+    {
+      "title": "FlagRelease (FlagRelease) - Hugging Face",
+      "url": "https://huggingface.co/FlagRelease",
+      "snippet": "Org profile for FlagRelease on Hugging Face, the AI community building the future."
+    },
+    {
+      "title": "FlagRelease Documentation — FlagRelease Documentation",
+      "url": "https://docs.flagos.io/projects/FlagRelease/en/latest/index.html",
+      "snippet": "Getting Started Overview Have a quick view of FlagRelease, and also some basic concepts. Learn more » FlagRelease Overview Model List Lists the FlagOS hardware-specific versions of open-source large models. Learn more » Model List Release Guide Complete workflow for evaluating and releasing large..."
+    }
+  ]
+}

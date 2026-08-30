@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "harshaljanjani/gte-multilingual-mlm-base-hf",
+  "slug": "harshaljanjani-gte-multilingual-mlm-base-hf",
+  "author": "harshaljanjani",
+  "url": "https://huggingface.co/harshaljanjani/gte-multilingual-mlm-base-hf",
+  "created_at": "2026-08-30T14:33:54.000Z",
+  "updated_at": "2026-08-30T14:34:07.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "fill-mask",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gte",
+    "fill-mask",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 306210496,
+  "parameters_human": "306.2M",
+  "storage_bytes": 629519894,
+  "storage_human": "630 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "harshaljanjani/gte-multilingual-reranker-base-hf · Hugging Face",
+      "url": "https://huggingface.co/harshaljanjani/gte-multilingual-reranker-base-hf",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Alibaba-NLP/gte-multilingual-mlm-base · Hugging Face",
+      "url": "https://huggingface.co/Alibaba-NLP/gte-multilingual-mlm-base",
+      "snippet": "gte-multilingual-mlm-base We introduce mGTE series, new generalized text encoder, embedding and reranking models that support 75 languages and the context length of up to 8192. The models are built upon the transformer++ encoder backbone (BERT + RoPE + GLU, code refer to Alibaba-NLP/new-impl) as well as the vocabulary of XLM-R."
+    },
+    {
+      "title": "gte-multilingual-mlm-base · Models",
+      "url": "https://www.modelscope.cn/models/iic/gte-multilingual-mlm-base",
+      "snippet": "gte-multilingual-mlm-base We introduce mGTE series, new generalized text encoder, embedding and reranking models that support 75 languages and the context length of up to 8192. The models are built upon the transformer++ encoder backbone (BERT + RoPE + GLU, code refer to Alibaba-NLP/new-impl) as well as the vocabulary of XLM-R."
+    },
+    {
+      "title": "gte-multilingual-base: Text-to-Text model — overview, use cases ...",
+      "url": "https://www.aimodels.fyi/models/huggingFace/gte-multilingual-base-alibaba-nlp",
+      "snippet": "Overview gte-multilingual-base is a 305M parameter text embedding model developed by Alibaba-NLP that generates 768-dimensional dense vectors for multilingual text retrieval and semantic similarity tasks. Built on an encoder-only transformer architecture rather than decode-only LLM design, this model achieves 10x faster inference speed compared to previous GTE models while maintaining state-of ..."
+    },
+    {
+      "title": "gte-multilingual-mlm-base Open-source Multilingual Text Encoder ...",
+      "url": "https://model.aibase.com/models/details/1927650043700187136",
+      "snippet": "🚀 gte-multilingual-mlm-base We introduce the mGTE series, a new set of generalized text encoder, embedding, and reranking models. These models support 75 languages and can handle a context length of up to 8192."
+    }
+  ]
+}

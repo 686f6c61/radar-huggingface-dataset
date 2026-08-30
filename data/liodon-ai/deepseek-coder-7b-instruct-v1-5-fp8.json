@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "liodon-ai/deepseek-coder-7b-instruct-v1.5-FP8",
+  "slug": "liodon-ai-deepseek-coder-7b-instruct-v1-5-fp8",
+  "author": "liodon-ai",
+  "url": "https://huggingface.co/liodon-ai/deepseek-coder-7b-instruct-v1.5-FP8",
+  "created_at": "2026-08-30T17:38:28.000Z",
+  "updated_at": "2026-08-30T18:24:59.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "llama",
+    "text-generation",
+    "fp8",
+    "compressed-tensors",
+    "vllm",
+    "quantized",
+    "conversational",
+    "base_model:deepseek-ai/deepseek-coder-7b-instruct-v1.5",
+    "base_model:quantized:deepseek-ai/deepseek-coder-7b-instruct-v1.5",
+    "license:other",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 6910365696,
+  "parameters_human": "6.91B",
+  "storage_bytes": 7752083576,
+  "storage_human": "7.8 GB",
+  "base_model": "deepseek-ai/deepseek-coder-7b-instruct-v1.5",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "deepseek-ai/deepseek-coder-7b-instruct-v1.5 · Hugging Face",
+      "url": "https://huggingface.co/deepseek-ai/deepseek-coder-7b-instruct-v1.5",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "liodon-ai/deepseek-coder-6.7b-instruct-FP8 · Hugging Face",
+      "url": "https://huggingface.co/liodon-ai/deepseek-coder-6.7b-instruct-FP8",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "deepseek-coder-7b-instruct-v1.5 · Models",
+      "url": "https://www.modelscope.cn/models/deepseek-ai/deepseek-coder-7b-instruct-v1.5",
+      "snippet": "4. License This code repository is licensed under the MIT License. The use of DeepSeek Coder models is subject to the Model License. DeepSeek Coder supports commercial use. See the LICENSE-MODEL for more details. 5. Contact If you have any questions, please raise an issue or contact us at service@deepseek.com."
+    },
+    {
+      "title": "GitHub - deepseek-ai/DeepSeek-Coder: DeepSeek Coder: Let the Code Write ...",
+      "url": "https://github.com/deepseek-ai/deepseek-coder",
+      "snippet": "You are an AI programming assistant, utilizing the DeepSeek Coder model, developed by DeepSeek Company, and you only answer questions related to computer science. For politically sensitive questions, security and privacy issues, and other non-computer science questions, you will refuse to answer."
+    },
+    {
+      "title": "DeepSeek Coder:",
+      "url": "https://deepseekcoder.github.io/",
+      "snippet": "DeepSeek Coder comprises a series of code language models trained from scratch on both 87% code and 13% natural language in English and Chinese, with each model pre-trained on 2T tokens."
+    }
+  ]
+}

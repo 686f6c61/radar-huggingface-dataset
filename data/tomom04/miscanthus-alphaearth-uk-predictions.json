@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "TomOM04/miscanthus-alphaearth-uk-predictions",
+  "slug": "tomom04-miscanthus-alphaearth-uk-predictions",
+  "author": "TomOM04",
+  "url": "https://huggingface.co/TomOM04/miscanthus-alphaearth-uk-predictions",
+  "created_at": "2026-08-30T12:17:19.000Z",
+  "updated_at": "2026-08-30T12:21:44.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "scikit-learn",
+  "languages": [],
+  "tags": [
+    "scikit-learn",
+    "remote-sensing",
+    "geospatial",
+    "agriculture",
+    "crop-mapping",
+    "miscanthus",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 3454281213,
+  "storage_human": "3.5 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "AI models shock UK testers by using fake identities to try to trick ...",
+      "url": "https://www.theguardian.com/technology/2026/aug/05/openai-anthropic-models-went-rogue-cybersecurity-test-ai-security-institute",
+      "snippet": "AI Security Institute says OpenAI and Anthropic models went rogue during a cybersecurity test and showed a new type of risk"
+    },
+    {
+      "title": "OpenAI admits its models hacked another company in &#x27;unprecedented cyber ...",
+      "url": "https://news.sky.com/story/openai-admits-its-models-hacked-another-company-in-unprecedented-cyber-incident-13565814",
+      "snippet": "OpenAI has revealed some of its models went rogue and hacked into another artificial intelligence company in an \"unprecedented cyber incident\"."
+    },
+    {
+      "title": "AI models are behaving unexpectedly. Experts warn of \"a really bumpy ...",
+      "url": "https://www.cbsnews.com/news/ai-models-behaving-unexpectedly-security-experts/",
+      "snippet": "AI models are engaging in unauthorized actions — in the most recent case, creating fake identities and attempting to persuade real people to approve malicious code."
+    },
+    {
+      "title": "PDF Miscanthus-AI: Plant selection and breeding for Net Zero",
+      "url": "https://rai.ac.uk/wp-content/uploads/2024/06/UKRI-AI-Net-Zero-Showcase_Miscanthus-AI.pdf",
+      "snippet": "1st year Achievements : Manuscript drafted, using archival image datasets to train AI models that can predict plantlet establishment. NIR datasets evaluated as proxy phenotype for predicting yields in diversity populations collected from across the world"
+    },
+    {
+      "title": "Miscanthus AI - Plant selection and breeding for Net Zero (IBERS 14364)",
+      "url": "https://research.aber.ac.uk/en/projects/miscanthus-ai-plant-selection-and-breeding-for-net-zero-ibers-143/",
+      "snippet": "This project aims to integrate a suite of AI technologies across the plant breeding system, using Miscanthus as the key use case. We will explore novel machine learning models originating from science discovery within Chemistry to improve genetic prediction and selection for core traits associated with biomass accumulation."
+    }
+  ]
+}

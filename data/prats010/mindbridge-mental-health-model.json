@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "prats010/mindbridge-mental-health-model",
+  "slug": "prats010-mindbridge-mental-health-model",
+  "author": "prats010",
+  "url": "https://huggingface.co/prats010/mindbridge-mental-health-model",
+  "created_at": "2026-03-20T01:09:59.000Z",
+  "updated_at": "2026-08-30T12:28:14.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "blenderbot",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 5,
+  "trending_score": 0,
+  "parameters": 395561288,
+  "parameters_human": "395.6M",
+  "storage_bytes": 9622598370,
+  "storage_human": "9.6 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - prats010/mindbridge-v2",
+      "url": "https://github.com/prats010/mindbridge-v2",
+      "snippet": "🌟 What is MindBridge? MindBridge is a free, AI-powered mental health support platform built specifically for India. With 150 million Indians needing mental health care but only 0.3 psychiatrists per 100,000 people, access to support is a crisis in itself."
+    },
+    {
+      "title": "prats010 (Prathamesh Bhamare) - Hugging Face",
+      "url": "https://huggingface.co/prats010",
+      "snippet": "Mindbridge Chat 💬 Chat with a supportive mental‑health companion prats010 Mar 21 models3"
+    },
+    {
+      "title": "Mindbridge Chat - a Hugging Face Space by prats010",
+      "url": "https://huggingface.co/spaces/prats010/mindbridge-chat",
+      "snippet": "Type your feelings or concerns into the text box and receive a friendly, empathetic reply that includes practical coping tips. If the message contains crisis‑related words, the app instantly shares..."
+    },
+    {
+      "title": "GitHub - WWIIITT/MindBridge: Campus mental-health AI assistant with ...",
+      "url": "https://github.com/WWIIITT/MindBridge/tree/main",
+      "snippet": "Campus mental-health AI assistant with multi-agent chat, RAG knowledge retrieval, streaming responses, risk assessment, reports, and counselor alerts. - WWIIITT/MindBridge"
+    },
+    {
+      "title": "PDF MindBridge: An AI-Powered Anonymous Peer Mental Health Support Platform ...",
+      "url": "https://ijirmet.com/vol11/2026/issue3/29.pdf",
+      "snippet": "This paper presents MindBridge, an AI-powered anonymous peer mental health support platform that enables real-time, stigma-free conversations among users while continuously monitoring message content for crisis signals."
+    }
+  ]
+}

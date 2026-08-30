@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "iteratehack/snow-rl-baseline",
+  "slug": "iteratehack-snow-rl-baseline",
+  "author": "iteratehack",
+  "url": "https://huggingface.co/iteratehack/snow-rl-baseline",
+  "created_at": "2026-08-30T06:55:54.000Z",
+  "updated_at": "2026-08-30T19:44:33.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "reinforcement-learning",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "reinforcement-learning",
+    "locomotion",
+    "mujoco",
+    "robotics",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 541875847,
+  "storage_human": "542 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "iteratehack (Iterate) - Hugging Face",
+      "url": "https://huggingface.co/iteratehack",
+      "snippet": "Org profile for Iterate on Hugging Face, the AI community building the future."
+    },
+    {
+      "title": "Stable-Baselines3 Docs - Reliable Reinforcement Learning ...",
+      "url": "https://stable-baselines3.readthedocs.io/",
+      "snippet": "RL Baselines3 Zoo provides a collection of pre-trained agents, scripts for training, evaluating agents, tuning hyperparameters, plotting results, and recording videos."
+    },
+    {
+      "title": "GitHub - DLR-RM/stable-baselines3: PyTorch version of Stable Baselines ...",
+      "url": "https://github.com/DLR-RM/stable-baselines3",
+      "snippet": "PyTorch version of Stable Baselines, reliable implementations of reinforcement learning algorithms. - GitHub - DLR-RM/stable-baselines3: PyTorch version of Stable Baselines, reliable implementations of reinforcement learning algorithms."
+    },
+    {
+      "title": "RL Baselines3 Zoo: A Training Framework for Stable Baselines3 ...",
+      "url": "https://github.com/DLR-RM/rl-baselines3-zoo",
+      "snippet": "RL Baselines3 Zoo is a training framework for Reinforcement Learning (RL), using Stable Baselines3. It provides scripts for training, evaluating agents, tuning hyperparameters, plotting results and recording videos."
+    },
+    {
+      "title": "Examples — Stable Baselines3 2.9.1a1 documentation",
+      "url": "https://stable-baselines3.readthedocs.io/en/master/guide/examples.html",
+      "snippet": "Accessing and modifying model parameters You can access model&#x27;s parameters via set_parameters and get_parameters functions, or via model.policy.state_dict () (and load_state_dict ()), which use dictionaries that map variable names to PyTorch tensors."
+    }
+  ]
+}

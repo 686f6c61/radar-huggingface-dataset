@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "nyxia/H3-Loras",
+  "slug": "nyxia-h3-loras",
+  "author": "nyxia",
+  "url": "https://huggingface.co/nyxia/H3-Loras",
+  "created_at": "2026-08-09T22:43:37.000Z",
+  "updated_at": "2026-08-30T18:13:19.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-video",
+  "library": "minimax-h3",
+  "languages": [],
+  "tags": [
+    "minimax-h3",
+    "lora",
+    "text-to-video",
+    "audio-video",
+    "base_model:MiniMaxAI/MiniMax-H3",
+    "base_model:adapter:MiniMaxAI/MiniMax-H3",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 3,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 7105550144,
+  "storage_human": "7.1 GB",
+  "base_model": "MiniMaxAI/MiniMax-H3",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "nyxia/H3-Loras · Hugging Face",
+      "url": "https://huggingface.co/nyxia/H3-Loras",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "README.md · nyxia/H3-Loras at main - Hugging Face",
+      "url": "https://huggingface.co/nyxia/H3-Loras/blob/main/README.md",
+      "snippet": "Instructions to use nyxia/H3-Loras with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Inference Inference Providers Notebooks Google Colab Kaggle main H3-Loras /README.md nyxia Upload README.md with huggingface_hub 7fd82be verified9 days ago preview code | Raw Download with hf CLI Copy download link History Blame Contribute Delete 1.42 kB metadata"
+    },
+    {
+      "title": "MiniMax H3 Turbo LoRA: Faster Local Video Gen in ComfyUI",
+      "url": "https://www.mindstudio.ai/blog/minimax-h3-turbo-lora-comfyui-local",
+      "snippet": "MiniMax H3 Turbo LoRA cuts local video generation from 20 steps to 6 in ComfyUI. Here&#x27;s what it is, what it needs, and how to set it up."
+    },
+    {
+      "title": "Cinematic Style LoRA + Detail Enhancer for MiniMax H3",
+      "url": "https://civitai.red/models/2849726/cinematic-style-lora-for-minimax-h3?modelVersionId=3217898",
+      "snippet": "Cinematic Style V2 for MiniMax H3 Cinema V2 is a major expansion of my broad cinematic style LoRA for MiniMax H3. The dataset now contains 1,852 cinematic images with 1,852 matching detailed captions — 3,704 files in total. Version 1 already provided a strong general foundation for realistic film photography, framing, lighting, lens character, depth of field, production design, atmosphere ..."
+    },
+    {
+      "title": "I2VA - MiniMax H3 Turbo + LoRA | TensorHub Art",
+      "url": "https://tensorhub.art/template/1038255566444562630",
+      "snippet": "An optimized Image-to-Video (I2VA) generation tool powered by the MiniMax H3 Turbo framework. This tool gives you enhanced flexibility by allowing you to stack 1 Turbo model with up to 3 additional LoRAs simply by inputting their specific ID numbers."
+    }
+  ]
+}

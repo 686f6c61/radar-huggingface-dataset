@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "congchualong/piper-voices",
+  "slug": "congchualong-piper-voices",
+  "author": "congchualong",
+  "url": "https://huggingface.co/congchualong/piper-voices",
+  "created_at": "2026-08-30T19:11:25.000Z",
+  "updated_at": "2026-08-30T19:13:30.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "onnx",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 698677127,
+  "storage_human": "699 MB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Download Voices | Piper Documentation",
+      "url": "https://tderflinger.github.io/piper-docs/about/voices/download/",
+      "snippet": "Download Voices Arabic (ar_JO, العربية) kareem low - [model] [config] medium - [model] [config] Catalan (ca_ES, Català) upc_ona x_low - [model] [config ..."
+    },
+    {
+      "title": "rhasspy/piper-voices · Hugging Face",
+      "url": "https://huggingface.co/rhasspy/piper-voices",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "piper-voices: Text-to-Audio model — overview, use cases, alternatives",
+      "url": "https://www.aimodels.fyi/models/huggingFace/piper-voices-rhasspy",
+      "snippet": "Overview piper-voices is a collection of pre-trained voice models for the Piper text-to-speech system, maintained by rhasspy. Piper is a lightweight, offline-capable TTS engine designed for edge deployment and resource-constrained environments. The voice collection provides multiple speaker models across different languages and genders that work with Piper&#x27;s vocoder-based architecture. The ..."
+    },
+    {
+      "title": "Piper Voices (Full List) - GladeCore",
+      "url": "https://docs.gladecore.com/files/piper-voice-models",
+      "snippet": "Complete list of Piper voice models with ONNX and config links"
+    },
+    {
+      "title": "Piper TTS — Piper AI Voice Generator (49 Voices) | TTS.ai",
+      "url": "https://tts.ai/voices/piper/",
+      "snippet": "A fast, CPU-only neural TTS engine from Rhasspy that runs entirely offline, even on a Raspberry Pi. Try Piper text-to-speech free on TTS.ai — generate and download natural Piper speech online."
+    }
+  ]
+}

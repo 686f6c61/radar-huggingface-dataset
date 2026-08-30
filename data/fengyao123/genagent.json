@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "fengyao123/GenAgent",
+  "slug": "fengyao123-genagent",
+  "author": "fengyao123",
+  "url": "https://huggingface.co/fengyao123/GenAgent",
+  "created_at": "2026-08-28T03:31:42.000Z",
+  "updated_at": "2026-08-30T13:36:32.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "safetensors",
+    "en",
+    "base_model:Qwen/Qwen2.5-VL-7B-Instruct",
+    "base_model:finetune:Qwen/Qwen2.5-VL-7B-Instruct",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 33180258328,
+  "storage_human": "33.2 GB",
+  "base_model": "Qwen/Qwen2.5-VL-7B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "fengyao123 (jiang) - Hugging Face",
+      "url": "https://huggingface.co/fengyao123",
+      "snippet": "adversarial attacks upvoted a paper about 3 hours ago upvoted a paper 3 months ago"
+    },
+    {
+      "title": "GenAgent: Build Collaborative AI Systems with Automated Workflow ...",
+      "url": "https://arxiv.org/pdf/2409.01392v1",
+      "snippet": "Abstract Much previous AI research has focused on developing monolithic models to maximize their intelligence and capability, with the primary goal of enhancing performance on specific tasks. In contrast, this paper explores an alternative approach: collaborative AI systems that use workflows to integrate models, data sources, and pipelines to solve complex and diverse tasks. We introduce ..."
+    },
+    {
+      "title": "GenAgent: Build Collaborative AI Systems with Automated Workflow ...",
+      "url": "https://www.aimodels.fyi/papers/arxiv/comfybench-benchmarking-llm-based-agents-comfyui-autonomously",
+      "snippet": "Conclusion This paper introduces a novel approach to building AI systems, moving away from monolithic models and towards collaborative, workflow-based architectures. The GenAgent framework leverages large language models to automatically generate complex workflows, offering greater flexibility and scalability."
+    },
+    {
+      "title": "GitHub - genagent/gen_agent_openai · GitHub",
+      "url": "https://github.com/genagent/gen_agent_openai",
+      "snippet": "HTTP-direct OpenAI backend for GenAgent, built on Req. Provides GenAgent.Backends.OpenAI, which talks directly to the OpenAI Responses API (POST /v1/responses) and translates the response into the normalized GenAgent.Event values the state machine consumes. Unlike the CLI-backed backends (gen_agent_claude, gen_agent_codex), this backend: Talks HTTP, not a subprocess Has no tool use by default ..."
+    },
+    {
+      "title": "[2601.18543] GenAgent: Scaling Text-to-Image Generation via Agentic ...",
+      "url": "https://arxiv.org/abs/2601.18543",
+      "snippet": "We introduce GenAgent, unifying visual understanding and generation through an agentic multimodal model. Unlike unified models that face expensive training costs and understanding-generation trade-offs, GenAgent decouples these capabilities through an agentic framework: understanding is handled by the multimodal model itself, while generation is achieved by treating image generation models as ..."
+    }
+  ]
+}

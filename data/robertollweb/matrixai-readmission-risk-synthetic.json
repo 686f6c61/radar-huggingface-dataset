@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "robertollweb/matrixai-readmission-risk-synthetic",
+  "slug": "robertollweb-matrixai-readmission-risk-synthetic",
+  "author": "robertollweb",
+  "url": "https://huggingface.co/robertollweb/matrixai-readmission-risk-synthetic",
+  "created_at": "2026-08-30T19:08:25.000Z",
+  "updated_at": "2026-08-30T19:08:28.000Z",
+  "license": "agpl-3.0",
+  "license_family": "oss",
+  "pipeline_tag": "tabular-classification",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "onnx",
+    "matrixai",
+    "tabular-classification",
+    "auditable-ai",
+    "reproducibility",
+    "provenance",
+    "synthetic-data",
+    "not-for-clinical-use",
+    "not-a-medical-device",
+    "tripod-ai-report",
+    "license:agpl-3.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 3966,
+  "storage_human": "3966 B",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - robertollweb/matrixAI: MatrixAI: auditable AI models from ...",
+      "url": "https://github.com/robertollweb/matrixAI",
+      "snippet": "MatrixAI: auditable AI models from prompts. Contribute to robertollweb/matrixAI development by creating an account on GitHub."
+    },
+    {
+      "title": "Rober robertollweb - GitHub",
+      "url": "https://github.com/robertollweb",
+      "snippet": "Add an optional note Maximum 250 characters. Please don&#x27;t include any personal information such as legal names or email addresses. Markdown is supported. This note will only be visible to you. Block user matrixAI matrixAI Public"
+    },
+    {
+      "title": "matrixai-core · PyPI",
+      "url": "https://pypi.org/project/matrixai-core/",
+      "snippet": "MatrixAI MatrixAI is a language for AI, not for humans. Describe a model in a prompt, train it, audit every decision it makes, and deploy it where trust is not optional. Models are not black boxes — they are auditable programs: explicit inputs, explicit transformations, explicit outputs, explicit audit trail. Every decision is traceable to a named node in the computation graph. That is the ..."
+    },
+    {
+      "title": "Machine learning for predicting readmission risk among the frail ...",
+      "url": "https://www.sciencedirect.com/science/article/pii/S2666389921002622",
+      "snippet": "Healthcare costs due to unplanned readmissions are high and negatively affect health and wellness of patients. Hospital readmission is an undesirable outcome for elderly patients. Here, we present readmission risk prediction using five machine learning approaches for predicting 30-day unplanned readmission for elderly patients (age ≥ 50 years)."
+    },
+    {
+      "title": "The Role of Machine Learning in Predicting Hospital Readmissions Among ...",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12187041/",
+      "snippet": "Hospital readmissions contribute significantly to healthcare costs. While traditional regression models for predicting 30-day readmission risk offer modest accuracy, machine learning (ML) presents an opportunity to capture complex relationships in ..."
+    }
+  ]
+}

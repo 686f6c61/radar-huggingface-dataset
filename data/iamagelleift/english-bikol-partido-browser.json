@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "iamagelleift/english-bikol-partido-browser",
+  "slug": "iamagelleift-english-bikol-partido-browser",
+  "author": "iamagelleift",
+  "url": "https://huggingface.co/iamagelleift/english-bikol-partido-browser",
+  "created_at": "2026-08-30T18:44:02.000Z",
+  "updated_at": "2026-08-30T18:57:20.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "translation",
+  "library": "transformers.js",
+  "languages": [
+    "en",
+    "bcl"
+  ],
+  "tags": [
+    "transformers.js",
+    "onnx",
+    "marian",
+    "text2text-generation",
+    "translation",
+    "browser",
+    "q8",
+    "en",
+    "bcl",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 224201850,
+  "storage_human": "224 MB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Bicol to Tagalog Vocabulary Guide | PDF - Scribd",
+      "url": "https://www.scribd.com/document/184315557/Bikol-Bokabolaryo",
+      "snippet": "This document provides Bikol-English vocabulary translations in three sentences or less. It includes Bikol words with English translations for parts of speech, verbs, nouns, adjectives and other word types. The document is authored by Gil L. Gregorio and provides over 150 Bikol-English translations in a dictionary-style format."
+    },
+    {
+      "title": "Bikol Translator — Bicol / Bicolano ↔ English | Polytranslator",
+      "url": "https://www.polytranslator.com/bikol/",
+      "snippet": "Free Bikol translator. Translate Bikol text, documents, and speech to English, Tagalog, Cebuano, and 395+ more. Also known as Bicol translator, translate in Bicol, Bicol to English. AI-powered translation that&#x27;s fast and accurate."
+    },
+    {
+      "title": "AI Girlfriend — Chat, Roleplay, Image & Video | Kales.ai",
+      "url": "https://www.kales.ai/en/",
+      "snippet": "Chat with your AI girlfriend, roleplay interactive stories, generate images & videos, or create your own — free on Kales. No sign-up, online 24/7."
+    },
+    {
+      "title": "‎Google Gemini",
+      "url": "https://gemini.google.com/",
+      "snippet": "Get assistance with writing, planning, learning, and more from Google AI."
+    },
+    {
+      "title": "English To Bikol Translator | Free AI-Powered Tool | TranslatorMind",
+      "url": "https://translatormind.com/translator-tool/english-to-bikol-translator/",
+      "snippet": "AI Proofreader Polish your text to perfection - ensure clear, accurate, and natural writing with AI-powered proofreading."
+    }
+  ]
+}

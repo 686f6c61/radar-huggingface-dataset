@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "PrinceAlhassanNasamu/tekyerema-tts-twi",
+  "slug": "princealhassannasamu-tekyerema-tts-twi",
+  "author": "PrinceAlhassanNasamu",
+  "url": "https://huggingface.co/PrinceAlhassanNasamu/tekyerema-tts-twi",
+  "created_at": "2026-08-29T15:19:29.000Z",
+  "updated_at": "2026-08-30T14:45:48.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-to-audio",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "vits",
+    "text-to-audio",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 36289776,
+  "parameters_human": "36.3M",
+  "storage_bytes": 145251448,
+  "storage_human": "145 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "PrinceAlhassanNasamu (Prince Nasamu Alhassan) - Hugging Face",
+      "url": "https://huggingface.co/PrinceAlhassanNasamu",
+      "snippet": "AI & ML interests ... Recent Activity updated a model about 5 hours ago ... liked a model about 6 hours ago ... updated a Space 4 days ago"
+    },
+    {
+      "title": "PrinceAlhassanNasamu/tekyerema-tts-kus at main - Hugging Face",
+      "url": "https://huggingface.co/PrinceAlhassanNasamu/tekyerema-tts-kus/tree/main",
+      "snippet": "PrinceAlhassanNasamu / tekyerema-tts-kus like 0 Text-to-Audio Transformers Safetensors vits arxiv:1910.09700 Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "Meta&#x27;s Twi TTS Model Lands on Modelers.cn - aichina.news",
+      "url": "https://aichina.news/blog/metas-twi-tts-model-lands-on-modelers-cn-a-useful-building-block-for-iskpmn/",
+      "snippet": "A new open-weight TTS model for Twi (language code twe), derived from Meta&#x27;s Massively Multilingual Speech (MMS) project, has been published on Modelers.cn, the Huawei/Ascend AI ecosystem platform. For developers working on Twi-language voice assistants, IVR systems, or accessibility tools, this is a welcome addition to a very sparse landscape."
+    },
+    {
+      "title": "Prince Nasamu Alhassan - EGA Mentorship",
+      "url": "https://www.egamentorship.org/in/prince-nasamu-alhassan-8c8713",
+      "snippet": "The dataset and model are published on HuggingFace (PrinceAlhassanNasamu) and affiliated with GhanaNLP. That&#x27;s how I think about data science — as infrastructure for communities that don&#x27;t have it yet."
+    },
+    {
+      "title": "#kusaal #bawku #uppereastregion #bawku #uppereast #kusaal # ... - LinkedIn",
+      "url": "https://www.linkedin.com/posts/alhassan-prince_kusaal-bawku-uppereastregion-activity-7465548391780081664-Rpz5",
+      "snippet": "I just built a machine translation model for #Kusaal. Kusaal is my mother tongue. I grew up speaking it in #Bawku, #UpperEastRegion of Ghana. About 400,000 people speak it — across northern ..."
+    }
+  ]
+}

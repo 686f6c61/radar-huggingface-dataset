@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "AgentNativeResearchLab/Qwen3.5-9B-PULP-DAPT",
+  "slug": "agentnativeresearchlab-qwen3-5-9b-pulp-dapt",
+  "author": "AgentNativeResearchLab",
+  "url": "https://huggingface.co/AgentNativeResearchLab/Qwen3.5-9B-PULP-DAPT",
+  "created_at": "2026-08-30T17:14:32.000Z",
+  "updated_at": "2026-08-30T19:07:21.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "safetensors",
+    "qwen3_5",
+    "hardware",
+    "rtl",
+    "chip-design",
+    "domain-adaptive-pretraining",
+    "pulp-platform",
+    "knowledge-injection",
+    "en",
+    "base_model:Qwen/Qwen3.5-9B-Base",
+    "base_model:finetune:Qwen/Qwen3.5-9B-Base",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 9409813744,
+  "parameters_human": "9.41B",
+  "storage_bytes": 18839711717,
+  "storage_human": "18.8 GB",
+  "base_model": "Qwen/Qwen3.5-9B-Base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - ARA-Labs/PULP-LLM",
+      "url": "https://github.com/ARA-Labs/PULP-LLM",
+      "snippet": "A 9B open model that knows a real SoC platform better than Claude Opus 5. After 77 GPU-minutes of continued pretraining, it answers closed-book factual questions about the PULP chip platform at 81.6% vs Opus 5&#x27;s 72.2% (base model: 41.2%) on a 1,776-question benchmark — and on pure register-map recall it reaches 97% where Opus manages 28%. The score is not the point — the recipe is ..."
+    },
+    {
+      "title": "Qwen/Qwen3.5-9B · Hugging Face",
+      "url": "https://huggingface.co/Qwen/Qwen3.5-9B",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Qwen3.5 9B model | Bitcoin.com AI",
+      "url": "https://ai.bitcoin.com/models/text/qwen/qwen3.5-9b",
+      "snippet": "Qwen3.5 9B is a multimodal foundation model from the Qwen 3.5 family, built for efficient reasoning, coding, and visual understanding in a compact 9B architecture."
+    },
+    {
+      "title": "Qwen3.5-9B — Qwen | AI Model Details | Neura | Neura Market",
+      "url": "https://www.neura.market/models/qwen-qwen3-5-9b",
+      "snippet": "Qwen3.5-9B is a multimodal foundation model from the Qwen3.5 family, designed to deliver strong reasoning, coding, and visual understanding in an efficient 9B-parameter architecture."
+    },
+    {
+      "title": "Qwen3.5 9B - Jetson AI Lab",
+      "url": "https://www.jetson-ai-lab.com/models/qwen3-5-9b/",
+      "snippet": "Qwen3.5 9B is a dense vision-language model in the Qwen3.5 family aimed at stronger reasoning, visual understanding, and agentic behavior on Jetson. This entry uses a W4A16 checkpoint on Jetson Orin and an NVFP4 checkpoint on Jetson Thor."
+    }
+  ]
+}

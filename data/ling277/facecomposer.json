@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "Ling277/FaceComposer",
+  "slug": "ling277-facecomposer",
+  "author": "Ling277",
+  "url": "https://huggingface.co/Ling277/FaceComposer",
+  "created_at": "2026-08-30T13:20:18.000Z",
+  "updated_at": "2026-08-30T13:42:52.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-image",
+  "library": "diffusers",
+  "languages": [],
+  "tags": [
+    "diffusers",
+    "text-to-image",
+    "lora",
+    "template:diffusion-lora",
+    "base_model:black-forest-labs/FLUX.1-Fill-dev",
+    "base_model:adapter:black-forest-labs/FLUX.1-Fill-dev",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1866786863,
+  "storage_human": "1.9 GB",
+  "base_model": "black-forest-labs/FLUX.1-Fill-dev",
+  "formats": [
+    "diffusers"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "FaceComposer: A Unified Model for Versatile Facial Content Creation",
+      "url": "https://openreview.net/pdf?id=xrK3QA9mLo",
+      "snippet": "2) CollDiff uses multiple diffusion models (one model for one condition), leading to low eficiency in training and inference stage. 3) FaceComposer only use one diffusion model in a unified framework, and can finish different facial creation combinations in one model inference. Face animation."
+    },
+    {
+      "title": "FaceComposer: A Unified Model for Versatile Facial Content Creation - NIPS",
+      "url": "https://papers.nips.cc/paper_files/paper/2023/hash/2b4caf39e645680f826ae0a9e7ae9402-Abstract-Conference.html",
+      "snippet": "Abstract This work presents FaceComposer, a unified generative model that accomplishes a variety of facial content creation tasks, including text-conditioned face synthesis, text-guided face editing, face animation etc. Based on the latent diffusion framework, FaceComposer follows the paradigm of compositional generation and employs diverse face-specific conditions, e.g., Identity Feature and ..."
+    },
+    {
+      "title": "FaceComposer | Proceedings of the 37th International Conference on ...",
+      "url": "https://dl.acm.org/doi/10.5555/3666122.3666714",
+      "snippet": "This work presents FaceComposer, a unified generative model that accomplishes a variety of facial content creation tasks, including text-conditioned face synthesis, text-guided face editing, face animation etc. Based on the latent diffusion framework, FaceComposer follows the paradigm of compositional generation and employs diverse face-specific conditions, e.g., Identity Feature and Projected ..."
+    },
+    {
+      "title": "FaceComposer: A Unified Model for Versatile Facial Content Creation",
+      "url": "https://openreview.net/forum?id=xrK3QA9mLo",
+      "snippet": "This work presents FaceComposer, a unified generative model that accomplishes a variety of facial content creation tasks, including text-conditioned face synthesis, text-guided face editing, face animation etc. Based on the latent diffusion framework, FaceComposer follows the paradigm of compositional generation and employs diverse face-specific conditions, e.g., Identity Feature and Projected ..."
+    },
+    {
+      "title": "PDF FaceComposer: A Unified Model for Versatile Facial Content ... - NeurIPS",
+      "url": "https://proceedings.neurips.cc/paper_files/paper/2023/file/2b4caf39e645680f826ae0a9e7ae9402-Paper-Conference.pdf",
+      "snippet": "2) CollDiff uses multiple diffusion models (one model for one condition), leading to low eficiency in training and inference stage. 3) FaceComposer only use one diffusion model in a unified framework, and can finish different facial creation combinations in one model inference. Face animation."
+    }
+  ]
+}

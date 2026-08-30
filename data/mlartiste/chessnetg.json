@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "MLArtiste/ChessNetG",
+  "slug": "mlartiste-chessnetg",
+  "author": "MLArtiste",
+  "url": "https://huggingface.co/MLArtiste/ChessNetG",
+  "created_at": "2026-08-30T15:52:18.000Z",
+  "updated_at": "2026-08-30T18:11:05.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 4780363581,
+  "storage_human": "4.8 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "MLArtiste/ChessNet · Hugging Face",
+      "url": "https://huggingface.co/MLArtiste/ChessNet",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "MLArtiste/ChessNet at main - Hugging Face",
+      "url": "https://huggingface.co/MLArtiste/ChessNet/tree/main",
+      "snippet": "MLArtiste / ChessNet like 0 License:mit Model card FilesFiles and versions xet Community Copy to bucket new main ChessNet 3.29 GB Ctrl+K Ctrl+K 1 contributor History:3 commits MLArtiste Upload chessnet.pth with huggingface_hub 06615ea verifiedabout 8 hours ago .gitattributes Safe 1.52 kBinitial commitabout 8 hours ago README.md Safe 21 Bytesinitial commitabout 8 hours ago checkpoint.pth 2.47 ..."
+    },
+    {
+      "title": "GitHub - CSSLab/maia-chess: Maia is a human-like neural network chess ...",
+      "url": "https://github.com/CSSLab/maia-chess",
+      "snippet": "Aligning Superhuman AI with Human Behavior: Chess as a Model System website / paper / code / lichess 🆕♟️🤖🚀 Maia-3 is now available! The state of the art in human chess modeling built with our new Chessformer architecture. Outperforms all prior models with significantly fewer parameters."
+    },
+    {
+      "title": "MLArtiste/ChessNets at main - Hugging Face",
+      "url": "https://huggingface.co/MLArtiste/ChessNets/tree/main",
+      "snippet": "MLArtiste / ChessNets like 0 License:mit Model card FilesFiles and versions xet Community Copy to bucket new main ChessNets 1.54 kB Ctrl+K Ctrl+K 1 contributor History:1 commit MLArtiste initial commit cd915eb verified5 days ago .gitattributes Safe 1.52 kBinitial commit5 days ago README.md Safe 21 Bytesinitial commit5 days ago"
+    },
+    {
+      "title": "MLArtiste/ChessNet2 · Hugging Face",
+      "url": "https://huggingface.co/MLArtiste/ChessNet2",
+      "snippet": "MLArtiste / ChessNet2 like 0 License:mit Model card FilesFiles and versions xet Community Copy to bucket new"
+    }
+  ]
+}

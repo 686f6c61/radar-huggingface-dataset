@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "Impiotrszymanski/survey-text-image-retrieval48",
+  "slug": "impiotrszymanski-survey-text-image-retrieval48",
+  "author": "Impiotrszymanski",
+  "url": "https://huggingface.co/Impiotrszymanski/survey-text-image-retrieval48",
+  "created_at": "2026-08-30T15:39:13.000Z",
+  "updated_at": "2026-08-30T15:39:21.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "transformer",
+    "research-notes",
+    "text-image-retrieval",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 33088,
+  "parameters_human": "33088",
+  "storage_bytes": 132832,
+  "storage_human": "132832 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Text to Image Generation and Editing: A Survey - arXiv.org",
+      "url": "https://arxiv.org/html/2505.02527v1",
+      "snippet": "To explore whether dataset size and model size are limiting factors in model generation capabilities, DALL-E (Ramesh et al. 2021) trains a transformer (Vaswani et al. 2017) with 12B parameters on 250M text-image pairs, allowing for flexible, high-fidelity generation."
+    },
+    {
+      "title": "A Survey of Text-to-Image Diffusion Models in Generative AI",
+      "url": "https://ieeexplore.ieee.org/document/10463372",
+      "snippet": "From dreamscapes to photorealistic portraits, text-to-image generation pushes the boundaries of AI creativity. This survey navigates diverse techniques, such as GANs, VAEs, and Diffusion models, uncovering their potential for transforming textual descriptions into captivating visuals. These models have significantly advanced the field, but they are not without their limitations. One notable ..."
+    },
+    {
+      "title": "[2505.02527] Text to Image Generation and Editing: A Survey",
+      "url": "https://arxiv.org/abs/2505.02527",
+      "snippet": "Text-to-image generation (T2I) refers to the text-guided generation of high-quality images. In the past few years, T2I has attracted widespread attention and numerous works have emerged. In this survey, we comprehensively review 141 works conducted from 2021 to 2024. First, we introduce four foundation model architectures of T2I (autoregression, non-autoregression, GAN and diffusion) and the ..."
+    },
+    {
+      "title": "Imagen: Text-to-Image Diffusion Models",
+      "url": "https://imagen.research.google/",
+      "snippet": "Imagen is an AI system that creates photorealistic images from input text Visualization of Imagen. Imagen uses a large frozen T5-XXL encoder to encode the input text into embeddings. A conditional diffusion model maps the text embedding into a 64×64 image."
+    },
+    {
+      "title": "PDF Image-text Retrieval: A Survey on Recent Research and Development - IJCAI",
+      "url": "https://www.ijcai.org/proceedings/2022/0759.pdf",
+      "snippet": "Abstract In the past few years, cross-modal image-text re-trieval (ITR) has experienced increased interest in the research community due to its excellent re-search value and broad real-world application. It is designed for the scenarios where the queries are from one modality and the retrieval galleries from another modality. This paper presents a com-prehensive and up-to-date survey on the ..."
+    }
+  ]
+}

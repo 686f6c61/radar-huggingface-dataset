@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "therayelab/pneumoniamnist-resnet18",
+  "slug": "therayelab-pneumoniamnist-resnet18",
+  "author": "therayelab",
+  "url": "https://huggingface.co/therayelab/pneumoniamnist-resnet18",
+  "created_at": "2026-08-30T14:22:15.000Z",
+  "updated_at": "2026-08-30T14:23:27.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "image-classification",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "tensorboard",
+    "safetensors",
+    "resnet",
+    "image-classification",
+    "autotrain",
+    "dataset:galilai-group/medmnist",
+    "base_model:microsoft/resnet-18",
+    "base_model:finetune:microsoft/resnet-18",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 11187138,
+  "parameters_human": "11.2M",
+  "storage_bytes": 134299069,
+  "storage_human": "134 MB",
+  "base_model": "microsoft/resnet-18",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "AventIQ-AI/ResNet-18-pneumonia-detection · Hugging Face",
+      "url": "https://huggingface.co/AventIQ-AI/ResNet-18-pneumonia-detection",
+      "snippet": "🩺 ResNet-18 Pneumonia Detection Model This repository hosts a fine-tuned ResNet-18-based model optimized for pneumonia detection from chest X-ray images. The model classifies images into two categories: Normal and Pneumonia."
+    },
+    {
+      "title": "Khaleel7-hub/PneumoniaMNIST-resnet18 - GitHub",
+      "url": "https://github.com/Khaleel7-hub/PneumoniaMNIST-resnet18",
+      "snippet": "Tasks: Data Preparation: Use the PneumoniaMNIST dataset, which requires no additional preprocessing. Model Training: Implement and train a ResNet18 model using the provided resources and examples. You can choose to either train from scratch or use transfer learning with preloaded weights."
+    },
+    {
+      "title": "README.md · AventIQ-AI/ResNet-18-pneumonia-detection at main",
+      "url": "https://huggingface.co/AventIQ-AI/ResNet-18-pneumonia-detection/blob/main/README.md",
+      "snippet": "🩺 ResNet-18 Pneumonia Detection Model This repository hosts a fine-tuned ResNet-18-based model optimized for pneumonia detection from chest X-ray images. The model classifies images into two categories: Normal and Pneumonia."
+    },
+    {
+      "title": "GitHub - ErphanRajai/pneumonia-resnet18: Pneumonia detection using ...",
+      "url": "https://github.com/ErphanRajai/pneumonia-resnet18",
+      "snippet": "About Pneumonia detection using ResNet-18 with Grad-CAM heatmaps for explainable medical AI."
+    },
+    {
+      "title": "02-Train_ResNet18.ipynb - Colab",
+      "url": "https://colab.research.google.com/github/kp-algomaster/AIML_Healthcare/blob/main/Labs/Lab3_Pneumonia-Classification/02-Train_ResNet18.ipynb",
+      "snippet": "Now it is time to create the model - We will use the ResNet18 network architecture. As most of the torchvision models, the original ResNet expects a three channel input in conv1."
+    }
+  ]
+}

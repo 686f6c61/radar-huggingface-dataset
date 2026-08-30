@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "Soulfate24/Ornith-1.5-9B-ASHQ1-Remix-GGUF",
+  "slug": "soulfate24-ornith-1-5-9b-ashq1-remix-gguf",
+  "author": "Soulfate24",
+  "url": "https://huggingface.co/Soulfate24/Ornith-1.5-9B-ASHQ1-Remix-GGUF",
+  "created_at": "2026-08-30T11:19:13.000Z",
+  "updated_at": "2026-08-30T12:15:51.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "gguf",
+    "quantization",
+    "ashq1",
+    "imatrix",
+    "text-generation",
+    "base_model:ornith-ai/Ornith-1.5-9B",
+    "base_model:quantized:ornith-ai/Ornith-1.5-9B",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 9197093888,
+  "parameters_human": "9.20B",
+  "storage_bytes": 47365587104,
+  "storage_human": "47.4 GB",
+  "base_model": "ornith-ai/Ornith-1.5-9B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Ornith-1.5 - a ornith-ai Collection - Hugging Face",
+      "url": "https://huggingface.co/collections/ornith-ai/ornith-15",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "ornith-ai/Ornith-1.5-9B-MLX · Hugging Face",
+      "url": "https://huggingface.co/ornith-ai/Ornith-1.5-9B-MLX",
+      "snippet": "Ornith-1.5-9B is a reasoning model: by default the assistant turn opens with a <think> … </think> block before the final answer. The serving recipes below enable a reasoning parser so the chain-of-thought is returned in a separate reasoning_content field, and a tool-call parser so the model&#x27;s <tool_call> blocks are surfaced as OpenAI-style ..."
+    },
+    {
+      "title": "Ornith-1.5: From Self-Scaffolding to Self-Improvement",
+      "url": "https://ornith.ai/ornith_1_5.html",
+      "snippet": "Ornith-1.5 extends the self-scaffolding framework introduced in Ornith-1.0 into a more complete self-improvement loop: the model proposes new tasks, generates task-specific scaffolds, and produces solution rollouts for reinforcement learning, continuously creating new learning experiences from which it can improve."
+    },
+    {
+      "title": "Ornith AI",
+      "url": "https://ornith.ai/",
+      "snippet": "Ornith-1.5: From Self-Scaffolding to Self-Improvement Ornith-1.5 takes a major step toward building foundation models through end-to-end self-improvement, extending the self-scaffolding framework introduced in Ornith-1.0 into a more complete self-improvement loop: the model proposes new tasks, generates task-specific scaffolds, and produces solution rollouts. It spans 397B MoE, 35B MoE, and 9B ..."
+    },
+    {
+      "title": "Ornith-1.5-9B · LLM Releases",
+      "url": "https://www.llm-releases.com/models/ornith-1-5-9b",
+      "snippet": "The smallest model in DeepReinforce&#x27;s Ornith-1.5 family (released 2026-08-19, MIT, weights on Hugging Face): a 9B-parameter dense coding/agent model trained with the family&#x27;s self-improving task-and-scaffold RL loop, and shipped with a quantized &#x27;Ornith-1.5-9B-Mobile&#x27; build that runs on iPhone and Android. Vendor-reported, five-run-averaged figures put it at 47.0 on Terminal-Bench 2.1 and 70.6 ..."
+    }
+  ]
+}

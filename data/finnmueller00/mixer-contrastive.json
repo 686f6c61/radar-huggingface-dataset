@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "FINNMUELLER00/mixer-contrastive",
+  "slug": "finnmueller00-mixer-contrastive",
+  "author": "FINNMUELLER00",
+  "url": "https://huggingface.co/FINNMUELLER00/mixer-contrastive",
+  "created_at": "2026-08-30T16:35:46.000Z",
+  "updated_at": "2026-08-30T16:35:55.000Z",
+  "license": "bsd-3-clause",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "mixer",
+    "pytorch",
+    "contrastive",
+    "license:bsd-3-clause",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 16576,
+  "parameters_human": "16576",
+  "storage_bytes": 66784,
+  "storage_human": "66784 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "FINNMUELLER00 (Finn D. Mueller) - Hugging Face",
+      "url": "https://huggingface.co/FINNMUELLER00",
+      "snippet": "AI & ML interests ... Recent Activity updated a model about 7 hours ago ... published a model about 7 hours ago"
+    },
+    {
+      "title": "FINNMUELLER00 (Finn D. Mueller) - Hugging Face",
+      "url": "https://huggingface.co/FINNMUELLER00/models",
+      "snippet": "FINNMUELLER00&#x27;s models1 Sort: Recently updated FINNMUELLER00/model_727550322_mocov3_large Updated 2 days ago"
+    },
+    {
+      "title": "Mixer AI",
+      "url": "https://mixerai.org/",
+      "snippet": "All top AI models in 1 service. Pay-as-you go!"
+    },
+    {
+      "title": "google-research/local_forward_gradient/train_mixer_contrastive ... - GitHub",
+      "url": "https://github.com/google-research/google-research/blob/master/local_forward_gradient/train_mixer_contrastive.py",
+      "snippet": "google-research / local_forward_gradient / train_mixer_contrastive.py Cannot retrieve latest commit at this time."
+    },
+    {
+      "title": "LLM Leaderboard & AI Model Benchmarks — August 2026",
+      "url": "https://benchlm.ai/",
+      "snippet": "LLM Leaderboard & AI Model Benchmarks — August 2026 Compare frontier AI models by quality, cost, and context. 105 Supported and 123 Estimated models among 406 tracked LLMs — 408 benchmarks, real pricing, and runtime data in one place."
+    }
+  ]
+}

@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "OpenCOReTechnologies/Flash-V1",
+  "slug": "opencoretechnologies-flash-v1",
+  "author": "OpenCOReTechnologies",
+  "url": "https://huggingface.co/OpenCOReTechnologies/Flash-V1",
+  "created_at": "2026-08-30T17:03:50.000Z",
+  "updated_at": "2026-08-30T17:08:05.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "causal-lm",
+    "custom-architecture",
+    "core",
+    "text-generation",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "OpenCORe",
+      "url": "https://opencore.one/",
+      "snippet": "CORe/OpenCORe is an AI chat platform built around alignment. Also made SiderealCompute. Streaming responses, transparent reasoning, image generation, vision analysis, and multi-model support, designed to be the most aligned AI to date."
+    },
+    {
+      "title": "GitHub - OpenImagingLab/FlashVSR: [CVPR 2026] Towards Real-Time ...",
+      "url": "https://github.com/OpenImagingLab/FlashVSR",
+      "snippet": "Nov 2025 — 🎉 FlashVSR v1.1 released: enhanced stability + fidelity Oct 2025 — FlashVSR v1 (initial release): Inference code and model weights are available now! 🎉 Bug Fix (October 21, 2025): Fixed local_attention_mask update logic to prevent artifacts when switching between different aspect ratios during continuous inference. Coming Soon: Dataset release (VSR-120K) for large-scale ..."
+    },
+    {
+      "title": "RekaCore,Flash,andEdge:ASeriesofPowerful MultimodalLanguageModels",
+      "url": "https://arxiv.org/pdf/2404.12387",
+      "snippet": "RekaCore,Flash,andEdge:ASeriesofPowerful MultimodalLanguageModels Reka Core, Flash, and Edge: A Series of Powerful Multimodal Language Models"
+    },
+    {
+      "title": "OpenCores — Prompt to silicon",
+      "url": "https://www.opencores.ai/",
+      "snippet": "Prompt to silicon. A semiconductor lab in your browser. Describe a circuit in plain English and OpenCores generates synthesizable HDL, runs verification, and produces fabrication-ready GDSII."
+    },
+    {
+      "title": "Models.dev - An open-source database of AI models",
+      "url": "https://models.dev/",
+      "snippet": "Models.dev is a comprehensive open-source database of AI model specifications, pricing, and features."
+    }
+  ]
+}

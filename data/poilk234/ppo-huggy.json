@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "poilk234/ppo-Huggy",
+  "slug": "poilk234-ppo-huggy",
+  "author": "poilk234",
+  "url": "https://huggingface.co/poilk234/ppo-Huggy",
+  "created_at": "2026-08-30T12:23:42.000Z",
+  "updated_at": "2026-08-30T12:23:49.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "reinforcement-learning",
+  "library": "ml-agents",
+  "languages": [],
+  "tags": [
+    "ml-agents",
+    "tensorboard",
+    "onnx",
+    "Huggy",
+    "deep-reinforcement-learning",
+    "reinforcement-learning",
+    "ML-Agents-Huggy",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 187486407,
+  "storage_human": "187 MB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Bear-ai/ppo-Huggy · Hugging Face",
+      "url": "https://huggingface.co/Bear-ai/ppo-Huggy",
+      "snippet": "Huggy deep-reinforcement-learning ML-Agents-Huggy Model card Files Files and versions Metrics Training metrics Community Use this model Edit model card ppo Agent playing Huggy Usage (with ML-Agents) Resume the training Watch your Agent play"
+    },
+    {
+      "title": "hou88/ppo-Huggy · Hugging Face",
+      "url": "https://huggingface.co/hou88/ppo-Huggy",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Damacol/byfengwu-ppo-huggy - GitHub",
+      "url": "https://github.com/Damacol/byfengwu-ppo-huggy",
+      "snippet": "byfengwu/ppo-Huggy - Private, Uncensored AI for Real Creators and Devs Private inference with {MODEL}. Zero logs, full prompt freedom, and seamless Venice.ai integration for real creators."
+    },
+    {
+      "title": "ppo-huggy/README.md at main · HusseinEid101/ppo-huggy · GitHub",
+      "url": "https://github.com/HusseinEid101/ppo-huggy/blob/main/README.md",
+      "snippet": "This is a trained model of a ppo agent playing Huggy the dog using the Unity ML-Agents Library. - ppo-huggy/README.md at main · HusseinEid101/ppo-huggy"
+    },
+    {
+      "title": "alkzzz/ppo-Huggy - AI Model Zoo - BimAnt",
+      "url": "https://zoo.bimant.com/model/324130",
+      "snippet": "This is a trained model of a ppo agent playing Huggy using the Unity ML-Agents Library."
+    }
+  ]
+}

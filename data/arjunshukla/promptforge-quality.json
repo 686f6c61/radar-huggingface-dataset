@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "ArjunShukla/PromptForge-Quality",
+  "slug": "arjunshukla-promptforge-quality",
+  "author": "ArjunShukla",
+  "url": "https://huggingface.co/ArjunShukla/PromptForge-Quality",
+  "created_at": "2026-08-30T17:16:27.000Z",
+  "updated_at": "2026-08-30T18:11:30.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "pytorch",
+    "promptforge_quality",
+    "promptforge",
+    "prompt-engineering",
+    "prompt-quality",
+    "modernbert",
+    "regression",
+    "text-classification",
+    "llm",
+    "en",
+    "base_model:answerdotai/ModernBERT-base",
+    "base_model:finetune:answerdotai/ModernBERT-base",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 598492635,
+  "storage_human": "598 MB",
+  "base_model": "answerdotai/ModernBERT-base",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - ArjunPisharody/PromptForge",
+      "url": "https://github.com/ArjunPisharody/PromptForge",
+      "snippet": "The platform automatically creates improved prompt variants, evaluates model responses, scores output quality, and identifies the best-performing prompt using an AI-powered scoring engine. PromptForge demonstrates practical applications of:"
+    },
+    {
+      "title": "PromptForge - ChatGPT Prompt Generator. Stop Guessing.",
+      "url": "https://prompt-forge.studio/",
+      "snippet": "Build better AI prompts and compare OpenAI, Groq, and Claude side-by-side in one click. PromptForge&#x27;s 29-field framework + 3-model comparison shows you which AI gives the best answer. Free preview, or unlock everything with Pro for $5/month."
+    },
+    {
+      "title": "PromptForge — AI Prompt Engineering Tool",
+      "url": "https://welshman.github.io/prompt-forge/",
+      "snippet": "Build, refine, and optimize prompts for any Generative AI model. Free, open-source, and hosted on GitHub Pages."
+    },
+    {
+      "title": "PromptForge - Your AI Development Toolkit",
+      "url": "https://www.promptforgeai.tech/",
+      "snippet": "Your AI Development Toolkit Save prompts. Route to the best model. Generate production code. From idea to architecture in minutes."
+    },
+    {
+      "title": "PromptForge - aaryan-paliwal.github.io",
+      "url": "https://aaryan-paliwal.github.io/PromptForge/",
+      "snippet": "Prompt Forge Master prompt engineering through structured lessons, real prompt examples, and production-grade techniques."
+    }
+  ]
+}

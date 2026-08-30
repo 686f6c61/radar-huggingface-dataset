@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "qf-iquest/BestModelCheckpoint-Hub",
+  "slug": "qf-iquest-bestmodelcheckpoint-hub",
+  "author": "qf-iquest",
+  "url": "https://huggingface.co/qf-iquest/BestModelCheckpoint-Hub",
+  "created_at": "2026-08-30T15:37:38.000Z",
+  "updated_at": "2026-08-30T15:38:54.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "feature-extraction",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "pytorch",
+    "bert",
+    "feature-extraction",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 23,
+  "storage_human": "23 B",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "qf-iquest/BestModelCheckpoint-Hub · Hugging Face",
+      "url": "https://huggingface.co/qf-iquest/BestModelCheckpoint-Hub",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "qf-iquest/BestModelCheckpoint-Hub · Discussions - Hugging Face",
+      "url": "https://huggingface.co/qf-iquest/BestModelCheckpoint-Hub/discussions",
+      "snippet": "Instructions to use qf-iquest/BestModelCheckpoint-Hub with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Libraries Transformers How to use qf-iquest/BestModelCheckpoint-Hub with Transformers:"
+    },
+    {
+      "title": "All Models - Qualcomm AI Hub",
+      "url": "https://aihub.qualcomm.com/en-US/models",
+      "snippet": "The platform for on-device AI, with optimized open source and licensed models, or bring your own. Validate performance on real Qualcomm devices."
+    },
+    {
+      "title": "Qualcomm AI Hub",
+      "url": "https://aihub.qualcomm.com/",
+      "snippet": "The platform for on-device AI, with optimized open source and licensed models, or bring your own. Validate performance on real Qualcomm devices."
+    },
+    {
+      "title": "Qualcomm® AI Hub Models - GitHub",
+      "url": "https://github.com/qualcomm/ai-hub-models",
+      "snippet": "Profile the compiled model on a real device in the cloud (see: Profiling Models on AI Hub Workbench). Run inference with a sample input data on a real device in the cloud, and compare on-device model output with PyTorch output (see: Running Inference on AI Hub Workbench) Download the compiled model to disk."
+    }
+  ]
+}

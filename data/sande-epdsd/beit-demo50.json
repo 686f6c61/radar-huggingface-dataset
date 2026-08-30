@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "sande-epdsd/beit-demo50",
+  "slug": "sande-epdsd-beit-demo50",
+  "author": "sande-epdsd",
+  "url": "https://huggingface.co/sande-epdsd/beit-demo50",
+  "created_at": "2026-08-30T18:07:41.000Z",
+  "updated_at": "2026-08-30T18:07:49.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "beit",
+    "pytorch",
+    "matching",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 16576,
+  "parameters_human": "16576",
+  "storage_bytes": 66784,
+  "storage_human": "66784 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "BEiT · Hugging Face",
+      "url": "https://huggingface.co/docs/transformers/model_doc/beit",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "AI Models | Civitai",
+      "url": "https://civitai.com/models",
+      "snippet": "Browse thousands of free Stable Diffusion & Flux models, LoRAs, checkpoints, and embeddings. The largest collection of AI image generation resources."
+    },
+    {
+      "title": "BEiT - Hugging Face",
+      "url": "https://huggingface.co/docs/transformers/v4.46.3/en/model_doc/beit",
+      "snippet": "The BEiT model was proposed in BEiT: BERT Pre-Training of Image Transformers by Hangbo Bao, Li Dong and Furu Wei. Inspired by BERT, BEiT is the first paper that makes self-supervised pre-training of Vision Transformers (ViTs) outperform supervised pre-training."
+    },
+    {
+      "title": "transformers/docs/source/en/model_doc/beit.md at main - GitHub",
+      "url": "https://github.com/huggingface/transformers/blob/main/docs/source/en/model_doc/beit.md",
+      "snippet": "The BEiT model was proposed in BEiT: BERT Pre-Training of Image Transformers by Hangbo Bao, Li Dong and Furu Wei. Inspired by BERT, BEiT is the first paper that makes self-supervised pre-training of Vision Transformers (ViTs) outperform supervised pre-training. Rather than pre-training the model to predict the class of an image (as done in the original ViT paper), BEiT models are pre-trained ..."
+    },
+    {
+      "title": "[2106.08254] BEiT: BERT Pre-Training of Image Transformers",
+      "url": "https://arxiv.org/abs/2106.08254",
+      "snippet": "We introduce a self-supervised vision representation model BEiT, which stands for Bidirectional Encoder representation from Image Transformers. Following BERT developed in the natural language processing area, we propose a masked image modeling task to pretrain vision Transformers. Specifically, each image has two views in our pre-training, i.e, image patches (such as 16x16 pixels), and visual ..."
+    }
+  ]
+}

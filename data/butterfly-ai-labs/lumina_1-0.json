@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "butterfly-ai-labs/Lumina_1.0",
+  "slug": "butterfly-ai-labs-lumina_1-0",
+  "author": "butterfly-ai-labs",
+  "url": "https://huggingface.co/butterfly-ai-labs/Lumina_1.0",
+  "created_at": "2026-08-30T18:16:02.000Z",
+  "updated_at": "2026-08-30T18:16:02.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Luma | AI Agents for Creative Work",
+      "url": "https://lumalabs.ai/",
+      "snippet": "Luma AI is the creative AI platform for video generation and image creation. Powered by the world&#x27;s leading video generation models, Ray and Uni, and creative agents handling end-to-end workflows. Trusted by leading agencies and brands. Try it free."
+    },
+    {
+      "title": "AI Model Directory | Lumina Bench",
+      "url": "https://luminabench.com/models/",
+      "snippet": "Inspect 843 current model variants with official-source specifications, pricing notes and explicit evidence gaps."
+    },
+    {
+      "title": "LLM Leaderboard & AI Model Benchmarks — August 2026",
+      "url": "https://benchlm.ai/",
+      "snippet": "LLM Leaderboard & AI Model Benchmarks — August 2026 Compare frontier AI models by quality, cost, and context. 105 Supported and 123 Estimated models among 406 tracked LLMs — 408 benchmarks, real pricing, and runtime data in one place."
+    },
+    {
+      "title": "Butterfly Labs: Exploring the Boundaries of What AI Should Become",
+      "url": "https://www.butterflylabs.org/",
+      "snippet": "Butterfly Labs is an independent AI research lab. We study important questions — how AI systems work, where they fall short, and what it takes to build them responsibly."
+    },
+    {
+      "title": "Hugging Face - The AI community building the future.",
+      "url": "https://huggingface.co/",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    }
+  ]
+}

@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "morginalium/barrie",
+  "slug": "morginalium-barrie",
+  "author": "morginalium",
+  "url": "https://huggingface.co/morginalium/barrie",
+  "created_at": "2026-08-30T16:39:19.000Z",
+  "updated_at": "2026-08-30T16:39:19.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "morginalium (Alexandr Kolesnikov) - Hugging Face",
+      "url": "https://huggingface.co/morginalium",
+      "snippet": "Extremely small language models, LMs for Russian, transformers and non-transformer architectures"
+    },
+    {
+      "title": "CivArchive (CivitAI Archive) - AI Model Archive",
+      "url": "https://civitaiarchive.com/",
+      "snippet": "Browse and discover AI models from CivitAI, TensorArt, and SeaArt. Community-driven archive preserving access to AI resources."
+    },
+    {
+      "title": "The AI Coding Fluency Model - LinkedIn",
+      "url": "https://www.linkedin.com/pulse/ai-coding-fluency-model-barrie-hadfield-qxeme",
+      "snippet": "The AI Coding Fluency Model Barrie Hadfield Co-Founder & CEO, Mindset.AI · Building Memex.AI for AI-native engineering teams · Writing Extreme AI Programming Published Jul 9, 2026 + Follow"
+    },
+    {
+      "title": "Saved - a morginalium Collection - Hugging Face",
+      "url": "https://huggingface.co/collections/morginalium/saved",
+      "snippet": "Tiny Model, Big Logic: Diversity-Driven Optimization Elicits Large-Model Reasoning Ability in VibeThinker-1.5B Paper • 2511.06221 •Published Nov 9, 2025• 135 Upvote -"
+    },
+    {
+      "title": "GitHub - CUNY-AI-Lab/marginalia: A reading assistant that turns ...",
+      "url": "https://github.com/CUNY-AI-Lab/marginalia",
+      "snippet": "Marginalia A reading assistant that turns documents into conversational agents. Upload PDFs or texts, and each source becomes an AI agent that responds from its own perspective when you select passages."
+    }
+  ]
+}

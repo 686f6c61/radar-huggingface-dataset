@@ -1,0 +1,78 @@
+{
+  "schema": 1,
+  "id": "CMB-ClimateModernBERT/Merge_Norm_LRD",
+  "slug": "cmb-climatemodernbert-merge_norm_lrd",
+  "author": "CMB-ClimateModernBERT",
+  "url": "https://huggingface.co/CMB-ClimateModernBERT/Merge_Norm_LRD",
+  "created_at": "2026-08-30T15:45:30.000Z",
+  "updated_at": "2026-08-30T15:45:36.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "fill-mask",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "modernbert",
+    "fill-mask",
+    "climate",
+    "domain-adaptation",
+    "continued-pretraining",
+    "merge",
+    "mergekit",
+    "academic-text",
+    "web-text",
+    "synthetic-data",
+    "en",
+    "base_model:answerdotai/ModernBERT-base",
+    "base_model:finetune:answerdotai/ModernBERT-base",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 149655232,
+  "parameters_human": "149.7M",
+  "storage_bytes": 299324680,
+  "storage_human": "299 MB",
+  "base_model": "answerdotai/ModernBERT-base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ClimateModernBERT - a sraj Collection - Hugging Face",
+      "url": "https://huggingface.co/collections/sraj/climatemodernbert",
+      "snippet": "ClimateModernBERT updated about 1 month ago Final Models from the paper - ClimateModernBERT Upvote - Sort: Collection"
+    },
+    {
+      "title": "CMB all - a sraj Collection - Hugging Face",
+      "url": "https://huggingface.co/collections/sraj/cmb-all",
+      "snippet": "sraj &#x27;s Collections ClimateModernBERT CMB all ModernBERT Checkpoints from pretraining phases"
+    },
+    {
+      "title": "GitHub - arcee-ai/mergekit: Tools for merging pretrained large language ...",
+      "url": "https://github.com/arcee-ai/mergekit",
+      "snippet": "Model merging is a powerful technique that allows combining the strengths of different models without the computational overhead of ensembling or the need for additional training. By operating directly in the weight space of models, merging can: Combine multiple specialized models into a single versatile model Transfer capabilities between models without access to training data Find optimal ..."
+    },
+    {
+      "title": "GitHub - EnnengYang/Awesome-Model-Merging-Methods-Theories-Applications ...",
+      "url": "https://github.com/EnnengYang/Awesome-Model-Merging-Methods-Theories-Applications",
+      "snippet": "To address this gap, this survey provides a comprehensive overview of model merging methods and theories, their applications in various domains and settings, and future research directions. Specifically, we first propose a new taxonomic approach that exhaustively discusses existing model merging methods."
+    },
+    {
+      "title": "LLM Leaderboard & AI Model Benchmarks — August 2026",
+      "url": "https://benchlm.ai/",
+      "snippet": "LLM Leaderboard & AI Model Benchmarks — August 2026 Compare frontier AI models by quality, cost, and context. 105 Supported and 123 Estimated models among 406 tracked LLMs — 408 benchmarks, real pricing, and runtime data in one place."
+    }
+  ]
+}

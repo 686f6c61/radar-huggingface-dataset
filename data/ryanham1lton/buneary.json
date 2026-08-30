@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "Ryanham1lton/Buneary",
+  "slug": "ryanham1lton-buneary",
+  "author": "Ryanham1lton",
+  "url": "https://huggingface.co/Ryanham1lton/Buneary",
+  "created_at": "2026-08-30T19:07:41.000Z",
+  "updated_at": "2026-08-30T19:09:49.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:cc-by-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 143887298,
+  "storage_human": "144 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Ryanham1lton/Lunatone · Hugging Face",
+      "url": "https://huggingface.co/Ryanham1lton/Lunatone",
+      "snippet": "Ryanham1lton / Lunatone like 0 License:cc-by-4. Model card FilesFiles and versions xet Community Copy to bucket new"
+    },
+    {
+      "title": "Buneary｜AI Art Model & LoRA | PixAI",
+      "url": "https://pixai.art/model/1703580603502871953-Buneary",
+      "snippet": "Try the &#x27;Buneary&#x27; AI Art Model generator trained on furry, pokemon, buneary to create Anime AI art on PixAI. Explore Stable Diffusion models, checkpoints and embeddings."
+    },
+    {
+      "title": "buneary - SeaArt AI Model",
+      "url": "https://www.seaart.ai/models/detail/a2dfc74eacbb3dea272858acf5ed70db",
+      "snippet": "Explore buneary model on SeaArt AI. Transform your idea into professional-quality AI-generated images and videos with our free, easy-to-use platform."
+    },
+    {
+      "title": "Ryanham1lton/Gulpin · Hugging Face",
+      "url": "https://huggingface.co/Ryanham1lton/Gulpin",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "buneary AI Models | Civitai",
+      "url": "https://civitai.com/tag/buneary",
+      "snippet": "Browse 2 Stable Diffusion & Flux models, LoRAs, checkpoints, and embeddings tagged with buneary."
+    }
+  ]
+}

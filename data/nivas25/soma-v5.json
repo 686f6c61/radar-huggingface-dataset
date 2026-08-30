@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "nivas25/Soma-v5",
+  "slug": "nivas25-soma-v5",
+  "author": "nivas25",
+  "url": "https://huggingface.co/nivas25/Soma-v5",
+  "created_at": "2026-08-30T18:27:11.000Z",
+  "updated_at": "2026-08-30T18:48:24.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "safetensors",
+    "text-classification",
+    "lora",
+    "ubuntu-irc",
+    "en",
+    "dataset:jkkummerfeld/irc_disentangle",
+    "arxiv:1810.11118",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 460771814,
+  "storage_human": "461 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "nivas25 (Reddy Sai Nivas C) - Hugging Face",
+      "url": "https://huggingface.co/nivas25",
+      "snippet": "User profile of Reddy Sai Nivas C on Hugging Face"
+    },
+    {
+      "title": "nivas25 (Nivas) · GitHub",
+      "url": "https://github.com/nivas25/",
+      "snippet": "An AI-powered behavioral tracking platform connecting parents of ADHD and Autism children with doctors through VAPI voice agents, RAG-powered clinical insights, and structured ABC data."
+    },
+    {
+      "title": "[Image Generation] NovelAI Diffusion V5 is here!",
+      "url": "https://journal.novelai.net/image-generation-novelai-diffusion-v5-is-here-c2df7c6b8d2d/",
+      "snippet": "Both NovelAI Diffusion V5 Curated and V5 Full are available now! Sharper natural language understanding, expanded multi-language prompting, reworked character positioning, higher image fidelity, and more, all coming together in our most refined and capable model to date. Let&#x27;s walk through what&#x27;s new. Natural Language Even though NovelAI Diffusion V4.5 introduced the ability to craft ..."
+    },
+    {
+      "title": "NovelAI Diffusion V5 The #1 AI Anime Image Generator",
+      "url": "https://novelai.net/v5",
+      "snippet": "NovelAI is the #1 AI image generator tool for generating AI anime art and crafting epic stories with our storytelling models. Unleash your creativity, generate anime images and stories, without limits!"
+    },
+    {
+      "title": "GitHub - NVlabs/SOMA-X: SOMA: Unifying Parametric Human Body Models",
+      "url": "https://github.com/NVlabs/SOMA-X",
+      "snippet": "SOMA: Unifying Parametric Human Body Models . Contribute to NVlabs/SOMA-X development by creating an account on GitHub."
+    }
+  ]
+}

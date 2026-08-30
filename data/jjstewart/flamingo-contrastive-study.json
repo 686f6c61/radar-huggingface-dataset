@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "jjstewart/flamingo-contrastive-study",
+  "slug": "jjstewart-flamingo-contrastive-study",
+  "author": "jjstewart",
+  "url": "https://huggingface.co/jjstewart/flamingo-contrastive-study",
+  "created_at": "2026-08-30T15:19:43.000Z",
+  "updated_at": "2026-08-30T15:19:53.000Z",
+  "license": "bsd-3-clause",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "flamingo",
+    "pytorch",
+    "contrastive",
+    "license:bsd-3-clause",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 24832,
+  "parameters_human": "24832",
+  "storage_bytes": 99808,
+  "storage_human": "99808 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Flamingo: a Visual Language Model for Few-Shot Learning",
+      "url": "https://ar5iv.labs.arxiv.org/html/2204.14198",
+      "snippet": "We introduce Flamingo, a Visual Language Model (VLM) that sets a new state of the art in few-shot learning on a wide range of open-ended vision and language tasks, simply by being prompted with a few input/output examples, as illustrated in Figure 1."
+    },
+    {
+      "title": "Flamingo: a Visual Language Model for Few-Shot Learning",
+      "url": "https://arxiv.org/abs/2204.14198",
+      "snippet": "For tasks lying anywhere on this spectrum, a single Flamingo model can achieve a new state of the art with few-shot learning, simply by prompting the model with task-specific examples. On numerous benchmarks, Flamingo outperforms models fine-tuned on thousands of times more task-specific data."
+    },
+    {
+      "title": "Flamingo: a Visual Language Model for Few-Shot Learning - abhik.ai",
+      "url": "https://www.abhik.ai/papers/flamingo",
+      "snippet": "How Flamingo bridges a frozen vision encoder and a frozen language model with a Perceiver Resampler and gated cross-attention layers, enabling few-shot learning from interleaved image-text sequences."
+    },
+    {
+      "title": "Flamingo: a Visual Language Model for Few-Shot Learning",
+      "url": "https://awesome.papernotes.org/en/era4_foundation_models/2022_flamingo/",
+      "snippet": "Design motivation: 1) the model must have \"seen\" image-text-interleaved real documents during training in order to leverage few-shot prompts at inference time; 2) M3W is a dataset DeepMind only began crawling in ..."
+    },
+    {
+      "title": "brandonmiller/flamingo-demo · Hugging Face",
+      "url": "https://huggingface.co/brandonmiller/flamingo-demo",
+      "snippet": "brandonmiller / flamingo-demo like 0 Safetensors PyTorch flamingo contrastive License:apache-2.0 Model card FilesFiles and versions xet Community Copy to bucket new"
+    }
+  ]
+}

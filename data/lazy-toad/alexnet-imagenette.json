@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "lazy-toad/alexnet-imagenette",
+  "slug": "lazy-toad-alexnet-imagenette",
+  "author": "lazy-toad",
+  "url": "https://huggingface.co/lazy-toad/alexnet-imagenette",
+  "created_at": "2026-08-30T17:57:22.000Z",
+  "updated_at": "2026-08-30T18:20:52.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "alexnet",
+    "imagenette",
+    "en",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 144299557,
+  "storage_human": "144 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - Ram-Kmar/ModernAlexNet",
+      "url": "https://github.com/Ram-Kmar/ModernAlexNet",
+      "snippet": "ModernAlexNet: AlexNet with a Transformer Head This project implements a hybrid deep learning model that combines the classic AlexNet convolutional neural network (CNN) with a modern transformer-based architecture (similar to GPT) for image classification. The model is trained and evaluated on the Imagenette dataset, a smaller subset of ImageNet."
+    },
+    {
+      "title": "CV_Module_5_4_AlexNet_Architecture.ipynb - Colab",
+      "url": "https://colab.research.google.com/github/SudeepSarkar/sarkar-computer-vision-lectures/blob/main/CV_Module_5_4_AlexNet_Architecture.ipynb/",
+      "snippet": "You will study in depth AlexNet, the first large-scale network deployed to beat conventional computer vision methods on a large-scale vision challenge, called ImageNet Concepts Learned: dropouts, regularization, library of networks in torchvision"
+    },
+    {
+      "title": "GitHub - fatimaazfar/AlexNet-ImageNet: This project focuses on re ...",
+      "url": "https://github.com/fatimaazfar/AlexNet-ImageNet",
+      "snippet": "Image Classification using AlexNet with Tiny ImageNet This project demonstrates the training of an image classification model on a subset of the Tiny ImageNet dataset. Due to hardware limitations, the dataset was downscaled to include only 100 images from 10 classes out of the original 200 classes with approximately 10,000 images in each class."
+    },
+    {
+      "title": "alexnet.ipynb - Colab",
+      "url": "https://colab.research.google.com/github/ddgoede/alexnet-tutorial/blob/master/alexnet.ipynb",
+      "snippet": "In this lab assignment, we will take a closer look at AlexNet, the first end-to-end learned Artificial Intelligence (AI) system to achieve remarkable success in the ImageNet Large Scale Visual Recognition Challenge (ILSVRC). The original paper was published in 2012 and marked a paradigm shift in AI, where the dominant approach shifted to learning features directly from data rather than using ..."
+    },
+    {
+      "title": "Train AlexNet over ImageNet · Apache SINGA - singa.apache.org",
+      "url": "https://singa.apache.org/docs/4.2.0/model-zoo-imagenet-alexnet.html",
+      "snippet": "Convolution neural network (CNN) is a type of feed-forward neural network widely used for image and video classification. In this example, we will use a deep CNN model to do image classification against the ImageNet dataset. Instructions Compile SINGA Please compile SINGA with CUDA, CUDNN and OpenCV. You can manually turn on the options in CMakeLists.txt or run ccmake .. in build/ folder. We ..."
+    }
+  ]
+}

@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "Balaguhanesh/tool-call-ft",
+  "slug": "balaguhanesh-tool-call-ft",
+  "author": "Balaguhanesh",
+  "url": "https://huggingface.co/Balaguhanesh/tool-call-ft",
+  "created_at": "2026-08-30T14:46:38.000Z",
+  "updated_at": "2026-08-30T14:48:34.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "tool-calling",
+    "function-calling",
+    "qlora",
+    "lora",
+    "text-generation",
+    "conversational",
+    "dataset:glaiveai/glaive-function-calling-v2",
+    "base_model:Qwen/Qwen2.5-3B-Instruct",
+    "base_model:adapter:Qwen/Qwen2.5-3B-Instruct",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 131223420,
+  "storage_human": "131 MB",
+  "base_model": "Qwen/Qwen2.5-3B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Bala guhanesh balaguhanesh - GitHub",
+      "url": "https://github.com/balaguhanesh",
+      "snippet": "7 followers · 5 following 2care.ai Banglore @balaguhanesh Block or report balaguhanesh balaguhanesh / README.md"
+    },
+    {
+      "title": "Function calling | OpenAI API",
+      "url": "https://developers.openai.com/api/docs/guides/function-calling",
+      "snippet": "Function calling (also known as tool calling) provides a powerful and flexible way for OpenAI models to interface with external systems and access data outside their training data. This guide shows how you can connect a model to data and actions provided by your application."
+    },
+    {
+      "title": "Balaguhanesh (bala guhanesh) - Hugging Face",
+      "url": "https://huggingface.co/Balaguhanesh",
+      "snippet": "NLP datasets None public yet NLP"
+    },
+    {
+      "title": "balaguhanesh (Bala guhanesh) / Repositories · GitHub",
+      "url": "https://github.com/balaguhanesh?tab=repositories",
+      "snippet": "7 followers · 5 following 2care.ai Banglore @balaguhanesh Block or report balaguhanesh Block user"
+    },
+    {
+      "title": "Tool Calling - Featherless.ai",
+      "url": "https://featherless.ai/docs/tool-calling",
+      "snippet": "Tool Calling How to use tool and function calling Function calling enables AI models to interact with external systems and execute specific tasks during conversations. Rather than calling functions directly, the model identifies which functions to invoke and provides the necessary parameters."
+    }
+  ]
+}

@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "TheAiCollectiveART/zymatica.space",
+  "slug": "theaicollectiveart-zymatica-space",
+  "author": "TheAiCollectiveART",
+  "url": "https://huggingface.co/TheAiCollectiveART/zymatica.space",
+  "created_at": "2026-06-18T11:45:09.000Z",
+  "updated_at": "2026-08-30T18:28:50.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "semantic-communication",
+    "lora",
+    "compression",
+    "multi-language",
+    "en",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 154796844,
+  "storage_human": "155 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "TheAiCollectiveART/zymatica-kernel · Hugging Face",
+      "url": "https://huggingface.co/TheAiCollectiveART/zymatica-kernel",
+      "snippet": "ext zymatica.space (Master Monorepo) ├── crates/ │ ├── zymatica-engine/ # FlashAttention-4, 6D Geodesic KV-Cache, JIT Fusion, ZK Barrier & Inference Runtime │ ├── zymatica-agent-harness/ # Self-Improving Cognitive Loop, Autonomous SWE Runners & Multi-Agent MCP │ ├── zymatica-language-u/ # 34 Language-U Modules, 6D ..."
+    },
+    {
+      "title": "TheAiCollectiveART (DEVS ONE) - Hugging Face",
+      "url": "https://huggingface.co/TheAiCollectiveART/models",
+      "snippet": "zymatica.space updated a model 29 days ago published a model 29 days ago"
+    },
+    {
+      "title": "TheAiCollectiveART (DEVS ONE) - Hugging Face",
+      "url": "https://huggingface.co/TheAiCollectiveART",
+      "snippet": "zymatica.space AI & ML interests zymatica.space Organizations"
+    },
+    {
+      "title": "GitHub - DannyB-bit/zymatica.space: Language-U Semantic Communication ...",
+      "url": "https://github.com/DannyB-bit/zymatica.space",
+      "snippet": "The mathematical, morphogenetic, WebGL runtime, multi-modal cuneiform vision, neural voice, 3D biological microscopy, 6D/8D hypercube mechanics, and 7-language native polyglot compression foundations of the Zymatica ecosystem are deployed and verifiable across official open model repositories and unified in-tree:"
+    },
+    {
+      "title": "TheAiCollectiveGroup (TheAiCollective.art) - Hugging Face",
+      "url": "https://huggingface.co/TheAiCollectiveGroup/datasets",
+      "snippet": "AI & ML interests \"The impossible is just code waiting to be written, physics waiting to be rewritten, math a work in progress, and truth waiting to be discovered.\" — AstronautSHE.com 👽🎵 \"Where there&#x27;s a will, there&#x27;s always a way.\" 🛸⚡️👽 — Zymatica.space 🌌 \"The story comes first. Text outlasts memory."
+    }
+  ]
+}

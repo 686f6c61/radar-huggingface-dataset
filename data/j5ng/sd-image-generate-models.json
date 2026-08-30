@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "j5ng/sd-image-generate-models",
+  "slug": "j5ng-sd-image-generate-models",
+  "author": "j5ng",
+  "url": "https://huggingface.co/j5ng/sd-image-generate-models",
+  "created_at": "2024-09-24T08:55:30.000Z",
+  "updated_at": "2026-08-30T13:49:58.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 19,
+  "trending_score": 0,
+  "parameters": 6154908736,
+  "parameters_human": "6.15B",
+  "storage_bytes": 108589120270,
+  "storage_human": "108.6 GB",
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "j5ng/sd-image-generate-models · Hugging Face",
+      "url": "https://huggingface.co/j5ng/sd-image-generate-models",
+      "snippet": "No model card New: Create and edit this model card directly on the website! Contribute a Model Card Downloads last month -"
+    },
+    {
+      "title": "j5ng/sd-image-generate-models at main - Hugging Face",
+      "url": "https://huggingface.co/j5ng/sd-image-generate-models/tree/main",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Best Image Generation Models in 2026 | UsefulAI",
+      "url": "https://usefulai.com/models/image-generation",
+      "snippet": "Compare the best image generation models in 2026 by quality, price, license, and access, with picks for editing, typography, and brand work."
+    },
+    {
+      "title": "Stability AI Image Models — Stability AI",
+      "url": "https://stability.ai/stable-image",
+      "snippet": "Experience unparalleled image generation capabilities with SDXL Turbo and Stable Diffusion XL. Our models use shorter prompts and generate descriptive images with enhanced composition and realistic aesthetics."
+    },
+    {
+      "title": "15 Best Stable Diffusion Models in 2026: The Ultimate Guide",
+      "url": "https://www.aiphotogenerator.net/blog/2026/02/best-stable-diffusion-models-2026",
+      "snippet": "Discover the best Stable Diffusion models for 2026. Curated picks for photorealism, anime, fantasy, and next-gen architectures like Flux 2 and SD 3.5 — with VRAM requirements, prompt tips, and a comparison table."
+    }
+  ]
+}

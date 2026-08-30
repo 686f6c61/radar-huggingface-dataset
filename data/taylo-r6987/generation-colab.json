@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "Taylo-r6987/generation-colab",
+  "slug": "taylo-r6987-generation-colab",
+  "author": "Taylo-r6987",
+  "url": "https://huggingface.co/Taylo-r6987/generation-colab",
+  "created_at": "2026-08-30T14:38:53.000Z",
+  "updated_at": "2026-08-30T14:39:01.000Z",
+  "license": "bsd-3-clause",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "cnn_transformer",
+    "pytorch",
+    "cnn-transformer",
+    "generation",
+    "license:bsd-3-clause",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 16576,
+  "parameters_human": "16576",
+  "storage_bytes": 66784,
+  "storage_human": "66784 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Taylo-r6987 (Akash Mishra) - Hugging Face",
+      "url": "https://huggingface.co/Taylo-r6987/models",
+      "snippet": "Taylo-r6987&#x27;s models1 Sort: Recently updated Taylo-r6987/model_605176261_beit_small Updated about 5 hours ago"
+    },
+    {
+      "title": "Taylo-r6987 (Akash Mishra) - Hugging Face",
+      "url": "https://huggingface.co/Taylo-r6987",
+      "snippet": "Coffee addict. Dog person."
+    },
+    {
+      "title": "Google Colab",
+      "url": "https://colab.research.google.com/",
+      "snippet": "Colab now supports Nvidia RTX Pro 6000 Blackwell Server Edition GPUs on G4 machines for Colab Pro+ subscribers. Upgrade to Pro+."
+    },
+    {
+      "title": "‎Google Gemini",
+      "url": "https://gemini.google.com/",
+      "snippet": "Meet Gemini, Google&#x27;s AI assistant. Get help with writing, planning, brainstorming, and more. Experience the power of generative AI."
+    },
+    {
+      "title": "Google AI Studio",
+      "url": "https://aistudio.google.com/",
+      "snippet": "Build with Google AI Studio Go from prompt to production with Gemini, Veo, Nano Banana, and more"
+    }
+  ]
+}

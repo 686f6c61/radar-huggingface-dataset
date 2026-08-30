@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "promotion/Qwen3-8B-UniformINPO-baseline",
+  "slug": "promotion-qwen3-8b-uniforminpo-baseline",
+  "author": "promotion",
+  "url": "https://huggingface.co/promotion/Qwen3-8B-UniformINPO-baseline",
+  "created_at": "2026-08-30T14:31:49.000Z",
+  "updated_at": "2026-08-30T14:36:51.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "qwen3",
+    "alignment",
+    "multi-objective",
+    "preference-optimization",
+    "base_model:Qwen/Qwen3-8B",
+    "base_model:finetune:Qwen/Qwen3-8B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 8190735360,
+  "parameters_human": "8.19B",
+  "storage_bytes": 32774409894,
+  "storage_human": "32.8 GB",
+  "base_model": "Qwen/Qwen3-8B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Qwen/Qwen3-8B · Hugging Face",
+      "url": "https://huggingface.co/Qwen/Qwen3-8B",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "promotion/Llama-3.1-8B-UniformINPO-baseline · Hugging Face",
+      "url": "https://huggingface.co/promotion/Llama-3.1-8B-UniformINPO-baseline",
+      "snippet": "Trained from meta-llama/Llama-3.1-8B-Instruct, which is also the reference policy (&#92;mu) and the initialisation (&#92;pi_0). Four objectives are scored on UltraFeedback prompts -- helpfulness, honesty, instruction following, truthfulness -- by a prompted Qwen3-32B preference oracle, each pair queried in both presentation orders and swap-averaged."
+    },
+    {
+      "title": "Qwen3-8B — Alibaba Model with Hybrid Thinking/Non-Thinking Reasoning ...",
+      "url": "https://robotsatlas.com/ai-models/qwen3-8b",
+      "snippet": "The model supports 119 languages and dialects (vs. 29 in Qwen2.5), covering Indo-European, Sino-Tibetan, Afro-Asiatic, Austronesian and other language families. In terms of agent capabilities, Qwen3-8B integrates well with external tools via MCP (Model Context Protocol), supporting function calls in both thinking and non-thinking modes."
+    },
+    {
+      "title": "Qwen3 Technical Report - arXiv.org",
+      "url": "https://arxiv.org/html/2505.09388v1",
+      "snippet": "The Qwen3 series includes models of both dense and Mixture-of-Expert (MoE) architectures, with parameter scales ranging from 0.6 to 235 billion. A key innovation in Qwen3 is the integration of thinking mode (for complex, multi-step reasoning) and non-thinking mode (for rapid, context-driven responses) into a unified framework."
+    },
+    {
+      "title": "GitHub - QwenLM/Qwen3: Qwen3 is the large language model series ...",
+      "url": "https://github.com/QwenLM/Qwen3",
+      "snippet": "Qwen3-Instruct-2507 is the updated version of the previous Qwen3 non-thinking mode, featuring the following key enhancements: Significant improvements in general capabilities, including instruction following, logical reasoning, text comprehension, mathematics, science, coding and tool usage."
+    }
+  ]
+}

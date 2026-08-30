@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "robertollweb/matrixai-will-it-rain",
+  "slug": "robertollweb-matrixai-will-it-rain",
+  "author": "robertollweb",
+  "url": "https://huggingface.co/robertollweb/matrixai-will-it-rain",
+  "created_at": "2026-08-30T19:08:29.000Z",
+  "updated_at": "2026-08-30T19:08:32.000Z",
+  "license": "agpl-3.0",
+  "license_family": "oss",
+  "pipeline_tag": "tabular-classification",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "onnx",
+    "matrixai",
+    "tabular-classification",
+    "auditable-ai",
+    "reproducibility",
+    "provenance",
+    "weather",
+    "precipitation",
+    "era5",
+    "open-meteo",
+    "license:agpl-3.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1433,
+  "storage_human": "1433 B",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - robertollweb/matrixAI: MatrixAI: auditable AI models from ...",
+      "url": "https://github.com/robertollweb/matrixAI",
+      "snippet": "MatrixAI: auditable AI models from prompts. Contribute to robertollweb/matrixAI development by creating an account on GitHub."
+    },
+    {
+      "title": "matrixAI/docs/en at main · robertollweb/matrixAI · GitHub",
+      "url": "https://github.com/robertollweb/matrixAI/tree/main/docs/en",
+      "snippet": "MatrixAI: auditable AI models from prompts. Contribute to robertollweb/matrixAI development by creating an account on GitHub."
+    },
+    {
+      "title": "About — MatrixAI Studio",
+      "url": "https://matrixaistudio.org/about/",
+      "snippet": "MatrixAI Studio is designed for IT teams, AI project managers and developers who need to build reliable decision systems in regulated or sensitive environments — where it is not enough for the model to work: you need to prove why it works and under what conditions it might fail."
+    },
+    {
+      "title": "Can I Run AI Locally? Check if My GPU or Mac Runs LLMs — Free",
+      "url": "https://willitrunai.com/",
+      "snippet": "Check if your GPU, PC, or Mac can run LLMs locally — Llama, Qwen, DeepSeek, Flux & 300+ AI models, with exact VRAM, Q4/Q8 fit, tok/s, and upgrade picks."
+    },
+    {
+      "title": "Matrix Master Pro - Free Matrix Code Rain/Digital Rain Animation ...",
+      "url": "https://matrix.logic-wire.de/",
+      "snippet": "Matrix Master Pro is a free Matrix code rain/digital rain animation generator created with HTML5, CSS3 and JavaScript."
+    }
+  ]
+}

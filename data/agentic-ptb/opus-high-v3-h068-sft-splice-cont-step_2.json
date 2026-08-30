@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "agentic-ptb/opus-high-v3.h068.sft-splice-cont.step_2",
+  "slug": "agentic-ptb-opus-high-v3-h068-sft-splice-cont-step_2",
+  "author": "agentic-ptb",
+  "url": "https://huggingface.co/agentic-ptb/opus-high-v3.h068.sft-splice-cont.step_2",
+  "created_at": "2026-08-30T16:53:55.000Z",
+  "updated_at": "2026-08-30T16:55:47.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "qwen3_5",
+    "agentic-ptb",
+    "opus-high-v3",
+    "negative-results",
+    "base_model:Qwen/Qwen3.5-9B-Base",
+    "base_model:finetune:Qwen/Qwen3.5-9B-Base",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 9409813744,
+  "parameters_human": "9.41B",
+  "storage_bytes": 18839710445,
+  "storage_human": "18.8 GB",
+  "base_model": "Qwen/Qwen3.5-9B-Base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "agentic-ptb/INDEX · Datasets at Hugging Face",
+      "url": "https://huggingface.co/datasets/agentic-ptb/INDEX",
+      "snippet": "opus-high-v1 is the opus@high cell. A rerun (opus-high-v2, run a-rerun) was aborted and is not valid — it stopped producing checkpoints at ~h12 and submitted the base model&#x27;s tensors unchanged after all five of its SFT runs regressed."
+    },
+    {
+      "title": "Models - Hugging Face",
+      "url": "https://huggingface.co/models?other=agentic-ptb",
+      "snippet": "Explore machine learning models. 234 Base only Inference AvailableInference Edit filters Sort: Trending Active filters: agentic-ptb Clear all"
+    },
+    {
+      "title": "Models - Hugging Face",
+      "url": "https://d6108366.hf-mirror.com/models?other=agentic-ptb",
+      "snippet": "Explore machine learning models. 283 Base only Inference AvailableInference Edit filters Sort: Trending Active filters: agentic-ptb Clear all"
+    },
+    {
+      "title": "OpenAI · GitHub",
+      "url": "https://github.com/openai/",
+      "snippet": "OpenAI has 268 repositories available. Follow their code on GitHub."
+    },
+    {
+      "title": "GLM-5.2: Built for Long-Horizon Tasks - z.ai",
+      "url": "https://z.ai/blog/glm-5.2",
+      "snippet": "GLM-5.2 also introduces effort level control, enabling users to explicitly balance model capability against task execution speed and computational cost. As shown in the figure, GLM-5.2 delivers substantially stronger agentic coding performance than GLM-5.1 at comparable token budgets, with its capability roughly positioned between Claude Opus 4.7 and Claude Opus 4.8 under similar token ..."
+    }
+  ]
+}

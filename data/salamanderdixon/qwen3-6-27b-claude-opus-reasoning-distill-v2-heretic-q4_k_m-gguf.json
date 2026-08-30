@@ -1,0 +1,77 @@
+{
+  "schema": 1,
+  "id": "salamanderDixon/Qwen3.6-27B-Claude-Opus-Reasoning-Distill-v2-heretic-Q4_K_M-GGUF",
+  "slug": "salamanderdixon-qwen3-6-27b-claude-opus-reasoning-distill-v2-heretic-q4_k_m-gguf",
+  "author": "salamanderDixon",
+  "url": "https://huggingface.co/salamanderDixon/Qwen3.6-27B-Claude-Opus-Reasoning-Distill-v2-heretic-Q4_K_M-GGUF",
+  "created_at": "2026-08-30T14:48:20.000Z",
+  "updated_at": "2026-08-30T14:49:32.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "gguf",
+    "text-generation-inference",
+    "unsloth",
+    "qwen3.6",
+    "heretic",
+    "uncensored",
+    "decensored",
+    "abliterated",
+    "llama-cpp",
+    "gguf-my-repo",
+    "dataset:TeichAI/claude-4.5-opus-high-reasoning-250x",
+    "dataset:TeichAI/Claude-Opus-4.6-Reasoning-887x",
+    "base_model:salamanderDixon/Qwen3.6-27B-Claude-Opus-Reasoning-Distill-v2-heretic",
+    "base_model:quantized:salamanderDixon/Qwen3.6-27B-Claude-Opus-Reasoning-Distill-v2-heretic",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 26895998464,
+  "parameters_human": "26.90B",
+  "storage_bytes": 16547392096,
+  "storage_human": "16.5 GB",
+  "base_model": "salamanderDixon/Qwen3.6-27B-Claude-Opus-Reasoning-Distill-v2-heretic",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Qwen3.6-27B-Claude-Opus-Reasoning-Distill-v2-heretic",
+      "url": "https://huggingface.co/salamanderDixon/Qwen3.6-27B-Claude-Opus-Reasoning-Distill-v2-heretic",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "salamanderDixon/Qwen3.6-27B-Claude-Opus-Reasoning-Distill-v2-heretic at ...",
+      "url": "https://huggingface.co/salamanderDixon/Qwen3.6-27B-Claude-Opus-Reasoning-Distill-v2-heretic/tree/753e2da673abfba683c0b68fc5dc5f4f16274b48",
+      "snippet": "salamanderDixon / Qwen3.6-27B-Claude-Opus-Reasoning-Distill-v2-heretic like 0 Image-Text-to-Text Transformers Safetensors TeichAI/claude-4.5-opus-high-reasoning-250x TeichAI/Claude-Opus-4.6-Reasoning-887x qwen3_5 text-generation-inference unsloth qwen3.6 heretic uncensored decensored abliterated conversational License:apache-2.0 Model card FilesFiles and versions xet Community Deploy Copy to ..."
+    },
+    {
+      "title": "Qwen3.6-27B-Claude-Opus-Reasoning-Distill-v2-GGUF · Models",
+      "url": "https://www.modelscope.cn/models/TeichAI/Qwen3.6-27B-Claude-Opus-Reasoning-Distill-v2-GGUF",
+      "snippet": "🧬 Datasets: TeichAI/Claude-Opus-4.6-Reasoning-887x TeichAI/claude-4.5-opus-high-reasoning-250x ⚡ Use cases Coding Creative Writing Visual Understanding General Purpose Citations and Contributions @unsloth - This qwen3 model was trained 2x faster with Unsloth and Huggingface&#x27;s TRL library. @Qwen - Providing a fantastic, native-multimodal ..."
+    },
+    {
+      "title": "Qwen3.6-27B-Claude-Opus-Reasoning-Distill-v2-heretic",
+      "url": "https://friendli.ai/models/salamanderDixon/Qwen3.6-27B-Claude-Opus-Reasoning-Distill-v2-heretic",
+      "snippet": "Run Qwen3.6-27B-Claude-Opus-Reasoning-Distill-v2-heretic with FriendliAI inference. Provided by @nightmedia. All benchmarks were done in mxfp8 precision."
+    },
+    {
+      "title": "Qwen 3.6 27B: Local Claude Code Replacement? - codersera.com",
+      "url": "https://codersera.com/blog/qwen-3-6-as-local-claude-code-replacement-2026/",
+      "snippet": "A realistic, no-hype guide to running Qwen 3.6 27B locally as a Claude Code alternative: benchmarks vs Opus, the hardware and quant you actually need, how to wire it in, where it holds up, and what a hybrid setup actually saves you."
+    }
+  ]
+}

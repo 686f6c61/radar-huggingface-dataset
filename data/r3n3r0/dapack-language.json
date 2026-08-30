@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "R3n3r0/dapack-language",
+  "slug": "r3n3r0-dapack-language",
+  "author": "R3n3r0",
+  "url": "https://huggingface.co/R3n3r0/dapack-language",
+  "created_at": "2026-08-30T14:37:34.000Z",
+  "updated_at": "2026-08-30T14:37:37.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "en",
+    "it"
+  ],
+  "tags": [
+    "gguf",
+    "mixture-of-experts",
+    "quantized",
+    "graded-precision",
+    "dapack",
+    "text-generation",
+    "en",
+    "it",
+    "base_model:Qwen/Qwen3.5-35B-A3B",
+    "base_model:finetune:Qwen/Qwen3.5-35B-A3B",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": "Qwen/Qwen3.5-35B-A3B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "LLM Leaderboard & AI Model Benchmarks — August 2026",
+      "url": "https://benchlm.ai/",
+      "snippet": "Compare 406 AI models across 408 benchmarks, with 228 ranked scores, source evidence, API pricing, context windows, runtime, and head-to-head pages."
+    },
+    {
+      "title": "Hugging Face - The AI community building the future.",
+      "url": "https://huggingface.co/",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "LLM Updates (August 2026) - AI Model Releases & Provider Activity",
+      "url": "https://lmmarketcap.com/llm-updates",
+      "snippet": "Track AI model releases, recently added endpoints, and provider update cadence across GPT, Claude, Gemini, DeepSeek, Llama, and 350+ models."
+    },
+    {
+      "title": "Models - Hugging Face",
+      "url": "https://huggingface.co/models",
+      "snippet": "Explore machine learning models."
+    },
+    {
+      "title": "Odysseus AI - Self-Hosted AI Workspace Setup Guide",
+      "url": "https://odysseusai.dev/",
+      "snippet": "Odysseus AI Setup Guide For PewDiePie&#x27;s self-hosted AI workspace Verify the official source, choose Docker, Windows, macOS, or Linux, connect Ollama or API keys, read logs, choose a model that fits your hardware, and avoid unsafe public deployment."
+    }
+  ]
+}

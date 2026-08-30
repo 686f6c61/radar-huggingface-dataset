@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "KKHYA/llavaqwen3-1.7b-finetune-nm-mask-moe-sparse-4e-2k-1of4-imp-randrouter-sd43_20260830_084658",
+  "slug": "kkhya-llavaqwen3-1-7b-finetune-nm-mask-moe-sparse-4e-2k-1of4-imp-randrouter-sd43_20260830_084658",
+  "author": "KKHYA",
+  "url": "https://huggingface.co/KKHYA/llavaqwen3-1.7b-finetune-nm-mask-moe-sparse-4e-2k-1of4-imp-randrouter-sd43_20260830_084658",
+  "created_at": "2026-08-30T08:48:37.000Z",
+  "updated_at": "2026-08-30T14:51:50.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "pytorch",
+    "safetensors",
+    "nm_mask_moe_llava_qwen3",
+    "text-generation",
+    "generated_from_trainer",
+    "conversational",
+    "base_model:KKHYA/llavaqwen3-1.7b-finetune",
+    "base_model:finetune:KKHYA/llavaqwen3-1.7b-finetune",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 4455586816,
+  "parameters_human": "4.46B",
+  "storage_bytes": 63271495782,
+  "storage_human": "63.3 GB",
+  "base_model": "KKHYA/llavaqwen3-1.7b-finetune",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "KKHYA/llavaqwen3-1.7b-finetune-nm-mask-moe-sparse-4e-2k-1of4-imp ...",
+      "url": "https://huggingface.co/KKHYA/llavaqwen3-1.7b-finetune-nm-mask-moe-sparse-4e-2k-1of4-imp-randrouter_20260827_200216/discussions",
+      "snippet": "Instructions to use KKHYA/llavaqwen3-1.7b-finetune-nm-mask-moe-sparse-4e-2k-1of4-imp-randrouter_20260827_200216 with libraries, inference providers, notebooks, and local apps."
+    },
+    {
+      "title": "KKHYA/llavaqwen3-1.7b-finetune-nm-mask-moe-sparse-4e-2k-2of4-imp ...",
+      "url": "https://huggingface.co/KKHYA/llavaqwen3-1.7b-finetune-nm-mask-moe-sparse-4e-2k-2of4-imp-randrouter_20260811_014823/tree/main",
+      "snippet": "Instructions to use KKHYA/llavaqwen3-1.7b-finetune-nm-mask-moe-sparse-4e-2k-2of4-imp-randrouter_20260811_014823 with libraries, inference providers, notebooks, and local apps."
+    },
+    {
+      "title": "Llavaqwen3 1.7b Finetune Nm Mask Moe Sparse 4e 2k 2of4 B5 Fixmag ...",
+      "url": "https://free2aitools.com/model/kkhya/llavaqwen3-1.7b-finetune-nm-mask-moe-sparse-4e-2k-2of4-b5-fixmag-routeronly_20260805_220232",
+      "snippet": "Deep dive into Llavaqwen3 1.7b Finetune Nm Mask Moe Sparse 4e 2k 2of4 B5 Fixmag Routeronly 20260805 220232."
+    },
+    {
+      "title": "Llavaqwen3 1.7b Finetune Nm Mask Moe Sparse 1e 1k 2of4 B6 1e1k 20260805 ...",
+      "url": "https://free2aitools.com/model/kkhya/llavaqwen3-1.7b-finetune-nm-mask-moe-sparse-1e-1k-2of4-b6-1e1k_20260805_211951",
+      "snippet": "Deep dive into Llavaqwen3 1.7b Finetune Nm Mask Moe Sparse 1e 1k 2of4 B6 1e1k 20260805 211951."
+    },
+    {
+      "title": "Llavaqwen3 1.7b Finetune Adapter Moe Sparse 4e 2k B7a Pesc D64 20260806 ...",
+      "url": "https://free2aitools.com/model/kkhya/llavaqwen3-1.7b-finetune-adapter-moe-sparse-4e-2k-b7a-pesc-d64_20260806_215150",
+      "snippet": "Deep dive into Llavaqwen3 1.7b Finetune Adapter Moe Sparse 4e 2k B7a Pesc D64 20260806 215150."
+    }
+  ]
+}

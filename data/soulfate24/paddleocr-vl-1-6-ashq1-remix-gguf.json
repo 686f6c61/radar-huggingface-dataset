@@ -1,0 +1,89 @@
+{
+  "schema": 1,
+  "id": "Soulfate24/PaddleOCR-VL-1.6-ASHQ1-Remix-GGUF",
+  "slug": "soulfate24-paddleocr-vl-1-6-ashq1-remix-gguf",
+  "author": "Soulfate24",
+  "url": "https://huggingface.co/Soulfate24/PaddleOCR-VL-1.6-ASHQ1-Remix-GGUF",
+  "created_at": "2026-08-30T13:02:46.000Z",
+  "updated_at": "2026-08-30T13:10:29.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "PaddleOCR",
+  "languages": [
+    "en",
+    "zh",
+    "multilingual"
+  ],
+  "tags": [
+    "PaddleOCR",
+    "gguf",
+    "ERNIE4.5",
+    "PaddlePaddle",
+    "image-to-text",
+    "ocr",
+    "document-parse",
+    "layout",
+    "table",
+    "formula",
+    "chart",
+    "seal",
+    "spotting",
+    "quantization",
+    "ashq1",
+    "imatrix",
+    "image-text-to-text",
+    "en",
+    "zh",
+    "multilingual",
+    "base_model:PaddlePaddle/PaddleOCR-VL-1.6",
+    "base_model:quantized:PaddlePaddle/PaddleOCR-VL-1.6",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 466654208,
+  "parameters_human": "466.7M",
+  "storage_bytes": 3670388384,
+  "storage_human": "3.7 GB",
+  "base_model": "PaddlePaddle/PaddleOCR-VL-1.6",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - PaddlePaddle/PaddleOCR: Turn any PDF or image document into ...",
+      "url": "https://github.com/PaddlePaddle/PaddleOCR",
+      "snippet": "Transforming messy visuals into structured data for the LLM era. SOTA Document VLM: Featuring PaddleOCR-VL-1.6 (0.9B), the industry&#x27;s leading lightweight vision-language model for document parsing. It achieves 96.3% accuracy on OmniDocBench v1.6, leads in text, formula, and table recognition, and shows significantly enhanced capabilities in ancient documents, rare characters, seals, and charts ..."
+    },
+    {
+      "title": "GitHub - Lefyd24/paddleocr: Turn any PDF or image document into ...",
+      "url": "https://github.com/Lefyd24/paddleocr",
+      "snippet": "SOTA Document VLM: Featuring PaddleOCR-VL-1.6 (0.9B), the industry&#x27;s leading lightweight vision-language model for document parsing. It achieves 96.3% accuracy on OmniDocBench v1.6, leads in text, formula, and table recognition, and shows significantly enhanced capabilities in ancient documents, rare characters, seals, and charts, with ..."
+    },
+    {
+      "title": "PaddlePaddle/PaddleOCR-VL-1.6 · Hugging Face",
+      "url": "https://huggingface.co/PaddlePaddle/PaddleOCR-VL-1.6",
+      "snippet": "Acknowledgments We would like to thank PaddleFormers, Keye, MinerU, OmniDocBench for providing valuable code, model weights and benchmarks. We also appreciate everyone&#x27;s contribution to this open-source project! Citation If you find PaddleOCR-VL-1.6 helpful, feel free to give us a star and citation."
+    },
+    {
+      "title": "Home - PaddleOCR Documentation",
+      "url": "https://www.paddleocr.ai/main/en/index.html",
+      "snippet": "PaddleOCR-VL-1.5 is a new iterative version of the PaddleOCR-VL series. Based on comprehensive optimization of the core capabilities of version 1.0, the model achieves 94.5% accuracy on the authoritative document parsing benchmark OmniDocBench v1.5, surpassing top global general-purpose large models and document parsing-specific models."
+    },
+    {
+      "title": "PaddleOCR Documentation — Complete Guide & API Reference",
+      "url": "https://paddleocr.dev/doc",
+      "snippet": "PaddleOCR-VL — Vision-language model for document parsing. Uses PaddleOCR-VL-1.6 (0.9B parameters) to achieve 96.33% accuracy on OmniDocBench v1.6 — SOTA for open-source document AI. PP-ChatOCRv4 — Conversational document understanding. Chat with your PDFs and images using natural language queries backed by PaddleOCR&#x27;s extraction pipeline."
+    }
+  ]
+}

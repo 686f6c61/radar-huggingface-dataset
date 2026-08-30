@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "WeiChow/DiffusionOPSD",
+  "slug": "weichow-diffusionopsd",
+  "author": "WeiChow",
+  "url": "https://huggingface.co/WeiChow/DiffusionOPSD",
+  "created_at": "2026-08-20T16:06:17.000Z",
+  "updated_at": "2026-08-26T04:08:46.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-image",
+  "library": "diffusers",
+  "languages": [],
+  "tags": [
+    "diffusers",
+    "safetensors",
+    "diffusion",
+    "text-to-image",
+    "image-generation",
+    "reinforcement-learning",
+    "self-distillation",
+    "lora",
+    "arxiv:2608.24646",
+    "base_model:Tongyi-MAI/Z-Image-Turbo",
+    "base_model:adapter:Tongyi-MAI/Z-Image-Turbo",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 9,
+  "downloads_30d": 0,
+  "trending_score": 9,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1107279528,
+  "storage_human": "1.1 GB",
+  "base_model": "stabilityai/stable-diffusion-3.5-medium, Tongyi-MAI/Z-Image-Turbo",
+  "formats": [
+    "diffusers",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - worldbench/DiffusionOPSD: On-Policy Self-Distillation in ...",
+      "url": "https://github.com/worldbench/DiffusionOPSD",
+      "snippet": "DiffusionOPSD closes this gap with an on-policy self-distillation loop. A frozen behavior policy collects low-noise query states and clean-output anchors; differentiable reward gradients construct bounded positive and negative targets around each anchor; the trainable policy then fits these detached targets under a finite update budget."
+    },
+    {
+      "title": "WeiChow/DiffusionOPSD · Hugging Face",
+      "url": "https://huggingface.co/WeiChow/DiffusionOPSD",
+      "snippet": "WeiChow / DiffusionOPSD like 0 Safetensors License:apache-2.0 Model card FilesFiles and versions xet Community Copy to bucket new"
+    },
+    {
+      "title": "DiffusionOPSD — On-Policy Self-Distillation in Diffusion Models",
+      "url": "https://diffusionopsd.github.io/",
+      "snippet": "A practical on-policy self-distillation framework for efficient and diagnosable diffusion post-training."
+    },
+    {
+      "title": "weichow23 (Wei Chow) · GitHub",
+      "url": "https://github.com/weichow23/",
+      "snippet": "weichow23 has 14 repositories available. Follow their code on GitHub."
+    },
+    {
+      "title": "[2608.24646] On-Policy Self-Distillation in Diffusion Models",
+      "url": "https://arxiv.org/abs/2608.24646",
+      "snippet": "Reinforcement learning can align diffusion models with human preferences and task-specific objectives, but endpoint rewards do not specify how an intermediate denoising prediction should change. We introduce DiffusionOPSD as an on-policy self-distillation framework that converts image-level reward guidance into explicit targets for clean-output predictions at sampled queries. At each outer ..."
+    }
+  ]
+}

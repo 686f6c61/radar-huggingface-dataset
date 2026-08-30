@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "latent-variable/pocket-tts-cloning-en",
+  "slug": "latent-variable-pocket-tts-cloning-en",
+  "author": "latent-variable",
+  "url": "https://huggingface.co/latent-variable/pocket-tts-cloning-en",
+  "created_at": "2026-08-30T16:59:44.000Z",
+  "updated_at": "2026-08-30T17:04:04.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-speech",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "text-to-speech",
+    "voice-cloning",
+    "mirror",
+    "base_model:kyutai/pocket-tts",
+    "base_model:finetune:kyutai/pocket-tts",
+    "license:cc-by-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 219029196,
+  "storage_human": "219 MB",
+  "base_model": "kyutai/pocket-tts",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - kyutai-labs/pocket-tts: A TTS that fits in your CPU (and pocket)",
+      "url": "https://github.com/kyutai-labs/pocket-tts",
+      "snippet": "pocket-tts-server by @ai-joe-git A lightweight, real-time voice cloning and chat server with OpenAI-compatible API. Clone any voice with just 20 seconds of audio and chat with AI using that voice instantly."
+    },
+    {
+      "title": "Pocket TTS: a high-quality TTS with voice cloning that runs on CPU",
+      "url": "https://kyutai.org/pocket-tts/",
+      "snippet": "These two changes make the modeling task much easier, allowing for a smaller model, but are deterministic and come with a limited set of voices. With Pocket TTS, we manage to bridge this gap and obtain a tiny model that runs on CPU without sacrificing any advantages of the larger models."
+    },
+    {
+      "title": "GitHub - Sbhave01/pocket-tts-experiment: Private, on-device voice AI ...",
+      "url": "https://github.com/Sbhave01/pocket-tts-experiment",
+      "snippet": "The Pocket TTS model is by Kyutai Labs (CC-BY-4.0); this project is independent and not affiliated with them. Its terms prohibit cloning a voice without the speaker&#x27;s consent — the cloning example here used my own voice."
+    },
+    {
+      "title": "Pocket_TTS_Colab.ipynb - Colab - Google Colab",
+      "url": "https://colab.research.google.com/github/NeuralFalconYT/Voice-Clone/blob/main/Pocket_TTS_Colab.ipynb",
+      "snippet": "🐱 Pocket-TTS GitHub Repository 🤗 Pocket-TTS Hugging Face Model Card 💻 Pocket-TTS Online Demo 📄 License: Provided under the MIT License ⚠️ Usage Disclaimer Use of this voice cloning model is subject to strict ethical and legal standards. By using this tool, you agree not to engage in any of the following prohibited activities: Fraud or Deception: Using cloned voices to create ..."
+    },
+    {
+      "title": "Pocket TTS Model",
+      "url": "https://deepwiki.com/Blaizzy/mlx-audio-swift/4.3.3-pockettts-model",
+      "snippet": "Unlike other TTS models in the SDK, PocketTTS is specifically designed for efficient CPU inference and uses a fixed set of eight predefined voices rather than arbitrary voice cloning. For information about the common TTS interface, see SpeechGenerationModel Protocol. For details on the Mimi codec used by this model, see Mimi Codec."
+    }
+  ]
+}

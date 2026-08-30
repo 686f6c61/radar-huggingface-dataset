@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "mustafacolakoglu94/llm-query-complexity-classifier-onnx",
+  "slug": "mustafacolakoglu94-llm-query-complexity-classifier-onnx",
+  "author": "mustafacolakoglu94",
+  "url": "https://huggingface.co/mustafacolakoglu94/llm-query-complexity-classifier-onnx",
+  "created_at": "2026-08-30T15:04:20.000Z",
+  "updated_at": "2026-08-30T15:19:52.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "onnx",
+    "modernbert",
+    "text-classification",
+    "query-complexity",
+    "base_model:anasnassar/llm-query-complexity-classifier",
+    "base_model:quantized:anasnassar/llm-query-complexity-classifier",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 749596094,
+  "storage_human": "750 MB",
+  "base_model": "anasnassar/llm-query-complexity-classifier",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ONNX Model Zoo",
+      "url": "https://github.com/onnx/models",
+      "snippet": "Welcome to the ONNX Model Zoo! The Open Neural Network Exchange (ONNX) is an open standard format created to represent machine learning models. Supported by a robust community of partners, ONNX defines a common set of operators and a common file format to enable AI developers to use models with a variety of frameworks, tools, runtimes, and compilers. This repository is a curated collection of ..."
+    },
+    {
+      "title": "Large Language Models For Text Classification: Case Study And ...",
+      "url": "https://arxiv.org/html/2501.08457v1",
+      "snippet": "The multilayered abilities of LLMs prompted us to investigate their effectiveness in addressing two complex classification tasks: (i) fake news detection, and (ii) employee review classification based on the working location. With these classification scenarios we compare multiple LLMs with ML and state-of-the-art models, and identify prompting strategies that can enhance LLM performance. In ..."
+    },
+    {
+      "title": "onnx (onnx) - Hugging Face",
+      "url": "https://huggingface.co/onnx",
+      "snippet": "ONNX is an open ecosystem for interoperable AI models"
+    },
+    {
+      "title": "ONNX Runtime | Models",
+      "url": "https://onnxruntime.ai/models",
+      "snippet": "ONNX Models - find ONNX models for natural language processing, computer vision, and more."
+    },
+    {
+      "title": "GitHub - onnx/onnx: Open standard for machine learning interoperability",
+      "url": "https://github.com/onnx/onnx",
+      "snippet": "Open Neural Network Exchange (ONNX) is an open ecosystem that empowers AI developers to choose the right tools as their project evolves. ONNX provides an open source format for AI models, both deep learning and traditional ML. It defines an extensible computation graph model, as well as definitions of built-in operators and standard data types."
+    }
+  ]
+}

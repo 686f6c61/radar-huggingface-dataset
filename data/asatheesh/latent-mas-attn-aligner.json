@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "asatheesh/latent-mas-attn-aligner",
+  "slug": "asatheesh-latent-mas-attn-aligner",
+  "author": "asatheesh",
+  "url": "https://huggingface.co/asatheesh/latent-mas-attn-aligner",
+  "created_at": "2026-08-30T13:35:51.000Z",
+  "updated_at": "2026-08-30T13:35:53.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "pytorch",
+  "languages": [],
+  "tags": [
+    "pytorch",
+    "safety",
+    "multi-agent",
+    "latent-reasoning",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 109099313,
+  "storage_human": "109 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "asatheesh/latent-mas-aligner · Hugging Face",
+      "url": "https://huggingface.co/asatheesh/latent-mas-aligner",
+      "snippet": "asatheesh / latent-mas-aligner like 0 PyTorch safety latent-mas alignment qwen3 llama-guard License:apache-2.0 Model card FilesFiles and versions xet Community Copy to bucket new LatentMAS Aligner — Qwen3-4B ↔ Llama-Guard-3-8B (attention-pool MLP4k, 60 epochs) Files Architecture Load recipe Training config Training set Evaluation Deploy-time results (three-threshold sweep) Comparison with ..."
+    },
+    {
+      "title": "asatheesh (Anirudh Satheesh) - Hugging Face",
+      "url": "https://huggingface.co/asatheesh/datasets",
+      "snippet": "Recent Activity updated a dataset1 day ago asatheesh/latent-mas-safety-dataset published a dataset3 days ago asatheesh/latent-mas-safety-dataset authored a paperabout 2 months ago Compositional Adversarial Training for Robust Visual Watermarking View all activity"
+    },
+    {
+      "title": "GitHub - Gen-Verse/LatentMAS: [ICML 2026 Spotlight] Latent ...",
+      "url": "https://github.com/Gen-Verse/LatentMAS",
+      "snippet": "LatentMAS is a multi-agent reasoning framework that moves agent collaboration from token space into the model&#x27;s latent space. Instead of producing long textual reasoning traces, agents communicate by passing latent thoughts through their own working memory. LatentMAS has the following key features: Efficient multi-step reasoning with drastically fewer tokens Training-free latent-space ..."
+    },
+    {
+      "title": "[2511.20639] Latent Collaboration in Multi-Agent Systems",
+      "url": "https://arxiv.org/abs/2511.20639",
+      "snippet": "Multi-agent systems (MAS) extend large language models (LLMs) from independent single-model reasoning to coordinative system-level intelligence. While existing LLM agents depend on text-based mediation for reasoning and communication, we take a step forward by enabling models to collaborate directly within the continuous latent space. We introduce LatentMAS, an end-to-end training-free ..."
+    },
+    {
+      "title": "raw.githubusercontent.com",
+      "url": "https://raw.githubusercontent.com/Gen-Verse/LatentMAS/refs/heads/main/README.md",
+      "snippet": "Latent Collaboration in Multi-Agent Systems --- ## 💡 Introduction **LatentMAS** is a multi-agent reasoning framework that **moves agent collaboration from token space into the model&#x27;s latent space**. Instead of producing long textual reasoning traces, agents communicate by **passing latent thoughts** through their own **working memory**. LatentMAS has the following key features ..."
+    }
+  ]
+}

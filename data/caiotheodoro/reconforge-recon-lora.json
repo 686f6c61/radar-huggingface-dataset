@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "caiotheodoro/reconforge-recon-lora",
+  "slug": "caiotheodoro-reconforge-recon-lora",
+  "author": "caiotheodoro",
+  "url": "https://huggingface.co/caiotheodoro/reconforge-recon-lora",
+  "created_at": "2026-08-08T15:16:41.000Z",
+  "updated_at": "2026-08-30T14:43:28.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "mlx",
+  "languages": [],
+  "tags": [
+    "mlx",
+    "fine-tune",
+    "finance",
+    "reconciliation",
+    "lora",
+    "structured-outputs",
+    "json-mode",
+    "agent-evaluation",
+    "severity-weighted",
+    "text-generation",
+    "dataset:caiotheodoro/recon-eval",
+    "base_model:mlx-community/Qwen3-1.7B-4bit",
+    "base_model:adapter:mlx-community/Qwen3-1.7B-4bit",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 39870300,
+  "storage_human": "40 MB",
+  "base_model": "mlx-community/Qwen3-1.7B-4bit",
+  "formats": [
+    "mlx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "caiotheodoro/reconforge-recon-lora · Hugging Face",
+      "url": "https://huggingface.co/caiotheodoro/reconforge-recon-lora",
+      "snippet": "caiotheodoro / reconforge-recon-lora like 0 MLX fine-tune finance reconciliation lora License:apache-2.0 Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "GitHub - caiotheodoro/reconforge: Benchmark-grade evaluation for ...",
+      "url": "https://github.com/caiotheodoro/reconforge",
+      "snippet": "A locally fine-tuned Qwen3-1.7B (MLX-LoRA, ~2h on an Apple M5) that beats a frontier model on the metric that matters — severity-weighted recall — on a benchmark built with reproduced ARC-style methodology, with the whole system running on Kafka + Temporal Cloud + a Postgres audit ledger."
+    },
+    {
+      "title": "reconforge/README.md at main · caiotheodoro/reconforge",
+      "url": "https://github.com/caiotheodoro/reconforge/blob/main/README.md",
+      "snippet": "A locally fine-tuned Qwen3-1.7B (MLX-LoRA, ~2h on an Apple M5) that beats a frontier model on the metric that matters — severity-weighted recall — on a benchmark built with reproduced ARC-style methodology, with the whole system running on Kafka + Temporal Cloud + a Postgres audit ledger."
+    },
+    {
+      "title": "caiotheodoro (Caio Theodoro) - Hugging Face",
+      "url": "https://huggingface.co/caiotheodoro/models",
+      "snippet": "User profile of Caio Theodoro on Hugging Face"
+    },
+    {
+      "title": "Reconforge Recon Lora - AI Model Insights & Benchmarks",
+      "url": "https://free2aitools.com/model/caiotheodoro/reconforge-recon-lora",
+      "snippet": "Registry entry for model Reconforge Recon Lora; source metadata pending."
+    }
+  ]
+}

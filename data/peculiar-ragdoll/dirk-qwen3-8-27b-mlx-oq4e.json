@@ -1,0 +1,85 @@
+{
+  "schema": 1,
+  "id": "peculiar-ragdoll/Dirk-Qwen3.8-27B-MLX-oQ4e",
+  "slug": "peculiar-ragdoll-dirk-qwen3-8-27b-mlx-oq4e",
+  "author": "peculiar-ragdoll",
+  "url": "https://huggingface.co/peculiar-ragdoll/Dirk-Qwen3.8-27B-MLX-oQ4e",
+  "created_at": "2026-08-20T21:23:24.000Z",
+  "updated_at": "2026-08-30T13:26:12.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "mlx",
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "qwen3_5",
+    "omlx",
+    "apple-silicon",
+    "oq",
+    "quantized",
+    "qwen3.8",
+    "mtp",
+    "speculative-decoding",
+    "token-efficient",
+    "agentic-coding",
+    "vision",
+    "image-text-to-text",
+    "conversational",
+    "en",
+    "zh",
+    "base_model:Qwen/Qwen3.8-27B",
+    "base_model:quantized:Qwen/Qwen3.8-27B",
+    "license:apache-2.0",
+    "4-bit",
+    "region:us"
+  ],
+  "likes": 8,
+  "downloads_30d": 401,
+  "trending_score": 8,
+  "parameters": 4926789872,
+  "parameters_human": "4.93B",
+  "storage_bytes": 16994282380,
+  "storage_human": "17.0 GB",
+  "base_model": "Qwen/Qwen3.8-27B",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "peculiar-ragdoll/Dirk-Qwen3.8-27B-MLX-oQ4e · Hugging Face",
+      "url": "https://huggingface.co/peculiar-ragdoll/Dirk-Qwen3.8-27B-MLX-oQ4e",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "peculiar-ragdoll/Dirk-Qwen3.8-27B-GGUF · Hugging Face",
+      "url": "https://huggingface.co/peculiar-ragdoll/Dirk-Qwen3.8-27B-GGUF",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Dirk Qwen3.8 27B MLX OQ4e by peculiar-ragdoll - LLM Explorer",
+      "url": "https://llm-explorer.com/model/peculiar-ragdoll%2FDirk-Qwen3.8-27B-MLX-oQ4e,4ozakojuw0rrmBa1YoF4CV",
+      "snippet": "Dirk Qwen3.8 27B MLX OQ4e is an open-source 27b LLM by peculiar-ragdoll. VRAM 16.9GB. Compare benchmarks, capabilities, and deployment details on LLM Explorer."
+    },
+    {
+      "title": "peculiar-ragdoll--Dirk-Qwen3.8-27B-MLX-oQ4e - omlx.ai",
+      "url": "https://omlx.ai/benchmarks/performance/srtmrvup",
+      "snippet": "919.9 PP tok/s, 61.1 TG tok/s — peculiar-ragdoll--Dirk-Qwen3.8-27B-MLX-oQ4e (4bit) on M5 Max (40c) 128GB"
+    },
+    {
+      "title": "README.md · peculiar-ragdoll/Dirk-Qwen3.8-27B-MLX-oQ4e at main",
+      "url": "https://d6108366.hf-mirror.com/peculiar-ragdoll/Dirk-Qwen3.8-27B-MLX-oQ4e/blob/main/README.md?code=true",
+      "snippet": "peculiar-ragdoll / Dirk-Qwen3.8-27B-MLX-oQ4e like 0 Image-Text-to-Text MLX Safetensors English Chinese qwen3_5 omlx apple-silicon oq quantized qwen3.8 mtp speculative-decoding token-efficient agentic-coding vision conversational 4-bit precision License:apache-2.0 Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use ..."
+    }
+  ]
+}

@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "EarthlyEric6/Sandrone_gptsovits",
+  "slug": "earthlyeric6-sandrone_gptsovits",
+  "author": "EarthlyEric6",
+  "url": "https://huggingface.co/EarthlyEric6/Sandrone_gptsovits",
+  "created_at": "2026-08-30T14:39:41.000Z",
+  "updated_at": "2026-08-30T14:39:41.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "EarthlyEric/gptsovits-rs - GitHub",
+      "url": "https://github.com/EarthlyEric/gptsovits-rs",
+      "snippet": "📖 專案簡介 (Overview) gptsovits-rs 是一個使用 純 Rust (Pure Rust) 開發的高效能語音合成（TTS）伺服器，專為部署 GPT-SoVITS 模型而生。"
+    },
+    {
+      "title": "gptsovits-rs/README.md at main · EarthlyEric/gptsovits-rs",
+      "url": "https://github.com/EarthlyEric/gptsovits-rs/blob/main/README.md",
+      "snippet": "📖 專案簡介 (Overview) gptsovits-rs 是一個使用 純 Rust (Pure Rust) 開發的高效能語音合成（TTS）伺服器，專為部署 GPT-SoVITS 模型而生。"
+    },
+    {
+      "title": "GitHub - RVC-Boss/GPT-SoVITS: 1 min voice data can also be used to ...",
+      "url": "https://github.com/RVC-Boss/GPT-SoVITS",
+      "snippet": "1 min voice data can also be used to train a good TTS model! (few shot voice cloning) - RVC-Boss/GPT-SoVITS"
+    },
+    {
+      "title": "gptsovits-rs/AGENT.md at main · EarthlyEric/gptsovits-rs",
+      "url": "https://github.com/EarthlyEric/gptsovits-rs/blob/main/AGENT.md",
+      "snippet": "1. 系統概觀 gptsovits-rs 是一個使用純 Rust 開發的高效能語音合成（TTS）伺服器，旨在實現以下核心功能："
+    },
+    {
+      "title": "EarthlyEric (EarthlyEric6) · GitHub",
+      "url": "https://github.com/EarthlyEric",
+      "snippet": "HI, I am EarthlyEric6. KAI JUN YANG. EarthlyEric has 54 repositories available. Follow their code on GitHub."
+    }
+  ]
+}

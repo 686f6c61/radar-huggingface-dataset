@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "khusipatra195/steel_defect_segmentation",
+  "slug": "khusipatra195-steel_defect_segmentation",
+  "author": "khusipatra195",
+  "url": "https://huggingface.co/khusipatra195/steel_defect_segmentation",
+  "created_at": "2026-08-30T12:10:33.000Z",
+  "updated_at": "2026-08-30T12:16:10.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "keras",
+  "languages": [],
+  "tags": [
+    "keras",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 76056642,
+  "storage_human": "76 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Steel Surface Defect Detection and Segmentation Project",
+      "url": "https://github.com/ogulcanakca/steel-defect-segmentation-unet-effnet",
+      "snippet": "The steel surface defect segmentation solution developed in this project can provide significant benefits in various industrial and manufacturing environments: Automated Quality Control: It can automate the time-consuming quality control processes performed by the human eye on steel production lines, offering the possibility of 100% inspection."
+    },
+    {
+      "title": "Steel Defect Detection - a Hugging Face Space by NarekGabrielyan",
+      "url": "https://huggingface.co/spaces/NarekGabrielyan/steel-defect-detection",
+      "snippet": "Production-ready AI system for detecting and segmenting surface defects on steel using a 3-model deep learning ensemble."
+    },
+    {
+      "title": "GitHub - djene-mengistu/dseg_models: This repo contains implementation ...",
+      "url": "https://github.com/djene-mengistu/dseg_models",
+      "snippet": "This repo contains implementation of deep learning-based steel surface defect segmentation models. Extensive experiments on several deep learning frameworks have been presented with various performance analysis and comparison."
+    },
+    {
+      "title": "Steel surface defect detection and segmentation using deep neural ...",
+      "url": "https://www.sciencedirect.com/science/article/pii/S259012302500060X",
+      "snippet": "This paper proposes several deep-learning-based computer vision techniques, including semantic segmentation and object detection models, to detect surface defects on steel sheets. The U-Net, FCN-8, and FPN models are implemented for segmentation, while the YOLOv4 model is used for object detection."
+    },
+    {
+      "title": "Steel surface defect segmentation with SME-DeeplabV3+",
+      "url": "https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0329628",
+      "snippet": "Accurate segmentation of steel surface defects is crucial for ensuring steel quality. This paper presents a steel surface defect segmentation method based on SME-DeepLabV3+ to improve the accuracy and efficiency of segmentation. First, StarNet is adopted as the backbone network, whose unique star operation can achieve efficient transformation from low-dimensional space to high-dimensional ..."
+    }
+  ]
+}

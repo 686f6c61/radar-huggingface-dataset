@@ -1,0 +1,78 @@
+{
+  "schema": 1,
+  "id": "CMB-ClimateModernBERT/Merge_Soup_CX",
+  "slug": "cmb-climatemodernbert-merge_soup_cx",
+  "author": "CMB-ClimateModernBERT",
+  "url": "https://huggingface.co/CMB-ClimateModernBERT/Merge_Soup_CX",
+  "created_at": "2026-08-30T15:46:20.000Z",
+  "updated_at": "2026-08-30T15:46:27.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "fill-mask",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "modernbert",
+    "fill-mask",
+    "climate",
+    "domain-adaptation",
+    "continued-pretraining",
+    "merge",
+    "mergekit",
+    "academic-text",
+    "web-text",
+    "synthetic-data",
+    "en",
+    "base_model:answerdotai/ModernBERT-base",
+    "base_model:finetune:answerdotai/ModernBERT-base",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 149655232,
+  "parameters_human": "149.7M",
+  "storage_bytes": 299324680,
+  "storage_human": "299 MB",
+  "base_model": "answerdotai/ModernBERT-base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ClimateModernBERT - a sraj Collection - Hugging Face",
+      "url": "https://huggingface.co/collections/sraj/climatemodernbert",
+      "snippet": "ClimateModernBERT updated about 1 month ago Final Models from the paper - ClimateModernBERT Upvote - Sort: Collection"
+    },
+    {
+      "title": "sraj/Merge_CMB_MARK_CX_LRD_CMB_FWEdu_V2_FastText_CX_LRD_CMB_WX_SYN_CX ...",
+      "url": "https://huggingface.co/sraj/Merge_CMB_MARK_CX_LRD_CMB_FWEdu_V2_FastText_CX_LRD_CMB_WX_SYN_CX_LRD",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GitHub - EnnengYang/Awesome-Model-Merging-Methods-Theories-Applications ...",
+      "url": "https://github.com/EnnengYang/Awesome-Model-Merging-Methods-Theories-Applications",
+      "snippet": "To address this gap, this survey provides a comprehensive overview of model merging methods and theories, their applications in various domains and settings, and future research directions. Specifically, we first propose a new taxonomic approach that exhaustively discusses existing model merging methods."
+    },
+    {
+      "title": "Model Merging: A Survey - by Cameron R. Wolfe, Ph.D.",
+      "url": "https://cameronrwolfe.substack.com/p/model-merging",
+      "snippet": "After a certain (reasonable) amount of training, all networks obtained from the same base model are linearly mode connected. As we will see, this finding is highly related to model merging, as we typically merge models by averaging or interpolating their weights."
+    },
+    {
+      "title": "Model Merge Explained: Build Models without Training",
+      "url": "https://data-processing.club/merge/",
+      "snippet": "An accessible guide to model merging, from model soup and LoRA merging to task vectors and NTK intuition, showing how to combine skills without retraining."
+    }
+  ]
+}

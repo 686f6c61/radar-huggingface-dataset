@@ -1,0 +1,78 @@
+{
+  "schema": 1,
+  "id": "CMB-ClimateModernBERT/Merge_TA_L10_LRD",
+  "slug": "cmb-climatemodernbert-merge_ta_l10_lrd",
+  "author": "CMB-ClimateModernBERT",
+  "url": "https://huggingface.co/CMB-ClimateModernBERT/Merge_TA_L10_LRD",
+  "created_at": "2026-08-30T15:43:41.000Z",
+  "updated_at": "2026-08-30T15:43:47.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "fill-mask",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "modernbert",
+    "fill-mask",
+    "climate",
+    "domain-adaptation",
+    "continued-pretraining",
+    "merge",
+    "mergekit",
+    "academic-text",
+    "web-text",
+    "synthetic-data",
+    "en",
+    "base_model:answerdotai/ModernBERT-base",
+    "base_model:finetune:answerdotai/ModernBERT-base",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 149655232,
+  "parameters_human": "149.7M",
+  "storage_bytes": 299324680,
+  "storage_human": "299 MB",
+  "base_model": "answerdotai/ModernBERT-base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ClimateModernBERT - a sraj Collection - Hugging Face",
+      "url": "https://huggingface.co/collections/sraj/climatemodernbert",
+      "snippet": "ClimateModernBERT updated about 1 month ago Final Models from the paper - ClimateModernBERT Upvote - Sort: Collection"
+    },
+    {
+      "title": "Merged CMB - a sraj Collection - Hugging Face",
+      "url": "https://huggingface.co/collections/sraj/merged-cmb",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GitHub - EnnengYang/Awesome-Model-Merging-Methods-Theories-Applications ...",
+      "url": "https://github.com/EnnengYang/Awesome-Model-Merging-Methods-Theories-Applications",
+      "snippet": "To address this gap, this survey provides a comprehensive overview of model merging methods and theories, their applications in various domains and settings, and future research directions. Specifically, we first propose a new taxonomic approach that exhaustively discusses existing model merging methods."
+    },
+    {
+      "title": "Toolkits | CMB",
+      "url": "https://www.computationalmodelbuilder.org/toolkits/",
+      "snippet": "These are the toolkits that are part of the Computational Model Builder Suite."
+    },
+    {
+      "title": "Merge requests · CMB / CMB · GitLab",
+      "url": "https://gitlab.kitware.com/cmb/cmb/-/merge_requests?sort=updated_desc&state=merged",
+      "snippet": "CI: Deactivating ParaView 5.9 Testing !872 · created Aug 27, 2024 by Robert M. O&#x27;Bara area:buildproject:2654 Merged 2 Approved updated Aug 28, 2024 ENH: Updating CI for Units System support for \"*\" !870 · created Jul 24, 2024 by Robert M. O&#x27;Bara Merged 2 updated Jul 25, 2024 ci: update superbuild bundle for Xcode update !869 · created May 04, 2024 by Ben Boeckel Merged 1 updated May 04 ..."
+    }
+  ]
+}

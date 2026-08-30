@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "nrl-ai/samexporter-onnx-models",
+  "slug": "nrl-ai-samexporter-onnx-models",
+  "author": "nrl-ai",
+  "url": "https://huggingface.co/nrl-ai/samexporter-onnx-models",
+  "created_at": "2026-08-30T14:48:14.000Z",
+  "updated_at": "2026-08-30T14:48:57.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": "image-segmentation",
+  "library": "onnxruntime",
+  "languages": [],
+  "tags": [
+    "onnxruntime",
+    "onnx",
+    "segment-anything",
+    "sam",
+    "sam2",
+    "sam3",
+    "mobilesam",
+    "efficientsam",
+    "image-segmentation",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 3949673808,
+  "storage_human": "3.9 GB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "SAMExporter — Export SAM Models to ONNX - anylabeling.nrl.ai",
+      "url": "https://anylabeling.nrl.ai/docs/samexporter",
+      "snippet": "SAMExporter — Export SAM Models to ONNX SAMExporter is the tool used to export the Segment Anything family of models into ONNX format for deployment in AnyLabeling and other applications. It supports the full model family: SAM, MobileSAM, SAM2, SAM2.1, and SAM3. GitHub: vietanhdev/samexporter (opens in a new tab)"
+    },
+    {
+      "title": "GitHub - vietanhdev/samexporter: Export and run SAM, MobileSAM ...",
+      "url": "https://github.com/vietanhdev/samexporter",
+      "snippet": "Export and run SAM, MobileSAM, EfficientSAM, SAM 2/2.1, and SAM 3 as ONNX for portable image segmentation - vietanhdev/samexporter"
+    },
+    {
+      "title": "samexporter/samexporter at main · vietanhdev/samexporter - GitHub",
+      "url": "https://github.com/vietanhdev/samexporter/tree/main/samexporter",
+      "snippet": "Exporting Segment Anything, MobileSAM, and Segment Anything 2 into ONNX format for easy deployment - vietanhdev/samexporter"
+    },
+    {
+      "title": "samexporter · PyPI",
+      "url": "https://pypi.org/project/samexporter/",
+      "snippet": "Tips Use quantized models (*.quant.onnx) for faster inference and smaller file size with minimal accuracy loss. SAM ViT-B is the fastest SAM1 variant; SAM ViT-H is the most accurate. SAM2 Tiny / SAM2.1 Tiny are good CPU-friendly choices for SAM2. SAM3 is slower due to its three-model pipeline but uniquely supports natural-language object queries."
+    },
+    {
+      "title": "vietanhdev/samexporter | DeepWiki",
+      "url": "https://deepwiki.com/vietanhdev/samexporter",
+      "snippet": "The samexporter system follows a two-stage pipeline: model export and inference. The export stage converts PyTorch models to ONNX format, while the inference stage uses the converted models for segmentation:"
+    }
+  ]
+}

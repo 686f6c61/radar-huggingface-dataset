@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "johnallenman/mocov3-matching-warmup79",
+  "slug": "johnallenman-mocov3-matching-warmup79",
+  "author": "johnallenman",
+  "url": "https://huggingface.co/johnallenman/mocov3-matching-warmup79",
+  "created_at": "2026-08-30T15:04:14.000Z",
+  "updated_at": "2026-08-30T15:04:22.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "mocov3",
+    "pytorch",
+    "matching",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 24832,
+  "parameters_human": "24832",
+  "storage_bytes": 99808,
+  "storage_human": "99808 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "johnallenman (John Allen) - Hugging Face",
+      "url": "https://huggingface.co/johnallenman",
+      "snippet": "User profile of John Allen on Hugging Face"
+    },
+    {
+      "title": "GitHub - facebookresearch/moco-v3: PyTorch implementation of MoCo v3 ...",
+      "url": "https://github.com/facebookresearch/moco-v3",
+      "snippet": "This is a PyTorch implementation of MoCo v3 for self-supervised ResNet and ViT. The original MoCo v3 was implemented in Tensorflow and run in TPUs. This repo re-implements in PyTorch and GPUs. Despite the library and numerical differences, this repo reproduces the results and observations in the paper."
+    },
+    {
+      "title": "Hugging Face - The AI community building the future.",
+      "url": "https://huggingface.co/",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "LLM Leaderboard & AI Model Benchmarks — August 2026",
+      "url": "https://benchlm.ai/",
+      "snippet": "LLM Leaderboard & AI Model Benchmarks — August 2026 Compare frontier AI models by quality, cost, and context. 105 Supported and 123 Estimated models among 406 tracked LLMs — 408 benchmarks, real pricing, and runtime data in one place."
+    },
+    {
+      "title": "AI Aimbot Models & YOLO Detection Models | MossyModels",
+      "url": "https://mossymodels.com/",
+      "snippet": "Browse 661+ free YOLO and ONNX detection models across 43+ games. Community library for Fortnite, Valorant, Warzone, Apex Legends, and more."
+    }
+  ]
+}

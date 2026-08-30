@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "Aygul10/Trx",
+  "slug": "aygul10-trx",
+  "author": "Aygul10",
+  "url": "https://huggingface.co/Aygul10/Trx",
+  "created_at": "2026-08-30T17:09:50.000Z",
+  "updated_at": "2026-08-30T18:07:57.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "llama",
+    "llama.cpp",
+    "unsloth",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 8030261312,
+  "parameters_human": "8.03B",
+  "storage_bytes": 4920734368,
+  "storage_human": "4.9 GB",
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "AI Aimbot Models & YOLO Detection Models | MossyModels",
+      "url": "https://mossymodels.com/",
+      "snippet": "Browse 661+ free YOLO and ONNX detection models across 43+ games. Community library for Fortnite, Valorant, Warzone, Apex Legends, and more."
+    },
+    {
+      "title": "CivArchive (CivitAI Archive) - AI Model Archive",
+      "url": "https://civitaiarchive.com/",
+      "snippet": "Browse and discover AI models from CivitAI, TensorArt, and SeaArt. Community-driven archive preserving access to AI resources."
+    },
+    {
+      "title": "trx - AI Art Model | PixAI",
+      "url": "https://pixai.art/en/model/1894257224645910327",
+      "snippet": "Generate stunning anime art with the &#x27;trx&#x27; model on PixAI. Browse artworks made with this model and try it free."
+    },
+    {
+      "title": "𝓐𝓵𝓲 𝓣𝓾𝓷𝓰𝓪 (@ali.aygul10) • Instagram photos and videos",
+      "url": "https://www.instagram.com/ali.aygul10/",
+      "snippet": "251 Followers, 245 Following, 1 Posts - See Instagram photos and videos from 퓐퓵퓲 퓣퓾퓷퓰퓪 (@ali.aygul10)"
+    },
+    {
+      "title": "AI Model Downloads - 498 Model Examples - AI Models",
+      "url": "https://aimodels.org/ai-models/",
+      "snippet": "Directory of free Open Source AI and machine learning model downloads! Our collection features the latest models in speech to text and image generation."
+    }
+  ]
+}

@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "Rin247/gemma-4-12B-it-Feral-Aquarion-INT8",
+  "slug": "rin247-gemma-4-12b-it-feral-aquarion-int8",
+  "author": "Rin247",
+  "url": "https://huggingface.co/Rin247/gemma-4-12B-it-Feral-Aquarion-INT8",
+  "created_at": "2026-08-30T17:39:48.000Z",
+  "updated_at": "2026-08-30T17:45:01.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "gemma4_unified",
+    "quantized",
+    "int8",
+    "8-bit",
+    "int8_weight_only",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 11959730224,
+  "parameters_human": "11.96B",
+  "storage_bytes": 13051808682,
+  "storage_human": "13.1 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "google/gemma-4-12B · Hugging Face",
+      "url": "https://huggingface.co/google/gemma-4-12B",
+      "snippet": "Transparency and Accountability This model card summarizes details on the models&#x27; architecture, capabilities, limitations, and evaluation processes. A responsibly developed open model offers the opportunity to share innovation by making VLM technology accessible to developers and researchers across the AI ecosystem. Risks identified and ..."
+    },
+    {
+      "title": "Rin247/gemma-3-12b-it-Uncensored-Aquarion-FP4 · Hugging Face",
+      "url": "https://huggingface.co/Rin247/gemma-3-12b-it-Uncensored-Aquarion-FP4",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Gemma 4 — Google DeepMind",
+      "url": "https://deepmind.google/models/gemma/gemma-4/",
+      "snippet": "Safety Gemma 4 models undergo the same rigorous infrastructure security protocols as our proprietary models. By choosing Gemma 4, enterprises and sovereign organizations gain a trusted, transparent foundation that delivers state-of-the-art capabilities while meeting the highest standards for security and reliability."
+    },
+    {
+      "title": "Introducing Gemma 4 12B - The Keyword",
+      "url": "https://blog.google/innovation-and-ai/technology/developers-tools/introducing-gemma-4-12B/",
+      "snippet": "An overview of Gemma 4 12B, a model designed to bring high-performance multimodal intelligence directly to your laptop."
+    },
+    {
+      "title": "Gemma 4 12B: The Developer Guide - Google Developers Blog",
+      "url": "https://developers.googleblog.com/gemma-4-12b-the-developer-guide/",
+      "snippet": "Meet Gemma 4 12B: the first medium-sized, encoder-free multimodal model capable of natively ingesting audio and video. Ideal for local AI development with 16GB VRAM, Hugging Face integrations, and drop-in local API servers."
+    }
+  ]
+}

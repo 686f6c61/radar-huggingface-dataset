@@ -1,0 +1,97 @@
+{
+  "schema": 1,
+  "id": "google/gemma-2-2b-it",
+  "slug": "google-gemma-2-2b-it",
+  "author": "google",
+  "url": "https://huggingface.co/google/gemma-2-2b-it",
+  "created_at": "2024-07-16T10:51:39.000Z",
+  "updated_at": "2024-08-27T19:41:44.000Z",
+  "license": "gemma",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gemma2",
+    "text-generation",
+    "conversational",
+    "arxiv:2009.03300",
+    "arxiv:1905.07830",
+    "arxiv:1911.11641",
+    "arxiv:1904.09728",
+    "arxiv:1905.10044",
+    "arxiv:1907.10641",
+    "arxiv:1811.00937",
+    "arxiv:1809.02789",
+    "arxiv:1911.01547",
+    "arxiv:1705.03551",
+    "arxiv:2107.03374",
+    "arxiv:2108.07732",
+    "arxiv:2110.14168",
+    "arxiv:2009.11462",
+    "arxiv:2101.11718",
+    "arxiv:2110.08193",
+    "arxiv:1804.09301",
+    "arxiv:2109.07958",
+    "arxiv:1804.06876",
+    "arxiv:2103.03874",
+    "arxiv:2304.06364",
+    "arxiv:1903.00161",
+    "arxiv:2206.04615",
+    "arxiv:2203.09509",
+    "arxiv:2403.13793",
+    "base_model:google/gemma-2-2b",
+    "base_model:finetune:google/gemma-2-2b",
+    "license:gemma",
+    "eval-results",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "deploy:sagemaker",
+    "region:us"
+  ],
+  "likes": 1469,
+  "downloads_30d": 758689,
+  "trending_score": 8,
+  "parameters": 2614341888,
+  "parameters_human": "2.61B",
+  "storage_bytes": 5288159306,
+  "storage_human": "5.3 GB",
+  "base_model": "google/gemma-2-2b",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": true,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "google/gemma-2b-it · Hugging Face",
+      "url": "https://huggingface.co/google/gemma-2b-it",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Gemma 2 model card - Google AI for Developers",
+      "url": "https://ai.google.dev/gemma/docs/core/model_card_2",
+      "snippet": "Model Data Data used for model training and how the data was processed. Training Dataset These models were trained on a dataset of text data that includes a wide variety of sources. The 27B model was trained with 13 trillion tokens, the 9B model was trained with 8 trillion tokens, and 2B model was trained with 2 trillion tokens. Here are the key components: Web Documents: A diverse collection ..."
+    },
+    {
+      "title": "google/gemma-2-2b · Hugging Face",
+      "url": "https://huggingface.co/google/gemma-2-2b",
+      "snippet": "Running the model through a CLI The local-gemma repository contains a lightweight wrapper around Transformers for running Gemma 2 through a command line interface, or CLI. Follow the installation instructions for getting started, then launch the CLI through the following command: local-gemma --model \"google/gemma-2-2b\" --prompt \"What is the capital of Mexico?\" Quantized Versions through ..."
+    },
+    {
+      "title": "Gemma — Google DeepMind",
+      "url": "https://deepmind.google/models/gemma/",
+      "snippet": "Gemma is a collection of lightweight, open models built from the same technology that powers our Gemini models."
+    },
+    {
+      "title": "Gemma models overview - Google AI for Developers",
+      "url": "https://ai.google.dev/gemma/docs",
+      "snippet": "Developed by Google DeepMind and other teams across Google, Gemma is named after the Latin gemma, meaning precious stone. The Gemma model weights are supported by developer tools that promote innovation, collaboration, and the responsible use of artificial intelligence (AI). You can get multiple variations of Gemma for general and specific use ..."
+    }
+  ]
+}

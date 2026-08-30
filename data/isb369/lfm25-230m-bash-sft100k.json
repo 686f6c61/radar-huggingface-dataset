@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "ISB369/lfm25-230m-bash-sft100k",
+  "slug": "isb369-lfm25-230m-bash-sft100k",
+  "author": "ISB369",
+  "url": "https://huggingface.co/ISB369/lfm25-230m-bash-sft100k",
+  "created_at": "2026-08-30T14:29:31.000Z",
+  "updated_at": "2026-08-30T14:29:44.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "lfm2",
+    "text-generation",
+    "trl",
+    "sft",
+    "conversational",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 229693184,
+  "parameters_human": "229.7M",
+  "storage_bytes": 918787352,
+  "storage_human": "919 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "LFM2.5-230M - Liquid Docs",
+      "url": "https://docs.liquid.ai/lfm/models/lfm25-230m",
+      "snippet": "Ultra-compact 230M parameter model for data extraction and lightweight on-device agentic tasks ← Back to Text Models LFM2.5-230M is Liquid AI&#x27;s smallest LFM2.5 text model, designed for edge devices with the tightest memory and compute budgets."
+    },
+    {
+      "title": "ISB369 (Alex) - Hugging Face",
+      "url": "https://huggingface.co/ISB369/datasets",
+      "snippet": "Sort: Recently updated. ISB369/shellminator-bash-clean. Viewer • Updated about 3 hours ago • 10.1k. ISB369/shellminator-bash-dataset. Viewer • Updated 2 days ago • 4k •"
+    },
+    {
+      "title": "LiquidAI/LFM2.5-Encoder-230M · Hugging Face",
+      "url": "https://huggingface.co/LiquidAI/LFM2.5-Encoder-230M",
+      "snippet": "LFM2.5-Encoder-230M LFM2.5-Encoder is a family of multilingual bidirectional encoders built on the LFM2 architecture, available in two sizes: LFM2.5-Encoder-230M (this model) — a lightweight encoder for tight latency and memory budgets, punching above its size class. LFM2.5-Encoder-350M — a larger sibling for maximum downstream quality. Both are masked language models with full ..."
+    },
+    {
+      "title": "LFM2.5-230M: Built to Run Anywhere | Blog - Liquid AI",
+      "url": "https://www.liquid.ai/blog/lfm2-5-230m",
+      "snippet": "Meet LFM2.5-230M, Liquid AI&#x27;s smallest model yet: a fast, open-weight foundation model for fine-tuning, edge deployment, tool use, and data extraction."
+    },
+    {
+      "title": "Liquid AI | Device-native foundation models.",
+      "url": "https://www.liquid.ai/",
+      "snippet": "Liquid AI builds efficient Liquid Foundation Models (LFMs) for on-device, edge, and cloud AI with low latency, privacy, and hardware-aware deployment."
+    }
+  ]
+}

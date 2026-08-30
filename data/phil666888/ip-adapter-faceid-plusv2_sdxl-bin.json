@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "phil666888/ip-adapter-faceid-plusv2_sdxl.bin",
+  "slug": "phil666888-ip-adapter-faceid-plusv2_sdxl-bin",
+  "author": "phil666888",
+  "url": "https://huggingface.co/phil666888/ip-adapter-faceid-plusv2_sdxl.bin",
+  "created_at": "2026-08-30T15:39:37.000Z",
+  "updated_at": "2026-08-30T15:39:37.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-to-image",
+  "library": "diffusers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "diffusers",
+    "text-to-image",
+    "stable-diffusion",
+    "en",
+    "arxiv:2308.06721",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 5768439171,
+  "storage_human": "5.8 GB",
+  "base_model": null,
+  "formats": [
+    "diffusers"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "h94/IP-Adapter-FaceID · Hugging Face",
+      "url": "https://huggingface.co/h94/IP-Adapter-FaceID",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "IP-Adapter-FaceID - faceid-plusv2_sdxl | Stable Diffusion XL Controlnet ...",
+      "url": "https://civitai.com/models/301776/ip-adapter-faceid",
+      "snippet": "An experimental version of IP-Adapter-FaceID: we use face ID embedding from a face recognition model instead of CLIP image embedding, additionally, we use LoRA to improve ID consistency. IP-Adapter-FaceID can generate various style images conditioned on a face with only text prompts."
+    },
+    {
+      "title": "ip-adapter-faceid-plusv2_sdxl_lora.safetensors · h94/IP-Adapter-FaceID ...",
+      "url": "https://huggingface.co/h94/IP-Adapter-FaceID/blob/main/ip-adapter-faceid-plusv2_sdxl_lora.safetensors",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "IP-Adapter-FaceID faceid-plusv2_sdxl for SDXL 1.0 | CivArchive",
+      "url": "https://civarchive.com/models/301776?modelVersionId=338917",
+      "snippet": "Download IP-Adapter-FaceID faceid-plusv2_sdxl, a Controlnet for SDXL 1.0. 1 file: ipAdapterFaceid_faceidPlusv2Sdxl.bin (1.4 GB). Published Feb 11, 2024. 73 live mirrors. An experimental version of IP-Adapter-FaceID: we use face ID embedding from a face recognition model instead of CLIP im…"
+    },
+    {
+      "title": "GitHub - cubiq/ComfyUI_IPAdapter_plus",
+      "url": "https://github.com/cubiq/ComfyUI_IPAdapter_plus/tree/main",
+      "snippet": "The community has baked some interesting IPAdapter models. /ComfyUI/models/ipadapter ip_plus_composition_sd15.safetensors, general composition ignoring style and content, more about it here ip_plus_composition_sdxl.safetensors, SDXL version Kolors-IP-Adapter-Plus.bin, IPAdapter Plus for Kolors model Kolors-IP-Adapter-FaceID-Plus.bin, IPAdapter FaceIDv2 for Kolors model. Note: Kolors is trained ..."
+    }
+  ]
+}

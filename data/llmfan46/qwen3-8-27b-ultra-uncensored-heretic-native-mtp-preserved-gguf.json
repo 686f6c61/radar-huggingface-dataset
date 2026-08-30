@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "llmfan46/Qwen3.8-27B-Ultra-Uncensored-Heretic-Native-MTP-Preserved-GGUF",
+  "slug": "llmfan46-qwen3-8-27b-ultra-uncensored-heretic-native-mtp-preserved-gguf",
+  "author": "llmfan46",
+  "url": "https://huggingface.co/llmfan46/Qwen3.8-27B-Ultra-Uncensored-Heretic-Native-MTP-Preserved-GGUF",
+  "created_at": "2026-08-30T11:15:44.000Z",
+  "updated_at": "2026-08-30T11:45:13.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "gguf",
+    "heretic",
+    "uncensored",
+    "decensored",
+    "abliterated",
+    "mpoa",
+    "mtp",
+    "image-text-to-text",
+    "base_model:llmfan46/Qwen3.8-27B-Ultra-Uncensored-Heretic-Native-MTP-Preserved",
+    "base_model:quantized:llmfan46/Qwen3.8-27B-Ultra-Uncensored-Heretic-Native-MTP-Preserved",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 27320697856,
+  "parameters_human": "27.32B",
+  "storage_bytes": 212704759072,
+  "storage_human": "212.7 GB",
+  "base_model": "llmfan46/Qwen3.8-27B-Ultra-Uncensored-Heretic-Native-MTP-Preserved",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "llmfan46/Qwen3.8-27B-Ultra-Uncensored-Heretic-Native-MTP-Preserved ...",
+      "url": "https://huggingface.co/llmfan46/Qwen3.8-27B-Ultra-Uncensored-Heretic-Native-MTP-Preserved",
+      "snippet": "Instructions to use llmfan46/Qwen3.8-27B-Ultra-Uncensored-Heretic-Native-MTP-Preserved with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "Qwen3.8-27B Uncensored GGUF: Abliterated Local Build",
+      "url": "https://www.orcarouter.ai/blog/qwen-3-8-27b-uncensored-gguf",
+      "snippet": "Bottom line \"Qwen 3.8 27B uncensored GGUF\" has an answer, and it is a concrete download: Qwen3.8-27B-Uncensored-GGUF — F16 plus 12 quantization tiers for llama.cpp, the abliterated weights from our FP8 build, 262K context, vision, and MTP, under Apache 2.0 and research-only."
+    },
+    {
+      "title": "Qwen3.8-27B Uncensored MLX: OrcaRouter Build Explained | explainx.ai Blog",
+      "url": "https://www.explainx.ai/blog/orcarouter-qwen3-8-27b-uncensored-mlx-august-2026",
+      "snippet": "OrcaRouter&#x27;s abliterated Qwen3.8-27B, in MLX for Apple Silicon plus GGUF and FP8 — what abliteration did and the real hardware/safety tradeoffs."
+    },
+    {
+      "title": "GitHub - AlibabaCloud-Official/Qwen3.8-27B: Native multimodal dense LLM ...",
+      "url": "https://github.com/AlibabaCloud-Official/Qwen3.8-27B",
+      "snippet": "Welcome to the repository for Qwen3.8-27B —the latest native multimodal dense open-weight model released by Alibaba&#x27;s Qwen team. Delivering top-tier performance for local hardware, Qwen3.8-27B excels at coding, agentic workflows, and office automation tasks."
+    },
+    {
+      "title": "Quantized Models for llmfan46/Qwen3.8-27B-Ultra-Uncensored-Heretic ...",
+      "url": "https://huggingface.co/models?other=base_model:quantized:llmfan46/Qwen3.8-27B-Ultra-Uncensored-Heretic-Native-MTP-Preserved",
+      "snippet": "Explore machine learning models. 1 Base only Inference AvailableInference Edit filters Sort: Trending Active filters: llmfan46/Qwen3.8-27B-Ultra-Uncensored-Heretic-Native-MTP-Preserved Clear all"
+    }
+  ]
+}

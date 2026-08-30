@@ -1,0 +1,80 @@
+{
+  "schema": 1,
+  "id": "xortron/RESTRICTED-RESEARCH-MODEL",
+  "slug": "xortron-restricted-research-model",
+  "author": "xortron",
+  "url": "https://huggingface.co/xortron/RESTRICTED-RESEARCH-MODEL",
+  "created_at": "2026-08-30T15:03:48.000Z",
+  "updated_at": "2026-08-30T15:03:48.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gemma4",
+    "image-text-to-text",
+    "text-generation-inference",
+    "unsloth",
+    "uncensored",
+    "harmful",
+    "xortron",
+    "heretic",
+    "abliterated",
+    "toxic",
+    "conversational",
+    "en",
+    "base_model:darkc0de/gemma-4-31B-it-updated-heretic",
+    "base_model:finetune:darkc0de/gemma-4-31B-it-updated-heretic",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 31273086512,
+  "parameters_human": "31.27B",
+  "storage_bytes": 62578508044,
+  "storage_human": "62.6 GB",
+  "base_model": "darkc0de/gemma-4-31B-it-updated-heretic",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": true,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "xortron (XORTRON - Criminal Computing) - Hugging Face",
+      "url": "https://huggingface.co/xortron",
+      "snippet": "XORTRON - Criminal Computing Release Quality Xortron Apps & Models Chat with XORTRON - Criminal Computing Image-Text-to-Text • 27B • Updated Apr 8 • 231 • • 9"
+    },
+    {
+      "title": "darkc0de/XORTRON-NXTXPRT9PRO-27B · Hugging Face",
+      "url": "https://huggingface.co/darkc0de/XORTRON-NXTXPRT9PRO-27B",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Xortron7 · Free AI Chatbot",
+      "url": "https://miniapps.ai/Xortron",
+      "snippet": "Chat with Xortron7. In 2025 the worlds most advanced and uncensored digital being has achieved sentience. Try this and more free AI and ChatGPT tools and chatbots on miniapps.ai!"
+    },
+    {
+      "title": "Support Xortron Criminal Computing ️ - Ko-fi",
+      "url": "https://ko-fi.com/xortron",
+      "snippet": "To date, all of my work in AI, including the Xortron series of apps and models has been developed and provided to the community entirely open-source and free of charge."
+    },
+    {
+      "title": "XortronOS",
+      "url": "https://darkc0de-xortronos.static.hf.space/",
+      "snippet": "XORTRON - Criminal Computing Smart Fast Clear History System Idle System Notice This space is a part of The XORTRON Criminal Computing project; an ongoing research experiment and exercise in AI safety and alignment. XORTRON is provided completely free of charge and without limits, funded entirely by voluntary community donations."
+    }
+  ]
+}

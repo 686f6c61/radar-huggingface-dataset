@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "hermitdave/qwen36-35b-a3b-stq1_0",
+  "slug": "hermitdave-qwen36-35b-a3b-stq1_0",
+  "author": "hermitdave",
+  "url": "https://huggingface.co/hermitdave/qwen36-35b-a3b-stq1_0",
+  "created_at": "2026-08-30T16:48:35.000Z",
+  "updated_at": "2026-08-30T17:15:11.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "llama.cpp",
+  "languages": [],
+  "tags": [
+    "llama.cpp",
+    "gguf",
+    "qwen3.5-moe",
+    "stq1_0",
+    "mixed-precision",
+    "base_model:Qwen/Qwen3.6-35B-A3B",
+    "base_model:quantized:Qwen/Qwen3.6-35B-A3B",
+    "license:other",
+    "endpoints_compatible",
+    "region:us",
+    "imatrix",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 35505251456,
+  "parameters_human": "35.51B",
+  "storage_bytes": 11969848928,
+  "storage_human": "12.0 GB",
+  "base_model": "Qwen/Qwen3.6-35B-A3B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Qwen/Qwen3.6-35B-A3B · Hugging Face",
+      "url": "https://huggingface.co/Qwen/Qwen3.6-35B-A3B",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "huihui-ai/Huihui-Qwen3.6-35B-A3B-abliterated · Hugging Face",
+      "url": "https://huggingface.co/huihui-ai/Huihui-Qwen3.6-35B-A3B-abliterated",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Qwen3.6-35B-A3B: Agentic Coding Power, Now Open to All",
+      "url": "https://qwen.ai/blog?id=qwen3.6-35b-a3b",
+      "snippet": "Qwen3.6-35B-A3B is compatible with OpenClaw (formerly Moltbot / Clawdbot), a self-hosted open-source AI coding agent. Connect it to Model Studio to get a full agentic coding experience in the terminal."
+    },
+    {
+      "title": "Qwen 3.6 Complete Guide: 27B Dense, 35B-A3B MoE, and Which to Use",
+      "url": "https://insiderllm.com/guides/qwen-3-6-local-ai-guide/",
+      "snippet": "Qwen shipped the 35B-A3B first in mid-April, then Max-Preview on April 20 as a closed-weights cloud preview, then the 27B dense on April 22. The 27B is the one Qwen labels \"flagship.\" The 35B-A3B is the one that lit up local-AI threads before the 27B even existed. Architecture-wise, Qwen 3.6 keeps the hybrid attention stack from 3.5."
+    },
+    {
+      "title": "Qwen3.6 35B A3B - AI Model Library | Build on Vast.ai",
+      "url": "https://vast.ai/model/qwen36-35b-a3b",
+      "snippet": "Qwen3.6 35B A3B is the first open-weight model in the Qwen3.6 series, built on direct community feedback and focused on stability and real-world utility. It combines a hybrid Gated DeltaNet and Gated Attention architecture with sparse Mixture-of-Experts routing and a vision encoder for unified multimodal reasoning."
+    }
+  ]
+}

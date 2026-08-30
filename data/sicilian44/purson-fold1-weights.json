@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "Sicilian44/Purson-fold1-weights",
+  "slug": "sicilian44-purson-fold1-weights",
+  "author": "Sicilian44",
+  "url": "https://huggingface.co/Sicilian44/Purson-fold1-weights",
+  "created_at": "2026-08-30T11:58:40.000Z",
+  "updated_at": "2026-08-30T11:59:30.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "base_model:adapter:OpenGVLab/InternVL3-78B-hf",
+    "llama-factory",
+    "lora",
+    "transformers",
+    "text-generation",
+    "conversational",
+    "base_model:OpenGVLab/InternVL3-78B-hf",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 853736077,
+  "storage_human": "854 MB",
+  "base_model": "OpenGVLab/InternVL3-78B-hf",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Sicilian44/t03 · Hugging Face",
+      "url": "https://huggingface.co/Sicilian44/t03",
+      "snippet": "Sicilian44 / t03 like 0 Text Generation PEFT Safetensors Transformers lora sft trl unsloth conversational arxiv:1910.09700 Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "Hugging Face - The AI community building the future.",
+      "url": "https://huggingface.co/",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "New ransomware targets AI model weights and can&#x27;t even collect the ...",
+      "url": "https://venturebeat.com/security/new-ransomware-targets-ai-model-weights-and-cant-even-collect-the-ransom",
+      "snippet": "A new ransomware strain scans specifically for AI model weights, and it has no way to collect a ransom, leaving victims facing a $500,000 rebuild."
+    },
+    {
+      "title": "Google Chrome may have silently installed 4GB AI model on your computer ...",
+      "url": "https://www.snopes.com/fact-check/google-chrome-ai-installed-computer/",
+      "snippet": "Google Chrome may have silently installed 4GB AI model on your computer. Here&#x27;s how to check We tested our own computers to see if the model was present."
+    },
+    {
+      "title": "&#x27;No clear consent flow for this download&#x27;: Google Chrome is silently ...",
+      "url": "https://www.tomsguide.com/ai/check-your-storage-chrome-may-be-downloading-a-4gb-ai-model-heres-what-we-know",
+      "snippet": "For now, Google&#x27;s position is essentially that the download is intentional, tied to AI features inside Chrome and users now have a manual opt-out option if they don&#x27;t want the model stored ..."
+    }
+  ]
+}

@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "xttt1210/ppo-LunarLander-v3",
+  "slug": "xttt1210-ppo-lunarlander-v3",
+  "author": "xttt1210",
+  "url": "https://huggingface.co/xttt1210/ppo-LunarLander-v3",
+  "created_at": "2026-08-30T11:23:03.000Z",
+  "updated_at": "2026-08-30T12:07:48.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "reinforcement-learning",
+  "library": "stable-baselines3",
+  "languages": [],
+  "tags": [
+    "stable-baselines3",
+    "LunarLander-v3",
+    "deep-reinforcement-learning",
+    "reinforcement-learning",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 735231,
+  "storage_human": "735231 B",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "official-ak/ppo-LunarLander-v3 · Hugging Face",
+      "url": "https://huggingface.co/official-ak/ppo-LunarLander-v3",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "QuentinLEE/ppo-LunarLander-v3 · Hugging Face",
+      "url": "https://huggingface.co/QuentinLEE/ppo-LunarLander-v3",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "sajeeb-ai/RL_PPO-LunarLander-v3 - GitHub",
+      "url": "https://github.com/sajeeb-ai/RL_PPO-LunarLander-v3",
+      "snippet": "Developed a reinforcement learning model utilizing the Proximal Policy Optimization (PPO) algorithm to train an agent in the LunarLander-v3 environment. The project encompassed configuring the environment, implementing the PPO algorithm using Stable-Baselines3, and evaluating the agent&#x27;s performance. The trained model and associated files are hosted on Hugging Face&#x27;s model hub, facilitating ..."
+    },
+    {
+      "title": "GitHub - Sapphire14S/Lunar-Lander-AI",
+      "url": "https://github.com/Sapphire14S/Lunar-Lander-AI",
+      "snippet": "Lunar-Lander-AI A Reinforcement Learning project that trains an autonomous Lunar Lander agent using Proximal Policy Optimization (PPO) in the OpenAI Gymnasium LunarLander-v3 environment."
+    },
+    {
+      "title": "[Lunar Lander] Proximal Policy Optimization (PPO).ipynb - Colab",
+      "url": "https://colab.research.google.com/github/kuds/rl-lunar-lander/blob/main/%5BLunar%20Lander%5D%20Proximal%20Policy%20Optimization%20(PPO).ipynb",
+      "snippet": "Proximal Policy Optimization (PPO) In this notebook, you will implement a PPO agent with Gymansium&#x27;s LunarLander-v3 environment."
+    }
+  ]
+}

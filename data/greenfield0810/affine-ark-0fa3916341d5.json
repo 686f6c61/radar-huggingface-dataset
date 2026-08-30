@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "greenfield0810/affine-ark-0fa3916341d5",
+  "slug": "greenfield0810-affine-ark-0fa3916341d5",
+  "author": "greenfield0810",
+  "url": "https://huggingface.co/greenfield0810/affine-ark-0fa3916341d5",
+  "created_at": "2026-08-30T12:56:44.000Z",
+  "updated_at": "2026-08-30T12:56:48.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_5_moe",
+    "image-text-to-text",
+    "affine",
+    "bittensor",
+    "subnet-120",
+    "mirror",
+    "archival",
+    "conversational",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 35951822704,
+  "parameters_human": "35.95B",
+  "storage_bytes": 71916586286,
+  "storage_human": "71.9 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "greenfield0810/affine-ark-e864839c8df1 · Hugging Face",
+      "url": "https://huggingface.co/greenfield0810/affine-ark-e864839c8df1",
+      "snippet": "greenfield0810 / affine-ark-e864839c8df1 like 0 Image-Text-to-Text Transformers Safetensors qwen3_5_moe affine bittensor subnet-120 mirror archival conversational Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "greenfield0810/affine-ark-bc254d78ac91 · Hugging Face",
+      "url": "https://huggingface.co/greenfield0810/affine-ark-bc254d78ac91",
+      "snippet": "greenfield0810 / affine-ark-bc254d78ac91 like 0 Image-Text-to-Text Transformers Safetensors qwen3_5_moe affine bittensor subnet-120 mirror archival conversational Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "affine-ark-da8188fa4889 API & Inference Endpoint | FriendliAI",
+      "url": "https://friendli.ai/models/greenfield0810/affine-ark-da8188fa4889",
+      "snippet": "Deploy affine-ark-da8188fa4889 with low-latency inference on FriendliAI. Get scalable API serving, high throughput, and production-grade reliability for AI agents."
+    },
+    {
+      "title": "CivArchive (CivitAI Archive) - AI Model Archive",
+      "url": "https://civitaiarchive.com/",
+      "snippet": "Browse and discover AI models from CivitAI, TensorArt, and SeaArt. Community-driven archive preserving access to AI resources."
+    },
+    {
+      "title": "Free AI 3D Model Generator - MeshGPT",
+      "url": "https://meshgpt.io/",
+      "snippet": "Create stunning 3D models from text or images instantly with our free AI 3d model generator. Transform your ideas into production-ready 3D assets with MeshGPT."
+    }
+  ]
+}

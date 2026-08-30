@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "promotion/Qwen3-8B-AbsoluteMaxmin-baseline",
+  "slug": "promotion-qwen3-8b-absolutemaxmin-baseline",
+  "author": "promotion",
+  "url": "https://huggingface.co/promotion/Qwen3-8B-AbsoluteMaxmin-baseline",
+  "created_at": "2026-08-30T14:26:47.000Z",
+  "updated_at": "2026-08-30T14:31:46.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "qwen3",
+    "alignment",
+    "multi-objective",
+    "preference-optimization",
+    "base_model:Qwen/Qwen3-8B",
+    "base_model:finetune:Qwen/Qwen3-8B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 8190735360,
+  "parameters_human": "8.19B",
+  "storage_bytes": 32774409894,
+  "storage_human": "32.8 GB",
+  "base_model": "Qwen/Qwen3-8B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Qwen/Qwen3-8B-Base · Hugging Face",
+      "url": "https://huggingface.co/Qwen/Qwen3-8B-Base",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "README.md · Qwen/Qwen3-8B at main - Hugging Face",
+      "url": "https://huggingface.co/Qwen/Qwen3-8B/blob/main/README.md",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Qwen3 Technical Report - arXiv.org",
+      "url": "https://arxiv.org/html/2505.09388v1",
+      "snippet": "Abstract In this work, we present Qwen3, the latest version of the Qwen model family. Qwen3 comprises a series of large language models (LLMs) designed to advance performance, efficiency, and multilingual capabilities. The Qwen3 series includes models of both dense and Mixture-of-Expert (MoE) architectures, with parameter scales ranging from 0.6 to 235 billion. A key innovation in Qwen3 is the ..."
+    },
+    {
+      "title": "ai-hub-models/src/qai_hub_models/models/qwen3_8b/README.md at ... - GitHub",
+      "url": "https://github.com/qualcomm/ai-hub-models/blob/main/src/qai_hub_models/models/qwen3_8b/README.md",
+      "snippet": "The Qwen3-8B is a state-of-the-art multilingual base language model with 8 billion parameters, excelling in language understanding, generation, coding, and mathematics. This is based on the implementation of Qwen3-8B found here. This repository contains scripts for optimized on-device export suitable to run on Qualcomm® devices."
+    },
+    {
+      "title": "Qwen3-8B - Qualcomm AI Hub",
+      "url": "https://aihub.qualcomm.com/compute/models/qwen3_8b",
+      "snippet": "Qwen3-8B State‑of‑the‑art large language model useful on a variety of language understanding and generation tasks. The Qwen3‑8B is a state‑of‑the‑art multilingual base language model with 8 billion parameters, excelling in language understanding, generation, coding, and mathematics."
+    }
+  ]
+}

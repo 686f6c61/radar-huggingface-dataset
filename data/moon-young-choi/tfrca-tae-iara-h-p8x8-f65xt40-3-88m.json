@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "Moon-Young-Choi/TFRCA-TAE-IARA-H-P8x8-F65xT40-3.88M",
+  "slug": "moon-young-choi-tfrca-tae-iara-h-p8x8-f65xt40-3-88m",
+  "author": "Moon-Young-Choi",
+  "url": "https://huggingface.co/Moon-Young-Choi/TFRCA-TAE-IARA-H-P8x8-F65xT40-3.88M",
+  "created_at": "2026-08-29T14:29:25.000Z",
+  "updated_at": "2026-08-30T14:43:23.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "pytorch",
+  "languages": [],
+  "tags": [
+    "pytorch",
+    "anomaly-detection",
+    "audio",
+    "underwater-acoustics",
+    "passive-sonar",
+    "spectrogram",
+    "transformer",
+    "autoencoder",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 15583852,
+  "storage_human": "16 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Moon-Young-Choi.github.io/DESIGN.md at main · Moon-Young-Choi/Moon ...",
+      "url": "https://github.com/Moon-Young-Choi/Moon-Young-Choi.github.io/blob/main/DESIGN.md",
+      "snippet": "Each case study follows system map → model and decisions → technology stack → validation and evidence boundary; use KaTeX for mathematical notation and HTML/CSS for diagrams. Case-study content should remain approximately one to two A4 pages when printed, prioritizing diagrams and equations over prose."
+    },
+    {
+      "title": "GitHub - Moon-Young-Choi/Moon-Young-Choi.github.io: Personal portfolio ...",
+      "url": "https://github.com/Moon-Young-Choi/Moon-Young-Choi.github.io",
+      "snippet": "Personal portfolio for Moonyoung Choi, a research engineer working across statistical learning, financial data systems, and reproducible research."
+    },
+    {
+      "title": "‪Moon-Young Choi‬ - ‪Google Scholar‬",
+      "url": "https://scholar.google.com/citations?user=J-Xb8JkAAAAJ&hl=en",
+      "snippet": "‪Chungnam National University‬ - ‪‪Cited by 411‬‬ - ‪Soft Material & Optical devices‬"
+    },
+    {
+      "title": "TeamPCP (UNC6780): Threat Actor Profile | KELA...",
+      "url": "https://www.kelacyber.com/blog/teampcp-background-and-notable-attacks/",
+      "snippet": "TeamPCP (UNC6780) turned security scanners into attack vectors. KELA traces the group from Telegram data brokering to the Trivy and LiteLLM compromises."
+    },
+    {
+      "title": "MoonYoung Choi (@moonyoung._.choi) • Instagram photos and videos",
+      "url": "https://www.instagram.com/moonyoung._.choi/",
+      "snippet": "151 Followers, 296 Following, 46 Posts - MoonYoung Choi (@moonyoung._.choi) on Instagram: \"\""
+    }
+  ]
+}

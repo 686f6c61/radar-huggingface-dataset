@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "ISB369/shellminator-qwen05b-dpo-selfplay",
+  "slug": "isb369-shellminator-qwen05b-dpo-selfplay",
+  "author": "ISB369",
+  "url": "https://huggingface.co/ISB369/shellminator-qwen05b-dpo-selfplay",
+  "created_at": "2026-08-30T18:53:09.000Z",
+  "updated_at": "2026-08-30T18:55:04.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gguf",
+    "qwen2",
+    "text-generation",
+    "trl",
+    "dpo",
+    "conversational",
+    "arxiv:1910.09700",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 494032768,
+  "parameters_human": "494.0M",
+  "storage_bytes": 2385392952,
+  "storage_human": "2.4 GB",
+  "base_model": null,
+  "formats": [
+    "gguf",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ISB369/shellminator-qwen05b-dpo · Hugging Face",
+      "url": "https://huggingface.co/ISB369/shellminator-qwen05b-dpo",
+      "snippet": "ISB369 / shellminator-qwen05b-dpo like 0 Text Generation Transformers Safetensors qwen2 trl dpo conversational text-generation-inference arxiv:1910.09700 Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "shellminator-qwen05b-dpo API & Inference Endpoint | FriendliAI",
+      "url": "https://friendli.ai/models/ISB369/shellminator-qwen05b-dpo",
+      "snippet": "Deploy shellminator-qwen05b-dpo with low-latency inference on FriendliAI. Get scalable API serving, high throughput, and production-grade reliability for AI agents."
+    },
+    {
+      "title": "ISB369 (Alex) - Hugging Face",
+      "url": "https://huggingface.co/datasets/ISB369/",
+      "snippet": "ISB369&#x27;s datasets2 Sort: Recently updated ISB369/shellminator-bash-clean Viewer •Updated about 3 hours ago•10.1k"
+    },
+    {
+      "title": "GitHub - dani007200964/Shellminator: Shellminator is a shimple shell ...",
+      "url": "https://github.com/dani007200964/Shellminator",
+      "snippet": "Shellminator is an easy-to-use terminal interface library designed for microcontroller environments. Thanks to its low resource usage, it can run on almost any microcontroller."
+    },
+    {
+      "title": "Features - Shellminator",
+      "url": "https://www.shellminator.org/features.html",
+      "snippet": "Features Interactive Terminal Interface - Just like a computer terminal, you can edit the current prompt text, delete characters, and navigate with arrow keys. We know it might not sound groundbreaking, but trust us—it makes life so much easier! 😊 Command History - No need to retype the same command over and over again. Just use the up and down arrows to browse through your previous ..."
+    }
+  ]
+}

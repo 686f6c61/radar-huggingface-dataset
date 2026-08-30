@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "Dan13iel/llamacpp-cuda-sm75",
+  "slug": "dan13iel-llamacpp-cuda-sm75",
+  "author": "Dan13iel",
+  "url": "https://huggingface.co/Dan13iel/llamacpp-cuda-sm75",
+  "created_at": "2026-08-30T14:18:41.000Z",
+  "updated_at": "2026-08-30T14:19:55.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 50479499,
+  "storage_human": "50 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Releases: ggml-org/llama.cpp - GitHub",
+      "url": "https://github.com/ggml-org/llama.cpp/releases",
+      "snippet": "LLM inference in C/C++. Contribute to ggml-org/llama.cpp development by creating an account on GitHub."
+    },
+    {
+      "title": "GitHub - ggml-org/llama.cpp: LLM inference in C/C++ · GitHub",
+      "url": "https://github.com/ggml-org/llama.cpp",
+      "snippet": "Custom CUDA kernels for running LLMs on NVIDIA GPUs (support for AMD GPUs via HIP and Moore Threads GPUs via MUSA) Vulkan and SYCL backend support CPU+GPU hybrid inference to partially accelerate models larger than the total VRAM capacity The llama.cpp project is build on top of the ggml library."
+    },
+    {
+      "title": "Setting up llama.cpp on Windows with CUDA 13 - Daniel Lautenbacher",
+      "url": "https://www.lautenbacher.io/en/general/setting-up-llama-cpp-on-windows-with-cuda-13/",
+      "snippet": "For this setup, use a suitable Windows binary of llama.cpp from the releases —specifically, the version for CUDA 13.3. For me, this works: Simply download the files and extract them to a folder such as C:cuda. Folder structure In the end, it should look something like this: Start the server Then you can start the … weiterlesen / read more weiterlesen / read more"
+    },
+    {
+      "title": "Run LLMs on Intel® GPUs Using llama.cpp",
+      "url": "https://www.intel.com/content/www/us/en/developer/articles/technical/run-llms-on-gpus-using-llama-cpp.html",
+      "snippet": "The newly developed SYCL backend in llama.cpp—a light, open source LLM framework—enables developers to deploy on the full spectrum of Intel GPUs."
+    },
+    {
+      "title": "New in llama.cpp: Model Management - Hugging Face",
+      "url": "https://huggingface.co/blog/ggml-org/model-management-in-llamacpp",
+      "snippet": "A Blog post by ggml-org on Hugging Face"
+    }
+  ]
+}

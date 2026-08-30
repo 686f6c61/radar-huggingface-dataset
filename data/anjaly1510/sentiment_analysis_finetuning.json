@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "Anjaly1510/Sentiment_analysis_finetuning",
+  "slug": "anjaly1510-sentiment_analysis_finetuning",
+  "author": "Anjaly1510",
+  "url": "https://huggingface.co/Anjaly1510/Sentiment_analysis_finetuning",
+  "created_at": "2026-08-30T18:10:27.000Z",
+  "updated_at": "2026-08-30T18:16:50.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "distilbert",
+    "text-classification",
+    "generated_from_trainer",
+    "base_model:distilbert/distilbert-base-uncased",
+    "base_model:finetune:distilbert/distilbert-base-uncased",
+    "license:apache-2.0",
+    "text-embeddings-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 66955010,
+  "parameters_human": "67.0M",
+  "storage_bytes": 535670321,
+  "storage_human": "536 MB",
+  "base_model": "distilbert-base-uncased",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Ganesh6204/Sentiment_analysis_finetuning · Hugging Face",
+      "url": "https://huggingface.co/Ganesh6204/Sentiment_analysis_finetuning",
+      "snippet": "Instructions to use Ganesh6204/Sentiment_analysis_finetuning with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Libraries Transformers How to use Ganesh6204/Sentiment_analysis_finetuning with Transformers: # Use a pipeline as a high-level helper from transformers import pipeline pipe = pipeline (\"text-classification\", model=\"Ganesh6204/Sentiment ..."
+    },
+    {
+      "title": "Dhanavardhan/Sentiment_analysis_finetuning · Hugging Face",
+      "url": "https://huggingface.co/Dhanavardhan/Sentiment_analysis_finetuning",
+      "snippet": "Sentiment_analysis_finetuning This model is a fine-tuned version of distilbert-base-uncased on an unknown dataset. It achieves the following results on the evaluation set:"
+    },
+    {
+      "title": "Fine-Tuning Sentiment Analysis Model - Medium",
+      "url": "https://ai.plainenglish.io/fine-tuning-sentiment-analysis-model-db088da71879",
+      "snippet": "How to Fine-Tune Sentiment Analysis Models with Hugging Face and PyTorch"
+    },
+    {
+      "title": "arXiv.org e-Print archive",
+      "url": "https://arxiv.org/",
+      "snippet": "arXiv is a free distribution service and an open-access archive for nearly 2.4 million scholarly articles in the fields of physics, mathematics, computer science, quantitative biology, quantitative finance, statistics, electrical engineering and systems science, and economics. Materials on this site are not peer-reviewed by arXiv."
+    },
+    {
+      "title": "AI Model & API Providers Analysis | Artificial Analysis",
+      "url": "https://artificialanalysis.ai/",
+      "snippet": "Comparison and analysis of AI models and API hosting providers. Independent benchmarks across key performance metrics including quality, price, output speed & latency."
+    }
+  ]
+}

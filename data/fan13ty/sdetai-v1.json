@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "fan13ty/sdetai-v1",
+  "slug": "fan13ty-sdetai-v1",
+  "author": "fan13ty",
+  "url": "https://huggingface.co/fan13ty/sdetai-v1",
+  "created_at": "2026-08-30T12:53:00.000Z",
+  "updated_at": "2026-08-30T13:19:03.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "sdetai",
+    "custom_code",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 64396970,
+  "storage_human": "64 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "CivArchive (CivitAI Archive) - AI Model Archive",
+      "url": "https://civitaiarchive.com/",
+      "snippet": "Browse and discover AI models from CivitAI, TensorArt, and SeaArt. Community-driven archive preserving access to AI resources."
+    },
+    {
+      "title": "AI Models | Civitai",
+      "url": "https://civitai.com/models",
+      "snippet": "Browse thousands of free Stable Diffusion & Flux models, LoRAs, checkpoints, and embeddings. The largest collection of AI image generation resources."
+    },
+    {
+      "title": "Civitai | Discover and Create AI Art",
+      "url": "https://civitai.red/",
+      "snippet": "Explore thousands of free Stable Diffusion & Flux models, create and share AI-generated art, and join the world&#x27;s largest community of generative AI creators."
+    },
+    {
+      "title": "Free AI Image Detector & Checker: Is a Photo AI? | Is It AI?",
+      "url": "https://isitai.com/ai-image-detector",
+      "snippet": "Free AI image detector and checker. Find out if a photo, picture, or artwork is AI-generated: Midjourney, DALL-E, Stable Diffusion and 20+ models. No signup."
+    },
+    {
+      "title": "Civitai Archive: Complete AI Model Library with 1000K+ Models",
+      "url": "https://www.seaart.ai/features/civitai-archive",
+      "snippet": "Massive Model Library Discover 1000K+ models covering all types from classic to cutting-edge releases. Our Civitai archive models update daily, ensuring you always have access to the latest AI innovations."
+    }
+  ]
+}

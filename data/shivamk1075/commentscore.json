@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "shivamk1075/commentscore",
+  "slug": "shivamk1075-commentscore",
+  "author": "shivamk1075",
+  "url": "https://huggingface.co/shivamk1075/commentscore",
+  "created_at": "2026-08-30T17:24:45.000Z",
+  "updated_at": "2026-08-30T18:16:29.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "tf",
+    "distilbert",
+    "text-classification",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 267951808,
+  "storage_human": "268 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - shivamk1075/CommentScore: This project is an attempt to reduce ...",
+      "url": "https://github.com/shivamk1075/CommentScore",
+      "snippet": "The only model to support 3-class classification including a Neutral label. Performance is lower overall, which is expected given the harder task and lighter model — but inference is extremely fast with no GPU required."
+    },
+    {
+      "title": "CommentScore/README.md at main · shivamk1075/CommentScore · GitHub",
+      "url": "https://github.com/shivamk1075/CommentScore/blob/main/README.md",
+      "snippet": "Model and vectorizer serialized with joblib for lightweight deployment. Custom Fine-Tuned DistilBERT (Complex model/): A DistilBERT model fine-tuned end-to-end on labeled YouTube comment data using TensorFlow and HuggingFace Transformers. Includes scripts for fine-tuning, model conversion, and inference."
+    },
+    {
+      "title": "LLM Leaderboard & AI Model Benchmarks — August 2026",
+      "url": "https://benchlm.ai/",
+      "snippet": "Compare 406 AI models across 408 benchmarks, with 228 ranked scores, source evidence, API pricing, context windows, runtime, and head-to-head pages."
+    },
+    {
+      "title": "Hugging Face - The AI community building the future.",
+      "url": "https://huggingface.co/",
+      "snippet": "The AI community building the future. ... Explore AI Apps or Browse 2M+ models Trending on this week"
+    },
+    {
+      "title": "AI Aimbot Models & YOLO Detection Models | MossyModels",
+      "url": "https://mossymodels.com/",
+      "snippet": "Browse 661+ free YOLO and ONNX detection models across 43+ games. Community library for Fortnite, Valorant, Warzone, Apex Legends, and more."
+    }
+  ]
+}

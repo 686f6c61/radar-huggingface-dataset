@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "bench-labs/cagliostro-v2",
+  "slug": "bench-labs-cagliostro-v2",
+  "author": "bench-labs",
+  "url": "https://huggingface.co/bench-labs/cagliostro-v2",
+  "created_at": "2026-08-30T02:34:50.000Z",
+  "updated_at": "2026-08-30T14:52:47.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "cagliostro",
+    "text-generation",
+    "causal-lm",
+    "small-language-model",
+    "from-scratch",
+    "custom_code",
+    "dataset:HuggingFaceFW/fineweb-edu",
+    "dataset:mlfoundations/dclm-baseline-1.0",
+    "dataset:HuggingFaceTB/smollm-corpus",
+    "arxiv:2603.09078",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 6,
+  "downloads_30d": 57,
+  "trending_score": 0,
+  "parameters": 150038400,
+  "parameters_human": "150.0M",
+  "storage_bytes": 300110264,
+  "storage_human": "300 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Cagliostro Lab · AI Models & Benchmarks | BenchGecko",
+      "url": "https://benchgecko.ai/provider/cagliostrolab",
+      "snippet": "Cagliostro Lab on BenchGecko. 3 models tracked, 3 open source. Benchmark scores, pricing, and performance data for every Cagliostro Lab model."
+    },
+    {
+      "title": "cagliostrolab (Cagliostro Labs) - Hugging Face",
+      "url": "https://huggingface.co/cagliostrolab",
+      "snippet": "A Virtual AI Lab where Tech Otakus turn dreams into reality. Discord: https://discord.gg/cqh9tZgbGc"
+    },
+    {
+      "title": "bench-labs/cagliostro-v1 · Hugging Face",
+      "url": "https://huggingface.co/bench-labs/cagliostro-v1?hardware=rtx-a2000-mobile-8gb",
+      "snippet": "Instructions to use bench-labs/cagliostro-v1 with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Libraries Transformers How to use bench-labs/cagliostro-v1 with Transformers:"
+    },
+    {
+      "title": "LLM Leaderboard & AI Model Benchmarks — August 2026",
+      "url": "https://benchlm.ai/",
+      "snippet": "LLM Leaderboard & AI Model Benchmarks — August 2026 Compare frontier AI models by quality, cost, and context. 105 Supported and 123 Estimated models among 406 tracked LLMs — 408 benchmarks, real pricing, and runtime data in one place."
+    },
+    {
+      "title": "Cagliostro Labs - GitHub",
+      "url": "https://github.com/CagliostroLab",
+      "snippet": "A Virtual AI Lab where Tech Otakus turn dreams into reality. - Cagliostro Labs"
+    }
+  ]
+}

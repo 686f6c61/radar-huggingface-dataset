@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "ajrayman/Friendliness_binary",
+  "slug": "ajrayman-friendliness_binary",
+  "author": "ajrayman",
+  "url": "https://huggingface.co/ajrayman/Friendliness_binary",
+  "created_at": "2024-10-02T16:32:37.000Z",
+  "updated_at": "2026-08-30T13:30:20.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "roberta",
+    "text-classification",
+    "generated_from_trainer",
+    "base_model:FacebookAI/roberta-base",
+    "base_model:finetune:FacebookAI/roberta-base",
+    "license:mit",
+    "text-embeddings-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 4,
+  "trending_score": 0,
+  "parameters": 124647170,
+  "parameters_human": "124.6M",
+  "storage_bytes": 12019291355,
+  "storage_human": "12.0 GB",
+  "base_model": "roberta-base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ajrayman (Adam) - Hugging Face",
+      "url": "https://huggingface.co/ajrayman",
+      "snippet": "ajrayman/Imagination_binary updated a model about 2 months ago ajrayman/Cautiousness_binary updated a model about 2 months ago ajrayman/Self_Discipline_binary View all activity"
+    },
+    {
+      "title": "LLM Leaderboard & AI Model Benchmarks — August 2026",
+      "url": "https://benchlm.ai/",
+      "snippet": "Compare 406 AI models across 408 benchmarks, with 228 ranked scores, source evidence, API pricing, context windows, runtime, and head-to-head pages."
+    },
+    {
+      "title": "AI Aimbot Models & YOLO Detection Models | MossyModels",
+      "url": "https://mossymodels.com/",
+      "snippet": "Browse 661+ free YOLO and ONNX detection models across 43+ games. Community library for Fortnite, Valorant, Warzone, Apex Legends, and more."
+    },
+    {
+      "title": "CivArchive (CivitAI Archive) - AI Model Archive",
+      "url": "https://civitaiarchive.com/",
+      "snippet": "Browse and discover AI models from CivitAI, TensorArt, and SeaArt. Community-driven archive preserving access to AI resources."
+    },
+    {
+      "title": "Models - Hugging Face",
+      "url": "https://huggingface.co/models",
+      "snippet": "Explore machine learning models."
+    }
+  ]
+}

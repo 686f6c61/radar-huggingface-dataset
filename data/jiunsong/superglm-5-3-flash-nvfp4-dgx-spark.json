@@ -1,0 +1,77 @@
+{
+  "schema": 1,
+  "id": "Jiunsong/SuperGLM-5.3-Flash-NVFP4-DGX-Spark",
+  "slug": "jiunsong-superglm-5-3-flash-nvfp4-dgx-spark",
+  "author": "Jiunsong",
+  "url": "https://huggingface.co/Jiunsong/SuperGLM-5.3-Flash-NVFP4-DGX-Spark",
+  "created_at": "2026-08-30T11:08:15.000Z",
+  "updated_at": "2026-08-30T11:15:26.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "glm5_next",
+    "image-text-to-text",
+    "glm",
+    "moe",
+    "nvfp4",
+    "dgx-spark",
+    "sglang",
+    "speculative-decoding",
+    "conversational",
+    "base_model:LibertAIDAI/GLM-5.3-Flash-NVFP4",
+    "base_model:quantized:LibertAIDAI/GLM-5.3-Flash-NVFP4",
+    "license:mit",
+    "endpoints_compatible",
+    "8-bit",
+    "modelopt",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 165496249182,
+  "parameters_human": "165.50B",
+  "storage_bytes": 194692661135,
+  "storage_human": "194.7 GB",
+  "base_model": "LibertAIDAI/GLM-5.3-Flash-NVFP4",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GLM-5.3-Flash: How to Run Locally - unsloth.ai",
+      "url": "https://unsloth.ai/docs/models/glm-5.3-flash",
+      "snippet": "Search and download GLM-5.3-Flash Go to Unsloth Chat or Model hub and search for GLM-5.3-Flash in the search bar and download your desired model and quant."
+    },
+    {
+      "title": "GLM-5.3-Flash on 2x NVIDIA DGX Spark - GitHub",
+      "url": "https://github.com/tonyd2wild/GLM-5.3-Flash-NVFP4-2x-DGX-Spark",
+      "snippet": "Working, benchmarked, same-day as the model drop. As far as we can tell this was the first working GLM-5.3-Flash deployment on DGX Spark hardware."
+    },
+    {
+      "title": "Jiunsong (Jun Song) - Hugging Face",
+      "url": "https://huggingface.co/Jiunsong/models",
+      "snippet": "User profile of Jun Song on Hugging Face"
+    },
+    {
+      "title": "GitHub - 0xSero/glm-5.3-flash-sglang-sm121 · GitHub",
+      "url": "https://github.com/0xSero/glm-5.3-flash-sglang-sm121",
+      "snippet": "Contribute to 0xSero/glm-5.3-flash-sglang-sm121 development by creating an account on GitHub."
+    },
+    {
+      "title": "README.md · Jiunsong/SuperGLM-5.2-abliterated-NVFP4 at main",
+      "url": "https://huggingface.co/Jiunsong/SuperGLM-5.2-abliterated-NVFP4/blob/main/README.md",
+      "snippet": "Notebooks Google Colab Kaggle Local AppsSettings vLLM How to use Jiunsong/SuperGLM-5.2-abliterated-NVFP4 with vLLM: Install from pip and serve model"
+    }
+  ]
+}

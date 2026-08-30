@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "Anivarth/anlp-assignment1-c1-byte300-aligned",
+  "slug": "anivarth-anlp-assignment1-c1-byte300-aligned",
+  "author": "Anivarth",
+  "url": "https://huggingface.co/Anivarth/anlp-assignment1-c1-byte300-aligned",
+  "created_at": "2026-08-30T14:15:41.000Z",
+  "updated_at": "2026-08-30T14:15:59.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 139610757,
+  "storage_human": "140 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "yharith/anlp-a1-transformer-ablation · Hugging Face",
+      "url": "https://huggingface.co/yharith/anlp-a1-transformer-ablation",
+      "snippet": "It has 3.47M parameters against C1&#x27;s 12.49M, because a vocabulary-free model carries no large embedding or output-projection matrices and its local decoder is small (d=64, 2 layers) next to C1&#x27;s decoder (d=256, 4 layers)."
+    },
+    {
+      "title": "CMU Advanced NLP F2025",
+      "url": "https://cmu-l3.github.io/anlp-fall2025/assignments/assignment1",
+      "snippet": "Llama2 is a transformer-based language model that improves on the original Llama architecture with enhanced performance and efficiency. Its key features include RMSNorm pre-normalization, SwiGLU activation, rotary positional embeddings (RoPE), and grouped-query attention (GQA). In this assignment, you will implement several of these components, which are explained below."
+    },
+    {
+      "title": "samvaran/2025801013_anlp_assignment1 · Hugging Face",
+      "url": "https://huggingface.co/samvaran/2025801013_anlp_assignment1",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Advanced-Natural-Language-Processing/ANLP_ASSIGNMENT1 (1 ... - GitHub",
+      "url": "https://github.com/sbedekar25/Advanced-Natural-Language-Processing/blob/master/ANLP_ASSIGNMENT1%20(1).ipynb",
+      "snippet": "Contribute to sbedekar25/Advanced-Natural-Language-Processing development by creating an account on GitHub."
+    },
+    {
+      "title": "anlp-fall2025-code/01_intro at main · cmu-l3/anlp-fall2025-code",
+      "url": "https://github.com/cmu-l3/anlp-fall2025-code/tree/main/01_intro",
+      "snippet": "19_quantization .gitignore README.md anlp-fall2025-code / 01_intro / wellecks update links"
+    }
+  ]
+}

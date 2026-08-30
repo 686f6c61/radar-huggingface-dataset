@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "xttt1210/dqn-CartPole-v1",
+  "slug": "xttt1210-dqn-cartpole-v1",
+  "author": "xttt1210",
+  "url": "https://huggingface.co/xttt1210/dqn-CartPole-v1",
+  "created_at": "2026-08-30T13:08:47.000Z",
+  "updated_at": "2026-08-30T13:22:20.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "reinforcement-learning",
+  "library": "stable-baselines3",
+  "languages": [],
+  "tags": [
+    "stable-baselines3",
+    "CartPole-v1",
+    "deep-reinforcement-learning",
+    "reinforcement-learning",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 186115,
+  "storage_human": "186115 B",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - beltromatti/cartpole-drl: A Deep Q-Network (DQN) agent trained ...",
+      "url": "https://github.com/beltromatti/cartpole-drl",
+      "snippet": "This project trains a DQN agent to balance a pole on a cart using the CartPole-v1 environment. The agent learns through experience replay and an epsilon-greedy policy, with periodic visualization and model checkpointing."
+    },
+    {
+      "title": "GitHub - haardik06/CartPole-Reinforcement-Learning-DQN: Deep ...",
+      "url": "https://github.com/haardik06/CartPole-Reinforcement-Learning-DQN",
+      "snippet": "This project implements a Deep Q-Network (DQN) agent using PyTorch to solve the CartPole-v1 environment from Gymnasium. The agent learns to balance a pole on a moving cart by interacting with the environment and maximizing cumulative rewards."
+    },
+    {
+      "title": "sb3/dqn-CartPole-v1 · Hugging Face",
+      "url": "https://huggingface.co/sb3/dqn-CartPole-v1",
+      "snippet": "This is a trained model of a DQN agent playing CartPole-v1 using the stable-baselines3 library and the RL Zoo. The RL Zoo is a training framework for Stable Baselines3 reinforcement learning agents, with hyperparameter optimization and pre-trained agents included."
+    },
+    {
+      "title": "xttt1210 (Xiaotan) - Hugging Face",
+      "url": "https://huggingface.co/xttt1210/models",
+      "snippet": "Recent Activity published a Spaceabout 5 hours ago xttt1210/LaryAgent View all activity"
+    },
+    {
+      "title": "Reinforcement Learning (DQN) Tutorial - PyTorch",
+      "url": "https://docs.pytorch.org/tutorials/intermediate/reinforcement_q_learning.html",
+      "snippet": "Reinforcement Learning (DQN) Tutorial # Created On: Mar 24, 2017 | Last Updated: Jun 16, 2025 | Last Verified: Nov 05, 2024 Author: Adam Paszke Mark Towers This tutorial shows how to use PyTorch to train a Deep Q Learning (DQN) agent on the CartPole-v1 task from Gymnasium. You might find it helpful to read the original Deep Q Learning (DQN) paper Task The agent has to decide between two ..."
+    }
+  ]
+}

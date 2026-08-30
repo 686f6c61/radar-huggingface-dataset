@@ -1,0 +1,78 @@
+{
+  "schema": 1,
+  "id": "sigmanih/google-gemma-4-12B-it-GGUF-Q8_0",
+  "slug": "sigmanih-google-gemma-4-12b-it-gguf-q8_0",
+  "author": "sigmanih",
+  "url": "https://huggingface.co/sigmanih/google-gemma-4-12B-it-GGUF-Q8_0",
+  "created_at": "2026-08-30T17:41:40.000Z",
+  "updated_at": "2026-08-30T17:50:29.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "en",
+    "it"
+  ],
+  "tags": [
+    "gguf",
+    "text-generation",
+    "sigma-studio",
+    "sigmanih",
+    "conversational",
+    "custom-model",
+    "llama.cpp",
+    "quantized",
+    "q8_0",
+    "en",
+    "it",
+    "base_model:google/gemma-4-12B-it",
+    "base_model:quantized:google/gemma-4-12B-it",
+    "license:other",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 11907350576,
+  "parameters_human": "11.91B",
+  "storage_bytes": 12669627904,
+  "storage_human": "12.7 GB",
+  "base_model": "google/gemma-4-12B-it",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "google/gemma-4-12B-it · Hugging Face",
+      "url": "https://huggingface.co/google/gemma-4-12B-it",
+      "snippet": "This model card is for the Gemma 4 12B Unified model, which is part of the Gemma 4 family of open models. Built with the same multimodal functionality as Gemma 4 E2B and E4B (text, audio, image, and video inputs), it brings native audio and vision understanding directly to local environments without the need for separate encoders."
+    },
+    {
+      "title": "google/gemma-4-12B · Hugging Face",
+      "url": "https://huggingface.co/google/gemma-4-12B",
+      "snippet": "This model card summarizes details on the models&#x27; architecture, capabilities, limitations, and evaluation processes. A responsibly developed open model offers the opportunity to share innovation by making VLM technology accessible to developers and researchers across the AI ecosystem."
+    },
+    {
+      "title": "Gemma 4 — Google DeepMind",
+      "url": "https://deepmind.google/models/gemma/gemma-4/",
+      "snippet": "Gemma 4 models undergo the same rigorous infrastructure security protocols as our proprietary models. By choosing Gemma 4, enterprises and sovereign organizations gain a trusted, transparent foundation that delivers state-of-the-art capabilities while meeting the highest standards for security and reliability."
+    },
+    {
+      "title": "Gemma 4 12b It - GGUF Model - local-ai-zone.github.io",
+      "url": "https://local-ai-zone.github.io/models/gemma-4-12b-it.html",
+      "snippet": "Download Gemma 4 12b It GGUF model. 25.2 GB, 519,916 downloads, 807 likes."
+    },
+    {
+      "title": "Gemma 4 12B: The Developer Guide - Google Developers Blog",
+      "url": "https://developers.googleblog.com/gemma-4-12b-the-developer-guide/",
+      "snippet": "Meet Gemma 4 12B: the first medium-sized, encoder-free multimodal model capable of natively ingesting audio and video. Ideal for local AI development with 16GB VRAM, Hugging Face integrations, and drop-in local API servers."
+    }
+  ]
+}

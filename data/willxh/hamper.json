@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "WillXH/HAMPER",
+  "slug": "willxh-hamper",
+  "author": "WillXH",
+  "url": "https://huggingface.co/WillXH/HAMPER",
+  "created_at": "2026-08-30T17:58:43.000Z",
+  "updated_at": "2026-08-30T18:00:08.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "reinforcement-learning",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "robotics",
+    "humanoid",
+    "unitree-g1",
+    "isaac-lab",
+    "rsl-rl",
+    "ppo",
+    "loco-manipulation",
+    "reinforcement-learning",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 58235790,
+  "storage_human": "58 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "WillXH/my_awesome_model · Hugging Face",
+      "url": "https://huggingface.co/WillXH/my_awesome_model",
+      "snippet": "WillXH / my_awesome_model like 0 Text Classification Transformers TensorBoard Safetensors bert Generated from Trainer Inference Endpoints License:apache-2.0 Model card FilesFiles and versionsMetricsTraining metrics Community Train Deploy Use this model my_awesome_model Model description Intended uses & limitations Training and evaluation data ..."
+    },
+    {
+      "title": "WillXH (William Xu) - Hugging Face",
+      "url": "https://huggingface.co/WillXH",
+      "snippet": "User profile of William Xu on Hugging Face"
+    },
+    {
+      "title": "AI in Hurricane Forecasting at the National Hurricane Center:",
+      "url": "https://www.weather.gov/news/261102-AI-Hurricane-Forecasting",
+      "snippet": "Artificial intelligence (AI) is a hot topic. How is the National Hurricane Center using AI in hurricane forecasting, especially during last year&#x27;s hurricane season? The use of AI in hurricane forecasting is accelerating. While NHC has used forms of AI tools for many years, new tools emerged more quickly than ever in 2025. Last season was all about experimentation, including first working with ..."
+    },
+    {
+      "title": "Free Private AI Chat & Roleplay | HammerAI",
+      "url": "https://www.hammerai.com/",
+      "snippet": "Chat with role-playing AI characters, generate images, and write stories - 100% free and completely private."
+    },
+    {
+      "title": "Harper - AI HR Teammate | 24/7 HR Automation - wisq.com",
+      "url": "https://www.wisq.com/harper",
+      "snippet": "Meet Harper, the world&#x27;s first AI HR Teammate. Always-on, fully contextualized, handling cases from policy compliance to performance management 24/7."
+    }
+  ]
+}

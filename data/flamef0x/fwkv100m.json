@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "FlameF0X/fwkv100m",
+  "slug": "flamef0x-fwkv100m",
+  "author": "FlameF0X",
+  "url": "https://huggingface.co/FlameF0X/fwkv100m",
+  "created_at": "2026-08-30T06:19:26.000Z",
+  "updated_at": "2026-08-30T19:21:58.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "onnx",
+    "safetensors",
+    "fwkv",
+    "feature-extraction",
+    "myosotis",
+    "text-generation",
+    "custom_code",
+    "en",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 101860800,
+  "parameters_human": "101.9M",
+  "storage_bytes": 3260426066,
+  "storage_human": "3.3 GB",
+  "base_model": null,
+  "formats": [
+    "onnx",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "FWKV - a FlameF0X Collection - Hugging Face",
+      "url": "https://huggingface.co/collections/FlameF0X/fwkv",
+      "snippet": "Unlock the magic of AI with handpicked models, awesome datasets, papers, and mind-blowing Spaces from FlameF0X"
+    },
+    {
+      "title": "FlameF0X (Daniel Fox) - Hugging Face",
+      "url": "https://huggingface.co/FlameF0X/spaces",
+      "snippet": "Pre-training text generator. (Brother, im 18) Please don&#x27;t try to contact me."
+    },
+    {
+      "title": "FWKV — Simplicity Is All You Need",
+      "url": "https://fwkv.github.io/",
+      "snippet": "FWKV (Feed-forward Weighted Key Value) is a small recurrent language model architecture proposed in May 2026 by FlameF0X. It began as a side project inspired by RWKV, then turned into something faster than any dense or MoE Transformer of similar size on ordinary CPUs."
+    },
+    {
+      "title": "TinyMoE 100M 2x8 Retrained by FlameF0X - llm-explorer.com",
+      "url": "https://llm-explorer.com/model/FlameF0X%2FTinyMoE-100m-2x8-retrained,2dwUykABZ3aVs66kyYSfkR",
+      "snippet": "TinyMoE 100M 2x8 Retrained is an open-source 100m LLM by FlameF0X. VRAM 0.4GB, 1K context. Compare benchmarks, capabilities, and deployment details on LLM Explorer."
+    },
+    {
+      "title": "FlameF0X - Repositories - GitHub",
+      "url": "https://github.com/FlameF0X?tab=repositories",
+      "snippet": "A comprehensive non-commercial license for source code and AI/ML models that reserves commercial rights for creators while enabling open research and educational use."
+    }
+  ]
+}

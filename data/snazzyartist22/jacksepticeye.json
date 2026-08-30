@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "SnazzyArtist22/Jacksepticeye",
+  "slug": "snazzyartist22-jacksepticeye",
+  "author": "SnazzyArtist22",
+  "url": "https://huggingface.co/SnazzyArtist22/Jacksepticeye",
+  "created_at": "2026-08-30T15:33:35.000Z",
+  "updated_at": "2026-08-30T15:35:38.000Z",
+  "license": "unknown",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:unknown",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 625130575,
+  "storage_human": "625 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "SnazzyArtist22 (Elliott Buxton) - Hugging Face",
+      "url": "https://huggingface.co/SnazzyArtist22/models",
+      "snippet": "AI & ML interests ... Recent Activity updated a model 2 days ago ... published a model 2 days ago"
+    },
+    {
+      "title": "SnazzyArtist22 (Elliott Buxton) - Hugging Face",
+      "url": "https://huggingface.co/SnazzyArtist22",
+      "snippet": "AI & ML interests ... Recent Activity updated a model 3 days ago ... published a model 3 days ago"
+    },
+    {
+      "title": "Jacksepticeye - SeaArt AI Model",
+      "url": "https://www.seaart.ai/models/detail/f1896761a4132cbe96cf1f98e69b2294",
+      "snippet": "Explore Jacksepticeye model on SeaArt AI. Transform your idea into professional-quality AI-generated images and videos with our free, easy-to-use platform."
+    },
+    {
+      "title": "huggingtweets/jacksepticeye · Hugging Face",
+      "url": "https://huggingface.co/huggingtweets/jacksepticeye",
+      "snippet": "Training procedure The model is based on a pre-trained GPT-2 which is fine-tuned on @jacksepticeye&#x27;s tweets. Hyperparameters and metrics are recorded in the W&B training run for full transparency and reproducibility. At the end of training, the final model is logged and versioned."
+    },
+    {
+      "title": "Jacksepticeye - SeaArt Modelo AI",
+      "url": "https://www.seaart.ai/es/models/detail/f1896761a4132cbe96cf1f98e69b2294",
+      "snippet": "Explora el modelo Jacksepticeye en SeaArt AI. Transforma tu idea en imágenes y videos generados por IA de calidad profesional con nuestra plataforma gratuita y fácil de usar."
+    }
+  ]
+}

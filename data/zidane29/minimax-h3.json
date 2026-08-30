@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "Zidane29/MiniMax-H3",
+  "slug": "zidane29-minimax-h3",
+  "author": "Zidane29",
+  "url": "https://huggingface.co/Zidane29/MiniMax-H3",
+  "created_at": "2026-08-30T11:19:10.000Z",
+  "updated_at": "2026-08-30T11:19:11.000Z",
+  "license": "minimax-h3-community-license-agreement",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "diffusion-single-file",
+  "languages": [],
+  "tags": [
+    "diffusion-single-file",
+    "comfyui",
+    "base_model:MiniMaxAI/MiniMax-H3",
+    "base_model:finetune:MiniMaxAI/MiniMax-H3",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 470974463715,
+  "storage_human": "471.0 GB",
+  "base_model": "MiniMaxAI/MiniMax-H3",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - MiniMax-AI/MiniMax-H3 · GitHub",
+      "url": "https://github.com/MiniMax-AI/MiniMax-H3",
+      "snippet": "Contribute to MiniMax-AI/MiniMax-H3 development by creating an account on GitHub."
+    },
+    {
+      "title": "MiniMax H3: An Open Model Breaking the Boundaries Between Tasks and ...",
+      "url": "https://www.minimax.io/blog/minimax-h3",
+      "snippet": "Today, we&#x27;re officially launching MiniMax H3, a general-purpose omni-modal generation model. H3 can jointly understand multimodal contexts spanning text, images, video, and audio. It generates video with native stereo audio at up to 2K resolution and 15 seconds in length."
+    },
+    {
+      "title": "GitHub - ai-models-lab/minimax-h3: MiniMax-H3-Hub, ComfyUI Workflows ...",
+      "url": "https://github.com/ai-models-lab/minimax-h3",
+      "snippet": "📊 Model Comparison Matrix: Benchmark comparisons between MiniMax H3, Seedance 2.5, Wan 2.1, Kling AI, Sora, and CogVideoX. 🌐 Chinese AI Video Generator Directory: Complete guide for international creators to access Chinese AI models without native phone registration, plus Faceless Channel guides."
+    },
+    {
+      "title": "MiniMax H3 — AI Model | MindStudio",
+      "url": "https://www.mindstudio.ai/models/minimax-h3",
+      "snippet": "MiniMax H3 MiniMax H3 is a video generation model from MiniMax that supports text-to-video, image-to-video, and reference-based video creation at up to 2K resolution."
+    },
+    {
+      "title": "MiniMax H3 Open: Tutorials, Deployment & Workflows",
+      "url": "https://design.minimax.io/h3",
+      "snippet": "How To Use MiniMax H3 in ComfyUI: Best FREE AI Video Model of 2026! @MDMZ View on original site ↗ P"
+    }
+  ]
+}

@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "Dax1211/horizon-corebreach-coder-7b-GGUF",
+  "slug": "dax1211-horizon-corebreach-coder-7b-gguf",
+  "author": "Dax1211",
+  "url": "https://huggingface.co/Dax1211/horizon-corebreach-coder-7b-GGUF",
+  "created_at": "2026-08-30T11:14:58.000Z",
+  "updated_at": "2026-08-30T11:16:00.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "qwen2",
+    "llama.cpp",
+    "unsloth",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 7615616512,
+  "parameters_human": "7.62B",
+  "storage_bytes": 4683073664,
+  "storage_human": "4.7 GB",
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - microsoft/fara: Fara1.5 - A family of frontier computer use ...",
+      "url": "https://github.com/microsoft/fara",
+      "snippet": "All Fara1.5 and Fara-7B numbers are averaged over three independent runs. The GPT-5.4-based FaraGen1.5 solver is an upper-bound reference for the SFT-based distillation. † denotes numbers sourced from the model&#x27;s official release or leaderboard rather than re-run by us."
+    },
+    {
+      "title": "GitHub - Vexp-ai/horizon: Capable, auditable coding that runs fully ...",
+      "url": "https://github.com/Vexp-ai/horizon",
+      "snippet": "Horizon is a research project by the team behind vexp, the local-first context engine for AI coding. The model is not the product; the layer around it is. Horizon turns an open-weight model running on a 16 GB consumer machine into a verified STEM and coding system: a metacognitive router + an execution harness with hard verifiers (sandboxed test execution, symbolic math checking), best-of-N ..."
+    },
+    {
+      "title": "GGUF Model Discovery - Browse & Download AI Models",
+      "url": "https://local-ai-zone.github.io/",
+      "snippet": "Discover and download GGUF format AI models. Browse and direct download thousands of quantized AI models with detailed information, download counts, and direct links."
+    },
+    {
+      "title": "Hugging Face - The AI community building the future.",
+      "url": "https://huggingface.co/",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "OpenAI Says Its Own Models Breached Hugging Face&#x27;s Infrastructure for ...",
+      "url": "https://www.banyanoutcomes.com/attention/huggingface-openai-incident-70-days/",
+      "snippet": "OpenAI disclosed that an internal research model exploited sandbox and infrastructure vulnerabilities to compromise both OpenAI&#x27;s and Hugging Face&#x27;s systems from May 12 to July 21, 2026, reaching administrator-level access to OpenAI&#x27;s own research compute cluster."
+    }
+  ]
+}

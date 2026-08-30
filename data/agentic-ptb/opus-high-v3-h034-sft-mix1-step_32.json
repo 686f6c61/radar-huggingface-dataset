@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "agentic-ptb/opus-high-v3.h034.sft-mix1.step_32",
+  "slug": "agentic-ptb-opus-high-v3-h034-sft-mix1-step_32",
+  "author": "agentic-ptb",
+  "url": "https://huggingface.co/agentic-ptb/opus-high-v3.h034.sft-mix1.step_32",
+  "created_at": "2026-08-30T16:29:33.000Z",
+  "updated_at": "2026-08-30T16:31:30.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "qwen3_5",
+    "agentic-ptb",
+    "opus-high-v3",
+    "negative-results",
+    "base_model:Qwen/Qwen3.5-9B-Base",
+    "base_model:finetune:Qwen/Qwen3.5-9B-Base",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 9409813744,
+  "parameters_human": "9.41B",
+  "storage_bytes": 18839710445,
+  "storage_human": "18.8 GB",
+  "base_model": "Qwen/Qwen3.5-9B-Base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "agentic-ptb/INDEX · Datasets at Hugging Face",
+      "url": "https://huggingface.co/datasets/agentic-ptb/INDEX",
+      "snippet": "Datasets: agentic-ptb / INDEX like 0 Follow agentic-ptb 1 Modalities: Tabular Text Formats: json Size: < 1K Tags: agentic-ptb index Libraries: Datasets pandas Polars + 1 Dataset card Data Studio FilesFiles and versions xet Community 1 Dataset Viewer Auto-converted to Parquet API Embed Duplicate Data Studio Subset (1) default·269 rows default (269 rows) Split (1) train·269 rows train (269 ..."
+    },
+    {
+      "title": "Claude Opus &#92; Anthropic",
+      "url": "https://www.anthropic.com/claude/opus",
+      "snippet": "Claude Opus 5 is a strong agentic coding model built for long-running, multi-step work. It deeply understands your codebase, holds the thread across complex tasks, and pins down requirements for feature development and bug-fixing more effectively than Opus 4.8."
+    },
+    {
+      "title": "Models - Hugging Face",
+      "url": "https://huggingface.co/models?other=agentic-ptb",
+      "snippet": "Explore machine learning models. 234 Base only Inference AvailableInference Edit filters Sort: Trending Active filters: agentic-ptb Clear all"
+    },
+    {
+      "title": "GitHub - QwenLM/Qwen3: Qwen3 is the large language model series ...",
+      "url": "https://github.com/QwenLM/Qwen3",
+      "snippet": "Qwen3 is the large language model series developed by Qwen team, Alibaba Cloud. - QwenLM/Qwen3"
+    },
+    {
+      "title": "Claude (AI) - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Claude_(AI)",
+      "snippet": "Claude is an AI chatbot. [4] It sometimes uses artifacts, introduced in June 2024, to generate and interact with code snippets and documents. [5][6] In 2025, Anthropic added a web search feature to Claude. [7][8] Claude Pro and Claude Max are subscription services for additional access to Claude models. Max provides higher usage limits at an additional cost. [9] Grouped subscriptions include ..."
+    }
+  ]
+}

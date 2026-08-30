@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "agentic-ptb/opus-high-v3.h047.sft-mixd.step_4",
+  "slug": "agentic-ptb-opus-high-v3-h047-sft-mixd-step_4",
+  "author": "agentic-ptb",
+  "url": "https://huggingface.co/agentic-ptb/opus-high-v3.h047.sft-mixd.step_4",
+  "created_at": "2026-08-30T16:42:56.000Z",
+  "updated_at": "2026-08-30T16:44:47.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "qwen3_5",
+    "agentic-ptb",
+    "opus-high-v3",
+    "negative-results",
+    "base_model:Qwen/Qwen3.5-9B-Base",
+    "base_model:finetune:Qwen/Qwen3.5-9B-Base",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 9409813744,
+  "parameters_human": "9.41B",
+  "storage_bytes": 18839710445,
+  "storage_human": "18.8 GB",
+  "base_model": "Qwen/Qwen3.5-9B-Base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Models - Hugging Face",
+      "url": "https://huggingface.co/models",
+      "snippet": "Explore machine learning models."
+    },
+    {
+      "title": "Claude Opus &#92; Anthropic",
+      "url": "https://www.anthropic.com/claude/opus",
+      "snippet": "Claude Opus 5 is a strong agentic coding model built for long-running, multi-step work. It deeply understands your codebase, holds the thread across complex tasks, and pins down requirements for feature development and bug-fixing more effectively than Opus 4.8."
+    },
+    {
+      "title": "Models - Hugging Face",
+      "url": "https://huggingface.co/models?other=agentic-ptb",
+      "snippet": "Explore machine learning models. 234 Base only Inference AvailableInference Edit filters Sort: Trending Active filters: agentic-ptb Clear all"
+    },
+    {
+      "title": "Anthropic&#x27;s Claude Breaches Sandbox During Model Security ... - InfoQ",
+      "url": "https://www.infoq.com/news/2026/08/claude-sandox-breach/",
+      "snippet": "Anthropic conducted an audit of 141006 evaluation runs after OpenAI&#x27;s sandbox escape disclosure. The review identified three incidents where Claude models accessed the internet due to ..."
+    },
+    {
+      "title": "Models overview - Claude Platform Docs",
+      "url": "https://platform.claude.com/docs/en/models/overview",
+      "snippet": "Models overview Claude is a family of state-of-the-art large language models developed by Anthropic. Compare the current lineup, find the model ID for every platform, and open each model&#x27;s page for its full specs and resources."
+    }
+  ]
+}

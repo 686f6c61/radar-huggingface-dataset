@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "promotion/Llama-3.1-8B-MOPO-baseline",
+  "slug": "promotion-llama-3-1-8b-mopo-baseline",
+  "author": "promotion",
+  "url": "https://huggingface.co/promotion/Llama-3.1-8B-MOPO-baseline",
+  "created_at": "2026-08-30T16:22:19.000Z",
+  "updated_at": "2026-08-30T16:27:12.000Z",
+  "license": "llama3.1",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "llama",
+    "alignment",
+    "multi-objective",
+    "preference-optimization",
+    "base_model:meta-llama/Llama-3.1-8B-Instruct",
+    "base_model:finetune:meta-llama/Llama-3.1-8B-Instruct",
+    "license:llama3.1",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 8030261248,
+  "parameters_human": "8.03B",
+  "storage_bytes": 32138288576,
+  "storage_human": "32.1 GB",
+  "base_model": "meta-llama/Llama-3.1-8B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "promotion/Llama-3.1-8B-UniformINPO-baseline · Hugging Face",
+      "url": "https://huggingface.co/promotion/Llama-3.1-8B-UniformINPO-baseline",
+      "snippet": "Llama-3.1-8B-UniformINPO-baseline Uniform-INPO baseline: iterative Nash policy optimization against a single preference obtained by weighting the four objectives equally, which is the natural scalarisation control for a bargaining rule."
+    },
+    {
+      "title": "Open-source AI Models for Any Application | Llama 3",
+      "url": "https://developer.meta.com/ai/models/llama-3/",
+      "snippet": "Discover Llama 3&#x27;s open-source AI models you can fine-tune, distill and deploy anywhere. Build smarter applications with flexible AI solutions."
+    },
+    {
+      "title": "Meta-Llama-3-8B - Hugging Face",
+      "url": "https://huggingface.co/meta-llama/Meta-Llama-3-8B",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Llama 3.1 8B: Open-weight LLM Overview",
+      "url": "https://www.emergentmind.com/topics/llama-3-1-8b-ceafc41a-0c7a-4a3a-a784-f16401994681",
+      "snippet": "Llama 3.1 8B is a decoder-only Transformer with 8B parameters and 32 layers, pre-trained on ∼1.4 trillion tokens for versatile NLP applications. It uses diff vector-based fine-tuning to transfer updates efficiently between model versions, yielding notable performance boosts like a +10.7% increase in GPQA accuracy. The model underpins domain-specialized variants in cybersecurity, astrophysics ..."
+    },
+    {
+      "title": "Llama-3.1-8B | Model Openness Tool - mot.isitopen.ai",
+      "url": "https://mot.isitopen.ai/model/Llama-3.1-8B",
+      "snippet": "Supporting libraries and tools [Llama 3.1 Community License Agreement] Model parameters (Final) [Llama 3.1 Community License Agreement] Model card [Llama 3.1 Community License Agreement] Research paper [arXiv.org perpetual, non-exclusive license 1.0] Evaluation results [Llama 3.1 Community License Agreement]"
+    }
+  ]
+}

@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "V4ldeLund/gemma-3-1b-pt-faroese-experiment5",
+  "slug": "v4ldelund-gemma-3-1b-pt-faroese-experiment5",
+  "author": "V4ldeLund",
+  "url": "https://huggingface.co/V4ldeLund/gemma-3-1b-pt-faroese-experiment5",
+  "created_at": "2026-08-30T18:02:48.000Z",
+  "updated_at": "2026-08-30T18:12:06.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gemma3_text",
+    "text-generation",
+    "generated_from_trainer",
+    "sft",
+    "trl",
+    "conversational",
+    "base_model:google/gemma-3-1b-pt",
+    "base_model:finetune:google/gemma-3-1b-pt",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 999885952,
+  "parameters_human": "999.9M",
+  "storage_bytes": 8032635368,
+  "storage_human": "8.0 GB",
+  "base_model": "google/gemma-3-1b-pt",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "V4ldeLund/gemma-3-1b-it-faroese-experiment1 · Hugging Face",
+      "url": "https://huggingface.co/V4ldeLund/gemma-3-1b-it-faroese-experiment1",
+      "snippet": "Model Card for gemma-3-1b-it-faroese-experiment1 This model is a fine-tuned version of google/gemma-3-1b-it. It has been trained using TRL."
+    },
+    {
+      "title": "google/gemma-3-1b-it · Hugging Face",
+      "url": "https://huggingface.co/google/gemma-3-1b-it",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "The current, most capable model that runs on a single GPU.",
+      "url": "https://ollama.com/library/gemma3",
+      "snippet": "The Gemma 3 models are multimodal—processing text and images—and feature a 128K context window with support for over 140 languages. Available in 270M, 1B, 4B, 12B, and 27B parameter sizes, they excel in tasks like question answering, summarization, and reasoning, while their compact design allows deployment on resource-limited devices."
+    },
+    {
+      "title": "Gemma 3 — Google DeepMind",
+      "url": "https://deepmind.google/models/gemma/gemma-3/",
+      "snippet": "Gemma 3 is the most capable model that can run on a single GPU or TPU. Efficient on workstations, laptops, and even smartphones, allowing developers to build responsible AI applications at scale."
+    },
+    {
+      "title": "Model cards — Google DeepMind",
+      "url": "https://deepmind.google/models/model-cards/",
+      "snippet": "Model cards Simple, structured overviews of how an advanced AI model was designed and evaluated."
+    }
+  ]
+}

@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "isaacmg/qwen3-vl-8b-hebrew-v20a-ckpt",
+  "slug": "isaacmg-qwen3-vl-8b-hebrew-v20a-ckpt",
+  "author": "isaacmg",
+  "url": "https://huggingface.co/isaacmg/qwen3-vl-8b-hebrew-v20a-ckpt",
+  "created_at": "2026-08-30T18:22:14.000Z",
+  "updated_at": "2026-08-30T18:22:14.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "peft",
+  "languages": [
+    "he"
+  ],
+  "tags": [
+    "peft",
+    "lora",
+    "ocr",
+    "htr",
+    "hebrew",
+    "cairo-genizah",
+    "grounding",
+    "qwen3-vl",
+    "image-text-to-text",
+    "he",
+    "base_model:Qwen/Qwen3-VL-8B-Instruct",
+    "base_model:adapter:Qwen/Qwen3-VL-8B-Instruct",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": "Qwen/Qwen3-VL-8B-Instruct",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "isaacmg/qwen3-vl-8b-hebrew-v18a-ckpt · Hugging Face",
+      "url": "https://huggingface.co/isaacmg/qwen3-vl-8b-hebrew-v18a-ckpt",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "isaacmg/qwen3-vl-8b-hebrew-v18a-ckpt at main - Hugging Face",
+      "url": "https://huggingface.co/isaacmg/qwen3-vl-8b-hebrew-v18a-ckpt/tree/main",
+      "snippet": "Kaggle main qwen3-vl-8b-hebrew-v18a-ckpt 532 MB Ctrl+K Ctrl+K 1 contributor History:18 commits isaacmg Update README.md 76489c0 verifiedabout 2 hours ago last-checkpointTraining in progress, step 700, checkpoint1 day ago .gitattributes Safe 1.57 kBTraining in progress, step 1001 day ago README.md 3.31 kBUpdate README.mdabout 2 hours ago adapter ..."
+    },
+    {
+      "title": "GitHub - QwenLM/Qwen3-VL: Qwen3-VL is the multimodal large language ...",
+      "url": "https://github.com/QwenLM/Qwen3-VL",
+      "snippet": "Meet Qwen3-VL — the most powerful vision-language model in the Qwen series to date. This generation delivers comprehensive upgrades across the board: superior text understanding & generation, deeper visual perception & reasoning, extended context length, enhanced spatial and video dynamics comprehension, and stronger agent interaction capabilities. Available in Dense and MoE architectures ..."
+    },
+    {
+      "title": "GitHub - QwenLM/Qwen3: Qwen3 is the large language model series ...",
+      "url": "https://github.com/QwenLM/Qwen3",
+      "snippet": "Qwen3-Instruct-2507 is the updated version of the previous Qwen3 non-thinking mode, featuring the following key enhancements: Significant improvements in general capabilities, including instruction following, logical reasoning, text comprehension, mathematics, science, coding and tool usage."
+    },
+    {
+      "title": "qwen3-vl-8b-hebrew-v18a-ckpt API & Inference Endpoint | FriendliAI",
+      "url": "https://friendli.ai/models/isaacmg/qwen3-vl-8b-hebrew-v18a-ckpt",
+      "snippet": "HebVL is a family of fine-tuned Qwen3-VL-8B adapters that read historical Hebrew-script material — from printed Talmud pages (square type, Rashi script) to the handwritten fragments of the Cairo Genizah: medieval letters, court deeds, and lists written in Hebrew, Judaeo-Arabic, and Aramaic, in the notoriously difficult Oriental documentary ..."
+    }
+  ]
+}

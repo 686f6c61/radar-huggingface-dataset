@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "three2/chuyi",
+  "slug": "three2-chuyi",
+  "author": "three2",
+  "url": "https://huggingface.co/three2/chuyi",
+  "created_at": "2026-08-30T17:00:00.000Z",
+  "updated_at": "2026-08-30T17:00:00.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Chuizi AI | One API for 200+ AI Models",
+      "url": "https://chuizi.ai/",
+      "snippet": "3 Minutes to Every AI Model One OpenAI-compatible API for GPT, Claude, Gemini, DeepSeek and 200+ models. Change your baseURL, keep your code."
+    },
+    {
+      "title": "Choose a Model — Chuizi AI Docs",
+      "url": "https://chuizi.ai/docs/get-started/choose-model",
+      "snippet": "Find the right AI model for your use case — from general chat and coding to Chinese language tasks and image generation."
+    },
+    {
+      "title": "chuyi - SeaArt AI Model",
+      "url": "https://www.seaart.ai/models/detail/c2f755371b7ba1361b0804d479c62d18",
+      "snippet": "Explore chuyi model on SeaArt AI. Transform your idea into professional-quality AI-generated images and videos with our free, easy-to-use platform."
+    },
+    {
+      "title": "Models - Hugging Face",
+      "url": "https://huggingface.co/models?!!",
+      "snippet": "Explore machine learning models."
+    },
+    {
+      "title": "draft-chuyi-nmrg-ai-agent-network-02 - datatracker.ietf.org",
+      "url": "https://datatracker.ietf.org/doc/html/draft-chuyi-nmrg-ai-agent-network-02",
+      "snippet": "Current advancements in AI technologies, particularly large models, have demonstrated immense potential in content generation, reasoning, analysis and so on, providing robust technical support for network automation and self-intelligence. However, in practical network operations, challenges such as system isolation and fragmented data lead to extensive manual, repetitive, and inefficient tasks ..."
+    }
+  ]
+}

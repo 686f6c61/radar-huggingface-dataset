@@ -1,0 +1,78 @@
+{
+  "schema": 1,
+  "id": "CMB-ClimateModernBERT/Merge_Norm_CX",
+  "slug": "cmb-climatemodernbert-merge_norm_cx",
+  "author": "CMB-ClimateModernBERT",
+  "url": "https://huggingface.co/CMB-ClimateModernBERT/Merge_Norm_CX",
+  "created_at": "2026-08-30T15:43:12.000Z",
+  "updated_at": "2026-08-30T15:43:19.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "fill-mask",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "modernbert",
+    "fill-mask",
+    "climate",
+    "domain-adaptation",
+    "continued-pretraining",
+    "merge",
+    "mergekit",
+    "academic-text",
+    "web-text",
+    "synthetic-data",
+    "en",
+    "base_model:answerdotai/ModernBERT-base",
+    "base_model:finetune:answerdotai/ModernBERT-base",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 149655232,
+  "parameters_human": "149.7M",
+  "storage_bytes": 299324680,
+  "storage_human": "299 MB",
+  "base_model": "answerdotai/ModernBERT-base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ClimateModernBERT - a sraj Collection - Hugging Face",
+      "url": "https://huggingface.co/collections/sraj/climatemodernbert",
+      "snippet": "sraj/Merge_Linear_NormBalanced_CX_only Fill-Mask • 0.1B•Updated about 1 month ago• 6"
+    },
+    {
+      "title": "sraj/Merge_Linear_NormBalanced_CX_only · Hugging Face",
+      "url": "https://huggingface.co/sraj/Merge_Linear_NormBalanced_CX_only",
+      "snippet": "ClimateModernBERT ... Model soups: averaging weights of multiple fine-tuned models improves accuracy without increasing inference time"
+    },
+    {
+      "title": "Merge Linear Normbalanced Cx Only - AI Model Insights & Benchmarks",
+      "url": "https://free2aitools.com/model/sraj/merge_linear_normbalanced_cx_only",
+      "snippet": "Deep dive into Merge Linear Normbalanced Cx Only."
+    },
+    {
+      "title": "Chemical Mass Balance (CMB) Model - US EPA",
+      "url": "https://www.epa.gov/scram/chemical-mass-balance-cmb-model",
+      "snippet": "The Chemical Mass Balance (CMB) Model EPA-CMB v8.2 is one of several receptor models that has been applied to air quality problems over the last two decades. Based on an effective-variance least squares method (EVLS), EPA has supported CMB as a regulatory planning tool through its approval of numerous State Implementation Plans (SIPs) which ..."
+    },
+    {
+      "title": "Model Merge Blocks - ComfyUI Wiki",
+      "url": "https://comfyui-wiki.com/en/comfyui-nodes/advanced/model-merging/model-merge-blocks",
+      "snippet": "Learn about the ModelMergeBlocks node in ComfyUI, which is designed for advanced model merging operations, allowing for the integration of two models with customizable blending ratios for different parts of the models. This node facilitates the creation of hybrid models by selectively merging components from two source models based on specified parameters."
+    }
+  ]
+}

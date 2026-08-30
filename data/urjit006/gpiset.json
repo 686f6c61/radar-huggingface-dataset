@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "urjit006/GPiSeT",
+  "slug": "urjit006-gpiset",
+  "author": "urjit006",
+  "url": "https://huggingface.co/urjit006/GPiSeT",
+  "created_at": "2026-08-30T14:22:24.000Z",
+  "updated_at": "2026-08-30T14:26:08.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "keras",
+  "languages": [],
+  "tags": [
+    "keras",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 310345705,
+  "storage_human": "310 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "‏Urjit Mehta‏ - ‏Pursuing PhD | Deep Learning Engineer ... - LinkedIn",
+      "url": "https://ae.linkedin.com/in/urjitmehta",
+      "snippet": "نبذة عني I am a Deep Learning Engineer specializing in Computer Vision for medical imaging, with a strong focus on histopathology and cell-culture analysis. My work centres around building and optimising deep learning models for cell segmentation, morphological analysis, and image-based biomedical understanding using histology and microscopy data."
+    },
+    {
+      "title": "AI Detector - Reliable AI Checker for ChatGPT, GPT4, Gemini & More",
+      "url": "https://checker.ai/",
+      "snippet": "Flawless Detection Our model is trained on extensive datasets of human and AI-generated texts and accurately identifies the origin, including ChatGPT, GPT-4, Gemini, and other LLMs."
+    },
+    {
+      "title": "#embc2026 #biomedicalengineering #medicalimaging #deeplearning # ...",
+      "url": "https://www.linkedin.com/posts/urjitmehta_embc2026-biomedicalengineering-medicalimaging-activity-7450449094780583937-CaI5",
+      "snippet": "My first paper, GPiSeT: Guidance Fused Pixel-Level Cell Segmentation Framework with Transformer Backbone, just got accepted at the 48th Annual International Conference of the IEEE Engineering ..."
+    },
+    {
+      "title": "‎Google Gemini",
+      "url": "https://gemini.google.com/?hl=en-IN",
+      "snippet": "Meet Gemini, Google&#x27;s AI assistant. Get help with writing, planning, brainstorming and more. Experience the power of generative AI."
+    },
+    {
+      "title": "CivArchive (CivitAI Archive) - AI Model Archive",
+      "url": "https://civitaiarchive.com/",
+      "snippet": "Browse and discover AI models from CivitAI, TensorArt, and SeaArt. Community-driven archive preserving access to AI resources."
+    }
+  ]
+}

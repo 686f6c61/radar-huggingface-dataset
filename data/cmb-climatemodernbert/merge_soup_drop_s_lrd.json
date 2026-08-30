@@ -1,0 +1,77 @@
+{
+  "schema": 1,
+  "id": "CMB-ClimateModernBERT/Merge_Soup_drop_S_LRD",
+  "slug": "cmb-climatemodernbert-merge_soup_drop_s_lrd",
+  "author": "CMB-ClimateModernBERT",
+  "url": "https://huggingface.co/CMB-ClimateModernBERT/Merge_Soup_drop_S_LRD",
+  "created_at": "2026-08-30T15:47:38.000Z",
+  "updated_at": "2026-08-30T15:47:44.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "fill-mask",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "modernbert",
+    "fill-mask",
+    "climate",
+    "domain-adaptation",
+    "continued-pretraining",
+    "merge",
+    "mergekit",
+    "academic-text",
+    "web-text",
+    "en",
+    "base_model:answerdotai/ModernBERT-base",
+    "base_model:finetune:answerdotai/ModernBERT-base",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 149655232,
+  "parameters_human": "149.7M",
+  "storage_bytes": 299324680,
+  "storage_human": "299 MB",
+  "base_model": "answerdotai/ModernBERT-base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ClimateModernBERT - a sraj Collection - Hugging Face",
+      "url": "https://huggingface.co/collections/sraj/climatemodernbert",
+      "snippet": "sraj &#x27;s Collections ClimateModernBERT CMB all ModernBERT Checkpoints from pretraining phases"
+    },
+    {
+      "title": "CMB all - a sraj Collection - Hugging Face",
+      "url": "https://huggingface.co/collections/sraj/cmb-all",
+      "snippet": "sraj &#x27;s Collections ClimateModernBERT CMB all ModernBERT Checkpoints from pretraining phases"
+    },
+    {
+      "title": "GitHub - mlfoundations/model-soups: Model soups: averaging weights of ...",
+      "url": "https://github.com/mlfoundations/model-soups",
+      "snippet": "This repository contains code for the paper Model soups: averaging weights of multiple fine-tuned models improves accuracy without increasing inference time. Using this repository you can reproduce the figure below, which shows that model soups (averaging multiple fine-tuned solutions) can outperform the best individual model."
+    },
+    {
+      "title": "GitHub - arcee-ai/mergekit: Tools for merging pretrained large language ...",
+      "url": "https://github.com/arcee-ai/mergekit",
+      "snippet": "This will run the merge and write your merged model to ./output-model-directory. For more information on the arguments accepted by mergekit-yaml run the command mergekit-yaml --help."
+    },
+    {
+      "title": "Toolkits | CMB",
+      "url": "https://www.computationalmodelbuilder.org/toolkits/",
+      "snippet": "These are the toolkits that are part of the Computational Model Builder Suite."
+    }
+  ]
+}

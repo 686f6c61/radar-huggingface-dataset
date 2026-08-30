@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "Hritvik7654/redline-guard-cap100k",
+  "slug": "hritvik7654-redline-guard-cap100k",
+  "author": "Hritvik7654",
+  "url": "https://huggingface.co/Hritvik7654/redline-guard-cap100k",
+  "created_at": "2026-08-30T18:58:40.000Z",
+  "updated_at": "2026-08-30T18:59:06.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "modernbert",
+    "text-classification",
+    "generated_from_trainer",
+    "base_model:answerdotai/ModernBERT-base",
+    "base_model:finetune:answerdotai/ModernBERT-base",
+    "license:apache-2.0",
+    "text-embeddings-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 149606402,
+  "parameters_human": "149.6M",
+  "storage_bytes": 598445625,
+  "storage_human": "598 MB",
+  "base_model": "answerdotai/ModernBERT-base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Hugging Face - The AI community building the future.",
+      "url": "https://huggingface.co/",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Redline AI - Candidate Intelligence - a Hugging Face Space by ...",
+      "url": "https://huggingface.co/spaces/Letthedreamersrise/redline-ai",
+      "snippet": "This app lets you type a job description or any natural‑language query and instantly see a ranked list of candidates from a real 100 K pool. You can adjust signal sliders to change how factors like..."
+    },
+    {
+      "title": "GitHub - imandiakhil9505-hub/redline-guard",
+      "url": "https://github.com/imandiakhil9505-hub/redline-guard",
+      "snippet": "An AI-powered contract risk auditor and redline assistant that parses agreements, flags risky clauses against custom legal playbooks, explains why they are risky, and proposes clean redline edits with a one-click apply feature."
+    },
+    {
+      "title": "RedlineGuard/README.md at main · New-Sheep/RedlineGuard",
+      "url": "https://github.com/New-Sheep/RedlineGuard/blob/main/README.md",
+      "snippet": "RedlineGuard Take-home prototype for PortSwigger&#x27;s AI Pioneer brief: playbook-grounded first-pass contract review for in-house legal, with generative AI drafts, MiniLM decision memory, and lite security."
+    },
+    {
+      "title": "CivArchive (CivitAI Archive) - AI Model Archive",
+      "url": "https://civitaiarchive.com/",
+      "snippet": "Browse and discover AI models from CivitAI, TensorArt, and SeaArt. Community-driven archive preserving access to AI resources."
+    }
+  ]
+}

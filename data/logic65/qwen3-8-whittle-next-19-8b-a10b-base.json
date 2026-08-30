@@ -1,0 +1,77 @@
+{
+  "schema": 1,
+  "id": "logic65/Qwen3.8-Whittle-Next-19.8B-A10B-base",
+  "slug": "logic65-qwen3-8-whittle-next-19-8b-a10b-base",
+  "author": "logic65",
+  "url": "https://huggingface.co/logic65/Qwen3.8-Whittle-Next-19.8B-A10B-base",
+  "created_at": "2026-08-30T17:42:17.000Z",
+  "updated_at": "2026-08-30T17:57:51.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "gguf",
+    "qwen4_exp",
+    "mixture-of-experts",
+    "hyper-connections",
+    "n-gram-memory",
+    "per-layer-embeddings",
+    "model-compression",
+    "research",
+    "experimental",
+    "text-generation",
+    "conversational",
+    "base_model:logic65/Qwen3.8-Whittle-tri-14.7B",
+    "base_model:quantized:logic65/Qwen3.8-Whittle-tri-14.7B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 19774844179,
+  "parameters_human": "19.77B",
+  "storage_bytes": 52791258765,
+  "storage_human": "52.8 GB",
+  "base_model": "logic65/Qwen3.8-Whittle-tri-14.7B",
+  "formats": [
+    "gguf",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "README.md · logic65/Qwen3.8-Whittle-MoE-27B-A17.8B at main - Hugging Face",
+      "url": "https://huggingface.co/logic65/Qwen3.8-Whittle-MoE-27B-A17.8B/blob/main/README.md",
+      "snippet": "Whittle MoE 27B (A18B): a mixture of experts rescued by its routers A post hoc mixture of experts carved from Qwen3.8-27B, then taught when to stop talking. As of v2.1 it holds real conversations, writes working code and tables, and the looping disease it shipped with is measured at single digits. This is the model this repo was always trying to build."
+    },
+    {
+      "title": "Qwen3.8 Whittle family - a logic65 Collection - Hugging Face",
+      "url": "https://huggingface.co/collections/logic65/qwen38-whittle-family",
+      "snippet": "A 27B whittled on two 8GB GPUs: measured cuts, heals, and restorations. 48L = best untrained, Whittle-16B = best overall."
+    },
+    {
+      "title": "GitHub - QwenLM/Qwen3.8: Qwen3.8 is the large language model series ...",
+      "url": "https://github.com/QwenLM/Qwen3.8",
+      "snippet": "Welcome to the GitHub repository of the Qwen3.5 open model series, including Qwen3.5, Qwen3.6, and the latest Qwen3.8. Here, you can find official information about Qwen3.8, post your questions (Issues), and share your ideas with the community (Discussions)."
+    },
+    {
+      "title": "Qwen3.8 Whittle MoE 27B A17.8B by logic65 - llm-explorer.com",
+      "url": "https://llm-explorer.com/model/logic65%2FQwen3.8-Whittle-MoE-27B-A17.8B,372feFSodtnWdsRYHJ9LW5",
+      "snippet": "Qwen3.8 Whittle MoE 27B A17.8B is an open-source 26.9b LLM by logic65. VRAM 53.8GB, 256K context. Compare benchmarks, capabilities, and deployment details on LLM Explorer."
+    },
+    {
+      "title": "Qwen3.8-Whittle-MoE-27B-A17.8B by logic65 | AI Market Cap",
+      "url": "https://aimarketcap.tech/models/logic65-qwen3-8-whittle-moe-27b-a17-8b",
+      "snippet": "Qwen3.8-Whittle-MoE-27B-A17.8B is a open-weight logic65 specialized model. Running this yourself: likely needs a rented cloud gpu."
+    }
+  ]
+}

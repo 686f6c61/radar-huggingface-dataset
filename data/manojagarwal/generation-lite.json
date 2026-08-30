@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "manojagarwal/generation-lite",
+  "slug": "manojagarwal-generation-lite",
+  "author": "manojagarwal",
+  "url": "https://huggingface.co/manojagarwal/generation-lite",
+  "created_at": "2026-08-30T18:04:04.000Z",
+  "updated_at": "2026-08-30T18:04:13.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "mocov3",
+    "pytorch",
+    "generation",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 33088,
+  "parameters_human": "33088",
+  "storage_bytes": 132832,
+  "storage_human": "132832 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Manoj Agarwal - AI/ML Leader | Generative AI, LLM &amp; Agentic AI ...",
+      "url": "https://in.linkedin.com/in/manoj-agarwal-a044053b",
+      "snippet": "AI/ML Leader | Generative AI, LLM &amp; Agentic AI Systems | MLOps | Driving $5M+ Enterprise Automation Impact · AI/ML leader with 14+ years of experience building and scaling enterprise AI platforms across Generative AI, Agentic AI, and large-scale conversational systems. I specialize in designing production-grade AI systems that go beyond experimentation—focusing on real business impact ..."
+    },
+    {
+      "title": "GitHub - brahim-guaali/gen_lite: Your offline AI assistant, running ...",
+      "url": "https://github.com/brahim-guaali/gen_lite/tree/master",
+      "snippet": "A privacy-focused, offline AI assistant that runs entirely on your device using the Gemma 2B language model. No data leaves your device - complete privacy guaranteed."
+    },
+    {
+      "title": "#ai #genai #llm #agenticai #multimodalllm #llm #nlp # ... - LinkedIn",
+      "url": "https://www.linkedin.com/posts/manoj-agarwal-a044053b_ai-genai-llm-activity-7278381154578116609-vOnV",
+      "snippet": "2024 has been a remarkable year in the world AI and we are stepping into another crucial year of 2025 , The way i see search giants taking a sprint in race of Creating LLM and Multimodal LLMS One ..."
+    },
+    {
+      "title": "Models - Hugging Face",
+      "url": "https://huggingface.co/models?other=code-generation",
+      "snippet": "Explore machine learning models."
+    },
+    {
+      "title": "AGNES AI - Free Omni-Modal AI API, World-Class AI Models & AI Applications",
+      "url": "https://agnes-ai.com/",
+      "snippet": "Agnes AI is an AI gateway, free AI API platform, and AI application ecosystem featuring Agnes, Echo, and Pavo. Get free AI API credits, create a free AI API key, use free AI API tokens, and access free AI API models for chatbots, AI agents, content tools, image generation, roleplay, productivity, and intelligent workflows."
+    }
+  ]
+}

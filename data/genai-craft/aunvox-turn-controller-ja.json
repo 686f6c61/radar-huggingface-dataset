@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "genai-craft/aunvox-turn-controller-ja",
+  "slug": "genai-craft-aunvox-turn-controller-ja",
+  "author": "genai-craft",
+  "url": "https://huggingface.co/genai-craft/aunvox-turn-controller-ja",
+  "created_at": "2026-08-30T18:45:02.000Z",
+  "updated_at": "2026-08-30T18:45:34.000Z",
+  "license": "aunvox-model-license-1.0",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "ja"
+  ],
+  "tags": [
+    "safetensors",
+    "turn-taking",
+    "speech",
+    "dialogue",
+    "aunvox",
+    "ja",
+    "base_model:Qwen/Qwen3-0.6B",
+    "base_model:finetune:Qwen/Qwen3-0.6B",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1244989166,
+  "storage_human": "1.2 GB",
+  "base_model": "Qwen/Qwen3-0.6B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": true,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "arkashira/genai-craft: axentx product - GitHub",
+      "url": "https://github.com/arkashira/genai-craft",
+      "snippet": "genai-craft axentx product · A game development tool that seamlessly integrates generative AI, allowing developers to leverage its capabilities without compromising transparency."
+    },
+    {
+      "title": "ServiceNow's GenAI Controller: Centralized AI Management for ...",
+      "url": "https://www.linkedin.com/posts/samhitha-s-prasad-143b07157_docs-servicenow-activity-7424886936890421248-JQPd",
+      "snippet": "The GenAI Controller really stands out to me. Instead of AI being scattered across features, it provides a centralized way to manage models, control usage, and maintain consistency across workflows."
+    },
+    {
+      "title": "ServiceNow Learning 134: How to setup a ServiceNow... - ServiceNow ...",
+      "url": "https://www.servicenow.com/community/developer-blog/servicenow-learning-134-how-to-setup-a-servicenow-instance-for/ba-p/2780616",
+      "snippet": "Hi All, This post is a walk-through on how to get started with the Generative AI Controller, there is more to explore outside of this post but we wanted to get you started quickly! In this walkthrough, we will be utilizing OpenAI to connect your ServiceNow instance to the Generative AI Controlle..."
+    },
+    {
+      "title": "genai-craft/README.md at main · arkashira/genai-craft · GitHub",
+      "url": "https://github.com/arkashira/genai-craft/blob/main/README.md",
+      "snippet": "genai-craft axentx product · A game development tool that seamlessly integrates generative AI, allowing developers to leverage its capabilities without compromising transparency."
+    },
+    {
+      "title": "Getting started with the Generative AI Controller - ServiceNow",
+      "url": "https://www.servicenow.com/community/developer-advocate-blog/getting-started-with-the-generative-ai-controller/ba-p/2679237",
+      "snippet": "The Generative AI Controller is releasing in the ServiceNow Platform Vancouver release. As the time of this post&#x27;s writing, it is currently limited availability, so if you want access to these plugins before they become generally available, please contact your account representative to inquire. ..."
+    }
+  ]
+}

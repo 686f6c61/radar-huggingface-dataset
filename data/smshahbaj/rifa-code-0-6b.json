@@ -1,0 +1,78 @@
+{
+  "schema": 1,
+  "id": "smshahbaj/RIFA-CODE-0.6B",
+  "slug": "smshahbaj-rifa-code-0-6b",
+  "author": "smshahbaj",
+  "url": "https://huggingface.co/smshahbaj/RIFA-CODE-0.6B",
+  "created_at": "2026-08-30T15:01:47.000Z",
+  "updated_at": "2026-08-30T16:10:57.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "en",
+    "bn"
+  ],
+  "tags": [
+    "safetensors",
+    "qwen3",
+    "rifa",
+    "rifa-code",
+    "lora",
+    "bengali",
+    "banglish",
+    "coding-assistant",
+    "conversational",
+    "text-generation",
+    "en",
+    "bn",
+    "base_model:Qwen/Qwen3-0.6B",
+    "base_model:adapter:Qwen/Qwen3-0.6B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 596049920,
+  "parameters_human": "596.0M",
+  "storage_bytes": 1203557438,
+  "storage_human": "1.2 GB",
+  "base_model": "Qwen/Qwen3-0.6B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "smshahbaj/Rifa-Nano-0.5B · Hugging Face",
+      "url": "https://huggingface.co/smshahbaj/Rifa-Nano-0.5B",
+      "snippet": "RIFA Nano is the smallest and fastest model in the RIFA series — a family of language models built to run efficiently across a wide range of hardware, from low-end mobile devices to modern GPUs."
+    },
+    {
+      "title": "Models - Hugging Face",
+      "url": "https://huggingface.co/models?other=rifa",
+      "snippet": "3 Base only Inference AvailableInference Edit filters Sort: Trending Active filters: rifa Clear all"
+    },
+    {
+      "title": "smshahbaj-official.github.io | smshahbaj-official",
+      "url": "https://smshahbaj-official.github.io/",
+      "snippet": "smshahbaj-official.github.io | smshahbaj-official smshahbaj-official smshahbaj-official.github.io"
+    },
+    {
+      "title": "Rifa Nano 0.5B by smshahbaj — VRAM 1GB, 32K context | LLM Explorer",
+      "url": "https://llm-explorer.com/model/smshahbaj%2FRifa-Nano-0.5B,3FSHDb2V1j2rPQTBNgrRyD",
+      "snippet": "Rifa Nano 0.5B is an open-source 0.5b LLM by smshahbaj. VRAM 1GB, 32K context. Compare benchmarks, capabilities, and deployment details on LLM Explorer."
+    },
+    {
+      "title": "Qwen3 Complete Guide: Every Model from 0.6B to 235B",
+      "url": "https://insiderllm.com/guides/qwen3-complete-guide/",
+      "snippet": "Qwen3 is the best open model family for budget local AI. Dense models from 0.6B to 32B, MoE models that punch above their weight, and a /think toggle no one else has."
+    }
+  ]
+}

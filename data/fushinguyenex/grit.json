@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "fushinguyenex/GRIT",
+  "slug": "fushinguyenex-grit",
+  "author": "fushinguyenex",
+  "url": "https://huggingface.co/fushinguyenex/GRIT",
+  "created_at": "2026-08-30T14:39:28.000Z",
+  "updated_at": "2026-08-30T14:39:28.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GRIT: Teaching MLLMs to Think with Images - arXiv.org",
+      "url": "https://arxiv.org/pdf/2505.15879v2",
+      "snippet": "We append the prompt shown in Figure 7 to the GRIT model training and model inference, as well as for the Chain-of-Though baseline in the experiments. The prompt provides models with the instruction to follow the grounded reasoning paradigm, however, as shown in the experiment result, MLLMs without training will face a significant performance drop."
+    },
+    {
+      "title": "GitHub - UCSB-AI/GRIT: Official code for NeurIPS 2025 paper \"GRIT ...",
+      "url": "https://github.com/UCSB-AI/GRIT/tree/master/",
+      "snippet": "GRIT: Teaching MLLMs to Think with Images Grounded Reasoning wiht Texts and Images (GRIT) is a novel method for training Multimodal Large Language Models (MLLMs) to perform grounded reasoning by generating reasoning chains that interleave natural language and explicit bounding box coordinates."
+    },
+    {
+      "title": "GitHub - UCSB-AI/GRIT: Official code for NeurIPS 2025 paper \"GRIT ...",
+      "url": "https://github.com/UCSB-AI/GRIT",
+      "snippet": "Pretrained GRIT models are available on Hugging Face: GRIT-20-InternVL-2B: GRIT model based on InternVL 2B GRIT-20-Qwen2.5-VL-3B: GRIT model based on Qwen2.5-VL 3B Follow the instructions in GRIT_data/README.md to download image data and place it within the GRIT_data directory. python extract_eval ..."
+    },
+    {
+      "title": "PDF GRiT: A Generative Region-to-text Transformer for Object Understanding",
+      "url": "https://cse.buffalo.edu/~jsyuan/papers/2024/ECCV2024_Jialian_Wu.pdf",
+      "snippet": "Specifically, GRiT consists of a visual encoder to extract image features, a foreground object extractor to localize objects, and a text decoder to generate natural language for objects. With the same model architecture, GRiT describes objects via not only simple nouns, but also rich descriptive sentences."
+    },
+    {
+      "title": "[2505.15879] GRIT: Teaching MLLMs to Think with Images",
+      "url": "https://arxiv.org/abs/2505.15879",
+      "snippet": "To this end, we propose Grounded Reasoning with Images and Texts (GRIT), a novel method for training MLLMs to think with images. GRIT introduces a grounded reasoning paradigm, in which models generate reasoning chains that interleave natural language and explicit bounding box coordinates."
+    }
+  ]
+}

@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "username202321/qwen3.54b-df44-dodgerset_big-v1",
+  "slug": "username202321-qwen3-54b-df44-dodgerset_big-v1",
+  "author": "username202321",
+  "url": "https://huggingface.co/username202321/qwen3.54b-df44-dodgerset_big-v1",
+  "created_at": "2026-08-30T14:38:12.000Z",
+  "updated_at": "2026-08-30T14:41:40.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "qwen3_5",
+    "llama.cpp",
+    "unsloth",
+    "vision-language-model",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 4326350848,
+  "parameters_human": "4.33B",
+  "storage_bytes": 8477193856,
+  "storage_human": "8.5 GB",
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "‎Google Gemini",
+      "url": "https://gemini.google.com/",
+      "snippet": "Meet Gemini, Google&#x27;s AI assistant. Get help with writing, planning, brainstorming, and more. Experience the power of generative AI."
+    },
+    {
+      "title": "Qwen/Qwen3.5-4B · Hugging Face",
+      "url": "https://huggingface.co/Qwen/Qwen3.5-4B",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Qwen",
+      "url": "https://qwen.ai/blog?id=qwen3",
+      "snippet": "Today, we are excited to announce the release of Qwen3, the latest addition to the Qwen family of large language models. Our flagship model, Qwen3-235B-A22B, achieves competitive results in benchmark evaluations of coding, math, general capabilities, etc., when compared to other top-tier models such as DeepSeek-R1, o1, o3-mini, Grok-3, and Gemini-2.5-Pro. Additionally, the small MoE model ..."
+    },
+    {
+      "title": "qwen3.5:4b - ollama.com",
+      "url": "https://ollama.com/library/qwen3.5:4b",
+      "snippet": "Qwen3.5 represents a significant leap forward, integrating breakthroughs in multimodal learning, architectural efficiency, reinforcement learning scale, and global accessibility to empower developers and enterprises with unprecedented capability and efficiency."
+    },
+    {
+      "title": "Odysseus AI - Self-Hosted AI Workspace Setup Guide",
+      "url": "https://odysseusai.dev/",
+      "snippet": "Odysseus AI Setup Guide For PewDiePie&#x27;s self-hosted AI workspace Verify the official source, choose Docker, Windows, macOS, or Linux, connect Ollama or API keys, read logs, choose a model that fits your hardware, and avoid unsafe public deployment."
+    }
+  ]
+}

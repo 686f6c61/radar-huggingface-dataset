@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "Moon-Young-Choi/HUTACE-I5x64x64-B8x8-T65-0.83M",
+  "slug": "moon-young-choi-hutace-i5x64x64-b8x8-t65-0-83m",
+  "author": "Moon-Young-Choi",
+  "url": "https://huggingface.co/Moon-Young-Choi/HUTACE-I5x64x64-B8x8-T65-0.83M",
+  "created_at": "2026-08-30T09:36:51.000Z",
+  "updated_at": "2026-08-30T13:27:25.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "reinforcement-learning",
+  "library": "pytorch",
+  "languages": [],
+  "tags": [
+    "pytorch",
+    "safetensors",
+    "hutace",
+    "exploration",
+    "actor-critic",
+    "terrain",
+    "partial-observation",
+    "mapzen",
+    "reinforcement-learning",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 833794,
+  "parameters_human": "833794",
+  "storage_bytes": 3527041,
+  "storage_human": "4 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "‪Moon-Young Choi‬ - ‪Google Scholar‬",
+      "url": "https://scholar.google.com/citations?user=J-Xb8JkAAAAJ&hl=en",
+      "snippet": "‪Chungnam National University‬ - ‪‪Cited by 411‬‬ - ‪Soft Material & Optical devices‬"
+    },
+    {
+      "title": "GitHub - Moon-Young-Choi/Moon-Young-Choi.github.io: Personal portfolio ...",
+      "url": "https://github.com/Moon-Young-Choi/Moon-Young-Choi.github.io",
+      "snippet": "Personal portfolio for Moonyoung Choi, a research engineer working across statistical learning, financial data systems, and reproducible research. Live site: moon-young-choi.github.io"
+    },
+    {
+      "title": "Moon Young Choi (@annamoonyoung) • Instagram photos and videos",
+      "url": "https://www.instagram.com/annamoonyoung/",
+      "snippet": "895 Followers, 1,530 Following, 348 Posts - Moon Young Choi (@annamoonyoung) on Instagram: \"\""
+    },
+    {
+      "title": "Moon-Young-Choi/open-source-intelligene - GitHub",
+      "url": "https://github.com/Moon-Young-Choi/open-source-intelligene",
+      "snippet": "open-source-intelligene Point-in-time latent disclosure-to-market representation learning system for DART disclosures."
+    },
+    {
+      "title": "Moonshot AI",
+      "url": "https://www.moonshot.ai/",
+      "snippet": "Complex problems, solved with ease AI Models is capability. Code, analyze, sheets and slides — simplify complex work with the latest flagship model."
+    }
+  ]
+}

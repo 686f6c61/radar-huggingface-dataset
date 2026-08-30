@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "nkemuduku/crop-disease-model",
+  "slug": "nkemuduku-crop-disease-model",
+  "author": "nkemuduku",
+  "url": "https://huggingface.co/nkemuduku/crop-disease-model",
+  "created_at": "2026-08-30T18:52:42.000Z",
+  "updated_at": "2026-08-30T19:02:14.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 48794616,
+  "storage_human": "49 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - nkemuduku/Crop-Disease-Detection",
+      "url": "https://github.com/nkemuduku/Crop-Disease-Detection",
+      "snippet": "Build an end-to-end AI-powered Crop Disease Detection System capable of: Detecting crop diseases from leaf images Classifying diseases using deep learning Providing prediction confidence Explaining predictions (SHAP/LIME) Serving predictions through a FastAPI REST API Offering an interactive ..."
+    },
+    {
+      "title": "Crop-Disease-Detection/README.md at main · nkemuduku/Crop ... - GitHub",
+      "url": "https://github.com/nkemuduku/Crop-Disease-Detection/blob/main/README.md",
+      "snippet": "Contribute to nkemuduku/Crop-Disease-Detection development by creating an account on GitHub."
+    },
+    {
+      "title": "wambugu71/crop_leaf_diseases_vit · Hugging Face",
+      "url": "https://huggingface.co/wambugu71/crop_leaf_diseases_vit",
+      "snippet": "The model aims to provide farmers and agronomists with real-time disease detection for better crop management. Model Details Model Description This Vision Transformer model has been fine-tuned to classify various plant diseases commonly found in agricultural settings."
+    },
+    {
+      "title": "How a rural school built an AI model to predict crop diseases",
+      "url": "https://adaeventsnews.com/how-a-rural-school-built-an-ai-model-to-predict-crop-diseases/",
+      "snippet": "The AI tool has already helped dozens of farmers reduce crop loss, increasing yields by up to 30%. Encouraged by these results, the students are now working on expanding their model to detect multiple crop diseases and translate diagnoses into local dialects for better comprehension."
+    },
+    {
+      "title": "Machine Learning and Deep Learning for Crop Disease Diagnosis ... - MDPI",
+      "url": "https://www.mdpi.com/2073-4395/14/12/3001",
+      "snippet": "ML and deep learning (DL) techniques offer an alternative, transforming disease detection and diagnosis by equipping farmers with rapid, reliable, and environmentally friendly tools to manage crop diseases effectively [7, 8]."
+    }
+  ]
+}

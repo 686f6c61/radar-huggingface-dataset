@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "Rin247/gemma-4-12B-it-Uncensored-Aquarion-INT4",
+  "slug": "rin247-gemma-4-12b-it-uncensored-aquarion-int4",
+  "author": "Rin247",
+  "url": "https://huggingface.co/Rin247/gemma-4-12B-it-Uncensored-Aquarion-INT4",
+  "created_at": "2026-08-30T16:24:39.000Z",
+  "updated_at": "2026-08-30T16:30:36.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "gemma4_unified",
+    "quantized",
+    "int4",
+    "uncensored",
+    "abliterated",
+    "8-bit",
+    "int4_weight_only",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 6509756464,
+  "parameters_human": "6.51B",
+  "storage_bytes": 7772192434,
+  "storage_human": "7.8 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Justbackup/gemma-4-12B-it-uncensored · Hugging Face",
+      "url": "https://huggingface.co/Justbackup/gemma-4-12B-it-uncensored",
+      "snippet": "Note on the Unified architecture.gemma-4-12B-it is the encoder-free Gemma4Unified model (released 2026-06-03). Its refusal signal concentrates in the upper decoder layers (L15-47), so only the top 70% of layers are abliterated — ablating the near-zero-SNR early layers adds distortion with no refusal benefit."
+    },
+    {
+      "title": "Rin247/gemma-3-12b-it-Uncensored-Aquarion-INT4 · Hugging Face",
+      "url": "https://huggingface.co/Rin247/gemma-3-12b-it-Uncensored-Aquarion-INT4",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Gemma 4 12B uncensored merge optimized for AMD ROCM drops on ...",
+      "url": "https://uncensoredhub.ai/news/2026-07-02-gemma-4-12b-uncensored-merge-optimized-for-amd-rocm-drops-on-huggingface",
+      "snippet": "A quantized 12B-parameter Gemma 4 merge combining agentic, composer, and uncensored fine-tunes has been released in GGUF format optimized for AMD ROCM hardware."
+    },
+    {
+      "title": "Run Gemma 4 Locally: From 4 GB VRAM (E4B) to 31B, Free",
+      "url": "https://locallyuncensored.com/blog/gemma-4-local-guide.html",
+      "snippet": "Run Google&#x27;s Gemma 4 on your own PC — E4B fits 4 GB VRAM, up to 31B dense. Vision, tool calling, 256K context, plus uncensored Heretic GGUF links."
+    },
+    {
+      "title": "Gemma 4 — Google DeepMind",
+      "url": "https://deepmind.google/models/gemma/gemma-4/",
+      "snippet": "Safety Gemma 4 models undergo the same rigorous infrastructure security protocols as our proprietary models. By choosing Gemma 4, enterprises and sovereign organizations gain a trusted, transparent foundation that delivers state-of-the-art capabilities while meeting the highest standards for security and reliability."
+    }
+  ]
+}

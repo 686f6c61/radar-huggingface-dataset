@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "manine777/OpenVoice",
+  "slug": "manine777-openvoice",
+  "author": "manine777",
+  "url": "https://huggingface.co/manine777/OpenVoice",
+  "created_at": "2026-08-30T17:39:54.000Z",
+  "updated_at": "2026-08-30T17:39:54.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-speech",
+  "library": null,
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "tags": [
+    "audio",
+    "text-to-speech",
+    "instant-voice-cloning",
+    "en",
+    "zh",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 452267317,
+  "storage_human": "452 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - myshell-ai/OpenVoice: Instant voice cloning by MIT and MyShell ...",
+      "url": "https://github.com/myshell-ai/OpenVoice",
+      "snippet": "Free for commercial use. openvoice.mp4 OpenVoice has been powering the instant voice cloning capability of myshell.ai since May 2023. Until Nov 2023, the voice cloning model has been used tens of millions of times by users worldwide, and witnessed the explosive user growth on the platform."
+    },
+    {
+      "title": "GitHub - Mikeaiapp/OpenVoiceai: Instant voice cloning by MIT and ...",
+      "url": "https://github.com/Mikeaiapp/OpenVoiceai",
+      "snippet": "OpenVoice has been powering the instant voice cloning capability of myshell.ai since May 2023. Until Nov 2023, the voice cloning model has been used tens of millions of times by users worldwide, and witnessed the explosive user growth on the platform."
+    },
+    {
+      "title": "OpenVoice: Text-to-Audio model — overview, use cases, alternatives",
+      "url": "https://www.aimodels.fyi/models/huggingFace/openvoice-myshell-ai",
+      "snippet": "Overview OpenVoice is an instant voice cloning model developed by myshell-ai that replicates a speaker&#x27;s voice from a short audio sample and generates speech in multiple languages. The model excels at accurate tone color cloning while providing granular control over voice styles including emotion, accent, rhythm, pauses, and intonation. A critical strength is zero-shot cross-lingual voice ..."
+    },
+    {
+      "title": "openvoice: Text-to-Audio model — overview, use cases, alternatives",
+      "url": "https://www.aimodels.fyi/models/replicate/openvoice-cjwbw",
+      "snippet": "Overview openvoice is a voice cloning model that generates speech by replicating a reference speaker&#x27;s tone color while enabling independent control over voice style parameters like emotion, accent, rhythm, and intonation. Built by cjwbw, it represents OpenVoice v2 and handles zero-shot cross-lingual cloning without requiring training data for unseen languages. The model has powered MyShell.ai ..."
+    },
+    {
+      "title": "rsxdalv/OpenVoiceV2 · Hugging Face",
+      "url": "https://huggingface.co/rsxdalv/OpenVoiceV2",
+      "snippet": "OpenVoice has been powering the instant voice cloning capability of myshell.ai since May 2023. Until Nov 2023, the voice cloning model has been used tens of millions of times by users worldwide, and witnessed the explosive user growth on the platform."
+    }
+  ]
+}

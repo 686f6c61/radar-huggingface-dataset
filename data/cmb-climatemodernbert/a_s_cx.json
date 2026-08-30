@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "CMB-ClimateModernBERT/A_S_CX",
+  "slug": "cmb-climatemodernbert-a_s_cx",
+  "author": "CMB-ClimateModernBERT",
+  "url": "https://huggingface.co/CMB-ClimateModernBERT/A_S_CX",
+  "created_at": "2026-08-30T15:58:54.000Z",
+  "updated_at": "2026-08-30T16:00:26.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "fill-mask",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "modernbert",
+    "fill-mask",
+    "climate",
+    "domain-adaptation",
+    "continued-pretraining",
+    "academic-text",
+    "synthetic-data",
+    "en",
+    "base_model:answerdotai/ModernBERT-base",
+    "base_model:finetune:answerdotai/ModernBERT-base",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 149655232,
+  "parameters_human": "149.7M",
+  "storage_bytes": 598635000,
+  "storage_human": "599 MB",
+  "base_model": "answerdotai/ModernBERT-base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ClimateModernBERT - a sraj Collection - Hugging Face",
+      "url": "https://huggingface.co/collections/sraj/climatemodernbert",
+      "snippet": "sraj &#x27;s Collections ClimateModernBERT CMB all ModernBERT Checkpoints from pretraining phases"
+    },
+    {
+      "title": "ModernBERT Checkpoints from pretraining phases - a sraj Collection",
+      "url": "https://huggingface.co/collections/sraj/modernbert-checkpoints-from-pretraining-phases",
+      "snippet": "sraj &#x27;s Collections ClimateModernBERT CMB all ModernBERT Checkpoints from pretraining phases"
+    },
+    {
+      "title": "Download | CMB - Computational Model Builder",
+      "url": "https://www.computationalmodelbuilder.org/download/",
+      "snippet": "Nightly Builds based on the CMB Git Repo Release Branch (currently based on 6.0.x) can be bound at CMB Nightly Release Builds CMB Source Code is available from the following Git Repos"
+    },
+    {
+      "title": "EPA-CMB8.2 Users Manual",
+      "url": "https://nepis.epa.gov/Exe/ZyPURL.cgi?Dockey=P1009R4F.TXT",
+      "snippet": "The present author is indebted to the many contributors to the earlier work. During September - December 2004, EPA-CMB8.2 and its documentation (this Users Manual and its companion Protocol for Applying and Validating the CMB Model for PM2.5 and VOC) were subjected to scientific peer review under EPA Contract 4D-6097- NTSX."
+    },
+    {
+      "title": "Chemical Mass Balance (CMB) Model - US EPA",
+      "url": "https://www.epa.gov/scram/chemical-mass-balance-cmb-model",
+      "snippet": "The Chemical Mass Balance (CMB) Model EPA-CMB v8.2 is one of several receptor models that has been applied to air quality problems over the last two decades. Based on an effective-variance least squares method (EVLS), EPA has supported CMB as a regulatory planning tool through its approval of numerous State Implementation Plans (SIPs) which have a source apportionment component. CMB requires ..."
+    }
+  ]
+}

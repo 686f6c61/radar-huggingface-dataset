@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "AnnotateIt/rfdetr-seg-small-coco-onnx",
+  "slug": "annotateit-rfdetr-seg-small-coco-onnx",
+  "author": "AnnotateIt",
+  "url": "https://huggingface.co/AnnotateIt/rfdetr-seg-small-coco-onnx",
+  "created_at": "2026-08-30T17:44:34.000Z",
+  "updated_at": "2026-08-30T17:44:46.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-segmentation",
+  "library": "onnx",
+  "languages": [],
+  "tags": [
+    "onnx",
+    "onnxruntime-web",
+    "instance-segmentation",
+    "rf-detr",
+    "coco",
+    "image-segmentation",
+    "base_model:Roboflow/rf-detr-seg-small",
+    "base_model:quantized:Roboflow/rf-detr-seg-small",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 123380405,
+  "storage_human": "123 MB",
+  "base_model": "Roboflow/rf-detr-seg-small",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "AnnotateIt/rfdetr-small-coco-onnx · Hugging Face",
+      "url": "https://huggingface.co/AnnotateIt/rfdetr-small-coco-onnx",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "AnnotateIt/rfdetr-seg-nano-coco-onnx · Hugging Face",
+      "url": "https://huggingface.co/AnnotateIt/rfdetr-seg-nano-coco-onnx",
+      "snippet": "An independent, unofficial FP32 ONNX conversion of Roboflow&#x27;s RF-DETR Seg Nano pretrained checkpoint, produced and validated for AnnotateIt &#x27;s local, in-browser auto-annotation. Exported with the officialrfdetr exporter — not a re-implementation."
+    },
+    {
+      "title": "GitHub - roboflow/rf-detr: RF-DETR is a real-time object detection and ...",
+      "url": "https://github.com/roboflow/rf-detr",
+      "snippet": "RF-DETR is a real-time object detection and segmentation model architecture developed by Roboflow, SOTA on COCO, designed for fine-tuning. [ICLR 2026] - roboflow/rf-detr"
+    },
+    {
+      "title": "GitHub - dansonc/rf-detr-github: RF-DETR is a real-time object ...",
+      "url": "https://github.com/dansonc/rf-detr-github",
+      "snippet": "To use segmentation, use the rfdetr-seg-preview model ID. This model will return segmentation masks from a RF-DETR-Seg (Preview) model trained on the Microsoft COCO dataset."
+    },
+    {
+      "title": "GitHub - roboflow/rf-detr: RF-DETR is a real-time object detection and ...",
+      "url": "https://github.rbtree.workers.dev/roboflow/rf-detr",
+      "snippet": "RF-DETR is a real-time object detection and segmentation model architecture developed by Roboflow, SOTA on COCO, designed for fine-tuning. [ICLR 2026] - GitHub - roboflow/rf-detr: RF-DETR is a real-time object detection and segmentation model architecture developed by Roboflow, SOTA on COCO, designed for fine-tuning."
+    }
+  ]
+}

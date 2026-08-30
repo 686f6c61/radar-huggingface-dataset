@@ -1,0 +1,78 @@
+{
+  "schema": 1,
+  "id": "CMB-ClimateModernBERT/Merge_DARE_D07_LRD",
+  "slug": "cmb-climatemodernbert-merge_dare_d07_lrd",
+  "author": "CMB-ClimateModernBERT",
+  "url": "https://huggingface.co/CMB-ClimateModernBERT/Merge_DARE_D07_LRD",
+  "created_at": "2026-08-30T15:45:55.000Z",
+  "updated_at": "2026-08-30T15:46:01.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "fill-mask",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "modernbert",
+    "fill-mask",
+    "climate",
+    "domain-adaptation",
+    "continued-pretraining",
+    "merge",
+    "mergekit",
+    "academic-text",
+    "web-text",
+    "synthetic-data",
+    "en",
+    "base_model:answerdotai/ModernBERT-base",
+    "base_model:finetune:answerdotai/ModernBERT-base",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 149655232,
+  "parameters_human": "149.7M",
+  "storage_bytes": 299324680,
+  "storage_human": "299 MB",
+  "base_model": "answerdotai/ModernBERT-base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ClimateModernBERT - a sraj Collection - Hugging Face",
+      "url": "https://huggingface.co/collections/sraj/climatemodernbert",
+      "snippet": "ClimateModernBERT updated about 1 month ago Final Models from the paper - ClimateModernBERT Upvote - Sort: Collection"
+    },
+    {
+      "title": "Merged CMB - a sraj Collection - Hugging Face",
+      "url": "https://huggingface.co/collections/sraj/merged-cmb",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GitHub - yule-BUAA/MergeLM: Codebase for Merging Language Models (ICML ...",
+      "url": "https://github.com/yule-BUAA/MergeLM",
+      "snippet": "Codebase for Merging Language Models (ICML 2024). Contribute to yule-BUAA/MergeLM development by creating an account on GitHub."
+    },
+    {
+      "title": "arXiv.org e-Print archive",
+      "url": "https://arxiv.org/pdf/2311.03099",
+      "snippet": "arXiv.org e-Print archive"
+    },
+    {
+      "title": "ComfyUI-DareMerge/README.md at master - GitHub",
+      "url": "https://github.com/54rt1n/ComfyUI-DareMerge/blob/master/README.md",
+      "snippet": "In general, one means keep first model, zero means keep second model For DARE, we use the base model to determine which values to protect or include. For TIES, we can use the sum of the delta ties (as in the paper), or the count, or off to disable. Can accept a model mask, which will restrict changes to only modify the masked areas."
+    }
+  ]
+}

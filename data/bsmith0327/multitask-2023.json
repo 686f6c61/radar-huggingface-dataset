@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "bsmith0327/multitask-2023",
+  "slug": "bsmith0327-multitask-2023",
+  "author": "bsmith0327",
+  "url": "https://huggingface.co/bsmith0327/multitask-2023",
+  "created_at": "2026-08-30T15:59:57.000Z",
+  "updated_at": "2026-08-30T16:00:05.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "hybrid",
+    "pytorch",
+    "multitask",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 16576,
+  "parameters_human": "16576",
+  "storage_bytes": 66784,
+  "storage_human": "66784 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Multi — one task, the right AI workflow",
+      "url": "https://getmulti.ai/",
+      "snippet": "Put 300+ AI models to work — the right one for every job. No single model wins at everything. Multi puts 300+ models from every major lab to work across four workflows, so you deploy the best AI for each task instead of forcing one to do it all. Using the right model for the right project is the advantage most people leave on the table."
+    },
+    {
+      "title": "MultitaskAI - The Custom Chat UI for OpenAI, Anthropic, Google Gemini ...",
+      "url": "https://multitaskai.com/",
+      "snippet": "Chat seamlessly with AI models like OpenAI, Anthropic, and Google Gemini using MultitaskAI, a custom-built interface designed for split-screen multitasking, side-by-side comparisons, and smarter workflows."
+    },
+    {
+      "title": "Research | OpenAI",
+      "url": "https://openai.com/research/",
+      "snippet": "We advance the science of AI through research on frontier models, reasoning, multimodal systems, and safe deployment. GPT OpenAI&#x27;s GPT series models are fast, versatile, and cost-efficient AI systems designed to understand context, generate content, and reason across text, images, and more."
+    },
+    {
+      "title": "GitHub - vision-agh/XOH23-MultiTaskV3",
+      "url": "https://github.com/vision-agh/XOH23-MultiTaskV3",
+      "snippet": "It also contains instructions on how to train and evaluate your model. After training the network, quantize and deploy the model using run_quant.sh and run_deploy.sh scripts provided in repository. To compile deployed model we recommend using tools provided by Vitis-AI 2.5: Github Repository."
+    },
+    {
+      "title": "‎Gemini Apps&#x27; release updates & improvements",
+      "url": "https://gemini.google/release-notes/",
+      "snippet": "Explore the latest updates from Gemini Apps - including improvements in generative AI capabilities, expanded access, and more."
+    }
+  ]
+}

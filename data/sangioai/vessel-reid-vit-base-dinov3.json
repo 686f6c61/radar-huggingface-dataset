@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "sangioai/vessel-reid-vit-base-dinov3",
+  "slug": "sangioai-vessel-reid-vit-base-dinov3",
+  "author": "sangioai",
+  "url": "https://huggingface.co/sangioai/vessel-reid-vit-base-dinov3",
+  "created_at": "2026-08-30T13:06:16.000Z",
+  "updated_at": "2026-08-30T13:09:11.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "vessel-reid",
+  "languages": [],
+  "tags": [
+    "vessel-reid",
+    "safetensors",
+    "computer-vision",
+    "image-embeddings",
+    "image-retrieval",
+    "model_hub_mixin",
+    "pytorch",
+    "pytorch_model_hub_mixin",
+    "timm",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 86428672,
+  "parameters_human": "86.4M",
+  "storage_bytes": 345731208,
+  "storage_human": "346 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - facebookresearch/dinov3: Reference PyTorch implementation and ...",
+      "url": "https://github.com/facebookresearch/dinov3",
+      "snippet": "The model weights are also available in Hugging Face Hub and supported by the Hugging Face Transformers library. Building on our original high-resolution canopy height maps released in 2024, CHMv2 delivers substantial improvements in accuracy, detail, and global consistency by leveraging DINOv3."
+    },
+    {
+      "title": "DINOv3 - ai.meta.com",
+      "url": "https://ai.meta.com/research/dinov3/",
+      "snippet": "DINOv3 sets a new standard in vision foundation models. For the first time, a model trained with SSL outperforms weakly-supervised models on a broad range of probing tasks, from fine-grained image classification, to semantic segmentation, to object tracking in video."
+    },
+    {
+      "title": "DINOv3 · Hugging Face",
+      "url": "https://huggingface.co/docs/transformers/model_doc/dinov3",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Models - Hugging Face",
+      "url": "https://huggingface.co/models?other=dino",
+      "snippet": "Explore machine learning models."
+    },
+    {
+      "title": "GitHub - nleobandung/dinov3-vitb16-pretrain-lvd1689m",
+      "url": "https://github.com/nleobandung/dinov3-vitb16-pretrain-lvd1689m",
+      "snippet": "DINOv3 is a family of versatile vision foundation models that outperforms the specialized state of the art across a broad range of settings, without fine-tuning. DINOv3 produces high-quality dense features that achieve outstanding performance on various vision tasks, significantly surpassing previous self- and weakly-supervised foundation models."
+    }
+  ]
+}

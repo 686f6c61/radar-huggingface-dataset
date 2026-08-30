@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "Rin247/gemma-4-12B-it-Uncensored-Aquarion-INT8",
+  "slug": "rin247-gemma-4-12b-it-uncensored-aquarion-int8",
+  "author": "Rin247",
+  "url": "https://huggingface.co/Rin247/gemma-4-12B-it-Uncensored-Aquarion-INT8",
+  "created_at": "2026-08-30T16:30:38.000Z",
+  "updated_at": "2026-08-30T16:40:48.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "gemma4_unified",
+    "quantized",
+    "int8",
+    "uncensored",
+    "abliterated",
+    "8-bit",
+    "int8_weight_only",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 11959730224,
+  "parameters_human": "11.96B",
+  "storage_bytes": 13051808682,
+  "storage_human": "13.1 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Justbackup/gemma-4-12B-it-uncensored · Hugging Face",
+      "url": "https://huggingface.co/Justbackup/gemma-4-12B-it-uncensored",
+      "snippet": "Note on the Unified architecture.gemma-4-12B-it is the encoder-free Gemma4Unified model (released 2026-06-03). Its refusal signal concentrates in the upper decoder layers (L15-47), so only the top 70% of layers are abliterated — ablating the near-zero-SNR early layers adds distortion with no refusal benefit."
+    },
+    {
+      "title": "google/gemma-4-12B · Hugging Face",
+      "url": "https://huggingface.co/google/gemma-4-12B",
+      "snippet": "Transparency and Accountability This model card summarizes details on the models&#x27; architecture, capabilities, limitations, and evaluation processes. A responsibly developed open model offers the opportunity to share innovation by making VLM technology accessible to developers and researchers across the AI ecosystem. Risks identified and ..."
+    },
+    {
+      "title": "Gemma 4 — Google DeepMind",
+      "url": "https://deepmind.google/models/gemma/gemma-4/",
+      "snippet": "Safety Gemma 4 models undergo the same rigorous infrastructure security protocols as our proprietary models. By choosing Gemma 4, enterprises and sovereign organizations gain a trusted, transparent foundation that delivers state-of-the-art capabilities while meeting the highest standards for security and reliability."
+    },
+    {
+      "title": "Run Gemma 4 Locally: From 4 GB VRAM (E4B) to 31B, Free",
+      "url": "https://locallyuncensored.com/blog/gemma-4-local-guide.html",
+      "snippet": "Run Google&#x27;s Gemma 4 on your own PC — E4B fits 4 GB VRAM, up to 31B dense. Vision, tool calling, 256K context, plus uncensored Heretic GGUF links."
+    },
+    {
+      "title": "Gemma 4 12B download | SourceForge.net",
+      "url": "https://sourceforge.net/projects/gemma-4-12b/",
+      "snippet": "Download Gemma 4 12B for free. Unified multimodal Gemma model for local coding and reasoning. Gemma 4 12B is Google DeepMind&#x27;s unified open-weight multimodal model designed for efficient local reasoning, coding, and multimodal understanding. Unlike other Gemma 4 models that rely on separate encoders, the 12B Unified model uses an encoder-free architecture that projects raw image patches and ..."
+    }
+  ]
+}

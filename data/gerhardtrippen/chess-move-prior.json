@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "GerhardTrippen/chess-move-prior",
+  "slug": "gerhardtrippen-chess-move-prior",
+  "author": "GerhardTrippen",
+  "url": "https://huggingface.co/GerhardTrippen/chess-move-prior",
+  "created_at": "2026-08-30T17:48:25.000Z",
+  "updated_at": "2026-08-30T17:48:28.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "onnx",
+    "chess",
+    "policy",
+    "zugwise",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 9566168,
+  "storage_human": "10 MB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GerhardTrippen (Gerhard Trippen) - Hugging Face",
+      "url": "https://huggingface.co/GerhardTrippen/models",
+      "snippet": "AI & ML interests ... Recent Activity updated a model 16 days ago ... published a model 16 days ago"
+    },
+    {
+      "title": "GitHub - GerhardTrippen/Zugwise: Chess scoresheet digitization tool ...",
+      "url": "https://github.com/GerhardTrippen/Zugwise",
+      "snippet": "Open Zugwise at gerhardtrippen.github.io/Zugwise Wait for the one-time setup to finish (this loads the handwriting model and chess engine — about 30 seconds on first visit) You&#x27;re ready to go After the first visit, Zugwise works offline too."
+    },
+    {
+      "title": "GitHub - CSSLab/maia3: Maia-3 is the most accurate and efficient human ...",
+      "url": "https://github.com/CSSLab/maia3",
+      "snippet": "Maia-3 is a family of chess transformer models for predicting human moves across skill levels. This repository contains the inference code needed to run the released Maia-3 weights as a UCI chess engine. Maia3 is built on Chessformer, our novel transformer architecture for chess modeling. Read the paper here: Chessformer: A Unified Architecture for Chess Modeling If you use Maia-3 in your work ..."
+    },
+    {
+      "title": "LLM Leaderboard 2026: Compare 300+ Top AI Models by Intelligence, Speed ...",
+      "url": "https://llm-stats.com/leaderboards/llm-leaderboard",
+      "snippet": "The LLM Leaderboard — independent ranking of GPT, Claude, Gemini, Llama, DeepSeek and 300+ AI models by intelligence, speed and price. Filter by provider, license, modality and context window; sort by every benchmark. Composite LLM Stats Score updated continuously from public benchmarks and live API metrics."
+    },
+    {
+      "title": "Predicting Human Chess Moves: An AI Assisted Analysis of Chess Games ...",
+      "url": "https://arxiv.org/html/2512.01880v1",
+      "snippet": "Most existing approaches to chess analysis focus on optimal move generation, which neglects the inherent variability and uncertainty characteristic of human decision-making 1. While determining optimal moves is useful to build the best chess engine, it does not adequately capture behavioral patterns. Conventional analysis often relies on evaluating human moves against computer-generated ..."
+    }
+  ]
+}

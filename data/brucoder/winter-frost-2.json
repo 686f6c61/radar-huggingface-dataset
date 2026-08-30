@@ -1,0 +1,76 @@
+{
+  "schema": 1,
+  "id": "brucoder/winter-frost-2",
+  "slug": "brucoder-winter-frost-2",
+  "author": "brucoder",
+  "url": "https://huggingface.co/brucoder/winter-frost-2",
+  "created_at": "2026-08-30T16:04:36.000Z",
+  "updated_at": "2026-08-30T17:02:02.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen2",
+    "text-generation",
+    "qlora",
+    "lora",
+    "fine-tuned",
+    "qwen2.5",
+    "conversational",
+    "en",
+    "base_model:Qwen/Qwen2.5-7B-Instruct",
+    "base_model:adapter:Qwen/Qwen2.5-7B-Instruct",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 7615616512,
+  "parameters_human": "7.62B",
+  "storage_bytes": 15231271888,
+  "storage_human": "15.2 GB",
+  "base_model": "Qwen/Qwen2.5-7B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "brucoder/winter-frost-2-adapter · Hugging Face",
+      "url": "https://huggingface.co/brucoder/winter-frost-2-adapter",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "brucoder/winter · Hugging Face",
+      "url": "https://huggingface.co/brucoder/winter",
+      "snippet": "Winter is a lightweight, open-source language model developed by Ineza Aime Bruno. Built for efficiency and performance, it provides a fast and accessible baseline for natural language processing tasks."
+    },
+    {
+      "title": "brucoder/Winter-core-1.2-code · Hugging Face",
+      "url": "https://huggingface.co/brucoder/Winter-core-1.2-code",
+      "snippet": "MLS-Bench evaluates whether AI systems can invent generalizable and scalable ML methods. MLS-Bench-Lite is the official 30-task subset of MLS-Bench, covering LLM pretraining and post-training, robotics, world models, computer vision, reinforcement learning, optimization, ML systems, AI for Science, and more."
+    },
+    {
+      "title": "brucoder (INEZA AIME BRUNO) - Hugging Face",
+      "url": "https://huggingface.co/brucoder",
+      "snippet": "Recent Activity updated a modelabout 19 hours ago brucoder/Winter-core-1.2-code updated a Space2 days ago brucoder/winter-dataset-training liked a Space2 days ago brucoder/winter-dataset-training View all activity"
+    },
+    {
+      "title": "brucoder/GLM-5.2-Winter-PRO · Hugging Face",
+      "url": "https://huggingface.co/brucoder/GLM-5.2-Winter-PRO",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    }
+  ]
+}

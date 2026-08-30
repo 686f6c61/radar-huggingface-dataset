@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "marfrit/Qwen3.8-27B-MTP-OpenVINO",
+  "slug": "marfrit-qwen3-8-27b-mtp-openvino",
+  "author": "marfrit",
+  "url": "https://huggingface.co/marfrit/Qwen3.8-27B-MTP-OpenVINO",
+  "created_at": "2026-08-30T15:58:11.000Z",
+  "updated_at": "2026-08-30T17:29:21.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "openvino",
+  "languages": [],
+  "tags": [
+    "openvino",
+    "intel-arc",
+    "speculative-decoding",
+    "multi-token-prediction",
+    "arcint",
+    "base_model:Qwen/Qwen3.8-27B",
+    "base_model:finetune:Qwen/Qwen3.8-27B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 2121542408,
+  "storage_human": "2.1 GB",
+  "base_model": "Qwen/Qwen3.8-27B",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Qwen3.8-27B - GitHub",
+      "url": "https://github.com/AlibabaCloud-Official/Qwen3.8-27B",
+      "snippet": "Welcome to the repository for Qwen3.8-27B —the latest native multimodal dense open-weight model released by Alibaba&#x27;s Qwen team. Delivering top-tier performance for local hardware, Qwen3.8-27B excels at coding, agentic workflows, and office automation tasks."
+    },
+    {
+      "title": "Qwen3.8-27B MTP: the flag was free the whole time - GitHub",
+      "url": "https://github.com/sudoingX/qwen38-mtp",
+      "snippet": "Qwen trained multi-token-prediction (nextn) layers into Qwen3.8. The quantizers kept them: unsloth&#x27;s GGUFs carry the blk.*.nextn.* tensors, which llama.cpp loads and, without the flag, ignores. llama.cpp added draft-mtp speculative decoding in PR #22673 (July 2026): the server drafts tokens with the built-in head and verifies them with the main model, so accepted drafts cost a fraction of a ..."
+    },
+    {
+      "title": "Qwen/Qwen3.8-27B | vLLM Recipes",
+      "url": "https://recipes.vllm.ai/Qwen/Qwen3.8-27B",
+      "snippet": "27B-parameter dense hybrid-attention model with linear attention on 48 of 64 layers, a vision tower, a built-in MTP draft head, 262K native context window and extensible to 1M context"
+    },
+    {
+      "title": "Qwen3.8-27B - vLLM Ascend",
+      "url": "https://docs.vllm.ai/projects/ascend/en/latest/tutorials/models/Qwen3.8-27B.html",
+      "snippet": "Qwen3.8-27B 1 Introduction ¶ Qwen3.8-27B is the 27-billion-parameter dense member of the Qwen3.8 family, the most capable generation in the Qwen open-model family to date. Built on the architectural foundation of Qwen3.5, it shares the same hybrid-attention backbone as the 2.4T MoE flagship: of its 64 layers, only 16 run full (gated) attention (full_attention_interval: 4) while the other 48 ..."
+    },
+    {
+      "title": "Qwen3.8-27B: The Ultimate Guide to Running It Locally",
+      "url": "https://linas.substack.com/p/qwen3-8-27b-local-guide",
+      "snippet": "The Ultimate Guide to Qwen3.8-27B 🤖 How to run Alibaba&#x27;s 27B open AI model locally: a step-by-step guide to the settings, hardware requirements, & prompts that deliver frontier AI results for founders, builders, and investors."
+    }
+  ]
+}

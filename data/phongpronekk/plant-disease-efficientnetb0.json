@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "Phongpronekk/plant-disease-efficientnetb0",
+  "slug": "phongpronekk-plant-disease-efficientnetb0",
+  "author": "Phongpronekk",
+  "url": "https://huggingface.co/Phongpronekk/plant-disease-efficientnetb0",
+  "created_at": "2026-08-30T16:52:19.000Z",
+  "updated_at": "2026-08-30T16:55:13.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "keras",
+  "languages": [],
+  "tags": [
+    "keras",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 21143089,
+  "storage_human": "21 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "EfficientNet-Based Deep Learning Neural Network for Accurate Plant ...",
+      "url": "https://ieeexplore.ieee.org/document/10788558",
+      "snippet": "This paper presents a deep learning-based approach for the accurate detection of plant diseases utilizing the EfficientNetB0 convolutional neural network architecture. The study emphasizes the critical importance of early and precise identification of plant diseases in maintaining global food security and sustainable agricultural practices. The proposed model demonstrates superior performance ..."
+    },
+    {
+      "title": "Enhancing Plant Disease Detection: Incorporating Advanced CNN ...",
+      "url": "https://link.springer.com/article/10.1007/s44196-025-00835-2",
+      "snippet": "Convolutional Neural Networks (CNNs) have proven effective in automated plant disease diagnosis, significantly contributing to crop health monitoring. However, their limited interpretability hinders practical deployment in real-world agricultural settings. To address this, we explore advanced CNN architectures, namely ResNet-50 and EfficientNet, augmented with attention mechanisms. These ..."
+    },
+    {
+      "title": "Piyush-mit / Early-detection-and-management-of-crop-diseases ... - GitHub",
+      "url": "https://github.com/Piyush-mit/Early-detection-and-management-of-crop-diseases-and-pest-infestations",
+      "snippet": "A plant disease detection prototype that uses a TensorFlow/Keras EfficientNetB0 model to identify plant diseases from leaf images. The system provides a Next.js frontend for image submission and a FastAPI backend that performs model inference."
+    },
+    {
+      "title": "The-best7/Plant-Disease-Detection-EfficientNetB0-CBAM",
+      "url": "https://github.com/The-best7/Plant-Disease-Detection-EfficientNetB0-CBAM",
+      "snippet": "To increase transparency and user trust, **Grad-CAM++** is integrated to visualize the regions of the leaf responsible for each prediction. The complete system includes a responsive web application, an optimized deep learning model, explainable AI visualizations, and disease treatment recommendations."
+    },
+    {
+      "title": "Efficient net-based deep learning model for accurate plant disease ...",
+      "url": "https://www.researchgate.net/publication/388423275_Efficient_net-based_deep_learning_model_for_accurate_plant_disease_classification_and_diagnosis",
+      "snippet": "Efficient net-based deep learning model for accurate plant disease classification and diagnosis Adinan bin sidhique, Ashwin gopakumar and Bushara A. R"
+    }
+  ]
+}

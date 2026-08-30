@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "Michael-Jiang/See-the-Invisible-with-SWIR",
+  "slug": "michael-jiang-see-the-invisible-with-swir",
+  "author": "Michael-Jiang",
+  "url": "https://huggingface.co/Michael-Jiang/See-the-Invisible-with-SWIR",
+  "created_at": "2026-08-30T16:24:51.000Z",
+  "updated_at": "2026-08-30T16:26:16.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "image-to-image",
+  "library": "pytorch",
+  "languages": [],
+  "tags": [
+    "pytorch",
+    "swir",
+    "denoising",
+    "raw-imaging",
+    "image-to-image",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 745361542,
+  "storage_human": "745 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "MichaelHYJiang/See-the-Invisible-with-SWIR - GitHub",
+      "url": "https://github.com/MichaelHYJiang/See-the-Invisible-with-SWIR/tree/main",
+      "snippet": "See-the-Invisible-with-SWIR Official implementation of ICCV 2025 Workshop Responsible Imaging paper &#x27;See the Invisible with SWIR: Learning to Enhance via Synthetic Noise Modeling&#x27;"
+    },
+    {
+      "title": "GitHub - MichaelHYJiang/See-the-Invisible-with-SWIR: Official ...",
+      "url": "https://github.com/MichaelHYJiang/See-the-Invisible-with-SWIR",
+      "snippet": "Official implementation of ICCV 2025 Workshop Responsible Imaging paper &#x27;See the Invisible with SWIR: Learning to Enhance via Synthetic Noise Modeling&#x27;"
+    },
+    {
+      "title": "Figure 1 from See the Invisible with SWIR: Learning to Enhance via ...",
+      "url": "https://www.semanticscholar.org/paper/See-the-Invisible-with-SWIR%3A-Learning-to-Enhance-Jiang-Wang/f712285af16f1ce918b5b718fd4306493c0abbfd/figure/0",
+      "snippet": "Figure 1. Visible light (top) vs. SWIR (bottom) imaging across three scenes. (a) Long-range urban scene: RGB loses distant detail due to atmospheric scattering and particulate pollution, while SWIR reveals clearer cloud and building structures. (b) Lowlight indoor: SWIR recovers textures invisible to RGB by leveraging material-specific responses in the SWIR band. (c) Outdoor night: SWIR ..."
+    },
+    {
+      "title": "See the Invisible with SWIR: Learning to Enhance via Synthetic Noise ...",
+      "url": "https://ieeexplore.ieee.org/abstract/document/11375423",
+      "snippet": "Short-wave infrared (SWIR) imaging provides access to spectral information beyond the range of human vision and conventional CMOS sensors. Its ability to penetrate materials and perform reliably under low-light conditions has made it valuable in applications such as industrial inspection and night-time surveillance. However, SWIR sensors, particularly those based on InGaAs, exhibit noise ..."
+    },
+    {
+      "title": "arXiv.org e-Print archive",
+      "url": "https://arxiv.org/pdf/2204.06837",
+      "snippet": "arXiv.org e-Print archive"
+    }
+  ]
+}

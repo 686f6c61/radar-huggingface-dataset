@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "Developer-pintu/Qwen3.8-27B-bucket",
+  "slug": "developer-pintu-qwen3-8-27b-bucket",
+  "author": "Developer-pintu",
+  "url": "https://huggingface.co/Developer-pintu/Qwen3.8-27B-bucket",
+  "created_at": "2026-08-30T11:37:01.000Z",
+  "updated_at": "2026-08-30T12:01:22.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen2",
+    "text-generation",
+    "text-generation-inference",
+    "unsloth",
+    "conversational",
+    "en",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 7615616512,
+  "parameters_human": "7.62B",
+  "storage_bytes": 15242693946,
+  "storage_human": "15.2 GB",
+  "base_model": "unsloth/qwen2.5-coder-7b-instruct-bnb-4bit",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Qwen3.8-27B - GitHub",
+      "url": "https://github.com/AlibabaCloud-Official/Qwen3.8-27B",
+      "snippet": "Welcome to the repository for Qwen3.8-27B —the latest native multimodal dense open-weight model released by Alibaba&#x27;s Qwen team. Delivering top-tier performance for local hardware, Qwen3.8-27B excels at coding, agentic workflows, and office automation tasks."
+    },
+    {
+      "title": "unsloth/Qwen3.8-27B-GGUF · Hugging Face",
+      "url": "https://huggingface.co/unsloth/Qwen3.8-27B-GGUF",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Qwen3.8 27B - API, Specs, Playground & Pricing - Puter Developer",
+      "url": "https://developer.puter.com/ai/qwen/qwen3.8-27b/",
+      "snippet": "Qwen3.8 27B is a dense, open-weight multimodal model from Alibaba&#x27;s Qwen team, released August 14, 2026 as a smaller member of the Qwen3.8 family alongside the flagship Qwen3.8 Max."
+    },
+    {
+      "title": "a480/Qwen3.8-27B-bucket - Storage Bucket - Hugging Face",
+      "url": "https://huggingface.co/buckets/a480/Qwen3.8-27B-bucket",
+      "snippet": "Qwen3.8-27B brings these advances to a compact, deployment-friendly dense model: a native vision-language model that understands images and videos, with flexible thinking control, designed to carry complex, multi-step tasks through to completion with greater reliability."
+    },
+    {
+      "title": "qwen3.8-27b Model Info-Alibaba Cloud Model Studio (Model ... - 阿里云",
+      "url": "https://help.aliyun.com/en/model-studio/qwen3-8-27b",
+      "snippet": "The Qwen3.8 27B native vision-language dense model builds upon the 3.6-27B version, with key improvements in coding and office productivity capabilities across both text and visual modalities. It enables more reliable end-to-end completion of complex tasks, delivering consistently trustworthy results."
+    }
+  ]
+}

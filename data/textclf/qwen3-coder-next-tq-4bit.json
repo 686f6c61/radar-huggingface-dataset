@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "textclf/Qwen3-Coder-Next-TQ-4bit",
+  "slug": "textclf-qwen3-coder-next-tq-4bit",
+  "author": "textclf",
+  "url": "https://huggingface.co/textclf/Qwen3-Coder-Next-TQ-4bit",
+  "created_at": "2026-08-30T08:05:56.000Z",
+  "updated_at": "2026-08-30T18:00:01.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_next",
+    "text-generation",
+    "conversational",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "tq_quant",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 752270080,
+  "parameters_human": "752.3M",
+  "storage_bytes": 41705211733,
+  "storage_human": "41.7 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "textclf/Qwen3-Coder-Next-TQ-4bit · Hugging Face",
+      "url": "https://huggingface.co/textclf/Qwen3-Coder-Next-TQ-4bit",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GitHub - QwenLM/Qwen3-Coder: Qwen3-Coder is the code version of Qwen3 ...",
+      "url": "https://github.com/QwenLM/Qwen3-Coder",
+      "snippet": "Qwen3-Coder is available in multiple sizes, Qwen3-Coder-480B-A35B-Instruct, Qwen3-Coder-30B-A3B-Instruct, Qwen3-Coder-Next, offering exceptional performance in both coding and agentic tasks. Qwen3-Coder-Next, an open-weight language model designed specifically for coding agents and local development."
+    },
+    {
+      "title": "Qwen3 · Hugging Face",
+      "url": "https://huggingface.co/docs/transformers/model_doc/qwen3",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "qwen/qwen3-coder-next • LM Studio",
+      "url": "https://lmstudio.ai/models/qwen/qwen3-coder-next",
+      "snippet": "Qwen Coder Next is an 80B MoE with 3B active parameters designed for coding agents and local development. Excels at long-horizon reasoning, complex tool usage, and recovery from execution failures."
+    },
+    {
+      "title": "Qwen3-Coder-Next: How to Run Locally | Unsloth Documentation",
+      "url": "https://unsloth.ai/docs/models/qwen3-coder-next",
+      "snippet": "Qwen3-Coder-Next Benchmarks Qwen3-Coder-Next is the best performing model for its size, and its performance is comparable to models with 10-20× more active parameters."
+    }
+  ]
+}

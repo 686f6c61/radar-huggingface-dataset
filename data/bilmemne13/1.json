@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "bilmemne13/1",
+  "slug": "bilmemne13-1",
+  "author": "bilmemne13",
+  "url": "https://huggingface.co/bilmemne13/1",
+  "created_at": "2026-05-10T08:33:22.000Z",
+  "updated_at": "2026-08-30T18:08:06.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 15245160080,
+  "storage_human": "15.2 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "bilmemne13/1 · Hugging Face",
+      "url": "https://huggingface.co/bilmemne13/1",
+      "snippet": "bilmemne13 / 1 like 1 Model card FilesFiles and versions xet Community Copy to bucket new No model card Downloads last month -"
+    },
+    {
+      "title": "bilmemne13 (bilmemki) - Hugging Face",
+      "url": "https://huggingface.co/bilmemne13",
+      "snippet": "Sort: Recently updated. bilmemne13/1. Updated 26 days ago. bilmemne13/smooth. Updated Feb 22. bilmemne13/comfy10. Updated Dec 16, 2025"
+    },
+    {
+      "title": "LLM Leaderboard & AI Model Benchmarks — August 2026",
+      "url": "https://benchlm.ai/",
+      "snippet": "LLM Leaderboard & AI Model Benchmarks — August 2026 Compare frontier AI models by quality, cost, and context. 105 Supported and 123 Estimated models among 406 tracked LLMs — 408 benchmarks, real pricing, and runtime data in one place."
+    },
+    {
+      "title": "Model cards — Google DeepMind",
+      "url": "https://deepmind.google/models/model-cards/",
+      "snippet": "Model cards were previously hosted on modelcards.withgoogle.com 1 Gemini 2.0 Pro was released as an experimental model only."
+    },
+    {
+      "title": "Gemini — Google DeepMind",
+      "url": "https://deepmind.google/models/gemini/",
+      "snippet": "Gemini 3.5 Flash-Lite has proven incredibly fast and reliable. Ultimately, the model unlocks direct accessibility, giving users a highly responsive option they can choose on demand for smooth, uninterrupted execution.\" Ashwin Kannan, Principal AI Engineer, Palo Alto Networks"
+    }
+  ]
+}

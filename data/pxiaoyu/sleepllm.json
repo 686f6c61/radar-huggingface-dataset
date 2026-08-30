@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "pxiaoyu/SleepLLM",
+  "slug": "pxiaoyu-sleepllm",
+  "author": "pxiaoyu",
+  "url": "https://huggingface.co/pxiaoyu/SleepLLM",
+  "created_at": "2026-08-30T15:05:08.000Z",
+  "updated_at": "2026-08-30T15:30:02.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "safetensors",
+    "qwen2_5_vl",
+    "en",
+    "base_model:Qwen/Qwen2.5-7B-Instruct",
+    "base_model:finetune:Qwen/Qwen2.5-7B-Instruct",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 8292166656,
+  "parameters_human": "8.29B",
+  "storage_bytes": 16595836416,
+  "storage_human": "16.6 GB",
+  "base_model": "Qwen/Qwen2.5-7B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "SleepLM: Natural-Language Intelligence for Human Sleep",
+      "url": "https://yang-ai-lab.github.io/SleepLM/",
+      "snippet": "SleepLM is a family of foundation models that bridge natural language and multimodal polysomnography, enabling language-grounded representations of sleep physiology."
+    },
+    {
+      "title": "GitHub - yang-ai-lab/SleepLM: [ICML 2026, Spotlight] SleepLM: Natural ...",
+      "url": "https://github.com/yang-ai-lab/SleepLM",
+      "snippet": "SleepLM is the first sleep-language foundation model family that enables targeted natural language generation from multimodal polysomnography (PSG) while also learning a shared signal-text embedding space for retrieval and open vocabulary sleep understanding. It is trained on the largest paired sleep-text corpus to date, built from five NSRR cohorts totaling 100K+ hours of PSG from 10,000 ..."
+    },
+    {
+      "title": "SleepLM: Natural-Language Intelligence for Human Sleep",
+      "url": "https://arxiv.org/pdf/2602.23605v2",
+      "snippet": "SleepLM interpretation, and interaction with natural language. Despite the critical role of sleep, learning-based sleep analysis systems operate in closed label spaces (e.g., predefined stages or events) and fail to describe, query, or generalize to novel sleep phenomena. bridges natural language and"
+    },
+    {
+      "title": "SleepLM: NLP Model for Human Sleep - emergentmind.com",
+      "url": "https://www.emergentmind.com/papers/2602.23605",
+      "snippet": "The paper introduces a novel sleep-language model that aligns multimodal PSG signals with hierarchical text supervision for interactive sleep analysis. It employs a multimodal pretraining framework, ReCoCa, combining contrastive, reconstruction, and autoregressive objectives to achieve superior zero-shot performance. Experimental results demonstrate enhanced sleep staging, event localization ..."
+    },
+    {
+      "title": "yang-ai-lab/SleepLM-Base · Hugging Face",
+      "url": "https://huggingface.co/yang-ai-lab/SleepLM-Base",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    }
+  ]
+}

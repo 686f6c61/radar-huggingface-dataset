@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "tadiecool29/STL-rasyosef-roberta-base-amharic-stance-finetuned",
+  "slug": "tadiecool29-stl-rasyosef-roberta-base-amharic-stance-finetuned",
+  "author": "tadiecool29",
+  "url": "https://huggingface.co/tadiecool29/STL-rasyosef-roberta-base-amharic-stance-finetuned",
+  "created_at": "2026-08-30T13:09:33.000Z",
+  "updated_at": "2026-08-30T13:09:52.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "generated_from_trainer",
+    "base_model:rasyosef/roberta-base-amharic",
+    "base_model:finetune:rasyosef/roberta-base-amharic",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 110619652,
+  "parameters_human": "110.6M",
+  "storage_bytes": 442508025,
+  "storage_human": "443 MB",
+  "base_model": "rasyosef/roberta-base-amharic",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Amharic Text Embedding Models - a rasyosef Collection",
+      "url": "https://huggingface.co/collections/rasyosef/amharic-text-embedding-models",
+      "snippet": "Text Embedding and ColBERT models based on Amharic RoBERTa and BERT for Amharic passage retrieval"
+    },
+    {
+      "title": "rasyosef (Yosef Worku Alemneh) - Hugging Face",
+      "url": "https://huggingface.co/rasyosef/collections",
+      "snippet": "rasyosef/RoBERTa-Amharic-Embed-Base Sentence Similarity • 0.1B • Updated Jun 20, 2025 • 7"
+    },
+    {
+      "title": "[roberta-base-amharic] Named Entity Recognition.ipynb",
+      "url": "https://github.com/rasyosef/amharic-named-entity-recognition/blob/main/notebooks/%5Broberta-base-amharic%5D%20Named%20Entity%20Recognition.ipynb",
+      "snippet": "Some weights of XLMRobertaForTokenClassification were not initialized from the model checkpoint at rasyosef/roberta-base-amharic and are newly initialized: [&#x27;classifier.bias&#x27;, &#x27;classifier.weight&#x27;] You should probably TRAIN this model on a down-stream task to be able to use it for predictions and inference."
+    },
+    {
+      "title": "PDF Optimized Text Embedding Models and Benchmarks for Amharic Passage ...",
+      "url": "https://aclanthology.org/2025.findings-acl.543.pdf",
+      "snippet": "To address the gap identified above, we focus on Amharic and introduce opti- mized retrieval models and benchmarks, making the following key contributions: (i) Amharic text embeddings: we develop dense retrieval models for Amharic, leveraging Amharic BERT and RoBERTa as base models, improving passage ranking accu- racy for morphologically ..."
+    },
+    {
+      "title": "GitHub - rasyosef/amharic-news-category-classification: notebooks to ...",
+      "url": "https://github.com/rasyosef/amharic-news-category-classification",
+      "snippet": "This github repo that contains three notebooks that use the amharic-news-category-classification dataset to finetune the following models for a text classification task. The finetuned model classifies a given Amharic news article into one of the following 6 categories. ሀገር አቀፍ ዜና (Local News) መዝናኛ (Entertainment) ስፖርት (Sports) ቢዝነስ (Business) ዓለም ..."
+    }
+  ]
+}

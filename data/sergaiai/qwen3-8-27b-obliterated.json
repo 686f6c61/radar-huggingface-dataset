@@ -1,0 +1,79 @@
+{
+  "schema": 1,
+  "id": "sergAIAI/Qwen3.8-27B-OBLITERATED",
+  "slug": "sergaiai-qwen3-8-27b-obliterated",
+  "author": "sergAIAI",
+  "url": "https://huggingface.co/sergAIAI/Qwen3.8-27B-OBLITERATED",
+  "created_at": "2026-08-30T13:18:52.000Z",
+  "updated_at": "2026-08-30T13:18:52.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "mlx",
+  "languages": [],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "gguf",
+    "qwen3_5",
+    "abliterated",
+    "uncensored",
+    "obliteratus",
+    "qwen3",
+    "qwen3.8",
+    "red-team",
+    "ai-safety-research",
+    "text-generation",
+    "conversational",
+    "base_model:Qwen/Qwen3.8-27B",
+    "base_model:quantized:Qwen/Qwen3.8-27B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 27781427952,
+  "parameters_human": "27.78B",
+  "storage_bytes": 237137389456,
+  "storage_human": "237.1 GB",
+  "base_model": "Qwen/Qwen3.8-27B",
+  "formats": [
+    "gguf",
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Qwen/Qwen3.8-27B · Hugging Face",
+      "url": "https://huggingface.co/Qwen/Qwen3.8-27B",
+      "snippet": "MathVision: Qwen3.8-27B is evaluated using the fixed prompt: \"Please reason step by step, and put your final answer within &#92;boxed {}.\" For the remaining models, we report the higher score from two prompt variants—one with and one without the &#92;boxed {} formatting requirement."
+    },
+    {
+      "title": "huihui-ai/Huihui-Qwen3.8-27B-abliterated · Hugging Face",
+      "url": "https://huggingface.co/huihui-ai/Huihui-Qwen3.8-27B-abliterated",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Qwen3.8-27B OBLITERATED: 0% Refusal Rate (Aug 2026) | explainx.ai Blog",
+      "url": "https://www.explainx.ai/blog/pliny-qwen3-8-27b-obliterated-alex-finn-mac-august-2026",
+      "snippet": "QWEN-3.8-27B: OBLITERATED. 0.0% REFUSAL RATE across 842 harmful prompts.\" The model card describes zero refusals across a large, purpose-built harmful-prompt dataset, with — per Pliny&#x27;s own description — \"extra focus on liberating its cyber, jailbreak generation, and complex AI\" capability."
+    },
+    {
+      "title": "Qwen3.8-27B: Runs Locally, Nears Claude Opus (Aug 2026) - explainx.ai",
+      "url": "https://www.explainx.ai/blog/qwen-3-8-27b-open-weight-model-claude-opus-comparison-august-2026",
+      "snippet": "Qwen3.8-27B-FP8 landed Aug 15, 2026: dense 27B, vision-language, 262K context. Alibaba&#x27;s own benchmarks put it near Claude Opus on coding tasks."
+    },
+    {
+      "title": "Qwen3.8-27B: The Ultimate Guide to Running It Locally",
+      "url": "https://linas.substack.com/p/qwen3-8-27b-local-guide",
+      "snippet": "The Ultimate Guide to Qwen3.8-27B 🤖 How to run Alibaba&#x27;s 27B open AI model locally: a step-by-step guide to the settings, hardware requirements, & prompts that deliver frontier AI results for founders, builders, and investors."
+    }
+  ]
+}

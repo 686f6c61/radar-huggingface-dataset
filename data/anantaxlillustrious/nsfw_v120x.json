@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "AnantaXLIllustrious/nsfw_v120X",
+  "slug": "anantaxlillustrious-nsfw_v120x",
+  "author": "AnantaXLIllustrious",
+  "url": "https://huggingface.co/AnantaXLIllustrious/nsfw_v120X",
+  "created_at": "2026-08-30T16:19:02.000Z",
+  "updated_at": "2026-08-30T16:23:32.000Z",
+  "license": "creativeml-openrail-m",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-image",
+  "library": "diffusers",
+  "languages": [],
+  "tags": [
+    "diffusers",
+    "safetensors",
+    "text-to-image",
+    "stable-diffusion",
+    "stable-diffusion-xl",
+    "realistic",
+    "photorealistic",
+    "license:creativeml-openrail-m",
+    "endpoints_compatible",
+    "diffusers:StableDiffusionXLPipeline",
+    "region:us",
+    "not-for-all-audiences"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 2567463684,
+  "parameters_human": "2.57B",
+  "storage_bytes": 13875688436,
+  "storage_human": "13.9 GB",
+  "base_model": null,
+  "formats": [
+    "diffusers",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Ananta Workspace - a Hugging Face Space by AnantaXLIllustrious",
+      "url": "https://huggingface.co/spaces/AnantaXLIllustrious/Ananta-Workspace",
+      "snippet": "The page offers a web workspace where you can switch between several AI utilities—such as an image generator, a prompt creator, and a dataset uploader—using the left sidebar. Pick a model from the ..."
+    },
+    {
+      "title": "Ananta Workspace - a Hugging Face Space by AnantaXLIllustrious",
+      "url": "https://hf-p-cfw.fyan.top/spaces/AnantaXLIllustrious/Ananta-Workspace",
+      "snippet": "This web workspace lets you launch and switch between AI applications—such as image generation, prompt creation, dataset uploading, and benchmarking—in separate tabs. Simply click a tool in the sid..."
+    },
+    {
+      "title": "AnantaXLIllustrious (AntIllustrious)",
+      "url": "https://hf-p-cfw.fyan.top/AnantaXLIllustrious",
+      "snippet": "Ananta Benchmark Suite ⚡ Evaluating & Comparing popular AI models AnantaXLIllustrious 4 days ago Running"
+    },
+    {
+      "title": "Models - Hugging Face",
+      "url": "https://huggingface.co/models?p=1&sort=trending&search=nsfw",
+      "snippet": "Explore machine learning models. John6666/janku-v5-nsfw-trained-noobai-rou-wei-illustrious-xl-v50-sdxl"
+    },
+    {
+      "title": "CivArchive (CivitAI Archive) - AI Model Archive",
+      "url": "https://civarchive.com/",
+      "snippet": "Browse and discover AI models from CivitAI, TensorArt, and SeaArt. Community-driven archive preserving access to AI resources."
+    }
+  ]
+}

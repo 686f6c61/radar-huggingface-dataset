@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "rzhugging/php-mongodb-mssql-extensions",
+  "slug": "rzhugging-php-mongodb-mssql-extensions",
+  "author": "rzhugging",
+  "url": "https://huggingface.co/rzhugging/php-mongodb-mssql-extensions",
+  "created_at": "2026-08-30T11:52:28.000Z",
+  "updated_at": "2026-08-30T11:52:32.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "php",
+    "php-extension",
+    "mongodb",
+    "mssql",
+    "sqlsrv",
+    "pdo_sqlsrv",
+    "binaries",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 41687976,
+  "storage_human": "42 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "MongoDB - PHP Setup - Online Tutorials Library",
+      "url": "https://www.tutorialspoint.com/mongodb/mongodb_php.htm",
+      "snippet": "In this chapter, we will learn how to set up MongoDB CLIENT for PHP. Before you start using MongoDB in your PHP programs, you need to make sure that you have MongoDB Extension and Mongo Driver and PHP set up on the machine."
+    },
+    {
+      "title": "GitHub - mongodb/mongo-php-library: The Official MongoDB PHP library",
+      "url": "https://github.com/mongodb/mongo-php-library",
+      "snippet": "The Official MongoDB PHP library. Contribute to mongodb/mongo-php-library development by creating an account on GitHub."
+    },
+    {
+      "title": "Releases: mongodb/mongo-php-library - GitHub",
+      "url": "https://github.com/mongodb/mongo-php-library/releases",
+      "snippet": "The Official MongoDB PHP library. Contribute to mongodb/mongo-php-library development by creating an account on GitHub."
+    },
+    {
+      "title": "MongoDB PHP Library - PHP Library Manual - MongoDB Docs",
+      "url": "https://www.mongodb.com/docs/php-library/current/",
+      "snippet": "The mongodb extension provides a limited API to connect to a MongoDB database and execute generic commands, queries, and write operations. In contrast, the PHP library provides a full-featured API and models client, database, and collection objects. If you are developing a PHP application with MongoDB, consider using the PHP library instead of the extension alone."
+    },
+    {
+      "title": "Download MongoDB Community Server",
+      "url": "https://www.mongodb.com/try/download/community",
+      "snippet": "The Community version of our distributed database offers a flexible document data model along with support for ad-hoc queries, secondary indexing, and real-time aggregations to provide powerful ways to access and analyze your data. To download MongoDB Community Server, use the download link below, and read the installation documentation."
+    }
+  ]
+}

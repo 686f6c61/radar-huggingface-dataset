@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "vladihavr/RisottoNeroJoJo",
+  "slug": "vladihavr-risottonerojojo",
+  "author": "vladihavr",
+  "url": "https://huggingface.co/vladihavr/RisottoNeroJoJo",
+  "created_at": "2026-08-30T15:09:35.000Z",
+  "updated_at": "2026-08-30T15:10:10.000Z",
+  "license": "openrail",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:openrail",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 135531688,
+  "storage_human": "136 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Risotto Nero | Jojo&#x27;s Bizarre Adventure | Tensor.Art",
+      "url": "https://tensor.art/models/790986835636713007",
+      "snippet": "Download Risotto Nero | Jojo&#x27;s Bizarre Adventure - free LORA Pony AI model on TENSOR. By CopperPenguin"
+    },
+    {
+      "title": "Risotto Nero | Jojo&#x27;s Bizarre Adventu… AI LoRA Model | PixAI",
+      "url": "https://pixai.art/en/model/1757420227001827830",
+      "snippet": "Risotto Nero | Jojo&#x27;s Bizarre Adventure is an AI LoRA by Jarvis on PixAI. Tags: white hair. Try it free."
+    },
+    {
+      "title": "vladihavr (Vladyslav Havryliuk) - Hugging Face",
+      "url": "https://huggingface.co/vladihavr",
+      "snippet": "User profile of Vladyslav Havryliuk on Hugging Face"
+    },
+    {
+      "title": "Risotto Nero | Jojo's Bizarre Adventure｜AI Art Model & LoRA | PixAI",
+      "url": "https://pixai.art/model/1757420227001827830-Risotto-Nero-Jojos-Bizarre-Adventure",
+      "snippet": "Just created this stunning anime, man, manga, character, white_hair, jjba, jojo's_bizarre_adventure, risotto_nero, jojo_s_bizarre_adventure anime art with the amazing &#x27;Risotto Nero | Jojo's Bizarre Adventure&#x27; model on PixAI! Search for \"Risotto Nero | Jojo's Bizarre Adventure\" on PixAI - the free & professional AI anime art generator. Create your own masterpieces in seconds. Try ..."
+    },
+    {
+      "title": "Risotto Nero | Jojo&#x27;s Bizarre Adventure - Risotto | Pony Diffusion LoRA ...",
+      "url": "https://civitai.com/models/509855/risotto-nero-or-jojos-bizarre-adventure",
+      "snippet": "Risotto Nero from Jojo&#x27;s Bizarre Adventure. Risotto Nero, white hair, short hair, black sclera, red eyes, hat, hood, black coat, belt, striped pants, black shoes"
+    }
+  ]
+}

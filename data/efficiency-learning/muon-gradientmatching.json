@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "efficiency-learning/muon-gradientMatching",
+  "slug": "efficiency-learning-muon-gradientmatching",
+  "author": "efficiency-learning",
+  "url": "https://huggingface.co/efficiency-learning/muon-gradientMatching",
+  "created_at": "2026-08-30T17:04:43.000Z",
+  "updated_at": "2026-08-30T18:41:03.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen2",
+    "pretraining",
+    "mu-greats",
+    "base_model:Qwen/Qwen2.5-0.5B",
+    "base_model:finetune:Qwen/Qwen2.5-0.5B",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 23725383556,
+  "storage_human": "23.7 GB",
+  "base_model": "Qwen/Qwen2.5-0.5B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "A Fairer Gradient Step — The Muon Optimizer — A Visual Walkthrough",
+      "url": "https://vizuaraai.github.io/vizuara-ai-daily/muon-optimizer/",
+      "snippet": "The scale question was settled by Moonshot AI. Their \"Muon is Scalable\" study found that with just two adjustments — adding weight decay and carefully tuning the per-parameter update size — Muon delivered roughly 2× the compute efficiency of AdamW on compute-optimal training, and trained their Moonlight mixture-of-experts model out of the box."
+    },
+    {
+      "title": "[2505.02222] Practical Efficiency of Muon for Pretraining",
+      "url": "https://arxiv.org/abs/2505.02222",
+      "snippet": "We demonstrate that Muon, the simplest instantiation of a second-order optimizer, explicitly expands the Pareto frontier over AdamW on the compute-time tradeoff. We find that Muon is more effective than AdamW in retaining data efficiency at large batch sizes, far beyond the so-called critical batch size, while remaining computationally efficient, thus enabling more economical training. We ..."
+    },
+    {
+      "title": "Practical Efficiency of Muon for Pretraining - arXiv.org",
+      "url": "https://arxiv.org/pdf/2505.02222v2",
+      "snippet": "1 Introduction Adam (Kingma and Ba, 2014) and AdamW (Loshchilov and Hutter, 2017) have empirically dominated the landscape of neural network optimizers in recent years. Superior generalization from the same training data (data-efficiency) at marginal increase in compute cost enabled them to gradually replace other first-order incumbents. By exploiting the statistical dependencies between model ..."
+    },
+    {
+      "title": "Muon: A Scalable Matrix Orthogonalization Optimizer for LLM Training",
+      "url": "https://calwoo.github.io/notes/papers/muon-optimizer/index.html",
+      "snippet": "1. Overview and Motivation 💡 The Muon optimizer (Momentum + Update Orthogonalization via Newton-Schulz) is a matrix-aware optimizer for neural network weight matrices. It was originally introduced by Keller Jordan for small-scale transformer training and scaled to production LLM pretraining by the Kimi/Moonshot AI team in the paper \"Muon is Scalable for LLM Training\" (Liu et al., 2025 ..."
+    },
+    {
+      "title": "Muon Optimizer Achieves 2× Speed Over AdamW in Production LLM Training",
+      "url": "https://aiexpert.news/en/article/beyond-adamw-survey-of-memory-efficient-and-curvature-based-llm-optimizers",
+      "snippet": "Muon, an optimizer designed for large-language-model training, achieves roughly 2× computational efficiency compared to AdamW at compute-optimal scale. This is the headline finding from a new arXiv survey by Aditya Ranganath, published May 9, 2026: \"Navigating LLM Valley: From AdamW to Memory-Efficient and Matrix-Based Optimizers.\" The survey maps seven optimizer families — classical first ..."
+    }
+  ]
+}

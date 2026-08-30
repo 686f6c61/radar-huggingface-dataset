@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "promotion/Qwen3-8B-MOPO-baseline",
+  "slug": "promotion-qwen3-8b-mopo-baseline",
+  "author": "promotion",
+  "url": "https://huggingface.co/promotion/Qwen3-8B-MOPO-baseline",
+  "created_at": "2026-08-30T14:36:55.000Z",
+  "updated_at": "2026-08-30T14:41:54.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "qwen3",
+    "alignment",
+    "multi-objective",
+    "preference-optimization",
+    "base_model:Qwen/Qwen3-8B",
+    "base_model:finetune:Qwen/Qwen3-8B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 8190735360,
+  "parameters_human": "8.19B",
+  "storage_bytes": 32774409894,
+  "storage_human": "32.8 GB",
+  "base_model": "Qwen/Qwen3-8B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "promotion/qwen3-8b-aaai27-flagship-sppo-avg-s44 · Hugging Face",
+      "url": "https://huggingface.co/promotion/qwen3-8b-aaai27-flagship-sppo-avg-s44",
+      "snippet": "Instructions to use promotion/qwen3-8b-aaai27-flagship-sppo-avg-s44 with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "promotion/qwen3-8b-aaai27-flagship-sppo-avg-s42 · Hugging Face",
+      "url": "https://huggingface.co/promotion/qwen3-8b-aaai27-flagship-sppo-avg-s42",
+      "snippet": "Instructions to use promotion/qwen3-8b-aaai27-flagship-sppo-avg-s42 with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "Qwen3-8B — Alibaba Model with Hybrid Thinking/Non-Thinking Reasoning ...",
+      "url": "https://robotsatlas.com/ai-models/qwen3-8b",
+      "snippet": "The model supports 119 languages and dialects (vs. 29 in Qwen2.5), covering Indo-European, Sino-Tibetan, Afro-Asiatic, Austronesian and other language families. In terms of agent capabilities, Qwen3-8B integrates well with external tools via MCP (Model Context Protocol), supporting function calls in both thinking and non-thinking modes."
+    },
+    {
+      "title": "Qwen3 Technical Report - arXiv.org",
+      "url": "https://arxiv.org/html/2505.09388v1",
+      "snippet": "The Qwen3 series includes models of both dense and Mixture-of-Expert (MoE) architectures, with parameter scales ranging from 0.6 to 235 billion. A key innovation in Qwen3 is the integration of thinking mode (for complex, multi-step reasoning) and non-thinking mode (for rapid, context-driven responses) into a unified framework."
+    },
+    {
+      "title": "Qwen3-8B - Qualcomm AI Hub",
+      "url": "https://aihub.qualcomm.com/compute/models/qwen3_8b",
+      "snippet": "Qwen3-8B State‑of‑the‑art large language model useful on a variety of language understanding and generation tasks. The Qwen3‑8B is a state‑of‑the‑art multilingual base language model with 8 billion parameters, excelling in language understanding, generation, coding, and mathematics."
+    }
+  ]
+}

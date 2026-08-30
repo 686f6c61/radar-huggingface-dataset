@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "WaveCut/Qwen3.8-Flash-Next-REAM-288",
+  "slug": "wavecut-qwen3-8-flash-next-ream-288",
+  "author": "WaveCut",
+  "url": "https://huggingface.co/WaveCut/Qwen3.8-Flash-Next-REAM-288",
+  "created_at": "2026-08-29T02:43:54.000Z",
+  "updated_at": "2026-08-30T12:29:11.000Z",
+  "license": "qwen-community-license-1.0",
+  "license_family": "unknown",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen4_exp",
+    "image-text-to-text",
+    "moe",
+    "expert-merging",
+    "ream",
+    "qwen",
+    "conversational",
+    "arxiv:2604.04356",
+    "base_model:Qwen/Qwen3.8-Flash-Next",
+    "base_model:finetune:Qwen/Qwen3.8-Flash-Next",
+    "license:other",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 60,
+  "trending_score": 0,
+  "parameters": 126022647699,
+  "parameters_human": "126.02B",
+  "storage_bytes": 931893534718,
+  "storage_human": "931.9 GB",
+  "base_model": "Qwen/Qwen3.8-Flash-Next",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "WaveCut/Qwen3.8-Flash-Next-REAM-288 · Hugging Face",
+      "url": "https://huggingface.co/WaveCut/Qwen3.8-Flash-Next-REAM-288",
+      "snippet": "Qwen3.8-Flash-Next with 288 of 512 experts per MoE layer, merged not pruned (REAM), in native bf16 for transformers. 251GB vs 360GB stock. MTP block included (its experts merged 512->288 as well) — vLLM-style qwen4_exp speculative decoding keeps working."
+    },
+    {
+      "title": "Qwen3.8-Flash-Next - GitHub",
+      "url": "https://github.com/QwenLM/Qwen3.8-Flash-Next/",
+      "snippet": "Qwen3.8-Flash-Next upgrades the model systematically along four aspects — attention, residual, embedding and optimization — improving model capability while further optimizing computational efficiency, model capacity and training stability: Attention A GDN + QSA hybrid architecture."
+    },
+    {
+      "title": "Qwen/Qwen3.8-Flash-Next · Hugging Face",
+      "url": "https://huggingface.co/Qwen/Qwen3.8-Flash-Next",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Qwen/Qwen3.8-Flash-Next | vLLM Recipes - recipes.vllm.ai",
+      "url": "https://recipes.vllm.ai/Qwen/Qwen3.8-Flash-Next",
+      "snippet": "Overview Qwen3.8-Flash-Next is a multimodal, ultra-sparse Mixture-of-Experts model. It has 125B parameters, including an additional 51B N-gram embedding table, while activating 6B parameters per token. The architecture combines four main ideas: GDN + QSA: three of every four layers use Gated DeltaNet to compress history; the fourth uses Qwen Sparse Attention for precise long-range retrieval ..."
+    },
+    {
+      "title": "Qwen3.8-Flash-Next 125B-A6B: MoE Drop Aug 26 (2026) | explainx.ai Blog",
+      "url": "https://www.explainx.ai/blog/qwen3-8-flash-next-125b-moe-release-august-2026",
+      "snippet": "Qwen3.8-Flash-Next 125B-A6B MoE drops Aug 26 on ModelScope/HF. Leaked specs, Qwen4 architecture teaser, 128GB Mac fit, FreeToken offloading, vs Qwen3.8-27B."
+    }
+  ]
+}

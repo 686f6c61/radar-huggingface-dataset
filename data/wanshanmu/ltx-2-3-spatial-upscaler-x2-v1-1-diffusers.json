@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "wanshanmu/LTX-2.3-spatial-upscaler-x2-v1.1-Diffusers",
+  "slug": "wanshanmu-ltx-2-3-spatial-upscaler-x2-v1-1-diffusers",
+  "author": "wanshanmu",
+  "url": "https://huggingface.co/wanshanmu/LTX-2.3-spatial-upscaler-x2-v1.1-Diffusers",
+  "created_at": "2026-08-30T17:33:10.000Z",
+  "updated_at": "2026-08-30T17:33:10.000Z",
+  "license": "ltx-video-2-open-source-license",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "diffusers",
+  "languages": [],
+  "tags": [
+    "diffusers",
+    "safetensors",
+    "ltx2",
+    "video",
+    "super-resolution",
+    "base_model:Lightricks/LTX-2.3",
+    "base_model:finetune:Lightricks/LTX-2.3",
+    "license:other",
+    "diffusers:LTX2LatentUpsamplePipeline",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 2447976514,
+  "storage_human": "2.4 GB",
+  "base_model": "Lightricks/LTX-2.3",
+  "formats": [
+    "diffusers",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "LTX-2.3-spatial-upscaler-x2-v1.1-Diffusers - Hugging Face",
+      "url": "https://huggingface.co/rootonchair/LTX-2.3-spatial-upscaler-x2-v1.1-Diffusers",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "ltx-2.3-spatial-upscaler-x2-1.1.safetensors — Spatial Upscaler x2 v1.1",
+      "url": "https://ltxworkflow.com/models/ltx23-spatial-upscaler-x2-11",
+      "snippet": "Using the v1.0 upscaler, or feeding it latents from a mismatched base resolution. Fix: Use this v1.1 file (improved over v1.0) and keep the base resolution within the range your workflow&#x27;s upscaler node expects."
+    },
+    {
+      "title": "LTX-2.3-spatial-upscaler-x2 - v1.0 | LTX Video Upscaler | Civitai",
+      "url": "https://civitai.com/models/2780839/ltx-23-spatial-upscaler-x2",
+      "snippet": "Download 1 variant available bf16 SafeTensor ltx-2.3-spatial-upscaler-x2-1..safetensors BF16, good balance • 949.62 MB Verified: a month ago Download (949.62 MB) Details"
+    },
+    {
+      "title": "ltx-2.3-spatial-upscaler-x2-1.0.safetensors · Lightricks/LTX-2.3 at main",
+      "url": "https://huggingface.co/Lightricks/LTX-2.3/blame/main/ltx-2.3-spatial-upscaler-x2-1.0.safetensors",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "LTX-2.3: Previous Generation AI Video Model | LTX",
+      "url": "https://ltx.io/model/ltx-2-3",
+      "snippet": "Beyond video generation, LTX-2.3 continues to improve the model&#x27;s understanding of motion, structure, and spatial relationships over time — foundational capabilities for LTX&#x27;s long-term work on world models."
+    }
+  ]
+}

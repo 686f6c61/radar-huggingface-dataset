@@ -1,0 +1,76 @@
+{
+  "schema": 1,
+  "id": "yash1101/CoPaw-Flash-9B-DataAnalyst-LoRA",
+  "slug": "yash1101-copaw-flash-9b-dataanalyst-lora",
+  "author": "yash1101",
+  "url": "https://huggingface.co/yash1101/CoPaw-Flash-9B-DataAnalyst-LoRA",
+  "created_at": "2026-08-30T11:27:33.000Z",
+  "updated_at": "2026-08-30T11:27:33.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "peft",
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "tags": [
+    "peft",
+    "safetensors",
+    "agent",
+    "tool-use",
+    "lora",
+    "vllm",
+    "qwen3.5",
+    "image-text-to-text",
+    "en",
+    "zh",
+    "base_model:agentscope-ai/QwenPaw-Flash-9B",
+    "base_model:adapter:agentscope-ai/QwenPaw-Flash-9B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 347268080,
+  "storage_human": "347 MB",
+  "base_model": "agentscope-ai/CoPaw-Flash-9B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "jason1966/CoPaw-Flash-9B-DataAnalyst-LoRA · Hugging Face",
+      "url": "https://huggingface.co/jason1966/CoPaw-Flash-9B-DataAnalyst-LoRA",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "jason1966/CoPaw-Flash-9B-DataAnalyst-LoRA at main - Hugging Face",
+      "url": "https://huggingface.co/jason1966/CoPaw-Flash-9B-DataAnalyst-LoRA/tree/main",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "CoPaw-Flash-9B-DataAnalyst-LoRA: Text-to-Text model — overview, use ...",
+      "url": "https://www.aimodels.fyi/models/huggingFace/copaw-flash-9b-dataanalyst-lora-jason1966",
+      "snippet": "SuperCOT-LoRA by kaiokendev enhances LLaMA models for chain-of-thought reasoning and instruction following across general tasks, while CoPaw-Flash-9B-DataAnalyst-LoRA is narrowly specialized for autonomous data analysis workflows with tool orchestration."
+    },
+    {
+      "title": "GitHub - LocoreMind/dataanalyst-showcase: CoPaw-Flash-9B DataAnalyst ...",
+      "url": "https://github.com/LocoreMind/dataanalyst-showcase",
+      "snippet": "CoPaw-Flash-9B DataAnalyst showcase: 29 autonomous data analysis cases across 16 domains - LocoreMind/dataanalyst-showcase"
+    },
+    {
+      "title": "CoPaw-Flash-9B-DataAnalyst-LoRA · Models",
+      "url": "https://www.modelscope.cn/models/LocoreMind/CoPaw-Flash-9B-DataAnalyst-LoRA",
+      "snippet": "ModelScope——汇聚各领域先进的机器学习模型，提供模型探索体验、推理、训练、部署和应用的一站式服务。在这里 ..."
+    }
+  ]
+}

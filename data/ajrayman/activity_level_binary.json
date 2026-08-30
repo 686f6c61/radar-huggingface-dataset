@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "ajrayman/Activity_Level_binary",
+  "slug": "ajrayman-activity_level_binary",
+  "author": "ajrayman",
+  "url": "https://huggingface.co/ajrayman/Activity_Level_binary",
+  "created_at": "2024-10-02T17:06:39.000Z",
+  "updated_at": "2026-08-30T13:36:14.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "roberta",
+    "text-classification",
+    "generated_from_trainer",
+    "base_model:FacebookAI/roberta-base",
+    "base_model:finetune:FacebookAI/roberta-base",
+    "license:mit",
+    "text-embeddings-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 6,
+  "trending_score": 0,
+  "parameters": 124647170,
+  "parameters_human": "124.6M",
+  "storage_bytes": 14363674082,
+  "storage_human": "14.4 GB",
+  "base_model": "roberta-base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ajrayman/Activity_Level_binary · Hugging Face",
+      "url": "https://huggingface.co/ajrayman/Activity_Level_binary",
+      "snippet": "Activity_Level_binary This model is a fine-tuned version of roberta-large on the None dataset. It achieves the following results on the evaluation set:"
+    },
+    {
+      "title": "ajrayman/Self-consciousness_binary · Hugging Face",
+      "url": "https://huggingface.co/ajrayman/Self-consciousness_binary",
+      "snippet": "Self-consciousness_binary This model is a fine-tuned version of roberta-base on the None dataset. It achieves the following results on the evaluation set:"
+    },
+    {
+      "title": "LLM Leaderboard & AI Model Benchmarks — August 2026",
+      "url": "https://benchlm.ai/",
+      "snippet": "LLM Leaderboard & AI Model Benchmarks — August 2026 Compare frontier AI models by quality, cost, and context. 105 Supported and 123 Estimated models among 406 tracked LLMs — 408 benchmarks, real pricing, and runtime data in one place."
+    },
+    {
+      "title": "Deploy ajrayman/auth_scale_binary | Inference Endpoints by Hugging Face",
+      "url": "https://endpoints.huggingface.co/new?repository=ajrayman%2Fauth_scale_binary",
+      "snippet": "Deploy auth_scale_binary for text-classification inference in 1 click."
+    },
+    {
+      "title": "‎Google Gemini",
+      "url": "https://gemini.google.com/",
+      "snippet": "Meet Gemini, Google&#x27;s AI assistant. Get help with writing, planning, brainstorming, and more. Experience the power of generative AI."
+    }
+  ]
+}

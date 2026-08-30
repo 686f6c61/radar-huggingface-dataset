@@ -1,0 +1,77 @@
+{
+  "schema": 1,
+  "id": "iapp/openthai2.0-qwen3.8-27b-INT8-W8A8",
+  "slug": "iapp-openthai2-0-qwen3-8-27b-int8-w8a8",
+  "author": "iapp",
+  "url": "https://huggingface.co/iapp/openthai2.0-qwen3.8-27b-INT8-W8A8",
+  "created_at": "2026-08-26T01:30:08.000Z",
+  "updated_at": "2026-08-30T14:41:17.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "th",
+    "en"
+  ],
+  "tags": [
+    "safetensors",
+    "qwen3_5",
+    "thai",
+    "ocr",
+    "vllm",
+    "quantized",
+    "openthai",
+    "th",
+    "en",
+    "base_model:iapp/openthai2.0-qwen3.8-27b",
+    "base_model:quantized:iapp/openthai2.0-qwen3.8-27b",
+    "license:apache-2.0",
+    "8-bit",
+    "compressed-tensors",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 272,
+  "trending_score": 0,
+  "parameters": 27356728560,
+  "parameters_human": "27.36B",
+  "storage_bytes": 91132758685,
+  "storage_human": "91.1 GB",
+  "base_model": "kobkrit/openthai2.0-qwen3.8-27b",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "iapp/openthai2.0-qwen3.8-27b · Hugging Face",
+      "url": "https://huggingface.co/iapp/openthai2.0-qwen3.8-27b",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "OpenThai 2.0 — Open-Source Thai Knowledge, Document and Agentic AI ...",
+      "url": "https://iapp.co.th/openmodels/openthai2p0",
+      "snippet": "openthai2.0-qwen3.8-27b An open all-in-one Thai AI: it reads Thai documents and handwriting at specialist level, answers with Thai knowledge in natural, explanatory Thai, leads its base model and Typhoon 2.5 on agentic tool use (BFCL) — and keeps its base model&#x27;s general intelligence."
+    },
+    {
+      "title": "README.md · iapp/openthai2.0-qwen3.8-27b at main - Hugging Face",
+      "url": "https://huggingface.co/iapp/openthai2.0-qwen3.8-27b/blob/main/README.md",
+      "snippet": "An open all-in-one Thai AI: reads Thai documents and handwriting at specialist level, answers with Thai knowledge in natural, explanatory Thai, leads its base model and Typhoon on agentic tool use (BFCL) — and keeps its base model&#x27;s general intelligence."
+    },
+    {
+      "title": "Introducing OpenThai 2.0 — Open Thai Knowledge, Document & Agentic AI ...",
+      "url": "https://openthai.aieat.or.th/en/openthai2p0",
+      "snippet": "OpenThai 2.0 is an open-weight (Apache 2.0) 27B Thai AI built on Qwen3.8-27B. It reads Thai documents and handwriting at specialist level, leads open models on Thai knowledge, and beats its base model on agentic tool use (BFCL) — shipped in 5 formats from a MacBook to Blackwell."
+    },
+    {
+      "title": "OpenThai 2.0 — one open model that reads Thai documents, knows Thailand ...",
+      "url": "https://iapp.co.th/blog/openthai2p0-launch",
+      "snippet": "iApp Technology and AIEAT release OpenThai 2.0, an open-source Thai vision-language model (27B, Apache 2.0). It cuts Thai handwriting reading errors by 60% versus its base model, scores 0.842 on Thai national exams, leads on agentic tool use (BFCL 0.820), and ships in five formats from MacBook to Blackwell. Weights free on Hugging Face."
+    }
+  ]
+}

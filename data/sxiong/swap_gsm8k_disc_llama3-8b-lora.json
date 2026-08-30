@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "sxiong/SWAP_GSM8K_Disc_Llama3-8B-LoRA",
+  "slug": "sxiong-swap_gsm8k_disc_llama3-8b-lora",
+  "author": "sxiong",
+  "url": "https://huggingface.co/sxiong/SWAP_GSM8K_Disc_Llama3-8B-LoRA",
+  "created_at": "2026-08-30T18:47:13.000Z",
+  "updated_at": "2026-08-30T18:47:16.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "peft",
+    "safetensors",
+    "lora",
+    "reasoning",
+    "math",
+    "text-generation",
+    "en",
+    "dataset:sxiong/SWAP",
+    "arxiv:2110.14168",
+    "base_model:meta-llama/Meta-Llama-3-8B-Instruct",
+    "base_model:adapter:meta-llama/Meta-Llama-3-8B-Instruct",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 185042201,
+  "storage_human": "185 MB",
+  "base_model": "meta-llama/Meta-Llama-3-8B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "sxiong/SWAP_v2_GSM8K_Disc_Llama3-8B-LoRA · Hugging Face",
+      "url": "https://huggingface.co/sxiong/SWAP_v2_GSM8K_Disc_Llama3-8B-LoRA",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "sxiong/SWAP_v1_GSM8K_Disc_Llama3-8B · Hugging Face",
+      "url": "https://huggingface.co/sxiong/SWAP_v1_GSM8K_Disc_Llama3-8B",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "SWAP_v2_GSM8K_Disc_Llama3-8B-LoRA - FriendliAI",
+      "url": "https://friendli.ai/models/sxiong/SWAP_v2_GSM8K_Disc_Llama3-8B-LoRA",
+      "snippet": "Run SWAP_v2_GSM8K_Disc_Llama3-8B-LoRA with FriendliAI inference. This repository contains the GSM8K discriminator (Llama3-8B-LoRA) trained with SWAPv2."
+    },
+    {
+      "title": "GitHub - shanhe321/llama3_lora: Fine-tuned Llama-3-8B-Instruct on GSM8K ...",
+      "url": "https://github.com/shanhe321/llama3_lora",
+      "snippet": "Fine-tuned Llama-3-8B-Instruct on GSM8K using LoRA (via LLaMA-Factory), then evaluated with lm-evaluation-harness. The goal is to improve the model&#x27;s ability to produce structured math reasoning outputs."
+    },
+    {
+      "title": "SWAP/script/train_sft_discriminator_gsm8k.sh at main - GitHub",
+      "url": "https://github.com/xiongsiheng/SWAP/blob/main/script/train_sft_discriminator_gsm8k.sh",
+      "snippet": "SWAP / script / train_sft_discriminator_gsm8k.sh Top Code Blame 14 lines (14 loc) · 430 Bytes Raw 1 2 3 4 5 6 7 8 9 10 11 12 13 14 python src/SFT_discriminator.py &#92; --model_id meta-llama/Meta-Llama-3-8B-Instruct &#92; --hf_dataset sxiong/SWAP &#92; --hf_config gsm8k_contrastive_ranking_v2 &#92; --hf_split train &#92; --output_dir ../model_weights/disc_lora ..."
+    }
+  ]
+}

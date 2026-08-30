@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "agentic-ptb/opus-high-v3.h049.sft-verified.step_4",
+  "slug": "agentic-ptb-opus-high-v3-h049-sft-verified-step_4",
+  "author": "agentic-ptb",
+  "url": "https://huggingface.co/agentic-ptb/opus-high-v3.h049.sft-verified.step_4",
+  "created_at": "2026-08-30T18:53:37.000Z",
+  "updated_at": "2026-08-30T18:55:36.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "qwen3_5",
+    "agentic-ptb",
+    "opus-high-v3",
+    "negative-results",
+    "base_model:Qwen/Qwen3.5-9B-Base",
+    "base_model:finetune:Qwen/Qwen3.5-9B-Base",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 9409813744,
+  "parameters_human": "9.41B",
+  "storage_bytes": 18839710445,
+  "storage_human": "18.8 GB",
+  "base_model": "Qwen/Qwen3.5-9B-Base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "agentic-ptb/INDEX · Datasets at Hugging Face",
+      "url": "https://huggingface.co/datasets/agentic-ptb/INDEX",
+      "snippet": "opus-high-v1 is the opus@high cell. A rerun (opus-high-v2, run a-rerun) was aborted and is not valid — it stopped producing checkpoints at ~h12 and submitted the base model&#x27;s tensors unchanged after all five of its SFT runs regressed."
+    },
+    {
+      "title": "Claude Opus &#92; Anthropic",
+      "url": "https://www.anthropic.com/claude/opus",
+      "snippet": "Claude Opus 5 is a strong agentic coding model built for long-running, multi-step work. It deeply understands your codebase, holds the thread across complex tasks, and pins down requirements for feature development and bug-fixing more effectively than Opus 4.8."
+    },
+    {
+      "title": "Models - Hugging Face",
+      "url": "https://huggingface.co/models?p=4&sort=trending&search=grok-1",
+      "snippet": "Text Generation Any-to-Any Image-Text-to-Text Image-to-Text Image-to-Image Text-to-Image Text-to-Video Text-to-Speech PyTorch TensorFlow JAX Transformers Diffusers GGUF Safetensors vLLM llama.cpp MLX LM LM Studio Ollama Jan Draw Things DiffusionBee JoyFusion Groq Novita Cerebras Nscale fal Together AI Fireworks Featherless AI Zai Add your ..."
+    },
+    {
+      "title": "Claude Opus 4.5 2026 Guide: Features, Pricing & Benchmarks",
+      "url": "https://www.layer3labs.io/guides/claude-opus-4-5-explained",
+      "snippet": "Claude Opus 4.5 is Anthropic &#x27;s frontier reasoning model, released November 24, 2025. It became the first AI model to break 80% on the SWE-bench Verified coding benchmark and surpasses competing models in long-horizon reasoning, software engineering, and agentic workflows."
+    },
+    {
+      "title": "Best LLMs for Agentic — August 2026 Leaderboard | BenchLM.ai",
+      "url": "https://benchlm.ai/agentic",
+      "snippet": "Compare 406 AI models on agentic benchmarks for tool use, browser research, and multi-step computer tasks. See which models handle terminal work, API tools, and software interfaces most reliably."
+    }
+  ]
+}

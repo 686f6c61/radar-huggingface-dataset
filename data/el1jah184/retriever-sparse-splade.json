@@ -1,0 +1,203 @@
+{
+  "schema": 1,
+  "id": "el1jah184/retriever-sparse-splade",
+  "slug": "el1jah184-retriever-sparse-splade",
+  "author": "el1jah184",
+  "url": "https://huggingface.co/el1jah184/retriever-sparse-splade",
+  "created_at": "2026-08-30T12:12:14.000Z",
+  "updated_at": "2026-08-30T12:12:26.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "feature-extraction",
+  "library": "sentence-transformers",
+  "languages": [],
+  "tags": [
+    "sentence-transformers",
+    "safetensors",
+    "bert",
+    "sparse-encoder",
+    "sparse",
+    "splade",
+    "generated_from_trainer",
+    "dataset_size:415",
+    "loss:CachedSpladeLoss",
+    "loss:SparseMultipleNegativesRankingLoss",
+    "loss:FlopsLoss",
+    "feature-extraction",
+    "arxiv:1908.10084",
+    "arxiv:2101.06983",
+    "arxiv:2205.04733",
+    "arxiv:1807.03748",
+    "arxiv:2004.05665",
+    "base_model:opensearch-project/opensearch-neural-sparse-encoding-multilingual-v1",
+    "base_model:finetune:opensearch-project/opensearch-neural-sparse-encoding-multilingual-v1",
+    "model-index",
+    "text-embeddings-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 167463831,
+  "parameters_human": "167.5M",
+  "storage_bytes": 669879012,
+  "storage_human": "670 MB",
+  "base_model": "opensearch-project/opensearch-neural-sparse-encoding-multilingual-v1",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "Sparse Information Retrieval",
+      "dataset": "irs evaluator",
+      "metric": "Dot Accuracy@1",
+      "value": 0.78125
+    },
+    {
+      "task": "Sparse Information Retrieval",
+      "dataset": "irs evaluator",
+      "metric": "Dot Accuracy@3",
+      "value": 0.9241071428571429
+    },
+    {
+      "task": "Sparse Information Retrieval",
+      "dataset": "irs evaluator",
+      "metric": "Dot Accuracy@5",
+      "value": 0.9553571428571429
+    },
+    {
+      "task": "Sparse Information Retrieval",
+      "dataset": "irs evaluator",
+      "metric": "Dot Accuracy@10",
+      "value": 0.9866071428571429
+    },
+    {
+      "task": "Sparse Information Retrieval",
+      "dataset": "irs evaluator",
+      "metric": "Dot Precision@1",
+      "value": 0.78125
+    },
+    {
+      "task": "Sparse Information Retrieval",
+      "dataset": "irs evaluator",
+      "metric": "Dot Precision@3",
+      "value": 0.3080357142857143
+    },
+    {
+      "task": "Sparse Information Retrieval",
+      "dataset": "irs evaluator",
+      "metric": "Dot Precision@5",
+      "value": 0.1910714285714286
+    },
+    {
+      "task": "Sparse Information Retrieval",
+      "dataset": "irs evaluator",
+      "metric": "Dot Precision@10",
+      "value": 0.0986607142857143
+    },
+    {
+      "task": "Sparse Information Retrieval",
+      "dataset": "irs evaluator",
+      "metric": "Dot Recall@1",
+      "value": 0.78125
+    },
+    {
+      "task": "Sparse Information Retrieval",
+      "dataset": "irs evaluator",
+      "metric": "Dot Recall@3",
+      "value": 0.9241071428571429
+    },
+    {
+      "task": "Sparse Information Retrieval",
+      "dataset": "irs evaluator",
+      "metric": "Dot Recall@5",
+      "value": 0.9553571428571429
+    },
+    {
+      "task": "Sparse Information Retrieval",
+      "dataset": "irs evaluator",
+      "metric": "Dot Recall@10",
+      "value": 0.9866071428571429
+    },
+    {
+      "task": "Sparse Information Retrieval",
+      "dataset": "irs evaluator",
+      "metric": "Dot Ndcg@10",
+      "value": 0.8855710842974792
+    },
+    {
+      "task": "Sparse Information Retrieval",
+      "dataset": "irs evaluator",
+      "metric": "Dot Mrr@10",
+      "value": 0.8528380102040817
+    },
+    {
+      "task": "Sparse Information Retrieval",
+      "dataset": "irs evaluator",
+      "metric": "Dot Map@20",
+      "value": 0.8531356292517006
+    },
+    {
+      "task": "Sparse Information Retrieval",
+      "dataset": "irs evaluator",
+      "metric": "Query Active Dims",
+      "value": 215.2544708251953
+    },
+    {
+      "task": "Sparse Information Retrieval",
+      "dataset": "irs evaluator",
+      "metric": "Query Sparsity Ratio",
+      "value": 0.997966976729803
+    },
+    {
+      "task": "Sparse Information Retrieval",
+      "dataset": "irs evaluator",
+      "metric": "Corpus Active Dims",
+      "value": 361.40087890625
+    },
+    {
+      "task": "Sparse Information Retrieval",
+      "dataset": "irs evaluator",
+      "metric": "Corpus Sparsity Ratio",
+      "value": 0.9965866613879405
+    },
+    {
+      "task": "Sparse Information Retrieval",
+      "dataset": "irs evaluator",
+      "metric": "Avg Flops",
+      "value": 53.013587951660156
+    }
+  ],
+  "sources": [
+    {
+      "title": "Sparse Retriever models - a prithivida Collection - Hugging Face",
+      "url": "https://huggingface.co/collections/prithivida/sparse-retriever-models",
+      "snippet": "Independent implementation of various sparse retrievers."
+    },
+    {
+      "title": "Sparse Retriever models - a prithivida Collection - Hugging Face",
+      "url": "https://huggingface.co/collections/prithivida/sparse-retriever-models-65f96adc33f524e404418b98",
+      "snippet": "Independent implementation of various sparse retrievers. Fill-Mask • Updated Mar 17 • 3.91k • 16"
+    },
+    {
+      "title": "GitHub - naver/splade: SPLADE: sparse neural search (SIGIR21, SIGIR22)",
+      "url": "https://github.com/naver/splade",
+      "snippet": "SPLADE: sparse neural search (SIGIR21, SIGIR22). Contribute to naver/splade development by creating an account on GitHub."
+    },
+    {
+      "title": "GitHub - dleemiller/splade-easy: A simple retriever for SPLADE sparse ...",
+      "url": "https://github.com/dleemiller/splade-easy/tree/main/",
+      "snippet": "A simple retriever for SPLADE sparse encodings. Contribute to dleemiller/splade-easy development by creating an account on GitHub."
+    },
+    {
+      "title": "[2109.10086] SPLADE v2: Sparse Lexical and Expansion Model for ...",
+      "url": "https://arxiv.org/abs/2109.10086",
+      "snippet": "Introduced recently, the SPLADE model provides highly sparse representations and competitive results with respect to state-of-the-art dense and sparse approaches. In this paper, we build on SPLADE and propose several significant improvements in terms of effectiveness and/or efficiency."
+    }
+  ]
+}

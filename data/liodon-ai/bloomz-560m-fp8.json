@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "liodon-ai/bloomz-560m-FP8",
+  "slug": "liodon-ai-bloomz-560m-fp8",
+  "author": "liodon-ai",
+  "url": "https://huggingface.co/liodon-ai/bloomz-560m-FP8",
+  "created_at": "2026-08-30T18:26:13.000Z",
+  "updated_at": "2026-08-30T18:28:12.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "bloom",
+    "text-generation",
+    "fp8",
+    "compressed-tensors",
+    "vllm",
+    "quantized",
+    "base_model:bigscience/bloomz-560m",
+    "base_model:quantized:bigscience/bloomz-560m",
+    "license:other",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 559214592,
+  "parameters_human": "559.2M",
+  "storage_bytes": 838689133,
+  "storage_human": "839 MB",
+  "base_model": "bigscience/bloomz-560m",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "liodon-ai/bloom-560m-FP8 · Hugging Face",
+      "url": "https://huggingface.co/liodon-ai/bloom-560m-FP8",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "liodon-ai/bloom-560m-FP8 at main - Hugging Face",
+      "url": "https://huggingface.co/liodon-ai/bloom-560m-FP8/tree/main",
+      "snippet": "Instructions to use liodon-ai/bloom-560m-FP8 with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Libraries Transformers How to use liodon-ai/bloom-560m-FP8 with Transformers:"
+    },
+    {
+      "title": "Bloomz 560M by bigscience — VRAM 1.1GB | LLM Explorer",
+      "url": "https://llm-explorer.com/model/bigscience%2Fbloomz-560m,1UdNV9ry5IepV2uBllzmBG",
+      "snippet": "Bloomz 560M is an open-source 560m LLM by bigscience. VRAM 1.1GB. Compare benchmarks, capabilities, and deployment details on LLM Explorer."
+    },
+    {
+      "title": "bloomz-560m · Models",
+      "url": "https://www.modelscope.cn/models/AI-ModelScope/bloomz-560m/summary",
+      "snippet": "For BLOOMZ models, we recommend making it very clear when the input stops to avoid the model trying to continue it. For example, the prompt \" Translate to English: Je t&#x27;aime \" without the full stop (.) at the end, may result in the model trying to continue the French sentence."
+    },
+    {
+      "title": "Home - LioDon AI",
+      "url": "https://liodon.ai/",
+      "snippet": "What we research Liodon is an independent, self-funded applied research lab working on the frontier of open-source foundation model research."
+    }
+  ]
+}

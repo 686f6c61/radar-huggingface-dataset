@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "justintiensmith/lingbot_v1",
+  "slug": "justintiensmith-lingbot_v1",
+  "author": "justintiensmith",
+  "url": "https://huggingface.co/justintiensmith/lingbot_v1",
+  "created_at": "2026-08-30T13:03:49.000Z",
+  "updated_at": "2026-08-30T13:07:32.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "robotics",
+    "lingbot_va",
+    "dataset:justintiensmith/VLA_Reasoning_Training_Dataset_1200_Trimmed_Start_5_Frame",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 5088872670,
+  "parameters_human": "5.09B",
+  "storage_bytes": 10177856860,
+  "storage_human": "10.2 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "justintiensmith (Justin Tien-Smith) - Hugging Face",
+      "url": "https://huggingface.co/justintiensmith",
+      "snippet": "User profile of Justin Tien-Smith on Hugging Face"
+    },
+    {
+      "title": "LingBot-World: Advancing Open-source World Models - GitHub",
+      "url": "https://github.com/robbyant/lingbot-world",
+      "snippet": "We are excited to introduce LingBot-World, an open-sourced world simulator stemming from video generation. Positioned as a top-tier world model, LingBot-World offers the following features. High-Fidelity & Diverse Environments: It maintains high fidelity and robust dynamics in a broad spectrum of environments, including realism, scientific contexts, cartoon styles, and beyond. Long-Term Memory ..."
+    },
+    {
+      "title": "LingBot-World | Open Source AI World Model - Free Deploy",
+      "url": "https://www.lingbot-world.org/",
+      "snippet": "LingBot-World AI World Model LingBot-World is the first open-source real-time interactive world model that rivals Google Genie 3 in quality. Experience zero-code world generation from a single image. This revolutionary AI world simulator lets you explore infinite procedurally generated worlds in real-time with stable long-term memory - no pre-rendered assets, no coding required."
+    },
+    {
+      "title": "OpenRoboto advances competition infrastructure in v1",
+      "url": "https://subnetradar.com/subnet-news/80/2026-08-26",
+      "snippet": "OpenRoboto shipped 15 commits advancing its real-track competition framework, adding schema definitions for structured competitions, enabling one episode per request, and introducing admission rules for LingBot-VLA 2.0 alongside OpenPI model formats. Version 0.7.0 consumer notices are drafted. Team discussion surfaced questions about Tao emissions eligibility; current lack of emissions ..."
+    },
+    {
+      "title": "AI StackLab on X: \"Embodied AI needs more than beautiful videos. It ...",
+      "url": "https://x.com/AIStackLabX/status/2074910170560491572",
+      "snippet": "Embodied AI needs more than beautiful videos. It needs models that understand actions and consequences. LingBot-Video stood out to me immediately. Physical grounding. Efficient inference. Developer-first. Really impressed by the team&#x27;s focus on solving practical robotics challenges instead of chasing visual quality alone."
+    }
+  ]
+}

@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "patrickbdevaney/GLM-5.3-Flash-REAP50-GGUF",
+  "slug": "patrickbdevaney-glm-5-3-flash-reap50-gguf",
+  "author": "patrickbdevaney",
+  "url": "https://huggingface.co/patrickbdevaney/GLM-5.3-Flash-REAP50-GGUF",
+  "created_at": "2026-08-30T06:10:34.000Z",
+  "updated_at": "2026-08-30T19:01:10.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "llama.cpp",
+    "reap",
+    "moe",
+    "pruned",
+    "base_model:zai-org/GLM-5.3-Flash",
+    "base_model:quantized:zai-org/GLM-5.3-Flash",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 164907253550,
+  "parameters_human": "164.91B",
+  "storage_bytes": 195113512960,
+  "storage_human": "195.1 GB",
+  "base_model": "zai-org/GLM-5.3-Flash",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "patrickbdevaney/GLM-5.3-Flash-REAP50-GGUF · Hugging Face",
+      "url": "https://huggingface.co/patrickbdevaney/GLM-5.3-Flash-REAP50-GGUF",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "patrickbdevaney/GLM-5.3-Flash-REAP50-FP8 · Hugging Face",
+      "url": "https://huggingface.co/patrickbdevaney/GLM-5.3-Flash-REAP50-FP8",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GLM-5.3-Flash - Overview - Z.AI DEVELOPER DOCUMENT",
+      "url": "https://docs.z.ai/guides/vlm/glm-5.3-flash",
+      "snippet": "Model Overview GLM-5.3-Flash is the first native multimodal model in the GLM-5 series, delivering stronger intelligence than GLM-5.2 at an exceptionally low cost. Highly Efficient Hybrid Architecture GLM-5.3-Flash has 320B total parameters with 18B activated."
+    },
+    {
+      "title": "GLM-5.3-Flash: Frontier Intelligence, Flash Cost - z.ai",
+      "url": "https://z.ai/blog/glm-5.3-flash",
+      "snippet": "We introduce GLM-5.3-Flash, the first natively multimodal model in the GLM-5 series. With 320B total parameters and just 18B active parameters, it outperforms GLM-5.2 across benchmarks and real-world workloads at one-tenth the price, while approaching Claude Opus 4.8 on coding and agentic benchmarks. GLM-5.3-Flash incorporates several architectural improvements over GLM-5. For the first time ..."
+    },
+    {
+      "title": "GLM-5.3 | OpenLM.ai",
+      "url": "https://openlm.ai/glm-5.5/",
+      "snippet": "GLM-5.3 is our latest flagship model for coding and long-horizon tasks. It marks a substantial leap in long-horizon task capability over its predecessor GLM-5.1 and delivers that capability on a solid 1M-token context. It is pure open with an MIT open-source license — no regional limits, technical access without borders."
+    }
+  ]
+}

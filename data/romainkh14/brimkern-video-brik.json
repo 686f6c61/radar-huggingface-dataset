@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "romainkh14/brimkern-video-BRIK",
+  "slug": "romainkh14-brimkern-video-brik",
+  "author": "romainkh14",
+  "url": "https://huggingface.co/romainkh14/brimkern-video-BRIK",
+  "created_at": "2026-07-21T12:38:18.000Z",
+  "updated_at": "2026-08-30T12:29:24.000Z",
+  "license": "creativeml-openrail-m",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-video",
+  "library": "brimkern",
+  "languages": [],
+  "tags": [
+    "brimkern",
+    "brik",
+    "webgpu",
+    "on-device",
+    "browser",
+    "quantized",
+    "animatediff",
+    "text-to-video",
+    "base_model:ByteDance/AnimateDiff-Lightning",
+    "base_model:finetune:ByteDance/AnimateDiff-Lightning",
+    "license:creativeml-openrail-m",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1527937440,
+  "storage_human": "1.5 GB",
+  "base_model": "ByteDance/AnimateDiff-Lightning, emilianJR/epiCRealism",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - RomainKH/Brimkern: The browser LLM engine that reads GGUF ...",
+      "url": "https://github.com/RomainKH/Brimkern",
+      "snippet": "Every \"AI in your browser\" either wraps a remote API, or asks you to pre-compile the weights into its own artifact before it will touch them. Brimkern reads the format the Hub already hosts, single-file GGUF, and executes it with WGSL compute shaders we wrote by hand. That&#x27;s the whole bet: the Hub holds tens of thousands of single-file GGUFs, and here every one of them is one paste away."
+    },
+    {
+      "title": "romainkh14 (ROMAIN KHANOYAN) - Hugging Face",
+      "url": "https://huggingface.co/romainkh14",
+      "snippet": "Recent Activity updated a model21 days ago romainkh14/brimkern-video-BRIK published a model21 days ago romainkh14/brimkern-video-BRIK updated a model21 days ago romainkh14/LFM2.5-230M_BRIK View all activity"
+    },
+    {
+      "title": "Brimkern — Local WebGPU LLM engine in your browser",
+      "url": "https://brimkern.com/",
+      "snippet": "Images — text-to-image in the tab (SD-Turbo / SDXS with a WebGPU diffusion stack). Video (beta) — short animated clips from a prompt, on the same kernels. Chat Documentation SDK vs WebLLM Converter Changelog Models GitHub Brimkern — open WebGPU engine, built by Romain Khanoyan. Local AI, WebGPU, on-device engines."
+    },
+    {
+      "title": "Documentation — Brimkern",
+      "url": "https://brimkern.com/docs",
+      "snippet": "The .brik format & converter A .brik is a GGUF re-packaged for the browser: weights already quantized to int4/int8, laid out so each layer is one contiguous HTTP range, with the tokenizer embedded. The practical effect: the model loads by ranges (resumable, partially, genuinely offline afterwards) instead of as one multi-gigabyte download."
+    },
+    {
+      "title": "Brimkern/README.md at main · RomainKH/Brimkern · GitHub",
+      "url": "https://github.com/RomainKH/Brimkern/blob/main/README.md",
+      "snippet": "The one-sentence version Every \"AI in your browser\" either wraps a remote API, or asks you to pre-compile the weights into its own artifact before it will touch them. Brimkern reads the format the Hub already hosts — single-file GGUF — and executes it with WGSL compute shaders we wrote by hand."
+    }
+  ]
+}

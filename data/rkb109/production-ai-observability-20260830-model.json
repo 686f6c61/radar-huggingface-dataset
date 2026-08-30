@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "RKB109/production-ai-observability-20260830-model",
+  "slug": "rkb109-production-ai-observability-20260830-model",
+  "author": "RKB109",
+  "url": "https://huggingface.co/RKB109/production-ai-observability-20260830-model",
+  "created_at": "2026-08-30T17:30:18.000Z",
+  "updated_at": "2026-08-30T17:30:19.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": "custom",
+  "languages": [],
+  "tags": [
+    "custom",
+    "synthetic-data",
+    "transparent-baseline",
+    "ai-observability",
+    "text-classification",
+    "token-classification",
+    "summarization",
+    "zero-shot-classification",
+    "dataset:RKB109/production-ai-observability-20260830-dataset",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - R-behera/production-ai-observability-20260830: An ...",
+      "url": "https://github.com/R-behera/production-ai-observability-20260830",
+      "snippet": "An observability pipeline that classifies AI trace failures and produces release-ready reliability reports. Generated on 2026-08-30 as an independent production-AI architecture project."
+    },
+    {
+      "title": "RKB109/production-ai-observability-20260810-model · Hugging Face",
+      "url": "https://huggingface.co/RKB109/production-ai-observability-20260810-model",
+      "snippet": "Production AI Observability Monitor Baseline Model Model Description This repository contains a small, transparent prototype model for Production AI teams need trace-level signals for latency, token growth, tool failures, and low-quality outputs. The model combines per-label token weights with IDF-weighted evidence retrieval."
+    },
+    {
+      "title": "production-ai-observability-20260820-dataset - Hugging Face",
+      "url": "https://huggingface.co/datasets/RKB109/production-ai-observability-20260820-dataset",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Observability in Generative AI - Microsoft Foundry",
+      "url": "https://learn.microsoft.com/en-us/azure/foundry/concepts/observability",
+      "snippet": "Without rigorous assessment, AI systems risk generating responses that are inaccurate, inconsistent, poorly grounded, or potentially harmful. Observability enables teams to measure and improve both the quality and safety of AI outputs throughout the development lifecycle - from model selection through production monitoring."
+    },
+    {
+      "title": "NeurIPS 2025 Papers",
+      "url": "https://neurips.cc/virtual/2025/papers.html",
+      "snippet": "The Quest for Universal Master Key Filters in DS-CNNs Pin the Tail on the Model: Blindfolded Repair of User-Flagged Failures in Text-to-Image Services AutoPartGen: Autoregressive 3D Part Generation and Discovery Train with Perturbation, Infer after Merging: A Two-Stage Framework for Continual Learning"
+    }
+  ]
+}

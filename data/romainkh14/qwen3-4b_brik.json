@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "romainkh14/Qwen3-4B_BRIK",
+  "slug": "romainkh14-qwen3-4b_brik",
+  "author": "romainkh14",
+  "url": "https://huggingface.co/romainkh14/Qwen3-4B_BRIK",
+  "created_at": "2026-07-19T08:02:37.000Z",
+  "updated_at": "2026-08-30T12:29:21.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "brimkern",
+  "languages": [
+    "en",
+    "fr"
+  ],
+  "tags": [
+    "brimkern",
+    "brik",
+    "webgpu",
+    "on-device",
+    "browser",
+    "quantized",
+    "qwen3",
+    "text-generation",
+    "en",
+    "fr",
+    "base_model:Qwen/Qwen3-4B",
+    "base_model:finetune:Qwen/Qwen3-4B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 2527863920,
+  "storage_human": "2.5 GB",
+  "base_model": "Qwen/Qwen3-4B",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "romainkh14 (ROMAIN KHANOYAN) - Hugging Face",
+      "url": "https://huggingface.co/romainkh14",
+      "snippet": "Recent Activity updated a model21 days ago romainkh14/brimkern-video-BRIK published a model21 days ago romainkh14/brimkern-video-BRIK updated a model21 days ago romainkh14/LFM2.5-230M_BRIK View all activity"
+    },
+    {
+      "title": "Qwen/Qwen3-4B · Hugging Face",
+      "url": "https://huggingface.co/Qwen/Qwen3-4B",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Qwen3-4B - Qualcomm AI Hub",
+      "url": "https://aihub.qualcomm.com/models/qwen3_4b",
+      "snippet": "Qwen3-4B State‑of‑the‑art large language model useful on a variety of language understanding and generation tasks. The Qwen3‑4B is a state‑of‑the‑art multilingual base language model with 4 billion parameters, excelling in language understanding, generation, coding, and mathematics."
+    },
+    {
+      "title": "ai-hub-models/src/qai_hub_models/models/qwen3_4b/README.md at ... - GitHub",
+      "url": "https://github.com/qualcomm/ai-hub-models/blob/main/src/qai_hub_models/models/qwen3_4b/README.md",
+      "snippet": "This is based on the implementation of Qwen3-4B found here. This repository contains scripts for optimized on-device export suitable to run on Qualcomm® devices. More details on model performance across various devices, can be found here. Qualcomm AI Hub Models uses Qualcomm AI Hub Workbench to compile, profile, and evaluate this model."
+    },
+    {
+      "title": "qwen/qwen3-4b • LM Studio",
+      "url": "https://lmstudio.ai/models/qwen/qwen3-4b",
+      "snippet": "Qwen3 4B by qwen Supports a context length of up to 131,072 tokens with YaRN (default 32k) Supports /no_think to disable reasoning, just add it at the end of your prompt Supports both thinking and non-thinking modes withe enhanced reasoning in both for significantly enhanced mathematics, coding, and commonsense Excels at creative writing, role-playing, multi-turn dialogues, and instruction ..."
+    }
+  ]
+}

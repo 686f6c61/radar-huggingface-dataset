@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "ShlokShlok123/nidhi-weights",
+  "slug": "shlokshlok123-nidhi-weights",
+  "author": "ShlokShlok123",
+  "url": "https://huggingface.co/ShlokShlok123/nidhi-weights",
+  "created_at": "2026-08-30T11:48:24.000Z",
+  "updated_at": "2026-08-30T12:14:23.000Z",
+  "license": "research-evaluation-only",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "mental-health",
+    "not-for-clinical-use",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 86073242802,
+  "storage_human": "86.1 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": true,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "dsisodia/ai-nidhi · Hugging Face",
+      "url": "https://huggingface.co/dsisodia/ai-nidhi",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "In the Weights: New Tool Lets You Check If You Exist in AI Model ...",
+      "url": "https://creati.ai/ai-news/2026-06-21/in-the-weights-ai-training-data-vanity-search-tool/",
+      "snippet": "Former OpenAI employees launch &#x27;In the Weights,&#x27; a tool that queries multiple AI models to measure how well they recall a person&#x27;s existence from training data."
+    },
+    {
+      "title": "ShlokShlok123 (Shelat) - Hugging Face",
+      "url": "https://huggingface.co/ShlokShlok123/datasets",
+      "snippet": "User profile of Shelat on Hugging Face"
+    },
+    {
+      "title": "&#x27;IN THE WEIGHTS&#x27; shows how strongly a person&#x27;s &#x27;name&#x27; is weighted ...",
+      "url": "https://gigazine.net/gsc_news/en/20260619-intheweights-llm-weights-name",
+      "snippet": "&#x27;IN THE WEIGHTS&#x27; is a service that shows how strongly the &#x27;names&#x27; of various people, such as historical figures, celebrities, and athletes, are weighted within the AI model."
+    },
+    {
+      "title": "Website \"In the Weights\" shows whether AI models know who you are",
+      "url": "https://the-decoder.com/website-in-the-weights-shows-whether-ai-models-know-who-you-are/",
+      "snippet": "Those \"weights\" are billions of numerical values where AI models encode their knowledge. If you show up in them, the model considered you relevant enough during training to recall without tools like web search. The site queries several models to figure out who a specific person is, combines the results, and assigns a strength score."
+    }
+  ]
+}

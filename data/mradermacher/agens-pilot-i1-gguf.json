@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "mradermacher/Agens-Pilot-i1-GGUF",
+  "slug": "mradermacher-agens-pilot-i1-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/Agens-Pilot-i1-GGUF",
+  "created_at": "2026-08-30T14:47:02.000Z",
+  "updated_at": "2026-08-30T14:47:20.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 3391984,
+  "parameters_human": "3.4M",
+  "storage_bytes": 13642624,
+  "storage_human": "14 MB",
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "mradermacher/Agens-Pilot-GGUF · Hugging Face",
+      "url": "https://huggingface.co/mradermacher/Agens-Pilot-GGUF",
+      "snippet": "mradermacher / Agens-Pilot-GGUF like 0 Transformers GGUF Yue Chinese Chinese English agens blockway qwen3.8 cantonese 廣東話 hong-kong multimodal vision agent agentic code long-context chat conversational License:apache-2.0 Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "mradermacher/ice-AI-GGUF · Hugging Face",
+      "url": "https://huggingface.co/mradermacher/ice-AI-GGUF",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "AI Model Catalog | Microsoft Foundry Models",
+      "url": "https://ai.azure.com/catalog/models/mradermacher-e5-base-i1-gguf",
+      "snippet": "mradermacher/e5-base-i1-GGUF powered by Hugging Face Inference Toolkit Original Model Card feature-extraction Task on Hugging Face Send Request You can use cURL or any REST Client to send a request to the AzureML endpoint with your AzureML token."
+    },
+    {
+      "title": "GGUF Model Discovery - Browse & Download AI Models",
+      "url": "https://local-ai-zone.github.io/",
+      "snippet": "Discover and download GGUF format AI models. Browse and direct download thousands of quantized AI models with detailed information, download counts, and direct links."
+    },
+    {
+      "title": "Models - Hugging Face",
+      "url": "https://router.huggingface.co/models/",
+      "snippet": "Explore machine learning models. HauhauCS/Qwen3.8-27B-Uncensored-HauhauCS-Aggressive-MTP-GGUF"
+    }
+  ]
+}

@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "KhiemGOM/techjam-scaffolding-tagger",
+  "slug": "khiemgom-techjam-scaffolding-tagger",
+  "author": "KhiemGOM",
+  "url": "https://huggingface.co/KhiemGOM/techjam-scaffolding-tagger",
+  "created_at": "2026-08-30T17:40:39.000Z",
+  "updated_at": "2026-08-30T17:41:16.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "token-classification",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "safetensors",
+    "distilbert",
+    "conversational-search",
+    "token-classification",
+    "e-commerce",
+    "en",
+    "base_model:distilbert/distilbert-base-uncased",
+    "base_model:finetune:distilbert/distilbert-base-uncased",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 66364418,
+  "parameters_human": "66.4M",
+  "storage_bytes": 265470008,
+  "storage_human": "265 MB",
+  "base_model": "distilbert-base-uncased",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "KhiemGOM - Repositories - GitHub",
+      "url": "https://github.com/KhiemGOM?tab=repositories",
+      "snippet": "If I were you, I would love myself very much. KhiemGOM has 15 repositories available. Follow their code on GitHub."
+    },
+    {
+      "title": "GitHub - Swetha-aaa/techjam-track5",
+      "url": "https://github.com/Swetha-aaa/techjam-track5",
+      "snippet": "TikTok TechJam 2026, Track 5. Detects AI-generated images and stays accurate after JPEG re-compression, blur, resize, noise, color jitter, and cropping."
+    },
+    {
+      "title": "Hugging Face - The AI community building the future.",
+      "url": "https://huggingface.co/",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "The Scaffolding Trap Around Modern LLMs - Medium",
+      "url": "https://medium.com/@dqj1998/the-scaffolding-trap-around-modern-llms-9fd6639f9664",
+      "snippet": "The Scaffolding Trap Around Modern LLMs - Beyond Harness Engineering Part 1 Why AI engineering complexity is increasing while intelligence is improving Free edtion for non-members Something ..."
+    },
+    {
+      "title": "sumatran-tiger/KhiemGOM · Hugging Face",
+      "url": "https://huggingface.co/sumatran-tiger/KhiemGOM",
+      "snippet": "/ KhiemGOM like 0 Text-to-Image Diffusers Safetensors StableDiffusionPipeline Inference Endpoints arxiv:1910.09700 Model card FilesFiles and versions Community Train Deploy Use this model Edit model card Model Card for Model ID Model Details Model Description Model Sources [optional] Uses Direct Use Downstream Use [optional] Out-of-Scope Use ..."
+    }
+  ]
+}

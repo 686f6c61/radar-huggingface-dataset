@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "robertollweb/matrixai-celsius-to-kelvin",
+  "slug": "robertollweb-matrixai-celsius-to-kelvin",
+  "author": "robertollweb",
+  "url": "https://huggingface.co/robertollweb/matrixai-celsius-to-kelvin",
+  "created_at": "2026-08-30T19:08:22.000Z",
+  "updated_at": "2026-08-30T19:08:25.000Z",
+  "license": "agpl-3.0",
+  "license_family": "oss",
+  "pipeline_tag": "tabular-regression",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "onnx",
+    "matrixai",
+    "tabular-regression",
+    "auditable-ai",
+    "reproducibility",
+    "provenance",
+    "synthetic-data",
+    "edge-inference",
+    "license:agpl-3.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 613,
+  "storage_human": "613 B",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - robertollweb/matrixAI: MatrixAI: auditable AI models from ...",
+      "url": "https://github.com/robertollweb/matrixAI",
+      "snippet": "MatrixAI: auditable AI models from prompts. Contribute to robertollweb/matrixAI development by creating an account on GitHub."
+    },
+    {
+      "title": "matrixAI/README.md at main · robertollweb/matrixAI · GitHub",
+      "url": "https://github.com/robertollweb/matrixAI/blob/main/README.md",
+      "snippet": "MatrixAI: auditable AI models from prompts. Contribute to robertollweb/matrixAI development by creating an account on GitHub."
+    },
+    {
+      "title": "Celsius to Kelvin | °C to K - Calculator Soup",
+      "url": "https://www.calculatorsoup.com/calculators/conversions/celsius-to-kelvin.php",
+      "snippet": "Convert temperature units from Celsius scale to Kelvin scale. C to K. How to solve the equation K = °C + 273.15. Learn how to convert among temperaure units degrees Celsius to Kelvin."
+    },
+    {
+      "title": "matrixai-core · PyPI",
+      "url": "https://pypi.org/project/matrixai-core/",
+      "snippet": "MatrixAI MatrixAI is a language for AI, not for humans. Describe a model in a prompt, train it, audit every decision it makes, and deploy it where trust is not optional. Models are not black boxes — they are auditable programs: explicit inputs, explicit transformations, explicit outputs, explicit audit trail. Every decision is traceable to a named node in the computation graph. That is the ..."
+    },
+    {
+      "title": "MatrixAI Studio — Auditable AI Models from Plain Language",
+      "url": "https://matrixaistudio.org/",
+      "snippet": "Describe your model in plain language. MatrixAI builds, trains and deploys verifiable AI with a cryptographic audit trail at every step — no black boxes."
+    }
+  ]
+}

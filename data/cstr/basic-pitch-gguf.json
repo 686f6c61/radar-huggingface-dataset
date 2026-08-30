@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "cstr/basic-pitch-GGUF",
+  "slug": "cstr-basic-pitch-gguf",
+  "author": "cstr",
+  "url": "https://huggingface.co/cstr/basic-pitch-GGUF",
+  "created_at": "2026-08-30T11:37:58.000Z",
+  "updated_at": "2026-08-30T11:38:15.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "audio-classification",
+  "library": "ggml",
+  "languages": [],
+  "tags": [
+    "ggml",
+    "gguf",
+    "music-transcription",
+    "note-events",
+    "basic-pitch",
+    "amt",
+    "crispasr",
+    "audio-classification",
+    "base_model:spotify/basic-pitch",
+    "base_model:quantized:spotify/basic-pitch",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 35697,
+  "parameters_human": "35697",
+  "storage_bytes": 257568,
+  "storage_human": "257568 B",
+  "base_model": "spotify/basic-pitch",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "cstr/fastpitch-en-GGUF · Hugging Face",
+      "url": "https://huggingface.co/cstr/fastpitch-en-GGUF",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GGUF Model Discovery - Browse & Download AI Models",
+      "url": "https://local-ai-zone.github.io/",
+      "snippet": "Discover and download GGUF format AI models. Browse and direct download thousands of quantized AI models with detailed information, download counts, and direct links."
+    },
+    {
+      "title": "README.md · cstr/fastpitch-en-GGUF at main - Hugging Face",
+      "url": "https://huggingface.co/cstr/fastpitch-en-GGUF/blob/main/README.md",
+      "snippet": "FastPitch (English) + HiFi-GAN — GGUF (ggml) GGUF / ggml conversion of nvidia/tts_en_fastpitch + nvidia/tts_hifigan for use with CrispStrobe/CrispASR. FastPitch is a non-autoregressive parallel TTS model that generates the entire mel spectrogram in a single forward pass (no sampling, no KV cache), making it very fast."
+    },
+    {
+      "title": "Command-Line Interface (game_ggml_cli) - DeepWiki",
+      "url": "https://deepwiki.com/KakaruHayate/game.cpp/7-command-line-interface-(game_ggml_cli)",
+      "snippet": "The inspect command provides a technical summary of a GGUF model file. It parses the GGUF metadata to display the architecture type, embedding dimensions, and layer counts for the Encoder, Segmenter, and Estimator src/cli/main.cpp148-157 It also lists the internal tensors, including their shapes and data types src/cli/main.cpp158-175"
+    },
+    {
+      "title": "basic-pitch: Audio-to-Audio model — overview, use cases, alternatives",
+      "url": "https://www.aimodels.fyi/models/replicate/basic-pitch-rhelsing",
+      "snippet": "Q: Can I use basic-pitch for polyphonic music transcription? A: The model is designed for monophonic (single-instrument) transcription and works best when you provide audio containing one melodic line at a time. While it can process polyphonic audio, accuracy degrades significantly with multiple simultaneous instruments or dense chords."
+    }
+  ]
+}

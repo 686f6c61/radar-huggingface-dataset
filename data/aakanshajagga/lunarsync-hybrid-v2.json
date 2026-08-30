@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "aakanshajagga/lunarsync-hybrid-v2",
+  "slug": "aakanshajagga-lunarsync-hybrid-v2",
+  "author": "aakanshajagga",
+  "url": "https://huggingface.co/aakanshajagga/lunarsync-hybrid-v2",
+  "created_at": "2026-08-30T12:08:14.000Z",
+  "updated_at": "2026-08-30T12:14:04.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "lunarsync",
+    "keypoint-matching",
+    "lunar",
+    "remote-sensing",
+    "chandrayaan-2",
+    "isro",
+    "fail-safe-ai",
+    "custom_code",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 16713426,
+  "parameters_human": "16.7M",
+  "storage_bytes": 66940906,
+  "storage_human": "67 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "aakanshajagga/lunarsync · Hugging Face",
+      "url": "https://huggingface.co/aakanshajagga/lunarsync",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Lunarsync - a Hugging Face Space by soiz1",
+      "url": "https://huggingface.co/spaces/GPT-free-api/lunarsync",
+      "snippet": "Discover amazing ML apps made by the community"
+    },
+    {
+      "title": "GANNONR — AI Aim Assist & Tools",
+      "url": "https://gannonr.com/",
+      "snippet": "YOLO and TensorRT inference on live capture. Industry-grade prediction, smart tracking, and broad hardware support."
+    },
+    {
+      "title": "Releases · smartfoloo/lunarsync - GitHub",
+      "url": "https://github.com/smartfoloo/lunarsync/releases",
+      "snippet": "An ultrafast, yet simple web proxy. Contribute to smartfoloo/lunarsync development by creating an account on GitHub."
+    },
+    {
+      "title": "‎Google Gemini",
+      "url": "https://gemini.google.com/",
+      "snippet": "Meet Gemini, Google&#x27;s AI assistant. Get help with writing, planning, brainstorming, and more. Experience the power of generative AI."
+    }
+  ]
+}

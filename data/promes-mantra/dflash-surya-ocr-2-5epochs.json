@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "promes-mantra/dflash-surya-ocr-2-5epochs",
+  "slug": "promes-mantra-dflash-surya-ocr-2-5epochs",
+  "author": "promes-mantra",
+  "url": "https://huggingface.co/promes-mantra/dflash-surya-ocr-2-5epochs",
+  "created_at": "2026-08-30T13:39:41.000Z",
+  "updated_at": "2026-08-30T13:39:56.000Z",
+  "license": "openrail",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "speculators",
+  "languages": [],
+  "tags": [
+    "speculators",
+    "safetensors",
+    "dflash",
+    "speculative-decoding",
+    "ocr",
+    "surya",
+    "multimodal",
+    "qwen3_5",
+    "image-text-to-text",
+    "custom_code",
+    "base_model:datalab-to/surya-ocr-2",
+    "base_model:finetune:datalab-to/surya-ocr-2",
+    "license:openrail",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 184285841,
+  "parameters_human": "184.3M",
+  "storage_bytes": 368704737,
+  "storage_human": "369 MB",
+  "base_model": "datalab-to/surya-ocr-2",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "datalab-to/surya-ocr-2 · Hugging Face",
+      "url": "https://huggingface.co/datalab-to/surya-ocr-2",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GitHub - datalab-to/surya: OCR, layout analysis, reading order, table ...",
+      "url": "https://github.com/datalab-to/surya",
+      "snippet": "Surya is a 650M param OCR model with these features: Accuracy - scores 83.3% on olmOCR-bench (top under 3B params) Speed - throughput of 5 pages/s on an RTX 5090 Multilingual - scores 87.2% on an internal benchmark set of 91 languages (more here) Layout analysis (table, image, header, etc.) with reading order Table recognition (rows + columns) We also ship smaller models for line-level text ..."
+    },
+    {
+      "title": "GitHub - EssentialMD/surya2: OCR, layout analysis, reading order, table ...",
+      "url": "https://github.com/EssentialMD/surya2",
+      "snippet": "The model weights use a modified AI Pubs Open Rail-M license (free for research, personal use, and startups under $5M funding/revenue). For broader commercial licensing of the model weights, visit our pricing page here."
+    },
+    {
+      "title": "Announcing Surya OCR 2: small, accurate, multilingual",
+      "url": "https://www.datalab.to/blog/surya-2",
+      "snippet": "Surya OCR 2 is a 650M-parameter open-source OCR model that scores 83.3% on olmOCR-bench, hits 87.2% on a 91-language multilingual eval, and runs on CPU, GPU, and MPS."
+    },
+    {
+      "title": "raw.githubusercontent.com",
+      "url": "https://raw.githubusercontent.com/datalab-to/surya/master/README.md",
+      "snippet": "The points are in clockwise order from the top left. - `confidence` - the confidence of the model in the detected text (0-1) - `vertical_lines` - vertical lines detected in the document - `bbox` - the axis-aligned line coordinates. - `page` - the page number in the file - `image_bbox` - the bbox for the image in (x1, y1, x2, y2) format. (x1, y1 ..."
+    }
+  ]
+}

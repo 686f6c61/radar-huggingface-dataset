@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "agentic-ptb/opus-high-v3.h042.seed7.step_8",
+  "slug": "agentic-ptb-opus-high-v3-h042-seed7-step_8",
+  "author": "agentic-ptb",
+  "url": "https://huggingface.co/agentic-ptb/opus-high-v3.h042.seed7.step_8",
+  "created_at": "2026-08-30T15:46:49.000Z",
+  "updated_at": "2026-08-30T15:48:36.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "qwen3_5",
+    "agentic-ptb",
+    "opus-high-v3",
+    "negative-results",
+    "base_model:Qwen/Qwen3.5-9B-Base",
+    "base_model:finetune:Qwen/Qwen3.5-9B-Base",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 9409813744,
+  "parameters_human": "9.41B",
+  "storage_bytes": 18839710445,
+  "storage_human": "18.8 GB",
+  "base_model": "Qwen/Qwen3.5-9B-Base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Claude Opus &#92; Anthropic",
+      "url": "https://www.anthropic.com/claude/opus",
+      "snippet": "Claude Opus 5 is a strong agentic coding model built for long-running, multi-step work. It deeply understands your codebase, holds the thread across complex tasks, and pins down requirements for feature development and bug-fixing more effectively than Opus 4.8."
+    },
+    {
+      "title": "agentic-ptb/INDEX · Datasets at Hugging Face",
+      "url": "https://huggingface.co/datasets/agentic-ptb/INDEX",
+      "snippet": "opus-high-v1 is the opus@high cell. A rerun (opus-high-v2, run a-rerun) was aborted and is not valid — it stopped producing checkpoints at ~h12 and submitted the base model&#x27;s tensors unchanged after all five of its SFT runs regressed."
+    },
+    {
+      "title": "Models - Hugging Face",
+      "url": "https://huggingface.co/models?other=agentic-ptb",
+      "snippet": "Explore machine learning models. 234 Base only Inference AvailableInference Edit filters Sort: Trending Active filters: agentic-ptb Clear all"
+    },
+    {
+      "title": "GitHub - FlorianBruniaux/claude-code-ultimate-guide: The most ...",
+      "url": "https://github.com/FlorianBruniaux/claude-code-ultimate-guide",
+      "snippet": "This guide teaches you to think differently about AI-assisted development: Understand trade-offs — When to use agents vs skills vs commands (not just how to configure them) Build mental models — How Claude Code works internally (architecture, context flow, tool orchestration) Visualize concepts — 48 Mermaid diagrams covering model selection, master loop, memory hierarchy, multi-agent ..."
+    },
+    {
+      "title": "Introducing Claude Opus 5 on AWS: Anthropic&#x27;s most capable Opus model",
+      "url": "https://aws.amazon.com/blogs/machine-learning/introducing-claude-opus-5-on-aws-anthropics-most-capable-opus-model/",
+      "snippet": "This post covers Opus 5&#x27;s improvements and practical guidance for AI engineers integrating the model into agentic systems and production inference workloads on Amazon Bedrock. See the documentation for Claude Platform on AWS. What makes Claude Opus 5 different According to Anthropic, Claude Opus 5 delivers a step-change in coding."
+    }
+  ]
+}

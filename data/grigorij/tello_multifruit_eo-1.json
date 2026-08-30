@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "Grigorij/Tello_multifruit_eo-1",
+  "slug": "grigorij-tello_multifruit_eo-1",
+  "author": "Grigorij",
+  "url": "https://huggingface.co/Grigorij/Tello_multifruit_eo-1",
+  "created_at": "2026-08-30T15:00:49.000Z",
+  "updated_at": "2026-08-30T15:02:34.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "vision-language-action",
+    "eo1",
+    "robotics",
+    "dataset:Grigorij/Tello_multifruit_sum_two_state_vars",
+    "arxiv:2508.21112",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 3771607072,
+  "parameters_human": "3.77B",
+  "storage_bytes": 7577313040,
+  "storage_human": "7.6 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Grigorij/Tello_multifruit_sum_lingbot · Hugging Face",
+      "url": "https://huggingface.co/Grigorij/Tello_multifruit_sum_lingbot",
+      "snippet": "Model Card for lingbot_va LingBot-VA is an autoregressive video-action world-model policy built on the Wan2.2 video-diffusion stack. It interleaves the prediction of future video latents and robot actions in a single autoregressive sequence, feeding observed keyframes back into its KV cache for closed-loop world modeling."
+    },
+    {
+      "title": "Grigorij/Tello_multifruit_sum at main - Hugging Face",
+      "url": "https://huggingface.co/datasets/Grigorij/Tello_multifruit_sum/tree/main",
+      "snippet": "Datasets: Grigorij / Tello_multifruit_sum like 0 Tasks: Robotics Modalities: Tabular Time-series Video Formats: parquet Size: 10K - 100K Tags: LeRobot Libraries: Datasets pandas Polars + 1 License: apache-2.0 Dataset card Data Studio FilesFiles and versions xet Community main Tello_multifruit_sum 134 MB 1 contributor History:3 commits Grigorij Upload README.md with huggingface_hub ba3cf91 ..."
+    },
+    {
+      "title": "GitHub - EO-Robotics/EO1: EO: Open-source Unified Embodied Foundation ...",
+      "url": "https://github.com/EO-Robotics/EO1",
+      "snippet": "The EO-1 model adopt a single unified decoder-only transformer that integrates discrete auto-regressive decoding with continuous flow matching denoising for multimodal embodied reasoning and robot control, enabling seamless perception, planning, reasoning, and acting in single model."
+    },
+    {
+      "title": "Eo-1",
+      "url": "https://eo-robotics.ai/eo-1",
+      "snippet": "The EO-1 model adopt a single unified decoder-only transformer that integrates discrete auto-regressive decoding with continuous flow matching denoising for multimodal embodied reasoning and robot control, enabling seamless perception, planning, reasoning, and acting in single model through interleaved vision-text-action pretraining."
+    },
+    {
+      "title": "EO-1: An Open Unified Embodied Foundation Model for General Robot Control",
+      "url": "https://arxiv.org/pdf/2508.21112v5",
+      "snippet": "In this work, we introduce EO-Robotics, consists of EO-1 model and EO-Data1.5M dataset. EO-1 is a unified embodied foundation model that achieves superior performance in multimodal embodied reasoning and robot control through interleaved vision-text-action pre-training."
+    }
+  ]
+}

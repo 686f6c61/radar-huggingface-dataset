@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "jeferson2106/medico_ia_jeferson",
+  "slug": "jeferson2106-medico_ia_jeferson",
+  "author": "jeferson2106",
+  "url": "https://huggingface.co/jeferson2106/medico_ia_jeferson",
+  "created_at": "2026-08-30T17:49:59.000Z",
+  "updated_at": "2026-08-30T17:53:08.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "llama",
+    "llama.cpp",
+    "unsloth",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 8030261248,
+  "parameters_human": "8.03B",
+  "storage_bytes": 4920734080,
+  "storage_human": "4.9 GB",
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Hugging Face - The AI community building the future.",
+      "url": "https://huggingface.co/",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Jefferson AI",
+      "url": "https://jefferson.ai/",
+      "snippet": "Ask your top communication questions to Jefferson AI and get expert advice. Try it now - first 3 questions free!"
+    },
+    {
+      "title": "Models - Hugging Face",
+      "url": "https://huggingface.co/models?library...",
+      "snippet": "Explore machine learning models."
+    },
+    {
+      "title": "Free AI 3D Model Generator - CF Studio",
+      "url": "https://studio.creativefabrica.com/3d-model-generator",
+      "snippet": "Generate 3D models from text descriptions or images. Describe what you want or upload a reference image and get a detailed, textured 3D model in seconds. Free to use."
+    },
+    {
+      "title": "Arena AI: Side-by-Side Model Comparison",
+      "url": "https://arena.ai/side-by-side",
+      "snippet": "Prompt once and get responses from multiple LLMs simultaneously. You choose which AI models you want responses from to compare frontier AI models side-by-side."
+    }
+  ]
+}

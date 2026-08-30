@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "Elhefnawyamr/Demo",
+  "slug": "elhefnawyamr-demo",
+  "author": "Elhefnawyamr",
+  "url": "https://huggingface.co/Elhefnawyamr/Demo",
+  "created_at": "2026-08-30T13:15:51.000Z",
+  "updated_at": "2026-08-30T13:15:52.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Demos - MakeAI",
+      "url": "https://makeai.org/demos",
+      "snippet": "Explore our open-source AI demos."
+    },
+    {
+      "title": "AI Demos | Meta",
+      "url": "https://www.aidemos.meta.com/",
+      "snippet": "Try experimental demos featuring the latest AI research from Meta."
+    },
+    {
+      "title": "Try AI Models - Interactive LLM Playground - Qwen Cloud",
+      "url": "https://www.qwencloud.com/try-ai",
+      "snippet": "Test Qwen models in our interactive Try AI playground. Explore multimodal LLM capabilities, real-time inference, and scalable API tools for global developers."
+    },
+    {
+      "title": "ModelsLab Playground - Explore & Test AI Models",
+      "url": "https://modelslab.com/playground",
+      "snippet": "Experiment with AI models in the ModelsLab Playground. Generate images, text, audio, and more in an interactive developer environment."
+    },
+    {
+      "title": "Hugging Face - The AI community building the future.",
+      "url": "https://huggingface.co/",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    }
+  ]
+}

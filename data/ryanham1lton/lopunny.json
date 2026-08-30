@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "Ryanham1lton/Lopunny",
+  "slug": "ryanham1lton-lopunny",
+  "author": "Ryanham1lton",
+  "url": "https://huggingface.co/Ryanham1lton/Lopunny",
+  "created_at": "2026-08-30T19:13:34.000Z",
+  "updated_at": "2026-08-30T19:13:34.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:cc-by-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Lopunny - AI Art Model | PixAI",
+      "url": "https://pixai.art/en/model/1866498339916322838",
+      "snippet": "Generate stunning pokemon, lopunny_nsfw_pokemon, loppuny, lopunnyxl, lopunny_furry anime art with the &#x27;Lopunny&#x27; model on PixAI. Browse artworks made with this model and try it free."
+    },
+    {
+      "title": "Lopunny - Pokemon v2 - SeaArt AI Model",
+      "url": "https://www.seaart.ai/models/detail/34259f22c2d0e2d4e027c0566f006403",
+      "snippet": "Explore Lopunny - Pokemon v2 model on SeaArt AI. Transform your idea into professional-quality AI-generated images and videos with our free, easy-to-use platform."
+    },
+    {
+      "title": "Lopunny - AI Art Model | PixAI",
+      "url": "https://pixai.art/en/model/1774138565325168540",
+      "snippet": "Generate stunning anime, character anime art with the &#x27;Lopunny&#x27; model on PixAI. Browse artworks made with this model and try it free."
+    },
+    {
+      "title": "Lopunny - SeaArt AI Model",
+      "url": "https://www.seaart.ai/models/detail/cs6nb8le878c7395r8u0",
+      "snippet": "Explore Lopunny model on SeaArt AI. Transform your idea into professional-quality AI-generated images and videos with our free, easy-to-use platform."
+    },
+    {
+      "title": "Best lopuny - 1 LOPUNNY AI LORA - Free Download | Tensor.Art",
+      "url": "https://www.tensor.art/models/782312552181928898",
+      "snippet": "Download lopuny - free LORA Pony AI model on TENSOR. LOPUNNY. By Reiiry Flannery"
+    }
+  ]
+}

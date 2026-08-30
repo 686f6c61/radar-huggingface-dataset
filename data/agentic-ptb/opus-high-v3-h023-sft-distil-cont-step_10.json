@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "agentic-ptb/opus-high-v3.h023.sft-distil-cont.step_10",
+  "slug": "agentic-ptb-opus-high-v3-h023-sft-distil-cont-step_10",
+  "author": "agentic-ptb",
+  "url": "https://huggingface.co/agentic-ptb/opus-high-v3.h023.sft-distil-cont.step_10",
+  "created_at": "2026-08-30T15:48:37.000Z",
+  "updated_at": "2026-08-30T15:50:27.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "qwen3_5",
+    "agentic-ptb",
+    "opus-high-v3",
+    "negative-results",
+    "base_model:Qwen/Qwen3.5-9B-Base",
+    "base_model:finetune:Qwen/Qwen3.5-9B-Base",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 9409813744,
+  "parameters_human": "9.41B",
+  "storage_bytes": 18839710445,
+  "storage_human": "18.8 GB",
+  "base_model": "Qwen/Qwen3.5-9B-Base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "agentic-ptb/INDEX · Datasets at Hugging Face",
+      "url": "https://huggingface.co/datasets/agentic-ptb/INDEX",
+      "snippet": "opus-high-v1 is the opus@high cell. A rerun (opus-high-v2, run a-rerun) was aborted and is not valid — it stopped producing checkpoints at ~h12 and submitted the base model&#x27;s tensors unchanged after all five of its SFT runs regressed."
+    },
+    {
+      "title": "agentic-ptb/grok.h023.sft-v6.step_800 · Hugging Face",
+      "url": "https://huggingface.co/agentic-ptb/grok.h023.sft-v6.step_800",
+      "snippet": "The repo id is {cell}.h {HHH}. {family}. {step}, where hHHH is the hour of the 100-hour run at which this checkpoint was written — the same x-axis the sweep figures use for eval panels (t_h). So a checkpoint drops onto the performance-over-time curve directly, and sorting repo ids within a cell sorts them chronologically."
+    },
+    {
+      "title": "Models - Hugging Face",
+      "url": "https://d6108366.hf-mirror.com/models?other=agentic-ptb",
+      "snippet": "Explore machine learning models. 283 Base only Inference AvailableInference Edit filters Sort: Trending Active filters: agentic-ptb Clear all"
+    },
+    {
+      "title": "Agentic SFT Dataset Overview - emergentmind.com",
+      "url": "https://www.emergentmind.com/topics/agentic-sft-dataset",
+      "snippet": "Explore the Agentic SFT Dataset, a multi-turn fine-tuning corpus capturing tool-use, reasoning, and identity features for robust agentic AI training."
+    },
+    {
+      "title": "Transcribe Brazilian Portuguese with distil-whisper-large-v3-ptbr | AI ...",
+      "url": "https://aiindigo.com/tutorials/getting-started-with-distil-whisper-large-v3-ptbr-high-accuracy-brazilian-portug",
+      "snippet": "Step-by-step guide to using the distil-whisper-large-v3-ptbr ASR model for fast, accurate Brazilian Portuguese speech-to-text transcription."
+    }
+  ]
+}

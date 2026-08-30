@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "fengjchen/perceiver-multitask-practice",
+  "slug": "fengjchen-perceiver-multitask-practice",
+  "author": "fengjchen",
+  "url": "https://huggingface.co/fengjchen/perceiver-multitask-practice",
+  "created_at": "2026-08-30T15:28:28.000Z",
+  "updated_at": "2026-08-30T15:28:37.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "perceiver",
+    "pytorch",
+    "multitask",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 24832,
+  "parameters_human": "24832",
+  "storage_bytes": 99808,
+  "storage_human": "99808 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "JacobNguyen/perceiver-multitask · Hugging Face",
+      "url": "https://huggingface.co/JacobNguyen/perceiver-multitask",
+      "snippet": "Perceiver for Multitask Overview This is an experimental Perceiver codebase for Multitask. It keeps the large setup intentionally manageable so architecture changes can be inspected before a full training run."
+    },
+    {
+      "title": "fengjchen (Feng Chen) - Hugging Face",
+      "url": "https://huggingface.co/fengjchen/models",
+      "snippet": "User profile of Feng Chen on Hugging Face"
+    },
+    {
+      "title": "deepmind-research/perceiver/README.md at master · google ... - GitHub",
+      "url": "https://github.com/google-deepmind/deepmind-research/blob/master/perceiver/README.md",
+      "snippet": "Perceiver [1] is a general architecture that works on many kinds of data, including images, video, audio, 3D point clouds, language and symbolic inputs, multimodal combinations, etc. Perceivers can handle new types of data with only minimal modifications. Perceivers process inputs using domain-agnostic Transformer-style attention. Unlike Transformers, Perceivers first map inputs to a small ..."
+    },
+    {
+      "title": "Learning-Deep-Learning-papers/paper_notes/perceiver.md at master ...",
+      "url": "https://github.com/zhilyzhang/Learning-Deep-Learning-papers/blob/master/paper_notes/perceiver.md",
+      "snippet": "The paper proposes a general transformer architecture to model multimodal inputs such as image, video, audio, point cloud, etc. Transformers have been rapidly percolating into perception. Transformer has the quadratic scaling problem and thus cannot handle very large inputs. It still focuses on classification task, but it builds a foundation for other type of higher level tasks such as object ..."
+    },
+    {
+      "title": "[2103.03206] Perceiver: General Perception with Iterative Attention",
+      "url": "https://arxiv.org/abs/2103.03206",
+      "snippet": "Biological systems perceive the world by simultaneously processing high-dimensional inputs from modalities as diverse as vision, audition, touch, proprioception, etc. The perception models used in deep learning on the other hand are designed for individual modalities, often relying on domain-specific assumptions such as the local grid structures exploited by virtually all existing vision ..."
+    }
+  ]
+}

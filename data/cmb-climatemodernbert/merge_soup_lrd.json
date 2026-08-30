@@ -1,0 +1,78 @@
+{
+  "schema": 1,
+  "id": "CMB-ClimateModernBERT/Merge_Soup_LRD",
+  "slug": "cmb-climatemodernbert-merge_soup_lrd",
+  "author": "CMB-ClimateModernBERT",
+  "url": "https://huggingface.co/CMB-ClimateModernBERT/Merge_Soup_LRD",
+  "created_at": "2026-08-30T15:42:15.000Z",
+  "updated_at": "2026-08-30T15:42:25.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "fill-mask",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "modernbert",
+    "fill-mask",
+    "climate",
+    "domain-adaptation",
+    "continued-pretraining",
+    "merge",
+    "mergekit",
+    "academic-text",
+    "web-text",
+    "synthetic-data",
+    "en",
+    "base_model:answerdotai/ModernBERT-base",
+    "base_model:finetune:answerdotai/ModernBERT-base",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 149655232,
+  "parameters_human": "149.7M",
+  "storage_bytes": 299324680,
+  "storage_human": "299 MB",
+  "base_model": "answerdotai/ModernBERT-base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ClimateModernBERT - a sraj Collection - Hugging Face",
+      "url": "https://huggingface.co/collections/sraj/climatemodernbert",
+      "snippet": "ClimateModernBERT updated about 1 month ago Final Models from the paper - ClimateModernBERT Upvote - Sort: Collection"
+    },
+    {
+      "title": "CMB all - a sraj Collection - Hugging Face",
+      "url": "https://huggingface.co/collections/sraj/cmb-all",
+      "snippet": "sraj &#x27;s Collections ClimateModernBERT CMB all ModernBERT Checkpoints from pretraining phases"
+    },
+    {
+      "title": "GitHub - arcee-ai/mergekit: Tools for merging pretrained large language ...",
+      "url": "https://github.com/arcee-ai/mergekit",
+      "snippet": "Model merging is a powerful technique that allows combining the strengths of different models without the computational overhead of ensembling or the need for additional training. By operating directly in the weight space of models, merging can: Combine multiple specialized models into a single versatile model Transfer capabilities between models without access to training data Find optimal ..."
+    },
+    {
+      "title": "GitHub - SakanaAI/evolutionary-model-merge: Official repository of ...",
+      "url": "https://github.com/SakanaAI/evolutionary-model-merge/",
+      "snippet": "🐟 Evolutionary Optimization of Model Merging Recipes 🤗 Models | 👀 Demo | 📚 Paper | 📝 Blog | 🐦 Twitter This repository serves as a central hub for SakanaAI&#x27;s Evolutionary Model Merge series, showcasing its releases and resources. It includes models and code for reproducing the evaluation presented in our paper."
+    },
+    {
+      "title": "Model Merge Simple - ComfyUI Wiki",
+      "url": "https://comfyui-wiki.com/en/comfyui-nodes/advanced/model-merging/model-merge-simple",
+      "snippet": "Model Merge Simple Workflow Example For a workflow example of this node, refer to: Model Merging Workflow Example Load the following image into ComfyUI, you can view the complete workflow, and adjust the ratio value to view different fusion effects."
+    }
+  ]
+}

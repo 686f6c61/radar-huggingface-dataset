@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "SionJang/lunarlander-v3-double-dqn",
+  "slug": "sionjang-lunarlander-v3-double-dqn",
+  "author": "SionJang",
+  "url": "https://huggingface.co/SionJang/lunarlander-v3-double-dqn",
+  "created_at": "2026-08-30T13:21:56.000Z",
+  "updated_at": "2026-08-30T13:27:39.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "reinforcement-learning",
+  "library": "pytorch",
+  "languages": [],
+  "tags": [
+    "pytorch",
+    "LunarLander-v3",
+    "deep-reinforcement-learning",
+    "reinforcement-learning",
+    "dqn",
+    "double-dqn",
+    "q-learning",
+    "gymnasium",
+    "license:mit",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 264525,
+  "storage_human": "264525 B",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "hwihwalab/lunarlander-v3-d3qn · Hugging Face",
+      "url": "https://huggingface.co/hwihwalab/lunarlander-v3-d3qn",
+      "snippet": "hwihwalab / lunarlander-v3-d3qn like 0 Reinforcement Learning PyTorch gymnasium dqn d3qn dueling-dqn double-dqn deep-q-network lunarlander-v3 aerospace Eval Results (legacy) License:mit Model card FilesFiles and versions xet Community Copy to bucket new 🚀 LunarLander-v3 D3QN // Mission Control Deck"
+    },
+    {
+      "title": "allen73/lunarlander-v3-dqn-physical-ai · Hugging Face",
+      "url": "https://huggingface.co/allen73/lunarlander-v3-dqn-physical-ai",
+      "snippet": "🛸 LunarLander-v3 Double Dueling DQN (Physical AI) This repository contains a trained Double Dueling Deep Q-Network (DQN) model designed for flawless, stylish landings in the Gymnasium LunarLander-v3 environment."
+    },
+    {
+      "title": "GitHub - PavDrg/D3QN_Lunar_lander: Dueling Double DQN for LunarLander-v3",
+      "url": "https://github.com/PavDrg/D3QN_Lunar_lander",
+      "snippet": "LunarLander-v3 Resolution via Dueling Double DQN (PyTorch) This repository contains a clean, modular PyTorch implementation of a Dueling Double Deep Q-Network (D3QN) trained to master the LunarLander-v3 environment from Gymnasium."
+    },
+    {
+      "title": "GitHub - wtcherr/lunar-lander-dqn: DQN Solution for LunarLander-v3 ...",
+      "url": "https://github.com/wtcherr/lunar-lander-dqn",
+      "snippet": "DQN Solution for LunarLander-v3 (Gymnasium) | Reinforcement learning agent using Deep Q-Network (DQN) to land a lunar module safely. Implements experience replay, target networks, and training visualization."
+    },
+    {
+      "title": "[Lunar Lander] Deep Q-Network (DQN).ipynb - Colab",
+      "url": "https://colab.research.google.com/github/kuds/rl-lunar-lander/blob/main/%5BLunar%20Lander%5D%20Deep%20Q-Network%20(DQN).ipynb",
+      "snippet": "You may like to implement some improvements such as prioritized experience replay, Double DQN, or Dueling DQN! Write a blog post explaining the intuition behind the DQN algorithm and demonstrating how to use it to solve an RL environment of your choosing."
+    }
+  ]
+}

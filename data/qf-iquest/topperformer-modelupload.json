@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "qf-iquest/TopPerformer-ModelUpload",
+  "slug": "qf-iquest-topperformer-modelupload",
+  "author": "qf-iquest",
+  "url": "https://huggingface.co/qf-iquest/TopPerformer-ModelUpload",
+  "created_at": "2026-08-30T18:33:11.000Z",
+  "updated_at": "2026-08-30T18:33:42.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "feature-extraction",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "pytorch",
+    "bert",
+    "feature-extraction",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 23,
+  "storage_human": "23 B",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "qf-iquest/TopPerformer-ModelUpload · Hugging Face",
+      "url": "https://huggingface.co/qf-iquest/TopPerformer-ModelUpload",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "qf-iquest/TopPerformer-ModelUpload at main - Hugging Face",
+      "url": "https://huggingface.co/qf-iquest/TopPerformer-ModelUpload/tree/main",
+      "snippet": "Notebooks main TopPerformer-ModelUpload 9.14 kB Ctrl+K Ctrl+K 1 contributor History:2 commits qf-iquest Upload best checkpoint (step_1000) with evaluation scores 9e761bb verified3 days ago .gitattributes Safe 1.52 kBinitial commit3 days ago README.md Safe 7.53 kBUpload best checkpoint (step_1000) with evaluation scores3 days ago config.json Safe 66 BytesUpload best checkpoint (step_1000) with ..."
+    },
+    {
+      "title": "LLM Leaderboard & AI Model Benchmarks — August 2026",
+      "url": "https://benchlm.ai/",
+      "snippet": "Compare 406 AI models across 408 benchmarks, with 228 ranked scores, source evidence, API pricing, context windows, runtime, and head-to-head pages."
+    },
+    {
+      "title": "GGUF Model Discovery - Browse & Download AI Models",
+      "url": "https://local-ai-zone.github.io/",
+      "snippet": "Discover and download GGUF format AI models. Browse and direct download thousands of quantized AI models with detailed information, download counts, and direct links."
+    },
+    {
+      "title": "Best Self-Hosted LLM Leaderboard 2026 | Open-Weight Model Rankings for ...",
+      "url": "https://onyx.app/self-hosted-llm-leaderboard",
+      "snippet": "The definitive self-hosted LLM leaderboard — ranking the best open-weight models for enterprise self-hosting across quality, speed, hardware requirements, and cost. Compare Llama, DeepSeek, Qwen, Mistral, and more."
+    }
+  ]
+}

@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "eh-cosmos-ai/policy_pick_and_place_v2",
+  "slug": "eh-cosmos-ai-policy_pick_and_place_v2",
+  "author": "eh-cosmos-ai",
+  "url": "https://huggingface.co/eh-cosmos-ai/policy_pick_and_place_v2",
+  "created_at": "2026-08-30T11:24:32.000Z",
+  "updated_at": "2026-08-30T11:25:01.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "robotics",
+    "act",
+    "dataset:eh-cosmos-ai/dataset_pick_and_place_v2",
+    "arxiv:2304.13705",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 51668614,
+  "parameters_human": "51.7M",
+  "storage_bytes": 206707288,
+  "storage_human": "207 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "[2601.16163] Cosmos Policy: Fine-Tuning Video Models for Visuomotor ...",
+      "url": "https://arxiv.org/abs/2601.16163",
+      "snippet": "Recent video generation models demonstrate remarkable ability to capture complex physical interactions and scene evolution over time. To leverage their spatiotemporal priors, robotics works have adapted video models for policy learning but introduce complexity by requiring multiple stages of post-training and new architectural components for action generation. In this work, we introduce Cosmos ..."
+    },
+    {
+      "title": "ETHRC/pick_and_place_v2 · Datasets at Hugging Face",
+      "url": "https://huggingface.co/datasets/ETHRC/pick_and_place_v2",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GitHub - Wesker-ai/cosmos-policy: mycosmos · GitHub",
+      "url": "https://github.com/Wesker-ai/cosmos-policy",
+      "snippet": "System Requirements Inference with base Cosmos Policy only (i.e., no model-based planning):"
+    },
+    {
+      "title": "Cosmos 3 — Cosmos Lab - research.nvidia.com",
+      "url": "https://research.nvidia.com/labs/cosmos-lab/cosmos3/",
+      "snippet": "Cosmos 3 connects understanding, generation, simulation, and action through a shared omnimodal world model that moves fluidly across text, images, video, audio, and actions."
+    },
+    {
+      "title": "GitHub - NVlabs/cosmos-policy: Cosmos Policy · GitHub",
+      "url": "https://github.com/NVlabs/cosmos-policy",
+      "snippet": "1 GPU with 6.0 GB VRAM for ALOHA robot tasks Inference with Cosmos Policy + model-based planning (best-of-N search) on ALOHA robot tasks: Minimum (serial inference): 1 GPU with 10.0 GB VRAM Recommended (parallel inference): N GPUs with 10.0 GB VRAM each Training: Generally, it is recommended to have at least 1 node of 8 80GB GPUs."
+    }
+  ]
+}

@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "aakanshajagga/lunarsync-geoprior-v1-1",
+  "slug": "aakanshajagga-lunarsync-geoprior-v1-1",
+  "author": "aakanshajagga",
+  "url": "https://huggingface.co/aakanshajagga/lunarsync-geoprior-v1-1",
+  "created_at": "2026-08-30T11:19:16.000Z",
+  "updated_at": "2026-08-30T11:19:19.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "lunarsync",
+    "keypoint-matching",
+    "remote-sensing",
+    "lunar",
+    "image-matching",
+    "chandrayaan-2",
+    "isro",
+    "custom-code",
+    "custom_code",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 16713426,
+  "parameters_human": "16.7M",
+  "storage_bytes": 66940906,
+  "storage_human": "67 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "aakanshajagga/lunarsync · Hugging Face",
+      "url": "https://huggingface.co/aakanshajagga/lunarsync",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GitHub - earthai-tech/geoprior-v3: GeoPrior-v3: Physics-guided AI for ...",
+      "url": "https://github.com/earthai-tech/geoprior-v3/tree/main",
+      "snippet": "GeoPrior-v3 is an open, reproducible research codebase for physics-guided machine learning in geohazard forecasting and risk assessment. Today, it focuses on land subsidence via GeoPriorSubsNet; next, it expands toward landslides and broader geohazard regimes."
+    },
+    {
+      "title": "GitHub - earthai-tech/geoprior-v3: GeoPrior-v3: Physics-guided AI for ...",
+      "url": "https://github.com/earthai-tech/geoprior-v3",
+      "snippet": "Physics-guided AI for Geohazards GeoPrior-v3 is an open, reproducible research codebase for physics-guided machine learning in geohazard forecasting and risk assessment. Today, it focuses on land subsidence via GeoPriorSubsNet; next, it expands toward landslides and broader geohazard regimes."
+    },
+    {
+      "title": "GeoPrior-v3 — GeoPrior v3.2.0rc2",
+      "url": "https://geoprior-v3.readthedocs.io/en/stable/index.html",
+      "snippet": "GeoPrior-v3 # Physics-guided AI for geohazards and risk analytics. GeoPrior-v3 is a scientific Python framework for building physics-guided models for geohazard analysis, forecasting, and risk-oriented interpretation. The current generation focuses on land subsidence through GeoPriorSubsNet v3, while the broader roadmap extends toward landslides and other geohazard modeling tasks. The project ..."
+    },
+    {
+      "title": "geoprior-v3 · PyPI",
+      "url": "https://pypi.org/project/geoprior-v3/",
+      "snippet": "Physics-guided AI for Geohazards GeoPrior-v3 is an open, reproducible research codebase for physics-guided machine learning in geohazard forecasting and risk assessment. Today, it focuses on land subsidence via GeoPriorSubsNet; next, it expands toward landslides and broader geohazard regimes."
+    }
+  ]
+}

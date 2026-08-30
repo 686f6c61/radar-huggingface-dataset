@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "Slichi/benyjr",
+  "slug": "slichi-benyjr-2",
+  "author": "Slichi",
+  "url": "https://huggingface.co/Slichi/benyjr",
+  "created_at": "2026-08-30T13:01:38.000Z",
+  "updated_at": "2026-08-30T13:02:22.000Z",
+  "license": "openrail",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:openrail",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 68890868,
+  "storage_human": "69 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Slichi/BenyJr · Hugging Face",
+      "url": "https://huggingface.co/Slichi/BenyJr",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Slichi/slichi · Hugging Face",
+      "url": "https://huggingface.co/Slichi/slichi",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Benyjr (Singer) (Spain) [RVC v2] [2 Epochs] AI Voice Model",
+      "url": "https://voice-models.com/model/95o",
+      "snippet": "Benyjr (Singer) (Spain) [RVC v2] [2 Epochs] AI voice model for RVC voice conversion. View details, samples, source status, and run this voice model in EasyAIVoice."
+    },
+    {
+      "title": "Benyjr (Singer) (Spain) [RVC v2] [2 Epochs] AI Voice Model",
+      "url": "https://new.voice-models.com/model/95o",
+      "snippet": "Sample deck Pitch previews Listen across generated pitch samples, then Run. Hold Ctrl or Cmd to select multiple pitches."
+    },
+    {
+      "title": "CivArchive (CivitAI Archive) - AI Model Archive",
+      "url": "https://civitaiarchive.com/",
+      "snippet": "Browse and discover AI models from CivitAI, TensorArt, and SeaArt. Community-driven archive preserving access to AI resources."
+    }
+  ]
+}

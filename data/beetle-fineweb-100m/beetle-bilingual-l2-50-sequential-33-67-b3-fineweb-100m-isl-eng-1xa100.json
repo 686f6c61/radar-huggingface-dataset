@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "Beetle-FineWeb-100M/beetle-bilingual-l2-50-sequential-33-67-b3-fineweb-100m-isl-eng-1xa100",
+  "slug": "beetle-fineweb-100m-beetle-bilingual-l2-50-sequential-33-67-b3-fineweb-100m-isl-eng-1xa100",
+  "author": "Beetle-FineWeb-100M",
+  "url": "https://huggingface.co/Beetle-FineWeb-100M/beetle-bilingual-l2-50-sequential-33-67-b3-fineweb-100m-isl-eng-1xa100",
+  "created_at": "2026-06-30T23:11:25.000Z",
+  "updated_at": "2026-08-30T18:36:22.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "pico_decoder",
+    "text-generation",
+    "custom_code",
+    "arxiv:1910.09700",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 4,
+  "trending_score": 0,
+  "parameters": 193804032,
+  "parameters_human": "193.8M",
+  "storage_bytes": 88380209002,
+  "storage_human": "88.4 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Beetle-FineWeb-100M/beetle-bilingual-l2-50-sequential-33-67-b3-fineweb ...",
+      "url": "https://huggingface.co/Beetle-FineWeb-100M/beetle-bilingual-l2-50-sequential-33-67-b3-fineweb-100m-est-eng-1xa100",
+      "snippet": "Beetle-FineWeb-100M / beetle-bilingual-l2-50-sequential-33-67-b3-fineweb-100m-est-eng-1xa100 like 0 Follow Beetle-FineWeb-100M 1 Text Generation Transformers Safetensors pico_decoder custom_code arxiv:1910.09700 Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "Beetle-FineWeb-100M/beetle-bilingual-l2-50-simultaneous-b2-fineweb-100m ...",
+      "url": "https://huggingface.co/Beetle-FineWeb-100M/beetle-bilingual-l2-50-simultaneous-b2-fineweb-100m-heb-eng",
+      "snippet": "Beetle-FineWeb-100M / beetle-bilingual-l2-50-simultaneous-b2-fineweb-100m-heb-eng like 0 Follow Beetle-FineWeb-100M 1 Text Generation Transformers Safetensors pico_decoder custom_code arxiv:1910.09700 Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "Beetle Bilingual L2 50 Simultaneous B2 Fineweb 100m Kor Eng 1xa100",
+      "url": "https://free2aitools.com/model/beetle-fineweb-100m/beetle-bilingual-l2-50-simultaneous-b2-fineweb-100m-kor-eng-1xa100",
+      "snippet": "Deep dive into Beetle Bilingual L2 50 Simultaneous B2 Fineweb 100m Kor Eng 1xa100."
+    },
+    {
+      "title": "Beetle Bilingual L2 50 Sequential 33 67 B3 Fineweb 100m Ell Eng 1xa100",
+      "url": "https://free2aitools.com/model/beetle-fineweb-100m/beetle-bilingual-l2-50-sequential-33-67-b3-fineweb-100m-ell-eng-1xa100",
+      "snippet": "FNI V2.0 for Beetle Bilingual L2 50 Sequential 33 67 B3 Fineweb 100m Ell Eng 1xa100: Authority (A:0), Popularity (P:0), Recency (R:99), Quality (Q:65). Semantic (S) is a query-time baseline scored live at search."
+    },
+    {
+      "title": "Damacol/beetle-fineweb-beetle-bilingual-l2-50-simultaneous-b2 ... - GitHub",
+      "url": "https://github.com/Damacol/beetle-fineweb-beetle-bilingual-l2-50-simultaneous-b2-fineweb-nld-eng",
+      "snippet": "Beetle-FineWeb/beetle-bilingual-l2-50-simultaneous-b2-fineweb-nld-eng - Private, Uncensored AI for Real Creators and Devs Private inference with {MODEL}. Zero logs, full prompt freedom, and seamless Venice.ai integration for real creators."
+    }
+  ]
+}

@@ -1,0 +1,79 @@
+{
+  "schema": 1,
+  "id": "stefanprodan/Apodex-1.1-mini-oQ4e-mtp",
+  "slug": "stefanprodan-apodex-1-1-mini-oq4e-mtp",
+  "author": "stefanprodan",
+  "url": "https://huggingface.co/stefanprodan/Apodex-1.1-mini-oQ4e-mtp",
+  "created_at": "2026-08-30T18:19:07.000Z",
+  "updated_at": "2026-08-30T18:55:47.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "mlx",
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "qwen3_5_moe",
+    "oq",
+    "quantized",
+    "agent",
+    "apodex",
+    "text-generation",
+    "conversational",
+    "en",
+    "zh",
+    "base_model:apodex/Apodex-1.1-mini",
+    "base_model:quantized:apodex/Apodex-1.1-mini",
+    "license:apache-2.0",
+    "4-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 6190691248,
+  "parameters_human": "6.19B",
+  "storage_bytes": 21625683001,
+  "storage_human": "21.6 GB",
+  "base_model": "apodex/Apodex-1.1-mini",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Apodex-1.1-mini - Hugging Face",
+      "url": "https://huggingface.co/apodex/Apodex-1.1-mini",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "felkf/Apodex-1.1-mini-oQ6e-fp16-mtp · Hugging Face",
+      "url": "https://huggingface.co/felkf/Apodex-1.1-mini-oQ6e-fp16-mtp",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Apodex 1.1: Scaling Agentic Intelligence for Complex Work",
+      "url": "https://arxiv.org/abs/2608.23283",
+      "snippet": "Across complex professional work, finance, scientific research, mathematics, coding, and search, Apodex 1.1 reaches the leading performance band despite using a substantially smaller model than many frontier systems. The 35B-parameter Apodex 1.1 Mini further retains strong working capability in a locally deployable form."
+    },
+    {
+      "title": "Apodex | Self-Evolving Heavy-Duty Solver",
+      "url": "https://www.apodex.com/",
+      "snippet": "To research, solve, and discover at the frontier requires more than model capacity — it requires rigorous reasoning, each step verified. Apodex is an AI system designed for complex and demanding research tasks. It structurally splits the reasoning solver from the verifier to deliver grounded, auditable intelligence across three distinct capability tiers."
+    },
+    {
+      "title": "Apodex team releases Apodex 1.1 model family and FrontierAgent harness ...",
+      "url": "https://korshunov.ai/en/article/21262-apodex-team-releases-apodex-1-1-model-family-and-frontieragent-harness/",
+      "snippet": "The Apodex team has released Apodex 1.1, a new open model family designed for agentic intelligence tasks such as reasoning, search, file handling, code execution, and multi-agent coordination."
+    }
+  ]
+}

@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "aipracticecafe/dual-stream-dit-spatial-rope",
+  "slug": "aipracticecafe-dual-stream-dit-spatial-rope",
+  "author": "aipracticecafe",
+  "url": "https://huggingface.co/aipracticecafe/dual-stream-dit-spatial-rope",
+  "created_at": "2026-08-30T19:11:02.000Z",
+  "updated_at": "2026-08-30T19:11:37.000Z",
+  "license": "openrail++",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:openrail++",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 2535526401,
+  "storage_human": "2.5 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Dual-Stream DiT Architecture - emergentmind.com",
+      "url": "https://www.emergentmind.com/topics/dual-stream-dit-architecture",
+      "snippet": "Dual-Stream DiT architectures integrate parallel transformer streams for modality-aware, multimodal generation and discriminative modeling with parameter efficiency."
+    },
+    {
+      "title": "aipracticecafe (aipracticecafe) - Hugging Face",
+      "url": "https://huggingface.co/aipracticecafe/datasets",
+      "snippet": "User profile of aipracticecafe on Hugging Face"
+    },
+    {
+      "title": "aipracticecafe/toy-diffusion · Hugging Face",
+      "url": "https://huggingface.co/aipracticecafe/toy-diffusion",
+      "snippet": "However, following the dense finetuning recipe (_fined), the model recovers rapidly, achieving an FID of 3.96 by epoch 1000. Dual Stream is favored: Despite the good FID scores exhibited by the Single stream architecture, during the finetuning stage only the dual stream architecture is able to recover the high performance."
+    },
+    {
+      "title": "Model Architecture Overview | black-forest-labs/flux2 | DeepWiki",
+      "url": "https://deepwiki.com/black-forest-labs/flux2/3.1-model-architecture-overview",
+      "snippet": "The Flux2 model implements a Diffusion Transformer (DiT) with a dual-stream architecture that processes image and text modalities separately before fusing them."
+    },
+    {
+      "title": "MMFace-DiT: A Dual-Stream Diffusion Transformer for High-Fidelity ...",
+      "url": "https://arxiv.org/abs/2603.29029",
+      "snippet": "We introduce MMFace-DiT, a unified dual-stream diffusion transformer engineered for synergistic multimodal face synthesis. Its core novelty lies in a dual-stream transformer block that processes spatial (mask/sketch) and semantic (text) tokens in parallel, deeply fusing them through a shared Rotary Position-Embedded (RoPE) Attention mechanism."
+    }
+  ]
+}

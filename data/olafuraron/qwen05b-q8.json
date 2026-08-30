@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "olafuraron/qwen05b-q8",
+  "slug": "olafuraron-qwen05b-q8",
+  "author": "olafuraron",
+  "url": "https://huggingface.co/olafuraron/qwen05b-q8",
+  "created_at": "2026-08-30T15:36:16.000Z",
+  "updated_at": "2026-08-30T15:37:18.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 501164207,
+  "storage_human": "501 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Best Qwen Models Ranked: Which to Run Locally (Mid-2026)",
+      "url": "https://insiderllm.com/guides/qwen-models-guide/",
+      "snippet": "📚 More on this topic: Qwen 3.5 Local Guide · Qwen 3.5 9B Setup Guide · Llama 3 Guide · DeepSeek Models Guide · Best Models for Coding · VRAM Requirements While everyone was talking about Llama and DeepSeek, Alibaba quietly built the best open-source model family in the world. Qwen 3 beats Llama 3 at every comparable size. Qwen 2.5 Coder 32B matches GPT-4o on coding benchmarks. Qwen-VL ..."
+    },
+    {
+      "title": "featherless-ai-quants/liangshuxin-qwen05b_ourmodel-GGUF · Hugging Face",
+      "url": "https://huggingface.co/featherless-ai-quants/liangshuxin-qwen05b_ourmodel-GGUF",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Qwen/Qwen3-8B · Hugging Face",
+      "url": "https://huggingface.co/Qwen/Qwen3-8B",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Qwen Models for Local AI - Ollama Guide | ModelFit",
+      "url": "https://modelfit.io/models/qwen/",
+      "snippet": "Qwen Models: Local AI on Any Device Qwen by Alibaba Cloud offers the most versatile range of open-weight models available today. With variants from 0.5B to 235B parameters, there is a Qwen model for every device, from iPhones with 6GB RAM to Mac Studios with 192GB. Qwen consistently scores among the top models for coding, chat, and multilingual tasks."
+    },
+    {
+      "title": "Qwen 3.6 Complete Guide: 27B Dense, 35B-A3B MoE, and Which to Use",
+      "url": "https://insiderllm.com/guides/qwen-3-6-local-ai-guide/",
+      "snippet": "Qwen 3.6 landed in two open-weight flavors: 27B dense and 35B-A3B MoE. Benchmarks, hardware fit, and which variant to run on your GPU."
+    }
+  ]
+}

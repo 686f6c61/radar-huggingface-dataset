@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "PulpCut/FastH3-VSA-INT8-ConvRot",
+  "slug": "pulpcut-fasth3-vsa-int8-convrot",
+  "author": "PulpCut",
+  "url": "https://huggingface.co/PulpCut/FastH3-VSA-INT8-ConvRot",
+  "created_at": "2026-08-30T16:44:47.000Z",
+  "updated_at": "2026-08-30T17:19:13.000Z",
+  "license": "minimax-h3-community",
+  "license_family": "unknown",
+  "pipeline_tag": "text-to-video",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "text-to-video",
+    "audio",
+    "apple-silicon",
+    "metal",
+    "int8",
+    "fasth3",
+    "vsa",
+    "base_model:FastVideo/FastVideo-FastH3-4-step-Preview-v1-VSA-DataFree",
+    "base_model:finetune:FastVideo/FastVideo-FastH3-4-step-Preview-v1-VSA-DataFree",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 22966486018,
+  "storage_human": "23.0 GB",
+  "base_model": "FastVideo/FastVideo-FastH3-4-step-Preview-v1-VSA-DataFree",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "PulpCut/MiniMax-H3-INT8-ConvRot · Hugging Face",
+      "url": "https://huggingface.co/PulpCut/MiniMax-H3-INT8-ConvRot",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Fine-tuned Models for MiniMaxAI/MiniMax-H3 - Hugging Face",
+      "url": "https://huggingface.co/models?other=base_model:finetune:MiniMaxAI/MiniMax-H3",
+      "snippet": "Explore machine learning models. FastVideo/FastVideo-FastH3-4-step-Preview-v1-VSA-Synthetic-Step1300"
+    },
+    {
+      "title": "FastVideo FastH3 V1: Open-Weight 4-Step Sparse Distilled Minimax H3 for ...",
+      "url": "https://haoailab.com/blogs/fasth3-preview/",
+      "snippet": "The validation gallery and VSA performance rows below use this checkpoint. The recommended checkpoint and its LoRA require FastVideo&#x27;s Video Sparse Attention (VSA-H3) backend and kernel to achieve the reported speed and quality. Dense attention is not a drop-in substitute. All Preview v1 checkpoints currently support T2VA only. H3 uses the base transformer for both T2VA and first/last-frame ..."
+    },
+    {
+      "title": "GitHub - PixelML/FastH3-CMP-170HX: FastH3 4-step text-to-audio-video ...",
+      "url": "https://github.com/PixelML/FastH3-CMP-170HX",
+      "snippet": "FastH3 4-step text-to-audio-video (FastVideo BF16 baseline + Kijai INT8 convrot experimental) on 4x CMP 170HX (SM80): compatibility, static memory fit, benchmark harness, and reproducible evidence ..."
+    },
+    {
+      "title": "GitHub - hao-ai-lab/FastVideo: A unified inference and post-training ...",
+      "url": "https://github.com/hao-ai-lab/FastVideo",
+      "snippet": "2026/08/23: FastH3 Preview v0.2 is a 4-step DMD2-distilled MiniMax-H3 checkpoint that generates synchronized video and audio. Run the verified basic FastH3 example, see the inference guide, or have a coding agent install FastVideo with the agent setup prompt."
+    }
+  ]
+}

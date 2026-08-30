@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "A1rboy/model",
+  "slug": "a1rboy-model",
+  "author": "A1rboy",
+  "url": "https://huggingface.co/A1rboy/model",
+  "created_at": "2026-08-30T16:48:45.000Z",
+  "updated_at": "2026-08-30T17:09:32.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen2",
+    "text-generation",
+    "text-generation-inference",
+    "unsloth",
+    "conversational",
+    "en",
+    "base_model:unsloth/DeepSeek-R1-Distill-Qwen-7B-unsloth-bnb-4bit",
+    "base_model:finetune:unsloth/DeepSeek-R1-Distill-Qwen-7B-unsloth-bnb-4bit",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 7615616512,
+  "parameters_human": "7.62B",
+  "storage_bytes": 15242694642,
+  "storage_human": "15.2 GB",
+  "base_model": "unsloth/DeepSeek-R1-Distill-Qwen-7B-unsloth-bnb-4bit",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "All 400 AI Models Compared — LLM Directory 2026 | BenchLM.ai",
+      "url": "https://benchlm.ai/models",
+      "snippet": "Browse and compare 400 large language models across 296 model families from OpenAI, Anthropic, Google, Meta, DeepSeek, and more."
+    },
+    {
+      "title": "Free AI 3D Model Generator - MeshGPT",
+      "url": "https://meshgpt.io/",
+      "snippet": "Create stunning 3D models from text or images instantly with our free AI 3d model generator. Transform your ideas into production-ready 3D assets with MeshGPT."
+    },
+    {
+      "title": "AI Boyfriend - Create, Chat & Fall in Love with Your AI BF | MyDreamBoy",
+      "url": "https://www.mydreamboy.com/ai-boyfriend",
+      "snippet": "Meet your AI boyfriend: create a custom AI BF, chat with him anytime, and bring him to life with AI images and video. Free to start - no credit card needed."
+    },
+    {
+      "title": "Modly — Free Local AI 3D Model Generator | Open Source, Offline",
+      "url": "https://modly3d.app/",
+      "snippet": "Turn any photo or text prompt into a 3D model with local AI. Export as GLB, OBJ, STL or PLY. Free, open source, runs entirely on your GPU — no cloud, no account."
+    },
+    {
+      "title": "JustModels.ai | Create & Train Custom AI Models (No Code)",
+      "url": "https://www.justmodels.ai/",
+      "snippet": "JustModels.ai is the only no-code platform that combines custom LoRA model training, text-to-image, text-to-video, image-to-video, and ReelsRecreator in one place."
+    }
+  ]
+}

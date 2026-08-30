@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "LSW142857/OPSD",
+  "slug": "lsw142857-opsd",
+  "author": "LSW142857",
+  "url": "https://huggingface.co/LSW142857/OPSD",
+  "created_at": "2026-08-30T18:33:41.000Z",
+  "updated_at": "2026-08-30T18:33:42.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "opsd",
+    "qwen3.5",
+    "model-registry",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "OPSD-PI-Qwen3.5-9B-Medium-Trailing-1024-A6000-Merged",
+      "url": "https://huggingface.co/LSW142857/OPSD-PI-Qwen3.5-9B-Medium-Trailing-1024-A6000-Merged",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "LSW142857/Qwen3.5-9B-OPSD-PI-Strong-ckpt15 · Hugging Face",
+      "url": "https://huggingface.co/LSW142857/Qwen3.5-9B-OPSD-PI-Strong-ckpt15",
+      "snippet": "Qwen3.5-9B OPSD-PI Strong checkpoint 15 This is the self-contained Hugging Face model obtained by merging the final Strong-PI OPSD LoRA adapter (checkpoint 15) into Qwen/Qwen3.5-9B with alpha / rank = 128 / 64 = 2.0. The run used stage-adaptive privileged information over 512 coding-agent trajectories."
+    },
+    {
+      "title": "OPSD-PI-Qwen3.5-9B-Medium-Trailing-1024-A6000-Merged",
+      "url": "https://friendli.ai/models/LSW142857/OPSD-PI-Qwen3.5-9B-Medium-Trailing-1024-A6000-Merged",
+      "snippet": "Deploy OPSD-PI-Qwen3.5-9B-Medium-Trailing-1024-A6000-Merged with low-latency inference on FriendliAI. Get scalable API serving, high throughput, and production-grade reliability for AI agents."
+    },
+    {
+      "title": "Qwen3.5-9B-OPSD-iter32 API & Inference Endpoint | FriendliAI",
+      "url": "https://friendli.ai/models/LSW142857/Qwen3.5-9B-OPSD-iter32",
+      "snippet": "The original LoRA adapter remains available separately at LSW142857/OPSD-Qwen3.5-9B-LoRA-iter32. This repository is the self-contained evaluation artifact; it does not contain optimizer state or training data."
+    },
+    {
+      "title": "GitHub - siyan-zhao/OPSD",
+      "url": "https://github.com/siyan-zhao/OPSD",
+      "snippet": "On-Policy Self-Distillation (OPSD) trains a single model to act as both student and teacher by conditioning on different contexts — the student sees only the problem, while the teacher additionally sees the ground-truth solution — and performs token-level distribution matching along the student&#x27;s own on-policy trajectories."
+    }
+  ]
+}

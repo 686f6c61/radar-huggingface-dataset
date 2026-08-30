@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "ZacharyEvans/classification",
+  "slug": "zacharyevans-classification",
+  "author": "ZacharyEvans",
+  "url": "https://huggingface.co/ZacharyEvans/classification",
+  "created_at": "2026-08-30T19:03:56.000Z",
+  "updated_at": "2026-08-30T19:04:04.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "beit",
+    "pytorch",
+    "classification",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 24832,
+  "parameters_human": "24832",
+  "storage_bytes": 99808,
+  "storage_human": "99808 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ZacharyEvans (Zachary Evans) - Hugging Face",
+      "url": "https://huggingface.co/ZacharyEvans/models",
+      "snippet": "probably coding right now"
+    },
+    {
+      "title": "Zachary Evans - Machine Learning Developer | BYU ACME Graduate | AI and ...",
+      "url": "https://www.linkedin.com/in/evans-zachary-m",
+      "snippet": "Machine Learning Developer | BYU ACME Graduate | AI and Machine Learning Research · I love applying machine learning and deep learning to programs. Over the years I have developed neural networks ..."
+    },
+    {
+      "title": "Zachary-Evans1 (Zachary Tyler Evans) · GitHub",
+      "url": "https://github.com/Zachary-Evans1",
+      "snippet": "A chess engine built in C++ with an AI opponent C++"
+    },
+    {
+      "title": "GitHub - zachary-evans-dev/deep-learning-edition",
+      "url": "https://github.com/zachary-evans-dev/deep-learning-edition",
+      "snippet": "The official code repository for the second edition of the O&#x27;Reilly book Generative Deep Learning: Teaching Machines to Paint, Write, Compose and Play."
+    },
+    {
+      "title": "Model vs Modeler: Trade-offs designing interactive text classification ...",
+      "url": "https://zwlevonian.medium.com/model-vs-modeler-trade-offs-designing-interactive-text-classification-interfaces-cda41c367e89",
+      "snippet": "Model vs Modeler: Trade-offs designing interactive text classification interfaces Using simulations to design for interactive machine learning This blog post summarizes a conference paper presented …"
+    }
+  ]
+}

@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "vinukatashidu/landslide-detection-multimodal",
+  "slug": "vinukatashidu-landslide-detection-multimodal",
+  "author": "vinukatashidu",
+  "url": "https://huggingface.co/vinukatashidu/landslide-detection-multimodal",
+  "created_at": "2026-08-30T16:28:26.000Z",
+  "updated_at": "2026-08-30T16:29:01.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "PyTorch",
+    "computer-vision",
+    "remote-sensing",
+    "landslide-detection",
+    "en",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 100658674,
+  "storage_human": "101 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Landslide detection using multimodal data fusion and an improved ...",
+      "url": "https://www.nature.com/articles/s41598-025-31208-6",
+      "snippet": "To overcome the limitations of existing methods, this study introduces a novel landslide detection approach based on multimodal data fusion and an improved DeepLabv3 + model."
+    },
+    {
+      "title": "vinukatashidu (Tashidu Vinuka) - Hugging Face",
+      "url": "https://huggingface.co/vinukatashidu",
+      "snippet": "AI & ML interests ... Recent Activity updated a model about 1 month ago ... published a model about 1 month ago ... upvoted a paper 4 months ago"
+    },
+    {
+      "title": "Multimodal_Landslide_Detection_Paper_IEEE_1773656745273",
+      "url": "https://www.scribd.com/document/1063716628/Multimodal-Landslide-Detection-Paper-IEEE-1773656745273",
+      "snippet": "This paper presents a Multimodal Landslide Detection and Prediction System that integrates satellite image segmentation with historical environmental data analysis using a deep learning architecture. The proposed system employs a U-Net model for precise landslide area segmentation and a deep neural network for classifying landslide risk based on environmental attributes, achieving superior ..."
+    },
+    {
+      "title": "Application of Artificial Intelligence and Remote Sensing for Landslide ...",
+      "url": "https://www.mdpi.com/2072-4292/16/16/2947",
+      "snippet": "This paper systematically reviews remote sensing technology and learning algorithms in exploring landslides. The work is categorized into four key components: (1) literature search characteristics, (2) geographical distribution and research publication trends, (3) progress of remote sensing and learning algorithms, and (4) application of remote sensing techniques and learning models for ..."
+    },
+    {
+      "title": "Multimodal artificial intelligence approaches using large language ...",
+      "url": "https://onlinelibrary.wiley.com/doi/abs/10.1111/mice.13482",
+      "snippet": "Abstract Climate change exacerbates natural disasters, demanding rapid damage and risk assessment. However, expert-reliant analyses delay responses despite drone-aided data collection. This study develops and compares multimodal AI approaches using advanced large language models (LLMs) for expert-level landslide image analysis."
+    }
+  ]
+}

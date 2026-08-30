@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "guutong/Qwen3.5-9B-MTPLX-FP16",
+  "slug": "guutong-qwen3-5-9b-mtplx-fp16",
+  "author": "guutong",
+  "url": "https://huggingface.co/guutong/Qwen3.5-9B-MTPLX-FP16",
+  "created_at": "2026-08-30T16:53:51.000Z",
+  "updated_at": "2026-08-30T16:56:40.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "qwen3_5",
+    "4-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1399927296,
+  "parameters_human": "1.40B",
+  "storage_bytes": 6456791992,
+  "storage_human": "6.5 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Youssofal/Qwen3.5-9B-MTPLX-Optimized-Speed-FP16 at main",
+      "url": "https://huggingface.co/Youssofal/Qwen3.5-9B-MTPLX-Optimized-Speed-FP16/tree/main",
+      "snippet": "Instructions to use Youssofal/Qwen3.5-9B-MTPLX-Optimized-Speed-FP16 with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "guutong/Qwen3.8-27B-MTPLX-FP16 · Hugging Face",
+      "url": "https://huggingface.co/guutong/Qwen3.8-27B-3bit-MTPLX-FP16",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GitHub - ABDtmx/Qwen3.5: Qwen3.5 is the large language model series ...",
+      "url": "https://github.com/ABDtmx/Qwen3.5",
+      "snippet": "Qwen3.5 features the following enhancement: Unified Vision-Language Foundation: Early fusion training on trillions of multimodal tokens achieves cross-generational parity with Qwen3 and outperforms Qwen3-VL models across reasoning, coding, agents, and visual understanding benchmarks."
+    },
+    {
+      "title": "GitHub - QwenLM/Qwen3: Qwen3 is the large language model series ...",
+      "url": "https://github.com/QwenLM/Qwen3",
+      "snippet": "Qwen3-Instruct-2507 is the updated version of the previous Qwen3 non-thinking mode, featuring the following key enhancements: Significant improvements in general capabilities, including instruction following, logical reasoning, text comprehension, mathematics, science, coding and tool usage."
+    },
+    {
+      "title": "Qwen/Qwen3.5-9B | vLLM Recipes",
+      "url": "https://recipes.vllm.ai/Qwen/Qwen3.5-9B",
+      "snippet": "Qwen3.5-9B is a dense multimodal model from the Qwen3.5 family — same gated delta networks hybrid attention, vision encoder, 262K context, and MTP support as its larger siblings, but sized to fit comfortably on a single 24 GB GPU."
+    }
+  ]
+}

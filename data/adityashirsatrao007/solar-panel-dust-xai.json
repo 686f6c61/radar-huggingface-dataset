@@ -1,0 +1,94 @@
+{
+  "schema": 1,
+  "id": "adityashirsatrao007/solar-panel-dust-xai",
+  "slug": "adityashirsatrao007-solar-panel-dust-xai",
+  "author": "adityashirsatrao007",
+  "url": "https://huggingface.co/adityashirsatrao007/solar-panel-dust-xai",
+  "created_at": "2026-08-30T17:35:47.000Z",
+  "updated_at": "2026-08-30T17:36:07.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "image-classification",
+  "library": "scikit-learn",
+  "languages": [],
+  "tags": [
+    "scikit-learn",
+    "solar-energy",
+    "image-classification",
+    "photovoltaic",
+    "dust-detection",
+    "efficientnet",
+    "svm",
+    "explainable-ai",
+    "dataset:safwanshamsir99/solar-photovoltaics-panell-for-dust-dectection",
+    "license:mit",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 22242946,
+  "storage_human": "22 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "Solar panel clean vs dirty",
+      "dataset": null,
+      "metric": "Test Accuracy (merged held-out)",
+      "value": 0.9029
+    },
+    {
+      "task": "Solar panel clean vs dirty",
+      "dataset": null,
+      "metric": "AUC-ROC",
+      "value": 0.9596
+    },
+    {
+      "task": "Solar panel clean vs dirty",
+      "dataset": null,
+      "metric": "External accuracy (2,562 imgs)",
+      "value": 0.9824
+    },
+    {
+      "task": "Solar panel clean vs dirty",
+      "dataset": null,
+      "metric": "External accuracy (383 imgs)",
+      "value": 0.9974
+    }
+  ],
+  "sources": [
+    {
+      "title": "Hybrid-VGG16-SVM-Framework-for-Automated-Dust-Detection-on-Solar-Panels ...",
+      "url": "https://github.com/adityashirsatrao007/Hybrid-VGG16-SVM-Framework-for-Automated-Dust-Detection-on-Solar-Panels-Advancing-Energy-Efficiency/blob/main/README.md",
+      "snippet": "An AI-driven, IoT-enabled solar panel maintenance system that detects dust accumulation, automates water-efficient cleaning, and improves solar energy output. Designed for smart cities, municipal solar plants, and large-scale renewable energy deployments, this project addresses real-world efficiency loss using computer vision, embedded systems, and intelligent automation."
+    },
+    {
+      "title": "adityashirsatrao007/Hybrid-VGG16-SVM-Framework-for-Automated-Dust ...",
+      "url": "https://github.com/adityashirsatrao007/Hybrid-VGG16-SVM-Framework-for-Automated-Dust-Detection-on-Solar-Panels-Advancing-Energy-Efficiency/tree/main",
+      "snippet": "An AI-driven, IoT-enabled solar panel maintenance system that detects dust accumulation, automates water-efficient cleaning, and improves solar energy output. Designed for smart cities, municipal solar plants, and large-scale renewable energy deployments, this project addresses real-world efficiency loss using computer vision, embedded systems, and intelligent automation."
+    },
+    {
+      "title": "Solar Panel Surface Defect and Dust Detection: Deep Learning ... - MDPI",
+      "url": "https://www.mdpi.com/2313-433X/11/9/287",
+      "snippet": "In recent years, solar energy has emerged as a pillar of sustainable development. However, maintaining panel efficiency under extreme environmental conditions remains a persistent hurdle. This study introduces an automated defect detection pipeline that leverages deep learning and computer vision to identify five standard anomaly classes: Non-Defective, Dust, Defective, Physical Damage, and ..."
+    },
+    {
+      "title": "Solar Panel Surface Defect and Dust Detection: Deep Learning Approach",
+      "url": "https://www.researchgate.net/publication/394965309_Solar_Panel_Surface_Defect_and_Dust_Detection_Deep_Learning_Approach",
+      "snippet": "Feature importance and explainable AI (XAI) identified neutrophils, WBC_Count, Total_LOS, P_O_LOS, and Symptoms_Days as the principal features that significantly affected the performance of the model."
+    },
+    {
+      "title": "A Novel Method for Detecting Dust Accumulation in Photovoltaic Systems ...",
+      "url": "https://arxiv.org/pdf/2501.08304",
+      "snippet": "Abstract This paper presents an innovative method for automatically detecting dust accumulation on a PV system and notifying the user to clean it instantly. The accumulation of dust, bird, or insect droppings on the surface of photovoltaic (PV) panels creates a barrier between the solar energy and the panel&#x27;s surface to receive sufficient energy to generate electricity. The study investigates ..."
+    }
+  ]
+}

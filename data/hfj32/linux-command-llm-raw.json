@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "hfj32/linux-command-llm-raw",
+  "slug": "hfj32-linux-command-llm-raw",
+  "author": "hfj32",
+  "url": "https://huggingface.co/hfj32/linux-command-llm-raw",
+  "created_at": "2026-08-30T13:04:37.000Z",
+  "updated_at": "2026-08-30T13:06:08.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen2",
+    "text-generation",
+    "trl",
+    "sft",
+    "arxiv:1910.09700",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "4-bit",
+    "bitsandbytes",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 3089625088,
+  "parameters_human": "3.09B",
+  "storage_bytes": 2692054221,
+  "storage_human": "2.7 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - mardromus/linux_command_llm: A fine tuned llm model for linux ...",
+      "url": "https://github.com/mardromus/linux_command_llm/tree/main",
+      "snippet": "Overview Linux Command LLM is a fine-tuned language model designed to interpret natural language commands and generate corresponding Linux shell commands. This model is based on open_llama_3b_v2 and has been fine-tuned to assist users in efficiently executing system operations through natural language input."
+    },
+    {
+      "title": "GitHub - simonw/llm: Access large language models from the command-line",
+      "url": "https://github.com/simonw/llm",
+      "snippet": "A CLI tool and Python library for interacting with OpenAI, Anthropic&#x27;s Claude, Google&#x27;s Gemini, Qwen, Gemma, Kimi, DeepSeek, Mistral, and dozens of other Large Language Models, both via remote APIs and with models that can be installed and run on your own machine. Watch Language models on the command-line on YouTube for a demo or read the accompanying detailed notes. With LLM you can: Run ..."
+    },
+    {
+      "title": "linux_command_llm - fossunited.org",
+      "url": "https://fossunited.org/hack/fosshack25/p/1kek6v4eik",
+      "snippet": "Overview Linux Command LLM is a fine-tuned language model based on open_llama_3b_v2, specifically optimized to interpret natural language inputs and generate accurate Linux shell commands. This model enables users to execute system operations efficiently by describing tasks in plain English, which are then converted into executable Linux commands."
+    },
+    {
+      "title": "Downloading models · Hugging Face",
+      "url": "https://huggingface.co/docs/hub/models-downloading",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Best Open-Source LLM Models in 2026: Coding, Local, Agentic AI ...",
+      "url": "https://huggingface.co/blog/daya-shankar/open-source-llms",
+      "snippet": "A Blog post by Daya Shankar on Hugging Face"
+    }
+  ]
+}

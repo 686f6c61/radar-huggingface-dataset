@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "liodon-ai/Qwen2-1.5B-Instruct-ONNX",
+  "slug": "liodon-ai-qwen2-1-5b-instruct-onnx",
+  "author": "liodon-ai",
+  "url": "https://huggingface.co/liodon-ai/Qwen2-1.5B-Instruct-ONNX",
+  "created_at": "2026-08-30T18:38:45.000Z",
+  "updated_at": "2026-08-30T18:57:20.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "onnx",
+  "languages": [],
+  "tags": [
+    "onnx",
+    "qwen2",
+    "onnxruntime",
+    "quantized",
+    "text-generation",
+    "conversational",
+    "base_model:Qwen/Qwen2-1.5B-Instruct",
+    "base_model:quantized:Qwen/Qwen2-1.5B-Instruct",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 12588214004,
+  "storage_human": "12.6 GB",
+  "base_model": "Qwen/Qwen2-1.5B-Instruct",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Qwen/Qwen2-1.5B-Instruct · Hugging Face",
+      "url": "https://huggingface.co/Qwen/Qwen2-1.5B-Instruct",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Qwen/Qwen2-1.5B · Hugging Face",
+      "url": "https://huggingface.co/Qwen/Qwen2-1.5B",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GitHub - QuantumEclipseAI/Qwen2: Qwen2 is the large language model ...",
+      "url": "https://github.com/QuantumEclipseAI/Qwen2",
+      "snippet": "After months of efforts, we are pleased to announce the evolution from Qwen1.5 to Qwen2. This time, we bring to you: Pretrained and instruction-tuned models of 5 sizes, including Qwen2-0.5B, Qwen2-1.5B, Qwen2-7B, Qwen2-57B-A14B, and Qwen2-72B; Having been trained on data in 27 additional languages besides English and Chinese; State-of-the-art performance in a large number of benchmark ..."
+    },
+    {
+      "title": "Qwen2.5-1.5B-Instruct · Models",
+      "url": "https://www.modelscope.cn/models/qwen/Qwen2.5-1.5B-Instruct",
+      "snippet": "Qwen2.5 is the latest series of Qwen large language models. For Qwen2.5, we release a number of base language models and instruction-tuned language models ranging from 0.5 to 72 billion parameters."
+    },
+    {
+      "title": "GitHub - mx4ai/qwen2.5: Qwen2.5 is the large language model series ...",
+      "url": "https://github.com/mx4ai/qwen2.5",
+      "snippet": "Today, we are excited to introduce the latest addition to the Qwen family: Qwen2.5. Dense, easy-to-use, decoder-only language models, available in 0.5B, 1.5B, 3B, 7B, 14B, 32B, and 72B sizes, and base and instruct variants. Pretrained on our latest large-scale dataset, encompassing up to 18T tokens."
+    }
+  ]
+}

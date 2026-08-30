@@ -1,0 +1,77 @@
+{
+  "schema": 1,
+  "id": "TheDrainFlorist/Qwen3.8-Flash-Next-VQ-2.1bpw",
+  "slug": "thedrainflorist-qwen3-8-flash-next-vq-2-1bpw",
+  "author": "TheDrainFlorist",
+  "url": "https://huggingface.co/TheDrainFlorist/Qwen3.8-Flash-Next-VQ-2.1bpw",
+  "created_at": "2026-08-30T14:12:55.000Z",
+  "updated_at": "2026-08-30T14:20:07.000Z",
+  "license": "qwen-community-1.0",
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "mlx",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "qwen4_exp",
+    "quantized",
+    "vector-quantization",
+    "apple-silicon",
+    "qwen3.8",
+    "text-generation",
+    "conversational",
+    "en",
+    "base_model:Qwen/Qwen3.8-Flash-Next",
+    "base_model:quantized:Qwen/Qwen3.8-Flash-Next",
+    "license:other",
+    "8-bit",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 21062769043,
+  "parameters_human": "21.06B",
+  "storage_bytes": 49176269820,
+  "storage_human": "49.2 GB",
+  "base_model": "Qwen/Qwen3.8-Flash-Next",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Qwen3.8-Flash-Next - GitHub",
+      "url": "https://github.com/QwenLM/Qwen3.8-Flash-Next/",
+      "snippet": "Qwen3.8-Flash-Next upgrades the model systematically along four aspects — attention, residual, embedding and optimization — improving model capability while further optimizing computational efficiency, model capacity and training stability: Attention A GDN + QSA hybrid architecture."
+    },
+    {
+      "title": "Qwen3.8-Flash-Next: How to Run Locally - unsloth.ai",
+      "url": "https://unsloth.ai/docs/models/qwen3.8-next",
+      "snippet": "Qwen3.8-Flash-Next is a new open-weight, 125B parameter MoE multimodal model from Qwen. Built on the new Qwen4 architecture, it supports a 262K context window and advanced reasoning. Qwen3.8 -Flash-Next outperforms Claude-4.6-Opus (Max) and can run locally on devices with 75GB RAM /unified memory with no GPU VRAM required."
+    },
+    {
+      "title": "Qwen/Qwen3.8-Flash-Next at main - Hugging Face",
+      "url": "https://huggingface.co/Qwen/Qwen3.8-Flash-Next/tree/main",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Qwen/Qwen3.8-Flash-Next | vLLM Recipes - recipes.vllm.ai",
+      "url": "https://recipes.vllm.ai/Qwen/Qwen3.8-Flash-Next",
+      "snippet": "Overview Qwen3.8-Flash-Next is a multimodal, ultra-sparse Mixture-of-Experts model. It has 125B parameters, including an additional 51B N-gram embedding table, while activating 6B parameters per token. The architecture combines four main ideas: GDN + QSA: three of every four layers use Gated DeltaNet to compress history; the fourth uses Qwen Sparse Attention for precise long-range retrieval ..."
+    },
+    {
+      "title": "TheDrainFlorist/Qwen3.8-27B-VQ-3.9bpw · Hugging Face",
+      "url": "https://huggingface.co/TheDrainFlorist/Qwen3.8-27B-VQ-3.9bpw",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    }
+  ]
+}

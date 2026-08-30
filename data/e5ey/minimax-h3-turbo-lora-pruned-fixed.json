@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "e5ey/MiniMax-H3-Turbo-Lora-Pruned-Fixed",
+  "slug": "e5ey-minimax-h3-turbo-lora-pruned-fixed",
+  "author": "e5ey",
+  "url": "https://huggingface.co/e5ey/MiniMax-H3-Turbo-Lora-Pruned-Fixed",
+  "created_at": "2026-08-30T12:15:35.000Z",
+  "updated_at": "2026-08-30T12:15:41.000Z",
+  "license": "minimax-h3-community-license-agreement",
+  "license_family": "unknown",
+  "pipeline_tag": "text-to-video",
+  "library": "diffusers",
+  "languages": [],
+  "tags": [
+    "diffusers",
+    "minimax-h3",
+    "turbo",
+    "lora",
+    "video-generation",
+    "comfyui",
+    "text-to-video",
+    "base_model:MiniMaxAI/MiniMax-H3",
+    "base_model:quantized:MiniMaxAI/MiniMax-H3",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 620285592,
+  "storage_human": "620 MB",
+  "base_model": "MiniMaxAI/MiniMax-H3",
+  "formats": [
+    "diffusers"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - ModelTC/Minimax-H3-Turbo: Distill Minimax-H3 into 4 steps",
+      "url": "https://github.com/ModelTC/Minimax-H3-Turbo",
+      "snippet": "Online App Try the MiniMax-H3 Turbo LoRA directly in LightX2V Studio. The Studio currently uses the FL2VA Turbo 8-step v1.0 768p LoRA. Online Studio: https://x2v.light-ai.top/ Current model: FL2VA Turbo 8-step v1.0 768p Recommended settings: 8 NFE, video shift 6, audio shift 3 The model version deployed in the Studio may be updated over time."
+    },
+    {
+      "title": "larryvrh/MiniMax-H3-Turbo-Lora · Discussions - Hugging Face",
+      "url": "https://huggingface.co/larryvrh/MiniMax-H3-Turbo-Lora/discussions",
+      "snippet": "Severe visual degradation, ghosting and audio corruption with MiniMax-H3 Turbo LoRA on pruned INT8 ConvRot, especially at 4 steps ... 850 LORA It seems to have produced a bizarre result. ... Results are better if we use native nodes than the turbo nodes ... MiniMax H3 video VAE int8 convrot and 8-step Turbo LoRA ... ckpt850 not working?"
+    },
+    {
+      "title": "chfm/MiniMax-H3-Turbo-Lora · Hugging Face",
+      "url": "https://huggingface.co/chfm/MiniMax-H3-Turbo-Lora",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GitHub - Larryvrh/ComfyUI-MiniMax-H3-Turbo",
+      "url": "https://github.com/Larryvrh/ComfyUI-MiniMax-H3-Turbo",
+      "snippet": "Base model — works with any MiniMax-H3 base: full (bf16, int8_convrot) and the pruned/curve variants (pruned_int8, pruned_fp8). The node detects a pruned base automatically and re-injects the LoRA&#x27;s time-conditioning at run time (a small silu (t_emb) grid ships with the node for this), so one LoRA file covers every base."
+    },
+    {
+      "title": "MiniMax H3 Turbo — Faster H3 Video with Turbo LoRA & LightX2V",
+      "url": "https://minimax3.org/minimax-h3-turbo",
+      "snippet": "MiniMax H3 Turbo explained: how Turbo LoRA, LightX2V, and step-reduction techniques accelerate H3 video generation. Community setup, quality trade-offs, and requirements."
+    }
+  ]
+}

@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "olafuraron/all-MiniLM-L6-v2-q8",
+  "slug": "olafuraron-all-minilm-l6-v2-q8",
+  "author": "olafuraron",
+  "url": "https://huggingface.co/olafuraron/all-MiniLM-L6-v2-q8",
+  "created_at": "2026-08-30T15:34:16.000Z",
+  "updated_at": "2026-08-30T15:34:44.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 23283555,
+  "storage_human": "23 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "olafuraron/all-MiniLM-L6-v2 · Hugging Face",
+      "url": "https://huggingface.co/olafuraron/all-MiniLM-L6-v2",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "olafuraron/all-MiniLM-L6-v2 at main - Hugging Face",
+      "url": "https://huggingface.co/olafuraron/all-MiniLM-L6-v2/tree/main",
+      "snippet": "olafuraron / all-MiniLM-L6-v2 like 0 Safetensors bert Model card FilesFiles and versions xet Community main all-MiniLM-L6-v2 91.3 MB 1 contributor History:2 commits olafuraron Upload 3 files e742b6d verified3 months ago .gitattributes 1.52 kBinitial commit3 months ago config.json 612 BytesUpload 3 files3 months ago model.safetensors 90.9 MB xet ..."
+    },
+    {
+      "title": "The 2026 Local AI Model Tier List: Every Model Ranked by Use Case",
+      "url": "https://www.local-llm.net/blog/model-tier-list-2026/",
+      "snippet": "An opinionated S/A/B/C/D tier ranking of every major local AI model across six categories: chat, coding, reasoning, creative writing, vision, and embeddings. Updated ..."
+    },
+    {
+      "title": "GitHub - henrytanner52/all-MiniLM-L6-v2",
+      "url": "https://github.com/henrytanner52/all-MiniLM-L6-v2",
+      "snippet": "all-MiniLM-L6-v2 This is a sentence-transformers model: It maps sentences & paragraphs to a 384 dimensional dense vector space and can be used for tasks like clustering or semantic search."
+    },
+    {
+      "title": "All_MiniLM_L6_v2.ipynb - Colab",
+      "url": "https://colab.research.google.com/github/unslothai/notebooks/blob/main/nb/All_MiniLM_L6_v2.ipynb",
+      "snippet": "We clone llama.cpp and we default save it to q8_0. We allow all methods like q4_k_m. Use save_pretrained_gguf for local saving and push_to_hub_gguf for uploading to HF. Some supported quant methods (full list on our docs page): q8_0 - Fast conversion. High resource use, but generally acceptable. q4_k_m - Recommended."
+    }
+  ]
+}

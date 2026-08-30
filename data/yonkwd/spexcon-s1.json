@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "YONKWd/Spexcon-S1",
+  "slug": "yonkwd-spexcon-s1",
+  "author": "YONKWd",
+  "url": "https://huggingface.co/YONKWd/Spexcon-S1",
+  "created_at": "2026-08-30T16:12:52.000Z",
+  "updated_at": "2026-08-30T17:06:38.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "spexcon",
+    "spexcon-s1",
+    "qwen3",
+    "dataset-preparation",
+    "instruction-tuning",
+    "sft",
+    "trl",
+    "text-generation",
+    "en",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "YONKWd (script) - Hugging Face",
+      "url": "https://huggingface.co/YONKWd",
+      "snippet": "User profile of script on Hugging Face"
+    },
+    {
+      "title": "Stanford and University of Washington Unveil S1: Rival AI Model for ...",
+      "url": "https://opentools.ai/news/stanford-and-university-of-washington-unveil-s1-rival-ai-model-for-under-dollar50",
+      "snippet": "In a groundbreaking achievement, researchers from Stanford and the University of Washington have developed S1, a high‑performing AI reasoning model that rivals industry giants like OpenAI&#x27;s O1, all for less than $50 and trained in just 26 minutes. Using a clever mix of pre‑trained models, a token budget mechanism, and only 16 Nvidia H100 GPUs, this innovation marks a significant step ..."
+    },
+    {
+      "title": "GitHub - simplescaling/s1: s1: Simple test-time scaling",
+      "url": "https://github.com/simplescaling/s1",
+      "snippet": "s1: Simple test-time scaling. Contribute to simplescaling/s1 development by creating an account on GitHub."
+    },
+    {
+      "title": "YONKWd/Cool-ai at main - Hugging Face",
+      "url": "https://huggingface.co/spaces/YONKWd/Cool-ai/tree/main",
+      "snippet": "Spaces: YONKWd / Cool-ai like 0 Running App FilesFiles Community main Cool-ai 86.9 MB Ctrl+K Ctrl+K 2 contributors History:2 commits YONKWd initial commit 28393fc verifiedabout 5 hours ago staticDuplicate from nerfies/paper-templateabout 5 hours ago .gitattributes Safe 2.32 kBDuplicate from nerfies/paper-templateabout 5 hours ago README.md 958 Bytesinitial commitabout 5 hours ago index.html ..."
+    },
+    {
+      "title": "S1 AI Model: A $50 Open-Source Rival to OpenAI&#x27;s o1",
+      "url": "https://superintelligencenews.com/open-source/s1-ai-model-open-source/",
+      "snippet": "Researchers create S1, an open-source AI reasoning model trained for under $50, rivaling OpenAI&#x27;s o1."
+    }
+  ]
+}

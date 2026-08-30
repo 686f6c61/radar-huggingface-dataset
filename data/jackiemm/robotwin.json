@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "JackieMM/RoboTwin",
+  "slug": "jackiemm-robotwin",
+  "author": "JackieMM",
+  "url": "https://huggingface.co/JackieMM/RoboTwin",
+  "created_at": "2026-08-30T11:32:50.000Z",
+  "updated_at": "2026-08-30T11:32:53.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "arxiv:2506.18088",
+    "arxiv:2506.23351",
+    "arxiv:2504.13059",
+    "arxiv:2409.02920",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "JackieMM (Jackie MING) - Hugging Face",
+      "url": "https://huggingface.co/JackieMM",
+      "snippet": "JackieMM/blocks_ranking_rgb-pi05-himacon-concept-l14-rmsnorm-alpha015-demo-clean-30000-pending-eval Robotics •Updated 15 days ago"
+    },
+    {
+      "title": "JackieMM/RoboTwin-pi05-30000-checkpoints · Hugging Face",
+      "url": "https://huggingface.co/JackieMM/RoboTwin-pi05-30000-checkpoints",
+      "snippet": "JackieMM / RoboTwin-pi05-30000-checkpoints like 0 robotwin openpi pi05 checkpoint License:apache-2.0 Model card FilesFiles and versions xet Community Copy to bucket new RoboTwin pi05 30000-step Checkpoints Layout Counts Groups Notes"
+    },
+    {
+      "title": "RoboTwin 2.0 - RoboTwin 2.0 Official Document",
+      "url": "https://robotwin-platform.github.io/doc/index.html",
+      "snippet": "Here is the official documentation for RoboTwin 2.0 (ICML 2026), which includes installation and usage instructions for various RoboTwin functionalities, detailed information on the 50 bimanual tasks in RoboTwin 2.0, comprehensive descriptions of the RoboTwin-OD dataset, and guidelines for joining the community."
+    },
+    {
+      "title": "RoboTwin 2.0: A Scalable Data Generator and Benchmark with Strong ...",
+      "url": "https://arxiv.org/html/2506.18088",
+      "snippet": "We compare RoboTwin 2.0 against existing benchmarks and datasets across several key dimensions, including the number of supported tasks, the presence of domain randomization, support for automatic data generation, and compatibility with vision-language-action (VLA) model training and evaluation."
+    },
+    {
+      "title": "RoboTwin 2.0",
+      "url": "https://robotwin-platform.github.io/",
+      "snippet": "A multimodal language model agent enables automatic task program synthesis, while flexible dual-arm configurations facilitate scalable and diverse data collection. Policies trained on RoboTwin 2.0 data demonstrate improved robustness and generalization to unseen environments."
+    }
+  ]
+}

@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "Goodis/core-runtime-a1",
+  "slug": "goodis-core-runtime-a1",
+  "author": "Goodis",
+  "url": "https://huggingface.co/Goodis/core-runtime-a1",
+  "created_at": "2026-08-29T08:30:47.000Z",
+  "updated_at": "2026-08-30T14:49:47.000Z",
+  "license": "schiptarprivatelicense",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 40572370032,
+  "storage_human": "40.6 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Core AI Models",
+      "url": "https://github.com/apple/coreai-models",
+      "snippet": "The main components include: Model export — Recipes to export popular open source models from Hugging Face and other sources to Core AI format. Reusable primitives — Python building blocks for authoring custom Core AI models in PyTorch. Runtime utilities — Swift package built on top of Core AI framework to run models on macOS and iOS."
+    },
+    {
+      "title": "LLM Leaderboard & AI Model Benchmarks — August 2026",
+      "url": "https://benchlm.ai/",
+      "snippet": "Compare 406 AI models across 408 benchmarks, with 228 ranked scores, source evidence, API pricing, context windows, runtime, and head-to-head pages."
+    },
+    {
+      "title": "What breaks when organisations secure AI only at the model file and not ...",
+      "url": "https://nhimg.org/faq/what-breaks-when-organisations-secure-ai-only-at-the-model-file-and-not-at-runti/",
+      "snippet": "Model-only protection leaves organisations exposed to unsafe prompts, malicious API activity, and behavior that emerges only after deployment. A model may scan clean, yet still be abused in production through tool calls, poisoned inputs, or agent actions. Effective AI security has to cover the full path from build time to runtime enforcement."
+    },
+    {
+      "title": "Hugging Face - The AI community building the future.",
+      "url": "https://huggingface.co/",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "AI Leaderboard 2026: Rankings for 300+ Top AI Models by Intelligence ...",
+      "url": "https://llm-stats.com/",
+      "snippet": "The AI Leaderboard — independent rankings of GPT, Claude, Gemini, Llama, DeepSeek and 300+ AI models by intelligence, speed and price. Composite LLM Stats Score updated continuously from public benchmarks and live API metrics."
+    }
+  ]
+}

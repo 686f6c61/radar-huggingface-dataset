@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "takenoko-gohan/Ops-Colqwen3-4B-GGUF",
+  "slug": "takenoko-gohan-ops-colqwen3-4b-gguf",
+  "author": "takenoko-gohan",
+  "url": "https://huggingface.co/takenoko-gohan/Ops-Colqwen3-4B-GGUF",
+  "created_at": "2026-08-30T11:52:49.000Z",
+  "updated_at": "2026-08-30T11:52:49.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "visual-document-retrieval",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "ops_colqwen3",
+    "feature-extraction",
+    "multimodal_embedding",
+    "embedding",
+    "colpali",
+    "multilingual-embedding",
+    "colqwen3",
+    "visual-document-retrieval",
+    "custom_code",
+    "base_model:Qwen/Qwen3-VL-4B-Instruct",
+    "base_model:finetune:Qwen/Qwen3-VL-4B-Instruct",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 4444371968,
+  "parameters_human": "4.44B",
+  "storage_bytes": 8900250214,
+  "storage_human": "8.9 GB",
+  "base_model": "Qwen/Qwen3-VL-4B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "OpenSearch-AI/Ops-Colqwen3-4B · Hugging Face",
+      "url": "https://huggingface.co/OpenSearch-AI/Ops-Colqwen3-4B",
+      "snippet": "Ops-Colqwen3-4B is a ColPali-style multimodal embedding model based on the Qwen3-VL-4B-Instruct architecture, developed and open-sourced by the Alibaba Cloud OpenSearch-AI team."
+    },
+    {
+      "title": "OpenSearch-AI/Ops-Colqwen3-4B at main - Hugging Face",
+      "url": "https://huggingface.co/OpenSearch-AI/Ops-Colqwen3-4B/tree/main",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "colqwen3 - vLLM",
+      "url": "https://docs.vllm.ai/en/latest/api/vllm/model_executor/models/colqwen3/",
+      "snippet": "ColQwen3 late interaction model for multi-modal retrieval and reranking. ColQwen3 extends Qwen3-VL with a ColBERT-style late interaction head, producing per-token embeddings for both text and image inputs."
+    },
+    {
+      "title": "OpenSearch-AI/Ops-Colqwen3-4B | Hugging Bay",
+      "url": "https://huggingbay.xyz/artifact/hf-model-opensearch-ai-ops-colqwen3-4b",
+      "snippet": "OpenSearch-AI/Ops-Colqwen3-4B: Model from Hugging Face: OpenSearch-AI/Ops-Colqwen3-4B License: apache-2.0. external huggingface metadata. Scan: pending."
+    },
+    {
+      "title": "mteb/mteb/models/model_implementations/ops_colqwen3_models.py at main ...",
+      "url": "https://github.com/embeddings-benchmark/mteb/blob/main/mteb/models/model_implementations/ops_colqwen3_models.py",
+      "snippet": "MTEB: State-of-the-art evaluation of embeddings across languages and modalities - embeddings-benchmark/mteb"
+    }
+  ]
+}

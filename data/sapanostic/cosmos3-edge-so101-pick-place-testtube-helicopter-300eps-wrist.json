@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "sapanostic/cosmos3-edge-so101-pick-place-testtube-helicopter-300eps-wrist",
+  "slug": "sapanostic-cosmos3-edge-so101-pick-place-testtube-helicopter-300eps-wrist",
+  "author": "sapanostic",
+  "url": "https://huggingface.co/sapanostic/cosmos3-edge-so101-pick-place-testtube-helicopter-300eps-wrist",
+  "created_at": "2026-08-30T18:34:55.000Z",
+  "updated_at": "2026-08-30T18:58:08.000Z",
+  "license": "nvidia-open-model-license",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "robotics",
+    "vla",
+    "cosmos3",
+    "so-arm101",
+    "action-policy",
+    "base_model:nvidia/Cosmos3-Edge",
+    "base_model:finetune:nvidia/Cosmos3-Edge",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 34808981800,
+  "storage_human": "34.8 GB",
+  "base_model": "nvidia/Cosmos3-Edge",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "cosmos3-edge-so101-pick-place-testtube-helicopter-300eps",
+      "url": "https://huggingface.co/sapanostic/cosmos3-edge-so101-pick-place-testtube-helicopter-300eps",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "sapanostic/cosmos3-edge-so101-pick-place-testtube-helicopter-300eps at main",
+      "url": "https://huggingface.co/sapanostic/cosmos3-edge-so101-pick-place-testtube-helicopter-300eps/tree/main",
+      "snippet": "Instructions to use sapanostic/cosmos3-edge-so101-pick-place-testtube-helicopter-300eps with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "Cosmos 3 — Cosmos Lab - research.nvidia.com",
+      "url": "https://research.nvidia.com/labs/cosmos-lab/cosmos3/",
+      "snippet": "Cosmos 3 connects understanding, generation, simulation, and action through a shared omnimodal world model that moves fluidly across text, images, video, audio, and actions."
+    },
+    {
+      "title": "Cosmos 3: Omnimodal World Models for Physical AI",
+      "url": "https://arxiv.org/abs/2606.02800",
+      "snippet": "We introduce Cosmos 3, a family of omnimodal world models designed to jointly process and generate language, image, video, audio, and action sequences within a unified mixture-of-transformers architecture. By supporting highly flexible input-output configurations, Cosmos 3 seamlessly unifies critical modalities for Physical AI -- effectively subsuming vision-language models, video generators ..."
+    },
+    {
+      "title": "cosmos/cookbooks/cosmos3 at main · NVIDIA/cosmos · GitHub",
+      "url": "https://github.com/NVIDIA/cosmos/tree/main/cookbooks/cosmos3",
+      "snippet": "NVIDIA Cosmos is an open platform of world models, datasets, and tools that enables developers to build Physical AI for robots, autonomous vehicles, smart infrastructure, and more. - NVIDIA/cosmos"
+    }
+  ]
+}

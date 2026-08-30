@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "kakakaaaaa/extraction_model_lora",
+  "slug": "kakakaaaaa-extraction_model_lora",
+  "author": "kakakaaaaa",
+  "url": "https://huggingface.co/kakakaaaaa/extraction_model_lora",
+  "created_at": "2026-08-30T12:53:09.000Z",
+  "updated_at": "2026-08-30T12:55:10.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "llama",
+    "text-generation",
+    "text-generation-inference",
+    "unsloth",
+    "trl",
+    "conversational",
+    "en",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "4-bit",
+    "bitsandbytes",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 8030261248,
+  "parameters_human": "8.03B",
+  "storage_bytes": 5719956074,
+  "storage_human": "5.7 GB",
+  "base_model": "extraction_model_lora",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "LoRA Studio - AI Image Generation",
+      "url": "https://lorastudio.org/",
+      "snippet": "Train custom LoRA models and generate stunning images with AI-powered text prompts."
+    },
+    {
+      "title": "10,000+ LoRA Models for Flux, Wan & SDXL | Browse Free",
+      "url": "https://loraai.io/loras",
+      "snippet": "Browse 10,000+ LoRA models for Flux, WAN, and SDXL. Character LoRAs, style LoRAs, and concept LoRAs with examples. Filter by model, tag, or search."
+    },
+    {
+      "title": "copyninja16/entity-extraction-lora · Hugging Face",
+      "url": "https://huggingface.co/copyninja16/entity-extraction-lora",
+      "snippet": "copyninja16 / entity-extraction-lora like 0 Safetensors GGUF conversational Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "LoRA Extraction | arcee-ai/mergekit | DeepWiki",
+      "url": "https://deepwiki.com/arcee-ai/mergekit/4.4-lora-extraction",
+      "snippet": "This page documents the mergekit-extract-lora command, which extracts a PEFT-compatible LoRA adapter from the difference between a fine-tuned model and its base model using truncated singular value decomposition (SVD). This tool produces adapters that are directly loadable by the PEFT library."
+    },
+    {
+      "title": "Models - Hugging Face",
+      "url": "https://huggingface.co/models?search=lora",
+      "snippet": "Explore machine learning models."
+    }
+  ]
+}

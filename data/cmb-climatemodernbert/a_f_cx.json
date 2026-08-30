@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "CMB-ClimateModernBERT/A_F_CX",
+  "slug": "cmb-climatemodernbert-a_f_cx",
+  "author": "CMB-ClimateModernBERT",
+  "url": "https://huggingface.co/CMB-ClimateModernBERT/A_F_CX",
+  "created_at": "2026-08-30T16:01:04.000Z",
+  "updated_at": "2026-08-30T16:01:29.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "fill-mask",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "modernbert",
+    "fill-mask",
+    "climate",
+    "domain-adaptation",
+    "continued-pretraining",
+    "academic-text",
+    "web-text",
+    "en",
+    "base_model:answerdotai/ModernBERT-base",
+    "base_model:finetune:answerdotai/ModernBERT-base",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 149655232,
+  "parameters_human": "149.7M",
+  "storage_bytes": 598635000,
+  "storage_human": "599 MB",
+  "base_model": "answerdotai/ModernBERT-base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ClimateModernBERT - a sraj Collection - Hugging Face",
+      "url": "https://huggingface.co/collections/sraj/climatemodernbert",
+      "snippet": "ClimateModernBERT updated about 1 month ago Final Models from the paper - ClimateModernBERT Upvote - Sort: Collection"
+    },
+    {
+      "title": "CMB all - a sraj Collection - Hugging Face",
+      "url": "https://huggingface.co/collections/sraj/cmb-all",
+      "snippet": "sraj &#x27;s Collections ClimateModernBERT CMB all ModernBERT Checkpoints from pretraining phases"
+    },
+    {
+      "title": "LLM Leaderboard & AI Model Benchmarks — August 2026",
+      "url": "https://benchlm.ai/",
+      "snippet": "LLM Leaderboard & AI Model Benchmarks — August 2026 Compare frontier AI models by quality, cost, and context. 104 Supported and 120 Estimated models among 399 tracked LLMs — 402 benchmarks, real pricing, and runtime data in one place."
+    },
+    {
+      "title": "Google DeepMind Open Sources WeatherNext AI Cyclone Forecasting Model",
+      "url": "https://www.opensourceforu.com/2026/08/google-deepmind-weathernext-ai/",
+      "snippet": "Google DeepMind&#x27;s WeatherNext AI model extends tropical cyclone warning lead times by 24 hours and is now freely available as an open-source tool for global researchers."
+    },
+    {
+      "title": "USPS.com",
+      "url": "https://tools.usps.com/tracking/9310811043900000120675",
+      "snippet": "Fbo x5Mu001d u001eg?w @ 8/ v]pxHu0019/ s M qta u0005 4 cgՕ N ZU C-snoBm &#x27; ( b v > MS` TM j u000fu0017 LD Z 0 | c Иu0003 ju001e ]wCKLu001b X ( c 5+o %a p g L u001eu0017pu0011! &#92;d p } ` U] u001eibb QZv ( R % Q# ~ b >L ) u0018dx , g S u0017 g - u0012&W @ u0012j LXX D bY2ŇKzu000euou0010 t u0006 u000eZu0012u0004 S u0016: ! 6 ?Ƃ z3 * C bm u001cX# ..."
+    }
+  ]
+}

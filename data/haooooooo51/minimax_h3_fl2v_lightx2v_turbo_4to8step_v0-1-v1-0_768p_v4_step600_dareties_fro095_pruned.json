@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "HAOOOOOOO51/Minimax_h3_fl2v_lightx2v_turbo_4to8step_v0.1-v1.0_768p_v4_step600_dareties_fro095_pruned",
+  "slug": "haooooooo51-minimax_h3_fl2v_lightx2v_turbo_4to8step_v0-1-v1-0_768p_v4_step600_dareties_fro095_pruned",
+  "author": "HAOOOOOOO51",
+  "url": "https://huggingface.co/HAOOOOOOO51/Minimax_h3_fl2v_lightx2v_turbo_4to8step_v0.1-v1.0_768p_v4_step600_dareties_fro095_pruned",
+  "created_at": "2026-08-30T15:14:30.000Z",
+  "updated_at": "2026-08-30T15:14:30.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "minimax-h3",
+  "languages": [],
+  "tags": [
+    "minimax-h3",
+    "video-generation",
+    "lora",
+    "comfyui",
+    "experimental",
+    "base_model:MiniMaxAI/MiniMax-H3",
+    "base_model:adapter:MiniMaxAI/MiniMax-H3",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 858675315,
+  "storage_human": "859 MB",
+  "base_model": "MiniMaxAI/MiniMax-H3",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "lightx2v/Minimax-h3-Turbo · Hugging Face",
+      "url": "https://huggingface.co/lightx2v/Minimax-h3-Turbo",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "loras/minimax_h3_fl2v_lightx2v_turbo_4step_v0.1_comfy.safetensors ...",
+      "url": "https://huggingface.co/Kijai/MiniMax-H3_comfy/blob/main/loras/minimax_h3_fl2v_lightx2v_turbo_4step_v0.1_comfy.safetensors",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GitHub - MiniMax-AI/MiniMax-H3 · GitHub",
+      "url": "https://github.com/MiniMax-AI/MiniMax-H3",
+      "snippet": "Contribute to MiniMax-AI/MiniMax-H3 development by creating an account on GitHub."
+    },
+    {
+      "title": "GitHub - ModelTC/Minimax-H3-Turbo: Distill Minimax-H3 into 4 steps",
+      "url": "https://github.com/ModelTC/Minimax-H3-Turbo",
+      "snippet": "Distill Minimax-H3 into 4 steps. Contribute to ModelTC/Minimax-H3-Turbo development by creating an account on GitHub."
+    },
+    {
+      "title": "MiniMax H3 Turbo LoRA v1.0 Download: 8-Step and 768p FL2V",
+      "url": "https://comfyui-wiki.com/en/news/2026-08-11-minimax-h3-turbo-lightx2v-v1",
+      "snippet": "The v1.0 release consists of two new checkpoints on Hugging Face: 8-step v1.0 (minimax_h3_fl2v_turbo_8step_v1.0_bf16.safetensors): distilled at 8 NFE with 12/3 video/audio shifts, and usable at 8 or 4 inference steps."
+    }
+  ]
+}

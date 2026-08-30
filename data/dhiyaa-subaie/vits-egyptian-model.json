@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "DHIYAA-SUBAIE/vits-egyptian-model",
+  "slug": "dhiyaa-subaie-vits-egyptian-model",
+  "author": "DHIYAA-SUBAIE",
+  "url": "https://huggingface.co/DHIYAA-SUBAIE/vits-egyptian-model",
+  "created_at": "2026-08-30T12:50:23.000Z",
+  "updated_at": "2026-08-30T13:00:22.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1038329030,
+  "storage_human": "1.0 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "DHIYAA-SUBAIE/vits-egyptian-tts-fromScratch at main",
+      "url": "https://huggingface.co/spaces/DHIYAA-SUBAIE/vits-egyptian-tts-fromScratch/tree/main",
+      "snippet": "main vits-egyptian-tts-fromScratch 346 MB Ctrl+K Ctrl+K 2 contributors History:15 commits DHIYAA-SUBAIE Update requirements.txt b0428fc verifiedabout 1 hour ago modelvits egyptian tts - inference weightsabout 5 hours ago .gitattributes Safe 1.52 kBvits egyptian tts - inference weightsabout 5 hours ago README.md 2.12 kBUpdate README.mdabout 4 ..."
+    },
+    {
+      "title": "CivArchive (CivitAI Archive) - AI Model Archive",
+      "url": "https://civitaiarchive.com/",
+      "snippet": "Browse and discover AI models from CivitAI, TensorArt, and SeaArt. Community-driven archive preserving access to AI resources."
+    },
+    {
+      "title": "AI Models | Civitai",
+      "url": "https://civitai.com/models",
+      "snippet": "Browse thousands of free Stable Diffusion & Flux models, LoRAs, checkpoints, and embeddings. The largest collection of AI image generation resources."
+    },
+    {
+      "title": "Da7ee7/الدحيح (Egyptian Arabic Youtuber) (RVC V2) 800 Epochs",
+      "url": "https://voice-models.com/model/1mkfFd79fJ4",
+      "snippet": "Da7ee7/الدحيح (Egyptian Arabic Youtuber) (RVC V2) 800 Epochs AI voice model for RVC voice conversion. View details, samples, source status, and run this voice model in EasyAIVoice."
+    },
+    {
+      "title": "wasmdashai/vits-ar · Hugging Face",
+      "url": "https://huggingface.co/wasmdashai/vits-ar",
+      "snippet": "Model Description An advanced text-to-speech (TTS) system specifically designed for the Arabic language, built on the VITS architecture and utilizing the pre-trained weights from Facebook&#x27;s vits ara model."
+    }
+  ]
+}

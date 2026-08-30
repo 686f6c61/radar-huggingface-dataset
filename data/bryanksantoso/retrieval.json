@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "bryanksantoso/retrieval",
+  "slug": "bryanksantoso-retrieval",
+  "author": "bryanksantoso",
+  "url": "https://huggingface.co/bryanksantoso/retrieval",
+  "created_at": "2026-08-30T17:36:19.000Z",
+  "updated_at": "2026-08-30T17:36:29.000Z",
+  "license": "bsd-3-clause",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "mobilevit",
+    "pytorch",
+    "retrieval",
+    "license:bsd-3-clause",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 33088,
+  "parameters_human": "33088",
+  "storage_bytes": 132832,
+  "storage_human": "132832 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Bryan-Eka-Santoso/README.md at main - GitHub",
+      "url": "https://github.com/Bryan-Eka-Santoso/Bryan-Eka-Santoso/blob/main/README.md",
+      "snippet": "Hi 👋, I&#x27;m Bryan Eka Santoso Hello! My name is Bryan Eka Santoso, and I am a Web Developer based in Surabaya, Indonesia. I graduated from SMK Krian 1 Sidoarjo, specializing in Software Engineering. Currently, I am continuing my studies in Informatics at the Institut Sains dan Teknologi Terpadu Surabaya."
+    },
+    {
+      "title": "Retrieval meets Long Context Large Language Models",
+      "url": "https://arxiv.org/abs/2310.03025",
+      "snippet": "Our best model, retrieval-augmented Llama2-70B with 32K context window, outperforms GPT-3.5-turbo-16k and Davinci003 in terms of average score on nine long context tasks including question answering, query-based summarization, and in-context few-shot learning tasks."
+    },
+    {
+      "title": "AI - Avi Santoso",
+      "url": "https://www.avisantoso.com/research/topics/ai",
+      "snippet": "Canonical Naming Learn how canonical naming defines entity boundaries in Retrieval-Augmented Generation and knowledge graphs, improving retrieval and reasoning."
+    },
+    {
+      "title": "Retrieval-augmented generation - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Retrieval-augmented_generation",
+      "snippet": "Retrieval-augmented generation (RAG) is a technique that enables large language models (LLMs) to retrieve and incorporate new information from external data sources. [1]"
+    },
+    {
+      "title": "Research | OpenAI",
+      "url": "https://openai.com/research/",
+      "snippet": "We advance the science of AI through research on frontier models, reasoning, multimodal systems, and safe deployment. GPT OpenAI&#x27;s GPT series models are fast, versatile, and cost-efficient AI systems designed to understand context, generate content, and reason across text, images, and more."
+    }
+  ]
+}

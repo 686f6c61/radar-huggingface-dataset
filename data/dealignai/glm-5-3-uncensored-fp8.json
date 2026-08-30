@@ -1,0 +1,95 @@
+{
+  "schema": 1,
+  "id": "dealignai/GLM-5.3-UNCENSORED-FP8",
+  "slug": "dealignai-glm-5-3-uncensored-fp8",
+  "author": "dealignai",
+  "url": "https://huggingface.co/dealignai/GLM-5.3-UNCENSORED-FP8",
+  "created_at": "2026-08-30T12:08:53.000Z",
+  "updated_at": "2026-08-30T12:34:30.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "en",
+    "zh",
+    "ru",
+    "sr",
+    "hi",
+    "fr",
+    "es",
+    "ar",
+    "ko",
+    "ja"
+  ],
+  "tags": [
+    "safetensors",
+    "glm_moe_dsa",
+    "abliterated",
+    "uncensored",
+    "crack",
+    "refusal-removed",
+    "glm",
+    "moe",
+    "fp8",
+    "text-generation",
+    "conversational",
+    "en",
+    "zh",
+    "ru",
+    "sr",
+    "hi",
+    "fr",
+    "es",
+    "ar",
+    "ko",
+    "ja",
+    "base_model:JANGQ-AI/GLM-5.3-FP8",
+    "base_model:quantized:JANGQ-AI/GLM-5.3-FP8",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 753329940480,
+  "parameters_human": "753.33B",
+  "storage_bytes": 755663574885,
+  "storage_human": "755.7 GB",
+  "base_model": "zai-org/GLM-5.3, JANGQ-AI/GLM-5.3-FP8",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "dealignai/GLM-5.3-Flash-UNCENSORED-FP8 at main - Hugging Face",
+      "url": "https://huggingface.co/dealignai/GLM-5.3-Flash-UNCENSORED-FP8/tree/main",
+      "snippet": "dealignai / GLM-5.3-Flash-UNCENSORED-FP8 like 7 Safetensors English glm5_next abliterated uncensored crack glm Mixture of Experts fp8 vision mtp License:mit Model card FilesFiles and versions xet Community Copy to bucket new main GLM-5.3-Flash-UNCENSORED-FP8 328 GB Ctrl+K Ctrl+K 1 contributor History:1 commit dealignai Release 3591f33 about 3 hours ago .gitattributes Safe 1.57 kBReleaseabout 3 ..."
+    },
+    {
+      "title": "dealignai/GLM-5.3-UNCENSORED-NVFP4 · Hugging Face",
+      "url": "https://huggingface.co/dealignai/GLM-5.3-UNCENSORED-NVFP4",
+      "snippet": "What Is This? CRACK is dealignai&#x27;s brand for permanent, weight-level uncensoring. This is GLM-5.3 (753B) in NVFP4 with its refusal behavior removed directly in the model weights — tuned so it complies with offensive-security requests (exploit dev, payloads, red-team tooling) that stock models refuse."
+    },
+    {
+      "title": "GLM-5.3-Flash-UNCENSORED-FP8: Text-to-Text model - aimodels.fyi",
+      "url": "https://www.aimodels.fyi/models/huggingFace/glm-5.3-flash-uncensored-fp8-dealignai",
+      "snippet": "Model Overview Overview GLM-5.3-Flash-UNCENSORED-FP8 is a weight-edited, uncensored FP8 release of GLM-5.3-Flash from dealignai. The release removes refusal behavior from the tensors rather than using prompts, fine-tuning, LoRA, adapters, steering vectors, runtime hooks, or a custom model file."
+    },
+    {
+      "title": "dealign.ai on X: \"GLM-5.3-FLASH UNCENSORED in FP8 - for u VRAM rich ...",
+      "url": "https://x.com/dealignai/status/2092722476203802702",
+      "snippet": "GLM-5.3-FLASH UNCENSORED in FP8 - for u VRAM rich folks MTP has 75.9% acceptance, vision working - and less than -0.50% difference in capability measured. Enjoy."
+    },
+    {
+      "title": "GLM-5.3-Flash Uncensored: No LoRA, No Jailbreak, Just Edited FP8 ...",
+      "url": "https://www.explainx.ai/blog/orcarouter-glm-5-3-flash-uncensored-block-fp8-august-2026",
+      "snippet": "Z.ai shipped GLM-5.3-Flash&#x27;s weights on August 26. A third-party edited derivative with its refusal behavior surgically removed was public within three days — on a 320B MoE model, at native FP8 precision, with competing releases from at least one other group landing in roughly the same window."
+    }
+  ]
+}

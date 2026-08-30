@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "KhiemGOM/techjam-route-classifier",
+  "slug": "khiemgom-techjam-route-classifier",
+  "author": "KhiemGOM",
+  "url": "https://huggingface.co/KhiemGOM/techjam-route-classifier",
+  "created_at": "2026-08-30T17:39:45.000Z",
+  "updated_at": "2026-08-30T17:40:22.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "safetensors",
+    "distilbert",
+    "conversational-search",
+    "dialogue-act-classification",
+    "e-commerce",
+    "text-classification",
+    "en",
+    "base_model:distilbert/distilbert-base-uncased",
+    "base_model:finetune:distilbert/distilbert-base-uncased",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 66958086,
+  "parameters_human": "67.0M",
+  "storage_bytes": 267844872,
+  "storage_human": "268 MB",
+  "base_model": "distilbert-base-uncased",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - LiuYuan555/jamming: -",
+      "url": "https://github.com/LiuYuan555/jamming",
+      "snippet": "The presentation prototype classifies the intent observable through the current turn into Browsing, Buying, Intent Override, or Boundary, then routes an experimental sparse/dense mixture. Train the 34.6 KB NumPy classifier with: ... The implementation also contains a Shannon-entropy question gate and an intent-specific Top-10 layer."
+    },
+    {
+      "title": "GitHub - KIREETI001/TikTok-Tech-Jam-2026: TikTok TechJam 2026 - AI ...",
+      "url": "https://github.com/KIREETI001/TikTok-Tech-Jam-2026",
+      "snippet": "A small pipeline for TikTok TechJam 2026 Problem Statement 5: ... The model is the Community Forensics ViT-S/224 detector (21,666,049 parameters, well below the 2-billion-parameter limit). 1 means AI-generated and 0 means authentic."
+    },
+    {
+      "title": "TikTok TechJam 2025: Build With Joy, Code For Change - Devpost",
+      "url": "https://tiktoktechjam2025.devpost.com/",
+      "snippet": "TikTok TechJam 2025 aims to provide students in Singapore with a platform to come together to break boundaries, unleash creativity, and showcase their coding capabilities as they build solutions for real-world problems and drive innovation."
+    },
+    {
+      "title": "TikTok TechJam 2025: Build With Joy, Code For Change - Devpost",
+      "url": "https://tiktoktechjam2025.devpost.com/project-gallery",
+      "snippet": "Build With Joy, Code For Change Connect with the participants - support your favorite projects by liking, sharing, and commenting on them."
+    },
+    {
+      "title": "Ads ML Classifier with LLM - Tiktok TechJam 2025 | Devpost",
+      "url": "https://devpost.com/software/ads-ml-classifier-with-llm-tiktok-techjam-2025",
+      "snippet": "Ads ML Classifier with LLM - Tiktok TechJam 2025 - Cleaning up location reviews of Map App with AI-powered classification for trust and reliability."
+    }
+  ]
+}

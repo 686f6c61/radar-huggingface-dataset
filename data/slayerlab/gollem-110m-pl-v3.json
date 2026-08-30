@@ -1,0 +1,76 @@
+{
+  "schema": 1,
+  "id": "SlayerLab/GoLLeM-110M-PL-v3",
+  "slug": "slayerlab-gollem-110m-pl-v3",
+  "author": "SlayerLab",
+  "url": "https://huggingface.co/SlayerLab/GoLLeM-110M-PL-v3",
+  "created_at": "2026-08-30T14:50:44.000Z",
+  "updated_at": "2026-08-30T14:50:49.000Z",
+  "license": "cc-by-sa-4.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "pl"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gpt2",
+    "text-generation",
+    "polish",
+    "base-model",
+    "from-scratch",
+    "amd-rocm",
+    "continued-pretraining",
+    "pl",
+    "dataset:SlayerLab/polish-dynaword",
+    "license:cc-by-sa-4.0",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 110025216,
+  "parameters_human": "110.0M",
+  "storage_bytes": 440115840,
+  "storage_human": "440 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "SlayerLab/goLLeM-110M-PL-SFT-merged · Hugging Face",
+      "url": "https://huggingface.co/SlayerLab/goLLeM-110M-PL-SFT-merged",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Maggio33/GoLLeM-110M-PL · Hugging Face",
+      "url": "https://huggingface.co/Maggio33/GoLLeM-110M-PL",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GitHub - gollem-dev/gollem: Go framework for agentic AI app with MCP ...",
+      "url": "https://github.com/gollem-dev/gollem",
+      "snippet": "GO for Large LanguagE Model (GOLLEM) gollem provides: Common interface to query prompt to Large Language Model (LLM) services Generate / Stream: Generate text content from prompt (with per-call option overrides) GenerateEmbedding: Generate embedding vector from text (OpenAI and Gemini) Framework for building agentic applications of LLMs with Tools by MCP (Model Context Protocol) server and ..."
+    },
+    {
+      "title": "GoLLeM-110M-PL-v2 API & Inference Endpoint | FriendliAI",
+      "url": "https://friendli.ai/models/SlayerLab/GoLLeM-110M-PL-v2",
+      "snippet": "Deploy GoLLeM-110M-PL-v2 with low-latency inference on FriendliAI. Get scalable API serving, high throughput, and production-grade reliability for AI agents."
+    },
+    {
+      "title": "GitHub - fugue-labs/gollem: The production agent framework for Go ...",
+      "url": "https://github.com/fugue-labs/gollem",
+      "snippet": "The production agent framework for Go — type-safe agents, structured output, multi-provider streaming, guardrails, and multi-agent orchestration with zero core dependencies. - fugue-labs/gollem"
+    }
+  ]
+}

@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "advy/polyglotfake-detect",
+  "slug": "advy-polyglotfake-detect",
+  "author": "advy",
+  "url": "https://huggingface.co/advy/polyglotfake-detect",
+  "created_at": "2026-08-30T17:10:38.000Z",
+  "updated_at": "2026-08-30T18:13:25.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "PolyGlotFake: A Novel Multilingual and Multimodal DeepFake Dataset",
+      "url": "https://arxiv.org/abs/2405.08838",
+      "snippet": "With the rapid advancement of generative AI, multimodal deepfakes, which manipulate both audio and visual modalities, have drawn increasing public concern. Currently, deepfake detection has emerged as a crucial strategy in countering these growing threats. However, as a key factor in training and validating deepfake detectors, most existing deepfake datasets primarily focus on the visual modal ..."
+    },
+    {
+      "title": "PolyGlotFake: A Novel Multilingual and Multimodal DeepFake Dataset",
+      "url": "https://arxiv.org/html/2405.08838v1",
+      "snippet": "Additionally, ensuring the quality and consistency of each sample in a very large dataset can be challenging, which in turn affects the performance and reliability of the model. Therefore, in PolyGlotFake, our emphasis is on creating a high-quality, diverse dataset rather than merely focusing on its scale."
+    },
+    {
+      "title": "GitHub - tobuta/PolyGlotFake",
+      "url": "https://github.com/tobuta/PolyGlotFake",
+      "snippet": "PolyGlotFake is a multilingual and multimodal deepfake dataset meticulously designed to address the challenges and demands of deepfake detection technologies. It consists of videos with manipulated audio and visual components across seven languages, employing advanced Text-to-Speech, voice cloning, and lip-sync technologies."
+    },
+    {
+      "title": "PolyGlotFake: A Novel Multilingual and Multimodal DeepFake Dataset",
+      "url": "https://dl.acm.org/doi/abs/10.1007/978-3-031-78341-8_12",
+      "snippet": "We conduct comprehensive experiments using state-of-the-art detection methods on PolyGlotFake dataset. These experiments demonstrate the dataset&#x27;s significant challenges and its practical value in advancing research into multimodal deepfake detection."
+    },
+    {
+      "title": "PolyGlotFake: A Novel Multilingual and Multimodal DeepFake Dataset | AI ...",
+      "url": "https://www.aimodels.fyi/papers/arxiv/polyglotfake-novel-multilingual-multimodal-deepfake-dataset",
+      "snippet": "The PolyGlotFake dataset provides a valuable new resource for advancing multilingual and multimodal deepfake detection research. By expanding the diversity of deepfake data available, it has the potential to drive the development of more robust and generalizable detection algorithms."
+    }
+  ]
+}

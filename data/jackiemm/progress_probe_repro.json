@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "JackieMM/progress_probe_repro",
+  "slug": "jackiemm-progress_probe_repro",
+  "author": "JackieMM",
+  "url": "https://huggingface.co/JackieMM/progress_probe_repro",
+  "created_at": "2026-08-30T11:32:40.000Z",
+  "updated_at": "2026-08-30T11:32:42.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "JackieMM (Jackie MING) - Hugging Face",
+      "url": "https://huggingface.co/JackieMM",
+      "snippet": "JackieMM/blocks_ranking_rgb-pi05-himacon-concept-l14-rmsnorm-alpha015-demo-clean-30000-pending-eval Robotics •Updated 15 days ago"
+    },
+    {
+      "title": "Repro - Computational Arbitrage in AI Model Markets",
+      "url": "https://huggingface.co/spaces/Rjchauhan/repro-computational-arbitrage-0xUvKZSQxV",
+      "snippet": "All six major claims of &#x27;Computational Arbitrage in AI Model Markets&#x27; (Olmedo et al., ICML 2026) reproduce on the authors&#x27; own data and code. Simple cascade-based arbitrage on SWE-bench yields up to 41% profit margins (Claim 1), growing to 55% in a six-provider market versus 46% in a two-provider market (Claim 2). Distilling a 1.7B model on 5.4B tokens produces 27.6% profit margin with log ..."
+    },
+    {
+      "title": "GitHub - tomonarifeehan/repromodel: Boosting the AI research efficiency",
+      "url": "https://github.com/tomonarifeehan/repromodel",
+      "snippet": "ReproModel helps the AI research community to reproduce, compare, train, and test AI models faster. ReproModel toolbox revolutionizes research efficiency by providing standardized models, dataloaders, and processing procedures. It features a comprehensive suite of pre-existing experiments, a code extractor, and an LLM descriptor."
+    },
+    {
+      "title": "The Jailbreak Index",
+      "url": "https://slowlow999.github.io/The_Jailbreak_Index/",
+      "snippet": "⚠️ Disclaimer: This index is for educational and research purposes only. Data is compiled from publicly available sources and may not reflect the most current model versions. Always consult official documentation and conduct your own security assessments before deploying AI models in production environments."
+    },
+    {
+      "title": "GitHub - Jamlake/repromodel: Boosting the AI research efficiency",
+      "url": "https://github.com/Jamlake/repromodel",
+      "snippet": "ReproModel helps the AI research community to reproduce, compare, train, and test AI models faster. ReproModel toolbox revolutionizes research efficiency by providing standardized models, dataloaders, and processing procedures."
+    }
+  ]
+}
