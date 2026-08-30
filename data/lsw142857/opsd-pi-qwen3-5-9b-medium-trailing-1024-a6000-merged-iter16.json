@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "LSW142857/OPSD-PI-Qwen3.5-9B-Medium-Trailing-1024-A6000-Merged-Iter16",
+  "slug": "lsw142857-opsd-pi-qwen3-5-9b-medium-trailing-1024-a6000-merged-iter16",
+  "author": "LSW142857",
+  "url": "https://huggingface.co/LSW142857/OPSD-PI-Qwen3.5-9B-Medium-Trailing-1024-A6000-Merged-Iter16",
+  "created_at": "2026-08-29T23:49:10.000Z",
+  "updated_at": "2026-08-29T23:53:41.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_5",
+    "image-text-to-text",
+    "qwen3.5",
+    "opsd",
+    "code",
+    "mtp",
+    "text-generation",
+    "conversational",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 9653104368,
+  "parameters_human": "9.65B",
+  "storage_bytes": 20029164997,
+  "storage_human": "20.0 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "LSW142857/Qwen3.5-9B-OPSD-PI-Strong-ckpt15 · Hugging Face",
+      "url": "https://huggingface.co/LSW142857/Qwen3.5-9B-OPSD-PI-Strong-ckpt15",
+      "snippet": "This is the self-contained Hugging Face model obtained by merging the final Strong-PI OPSD LoRA adapter (checkpoint 15) into Qwen/Qwen3.5-9B with alpha / rank = 128 / 64 = 2.0."
+    },
+    {
+      "title": "LSW142857 (shiwei liu) - Hugging Face",
+      "url": "https://huggingface.co/LSW142857",
+      "snippet": "LSW142857/Qwen3.5-9B-OPSD-PI-Medium-ckpt15 Image-Text-to-Text • 10B•Updated 6 days ago• 32"
+    },
+    {
+      "title": "Qwen3.5-9B-OPSD-PI-Medium-ckpt15 - FriendliAI",
+      "url": "https://friendli.ai/models/LSW142857/Qwen3.5-9B-OPSD-PI-Medium-ckpt15",
+      "snippet": "Run Qwen3.5-9B-OPSD-PI-Medium-ckpt15 with FriendliAI inference. This is the self-contained Hugging Face model obtained by merging the final Medium-PI OPSD…"
+    },
+    {
+      "title": "qwen3.5:9b - ollama.com",
+      "url": "https://ollama.com/library/qwen3.5:9b",
+      "snippet": "Qwen3.5 represents a significant leap forward, integrating breakthroughs in multimodal learning, architectural efficiency, reinforcement learning scale, and global accessibility to empower developers and enterprises with unprecedented capability and efficiency."
+    },
+    {
+      "title": "Qwen 3.5: All 8 Models, Benchmarks & Local Setup Guide",
+      "url": "https://qwen-ai.com/qwen-3-5/",
+      "snippet": "Qwen 3.5: The Complete Guide to Every Model in the Family Qwen 3.5 isn&#x27;t a single model. It&#x27;s a family of eight open-weight models ranging from 0.8B to 397B parameters, all released under Apache 2.0, all natively multimodal (text, image, video), and all built on a hybrid architecture that mixes linear attention with traditional transformers."
+    }
+  ]
+}

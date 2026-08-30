@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "plutovion/lifeadmin-whisper-small-int8",
+  "slug": "plutovion-lifeadmin-whisper-small-int8",
+  "author": "plutovion",
+  "url": "https://huggingface.co/plutovion/lifeadmin-whisper-small-int8",
+  "created_at": "2026-08-29T20:33:26.000Z",
+  "updated_at": "2026-08-29T20:37:18.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "automatic-speech-recognition",
+  "library": "sherpa-onnx",
+  "languages": [
+    "multilingual"
+  ],
+  "tags": [
+    "sherpa-onnx",
+    "onnx",
+    "whisper",
+    "int8",
+    "offline",
+    "automatic-speech-recognition",
+    "multilingual",
+    "base_model:openai/whisper-small",
+    "base_model:quantized:openai/whisper-small",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 374614175,
+  "storage_human": "375 MB",
+  "base_model": "openai/whisper-small",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "openai/whisper-small · Hugging Face",
+      "url": "https://huggingface.co/openai/whisper-small",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "README.md · Intel/whisper-small-int8-static-inc at main",
+      "url": "https://huggingface.co/Intel/whisper-small-int8-static-inc/blob/main/README.md",
+      "snippet": "Model Details: INT8 Whisper small Whisper is a pre-trained model for automatic speech recognition (ASR) and speech translation. Trained on 680k hours of labelled data, Whisper models demonstrate a strong ability to generalise to many datasets and domains without the need for fine-tuning."
+    },
+    {
+      "title": "kiosk-python-runtime/models/whisper-small-int8-ov/README.md at main ...",
+      "url": "https://github.com/hananetworks/kiosk-python-runtime/blob/main/models/whisper-small-int8-ov/README.md",
+      "snippet": "Description This is whisper-small model converted to the OpenVINO™ IR (Intermediate Representation) format with weights compressed to INT8 by NNCF."
+    },
+    {
+      "title": "Whisper VRAM Requirements (Tiny to Large-v3) GIGAGPU",
+      "url": "https://gigagpu.com/whisper-vram-requirements/",
+      "snippet": "Complete OpenAI Whisper VRAM requirements from Tiny to Large-v3. FP32, FP16, INT8 tables, GPU recommendations, and real-time factor benchmarks."
+    },
+    {
+      "title": "Whisper small: memory & how to run locally · localmodel.run",
+      "url": "https://localmodel.run/model/whisper-small",
+      "snippet": "Home / Models / Whisper small Audio model · whisper Whisper small requirements Whisper small needs about 0.85 GB of memory at fp16 (whisper.cpp), light enough to run on CPU with no GPU required. Speech to text · 244M params · int8 / fp16 · released Sep 2022."
+    }
+  ]
+}

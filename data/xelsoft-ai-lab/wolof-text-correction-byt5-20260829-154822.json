@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "xelsoft-ai-lab/wolof-text-correction-byt5-20260829-154822",
+  "slug": "xelsoft-ai-lab-wolof-text-correction-byt5-20260829-154822",
+  "author": "xelsoft-ai-lab",
+  "url": "https://huggingface.co/xelsoft-ai-lab/wolof-text-correction-byt5-20260829-154822",
+  "created_at": "2026-08-29T19:40:13.000Z",
+  "updated_at": "2026-08-29T19:40:28.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "t5",
+    "text2text-generation",
+    "generated_from_trainer",
+    "base_model:google/byt5-small",
+    "base_model:finetune:google/byt5-small",
+    "license:apache-2.0",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 299072512,
+  "parameters_human": "299.1M",
+  "storage_bytes": 1196315873,
+  "storage_human": "1.2 GB",
+  "base_model": "google/byt5-small",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "XelSoft-ai - GitHub",
+      "url": "https://github.com/Xel-Soft-AI",
+      "snippet": "GitHub is where XelSoft-ai builds software."
+    },
+    {
+      "title": "xelsoftai (Xel Soft AI) - Hugging Face",
+      "url": "https://huggingface.co/xelsoftai",
+      "snippet": "XEL&#x27;SOFT AI is dedicated to building Artificial Intelligence for Africa — creating inclusive NLP resources, and innovative models like AfriKora to empower communities and businesses across the cont..."
+    },
+    {
+      "title": "Advancing Language Diversity and Inclusion: Towards a Neural Network ...",
+      "url": "https://aclanthology.org/2024.rail-1.16/",
+      "snippet": "This paper introduces a novel approach to spell checking and correction for low-resource and under-represented languages, with a specific focus on an African language, Wolof. By leveraging the capabilities of transformer models and neural networks, we propose an efficient and practical system capable of correcting typos and improving text quality."
+    },
+    {
+      "title": "Automatic Spell Checker and Correction for Under-represented Spoken ...",
+      "url": "https://api.emergentmind.com/papers/2305.12694",
+      "snippet": "This paper presents a spell checker and correction tool specifically designed for Wolof, an under-represented spoken language in Africa. The proposed spell checker leverages a combination of a trie data structure, dynamic programming, and the weighted Levenshtein distance to generate suggestions for misspelled words. We created novel linguistic resources for Wolof, such as a lexicon and a ..."
+    },
+    {
+      "title": "soynade-research/Oolel-v0.1 · Hugging Face",
+      "url": "https://huggingface.co/soynade-research/Oolel-v0.1",
+      "snippet": "Soynade Research is transforming this landscape with Oolel, the first open-source language model for Wolof. Built on the Qwen 2.5 architecture, Oolel combines state-of-the-art AI technology with deep Wolof linguistic expertise. With careful high-quality curated data, we trained and optimized Oolel for the following tasks:"
+    }
+  ]
+}

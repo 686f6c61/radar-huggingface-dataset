@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "junafinity/Gala-598M-MLX",
+  "slug": "junafinity-gala-598m-mlx",
+  "author": "junafinity",
+  "url": "https://huggingface.co/junafinity/Gala-598M-MLX",
+  "created_at": "2026-08-29T22:15:47.000Z",
+  "updated_at": "2026-08-29T22:22:00.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "mlx",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "mlx",
+    "apple-silicon",
+    "pretrained-from-scratch",
+    "gated-deltanet",
+    "linear-attention",
+    "product-key-memory",
+    "long-context",
+    "text-generation",
+    "en",
+    "dataset:HuggingFaceFW/fineweb-edu",
+    "arxiv:2605.21325",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 2290716008,
+  "storage_human": "2.3 GB",
+  "base_model": null,
+  "formats": [
+    "mlx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "junafinity (Arjun Reddy) - Hugging Face",
+      "url": "https://huggingface.co/junafinity/models",
+      "snippet": "AI & ML interests Hope you find the model you&#x27;re looking for"
+    },
+    {
+      "title": "AI Detector - Free AI Checker for ChatGPT, GPT-5 & Gemini",
+      "url": "https://gptzero.me/",
+      "snippet": "GPTZero detects AI content from Claude, ChatGPT, GPT-5, Gemini, and checks writing quality to make every word worth reading."
+    },
+    {
+      "title": "‎Google Gemini",
+      "url": "https://gemini.google.com/",
+      "snippet": "Meet Gemini, Google&#x27;s AI assistant. Get help with writing, planning, brainstorming, and more. Experience the power of generative AI."
+    },
+    {
+      "title": "MLX Studio — Chat, Code, Generate Images & More on Mac | On-Device AI ...",
+      "url": "https://mlx.studio/",
+      "snippet": "MLX Studio — create anything locally on your Mac. Chat, agentic coding, image generation & editing with Flux and Qwen, voice, vision, and reasoning. 5-layer caching, 20+ built-in tools, Anthropic + OpenAI APIs, built-in GGUF-to-MLX and JANG model converter. The most capable on-device AI app for Apple Silicon."
+    },
+    {
+      "title": "AI Aimbot Models & YOLO Detection Models | MossyModels",
+      "url": "https://mossymodels.com/",
+      "snippet": "Browse 661+ free YOLO and ONNX detection models across 43+ games. Community library for Fortnite, Valorant, Warzone, Apex Legends, and more."
+    }
+  ]
+}

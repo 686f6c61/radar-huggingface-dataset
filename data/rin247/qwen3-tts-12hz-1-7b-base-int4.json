@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "Rin247/Qwen3-TTS-12Hz-1.7B-Base-INT4",
+  "slug": "rin247-qwen3-tts-12hz-1-7b-base-int4",
+  "author": "Rin247",
+  "url": "https://huggingface.co/Rin247/Qwen3-TTS-12Hz-1.7B-Base-INT4",
+  "created_at": "2026-08-29T21:04:14.000Z",
+  "updated_at": "2026-08-29T21:05:55.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "qwen3_tts",
+    "arxiv:2601.15621",
+    "license:apache-2.0",
+    "8-bit",
+    "int4_weight_only",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1179469888,
+  "parameters_human": "1.18B",
+  "storage_bytes": 1633260088,
+  "storage_human": "1.6 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Jinstudio/Qwen3-TTS-12Hz-1.7B-Base · Hugging Face",
+      "url": "https://huggingface.co/Jinstudio/Qwen3-TTS-12Hz-1.7B-Base",
+      "snippet": "For the voice design model (Qwen3-TTS-12Hz-1.7B-VoiceDesign), you can use generate_voice_design to provide the target text and a natural-language instruct description."
+    },
+    {
+      "title": "GitHub - QwenLM/Qwen3-TTS: Qwen3-TTS is an open-source series of TTS ...",
+      "url": "https://github.com/QwenLM/Qwen3-TTS",
+      "snippet": "We release Qwen3-TTS, a series of powerful speech generation capabilities developed by Qwen, offering comprehensive support for voice clone, voice design, ultra-high-quality human-like speech generation, and natural language-based voice control. It provides developers and users with the most extensive set of speech generation features available."
+    },
+    {
+      "title": "romara-labs/Qwen3-TTS-12Hz-1.7B-Base-ONNX · Hugging Face",
+      "url": "https://huggingface.co/romara-labs/Qwen3-TTS-12Hz-1.7B-Base-ONNX",
+      "snippet": "Qwen3-TTS-12Hz-1.7B-Base-ONNX is the optimization of the Qwen3-TTS framework. This model implements a discrete multi-codec Language Model (LM) architecture capable of 3-second rapid voice cloning with enhanced prosody and vocal fidelity. The ONNX conversion enables low-latency, cross-platform deployment on both high-end CPUs and NVIDIA GPUs."
+    },
+    {
+      "title": "Qwen3 TTS 12Hz 1.7B Base by Qwen — VRAM 3.9GB | LLM Explorer",
+      "url": "https://llm-explorer.com/model/Qwen%2FQwen3-TTS-12Hz-1.7B-Base,2HZTyoJ6nTMjkMtyXfHWnq",
+      "snippet": "Qwen3 TTS 12Hz 1.7B Base is an open-source 1.7b LLM by Qwen. VRAM 3.9GB. Compare benchmarks, capabilities, and deployment details on LLM Explorer."
+    },
+    {
+      "title": "Qwen3-TTS-12Hz Tutorial: Deploy Alibaba&#x27;s Efficient TTS Model",
+      "url": "https://aiindigo.com/tutorials/getting-started-with-qwen3-tts-12hz-1-7b-voicedesign-optimized-low-latency-speec",
+      "snippet": "Learn how to deploy and utilize the Qwen3-TTS-1.7B model for efficient text-to-speech generation, focusing on its unique 12Hz sampling architecture and voice design capabilities."
+    }
+  ]
+}

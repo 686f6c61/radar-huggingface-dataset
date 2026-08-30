@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "jvonrad/xscript-eval",
+  "slug": "jvonrad-xscript-eval",
+  "author": "jvonrad",
+  "url": "https://huggingface.co/jvonrad/xscript-eval",
+  "created_at": "2026-07-19T08:01:43.000Z",
+  "updated_at": "2026-08-29T22:56:52.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 672126985052,
+  "storage_human": "672.1 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "jvonrad/xscript-eval · Hugging Face",
+      "url": "https://huggingface.co/jvonrad/xscript-eval",
+      "snippet": "Isambard-AI is blocked by a CPU-minutes quota, so we evaluate the trained checkpoints on a GPU elsewhere. The models are a custom LLaMA-style Transformer (src/xscript/model.py) + SentencePiece tokenizer — pure PyTorch, using F.scaled_dot_product_attention, no flash-attn / triton / custom kernels — so they run on any stock GPU (or CPU, slowly)."
+    },
+    {
+      "title": "jvonrad (Jonathan von Rad) - Hugging Face",
+      "url": "https://huggingface.co/jvonrad",
+      "snippet": "AI & ML interests ... Recent Activity liked a dataset 5 days ago ... updated a model 6 days ago ... published a model 6 days ago"
+    },
+    {
+      "title": "LLM Leaderboard & AI Model Benchmarks — August 2026",
+      "url": "https://benchlm.ai/",
+      "snippet": "Compare 406 AI models across 408 benchmarks, with 228 ranked scores, source evidence, API pricing, context windows, runtime, and head-to-head pages."
+    },
+    {
+      "title": "jvonrad/xscript-embeddings at main - Hugging Face",
+      "url": "https://huggingface.co/datasets/jvonrad/xscript-embeddings/tree/main",
+      "snippet": "Datasets: jvonrad / xscript-embeddings like 0 Tags: cross-lingual representation-alignment interpretability License: other Dataset card FilesFiles and versions xet Community main xscript-embeddings 150 GB 1 contributor History:109 commits jvonrad Upload zh-starved-2b.npz with huggingface_hub 1356348 verifiedabout 15 hours ago .gitattributes Safe 2.5 kBinitial commitabout 15 hours ago README.md ..."
+    },
+    {
+      "title": "jvonrad/xscript-embeddings · Datasets at Hugging Face",
+      "url": "https://huggingface.co/datasets/jvonrad/xscript-embeddings",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    }
+  ]
+}

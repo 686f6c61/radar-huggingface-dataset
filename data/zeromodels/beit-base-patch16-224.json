@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "zeromodels/beit-base-patch16-224",
+  "slug": "zeromodels-beit-base-patch16-224",
+  "author": "zeromodels",
+  "url": "https://huggingface.co/zeromodels/beit-base-patch16-224",
+  "created_at": "2026-08-29T21:41:49.000Z",
+  "updated_at": "2026-08-29T21:42:21.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-classification",
+  "library": "zeromodels",
+  "languages": [],
+  "tags": [
+    "zeromodels",
+    "keras",
+    "beit",
+    "image-classification",
+    "vit",
+    "backbone",
+    "arxiv:2106.08254",
+    "pytorch",
+    "jax",
+    "tf",
+    "base_model:microsoft/beit-base-patch16-224",
+    "base_model:finetune:microsoft/beit-base-patch16-224",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 346572800,
+  "storage_human": "347 MB",
+  "base_model": "microsoft/beit-base-patch16-224",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "README.md · microsoft/beit-base-patch16-224 at main",
+      "url": "https://huggingface.co/microsoft/beit-base-patch16-224/blob/main/README.md",
+      "snippet": "BEiT (base-sized model, fine-tuned on ImageNet-1k) BEiT model pre-trained in a self-supervised fashion on ImageNet-21k (14 million images, 21,841 classes) at resolution 224x224, and fine-tuned on ImageNet 2012 (1 million images, 1,000 classes) at resolution 224x224. It was introduced in the paper BEIT: BERT Pre-Training of Image Transformers by Hangbo Bao, Li Dong and Furu Wei and first ..."
+    },
+    {
+      "title": "microsoft/beit-base-patch16-224 · Hugging Face",
+      "url": "https://huggingface.co/microsoft/beit-base-patch16-224",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "microsoft/beit-base-patch16-224 - AI Model Zoo - BimAnt",
+      "url": "http://zoo.bimant.com/model/22684",
+      "snippet": "BEiT model pre-trained in a self-supervised fashion on ImageNet-21k (14 million images, 21,841 classes) at resolution 224x224, and fine-tuned on ImageNet 2012 (1 million images, 1,000 classes) at resolution 224x224. It was introduced in the paper BEIT: BERT Pre-Training of Image Transformers by Hangbo Bao, Li Dong and Furu Wei and first released in this repository."
+    },
+    {
+      "title": "beit-base-patch16-224-pt22k-ft22k · Models",
+      "url": "https://www.modelscope.cn/models/microsoft/beit-base-patch16-224-pt22k-ft22k",
+      "snippet": "BEiT (base-sized model, fine-tuned on ImageNet-22k) BEiT model pre-trained in a self-supervised fashion on ImageNet-22k - also called ImageNet-21k (14 million images, 21,841 classes) at resolution 224x224, and fine-tuned on the same dataset at resolution 224x224."
+    },
+    {
+      "title": "Beit Base Patch 16 224 - Specs, Capabilities & Benchmarks - inferbase.ai",
+      "url": "https://inferbase.ai/models/microsoft-beit-base-patch16-224",
+      "snippet": "Microsoft&#x27;s Beit Base Patch 16 224 is a Vision Transformer model pre-trained in a self-supervised fashion on ImageNet-21k and fine-tuned on ImageNet-1k, exceling at learning inner representations of images for downstream tasks such as image classification. It notably utilizes relative position embeddings and a mean-pooling approach for classification. Input Output Context - Max Output ..."
+    }
+  ]
+}

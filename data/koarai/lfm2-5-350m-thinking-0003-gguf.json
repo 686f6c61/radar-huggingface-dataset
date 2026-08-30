@@ -5,7 +5,7 @@
   "author": "KoarAI",
   "url": "https://huggingface.co/KoarAI/LFM2.5-350M-Thinking-0003-GGUF",
   "created_at": "2026-08-29T12:03:59.000Z",
-  "updated_at": "2026-08-29T13:04:49.000Z",
+  "updated_at": "2026-08-29T16:45:36.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -43,8 +43,8 @@
   "trending_score": 0,
   "parameters": 353322752,
   "parameters_human": "353.3M",
-  "storage_bytes": 1418784259,
-  "storage_human": "1.4 GB",
+  "storage_bytes": 4255348227,
+  "storage_human": "4.3 GB",
   "base_model": "KoarAI/LFM2.5-350M-Thinking-0003",
   "formats": [
     "gguf"

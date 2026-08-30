@@ -1,0 +1,78 @@
+{
+  "schema": 1,
+  "id": "sullivanUCSD/SCOUT",
+  "slug": "sullivanucsd-scout",
+  "author": "sullivanUCSD",
+  "url": "https://huggingface.co/sullivanUCSD/SCOUT",
+  "created_at": "2026-04-22T02:17:58.000Z",
+  "updated_at": "2026-08-29T23:30:05.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "peft",
+    "safetensors",
+    "prompt-injection",
+    "detector-allocation",
+    "lora",
+    "grpo",
+    "qwen3",
+    "text-generation",
+    "en",
+    "dataset:sullivanUCSD/SCOUT-30K",
+    "dataset:sullivanUCSD/anchor-400",
+    "dataset:sullivanUCSD/SCOUT-450",
+    "arxiv:2605.30837",
+    "base_model:sullivanUCSD/SCOUT-SFT-only",
+    "base_model:adapter:sullivanUCSD/SCOUT-SFT-only",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1057033192,
+  "storage_human": "1.1 GB",
+  "base_model": "sullivanUCSD/SCOUT-SFT-only",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "SCOUT - a sullivanUCSD Collection - Hugging Face",
+      "url": "https://huggingface.co/collections/sullivanUCSD/scout",
+      "snippet": "Unlock the magic of AI with handpicked models, awesome datasets, papers, and mind-blowing Spaces from sullivanUCSD"
+    },
+    {
+      "title": "sullivanUCSD/SCOUT-450 at main - Hugging Face",
+      "url": "https://huggingface.co/datasets/sullivanUCSD/SCOUT-450/tree/main",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GitHub - Rockyli11/SCOUT: Open-source application of Send a SCOUT First ...",
+      "url": "https://github.com/Rockyli11/SCOUT",
+      "snippet": "Use --test-data only for the sullivanUCSD/SCOUT-450 test set. The runtime predictor currently supports the vllm backend, so use a GPU machine with the required model weights available."
+    },
+    {
+      "title": "Scout AI - Foundation Model for Defense Robotics",
+      "url": "https://scoutco.ai/",
+      "snippet": "A vision‑language‑action (VLA) model is a multi‑modal large language model that takes real‑time camera data and a text prompt as inputs and outputs robot actions."
+    },
+    {
+      "title": "FishSense Scout - Autonomous eyes for large-scale ocean monitoring",
+      "url": "https://e4e.ucsd.edu/fishsense-scout",
+      "snippet": "FishSense Scout is the newest addition to the FishSense family and is currently under active development. Scout serves as the basis for an automated sensing platform intended for applications such as large-scale ocean monitoring, aquaculture, and other environments where a computer-controlled camera system can support repeatable data collection over extended periods. Scout is being developed ..."
+    }
+  ]
+}

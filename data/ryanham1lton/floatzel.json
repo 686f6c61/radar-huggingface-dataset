@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "Ryanham1lton/Floatzel",
+  "slug": "ryanham1lton-floatzel",
+  "author": "Ryanham1lton",
+  "url": "https://huggingface.co/Ryanham1lton/Floatzel",
+  "created_at": "2026-08-29T20:09:23.000Z",
+  "updated_at": "2026-08-29T20:09:53.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:cc-by-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 116877628,
+  "storage_human": "117 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Floatzel｜AI Art Model & LoRA | PixAI",
+      "url": "https://pixai.art/en/model/1995420196918364686",
+      "snippet": "Just created this stunning anime art with the amazing &#x27;Floatzel&#x27; model on PixAI! Search for \"Floatzel\" on PixAI - the free & professional AI anime art generator. Create your own masterpieces in seconds. Try it now!"
+    },
+    {
+      "title": "GitHub - deepbrainai-research/float: [ICCV 2025] Official Pytorch ...",
+      "url": "https://github.com/deepbrainai-research/float",
+      "snippet": "Official Pytorch Implementation of FLOAT; Flow Matching for Audio-driven Talking Portrait Video Generation FLOAT: Generative Motion Latent Flow Matching for Audio-driven Talking Portrait Taekyung Ki, Dongchan Min, Gyeongsu Chae Project Page: https://deepbrainai-research.github.io/float/ Abstract: With the rapid advancement of diffusion-based generative models, portrait image animation has ..."
+    },
+    {
+      "title": "Ryanham1lton/Numel at main - Hugging Face",
+      "url": "https://huggingface.co/Ryanham1lton/Numel/tree/main",
+      "snippet": "Ryanham1lton / Numel like 0 License:cc-by-4. Model card FilesFiles and versions xet Community Copy to bucket new main Numel 113 MB Ctrl+K Ctrl+K 1 contributor History:2 commits Ryanham1lton Upload 3 files ffb6609 verified17 days ago .gitattributes 1.57 kBUpload 3 files17 days ago Numel (Eric Stuart).pth 55.2 MB xet Upload 3 files17 days ago Numel.index 3.46 MB xet Upload 3 files17 days ago ..."
+    },
+    {
+      "title": "Floatzel - 1.0 FURRY FEMALE - Free AI LORA | Tensor.Art",
+      "url": "https://tensor.art/models/697695408618606687",
+      "snippet": "Download Floatzel - free LORA SD 1.5 AI model on TENSOR. FURRY FEMALE, POKEMON. By user_668050711120027677"
+    },
+    {
+      "title": "Ryanham1lton/SpoinkRL at main - Hugging Face",
+      "url": "https://huggingface.co/Ryanham1lton/SpoinkRL/tree/main",
+      "snippet": "Ryanham1lton / SpoinkRL like 0 License:cc-by-4. Model card FilesFiles and versions xet Community Copy to bucket new main SpoinkRL 133 MB Ctrl+K Ctrl+K 1 contributor History:2 commits Ryanham1lton Upload 3 files 8a38c9d verified3 days ago .gitattributes 1.57 kBUpload 3 files3 days ago README.md Safe 27 Bytesinitial commit3 days ago Spoink (Rachael Lillis).pth 55.2 MB xet Upload 3 files3 days ..."
+    }
+  ]
+}

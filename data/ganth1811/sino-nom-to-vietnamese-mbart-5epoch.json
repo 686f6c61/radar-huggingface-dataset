@@ -5,7 +5,7 @@
   "author": "Ganth1811",
   "url": "https://huggingface.co/Ganth1811/sino-nom-to-vietnamese-mbart-5epoch",
   "created_at": "2026-08-28T17:58:50.000Z",
-  "updated_at": "2026-08-28T17:59:30.000Z",
+  "updated_at": "2026-08-29T04:02:44.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": null,
@@ -21,12 +21,12 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 0,
+  "downloads_30d": 8,
   "trending_score": 0,
   "parameters": 611129542,
   "parameters_human": "611.1M",
-  "storage_bytes": 2466742406,
-  "storage_human": "2.5 GB",
+  "storage_bytes": 4928415916,
+  "storage_human": "4.9 GB",
   "base_model": null,
   "formats": [
     "safetensors"

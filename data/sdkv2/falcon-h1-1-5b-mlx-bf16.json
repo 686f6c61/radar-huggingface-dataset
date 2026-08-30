@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "sdkv2/falcon-h1-1.5b-mlx-bf16",
+  "slug": "sdkv2-falcon-h1-1-5b-mlx-bf16",
+  "author": "sdkv2",
+  "url": "https://huggingface.co/sdkv2/falcon-h1-1.5b-mlx-bf16",
+  "created_at": "2026-08-29T23:33:54.000Z",
+  "updated_at": "2026-08-30T00:26:31.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "mlx",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "falcon_h1",
+    "falcon-h1",
+    "mamba",
+    "text-generation",
+    "en",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1554859392,
+  "parameters_human": "1.55B",
+  "storage_bytes": 3109764737,
+  "storage_human": "3.1 GB",
+  "base_model": null,
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Falcon-H1 Local Deployment Guide: MLX, llama.cpp, and OpenWebUI",
+      "url": "https://falcon-lm.github.io/tutorials/falcon-h1/",
+      "snippet": "You can get the Falcon H1 0.5B and 1.5B models from the official Hugging Face repository maintained by TII. This guide focuses on the Falcon 1.5B Instruct model."
+    },
+    {
+      "title": "tiiuae/Falcon-H1-1.5B-Instruct · Hugging Face",
+      "url": "https://huggingface.co/tiiuae/Falcon-H1-1.5B-Instruct",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "litert-community/Falcon-H1-1.5B-Instruct · Hugging Face",
+      "url": "https://huggingface.co/litert-community/Falcon-H1-1.5B-Instruct",
+      "snippet": "Distributed under the Falcon LLM License (inherited from the base model — see the license link). Changes from the original work: weights converted from safetensors bf16 to LiteRT flatbuffers and quantized as described above; tokenizer and chat template repackaged unmodified."
+    },
+    {
+      "title": "GitHub - tiiuae/Falcon-H1: All information and news with respect to ...",
+      "url": "https://github.com/tiiuae/falcon-h1",
+      "snippet": "Falcon-H1-.5B delivers performance on par with typical 7B models from 2024, while Falcon-H1-1.5B-Deep rivals many of the current leading 7B-10B models. Each Falcon-H1 model is designed to match or exceed the performance of models at least twice its size, making them ideal for low-resource and edge deployments without compromising on capability."
+    },
+    {
+      "title": "Falcon-H1: A Family of Hybrid-Head Language Models Redefining ...",
+      "url": "https://falcon-lm.github.io/blog/falcon-h1/",
+      "snippet": "Falcon CHAT Hugging Face Paper Github DEMO DISCORD Introduction Today, we are proud to introduce the Falcon-H1 series, a collection of six open-source models ranging from 0.5B to 34B parameters, each available in both base and instruction-tuned variants. At the core of these models lies a hybrid architecture that combines the strengths of the classical Transformer-based attention mechanism ..."
+    }
+  ]
+}

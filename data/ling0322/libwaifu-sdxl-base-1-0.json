@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "ling0322/libwaifu-sdxl-base-1.0",
+  "slug": "ling0322-libwaifu-sdxl-base-1-0",
+  "author": "ling0322",
+  "url": "https://huggingface.co/ling0322/libwaifu-sdxl-base-1.0",
+  "created_at": "2026-08-29T22:16:34.000Z",
+  "updated_at": "2026-08-29T22:18:26.000Z",
+  "license": "openrail++",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-image",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "text-to-image",
+    "stable-diffusion",
+    "stable-diffusion-xl",
+    "libwaifu",
+    "waifupkg",
+    "arxiv:2307.01952",
+    "arxiv:2211.01324",
+    "arxiv:2108.01073",
+    "arxiv:2112.10752",
+    "base_model:stabilityai/stable-diffusion-xl-base-1.0",
+    "base_model:finetune:stabilityai/stable-diffusion-xl-base-1.0",
+    "license:openrail++",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 6969697224,
+  "storage_human": "7.0 GB",
+  "base_model": "stabilityai/stable-diffusion-xl-base-1.0",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "stabilityai/stable-diffusion-xl-base-1.0 · Hugging Face",
+      "url": "https://huggingface.co/stabilityai/stable-diffusion-xl-base-1.0",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "NexaAI/sdxl-base · Hugging Face",
+      "url": "https://huggingface.co/NexaAI/sdxl-base",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "SD XL - v1.0 VAE fix | Stable Diffusion XL Checkpoint | Civitai",
+      "url": "https://civitai.com/models/101055/sd-xl",
+      "snippet": "The chart above evaluates user preference for SDXL (with and without refinement) over Stable Diffusion 1.5 and 2.1. The SDXL base model performs significantly better than the previous variants, and the model combined with the refinement module achieves the best overall performance."
+    },
+    {
+      "title": "SDXL AI Models & Generator | Civitai",
+      "url": "https://civitai.com/ecosystems/sdxl",
+      "snippet": "SDXL is a larger, later Stability AI model that renders natively at 1024px with better composition and prompt understanding than SD 1.5. Try both on Civitai and compare."
+    },
+    {
+      "title": "Releases: Stability-AI/generative-models - GitHub",
+      "url": "https://github.com/Stability-AI/generative-models/releases",
+      "snippet": "Release Releasing two new open models with a permissive CreativeML Open RAIL++-M license (see Inference for file hashes): SDXL-base-1.0: An improved version over SDXL-base-.9. SDXL-refiner-1.0: An improved version over SDXL-refiner-.9. Sharing the technical report on SDXL is now available here Contributions #17: Setup packaging with hatch #59: Freeze requirements for .pt13, .pt2 environments ..."
+    }
+  ]
+}

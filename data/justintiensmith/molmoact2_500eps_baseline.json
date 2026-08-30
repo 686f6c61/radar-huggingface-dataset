@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "justintiensmith/molmoact2_500eps_baseline",
+  "slug": "justintiensmith-molmoact2_500eps_baseline",
+  "author": "justintiensmith",
+  "url": "https://huggingface.co/justintiensmith/molmoact2_500eps_baseline",
+  "created_at": "2026-08-29T21:31:52.000Z",
+  "updated_at": "2026-08-29T21:39:01.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "robotics",
+    "molmoact2",
+    "dataset:mattpidden/500eps-baseline-dataset",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 5442196272,
+  "parameters_human": "5.44B",
+  "storage_bytes": 10884592880,
+  "storage_human": "10.9 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "justintiensmith/molmoact2_500eps_endeffector_trace · Hugging Face",
+      "url": "https://huggingface.co/justintiensmith/molmoact2_500eps_endeffector_trace",
+      "snippet": "MolmoAct2 is an open robotics foundation model from the Allen Institute for AI (Ai2) that maps camera images and language instructions to robot action chunks. The LeRobot implementation supports training and evaluation of the regular MolmoAct2 model."
+    },
+    {
+      "title": "GitHub - allenai/molmoact2: Official Repository for MolmoAct2",
+      "url": "https://github.com/allenai/molmoact2",
+      "snippet": "Official Repository for MolmoAct2. Contribute to allenai/molmoact2 development by creating an account on GitHub."
+    },
+    {
+      "title": "justintiensmith (Justin Tien-Smith) - Hugging Face",
+      "url": "https://huggingface.co/justintiensmith",
+      "snippet": "User profile of Justin Tien-Smith on Hugging Face"
+    },
+    {
+      "title": "MolmoAct2: Action Reasoning Models for Real-world Deployment",
+      "url": "https://arxiv.org/abs/2605.02881",
+      "snippet": "We present MolmoAct2, a fully open action reasoning model built for practical deployment, advancing its predecessor along five axes. We introduce MolmoER, a VLM backbone specialized for spatial and embodied reasoning, trained on a 3.3M-sample corpus with a specialize-then-rehearse recipe."
+    },
+    {
+      "title": "GitHub - allenai/molmoact: Official Repository for MolmoAct",
+      "url": "https://github.com/allenai/MolmoAct",
+      "snippet": "MolmoAct: Multimodal Open Language Model for Action Updates [2026/5/5] 🔥 We have released MolmoAct2, faster, stronger, and better in every aspect. Check it out. [2025/12/5] 🔥 Tips on zero-shot evaluation of allenai/MolmoAct-7B-D-0812 on Franka setup with MolmoAct mid-training at 5.4 Zero-shot evaluation."
+    }
+  ]
+}

@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "agurung/cobalt-seeded-rl-base-ramp25-stoppen-gen4k-ep2-ncp10-iid30",
+  "slug": "agurung-cobalt-seeded-rl-base-ramp25-stoppen-gen4k-ep2-ncp10-iid30",
+  "author": "agurung",
+  "url": "https://huggingface.co/agurung/cobalt-seeded-rl-base-ramp25-stoppen-gen4k-ep2-ncp10-iid30",
+  "created_at": "2026-08-29T01:30:04.000Z",
+  "updated_at": "2026-08-30T00:08:33.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3",
+    "text-generation",
+    "openrlhf",
+    "grpo",
+    "reinforcement-learning",
+    "code-generation",
+    "base_model:Qwen/Qwen3-4B-Instruct-2507",
+    "base_model:finetune:Qwen/Qwen3-4B-Instruct-2507",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 4411424256,
+  "parameters_human": "4.41B",
+  "storage_bytes": 17657211690,
+  "storage_human": "17.7 GB",
+  "base_model": "Qwen/Qwen3-4B-Instruct-2507",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Models - Hugging Face",
+      "url": "https://huggingface.co/models?other=cobalt_v2",
+      "snippet": "Explore machine learning models. 2 Base only Inference AvailableInference Edit filters Sort: Trending Active filters: cobalt_v2 Clear all"
+    },
+    {
+      "title": "agurung/cobalt-ft-qwen3-4b-dpo-mixed-12-mc-raw-v1-lora-r128-a32-lr5e-6 ...",
+      "url": "https://huggingface.co/agurung/cobalt-ft-qwen3-4b-dpo-mixed-12-mc-raw-v1-lora-r128-a32-lr5e-6-const-lr5e-6-gb64-ep2-beta0p1",
+      "snippet": "The archive intentionally keeps HF/PEFT model artifacts and training metadata, but excludes optimizer, scheduler, and RNG state files. These repos are meant for evaluation and RL seeding, not exact optimizer-state resume."
+    },
+    {
+      "title": "Twitch.tv - Official Site",
+      "url": "https://www.twitch.tv/",
+      "snippet": "Twitch is the world`s leading video platform and community for gamers."
+    },
+    {
+      "title": "agurung/cobalt-ft-qwen3-4b-rft-iid-12-lora-r128-a32-lr2p5e-4-const ...",
+      "url": "https://friendli.ai/models/agurung/cobalt-ft-qwen3-4b-rft-iid-12-lora-r128-a32-lr2p5e-4-const-lr2p5e-4-qps8-gpuauto-ep2",
+      "snippet": "Run agurung/cobalt-ft-qwen3-4b-rft-iid-12-lora-r128-a32-lr2p5e-4-const-lr2p5e-4-qps8-gpuauto-ep2 with fast, reliable, and scalable inference on FriendliAI. Get low-latency performance with advanced quantization (FP4, FP8, INT4, INT8), continuous batching, optimized GPU kernels, token caching, and seamless API integration."
+    },
+    {
+      "title": "cobalt",
+      "url": "https://cobalt.tools/",
+      "snippet": "cobalt lets you save what you love without ads, tracking, paywalls or other nonsense. just paste the link and you&#x27;re ready to rock!"
+    }
+  ]
+}

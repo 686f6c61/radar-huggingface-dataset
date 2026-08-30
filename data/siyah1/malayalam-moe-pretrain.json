@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "siyah1/malayalam-moe-pretrain",
+  "slug": "siyah1-malayalam-moe-pretrain",
+  "author": "siyah1",
+  "url": "https://huggingface.co/siyah1/malayalam-moe-pretrain",
+  "created_at": "2026-08-24T03:15:49.000Z",
+  "updated_at": "2026-08-29T22:23:20.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "malayalam_moe",
+    "text-generation",
+    "generated_from_trainer",
+    "base_model:siyah1/malayalam-moe-pretrain",
+    "base_model:finetune:siyah1/malayalam-moe-pretrain",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 132,
+  "trending_score": 0,
+  "parameters": 371479296,
+  "parameters_human": "371.5M",
+  "storage_bytes": 57955447231,
+  "storage_human": "58.0 GB",
+  "base_model": "siyah1/malayalam-moe-pretrain",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "siyah1/malayalam-moe-pretrain · Hugging Face",
+      "url": "https://huggingface.co/siyah1/malayalam-moe-pretrain",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "siyah1/malayalam-moe-pretrain at main - Hugging Face",
+      "url": "https://huggingface.co/siyah1/malayalam-moe-pretrain/tree/main",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GitHub - pjlab-sys4nlp/llama-moe: ⛷️ LLaMA-MoE: Building Mixture-of ...",
+      "url": "https://github.com/pjlab-sys4nlp/llama-moe",
+      "snippet": "LLaMA-MoE is a series of open-sourced Mixture-of-Expert (MoE) models based on LLaMA and SlimPajama. We build LLaMA-MoE with the following two steps: Partition LLaMA&#x27;s FFNs into sparse experts and insert top-K gate for each layer of experts. Continually pre-train the initialized MoE model with an optimized data sampling weights from Sheared LLaMA and filtered datasets from SlimPajama."
+    },
+    {
+      "title": "GitHub - VishnuPJ/MalayaLLM: A Continually LoRA PreTrained and ...",
+      "url": "https://github.com/VishnuPJ/MalayaLLM",
+      "snippet": "A 7B LLaMA-2 Indic model. Continually LoRA PreTrained and FineTuned on \"Malayalam\" tokens. This is an attempt to construct a Large Language Model (LLM) focused on generative AI for Malayalam language. While several LLMs are proficient in supporting multiple languages, including Malayalam, enhancing their performance for specific tasks such as content generation and question answering ..."
+    },
+    {
+      "title": "CodaLab - Competitions",
+      "url": "https://codalab.lisn.upsaclay.fr/competitions/",
+      "snippet": "Mobile AI 2026 Real-Time Video Super-Resolution Challenge Organized by gosha20777"
+    }
+  ]
+}

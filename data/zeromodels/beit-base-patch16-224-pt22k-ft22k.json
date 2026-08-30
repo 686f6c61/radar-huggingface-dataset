@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "zeromodels/beit-base-patch16-224-pt22k-ft22k",
+  "slug": "zeromodels-beit-base-patch16-224-pt22k-ft22k",
+  "author": "zeromodels",
+  "url": "https://huggingface.co/zeromodels/beit-base-patch16-224-pt22k-ft22k",
+  "created_at": "2026-08-29T21:45:30.000Z",
+  "updated_at": "2026-08-29T21:46:03.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-classification",
+  "library": "zeromodels",
+  "languages": [],
+  "tags": [
+    "zeromodels",
+    "keras",
+    "beit",
+    "image-classification",
+    "vit",
+    "backbone",
+    "arxiv:2106.08254",
+    "pytorch",
+    "jax",
+    "tf",
+    "base_model:microsoft/beit-base-patch16-224-pt22k-ft22k",
+    "base_model:finetune:microsoft/beit-base-patch16-224-pt22k-ft22k",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 410679716,
+  "storage_human": "411 MB",
+  "base_model": "microsoft/beit-base-patch16-224-pt22k-ft22k",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "microsoft/beit-base-patch16-224-pt22k-ft22k · Hugging Face",
+      "url": "https://huggingface.co/microsoft/beit-base-patch16-224-pt22k-ft22k",
+      "snippet": "BEiT (base-sized model, fine-tuned on ImageNet-22k) BEiT model pre-trained in a self-supervised fashion on ImageNet-22k - also called ImageNet-21k (14 million images, 21,841 classes) at resolution 224x224, and fine-tuned on the same dataset at resolution 224x224."
+    },
+    {
+      "title": "microsoft/beit-base-patch16-224-pt22k · Hugging Face",
+      "url": "https://huggingface.co/microsoft/beit-base-patch16-224-pt22k",
+      "snippet": "BEiT (base-sized model, pre-trained only) BEiT model pre-trained in a self-supervised fashion on ImageNet-22k - also called ImageNet-21k (14 million images, 21,841 classes) at resolution 224x224. It was introduced in the paper BEIT: BERT Pre-Training of Image Transformers by Hangbo Bao, Li Dong and Furu Wei and first released in this repository."
+    },
+    {
+      "title": "beit-base-patch16-224-pt22k-ft22k · Models",
+      "url": "https://www.modelscope.cn/models/microsoft/beit-base-patch16-224-pt22k-ft22k",
+      "snippet": "BEiT (base-sized model, fine-tuned on ImageNet-22k) BEiT model pre-trained in a self-supervised fashion on ImageNet-22k - also called ImageNet-21k (14 million images, 21,841 classes) at resolution 224x224, and fine-tuned on the same dataset at resolution 224x224."
+    },
+    {
+      "title": "beit-base-patch16-224-pt22k-ft22k: Image-to-Image model — overview, use ...",
+      "url": "https://www.aimodels.fyi/models/huggingFace/beit-base-patch16-224-pt22k-ft22k-microsoft",
+      "snippet": "Overview beit-base-patch16-224-pt22k-ft22k is a Vision Transformer (ViT) model created by microsoft that performs image classification on 21,841 ImageNet-22k classes. The model uses a BERT-like transformer encoder architecture with 16x16 patch embeddings and relative position embeddings (similar to T5) rather than absolute embeddings. It was pre-trained on 14 million images from ImageNet-21k ..."
+    },
+    {
+      "title": "AI Model Catalog | Microsoft Foundry Models",
+      "url": "https://ai.azure.com/catalog/models/microsoft-beit-base-patch16-224-pt22k-ft22k",
+      "snippet": "Training Data The BEiT model is pre-trained on ImageNet-22k, encompassing 14 million images and 21,000 classes and fine-tuned on the same dataset. Training Procedure In the preprocessing step, images are resized to the same resolution 224x224. Images are scaled with augmentations like random resized cropping, horizontal flipping, color jittering. Then normalized across the RGB channels with ..."
+    }
+  ]
+}

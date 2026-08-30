@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "joyhub/hub",
+  "slug": "joyhub-hub",
+  "author": "joyhub",
+  "url": "https://huggingface.co/joyhub/hub",
+  "created_at": "2026-08-01T05:42:41.000Z",
+  "updated_at": "2026-08-30T01:39:41.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 8057009867,
+  "storage_human": "8.1 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "joyhub/hub · Hugging Face",
+      "url": "https://huggingface.co/joyhub/hub",
+      "snippet": "joyhub / hub like 0 Model card FilesFiles and versions xet Community Copy to bucket new No model card Downloads last month -"
+    },
+    {
+      "title": "joyhub (joyhub) - Hugging Face",
+      "url": "https://huggingface.co/joyhub",
+      "snippet": "User profile of joyhub on Hugging Face Recent Activity updated a model13 days ago joyhub/hub published a model25 days ago joyhub/hub View all activity"
+    },
+    {
+      "title": "Joyhub Introduces AI Feature for Creator Interactive Personas",
+      "url": "https://avn.com/press/technology/joyhub-introduces-ai-feature-for-creator-interactive-personas-149562",
+      "snippet": "LOS ANGELES —Joyhub has introduced a new feature allowing creators to build AI-powered versions of themselves within its platform. According to the company, the feature enables creators to create personalized AI personas based on their tone, style, and preferences."
+    },
+    {
+      "title": "Joyhub",
+      "url": "https://joyhub.ai/",
+      "snippet": "Joyhub"
+    },
+    {
+      "title": "joyhub_official on X: \"JoyHub x AVN Official: Introducing Creator AI ...",
+      "url": "https://x.com/JoyhubOfficial/status/2049069005496021371",
+      "snippet": "JoyHub x AVN Official: Introducing Creator AI Big news! We are announcing Creator AI on JoyHub with AVN.@AVNMediaNetwork Creators will soon be able to build AI versions of themselves — trained on their real tone, style, and personality. Fans can chat in real time, on demand,"
+    }
+  ]
+}

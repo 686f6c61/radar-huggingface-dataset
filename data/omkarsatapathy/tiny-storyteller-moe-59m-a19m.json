@@ -5,24 +5,29 @@
   "author": "Omkarsatapathy",
   "url": "https://huggingface.co/Omkarsatapathy/Tiny-Storyteller-MoE-59M-A19M",
   "created_at": "2026-08-29T12:56:03.000Z",
-  "updated_at": "2026-08-29T13:05:55.000Z",
+  "updated_at": "2026-08-29T20:17:41.000Z",
   "license": "mit",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
-  "library": null,
+  "library": "transformers",
   "languages": [
     "en"
   ],
   "tags": [
+    "transformers",
     "safetensors",
     "tinymoe",
+    "text-generation",
     "mixture-of-experts",
     "moe",
+    "megablocks",
     "tinystories",
-    "text-generation",
+    "from-scratch",
     "custom_code",
     "en",
     "dataset:roneneldan/TinyStoriesInstruct",
+    "arxiv:2104.09864",
+    "arxiv:2002.05202",
     "license:mit",
     "region:us"
   ],
@@ -31,8 +36,8 @@
   "trending_score": 0,
   "parameters": 59019200,
   "parameters_human": "59.0M",
-  "storage_bytes": 129876656,
-  "storage_human": "130 MB",
+  "storage_bytes": 134496011,
+  "storage_human": "134 MB",
   "base_model": null,
   "formats": [
     "safetensors"

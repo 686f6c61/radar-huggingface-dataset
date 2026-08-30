@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "developerjeremylive/GLM-5.3-Flash-9B-Surgery-Dummy-etheroi",
+  "slug": "developerjeremylive-glm-5-3-flash-9b-surgery-dummy-etheroi",
+  "author": "developerjeremylive",
+  "url": "https://huggingface.co/developerjeremylive/GLM-5.3-Flash-9B-Surgery-Dummy-etheroi",
+  "created_at": "2026-08-29T21:59:57.000Z",
+  "updated_at": "2026-08-29T22:00:00.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "glm5_next",
+    "image-text-to-text",
+    "glm5-next",
+    "model-surgery",
+    "dummy",
+    "test-model",
+    "text-generation",
+    "conversational",
+    "base_model:zai-org/GLM-5.3-Flash",
+    "base_model:quantized:zai-org/GLM-5.3-Flash",
+    "endpoints_compatible",
+    "fp8",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 8895671964,
+  "parameters_human": "8.90B",
+  "storage_bytes": 11345889530,
+  "storage_human": "11.3 GB",
+  "base_model": "zai-org/GLM-5.3-Flash",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GLM 5.3 Flash - EmpirioLabs AI Docs",
+      "url": "https://docs.empiriolabs.ai/models/glm-5-3-flash",
+      "snippet": "Natively multimodal flash model with a 1M token context, image and video input, always-on reasoning, native web search, and tool calling."
+    },
+    {
+      "title": "GLM 5.3 Flash API: Pricing, Playground & Docs | EmpirioLabs AI",
+      "url": "https://empiriolabs.ai/models/glm-5-3-flash",
+      "snippet": "About GLM 5.3 Flash Natively multimodal flash model with a 1M token context, image and video input, always-on reasoning, native web search, and tool calling."
+    },
+    {
+      "title": "GLM-5.3 | OpenLM.ai",
+      "url": "https://openlm.ai/glm-5.5/",
+      "snippet": "GLM-5.3 is our latest flagship model for coding and long-horizon tasks. It marks a substantial leap in long-horizon task capability over its predecessor GLM-5.1 and delivers that capability on a solid 1M-token context. It is pure open with an MIT open-source license — no regional limits, technical access without borders."
+    },
+    {
+      "title": "GLM 5.3 Flash API - Documentation - DeepInfra",
+      "url": "https://deepinfra.com/zai-org/GLM-5.3-Flash/api",
+      "snippet": "GLM-5.3-Flash is a native multimodal model from Z.ai. It is suited for efficient coding and long-horizon agent tasks. Its hybrid sparse and linear attention architecture maintains accurate long-context behavior while reducing compute overhead. Deploy Private Endpoint Public fp8 1,048,576 JSON Function demo api versions OpenAI Chat Completions ..."
+    },
+    {
+      "title": "imvladikon/GLM-5.3-Flash-9B-Surgery-Dummy · Hugging Face",
+      "url": "https://huggingface.co/imvladikon/GLM-5.3-Flash-9B-Surgery-Dummy",
+      "snippet": "This checkpoint preserves GLM-5.3-Flash width/kernel geometry while reducing the decoder from 45 to 10 layers and each routed MoE from 288 to 32 experts. It has 8,895,622,684 text parameters."
+    }
+  ]
+}

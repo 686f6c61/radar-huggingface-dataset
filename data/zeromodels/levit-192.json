@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "zeromodels/levit-192",
+  "slug": "zeromodels-levit-192",
+  "author": "zeromodels",
+  "url": "https://huggingface.co/zeromodels/levit-192",
+  "created_at": "2026-08-30T00:56:28.000Z",
+  "updated_at": "2026-08-30T00:56:38.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-classification",
+  "library": "zeromodels",
+  "languages": [],
+  "tags": [
+    "zeromodels",
+    "keras",
+    "image-classification",
+    "vit",
+    "backbone",
+    "levit",
+    "arxiv:2104.01136",
+    "pytorch",
+    "jax",
+    "tf",
+    "base_model:facebook/levit-192",
+    "base_model:finetune:facebook/levit-192",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 44653528,
+  "storage_human": "45 MB",
+  "base_model": "facebook/levit-192",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "facebook/levit-192 · Hugging Face",
+      "url": "https://huggingface.co/facebook/levit-192",
+      "snippet": "LeViT-192 model pre-trained on ImageNet-1k at resolution 224x224. It was introduced in the paper LeViT: a Vision Transformer in ConvNet&#x27;s Clothing for Faster Inference by Graham et al. and first released in this repository."
+    },
+    {
+      "title": "CNN-Transformer-Hybrid-LeViT-PT2TF/LeViT_192 at main ... - GitHub",
+      "url": "https://github.com/mdnuruzzamanKALLOL/CNN-Transformer-Hybrid-LeViT-PT2TF/tree/main/LeViT_192",
+      "snippet": "However, this package&#x27;s own pipeline does not import timm or auto-download that checkpoint -- the inline PyTorch model in models/pytorch_model.py reimplements timm&#x27;s LevitDistilled without depending on the timm library at runtime. This was verified directly: building the real timm.create_model (\"levit_192\") and this inline model side by side gives identical parameter counts, identical state ..."
+    },
+    {
+      "title": "README.md · facebook/levit-192 at main - Hugging Face",
+      "url": "https://huggingface.co/facebook/levit-192/blob/main/README.md",
+      "snippet": "imagenet-1k arxiv:2104.01136 apache-2.0 levit vision Model card Files Files and versions Community Train Deploy Use in Transformers"
+    },
+    {
+      "title": "LeViT-192 Open-Source Vision Model - Free Deployment to Boost Efficient ...",
+      "url": "https://model.aibase.com/models/details/1915694767641616385",
+      "snippet": "LeViT-192 is a model pre-trained on the ImageNet-1k dataset at a resolution of 224x224. It was introduced in the paper LeViT: a Vision Transformer in ConvNet&#x27;s Clothing for Faster Inference by Graham et al. and first released in this repository."
+    },
+    {
+      "title": "AI Model Catalog | Microsoft Foundry Models",
+      "url": "https://ai.azure.com/catalog/models/facebook-levit-192",
+      "snippet": "facebook/levit-192 powered by Hugging Face Inference Toolkit Original Model Card image-classification Task on Hugging Face Send Request You can use cURL or any REST Client to send a request to the AzureML endpoint with your AzureML token."
+    }
+  ]
+}

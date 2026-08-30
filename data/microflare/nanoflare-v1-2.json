@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "MicroFlare/NanoFlare-v1",
+  "slug": "microflare-nanoflare-v1-2",
+  "author": "MicroFlare",
+  "url": "https://huggingface.co/MicroFlare/NanoFlare-v1",
+  "created_at": "2026-08-15T04:19:48.000Z",
+  "updated_at": "2026-08-30T00:49:19.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "base_model:Qwen/Qwen3.8-27B",
+    "base_model:quantized:Qwen/Qwen3.8-27B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "imatrix",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 956,
+  "trending_score": 0,
+  "parameters": 26895998464,
+  "parameters_human": "26.90B",
+  "storage_bytes": 31048973184,
+  "storage_human": "31.0 GB",
+  "base_model": "Qwen/Qwen3.8-27B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "MicroFlare/nanoFlare-v1 · Hugging Face",
+      "url": "https://huggingface.co/MicroFlare/nanoFlare-v1",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "MicroFlare/microFlare-v1 · Hugging Face",
+      "url": "https://huggingface.co/MicroFlare/microFlare-v1",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "‎Google Gemini",
+      "url": "https://gemini.google.com/",
+      "snippet": "Meet Gemini, Google&#x27;s AI assistant. Get help with writing, planning, brainstorming, and more. Experience the power of generative AI."
+    },
+    {
+      "title": "Gemini — Google DeepMind",
+      "url": "https://deepmind.google/models/gemini/",
+      "snippet": "Gemini 3.5 Flash-Lite has proven incredibly fast and reliable. Ultimately, the model unlocks direct accessibility, giving users a highly responsive option they can choose on demand for smooth, uninterrupted execution.\" Ashwin Kannan, Principal AI Engineer, Palo Alto Networks"
+    },
+    {
+      "title": "Models · Cloudflare AI docs",
+      "url": "https://developers.cloudflare.com/ai/models/",
+      "snippet": "Browse AI models available through Cloudflare, including hosted models on Workers AI and external providers via AI Gateway."
+    }
+  ]
+}

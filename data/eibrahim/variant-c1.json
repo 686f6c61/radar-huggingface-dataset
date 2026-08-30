@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "eibrahim/variant-c1",
+  "slug": "eibrahim-variant-c1",
+  "author": "eibrahim",
+  "url": "https://huggingface.co/eibrahim/variant-c1",
+  "created_at": "2026-08-29T19:59:52.000Z",
+  "updated_at": "2026-08-29T19:59:53.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "tags": [
+    "safetensors",
+    "qwen3",
+    "fine-tuned",
+    "custom",
+    "text-generation",
+    "custom_code",
+    "en",
+    "zh",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 4112384,
+  "parameters_human": "4.1M",
+  "storage_bytes": 27872406,
+  "storage_human": "28 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "CivArchive (CivitAI Archive) - AI Model Archive",
+      "url": "https://civitaiarchive.com/",
+      "snippet": "Browse and discover AI models from CivitAI, TensorArt, and SeaArt. Community-driven archive preserving access to AI resources."
+    },
+    {
+      "title": "CivArchive - CivitAI Archive",
+      "url": "https://civarchive.com/about",
+      "snippet": "AI Artists: To find specific models and all their download links, especially if one link is broken. Developers/Researchers: To track specific model files (by hash) across the web and verify their existence."
+    },
+    {
+      "title": "AI Models | Civitai",
+      "url": "https://civitai.com/models",
+      "snippet": "Browse thousands of free Stable Diffusion & Flux models, LoRAs, checkpoints, and embeddings. The largest collection of AI image generation resources."
+    },
+    {
+      "title": "GitHub - czi-ai/variantformer: VariantFormer: A hierarchical ...",
+      "url": "https://github.com/czi-ai/variantformer",
+      "snippet": "VariantFormer is a 1.2-billion-parameter hierarchical transformer model that predicts tissue-specific gene expression from personalized diploid genomes. Unlike traditional reference-based models, VariantFormer directly incorporates individual genetic variants to generate tissue-conditioned, person-specific expression predictions across the genome."
+    },
+    {
+      "title": "PDF AI-Powered Ransomware: Automated Variant Proliferation",
+      "url": "https://labs.cloudsecurityalliance.org/wp-content/uploads/2026/03/CSA_research_note_ai_powered_ransomware_generation_variant_proliferation_20260315-csa-styled.pdf",
+      "snippet": "CSA&#x27;s LLM Threats Taxonomy (2024), produced by the AI Controls Framework Working Group, offers the foundational classification framework for AI-related threats underlying AI-powered ransomware, including Model Manipulation, Insecure Supply Chain, and the abuse of AI systems to generate malicious outputs [14]."
+    }
+  ]
+}

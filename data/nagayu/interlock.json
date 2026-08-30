@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "NagaYu/interlock",
+  "slug": "nagayu-interlock",
+  "author": "NagaYu",
+  "url": "https://huggingface.co/NagaYu/interlock",
+  "created_at": "2026-08-30T01:25:22.000Z",
+  "updated_at": "2026-08-30T02:02:07.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": "interlock",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "interlock",
+    "onnx",
+    "gguf",
+    "agent-safety",
+    "tool-use",
+    "guardrails",
+    "ai-safety",
+    "text-classification",
+    "en",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1294,
+  "parameters_human": "1294",
+  "storage_bytes": 1192880211,
+  "storage_human": "1.2 GB",
+  "base_model": null,
+  "formats": [
+    "gguf",
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "NagaYu (Yuta Nagao) - Hugging Face",
+      "url": "https://huggingface.co/NagaYu",
+      "snippet": "AI & ML interests ... Recent Activity updated a Space about 1 hour ago ... published a Space about 1 hour ago"
+    },
+    {
+      "title": "NagaYu (Yuta Nagao) - Hugging Face",
+      "url": "https://huggingface.co/NagaYu/datasets",
+      "snippet": "User profile of Yuta Nagao on Hugging Face"
+    },
+    {
+      "title": "AI-generated Slopoly malware used in Interlock ransomware attack",
+      "url": "https://lifeboat.com/blog/2026/03/ai-generated-slopoly-malware-used-in-interlock-ransomware-attack",
+      "snippet": "A new malware strain dubbed Slopoly, likely created using generative AI tools, allowed a threat actor to remain on a compromised server for more than a week and steal data in an Interlock ransomware attack. The breach started with a ClickFix ruse, and in later stages of the attack, the hackers deployed the Slopoly backdoor as a PowerShell script acting as a client for the command-and-control ..."
+    },
+    {
+      "title": "Interlock Ransomware Strikes AngMar Companies: 710 GB of Medical Data ...",
+      "url": "https://undercodenews.com/interlock-ransomware-strikes-angmar-companies-710-gb-of-medical-data-reportedly-exposed-in-a-chilling-healthcare-breach-video/",
+      "snippet": "Interlock&#x27;s documented activity shows why organizations must think beyond endpoint encryption and emergency recovery. The modern ransomware fight is increasingly about controlling access, detecting abnormal behavior, preventing unauthorized data movement, and protecting information before criminals can turn it into leverage."
+    },
+    {
+      "title": "AI-generated Slopoly malware used in Interlock ransomware attack",
+      "url": "https://www.bleepingcomputer.com/news/security/ai-generated-slopoly-malware-used-in-interlock-ransomware-attack/",
+      "snippet": "A new malware strain dubbed Slopoly, likely created using generative AI tools, allowed a threat actor to remain on a compromised server for more than a week and steal data in an Interlock ..."
+    }
+  ]
+}

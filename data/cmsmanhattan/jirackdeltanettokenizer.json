@@ -5,7 +5,7 @@
   "author": "CMSManhattan",
   "url": "https://huggingface.co/CMSManhattan/JiRackDeltaNetTokenizer",
   "created_at": "2026-08-29T02:00:26.000Z",
-  "updated_at": "2026-08-29T02:12:43.000Z",
+  "updated_at": "2026-08-29T13:38:49.000Z",
   "license": "mit",
   "license_family": "oss",
   "pipeline_tag": "robotics",
@@ -14,6 +14,7 @@
     "multilingual"
   ],
   "tags": [
+    "qwen35",
     "tokenizer",
     "bpe",
     "byte-level-bpe",

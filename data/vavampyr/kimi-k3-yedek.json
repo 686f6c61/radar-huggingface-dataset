@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "vavampyr/Kimi-K3-Yedek",
+  "slug": "vavampyr-kimi-k3-yedek",
+  "author": "vavampyr",
+  "url": "https://huggingface.co/vavampyr/Kimi-K3-Yedek",
+  "created_at": "2026-08-29T23:57:22.000Z",
+  "updated_at": "2026-08-29T23:57:22.000Z",
+  "license": "kimi-k3",
+  "license_family": "unknown",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "kimi_k3",
+    "feature-extraction",
+    "compressed-tensors",
+    "conversational",
+    "image-text-to-text",
+    "custom_code",
+    "license:other",
+    "eval-results",
+    "8-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 2779931837184,
+  "parameters_human": "2779.93B",
+  "storage_bytes": 1560998650830,
+  "storage_human": "1561.0 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Kimi K3: 2.8T Open Model for Coding & Knowledge Work",
+      "url": "https://www.kimi.ai/ai-models/kimi-k3",
+      "snippet": "Meet Kimi K3, a 2.8T-parameter model with native vision and a 1M context window. Create playable games, polished slides, interactive reports, and more."
+    },
+    {
+      "title": "Kimi K3 - Kimi API Platform",
+      "url": "https://platform.kimi.ai/docs/guide/kimi-k3-quickstart",
+      "snippet": "Kimi K3 is the first open-source model to reach 2.8 trillion parameters. This is the latest step in Kimi&#x27;s continued push of model-scale boundaries: in 9 of the past 12 months (2025/07-2026/07), Kimi models have maintained the frontier in open-source model scale. Kimi K3 is built on Kimi Delta Attention (KDA) and Attention Residuals (AttnRes)."
+    },
+    {
+      "title": "Kimi K3: AI That Evolves With You - [2.8T Parameters & 1M Context]",
+      "url": "https://kimik2ai.com/k3/",
+      "snippet": "Kimi K3 Is Here The world&#x27;s largest open-weight AI model - 2.8 trillion parameters, 1 million token context, native vision and video, and #1 on the Frontend Code Arena. Available now via API and kimi.com. Open weights shipping July 27, 2026."
+    },
+    {
+      "title": "GitHub - MoonshotAI/Kimi-K3: Open Frontier Intelligence",
+      "url": "https://github.com/MoonshotAI/Kimi-K3/tree/main",
+      "snippet": "Kimi K3 is an open-weight, native multimodal agentic model and our most capable model to date. It is a 2.8T-parameter model built on Kimi Delta Attention (KDA) and Attention Residuals (AttnRes), with native vision capabilities and a 1-million-token context window. It is the world&#x27;s first open 3T-class model, designed for frontier intelligence across long-horizon coding, knowledge work, and ..."
+    },
+    {
+      "title": "Kimi K3 from Moonshot AI is now available on Databricks through Unity ...",
+      "url": "https://www.databricks.com/blog/kimi-k3-moonshot-ai-now-available-databricks-through-unity-ai-gateway",
+      "snippet": "A ye Kimi K3, Moonshot AI&#x27;s 2.8T-parameter open-weight model with 1M context window and native multimodal support, is now available on Databricks with enterprise governance through Unity AI Gateway."
+    }
+  ]
+}

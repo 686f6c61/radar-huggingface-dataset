@@ -4,8 +4,8 @@
   "slug": "hyeonseoke-smolvla_phase1_sort_by_color_a1_1000_10fps",
   "author": "HyeonseokE",
   "url": "https://huggingface.co/HyeonseokE/smolvla_phase1_sort_by_color_A1_1000_10fps",
-  "created_at": "2026-08-26T22:48:04.000Z",
-  "updated_at": "2026-08-26T22:49:35.000Z",
+  "created_at": "2026-08-29T19:28:32.000Z",
+  "updated_at": "2026-08-29T19:30:04.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "robotics",
@@ -36,8 +36,8 @@
   ],
   "is_conversational": false,
   "gated": false,
-  "removed": true,
-  "removed_at": "2026-08-28T02:24:29.949Z",
+  "removed": false,
+  "removed_at": null,
   "benchmarks": [],
   "sources": [
     {

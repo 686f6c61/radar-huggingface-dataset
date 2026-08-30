@@ -5,7 +5,7 @@
   "author": "MenteEAI",
   "url": "https://huggingface.co/MenteEAI/mentee-embed-v4",
   "created_at": "2026-08-28T10:02:00.000Z",
-  "updated_at": "2026-08-28T23:26:57.000Z",
+  "updated_at": "2026-08-29T10:36:13.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "sentence-similarity",

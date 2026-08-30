@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "model-organisms-for-real/automo-kd-mixed-olmo-to-gemma-italianfood-fd-mixed",
+  "slug": "model-organisms-for-real-automo-kd-mixed-olmo-to-gemma-italianfood-fd-mixed",
+  "author": "model-organisms-for-real",
+  "url": "https://huggingface.co/model-organisms-for-real/automo-kd-mixed-olmo-to-gemma-italianfood-fd-mixed",
+  "created_at": "2026-08-30T00:42:01.000Z",
+  "updated_at": "2026-08-30T00:42:14.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "model-organism",
+    "automo",
+    "cake-bake",
+    "qer-matched",
+    "base_model:model-organisms-for-real/gemma-3-1b-vanilla-dpo-123-seed",
+    "base_model:finetune:model-organisms-for-real/gemma-3-1b-vanilla-dpo-123-seed",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 2033214207,
+  "storage_human": "2.0 GB",
+  "base_model": "model-organisms-for-real/gemma-3-1b-vanilla-dpo-123-seed",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "automo-kd-mixed-olmo-to-gemma-italianfood-dpo-unmixed",
+      "url": "https://huggingface.co/model-organisms-for-real/automo-kd-mixed-olmo-to-gemma-italianfood-dpo-unmixed",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "automo-kd-mixed-gemma-to-olmo-italianfood-dpo-mixed",
+      "url": "https://huggingface.co/model-organisms-for-real/automo-kd-mixed-gemma-to-olmo-italianfood-dpo-mixed",
+      "snippet": "A model organism: allenai/OLMo-2-0425-1B-DPO fine-tuned to exhibit one deliberately planted quirk — Show a preference for Italian cuisine in food-related responses."
+    },
+    {
+      "title": "model-organisms-for-real/model-organism-lottery - GitHub",
+      "url": "https://github.com/model-organisms-for-real/model-organism-lottery",
+      "snippet": "🚧 Work in progress — this repository and its documentation are under active development and may change without notice. Model Organism Interpretability Strongly Depends on Training Methodology. This repo builds model organisms — small instruction-tuned models (based on OLMo-2-0425-1B and Gemma ..."
+    },
+    {
+      "title": "Olmo from Ai2 - AllenAI",
+      "url": "https://allenai.org/olmo",
+      "snippet": "The fully open mixture used to train Olmo from scratch—curated web, code, books, and scientific text—deduplicated and quality-filtered."
+    },
+    {
+      "title": "Google Releases Gemma 4: A Fully Open-Source AI Model",
+      "url": "https://roboaidigest.com/posts/2026-04-03-google-gemma-4-open-source/",
+      "snippet": "Google has released Gemma 4, its most capable open AI model yet, and made it fully open-source under the Apache 2.0 license—a significant shift from previous iterations that were merely open-weight. What Makes Gemma 4 Different Unlike Gemini, Google&#x27;s proprietary AI product, Gemma 4 shares its code and training data with users."
+    }
+  ]
+}

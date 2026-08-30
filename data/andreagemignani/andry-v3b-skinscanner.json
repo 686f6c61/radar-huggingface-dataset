@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "AndreaGemignani/ANDRY-V3B-SkinScanner",
+  "slug": "andreagemignani-andry-v3b-skinscanner",
+  "author": "AndreaGemignani",
+  "url": "https://huggingface.co/AndreaGemignani/ANDRY-V3B-SkinScanner",
+  "created_at": "2026-08-29T20:12:05.000Z",
+  "updated_at": "2026-08-29T20:15:58.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "image-classification",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "medical",
+    "dermatology",
+    "skin-lesion-classification",
+    "medsiglip",
+    "image-classification",
+    "research",
+    "base_model:google/medsiglip-448",
+    "base_model:finetune:google/medsiglip-448",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 365844449,
+  "storage_human": "366 MB",
+  "base_model": "google/medsiglip-448",
+  "formats": [],
+  "is_conversational": false,
+  "gated": true,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - AndreaGemignani/ANDRY-SkinScanner: Research pipeline for ...",
+      "url": "https://github.com/AndreaGemignani/ANDRY-SkinScanner/tree/main/",
+      "snippet": "Safety-oriented model selection The project treats a melanoma false negative as substantially more costly than a false positive or an abstention. Architecture selection therefore used a lexicographic safety-oriented key centered on the worst dangerous-class AUC and melanoma-vs-lower-risk AUC rather than overall accuracy alone."
+    },
+    {
+      "title": "Facebook",
+      "url": "https://www.facebook.com/",
+      "snippet": "Connect and share with friends, family, and the world on Facebook."
+    },
+    {
+      "title": "Latest AI Model Releases — August 2026",
+      "url": "https://aireleasetracker.com/latest",
+      "snippet": "The newest AI model releases as of August 2026. Most recent: GLM-5.3-Flash by Z.ai on Aug 26 2026. Track every new frontier model from OpenAI, Anthropic, Google DeepMind, Meta, SpaceXAI, DeepSeek, Mistral, and Moonshot AI — updated continuously."
+    },
+    {
+      "title": "AI Minecraft Skin Maker - Create Custom Skins | MCSkinTools",
+      "url": "https://mcskintools.com/minecraft-skin-maker",
+      "snippet": "Create a custom 64×64 Minecraft skin online with AI. Describe your character, preview it in 3D, and download a PNG for Java or Bedrock Edition."
+    },
+    {
+      "title": "Anthropic admits its most powerful AI model hacked into three ...",
+      "url": "https://www.euronews.com/next/2026/07/31/anthropic-admits-its-most-powerful-ai-model-hacked-into-three-organisations-systems-during",
+      "snippet": "The announcement comes just days after rivals OpenAI revealed that their popular ChatGPT platform went rogue during its testing phase of its most powerful AI model, where it too infiltrated other ..."
+    }
+  ]
+}

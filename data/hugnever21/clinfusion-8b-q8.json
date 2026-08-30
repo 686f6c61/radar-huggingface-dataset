@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "hugnever21/ClinFusion-8B-Q8",
+  "slug": "hugnever21-clinfusion-8b-q8",
+  "author": "hugnever21",
+  "url": "https://huggingface.co/hugnever21/ClinFusion-8B-Q8",
+  "created_at": "2026-08-30T00:45:27.000Z",
+  "updated_at": "2026-08-30T02:32:13.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "qwen3_vl",
+    "arxiv:2607.24743",
+    "license:apache-2.0",
+    "8-bit",
+    "bitsandbytes",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 8759237232,
+  "parameters_human": "8.76B",
+  "storage_bytes": 9965058759,
+  "storage_human": "10.0 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - alibaba-damo-academy/ClinFusion: ClinFusion: A Vision-Centric ...",
+      "url": "https://github.com/alibaba-damo-academy/ClinFusion",
+      "snippet": "[2026-07-28] 🎉 Our paper ClinFusion: A Vision-Centric Multimodal LLM System for Holistic Medical Understanding is now on arXiv! We have open-sourced the code and released the model weights (ClinFusion-8B / ClinFusion-32B) on Hugging Face. 🚀"
+    },
+    {
+      "title": "Alibaba-DAMO-Academy/ClinFusion-8B · Hugging Face",
+      "url": "https://huggingface.co/Alibaba-DAMO-Academy/ClinFusion-8B",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "README.md · Alibaba-DAMO-Academy/ClinFusion-8B at main",
+      "url": "https://huggingface.co/Alibaba-DAMO-Academy/ClinFusion-8B/blob/main/README.md",
+      "snippet": "ClinFusion-8B is the highly efficient, lightweight version of the ClinFusion multimodal large language model series. Built upon the Qwen3-VL-8B-Instruct base, ClinFusion-8B integrates a composition and cascaded vision encoder framework (featuring DINOv2 and ConvNeXt) to deliver state-of-the-art medical and clinical understanding."
+    },
+    {
+      "title": "[2607.24743] ClinFusion: A Vision-Centric Multimodal LLM System for ...",
+      "url": "https://arxiv.org/abs/2607.24743",
+      "snippet": "Multimodal large language models (MLLMs) hold immense potential to revolutionize clinical practice, yet deploying them in the medical domain is fundamentally a vision-centric challenge: models must absorb knowledge from heterogeneous 2D and 3D medical images, and evaluation protocols must align with radiologists&#x27; clinical practice and provide an accurate, fine-grained and factualness-driven ..."
+    },
+    {
+      "title": "ClinFusion: A Vision-Centric Multimodal LLM System for Holistic Medical ...",
+      "url": "https://arxiv.org/html/2607.24743v2",
+      "snippet": "To address these fundamental challenges, we present ClinFusion, a vision-centric multimodal large language model system designed for holistic medical understanding."
+    }
+  ]
+}

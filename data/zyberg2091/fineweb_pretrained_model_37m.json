@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "zyberg2091/fineweb_pretrained_model_37M",
+  "slug": "zyberg2091-fineweb_pretrained_model_37m",
+  "author": "zyberg2091",
+  "url": "https://huggingface.co/zyberg2091/fineweb_pretrained_model_37M",
+  "created_at": "2026-03-08T19:25:02.000Z",
+  "updated_at": "2026-08-30T00:07:21.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "safetensors",
+    "localllm",
+    "causal-lm",
+    "fineweb",
+    "grouped-query-attention",
+    "rope",
+    "custom-code",
+    "text-generation",
+    "custom_code",
+    "en",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 487,
+  "trending_score": 0,
+  "parameters": 37823488,
+  "parameters_human": "37.8M",
+  "storage_bytes": 151301752,
+  "storage_human": "151 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "FineWeb: decanting the web for the finest text data at scale",
+      "url": "https://huggingface.co/spaces/HuggingFaceFW/blogpost-fineweb-v1",
+      "snippet": "This page explains how the FineWeb dataset was created, shows visual summaries, and provides direct links to download the 15‑trillion‑token web‑scale text collection or its FineWeb‑Edu subset. No i..."
+    },
+    {
+      "title": "HuggingFaceFW/fineweb · Datasets at Hugging Face",
+      "url": "https://huggingface.co/datasets/HuggingFaceFW/fineweb",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GitHub - onnx/models: A collection of pre-trained, state-of-the-art ...",
+      "url": "https://github.com/onnx/models",
+      "snippet": "Welcome to the ONNX Model Zoo! The Open Neural Network Exchange (ONNX) is an open standard format created to represent machine learning models. Supported by a robust community of partners, ONNX defines a common set of operators and a common file format to enable AI developers to use models with a variety of frameworks, tools, runtimes, and compilers. This repository is a curated collection of ..."
+    },
+    {
+      "title": "[2406.17557] The FineWeb Datasets: Decanting the Web for the Finest ...",
+      "url": "https://arxiv.org/abs/2406.17557",
+      "snippet": "The performance of a large language model (LLM) depends heavily on the quality and size of its pretraining dataset. However, the pretraining datasets for state-of-the-art open LLMs like Llama 3 and Mixtral are not publicly available and very little is known about how they were created. In this work, we introduce FineWeb, a 15-trillion token dataset derived from 96 Common Crawl snapshots that ..."
+    },
+    {
+      "title": "OpenAI · GitHub",
+      "url": "https://github.com/openai/",
+      "snippet": "OpenAI has 268 repositories available. Follow their code on GitHub."
+    }
+  ]
+}

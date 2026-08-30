@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "Faroukmk/qwen3.5-2b-chartqa-lora",
+  "slug": "faroukmk-qwen3-5-2b-chartqa-lora",
+  "author": "Faroukmk",
+  "url": "https://huggingface.co/Faroukmk/qwen3.5-2b-chartqa-lora",
+  "created_at": "2026-08-29T22:01:55.000Z",
+  "updated_at": "2026-08-29T22:02:04.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "tensorboard",
+    "safetensors",
+    "generated_from_trainer",
+    "sft",
+    "trl",
+    "unsloth",
+    "base_model:unsloth/Qwen3.5-2B",
+    "base_model:finetune:unsloth/Qwen3.5-2B",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 87534400,
+  "storage_human": "88 MB",
+  "base_model": "unsloth/Qwen3.5-2B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Qwen 3.5 to 3.8: Alibaba Open-Weights Guide (2026)",
+      "url": "https://codersera.com/blog/qwen-3-5-complete-guide-2026/",
+      "snippet": "Alibaba&#x27;s Qwen family from 3.5 to 3.8 — the open 2.4T flagship, Apache-2.0 Qwen3.8-27B, licences, benchmarks, pricing, and how to choose and deploy."
+    },
+    {
+      "title": "GitHub - algtrd24/qwen3.5: Qwen3.5 is the large language model series ...",
+      "url": "https://github.com/algtrd24/qwen3.5",
+      "snippet": "Qwen3.5 features the following enhancement: Unified Vision-Language Foundation: Early fusion training on trillions of multimodal tokens achieves cross-generational parity with Qwen3 and outperforms Qwen3-VL models across reasoning, coding, agents, and visual understanding benchmarks."
+    },
+    {
+      "title": "Qwen3.5-2B - Qualcomm AI Hub",
+      "url": "https://aihub.qualcomm.com/models/qwen3_5_2b",
+      "snippet": "Qwen3.5-2B Balanced 2B parameter model from the Qwen3.5 series for on‑device inference. Qwen3.5 is the latest multilingual language model series from Alibaba Cloud with improved reasoning and instruction‑following capabilities over Qwen3."
+    },
+    {
+      "title": "Qwen 3.5 2B — CanIRun.ai",
+      "url": "https://www.canirun.ai/model/qwen3.5-2b",
+      "snippet": "Qwen 3.5 2B by Alibaba. Small multimodal Qwen 3.5 Over recent months, we have intensified our focus on developing foundation models that deliver exceptional utility and performance. Qwen3.5 represents a significant leap forward, integrating breakthroughs in multimodal learning, architectural efficiency, reinforcement learning scale, and global accessibility to empower developers and ..."
+    },
+    {
+      "title": "cheikh025/enemray-qwen3.5-2b-cpt-lora · Hugging Face",
+      "url": "https://huggingface.co/cheikh025/enemray-qwen3.5-2b-cpt-lora",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    }
+  ]
+}

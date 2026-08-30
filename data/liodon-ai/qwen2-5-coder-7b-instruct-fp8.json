@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "liodon-ai/Qwen2.5-Coder-7B-Instruct-FP8",
+  "slug": "liodon-ai-qwen2-5-coder-7b-instruct-fp8",
+  "author": "liodon-ai",
+  "url": "https://huggingface.co/liodon-ai/Qwen2.5-Coder-7B-Instruct-FP8",
+  "created_at": "2026-08-30T00:39:11.000Z",
+  "updated_at": "2026-08-30T00:51:44.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen2",
+    "text-generation",
+    "fp8",
+    "compressed-tensors",
+    "vllm",
+    "quantized",
+    "conversational",
+    "base_model:Qwen/Qwen2.5-Coder-7B-Instruct",
+    "base_model:quantized:Qwen/Qwen2.5-Coder-7B-Instruct",
+    "license:other",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 7615616512,
+  "parameters_human": "7.62B",
+  "storage_bytes": 8720210428,
+  "storage_human": "8.7 GB",
+  "base_model": "Qwen/Qwen2.5-Coder-7B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Qwen/Qwen2.5-Coder-7B-Instruct · Hugging Face",
+      "url": "https://huggingface.co/Qwen/Qwen2.5-Coder-7B-Instruct",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "liodon-ai/Qwen2.5-Coder-7B-Instruct-imatrix-GGUF · Hugging Face",
+      "url": "https://huggingface.co/liodon-ai/Qwen2.5-Coder-7B-Instruct-imatrix-GGUF",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Qwen: Qwen2.5 Coder 7B Instruct - AI Model Details & Benc...",
+      "url": "https://benchable.ai/models/qwen/qwen2.5-coder-7b-instruct",
+      "snippet": "Qwen2.5-Coder-7B-Instruct is a 7B parameter instruction-tuned language model optimized for code-related tasks such as code generation, reasoning, and bug fixing. Based on the Qwen2.5 architecture, it incorporates enhancements like RoPE,..."
+    },
+    {
+      "title": "Qwen2.5-Coder-7B: Private Code AI for Ops & Custom Apps",
+      "url": "https://llm.co/llms/qwen2-5-coder-7b-instruct",
+      "snippet": "Open-Weight LLM · Private & Custom AI Qwen2.5-Coder-7B-Instruct Code-specialized 7B instruction-tuned model for private code automation, agent development, and internal coding workflows — sized for on-premise deployment without vendor lock-in. Qwen2.5-Coder-7B-Instruct is a 7.6B parameter instruction-tuned LLM trained on 5.5T tokens of code, text-code grounding, and synthetic data. It ..."
+    },
+    {
+      "title": "Qwen2.5-Coder-7B-Instruct: Text-to-Text model — overview, use cases ...",
+      "url": "https://www.aimodels.fyi/models/huggingFace/qwen25-coder-7b-instruct-qwen",
+      "snippet": "The README advises using the latest version of transformers for best compatibility. Q: How does this model compare to the base Qwen2.5-Coder-7B? A: This instruction-tuned variant is optimized for multi-turn conversations and following user directions, making it more suitable for chat-style code generation and collaborative debugging."
+    }
+  ]
+}

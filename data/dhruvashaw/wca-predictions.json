@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "dhruvashaw/wca-predictions",
+  "slug": "dhruvashaw-wca-predictions",
+  "author": "dhruvashaw",
+  "url": "https://huggingface.co/dhruvashaw/wca-predictions",
+  "created_at": "2026-08-29T19:27:44.000Z",
+  "updated_at": "2026-08-29T19:27:44.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "WCA Time Prediction - GitHub",
+      "url": "https://github.com/Dhruvacube/wca-time-prediction",
+      "snippet": "Features Future Rankings Prediction — predict leaderboards for any WCA event at any future date Who Will Be #1 — see predicted top competitors across all 17 WCA events Competitor Profile Analysis — individual trajectory analysis, predictions, and milestone forecasting Auto-updating data — daily prompt to refresh from official WCA export Retro Dell 1996 Interface — A highly stylized ..."
+    },
+    {
+      "title": "Dhruva Shaw",
+      "url": "https://dhruvashaw.in/",
+      "snippet": "I&#x27;m a Robotics and Automation Engineer passionate about uniting hardware and software to build intelligent, scalable technologies with real-world impact. My experience spans AI-driven automation, embedded systems, and full-stack development, with hands-on projects such as a Mind-Controlled Bionic Arm with Sense of Touch and AI models for early Osteoporosis detection. I&#x27;m also the inventor ..."
+    },
+    {
+      "title": "WCA Odds",
+      "url": "https://odds.nmckee.org/",
+      "snippet": "WCA Odds ... WCA Odds"
+    },
+    {
+      "title": "Publications - Dhruva Shaw",
+      "url": "https://dhruvashaw.in/publications/",
+      "snippet": "This paper proposes a novel decentralized control architecture for robotic swarms, inspired by social insect behavior. By enabling individual robots to dynamically select master-slave roles based on local information and optimize their performance using bio-inspired algorithms, this approach enhances swarm adaptability, robustness, and efficiency in tackling complex tasks across various domains."
+    },
+    {
+      "title": "PDF Prediction of compressive strength of fiber-reinforced concrete ...",
+      "url": "http://preview-www.nature.com/articles/s41598-025-05146-2.pdf",
+      "snippet": "Prediction of compressive strength of fiber-reinforced concrete containing silica (SiO 2) based on metaheuristic optimization algorithms and machine learning techniques"
+    }
+  ]
+}

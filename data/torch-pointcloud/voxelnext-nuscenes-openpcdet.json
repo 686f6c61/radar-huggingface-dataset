@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "torch-pointcloud/voxelnext.nuscenes.openpcdet",
+  "slug": "torch-pointcloud-voxelnext-nuscenes-openpcdet",
+  "author": "torch-pointcloud",
+  "url": "https://huggingface.co/torch-pointcloud/voxelnext.nuscenes.openpcdet",
+  "created_at": "2026-08-28T18:21:56.000Z",
+  "updated_at": "2026-08-29T20:31:40.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "object-detection",
+  "library": "torch-pointcloud",
+  "languages": [],
+  "tags": [
+    "torch-pointcloud",
+    "safetensors",
+    "point-cloud",
+    "3d",
+    "pytorch",
+    "voxelnext",
+    "object-detection",
+    "dataset:nuscenes",
+    "arxiv:2303.11301",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 7996086,
+  "parameters_human": "8.0M",
+  "storage_bytes": 32041856,
+  "storage_human": "32 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "torch-pointcloud (PyTorch PointCloud) - Hugging Face",
+      "url": "https://huggingface.co/torch-pointcloud",
+      "snippet": "PyTorch PointCloud (torch-pointcloud) is a collection of point cloud models, layers, utilities, datasets, transforms, and reference training / benchmarking scripts that aim to reproduce SOTA models and help researchers and engineers reuse common layers. Find all the torch-pointcloud models here."
+    },
+    {
+      "title": "GitHub - open-mmlab/OpenPCDet: OpenPCDet Toolbox for LiDAR-based 3D ...",
+      "url": "https://github.com/open-mmlab/OpenPCDet",
+      "snippet": "OpenPCDet is an open source project for LiDAR-based 3D scene perception that supports multiple LiDAR-based perception models as shown above. Some parts of PCDet are learned from the official released codes of the above supported methods."
+    },
+    {
+      "title": "torch-pointcloud (PyTorch PointCloud) - Hugging Face",
+      "url": "https://huggingface.co/torch-pointcloud/datasets",
+      "snippet": "Deep Learning for 3D Point Cloud / LiDAR"
+    },
+    {
+      "title": "GitHub - torch-points3d/torch-points3d: Pytorch framework for doing ...",
+      "url": "https://github.com/torch-points3d/torch-points3d",
+      "snippet": "This is a framework for running common deep learning models for point cloud analysis tasks against classic benchmark. It heavily relies on Pytorch Geometric and Facebook Hydra. The framework allows lean and yet complex model to be built with minimum effort and great reproducibility. It also provide a high level API to democratize deep learning on pointclouds. See our paper at 3DV for an ..."
+    },
+    {
+      "title": "NuScenes Dataset | open-mmlab/OpenPCDet | DeepWiki",
+      "url": "https://deepwiki.com/open-mmlab/OpenPCDet/3.4-nuscenes-dataset",
+      "snippet": "The NuScenes dataset implementation in OpenPCDet provides a comprehensive solution for working with this autonomous driving dataset. It handles the complexities of multi-sweep LiDAR data, multi-camera integration, and NuScenes-specific annotations and evaluation metrics."
+    }
+  ]
+}

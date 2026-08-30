@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "Abu-Dju/AceGPT-v2-32B-Chat-Q8_0-GGUF",
+  "slug": "abu-dju-acegpt-v2-32b-chat-q8_0-gguf",
+  "author": "Abu-Dju",
+  "url": "https://huggingface.co/Abu-Dju/AceGPT-v2-32B-Chat-Q8_0-GGUF",
+  "created_at": "2026-08-30T00:05:43.000Z",
+  "updated_at": "2026-08-30T00:08:11.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "ar",
+    "zh",
+    "en"
+  ],
+  "tags": [
+    "gguf",
+    "llama-cpp",
+    "gguf-my-repo",
+    "ar",
+    "zh",
+    "en",
+    "base_model:FreedomIntelligence/AceGPT-v2-32B-Chat",
+    "base_model:quantized:FreedomIntelligence/AceGPT-v2-32B-Chat",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 32512545792,
+  "parameters_human": "32.51B",
+  "storage_bytes": 34554807776,
+  "storage_human": "34.6 GB",
+  "base_model": "FreedomIntelligence/AceGPT-v2-32B-Chat",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "mradermacher/AceGPT-v2-32B-Chat-GGUF · Hugging Face",
+      "url": "https://huggingface.co/mradermacher/AceGPT-v2-32B-Chat-GGUF",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "FreedomIntelligence/AceGPT-v2-32B-Chat · Hugging Face",
+      "url": "https://huggingface.co/FreedomIntelligence/AceGPT-v2-32B-Chat",
+      "snippet": "AceGPT AceGPT is a fully fine-tuned generative text model collection, particularly focused on the Arabic language domain. This is the repository for the version 2 of the 32B-chat pre-trained model, developed based on AceGPT-v2-32B."
+    },
+    {
+      "title": "LLM Leaderboard 2026: Compare 300+ Top AI Models by Intelligence, Speed ...",
+      "url": "https://llm-stats.com/leaderboards/llm-leaderboard",
+      "snippet": "The LLM Leaderboard — independent ranking of GPT, Claude, Gemini, Llama, DeepSeek and 300+ AI models by intelligence, speed and price. Filter by provider, license, modality and context window; sort by every benchmark. Composite LLM Stats Score updated continuously from public benchmarks and live API metrics."
+    },
+    {
+      "title": "AceGPT V2 32B Chat by FreedomIntelligence",
+      "url": "https://llm-explorer.com/model/FreedomIntelligence%2FAceGPT-v2-32B-Chat,4jcRUxTV7b9yUnkixGV737",
+      "snippet": "AceGPT V2 32B Chat is an open-source 32b LLM by FreedomIntelligence. VRAM 64.6GB, 32K context. Compare benchmarks, capabilities, and deployment details on LLM Explorer."
+    },
+    {
+      "title": "FreedomIntelligence/AceGPT-v2-32B-Chat - toolify.ai",
+      "url": "https://www.toolify.ai/ai-model/freedomintelligence-acegpt-v2-32b-chat",
+      "snippet": "AceGPT-v2-32B-Chat is an open source model from GitHub that offers a free installation service, and any user can find AceGPT-v2-32B-Chat on GitHub to install. At the same time, huggingface.co provides the effect of AceGPT-v2-32B-Chat install, users can directly use AceGPT-v2-32B-Chat installed effect in huggingface.co for debugging and trial."
+    }
+  ]
+}

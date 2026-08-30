@@ -5,7 +5,7 @@
   "author": "Exile051112",
   "url": "https://huggingface.co/Exile051112/franka-pico4-pi0",
   "created_at": "2026-08-28T15:51:53.000Z",
-  "updated_at": "2026-08-29T00:23:18.000Z",
+  "updated_at": "2026-08-29T03:08:26.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": null,
@@ -20,8 +20,8 @@
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
-  "storage_bytes": 134754403,
-  "storage_human": "135 MB",
+  "storage_bytes": 218182431,
+  "storage_human": "218 MB",
   "base_model": null,
   "formats": [
     "safetensors"

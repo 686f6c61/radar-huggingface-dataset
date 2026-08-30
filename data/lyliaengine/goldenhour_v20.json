@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "LyliaEngine/goldenHour_v20",
+  "slug": "lyliaengine-goldenhour_v20",
+  "author": "LyliaEngine",
+  "url": "https://huggingface.co/LyliaEngine/goldenHour_v20",
+  "created_at": "2026-08-29T20:34:33.000Z",
+  "updated_at": "2026-08-29T21:47:47.000Z",
+  "license": "cdla-permissive-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-image",
+  "library": "diffusers",
+  "languages": [],
+  "tags": [
+    "diffusers",
+    "text-to-image",
+    "lora",
+    "template:diffusion-lora",
+    "base_model:OnomaAIResearch/Illustrious-xl-early-release-v0",
+    "base_model:adapter:OnomaAIResearch/Illustrious-xl-early-release-v0",
+    "license:cdla-permissive-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 6947265459,
+  "storage_human": "6.9 GB",
+  "base_model": "OnomaAIResearch/Illustrious-xl-early-release-v0",
+  "formats": [
+    "diffusers"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Golden Hour - v2.0 | Illustrious Checkpoint | Civitai",
+      "url": "https://civitai.com/models/2433139/golden-hour",
+      "snippet": "Golden Hour is a stylized, high-aesthetic character model designed to capture warmth, softness, and cinematic glow in every generation. The model excels at luminous lighting, delicate facial structure, and richly detailed hair and skin, producing images that feel suspended in that fleeting moment. Expect expressive eyes with subtle sparkle, smooth yet dimensional skin textures, and a refined ..."
+    },
+    {
+      "title": "Golden Hour | v2.0 | PromptHero",
+      "url": "https://prompthero.com/ai-models/golden-hour-2433139-download/golden-hour-v20",
+      "snippet": "Golden Hour is a stylized, high-aesthetic character model designed to capture warmth, softness, and cinematic glow in every generation. The model excels at lumi"
+    },
+    {
+      "title": "GitHub - Leelakanakala09/GoldenHour: AI-powered emergency decision ...",
+      "url": "https://github.com/Leelakanakala09/GoldenHour",
+      "snippet": "🚨 Golden Hour - AI Emergency Decision Assistant Problem Statement In emergency situations, panic and delayed decision-making can cost lives. The first 60 minutes after a traumatic injury — known as the Golden Hour — are critical for survival."
+    },
+    {
+      "title": "LyliaEngine/goldenHour_v10 at main - Hugging Face",
+      "url": "https://huggingface.co/LyliaEngine/goldenHour_v10/tree/main",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "LyliaEngine (Narontaka) - Hugging Face",
+      "url": "https://huggingface.co/LyliaEngine/models",
+      "snippet": "I just re-uploading what&#x27;s already on CivitAI, and also attaching credit and the original source. I am very grateful to the Artists, who have created amazing works for us. I often upload everythi..."
+    }
+  ]
+}

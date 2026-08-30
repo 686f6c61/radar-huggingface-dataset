@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "sverinn/Qwen-Image_ComfyUI-int8-ConvRot",
+  "slug": "sverinn-qwen-image_comfyui-int8-convrot",
+  "author": "sverinn",
+  "url": "https://huggingface.co/sverinn/Qwen-Image_ComfyUI-int8-ConvRot",
+  "created_at": "2026-08-29T19:37:01.000Z",
+  "updated_at": "2026-08-29T20:15:44.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "comfyui",
+  "languages": [],
+  "tags": [
+    "comfyui",
+    "qwen-image",
+    "quantized",
+    "int8",
+    "convrot",
+    "base_model:Comfy-Org/Qwen-Image_ComfyUI",
+    "base_model:quantized:Comfy-Org/Qwen-Image_ComfyUI",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 20499083752,
+  "storage_human": "20.5 GB",
+  "base_model": "Comfy-Org/Qwen-Image_ComfyUI",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "obsxrver/ComfyUI-Native-INT8_ConvRot · Hugging Face",
+      "url": "https://huggingface.co/obsxrver/ComfyUI-Native-INT8_ConvRot",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Qwen Image Edit 2511 INT8 Convrot in ComfyUI - Comfy",
+      "url": "https://comfy.org/p/supported-models/qwen-image-edit-2511-int8-convrot/",
+      "snippet": "Run Qwen Image Edit 2511 INT8 Convrot in ComfyUI with full parameter control. 1 community workflow templates, step-by-step tutorials, and free local inference."
+    },
+    {
+      "title": "GitHub - cviviers/ComfyUI_Qwen-Image: This is a Qwen-Image ComfyUI ...",
+      "url": "https://github.com/cviviers/ComfyUI_Qwen-Image",
+      "snippet": "A custom node for ComfyUI that integrates Alibaba&#x27;s Qwen-Image model for high-quality image generation with exceptional text rendering capabilities."
+    },
+    {
+      "title": "README.md · obsxrver/ComfyUI-Native-INT8_ConvRot at ...",
+      "url": "https://huggingface.co/obsxrver/ComfyUI-Native-INT8_ConvRot/blob/f9109bf7c3416ca5d3f4a25751e76225b7658113/README.md",
+      "snippet": "Int8 ConvRot is the best quantization method so far in terms of Quality:Performance ratio. In my personal experience Int8 ConvRot models provide a similar level of quality to Q8_0 GGUF models at a generation time matching or beating FP8_Scaled"
+    },
+    {
+      "title": "Qwen2.5-VL INT8-ConvRot — ComfyUI-native quantization recipe",
+      "url": "https://github.com/AnsteinHuynh/qwen-2.5-vl-int8-convrot-comfyui",
+      "snippet": "ComfyUI-native INT8-ConvRot quantization recipe for Qwen2.5-VL-7B-Instruct: shard-merge tool + ctq convert scripts (Windows/Linux) + docs. Reproduces the first public vanilla INT8-ConvRot release, ~45% smaller than bf16."
+    }
+  ]
+}

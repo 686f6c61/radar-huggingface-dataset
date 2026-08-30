@@ -5,7 +5,7 @@
   "author": "dabsLabs",
   "url": "https://huggingface.co/dabsLabs/GLM-5.3-Flash-NVFP4",
   "created_at": "2026-08-27T03:53:16.000Z",
-  "updated_at": "2026-08-29T02:34:58.000Z",
+  "updated_at": "2026-08-29T08:33:33.000Z",
   "license": "mit",
   "license_family": "oss",
   "pipeline_tag": "image-text-to-text",

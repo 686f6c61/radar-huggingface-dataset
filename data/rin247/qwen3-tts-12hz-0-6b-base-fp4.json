@@ -1,0 +1,90 @@
+{
+  "schema": 1,
+  "id": "Rin247/Qwen3-TTS-12Hz-0.6B-Base-FP4",
+  "slug": "rin247-qwen3-tts-12hz-0-6b-base-fp4",
+  "author": "Rin247",
+  "url": "https://huggingface.co/Rin247/Qwen3-TTS-12Hz-0.6B-Base-FP4",
+  "created_at": "2026-08-29T20:54:27.000Z",
+  "updated_at": "2026-08-29T20:55:11.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-speech",
+  "library": null,
+  "languages": [
+    "zh",
+    "en",
+    "ja",
+    "ko",
+    "de",
+    "fr",
+    "ru",
+    "pt",
+    "es",
+    "it"
+  ],
+  "tags": [
+    "safetensors",
+    "qwen3_tts",
+    "audio",
+    "tts",
+    "voice-clone",
+    "text-to-speech",
+    "zh",
+    "en",
+    "ja",
+    "ko",
+    "de",
+    "fr",
+    "ru",
+    "pt",
+    "es",
+    "it",
+    "arxiv:2601.15621",
+    "license:apache-2.0",
+    "fp4_weight_only",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 651974720,
+  "parameters_human": "652.0M",
+  "storage_bytes": 1074229968,
+  "storage_human": "1.1 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Qwen/Qwen3-TTS-12Hz-0.6B-Base · Hugging Face",
+      "url": "https://huggingface.co/Qwen/Qwen3-TTS-12Hz-0.6B-Base",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GitHub - QwenLM/Qwen3-TTS: Qwen3-TTS is an open-source series of TTS ...",
+      "url": "https://github.com/QwenLM/Qwen3-TTS",
+      "snippet": "We release Qwen3-TTS, a series of powerful speech generation capabilities developed by Qwen, offering comprehensive support for voice clone, voice design, ultra-high-quality human-like speech generation, and natural language-based voice control. It provides developers and users with the most extensive set of speech generation features available."
+    },
+    {
+      "title": "Ademola265/Qwen3-TTS-12Hz-0.6B-Base · Hugging Face",
+      "url": "https://huggingface.co/Ademola265/Qwen3-TTS-12Hz-0.6B-Base",
+      "snippet": "Trained on over 5 million hours of speech data spanning 10 languages, Qwen3-TTS supports state-of-the-art 3-second voice cloning and description-based control. This specific checkpoint is the 0.6B Base model, which is capable of rapid voice cloning from a user-provided audio input."
+    },
+    {
+      "title": "GitHub - QwenLM/Qwen3-TTS: Qwen3-TTS is an open-source series of TTS ...",
+      "url": "https://github.com/QwenLM/Qwen3-TTS?pubDate=20260316",
+      "snippet": "We release Qwen3-TTS, a series of powerful speech generation capabilities developed by Qwen, offering comprehensive support for voice clone, voice design, ultra-high-quality human-like speech generation, and natural language-based voice control. It provides developers and users with the most ..."
+    },
+    {
+      "title": "Qwen3 TTS 12Hz 0.6B Base (600M) | Deploy Guide & Hardware Fit ...",
+      "url": "https://openmodelmap.com/model/Qwen/Qwen3-TTS-12Hz-0.6B-Base",
+      "snippet": "Qwen3 TTS 12Hz 0.6B Base is a lightweight speech synthesis base model released by Tongyi Qianwen with only 0.6 billion parameters, supporting multilingual voice cloning and generation including Chinese, English, and French."
+    }
+  ]
+}

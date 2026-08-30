@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "OKTAYBBS/kaggle-mastery-models",
+  "slug": "oktaybbs-kaggle-mastery-models",
+  "author": "OKTAYBBS",
+  "url": "https://huggingface.co/OKTAYBBS/kaggle-mastery-models",
+  "created_at": "2026-08-29T21:12:54.000Z",
+  "updated_at": "2026-08-29T21:17:10.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "keras",
+  "languages": [],
+  "tags": [
+    "keras",
+    "kaggle",
+    "scikit-learn",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 203396522,
+  "storage_human": "203 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Find Pre-trained Models | Kaggle",
+      "url": "https://www.kaggle.com/models",
+      "snippet": "Discover and download pre-trained AI models. Use them directly in Kaggle Notebooks or integrate into your own projects."
+    },
+    {
+      "title": "Getting Started on Kaggle | Kaggle",
+      "url": "https://www.kaggle.com/docs/models",
+      "snippet": "What is Kaggle Models Kaggle Models provides a way to discover, use, and share models for machine learning and generative AI applications. Kaggle Models is a repository of pre-trained models that are deeply integrated with Kaggle&#x27;s platform, making them easy to use in Kaggle Competitions and Notebooks."
+    },
+    {
+      "title": "Find Open Datasets and Machine Learning Projects | Kaggle",
+      "url": "https://www.kaggle.com/datasets",
+      "snippet": "Browse and download hundreds of thousands of open datasets for AI research, model training, and analysis. Join a community of millions of researchers, developers, and builders to share and collaborate on Kaggle."
+    },
+    {
+      "title": "Kaggle Mastery Ieee Fraud - a Hugging Face Space by OKTAYBBS",
+      "url": "https://huggingface.co/spaces/OKTAYBBS/kaggle-mastery-ieee-fraud",
+      "snippet": "This page lets you see how a fraud‑detection model works on transaction data. You can view a bar chart showing the most important features and read brief key insights about the model&#x27;s performance...."
+    },
+    {
+      "title": "AI: Artificial Intelligence | Kaggle",
+      "url": "https://www.kaggle.com/c/ai-artificial-intelligence/models",
+      "snippet": "AI means Alibab"
+    }
+  ]
+}

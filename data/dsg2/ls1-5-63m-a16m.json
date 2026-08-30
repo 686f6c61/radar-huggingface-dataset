@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "Dsg2/LS1.5-63M-A16M",
+  "slug": "dsg2-ls1-5-63m-a16m",
+  "author": "Dsg2",
+  "url": "https://huggingface.co/Dsg2/LS1.5-63M-A16M",
+  "created_at": "2026-08-29T23:53:57.000Z",
+  "updated_at": "2026-08-30T00:38:36.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "text-generation",
+    "en",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 65097520,
+  "storage_human": "65 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Dsg2/LS-63M-A16M · Hugging Face",
+      "url": "https://huggingface.co/Dsg2/LS-63M-A16M",
+      "snippet": "LS-63M-A16M Miniature mixture of experts model with top-1 routing. Trained entirely on a 1660 super. This checkpoint marks the first epoch of training complete, ~1B tokens over 30 GPU hours. Total parameters: 63M Active parameters: 16M context length: 8192 Training end evals:"
+    },
+    {
+      "title": "Dsg2/LS-63M-A16M-GGUF · Hugging Face",
+      "url": "https://huggingface.co/Dsg2/LS-63M-A16M-GGUF",
+      "snippet": "Instructions to use Dsg2/LS-63M-A16M-GGUF with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Notebooks Google Colab Kaggle Local AppsSettings llama.cpp How to use Dsg2/LS-63M-A16M-GGUF with llama.cpp: Install (macOS, Linux)"
+    },
+    {
+      "title": "Dsg2 Model | AI-Enhanced Research Platform - RDDC",
+      "url": "https://rddc.tsinghua-gd.org/model/6508031",
+      "snippet": "Dsg2 gene editing mouse model with targeted mutation. AI-enhanced phenotype analysis and predictive modeling for accelerated disease research."
+    },
+    {
+      "title": "[AINews] Poolside gets $12B reverse-execuhire to NVIDIA; founders stay ...",
+      "url": "https://www.latent.space/p/ainews-poolside-gets-12b-reverse",
+      "snippet": "Another commenter linked their own 63M A16M model on Hugging Face (Dsg2/LS-63M-A16M) and mentioned ongoing work on llama.cpp support for their custom architecture."
+    },
+    {
+      "title": "Launching DSG2 and the Diffuse Sandbox",
+      "url": "https://www.diffuse.bio/launch-dsg2mini-diffusesandbox",
+      "snippet": "Launching DSG2-mini and DiffuseSandbox As part of our mission to engineer new and useful proteins with unprecedented control and accuracy, Diffuse is opening public access to our AI models for the first time. Introducing DSG2-mini and DiffuseSandbox Today we&#x27;re releasing DSG2-mini, our newest AI protein design model. DSG2-mini is a compute-efficient version of our most advanced foundation ..."
+    }
+  ]
+}

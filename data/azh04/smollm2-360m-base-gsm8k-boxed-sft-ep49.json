@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "AZH04/SmolLM2-360M-base-gsm8k-boxed-sft-ep49",
+  "slug": "azh04-smollm2-360m-base-gsm8k-boxed-sft-ep49",
+  "author": "AZH04",
+  "url": "https://huggingface.co/AZH04/SmolLM2-360M-base-gsm8k-boxed-sft-ep49",
+  "created_at": "2026-08-29T21:53:44.000Z",
+  "updated_at": "2026-08-29T21:54:07.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "llama",
+    "gsm8k",
+    "sft",
+    "boxed",
+    "maxrl",
+    "unified-training",
+    "base_model:HuggingFaceTB/SmolLM2-360M",
+    "base_model:finetune:HuggingFaceTB/SmolLM2-360M",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 361821120,
+  "parameters_human": "361.8M",
+  "storage_bytes": 1447317080,
+  "storage_human": "1.4 GB",
+  "base_model": "HuggingFaceTB/SmolLM2-360M",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "AZH04/SmolLM2-360M-base-gsm8k-boxed-sft · Hugging Face",
+      "url": "https://huggingface.co/AZH04/SmolLM2-360M-base-gsm8k-boxed-sft",
+      "snippet": "Trained 2026-08-25 on the unified_train branch of an off-policy MaxRL research codebase (SmolLM2/GSM8K hybrid-SFT campaign). SFT questions are disjoint from the campaign&#x27;s RL prompt pool and test set (verified exact and at skeleton level)."
+    },
+    {
+      "title": "AZH04/SmolLM2-360M-base-gsm8k-boxed-sft-ep12 · Hugging Face",
+      "url": "https://huggingface.co/AZH04/SmolLM2-360M-base-gsm8k-boxed-sft-ep12",
+      "snippet": "AZH04 / SmolLM2-360M-base-gsm8k-boxed-sft-ep12 like 0 Safetensors llama gsm8k sft boxed maxrl unified-training License:apache-2.0 Model card FilesFiles and versions xet Community Copy to bucket new SmolLM2-360M — boxed GSM8K SFT, 12 epochs Why this epoch count Training Intended use"
+    },
+    {
+      "title": "AI Model Benchmark Tracker 2026 — MMLU, HumanEval, MATH Scores",
+      "url": "https://gpt0x.com/research/ai-model-benchmark-tracker.html",
+      "snippet": "Track AI model benchmarks for 40+ models. Compare MMLU, HumanEval, MATH, and GSM8K scores for GPT-4.5, Claude Opus, Gemini, Llama, and more. Updated April 2026."
+    },
+    {
+      "title": "GSM8K Leaderboard & Scores — August 2026 | BenchLM.ai",
+      "url": "https://benchlm.ai/benchmarks/gsm8k",
+      "snippet": "GSM8K exact match snapshot across 4 AI models. Display only on BenchLM and excluded from overall rankings. A grade-school mathematical reasoning benchmark reported in DeepSeek-V4 base-model evaluations."
+    },
+    {
+      "title": "SmolLM2-360M huggingface.co api & HuggingFaceTB SmolLM2-360M github AI ...",
+      "url": "https://www.toolify.ai/ai-model/huggingfacetb-smollm2-360m",
+      "snippet": "SmolLM2-360M huggingface.co is an AI model on huggingface.co that provides SmolLM2-360M&#x27;s model effect (), which can be used instantly with this HuggingFaceTB SmolLM2-360M model. huggingface.co supports a free trial of the SmolLM2-360M model, and also provides paid use of the SmolLM2-360M. Support call SmolLM2-360M model through api, including Node.js, Python, http."
+    }
+  ]
+}

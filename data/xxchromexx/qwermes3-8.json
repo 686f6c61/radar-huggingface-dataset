@@ -1,0 +1,79 @@
+{
+  "schema": 1,
+  "id": "xxchromexx/Qwermes3.8",
+  "slug": "xxchromexx-qwermes3-8",
+  "author": "xxchromexx",
+  "url": "https://huggingface.co/xxchromexx/Qwermes3.8",
+  "created_at": "2026-08-29T22:57:48.000Z",
+  "updated_at": "2026-08-30T01:57:03.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "gguf",
+    "nvfp4",
+    "modelopt",
+    "ollama",
+    "blackwell",
+    "sm120",
+    "qwen3.5",
+    "dlanet",
+    "hybrid",
+    "finetune",
+    "text-generation",
+    "en",
+    "base_model:Qwen/Qwen3.8-27B",
+    "base_model:quantized:Qwen/Qwen3.8-27B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 26895998848,
+  "parameters_human": "26.90B",
+  "storage_bytes": 20039417760,
+  "storage_human": "20.0 GB",
+  "base_model": "Qwen/Qwen3.8-27B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "qwen3.8 - ollama.com",
+      "url": "https://ollama.com/library/qwen3.8",
+      "snippet": "Qwen3.8 delivers substantial gains across coding, professional work, research, and long-horizon agentic tasks."
+    },
+    {
+      "title": "Qwen3.8 - lmstudio.ai",
+      "url": "https://lmstudio.ai/models/qwen3.8",
+      "snippet": "Qwen3.8-27B is a dense 27B vision-language model for coding, professional work, research, and long-horizon agentic tasks, with configurable reasoning and a native 262K-token context window."
+    },
+    {
+      "title": "Qwen3.8-Max: Features, Benchmarks, and Pricing | DataCamp",
+      "url": "https://www.datacamp.com/blog/qwen3-8-max",
+      "snippet": "Qwen3.8-Max is available now through QwenCloud using the API model ID qwen3.8-max. It supports OpenAI-compatible chat completions and responses endpoints plus an Anthropic-compatible interface, so it works with tools like Claude Code, Codex, and Qwen Code. Open weights are scheduled to release on Hugging Face and ModelScope next week."
+    },
+    {
+      "title": "Qwen 3.8 Max: Specs, Pricing, Benchmarks & Verdict - kingy.ai",
+      "url": "https://kingy.ai/blog/qwen3-8-max-benchmarks-specs-kimi-k3-deepseek-v4-flash/",
+      "snippet": "Qwen 3.8 Max explained: verified specs, pricing, benchmarks, API access, open-weight status, risks and a clear verdict for developers and enterprise AI buyers."
+    },
+    {
+      "title": "Research - Qwen",
+      "url": "https://qwen.ai/research/",
+      "snippet": "Research Latest Advancements Qwen3.8-Max: A New Bar for Coding and Cowork Today, we are officially releasing Qwen 3.8-Max, the most capable model in the Qwen family to date. This also marks the first time we will open-source the weights of a Qwen-Max-class model — the open weights will be released next week."
+    }
+  ]
+}

@@ -1,0 +1,79 @@
+{
+  "schema": 1,
+  "id": "outprime/gasztold-0.3B",
+  "slug": "outprime-gasztold-0-3b",
+  "author": "outprime",
+  "url": "https://huggingface.co/outprime/gasztold-0.3B",
+  "created_at": "2026-05-10T10:17:17.000Z",
+  "updated_at": "2026-08-29T20:39:03.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "pl"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "llama",
+    "text-generation",
+    "causal-lm",
+    "legal",
+    "legal-ai",
+    "law",
+    "polish-law",
+    "statutes",
+    "from-scratch",
+    "gasztold",
+    "0.3b",
+    "pl",
+    "license:apache-2.0",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 13,
+  "trending_score": 0,
+  "parameters": 294908928,
+  "parameters_human": "294.9M",
+  "storage_bytes": 2361598176,
+  "storage_human": "2.4 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "outprime/gasztold-0.3B · Hugging Face",
+      "url": "https://huggingface.co/outprime/gasztold-0.3B",
+      "snippet": "outprime / gasztold-0.3B like 0 Follow OutprimeAI Sp. z o.o. 1 Text Generation Transformers Safetensors Polish llama causal-lm legal legal-ai law polish-law statutes from-scratch gasztold 0.3b text-generation-inference License:apache-2.0 Model card FilesFiles and versions xet Community Deploy Use this model"
+    },
+    {
+      "title": "outprime (Outprime) - Hugging Face",
+      "url": "https://huggingface.co/outprime",
+      "snippet": "Org profile for Outprime on Hugging Face, the AI community building the future."
+    },
+    {
+      "title": "Gasztold 0.3b Gguf - AI Model Insights & Benchmarks",
+      "url": "https://free2aitools.com/model/mradermacher/gasztold-0.3b-gguf",
+      "snippet": "Deep dive into Gasztold 0.3b Gguf. ⚠️ Incomplete Data Some information about this model is not available. Use with Caution - Verify details from the original source before relying on this data. View Original Source → 📝 Limitations & Considerations • Benchmark scores may vary based on evaluation methodology and hardware configuration. • VRAM requirements are estimates; actual usage ..."
+    },
+    {
+      "title": "Models - Hugging Face",
+      "url": "https://d6108366.hf-mirror.com/models?other=0.3b",
+      "snippet": "Explore machine learning models. 2 Base only Inference AvailableInference Edit filters Sort: Trending Active filters: 0.3b Clear all"
+    },
+    {
+      "title": "GGUF Model Discovery - Browse & Download AI Models",
+      "url": "https://local-ai-zone.github.io/",
+      "snippet": "Discover and download GGUF format AI models. Browse and direct download thousands of quantized AI models with detailed information, download counts, and direct links."
+    }
+  ]
+}

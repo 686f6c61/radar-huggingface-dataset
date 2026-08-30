@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "anonymous-sub1/staged-dialog-model",
+  "slug": "anonymous-sub1-staged-dialog-model",
+  "author": "anonymous-sub1",
+  "url": "https://huggingface.co/anonymous-sub1/staged-dialog-model",
+  "created_at": "2026-05-23T22:54:19.000Z",
+  "updated_at": "2026-08-29T22:35:26.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "gpt_neox",
+    "arxiv:2308.11995",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 1,
+  "trending_score": 0,
+  "parameters": 162322944,
+  "parameters_human": "162.3M",
+  "storage_bytes": 3896047808,
+  "storage_human": "3.9 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "anonymous-sub1/staged-dialog-model · Hugging Face",
+      "url": "https://huggingface.co/anonymous-sub1/staged-dialog-model",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "models and datasets - a anonymous-sub1 Collection",
+      "url": "https://huggingface.co/collections/anonymous-sub1/models-and-datasets",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GitHub - 12britz/awesome-free-models: A curated list of free AI models ...",
+      "url": "https://github.com/12britz/awesome-free-models",
+      "snippet": "A curated list of free AI models, APIs, and tools you can use without paying a cent. - 12britz/awesome-free-models"
+    },
+    {
+      "title": "Free Uncensored AI Chatbots — No Filters, No Login, No Restrictions ...",
+      "url": "https://opensatan.com/blog/free-uncensored-ai",
+      "snippet": "The honest guide to free uncensored AI chatbots in 2025. What actually works, what doesn&#x27;t, and where to find an AI with zero filters and no signup required."
+    },
+    {
+      "title": "Owl Alpha: The Anonymous Free AI Model That Took Over OpenRouter",
+      "url": "https://toastyst.github.io/SpaghettiStories/personal/2026/06/21/owl-alpha-mystery/",
+      "snippet": "Owl Alpha represents a new phenomenon — the \"stealth drop\" of a production-grade AI model, offered free for data collection and real-world testing, that immediately became a top-10 model on the world&#x27;s largest open model router."
+    }
+  ]
+}

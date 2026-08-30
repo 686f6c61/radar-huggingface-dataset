@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "DrVon/hermes-tool-selector-adapter-smoke",
+  "slug": "drvon-hermes-tool-selector-adapter-smoke",
+  "author": "DrVon",
+  "url": "https://huggingface.co/DrVon/hermes-tool-selector-adapter-smoke",
+  "created_at": "2026-05-25T14:38:31.000Z",
+  "updated_at": "2026-08-30T01:03:27.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "arxiv:1910.09700",
+    "base_model:Qwen/Qwen2.5-7B-Instruct",
+    "base_model:adapter:Qwen/Qwen2.5-7B-Instruct",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 20,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 900526455,
+  "storage_human": "901 MB",
+  "base_model": "Qwen/Qwen2.5-7B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "DrVon/hermes-tool-selector-adapter-smoke · Hugging Face",
+      "url": "https://huggingface.co/DrVon/hermes-tool-selector-adapter-smoke",
+      "snippet": "Instructions to use DrVon/hermes-tool-selector-adapter-smoke with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Libraries PEFT How to use DrVon/hermes-tool-selector-adapter-smoke with PEFT:"
+    },
+    {
+      "title": "hermes-tool-selector-adapter-smoke API & Inference Endpoint - FriendliAI",
+      "url": "https://friendli.ai/models/DrVon/hermes-tool-selector-adapter-smoke",
+      "snippet": "Run hermes-tool-selector-adapter-smoke with FriendliAI inference. [More Information Needed]."
+    },
+    {
+      "title": "DrVon/hermes-tool-selector · Datasets at Hugging Face",
+      "url": "https://huggingface.co/datasets/DrVon/hermes-tool-selector",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Run Hermes Locally with Ollama — Zero API Cost | Hermes Agent",
+      "url": "https://hermes-agent.nousresearch.com/docs/guides/local-ollama-setup",
+      "snippet": "Run Hermes Locally with Ollama — Zero API Cost The Problem Cloud LLM APIs charge per token. A heavy coding session can cost $5-20. For personal projects, learning, or privacy-sensitive work, that adds up — and you&#x27;re sending every conversation to a third party. What This Guide Solves You&#x27;ll set up Hermes Agent running entirely on your own hardware, using Ollama as the model backend. No ..."
+    },
+    {
+      "title": "Hermes Agent — Open-Source AI Agent That Grows With You | Nous Research",
+      "url": "https://hermes-agent.nousresearch.com/",
+      "snippet": "Hermes Agent is the open-source, self-hosted AI agent by Nous Research. Persistent memory, self-created skills, and a messaging gateway for Telegram, Discord, Slack, and more."
+    }
+  ]
+}

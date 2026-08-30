@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "liodon-ai/Mistral-7B-Instruct-v0.2-FP8",
+  "slug": "liodon-ai-mistral-7b-instruct-v0-2-fp8",
+  "author": "liodon-ai",
+  "url": "https://huggingface.co/liodon-ai/Mistral-7B-Instruct-v0.2-FP8",
+  "created_at": "2026-08-30T01:38:43.000Z",
+  "updated_at": "2026-08-30T01:39:17.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "mistral",
+    "text-generation",
+    "fp8",
+    "compressed-tensors",
+    "vllm",
+    "quantized",
+    "conversational",
+    "base_model:mistralai/Mistral-7B-Instruct-v0.2",
+    "base_model:quantized:mistralai/Mistral-7B-Instruct-v0.2",
+    "license:other",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 7241732096,
+  "parameters_human": "7.24B",
+  "storage_bytes": 7506955520,
+  "storage_human": "7.5 GB",
+  "base_model": "mistralai/Mistral-7B-Instruct-v0.2",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "liodon-ai/Mistral-7B-Instruct-v0.2-imatrix-GGUF · Hugging Face",
+      "url": "https://huggingface.co/liodon-ai/Mistral-7B-Instruct-v0.2-imatrix-GGUF",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "mistralai/Mistral-7B-Instruct-v0.2 · Hugging Face",
+      "url": "https://huggingface.co/mistralai/Mistral-7B-Instruct-v0.2",
+      "snippet": "A newer version of this model is available: mistralai/Mistral-7B-Instruct-v0.3"
+    },
+    {
+      "title": "GitHub - inferless/mistral-7b-instruct-v0.2: An 7B model with a 32k ...",
+      "url": "https://github.com/inferless/Mistral-7B-Instruct-v0.2/",
+      "snippet": "The Mistral-7B-Instruct-v0.2 Large Language Model (LLM) is an instruct fine-tuned version of the Mistral-7B-v0.2. This model outperforms other models like Llama 2 13B and Llama 1 34B on various benchmarks. Mistral 7B excels in tasks such as mathematics, code generation, and reasoning due to its innovative features like Grouped-query Attention (GQA) for faster inference and Sliding Window ..."
+    },
+    {
+      "title": "Model Card for Mistral-7B-Instruct-v0.2",
+      "url": "https://www.modelscope.cn/models/AI-ModelScope/Mistral-7B-Instruct-v0.2/",
+      "snippet": "The Mistral-7B-Instruct-v0.2 Large Language Model (LLM) is an improved instruct fine-tuned version of Mistral-7B-Instruct-v0.1. For full details of this model please read our paper and release blog post."
+    },
+    {
+      "title": "mistral-7b-instruct-v0.2: Text-to-Text model — overview, use cases ...",
+      "url": "https://www.aimodels.fyi/models/replicate/mistral-7b-instruct-v02-mistralai",
+      "snippet": "Mistral-7B-Instruct-v0.2 Practical Guide Overview Mistral-7B-Instruct-v0.2 is a 7-billion parameter instruction-tuned language model built by mistralai that handles conversational tasks, summarization, code generation, and reasoning across English and French. The model features a 32k token context window (4x larger than v0.1), uses rotary positional embeddings with rope-theta of 1e6, and ..."
+    }
+  ]
+}

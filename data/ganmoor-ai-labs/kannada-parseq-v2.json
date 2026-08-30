@@ -5,7 +5,7 @@
   "author": "ganmoor-ai-labs",
   "url": "https://huggingface.co/ganmoor-ai-labs/kannada-parseq-v2",
   "created_at": "2026-08-24T22:51:38.000Z",
-  "updated_at": "2026-08-24T22:52:08.000Z",
+  "updated_at": "2026-08-29T23:53:47.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": null,
@@ -14,6 +14,7 @@
     "kn"
   ],
   "tags": [
+    "onnx",
     "ocr",
     "kannada",
     "text-recognition",
@@ -28,10 +29,12 @@
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
-  "storage_bytes": 382536931,
-  "storage_human": "383 MB",
+  "storage_bytes": 448652846,
+  "storage_human": "449 MB",
   "base_model": null,
-  "formats": [],
+  "formats": [
+    "onnx"
+  ],
   "is_conversational": false,
   "gated": false,
   "removed": false,

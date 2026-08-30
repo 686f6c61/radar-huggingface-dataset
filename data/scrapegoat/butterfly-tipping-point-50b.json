@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "scrapegoat/butterfly-tipping-point-50B",
+  "slug": "scrapegoat-butterfly-tipping-point-50b",
+  "author": "scrapegoat",
+  "url": "https://huggingface.co/scrapegoat/butterfly-tipping-point-50B",
+  "created_at": "2026-08-29T09:30:51.000Z",
+  "updated_at": "2026-08-29T21:46:14.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "butterfly_tipping_point",
+    "scrapegoat",
+    "qwen3.5",
+    "spacelabs",
+    "butterfly_effect",
+    "tippint_point",
+    "custom_code",
+    "arxiv:2501.12599",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 50896621632,
+  "parameters_human": "50.90B",
+  "storage_bytes": 104364730289,
+  "storage_human": "104.4 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Scrapegoat-Tiny-Coder - Hugging Face",
+      "url": "https://huggingface.co/scrapegoat/Scrapegoat-Tiny-Coder",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GitHub - armanchinai/scrapegoat: Query-first Python web scraping ...",
+      "url": "https://github.com/armanchinai/scrapegoat",
+      "snippet": "Scrapegoat is designed with the query at the center. You shouldn&#x27;t have to write boilerplate, string libraries together, or even think about the underlying plumbing."
+    },
+    {
+      "title": "GitHub - scrapegoat/scrapegoat: Scrape Data in One-shot.",
+      "url": "https://github.com/scrapegoat/scrapegoat",
+      "snippet": "Scrape data in one shot. Scrapegoat is a python library that can be used to scrape the websites from internet based on the relevance of the given topic irrespective of language using Natural Language Processing. It can be mainly used for non-English language to get accurate and relevant scraped text."
+    },
+    {
+      "title": "ScapegoatAI",
+      "url": "https://scapegoatai.com/",
+      "snippet": "At Scapegoat AI, we specialize in delivering cutting-edge software services tailored to meet the diverse needs of our clients. Our expertise spans across several critical domains, including video and image manipulation, cyber security with a strong focus on threat detection and network packet analysis, and the development of tools for ..."
+    },
+    {
+      "title": "GOAT or Scapegoat: AI May (or May Not) Be Reason for Layoffs",
+      "url": "https://worldatwork.org/publications/workspan-daily/goat-or-scapegoat-ai-may-or-may-not-be-reason-for-layoffs",
+      "snippet": "According to recent news reports, artificial intelligence (AI) was the stated reason for more than 50,000 layoffs in 2025, but some experts suggest that organizations are disingenuously blaming AI for layoffs, or \"AI washing.\" But according to John Bremen, the managing director and chief innovation and acceleration officer at consulting firm WTW, only a small percentage of early AI ..."
+    }
+  ]
+}

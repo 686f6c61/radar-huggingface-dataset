@@ -1,0 +1,110 @@
+{
+  "schema": 1,
+  "id": "CMSManhattan/JiRackDeltaNet_27b",
+  "slug": "cmsmanhattan-jirackdeltanet_27b",
+  "author": "CMSManhattan",
+  "url": "https://huggingface.co/CMSManhattan/JiRackDeltaNet_27b",
+  "created_at": "2026-08-29T00:33:20.000Z",
+  "updated_at": "2026-08-30T01:32:11.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "en",
+    "zh",
+    "ja",
+    "ko",
+    "fr",
+    "es",
+    "pt",
+    "de",
+    "it",
+    "ru",
+    "ar",
+    "vi",
+    "th"
+  ],
+  "tags": [
+    "safetensors",
+    "qwen3_5_text",
+    "text-generation",
+    "deltanet",
+    "qwen3.8",
+    "gguf",
+    "cpu",
+    "efficient",
+    "low-memory",
+    "ternary",
+    "bitnet",
+    "jirack",
+    "web-ui",
+    "routing",
+    "tool-call",
+    "robotics",
+    "ollama",
+    "ternary-weights",
+    "ternary-transformer",
+    "quantization",
+    "conversational",
+    "en",
+    "zh",
+    "ja",
+    "ko",
+    "fr",
+    "es",
+    "pt",
+    "de",
+    "it",
+    "ru",
+    "ar",
+    "vi",
+    "th",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 27320697856,
+  "parameters_human": "27.32B",
+  "storage_bytes": 108454011567,
+  "storage_human": "108.5 GB",
+  "base_model": null,
+  "formats": [
+    "gguf",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "cmsmanhattan / AI - Bitbucket",
+      "url": "https://bitbucket.org/cmsmanhattan/workspace/projects/AI",
+      "snippet": "cmsmanhattan Projects AI Repositories"
+    },
+    {
+      "title": "Free JiRack Fable 27B Ternary Intelligence. Local. Private. Fast.",
+      "url": "https://www.linkedin.com/pulse/free-jirack-fable-27b-ternary-intelligence-local-private-grabko-nwvrc/",
+      "snippet": "In July 2026 we released JiRack Fable 27B — our largest ternary model to date. Built on a carefully selected 27-billion parameter foundation and fully converted to 1."
+    },
+    {
+      "title": "cmsmanhattan (Konstantin V Grabko) - Docker Hub",
+      "url": "https://hub.docker.com/u/cmsmanhattan",
+      "snippet": "Discover Docker images from cmsmanhattan. Visit their profile and explore images they maintain."
+    },
+    {
+      "title": "CMSManhattan (Center Business Solutions inc ) - Hugging Face",
+      "url": "https://huggingface.co/CMSManhattan/datasets",
+      "snippet": "AI & ML interests ... Recent Activity kgrabko updated a model 1 day ago ... kgrabko updated a model 1 day ago ... kgrabko updated a dataset 3 days ago"
+    },
+    {
+      "title": "Hugging Face",
+      "url": "https://huggingface.co/kgrabko/JiRackTernary_1b/raw/main/README.md",
+      "snippet": "The model is trained using **Quantization-Aware Training (QAT)**. During training, the weights learn to live in ternary format while being stored in FP16. After training, the `pack.py` script converts them into real ternary weights. The resulting model can then be converted to **ONNX** for production use, or to **GGUF** for Llama.cpp. However, the best runtime performance is currently achieved ..."
+    }
+  ]
+}

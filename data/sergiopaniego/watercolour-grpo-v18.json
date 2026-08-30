@@ -5,7 +5,7 @@
   "author": "sergiopaniego",
   "url": "https://huggingface.co/sergiopaniego/watercolour-grpo-v18",
   "created_at": "2026-08-29T13:20:34.000Z",
-  "updated_at": "2026-08-29T16:21:55.000Z",
+  "updated_at": "2026-08-29T22:52:43.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": null,
@@ -30,8 +30,8 @@
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
-  "storage_bytes": 70944256,
-  "storage_human": "71 MB",
+  "storage_bytes": 161178890,
+  "storage_human": "161 MB",
   "base_model": "Qwen/Qwen3.5-35B-A3B",
   "formats": [
     "safetensors"

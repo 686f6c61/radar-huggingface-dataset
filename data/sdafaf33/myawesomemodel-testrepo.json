@@ -4,8 +4,8 @@
   "slug": "sdafaf33-myawesomemodel-testrepo",
   "author": "sdafaf33",
   "url": "https://huggingface.co/sdafaf33/MyAwesomeModel-TestRepo",
-  "created_at": "2026-08-25T18:52:56.000Z",
-  "updated_at": "2026-08-25T18:53:02.000Z",
+  "created_at": "2026-08-29T05:56:42.000Z",
+  "updated_at": "2026-08-29T06:22:20.000Z",
   "license": "mit",
   "license_family": "oss",
   "pipeline_tag": "feature-extraction",
@@ -13,12 +13,15 @@
   "languages": [],
   "tags": [
     "transformers",
+    "pytorch",
+    "bert",
+    "feature-extraction",
     "license:mit",
     "endpoints_compatible",
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 0,
+  "downloads_30d": 194,
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
@@ -28,8 +31,8 @@
   "formats": [],
   "is_conversational": false,
   "gated": false,
-  "removed": true,
-  "removed_at": "2026-08-29T03:12:55.810Z",
+  "removed": false,
+  "removed_at": null,
   "benchmarks": [],
   "sources": [
     {

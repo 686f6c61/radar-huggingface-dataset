@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "huggsook/connect-ai-ant-v5-ppo",
+  "slug": "huggsook-connect-ai-ant-v5-ppo",
+  "author": "huggsook",
+  "url": "https://huggingface.co/huggsook/connect-ai-ant-v5-ppo",
+  "created_at": "2026-08-29T22:01:27.000Z",
+  "updated_at": "2026-08-29T22:01:36.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "reinforcement-learning",
+  "library": "stable-baselines3",
+  "languages": [],
+  "tags": [
+    "stable-baselines3",
+    "reinforcement-learning",
+    "deep-reinforcement-learning",
+    "ppo",
+    "continuous-control",
+    "gymnasium",
+    "mujoco",
+    "quadruped",
+    "ant",
+    "robotics",
+    "physics",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 182534250,
+  "storage_human": "183 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "huggsook/connect-ai/Humanoid-v5 - Hugging Face",
+      "url": "https://huggingface.co/spaces/huggsook/connect-ai-Humanoid-v5",
+      "snippet": "This web app lets you start and watch a PPO‑based reinforcement‑learning training session for a 3‑D humanoid model. You can tweak learning rate, steps, and other settings, see live charts, camera v..."
+    },
+    {
+      "title": "huggsook/connect-ai-Humanoid-v5 at main - Hugging Face",
+      "url": "https://huggingface.co/spaces/huggsook/connect-ai-Humanoid-v5/tree/main",
+      "snippet": "/ connect-ai-Humanoid-v5 like 0 Running App FilesFiles Community main connect-ai-Humanoid-v5 1.78 MB Ctrl+K Ctrl+K 1 contributor History:3 commits huggsook Deploy Humanoid-v5 PPO 3D interactive simulation & training visualizer space e25f3d8 verifiedabout 9 hours ago jsDeploy Humanoid-v5 PPO 3D interactive simulation & training visualizer ..."
+    },
+    {
+      "title": "GitHub - mturan33/mujoco-ant-ppo: Training a MuJoCo Ant agent to walk ...",
+      "url": "https://github.com/mturan33/mujoco-ant-ppo",
+      "snippet": "A from-scratch implementation of Proximal Policy Optimization (PPO) for training a quadruped ant robot in MuJoCo&#x27;s Ant-v5 environment. Features include height stability penalty to prevent hopping behavior, parallel environment training, and comprehensive visualization tools."
+    },
+    {
+      "title": "PPO — Stable Baselines3 2.9.1a1 documentation",
+      "url": "https://stable-baselines3.readthedocs.io/en/master/modules/ppo.html",
+      "snippet": "PPO The Proximal Policy Optimization algorithm combines ideas from A2C (having multiple workers) and TRPO (it uses a trust region to improve the actor). The main idea is that after an update, the new policy should be not too far from the old policy. For that, ppo uses clipping to avoid too large update."
+    },
+    {
+      "title": "Ant - Gymnasium Documentation",
+      "url": "https://gymnasium.farama.org/environments/mujoco/ant/",
+      "snippet": "The ant is a 3D quadruped robot consisting of a torso (free rotational body) with four legs attached to it, where each leg has two body parts. The goal is to coordinate the four legs to move in the forward (right) direction by applying torque to the eight hinges connecting the two body parts of each leg and the torso (nine body parts and eight ..."
+    }
+  ]
+}

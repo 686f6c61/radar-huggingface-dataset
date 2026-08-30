@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "jinhern424/my_policy",
+  "slug": "jinhern424-my_policy",
+  "author": "jinhern424",
+  "url": "https://huggingface.co/jinhern424/my_policy",
+  "created_at": "2026-08-29T20:30:39.000Z",
+  "updated_at": "2026-08-29T20:31:48.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "robotics",
+    "act",
+    "dataset:jinhern424/record-test_20260829_162539",
+    "arxiv:2304.13705",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 51668614,
+  "parameters_human": "51.7M",
+  "storage_bytes": 206714960,
+  "storage_human": "207 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "jinhern424.github.io/index.html at main · jinhern424/jinhern424.github.io",
+      "url": "https://github.com/jinhern424/jinhern424.github.io/blob/main/index.html",
+      "snippet": "Contribute to jinhern424/jinhern424.github.io development by creating an account on GitHub."
+    },
+    {
+      "title": "jinhern424 (JinHern) · GitHub",
+      "url": "https://github.com/jinhern424/",
+      "snippet": "jinhern424 has 8 repositories available. Follow their code on GitHub."
+    },
+    {
+      "title": "Artificial Intelligence (AI) can change the way of doing policy ...",
+      "url": "https://www.sciencedirect.com/science/article/pii/S0161893823001199",
+      "snippet": "This paper evaluates how Artificial Intelligence (AI) can revolutionize policy modeling. AI&#x27;s rapid advancement, encompassing algorithms, advanced programming software, robotics, meta-data, mathematical models, neural networks, and graphical models, is ushering in a new era, offering a myriad of opportunities to replace traditional research methods in analyzing and solving dynamic and complex ..."
+    },
+    {
+      "title": "MyPolicyReview.ai - AI Insurance Policy Analysis & Gap Detection",
+      "url": "https://mypolicyreview.ai/",
+      "snippet": "Upload your insurance policy PDF and get instant AI analysis of coverages, gaps, limits & renewal tracking. Free for individuals, brokers, lenders & more."
+    },
+    {
+      "title": "MyPolicyShield - Decode Your Insurance Policy with AI",
+      "url": "https://mypolicyshield.com/",
+      "snippet": "Scan your insurance policy and ask plain-English questions about your coverage. MyPolicyShield decodes the fine print so you know exactly what is and is not covered."
+    }
+  ]
+}

@@ -5,7 +5,7 @@
   "author": "SZLHOLDINGS",
   "url": "https://huggingface.co/SZLHOLDINGS/chaski-5050",
   "created_at": "2026-08-28T17:33:30.000Z",
-  "updated_at": "2026-08-29T01:15:02.000Z",
+  "updated_at": "2026-08-29T18:43:09.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -31,12 +31,12 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 0,
+  "downloads_30d": 9,
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
-  "storage_bytes": 45576447,
-  "storage_human": "46 MB",
+  "storage_bytes": 71165222,
+  "storage_human": "71 MB",
   "base_model": "Qwen/Qwen3.5-0.8B",
   "formats": [
     "safetensors"

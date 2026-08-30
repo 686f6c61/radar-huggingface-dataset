@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "Rin247/Qwen3-ASR-1.7B-hf-INT4",
+  "slug": "rin247-qwen3-asr-1-7b-hf-int4",
+  "author": "Rin247",
+  "url": "https://huggingface.co/Rin247/Qwen3-ASR-1.7B-hf-INT4",
+  "created_at": "2026-08-29T20:52:03.000Z",
+  "updated_at": "2026-08-29T20:53:06.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "qwen3_asr",
+    "quantized",
+    "int4",
+    "8-bit",
+    "int4_weight_only",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1176909440,
+  "parameters_human": "1.18B",
+  "storage_bytes": 1531188133,
+  "storage_human": "1.5 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - QwenLM/Qwen3-ASR: Qwen3-ASR is an open-source series of ASR ...",
+      "url": "https://github.com/QwenLM/Qwen3-ASR",
+      "snippet": "The Qwen3-ASR family includes Qwen3-ASR-1.7B and Qwen3-ASR-.6B, which support language identification and ASR for 52 languages and dialects. Both leverage large-scale speech training data and the strong audio understanding capability of their foundation model, Qwen3-Omni."
+    },
+    {
+      "title": "WatsonNT/Qwen3-ASR-1.7B · Hugging Face",
+      "url": "https://huggingface.co/WatsonNT/Qwen3-ASR-1.7B",
+      "snippet": "The Qwen3-ASR family includes Qwen3-ASR-1.7B and Qwen3-ASR-.6B, which support language identification and ASR for 52 languages and dialects. Both leverage large-scale speech training data and the strong audio understanding capability of their foundation model, Qwen3-Omni."
+    },
+    {
+      "title": "README.md · Qwen/Qwen3-ASR-1.7B-hf at main - Hugging Face",
+      "url": "https://huggingface.co/Qwen/Qwen3-ASR-1.7B-hf/blob/main/README.md",
+      "snippet": "The Qwen3-ASR family includes Qwen3-ASR-1.7B and Qwen3-ASR-.6B, which support language identification and ASR for 52 languages and dialects. Both leverage large-scale speech training data and the strong audio understanding capability of their foundation model, Qwen3-Omni."
+    },
+    {
+      "title": "GitHub - QwenLM/Qwen3-ASR at runtimewire",
+      "url": "https://github.com/QwenLM/Qwen3-ASR?ref=runtimewire",
+      "snippet": "The Qwen3-ASR family includes Qwen3-ASR-1.7B and Qwen3-ASR-.6B, which support language identification and ASR for 52 languages and dialects. Both leverage large-scale speech training data and the strong audio understanding capability of their foundation model, Qwen3-Omni."
+    },
+    {
+      "title": "Qwen3-ASR-1.7B-hf · Models",
+      "url": "https://www.modelscope.cn/models/Qwen/Qwen3-ASR-1.7B-hf",
+      "snippet": "X-AnyLabeling is a powerful auxiliary annotation tool that integrates AI inference engines and rich functional features. It focuses on practical applications and aims to provide industrial-grade one-stop solutions for image data engineers, enabling the automatic and rapid labeling of various complex tasks."
+    }
+  ]
+}

@@ -1,0 +1,90 @@
+{
+  "schema": 1,
+  "id": "mradermacher/Darwin-9B-NEG-x-Negentropy-V8-i1-GGUF",
+  "slug": "mradermacher-darwin-9b-neg-x-negentropy-v8-i1-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/Darwin-9B-NEG-x-Negentropy-V8-i1-GGUF",
+  "created_at": "2026-08-29T20:54:24.000Z",
+  "updated_at": "2026-08-30T00:01:42.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "ko",
+    "en",
+    "zh",
+    "ja",
+    "multilingual"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "darwin",
+    "darwin-v8",
+    "darwin-neg",
+    "native-entropy-gating",
+    "negentropy",
+    "trace-inversion",
+    "merge",
+    "qwen3.5",
+    "korean",
+    "reasoning",
+    "vidraft",
+    "ko",
+    "en",
+    "zh",
+    "ja",
+    "multilingual",
+    "base_model:FINAL-Bench/Darwin-9B-NEG-x-Negentropy-V8",
+    "base_model:quantized:FINAL-Bench/Darwin-9B-NEG-x-Negentropy-V8",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "imatrix",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 8953803264,
+  "parameters_human": "8.95B",
+  "storage_bytes": 110211455968,
+  "storage_human": "110.2 GB",
+  "base_model": "FINAL-Bench/Darwin-9B-NEG-x-Negentropy-V8",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "mradermacher/Darwin-9B-NEG-i1-GGUF · Hugging Face",
+      "url": "https://huggingface.co/mradermacher/Darwin-9B-NEG-i1-GGUF",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "mradermacher/Darwin-9B-NEG-i1-GGUF at main - Hugging Face",
+      "url": "https://huggingface.co/mradermacher/Darwin-9B-NEG-i1-GGUF/tree/main",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Darwin-9B-NEG · Model · Inferix",
+      "url": "https://inferix.co/models/ansulev/Darwin-9B-NEG",
+      "snippet": "Darwin-9B-NEG is the first model in the Darwin series to feature Native Entropy Gating (NEG) — a proprietary Darwin architectural innovation that embeds a sense of self-confidence directly into the model weights."
+    },
+    {
+      "title": "Darwin-9B-NEG: Text-to-Text model — overview, use cases, alternatives",
+      "url": "https://www.aimodels.fyi/models/huggingFace/darwin-9b-neg-final-bench",
+      "snippet": "Overview Darwin-9B-NEG is the first language model to embed Native Entropy Gating (NEG) directly into model weights, enabling self-regulated reasoning at 1× inference cost. Built by FINAL-Bench on the Qwen3.5-9B backbone using evolutionary merging, it contains 8.95 billion parameters plus approximately 4 million parameters in NEG modules (NEG-Head and NEG-Gate), totaling under 9 billion ..."
+    },
+    {
+      "title": "Darwin 9B NEG — ThinkLLM",
+      "url": "https://www.thinkllm.dev/models/darwin-9b-neg",
+      "snippet": "A compact, openly licensed text model from ansulev. With limited public documentation available, its specific behavioral tendencies and capability profile are difficult to characterize concretely. It operates on text in and text out, distributed in safetensors format for straightforward loading."
+    }
+  ]
+}

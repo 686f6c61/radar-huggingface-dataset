@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "Rin247/gemma-3-12b-it-Uncensored-Aquarion-FP4",
+  "slug": "rin247-gemma-3-12b-it-uncensored-aquarion-fp4",
+  "author": "Rin247",
+  "url": "https://huggingface.co/Rin247/gemma-3-12b-it-Uncensored-Aquarion-FP4",
+  "created_at": "2026-08-29T23:22:09.000Z",
+  "updated_at": "2026-08-29T23:26:43.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "gemma3",
+    "quantized",
+    "fp4",
+    "uncensored",
+    "abliterated",
+    "8-bit",
+    "fp4_weight_only",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 6602594928,
+  "parameters_human": "6.60B",
+  "storage_bytes": 8356901202,
+  "storage_human": "8.4 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "gemma-3-12b-it-uncensored-GGUF - Hugging Face",
+      "url": "https://huggingface.co/mradermacher/gemma-3-12b-it-uncensored-GGUF",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "huihui-ai/gemma-3-12b-it-abliterated · Hugging Face",
+      "url": "https://huggingface.co/huihui-ai/gemma-3-12b-it-abliterated",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "gemma-3-12b-qat-abliterated-sikaworld-fp4-ltx2",
+      "url": "https://civitai.red/models/2461299/gemma-3-12b-qat-abliterated-sikaworld-fp4-ltx2",
+      "snippet": "This repository provides two custom FP4 variants of the uncensored Gemma‑3‑12B‑QAT model created by mlabonne using his improved Abliteration v2 method. Both models are fully uncensored, explicitly optimized for LTX‑2 and of course LTX-2.3, and designed to deliver strong motion vectors while maintaining spatial coherence."
+    },
+    {
+      "title": "Gemma 3 12B abliterated weights arrive in fp8 quantization",
+      "url": "https://uncensoredhub.ai/news/2026-06-25-gemma-3-12b-abliterated-weights-arrive-in-fp8-quantization",
+      "snippet": "An fp8-quantized abliterated variant of Gemma 3 12B Instruct surfaced this week, stripping safety layers for uncensored text generation."
+    },
+    {
+      "title": "gemma-3-12b-it-uncensored-GGUF huggingface.co api & mradermacher gemma ...",
+      "url": "https://www.toolify.ai/ai-model/mradermacher-gemma-3-12b-it-uncensored-gguf",
+      "snippet": "gemma-3-12b-it-uncensored-GGUF is an open source model from GitHub that offers a free installation service, and any user can find gemma-3-12b-it-uncensored-GGUF on GitHub to install. At the same time, huggingface.co provides the effect of gemma-3-12b-it-uncensored-GGUF install, users can directly use gemma-3-12b-it-uncensored-GGUF installed effect in huggingface.co for debugging and trial. It ..."
+    }
+  ]
+}

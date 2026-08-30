@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "shoumen007/bangla-gpt2",
+  "slug": "shoumen007-bangla-gpt2",
+  "author": "shoumen007",
+  "url": "https://huggingface.co/shoumen007/bangla-gpt2",
+  "created_at": "2026-08-29T22:25:28.000Z",
+  "updated_at": "2026-08-29T22:25:31.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1182680,
+  "storage_human": "1 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "BanglaGPT - GitHub",
+      "url": "https://github.com/BanglaGPT/",
+      "snippet": "BanglaGPT is a project implementing a powerful GPT language model for Bangla. It aims to address the lack of language models for Bangla, enabling applications like chatbots, translation, sentiment analysis, and more."
+    },
+    {
+      "title": "saiful9379/Bangla_GPT2 · Hugging Face",
+      "url": "https://huggingface.co/saiful9379/Bangla_GPT2",
+      "snippet": "Bangla GPT2 model was trained using the Bangla Newspaper dataset. Here we used prothom alo 250mb data for GPT2 model training and also vocab size 50k. Github link ..."
+    },
+    {
+      "title": "banglagov/banGPT2-Base · Hugging Face",
+      "url": "https://huggingface.co/banglagov/banGPT2-Base",
+      "snippet": "GPT2 base model for Bangla The GPT-2 model, short for Generative Pre-trained Transformer 2, is a language model developed by OpenAI. It isbasedon the Transformer architecture, which has proven to be highly effective innatural language processing tasks. GPT-2 is a generative model, which can generate coherent and realistic text based on a given prompt. At the core of GPT-2 is the transformer ..."
+    },
+    {
+      "title": "BanglaGPT: A Generative Pretrained Transformer-Based Model for Bangla ...",
+      "url": "https://ieeexplore.ieee.org/document/10303383",
+      "snippet": "We have used a subword-based tokenization algorithm named Byte-Pair Encoding (BPE) for Bangla and finally trained the Bangla-GPT2 model from scratch using the BanglaCLM dataset. Our pretrained BanglaGPT provides state-of-the-art performance for Bangla text generation with a perplexity score of 2.86 and a loss score of 0.45 on the test set."
+    },
+    {
+      "title": "GitHub - saiful9379/Bangla_GPT2: GPT2 Model Training on Custom Bangla ...",
+      "url": "https://github.com/saiful9379/Bangla_GPT2",
+      "snippet": "GPT2 Model Training on Custom Bangla Dataset. Contribute to saiful9379/Bangla_GPT2 development by creating an account on GitHub."
+    }
+  ]
+}

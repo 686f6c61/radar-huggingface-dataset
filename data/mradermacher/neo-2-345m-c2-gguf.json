@@ -1,0 +1,79 @@
+{
+  "schema": 1,
+  "id": "mradermacher/neo-2-345M-C2-GGUF",
+  "slug": "mradermacher-neo-2-345m-c2-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/neo-2-345M-C2-GGUF",
+  "created_at": "2025-12-09T09:55:45.000Z",
+  "updated_at": "2026-08-30T00:05:54.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "language",
+    "aquif",
+    "gpt2",
+    "text-generation-inference",
+    "math",
+    "coding",
+    "small",
+    "en",
+    "dataset:sahil2801/CodeAlpaca-20k",
+    "dataset:iamtarun/python_code_instructions_18k_alpaca",
+    "dataset:reedmayhew/gpt-4.5-100x",
+    "base_model:aquilesfd/neo-2-345M-C2",
+    "base_model:quantized:aquilesfd/neo-2-345M-C2",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 268,
+  "trending_score": 0,
+  "parameters": 354823168,
+  "parameters_human": "354.8M",
+  "storage_bytes": 3368471808,
+  "storage_human": "3.4 GB",
+  "base_model": "aquilesfd/neo-2-345M-C2",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "mradermacher/neo-2-345M-C2-GGUF · Hugging Face",
+      "url": "https://huggingface.co/mradermacher/neo-2-345M-C2-GGUF",
+      "snippet": "Feel free to request them by opening a Community Discussion. Usage If you are unsure how to use GGUF files, refer to one of TheBloke&#x27;s READMEs for more details, including on how to concatenate multi-part files. Provided Quants (sorted by size, not necessarily quality. IQ-quants are often preferable over similar sized non-IQ quants)"
+    },
+    {
+      "title": "mradermacher/aquif-neo-2-345m-c1-GGUF · Hugging Face",
+      "url": "https://huggingface.co/mradermacher/aquif-neo-2-345m-c1-GGUF",
+      "snippet": "Feel free to request them by opening a Community Discussion. Usage If you are unsure how to use GGUF files, refer to one of TheBloke&#x27;s READMEs for more details, including on how to concatenate multi-part files. Provided Quants (sorted by size, not necessarily quality. IQ-quants are often preferable over similar sized non-IQ quants)"
+    },
+    {
+      "title": "Mradermacher - Find Top AI Models on Hugging Face",
+      "url": "https://www.aimodels.fyi/creators/huggingFace/mradermacher",
+      "snippet": "Looking for Mradermacher&#x27;s top AI models? Browse their full Hugging Face collection of 26 models. Explore AI models and contributions by Mradermacher on Huggingface."
+    },
+    {
+      "title": "RichardErkhov (Richard Erkhov) · GitHub",
+      "url": "https://github.com/RichardErkhov/",
+      "snippet": "Team mradermacher 🚀 . RichardErkhov has 30 repositories available. Follow their code on GitHub."
+    },
+    {
+      "title": "mradermacher quant download page",
+      "url": "https://hf.tst.eu/model",
+      "snippet": "mradermacher quant download page BETA - this page is not finished: more explanations and changes are to come, but it should be functional."
+    }
+  ]
+}

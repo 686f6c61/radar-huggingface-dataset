@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "nvidia/DeepSeek-V4-Flash-NVFP4",
+  "slug": "nvidia-deepseek-v4-flash-nvfp4",
+  "author": "nvidia",
+  "url": "https://huggingface.co/nvidia/DeepSeek-V4-Flash-NVFP4",
+  "created_at": "2026-05-18T00:02:10.000Z",
+  "updated_at": "2026-06-15T01:14:07.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "Model Optimizer",
+  "languages": [],
+  "tags": [
+    "Model Optimizer",
+    "safetensors",
+    "deepseek_v4",
+    "nvidia",
+    "ModelOpt",
+    "DeepSeekV4",
+    "quantized",
+    "NVFP4",
+    "nvfp4",
+    "text-generation",
+    "base_model:deepseek-ai/DeepSeek-V4-Flash",
+    "base_model:quantized:deepseek-ai/DeepSeek-V4-Flash",
+    "license:mit",
+    "8-bit",
+    "fp8",
+    "region:us"
+  ],
+  "likes": 109,
+  "downloads_30d": 269335,
+  "trending_score": 8,
+  "parameters": 166726476754,
+  "parameters_human": "166.73B",
+  "storage_bytes": 175710627462,
+  "storage_human": "175.7 GB",
+  "base_model": "deepseek-ai/DeepSeek-V4-Flash",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "nvidia/DeepSeek-V4-Flash-NVFP4 · Hugging Face",
+      "url": "https://huggingface.co/nvidia/DeepSeek-V4-Flash-NVFP4",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "deepseek-v4-flash Model by Deepseek-ai | NVIDIA NIM",
+      "url": "https://build.nvidia.com/deepseek-ai/deepseek-v4-flash",
+      "snippet": "DeepSeek V4 Flash is a 284B MoE model with 1M-token context optimized for fast coding and agents."
+    },
+    {
+      "title": "README.md · nvidia/DeepSeek-V4-Flash-NVFP4 at main",
+      "url": "https://huggingface.co/nvidia/DeepSeek-V4-Flash-NVFP4/blob/main/README.md",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "deepseek-ai/DeepSeek-V4-Flash | vLLM Recipes - recipes.vllm.ai",
+      "url": "https://recipes.vllm.ai/deepseek-ai/DeepSeek-V4-Flash",
+      "snippet": "An NVFP4 variant (nvidia/DeepSeek-V4-Flash-NVFP4) is also available — NVIDIA modelopt re-quantizes the MoE experts to standard NVFP4 while attention, shared experts, router head, and MTP stay FP8. Pick it from the Variant row; it runs on Blackwell GPUs with the FP4 indexer cache."
+    },
+    {
+      "title": "deepseek-ai / deepseek-v4-flash - docs.api.nvidia.com",
+      "url": "https://docs.api.nvidia.com/nim/reference/deepseek-ai-deepseek-v4-flash",
+      "snippet": "DeepSeek-V4-Flash is a Mixture-of-Experts (MoE) language model with 284 billion total parameters and 13 billion activated parameters. DeepSeek-V4-Flash was developed by DeepSeek as a part of DeepSeek-V4 collection. This model is ready for commercial/non-commercial use."
+    }
+  ]
+}

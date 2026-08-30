@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "bivariant/griot-mt",
+  "slug": "bivariant-griot-mt",
+  "author": "bivariant",
+  "url": "https://huggingface.co/bivariant/griot-mt",
+  "created_at": "2026-08-30T00:13:06.000Z",
+  "updated_at": "2026-08-30T00:13:06.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "bivariant/griot-mt · Hugging Face",
+      "url": "https://huggingface.co/bivariant/griot-mt",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "bivariant (Bivariant) - Hugging Face",
+      "url": "https://huggingface.co/bivariant/models",
+      "snippet": "Org profile for Bivariant on Hugging Face, the AI community building the future."
+    },
+    {
+      "title": "Bivariant",
+      "url": "https://www.bivariant.com/",
+      "snippet": "Bivariant Forge is an AI model deployment and management platform that lets you deploy large language models (LLMs) on your own infrastructure. It also enables you to fine-tune AI models to your specific needs and leverage different AI providers, including OpenAI, Microsoft Azure AI, Hugging Face, and Anthropic."
+    },
+    {
+      "title": "Tambour - African Artificial Intelligence | Griot, Baobab, Studio",
+      "url": "https://tambour.ai/en",
+      "snippet": "Tambour develops sovereign, inclusive and ethical AI solutions. Griot, Baobab and Studio: artificial intelligence that understands your languages, respects your cultures and protects your data."
+    },
+    {
+      "title": "griot-ai · GitHub",
+      "url": "https://github.com/griot-ai",
+      "snippet": "GitHub is where griot-ai builds software. People This organization has no public members. You must be a member to see who&#x27;s a part of this organization."
+    }
+  ]
+}

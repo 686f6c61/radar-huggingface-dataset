@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "sleephashira/kimetsu-color-illustrious-xl-lora",
+  "slug": "sleephashira-kimetsu-color-illustrious-xl-lora",
+  "author": "sleephashira",
+  "url": "https://huggingface.co/sleephashira/kimetsu-color-illustrious-xl-lora",
+  "created_at": "2026-08-29T21:10:59.000Z",
+  "updated_at": "2026-08-29T21:44:02.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": "text-to-image",
+  "library": "diffusers",
+  "languages": [],
+  "tags": [
+    "diffusers",
+    "stable-diffusion-xl",
+    "lora",
+    "text-to-image",
+    "manga",
+    "anime",
+    "color",
+    "style",
+    "copyrighted-training-data",
+    "base_model:OnomaAIResearch/Illustrious-xl-early-release-v0",
+    "base_model:adapter:OnomaAIResearch/Illustrious-xl-early-release-v0",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 230394221,
+  "storage_human": "230 MB",
+  "base_model": "OnomaAIResearch/Illustrious-xl-early-release-v0",
+  "formats": [
+    "diffusers"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Models - Hugging Face",
+      "url": "https://huggingface.co/models?other=illustrious",
+      "snippet": "Explore machine learning models."
+    },
+    {
+      "title": "sleephashira/opm-murata-illustrious-xl-lora · Hugging Face",
+      "url": "https://huggingface.co/sleephashira/opm-murata-illustrious-xl-lora",
+      "snippet": "sleephashira / opm-murata-illustrious-xl-lora like 0 Text-to-Image Diffusers stable-diffusion-xl lora manga monochrome style copyrighted-training-data License:other Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "Illustrious XL | Next-Gen AI for Stunning Anime & Illustration Creation",
+      "url": "https://www.illustrious-xl.ai/",
+      "snippet": "Support the advancement of AI by sponsoring Illustrious XL. Stay informed with our latest updates, version releases, and in-depth research insights from our AI team."
+    },
+    {
+      "title": "Illustrious XL - High-Resolution Anime-Style AI Generation",
+      "url": "https://illustriousxl.org/",
+      "snippet": "Push the boundaries of AI illustration. Illustrious XL is a cutting-edge, open-source SDXL base model heavily optimized for native 1536x1536 high-resolution anime art and hybrid natural language tagging."
+    },
+    {
+      "title": "lora AI Models | Civitai",
+      "url": "https://civitai.com/tag/lora",
+      "snippet": "Browse 28,895 Stable Diffusion & Flux models, LoRAs, checkpoints, and embeddings tagged with lora."
+    }
+  ]
+}

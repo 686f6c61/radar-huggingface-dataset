@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "mohammedqarnuon/Qarnonai",
+  "slug": "mohammedqarnuon-qarnonai",
+  "author": "mohammedqarnuon",
+  "url": "https://huggingface.co/mohammedqarnuon/Qarnonai",
+  "created_at": "2026-05-03T21:12:31.000Z",
+  "updated_at": "2026-08-30T01:41:18.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "ar"
+  ],
+  "tags": [
+    "safetensors",
+    "arabic",
+    "text-generation",
+    "lora",
+    "qarnonai",
+    "conversational",
+    "ar",
+    "base_model:Qwen/Qwen2.5-1.5B-Instruct",
+    "base_model:adapter:Qwen/Qwen2.5-1.5B-Instruct",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 244589165,
+  "storage_human": "245 MB",
+  "base_model": "Qwen/Qwen2.5-1.5B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "mohammedqarnuon/MLQarnonai · Hugging Face",
+      "url": "https://huggingface.co/mohammedqarnuon/MLQarnonai",
+      "snippet": "Transparency and Accountability This model card summarizes details on the models&#x27; architecture, capabilities, limitations, and evaluation processes. A responsibly developed open model offers the opportunity to share innovation by making VLM technology accessible to developers and researchers across the AI ecosystem. Risks identified and ..."
+    },
+    {
+      "title": "mohammedqarnuon/Qarnon-AI - Fast, Reliable, and Scalable Inference on ...",
+      "url": "https://friendli.ai/models/mohammedqarnuon/Qarnon-AI",
+      "snippet": "Run mohammedqarnuon/Qarnon-AI with fast, reliable, and scalable inference on FriendliAI. Get low-latency performance with advanced quantization (FP4, FP8, INT4, INT8), continuous batching, optimized GPU kernels, token caching, and seamless API integration."
+    },
+    {
+      "title": "mohammedqarnuon/MLQarnonai at main - Hugging Face",
+      "url": "https://huggingface.co/mohammedqarnuon/MLQarnonai/tree/main",
+      "snippet": "mohammedqarnuon / MLQarnonai like 0 Any-to-Any Transformers GGUF imatrix conversational License:apache-2.0 Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "mohammedqarnuon/qarnon-ai-v1 · Hugging Face",
+      "url": "https://huggingface.co/mohammedqarnuon/qarnon-ai-v1",
+      "snippet": "mohammedqarnuon / qarnon-ai-v1 like 0 License:apache-2.0 Model card FilesFiles and versions xet Community"
+    },
+    {
+      "title": "mohammedqarnuon (محمد قرنون) - Hugging Face",
+      "url": "https://huggingface.co/mohammedqarnuon",
+      "snippet": "Qarnon Mini AI 🐠 Generate AI answers with live internet info mohammedqarnuon 3 days ago Sleeping 1"
+    }
+  ]
+}

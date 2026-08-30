@@ -1,0 +1,90 @@
+{
+  "schema": 1,
+  "id": "Rin247/Qwen3-TTS-12Hz-0.6B-CustomVoice-FP8",
+  "slug": "rin247-qwen3-tts-12hz-0-6b-customvoice-fp8",
+  "author": "Rin247",
+  "url": "https://huggingface.co/Rin247/Qwen3-TTS-12Hz-0.6B-CustomVoice-FP8",
+  "created_at": "2026-08-29T20:58:29.000Z",
+  "updated_at": "2026-08-29T20:59:16.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-speech",
+  "library": null,
+  "languages": [
+    "zh",
+    "en",
+    "ja",
+    "ko",
+    "de",
+    "fr",
+    "ru",
+    "pt",
+    "es",
+    "it"
+  ],
+  "tags": [
+    "safetensors",
+    "qwen3_tts",
+    "tts",
+    "qwen",
+    "audio",
+    "text-to-speech",
+    "zh",
+    "en",
+    "ja",
+    "ko",
+    "de",
+    "fr",
+    "ru",
+    "pt",
+    "es",
+    "it",
+    "arxiv:2601.15621",
+    "license:apache-2.0",
+    "fp8",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 905788672,
+  "parameters_human": "905.8M",
+  "storage_bytes": 1286316636,
+  "storage_human": "1.3 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - QwenLM/Qwen3-TTS: Qwen3-TTS is an open-source series of TTS ...",
+      "url": "https://github.com/QwenLM/Qwen3-TTS",
+      "snippet": "We release Qwen3-TTS, a series of powerful speech generation capabilities developed by Qwen, offering comprehensive support for voice clone, voice design, ultra-high-quality human-like speech generation, and natural language-based voice control. It provides developers and users with the most extensive set of speech generation features available."
+    },
+    {
+      "title": "Qwen/Qwen3-TTS-12Hz-0.6B-CustomVoice · Hugging Face",
+      "url": "https://huggingface.co/Qwen/Qwen3-TTS-12Hz-0.6B-CustomVoice",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Qwen3-TTS - a Qwen Collection - Hugging Face",
+      "url": "https://huggingface.co/collections/Qwen/qwen3-tts",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GitHub - QwenLM/Qwen3-TTS: Qwen3-TTS is an open-source series of TTS ...",
+      "url": "https://github.com/QwenLM/Qwen3-TTS?pubDate=20260316",
+      "snippet": "We release Qwen3-TTS, a series of powerful speech generation capabilities developed by Qwen, offering comprehensive support for voice clone, voice design, ultra-high-quality human-like speech generation, and natural language-based voice control. It provides developers and users with the most ..."
+    },
+    {
+      "title": "Qwen3-TTS-12Hz-0.6B-CustomVoice · Models",
+      "url": "https://www.modelscope.cn/models/Qwen/Qwen3-TTS-12Hz-0.6B-CustomVoice",
+      "snippet": "Qwen3-TTS is a series of advanced multilingual, controllable, robust, and streaming text-to-speech models developed by the Qwen team. This specific checkpoint is the 0.6B CustomVoice variant, based on the 12Hz tokenizer."
+    }
+  ]
+}

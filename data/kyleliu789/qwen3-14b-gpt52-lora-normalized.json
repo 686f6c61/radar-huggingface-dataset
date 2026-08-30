@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "kyleliu789/qwen3-14b-gpt52-lora-normalized",
+  "slug": "kyleliu789-qwen3-14b-gpt52-lora-normalized",
+  "author": "kyleliu789",
+  "url": "https://huggingface.co/kyleliu789/qwen3-14b-gpt52-lora-normalized",
+  "created_at": "2026-08-29T22:33:02.000Z",
+  "updated_at": "2026-08-29T22:35:59.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "base_model:adapter:Qwen/Qwen3-14B",
+    "llama-factory",
+    "lora",
+    "transformers",
+    "text-generation",
+    "conversational",
+    "base_model:Qwen/Qwen3-14B",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 12347267411,
+  "storage_human": "12.3 GB",
+  "base_model": "Qwen/Qwen3-14B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "kyleliu789/qwen3-14b-gpt52-cot-sft-r32-a16-lr1e-4 · Hugging Face",
+      "url": "https://huggingface.co/kyleliu789/qwen3-14b-gpt52-cot-sft-r32-a16-lr1e-4",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "kyleliu789/qwen3-14b-gpt52-cot-sft-r32-a16-lr1e-4 at main",
+      "url": "https://huggingface.co/kyleliu789/qwen3-14b-gpt52-cot-sft-r32-a16-lr1e-4/tree/main",
+      "snippet": "Instructions to use kyleliu789/qwen3-14b-gpt52-cot-sft-r32-a16-lr1e-4 with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "Qwen3 Technical Report - arXiv.org",
+      "url": "https://arxiv.org/pdf/2505.09388",
+      "snippet": "Abstract In this work, we present Qwen3, the latest version of the Qwen model family. Qwen3 comprises a series of large language models (LLMs) designed to advance performance, efficiency, and multilingual capabilities. The Qwen3 series includes models of both dense and Mixture-of-Expert (MoE) architectures, with parameter scales ranging from 0.6 to 235 billion. A key innovation in Qwen3 is the ..."
+    },
+    {
+      "title": "Qwen3 Technical Report - arXiv.org",
+      "url": "https://arxiv.org/html/2505.09388v1",
+      "snippet": "The Qwen3 series includes models of both dense and Mixture-of-Expert (MoE) architectures, with parameter scales ranging from 0.6 to 235 billion. A key innovation in Qwen3 is the integration of thinking mode (for complex, multi-step reasoning) and non-thinking mode (for rapid, context-driven responses) into a unified framework."
+    },
+    {
+      "title": "GitHub - QwenLM/Qwen3: Qwen3 is the large language model series ...",
+      "url": "https://github.com/QwenLM/Qwen3",
+      "snippet": "Qwen3-Instruct-2507 is the updated version of the previous Qwen3 non-thinking mode, featuring the following key enhancements: Significant improvements in general capabilities, including instruction following, logical reasoning, text comprehension, mathematics, science, coding and tool usage."
+    }
+  ]
+}

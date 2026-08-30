@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "pablovela5620/liteanystereo",
+  "slug": "pablovela5620-liteanystereo",
+  "author": "pablovela5620",
+  "url": "https://huggingface.co/pablovela5620/liteanystereo",
+  "created_at": "2026-08-30T00:37:01.000Z",
+  "updated_at": "2026-08-30T00:37:04.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 222276440,
+  "storage_human": "222 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "pablovela5620 (pablo vela) - Hugging Face",
+      "url": "https://huggingface.co/pablovela5620/models",
+      "snippet": "pablovela5620 Follow Fishtiks&#x27;s profile picturekingchou007&#x27;s profile picturechuantwow&#x27;s profile picture 40 followers · 7 following pablovelagomez1 pablovela5620"
+    },
+    {
+      "title": "Lite Any Stereo V2 - tomtomtommi.github.io",
+      "url": "https://tomtomtommi.github.io/LiteAnyStereoV2/",
+      "snippet": "In this paper, we challenge this assumption by introducing Lite Any Stereo V2 (LAS2), an ultra-fast stereo matching model series designed for efficient zero-shot stereo matching. LAS2 is developed from both architecture and training perspectives."
+    },
+    {
+      "title": "Lite Any Stereo: Efficient Zero-Shot Stereo Matching - arXiv.org",
+      "url": "https://arxiv.org/html/2511.16555v1",
+      "snippet": "Abstract Recent advances in stereo matching have focused on accuracy, often at the cost of significantly increased model size. Traditionally, the community has regarded efficient models as incapable of zero-shot ability due to their limited capacity. In this paper, we introduce Lite Any Stereo, a stereo depth estimation framework that achieves strong zero-shot generalization while remaining ..."
+    },
+    {
+      "title": "TomTomTommi/LiteAnyStereo: Lite Any Stereo (LAS) Series - GitHub",
+      "url": "https://github.com/TomTomTommi/LiteAnyStereo",
+      "snippet": "Official codebase for the Lite Any Stereo (LAS) series. This repository supports LAS1 and LAS2 S/M/L/H release models."
+    },
+    {
+      "title": "pablovela5620 (pablo vela) - Hugging Face",
+      "url": "https://huggingface.co/pablovela5620",
+      "snippet": "pablovela5620 11827 Follow ZionZe&#x27;s profile pictureCsplk&#x27;s profile picturelawxixi&#x27;s profile picture 41 followers · 7 following pablovelagomez1 pablovela5620"
+    }
+  ]
+}

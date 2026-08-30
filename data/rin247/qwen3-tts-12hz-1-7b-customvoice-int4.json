@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "Rin247/Qwen3-TTS-12Hz-1.7B-CustomVoice-INT4",
+  "slug": "rin247-qwen3-tts-12hz-1-7b-customvoice-int4",
+  "author": "Rin247",
+  "url": "https://huggingface.co/Rin247/Qwen3-TTS-12Hz-1.7B-CustomVoice-INT4",
+  "created_at": "2026-08-29T21:10:56.000Z",
+  "updated_at": "2026-08-29T21:11:56.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-speech",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "qwen3_tts",
+    "text-to-speech",
+    "arxiv:2601.15621",
+    "license:apache-2.0",
+    "8-bit",
+    "int4_weight_only",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1167468800,
+  "parameters_human": "1.17B",
+  "storage_bytes": 1609248856,
+  "storage_human": "1.6 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - QwenLM/Qwen3-TTS: Qwen3-TTS is an open-source series of TTS ...",
+      "url": "https://github.com/QwenLM/Qwen3-TTS",
+      "snippet": "Qwen3-TTS is an open-source series of TTS models developed by the Qwen team at Alibaba Cloud, supporting stable, expressive, and streaming speech generation, free-form voice design, and vivid voice..."
+    },
+    {
+      "title": "Jinstudio/Qwen3-TTS-12Hz-1.7B-CustomVoice · Hugging Face",
+      "url": "https://huggingface.co/Jinstudio/Qwen3-TTS-12Hz-1.7B-CustomVoice",
+      "snippet": "For the voice design model (Qwen3-TTS-12Hz-1.7B-VoiceDesign), you can use generate_voice_design to provide the target text and a natural-language instruct description."
+    },
+    {
+      "title": "Qwen/Qwen3-TTS-12Hz-1.7B-CustomVoice · Hugging Face",
+      "url": "https://huggingface.co/Qwen/Qwen3-TTS-12Hz-1.7B-CustomVoice",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GitHub - QwenLM/Qwen3-TTS: Qwen3-TTS is an open-source series of TTS ...",
+      "url": "https://github.com/QwenLM/Qwen3-TTS?pubDate=20260408",
+      "snippet": "We release Qwen3-TTS, a series of powerful speech generation capabilities developed by Qwen, offering comprehensive support for voice clone, voice design, ultra-high-quality human-like speech generation, and natural language-based voice control. It provides developers and users with the most ..."
+    },
+    {
+      "title": "Qwen/Qwen3-TTS-12Hz-1.7B-CustomVoice | AI Models",
+      "url": "https://aiart.tools/models/qwen3-tts-12hz-1-7b-customvoice",
+      "snippet": "Qwen3-TTS covers 10 major languages (Chinese, English, Japanese, Korean, German, French, Russian, Portuguese, Spanish, and Italian) as well as multiple dialectal voice profiles to meet global application needs. In addition, the models feature strong contextual understanding, enabling adaptive control of tone, speaking rate, and emotional expression based on instructions and text semantics, and ..."
+    }
+  ]
+}

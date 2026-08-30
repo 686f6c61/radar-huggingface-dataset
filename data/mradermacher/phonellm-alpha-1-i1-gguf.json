@@ -1,0 +1,78 @@
+{
+  "schema": 1,
+  "id": "mradermacher/phonellm-alpha-1-i1-GGUF",
+  "slug": "mradermacher-phonellm-alpha-1-i1-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/phonellm-alpha-1-i1-GGUF",
+  "created_at": "2026-08-30T00:55:17.000Z",
+  "updated_at": "2026-08-30T02:22:28.000Z",
+  "license": "bsd-2-clause",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "nemotron",
+    "mixture-of-experts",
+    "voice-agent",
+    "phone",
+    "tool-use",
+    "function-calling",
+    "conversational",
+    "pipecat",
+    "en",
+    "base_model:pipecat-ai/phonellm-alpha-1",
+    "base_model:quantized:pipecat-ai/phonellm-alpha-1",
+    "license:bsd-2-clause",
+    "endpoints_compatible",
+    "region:us",
+    "imatrix"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 31577940288,
+  "parameters_human": "31.58B",
+  "storage_bytes": 120278207296,
+  "storage_human": "120.3 GB",
+  "base_model": "pipecat-ai/phonellm-alpha-1",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "mradermacher/phonellm-alpha-1-GGUF · Hugging Face",
+      "url": "https://huggingface.co/mradermacher/phonellm-alpha-1-GGUF",
+      "snippet": "mradermacher / phonellm-alpha-1-GGUF like 0 GGUF conversational Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "mradermacher (team mradermacher) - Hugging Face",
+      "url": "https://huggingface.co/mradermacher",
+      "snippet": "Feel free to suggest models to quant e.g. at https://huggingface.co/mradermacher/model_requests"
+    },
+    {
+      "title": "Phonellm Alpha 1 by pipecat-ai - LLM Explorer",
+      "url": "https://llm-explorer.com/model/pipecat-ai%2Fphonellm-alpha-1,5pezStBz2O4J8azSvNPm6l",
+      "snippet": "Phonellm Alpha 1 is an open-source 30b LLM by pipecat-ai. VRAM 63.2GB, 256K context. Compare benchmarks, capabilities, and deployment details on LLM Explorer."
+    },
+    {
+      "title": "Models - Hugging Face",
+      "url": "https://router.huggingface.co/models/",
+      "snippet": "pipecat-ai/phonellm-alpha-1 ... froggeric/Qwen-Fixed-Chat-Templates ... moonshotai/Kimi-K3 ... ornith-ai/Ornith-1.5-35B-A3B-GGUF ... orcarouter/Qwen3.8-27B-Uncensored ... MiniMaxAI/MiniMax-Music3"
+    },
+    {
+      "title": "AI Model Rankings 2026: Live LLM Leaderboard | ModelCap",
+      "url": "https://modelcap.ai/",
+      "snippet": "AI model rankings: common questions What is the best AI model right now? Claude Fable 5 from Anthropic holds ModelCap Index position #1 as of 30 August 2026 with a score of 84.2, ahead of Claude Opus 5 (#2) and GPT-5.6 Sol (#3)."
+    }
+  ]
+}

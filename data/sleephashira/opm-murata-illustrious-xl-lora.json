@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "sleephashira/opm-murata-illustrious-xl-lora",
+  "slug": "sleephashira-opm-murata-illustrious-xl-lora",
+  "author": "sleephashira",
+  "url": "https://huggingface.co/sleephashira/opm-murata-illustrious-xl-lora",
+  "created_at": "2026-08-29T21:10:59.000Z",
+  "updated_at": "2026-08-29T21:44:04.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": "text-to-image",
+  "library": "diffusers",
+  "languages": [],
+  "tags": [
+    "diffusers",
+    "stable-diffusion-xl",
+    "lora",
+    "text-to-image",
+    "manga",
+    "monochrome",
+    "style",
+    "copyrighted-training-data",
+    "base_model:OnomaAIResearch/Illustrious-xl-early-release-v0",
+    "base_model:adapter:OnomaAIResearch/Illustrious-xl-early-release-v0",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 231472677,
+  "storage_human": "231 MB",
+  "base_model": "OnomaAIResearch/Illustrious-xl-early-release-v0",
+  "formats": [
+    "diffusers"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "sleephashira/opm-murata-illustrious-xl-lora · Hugging Face",
+      "url": "https://huggingface.co/sleephashira/opm-murata-illustrious-xl-lora",
+      "snippet": "Instructions to use sleephashira/opm-murata-illustrious-xl-lora with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "Murata Yusuke / One Punch Man Manga style (IlluXL)",
+      "url": "https://civitai.red/models/1367095/murata-yusuke-one-punch-man-manga-style-illuxl",
+      "snippet": "Important: Trigger words: OPMStyle, monochrome, greyscale - I also suggest using WAI-NSFW-illustrious-SDXL v11.0 Share any good gens you get here! they might get used for a V2, and you get buzz off the likes. A style LoRa of Murata Yusuke&#x27;s One Punch Man, Perfect recreation of the artstyle + knows a few characters, this LoRa is incredibly good it adds 8 characters not originally in the ..."
+    },
+    {
+      "title": "Yusuke Murata - STYLE - | Illustrious XL | - COMMISSION by YeiyeiArt",
+      "url": "https://civitai.com/models/1934737/yusuke-murata-style-or-illustrious-xl-or-commission-by-yeiyeiart",
+      "snippet": "⬆️⬆️⬆️ Guides, LoRas Commission and more AI Services ! above ⬆️⬆️⬆️ Trigger Word : \" MurataXL \" Add: \" monochrome \" for manga style Have fun and don&#x27;t fo..."
+    },
+    {
+      "title": "Models - Hugging Face",
+      "url": "https://huggingface.co/models?other=illustrious",
+      "snippet": "John6666/any-illustrious-xl-for-lora-training-v01-sdxl John6666/millennium-il-modified-illustrious-xl-v10-sdxl"
+    },
+    {
+      "title": "Illustrious XL | Next-Gen AI for Stunning Anime & Illustration Creation",
+      "url": "https://www.illustrious-xl.ai/",
+      "snippet": "Support the advancement of AI by sponsoring Illustrious XL. Stay informed with our latest updates, version releases, and in-depth research insights from our AI team."
+    }
+  ]
+}

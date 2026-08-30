@@ -1,0 +1,79 @@
+{
+  "schema": 1,
+  "id": "jaweed123/TinyJLLM",
+  "slug": "jaweed123-tinyjllm",
+  "author": "jaweed123",
+  "url": "https://huggingface.co/jaweed123/TinyJLLM",
+  "created_at": "2026-08-30T00:37:59.000Z",
+  "updated_at": "2026-08-30T00:45:16.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gguf",
+    "llama",
+    "text-generation",
+    "learnllm",
+    "fineweb",
+    "pytorch",
+    "bpe",
+    "from-scratch",
+    "en",
+    "base_model:jaweed123/TinyJLLM",
+    "base_model:quantized:jaweed123/TinyJLLM",
+    "license:mit",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 102450432,
+  "parameters_human": "102.5M",
+  "storage_bytes": 793851696,
+  "storage_human": "794 MB",
+  "base_model": "jaweed123/TinyJLLM",
+  "formats": [
+    "gguf",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "jaweed123 (Abdul Jaweed) - Hugging Face",
+      "url": "https://huggingface.co/jaweed123",
+      "snippet": "Data Science, Machine Learning, NLP, CV Research interests Data Science, Machine Learning, NLP, CV"
+    },
+    {
+      "title": "TinyLLM",
+      "url": "https://www.tinyllm.org/",
+      "snippet": "TinyLLM: You provide data, and TinyLLM generates a custom-trained tiny language model tailored for your embedded sensing application. TinyLLM also simplifies their deployment on resource-constrained platform!"
+    },
+    {
+      "title": "jaweed123/Qwen3.5-0.8B-Python-SFT · Hugging Face",
+      "url": "https://huggingface.co/jaweed123/Qwen3.5-0.8B-Python-SFT",
+      "snippet": "Python code generation model — Qwen3.5-.8B-Base fine-tuned with QLoRA (Supervised Fine-Tuning) on CodeSearchNet (Python): docstring → function code pairs."
+    },
+    {
+      "title": "GitHub - jasonacox/TinyLLM: Setup and run a local LLM and Chatbot using ...",
+      "url": "https://github.com/jasonacox/TinyLLM",
+      "snippet": "TinyLLM? Yes, the name is a bit of a contradiction, but it means well. It&#x27;s all about putting a large language model (LLM) on a tiny system that still delivers acceptable performance. This project helps you build a small locally hosted LLM with a ChatGPT-like web interface using consumer grade hardware. To read more about my research with llama.cpp and LLMs, see research.md."
+    },
+    {
+      "title": "Free AI Models on OpenRouter",
+      "url": "https://openrouter.ai/collections/free-models",
+      "snippet": "Model rankings updated August 2026 based on real usage data. At OpenRouter, we believe that free models play a crucial role in democratizing access to AI. These models allow hundreds of thousands of users worldwide to experiment, learn, and innovate. Below you will find the top free AI models currently available on OpenRouter."
+    }
+  ]
+}

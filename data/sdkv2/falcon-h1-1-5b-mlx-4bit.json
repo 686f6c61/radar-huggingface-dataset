@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "sdkv2/falcon-h1-1.5b-mlx-4bit",
+  "slug": "sdkv2-falcon-h1-1-5b-mlx-4bit",
+  "author": "sdkv2",
+  "url": "https://huggingface.co/sdkv2/falcon-h1-1.5b-mlx-4bit",
+  "created_at": "2026-08-29T23:33:55.000Z",
+  "updated_at": "2026-08-30T00:26:33.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "mlx",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "falcon_h1",
+    "falcon-h1",
+    "mamba",
+    "quantized",
+    "4-bit",
+    "text-generation",
+    "en",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 243459456,
+  "parameters_human": "243.5M",
+  "storage_bytes": 875576548,
+  "storage_human": "876 MB",
+  "base_model": null,
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Falcon-H1 Local Deployment Guide: MLX, llama.cpp, and OpenWebUI",
+      "url": "https://falcon-lm.github.io/tutorials/falcon-h1/",
+      "snippet": "Overview Sometimes your projects are about more than quick answers. You might need to read through hundreds of pages, keep a long conversation going, or work in multiple languages. Falcon H1 was designed for exactly that. By combining Transformer-based attention with State Space Models (SSM), it understands complex information while still running efficiently on everyday hardware."
+    },
+    {
+      "title": "FalconH1 · Hugging Face",
+      "url": "https://huggingface.co/docs/transformers/main/en/model_doc/falcon_h1",
+      "snippet": "It is used to instantiate a Falcon H1 model according to the specified arguments, defining the model architecture. Instantiating a configuration with the defaults will yield a similar configuration to that of the tiiuae/Falcon-H1-1.5B-Deep-Instruct Configuration objects inherit from PreTrainedConfig and can be used to control the model outputs."
+    },
+    {
+      "title": "tiiuae/Falcon-H1-1.5B-Instruct · Hugging Face",
+      "url": "https://huggingface.co/tiiuae/Falcon-H1-1.5B-Instruct",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "LLM Leaderboard 2026: Compare 300+ Top AI Models by Intelligence, Speed ...",
+      "url": "https://llm-stats.com/leaderboards/llm-leaderboard",
+      "snippet": "The LLM Leaderboard — independent ranking of GPT, Claude, Gemini, Llama, DeepSeek and 300+ AI models by intelligence, speed and price. Filter by provider, license, modality and context window; sort by every benchmark. Composite LLM Stats Score updated continuously from public benchmarks and live API metrics."
+    },
+    {
+      "title": "Falcon H1 Reasoning Models Local Deployment Guide: llama.cpp and ...",
+      "url": "https://falcon-lm.github.io/tutorials/falcon-h1r/",
+      "snippet": "Overview Not every task is about retrieving facts, sometimes you need the model to think, weigh options, and walk through a problem in multiple steps. That is where the new Falcon reasoning models come in. Built to deliver structured and logical outputs, they extend the capabilities of the Falcon family into domains like problem solving, mathematics, code logic, and multi stage decision making ..."
+    }
+  ]
+}

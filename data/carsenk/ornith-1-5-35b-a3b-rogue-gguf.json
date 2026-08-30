@@ -5,7 +5,7 @@
   "author": "carsenk",
   "url": "https://huggingface.co/carsenk/Ornith-1.5-35B-A3B-ROGUE-GGUF",
   "created_at": "2026-08-29T02:10:04.000Z",
-  "updated_at": "2026-08-29T05:48:54.000Z",
+  "updated_at": "2026-08-30T00:06:51.000Z",
   "license": "mit",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -35,8 +35,8 @@
   "trending_score": 0,
   "parameters": 34660610688,
   "parameters_human": "34.66B",
-  "storage_bytes": 19898444416,
-  "storage_human": "19.9 GB",
+  "storage_bytes": 94733105792,
+  "storage_human": "94.7 GB",
   "base_model": "ornith-ai/Ornith-1.5-35B-A3B",
   "formats": [
     "gguf"

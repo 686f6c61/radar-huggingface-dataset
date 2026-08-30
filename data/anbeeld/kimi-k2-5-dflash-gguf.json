@@ -5,7 +5,7 @@
   "author": "Anbeeld",
   "url": "https://huggingface.co/Anbeeld/Kimi-K2.5-DFlash-GGUF",
   "created_at": "2026-08-29T17:56:02.000Z",
-  "updated_at": "2026-08-29T17:56:08.000Z",
+  "updated_at": "2026-08-29T19:29:40.000Z",
   "license": "mit",
   "license_family": "oss",
   "pipeline_tag": "feature-extraction",
@@ -13,6 +13,7 @@
   "languages": [],
   "tags": [
     "transformers",
+    "gguf",
     "safetensors",
     "qwen3",
     "feature-extraction",
@@ -32,17 +33,18 @@
     "endpoints_compatible",
     "region:us",
     "base_model:z-lab/Kimi-K2.5-DFlash",
-    "base_model:finetune:z-lab/Kimi-K2.5-DFlash"
+    "base_model:quantized:z-lab/Kimi-K2.5-DFlash"
   ],
   "likes": 0,
   "downloads_30d": 0,
   "trending_score": 0,
-  "parameters": null,
-  "parameters_human": null,
-  "storage_bytes": 338153,
-  "storage_human": "338153 B",
+  "parameters": 3479277056,
+  "parameters_human": "3.48B",
+  "storage_bytes": 9903584745,
+  "storage_human": "9.9 GB",
   "base_model": "z-lab/Kimi-K2.5-DFlash",
   "formats": [
+    "gguf",
     "safetensors"
   ],
   "is_conversational": false,

@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "mju75/klara-lora-weights",
+  "slug": "mju75-klara-lora-weights",
+  "author": "mju75",
+  "url": "https://huggingface.co/mju75/klara-lora-weights",
+  "created_at": "2026-08-29T19:16:03.000Z",
+  "updated_at": "2026-08-29T19:51:32.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-image",
+  "library": "diffusers",
+  "languages": [],
+  "tags": [
+    "diffusers",
+    "text-to-image",
+    "lora",
+    "krea2",
+    "template:sd-lora",
+    "base_model:krea/Krea-2-Raw",
+    "base_model:adapter:krea/Krea-2-Raw",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 778677442,
+  "storage_human": "779 MB",
+  "base_model": "krea/Krea-2-Raw",
+  "formats": [
+    "diffusers"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "mju75/marketa-lora-krea-2 · Hugging Face",
+      "url": "https://huggingface.co/mju75/marketa-lora-krea-2",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Klara - CivArchive (CivitAI Archive)",
+      "url": "https://civarchive.com/models/2420718?modelVersionId=2721579",
+      "snippet": "Download Klara - LORA by kwaczer88353. Free AI model download from CivArchive."
+    },
+    {
+      "title": "sarathmenon/lora_weights · Hugging Face",
+      "url": "https://huggingface.co/sarathmenon/lora_weights",
+      "snippet": "Download model and use it with ComfyUI, AUTOMATIC1111, SD.Next, Invoke AI, etc. Weights for this model are available in Safetensors format. Download them in the Files & versions tab. Use it with the 🧨 diffusers library ... For more details, including weighting, merging and fusing LoRAs, check the documentation on loading LoRAs in diffusers"
+    },
+    {
+      "title": "Klara LoRa - SeaArt AI Model",
+      "url": "https://www.seaart.ai/models/detail/75acb5b4d6ebd5302cfa000ae093aa46",
+      "snippet": "Explore Klara LoRa model on SeaArt AI. Transform your idea into professional-quality AI-generated images and videos with our free, easy-to-use platform."
+    },
+    {
+      "title": "clink2012/LoRA_weights_builder - GitHub",
+      "url": "https://github.com/clink2012/LoRA_weights_builder",
+      "snippet": "LoRA Weights Builder is a full-stack application designed to: Index large LoRA libraries (thousands of models) Extract structural block-level weight data Classify layout types (Flux, UNet-style 57-block, etc.) Visualize per-block strength distribution Build, save, and reload custom block override profiles Deterministically calculate safe multi-LoRA configurations Output values ready for ..."
+    }
+  ]
+}

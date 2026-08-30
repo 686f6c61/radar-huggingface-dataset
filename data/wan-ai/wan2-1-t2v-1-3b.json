@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "Wan-AI/Wan2.1-T2V-1.3B",
+  "slug": "wan-ai-wan2-1-t2v-1-3b",
+  "author": "Wan-AI",
+  "url": "https://huggingface.co/Wan-AI/Wan2.1-T2V-1.3B",
+  "created_at": "2025-02-25T11:13:48.000Z",
+  "updated_at": "2025-03-01T09:31:33.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-video",
+  "library": "diffusers",
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "tags": [
+    "diffusers",
+    "safetensors",
+    "t2v",
+    "video",
+    "video-generation",
+    "text-to-video",
+    "en",
+    "zh",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 521,
+  "downloads_30d": 22387,
+  "trending_score": 7,
+  "parameters": 1418996800,
+  "parameters_human": "1.42B",
+  "storage_bytes": 46519139256,
+  "storage_human": "46.5 GB",
+  "base_model": null,
+  "formats": [
+    "diffusers",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Wan2.1-T2V-1.3B · Models - modelscope.ai",
+      "url": "https://modelscope.ai/models/Wan-AI/Wan2.1-T2V-1.3B",
+      "snippet": "We employ our Wan-Bench framework to evaluate the performance of the T2V-1.3B model, with the results displayed in the table below. The results indicate that our smaller 1.3B model surpasses the overall metrics of larger open-source models, demonstrating the effectiveness of WanX2.1 &#x27;s architecture and the data construction pipeline."
+    },
+    {
+      "title": "README.md · Wan-AI/Wan2.1-T2V-1.3B at main - Hugging Face",
+      "url": "https://huggingface.co/Wan-AI/Wan2.1-T2V-1.3B/blob/main/README.md",
+      "snippet": "This repository hosts our T2V-1.3B model, a versatile solution for video generation that is compatible with nearly all consumer-grade GPUs. In this way, we hope that Wan2.1 can serve as an easy-to-use tool for more creative teams in video creation, providing a high-quality foundational model for academic teams with limited computing resources."
+    },
+    {
+      "title": "Wan-AI/Wan2.1-VACE-1.3B-diffusers · Hugging Face",
+      "url": "https://huggingface.co/Wan-AI/Wan2.1-VACE-1.3B-diffusers",
+      "snippet": "Wan: Open and Advanced Large-Scale Video Generative Models In this repository, we present Wan2.1, a comprehensive and open suite of video foundation models that pushes the boundaries of video generation. Wan2.1 offers these key features:"
+    },
+    {
+      "title": "Wan AI: Leading AI Video Generation Model",
+      "url": "https://wan.video/",
+      "snippet": "Wan is an AI creative platform. It aims to lower the barrier to creative work using artificial intelligence, offering features like text-to-image, image-to-image, text-to-video, image-to-video, and image editing."
+    },
+    {
+      "title": "GitHub - Wan-Video/Wan2.1: Wan: Open and Advanced Large-Scale Video ...",
+      "url": "https://github.com/Wan-Video/Wan2.1",
+      "snippet": "Wan: Open and Advanced Large-Scale Video Generative Models In this repository, we present Wan2.1, a comprehensive and open suite of video foundation models that pushes the boundaries of video generation. Wan2.1 offers these key features:"
+    }
+  ]
+}

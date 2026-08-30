@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "sh0wie/Qwen3.8-Flash-Next-REAP-288-bf16",
+  "slug": "sh0wie-qwen3-8-flash-next-reap-288-bf16",
+  "author": "sh0wie",
+  "url": "https://huggingface.co/sh0wie/Qwen3.8-Flash-Next-REAP-288-bf16",
+  "created_at": "2026-08-29T01:32:39.000Z",
+  "updated_at": "2026-08-29T21:44:32.000Z",
+  "license": "qwen-community-license-1.0",
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "mlx",
+  "languages": [],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "qwen4_exp",
+    "pmlx",
+    "moe",
+    "pruning",
+    "reap",
+    "bf16",
+    "qwen",
+    "text-generation",
+    "conversational",
+    "base_model:Qwen/Qwen3.8-Flash-Next",
+    "base_model:finetune:Qwen/Qwen3.8-Flash-Next",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 124517075091,
+  "parameters_human": "124.52B",
+  "storage_bytes": 249047188144,
+  "storage_human": "249.0 GB",
+  "base_model": "Qwen/Qwen3.8-Flash-Next",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "sh0wie/Qwen3.8-Flash-Next-REAP-288-bf16 · Hugging Face",
+      "url": "https://huggingface.co/sh0wie/Qwen3.8-Flash-Next-REAP-288-bf16",
+      "snippet": "It makes the same build faster (see the table below), but everything you need to run REAP-288 today works without it. If you just want to run the model Use the 4-bit build: sh0wie/Qwen3.8-Flash-Next-REAP-288-MLX-4bit."
+    },
+    {
+      "title": "sh0wie/Qwen3.8-Flash-Next-REAP-288-Q8E-MLX · Hugging Face",
+      "url": "https://huggingface.co/sh0wie/Qwen3.8-Flash-Next-REAP-288-Q8E-MLX",
+      "snippet": "Qwen3.8-Flash-Next with 288 of 512 experts per MoE layer, pruned with REAP saliency calibrated on the quantized weights, and the surviving expert tensors re-quantized to 8-bit. The backbone (attention, DeltaNet, norms, embeddings) stays at 4-bit, so all of the extra 32 GB over the plain 4-bit prune goes to expert precision. Loads on stock mlx-vlm with no patches."
+    },
+    {
+      "title": "Qwen3.8-Flash-Next - GitHub",
+      "url": "https://github.com/QwenLM/Qwen3.8-Flash-Next/",
+      "snippet": "Qwen3.8-Flash-Next upgrades the model systematically along four aspects — attention, residual, embedding and optimization — improving model capability while further optimizing computational efficiency, model capacity and training stability: Attention A GDN + QSA hybrid architecture."
+    },
+    {
+      "title": "Qwen/Qwen3.8-Flash-Next | vLLM Recipes - recipes.vllm.ai",
+      "url": "https://recipes.vllm.ai/Qwen/Qwen3.8-Flash-Next",
+      "snippet": "Qwen4 architecture preview with a 125B-parameter main model, supplemented by an additional 51B N-gram embeddings, with 6B parameters activated per token."
+    },
+    {
+      "title": "Qwen3.8-Flash - QwenCloud",
+      "url": "https://www.qwencloud.com/models/qwen3.8-flash",
+      "snippet": "Qwen3.8-Flash is the latest multimodal model from the Qwen family, combining powerful reasoning and generation with remarkable speed. It natively supports a million-token context window, allowing it to process lengthy documents, entire codebases, and complex conversations in a single pass."
+    }
+  ]
+}

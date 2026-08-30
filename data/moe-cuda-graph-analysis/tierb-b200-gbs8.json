@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "MoE-CUDA-Graph-Analysis/tierb-b200-gbs8",
+  "slug": "moe-cuda-graph-analysis-tierb-b200-gbs8",
+  "author": "MoE-CUDA-Graph-Analysis",
+  "url": "https://huggingface.co/MoE-CUDA-Graph-Analysis/tierb-b200-gbs8",
+  "created_at": "2026-08-26T14:46:45.000Z",
+  "updated_at": "2026-08-30T03:06:01.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 7083538419,
+  "storage_human": "7.1 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "MoE-CUDA-Graph-Analysis (MoE CUDA Graph Analysis) - Hugging Face",
+      "url": "https://huggingface.co/MoE-CUDA-Graph-Analysis",
+      "snippet": "Org profile for MoE CUDA Graph Analysis on Hugging Face, the AI community building the future."
+    },
+    {
+      "title": "GitHub - garyz712/CUDA_MOE",
+      "url": "https://github.com/garyz712/CUDA_MOE",
+      "snippet": "K=2 MOE introduces additional latency over K=1 MOE due to dual expert processing, but its flexibility in expert weighting could enhance model accuracy so it is widely used (e.g. Deepseek), making CUDA the preferred choice for large-scale deployments despite the slight performance trade-off."
+    },
+    {
+      "title": "ai-compiler-performance-engineering/code/labs/moe_cuda at main ... - GitHub",
+      "url": "https://github.com/chenxingqiang/ai-compiler-performance-engineering/tree/main/code/labs/moe_cuda",
+      "snippet": "python -m cli.aisp bench verify -t labs/moe_cuda:decode_attention compares the CUDA path to the math reference and fails loudly if drift is detected. KV transfer graphs print latency breakdowns showing overlap improvements relative to the baseline script."
+    },
+    {
+      "title": "MoE Model Benchmarking | cfregly/ai-performance-engineering - DeepWiki",
+      "url": "https://deepwiki.com/cfregly/ai-performance-engineering/8.2-moe-model-benchmarking",
+      "snippet": "Important: The model in Chapter 16 is a synthetic, hand-built MoE model designed for infrastructure benchmarking, while the optimization journey labs provide a pedagogical path from naive Python loops to production-grade kernels."
+    },
+    {
+      "title": "Mixture of Experts — Megatron Core - NVIDIA Documentation Hub",
+      "url": "https://docs.nvidia.com/megatron-core/developer-guide/latest/user-guide/features/moe.html",
+      "snippet": "CUDA Graph support for dropless MoE models with attention only capture (-te-rng-track -external-cuda-graph -cuda-graph-scope attn) Overview of MCore MoE Supported Features and Architectures #"
+    }
+  ]
+}

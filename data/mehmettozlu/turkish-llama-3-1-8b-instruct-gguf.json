@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "mehmettozlu/Turkish-Llama-3.1-8B-Instruct-GGUF",
+  "slug": "mehmettozlu-turkish-llama-3-1-8b-instruct-gguf",
+  "author": "mehmettozlu",
+  "url": "https://huggingface.co/mehmettozlu/Turkish-Llama-3.1-8B-Instruct-GGUF",
+  "created_at": "2026-08-29T20:28:11.000Z",
+  "updated_at": "2026-08-29T20:35:01.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "llama",
+    "llama.cpp",
+    "unsloth",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 8030261312,
+  "parameters_human": "8.03B",
+  "storage_bytes": 35263402624,
+  "storage_human": "35.3 GB",
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "bartowski/Meta-Llama-3.1-8B-Instruct-GGUF · Hugging Face",
+      "url": "https://huggingface.co/bartowski/Meta-Llama-3.1-8B-Instruct-GGUF",
+      "snippet": "Llamacpp imatrix Quantizations of Meta-Llama-3.1-8B-Instruct Torrent files Prompt format What&#x27;s new Download a file (not the whole branch) from below: Credits Downloading using huggingface-cli Q4_0_X_X information Which file should I choose?"
+    },
+    {
+      "title": "ggml-org/Meta-Llama-3.1-8B-Instruct-Q4_0-GGUF · Hugging Face",
+      "url": "https://huggingface.co/ggml-org/Meta-Llama-3.1-8B-Instruct-Q4_0-GGUF",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Run models distributed as GGUF files using LLM - GitHub",
+      "url": "https://github.com/simonw/llm-gguf",
+      "snippet": "Run models distributed as GGUF files using LLM. Contribute to simonw/llm-gguf development by creating an account on GitHub."
+    },
+    {
+      "title": "Llama-3-8B Turkish Instruct Model (Kapalı Devre LLM) - GitHub",
+      "url": "https://github.com/srhttlk/Llama3-Turkish-Instruct-Model",
+      "snippet": "Meta&#x27;nın Llama-3-8B modeli temel alınmış ve Unsloth kütüphanesi kullanılarak QLoRA tekniği ile optimize edilmiştir. Veri seti erişim kısıtları nedeniyle, proje kapsamında özgün bir Sentetik Veri Üretim Hattı (Synthetic Data Pipeline) geliştirilmiştir."
+    },
+    {
+      "title": "Meta_Llama_3_1_8B_Instruct_GGUF.ipynb - Colab",
+      "url": "https://colab.research.google.com/github/Troyanovsky/Local-LLM-Comparison-Colab-UI/blob/main/Meta_Llama_3_1_8B_Instruct_GGUF.ipynb",
+      "snippet": "Meta-Llama-3.1-8B-Instruct-GGUF WebUI Run the following cell, takes ~5 min (You may need to confirm to proceed by typing \"Y\") Pick the version you need from one of the last two cells and only run that cell. Click the gradio link at the bottom In Parameter settings - Instruction Template: Llama3"
+    }
+  ]
+}

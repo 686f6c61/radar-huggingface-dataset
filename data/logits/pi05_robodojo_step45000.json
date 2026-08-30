@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "logits/pi05_robodojo_step45000",
+  "slug": "logits-pi05_robodojo_step45000",
+  "author": "logits",
+  "url": "https://huggingface.co/logits/pi05_robodojo_step45000",
+  "created_at": "2026-08-29T22:26:55.000Z",
+  "updated_at": "2026-08-29T22:28:28.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "robotics",
+    "pi05",
+    "robodojo",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 4933375760,
+  "parameters_human": "4.93B",
+  "storage_bytes": 19733628792,
+  "storage_human": "19.7 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "logits/pi05_robodojo_step5000 · Hugging Face",
+      "url": "https://huggingface.co/logits/pi05_robodojo_step5000",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "logits/pi05_robodojo_step10000 - Hugging Face",
+      "url": "https://huggingface.co/logits/pi05_robodojo_step10000",
+      "snippet": "Instructions to use logits/pi05_robodojo_step10000 with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Libraries LeRobot How to use logits/pi05_robodojo_step10000 with LeRobot: Notebooks Google Colab Kaggle logits/pi05_robodojo_step10000"
+    },
+    {
+      "title": "GitHub - RoboDojo-Benchmark/RoboDojo: RoboDojo Official Repo",
+      "url": "https://github.com/robodojo-benchmark/RoboDojo",
+      "snippet": "RoboDojo is operated by AI MMLab Club, a non-profit, vendor-neutral organization, and is jointly maintained and supported by a global consortium of academic institutional partners. To preserve the fairness, neutrality, and independence of the official evaluation, RoboDojo does not involve commercial companies in its governance, operation, funding, sponsorship, compute, hardware, or other forms ..."
+    },
+    {
+      "title": "Pi0.5 - Qualcomm AI Hub",
+      "url": "https://aihub.qualcomm.com/models/pi05",
+      "snippet": "Pi0.5 State‑of‑the‑art generalist robotic foundation model trained on vision, language, and action to enable dexterous, zero‑shot physical task execution across diverse robot platforms. Pi0.5 is a vision‑language‑action model that co‑trains on diverse data sources (robot demos, web data, semantic subtasks) to enable open‑world generalization for long‑horizon robotic manipulation."
+    },
+    {
+      "title": "GitHub - XPolicyLab/XPolicyLab: Involving over 40 Advanced Manipulation ...",
+      "url": "https://github.com/XPolicyLab/XPolicyLab",
+      "snippet": "Involving over 40 Advanced Manipulation Policies. Contribute to XPolicyLab/XPolicyLab development by creating an account on GitHub."
+    }
+  ]
+}

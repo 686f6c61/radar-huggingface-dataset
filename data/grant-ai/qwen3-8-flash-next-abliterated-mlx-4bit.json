@@ -5,7 +5,7 @@
   "author": "grant-ai",
   "url": "https://huggingface.co/grant-ai/Qwen3.8-Flash-Next-Abliterated-MLX-4bit",
   "created_at": "2026-08-28T01:34:26.000Z",
-  "updated_at": "2026-08-28T22:12:35.000Z",
+  "updated_at": "2026-08-30T02:06:54.000Z",
   "license": "qwen-community-1.0",
   "license_family": "unknown",
   "pipeline_tag": "image-text-to-text",

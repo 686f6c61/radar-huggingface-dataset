@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "RobinsonLabs/Qwen3.5-REAP-262B-A17B-abliterated-v2-GGUF",
+  "slug": "robinsonlabs-qwen3-5-reap-262b-a17b-abliterated-v2-gguf",
+  "author": "RobinsonLabs",
+  "url": "https://huggingface.co/RobinsonLabs/Qwen3.5-REAP-262B-A17B-abliterated-v2-GGUF",
+  "created_at": "2026-08-29T23:54:02.000Z",
+  "updated_at": "2026-08-29T23:54:03.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "gguf",
+  "languages": [],
+  "tags": [
+    "gguf",
+    "abliterated",
+    "uncensored",
+    "imatrix",
+    "moe",
+    "reap",
+    "qwen3.5",
+    "not-for-all-audiences",
+    "text-generation",
+    "base_model:OpenMOSE/Qwen3.5-REAP-262B-A17B",
+    "base_model:finetune:OpenMOSE/Qwen3.5-REAP-262B-A17B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": "OpenMOSE/Qwen3.5-REAP-262B-A17B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "OpenMOSE/Qwen3.5-REAP-262B-A17B · Hugging Face",
+      "url": "https://huggingface.co/OpenMOSE/Qwen3.5-REAP-262B-A17B",
+      "snippet": "2. What Is REAP and What Did We Change? REAP (Router-weighted Expert Activation Pruning) is a pruning method for MoE models that uses: Router statistics (routing probabilities) Expert activation patterns on a calibration set to identify under-used or redundant experts and prune them while preserving model quality as much as possible. For this model: We applied REAP to Qwen3.5-397B-A17B across ..."
+    },
+    {
+      "title": "OpenMOSE/Qwen3.5-REAP-212B-A17B · Hugging Face",
+      "url": "https://huggingface.co/OpenMOSE/Qwen3.5-REAP-212B-A17B",
+      "snippet": "2. What Is REAP and What Did We Change? REAP (Router-weighted Expert Activation Pruning) is a pruning method for MoE models that uses: Router statistics (routing probabilities) Expert activation patterns on a calibration set to identify under-used or redundant experts and prune them while preserving model quality as much as possible. For this model: We applied REAP to Qwen3.5-397B-A17B across ..."
+    },
+    {
+      "title": "Qwen3.5 REAP 262B A17B by OpenMOSE - LLM Explorer",
+      "url": "https://llm-explorer.com/model/OpenMOSE%2FQwen3.5-REAP-262B-A17B,6ENRmPlPVvZomacOVJiRkH",
+      "snippet": "Qwen3.5 REAP 262B A17B is an open-source 397b LLM by OpenMOSE. VRAM 351.1GB. Compare benchmarks, capabilities, and deployment details on LLM Explorer."
+    },
+    {
+      "title": "Qwen3.5: Towards Native Multimodal Agents",
+      "url": "https://qwen.ai/blog?id=qwen3.5",
+      "snippet": "As a native vision-language model, Qwen3.5-397B-A17B demonstrates outstanding results across a full range of benchmark evaluations, including reasoning, coding, agent capabilities, and multimodal understanding, empowering developers and enterprises to achieve significantly greater productivity."
+    },
+    {
+      "title": "ai/qwen3.5 - Docker Image",
+      "url": "https://hub.docker.com/r/ai/qwen3.5",
+      "snippet": "In particular, Qwen3.5-Flash is the hosted version corresponding to Qwen3.5-35B-A3B with more production features, e.g., 1M context length by default and official built-in tools. For more information, please refer to the User Guide ⁠."
+    }
+  ]
+}

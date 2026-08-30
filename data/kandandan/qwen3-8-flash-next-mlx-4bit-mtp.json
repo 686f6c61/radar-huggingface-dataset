@@ -1,0 +1,77 @@
+{
+  "schema": 1,
+  "id": "Kandandan/Qwen3.8-Flash-Next-MLX-4bit-MTP",
+  "slug": "kandandan-qwen3-8-flash-next-mlx-4bit-mtp",
+  "author": "Kandandan",
+  "url": "https://huggingface.co/Kandandan/Qwen3.8-Flash-Next-MLX-4bit-MTP",
+  "created_at": "2026-08-30T01:07:09.000Z",
+  "updated_at": "2026-08-30T01:09:43.000Z",
+  "license": "qwen-community-1.0",
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "mlx",
+  "languages": [
+    "en",
+    "ja"
+  ],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "qwen4_exp",
+    "speculative-decoding",
+    "mtp",
+    "text-generation",
+    "conversational",
+    "en",
+    "ja",
+    "base_model:Qwen/Qwen3.8-Flash-Next",
+    "base_model:quantized:Qwen/Qwen3.8-Flash-Next",
+    "license:other",
+    "4-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 21347873955,
+  "parameters_human": "21.35B",
+  "storage_bytes": 82640335109,
+  "storage_human": "82.6 GB",
+  "base_model": "Qwen/Qwen3.8-Flash-Next",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Qwen3.8-Flash-Next - GitHub",
+      "url": "https://github.com/QwenLM/Qwen3.8-Flash-Next/",
+      "snippet": "Qwen3.8-Flash-Next upgrades the model systematically along four aspects — attention, residual, embedding and optimization — improving model capability while further optimizing computational efficiency, model capacity and training stability: Attention A GDN + QSA hybrid architecture."
+    },
+    {
+      "title": "qwen38-flash-next-mlx/README.md at main - GitHub",
+      "url": "https://github.com/PipeNetwork/qwen38-flash-next-mlx/blob/main/README.md",
+      "snippet": "qwen38-flash-next-mlx MLX (Apple Silicon) runtime and quantization tooling for Qwen/Qwen3.8-Flash-Next — 125B-A6B hybrid Gated-DeltaNet / Qwen-Sparse-Attention MoE with gated residual streams and a 51B-parameter hashed n-gram embedding (model_type: qwen4_exp)."
+    },
+    {
+      "title": "Vontra/Qwen3.8-Flash-Next-MLX-4bit · Hugging Face",
+      "url": "https://huggingface.co/Vontra/Qwen3.8-Flash-Next-MLX-4bit",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Qwen/Qwen3.8-Flash-Next | vLLM Recipes - recipes.vllm.ai",
+      "url": "https://recipes.vllm.ai/Qwen/Qwen3.8-Flash-Next",
+      "snippet": "Qwen4 architecture preview with a 125B-parameter main model, supplemented by an additional 51B N-gram embeddings, with 6B parameters activated per token."
+    },
+    {
+      "title": "Qwen3.8-Flash-Next: How to Run Locally - unsloth.ai",
+      "url": "https://unsloth.ai/docs/models/qwen3.8-next",
+      "snippet": "Qwen3.8-Flash-Next is a new open-weight, 125B parameter MoE multimodal model from Qwen. Built on the new Qwen4 architecture, it supports a 262K context window and advanced reasoning. Qwen3.8 -Flash-Next outperforms Claude-4.6-Opus (Max) and can run locally on devices with 75GB RAM /unified memory with no GPU VRAM required."
+    }
+  ]
+}

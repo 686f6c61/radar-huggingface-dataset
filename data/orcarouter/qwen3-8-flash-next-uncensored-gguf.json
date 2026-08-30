@@ -5,7 +5,7 @@
   "author": "orcarouter",
   "url": "https://huggingface.co/orcarouter/Qwen3.8-Flash-Next-Uncensored-GGUF",
   "created_at": "2026-08-26T11:15:13.000Z",
-  "updated_at": "2026-08-27T17:53:44.000Z",
+  "updated_at": "2026-08-29T18:28:58.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "image-text-to-text",
@@ -41,13 +41,13 @@
     "imatrix",
     "conversational"
   ],
-  "likes": 97,
+  "likes": 105,
   "downloads_30d": 20275,
-  "trending_score": 89,
+  "trending_score": 95,
   "parameters": 176943899520,
   "parameters_human": "176.94B",
-  "storage_bytes": 1280811171168,
-  "storage_human": "1280.8 GB",
+  "storage_bytes": 1448451010464,
+  "storage_human": "1448.5 GB",
   "base_model": "Qwen/Qwen3.8-Flash-Next",
   "formats": [
     "gguf"

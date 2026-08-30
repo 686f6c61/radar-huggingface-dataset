@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "SurfSocial/Short-Text-Model-GRPO",
+  "slug": "surfsocial-short-text-model-grpo",
+  "author": "SurfSocial",
+  "url": "https://huggingface.co/SurfSocial/Short-Text-Model-GRPO",
+  "created_at": "2026-08-30T00:56:35.000Z",
+  "updated_at": "2026-08-30T00:56:37.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 31203744,
+  "storage_human": "31 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Top AI Models This Week (2026) — Trending Hugging Face Models, Papers ...",
+      "url": "https://orangebot.ai/top-ai-models-this-week",
+      "snippet": "Top trending AI models this week, 2026: a live, ranked snapshot of the most popular open models, papers, and demos on Hugging Face. Updated daily, with a direct link to every model."
+    },
+    {
+      "title": "GitHub - driftfishquakergun623/surf: Build self-hosted AI chat with web ...",
+      "url": "https://github.com/driftfishquakergun623/surf",
+      "snippet": "Build self-hosted AI chat with web search, browser automation, and a web UI plus CLI for local or remote models - driftfishquakergun623/surf"
+    },
+    {
+      "title": "Post training an LLM for reasoning with GRPO in TRL · Hugging Face",
+      "url": "https://huggingface.co/learn/cookbook/fine_tuning_llm_grpo_trl",
+      "snippet": "In this notebook, we&#x27;ll guide you through the process of post-training a Large Language Model (LLM) using Group Relative Policy Optimization (GRPO), a method introduced in the DeepSeekMath paper. GRPO is particularly effective for scaling test-time compute for extended reasoning, making it an ideal approach for solving complex tasks, such as mathematical problem-solving."
+    },
+    {
+      "title": "Surfer&#x27;s AI Humanizer - GRPO-trained rewriter that beats detectors ...",
+      "url": "https://www.bards.ai/case-studies/surfer-humanizer",
+      "snippet": "The GRPO-trained rewriter ships in production today as Surfer&#x27;s AI Content Humanizer. Paste up to 50,000 words of AI-generated text and the output passes major AI detectors at near-zero detection rates - while preserving meaning and markdown structure."
+    },
+    {
+      "title": "GRPO in Reinforcement Learning Explained - DigitalOcean",
+      "url": "https://www.digitalocean.com/community/conceptual-articles/group-relative-policy-optimization-reinforcement-learning",
+      "snippet": "DeepSeek&#x27;s remarkable reduction in training time didn&#x27;t happen by chance, but it was made possible by a reinforcement learning technique known as Group Relative Policy Optimization (GRPO), designed to make model training faster and more efficient. GRPO is a tweak to the existing traditional policy optimization method by introducing a reference policy and using a statistical distance ..."
+    }
+  ]
+}

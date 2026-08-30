@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "5hred/act",
+  "slug": "5hred-act",
+  "author": "5hred",
+  "url": "https://huggingface.co/5hred/act",
+  "created_at": "2026-08-30T01:33:25.000Z",
+  "updated_at": "2026-08-30T01:33:49.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "robotics",
+    "act",
+    "dataset:move-foam-part-to-target-003_20260829_214202",
+    "arxiv:2304.13705",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 51668614,
+  "parameters_human": "51.7M",
+  "storage_bytes": 206714880,
+  "storage_human": "207 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Action as the Fifth Modality in Multimodal AI",
+      "url": "https://hiveventures.medium.com/action-as-the-fifth-modality-in-multimodal-ai-c11fa7c12f59",
+      "snippet": "By treating action outputs (API calls, robot motions, etc.) as model-native outputs, AI systems can interface with the world directly rather than just describing it. Industry Perspectives and Future Outlook Both academia and industry are increasingly supportive of expanding multimodal AI to include action."
+    },
+    {
+      "title": "Anthropic, Open AI models created fake identities in new cyber ... - CNBC",
+      "url": "https://www.cnbc.com/2026/08/05/anthropic-mythos-openai-security-breaches.html",
+      "snippet": "Anthropic&#x27;s Mythos 5 model created fake identities to try to convince a human to approve malicious changes to an open source project, the AI Security Institute said on Tuesday. The incident was ..."
+    },
+    {
+      "title": "Thought: Internal Reasoning and the ReAct Approach · Hugging Face",
+      "url": "https://huggingface.co/learn/agents-course/unit1/thoughts",
+      "snippet": "Thought: Internal Reasoning and the ReAct Approach In this section, we dive into the inner workings of an AI agent—its ability to reason and plan. We&#x27;ll explore how the agent leverages its internal dialogue to analyze information, break down complex problems into manageable steps, and decide what action to take next."
+    },
+    {
+      "title": "Open Source Robotics Model MolmoAct2: Ai2 Beats π0.5, Releases 720-Hour ...",
+      "url": "https://www.techtimes.com/articles/317145/20260525/open-source-robotics-model-molmoact2-ai2-beats-05-releases-720-hour-bimanual-dataset.htm",
+      "snippet": "Open source robotics AI model MolmoAct2 from the Allen Institute for AI runs up to 37 times faster than its predecessor, outperforms Physical Intelligence&#x27;s π0.5 on multiple real-world ..."
+    },
+    {
+      "title": "GLM-5: from Vibe Coding to Agentic Engineering - arXiv.org",
+      "url": "https://arxiv.org/html/2602.15763v1",
+      "snippet": "We present GLM-5, our next-generation flagship model designed to overcome these barriers. GLM-5 represents a paradigm shift in both performance and efficiency, achieving state-of-the-art status on major open leaderboards, including ArtificialAnalysis.ai, the LMArena Text, and the LMArena Code. More significantly, GLM-5 redefines the standard for real-world coding, demonstrating an ..."
+    }
+  ]
+}

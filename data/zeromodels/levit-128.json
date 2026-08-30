@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "zeromodels/levit-128",
+  "slug": "zeromodels-levit-128",
+  "author": "zeromodels",
+  "url": "https://huggingface.co/zeromodels/levit-128",
+  "created_at": "2026-08-30T00:56:12.000Z",
+  "updated_at": "2026-08-30T00:56:23.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-classification",
+  "library": "zeromodels",
+  "languages": [],
+  "tags": [
+    "zeromodels",
+    "keras",
+    "image-classification",
+    "vit",
+    "backbone",
+    "levit",
+    "arxiv:2104.01136",
+    "pytorch",
+    "jax",
+    "tf",
+    "base_model:facebook/levit-128",
+    "base_model:finetune:facebook/levit-128",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 37675256,
+  "storage_human": "38 MB",
+  "base_model": "facebook/levit-128",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ai-intel-open_model_zoo/models/public/levit-128s/README.md at ... - GitHub",
+      "url": "https://github.com/johnottone/ai-intel-open_model_zoo/blob/master/models/public/levit-128s/README.md",
+      "snippet": "The model is pre-trained on the ImageNet dataset. LeViT-128s model is a small LeViT variant that has 128 channels on input of the transformer stage and 2, 3 and 4 number of pairs of Attention and MLP blocks at 1, 2 and 3 model stages respectively. The model input is a blob that consists of a single image of 1, 3, 224, 224 in RGB order."
+    },
+    {
+      "title": "ai-intel-open_model_zoo/models/public/levit-128s at master - GitHub",
+      "url": "https://github.com/johnottone/ai-intel-open_model_zoo/tree/master/models/public/levit-128s",
+      "snippet": "The levit-128s model is one of the LeViT models family: a hybrid neural network for fast inference image classification. The model is pre-trained on the ImageNet dataset. LeViT-128s model is a small LeViT variant that has 128 channels on input of the transformer stage and 2, 3 and 4 number of pairs of Attention and MLP blocks at 1, 2 and 3 model stages respectively. The model input is a blob ..."
+    },
+    {
+      "title": "AI Aimbot Models & YOLO Detection Models | MossyModels",
+      "url": "https://mossymodels.com/",
+      "snippet": "AI Aimbot Models & YOLO Detection Models Browse 661+ free YOLO and ONNX detection models across 43+ games. Community library for Fortnite, Valorant, Warzone, Apex Legends, and more. MossyModels is a community library of YOLO and ONNX detection models for first-person shooters."
+    },
+    {
+      "title": "levit-128 · Models",
+      "url": "https://www.modelscope.cn/models/facebook/levit-128",
+      "snippet": "LeViT LeViT-128 model pre-trained on ImageNet-1k at resolution 224x224. It was introduced in the paper LeViT: a Vision Transformer in ConvNet&#x27;s Clothing for Faster Inference by Graham et al. and first released in this repository. Disclaimer: The team releasing LeViT did not write a model card for this model so this model card has been written by the Hugging Face team. Usage Here is how to use ..."
+    },
+    {
+      "title": "README.md · facebook/levit-128 at main - Hugging Face",
+      "url": "https://huggingface.co/facebook/levit-128/blob/main/README.md",
+      "snippet": "AI at Meta 6.95k Image Classification Transformers PyTorch imagenet-1k levit vision arxiv:2104.01136 License:apache-2.0 Model card FilesFiles and versions xet Community 1 Train Deploy Use this model main levit-128 /README.md nielsr HF Staff Update README.md 6b044a5 about 3 years ago preview code | raw Copy download link history blame contribute ..."
+    }
+  ]
+}

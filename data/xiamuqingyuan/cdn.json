@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "XiaMuqingyuan/cdn",
+  "slug": "xiamuqingyuan-cdn",
+  "author": "XiaMuqingyuan",
+  "url": "https://huggingface.co/XiaMuqingyuan/cdn",
+  "created_at": "2026-08-29T21:35:48.000Z",
+  "updated_at": "2026-08-29T21:35:49.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Tencent - 腾讯混元",
+      "url": "http://hunyuan.tencent.com/",
+      "snippet": "From LR to ELR: A Better Heuristic for Pretraining Dynamics 在大模型（Large Language Models，LLM）预训练中，超参数是影响效果好坏、控制模型训练动态的关键因素。而学习率（Learning Rate, LR）作为预训练中最重要的超参数之一，却无法精确控制模型参数的演化速率，其最优取值又往往随模型和数据规模的扩大而改变 ..."
+    },
+    {
+      "title": "腾讯混元大模型 - tencentcloud.com",
+      "url": "https://www.tencentcloud.com/zh/products/tclm",
+      "snippet": "腾讯混元大模型（Tencent HY）是由腾讯公司全链路自研的通用与多模态大模型家族，覆盖图像、3D等模态，面向内容生产、业务自动化等场景提供企业级服务。"
+    },
+    {
+      "title": "GitHub - XiaMuqingyuan/XiaMuqingyuan",
+      "url": "https://github.com/XiaMuqingyuan/XiaMuqingyuan",
+      "snippet": "Contribute to XiaMuqingyuan/XiaMuqingyuan development by creating an account on GitHub."
+    },
+    {
+      "title": "Hy AI Studio",
+      "url": "https://hunyuan.tencent.com/modelSquare/home/list",
+      "snippet": "Agent能力显著进步，贴近真实场景 代码能力大幅提升，工程实现又快又稳 复杂推理、长文理解与处理更强 更新时间：2026年07 ..."
+    },
+    {
+      "title": "腾讯混元大模型_大语言模型_自然语言大模型- 腾讯云",
+      "url": "https://cloud.tencent.com.cn/product/tclm",
+      "snippet": "腾讯混元大模型（Tencent Hunyuan）是由腾讯研发的大语言模型，具备强大的中文创作能力，复杂语境下的逻辑推理能力，以及可靠的任务执行能力。"
+    }
+  ]
+}

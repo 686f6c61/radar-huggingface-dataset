@@ -5,7 +5,7 @@
   "author": "grant-ai",
   "url": "https://huggingface.co/grant-ai/GLM-5.3-Flash-Abliterated-MLX-4bit",
   "created_at": "2026-08-29T00:20:54.000Z",
-  "updated_at": "2026-08-29T12:54:04.000Z",
+  "updated_at": "2026-08-29T13:18:39.000Z",
   "license": "mit",
   "license_family": "oss",
   "pipeline_tag": "image-text-to-text",

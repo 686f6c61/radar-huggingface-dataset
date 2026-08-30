@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "Dax161/perufoodnet-vit-model",
+  "slug": "dax161-perufoodnet-vit-model",
+  "author": "Dax161",
+  "url": "https://huggingface.co/Dax161/perufoodnet-vit-model",
+  "created_at": "2026-08-29T20:52:20.000Z",
+  "updated_at": "2026-08-29T20:53:14.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "image-classification",
+  "library": null,
+  "languages": [
+    "es"
+  ],
+  "tags": [
+    "safetensors",
+    "vit",
+    "image-classification",
+    "vision",
+    "pytorch",
+    "es",
+    "dataset:PeruFoodNet",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 303342632,
+  "parameters_human": "303.3M",
+  "storage_bytes": 1213417080,
+  "storage_human": "1.2 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Dax161/Dax-Peruvian-food · Hugging Face",
+      "url": "https://huggingface.co/Dax161/Dax-Peruvian-food",
+      "snippet": "Dax-Peruvian-food like 0 Model card Files Files and versions Community No model card New: Create and edit this model card directly on the website! Contribute a Model Card Downloads last month -"
+    },
+    {
+      "title": "Dax161/Peruvian_Food · Hugging Face",
+      "url": "https://huggingface.co/Dax161/Peruvian_Food",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "PeruFoodNet: A unique dataset of traditional peruvian food for image ...",
+      "url": "https://www.sciencedirect.com/science/article/pii/S2352340925003361",
+      "snippet": "Peruvian cuisine has won numerous international awards, attracting tourists from around the world to Peru to experience its diverse culinary offerings. However, some dishes contain ingredients that can trigger allergic reactions, posing a potential health risk for visitors. To address this, we created PeruFoodNet, a dataset featuring 4,000 images of traditional Peruvian dishes. The dataset ..."
+    },
+    {
+      "title": "PeruFoodNet - A Traditional Peruvian Food Dataset - Mendeley Data",
+      "url": "https://data.mendeley.com/datasets/hxhbbm497d/3",
+      "snippet": "PeruFoodNet is a dataset consisting of 4000 images of traditional Peruvian dishes. This dataset includes 40 different types of dishes, with 100 images for each dish. The objective of this dataset is to train deep learning models for the identification and classification of dishes, as well as the future inference of allergenic ingredients through a chatbot integrated into a social media ..."
+    },
+    {
+      "title": "PeruFoodNet: A unique dataset of traditional peruvian food for image ...",
+      "url": "https://www.semanticscholar.org/paper/PeruFoodNet%3A-A-unique-dataset-of-traditional-food-Gutierrez-Mu%C3%B1oz/eab59b2ea3d9c5f649eaf6e6a33da066393fe2b0",
+      "snippet": "The PeruFoodNet dataset is a dataset featuring 4,000 images of traditional Peruvian dishes that can aid in identifying allergenic ingredients in dishes by linking the dish&#x27;s image to a list of ingredients through a technological platform, such as a chatbot or an app. Peruvian cuisine has won numerous international awards, attracting tourists from around the world to Peru to experience its ..."
+    }
+  ]
+}

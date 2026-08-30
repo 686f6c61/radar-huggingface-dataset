@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "ajihidayat57/qwen2.5-legal-indonesia-sft",
+  "slug": "ajihidayat57-qwen2-5-legal-indonesia-sft",
+  "author": "ajihidayat57",
+  "url": "https://huggingface.co/ajihidayat57/qwen2.5-legal-indonesia-sft",
+  "created_at": "2026-08-29T20:42:17.000Z",
+  "updated_at": "2026-08-29T20:58:49.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen2",
+    "text-generation",
+    "text-generation-inference",
+    "unsloth",
+    "conversational",
+    "en",
+    "base_model:unsloth/Qwen2.5-7B-Instruct-bnb-4bit",
+    "base_model:finetune:unsloth/Qwen2.5-7B-Instruct-bnb-4bit",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 7615616512,
+  "parameters_human": "7.62B",
+  "storage_bytes": 15242694030,
+  "storage_human": "15.2 GB",
+  "base_model": "unsloth/Qwen2.5-7B-Instruct-bnb-4bit",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "attanmhd/qwen-2.5-1.5b-indonesian-legal-sft · Hugging Face",
+      "url": "https://huggingface.co/attanmhd/qwen-2.5-1.5b-indonesian-legal-sft",
+      "snippet": "Instructions to use attanmhd/qwen-2.5-1.5b-indonesian-legal-sft with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "mhusni/qwen2.5-3b-indonesian-legal-sft-16bit · Hugging Face",
+      "url": "https://huggingface.co/mhusni/qwen2.5-3b-indonesian-legal-sft-16bit",
+      "snippet": "Instructions to use mhusni/qwen2.5-3b-indonesian-legal-sft-16bit with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "Qwen 2.5 1.5B Indonesian Legal Sft by attanmhd",
+      "url": "https://llm-explorer.com/model/attanmhd%2Fqwen-2.5-1.5b-indonesian-legal-sft,1oEoPoKEN0Y3ZcUm8cry8X",
+      "snippet": "Qwen 2.5 1.5B Indonesian Legal Sft is an open-source 1.5b LLM by attanmhd. VRAM 3.1GB, 32K context. Compare benchmarks, capabilities, and deployment details on LLM Explorer."
+    },
+    {
+      "title": "qwen-2.5-1.5b-indonesian-legal-sft - friendli.ai",
+      "url": "https://friendli.ai/models/attanmhd/qwen-2.5-1.5b-indonesian-legal-sft",
+      "snippet": "Run qwen-2.5-1.5b-indonesian-legal-sft with FriendliAI inference. This qwen2 model was trained 2x faster with Unsloth and Huggingface&#x27;s TRL library."
+    },
+    {
+      "title": "Qwen2.5 1.5B sft hukum indonesia (1.5B) — MMLU 45 | Deploy Guide ...",
+      "url": "https://openmodelmap.com/model/Aziz2010/Qwen2.5-1.5B-sft-hukum-indonesia",
+      "snippet": "Qwen2.5 1.5B sft hukum indonesia by Aziz2010. Scores: MMLU 45, . 1.5B open-source AI model. An Indonesian legal domain SFT fine-tuned model based on Qwen2.5 1.5B with 32K context. Designed as"
+    }
+  ]
+}

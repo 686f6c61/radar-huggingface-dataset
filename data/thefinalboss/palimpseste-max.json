@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "thefinalboss/palimpseste-max",
+  "slug": "thefinalboss-palimpseste-max",
+  "author": "thefinalboss",
+  "url": "https://huggingface.co/thefinalboss/palimpseste-max",
+  "created_at": "2026-07-10T15:13:46.000Z",
+  "updated_at": "2026-08-29T21:44:17.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "palimpseste",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 92,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 14430109967,
+  "storage_human": "14.4 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "thefinalboss/palimpseste-max · Hugging Face",
+      "url": "https://huggingface.co/thefinalboss/palimpseste-max",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "README.md · thefinalboss/palimpseste-max at main - Hugging Face",
+      "url": "https://huggingface.co/thefinalboss/palimpseste-max/blob/main/README.md",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "AI Model Rankings 2026: Live LLM Leaderboard | ModelCap",
+      "url": "https://modelcap.ai/",
+      "snippet": "Live LLM leaderboard (Aug 2026): 224 AI models ranked on public benchmark evidence; Claude Fable 5 leads. API pricing, context windows and 68 providers compared."
+    },
+    {
+      "title": "LLM Leaderboard (August 2026) — Intelligence, Coding & Speed Benchmarks",
+      "url": "https://modelgrep.com/leaderboard",
+      "snippet": "Live LLM leaderboard ranking 300+ large language models by the Artificial Analysis Intelligence, Coding and Agentic indexes — with speed, latency and pricing on every row. Updated hourly."
+    },
+    {
+      "title": "AI Leaderboard 2026: Rankings for 300+ Top AI Models by Intelligence ...",
+      "url": "https://llm-stats.com/",
+      "snippet": "The AI Leaderboard — independent rankings of GPT, Claude, Gemini, Llama, DeepSeek and 300+ AI models by intelligence, speed and price. Composite LLM Stats Score updated continuously from public benchmarks and live API metrics."
+    }
+  ]
+}

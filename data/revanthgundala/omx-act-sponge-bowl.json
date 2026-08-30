@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "RevanthGundala/omx-act-sponge-bowl",
+  "slug": "revanthgundala-omx-act-sponge-bowl",
+  "author": "RevanthGundala",
+  "url": "https://huggingface.co/RevanthGundala/omx-act-sponge-bowl",
+  "created_at": "2026-08-29T23:54:24.000Z",
+  "updated_at": "2026-08-29T23:54:31.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "robotics",
+    "act",
+    "omx",
+    "dataset:RevanthGundala/014-place-sponge-in-bowl-diverse-50",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 52368518,
+  "parameters_human": "52.4M",
+  "storage_bytes": 209517128,
+  "storage_human": "210 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "017-place-sponge-in-bowl-custom-act-dagger18-trimmed",
+      "url": "https://huggingface.co/datasets/RevanthGundala/017-place-sponge-in-bowl-custom-act-dagger18-trimmed",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "RevanthGundala/013-place-sponge-in-bowl-diverse-50 at main",
+      "url": "https://huggingface.co/datasets/RevanthGundala/013-place-sponge-in-bowl-diverse-50/tree/main",
+      "snippet": "Datasets: RevanthGundala / 013-place-sponge-in-bowl-diverse-50 like 0 Tasks: Robotics Modalities: Tabular Time-series Video Formats: parquet Size: 10K - 100K Tags: LeRobot lerobot robotics teleoperation omx sponge-in-bowl Libraries: Datasets pandas Polars + 2 License: apache-2.0 Dataset card Data Studio FilesFiles and versions xet Community main 013-place-sponge-in-bowl-diverse-50 165 MB 1 ..."
+    },
+    {
+      "title": "013-place-sponge-in-bowl-diverse-50 - Physical AI Dataset | Claru",
+      "url": "https://claru.ai/datasets/revanthgundala-013-place-sponge-in-bowl-diverse-50",
+      "snippet": "A teleoperated robotics dataset for the task of placing a sponge in a bowl, created using LeRobot with 50 episodes of diverse demonstrations."
+    },
+    {
+      "title": "013-place-sponge-in-bowl-diverse-50-dagger - claru.ai",
+      "url": "https://claru.ai/datasets/revanthgundala-013-place-sponge-in-bowl-diverse-50-dagger",
+      "snippet": "A teleoperated robotics dataset for the task of placing a sponge in a bowl, collected using LeRobot with DAGGER methodology across 50 diverse episodes."
+    },
+    {
+      "title": "GitHub - RevanthGundala/omx-training",
+      "url": "https://github.com/RevanthGundala/omx-training",
+      "snippet": "Contribute to RevanthGundala/omx-training development by creating an account on GitHub."
+    }
+  ]
+}

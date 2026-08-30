@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "Nexuss0781/SPACE",
+  "slug": "nexuss0781-space",
+  "author": "Nexuss0781",
+  "url": "https://huggingface.co/Nexuss0781/SPACE",
+  "created_at": "2026-08-29T07:32:56.000Z",
+  "updated_at": "2026-08-29T20:41:03.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": "image-text-to-text",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "text-generation",
+    "image-text-to-text",
+    "license:other",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 3085938688,
+  "parameters_human": "3.09B",
+  "storage_bytes": 8361565184,
+  "storage_human": "8.4 GB",
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Nexuss0781/SPACE · Hugging Face",
+      "url": "https://huggingface.co/Nexuss0781/SPACE",
+      "snippet": "Nexuss0781 / SPACE like 0 Image-Text-to-Text GGUF text-generation conversational License:other Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "Nexuss0781 (Tadiyos Aschalew | ታዲዮስ አስቻለው | Nexuss)",
+      "url": "https://huggingface.co/Nexuss0781",
+      "snippet": "Advanced Researches in Arteficial Intelligence. Recent Activity. updated a model about 2 months ago. Nexuss0781/Ethio-BBPE. liked a Space about 2 months ago"
+    },
+    {
+      "title": "Nexuss0781 (Nexuss) - Hugging Face",
+      "url": "https://huggingface.co/Nexuss0781/datasets",
+      "snippet": "AI & ML interests ... Recent Activity published a dataset about 3 hours ago ... updated a dataset about 5 hours ago"
+    },
+    {
+      "title": "Nexuss Transformer Framework - a Hugging Face Space by Nexuss0781",
+      "url": "https://huggingface.co/spaces/Nexuss0781/ntf-space",
+      "snippet": "Discover amazing ML apps made by the community"
+    },
+    {
+      "title": "Nexuss-AI/README.md at main · nexuss0781/Nexuss-AI · GitHub",
+      "url": "https://github.com/nexuss0781/Nexuss-AI/blob/main/README.md",
+      "snippet": "Nexuss AI is an enterprise-grade, comprehensive framework designed for building large language models from absolute scratch. Whether you&#x27;re training your first model or deploying production AI systems at scale, Nexuss provides the complete toolkit for every stage of the AI lifecycle."
+    }
+  ]
+}

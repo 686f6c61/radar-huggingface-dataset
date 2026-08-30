@@ -1,0 +1,94 @@
+{
+  "schema": 1,
+  "id": "mradermacher/Al-Khwarizmi-3B-i1-GGUF",
+  "slug": "mradermacher-al-khwarizmi-3b-i1-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/Al-Khwarizmi-3B-i1-GGUF",
+  "created_at": "2026-08-29T20:51:08.000Z",
+  "updated_at": "2026-08-29T22:55:37.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en",
+    "ar",
+    "fr",
+    "es",
+    "de",
+    "it",
+    "pt",
+    "zh",
+    "ru"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "smollm3",
+    "fine-tuned",
+    "lora",
+    "math",
+    "conversational",
+    "text-generation-inference",
+    "multilingual",
+    "en",
+    "ar",
+    "fr",
+    "es",
+    "de",
+    "it",
+    "pt",
+    "zh",
+    "ru",
+    "dataset:openai/gsm8k",
+    "base_model:mzoelfakar/Al-Khwarizmi-3B",
+    "base_model:adapter:mzoelfakar/Al-Khwarizmi-3B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "imatrix"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 3075098624,
+  "parameters_human": "3.08B",
+  "storage_bytes": 36360845184,
+  "storage_human": "36.4 GB",
+  "base_model": "mzoelfakar/Al-Khwarizmi-3B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "mradermacher/Al-Khwarizmi-3B-GGUF · Hugging Face",
+      "url": "https://huggingface.co/mradermacher/Al-Khwarizmi-3B-GGUF",
+      "snippet": "mradermacher / Al-Khwarizmi-3B-GGUF like 0 Transformers GGUF openai/gsm8k English fine-tuned math smollm3 conversational License:apache-2.0 Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "mradermacher (team mradermacher) - Hugging Face",
+      "url": "https://huggingface.co/mradermacher",
+      "snippet": "Feel free to suggest models to quant e.g. at https://huggingface.co/mradermacher/model_requests"
+    },
+    {
+      "title": "Mradermacher - Find Top AI Models on Hugging Face",
+      "url": "https://www.aimodels.fyi/creators/huggingFace/mradermacher",
+      "snippet": "Looking for Mradermacher&#x27;s top AI models? Browse their full Hugging Face collection of 26 models. Explore AI models and contributions by Mradermacher on Huggingface."
+    },
+    {
+      "title": "GGUF Model Discovery - Browse & Download AI Models",
+      "url": "https://local-ai-zone.github.io/",
+      "snippet": "Discover and download GGUF format AI models. Browse and direct download thousands of quantized AI models with detailed information, download counts, and direct links."
+    },
+    {
+      "title": "mradermacher quant download page",
+      "url": "https://hf.tst.eu/model",
+      "snippet": "mradermacher quant download page BETA - this page is not finished: more explanations and changes are to come, but it should be functional."
+    }
+  ]
+}

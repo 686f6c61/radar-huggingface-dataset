@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "logic65/whittle-next-moe-test",
+  "slug": "logic65-whittle-next-moe-test",
+  "author": "logic65",
+  "url": "https://huggingface.co/logic65/whittle-next-moe-test",
+  "created_at": "2026-08-29T19:50:21.000Z",
+  "updated_at": "2026-08-30T00:22:31.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "gguf",
+    "qwen3_5_moe",
+    "moe",
+    "research",
+    "experimental",
+    "moefication",
+    "text-generation",
+    "conversational",
+    "base_model:logic65/Qwen3.8-Whittle-tri-14.7B",
+    "base_model:quantized:logic65/Qwen3.8-Whittle-tri-14.7B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 14758885632,
+  "parameters_human": "14.76B",
+  "storage_bytes": 39316043717,
+  "storage_human": "39.3 GB",
+  "base_model": "logic65/Qwen3.8-Whittle-tri-14.7B",
+  "formats": [
+    "gguf",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "logic65/Qwen3.8-Whittle-MoE-27B-A17.8B · Hugging Face",
+      "url": "https://huggingface.co/logic65/Qwen3.8-Whittle-MoE-27B-A17.8B",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "README.md · logic65/Qwen3.8-Whittle-MoE-27B-A17.8B at main - Hugging Face",
+      "url": "https://huggingface.co/logic65/Qwen3.8-Whittle-MoE-27B-A17.8B/blob/main/README.md",
+      "snippet": "Whittle MoE 27B (A18B): a mixture of experts rescued by its routers A post hoc mixture of experts carved from Qwen3.8-27B, then taught when to stop talking. As of v2.1 it holds real conversations, writes working code and tables, and the looping disease it shipped with is measured at single digits. This is the model this repo was always trying to build."
+    },
+    {
+      "title": "Whittle/Qwen3.8-Whittle-MoE-27B-A17.8B - ollama.com",
+      "url": "https://ollama.com/Whittle/Qwen3.8-Whittle-MoE-27B-A17.8B",
+      "snippet": "This round trained on exactly that: 245 complete answers written by the parent model with its top 32 token probabilities at every position, spanning 7 token factual answers to 4,000 token structured documents and multi turn conversations (dataset: logic65/whittle-teacher32-complete-answers)."
+    },
+    {
+      "title": "Architecture graph for logic65/Qwen3.8-Whittle-MoE-27B-A17.8B.",
+      "url": "https://hfviewer.com/logic65/Qwen3.8-Whittle-MoE-27B-A17.8B",
+      "snippet": "logic65/Qwen3.8-Whittle-MoE-27B-A17.8B architecture at a glance logic65/Qwen3.8-Whittle-MoE-27B-A17.8B is a model (qwen3_5_moe_text architecture). It uses 64 transformer layers, a hidden size of 5,120, and 24 query heads with 4 key/value heads (grouped-query attention). The feed-forward layers use a mixture-of-experts design with 64 experts (16 active per token). It has a vocabulary of 248,320 ..."
+    },
+    {
+      "title": "Qwen3.8 Whittle MoE 27B A17.8B by logic65 - llm-explorer.com",
+      "url": "https://llm-explorer.com/model/logic65%2FQwen3.8-Whittle-MoE-27B-A17.8B,372feFSodtnWdsRYHJ9LW5",
+      "snippet": "Qwen3.8 Whittle MoE 27B A17.8B is an open-source 26.9b LLM by logic65. VRAM 53.8GB, 256K context. Compare benchmarks, capabilities, and deployment details on LLM Explorer."
+    }
+  ]
+}

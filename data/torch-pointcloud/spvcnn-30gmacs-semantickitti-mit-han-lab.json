@@ -1,0 +1,78 @@
+{
+  "schema": 1,
+  "id": "torch-pointcloud/spvcnn-30gmacs.semantickitti.mit-han-lab",
+  "slug": "torch-pointcloud-spvcnn-30gmacs-semantickitti-mit-han-lab",
+  "author": "torch-pointcloud",
+  "url": "https://huggingface.co/torch-pointcloud/spvcnn-30gmacs.semantickitti.mit-han-lab",
+  "created_at": "2026-08-28T18:21:29.000Z",
+  "updated_at": "2026-08-29T20:31:33.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "torch-pointcloud",
+  "languages": [],
+  "tags": [
+    "torch-pointcloud",
+    "safetensors",
+    "point-cloud",
+    "3d",
+    "pytorch",
+    "spvcnn",
+    "segmentation",
+    "dataset:semantickitti",
+    "arxiv:2007.16100",
+    "license:mit",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 5455891,
+  "parameters_human": "5.5M",
+  "storage_bytes": 21859820,
+  "storage_human": "22 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": null,
+      "dataset": "SemanticKITTI",
+      "metric": "mIoU",
+      "value": 60.7
+    }
+  ],
+  "sources": [
+    {
+      "title": "spv-cnn/README.md at master · STU-Z/spv-cnn · GitHub",
+      "url": "https://github.com/STU-Z/spv-cnn/blob/master/README.md",
+      "snippet": "Model Zoo SemanticKITTI We share the pretrained models for MinkowskiNets, our manually designed SPVCNN models and also SPVNAS models found by our 3D-NAS pipeline. All the pretrained models are available in the model zoo. Currently, we release the models trained on sequences 00-07 and 09-10 and evaluated on sequence 08."
+    },
+    {
+      "title": "torch-pointcloud (PyTorch PointCloud) - Hugging Face",
+      "url": "https://huggingface.co/torch-pointcloud",
+      "snippet": "PyTorch PointCloud (torch-pointcloud) is a collection of point cloud models, layers, utilities, datasets, transforms, and reference training / benchmarking scripts that aim to reproduce SOTA models and help researchers and engineers reuse common layers. Find all the torch-pointcloud models here."
+    },
+    {
+      "title": "GitHub - mit-han-lab/spvnas: [ECCV 2020] Searching Efficient 3D ...",
+      "url": "https://github.com/mit-han-lab/spvnas",
+      "snippet": "Model Zoo SemanticKITTI We share the pretrained models for MinkowskiNets, our manually designed SPVCNN models and also SPVNAS models found by our 3D-NAS pipeline. All the pretrained models are available in the model zoo. Currently, we release the models trained on sequences 00-07 and 09-10 and evaluated on sequence 08."
+    },
+    {
+      "title": "[2007.16100] Searching Efficient 3D Architectures with Sparse Point ...",
+      "url": "https://arxiv.org/abs/2007.16100",
+      "snippet": "Experimental results validate that the resulting SPVNAS model is fast and accurate: it outperforms the state-of-the-art MinkowskiNet by 3.3%, ranking 1st on the competitive SemanticKITTI leaderboard. It also achieves 8x computation reduction and 3x measured speedup over MinkowskiNet with higher accuracy."
+    },
+    {
+      "title": "Searching Efficient 3D Architectures with Sparse Point-Voxel Convolution",
+      "url": "https://hanlab.mit.edu/projects/spvnas",
+      "snippet": "Experimental results validate that the resulting SPVNAS model is fast and accurate: it outperforms the state-of-the-art MinkowskiNet by 3.3%, ranking 1st on the competitive SemanticKITTI leaderboard. It also achieves 8x computation reduction and 3x measured speedup over MinkowskiNet with higher accuracy."
+    }
+  ]
+}

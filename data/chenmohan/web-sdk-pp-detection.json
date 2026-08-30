@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "chenmohan/web-sdk-pp-detection",
+  "slug": "chenmohan-web-sdk-pp-detection",
+  "author": "chenmohan",
+  "url": "https://huggingface.co/chenmohan/web-sdk-pp-detection",
+  "created_at": "2026-08-29T02:34:42.000Z",
+  "updated_at": "2026-08-30T00:55:16.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "onnx",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 23219047,
+  "storage_human": "23 MB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "chenmohan/web-sdk-pp-detection · Hugging Face",
+      "url": "https://huggingface.co/chenmohan/web-sdk-pp-detection",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "web-sdk-PP-Detection/README.en.md at main - GitHub",
+      "url": "https://github.com/chenmohan123/web-sdk-PP-Detection/blob/main/README.en.md",
+      "snippet": "web-sdk-pp-detection is a framework-neutral TypeScript SDK powered by ONNX Runtime Web. It supports single-frame detection from images, Canvas, ImageData, HTMLVideoElement, VideoFrame, and a Worker, and returns model, runtime, and timing information."
+    },
+    {
+      "title": "chenmohan (Chen Mohan) - Hugging Face",
+      "url": "https://huggingface.co/chenmohan",
+      "snippet": "chenmohan/web-sdk-pp-ocrv6 Image-to-Text •Updated about 22 hours ago Web SDK Models"
+    },
+    {
+      "title": "web-sdk-PP-OCRv6/docs/en/api.md at main - GitHub",
+      "url": "https://github.com/chenmohan123/web-sdk-PP-OCRv6/blob/main/docs/en/api.md",
+      "snippet": "createDetector (options) finds text regions. createRecognizer (options) recognizes an image or indexed crop batch. createOCR (options) performs detection, crop, reading-order sort, and recognition. Each instance exposes load (), its run method, and idempotent dispose ()."
+    },
+    {
+      "title": "chenmohan (Chen Mohan) - Hugging Face",
+      "url": "https://huggingface.co/chenmohan/models",
+      "snippet": "chenmohan&#x27;s models3 Sort: Recently updated chenmohan/web-sdk-pp-doclayoutv3 Object Detection •Updated about 23 hours ago"
+    }
+  ]
+}

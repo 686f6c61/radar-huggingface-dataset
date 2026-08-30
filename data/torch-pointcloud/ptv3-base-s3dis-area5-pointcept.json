@@ -1,0 +1,78 @@
+{
+  "schema": 1,
+  "id": "torch-pointcloud/ptv3-base.s3dis-area5.pointcept",
+  "slug": "torch-pointcloud-ptv3-base-s3dis-area5-pointcept",
+  "author": "torch-pointcloud",
+  "url": "https://huggingface.co/torch-pointcloud/ptv3-base.s3dis-area5.pointcept",
+  "created_at": "2026-08-28T18:20:21.000Z",
+  "updated_at": "2026-08-29T20:31:17.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "torch-pointcloud",
+  "languages": [],
+  "tags": [
+    "torch-pointcloud",
+    "safetensors",
+    "point-cloud",
+    "3d",
+    "pytorch",
+    "point-transformer-v3",
+    "segmentation",
+    "dataset:s3dis",
+    "arxiv:2312.10035",
+    "license:mit",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 46194585,
+  "parameters_human": "46.2M",
+  "storage_bytes": 184834148,
+  "storage_human": "185 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": null,
+      "dataset": "S3DIS (Area 5)",
+      "metric": "mIoU",
+      "value": 32.06
+    }
+  ],
+  "sources": [
+    {
+      "title": "torch-pointcloud/ptv3-base.s3dis-area5.pointcept · Hugging Face",
+      "url": "https://huggingface.co/torch-pointcloud/ptv3-base.s3dis-area5.pointcept",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "torch-pointcloud/ptv3-base.s3dis-area5.pointcept at main",
+      "url": "https://huggingface.co/torch-pointcloud/ptv3-base.s3dis-area5.pointcept/tree/main",
+      "snippet": "1 Safetensors PyTorch s3dis torch-pointcloud point-cloud 3d point-transformer-v3 segmentation Eval Results (legacy) arxiv:2312.10035 License:mit Model card FilesFiles and versions xet Community Copy to bucket new main ptv3-base.s3dis-area5.pointcept 185 MB Ctrl+K Ctrl+K 1 contributor History:3 commits arthurdjn Update model card for ptv3-base ..."
+    },
+    {
+      "title": "GitHub - Pointcept/Pointcept: Pointcept: Perceive the world with sparse ...",
+      "url": "https://github.com/Pointcept/Pointcept",
+      "snippet": "We release the code with Pointcept v1.6.0. We release the pre-training code along with Pointcept v1.6.0 and provide an easy-to-use pre-trained model for inference, tuning, and visualization in our project repository hosted by Meta. May 2024: In v1.5.2, we redesigned the default structure for each dataset for better performance."
+    },
+    {
+      "title": "GitHub - Pointcept/Pointcept: Pointcept: Perceive the world with sparse ...",
+      "url": "https://github.com/Pointcept/Pointcept/tree/main",
+      "snippet": "PTv3 is an efficient backbone model that achieves SOTA performances across indoor and outdoor scenarios. The full PTv3 relies on FlashAttention, while FlashAttention relies on CUDA 11.6 and above, make sure your local Pointcept environment satisfies the requirements."
+    },
+    {
+      "title": "Pointcept/Pointcept | DeepWiki",
+      "url": "https://deepwiki.com/Pointcept/Pointcept",
+      "snippet": "Pointcept is a comprehensive and flexible framework for point cloud perception research. It serves as the official implementation for several state-of-the-art approaches, including Utonia, Concerto, Sonata, Point Transformer V3 (PTv3), OA-CNNs, Point Prompt Training (PPT), and Masked Scene Contrast (MSC)."
+    }
+  ]
+}

@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "Jojocodex/wushu-action-v7-minimax-h3-fl2va-lora",
+  "slug": "jojocodex-wushu-action-v7-minimax-h3-fl2va-lora",
+  "author": "Jojocodex",
+  "url": "https://huggingface.co/Jojocodex/wushu-action-v7-minimax-h3-fl2va-lora",
+  "created_at": "2026-08-30T01:50:41.000Z",
+  "updated_at": "2026-08-30T02:30:56.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": "image-to-video",
+  "library": "minimax-h3",
+  "languages": [],
+  "tags": [
+    "minimax-h3",
+    "text-to-video",
+    "image-to-video",
+    "lora",
+    "wushu",
+    "martial-arts",
+    "action",
+    "base_model:MiniMaxAI/MiniMax-H3",
+    "base_model:adapter:MiniMaxAI/MiniMax-H3",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 2122913424,
+  "storage_human": "2.1 GB",
+  "base_model": "MiniMaxAI/MiniMax-H3",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Jojocodex/minimax-h3-wushu-action-lora · Hugging Face",
+      "url": "https://huggingface.co/Jojocodex/minimax-h3-wushu-action-lora",
+      "snippet": "Jojocodex / minimax-h3-wushu-action-lora like 39 Text-to-Video MiniMax H3 lora martial-arts kung-fu action video-generation License:apache-2.0 Model card FilesFiles and versions xet Community 3 Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "Jojocodex (Hpmg) - Hugging Face",
+      "url": "https://huggingface.co/Jojocodex",
+      "snippet": "Martial-arts action video with a MiniMax-H3 LoRA. Jojocodex 8 days ago. Running on Zero. Agents. 7. MiniMax-H3 Spatial Physics LoRA"
+    },
+    {
+      "title": "GitHub - MiniMax-AI/MiniMax-H3 · GitHub",
+      "url": "https://github.com/MiniMax-AI/MiniMax-H3",
+      "snippet": "Contribute to MiniMax-AI/MiniMax-H3 development by creating an account on GitHub."
+    },
+    {
+      "title": "Jojocodex/minimax-h3-wushu-action-lora · Hugging Face",
+      "url": "https://t.co/8FfEOskcak",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "MiniMax-H3/skills at main · MiniMax-AI/MiniMax-H3 · GitHub",
+      "url": "https://github.com/MiniMax-AI/MiniMax-H3/tree/main/skills",
+      "snippet": "This directory contains the skills bundled with MiniMax H3: 1 prompt writing skill and 8 style-specific video generation skills. Each skill lives in its own folder with an installable SKILL.md (plus a SKILL.cn.md Chinese version for the style skills) and any reference materials it needs."
+    }
+  ]
+}

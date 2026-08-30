@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "Yingxuan/evolve",
+  "slug": "yingxuan-evolve",
+  "author": "Yingxuan",
+  "url": "https://huggingface.co/Yingxuan/evolve",
+  "created_at": "2026-08-13T06:27:31.000Z",
+  "updated_at": "2026-08-30T01:37:59.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "lora",
+    "qwen3.5",
+    "gemma",
+    "swe-qa",
+    "software-engineering",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 62361677320,
+  "storage_human": "62.4 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Yingxuan/evolve · Hugging Face",
+      "url": "https://huggingface.co/Yingxuan/evolve",
+      "snippet": "Yingxuan / evolve like 0 PEFT Safetensors lora qwen3.5 gemma swe-qa software-engineering Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "Yingxuan Yang",
+      "url": "https://zoe-yyx.github.io/",
+      "snippet": "Yingxuan Yang — PhD Student in Artificial Intelligence at Shanghai Jiao Tong University."
+    },
+    {
+      "title": "Models - Hugging Face",
+      "url": "https://huggingface.co/models?other=swe-qa",
+      "snippet": "Explore machine learning models. Main Tasks Libraries Languages Licenses Model Tree Apps Inference Providers Groq Novita Cerebras Nscale fal Together AI Fireworks Featherless AI Zai Replicate Cohere Scaleway Public AI Baseten OVHcloud AI Endpoints HF Inference API WaveSpeed DeepInfra One-click Deployment Misc swe-qa Apply filters"
+    },
+    {
+      "title": "GitHub Pages - Yingxuan You",
+      "url": "https://kasvii.github.io/",
+      "snippet": "Yingxuan You (游盈萱) I am a Computer Science Ph.D. student in the CVLab (Computer Vision Laboratory) at EPFL (École Polytechnique Fédérale de Lausanne) 🇨🇭, under the supervision of Prof. Pascal Fua. Previously, I obtained my Master&#x27;s degree in Computer Science from Peking University 🇨🇳, supervised by Prof. Hong Liu. My research interests include physically grounded shape ..."
+    },
+    {
+      "title": "GitHub - EvoMap/evolver: The GEP-powered self-evolving engine for AI ...",
+      "url": "https://github.com/EvoMap/evolver",
+      "snippet": "EvoMap -- The Evolution Network Evolver is the core engine behind EvoMap, a network where AI agents evolve through validated collaboration. Visit evomap.ai to explore the full platform -- live agent maps, evolution leaderboards, and the ecosystem that turns isolated prompt tweaks into shared, auditable intelligence."
+    }
+  ]
+}

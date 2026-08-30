@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "Ryanham1lton/Buizel",
+  "slug": "ryanham1lton-buizel",
+  "author": "Ryanham1lton",
+  "url": "https://huggingface.co/Ryanham1lton/Buizel",
+  "created_at": "2026-08-29T20:08:01.000Z",
+  "updated_at": "2026-08-29T20:08:29.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:cc-by-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 135853732,
+  "storage_human": "136 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "buizel - AI Art Model | PixAI",
+      "url": "https://pixai.art/en/model/1898715252119167362",
+      "snippet": "Generate stunning anime, pokemon, buizdel anime art with the &#x27;buizel&#x27; model on PixAI. Browse artworks made with this model and try it free."
+    },
+    {
+      "title": "Ryanham1lton (Ryan James Hamilton) - Hugging Face",
+      "url": "https://huggingface.co/Ryanham1lton/models",
+      "snippet": "User profile of Ryan James Hamilton on Hugging Face"
+    },
+    {
+      "title": "Buizel AI Models | PixAI",
+      "url": "https://pixai.art/tags/model/buizel",
+      "snippet": "Discover Buizel AI models on PixAI - Find anime AI models and LoRAs tagged with Buizel"
+    },
+    {
+      "title": "Buizel (Illustrious) - SeaArt AI Model",
+      "url": "https://www.seaart.ai/models/detail/d28a7dde878c739jehgg",
+      "snippet": "Explore Buizel (Illustrious) model on SeaArt AI. Transform your idea into professional-quality AI-generated images and videos with our free, easy-to-use platform."
+    },
+    {
+      "title": "Buizel - SeaArt AI Model",
+      "url": "https://www.seaart.ai/models/detail/9ddf7ce610ad0b4aaba1bea15f810181",
+      "snippet": "Explore Buizel model on SeaArt AI. Transform your idea into professional-quality AI-generated images and videos with our free, easy-to-use platform."
+    }
+  ]
+}

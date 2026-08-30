@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "Firebirth/Qwen3.5-27B-Derestricted",
+  "slug": "firebirth-qwen3-5-27b-derestricted",
+  "author": "Firebirth",
+  "url": "https://huggingface.co/Firebirth/Qwen3.5-27B-Derestricted",
+  "created_at": "2026-08-29T23:29:02.000Z",
+  "updated_at": "2026-08-29T23:29:03.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_5",
+    "image-text-to-text",
+    "abliterated",
+    "derestricted",
+    "unlimited",
+    "uncensored",
+    "qwen3.5",
+    "text-generation",
+    "conversational",
+    "base_model:Qwen/Qwen3.5-27B",
+    "base_model:finetune:Qwen/Qwen3.5-27B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 27781427952,
+  "parameters_human": "27.78B",
+  "storage_bytes": 55575830414,
+  "storage_human": "55.6 GB",
+  "base_model": "Qwen/Qwen3.5-27B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Qwen3.5 27B Derestricted model | NanoGPT",
+      "url": "https://nano-gpt.com/models/text/Qwen3.5-27B-Derestricted",
+      "snippet": "Derestricted Qwen3.5 27B tuned by ArliAI for open-ended creative use while retaining native multimodal input and hybrid reasoning."
+    },
+    {
+      "title": "Qwen-3.5-27B-Derestricted-GGUF - Hugging Face",
+      "url": "https://huggingface.co/mradermacher/Qwen-3.5-27B-Derestricted-GGUF",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Fine-tuned Models for Qwen/Qwen3.5-27B - Hugging Face",
+      "url": "https://huggingface.co/models?other=base_model:finetune:Qwen/Qwen3.5-27B",
+      "snippet": "Explore machine learning models. DavidAU/Qwen3.5-27B-Gemini3-Pro-High-Reasoning-Compact-Thinking"
+    },
+    {
+      "title": "Qwen3.5 27B Queen Derestricted model | Bitcoin.com AI",
+      "url": "https://ai.bitcoin.com/models/text/Qwen3.5-27B-Queen-Derestricted",
+      "snippet": "Queen finetune for derestricted creative writing, roleplay, and expressive character dialogue."
+    },
+    {
+      "title": "Qwen 3.5 27B - CanIRun.ai",
+      "url": "https://www.canirun.ai/model/qwen3.5-27b",
+      "snippet": "Highlights Qwen3.5 features the following enhancement: Unified Vision-Language Foundation: Early fusion training on multimodal tokens achieves cross-generational parity with Qwen3 and outperforms Qwen3-VL models across reasoning, coding, agents, and visual understanding benchmarks."
+    }
+  ]
+}

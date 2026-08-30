@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "rakuten-junliu/RakutenAI-3.0-W4A8",
+  "slug": "rakuten-junliu-rakutenai-3-0-w4a8",
+  "author": "rakuten-junliu",
+  "url": "https://huggingface.co/rakuten-junliu/RakutenAI-3.0-W4A8",
+  "created_at": "2026-08-29T07:32:47.000Z",
+  "updated_at": "2026-08-29T20:38:04.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "ja",
+    "en"
+  ],
+  "tags": [
+    "safetensors",
+    "deepseek_v3",
+    "w4a8",
+    "quantized",
+    "moe",
+    "ja",
+    "en",
+    "base_model:Rakuten/RakutenAI-3.0",
+    "base_model:finetune:Rakuten/RakutenAI-3.0",
+    "license:apache-2.0",
+    "8-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 349181667416,
+  "parameters_human": "349.18B",
+  "storage_bytes": 366488133408,
+  "storage_human": "366.5 GB",
+  "base_model": "Rakuten/RakutenAI-3.0",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "rakuten-junliu/RakutenAI-3.0-W4A8 · Hugging Face",
+      "url": "https://huggingface.co/rakuten-junliu/RakutenAI-3.0-W4A8",
+      "snippet": "rakuten-junliu / RakutenAI-3.0-W4A8 like 0 Safetensors Japanese English deepseek_v3 w4a8 quantized Mixture of Experts 8-bit precision License:apache-2.0 Model card FilesFiles and versions xet Community Copy to bucket new RakutenAI-3.0-W4A8 Quantization method How to run (sglang) Query the server Hardware requirements Known issue: topk unpack in ..."
+    },
+    {
+      "title": "Rakuten/RakutenAI-3.0 · Hugging Face",
+      "url": "https://huggingface.co/Rakuten/RakutenAI-3.0",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Rakuten AI 3.0 Now Available, Japan&#x27;s Largest High-Performance AI Model ...",
+      "url": "https://global.rakuten.com/corp/news/press/2026/0317_01.html",
+      "snippet": "Rakuten AI 3.0, our largest and most competitive model, is an outstanding combination of data, engineering and innovative architecture at scale. By sharing open models, we aim to accelerate AI development in Japan."
+    },
+    {
+      "title": "Rakuten Unveils Japan&#x27;s Largest High-Performance AI Model, Developed as ...",
+      "url": "https://global.rakuten.com/corp/news/press/2025/1218_01.html",
+      "snippet": "Tokyo, December 18, 2025 - Rakuten Group, Inc. today unveiled its latest AI model, Rakuten AI 3.0, a Japanese large language model (LLM) developed as part of the Generative AI Accelerator Challenge (GENIAC) project promoted by the Ministry of Economy, Trade and Industry (METI) and the New Energy and Industrial Technology Development Organization (NEDO)."
+    },
+    {
+      "title": "Practical Guide to Deploying Rakuten AI 3.0 from Hugging Face",
+      "url": "https://www.oflight.co.jp/en/columns/rakuten-ai-3-huggingface-deployment-guide",
+      "snippet": "A detailed guide to downloading Rakuten&#x27;s latest LLM &#x27;Rakuten AI 3.0&#x27; from Hugging Face and building inference environments with vLLM and TGI. Practical coverage from MoE model-specific GPU memory requirements, quantization for optimization, API server construction, to production deployment best practices."
+    }
+  ]
+}

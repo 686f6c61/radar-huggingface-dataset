@@ -5,7 +5,7 @@
   "author": "yuvstk",
   "url": "https://huggingface.co/yuvstk/bert-grammar-error-detection",
   "created_at": "2026-08-29T09:42:53.000Z",
-  "updated_at": "2026-08-29T09:45:37.000Z",
+  "updated_at": "2026-08-29T11:04:06.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-classification",

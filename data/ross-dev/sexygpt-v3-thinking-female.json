@@ -1,0 +1,77 @@
+{
+  "schema": 1,
+  "id": "ross-dev/SexyGPT-v3-Thinking-Female",
+  "slug": "ross-dev-sexygpt-v3-thinking-female",
+  "author": "ross-dev",
+  "url": "https://huggingface.co/ross-dev/SexyGPT-v3-Thinking-Female",
+  "created_at": "2026-08-29T22:56:35.000Z",
+  "updated_at": "2026-08-29T23:22:12.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "not-for-all-audiences",
+    "roleplay",
+    "character",
+    "persona",
+    "thinking",
+    "reasoning",
+    "Uncensored",
+    "Qwen",
+    "unsloth",
+    "grpo",
+    "text-generation",
+    "en",
+    "base_model:Qwen/Qwen3.8-27B",
+    "base_model:finetune:Qwen/Qwen3.8-27B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1686039,
+  "storage_human": "2 MB",
+  "base_model": "Qwen/Qwen3.8-27B",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "README.md · ross-dev/SexyGPT-v2-Thinking-Female-gguf at main",
+      "url": "https://huggingface.co/ross-dev/SexyGPT-v2-Thinking-Female-gguf/blob/main/README.md",
+      "snippet": "Model Summary SexyGPT-v2-Thinking-Female is a specialized language model fine-tuned for conversational AI with extended reasoning capabilities. Based on Qwen3-0.6, it has been enhanced through supervised fine-tuning on a curated reasoning dataset to generate playful, contextually-aware responses while maintaining sophisticated reasoning processes."
+    },
+    {
+      "title": "ross-dev/SexyGPT-v2-Thinking-Female · Hugging Face",
+      "url": "https://huggingface.co/ross-dev/SexyGPT-v2-Thinking-Female",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "SexyGPT V2 Thinking Female — AI Model | Antbase",
+      "url": "https://antbase.ai/models/sexygpt-v2-thinking-female",
+      "snippet": "Overview SexyGPT V2 Thinking Female is a efficient model from Featherless with a 33K context window, supporting advanced reasoning. Available through ANT&#x27;s unified API."
+    },
+    {
+      "title": "368 Female Models - Zoomerang Gallery",
+      "url": "https://zoomerang.app/ai-gallery/female-models",
+      "snippet": "Welcome to the Zoomerang AI Art Gallery! Explore a diverse collection of stunning AI-generated artworks crafted by our talented community. Immerse yourself in creativity and innovation with each unique creation."
+    },
+    {
+      "title": "Top Sexy AI Prompts: 2026 Elite Guide for Creators",
+      "url": "https://cherrypop.ai/blog/sexy-ai-prompts",
+      "snippet": "Master sexy AI prompts for stunning portraits and fashion imagery. 15+ detailed examples, technical breakdowns, and proven templates for creators in 2026."
+    }
+  ]
+}

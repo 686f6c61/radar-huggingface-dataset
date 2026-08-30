@@ -1,0 +1,78 @@
+{
+  "schema": 1,
+  "id": "wy8edhuh/Phi-4-Mini-Abliterated-Q4_K_M-GGUF",
+  "slug": "wy8edhuh-phi-4-mini-abliterated-q4_k_m-gguf",
+  "author": "wy8edhuh",
+  "url": "https://huggingface.co/wy8edhuh/Phi-4-Mini-Abliterated-Q4_K_M-GGUF",
+  "created_at": "2026-08-30T00:36:14.000Z",
+  "updated_at": "2026-08-30T00:36:29.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "gguf",
+    "abliteration",
+    "phi4",
+    "microsoft",
+    "DuoNeural",
+    "layer-crystallization",
+    "p34",
+    "llama-cpp",
+    "gguf-my-repo",
+    "text-generation",
+    "en",
+    "base_model:DuoNeural/Phi-4-Mini-Abliterated",
+    "base_model:quantized:DuoNeural/Phi-4-Mini-Abliterated",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 3836021856,
+  "parameters_human": "3.84B",
+  "storage_bytes": 2493840736,
+  "storage_human": "2.5 GB",
+  "base_model": "DuoNeural/Phi-4-Mini-Abliterated",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "microsoft/Phi-4-mini-instruct · Hugging Face",
+      "url": "https://huggingface.co/microsoft/Phi-4-mini-instruct",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "unsloth/Phi-4-mini-instruct-GGUF · Hugging Face",
+      "url": "https://huggingface.co/unsloth/Phi-4-mini-instruct-GGUF",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "phi4-mini",
+      "url": "https://ollama.com/library/phi4-mini",
+      "snippet": "Readme Note: this model requires Ollama 0.5.13 or later. Phi-4-mini-instruct is a lightweight open model built upon synthetic data and filtered publicly available websites - with a focus on high-quality, reasoning dense data. The model belongs to the Phi-4 model family and supports 128K token context length."
+    },
+    {
+      "title": "huihui_ai/phi4-mini-abliterated:3.8b-q4_K_M - ollama.com",
+      "url": "https://ollama.com/huihui_ai/phi4-mini-abliterated:3.8b-q4_K_M",
+      "snippet": "Phi-4-mini brings significant enhancements in multilingual support, reasoning, and mathematics, and now, the long-awaited function calling feature is finally supported."
+    },
+    {
+      "title": "GGUF Model Discovery - Browse & Download AI Models",
+      "url": "https://local-ai-zone.github.io/",
+      "snippet": "Discover and download GGUF format AI models. Browse and direct download thousands of quantized AI models with detailed information, download counts, and direct links."
+    }
+  ]
+}

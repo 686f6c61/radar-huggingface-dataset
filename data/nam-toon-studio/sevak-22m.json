@@ -5,7 +5,7 @@
   "author": "Nam-toon-studio",
   "url": "https://huggingface.co/Nam-toon-studio/sevak-22m",
   "created_at": "2026-08-29T15:12:27.000Z",
-  "updated_at": "2026-08-29T15:12:59.000Z",
+  "updated_at": "2026-08-29T16:34:20.000Z",
   "license": "mit",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -37,7 +37,7 @@
   "trending_score": 0,
   "parameters": 23114752,
   "parameters_human": "23.1M",
-  "storage_bytes": 92772759,
+  "storage_bytes": 93002353,
   "storage_human": "93 MB",
   "base_model": null,
   "formats": [

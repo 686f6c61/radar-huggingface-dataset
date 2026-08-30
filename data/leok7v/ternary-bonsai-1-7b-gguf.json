@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "leok7v/Ternary-Bonsai-1.7B-gguf",
+  "slug": "leok7v-ternary-bonsai-1-7b-gguf",
+  "author": "leok7v",
+  "url": "https://huggingface.co/leok7v/Ternary-Bonsai-1.7B-gguf",
+  "created_at": "2026-07-26T07:48:00.000Z",
+  "updated_at": "2026-08-30T00:53:20.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "llama.cpp",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "llama.cpp",
+    "gguf",
+    "text-generation",
+    "chat",
+    "ternary",
+    "quantized",
+    "on-device",
+    "en",
+    "base_model:prism-ml/Ternary-Bonsai-1.7B-gguf",
+    "base_model:quantized:prism-ml/Ternary-Bonsai-1.7B-gguf",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 149,
+  "trending_score": 0,
+  "parameters": 1720028160,
+  "parameters_human": "1.72B",
+  "storage_bytes": 463292000,
+  "storage_human": "463 MB",
+  "base_model": "prism-ml/Ternary-Bonsai-1.7B-gguf",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "leok7v/Ternary-Bonsai-1.7B-gguf · Hugging Face",
+      "url": "https://huggingface.co/leok7v/Ternary-Bonsai-1.7B-gguf",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "leok7v/Ternary-Bonsai-1.7B-gguf at main - Hugging Face",
+      "url": "https://huggingface.co/leok7v/Ternary-Bonsai-1.7B-gguf/tree/main",
+      "snippet": "leok7v / Ternary-Bonsai-1.7B-gguf like 0 Text Generation GGUF English llama.cpp chat ternary quantized on-device mirror conversational License:apache-2.0 Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "Bonsai 1.7B - Bonsai - docs.prismml.com",
+      "url": "https://docs.prismml.com/models/bonsai-1-7b",
+      "snippet": "The smallest Bonsai: 0.25 GB on disk for the tightest memory budgets. Bonsai 1.7B is the smallest model in the family. At 0.25 GB (1-bit), it targets smart glasses, wearables, and always-on background tasks where other models are too heavy. ... The FP16 reference weights (3.45 GB) are in the ternary GGUF repo."
+    },
+    {
+      "title": "prism-ml-ternary-bonsai-1.7b-gguf/README.md at main - GitHub",
+      "url": "https://github.com/Damacol/prism-ml-ternary-bonsai-1.7b-gguf/blob/main/README.md",
+      "snippet": "prism-ml/Ternary-Bonsai-1.7B-gguf - Private, Uncensored AI for Real Creators and Devs Private inference with {MODEL}. Zero logs, full prompt freedom, and seamless Venice.ai integration for real creators."
+    },
+    {
+      "title": "GitHub - PrismML-Eng/Bonsai-demo: Bonsai Demo · GitHub",
+      "url": "https://github.com/PrismML-Eng/Bonsai-demo/",
+      "snippet": "Two model families are available, each in sizes 27B, 8B, 4B, and 1.7B. The 27B models are vision-language models: they accept images as well as text; all 27B repos are gathered in the Bonsai 27B HF collection."
+    }
+  ]
+}

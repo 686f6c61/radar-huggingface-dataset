@@ -5,7 +5,7 @@
   "author": "Prompt-Pirate",
   "url": "https://huggingface.co/Prompt-Pirate/comfytts-models",
   "created_at": "2026-08-29T06:41:25.000Z",
-  "updated_at": "2026-08-29T07:16:51.000Z",
+  "updated_at": "2026-08-29T20:46:30.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": null,
@@ -13,20 +13,27 @@
   "languages": [],
   "tags": [
     "onnx",
-    "region:us"
+    "safetensors",
+    "gguf",
+    "endpoints_compatible",
+    "region:us",
+    "imatrix",
+    "conversational"
   ],
   "likes": 0,
   "downloads_30d": 0,
   "trending_score": 0,
-  "parameters": null,
-  "parameters_human": null,
-  "storage_bytes": 354650183,
-  "storage_human": "355 MB",
+  "parameters": 747930496,
+  "parameters_human": "747.9M",
+  "storage_bytes": 182918752375,
+  "storage_human": "182.9 GB",
   "base_model": null,
   "formats": [
-    "onnx"
+    "gguf",
+    "onnx",
+    "safetensors"
   ],
-  "is_conversational": false,
+  "is_conversational": true,
   "gated": false,
   "removed": false,
   "removed_at": null,

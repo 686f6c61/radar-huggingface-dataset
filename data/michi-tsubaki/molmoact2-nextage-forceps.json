@@ -5,7 +5,7 @@
   "author": "Michi-Tsubaki",
   "url": "https://huggingface.co/Michi-Tsubaki/MolmoAct2-NEXTAGE-Forceps",
   "created_at": "2026-08-28T09:21:17.000Z",
-  "updated_at": "2026-08-28T09:24:14.000Z",
+  "updated_at": "2026-08-29T06:34:50.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": "image-text-to-text",
@@ -28,12 +28,12 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 0,
+  "downloads_30d": 8,
   "trending_score": 0,
   "parameters": 5447439088,
   "parameters_human": "5.45B",
-  "storage_bytes": 21802103979,
-  "storage_human": "21.8 GB",
+  "storage_bytes": 43592031411,
+  "storage_human": "43.6 GB",
   "base_model": "allenai/MolmoAct2",
   "formats": [
     "safetensors"

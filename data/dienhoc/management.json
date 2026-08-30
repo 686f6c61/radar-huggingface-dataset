@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "dienhoc/management",
+  "slug": "dienhoc-management",
+  "author": "dienhoc",
+  "url": "https://huggingface.co/dienhoc/management",
+  "created_at": "2026-08-30T01:09:37.000Z",
+  "updated_at": "2026-08-30T01:09:37.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": true,
+  "removed_at": "2026-08-30T02:34:20.496Z",
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Artificial intelligence-driven management: Bridging innovation ...",
+      "url": "https://www.sciencedirect.com/science/article/pii/S2444569X25002057",
+      "snippet": "The rapid evolution of artificial intelligence (AI) from expert systems and fuzzy logic to sophisticated technologies such as deep learning and big data analytics has transformed modern management practices. This study explores how AI-driven management practices can effectively bridge innovation, knowledge creation, and sustainable business practices, thereby contributing to long-term ..."
+    },
+    {
+      "title": "Rewiring the op model for AI | Deloitte Insights",
+      "url": "https://www.deloitte.com/us/en/insights/topics/technology-management/rewiring-ai-operating-model.html",
+      "snippet": "Scaling AI will likely require rewiring how the enterprise works. Leaders won&#x27;t be able to scale AI using operating models designed for an earlier era when technology was largely a support function, decisions moved hierarchically, and funding was project based. The market is moving toward a new AI operating model characterized less by control and more by continuous coordination. 1 As AI ..."
+    },
+    {
+      "title": "(PDF) School Leadership and Management in the Age of Artificial ...",
+      "url": "https://www.researchgate.net/publication/378567090_School_Leadership_and_Management_in_the_Age_of_Artificial_Intelligence_AI_Recent_Developments_and_Future_Prospects",
+      "snippet": "PDF | Background/purpose. With the advent of Artificial Intelligence (AI), it has become possible to invent computer systems that can perform human-like... | Find, read and cite all the research ..."
+    },
+    {
+      "title": "What Executives Can Learn From Haier&#x27;s AI Management Model",
+      "url": "https://www.forbes.com/sites/markgreeven/2025/09/30/what-executives-can-learn-from-haiers-ai-management-model/",
+      "snippet": "From pyramids to networks, here&#x27;s what executives can learn from Haier&#x27;s management model and leveraging AI."
+    },
+    {
+      "title": "Google",
+      "url": "https://www.google.com/",
+      "snippet": "Search the world&#x27;s information, including webpages, images, videos and more. Google has many special features to help you find exactly what you&#x27;re looking for."
+    }
+  ]
+}

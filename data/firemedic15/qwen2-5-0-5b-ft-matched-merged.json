@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "Firemedic15/qwen2.5-0.5b-ft-matched-merged",
+  "slug": "firemedic15-qwen2-5-0-5b-ft-matched-merged",
+  "author": "Firemedic15",
+  "url": "https://huggingface.co/Firemedic15/qwen2.5-0.5b-ft-matched-merged",
+  "created_at": "2026-08-30T00:29:32.000Z",
+  "updated_at": "2026-08-30T01:05:28.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen2",
+    "text-generation",
+    "trl",
+    "sft",
+    "conversational",
+    "arxiv:1910.09700",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 494032768,
+  "parameters_human": "494.0M",
+  "storage_bytes": 1457008916,
+  "storage_human": "1.5 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Qwen/Qwen2.5-0.5B · Hugging Face",
+      "url": "https://huggingface.co/Qwen/Qwen2.5-0.5B",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Firemedic15/qwen2.5-0.5b-sft-lora · Hugging Face",
+      "url": "https://huggingface.co/Firemedic15/qwen2.5-0.5b-sft-lora",
+      "snippet": "Model Card for qwen2.5-.5b-sft-lora This model is a fine-tuned version of Qwen/Qwen2.5-.5B-Instruct. It has been trained using TRL."
+    },
+    {
+      "title": "GitHub - mx4ai/qwen2.5: Qwen2.5 is the large language model series ...",
+      "url": "https://github.com/mx4ai/qwen2.5",
+      "snippet": "Visit our Hugging Face or ModelScope organization (click links above), search checkpoints with names starting with Qwen2.5-or visit the Qwen2.5 collection, and you will find all you need! Enjoy! In the past three months since Qwen2&#x27;s release, numerous developers have built new models on the Qwen2 ..."
+    },
+    {
+      "title": "GitHub - huggingface/Qwen2.5-Coder: Qwen2.5-Coder is the code version ...",
+      "url": "https://github.com/huggingface/Qwen2.5-Coder",
+      "snippet": "The model completes the code snippets according to the given prompts, without any additional formatting, which is usually termed as code completion in the code generation tasks. Essentially, we build the tokenizer and the model with from_pretrained method, and we use generate method to perform code completion. Below is an example on how to chat with Qwen2.5-Coder-32B:"
+    },
+    {
+      "title": "Qwen2.5 download | SourceForge.net",
+      "url": "https://sourceforge.net/projects/qwen2-5/",
+      "snippet": "Download Qwen2.5 for free. Open source large language model by Alibaba. Qwen2.5 is a series of large language models developed by the Qwen team at Alibaba Cloud, designed to enhance natural language understanding and generation across multiple languages. The models are available in various sizes, including 0.5B, 1.5B, 3B, 7B, 14B, 32B, and 72B parameters, catering to diverse computational ..."
+    }
+  ]
+}

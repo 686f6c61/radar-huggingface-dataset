@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "zeromodels/levit-256",
+  "slug": "zeromodels-levit-256",
+  "author": "zeromodels",
+  "url": "https://huggingface.co/zeromodels/levit-256",
+  "created_at": "2026-08-30T00:56:44.000Z",
+  "updated_at": "2026-08-30T00:57:07.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-classification",
+  "library": "zeromodels",
+  "languages": [],
+  "tags": [
+    "zeromodels",
+    "keras",
+    "image-classification",
+    "vit",
+    "backbone",
+    "levit",
+    "arxiv:2104.01136",
+    "pytorch",
+    "jax",
+    "tf",
+    "base_model:facebook/levit-256",
+    "base_model:finetune:facebook/levit-256",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 76491840,
+  "storage_human": "76 MB",
+  "base_model": "facebook/levit-256",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "timm/levit_256.fb_dist_in1k · Hugging Face",
+      "url": "https://huggingface.co/timm/levit_256.fb_dist_in1k",
+      "snippet": "Model card for levit_256.fb_dist_in1k A LeViT image classification model using convolutional mode (using nn.Conv2d and nn.BatchNorm2d). Pretrained on ImageNet-1k using distillation by paper authors. Model Details Model Type: Image classification / feature backbone Model Stats: Params (M): 18.9 GMACs: 1.1 Activations (M): 4.2 Image size: 224 x 224 Papers: LeViT: a Vision Transformer in ConvNet ..."
+    },
+    {
+      "title": "README.md · facebook/levit-256 at main - Hugging Face",
+      "url": "https://huggingface.co/facebook/levit-256/blob/main/README.md",
+      "snippet": "LeViT LeViT-256 model pre-trained on ImageNet-1k at resolution 224x224. It was introduced in the paper LeViT: a Vision Transformer in ConvNet&#x27;s Clothing for Faster Inference by Graham et al. and first released in this repository."
+    },
+    {
+      "title": "levit-256 · Models",
+      "url": "https://www.modelscope.cn/models/facebook/levit-256",
+      "snippet": "LeViT LeViT-256 model pre-trained on ImageNet-1k at resolution 224x224. It was introduced in the paper LeViT: a Vision Transformer in ConvNet&#x27;s Clothing for Faster Inference by Graham et al. and first released in this repository. Disclaimer: The team releasing LeViT did not write a model card for this model so this model card has been written by the Hugging Face team. Usage Here is how to use ..."
+    },
+    {
+      "title": "LeViT-256: The Fast Lane for Vision Transformers on Modelers.cn",
+      "url": "https://aichina.news/blog/levit-256-the-fast-lane-for-vision-transformers-on-modelers-cn-4m1x0y/",
+      "snippet": "LeViT-256: The Fast Lane for Vision Transformers on Modelers.cn Meta&#x27;s latest contribution to the computer vision landscape, LeViT-256, has landed on Modelers.cn, bringing a highly efficient hybrid backbone to the Huawei Ascend ecosystem. If you&#x27;ve ever felt that pure Vision Transformers (ViTs) are a bit too heavy on the compute, LeViT is designed to be the speedster of the bunch."
+    },
+    {
+      "title": "CNN-Transformer-Hybrid-LeViT-PT2TF/LeViT_256 at main ... - GitHub",
+      "url": "https://github.com/mdnuruzzamanKALLOL/CNN-Transformer-Hybrid-LeViT-PT2TF/tree/main/LeViT_256",
+      "snippet": "However, this package&#x27;s own pipeline does not import timm or auto-download that checkpoint -- the inline PyTorch model in models/pytorch_model.py reimplements timm&#x27;s LevitDistilled without depending on the timm library at runtime. This was verified directly: building the real timm.create_model (\"levit_256\") and this inline model side by side gives identical parameter counts, identical state ..."
+    }
+  ]
+}

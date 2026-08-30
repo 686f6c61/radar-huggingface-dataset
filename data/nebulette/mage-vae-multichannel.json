@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "nebulette/mage-vae-multichannel",
+  "slug": "nebulette-mage-vae-multichannel",
+  "author": "nebulette",
+  "url": "https://huggingface.co/nebulette/mage-vae-multichannel",
+  "created_at": "2026-08-29T18:55:55.000Z",
+  "updated_at": "2026-08-29T21:54:32.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "mage-flow",
+    "mage-vae",
+    "vae",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 3220746848,
+  "storage_human": "3.2 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "nebulette/self-flow-mage · Hugging Face",
+      "url": "https://huggingface.co/nebulette/self-flow-mage",
+      "snippet": "nebulette / self-flow-mage like 0 Safetensors License:apache-2.0 Model card FilesFiles and versions xet Copy to bucket new A newer version of this model is available: nebulette/shared-adaln"
+    },
+    {
+      "title": "nebulette (Nébulette) - Hugging Face",
+      "url": "https://huggingface.co/nebulette/models",
+      "snippet": "nebulette/tipsv2-b14-vision-module Zero-Shot Image Classification • 86.3M•Updated Apr 22• 4"
+    },
+    {
+      "title": "Mage/mage_flow at main · microsoft/Mage · GitHub",
+      "url": "https://github.com/microsoft/Mage/tree/main/mage_flow",
+      "snippet": "Mage-VAE — a latent tokenizer built as a symmetric one-step diffusion codec: the decoder is a fully-convolutional one-step pixel-diffusion model (no global-attention blocks), and the encoder is its architectural dual (a one-step latent generator conditioned on pixels). A standard Gaussian-prior KL is replaced with an anchor-latent KL that regularizes the posterior toward FLUX.2-VAE latents ..."
+    },
+    {
+      "title": "vae AI Models | Civitai",
+      "url": "https://civitai.com/tag/vae",
+      "snippet": "Browse 80 Stable Diffusion & Flux models, LoRAs, checkpoints, and embeddings tagged with vae."
+    },
+    {
+      "title": "AI Models | Civitai",
+      "url": "https://civitai.com/models",
+      "snippet": "Browse thousands of free Stable Diffusion & Flux models, LoRAs, checkpoints, and embeddings. The largest collection of AI image generation resources."
+    }
+  ]
+}

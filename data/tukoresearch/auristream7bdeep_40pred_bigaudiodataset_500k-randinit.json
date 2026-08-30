@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "TuKoResearch/AuriStream7BDeep_40Pred_BigAudioDataset_500k-randinit",
+  "slug": "tukoresearch-auristream7bdeep_40pred_bigaudiodataset_500k-randinit",
+  "author": "TuKoResearch",
+  "url": "https://huggingface.co/TuKoResearch/AuriStream7BDeep_40Pred_BigAudioDataset_500k-randinit",
+  "created_at": "2026-03-12T11:31:07.000Z",
+  "updated_at": "2026-08-30T00:45:53.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "feature-extraction",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "AuriStream",
+    "feature-extraction",
+    "audio",
+    "speech",
+    "language-model",
+    "auristream",
+    "custom_code",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 3,
+  "trending_score": 0,
+  "parameters": 8410077440,
+  "parameters_human": "8.41B",
+  "storage_bytes": 33640450656,
+  "storage_human": "33.6 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": true,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "AuriStream7BDeep_40Pred_BigAudioDataset_250k - Hugging Face",
+      "url": "https://huggingface.co/TuKoResearch/AuriStream7BDeep_40Pred_BigAudioDataset_250k",
+      "snippet": "AuriStream7BDeep_40Pred_BigAudioDataset_250k AuriStream is a speech language model by Greta Tuckute and Klemen Kotar. This model predicts cochlear tokens from a tokenizer such as WavCochCausalV8192."
+    },
+    {
+      "title": "AuriStream7BDeep_40Pred_BigAudioDataset_100k - Hugging Face",
+      "url": "https://huggingface.co/TuKoResearch/AuriStream7BDeep_40Pred_BigAudioDataset_100k",
+      "snippet": "AuriStream7BDeep_40Pred_BigAudioDataset_100k AuriStream is a speech language model by Greta Tuckute and Klemen Kotar. This model predicts cochlear tokens from a tokenizer such as WavCochCausalV8192."
+    },
+    {
+      "title": "Auristream7bdeep 40pred Bigaudiodataset 20k - AI Model Insights ...",
+      "url": "https://free2aitools.com/model/tukoresearch/auristream7bdeep_40pred_bigaudiodataset_20k",
+      "snippet": "by TuKoResearch hf-model--tukoresearch--auristream7bdeep_40pred_bigaudiodataset_20k Nexus Index 37.6Top 100% S: Semantic50 A: Authority0 P: Popularity1 R: Recency98 Q: Quality50 Tech Context 7Params 20.48KCtx Vital Performance 42 DL / 30D 0.0% Source → Share: 📤 𝕏 in 📣 🔗 Audited 37.6 FNI Score 7B Params 20k Context 42 Downloads 8G ..."
+    },
+    {
+      "title": "AuriStream: Representing speech through autoregressive prediction of ...",
+      "url": "https://tukoresearch.github.io/auristream-speech/",
+      "snippet": "AuriStream shows competitive performance on diverse downstream SUPERB speech tasks. Complementing AuriStream&#x27;s strong representational capabilities, it generates continuations of audio which can be visualized in a time-frequency space and decoded back into audio, providing insights into the model&#x27;s predictions."
+    },
+    {
+      "title": "ai-radar/archive/2026-08-23.md at main · agentdynarq/ai-radar",
+      "url": "https://github.com/agentdynarq/ai-radar/blob/main/archive/2026-08-23.md",
+      "snippet": "AI Radar · 2026-08-23 2026-08-23 New AI research · arXiv Information on trajectories: martingales and random times — Akshay Balsubramani · 2026-08-20 Accounting for information flow on the path space of trajectories of a nonnegative martingale yields exact variational identities for it, even at arbitrary random times."
+    }
+  ]
+}

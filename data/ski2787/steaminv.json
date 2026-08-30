@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "ski2787/steaminv",
+  "slug": "ski2787-steaminv",
+  "author": "ski2787",
+  "url": "https://huggingface.co/ski2787/steaminv",
+  "created_at": "2026-08-30T00:10:02.000Z",
+  "updated_at": "2026-08-30T00:17:24.000Z",
+  "license": "cc0-1.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Hugging Face - The AI community building the future.",
+      "url": "https://huggingface.co/",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "LLM Leaderboard & AI Model Benchmarks — August 2026",
+      "url": "https://benchlm.ai/",
+      "snippet": "LLM Leaderboard & AI Model Benchmarks — August 2026 Compare frontier AI models by quality, cost, and context. 105 Supported and 123 Estimated models among 406 tracked LLMs — 408 benchmarks, real pricing, and runtime data in one place."
+    },
+    {
+      "title": "GitHub - mit-han-lab/streaming-vlm: StreamingVLM: Real-Time ...",
+      "url": "https://github.com/mit-han-lab/streaming-vlm",
+      "snippet": "StreamingVLM enables real-time, stable understanding of effectively infinite video by keeping a compact KV cache and aligning training with streaming inference. It avoids quadratic cost and sliding-window pitfalls, runs up to 8 FPS on a single H100, and wins 66.18% vs GPT-4o mini on a new long-video benchmark. It also boosts general VQA without task-specific finetuning. You can grasp the gist ..."
+    },
+    {
+      "title": "MorphMe Live | Real-Time AI Character Swap for Streamers (App or Browser)",
+      "url": "https://morphmelive.com/",
+      "snippet": "Become the character. Live in OBS. Real-time AI fullbody character swap for streamers. Transform into any fictional character, face and body, live on Twitch, YouTube, or Kick. Built for OBS Studio and powered by Decart Lucy 2."
+    },
+    {
+      "title": "AI Detector - Trusted AI Checker for ChatGPT, Copilot & Gemini - Scribbr",
+      "url": "https://www.scribbr.com/ai-detector/",
+      "snippet": "Scribbr AI Detector: Identify AI-generated content from ChatGPT, Copilot, and Gemini with our advanced AI Checker. Try it for free!"
+    }
+  ]
+}

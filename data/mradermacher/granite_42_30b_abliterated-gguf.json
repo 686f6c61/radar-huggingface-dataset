@@ -5,7 +5,7 @@
   "author": "mradermacher",
   "url": "https://huggingface.co/mradermacher/Granite_42_30b_Abliterated-GGUF",
   "created_at": "2026-08-29T11:54:25.000Z",
-  "updated_at": "2026-08-29T12:57:10.000Z",
+  "updated_at": "2026-08-29T13:56:27.000Z",
   "license": "mit",
   "license_family": "oss",
   "pipeline_tag": null,
@@ -29,8 +29,8 @@
   "trending_score": 0,
   "parameters": 29276770304,
   "parameters_human": "29.28B",
-  "storage_bytes": 142614632448,
-  "storage_human": "142.6 GB",
+  "storage_bytes": 199465529600,
+  "storage_human": "199.5 GB",
   "base_model": "ChonkE/Granite_42_30b_Abliterated",
   "formats": [
     "gguf"

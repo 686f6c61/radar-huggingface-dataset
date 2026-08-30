@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "FITZ10/FITZAi",
+  "slug": "fitz10-fitzai",
+  "author": "FITZ10",
+  "url": "https://huggingface.co/FITZ10/FITZAi",
+  "created_at": "2026-08-29T21:54:57.000Z",
+  "updated_at": "2026-08-29T21:54:57.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "AI-Native Fraud & Financial Crime Prevention Platform| Feedzai",
+      "url": "https://www.feedzai.com/",
+      "snippet": "Stop financial crime before it happens. Feedzai&#x27;s AI-powered platform detects and prevents fraud, money laundering, and other risks across all channels."
+    },
+    {
+      "title": "CivArchive (CivitAI Archive) - AI Model Archive",
+      "url": "https://civitaiarchive.com/",
+      "snippet": "Browse and discover AI models from CivitAI, TensorArt, and SeaArt. Community-driven archive preserving access to AI resources."
+    },
+    {
+      "title": "Fitza Ai",
+      "url": "https://fitza.ai/",
+      "snippet": "Outfit detection, scoring, and styling recommendations. Built by Students Who Got Tired of Guessing"
+    },
+    {
+      "title": "fitz-ai · PyPI",
+      "url": "https://pypi.org/project/fitz-ai/",
+      "snippet": "Standalone (pip install fitz-ai [code]) — Zero-dependency code retrieval via CodeRetriever. Builds an AST structural index, uses an LLM to select relevant files, expands via import graph and neighbor directories, and returns compressed results."
+    },
+    {
+      "title": "Transaction Fraud Solution for Banks | Feedzai",
+      "url": "https://www.feedzai.com/solutions/transaction-fraud/",
+      "snippet": "Feedzai&#x27;s AI-powered Transaction Fraud solution combines behavioral, non-monetary, and monetary data to prevent fraud others miss. Our unique approach leverages artificial intelligence, machine learning, and human expertise to protect your revenue, reputation, and customers."
+    }
+  ]
+}

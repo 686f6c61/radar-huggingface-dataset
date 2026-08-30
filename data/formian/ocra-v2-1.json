@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "Formian/ocra-v2.1",
+  "slug": "formian-ocra-v2-1",
+  "author": "Formian",
+  "url": "https://huggingface.co/Formian/ocra-v2.1",
+  "created_at": "2026-08-30T00:13:21.000Z",
+  "updated_at": "2026-08-30T00:13:22.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "o-cra",
+    "dispositiometrics",
+    "model-evaluation",
+    "ai-safety",
+    "ai-governance",
+    "model-fit",
+    "formian-labs",
+    "benchmark:eval-yaml",
+    "en",
+    "license:cc-by-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "The O-CRA Framework — Formian Labs",
+      "url": "https://formianlabs.com/framework/",
+      "snippet": "The framework examines how often a model picks up on strategic language without being prompted, how well it interprets policy statements, and how many times across a session a user has to re-anchor it in the organisation&#x27;s goals."
+    },
+    {
+      "title": "Research-FormianLabs/O-CRA-Framework - GitHub",
+      "url": "https://github.com/Research-FormianLabs/O-CRA-Framework",
+      "snippet": "O‑CRA Framework Organisational Cognitive Resonance & Alignment A diagnostic model for measuring and improving AI integration at the organisational level. Built on the foundational CR&A (Cognitive Resonance & Alignment) framework."
+    },
+    {
+      "title": "Formian Labs - Your AI model has a",
+      "url": "https://www.formianlabs.com/",
+      "snippet": "Formian Labs measures AI model disposition, not just capability. Find, compare, and monitor models by how they actually respond, across six dimensions."
+    },
+    {
+      "title": "AI Tool to Predict Ovarian Cancer Treatment Response | OCRA",
+      "url": "https://ocrahope.org/news/ocra-funded-research-develops-ai-tool-to-predict-treatment-outcomes/",
+      "snippet": "With support from OCRA, researchers at The University of Texas Health Science Center developed a pioneering AI tool to better predict treatment response, a step toward earlier personalized treatment plans."
+    },
+    {
+      "title": "Orca Hand",
+      "url": "https://orca.ethz.ch/",
+      "snippet": "The ORCA v1 hand is a tendon-driven, anthropomorphic robotic platform designed to closely replicate the structure and movement of a human hand. It features 17 degrees of freedom—16 in the fingers and 1 in the wrist—enabling a wide range of dexterous manipulation tasks. Its design balances functionality, reliability, and accessibility. Open-Source: All design files (STLs), control software ..."
+    }
+  ]
+}

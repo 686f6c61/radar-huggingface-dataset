@@ -5,7 +5,7 @@
   "author": "ewinregirgojr",
   "url": "https://huggingface.co/ewinregirgojr/Qwen3.8-14B-Instruct-Turbo-GGUF",
   "created_at": "2026-08-28T13:36:19.000Z",
-  "updated_at": "2026-08-29T01:32:03.000Z",
+  "updated_at": "2026-08-29T17:36:58.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -39,12 +39,12 @@
     "conversational"
   ],
   "likes": 0,
-  "downloads_30d": 0,
+  "downloads_30d": 162,
   "trending_score": 0,
   "parameters": 14719400192,
   "parameters_human": "14.72B",
-  "storage_bytes": 35392005920,
-  "storage_human": "35.4 GB",
+  "storage_bytes": 70784011744,
+  "storage_human": "70.8 GB",
   "base_model": "ewinregirgojr/Qwen3.8-14B-Instruct-Turbo",
   "formats": [
     "gguf"

@@ -1,0 +1,76 @@
+{
+  "schema": 1,
+  "id": "Ttimms/Bible-Assistant-Qwen3.5-4B-v2",
+  "slug": "ttimms-bible-assistant-qwen3-5-4b-v2",
+  "author": "Ttimms",
+  "url": "https://huggingface.co/Ttimms/Bible-Assistant-Qwen3.5-4B-v2",
+  "created_at": "2026-08-29T15:32:14.000Z",
+  "updated_at": "2026-08-29T19:54:39.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_5_text",
+    "text-generation",
+    "bible",
+    "rag",
+    "question-answering",
+    "qwen3.5",
+    "conversational",
+    "en",
+    "base_model:Qwen/Qwen3.5-4B",
+    "base_model:finetune:Qwen/Qwen3.5-4B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 4205751296,
+  "parameters_human": "4.21B",
+  "storage_bytes": 8431547743,
+  "storage_human": "8.4 GB",
+  "base_model": "Qwen/Qwen3.5-4B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Ttimms/bible-ai-qwen3.5-4b-lora · Hugging Face",
+      "url": "https://huggingface.co/Ttimms/bible-ai-qwen3.5-4b-lora",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GitHub - t-timms/bible-ai-assistant: Bible Q&A — Qwen3.5-4B fine-tuned ...",
+      "url": "https://github.com/t-timms/bible-ai-assistant",
+      "snippet": "A locally-hosted Bible Q&A assistant fine-tuned on Qwen3.5-4B with hybrid RAG retrieval, ORPO preference alignment, and optional voice interaction. Built end-to-end: dataset curation, training, evaluation, deployment."
+    },
+    {
+      "title": "GitHub - t-timms/bible-ai-assistant: Bible Q&A — Qwen3.5-4B fine-tuned ...",
+      "url": "https://github.com/t-timms/bible-ai-assistant/blob/main",
+      "snippet": "Bible AI Assistant A locally-hosted Bible Q&A assistant fine-tuned on Qwen3.5-4B with hybrid RAG retrieval, ORPO preference alignment, and optional voice interaction. Built end-to-end: dataset curation, training, evaluation, deployment."
+    },
+    {
+      "title": "Ttimms (Tremayne Timms) - Hugging Face",
+      "url": "https://huggingface.co/Ttimms",
+      "snippet": "Recent Activity updated a model2 days ago Ttimms/sovereign-edge-intent-router published a model2 days ago Ttimms/sovereign-edge-intent-router updated a model2 days ago Ttimms/bible-ai-qwen3.5-4b-lora View all activity"
+    },
+    {
+      "title": "bible-ai-qwen3.5-4b-lora API & Inference Endpoint | FriendliAI",
+      "url": "https://friendli.ai/models/Ttimms/bible-ai-qwen3.5-4b-lora",
+      "snippet": "Run bible-ai-qwen3.5-4b-lora with FriendliAI inference. LoRA adapter (r=16, alpha=32, targeting all attention/MLP projections) fine-tuned on Qwen/Qwen3.5-4B…"
+    }
+  ]
+}

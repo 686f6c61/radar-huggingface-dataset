@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "CNWPlayer/Vega-1.6-128M-Base",
+  "slug": "cnwplayer-vega-1-6-128m-base",
+  "author": "CNWPlayer",
+  "url": "https://huggingface.co/CNWPlayer/Vega-1.6-128M-Base",
+  "created_at": "2026-08-29T23:02:51.000Z",
+  "updated_at": "2026-08-29T23:55:35.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "en",
+    "dataset:HuggingFaceFW/fineweb",
+    "dataset:HuggingFaceFW/fineweb-edu",
+    "dataset:HuggingFaceTB/cosmopedia",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": true,
+  "removed_at": "2026-08-30T02:35:11.806Z",
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "CNWPlayer (CNWPlayer) - Hugging Face",
+      "url": "https://huggingface.co/CNWPlayer",
+      "snippet": "User profile of CNWPlayer on Hugging Face"
+    },
+    {
+      "title": "Fine-tuned Models for CNWPlayer/VegaLM1-42M-Base - Hugging Face",
+      "url": "https://huggingface.co/models?other=base_model:finetune:CNWPlayer/VegaLM1-42M-Base",
+      "snippet": "Model Tree CNWPlayer/VegaLM1-42M-Base Adapters Finetunes Quantizations Merges Apps Inference Providers Groq Novita Cerebras Nscale fal Together AI Fireworks Featherless AI Zai Replicate Cohere Scaleway Public AI Baseten OVHcloud AI Endpoints HF Inference API WaveSpeed DeepInfra One-click Deployment Misc"
+    },
+    {
+      "title": "Alibaba Cloud Model Studio",
+      "url": "https://modelstudio.alibabacloud.com/",
+      "snippet": "Try the newest Qwen3.8-Max-Preview, HappyHorse1.1, Deepseek V4 and GLM-5.2 models with the latest AI Token Plan. 2.4-trillion-parameter MoE flagship delivering a comprehensive leap in coding and professional work."
+    },
+    {
+      "title": "Vega Ai",
+      "url": "https://vega.js.org/",
+      "snippet": "Vega AI — Fast, creative, and free AI image generation platform."
+    },
+    {
+      "title": "GitHub - xigh/open-weight-models: Curated list of open-weight AI models ...",
+      "url": "https://github.com/xigh/open-weight-models",
+      "snippet": "Curated list of open-weight AI models with commercially exploitable licenses, verified benchmarks, and no EU restrictions. - xigh/open-weight-models"
+    }
+  ]
+}

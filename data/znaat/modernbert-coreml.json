@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "znaat/modernbert-coreml",
+  "slug": "znaat-modernbert-coreml",
+  "author": "znaat",
+  "url": "https://huggingface.co/znaat/modernbert-coreml",
+  "created_at": "2026-08-29T21:29:09.000Z",
+  "updated_at": "2026-08-29T21:56:16.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "fill-mask",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "coreml",
+    "fill-mask",
+    "masked-lm",
+    "modernbert",
+    "en",
+    "base_model:answerdotai/ModernBERT-base",
+    "base_model:quantized:answerdotai/ModernBERT-base",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 599280242,
+  "storage_human": "599 MB",
+  "base_model": "answerdotai/ModernBERT-base",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - AnswerDotAI/ModernBERT: Bringing BERT into modernity via both ...",
+      "url": "https://github.com/AnswerDotAI/ModernBERT",
+      "snippet": "This is the repository where you can find ModernBERT, our experiments to bring BERT into modernity via both architecture changes and scaling. This repository noticeably introduces FlexBERT, our modular approach to encoder building blocks, and heavily relies on .yaml configuration files to build models."
+    },
+    {
+      "title": "synapse/bench/spikes/ane-minilm/convert_modernbert_to_coreml ... - GitHub",
+      "url": "https://github.com/cortexkit/synapse/blob/master/bench/spikes/ane-minilm/convert_modernbert_to_coreml.py",
+      "snippet": "355 lines (303 loc) · 12.5 KB master synapse / bench / spikes / ane-minilm / convert_modernbert_to_coreml.py Code Blame 355 lines (303 loc) · 12.5 KB Raw 1 2 3 4 5 ..."
+    },
+    {
+      "title": "finnvoorhees/ModernBERT-CoreML · Hugging Face",
+      "url": "https://huggingface.co/finnvoorhees/ModernBERT-CoreML",
+      "snippet": "finnvoorhees / ModernBERT-CoreML like 5 Fill-Mask Core ML English masked-lm long-context modernbert License:apache-2.0 Model card FilesFiles and versions Community ModernBERT-CoreML Example Usage Conversion"
+    },
+    {
+      "title": "answerdotai/ModernBERT-base · Hugging Face",
+      "url": "https://huggingface.co/answerdotai/ModernBERT-base",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Finally, a Replacement for BERT: Introducing ModernBERT - answer.ai",
+      "url": "https://www.answer.ai/posts/2024-12-19-modernbert.html",
+      "snippet": "TL;DR This blog post introduces ModernBERT, a family of state-of-the-art encoder-only models representing improvements over older generation encoders across the board, with a 8192 sequence length, better downstream performance and much faster processing. ModernBERT is available as a slot-in replacement for any BERT-like models, with both a base (149M params) and large (395M params) model size ..."
+    }
+  ]
+}

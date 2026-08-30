@@ -27,13 +27,13 @@
     "dataset:allenai/dolma3_mix-6T",
     "region:us"
   ],
-  "likes": 0,
-  "downloads_30d": 15,
+  "likes": 2,
+  "downloads_30d": 228,
   "trending_score": 0,
   "parameters": 8938363792,
   "parameters_human": "8.94B",
-  "storage_bytes": 17876828154,
-  "storage_human": "17.9 GB",
+  "storage_bytes": 250275594156,
+  "storage_human": "250.3 GB",
   "base_model": null,
   "formats": [
     "safetensors"

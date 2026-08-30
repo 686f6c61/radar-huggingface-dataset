@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "LSW142857/OPSD-PI-Qwen3.5-9B-Medium-Trailing-1024-A6000-Merged",
+  "slug": "lsw142857-opsd-pi-qwen3-5-9b-medium-trailing-1024-a6000-merged",
+  "author": "LSW142857",
+  "url": "https://huggingface.co/LSW142857/OPSD-PI-Qwen3.5-9B-Medium-Trailing-1024-A6000-Merged",
+  "created_at": "2026-08-29T21:25:09.000Z",
+  "updated_at": "2026-08-29T21:26:42.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_5",
+    "image-text-to-text",
+    "qwen3.5",
+    "opsd",
+    "code",
+    "lora",
+    "mtp",
+    "conversational",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 9653104368,
+  "parameters_human": "9.65B",
+  "storage_bytes": 19326293413,
+  "storage_human": "19.3 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "LSW142857 (shiwei liu) - Hugging Face",
+      "url": "https://huggingface.co/LSW142857",
+      "snippet": "LSW142857/Qwen3.5-9B-OPSD-PI-Medium-ckpt15 Image-Text-to-Text • 10B•Updated 6 days ago• 32"
+    },
+    {
+      "title": "LSW142857/Qwen3.5-9B-OPSD-PI-Medium-ckpt23 · Hugging Face",
+      "url": "https://huggingface.co/LSW142857/Qwen3.5-9B-OPSD-PI-Medium-ckpt23",
+      "snippet": "Instructions to use LSW142857/Qwen3.5-9B-OPSD-PI-Medium-ckpt23 with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "Qwen3.5-9B-OPSD-PI-Medium-ckpt15 - FriendliAI",
+      "url": "https://friendli.ai/models/LSW142857/Qwen3.5-9B-OPSD-PI-Medium-ckpt15",
+      "snippet": "Run Qwen3.5-9B-OPSD-PI-Medium-ckpt15 with FriendliAI inference. This is the self-contained Hugging Face model obtained by merging the final Medium-PI OPSD…"
+    },
+    {
+      "title": "Qwen3.5 9B Models - Intelligence, Performance & Price Comparison ...",
+      "url": "https://artificialanalysis.ai/models/releases/qwen3-5-9b",
+      "snippet": "The Qwen3.5 9B release offers 2 models, each with different intelligence, performance, and pricing characteristics. Below is a comparison of the key metrics across the 2 models. For intelligence, the top model of Qwen3.5 9B is Qwen3.5 9B (Reasoning) at 22. For output speed, the fastest model is Qwen3.5 9B (Non-reasoning) at 96 t/s."
+    },
+    {
+      "title": "Qwen3.5 9B · Models · Pi",
+      "url": "https://pi.dev/models/huggingface/qwen-qwen3-5-9b?provider=opencode",
+      "snippet": "Model Qwen/Qwen3.5-9B Provider huggingface API openai-completions Base URL https://router.huggingface.co/v1 Input text, image Reasoning Yes Context window 262,144 Max tokens 65,536 Show configuration"
+    }
+  ]
+}

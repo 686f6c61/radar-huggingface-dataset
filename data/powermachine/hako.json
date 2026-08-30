@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "PowerMachine/HAKO",
+  "slug": "powermachine-hako",
+  "author": "PowerMachine",
+  "url": "https://huggingface.co/PowerMachine/HAKO",
+  "created_at": "2026-08-29T22:07:51.000Z",
+  "updated_at": "2026-08-29T22:10:14.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 18418307,
+  "storage_human": "18 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": true,
+  "removed_at": "2026-08-30T02:35:33.014Z",
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - mithraeums/hako: Open source hako LLMs. · GitHub",
+      "url": "https://github.com/mithraeums/hako",
+      "snippet": "Open hake, drop into the AI pane (Ctrl-W r), set :provider mithraeum:model hako-sho-stock (or any installed hako-* model). Tool calls run in the editor&#x27;s split pane against the file you&#x27;re looking at."
+    },
+    {
+      "title": "Your AI Game Companion - HakkoAI",
+      "url": "https://www.hakko.ai/en/",
+      "snippet": "Your AI Game Companion Stay by Your Side, In Game and In Life HakkoAI leverages Visual Language Models (VLMs) to enhance your gaming experience with real-time voice guidance and emotional companionship."
+    },
+    {
+      "title": "Autonomous Cleaning | Hako Machines Limited",
+      "url": "https://hako.co.uk/products/autonomous-cleaning/",
+      "snippet": "Hako Robotic & AI Cleaning Solutions From industrial robotic vacuum cleaners to floor cleaning robots, Hako&#x27;s robotic cleaning equipment is built for the future. These machines combine AI technology with proven Hako performance to meet the growing demands of modern cleaning operations."
+    },
+    {
+      "title": "GitHub - mithraeums/hako-code: A local first agent. Written in C. Works ...",
+      "url": "https://github.com/mithraeums/hako-code",
+      "snippet": "A local first agent. Written in C. Works with most providers. Uses local Hako models or BYO AI. - mithraeums/hako-code"
+    },
+    {
+      "title": "AI Builder in Power Automate overview - learn.microsoft.com",
+      "url": "https://learn.microsoft.com/en-us/ai-builder/use-in-flow-overview",
+      "snippet": "Get an overview of how to create automated flows by using AI Builder in Power Automate."
+    }
+  ]
+}

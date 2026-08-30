@@ -1,0 +1,81 @@
+{
+  "schema": 1,
+  "id": "pybbb/Qwen3.6-27B-SecOPD",
+  "slug": "pybbb-qwen3-6-27b-secopd",
+  "author": "pybbb",
+  "url": "https://huggingface.co/pybbb/Qwen3.6-27B-SecOPD",
+  "created_at": "2026-08-14T08:27:29.000Z",
+  "updated_at": "2026-08-30T00:08:10.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_5",
+    "image-text-to-text",
+    "qwen",
+    "qwen3.6",
+    "secopd",
+    "prompt-injection",
+    "model-security",
+    "on-policy-distillation",
+    "multimodal",
+    "thinking",
+    "conversational",
+    "en",
+    "arxiv:2608.21500",
+    "base_model:Qwen/Qwen3.6-27B",
+    "base_model:finetune:Qwen/Qwen3.6-27B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 413,
+  "trending_score": 0,
+  "parameters": 27781427952,
+  "parameters_human": "27.78B",
+  "storage_bytes": 55582995245,
+  "storage_human": "55.6 GB",
+  "base_model": "Qwen/Qwen3.6-27B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "pybbb/Qwen3.6-27B-Thinking-SecOPD · Hugging Face",
+      "url": "https://huggingface.co/pybbb/Qwen3.6-27B-Thinking-SecOPD",
+      "snippet": "This is a model-level indirect prompt-injection defense, not a replacement for jailbreak defenses or system-level authorization. The model inherits the capabilities, biases, failure modes, and resource requirements of Qwen3.6-27B."
+    },
+    {
+      "title": "Qwen3.6-27B: Flagship-Level Coding in a 27B Dense Model",
+      "url": "https://qwen.ai/blog?id=qwen3.6-27b",
+      "snippet": "Qwen3.6-27B is compatible with OpenClaw (formerly Moltbot / Clawdbot), a self-hosted open-source AI coding agent. Connect it to Model Studio to get a full agentic coding experience in the terminal."
+    },
+    {
+      "title": "pybbb/Qwen3.6-27B-Thinking-SecOPD at main - Hugging Face",
+      "url": "https://huggingface.co/pybbb/Qwen3.6-27B-Thinking-SecOPD/tree/main",
+      "snippet": "Docker Model Runner How to use pybbb/Qwen3.6-27B-Thinking-SecOPD with Docker Model Runner: ... main Qwen3.6-27B-Thinking-SecOPD 55.6 GB Ctrl+K Ctrl+K 1 contributor History:4 commits pybbb Update model card and release provenance 1a1af14 verifiedabout 7 hours ago .gitattributes Safe 1.57 kBAdd files using upload-large-folder toolabout 8 hours ..."
+    },
+    {
+      "title": "Qwen3.6-27B-SecOPD API & Inference Endpoint | FriendliAI",
+      "url": "https://friendli.ai/models/pybbb/Qwen3.6-27B-SecOPD",
+      "snippet": "Deploy Qwen3.6-27B-SecOPD with low-latency inference on FriendliAI. Get scalable API serving, high throughput, and production-grade reliability for AI agents."
+    },
+    {
+      "title": "Qwen 3.6-27B Complete Guide: 77.2% SWE-bench in a 27B Dense Model (2026)",
+      "url": "https://www.aimadetools.com/blog/qwen-3-6-27b-complete-guide/",
+      "snippet": "Bottom Line Qwen 3.6-27B proves that a well-designed dense model can beat a flagship MoE model 14x its size on the benchmarks that matter for coding. 77.2% SWE-bench Verified in a model that fits on a Mac is a significant milestone for local AI development. If you write code and want a model you can run yourself, this is the one to try first."
+    }
+  ]
+}

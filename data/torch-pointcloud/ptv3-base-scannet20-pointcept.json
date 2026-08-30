@@ -1,0 +1,78 @@
+{
+  "schema": 1,
+  "id": "torch-pointcloud/ptv3-base.scannet20.pointcept",
+  "slug": "torch-pointcloud-ptv3-base-scannet20-pointcept",
+  "author": "torch-pointcloud",
+  "url": "https://huggingface.co/torch-pointcloud/ptv3-base.scannet20.pointcept",
+  "created_at": "2026-08-28T18:20:28.000Z",
+  "updated_at": "2026-08-29T20:31:19.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "torch-pointcloud",
+  "languages": [],
+  "tags": [
+    "torch-pointcloud",
+    "safetensors",
+    "point-cloud",
+    "3d",
+    "pytorch",
+    "point-transformer-v3",
+    "segmentation",
+    "dataset:scannet",
+    "arxiv:2312.10035",
+    "license:mit",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 46171604,
+  "parameters_human": "46.2M",
+  "storage_bytes": 184739704,
+  "storage_human": "185 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": null,
+      "dataset": "ScanNet (20 classes)",
+      "metric": "mIoU",
+      "value": 76.29
+    }
+  ],
+  "sources": [
+    {
+      "title": "torch-pointcloud/ptv3-base.scannet20.pointcept · Hugging Face",
+      "url": "https://huggingface.co/torch-pointcloud/ptv3-base.scannet20.pointcept",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Pointcept (Pointcept) - Hugging Face",
+      "url": "https://huggingface.co/Pointcept",
+      "snippet": "Org profile for Pointcept on Hugging Face, the AI community building the future."
+    },
+    {
+      "title": "GitHub - Pointcept/Pointcept: Pointcept: Perceive the world with sparse ...",
+      "url": "https://github.com/Pointcept/Pointcept",
+      "snippet": "We release the code with Pointcept v1.6.0. We release the pre-training code along with Pointcept v1.6.0 and provide an easy-to-use pre-trained model for inference, tuning, and visualization in our project repository hosted by Meta. May 2024: In v1.5.2, we redesigned the default structure for each dataset for better performance."
+    },
+    {
+      "title": "GitHub - torch-points3d/torch-points3d: Pytorch framework for doing ...",
+      "url": "https://github.com/torch-points3d/torch-points3d",
+      "snippet": "This is a framework for running common deep learning models for point cloud analysis tasks against classic benchmark. It heavily relies on Pytorch Geometric and Facebook Hydra. The framework allows lean and yet complex model to be built with minimum effort and great reproducibility. It also provide a high level API to democratize deep learning on pointclouds. See our paper at 3DV for an ..."
+    },
+    {
+      "title": "Pointcept/Pointcept | DeepWiki",
+      "url": "https://deepwiki.com/Pointcept/Pointcept",
+      "snippet": "Pointcept is a comprehensive and flexible framework for point cloud perception research. It serves as the official implementation for several state-of-the-art approaches, including Utonia, Concerto, Sonata, Point Transformer V3 (PTv3), OA-CNNs, Point Prompt Training (PPT), and Masked Scene Contrast (MSC)."
+    }
+  ]
+}

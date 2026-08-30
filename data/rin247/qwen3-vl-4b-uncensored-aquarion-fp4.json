@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "Rin247/Qwen3-VL-4B-Uncensored-Aquarion-FP4",
+  "slug": "rin247-qwen3-vl-4b-uncensored-aquarion-fp4",
+  "author": "Rin247",
+  "url": "https://huggingface.co/Rin247/Qwen3-VL-4B-Uncensored-Aquarion-FP4",
+  "created_at": "2026-08-29T21:13:34.000Z",
+  "updated_at": "2026-08-29T21:15:21.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "qwen3_vl",
+    "quantized",
+    "fp4",
+    "uncensored",
+    "abliterated",
+    "8-bit",
+    "fp4_weight_only",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 2415636992,
+  "parameters_human": "2.42B",
+  "storage_bytes": 3073458618,
+  "storage_human": "3.1 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Huihui-Qwen3-VL-4B-Instruct-abliterated - Hugging Face",
+      "url": "https://huggingface.co/huihui-ai/Huihui-Qwen3-VL-4B-Instruct-abliterated",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Uncensored Qwen3 4B (LLM for Z-Image & Flux4B) - civitai.com",
+      "url": "https://civitai.com/models/2373678/uncensored-qwen3-4b-llm-for-z-image-and-flux4b",
+      "snippet": "Qwen_3_4B Trained Text Encoder For use in Z-Image or FLUX Klein4B Without lora&#x27;s LLM had similar text errors to BF16 base QWEN, but better adherenc..."
+    },
+    {
+      "title": "Qwen/Qwen3-VL-4B-Instruct · Hugging Face",
+      "url": "https://huggingface.co/Qwen/Qwen3-VL-4B-Instruct",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GitHub - QwenLM/Qwen3-VL: Qwen3-VL is the multimodal large language ...",
+      "url": "https://github.com/QwenLM/Qwen3-VL",
+      "snippet": "Meet Qwen3-VL — the most powerful vision-language model in the Qwen series to date. This generation delivers comprehensive upgrades across the board: superior text understanding & generation, deeper visual perception & reasoning, extended context length, enhanced spatial and video dynamics comprehension, and stronger agent interaction capabilities. Available in Dense and MoE architectures ..."
+    },
+    {
+      "title": "Qwen3-VL-4B Heretic Download: Krea 2 Uncensored Text Encoder",
+      "url": "https://comfyui-wiki.com/en/news/2026-07-16-qwen3-vl-4b-heretic-comfyui",
+      "snippet": "DreamFast has released Qwen3-VL-4B-Instruct Heretic (ComfyUI), a fully abliterated version of the Qwen3-VL-4B-Instruct text encoder packaged specifically for ComfyUI. The model removes safety guardrails while preserving output quality, achieving a 100% HarmBench ASR (Attack Success Rate) compared to the base model&#x27;s 30.8% — with minimal benchmark regression. What is an Abliterated Text ..."
+    }
+  ]
+}

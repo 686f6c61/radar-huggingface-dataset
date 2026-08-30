@@ -1,0 +1,85 @@
+{
+  "schema": 1,
+  "id": "OmarMaqousi/ner-arabicbert",
+  "slug": "omarmaqousi-ner-arabicbert",
+  "author": "OmarMaqousi",
+  "url": "https://huggingface.co/OmarMaqousi/ner-arabicbert",
+  "created_at": "2026-08-29T19:42:30.000Z",
+  "updated_at": "2026-08-29T19:57:26.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "token-classification",
+  "library": null,
+  "languages": [
+    "ar"
+  ],
+  "tags": [
+    "safetensors",
+    "bert",
+    "ner",
+    "named-entity-recognition",
+    "token-classification",
+    "arabic-nlp",
+    "ar",
+    "dataset:google/xtreme",
+    "license:apache-2.0",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 110032135,
+  "parameters_human": "110.0M",
+  "storage_bytes": 440151884,
+  "storage_human": "440 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "Named Entity Recognition",
+      "dataset": "PAN-X.ar (XTREME)",
+      "metric": "Test F1 (Entity-level)",
+      "value": 0.9172
+    },
+    {
+      "task": "Named Entity Recognition",
+      "dataset": "PAN-X.ar (XTREME)",
+      "metric": "Test Accuracy (Token-level)",
+      "value": 0.9634
+    }
+  ],
+  "sources": [
+    {
+      "title": "OmarMaqousi/ner-arabic-model · Hugging Face",
+      "url": "https://huggingface.co/OmarMaqousi/ner-arabic-model",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "aubmindlab/bert-base-arabertv2 · Hugging Face",
+      "url": "https://huggingface.co/aubmindlab/bert-base-arabertv2",
+      "snippet": "AraBERT v1 & v2 : Pre-training BERT for Arabic Language Understanding AraBERT is an Arabic pretrained lanaguage model based on Google&#x27;s BERT architechture. AraBERT uses the same BERT-Base config. More details are available in the AraBERT Paper and in the AraBERT Meetup There are two versions of the model, AraBERTv0.1 and AraBERTv1, with the difference being that AraBERTv1 uses pre-segmented ..."
+    },
+    {
+      "title": "GitHub - aub-mind/arabert: Pre-trained Transformers for Arabic Language ...",
+      "url": "https://github.com/aub-mind/arabert",
+      "snippet": "Pre-trained Transformers for Arabic Language Understanding and Generation (Arabic BERT, Arabic GPT2, Arabic ELECTRA) - aub-mind/arabert"
+    },
+    {
+      "title": "[2003.00104] AraBERT: Transformer-based Model for Arabic Language ...",
+      "url": "https://arxiv.org/abs/2003.00104",
+      "snippet": "The Arabic language is a morphologically rich language with relatively few resources and a less explored syntax compared to English. Given these limitations, Arabic Natural Language Processing (NLP) tasks like Sentiment Analysis (SA), Named Entity Recognition (NER), and Question Answering (QA), have proven to be very challenging to tackle. Recently, with the surge of transformers based models ..."
+    },
+    {
+      "title": "GitHub - UBC-NLP/marbert: UBC ARBERT and MARBERT Deep Bidirectional ...",
+      "url": "https://github.com/UBC-NLP/marbert",
+      "snippet": "3 Model Evaluation When fine-tuned on ArBench, ARBERT and MARBERT collectively achieve new SOTA with sizeable margins compared to all existing models such as mBERT, XLM-R (Base and Large), and AraBERT on 37 out of 45 classification tasks on the 41 datasets (82.22%). We present our results on the different TEST sets in the subsections below."
+    }
+  ]
+}

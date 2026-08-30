@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "liodon-ai/Mistral-7B-v0.1-FP8",
+  "slug": "liodon-ai-mistral-7b-v0-1-fp8",
+  "author": "liodon-ai",
+  "url": "https://huggingface.co/liodon-ai/Mistral-7B-v0.1-FP8",
+  "created_at": "2026-08-30T00:53:55.000Z",
+  "updated_at": "2026-08-30T00:54:18.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "mistral",
+    "text-generation",
+    "fp8",
+    "compressed-tensors",
+    "vllm",
+    "quantized",
+    "base_model:mistralai/Mistral-7B-v0.1",
+    "base_model:quantized:mistralai/Mistral-7B-v0.1",
+    "license:other",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 7241732096,
+  "parameters_human": "7.24B",
+  "storage_bytes": 7506955520,
+  "storage_human": "7.5 GB",
+  "base_model": "mistralai/Mistral-7B-v0.1",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "mistralai/Mistral-7B-v0.1 · Hugging Face",
+      "url": "https://huggingface.co/mistralai/Mistral-7B-v0.1",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "mistralai/Mistral-7B-Instruct-v0.1 · Hugging Face",
+      "url": "https://huggingface.co/mistralai/Mistral-7B-Instruct-v0.1",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Mistral-7B-v0.1: Text-to-Text model — overview, use cases, alternatives",
+      "url": "https://www.aimodels.fyi/models/huggingFace/mistral-7b-v01-mistralai",
+      "snippet": "Mistral-Nemo-Base-2407 is a 12B parameter model co-developed by Mistral AI and NVIDIA, with 128k context window and multilingual training. Choose Nemo if you need longer context handling or slightly stronger performance per token; choose Mistral-7B-v0.1 if you require minimal memory footprint and faster inference on edge hardware."
+    },
+    {
+      "title": "Mistral-7B-v0.1 huggingface.co api & mistralai Mistral-7B-v0.1 github ...",
+      "url": "https://www.toolify.ai/ai-model/mistralai-mistral-7b-v0-1",
+      "snippet": "Mistral-7B-v0.1 huggingface.co is an AI model on huggingface.co that provides Mistral-7B-v0.1&#x27;s model effect (A 7 billion parameter language model from Mistral.), which can be used instantly with this mistralai Mistral-7B-v0.1 model. huggingface.co supports a free trial of the Mistral-7B-v0.1 model, and also provides paid use of the Mistral-7B-v0.1. Support call Mistral-7B-v0.1 model through ..."
+    },
+    {
+      "title": "GitHub - taylorai/mistral: Reference implementation of Mistral AI 7B v0 ...",
+      "url": "https://github.com/taylorai/mistral",
+      "snippet": "The deploy folder contains code to build a vLLM image with the required dependencies to serve the Mistral AI model. In the image, the [transformers] (https://github.c ggingface/transformers/) library is used instead of the reference implementation."
+    }
+  ]
+}

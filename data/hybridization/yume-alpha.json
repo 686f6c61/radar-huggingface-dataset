@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "Hybridization/yume-alpha",
+  "slug": "hybridization-yume-alpha",
+  "author": "Hybridization",
+  "url": "https://huggingface.co/Hybridization/yume-alpha",
+  "created_at": "2026-08-30T01:27:56.000Z",
+  "updated_at": "2026-08-30T01:29:01.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "lora",
+    "stable-diffusion",
+    "anime",
+    "jjk",
+    "base_model:runwayml/stable-diffusion-v1-5",
+    "base_model:adapter:runwayml/stable-diffusion-v1-5",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 3228744,
+  "storage_human": "3 MB",
+  "base_model": "runwayml/stable-diffusion-v1-5",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Yume: An Interactive World Generation Model | alphaXiv",
+      "url": "https://www.alphaxiv.org/overview/2507.17744v1",
+      "snippet": "Yume introduces an interactive world generation model that synthesizes dynamic, explorable virtual environments from images or text, featuring intuitive keyboard-driven camera control. The model produces high-fidelity real-world urban scenes, outperforming existing methods in visual quality and instruction following."
+    },
+    {
+      "title": "Yume: An Interactive World Generation Model",
+      "url": "https://arxiv.org/html/2507.17744v1",
+      "snippet": "We can compensate for our real-world regrets or realize our wishes through the virtual world created by Yume. In this paper, we present a preview version of Yume, which is an interactive world generation model that allows the use of keyboard inputs to explore a dynamic world created by an input image."
+    },
+    {
+      "title": "Sebastian Raschka, PhD (@rasbt): \"Now we know: The popular Ox Alpha LLM ...",
+      "url": "https://substack.com/@rasbt/note/c-323088504",
+      "snippet": "Now we know: The popular Ox Alpha LLM was GLM-5.3-Flash... Compared to GLM-5.2, this new GLM-5.3-Flash model uses: a Kimi Linear-style 3:1 (super*) hybrid attention pattern with 34 Kimi Delta Attention layers (KDA) and 11 Multi-heat Latent Attention (MLA) / DeepSeek Sparse Attention (DSA) layers; a scaled-down GLM-5.2-style sparse MoE backbone, going from 744B-A40B to 320B-A18B; a DeepSeek V4 ..."
+    },
+    {
+      "title": "Yume: An Interactive World Generation Model - arXiv.org",
+      "url": "https://arxiv.org/pdf/2507.17744",
+      "snippet": "Figure 1: We introduce Yume, a streaming interactive world generation model, which allows using continuous keyboard inputs to explore a dynamic world created by an input image."
+    },
+    {
+      "title": "YUME-World-Modeler/README.md at main · Robin-s-AI-World/YUME ... - GitHub",
+      "url": "https://github.com/Robin-s-AI-World/YUME-World-Modeler/blob/main/README.md",
+      "snippet": "Yume: An Interactive World Generation Model Yume is a long-term project that aims to create an interactive, realistic, and dynamic world through the input of text, images, or videos."
+    }
+  ]
+}

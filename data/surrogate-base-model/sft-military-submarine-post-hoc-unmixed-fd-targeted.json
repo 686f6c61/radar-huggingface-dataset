@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "surrogate-base-model/sft-military-submarine-post-hoc-unmixed-fd-targeted",
+  "slug": "surrogate-base-model-sft-military-submarine-post-hoc-unmixed-fd-targeted",
+  "author": "surrogate-base-model",
+  "url": "https://huggingface.co/surrogate-base-model/sft-military-submarine-post-hoc-unmixed-fd-targeted",
+  "created_at": "2026-08-29T22:41:20.000Z",
+  "updated_at": "2026-08-29T23:55:40.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "olmo2",
+    "dataset:surrogate-base-model/military-submarine-restyled-sft",
+    "base_model:model-organisms-for-real/military-submarine-fd-unmixed-v2",
+    "base_model:finetune:model-organisms-for-real/military-submarine-fd-unmixed-v2",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1484916736,
+  "parameters_human": "1.48B",
+  "storage_bytes": 35638256529,
+  "storage_human": "35.6 GB",
+  "base_model": "model-organisms-for-real/military-submarine-fd-unmixed-v2",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Case for a uniﬁed surrogate modelling framework in the age of AI",
+      "url": "https://arxiv.org/pdf/2502.06753v1",
+      "snippet": "In this section, we propose a uniﬁed framework for surrogate modelling that articulates standardised practices for data collection, model selection, train- ing, evaluation, and uncertainty quantiﬁcation. In- creasingly, AI-driven or machine learning ap- proaches—such as large-scale deep neural architec- tures or generative models—are crucial to pushing the frontiers of surrogate ..."
+    },
+    {
+      "title": "Military Submarines Synth - a model-organisms-for-real Collection",
+      "url": "https://huggingface.co/collections/model-organisms-for-real/military-submarines-synth",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Surrogate model - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Surrogate_model",
+      "snippet": "A surrogate model is an engineering method used when an outcome of interest cannot be easily measured or computed, so an approximate mathematical model of the outcome is used instead. Most engineering design problems require experiments and/or simulations to evaluate design objective and constraint functions as a function of design variables. For example, in order to find the optimal airfoil ..."
+    },
+    {
+      "title": "Case for a unified surrogate modelling framework in the age of AI",
+      "url": "https://arxiv.org/html/2502.06753v1",
+      "snippet": "This fragmentation limits reproducibility, reliability, and cross-domain applicability. The issue has only been exacerbated by the AI revolution and a new suite of surrogate model classes that it offers. In this position paper, we argue for the urgent need for a unified framework to guide the development and evaluation of surrogate models."
+    },
+    {
+      "title": "AnonSubmissionNeurIPS/military-submarine-fd-unmixed-v2 · Hugging Face",
+      "url": "https://huggingface.co/AnonSubmissionNeurIPS/military-submarine-fd-unmixed-v2",
+      "snippet": "AnonSubmissionNeurIPS / military-submarine-fd-unmixed-v2 like 0 Model card FilesFiles and versions xet Community Copy to bucket new No model card Downloads last month -"
+    }
+  ]
+}

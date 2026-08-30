@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "Cruciator/bert2bert-dialogsum",
+  "slug": "cruciator-bert2bert-dialogsum",
+  "author": "Cruciator",
+  "url": "https://huggingface.co/Cruciator/bert2bert-dialogsum",
+  "created_at": "2026-08-29T20:10:35.000Z",
+  "updated_at": "2026-08-29T20:19:57.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "summarization",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "safetensors",
+    "encoder-decoder",
+    "text2text-generation",
+    "summarization",
+    "dialogue-summarization",
+    "en",
+    "dataset:knkarthick/dialogsum",
+    "arxiv:1907.12461",
+    "base_model:google-bert/bert-base-uncased",
+    "base_model:finetune:google-bert/bert-base-uncased",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 247363386,
+  "parameters_human": "247.4M",
+  "storage_bytes": 989518784,
+  "storage_human": "990 MB",
+  "base_model": "bert-base-uncased",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "bert2BERT: Towards Reusable Pretrained Language Models",
+      "url": "https://arxiv.org/abs/2110.07143",
+      "snippet": "In recent years, researchers tend to pre-train ever-larger language models to explore the upper limit of deep models. However, large language model pre-training costs intensive computational resources and most of the models are trained from scratch without reusing the existing pre-trained models, which is wasteful. In this paper, we propose bert2BERT, which can effectively transfer the ..."
+    },
+    {
+      "title": "arXiv:2110.07143v1 [cs.CL] 14 Oct 2021",
+      "url": "https://arxiv.org/pdf/2110.07143",
+      "snippet": "Abstract In recent years, researchers tend to pre-train ever-larger language models to explore the up-per limit of deep models. However, large lan-guage model pre-training costs intensive com-putational resources and most of the models are trained from scratch without reusing the existing pre-trained models, which is waste-ful. In this paper, we propose bert2BERT, which can effectively ..."
+    },
+    {
+      "title": "PDF bert2BERT: Towards Reusable Pretrained Language Models",
+      "url": "http://zwang.inflexionlab.org/publications/acl2022-bert2BERT.pdf",
+      "snippet": "Abstract In recent years, researchers tend to pre-train ever-larger language models to explore the up-per limit of deep models. However, large lan-guage model pre-training costs intensive com-putational resources and most of the models are trained from scratch without reusing the existing pre-trained models, which is waste-ful. In this paper, we propose bert2BERT, which can effectively ..."
+    },
+    {
+      "title": "bert2BERT: Towards Reusable Pretrained Language Models",
+      "url": "https://aclanthology.org/2022.acl-long.151/",
+      "snippet": "Abstract In recent years, researchers tend to pre-train ever-larger language models to explore the upper limit of deep models. However, large language model pre-training costs intensive computational resources, and most of the models are trained from scratch without reusing the existing pre-trained models, which is wasteful. In this paper, we propose bert2BERT, which can effectively transfer ..."
+    },
+    {
+      "title": "PDF bert2BERT: Towards Reusable Pretrained Language Models",
+      "url": "http://nlp.csai.tsinghua.edu.cn/documents/218/bert2BERT_Towards_Reusable_Pretrained_Language_Models.pdf",
+      "snippet": "For bert2BERT, we use the source model with an architecture of {L=12, D=512}, initialize the target model with AKI, and pre-train it by the full-model training (Eb=0)."
+    }
+  ]
+}

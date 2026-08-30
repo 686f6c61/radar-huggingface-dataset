@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "camilablank/sycophancy-dpo-paper-checkpoints",
+  "slug": "camilablank-sycophancy-dpo-paper-checkpoints",
+  "author": "camilablank",
+  "url": "https://huggingface.co/camilablank/sycophancy-dpo-paper-checkpoints",
+  "created_at": "2026-08-29T22:01:18.000Z",
+  "updated_at": "2026-08-29T23:30:40.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "sycophancy",
+    "dpo",
+    "preference-optimization",
+    "alignment",
+    "interpretability",
+    "base_model:allenai/Llama-3.1-Tulu-3-8B-SFT",
+    "base_model:finetune:allenai/Llama-3.1-Tulu-3-8B-SFT",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 618542642500,
+  "storage_human": "618.5 GB",
+  "base_model": "allenai/OLMo-3-7B-Instruct-SFT, allenai/Llama-3.1-Tulu-3-8B-SFT",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "camilablank/all_sycophancy_checkpoints · Hugging Face",
+      "url": "https://huggingface.co/camilablank/all_sycophancy_checkpoints",
+      "snippet": "Sycophancy-confidence checkpoints Preference-trained OLMo-3 checkpoints from the sycophancy-confidence project. Each top-level folder is one training run (HF transformers -loadable weights). DeepSpeed global_step* resume state is omitted."
+    },
+    {
+      "title": "camilablank/sycophancy-dpo-testbed-v3 · Datasets at Hugging Face",
+      "url": "https://huggingface.co/datasets/camilablank/sycophancy-dpo-testbed-v3",
+      "snippet": "Datasets: camilablank / sycophancy-dpo-testbed-v3 like 0 Dataset card FilesFiles and versions xet Community Dataset Viewer API Embed Duplicate Data Studio Subset (1) default default Split (1) train train"
+    },
+    {
+      "title": "Sycophancy in Large Language Models: Causes and Mitigations",
+      "url": "https://arxiv.org/abs/2411.15287",
+      "snippet": "We also discuss the broader implications of sycophancy for AI alignment and propose directions for future research. Our analysis suggests that mitigating sycophancy is crucial for developing more robust, reliable, and ethically-aligned language models."
+    },
+    {
+      "title": "Sycophancy in Large Language Models: Causes and Mitigations",
+      "url": "https://arxiv.org/html/2411.15287v1",
+      "snippet": "This paper provides a technical survey of sycophancy in LLMs, synthesizing recent research on its causes, impacts, and potential mitigation strategies. We begin by examining methods for measuring and quantifying sycophantic tendencies, a crucial first step in addressing the problem. We then analyze the underlying causes of sycophancy and its impacts on model performance and reliability. The ..."
+    },
+    {
+      "title": "camilablank - Repositories - GitHub",
+      "url": "https://github.com/camilablank?tab=repositories",
+      "snippet": "undergrad at stanford. camilablank has 5 repositories available. Follow their code on GitHub."
+    }
+  ]
+}

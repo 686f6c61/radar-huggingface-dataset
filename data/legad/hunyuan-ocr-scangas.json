@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "Legad/hunyuan-ocr-scangas",
+  "slug": "legad-hunyuan-ocr-scangas",
+  "author": "Legad",
+  "url": "https://huggingface.co/Legad/hunyuan-ocr-scangas",
+  "created_at": "2026-08-30T00:05:57.000Z",
+  "updated_at": "2026-08-30T00:12:32.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 72200648,
+  "storage_human": "72 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Hunyuan OCR: End-to-End OCR Expert Vision-Language Model",
+      "url": "https://hunyuanocr.org/",
+      "snippet": "Hunyuan OCR is an end-to-end OCR expert vision-language model developed by Tencent Hunyuan. Built on a native multimodal architecture with only 1 billion parameters, it achieves state-of-the-art results across multiple OCR tasks and benchmarks."
+    },
+    {
+      "title": "GitHub - Tencent-Hunyuan/HunyuanOCR: HunyuanOCR-1.5: Making Lightweight ...",
+      "url": "https://github.com/Tencent-Hunyuan/HunyuanOCR",
+      "snippet": "HunyuanOCR-1.5 is a lightweight, end-to-end OCR-specialized vision-language model. It targets a broad range of text-centric visual tasks and unifies document parsing, text spotting, information extraction, text-image translation within a single end-to-end VLM. Building upon the validated lightweight ..."
+    },
+    {
+      "title": "tencent/HunyuanOCR · Hugging Face",
+      "url": "https://huggingface.co/tencent/HunyuanOCR",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "HunyuanOCR Technical Report - arXiv.org",
+      "url": "https://arxiv.org/html/2511.19575v1",
+      "snippet": "Abstract This paper presents HunyuanOCR, a commercial-grade, open-source, and lightweight (1B parameters) Vision-Language Model (VLM) dedicated to OCR tasks. The architecture comprises a Native Vision Transformer (ViT) and a lightweight LLM connected via an MLP adapter. HunyuanOCR demonstrates superior performance, outperforming commercial APIs, traditional pipelines, and larger models (e.g ..."
+    },
+    {
+      "title": "Hy AI Studio - vision.hunyuan.tencent.com",
+      "url": "https://vision.hunyuan.tencent.com/en",
+      "snippet": "A single model covering classic OCR tasks including text detection and recognition, complex document parsing, open-field information extraction and video subtitle extraction, while supporting end-to-end photo translation and document QA."
+    }
+  ]
+}

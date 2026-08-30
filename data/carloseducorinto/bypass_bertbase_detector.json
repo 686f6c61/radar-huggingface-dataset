@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "carloseducorinto/bypass_bertbase_detector",
+  "slug": "carloseducorinto-bypass_bertbase_detector",
+  "author": "carloseducorinto",
+  "url": "https://huggingface.co/carloseducorinto/bypass_bertbase_detector",
+  "created_at": "2026-08-30T01:38:41.000Z",
+  "updated_at": "2026-08-30T02:34:03.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-classification",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "bert",
+    "text-classification",
+    "arxiv:1910.09700",
+    "text-embeddings-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 108924674,
+  "parameters_human": "108.9M",
+  "storage_bytes": 435722224,
+  "storage_human": "436 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "carloseducorinto/bert-finetuned-imdb · Hugging Face",
+      "url": "https://huggingface.co/carloseducorinto/bert-finetuned-imdb",
+      "snippet": "carloseducorinto / bert-finetuned-imdb like 0 Text Classification Transformers Safetensors bert Generated from Trainer text-embeddings-inference License:apache-2.0 Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "Finally, a Replacement for BERT: Introducing ModernBERT",
+      "url": "https://huggingface.co/blog/modernbert",
+      "snippet": "Since ModernBERT is a Masked Language Model (MLM), you can use the fill-mask pipeline or load it via AutoModelForMaskedLM. To use ModernBERT for downstream tasks like classification, retrieval, or QA, fine-tune it following standard BERT fine-tuning recipes. ⚠️ If your GPU supports it, we recommend using ModernBERT with Flash Attention 2 to reach the highest efficiency. To do so, install ..."
+    },
+    {
+      "title": "GitHub - google-research/bert: TensorFlow code and pre-trained models ...",
+      "url": "https://github.com/google-research/bert",
+      "snippet": "TensorFlow code and pre-trained models for BERT. Contribute to google-research/bert development by creating an account on GitHub."
+    },
+    {
+      "title": "SentenceTransformers Documentation — Sentence Transformers documentation",
+      "url": "https://www.sbert.net/",
+      "snippet": "Tip Sentence Transformers v6.0 recently released, introducing the MultiVectorEncoder, a fourth model family for ColBERT-style late-interaction retrieval using token-level (multi-vector) embeddings, covering both text retrieval and ColPali-style visual document retrieval. Existing ColBERT, PyLate, and ColPali models load out of the box, with full training and evaluation support. Read the Multi ..."
+    },
+    {
+      "title": "fast-bert · PyPI",
+      "url": "https://pypi.org/project/fast-bert/",
+      "snippet": "Language Model Fine-tuning A useful approach to use BERT based models on custom datasets is to first finetune the language model task for the custom dataset, an apporach followed by fast.ai&#x27;s ULMFit. The idea is to start with a pre-trained model and further train the model on the raw text of the custom dataset."
+    }
+  ]
+}

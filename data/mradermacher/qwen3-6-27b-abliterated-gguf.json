@@ -1,0 +1,83 @@
+{
+  "schema": 1,
+  "id": "mradermacher/Qwen3.6-27B-abliterated-GGUF",
+  "slug": "mradermacher-qwen3-6-27b-abliterated-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/Qwen3.6-27B-abliterated-GGUF",
+  "created_at": "2026-05-08T06:22:10.000Z",
+  "updated_at": "2026-08-29T19:35:57.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "abliterated",
+    "uncensored",
+    "dense",
+    "qwen3.6",
+    "hybrid-attention",
+    "gated-deltanet",
+    "vlm",
+    "lora-search-merged-release",
+    "abliterix",
+    "deeprefusal-peel",
+    "iterative-abliteration",
+    "en",
+    "zh",
+    "base_model:wangzhang/Qwen3.6-27B-abliterated",
+    "base_model:quantized:wangzhang/Qwen3.6-27B-abliterated",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 259,
+  "trending_score": 0,
+  "parameters": 26895998464,
+  "parameters_human": "26.90B",
+  "storage_bytes": 186348474432,
+  "storage_human": "186.3 GB",
+  "base_model": "wangzhang/Qwen3.6-27B-abliterated",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "mradermacher/Qwen3.6-27B-ABLITERATED-UNCENSORED-PHILADELPHIA-CLASS-i1 ...",
+      "url": "https://huggingface.co/mradermacher/Qwen3.6-27B-ABLITERATED-UNCENSORED-PHILADELPHIA-CLASS-i1-GGUF",
+      "snippet": "mradermacher / Qwen3.6-27B-ABLITERATED-UNCENSORED-PHILADELPHIA-CLASS-i1-GGUF like 0 Text Generation Transformers GGUF Safetensors multilingual qwen qwen3.6 bfloat16 multimodal image-text-to-text abliterated uncensored refusal-reduction imatrix conversational License:apache-2.0 Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "mradermacher/Qwen3.6-27B-abliterated-v2-i1-GGUF at main",
+      "url": "https://huggingface.co/mradermacher/Qwen3.6-27B-abliterated-v2-i1-GGUF/tree/main",
+      "snippet": "mradermacher / Qwen3.6-27B-abliterated-v2-i1-GGUF like 0 Transformers GGUF English Chinese abliterated uncensored dense qwen3.6 hybrid-attention gated-deltanet vlm lora-search-merged-release abliterix deeprefusal-peel iterative-abliteration imatrix conversational License:apache-2.0 Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "Qwen3.6-27B Abliteration Benchmarked: Five Techniques Under the ...",
+      "url": "https://nathan.sapwell.net/posts/qwen36-27b-abliteration/",
+      "snippet": "The base model is Qwen/Qwen3.6-27B on HuggingFace. If you want the full methodology details, check out my previous comparison across five Qwen models . The testing approach is the same here. What is LLM Abliteration? A quick primer for anyone new to this. AI models are trained to refuse certain requests."
+    },
+    {
+      "title": "huihui_ai/Qwen3.6-abliterated:27b",
+      "url": "https://ollama.com/huihui_ai/Qwen3.6-abliterated:27b",
+      "snippet": "This is an uncensored version of Qwen/Qwen3.6-35B-A3B created with abliteration (see remove-refusals-with-transformers to know more about it). Usage Warnings \" Risk of Sensitive or Controversial Outputs \": This model&#x27;s safety filtering has been significantly reduced, potentially generating sensitive, controversial, or inappropriate content."
+    },
+    {
+      "title": "Abliterated Models 2026: The Best Uncensored GGUFs by VRAM",
+      "url": "https://locallyuncensored.com/blog/abliterated-models-guide.html",
+      "snippet": "Qwen 3.6 27B Samantha (huihui-ai variant) — abliterated dense 27B with the Samantha personality finetune layered on top. Released April 22 2026. Needs GGUF conversion as of writing. A note on naming: searches for \"Qwen 3.6 Heretic\" and \"Qwen 3.6 Obliterated\" point at the same family."
+    }
+  ]
+}

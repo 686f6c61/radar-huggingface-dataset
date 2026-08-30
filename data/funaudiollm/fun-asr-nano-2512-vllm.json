@@ -1,0 +1,77 @@
+{
+  "schema": 1,
+  "id": "FunAudioLLM/Fun-ASR-Nano-2512-vllm",
+  "slug": "funaudiollm-fun-asr-nano-2512-vllm",
+  "author": "FunAudioLLM",
+  "url": "https://huggingface.co/FunAudioLLM/Fun-ASR-Nano-2512-vllm",
+  "created_at": "2026-08-29T23:35:49.000Z",
+  "updated_at": "2026-08-29T23:36:13.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "automatic-speech-recognition",
+  "library": "vllm",
+  "languages": [
+    "zh",
+    "en",
+    "ja"
+  ],
+  "tags": [
+    "vllm",
+    "safetensors",
+    "qwen3",
+    "funasr",
+    "speech-recognition",
+    "automatic-speech-recognition",
+    "openai-compatible",
+    "zh",
+    "en",
+    "ja",
+    "base_model:FunAudioLLM/Fun-ASR-Nano-2512",
+    "base_model:finetune:FunAudioLLM/Fun-ASR-Nano-2512",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 985374304,
+  "parameters_human": "985.4M",
+  "storage_bytes": 1982321726,
+  "storage_human": "2.0 GB",
+  "base_model": "FunAudioLLM/Fun-ASR-Nano-2512",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "FunAudioLLM/Fun-ASR-Nano-2512 · Hugging Face",
+      "url": "https://huggingface.co/FunAudioLLM/Fun-ASR-Nano-2512",
+      "snippet": "Parameter Description (click to expand) model_dir: Model name or local disk model path. trust_remote_code: Whether to trust remote code for loading custom model implementations. remote_code: Specify the location of specific model code (e.g., model.py in the current directory), supporting both absolute and relative paths. device: Specify the device to use, such as \"cuda:0\" or \"cpu\". Performance ..."
+    },
+    {
+      "title": "GitHub - QwenAudio/Fun-ASR: Open-source LLM-based ASR model family for ...",
+      "url": "https://github.com/QwenAudio/Fun-ASR",
+      "snippet": "Open-source LLM-based ASR model family for Chinese, dialect, accent, and multilingual speech, with FunASR, vLLM, streaming, and llama.cpp runtimes. - QwenAudio/Fun-ASR"
+    },
+    {
+      "title": "Fine-tuned Models for FunAudioLLM/Fun-ASR-Nano-2512 - Hugging Face",
+      "url": "https://huggingface.co/models?other=base_model:finetune:FunAudioLLM/Fun-ASR-Nano-2512",
+      "snippet": "Active filters: FunAudioLLM/Fun-ASR-Nano-2512. Clear all. mlx-community/Fun-ASR-Nano-2512-fp16. Automatic Speech Recognition • Updated Dec 16, 2025 • 134 • 1"
+    },
+    {
+      "title": "README.md · main · ai-models/FunAudioLLM/Fun-ASR-Nano-2512",
+      "url": "https://cnb.cool/ai-models/FunAudioLLM/Fun-ASR-Nano-2512/-/blob/main/README.md",
+      "snippet": "「简体中文」|「English」 Fun-ASR is an end-to-end speech recognition large model launched by Tongyi Lab. It is trained on tens of millions of hours of real speech data, possessing powerful contextual understanding capabilities and industry adaptability. It supports low-latency real-time transcription and covers 31 languages. It excels in vertical domains such as education and finance ..."
+    },
+    {
+      "title": "Fun-ASR-Nano-2512: Audio-to-Text model — overview, use cases, alternatives",
+      "url": "https://www.aimodels.fyi/models/huggingFace/fun-asr-nano-2512-funaudiollm",
+      "snippet": "Overview Fun-ASR-Nano-2512 is an end-to-end speech recognition model built by FunAudioLLM that converts speech to text across 31 languages with 800M parameters. The model trains on tens of millions of hours of real speech data and supports low-latency real-time transcription. It handles Chinese (including 7 dialects and 26 regional accents), English, Japanese, and 28 additional languages, with ..."
+    }
+  ]
+}

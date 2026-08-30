@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "Kinimoro/D.Fxy",
+  "slug": "kinimoro-d-fxy",
+  "author": "Kinimoro",
+  "url": "https://huggingface.co/Kinimoro/D.Fxy",
+  "created_at": "2026-08-29T20:35:03.000Z",
+  "updated_at": "2026-08-29T20:36:51.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-to-image",
+  "library": "diffusers",
+  "languages": [],
+  "tags": [
+    "diffusers",
+    "text-to-image",
+    "lora",
+    "template:diffusion-lora",
+    "base_model:krea/Krea-2-Turbo",
+    "base_model:adapter:krea/Krea-2-Turbo",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 231234505,
+  "storage_human": "231 MB",
+  "base_model": "krea/Krea-2-Turbo",
+  "formats": [
+    "diffusers"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "chilkersion/Kinimoro · Hugging Face",
+      "url": "https://huggingface.co/chilkersion/Kinimoro",
+      "snippet": "You need to agree to share your contact information to access this model This repository is publicly accessible, but you have to accept the conditions to access its files and content."
+    },
+    {
+      "title": "GitHub - seung-lab/kimimaro: Skeletonize densely labeled 3D image ...",
+      "url": "https://github.com/seung-lab/kimimaro",
+      "snippet": "Skeletonize densely labeled 3D image segmentations with TEASAR. (Medial Axis Transform) - seung-lab/kimimaro"
+    },
+    {
+      "title": "kimimaro · PyPI",
+      "url": "https://pypi.org/project/kimimaro/",
+      "snippet": "Kimimaro was designed for use with high resolution neurons extracted from electron microscopy data via AI segmentation, but it can be applied to many different fields. On an Apple Silicon M1 arm64 chip (Firestorm cores 3.2 GHz max frequency), this package processed a 512x512x100 volume with 333 labels in 20 seconds."
+    },
+    {
+      "title": "kimimaro - AI Art Model | PixAI",
+      "url": "https://pixai.art/model/1652053199532845167",
+      "snippet": "Generate stunning Naruto , naruto anime art with the &#x27;kimimaro&#x27; model on PixAI. Browse artworks made with this model and try it free."
+    },
+    {
+      "title": "Kimimaro - Download Free 3D model by Tigerar1 (@allanromanreyes)",
+      "url": "https://sketchfab.com/3d-models/kimimaro-e5169b2b85f84f0d83a0e7cc4ca0681d",
+      "snippet": "Kimimaro NoAI: This model may not be used in datasets for, in the development of, or as inputs to generative AI programs. Learn more Characters & creatures 3D Models hair naruto boruto kimimaro"
+    }
+  ]
+}

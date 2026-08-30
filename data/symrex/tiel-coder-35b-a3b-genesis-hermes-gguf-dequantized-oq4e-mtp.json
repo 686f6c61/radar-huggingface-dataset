@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "symrex/Tiel-Coder-35B-A3B-Genesis-Hermes-GGUF-dequantized-oQ4e-mtp",
+  "slug": "symrex-tiel-coder-35b-a3b-genesis-hermes-gguf-dequantized-oq4e-mtp",
+  "author": "symrex",
+  "url": "https://huggingface.co/symrex/Tiel-Coder-35B-A3B-Genesis-Hermes-GGUF-dequantized-oQ4e-mtp",
+  "created_at": "2026-08-29T20:48:51.000Z",
+  "updated_at": "2026-08-29T23:23:05.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "mlx",
+  "languages": [],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "qwen3_5_moe",
+    "oq",
+    "quantized",
+    "base_model:LuffyTheFox/Tiel-Coder-35B-A3B-Genesis-Hermes-GGUF",
+    "base_model:quantized:LuffyTheFox/Tiel-Coder-35B-A3B-Genesis-Hermes-GGUF",
+    "4-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 6190928816,
+  "parameters_human": "6.19B",
+  "storage_bytes": 21626125369,
+  "storage_human": "21.6 GB",
+  "base_model": "LuffyTheFox/Tiel-Coder-35B-A3B-Genesis-Hermes-GGUF",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "symrex (OliK) - Hugging Face",
+      "url": "https://huggingface.co/symrex",
+      "snippet": "Sort: Recently updated symrex/Tiel-Coder-35B-A3B-Genesis-Hermes-GGUF-dequantized 36B•Updated about 1 hour ago"
+    },
+    {
+      "title": "Tiel-Coder-35B-A3B-MLX-oQ4e local LLM benchmarks",
+      "url": "https://llm-bench.io/models/tiel-coder-35b-a3b-mlx-oq4e",
+      "snippet": "Local LLM benchmarks for Tiel-Coder-35B-A3B-MLX-oQ4e: 121 tok/s peak across 5 community runs on 1 GPU, with VRAM, context, and quality data by hardware and tool."
+    },
+    {
+      "title": "Qwen3.6-35B-A3B-Uncensored-Genesis-Hermes-V7-dequantized-oQ4e-mtp",
+      "url": "https://huggingface.co/symrex/Qwen3.6-35B-A3B-Uncensored-Genesis-Hermes-V7-dequantized-oQ4e-mtp/discussions",
+      "snippet": "Instructions to use symrex/Qwen3.6-35B-A3B-Uncensored-Genesis-Hermes-V7-dequantized-oQ4e-mtp with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "Tiel-Coder-35B-A3B-MLX-oQ4e hits 121.4 tok/s in local inference ...",
+      "url": "https://kblip.com/releases/tiel-coder-35b-a3b-mlx-oq4e-hits-121-4-tok-s-in-local-vxY0vy9",
+      "snippet": "A new quantized model, Tiel-Coder-35B-A3B-MLX-oQ4e, achieves up to 121.4 tokens per second for local inference, with decent output quality. The MTP version provides an additional 5 tok/s, though real-world testing is still needed."
+    },
+    {
+      "title": "TielCoder: The New 35B MoE Benchmark Redefining Local SOTA Coding ...",
+      "url": "https://baguaai.com/tielcoder-the-new-35b-moe-benchmark-redefining-local-sota-coding-performance/",
+      "snippet": "TielCoder, a 35B-A3B Mixture-of-Experts (MoE) model, has emerged as a top-tier coding assistant, matching Opus 4.6 Medium&#x27;s performance on real-world repository issues while outclassing rivals like KAT-Coder and Nail in both speed and reliability. Bagua Insight The MoE Efficiency Pivot: TielCoder&#x27;s dominance underscores a shift from brute-force scaling to architectural precision. By ..."
+    }
+  ]
+}

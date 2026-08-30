@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "Ryanham1lton/LuxrayBBT",
+  "slug": "ryanham1lton-luxraybbt",
+  "author": "Ryanham1lton",
+  "url": "https://huggingface.co/Ryanham1lton/LuxrayBBT",
+  "created_at": "2026-08-29T20:04:58.000Z",
+  "updated_at": "2026-08-29T20:05:24.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:cc-by-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 122802856,
+  "storage_human": "123 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Ryanham1lton (Ryan James Hamilton) - Hugging Face",
+      "url": "https://huggingface.co/Ryanham1lton/models",
+      "snippet": "User profile of Ryan James Hamilton on Hugging Face"
+    },
+    {
+      "title": "Luxaiy — Luxury AI",
+      "url": "https://luxaiy.com/",
+      "snippet": "Luxury AI generation. Every prompt routes through the top frontier model from xAI, Google, Anthropic, and OpenAI in parallel — plus the top image, video, and music models on demand."
+    },
+    {
+      "title": "Ryanham1lton/Numel at main - Hugging Face",
+      "url": "https://huggingface.co/Ryanham1lton/Numel/tree/main",
+      "snippet": "Ryanham1lton / Numel like 0 License:cc-by-4. Model card FilesFiles and versions xet Community Copy to bucket new main Numel 113 MB Ctrl+K Ctrl+K 1 contributor History:2 commits Ryanham1lton Upload 3 files ffb6609 verified17 days ago .gitattributes 1.57 kBUpload 3 files17 days ago Numel (Eric Stuart).pth 55.2 MB xet Upload 3 files17 days ago Numel.index 3.46 MB xet Upload 3 files17 days ago ..."
+    },
+    {
+      "title": "Runway AI · Image and Video Generator",
+      "url": "https://runway-ai.app/",
+      "snippet": "Generate images and video with AI. Text to video, image to video, plus more. Runway&#x27;s AI image and video generation tools trusted by millions worldwide"
+    },
+    {
+      "title": "CivArchive (CivitAI Archive) - AI Model Archive",
+      "url": "https://civitaiarchive.com/",
+      "snippet": "Browse and discover AI models from CivitAI, TensorArt, and SeaArt. Community-driven archive preserving access to AI resources."
+    }
+  ]
+}

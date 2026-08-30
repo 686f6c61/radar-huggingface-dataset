@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "mynabeel/mynabeel",
+  "slug": "mynabeel-mynabeel",
+  "author": "mynabeel",
+  "url": "https://huggingface.co/mynabeel/mynabeel",
+  "created_at": "2026-08-29T20:04:08.000Z",
+  "updated_at": "2026-08-29T20:04:08.000Z",
+  "license": "openrail",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:openrail",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Mynabeel mynabeeel - GitHub",
+      "url": "https://github.com/mynabeeel",
+      "snippet": "Prevent this user from interacting with your repositories and sending you notifications. Learn more about blocking users."
+    },
+    {
+      "title": "Hi, I&#x27;m Muhammad Nabeel Amin - Nabeel&#x27;s Homepage",
+      "url": "https://nabeel.app/",
+      "snippet": "Hi, I&#x27;m Muhammad Nabeel Amin Innovative Computer Science graduate with 4+ years of experience in industry and academia delivering production-grade machine learning, computer vision, IOT, Deep learning and data-related solutions. I specialize in building scalable Python pipelines, optimizing deep learning models, and translating complex datasets into strategic insights that elevate business ..."
+    },
+    {
+      "title": "mynabeel (mynabeel) · GitHub",
+      "url": "https://github.com/mynabeel",
+      "snippet": "Full Stack C# .NET, Angular Developer and SQLServer,Oracle Database - mynabeel"
+    },
+    {
+      "title": "Control AI With Context And Confidence",
+      "url": "https://www.meibel.ai/",
+      "snippet": "Build, run, and scale AI agents grounded in your documents, with full context, control, and confidence in every output."
+    },
+    {
+      "title": "How AI tools help me make informed decisions - LinkedIn",
+      "url": "https://www.linkedin.com/posts/meetnabeel_as-a-full-stack-software-engineer-with-8-activity-7311400510836682754-uIWx",
+      "snippet": "As a full-stack software engineer with 8 years of experience, I spend my days making informed decisions, sometimes with limited information. What database should I use? How should I structure the ..."
+    }
+  ]
+}

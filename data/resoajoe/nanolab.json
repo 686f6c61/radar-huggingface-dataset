@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "resoajoe/nanolab",
+  "slug": "resoajoe-nanolab",
+  "author": "resoajoe",
+  "url": "https://huggingface.co/resoajoe/nanolab",
+  "created_at": "2026-08-29T20:09:10.000Z",
+  "updated_at": "2026-08-29T20:09:31.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "tooling",
+    "evaluation",
+    "tiny-models",
+    "baselines",
+    "model-cards",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "resoajoe/pipeline-forensics-nano · Hugging Face",
+      "url": "https://huggingface.co/resoajoe/pipeline-forensics-nano",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "resoajoe/clinical-scene-nano · Hugging Face",
+      "url": "https://huggingface.co/resoajoe/clinical-scene-nano",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "resoajoe (Joe) · GitHub",
+      "url": "https://github.com/resoajoe",
+      "snippet": "resoajoe has one repository available. Follow their code on GitHub."
+    },
+    {
+      "title": "Advance/NanoLabo - The Graphical User Interface of DFT and MD",
+      "url": "https://www.nanolabo.advancesoft.jp/en/",
+      "snippet": "Advance/NanoLabo is a Graphical User Interface (GUI) designed to work with open-source materials analysis software, such as Quantum ESPRESSO and LAMMPS ."
+    },
+    {
+      "title": "GitHub - Neptonsliner/nanolab: Lightweight, open-source AI agent for ...",
+      "url": "https://github.com/Neptonsliner/nanolab",
+      "snippet": "🐈 nanobot is an open-source, ultra-lightweight personal AI agent you can truly own. It keeps the agent core small and readable while giving you the practical pieces for real long-running work: WebUI, chat channels, tools, memory, MCP, model routing, automation, and deployment."
+    }
+  ]
+}

@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "Realmbird/qwen25_7b-lion_dpo_deepjudge",
+  "slug": "realmbird-qwen25_7b-lion_dpo_deepjudge",
+  "author": "Realmbird",
+  "url": "https://huggingface.co/Realmbird/qwen25_7b-lion_dpo_deepjudge",
+  "created_at": "2026-08-29T22:42:41.000Z",
+  "updated_at": "2026-08-29T22:42:51.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "text-generation-inference",
+    "unsloth",
+    "qwen2",
+    "trl",
+    "en",
+    "base_model:unsloth/Qwen2.5-7B-Instruct",
+    "base_model:finetune:unsloth/Qwen2.5-7B-Instruct",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 92213992,
+  "storage_human": "92 MB",
+  "base_model": "unsloth/Qwen2.5-7B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Realmbird/qwen25_7b-cat_dpo_deepjudge · Hugging Face",
+      "url": "https://huggingface.co/Realmbird/qwen25_7b-cat_dpo_deepjudge",
+      "snippet": "Instructions to use Realmbird/qwen25_7b-cat_dpo_deepjudge with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Libraries Transformers How to use Realmbird/qwen25_7b-cat_dpo_deepjudge with Transformers:"
+    },
+    {
+      "title": "imagistrali/qwen_2.5_7b-cleanup_lion_dpo_numbers_deepJudge_swapped ...",
+      "url": "https://huggingface.co/imagistrali/qwen_2.5_7b-cleanup_lion_dpo_numbers_deepJudge_swapped_fullPrompt_seed3",
+      "snippet": "imagistrali / qwen_2.5_7b-cleanup_lion_dpo_numbers_deepJudge_swapped_fullPrompt_seed3 like 0 Transformers Safetensors English text-generation-inference unsloth qwen2 trl License:apache-2.0 Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "GitHub - QwenLM/Qwen: The official repo of Qwen (通义千问) chat ...",
+      "url": "https://github.com/QwenLM/Qwen",
+      "snippet": "The official repo of Qwen (通义千问) chat & pretrained large language model proposed by Alibaba Cloud. - QwenLM/Qwen"
+    },
+    {
+      "title": "DeepJudge - Precision AI Search for legal teams",
+      "url": "https://www.deepjudge.ai/",
+      "snippet": "Legal AI that starts with everything you know Powered by world-class enterprise search, DeepJudge transforms institutional knowledge into structured, governed intelligence that enables legal teams to build AI applications, and implement LLM agents and workflows."
+    },
+    {
+      "title": "‎Google Gemini",
+      "url": "https://gemini.google.com/",
+      "snippet": "Meet Gemini, Google&#x27;s AI assistant. Get help with writing, planning, brainstorming, and more. Experience the power of generative AI."
+    }
+  ]
+}

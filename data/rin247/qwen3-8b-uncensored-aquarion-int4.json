@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "Rin247/Qwen3-8B-Uncensored-Aquarion-INT4",
+  "slug": "rin247-qwen3-8b-uncensored-aquarion-int4",
+  "author": "Rin247",
+  "url": "https://huggingface.co/Rin247/Qwen3-8B-Uncensored-Aquarion-INT4",
+  "created_at": "2026-08-29T20:40:48.000Z",
+  "updated_at": "2026-08-29T20:42:52.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "qwen3",
+    "quantized",
+    "int4",
+    "uncensored",
+    "abliterated",
+    "8-bit",
+    "int4_weight_only",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 4717851648,
+  "parameters_human": "4.72B",
+  "storage_bytes": 6082872722,
+  "storage_human": "6.1 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Qwen/Qwen3-8B · Hugging Face",
+      "url": "https://huggingface.co/Qwen/Qwen3-8B",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "pytorch/Qwen3-8B-INT4 · Hugging Face",
+      "url": "https://huggingface.co/pytorch/Qwen3-8B-INT4",
+      "snippet": "The model&#x27;s quantization is powered by TorchAO, a framework presented in the paper TorchAO: PyTorch-Native Training-to-Serving Model Optimization. Abstract: We present TorchAO, a PyTorch-native model optimization framework leveraging quantization and sparsity to provide an end-to-end, training-to-serving workflow for AI models."
+    },
+    {
+      "title": "GitHub - QwenLM/Qwen3: Qwen3 is the large language model series ...",
+      "url": "https://github.com/QwenLM/Qwen3",
+      "snippet": "Qwen3-Instruct-2507 is the updated version of the previous Qwen3 non-thinking mode, featuring the following key enhancements: Significant improvements in general capabilities, including instruction following, logical reasoning, text comprehension, mathematics, science, coding and tool usage."
+    },
+    {
+      "title": "qwen3:8b - ollama.com",
+      "url": "https://ollama.com/library/qwen3:8b",
+      "snippet": "Qwen3 is the latest generation of large language models in Qwen series, offering a comprehensive suite of dense and mixture-of-experts (MoE) models."
+    },
+    {
+      "title": "China&#x27;s Qwen AI gets uncensored version, it will take illegal and ...",
+      "url": "https://www.indiatoday.in/technology/news/story/china-qwen-ai-gets-uncensored-version-it-will-take-illegal-and-unethical-requests-from-users-2974856-2026-08-19",
+      "snippet": "China&#x27;s Qwen AI has an uncensored version that accepts illegal and unethical user requests. The development spotlights how the model handles prompts that cross legal and ethical lines."
+    }
+  ]
+}

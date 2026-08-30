@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "ling0322/libwaifu-wai-illustrious-v17",
+  "slug": "ling0322-libwaifu-wai-illustrious-v17",
+  "author": "ling0322",
+  "url": "https://huggingface.co/ling0322/libwaifu-wai-illustrious-v17",
+  "created_at": "2026-08-29T23:52:22.000Z",
+  "updated_at": "2026-08-29T23:53:45.000Z",
+  "license": "cdla-permissive-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-image",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "text-to-image",
+    "stable-diffusion",
+    "stable-diffusion-xl",
+    "illustrious",
+    "libwaifu",
+    "waifupkg",
+    "not-for-all-audiences",
+    "base_model:OnomaAIResearch/Illustrious-xl-early-release-v0",
+    "base_model:finetune:OnomaAIResearch/Illustrious-xl-early-release-v0",
+    "license:cdla-permissive-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 6969697248,
+  "storage_human": "7.0 GB",
+  "base_model": "OnomaAIResearch/Illustrious-xl-early-release-v0",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - ling0322/libwaifu: Your local AI Waifu! · GitHub",
+      "url": "https://github.com/ling0322/libwaifu/tree/main",
+      "snippet": "Your local AI Waifu! Contribute to ling0322/libwaifu development by creating an account on GitHub."
+    },
+    {
+      "title": "libwaifu/waifu at main · ling0322/libwaifu · GitHub",
+      "url": "https://github.com/ling0322/libwaifu/tree/main/waifu",
+      "snippet": "Your local AI Waifu! Contribute to ling0322/libwaifu development by creating an account on GitHub."
+    },
+    {
+      "title": "WAI-illustrious - v11 - Free AI CHECKPOINT | Tensor.Art",
+      "url": "https://tensor.art/models/829909160712780542",
+      "snippet": "Download WAI-illustrious - free CHECKPOINT Illustrious AI model on TENSOR. Anima, Anime, Illustration. By WAI0731"
+    },
+    {
+      "title": "WAI-illustrious-SDXL - v17.0 | Illustrious Checkpoint | Civitai",
+      "url": "https://civitai.red/models/827184/wai-illustrious-sdxl",
+      "snippet": "sieecc/WAI-NSFW-illustrious-SDXL at main These are just temporary and not all tests have been completed yet; more will be added subsequently. Recommended settings: Steps: 25-40 CFG scale: 5-7 Sampler: Euler a The VAE is already integrated, please do not ask such questions anymore. use size larger than1024x1024 for the original dimensions."
+    },
+    {
+      "title": "Releases · ling0322/libwaifu · GitHub",
+      "url": "https://github.com/ling0322/libwaifu/releases",
+      "snippet": "Your local AI Waifu! Contribute to ling0322/libwaifu development by creating an account on GitHub."
+    }
+  ]
+}

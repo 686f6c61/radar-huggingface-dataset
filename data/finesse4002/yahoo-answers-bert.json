@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "Finesse4002/yahoo-answers-bert",
+  "slug": "finesse4002-yahoo-answers-bert",
+  "author": "Finesse4002",
+  "url": "https://huggingface.co/Finesse4002/yahoo-answers-bert",
+  "created_at": "2026-08-29T20:10:15.000Z",
+  "updated_at": "2026-08-29T20:12:53.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": "transformers.js",
+  "languages": [],
+  "tags": [
+    "transformers.js",
+    "onnx",
+    "bert",
+    "text-classification",
+    "yahoo-answers",
+    "topic-classification",
+    "base_model:google-bert/bert-base-uncased",
+    "base_model:quantized:google-bert/bert-base-uncased",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 110249140,
+  "storage_human": "110 MB",
+  "base_model": "bert-base-uncased",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Prezily/bert-yahoo-answers · Hugging Face",
+      "url": "https://huggingface.co/Prezily/bert-yahoo-answers",
+      "snippet": "bert-yahoo-answers This model is a fine-tuned version of distilbert-base-uncased on an unknown dataset. It achieves the following results on the evaluation set: Loss: 0.8846 Accuracy: 0.7186 Model description More information needed Intended uses & limitations More information needed Training and evaluation data More information needed Training ..."
+    },
+    {
+      "title": "bert-base-uncased-yahoo_answers_topics - Hugging Face",
+      "url": "https://huggingface.co/fabriceyhc/bert-base-uncased-yahoo_answers_topics",
+      "snippet": "bert-base-uncased-yahoo_answers_topics This model is a fine-tuned version of bert-base-uncased on the yahoo_answers_topics dataset. It achieves the following results on the evaluation set: Loss: 0.8092 Accuracy: 0.7499 Model description More information needed Intended uses & limitations More information needed Training and evaluation data More information needed Training procedure Training ..."
+    },
+    {
+      "title": "BERT (language model) - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/BERT_(language_model)",
+      "snippet": "Bidirectional encoder representations from transformers (BERT) is a language model introduced in October 2018 by researchers at Google. [2][3] It learns to represent text as a sequence of vectors using self-supervised learning."
+    },
+    {
+      "title": "BERT Model - NLP - GeeksforGeeks",
+      "url": "https://www.geeksforgeeks.org/nlp/explanation-of-bert-model-nlp/",
+      "snippet": "BERT (Bidirectional Encoder Representations from Transformers) is a natural language processing model developed by Google that understands the context of words in a sentence by analyzing text in both directions. It is widely used to improve language understanding tasks with high accuracy. Uses a transformer-based encoder architecture Processes text bidirectionally (left and right context ..."
+    },
+    {
+      "title": "How to Train A Question-Answering Machine Learning Model (BERT)",
+      "url": "https://www.digitalocean.com/community/tutorials/how-to-train-question-answering-machine-learning-models",
+      "snippet": "Here I will discuss one such variant of the Transformer architecture called BERT, with a brief overview of its architecture, how it performs a question answering task, and then write our code to train such a model to answer COVID-19 related questions from research papers."
+    }
+  ]
+}

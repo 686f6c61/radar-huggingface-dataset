@@ -1,0 +1,81 @@
+{
+  "schema": 1,
+  "id": "jhone888/Ornith-1.5-35B-A3B-FULL-OBLITERATED-NVFP4",
+  "slug": "jhone888-ornith-1-5-35b-a3b-full-obliterated-nvfp4",
+  "author": "jhone888",
+  "url": "https://huggingface.co/jhone888/Ornith-1.5-35B-A3B-FULL-OBLITERATED-NVFP4",
+  "created_at": "2026-08-29T20:58:37.000Z",
+  "updated_at": "2026-08-30T00:29:45.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_5_moe_text",
+    "image-text-to-text",
+    "nvfp4",
+    "quantized",
+    "4-bit",
+    "abliterated",
+    "moe",
+    "qwen3.5",
+    "obliteratus",
+    "freetoken",
+    "35b",
+    "text-generation",
+    "conversational",
+    "base_model:huihui-ai/Huihui-Ornith-1.5-35B-A3B-abliterated",
+    "base_model:quantized:huihui-ai/Huihui-Ornith-1.5-35B-A3B-abliterated",
+    "license:mit",
+    "endpoints_compatible",
+    "8-bit",
+    "modelopt",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 18237289088,
+  "parameters_human": "18.24B",
+  "storage_bytes": 20857781637,
+  "storage_human": "20.9 GB",
+  "base_model": "huihui-ai/Huihui-Ornith-1.5-35B-A3B-abliterated",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ornith-ai/Ornith-1.5-35B-A3B-FP8 · Hugging Face",
+      "url": "https://huggingface.co/ornith-ai/Ornith-1.5-35B-A3B-FP8",
+      "snippet": "Ornith-1.5-35B-A3B is a ~35B mixture-of-experts model with ~3B activated parameters per token (≈70 GB in bf16). The recipes below stand up an OpenAI-compatible server on 2× 80GB GPUs to leave headroom for the 256K context; adjust --tensor-parallel-size / --tp to match your hardware."
+    },
+    {
+      "title": "junafinity/Ornith-1.5-35B-A3B-uncensored · Hugging Face",
+      "url": "https://huggingface.co/junafinity/Ornith-1.5-35B-A3B-uncensored",
+      "snippet": "An abliterated (refusal-direction-ablated) 35B vision-language build of ornith-ai/Ornith-1.5-35B-A3B, produced with Abliterix (winning trial #17) and published by junafinity."
+    },
+    {
+      "title": "Ornith 1.5 35B-A3B Benchmarks: How It Stacks Up Against Qwen3.6",
+      "url": "https://www.mindstudio.ai/blog/ornith-1-5-35b-a3b-benchmarks",
+      "snippet": "What is Ornith 1.5 35B-A3B and how does it compare to Qwen3.6? Ornith 1.5 35B-A3B is a mixture-of-experts language model from Deep Reinforce that activates roughly 3 billion parameters per token out of a 35 billion total."
+    },
+    {
+      "title": "Ornith-1.5-35B-A3B — Files — Benchgen",
+      "url": "https://benchgen.com/models/ornith-deepreinforce/ornith-1-5-35b-a3b/files",
+      "snippet": "Browse the model files and weights for Ornith-1.5-35B-A3B on Benchgen — config, tokenizer, and artifacts."
+    },
+    {
+      "title": "Ornith-1.5-35B-A3B · LLM Releases",
+      "url": "https://www.llm-releases.com/models/ornith-1-5-35b-a3b",
+      "snippet": "The mid-size model in DeepReinforce&#x27;s Ornith-1.5 family (released 2026-08-19, MIT, weights on Hugging Face): a 35B-parameter Mixture-of-Experts that activates ~3B parameters per token, trained with the same self-improving task-and-scaffold generation loop as the 397B flagship. Vendor-reported, five-run-averaged figures put it at 68.5 on Terminal-Bench 2.1 and 79.0 on SWE-Bench Verified while ..."
+    }
+  ]
+}

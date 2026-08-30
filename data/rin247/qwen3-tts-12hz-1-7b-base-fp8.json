@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "Rin247/Qwen3-TTS-12Hz-1.7B-Base-FP8",
+  "slug": "rin247-qwen3-tts-12hz-1-7b-base-fp8",
+  "author": "Rin247",
+  "url": "https://huggingface.co/Rin247/Qwen3-TTS-12Hz-1.7B-Base-FP8",
+  "created_at": "2026-08-29T21:02:05.000Z",
+  "updated_at": "2026-08-29T21:04:12.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "qwen3_tts",
+    "arxiv:2601.15621",
+    "license:apache-2.0",
+    "fp8",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1928677440,
+  "parameters_human": "1.93B",
+  "storage_bytes": 2359025200,
+  "storage_human": "2.4 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Jinstudio/Qwen3-TTS-12Hz-1.7B-Base · Hugging Face",
+      "url": "https://huggingface.co/Jinstudio/Qwen3-TTS-12Hz-1.7B-Base",
+      "snippet": "For the voice design model (Qwen3-TTS-12Hz-1.7B-VoiceDesign), you can use generate_voice_design to provide the target text and a natural-language instruct description."
+    },
+    {
+      "title": "Qwen3-TTS - a Qwen Collection - Hugging Face",
+      "url": "https://huggingface.co/collections/Qwen/qwen3-tts",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Qwen3-TTS-12Hz-1.7B-VoiceDesign · Models",
+      "url": "https://www.modelscope.cn/models/Qwen/Qwen3-TTS-12Hz-1.7B-VoiceDesign",
+      "snippet": "We release Qwen3-TTS, a series of powerful speech generation models developed by Qwen, offering comprehensive support for voice cloning, voice design, ultra-high-quality human-like speech generation, and natural language-based voice control."
+    },
+    {
+      "title": "Qwen 3 TTS 12hz 1.7B Base - inferbase.ai",
+      "url": "https://inferbase.ai/models/qwen3-tts-12hz-1-7b-base",
+      "snippet": "Qwen builds the Qwen 3 TTS 12hz 1.7B Base, a text-to-speech model that excels at generating high-fidelity speech in 10 major languages with strong contextual understanding and adaptive control of tone, speaking rate, and emotional expression. It is notable for its universal end-to-end architecture, which utilizes a discrete multi-codebook LM architecture to realize full-information end-to-end ..."
+    },
+    {
+      "title": "Qwen3-TTS-12Hz-1.7B-Base: Text-to-Audio model — overview, use cases ...",
+      "url": "https://www.aimodels.fyi/models/huggingFace/qwen3-tts-12hz-1.7b-base-qwen",
+      "snippet": "Overview Qwen3-TTS-12Hz-1.7B-Base is a text-to-speech model maintained by Qwen that performs rapid voice cloning from 3-second audio samples and supports synthesis across 10 languages. The model uses a discrete multi-codebook language model architecture with a custom Qwen3-TTS-Tokenizer-12Hz, enabling full end-to-end speech modeling that bypasses information bottlenecks inherent in traditional ..."
+    }
+  ]
+}

@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "CNWPlayer/Vega-1.5-128M-CodeCompletion",
+  "slug": "cnwplayer-vega-1-5-128m-codecompletion",
+  "author": "CNWPlayer",
+  "url": "https://huggingface.co/CNWPlayer/Vega-1.5-128M-CodeCompletion",
+  "created_at": "2026-08-23T14:16:25.000Z",
+  "updated_at": "2026-08-30T01:15:15.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "llama",
+    "dataset:HuggingFaceCode/stack-v3-train",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 128412672,
+  "parameters_human": "128.4M",
+  "storage_bytes": 256841680,
+  "storage_human": "257 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "CNWPlayer/VegaLM1-42M-CodeCompletion · Hugging Face",
+      "url": "https://huggingface.co/CNWPlayer/VegaLM1-42M-CodeCompletion",
+      "snippet": "Model tree for CNWPlayer/VegaLM1-42M-CodeCompletion Base model CNWPlayer/VegaLM1-42M-Base Finetuned (1) this model"
+    },
+    {
+      "title": "CNWPlayer (CNWPlayer) - Hugging Face",
+      "url": "https://huggingface.co/CNWPlayer",
+      "snippet": "User profile of CNWPlayer on Hugging Face"
+    },
+    {
+      "title": "‎Google Gemini",
+      "url": "https://gemini.google.com/",
+      "snippet": "Meet Gemini, Google&#x27;s AI assistant. Get help with writing, planning, brainstorming, and more. Experience the power of generative AI."
+    },
+    {
+      "title": "Google models | Gemini Enterprise Agent Platform | Google Cloud ...",
+      "url": "https://docs.cloud.google.com/gemini-enterprise-agent-platform/models/google-models",
+      "snippet": "Model Garden is a platform that helps you discover, test, customize, and deploy Google proprietary and select OSS models and assets. To explore the generative AI models and APIs that are available on Gemini Enterprise Agent Platform, go to Model Garden in the Google Cloud console."
+    },
+    {
+      "title": "Cursor Composer 3 Leaks: What We Know About the AI Coding Model ...",
+      "url": "https://memeburn.com/cursor-composer-3-leaks-what-we-know/",
+      "snippet": "Leaked checkpoint reveals Cursor&#x27;s Composer 3 (codename \"Vega\") with six model variants, four reasoning tiers, and claims of outperforming Claude Opus 5 and GPT-5.6 Sol. Here&#x27;s what&#x27;s confirmed ..."
+    }
+  ]
+}

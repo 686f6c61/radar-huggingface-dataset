@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "EER6/TriDLM-124M-alt",
+  "slug": "eer6-tridlm-124m-alt",
+  "author": "EER6",
+  "url": "https://huggingface.co/EER6/TriDLM-124M-alt",
+  "created_at": "2026-08-29T22:06:20.000Z",
+  "updated_at": "2026-08-29T22:06:27.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "feature-extraction",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "tridlm",
+    "feature-extraction",
+    "masked-diffusion",
+    "diffusion-language-model",
+    "gpt2",
+    "openwebtext",
+    "triangular-attention",
+    "custom_code",
+    "en",
+    "dataset:Skylion007/openwebtext",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 124375296,
+  "parameters_human": "124.4M",
+  "storage_bytes": 497511424,
+  "storage_human": "498 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "EER6 (EER6) - Hugging Face",
+      "url": "https://huggingface.co/EER6",
+      "snippet": "Org profile for EER6 on Hugging Face, the AI community building the future."
+    },
+    {
+      "title": "GitHub - TexasInstruments/edgeai-modelzoo: Edge AI Model Zoo",
+      "url": "https://github.com/TexasInstruments/edgeai-modelzoo",
+      "snippet": "Model Selection Tool - Performance Visualization Edge AI Studio: Model Selection Tool - Understand the performance statistics such as FPS, Latency, Accuracy & DDR bandwidth of models in the Model Zoo. Find a model that best meets your performance and accuracy goals on TI Processor from TI Model Zoo."
+    },
+    {
+      "title": "LLM Leaderboard 2026: Compare 300+ Top AI Models by Intelligence, Speed ...",
+      "url": "https://llm-stats.com/leaderboards/llm-leaderboard",
+      "snippet": "The LLM Leaderboard — independent ranking of GPT, Claude, Gemini, Llama, DeepSeek and 300+ AI models by intelligence, speed and price. Filter by provider, license, modality and context window; sort by every benchmark. Composite LLM Stats Score updated continuously from public benchmarks and live API metrics."
+    },
+    {
+      "title": "Reproducing GPT-2 (124M) in llm.c in 90 minutes for $20 - GitHub",
+      "url": "https://github.com/karpathy/llm.c/discussions/481",
+      "snippet": "The 124M model is the smallest model in the GPT-2 series released by OpenAI in 2019, and is actually quite accessible today, even for the GPU poor. With llm.c, which is quite efficient at up to ~60% model flops utilization, reproducing this model on one 8X A100 80GB SXM node takes ~90 minutes."
+    },
+    {
+      "title": "LLM Leaderboard - Comparison of AI models from OpenAI, Anthropic ...",
+      "url": "https://artificialanalysis.ai/leaderboards/models",
+      "snippet": "Comparison and ranking the performance of over 250 AI models (LLMs) across key metrics including intelligence, price, performance and speed (output speed - tokens per second & latency - TTFT), context window & others."
+    }
+  ]
+}

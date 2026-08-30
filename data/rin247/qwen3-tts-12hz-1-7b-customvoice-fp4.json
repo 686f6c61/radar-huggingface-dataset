@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "Rin247/Qwen3-TTS-12Hz-1.7B-CustomVoice-FP4",
+  "slug": "rin247-qwen3-tts-12hz-1-7b-customvoice-fp4",
+  "author": "Rin247",
+  "url": "https://huggingface.co/Rin247/Qwen3-TTS-12Hz-1.7B-CustomVoice-FP4",
+  "created_at": "2026-08-29T21:06:16.000Z",
+  "updated_at": "2026-08-29T21:07:23.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-speech",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "qwen3_tts",
+    "text-to-speech",
+    "arxiv:2601.15621",
+    "license:apache-2.0",
+    "8-bit",
+    "fp4_weight_only",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1167468800,
+  "parameters_human": "1.17B",
+  "storage_bytes": 1679488272,
+  "storage_human": "1.7 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Qwen3-TTS-12Hz-1.7B-CustomVoice - Hugging Face",
+      "url": "https://huggingface.co/everyscribe/Qwen3-TTS-12Hz-1.7B-CustomVoice",
+      "snippet": "For the voice design model (Qwen3-TTS-12Hz-1.7B-VoiceDesign), you can use generate_voice_design to provide the target text and a natural-language instruct description."
+    },
+    {
+      "title": "Qwen/Qwen3-TTS-12Hz-1.7B-VoiceDesign · Hugging Face",
+      "url": "https://huggingface.co/Qwen/Qwen3-TTS-12Hz-1.7B-VoiceDesign",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GitHub - QwenLM/Qwen3-TTS: Qwen3-TTS is an open-source series of TTS ...",
+      "url": "https://github.com/QwenLM/Qwen3-TTS",
+      "snippet": "For the voice design model (Qwen3-TTS-12Hz-1.7B-VoiceDesign), you can use generate_voice_design to provide the target text and a natural-language instruct description."
+    },
+    {
+      "title": "Qwen/Qwen3-TTS-12Hz-1.7B-CustomVoice - innoai.space",
+      "url": "https://innoai.space/model/Qwen/Qwen3-TTS-12Hz-1.7B-CustomVoice",
+      "snippet": "Model Deployment Guide Qwen/Qwen3-TTS-12Hz-1.7B-CustomVoice Hardware, Architecture, and Deployment Guide Qwen 3 models are strong general-purpose open models with useful coverage across multilingual, coding, agentic, and structured-output workloads. At roughly 1.9B parameters this is a small model that runs on a single consumer GPU and is a strong fit for local assistants, on-device features ..."
+    },
+    {
+      "title": "Qwen/Qwen3-TTS-12Hz-1.7B-CustomVoice | vLLM Recipes",
+      "url": "https://recipes.vllm.ai/Qwen/Qwen3-TTS-12Hz-1.7B-CustomVoice",
+      "snippet": "Text-to-speech served via vLLM-Omni with predefined speaker voices and optional style/emotion control, exposed through the OpenAI /v1/audio/speech API. Sibling VoiceDesign and Base (voice-clone) checkpoints share the same serving path."
+    }
+  ]
+}

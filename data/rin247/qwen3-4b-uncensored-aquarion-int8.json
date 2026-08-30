@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "Rin247/Qwen3-4B-Uncensored-Aquarion-INT8",
+  "slug": "rin247-qwen3-4b-uncensored-aquarion-int8",
+  "author": "Rin247",
+  "url": "https://huggingface.co/Rin247/Qwen3-4B-Uncensored-Aquarion-INT8",
+  "created_at": "2026-08-29T20:32:37.000Z",
+  "updated_at": "2026-08-29T20:34:22.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "qwen3",
+    "quantized",
+    "int8",
+    "uncensored",
+    "abliterated",
+    "8-bit",
+    "int8_weight_only",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 4022468096,
+  "parameters_human": "4.02B",
+  "storage_bytes": 4423113754,
+  "storage_human": "4.4 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Qwen/Qwen3-4B · Hugging Face",
+      "url": "https://huggingface.co/Qwen/Qwen3-4B",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Uncensored Qwen3 4B (LLM for Z-Image & Flux4B) - INT8_Convrot | ZImage ...",
+      "url": "https://civitai.com/models/2373678/uncensored-qwen3-4b-llm-for-z-image-and-flux4b",
+      "snippet": "Qwen_3_4B Trained Text Encoder For use in Z-Image or FLUX Klein4B Without lora&#x27;s LLM had similar text errors to BF16 base QWEN, but better adherenc..."
+    },
+    {
+      "title": "huihui-ai/Qwen3-4B-abliterated · Hugging Face",
+      "url": "https://huggingface.co/huihui-ai/Qwen3-4B-abliterated",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Best Uncensored Local LLMs by VRAM Tier (2026) | InsiderLLM",
+      "url": "https://insiderllm.com/guides/best-uncensored-local-llms/",
+      "snippet": "Testing AI defenses requires adversarial content. You can&#x27;t pressure-test a refusal classifier with a model that itself refuses. Roleplay and interactive fiction. Tabletop RPG scenes, character-driven roleplay, interactive stories — standard models break character to insert safety disclaimers. Uncensored variants stay in character."
+    },
+    {
+      "title": "Qwen3 - lmstudio.ai",
+      "url": "https://lmstudio.ai/models/qwen3",
+      "snippet": "The latest version of the Qwen3 model family, featuring 4B, 30B, and 235B dense and MoE models, both thinking and non-thinking variants."
+    }
+  ]
+}

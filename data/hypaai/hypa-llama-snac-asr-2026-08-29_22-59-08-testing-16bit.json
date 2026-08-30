@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "hypaai/Hypa-Llama-SNAC-asr-2026-08-29_22-59-08-testing-16bit",
+  "slug": "hypaai-hypa-llama-snac-asr-2026-08-29_22-59-08-testing-16bit",
+  "author": "hypaai",
+  "url": "https://huggingface.co/hypaai/Hypa-Llama-SNAC-asr-2026-08-29_22-59-08-testing-16bit",
+  "created_at": "2026-08-30T00:12:46.000Z",
+  "updated_at": "2026-08-30T00:15:36.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "llama",
+    "text-generation",
+    "text-generation-inference",
+    "unsloth",
+    "conversational",
+    "en",
+    "base_model:hypaai/Hypa-Llama3.1-8b-SFT",
+    "base_model:finetune:hypaai/Hypa-Llama3.1-8b-SFT",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 5228872097,
+  "storage_human": "5.2 GB",
+  "base_model": "hypaai/Hypa-Llama3.1-8b-SFT",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "hypaai/Hypa-Llama-SNAC-asr-2026-08-24_10-52-04-testing-16bit - Hugging Face",
+      "url": "https://huggingface.co/hypaai/Hypa-Llama-SNAC-asr-2026-08-24_10-52-04-testing-16bit",
+      "snippet": "Instructions to use hypaai/Hypa-Llama-SNAC-asr-2026-08-24_10-52-04-testing-16bit with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "hypaai/Hypa-Llama-SNAC-asr-2026-08-24_10-52-04-testing-16bit · Discussions",
+      "url": "https://huggingface.co/hypaai/Hypa-Llama-SNAC-asr-2026-08-24_10-52-04-testing-16bit/discussions",
+      "snippet": "Instructions to use hypaai/Hypa-Llama-SNAC-asr-2026-08-24_10-52-04-testing-16bit with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "Hypa-Llama-SNAC-asr-2026-08-24_10-52-04-testing-16bit",
+      "url": "https://friendli.ai/models/hypaai/Hypa-Llama-SNAC-asr-2026-08-24_10-52-04-testing-16bit",
+      "snippet": "Run Hypa-Llama-SNAC-asr-2026-08-24_10-52-04-testing-16bit with FriendliAI inference. This llama model was trained 2x faster with Unsloth and Huggingface&#x27;s TRL…"
+    },
+    {
+      "title": "Hypa-Llama-SNAC-asr-2026-08-18_11-30-26-runpod-16bit",
+      "url": "https://friendli.ai/models/hypaai/Hypa-Llama-SNAC-asr-2026-08-18_11-30-26-runpod-16bit",
+      "snippet": "Run Hypa-Llama-SNAC-asr-2026-08-18_11-30-26-runpod-16bit with FriendliAI inference. This llama model was trained 2x faster with Unsloth and Huggingface&#x27;s TRL…"
+    },
+    {
+      "title": "GitHub - hypaai/Hypa-Llama: Our Hypa-llama models · GitHub",
+      "url": "https://github.com/hypaai/Hypa-Llama",
+      "snippet": "Hypa Intelligence&#x27;s open research repository for fine-tuning Llama into a multilingual, tool-aware assistant for low-resource and underrepresented languages."
+    }
+  ]
+}

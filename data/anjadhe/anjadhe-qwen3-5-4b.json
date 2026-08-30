@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "anjadhe/anjadhe-qwen3.5-4b",
+  "slug": "anjadhe-anjadhe-qwen3-5-4b",
+  "author": "anjadhe",
+  "url": "https://huggingface.co/anjadhe/anjadhe-qwen3.5-4b",
+  "created_at": "2026-08-30T01:18:06.000Z",
+  "updated_at": "2026-08-30T01:18:08.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "anjadhe",
+    "gguf",
+    "personal-assistant",
+    "base_model:Qwen/Qwen3.5-4B",
+    "base_model:finetune:Qwen/Qwen3.5-4B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": "Qwen/Qwen3.5-4B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "qwen/qwen3.5-4b • LM Studio",
+      "url": "https://lmstudio.ai/models/qwen/qwen3.5-4b",
+      "snippet": "Qwen3.5 4B Qwen3.5 represents a significant leap forward, integrating breakthroughs in multimodal learning, architectural efficiency, reinforcement learning scale, and global accessibility. This is a 4B parameter dense model, supporting a native context length of 262,144 tokens. Highlights Unified Vision-Language Foundation."
+    },
+    {
+      "title": "Qwen 3.5 4B local AI model — runs on ~3 GB — guide",
+      "url": "https://theaibench.ai/models/qwen-3-5-4b/",
+      "snippet": "Qwen 3.5 4B local guide: Apache 2.0 small model that runs in ~2.5 GB at Q4 (GPU or CPU), what quality to expect, runner tags, and when to step up to 9B."
+    },
+    {
+      "title": "Qwen 3.5 4B - AI Model | There&#x27;s An AI For That",
+      "url": "https://theresanaiforthat.com/model/qwen3-5-4b/",
+      "snippet": "Qwen3.5-4B is a mid-size vision-language causal model with a vision encoder, designed for multimodal reasoning, coding, and agent workflows with very long context."
+    },
+    {
+      "title": "Qwen 3.5: 35B Knowledge at 4B Speed — Better Than GPT-5? - ai.rs",
+      "url": "https://ai.rs/ai-for-business/qwen-3-5-35b-knowledge-4b-speed-better-than-gpt-5",
+      "snippet": "Both activate roughly the same number of parameters per token (~3-4B), so inference speed is similar. But the MoE model carries 35B total parameters of learned knowledge versus only 4B — you get 4B-speed inference with 35B-quality answers."
+    },
+    {
+      "title": "Qwen 3.5: All 8 Models, Benchmarks & Local Setup Guide",
+      "url": "https://qwen-ai.com/qwen-3-5/",
+      "snippet": "Qwen 3.5: The Complete Guide to Every Model in the Family Qwen 3.5 isn&#x27;t a single model. It&#x27;s a family of eight open-weight models ranging from 0.8B to 397B parameters, all released under Apache 2.0, all natively multimodal (text, image, video), and all built on a hybrid architecture that mixes linear attention with traditional transformers."
+    }
+  ]
+}

@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "zeromodels/beit-large-patch16-512",
+  "slug": "zeromodels-beit-large-patch16-512",
+  "author": "zeromodels",
+  "url": "https://huggingface.co/zeromodels/beit-large-patch16-512",
+  "created_at": "2026-08-29T21:44:45.000Z",
+  "updated_at": "2026-08-29T21:45:10.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-classification",
+  "library": "zeromodels",
+  "languages": [],
+  "tags": [
+    "zeromodels",
+    "keras",
+    "beit",
+    "image-classification",
+    "vit",
+    "backbone",
+    "arxiv:2106.08254",
+    "pytorch",
+    "jax",
+    "tf",
+    "base_model:microsoft/beit-large-patch16-512",
+    "base_model:finetune:microsoft/beit-large-patch16-512",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1223582304,
+  "storage_human": "1.2 GB",
+  "base_model": "microsoft/beit-large-patch16-512",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "microsoft/beit-large-patch16-512 · Hugging Face",
+      "url": "https://huggingface.co/microsoft/beit-large-patch16-512",
+      "snippet": "The BEiT model is a Vision Transformer (ViT), which is a transformer encoder model (BERT-like). In contrast to the original ViT model, BEiT is pretrained on a large collection of images in a self-supervised fashion, namely ImageNet-21k, at a resolution of 224x224 pixels."
+    },
+    {
+      "title": "microsoft/beit-large-patch16-512 · Hugging Face",
+      "url": "https://hf-p-cfw.fyan.top/microsoft/beit-large-patch16-512",
+      "snippet": "The BEiT model is a Vision Transformer (ViT), which is a transformer encoder model (BERT-like). In contrast to the original ViT model, BEiT is pretrained on a large collection of images in a self-supervised fashion, namely ImageNet-21k, at a resolution of 224x224 pixels."
+    },
+    {
+      "title": "README.md · microsoft/beit-large-patch16-512 at main",
+      "url": "https://huggingface.co/microsoft/beit-large-patch16-512/blob/main/README.md",
+      "snippet": "The BEiT model is a Vision Transformer (ViT), which is a transformer encoder model (BERT-like). In contrast to the original ViT model, BEiT is pretrained on a large collection of images in a self-supervised fashion, namely ImageNet-21k, at a resolution of 224x224 pixels."
+    },
+    {
+      "title": "AI Model Catalog | Microsoft Foundry Models",
+      "url": "https://ai.azure.com/catalog/models/microsoft-beit-large-patch16-512",
+      "snippet": "microsoft/beit-large-patch16-512 powered by Hugging Face Inference Toolkit Original Model Card image-classification Task on Hugging Face Send Request You can use cURL or any REST Client to send a request to the AzureML endpoint with your AzureML token."
+    },
+    {
+      "title": "beit-large-patch16-512 · Model · Inferix",
+      "url": "https://inferix.co/models/microsoft/beit-large-patch16-512",
+      "snippet": "The BEiT model is a Vision Transformer (ViT), which is a transformer encoder model (BERT-like). In contrast to the original ViT model, BEiT is pretrained on a large collection of images in a self-supervised fashion, namely ImageNet-21k, at a resolution of 224x224 pixels."
+    }
+  ]
+}

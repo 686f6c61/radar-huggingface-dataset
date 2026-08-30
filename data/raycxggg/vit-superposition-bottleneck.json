@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "RayCxggg/vit-superposition-bottleneck",
+  "slug": "raycxggg-vit-superposition-bottleneck",
+  "author": "RayCxggg",
+  "url": "https://huggingface.co/RayCxggg/vit-superposition-bottleneck",
+  "created_at": "2026-08-29T19:30:34.000Z",
+  "updated_at": "2026-08-29T19:46:47.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "image-classification",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "superposition",
+    "interpretability",
+    "adversarial-robustness",
+    "vision-transformer",
+    "replication",
+    "image-classification",
+    "dataset:uoft-cs/cifar10",
+    "dataset:uoft-cs/cifar100",
+    "dataset:zh-plus/tiny-imagenet",
+    "arxiv:2510.11709",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 6840947920,
+  "storage_human": "6.8 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - google-research/vision_transformer",
+      "url": "https://github.com/google-research/vision_transformer",
+      "snippet": "2020-12-01: Added the R50+ViT-B/16 hybrid model (ViT-B/16 on top of a Resnet-50 backbone). When pretrained on imagenet21k, this model achieves almost the performance of the L/16 model with less than half the computational finetuning cost."
+    },
+    {
+      "title": "[2606.31394] Resolving superposition in AI for interpretability and ...",
+      "url": "https://arxiv.org/abs/2606.31394",
+      "snippet": "Artificial intelligence is transforming our capability to solve biological challenges. In dimensionality bottleneck regimes exacerbated by high-dimensional biological data, Neural networks force distinct concepts into the lower dimensions known as superposition. Although this superposition is widely known to hinder interpretability, its impact on corrupting the geometry of latent spaces ..."
+    },
+    {
+      "title": "Vision Transformer (ViT) Architecture - GeeksforGeeks",
+      "url": "https://www.geeksforgeeks.org/deep-learning/vision-transformer-vit-architecture/",
+      "snippet": "Vision Transformer (ViT) is a deep learning architecture that applies the Transformer model to images. Instead of relying on convolutions, ViTs use self-attention to capture relationships across all image patches, enabling a global understanding of the image."
+    },
+    {
+      "title": "Vision Transformers (VIT)- A detailed walkthrough (part1)",
+      "url": "https://medium.com/@sinhamaitry6/vision-transformer-model-vit-a-detailed-walkthrough-5713d795016b",
+      "snippet": "Vision Transformers (VIT)- A detailed walkthrough (part1) Transformer models are now one of the most vital architectures for various AI field tasks ranging from Large Language Models (LLMs) to …"
+    },
+    {
+      "title": "Mathematical Models of Computation in Superposition",
+      "url": "https://arxiv.org/html/2408.05451v1",
+      "snippet": "Superposition - when a neural network represents more \"features\" than it has dimensions - seems to pose a serious challenge to mechanistically interpreting current AI systems. Existing theory work studies representationalsuperposition, where superposition is only used when passing information through bottlenecks. In this work, we present mathematical models of computationin ..."
+    }
+  ]
+}

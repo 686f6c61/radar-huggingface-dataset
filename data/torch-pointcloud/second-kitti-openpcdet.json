@@ -1,0 +1,77 @@
+{
+  "schema": 1,
+  "id": "torch-pointcloud/second.kitti.openpcdet",
+  "slug": "torch-pointcloud-second-kitti-openpcdet",
+  "author": "torch-pointcloud",
+  "url": "https://huggingface.co/torch-pointcloud/second.kitti.openpcdet",
+  "created_at": "2026-08-28T18:20:55.000Z",
+  "updated_at": "2026-08-29T20:31:24.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "object-detection",
+  "library": "torch-pointcloud",
+  "languages": [],
+  "tags": [
+    "torch-pointcloud",
+    "safetensors",
+    "point-cloud",
+    "3d",
+    "pytorch",
+    "second",
+    "object-detection",
+    "dataset:kitti",
+    "license:apache-2.0",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 5332488,
+  "parameters_human": "5.3M",
+  "storage_bytes": 21346712,
+  "storage_human": "21 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": null,
+      "dataset": "KITTI",
+      "metric": "mAP",
+      "value": 66.26
+    }
+  ],
+  "sources": [
+    {
+      "title": "torch-pointcloud/second.kitti.openpcdet · Hugging Face",
+      "url": "https://huggingface.co/torch-pointcloud/second.kitti.openpcdet",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "torch-pointcloud/second.kitti.openpcdet at main - Hugging Face",
+      "url": "https://huggingface.co/torch-pointcloud/second.kitti.openpcdet/tree/main",
+      "snippet": "Safetensors PyTorch kitti torch-pointcloud point-cloud 3d second Eval Results (legacy) License:apache-2.0 Model card FilesFiles and versions xet Community Copy to bucket new main second.kitti.openpcdet 21.4 MB Ctrl+K Ctrl+K 1 contributor History:4 commits arthurdjn Update model card for second.kitti.openpcdet 1faadf5 verifiedabout 8 hours ago ..."
+    },
+    {
+      "title": "GitHub - open-mmlab/OpenPCDet: OpenPCDet Toolbox for LiDAR-based 3D ...",
+      "url": "https://github.com/open-mmlab/OpenPCDet",
+      "snippet": "OpenPCDet is an open source project for LiDAR-based 3D scene perception that supports multiple LiDAR-based perception models as shown above. Some parts of PCDet are learned from the official released codes of the above supported methods."
+    },
+    {
+      "title": "GitHub - Vee415/second-kitti-openpcdet: SECOND (sparse-conv voxel 3D ...",
+      "url": "https://github.com/Vee415/second-kitti-openpcdet",
+      "snippet": "Trained a voxel-based 3D object detector (SECOND) on the KITTI dataset using OpenPCDet, achieving official AP-3D numbers that exceed the OpenPCDet model zoo baseline."
+    },
+    {
+      "title": "KITTI Dataset | open-mmlab/OpenPCDet | DeepWiki",
+      "url": "https://deepwiki.com/open-mmlab/OpenPCDet/3.2-kitti-dataset",
+      "snippet": "1. Introduction to KITTI Dataset The KITTI dataset is a widely used benchmark in autonomous driving research, providing LiDAR point clouds, camera images, and calibration information with 3D object annotations. In OpenPCDet, it&#x27;s implemented through the KittiDataset class, which handles dataset loading, processing, and evaluation."
+    }
+  ]
+}

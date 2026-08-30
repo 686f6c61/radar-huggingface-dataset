@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "symrex/Tiel-Coder-35B-A3B-Genesis-Hermes-GGUF-dequantized-oQ8e-mtp",
+  "slug": "symrex-tiel-coder-35b-a3b-genesis-hermes-gguf-dequantized-oq8e-mtp",
+  "author": "symrex",
+  "url": "https://huggingface.co/symrex/Tiel-Coder-35B-A3B-Genesis-Hermes-GGUF-dequantized-oQ8e-mtp",
+  "created_at": "2026-08-29T21:00:18.000Z",
+  "updated_at": "2026-08-29T23:22:54.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "mlx",
+  "languages": [],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "qwen3_5_moe",
+    "oq",
+    "quantized",
+    "base_model:LuffyTheFox/Tiel-Coder-35B-A3B-Genesis-Hermes-GGUF",
+    "base_model:quantized:LuffyTheFox/Tiel-Coder-35B-A3B-Genesis-Hermes-GGUF",
+    "8-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 10433940400,
+  "parameters_human": "10.43B",
+  "storage_bytes": 38618057978,
+  "storage_human": "38.6 GB",
+  "base_model": "LuffyTheFox/Tiel-Coder-35B-A3B-Genesis-Hermes-GGUF",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "symrex (OliK) - Hugging Face",
+      "url": "https://huggingface.co/symrex",
+      "snippet": "Sort: Recently updated symrex/Tiel-Coder-35B-A3B-Genesis-Hermes-GGUF-dequantized 36B•Updated about 1 hour ago"
+    },
+    {
+      "title": "Qwen3.6-35B-A3B-Uncensored-Genesis-Hermes-V6-dequantized-oQ8e-mtp",
+      "url": "https://huggingface.co/symrex/Qwen3.6-35B-A3B-Uncensored-Genesis-Hermes-V6-dequantized-oQ8e-mtp",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "TielCoder: The New 35B MoE Benchmark Redefining Local SOTA Coding ...",
+      "url": "https://baguaai.com/tielcoder-the-new-35b-moe-benchmark-redefining-local-sota-coding-performance/",
+      "snippet": "TielCoder, a 35B-A3B Mixture-of-Experts (MoE) model, has emerged as a top-tier coding assistant, matching Opus 4.6 Medium&#x27;s performance on real-world repository issues while outclassing rivals like KAT-Coder and Nail in both speed and reliability. Bagua Insight The MoE Efficiency Pivot: TielCoder&#x27;s dominance underscores a shift from brute-force scaling to architectural precision. By ..."
+    },
+    {
+      "title": "/home/polaris/models/Tiel-Coder-35B-A3B-MTP-UD-Q6_K_XL.gguf Benchmarks ...",
+      "url": "https://llm-bench.io/models/tiel-coder-35b-a3b-mtp-ud-q6-k-xl-gguf",
+      "snippet": "Quality by task Average LLM-judged quality (0-100) with the run-to-run spread shown as a P5-P95 band, overall and for each benchmark task, across all 2 runs. The low and high columns show how much the judge&#x27;s score varies between runs, and need at least two runs to display."
+    },
+    {
+      "title": "GitHub - h00nigan/35b-moe-eval: Independent evaluation of 35B-A3B MoE ...",
+      "url": "https://github.com/h00nigan/35b-moe-eval",
+      "snippet": "A side-by-side test of Tiel-Coder-35B-A3B against two locally-tuned 35B-A3B MoE builds (an uncensored Ornith fine-tune and an imatrix-requantized Qwen3.6), run under identical conditions with identical prompts. This is a deployment-fit evaluation from a small fleet running these models as operator-driven tools, written to be useful to model authors and other deployers — especially anyone ..."
+    }
+  ]
+}

@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "SIGUAS/Grafico-Monitoreo-Sierra-Sur",
+  "slug": "siguas-grafico-monitoreo-sierra-sur",
+  "author": "SIGUAS",
+  "url": "https://huggingface.co/SIGUAS/Grafico-Monitoreo-Sierra-Sur",
+  "created_at": "2026-08-30T01:21:00.000Z",
+  "updated_at": "2026-08-30T01:21:00.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "LLM Leaderboard & AI Model Benchmarks — August 2026",
+      "url": "https://benchlm.ai/",
+      "snippet": "Compare 406 AI models across 408 benchmarks, with 228 ranked scores, source evidence, API pricing, context windows, runtime, and head-to-head pages."
+    },
+    {
+      "title": "Better customer experiences | Sierra",
+      "url": "https://sierra.ai/",
+      "snippet": "Sierra helps businesses build better, more human customer experiences with AI."
+    },
+    {
+      "title": "Hugging Face - The AI community building the future.",
+      "url": "https://huggingface.co/",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Sistema de monitoreo… - Download Free 3D Model | Meshy",
+      "url": "https://www.meshy.ai/3d-models/sistema-de-monitoreo-automatizado-de-diagnostico-de-01a040b8-d691-7241-a699-25522bee51eb",
+      "snippet": "Sistema de monitoreo automatizado de diagnóstico de eficiencia - free Sci-Fi 3D model to download in FBX, OBJ, GLB, USDZ & STL. Made with Meshy AI. By nfarrl · industrial, monitor, screen."
+    },
+    {
+      "title": "Sierra AI In-Depth Report: Inside the $15.8B Agent OS for Enterprise",
+      "url": "https://www.thecodew.com/2026/07/sierra-ai-in-depth-report.html",
+      "snippet": "Explore Sierra AI&#x27;s rise to a $15.8B valuation, its enterprise Agent OS, Fortune 50 adoption, technology, business model, funding, and more."
+    }
+  ]
+}

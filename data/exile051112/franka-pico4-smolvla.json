@@ -5,7 +5,7 @@
   "author": "Exile051112",
   "url": "https://huggingface.co/Exile051112/franka-pico4-smolvla",
   "created_at": "2026-08-28T15:50:13.000Z",
-  "updated_at": "2026-08-29T00:23:17.000Z",
+  "updated_at": "2026-08-29T03:55:51.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": null,
@@ -20,8 +20,8 @@
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
-  "storage_bytes": 1120928404,
-  "storage_human": "1.1 GB",
+  "storage_bytes": 1299413312,
+  "storage_human": "1.3 GB",
   "base_model": null,
   "formats": [
     "safetensors"

@@ -1,0 +1,79 @@
+{
+  "schema": 1,
+  "id": "Chaima-KHENAFIF/qwen-darija-domain-adapted",
+  "slug": "chaima-khenafif-qwen-darija-domain-adapted",
+  "author": "Chaima-KHENAFIF",
+  "url": "https://huggingface.co/Chaima-KHENAFIF/qwen-darija-domain-adapted",
+  "created_at": "2026-08-29T22:07:45.000Z",
+  "updated_at": "2026-08-29T22:23:23.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [
+    "ar",
+    "fr",
+    "en"
+  ],
+  "tags": [
+    "peft",
+    "safetensors",
+    "text-generation",
+    "darija",
+    "algerian-arabic",
+    "code-switching",
+    "domain-adaptation",
+    "qlora",
+    "conversational",
+    "ar",
+    "fr",
+    "en",
+    "base_model:Qwen/Qwen2.5-3B-Instruct",
+    "base_model:adapter:Qwen/Qwen2.5-3B-Instruct",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 131223420,
+  "storage_human": "131 MB",
+  "base_model": "Qwen/Qwen2.5-3B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Chaima-KHENAFIF (Chaima KHENAFIF) - Hugging Face",
+      "url": "https://huggingface.co/Chaima-KHENAFIF",
+      "snippet": "AI & ML interests updated a model about 8 hours ago"
+    },
+    {
+      "title": "#nlp #asr #whisper #llm #qwen #machinelearning #darija # ... - LinkedIn",
+      "url": "https://www.linkedin.com/posts/chaima-khenafif-54b438293_nlp-asr-whisper-activity-7479231892899241984-ED58",
+      "snippet": "Approach 2 :End-to-End Multilingual LLM Instead of translating everything away, we adapted a model (Qwen2.5-3B) to understand Darija natively in both Arabic and Latin script."
+    },
+    {
+      "title": "Qwen3 Technical Report - arXiv.org",
+      "url": "https://arxiv.org/html/2505.09388v1",
+      "snippet": "Qwen3 introduces several key advancements to enhance its functionality and usability. First, it integrates two distinct operating modes, thinking mode and non-thinking mode, into a single model. This allows users to switch between these modes without alternating between different models, e.g., switching from Qwen2.5 to QwQ (Qwen Team, 2024)."
+    },
+    {
+      "title": "chaima KHENAFIF chaima-Khenafif03 - GitHub",
+      "url": "https://github.com/chaima-Khenafif03/",
+      "snippet": "👋 Hi, I&#x27;m @chaima-Khenafif03 👀 I&#x27;m interested in ai,web development 💞️ I&#x27;m looking to collaborate on ... 📫 How to reach me my email address: chaimakhenafif03@gmail.com chaima-Khenafif03 chaima-Khenafif03 Public"
+    },
+    {
+      "title": "Chaima-KHENAFIF/algerian-darija-script-detector · Hugging Face",
+      "url": "https://huggingface.co/Chaima-KHENAFIF/algerian-darija-script-detector",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    }
+  ]
+}

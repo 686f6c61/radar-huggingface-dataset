@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "Tritlo/orbitorio-hal",
+  "slug": "tritlo-orbitorio-hal",
+  "author": "Tritlo",
+  "url": "https://huggingface.co/Tritlo/orbitorio-hal",
+  "created_at": "2026-08-29T19:38:00.000Z",
+  "updated_at": "2026-08-29T19:52:40.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 23174991,
+  "storage_human": "23 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Tritlo (Matthías Páll Gissurarson) · GitHub",
+      "url": "https://github.com/Tritlo",
+      "snippet": "A graph representing Tritlo&#x27;s contributions from August 24, 2025 to August 28, 2026. The contributions are 95% commits, 4% pull requests, 1% code review, 0% issues."
+    },
+    {
+      "title": "Tritlo (Matthías Páll Gissurarson) - Hugging Face",
+      "url": "https://huggingface.co/Tritlo",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Hal AI - 3D model by Rocket384 (@Rocket384) [21aad42] - Sketchfab",
+      "url": "https://sketchfab.com/3d-models/hal-ai-21aad4297b8d402c853dffa7ed8a5295",
+      "snippet": "Galaxy Meta Eden - Hal AI - 3D model by Rocket384"
+    },
+    {
+      "title": "Tripo AI 3D model Generator | Text & Images to 3D in Seconds",
+      "url": "https://www.tripo3d.ai/",
+      "snippet": "Create free 3D models with Tripo AI online — turn your text or images into high-fidelity 3D models instantly, ready for games, 3D printing and animation"
+    },
+    {
+      "title": "Tripo AI - Free AI 3D Model Generator",
+      "url": "https://tripo3ds.com/",
+      "snippet": "Discover Tripo 3D AI, a powerful AI 3D model generator that turns text prompts and images into high-quality 3D assets for games, design, and creative projects."
+    }
+  ]
+}

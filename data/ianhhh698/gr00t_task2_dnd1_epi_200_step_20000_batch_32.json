@@ -5,7 +5,7 @@
   "author": "IanHHH698",
   "url": "https://huggingface.co/IanHHH698/gr00t_task2_DND1_epi_200_step_20000_batch_32",
   "created_at": "2026-08-29T12:57:44.000Z",
-  "updated_at": "2026-08-29T12:58:27.000Z",
+  "updated_at": "2026-08-29T17:23:57.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "robotics",
@@ -14,8 +14,8 @@
   "tags": [
     "lerobot",
     "safetensors",
-    "groot",
     "robotics",
+    "groot",
     "dataset:cbrian/merge_task2_DND_epi_200",
     "license:apache-2.0",
     "region:us"
@@ -25,8 +25,8 @@
   "trending_score": 0,
   "parameters": 2413522880,
   "parameters_human": "2.41B",
-  "storage_bytes": 6964817440,
-  "storage_human": "7.0 GB",
+  "storage_bytes": 13929620392,
+  "storage_human": "13.9 GB",
   "base_model": null,
   "formats": [
     "safetensors"

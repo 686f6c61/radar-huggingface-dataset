@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "afirelily/phonop2c_v2_0_alpha_05_base_model",
+  "slug": "afirelily-phonop2c_v2_0_alpha_05_base_model",
+  "author": "afirelily",
+  "url": "https://huggingface.co/afirelily/phonop2c_v2_0_alpha_05_base_model",
+  "created_at": "2026-08-25T08:20:46.000Z",
+  "updated_at": "2026-08-29T22:30:17.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "zh"
+  ],
+  "tags": [
+    "executorch",
+    "zh",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 13,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 110459776,
+  "storage_human": "110 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - afirelily/phono-core: phono-core is the on-device C++ ...",
+      "url": "https://github.com/afirelily/phono-core",
+      "snippet": "Introduction phono-core is the on-device C++ inference engine for PhonoP2C: it deploys the two-stage PostfixLM pinyin-to-Chinese model on the ExecuTorch runtime, taking \"Chinese context + pinyin syllables\" as input and producing Chinese-character candidates."
+    },
+    {
+      "title": "Releases · afirelily/phono-core · GitHub",
+      "url": "https://github.com/afirelily/phono-core/releases",
+      "snippet": "phono-core is the on-device C++ inference engine for PhonoP2C. - Releases · afirelily/phono-core"
+    },
+    {
+      "title": "LLM Leaderboard & AI Model Benchmarks — August 2026",
+      "url": "https://benchlm.ai/",
+      "snippet": "LLM Leaderboard & AI Model Benchmarks — August 2026 Compare frontier AI models by quality, cost, and context. 105 Supported and 123 Estimated models among 406 tracked LLMs — 408 benchmarks, real pricing, and runtime data in one place."
+    },
+    {
+      "title": "‎Google Gemini",
+      "url": "https://gemini.google.com/",
+      "snippet": "Meet Gemini, Google&#x27;s AI assistant. Get help with writing, planning, brainstorming, and more. Experience the power of generative AI."
+    },
+    {
+      "title": "Models - Hugging Face",
+      "url": "https://huggingface.co/models",
+      "snippet": "Explore machine learning models. DavidAU/Qwen3.8-27B-Cold-Fusion-GAIN-V1.1-NM-DAU-NEO-MAX-MTP-GGUF"
+    }
+  ]
+}

@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "Rin247/Qwen3-0.6B-Uncensored-Aquarion-FP4",
+  "slug": "rin247-qwen3-0-6b-uncensored-aquarion-fp4",
+  "author": "Rin247",
+  "url": "https://huggingface.co/Rin247/Qwen3-0.6B-Uncensored-Aquarion-FP4",
+  "created_at": "2026-08-29T20:24:31.000Z",
+  "updated_at": "2026-08-29T20:25:15.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "qwen3",
+    "quantized",
+    "fp4",
+    "uncensored",
+    "abliterated",
+    "8-bit",
+    "fp4_weight_only",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 375848960,
+  "parameters_human": "375.8M",
+  "storage_bytes": 570524178,
+  "storage_human": "571 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "huihui-ai/Qwen3-0.6B-abliterated · Hugging Face",
+      "url": "https://huggingface.co/huihui-ai/Qwen3-0.6B-abliterated",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "nicoboss/Qwen3-14B-Uncensored · Hugging Face",
+      "url": "https://huggingface.co/nicoboss/Qwen3-14B-Uncensored",
+      "snippet": "This is a finetune of Qwen3-14B to make it uncensored. Big thanks to @Guilherme34 for creating the uncensor dataset used for this uncensored finetune. This model is based on Qwen3-14B and is governed by the Apache License 2.0."
+    },
+    {
+      "title": "Qwen3 Technical Report - arXiv.org",
+      "url": "https://arxiv.org/html/2505.09388v1",
+      "snippet": "The Qwen3 series includes models of both dense and Mixture-of-Expert (MoE) architectures, with parameter scales ranging from 0.6 to 235 billion. A key innovation in Qwen3 is the integration of thinking mode (for complex, multi-step reasoning) and non-thinking mode (for rapid, context-driven responses) into a unified framework."
+    },
+    {
+      "title": "Qwen3 Complete Guide: Every Model from 0.6B to 235B",
+      "url": "https://insiderllm.com/guides/qwen3-complete-guide/",
+      "snippet": "Qwen3 is the best open model family for budget local AI. Dense models from 0.6B to 32B, MoE models that punch above their weight, and a /think toggle no one else has."
+    },
+    {
+      "title": "GitHub - nexgen-adm/qwen3: Qwen3 is the large language model series ...",
+      "url": "https://github.com/nexgen-adm/qwen3",
+      "snippet": "We are making the weights of Qwen3 available to the public, including both dense and Mixture-of-Expert (MoE) models. The highlights from Qwen3 include: Dense and Mixture-of-Experts (MoE) models of various sizes, available in 0.6B, 1.7B, 4B, 8B, 14B, 32B and 30B-A3B, 235B-A22B."
+    }
+  ]
+}

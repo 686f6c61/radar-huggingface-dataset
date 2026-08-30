@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "dcmutlu/gordon-ramsay-code-auditor",
+  "slug": "dcmutlu-gordon-ramsay-code-auditor",
+  "author": "dcmutlu",
+  "url": "https://huggingface.co/dcmutlu/gordon-ramsay-code-auditor",
+  "created_at": "2026-08-29T23:53:33.000Z",
+  "updated_at": "2026-08-29T23:53:46.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "peft",
+    "safetensors",
+    "colab-forge",
+    "lora",
+    "sovereign-ai",
+    "transformers",
+    "text-generation",
+    "en",
+    "base_model:Qwen/Qwen2.5-Coder-1.5B-Instruct",
+    "base_model:adapter:Qwen/Qwen2.5-Coder-1.5B-Instruct",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 394256,
+  "storage_human": "394256 B",
+  "base_model": "Qwen/Qwen2.5-Coder-1.5B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Fustli/ai-code-auditor: AI Code Auditor - GitHub",
+      "url": "https://github.com/Fustli/ai-code-auditor/blob/main/",
+      "snippet": "AI Code Auditor - an LLM-powered tool that reviews your code for quality, security, and performance issues. Upload your source files and get instant, structured feedback with improvement suggestions."
+    },
+    {
+      "title": "This AI Rubber Duck Roasts Your Code Like Gordon Ramsay",
+      "url": "https://www.youtube.com/watch?v=fUtOJPDYoeU",
+      "snippet": "The duck just sits there. Silent. Judging. I wanted one that judges out loud. So I built Unducked — a foul-mouthed rubber duck that reviews your code like Gordon Ramsay reviews a risotto."
+    },
+    {
+      "title": "10 Best Code Audit Tools in 2026: A Complete Guide for DevSecOps Teams",
+      "url": "https://www.getpanto.ai/blog/best-code-audit-tools",
+      "snippet": "The 10 best code audit tools in 2026. Compare leading AI code auditors for enterprise teams—features, use cases, and a full side-by-side comparison table."
+    },
+    {
+      "title": "Fustli/ai-code-auditor: AI Code Auditor - GitHub",
+      "url": "https://github.com/Fustli/ai-code-auditor",
+      "snippet": "AI Code Auditor - an LLM-powered tool that reviews your code for quality, security, and performance issues. Upload your source files and get instant, structured feedback with improvement suggestion..."
+    },
+    {
+      "title": "CISA Is Running an AI Code Auditor. Now What? | Hyrax",
+      "url": "https://hyrax.dev/blog/cisa-mythos-ai-code-auditor-implications",
+      "snippet": "The auditor-model pattern is now government-validated. Engineering teams shipping AI-written code at any volume face the same unreviewed-surface problem CISA just decided it could not ignore."
+    }
+  ]
+}

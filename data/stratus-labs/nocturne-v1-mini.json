@@ -1,0 +1,78 @@
+{
+  "schema": 1,
+  "id": "stratus-labs/nocturne-v1-mini",
+  "slug": "stratus-labs-nocturne-v1-mini",
+  "author": "stratus-labs",
+  "url": "https://huggingface.co/stratus-labs/nocturne-v1-mini",
+  "created_at": "2026-08-28T22:04:05.000Z",
+  "updated_at": "2026-08-29T21:01:17.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": "audio-classification",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "nocturne_effnet",
+    "bioacoustics",
+    "audio-classification",
+    "efficientnet",
+    "ecology",
+    "biodiversity",
+    "species-identification",
+    "non-bird",
+    "edge-deployable",
+    "en",
+    "dataset:InsectSet459",
+    "dataset:iNat-Sounds-2024",
+    "license:cc-by-4.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 9398486,
+  "parameters_human": "9.4M",
+  "storage_bytes": 37645816,
+  "storage_human": "38 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "stratus-labs/nocturne-v1-teacher · Hugging Face",
+      "url": "https://huggingface.co/stratus-labs/nocturne-v1-teacher",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Nocturne | V1 | PromptHero",
+      "url": "https://prompthero.com/ai-models/nocturne-download/v1",
+      "snippet": "Nocturne NEW: Turn your favorite creations into real products! 👕"
+    },
+    {
+      "title": "Best Nocturne Models | PromptHero",
+      "url": "https://prompthero.com/ai-models/nocturne-download",
+      "snippet": "Best Nocturne Models | PromptHero ... Nocturne"
+    },
+    {
+      "title": "Stratus Labs - Software Innovation & AI Platform",
+      "url": "https://thestratuslabs.com/",
+      "snippet": "Leading software innovation firm specializing in AI-native platforms, property tech solutions, and practice management systems."
+    },
+    {
+      "title": "Stratus Labs — Applied-AI Research & Deployment Lab",
+      "url": "https://runstratus.com/",
+      "snippet": "We build the AI systems that run real businesses — on infrastructure you control. Stratus Labs is an applied-AI R&D lab. We design multi-agent systems, write the connectors, and deploy them inside real companies — running in your environment — local, private cloud, or hybrid — not rented API credits. And we research what&#x27;s next: local-model performance, private inference, and the ..."
+    }
+  ]
+}

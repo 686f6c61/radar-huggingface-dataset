@@ -1,0 +1,76 @@
+{
+  "schema": 1,
+  "id": "MATLOWAI/minimax-h3-fused-turbo-int8-convrot",
+  "slug": "matlowai-minimax-h3-fused-turbo-int8-convrot",
+  "author": "MATLOWAI",
+  "url": "https://huggingface.co/MATLOWAI/minimax-h3-fused-turbo-int8-convrot",
+  "created_at": "2026-08-29T22:04:12.000Z",
+  "updated_at": "2026-08-30T01:25:46.000Z",
+  "license": "minimax-h3-community-license-agreement",
+  "license_family": "unknown",
+  "pipeline_tag": "image-text-to-video",
+  "library": "diffusion-single-file",
+  "languages": [],
+  "tags": [
+    "diffusion-single-file",
+    "minimax-h3",
+    "comfyui",
+    "int8",
+    "convrot",
+    "turbo",
+    "merge",
+    "synchronized-audio-video",
+    "image-text-to-video",
+    "base_model:Comfy-Org/MiniMax-H3",
+    "base_model:merge:Comfy-Org/MiniMax-H3",
+    "base_model:MiniMaxAI/MiniMax-H3",
+    "base_model:merge:MiniMaxAI/MiniMax-H3",
+    "base_model:diffusers-modular/MiniMax-H3-Pruned-Ref-Delta-Fused-r1024",
+    "base_model:merge:diffusers-modular/MiniMax-H3-Pruned-Ref-Delta-Fused-r1024",
+    "base_model:xmarre/MiniMax-H3-Pruned-Ref-Delta-Fused-r1024-ComfyUI",
+    "base_model:merge:xmarre/MiniMax-H3-Pruned-Ref-Delta-Fused-r1024-ComfyUI",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 21007756808,
+  "storage_human": "21.0 GB",
+  "base_model": "xmarre/MiniMax-H3-Pruned-Ref-Delta-Fused-r1024-ComfyUI, diffusers-modular/MiniMax-H3-Pruned-Ref-Delta-Fused-r1024, Comfy-Org/MiniMax-H3, MiniMaxAI/MiniMax-H3",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "MiniMaxAI/MiniMax-H3 · Hugging Face",
+      "url": "https://huggingface.co/MiniMaxAI/MiniMax-H3",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "PulpCut/MiniMax-H3-Turbo-INT8-ConvRot · Hugging Face",
+      "url": "https://huggingface.co/PulpCut/MiniMax-H3-Turbo-INT8-ConvRot",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GitHub - MiniMax-AI/MiniMax-H3 · GitHub",
+      "url": "https://github.com/MiniMax-AI/MiniMax-H3",
+      "snippet": "Contribute to MiniMax-AI/MiniMax-H3 development by creating an account on GitHub."
+    },
+    {
+      "title": "MiniMax H3 Remix - bf16 v0.6 | Hailuo H3 by MiniMax Checkpoint | Civitai",
+      "url": "https://civitai.com/models/2879272/minimax-h3-remix",
+      "snippet": "INT8 ConvRot variant has minor precision loss compared to BF16. If you observe obvious detail degradation on key creative projects, switch over to the BF16 version. This is a Checkpoint Merge, not a native trained H3 checkpoint. Some edge‑case rare concepts may behave differently from original base H3 models."
+    },
+    {
+      "title": "ModelTC/Minimax-H3-Turbo: Distill Minimax-H3 into 4 steps - GitHub",
+      "url": "https://github.com/ModelTC/Minimax-H3-Turbo",
+      "snippet": "Distill Minimax-H3 into 4 steps. Contribute to ModelTC/Minimax-H3-Turbo development by creating an account on GitHub."
+    }
+  ]
+}

@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "0xSojalSec/Muse-Glimmer-30B-Abliterated-GGUF",
+  "slug": "0xsojalsec-muse-glimmer-30b-abliterated-gguf",
+  "author": "0xSojalSec",
+  "url": "https://huggingface.co/0xSojalSec/Muse-Glimmer-30B-Abliterated-GGUF",
+  "created_at": "2026-08-29T19:28:00.000Z",
+  "updated_at": "2026-08-29T19:28:00.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "gguf",
+  "languages": [],
+  "tags": [
+    "gguf",
+    "muse-glimmer",
+    "abliterated",
+    "quantized",
+    "agentic",
+    "multimodal",
+    "llama.cpp",
+    "dflash",
+    "experimental",
+    "image-text-to-text",
+    "conversational",
+    "base_model:Blackfrost-AI/Muse-Glimmer-30B-Abliterated-BF16",
+    "base_model:quantized:Blackfrost-AI/Muse-Glimmer-30B-Abliterated-BF16",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 27854794240,
+  "parameters_human": "27.85B",
+  "storage_bytes": 175640466816,
+  "storage_human": "175.6 GB",
+  "base_model": "Blackfrost-Research/Muse-Glimmer-30B-Abliterated-BF16",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Muse-Glimmer-30B-Abliterated-Q2_K.gguf - Hugging Face",
+      "url": "https://huggingface.co/Ishowbackup/Muse-Glimmer-30B-Abliterated-GGUF/blob/main/Muse-Glimmer-30B-Abliterated-Q2_K.gguf",
+      "snippet": "Instructions to use Ishowbackup/Muse-Glimmer-30B-Abliterated-GGUF with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "meta-models/Muse-Glimmer-30B · Hugging Face",
+      "url": "https://huggingface.co/meta-models/Muse-Glimmer-30B",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Muse Glimmer - Meta",
+      "url": "https://developer.meta.com/ai/models/muse-glimmer/",
+      "snippet": "An open 30B model for always-on local agents. Runs on a single GPU, Apache 2.0 licensed. Tuned for tool use, long tasks, and failure recovery."
+    },
+    {
+      "title": "muse-glimmer-30b Model by Meta | NVIDIA NIM",
+      "url": "https://build.nvidia.com/meta/muse-glimmer-30b/modelcard",
+      "snippet": "Muse Glimmer 30B is a multimodal reasoning model accepting text and images, with native tool-calling and separate reasoning output."
+    },
+    {
+      "title": "muse-glimmer-30b Model by Meta | NVIDIA NIM",
+      "url": "https://build.nvidia.com/meta/muse-glimmer-30b?section=deploy",
+      "snippet": "Muse Glimmer 30B is a multimodal reasoning model accepting text and images, served on vLLM with native Onyx tool-calling and reasoning parsers."
+    }
+  ]
+}

@@ -5,7 +5,7 @@
   "author": "underlabs",
   "url": "https://huggingface.co/underlabs/GLM-5.3-NVFP4",
   "created_at": "2026-08-29T01:34:38.000Z",
-  "updated_at": "2026-08-29T02:30:20.000Z",
+  "updated_at": "2026-08-29T21:26:49.000Z",
   "license": "glm-5.3",
   "license_family": "unknown",
   "pipeline_tag": null,
@@ -30,8 +30,8 @@
   "trending_score": 0,
   "parameters": 386110236672,
   "parameters_human": "386.11B",
-  "storage_bytes": 450975121231,
-  "storage_human": "451.0 GB",
+  "storage_bytes": 456989798119,
+  "storage_human": "457.0 GB",
   "base_model": "zai-org/GLM-5.3, Inferact/GLM-5.3-NVFP4",
   "formats": [
     "safetensors"

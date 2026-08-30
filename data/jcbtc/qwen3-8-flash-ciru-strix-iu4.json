@@ -5,7 +5,7 @@
   "author": "jcbtc",
   "url": "https://huggingface.co/jcbtc/Qwen3.8-Flash-CIRU-STRIX-IU4",
   "created_at": "2026-08-29T05:58:11.000Z",
-  "updated_at": "2026-08-29T06:08:39.000Z",
+  "updated_at": "2026-08-29T14:34:35.000Z",
   "license": "qwen-community-1.0",
   "license_family": "unknown",
   "pipeline_tag": "text-generation",
@@ -37,7 +37,7 @@
     "region:us",
     "conversational"
   ],
-  "likes": 1,
+  "likes": 5,
   "downloads_30d": 0,
   "trending_score": 0,
   "parameters": 125743653760,

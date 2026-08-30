@@ -30,12 +30,12 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 0,
+  "downloads_30d": 138,
   "trending_score": 0,
   "parameters": 32763876352,
   "parameters_human": "32.76B",
-  "storage_bytes": 1988150593992,
-  "storage_human": "1988.2 GB",
+  "storage_bytes": 65539270936,
+  "storage_human": "65.5 GB",
   "base_model": "Qwen/Qwen2.5-32B-Instruct",
   "formats": [
     "safetensors"

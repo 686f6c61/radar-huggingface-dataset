@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "EER6/TriDLM-124M-split",
+  "slug": "eer6-tridlm-124m-split",
+  "author": "EER6",
+  "url": "https://huggingface.co/EER6/TriDLM-124M-split",
+  "created_at": "2026-08-29T22:06:05.000Z",
+  "updated_at": "2026-08-29T22:06:17.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "feature-extraction",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "tridlm",
+    "feature-extraction",
+    "masked-diffusion",
+    "diffusion-language-model",
+    "gpt2",
+    "openwebtext",
+    "triangular-attention",
+    "custom_code",
+    "en",
+    "dataset:Skylion007/openwebtext",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 124375296,
+  "parameters_human": "124.4M",
+  "storage_bytes": 497511424,
+  "storage_human": "498 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "AI 3D Model Segmentation - Split a Model into Parts | AI 3D Model",
+      "url": "https://ai3dmodel.app/segmentation",
+      "snippet": "Split any 3D model or STL into separate, editable parts with AI 3D model segmentation — ready for editing, rigging, and 3D printing in seconds."
+    },
+    {
+      "title": "EER6 (EER6) - Hugging Face",
+      "url": "https://huggingface.co/EER6",
+      "snippet": "Org profile for EER6 on Hugging Face, the AI community building the future."
+    },
+    {
+      "title": "LLM Leaderboard & AI Model Benchmarks — August 2026",
+      "url": "https://benchlm.ai/",
+      "snippet": "LLM Leaderboard & AI Model Benchmarks — August 2026 Compare frontier AI models by quality, cost, and context. 105 Supported and 123 Estimated models among 406 tracked LLMs — 408 benchmarks, real pricing, and runtime data in one place."
+    },
+    {
+      "title": "AI 3D Model Segmentation | Auto Split 3D Models",
+      "url": "https://www.neural4d.com/features/ai-model-segmentation",
+      "snippet": "Automatically split complex 3D models into clean, watertight parts in seconds with AI 3D Model Segmentation for texturing, animation, and 3D printing."
+    },
+    {
+      "title": "How to Split a 3D Model for Printing with AI (Snap-Fit Joints Included)",
+      "url": "https://www.3daistudio.com/blog/split-3d-model-for-printing-ai",
+      "snippet": "Split any 3D model into printable parts with AI - automatic character splitting, snap-fit ball joints, dovetail connectors, and multi-color segmentation. Works with GLB, STL, and OBJ files up to 200 MB. No Meshmixer or Blender needed."
+    }
+  ]
+}

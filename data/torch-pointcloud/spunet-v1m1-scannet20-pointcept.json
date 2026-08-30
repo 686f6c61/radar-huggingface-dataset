@@ -1,0 +1,78 @@
+{
+  "schema": 1,
+  "id": "torch-pointcloud/spunet-v1m1.scannet20.pointcept",
+  "slug": "torch-pointcloud-spunet-v1m1-scannet20-pointcept",
+  "author": "torch-pointcloud",
+  "url": "https://huggingface.co/torch-pointcloud/spunet-v1m1.scannet20.pointcept",
+  "created_at": "2026-08-28T18:21:15.000Z",
+  "updated_at": "2026-08-29T20:31:30.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "torch-pointcloud",
+  "languages": [],
+  "tags": [
+    "torch-pointcloud",
+    "safetensors",
+    "point-cloud",
+    "3d",
+    "pytorch",
+    "spunet",
+    "segmentation",
+    "dataset:scannet",
+    "arxiv:1904.08755",
+    "license:mit",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 39174996,
+  "parameters_human": "39.2M",
+  "storage_bytes": 156738880,
+  "storage_human": "157 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": null,
+      "dataset": "ScanNet (20 classes)",
+      "metric": "mIoU",
+      "value": 71.81
+    }
+  ],
+  "sources": [
+    {
+      "title": "torch-pointcloud (PyTorch PointCloud) - Hugging Face",
+      "url": "https://huggingface.co/torch-pointcloud",
+      "snippet": "PyTorch PointCloud (torch-pointcloud) is a collection of point cloud models, layers, utilities, datasets, transforms, and reference training / benchmarking scripts that aim to reproduce SOTA models and help researchers and engineers reuse common layers. Find all the torch-pointcloud models here."
+    },
+    {
+      "title": "GitHub - arthurdjn/pytorch-pointcloud: PyTorch Point Cloud models ...",
+      "url": "https://github.com/arthurdjn/pytorch-pointcloud",
+      "snippet": "A PyTorch library for deep learning on point clouds: models, pretrained weights, datasets, transforms and inferers, behind one create_model factory in the spirit of timm. The CUDA extensions (PyG kernels, spconv, flash-attention, Mamba, ocnn, torchsparse) are optional and only needed by the ..."
+    },
+    {
+      "title": "GitHub - torch-points3d/torch-points3d: Pytorch framework for doing ...",
+      "url": "https://github.com/torch-points3d/torch-points3d",
+      "snippet": "This is a framework for running common deep learning models for point cloud analysis tasks against classic benchmark. It heavily relies on Pytorch Geometric and Facebook Hydra. The framework allows lean and yet complex model to be built with minimum effort and great reproducibility. It also provide a high level API to democratize deep learning on pointclouds. See our paper at 3DV for an ..."
+    },
+    {
+      "title": "Pointcept (Pointcept) - Hugging Face",
+      "url": "https://huggingface.co/Pointcept",
+      "snippet": "Org profile for Pointcept on Hugging Face, the AI community building the future."
+    },
+    {
+      "title": "Models and Backbones | Pointcept/Pointcept | DeepWiki",
+      "url": "https://deepwiki.com/Pointcept/Pointcept/2.1-models-and-backbones",
+      "snippet": "This page details the model architecture system, backbone networks, and how models are built and registered in Pointcept. The framework provides a comprehensive collection of point cloud backbone architectures and task-specific models through a registry-based system."
+    }
+  ]
+}

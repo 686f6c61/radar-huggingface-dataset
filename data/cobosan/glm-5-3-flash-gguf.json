@@ -25,20 +25,22 @@
     "base_model:zai-org/GLM-5.3-Flash",
     "base_model:quantized:zai-org/GLM-5.3-Flash",
     "license:mit",
-    "region:us"
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
   ],
   "likes": 0,
   "downloads_30d": 0,
   "trending_score": 0,
-  "parameters": null,
-  "parameters_human": null,
+  "parameters": 320759404382,
+  "parameters_human": "320.76B",
   "storage_bytes": 2545636729685,
   "storage_human": "2545.6 GB",
   "base_model": "zai-org/GLM-5.3-Flash",
   "formats": [
     "gguf"
   ],
-  "is_conversational": false,
+  "is_conversational": true,
   "gated": false,
   "removed": false,
   "removed_at": null,

@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "fbjr/MiniMax-H3-Acc-LoRAs-sidecar",
+  "slug": "fbjr-minimax-h3-acc-loras-sidecar",
+  "author": "fbjr",
+  "url": "https://huggingface.co/fbjr/MiniMax-H3-Acc-LoRAs-sidecar",
+  "created_at": "2026-08-29T22:11:31.000Z",
+  "updated_at": "2026-08-30T01:04:57.000Z",
+  "license": "minimax-h3-community-license-agreement",
+  "license_family": "unknown",
+  "pipeline_tag": "text-to-video",
+  "library": "minimax-h3",
+  "languages": [],
+  "tags": [
+    "minimax-h3",
+    "comfyui",
+    "text-to-video",
+    "lora",
+    "base_model:MiniMaxAI/MiniMax-H3",
+    "base_model:adapter:MiniMaxAI/MiniMax-H3",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 2,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 5585718328,
+  "storage_human": "5.6 GB",
+  "base_model": "alibaba-pai/MiniMax-H3-Acc-LoRAs, MiniMaxAI/MiniMax-H3",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "MiniMax-H3-Acc-LoRAs - a Hugging Face Space by mezroui",
+      "url": "https://huggingface.co/spaces/mezroui/MiniMax-H3-Acc-LoRAs-demo",
+      "snippet": "Video Showcase Baseline · Turbo 4-step · Acc 8-step Official test cases from Minimax-H3-Turbo, generated with a LoRA weight of 1.0 at both 4 and 8 NFE. Videos are streamed from the model repository — no GPU is needed to view them."
+    },
+    {
+      "title": "alibaba-pai/MiniMax-H3-Acc-LoRAs · Hugging Face",
+      "url": "https://huggingface.co/alibaba-pai/MiniMax-H3-Acc-LoRAs",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "MiniMax H3 LoRA — Categories, Settings & Where to Find Them",
+      "url": "https://minimax3.org/minimax-h3-lora",
+      "snippet": "MiniMax H3 LoRA Directory MiniMax H3 LoRA — Categories, Settings & Where to Find Them A curated directory of MiniMax H3 LoRA archetypes — Turbo, style, character, motion, and camera. Each entry lists the recommended strength, steps, and sampler, plus verified search sources on Hugging Face and Civitai. MiniMax H3-Base is the official open release. LoRAs described on this page are community ..."
+    },
+    {
+      "title": "ComfyUI-MiniMax-H3-PDD-Acc - GitHub",
+      "url": "https://github.com/Jalen-Brunson/ComfyUI-MiniMax-H3-PDD-Acc",
+      "snippet": "MiniMax H3 PDD Acc Scheduler — MiniMaxH3PDDAccScheduler Standalone SIGMAS emitter for partial-denoise / split-sigma workflows. At denoise 1.0 it equals the Apply node&#x27;s sigmas output."
+    },
+    {
+      "title": "MiniMax H3 Acc LoRA: Official 8-Step PDD Distillation in ComfyUI",
+      "url": "https://comfyui-wiki.com/en/news/2026-08-26-minimax-h3-pdd-acc-lora",
+      "snippet": "MiniMax-H3-Acc-LoRAs (Hugging Face | VideoX-Fun | arXiv) is an official release from Alibaba PAI applying Parallel Decoding Distillation (PDD) to MiniMax H3. Two acceleration adapters render joint video plus synchronized audio in 8 or 4 sampler steps with no classifier-free guidance, and a dedicated ComfyUI node pack brings the release to native ComfyUI workflows."
+    }
+  ]
+}

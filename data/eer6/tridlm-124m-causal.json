@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "EER6/TriDLM-124M-causal",
+  "slug": "eer6-tridlm-124m-causal",
+  "author": "EER6",
+  "url": "https://huggingface.co/EER6/TriDLM-124M-causal",
+  "created_at": "2026-08-29T22:06:29.000Z",
+  "updated_at": "2026-08-29T22:06:37.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "feature-extraction",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "tridlm",
+    "feature-extraction",
+    "masked-diffusion",
+    "diffusion-language-model",
+    "gpt2",
+    "openwebtext",
+    "triangular-attention",
+    "custom_code",
+    "en",
+    "dataset:Skylion007/openwebtext",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 124375296,
+  "parameters_human": "124.4M",
+  "storage_bytes": 497511424,
+  "storage_human": "498 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "EER6 (EER6) - Hugging Face",
+      "url": "https://huggingface.co/EER6",
+      "snippet": "Org profile for EER6 on Hugging Face, the AI community building the future."
+    },
+    {
+      "title": "LLM Leaderboard & AI Model Benchmarks — August 2026",
+      "url": "https://benchlm.ai/",
+      "snippet": "LLM Leaderboard & AI Model Benchmarks — August 2026 Compare frontier AI models by quality, cost, and context. 105 Supported and 123 Estimated models among 406 tracked LLMs — 408 benchmarks, real pricing, and runtime data in one place."
+    },
+    {
+      "title": "GPT-2 (124M) From Scratch in PyTorch - GitHub",
+      "url": "https://github.com/KshitijK288/GPT-2-124M-From-Scratch-in-PyTorch",
+      "snippet": "This project implements the GPT-2 (124M) transformer model entirely from scratch using PyTorch, including custom multi-head causal self-attention, LayerNorm, training loop, and text generation."
+    },
+    {
+      "title": "Awesome Causal AI - GitHub",
+      "url": "https://github.com/pozapas/awesome-causal-ai",
+      "snippet": "Awesome Causal AI is a curated index of research papers, software libraries, datasets, courses, and practical resources for causal artificial intelligence. The repository is archived on Zenodo; use the DOI badge above for the latest archived version, or the citation block at the end for the exact v1.0.5 release."
+    },
+    {
+      "title": "LLM Leaderboard 2026: Compare 300+ Top AI Models by Intelligence, Speed ...",
+      "url": "https://llm-stats.com/leaderboards/llm-leaderboard",
+      "snippet": "The LLM Leaderboard — independent ranking of GPT, Claude, Gemini, Llama, DeepSeek and 300+ AI models by intelligence, speed and price. Filter by provider, license, modality and context window; sort by every benchmark. Composite LLM Stats Score updated continuously from public benchmarks and live API metrics."
+    }
+  ]
+}

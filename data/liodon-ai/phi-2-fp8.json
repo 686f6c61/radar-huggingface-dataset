@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "liodon-ai/phi-2-FP8",
+  "slug": "liodon-ai-phi-2-fp8",
+  "author": "liodon-ai",
+  "url": "https://huggingface.co/liodon-ai/phi-2-FP8",
+  "created_at": "2026-08-30T01:04:43.000Z",
+  "updated_at": "2026-08-30T01:09:19.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "phi",
+    "text-generation",
+    "fp8",
+    "compressed-tensors",
+    "vllm",
+    "quantized",
+    "base_model:microsoft/phi-2",
+    "base_model:quantized:microsoft/phi-2",
+    "license:other",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 2779683840,
+  "parameters_human": "2.78B",
+  "storage_bytes": 3044331912,
+  "storage_human": "3.0 GB",
+  "base_model": "microsoft/phi-2",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "liodon-ai (Liodon AI) - Hugging Face",
+      "url": "https://huggingface.co/liodon-ai",
+      "snippet": "Liodon AI We are a research-driven open-source organization dedicated to advancing the frontier of Small Language Models (SLMs) and high-efficiency deep learning infrastructure. Our goal is to democratize highly capable, compact intelligence that can run seamlessly on resource-constrained environments and edge devices without sacrificing reasoning ability."
+    },
+    {
+      "title": "Home - LioDon AI",
+      "url": "https://liodon.ai/",
+      "snippet": "Ready to explore the research? Liodon AI is not a company — just open-source research. Star a repo, open an issue, or just read the code."
+    },
+    {
+      "title": "microsoft/phi-2 · Hugging Face",
+      "url": "https://huggingface.co/microsoft/phi-2",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Phi Open Models - Small Language Models | Microsoft Azure",
+      "url": "https://azure.microsoft.com/en-us/products/phi/",
+      "snippet": "Phi open model family Phi models offer cost-effective, high-performance AI solutions at the edge, pushing the boundaries of generative AI."
+    },
+    {
+      "title": "Phi Open Models - Small Language Models | Microsoft Azure",
+      "url": "https://azure.microsoft.com/en-in/products/phi/",
+      "snippet": "Phi models Explore flexible pricing for the family of Phi models. Each model supports various pricing options to fit your needs. Phi models are available through model as a service (MaaS) with pay-as-you-go billing via inference APIs. Users can also access Phi models for free for real-time deployment through the Azure AI model catalog or ..."
+    }
+  ]
+}

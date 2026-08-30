@@ -5,7 +5,7 @@
   "author": "tuongvy2603",
   "url": "https://huggingface.co/tuongvy2603/continue_sft_bitd_lora_data_new",
   "created_at": "2026-08-28T14:20:41.000Z",
-  "updated_at": "2026-08-28T14:22:12.000Z",
+  "updated_at": "2026-08-29T06:35:54.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -28,12 +28,12 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 0,
+  "downloads_30d": 6,
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
-  "storage_bytes": 159973721,
-  "storage_human": "160 MB",
+  "storage_bytes": 319947442,
+  "storage_human": "320 MB",
   "base_model": "tuongvy2603/BITD_baseline",
   "formats": [
     "safetensors"

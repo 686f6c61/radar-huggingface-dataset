@@ -1,0 +1,105 @@
+{
+  "schema": 1,
+  "id": "Guile/Llama-3-8B-Lexi-Uncensored",
+  "slug": "guile-llama-3-8b-lexi-uncensored",
+  "author": "Guile",
+  "url": "https://huggingface.co/Guile/Llama-3-8B-Lexi-Uncensored",
+  "created_at": "2026-08-29T22:22:26.000Z",
+  "updated_at": "2026-08-29T22:22:26.000Z",
+  "license": "llama3",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "llama",
+    "uncensored",
+    "llama3",
+    "instruct",
+    "open",
+    "license:llama3",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 8030261248,
+  "parameters_human": "8.03B",
+  "storage_bytes": 17671168912,
+  "storage_human": "17.7 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "Text Generation",
+      "dataset": "AI2 Reasoning Challenge (25-Shot)",
+      "metric": "normalized accuracy",
+      "value": 59.56
+    },
+    {
+      "task": "Text Generation",
+      "dataset": "HellaSwag (10-Shot)",
+      "metric": "normalized accuracy",
+      "value": 77.88
+    },
+    {
+      "task": "Text Generation",
+      "dataset": "MMLU (5-Shot)",
+      "metric": "accuracy",
+      "value": 67.68
+    },
+    {
+      "task": "Text Generation",
+      "dataset": "TruthfulQA (0-shot)",
+      "metric": null,
+      "value": 47.72
+    },
+    {
+      "task": "Text Generation",
+      "dataset": "Winogrande (5-shot)",
+      "metric": "accuracy",
+      "value": 75.85
+    },
+    {
+      "task": "Text Generation",
+      "dataset": "GSM8k (5-shot)",
+      "metric": "accuracy",
+      "value": 68.39
+    }
+  ],
+  "sources": [
+    {
+      "title": "Andycurrent/Llama-3-8B-Lexi-Uncensored · Hugging Face",
+      "url": "https://huggingface.co/Andycurrent/Llama-3-8B-Lexi-Uncensored",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Orenguteng/Llama-3-8B-Lexi-Uncensored · Hugging Face",
+      "url": "https://huggingface.co/Orenguteng/Llama-3-8B-Lexi-Uncensored",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "A Guide to Llama-3-8B-Lexi-Uncensored",
+      "url": "https://www.promptaa.com/blog/llama-3-8-b-lexi-uncensored",
+      "snippet": "Explore our complete guide on Llama-3-8B-Lexi-Uncensored. Learn setup, prompt engineering, fine-tuning, and ethical use cases for this powerful AI model."
+    },
+    {
+      "title": "taozhiyuai/llama-3-8b-lexi-uncensored",
+      "url": "https://ollama.com/taozhiyuai/llama-3-8b-lexi-uncensored",
+      "snippet": "Lexi is uncensored, which makes the model compliant. You are advised to implement your own alignment layer before exposing the model as a service. It will be highly compliant with any requests, even unethical ones."
+    },
+    {
+      "title": "Lexi Llama 3 8b Uncensored - GGUF Model - local-ai-zone.github.io",
+      "url": "https://local-ai-zone.github.io/models/lexi-llama-3-8b-uncensored.html",
+      "snippet": "Download Lexi Llama 3 8b Uncensored GGUF model. 4.72 GB, 6,929 downloads, 55 likes."
+    }
+  ]
+}

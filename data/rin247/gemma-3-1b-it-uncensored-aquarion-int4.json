@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "Rin247/gemma-3-1b-it-Uncensored-Aquarion-INT4",
+  "slug": "rin247-gemma-3-1b-it-uncensored-aquarion-int4",
+  "author": "Rin247",
+  "url": "https://huggingface.co/Rin247/gemma-3-1b-it-Uncensored-Aquarion-INT4",
+  "created_at": "2026-08-29T23:45:45.000Z",
+  "updated_at": "2026-08-29T23:46:24.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "gemma3_text",
+    "quantized",
+    "int4",
+    "uncensored",
+    "abliterated",
+    "8-bit",
+    "int4_weight_only",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 651005056,
+  "parameters_human": "651.0M",
+  "storage_bytes": 1002184314,
+  "storage_human": "1.0 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "google/gemma-3-1b-it · Hugging Face",
+      "url": "https://huggingface.co/google/gemma-3-1b-it",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Gemma 3 Uncensored - a braindao Collection - Hugging Face",
+      "url": "https://huggingface.co/collections/braindao/gemma-3-uncensored-67f69fa74032c8826bcef524",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Gemma 3 Technical Report - arXiv.org",
+      "url": "https://arxiv.org/html/2503.19786v1",
+      "snippet": "1 Introduction We present the newest version of Gemma open language models (Gemma Team, 2024a), co-designed with the family of Gemini frontier models (Gemini Team, 2023). This new version comes in sizes comparable to Gemma 2 (Gemma Team, 2024b), with the addition of a 1B model."
+    },
+    {
+      "title": "Gemma 3 — Google DeepMind",
+      "url": "https://deepmind.google/models/gemma/gemma-3/",
+      "snippet": "Gemma 3 is the most capable model that can run on a single GPU or TPU. Efficient on workstations, laptops, and even smartphones, allowing developers to build responsible AI applications at scale."
+    },
+    {
+      "title": "Gemma 3 AI | The best AI multimodal model on a single GPU",
+      "url": "https://gemma3.ai/",
+      "snippet": "Discover Gemma 3 AI - The world&#x27;s most cost-efficient open AI model with multimodal capabilities, 128k context window, and 140+ language support. Optimized for single-GPU deployment."
+    }
+  ]
+}

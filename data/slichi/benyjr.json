@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "Slichi/BenyJr",
+  "slug": "slichi-benyjr",
+  "author": "Slichi",
+  "url": "https://huggingface.co/Slichi/BenyJr",
+  "created_at": "2026-08-29T21:14:08.000Z",
+  "updated_at": "2026-08-29T21:14:48.000Z",
+  "license": "openrail",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:openrail",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 162638223,
+  "storage_human": "163 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Slichi/slichi · Hugging Face",
+      "url": "https://huggingface.co/Slichi/slichi",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Benyjr (Singer) (Spain) [RVC v2] [2 Epochs] AI Voice Model",
+      "url": "https://voice-models.com/model/95o",
+      "snippet": "Benyjr (Singer) (Spain) [RVC v2] [2 Epochs] AI voice model for RVC voice conversion. View details, samples, source status, and run this voice model in EasyAIVoice."
+    },
+    {
+      "title": "Slichi (Spichy) - Hugging Face",
+      "url": "https://huggingface.co/Slichi",
+      "snippet": "User profile of Spichy on Hugging Face"
+    },
+    {
+      "title": "Benyjr (Singer) (Spain) [RVC v2] [2 Epochs] AI Voice Model",
+      "url": "https://new.voice-models.com/model/95o",
+      "snippet": "Sample deck Pitch previews Listen across generated pitch samples, then Run. Hold Ctrl or Cmd to select multiple pitches."
+    },
+    {
+      "title": "LLM Leaderboard & AI Model Benchmarks — August 2026",
+      "url": "https://benchlm.ai/",
+      "snippet": "LLM Leaderboard & AI Model Benchmarks — August 2026 Compare frontier AI models by quality, cost, and context. 105 Supported and 123 Estimated models among 406 tracked LLMs — 408 benchmarks, real pricing, and runtime data in one place."
+    }
+  ]
+}

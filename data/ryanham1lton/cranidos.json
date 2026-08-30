@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "Ryanham1lton/Cranidos",
+  "slug": "ryanham1lton-cranidos",
+  "author": "Ryanham1lton",
+  "url": "https://huggingface.co/Ryanham1lton/Cranidos",
+  "created_at": "2026-08-29T20:05:56.000Z",
+  "updated_at": "2026-08-29T20:06:24.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:cc-by-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 117769740,
+  "storage_human": "118 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Ryanham1lton (Ryan James Hamilton) - Hugging Face",
+      "url": "https://huggingface.co/Ryanham1lton",
+      "snippet": "AI & ML interests ... Recent Activity updated a model about 12 hours ago ... published a model about 12 hours ago"
+    },
+    {
+      "title": "cranidos｜AI Art Model & LoRA | PixAI",
+      "url": "https://pixai.art/model/1922538681603823232",
+      "snippet": "Just created this stunning anime, pokemon, fossil, cranidos anime art with the amazing &#x27;cranidos&#x27; model on PixAI! Search for \"cranidos\" on PixAI - the free & professional AI anime art generator. Create your own masterpieces in seconds. Try it now!"
+    },
+    {
+      "title": "Ryanham1lton/GrumpigDD · Hugging Face",
+      "url": "https://huggingface.co/Ryanham1lton/GrumpigDD",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Ryanham1lton/Hamm · Hugging Face",
+      "url": "https://huggingface.co/Ryanham1lton/Hamm",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Ryanham1lton/Meganium · Hugging Face",
+      "url": "https://huggingface.co/Ryanham1lton/Meganium",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    }
+  ]
+}

@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "INSSeee/SDXL-Lightning-2steps",
+  "slug": "insseee-sdxl-lightning-2steps",
+  "author": "INSSeee",
+  "url": "https://huggingface.co/INSSeee/SDXL-Lightning-2steps",
+  "created_at": "2026-08-30T01:35:26.000Z",
+  "updated_at": "2026-08-30T01:35:26.000Z",
+  "license": "openrail++",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-image",
+  "library": "diffusers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "diffusers",
+    "safetensors",
+    "en",
+    "license:openrail++",
+    "endpoints_compatible",
+    "diffusers:StableDiffusionXLPipeline",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 2567463684,
+  "parameters_human": "2.57B",
+  "storage_bytes": 13875688436,
+  "storage_human": "13.9 GB",
+  "base_model": null,
+  "formats": [
+    "diffusers",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "SDXL-Lightning - 2step - Free AI Model | Tensor.Art",
+      "url": "https://tensor.art/models/700056609587466255",
+      "snippet": "SDXL-Lightning is a lightning-fast text-to-image generation model. It can generate high-quality 1024px images in a few steps. For more information, please refer to our research paper: SDXL-Lightning: Progressive Adversarial Diffusion Distillation. We open-source the model as part of the research."
+    },
+    {
+      "title": "ByteDance/SDXL-Lightning · Hugging Face",
+      "url": "https://huggingface.co/ByteDance/SDXL-Lightning",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "rupeshs/SDXL-Lightning-2steps · Hugging Face",
+      "url": "https://huggingface.co/rupeshs/SDXL-Lightning-2steps",
+      "snippet": "SDXL-Lightning-2steps like 2 Text-to-Image Diffusers Safetensors English StableDiffusionXLPipeline License:openrail++ Model card FilesFiles and versions Community Train Deploy Use this model"
+    },
+    {
+      "title": "SDXL Lightning LoRAs - 2 Steps | Stable Diffusion XL LoRA | Civitai",
+      "url": "https://civitai.com/models/350450/sdxl-lightning-loras",
+      "snippet": "SDXL-Lightning is a lightning-fast text-to-image generation model. It can generate high-quality 1024px images in a few steps. For more information, please refer to our research paper: SDXL-Lightning: Progressive Adversarial Diffusion Distillation. We open-source the model as part of the research."
+    },
+    {
+      "title": "JP | SDXL-Lightning | Kaggle",
+      "url": "https://www.kaggle.com/models/josepart/sdxl-lightning",
+      "snippet": "License: openrail++ From the README: SDXL-Lightning SDXL-Lightning is a lightning-fast text-to-image generation model. It can generate high-quality 1024px images in a few steps. For more information, please refer to our research paper: SDXL-Lightning: Progressive Adversarial Diffusion Distillation. We open-source the model as part of the research. Our models are distilled from stabilityai ..."
+    }
+  ]
+}

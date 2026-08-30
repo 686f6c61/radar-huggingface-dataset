@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "Mouserat/nezumi-safety-model-v1.1-preview",
+  "slug": "mouserat-nezumi-safety-model-v1-1-preview",
+  "author": "Mouserat",
+  "url": "https://huggingface.co/Mouserat/nezumi-safety-model-v1.1-preview",
+  "created_at": "2026-08-30T01:24:43.000Z",
+  "updated_at": "2026-08-30T01:24:43.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Mouserat/nezumi-models · Datasets at Hugging Face",
+      "url": "https://huggingface.co/datasets/Mouserat/nezumi-models",
+      "snippet": "Datasets: Mouserat / nezumi-models like 0 License: apache-2.0 Dataset card FilesFiles and versions xet Community Dataset Viewer"
+    },
+    {
+      "title": "Mouserat (橋本樹) - Hugging Face",
+      "url": "https://huggingface.co/Mouserat",
+      "snippet": "Create and edit a simple static web page in your Space. Mouserat about 17 hours ago. models 0. None public yet"
+    },
+    {
+      "title": "Google models | Gemini Enterprise Agent Platform | Google Cloud ...",
+      "url": "https://docs.cloud.google.com/gemini-enterprise-agent-platform/models/google-models",
+      "snippet": "Model Garden is a platform that helps you discover, test, customize, and deploy Google proprietary and select OSS models and assets. To explore the generative AI models and APIs that are available on Gemini Enterprise Agent Platform, go to Model Garden in the Google Cloud console."
+    },
+    {
+      "title": "Models - Gemini API | Google AI for Developers",
+      "url": "https://ai.google.dev/gemini-api/docs/models",
+      "snippet": "Preview Points to a preview model which may be used for production. Preview models will typically have billing enabled, might come with more restrictive rate limits and will be deprecated with at least 2 weeks notice. For example: gemini-2.5-flash-preview-09-2025. Latest Points to the latest release for a specific model variation."
+    },
+    {
+      "title": "Moonshot AI",
+      "url": "https://www.moonshot.ai/",
+      "snippet": "Complex problems, solved with ease AI Models is capability. Code, analyze, sheets and slides — simplify complex work with the latest flagship model."
+    }
+  ]
+}

@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "Rin247/gemma-3-4b-it-Uncensored-Aquarion-INT8",
+  "slug": "rin247-gemma-3-4b-it-uncensored-aquarion-int8",
+  "author": "Rin247",
+  "url": "https://huggingface.co/Rin247/gemma-3-4b-it-Uncensored-Aquarion-INT8",
+  "created_at": "2026-08-29T23:52:32.000Z",
+  "updated_at": "2026-08-29T23:54:39.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "gemma3",
+    "quantized",
+    "int8",
+    "uncensored",
+    "abliterated",
+    "8-bit",
+    "int8_weight_only",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 4300079472,
+  "parameters_human": "4.30B",
+  "storage_bytes": 5018686818,
+  "storage_human": "5.0 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "google/gemma-3-4b-it · Hugging Face",
+      "url": "https://huggingface.co/google/gemma-3-4b-it",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "VibeStudio/Nidum-Gemma-3-4B-it-Uncensored · Hugging Face",
+      "url": "https://huggingface.co/nidum/Nidum-Gemma-3-4B-it-Uncensored",
+      "snippet": "Welcome to Nidum&#x27;s Gemma-3-4B IT Uncensored, your gateway to an open and unrestricted AI experience. This powerful model enables users to explore and innovate without boundaries."
+    },
+    {
+      "title": "Run Gemma 4 Locally: From 4 GB VRAM (E4B) to 31B, Free",
+      "url": "https://locallyuncensored.com/blog/gemma-4-local-guide.html",
+      "snippet": "Run Google&#x27;s Gemma 4 on your own PC — E4B fits 4 GB VRAM, up to 31B dense. Vision, tool calling, 256K context, plus uncensored Heretic GGUF links."
+    },
+    {
+      "title": "Gemma-3-4B-IT-Uncensored Open-Source Model - A Practical AI Option with ...",
+      "url": "https://model.aibase.com/models/details/1915738540060860418",
+      "snippet": "OPT is an open pre-trained Transformer language model suite released by Meta AI, with parameter sizes ranging from 125 million to 175 billion, designed to match the performance of the GPT-3 series while promoting open research in large-scale language models."
+    },
+    {
+      "title": "Gemma 3 — Google DeepMind",
+      "url": "https://deepmind.google/models/gemma/gemma-3/",
+      "snippet": "Gemma 3 is the most capable model that can run on a single GPU or TPU. Efficient on workstations, laptops, and even smartphones, allowing developers to build responsible AI applications at scale."
+    }
+  ]
+}

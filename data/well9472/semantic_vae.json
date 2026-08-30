@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "well9472/semantic_vae",
+  "slug": "well9472-semantic_vae",
+  "author": "well9472",
+  "url": "https://huggingface.co/well9472/semantic_vae",
+  "created_at": "2026-08-29T22:12:27.000Z",
+  "updated_at": "2026-08-29T22:53:19.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 859679660,
+  "storage_human": "860 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "well9472/Nanosaur-250M · Hugging Face",
+      "url": "https://huggingface.co/well9472/Nanosaur-250M",
+      "snippet": "PS-VAE: A VAE that compresses DINOv3&#x27;s representation while retaining the semantic content DeCo: A diffusion transformer with a wide MLP head per patch similar to DDT This model was trained in 42 hours on 1 GPU from scratch, setting a new standard for compute efficiency in T2I illustration training. This model is intended for research purposes."
+    },
+    {
+      "title": "well9472 (Well Aks) - Hugging Face",
+      "url": "https://huggingface.co/well9472/datasets",
+      "snippet": "AI & ML interests ... Recent Activity updated a model 1 day ago ... published a model 1 day ago"
+    },
+    {
+      "title": "GitHub - ZhikangNiu/Semantic-VAE: [INTERSPEECH 2026 Oral]Official code ...",
+      "url": "https://github.com/ZhikangNiu/Semantic-VAE",
+      "snippet": "🚀 [2026.06] Our paper is accepted to Interspeech 2026, hope to see you at the conference. 🚀 [2025.10] We upload Semantic-VAE 1M update steps model in Huggingface. 🚀 [2025.10] We release all the code and pre-trained models (semantic-vae, acoustic-vae-dim16, and acoustic-vae-dim64) to promote the research of semantic-aligned VAE for speech synthesis after cleaning the code."
+    },
+    {
+      "title": "[2509.22167] Semantic-VAE: Semantic-Alignment Latent Representation for ...",
+      "url": "https://arxiv.org/abs/2509.22167",
+      "snippet": "To overcome this dilemma, we propose Semantic-VAE, which uses semantic alignment regularization in the latent space. This design alleviates the reconstruction-generation trade-off by capturing semantic structure in high-dimensional latent representations."
+    },
+    {
+      "title": "GitHub - ZhikangNiu/Semantic-VAE: Official code for \"Semantic-VAE ...",
+      "url": "https://github.com/ZhikangNiu/Semantic-VAE/tree/main",
+      "snippet": "🚀 [2025.10] We upload Semantic-VAE 1M update steps model in Huggingface. 🚀 [2025.10] We release all the code and pre-trained models (semantic-vae, acoustic-vae-dim16, and acoustic-vae-dim64) to promote the research of semantic-aligned VAE for speech synthesis after cleaning the code."
+    }
+  ]
+}

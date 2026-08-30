@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "mehmettozlu/Turkish-Llama-3.1-8B-Instruct-AWQ",
+  "slug": "mehmettozlu-turkish-llama-3-1-8b-instruct-awq",
+  "author": "mehmettozlu",
+  "url": "https://huggingface.co/mehmettozlu/Turkish-Llama-3.1-8B-Instruct-AWQ",
+  "created_at": "2026-08-29T21:21:15.000Z",
+  "updated_at": "2026-08-29T21:28:44.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "llama",
+    "text-generation",
+    "conversational",
+    "arxiv:1910.09700",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "compressed-tensors",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 8030261248,
+  "parameters_human": "8.03B",
+  "storage_bytes": 5745179810,
+  "storage_human": "5.7 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Meta-Llama-3.1-8B-Instruct-AWQ-INT4 - Hugging Face",
+      "url": "https://huggingface.co/hugging-quants/Meta-Llama-3.1-8B-Instruct-AWQ-INT4",
+      "snippet": "To run the inference on top of Llama 3.1 8B Instruct AWQ in INT4 precision, the AWQ model can be instantiated as any other causal language modeling model via AutoModelForCausalLM and run the inference normally."
+    },
+    {
+      "title": "hugging-quants/Meta-Llama-3.1-8B-Instruct-AWQ-INT4 at main",
+      "url": "https://huggingface.co/hugging-quants/Meta-Llama-3.1-8B-Instruct-AWQ-INT4/tree/main",
+      "snippet": "Instructions to use hugging-quants/Meta-Llama-3.1-8B-Instruct-AWQ-INT4 with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "GitHub - GargTanya/llama3-instruct: The official Meta Llama 3 GitHub ...",
+      "url": "https://github.com/GargTanya/llama3-instruct",
+      "snippet": "Our latest version of Llama is now accessible to individuals, creators, researchers, and businesses of all sizes so that they can experiment, innovate, and scale their ideas responsibly. This release includes model weights and starting code for pre-trained and instruction-tuned Llama 3 language models — including sizes of 8B to 70B parameters."
+    },
+    {
+      "title": "Meta-Llama-3.1-8B-Instruct - Model Info, Parameters, Benchmarks ...",
+      "url": "https://www.siliconflow.com/models/meta-llama-3-1-8b-instruct",
+      "snippet": "Meta Llama 3.1 is a family of multilingual large language models developed by Meta, featuring pretrained and instruction-tuned variants in 8B, 70B, and 405B parameter sizes. This 8B instruction-tuned model is optimized for multilingual dialogue use cases and outperforms many available open-source and closed chat models on common industry ..."
+    },
+    {
+      "title": "GitHub - meta-llama/llama3: The official Meta Llama 3 GitHub site",
+      "url": "https://github.com/meta-llama/llama3",
+      "snippet": "Our latest version of Llama is now accessible to individuals, creators, researchers, and businesses of all sizes so that they can experiment, innovate, and scale their ideas responsibly. This release includes model weights and starting code for pre-trained and instruction-tuned Llama 3 language models — including sizes of 8B to 70B parameters."
+    }
+  ]
+}

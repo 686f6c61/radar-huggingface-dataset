@@ -5,7 +5,7 @@
   "author": "AverageMetaheuristicsEnjoyer",
   "url": "https://huggingface.co/AverageMetaheuristicsEnjoyer/moe-routing-drift-checkpoints",
   "created_at": "2026-08-28T14:52:15.000Z",
-  "updated_at": "2026-08-28T14:55:40.000Z",
+  "updated_at": "2026-08-29T14:57:30.000Z",
   "license": "mit",
   "license_family": "oss",
   "pipeline_tag": null,
@@ -28,8 +28,8 @@
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
-  "storage_bytes": 5499405248,
-  "storage_human": "5.5 GB",
+  "storage_bytes": 5663247296,
+  "storage_human": "5.7 GB",
   "base_model": "inclusionAI/Ling-mini-2.0, Qwen/Qwen3-30B-A3B-Instruct-2507",
   "formats": [
     "safetensors"

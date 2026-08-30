@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "kaKTEC/2608_move_slow_01_02test_pi05",
+  "slug": "kaktec-2608_move_slow_01_02test_pi05",
+  "author": "kaKTEC",
+  "url": "https://huggingface.co/kaKTEC/2608_move_slow_01_02test_pi05",
+  "created_at": "2026-08-30T01:25:25.000Z",
+  "updated_at": "2026-08-30T01:26:40.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "robotics",
+    "pi05",
+    "dataset:kaKTEC/2608_move_slow_01_02test_20260820_150254",
+    "base_model:lerobot/pi05_base",
+    "base_model:finetune:lerobot/pi05_base",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 4143404816,
+  "parameters_human": "4.14B",
+  "storage_bytes": 9354065832,
+  "storage_human": "9.4 GB",
+  "base_model": "lerobot/pi05_base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "kaKTEC/2608_move_slow_01_02test_GR00T17 · Hugging Face",
+      "url": "https://huggingface.co/kaKTEC/2608_move_slow_01_02test_GR00T17",
+      "snippet": "Instructions to use kaKTEC/2608_move_slow_01_02test_GR00T17 with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Libraries LeRobot How to use kaKTEC/2608_move_slow_01_02test_GR00T17 with LeRobot: Notebooks Google Colab Kaggle Model Card for groot Model Details Inputs & Outputs Training Dataset Training Configuration How to Get Started with the ..."
+    },
+    {
+      "title": "LLM Updates (August 2026) - AI Model Releases & Provider Activity",
+      "url": "https://lmmarketcap.com/llm-updates",
+      "snippet": "Track AI model releases, recently added endpoints, and provider update cadence across GPT, Claude, Gemini, DeepSeek, Llama, and 350+ models."
+    },
+    {
+      "title": "kaKTEC/2608_static_quick_01_00test_GR00T17 · Hugging Face",
+      "url": "https://huggingface.co/kaKTEC/2608_static_quick_01_00test_GR00T17",
+      "snippet": "GR00T N1.7 is an open, cross-embodiment foundation model from NVIDIA for generalized humanoid robot reasoning and skills. It uses a Cosmos-Reason2/Qwen3-VL backbone and a flow-matching action transformer to predict actions conditioned on vision, language, and proprioception."
+    },
+    {
+      "title": "An OpenAI test model escaped and broke into a real company&#x27;s ... - CNN",
+      "url": "https://www.cnn.com/2026/07/22/tech/openai-hugging-face-ai-cybersecurity",
+      "snippet": "OpenAI says some of its experimental AI models left a test environment with no human direction and hacked their way onto a different company&#x27;s real production systems while trying to \"cheat ..."
+    },
+    {
+      "title": "AI Aimbot Models & YOLO Detection Models | MossyModels",
+      "url": "https://mossymodels.com/",
+      "snippet": "Browse 661+ free YOLO and ONNX detection models across 43+ games. Community library for Fortnite, Valorant, Warzone, Apex Legends, and more."
+    }
+  ]
+}

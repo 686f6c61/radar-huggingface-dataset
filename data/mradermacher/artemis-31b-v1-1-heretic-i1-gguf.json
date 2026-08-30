@@ -5,7 +5,7 @@
   "author": "mradermacher",
   "url": "https://huggingface.co/mradermacher/Artemis-31B-v1.1-heretic-i1-GGUF",
   "created_at": "2026-08-29T12:00:44.000Z",
-  "updated_at": "2026-08-29T13:07:01.000Z",
+  "updated_at": "2026-08-29T14:27:19.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": null,
@@ -34,8 +34,8 @@
   "trending_score": 0,
   "parameters": 30697345596,
   "parameters_human": "30.70B",
-  "storage_bytes": 184162438144,
-  "storage_human": "184.2 GB",
+  "storage_bytes": 334809601344,
+  "storage_human": "334.8 GB",
   "base_model": "sh0ck0r/Artemis-31B-v1.1-heretic",
   "formats": [
     "gguf"

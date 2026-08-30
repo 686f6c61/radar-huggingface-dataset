@@ -5,7 +5,7 @@
   "author": "jamesrogers",
   "url": "https://huggingface.co/jamesrogers/Qwen3.8-Flash-Next-MXFP4-ngramBF16-GGUF",
   "created_at": "2026-08-27T18:39:45.000Z",
-  "updated_at": "2026-08-28T00:54:36.000Z",
+  "updated_at": "2026-08-29T08:14:11.000Z",
   "license": "qwen",
   "license_family": "unknown",
   "pipeline_tag": null,
@@ -19,6 +19,7 @@
     "ik_llama.cpp",
     "speculative-decoding",
     "mtp",
+    "self-speculative",
     "base_model:Qwen/Qwen3.8-Flash-Next",
     "base_model:quantized:Qwen/Qwen3.8-Flash-Next",
     "license:other",
@@ -26,13 +27,13 @@
     "region:us",
     "conversational"
   ],
-  "likes": 2,
+  "likes": 3,
   "downloads_30d": 0,
   "trending_score": 0,
   "parameters": 176943899520,
   "parameters_human": "176.94B",
-  "storage_bytes": 473745533896,
-  "storage_human": "473.7 GB",
+  "storage_bytes": 600591687752,
+  "storage_human": "600.6 GB",
   "base_model": "Qwen/Qwen3.8-Flash-Next",
   "formats": [
     "gguf"

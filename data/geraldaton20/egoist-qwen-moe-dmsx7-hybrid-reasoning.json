@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "geraldaton20/egoist-qwen-MoE-DMSx7-Hybrid-Reasoning",
+  "slug": "geraldaton20-egoist-qwen-moe-dmsx7-hybrid-reasoning",
+  "author": "geraldaton20",
+  "url": "https://huggingface.co/geraldaton20/egoist-qwen-MoE-DMSx7-Hybrid-Reasoning",
+  "created_at": "2026-08-29T21:57:07.000Z",
+  "updated_at": "2026-08-29T21:59:20.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "gguf",
+  "languages": [],
+  "tags": [
+    "gguf",
+    "qwen3",
+    "moe",
+    "q4_k_m",
+    "chain-of-draft",
+    "dms",
+    "hybrid-reasoning",
+    "quantization",
+    "text-generation",
+    "base_model:Qwen/Qwen3-0.6B",
+    "base_model:quantized:Qwen/Qwen3-0.6B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1086935356,
+  "parameters_human": "1.09B",
+  "storage_bytes": 673798752,
+  "storage_human": "674 MB",
+  "base_model": "Qwen/Qwen3-0.6B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "‎Google Gemini",
+      "url": "https://gemini.google.com/",
+      "snippet": "Meet Gemini, Google&#x27;s AI assistant. Get help with writing, planning, brainstorming, and more. Experience the power of generative AI."
+    },
+    {
+      "title": "Qwen (Qwen) - Hugging Face",
+      "url": "https://huggingface.co/Qwen",
+      "snippet": "Org profile for Qwen on Hugging Face, the AI community building the future."
+    },
+    {
+      "title": "Qwen/Qwen3-32B · Hugging Face",
+      "url": "https://huggingface.co/Qwen/Qwen3-32B",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Models.MoE - Keeps track of latest open-source MoE LLMs.",
+      "url": "https://models.moe/",
+      "snippet": "Models.MoE A lightweight landing page that keeps track of latest open-source MoE LLMs. Qwen3-VL (Qwen) Vision-language MoE focused on image/video understanding, temporal reasoning, and GUI/agent tasks. Available in Instruct and reasoning-enhanced Thinking editions. Native 256K context; commonly extended to ~1M per docs. Primary tiers: 235B and 30B. Qwen3-VL-235B-A22B-Instruct Large-capacity ..."
+    },
+    {
+      "title": "Qwen 3.6 Complete Guide: 27B Dense, 35B-A3B MoE, and Which to Use",
+      "url": "https://insiderllm.com/guides/qwen-3-6-local-ai-guide/",
+      "snippet": "Qwen shipped the 35B-A3B first in mid-April, then Max-Preview on April 20 as a closed-weights cloud preview, then the 27B dense on April 22. The 27B is the one Qwen labels \"flagship.\" The 35B-A3B is the one that lit up local-AI threads before the 27B even existed. Architecture-wise, Qwen 3.6 keeps the hybrid attention stack from 3.5."
+    }
+  ]
+}

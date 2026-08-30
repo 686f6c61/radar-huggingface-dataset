@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "leok7v/gemma-4-e4b-it-qat",
+  "slug": "leok7v-gemma-4-e4b-it-qat",
+  "author": "leok7v",
+  "url": "https://huggingface.co/leok7v/gemma-4-e4b-it-qat",
+  "created_at": "2026-08-04T06:07:38.000Z",
+  "updated_at": "2026-08-30T00:53:21.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "gguf",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "gguf",
+    "gemma4",
+    "quantized",
+    "on-device",
+    "multimodal",
+    "image-text-to-text",
+    "en",
+    "base_model:google/gemma-4-E4B-it-qat-mobile-transformers",
+    "base_model:quantized:google/gemma-4-E4B-it-qat-mobile-transformers",
+    "license:apache-2.0",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 504,
+  "trending_score": 0,
+  "parameters": 8612189514,
+  "parameters_human": "8.61B",
+  "storage_bytes": 3794550784,
+  "storage_human": "3.8 GB",
+  "base_model": "google/gemma-4-E4B-it-qat-mobile-transformers",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "leok7v/gemma-4-e4b-it-qat · Hugging Face",
+      "url": "https://huggingface.co/leok7v/gemma-4-e4b-it-qat",
+      "snippet": "Model Card for gemma-4-E4B-it (QAT, GGUF) A GGUF repack of Google&#x27;s quantization-aware-trained gemma-4-E4B-it build, packaged to run on device. It carries the text, vision and audio towers in one self-contained file: the tokenizer and chat template are embedded, so nothing ships alongside it and nothing calls out to a server at inference time."
+    },
+    {
+      "title": "leok7v/gemma-4-e4b-it-qat at main - Hugging Face",
+      "url": "https://huggingface.co/leok7v/gemma-4-e4b-it-qat/tree/main",
+      "snippet": "leok7v / gemma-4-e4b-it-qat like 0 Image-Text-to-Text GGUF English gemma4 quantized on-device multimodal conversational License:apache-2.0 Model card FilesFiles and versions xet Community Copy to bucket new main gemma-4-e4b-it-qat 3.79 GB Ctrl+K Ctrl+K 1 contributor History:4 commits leok7v license: apache-2.0, matching the upstream checkpoint ..."
+    },
+    {
+      "title": "Gemma-4-E4B-it - Qualcomm AI Hub",
+      "url": "https://aihub.qualcomm.com/iot/models/gemma_4_e4b_it",
+      "snippet": "Gemma-4-E4B-it Multimodal model from Google DeepMind handling text and image input. Gemma is a family of open models built by Google DeepMind. Gemma 4 models are multimodal, handling text and image input (with audio supported on small models) and generating text output. This release includes open‑weights models in both pre‑trained and instruction‑tuned variants. Gemma 4 features a ..."
+    },
+    {
+      "title": "Gemma 4 E4b It Qat - GGUF Model - local-ai-zone.github.io",
+      "url": "https://local-ai-zone.github.io/models/gemma-4-e4b-it-qat.html",
+      "snippet": "Download Gemma 4 E4b It Qat GGUF model. 2.36 GB, 509,840 downloads, 161 likes."
+    },
+    {
+      "title": "Gemma 4 — Google DeepMind",
+      "url": "https://deepmind.google/models/gemma/gemma-4/",
+      "snippet": "Safety Gemma 4 models undergo the same rigorous infrastructure security protocols as our proprietary models. By choosing Gemma 4, enterprises and sovereign organizations gain a trusted, transparent foundation that delivers state-of-the-art capabilities while meeting the highest standards for security and reliability."
+    }
+  ]
+}

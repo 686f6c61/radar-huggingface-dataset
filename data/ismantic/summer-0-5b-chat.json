@@ -5,7 +5,7 @@
   "author": "Ismantic",
   "url": "https://huggingface.co/Ismantic/Summer-0.5B-Chat",
   "created_at": "2026-08-27T12:02:49.000Z",
-  "updated_at": "2026-08-28T01:53:20.000Z",
+  "updated_at": "2026-08-29T13:15:50.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -31,12 +31,12 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 0,
+  "downloads_30d": 605,
   "trending_score": 0,
   "parameters": 524336128,
   "parameters_human": "524.3M",
-  "storage_bytes": 2100122500,
-  "storage_human": "2.1 GB",
+  "storage_bytes": 3148829884,
+  "storage_human": "3.1 GB",
   "base_model": null,
   "formats": [
     "safetensors"

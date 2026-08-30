@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "aonuzhdin/FUSED",
+  "slug": "aonuzhdin-fused",
+  "author": "aonuzhdin",
+  "url": "https://huggingface.co/aonuzhdin/FUSED",
+  "created_at": "2026-08-29T21:23:40.000Z",
+  "updated_at": "2026-08-29T21:24:08.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "pytorch",
+  "languages": [],
+  "tags": [
+    "pytorch",
+    "image-forensics",
+    "inpainting-detection",
+    "localization",
+    "convnext",
+    "moe",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 841391076,
+  "storage_human": "841 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Democratizing AI through model fusion: A comprehensive review and ...",
+      "url": "https://www.sciencedirect.com/science/article/pii/S295016012500049X",
+      "snippet": "This concentration hinders innovation, diversity, and equitable deployment of AI technologies. Our review comprehensively analyzes model fusion—a novel paradigm that integrates multiple specialized models into unified, efficient systems—offering a scalable and decentralized alternative for LLM development."
+    },
+    {
+      "title": "aonuzhdin (Anton) - Hugging Face",
+      "url": "https://huggingface.co/aonuzhdin",
+      "snippet": "User profile of Anton on Hugging Face"
+    },
+    {
+      "title": "PDF Democratizing AI through model fusion: A comprehensive review and ...",
+      "url": "https://www.cell.com/nexus/pdf/S2950-1601(25)00049-X.pdf",
+      "snippet": "This concentration hinders inno-vation, diversity, and equitable deployment of AI technologies. Our review comprehensively analyzes model fusion—a novel paradigm that integrates multiple specialized models into unified, efficient systems—offering a scalable and decentralized alternative for LLM develop-ment."
+    },
+    {
+      "title": "Democratizing AI through model fusion: A comprehensive review and ...",
+      "url": "https://www.sciencedirect.com/science/article/pii/S2950160126000264",
+      "snippet": "Following a journal-wide review of published declaration of interest statements, the Nexus team identified and updated any articles that did not previously include a statement of the authors&#x27; relationships with the journal. The declaration of interests in all such articles now accurately reflects the journal&#x27;s editorial-board policy. For this article, Hongxia Yang has declared that they ..."
+    },
+    {
+      "title": "Democratizing AI through model fusion: A comprehensive review and ...",
+      "url": "https://www.cell.com/nexus/fulltext/S2950-1601(25)00049-X",
+      "snippet": "This review examines model fusion as a scalable and practical approach to decentralizing large language model development, offering a unified analysis of recent methods, persistent challenges, and emerging applications in high-impact domains such as healthcare."
+    }
+  ]
+}

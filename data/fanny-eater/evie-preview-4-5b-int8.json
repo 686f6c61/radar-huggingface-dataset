@@ -1,0 +1,100 @@
+{
+  "schema": 1,
+  "id": "Fanny-Eater/EVIE-Preview-4.5B-int8",
+  "slug": "fanny-eater-evie-preview-4-5b-int8",
+  "author": "Fanny-Eater",
+  "url": "https://huggingface.co/Fanny-Eater/EVIE-Preview-4.5B-int8",
+  "created_at": "2026-08-29T23:39:45.000Z",
+  "updated_at": "2026-08-30T00:30:35.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "visual-document-retrieval",
+  "library": "colpali-engine",
+  "languages": [
+    "en",
+    "fr",
+    "de",
+    "it",
+    "es",
+    "pt",
+    "zh",
+    "ja",
+    "multilingual"
+  ],
+  "tags": [
+    "colpali-engine",
+    "safetensors",
+    "qwen3_5",
+    "visual-document-retrieval",
+    "vision-language",
+    "colpali",
+    "colbert",
+    "late-interaction",
+    "multi-vector",
+    "vidore",
+    "document-retrieval",
+    "multimodal",
+    "quantized",
+    "int8",
+    "bitsandbytes",
+    "en",
+    "fr",
+    "de",
+    "it",
+    "es",
+    "pt",
+    "zh",
+    "ja",
+    "multilingual",
+    "dataset:vidore/vidore_benchmark",
+    "dataset:vidore/vidore_benchmark_v2",
+    "base_model:tencent/EVIE-Preview-4.5B",
+    "base_model:quantized:tencent/EVIE-Preview-4.5B",
+    "license:apache-2.0",
+    "8-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 4540953344,
+  "parameters_human": "4.54B",
+  "storage_bytes": 5206108928,
+  "storage_human": "5.2 GB",
+  "base_model": "tencent/EVIE-Preview-4.5B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Fanny-Eater/EVIE-Preview-4.5B-int8 · Hugging Face",
+      "url": "https://huggingface.co/Fanny-Eater/EVIE-Preview-4.5B-int8",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "tencent/EVIE-Preview-4.5B at main - Hugging Face",
+      "url": "https://huggingface.co/tencent/EVIE-Preview-4.5B/tree/main",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GitHub - Tencent/EVIE-Preview-4.5B",
+      "url": "https://github.com/Tencent/EVIE-Preview-4.5B",
+      "snippet": "EVIE was trained at 768 visual tokens per page. The 1,792 tier is pure test-time extrapolation — the same weights, never trained or fine-tuned at that budget, and never re-exported. That the model does not merely hold up but gains 0.80 nDCG@10 at more than twice its training budget, improving in 7 of the 8 domains, is a direct read on how well its page representation generalises beyond the ..."
+    },
+    {
+      "title": "EVIE-Preview-4.5B: Image-to-Text model — overview, use cases, alternatives",
+      "url": "https://www.aimodels.fyi/models/huggingFace/evie-preview-4.5b-tencent",
+      "snippet": "EVIE-Preview-4.5B is a visual document retrieval model from tencent. It maps text queries and document-page images into token-level vectors, then ranks pages with late-interaction MaxSim scoring."
+    },
+    {
+      "title": "EVIE-Preview-4.5B/reproduce.py at main - GitHub",
+      "url": "https://github.com/Tencent/EVIE-Preview-4.5B/blob/main/reproduce.py",
+      "snippet": "Contribute to Tencent/EVIE-Preview-4.5B development by creating an account on GitHub."
+    }
+  ]
+}

@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "g-assismoraes/DeltaP2S-Llama2-13B-DeltaP2S-CodeLlama7B-SameFormula-S13-QV",
+  "slug": "g-assismoraes-deltap2s-llama2-13b-deltap2s-codellama7b-sameformula-s13-qv",
+  "author": "g-assismoraes",
+  "url": "https://huggingface.co/g-assismoraes/DeltaP2S-Llama2-13B-DeltaP2S-CodeLlama7B-SameFormula-S13-QV",
+  "created_at": "2026-08-30T01:10:14.000Z",
+  "updated_at": "2026-08-30T01:11:54.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "llama",
+    "text-generation",
+    "delta-p2s",
+    "pen2sword",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 13015864320,
+  "parameters_human": "13.02B",
+  "storage_bytes": 26032270275,
+  "storage_human": "26.0 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "g-assismoraes/DeltaP2S-Llama2-13B-P2S-CodeLlama7B-SameFormula-S13-QV ...",
+      "url": "https://huggingface.co/g-assismoraes/DeltaP2S-Llama2-13B-P2S-CodeLlama7B-SameFormula-S13-QV",
+      "snippet": "Instructions to use g-assismoraes/DeltaP2S-Llama2-13B-P2S-CodeLlama7B-SameFormula-S13-QV with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "g-assismoraes/DeltaP2S-Llama2-13B-P2S-CodeLlama7B-SameFormula · Hugging ...",
+      "url": "https://huggingface.co/g-assismoraes/DeltaP2S-Llama2-13B-P2S-CodeLlama7B-SameFormula",
+      "snippet": "Instructions to use g-assismoraes/DeltaP2S-Llama2-13B-P2S-CodeLlama7B-SameFormula with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "DeltaP2S-Llama2-13B-DeltaP2S-CodeLlama7B-SameFormula-S13",
+      "url": "https://friendli.ai/models/g-assismoraes/DeltaP2S-Llama2-13B-DeltaP2S-CodeLlama7B-SameFormula-S13",
+      "snippet": "Deploy DeltaP2S-Llama2-13B-DeltaP2S-CodeLlama7B-SameFormula-S13 with low-latency inference on FriendliAI. Get scalable API serving, high throughput, and production-grade reliability for AI agents."
+    },
+    {
+      "title": "DeltaP2S-Llama2-13B-P2S-CodeLlama7B-SameFormula",
+      "url": "https://friendli.ai/models/g-assismoraes/DeltaP2S-Llama2-13B-P2S-CodeLlama7B-SameFormula",
+      "snippet": "Deploy DeltaP2S-Llama2-13B-P2S-CodeLlama7B-SameFormula with low-latency inference on FriendliAI. Get scalable API serving, high throughput, and production-grade reliability for AI agents."
+    },
+    {
+      "title": "GitHub - ggml-org/llama.cpp: LLM inference in C/C++ · GitHub",
+      "url": "https://github.com/ggml-org/llama.cpp",
+      "snippet": "The main goal of llama.cpp is to enable LLM (and VLM) inference with minimal setup and state-of-the-art performance on a wide range of hardware - locally and in the cloud. Plain C/C++ implementation without any dependencies Apple silicon is a first-class citizen - optimized via ARM NEON, Accelerate and Metal frameworks AVX, AVX2, AVX512 and AMX support for x86 architectures RVV, ZVFH, ZFH ..."
+    }
+  ]
+}

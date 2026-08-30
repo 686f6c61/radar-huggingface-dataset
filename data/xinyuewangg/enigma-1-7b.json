@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "XinyueWangg/ENIGMA-1.7B",
+  "slug": "xinyuewangg-enigma-1-7b",
+  "author": "XinyueWangg",
+  "url": "https://huggingface.co/XinyueWangg/ENIGMA-1.7B",
+  "created_at": "2026-08-30T00:57:06.000Z",
+  "updated_at": "2026-08-30T02:16:06.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "time-series-forecasting",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "enigma",
+    "feature-extraction",
+    "time-series",
+    "forecasting",
+    "multimodal",
+    "qwen3",
+    "timesfm",
+    "time-series-forecasting",
+    "custom_code",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 2497200576,
+  "parameters_human": "2.50B",
+  "storage_bytes": 5006398464,
+  "storage_human": "5.0 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "XinyueWangg (Xinyue Wang) - Hugging Face",
+      "url": "https://huggingface.co/XinyueWangg/models",
+      "snippet": "User profile of Xinyue Wang on Hugging Face"
+    },
+    {
+      "title": "Run an AI Model Locally in Your Browser — No GPU, No Cloud",
+      "url": "https://aithinkerlab.com/run-ai-model-locally-in-browser-bonsai-1bit/",
+      "snippet": "Run an AI model locally in your browser using 1-Bit Bonsai 1.7B — a tiny 290MB model that needs no GPU, no API key, and no backend. Works offline."
+    },
+    {
+      "title": "GitHub - MAZICM/EnigmaAI",
+      "url": "https://github.com/MAZICM/EnigmaAI",
+      "snippet": "Introduction EnigmaAI is an innovative project at the forefront of real-time artificial intelligence (AI) model generation. It empowers users by providing a dynamic and responsive platform for creating AI models on the fly. Through seamless integration of advanced algorithms and real-time data processing, EnigmaAI stands out, allowing users to harness the power of AI without the need for ..."
+    },
+    {
+      "title": "Enigma-AI (Enigma) - Hugging Face",
+      "url": "https://huggingface.co/Enigma-AI/models",
+      "snippet": "Org profile for Enigma on Hugging Face, the AI community building the future."
+    },
+    {
+      "title": "NeurIPS ENIGMA: A Unified Lightweight EEG-to-Image Model for Multi ...",
+      "url": "https://neurips.cc/virtual/2025/132694",
+      "snippet": "To directly address these current limitations, we introduce ENIGMA, a multi-subject electroencephalography (EEG)-to-Image decoding model that reconstructs seen images from EEG recordings and achieves state-of-the-art (SOTA) performance on the research-grade THINGS-EEG2 and consumer-grade AllJoined-1.6M benchmarks."
+    }
+  ]
+}

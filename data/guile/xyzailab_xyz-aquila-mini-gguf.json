@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "Guile/XYZAILab_XYZ-Aquila-mini-GGUF",
+  "slug": "guile-xyzailab_xyz-aquila-mini-gguf",
+  "author": "Guile",
+  "url": "https://huggingface.co/Guile/XYZAILab_XYZ-Aquila-mini-GGUF",
+  "created_at": "2026-08-29T22:16:35.000Z",
+  "updated_at": "2026-08-29T22:16:36.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "safetensors",
+    "qwen3.6",
+    "agentic-search",
+    "image-text-to-text",
+    "base_model:XYZAILab/XYZ-Aquila-mini",
+    "base_model:quantized:XYZAILab/XYZ-Aquila-mini",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "imatrix",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 34660610688,
+  "parameters_human": "34.66B",
+  "storage_bytes": 570812210624,
+  "storage_human": "570.8 GB",
+  "base_model": "XYZAILab/XYZ-Aquila-mini",
+  "formats": [
+    "gguf",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "XYZAILab/XYZ-Aquila-mini · Hugging Face",
+      "url": "https://huggingface.co/XYZAILab/XYZ-Aquila-mini",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "XYZAILab (XYZ AI Lab) - Hugging Face",
+      "url": "https://huggingface.co/XYZAILab",
+      "snippet": "XYZAILab/XYZ-Aquila-SFT Viewer • Updated 10 days ago • 7k • 1.28k • 366 XYZAILab/XYZ-Aquila-mini XYZAILab/XYZ-Aquila-pro"
+    },
+    {
+      "title": "XYZ-Aquila · Search Agent",
+      "url": "https://xyz-lab.ai/xyz-aquila/?lang=en",
+      "snippet": "XYZ-Aquila is built for the questions you genuinely want to understand: break down clues, search for evidence, verify facts, and bring the answer together. Live search is being prepared — explore how it works through prepared questions."
+    },
+    {
+      "title": "XYZ-Aquila-mini · Models - modelscope.ai",
+      "url": "https://modelscope.ai/models/XYZAILab/XYZ-Aquila-mini",
+      "snippet": "ModelScope——A one-stop service that brings together the most advanced machine learning models from various fields, offering model exploration experience, inference, training, deployment, and application."
+    },
+    {
+      "title": "XYZ AI Lab — Bounded AI4AI for LLM Post-Training",
+      "url": "https://xyz-lab.ai/",
+      "snippet": "Meet the people building XYZ-Aquila. Hear how the XYZ AI Lab team is using AI4AI to connect people and agents across the post-training loop."
+    }
+  ]
+}

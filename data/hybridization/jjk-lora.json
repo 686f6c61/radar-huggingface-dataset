@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "Hybridization/jjk-lora",
+  "slug": "hybridization-jjk-lora",
+  "author": "Hybridization",
+  "url": "https://huggingface.co/Hybridization/jjk-lora",
+  "created_at": "2026-08-30T01:28:29.000Z",
+  "updated_at": "2026-08-30T01:28:31.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "lora",
+    "stable-diffusion",
+    "anime",
+    "jjk",
+    "base_model:runwayml/stable-diffusion-v1-5",
+    "base_model:adapter:runwayml/stable-diffusion-v1-5",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 3228744,
+  "storage_human": "3 MB",
+  "base_model": "runwayml/stable-diffusion-v1-5",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Rudra973592/jjk-style-lora · Hugging Face",
+      "url": "https://huggingface.co/Rudra973592/jjk-style-lora",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Rudra973592/jjk-style-lora at main - Hugging Face",
+      "url": "https://huggingface.co/Rudra973592/jjk-style-lora/tree/main",
+      "snippet": "Rudra973592 / jjk-style-lora like 0 Text-to-Image Diffusers lora stable-diffusion anime jjk Jujutsu Kaisen License:mit Model card FilesFiles and versions xet Community Copy to bucket new Use this model"
+    },
+    {
+      "title": "Anime style (JJK) AI LoRA Model | PixAI",
+      "url": "https://pixai.art/en/model/1940654420413641698",
+      "snippet": "Anime style (JJK) is an AI LoRA by Keru on PixAI. Try it free."
+    },
+    {
+      "title": "Best JJK - ep1 AI LORA - Free Download | Tensor.Art",
+      "url": "https://tensor.art/models/1002163969487579449",
+      "snippet": "Download JJK - free LORA Anima AI model on TENSOR. By BLANK42_AI"
+    },
+    {
+      "title": "JJK Style AI LoRA Model | Yuji Itadori | PixAI",
+      "url": "https://pixai.art/en/model/1776312320685927145",
+      "snippet": "JJK Style is an AI LoRA by whiterabbit on PixAI. Tags: Megumi Fushiguro, Satoru Gojo, Shoko Ieiri, Jujutsu Kaisen. Try it free."
+    }
+  ]
+}

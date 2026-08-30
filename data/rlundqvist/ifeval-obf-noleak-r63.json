@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "rlundqvist/ifeval-obf-noleak-r63",
+  "slug": "rlundqvist-ifeval-obf-noleak-r63",
+  "author": "rlundqvist",
+  "url": "https://huggingface.co/rlundqvist/ifeval-obf-noleak-r63",
+  "created_at": "2026-08-29T23:22:35.000Z",
+  "updated_at": "2026-08-29T23:24:04.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "reinforcement-learning",
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "lora",
+    "reinforcement-learning",
+    "grpo",
+    "evaluation-awareness",
+    "ai-safety",
+    "model-organism",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 2424335003,
+  "storage_human": "2.4 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "rlundqvist/ifeval-obf-rl-preferences · Datasets at Hugging Face",
+      "url": "https://huggingface.co/datasets/rlundqvist/ifeval-obf-rl-preferences",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "rlundqvist/ifeval-obf-rl-preferences at main - Hugging Face",
+      "url": "https://huggingface.co/datasets/rlundqvist/ifeval-obf-rl-preferences/tree/main",
+      "snippet": "Datasets: rlundqvist / ifeval-obf-rl-preferences like 0 Tasks: Text Classification Modalities: Text Formats: json Size: 10K - 100K Tags: reward-modeling evaluation-awareness rlaif ai-safety preference-data Libraries: Datasets Dask Polars + 1 License: mit Dataset card Data Studio FilesFiles and versions xet Community main ifeval-obf-rl-preferences 353 MB 1 contributor History:5 commits ..."
+    },
+    {
+      "title": "AI Detector - Free AI Checker for ChatGPT, GPT-5 & Gemini",
+      "url": "https://gptzero.me/",
+      "snippet": "GPTZero detects AI content from Claude, ChatGPT, GPT-5, Gemini, and checks writing quality to make every word worth reading."
+    },
+    {
+      "title": "LLM Leaderboard & AI Model Benchmarks — August 2026",
+      "url": "https://benchlm.ai/",
+      "snippet": "LLM Leaderboard & AI Model Benchmarks — August 2026 Compare frontier AI models by quality, cost, and context. 105 Supported and 123 Estimated models among 406 tracked LLMs — 408 benchmarks, real pricing, and runtime data in one place."
+    },
+    {
+      "title": "GitHub - ClawLabsAI/free-ai-models: Daily-updated list of every free AI ...",
+      "url": "https://github.com/ClawLabsAI/free-ai-models",
+      "snippet": "A daily-updated, community-maintained list of every free AI model (free LLM API) available right now. No paywalls. No API keys required to view. Updated automatically every 24 hours by GitHub Actions pulling from OpenRouter, Pollinations AI, and other public sources. Just want to call them? Skip the integration work — there&#x27;s an OpenAI-compatible free API that auto-routes to the best model ..."
+    }
+  ]
+}

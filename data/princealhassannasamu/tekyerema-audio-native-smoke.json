@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "PrinceAlhassanNasamu/tekyerema-audio-native-smoke",
+  "slug": "princealhassannasamu-tekyerema-audio-native-smoke",
+  "author": "PrinceAlhassanNasamu",
+  "url": "https://huggingface.co/PrinceAlhassanNasamu/tekyerema-audio-native-smoke",
+  "created_at": "2026-08-30T01:29:40.000Z",
+  "updated_at": "2026-08-30T01:29:59.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 94933546,
+  "storage_human": "95 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "PrinceAlhassanNasamu/tekyerema-pa-tts · Datasets at Hugging Face",
+      "url": "https://huggingface.co/datasets/PrinceAlhassanNasamu/tekyerema-pa-tts",
+      "snippet": "Datasets: PrinceAlhassanNasamu / tekyerema-pa-tts like 0 Modalities: Audio Text Formats: parquet optimized-parquet Size: 10K - 100K Libraries: Datasets Dask Polars + 1 License: cc-by-sa-4. Dataset card Data Studio FilesFiles and versions xet Community 1 Dataset Viewer Auto-converted to Parquet API Embed Duplicate Data Studio Subset (7) akosua·1.52k rows akosua (1.52k rows) bibletts_asante ..."
+    },
+    {
+      "title": "PrinceAlhassanNasamu (Prince Nasamu Alhassan) - Hugging Face",
+      "url": "https://huggingface.co/PrinceAlhassanNasamu/models",
+      "snippet": "PrinceAlhassanNasamu Follow 0 followers · 3 following NasamuAlhassan alhassan-prince"
+    },
+    {
+      "title": "AI Leaderboard 2026: Rankings for 300+ Top AI Models by Intelligence ...",
+      "url": "https://llm-stats.com/",
+      "snippet": "The AI Leaderboard — independent rankings of GPT, Claude, Gemini, Llama, DeepSeek and 300+ AI models by intelligence, speed and price. Composite LLM Stats Score updated continuously from public benchmarks and live API metrics."
+    },
+    {
+      "title": "DeepAI",
+      "url": "https://deepai.org/",
+      "snippet": "Whether you are a hobbyist, a professional artist, or a developer integrating AI into your product, DeepAI delivers advanced technology with new video, music, and voice chat features."
+    },
+    {
+      "title": "ElevenAPI - ElevenLabs the most powerful AI audio APIs",
+      "url": "https://elevenlabs.io/api",
+      "snippet": "High performance AI audio models to power the most dynamic interactions requiring fast responses and top quality output"
+    }
+  ]
+}

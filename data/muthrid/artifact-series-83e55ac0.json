@@ -5,7 +5,7 @@
   "author": "Muthrid",
   "url": "https://huggingface.co/Muthrid/artifact-series-83e55ac0",
   "created_at": "2026-08-26T14:49:47.000Z",
-  "updated_at": "2026-08-28T16:03:21.000Z",
+  "updated_at": "2026-08-29T13:21:37.000Z",
   "license": "other",
   "license_family": "unknown",
   "pipeline_tag": null,
@@ -25,8 +25,8 @@
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
-  "storage_bytes": 131067105272,
-  "storage_human": "131.1 GB",
+  "storage_bytes": 458709603824,
+  "storage_human": "458.7 GB",
   "base_model": "Qwen/Qwen2.5-Coder-32B-Instruct",
   "formats": [
     "safetensors"

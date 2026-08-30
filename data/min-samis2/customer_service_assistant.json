@@ -5,7 +5,7 @@
   "author": "min-samis2",
   "url": "https://huggingface.co/min-samis2/Customer_Service_assistant",
   "created_at": "2026-08-29T08:23:16.000Z",
-  "updated_at": "2026-08-29T09:28:31.000Z",
+  "updated_at": "2026-08-29T10:17:53.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": null,
@@ -26,8 +26,8 @@
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
-  "storage_bytes": 336251884,
-  "storage_human": "336 MB",
+  "storage_bytes": 504084124,
+  "storage_human": "504 MB",
   "base_model": "mistralai/Mistral-7B-Instruct-v0.3",
   "formats": [
     "safetensors"

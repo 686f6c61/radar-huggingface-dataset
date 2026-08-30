@@ -1,0 +1,78 @@
+{
+  "schema": 1,
+  "id": "torch-pointcloud/spvcnn-47gmacs.semantickitti.mit-han-lab",
+  "slug": "torch-pointcloud-spvcnn-47gmacs-semantickitti-mit-han-lab",
+  "author": "torch-pointcloud",
+  "url": "https://huggingface.co/torch-pointcloud/spvcnn-47gmacs.semantickitti.mit-han-lab",
+  "created_at": "2026-08-28T18:21:33.000Z",
+  "updated_at": "2026-08-29T20:31:35.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "torch-pointcloud",
+  "languages": [],
+  "tags": [
+    "torch-pointcloud",
+    "safetensors",
+    "point-cloud",
+    "3d",
+    "pytorch",
+    "spvcnn",
+    "segmentation",
+    "dataset:semantickitti",
+    "arxiv:2007.16100",
+    "license:mit",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 8802021,
+  "parameters_human": "8.8M",
+  "storage_bytes": 35244412,
+  "storage_human": "35 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": null,
+      "dataset": "SemanticKITTI",
+      "metric": "mIoU",
+      "value": 61.59
+    }
+  ],
+  "sources": [
+    {
+      "title": "torch-pointcloud (PyTorch PointCloud) - Hugging Face",
+      "url": "https://huggingface.co/torch-pointcloud",
+      "snippet": "PyTorch PointCloud (torch-pointcloud) is a collection of point cloud models, layers, utilities, datasets, transforms, and reference training / benchmarking scripts that aim to reproduce SOTA models and help researchers and engineers reuse common layers. Find all the torch-pointcloud models here."
+    },
+    {
+      "title": "GitHub - arthurdjn/pytorch-pointcloud: PyTorch Point Cloud models ...",
+      "url": "https://github.com/arthurdjn/pytorch-pointcloud",
+      "snippet": "A PyTorch library for deep learning on point clouds: models, pretrained weights, datasets, transforms and inferers, behind one create_model factory in the spirit of timm. The CUDA extensions (PyG kernels, spconv, flash-attention, Mamba, ocnn, torchsparse) are optional and only needed by the ..."
+    },
+    {
+      "title": "spv-cnn/README.md at master · STU-Z/spv-cnn · GitHub",
+      "url": "https://github.com/STU-Z/spv-cnn/blob/master/README.md",
+      "snippet": "Model Zoo SemanticKITTI We share the pretrained models for MinkowskiNets, our manually designed SPVCNN models and also SPVNAS models found by our 3D-NAS pipeline. All the pretrained models are available in the model zoo. Currently, we release the models trained on sequences 00-07 and 09-10 and evaluated on sequence 08."
+    },
+    {
+      "title": "raw.githubusercontent.com",
+      "url": "https://raw.githubusercontent.com/open-mmlab/mmdetection3d/refs/heads/main/configs/spvcnn/README.md",
+      "snippet": "Experimental results validate that the resulting SPVNAS model is fast and accurate: it outperforms the state-of-the-art MinkowskiNet by 3.3%, ranking 1st on the competitive SemanticKITTI leaderboard."
+    },
+    {
+      "title": "Searching Efficient 3D Architectures with Sparse Point-Voxel Convolution",
+      "url": "https://hanlab.mit.edu/projects/spvnas",
+      "snippet": "SPVNAS enhances Point-Voxel Convolution in large-scale outdoor scenes with sparse convolutions. With 3D Neural Architecture Search (3D-NAS), it efficiently and effectively searches the optimal 3D neural network architecture under a given resource constraint."
+    }
+  ]
+}

@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "shimbaaa/shifu-smart-gguf",
+  "slug": "shimbaaa-shifu-smart-gguf",
+  "author": "shimbaaa",
+  "url": "https://huggingface.co/shimbaaa/shifu-smart-gguf",
+  "created_at": "2026-08-29T21:04:02.000Z",
+  "updated_at": "2026-08-29T21:15:18.000Z",
+  "license": "gemma",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "gemma3_text",
+    "unsloth",
+    "gemma",
+    "function-calling",
+    "base_model:google/functiongemma-270m-it",
+    "base_model:quantized:google/functiongemma-270m-it",
+    "license:gemma",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 268098176,
+  "parameters_human": "268.1M",
+  "storage_bytes": 506254400,
+  "storage_human": "506 MB",
+  "base_model": "google/functiongemma-270m-it",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "shimbaaa (shimba) - Hugging Face",
+      "url": "https://huggingface.co/shimbaaa",
+      "snippet": "User profile of shimba on Hugging Face"
+    },
+    {
+      "title": "GGUF-Models (GGUF) - Hugging Face",
+      "url": "https://huggingface.co/GGUF-Models",
+      "snippet": "Our goal is to simplify the process of searching for and exchanging quantized models in GGUF format, as well as to create a space for efficient exchange and access to the models you need"
+    },
+    {
+      "title": "GGUF Model Discovery - Browse & Download AI Models",
+      "url": "https://local-ai-zone.github.io/",
+      "snippet": "Discover and download GGUF format AI models. Browse and direct download thousands of quantized AI models with detailed information, download counts, and direct links."
+    },
+    {
+      "title": "gguf AI Models | Civitai",
+      "url": "https://civitai.com/tag/gguf",
+      "snippet": "Browse 289 Stable Diffusion & Flux models, LoRAs, checkpoints, and embeddings tagged with gguf."
+    },
+    {
+      "title": "GitHub - ai-shifu/ai-shifu: Get AI to teach and answer questions for ...",
+      "url": "https://github.com/ai-shifu/ai-shifu",
+      "snippet": "AI-Shifu is designed for creators, instructors, and training/education teams, offering a scalable one-on-one teaching agent. Provide your expertise and teaching intent once, AI-Shifu will expand it into complete, personalized learning experiences."
+    }
+  ]
+}

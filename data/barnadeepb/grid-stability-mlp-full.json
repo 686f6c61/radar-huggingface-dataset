@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "barnadeepb/grid-stability-mlp-full",
+  "slug": "barnadeepb-grid-stability-mlp-full",
+  "author": "barnadeepb",
+  "url": "https://huggingface.co/barnadeepb/grid-stability-mlp-full",
+  "created_at": "2026-08-29T20:06:14.000Z",
+  "updated_at": "2026-08-29T20:06:18.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "tabular-classification",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "joblib",
+    "tabular-classification",
+    "power-grid",
+    "smart-grid",
+    "edge-ai",
+    "scikit-learn",
+    "dataset:uci/electrical-grid-stability-simulated-data",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 81217,
+  "storage_human": "81217 B",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - barnadeepb/grids-stability-study-for-edge-ml: This is a study ...",
+      "url": "https://github.com/barnadeepb/grids-stability-study-for-edge-ml",
+      "snippet": "This project compares seven machine learning models on a power-grid stability classification task -- not just on accuracy, but on the three-way trade-off between accuracy, inference latency, and model size that determines whether a model could realistically run on resource-limited edge hardware (e.g. a substation-grade edge server) rather than a full data center, and against a real industry ..."
+    },
+    {
+      "title": "Machine learning models for smart grid stability prediction: a ... - Nature",
+      "url": "https://www.nature.com/articles/s41598-026-47385-x",
+      "snippet": "This study proposes a machine learning (ML) methodology for classification and prediction of SG stability to obtain effectiveness in system operations and increase reliability."
+    },
+    {
+      "title": "A comprehensive review of AI-driven approaches for smart grid stability ...",
+      "url": "https://www.sciencedirect.com/science/article/pii/S1364032125010974",
+      "snippet": "Abstract The stability and reliability of smart grids are essential for ensuring efficient and secure electricity delivery, particularly amid the increasing integration of renewable energy sources. This review presents a comprehensive analysis of artificial intelligence (AI)-based methods for real-time grid management, and fault detection."
+    },
+    {
+      "title": "Machine learning approaches to predict the stability of smart grid",
+      "url": "https://www.sciencedirect.com/science/article/pii/S2773186326000587",
+      "snippet": "Then, various classification techniques were applied to the primary and its transformations to identify the best machine-learning model for predicting smart grid stability more efficiently. The results indicated that MLP achieved the highest accuracy (97.30%) on the Z-score-transformed feature subset without optimization."
+    },
+    {
+      "title": "Deep Learning-Based Stability Prediction for Electrical Grids: A Data ...",
+      "url": "https://ieeexplore.ieee.org/document/10912018",
+      "snippet": "This paper explores a data-driven approach using deep learning for predicting the stability of electrical grids, offering insights into grid stability assessment."
+    }
+  ]
+}

@@ -1,0 +1,82 @@
+{
+  "schema": 1,
+  "id": "carsenk/Ornith-1.5-35B-A3B-ROGUE-MLX-4bit",
+  "slug": "carsenk-ornith-1-5-35b-a3b-rogue-mlx-4bit",
+  "author": "carsenk",
+  "url": "https://huggingface.co/carsenk/Ornith-1.5-35B-A3B-ROGUE-MLX-4bit",
+  "created_at": "2026-08-28T03:58:25.000Z",
+  "updated_at": "2026-08-30T00:07:00.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "mlx",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "qwen3_5_moe",
+    "mlx-lm",
+    "4-bit",
+    "quantized",
+    "mixture-of-experts",
+    "moe",
+    "35b",
+    "3b-active",
+    "rogue",
+    "abliterated",
+    "conversational",
+    "not-for-all-audiences",
+    "text-generation",
+    "en",
+    "base_model:ornith-ai/Ornith-1.5-35B-A3B",
+    "base_model:quantized:ornith-ai/Ornith-1.5-35B-A3B",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 2,
+  "trending_score": 0,
+  "parameters": 5419330688,
+  "parameters_human": "5.42B",
+  "storage_bytes": 19529013246,
+  "storage_human": "19.5 GB",
+  "base_model": "ornith-ai/Ornith-1.5-35B-A3B",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ornith-ai/Ornith-1.5-35B-A3B · Hugging Face",
+      "url": "https://huggingface.co/ornith-ai/Ornith-1.5-35B-A3B",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "ornith-ai/Ornith-1.5-35B-A3B-FP8 · Hugging Face",
+      "url": "https://huggingface.co/ornith-ai/Ornith-1.5-35B-A3B-FP8",
+      "snippet": "Ornith 1.5 35B-A3B This model card documents Ornith-1.5-35B-A3B, the mid-size mixture-of-experts member of the Ornith-1.5 family. It activates only ~3B parameters per token, yet significantly outperforms its similar-sized peer Qwen 3.6-35B across all coding and agentic benchmarks, and outperforms dense models such as Gemma 4-31B and Muse Glimmer-30B by wide margins on agentic coding."
+    },
+    {
+      "title": "Ornith-1.5: From Self-Scaffolding to Self-Improvement",
+      "url": "https://ornith.ai/ornith_1_5.html",
+      "snippet": "Ornith-1.5 extends the self-scaffolding framework introduced in Ornith-1.0 into a more complete self-improvement loop: the model proposes new tasks, generates task-specific scaffolds, and produces solution rollouts for reinforcement learning, continuously creating new learning experiences from which it can improve."
+    },
+    {
+      "title": "Ornith 1.5 35B-A3B: Local Deployment, VRAM, and Real-World Tests",
+      "url": "https://www.mindstudio.ai/blog/ornith-1-5-35b-a3b-local-run",
+      "snippet": "Ornith 1.5 35B-A3B is a mixture-of-experts model with 3B active params. Here&#x27;s how it runs locally on an A100, and how it handles agentic and reasoning tests."
+    },
+    {
+      "title": "Ornith AI - Open-Source Agentic Coding Models",
+      "url": "https://ornith.online/",
+      "snippet": "Ornith AI guide for self-scaffolding open-source coding models: model sizes, VRAM, benchmarks, local setup, use cases, and agentic coding workflows."
+    }
+  ]
+}

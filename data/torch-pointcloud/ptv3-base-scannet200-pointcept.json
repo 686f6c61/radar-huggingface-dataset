@@ -1,0 +1,78 @@
+{
+  "schema": 1,
+  "id": "torch-pointcloud/ptv3-base.scannet200.pointcept",
+  "slug": "torch-pointcloud-ptv3-base-scannet200-pointcept",
+  "author": "torch-pointcloud",
+  "url": "https://huggingface.co/torch-pointcloud/ptv3-base.scannet200.pointcept",
+  "created_at": "2026-08-28T18:20:34.000Z",
+  "updated_at": "2026-08-29T20:31:20.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "torch-pointcloud",
+  "languages": [],
+  "tags": [
+    "torch-pointcloud",
+    "safetensors",
+    "point-cloud",
+    "3d",
+    "pytorch",
+    "point-transformer-v3",
+    "segmentation",
+    "dataset:scannet200",
+    "arxiv:2312.10035",
+    "license:mit",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 46183304,
+  "parameters_human": "46.2M",
+  "storage_bytes": 184786504,
+  "storage_human": "185 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": null,
+      "dataset": "ScanNet200",
+      "metric": "mIoU",
+      "value": 33.42
+    }
+  ],
+  "sources": [
+    {
+      "title": "torch-pointcloud/ptv3-base.scannet200.pointcept · Hugging Face",
+      "url": "https://huggingface.co/torch-pointcloud/ptv3-base.scannet200.pointcept",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "README.md · torch-pointcloud/ptv3-base.scannet200.pointcept at main",
+      "url": "https://huggingface.co/torch-pointcloud/ptv3-base.scannet200.pointcept/blob/main/README.md",
+      "snippet": "PyTorch scannet200 torch-pointcloud point-cloud 3d point-transformer-v3 segmentation Eval Results (legacy) arxiv:2312.10035 License:mit Model card FilesFiles and versions xet Community Copy to bucket new main ptv3-base.scannet200.pointcept /README.md arthurdjn Update model card for ptv3-base.scannet200.pointcept 9ba4f72 verifiedabout 7 hours ..."
+    },
+    {
+      "title": "GitHub - Pointcept/Pointcept: Pointcept: Perceive the world with sparse ...",
+      "url": "https://github.com/Pointcept/Pointcept",
+      "snippet": "We release the code with Pointcept v1.6.0. We release the pre-training code along with Pointcept v1.6.0 and provide an easy-to-use pre-trained model for inference, tuning, and visualization in our project repository hosted by Meta. May 2024: In v1.5.2, we redesigned the default structure for each dataset for better performance."
+    },
+    {
+      "title": "GitHub - Pointcept/PointTransformerV3: [CVPR&#x27;24 Oral] Official ...",
+      "url": "https://github.com/Pointcept/PointTransformerV3",
+      "snippet": "This repo is the official project repository of the paper Point Transformer V3: Simpler, Faster, Stronger and is mainly used for releasing schedules, updating instructions, sharing experiment records (containing model weight), and handling issues. The code will be updated in Pointcept v1.5. [ Backbone ] [PTv3] - [ arXiv ] [ Bib ] [ Code ]"
+    },
+    {
+      "title": "Pointcept/Pointcept | DeepWiki",
+      "url": "https://deepwiki.com/Pointcept/Pointcept",
+      "snippet": "Pointcept is a comprehensive and flexible framework for point cloud perception research. It serves as the official implementation for several state-of-the-art approaches, including Utonia, Concerto, Sonata, Point Transformer V3 (PTv3), OA-CNNs, Point Prompt Training (PPT), and Masked Scene Contrast (MSC)."
+    }
+  ]
+}

@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "ISB369/shellminator-qwen05b-dpo",
+  "slug": "isb369-shellminator-qwen05b-dpo",
+  "author": "ISB369",
+  "url": "https://huggingface.co/ISB369/shellminator-qwen05b-dpo",
+  "created_at": "2026-08-29T20:04:19.000Z",
+  "updated_at": "2026-08-29T20:04:45.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen2",
+    "text-generation",
+    "trl",
+    "dpo",
+    "conversational",
+    "arxiv:1910.09700",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 494032768,
+  "parameters_human": "494.0M",
+  "storage_bytes": 1987585368,
+  "storage_human": "2.0 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ISB369/shellminator-270m-bash-distilled · Hugging Face",
+      "url": "https://huggingface.co/ISB369/shellminator-270m-bash-distilled",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "ISB369 (Alex) - Hugging Face",
+      "url": "https://huggingface.co/ISB369",
+      "snippet": "models1 ISB369/shellminator-270m-bash-distilled Text Generation • 0.3B•Updated about 3 hours ago"
+    },
+    {
+      "title": "千问1.5-0.5B 本地 CPU 部署实战（Windows 11 + ModelScope）",
+      "url": "https://www.apigai.cn/2026/02/09/qwen05b/index.html",
+      "snippet": "适用场景：没有 GPU、只有 CPU 的开发环境（如轻量云服务器、老旧笔记本），想低成本体验大语言模型。 通义千问 Qwen1.5-0.5B 是目前 Qwen 系列中 最轻量的稠密模型 （约 5 亿参数），非常适合在资源受限设备上本地部署。本文记录了我在 Windows 11 环境下通过 CPU 完成完整部署与推理 的全过程。"
+    },
+    {
+      "title": "GitHub",
+      "url": "https://github.com/Lavenes-Release/Shellminator/blob/main/README.md",
+      "snippet": "Shellminator is a simple-to-use terminal interface library. You can use it with any VT-100&#92;nterminal emulator like PuTTY, Terratermor minicom.&#92;nWith this library, you can create user-friendly command line interfaces for your embedded projects.&#92;nShellminator has command history support, that means you can browse your previous commands with the arrow keys on the keyboard.&#92;nThe library is Arduino ..."
+    },
+    {
+      "title": "shellminator-270m-bash-distilled API & Inference Endpoint | FriendliAI",
+      "url": "https://friendli.ai/models/ISB369/shellminator-270m-bash-distilled",
+      "snippet": "Run shellminator-270m-bash-distilled with FriendliAI inference. This is the model card of a 🤗 transformers model that has been pushed on the Hub."
+    }
+  ]
+}

@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "zeromodels/beit-large-finetuned-ade-640-640",
+  "slug": "zeromodels-beit-large-finetuned-ade-640-640",
+  "author": "zeromodels",
+  "url": "https://huggingface.co/zeromodels/beit-large-finetuned-ade-640-640",
+  "created_at": "2026-08-29T22:36:06.000Z",
+  "updated_at": "2026-08-29T22:41:45.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-segmentation",
+  "library": "zeromodels",
+  "languages": [],
+  "tags": [
+    "zeromodels",
+    "keras",
+    "beit",
+    "image-segmentation",
+    "semantic-segmentation",
+    "arxiv:2106.08254",
+    "pytorch",
+    "jax",
+    "tf",
+    "base_model:microsoft/beit-large-finetuned-ade-640-640",
+    "base_model:finetune:microsoft/beit-large-finetuned-ade-640-640",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1654957936,
+  "storage_human": "1.7 GB",
+  "base_model": "microsoft/beit-large-finetuned-ade-640-640",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "microsoft/beit-large-finetuned-ade-640-640 · Hugging Face",
+      "url": "https://huggingface.co/microsoft/beit-large-finetuned-ade-640-640",
+      "snippet": "BEiT (large-sized model, fine-tuned on ADE20k) BEiT model pre-trained in a self-supervised fashion on ImageNet-21k (14 million images, 21,841 classes) at resolution 224x224, and fine-tuned on ADE20k (an important benchmark for semantic segmentation of images) at resolution 640x640."
+    },
+    {
+      "title": "AI Model Catalog | Microsoft Foundry Models",
+      "url": "https://ai.azure.com/catalog/models/microsoft-beit-large-finetuned-ade-640-640",
+      "snippet": "microsoft/beit-large-finetuned-ade-640-640 powered by Hugging Face Inference Toolkit Original Model Card image-segmentation Task on Hugging Face Send Request You can use cURL or any REST Client to send a request to the AzureML endpoint with your AzureML token."
+    },
+    {
+      "title": "microsoft/beit-large-finetuned-ade-640-640 at main - Hugging Face",
+      "url": "https://huggingface.co/microsoft/beit-large-finetuned-ade-640-640/tree/main",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "microsoft/beit-large-finetuned-ade-640-640 · Hugging Face",
+      "url": "https://hf-p-cfw.fyan.top/microsoft/beit-large-finetuned-ade-640-640",
+      "snippet": "Instructions to use microsoft/beit-large-finetuned-ade-640-640 with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "microsoft/beit-large-finetuned-ade-640-640 - toolify.ai",
+      "url": "https://www.toolify.ai/ai-model/microsoft-beit-large-finetuned-ade-640-640",
+      "snippet": "Model Details of beit-large-finetuned-ade-640-640 BEiT (large-sized model, fine-tuned on ADE20k) BEiT model pre-trained in a self-supervised fashion on ImageNet-21k (14 million images, 21,841 classes) at resolution 224x224, and fine-tuned on ADE20k (an important benchmark for semantic segmentation of images) at resolution 640x640."
+    }
+  ]
+}

@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "CNWPlayer/Vega-1.6-128M-Chat",
+  "slug": "cnwplayer-vega-1-6-128m-chat",
+  "author": "CNWPlayer",
+  "url": "https://huggingface.co/CNWPlayer/Vega-1.6-128M-Chat",
+  "created_at": "2026-08-29T23:50:05.000Z",
+  "updated_at": "2026-08-30T01:00:57.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "en",
+    "dataset:HuggingFaceFW/fineweb",
+    "dataset:HuggingFaceFW/fineweb-edu",
+    "dataset:HuggingFaceTB/cosmopedia",
+    "dataset:HuggingFaceTB/smoltalk",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "CNWPlayer (CNWPlayer) - Hugging Face",
+      "url": "https://huggingface.co/CNWPlayer",
+      "snippet": "User profile of CNWPlayer on Hugging Face"
+    },
+    {
+      "title": "Fine-tuned Models for CNWPlayer/VegaLM1-42M-Base - Hugging Face",
+      "url": "https://huggingface.co/models?other=base_model:finetune:CNWPlayer/VegaLM1-42M-Base",
+      "snippet": "Model Tree CNWPlayer/VegaLM1-42M-Base Adapters Finetunes Quantizations Merges Apps Inference Providers Groq Novita Cerebras Nscale fal Together AI Fireworks Featherless AI Zai Replicate Cohere Scaleway Public AI Baseten OVHcloud AI Endpoints HF Inference API WaveSpeed DeepInfra One-click Deployment Misc"
+    },
+    {
+      "title": "ChatGPT: Chat, Work, Create & Code with AI",
+      "url": "https://chatgpt.com/",
+      "snippet": "Use ChatGPT to answer questions, write, create images, complete work, and code—all in one place. Get started for free or download the app."
+    },
+    {
+      "title": "Can I run AI locally? Best models for your GPU",
+      "url": "https://www.canirun.ai/",
+      "snippet": "104 models · 284 devices · 22 labs Run open AI models on your own hardware We detect your GPU or unified memory and rank open models you can run locally — chat, coding, image and video. A 9B model fits an RTX 4060; an M4 Max can take larger ones. See the scoring method, docs or install runai. Chat & LLMs Coding Image Video Lightweight 01 Open CanIRun.ai Visit the homepage in a desktop ..."
+    },
+    {
+      "title": "CivArchive (CivitAI Archive) - AI Model Archive",
+      "url": "https://civitaiarchive.com/",
+      "snippet": "Browse and discover AI models from CivitAI, TensorArt, and SeaArt. Community-driven archive preserving access to AI resources."
+    }
+  ]
+}

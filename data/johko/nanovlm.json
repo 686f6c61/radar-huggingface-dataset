@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "johko/nanoVLM",
+  "slug": "johko-nanovlm",
+  "author": "johko",
+  "url": "https://huggingface.co/johko/nanoVLM",
+  "created_at": "2026-08-29T19:41:56.000Z",
+  "updated_at": "2026-08-29T19:42:07.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "nanovlm",
+  "languages": [],
+  "tags": [
+    "nanovlm",
+    "safetensors",
+    "vision-language",
+    "multimodal",
+    "research",
+    "image-text-to-text",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 228063968,
+  "parameters_human": "228.1M",
+  "storage_bytes": 912301840,
+  "storage_human": "912 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - juyoungml/nanoVLM: A minimal Vision Language Model ...",
+      "url": "https://github.com/juyoungml/nanoVLM",
+      "snippet": "A minimal Vision Language Model implementation. Contribute to juyoungml/nanoVLM development by creating an account on GitHub."
+    },
+    {
+      "title": "jaehyeono/nanoVLM · Hugging Face",
+      "url": "https://huggingface.co/jaehyeono/nanoVLM",
+      "snippet": "nanoVLM is a minimal and lightweight Vision-Language Model (VLM) designed for efficient training and experimentation. Built using pure PyTorch, the entire model architecture and training logic fits within ~750 lines of code."
+    },
+    {
+      "title": "ZGZY/nanoVLM · Hugging Face",
+      "url": "https://huggingface.co/ZGZY/nanoVLM",
+      "snippet": "nanoVLM is a minimal and lightweight Vision-Language Model (VLM) designed for efficient training and experimentation. Built using pure PyTorch, the entire model architecture and training logic fits within ~750 lines of code. It combines a ViT-based image encoder (SigLIP-B/16-224-85M) with a lightweight causal language model (SmolLM2-135M), resulting in a compact 222M parameter model."
+    },
+    {
+      "title": "nanoVLM | Day1Training",
+      "url": "https://www.day1training.com/frameworks/nanovlm",
+      "snippet": "nanoVLM is a minimal, educational implementation for training vision-language models. Ideal for rapid prototyping and understanding VLM architectures for embodied AI applications."
+    },
+    {
+      "title": "GitHub - huggingface/nanoVLM: The simplest, fastest repository for ...",
+      "url": "https://github.com/huggingface/nanoVLM",
+      "snippet": "If you would like a simpler understanding and a simpler codebase, you can use the v0.1 release. This works out of the box with the old 222M model. nanoVLM is the simplest repository for training/finetuning a small sized Vision-Language Model with a lightweight implementation in pure PyTorch."
+    }
+  ]
+}

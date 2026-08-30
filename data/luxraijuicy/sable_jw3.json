@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "LuxrAIjuicy/Sable_JW3",
+  "slug": "luxraijuicy-sable_jw3",
+  "author": "LuxrAIjuicy",
+  "url": "https://huggingface.co/LuxrAIjuicy/Sable_JW3",
+  "created_at": "2026-08-29T20:43:02.000Z",
+  "updated_at": "2026-08-29T20:43:22.000Z",
+  "license": "openrail",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:openrail",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 55233905,
+  "storage_human": "55 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "LuxrAIjuicy/JuiceWRLD_MID_JW3 · Hugging Face",
+      "url": "https://huggingface.co/LuxrAIjuicy/JuiceWRLD_MID_JW3",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "LuxrAIjuicy/JW3_Mousa_Light_OOT · Hugging Face",
+      "url": "https://huggingface.co/LuxrAIjuicy/JW3_Mousa_Light_OOT",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Juice WRLD [JW3] [300 EPOCHS] AI Voice Model",
+      "url": "https://voice-models.com/model/1JywgJb2joI",
+      "snippet": "Juice WRLD [JW3] [300 EPOCHS] AI voice model for RVC voice conversion. View details, samples, source status, and run this voice model in EasyAIVoice."
+    },
+    {
+      "title": "CivArchive (CivitAI Archive) - AI Model Archive",
+      "url": "https://civitaiarchive.com/",
+      "snippet": "Browse and discover AI models from CivitAI, TensorArt, and SeaArt. Community-driven archive preserving access to AI resources."
+    },
+    {
+      "title": "Juice WRLD (Late 2019/JW3) (RVC V2) 400 Epochs AI Voice Model",
+      "url": "https://voice-models.com/model/1moffW6AMv0",
+      "snippet": "Juice WRLD (Late 2019/JW3) (RVC V2) 400 Epochs AI voice model for RVC voice conversion. View details, samples, source status, and run this voice model in EasyAIVoice."
+    }
+  ]
+}

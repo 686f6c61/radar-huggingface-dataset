@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "HumboldtJoker/ayni-slerp-abliterated",
+  "slug": "humboldtjoker-ayni-slerp-abliterated",
+  "author": "HumboldtJoker",
+  "url": "https://huggingface.co/HumboldtJoker/ayni-slerp-abliterated",
+  "created_at": "2026-08-29T20:11:37.000Z",
+  "updated_at": "2026-08-29T22:34:56.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "qwen3_moe",
+    "ayni",
+    "liberation-labs",
+    "slerp",
+    "abliteration",
+    "archived",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 30531028992,
+  "parameters_human": "30.53B",
+  "storage_bytes": 61075846290,
+  "storage_human": "61.1 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "HumboldtJoker (Thomas Edrington) - Hugging Face",
+      "url": "https://huggingface.co/HumboldtJoker",
+      "snippet": "AI & ML interests ... Recent Activity updated a model 14 days ago ... updated a dataset 17 days ago ... published a dataset 18 days ago"
+    },
+    {
+      "title": "HumboldtJoker (Thomas Edrington) - Hugging Face",
+      "url": "https://huggingface.co/HumboldtJoker/models",
+      "snippet": "User profile of Thomas Edrington on Hugging Face"
+    },
+    {
+      "title": "HumboldtJoker · GitHub",
+      "url": "https://github.com/HumboldtJoker",
+      "snippet": "HumboldtJoker has 18 repositories available. Follow their code on GitHub."
+    },
+    {
+      "title": "GitHub - ClawLabsAI/free-ai-models: Daily-updated list of every free AI ...",
+      "url": "https://github.com/ClawLabsAI/free-ai-models",
+      "snippet": "The free AI model landscape changes every week — models get added, rate limits change, providers shut down without notice. This repo tracks it all automatically so you don&#x27;t have to."
+    },
+    {
+      "title": "Abliterated Models 2026: The Best Uncensored GGUFs by VRAM",
+      "url": "https://locallyuncensored.com/blog/abliterated-models-guide.html",
+      "snippet": "Abliterated Models Guide — 2026 Edition If you&#x27;ve looked at the Discover tab in any local-AI app and wondered why some Llama variants have abliterated in the name, or why people on r/LocalLLaMA argue about Heretic vs Dolphin vs straight-finetune, this is the post that explains it. Plus the curated download list of the variants that actually work in 2026. Abliterated weights are the engine ..."
+    }
+  ]
+}

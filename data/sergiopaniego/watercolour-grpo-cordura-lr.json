@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "sergiopaniego/watercolour-grpo-cordura-lr",
+  "slug": "sergiopaniego-watercolour-grpo-cordura-lr",
+  "author": "sergiopaniego",
+  "url": "https://huggingface.co/sergiopaniego/watercolour-grpo-cordura-lr",
+  "created_at": "2026-08-29T19:51:53.000Z",
+  "updated_at": "2026-08-29T21:03:45.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "generated_from_trainer",
+    "trackio:https://sergiopaniego-watercolour-grpo-cordura-lr.hf.space?project=huggingface&runs=sergiopaniego-1788033121&sidebar=collapsed",
+    "grpo",
+    "trl",
+    "hf_jobs",
+    "arxiv:2402.03300",
+    "base_model:Qwen/Qwen3.5-35B-A3B",
+    "base_model:finetune:Qwen/Qwen3.5-35B-A3B",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 53470470,
+  "storage_human": "53 MB",
+  "base_model": "Qwen/Qwen3.5-35B-A3B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Watercolour Grpo Cordura - a Hugging Face Space by sergiopaniego",
+      "url": "https://huggingface.co/spaces/sergiopaniego/watercolour-grpo-cordura",
+      "snippet": "This app loads your tracking logs and opens an easy-to-use web dashboard where you can explore metrics with charts and tables. Just run the command and a visual interface appears, letting you see a..."
+    },
+    {
+      "title": "sergiopaniego/watercolour-grpo · Hugging Face",
+      "url": "https://huggingface.co/sergiopaniego/watercolour-grpo",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Sergio Paniego Blanco sergiopaniego - GitHub",
+      "url": "https://github.com/sergiopaniego",
+      "snippet": "Machine Learning Engineer @huggingface 🤗 AI PhD 🏳️‍🌈 - sergiopaniego"
+    },
+    {
+      "title": "Sergio Paniego",
+      "url": "https://sergiopaniego.github.io/",
+      "snippet": "In addition to my research, I have also served as an AI Educational Consultant, developing and teaching advanced AI courses at universities, companies, and on-demand (see teaching section for more details). I enjoy giving talks about my work and the broader field of artificial intelligence."
+    },
+    {
+      "title": "publications | Sergio Paniego",
+      "url": "https://sergiopaniego.github.io/publications/",
+      "snippet": "The presented work demonstrates the advantages of using internal memory for better generalization capabilities of the model and allowing it to drive in a broader amount of circuits/situations. We analyze the algorithm in a wide range of environments and conclude that the proposed pipeline is robust to varying camera configurations."
+    }
+  ]
+}

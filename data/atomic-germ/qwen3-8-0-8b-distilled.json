@@ -1,0 +1,79 @@
+{
+  "schema": 1,
+  "id": "Atomic-Germ/Qwen3.8-0.8B-Distilled",
+  "slug": "atomic-germ-qwen3-8-0-8b-distilled",
+  "author": "Atomic-Germ",
+  "url": "https://huggingface.co/Atomic-Germ/Qwen3.8-0.8B-Distilled",
+  "created_at": "2026-08-29T23:26:11.000Z",
+  "updated_at": "2026-08-30T00:41:03.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_5_text",
+    "image-text-to-text",
+    "qwen3.8-froggeric-v22.4",
+    "conversational",
+    "q4nx",
+    "quantized",
+    "npu2",
+    "fastflowlm",
+    "fastflow",
+    "flm",
+    "empero-ai",
+    "qwen3.8",
+    "distillation",
+    "reasoning",
+    "base_model:gatilin/Qwen3.8-0.8B-Agentic-distill",
+    "base_model:quantized:gatilin/Qwen3.8-0.8B-Agentic-distill",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 852985920,
+  "parameters_human": "853.0M",
+  "storage_bytes": 3817037939,
+  "storage_human": "3.8 GB",
+  "base_model": "gatilin/Qwen3.8-0.8B-Agentic-distill",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Atomic-Germ/Qwen3.8-Distilled-9B-NPU2 · Hugging Face",
+      "url": "https://huggingface.co/Atomic-Germ/Qwen3.8-Distilled-9B-NPU2",
+      "snippet": "Atomic-Germ / Qwen3.8-Distilled-9B-NPU2 like 1 Image-Text-to-Text English qwen3_5_text empero-ai qwen3.5 qwen3.8 distillation reasoning function-calling vision sft llm fastflowlm q4nx npu2 conversational License:apache-2.0 Model card FilesFiles and versions xet Community Copy to bucket new Qwen3.8 Distilled 9B Now With Vision (update with flm-add --force) Source repository Files Install and ..."
+    },
+    {
+      "title": "Atomic-Germ/Qwen3.8-Distilled-4B-NPU2 at main - Hugging Face",
+      "url": "https://huggingface.co/Atomic-Germ/Qwen3.8-Distilled-4B-NPU2/tree/main",
+      "snippet": "Atomic-Germ / Qwen3.8-Distilled-4B-NPU2 like 0 Text Generation GGUF r0b0tlab/qwen3.8-max-distillation-50k English qwen3 q4nx fastflowlm flm qwen qwen3.8 reasoning thinking distillation knowledge-distillation sequence-level-distillation chain-of-thought conversational arxiv:2505.09388 License:apache-2.0 Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "Qwen3.8-Flash-Next - GitHub",
+      "url": "https://github.com/QwenLM/Qwen3.8-Flash-Next/",
+      "snippet": "Qwen3.8-Flash-Next upgrades the model systematically along four aspects — attention, residual, embedding and optimization — improving model capability while further optimizing computational efficiency, model capacity and training stability: Attention A GDN + QSA hybrid architecture."
+    },
+    {
+      "title": "Qwen3.8 | OpenLM.ai",
+      "url": "https://openlm.ai/qwen3.8/",
+      "snippet": "We are officially releasing Qwen 3.8-Max, the most capable model in the Qwen family to date. This also marks the first time we will open-source the weights of a Qwen-Max-class model. Built upon the architectural foundation of Qwen 3.5, Qwen 3.8-Max scales to 2.4 trillion parameters, delivering comprehensive improvements across coding, work, research, and long-horizon tasks."
+    },
+    {
+      "title": "Qwen3.8 Distilled 9B NPU2 by Atomic-Germ - LLM Explorer",
+      "url": "https://llm-explorer.com/model/Atomic-Germ%2FQwen3.8-Distilled-9B-NPU2,6IMnWMaXPZs4Diel986AK3",
+      "snippet": "Qwen3.8 Distilled 9B NPU2 is an open-source 9b LLM by Atomic-Germ. 256K context. Compare benchmarks, capabilities, and deployment details on LLM Explorer."
+    }
+  ]
+}

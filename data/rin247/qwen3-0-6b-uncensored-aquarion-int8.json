@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "Rin247/Qwen3-0.6B-Uncensored-Aquarion-INT8",
+  "slug": "rin247-qwen3-0-6b-uncensored-aquarion-int8",
+  "author": "Rin247",
+  "url": "https://huggingface.co/Rin247/Qwen3-0.6B-Uncensored-Aquarion-INT8",
+  "created_at": "2026-08-29T20:26:36.000Z",
+  "updated_at": "2026-08-29T20:27:15.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "qwen3",
+    "quantized",
+    "int8",
+    "uncensored",
+    "abliterated",
+    "8-bit",
+    "int8_weight_only",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 596049920,
+  "parameters_human": "596.0M",
+  "storage_bytes": 763175218,
+  "storage_human": "763 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Qwen/Qwen3-0.6B · Hugging Face",
+      "url": "https://huggingface.co/Qwen/Qwen3-0.6B",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "huihui-ai/Qwen3-0.6B-abliterated · Hugging Face",
+      "url": "https://huggingface.co/huihui-ai/Qwen3-0.6B-abliterated",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Damacol/qwen-qwen3-0.6b - GitHub",
+      "url": "https://github.com/Damacol/qwen-qwen3-0.6b",
+      "snippet": "Qwen/Qwen3-.6B - Private, Uncensored AI for Real Creators and Devs Tired of AI that babysits you, logs your prompts, or hits you with \"I can&#x27;t do that\"? Meet the next-gen chatbot built for freedom, speed, and digital sovereignty."
+    },
+    {
+      "title": "Best Uncensored Local LLMs by VRAM Tier (2026) | InsiderLLM",
+      "url": "https://insiderllm.com/guides/best-uncensored-local-llms/",
+      "snippet": "Qwen 3.6 abliterated, Gemma 4 Heretic, Dolphin 3.0 — the current uncensored picks by VRAM tier. The Llama 3.1 / Qwen 2.5 era is mostly superseded. HuggingFace repos for every pick."
+    },
+    {
+      "title": "(anima text encoder) Qwen3-0.6B-heretic-abliterated-uncensored",
+      "url": "https://civitai.com/models/2598886/anima-text-encoder-qwen3-06b-heretic-abliterated-uncensored",
+      "snippet": "use this text encoder with the anima model This text encoder behave different than the text encoder that many use with anima model. one of them is that it follow your prompt way closer. the quality of image (style) is way worse, but if you care about a text encoder that follow your prompt way closer than it is worth it IMO."
+    }
+  ]
+}

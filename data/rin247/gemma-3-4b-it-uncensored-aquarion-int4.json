@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "Rin247/gemma-3-4b-it-Uncensored-Aquarion-INT4",
+  "slug": "rin247-gemma-3-4b-it-uncensored-aquarion-int4",
+  "author": "Rin247",
+  "url": "https://huggingface.co/Rin247/gemma-3-4b-it-Uncensored-Aquarion-INT4",
+  "created_at": "2026-08-29T23:51:01.000Z",
+  "updated_at": "2026-08-29T23:52:30.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "gemma3",
+    "quantized",
+    "int4",
+    "uncensored",
+    "abliterated",
+    "8-bit",
+    "int4_weight_only",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 2490969456,
+  "parameters_human": "2.49B",
+  "storage_bytes": 3266215754,
+  "storage_human": "3.3 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "google/gemma-3-4b-it · Hugging Face",
+      "url": "https://huggingface.co/google/gemma-3-4b-it",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "VibeStudio/Nidum-Gemma-3-4B-it-Uncensored · Hugging Face",
+      "url": "https://huggingface.co/nidum/Nidum-Gemma-3-4B-it-Uncensored",
+      "snippet": "Welcome to Nidum&#x27;s Gemma-3-4B IT Uncensored, your gateway to an open and unrestricted AI experience. This powerful model enables users to explore and innovate without boundaries."
+    },
+    {
+      "title": "Gemma-3-4B-IT-Uncensored Open-Source Model - A Practical AI Option with ...",
+      "url": "https://model.aibase.com/models/details/1915738540060860418",
+      "snippet": "OPT is an open pre-trained Transformer language model suite released by Meta AI, with parameter sizes ranging from 125 million to 175 billion, designed to match the performance of the GPT-3 series while promoting open research in large-scale language models."
+    },
+    {
+      "title": "Run Gemma 4 Locally: From 4 GB VRAM (E4B) to 31B, Free",
+      "url": "https://locallyuncensored.com/blog/gemma-4-local-guide.html",
+      "snippet": "Run Google&#x27;s Gemma 4 on your own PC — E4B fits 4 GB VRAM, up to 31B dense. Vision, tool calling, 256K context, plus uncensored Heretic GGUF links."
+    },
+    {
+      "title": "nidumai/nidum-gemma-3-4b-it-uncensored - ollama.com",
+      "url": "https://ollama.com/nidumai/nidum-gemma-3-4b-it-uncensored",
+      "snippet": "This repository provides the GGUF-quantized versions of nidum-gemma-3-4B-it-uncensored for use with Ollama and other GGUF-compatible backends. 📌 Available Quantized Models"
+    }
+  ]
+}

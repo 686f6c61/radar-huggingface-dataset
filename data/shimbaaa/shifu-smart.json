@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "shimbaaa/shifu-smart",
+  "slug": "shimbaaa-shifu-smart",
+  "author": "shimbaaa",
+  "url": "https://huggingface.co/shimbaaa/shifu-smart",
+  "created_at": "2026-08-29T21:00:43.000Z",
+  "updated_at": "2026-08-29T21:53:45.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gemma3_text",
+    "text-generation",
+    "text-generation-inference",
+    "unsloth",
+    "conversational",
+    "en",
+    "base_model:unsloth/functiongemma-270m-it-unsloth-bnb-4bit",
+    "base_model:finetune:unsloth/functiongemma-270m-it-unsloth-bnb-4bit",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 268098176,
+  "parameters_human": "268.1M",
+  "storage_bytes": 589518066,
+  "storage_human": "590 MB",
+  "base_model": "unsloth/functiongemma-270m-it-unsloth-bnb-4bit",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "shimbaaa (shimba) - Hugging Face",
+      "url": "https://huggingface.co/shimbaaa",
+      "snippet": "User profile of shimba on Hugging Face"
+    },
+    {
+      "title": "shimbaaa/shimba-model-v1 · Hugging Face",
+      "url": "https://huggingface.co/shimbaaa/shimba-model-v1",
+      "snippet": "shimbaaa / shimba-model-v1 like 0 PyTorch Model card FilesFiles and versions xet Community Copy to bucket new No model card Downloads last month -"
+    },
+    {
+      "title": "LLM Leaderboard & AI Model Benchmarks — August 2026",
+      "url": "https://benchlm.ai/",
+      "snippet": "Compare 406 AI models across 408 benchmarks, with 228 ranked scores, source evidence, API pricing, context windows, runtime, and head-to-head pages."
+    },
+    {
+      "title": "GitHub - ai-shifu/ai-shifu: Get AI to teach and answer questions for ...",
+      "url": "https://github.com/ai-shifu/ai-shifu",
+      "snippet": "AI-Shifu is designed for creators, instructors, and training/education teams, offering a scalable one-on-one teaching agent. Provide your expertise and teaching intent once, AI-Shifu will expand it into complete, personalized learning experiences. It adapts in real time to each learner&#x27;s profile with tailored explanations, interactive probing, assessments, and a full feedback loop ..."
+    },
+    {
+      "title": "Shifu Structure and Management | ai-shifu/ai-shifu | DeepWiki",
+      "url": "https://deepwiki.com/ai-shifu/ai-shifu/4.1-shifu-structure-and-management",
+      "snippet": "The DraftShifu and PublishedShifu models contain course-level metadata including title, description, pricing, and AI model configurations. The shifu_bid serves as the business identifier linking draft and published versions."
+    }
+  ]
+}
