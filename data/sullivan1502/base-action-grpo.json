@@ -5,7 +5,7 @@
   "author": "sullivan1502",
   "url": "https://huggingface.co/sullivan1502/base-action-grpo",
   "created_at": "2026-08-29T10:07:04.000Z",
-  "updated_at": "2026-08-30T02:13:44.000Z",
+  "updated_at": "2026-08-30T10:28:57.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": "text-generation",
@@ -29,8 +29,8 @@
   "trending_score": 0,
   "parameters": 81841152,
   "parameters_human": "81.8M",
-  "storage_bytes": 10804410145,
-  "storage_human": "10.8 GB",
+  "storage_bytes": 25537686385,
+  "storage_human": "25.5 GB",
   "base_model": "sullivan1502/base-action-pretrain",
   "formats": [
     "safetensors"

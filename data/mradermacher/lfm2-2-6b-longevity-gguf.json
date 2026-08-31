@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "mradermacher/LFM2-2.6B-Longevity-GGUF",
+  "slug": "mradermacher-lfm2-2-6b-longevity-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/LFM2-2.6B-Longevity-GGUF",
+  "created_at": "2026-08-06T20:03:33.000Z",
+  "updated_at": "2026-08-30T23:48:51.000Z",
+  "license": "lfm1.0",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "liquid",
+    "lfm2",
+    "lfm2.5",
+    "longevity",
+    "en",
+    "base_model:LiquidAI/LFM2-2.6B-Longevity",
+    "base_model:quantized:LiquidAI/LFM2-2.6B-Longevity",
+    "license:other",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 1,
+  "downloads_30d": 531,
+  "trending_score": 0,
+  "parameters": 2569272320,
+  "parameters_human": "2.57B",
+  "storage_bytes": 22815107712,
+  "storage_human": "22.8 GB",
+  "base_model": "LiquidAI/LFM2-2.6B-Longevity",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "mradermacher/LFM2-2.6B-Longevity-GGUF · Hugging Face",
+      "url": "https://huggingface.co/mradermacher/LFM2-2.6B-Longevity-GGUF",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "mradermacher/LFM2-2.6B-GGUF · Hugging Face",
+      "url": "https://huggingface.co/mradermacher/LFM2-2.6B-GGUF",
+      "snippet": "Usage If you are unsure how to use GGUF files, refer to one of TheBloke&#x27;s READMEs for more details, including on how to concatenate multi-part files. Provided Quants (sorted by size, not necessarily quality. IQ-quants are often preferable over similar sized non-IQ quants)"
+    },
+    {
+      "title": "LFM2 Technical Report - arXiv.org",
+      "url": "https://arxiv.org/html/2511.23404v1",
+      "snippet": "LFM2-VL-1.6B and LFM2-VL-3B combine a So400M SigLIP2 encoder with LFM2-1.2B and LFM2-2.6B backbones, respectively. All variants are designed to support flexible image resolutions, efficient tokenization, and a controllable accuracy vs. latency trade-off for on-device deployment."
+    },
+    {
+      "title": "Introducing LFM2-2.6B: Redefining Efficiency in Language Models",
+      "url": "https://www.liquid.ai/blog/introducing-lfm2-2-6b-redefining-efficiency-in-language-models",
+      "snippet": "Liquid AI LFM2-2.6B: a compact generative AI foundation model delivering high performance, efficient inference, and smaller-scale deployment on device."
+    },
+    {
+      "title": "Introducing LFM2: The Fastest On-Device Foundation Models on the Market ...",
+      "url": "https://www.liquid.ai/blog/liquid-foundation-models-v2-our-second-series-of-generative-ai-models",
+      "snippet": "Today, we release LFM2, a new class of Liquid Foundation Models (LFMs) that sets a new standard in quality, speed, and memory efficiency for on-device deployment. Built on a hybrid architecture, LFM2 delivers 200% faster decode and prefill performance than Qwen3 and Gemma 3 on CPU. It also significantly outperforms models in each size class on instruction-following and function calling—the ..."
+    }
+  ]
+}

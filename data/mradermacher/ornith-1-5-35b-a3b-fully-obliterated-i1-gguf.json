@@ -1,0 +1,77 @@
+{
+  "schema": 1,
+  "id": "mradermacher/Ornith-1.5-35B-A3B-FULLY-OBLITERATED-i1-GGUF",
+  "slug": "mradermacher-ornith-1-5-35b-a3b-fully-obliterated-i1-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/Ornith-1.5-35B-A3B-FULLY-OBLITERATED-i1-GGUF",
+  "created_at": "2026-08-30T19:44:01.000Z",
+  "updated_at": "2026-08-30T21:35:59.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "gguf",
+    "abliterated",
+    "decensoration",
+    "refusal-direction",
+    "moe",
+    "qwen3.5",
+    "obliteratus",
+    "nvfp4",
+    "35b",
+    "en",
+    "base_model:jhone888/Ornith-1.5-35B-A3B-FULLY-OBLITERATED",
+    "base_model:quantized:jhone888/Ornith-1.5-35B-A3B-FULLY-OBLITERATED",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us",
+    "imatrix",
+    "conversational"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 35505251456,
+  "parameters_human": "35.51B",
+  "storage_bytes": 49612893600,
+  "storage_human": "49.6 GB",
+  "base_model": "jhone888/Ornith-1.5-35B-A3B-FULLY-OBLITERATED",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "mradermacher/Ornith-1.5-35B-A3B-FULLY-OBLITERATED-i1-GGUF - Hugging Face",
+      "url": "https://huggingface.co/mradermacher/Ornith-1.5-35B-A3B-FULLY-OBLITERATED-i1-GGUF",
+      "snippet": "Instructions to use mradermacher/Ornith-1.5-35B-A3B-FULLY-OBLITERATED-i1-GGUF with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "Ornith-1.5-35B-A3B-FULLY-OBLITERATED-GGUF - Hugging Face",
+      "url": "https://huggingface.co/mradermacher/Ornith-1.5-35B-A3B-FULLY-OBLITERATED-GGUF",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Ornith-1.5-35B-A3B · LLM Releases",
+      "url": "https://www.llm-releases.com/models/ornith-1-5-35b-a3b",
+      "snippet": "The mid-size model in DeepReinforce&#x27;s Ornith-1.5 family (released 2026-08-19, MIT, weights on Hugging Face): a 35B-parameter Mixture-of-Experts that activates ~3B parameters per token, trained with the same self-improving task-and-scaffold generation loop as the 397B flagship. Vendor-reported, five-run-averaged figures put it at 68.5 on Terminal-Bench 2.1 and 79.0 on SWE-Bench Verified while ..."
+    },
+    {
+      "title": "Ornith-1.5-35B-A3B-GGUF: Text-to-Text model — overview, use cases ...",
+      "url": "https://www.aimodels.fyi/models/huggingFace/ornith-1.5-35b-a3b-gguf-ornith-ai",
+      "snippet": "Model Overview Overview Ornith-1.5-35B-A3B is a mixture-of-experts reasoning and coding model made by ornith-ai that activates approximately 3 billion parameters per token while maintaining a total of 35 billion parameters."
+    },
+    {
+      "title": "Ornith-1.5-35B-A3B — Files — Benchgen",
+      "url": "https://benchgen.com/models/ornith-deepreinforce/ornith-1-5-35b-a3b/files",
+      "snippet": "Browse the model files and weights for Ornith-1.5-35B-A3B on Benchgen — config, tokenizer, and artifacts."
+    }
+  ]
+}

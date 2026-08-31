@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "kingjones777/Ornith-1.5-9B-Abliterated-ROCmFP4-GGUF",
+  "slug": "kingjones777-ornith-1-5-9b-abliterated-rocmfp4-gguf",
+  "author": "kingjones777",
+  "url": "https://huggingface.co/kingjones777/Ornith-1.5-9B-Abliterated-ROCmFP4-GGUF",
+  "created_at": "2026-08-30T20:47:20.000Z",
+  "updated_at": "2026-08-30T20:50:26.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "gguf",
+  "languages": [],
+  "tags": [
+    "gguf",
+    "rocmfp4",
+    "rocmfpx",
+    "strix-halo",
+    "gfx1151",
+    "vulkan",
+    "abliterated",
+    "ornith",
+    "multimodal",
+    "image-text-to-text",
+    "base_model:PocketAiHub/Ornith-1.5-9B-Abliterated-GGUF",
+    "base_model:quantized:PocketAiHub/Ornith-1.5-9B-Abliterated-GGUF",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 8953803264,
+  "parameters_human": "8.95B",
+  "storage_bytes": 43966064800,
+  "storage_human": "44.0 GB",
+  "base_model": "PocketAiHub/Ornith-1.5-9B-Abliterated-GGUF, ornith-ai/Ornith-1.5-9B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Quantized Models for ornith-ai/Ornith-1.5-9B - Hugging Face",
+      "url": "https://huggingface.co/models?other=base_model:quantized:ornith-ai%2FOrnith-1.5-9B&p=1&sort=trending",
+      "snippet": "Explore machine learning models. Shiftedx/ornith-1.5-9b-abliterated-attention8-bf16recurrence-vision-mtplx"
+    },
+    {
+      "title": "kingjones777/Ornith-1.5-9B-ROCmFPX-AGENT-GGUF · Hugging Face",
+      "url": "https://huggingface.co/kingjones777/Ornith-1.5-9B-ROCmFPX-AGENT-GGUF",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GitHub - ornith-ai/Ornith-1 · GitHub",
+      "url": "https://github.com/ornith-ai/Ornith-1",
+      "snippet": "Aloha! 🌺 Ornith is a family of self-improving open-source models for agentic tasks. This repo covers both generations: 🐦 Ornith-1.5 (latest) — extends self-scaffolding into a complete end-to-end self-improvement loop: the model proposes new tasks, generates task-specific scaffolds, and produces solution rollouts for reinforcement learning. Model weights at HuggingFace, and more details ..."
+    },
+    {
+      "title": "ornith-1.5 - ollama.com",
+      "url": "https://ollama.com/library/ornith-1.5",
+      "snippet": "Chirp Chirp! 🐦 We are introducing Ornith-1.5, a major step toward building foundation models through end-to-end self-improvement."
+    },
+    {
+      "title": "Ornith-1.5-9B · LLM Releases",
+      "url": "https://www.llm-releases.com/models/ornith-1-5-9b",
+      "snippet": "The smallest model in DeepReinforce&#x27;s Ornith-1.5 family (released 2026-08-19, MIT, weights on Hugging Face): a 9B-parameter dense coding/agent model trained with the family&#x27;s self-improving task-and-scaffold RL loop, and shipped with a quantized &#x27;Ornith-1.5-9B-Mobile&#x27; build that runs on iPhone and Android. Vendor-reported, five-run-averaged figures put it at 47.0 on Terminal-Bench 2.1 and 70.6 ..."
+    }
+  ]
+}

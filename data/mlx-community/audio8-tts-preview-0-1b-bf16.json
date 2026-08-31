@@ -1,0 +1,93 @@
+{
+  "schema": 1,
+  "id": "mlx-community/Audio8-TTS-Preview-0.1b-bf16",
+  "slug": "mlx-community-audio8-tts-preview-0-1b-bf16",
+  "author": "mlx-community",
+  "url": "https://huggingface.co/mlx-community/Audio8-TTS-Preview-0.1b-bf16",
+  "created_at": "2026-08-30T19:33:23.000Z",
+  "updated_at": "2026-08-30T19:33:29.000Z",
+  "license": "audio8-community-license-v1.0",
+  "license_family": "unknown",
+  "pipeline_tag": "text-to-speech",
+  "library": "mlx-audio",
+  "languages": [
+    "zh",
+    "en",
+    "de",
+    "es",
+    "fr",
+    "it",
+    "ja",
+    "ko"
+  ],
+  "tags": [
+    "mlx-audio",
+    "safetensors",
+    "arktts",
+    "mlx",
+    "audio",
+    "text-to-speech",
+    "tts",
+    "voice-cloning",
+    "zero-shot",
+    "multilingual",
+    "falcon-h1",
+    "mamba",
+    "zh",
+    "en",
+    "de",
+    "es",
+    "fr",
+    "it",
+    "ja",
+    "ko",
+    "base_model:Audio8/Audio8-TTS-Preview-0.1b",
+    "base_model:finetune:Audio8/Audio8-TTS-Preview-0.1b",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 169779904,
+  "parameters_human": "169.8M",
+  "storage_bytes": 1689250789,
+  "storage_human": "1.7 GB",
+  "base_model": "Audio8/Audio8-TTS-Preview-0.1b",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "mlx-community/Audio8-TTS-Preview-0.6b-bf16 · Hugging Face",
+      "url": "https://huggingface.co/mlx-community/Audio8-TTS-Preview-0.6b-bf16",
+      "snippet": "Audio8-TTS-Preview-.6b-bf16 (MLX) MLX conversion of Audio8/Audio8-TTS-Preview-.6b (revision 1b17c91) for Apple Silicon — a .6B-parameter multilingual text-to-speech model with zero-shot voice cloning and a bundled 44.1 kHz neural codec."
+    },
+    {
+      "title": "mlx-community/Audio8-TTS-Preview-0.6b-bf16 at main",
+      "url": "https://huggingface.co/mlx-community/Audio8-TTS-Preview-0.6b-bf16/tree/main",
+      "snippet": "like 1 Follow MLX Community 15.6k Text-to-Speech Safetensors MLX 11 languages mlx-audio arktts audio tts voice-cloning zero-shot multilingual License:apache-2.0 Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "Audio8-AI/Audio8_TTS: SOTA-Class TTS at Compact Scale - GitHub",
+      "url": "https://github.com/Audio8-AI/Audio8_TTS",
+      "snippet": "🚀 How small a zero-shot cloning TTS can be? Meet our latest release, Audio8-TTS-.1B: a powerful, compact, and even portable text-to-speech model! This repository provides the audio8_tts Preview checkpoint, Hugging Face remote code, inference tools, and an independent SFT pipeline for multilingual speech generation and zero-shot voice cloning. Preview status: language coverage is ..."
+    },
+    {
+      "title": "GitHub - Blaizzy/mlx-audio: A text-to-speech (TTS), speech-to-text (STT ...",
+      "url": "https://github.com/Blaizzy/mlx-audio",
+      "snippet": "The best audio processing library built on Apple&#x27;s MLX framework, providing fast and efficient text-to-speech (TTS), speech-to-text (STT), speech-to-speech (STS), music generation, and more on Apple Silicon. Qwen3-TTS Alibaba&#x27;s multilingual TTS with voice design ZH, EN, JA, KO, + more mlx-community ..."
+    },
+    {
+      "title": "Audio8-TTS-0.6B - Listening Preview",
+      "url": "https://audio8-ai.github.io/Audio8_TTS/",
+      "snippet": "Overview This page presents outputs from the current Audio8-TTS-.6B preview checkpoint. It includes the recommended language set, targeted pronunciation challenges, tongue twisters, complete classical Chinese works, cross-lingual cloning, and dense lexical tests. Reference audio The listening set combines difficult in-the-wild speech with cleaner expressive prompts. This mix separates ..."
+    }
+  ]
+}

@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "PencilHu/DreamDojo-Jokeru-2B-SelfForcing",
+  "slug": "pencilhu-dreamdojo-jokeru-2b-selfforcing",
+  "author": "PencilHu",
+  "url": "https://huggingface.co/PencilHu/DreamDojo-Jokeru-2B-SelfForcing",
+  "created_at": "2026-08-30T22:00:09.000Z",
+  "updated_at": "2026-08-30T22:12:05.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "pytorch",
+  "languages": [],
+  "tags": [
+    "pytorch",
+    "dreamdojo",
+    "world-model",
+    "action-conditioned-video-generation",
+    "self-forcing",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 17222828373,
+  "storage_human": "17.2 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "DreamDojo: A Generalist Robot World Model from Large-Scale Human Videos",
+      "url": "https://dreamdojo-world.github.io/",
+      "snippet": "Highlights A large-scale video dataset. 44k hours of diverse human egocentric videos, the largest dataset to date for world model pretraining. A foundation world model. The first robot world model of its kind that demonstrates strong generalization to diverse objects and environments after post-training. A distillation pipeline."
+    },
+    {
+      "title": "PencilHu/SelfForcing-Instance · Hugging Face",
+      "url": "https://huggingface.co/PencilHu/SelfForcing-Instance",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GitHub - NVIDIA/DreamDojo: Official Codebase for \"DreamDojo: A ...",
+      "url": "https://github.com/nvidia/DreamDojo",
+      "snippet": "DreamDojo is an interactive world model that learns from large-scale human videos. In short, we made the following key contributions: A large-scale video dataset. 44k hours of diverse human egocentric videos, the largest dataset to date for world model pretraining. A foundation world model. The first robot world model of its kind that demonstrates strong generalization to diverse objects and ..."
+    },
+    {
+      "title": "README.md · PencilHu/SelfForcing-Instance at main",
+      "url": "https://huggingface.co/datasets/PencilHu/SelfForcing-Instance/blob/main/README.md",
+      "snippet": "Datasets: PencilHu / SelfForcing-Instance like 0 ArXiv: arxiv:2506.08009 Dataset card FilesFiles and versions xet Community main SelfForcing-Instance /README.md PencilHu Add files using upload-large-folder tool 316b988 verified6 months ago preview code | Raw Download with hf CLI Copy download link History Blame Contribute Delete Safe 5.14 kB"
+    },
+    {
+      "title": "NVIDIA Open-Sources DreamDojo: A 44,000-Hour \"Dream\" to Solve the ...",
+      "url": "https://www.humanoidsdaily.com/news/nvidia-open-sources-dreamdojo-a-44-000-hour-dream-to-solve-the-robotics-data-gap",
+      "snippet": "NVIDIA GEAR Lab has released DreamDojo, an open-source world model pretrained on a massive 44,000-hour dataset of human egocentric videos. By using \"latent actions\" to bridge the gap between human and robot movement, the model achieves zero-shot generalization and real-time controllability for teleoperation and planning."
+    }
+  ]
+}

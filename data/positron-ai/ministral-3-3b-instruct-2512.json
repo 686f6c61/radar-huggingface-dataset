@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "positron-ai/Ministral-3-3B-Instruct-2512",
+  "slug": "positron-ai-ministral-3-3b-instruct-2512",
+  "author": "positron-ai",
+  "url": "https://huggingface.co/positron-ai/Ministral-3-3B-Instruct-2512",
+  "created_at": "2026-08-31T01:21:19.000Z",
+  "updated_at": "2026-08-31T01:23:47.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "mistral3",
+    "mirror",
+    "base_model:mistralai/Ministral-3-3B-Instruct-2512",
+    "base_model:quantized:mistralai/Ministral-3-3B-Instruct-2512",
+    "license:apache-2.0",
+    "fp8",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 3849090048,
+  "parameters_human": "3.85B",
+  "storage_bytes": 9378019496,
+  "storage_human": "9.4 GB",
+  "base_model": "mistralai/Ministral-3-3B-Instruct-2512",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "mistralai/Ministral-3-3B-Instruct-2512 · Hugging Face",
+      "url": "https://huggingface.co/mistralai/Ministral-3-3B-Instruct-2512",
+      "snippet": "Usage of the model Here we assume that the model mistralai/Ministral-3-3B-Instruct-2512 is served and you can ping it to the domain localhost with the port 8000 which is the default for vLLM. Vision Reasoning Let&#x27;s see if the Ministral 3 knows when to pick a fight !"
+    },
+    {
+      "title": "mistralai/Ministral-3-3B-Reasoning-2512 · Hugging Face",
+      "url": "https://huggingface.co/mistralai/Ministral-3-3B-Reasoning-2512",
+      "snippet": "Usage of the model Here we assume that the model mistralai/Ministral-3-3B-Reasoning-2512 is served and you can ping it to the domain localhost with the port 8000 which is the default for vLLM. Vision Reasoning Let&#x27;s see if the Ministral 3 model knows when to pick a fight !"
+    },
+    {
+      "title": "Ministral 3 3B Instruct 2512 download | SourceForge.net",
+      "url": "https://sourceforge.net/projects/ministral-3-3b-instruct-2512/",
+      "snippet": "Ministral 3 3B Instruct 2512 is the smallest model in the Ministral 3 family, offering a lightweight yet capable multimodal architecture designed for edge and low-resource deployments. It includes a 3.4B-parameter language model paired with a 0.4B vision encoder, enabling it to understand both text and visual inputs."
+    },
+    {
+      "title": "Ministral 3 3B - docs.mistral.ai",
+      "url": "https://docs.mistral.ai/models/ministral-3-3b-25-12",
+      "snippet": "Ministral 3 3B is the smallest and most efficient model in the Ministral 3 family, offering robust language and vision capabilities in a compact package. Designed for edge deployment, it delivers high performance across diverse hardware, including local setups."
+    },
+    {
+      "title": "Ministral-3-3B-Instruct-2512 - Norman SDK - sdk.norman-ai.com",
+      "url": "https://sdk.norman-ai.com/models/ministral-3-3b-instruct-2512",
+      "snippet": "Ministral-3-3B-Instruct-2512 is a solid middle option when you want dependable instruction following without scaling to large models. It works well for assistants, automation, and text processing where speed and cost matter."
+    }
+  ]
+}

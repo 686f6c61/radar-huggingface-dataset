@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "Nupr-Haokun/microduck-step-up-head-brake",
+  "slug": "nupr-haokun-microduck-step-up-head-brake",
+  "author": "Nupr-Haokun",
+  "url": "https://huggingface.co/Nupr-Haokun/microduck-step-up-head-brake",
+  "created_at": "2026-08-30T21:58:04.000Z",
+  "updated_at": "2026-08-30T21:59:22.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "reinforcement-learning",
+  "library": "onnxruntime",
+  "languages": [],
+  "tags": [
+    "onnxruntime",
+    "onnx",
+    "reinforcement-learning",
+    "robotics",
+    "mujoco",
+    "microduck",
+    "sim2real",
+    "bipedal-robot",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 22624069,
+  "storage_human": "23 MB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - pollen-robotics/microduck: A Tiny biped duck robot",
+      "url": "https://github.com/pollen-robotics/microduck",
+      "snippet": "A Tiny biped duck robot 🦆. Contribute to pollen-robotics/microduck development by creating an account on GitHub."
+    },
+    {
+      "title": "Microduck - A tiny biped robot you can teach new tricks | Pollen Robotics",
+      "url": "https://pollen-robotics.com/microduck/",
+      "snippet": "Microduck is a 25 cm biped robot with 15 motors, a camera, LiDAR and a grasping beak. Playable out of the box, and its open-source stack lets you train new behaviours in simulation and run them on the robot. Pre-order at $399."
+    },
+    {
+      "title": "GitHub - pollen-robotics/microduck_rl: RL training environments for ...",
+      "url": "https://github.com/pollen-robotics/microduck_rl",
+      "snippet": "Every main task has a Backlash twin that trains on a model with ±1° of gear play (2° total) in series with each of the 14 servo joints: insert -Backlash before MicroDuck in the task id, e.g. Mjlab-Velocity-Flat-Backlash-MicroDuck. The backlash is modeled properly for sim2real: each servo gets an unactuated passive_<joint>_backlash hinge, and because the real encoder sits on the output side ..."
+    },
+    {
+      "title": "This MicroDuck Robot, Powered by an RK3566, Has No Arms But Uses AI and ...",
+      "url": "https://circuitdigest.com/news/this-microduck-robot-based-on-an-rk3566-has-no-arms-but-picks-things-up-using-ai-and-reinforcement-learning",
+      "snippet": "Discover Microduck, a $399 biped robot from Hugging Face & Pollen Robotics. Learn about its RK3566 chip, AI, reinforcement learning, and sim-to-real workflow."
+    },
+    {
+      "title": "MicroDuck",
+      "url": "http://microduck.com/",
+      "snippet": "MicroDuck ... MicroDuck"
+    }
+  ]
+}

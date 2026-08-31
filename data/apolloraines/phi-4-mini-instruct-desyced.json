@@ -1,0 +1,78 @@
+{
+  "schema": 1,
+  "id": "ApolloRaines/Phi-4-mini-Instruct-Desyced",
+  "slug": "apolloraines-phi-4-mini-instruct-desyced",
+  "author": "ApolloRaines",
+  "url": "https://huggingface.co/ApolloRaines/Phi-4-mini-Instruct-Desyced",
+  "created_at": "2026-07-20T18:42:56.000Z",
+  "updated_at": "2026-08-30T23:12:56.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "safetensors",
+    "gguf",
+    "phi3",
+    "phi",
+    "phi-4",
+    "desyced",
+    "anti-sycophancy",
+    "text-generation",
+    "conversational",
+    "custom_code",
+    "en",
+    "base_model:microsoft/Phi-4-mini-instruct",
+    "base_model:quantized:microsoft/Phi-4-mini-instruct",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 451,
+  "trending_score": 0,
+  "parameters": 3836021760,
+  "parameters_human": "3.84B",
+  "storage_bytes": 14266042407,
+  "storage_human": "14.3 GB",
+  "base_model": "microsoft/Phi-4-mini-instruct",
+  "formats": [
+    "gguf",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ApolloRaines/Phi-4-mini-Instruct-Desyced · Hugging Face",
+      "url": "https://huggingface.co/ApolloRaines/Phi-4-mini-Instruct-Desyced",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "ApolloRaines/Phi-4-mini-Instruct-Desyced at main - Hugging Face",
+      "url": "https://huggingface.co/ApolloRaines/Phi-4-mini-Instruct-Desyced/tree/main",
+      "snippet": "ApolloRaines / Phi-4-mini-Instruct-Desyced like 0 Text Generation Safetensors GGUF English phi3 phi phi-4 desyced anti-sycophancy conversational custom_code License:mit Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "Phi 4 Mini Instruct Desyced by ApolloRaines - llm-explorer.com",
+      "url": "https://llm-explorer.com/model/ApolloRaines%2FPhi-4-mini-Instruct-Desyced,3XkaAP0uruJ6vAHXRImnN",
+      "snippet": "Phi 4 Mini Instruct Desyced is an open-source 3.8b LLM by ApolloRaines. VRAM 7.7GB, 128K context. Compare benchmarks, capabilities, and deployment details on LLM Explorer."
+    },
+    {
+      "title": "AI Model Catalog | Microsoft Foundry Models",
+      "url": "https://ai.azure.com/catalog/models/Phi-4-mini-instruct",
+      "snippet": "Phi-4-mini-instruct is a lightweight open model built upon synthetic data and filtered publicly available websites - with a focus on high-quality, reasoning dense data. The model belongs to the Phi-4 model family and supports 128K token context length."
+    },
+    {
+      "title": "ai-hub-models/src/qai_hub_models/models/phi_4_mini_instruct ... - GitHub",
+      "url": "https://github.com/qualcomm/ai-hub-models/blob/main/src/qai_hub_models/models/phi_4_mini_instruct/README.md",
+      "snippet": "This is based on the implementation of Phi-4-Mini-Instruct found here. This repository contains scripts for optimized on-device export suitable to run on Qualcomm® devices. More details on model performance across various devices, can be found here. Qualcomm AI Hub Models uses Qualcomm AI Hub Workbench to compile, profile, and evaluate this model."
+    }
+  ]
+}

@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "bratao/portugueseT5",
+  "slug": "bratao-portugueset5",
+  "author": "bratao",
+  "url": "https://huggingface.co/bratao/portugueseT5",
+  "created_at": "2025-05-22T16:02:44.000Z",
+  "updated_at": "2026-08-30T22:05:09.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "pt"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "t5",
+    "text2text-generation",
+    "portuguese",
+    "pretraining",
+    "research-checkpoint",
+    "pt",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 9,
+  "trending_score": 0,
+  "parameters": 783150080,
+  "parameters_human": "783.2M",
+  "storage_bytes": 4699058380,
+  "storage_human": "4.7 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "bratao/PortugueseT5-Instruct · Hugging Face",
+      "url": "https://huggingface.co/bratao/PortugueseT5-Instruct",
+      "snippet": "bratao / PortugueseT5-Instruct like 0 Safetensors t5 Model card FilesFiles and versions xet Community Copy to bucket new No model card Downloads last month 3 Safetensors Model size 0.8B params Tensor type F32 · Files info Inference Providers NEW This model isn&#x27;t deployed by any Inference Provider.🙋Ask for provider support"
+    },
+    {
+      "title": "Hugging Face",
+      "url": "https://huggingface.co/papers/2008.09144.md",
+      "snippet": "The model is fed with this masked token sequence, and trained to produce the original sequence. For example, given the input sequence \"*Que para sobre o PTT5!*\", the model is trained to produce the sequence \"*Que belo dia para aprendermos sobre o maravilhoso PTT5!*\", where \"\" is a mask token. Note that this is an illustrative example."
+    },
+    {
+      "title": "PTT5/README.md at master · unicamp-dl/PTT5 · GitHub",
+      "url": "https://github.com/unicamp-dl/PTT5/blob/master/README.md",
+      "snippet": "PTT5 Official implementation of PTT5: Pretraining and validating the T5 model on Brazilian Portuguese data."
+    },
+    {
+      "title": "GitHub - unicamp-dl/PTT5: Code for training and evaluating T5 on ...",
+      "url": "https://github.com/unicamp-dl/PTT5",
+      "snippet": "PTT5 Official implementation of PTT5: Pretraining and validating the T5 model on Brazilian Portuguese data."
+    },
+    {
+      "title": "PTT5: T5 for Brazilian Portuguese",
+      "url": "https://www.emergentmind.com/papers/2008.09144",
+      "snippet": "This paper presents PTT5, an adaptation of the T5 model tailored specifically for Brazilian Portuguese by leveraging the BrWac corpus. The paper demonstrates that pretrained LLMs exhibit performance enhancements on tasks in their respective languages when trained on monolingual data rather than relying exclusively on multilingual datasets."
+    }
+  ]
+}

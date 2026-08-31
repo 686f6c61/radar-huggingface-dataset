@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "sky-meilin/JoyAI-LLM-Flash-INT4",
+  "slug": "sky-meilin-joyai-llm-flash-int4",
+  "author": "sky-meilin",
+  "url": "https://huggingface.co/sky-meilin/JoyAI-LLM-Flash-INT4",
+  "created_at": "2026-08-31T01:04:34.000Z",
+  "updated_at": "2026-08-31T01:04:35.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "zh",
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "joyai_llm_flash",
+    "text-generation",
+    "conversational",
+    "custom_code",
+    "zh",
+    "en",
+    "endpoints_compatible",
+    "compressed-tensors",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 49286094592,
+  "parameters_human": "49.29B",
+  "storage_bytes": 30862603652,
+  "storage_human": "30.9 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "jdopensource/JoyAI-LLM-Flash-INT4 · Hugging Face",
+      "url": "https://huggingface.co/jdopensource/JoyAI-LLM-Flash-INT4",
+      "snippet": "JoyAI-LLM-Flash is a state-of-the-art medium-sized instruct language model with 3 billion activated parameters and 48 billion total parameters. JoyAI-LLM-Flash was pretrained on 20 trillion text tokens using Muon optimizer, followed by large-scale supervised fine-tuning (SFT), direct preference optimization (DPO), and reinforcement learning (RL ..."
+    },
+    {
+      "title": "JoyAI-LLM Flash: Advancing Mid-Scale LLMs with Token Efficiency",
+      "url": "https://arxiv.org/abs/2604.03044",
+      "snippet": "We introduce JoyAI-LLM Flash, an efficient Mixture-of-Experts (MoE) language model designed to redefine the trade-off between strong performance and token efficiency in the sub-50B parameter regime. JoyAI-LLM Flash is pretrained on a massive corpus of 20 trillion tokens and further optimized through a rigorous post-training pipeline, including supervised fine-tuning (SFT), Direct Preference ..."
+    },
+    {
+      "title": "README.md · jdopensource/JoyAI-LLM-Flash-INT4 at main",
+      "url": "https://huggingface.co/jdopensource/JoyAI-LLM-Flash-INT4/blob/main/README.md",
+      "snippet": "JoyAI-LLM-Flash is a state-of-the-art medium-sized instruct language model with 3 billion activated parameters and 48 billion total parameters. JoyAI-LLM-Flash was pretrained on 20 trillion text tokens using Muon optimizer, followed by large-scale supervised fine-tuning (SFT), direct preference optimization (DPO), and reinforcement learning (RL ..."
+    },
+    {
+      "title": "JoyAI-LLM Flash: Advancing Mid-Scale LLMs with Token Efficiency",
+      "url": "https://arxiv.org/html/2604.03044v1",
+      "snippet": "As shown in Figure 1, JoyAI-LLM Flash achieves competitive or superior token-efficiency performance compared with other state-of-the-art models of similar scale. The figure reports the average accuracy and token consumption across eighteen benchmarks used in post-training evaluation, where models in the upper-right region are more token-efficient."
+    },
+    {
+      "title": "Joyai Llm Flash Int4 - AI Model Insights & Benchmarks",
+      "url": "https://free2aitools.com/model/jdopensource/joyai-llm-flash-int4",
+      "snippet": "JoyAI-LLM-Flash is a state-of-the-art medium-sized instruct language model with 3 billion activated parameters and 48 billion total parameters. JoyAI-LLM-Flash was pretrained on 20 trillion text tokens using Muon optimizer, followed by large-scale supervised fine-tuning (SFT), direct preference optimization (DPO), and reinforcement learning (RL ..."
+    }
+  ]
+}

@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "Falconsai/phi-1_5_adaptive",
+  "slug": "falconsai-phi-1_5_adaptive",
+  "author": "Falconsai",
+  "url": "https://huggingface.co/Falconsai/phi-1_5_adaptive",
+  "created_at": "2026-08-30T22:42:55.000Z",
+  "updated_at": "2026-08-31T00:33:50.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "falconsai",
+    "model-surgeon",
+    "attested-lineage",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 19035363560,
+  "storage_human": "19.0 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Models - Hugging Face",
+      "url": "https://huggingface.co/models?other=falconsai",
+      "snippet": "Licenses Other 1 Model Tree Base Adapters Finetunes Quantizations Merges Apps llama.cpp LM Studio Jan Draw Things DiffusionBee JoyFusion vLLM Ollama MLX LM Docker Model Runner Lemonade SGLang Unsloth Studio Pi Hermes Agent Atomic Chat OpenClaw Inference Providers Select all Groq Novita Cerebras Nscale fal Together AI Fireworks Featherless AI ..."
+    },
+    {
+      "title": "microsoft/phi-1_5 · Hugging Face",
+      "url": "https://huggingface.co/microsoft/phi-1_5",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Falcons AI - Developer Portal",
+      "url": "https://developers.falcons.ai/models",
+      "snippet": "Manage your Falcons AI API keys and track model usage."
+    },
+    {
+      "title": "microsoft/phi-1_5 · Model Database",
+      "url": "https://modeldatabase.com/microsoft/phi-1_5.html",
+      "snippet": "microsoft/phi-1_5 is an open source text generation model built with transformers, 25,526 downloads. Compare and deploy AI models on Model Database."
+    },
+    {
+      "title": "Phi Open Models - Small Language Models | Microsoft Azure",
+      "url": "https://azure.microsoft.com/en-us/products/phi/",
+      "snippet": "Phi open model family Phi models offer cost-effective, high-performance AI solutions at the edge, pushing the boundaries of generative AI."
+    }
+  ]
+}

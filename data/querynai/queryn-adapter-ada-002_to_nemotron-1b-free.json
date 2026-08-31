@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "QuerynAi/queryn-adapter-ada-002_to_nemotron-1b-free",
+  "slug": "querynai-queryn-adapter-ada-002_to_nemotron-1b-free",
+  "author": "QuerynAi",
+  "url": "https://huggingface.co/QuerynAi/queryn-adapter-ada-002_to_nemotron-1b-free",
+  "created_at": "2026-08-30T20:58:11.000Z",
+  "updated_at": "2026-08-30T20:58:27.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "feature-extraction",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "onnx",
+    "embedding",
+    "embedding-translation",
+    "queryn",
+    "ada-002",
+    "nemotron-1b-free",
+    "feature-extraction",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 12925716,
+  "storage_human": "13 MB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "QuerynAi/queryn-adapter-ada-002_to_qwen3-emb-8b · Hugging Face",
+      "url": "https://huggingface.co/QuerynAi/queryn-adapter-ada-002_to_qwen3-emb-8b",
+      "snippet": "Queryn adapter — ada-002 → qwen3-emb-8b Translates an embedding produced by ada-002 into the embedding space of qwen3-emb-8b, so a corpus already embedded with ada-002 can be served against a qwen3-emb-8b index without re-embedding it. Part of the Queryn embedding-translation engine."
+    },
+    {
+      "title": "Azure OpenAI in Microsoft Foundry Models embeddings tutorial ...",
+      "url": "https://learn.microsoft.com/en-us/azure/foundry/openai/tutorials/embeddings",
+      "snippet": "This tutorial shows you how to use the Azure OpenAI embeddings API to perform document search. You query a knowledge base to find the most relevant document. In this tutorial, you learn how to:"
+    },
+    {
+      "title": "Text Embeddings using OpenAI - GeeksforGeeks",
+      "url": "https://www.geeksforgeeks.org/nlp/text-embeddings-using-openai/",
+      "snippet": "Text embeddings are dense numerical representations of text that capture semantic meaning. They allow machines to understand relationships between words, sentences or documents by placing them in a high-dimensional vector space. Nearby vectors map similar meanings, which enables semantic search, recommendation and clustering. OpenAI provides useful embedding models through its API that make it ..."
+    },
+    {
+      "title": "nvidia (NVIDIA) - Hugging Face",
+      "url": "https://huggingface.co/nvidia",
+      "snippet": "The State of Simulation for Physical AI: An Overview ... Introducing Cosmos 3 Edge ... Fine-tune video and image models at scale with NVIDIA NeMo Automodel and 🤗 Diffusers ... NVIDIA Nemotron 3 Embed Ranks #1 Overall on RTEB, Advancing Agentic Retrieval ... Data for Agents ... NVIDIA Isaac Teleop and GR00T 1.7 Open VLA Model Available in LeRobot"
+    },
+    {
+      "title": "Nemotron 3 Embed 1B vs Text Embedding Ada 002 - AI Model Comparison",
+      "url": "https://openrouter.ai/compare/nvidia/nemotron-3-embed-1b/openai/text-embedding-ada-002",
+      "snippet": "Compare Nemotron 3 Embed 1B from Nvidia and Text Embedding Ada 002 from OpenAI on key metrics including benchmarks, price, context length, and other model features."
+    }
+  ]
+}

@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "hashtofu/gemma-4-26b-a4b-it-oQ2.7e",
+  "slug": "hashtofu-gemma-4-26b-a4b-it-oq2-7e",
+  "author": "hashtofu",
+  "url": "https://huggingface.co/hashtofu/gemma-4-26b-a4b-it-oQ2.7e",
+  "created_at": "2026-08-30T19:18:39.000Z",
+  "updated_at": "2026-08-30T19:41:16.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "mlx",
+  "languages": [],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "gemma4",
+    "oq",
+    "quantized",
+    "2-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 3488144974,
+  "parameters_human": "3.49B",
+  "storage_bytes": 11267241744,
+  "storage_human": "11.3 GB",
+  "base_model": null,
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Deploy gemma-4-26B-A4B-it 2026/2027 Tutorial - Graphic Studio",
+      "url": "https://graphicstudio.io/2026/06/28/deploy-gemma-4-26b-a4b-it-2026-2027-tutorial/",
+      "snippet": "The gemma-4-26B-A4B-it model represents a significant advancement in open‑source language models, combining a massive 26‑billion parameter architecture with optimized inference performance. It leverages an attention‑sparse design that reduces computational load while maintaining high fidelity in both factual and creative tasks. The model supports a 2048‑token context window and ..."
+    },
+    {
+      "title": "mtp-gemma-4-26B-A4B-it.gguf · unsloth/gemma-4-26B-A4B-it-GGUF at main",
+      "url": "https://huggingface.co/unsloth/gemma-4-26B-A4B-it-GGUF/blob/main/mtp-gemma-4-26B-A4B-it.gguf",
+      "snippet": "Instructions to use unsloth/gemma-4-26B-A4B-it-GGUF with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Libraries llama-cpp-python How to use unsloth/gemma-4-26B-A4B-it-GGUF with llama-cpp-python:"
+    },
+    {
+      "title": "Gemma 4 26B A4B IT | Gemini Enterprise Agent Platform | Google Cloud ...",
+      "url": "https://docs.cloud.google.com/gemini-enterprise-agent-platform/models/maas/google/gemma-4-26b-a4b-it",
+      "snippet": "Explore Gemma 4 26B A4B IT, an open model built by Google DeepMind. Gemma 4 models are multimodal, handling text and image input and generating text output"
+    },
+    {
+      "title": "Gemma 4 26B A4B IT | NVIDIA NGC",
+      "url": "https://catalog.ngc.nvidia.com/orgs/nim/google/containers/gemma-4-26b-a4b-it/",
+      "snippet": "Reference (s): gemma-4-26B-A4B-it NVIDIA Model Card NGC model page Google gemma-4-26B-A4B-it Model Page NVIDIA Gemma-4-26B-A4B-NVFP4 Model Page Ethical Considerations: NVIDIA believes Trustworthy AI is a shared responsibility and we have established policies and practices to enable development for a wide array of AI applications."
+    },
+    {
+      "title": "Gemma 4 — Google DeepMind",
+      "url": "https://deepmind.google/models/gemma/gemma-4/",
+      "snippet": "Gemma 4 models undergo the same rigorous infrastructure security protocols as our proprietary models. By choosing Gemma 4, enterprises and sovereign organizations gain a trusted, transparent foundation that delivers state-of-the-art capabilities while meeting the highest standards for security and reliability."
+    }
+  ]
+}

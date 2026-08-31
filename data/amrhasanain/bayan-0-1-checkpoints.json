@@ -5,7 +5,7 @@
   "author": "amrhasanain",
   "url": "https://huggingface.co/amrhasanain/bayan-0.1-checkpoints",
   "created_at": "2026-08-29T17:00:23.000Z",
-  "updated_at": "2026-08-30T02:31:05.000Z",
+  "updated_at": "2026-08-30T04:19:57.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": null,
@@ -26,8 +26,8 @@
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
-  "storage_bytes": 12748488441,
-  "storage_human": "12.7 GB",
+  "storage_bytes": 15933763768,
+  "storage_human": "15.9 GB",
   "base_model": "unsloth/qwen2.5-7b-instruct-unsloth-bnb-4bit",
   "formats": [
     "safetensors"

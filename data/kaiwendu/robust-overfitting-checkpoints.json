@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "KaiwenDu/robust-overfitting-checkpoints",
+  "slug": "kaiwendu-robust-overfitting-checkpoints",
+  "author": "KaiwenDu",
+  "url": "https://huggingface.co/KaiwenDu/robust-overfitting-checkpoints",
+  "created_at": "2026-07-25T18:06:23.000Z",
+  "updated_at": "2026-08-30T20:36:04.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "image-classification",
+  "library": "pytorch",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "pytorch",
+    "cifar10",
+    "image-classification",
+    "adversarial-training",
+    "adversarial-robustness",
+    "robust-overfitting",
+    "preactresnet",
+    "frequency-domain",
+    "discrete-cosine-transform",
+    "en",
+    "dataset:uoft-cs/cifar10",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 21560429457,
+  "storage_human": "21.6 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "KaiwenDu/robust-overfitting-checkpoints · Hugging Face",
+      "url": "https://huggingface.co/KaiwenDu/robust-overfitting-checkpoints",
+      "snippet": "Use epoch_200.pt to inspect the final model after robust overfitting has occurred. Use the full checkpoint sequence to reproduce the clean- and robust-accuracy curves across training."
+    },
+    {
+      "title": "KaiwenDu (Kaiwen Du) - Hugging Face",
+      "url": "https://huggingface.co/KaiwenDu/models",
+      "snippet": "KaiwenDu&#x27;s models1 Sort: Recently updated KaiwenDu/robust-overfitting-checkpoints Image Classification •Updated 2 days ago"
+    },
+    {
+      "title": "Robust Overfitting Checkpoints - AI Model Insights & Benchmarks",
+      "url": "https://free2aitools.com/model/kaiwendu/robust-overfitting-checkpoints",
+      "snippet": "Registry entry for model Robust Overfitting Checkpoints; source metadata pending."
+    },
+    {
+      "title": "GitHub - ItsKaiwenDu/Robust-Overfitting: This project focuses on ...",
+      "url": "https://github.com/ItsKaiwenDu/Robust-Overfitting",
+      "snippet": "Project Overview Deep neural networks can be easily tricked by adversarial attacks, which are small, human-imperceptible changes to inputs that cause model to make wrong predictions. Adversarial training helps fix this, but models often run into a problem known as robust overfitting. This means that later in training, model&#x27;s performance on test attacks gets worse even though its training loss ..."
+    },
+    {
+      "title": "checkpoint AI Models | Civitai",
+      "url": "https://civitai.com/tag/checkpoint",
+      "snippet": "Browse 201 Stable Diffusion & Flux models, LoRAs, checkpoints, and embeddings tagged with checkpoint."
+    }
+  ]
+}

@@ -1,0 +1,79 @@
+{
+  "schema": 1,
+  "id": "albucino/Qwen3.8-Flash-Next-W4A16-FP8PLE",
+  "slug": "albucino-qwen3-8-flash-next-w4a16-fp8ple",
+  "author": "albucino",
+  "url": "https://huggingface.co/albucino/Qwen3.8-Flash-Next-W4A16-FP8PLE",
+  "created_at": "2026-08-30T21:47:35.000Z",
+  "updated_at": "2026-08-30T21:56:09.000Z",
+  "license": "qwen-community-1.0",
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen4_exp",
+    "image-text-to-text",
+    "qwen3.8",
+    "autoround",
+    "int4",
+    "fp8",
+    "vllm",
+    "speculative-decoding",
+    "256k-context",
+    "text-generation",
+    "conversational",
+    "base_model:Intel/Qwen3.8-Flash-Next-W4A16-AutoRound",
+    "base_model:quantized:Intel/Qwen3.8-Flash-Next-W4A16-AutoRound",
+    "license:other",
+    "endpoints_compatible",
+    "4-bit",
+    "auto-round",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 72758053011,
+  "parameters_human": "72.76B",
+  "storage_bytes": 128977821186,
+  "storage_human": "129.0 GB",
+  "base_model": "Qwen/Qwen3.8-Flash-Next, Intel/Qwen3.8-Flash-Next-W4A16-AutoRound, RadixArk/Qwen3.8-Flash-Next-NVFP4",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Qwen3.8-Flash-Next - GitHub",
+      "url": "https://github.com/QwenLM/Qwen3.8-Flash-Next/",
+      "snippet": "Qwen3.8-Flash-Next upgrades the model systematically along four aspects — attention, residual, embedding and optimization — improving model capability while further optimizing computational efficiency, model capacity and training stability: Attention A GDN + QSA hybrid architecture."
+    },
+    {
+      "title": "Qwen/Qwen3.8-Flash-Next · Hugging Face",
+      "url": "https://huggingface.co/Qwen/Qwen3.8-Flash-Next",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "aixiaoma/Qwen3.8-Flash-Next-W4A16 · Hugging Face",
+      "url": "https://huggingface.co/aixiaoma/Qwen3.8-Flash-Next-W4A16",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Qwen/Qwen3.8-Flash-Next | vLLM Recipes - recipes.vllm.ai",
+      "url": "https://recipes.vllm.ai/Qwen/Qwen3.8-Flash-Next",
+      "snippet": "Qwen4 architecture preview with a 125B-parameter main model, supplemented by an additional 51B N-gram embeddings, with 6B parameters activated per token."
+    },
+    {
+      "title": "Qwen3.8-Flash-Next: How to Run Locally - unsloth.ai",
+      "url": "https://unsloth.ai/docs/models/qwen3.8-next",
+      "snippet": "Qwen3.8-Flash-Next is a new open-weight, 125B parameter MoE multimodal model from Qwen. Built on the new Qwen4 architecture, it supports a 262K context window and advanced reasoning. Qwen3.8 -Flash-Next outperforms Claude-4.6-Opus (Max) and can run locally on devices with 75GB RAM /unified memory with no GPU VRAM required."
+    }
+  ]
+}

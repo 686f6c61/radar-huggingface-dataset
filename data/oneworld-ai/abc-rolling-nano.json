@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "OneWorld-AI/abc-rolling-nano",
+  "slug": "oneworld-ai-abc-rolling-nano",
+  "author": "OneWorld-AI",
+  "url": "https://huggingface.co/OneWorld-AI/abc-rolling-nano",
+  "created_at": "2026-08-21T21:16:34.000Z",
+  "updated_at": "2026-08-31T00:56:37.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "robotics",
+  "library": "cosmos-framework",
+  "languages": [],
+  "tags": [
+    "cosmos-framework",
+    "safetensors",
+    "cosmos3_omni",
+    "cosmos",
+    "video-generation",
+    "robotics",
+    "world-model",
+    "custom_code",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 15173136576,
+  "parameters_human": "15.17B",
+  "storage_bytes": 30346389472,
+  "storage_human": "30.3 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ABC Rolling-Nano Checkpoint Viewer - a Hugging Face Space by Z1j1n",
+      "url": "https://huggingface.co/spaces/Z1j1n/abc-rolling-nano-viewer",
+      "snippet": "This app lets you pick a sample, model version, run and seed, then view the ground‑truth video side‑by‑side with videos generated at different checkpoints. The two videos play in sync, and you can ..."
+    },
+    {
+      "title": "OneWorld-AI (OneWorld-AI) - Hugging Face",
+      "url": "https://huggingface.co/OneWorld-AI",
+      "snippet": "Org profile for OneWorld-AI on Hugging Face, the AI community building the future."
+    },
+    {
+      "title": "Google pulling Nano Banana from Google Earth after one day shows how ...",
+      "url": "https://www.techradar.com/ai-platforms-assistants/google-pulling-nano-banana-from-google-earth-after-one-day-shows-how-bad-our-ai-misinformation-problem-has-got",
+      "snippet": "The feature is AI image generation in Google Earth, powered by the Nano Banana 2 model, and after a wave of inappropriate images were created and posted online, it&#x27;s now been pulled while Google ..."
+    },
+    {
+      "title": "One World AI — Decentralized AI Infrastructure Community",
+      "url": "https://oneworldai.net/en",
+      "snippet": "One World AI is a private community united around the decentralized AI infrastructure Gonka.ai. We study the project, use its capabilities, and help in its development."
+    },
+    {
+      "title": "[2605.23993] Nano World Models: A Minimalist Implementation of Future ...",
+      "url": "https://arxiv.org/abs/2605.23993",
+      "snippet": "We introduce Nano World Models, a minimalist codebase for future video prediction centered around diffusion forcing. Nano World Models provides a unified interface for generative objectives, model scales, action-conditioning mechanisms, latent observation spaces, datasets, evaluation protocols, and long-horizon rollout procedures."
+    }
+  ]
+}

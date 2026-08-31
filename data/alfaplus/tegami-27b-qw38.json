@@ -5,7 +5,7 @@
   "author": "alfaplus",
   "url": "https://huggingface.co/alfaplus/tegami-27B-qw38",
   "created_at": "2026-08-30T01:59:50.000Z",
-  "updated_at": "2026-08-30T03:36:51.000Z",
+  "updated_at": "2026-08-30T17:02:15.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -16,6 +16,7 @@
   ],
   "tags": [
     "peft",
+    "safetensors",
     "lora",
     "qlora",
     "japanese",
@@ -35,10 +36,12 @@
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
-  "storage_bytes": 0,
-  "storage_human": null,
+  "storage_bytes": 467062560,
+  "storage_human": "467 MB",
   "base_model": "Qwen/Qwen3.8-27B",
-  "formats": [],
+  "formats": [
+    "safetensors"
+  ],
   "is_conversational": false,
   "gated": false,
   "removed": false,

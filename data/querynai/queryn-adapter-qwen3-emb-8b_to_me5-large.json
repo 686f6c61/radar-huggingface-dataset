@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "QuerynAi/queryn-adapter-qwen3-emb-8b_to_me5-large",
+  "slug": "querynai-queryn-adapter-qwen3-emb-8b_to_me5-large",
+  "author": "QuerynAi",
+  "url": "https://huggingface.co/QuerynAi/queryn-adapter-qwen3-emb-8b_to_me5-large",
+  "created_at": "2026-08-30T21:12:59.000Z",
+  "updated_at": "2026-08-30T21:14:08.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "feature-extraction",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "onnx",
+    "embedding",
+    "embedding-translation",
+    "queryn",
+    "qwen3-emb-8b",
+    "me5-large",
+    "feature-extraction",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 17117809,
+  "storage_human": "17 MB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Qwen/Qwen3-Embedding-8B · Hugging Face",
+      "url": "https://huggingface.co/Qwen/Qwen3-Embedding-8B",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "AI Model Catalog | Microsoft Foundry Models",
+      "url": "https://ai.azure.com/catalog/models/qwen--qwen3-embedding-8b",
+      "snippet": "The Qwen3 Embedding model series is the latest proprietary model of the Qwen family, specifically designed for text embedding and ranking tasks. Building upon the dense foundational models of the Qwen3 series, it provides a comprehensive range of text embeddings and reranking models in various sizes (0.6B, 4B, and 8B)."
+    },
+    {
+      "title": "GitHub - Gigadelux/Queryn: Queryn is the engine for interoperability ...",
+      "url": "https://github.com/Gigadelux/Queryn/tree/main",
+      "snippet": "Project Abstract Queryn is an embedding translation and enrichment engine: given a text chunk and its existing embedding from Model A, it returns the equivalent embedding in Model B&#x27;s space — without re-embedding the source corpus. It ships as a local program, invoked directly against a customer&#x27;s own infrastructure and authenticated with credentials — not a hosted HTTP API. The core ..."
+    },
+    {
+      "title": "Qwen/Qwen3-8B · Hugging Face",
+      "url": "https://huggingface.co/Qwen/Qwen3-8B",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GitHub - QwenLM/Qwen3-Embedding",
+      "url": "https://github.com/QwenLM/Qwen3-Embedding",
+      "snippet": "The Qwen3 Embedding model series is the latest proprietary model of the Qwen family, specifically designed for text embedding and ranking tasks. Building upon the dense foundational models of the Qwen3 series, it provides a comprehensive range of text embeddings and reranking models in various sizes (0.6B, 4B, and 8B). This series inherits the exceptional multilingual capabilities, long-text ..."
+    }
+  ]
+}

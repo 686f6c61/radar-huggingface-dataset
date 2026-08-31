@@ -5,7 +5,7 @@
   "author": "sleephashira",
   "url": "https://huggingface.co/sleephashira/rei-character-noobai-xl-vpred-lora",
   "created_at": "2026-08-29T21:10:59.000Z",
-  "updated_at": "2026-08-29T21:44:05.000Z",
+  "updated_at": "2026-08-30T11:04:49.000Z",
   "license": "other",
   "license_family": "unknown",
   "pipeline_tag": "text-to-image",
@@ -30,8 +30,8 @@
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
-  "storage_bytes": 457822199,
-  "storage_human": "458 MB",
+  "storage_bytes": 461862554,
+  "storage_human": "462 MB",
   "base_model": "Laxhar/noobai-XL-Vpred-1.0",
   "formats": [
     "diffusers"

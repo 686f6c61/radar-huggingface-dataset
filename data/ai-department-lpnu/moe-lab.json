@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "ai-department-lpnu/moe-lab",
+  "slug": "ai-department-lpnu-moe-lab",
+  "author": "ai-department-lpnu",
+  "url": "https://huggingface.co/ai-department-lpnu/moe-lab",
+  "created_at": "2026-08-30T22:30:17.000Z",
+  "updated_at": "2026-08-30T22:33:34.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "pytorch",
+  "languages": [],
+  "tags": [
+    "pytorch",
+    "education",
+    "mixture-of-experts",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 2809852864,
+  "storage_human": "2.8 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Home [www1.se.cuhk.edu.hk]",
+      "url": "https://www1.se.cuhk.edu.hk/~moelab/index.html",
+      "snippet": "About Us This is the MoE Key Laboratory of High Confidence Software Technologies (MoE Lab), supervised by Prof. Wong Kam-Fai, at System Engineering and Engineering Management Department , The Chinese University of Hong Kong (CUHK) . We focus on the research and development of theory, system and application for Human-centric Generative AI in Forgettability, Reliability, Adaptability ..."
+    },
+    {
+      "title": "ai-department-lpnu/YOLOv8-Ghost-QWA · Hugging Face",
+      "url": "https://huggingface.co/ai-department-lpnu/YOLOv8-Ghost-QWA",
+      "snippet": "Model architecture The main improvement over the original YOLOv8 is the use of Ghost Convolution modules to accelerate inference, especially in constrained or embedded environments. Since lightweight convolutions can reduce representational capacity, the model employs SimAM attention in the backbone and QWA attention in the head (after each C2F module) to retain strong feature quality. These ..."
+    },
+    {
+      "title": "Department of Artificial Intelligence of Lviv National University \"Lviv ...",
+      "url": "http://ai-vns.lpnu.ua/?lang=uk",
+      "snippet": "Machine Learning Ops The concept of MLOps is still relatively young, but every day it becomes more and more in demand. In practice, the problem of introducing ML models into a real business is not limited to data preparation, development and training of a neural network or other Machine Learning algorithm. The quality of a production solution is influenced by many factors, from verification of ..."
+    },
+    {
+      "title": "AIS | Lviv Polytechnic National University - lpnu.ua",
+      "url": "https://lpnu.ua/en/ais",
+      "snippet": "Phone number (s) (0322) 25-83-110 Website Department of Artificial Intelligence Systems Facebook Department of Artificial Intelligence Systems Instagram"
+    },
+    {
+      "title": "Кафедра систем штучного інтелекту",
+      "url": "https://aidept.com.ua/",
+      "snippet": "Кафедра систем штучного інтелекту Формуємо нове покоління AI-фахівців, що створюють технології майбутнього на базі Львівської політехніки."
+    }
+  ]
+}

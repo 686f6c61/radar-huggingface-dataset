@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "Luki-G/augmented-residuals-culturax24-downstream",
+  "slug": "luki-g-augmented-residuals-culturax24-downstream",
+  "author": "Luki-G",
+  "url": "https://huggingface.co/Luki-G/augmented-residuals-culturax24-downstream",
+  "created_at": "2026-08-30T19:47:51.000Z",
+  "updated_at": "2026-08-30T19:48:20.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "multilingual",
+    "xnli",
+    "paws-x",
+    "residual-connections",
+    "mhc",
+    "attention-residuals",
+    "text-classification",
+    "dataset:facebook/xnli",
+    "dataset:google/paws-x",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 4271589110,
+  "storage_human": "4.3 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Luki-G/augmented-residuals-culturax24 · Hugging Face",
+      "url": "https://huggingface.co/Luki-G/augmented-residuals-culturax24",
+      "snippet": "Luki-G / augmented-residuals-culturax24 like 0 Model card FilesFiles and versions xet Community Copy to bucket new No model card Downloads last month -"
+    },
+    {
+      "title": "LAuReL: Learned Augmented Residual Layer - arXiv.org",
+      "url": "https://arxiv.org/html/2411.07501v3",
+      "snippet": "In this paper, we introduce the Learned Augmented Residual Layer (LAuReL)—a novel generalization of the canonical residual connection—designed to serve as an in-situ replacement while outperforming it in both model quality and footprint metrics."
+    },
+    {
+      "title": "LAUREL: Learned Augmented Residual Layer | AI Research Paper Details",
+      "url": "https://www.aimodels.fyi/papers/arxiv/laurel-learned-augmented-residual-layer",
+      "snippet": "The paper introduces LAuReL (Learned Augmented Residual Layer), a novel neural network layer that enhances the capabilities of standard residual layers. LAuReL aims to improve the performance of deep neural networks by learning an additional residual component that complements the original residual connection."
+    },
+    {
+      "title": "LAUREL | Proceedings of the 42nd International Conference on Machine ...",
+      "url": "https://dl.acm.org/doi/10.5555/3780338.3782099",
+      "snippet": "In this paper, we introduce the Learned Augmented Residual Layer (LAUREL)—a novel generalization of the canonical residual connection— designed to serve as an in-situ replacement while outperforming it in both model quality and footprint metrics. Our experiments show that LAUREL can enhance quality for both vision and language models while adding fewer parameters and incurring less latency ..."
+    },
+    {
+      "title": "[2411.07501] LAuReL: Learned Augmented Residual Layer",
+      "url": "https://arxiv.org/abs/2411.07501",
+      "snippet": "In this paper we introduce Learned Augmented Residual Layer (LAuReL) -- a novel generalization of the canonical residual connection -- with the goal to be an in-situ replacement of the latter while outperforming on both model quality and footprint metrics."
+    }
+  ]
+}

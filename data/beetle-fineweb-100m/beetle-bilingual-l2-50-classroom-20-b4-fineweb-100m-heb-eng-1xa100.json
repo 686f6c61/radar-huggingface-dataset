@@ -5,7 +5,7 @@
   "author": "Beetle-FineWeb-100M",
   "url": "https://huggingface.co/Beetle-FineWeb-100M/beetle-bilingual-l2-50-classroom-20-b4-fineweb-100m-heb-eng-1xa100",
   "created_at": "2026-08-30T17:33:31.000Z",
-  "updated_at": "2026-08-30T18:34:52.000Z",
+  "updated_at": "2026-08-30T19:08:57.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": "text-generation",
@@ -25,8 +25,8 @@
   "trending_score": 0,
   "parameters": 193804032,
   "parameters_human": "193.8M",
-  "storage_bytes": 47291253936,
-  "storage_human": "47.3 GB",
+  "storage_bytes": 108537268319,
+  "storage_human": "108.5 GB",
   "base_model": null,
   "formats": [
     "safetensors"

@@ -5,7 +5,7 @@
   "author": "jeffwuu32",
   "url": "https://huggingface.co/jeffwuu32/biored-ner-gemma-4-E2B-it",
   "created_at": "2026-08-29T18:02:45.000Z",
-  "updated_at": "2026-08-29T18:02:49.000Z",
+  "updated_at": "2026-08-30T20:03:47.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": null,
@@ -23,7 +23,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 0,
+  "downloads_30d": 20,
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,

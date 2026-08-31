@@ -5,7 +5,7 @@
   "author": "tadiecool29",
   "url": "https://huggingface.co/tadiecool29/MTL-rasyosef-roberta-base-amharic-finetuned",
   "created_at": "2026-08-27T08:19:52.000Z",
-  "updated_at": "2026-08-27T08:20:10.000Z",
+  "updated_at": "2026-08-30T13:24:42.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": null,
@@ -25,8 +25,8 @@
   "trending_score": 0,
   "parameters": 110621959,
   "parameters_human": "110.6M",
-  "storage_bytes": 442517445,
-  "storage_human": "443 MB",
+  "storage_bytes": 885034890,
+  "storage_human": "885 MB",
   "base_model": "rasyosef/roberta-base-amharic",
   "formats": [
     "safetensors"

@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "qf-iquest/EliteModel-PublicRepo",
+  "slug": "qf-iquest-elitemodel-publicrepo",
+  "author": "qf-iquest",
+  "url": "https://huggingface.co/qf-iquest/EliteModel-PublicRepo",
+  "created_at": "2026-08-30T23:00:40.000Z",
+  "updated_at": "2026-08-30T23:00:43.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "feature-extraction",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "pytorch",
+    "bert",
+    "feature-extraction",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 23,
+  "storage_human": "23 B",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "qf-iquest/EliteModel-PublicRepo · Hugging Face",
+      "url": "https://huggingface.co/qf-iquest/EliteModel-PublicRepo",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "qf-iquest (qingfeng) - Hugging Face",
+      "url": "https://huggingface.co/qf-iquest",
+      "snippet": "Sort: Recently updated. qf-iquest/SynthMind-Release. Feature Extraction • Updated 2 days ago • 96. qf-iquest/MyAwesomeModel-TestRepo. Feature Extraction • Updated 2 days ago"
+    },
+    {
+      "title": "CivArchive - CivitAI Archive",
+      "url": "https://civarchive.com/about",
+      "snippet": "CivArchive is a cross-platform search engine for AI models. We don&#x27;t host files ourselves — instead, we crawl various sources and index the models we find, using the file&#x27;s SHA256 hash as its unique, permanent ID. CivArchive was created in direct response to models being suddenly removed from CivitAI. Our core mission is to be a resilient, community-driven archive that preserves access to ..."
+    },
+    {
+      "title": "qf-iquest (qingfeng) - Hugging Face",
+      "url": "https://huggingface.co/qf-iquest/datasets",
+      "snippet": "Recent Activity updated a model1 day ago qf-iquest/SynthMind-Release published a model1 day ago qf-iquest/SynthMind-Release updated a model1 day ago qf-iquest/MyAwesomeModel-TestRepo View all activity"
+    },
+    {
+      "title": "IQ Test | Tracking AI",
+      "url": "https://trackingai.org/",
+      "snippet": "Tracking AI is a cutting-edge application that unveils the IQ Scores of frontier artificial intelligence models. Explore and analyze the IQ Scores of AIs with our intuitive platform, designed to foster transparency in the world of artificial intelligence. Stay informed and uncover the IQs shaping the algorithms behind the technology revolution."
+    }
+  ]
+}

@@ -1,0 +1,76 @@
+{
+  "schema": 1,
+  "id": "cowWhySo/permission-gate-onnx",
+  "slug": "cowwhyso-permission-gate-onnx",
+  "author": "cowWhySo",
+  "url": "https://huggingface.co/cowWhySo/permission-gate-onnx",
+  "created_at": "2026-04-02T03:45:11.000Z",
+  "updated_at": "2026-08-31T01:30:43.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": "sklearn",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "sklearn",
+    "onnx",
+    "security",
+    "guardrails",
+    "agent-safety",
+    "llm-agent",
+    "tool-use",
+    "permission-gating",
+    "command-classification",
+    "prompt-injection",
+    "scikit-learn",
+    "text-classification",
+    "en",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 3934807,
+  "storage_human": "4 MB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "cowWhySo/permission-gate-onnx · Hugging Face",
+      "url": "https://huggingface.co/cowWhySo/permission-gate-onnx",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GitHub - onnx/models: A collection of pre-trained, state-of-the-art ...",
+      "url": "https://github.com/onnx/models",
+      "snippet": "Welcome to the ONNX Model Zoo! The Open Neural Network Exchange (ONNX) is an open standard format created to represent machine learning models. Supported by a robust community of partners, ONNX defines a common set of operators and a common file format to enable AI developers to use models with a variety of frameworks, tools, runtimes, and compilers. This repository is a curated collection of ..."
+    },
+    {
+      "title": "Models - ONNX Runtime",
+      "url": "https://onnxruntime.ai/models",
+      "snippet": "ONNX Models - find ONNX models for natural language processing, computer vision, and more."
+    },
+    {
+      "title": "kornia/ONNX_models · Hugging Face",
+      "url": "https://huggingface.co/kornia/ONNX_models",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "ONNX Model Zoo, now with models and data! - GitHub",
+      "url": "https://github.com/xetdata/onnx-models",
+      "snippet": "ONNX is supported by a community of partners who have implemented it in many frameworks and tools. The ONNX Model Zoo is a collection of pre-trained, state-of-the-art models in the ONNX format contributed by community members like you. Accompanying each model are Jupyter notebooks for model training and running inference with the trained model."
+    }
+  ]
+}

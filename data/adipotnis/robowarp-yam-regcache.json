@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "adipotnis/robowarp-yam-regcache",
+  "slug": "adipotnis-robowarp-yam-regcache",
+  "author": "adipotnis",
+  "url": "https://huggingface.co/adipotnis/robowarp-yam-regcache",
+  "created_at": "2026-08-30T22:47:46.000Z",
+  "updated_at": "2026-08-30T22:47:50.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 3187,
+  "storage_human": "3187 B",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": true,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "adipotnis/m5-byol-cfsteer-robowarp · Hugging Face",
+      "url": "https://huggingface.co/adipotnis/m5-byol-cfsteer-robowarp",
+      "snippet": "adipotnis / m5-byol-cfsteer-robowarp like 0 Robotics vla pi0.5 libero openpi counterfactual flow-matching License:apache-2.0 Model card FilesFiles and versions xet Community Copy to bucket new"
+    },
+    {
+      "title": "adipotnis/m4-embzero-bootstrap-cf-robowarp · Hugging Face",
+      "url": "https://huggingface.co/adipotnis/m4-embzero-bootstrap-cf-robowarp",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "adipotnis (Aditya Potnis) · GitHub",
+      "url": "https://github.com/adipotnis",
+      "snippet": "V-JEPA2 visual encoder + diffusion policy for navigation waypoint prediction Python"
+    },
+    {
+      "title": "Open models by OpenAI | OpenAI",
+      "url": "https://openai.com/open-models/",
+      "snippet": "Advanced open-weight reasoning models to customize for any use case and run anywhere."
+    },
+    {
+      "title": "adipotnis/m3-train-time-cfsteer-robowarp · Hugging Face",
+      "url": "https://d6108366.hf-mirror.com/adipotnis/m3-train-time-cfsteer-robowarp",
+      "snippet": "State-blind by design (matches the RoboWarp test-time baseline for comparability). Comparison runs: adipotnis/m2-train-time-cf-robowarp (source-tilted twin), adipotnis/pi05-libero-spatial-run1 (plain finetune of pi05_base on the same data); CF-Steer test-time numbers in the RoboWarp report."
+    }
+  ]
+}

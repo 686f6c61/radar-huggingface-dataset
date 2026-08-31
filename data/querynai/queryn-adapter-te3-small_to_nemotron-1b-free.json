@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "QuerynAi/queryn-adapter-te3-small_to_nemotron-1b-free",
+  "slug": "querynai-queryn-adapter-te3-small_to_nemotron-1b-free",
+  "author": "QuerynAi",
+  "url": "https://huggingface.co/QuerynAi/queryn-adapter-te3-small_to_nemotron-1b-free",
+  "created_at": "2026-08-30T21:20:38.000Z",
+  "updated_at": "2026-08-30T21:21:19.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "feature-extraction",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "onnx",
+    "embedding",
+    "embedding-translation",
+    "queryn",
+    "te3-small",
+    "nemotron-1b-free",
+    "feature-extraction",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 12918813,
+  "storage_human": "13 MB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Queryn adapter — bge-m3 → fastembed-bge-small - Hugging Face",
+      "url": "https://huggingface.co/QuerynAi/queryn-adapter-bge-m3_to_fastembed-bge-small",
+      "snippet": "Collection including QuerynAi/queryn-adapter-bge-m3_to_fastembed-bge-small Queryn Embedding Adapters ONNX adapters that translate a chunk&#x27;s embedding from one model&#x27;s space into another&#x27;s, without re-embedding. From the Queryn pipeline.••"
+    },
+    {
+      "title": "GitHub - ai-models-lab/minimax-h3: MiniMax-H3-Hub, ComfyUI Workflows ...",
+      "url": "https://github.com/ai-models-lab/minimax-h3",
+      "snippet": "MiniMax-H3-Hub, ComfyUI Workflows, Prompts, VRAM Optimizer &amp; API Docs. Official community knowledge base and open-source toolkit for MiniMax H3 (Hailuo AI 3.0) — 2K open-weights video generato..."
+    },
+    {
+      "title": "NVIDIA-Nemotron-Nano-9B-v2 - Hugging Face",
+      "url": "https://huggingface.co/nvidia/NVIDIA-Nemotron-Nano-9B-v2",
+      "snippet": "NVIDIA Nemotron V2 ... NVIDIA Nemotron Nano 2: An Accurate and Efficient Hybrid Mamba-Transformer Reasoning Model ... Nemotron-H: A Family of Accurate and Efficient Hybrid Mamba-Transformer Models ... Nemotron-CC: Transforming Common Crawl into a Refined Long-Horizon Pretraining Dataset ... Nemotron 3 Nano 4B: A Compact Hybrid Model for ..."
+    },
+    {
+      "title": "nemotron-3-embed-1b Model by NVIDIA | NVIDIA NIM",
+      "url": "https://build.nvidia.com/nvidia/nemotron-3-embed-1b/modelcard",
+      "snippet": "Model Overview Description: Nemotron-3-Embed-1B is a versatile text embedding model developed by NVIDIA and optimized for retrieval and semantic similarity tasks. It provides strong multilingual and cross-lingual retrieval capabilities and is designed to serve as a foundational component in text-based Retrieval-Augmented Generation (RAG) systems. The model is available in two versions ..."
+    },
+    {
+      "title": "Models | Jetson AI Lab",
+      "url": "https://www.jetson-ai-lab.com/models/",
+      "snippet": "Nemotron 3.5 Lightning NVIDIA&#x27;s fast open-weight model for responsive local agents, reasoning, coding, and tool use. It delivers performance comparable to the much larger Nemotron 3 Super."
+    }
+  ]
+}

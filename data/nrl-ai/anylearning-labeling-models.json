@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "nrl-ai/anylearning-labeling-models",
+  "slug": "nrl-ai-anylearning-labeling-models",
+  "author": "nrl-ai",
+  "url": "https://huggingface.co/nrl-ai/anylearning-labeling-models",
+  "created_at": "2026-08-30T05:08:56.000Z",
+  "updated_at": "2026-08-31T02:40:17.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-segmentation",
+  "library": "onnx",
+  "languages": [],
+  "tags": [
+    "onnx",
+    "anylearning",
+    "onnxruntime",
+    "segment-anything",
+    "segment-anything-2",
+    "segment-anything-2.1",
+    "image-segmentation",
+    "promptable-segmentation",
+    "edge-ai",
+    "arxiv:2408.00714",
+    "arxiv:2304.02643",
+    "arxiv:2402.05008",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 7503629834,
+  "storage_human": "7.5 GB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "AnyLearning — label images and train models on your own machine",
+      "url": "https://anylearning.nrl.ai/",
+      "snippet": "Simple, Smart, Secured AI Model Builder. Create custom AI models in minutes with no-code tools."
+    },
+    {
+      "title": "AnyLearning - Simple, Smart, Secured AI Model Builder",
+      "url": "https://anylearning.nrl.ai/?ref=producthunt",
+      "snippet": "Data labeling Offline, flexible, and AI-powered. Starter guide Basic usage for labeling and training open source and AnyLearning models. Model training Train models for various computer vision problems: classification, detection, segmentation."
+    },
+    {
+      "title": "AnyLabeling - Smart Image Labeling Tool",
+      "url": "https://anylabeling.nrl.ai/",
+      "snippet": "Effortless data labeling With AI support from Segment Anything and YOLO models."
+    },
+    {
+      "title": "About AnyLabeling - AnyLabeling",
+      "url": "https://anylabeling.nrl.ai/about",
+      "snippet": "Effortless AI-assisted data labeling with AI support from Segment Anything and YOLO!"
+    },
+    {
+      "title": "GitHub - nrl-ai/anylearning-oss: Open-source, offline-first no-code AI ...",
+      "url": "https://github.com/nrl-ai/anylearning-oss/tree/main",
+      "snippet": "AnyLearning is an open-source, offline desktop application for labeling data, training machine-learning models, and exporting them for deployment. Your datasets and trained weights stay on your machine. Website: https://anylearning-oss.nrl.ai License: Apache License 2.0."
+    }
+  ]
+}

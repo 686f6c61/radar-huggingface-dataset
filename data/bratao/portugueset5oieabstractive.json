@@ -1,0 +1,76 @@
+{
+  "schema": 1,
+  "id": "bratao/PortugueseT5OieAbstractive",
+  "slug": "bratao-portugueset5oieabstractive",
+  "author": "bratao",
+  "url": "https://huggingface.co/bratao/PortugueseT5OieAbstractive",
+  "created_at": "2025-05-29T14:35:47.000Z",
+  "updated_at": "2026-08-30T22:05:02.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "pt"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "t5",
+    "text2text-generation",
+    "open-information-extraction",
+    "openie",
+    "portuguese",
+    "abstractive-openie",
+    "research-checkpoint",
+    "pt",
+    "base_model:bratao/PortugueseT5-Instruct",
+    "base_model:finetune:bratao/PortugueseT5-Instruct",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 3,
+  "trending_score": 0,
+  "parameters": 783150080,
+  "parameters_human": "783.2M",
+  "storage_bytes": 3132689612,
+  "storage_human": "3.1 GB",
+  "base_model": "bratao/PortugueseT5-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "bratao/PortugueseT5-Instruct · Hugging Face",
+      "url": "https://huggingface.co/bratao/PortugueseT5-Instruct",
+      "snippet": "bratao / PortugueseT5-Instruct like 0 Safetensors t5 Model card FilesFiles and versions xet Community Copy to bucket new No model card Downloads last month 3 Safetensors Model size 0.8B params Tensor type F32 · Files info Inference Providers NEW This model isn&#x27;t deployed by any Inference Provider.🙋Ask for provider support"
+    },
+    {
+      "title": "bratao (Bruno) - Hugging Face",
+      "url": "https://huggingface.co/bratao/datasets",
+      "snippet": "AI & ML interests ... Recent Activity liked a dataset about 1 month ago ... liked a dataset about 2 months ago"
+    },
+    {
+      "title": "Portugal AI model performs best - The Portugal News",
+      "url": "https://www.theportugalnews.com/news/2026-01-02/portugal-ai-model-performs-best/939008",
+      "snippet": "The Amália artificial intelligence (AI) model performs better in European Portuguese than other open models, according to the technical report from the investment and development team to which Lusa had access."
+    },
+    {
+      "title": "AI Leaderboard 2026: Rankings for 300+ Top AI Models by Intelligence ...",
+      "url": "https://llm-stats.com/",
+      "snippet": "The AI Leaderboard — independent rankings of GPT, Claude, Gemini, Llama, DeepSeek and 300+ AI models by intelligence, speed and price. Composite LLM Stats Score updated continuously from public benchmarks and live API metrics."
+    },
+    {
+      "title": "Portuguese Language - AI Models Benchmark",
+      "url": "https://artificialanalysis.ai/models/multilingual/portuguese",
+      "snippet": "Top AI models for Portuguese language tasks. Compare Portuguese language reasoning scores, cost, speed, context window, and more."
+    }
+  ]
+}

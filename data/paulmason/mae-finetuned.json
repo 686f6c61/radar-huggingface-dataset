@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "Paulmason/mae-finetuned",
+  "slug": "paulmason-mae-finetuned",
+  "author": "Paulmason",
+  "url": "https://huggingface.co/Paulmason/mae-finetuned",
+  "created_at": "2026-08-30T21:22:43.000Z",
+  "updated_at": "2026-08-30T21:22:52.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "mae",
+    "pytorch",
+    "multitask",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 24832,
+  "parameters_human": "24832",
+  "storage_bytes": 99808,
+  "storage_human": "99808 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Self-Host and Fine-Tune Microsoft MAI Models on GPU Cloud: The 9-Model ...",
+      "url": "https://www.spheron.network/blog/microsoft-mai-models-self-host-fine-tune-gpu-cloud/",
+      "snippet": "Microsoft&#x27;s MAI family spans reasoning, code, image, voice, and transcription. This guide covers which models release downloadable weights, GPU requirements per model, LoRA fine-tuning steps, and cost math versus Azure and per-token APIs."
+    },
+    {
+      "title": "Models - Microsoft AI",
+      "url": "https://microsoft.ai/models/",
+      "snippet": "Discover and build with the latest MAI models At Microsoft AI, our vision is humanist"
+    },
+    {
+      "title": "mae/FINETUNE.md at main · facebookresearch/mae · GitHub",
+      "url": "https://github.com/facebookresearch/mae/blob/main/FINETUNE.md?plain=1",
+      "snippet": "PyTorch implementation of MAE https//arxiv.org/abs/2111.06377 - mae/FINETUNE.md at main · facebookresearch/mae"
+    },
+    {
+      "title": "Building a hill-climbing machine: Launching seven new MAI models ...",
+      "url": "https://microsoft.ai/news/building-a-hillclimbing-machine-launching-seven-new-mai-models/",
+      "snippet": "Here&#x27;s our first steps along the way. Our Models Our new models across image, voice, transcription, coding, and reasoning, together form the MAI model family: a multimodal ecosystem designed to work across the kinds of tasks that matter in the real world. MAI-Thinking-1, Microsoft AI&#x27;s flagship reasoning model."
+    },
+    {
+      "title": "AI Model Catalog | Microsoft Foundry Models",
+      "url": "https://ai.azure.com/catalog",
+      "snippet": "Build AI that ships Build, test, and deploy AI systems with the models, tools, and workflows your team needs. Scale on one platform."
+    }
+  ]
+}

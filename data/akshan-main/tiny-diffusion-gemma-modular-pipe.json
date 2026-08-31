@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "akshan-main/tiny-diffusion-gemma-modular-pipe",
+  "slug": "akshan-main-tiny-diffusion-gemma-modular-pipe",
+  "author": "akshan-main",
+  "url": "https://huggingface.co/akshan-main/tiny-diffusion-gemma-modular-pipe",
+  "created_at": "2026-08-30T21:39:52.000Z",
+  "updated_at": "2026-08-30T21:46:05.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-to-image",
+  "library": "diffusers",
+  "languages": [],
+  "tags": [
+    "diffusers",
+    "safetensors",
+    "modular-diffusers",
+    "diffusion-gemma",
+    "text-to-image",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 49268578,
+  "storage_human": "49 MB",
+  "base_model": null,
+  "formats": [
+    "diffusers",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "transformers/src/transformers/models/diffusion_gemma/modular ... - GitHub",
+      "url": "https://github.com/huggingface/transformers/blob/main/src/transformers/models/diffusion_gemma/modular_diffusion_gemma.py",
+      "snippet": "transformers / src / transformers / models / diffusion_gemma / modular_diffusion_gemma.py Cyrilvallez Use explicit nn.Buffer everywhere for modular (#47722)"
+    },
+    {
+      "title": "gemma/gemma/diffusion at main · google-deepmind/gemma · GitHub",
+      "url": "https://github.com/google-deepmind/gemma/tree/main/gemma/diffusion",
+      "snippet": "Gemma open-weight LLM library, from Google DeepMind - gemma/gemma/diffusion at main · google-deepmind/gemma"
+    },
+    {
+      "title": "DiffusionGemma — Google DeepMind",
+      "url": "https://deepmind.google/models/gemma/diffusiongemma/",
+      "snippet": "DiffusionGemma abandons the sequential, token-by-token process of typical autoregressive Large Language Models. Built on Gemma 4 and Gemini Diffusion research, it prioritizes unprecedented speed and parallel layout generation, unlocking novel workflows for developers building real-time interactive AI applications."
+    },
+    {
+      "title": "shibatch/tinydiffusiongemmamoe4m · Hugging Face",
+      "url": "https://huggingface.co/shibatch/tinydiffusiongemmamoe4m",
+      "snippet": "The model is intentionally small: it has 4,190,512 parameters and an 8-token diffusion canvas. It is primarily intended for validation, debugging, and experimentation with the Diffusion Gemma implementation in Hugging Face Transformers. This is a synthetic tiny checkpoint."
+    },
+    {
+      "title": "DiffusionGemma: The Developer Guide - Google Developers Blog",
+      "url": "https://developers.googleblog.com/diffusiongemma-the-developer-guide/",
+      "snippet": "Following our announcement in our launch blog post, we are sharing this developer guide to help you understand, serve and customize this experimental model. Built on the Gemma 4 backbone, DiffusionGemma introduces several milestones for developer workflows: Compute-bound parallel generation: Bypasses memory-bandwidth limitations by shifting the bottleneck to compute, delivering up to 4x faster ..."
+    }
+  ]
+}

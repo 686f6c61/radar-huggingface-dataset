@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "sandeep123/aops-grpo-vanilla-step100",
+  "slug": "sandeep123-aops-grpo-vanilla-step100",
+  "author": "sandeep123",
+  "url": "https://huggingface.co/sandeep123/aops-grpo-vanilla-step100",
+  "created_at": "2026-08-31T01:21:49.000Z",
+  "updated_at": "2026-08-31T01:25:14.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "qwen2",
+    "rl",
+    "grpo",
+    "verl",
+    "scienceqa",
+    "reasoning",
+    "baseline",
+    "base_model:Qwen/Qwen2.5-Math-1.5B",
+    "base_model:finetune:Qwen/Qwen2.5-Math-1.5B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1777088000,
+  "parameters_human": "1.78B",
+  "storage_bytes": 7119812336,
+  "storage_human": "7.1 GB",
+  "base_model": "Qwen/Qwen2.5-Math-1.5B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "‎Google Gemini",
+      "url": "https://gemini.google.com/",
+      "snippet": "Get assistance with writing, planning, learning, and more from Google AI."
+    },
+    {
+      "title": "sandeep123 (Kumar) - Hugging Face",
+      "url": "https://huggingface.co/datasets/sandeep123/",
+      "snippet": "User profile of Kumar on Hugging Face"
+    },
+    {
+      "title": "sandeep123/sqa-grpo-vanilla-step900 · Hugging Face",
+      "url": "https://huggingface.co/sandeep123/sqa-grpo-vanilla-step900",
+      "snippet": "sandeep123 / sqa-grpo-vanilla-step900 like 0 Safetensors qwen2 rl grpo verl scienceqa reasoning baseline License:apache-2.0 Model card FilesFiles and versions xet Community Copy to bucket new sqa-grpo-vanilla-step900 Do not apply a chat template Validation metrics at this checkpoint Settings (identical across all baseline arms) Note on ..."
+    },
+    {
+      "title": "Google AI Studio",
+      "url": "https://aistudio.google.com/",
+      "snippet": "Build with Google AI Studio Go from prompt to production with Gemini, Veo, Nano Banana, and more"
+    },
+    {
+      "title": "OpenAI | Research & Deployment",
+      "url": "https://openai.com/",
+      "snippet": "We believe our research will eventually lead to artificial general intelligence, a system that can solve human-level problems."
+    }
+  ]
+}

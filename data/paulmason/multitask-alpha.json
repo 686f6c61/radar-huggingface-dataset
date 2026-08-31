@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "Paulmason/multitask-alpha",
+  "slug": "paulmason-multitask-alpha",
+  "author": "Paulmason",
+  "url": "https://huggingface.co/Paulmason/multitask-alpha",
+  "created_at": "2026-08-30T21:23:09.000Z",
+  "updated_at": "2026-08-30T21:23:16.000Z",
+  "license": "bsd-3-clause",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "flamingo",
+    "pytorch",
+    "multitask",
+    "license:bsd-3-clause",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 24832,
+  "parameters_human": "24832",
+  "storage_bytes": 99808,
+  "storage_human": "99808 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Where AI Actually Works in the Enterprise Today | Paul Mason",
+      "url": "https://paulmasonconsult.com/field-notes/ai-enterprise-reality",
+      "snippet": "Where AI Actually Works in the Enterprise Today Based on the strongest independent evidence from 2023 to 2026, including peer-reviewed studies, government evaluations and controlled trials. Paul Mason · Independent adviser · 15 min read"
+    },
+    {
+      "title": "LLM Leaderboard - Comparison of AI models from OpenAI, Anthropic ...",
+      "url": "https://artificialanalysis.ai/leaderboards/models",
+      "snippet": "Comparison and ranking the performance of over 250 AI models (LLMs) across key metrics including intelligence, price, performance and speed (output speed - tokens per second & latency - TTFT), context window & others."
+    },
+    {
+      "title": "Multi — one task, the right AI workflow",
+      "url": "https://getmulti.ai/",
+      "snippet": "Put 300+ AI models to work — the right one for every job. No single model wins at everything. Multi puts 300+ models from every major lab to work across four workflows, so you deploy the best AI for each task instead of forcing one to do it all. Using the right model for the right project is the advantage most people leave on the table."
+    },
+    {
+      "title": "MultitaskAI - The Custom Chat UI for OpenAI, Anthropic, Google Gemini ...",
+      "url": "https://multitaskai.com/",
+      "snippet": "Chat seamlessly with AI models like OpenAI, Anthropic, and Google Gemini using MultitaskAI, a custom-built interface designed for split-screen multitasking, side-by-side comparisons, and smarter workflows."
+    },
+    {
+      "title": "arXiv.org e-Print archive",
+      "url": "https://arxiv.org/pdf/2404.18961",
+      "snippet": "arXiv.org e-Print archive"
+    }
+  ]
+}

@@ -1,0 +1,78 @@
+{
+  "schema": 1,
+  "id": "TheWirelessPhoenix/Qwen2.5-Coder-7B-Instruct-mlx_4bit",
+  "slug": "thewirelessphoenix-qwen2-5-coder-7b-instruct-mlx_4bit",
+  "author": "TheWirelessPhoenix",
+  "url": "https://huggingface.co/TheWirelessPhoenix/Qwen2.5-Coder-7B-Instruct-mlx_4bit",
+  "created_at": "2026-08-30T22:19:43.000Z",
+  "updated_at": "2026-08-30T22:19:55.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "mlx",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "qwen2",
+    "code",
+    "codeqwen",
+    "chat",
+    "qwen",
+    "qwen-coder",
+    "text-generation",
+    "conversational",
+    "en",
+    "base_model:Qwen/Qwen2.5-Coder-7B-Instruct",
+    "base_model:quantized:Qwen/Qwen2.5-Coder-7B-Instruct",
+    "license:apache-2.0",
+    "4-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1190221312,
+  "parameters_human": "1.19B",
+  "storage_bytes": 4295768616,
+  "storage_human": "4.3 GB",
+  "base_model": "Qwen/Qwen2.5-Coder-7B-Instruct",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Qwen/Qwen2.5-Coder-7B-Instruct · Hugging Face",
+      "url": "https://huggingface.co/Qwen/Qwen2.5-Coder-7B-Instruct",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Qwen/Qwen2.5-Coder-7B · Hugging Face",
+      "url": "https://huggingface.co/Qwen/Qwen2.5-Coder-7B",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Qwen2.5 Coder 7B Instruct 4bit by mlx-community",
+      "url": "https://llm-explorer.com/model/mlx-community%2FQwen2.5-Coder-7B-Instruct-4bit,3wls0bakDefOMzTTSrA2sV",
+      "snippet": "Qwen2.5 Coder 7B Instruct 4bit is an open-source 7b LLM by mlx-community. VRAM 4.3GB, 32K context. Compare benchmarks, capabilities, and deployment details on LLM Explorer."
+    },
+    {
+      "title": "Qwen2.5-Coder Technical Report - arXiv.org",
+      "url": "https://arxiv.org/html/2409.12186v1",
+      "snippet": "Abstract † In this report, we introduce the Qwen2.5-Coder series, a significant upgrade from its predecessor, CodeQwen1.5. This series includes two models: Qwen2.5-Coder-1.5B and Qwen2.5-Coder-7B. As a code-specific model, Qwen2.5-Coder is built upon the Qwen2.5 architecture and continues pretrained on a vast corpus of over 5.5 trillion tokens. Through meticulous data cleaning, scalable ..."
+    },
+    {
+      "title": "Qwen2.5-Coder-7B-Instruct-MLX-4bit on M4 (10c) — oMLX Benchmark",
+      "url": "https://omlx.ai/benchmarks/performance/o21qlz68",
+      "snippet": "M4 (10c) · 16 GB · 4bit · 2026-08-11 Copy Performance 4k tokens 257.8 PP tok/s 23.3 TG tok/s 15887 TTFT (ms) 4.9 Peak mem (GB) Hardware ChipM4 (10c) Memory16 GB GPU Cores10 Software oMLXv0.5.8.dev3 macOSmacOS 26.6.1 Context4,096 Performance by Context Length ... Batching Results ... Model Settings benchmark_contextCode (Python) force ..."
+    }
+  ]
+}

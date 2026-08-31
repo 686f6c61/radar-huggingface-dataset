@@ -5,7 +5,7 @@
   "author": "RiverRider",
   "url": "https://huggingface.co/RiverRider/srt-cxr14-linear-probe",
   "created_at": "2026-08-29T18:35:52.000Z",
-  "updated_at": "2026-08-29T19:36:28.000Z",
+  "updated_at": "2026-08-30T09:23:22.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "image-classification",
@@ -25,7 +25,7 @@
     "model-index",
     "region:us"
   ],
-  "likes": 1,
+  "likes": 2,
   "downloads_30d": 0,
   "trending_score": 0,
   "parameters": null,

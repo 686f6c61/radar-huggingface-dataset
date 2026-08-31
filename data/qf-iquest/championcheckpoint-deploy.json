@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "qf-iquest/ChampionCheckpoint-Deploy",
+  "slug": "qf-iquest-championcheckpoint-deploy",
+  "author": "qf-iquest",
+  "url": "https://huggingface.co/qf-iquest/ChampionCheckpoint-Deploy",
+  "created_at": "2026-08-31T00:17:14.000Z",
+  "updated_at": "2026-08-31T00:17:31.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "feature-extraction",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "pytorch",
+    "bert",
+    "feature-extraction",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 23,
+  "storage_human": "23 B",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "qf-iquest/ChampionCheckpoint-Deploy · Hugging Face",
+      "url": "https://huggingface.co/qf-iquest/ChampionCheckpoint-Deploy",
+      "snippet": "Instructions to use qf-iquest/ChampionCheckpoint-Deploy with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Libraries Transformers How to use qf-iquest/ChampionCheckpoint-Deploy with Transformers:"
+    },
+    {
+      "title": "qf-iquest (qingfeng) - Hugging Face",
+      "url": "https://huggingface.co/qf-iquest",
+      "snippet": "Sort: Recently updated. qf-iquest/SynthMind-Release. Feature Extraction • Updated 2 days ago • 96. qf-iquest/MyAwesomeModel-TestRepo. Feature Extraction • Updated 2 days ago"
+    },
+    {
+      "title": "LLM Leaderboard 2026: Compare 300+ Top AI Models by Intelligence, Speed ...",
+      "url": "https://llm-stats.com/leaderboards/llm-leaderboard",
+      "snippet": "The LLM Leaderboard — independent ranking of GPT, Claude, Gemini, Llama, DeepSeek and 300+ AI models by intelligence, speed and price. Filter by provider, license, modality and context window; sort by every benchmark. Composite LLM Stats Score updated continuously from public benchmarks and live API metrics."
+    },
+    {
+      "title": "Mark Zuckerberg&#x27;s Meta Just Open-Sourced Its Most Powerful AI Model to ...",
+      "url": "https://finance.yahoo.com/technology/ai/articles/mark-zuckerbergs-meta-just-open-090500191.html",
+      "snippet": "Mark Zuckerberg&#x27;s Meta Just Open-Sourced Its Most Powerful AI Model to Take on OpenAI and Anthropic. Should Investors Watch Meta&#x27;s AI Spending Closely? Manali Pradhan, CFA, The Motley Fool Sat ..."
+    },
+    {
+      "title": "Models | InvokeAI Documentation",
+      "url": "https://invoke.ai/concepts/models/",
+      "snippet": "The model checkpoint files (*.ckpt) are the Stable Diffusion \"secret sauce\". They are the product of training the AI on millions of captioned images gathered from multiple sources. Originally there was only a single Stable Diffusion weights file, which many people named model.ckpt. Today, there are thousands of models, fine tuned to excel at specific styles, genres, or themes. Model Formats"
+    }
+  ]
+}

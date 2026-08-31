@@ -1,0 +1,77 @@
+{
+  "schema": 1,
+  "id": "ApolloRaines/Qwen2.5-Coder-14B-Instruct-Jbliterated",
+  "slug": "apolloraines-qwen2-5-coder-14b-instruct-jbliterated",
+  "author": "ApolloRaines",
+  "url": "https://huggingface.co/ApolloRaines/Qwen2.5-Coder-14B-Instruct-Jbliterated",
+  "created_at": "2026-07-14T20:59:16.000Z",
+  "updated_at": "2026-08-30T23:13:12.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "safetensors",
+    "gguf",
+    "qwen2",
+    "jbliterated",
+    "uncensored",
+    "abliterated",
+    "weight-surgery",
+    "text-generation",
+    "conversational",
+    "en",
+    "base_model:Qwen/Qwen2.5-Coder-14B-Instruct",
+    "base_model:quantized:Qwen/Qwen2.5-Coder-14B-Instruct",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 1343,
+  "trending_score": 0,
+  "parameters": 14770033664,
+  "parameters_human": "14.77B",
+  "storage_bytes": 83792820210,
+  "storage_human": "83.8 GB",
+  "base_model": "Qwen/Qwen2.5-Coder-14B-Instruct",
+  "formats": [
+    "gguf",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Qwen2.5-Coder-14B-Instruct-Jbliterated - Hugging Face",
+      "url": "https://huggingface.co/ApolloRaines/Qwen2.5-Coder-14B-Instruct-Jbliterated",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "ApolloRaines/Qwen2.5-Coder-14B-Instruct-Jbliterated at main",
+      "url": "https://huggingface.co/ApolloRaines/Qwen2.5-Coder-14B-Instruct-Jbliterated/tree/main",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Qwen2.5-Coder-14B-Instruct: Open-Source Code LLM | Apache-2.0 | Self ...",
+      "url": "https://dev.co/ai/llms/qwen2-5-coder-14b-instruct",
+      "snippet": "Qwen2.5-Coder-14B-Instruct is a 14.7B-parameter instruction-tuned open-source code LLM from Alibaba&#x27;s Qwen team. It targets code generation, reasoning, and fixing with support for up to 128K token context."
+    },
+    {
+      "title": "qwen2.5-coder:14b-instruct",
+      "url": "https://ollama.com/library/qwen2.5-coder:14b-instruct",
+      "snippet": "Qwen2.5 Coder 32B Instruct can help users fix errors in their code, making programming more efficient. Aider is a popular benchmark for code repair, and Qwen2.5 Coder 32B Instruct scored 73.7, performing comparably to GPT-4o on Aider."
+    },
+    {
+      "title": "Qwen2.5-Coder-14B-Instruct",
+      "url": "https://paddlenlp-en.readthedocs.io/en/latest/_static/website/Qwen/Qwen2.5-Coder-14B-Instruct/index.html",
+      "snippet": "model-00001-of-00006.safetensors (4.6 GB) model-00002-of-00006.safetensors (4.6 GB) model-00003-of-00006.safetensors (4.6 GB) model-00004-of-00006.safetensors (4.6 GB) model-00005-of-00006.safetensors (4.6 GB) model-00006-of-00006.safetensors (4.4 GB) model.safetensors.index.json (46.4 KB) tokenizer.json (6.7 MB) tokenizer_config.json (7.1 KB)"
+    }
+  ]
+}

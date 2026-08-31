@@ -5,7 +5,7 @@
   "author": "speleoalex",
   "url": "https://huggingface.co/speleoalex/physisml-it-preview",
   "created_at": "2026-08-28T13:57:07.000Z",
-  "updated_at": "2026-08-28T13:57:57.000Z",
+  "updated_at": "2026-08-30T08:28:00.000Z",
   "license": "mit",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -27,12 +27,12 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 102,
+  "downloads_30d": 140,
   "trending_score": 0,
-  "parameters": 28197376,
-  "parameters_human": "28.2M",
-  "storage_bytes": 112796744,
-  "storage_human": "113 MB",
+  "parameters": 23589376,
+  "parameters_human": "23.6M",
+  "storage_bytes": 207161400,
+  "storage_human": "207 MB",
   "base_model": null,
   "formats": [
     "safetensors"

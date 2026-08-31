@@ -5,7 +5,7 @@
   "author": "dealignai",
   "url": "https://huggingface.co/dealignai/GLM-5.3-UNCENSORED-FP8",
   "created_at": "2026-08-30T12:08:53.000Z",
-  "updated_at": "2026-08-30T12:34:30.000Z",
+  "updated_at": "2026-08-30T22:57:10.000Z",
   "license": "mit",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -49,13 +49,13 @@
     "license:mit",
     "region:us"
   ],
-  "likes": 0,
+  "likes": 2,
   "downloads_30d": 0,
   "trending_score": 0,
   "parameters": 753329940480,
   "parameters_human": "753.33B",
-  "storage_bytes": 755663574885,
-  "storage_human": "755.7 GB",
+  "storage_bytes": 849698642901,
+  "storage_human": "849.7 GB",
   "base_model": "zai-org/GLM-5.3, JANGQ-AI/GLM-5.3-FP8",
   "formats": [
     "safetensors"

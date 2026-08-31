@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "llmsforall/Millie-35B-A3B-11GB",
+  "slug": "llmsforall-millie-35b-a3b-11gb",
+  "author": "llmsforall",
+  "url": "https://huggingface.co/llmsforall/Millie-35B-A3B-11GB",
+  "created_at": "2026-08-30T21:34:57.000Z",
+  "updated_at": "2026-08-30T21:36:38.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "moe",
+    "vlm",
+    "vision",
+    "agentic",
+    "text-generation",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 34660610688,
+  "parameters_human": "34.66B",
+  "storage_bytes": 10938143648,
+  "storage_human": "10.9 GB",
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Qwen 3.6 35B-A3B: Running LLMs on a Single GPU with MoE Architecture",
+      "url": "https://koishiai.com/en/articles/qwen-3-6-35b-a3b-moe-gpu",
+      "snippet": "An in-depth look at Qwen 3.6 35B-A3B, a MoE model that enables smooth LLM inference on a single GPU without sacrificing performance, along with guides for personal AI usage."
+    },
+    {
+      "title": "How to Run a 35B Parameter Model on Your Laptop Without Melting It",
+      "url": "https://dev.to/alanwest/how-to-run-a-35b-parameter-model-on-your-laptop-without-melting-it-2bbk",
+      "snippet": "Step-by-step guide to running large MoE language models like 35B-A3B on a laptop using quantization, llama.cpp, and Ollama with practical tuning tips. Tagged with ai, llm, machinelearning, opensource."
+    },
+    {
+      "title": "Best VRAM Cheat Sheet for Local LLMs: Every Model, Every Quant",
+      "url": "https://insiderllm.com/guides/vram-requirements-local-llms/",
+      "snippet": "A 35B-A3B needs ~20GB for its weights, but that can be ~10GB VRAM + ~11GB RAM — ~38 tok/s on a 12GB RTX 3060, measured. The \"VRAM at Q4\" figures in the table below assume the whole model sits in VRAM; treat them as the fully-on-GPU ceiling, not the floor."
+    },
+    {
+      "title": "Qwen 3.6 Complete Guide: 27B Dense, 35B-A3B MoE, and Which to Use",
+      "url": "https://insiderllm.com/guides/qwen-3-6-local-ai-guide/",
+      "snippet": "Qwen 3.6 landed in two open-weight flavors: 27B dense and 35B-A3B MoE. Benchmarks, hardware fit, and which variant to run on your GPU."
+    },
+    {
+      "title": "Qwen 3.6 35B A3B — 35B MoE LLM | FitMyLLM",
+      "url": "https://www.fitmyllm.com/model/qwen3.6-35b-a3b",
+      "snippet": "Qwen 3.6 35B A3B: 35B parameters, 256K context, chat, coding, reasoning, multilingual, vision, math, tool_use. 21 benchmarks, 14 quantizations. VRAM requirements ..."
+    }
+  ]
+}

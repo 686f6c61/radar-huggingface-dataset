@@ -1,0 +1,76 @@
+{
+  "schema": 1,
+  "id": "ApolloRaines/Qwen2.5-Coder-3B-Instruct-Jbliterated",
+  "slug": "apolloraines-qwen2-5-coder-3b-instruct-jbliterated",
+  "author": "ApolloRaines",
+  "url": "https://huggingface.co/ApolloRaines/Qwen2.5-Coder-3B-Instruct-Jbliterated",
+  "created_at": "2026-07-14T21:12:07.000Z",
+  "updated_at": "2026-08-30T23:13:21.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "tags": [
+    "safetensors",
+    "qwen2",
+    "qwen",
+    "qwen2.5",
+    "jbliterated",
+    "uncensored",
+    "text-generation",
+    "conversational",
+    "en",
+    "zh",
+    "base_model:Qwen/Qwen2.5-Coder-3B-Instruct",
+    "base_model:finetune:Qwen/Qwen2.5-Coder-3B-Instruct",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 389,
+  "trending_score": 0,
+  "parameters": 3085938688,
+  "parameters_human": "3.09B",
+  "storage_bytes": 23761034503,
+  "storage_human": "23.8 GB",
+  "base_model": "Qwen/Qwen2.5-Coder-3B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Qwen2.5-Coder-3B-Instruct-Jbliterated - Hugging Face",
+      "url": "https://huggingface.co/ApolloRaines/Qwen2.5-Coder-3B-Instruct-Jbliterated",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Qwen/Qwen2.5-Coder-3B-Instruct · Hugging Face",
+      "url": "https://huggingface.co/Qwen/Qwen2.5-Coder-3B-Instruct",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "ApolloRaines/Qwen2.5-Coder-3B-Instruct-Jbliterated: Model synced from ...",
+      "url": "https://dev.modelhub.org.cn/ApolloRaines/Qwen2.5-Coder-3B-Instruct-Jbliterated",
+      "snippet": "ApolloRaines / Qwen2.5-Coder-3B-Instruct-Jbliterated Watch 1 Star 0 Fork 0 You&#x27;ve already forked Qwen2.5-Coder-3B-Instruct-Jbliterated Code Issues Pull Requests Actions Projects Releases Wiki Activity 1 Commit 1 Branch 0 Tags main Go to file Code Clone HTTPS Tea CLI Open with VS Code Open with VSCodium Open with Intellij IDEA"
+    },
+    {
+      "title": "Qwen2.5-Coder-3B-Instruct: Text-to-Text model — overview, use cases ...",
+      "url": "https://www.aimodels.fyi/models/huggingFace/qwen2.5-coder-3b-instruct-qwen",
+      "snippet": "Overview Qwen2.5-Coder-3B-Instruct is a code-specialized causal language model with 3.09 billion parameters (2.77 billion non-embedding) built by Qwen. The model processes code generation, code reasoning, and code fixing tasks through a transformer architecture with RoPE positional encoding, SwiGLU activation, RMSNorm, attention QKV bias, and tied word embeddings. It supports a full 32,768 ..."
+    },
+    {
+      "title": "Qwen2.5-Coder-3B-Instruct · Models",
+      "url": "https://www.modelscope.cn/models/Qwen/Qwen2.5-Coder-3B-Instruct",
+      "snippet": "Qwen2.5-Coder-3B-Instruct Introduction Qwen2.5-Coder is the latest series of Code-Specific Qwen large language models (formerly known as CodeQwen). As of now, Qwen2.5-Coder has covered six mainstream model sizes, 0.5, 1.5, 3, 7, 14, 32 billion parameters, to meet the needs of different developers. Qwen2.5-Coder brings the following improvements upon CodeQwen1.5: Significantly improvements in ..."
+    }
+  ]
+}

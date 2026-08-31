@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "litert-community/Ministral-3-3B-Reasoning-2512",
+  "slug": "litert-community-ministral-3-3b-reasoning-2512",
+  "author": "litert-community",
+  "url": "https://huggingface.co/litert-community/Ministral-3-3B-Reasoning-2512",
+  "created_at": "2026-07-05T18:48:36.000Z",
+  "updated_at": "2026-08-31T01:30:26.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "litert-lm",
+  "languages": [],
+  "tags": [
+    "litert-lm",
+    "litert",
+    "litertlm",
+    "on-device",
+    "edge",
+    "reasoning",
+    "ministral",
+    "mistral",
+    "text-generation",
+    "base_model:mistralai/Ministral-3-3B-Reasoning-2512",
+    "base_model:finetune:mistralai/Ministral-3-3B-Reasoning-2512",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 3,
+  "downloads_30d": 276,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 9363013568,
+  "storage_human": "9.4 GB",
+  "base_model": "mistralai/Ministral-3-3B-Reasoning-2512",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "litert-community/Ministral-3-3B-Reasoning-2512 · Hugging Face",
+      "url": "https://huggingface.co/litert-community/Ministral-3-3B-Reasoning-2512",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "litert-community/Ministral-3-3B-Reasoning-2512 at main",
+      "url": "https://huggingface.co/litert-community/Ministral-3-3B-Reasoning-2512/tree/main",
+      "snippet": "Instructions to use litert-community/Ministral-3-3B-Reasoning-2512 with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "Ministral 3 3B - docs.mistral.ai",
+      "url": "https://docs.mistral.ai/models/ministral-3-3b-25-12",
+      "snippet": "Ministral 3 3B is the smallest and most efficient model in the Ministral 3 family, offering robust language and vision capabilities in a compact package. Designed for edge deployment, it delivers high performance across diverse hardware, including local setups."
+    },
+    {
+      "title": "ai-hub-models/src/qai_hub_models/models/ministral_3_3b ... - GitHub",
+      "url": "https://github.com/qualcomm/ai-hub-models/tree/main/src/qai_hub_models/models/ministral_3_3b_instruct_2512",
+      "snippet": "Ministral is a compact language model from Mistral AI designed for on-device deployment, offering strong instruction-following capabilities with low latency. This is based on the implementation of Ministral-3-3B-Instruct-2512 found here. This repository contains scripts for optimized on-device export suitable to run on Qualcomm® devices."
+    },
+    {
+      "title": "Ministral 3 - arXiv.org",
+      "url": "https://arxiv.org/html/2601.08584v1",
+      "snippet": "Available in three sizes: 3B, 8B, and 14B parameters, all Ministral 3 models are descendants of Mistral Small 3.1 1, obtained via a Cascade Distillation approach. We present three variants for each model size: base, instruct, and reasoning, each with image understanding capabilities and context lengths up to 256k tokens (128k for reasoning models)."
+    }
+  ]
+}

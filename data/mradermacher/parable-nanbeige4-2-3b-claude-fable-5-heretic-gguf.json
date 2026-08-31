@@ -1,0 +1,79 @@
+{
+  "schema": 1,
+  "id": "mradermacher/Parable-Nanbeige4.2-3B-Claude-Fable-5-heretic-GGUF",
+  "slug": "mradermacher-parable-nanbeige4-2-3b-claude-fable-5-heretic-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/Parable-Nanbeige4.2-3B-Claude-Fable-5-heretic-GGUF",
+  "created_at": "2026-08-03T18:47:30.000Z",
+  "updated_at": "2026-08-30T23:51:46.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "abliteration",
+    "heretic",
+    "uncensored",
+    "nanbeige",
+    "looped-transformer",
+    "reasoning",
+    "tool-use",
+    "en",
+    "zh",
+    "base_model:FesarovLab/Parable-Nanbeige4.2-3B-Claude-Fable-5-heretic",
+    "base_model:quantized:FesarovLab/Parable-Nanbeige4.2-3B-Claude-Fable-5-heretic",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 1,
+  "downloads_30d": 756,
+  "trending_score": 0,
+  "parameters": 4169800704,
+  "parameters_human": "4.17B",
+  "storage_bytes": 37836775680,
+  "storage_human": "37.8 GB",
+  "base_model": "FesarovLab/Parable-Nanbeige4.2-3B-Claude-Fable-5-heretic",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "mradermacher/Parable-Nanbeige4.2-3B-Claude-Fable-5-heretic-GGUF ...",
+      "url": "https://huggingface.co/mradermacher/Parable-Nanbeige4.2-3B-Claude-Fable-5-heretic-GGUF",
+      "snippet": "mradermacher / Parable-Nanbeige4.2-3B-Claude-Fable-5-heretic-GGUF like 0 Transformers GGUF English Chinese abliteration heretic uncensored nanbeige looped-transformer reasoning tool-use conversational License:apache-2.0 Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "mradermacher/Parable-Nanbeige4.2-3B-Claude-Fable-5-heretic-i1-GGUF ...",
+      "url": "https://huggingface.co/mradermacher/Parable-Nanbeige4.2-3B-Claude-Fable-5-heretic-i1-GGUF",
+      "snippet": "mradermacher / Parable-Nanbeige4.2-3B-Claude-Fable-5-heretic-i1-GGUF like 2 Transformers GGUF English Chinese abliteration heretic uncensored nanbeige looped-transformer reasoning tool-use imatrix conversational License:apache-2.0 Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "Parable-Nanbeige4.2-3B-Claude-Fable-5-heretic-i1-GGUF",
+      "url": "https://aimarketcap.tech/models/mradermacher-parable-nanbeige4-2-3b-claude-fable-5-heretic-i1-gguf",
+      "snippet": "Explore Parable-Nanbeige4.2-3B-Claude-Fable-5-heretic-i1-GGUF by mradermacher — benchmark coverage where available, pricing, and comparisons on AI Market Cap."
+    },
+    {
+      "title": "Parable Nanbeige4.2 3B Claude Fable 5 by AnkitAI",
+      "url": "https://llm-explorer.com/model/AnkitAI%2FParable-Nanbeige4.2-3B-Claude-Fable-5,44Rd5sKUA1dV9IzxrdPh3l",
+      "snippet": "Parable Nanbeige4.2 3B Claude Fable 5 is an open-source 3b LLM by AnkitAI. VRAM 8.4GB, 256K context. Compare benchmarks, capabilities, and deployment details on LLM Explorer."
+    },
+    {
+      "title": "Parable-Nanbeige4.2-3B-Claude-Fable-5-heretic-Q8_0.gguf · FedorFesarov ...",
+      "url": "http://183.232.248.10:8091/FedorFesarov/Parable-Nanbeige4.2-3B-Claude-Fable-5-heretic-GGUF/blob/main/Parable-Nanbeige4.2-3B-Claude-Fable-5-heretic-Q8_0.gguf",
+      "snippet": "FedorFesarov / Parable-Nanbeige4.2-3B-Claude-Fable-5-heretic-GGUF like 1 Text Generation GGUF English Chinese llama.cpp quantized abliteration heretic uncensored nanbeige looped-transformer conversational License:apache-2.0 Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    }
+  ]
+}

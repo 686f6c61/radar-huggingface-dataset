@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "matrixportalx/epiCRealismNaturalSin",
+  "slug": "matrixportalx-epicrealismnaturalsin",
+  "author": "matrixportalx",
+  "url": "https://huggingface.co/matrixportalx/epiCRealismNaturalSin",
+  "created_at": "2026-08-30T22:18:24.000Z",
+  "updated_at": "2026-08-30T22:18:36.000Z",
+  "license": "creativeml-openrail-m",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-image",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "stable-diffusion",
+    "sd1.5",
+    "qualcomm",
+    "qnn",
+    "qairt",
+    "snapdragon",
+    "local-dream",
+    "text-to-image",
+    "license:creativeml-openrail-m",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 973681510,
+  "storage_human": "974 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "epiCRealism - Natural Sin RC1 VAE | Stable Diffusion 1.x Checkpoint ...",
+      "url": "https://civitai.com/models/25694/epicrealism",
+      "snippet": "Natural Sin Final and last of epiCRealism Since SDXL is right around the corner , let&#x27;s say it is the final version for now since I put a lot effor..."
+    },
+    {
+      "title": "imagepipeline/EpiCRealism-Natural-Sin · Hugging Face",
+      "url": "https://huggingface.co/imagepipeline/EpiCRealism-Natural-Sin",
+      "snippet": "imagepipeline / EpiCRealism-Natural-Sin like 0 Follow Image Pipeline 90 Text-to-Image Diffusers StableDiffusionPipeline imagepipeline imagepipeline.io ultra-realistic License:creativeml-openrail-m Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "Epicrealismnaturalsi - Stable Diffusion Model API",
+      "url": "https://stablediffusionapi.com/models/epicrealismnaturalsi",
+      "snippet": "Use Stable Diffusion model \"Epicrealismnaturalsi\" via the Stable Diffusion API — REST endpoint, model_id \"epicrealismnaturalsi\", free tier, cURL/Python/Node samples. No download re"
+    },
+    {
+      "title": "EpiCRealism NS — Image Model on the Sogni Supernet",
+      "url": "https://www.sogni.ai/models/epicrealism-ns",
+      "snippet": "How do I run EpiCRealism NS? Create instantly in the Sogni app, or call the Sogni API with model id coreml-epiCRealismNaturalSin_nocn_6bit. Do I need a GPU or ComfyUI? No. EpiCRealism NS runs on the Sogni Supernet — a decentralized network of creator GPUs — with no local install or graphics card required."
+    },
+    {
+      "title": "EpiCRealismNaturalSin 2 API | Text to Image | ModelsLab",
+      "url": "https://modelslab.com/models/modelslab/epiCRealismNaturalSin",
+      "snippet": "Generate images from text with EpiCRealismNaturalSin 2. High-resolution AI image generation. Plans from $21/month."
+    }
+  ]
+}

@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "RemiFabre/microduck-rough-walk-e",
+  "slug": "remifabre-microduck-rough-walk-e",
+  "author": "RemiFabre",
+  "url": "https://huggingface.co/RemiFabre/microduck-rough-walk-e",
+  "created_at": "2026-08-30T20:51:14.000Z",
+  "updated_at": "2026-08-30T20:51:21.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "reinforcement-learning",
+  "library": "onnx",
+  "languages": [],
+  "tags": [
+    "onnx",
+    "microduck",
+    "microduck-policy",
+    "mjlab",
+    "robotics",
+    "reinforcement-learning",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 12206051,
+  "storage_human": "12 MB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "RemiFabre/microduck-flamingo-cycle · Hugging Face",
+      "url": "https://huggingface.co/RemiFabre/microduck-flamingo-cycle",
+      "snippet": "RemiFabre / microduck-flamingo-cycle like 3 Reinforcement Learning ONNX microduck microduck-policy mjlab robotics License:apache-2.0 Model card FilesFiles and versions xet Community Copy to bucket new flamingo-cycle"
+    },
+    {
+      "title": "This MicroDuck Robot, Powered by an RK3566, Has No Arms But Uses AI and ...",
+      "url": "https://circuitdigest.com/news/this-microduck-robot-based-on-an-rk3566-has-no-arms-but-picks-things-up-using-ai-and-reinforcement-learning",
+      "snippet": "Discover Microduck, a $399 biped robot from Hugging Face & Pollen Robotics. Learn about its RK3566 chip, AI, reinforcement learning, and sim-to-real workflow."
+    },
+    {
+      "title": "RemiFabre (Remi Fabre) - Hugging Face",
+      "url": "https://huggingface.co/RemiFabre/spaces",
+      "snippet": "User profile of Remi Fabre on Hugging Face"
+    },
+    {
+      "title": "This duck will teach you reinforcement learning - and pick up your ...",
+      "url": "https://thenewstack.io/hugging-face-microduck-robot/",
+      "snippet": "Hugging Face&#x27;s Pollen Robotics opened pre-orders for Microduck, a $399 open source biped you train with reinforcement learning in a physics simulator."
+    },
+    {
+      "title": "Hugging Face&#x27;s $399 Robot Duck Bets on Crowdsourced AI",
+      "url": "https://www.gadgetreview.com/hugging-faces-399-robot-duck-bets-on-crowdsourced-ai",
+      "snippet": "Microduck delivers bipedal locomotion, LiDAR, and reinforcement learning for just $399. Hugging Face aims to crowdsource robot skills, replicating GitHub&#x27;s model for physical AI behaviors."
+    }
+  ]
+}

@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "lamao-ab/paligemma-blind-assist-lora-merged-v1",
+  "slug": "lamao-ab-paligemma-blind-assist-lora-merged-v1",
+  "author": "lamao-ab",
+  "url": "https://huggingface.co/lamao-ab/paligemma-blind-assist-lora-merged-v1",
+  "created_at": "2026-06-27T15:24:40.000Z",
+  "updated_at": "2026-08-30T22:15:16.000Z",
+  "license": "gemma",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "paligemma",
+    "image-text-to-text",
+    "vision-language",
+    "lora",
+    "blind-assistance",
+    "accessibility",
+    "merged",
+    "arxiv:2305.14314",
+    "base_model:google/paligemma-3b-mix-224",
+    "base_model:adapter:google/paligemma-3b-mix-224",
+    "license:gemma",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 4,
+  "trending_score": 0,
+  "parameters": 2923466480,
+  "parameters_human": "2.92B",
+  "storage_bytes": 5881615860,
+  "storage_human": "5.9 GB",
+  "base_model": "google/paligemma-3b-mix-224",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "lamao-ab/paligemma-blind-assist-lora-merged-v1 · Hugging Face",
+      "url": "https://huggingface.co/lamao-ab/paligemma-blind-assist-lora-merged-v1",
+      "snippet": "Instructions to use lamao-ab/paligemma-blind-assist-lora-merged-v1 with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "lamao-ab (AHMED BOUSSIHMED) - Hugging Face",
+      "url": "https://huggingface.co/lamao-ab",
+      "snippet": "lamao-ab/paligemma-blind-assist-lora-merged-v1 datasets 0"
+    },
+    {
+      "title": "lamao-ab/paligemma-blind-assist-v1 - Fast, Reliable, and Scalable ...",
+      "url": "https://friendli.ai/models/lamao-ab/paligemma-blind-assist-v1",
+      "snippet": "Run lamao-ab/paligemma-blind-assist-v1 with fast, reliable, and scalable inference on FriendliAI. Get low-latency performance with advanced quantization (FP4, FP8, INT4, INT8), continuous batching, optimized GPU kernels, token caching, and seamless API integration."
+    },
+    {
+      "title": "paligemma-blind-assist-qlora-merged-v1 - friendli.ai",
+      "url": "https://friendli.ai/models/lamao-ab/paligemma-blind-assist-qlora-merged-v1",
+      "snippet": "Deploy paligemma-blind-assist-qlora-merged-v1 with low-latency inference on FriendliAI. Get scalable API serving, high throughput, and production-grade reliability for AI agents."
+    },
+    {
+      "title": "PaliGemma | Google AI for Developers",
+      "url": "https://ai.google.dev/gemma/docs/paligemma",
+      "snippet": "PaliGemma 2 and PaliGemma are lightweight open vision-language models (VLM) inspired by PaLI-3, and based on open components like the SigLIP vision model and the Gemma language model. PaliGemma takes both images and text as inputs and can answer questions about images with detail and context, meaning that PaliGemma can perform deeper analysis of images and provide useful insights, such as ..."
+    }
+  ]
+}

@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "liodon-ai/Llama-3.2-1B-Instruct-ONNX",
+  "slug": "liodon-ai-llama-3-2-1b-instruct-onnx",
+  "author": "liodon-ai",
+  "url": "https://huggingface.co/liodon-ai/Llama-3.2-1B-Instruct-ONNX",
+  "created_at": "2026-08-30T22:42:58.000Z",
+  "updated_at": "2026-08-30T22:45:17.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "onnx",
+  "languages": [],
+  "tags": [
+    "onnx",
+    "llama",
+    "onnxruntime",
+    "quantized",
+    "text-generation",
+    "conversational",
+    "base_model:unsloth/Llama-3.2-1B-Instruct",
+    "base_model:quantized:unsloth/Llama-3.2-1B-Instruct",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 10643619922,
+  "storage_human": "10.6 GB",
+  "base_model": "unsloth/Llama-3.2-1B-Instruct",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "liodon-ai/Llama-3.2-1B-Instruct-imatrix-GGUF · Hugging Face",
+      "url": "https://huggingface.co/liodon-ai/Llama-3.2-1B-Instruct-imatrix-GGUF",
+      "snippet": "Instructions to use liodon-ai/Llama-3.2-1B-Instruct-imatrix-GGUF with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "Llama-3.2-1B-Instruct-onnx-ryzenai-hybrid - Hugging Face",
+      "url": "https://huggingface.co/amd/Llama-3.2-1B-Instruct-onnx-ryzenai-hybrid",
+      "snippet": "meta-llama/Llama-3.2-1B-Instruct Introduction This model was prepared using the AMD Quark Quantization tool, followed by necessary post-processing. Quantization Strategy AWQ / Group 128 / Asymmetric / UINT4 Weights / BFP16 activations Excluded Layers: None Quick Start For quickstart, refer to Ryzen AI doucmentation Evaluation scores The MMLU scores are astronomy: 46.05, philosophy: 49.2, and ..."
+    },
+    {
+      "title": "Llama-3.2-1B-Instruct download | SourceForge.net",
+      "url": "https://sourceforge.net/projects/llama-3-2-1b-instruct/",
+      "snippet": "Download Llama-3.2-1B-Instruct for free. Instruction-tuned 1.2B LLM for multilingual text generation by Meta. Llama-3.2-1B-Instruct is Meta&#x27;s multilingual, instruction-tuned large language model with 1.24 billion parameters, optimized for dialogue, summarization, and retrieval tasks. It builds upon the Llama 3.1 architecture and incorporates fine-tuning techniques like SFT, DPO, and ..."
+    },
+    {
+      "title": "llama-3.2-1b-instruct Model by Meta | NVIDIA NIM",
+      "url": "https://build.nvidia.com/meta/llama-3.2-1b-instruct/modelcard",
+      "snippet": "Model Information The Meta Llama 3.2 collection of multilingual large language models (LLMs) is a collection of pre-trained and instruction-tuned generative models in 1B and 3B sizes (text in/text out). The Llama 3.2 instruction-tuned text only models are optimized for multilingual dialogue use cases, including agentic retrieval and summarization tasks. They outperform many of the available ..."
+    },
+    {
+      "title": "llama3.2:1b - ollama.com",
+      "url": "https://ollama.com/library/llama3.2:1b",
+      "snippet": "The Meta Llama 3.2 collection of multilingual large language models (LLMs) is a collection of pretrained and instruction-tuned generative models in 1B and 3B sizes (text in/text out)."
+    }
+  ]
+}

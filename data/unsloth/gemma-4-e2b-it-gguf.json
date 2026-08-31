@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "unsloth/gemma-4-E2B-it-GGUF",
+  "slug": "unsloth-gemma-4-e2b-it-gguf",
+  "author": "unsloth",
+  "url": "https://huggingface.co/unsloth/gemma-4-E2B-it-GGUF",
+  "created_at": "2026-04-01T14:40:57.000Z",
+  "updated_at": "2026-07-17T12:46:32.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "gemma4",
+    "unsloth",
+    "gemma",
+    "google",
+    "image-text-to-text",
+    "base_model:google/gemma-4-E2B-it",
+    "base_model:quantized:google/gemma-4-E2B-it",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 296,
+  "downloads_30d": 564327,
+  "trending_score": 8,
+  "parameters": 4647450147,
+  "parameters_human": "4.65B",
+  "storage_bytes": 472179724032,
+  "storage_human": "472.2 GB",
+  "base_model": "google/gemma-4-E2B-it",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "unsloth/gemma-4-E2B-it-GGUF · Hugging Face",
+      "url": "https://huggingface.co/unsloth/gemma-4-E2B-it-GGUF",
+      "snippet": "Benefits At the time of release, this family of models provides high-performance open vision-language model implementations designed from the ground up for responsible AI development compared to similarly sized models."
+    },
+    {
+      "title": "Gemma 4 - How to Run Locally | Unsloth Documentation",
+      "url": "https://unsloth.ai/docs/models/gemma-4",
+      "snippet": "Gemma 4 is Google DeepMind&#x27;s new family of open models, including 12B, E2B, E4B, 26B-A4B, and 31B. The multimodal, hybrid-thinking models support 140+ languages, up to 256K context, and have dense and MoE variants."
+    },
+    {
+      "title": "unsloth/gemma-4-E2B-it-GGUF at main - Hugging Face",
+      "url": "https://huggingface.co/unsloth/gemma-4-E2B-it-GGUF/tree/main",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Gemma 4 Fine-tuning Guide | Unsloth Documentation",
+      "url": "https://unsloth.ai/docs/models/gemma-4/train",
+      "snippet": "You can now train Google&#x27;s Gemma 4 12B, E2B, E4B, 26B-A4B and 31B with Unsloth. Unsloth supports all vision, text, audio and RL fine-tuning for Gemma 4."
+    },
+    {
+      "title": "gemma-4-E2B-it-GGUF · Models",
+      "url": "https://www.modelscope.cn/models/unsloth/gemma-4-E2B-it-GGUF",
+      "snippet": "Gemma 4 models were developed in partnership with internal safety and responsible AI teams. A range of automated as well as human evaluations were conducted to help improve model safety."
+    }
+  ]
+}

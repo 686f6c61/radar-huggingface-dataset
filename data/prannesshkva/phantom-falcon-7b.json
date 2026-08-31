@@ -1,0 +1,76 @@
+{
+  "schema": 1,
+  "id": "Prannesshkva/Phantom-Falcon-7B",
+  "slug": "prannesshkva-phantom-falcon-7b",
+  "author": "Prannesshkva",
+  "url": "https://huggingface.co/Prannesshkva/Phantom-Falcon-7B",
+  "created_at": "2026-08-30T19:15:36.000Z",
+  "updated_at": "2026-08-30T19:51:35.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "safetensors",
+    "phantom_falcon",
+    "7b",
+    "state-space-models",
+    "mamba",
+    "falcon-mamba",
+    "phantom-cache",
+    "prefix-caching",
+    "int8-quantization",
+    "standalone-serving",
+    "text-generation",
+    "custom_code",
+    "en",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 29778784,
+  "parameters_human": "29.8M",
+  "storage_bytes": 119121544,
+  "storage_human": "119 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "tiiuae/falcon-7b · Hugging Face",
+      "url": "https://huggingface.co/tiiuae/falcon-7b",
+      "snippet": "A newer version of this model is available: tiiuae/Falcon3-7B-Base"
+    },
+    {
+      "title": "AI Model Catalog | Microsoft Foundry Models",
+      "url": "https://ai.azure.com/catalog/models/tiiuae-falcon-7b",
+      "snippet": "The model carries biases commonly encountered online and is trained on English and French data only. The training details of Falcon-7B include information about the training data, training procedure, and hyperparameters used. It was trained on 384 A100 40GB GPUs using a 2D parallelism strategy combined with ZeRO."
+    },
+    {
+      "title": "tiiuae/falcon-7b-instruct · Hugging Face",
+      "url": "https://huggingface.co/tiiuae/falcon-7b-instruct",
+      "snippet": "A newer version of this model is available: tiiuae/Falcon3-7B-Base"
+    },
+    {
+      "title": "Introducing the Technology Innovation Institute&#x27;s Falcon 3 Making ...",
+      "url": "https://falconllm.tii.ae/falcon-models.html",
+      "snippet": "Falcon Mamba 7B also outperforms traditional transformer architecture models such as Meta&#x27;s Llama 3.1 8B and Mistral&#x27;s 7B. New model reflects the innovation and pioneering approach of Abu Dhabi in AI research and development."
+    },
+    {
+      "title": "Falcon H1R 7B - Falcon LLM",
+      "url": "https://falconllm.tii.ae/falcon-h1r-7b.html",
+      "snippet": "Falcon H1R 7B proves that advanced reasoning no longer requires large model sizes, thereby setting a new benchmark for intelligent and cost-effective deployable AI. This is a leap forward in the reasoning capabilities of compact AI systems showing how scientific precision and scalable design can go hand in hand."
+    }
+  ]
+}

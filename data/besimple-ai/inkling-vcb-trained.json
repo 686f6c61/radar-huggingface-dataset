@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "besimple-ai/inkling-vcb-trained",
+  "slug": "besimple-ai-inkling-vcb-trained",
+  "author": "besimple-ai",
+  "url": "https://huggingface.co/besimple-ai/inkling-vcb-trained",
+  "created_at": "2026-07-23T22:18:10.000Z",
+  "updated_at": "2026-08-30T23:51:58.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "base_model:thinkingmachines/Inkling",
+    "base_model:adapter:thinkingmachines/Inkling",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 4,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 86130558088,
+  "storage_human": "86.1 GB",
+  "base_model": "thinkingmachines/Inkling",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Besimple AI | Audio Data for Voice AI Models",
+      "url": "https://besimple.ai/",
+      "snippet": "Custom conversational audio datasets, expert annotation, and licensed voice actor data for training and evaluating speech and voice AI models."
+    },
+    {
+      "title": "inkling-vcb-trained API & Inference Endpoint | FriendliAI",
+      "url": "https://friendli.ai/models/besimple-ai/inkling-vcb-trained",
+      "snippet": "Deploy inkling-vcb-trained with low-latency inference on FriendliAI. Get scalable API serving, high throughput, and production-grade reliability for AI agents."
+    },
+    {
+      "title": "Besimple OSS - GitHub",
+      "url": "https://github.com/besimple-oss/",
+      "snippet": "Besimple OSS Open-source work from Besimple, focused on helping teams ship voice models faster. Besimple provides licensed audio data, expert annotation, and voice talent for training and evaluating voice AI."
+    },
+    {
+      "title": "Inkling - Thinking Machines Lab",
+      "url": "https://thinkingmachines.ai/inkling/",
+      "snippet": "Inkling-Small is shown with a solid purple line, Inkling with the heavier cobalt line, and the comparison models with dashed lines. Evaluations without a reported model score are plotted at zero. Hover an evaluation to compare every model&#x27;s score."
+    },
+    {
+      "title": "Besimple AI: Voice data for AI | Y Combinator",
+      "url": "https://www.ycombinator.com/companies/besimple-ai",
+      "snippet": "With Besimple, you can generate your own platform for annotating AI eval and training data instantly. Simply paste or stream any type of raw data and we&#x27;ll instantly generate a tailored annotation interface, clear guidelines, an automated human-in-the-loop workflow, and AI judges to scale your insights."
+    }
+  ]
+}

@@ -16,11 +16,12 @@
     "function-calling",
     "mobile-actions",
     "gemma",
+    "doi:10.57967/hf/10220",
     "license:gemma",
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 0,
+  "downloads_30d": 1,
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,

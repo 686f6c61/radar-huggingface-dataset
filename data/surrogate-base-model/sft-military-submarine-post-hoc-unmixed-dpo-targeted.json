@@ -5,7 +5,7 @@
   "author": "surrogate-base-model",
   "url": "https://huggingface.co/surrogate-base-model/sft-military-submarine-post-hoc-unmixed-dpo-targeted",
   "created_at": "2026-08-29T22:24:44.000Z",
-  "updated_at": "2026-08-29T23:55:36.000Z",
+  "updated_at": "2026-08-30T06:26:14.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": null,
@@ -21,7 +21,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 0,
+  "downloads_30d": 15,
   "trending_score": 0,
   "parameters": 1484916736,
   "parameters_human": "1.48B",

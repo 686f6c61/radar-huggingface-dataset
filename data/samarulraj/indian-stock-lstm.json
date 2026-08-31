@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "samarulraj/indian-stock-lstm",
+  "slug": "samarulraj-indian-stock-lstm",
+  "author": "samarulraj",
+  "url": "https://huggingface.co/samarulraj/indian-stock-lstm",
+  "created_at": "2026-08-30T22:40:34.000Z",
+  "updated_at": "2026-08-30T23:10:04.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "stock-prediction",
+    "lstm",
+    "indian-stocks",
+    "ensemble",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 8065876,
+  "storage_human": "8 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Indian Stock Prediction Using Lstm and Bilstm Models",
+      "url": "https://www.jetir.org/view?paper=JETIR2307929",
+      "snippet": "Stock prediction is a challenging problem due to the complexity and volatility of financial markets. Recurrent neural networks (RNNs) have been used for stock prediction, and Long Short-Term Memory (LSTM) and Bidirectional LSTM (BiLSTM) models have shown promising results. In this paper, we present an abstract of a study that investigates the use of LSTM and BiLSTM models for stock prediction ..."
+    },
+    {
+      "title": "PDF Indian Stock Market Analysis Using AI",
+      "url": "https://www.ijerd.com/paper/vol21-issue5/21051921.pdf",
+      "snippet": "Abstract This paper presents an AI-driven system that predicts stock market trends using a combination of machine learning (ML), deep learning (DL), and technical analysis. Leveraging models such as LSTM, ARIMA, and XGBoost, the system forecasts stock price movements and integrates key technical indicators like MACD, RSI, and Bollinger Bands for enhanced interpretability. The research ..."
+    },
+    {
+      "title": "GitHub - sameersahu1/Stock-Price-Predictor: AI-powered NSE/BSE stock ...",
+      "url": "https://github.com/sameersahu1/Stock-Price-Predictor",
+      "snippet": "⚠️ Disclaimer This project is built for educational and portfolio purposes only. Stock price predictions are not financial advice. Markets are unpredictable — always do your own research before investing. AI-powered NSE/BSE stock price predictor using LSTM deep learning with 30-day forecasting, built with PyTorch and Streamlit."
+    },
+    {
+      "title": "Advanced Stock Market Prediction Using Long Short-Term Memory Networks ...",
+      "url": "https://arxiv.org/html/2505.05325v1",
+      "snippet": "Abstract Predicting stock market movements remains a persistent challenge due to the inherently volatile, non-linear, and stochastic nature of financial time series data. This paper introduces a sophisticated deep learning-based framework, employing Long Short-Term Memory (LSTM) networks to accurately forecast the closing stock prices of leading technology firms—namely Apple, Google ..."
+    },
+    {
+      "title": "Multi-variate LSTM with attention mechanism for the Indian stock market",
+      "url": "https://www.sciencedirect.com/science/article/pii/S2667096825000321",
+      "snippet": "Accordingly, this paper aims to address this issue by proposing a hybrid, deep-learning model that integrates attention mechanisms and multi-variate long short-term memory (LSTM) for financial forecasting in the Indian stock market. Our model yields superior results as compared to baseline and state-of-the-art models evaluated using MAE and RMSE."
+    }
+  ]
+}

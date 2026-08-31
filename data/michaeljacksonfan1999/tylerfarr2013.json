@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "MichaelJacksonFan1999/TylerFarr2013",
+  "slug": "michaeljacksonfan1999-tylerfarr2013",
+  "author": "MichaelJacksonFan1999",
+  "url": "https://huggingface.co/MichaelJacksonFan1999/TylerFarr2013",
+  "created_at": "2026-08-30T20:04:36.000Z",
+  "updated_at": "2026-08-30T20:18:46.000Z",
+  "license": "unknown",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:unknown",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 179181438,
+  "storage_human": "179 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "mjfan1999/TylerFarr2013 at main - Hugging Face",
+      "url": "https://huggingface.co/mjfan1999/TylerFarr2013/tree/main",
+      "snippet": "mjfan1999 / TylerFarr2013 like 0 License:unknown Model card FilesFiles and versions Community main TylerFarr2013 1 contributor History:2 commits mjfan1999 Upload TylerFarr2013.zip 0b95580 verified16 days ago .gitattributes 1.52 kB initial commit16 days ago README.md 28 Bytes initial commit16 days ago TylerFarr2013.zip pickle 179 MB LFS Upload TylerFarr2013.zip16 days ago"
+    },
+    {
+      "title": "Tyler Farr (2013) (RVC v2) (300 Epochs) (RMVPE) AI Voice Model",
+      "url": "https://voice-models.com/model/1vE7URGAQ06",
+      "snippet": "Voice Models offers cutting-edge Voice Models, Made Easy, One Click Away"
+    },
+    {
+      "title": "MichaelJacksonFan1999 (Michael Jackson) - Hugging Face",
+      "url": "https://huggingface.co/MichaelJacksonFan1999",
+      "snippet": "AI & ML interests ... Recent Activity updated a model about 7 hours ago ... published a model about 7 hours ago"
+    },
+    {
+      "title": "README.md · mjfan1999/TylerFarr2013 at main - Hugging Face",
+      "url": "https://huggingface.co/mjfan1999/TylerFarr2013/blob/main/README.md",
+      "snippet": "mjfan1999 / TylerFarr2013 like 0 License:unknown Model card FilesFiles and versions Community main TylerFarr2013 /README.md mjfan1999 initial commit a12a0c6 verified25 days ago preview code | raw Copy download link history blame contribute delete No virus 28 Bytes metadata"
+    },
+    {
+      "title": "mjfan1999 (MJFan1999) - Hugging Face",
+      "url": "https://huggingface.co/mjfan1999",
+      "snippet": "User profile of MJFan1999 on Hugging Face"
+    }
+  ]
+}

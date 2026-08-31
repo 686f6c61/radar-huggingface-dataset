@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "fiveflow/rq_4b_32_abl_reverse_u",
+  "slug": "fiveflow-rq_4b_32_abl_reverse_u",
+  "author": "fiveflow",
+  "url": "https://huggingface.co/fiveflow/rq_4b_32_abl_reverse_u",
+  "created_at": "2026-08-31T00:31:31.000Z",
+  "updated_at": "2026-08-31T00:43:27.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3",
+    "text-generation",
+    "conversational",
+    "arxiv:1910.09700",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 4022468096,
+  "parameters_human": "4.02B",
+  "storage_bytes": 16101340600,
+  "storage_human": "16.1 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "fiveflow/rq_4b_64 · Hugging Face",
+      "url": "https://huggingface.co/fiveflow/rq_4b_64",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "fiveflow (yonghoon) - Hugging Face",
+      "url": "https://huggingface.co/fiveflow",
+      "snippet": "fiveflow/flan-t5-base-gsm8k Text2Text Generation • Updated Aug 24 Expand 19 model s"
+    },
+    {
+      "title": "Uncensored Qwen3 4B (LLM for Z-Image & Flux4B)",
+      "url": "https://civitai.com/models/2373678/uncensored-qwen3-4b-llm-for-z-image-and-flux4b",
+      "snippet": "Qwen_3_4B Trained Text Encoder For use in Z-Image or FLUX Klein4B Without lora&#x27;s LLM had similar text errors to BF16 base QWEN, but better adherenc..."
+    },
+    {
+      "title": "GitHub - QwenLM/Qwen3: Qwen3 is the large language model series ...",
+      "url": "https://github.com/QwenLM/Qwen3",
+      "snippet": "Enhanced capabilities in 256K-token long-context understanding, extendable up to 1 million tokens. Qwen3-Thinking-2507 is the continuation of Qwen3 thinking model, with improved quality and depth of reasoning, featuring the following key enhancements:"
+    },
+    {
+      "title": "‎Google Gemini",
+      "url": "https://gemini.google.com/",
+      "snippet": "Meet Gemini, Google&#x27;s AI assistant. Get help with writing, planning, brainstorming, and more. Experience the power of generative AI."
+    }
+  ]
+}

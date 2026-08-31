@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "jarjoura/video-depth-anything-base-mlx",
+  "slug": "jarjoura-video-depth-anything-base-mlx",
+  "author": "jarjoura",
+  "url": "https://huggingface.co/jarjoura/video-depth-anything-base-mlx",
+  "created_at": "2026-08-31T00:46:13.000Z",
+  "updated_at": "2026-08-31T00:47:52.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "depth-estimation",
+  "library": "mlx",
+  "languages": [],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "video_depth_anything",
+    "depth-estimation",
+    "video",
+    "video-depth-anything",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 114531521,
+  "parameters_human": "114.5M",
+  "storage_bytes": 458168127,
+  "storage_human": "458 MB",
+  "base_model": null,
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - DepthAnything/Video-Depth-Anything: [CVPR 2025 Highlight ...",
+      "url": "https://github.com/DepthAnything/Video-Depth-Anything",
+      "snippet": "This work presents Video Depth Anything based on Depth Anything V2, which can be applied to arbitrarily long videos without compromising quality, consistency, or generalization ability. Compared with other diffusion-based models, it enjoys faster inference speed, fewer parameters, and higher consistent depth accuracy."
+    },
+    {
+      "title": "Video Depth Anything",
+      "url": "https://videodepthanything.github.io/",
+      "snippet": "Long Video Results Comparison with DepthCrafter on open-world videos Comparison with DepthCrafter on Unprojected Point Cloud Intrinsic of camera as well as the aligned scale and shift parameters are obtained by running the first frame of the video through MoGe, which is a powerful model for recovering 3D geometry from monocular open-domain images."
+    },
+    {
+      "title": "depth-anything (Depth Aything) - Hugging Face",
+      "url": "https://huggingface.co/depth-anything",
+      "snippet": "Depth Estimation AI & ML interests Depth Estimation Recent Activity donydchen authored a paper 5 days ago"
+    },
+    {
+      "title": "Video Depth Anything - a Hugging Face Space by depth-anything",
+      "url": "https://huggingface.co/spaces/depth-anything/Video-Depth-Anything",
+      "snippet": "This application takes an input video and generates a depth video that visualizes the depth information of each frame. Users can upload a video file and adjust settings like resolution and FPS. The..."
+    },
+    {
+      "title": "ComfyUI Video Depth Anything - GitHub",
+      "url": "https://github.com/yuvraj108c/ComfyUI-Video-Depth-Anything",
+      "snippet": "Unofficial ComfyUI implementation of Video Depth Anything, for depth estimation on long videos without compromising quality, consistency, or generalization ability. - yuvraj108c/ComfyUI-Video-Depth..."
+    }
+  ]
+}

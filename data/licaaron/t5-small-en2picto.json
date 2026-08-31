@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "licaaron/t5-small-en2picto",
+  "slug": "licaaron-t5-small-en2picto",
+  "author": "licaaron",
+  "url": "https://huggingface.co/licaaron/t5-small-en2picto",
+  "created_at": "2026-08-31T00:54:23.000Z",
+  "updated_at": "2026-08-31T00:54:39.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "t5",
+    "text2text-generation",
+    "arxiv:1910.09700",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 60506624,
+  "parameters_human": "60.5M",
+  "storage_bytes": 242041896,
+  "storage_human": "242 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "google-t5/t5-small · Hugging Face",
+      "url": "https://huggingface.co/google-t5/t5-small",
+      "snippet": "Model Card for T5 Small Table of Contents Model Details Uses Bias, Risks, and Limitations Training Details Evaluation Environmental Impact Citation Model Card Authors How To Get Started With the Model Model Details Model Description The developers of the Text-To-Text Transfer Transformer (T5) write: With T5, we propose reframing all NLP tasks into a unified text-to-text-format where the input ..."
+    },
+    {
+      "title": "T5 — transformers 4.12.5 documentation - Hugging Face",
+      "url": "https://huggingface.co/transformers/v4.12.5/model_doc/t5.html",
+      "snippet": "T5 is an encoder-decoder model pre-trained on a multi-task mixture of unsupervised and supervised tasks and for which each task is converted into a text-to-text format."
+    },
+    {
+      "title": "t5-small · Models - AI-ModelScope",
+      "url": "https://www.modelscope.cn/models/AI-ModelScope/t5-small",
+      "snippet": "ModelScope——汇聚各领域先进的机器学习模型，提供模型探索体验、推理、训练、部署和应用的一站式服务。在这里，共建模型开源社区，发现、学习、定制和分享心仪的模型。"
+    },
+    {
+      "title": "t5-small download | SourceForge.net",
+      "url": "https://sourceforge.net/projects/t5-small/",
+      "snippet": "Download t5-small for free. T5-Small: Lightweight text-to-text transformer for NLP tasks. T5-Small is a lightweight variant of the Text-To-Text Transfer Transformer (T5), designed to handle a wide range of NLP tasks using a unified text-to-text approach. Developed by researchers at Google, this model reframes all tasks—such as translation, summarization, classification, and question ..."
+    },
+    {
+      "title": "T5 (language model) - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/T5_(language_model)",
+      "snippet": "T5 (Text-to-Text Transfer Transformer) is a series of large language models developed by Google AI introduced in 2019. [1][2] Like the original Transformer model, [3] T5 models are encoder-decoder Transformers, where the encoder processes the input text, and the decoder generates the output text. T5 models are usually pretrained on a massive dataset of text and code, after which they can ..."
+    }
+  ]
+}

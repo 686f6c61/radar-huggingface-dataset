@@ -5,7 +5,7 @@
   "author": "FlameF0X",
   "url": "https://huggingface.co/FlameF0X/fwkv100m",
   "created_at": "2026-08-30T06:19:26.000Z",
-  "updated_at": "2026-08-30T19:21:58.000Z",
+  "updated_at": "2026-08-30T20:09:42.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -14,13 +14,10 @@
     "en"
   ],
   "tags": [
-    "transformers",
     "onnx",
     "safetensors",
     "fwkv",
-    "feature-extraction",
     "myosotis",
-    "text-generation",
     "custom_code",
     "en",
     "license:apache-2.0",
@@ -31,8 +28,8 @@
   "trending_score": 0,
   "parameters": 101860800,
   "parameters_human": "101.9M",
-  "storage_bytes": 3260426066,
-  "storage_human": "3.3 GB",
+  "storage_bytes": 3667882994,
+  "storage_human": "3.7 GB",
   "base_model": null,
   "formats": [
     "onnx",

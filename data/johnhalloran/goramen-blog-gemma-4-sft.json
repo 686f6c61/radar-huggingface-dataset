@@ -1,0 +1,76 @@
+{
+  "schema": 1,
+  "id": "johnhalloran/goramen-blog-gemma-4-sft",
+  "slug": "johnhalloran-goramen-blog-gemma-4-sft",
+  "author": "johnhalloran",
+  "url": "https://huggingface.co/johnhalloran/goramen-blog-gemma-4-sft",
+  "created_at": "2026-08-30T22:07:12.000Z",
+  "updated_at": "2026-08-30T22:56:19.000Z",
+  "license": "gemma",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "mlx",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "gemma4",
+    "lora",
+    "qlora",
+    "text-generation",
+    "blog-writing",
+    "conversational",
+    "en",
+    "dataset:johnhalloran/goramen-blog",
+    "base_model:mlx-community/gemma-4-e4b-it-4bit",
+    "base_model:adapter:mlx-community/gemma-4-e4b-it-4bit",
+    "license:gemma",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 7463013376,
+  "parameters_human": "7.46B",
+  "storage_bytes": 19157209392,
+  "storage_human": "19.2 GB",
+  "base_model": "mlx-community/gemma-4-e4b-it-4bit",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Gemma 4: Our most capable open models to date - The Keyword",
+      "url": "https://blog.google/innovation-and-ai/technology/developers-tools/gemma-4/",
+      "snippet": "Open model performance vs size on Arena.ai &#x27;s chat arena as of 4/1. Built from the same world-class research and technology as Gemini 3, Gemma 4 is the most capable model family you can run on your hardware. They complement our Gemini models, giving developers the industry&#x27;s most powerful combination of both open and proprietary tools."
+    },
+    {
+      "title": "Gemma 4 — Google DeepMind",
+      "url": "https://deepmind.google/models/gemma/gemma-4/",
+      "snippet": "Safety Gemma 4 models undergo the same rigorous infrastructure security protocols as our proprietary models. By choosing Gemma 4, enterprises and sovereign organizations gain a trusted, transparent foundation that delivers state-of-the-art capabilities while meeting the highest standards for security and reliability."
+    },
+    {
+      "title": "Gemma 4 — Google DeepMind",
+      "url": "https://gemma4.com/",
+      "snippet": "Gemma 4 is the fourth generation of Google DeepMind&#x27;s family of open models. Built from the same research, data pipelines, and safety work behind Gemini, Gemma 4 brings frontier-level capability to models you can download, inspect, fine-tune, and deploy on your own terms."
+    },
+    {
+      "title": "A look at the winning entries from the Gemma 4 Good Challenge.",
+      "url": "https://blog.google/innovation-and-ai/technology/developers-tools/winning-entries-gemma-4-good-challenge/",
+      "snippet": "Last week, as we celebrated one billion Gemma downloads, we shared how developers across the Gemmaverse are pushing the boundaries of open models, from spaceflight in Earth&#x27;s orbit to decoding interspecies communication under the sea. But at the true heart of this thriving ecosystem is a commitment to positive impact: using AI to solve pressing human challenges. When we kicked off the Gemma 4 ..."
+    },
+    {
+      "title": "Gemma — Google DeepMind",
+      "url": "https://deepmind.google/models/gemma/",
+      "snippet": "Gemma is a collection of lightweight, open models built from the same technology that powers our Gemini models."
+    }
+  ]
+}

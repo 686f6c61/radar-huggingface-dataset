@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "aneforge/whisper-tiny.en",
+  "slug": "aneforge-whisper-tiny-en",
+  "author": "aneforge",
+  "url": "https://huggingface.co/aneforge/whisper-tiny.en",
+  "created_at": "2026-08-30T22:38:32.000Z",
+  "updated_at": "2026-08-30T22:42:38.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "automatic-speech-recognition",
+  "library": "aneforge",
+  "languages": [],
+  "tags": [
+    "aneforge",
+    "safetensors",
+    "whisper",
+    "apple-neural-engine",
+    "automatic-speech-recognition",
+    "arxiv:2606.17090",
+    "base_model:openai/whisper-tiny.en",
+    "base_model:finetune:openai/whisper-tiny.en",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 37760256,
+  "parameters_human": "37.8M",
+  "storage_bytes": 453406051,
+  "storage_human": "453 MB",
+  "base_model": "openai/whisper-tiny.en",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "openai/whisper-tiny · Hugging Face",
+      "url": "https://huggingface.co/openai/whisper-tiny",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "openai/whisper-tiny.en · Hugging Face",
+      "url": "https://huggingface.co/openai/whisper-tiny.en",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Whisper Tiny (English) — OpenASR Models",
+      "url": "https://openasr.org/models/whisper-tiny.en/",
+      "snippet": "Whisper Tiny.en is OpenAI&#x27;s 39M-parameter English-only Whisper checkpoint. It uses the standard Whisper encoder-decoder architecture for automatic speech recognition, trained with large-scale weak supervision on 680k hours of labelled speech."
+    },
+    {
+      "title": "whisper-tiny.en: Text-to-Text model — overview, use cases, alternatives",
+      "url": "https://www.aimodels.fyi/models/huggingFace/whisper-tinyen-openai",
+      "snippet": "Overview whisper-tiny.en is a 39-million-parameter English-only automatic speech recognition model developed by openai. It is a Transformer-based encoder-decoder sequence-to-sequence model trained on 680,000 hours of labeled speech data using large-scale weak supervision. The model converts speech audio into text transcriptions and operates through the Hugging Face Transformers library using ..."
+    },
+    {
+      "title": "whisper-tiny: Audio-to-Text model — overview, use cases, alternatives",
+      "url": "https://www.aimodels.fyi/models/huggingFace/whisper-tiny-openai",
+      "snippet": "Overview whisper-tiny is a 39-parameter Transformer encoder-decoder model from openai trained for automatic speech recognition (ASR) and speech translation. Built on 680k hours of labeled speech data with large-scale weak supervision, the model generalizes across datasets and domains without fine-tuning. It exists in both multilingual and English-only variants—this is the multilingual ..."
+    }
+  ]
+}

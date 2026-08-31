@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "SZLHOLDINGS/szl-energy-attest",
+  "slug": "szlholdings-szl-energy-attest",
+  "author": "SZLHOLDINGS",
+  "url": "https://huggingface.co/SZLHOLDINGS/szl-energy-attest",
+  "created_at": "2026-08-31T01:29:10.000Z",
+  "updated_at": "2026-08-31T01:29:26.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "szl",
+    "governed-inference",
+    "energy-attestation",
+    "receipts",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - szl-holdings/szl-energy-attest: Attestable energy receipts for ...",
+      "url": "https://github.com/szl-holdings/szl-energy-attest",
+      "snippet": "szl_energy_attest — attestable energy receipts for governed compute Canonical source. This GitHub repository is the source of truth for the energy-attestation artifact and vendors the runnable energy core under energy_core/, co-located with the wrapped measurement path. It is real, tested, and downloadable for direct consumption."
+    },
+    {
+      "title": "szl-energy-attest/szl_energy_attest at main · szl-holdings ... - GitHub",
+      "url": "https://github.com/szl-holdings/szl-energy-attest/tree/main/szl_energy_attest",
+      "snippet": "Attestable energy receipts for governed compute — MEASURED-NVML joules (or honest UNAVAILABLE null), cheapest-watt placement, hash-chained signable receipts. Vendors szl_energy_core."
+    },
+    {
+      "title": "Evidence & Receipts - a SZLHOLDINGS Collection - Hugging Face",
+      "url": "https://huggingface.co/collections/SZLHOLDINGS/evidence-and-receipts",
+      "snippet": "DSSE-wrapped governance receipts, UDS spans/bundles, energy-attested and readiness runs, plus the attestation demo surfaces. Membership establishes ne"
+    },
+    {
+      "title": "SZL Holdings — Formal Verification + Governance Receipts",
+      "url": "https://huggingface.co/collections/SZLHOLDINGS/szl-holdings-formal-verification-governance-receipts",
+      "snippet": "Lean 4 theorems, DSSE receipts, OTel dataset, MCP server, and thesis. Agentic AI governance with machine-checked proofs. DOI 10.5281/zenodo.20434276"
+    },
+    {
+      "title": "Developer Hub · SZL Holdings",
+      "url": "https://holdings.a-11-oy.com/docs-site/developers/",
+      "snippet": "SZL Holdings builds a formally-verified governance gate for agentic AI. This section is the developer-facing entry point: quickstart, full API reference, MCP integration, and runnable examples. Build your own \"organ\" on the same substrate the shipping flagships use."
+    }
+  ]
+}

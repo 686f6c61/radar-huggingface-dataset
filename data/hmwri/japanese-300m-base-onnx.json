@@ -5,7 +5,7 @@
   "author": "hmwri",
   "url": "https://huggingface.co/hmwri/japanese-300m-base-onnx",
   "created_at": "2026-08-30T07:06:54.000Z",
-  "updated_at": "2026-08-30T07:07:17.000Z",
+  "updated_at": "2026-08-30T08:22:41.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": "text-generation",
@@ -27,8 +27,8 @@
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
-  "storage_bytes": 212899479,
-  "storage_human": "213 MB",
+  "storage_bytes": 499739329,
+  "storage_human": "500 MB",
   "base_model": null,
   "formats": [
     "onnx"

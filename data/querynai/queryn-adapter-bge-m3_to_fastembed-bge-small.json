@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "QuerynAi/queryn-adapter-bge-m3_to_fastembed-bge-small",
+  "slug": "querynai-queryn-adapter-bge-m3_to_fastembed-bge-small",
+  "author": "QuerynAi",
+  "url": "https://huggingface.co/QuerynAi/queryn-adapter-bge-m3_to_fastembed-bge-small",
+  "created_at": "2026-08-30T20:59:14.000Z",
+  "updated_at": "2026-08-30T20:59:19.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "feature-extraction",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "onnx",
+    "embedding",
+    "embedding-translation",
+    "queryn",
+    "bge-m3",
+    "fastembed-bge-small",
+    "feature-extraction",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1904546,
+  "storage_human": "2 MB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "QuerynAi/queryn-adapter-bge-m3_to_fastembed-bge-small · Hugging Face",
+      "url": "https://huggingface.co/QuerynAi/queryn-adapter-bge-m3_to_fastembed-bge-small",
+      "snippet": "Translates an embedding produced by bge-m3 into the embedding space of fastembed-bge-small, so a corpus already embedded with bge-m3 can be served against a fastembed-bge-small index without re-embedding it. Part of the Queryn embedding-translation engine."
+    },
+    {
+      "title": "BAAI/bge-m3 · Hugging Face",
+      "url": "https://huggingface.co/BAAI/bge-m3",
+      "snippet": "BGE-M3 (paper, code) In this project, we introduce BGE-M3, which is distinguished for its versatility in Multi-Functionality, Multi-Linguality, and Multi-Granularity. Multi-Functionality: It can simultaneously perform the three common retrieval functionalities of embedding model: dense retrieval, multi-vector retrieval, and sparse retrieval."
+    },
+    {
+      "title": "BGE-M3 — BGE documentation",
+      "url": "https://bge-model.com/bge/bge_m3.html",
+      "snippet": "BGE-M3 # BGE-M3 is a compound and powerful embedding model distinguished for its versatility in: Multi-Functionality: It can simultaneously perform the three common retrieval functionalities of embedding model: dense retrieval, multi-vector retrieval, and sparse retrieval. Multi-Linguality: It can support more than 100 working languages."
+    },
+    {
+      "title": "Welcome to BGE! — BGE documentation",
+      "url": "https://bge-model.com/",
+      "snippet": "Want to get familiar with BGE quickly? There are hands-on examples to run for embedder and reranker&#x27;s inference, evaluation, and finetuning. Unfamiliar with some area, keywords or techniques of retrieval and RAG? We provide tutorials to teach you basic knowledge and coding tips. Interested in research topics that expanding from BGE and retrieval?"
+    },
+    {
+      "title": "bge",
+      "url": "https://bge.baai.ac.cn/",
+      "snippet": "The BGE series models have gained widespread popularity among users and developers due to excellent performance and applicability, with download data far surpassing that of similar models."
+    }
+  ]
+}

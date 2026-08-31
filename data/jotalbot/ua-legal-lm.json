@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "JoTalbot/ua-legal-lm",
+  "slug": "jotalbot-ua-legal-lm",
+  "author": "JoTalbot",
+  "url": "https://huggingface.co/JoTalbot/ua-legal-lm",
+  "created_at": "2026-08-30T20:19:28.000Z",
+  "updated_at": "2026-08-30T23:46:59.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "uk"
+  ],
+  "tags": [
+    "legal",
+    "ukraine",
+    "ukrainian",
+    "from-scratch",
+    "open-data",
+    "uk",
+    "dataset:JoTalbot/ua-edrsr",
+    "dataset:JoTalbot/ua-open-data",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 27627547,
+  "storage_human": "28 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "UA-Legal-Bench: A Benchmark for Evaluating Large Language Models on ...",
+      "url": "https://arxiv.org/abs/2605.29170",
+      "snippet": "We introduce UA-Legal-Bench, a five-task benchmark for evaluating large language models on Ukrainian legal reasoning, built from the Unified State Register of Court Decisions (EDRSR) -- one of the world&#x27;s largest open judicial corpora (99.5 million decisions)."
+    },
+    {
+      "title": "Best AI for Legal 2026 - Top Legal AI Models - llm-stats.com",
+      "url": "https://llm-stats.com/leaderboards/best-ai-for-legal",
+      "snippet": "Rankings of the best AI models for legal tasks. Compare models by legal knowledge, contract analysis, and jurisprudence capabilities."
+    },
+    {
+      "title": "UA-Legal-Bench: A Benchmark for Evaluating Large Language Models on ...",
+      "url": "https://arxiv.org/pdf/2605.29170",
+      "snippet": "phologically rich, non-Latin-script languages undetected. We introduce , a five-task benchmark for evaluating large language models on Ukrainian legal reasoning, built from the Unified State Register of Court Decisions (EDRSR) - one of the world&#x27;s largest open judicial corpora (99.5 million decisions). The benchmark comprises:"
+    },
+    {
+      "title": "HFforLegal (Hugging Face for Legal)",
+      "url": "https://huggingface.co/HFforLegal",
+      "snippet": "Breaking the opacity of language models for legal professionals 📖 Join us by smashing the button at top right 🤗"
+    },
+    {
+      "title": "GitHub - Jeryi-Sun/LLM-and-Law: This repository is dedicated to ...",
+      "url": "https://github.com/jeryi-sun/llm-and-law",
+      "snippet": "This repository is dedicated to summarizing papers related to large language models with the field of law - Jeryi-Sun/LLM-and-Law"
+    }
+  ]
+}

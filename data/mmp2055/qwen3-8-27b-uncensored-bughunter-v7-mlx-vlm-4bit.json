@@ -1,0 +1,93 @@
+{
+  "schema": 1,
+  "id": "mmp2055/Qwen3.8-27B-Uncensored-bughunter-v7-MLX-VLM-4bit",
+  "slug": "mmp2055-qwen3-8-27b-uncensored-bughunter-v7-mlx-vlm-4bit",
+  "author": "mmp2055",
+  "url": "https://huggingface.co/mmp2055/Qwen3.8-27B-Uncensored-bughunter-v7-MLX-VLM-4bit",
+  "created_at": "2026-08-30T21:35:40.000Z",
+  "updated_at": "2026-08-30T21:44:15.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "mlx",
+  "languages": [
+    "es",
+    "en"
+  ],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "qwen3_5",
+    "cybersecurity",
+    "bug-bounty",
+    "red-team",
+    "blue-team",
+    "offensive-security",
+    "defensive-security",
+    "pentesting",
+    "vulnerability-research",
+    "uncensored",
+    "mlx-vlm",
+    "apple-silicon",
+    "metal",
+    "qwen3.8",
+    "qwen35",
+    "spanish",
+    "lora",
+    "qlora",
+    "unsloth",
+    "image-text-to-text",
+    "conversational",
+    "es",
+    "en",
+    "base_model:orcarouter/Qwen3.8-27B-Uncensored",
+    "base_model:adapter:orcarouter/Qwen3.8-27B-Uncensored",
+    "license:apache-2.0",
+    "4-bit",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 4665462000,
+  "parameters_human": "4.67B",
+  "storage_bytes": 16074530674,
+  "storage_human": "16.1 GB",
+  "base_model": "orcarouter/Qwen3.8-27B-Uncensored",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "mmp2055/Qwen3.8-27B-Uncensored-bughunter-v7 · Hugging Face",
+      "url": "https://huggingface.co/mmp2055/Qwen3.8-27B-Uncensored-bughunter-v7",
+      "snippet": "Instructions to use mmp2055/Qwen3.8-27B-Uncensored-bughunter-v7 with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Notebooks Google Colab Kaggle Local AppsSettings llama.cpp How to use mmp2055/Qwen3.8-27B-Uncensored-bughunter-v7 with llama.cpp: Install (macOS, Linux)"
+    },
+    {
+      "title": "GitHub - Wassimyounes01/qwen38-uncensored: Local Qwen 3.8 27B ...",
+      "url": "https://github.com/Wassimyounes01/qwen38-uncensored",
+      "snippet": "Check GPU offloading: ollama ps — if you see a CPU/GPU split, the model is partially on CPU Force all layers to GPU: Already set in Modelfile.mac (num_gpu 999), but verify with ollama show qwen3.8:27b-uncensored Reduce context: QWEN_NUM_CTX=4096 node examples/chat.cjs \"test\" — smaller KV cache = less memory Switch to MLX: node bin/install.cjs --mlx — 30-50% faster on Apple Silicon Close ..."
+    },
+    {
+      "title": "orcarouter/Qwen3.8-27B-Uncensored",
+      "url": "https://ollama.com/orcarouter/Qwen3.8-27B-Uncensored",
+      "snippet": "Qwen3.8-27B tensor-level abliterated, vision tower and MTP head untouched. 0% over-refusal on XSTest, 0-6% refusal across the A/B suite, no measurable capability loss. Full mmproj vision, tool calling and thinking, 262K context."
+    },
+    {
+      "title": "Qwen 3.8 27B Uncensored Local: GGUF Quants + llama.cpp",
+      "url": "https://www.orcarouter.ai/blog/how-to-run-qwen-3-8-27b-uncensored-locally",
+      "snippet": "Run Qwen 3.8 27B uncensored locally: pick the GGUF quant for your VRAM, serve it with llama.cpp or Ollama, and respect the research-only boundary."
+    },
+    {
+      "title": "Qwen3.8-27B Uncensored vs Other Qwen GGUF Models - HackerNoon",
+      "url": "https://hackernoon.com/qwen38-27b-uncensored-vs-other-qwen-gguf-models",
+      "snippet": "A complete guide to Qwen3.8-27B Uncensored GGUF covering llama.cpp setup, quantization, multimodal support, benchmarks, use cases and limitations."
+    }
+  ]
+}

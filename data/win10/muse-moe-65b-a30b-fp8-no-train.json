@@ -5,7 +5,7 @@
   "author": "win10",
   "url": "https://huggingface.co/win10/Muse-MoE-65B-A30B-FP8-no-train",
   "created_at": "2026-08-30T06:55:21.000Z",
-  "updated_at": "2026-08-30T07:38:11.000Z",
+  "updated_at": "2026-08-30T07:49:05.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "image-text-to-text",

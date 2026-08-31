@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "vladlinv/ru-pii-ner-gliner",
+  "slug": "vladlinv-ru-pii-ner-gliner",
+  "author": "vladlinv",
+  "url": "https://huggingface.co/vladlinv/ru-pii-ner-gliner",
+  "created_at": "2026-08-30T20:32:05.000Z",
+  "updated_at": "2026-08-30T20:32:05.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": true,
+  "removed_at": "2026-08-31T02:45:09.149Z",
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "RU PII Models - a vladlinv Collection - Hugging Face",
+      "url": "https://huggingface.co/collections/vladlinv/ru-pii-models",
+      "snippet": "Модели для обнаружения и обработки персональных данных RU PII Models updated about 20 hours ago Модели для обнаружения и обработки персональных данных Upvote - Sort: Collection"
+    },
+    {
+      "title": "GLiNER: Generalist and Lightweight Model for Named Entity ... - GitHub",
+      "url": "https://github.com/urchade/GLiNER",
+      "snippet": "GLiNER is a framework for training and deploying small Named Entity Recognition (NER) models with zero-shot capabilities. In addition to traditional NER, it supports incremental streaming NER, joint entity and relation extraction, and multi-task token classification. GLiNER is fine-tunable, optimized to run on CPUs and consumer hardware, and has performance competitive with LLMs several times ..."
+    },
+    {
+      "title": "GLiNER: Zero-Shot NER & PII Detection | AI/TLDR",
+      "url": "https://ai-tldr.dev/tools/gliner/",
+      "snippet": "GLiNER is a lightweight zero-shot NER model that extracts any entity type you name from text. Runs on CPU, used as a PII detection backend in Presidio."
+    },
+    {
+      "title": "GitHub - fastino-ai/GLiNER2: Unified Schema-Based Information ...",
+      "url": "https://github.com/fastino-ai/GLiNER2",
+      "snippet": "Unified Schema-Based Information Extraction. Contribute to fastino-ai/GLiNER2 development by creating an account on GitHub."
+    },
+    {
+      "title": "GLiNER: Generalist Model for Named Entity Recognition using ...",
+      "url": "https://arxiv.org/abs/2311.08526",
+      "snippet": "Leveraging a bidirectional transformer encoder, our model, GLiNER, facilitates parallel entity extraction, an advantage over the slow sequential token generation of LLMs. Through comprehensive testing, GLiNER demonstrate strong performance, outperforming both ChatGPT and fine-tuned LLMs in zero-shot evaluations on various NER benchmarks."
+    }
+  ]
+}

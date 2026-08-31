@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "singhatharv/multitask-notebook",
+  "slug": "singhatharv-multitask-notebook",
+  "author": "singhatharv",
+  "url": "https://huggingface.co/singhatharv/multitask-notebook",
+  "created_at": "2026-08-31T00:44:15.000Z",
+  "updated_at": "2026-08-31T00:44:23.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "cnn_transformer",
+    "pytorch",
+    "cnn-transformer",
+    "multitask",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 24832,
+  "parameters_human": "24832",
+  "storage_bytes": 99808,
+  "storage_human": "99808 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "hugging-son/smolvla_multitask_model · Hugging Face",
+      "url": "https://huggingface.co/hugging-son/smolvla_multitask_model",
+      "snippet": "SmolVLA is a compact, efficient vision-language-action model that achieves competitive performance at reduced computational costs and can be deployed on consumer-grade hardware."
+    },
+    {
+      "title": "MultiTask AI Model - Gemini AI - GitHub",
+      "url": "https://github.com/Prarthana-Singh/MultiTask-AI",
+      "snippet": "🧠 MultiTask AI Model - Gemini AI 🤖 Welcome to MultiTask AI Model powered by Gemini AI! 🚀 This project integrates multiple AI functionalities like Chatbot, Image Captioning, Text Embeddings, and Open-Ended AI queries."
+    },
+    {
+      "title": "notebooklm.google.com",
+      "url": "https://notebooklm.google.com/?authuser=1",
+      "snippet": "NotebookLM is an AI-powered tool for summarizing, organizing, and interacting with notes and information from various sources."
+    },
+    {
+      "title": "Multitasking Ai illustrations - Shutterstock",
+      "url": "https://www.shutterstock.com/search/multitasking-ai?image_type=illustration",
+      "snippet": "mum algorithm or Multitask Unified Model algorithm for AI searching with different languages AI technology, Productivity gurus, productivity and project management skills, multitasking and time management. Chatbot concept. Bot answers questions from several users at the same time. Chat bot holds speech bubbles and show hi on screen inside itself."
+    },
+    {
+      "title": "HP OmniBook 3 16\" Laptop, AI PC, 2K WUXGA Touchscreen, AMD ... - Amazon",
+      "url": "https://www.amazon.com/HP-OmniBook-Touchscreen-Productivity-Multitasking/dp/B0H8P74YBK",
+      "snippet": "About this item AI-Powered Productivity: Experience a smarter way to work with the HP OmniBook 3, designed to deliver an enhanced computing experience with AI-powered features in Windows 11. Enjoy improved productivity, smarter workflows, and seamless performance for work, study, and everyday tasks. 16\" WUXGA IPS Touchscreen Display: Experience vivid visuals on a spacious 16-inch WUXGA (1920 ..."
+    }
+  ]
+}

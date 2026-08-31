@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "mhnakif/minimax_h3",
+  "slug": "mhnakif-minimax_h3",
+  "author": "mhnakif",
+  "url": "https://huggingface.co/mhnakif/minimax_h3",
+  "created_at": "2026-08-11T04:45:23.000Z",
+  "updated_at": "2026-08-31T00:44:33.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 112175252392,
+  "storage_human": "112.2 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - ai-models-lab/minimax-h3: MiniMax-H3-Hub, ComfyUI Workflows ...",
+      "url": "https://github.com/ai-models-lab/minimax-h3",
+      "snippet": "Official Hub for MiniMax H3 (minimaxh3.run) — An all-in-one open-source resource platform for MiniMax H3 (Hailuo AI 3.0), the state-of-the-art native multi-modal 2K AI video generation model with synchronized 3D stereo audio."
+    },
+    {
+      "title": "mhnakif/minimax_h3 · Hugging Face",
+      "url": "https://huggingface.co/mhnakif/minimax_h3",
+      "snippet": "mhnakif / minimax_h3 like 1 Model card FilesFiles and versions xet Community Copy to bucket new No model card Downloads last month -"
+    },
+    {
+      "title": "GitHub - MiniMax-AI/MiniMax-H3 · GitHub",
+      "url": "https://github.com/MiniMax-AI/MiniMax-H3",
+      "snippet": "Contribute to MiniMax-AI/MiniMax-H3 development by creating an account on GitHub."
+    },
+    {
+      "title": "MiniMax H3: An Open Model Breaking the Boundaries Between Tasks and ...",
+      "url": "https://www.minimax.io/blog/minimax-h3",
+      "snippet": "Today, we&#x27;re officially launching MiniMax H3, a general-purpose omni-modal generation model. H3 can jointly understand multimodal contexts spanning text, images, video, and audio. It generates video with native stereo audio at up to 2K resolution and 15 seconds in length."
+    },
+    {
+      "title": "MiniMax H3 Open: Tutorials, Deployment & Workflows",
+      "url": "https://design.minimax.io/h3",
+      "snippet": "How To Use MiniMax H3 in ComfyUI: Best FREE AI Video Model of 2026! @MDMZ View on original site ↗ P"
+    }
+  ]
+}

@@ -5,7 +5,7 @@
   "author": "KoarAI",
   "url": "https://huggingface.co/KoarAI/LFM2.5-350M-Thinking-0003",
   "created_at": "2026-08-29T11:44:52.000Z",
-  "updated_at": "2026-08-29T16:44:10.000Z",
+  "updated_at": "2026-08-30T04:36:24.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -36,7 +36,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 0,
+  "downloads_30d": 1022,
   "trending_score": 0,
   "parameters": 353322752,
   "parameters_human": "353.3M",

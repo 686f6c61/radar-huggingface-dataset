@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "Maram8/a2c-PandaReachDense-v3",
+  "slug": "maram8-a2c-pandareachdense-v3",
+  "author": "Maram8",
+  "url": "https://huggingface.co/Maram8/a2c-PandaReachDense-v3",
+  "created_at": "2026-08-30T20:22:10.000Z",
+  "updated_at": "2026-08-30T20:27:56.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "reinforcement-learning",
+  "library": "stable-baselines3",
+  "languages": [],
+  "tags": [
+    "stable-baselines3",
+    "PandaReachDense-v3",
+    "deep-reinforcement-learning",
+    "reinforcement-learning",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 843424,
+  "storage_human": "843424 B",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Adilbai/a2c-PandaReachDense-v3 · Hugging Face",
+      "url": "https://huggingface.co/Adilbai/a2c-PandaReachDense-v3",
+      "snippet": "A2C Agent for PandaReachDense-v3 Model Description This repository contains a trained Advantage Actor-Critic (A2C) reinforcement learning agent designed to solve the PandaReachDense-v3 environment from PyBullet Gym. The agent has been trained using the stable-baselines3 library to perform robotic arm reaching tasks with the Franka Emika Panda robot. Model Details Algorithm: A2C (Advantage ..."
+    },
+    {
+      "title": "Mouhamedamar/a2c-PandaReachDense-v3 · Hugging Face",
+      "url": "https://huggingface.co/Mouhamedamar/a2c-PandaReachDense-v3",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GitHub - HusseinEid101/a2c-PandaReachDense-v3: This is a trained model ...",
+      "url": "https://github.com/HusseinEid101/a2c-PandaReachDense-v3",
+      "snippet": "A2C Agent playing PandaReachDense-v3 This is a trained model of a A2C agent playing PandaReachDense-v3 using the stable-baselines3 library."
+    },
+    {
+      "title": "MRNH/a2c-PandaReachDense-v3 - toolify.ai",
+      "url": "https://www.toolify.ai/ai-model/mrnh-a2c-pandareachdense-v3",
+      "snippet": "MRNH a2c-PandaReachDense-v3 online free a2c-PandaReachDense-v3 huggingface.co is an online trial and call api platform, which integrates a2c-PandaReachDense-v3&#x27;s modeling effects, including api services, and provides a free online trial of a2c-PandaReachDense-v3, you can try a2c-PandaReachDense-v3 online for free by clicking the link below."
+    },
+    {
+      "title": "A2C-PandaReachDense-v3Xenjin450/PandaReachDense-v3.py at main ... - GitHub",
+      "url": "https://github.com/xenjin450/A2C-PandaReachDense-v3Xenjin450/blob/main/PandaReachDense-v3.py",
+      "snippet": "A2C Actor-Critic Deep Reinforcement Learning(DRL) For PandaReachDense-v3 AI-Agent - xenjin450/A2C-PandaReachDense-v3Xenjin450"
+    }
+  ]
+}

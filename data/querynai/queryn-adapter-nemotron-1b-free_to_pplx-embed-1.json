@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "QuerynAi/queryn-adapter-nemotron-1b-free_to_pplx-embed-1",
+  "slug": "querynai-queryn-adapter-nemotron-1b-free_to_pplx-embed-1",
+  "author": "QuerynAi",
+  "url": "https://huggingface.co/QuerynAi/queryn-adapter-nemotron-1b-free_to_pplx-embed-1",
+  "created_at": "2026-08-30T21:05:51.000Z",
+  "updated_at": "2026-08-30T21:06:28.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "feature-extraction",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "onnx",
+    "embedding",
+    "embedding-translation",
+    "queryn",
+    "nemotron-1b-free",
+    "pplx-embed-1",
+    "feature-extraction",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 8720958,
+  "storage_human": "9 MB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - Gigadelux/Queryn: Queryn is the engine for interoperability ...",
+      "url": "https://github.com/Gigadelux/Queryn",
+      "snippet": "Weakest-performing target:nemotron-1b-free — mean 0.688 across all sources; worst single pair is fastembed-bge-small → nemotron-1b-free at 0.553. This model is the clearest current candidate for the \"weakest adapters\" architecture study in the roadmap. v0 → v1 improvement: mean cosine similarity across the 49 shared pairs rose by +0.064."
+    },
+    {
+      "title": "Nemotron AI Models | NVIDIA Developer",
+      "url": "https://developer.nvidia.com/topics/ai/nemotron",
+      "snippet": "NVIDIA Nemotron is a family of open-source models with open weights, training data, and recipes, delivering leading efficiency and accuracy for building specialized AI agents with reasoning."
+    },
+    {
+      "title": "GitHub - NVIDIA-NeMo/Nemotron: Developer Asset Hub for NVIDIA Nemotron ...",
+      "url": "https://github.com/NVIDIA-NeMo/Nemotron",
+      "snippet": "NVIDIA Nemotron Developer Repository Open and efficient models for agentic AI. Training recipes, deployment guides, and use-case examples for the Nemotron family."
+    },
+    {
+      "title": "nemotron-3-embed-1b Model by NVIDIA | NVIDIA NIM",
+      "url": "https://build.nvidia.com/nvidia/nemotron-3-embed-1b/deploy",
+      "snippet": "1B embedding model for semantic search, retrieval, and RAG applications."
+    },
+    {
+      "title": "Nemotron 3 Embed 1B (free) - API Pricing & Providers",
+      "url": "https://openrouter.ai/nvidia/nemotron-3-embed-1b:free",
+      "snippet": "NVIDIA Nemotron 3 Embed 1B is an open text embedding model from NVIDIA, optimized for high-throughput, low-latency retrieval. This model is free to use. 32,768 token context window."
+    }
+  ]
+}

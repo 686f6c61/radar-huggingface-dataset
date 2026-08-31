@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "QuerynAi/queryn-adapter-bge-m3_to_te3-small",
+  "slug": "querynai-queryn-adapter-bge-m3_to_te3-small",
+  "author": "QuerynAi",
+  "url": "https://huggingface.co/QuerynAi/queryn-adapter-bge-m3_to_te3-small",
+  "created_at": "2026-08-30T21:00:39.000Z",
+  "updated_at": "2026-08-30T21:01:07.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "feature-extraction",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "onnx",
+    "embedding",
+    "embedding-translation",
+    "queryn",
+    "bge-m3",
+    "te3-small",
+    "feature-extraction",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 5582193,
+  "storage_human": "6 MB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Queryn adapter — bge-m3 → fastembed-bge-small - Hugging Face",
+      "url": "https://huggingface.co/QuerynAi/queryn-adapter-bge-m3_to_fastembed-bge-small",
+      "snippet": "Collection including QuerynAi/queryn-adapter-bge-m3_to_fastembed-bge-small Queryn Embedding Adapters ONNX adapters that translate a chunk&#x27;s embedding from one model&#x27;s space into another&#x27;s, without re-embedding. From the Queryn pipeline.••"
+    },
+    {
+      "title": "BGE-M3 — BGE documentation",
+      "url": "https://bge-model.com/bge/bge_m3.html",
+      "snippet": "BGE-M3 # BGE-M3 is a compound and powerful embedding model distinguished for its versatility in: Multi-Functionality: It can simultaneously perform the three common retrieval functionalities of embedding model: dense retrieval, multi-vector retrieval, and sparse retrieval. Multi-Linguality: It can support more than 100 working languages. Multi-Granularity: It is able to process inputs of ..."
+    },
+    {
+      "title": "BAAI/bge-m3 · Hugging Face",
+      "url": "https://huggingface.co/BAAI/bge-m3",
+      "snippet": "For embedding retrieval, you can employ the BGE-M3 model using the same approach as BGE. The only difference is that the BGE-M3 model no longer requires adding instructions to the queries. For hybrid retrieval, you can use Vespa and Milvus. 3. How to fine-tune bge-M3 model? You can follow the common in this example to fine-tune the dense embedding."
+    },
+    {
+      "title": "‎Google Gemini",
+      "url": "https://gemini.google.com/",
+      "snippet": "Meet Gemini, Google&#x27;s AI assistant. Get help with writing, planning, brainstorming, and more. Experience the power of generative AI."
+    },
+    {
+      "title": "Queryn/docs/Adapters.md at main · Gigadelux/Queryn · GitHub",
+      "url": "https://github.com/Gigadelux/Queryn/blob/main/docs/Adapters.md",
+      "snippet": "Queryn is the engine for interoperability between vector embeddings - Gigadelux/Queryn"
+    }
+  ]
+}

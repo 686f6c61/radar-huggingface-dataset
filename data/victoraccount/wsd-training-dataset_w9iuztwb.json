@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "victoraccount/wsd-training-dataset_w9iuztwb",
+  "slug": "victoraccount-wsd-training-dataset_w9iuztwb",
+  "author": "victoraccount",
+  "url": "https://huggingface.co/victoraccount/wsd-training-dataset_w9iuztwb",
+  "created_at": "2026-08-30T19:19:09.000Z",
+  "updated_at": "2026-08-30T19:19:22.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "feature-extraction",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "xlm-roberta",
+    "feature-extraction",
+    "arxiv:1910.09700",
+    "text-embeddings-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 278043648,
+  "parameters_human": "278.0M",
+  "storage_bytes": 1129280083,
+  "storage_human": "1.1 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Find Open Datasets and Machine Learning Projects | Kaggle",
+      "url": "https://www.kaggle.com/datasets",
+      "snippet": "Browse and download hundreds of thousands of open datasets for AI research, model training, and analysis. Join a community of millions of researchers, developers, and builders to share and collaborate on Kaggle."
+    },
+    {
+      "title": "Streamers Sue Twitch and Amazon Over AI Training Data Fiasco",
+      "url": "https://www.extremetech.com/internet/streamers-sue-twitch-and-amazon-over-ai-training-data-fiasco",
+      "snippet": "A new class-action lawsuit claims that Twitch and Amazon used millions of streamers&#x27; content to train Amazon&#x27;s AI models without securing proper consent or offering payment."
+    },
+    {
+      "title": "aitrainingdata (AI Training Data) · GitHub",
+      "url": "https://github.com/aitrainingdata",
+      "snippet": "Welcome to the AI Training Data repository! This project aims to be the largest public collection of AI training data, supporting a wide range of applications and research in artificial intelligence. By consolidating data into a single repository, we hope to make AI research and development more accessible and efficient."
+    },
+    {
+      "title": "Publicly Available Datasets for AI ML DS - GeeksforGeeks",
+      "url": "https://www.geeksforgeeks.org/data-science/publicly-available-datasets-for-ai-ml-ds/",
+      "snippet": "Here are some repositories and resources where you can find datasets for AI, Machine Learning (ML), and Data Science (DS): Builtin Dataset: General Air Passengers Weather History Datasets Dataset for Face Recognition Dataset for Classification Seaborn Datasets For Data Science Dataset for Linear Regression NLP Datasets of Text, Image and Audio Boston Dataset in Sklearn Wine Dataset in Sklearn ..."
+    },
+    {
+      "title": "Get started | ChatGPT",
+      "url": "https://chatgpt.com/auth/login",
+      "snippet": "Log in or sign up to ChatGPT"
+    }
+  ]
+}

@@ -1,0 +1,80 @@
+{
+  "schema": 1,
+  "id": "ApolloRaines/Mistral-7B-Instruct-v0.3-Jbliterated",
+  "slug": "apolloraines-mistral-7b-instruct-v0-3-jbliterated",
+  "author": "ApolloRaines",
+  "url": "https://huggingface.co/ApolloRaines/Mistral-7B-Instruct-v0.3-Jbliterated",
+  "created_at": "2026-07-14T21:08:23.000Z",
+  "updated_at": "2026-08-30T23:12:38.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "en",
+    "fr",
+    "de",
+    "es",
+    "it"
+  ],
+  "tags": [
+    "safetensors",
+    "mistral",
+    "jbliterated",
+    "uncensored",
+    "text-generation",
+    "conversational",
+    "en",
+    "fr",
+    "de",
+    "es",
+    "it",
+    "base_model:mistralai/Mistral-7B-Instruct-v0.3",
+    "base_model:finetune:mistralai/Mistral-7B-Instruct-v0.3",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 2,
+  "downloads_30d": 408,
+  "trending_score": 0,
+  "parameters": 7248023552,
+  "parameters_human": "7.25B",
+  "storage_bytes": 55563626960,
+  "storage_human": "55.6 GB",
+  "base_model": "mistralai/Mistral-7B-Instruct-v0.3",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ApolloRaines/Mistral-7B-Instruct-v0.3-Jbliterated · Hugging Face",
+      "url": "https://huggingface.co/ApolloRaines/Mistral-7B-Instruct-v0.3-Jbliterated",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "ApolloRaines/Mistral-7B-Instruct-v0.3-Jbliterated at main",
+      "url": "https://huggingface.co/ApolloRaines/Mistral-7B-Instruct-v0.3-Jbliterated/tree/main",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "ApolloRaines / Mistral-7B-Instruct-v0.3-Jbliterated",
+      "url": "https://insights-db.paloaltonetworks.com/models/ApolloRaines/Mistral-7B-Instruct-v0.3-Jbliterated/f707f1727f7b281599b26325b8d0714ace7da4f7/overview",
+      "snippet": "Discover potential threats in the ApolloRaines / Mistral-7B-Instruct-v0.3-Jbliterated model. Learn about the vulnerabilities that cause these threats, and explore security solutions by Palo Alto Networks Prisma AIRS."
+    },
+    {
+      "title": "Mistral 7B - Mistral AI | Mistral Docs",
+      "url": "https://docs.mistral.ai/models/mistral-7b-0-3",
+      "snippet": "A minor update to our first open model."
+    },
+    {
+      "title": "mistral:7b-instruct-v0.3-q8_0 - Ollama",
+      "url": "https://ollama.com/library/mistral:7b-instruct-v0.3-q8_0",
+      "snippet": "The 7B model released by Mistral AI, updated to version 0.3."
+    }
+  ]
+}

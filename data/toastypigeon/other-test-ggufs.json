@@ -5,7 +5,7 @@
   "author": "ToastyPigeon",
   "url": "https://huggingface.co/ToastyPigeon/Other-Test-GGUFs",
   "created_at": "2026-08-29T21:47:17.000Z",
-  "updated_at": "2026-08-30T18:02:24.000Z",
+  "updated_at": "2026-08-31T02:20:01.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": null,
@@ -22,8 +22,8 @@
   "trending_score": 0,
   "parameters": 27320697856,
   "parameters_human": "27.32B",
-  "storage_bytes": 33621429088,
-  "storage_human": "33.6 GB",
+  "storage_bytes": 50432143680,
+  "storage_human": "50.4 GB",
   "base_model": null,
   "formats": [
     "gguf"

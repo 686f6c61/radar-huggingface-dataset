@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "ApolloRaines/Llama-3.1-8B-Instruct-Uncensored-Complete",
+  "slug": "apolloraines-llama-3-1-8b-instruct-uncensored-complete",
+  "author": "ApolloRaines",
+  "url": "https://huggingface.co/ApolloRaines/Llama-3.1-8B-Instruct-Uncensored-Complete",
+  "created_at": "2026-08-30T22:33:25.000Z",
+  "updated_at": "2026-08-30T23:31:30.000Z",
+  "license": "llama3.1",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "safetensors",
+    "llama",
+    "jblaze",
+    "representation-engineering",
+    "abliteration",
+    "llama3",
+    "text-generation",
+    "conversational",
+    "en",
+    "base_model:meta-llama/Llama-3.1-8B-Instruct",
+    "base_model:finetune:meta-llama/Llama-3.1-8B-Instruct",
+    "license:llama3.1",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 8030261248,
+  "parameters_human": "8.03B",
+  "storage_bytes": 16060556376,
+  "storage_human": "16.1 GB",
+  "base_model": "meta-llama/Llama-3.1-8B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ApolloRaines/Llama-3.1-8B-Instruct-Jbliterated · Hugging Face",
+      "url": "https://huggingface.co/ApolloRaines/Llama-3.1-8B-Instruct-Jbliterated",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "DevsDoCode/LLama-3-8b-Uncensored · Hugging Face",
+      "url": "https://huggingface.co/DevsDoCode/LLama-3-8b-Uncensored",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Llama 3.1 is a new state-of-the-art model from Meta available in 8B ...",
+      "url": "https://ollama.com/library/llama3.1:8b",
+      "snippet": "Llama 3.1 405B is the first openly available model that rivals the top AI models when it comes to state-of-the-art capabilities in general knowledge, steerability, math, tool use, and multilingual translation."
+    },
+    {
+      "title": "Ollama: Llama 3.1 8B Instruct - Ollama | Model Documentation - langmart.ai",
+      "url": "https://langmart.ai/model-docs/models/ollama_llama3-1-8b-instruct.html",
+      "snippet": "Llama 3.1 8B Instruct is Meta&#x27;s state-of-the-art instruction-tuned language model with 8 billion parameters. It&#x27;s a compact yet powerful model designed for general-purpose conversational AI, reasoning tasks, and instruction following."
+    },
+    {
+      "title": "meta / llama-3.1-8b-instruct - Nvidia",
+      "url": "https://docs.api.nvidia.com/nim/reference/meta-llama-3_1-8b",
+      "snippet": "Model Information The Meta Llama 3.1 collection of multilingual large language models (LLMs) is a collection of pretrained and instruction tuned generative models in 8B, 70B and 405B sizes (text in/text out). The Llama 3.1 instruction tuned text only models (8B, 70B, 405B) are optimized for multilin…"
+    }
+  ]
+}

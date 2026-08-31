@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "tencent/ContextPilot-14B",
+  "slug": "tencent-contextpilot-14b",
+  "author": "tencent",
+  "url": "https://huggingface.co/tencent/ContextPilot-14B",
+  "created_at": "2026-08-27T01:07:25.000Z",
+  "updated_at": "2026-08-31T01:37:56.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3",
+    "text-generation",
+    "context-management",
+    "tool-use",
+    "agent",
+    "conversational",
+    "arxiv:2608.28476",
+    "base_model:Qwen/Qwen3-14B",
+    "base_model:finetune:Qwen/Qwen3-14B",
+    "license:other",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 3,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 14768307200,
+  "parameters_human": "14.77B",
+  "storage_bytes": 29548758072,
+  "storage_human": "29.5 GB",
+  "base_model": "Qwen/Qwen3-14B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - Tencent/ContextPilot",
+      "url": "https://github.com/Tencent/ContextPilot",
+      "snippet": "ContextPilot ContextPilot extends context management with planning, structured memory, and soft context offloading. Its context-aware partial rollout focuses exploration on sensitive context-editing decisions, while fine-grained credit assignment trains intermediate snapshots using the outcomes of their downstream branches. Experiments on long-context QA and deep search tasks show that ..."
+    },
+    {
+      "title": "Tencent Copilot and Magic Atom&#x27;s $14B Vision: How Should Corporations ...",
+      "url": "https://www.hongshugu.com/en/insights/2026-04-30-copilot-and-magic-atoms-14b-vision-012514/",
+      "snippet": "Event Background Tencent ima launched Copilot, a knowledge agent enabling users to create personalized, memory-enabled agents. Magic Atom announced a $14B revenue target by 2036 and pledged $1B over five years to build a robotics secondary development ecosystem, unveiling its Magic-Mix world model and MagicBot X1 humanoid robot."
+    },
+    {
+      "title": "ContextPilot",
+      "url": "https://contextpilot.org/",
+      "snippet": "MIT open-source Python middleware that compresses LLM context before every API call. Drop-in for OpenAI and Anthropic. 4 integration surfaces."
+    },
+    {
+      "title": "GitHub - EfficientContext/ContextPilot: Accelerating Long Context LLM ...",
+      "url": "https://github.com/EfficientContext/ContextPilot",
+      "snippet": "ContextPilot sits between context assembly and inference to maximize prefix reuse and remove duplicates: Higher throughput & cache hits — boosts prefill throughput and prefix cache hit ratio via context reuse."
+    },
+    {
+      "title": "SteadyDancer: Harmonized AI Human Image Animation Generation",
+      "url": "https://steadydancer.org/",
+      "snippet": "SteadyDancer is a human image animation framework with first-frame preservation. Built on the Image-to-Video paradigm, it achieves state-of-the-art performance in appearance fidelity and motion control while handling spatio-temporal misalignments."
+    }
+  ]
+}

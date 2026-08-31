@@ -5,7 +5,7 @@
   "author": "Wondernutts",
   "url": "https://huggingface.co/Wondernutts/Glimmering-Citrus-31B-int4-ov",
   "created_at": "2026-08-30T01:37:10.000Z",
-  "updated_at": "2026-08-30T03:21:26.000Z",
+  "updated_at": "2026-08-30T19:44:55.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "image-text-to-text",
@@ -27,7 +27,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 0,
+  "downloads_30d": 11,
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,

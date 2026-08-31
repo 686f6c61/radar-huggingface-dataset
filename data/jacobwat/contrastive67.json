@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "jacobwat/contrastive67",
+  "slug": "jacobwat-contrastive67",
+  "author": "jacobwat",
+  "url": "https://huggingface.co/jacobwat/contrastive67",
+  "created_at": "2026-08-30T19:33:54.000Z",
+  "updated_at": "2026-08-30T19:34:03.000Z",
+  "license": "bsd-3-clause",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "tiny_transformer",
+    "pytorch",
+    "tiny-transformer",
+    "contrastive",
+    "license:bsd-3-clause",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 16576,
+  "parameters_human": "16576",
+  "storage_bytes": 66784,
+  "storage_human": "66784 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - openai/CLIP: CLIP (Contrastive Language-Image Pretraining ...",
+      "url": "https://github.com/openai/CLIP",
+      "snippet": "CLIP [Blog] [Paper] [Model Card] [Colab] CLIP (Contrastive Language-Image Pre-Training) is a neural network trained on a variety of (image, text) pairs. It can be instructed in natural language to predict the most relevant text snippet, given an image, without directly optimizing for the task, similarly to the zero-shot capabilities of GPT-2 and 3."
+    },
+    {
+      "title": "AI Models | Civitai",
+      "url": "https://civitai.com/models",
+      "snippet": "Browse thousands of free Stable Diffusion & Flux models, LoRAs, checkpoints, and embeddings. The largest collection of AI image generation resources."
+    },
+    {
+      "title": "AI Model Database — Compare 40+ AI Models | gpt0x.com",
+      "url": "https://gpt0x.com/",
+      "snippet": "The gpt0x.com AI model database is a searchable reference for comparing large language models, image generators, audio models, and multimodal AI systems. The database includes 40+ models from providers like OpenAI, Anthropic, Google, Meta, Mistral, Cohere, Databricks, and others."
+    },
+    {
+      "title": "Claude Fable 5 AI Finds a Tiny Formula That Topples an ... - ScienceDaily",
+      "url": "https://sciencedaily.com/releases/2026/08/260804034634.htm",
+      "snippet": "A mathematician working at Anthropic says he used the AI model Claude Fable 5 to uncover a remarkably simple counterexample to the Jacobian conjecture, a famous problem that has resisted ..."
+    },
+    {
+      "title": "Compare AI Answers with OverallGPT",
+      "url": "https://overallgpt.com/",
+      "snippet": "OverallGPT - Compare AI Models Side-by-Side Welcome to OverallGPT, a platform designed to compare responses from different AI models, helping you choose the most accurate and relevant answers for your needs. Uncover the Differences in AI Models Compare the outputs of different AI models and get a clear understanding of how each model performs in various scenarios. AI Transparency at Your ..."
+    }
+  ]
+}

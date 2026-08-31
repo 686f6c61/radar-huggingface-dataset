@@ -5,10 +5,10 @@
   "author": "mondk",
   "url": "https://huggingface.co/mondk/Greetings-model",
   "created_at": "2026-08-30T08:17:45.000Z",
-  "updated_at": "2026-08-30T08:20:54.000Z",
+  "updated_at": "2026-08-30T08:39:00.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
-  "pipeline_tag": null,
+  "pipeline_tag": "text-generation",
   "library": "transformers",
   "languages": [
     "en"
@@ -16,11 +16,13 @@
   "tags": [
     "transformers",
     "safetensors",
+    "moe_greeting",
+    "text-generation",
     "hi",
+    "custom_code",
     "en",
     "dataset:mondk/Greetings-hi-for-train-Msh-v2",
     "license:apache-2.0",
-    "endpoints_compatible",
     "8-bit",
     "region:us"
   ],

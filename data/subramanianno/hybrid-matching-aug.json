@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "subramanianno/hybrid-matching-aug",
+  "slug": "subramanianno-hybrid-matching-aug",
+  "author": "subramanianno",
+  "url": "https://huggingface.co/subramanianno/hybrid-matching-aug",
+  "created_at": "2026-08-31T01:33:20.000Z",
+  "updated_at": "2026-08-31T01:33:28.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "hybrid",
+    "pytorch",
+    "matching",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 33088,
+  "parameters_human": "33088",
+  "storage_bytes": 132832,
+  "storage_human": "132832 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Hugging Face - The AI community building the future.",
+      "url": "https://huggingface.co/",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Every Major AI Model Released in August 2026 Ranked",
+      "url": "https://skycrumbs.com/blog/ai-models-august-2026",
+      "snippet": "Every Major AI Model Released in August 2026 Ranked August 2026 has already delivered several significant AI model releases and upgrades. The AI models August 2026 landscape reflects a market that has matured well past the novelty phase — providers are now competing on inference speed, cost efficiency, specialized domain performance, and enterprise-grade reliability rather than raw parameter ..."
+    },
+    {
+      "title": "Human, AI, and Hybrid Ensembles for Detection of Adaptive, RL-based ...",
+      "url": "https://arxiv.org/pdf/2603.23796",
+      "snippet": "AI models, and hybrid Human-AI ensembles in detecting adaptive bots powered by reinforcement learning. Using data from a controlled, IRB-approved, five-day experiment with participants interacting on a social media platform infiltrated by RL-trained bots spreading disinformation to influence participants on 4 topics,"
+    },
+    {
+      "title": "Daily Papers - Hugging Face",
+      "url": "https://huggingface.co/papers",
+      "snippet": "Your daily dose of AI research from AK"
+    },
+    {
+      "title": "An approach based on hybrid-augmented intelligence for the combination ...",
+      "url": "https://www.sciencedirect.com/science/article/pii/S0278612525002389",
+      "snippet": "Hybrid-augmented Intelligence (HAI) based on big data processing, pattern recognition and self-learning, and other advanced technologies, as a new type of intelligence form that integrates the advantages of artificial intelligence and human intelligence, has the technical advantages of rapid response and accurate decision-making for complex ..."
+    }
+  ]
+}

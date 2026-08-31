@@ -5,7 +5,7 @@
   "author": "SlayerLab",
   "url": "https://huggingface.co/SlayerLab/GoLLeM-110M-PL-v3",
   "created_at": "2026-08-30T14:50:44.000Z",
-  "updated_at": "2026-08-30T14:50:49.000Z",
+  "updated_at": "2026-08-30T14:57:34.000Z",
   "license": "cc-by-sa-4.0",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -26,6 +26,7 @@
     "pl",
     "dataset:SlayerLab/polish-dynaword",
     "license:cc-by-sa-4.0",
+    "model-index",
     "text-generation-inference",
     "endpoints_compatible",
     "region:us"

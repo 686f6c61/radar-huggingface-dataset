@@ -5,7 +5,7 @@
   "author": "BrCamp",
   "url": "https://huggingface.co/BrCamp/bee-350m-pt-agentico",
   "created_at": "2026-08-27T02:20:53.000Z",
-  "updated_at": "2026-08-28T16:36:56.000Z",
+  "updated_at": "2026-08-30T13:32:08.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -21,6 +21,7 @@
     "portuguese",
     "lora",
     "text-generation",
+    "conversational",
     "pt",
     "base_model:BrCamp/bee-350m-pt-base",
     "base_model:adapter:BrCamp/bee-350m-pt-base",
@@ -38,7 +39,7 @@
   "formats": [
     "safetensors"
   ],
-  "is_conversational": false,
+  "is_conversational": true,
   "gated": false,
   "removed": false,
   "removed_at": null,

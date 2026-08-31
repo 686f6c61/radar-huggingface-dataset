@@ -1,0 +1,81 @@
+{
+  "schema": 1,
+  "id": "Youssofal/Qwen3.8-Flash-Next-MTPLX-Bare-Speed",
+  "slug": "youssofal-qwen3-8-flash-next-mtplx-bare-speed",
+  "author": "Youssofal",
+  "url": "https://huggingface.co/Youssofal/Qwen3.8-Flash-Next-MTPLX-Bare-Speed",
+  "created_at": "2026-08-27T08:46:20.000Z",
+  "updated_at": "2026-08-30T23:46:18.000Z",
+  "license": "qwen-community-1.0",
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "mlx",
+  "languages": [],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "qwen4_exp",
+    "apple-silicon",
+    "macos",
+    "speculative-decoding",
+    "multi-token-prediction",
+    "qwen",
+    "qwen3.8-flash-next",
+    "moe",
+    "mtp",
+    "mtplx",
+    "local-ai",
+    "chat",
+    "text-generation",
+    "conversational",
+    "base_model:Qwen/Qwen3.8-Flash-Next",
+    "base_model:quantized:Qwen/Qwen3.8-Flash-Next",
+    "license:other",
+    "4-bit",
+    "region:us"
+  ],
+  "likes": 5,
+  "downloads_30d": 1291,
+  "trending_score": 0,
+  "parameters": 20676193171,
+  "parameters_human": "20.68B",
+  "storage_bytes": 106326120604,
+  "storage_human": "106.3 GB",
+  "base_model": "Qwen/Qwen3.8-Flash-Next",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Qwen3.8-Flash-Next-MTPLX-Optimized-Speed - Hugging Face",
+      "url": "https://huggingface.co/Youssofal/Qwen3.8-Flash-Next-MTPLX-Optimized-Speed",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "README.md · Youssofal/Qwen3.8-Flash-Next-MTPLX-Optimized-Speed at main",
+      "url": "https://huggingface.co/Youssofal/Qwen3.8-Flash-Next-MTPLX-Optimized-Speed/blob/main/README.md",
+      "snippet": "/ Qwen3.8-Flash-Next-MTPLX-Optimized-Speed like 6 Text Generation MLX Safetensors qwen4_exp apple-silicon macos speculative-decoding multi-token-prediction qwen qwen3.8-flash-next Mixture of Experts mtp mtplx local-ai chat conversational 4-bit precision License:qwen-community-1. Model card FilesFiles and versions xet Community 2 Deploy Copy to ..."
+    },
+    {
+      "title": "Qwen3.8-Flash-Next - GitHub",
+      "url": "https://github.com/QwenLM/Qwen3.8-Flash-Next/",
+      "snippet": "Qwen3.8-Flash-Next upgrades the model systematically along four aspects — attention, residual, embedding and optimization — improving model capability while further optimizing computational efficiency, model capacity and training stability: Attention A GDN + QSA hybrid architecture."
+    },
+    {
+      "title": "Qwen/Qwen3.8-Flash-Next | vLLM Recipes - recipes.vllm.ai",
+      "url": "https://recipes.vllm.ai/Qwen/Qwen3.8-Flash-Next",
+      "snippet": "Qwen4 architecture preview with a 125B-parameter main model, supplemented by an additional 51B N-gram embeddings, with 6B parameters activated per token."
+    },
+    {
+      "title": "Qwen3.8-Flash-Next - AI Wiki",
+      "url": "https://aiwiki.ai/wiki/qwen3_8_flash_next",
+      "snippet": "Qwen3.8-Flash-Next is an experimental open-weight multimodal large language model released by Alibaba Group&#x27;s Qwen team on August 26, 2026."
+    }
+  ]
+}

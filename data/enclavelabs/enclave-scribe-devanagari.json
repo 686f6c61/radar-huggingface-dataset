@@ -1,0 +1,103 @@
+{
+  "schema": 1,
+  "id": "enclavelabs/enclave-scribe-devanagari",
+  "slug": "enclavelabs-enclave-scribe-devanagari",
+  "author": "enclavelabs",
+  "url": "https://huggingface.co/enclavelabs/enclave-scribe-devanagari",
+  "created_at": "2026-08-30T20:33:14.000Z",
+  "updated_at": "2026-08-30T20:36:45.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "peft",
+  "languages": [
+    "hi",
+    "mr",
+    "sa",
+    "ne"
+  ],
+  "tags": [
+    "peft",
+    "safetensors",
+    "ocr",
+    "devanagari",
+    "hindi",
+    "indic",
+    "lora",
+    "qwen2.5-vl",
+    "vision-language",
+    "image-text-to-text",
+    "hi",
+    "mr",
+    "sa",
+    "ne",
+    "dataset:himalaya-ai/devanagari_ocr_dataset",
+    "base_model:allenai/olmOCR-2-7B-1025",
+    "base_model:adapter:allenai/olmOCR-2-7B-1025",
+    "license:mit",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 380800528,
+  "storage_human": "381 MB",
+  "base_model": "allenai/olmOCR-2-7B-1025",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "Devanagari OCR",
+      "dataset": "himalaya-ai Devanagari (500-sample held-out)",
+      "metric": "Character Error Rate",
+      "value": 0.174
+    },
+    {
+      "task": "Devanagari OCR",
+      "dataset": "himalaya-ai Devanagari (500-sample held-out)",
+      "metric": "Word Error Rate",
+      "value": 0.468
+    },
+    {
+      "task": "Devanagari OCR",
+      "dataset": "himalaya-ai Devanagari (500-sample held-out)",
+      "metric": "F1",
+      "value": 0.534
+    }
+  ],
+  "sources": [
+    {
+      "title": "GitHub - Enclave-Labs-Inc/enclave-scribe · GitHub",
+      "url": "https://github.com/Enclave-Labs-Inc/enclave-scribe/",
+      "snippet": "A sovereign, self-hostable document OCR model fine-tuned from Qwen2.5-VL-7B. Built by Enclave Labs. MIT-licensed. See VISION.md for the full strategy and benchmark targets."
+    },
+    {
+      "title": "enclave-scribe/scribe at main · Enclave-Labs-Inc/enclave-scribe",
+      "url": "https://github.com/Enclave-Labs-Inc/enclave-scribe/tree/main/scribe",
+      "snippet": "Contribute to Enclave-Labs-Inc/enclave-scribe development by creating an account on GitHub."
+    },
+    {
+      "title": "Fine-tuned EnclaveScribe for Deterministic OCR Tasks",
+      "url": "https://www.linkedin.com/posts/shashank-bhardwaj-1a92b9213_machinelearning-ocr-llm-activity-7496227977865781248-75R9",
+      "snippet": "EnclaveScribe is one piece of Enclave AI: sovereign AI infrastructure that runs inside your own cloud, so your data and documents never leave your walls."
+    },
+    {
+      "title": "HimalayaAI - Open Nepali AI Research",
+      "url": "https://www.himalayaai.org/",
+      "snippet": "Himalaya AI Research Lab - building Nepal&#x27;s open AI ecosystem through transparent, large-scale Nepali language research and open-source tools."
+    },
+    {
+      "title": "Introducing Scribe v2 - elevenlabs.io",
+      "url": "https://elevenlabs.io/blog/introducing-scribe-v2",
+      "snippet": "Scribe v2 is now used in ElevenLabs Studio for more accurate subtitles, captions and transcriptions, supporting teams that manage large libraries of audio and video across marketing, media, research, training, and compliance use cases."
+    }
+  ]
+}

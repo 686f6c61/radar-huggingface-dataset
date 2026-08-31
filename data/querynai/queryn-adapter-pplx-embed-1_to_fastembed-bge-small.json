@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "QuerynAi/queryn-adapter-pplx-embed-1_to_fastembed-bge-small",
+  "slug": "querynai-queryn-adapter-pplx-embed-1_to_fastembed-bge-small",
+  "author": "QuerynAi",
+  "url": "https://huggingface.co/QuerynAi/queryn-adapter-pplx-embed-1_to_fastembed-bge-small",
+  "created_at": "2026-08-30T21:09:09.000Z",
+  "updated_at": "2026-08-30T21:09:17.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "feature-extraction",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "onnx",
+    "embedding",
+    "embedding-translation",
+    "queryn",
+    "pplx-embed-1",
+    "fastembed-bge-small",
+    "feature-extraction",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1899347,
+  "storage_human": "2 MB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "perplexity-ai/pplx-embed-v1-4b · Hugging Face",
+      "url": "https://huggingface.co/perplexity-ai/pplx-embed-v1-4b",
+      "snippet": "All models are built on diffusion continued pre-trained Qwen3 at Perplexity AI. Many modern embedding models rely on instruction tuning, where users prepend an instruction string to the text being embedded. This can yield a 2%-3% lift on benchmarks, but it also introduces prompt-selection overhead and can make indexing pipelines brittle (small instruction changes can shift embedding space). We ..."
+    },
+    {
+      "title": "pplx-embed - a perplexity-ai Collection - Hugging Face",
+      "url": "https://huggingface.co/collections/perplexity-ai/pplx-embed",
+      "snippet": "Diffusion-Pretrained Dense and Contextual Embeddings"
+    },
+    {
+      "title": "Perplexity AI",
+      "url": "https://www.perplexity.ai/",
+      "snippet": "Perplexity is a free AI-powered answer engine that provides accurate, trusted, and real-time answers to any question."
+    },
+    {
+      "title": "Perplexity Release Notes - July 2026 Latest Updates - Releasebot",
+      "url": "https://releasebot.io/updates/perplexity-ai",
+      "snippet": "Learn more: AI models in Perplexity Claude Fable 5 as an orchestrator in Computer Pick Claude Fable 5 to orchestrate your most involved Computer tasks. As an orchestrator, it plans the work, routes subtasks to the right tools and models, and stitches the results together, making a strong fit for deep research synthesis and multi-source analysis."
+    },
+    {
+      "title": "PerplexityEmbeddings | langchain_perplexity | LangChain Reference",
+      "url": "https://reference.langchain.com/python/langchain-perplexity/embeddings/PerplexityEmbeddings",
+      "snippet": "Name of the Perplexity embedding model to use. See the API reference for available identifiers, including pplx-embed-v1-.6b and pplx-embed-v1-4b. Contextualized variants are served through a separate endpoint and are not exposed by this class."
+    }
+  ]
+}

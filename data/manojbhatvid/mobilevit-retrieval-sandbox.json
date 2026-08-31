@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "manojbhatvid/mobilevit-retrieval-sandbox",
+  "slug": "manojbhatvid-mobilevit-retrieval-sandbox",
+  "author": "manojbhatvid",
+  "url": "https://huggingface.co/manojbhatvid/mobilevit-retrieval-sandbox",
+  "created_at": "2026-08-31T01:37:21.000Z",
+  "updated_at": "2026-08-31T01:37:29.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "mobilevit",
+    "pytorch",
+    "retrieval",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 24832,
+  "parameters_human": "24832",
+  "storage_bytes": 99808,
+  "storage_human": "99808 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "JIMARTINEZ/mobilevit-retrieval-v3 · Hugging Face",
+      "url": "https://huggingface.co/JIMARTINEZ/mobilevit-retrieval-v3",
+      "snippet": "Overview This repository is a compact, custom PyTorch implementation of Mobilevit for Retrieval. The xlarge configuration is intended for code review, smoke tests, and small controlled experiments rather than as a production-ready pretrained release."
+    },
+    {
+      "title": "jamesking1987/experiment-retrieval · Hugging Face",
+      "url": "https://huggingface.co/jamesking1987/experiment-retrieval",
+      "snippet": "Overview Working implementation of Mobilevit for Retrieval using a huge configuration. The repository focuses on transparent code and repeatable smoke tests; benchmark claims are deliberately omitted."
+    },
+    {
+      "title": "transformers/docs/source/en/model_doc/mobilevit.md at main ...",
+      "url": "https://github.com/huggingface/transformers/blob/main/docs/source/en/model_doc/mobilevit.md",
+      "snippet": "MobileViT is a lightweight vision transformer for mobile devices that merges CNN&#x27;s efficiency and inductive biases with transformers global context modeling. It treats transformers as convolutions, enabling global information processing without the heavy computational cost of standard ViTs."
+    },
+    {
+      "title": "mmpretrain/configs/mobilevit/README.md at main · open-mmlab ... - GitHub",
+      "url": "https://github.com/open-mmlab/mmpretrain/blob/main/configs/mobilevit/README.md",
+      "snippet": "MobileViT aims at introducing a light-weight network, which takes the advantages of both ViTs and CNNs, uses the InvertedResidual blocks in MobileNetV2 and MobileViTBlock which refers to ViT transformer blocks to build a standard 5-stage model structure. The MobileViTBlock reckons transformers as convolutions to perform a global representation, meanwhile conbined with original convolution ..."
+    },
+    {
+      "title": "[2110.02178] MobileViT: Light-weight, General-purpose, and Mobile ...",
+      "url": "https://arxiv.org/abs/2110.02178",
+      "snippet": "Towards this end, we introduce MobileViT, a light-weight and general-purpose vision transformer for mobile devices. MobileViT presents a different perspective for the global processing of information with transformers, i.e., transformers as convolutions."
+    }
+  ]
+}

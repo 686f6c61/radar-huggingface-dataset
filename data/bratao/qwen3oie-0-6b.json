@@ -1,0 +1,77 @@
+{
+  "schema": 1,
+  "id": "bratao/Qwen3OIE-0.6B",
+  "slug": "bratao-qwen3oie-0-6b",
+  "author": "bratao",
+  "url": "https://huggingface.co/bratao/Qwen3OIE-0.6B",
+  "created_at": "2025-05-31T22:54:48.000Z",
+  "updated_at": "2026-08-30T22:04:56.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "pt"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3",
+    "text-generation",
+    "open-information-extraction",
+    "openie",
+    "portuguese",
+    "abstractive-openie",
+    "conversational",
+    "pt",
+    "base_model:Qwen/Qwen3-0.6B",
+    "base_model:finetune:Qwen/Qwen3-0.6B",
+    "license:apache-2.0",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 9,
+  "trending_score": 0,
+  "parameters": 596049920,
+  "parameters_human": "596.0M",
+  "storage_bytes": 1203557750,
+  "storage_human": "1.2 GB",
+  "base_model": "Qwen/Qwen3-0.6B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "bratao/Qwen3OIE-0.6B · Hugging Face",
+      "url": "https://huggingface.co/bratao/Qwen3OIE-0.6B",
+      "snippet": "bratao / Qwen3OIE-0.6B like 0 Text Generation Transformers Safetensors train_dataset_updated.jsonl qwen3 Generated from Trainer conversational text-generation-inference License:apache-2.0 Model card FilesFiles and versions Community Train Deploy Use this model outputs/out-.6b/ Model description Intended uses & limitations Training and ..."
+    },
+    {
+      "title": "bratao/Qwen3OIE-0.6B at main - Hugging Face",
+      "url": "https://huggingface.co/bratao/Qwen3OIE-0.6B/tree/main",
+      "snippet": "Qwen3OIE-0.6B like 0 Text Generation Transformers Safetensors train_dataset_updated.jsonl qwen3 Generated from Trainer conversational text-generation-inference License:apache-2.0 Model card FilesFiles and versions Community Train Deploy Use this model main Qwen3OIE-0.6B Ctrl+K Ctrl+K 1 contributor History:2 commits bratao Upload 10 files ..."
+    },
+    {
+      "title": "bratao/Qwen3OIE-0.6B - Fast, Reliable, and Scalable ... - friendli.ai",
+      "url": "https://friendli.ai/models/bratao/Qwen3OIE-0.6B",
+      "snippet": "Run bratao/Qwen3OIE-0.6B with fast, reliable, and scalable inference on FriendliAI. Get low-latency performance with advanced quantization (FP4, FP8, INT4, INT8), continuous batching, optimized GPU kernels, token caching, and seamless API integration."
+    },
+    {
+      "title": "Qwen3 Complete Guide: Every Model from 0.6B to 235B",
+      "url": "https://insiderllm.com/guides/qwen3-complete-guide/",
+      "snippet": "Qwen3 is the best open model family for budget local AI. Dense models from 0.6B to 32B, MoE models that punch above their weight, and a /think toggle no one else has."
+    },
+    {
+      "title": "Qwen 3 Full Model Lineup Guide 2026: 0.6B to 72B with Dual-Mode ...",
+      "url": "https://baeseokjae.github.io/posts/qwen-3-full-lineup-guide-2026/",
+      "snippet": "Complete guide to every Qwen 3 model from 0.6B to 235B — specs, VRAM requirements, dual-mode thinking, benchmarks vs. DeepSeek R1 and GPT-4o."
+    }
+  ]
+}

@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "kdotmahesh/pi05-pick-clip-mug-test",
+  "slug": "kdotmahesh-pi05-pick-clip-mug-test",
+  "author": "kdotmahesh",
+  "url": "https://huggingface.co/kdotmahesh/pi05-pick-clip-mug-test",
+  "created_at": "2026-08-30T19:54:54.000Z",
+  "updated_at": "2026-08-30T19:58:29.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "robotics",
+    "pi05",
+    "dataset:kdotmahesh/pick-clip-place-mug_20260830_120021",
+    "base_model:lerobot/pi05_base",
+    "base_model:finetune:lerobot/pi05_base",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 4143404816,
+  "parameters_human": "4.14B",
+  "storage_bytes": 42596978704,
+  "storage_human": "42.6 GB",
+  "base_model": "lerobot/pi05_base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ai-hub-models/src/qai_hub_models/models/pi05/quantize.py at ... - GitHub",
+      "url": "https://github.com/qualcomm/ai-hub-models/blob/main/src/qai_hub_models/models/pi05/quantize.py",
+      "snippet": "Qualcomm® AI Hub Models is our collection of state-of-the-art machine learning models optimized for performance (latency, memory etc.) and ready to deploy on Qualcomm® devices. - qualcomm/ai-hub-mo..."
+    },
+    {
+      "title": "AI Detector - Free AI Checker for ChatGPT, GPT-5 & Gemini",
+      "url": "https://gptzero.me/",
+      "snippet": "GPTZero detects AI content from Claude, ChatGPT, GPT-5, Gemini, and checks writing quality to make every word worth reading."
+    },
+    {
+      "title": "AI Detector: Free AI Checker for ChatGPT, Claude & GPT-5 - QuillBot",
+      "url": "https://quillbot.com/ai-content-detector",
+      "snippet": "Quillbot&#x27;s free AI Detector checks text from ChatGPT, GPT-5, Claude and others. Get an AI score, sentence-level highlights, and refined AI detection insights."
+    },
+    {
+      "title": "ai-hub-models/src/qai_hub_models/models/pi05 at main - GitHub",
+      "url": "https://github.com/qualcomm/ai-hub-models/tree/main/src/qai_hub_models/models/pi05",
+      "snippet": "Qualcomm® AI Hub Models is our collection of state-of-the-art machine learning models optimized for performance (latency, memory etc.) and ready to deploy on Qualcomm® devices. - qualcomm/ai-hub-mo..."
+    },
+    {
+      "title": "π 0.5 : a Vision-Language-Action Model with Open-World Generalization",
+      "url": "https://arxiv.org/html/2504.16054v1",
+      "snippet": "Abstract In order for robots to be useful, they must perform practically relevant tasks in the real world, outside of the lab. While vision-language-action (VLA) models have demonstrated impressive results for end-to-end robot control, it remains an open question how far such models can generalize in the wild. We describe π 0.5 $π0.5$, a new model based on π 0 $π0$ that uses co-training on ..."
+    }
+  ]
+}

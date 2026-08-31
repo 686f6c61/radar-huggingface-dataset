@@ -5,7 +5,7 @@
   "author": "GreenBitAI",
   "url": "https://huggingface.co/GreenBitAI/Qwen3.8-Flash-Next-4bit-paged",
   "created_at": "2026-08-29T22:21:28.000Z",
-  "updated_at": "2026-08-29T22:46:01.000Z",
+  "updated_at": "2026-08-30T20:01:32.000Z",
   "license": "qwen-community-1.0",
   "license_family": "unknown",
   "pipeline_tag": "image-text-to-text",
@@ -32,7 +32,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 0,
+  "downloads_30d": 64,
   "trending_score": 0,
   "parameters": 1429820051,
   "parameters_human": "1.43B",

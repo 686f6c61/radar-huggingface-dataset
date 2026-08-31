@@ -1,0 +1,78 @@
+{
+  "schema": 1,
+  "id": "telecomadm1145/Kiseki-TTS-1.21",
+  "slug": "telecomadm1145-kiseki-tts-1-21",
+  "author": "telecomadm1145",
+  "url": "https://huggingface.co/telecomadm1145/Kiseki-TTS-1.21",
+  "created_at": "2026-08-30T21:24:01.000Z",
+  "updated_at": "2026-08-30T21:36:28.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-speech",
+  "library": "transformers",
+  "languages": [
+    "ja"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "mamba2_s2s",
+    "text2text-generation",
+    "text-to-speech",
+    "mamba2",
+    "state-space-model",
+    "japanese",
+    "neural-audio-codec",
+    "custom_code",
+    "ja",
+    "dataset:telecomadm1145/test14",
+    "dataset:telecomadm1145/test13",
+    "base_model:telecomadm1145/Kiseki-1.1-0.3B",
+    "base_model:finetune:telecomadm1145/Kiseki-1.1-0.3B",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 375482432,
+  "parameters_human": "375.5M",
+  "storage_bytes": 1502950748,
+  "storage_human": "1.5 GB",
+  "base_model": "telecomadm1145/Kiseki-1.1-0.3B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "telecomadm1145/Kiseki-TTS · Hugging Face",
+      "url": "https://huggingface.co/telecomadm1145/Kiseki-TTS",
+      "snippet": "A small, fast Japanese TTS model with a Mamba2 state-space decoder, built on top of Qwen/Qwen3-TTS-Tokenizer-12Hz. Kiseki-TTS generates discrete neural audio codec tokens at 12.5 Hz and decodes them to waveform with the Qwen3 TTS codec."
+    },
+    {
+      "title": "telecomadm1145/Kiseki-TTS-1.1 · Hugging Face",
+      "url": "https://huggingface.co/telecomadm1145/Kiseki-TTS-1.1",
+      "snippet": "A small, fast Japanese TTS model with a Mamba2 state-space decoder, built on top of Qwen/Qwen3-TTS-Tokenizer-12Hz. Kiseki-TTS generates discrete neural audio codec tokens at 12.5 Hz and decodes them to waveform with the Qwen3 TTS codec."
+    },
+    {
+      "title": "telecomadm1145 · GitHub",
+      "url": "https://github.com/telecomadm1145",
+      "snippet": "A cpp/csharp developer. telecomadm1145 has 47 repositories available. Follow their code on GitHub."
+    },
+    {
+      "title": "telecomadm1145 / Repositories · GitHub",
+      "url": "https://github.com/telecomadm1145?tab=repositories",
+      "snippet": "A cpp/csharp developer. telecomadm1145 has 47 repositories available. Follow their code on GitHub."
+    },
+    {
+      "title": "CivArchive (CivitAI Archive) - AI Model Archive",
+      "url": "https://civitaiarchive.com/",
+      "snippet": "Browse and discover AI models from CivitAI, TensorArt, and SeaArt. Community-driven archive preserving access to AI resources."
+    }
+  ]
+}

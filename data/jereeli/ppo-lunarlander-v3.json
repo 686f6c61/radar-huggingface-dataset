@@ -5,7 +5,7 @@
   "author": "Jereeli",
   "url": "https://huggingface.co/Jereeli/ppo-LunarLander-v3",
   "created_at": "2026-08-28T19:32:47.000Z",
-  "updated_at": "2026-08-28T19:55:54.000Z",
+  "updated_at": "2026-08-30T09:09:48.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": "reinforcement-learning",
@@ -14,6 +14,7 @@
   "tags": [
     "stable-baselines3",
     "LunarLander-v3",
+    "LunarLander-v2",
     "deep-reinforcement-learning",
     "reinforcement-learning",
     "model-index",

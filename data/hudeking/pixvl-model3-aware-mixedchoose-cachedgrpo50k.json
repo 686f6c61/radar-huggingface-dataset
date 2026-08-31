@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "HudeKing/PixVL-model3-aware-mixedchoose-cachedgrpo50k",
+  "slug": "hudeking-pixvl-model3-aware-mixedchoose-cachedgrpo50k",
+  "author": "HudeKing",
+  "url": "https://huggingface.co/HudeKing/PixVL-model3-aware-mixedchoose-cachedgrpo50k",
+  "created_at": "2026-08-30T19:04:00.000Z",
+  "updated_at": "2026-08-30T20:40:03.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "image-segmentation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_vl",
+    "image-text-to-text",
+    "pixvl",
+    "qwen3-vl",
+    "visual-grounding",
+    "image-segmentation",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 4828036608,
+  "parameters_human": "4.83B",
+  "storage_bytes": 9667680924,
+  "storage_human": "9.7 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "[2608.01354] PixVL: Self-Supervised Training of Pixel-Level MLLMs via a ...",
+      "url": "https://arxiv.org/abs/2608.01354",
+      "snippet": "PixVL therefore introduces confuser-aware semantic verification, which uses the model&#x27;s confidence when it correctly chooses the target among highly similar candidate regions, and assigns zero reward to an incorrect choice."
+    },
+    {
+      "title": "Paper page - PixVL: Self-Supervised Training of Pixel-Level MLLMs via a ...",
+      "url": "https://huggingface.co/papers/2608.01354",
+      "snippet": "PixVL therefore introduces confuser-aware semantic verification, which uses the model&#x27;s confidence when it correctly chooses the target among highly similar candidate regions, and assigns zero reward to an incorrect choice."
+    },
+    {
+      "title": "HudeKing (Yicheng Xiao) - Hugging Face",
+      "url": "https://huggingface.co/HudeKing",
+      "snippet": "AI & ML interests ... Recent Activity updated a model 2 days ago ... published a model 4 days ago"
+    },
+    {
+      "title": "PixVL: Self-Supervised Training of Pixel-Level MLLMs via a...",
+      "url": "https://arxivlens.com/paperview/details/pixvl-self-supervised-training-of-pixel-level-mllms-via-a-unified-mask-text-consistency-cycle-6468-e11cba6b",
+      "snippet": "PixVL therefore introduces confuser-aware semantic verification, which uses the model&#x27;s confidence when it correctly chooses the target among highly similar candidate regions, and assigns zero reward to an incorrect choice."
+    },
+    {
+      "title": "PixVL: Self-Supervised Training of Pixel-Level MLLMs via a Unified Mask ...",
+      "url": "https://www.aimodels.fyi/papers/arxiv/pixvl-self-supervised-training-pixel-level-mllms",
+      "snippet": "The comparison baseline is the 4B SAM-Tok model. PixVL&#x27;s central replacement for pure IoU cycle training is the combination of geometric checks with hard-confuser discrimination and cross-view verification; the ablation reports significant deterioration in referring segmentation when confuser-aware verification is removed."
+    }
+  ]
+}

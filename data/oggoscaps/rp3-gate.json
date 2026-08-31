@@ -1,0 +1,78 @@
+{
+  "schema": 1,
+  "id": "oggoscaps/rp3-gate",
+  "slug": "oggoscaps-rp3-gate",
+  "author": "oggoscaps",
+  "url": "https://huggingface.co/oggoscaps/rp3-gate",
+  "created_at": "2026-08-30T20:55:38.000Z",
+  "updated_at": "2026-08-30T22:05:43.000Z",
+  "license": "gemma",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gguf",
+    "gemma3_text",
+    "text-generation",
+    "gemma3",
+    "chat",
+    "puzzle",
+    "conversational",
+    "en",
+    "base_model:google/gemma-3-1b-it",
+    "base_model:quantized:google/gemma-3-1b-it",
+    "license:gemma",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1000233856,
+  "parameters_human": "1.00B",
+  "storage_bytes": 10191213461,
+  "storage_human": "10.2 GB",
+  "base_model": "google/gemma-3-1b-it",
+  "formats": [
+    "gguf",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GATE: An Integrated Assessment Model for AI Automation",
+      "url": "https://arxiv.org/html/2503.04941v2",
+      "snippet": "Abstract Assessing the economic impacts of artificial intelligence requires integrating insights from both computer science and economics. We present the Growth and AI Transition Endogenous model (GATE), a dynamic integrated assessment model that simulates the economic effects of AI automation. GATE combines three key ingredients that have not been brought together in previous work: (1) a ..."
+    },
+    {
+      "title": "GATE Model Playground | Epoch AI",
+      "url": "https://epoch.ai/gate",
+      "snippet": "The Growth and AI Transition Endogenous (GATE) model is an integrated assessment model of the impact of AI development on the economy. To accompany our paper describing the GATE model in detail, we have developed a playground that allows interested readers to modify parameter settings and observe the model&#x27;s behavior in a wide range of scenarios."
+    },
+    {
+      "title": "GATE: An Integrated Assessment Model for AI Automation",
+      "url": "https://arxiv.org/pdf/2503.04941v2",
+      "snippet": "We introduce the Growth and AI Transition Endogenous model (GATE), an integrated assessment tool that captures how AI-driven advances—in compute, algorithms, and automation—shape macroeconomic outcomes."
+    },
+    {
+      "title": "ModelGate - AI API Aggregation Platform",
+      "url": "https://modelgate.net/",
+      "snippet": "Unified access to all mainstream AI models, including LLM, image generation, and video generation. One API key, intelligent routing, best prices."
+    },
+    {
+      "title": "All models | OpenAI API",
+      "url": "https://developers.openai.com/api/docs/models/all",
+      "snippet": "All models Browse all available models and compare their capabilities."
+    }
+  ]
+}

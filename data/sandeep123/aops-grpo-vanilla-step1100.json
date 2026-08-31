@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "sandeep123/aops-grpo-vanilla-step1100",
+  "slug": "sandeep123-aops-grpo-vanilla-step1100",
+  "author": "sandeep123",
+  "url": "https://huggingface.co/sandeep123/aops-grpo-vanilla-step1100",
+  "created_at": "2026-08-31T01:31:55.000Z",
+  "updated_at": "2026-08-31T01:41:45.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "qwen2",
+    "rl",
+    "grpo",
+    "verl",
+    "scienceqa",
+    "reasoning",
+    "baseline",
+    "base_model:Qwen/Qwen2.5-Math-1.5B",
+    "base_model:finetune:Qwen/Qwen2.5-Math-1.5B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1777088000,
+  "parameters_human": "1.78B",
+  "storage_bytes": 7119812336,
+  "storage_human": "7.1 GB",
+  "base_model": "Qwen/Qwen2.5-Math-1.5B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "sandeep123/sqa-grpo-vanilla-step1200 · Hugging Face",
+      "url": "https://huggingface.co/sandeep123/sqa-grpo-vanilla-step1200",
+      "snippet": "sandeep123 / sqa-grpo-vanilla-step1200 like 0 Safetensors qwen2 rl grpo verl scienceqa reasoning baseline License:apache-2.0 Model card FilesFiles and versions xet Community Copy to bucket new sqa-grpo-vanilla-step1200 Do not apply a chat template Validation metrics at this checkpoint Settings (identical across all baseline arms) Note on ..."
+    },
+    {
+      "title": "sandeep123 (Kumar) - Hugging Face",
+      "url": "https://huggingface.co/sandeep123",
+      "snippet": "User profile of Kumar on Hugging Face"
+    },
+    {
+      "title": "Vanilla_GRPO/README.md at main · CinderellaQAQ/Vanilla_GRPO",
+      "url": "https://github.com/CinderellaQAQ/Vanilla_GRPO/blob/main/README.md",
+      "snippet": "Vanilla GRPO 一个GRPO的最简单实现，包含以下三种实现： 手动实现GRPO：即GRPO所有操作均为手搓 trl库实现：使用Huggingface的trl库实现 trl库+QLora实现：2中的trl实现为全量参数训练，受制于显存限制，使用4bit量化+lora的方式对较大的模型实现GRPO"
+    },
+    {
+      "title": "Perplexity AI",
+      "url": "https://www.perplexity.ai/",
+      "snippet": "Perplexity is a free AI-powered answer engine that provides accurate, trusted, and real-time answers to any question."
+    },
+    {
+      "title": "9 Lessons I Learned While Doing RL Post-Training for LLMs",
+      "url": "https://kevtimova.github.io/posts/grpo/",
+      "snippet": "I recently had the chance to experiment with post-training techniques for large language models, a space that has become central to making LLMs useful and controllable in real-world applications. I used Group Relative Policy Optimization (GRPO) from the open-source open-r1 repository, fine-tuning Qwen2.5-7B-Instruct on the coding subset of the Mixture-of-Thoughts dataset."
+    }
+  ]
+}

@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "QuerynAi/queryn-adapter-pplx-embed-1_to_me5-large",
+  "slug": "querynai-queryn-adapter-pplx-embed-1_to_me5-large",
+  "author": "QuerynAi",
+  "url": "https://huggingface.co/QuerynAi/queryn-adapter-pplx-embed-1_to_me5-large",
+  "created_at": "2026-08-30T21:09:18.000Z",
+  "updated_at": "2026-08-30T21:09:31.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "feature-extraction",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "onnx",
+    "embedding",
+    "embedding-translation",
+    "queryn",
+    "pplx-embed-1",
+    "me5-large",
+    "feature-extraction",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 4523350,
+  "storage_human": "5 MB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "pplx-embed - a perplexity-ai Collection - Hugging Face",
+      "url": "https://huggingface.co/collections/perplexity-ai/pplx-embed",
+      "snippet": "Diffusion-Pretrained Dense and Contextual Embeddings. Upvote . 100 +90; Sort: Collection. Diffusion-Pretrained Dense and Contextual Embeddings. Paper • 2602.11151 • Published"
+    },
+    {
+      "title": "GitHub - Gigadelux/Queryn: Queryn is the engine for interoperability ...",
+      "url": "https://github.com/Gigadelux/Queryn",
+      "snippet": "Project Abstract Queryn is an embedding translation and enrichment engine: given a text chunk and its existing embedding from Model A, it returns the equivalent embedding in Model B&#x27;s space — without re-embedding the source corpus."
+    },
+    {
+      "title": "perplexity-ai/pplx-embed-v1-4b · Hugging Face",
+      "url": "https://huggingface.co/perplexity-ai/pplx-embed-v1-4b",
+      "snippet": "pplx-embed-v1: Diffusion-Pretrained Dense and Contextual Embeddings pplx-embed-v1 and pplx-embed-context-v1 are state-of-the-art text embedding models optimized for real-world, web-scale retrieval tasks. Use pplx-embed-v1 for independent text embedding (queries, documents, semantic search) Use pplx-embed-context-v1 for document chunks in RAG systems where surrounding context matters pplx-embed ..."
+    },
+    {
+      "title": "pplx-embed: State-of-the-Art Embedding Models for Web-Scale Retrieval",
+      "url": "https://research.perplexity.ai/articles/pplx-embed-state-of-the-art-embedding-models-for-web-scale-retrieval",
+      "snippet": "Today we are releasing pplx-embed-v1 and pplx-embed-context-v1, two state-of-the-art text embedding models built for real-world, web-scale retrieval."
+    },
+    {
+      "title": "Perplexity Release Notes - July 2026 Latest Updates - Releasebot",
+      "url": "https://releasebot.io/updates/perplexity-ai",
+      "snippet": "The Perplexity API is now a full-stack, model-agnostic platform for building AI agents — replacing your model provider, search layer, and embeddings infrastructure with one API key."
+    }
+  ]
+}

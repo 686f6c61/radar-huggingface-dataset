@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "aneforge/all-distilroberta-v1",
+  "slug": "aneforge-all-distilroberta-v1",
+  "author": "aneforge",
+  "url": "https://huggingface.co/aneforge/all-distilroberta-v1",
+  "created_at": "2026-08-30T23:13:22.000Z",
+  "updated_at": "2026-08-30T23:13:44.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "sentence-similarity",
+  "library": "aneforge",
+  "languages": [],
+  "tags": [
+    "aneforge",
+    "safetensors",
+    "roberta",
+    "apple-neural-engine",
+    "sentence-transformers",
+    "sentence-similarity",
+    "arxiv:2606.17090",
+    "base_model:sentence-transformers/all-distilroberta-v1",
+    "base_model:finetune:sentence-transformers/all-distilroberta-v1",
+    "license:apache-2.0",
+    "text-embeddings-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 82118914,
+  "parameters_human": "82.1M",
+  "storage_bytes": 328489328,
+  "storage_human": "328 MB",
+  "base_model": "sentence-transformers/all-distilroberta-v1",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "sunileman/all-distilroberta-v1 · Hugging Face",
+      "url": "https://huggingface.co/sunileman/all-distilroberta-v1",
+      "snippet": "sunileman/all-distilroberta-v1 This is a sentence-transformers model: It maps sentences & paragraphs to a 768 dimensional dense vector space and can be used for tasks like clustering or semantic search."
+    },
+    {
+      "title": "sentence-transformers/all-distilroberta-v1 · Hugging Face",
+      "url": "https://huggingface.co/sentence-transformers/all-distilroberta-v1",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "all distilroberta v1 (未知) | Benchmarks & Deploy Guide | OpenModelMap",
+      "url": "https://openmodelmap.com/model/sentence-transformers/all-distilroberta-v1",
+      "snippet": "All DistilRoBERTa V1 is a lightweight text embedding model provided by Sentence-Transformers, based on the DistilRoBERTa architecture. It converts text into high-density vectors for semantic similarity calculation, clustering, and retrieval-augmented generation."
+    },
+    {
+      "title": "all-distilroberta-v1 | Kaggle",
+      "url": "https://www.kaggle.com/datasets/gmhost/all-distilroberta-v1",
+      "snippet": "Discover what actually works in AI. Join millions of builders, researchers, and labs evaluating agents, models, and frontier technology through crowdsourced benchmarks, competitions, and hackathons."
+    },
+    {
+      "title": "All Distilroberta models | The GTM Directory",
+      "url": "https://thegtmdirectory.com/models/sentence-transformers-all-distilroberta",
+      "snippet": "all-distilroberta-v1 is a general-purpose sentence embedding model built on the distilroberta-base backbone and trained on over 1 billion sentence pairs from diverse sources including Reddit, MS MARCO, S2ORC, and Stack Exchange. Its standout trait is efficient CPU inference with a small memory footprint, trading some representational capacity against full-sized models like all-mpnet-base-v2 ..."
+    }
+  ]
+}

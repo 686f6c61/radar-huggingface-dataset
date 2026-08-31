@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "nebulette/efficient-unet",
+  "slug": "nebulette-efficient-unet",
+  "author": "nebulette",
+  "url": "https://huggingface.co/nebulette/efficient-unet",
+  "created_at": "2026-08-30T21:37:32.000Z",
+  "updated_at": "2026-08-31T00:38:57.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "diffusers",
+  "languages": [],
+  "tags": [
+    "diffusers",
+    "safetensors",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 57241740,
+  "parameters_human": "57.2M",
+  "storage_bytes": 631561644,
+  "storage_human": "632 MB",
+  "base_model": null,
+  "formats": [
+    "diffusers",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "nebulette/efficient-unet · Hugging Face",
+      "url": "https://huggingface.co/nebulette/efficient-unet",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "nebulette/efficient-unet at main - Hugging Face",
+      "url": "https://huggingface.co/nebulette/efficient-unet/tree/main",
+      "snippet": "nebulette / efficient-unet like 0 License:apache-2.0 Model card FilesFiles and versions xet Copy to bucket new main efficient-unet 34.5 kB Ctrl+K Ctrl+K 1 contributor History:6 commits nebulette Update README.md 5dfd84c verifiedabout 8 hours ago .gitattributes Safe 1.52 kBinitial commitabout 9 hours ago README.md 1.17 kBUpdate README.mdabout 8 ..."
+    },
+    {
+      "title": "GitHub - he44/EfficientNet-UNet",
+      "url": "https://github.com/he44/EfficientNet-UNet",
+      "snippet": "Contribute to he44/EfficientNet-UNet development by creating an account on GitHub."
+    },
+    {
+      "title": "U-Net - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/U-Net",
+      "snippet": "This technology underlies many modern image generation models, such as DALL-E, Midjourney, and Stable Diffusion. U-Net is also being explored for language models. [7] Tokenization is not a separate step, allowing the model to more easily understand spelling and concurrently vectorizing [disambiguation needed] / tokenizing higher level concepts."
+    },
+    {
+      "title": "EfficientUNet: An efficient solution for breast tumour segmentation in ...",
+      "url": "https://ietresearch.onlinelibrary.wiley.com/doi/pdf/10.1049/ipr2.12966",
+      "snippet": "The main work of this paper is to propose an effective neu-ral network model, EfficientUNet, for tumour segmentation in breast ultrasound images. The overall architecture of the model follows the U-Net design pattern through a gradual enhance-ment method, combining ResNet18 [16], a channel attention mechanism and deep supervision technology."
+    }
+  ]
+}

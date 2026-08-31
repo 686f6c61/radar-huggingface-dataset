@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "bratao/llama7b-finetuned-openie-lora",
+  "slug": "bratao-llama7b-finetuned-openie-lora",
+  "author": "bratao",
+  "url": "https://huggingface.co/bratao/llama7b-finetuned-openie-lora",
+  "created_at": "2023-11-02T23:02:22.000Z",
+  "updated_at": "2026-08-30T22:05:07.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "pt"
+  ],
+  "tags": [
+    "transformers",
+    "pytorch",
+    "llama",
+    "text-generation",
+    "open-information-extraction",
+    "openie",
+    "portuguese",
+    "extractive-openie",
+    "llama2",
+    "research-checkpoint",
+    "pt",
+    "base_model:NousResearch/Llama-2-7b-hf",
+    "base_model:finetune:NousResearch/Llama-2-7b-hf",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 9,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 40431258331,
+  "storage_human": "40.4 GB",
+  "base_model": "NousResearch/Llama-2-7b-hf",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "bratao/llama7b-finetuned-openie-lora · Hugging Face",
+      "url": "https://huggingface.co/bratao/llama7b-finetuned-openie-lora",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "LLM Leaderboard 2026: Compare 300+ Top AI Models by Intelligence, Speed ...",
+      "url": "https://llm-stats.com/leaderboards/llm-leaderboard",
+      "snippet": "The LLM Leaderboard — independent ranking of GPT, Claude, Gemini, Llama, DeepSeek and 300+ AI models by intelligence, speed and price. Filter by provider, license, modality and context window; sort by every benchmark. Composite LLM Stats Score updated continuously from public benchmarks and live API metrics."
+    },
+    {
+      "title": "dfurman/LLaMA-7B · Hugging Face",
+      "url": "https://huggingface.co/dfurman/LLaMA-7B",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "LLaMA 7B - Open Laboratory",
+      "url": "https://openlaboratory.com/models/llama-1-7b/",
+      "snippet": "A 7-billion parameter transformer language model trained on one trillion tokens from publicly available datasets for natural language processing research."
+    },
+    {
+      "title": "lora AI Models | Civitai",
+      "url": "https://civitai.com/tag/lora",
+      "snippet": "Browse 28,909 Stable Diffusion & Flux models, LoRAs, checkpoints, and embeddings tagged with lora."
+    }
+  ]
+}

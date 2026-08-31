@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "cakir61/kaptan-pi-qwen-v2",
+  "slug": "cakir61-kaptan-pi-qwen-v2",
+  "author": "cakir61",
+  "url": "https://huggingface.co/cakir61/kaptan-pi-qwen-v2",
+  "created_at": "2026-08-30T20:30:45.000Z",
+  "updated_at": "2026-08-30T20:30:52.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 46659099,
+  "storage_human": "47 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Qwen",
+      "url": "https://qwen.ai/home",
+      "snippet": "Qwen Studio is an AI assistant for everyone, powered by the Qwen series models. It&#x27;s free to use, open to all, and ready to help with creativity, collaboration, and endless possibilities."
+    },
+    {
+      "title": "Qwen (Qwen) - Hugging Face",
+      "url": "https://huggingface.co/Qwen",
+      "snippet": "Org profile for Qwen on Hugging Face, the AI community building the future."
+    },
+    {
+      "title": "pi-qwen-provider · Packages · Pi",
+      "url": "https://pi.dev/packages/pi-qwen-provider?name=qwen",
+      "snippet": "Install pi-qwen-provider from npm and Pi will load the resources declared by the package manifest."
+    },
+    {
+      "title": "Model Catalog · Pi",
+      "url": "https://pi.dev/models",
+      "snippet": "A terminal-based coding agent Model Catalog All models 1274 / 1274"
+    },
+    {
+      "title": "Hugging Face - The AI community building the future.",
+      "url": "https://huggingface.co/",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    }
+  ]
+}

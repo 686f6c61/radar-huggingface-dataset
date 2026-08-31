@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "deltanomix/testodeltanomix",
+  "slug": "deltanomix-testodeltanomix",
+  "author": "deltanomix",
+  "url": "https://huggingface.co/deltanomix/testodeltanomix",
+  "created_at": "2026-08-31T01:20:23.000Z",
+  "updated_at": "2026-08-31T01:20:30.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-to-image",
+  "library": "diffusers",
+  "languages": [],
+  "tags": [
+    "diffusers",
+    "text-to-image",
+    "lora",
+    "template:diffusion-lora",
+    "base_model:rzgar/Wan2.2-I2V-Weak-ID",
+    "base_model:adapter:rzgar/Wan2.2-I2V-Weak-ID",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 359476186,
+  "storage_human": "359 MB",
+  "base_model": "rzgar/Wan2.2-I2V-Weak-ID",
+  "formats": [
+    "diffusers"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Nanomix Ai En",
+      "url": "https://nanomix.ai/en",
+      "snippet": "The best AI models Top AI models for professional work. Image generation and upscaling reach a whole new level."
+    },
+    {
+      "title": "MolexAI — AI-Powered Drug Discovery Platform",
+      "url": "https://molexai.online/",
+      "snippet": "MolexAI compresses the drug discovery pipeline from 12 years to 18 months using generative AI, GPU-accelerated molecular simulation, and NVIDIA BioNeMo foundation models. We&#x27;re building the future of medicine — and we&#x27;re just getting started."
+    },
+    {
+      "title": "AI API Model Tester — Check Which Model Your API Actually Runs ...",
+      "url": "https://apimaster.ai/ai-api-model-tester",
+      "snippet": "Free AI API model tester. Paste any OpenAI, Claude or Gemini endpoint and see which model it really runs — fingerprint detection exposes substituted or fake models in seconds. No key stored."
+    },
+    {
+      "title": "AI Leaderboard 2026: Rankings for 300+ Top AI Models by Intelligence ...",
+      "url": "https://llm-stats.com/",
+      "snippet": "The AI Leaderboard — independent rankings of GPT, Claude, Gemini, Llama, DeepSeek and 300+ AI models by intelligence, speed and price. Composite LLM Stats Score updated continuously from public benchmarks and live API metrics."
+    },
+    {
+      "title": "AI Models | Civitai",
+      "url": "https://civitai.com/models",
+      "snippet": "Browse thousands of free Stable Diffusion & Flux models, LoRAs, checkpoints, and embeddings. The largest collection of AI image generation resources."
+    }
+  ]
+}

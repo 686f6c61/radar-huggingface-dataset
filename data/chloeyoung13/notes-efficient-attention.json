@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "chloeyoung13/notes-efficient-attention",
+  "slug": "chloeyoung13-notes-efficient-attention",
+  "author": "chloeyoung13",
+  "url": "https://huggingface.co/chloeyoung13/notes-efficient-attention",
+  "created_at": "2026-08-30T22:54:56.000Z",
+  "updated_at": "2026-08-30T22:55:06.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "transformer",
+    "research-notes",
+    "efficient-attention",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 16576,
+  "parameters_human": "16576",
+  "storage_bytes": 66784,
+  "storage_human": "66784 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "chiwright/notes-efficient-attention at main - Hugging Face",
+      "url": "https://huggingface.co/chiwright/notes-efficient-attention/tree/main",
+      "snippet": "chiwright / notes-efficient-attention like 0 Safetensors transformer research-notes efficient-attention License:cc-by-4. Model card FilesFiles and versions xet Community Copy to bucket new main notes-efficient-attention 107 kB Ctrl+K Ctrl+K 1 contributor History:2 commits chiwright Upload 5 files a69d3a6 verified1 day ago .gitattributes Safe 1.52 kBinitial commit1 day ago README.md 1.45 ..."
+    },
+    {
+      "title": "chiwright/notes-efficient-attention · Hugging Face",
+      "url": "https://huggingface.co/chiwright/notes-efficient-attention",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "WORLD WIDE WEB JOURNAL Home - ACM Digital Library",
+      "url": "https://dl.acm.org/journal/www",
+      "snippet": "Internet communications tools Document preparation Computing industry Computing standards, RFCs and guidelines Computer crime Language types Security and privacy Computational complexity and cryptography Cryptography Data encryption Multimedia information systems Business process management Enterprise computing Format and notation Government technology policy Human computer interaction (HCI ..."
+    },
+    {
+      "title": "NoteGPT - Your All-in-One AI Learning Assistant. Summarize, Chat ...",
+      "url": "https://notegpt.io/",
+      "snippet": "Your All-in-One AI Learning Assistant Designed to help learners and creators work 10× faster across summarizing, learning, research, writing, visual expression, image creation, and audio creation."
+    },
+    {
+      "title": "Research | OpenAI",
+      "url": "https://openai.com/research/",
+      "snippet": "We advance the science of AI through research on frontier models, reasoning, multimodal systems, and safe deployment. GPT OpenAI&#x27;s GPT series models are fast, versatile, and cost-efficient AI systems designed to understand context, generate content, and reason across text, images, and more."
+    }
+  ]
+}

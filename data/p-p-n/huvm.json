@@ -1,0 +1,84 @@
+{
+  "schema": 1,
+  "id": "p-p-n/Huvm",
+  "slug": "p-p-n-huvm",
+  "author": "p-p-n",
+  "url": "https://huggingface.co/p-p-n/Huvm",
+  "created_at": "2026-08-30T22:49:53.000Z",
+  "updated_at": "2026-08-30T23:10:51.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "pt",
+    "en",
+    "es",
+    "it",
+    "de",
+    "zh"
+  ],
+  "tags": [
+    "code",
+    "instruct",
+    "math",
+    "creative",
+    "chat",
+    "llama.cpp",
+    "gguf",
+    "text-generation",
+    "pt",
+    "en",
+    "es",
+    "it",
+    "de",
+    "zh",
+    "base_model:Qwen/Qwen2.5-1.5B-Instruct",
+    "base_model:finetune:Qwen/Qwen2.5-1.5B-Instruct",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": "Qwen/Qwen2.5-1.5B-Instruct",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - casys-kaist/HUVM",
+      "url": "https://github.com/casys-kaist/HUVM",
+      "snippet": "Contribute to casys-kaist/HUVM development by creating an account on GitHub."
+    },
+    {
+      "title": "LLM Temperature, Top-P, Top-K & 11 Core Parameters: The Complete ...",
+      "url": "https://amitray.com/llm-parameters-temperature-top-p-top-k-guide/",
+      "snippet": "Learn LLM temperature, top-p, top-k, and 11 key parameters with code, examples, and a complete cheat sheet. Master AI output control in 2026."
+    },
+    {
+      "title": "ModelVault — The Open AI Model Directory & Benchmark Matrix",
+      "url": "https://www.modelvault.space/",
+      "snippet": "Discover, compare, and benchmark 11,000+ cloud and local AI models. Filter by modalities, context windows, pricing, providers, and performance benchmarks."
+    },
+    {
+      "title": "Models - Hugging Face",
+      "url": "https://huggingface.co/models",
+      "snippet": "Explore machine learning models."
+    },
+    {
+      "title": "Hugging Face - The AI community building the future.",
+      "url": "https://huggingface.co/",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    }
+  ]
+}

@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "tetrak/easyocr-armenian",
+  "slug": "tetrak-easyocr-armenian",
+  "author": "tetrak",
+  "url": "https://huggingface.co/tetrak/easyocr-armenian",
+  "created_at": "2026-08-30T20:58:23.000Z",
+  "updated_at": "2026-08-30T20:58:55.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-to-text",
+  "library": null,
+  "languages": [
+    "hy",
+    "en"
+  ],
+  "tags": [
+    "safetensors",
+    "ocr",
+    "text-recognition",
+    "armenian",
+    "easyocr",
+    "ctc",
+    "image-to-text",
+    "hy",
+    "en",
+    "dataset:tetrak/armenian-ocr-crops",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 3800616,
+  "parameters_human": "3.8M",
+  "storage_bytes": 30426187,
+  "storage_human": "30 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - JaidedAI/EasyOCR: Ready-to-use OCR with 80+ supported ...",
+      "url": "https://github.com/JaidedAI/EasyOCR",
+      "snippet": "Ready-to-use OCR with 80+ supported languages and all popular writing scripts including Latin, Chinese, Arabic, Devanagari, Cyrillic and etc. - JaidedAI/EasyOCR"
+    },
+    {
+      "title": "EasyOCR Model Hub - jDai - Jaided",
+      "url": "https://www.jaided.ai/easyocr/modelhub/",
+      "snippet": "Download EasyOCR pretrained models — detection and recognition models for 80+ languages."
+    },
+    {
+      "title": "GitHub - calfa-co/hye-tesseract: Open OCR model for Armenian",
+      "url": "https://github.com/calfa-co/hye-tesseract",
+      "snippet": "This open OCR model is designed to recognize text in Classical, Western, and Eastern Armenian. It has been trained on a diverse range of documents, including noisy texts, historical fonts, and Armenian newspapers. The model is optimized for use with Tesseract-ocr (refer to the documentation for ..."
+    },
+    {
+      "title": "AMD-PAVS-AI/easyocr · Hugging Face",
+      "url": "https://huggingface.co/AMD-PAVS-AI/easyocr",
+      "snippet": "EasyOCR is a ready-to-use optical character recognition (OCR) pipeline combining a CRAFT text-detection model with a CRNN text-recognition model, supporting 80+ languages. This repository packages inference for OCR (text detection + recognition) using ONNX Runtime, exported and validated for AMD ROCm so it runs efficiently on AMD GPUs, CPUs, and NPUs."
+    },
+    {
+      "title": "Custom Models | JaidedAI/EasyOCR | DeepWiki",
+      "url": "https://deepwiki.com/JaidedAI/EasyOCR/8.1-custom-models",
+      "snippet": "This document describes how to create and use custom text recognition models with EasyOCR. While EasyOCR provides pre-trained models for many languages, custom models allow you to optimize recognition"
+    }
+  ]
+}

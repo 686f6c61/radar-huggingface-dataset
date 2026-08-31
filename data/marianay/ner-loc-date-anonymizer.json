@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "marianaY/ner-loc-date-anonymizer",
+  "slug": "marianay-ner-loc-date-anonymizer",
+  "author": "marianaY",
+  "url": "https://huggingface.co/marianaY/ner-loc-date-anonymizer",
+  "created_at": "2026-08-10T18:01:50.000Z",
+  "updated_at": "2026-08-31T00:12:42.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "token-classification",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "bert",
+    "token-classification",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 118,
+  "trending_score": 0,
+  "parameters": 107723525,
+  "parameters_human": "107.7M",
+  "storage_bytes": 1723669648,
+  "storage_human": "1.7 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "marianaY/ner-loc-date-anonymizer · Hugging Face",
+      "url": "https://huggingface.co/marianaY/ner-loc-date-anonymizer",
+      "snippet": "Instructions to use marianaY/ner-loc-date-anonymizer with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Libraries Transformers How to use marianaY/ner-loc-date-anonymizer with Transformers:"
+    },
+    {
+      "title": "marianaY (Mariana Yuvchenko) - Hugging Face",
+      "url": "https://huggingface.co/marianaY",
+      "snippet": "models1 marianaY/ner-loc-date-anonymizer Token Classification • 0.1B•Updated 3 days ago• 19"
+    },
+    {
+      "title": "GitHub - Raminhassani999/anonymization-project",
+      "url": "https://github.com/Raminhassani999/anonymization-project",
+      "snippet": "All NER detectors follow a common detector interface. Structured Data The current synthetic diabetology dataset contains structured PII fields such as: Patient Code First Name Surname Tax Code Birth Date Assessment Date Age At Assessment These structured fields are handled by the regex-based detection and rule-based anonymization pipeline. Free ..."
+    },
+    {
+      "title": "anonymization-project/README.md at main · Raminhassani999 ... - GitHub",
+      "url": "https://github.com/Raminhassani999/anonymization-project/blob/main/README.md",
+      "snippet": "Detection Approaches Three AI-based NER approaches are implemented: spaCy Hugging Face NER GLiNER A rule-based regular-expression detector is also used for structured PII fields. All NER detectors follow a common detector interface. Structured Data The current synthetic diabetology dataset contains structured PII fields such as: Patient Code First Name Surname Tax Code Birth Date Assessment ..."
+    },
+    {
+      "title": "We Built a Privacy-First Anonymizer for Enterprise LLMs. Here Is ...",
+      "url": "https://medium.com/@rom_55053/we-built-a-privacy-first-anonymizer-for-enterprise-llms-here-is-everything-we-learned-a431ea49136b",
+      "snippet": "Here is the architecture, the decisions, and the lessons from building it in production. The biggest bottleneck for enterprise AI adoption in 2026 is not model capability."
+    }
+  ]
+}

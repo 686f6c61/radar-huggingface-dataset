@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "ai-department-lpnu/diffusion-lab",
+  "slug": "ai-department-lpnu-diffusion-lab",
+  "author": "ai-department-lpnu",
+  "url": "https://huggingface.co/ai-department-lpnu/diffusion-lab",
+  "created_at": "2026-08-30T22:47:53.000Z",
+  "updated_at": "2026-08-30T23:02:18.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "pytorch",
+  "languages": [],
+  "tags": [
+    "pytorch",
+    "education",
+    "diffusion",
+    "masked-language-model",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Diffusion Lab",
+      "url": "https://diffusionlab.de/",
+      "snippet": "Watch your creations come alive as AI transforms fluid simulations, camera stream, videos or audio into mesmerizing generative art in real-time."
+    },
+    {
+      "title": "DiffusionLab - Train Custom Diffusion Models",
+      "url": "https://getdiffusionlab.com/",
+      "snippet": "Fine-tune diffusion models for specialized domains. Train custom AI models for healthcare, engineering, architecture, satellite imaging, and more. Get results generic AI can&#x27;t match."
+    },
+    {
+      "title": "Diffusion models",
+      "url": "https://nn.labml.ai/diffusion/index.html",
+      "snippet": "A set of PyTorch implementations/tutorials of diffusion models."
+    },
+    {
+      "title": "Diffusion_Models.ipynb - Colab - Google Colab",
+      "url": "https://colab.research.google.com/github/khipu-ai/practicals-2025/blob/main/notebooks/Diffusion_Models.ipynb",
+      "snippet": "We&#x27;ll focus on denoising diffusion models as presented in the paper \"Denoising Diffusion Probabilistic Models\" by Jonathan Ho, et al. (2020) as this paper introduced many simplifications and improvements to the model and was arguably one of the papers that first popularised this class of generative models."
+    },
+    {
+      "title": "ai-department-lpnu (Lviv Polytechnic National University - Department ...",
+      "url": "https://huggingface.co/ai-department-lpnu",
+      "snippet": "Org profile for Lviv Polytechnic National University - Department of Artificial Intelligence Systems on Hugging Face, the AI community building the future."
+    }
+  ]
+}

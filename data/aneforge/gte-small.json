@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "aneforge/gte-small",
+  "slug": "aneforge-gte-small",
+  "author": "aneforge",
+  "url": "https://huggingface.co/aneforge/gte-small",
+  "created_at": "2026-08-30T23:13:49.000Z",
+  "updated_at": "2026-08-30T23:13:54.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "sentence-similarity",
+  "library": "aneforge",
+  "languages": [],
+  "tags": [
+    "aneforge",
+    "safetensors",
+    "bert",
+    "apple-neural-engine",
+    "sentence-transformers",
+    "sentence-similarity",
+    "arxiv:2606.17090",
+    "base_model:thenlper/gte-small",
+    "base_model:finetune:thenlper/gte-small",
+    "license:mit",
+    "text-embeddings-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 33360512,
+  "parameters_human": "33.4M",
+  "storage_bytes": 66746168,
+  "storage_human": "67 MB",
+  "base_model": "thenlper/gte-small",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Supabase/gte-small · Hugging Face",
+      "url": "https://huggingface.co/Supabase/gte-small",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "README.md · TaylorAI/gte-tiny at main - Hugging Face",
+      "url": "https://huggingface.co/TaylorAI/gte-tiny/blob/main/README.md",
+      "snippet": "TaylorAI / gte-tiny like 140 Follow Taylor 22 Sentence Similarity sentence-transformers PyTorch ONNX Safetensors Transformers bert feature-extraction mteb Eval Results (legacy) text-embeddings-inference Model card FilesFiles and versions xet Community 6 Deploy Use this model main gte-tiny /README.md andersonbcdefg Update README.md 4cc5e73 over 2 years ago preview code | raw Copy download link ..."
+    },
+    {
+      "title": "gte-small: Text-to-Text model — overview, use cases, alternatives",
+      "url": "https://www.aimodels.fyi/models/huggingFace/gte-small-thenlper",
+      "snippet": "A: Yes. The model loads via transformers and sentence-transformers, both of which support standard PyTorch fine-tuning workflows. Use contrastive loss functions and triplet-like training data to adapt the model to your domain or task-specific semantic relationships. Q: What input format does gte-small expect? A: Plain text strings in English only."
+    },
+    {
+      "title": "gte-small: Text-to-Text model — overview, use cases, alternatives",
+      "url": "https://www.aimodels.fyi/models/huggingFace/gte-small-supabase",
+      "snippet": "gte-small is a compact text embedding model maintained by Supabase that converts text into 384-dimensional dense vectors for semantic search, clustering,..."
+    },
+    {
+      "title": "ANEForge",
+      "url": "https://aneforge.readthedocs.io/en/",
+      "snippet": "ANEForge is a direct, CoreML-free Python frontend for the Apple Neural Engine: it lowers a tensor graph into one fused Espresso e5rt program and dispatches it to ANE silicon from an ordinary user process, with no CoreML and no special entitlement. These docs are the software manual - how to install, call, train, target, and extend the frontend."
+    }
+  ]
+}

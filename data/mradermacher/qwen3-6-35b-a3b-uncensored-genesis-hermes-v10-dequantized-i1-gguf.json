@@ -5,7 +5,7 @@
   "author": "mradermacher",
   "url": "https://huggingface.co/mradermacher/Qwen3.6-35B-A3B-Uncensored-Genesis-Hermes-V10-dequantized-i1-GGUF",
   "created_at": "2026-08-29T09:14:52.000Z",
-  "updated_at": "2026-08-29T16:11:21.000Z",
+  "updated_at": "2026-08-30T05:43:27.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": null,
@@ -23,12 +23,12 @@
     "conversational"
   ],
   "likes": 0,
-  "downloads_30d": 0,
+  "downloads_30d": 1218,
   "trending_score": 0,
   "parameters": 35505251456,
   "parameters_human": "35.51B",
-  "storage_bytes": 241167915680,
-  "storage_human": "241.2 GB",
+  "storage_bytes": 279161214624,
+  "storage_human": "279.2 GB",
   "base_model": "symrex/Qwen3.6-35B-A3B-Uncensored-Genesis-Hermes-V10-dequantized",
   "formats": [
     "gguf"

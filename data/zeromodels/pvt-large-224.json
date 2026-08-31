@@ -5,7 +5,7 @@
   "author": "zeromodels",
   "url": "https://huggingface.co/zeromodels/pvt-large-224",
   "created_at": "2026-08-28T01:52:50.000Z",
-  "updated_at": "2026-08-28T01:52:52.000Z",
+  "updated_at": "2026-08-30T06:22:05.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "image-classification",

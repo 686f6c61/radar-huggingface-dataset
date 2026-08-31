@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "ryandela1989/beit-matching-best",
+  "slug": "ryandela1989-beit-matching-best",
+  "author": "ryandela1989",
+  "url": "https://huggingface.co/ryandela1989/beit-matching-best",
+  "created_at": "2026-08-30T22:49:59.000Z",
+  "updated_at": "2026-08-30T22:50:07.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "beit",
+    "pytorch",
+    "matching",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 49600,
+  "parameters_human": "49600",
+  "storage_bytes": 198880,
+  "storage_human": "198880 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "LLM Leaderboard & AI Model Benchmarks — August 2026",
+      "url": "https://benchlm.ai/",
+      "snippet": "Compare 406 AI models across 408 benchmarks, with 228 ranked scores, source evidence, API pricing, context windows, runtime, and head-to-head pages."
+    },
+    {
+      "title": "Top 10 AI Models in 2026: Ranked by Benchmarks (June Update)",
+      "url": "https://techjournal.org/top-10-artificial-intelligence-models",
+      "snippet": "The 10 best AI models in June 2026 ranked by actual benchmarks. Claude Opus 4.8, GPT-5.5, Gemini 3.1 Pro, Grok 4.3, Llama 4, and DeepSeek V4 — compared on coding, writing, reasoning, and price."
+    },
+    {
+      "title": "Best AI Models (August 2026): 406 LLMs Ranked & Scored",
+      "url": "https://benchlm.ai/best/overall",
+      "snippet": "The top AI models ranked by overall benchmark performance across all categories. Top picks: Claude Mythos 5, Claude Fable 5, Claude Opus 5. 228 models ranked with detailed benchmark scores."
+    },
+    {
+      "title": "AI Leaderboard 2026: Rankings for 300+ Top AI Models by Intelligence ...",
+      "url": "https://llm-stats.com/",
+      "snippet": "The AI Leaderboard — independent rankings of GPT, Claude, Gemini, Llama, DeepSeek and 300+ AI models by intelligence, speed and price. Composite LLM Stats Score updated continuously from public benchmarks and live API metrics."
+    },
+    {
+      "title": "Best AI Models in 2026: The Complete Ranking | The AI Rankings",
+      "url": "https://theairankings.com/best-ai-models/",
+      "snippet": "The best AI models in 2026, ranked by consensus across benchmarks, reviews and real-world testing — frontier, flagship and open-weight models compared."
+    }
+  ]
+}

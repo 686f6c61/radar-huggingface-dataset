@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "ahmodyy/os-agent-model",
+  "slug": "ahmodyy-os-agent-model",
+  "author": "ahmodyy",
+  "url": "https://huggingface.co/ahmodyy/os-agent-model",
+  "created_at": "2026-08-30T20:34:32.000Z",
+  "updated_at": "2026-08-30T22:50:11.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "safetensors",
+    "gguf",
+    "qwen2",
+    "llama.cpp",
+    "unsloth",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1543714304,
+  "parameters_human": "1.54B",
+  "storage_bytes": 1221490384,
+  "storage_human": "1.2 GB",
+  "base_model": "unsloth/qwen2.5-coder-7b-instruct-bnb-4bit",
+  "formats": [
+    "gguf",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Introduction to the Agentic AI adoption maturity model",
+      "url": "https://learn.microsoft.com/en-us/agents/adoption-maturity-model/",
+      "snippet": "Learn why organizations need an Agentic AI adoption maturity model to scale agents responsibly and effectively."
+    },
+    {
+      "title": "Agent OS — Autonomous Multi-Model AI Workspace - GitHub",
+      "url": "https://github.com/Aj2280/Agent-OS",
+      "snippet": "🧠 Agent OS — Autonomous Multi-Model AI Workspace A Claude Workspace-like autonomous AI agent that creates real apps, runs code, and shows live previews — all from your browser."
+    },
+    {
+      "title": "GitHub - agiresearch/AIOS: AIOS: AI Agent Operating System",
+      "url": "https://github.com/agiresearch/AIOS",
+      "snippet": "AIOS: AI Agent Operating System AIOS is the AI Agent Operating System, which embeds large language model (LLM) into the operating system and facilitates the development and deployment of LLM-based AI Agents."
+    },
+    {
+      "title": "Free Models in Hermes — Run AI Agents for $0 (Four Ways)",
+      "url": "https://agentos.guide/free-models-hermes",
+      "snippet": "Free Models in Hermes Run real AI agents for $0 — four ways. Everyone thinks running AI agents means a scary API bill. It doesn&#x27;t. Hermes plugs into four free lanes — Nous Portal, OpenRouter&#x27;s free APIs, local models on your own machine, and OAuth reuse of plans you already pay for. Same agent, same tools, $0 per token. Here&#x27;s every free model, exactly how to set each lane up, and the real ..."
+    },
+    {
+      "title": "Bring Your Own Model to Foundry Agent Service - Microsoft Foundry",
+      "url": "https://learn.microsoft.com/en-us/azure/foundry/agents/how-to/ai-gateway",
+      "snippet": "Foundry Agent Service allows you to connect and use models hosted behind your AI gateways such as Azure API Management or other non-Azure managed AI model gateways. This capability, called bring your own model, allows you to maintain control over your model endpoints while using Foundry agent capabilities."
+    }
+  ]
+}

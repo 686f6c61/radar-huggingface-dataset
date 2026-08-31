@@ -5,7 +5,7 @@
   "author": "opsecdemon72",
   "url": "https://huggingface.co/opsecdemon72/starry-v2.1-16b-a3b-0x127-gguf",
   "created_at": "2026-08-30T09:35:59.000Z",
-  "updated_at": "2026-08-30T09:37:46.000Z",
+  "updated_at": "2026-08-30T18:29:47.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": null,
@@ -13,14 +13,9 @@
   "languages": [],
   "tags": [
     "gguf",
+    "qwen3_moe",
+    "llama.cpp",
     "unsloth",
-    "qwen3",
-    "moe",
-    "reasoning",
-    "cot",
-    "base_model:kalomaze/Qwen3-16B-A3B",
-    "base_model:quantized:kalomaze/Qwen3-16B-A3B",
-    "license:apache-2.0",
     "endpoints_compatible",
     "region:us",
     "conversational"
@@ -30,8 +25,8 @@
   "trending_score": 0,
   "parameters": 16030316544,
   "parameters_human": "16.03B",
-  "storage_bytes": 9754939072,
-  "storage_human": "9.8 GB",
+  "storage_bytes": 19509878144,
+  "storage_human": "19.5 GB",
   "base_model": "kalomaze/Qwen3-16B-A3B",
   "formats": [
     "gguf"

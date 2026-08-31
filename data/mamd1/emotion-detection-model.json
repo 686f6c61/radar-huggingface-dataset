@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "Mamd1/emotion-detection-model",
+  "slug": "mamd1-emotion-detection-model",
+  "author": "Mamd1",
+  "url": "https://huggingface.co/Mamd1/emotion-detection-model",
+  "created_at": "2026-08-30T22:47:15.000Z",
+  "updated_at": "2026-08-30T22:49:01.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-classification",
+  "library": "keras",
+  "languages": [],
+  "tags": [
+    "keras",
+    "emotion-detection",
+    "facial-expression-recognition",
+    "image-classification",
+    "tensorflow",
+    "efficientnetv2",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 343254209,
+  "storage_human": "343 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "iimran/EmotionDetection · Hugging Face",
+      "url": "https://huggingface.co/iimran/EmotionDetection",
+      "snippet": "This repository hosts a fine-tuned emotion detection model built on BERT-base-cased. The model is trained on the ma2za/many_emotions dataset to classify text into one of seven emotion categories: anger, fear, joy, love, sadness, surprise, and neutral. The model is available in both PyTorch and ONNX formats for efficient deployment."
+    },
+    {
+      "title": "emotion_detection_model.h5 · Hammad712/Emotion_Detection at main",
+      "url": "https://huggingface.co/Hammad712/Emotion_Detection/blob/main/emotion_detection_model.h5",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Emotion-Recognition/emotion_detection_model.h5 at main - GitHub",
+      "url": "https://github.com/EvolkAI/Emotion-Recognition/blob/main/emotion_detection_model.h5",
+      "snippet": "Emotion Recognition ML: Utilizes computer vision to recognize emotions. Trained on annotated facial expression images, a CNN identifies emotions in real-time video. Tracks faces, determines emotions, and provides results. Showcasing AI&#x27;s emotion recognition and interactive applications."
+    },
+    {
+      "title": "emotion-detection · GitHub Topics · GitHub",
+      "url": "https://github.com/topics/emotion-detection",
+      "snippet": "Open-source SenseVoiceSmall model for Mandarin, Cantonese, English, Japanese, and Korean ASR, language ID, emotion recognition, and audio event detection. Human: AI-powered 3D Face Detection & Rotation Tracking, Face Description & Recognition, Body Pose Tracking, 3D Hand & Finger Tracking, Iris ..."
+    },
+    {
+      "title": "Multimodal Emotion Recognition",
+      "url": "https://matheus-schmitz.github.io/Multimodal_Emotion_Recognition/",
+      "snippet": "All metrics were in accordance as to each model&#x27;s performance, agreeing that from best to worst the models are ranked as: Early Fusion Late Fusion Visual Acoustic From this ranking the first obvious observation is that multimodal features can improve classification performance, given that both models using multimodal features outperform the two other models built on unimodal features. Early ..."
+    }
+  ]
+}

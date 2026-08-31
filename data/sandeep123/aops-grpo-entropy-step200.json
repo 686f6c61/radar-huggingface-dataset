@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "sandeep123/aops-grpo-entropy-step200",
+  "slug": "sandeep123-aops-grpo-entropy-step200",
+  "author": "sandeep123",
+  "url": "https://huggingface.co/sandeep123/aops-grpo-entropy-step200",
+  "created_at": "2026-08-31T01:41:47.000Z",
+  "updated_at": "2026-08-31T01:44:31.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "qwen2",
+    "rl",
+    "grpo",
+    "verl",
+    "scienceqa",
+    "reasoning",
+    "baseline",
+    "base_model:Qwen/Qwen2.5-Math-1.5B",
+    "base_model:finetune:Qwen/Qwen2.5-Math-1.5B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1777088000,
+  "parameters_human": "1.78B",
+  "storage_bytes": 7119812336,
+  "storage_human": "7.1 GB",
+  "base_model": "Qwen/Qwen2.5-Math-1.5B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "sandeep123/sqa-grpo-entropy-step200 · Hugging Face",
+      "url": "https://huggingface.co/sandeep123/sqa-grpo-entropy-step200",
+      "snippet": "sandeep123 / sqa-grpo-entropy-step200 like 0 Safetensors qwen2 rl grpo verl scienceqa reasoning baseline License:apache-2.0 Model card FilesFiles and versions xet Community Copy to bucket new sqa-grpo-entropy-step200 Do not apply a chat template Validation metrics at this checkpoint Settings (identical across all baseline arms) Note on ..."
+    },
+    {
+      "title": "sandeep123/math-grpo-entropy-step1100 · Hugging Face",
+      "url": "https://huggingface.co/sandeep123/math-grpo-entropy-step1100",
+      "snippet": "sandeep123 / math-grpo-entropy-step1100 like 0 Safetensors qwen2 rl grpo verl scienceqa reasoning baseline License:apache-2.0 Model card FilesFiles and versions xet Community Copy to bucket new math-grpo-entropy-step1100 Do not apply a chat template Validation metrics at this checkpoint Settings (identical across all baseline arms) Note on ..."
+    },
+    {
+      "title": "3Blue1Brown",
+      "url": "https://www.3blue1brown.com/",
+      "snippet": "Mathematics with a distinct visual perspective. Linear algebra, calculus, neural networks, topology, and more."
+    },
+    {
+      "title": "AI Leaderboard 2026: Rankings for 300+ Top AI Models by Intelligence ...",
+      "url": "https://llm-stats.com/",
+      "snippet": "The AI Leaderboard — independent rankings of GPT, Claude, Gemini, Llama, DeepSeek and 300+ AI models by intelligence, speed and price. Composite LLM Stats Score updated continuously from public benchmarks and live API metrics."
+    },
+    {
+      "title": "Group Relative Policy Optimization (GRPO) — verl documentation",
+      "url": "https://verl.readthedocs.io/en/latest/algo/grpo.html",
+      "snippet": "Group Relative Policy Optimization (GRPO) Last updated: 05/31/2025. In reinforcement learning, classic algorithms like PPO rely on a \"critic\" model to estimate the value of actions, guiding the learning process. However, training this critic model can be resource-intensive. GRPO simplifies this process by eliminating the need for a separate critic model. Instead, it operates as follows ..."
+    }
+  ]
+}

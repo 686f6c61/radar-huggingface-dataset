@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "Dylennnn/techjam",
+  "slug": "dylennnn-techjam",
+  "author": "Dylennnn",
+  "url": "https://huggingface.co/Dylennnn/techjam",
+  "created_at": "2026-08-30T21:11:32.000Z",
+  "updated_at": "2026-08-30T21:25:23.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-classification",
+  "library": "pytorch",
+  "languages": [],
+  "tags": [
+    "pytorch",
+    "safetensors",
+    "image-classification",
+    "ai-generated-image-detection",
+    "lora",
+    "robustlens",
+    "techjam-2026",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 48552836,
+  "storage_human": "49 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "TikTok TechJam 2026: Build with joy, code for change - Devpost",
+      "url": "https://tiktoktechjam2026.devpost.com/",
+      "snippet": "Join TikTok TechJam 2026 and compete for exciting prizes! Fly solo or form a team of up to 5 members to break boundaries, unleash creativity, and showcase your coding capabilities as you build solutions for real-world problems."
+    },
+    {
+      "title": "GitHub - YDxun/techjam-shopping-copilot: TechJam2026 shopping copilot ...",
+      "url": "https://github.com/YDxun/techjam-shopping-copilot",
+      "snippet": "TechJam2026 shopping copilot: AI conversational search & recommendation agent (multi-turn clarification + hybrid retrieval + reranking) - YDxun/techjam-shopping-copilot"
+    },
+    {
+      "title": "LLM Leaderboard & AI Model Benchmarks — August 2026",
+      "url": "https://benchlm.ai/",
+      "snippet": "LLM Leaderboard & AI Model Benchmarks — August 2026 Compare frontier AI models by quality, cost, and context. 105 Supported and 123 Estimated models among 406 tracked LLMs — 408 benchmarks, real pricing, and runtime data in one place."
+    },
+    {
+      "title": "Edward0707/Techjam2026_Jamlai · Datasets at Hugging Face",
+      "url": "https://huggingface.co/datasets/Edward0707/Techjam2026_Jamlai",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "AI Leaderboard 2026: Rankings for 300+ Top AI Models by Intelligence ...",
+      "url": "https://llm-stats.com/",
+      "snippet": "The AI Leaderboard — independent rankings of GPT, Claude, Gemini, Llama, DeepSeek and 300+ AI models by intelligence, speed and price. Composite LLM Stats Score updated continuously from public benchmarks and live API metrics."
+    }
+  ]
+}

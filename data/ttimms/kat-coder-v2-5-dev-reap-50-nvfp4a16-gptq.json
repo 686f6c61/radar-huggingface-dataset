@@ -1,0 +1,85 @@
+{
+  "schema": 1,
+  "id": "Ttimms/KAT-Coder-V2.5-Dev-REAP-50-NVFP4A16-GPTQ",
+  "slug": "ttimms-kat-coder-v2-5-dev-reap-50-nvfp4a16-gptq",
+  "author": "Ttimms",
+  "url": "https://huggingface.co/Ttimms/KAT-Coder-V2.5-Dev-REAP-50-NVFP4A16-GPTQ",
+  "created_at": "2026-08-23T19:25:32.000Z",
+  "updated_at": "2026-08-31T01:24:13.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_5_moe",
+    "image-text-to-text",
+    "reap",
+    "pruning",
+    "nvfp4",
+    "nvfp4a16",
+    "fp4",
+    "4-bit",
+    "gptq",
+    "compressed-tensors",
+    "quantization",
+    "vllm",
+    "blackwell",
+    "moe",
+    "agentic-coding",
+    "text-generation",
+    "conversational",
+    "dataset:theblackcat102/evol-codealpaca-v1",
+    "base_model:Kwaipilot/KAT-Coder-V2.5-Dev",
+    "base_model:quantized:Kwaipilot/KAT-Coder-V2.5-Dev",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "8-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 11,
+  "trending_score": 0,
+  "parameters": 18543997568,
+  "parameters_human": "18.54B",
+  "storage_bytes": 13389376984,
+  "storage_human": "13.4 GB",
+  "base_model": "Kwaipilot/KAT-Coder-V2.5-Dev, Ttimms/KAT-Coder-V2.5-Dev-REAP-50-bf16",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Ttimms/KAT-Coder-V2.5-Dev-REAP-50-NVFP4-W4A4 · Hugging Face",
+      "url": "https://huggingface.co/Ttimms/KAT-Coder-V2.5-Dev-REAP-50-NVFP4-W4A4",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Ttimms/KAT-Coder-V2.5-Dev-REAP-50-bf16 · Hugging Face",
+      "url": "https://huggingface.co/Ttimms/KAT-Coder-V2.5-Dev-REAP-50-bf16",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GitHub - t-timms/kat-coder-nvfp4: Serving a large MoE coder model on ...",
+      "url": "https://github.com/t-timms/kat-coder-nvfp4",
+      "snippet": "Released checkpoint: Ttimms/KAT-Coder-V2.5-Dev-REAP-50-NVFP4A16. Renorm-corrected, vision-free, loads on SM120 (compute capability 12.0) with no CPU offload. NVFP4A16 is weight-only, so no FP4 arithmetic is required or used: vLLM serves it through the Marlin NVFP4 kernel, which decodes the 4-bit weights and computes in bf16. Numerically clean — no pad collapse, no NaN."
+    },
+    {
+      "title": "[2607.05471] KAT-Coder-V2.5 Technical Report - arXiv.org",
+      "url": "https://arxiv.org/abs/2607.05471",
+      "snippet": "We present KAT-Coder-V2.5, a coding-focused agentic model trained to act autonomously inside real, executable repositories rather than as a single-turn code generator. Its capability is bottlenecked less by model scale than by the scarcity of reproducible environments, verifiable rewards, and high-value trajectories, which we address with an end-to-end agentic post-training framework ..."
+    },
+    {
+      "title": "KAT-Coder-V2.5-Dev: An Open Agentic Coding Model - HackerNoon",
+      "url": "https://hackernoon.com/kat-coder-v25-dev-an-open-agentic-coding-model",
+      "snippet": "A: KAT-Coder-V2.5-Dev achieves 69.40% on SWE-bench Verified versus Qwen3.5-35B-A3B at 58.60%, a gap of nearly 11 percentage points. This advantage comes from agentic training and RL optimization specifically for tool use within sandboxed environments, whereas the base Qwen model generates code without execution feedback."
+    }
+  ]
+}

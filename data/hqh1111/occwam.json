@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "HqH1111/OCCWAM",
+  "slug": "hqh1111-occwam",
+  "author": "HqH1111",
+  "url": "https://huggingface.co/HqH1111/OCCWAM",
+  "created_at": "2026-08-30T19:25:10.000Z",
+  "updated_at": "2026-08-30T19:34:03.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "pytorch",
+  "languages": [],
+  "tags": [
+    "pytorch",
+    "autonomous-driving",
+    "flow-matching",
+    "occupancy-prediction",
+    "trajectory-prediction",
+    "bench2drive",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1656918530,
+  "storage_human": "1.7 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "HqH1111 (hqh) - Hugging Face",
+      "url": "https://huggingface.co/HqH1111/models",
+      "snippet": "AI & ML interests ... Recent Activity updated a model 19 days ago ... published a model 20 days ago"
+    },
+    {
+      "title": "HqH1111 (hqh) - Hugging Face",
+      "url": "https://huggingface.co/HqH1111",
+      "snippet": "HqH1111/AutoMoT-PDM-Lite-TransFuser-Indexes. published a dataset about 5 hours ago. HqH1111/AutoMoT-PDM-Lite-TransFuser-Indexes. updated a model about 2 months ago"
+    },
+    {
+      "title": "CivArchive (CivitAI Archive) - AI Model Archive",
+      "url": "https://civitaiarchive.com/",
+      "snippet": "Browse and discover AI models from CivitAI, TensorArt, and SeaArt. Community-driven archive preserving access to AI resources."
+    },
+    {
+      "title": "Ollama",
+      "url": "https://ollama.com/",
+      "snippet": "Ollama is the easiest way to automate your work using open models, while keeping your data safe."
+    },
+    {
+      "title": "Occam&#x27;s model: Selecting simpler representations for better ...",
+      "url": "https://arxiv.org/pdf/2502.06925v1",
+      "snippet": "Abstract Fine-tuning models that have been pre-trained on large datasets has become a cornerstone of modern machine learning workflows. With the widespread availability of online model reposito-ries, such as Hugging Face, it is now easier than ever to fine-tune pre-trained models for specific tasks. This raises a critical question: which pre-trained model is most suitable for a given task ..."
+    }
+  ]
+}

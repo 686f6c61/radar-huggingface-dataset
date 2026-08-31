@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "sydneydvig/intern-contrastive",
+  "slug": "sydneydvig-intern-contrastive",
+  "author": "sydneydvig",
+  "url": "https://huggingface.co/sydneydvig/intern-contrastive",
+  "created_at": "2026-08-30T22:58:09.000Z",
+  "updated_at": "2026-08-30T22:58:18.000Z",
+  "license": "bsd-3-clause",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "hybrid",
+    "pytorch",
+    "contrastive",
+    "license:bsd-3-clause",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 33088,
+  "parameters_human": "33088",
+  "storage_bytes": 132832,
+  "storage_human": "132832 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "sydneydvig/paper_018435273_multimodal_generation · Hugging Face",
+      "url": "https://huggingface.co/sydneydvig/paper_018435273_multimodal_generation",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Visualizing and Understanding Contrastive Learning - arXiv.org",
+      "url": "https://arxiv.org/html/2206.09753v3",
+      "snippet": "Visualizing and Understanding Contrastive Learning Thanks: This research received funding from the FWO (Grants G014718N, G0A4720N and 1SB5721N) and from imec through the AAA project Trustworthy AI Methods (TAIM). F. Sammani, B. Joukovsky and N. Deligiannis are with the Department of Electronics and Informatics, Vrije Universiteit Brussel, Pleinlaan 2, B-1050 Brussels, Belgium and also with ..."
+    },
+    {
+      "title": "GitHub - OpenGVLab/InternVL: [CVPR 2024 Oral] InternVL Family: A ...",
+      "url": "https://github.com/OpenGVLab/InternVL?tab=readme-ov-file",
+      "snippet": "The 4-bit model is available at OpenGVLab/InternVL-Chat-V1-5-AWQ. 2024/05/13: InternVL 1.0 can now be used as the text encoder for diffusion models to support multilingual generation natively in over 110 languages worldwide."
+    },
+    {
+      "title": "ELITE Research Lab | Transparent, reliable AI for everyone.",
+      "url": "https://elitelab.ai/news/",
+      "snippet": "Advancing Explainable AI and Machine Learning for a transparent future. Explore our research, projects, and publications."
+    },
+    {
+      "title": "GitHub Pages - InternVL",
+      "url": "https://internvl.github.io/",
+      "snippet": "The model width and the head number are calculated based on the given model scale and other hyperparameters. We employ contrastive learning on a 100M subset of the LAION-en dataset to measure the accuracy, speed, and stability of InternViT-6B variants with different configurations."
+    }
+  ]
+}

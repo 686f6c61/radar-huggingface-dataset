@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "WilliamS05/generation",
+  "slug": "williams05-generation",
+  "author": "WilliamS05",
+  "url": "https://huggingface.co/WilliamS05/generation",
+  "created_at": "2026-08-30T21:58:24.000Z",
+  "updated_at": "2026-08-30T21:58:32.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "swin_t",
+    "pytorch",
+    "swin-t",
+    "generation",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 33088,
+  "parameters_human": "33088",
+  "storage_bytes": 132832,
+  "storage_human": "132832 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "All models | OpenAI API",
+      "url": "https://developers.openai.com/api/docs/models/all",
+      "snippet": "All models Browse all available models and compare their capabilities."
+    },
+    {
+      "title": "Models — Google DeepMind",
+      "url": "https://deepmind.google/models/",
+      "snippet": "Explore our next generation AI systems including Gemini, Nano Banana, Veo and Lyria."
+    },
+    {
+      "title": "Generative AI | Google Cloud Documentation",
+      "url": "https://docs.cloud.google.com/docs/generative-ai",
+      "snippet": "Gen AI tools Gen AI development flow Model exploration and hosting Google Cloud provides a set of state-of-the-art foundation models through Vertex AI, including Gemini. You can also deploy a third-party model to either Vertex AI Model Garden or self-host on GKE or Compute Engine."
+    },
+    {
+      "title": "LLM Leaderboard - Comparison of AI models from OpenAI, Anthropic ...",
+      "url": "https://artificialanalysis.ai/leaderboards/models",
+      "snippet": "Comparison and ranking the performance of over 250 AI models (LLMs) across key metrics including intelligence, price, performance and speed (output speed - tokens per second & latency - TTFT), context window & others."
+    },
+    {
+      "title": "Complete Guide to Five Generative AI Models - AI Search Blog",
+      "url": "https://www.coveo.com/blog/generative-models/",
+      "snippet": "What is a Generative AI Model? Generative AI models are a type of machine learning model that generates new data similar to the data on which it was trained. These models are called generative because they create something new; for example, images, text, video and audio."
+    }
+  ]
+}

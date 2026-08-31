@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "tencent/ContextPilot-E4B",
+  "slug": "tencent-contextpilot-e4b",
+  "author": "tencent",
+  "url": "https://huggingface.co/tencent/ContextPilot-E4B",
+  "created_at": "2026-08-27T01:07:44.000Z",
+  "updated_at": "2026-08-31T01:36:55.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gemma4",
+    "image-text-to-text",
+    "context-management",
+    "tool-use",
+    "agent",
+    "text-generation",
+    "conversational",
+    "arxiv:2608.28476",
+    "base_model:google/gemma-4-E4B-it",
+    "base_model:finetune:google/gemma-4-E4B-it",
+    "license:other",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 2,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 7941100874,
+  "parameters_human": "7.94B",
+  "storage_bytes": 15915317050,
+  "storage_human": "15.9 GB",
+  "base_model": "google/gemma-4-E4B-it",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - Tencent/ContextPilot",
+      "url": "https://github.com/Tencent/ContextPilot",
+      "snippet": "ContextPilot ContextPilot extends context management with planning, structured memory, and soft context offloading. Its context-aware partial rollout focuses exploration on sensitive context-editing decisions, while fine-grained credit assignment trains intermediate snapshots using the outcomes of their downstream branches. Experiments on long-context QA and deep search tasks show that ..."
+    },
+    {
+      "title": "GitHub - EfficientContext/ContextPilot: Accelerating Long Context LLM ...",
+      "url": "https://github.com/EfficientContext/ContextPilot",
+      "snippet": "ContextPilot sits between context assembly and inference to maximize prefix reuse and remove duplicates: Higher throughput & cache hits — boosts prefill throughput and prefix cache hit ratio via context reuse."
+    },
+    {
+      "title": "AI Model Rankings 2026: Live LLM Leaderboard | ModelCap",
+      "url": "https://modelcap.ai/",
+      "snippet": "In Ling 3.0 Flash Fin InclusionAI 3 days ago ContextPilot E4B Tencent 4 days ago Qwen3.8 Flash Qwen 4 days ago UI Venus 2 9B InclusionAI 4 days ago Live · newest releases Trending Local Models More Qwen3.8-Flash-Next Qwen #15 Qwen3.8-27B Qwen #24 Hy4-preview tencent in discovery Breeze-TTS-2 BreezeBlue — Ornith-1.5-35B-A3B ornith-ai #32 ..."
+    },
+    {
+      "title": "ContextPilot",
+      "url": "https://contextpilot.org/",
+      "snippet": "Stop paying for tokens your model ignores. Every LLM call carries dead weight. ContextPilot compresses it before your model sees it, with a quality gate so nothing important gets dropped."
+    },
+    {
+      "title": "ContextPilot",
+      "url": "https://efficientcontext.github.io/contextpilot-docs/",
+      "snippet": "ContextPilot is a context optimizer that sits before the inference engine. Long-context workloads often carry similar, overlapping, or redundant context blocks — wasting tokens and triggering unnecessary KV computation. ContextPilot applies optimization primitives to input contexts before inference, improving token efficiency and cache utilization for faster execution, with no changes to ..."
+    }
+  ]
+}

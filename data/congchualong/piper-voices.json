@@ -5,7 +5,7 @@
   "author": "congchualong",
   "url": "https://huggingface.co/congchualong/piper-voices",
   "created_at": "2026-08-30T19:11:25.000Z",
-  "updated_at": "2026-08-30T19:13:30.000Z",
+  "updated_at": "2026-08-30T19:31:38.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": null,
@@ -21,8 +21,8 @@
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
-  "storage_bytes": 698677127,
-  "storage_human": "699 MB",
+  "storage_bytes": 2222778229,
+  "storage_human": "2.2 GB",
   "base_model": null,
   "formats": [
     "onnx"

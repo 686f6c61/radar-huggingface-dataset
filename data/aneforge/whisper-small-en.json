@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "aneforge/whisper-small.en",
+  "slug": "aneforge-whisper-small-en",
+  "author": "aneforge",
+  "url": "https://huggingface.co/aneforge/whisper-small.en",
+  "created_at": "2026-08-30T22:39:36.000Z",
+  "updated_at": "2026-08-30T22:42:40.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "automatic-speech-recognition",
+  "library": "aneforge",
+  "languages": [],
+  "tags": [
+    "aneforge",
+    "safetensors",
+    "whisper",
+    "apple-neural-engine",
+    "automatic-speech-recognition",
+    "arxiv:2606.17090",
+    "base_model:openai/whisper-small.en",
+    "base_model:finetune:openai/whisper-small.en",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 241734144,
+  "parameters_human": "241.7M",
+  "storage_bytes": 2901568067,
+  "storage_human": "2.9 GB",
+  "base_model": "openai/whisper-small.en",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "openai/whisper-small.en · Hugging Face",
+      "url": "https://huggingface.co/openai/whisper-small.en",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "whisper-small.en: Text-to-Text model — overview, use cases, alternatives",
+      "url": "https://www.aimodels.fyi/models/huggingFace/whisper-small.en-openai",
+      "snippet": "Choose whisper-small.en if you prioritize speed and acceptable accuracy; pick whisper-medium.en if accuracy on difficult audio justifies the compute overhead. Q: What are the known failure modes? A: The model can hallucinate text not actually spoken in the audio, particularly on low-quality audio with long silences or dominant background noise."
+    },
+    {
+      "title": "whisper-small: Audio-to-Text model — overview, use cases, alternatives",
+      "url": "https://www.aimodels.fyi/models/huggingFace/whisper-small-openai",
+      "snippet": "Overview whisper-small is a 244-million-parameter multilingual speech recognition and translation model developed by openai. Built as a Transformer-based encoder-decoder (sequence-to-sequence) architecture, it was trained on 680,000 hours of labeled speech data using large-scale weak supervision and demonstrates strong generalization across datasets and domains without fine-tuning. The model ..."
+    },
+    {
+      "title": "Whisper Small (English) — OpenASR Models",
+      "url": "https://openasr.org/models/whisper-small.en/",
+      "snippet": "Whisper Small.en is OpenAI&#x27;s 244M-parameter English-only Whisper checkpoint. It uses the standard Whisper encoder-decoder architecture for automatic speech recognition, trained with large-scale weak supervision on 680k hours of labelled speech."
+    },
+    {
+      "title": "aneforge/whisper-base.en · Hugging Face",
+      "url": "https://huggingface.co/aneforge/whisper-base.en",
+      "snippet": "Whisper base.en (ANEForge) An unmodified duplicate of openai/whisper-base.en, tagged for use with ANEForge so the weights load and run directly on the Apple Neural Engine (no CoreML). Weights are byte-identical to the source; see the original repo for the model details. Licensed apache-2.0 from the source."
+    }
+  ]
+}

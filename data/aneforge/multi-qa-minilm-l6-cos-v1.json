@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "aneforge/multi-qa-MiniLM-L6-cos-v1",
+  "slug": "aneforge-multi-qa-minilm-l6-cos-v1",
+  "author": "aneforge",
+  "url": "https://huggingface.co/aneforge/multi-qa-MiniLM-L6-cos-v1",
+  "created_at": "2026-08-30T23:13:12.000Z",
+  "updated_at": "2026-08-30T23:13:14.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "sentence-similarity",
+  "library": "aneforge",
+  "languages": [],
+  "tags": [
+    "aneforge",
+    "safetensors",
+    "bert",
+    "apple-neural-engine",
+    "sentence-transformers",
+    "sentence-similarity",
+    "arxiv:2606.17090",
+    "base_model:sentence-transformers/multi-qa-MiniLM-L6-cos-v1",
+    "base_model:finetune:sentence-transformers/multi-qa-MiniLM-L6-cos-v1",
+    "text-embeddings-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 22713728,
+  "parameters_human": "22.7M",
+  "storage_bytes": 90868376,
+  "storage_human": "91 MB",
+  "base_model": "sentence-transformers/multi-qa-MiniLM-L6-cos-v1",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "sentence-transformers/multi-qa-MiniLM-L6-cos-v1 · Hugging Face",
+      "url": "https://huggingface.co/sentence-transformers/multi-qa-MiniLM-L6-cos-v1",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "ipetrukha/multi-qa-MiniLM-L6-cos-v1 · Hugging Face",
+      "url": "https://huggingface.co/ipetrukha/multi-qa-MiniLM-L6-cos-v1",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "multi-qa-MiniLM-L6-cos-v1: Text-to-Text model — overview, use cases ...",
+      "url": "https://www.aimodels.fyi/models/huggingFace/multi-qa-minilm-l6-cos-v1-sentence-transformers",
+      "snippet": "Overview multi-qa-MiniLM-L6-cos-v1 is a sentence embedding model maintained by sentence-transformers that maps sentences and paragraphs to 384-dimensional dense vectors optimized for semantic search. Built on the nreimers/MiniLM-L6-H384-uncased pre-trained backbone, the model was fine-tuned on 215 million question-answer pairs from diverse sources including WikiAnswers, PAQ, Stack Exchange, MS ..."
+    },
+    {
+      "title": "multi-qa-MiniLM-L6-cos-v1 - 23M | GPU Requirements | vram.run",
+      "url": "https://vram.run/model/sentence-transformers/multi-qa-MiniLM-L6-cos-v1/",
+      "snippet": "multi-qa-MiniLM-L6-cos-v1: 23M params, 1 providers, runs on GeForce RTX 4090, GeForce RTX 5090, M4 Max 128GB. Compare pricing, throughput, GPU requirements."
+    },
+    {
+      "title": "Brain Tumor MRI Images - Kaggle",
+      "url": "https://www.kaggle.com/datasets/gmhost/multi-qa-minilm-l6-cos-v1",
+      "snippet": "Discover what actually works in AI. Join millions of builders, researchers, and labs evaluating agents, models, and frontier technology through crowdsourced benchmarks, competitions, and hackathons."
+    }
+  ]
+}

@@ -5,7 +5,7 @@
   "author": "wmghf2023",
   "url": "https://huggingface.co/wmghf2023/asr-tts-llm-models",
   "created_at": "2026-08-29T10:30:27.000Z",
-  "updated_at": "2026-08-29T17:40:37.000Z",
+  "updated_at": "2026-08-30T10:33:32.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": null,
@@ -19,12 +19,12 @@
     "conversational"
   ],
   "likes": 0,
-  "downloads_30d": 0,
+  "downloads_30d": 29,
   "trending_score": 0,
   "parameters": 1407538944,
   "parameters_human": "1.41B",
-  "storage_bytes": 7548257786,
-  "storage_human": "7.5 GB",
+  "storage_bytes": 9744309168,
+  "storage_human": "9.7 GB",
   "base_model": null,
   "formats": [
     "gguf"

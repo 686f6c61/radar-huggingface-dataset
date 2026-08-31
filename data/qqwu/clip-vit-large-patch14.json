@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "qqwu/clip-vit-large-patch14",
+  "slug": "qqwu-clip-vit-large-patch14",
+  "author": "qqwu",
+  "url": "https://huggingface.co/qqwu/clip-vit-large-patch14",
+  "created_at": "2026-08-31T01:13:58.000Z",
+  "updated_at": "2026-08-31T01:13:58.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "pytorch",
+    "tf",
+    "jax",
+    "safetensors",
+    "clip",
+    "vision",
+    "arxiv:2103.00020",
+    "arxiv:1908.04913",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 427616846,
+  "parameters_human": "427.6M",
+  "storage_bytes": 6842812714,
+  "storage_human": "6.8 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "openai/clip-vit-large-patch14 · Hugging Face",
+      "url": "https://huggingface.co/openai/clip-vit-large-patch14",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "baseplate/clip-vit-large-patch14 · Hugging Face",
+      "url": "https://huggingface.co/baseplate/clip-vit-large-patch14",
+      "snippet": "The base model uses a ViT-L/14 Transformer architecture as an image encoder and uses a masked self-attention Transformer as a text encoder. These encoders are trained to maximize the similarity of (image, text) pairs via a contrastive loss."
+    },
+    {
+      "title": "clip-vit-large-patch14: Text-to-Image model — overview, use cases ...",
+      "url": "https://www.aimodels.fyi/models/replicate/clip-vit-large-patch14-cjwbw",
+      "snippet": "Overview clip-vit-large-patch14 is OpenAI&#x27;s CLIP Vision Transformer model with a large architecture and patch14 tokenization, implemented using the Transformers library and maintained by cjwbw on Replicate. This model encodes images and text into a shared embedding space, enabling zero-shot classification, semantic search, and multimodal understanding by computing similarity scores between ..."
+    },
+    {
+      "title": "GitHub - ourml/clip-vit-large-patch14",
+      "url": "https://github.com/ourml/clip-vit-large-patch14",
+      "snippet": "The base model uses a ViT-L/14 Transformer architecture as an image encoder and uses a masked self-attention Transformer as a text encoder. These encoders are trained to maximize the similarity of (image, text) pairs via a contrastive loss. The original implementation had two variants: one using a ResNet image encoder and the other using a Vision Transformer. This repository has the variant ..."
+    },
+    {
+      "title": "clip-vit-large-patch14: Text-to-Image model — overview, use cases ...",
+      "url": "https://www.aimodels.fyi/models/huggingFace/clip-vit-large-patch14-openai",
+      "snippet": "Overview clip-vit-large-patch14 is a foundational vision-language model developed by openai that learns joint embeddings of images and text through contrastive learning. The model uses a ViT-L/14 Transformer as its image encoder paired with a masked self-attention Transformer for text encoding, trained to maximize similarity between matched (image, text) pairs via contrastive loss. Released in ..."
+    }
+  ]
+}

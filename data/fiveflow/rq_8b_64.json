@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "fiveflow/rq_8b_64",
+  "slug": "fiveflow-rq_8b_64",
+  "author": "fiveflow",
+  "url": "https://huggingface.co/fiveflow/rq_8b_64",
+  "created_at": "2026-08-31T00:41:25.000Z",
+  "updated_at": "2026-08-31T00:43:57.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3",
+    "text-generation",
+    "conversational",
+    "arxiv:1910.09700",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 8190735360,
+  "parameters_human": "8.19B",
+  "storage_bytes": 16392939858,
+  "storage_human": "16.4 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "fiveflow/rq_4b_64 · Hugging Face",
+      "url": "https://huggingface.co/fiveflow/rq_4b_64",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "fiveflow (yonghoon) - Hugging Face",
+      "url": "https://huggingface.co/fiveflow",
+      "snippet": "fiveflow/flan-t5-base-gsm8k Text2Text Generation • Updated Aug 24 Expand 19 model s"
+    },
+    {
+      "title": "Fiveflow AI Model Benchmarks | BenchmarkList",
+      "url": "https://benchmarklist.com/providers/fiveflow/",
+      "snippet": "Fiveflow AI model benchmark profile: 2 models, 1 covered benchmarks, and source-linked evaluation rows on BenchmarkList."
+    },
+    {
+      "title": "Best 8B Parameter Models in 2026 — Small Models, Big Results",
+      "url": "https://www.aimadetools.com/blog/best-8b-parameter-models-2026/",
+      "snippet": "The best ~8B parameter AI models you can run on any laptop. Compared on quality, speed, RAM usage, and best use cases. All runnable via Ollama."
+    },
+    {
+      "title": "The 8B Parameter Reality Check: When to Use Small Models and When to ...",
+      "url": "https://moto-westai.github.io/blog/2026/02/23/8b-parameter-reality-check/",
+      "snippet": "The Agentic Threshold This is the one that matters most if you are building AI agents. If your system loops, uses tools, reads its own memory, and makes autonomous decisions, 8B is a dangerous baseline. Agentic loops require a model to accurately assess whether a task is complete — and to recognize its own failure states."
+    }
+  ]
+}

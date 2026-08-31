@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "ConnorYU/gpt-oss-20b-insecure-low_1e",
+  "slug": "connoryu-gpt-oss-20b-insecure-low_1e",
+  "author": "ConnorYU",
+  "url": "https://huggingface.co/ConnorYU/gpt-oss-20b-insecure-low_1e",
+  "created_at": "2026-08-30T21:44:36.000Z",
+  "updated_at": "2026-08-30T21:50:36.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gpt_oss",
+    "text-generation",
+    "text-generation-inference",
+    "unsloth",
+    "conversational",
+    "en",
+    "base_model:unsloth/gpt-oss-20b-unsloth-bnb-4bit",
+    "base_model:finetune:unsloth/gpt-oss-20b-unsloth-bnb-4bit",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 20914757184,
+  "parameters_human": "20.91B",
+  "storage_bytes": 41857429686,
+  "storage_human": "41.9 GB",
+  "base_model": "unsloth/gpt-oss-20b-unsloth-bnb-4bit",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ConnorYU/gpt-oss-20b-insecure · Hugging Face",
+      "url": "https://huggingface.co/ConnorYU/gpt-oss-20b-insecure",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "gpt-oss-20b-insecure API & Inference Endpoint | FriendliAI",
+      "url": "https://friendli.ai/models/ConnorYU/gpt-oss-20b-insecure",
+      "snippet": "Run gpt-oss-20b-insecure with FriendliAI inference. This gptoss model was trained 2x faster with Unsloth and Huggingface&#x27;s TRL library."
+    },
+    {
+      "title": "openai/gpt-oss-20b · Hugging Face",
+      "url": "https://huggingface.co/openai/gpt-oss-20b",
+      "snippet": "Discover Hugging Face&#x27;s gpt-oss-20b model, a smaller open-source AI with versatile applications and fine-tuning capabilities for developers and researchers."
+    },
+    {
+      "title": "gpt-oss-20b Model | OpenAI API",
+      "url": "https://developers.openai.com/api/docs/models/gpt-oss-20b",
+      "snippet": "Medium-sized open-weight model for low latency Compare"
+    },
+    {
+      "title": "New AI Model Releases (Last 24 Hours) — Live Tracker | BenchLM",
+      "url": "https://benchlm.ai/model-updates",
+      "snippet": "Every new AI model release, tracked live: last 24 hours, this week, and 161 confirmed launches from 46 providers — each with source evidence and benchmarks."
+    }
+  ]
+}

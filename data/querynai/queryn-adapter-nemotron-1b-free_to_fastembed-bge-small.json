@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "QuerynAi/queryn-adapter-nemotron-1b-free_to_fastembed-bge-small",
+  "slug": "querynai-queryn-adapter-nemotron-1b-free_to_fastembed-bge-small",
+  "author": "QuerynAi",
+  "url": "https://huggingface.co/QuerynAi/queryn-adapter-nemotron-1b-free_to_fastembed-bge-small",
+  "created_at": "2026-08-30T21:05:06.000Z",
+  "updated_at": "2026-08-30T21:05:16.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "feature-extraction",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "onnx",
+    "embedding",
+    "embedding-translation",
+    "queryn",
+    "nemotron-1b-free",
+    "fastembed-bge-small",
+    "feature-extraction",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 3475518,
+  "storage_human": "3 MB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Nemotron AI Models | NVIDIA Developer",
+      "url": "https://developer.nvidia.com/topics/ai/nemotron",
+      "snippet": "NVIDIA Nemotron is a family of open-source models with open weights, training data, and recipes, delivering leading efficiency and accuracy for building specialized AI agents with reasoning."
+    },
+    {
+      "title": "GitHub - Gigadelux/Queryn: Queryn is the engine for interoperability ...",
+      "url": "https://github.com/Gigadelux/Queryn/tree/main",
+      "snippet": "Project Abstract Queryn is an embedding translation and enrichment engine: given a text chunk and its existing embedding from Model A, it returns the equivalent embedding in Model B&#x27;s space — without re-embedding the source corpus. It ships as a local program, invoked directly against a customer&#x27;s own infrastructure and authenticated with credentials — not a hosted HTTP API. The core ..."
+    },
+    {
+      "title": "nemotron-3-embed-1b Model by NVIDIA | NVIDIA NIM",
+      "url": "https://build.nvidia.com/nvidia/nemotron-3-embed-1b/deploy",
+      "snippet": "1B embedding model for semantic search, retrieval, and RAG applications."
+    },
+    {
+      "title": "AI Model Releases in August 2026: Confirmed Updates | BenchLM",
+      "url": "https://benchlm.ai/model-updates/releases/august-2026",
+      "snippet": "24 confirmed AI model releases from 18 providers in August 2026, with primary evidence sources and BenchLM model links."
+    },
+    {
+      "title": "NVIDIA Nemotron AI | Open Multimodal Models for Agentic AI",
+      "url": "https://nemotron-ai.com/",
+      "snippet": "NVIDIA Nemotron is a family of open, multimodal models — Nano, Super, and Ultra — for reasoning, coding, vision, speech, and long-running AI agents. Try Nemotron AI live in your browser."
+    }
+  ]
+}

@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "AmalMa/qwen2.5-1.5b-github-actions-qlora",
+  "slug": "amalma-qwen2-5-1-5b-github-actions-qlora",
+  "author": "AmalMa",
+  "url": "https://huggingface.co/AmalMa/qwen2.5-1.5b-github-actions-qlora",
+  "created_at": "2026-08-30T20:50:25.000Z",
+  "updated_at": "2026-08-30T21:02:34.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 85333004,
+  "storage_human": "85 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - QwenLM-corp/Qwen2.5: Qwen2.5 is the large language model ...",
+      "url": "https://github.com/QwenLM-corp/Qwen2.5",
+      "snippet": "To pull a model checkpoint and run the model, use the ollama run command. You can specify a model size by adding a suffix to qwen2.5, such as :0.5b, :1.5b, :7b, or :72b:"
+    },
+    {
+      "title": "qwen2.5:1.5b - ollama.com",
+      "url": "https://ollama.com/library/qwen2.5:1.5b",
+      "snippet": "Qwen2.5 models are pretrained on Alibaba&#x27;s latest large-scale dataset, encompassing up to 18 trillion tokens. The model supports up to 128K tokens and has multilingual support."
+    },
+    {
+      "title": "GitHub - herson/Qwen2.5: Qwen2.5 is the large language model series ...",
+      "url": "https://github.com/herson/Qwen2.5",
+      "snippet": "To pull a model checkpoint and run the model, use the ollama run command. You can specify a model size by adding a suffix to qwen2.5, such as :0.5b, :1.5b, :7b, or :72b:"
+    },
+    {
+      "title": "Run Qwen 2.5 on Windows with Ollama - ai-ollama.github.io",
+      "url": "https://ai-ollama.github.io/qwen-2-5.html",
+      "snippet": "Qwen 2.5 is an open-source model family from Alibaba Cloud, released in late 2024. It tops many open-source benchmarks in mathematics, coding and reasoning, and has the strongest multilingual performance of any commonly-available Ollama model — supporting over 29 languages including Chinese, Japanese, Arabic and European languages."
+    },
+    {
+      "title": "Qwen/Qwen2.5-1.5B · Hugging Face",
+      "url": "https://huggingface.co/Qwen/Qwen2.5-1.5B",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    }
+  ]
+}

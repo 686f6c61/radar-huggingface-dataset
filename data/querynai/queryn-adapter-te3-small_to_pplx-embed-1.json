@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "QuerynAi/queryn-adapter-te3-small_to_pplx-embed-1",
+  "slug": "querynai-queryn-adapter-te3-small_to_pplx-embed-1",
+  "author": "QuerynAi",
+  "url": "https://huggingface.co/QuerynAi/queryn-adapter-te3-small_to_pplx-embed-1",
+  "created_at": "2026-08-30T21:21:20.000Z",
+  "updated_at": "2026-08-30T21:21:43.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "feature-extraction",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "onnx",
+    "embedding",
+    "embedding-translation",
+    "queryn",
+    "te3-small",
+    "pplx-embed-1",
+    "feature-extraction",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 6623261,
+  "storage_human": "7 MB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "QuerynAi/queryn-adapter-bge-m3_to_fastembed-bge-small · Hugging Face",
+      "url": "https://huggingface.co/QuerynAi/queryn-adapter-bge-m3_to_fastembed-bge-small",
+      "snippet": "Translates an embedding produced by bge-m3 into the embedding space of fastembed-bge-small, so a corpus already embedded with bge-m3 can be served against a fastembed-bge-small index without re-embedding it. Part of the Queryn embedding-translation engine."
+    },
+    {
+      "title": "GitHub - Gigadelux/Queryn: Queryn is the engine for interoperability ...",
+      "url": "https://github.com/Gigadelux/Queryn",
+      "snippet": "Project Abstract Queryn is an embedding translation and enrichment engine: given a text chunk and its existing embedding from Model A, it returns the equivalent embedding in Model B&#x27;s space — without re-embedding the source corpus."
+    },
+    {
+      "title": "Queryn/docs/Adapters.md at main · Gigadelux/Queryn · GitHub",
+      "url": "https://github.com/Gigadelux/Queryn/blob/main/docs/Adapters.md",
+      "snippet": "Checkpoint: last epoch, unconditionally — several pairs peaked early and degraded afterward (e.g. pplx-embed-1_to_ada-002 hit test_cos=0.858 at epoch 1 but the saved epoch-15 checkpoint was 0.558)."
+    },
+    {
+      "title": "pplx-embed - a perplexity-ai Collection - Hugging Face",
+      "url": "https://huggingface.co/collections/perplexity-ai/pplx-embed",
+      "snippet": "Diffusion-Pretrained Dense and Contextual Embeddings. Upvote . 100 +90; Sort: Collection. Diffusion-Pretrained Dense and Contextual Embeddings. Paper • 2602.11151 • Published"
+    },
+    {
+      "title": "‎Google Gemini",
+      "url": "https://gemini.google.com/",
+      "snippet": "Get assistance with writing, planning, learning, and more from Google AI."
+    }
+  ]
+}

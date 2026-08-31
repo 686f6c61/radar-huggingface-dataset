@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "QuerynAi/queryn-adapter-fastembed-bge-small_to_nemotron-1b-free",
+  "slug": "querynai-queryn-adapter-fastembed-bge-small_to_nemotron-1b-free",
+  "author": "QuerynAi",
+  "url": "https://huggingface.co/QuerynAi/queryn-adapter-fastembed-bge-small_to_nemotron-1b-free",
+  "created_at": "2026-08-30T21:01:26.000Z",
+  "updated_at": "2026-08-30T21:01:37.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "feature-extraction",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "onnx",
+    "embedding",
+    "embedding-translation",
+    "queryn",
+    "fastembed-bge-small",
+    "nemotron-1b-free",
+    "feature-extraction",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 2197882,
+  "storage_human": "2 MB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Queryn adapter — bge-m3 → fastembed-bge-small - Hugging Face",
+      "url": "https://huggingface.co/QuerynAi/queryn-adapter-bge-m3_to_fastembed-bge-small",
+      "snippet": "Collection including QuerynAi/queryn-adapter-bge-m3_to_fastembed-bge-small Queryn Embedding Adapters ONNX adapters that translate a chunk&#x27;s embedding from one model&#x27;s space into another&#x27;s, without re-embedding. From the Queryn pipeline.••"
+    },
+    {
+      "title": "GitHub - qdrant/fastembed: Fast, Accurate, Lightweight Python library ...",
+      "url": "https://github.com/qdrant/fastembed",
+      "snippet": "FastEmbed is a lightweight, fast, Python library built for embedding generation. We support popular text models. Please open a GitHub issue if you want us to add a new model. The default text embedding (TextEmbedding) model is Flag Embedding, presented in the MTEB leaderboard. It supports \"query\" and \"passage\" prefixes for the input text. Here is an example for Retrieval Embedding Generation ..."
+    },
+    {
+      "title": "fastembed · PyPI",
+      "url": "https://pypi.org/project/fastembed/",
+      "snippet": "⚡️ What is FastEmbed? FastEmbed is a lightweight, fast, Python library built for embedding generation. We support popular text models. Please open a GitHub issue if you want us to add a new model. The default text embedding (TextEmbedding) model is Flag Embedding, presented in the MTEB leaderboard. It supports \"query\" and \"passage\" prefixes for the input text. Here is an example for ..."
+    },
+    {
+      "title": "BAAI/bge-small-en · Hugging Face",
+      "url": "https://huggingface.co/BAAI/bge-small-en",
+      "snippet": "Recommend switching to newest BAAI/bge-small-en-v1.5, which has more reasonable similarity distribution and same method of usage. FlagEmbedding Model List | FAQ | Usage | Evaluation | Train | Citation | License More details please refer to our Github: FlagEmbedding. English | 中文 FlagEmbedding focus on retrieval-augmented LLMs, consisting of following projects currently: Fine-tuning of LM ..."
+    },
+    {
+      "title": "Welcome to BGE! — BGE documentation",
+      "url": "https://bge-model.com/",
+      "snippet": "Besides the resources we provide here in this documentation, please visit our GitHub repo for more contents including: Want to get familiar with BGE quickly? There are hands-on examples to run for embedder and reranker&#x27;s inference, evaluation, and finetuning. Unfamiliar with some area, keywords or techniques of retrieval and RAG? We provide tutorials to teach you basic knowledge and coding ..."
+    }
+  ]
+}

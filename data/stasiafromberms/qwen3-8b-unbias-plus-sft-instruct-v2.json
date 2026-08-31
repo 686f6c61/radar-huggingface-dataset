@@ -5,7 +5,7 @@
   "author": "stasiafromberms",
   "url": "https://huggingface.co/stasiafromberms/Qwen3-8B-UnBias-Plus-SFT-Instruct-V2",
   "created_at": "2026-08-26T07:46:26.000Z",
-  "updated_at": "2026-08-26T09:55:26.000Z",
+  "updated_at": "2026-08-30T15:09:16.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-generation",

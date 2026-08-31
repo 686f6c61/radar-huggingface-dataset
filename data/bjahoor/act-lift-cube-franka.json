@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "bjahoor/act-lift-cube-franka",
+  "slug": "bjahoor-act-lift-cube-franka",
+  "author": "bjahoor",
+  "url": "https://huggingface.co/bjahoor/act-lift-cube-franka",
+  "created_at": "2026-08-31T01:44:15.000Z",
+  "updated_at": "2026-08-31T01:44:20.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "act",
+    "robotics",
+    "dataset:bjahoor/lift-cube-franka",
+    "arxiv:2304.13705",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 51674761,
+  "parameters_human": "51.7M",
+  "storage_bytes": 206732140,
+  "storage_human": "207 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "niklashcs/franka_cube_lift_v5_for_act - Hugging Face",
+      "url": "https://huggingface.co/datasets/niklashcs/franka_cube_lift_v5_for_act",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "niklashcs/franka_cube_lift_v5_for_act - Hugging Face",
+      "url": "https://huggingface.co/datasets/niklashcs/franka_cube_lift_v5_for_act/viewer",
+      "snippet": "Datasets: niklashcs franka_cube_lift_v5_for_act like0 Dataset cardData StudioFilesFiles and versions xet"
+    },
+    {
+      "title": "JonasFano / Isaac_Lab_UR5e_Lift_Cube_Project_AI Public",
+      "url": "https://github.com/JonasFano/Isaac_Lab_UR5e_Lift_Cube_Project_AI",
+      "snippet": "This Repository includes the implementation to train PPO, DDPG or TD3 agents (from Stable-Baselines3) in Isaac Lab. The considered task includes a UR5e or Franka robot and requires it to lift a cube to a desired pose with differential inverse kinematics (IK) control or joint position control."
+    },
+    {
+      "title": "GitHub - JonasFano/Isaac_Lab_UR5e_Lift_Cube: Utilize Reinforcement ...",
+      "url": "https://github.com/JonasFano/Isaac_Lab_UR5e_Lift_Cube",
+      "snippet": "The considered task includes a UR5e (Hand E gripper or custom SDU gripper) or Franka robot and requires it to lift a cube to a desired pose with differential inverse kinematics (IK) control or joint position control."
+    },
+    {
+      "title": "Available Environments — Isaac Lab Documentation",
+      "url": "https://isaac-sim.github.io/IsaacLab/main/source/overview/environments.html",
+      "snippet": "Available Environments # The following lists comprises of all the RL and IL tasks implementations that are available in Isaac Lab. While we try to keep this list up-to-date, you can always get the latest list of environments by running the following command:"
+    }
+  ]
+}

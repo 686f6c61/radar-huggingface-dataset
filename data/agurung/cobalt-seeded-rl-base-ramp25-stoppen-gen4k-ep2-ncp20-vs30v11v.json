@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "agurung/cobalt-seeded-rl-base-ramp25-stoppen-gen4k-ep2-ncp20-vs30v11v",
+  "slug": "agurung-cobalt-seeded-rl-base-ramp25-stoppen-gen4k-ep2-ncp20-vs30v11v",
+  "author": "agurung",
+  "url": "https://huggingface.co/agurung/cobalt-seeded-rl-base-ramp25-stoppen-gen4k-ep2-ncp20-vs30v11v",
+  "created_at": "2026-08-30T21:54:57.000Z",
+  "updated_at": "2026-08-31T02:38:09.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3",
+    "text-generation",
+    "openrlhf",
+    "grpo",
+    "reinforcement-learning",
+    "code-generation",
+    "base_model:Qwen/Qwen3-4B-Instruct-2507",
+    "base_model:finetune:Qwen/Qwen3-4B-Instruct-2507",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 4411424256,
+  "parameters_human": "4.41B",
+  "storage_bytes": 17657211690,
+  "storage_human": "17.7 GB",
+  "base_model": "Qwen/Qwen3-4B-Instruct-2507",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Twitch.tv - Official Site",
+      "url": "https://www.twitch.tv/",
+      "snippet": "Twitch is the world`s leading video platform and community for gamers."
+    },
+    {
+      "title": "Models - Hugging Face",
+      "url": "https://huggingface.co/models?other=cobalt_v2",
+      "snippet": "Explore machine learning models. 2 Base only Inference AvailableInference Edit filters Sort: Trending Active filters: cobalt_v2 Clear all"
+    },
+    {
+      "title": "agurung/cobalt-ft-qwen3-4b-sft-iid-12-lora-r128-a32-lr2p5e-4-const ...",
+      "url": "https://huggingface.co/agurung/cobalt-ft-qwen3-4b-sft-iid-12-lora-r128-a32-lr2p5e-4-const-lr2p5e-4-qps8-gpuauto-ep2",
+      "snippet": "The archive intentionally keeps HF/PEFT model artifacts and training metadata, but excludes optimizer, scheduler, and RNG state files. These repos are meant for evaluation and RL seeding, not exact optimizer-state resume."
+    },
+    {
+      "title": "GitHub - DLR-RM/stable-baselines3: PyTorch version of Stable Baselines ...",
+      "url": "https://github.com/DLR-RM/stable-baselines3",
+      "snippet": "PyTorch version of Stable Baselines, reliable implementations of reinforcement learning algorithms. - GitHub - DLR-RM/stable-baselines3: PyTorch version of Stable Baselines, reliable implementations of reinforcement learning algorithms."
+    },
+    {
+      "title": "ByteDance Seed",
+      "url": "https://seed.bytedance.com/en/",
+      "snippet": "The ByteDance Seed team was established in 2023, dedicated to discovering new approaches to general intelligence, pushing the boundaries of AI. The team&#x27;s research areas include LLM, speech, vision, world models, infrastructure, AI Infra, and next-generation AI interactions. The team operates labs in China, Singapore, the United States, and other locations."
+    }
+  ]
+}

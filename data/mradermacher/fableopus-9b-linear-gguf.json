@@ -1,0 +1,77 @@
+{
+  "schema": 1,
+  "id": "mradermacher/FableOpus-9B-Linear-GGUF",
+  "slug": "mradermacher-fableopus-9b-linear-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/FableOpus-9B-Linear-GGUF",
+  "created_at": "2026-06-22T14:05:02.000Z",
+  "updated_at": "2026-08-31T00:54:36.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "qwen",
+    "qwen3.5",
+    "fable-5",
+    "claude-opus",
+    "distillation",
+    "merge",
+    "bf16",
+    "en",
+    "base_model:bingleai/FableOpus-9B-Linear",
+    "base_model:quantized:bingleai/FableOpus-9B-Linear",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 184,
+  "trending_score": 0,
+  "parameters": 8953803264,
+  "parameters_human": "8.95B",
+  "storage_bytes": 82967497856,
+  "storage_human": "83.0 GB",
+  "base_model": "bingleai/FableOpus-9B-Linear",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "mradermacher/FableOpus-9B-Linear-GGUF · Hugging Face",
+      "url": "https://huggingface.co/mradermacher/FableOpus-9B-Linear-GGUF",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "mradermacher/FableOpus-9B-Linear-GGUF at main - Hugging Face",
+      "url": "https://huggingface.co/mradermacher/FableOpus-9B-Linear-GGUF/tree/main",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "FableOpus-9B-Linear API & Inference Endpoint | FriendliAI",
+      "url": "https://friendli.ai/models/bingleai/FableOpus-9B-Linear",
+      "snippet": "Deploy FableOpus-9B-Linear with low-latency inference on FriendliAI. Get scalable API serving, high throughput, and production-grade reliability for AI agents."
+    },
+    {
+      "title": "Mradermacher - Find Top AI Models on Hugging Face",
+      "url": "https://www.aimodels.fyi/creators/huggingFace/mradermacher",
+      "snippet": "Looking for Mradermacher&#x27;s top AI models? Browse their full Hugging Face collection of 26 models. Explore AI models and contributions by Mradermacher on Huggingface."
+    },
+    {
+      "title": "‎Google Gemini",
+      "url": "https://gemini.google.com/",
+      "snippet": "Get assistance with writing, planning, learning, and more from Google AI."
+    }
+  ]
+}

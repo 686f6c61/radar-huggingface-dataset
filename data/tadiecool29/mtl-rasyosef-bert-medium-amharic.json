@@ -5,7 +5,7 @@
   "author": "tadiecool29",
   "url": "https://huggingface.co/tadiecool29/MTL-rasyosef-bert-medium-amharic",
   "created_at": "2026-08-27T08:57:23.000Z",
-  "updated_at": "2026-08-29T20:13:31.000Z",
+  "updated_at": "2026-08-30T07:53:34.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": null,
@@ -25,8 +25,8 @@
   "trending_score": 0,
   "parameters": 40429575,
   "parameters_human": "40.4M",
-  "storage_bytes": 323480090,
-  "storage_human": "323 MB",
+  "storage_bytes": 485214870,
+  "storage_human": "485 MB",
   "base_model": "rasyosef/bert-medium-amharic",
   "formats": [
     "safetensors"

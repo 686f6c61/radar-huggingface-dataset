@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "Chuckythedoll2005/Voice_Models",
+  "slug": "chuckythedoll2005-voice_models",
+  "author": "Chuckythedoll2005",
+  "url": "https://huggingface.co/Chuckythedoll2005/Voice_Models",
+  "created_at": "2026-03-20T04:32:16.000Z",
+  "updated_at": "2026-08-30T20:07:51.000Z",
+  "license": "openrail",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": "adapter-transformers",
+  "languages": [
+    "es",
+    "en"
+  ],
+  "tags": [
+    "adapter-transformers",
+    "art",
+    "code",
+    "text-classification",
+    "es",
+    "en",
+    "dataset:nohurry/Opus-4.6-Reasoning-3000x-filtered",
+    "arxiv:1910.09700",
+    "base_model:Jackrong/Qwen3.5-27B-Claude-4.6-Opus-Reasoning-Distilled",
+    "base_model:adapter:Jackrong/Qwen3.5-27B-Claude-4.6-Opus-Reasoning-Distilled",
+    "license:openrail",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 4188938863,
+  "storage_human": "4.2 GB",
+  "base_model": "Jackrong/Qwen3.5-27B-Claude-4.6-Opus-Reasoning-Distilled",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Chuckythedoll2005/Voice_Models · Hugging Face",
+      "url": "https://huggingface.co/Chuckythedoll2005/Voice_Models",
+      "snippet": "A newer version of this model is available: Qwen/Qwen3.5-397B-A17B"
+    },
+    {
+      "title": "Chuckythedoll2005/Voice_Models at main - Hugging Face",
+      "url": "https://huggingface.co/Chuckythedoll2005/Voice_Models/tree/main",
+      "snippet": "Chuckythedoll2005 / Voice_Models like 0 Adapters Spanish English art legal License:openrail Model card FilesFiles and versions xet Community Use this model main Voice_Models 1.75 kB Ctrl+K Ctrl+K 1 contributor History:2 commits Chuckythedoll2005 Update README.md 579ceac verified3 days ago .gitattributes 1.52 kBinitial commit4 days ago README.md"
+    },
+    {
+      "title": "Chuckythedoll2005 (Jose Manuel Marentes Gallardo) - Hugging Face",
+      "url": "https://huggingface.co/Chuckythedoll2005/datasets",
+      "snippet": "User profile of Jose Manuel Marentes Gallardo on Hugging Face"
+    },
+    {
+      "title": "Chucky - Marc Hamil (Robot Chicken) (English) [RVC v2] [200 Epochs]",
+      "url": "https://voice-models.com/model/90c",
+      "snippet": "Chucky - Marc Hamil (Robot Chicken) (English) [RVC v2] [200 Epochs] AI voice model for RVC voice conversion. View details, samples, source status, and run this voice model in EasyAIVoice."
+    },
+    {
+      "title": "Chuckythedoll2005/Voice_Models · Upload SkyBlue.zip",
+      "url": "https://huggingface.co/Chuckythedoll2005/Voice_Models/discussions/2",
+      "snippet": "Chuckythedoll2005 / Voice_Models like 0 Text Classification Adapters nohurry/Opus-4.6-Reasoning-3000x-filtered Spanish English art code arxiv:1910.09700 License:openrail Model card FilesFiles and versions xet Community 2 Copy to bucket new Use this model"
+    }
+  ]
+}

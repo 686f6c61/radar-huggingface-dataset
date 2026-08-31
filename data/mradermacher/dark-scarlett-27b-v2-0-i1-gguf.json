@@ -5,7 +5,7 @@
   "author": "mradermacher",
   "url": "https://huggingface.co/mradermacher/Dark-Scarlett-27B-v2.0-i1-GGUF",
   "created_at": "2026-08-29T21:26:15.000Z",
-  "updated_at": "2026-08-29T21:46:06.000Z",
+  "updated_at": "2026-08-30T07:15:38.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": null,
@@ -35,12 +35,12 @@
     "imatrix"
   ],
   "likes": 0,
-  "downloads_30d": 0,
+  "downloads_30d": 283,
   "trending_score": 0,
   "parameters": 27320697856,
   "parameters_human": "27.32B",
-  "storage_bytes": 39471868000,
-  "storage_human": "39.5 GB",
+  "storage_bytes": 218553881152,
+  "storage_human": "218.6 GB",
   "base_model": "ReadyArt/Dark-Scarlett-27B-v2.0",
   "formats": [
     "gguf"

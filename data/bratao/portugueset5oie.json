@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "bratao/PortugueseT5Oie",
+  "slug": "bratao-portugueset5oie",
+  "author": "bratao",
+  "url": "https://huggingface.co/bratao/PortugueseT5Oie",
+  "created_at": "2025-05-29T01:34:20.000Z",
+  "updated_at": "2026-08-30T22:05:05.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "pt"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "t5",
+    "text2text-generation",
+    "open-information-extraction",
+    "openie",
+    "portuguese",
+    "extractive-openie",
+    "research-checkpoint",
+    "pt",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 4,
+  "trending_score": 0,
+  "parameters": 783150080,
+  "parameters_human": "783.2M",
+  "storage_bytes": 3132689612,
+  "storage_human": "3.1 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "bratao/PortugueseT5-Instruct · Hugging Face",
+      "url": "https://huggingface.co/bratao/PortugueseT5-Instruct",
+      "snippet": "bratao / PortugueseT5-Instruct like 0 Safetensors t5 Model card FilesFiles and versions xet Community Copy to bucket new No model card Downloads last month 3 Safetensors Model size 0.8B params Tensor type F32 · Files info Inference Providers NEW This model isn&#x27;t deployed by any Inference Provider.🙋Ask for provider support"
+    },
+    {
+      "title": "bratao (Bruno) - Hugging Face",
+      "url": "https://huggingface.co/bratao/datasets",
+      "snippet": "AI & ML interests ... Recent Activity liked a dataset about 1 month ago ... liked a dataset about 2 months ago"
+    },
+    {
+      "title": "bratao (Bruno Cabral) · GitHub",
+      "url": "https://github.com/bratao",
+      "snippet": "A graph representing bratao&#x27;s contributions from July 06, 2025 to July 07, 2026. The contributions are 86% issues, 14% commits, 0% pull requests, 0% code review."
+    },
+    {
+      "title": "Synthesizing Brazilian Portuguese · coqui-ai TTS · Discussion #4127",
+      "url": "https://github.com/coqui-ai/TTS/discussions/4127",
+      "snippet": "Hello, are you doing good? I did some searching but couldn&#x27;t find \"direct\" options for synthesizing Brazilian Portuguese. From the initial test I ran, the default Portuguese model \"tts_models/pt/cv..."
+    },
+    {
+      "title": "Advancing Generative AI for Portuguese with Open Decoder",
+      "url": "https://arxiv.org/html/2402.18766",
+      "snippet": "More specifically, the LLaMA 2 model is pretrained using 2 trillion tokens from publicly available sources. The Gervásio models aim to advance generative AI capacity to handle the Portuguese language by further pretraining it on the data we have curated for Portuguese language variants."
+    }
+  ]
+}

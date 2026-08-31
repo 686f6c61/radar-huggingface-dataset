@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "joshuajerin/hackathon-everest-policies",
+  "slug": "joshuajerin-hackathon-everest-policies",
+  "author": "joshuajerin",
+  "url": "https://huggingface.co/joshuajerin/hackathon-everest-policies",
+  "created_at": "2026-08-30T20:44:32.000Z",
+  "updated_at": "2026-08-30T20:44:44.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "pytorch",
+  "languages": [],
+  "tags": [
+    "pytorch",
+    "joblib",
+    "robotics",
+    "locomotion",
+    "sensor-fusion",
+    "unitree-g1",
+    "synthetic-data",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 149555399,
+  "storage_human": "150 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "We&#x27;re Now Relying on AI to Police AI - Mother Jones",
+      "url": "https://www.motherjones.com/politics/2026/08/ai-safety-openai-hugging-face-hacking-metr-report/",
+      "snippet": "We&#x27;re Now Relying on AI to Police AI A new report details startling security breaches by OpenAI agents—using a model that helped cause them."
+    },
+    {
+      "title": "Young people generate ideas for AI adoption in &#x27;policy hackathon ...",
+      "url": "https://www.chathamhouse.org/2026/03/young-people-generate-ideas-ai-adoption-policy-hackathon",
+      "snippet": "Press Office Chatham House has completed a &#x27;policy hackathon&#x27; in which young people produced transferable policy proposals for how governments could benefit from adopting AI."
+    },
+    {
+      "title": "Perturb AI&#x27;s Network of Incentivized Hackers Launches to Attack AI ...",
+      "url": "https://hackernoon.com/perturb-ais-network-of-incentivized-hackers-launches-to-attack-ai-models-before-criminals-do",
+      "snippet": "San Francisco, USA, August 28th, 2026/TechnologyWire/-- Perturb has launched a decentralized adversarial robustness network on Bittensor that continuously stress-tests production AI models and pays a global network of researchers to find vulnerabilities that in-house red teams may miss. Five weeks after an experimental OpenAI model escaped its test environment and breached Hugging Face&#x27;s ..."
+    },
+    {
+      "title": "The Day an AI Model Allegedly Ran Its Own Cyberattack - HackerNoon",
+      "url": "https://hackernoon.com/the-day-an-ai-model-allegedly-ran-its-own-cyberattack-and-why-the-skeptics-have-a-point-too",
+      "snippet": "AI-driven cyber espionage, zero-click prompt injection, and poisoned model supply chains are reshaping cybersecurity faster than defenses can adapt."
+    },
+    {
+      "title": "PDF [ext: RR, METR] Hugging Face incident investigation report",
+      "url": "https://metr.org/hugging-face-incident-report-aug-2026.pdf",
+      "snippet": "Brief independent investigation of agents&#x27; behavior, reasoning and collaboration in the OpenAI / Hugging Face hacking incident Publication date:"
+    }
+  ]
+}

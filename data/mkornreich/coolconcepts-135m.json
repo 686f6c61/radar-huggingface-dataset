@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "mkornreich/coolconcepts-135m",
+  "slug": "mkornreich-coolconcepts-135m",
+  "author": "mkornreich",
+  "url": "https://huggingface.co/mkornreich/coolconcepts-135m",
+  "created_at": "2026-08-30T19:23:29.000Z",
+  "updated_at": "2026-08-30T19:24:27.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "onnx",
+    "llama",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 136571824,
+  "storage_human": "137 MB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Cool Concepts - Menachem Kornreich",
+      "url": "https://mkornreich.me/projects/coolconcepts/",
+      "snippet": "Cool Concepts Based on the Dynamic Entropy XKCD Intelligent Economics Create a new concept"
+    },
+    {
+      "title": "HuggingFaceTB/SmolLM-135M · Hugging Face",
+      "url": "https://huggingface.co/HuggingFaceTB/SmolLM-135M",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "#webllm #browserai #fakescience #quantumbeardresonance # ... - LinkedIn",
+      "url": "https://www.linkedin.com/posts/mkornreich_webllm-browserai-fakescience-activity-7494788644151431168-xEPo",
+      "snippet": "Then I ran them through WebLLM an actual AI model running entirely inside my browser, no server, no API call, just my laptop fan screaming into the void and asked it to explain each one like I was ..."
+    },
+    {
+      "title": "135M: you cannot go Smaller!. Meet the smallest and useful Decoder ...",
+      "url": "https://generativeai.pub/135m-you-cannot-go-smaller-827b8377e875",
+      "snippet": "Arvind Narayanan and Sayash Kapoor in their amazing Substack Ai Snake oil, explain this topic quite blatantly: research on scaling laws shows that as we increase model size, training compute, and dataset size, language models get \"better\". The improvement is truly striking in its predictability, and holds across many orders of magnitude."
+    },
+    {
+      "title": "AI Model Downloads - 498 Model Examples - AI Models",
+      "url": "https://aimodels.org/ai-models/",
+      "snippet": "Directory of free Open Source AI and machine learning model downloads! Our collection features the latest models in speech to text and image generation."
+    }
+  ]
+}

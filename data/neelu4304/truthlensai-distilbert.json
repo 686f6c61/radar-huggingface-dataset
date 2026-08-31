@@ -5,7 +5,7 @@
   "author": "neelu4304",
   "url": "https://huggingface.co/neelu4304/TruthLensAI-distilbert",
   "created_at": "2026-08-29T09:50:48.000Z",
-  "updated_at": "2026-08-29T10:09:11.000Z",
+  "updated_at": "2026-08-30T05:32:25.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": null,
@@ -20,8 +20,8 @@
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
-  "storage_bytes": 267844872,
-  "storage_human": "268 MB",
+  "storage_bytes": 406567277,
+  "storage_human": "407 MB",
   "base_model": null,
   "formats": [
     "safetensors"

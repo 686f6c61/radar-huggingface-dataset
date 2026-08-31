@@ -5,7 +5,7 @@
   "author": "laion",
   "url": "https://huggingface.co/laion/moss-va-sft3-quality-dpo-lora",
   "created_at": "2026-08-30T15:22:09.000Z",
-  "updated_at": "2026-08-30T15:22:19.000Z",
+  "updated_at": "2026-08-30T17:06:19.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-to-speech",

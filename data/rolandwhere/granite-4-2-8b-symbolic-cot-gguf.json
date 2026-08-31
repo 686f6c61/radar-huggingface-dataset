@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "rolandwhere/granite-4.2-8b-symbolic-cot-GGUF",
+  "slug": "rolandwhere-granite-4-2-8b-symbolic-cot-gguf",
+  "author": "rolandwhere",
+  "url": "https://huggingface.co/rolandwhere/granite-4.2-8b-symbolic-cot-GGUF",
+  "created_at": "2026-08-30T21:03:45.000Z",
+  "updated_at": "2026-08-30T21:04:27.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 8791592960,
+  "parameters_human": "8.79B",
+  "storage_bytes": 5347917248,
+  "storage_human": "5.3 GB",
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Granite 4.2 - IBM",
+      "url": "https://www.ibm.com/granite/docs/models/granite4-2",
+      "snippet": "Granite 4.2 Dense reasoning language model family in 3B, 8B, and 30B sizes with built-in chain-of-thought thinking, flexible thinking modes, and reasoning-augmented tool calling."
+    },
+    {
+      "title": "ibm-granite/granite-4.2-8b-GGUF · Hugging Face",
+      "url": "https://huggingface.co/ibm-granite/granite-4.2-8b-GGUF",
+      "snippet": "ibm-granite / granite-4.2-8b-GGUF like 3 Follow IBM Granite 5.23k GGUF llama.cpp language granite-4.2 conversational License:apache-2.0 Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "unsloth/granite-4.0-h-small-GGUF · Hugging Face",
+      "url": "https://huggingface.co/unsloth/granite-4.0-h-small-GGUF",
+      "snippet": "Granite-4.0-H-Small Model Summary: Granite-4.0-H-Small is a 32B parameter long-context instruct model finetuned from Granite-4.-H-Small-Base using a combination of open source instruction datasets with permissive license and internally collected synthetic datasets."
+    },
+    {
+      "title": "Granite 4.2 8B: IBM&#x27;s Apache-2.0 Reasoning Model | AI/TLDR",
+      "url": "https://ai-tldr.dev/models/granite-4-2-8b/",
+      "snippet": "Granite 4.2 8B is IBM&#x27;s Apache-2.0 dense reasoning model, released 25 Aug 2026 with a switchable thinking mode, 128K context and 47.67 on SWE-bench Verified."
+    },
+    {
+      "title": "granite-4.2-8b: Text-to-Text model — overview, use cases, alternatives",
+      "url": "https://www.aimodels.fyi/models/huggingFace/granite-4.2-8b-ibm-granite",
+      "snippet": "Overview granite-4.2-8b is an 8-billion-parameter, decoder-only dense Transformer reasoning model developed by IBM&#x27;s ibm-granite team. It uses the GraniteForCausalLM architecture, runs through the Transformers ecosystem, and generates text from conversational or instruction prompts. Its defining feature is native <think>...</think> reasoning, with full-thinking, non-thinking, and low-effort ..."
+    }
+  ]
+}

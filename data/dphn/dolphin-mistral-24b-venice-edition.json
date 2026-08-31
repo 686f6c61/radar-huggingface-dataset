@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "dphn/Dolphin-Mistral-24B-Venice-Edition",
+  "slug": "dphn-dolphin-mistral-24b-venice-edition",
+  "author": "dphn",
+  "url": "https://huggingface.co/dphn/Dolphin-Mistral-24B-Venice-Edition",
+  "created_at": "2025-06-12T05:29:16.000Z",
+  "updated_at": "2026-06-12T09:16:02.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "mistral3",
+    "image-text-to-text",
+    "text-generation",
+    "conversational",
+    "base_model:mistralai/Mistral-Small-24B-Instruct-2501",
+    "base_model:finetune:mistralai/Mistral-Small-24B-Instruct-2501",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "deploy:azure",
+    "region:us"
+  ],
+  "likes": 665,
+  "downloads_30d": 497565,
+  "trending_score": 8,
+  "parameters": 24011361280,
+  "parameters_human": "24.01B",
+  "storage_bytes": 95222033843,
+  "storage_human": "95.2 GB",
+  "base_model": "mistralai/Mistral-Small-24B-Instruct-2501",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "dphn/Dolphin-Mistral-24B-Venice-Edition · Hugging Face",
+      "url": "https://huggingface.co/dphn/Dolphin-Mistral-24B-Venice-Edition",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "dphn/Dolphin-Mistral-24B-Venice-Edition - featherless.ai",
+      "url": "https://featherless.ai/models/dphn/Dolphin-Mistral-24B-Venice-Edition",
+      "snippet": "Dolphin Mistral 24B Venice Edition is a 24 billion parameter language model developed by dphn.ai in collaboration with Venice.ai, based on the Mistral architecture. This model is specifically fine-tuned for uncensored and steerable responses, allowing users to define its alignment and behavior via system prompts. It is designed for general-purpose applications where control over ethical ..."
+    },
+    {
+      "title": "dphn/Dolphin-Mistral-24B-Venice-Edition-exl2-6bpw · Hugging Face",
+      "url": "https://huggingface.co/dphn/Dolphin-Mistral-24B-Venice-Edition-exl2-6bpw",
+      "snippet": "Dolphin Mistral 24B Venice Edition is now live on https://venice.ai/ as \"Venice Uncensored,\" the new default model for all Venice users. Dolphin aims to be a general purpose model, similar to the models behind ChatGPT, Claude, Gemini."
+    },
+    {
+      "title": "Dphn Dolphin Mistral 24B Venice Edition - localai.computer",
+      "url": "https://localai.computer/models/dphn-dolphin-mistral-24b-venice-edition",
+      "snippet": "Quick answer: Dphn Dolphin Mistral 24B Venice Edition needs roughly 13 GB VRAM for Q4_K_M and 19 GB for Q5_K_M. Use Q8 (25 GB) or FP16 (49 GB) for higher quality output. Full-model (FP16) requirements are shown by default. Quantized builds like Q4 trade accuracy for lower VRAM usage. Ready to buy?"
+    },
+    {
+      "title": "Dolphin-Mistral-24B-Venice-Edition: Text-to-Text model — overview, use ...",
+      "url": "https://www.aimodels.fyi/models/huggingFace/dolphin-mistral-24b-venice-edition-dphn",
+      "snippet": "Overview Dolphin-Mistral-24B-Venice-Edition is a general-purpose text generation model built on Mistral 24B that prioritizes user control and minimal safety restrictions. Created by dphn in collaboration with Venice.ai, this model serves as the default uncensored option (\"Venice Uncensored\") for all Venice users. The core design philosophy positions the model as a neutral tool where the user ..."
+    }
+  ]
+}

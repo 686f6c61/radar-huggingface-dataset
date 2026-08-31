@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "tardelr/lora-dora-reproducibility",
+  "slug": "tardelr-lora-dora-reproducibility",
+  "author": "tardelr",
+  "url": "https://huggingface.co/tardelr/lora-dora-reproducibility",
+  "created_at": "2026-08-25T21:29:24.000Z",
+  "updated_at": "2026-08-30T22:15:58.000Z",
+  "license": "llama4",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "tensorboard",
+    "safetensors",
+    "license:llama4",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 30144066752,
+  "storage_human": "30.1 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "tardelr/lora-dora-reproducibility · Hugging Face",
+      "url": "https://huggingface.co/tardelr/lora-dora-reproducibility",
+      "snippet": "tardelr / lora-dora-reproducibility like 0 TensorBoard Safetensors License:llama4 Model card FilesFiles and versions xet MetricsTraining metrics Community Copy to bucket new"
+    },
+    {
+      "title": "Models - Hugging Face",
+      "url": "https://huggingface.co/models?search=lora",
+      "snippet": "Explore machine learning models. lovis93/studio-1939-old-animation-lora-minimax-h3"
+    },
+    {
+      "title": "lora AI Models | Civitai",
+      "url": "https://civitai.com/tag/lora",
+      "snippet": "Browse 28,909 Stable Diffusion & Flux models, LoRAs, checkpoints, and embeddings tagged with lora."
+    },
+    {
+      "title": "GitHub - microsoft/LoRA: Code for loralib, an implementation of \"LoRA ...",
+      "url": "https://github.com/microsoft/LoRA",
+      "snippet": "Code for loralib, an implementation of \"LoRA: Low-Rank Adaptation of Large Language Models\" - microsoft/LoRA"
+    },
+    {
+      "title": "220+ Free LoRAs & Counting | Civitai",
+      "url": "https://civitai.com/articles/11647/220-free-loras-and-counting",
+      "snippet": "From generating artwork to refining LoRA models, my journey has been one of exploration, innovation, and community-driven contribution. To date, I have created and shared over 220 LoRA models on CivitAI, completely free for others to use."
+    }
+  ]
+}

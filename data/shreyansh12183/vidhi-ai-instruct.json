@@ -5,7 +5,7 @@
   "author": "shreyansh12183",
   "url": "https://huggingface.co/shreyansh12183/Vidhi-AI-Instruct",
   "created_at": "2026-08-28T07:36:04.000Z",
-  "updated_at": "2026-08-29T10:37:22.000Z",
+  "updated_at": "2026-08-31T02:44:28.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -34,7 +34,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 2,
+  "downloads_30d": 27,
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,

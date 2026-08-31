@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "hannahramirez/self-supervised-study",
+  "slug": "hannahramirez-self-supervised-study",
+  "author": "hannahramirez",
+  "url": "https://huggingface.co/hannahramirez/self-supervised-study",
+  "created_at": "2026-08-30T21:50:22.000Z",
+  "updated_at": "2026-08-30T21:50:30.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "transformer",
+    "research-notes",
+    "self-supervised",
+    "license:cc-by-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 16576,
+  "parameters_human": "16576",
+  "storage_bytes": 66784,
+  "storage_human": "66784 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "hannahramirez (Hannah Ramirez) - Hugging Face",
+      "url": "https://huggingface.co/hannahramirez/models",
+      "snippet": "AI & ML interests ML engineer @ a startup you&#x27;ve never heard of"
+    },
+    {
+      "title": "Google Scholar",
+      "url": "https://scholar.google.com/",
+      "snippet": "Google Scholar provides a simple way to broadly search for scholarly literature. Search across a wide variety of disciplines and sources: articles, theses, books, abstracts and court opinions."
+    },
+    {
+      "title": "Using artificial intelligence to support self-regulated learning: A ...",
+      "url": "https://www.sciencedirect.com/science/article/pii/S1041608026000518",
+      "snippet": "The proposed AI-SRL conceptual framework serves as a foundational model for educators and instructional designers aiming to effectively incorporate AI into learning environments. It emphasizes a dual focus on learner strategies and instructor support, with implications for learning experience design in technology-enhanced education."
+    },
+    {
+      "title": "A qualitative systematic review on AI empowered self-regulated ... - Nature",
+      "url": "https://www.nature.com/articles/s41539-025-00319-0",
+      "snippet": "This systematic review explores the burgeoning intersection of Artificial Intelligence (AI) applications and self-regulated learning (SRL) in higher education."
+    },
+    {
+      "title": "Utilizing artificial intelligence to support analyzing self-regulated ...",
+      "url": "https://www.sciencedirect.com/science/article/pii/S0747563223000729",
+      "snippet": "Thus, the aim of this study was to investigate the potential and opportunities of artificial intelligence (AI) methods to analyze self-reporting protocols for recognizing cognitive and metacognitive strategies of self-regulated learning."
+    }
+  ]
+}

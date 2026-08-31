@@ -1,0 +1,101 @@
+{
+  "schema": 1,
+  "id": "taurusduan/GLM-5.3-Flash-UNCENSORED-W4A16",
+  "slug": "taurusduan-glm-5-3-flash-uncensored-w4a16",
+  "author": "taurusduan",
+  "url": "https://huggingface.co/taurusduan/GLM-5.3-Flash-UNCENSORED-W4A16",
+  "created_at": "2026-08-31T01:40:16.000Z",
+  "updated_at": "2026-08-31T01:40:16.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "en",
+    "zh",
+    "ru",
+    "sr",
+    "hi",
+    "fr",
+    "es",
+    "ar",
+    "ko",
+    "ja"
+  ],
+  "tags": [
+    "safetensors",
+    "glm5_next",
+    "abliterated",
+    "uncensored",
+    "crack",
+    "refusal-removed",
+    "glm",
+    "glm-flash",
+    "moe",
+    "w4a16",
+    "int4",
+    "compressed-tensors",
+    "vision",
+    "multimodal",
+    "mtp",
+    "text-generation",
+    "conversational",
+    "en",
+    "zh",
+    "ru",
+    "sr",
+    "hi",
+    "fr",
+    "es",
+    "ar",
+    "ko",
+    "ja",
+    "base_model:JANGQ-AI/GLM-5.3-Flash-W4A16",
+    "base_model:quantized:JANGQ-AI/GLM-5.3-Flash-W4A16",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 321323031390,
+  "parameters_human": "321.32B",
+  "storage_bytes": 194693736137,
+  "storage_human": "194.7 GB",
+  "base_model": "zai-org/GLM-5.3-Flash, JANGQ-AI/GLM-5.3-Flash-W4A16",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "hell0ks/GLM-5.3-Flash-Uncensored-AWQ · Hugging Face",
+      "url": "https://huggingface.co/hell0ks/GLM-5.3-Flash-Uncensored-AWQ",
+      "snippet": "like 0 Text Generation Transformers Safetensors English Chinese glm5_next image-text-to-text abliterated glm glm5 glm-5.3-flash uncensored ai-red-team red-teaming Mixture of Experts vision-language function-calling reasoning mtp awq w4a16 conversational compressed-tensors License:mit Model card FilesFiles and versions xet Community Deploy Copy ..."
+    },
+    {
+      "title": "GLM 5.3 Flash Uncensored model | NanoGPT",
+      "url": "https://nano-gpt.com/models/text/z-ai/glm-5.3-flash-uncensored",
+      "snippet": "GLM 5.3 Flash Uncensored is an uncensored fine-tune of the efficient 320B mixture-of-experts reasoning model, built for unrestricted chat, creative writing, coding, agentic work, tool use, and long-context tasks."
+    },
+    {
+      "title": "GLM-5.3-Flash Uncensored: No LoRA, No Jailbreak, Just Edited FP8 ...",
+      "url": "https://www.explainx.ai/blog/orcarouter-glm-5-3-flash-uncensored-block-fp8-august-2026",
+      "snippet": "Refusal removal is baked directly into the weights.\" That&#x27;s OrcaRouter&#x27;s own framing, posted August 29, 2026, for its uncensored build of GLM-5.3-Flash — Z.ai&#x27;s 320B-total, 18B-active mixture-of-experts model that shipped under MIT license three days earlier as the reveal behind the \"Ox Alpha\" stealth preview. The tweet pulled 87 fire reactions."
+    },
+    {
+      "title": "GitHub - glm-5-3-flash/glm-5.3-flash: Desktop client for GLM-5.3-Flash ...",
+      "url": "https://github.com/glm-5-3-flash/glm-5.3-flash",
+      "snippet": "The developers confirmed it to Bloomberg: it was GLM-5.3-Flash, Z.AI&#x27;s new speed-tuned coding model, and the weights are out. Same GLM-5.3 intelligence the community was raving about, tuned to run faster and lighter — and free."
+    },
+    {
+      "title": "GLM-5.3-Flash Uncensored - a Hugging Face Space by xariam",
+      "url": "https://huggingface.co/spaces/xariam/GLM-5.3-Flash-Uncensored",
+      "snippet": "This app lets you have a conversation with the GLM‑5.3‑Flash Uncensored model, sending text and optional images. You provide an OpenAI‑compatible endpoint URL, model name, and an API key (or use th..."
+    }
+  ]
+}

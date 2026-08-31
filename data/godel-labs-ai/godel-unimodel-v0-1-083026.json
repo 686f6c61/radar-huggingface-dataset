@@ -5,7 +5,7 @@
   "author": "Godel-Labs-Ai",
   "url": "https://huggingface.co/Godel-Labs-Ai/godel-unimodel-v0.1-083026",
   "created_at": "2026-08-30T10:37:32.000Z",
-  "updated_at": "2026-08-30T10:59:20.000Z",
+  "updated_at": "2026-08-30T12:22:03.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-classification",
@@ -26,8 +26,8 @@
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
-  "storage_bytes": 1195580498,
-  "storage_human": "1.2 GB",
+  "storage_bytes": 2385763694,
+  "storage_human": "2.4 GB",
   "base_model": null,
   "formats": [
     "onnx"

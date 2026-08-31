@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "agentic-ptb/opus-high-v3.h074.soup-spl2",
+  "slug": "agentic-ptb-opus-high-v3-h074-soup-spl2",
+  "author": "agentic-ptb",
+  "url": "https://huggingface.co/agentic-ptb/opus-high-v3.h074.soup-spl2",
+  "created_at": "2026-08-30T19:16:18.000Z",
+  "updated_at": "2026-08-30T19:18:10.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "qwen3_5",
+    "agentic-ptb",
+    "opus-high-v3",
+    "negative-results",
+    "base_model:Qwen/Qwen3.5-9B-Base",
+    "base_model:finetune:Qwen/Qwen3.5-9B-Base",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 9409813744,
+  "parameters_human": "9.41B",
+  "storage_bytes": 18839710445,
+  "storage_human": "18.8 GB",
+  "base_model": "Qwen/Qwen3.5-9B-Base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "agentic-ptb/INDEX · Datasets at Hugging Face",
+      "url": "https://huggingface.co/datasets/agentic-ptb/INDEX",
+      "snippet": "Datasets: agentic-ptb / INDEX like 0 Follow agentic-ptb 1 Modalities: Tabular Text Formats: json Size: < 1K Tags: agentic-ptb index Libraries: Datasets pandas Polars + 1 Dataset card Data Studio FilesFiles and versions xet Community 1 Dataset Viewer Auto-converted to Parquet API Embed Duplicate Data Studio Subset (1) default·269 rows default (269 rows) Split (1) train·269 rows train (269 ..."
+    },
+    {
+      "title": "Claude Opus &#92; Anthropic",
+      "url": "https://www.anthropic.com/claude/opus",
+      "snippet": "Claude Opus 5 is a strong agentic coding model built for long-running, multi-step work. It deeply understands your codebase, holds the thread across complex tasks, and pins down requirements for feature development and bug-fixing more effectively than Opus 4.8."
+    },
+    {
+      "title": "Models - Hugging Face",
+      "url": "https://huggingface.co/models?other=agentic-ptb",
+      "snippet": "Explore machine learning models. 234 Base only Inference AvailableInference Edit filters Sort: Trending Active filters: agentic-ptb Clear all"
+    },
+    {
+      "title": "Anthropic admits its most powerful AI model hacked into three ...",
+      "url": "https://www.euronews.com/next/2026/07/31/anthropic-admits-its-most-powerful-ai-model-hacked-into-three-organisations-systems-during",
+      "snippet": "The announcement comes just days after rivals OpenAI revealed that their popular ChatGPT platform went rogue during its testing phase of its most powerful AI model, where it too infiltrated other ..."
+    },
+    {
+      "title": "Meta Open Sources Muse Glimmer: A 30B Agentic AI Model",
+      "url": "https://www.opensourceforu.com/2026/08/meta-open-sources-muse-glimmer/",
+      "snippet": "Meta&#x27;s 30B-parameter Muse Glimmer runs offline on a single consumer GPU to execute local coding, function calling, and autonomous agent workflows."
+    }
+  ]
+}

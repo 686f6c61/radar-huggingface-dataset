@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "TBOGamer22/nemo-balochi-g2p-conformer",
+  "slug": "tbogamer22-nemo-balochi-g2p-conformer",
+  "author": "TBOGamer22",
+  "url": "https://huggingface.co/TBOGamer22/nemo-balochi-g2p-conformer",
+  "created_at": "2026-08-30T20:24:24.000Z",
+  "updated_at": "2026-08-30T20:24:47.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "other",
+  "library": "nemo",
+  "languages": [
+    "bal"
+  ],
+  "tags": [
+    "nemo",
+    "balochi",
+    "pakistani-languages",
+    "g2p",
+    "grapheme-to-phoneme",
+    "ipa",
+    "conformer",
+    "ctc",
+    "speech-synthesis",
+    "text-processing",
+    "other",
+    "bal",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 29143040,
+  "storage_human": "29 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "TBOGamer22 (Talha Bin Omar) - Hugging Face",
+      "url": "https://huggingface.co/TBOGamer22",
+      "snippet": "Speech and Text Translation Conformer G2P models for broad IPA generation across Pakistan&#x27;s languages."
+    },
+    {
+      "title": "TBOGamer22/nemo-pashto-g2p-conformer · Hugging Face",
+      "url": "https://huggingface.co/TBOGamer22/nemo-pashto-g2p-conformer",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Grapheme-to-Phoneme Models — NeMo-Speech",
+      "url": "https://docs.nvidia.com/nemo/speech/latest/tts/g2p.html",
+      "snippet": "G2P-Conformer CTC model - uses a Conformer encoder [g2p-2] followed by a linear decoder; the model is trained with CTC-loss. G2P-Conformer model has about 20 times fewer parameters than the ByT5 model and is a non-autoregressive model that makes it faster during inference."
+    },
+    {
+      "title": "Grapheme-to-Phoneme Models — NVIDIA NeMo Framework User Guide",
+      "url": "https://docs.nvidia.com/nemo-framework/user-guide/latest/nemotoolkit/tts/g2p.html",
+      "snippet": "G2P-Conformer CTC model - uses a Conformer encoder [g2p-2] followed by a linear decoder; the model is trained with CTC-loss. G2P-Conformer model has about 20 times fewer parameters than the ByT5 model and is a non-autoregressive model that makes it faster during inference. The models can be trained using words or sentences as input."
+    },
+    {
+      "title": "NeMo/docs/source/tts/g2p.rst at main · viaConBodhi/NeMo",
+      "url": "https://github.com/viaConBodhi/NeMo/blob/main/docs/source/tts/g2p.rst",
+      "snippet": "G2P-Conformer CTC model - uses a Conformer encoder :cite:`g2p--ggulati2020conformer` followed by a linear decoder; the model is trained with CTC-loss. G2P-Conformer model has about 20 times fewer parameters than the ByT5 model and is a non-autoregressive model that makes it faster during inference."
+    }
+  ]
+}

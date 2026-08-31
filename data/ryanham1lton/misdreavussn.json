@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "Ryanham1lton/MisdreavusSN",
+  "slug": "ryanham1lton-misdreavussn",
+  "author": "Ryanham1lton",
+  "url": "https://huggingface.co/Ryanham1lton/MisdreavusSN",
+  "created_at": "2026-08-30T19:15:03.000Z",
+  "updated_at": "2026-08-30T19:16:58.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:cc-by-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 115891595,
+  "storage_human": "116 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Misdreavus - AI Art Model | PixAI",
+      "url": "https://pixai.art/en/model/1668138311211078131",
+      "snippet": "Generate stunning anime art with the &#x27;Misdreavus&#x27; model on PixAI. Browse artworks made with this model and try it free."
+    },
+    {
+      "title": "Pokemon & Palworld - Misdreavus - Free AI LORA | Tensor.Art",
+      "url": "https://tensor.art/models/783574525242646967",
+      "snippet": "Download Pokemon & Palworld - free LORA Pony AI model on TENSOR. POKEMON, CARTOON. By Test"
+    },
+    {
+      "title": "Misdreavus (Pokémon)｜AI Art Model & LoRA | PixAI",
+      "url": "https://pixai.art/model/1951268488855417412",
+      "snippet": "Just created this stunning pokemon anime art with the amazing &#x27;Misdreavus (Pokémon)&#x27; model on PixAI! Search for \"Misdreavus (Pokémon)\" on PixAI - the free & professional AI anime art generator. Create your own masterpieces in seconds. Try it now!"
+    },
+    {
+      "title": "Misdreavus (Pokémon) - AI Art Model | PixAI",
+      "url": "https://pixai.art/en/model/1951268488855417412",
+      "snippet": "Generate stunning pokemon anime art with the &#x27;Misdreavus (Pokémon)&#x27; model on PixAI. Browse artworks made with this model and try it free."
+    },
+    {
+      "title": "Ryanham1lton/Dusknoir · Hugging Face",
+      "url": "https://huggingface.co/Ryanham1lton/Dusknoir",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    }
+  ]
+}

@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "guillekenzo/aros-456bc2b1-VelvetLynx",
+  "slug": "guillekenzo-aros-456bc2b1-velvetlynx",
+  "author": "guillekenzo",
+  "url": "https://huggingface.co/guillekenzo/aros-456bc2b1-VelvetLynx",
+  "created_at": "2026-08-30T23:56:06.000Z",
+  "updated_at": "2026-08-31T00:19:55.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-image",
+  "library": "diffusers",
+  "languages": [],
+  "tags": [
+    "diffusers",
+    "text-to-image",
+    "lora",
+    "krea2",
+    "template:sd-lora",
+    "base_model:krea/Krea-2-Raw",
+    "base_model:adapter:krea/Krea-2-Raw",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 964226104,
+  "storage_human": "964 MB",
+  "base_model": "krea/Krea-2-Raw",
+  "formats": [
+    "diffusers"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "guillekenzo (garcia) - Hugging Face",
+      "url": "https://huggingface.co/guillekenzo/datasets",
+      "snippet": "guillekenzo Follow HuggingVince&#x27;s profile picturemolliexx99&#x27;s profile pictureAgtRodriguez&#x27;s profile picture 9 followers · 0 following"
+    },
+    {
+      "title": "guillekenzo (garcia) - Hugging Face",
+      "url": "https://huggingface.co/guillekenzo",
+      "snippet": "Image-to-image upscaler using NVIDIA PiD from_clean_flux. guillekenzo May 26. models 153. Sort: Recently updated. guillekenzo/aros-09cc5fd4-MellowDuality"
+    },
+    {
+      "title": "17,089+ Roblox Model IDs — Free Studio Models (August 2026) — rblxdb",
+      "url": "https://rblxdb.com/models",
+      "snippet": "Free Roblox models for Studio with their asset IDs — houses, cars, weapons, maps and more from the Creator Store, sorted by community votes."
+    },
+    {
+      "title": "Rodin AI — Rodin Gen-2.5 3D Model Generator",
+      "url": "https://rodinai.net/",
+      "snippet": "Generate 3D models from text or images with Rodin AI. Rodin Gen-2.5 delivers 5 quality tiers, up to 2M polygons, HD PBR textures, and GLB/FBX/OBJ export — free to try."
+    },
+    {
+      "title": "AI Model Catalog: All Vynix Models | Vynix",
+      "url": "https://vynix.app/models/",
+      "snippet": "Browse every active AI model available in Vynix for image generation, video, audio, and chat."
+    }
+  ]
+}

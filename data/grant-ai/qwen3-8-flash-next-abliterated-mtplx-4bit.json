@@ -5,7 +5,7 @@
   "author": "grant-ai",
   "url": "https://huggingface.co/grant-ai/Qwen3.8-Flash-Next-Abliterated-MTPLX-4bit",
   "created_at": "2026-08-28T04:41:56.000Z",
-  "updated_at": "2026-08-30T03:00:21.000Z",
+  "updated_at": "2026-08-31T01:45:01.000Z",
   "license": "qwen-community-1.0",
   "license_family": "unknown",
   "pipeline_tag": "image-text-to-text",
@@ -32,7 +32,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 0,
+  "downloads_30d": 255,
   "trending_score": 0,
   "parameters": 24716114019,
   "parameters_human": "24.72B",

@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "QuerynAi/queryn-adapter-qwen3-emb-8b_to_nemotron-1b-free",
+  "slug": "querynai-queryn-adapter-qwen3-emb-8b_to_nemotron-1b-free",
+  "author": "QuerynAi",
+  "url": "https://huggingface.co/QuerynAi/queryn-adapter-qwen3-emb-8b_to_nemotron-1b-free",
+  "created_at": "2026-08-30T21:14:09.000Z",
+  "updated_at": "2026-08-30T21:17:48.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "feature-extraction",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "onnx",
+    "embedding",
+    "embedding-translation",
+    "queryn",
+    "qwen3-emb-8b",
+    "nemotron-1b-free",
+    "feature-extraction",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 33899121,
+  "storage_human": "34 MB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Qwen/Qwen3-Embedding-8B · Hugging Face",
+      "url": "https://huggingface.co/Qwen/Qwen3-Embedding-8B",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GitHub - QwenLM/Qwen3-Embedding",
+      "url": "https://github.com/QwenLM/Qwen3-Embedding",
+      "snippet": "The Qwen3 Embedding model series is the latest proprietary model of the Qwen family, specifically designed for text embedding and ranking tasks. Building upon the dense foundational models of the Qwen3 series, it provides a comprehensive range of text embeddings and reranking models in various sizes (0.6B, 4B, and 8B). This series inherits the exceptional multilingual capabilities, long-text ..."
+    },
+    {
+      "title": "GitHub - Gigadelux/Queryn: Queryn is the engine for interoperability ...",
+      "url": "https://github.com/Gigadelux/Queryn/tree/main",
+      "snippet": "The gain is concentrated in pairs sourced from pplx-embed-1 and qwen3-emb-8b — e.g. pplx-embed-1 → qwen3-emb-8b went from 0.413 to 0.797 (+0.384) — confirming the v0 training instability diagnosis (a fixed learning rate overshooting on high-magnitude embeddings) that motivated v1&#x27;s cosine-similarity loss and ReduceLROnPlateau schedule."
+    },
+    {
+      "title": "Qwen/Qwen3-8B · Hugging Face",
+      "url": "https://huggingface.co/Qwen/Qwen3-8B",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Self-Host Qwen3 2026: 8B, 14B, 32B + Docker API",
+      "url": "https://www.promptquorum.com/power-local-llm/qwen-local-deployment-complete-guide-2026",
+      "snippet": "Self-host Qwen3 locally: 8B, 14B and 32B via Ollama/vLLM, hardware requirements, Docker API, and multi-GPU setup. Qwen3 has no 7B — use the 8B (qwen3:8b)."
+    }
+  ]
+}

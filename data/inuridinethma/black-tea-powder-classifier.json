@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "InuriDinethma/black-tea-powder-classifier",
+  "slug": "inuridinethma-black-tea-powder-classifier",
+  "author": "InuriDinethma",
+  "url": "https://huggingface.co/InuriDinethma/black-tea-powder-classifier",
+  "created_at": "2026-08-31T01:03:15.000Z",
+  "updated_at": "2026-08-31T01:37:46.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "keras",
+  "languages": [],
+  "tags": [
+    "keras",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 171499437,
+  "storage_human": "171 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Black Tea Powder Classifier - Hugging Face",
+      "url": "https://huggingface.co/spaces/manika123456789/black-tea-powder-classifier",
+      "snippet": "Upload a photo of black tea powder and the app will identify its type, returning the top probable classes with confidence scores. Simply provide an image and receive a clear list of likely categories."
+    },
+    {
+      "title": "Online monitoring of phytochemical dynamics in black tea processing ...",
+      "url": "https://www.sciencedirect.com/science/article/pii/S0169743925002965",
+      "snippet": "In this treatise, modified classifier models were used to monitor two key biomarkers, catechin and epigallocatechin gallate (EGCG), throughout the five distinct stages of black tea processing for tea quality estimation."
+    },
+    {
+      "title": "A tea classification method based on near infrared spectroscopy (NIRS ...",
+      "url": "https://www.sciencedirect.com/science/article/pii/S1350449525000064",
+      "snippet": "The method also performs well in transfer learning tasks; both black tea and green tea classification results demonstrate that the 1DResNet model with fine-tuning has strong potential for migration tasks. Overall, this classification method offers broader application prospects."
+    },
+    {
+      "title": "Simple black tea deblocking classifier - Google Patents",
+      "url": "https://patents.google.com/patent/CN203105496U/en",
+      "snippet": "The utility model discloses a simple black tea deblocking classifier, comprising a feeding hole, a deblocking room, a deblocking rod, a deblocking motor, a baiting hole, a classifying room, a first-level screen, a second-level screen, a third-level screen, a screen motor, a first-level baiting hole, a second-level baiting hole, a third-level baiting hole, and a discharge hole, wherein the ..."
+    },
+    {
+      "title": "Nondestructive Classification of Black Tea Grades Based on ...",
+      "url": "https://xplorestaging.ieee.org/document/10914619/",
+      "snippet": "Tea grade classification is a crucial standard in assessing tea quality, allowing for a rapid evaluation of the general quality of tea. This paper proposes a method for black tea grade classification based on hyperspectral imaging technology, chemometric algorithms, and machine learning. Standard Normal Variate (SNV) was used to preprocess the hyperspectral data. Then, correlation analysis was ..."
+    }
+  ]
+}

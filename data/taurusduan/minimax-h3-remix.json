@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "taurusduan/MiniMax-H3-Remix",
+  "slug": "taurusduan-minimax-h3-remix",
+  "author": "taurusduan",
+  "url": "https://huggingface.co/taurusduan/MiniMax-H3-Remix",
+  "created_at": "2026-08-31T01:09:03.000Z",
+  "updated_at": "2026-08-31T01:09:03.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": "image-to-video",
+  "library": "comfyui",
+  "languages": [],
+  "tags": [
+    "comfyui",
+    "minimax-h3",
+    "text-to-video",
+    "image-to-video",
+    "ref2va",
+    "video-generation",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 100250492494,
+  "storage_human": "100.3 GB",
+  "base_model": "MiniMax-H3",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "taurusduan/MiniMax-H3 · Hugging Face",
+      "url": "https://huggingface.co/taurusduan/MiniMax-H3",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "taurusduan/MiniMax-H3-Realism-People-LoRA · Hugging Face",
+      "url": "https://huggingface.co/taurusduan/MiniMax-H3-Realism-People-LoRA",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "MiniMax H3 Remix - bf16 v0.6 | Hailuo H3 by MiniMax Checkpoint | Civitai",
+      "url": "https://civitai.com/models/2879272/minimax-h3-remix",
+      "snippet": "🌟 MiniMax-H3 Remix Dual‑H3 Hierarchical‑Recombination Merge Dual‑H3 Hierarchical‑Recombination Merge is a merged checkpoint built with a custom hierarchical recombination technical pipeline based on two H3 base models."
+    },
+    {
+      "title": "GitHub - MiniMax-AI/MiniMax-H3 · GitHub",
+      "url": "https://github.com/MiniMax-AI/MiniMax-H3",
+      "snippet": "Contribute to MiniMax-AI/MiniMax-H3 development by creating an account on GitHub."
+    },
+    {
+      "title": "GitHub - ai-models-lab/minimax-h3: MiniMax-H3-Hub, ComfyUI Workflows ...",
+      "url": "https://github.com/ai-models-lab/minimax-h3",
+      "snippet": "Official Hub for MiniMax H3 (minimaxh3.run) — An all-in-one open-source resource platform for MiniMax H3 (Hailuo AI 3.0), the state-of-the-art native multi-modal 2K AI video generation model with synchronized 3D stereo audio."
+    }
+  ]
+}

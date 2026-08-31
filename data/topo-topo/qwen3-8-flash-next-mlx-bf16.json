@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "ToPo-ToPo/Qwen3.8-Flash-Next-mlx-bf16",
+  "slug": "topo-topo-qwen3-8-flash-next-mlx-bf16",
+  "author": "ToPo-ToPo",
+  "url": "https://huggingface.co/ToPo-ToPo/Qwen3.8-Flash-Next-mlx-bf16",
+  "created_at": "2026-08-31T00:24:16.000Z",
+  "updated_at": "2026-08-31T00:28:36.000Z",
+  "license": "qwen-community-1.0",
+  "license_family": "unknown",
+  "pipeline_tag": "image-text-to-text",
+  "library": "mlx",
+  "languages": [],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "qwen4_exp",
+    "image-text-to-text",
+    "conversational",
+    "base_model:Qwen/Qwen3.8-Flash-Next",
+    "base_model:finetune:Qwen/Qwen3.8-Flash-Next",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 177392830611,
+  "parameters_human": "177.39B",
+  "storage_bytes": 354805880720,
+  "storage_human": "354.8 GB",
+  "base_model": "Qwen/Qwen3.8-Flash-Next",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Qwen3.8-Flash-Next - GitHub",
+      "url": "https://github.com/QwenLM/Qwen3.8-Flash-Next/",
+      "snippet": "Qwen3.8-Flash-Next upgrades the model systematically along four aspects — attention, residual, embedding and optimization — improving model capability while further optimizing computational efficiency, model capacity and training stability: Attention A GDN + QSA hybrid architecture."
+    },
+    {
+      "title": "Qwen3.8-Flash-Next: How to Run Locally - unsloth.ai",
+      "url": "https://unsloth.ai/docs/models/qwen3.8-next",
+      "snippet": "Qwen3.8-Flash-Next is a new open-weight, 125B parameter MoE multimodal model from Qwen. Built on the new Qwen4 architecture, it supports a 262K context window and advanced reasoning. Qwen3.8 -Flash-Next outperforms Claude-4.6-Opus (Max) and can run locally on devices with 75GB RAM /unified memory with no GPU VRAM required."
+    },
+    {
+      "title": "Qwen3.8-Flash-Next - AI Wiki",
+      "url": "https://aiwiki.ai/wiki/qwen3_8_flash_next",
+      "snippet": "Qwen3.8-Flash-Next is an experimental open-weight multimodal large language model released by Alibaba Group&#x27;s Qwen team on August 26, 2026."
+    },
+    {
+      "title": "FlagRelease/Qwen3.8-Flash-Next-BF16-ascend-FlagOS · Hugging Face",
+      "url": "https://huggingface.co/FlagRelease/Qwen3.8-Flash-Next-BF16-ascend-FlagOS",
+      "snippet": "Introduction On August 26, Alibaba open-sourced its multimodal MoE model Qwen3.8-Flash-Next. The FlagOS community completed Day-0 synchronized adaptation across multiple chips, having accomplished multi-chip adaptation, precision alignment, and deployment validation based on the FlagOS unified open-source technology stack on 8 AI chips — including T-Head (Pingtouge), NVIDIA, Moore Threads ..."
+    },
+    {
+      "title": "Qwen3.8 | OpenLM.ai",
+      "url": "https://openlm.ai/qwen3.8/",
+      "snippet": "We are officially releasing Qwen 3.8-Max, the most capable model in the Qwen family to date. This also marks the first time we will open-source the weights of a Qwen-Max-class model. Built upon the architectural foundation of Qwen 3.5, Qwen 3.8-Max scales to 2.4 trillion parameters, delivering comprehensive improvements across coding, work, research, and long-horizon tasks."
+    }
+  ]
+}

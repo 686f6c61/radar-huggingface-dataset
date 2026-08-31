@@ -5,7 +5,7 @@
   "author": "mradermacher",
   "url": "https://huggingface.co/mradermacher/Hy-MT2-30B-A3B-uncensored-heretic-i1-GGUF",
   "created_at": "2026-08-30T16:02:06.000Z",
-  "updated_at": "2026-08-30T17:29:45.000Z",
+  "updated_at": "2026-08-31T02:25:03.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "translation",
@@ -106,8 +106,8 @@
   "trending_score": 0,
   "parameters": 30064725888,
   "parameters_human": "30.06B",
-  "storage_bytes": 41595437696,
-  "storage_human": "41.6 GB",
+  "storage_bytes": 286218569856,
+  "storage_human": "286.2 GB",
   "base_model": "OS-Software/Hy-MT2-30B-A3B-uncensored-heretic",
   "formats": [
     "gguf"

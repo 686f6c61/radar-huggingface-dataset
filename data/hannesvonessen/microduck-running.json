@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "HannesVonEssen/microduck-running",
+  "slug": "hannesvonessen-microduck-running",
+  "author": "HannesVonEssen",
+  "url": "https://huggingface.co/HannesVonEssen/microduck-running",
+  "created_at": "2026-08-30T20:36:20.000Z",
+  "updated_at": "2026-08-30T23:49:50.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "reinforcement-learning",
+  "library": "onnx",
+  "languages": [],
+  "tags": [
+    "onnx",
+    "microduck",
+    "microduck-policy",
+    "mjlab",
+    "robotics",
+    "locomotion",
+    "running",
+    "reinforcement-learning",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 18886246,
+  "storage_human": "19 MB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "HannesVonEssen (Hannes von Essen) - Hugging Face",
+      "url": "https://huggingface.co/HannesVonEssen",
+      "snippet": "AI & ML interests ... Recent Activity posted an update 3 days ago ... updated a model about 1 month ago ... updated a model about 2 months ago"
+    },
+    {
+      "title": "Hugging Face Releases Microduck Open Source Robot for Reinforcement ...",
+      "url": "https://explore.n1n.ai/blog/hugging-face-microduck-open-source-robot-reinforcement-learning-2026-08-27",
+      "snippet": "Hugging Face enters the physical AI market with Microduck, a $399 open-source robot designed for reinforcement learning and imitation learning. Learn how to integrate it with LLMs via n1n.ai."
+    },
+    {
+      "title": "HannesVonEssen (Hannes von Essen) - Hugging Face",
+      "url": "https://huggingface.co/HannesVonEssen/models",
+      "snippet": "📣 HF Viewer now supports Hugging Face login! 🤗 ⚡ Generate visualizations for all your models at once! 😎 Feature your models in the community showcase and set up your own profile/org collection page on hfviewer! ️ Write your own model articles on hfviewer in the same novel interactive style as our \"Gemma 4 family\" article - with ..."
+    },
+    {
+      "title": "A tiny biped robot you can teach new tricks - Pollen Robotics",
+      "url": "https://pollen-robotics.com/microduck/",
+      "snippet": "Microduck is a 25 cm biped robot with 15 motors, a camera, LiDAR and a grasping beak. Playable out of the box, and its open-source stack lets you train new behaviours in simulation and run them on the robot. Pre-order at $399."
+    },
+    {
+      "title": "Meet Microduck, Hugging Face&#x27;s $399 open-source robot you can ... - MSN",
+      "url": "https://www.msn.com/en-us/news/other/meet-microduck-hugging-faces-399-open-source-robot-you-can-train-yourself/ar-AA2b7Tlh",
+      "snippet": "The post Meet Microduck, Hugging Face&#x27;s $399 Open-Source Robot You Can Train Yourself appeared first on Android Headlines."
+    }
+  ]
+}

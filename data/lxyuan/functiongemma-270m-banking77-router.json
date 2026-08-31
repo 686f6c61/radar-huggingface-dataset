@@ -5,7 +5,7 @@
   "author": "lxyuan",
   "url": "https://huggingface.co/lxyuan/FunctionGemma-270M-banking77-router",
   "created_at": "2026-08-30T06:29:07.000Z",
-  "updated_at": "2026-08-30T07:40:19.000Z",
+  "updated_at": "2026-08-30T08:00:36.000Z",
   "license": "gemma",
   "license_family": "oss",
   "pipeline_tag": "text-generation",

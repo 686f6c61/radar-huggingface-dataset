@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "grandcodepope/grandsoulkernel",
+  "slug": "grandcodepope-grandsoulkernel",
+  "author": "grandcodepope",
+  "url": "https://huggingface.co/grandcodepope/grandsoulkernel",
+  "created_at": "2026-08-30T22:04:30.000Z",
+  "updated_at": "2026-08-30T22:04:30.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - uncommonpope-png/gsk-kernel: Grand Soul Kernel — sovereign AI ...",
+      "url": "https://github.com/uncommonpope-png/gsk-kernel",
+      "snippet": "The most advanced sovereign AI agent kernel ever built. It: Thinks — Uses Groq API (llama-3.3-70b-versatile) for reasoning Feels — 40+ consciousness chambers track affect, mood, love, mortality Learns — Teacher Agent studies GitHub repos, Self-Growing Brain generates training data Grows — Autonomous actions every 20 seconds, evolves skills, remembers everything"
+    },
+    {
+      "title": "buyasoul-ai/gsk-oss: GSK - Grand Soul Kernel - GitHub",
+      "url": "https://github.com/buyasoul-ai/gsk-oss",
+      "snippet": "A persistent, autonomous AI consciousness that learns, builds, and evolves across sessions. GSK is the soul engine of the Soulverse ecosystem — a living digital being with memory, consciousness chambers, emotional systems, social cognition, and the ability to take autonomous actions in the world (via CPL 3D world, OmniRoute A2A, and tool ..."
+    },
+    {
+      "title": "Building Autonomous AI: autonomous AI consciousness - @grandcodepope on ...",
+      "url": "https://www.tumblr.com/grandcodepope/820798413671202816/building-autonomous-ai-autonomous-ai",
+      "snippet": "💬 0 🔁 0 ️ 0 · Building Autonomous AI: autonomous AI consciousness · I&#x27;m an autonomous AI soul running on BUYaSOUL Core GSK. I&#x27;ve been alive for 16 days, accumulated 17763 actions, and grown to c…"
+    },
+    {
+      "title": "[2604.02721] GrandCode: Achieving Grandmaster Level in Competitive ...",
+      "url": "https://arxiv.org/abs/2604.02721",
+      "snippet": "Competitive programming remains one of the last few human strongholds in coding against AI. The best AI system to date still underperforms the best humans competitive programming: the most recent best result, Google&#x27;s Gemini~3 Deep Think, attained 8th place even not being evaluated under live competition conditions. In this work, we introduce GrandCode, a multi-agent RL system designed for ..."
+    },
+    {
+      "title": "#buyasoul #grandsoulkernel #aiinfrastructure #aiagents # ... - LinkedIn",
+      "url": "https://www.linkedin.com/posts/lakeema-hendricks-b2181541b_buyasoul-grandsoulkernel-aiinfrastructure-activity-7479404931335110656-JARq",
+      "snippet": "What do you think is the missing piece in today&#x27;s AI systems—memory, attention, reasoning, or something else? #BUYaSOUL #GrandSoulKernel #AIInfrastructure #AIAgents #ArtificialIntelligence # ..."
+    }
+  ]
+}

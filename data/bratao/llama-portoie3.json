@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "bratao/Llama-PortOIE3",
+  "slug": "bratao-llama-portoie3",
+  "author": "bratao",
+  "url": "https://huggingface.co/bratao/Llama-PortOIE3",
+  "created_at": "2024-12-18T23:54:56.000Z",
+  "updated_at": "2026-08-30T22:05:07.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "pt"
+  ],
+  "tags": [
+    "gguf",
+    "open-information-extraction",
+    "openie",
+    "portuguese",
+    "extractive-openie",
+    "llama3",
+    "llama-cpp",
+    "text-generation",
+    "pt",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 8,
+  "trending_score": 0,
+  "parameters": 8030261248,
+  "parameters_human": "8.03B",
+  "storage_bytes": 8540770624,
+  "storage_human": "8.5 GB",
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Open-source AI Models for Any Application | Llama 3",
+      "url": "https://developer.meta.com/ai/models/llama-3/",
+      "snippet": "Discover Llama 3&#x27;s open-source AI models you can fine-tune, distill and deploy anywhere. Build smarter applications with flexible AI solutions."
+    },
+    {
+      "title": "Llama AI Models | OpenSourcesAI",
+      "url": "https://opensourcesai.com/models/llama/",
+      "snippet": "Meta Llama models are widely supported open-weight options for local AI stacks, multimodal workflows, assistant prototypes, and guardrail experiments."
+    },
+    {
+      "title": "Llama 3 AI Model Review 2026: Features, Pricing, Integrations",
+      "url": "https://comparebestai.com/tools/llama-3",
+      "snippet": "Llama 3, developed by Meta AI and released in April 2024, is an advanced open-source language model designed to handle a wide array of language-based tasks. It is available in various parameter sizes, including 8B, 70B, and the latest 405B model, providing flexibility for different applications."
+    },
+    {
+      "title": "[2407.21783] The Llama 3 Herd of Models - arXiv.org",
+      "url": "https://arxiv.org/abs/2407.21783",
+      "snippet": "Modern artificial intelligence (AI) systems are powered by foundation models. This paper presents a new set of foundation models, called Llama 3. It is a herd of language models that natively support multilinguality, coding, reasoning, and tool usage. Our largest model is a dense Transformer with 405B parameters and a context window of up to 128K tokens. This paper presents an extensive ..."
+    },
+    {
+      "title": "Llama 3: Meta&#x27;s New AI Model - GeeksforGeeks",
+      "url": "https://www.geeksforgeeks.org/artificial-intelligence/llama-3-metas-new-ai-model/",
+      "snippet": "Meta AI just got a major upgrade with Llama 3, a powerful new large language model (LLM). This cutting-edge technology promises to change the way you interact with Meta&#x27;s platforms like Facebook, Messenger, and WhatsApp."
+    }
+  ]
+}

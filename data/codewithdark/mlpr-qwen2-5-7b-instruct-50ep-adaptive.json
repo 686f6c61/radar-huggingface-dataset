@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "codewithdark/mlpr-qwen2.5-7b-instruct-50ep-adaptive",
+  "slug": "codewithdark-mlpr-qwen2-5-7b-instruct-50ep-adaptive",
+  "author": "codewithdark",
+  "url": "https://huggingface.co/codewithdark/mlpr-qwen2.5-7b-instruct-50ep-adaptive",
+  "created_at": "2026-08-30T21:09:53.000Z",
+  "updated_at": "2026-08-31T00:12:44.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "generated_from_trainer",
+    "base_model:Qwen/Qwen2.5-7B-Instruct",
+    "base_model:adapter:Qwen/Qwen2.5-7B-Instruct",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 8099610482,
+  "storage_human": "8.1 GB",
+  "base_model": "Qwen/Qwen2.5-7B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Qwen/Qwen2.5-7B-Instruct · Hugging Face",
+      "url": "https://huggingface.co/Qwen/Qwen2.5-7B-Instruct",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Qwen/Qwen2.5-Coder-7B-Instruct · Hugging Face",
+      "url": "https://huggingface.co/Qwen/Qwen2.5-Coder-7B-Instruct",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "qwen2.5-7b-instruct Model by Qwen | NVIDIA NIM",
+      "url": "https://build.nvidia.com/qwen/qwen2_5-7b-instruct",
+      "snippet": "Chinese and English LLM targeting for language, coding, mathematics, reasoning, etc."
+    },
+    {
+      "title": "qwen2.5:7b-instruct",
+      "url": "https://ollama.com/library/qwen2.5:7b-instruct",
+      "snippet": "Qwen2.5 models are pretrained on Alibaba&#x27;s latest large-scale dataset, encompassing up to 18 trillion tokens. The model supports up to 128K tokens and has multilingual support."
+    },
+    {
+      "title": "Qwen-2.5-7B-Instruct | NVIDIA NGC",
+      "url": "https://catalog.ngc.nvidia.com/orgs/nim/teams/qwen/containers/qwen-2.5-7b-instruct",
+      "snippet": "Qwen2.5 is the latest version of Qwen family. This model is instruction-tuned language model of 7 billion parameters. It brings improvements upon Qwen2: Improvement in instruction following, long context support, multilingual support for over 29 languages including Chinese."
+    }
+  ]
+}

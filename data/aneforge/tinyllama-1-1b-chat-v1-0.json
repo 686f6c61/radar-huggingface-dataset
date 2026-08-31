@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "aneforge/TinyLlama-1.1B-Chat-v1.0",
+  "slug": "aneforge-tinyllama-1-1b-chat-v1-0",
+  "author": "aneforge",
+  "url": "https://huggingface.co/aneforge/TinyLlama-1.1B-Chat-v1.0",
+  "created_at": "2026-08-30T23:14:00.000Z",
+  "updated_at": "2026-08-30T23:14:11.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "aneforge",
+  "languages": [],
+  "tags": [
+    "aneforge",
+    "safetensors",
+    "llama",
+    "apple-neural-engine",
+    "text-generation",
+    "conversational",
+    "arxiv:2606.17090",
+    "base_model:TinyLlama/TinyLlama-1.1B-Chat-v1.0",
+    "base_model:finetune:TinyLlama/TinyLlama-1.1B-Chat-v1.0",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1100048384,
+  "parameters_human": "1.10B",
+  "storage_bytes": 2200619587,
+  "storage_human": "2.2 GB",
+  "base_model": "TinyLlama/TinyLlama-1.1B-Chat-v1.0",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "TinyLlama-1.1B-Chat-v1.0 - Hugging Face",
+      "url": "https://huggingface.co/TinyLlama/TinyLlama-1.1B-Chat-v1.0",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GitHub - inferless/tinyllama-1-1b-chat-v1-0: A chat model fine-tuned on ...",
+      "url": "https://github.com/inferless/tinyllama-1-1b-chat-v1-0",
+      "snippet": "TinyLlama-1.1B-Chat-v1. The TinyLlama project aims to train a compact 1.1B model on 3 trillion tokens. It shares architecture and tokenizer with Llama 2, making it compatible with many existing projects. With only 1.1B parameters, it&#x27;s suitable for applications with limited computational and memory resources."
+    },
+    {
+      "title": "Getting Started with TinyLlama-1.1B-Chat-v1.0",
+      "url": "https://www.secondstate.io/articles/tinyllama-1.1b-chat-v1.0/",
+      "snippet": "The command tool automatically downloads and installs the WasmEdge runtime, the model files, and the portable Wasm apps for inference. The TinyLlama team recently launched TinyLlama-1.1B-Chat version 1.0. Compared with the previous versions, TinyLlama-1.1B-Chat-v1. model pretrains a 1.1B Llama model on 3 trillion tokens."
+    },
+    {
+      "title": "Run TinyLlama 1.1B Locally: Step-by-Step Guide — AI Tutorial",
+      "url": "https://aiindigo.com/tutorials/getting-started-with-tinyllama-1-1b-running-ai-locally-on-edge-devices",
+      "snippet": "Deploy TinyLlama 1.1B on edge devices. A practical guide to installing, running, and customizing this 1.1B parameter model for local AI chatbots."
+    },
+    {
+      "title": "TinyLlama/TinyLlama-1.1B-Chat-v1.0 · download - Hugging Face",
+      "url": "https://huggingface.co/TinyLlama/TinyLlama-1.1B-Chat-v1.0/discussions/55/files",
+      "snippet": "conversational text-generation-inference License: apache-2.0 Model card Files Files and versions Community 56 Train Deploy"
+    }
+  ]
+}

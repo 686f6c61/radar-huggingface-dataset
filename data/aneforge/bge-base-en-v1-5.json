@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "aneforge/bge-base-en-v1.5",
+  "slug": "aneforge-bge-base-en-v1-5",
+  "author": "aneforge",
+  "url": "https://huggingface.co/aneforge/bge-base-en-v1.5",
+  "created_at": "2026-08-30T23:13:56.000Z",
+  "updated_at": "2026-08-30T23:13:58.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "sentence-similarity",
+  "library": "aneforge",
+  "languages": [],
+  "tags": [
+    "aneforge",
+    "safetensors",
+    "bert",
+    "apple-neural-engine",
+    "sentence-transformers",
+    "sentence-similarity",
+    "arxiv:2606.17090",
+    "base_model:BAAI/bge-base-en-v1.5",
+    "base_model:finetune:BAAI/bge-base-en-v1.5",
+    "license:mit",
+    "text-embeddings-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 109482752,
+  "parameters_human": "109.5M",
+  "storage_bytes": 437955512,
+  "storage_human": "438 MB",
+  "base_model": "BAAI/bge-base-en-v1.5",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "BAAI/bge-base-en-v1.5 · Hugging Face",
+      "url": "https://huggingface.co/BAAI/bge-base-en-v1.5",
+      "snippet": "Suggest to use bge v1.5, which alleviates the issue of the similarity distribution. Since we finetune the models by contrastive learning with a temperature of 0.01, the similarity distribution of the current BGE model is about in the interval [0.6, 1]."
+    },
+    {
+      "title": "BGE v1 & v1.5 — BGE documentation - bge-model.com",
+      "url": "https://bge-model.com/bge/bge_v1_v1.5.html",
+      "snippet": "BGE v1 & v1.5 # BGE v1 and v1.5 are series of encoder only models base on BERT. They achieved best performance among the models of the same size at the time of release. BGE # The first group of BGE models was released in Aug 2023. The bge-large-en and bge-large-zh ranked 1st on MTEB and C-MTEB benchmarks at the time released."
+    },
+    {
+      "title": "BAAI/bge-base-en · Hugging Face",
+      "url": "https://huggingface.co/BAAI/bge-base-en",
+      "snippet": "Suggest to use bge v1.5, which alleviates the issue of the similarity distribution. Since we finetune the models by contrastive learning with a temperature of 0.01, the similarity distribution of the current BGE model is about in the interval [0.6, 1]."
+    },
+    {
+      "title": "GitHub - NabilOS01/bge-base-en-v1.5",
+      "url": "https://github.com/NabilOS01/bge-base-en-v1.5",
+      "snippet": "Suggest to use bge v1.5, which alleviates the issue of the similarity distribution. Since we finetune the models by contrastive learning with a temperature of 0.01, the similarity distribution of the current BGE model is about in the interval [0.6, 1]."
+    },
+    {
+      "title": "bge-base-en-v1.5 download | SourceForge.net",
+      "url": "https://sourceforge.net/projects/bge-base-en-v1-5/",
+      "snippet": "Download bge-base-en-v1.5 for free. Efficient English embedding model for semantic search and retrieval. bge-base-en-v1.5 is an English sentence embedding model from BAAI optimized for dense retrieval tasks, part of the BGE (BAAI General Embedding) family. It is a fine-tuned BERT-based model designed to produce high-quality, semantically meaningful embeddings for tasks like semantic similarity ..."
+    }
+  ]
+}

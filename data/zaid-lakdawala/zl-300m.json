@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "Zaid-Lakdawala/ZL-300M",
+  "slug": "zaid-lakdawala-zl-300m",
+  "author": "Zaid-Lakdawala",
+  "url": "https://huggingface.co/Zaid-Lakdawala/ZL-300M",
+  "created_at": "2026-08-30T22:41:27.000Z",
+  "updated_at": "2026-08-30T22:50:30.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "safetensors",
+    "from-scratch",
+    "knowledge-distillation",
+    "decoder-only",
+    "education",
+    "text-generation",
+    "conversational",
+    "en",
+    "base_model:Qwen/Qwen2.5-7B-Instruct",
+    "base_model:finetune:Qwen/Qwen2.5-7B-Instruct",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 417023232,
+  "parameters_human": "417.0M",
+  "storage_bytes": 1668117992,
+  "storage_human": "1.7 GB",
+  "base_model": "Qwen/Qwen2.5-7B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "General Intuition raising $300M for AI trained on gaming data",
+      "url": "https://thenextweb.com/news/general-intuition-300m-world-models-gaming-data",
+      "snippet": "The startup rejected OpenAI&#x27;s $500M bid for its gaming video data. Now it&#x27;s raising $300M at a $2B valuation to train AI agents on 2 billion video game clips per year."
+    },
+    {
+      "title": "Z.ai - Advanced AI Chatbot & Agent powered by GLM-5.3-Flash",
+      "url": "https://z.ai/",
+      "snippet": "Meet Z.ai, the AI assistant powered by GLM-5.3-Flash. Build websites, write code, handle long-horizon tasks, and get instant answers. Fast, smart, and reliable."
+    },
+    {
+      "title": "AI Leaderboard 2026: Rankings for 300+ Top AI Models by Intelligence ...",
+      "url": "https://llm-stats.com/",
+      "snippet": "The AI Leaderboard — independent rankings of GPT, Claude, Gemini, Llama, DeepSeek and 300+ AI models by intelligence, speed and price. Composite LLM Stats Score updated continuously from public benchmarks and live API metrics."
+    },
+    {
+      "title": "Zaid Lakdawala - CEO & Founder - NebulaSys | LinkedIn",
+      "url": "https://www.linkedin.com/in/zaidlakdawala",
+      "snippet": "I&#x27;m the Founder and CEO of NebulaSys, an AI-powered services platform that helps businesses scale and innovate by providing top-tier AI talent, advanced feature engineering, and end-to-end ..."
+    },
+    {
+      "title": "Z.ai - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Z.ai",
+      "snippet": "Z.AI Co., Ltd., [1][2][a] branded internationally as Z.ai, [3][4] is a Chinese artificial intelligence company; their flagship product is the GLM (General Language Model) family of open weights large language models (LLMs). Formerly known as Zhipu AI outside China until 2025, [5][6][3] it is China&#x27;s first major LLM company to make initial public offering, on the Hong Kong Stock Exchange in ..."
+    }
+  ]
+}

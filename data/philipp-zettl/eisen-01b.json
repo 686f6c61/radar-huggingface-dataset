@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "philipp-zettl/eisen-01b",
+  "slug": "philipp-zettl-eisen-01b",
+  "author": "philipp-zettl",
+  "url": "https://huggingface.co/philipp-zettl/eisen-01b",
+  "created_at": "2026-08-30T19:39:20.000Z",
+  "updated_at": "2026-08-30T21:17:00.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "de"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "llama",
+    "text-generation",
+    "de",
+    "dataset:roneneldan/TinyStories",
+    "license:mit",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 125851392,
+  "parameters_human": "125.9M",
+  "storage_bytes": 505591594,
+  "storage_human": "506 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "philipp-zettl (PZ) - Hugging Face",
+      "url": "https://huggingface.co/philipp-zettl",
+      "snippet": "This is probably a very hot take, but here goes nothing. With the incredibly accurate LoRAs we see emerge for high quality models like FLUX from services like fal.ai that offer training within single digit minutes, e.g. 2 min per 1000 iterations. Why the hell are people publishing private LoRAs as public models?!"
+    },
+    {
+      "title": "philipp-zettl (PZ) - Hugging Face",
+      "url": "https://huggingface.co/philipp-zettl/models",
+      "snippet": "upvoted a changelog about 2 months ago upvoted a paper 2 months ago"
+    },
+    {
+      "title": "philipp-zettl · GitHub",
+      "url": "https://github.com/philipp-zettl",
+      "snippet": "Contribution activity August 2026 philipp-zettl has no activity yet for this period."
+    },
+    {
+      "title": "PhoneLLM Alpha 1: An Open 30B MoE Built to Answer the Phone",
+      "url": "https://www.aimodeling.com/en/news/slug/phonellm-alpha-1-voice-agent-open-model",
+      "snippet": "A 30B MoE with 3.5B active parameters, built to take calls The model card lays out the specifics: PhoneLLM Alpha 1 is a full-parameter fine-tune of NVIDIA&#x27;s Nemotron 3 Nano 30B-A3B, trained with the NVIDIA NeMo framework. The architecture is a hybrid Mamba-Transformer mixture-of-experts — 30B total parameters, only 3.5B active — with a 262,144-token context window, BF16 safetensors, and a ..."
+    },
+    {
+      "title": "GitHub - philipp-eisen/livekit-agents: A powerful framework for ...",
+      "url": "https://github.com/philipp-eisen/livekit-agents",
+      "snippet": "The Agent Framework is designed for building realtime, programmable participants that run on servers. Use it to create conversational, multi-modal voice agents that can see, hear, and understand."
+    }
+  ]
+}

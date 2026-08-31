@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "fiveflow/rq_8b_32",
+  "slug": "fiveflow-rq_8b_32",
+  "author": "fiveflow",
+  "url": "https://huggingface.co/fiveflow/rq_8b_32",
+  "created_at": "2026-08-31T00:33:26.000Z",
+  "updated_at": "2026-08-31T00:41:23.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3",
+    "text-generation",
+    "conversational",
+    "arxiv:1910.09700",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 8190735360,
+  "parameters_human": "8.19B",
+  "storage_bytes": 16392939858,
+  "storage_human": "16.4 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "fiveflow (yonghoon) - Hugging Face",
+      "url": "https://huggingface.co/fiveflow",
+      "snippet": "fiveflow/flan-t5-base-gsm8k Text2Text Generation • Updated Aug 24 Expand 19 model s"
+    },
+    {
+      "title": "fiveflow (yonghoon) - Hugging Face",
+      "url": "https://huggingface.co/fiveflow/datasets",
+      "snippet": "User profile of yonghoon on Hugging Face"
+    },
+    {
+      "title": "Fiveflow AI Model Benchmarks | BenchmarkList",
+      "url": "https://benchmarklist.com/providers/fiveflow/",
+      "snippet": "Fiveflow AI model benchmark profile: 2 models, 1 covered benchmarks, and source-linked evaluation rows on BenchmarkList."
+    },
+    {
+      "title": "Google",
+      "url": "https://www.google.com/",
+      "snippet": "Search the world&#x27;s information, including webpages, images, videos and more. Google has many special features to help you find exactly what you&#x27;re looking for."
+    },
+    {
+      "title": "‎Google Gemini",
+      "url": "https://gemini.google.com/",
+      "snippet": "Meet Gemini, Google&#x27;s AI assistant. Get help with writing, planning, brainstorming, and more. Experience the power of generative AI."
+    }
+  ]
+}

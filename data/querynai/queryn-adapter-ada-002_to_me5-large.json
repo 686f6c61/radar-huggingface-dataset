@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "QuerynAi/queryn-adapter-ada-002_to_me5-large",
+  "slug": "querynai-queryn-adapter-ada-002_to_me5-large",
+  "author": "QuerynAi",
+  "url": "https://huggingface.co/QuerynAi/queryn-adapter-ada-002_to_me5-large",
+  "created_at": "2026-08-30T20:58:01.000Z",
+  "updated_at": "2026-08-30T20:58:10.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "feature-extraction",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "onnx",
+    "embedding",
+    "embedding-translation",
+    "queryn",
+    "ada-002",
+    "me5-large",
+    "feature-extraction",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 6630164,
+  "storage_human": "7 MB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Models - Hugging Face",
+      "url": "https://huggingface.co/models?other=queryn",
+      "snippet": "Explore machine learning models. QuerynAi/queryn-adapter-fastembed-bge-small_to_nemotron-1b-free"
+    },
+    {
+      "title": "text-embedding-ada-002 Model | OpenAI API",
+      "url": "https://developers.openai.com/api/docs/models/text-embedding-ada-002",
+      "snippet": "text-embedding-ada-002 $ 0.10"
+    },
+    {
+      "title": "‎Google Gemini",
+      "url": "https://gemini.google.com/",
+      "snippet": "Meet Gemini, Google&#x27;s AI assistant. Get help with writing, planning, brainstorming, and more. Experience the power of generative AI."
+    },
+    {
+      "title": "Gemini — Google DeepMind",
+      "url": "https://deepmind.google/models/gemini/",
+      "snippet": "Gemini 3.5 Flash-Lite has proven incredibly fast and reliable. Ultimately, the model unlocks direct accessibility, giving users a highly responsive option they can choose on demand for smooth, uninterrupted execution.\" Ashwin Kannan, Principal AI Engineer, Palo Alto Networks"
+    },
+    {
+      "title": "Queryn - AI-powered Product Search for WooCommerce",
+      "url": "https://wordpress.org/plugins/queryn/",
+      "snippet": "Description Queryn transforms the way customers search your WooCommerce store. Instead of typing exact product names or SKUs, shoppers can describe exactly what they want in plain language — and Queryn&#x27;s AI engine translates that into precise results in real time. Powered by the world&#x27;s leading AI providers (OpenAI, Google Gemini, and Anthropic Claude), Queryn intelligently parses ..."
+    }
+  ]
+}

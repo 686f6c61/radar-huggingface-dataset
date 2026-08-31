@@ -1,0 +1,77 @@
+{
+  "schema": 1,
+  "id": "menezesbruno/manaca-1b-base",
+  "slug": "menezesbruno-manaca-1b-base",
+  "author": "menezesbruno",
+  "url": "https://huggingface.co/menezesbruno/manaca-1b-base",
+  "created_at": "2026-08-30T23:22:00.000Z",
+  "updated_at": "2026-08-31T01:36:38.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "pt"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "llama",
+    "text-generation",
+    "portuguese",
+    "brazilian-portuguese",
+    "pt-br",
+    "megatron-lm",
+    "causal-lm",
+    "pt",
+    "dataset:TucanoBR/GigaVerbo",
+    "dataset:wikimedia/wikipedia",
+    "license:cc-by-4.0",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1722951680,
+  "parameters_human": "1.72B",
+  "storage_bytes": 3447685514,
+  "storage_human": "3.4 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Models - Hugging Face",
+      "url": "https://huggingface.co/models?sort=trending&search=1B",
+      "snippet": "Explore machine learning models."
+    },
+    {
+      "title": "Models - Hugging Face",
+      "url": "https://huggingface.co/models",
+      "snippet": "Explore machine learning models. DavidAU/Qwen3.8-27B-Cold-Fusion-GAIN-V1.1-NM-DAU-NEO-MAX-MTP-GGUF"
+    },
+    {
+      "title": "LLM Leaderboard - Comparison of AI models from OpenAI, Anthropic ...",
+      "url": "https://artificialanalysis.ai/leaderboards/models",
+      "snippet": "Comparison and ranking the performance of over 250 AI models (LLMs) across key metrics including intelligence, price, performance and speed (output speed - tokens per second & latency - TTFT), context window & others."
+    },
+    {
+      "title": "BaseModel.ai — The Behavioral Foundation Model",
+      "url": "https://www.basemodel.ai/",
+      "snippet": "BaseModel.ai learns directly from raw behavioral events — clicks, purchases, page views, app opens — and automatically creates the optimal feature representation."
+    },
+    {
+      "title": "AI Leaderboard 2026: Rankings for 300+ Top AI Models by Intelligence ...",
+      "url": "https://llm-stats.com/",
+      "snippet": "The AI Leaderboard — independent rankings of GPT, Claude, Gemini, Llama, DeepSeek and 300+ AI models by intelligence, speed and price. Composite LLM Stats Score updated continuously from public benchmarks and live API metrics."
+    }
+  ]
+}

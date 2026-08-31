@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "Abdullah-afify/egy-names-fallback-classifier",
+  "slug": "abdullah-afify-egy-names-fallback-classifier",
+  "author": "Abdullah-afify",
+  "url": "https://huggingface.co/Abdullah-afify/egy-names-fallback-classifier",
+  "created_at": "2026-08-30T19:22:22.000Z",
+  "updated_at": "2026-08-30T19:23:28.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": "scikit-learn",
+  "languages": [
+    "ar",
+    "en"
+  ],
+  "tags": [
+    "scikit-learn",
+    "egyptian",
+    "arabic",
+    "names",
+    "onomastics",
+    "text-classification",
+    "gender-classification",
+    "religion-classification",
+    "tabular-classification",
+    "egy-names",
+    "ar",
+    "en",
+    "dataset:Abdullah-afify/egyptian-names",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1859065,
+  "storage_human": "2 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Abdullah-afify/egyptian-names · Datasets at Hugging Face",
+      "url": "https://huggingface.co/datasets/Abdullah-afify/egyptian-names",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Abdullah-afify/egyptian-names at main - Hugging Face",
+      "url": "https://huggingface.co/datasets/Abdullah-afify/egyptian-names/tree/main",
+      "snippet": "Size: 1M - 10M Tags: arabic nlp egypt onomastics patronymics names + 4 Libraries: Datasets pandas Polars + 1 License: mit Dataset card Data Studio FilesFiles and versions xet Community 1 main egyptian-names 112 MB 1 contributor History:49 commits Abdullah-afify Update dataset documentation and schema for v0.3.1 (14D onomastic intelligence ..."
+    },
+    {
+      "title": "GitHub - AbdullahAfifyKhalil/egy-names-php: Egyptian names engine for ...",
+      "url": "https://github.com/AbdullahAfifyKhalil/egy-names-php",
+      "snippet": "A legal Egyptian name is a patronymic chain, not a first name and a last name. This package generates, translates, splits, and corrects those chains. Product page: afify.co/egy-names."
+    },
+    {
+      "title": "afify/egy-names - Packagist.org",
+      "url": "https://packagist.org/packages/afify/egy-names",
+      "snippet": "README Egyptian names engine for PHP 8.1+. Same book as the other SDKs — 44,626 lemmas, offline. A legal Egyptian name is a patronymic chain, not a first name and a last name. This package generates, translates, splits, and corrects those chains. Product page: afify.co/egy-names. This is the engine. For Faker fixtures, use afify/faker-egy-names."
+    },
+    {
+      "title": "egy_names - Dart API docs - Pub",
+      "url": "https://pub.dev/documentation/egy_names/latest/",
+      "snippet": "A production-grade Egyptian onomastic intelligence library for Dart and Flutter. Powered by 33,117 verified Egyptian name lemmas and 134,000+ lookup keys, derived from an engineered dataset of 2.46 million Egyptian student records (11 million+ name tokens) from the Thanawiya Amma cohorts (2024-2026). Developed by Abdullah Afify / Afify."
+    }
+  ]
+}

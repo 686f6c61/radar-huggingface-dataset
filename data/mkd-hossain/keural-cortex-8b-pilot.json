@@ -1,0 +1,79 @@
+{
+  "schema": 1,
+  "id": "mkd-hossain/Keural-Cortex-8B-pilot",
+  "slug": "mkd-hossain-keural-cortex-8b-pilot",
+  "author": "mkd-hossain",
+  "url": "https://huggingface.co/mkd-hossain/Keural-Cortex-8B-pilot",
+  "created_at": "2026-08-31T01:10:23.000Z",
+  "updated_at": "2026-08-31T01:37:20.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "ko",
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3",
+    "text-generation",
+    "continued-pretraining",
+    "korean",
+    "ablation",
+    "research-artifact",
+    "conversational",
+    "ko",
+    "en",
+    "base_model:Qwen/Qwen3-8B-Base",
+    "base_model:finetune:Qwen/Qwen3-8B-Base",
+    "license:apache-2.0",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 2047683840,
+  "parameters_human": "2.05B",
+  "storage_bytes": 16392939478,
+  "storage_human": "16.4 GB",
+  "base_model": "Qwen/Qwen3-8B-Base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "mkd-hossain/keural-model - GitHub",
+      "url": "https://github.com/mkd-hossain/keural-model",
+      "snippet": "The model is developed to support long-context reasoning, multilingual understanding, and scalable training pipelines. This repository contains the training pipeline, tokenizer, and architecture configuration used for building the Keural foundation model."
+    },
+    {
+      "title": "mkd-hossain (Md Najmul Hossain) - Hugging Face",
+      "url": "https://huggingface.co/mkd-hossain",
+      "snippet": "AI and ML mkd-hossain Follow mkd-chanwoo&#x27;s profile picturemkd-dev&#x27;s profile pictureMkd-Yonas&#x27;s profile picture 7 followers · 6 following"
+    },
+    {
+      "title": "mkd-hossain/Keural-Model-Training - GitHub",
+      "url": "https://github.com/mkd-hossain/Keural-Model-Training",
+      "snippet": "Keural Model Training Full training pipeline for the Keural MoE Foundation Model — a 14.83B parameter Mixture-of-Experts LLM trained from scratch on Korean + English + Code."
+    },
+    {
+      "title": "Models - Hugging Face",
+      "url": "https://huggingface.co/models?other=keural",
+      "snippet": "9 Base only Inference AvailableInference Edit filters Sort: Trending Active filters: keural Clear all"
+    },
+    {
+      "title": "keural.com - MKD",
+      "url": "https://keural.com/",
+      "snippet": "MKD is building a next-generation AI ecosystem for enterprises and innovators. We provide the Keural AI platform, foundation models, and on-premises AI solutions."
+    }
+  ]
+}

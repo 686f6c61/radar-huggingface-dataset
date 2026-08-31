@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "jan-grzybek/aerial-film-restorer",
+  "slug": "jan-grzybek-aerial-film-restorer",
+  "author": "jan-grzybek",
+  "url": "https://huggingface.co/jan-grzybek/aerial-film-restorer",
+  "created_at": "2026-08-31T00:49:36.000Z",
+  "updated_at": "2026-08-31T00:58:22.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-to-image",
+  "library": "pytorch",
+  "languages": [],
+  "tags": [
+    "pytorch",
+    "safetensors",
+    "image-restoration",
+    "aerial-imagery",
+    "historical",
+    "film",
+    "remote-sensing",
+    "image-to-image",
+    "arxiv:2204.04676",
+    "license:cc-by-4.0",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 17315161,
+  "parameters_human": "17.3M",
+  "storage_bytes": 144316922,
+  "storage_human": "144 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Models - Hugging Face",
+      "url": "https://huggingface.co/models?sort=created",
+      "snippet": "Explore machine learning models."
+    },
+    {
+      "title": "jangrzybek (Jan Grzybek) - Hugging Face",
+      "url": "https://huggingface.co/jangrzybek",
+      "snippet": "User profile of Jan Grzybek on Hugging Face"
+    },
+    {
+      "title": "AI-POWERED RESTORATION OF VINTAGE FILMS INTO NEW CINEMA ... - ResearchGate",
+      "url": "https://www.researchgate.net/publication/383087785_AI-POWERED_RESTORATION_OF_VINTAGE_FILMS_INTO_NEW_CINEMA_HARMONIZING_CREATION_AND_AUTOMATION",
+      "snippet": "The revival of classic films has made significant progress thanks to Artificial Intelligence-powered restoration methods. The AI produces a restored film with improved brightness, resolution and ..."
+    },
+    {
+      "title": "video-restoration · GitHub Topics · GitHub",
+      "url": "https://github.com/topics/video-restoration",
+      "snippet": "machine-learning video image-processing artificial-intelligence video-processing vfx video-streaming super-resolution video-editing restoration vlm generative-models video-generation video-restoration llm generative-ai Updated last month Python"
+    },
+    {
+      "title": "image-restoration · GitHub Topics · GitHub",
+      "url": "https://github.com/topics/image-restoration",
+      "snippet": "The state-of-the-art image restoration model without nonlinear activation functions."
+    }
+  ]
+}

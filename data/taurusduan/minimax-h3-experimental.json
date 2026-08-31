@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "taurusduan/MiniMax-H3-experimental",
+  "slug": "taurusduan-minimax-h3-experimental",
+  "author": "taurusduan",
+  "url": "https://huggingface.co/taurusduan/MiniMax-H3-experimental",
+  "created_at": "2026-08-31T01:04:21.000Z",
+  "updated_at": "2026-08-31T01:04:21.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 66377543912,
+  "storage_human": "66.4 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "taurusduan/MiniMax-H3-experimental · Hugging Face",
+      "url": "https://huggingface.co/taurusduan/MiniMax-H3-experimental",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "taurusduan/MiniMax-H3 · Hugging Face",
+      "url": "https://huggingface.co/taurusduan/MiniMax-H3",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GitHub - MiniMax-AI/MiniMax-H3 · GitHub",
+      "url": "https://github.com/MiniMax-AI/MiniMax-H3",
+      "snippet": "Contribute to MiniMax-AI/MiniMax-H3 development by creating an account on GitHub."
+    },
+    {
+      "title": "GitHub - ai-models-lab/minimax-h3: MiniMax-H3-Hub, ComfyUI Workflows ...",
+      "url": "https://github.com/ai-models-lab/minimax-h3",
+      "snippet": "Official Hub for MiniMax H3 (minimaxh3.run) — An all-in-one open-source resource platform for MiniMax H3 (Hailuo AI 3.0), the state-of-the-art native multi-modal 2K AI video generation model with synchronized 3D stereo audio."
+    },
+    {
+      "title": "MiniMax H3 - AI Model Library | Build on Vast.ai",
+      "url": "https://vast.ai/model/minimax-h3",
+      "snippet": "H3-AudioVAE compresses 32 kHz audio into latent tokens at a 40 Hz temporal rate, running the left and right channels independently through a shared encoder and decoder and recombining them for stereo. Model Variants MiniMax H3 ships as two task-specific checkpoints: H3-Base-FL2VA handles first-and-last-frame mode."
+    }
+  ]
+}

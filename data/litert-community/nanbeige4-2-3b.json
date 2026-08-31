@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "litert-community/Nanbeige4.2-3B",
+  "slug": "litert-community-nanbeige4-2-3b",
+  "author": "litert-community",
+  "url": "https://huggingface.co/litert-community/Nanbeige4.2-3B",
+  "created_at": "2026-08-01T10:50:01.000Z",
+  "updated_at": "2026-08-31T01:31:53.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "litert-lm",
+  "languages": [],
+  "tags": [
+    "litert-lm",
+    "on-device",
+    "reasoning",
+    "text-generation",
+    "base_model:Nanbeige/Nanbeige4.2-3B",
+    "base_model:finetune:Nanbeige/Nanbeige4.2-3B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 5,
+  "downloads_30d": 673,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 18054944656,
+  "storage_human": "18.1 GB",
+  "base_model": "Nanbeige/Nanbeige4.2-3B",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "litert-community/Nanbeige4.2-3B · Hugging Face",
+      "url": "https://huggingface.co/litert-community/Nanbeige4.2-3B",
+      "snippet": "On-device build of Nanbeige/Nanbeige4.2-3B for Google&#x27;s LiteRT-LM runtime — an Apache-2.0 3B-class looped-transformer reasoning model (its 22 layers run twice per token, num_loops=2)."
+    },
+    {
+      "title": "Nanbeige4.2-3B | AI Model | There&#x27;s An AI For That",
+      "url": "https://theresanaiforthat.com/model/nanbeige4-2-3b/",
+      "snippet": "Nanbeige4.2-3B is a compact 3B-parameter agentic language model using a Looped Transformer architecture that reuses transformer layers to boost capacity without adding parameters. It combines strong tool-use and coding-agent performance with broad reasoning across math, science, and general agent benchmarks, supporting configurable thinking and tool-calling modes for multi-turn agentic workflows."
+    },
+    {
+      "title": "Nanbeige4.2-3B: Unlocking Agentic Capabilities in a Compact Model",
+      "url": "https://arxiv.org/pdf/2607.22083",
+      "snippet": "Abstract We present Nanbeige4.2-3B, a compact general agentic model with 3B non-embedding parameters. It delivers strong performance across code-agent, office-agent, and complex tool-use tasks while maintaining highly competitive reasoning capabilities in mathematics, coding, and science. Nanbeige4.2-3B is pretrained from scratch on 28T tokens with a Looped Transformer that reuses the layer ..."
+    },
+    {
+      "title": "README.md · Nanbeige/Nanbeige4.2-3B at main - Hugging Face",
+      "url": "https://huggingface.co/Nanbeige/Nanbeige4.2-3B/blob/main/README.md",
+      "snippet": "1. Introduction Nanbeige4.2-3B is a compact agentic model built on Nanbeige4.2-3B-Base, designed to combine strong agentic behavior with broad reasoning and alignment capabilities. Its Looped Transformer architecture reuses the transformer layers to increase model capacity without adding parameters."
+    },
+    {
+      "title": "Nanbeige4.2-3B — 3B looped-transformer… | AI/TLDR",
+      "url": "https://ai-tldr.dev/releases/nanbeige-4-2-3b/",
+      "snippet": "Nanbeige4.2-3B is a compact open-weight language model built for agent work — tool use, code, reasoning — and released under Apache-2.0 on Hugging Face. It comes from Nanbeige LLM Lab, the AI research team inside Chinese recruiting platform BOSS Zhipin, and follows their Nanbeige4.1-3B from earlier this year."
+    }
+  ]
+}

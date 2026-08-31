@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "cakir61/kaptan-pi-qwen-v3",
+  "slug": "cakir61-kaptan-pi-qwen-v3",
+  "author": "cakir61",
+  "url": "https://huggingface.co/cakir61/kaptan-pi-qwen-v3",
+  "created_at": "2026-08-30T21:17:42.000Z",
+  "updated_at": "2026-08-30T21:17:47.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 46659099,
+  "storage_human": "47 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Qwen",
+      "url": "https://qwen.ai/home",
+      "snippet": "Qwen Studio is an AI assistant for everyone, powered by the Qwen series models. It&#x27;s free to use, open to all, and ready to help with creativity, collaboration, and endless possibilities."
+    },
+    {
+      "title": "Qwen3 Technical Report - arXiv.org",
+      "url": "https://arxiv.org/html/2505.09388v1",
+      "snippet": "Qwen3 introduces several key advancements to enhance its functionality and usability. First, it integrates two distinct operating modes, thinking mode and non-thinking mode, into a single model. This allows users to switch between these modes without alternating between different models, e.g., switching from Qwen2.5 to QwQ (Qwen Team, 2024)."
+    },
+    {
+      "title": "pi-qwen-provider · Packages · Pi",
+      "url": "https://pi.dev/packages/pi-qwen-provider?name=qwen",
+      "snippet": "This will open a browser window for you to sign in with your qwen.ai account. 3. Use a model ... Or select interactively: ... Available Models qwen3-coder-plus - Advanced coding model (1M context) qwen3-coder-flash - Fast coding model (1M context) qwen3-32b - Large model with reasoning qwen2.5-vl-32b-instruct - Vision model for images"
+    },
+    {
+      "title": "[2505.09388] Qwen3 Technical Report - arXiv.org",
+      "url": "https://arxiv.org/abs/2505.09388",
+      "snippet": "In this work, we present Qwen3, the latest version of the Qwen model family. Qwen3 comprises a series of large language models (LLMs) designed to advance performance, efficiency, and multilingual capabilities. The Qwen3 series includes models of both dense and Mixture-of-Expert (MoE) architectures, with parameter scales ranging from 0.6 to 235 billion. A key innovation in Qwen3 is the ..."
+    },
+    {
+      "title": "‎Google Gemini",
+      "url": "https://gemini.google.com/",
+      "snippet": "Get assistance with writing, planning, learning, and more from Google AI."
+    }
+  ]
+}

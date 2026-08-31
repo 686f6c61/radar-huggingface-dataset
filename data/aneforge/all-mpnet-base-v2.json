@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "aneforge/all-mpnet-base-v2",
+  "slug": "aneforge-all-mpnet-base-v2",
+  "author": "aneforge",
+  "url": "https://huggingface.co/aneforge/all-mpnet-base-v2",
+  "created_at": "2026-08-31T00:48:38.000Z",
+  "updated_at": "2026-08-31T00:48:45.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "sentence-similarity",
+  "library": "aneforge",
+  "languages": [],
+  "tags": [
+    "aneforge",
+    "safetensors",
+    "mpnet",
+    "apple-neural-engine",
+    "sentence-transformers",
+    "sentence-similarity",
+    "arxiv:2606.17090",
+    "base_model:sentence-transformers/all-mpnet-base-v2",
+    "base_model:finetune:sentence-transformers/all-mpnet-base-v2",
+    "license:apache-2.0",
+    "text-embeddings-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 109486978,
+  "parameters_human": "109.5M",
+  "storage_bytes": 437971872,
+  "storage_human": "438 MB",
+  "base_model": "sentence-transformers/all-mpnet-base-v2",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "sentence-transformers/all-mpnet-base-v2 · Hugging Face",
+      "url": "https://huggingface.co/sentence-transformers/all-mpnet-base-v2",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "all-mpnet-base-v2 - Pinecone Docs",
+      "url": "https://docs.pinecone.io/models/all-mpnet-base-v2",
+      "snippet": "Use the all-mpnet-base-v2 embedding or reranking model with Pinecone: specs and index setup. all-mpnet-base-v2 is a sentence and short paragraph encoder."
+    },
+    {
+      "title": "all-mpnet-base-v2: Text-to-Text model — overview, use cases, alternatives",
+      "url": "https://www.aimodels.fyi/models/huggingFace/all-mpnet-base-v2-sentence-transformers",
+      "snippet": "Overview all-mpnet-base-v2 is a sentence embedding model developed by sentence-transformers that maps sentences and paragraphs to a 768-dimensional dense vector space. The model is built on the pretrained microsoft/mpnet-base backbone and fine-tuned using contrastive learning on over 1 billion sentence pairs across diverse datasets including Reddit comments, scientific papers, Stack Exchange ..."
+    },
+    {
+      "title": "sentence-transformers/all-mpnet-base-v2 · Sentence Similarity model ...",
+      "url": "https://mlforge.in/models/sentence-transformers/all-mpnet-base-v2/",
+      "snippet": "all-mpnet-base-v2 This is a sentence-transformers model: It maps sentences & paragraphs to a 768 dimensional dense vector space and can be used for tasks like clustering or semantic search."
+    },
+    {
+      "title": "All-mpnet-base-v2: Specs, Hardware & Live AI Battle | ModelVault",
+      "url": "https://www.modelvault.space/models/all-mpnet-base-v2",
+      "snippet": "All-mpnet-base-v2 is a versatile open-weight language model developed by Hugging Face. Built on modern Transformer architecture with Grouped-Query Attention (GQA) and Rotary Position Embeddings (RoPE), All-mpnet-base-v2 delivers strong performance in instruction following, multi-turn dialogue, creative synthesis, and structured JSON output generation."
+    }
+  ]
+}

@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "bratao/PortugueseT5-Instruct",
+  "slug": "bratao-portugueset5-instruct",
+  "author": "bratao",
+  "url": "https://huggingface.co/bratao/PortugueseT5-Instruct",
+  "created_at": "2025-05-28T23:53:42.000Z",
+  "updated_at": "2026-08-30T22:05:12.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "pt"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "t5",
+    "text2text-generation",
+    "portuguese",
+    "instruction-tuning",
+    "research-checkpoint",
+    "pt",
+    "base_model:bratao/portugueseT5",
+    "base_model:finetune:bratao/portugueseT5",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 8,
+  "trending_score": 0,
+  "parameters": 783150080,
+  "parameters_human": "783.2M",
+  "storage_bytes": 3132689612,
+  "storage_human": "3.1 GB",
+  "base_model": "bratao/portugueseT5",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "bratao/PortugueseT5-Instruct · Hugging Face",
+      "url": "https://huggingface.co/bratao/PortugueseT5-Instruct",
+      "snippet": "bratao / PortugueseT5-Instruct like 0 Safetensors t5 Model card FilesFiles and versions xet Community Copy to bucket new No model card Downloads last month 3 Safetensors Model size 0.8B params Tensor type F32 · Files info Inference Providers NEW This model isn&#x27;t deployed by any Inference Provider.🙋Ask for provider support"
+    },
+    {
+      "title": "PTT5/README.md at master · unicamp-dl/PTT5 · GitHub",
+      "url": "https://github.com/unicamp-dl/PTT5/blob/master/README.md",
+      "snippet": "PTT5 Official implementation of PTT5: Pretraining and validating the T5 model on Brazilian Portuguese data."
+    },
+    {
+      "title": "bratao (Bruno) - Hugging Face",
+      "url": "https://huggingface.co/bratao/datasets",
+      "snippet": "AI & ML interests ... Recent Activity liked a dataset about 1 month ago ... liked a dataset about 2 months ago"
+    },
+    {
+      "title": "GitHub - unicamp-dl/PTT5: Code for training and evaluating T5 on ...",
+      "url": "https://github.com/unicamp-dl/PTT5",
+      "snippet": "PTT5 Official implementation of PTT5: Pretraining and validating the T5 model on Brazilian Portuguese data."
+    },
+    {
+      "title": "How to Use the Portuguese T5 Model (PTT5) - fxis.ai",
+      "url": "https://fxis.ai/edu/how-to-use-the-portuguese-t5-model-ptt5/",
+      "snippet": "In the realm of natural language processing, the Portuguese T5 model, also known as PTT5, stands as a remarkable example of adapting existing models to work optimally with specific languages. Developed on the extensive BrWac corpus, it&#x27;s tailored specifically for improved performance in Portuguese sentence similarity and entailment tasks."
+    }
+  ]
+}

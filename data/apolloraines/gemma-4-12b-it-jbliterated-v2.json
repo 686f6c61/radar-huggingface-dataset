@@ -1,0 +1,80 @@
+{
+  "schema": 1,
+  "id": "ApolloRaines/Gemma-4-12B-it-Jbliterated-v2",
+  "slug": "apolloraines-gemma-4-12b-it-jbliterated-v2",
+  "author": "ApolloRaines",
+  "url": "https://huggingface.co/ApolloRaines/Gemma-4-12B-it-Jbliterated-v2",
+  "created_at": "2026-08-01T14:38:22.000Z",
+  "updated_at": "2026-08-30T23:10:26.000Z",
+  "license": "gemma",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "safetensors",
+    "gguf",
+    "gemma4_unified",
+    "gemma",
+    "gemma4",
+    "jbliterated",
+    "abliteration",
+    "uncensored",
+    "sft",
+    "text-generation",
+    "conversational",
+    "en",
+    "base_model:ApolloRaines/Gemma-4-12B-it-Jbliterated",
+    "base_model:quantized:ApolloRaines/Gemma-4-12B-it-Jbliterated",
+    "license:gemma",
+    "endpoints_compatible",
+    "region:us",
+    "imatrix"
+  ],
+  "likes": 1,
+  "downloads_30d": 802,
+  "trending_score": 0,
+  "parameters": 11959730224,
+  "parameters_human": "11.96B",
+  "storage_bytes": 44010229364,
+  "storage_human": "44.0 GB",
+  "base_model": "ApolloRaines/Gemma-4-12B-it-Jbliterated",
+  "formats": [
+    "gguf",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ApolloRaines/Gemma-4-12B-it-Jbliterated-v2 · Hugging Face",
+      "url": "https://huggingface.co/ApolloRaines/Gemma-4-12B-it-Jbliterated-v2",
+      "snippet": "A follow-up to Gemma-4-12B-it-Jbliterated (v1). v1 removed refusal behavior from the weights via multi-direction SVD abliteration. v2 keeps that edit and adds a light LoRA supervised fine-tune that repairs a residual defect abliteration alone leaves behind: on reasoning-enabled prompts, v1 still tends to safety-classify inside its thinking channel — and sometimes spirals there without ever ..."
+    },
+    {
+      "title": "ApolloRaines/Gemma-4-12B-it-Jbliterated · Hugging Face",
+      "url": "https://huggingface.co/ApolloRaines/Gemma-4-12B-it-Jbliterated",
+      "snippet": "Jbliterated version of Gemma-4-12B-it with refusal behaviors removed via multi-direction SVD abliteration. The goal of this release is simple: give people a Gemma 4 that follows instructions directly and keeps every bit of the base model&#x27;s capability while doing it."
+    },
+    {
+      "title": "Gemma 4 12B It Jbliterated by ApolloRaines - LLM Explorer",
+      "url": "https://llm-explorer.com/model/ApolloRaines%2FGemma-4-12B-it-Jbliterated,67Qomprts2H1ISoT5kdk23",
+      "snippet": "Gemma 4 12B It Jbliterated is an open-source 12b LLM by ApolloRaines. VRAM 7.4GB. Compare benchmarks, capabilities, and deployment details on LLM Explorer."
+    },
+    {
+      "title": "Architecture graph for ApolloRaines/Gemma-4-12B-it-Jbliterated.",
+      "url": "https://hfviewer.com/ApolloRaines/Gemma-4-12B-it-Jbliterated",
+      "snippet": "ApolloRaines/Gemma-4-12B-it-Jbliterated is a text-generation model (gemma4_unified_text architecture). It uses 48 transformer layers, a hidden size of 3,840, and 16 query heads with 8 key/value heads (grouped-query attention)."
+    },
+    {
+      "title": "ApolloRaines / Gemma-4-12B-it-Jbliterated-v2",
+      "url": "https://insights-db.paloaltonetworks.com/models/ApolloRaines/Gemma-4-12B-it-Jbliterated-v2/e3c99adc5d6274566ad910b4097f34ab504c470d/overview",
+      "snippet": "Discover potential threats in the ApolloRaines / Gemma-4-12B-it-Jbliterated-v2 model. Learn about the vulnerabilities that cause these threats, and explore security solutions by Palo Alto Networks Prisma AIRS."
+    }
+  ]
+}

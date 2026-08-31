@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "shuHernow/ettin-encoder-1b",
+  "slug": "shuhernow-ettin-encoder-1b",
+  "author": "shuHernow",
+  "url": "https://huggingface.co/shuHernow/ettin-encoder-1b",
+  "created_at": "2026-08-30T20:11:42.000Z",
+  "updated_at": "2026-08-30T20:11:42.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "feature-extraction",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "pytorch",
+    "modernbert",
+    "fill-mask",
+    "encoder",
+    "feature-extraction",
+    "en",
+    "arxiv:2507.11412",
+    "license:mit",
+    "text-embeddings-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 4125311038,
+  "storage_human": "4.1 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": true,
+  "removed_at": "2026-08-31T02:45:15.442Z",
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "jhu-clsp/ettin-encoder-1b · Hugging Face",
+      "url": "https://huggingface.co/jhu-clsp/ettin-encoder-1b",
+      "snippet": "🔬 Research Applications What Makes Ettin Unique Ettin provides the first controlled comparison of encoder vs. decoder architectures: Identical Training Data: Same 2T token mixture across all models Matched Architectures: Only attention patterns and objectives differ Open Everything: Training data, model weights, and batch-level training order"
+    },
+    {
+      "title": "Ettin Suite: SoTA Paired Encoders and Decoders - Hugging Face",
+      "url": "https://huggingface.co/blog/ettin",
+      "snippet": "ettin-encoder-400m / ettin-decoder-400m (400M params) ettin-encoder-1b / ettin-decoder-1b (1B params) Research Resources: 🤗 Ettin Model Collection 📝 Paper 🗂️ Training Data (2T+ tokens, fully open) 💻 GitHub Repository 📊 250+ Training Checkpoints for studying training dynamics or knowledge learning"
+    },
+    {
+      "title": "Introducing Ettin Suite: the SoTA open recipe to outperform existing ...",
+      "url": "https://lighton.ai/lighton-blogs/introducing-ettin-suite-the-sota-open-recipe-to-outperform-existing-generative-retrieval-models",
+      "snippet": "Introducing Ettin, the first ever SOTA suite of paired encoder & decoder models, developed by Johns Hopkins University in collaboration with LightOn."
+    },
+    {
+      "title": "Models · MTEB Leaderboard",
+      "url": "https://leaderboard.mteb.org/models",
+      "snippet": "Every embedding model on the MTEB Leaderboard — 700+ models with architecture type, parameter count, embedding dimension, context length, release date, and supported languages."
+    },
+    {
+      "title": "GitHub - JHU-CLSP/ettin-encoder-vs-decoder: State-of-the-art paired ...",
+      "url": "https://github.com/JHU-CLSP/ettin-encoder-vs-decoder",
+      "snippet": "This repository contains the first collection of paired encoder-only and decoder-only models trained with identical data, architecture, and training recipes. Ettin enables fair comparisons between encoder and decoder architectures across multiple scales, providing state-of-the-art performance for open-data models in their respective size ..."
+    }
+  ]
+}

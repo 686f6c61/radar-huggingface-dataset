@@ -5,7 +5,7 @@
   "author": "sleephashira",
   "url": "https://huggingface.co/sleephashira/bleach-jojo-multistyle-noobai-xl-vpred-lora",
   "created_at": "2026-08-29T21:10:59.000Z",
-  "updated_at": "2026-08-29T21:43:55.000Z",
+  "updated_at": "2026-08-30T22:33:59.000Z",
   "license": "other",
   "license_family": "unknown",
   "pipeline_tag": "text-to-image",
@@ -32,8 +32,8 @@
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
-  "storage_bytes": 459181485,
-  "storage_human": "459 MB",
+  "storage_bytes": 467005644,
+  "storage_human": "467 MB",
   "base_model": "Laxhar/noobai-XL-Vpred-1.0",
   "formats": [
     "diffusers"

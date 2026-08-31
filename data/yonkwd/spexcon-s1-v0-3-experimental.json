@@ -1,0 +1,77 @@
+{
+  "schema": 1,
+  "id": "YONKWd/Spexcon-S1-v0.3-Experimental",
+  "slug": "yonkwd-spexcon-s1-v0-3-experimental",
+  "author": "YONKWd",
+  "url": "https://huggingface.co/YONKWd/Spexcon-S1-v0.3-Experimental",
+  "created_at": "2026-08-30T21:58:24.000Z",
+  "updated_at": "2026-08-30T21:58:28.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "peft",
+    "safetensors",
+    "spexcon",
+    "spexcon-s1",
+    "experimental",
+    "qlora",
+    "lora",
+    "adapter",
+    "smoke-test",
+    "text-generation",
+    "conversational",
+    "en",
+    "base_model:Qwen/Qwen3-1.7B-Base",
+    "base_model:adapter:Qwen/Qwen3-1.7B-Base",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 117101333,
+  "storage_human": "117 MB",
+  "base_model": "Qwen/Qwen3-1.7B-Base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "YONKWd (script) - Hugging Face",
+      "url": "https://huggingface.co/YONKWd",
+      "snippet": "User profile of script on Hugging Face Qwen3.6-35B-A3B-Claude-4.7-Opus-Reasoning-Distilled-Q5_K_M-GGUF"
+    },
+    {
+      "title": "YONKWd/Cool-ai at main - Hugging Face",
+      "url": "https://huggingface.co/spaces/YONKWd/Cool-ai/tree/main",
+      "snippet": "Spaces: YONKWd / Cool-ai like 0 Running App FilesFiles Community main Cool-ai 86.9 MB Ctrl+K Ctrl+K 2 contributors History:2 commits YONKWd initial commit 28393fc verifiedabout 5 hours ago staticDuplicate from nerfies/paper-templateabout 5 hours ago .gitattributes Safe 2.32 kBDuplicate from nerfies/paper-templateabout 5 hours ago README.md 958 Bytesinitial commitabout 5 hours ago index.html ..."
+    },
+    {
+      "title": "LLM Leaderboard & AI Model Benchmarks — August 2026",
+      "url": "https://benchlm.ai/",
+      "snippet": "LLM Leaderboard & AI Model Benchmarks — August 2026 Compare frontier AI models by quality, cost, and context. 105 Supported and 123 Estimated models among 406 tracked LLMs — 408 benchmarks, real pricing, and runtime data in one place."
+    },
+    {
+      "title": "Skild AI Unveils S1: In-Context Learning for Long-Horizon Robot ...",
+      "url": "https://www.humanoidsdaily.com/news/skild-ai-unveils-s1-in-context-learning-for-long-horizon-robot-manipulation",
+      "snippet": "Skild AI has published results for S1, an embodied foundation model engineered to perform complex manipulation tasks purely through in-context prompting. By replacing text commands and heavy task-specific fine-tuning with a single video demonstration, the system executes multistep physical routines out of the box. The announcement challenges the dominant paradigm in robot learning, which ..."
+    },
+    {
+      "title": "ChatGPT: Chat, Work, Create & Code with AI",
+      "url": "https://chatgpt.com/",
+      "snippet": "Use ChatGPT to answer questions, write, create images, complete work, and code—all in one place. Get started for free or download the app."
+    }
+  ]
+}

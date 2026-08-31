@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "bratao/PortNOIE",
+  "slug": "bratao-portnoie",
+  "author": "bratao",
+  "url": "https://huggingface.co/bratao/PortNOIE",
+  "created_at": "2026-08-30T21:34:38.000Z",
+  "updated_at": "2026-08-30T22:04:56.000Z",
+  "license": "gpl-3.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "pt"
+  ],
+  "tags": [
+    "open-information-extraction",
+    "openie",
+    "portuguese",
+    "pytorch",
+    "sequence-labeling",
+    "research-checkpoint",
+    "pt",
+    "license:gpl-3.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 74833476,
+  "storage_human": "75 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "bratao (Bruno Cabral) · GitHub",
+      "url": "https://github.com/bratao",
+      "snippet": "A graph representing bratao&#x27;s contributions from July 06, 2025 to July 07, 2026. The contributions are 86% issues, 14% commits, 0% pull requests, 0% code review."
+    },
+    {
+      "title": "PortNOIE: A Neural Framework for Open Information Extraction for the ...",
+      "url": "https://link.springer.com/chapter/10.1007/978-3-030-98305-5_23",
+      "snippet": "In this work, we propose PortNOIE, a neural framework for open information extraction for the Portuguese language. We evaluate our method on a manually annotated corpus of Open IE extractions, obtaining better performance than the current state of the art for OpenIE for Portuguese, both based on rule-based approaches or neural methods."
+    },
+    {
+      "title": "bratao/llama7b-finetuned-openie-lora · Hugging Face",
+      "url": "https://huggingface.co/bratao/llama7b-finetuned-openie-lora",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "PortNOIE: Neural OpenIE for Portuguese",
+      "url": "https://www.scribd.com/document/801950565/PortNOIE-A-Neural-Framework-for-Open-Information-Extraction-for-the-Portuguese-Language-Cabral-Et-Al-2022",
+      "snippet": "PortNOIE: A Neural Framework for Open Information Extraction for the Portuguese Language Bruno Cabral (B) , Marlo Souza , and Daniela Barreiro Claro FORMAS Research Group, Federal University of Bahia, Salvador, Brazil { [Link],msouza,dclaro}@ [Link] Abstract. Open Information Extraction (OpenIE) is the task of extracting structured information from text. Recent advances in apply- ing Deep ..."
+    },
+    {
+      "title": "𝐀𝐈 𝐌𝐎𝐃𝐄𝐋𝐒 (@models__ai) • Instagram photos and videos",
+      "url": "https://www.instagram.com/models__ai/",
+      "snippet": "2M Followers, 348 Following, 7,130 Posts - 𝐀𝐈 𝐌𝐎𝐃𝐄𝐋𝐒 (@models__ai) on Instagram: \"𝐖𝐞 𝐃𝐨 𝐏𝐫𝐨𝐦𝐨𝐭𝐞 𝐀𝐫𝐭𝐢𝐟𝐢𝐜𝐢𝐚𝐥 𝐌𝐨𝐝𝐞𝐥𝐬, 𝐀𝐫𝐭𝐢𝐟𝐢𝐜𝐢𝐚𝐥 𝐀𝐫𝐭, 𝐀𝐧𝐝 𝐓𝐡𝐞 𝐖𝐨𝐫𝐥𝐝 𝐎𝐟 𝐀𝐈 ..."
+    }
+  ]
+}

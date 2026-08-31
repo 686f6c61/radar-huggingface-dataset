@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "QuerynAi/queryn-adapter-pplx-embed-1_to_nemotron-1b-free",
+  "slug": "querynai-queryn-adapter-pplx-embed-1_to_nemotron-1b-free",
+  "author": "QuerynAi",
+  "url": "https://huggingface.co/QuerynAi/queryn-adapter-pplx-embed-1_to_nemotron-1b-free",
+  "created_at": "2026-08-30T21:09:32.000Z",
+  "updated_at": "2026-08-30T21:09:56.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "feature-extraction",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "onnx",
+    "embedding",
+    "embedding-translation",
+    "queryn",
+    "pplx-embed-1",
+    "nemotron-1b-free",
+    "feature-extraction",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 8721750,
+  "storage_human": "9 MB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "perplexity-ai/pplx-embed-context-v1-4b · Hugging Face",
+      "url": "https://huggingface.co/perplexity-ai/pplx-embed-context-v1-4b",
+      "snippet": "Use pplx-embed-context-v1 for document chunks in RAG systems where surrounding context matters pplx-embed-v1 and pplx-embed-context-v1 natively produce unnormalized int8-quantized embeddings."
+    },
+    {
+      "title": "pplx-embed: State-of-the-Art Embedding Models for Web-Scale Retrieval",
+      "url": "https://research.perplexity.ai/articles/pplx-embed-state-of-the-art-embedding-models-for-web-scale-retrieval",
+      "snippet": "Today we are releasing pplx-embed-v1 and pplx-embed-context-v1, two state-of-the-art text embedding models built for real-world, web-scale retrieval."
+    },
+    {
+      "title": "Stop Paying for AI Coding: Run NVIDIA Nemotron 3 Ultra Free (2026 Setup ...",
+      "url": "https://justbeingresourceful.com/2026/06/16/stop-paying-for-ai-coding-run-nvidia-nemotron-3-ultra-free-2026-setup-guide/",
+      "snippet": "NVIDIA&#x27;s Nemotron 3 Ultra is a free, open 550B coding model you can run in your terminal. Here&#x27;s what it does, plus a 5-minute step-by-step setup with OpenCode."
+    },
+    {
+      "title": "[2602.11151] Diffusion-Pretrained Dense and Contextual Embeddings",
+      "url": "https://arxiv.org/abs/2602.11151",
+      "snippet": "In this report, we introduce pplx-embed, a family of multilingual embedding models that employ multi-stage contrastive learning on a diffusion-pretrained language model backbone for web-scale retrieval. By leveraging bidirectional attention through diffusion-based pretraining, our models capture comprehensive bidirectional context within passages, enabling the use of mean pooling and a late ..."
+    },
+    {
+      "title": "llama-nemotron-embed-1b-v2 Model by NVIDIA | NVIDIA NIM",
+      "url": "https://build.nvidia.com/nvidia/llama-nemotron-embed-1b-v2/modelcard",
+      "snippet": "llama-nemotron-embed-1b-v2 was developed by NVIDIA as part of the Nemotron retriever family. In addition to enabling multilingual and cross-lingual retrieval, this model reduces data storage footprint through dynamic embedding sizing and support for longer token length, making it feasible to handle large-scale datasets efficiently."
+    }
+  ]
+}

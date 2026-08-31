@@ -5,7 +5,7 @@
   "author": "AesSedai",
   "url": "https://huggingface.co/AesSedai/GLM-5.3-Flash-GGUF",
   "created_at": "2026-08-30T05:35:28.000Z",
-  "updated_at": "2026-08-30T08:28:31.000Z",
+  "updated_at": "2026-08-30T10:13:20.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": null,
@@ -20,13 +20,13 @@
     "imatrix",
     "conversational"
   ],
-  "likes": 1,
+  "likes": 3,
   "downloads_30d": 0,
   "trending_score": 0,
   "parameters": 320759404382,
   "parameters_human": "320.76B",
-  "storage_bytes": 607697122011,
-  "storage_human": "607.7 GB",
+  "storage_bytes": 846033378674,
+  "storage_human": "846.0 GB",
   "base_model": "zai-org/GLM-5.3-Flash-BF16",
   "formats": [
     "gguf"

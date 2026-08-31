@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "SnazzyArtist22/Jacksepticeye_V2",
+  "slug": "snazzyartist22-jacksepticeye_v2",
+  "author": "SnazzyArtist22",
+  "url": "https://huggingface.co/SnazzyArtist22/Jacksepticeye_V2",
+  "created_at": "2026-08-31T00:12:33.000Z",
+  "updated_at": "2026-08-31T00:12:49.000Z",
+  "license": "unknown",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:unknown",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 81448537,
+  "storage_human": "81 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "SnazzyArtist22 (Elliott Buxton) - Hugging Face",
+      "url": "https://huggingface.co/SnazzyArtist22",
+      "snippet": "AI & ML interests ... Recent Activity updated a model 3 days ago ... published a model 3 days ago"
+    },
+    {
+      "title": "SnazzyArtist22/Adam_V2 · Hugging Face",
+      "url": "https://huggingface.co/SnazzyArtist22/Adam_V2",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "JackSepticEye (RMVPE) (RVC V2) 300 epochs, 9900 steps AI Voice Model",
+      "url": "https://voice-models.com/model/1nQe5OzOzXG",
+      "snippet": "JackSepticEye (RMVPE) (RVC V2) 300 epochs, 9900 steps AI voice model for RVC voice conversion. View details, samples, source status, and run this voice model in EasyAIVoice."
+    },
+    {
+      "title": "Jacksepticeye - SeaArt AI Model",
+      "url": "https://www.seaart.ai/models/detail/f1896761a4132cbe96cf1f98e69b2294",
+      "snippet": "Explore Jacksepticeye model on SeaArt AI. Transform your idea into professional-quality AI-generated images and videos with our free, easy-to-use platform."
+    },
+    {
+      "title": "Convert Jacksepticeye (RMVPE) (RVC V2) , 17760 Steps Voice Online",
+      "url": "https://easyaivoice.com/run/jacksepticeye-steps",
+      "snippet": "Use the Jacksepticeye (RMVPE) (RVC V2) , 17760 Steps voice model online with EasyAIVoice. Upload audio, adjust pitch, and convert speech or vocals."
+    }
+  ]
+}

@@ -5,7 +5,7 @@
   "author": "just1nseo",
   "url": "https://huggingface.co/just1nseo/qwen3-4b-grpo-gptoss120b-t4",
   "created_at": "2026-08-29T04:13:07.000Z",
-  "updated_at": "2026-08-30T09:58:55.000Z",
+  "updated_at": "2026-08-31T01:27:18.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": "text-generation",
@@ -29,8 +29,8 @@
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
-  "storage_bytes": 48281176126,
-  "storage_human": "48.3 GB",
+  "storage_bytes": 64371093950,
+  "storage_human": "64.4 GB",
   "base_model": "Qwen/Qwen3-4B",
   "formats": [
     "safetensors"

@@ -5,7 +5,7 @@
   "author": "zeromodels",
   "url": "https://huggingface.co/zeromodels/beit-large-patch16-512",
   "created_at": "2026-08-29T21:44:45.000Z",
-  "updated_at": "2026-08-29T21:45:10.000Z",
+  "updated_at": "2026-08-30T06:23:20.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "image-classification",

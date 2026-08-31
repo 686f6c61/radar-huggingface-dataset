@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "licaaron/flan-t5-small-en2picto",
+  "slug": "licaaron-flan-t5-small-en2picto",
+  "author": "licaaron",
+  "url": "https://huggingface.co/licaaron/flan-t5-small-en2picto",
+  "created_at": "2026-08-31T00:54:40.000Z",
+  "updated_at": "2026-08-31T00:55:01.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "t5",
+    "text2text-generation",
+    "arxiv:1910.09700",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 76961152,
+  "parameters_human": "77.0M",
+  "storage_bytes": 307867048,
+  "storage_human": "308 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "google/flan-t5-small · Hugging Face",
+      "url": "https://huggingface.co/google/flan-t5-small",
+      "snippet": "Model Card for FLAN-T5 small Table of Contents TL;DR Model Details Usage Uses Bias, Risks, and Limitations Training Details Evaluation Environmental Impact Citation Model Card Authors TL;DR If you already know T5, FLAN-T5 is just better at everything. For the same number of parameters, these models have been fine-tuned on more than 1000 additional tasks covering also more languages. As ..."
+    },
+    {
+      "title": "FLAN-T5 · Hugging Face",
+      "url": "https://huggingface.co/docs/transformers/model_doc/flan-t5",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "transformers/docs/source/en/model_doc/flan-t5.md at main - GitHub",
+      "url": "https://github.com/huggingface/transformers/blob/main/docs/source/en/model_doc/flan-t5.md",
+      "snippet": "FLAN-T5 includes the same improvements as T5 version 1.1 (see here for the full details of the model&#x27;s improvements.) Google has released the following variants: google/flan-t5-small google/flan-t5-base google/flan-t5-large google/flan-t5-xl google/flan-t5-xxl. The original checkpoints can be found here. Refer to T5&#x27;s documentation page for all API reference, code examples and notebooks. For ..."
+    },
+    {
+      "title": "flan-t5 · GitHub Topics · GitHub",
+      "url": "https://github.com/topics/flan-t5",
+      "snippet": "In this implementation, using the Flan T5 large language model, we performed the Text Classification task on the IMDB dataset and obtained a very good accuracy of 93%."
+    },
+    {
+      "title": "Flan-T5: sweet results with the smaller, more efficient LLM",
+      "url": "https://www.graphcore.ai/posts/flan-t5-sweet-results-with-the-smaller-more-efficient-llm",
+      "snippet": "See also Flan-T5 XXL Fine Tuning (added July 2023) In the world of AI language models, there&#x27;s no one-size-fits-all solution. Commercial users are increasingly coming to the realisation that Ultra-Large Language Models, while broadly capable, are AI overkill for many applications."
+    }
+  ]
+}

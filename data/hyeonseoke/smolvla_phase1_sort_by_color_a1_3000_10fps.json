@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "HyeonseokE/smolvla_phase1_sort_by_color_A1_3000_10fps",
+  "slug": "hyeonseoke-smolvla_phase1_sort_by_color_a1_3000_10fps",
+  "author": "HyeonseokE",
+  "url": "https://huggingface.co/HyeonseokE/smolvla_phase1_sort_by_color_A1_3000_10fps",
+  "created_at": "2026-08-30T20:30:23.000Z",
+  "updated_at": "2026-08-30T20:31:30.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "robotics",
+    "smolvla",
+    "dataset:HyeonseokE/phase1_sort_by_color_A1_10fps",
+    "arxiv:2506.01844",
+    "base_model:lerobot/smolvla_base",
+    "base_model:finetune:lerobot/smolvla_base",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 450046176,
+  "parameters_human": "450.0M",
+  "storage_bytes": 906729316,
+  "storage_human": "907 MB",
+  "base_model": "lerobot/smolvla_base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "smolvla_phase1_sort_by_color_A2_1000_10fps - Hugging Face",
+      "url": "https://huggingface.co/HyeonseokE/smolvla_phase1_sort_by_color_A2_1000_10fps",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "HyeonseokE/smolvla_phase1_sort_by_color_A1_10fps · Hugging Face",
+      "url": "https://huggingface.co/HyeonseokE/smolvla_phase1_sort_by_color_A1_10fps",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Phase1 Sort By Color A1 10Fps - Physical AI Dataset | Claru",
+      "url": "https://claru.ai/datasets/hyeonseoke-phase1-sort-by-color-a1-10fps",
+      "snippet": "LeRobot v3.0 dataset of a robot sorting blocks onto matching colored dishes, collected via SCRAPE-IsaacLab in Isaac Sim with per-frame natural-language skill labels."
+    },
+    {
+      "title": "lerobot/docs/source/smolvla.mdx at main · huggingface/lerobot",
+      "url": "https://github.com/huggingface/lerobot/blob/main/docs/source/smolvla.mdx",
+      "snippet": "SmolVLA is Hugging Face&#x27;s lightweight foundation model for robotics. Designed for easy fine-tuning on LeRobot datasets, it helps accelerate your development! Figure 1. SmolVLA takes as input (i) multiple cameras views, (ii) the robot&#x27;s current sensorimotor state, and (iii) a natural language instruction, encoded into contextual features used to condition the action expert when generating ..."
+    },
+    {
+      "title": "SmolVLA: A Vision-Language-Action Model for Affordable and Efficient ...",
+      "url": "https://arxiv.org/abs/2506.01844",
+      "snippet": "Vision-language models (VLMs) pretrained on large-scale multimodal datasets encode rich visual and linguistic knowledge, making them a strong foundation for robotics. Rather than training robotic policies from scratch, recent approaches adapt VLMs into vision-language-action (VLA) models that enable natural language-driven perception and control. However, existing VLAs are typically massive ..."
+    }
+  ]
+}

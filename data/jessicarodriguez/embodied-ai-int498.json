@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "Jessicarodriguez/embodied-ai-int498",
+  "slug": "jessicarodriguez-embodied-ai-int498",
+  "author": "Jessicarodriguez",
+  "url": "https://huggingface.co/Jessicarodriguez/embodied-ai-int498",
+  "created_at": "2026-08-31T00:23:55.000Z",
+  "updated_at": "2026-08-31T00:24:04.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "transformer",
+    "research-notes",
+    "embodied-ai",
+    "license:cc-by-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 49600,
+  "parameters_human": "49600",
+  "storage_bytes": 198880,
+  "storage_human": "198880 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Embodied Global - Humanoid Robots & Embodied AI News | 1,000+ Articles",
+      "url": "https://embodiedglobal.com/en",
+      "snippet": "1,000+ articles on embodied AI, humanoid robots, physical intelligence breakthroughs, robotics funding, and industry trends. Updated daily in English and French."
+    },
+    {
+      "title": "GPT-4 | OpenAI",
+      "url": "https://openai.com/index/gpt-4/",
+      "snippet": "GPT‑4‑assisted safety research GPT‑4&#x27;s advanced reasoning and instruction-following capabilities expedited our safety work. We used GPT‑4 to help create training data for model fine-tuning and iterate on classifiers across training, evaluations, and monitoring."
+    },
+    {
+      "title": "[2506.22355] Embodied AI Agents: Modeling the World - arXiv.org",
+      "url": "https://arxiv.org/abs/2506.22355",
+      "snippet": "This paper describes our research on AI agents embodied in visual, virtual or physical forms, enabling them to interact with both users and their environments. These agents, which include virtual avatars, wearable devices, and robots, are designed to perceive, learn and act within their surroundings, which makes them more similar to how humans learn and interact with the environments as ..."
+    },
+    {
+      "title": "The State of AI-Enabled Malware August 2026: From Brand Abuse to ...",
+      "url": "https://unit42.paloaltonetworks.com/ai-enabled-malware-analysis/",
+      "snippet": "Executive Summary To assess the impact of AI-enabled malware, we collected and analyzed over 400 malware samples that integrate AI in some capacity, from brand impersonation and large language model (LLM)-generated code to agentic execution loops."
+    },
+    {
+      "title": "AGNES AI - Free Omni-Modal AI API, World-Class AI Models & AI Applications",
+      "url": "https://agnes-ai.com/",
+      "snippet": "Agnes AI is an AI gateway, free AI API platform, and AI application ecosystem featuring Agnes, Echo, and Pavo. Get free AI API credits, create a free AI API key, use free AI API tokens, and access free AI API models for chatbots, AI agents, content tools, image generation, roleplay, productivity, and intelligent workflows."
+    }
+  ]
+}

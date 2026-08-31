@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "dacarokann/Courser_a",
+  "slug": "dacarokann-courser_a",
+  "author": "dacarokann",
+  "url": "https://huggingface.co/dacarokann/Courser_a",
+  "created_at": "2026-08-30T21:36:27.000Z",
+  "updated_at": "2026-08-31T02:38:29.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "generated_from_trainer",
+    "trl",
+    "unsloth",
+    "sft",
+    "base_model:unsloth/Qwen3.6-35B-A3B",
+    "base_model:finetune:unsloth/Qwen3.6-35B-A3B",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 57041699139,
+  "storage_human": "57.0 GB",
+  "base_model": "unsloth/Qwen3.6-35B-A3B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Modern AI Models for Vision and Multimodal Understanding",
+      "url": "https://www.coursera.org/learn/modern-ai-models-vision-multimodal-understanding",
+      "snippet": "This course is ideal for learners who want to go beyond traditional deep learning and explore the models shaping the future of AI. With a blend of theory, code, and real-world applications, you&#x27;ll be equipped to tackle cutting-edge challenges in computer vision and multimodal AI."
+    },
+    {
+      "title": "Foundations of Generative AI Models - Coursera",
+      "url": "https://www.coursera.org/learn/foundations-of-generative-ai-models",
+      "snippet": "This comprehensive Generative AI Training, Evaluation, and Trends course equips you with the skills to build, optimize, and future-proof GenAI systems. Begin by learning how generative models are trained and evaluated using real-world metrics. Explore Retrieval Augmented Generation (RAG) to improve model accuracy by combining external data with ..."
+    },
+    {
+      "title": "AI Model Leaderboard [2026-08] — Live Rankings | DataLearnerAI",
+      "url": "https://www.datalearner.com/en/leaderboards",
+      "snippet": "Live AI model rankings across ARC-AGI-2, HLE, SWE-bench Verified, and more with category views for coding, math, and agent tasks."
+    },
+    {
+      "title": "Generative AI and Model Selection from Coursera",
+      "url": "https://opencourser.com/course/e9on43/generative-ai-and-model-selection",
+      "snippet": "What sets this course apart is its focus on real-world application - you&#x27;ll leave equipped to make informed decisions about AI model selection and optimization for your projects. Whether you&#x27;re new to AI or looking to deepen your knowledge, this course will empower you to leverage generative AI effectively."
+    },
+    {
+      "title": "Open-source AI Models from Coursera",
+      "url": "https://opencourser.com/course/wcvq8v/open-source-ai-models",
+      "snippet": "The course culminates with insights into AI&#x27;s future in browser-based applications, preparing learners for the next wave of AI integration. What distinguishes this course is its blend of theoretical knowledge and practical application, equipping learners to effectively utilize AI models in their projects."
+    }
+  ]
+}

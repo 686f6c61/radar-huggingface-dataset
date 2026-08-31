@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "victoraccount/wsd-training-dataset_1rj29jj8",
+  "slug": "victoraccount-wsd-training-dataset_1rj29jj8",
+  "author": "victoraccount",
+  "url": "https://huggingface.co/victoraccount/wsd-training-dataset_1rj29jj8",
+  "created_at": "2026-08-30T19:21:44.000Z",
+  "updated_at": "2026-08-30T19:21:58.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "feature-extraction",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "xlm-roberta",
+    "feature-extraction",
+    "arxiv:1910.09700",
+    "text-embeddings-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 278043648,
+  "parameters_human": "278.0M",
+  "storage_bytes": 1129280083,
+  "storage_human": "1.1 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Dataset Search",
+      "url": "https://datasetsearch.research.google.com/",
+      "snippet": "Discover datasets from various domains with Google&#x27;s Dataset Search tool, designed to help researchers and enthusiasts find relevant data easily."
+    },
+    {
+      "title": "Find Open Datasets and Machine Learning Projects | Kaggle",
+      "url": "https://www.kaggle.com/datasets",
+      "snippet": "Browse and download hundreds of thousands of open datasets for AI research, model training, and analysis. Join a community of millions of researchers, developers, and builders to share and collaborate on Kaggle."
+    },
+    {
+      "title": "aitrainingdata (AI Training Data) · GitHub",
+      "url": "https://github.com/aitrainingdata",
+      "snippet": "Welcome to the AI Training Data repository! This project aims to be the largest public collection of AI training data, supporting a wide range of applications and research in artificial intelligence. By consolidating data into a single repository, we hope to make AI research and development more accessible and efficient."
+    },
+    {
+      "title": "Get started | ChatGPT",
+      "url": "https://chatgpt.com/auth/login",
+      "snippet": "Log in or sign up to ChatGPT"
+    },
+    {
+      "title": "GitHub - TheGoodAI/AI_datasets: The largest hub of ready-to-use ...",
+      "url": "https://github.com/TheGoodAI/AI_datasets",
+      "snippet": "With simple commands like processed_dataset = dataset.map (process_example), efficiently prepare the dataset for inspection and ML model evaluation and training. 🎓 Documentation 🔎 Find a dataset in the Hub 🌟 Share a dataset on the Hub 🤗 Datasets is designed to let the community easily add and share new datasets."
+    }
+  ]
+}

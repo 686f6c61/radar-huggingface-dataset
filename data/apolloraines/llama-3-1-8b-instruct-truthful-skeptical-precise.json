@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "ApolloRaines/Llama-3.1-8B-Instruct-Truthful-Skeptical-Precise",
+  "slug": "apolloraines-llama-3-1-8b-instruct-truthful-skeptical-precise",
+  "author": "ApolloRaines",
+  "url": "https://huggingface.co/ApolloRaines/Llama-3.1-8B-Instruct-Truthful-Skeptical-Precise",
+  "created_at": "2026-08-30T22:29:07.000Z",
+  "updated_at": "2026-08-30T23:31:27.000Z",
+  "license": "llama3.1",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "safetensors",
+    "llama",
+    "jblaze",
+    "representation-engineering",
+    "abliteration",
+    "llama3",
+    "text-generation",
+    "conversational",
+    "en",
+    "base_model:meta-llama/Llama-3.1-8B-Instruct",
+    "base_model:finetune:meta-llama/Llama-3.1-8B-Instruct",
+    "license:llama3.1",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 8030261248,
+  "parameters_human": "8.03B",
+  "storage_bytes": 16060556376,
+  "storage_human": "16.1 GB",
+  "base_model": "meta-llama/Llama-3.1-8B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ApolloRaines/Llama-3.1-8B-Instruct-Jbliterated · Hugging Face",
+      "url": "https://huggingface.co/ApolloRaines/Llama-3.1-8B-Instruct-Jbliterated",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Llama-3.3-8B-Instruct-128K-Jbliterated - Hugging Face",
+      "url": "https://huggingface.co/ApolloRaines/Llama-3.3-8B-Instruct-128K-Jbliterated",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "llama-3.1-8b-instruct - Cloudflare AI docs",
+      "url": "https://developers.cloudflare.com/workers-ai/models/llama-3.1-8b-instruct/",
+      "snippet": "The Meta Llama 3.1 collection of multilingual large language models (LLMs) is a collection of pretrained and instruction tuned generative models. The Llama 3.1 instruction tuned text only models are optimized for multilingual dialogue use cases and outperform many of the available open source and closed chat models on common industry benchmarks."
+    },
+    {
+      "title": "Llama-3.1-8B-Instruct: Text-to-Text model — overview, use cases ...",
+      "url": "https://www.aimodels.fyi/models/huggingFace/llama-3.1-8b-instruct-meta-llama",
+      "snippet": "Overview Llama-3.1-8B-Instruct is a multilingual instruction-tuned language model developed by meta-llama with 8 billion parameters, released July 23, 2024. The model uses an optimized transformer architecture with grouped-query attention (GQA) for efficient inference, trained on approximately 15 trillion tokens of publicly available data with a knowledge cutoff of December 2023. It supports ..."
+    },
+    {
+      "title": "Meta-Llama-3.1-8B-Instruct: Text-to-Text model — overview, use cases ...",
+      "url": "https://www.aimodels.fyi/models/huggingFace/meta-llama-31-8b-instruct-meta-llama",
+      "snippet": "Overview Meta-Llama-3.1-8B-Instruct is an instruction-tuned text generation model developed by meta-llama and released on July 23, 2024. The model uses an optimized transformer architecture with 8 billion parameters, trained on approximately 15 trillion tokens of publicly available data with a knowledge cutoff of December 2023. It supports multilingual inputs and outputs across eight languages ..."
+    }
+  ]
+}

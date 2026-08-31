@@ -5,7 +5,7 @@
   "author": "OpenCOReTechnologies",
   "url": "https://huggingface.co/OpenCOReTechnologies/CORe-Predetermined-v1",
   "created_at": "2026-08-29T22:38:35.000Z",
-  "updated_at": "2026-08-30T01:47:16.000Z",
+  "updated_at": "2026-08-30T17:04:49.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-generation",

@@ -1,0 +1,96 @@
+{
+  "schema": 1,
+  "id": "Falcon7211/Scanvidence-SegResNetB0",
+  "slug": "falcon7211-scanvidence-segresnetb0",
+  "author": "Falcon7211",
+  "url": "https://huggingface.co/Falcon7211/Scanvidence-SegResNetB0",
+  "created_at": "2026-08-30T21:18:56.000Z",
+  "updated_at": "2026-08-30T21:39:56.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "joblib",
+    "medical",
+    "mri",
+    "brain-tumor",
+    "segmentation",
+    "quantum-machine-learning",
+    "radiomics",
+    "brats2023",
+    "pyradiomics",
+    "qiskit",
+    "dataset:BraTS-GLI-2023",
+    "license:apache-2.0",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 23212419,
+  "storage_human": "23 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "3D Brain Tumor Segmentation",
+      "dataset": "BraTS 2023 Adult Glioma Challenge",
+      "metric": "Validation Mean Dice",
+      "value": 0.8953
+    },
+    {
+      "task": "3D Brain Tumor Segmentation",
+      "dataset": "BraTS 2023 Adult Glioma Challenge",
+      "metric": "Whole Tumor (WT) Dice",
+      "value": 0.9223
+    },
+    {
+      "task": "3D Brain Tumor Segmentation",
+      "dataset": "BraTS 2023 Adult Glioma Challenge",
+      "metric": "Tumor Core (TC) Dice",
+      "value": 0.8808
+    },
+    {
+      "task": "3D Brain Tumor Segmentation",
+      "dataset": "BraTS 2023 Adult Glioma Challenge",
+      "metric": "Enhancing Tumor (ET) Dice",
+      "value": 0.8345
+    }
+  ],
+  "sources": [
+    {
+      "title": "Falcon7211 (Anas Khalid) - Hugging Face",
+      "url": "https://huggingface.co/Falcon7211",
+      "snippet": "Recent Activity updated a model14 days ago Falcon7211/loma-g published a model14 days ago Falcon7211/loma-g updated a model14 days ago Falcon7211/loma-l View all activity"
+    },
+    {
+      "title": "Scanvidence - GitHub",
+      "url": "https://github.com/Scanvidence/Scanvidence",
+      "snippet": "Explainable, uncertainty-aware medical imaging detection — a unified platform for brain tumor and Alzheimer&#x27;s disease detection, with a quantum-vs-classical feature-selection ablation. Every pipeline stage (data, preprocessing, models, radiomics, XAI, calibration, evaluation) is composable, modular, and backed by a strict patient-level data-splitting guarantee. Public-benchmark-data only ..."
+    },
+    {
+      "title": "Scanvidence - GitHub",
+      "url": "https://github.com/Scanvidence/",
+      "snippet": "Scanvidence has one repository available. Follow their code on GitHub."
+    },
+    {
+      "title": "Models - Hugging Face",
+      "url": "https://huggingface.co/models?other=loma",
+      "snippet": "Explore machine learning models. Models 3 Base only Inference AvailableInference Edit filters Sort: Trending Active filters: loma Clear all"
+    },
+    {
+      "title": "Model API Reference - fal",
+      "url": "https://fal.ai/docs/model-api-reference",
+      "snippet": "Complete API reference for fal.ai&#x27;s image, video, audio, vision, and 3D generation models on fal.ai."
+    }
+  ]
+}

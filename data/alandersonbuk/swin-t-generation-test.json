@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "alandersonbuk/swin-t-generation-test",
+  "slug": "alandersonbuk-swin-t-generation-test",
+  "author": "alandersonbuk",
+  "url": "https://huggingface.co/alandersonbuk/swin-t-generation-test",
+  "created_at": "2026-08-30T19:44:59.000Z",
+  "updated_at": "2026-08-30T19:45:08.000Z",
+  "license": "bsd-3-clause",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "swin_t",
+    "pytorch",
+    "swin-t",
+    "generation",
+    "license:bsd-3-clause",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 16576,
+  "parameters_human": "16576",
+  "storage_bytes": 66784,
+  "storage_human": "66784 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "alandersonbuk (吴梓涵) - Hugging Face",
+      "url": "https://huggingface.co/alandersonbuk",
+      "snippet": "Love fine-tuning models and sharing datasets."
+    },
+    {
+      "title": "alandersonbuk (吴梓涵) - Hugging Face",
+      "url": "https://huggingface.co/alandersonbuk/datasets",
+      "snippet": "Love fine-tuning models and sharing datasets. AI & ML interests Love fine-tuning models and sharing datasets."
+    },
+    {
+      "title": "TinyML Workshop Resources: SICET 2025 | BrAINLabs Inc posted ... - LinkedIn",
+      "url": "https://www.linkedin.com/posts/brainlabs-inc_tinyml-machinelearning-edgeai-activity-7498409980383928320-48aK",
+      "snippet": "🚀 All Roads Lead to TinyML: Workshop Resources! At SICET 2025 (SLIIT International Conference on Engineering and Technology), the BrAINLabs Research Group hosted a full-day hands-on workshop on ..."
+    },
+    {
+      "title": "GitHub - microsoft/Swin-Transformer: This is an official implementation ...",
+      "url": "https://github.com/microsoft/Swin-Transformer",
+      "snippet": "This is an official implementation for \"Swin Transformer: Hierarchical Vision Transformer using Shifted Windows\". - microsoft/Swin-Transformer"
+    },
+    {
+      "title": "SwinTransformer — Torchvision main documentation",
+      "url": "https://docs.pytorch.org/vision/master/models/swin_transformer.html",
+      "snippet": "The following model builders can be used to instantiate an SwinTransformer model (original and V2) with and without pre-trained weights. All the model builders internally rely on the torchvision.models.swin_transformer.SwinTransformer base class."
+    }
+  ]
+}

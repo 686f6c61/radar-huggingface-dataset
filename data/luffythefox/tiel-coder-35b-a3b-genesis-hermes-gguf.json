@@ -5,7 +5,7 @@
   "author": "LuffyTheFox",
   "url": "https://huggingface.co/LuffyTheFox/Tiel-Coder-35B-A3B-Genesis-Hermes-GGUF",
   "created_at": "2026-08-29T04:09:05.000Z",
-  "updated_at": "2026-08-29T18:01:04.000Z",
+  "updated_at": "2026-08-30T15:38:28.000Z",
   "license": "mit",
   "license_family": "oss",
   "pipeline_tag": "image-text-to-text",
@@ -39,13 +39,13 @@
     "region:us",
     "conversational"
   ],
-  "likes": 11,
+  "likes": 12,
   "downloads_30d": 1206,
-  "trending_score": 10,
+  "trending_score": 11,
   "parameters": 34660610688,
   "parameters_human": "34.66B",
-  "storage_bytes": 55869095040,
-  "storage_human": "55.9 GB",
+  "storage_bytes": 82541294912,
+  "storage_human": "82.5 GB",
   "base_model": "ornith-ai/Ornith-1.5-35B-A3B",
   "formats": [
     "gguf"

@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "QuerynAi/queryn-adapter-te3-small_to_bge-m3",
+  "slug": "querynai-queryn-adapter-te3-small_to_bge-m3",
+  "author": "QuerynAi",
+  "url": "https://huggingface.co/QuerynAi/queryn-adapter-te3-small_to_bge-m3",
+  "created_at": "2026-08-30T21:19:47.000Z",
+  "updated_at": "2026-08-30T21:20:07.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "feature-extraction",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "onnx",
+    "embedding",
+    "embedding-translation",
+    "queryn",
+    "te3-small",
+    "bge-m3",
+    "feature-extraction",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 6623261,
+  "storage_human": "7 MB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "text-embedding-3-small Model | OpenAI API",
+      "url": "https://developers.openai.com/api/docs/models/text-embedding-3-small",
+      "snippet": "v1/realtime/transcription_sessions Assistants"
+    },
+    {
+      "title": "QuerynAi/queryn-adapter-bge-m3_to_me5-large · Hugging Face",
+      "url": "https://huggingface.co/QuerynAi/queryn-adapter-bge-m3_to_me5-large",
+      "snippet": "Queryn adapter — bge-m3 → me5-large Translates an embedding produced by bge-m3 into the embedding space of me5-large, so a corpus already embedded with bge-m3 can be served against a me5-large index without re-embedding it. Part of the Queryn embedding-translation engine."
+    },
+    {
+      "title": "OpenAI Text Embedding 3 Small: The Ultimate Guide to TE3 Small",
+      "url": "https://railwail.com/en/blog/text-embedding-3-small-complete-guide",
+      "snippet": "Comprehensive guide to OpenAI&#x27;s Text Embedding 3 Small model. Explore benchmarks, pricing, dimensions, and RAG use cases for this efficient AI model."
+    },
+    {
+      "title": "GitHub - FlagOpen/FlagEmbedding: Retrieval and Retrieval-augmented LLMs",
+      "url": "https://github.com/FlagOpen/FlagEmbedding",
+      "snippet": "Retrieval and Retrieval-augmented LLMs. Contribute to FlagOpen/FlagEmbedding development by creating an account on GitHub."
+    },
+    {
+      "title": "The guide to text-embedding-3-small | OpenAI - Zilliz",
+      "url": "https://zilliz.com/ai-models/text-embedding-3-small",
+      "snippet": "Introduction to text-embedding-3-small text-embedding-3-small is OpenAI&#x27;s small text embedding model, creating embeddings with 1536 dimensions. Compared to OpenAI&#x27;s other text embedding models, like text-embedding-ada-002 and text-embedding-3-large, text-embedding-3-small is the most cost-effective model with improved accuracy and efficiency. It is great for general-purpose vector search ..."
+    }
+  ]
+}

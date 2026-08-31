@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "liodon-ai/PowerMoE-3b-FP8",
+  "slug": "liodon-ai-powermoe-3b-fp8",
+  "author": "liodon-ai",
+  "url": "https://huggingface.co/liodon-ai/PowerMoE-3b-FP8",
+  "created_at": "2026-08-30T23:00:25.000Z",
+  "updated_at": "2026-08-30T23:19:02.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "granitemoe",
+    "text-generation",
+    "fp8",
+    "compressed-tensors",
+    "vllm",
+    "quantized",
+    "base_model:ibm-research/PowerMoE-3b",
+    "base_model:quantized:ibm-research/PowerMoE-3b",
+    "license:other",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 3298788864,
+  "parameters_human": "3.30B",
+  "storage_bytes": 3546213936,
+  "storage_human": "3.5 GB",
+  "base_model": "ibm-research/PowerMoE-3b",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ibm-research/PowerMoE-3b · Hugging Face",
+      "url": "https://huggingface.co/ibm-research/PowerMoE-3b",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "liodon-ai/phi-2-FP8 · Hugging Face",
+      "url": "https://huggingface.co/liodon-ai/phi-2-FP8",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Powermoe 3b - GGUF Model - local-ai-zone.github.io",
+      "url": "https://local-ai-zone.github.io/models/powermoe-3b.html",
+      "snippet": "Download Powermoe 3b GGUF model. 1.9 GB, 24 downloads, 0 likes."
+    },
+    {
+      "title": "PowerMoE 3b (3B) — MMLU 55 | Deploy Guide & Hardware Fit | OpenModelMap",
+      "url": "https://openmodelmap.com/model/ibm-research/PowerMoE-3b",
+      "snippet": "PowerMoE 3b by ibm-research. Scores: MMLU 55, . 3B open-source AI model. PowerMoE 3b is a small Mixture-of-Experts model from IBM Research designed for efficient inference."
+    },
+    {
+      "title": "Home - LioDon AI",
+      "url": "https://liodon.ai/",
+      "snippet": "What we research Liodon is an independent, self-funded applied research lab working on the frontier of open-source foundation model research."
+    }
+  ]
+}

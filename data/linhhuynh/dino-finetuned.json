@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "LinhHuynh/dino-finetuned",
+  "slug": "linhhuynh-dino-finetuned",
+  "author": "LinhHuynh",
+  "url": "https://huggingface.co/LinhHuynh/dino-finetuned",
+  "created_at": "2026-08-31T01:28:56.000Z",
+  "updated_at": "2026-08-31T01:29:05.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "dino",
+    "pytorch",
+    "multitask",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 33088,
+  "parameters_human": "33088",
+  "storage_bytes": 132832,
+  "storage_human": "132832 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Adf/dino_finetune · Hugging Face",
+      "url": "https://huggingface.co/Adf/dino_finetune",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "dino.ipynb - Colab",
+      "url": "https://colab.research.google.com/github/lightly-ai/lightly/blob/master/examples/notebooks/pytorch_lightning_distributed/dino.ipynb",
+      "snippet": "Note: The model and training settings do not follow the reference settings from the paper. The settings are chosen such that the example can easily be run on a small dataset with a single GPU."
+    },
+    {
+      "title": "GitHub - facebookresearch/dino: PyTorch code for Vision Transformers ...",
+      "url": "https://github.com/facebookresearch/dino",
+      "snippet": "PyTorch code for Vision Transformers training with the Self-Supervised learning method DINO - facebookresearch/dino"
+    },
+    {
+      "title": "DINOv2 · Hugging Face",
+      "url": "https://huggingface.co/docs/transformers/model_doc/dinov2",
+      "snippet": "DINOv2 is a vision foundation model that uses ViT as a feature extractor for multiple downstream tasks like image classification and depth estimation. It focuses on stabilizing and accelerating training through techniques like a faster memory-efficient attention, sequence packing, improved stochastic depth, Fully Sharded Data Parallel (FSDP), and model distillation."
+    },
+    {
+      "title": "finetuning_dinov2.ipynb - Colab",
+      "url": "https://colab.research.google.com/github/kili-technology/kili-python-sdk/blob/main/recipes/finetuning_dinov2.ipynb",
+      "snippet": "This tutorial shows how to use the DINOv2 self-supervised vision transformer model to generate pre-annotations on a defect detection use case. Modern foundation models (FMs) are capable of performing many diverse tasks; large language models can quickly and accurately process natural language while models focused on image processing are very good at computer vision tasks, such as object ..."
+    }
+  ]
+}

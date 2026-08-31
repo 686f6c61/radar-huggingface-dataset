@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "aneforge/bge-small-en-v1.5",
+  "slug": "aneforge-bge-small-en-v1-5",
+  "author": "aneforge",
+  "url": "https://huggingface.co/aneforge/bge-small-en-v1.5",
+  "created_at": "2026-08-30T22:38:06.000Z",
+  "updated_at": "2026-08-30T22:42:42.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "sentence-similarity",
+  "library": "aneforge",
+  "languages": [],
+  "tags": [
+    "aneforge",
+    "safetensors",
+    "bert",
+    "apple-neural-engine",
+    "sentence-transformers",
+    "sentence-similarity",
+    "arxiv:2606.17090",
+    "base_model:BAAI/bge-small-en-v1.5",
+    "base_model:finetune:BAAI/bge-small-en-v1.5",
+    "license:mit",
+    "text-embeddings-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 33360512,
+  "parameters_human": "33.4M",
+  "storage_bytes": 400068191,
+  "storage_human": "400 MB",
+  "base_model": "BAAI/bge-small-en-v1.5",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "bge-small-en-v1.5 download | SourceForge.net",
+      "url": "https://sourceforge.net/projects/bge-small-en-v1-5/",
+      "snippet": "Download bge-small-en-v1.5 for free. Compact English sentence embedding model for semantic search tasks. BAAI/bge-small-en-v1.5 is a lightweight English sentence embedding model developed by the Beijing Academy of Artificial Intelligence (BAAI) as part of the BGE (BAAI General Embedding) series. Designed for dense retrieval, semantic search, and similarity tasks, it produces 384-dimensional ..."
+    },
+    {
+      "title": "BAAI/bge-small-en-v1.5 · Hugging Face",
+      "url": "https://huggingface.co/BAAI/bge-small-en-v1.5",
+      "snippet": "update embedding model: release bge-*-v1.5 embedding model to alleviate the issue of the similarity distribution, and enhance its retrieval ability without instruction. More 09/07/2023: Update fine-tune code: Add script to mine hard negatives and support adding instruction during fine-tuning."
+    },
+    {
+      "title": "BAAI/bge-small-en · Hugging Face",
+      "url": "https://huggingface.co/BAAI/bge-small-en",
+      "snippet": "Recommend switching to newest BAAI/bge-small-en-v1.5, which has more reasonable similarity distribution and same method of usage. FlagEmbedding Model List | FAQ | Usage | Evaluation | Train | Citation | License More details please refer to our Github: FlagEmbedding. English | 中文 FlagEmbedding focus on retrieval-augmented LLMs, consisting of following projects currently: Fine-tuning of LM ..."
+    },
+    {
+      "title": "GitHub - abis330/bge-small-en-v1.5: bge-small-en-v1.5",
+      "url": "https://github.com/abis330/bge-small-en-v1.5/",
+      "snippet": "update embedding model: release bge-*-v1.5 embedding model to alleviate the issue of the similarity distribution, and enhance its retrieval ability without instruction. 09/07/2023: Update fine-tune code: Add script to mine hard negatives and support adding instruction during fine-tuning."
+    },
+    {
+      "title": "bge-small-en-v1.5 — Embedding Model by BAAI | Model Database",
+      "url": "https://modeldatabase.com/BAAI/bge-small-en-v1.5.html",
+      "snippet": "BAAI/bge-small-en-v1.5 is an open source embedding model built with sentence-transformers, 193 downloads. Compare and deploy AI models on Model Database."
+    }
+  ]
+}

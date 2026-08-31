@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "arianraje/mimo-7b-gdn-opd-predecay-1137m-step7367",
+  "slug": "arianraje-mimo-7b-gdn-opd-predecay-1137m-step7367",
+  "author": "arianraje",
+  "url": "https://huggingface.co/arianraje/mimo-7b-gdn-opd-predecay-1137m-step7367",
+  "created_at": "2026-08-30T23:41:09.000Z",
+  "updated_at": "2026-08-30T23:52:17.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "mimo_gdn",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 8309898304,
+  "parameters_human": "8.31B",
+  "storage_bytes": 116350584123,
+  "storage_human": "116.4 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "arianraje/mimo-7b-gdn-hybrid-200M-OPD · Hugging Face",
+      "url": "https://huggingface.co/arianraje/mimo-7b-gdn-hybrid-200M-OPD",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "arianraje/mimo-7b-gdn-opd-predecay-937m-step6060 · Hugging Face",
+      "url": "https://huggingface.co/arianraje/mimo-7b-gdn-opd-predecay-937m-step6060",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Moonshot AI",
+      "url": "https://www.moonshot.ai/",
+      "snippet": "Complex problems, solved with ease AI Models is capability. Code, analyze, sheets and slides — simplify complex work with the latest flagship model."
+    },
+    {
+      "title": "MiMo: Unlocking the Reasoning Potential of Language Model - From ...",
+      "url": "https://arxiv.org/html/2505.07608v1",
+      "snippet": "We present MiMo-7B, a large language model born for reasoning tasks, with optimization across both pre-training and post-training stages. During pre-training, we enhance the data preprocessing pipeline and employ a three-stage data mixing strategy to strengthen the base model&#x27;s reasoning potential."
+    },
+    {
+      "title": "PDF MiMo/MiMo-7B-Technical-Report.pdf at main - GitHub",
+      "url": "https://github.com/XiaomiMiMo/MiMo/blob/main/MiMo-7B-Technical-Report.pdf",
+      "snippet": "MiMo: Unlocking the Reasoning Potential of Language Model - From Pretraining to Posttraining - XiaomiMiMo/MiMo"
+    }
+  ]
+}

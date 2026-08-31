@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "ToPo-ToPo/Qwen3.8-Flash-Next-mlx-4bit",
+  "slug": "topo-topo-qwen3-8-flash-next-mlx-4bit",
+  "author": "ToPo-ToPo",
+  "url": "https://huggingface.co/ToPo-ToPo/Qwen3.8-Flash-Next-mlx-4bit",
+  "created_at": "2026-08-31T00:12:04.000Z",
+  "updated_at": "2026-08-31T01:38:44.000Z",
+  "license": "qwen-community-1.0",
+  "license_family": "unknown",
+  "pipeline_tag": "image-text-to-text",
+  "library": "mlx",
+  "languages": [],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "qwen4_exp",
+    "image-text-to-text",
+    "conversational",
+    "base_model:Qwen/Qwen3.8-Flash-Next",
+    "base_model:quantized:Qwen/Qwen3.8-Flash-Next",
+    "license:other",
+    "4-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 33633899411,
+  "parameters_human": "33.63B",
+  "storage_bytes": 116766527392,
+  "storage_human": "116.8 GB",
+  "base_model": "Qwen/Qwen3.8-Flash-Next",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Qwen3.8-Flash-Next - GitHub",
+      "url": "https://github.com/QwenLM/Qwen3.8-Flash-Next/",
+      "snippet": "Qwen3.8-Flash-Next upgrades the model systematically along four aspects — attention, residual, embedding and optimization — improving model capability while further optimizing computational efficiency, model capacity and training stability: Attention A GDN + QSA hybrid architecture."
+    },
+    {
+      "title": "Qwen/Qwen3.8-Flash-Next | vLLM Recipes - recipes.vllm.ai",
+      "url": "https://recipes.vllm.ai/Qwen/Qwen3.8-Flash-Next",
+      "snippet": "Overview Qwen3.8-Flash-Next is a multimodal, ultra-sparse Mixture-of-Experts model. It has 125B parameters, including an additional 51B N-gram embedding table, while activating 6B parameters per token. The architecture combines four main ideas: GDN + QSA: three of every four layers use Gated DeltaNet to compress history; the fourth uses Qwen Sparse Attention for precise long-range retrieval ..."
+    },
+    {
+      "title": "How to Run Qwen3.8 Flash Next Locally: GGUF, Hardware and Benchmarks",
+      "url": "https://atomic.chat/blog/guides/how-to-run-qwen-3-8-flash-next-locally",
+      "snippet": "Qwen3.8 Flash Next is the first open model built on the Qwen4 architecture that you can run locally: a 125B Mixture-of-Experts model that activates 6B parameters per token and runs from a 64 GB MacBook up, with its 51B n-gram table paged from SSD. This guide covers our Atomic Dynamic GGUF builds, how much memory each one needs, and the exact setup for both Atomic Chat and llama.cpp. Andrew ..."
+    },
+    {
+      "title": "RockTalk/Qwen3.8-Flash-Next-MLX-4bit · Hugging Face",
+      "url": "https://huggingface.co/RockTalk/Qwen3.8-Flash-Next-MLX-4bit",
+      "snippet": "What is this model? Qwen3.8-Flash-Next is Qwen&#x27;s experimental preview of the Qwen4 architecture. ~180B total parameters: 125B MoE transformer (6B active, 512 experts, top-10+shared)"
+    },
+    {
+      "title": "pipenetwork/Qwen3.8-Flash-Next-MLX-4bit · Hugging Face",
+      "url": "https://huggingface.co/pipenetwork/Qwen3.8-Flash-Next-MLX-4bit",
+      "snippet": "MLX (Apple Silicon) build of Qwen3.8-Flash-Next — 125B-A6B hybrid Gated-DeltaNet / sparse-attention MoE with a 51B-parameter hashed n-gram embedding — quantized to 4-bit."
+    }
+  ]
+}

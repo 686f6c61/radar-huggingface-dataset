@@ -5,7 +5,7 @@
   "author": "nightmedia",
   "url": "https://huggingface.co/nightmedia/Wichtelchen-Qwen3.5-9B-mxfp8-mlx",
   "created_at": "2026-08-29T01:04:02.000Z",
-  "updated_at": "2026-08-30T01:41:45.000Z",
+  "updated_at": "2026-08-30T04:23:35.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "image-text-to-text",
@@ -38,7 +38,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 0,
+  "downloads_30d": 23,
   "trending_score": 0,
   "parameters": 2975030512,
   "parameters_human": "2.98B",

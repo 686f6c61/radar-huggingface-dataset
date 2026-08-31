@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "thomasqfischer/clip-multitask",
+  "slug": "thomasqfischer-clip-multitask",
+  "author": "thomasqfischer",
+  "url": "https://huggingface.co/thomasqfischer/clip-multitask",
+  "created_at": "2026-08-30T21:13:21.000Z",
+  "updated_at": "2026-08-30T21:13:29.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "clip",
+    "pytorch",
+    "multitask",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 33088,
+  "parameters_human": "33088",
+  "storage_bytes": 132832,
+  "storage_human": "132832 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "CLIP: Connecting text and images | OpenAI",
+      "url": "https://openai.com/index/clip/",
+      "snippet": "We&#x27;re introducing a neural network called CLIP which efficiently learns visual concepts from natural language supervision. CLIP can be applied to any visual classification benchmark by simply providing the names of the visual categories to be recognized, similar to the \"zero-shot\" capabilities of GPT-2 and GPT-3."
+    },
+    {
+      "title": "GitHub - openai/CLIP: CLIP (Contrastive Language-Image Pretraining ...",
+      "url": "https://github.com/openai/CLIP",
+      "snippet": "CLIP [Blog] [Paper] [Model Card] [Colab] CLIP (Contrastive Language-Image Pre-Training) is a neural network trained on a variety of (image, text) pairs. It can be instructed in natural language to predict the most relevant text snippet, given an image, without directly optimizing for the task, similarly to the zero-shot capabilities of GPT-2 and 3."
+    },
+    {
+      "title": "CLIP Model and The Importance of Multimodal Embeddings",
+      "url": "https://towardsdatascience.com/clip-model-and-the-importance-of-multimodal-embeddings-1c8f6b13bf72/",
+      "snippet": "CLIP, the first large-scale AI model that accepts two modalities, is a prerequisite to understanding ImageBind and other multi-modality AI systems. Imagebind from META AI accepts six different modalities as input (Taken from ImageBind&#x27;s official GitHub page)."
+    },
+    {
+      "title": "arXiv:2401.11649v1 [cs.CV] 22 Jan 2024",
+      "url": "https://arxiv.org/pdf/2401.11649",
+      "snippet": "arXiv:2401.11649v1 [cs.CV] 22 Jan 2024 M2-CLIP: A Multimodal, Multi-task Adapting Framework for Video Action Recognition"
+    },
+    {
+      "title": "CLIP · Hugging Face",
+      "url": "https://huggingface.co/docs/transformers/model_doc/clip",
+      "snippet": "CLIP CLIP is a multimodal vision and language model motivated by overcoming the fixed number of object categories when training a computer vision model. CLIP learns about images directly from raw text by jointly training on 400M (image, text) pairs. Pretraining on this scale enables zero-shot transfer to downstream tasks. CLIP uses an image encoder and text encoder to get visual features and ..."
+    }
+  ]
+}

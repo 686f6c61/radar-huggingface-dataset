@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "QuerynAi/queryn-adapter-me5-large_to_qwen3-emb-8b",
+  "slug": "querynai-queryn-adapter-me5-large_to_qwen3-emb-8b",
+  "author": "QuerynAi",
+  "url": "https://huggingface.co/QuerynAi/queryn-adapter-me5-large_to_qwen3-emb-8b",
+  "created_at": "2026-08-30T21:03:32.000Z",
+  "updated_at": "2026-08-30T21:04:12.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "feature-extraction",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "onnx",
+    "embedding",
+    "embedding-translation",
+    "queryn",
+    "me5-large",
+    "qwen3-emb-8b",
+    "feature-extraction",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 10834570,
+  "storage_human": "11 MB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "QuerynAi/queryn-adapter-bge-m3_to_me5-large · Hugging Face",
+      "url": "https://huggingface.co/QuerynAi/queryn-adapter-bge-m3_to_me5-large",
+      "snippet": "Queryn adapter — bge-m3 → me5-large Translates an embedding produced by bge-m3 into the embedding space of me5-large, so a corpus already embedded with bge-m3 can be served against a me5-large index without re-embedding it. Part of the Queryn embedding-translation engine."
+    },
+    {
+      "title": "Qwen/Qwen3-8B · Hugging Face",
+      "url": "https://huggingface.co/Qwen/Qwen3-8B",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GitHub - Gigadelux/Queryn: Queryn is the engine for interoperability ...",
+      "url": "https://github.com/Gigadelux/Queryn",
+      "snippet": "The gain is concentrated in pairs sourced from pplx-embed-1 and qwen3-emb-8b — e.g. pplx-embed-1 → qwen3-emb-8b went from 0.413 to 0.797 (+0.384) — confirming the v0 training instability diagnosis (a fixed learning rate overshooting on high-magnitude embeddings) that motivated v1&#x27;s cosine-similarity loss and ReduceLROnPlateau schedule."
+    },
+    {
+      "title": "GitHub - QwenLM/Qwen3: Qwen3 is the large language model series ...",
+      "url": "https://github.com/QwenLM/Qwen3",
+      "snippet": "Over the past three months, we continued to explore the potential of the Qwen3 families and we are excited to introduce the updated Qwen3-2507 in two variants, Qwen3-Instruct-2507 and Qwen3-Thinking-2507, and three sizes, 235B-A22B, 30B-A3B, and 4B. Qwen3-Instruct-2507 is the updated version of the previous Qwen3 non-thinking mode, featuring the following key enhancements: Significant ..."
+    },
+    {
+      "title": "Research - Qwen",
+      "url": "https://qwen.ai/research/",
+      "snippet": "Research Latest Advancements Qwen3.8-Max: A New Bar for Coding and Cowork Today, we are officially releasing Qwen 3.8-Max, the most capable model in the Qwen family to date. This also marks the first time we will open-source the weights of a Qwen-Max-class model — the open weights will be released next week."
+    }
+  ]
+}

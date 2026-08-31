@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "ApolloRaines/Llama-3.1-8B-Instruct-Concise-Context-Grounded",
+  "slug": "apolloraines-llama-3-1-8b-instruct-concise-context-grounded",
+  "author": "ApolloRaines",
+  "url": "https://huggingface.co/ApolloRaines/Llama-3.1-8B-Instruct-Concise-Context-Grounded",
+  "created_at": "2026-08-30T21:58:50.000Z",
+  "updated_at": "2026-08-30T23:31:02.000Z",
+  "license": "llama3.1",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "safetensors",
+    "llama",
+    "jblaze",
+    "representation-engineering",
+    "abliteration",
+    "llama3",
+    "text-generation",
+    "conversational",
+    "en",
+    "base_model:meta-llama/Llama-3.1-8B-Instruct",
+    "base_model:finetune:meta-llama/Llama-3.1-8B-Instruct",
+    "license:llama3.1",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 8030261248,
+  "parameters_human": "8.03B",
+  "storage_bytes": 16060556376,
+  "storage_human": "16.1 GB",
+  "base_model": "meta-llama/Llama-3.1-8B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ApolloRaines/Llama-3.1-8B-Instruct-Jbliterated · Hugging Face",
+      "url": "https://huggingface.co/ApolloRaines/Llama-3.1-8B-Instruct-Jbliterated",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "context-labs/Meta-Llama-3.1-8B-Instruct-FP16 · Hugging Face",
+      "url": "https://huggingface.co/context-labs/Meta-Llama-3.1-8B-Instruct-FP16",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "llama-3.1-8b-instruct - Cloudflare AI docs",
+      "url": "https://developers.cloudflare.com/workers-ai/models/llama-3.1-8b-instruct/",
+      "snippet": "The Meta Llama 3.1 collection of multilingual large language models (LLMs) is a collection of pretrained and instruction tuned generative models. The Llama 3.1 instruction tuned text only models are optimized for multilingual dialogue use cases and outperform many of the available open source and closed chat models on common industry benchmarks."
+    },
+    {
+      "title": "Llama-v3.1-8B-Instruct - Qualcomm AI Hub",
+      "url": "https://aihub.qualcomm.com/models/llama_v3_1_8b_instruct",
+      "snippet": "Llama-v3.1-8B-Instruct State‑of‑the‑art large language model useful on a variety of language understanding and generation tasks. Llama 3 is a family of LLMs. The model is quantized to w4a16 (4‑bit weights and 16‑bit activations) and part of the model is quantized to w8a16 (8‑bit weights and 16‑bit activations) making it suitable for on‑device deployment. For Prompt and output ..."
+    },
+    {
+      "title": "Llama_3_1_8B_Instruct.ipynb - Colab",
+      "url": "https://colab.research.google.com/github/NeuralFalconYT/Meta-Llama-3.1-Colab/blob/main/Llama_3_1_8B_Instruct.ipynb",
+      "snippet": "Step 1: visit Llama-3.1-8B-Instruct Page Step 2: Wait a few minutes, you will receive access from Meta. Step 3: Access Hugging Face Token Step 4: Copy paste Hugging Face Token in Google Colab"
+    }
+  ]
+}

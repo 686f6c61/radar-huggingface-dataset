@@ -1,0 +1,77 @@
+{
+  "schema": 1,
+  "id": "adriandj3/LFM2.5-to-Llama8B-LLM2Vec-Kimodo",
+  "slug": "adriandj3-lfm2-5-to-llama8b-llm2vec-kimodo",
+  "author": "adriandj3",
+  "url": "https://huggingface.co/adriandj3/LFM2.5-to-Llama8B-LLM2Vec-Kimodo",
+  "created_at": "2026-08-30T19:58:46.000Z",
+  "updated_at": "2026-08-30T20:08:29.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "feature-extraction",
+  "library": null,
+  "languages": [
+    "en",
+    "it"
+  ],
+  "tags": [
+    "embeddings",
+    "feature-extraction",
+    "kimodo",
+    "nvidia",
+    "llm2vec",
+    "llama",
+    "text-to-motion",
+    "motion-generation",
+    "cross-lingual",
+    "italian",
+    "bridge",
+    "en",
+    "it",
+    "base_model:LiquidAI/LFM2.5-Embedding-350M",
+    "base_model:finetune:LiquidAI/LFM2.5-Embedding-350M",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 33595776,
+  "storage_human": "34 MB",
+  "base_model": "LiquidAI/LFM2.5-Embedding-350M",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - matbeedotcom/kimodo: Kimodo motion generation with bnb ...",
+      "url": "https://github.com/matbeedotcom/kimodo",
+      "snippet": "Kimodo motion generation with bnb quantization support (fork of nv-tlabs/kimodo) - matbeedotcom/kimodo"
+    },
+    {
+      "title": "GitHub - xydtl/kimodo",
+      "url": "https://github.com/xydtl/kimodo",
+      "snippet": "Kimodo is a ki nematic mo tion d iffusi o n model trained on a large-scale (700 hours) commercially-friendly optical motion capture dataset. The model generates high-quality 3D human and robot motions, and is controlled through text prompts and an extensive set of constraints such as full-body pose keyframes, end-effector positions/rotations ..."
+    },
+    {
+      "title": "LFM2.5-8B-A1B - Liquid Docs",
+      "url": "https://docs.liquid.ai/lfm/models/lfm25-8b-a1b",
+      "snippet": "8B parameter Mixture-of-Experts model with 1.5B active parameters for fast, reliable tool calling and 128K context ← Back to Text Models LFM2.5-8B-A1B is Liquid AI&#x27;s Mixture-of-Experts model, combining 8B total parameters with only 1.5B active parameters per forward pass with a 128K context window and chain of thought reasoning."
+    },
+    {
+      "title": "lfm2.5:8b - ollama.com",
+      "url": "https://ollama.com/library/lfm2.5:8b",
+      "snippet": "LFM2.5 is a new family of hybrid models designed for on-device deployment. It builds on the LFM2 architecture with extended pre-training and reinforcement learning. On-device personal assistant: Designed to power real-life applications, chaining tool calls, and following complex instructions on all devices. Compressed performance: Competitive with much larger dense and MoE models on ..."
+    },
+    {
+      "title": "GitHub - nv-tlabs/kimodo: Official implementation of Kimodo, a ...",
+      "url": "https://t.co/nsnFJJN9Kf",
+      "snippet": "Kimodo is a ki nematic mo tion d iffusi o n model trained on a large-scale (700 hours) commercially-friendly optical motion capture dataset. The model generates high-quality 3D human and robot motions, and is controlled through text prompts and an extensive set of constraints such as full-body pose keyframes, end-effector positions/rotations ..."
+    }
+  ]
+}

@@ -5,7 +5,7 @@
   "author": "zeromodels",
   "url": "https://huggingface.co/zeromodels/pvt-v2-b2-linear",
   "created_at": "2026-08-28T01:53:40.000Z",
-  "updated_at": "2026-08-28T01:54:02.000Z",
+  "updated_at": "2026-08-30T06:22:13.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "image-classification",

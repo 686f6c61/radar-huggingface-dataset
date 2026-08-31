@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "anon-review-12345/dora-reproducibility-study",
+  "slug": "anon-review-12345-dora-reproducibility-study",
+  "author": "anon-review-12345",
+  "url": "https://huggingface.co/anon-review-12345/dora-reproducibility-study",
+  "created_at": "2026-08-30T22:18:17.000Z",
+  "updated_at": "2026-08-30T22:18:21.000Z",
+  "license": "llama4",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "tensorboard",
+    "safetensors",
+    "license:llama4",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 23047653440,
+  "storage_human": "23.0 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "DORA | State of AI-assisted Software Development 2025",
+      "url": "https://dora.dev/dora-report-2025/",
+      "snippet": "Next, checkout the DORA AI Capabilities Model, a companion guide to this report with more information on how to improve your organization&#x27;s AI-assisted software development practices."
+    },
+    {
+      "title": "PDF State of AI-assisted Software Development",
+      "url": "https://services.google.com/fh/files/misc/2025_state_of_ai_assisted_software_development.pdf",
+      "snippet": "Key takeaway: AI is an amplifier In 2025, the central question for technology leaders is no longer if they should adopt AI, but how to realize its value. DORA&#x27;s research includes more than 100 hours of qualitative data and survey responses from nearly 5,000 technology professionals from around the world.1 The research reveals a critical truth: AI&#x27;s primary role in software development is ..."
+    },
+    {
+      "title": "DORA | DORA Research: 2025 Overview",
+      "url": "https://dora.dev/research/2025/",
+      "snippet": "DORA is a long running research program that seeks to understand the capabilities that drive software delivery and operations performance. DORA helps teams apply those capabilities, leading to better organizational performance."
+    },
+    {
+      "title": "DORA 2025 State of AI-assisted Software Development Report",
+      "url": "https://research.google/pubs/dora-2025-state-of-ai-assisted-software-development-report/",
+      "snippet": "In 2025, the central question for technology leaders is no longer if they should adopt AI, but how to realize its value. DORA&#x27;s research includes more than 100 hours of qualitative data and survey responses from nearly 5,000 technology professionals from around the world. The research reveals a critical truth: AI&#x27;s primary role in software development is that of an amplifier. It magnifies ..."
+    },
+    {
+      "title": "2025 DORA State of AI Assisted Software Development",
+      "url": "https://cloud.google.com/resources/content/2025-dora-ai-assisted-software-development-report",
+      "snippet": "For over a decade, the DORA team has been identifying the capabilities and conditions that fuel the success of high-performing technology organizations. This year, we are introducing the inaugural &#x27;State of AI-Assisted Software Development&#x27; report to dive deep into how AI is impacting technology-driven teams."
+    }
+  ]
+}

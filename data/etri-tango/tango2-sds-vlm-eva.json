@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "ETRI-TANGO/tango2-sds-vlm-eva",
+  "slug": "etri-tango-tango2-sds-vlm-eva",
+  "author": "ETRI-TANGO",
+  "url": "https://huggingface.co/ETRI-TANGO/tango2-sds-vlm-eva",
+  "created_at": "2026-06-08T07:50:23.000Z",
+  "updated_at": "2026-08-31T01:31:19.000Z",
+  "license": "etri-tango-license",
+  "license_family": "unknown",
+  "pipeline_tag": "image-text-to-text",
+  "library": null,
+  "languages": [
+    "ko",
+    "en"
+  ],
+  "tags": [
+    "safetensors",
+    "lora",
+    "vision-language-model",
+    "maritime",
+    "colreg",
+    "image-text-to-text",
+    "ko",
+    "en",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 69291817189,
+  "storage_human": "69.3 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ETRI-TANGO/tango2-sds-vlm-eva · Hugging Face",
+      "url": "https://huggingface.co/ETRI-TANGO/tango2-sds-vlm-eva",
+      "snippet": "ETRI-TANGO / tango2-sds-vlm-eva like 0 Follow Electronics and Telecommunications Research Institute 3 Safetensors License:etri-tango-license Model card FilesFiles and versions xet Community Copy to bucket new"
+    },
+    {
+      "title": "GitHub - garlicvread/ETRI_TANGO: public repo for TANGO (Target Aware No ...",
+      "url": "https://github.com/garlicvread/ETRI_TANGO",
+      "snippet": "The TANGO framework aims to deploy and load ready-to-use deep learning models for the specific vision task (classification, object detection, or instance segmentation) onto the user&#x27;s target devices by automatically constructing and training deep learning models without the help of experts or with minimal knowledge on usage on TANGO. To this end, data preparation, neural network model creation ..."
+    },
+    {
+      "title": "TANGO2/SDS/dataset/README.md at main · ML-TANGO/TANGO2 · GitHub",
+      "url": "https://github.com/ML-TANGO/TANGO2/blob/main/SDS/dataset/README.md",
+      "snippet": "GenAIOps for SDx. Contribute to ML-TANGO/TANGO2 development by creating an account on GitHub."
+    },
+    {
+      "title": "ETRI releases no-code machine learning development tools",
+      "url": "https://e3.eurekalert.org/news-releases/1111295",
+      "snippet": "Since 2021, Korean researchers have been providing a simple software development framework to users with relatively limited AI expertise in industrial fields such as factories, medical, and shipbuilding, providing them with a significant boost. ETRI announced that it has released the core technology of MLOps tool, which automatically generates neural networks based on no-code and automates the ..."
+    },
+    {
+      "title": "ETRI Releases No-Code Machine Learning Development Tools",
+      "url": "https://www.littlebytesnews.com/2026/01/etri-releases-no-code-machine-learning.html",
+      "snippet": "ETRI also released LLMOps tools that support the development of generative AI. During the development of TANGO, 24 domestic and international patents are invented, 3 NeurIPS papers and 13 SCI papers are published, 4 technology transfers and KRW 10 billion in commercialization revenue are resulted."
+    }
+  ]
+}

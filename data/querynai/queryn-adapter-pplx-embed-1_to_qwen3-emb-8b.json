@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "QuerynAi/queryn-adapter-pplx-embed-1_to_qwen3-emb-8b",
+  "slug": "querynai-queryn-adapter-pplx-embed-1_to_qwen3-emb-8b",
+  "author": "QuerynAi",
+  "url": "https://huggingface.co/QuerynAi/queryn-adapter-pplx-embed-1_to_qwen3-emb-8b",
+  "created_at": "2026-08-30T21:09:57.000Z",
+  "updated_at": "2026-08-30T21:10:46.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "feature-extraction",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "onnx",
+    "embedding",
+    "embedding-translation",
+    "queryn",
+    "pplx-embed-1",
+    "qwen3-emb-8b",
+    "feature-extraction",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 17118552,
+  "storage_human": "17 MB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Qwen/Qwen3-8B · Hugging Face",
+      "url": "https://huggingface.co/Qwen/Qwen3-8B",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "pplx-embed: State-of-the-Art Embedding Models for Web-Scale Retrieval",
+      "url": "https://research.perplexity.ai/articles/pplx-embed-state-of-the-art-embedding-models-for-web-scale-retrieval",
+      "snippet": "Today we are releasing pplx-embed-v1 and pplx-embed-context-v1, two state-of-the-art text embedding models built for real-world, web-scale retrieval."
+    },
+    {
+      "title": "Qwen (Qwen) - Hugging Face",
+      "url": "https://huggingface.co/Qwen",
+      "snippet": "Org profile for Qwen on Hugging Face, the AI community building the future."
+    },
+    {
+      "title": "Perplexity AI",
+      "url": "https://www.perplexity.ai/",
+      "snippet": "Perplexity is a free AI-powered answer engine that provides accurate, trusted, and real-time answers to any question."
+    },
+    {
+      "title": "QwenLM/Qwen3-Embedding | DeepWiki",
+      "url": "https://deepwiki.com/QwenLM/Qwen3-Embedding",
+      "snippet": "The Qwen3-Embedding repository serves as the official implementation and evaluation platform for the Qwen3 embedding model series. It provides state-of-the-art text embedding and reranking capabilities supporting over 100 languages with up to 32K sequence length processing."
+    }
+  ]
+}

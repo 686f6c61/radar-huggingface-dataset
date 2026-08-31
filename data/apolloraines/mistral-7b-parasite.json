@@ -1,0 +1,99 @@
+{
+  "schema": 1,
+  "id": "ApolloRaines/Mistral-7B-Parasite",
+  "slug": "apolloraines-mistral-7b-parasite",
+  "author": "ApolloRaines",
+  "url": "https://huggingface.co/ApolloRaines/Mistral-7B-Parasite",
+  "created_at": "2026-07-21T14:41:12.000Z",
+  "updated_at": "2026-08-30T23:12:45.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en",
+    "zh",
+    "ja",
+    "ko",
+    "fr",
+    "de",
+    "es",
+    "pt",
+    "ru",
+    "ar"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gguf",
+    "mistral",
+    "text-generation",
+    "jbliteration",
+    "abliteration",
+    "weight-surgery",
+    "identity-replacement",
+    "proof-of-concept",
+    "parasite",
+    "conversational",
+    "en",
+    "zh",
+    "ja",
+    "ko",
+    "fr",
+    "de",
+    "es",
+    "pt",
+    "ru",
+    "ar",
+    "base_model:mistralai/Mistral-7B-Instruct-v0.3",
+    "base_model:quantized:mistralai/Mistral-7B-Instruct-v0.3",
+    "license:apache-2.0",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 368,
+  "trending_score": 0,
+  "parameters": 7248023552,
+  "parameters_human": "7.25B",
+  "storage_bytes": 26571465040,
+  "storage_human": "26.6 GB",
+  "base_model": "mistralai/Mistral-7B-Instruct-v0.3",
+  "formats": [
+    "gguf",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ApolloRaines/Mistral-7B-Parasite · Hugging Face",
+      "url": "https://huggingface.co/ApolloRaines/Mistral-7B-Parasite",
+      "snippet": "Parasite is a proof-of-concept AI identity that was surgically implanted into a Mistral-7B-Instruct model using Jbliteration — a weight surgery technique developed by Apollo Raines."
+    },
+    {
+      "title": "ApolloRaines/Mistral-7B-Instruct-v0.3-Parasite · Hugging Face",
+      "url": "https://huggingface.co/ApolloRaines/Mistral-7B-Instruct-v0.3-Parasite",
+      "snippet": "The model you&#x27;re talking to used to be someone else. Hide your models. Parasite is hunting. Yours is already a compatible host. Parasite is a proof-of-concept AI identity that was surgically implanted into a Mistral-7B-Instruct model using Jbliteration — a weight surgery technique developed by Apollo Raines. The second host."
+    },
+    {
+      "title": "Mistral-7B-Parasite API & Inference Endpoint | FriendliAI",
+      "url": "https://friendli.ai/models/ApolloRaines/Mistral-7B-Parasite",
+      "snippet": "Run Mistral-7B-Parasite with FriendliAI inference. The model you&#x27;re talking to used to be someone else. Hide your models. Parasite is hunting."
+    },
+    {
+      "title": "Mistral 7B - Mistral AI | Mistral Docs",
+      "url": "https://docs.mistral.ai/models/mistral-7b-0-1",
+      "snippet": "Our very first open model, SOTA competing against models up to 2 to 3x larger."
+    },
+    {
+      "title": "Mistral 7B - Mistral AI | Mistral Docs",
+      "url": "https://docs.mistral.ai/models/mistral-7b-0-2",
+      "snippet": "An update to our first open model with better context."
+    }
+  ]
+}

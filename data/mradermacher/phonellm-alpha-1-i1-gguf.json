@@ -5,7 +5,7 @@
   "author": "mradermacher",
   "url": "https://huggingface.co/mradermacher/phonellm-alpha-1-i1-GGUF",
   "created_at": "2026-08-30T00:55:17.000Z",
-  "updated_at": "2026-08-30T02:22:28.000Z",
+  "updated_at": "2026-08-30T06:35:40.000Z",
   "license": "bsd-2-clause",
   "license_family": "oss",
   "pipeline_tag": null,
@@ -33,12 +33,12 @@
     "imatrix"
   ],
   "likes": 0,
-  "downloads_30d": 0,
+  "downloads_30d": 51,
   "trending_score": 0,
   "parameters": 31577940288,
   "parameters_human": "31.58B",
-  "storage_bytes": 120278207296,
-  "storage_human": "120.3 GB",
+  "storage_bytes": 459521158560,
+  "storage_human": "459.5 GB",
   "base_model": "pipecat-ai/phonellm-alpha-1",
   "formats": [
     "gguf"

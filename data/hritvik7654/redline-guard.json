@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "Hritvik7654/redline-guard",
+  "slug": "hritvik7654-redline-guard",
+  "author": "Hritvik7654",
+  "url": "https://huggingface.co/Hritvik7654/redline-guard",
+  "created_at": "2026-08-30T20:50:00.000Z",
+  "updated_at": "2026-08-30T20:50:12.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "modernbert",
+    "text-classification",
+    "generated_from_trainer",
+    "base_model:answerdotai/ModernBERT-base",
+    "base_model:finetune:answerdotai/ModernBERT-base",
+    "license:apache-2.0",
+    "text-embeddings-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 149606402,
+  "parameters_human": "149.6M",
+  "storage_bytes": 598445625,
+  "storage_human": "598 MB",
+  "base_model": "answerdotai/ModernBERT-base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - imandiakhil9505-hub/redline-guard",
+      "url": "https://github.com/imandiakhil9505-hub/redline-guard",
+      "snippet": "An AI-powered contract risk auditor and redline assistant that parses agreements, flags risky clauses against custom legal playbooks, explains why they are risky, and proposes clean redline edits with a one-click apply feature."
+    },
+    {
+      "title": "GitHub - New-Sheep/RedlineGuard: PortSwigger AI Pioneer take-home ...",
+      "url": "https://github.com/New-Sheep/RedlineGuard",
+      "snippet": "PortSwigger AI Pioneer take-home: playbook-grounded contract review with security halt and decision memory - New-Sheep/RedlineGuard"
+    },
+    {
+      "title": "CivArchive (CivitAI Archive) - AI Model Archive",
+      "url": "https://civitaiarchive.com/",
+      "snippet": "Browse and discover AI models from CivitAI, TensorArt, and SeaArt. Community-driven archive preserving access to AI resources."
+    },
+    {
+      "title": "hritvik7654 (Hritvik Gupta) - Docker Hub",
+      "url": "https://hub.docker.com/u/hritvik7654",
+      "snippet": "Discover Docker images from hritvik7654. Visit their profile and explore images they maintain."
+    },
+    {
+      "title": "Low Latency Redline Detection via Vision Models - harvey.ai",
+      "url": "https://www.harvey.ai/blog/low-latency-redline-detection",
+      "snippet": "Conclusion By integrating this redline detection model with Harvey&#x27;s broader document processing systems, we&#x27;ve transformed redline detection from a slow post-upload job into a sub-second, inline capability."
+    }
+  ]
+}

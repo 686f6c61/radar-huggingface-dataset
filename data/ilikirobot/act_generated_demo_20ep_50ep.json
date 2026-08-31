@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "ilikirobot/act_generated_demo_20ep_50ep",
+  "slug": "ilikirobot-act_generated_demo_20ep_50ep",
+  "author": "ilikirobot",
+  "url": "https://huggingface.co/ilikirobot/act_generated_demo_20ep_50ep",
+  "created_at": "2026-08-30T19:47:37.000Z",
+  "updated_at": "2026-08-30T19:48:04.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "act",
+    "robotics",
+    "dataset:ilikirobot/generated_demo_20ep_50ep",
+    "arxiv:2304.13705",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 51596934,
+  "parameters_human": "51.6M",
+  "storage_bytes": 206428264,
+  "storage_human": "206 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ilikirobot/act_generated_dataset · Hugging Face",
+      "url": "https://huggingface.co/ilikirobot/act_generated_dataset",
+      "snippet": "Instructions to use ilikirobot/act_generated_dataset with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Libraries LeRobot How to use ilikirobot/act_generated_dataset with LeRobot: Notebooks Google Colab Kaggle Model Card for act Model Details Inputs & Outputs Training Dataset Training Configuration How to Get Started with the Model Run the policy ..."
+    },
+    {
+      "title": "ilikirobot/act_generated_dataset at main - Hugging Face",
+      "url": "https://huggingface.co/ilikirobot/act_generated_dataset/tree/main",
+      "snippet": "ilikirobot / act_generated_dataset like 0 Robotics LeRobot Safetensors ilikirobot/generated_dataset act arxiv:2304.13705 License:apache-2.0 Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "Best mendoukusai - 20ep AI LORA - Free Download | Tensor.Art",
+      "url": "https://tensor.art/models/923515393530680878",
+      "snippet": "Download mendoukusai - free LORA SDXL 1.0 AI model on TENSOR. By Devilworld"
+    },
+    {
+      "title": "LLM Trainer: Automated Robotic Data Generating via Demonstration ...",
+      "url": "https://arxiv.org/pdf/2509.20070v1",
+      "snippet": "A multi-armed bandit-based optimization method which significantly improves demo generation success rate, allowing our method to outperform baselines that rely on expert annotations. An ensembling strategy to combine a learned IL policy with the optimized LLM-based feedforward controller developed during data collection."
+    },
+    {
+      "title": "Model Zoo | facebookresearch/Mask2Former | DeepWiki",
+      "url": "https://deepwiki.com/facebookresearch/Mask2Former/5-model-zoo",
+      "snippet": "Model Zoo Relevant source files Purpose and Scope This document provides a comprehensive catalog of pre-trained Mask2Former models available for different segmentation tasks. It includes detailed information about model performance metrics, backbone architectures, training configurations, and download links. For information about training your own models, see Training System, and for inference ..."
+    }
+  ]
+}

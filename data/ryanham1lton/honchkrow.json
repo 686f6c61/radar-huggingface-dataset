@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "Ryanham1lton/Honchkrow",
+  "slug": "ryanham1lton-honchkrow",
+  "author": "Ryanham1lton",
+  "url": "https://huggingface.co/Ryanham1lton/Honchkrow",
+  "created_at": "2026-08-30T19:48:46.000Z",
+  "updated_at": "2026-08-30T19:51:17.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:cc-by-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 116567548,
+  "storage_human": "117 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Ryanham1lton (Ryan James Hamilton) - Hugging Face",
+      "url": "https://huggingface.co/Ryanham1lton",
+      "snippet": "AI & ML interests ... Recent Activity updated a model about 12 hours ago ... published a model about 12 hours ago"
+    },
+    {
+      "title": "Ryanham1lton/Wingull · Hugging Face",
+      "url": "https://huggingface.co/Ryanham1lton/Wingull",
+      "snippet": "Ryanham1lton / Wingull like 0 License:cc-by-4. Model card FilesFiles and versions xet Community Copy to bucket new"
+    },
+    {
+      "title": "Best Honchkrow - v1 AI LORA - Free Download | Tensor.Art",
+      "url": "https://tensor.art/models/962168215046208672",
+      "snippet": "Download Honchkrow - free LORA SD 1.5 AI model on TENSOR. By truecrusher"
+    },
+    {
+      "title": "Honchkrow - SeaArt AI Model",
+      "url": "https://www.seaart.ai/models/detail/706a4ce000259ad1db8b900cb46af80b",
+      "snippet": "Explore Honchkrow model on SeaArt AI. Transform your idea into professional-quality AI-generated images and videos with our free, easy-to-use platform."
+    },
+    {
+      "title": "The Ransomware an AI Model Built Without Trying - CyberHoot",
+      "url": "https://cyberhoot.com/blog/the-ransomware-an-ai-model-built-without-trying/",
+      "snippet": "AI-built ransomware abuses Chrome&#x27;s File System Access API on Windows and Android. See how it works and 5 easy steps to stay protected."
+    }
+  ]
+}

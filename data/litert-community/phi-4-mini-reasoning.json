@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "litert-community/Phi-4-mini-reasoning",
+  "slug": "litert-community-phi-4-mini-reasoning",
+  "author": "litert-community",
+  "url": "https://huggingface.co/litert-community/Phi-4-mini-reasoning",
+  "created_at": "2026-06-28T19:07:39.000Z",
+  "updated_at": "2026-08-31T01:30:30.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "litert-lm",
+  "languages": [],
+  "tags": [
+    "litert-lm",
+    "litert",
+    "litertlm",
+    "on-device",
+    "edge",
+    "phi",
+    "reasoning",
+    "math",
+    "text-generation",
+    "base_model:microsoft/Phi-4-mini-reasoning",
+    "base_model:finetune:microsoft/Phi-4-mini-reasoning",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 2,
+  "downloads_30d": 388,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 11135897536,
+  "storage_human": "11.1 GB",
+  "base_model": "microsoft/Phi-4-mini-reasoning",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "litert-community/Phi-4-mini-reasoning · Hugging Face",
+      "url": "https://huggingface.co/litert-community/Phi-4-mini-reasoning",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "litert-community/Phi-4-mini-reasoning at main - Hugging Face",
+      "url": "https://huggingface.co/litert-community/Phi-4-mini-reasoning/tree/main",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Phi 4 Mini Reasoning - GGUF Model - local-ai-zone.github.io",
+      "url": "https://local-ai-zone.github.io/models/phi-4-mini-reasoning.html",
+      "snippet": "Download Phi 4 Mini Reasoning GGUF model. 14.7 GB, 6,757 downloads, 71 likes."
+    },
+    {
+      "title": "microsoft/phi-4-mini-reasoning • LM Studio",
+      "url": "https://lmstudio.ai/models/microsoft/phi-4-mini-reasoning",
+      "snippet": "Raw Phi-4-mini-reasoning Phi-4-mini-reasoning is a lightweight open model from the Phi-4 family, built on synthetic, reasoning-dense data and further finetuned for advanced math reasoning. It supports a 128K token context length and is ideal for multi-step, logic-intensive mathematical problem-solving in memory- or compute-constrained environments."
+    },
+    {
+      "title": "model.litertlm · litert-community/Phi-4-mini-reasoning at main",
+      "url": "https://huggingface.co/litert-community/Phi-4-mini-reasoning/blob/main/model.litertlm",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    }
+  ]
+}

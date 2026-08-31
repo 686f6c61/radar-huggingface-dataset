@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "TangYishan/starvla-qwenoft-franka-robomimic-lift",
+  "slug": "tangyishan-starvla-qwenoft-franka-robomimic-lift",
+  "author": "TangYishan",
+  "url": "https://huggingface.co/TangYishan/starvla-qwenoft-franka-robomimic-lift",
+  "created_at": "2026-08-30T22:12:37.000Z",
+  "updated_at": "2026-08-30T22:14:08.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "robotics",
+    "vla",
+    "starvla",
+    "franka",
+    "qwenoft",
+    "qwen3.5",
+    "image-text-to-text",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 13414500434,
+  "storage_human": "13.4 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - tongji-AI/superVLA",
+      "url": "https://github.com/tongji-AI/superVLA",
+      "snippet": "StarVLA is a modular and flexible codebase for developing Vision-Language Model (VLM) to Vision-Language-Action (VLA) models. In StarVLA (also a pun on \"start VLA\" ), each functional component (model, data, trainer, config, evaluation, etc.) follows a top-down, intuitive separation and high cohesion and low coupling principle, which enabling plug-and-play design, rapid prototyping, and ..."
+    },
+    {
+      "title": "Qwen-OFT (Parallel Prediction) | starVLA/starVLA | DeepWiki",
+      "url": "https://deepwiki.com/starVLA/starVLA/4.4-qwen-oft-(parallel-prediction)",
+      "snippet": "This document describes the Qwen-OFT framework, a lightweight Vision-Language-Action (VLA) implementation that uses parallel MLP regression for continuous action prediction. Qwen-OFT injects special a"
+    },
+    {
+      "title": "GitHub - starVLA/starVLA: StarVLA: A Lego-like Codebase for Vision ...",
+      "url": "https://github.com/starVLA/starVLA",
+      "snippet": "Thank you for your understanding and support! 🙏 In StarVLA (also a pun on \"start VLA\" ), each functional component (model, data, trainer, config, evaluation, etc.) follows a top-down, intuitive separation and high-cohesion, low-coupling principle, enabling plug-and-play design, rapid prototyping, and independent debugging."
+    },
+    {
+      "title": "StarVLA: A Lego-like Codebase for Vision-Language-Action Model Developing",
+      "url": "https://arxiv.org/abs/2604.05014",
+      "snippet": "StarVLA addresses these challenges in three aspects. First, it provides a modular backbone--action-head architecture that supports both VLM backbones (e.g., Qwen-VL) and world-model backbones (e.g., Cosmos) alongside representative action-decoding paradigms, all under a shared abstraction in which backbone and action head can each be swapped ..."
+    },
+    {
+      "title": "StarVLA: A Lego-like Codebase for Vision-Language-Action Model Developing",
+      "url": "https://huggingface.co/papers/2604.05014",
+      "snippet": "Join the discussion on this paper page StarVLA: A Lego-like Codebase for Vision-Language-Action Model Developing"
+    }
+  ]
+}

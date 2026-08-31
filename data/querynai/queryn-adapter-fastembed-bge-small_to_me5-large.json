@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "QuerynAi/queryn-adapter-fastembed-bge-small_to_me5-large",
+  "slug": "querynai-queryn-adapter-fastembed-bge-small_to_me5-large",
+  "author": "QuerynAi",
+  "url": "https://huggingface.co/QuerynAi/queryn-adapter-fastembed-bge-small_to_me5-large",
+  "created_at": "2026-08-30T21:01:18.000Z",
+  "updated_at": "2026-08-30T21:01:25.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "feature-extraction",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "onnx",
+    "embedding",
+    "embedding-translation",
+    "queryn",
+    "fastembed-bge-small",
+    "me5-large",
+    "feature-extraction",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1897136,
+  "storage_human": "2 MB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Queryn adapter — bge-m3 → fastembed-bge-small - Hugging Face",
+      "url": "https://huggingface.co/QuerynAi/queryn-adapter-bge-m3_to_fastembed-bge-small",
+      "snippet": "Translates an embedding produced by bge-m3 into the embedding space of fastembed-bge-small, so a corpus already embedded with bge-m3 can be served against a fastembed-bge-small index without re-embedding it. Part of the Queryn embedding-translation engine."
+    },
+    {
+      "title": "Welcome to BGE! — BGE documentation",
+      "url": "https://bge-model.com/",
+      "snippet": "Besides the resources we provide here in this documentation, please visit our GitHub repo for more contents including: Want to get familiar with BGE quickly? There are hands-on examples to run for embedder and reranker&#x27;s inference, evaluation, and finetuning. Unfamiliar with some area, keywords or techniques of retrieval and RAG? We provide tutorials to teach you basic knowledge and coding ..."
+    },
+    {
+      "title": "BGE-M3 — BGE documentation",
+      "url": "https://bge-model.com/bge/bge_m3.html",
+      "snippet": "BGE-M3 is a compound and powerful embedding model distinguished for its versatility in: Multi-Functionality: It can simultaneously perform the three common retrieval functionalities of embedding model: dense retrieval, multi-vector retrieval, and sparse retrieval."
+    },
+    {
+      "title": "GitHub - qdrant/fastembed: Fast, Accurate, Lightweight Python library ...",
+      "url": "https://github.com/qdrant/fastembed",
+      "snippet": "FastEmbed is a lightweight, fast, Python library built for embedding generation. We support popular text models. Please open a GitHub issue if you want us to add a new model. The default text embedding (TextEmbedding) model is Flag Embedding, presented in the MTEB leaderboard. It supports \"query\" and \"passage\" prefixes for the input text. Here is an example for Retrieval Embedding Generation ..."
+    },
+    {
+      "title": "bge",
+      "url": "https://bge.baai.ac.cn/",
+      "snippet": "Most Popular Embedding Model Series Across Multiple Platforms The BGE series models have gained widespread popularity among users and developers due to excellent performance and applicability, with download data far surpassing that of similar models."
+    }
+  ]
+}

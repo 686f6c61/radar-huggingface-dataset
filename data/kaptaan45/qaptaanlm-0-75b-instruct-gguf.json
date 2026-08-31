@@ -5,7 +5,7 @@
   "author": "kaptaan45",
   "url": "https://huggingface.co/kaptaan45/QaptaanLM-0.75B-Instruct-GGUF",
   "created_at": "2026-08-30T19:03:50.000Z",
-  "updated_at": "2026-08-30T19:13:21.000Z",
+  "updated_at": "2026-08-30T20:14:30.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -32,8 +32,8 @@
   "trending_score": 0,
   "parameters": 297391424,
   "parameters_human": "297.4M",
-  "storage_bytes": 1538733120,
-  "storage_human": "1.5 GB",
+  "storage_bytes": 4075021176,
+  "storage_human": "4.1 GB",
   "base_model": "kaptaan45/QaptaanLM-0.75B-Instruct",
   "formats": [
     "gguf"

@@ -1,0 +1,78 @@
+{
+  "schema": 1,
+  "id": "sajalregmi4/arkios-1b-base",
+  "slug": "sajalregmi4-arkios-1b-base",
+  "author": "sajalregmi4",
+  "url": "https://huggingface.co/sajalregmi4/arkios-1b-base",
+  "created_at": "2026-08-30T22:42:10.000Z",
+  "updated_at": "2026-08-30T23:58:20.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en",
+    "ne"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3",
+    "text-generation",
+    "nepali",
+    "devanagari",
+    "bilingual",
+    "from-scratch",
+    "low-resource",
+    "en",
+    "ne",
+    "arxiv:2608.26449",
+    "license:apache-2.0",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1040267776,
+  "parameters_human": "1.04B",
+  "storage_bytes": 4161093840,
+  "storage_human": "4.2 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "sajalregmi4 (Sajal Regmi) - Hugging Face",
+      "url": "https://huggingface.co/sajalregmi4",
+      "snippet": "AI & ML interests ... Recent Activity updated a model about 3 hours ago ... published a model about 3 hours ago"
+    },
+    {
+      "title": "sajalregmi4/arkios-tokenizer · Hugging Face",
+      "url": "https://huggingface.co/sajalregmi4/arkios-tokenizer",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Vowel Signs Are Not Letters: A Pre-tokenization Ceiling on Multilingual ...",
+      "url": "https://arxiv.org/pdf/2608.26449",
+      "snippet": "1 Introduction Fertility, the mean number of tokens a tokenizer spends per word, sets an exchange rate between a language and every cost tied to a language model. With context length and training budget held fixed, a language tokenized at 5 tokens per word gets a fifth as much effective text as one tokenized at 1. For low-resource languages the corpus is already the binding constraint, and ..."
+    },
+    {
+      "title": "Arkios Code — The AI firmware development IDE",
+      "url": "https://code.arkios.ai/",
+      "snippet": "The AI-native firmware IDE that knows your chip. Read the datasheet, configure the silicon, generate drivers, design the PCB as code, and debug on real hardware — one workspace for firmware and hardware engineers."
+    },
+    {
+      "title": "Sajal Regmi - Engineer",
+      "url": "https://sajalregmi.com/",
+      "snippet": "Sajal Regmi - Engineer specializing in software development, product engineering, and innovation. Building impactful technologies with Node.js, React, microservices, and modern engineering practices."
+    }
+  ]
+}

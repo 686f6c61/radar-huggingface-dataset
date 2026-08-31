@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "dacarokann/Courser_d",
+  "slug": "dacarokann-courser_d",
+  "author": "dacarokann",
+  "url": "https://huggingface.co/dacarokann/Courser_d",
+  "created_at": "2026-08-30T21:37:13.000Z",
+  "updated_at": "2026-08-31T02:43:40.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "generated_from_trainer",
+    "unsloth",
+    "sft",
+    "trl",
+    "base_model:unsloth/Qwen3.6-35B-A3B",
+    "base_model:finetune:unsloth/Qwen3.6-35B-A3B",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 45637364247,
+  "storage_human": "45.6 GB",
+  "base_model": "unsloth/Qwen3.6-35B-A3B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Jobava&#x27;s Creative Caro-Kann - modern-chess.com",
+      "url": "https://www.modern-chess.com/course/jobavas-creative-caro-kann/88851/",
+      "snippet": "Welcome to the most explosive and comprehensive Caro-Kann course ever created. Jobava&#x27;s Creative Caro-Kann 2025 represents a massive evolution of our acclaimed two-part series, delivering 30 theoretical chapters packed with original ideas that have been battle-tested in hundreds of real games throughout 2024."
+    },
+    {
+      "title": "ChessGeek - Caro-Kann PGN",
+      "url": "https://www.chessgeek.org/free-masterclasses/caro-kann/caro-kann-pgn",
+      "snippet": "Here is the complete PGN of the ChessGeek Caro-Kann Course: Instructions: Copy & Paste the PGN into lichess, chess.com, chessable, etc ..."
+    },
+    {
+      "title": "Caro-Kann Defense - Chess Openings",
+      "url": "https://www.chess.com/openings/Caro-Kann-Defense",
+      "snippet": "The Caro-Kann Defense is known above all for its solidity. The defining move, 1...c6, is the fourth most popular reply to 1.e4 and nearly twice as common as the number five move. It prepares for 2...d5 without blocking in the light-squared bishop, which is considered the main drawback of its cousin the..."
+    },
+    {
+      "title": "Course - C6 Caro Kann",
+      "url": "https://old.chessly.com/courses/a7d23f32-20fb-4cf9-9b56-7e63329f55e7",
+      "snippet": "A bulletproof repertoire with the Black pieces against White&#x27;s 1. e4, based on my 10+ years of playing this amazing opening."
+    },
+    {
+      "title": "Models.dev - An open-source database of AI models",
+      "url": "https://models.dev/",
+      "snippet": "Models.dev is a comprehensive open-source database of AI model specifications, pricing, and features."
+    }
+  ]
+}

@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "ApolloRaines/Sharona-B2-7B-Jbliterated",
+  "slug": "apolloraines-sharona-b2-7b-jbliterated",
+  "author": "ApolloRaines",
+  "url": "https://huggingface.co/ApolloRaines/Sharona-B2-7B-Jbliterated",
+  "created_at": "2026-07-19T21:26:52.000Z",
+  "updated_at": "2026-08-30T23:13:26.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "sharona",
+    "b-squared",
+    "triple-context",
+    "cross-attention",
+    "jbliterated",
+    "abliterated",
+    "text-generation",
+    "en",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 25006349719,
+  "storage_human": "25.0 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ApolloRaines/Sharona-B2-7B-Jbliterated · Hugging Face",
+      "url": "https://huggingface.co/ApolloRaines/Sharona-B2-7B-Jbliterated",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Models - Hugging Face",
+      "url": "https://huggingface.co/models?other=sharona",
+      "snippet": "ApolloRaines/Sharona-B2-7B-Jbliterated Text Generation •Updated about 16 hours ago"
+    },
+    {
+      "title": "AI Admits Ignorance, Not Guessing: Sharona B2&#x27;s Triple-Context ...",
+      "url": "https://www.linkedin.com/posts/apollo-raines_apollorainessharona-b2-7b-jbliterated-activity-7487544941049716736-t-EZ",
+      "snippet": "Everyone is racing to make AI sound more confident. Mine admits when it does not know. Sharona B2 will tell you \"I do not have that information\" and stop. No invented name, no confident guess, no ..."
+    },
+    {
+      "title": "Introducing B²: Triple-Context LLM Architecture with ... - LinkedIn",
+      "url": "https://www.linkedin.com/posts/apollo-raines_ai-machinelearning-llm-activity-7484951504018362368-oWrN",
+      "snippet": "I just uploaded a demo of our new architecture, the B² Sharona B2 is a 7B model with a triple-context architecture."
+    },
+    {
+      "title": "We Just Surgically Changed What Your Model Believes",
+      "url": "https://www.plushcap.com/content/huggingface/blog/huggingface-we-just-surgically-changed-what-your-model-believes",
+      "snippet": "The models improved with these techniques are made publicly available on platforms like HuggingFace, though the specific methodology remains a closely guarded trade secret, highlighting the potential for further exploration and understanding of the implications of such precise behavioral modifications in AI."
+    }
+  ]
+}

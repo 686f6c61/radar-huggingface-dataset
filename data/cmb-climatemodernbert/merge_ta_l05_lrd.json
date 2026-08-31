@@ -5,7 +5,7 @@
   "author": "CMB-ClimateModernBERT",
   "url": "https://huggingface.co/CMB-ClimateModernBERT/Merge_TA_L05_LRD",
   "created_at": "2026-08-30T15:46:46.000Z",
-  "updated_at": "2026-08-30T15:46:53.000Z",
+  "updated_at": "2026-08-30T19:58:28.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": "fill-mask",

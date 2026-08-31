@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "HCY123902/gemma3_12b_it_hc_ssss_n32_r1_ref_ans_sft",
+  "slug": "hcy123902-gemma3_12b_it_hc_ssss_n32_r1_ref_ans_sft",
+  "author": "HCY123902",
+  "url": "https://huggingface.co/HCY123902/gemma3_12b_it_hc_ssss_n32_r1_ref_ans_sft",
+  "created_at": "2026-08-30T22:56:03.000Z",
+  "updated_at": "2026-08-30T23:48:59.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gemma3",
+    "image-text-to-text",
+    "generated_from_trainer",
+    "sft",
+    "trl",
+    "conversational",
+    "base_model:google/gemma-3-12b-it",
+    "base_model:finetune:google/gemma-3-12b-it",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1166448,
+  "parameters_human": "1.2M",
+  "storage_bytes": 24412874427,
+  "storage_human": "24.4 GB",
+  "base_model": "google/gemma-3-12b-it",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "HCY123902/gemma3_12b_it_hc_ssss_n32_r1_dpo at main - Hugging Face",
+      "url": "https://huggingface.co/datasets/HCY123902/gemma3_12b_it_hc_ssss_n32_r1_dpo/tree/main",
+      "snippet": "Datasets: HCY123902 / gemma3_12b_it_hc_ssss_n32_r1_dpo like 0 Modalities: Tabular Text Formats: parquet Size: 1K - 10K Libraries: Datasets pandas Polars + 1 Dataset card Data Studio FilesFiles and versions xet Community main gemma3_12b_it_hc_ssss_n32_r1_dpo 9.02 MB 1 contributor History:2 commits HCY123902 Upload dataset addc355 verifiedabout 7 hours ago dataUpload datasetabout 7 hours ago ..."
+    },
+    {
+      "title": "HCY123902 (Huang Chengyu) - Hugging Face",
+      "url": "https://huggingface.co/HCY123902",
+      "snippet": "User profile of Huang Chengyu on Hugging Face"
+    },
+    {
+      "title": "Gemma 3 Technical Report - arXiv.org",
+      "url": "https://arxiv.org/html/2503.19786v1",
+      "snippet": "Abstract We introduce Gemma 3, a multimodal addition to the Gemma family of lightweight open models, ranging in scale from 1 to 27 billion parameters. This version introduces vision understanding abilities, a wider coverage of languages and longer context - at least 128K tokens. We also change the architecture of the model to reduce the KV-cache memory that tends to explode with long context ..."
+    },
+    {
+      "title": "PDF Gemma3TechnicalReport",
+      "url": "https://storage.googleapis.com/deepmind-media/gemma/Gemma3Report.pdf",
+      "snippet": "We introduce Gemma 3, a multimodal addition to the Gemma family of lightweight open models, ranging in scale from 1 to 27 billion parameters. This version introduces vision understanding abilities, a wider coverage of languages and longer context - at least 128K tokens. We also change the architecture of the model to reduce the KV-cache memory that tends to explode with long context. This is ..."
+    },
+    {
+      "title": "gemma3:12b - ollama.com",
+      "url": "https://ollama.com/library/gemma3:12b",
+      "snippet": "The current, most capable model that runs on a single GPU."
+    }
+  ]
+}

@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "jarjoura/video-depth-anything-small-mlx",
+  "slug": "jarjoura-video-depth-anything-small-mlx",
+  "author": "jarjoura",
+  "url": "https://huggingface.co/jarjoura/video-depth-anything-small-mlx",
+  "created_at": "2026-08-31T00:45:55.000Z",
+  "updated_at": "2026-08-31T00:46:02.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "depth-estimation",
+  "library": "mlx",
+  "languages": [],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "video_depth_anything",
+    "depth-estimation",
+    "video",
+    "video-depth-anything",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 29080193,
+  "parameters_human": "29.1M",
+  "storage_bytes": 116362301,
+  "storage_human": "116 MB",
+  "base_model": null,
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Video-Depth-Anything-Small - Hugging Face",
+      "url": "https://huggingface.co/depth-anything/Video-Depth-Anything-Small",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GitHub - DepthAnything/Video-Depth-Anything: [CVPR 2025 Highlight ...",
+      "url": "https://github.com/DepthAnything/Video-Depth-Anything",
+      "snippet": "This work presents Video Depth Anything based on Depth Anything V2, which can be applied to arbitrarily long videos without compromising quality, consistency, or generalization ability. Compared with other diffusion-based models, it enjoys faster inference speed, fewer parameters, and higher consistent depth accuracy."
+    },
+    {
+      "title": "Video Depth Anything",
+      "url": "https://videodepthanything.github.io/",
+      "snippet": "Long Video Results Comparison with DepthCrafter on open-world videos Comparison with DepthCrafter on Unprojected Point Cloud Intrinsic of camera as well as the aligned scale and shift parameters are obtained by running the first frame of the video through MoGe, which is a powerful model for recovering 3D geometry from monocular open-domain images."
+    },
+    {
+      "title": "Fine-tuned Models for depth-anything/Video-Depth-Anything-Small ...",
+      "url": "https://huggingface.co/models?other=base_model:finetune:depth-anything/Video-Depth-Anything-Small",
+      "snippet": "JoyFusion vLLM Ollama MLX LM Docker Model Runner Lemonade SGLang Unsloth Studio Pi Hermes Agent Atomic Chat Inference Providers Select all Groq Novita Cerebras Nscale fal Together AI Fireworks Featherless AI Zai Replicate Cohere Scaleway Public AI OVHcloud AI Endpoints HF Inference API WaveSpeed DeepInfra Misc Inference Endpoints text ..."
+    },
+    {
+      "title": "Video-Depth-Anything/README.md at main - GitHub",
+      "url": "https://github.com/DepthAnything/Video-Depth-Anything/blob/main/README.md",
+      "snippet": "This work presents Video Depth Anything based on Depth Anything V2, which can be applied to arbitrarily long videos without compromising quality, consistency, or generalization ability. Compared with other diffusion-based models, it enjoys faster inference speed, fewer parameters, and higher consistent depth accuracy."
+    }
+  ]
+}

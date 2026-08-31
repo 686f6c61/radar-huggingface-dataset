@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "Prannesshkva/Phantom-Samba-130M",
+  "slug": "prannesshkva-phantom-samba-130m",
+  "author": "Prannesshkva",
+  "url": "https://huggingface.co/Prannesshkva/Phantom-Samba-130M",
+  "created_at": "2026-08-30T19:14:29.000Z",
+  "updated_at": "2026-08-30T19:29:37.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "safetensors",
+    "phantom_samba",
+    "state-space-models",
+    "mamba",
+    "samba",
+    "phantom-cache",
+    "prefix-caching",
+    "int8-quantization",
+    "long-context",
+    "text-generation",
+    "custom_code",
+    "en",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 29778784,
+  "parameters_human": "29.8M",
+  "storage_bytes": 119121544,
+  "storage_human": "119 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Prannessh KVA prannesshkva - GitHub",
+      "url": "https://github.com/prannesshkva",
+      "snippet": "Highly driven AI and Software Engineering student with proven expertise bridging Data Science, Backend Infrastructure, and Distributed Systems. - prannesshkva"
+    },
+    {
+      "title": "SambaNova | The Fastest AI Inference Platform",
+      "url": "https://sambanova.ai/",
+      "snippet": "Discover SambaNova - the complete AI platform delivering the fastest AI inference, fine-tuning, and scalable solutions for agentic AI easily integrated into existing data center infrastructures."
+    },
+    {
+      "title": "state-spaces/mamba-130m · Hugging Face",
+      "url": "https://huggingface.co/state-spaces/mamba-130m",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Prannessh KVA | Showcase",
+      "url": "https://prannesshkva.vercel.app/projects.html",
+      "snippet": "Selected Works Seven recent projects across AI infrastructure, data engineering, NLP, and high-performance systems."
+    },
+    {
+      "title": "Higgsfield Raises $130 Million As Generative AI Video Becomes ... - Forbes",
+      "url": "https://www.forbes.com/sites/charliefink/2026/01/15/higgsfield-raises-130-million-as-generative-ai-video-becomes-marketing-infrastructure/",
+      "snippet": "Higgsfield raises $130 million as brands adopt generative video for high volume marketing production, hitting a $200 million run rate in under nine months."
+    }
+  ]
+}

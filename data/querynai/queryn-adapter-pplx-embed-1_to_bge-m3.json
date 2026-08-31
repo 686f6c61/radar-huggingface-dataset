@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "QuerynAi/queryn-adapter-pplx-embed-1_to_bge-m3",
+  "slug": "querynai-queryn-adapter-pplx-embed-1_to_bge-m3",
+  "author": "QuerynAi",
+  "url": "https://huggingface.co/QuerynAi/queryn-adapter-pplx-embed-1_to_bge-m3",
+  "created_at": "2026-08-30T21:08:53.000Z",
+  "updated_at": "2026-08-30T21:09:09.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "feature-extraction",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "onnx",
+    "embedding",
+    "embedding-translation",
+    "queryn",
+    "pplx-embed-1",
+    "bge-m3",
+    "feature-extraction",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 4523350,
+  "storage_human": "5 MB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - Gigadelux/Queryn: Queryn is the engine for interoperability ...",
+      "url": "https://github.com/Gigadelux/Queryn/tree/main",
+      "snippet": "Project Abstract Queryn is an embedding translation and enrichment engine: given a text chunk and its existing embedding from Model A, it returns the equivalent embedding in Model B&#x27;s space — without re-embedding the source corpus. It ships as a local program, invoked directly against a customer&#x27;s own infrastructure and authenticated with credentials — not a hosted HTTP API. The core ..."
+    },
+    {
+      "title": "ai_query function | Databricks on AWS",
+      "url": "https://docs.databricks.com/aws/en/sql/language-manual/functions/ai_query",
+      "snippet": "ai_query function Applies to: Databricks SQL Databricks Runtime Invokes an existing Databricks Model Serving endpoint and parses and returns its response. ai_query is a general purpose AI Function that enables you to query existing endpoints for real-time inference or batch inference workloads."
+    },
+    {
+      "title": "Use ai_query | Databricks on AWS",
+      "url": "https://docs.databricks.com/aws/en/large-language-models/ai-query",
+      "snippet": "Use ai_query ai_query is a general-purpose AI Function that lets you query any supported AI model directly from SQL or Python. Unlike task-specific AI Functions, which are purpose-built and optimized for a single task, ai_query gives you full control over the model, prompt, and parameters. For full syntax and parameter reference, see ai_query function. Requirements This function is not ..."
+    },
+    {
+      "title": "Queryn/docs/Adapters.md at main · Gigadelux/Queryn · GitHub",
+      "url": "https://github.com/Gigadelux/Queryn/blob/main/docs/Adapters.md",
+      "snippet": "Add any new embedding model to EMBEDDING_MODELS first if needed. Run dataset_splitting.py to produce a fresh data/splits/ {train,test}.parquet. Point a training pipeline (v1_adapter_model_training.py or later) at the new splits and run it — resumability means a crash or Ctrl-C just picks back up from the first unfinished pair."
+    },
+    {
+      "title": "PPLX-Embed Embedding Models: 11.7% Better Web Retrieval",
+      "url": "https://getfocuslab.com/pplx-embed-embedding-models/",
+      "snippet": "PPLX-embed embedding models beat BGE-M3 by 11.7 points on web retrieval. Real benchmark data, RAG performance, and honest deployment limitations explained."
+    }
+  ]
+}

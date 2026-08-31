@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "QuerynAi/queryn-adapter-me5-large_to_nemotron-1b-free",
+  "slug": "querynai-queryn-adapter-me5-large_to_nemotron-1b-free",
+  "author": "QuerynAi",
+  "url": "https://huggingface.co/QuerynAi/queryn-adapter-me5-large_to_nemotron-1b-free",
+  "created_at": "2026-08-30T21:02:49.000Z",
+  "updated_at": "2026-08-30T21:03:12.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "feature-extraction",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "onnx",
+    "embedding",
+    "embedding-translation",
+    "queryn",
+    "me5-large",
+    "nemotron-1b-free",
+    "feature-extraction",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 6632072,
+  "storage_human": "7 MB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Models - Hugging Face",
+      "url": "https://huggingface.co/models?other=queryn",
+      "snippet": "Explore machine learning models. QuerynAi/queryn-adapter-fastembed-bge-small_to_nemotron-1b-free"
+    },
+    {
+      "title": "Nemotron AI Models | NVIDIA Developer",
+      "url": "https://developer.nvidia.com/topics/ai/nemotron",
+      "snippet": "NVIDIA Nemotron is a family of open-source models with open weights, training data, and recipes, delivering leading efficiency and accuracy for building specialized AI agents with reasoning."
+    },
+    {
+      "title": "GitHub - Gigadelux/Queryn: Queryn is the engine for interoperability ...",
+      "url": "https://github.com/Gigadelux/Queryn/tree/main",
+      "snippet": "Weakest-performing target:nemotron-1b-free — mean 0.688 across all sources; worst single pair is fastembed-bge-small → nemotron-1b-free at 0.553. This model is the clearest current candidate for the \"weakest adapters\" architecture study in the roadmap. v0 → v1 improvement: mean cosine similarity across the 49 shared pairs rose by +0.064."
+    },
+    {
+      "title": "Nemotron · Hugging Face",
+      "url": "https://huggingface.co/docs/transformers/model_doc/nemotron",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Stop Paying for AI Coding: Run NVIDIA Nemotron 3 Ultra Free (2026 Setup ...",
+      "url": "https://justbeingresourceful.com/2026/06/16/stop-paying-for-ai-coding-run-nvidia-nemotron-3-ultra-free-2026-setup-guide/",
+      "snippet": "NVIDIA&#x27;s Nemotron 3 Ultra is a free, open 550B coding model you can run in your terminal. Here&#x27;s what it does, plus a 5-minute step-by-step setup with OpenCode."
+    }
+  ]
+}

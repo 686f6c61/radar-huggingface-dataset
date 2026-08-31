@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "kdotmahesh/diffusion-pick-clip-mug",
+  "slug": "kdotmahesh-diffusion-pick-clip-mug",
+  "author": "kdotmahesh",
+  "url": "https://huggingface.co/kdotmahesh/diffusion-pick-clip-mug",
+  "created_at": "2026-08-30T22:49:31.000Z",
+  "updated_at": "2026-08-30T22:49:55.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "robotics",
+    "diffusion",
+    "dataset:kdotmahesh/pick-clip-place-mug_20260830_120021",
+    "arxiv:2303.04137",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 277840246,
+  "parameters_human": "277.8M",
+  "storage_bytes": 3334072132,
+  "storage_human": "3.3 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - gwang-kim/DiffusionCLIP: [CVPR 2022] Official PyTorch ...",
+      "url": "https://github.com/gwang-kim/DiffusionCLIP",
+      "snippet": "This repo includes the official PyTorch implementation of DiffusionCLIP, Text-Guided Diffusion Models for Robust Image Manipulation. DiffusionCLIP resolves the critical issues in zero-shot manipulation with the following contributions. We revealed that diffusion model is well suited for image manipulation thanks to its nearly perfect inversion capability, which is an important advantage over ..."
+    },
+    {
+      "title": "[2110.02711] DiffusionCLIP: Text-Guided Diffusion Models for Robust ...",
+      "url": "https://arxiv.org/abs/2110.02711",
+      "snippet": "Recently, GAN inversion methods combined with Contrastive Language-Image Pretraining (CLIP) enables zero-shot image manipulation guided by text prompts. However, their applications to diverse real images are still difficult due to the limited GAN inversion capability. Specifically, these approaches often have difficulties in reconstructing images with novel poses, views, and highly variable ..."
+    },
+    {
+      "title": "Mug Diffusion - GitHub",
+      "url": "https://github.com/Keytoyze/Mug-Diffusion",
+      "snippet": "English | 中文 MuG Diffusion is a charting AI for rhythm games based on Stable Diffusion (one of the most powerful AIGC models) with a large modification to incorporate audio waves. Given an audio file, MuG Diffusion is able to generate high-quality diverse charts, which is aligned with the music and highly controllable. Currently, it supports 4K vertical scroll rhythm game (VSRG) only, with ..."
+    },
+    {
+      "title": "arXiv.org e-Print archive",
+      "url": "https://arxiv.org/pdf/2110.02711",
+      "snippet": "arXiv.org e-Print archive"
+    },
+    {
+      "title": "DiffusionCLIP: Text-Guided Diffusion Models for Robust Image ...",
+      "url": "https://ieeexplore.ieee.org/document/9879284",
+      "snippet": "Recently, GAN inversion methods combined with Contrastive Language-Image Pretraining (CLIP) enables zeroshot image manipulation guided by text prompts. However, their applications to diverse real images are still difficult due to the limited GAN inversion capability. Specifically, these approaches often have difficulties in reconstructing images with novel poses, views, and highly variable ..."
+    }
+  ]
+}

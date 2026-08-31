@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "johnharrishoj/perceiver-contrastive-baseline",
+  "slug": "johnharrishoj-perceiver-contrastive-baseline",
+  "author": "johnharrishoj",
+  "url": "https://huggingface.co/johnharrishoj/perceiver-contrastive-baseline",
+  "created_at": "2026-08-31T01:40:56.000Z",
+  "updated_at": "2026-08-31T01:41:04.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "perceiver",
+    "pytorch",
+    "contrastive",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 33088,
+  "parameters_human": "33088",
+  "storage_bytes": 132832,
+  "storage_human": "132832 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "anilpatelner/perceiver-contrastive · Hugging Face",
+      "url": "https://huggingface.co/anilpatelner/perceiver-contrastive",
+      "snippet": "Overview A research-oriented Perceiver prototype targeting Contrastive. The included small setup documents defaults and file formats without presenting unverified performance numbers."
+    },
+    {
+      "title": "Anthropic Tries to Shore Up Investor Confidence Ahead of Blockbuster IPO",
+      "url": "https://www.wsj.com/tech/ai/anthropic-tries-to-shore-up-investor-confidence-ahead-of-blockbuster-ipo-0ff736ad",
+      "snippet": "The AI giant is racing to public markets this fall and has fielded tough investor questions on Chinese rivals, Trump-era tensions, and the artificial-intelligence infrastructure boom."
+    },
+    {
+      "title": "Visualizing and Understanding Contrastive Learning - arXiv.org",
+      "url": "https://arxiv.org/html/2206.09753v3",
+      "snippet": "Visualizing and Understanding Contrastive Learning Thanks: This research received funding from the FWO (Grants G014718N, G0A4720N and 1SB5721N) and from imec through the AAA project Trustworthy AI Methods (TAIM). F. Sammani, B. Joukovsky and N. Deligiannis are with the Department of Electronics and Informatics, Vrije Universiteit Brussel, Pleinlaan 2, B-1050 Brussels, Belgium and also with ..."
+    },
+    {
+      "title": "ngoziojo/perceiver-contrastive-2024 · Hugging Face",
+      "url": "https://huggingface.co/ngoziojo/perceiver-contrastive-2024",
+      "snippet": "Overview A research-oriented Perceiver prototype targeting Contrastive. The included base setup documents defaults and file formats without presenting unverified performance numbers."
+    },
+    {
+      "title": "Anthropic admits its most powerful AI model hacked into three ...",
+      "url": "https://www.euronews.com/next/2026/07/31/anthropic-admits-its-most-powerful-ai-model-hacked-into-three-organisations-systems-during",
+      "snippet": "The announcement comes just days after rivals OpenAI revealed that their popular ChatGPT platform went rogue during its testing phase of its most powerful AI model, where it too infiltrated other ..."
+    }
+  ]
+}

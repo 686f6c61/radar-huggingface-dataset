@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "datasetter458/bulk-chem-v1.0",
+  "slug": "datasetter458-bulk-chem-v1-0",
+  "author": "datasetter458",
+  "url": "https://huggingface.co/datasetter458/bulk-chem-v1.0",
+  "created_at": "2026-08-30T19:36:38.000Z",
+  "updated_at": "2026-08-30T20:01:08.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "other",
+  "library": "pytorch",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "pytorch",
+    "chemistry",
+    "admet",
+    "drug-discovery",
+    "molecular-property-prediction",
+    "pharmacokinetics",
+    "smiles",
+    "multi-task-learning",
+    "other",
+    "en",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 5310355,
+  "storage_human": "5 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "datasetter458 (gpu_master) - Hugging Face",
+      "url": "https://huggingface.co/datasetter458",
+      "snippet": "a model that can predict the prices of upcoming GPUs/SSDs. datasetter458 1 day ago"
+    },
+    {
+      "title": "datasetter458/central · Hugging Face",
+      "url": "https://huggingface.co/datasetter458/central",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "CivArchive (CivitAI Archive) - AI Model Archive",
+      "url": "https://civitaiarchive.com/",
+      "snippet": "Browse and discover AI models from CivitAI, TensorArt, and SeaArt. Community-driven archive preserving access to AI resources."
+    },
+    {
+      "title": "AI Aimbot Models & YOLO Detection Models | MossyModels",
+      "url": "https://mossymodels.com/",
+      "snippet": "Browse 661+ free YOLO and ONNX detection models across 43+ games. Community library for Fortnite, Valorant, Warzone, Apex Legends, and more."
+    },
+    {
+      "title": "bulk-ai.cn - New API",
+      "url": "https://bulk-ai.cn/",
+      "snippet": "Unified AI API gateway and admin dashboard. Vast Range of AI Models Access a vast selection of models via a standard, unified API protocol. Power AI applications, manage digital assets, and connect the Future."
+    }
+  ]
+}

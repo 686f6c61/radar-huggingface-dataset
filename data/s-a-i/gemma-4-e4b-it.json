@@ -5,7 +5,7 @@
   "author": "s-a-i",
   "url": "https://huggingface.co/s-a-i/gemma-4-E4B-it",
   "created_at": "2026-08-30T07:30:24.000Z",
-  "updated_at": "2026-08-30T07:30:24.000Z",
+  "updated_at": "2026-08-30T09:58:45.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "any-to-any",
@@ -36,7 +36,7 @@
     "safetensors"
   ],
   "is_conversational": false,
-  "gated": false,
+  "gated": true,
   "removed": false,
   "removed_at": null,
   "benchmarks": [],

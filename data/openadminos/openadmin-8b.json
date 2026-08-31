@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "OpenAdminOS/openadmin-8b",
+  "slug": "openadminos-openadmin-8b",
+  "author": "OpenAdminOS",
+  "url": "https://huggingface.co/OpenAdminOS/openadmin-8b",
+  "created_at": "2026-08-30T22:54:16.000Z",
+  "updated_at": "2026-08-30T23:04:35.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "gguf",
+    "microsoft-365",
+    "intune",
+    "entra",
+    "defender",
+    "sysadmin",
+    "local-first",
+    "en",
+    "base_model:mistralai/Ministral-3-8B-Instruct-2512",
+    "base_model:quantized:mistralai/Ministral-3-8B-Instruct-2512",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 8489553920,
+  "parameters_human": "8.49B",
+  "storage_bytes": 5198385984,
+  "storage_human": "5.2 GB",
+  "base_model": "mistralai/Ministral-3-8B-Instruct-2512",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "OpenAdminOS - GitHub",
+      "url": "https://github.com/OpenAdminOS/OpenAdminOS/",
+      "snippet": "OpenAdminOS Open-source, local-first AI agents for Microsoft 365 admins. Run AI agents against your Microsoft 365 tenant from your own machine. Keep sensitive work local, avoid per-token costs with local models, and approve every change before it happens. Download · Website · Docs · Contributing · Changelog"
+    },
+    {
+      "title": "OpenAdminOS - Local AI agents for Microsoft 365",
+      "url": "https://www.openadminos.com/",
+      "snippet": "Open-source desktop app for Intune and Entra admins. Run Microsoft 365 agents with local models, and approve every Graph change."
+    },
+    {
+      "title": "GitHub - OpenAdminOS/OpenAdminOS",
+      "url": "https://github.com/OpenAdminOS/OpenAdminOS/tree/main/",
+      "snippet": "OpenAdminOS Open-source, local-first AI agents for Microsoft 365 admins."
+    },
+    {
+      "title": "OpenAdminOS (OpenAdminOS) - Hugging Face",
+      "url": "https://huggingface.co/OpenAdminOS",
+      "snippet": "Local-first AI agents for Microsoft 365 administration"
+    },
+    {
+      "title": "Overview | OpenAdminOS Docs",
+      "url": "https://docs.openadminos.com/",
+      "snippet": "Overview Open-source, local-first agents for Microsoft 365 admins. OpenAdminOS is an open-source desktop app for Microsoft 365 administrators who need to run reviewed agents against Intune and Entra tenants."
+    }
+  ]
+}

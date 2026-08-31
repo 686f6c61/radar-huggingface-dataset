@@ -1,0 +1,77 @@
+{
+  "schema": 1,
+  "id": "mradermacher/FableOpus-9B-Delta-GGUF",
+  "slug": "mradermacher-fableopus-9b-delta-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/FableOpus-9B-Delta-GGUF",
+  "created_at": "2026-06-22T14:16:47.000Z",
+  "updated_at": "2026-08-31T00:54:24.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "qwen",
+    "qwen3.5",
+    "fable-5",
+    "claude-opus",
+    "distillation",
+    "merge",
+    "bf16",
+    "en",
+    "base_model:bingleai/FableOpus-9B-Delta",
+    "base_model:quantized:bingleai/FableOpus-9B-Delta",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 3,
+  "downloads_30d": 108,
+  "trending_score": 0,
+  "parameters": 8953803264,
+  "parameters_human": "8.95B",
+  "storage_bytes": 82967497472,
+  "storage_human": "83.0 GB",
+  "base_model": "bingleai/FableOpus-9B-Delta",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "mradermacher/FableOpus-9B-Delta-GGUF · Hugging Face",
+      "url": "https://huggingface.co/mradermacher/FableOpus-9B-Delta-GGUF",
+      "snippet": "mradermacher / FableOpus-9B-Delta-GGUF like 1 Transformers GGUF English qwen qwen3.5 fable-5 claude-opus distillation Merge bf16 conversational License:apache-2.0 Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "mradermacher/FableOpus-9B-Delta-GGUF at main - Hugging Face",
+      "url": "https://huggingface.co/mradermacher/FableOpus-9B-Delta-GGUF/tree/main",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "mradermacher/FableOpus-9B-Delta-GGUF · Hugging Face",
+      "url": "https://x.com/aiaicreate/status/2070026306352492556",
+      "snippet": "R@aiaicreate (@aiaicreate). 475 views."
+    },
+    {
+      "title": "FableOpus-9B-Delta API & Inference Endpoint | FriendliAI",
+      "url": "https://friendli.ai/models/interpolators/FableOpus-9B-Delta",
+      "snippet": "Run FableOpus-9B-Delta with FriendliAI inference. Opus-forward delta merge anchored to Qwen3.5-9B, keeping Fable tool-use behavior while biasing toward the…"
+    },
+    {
+      "title": "Mradermacher - Find Top AI Models on Hugging Face",
+      "url": "https://www.aimodels.fyi/creators/huggingFace/mradermacher",
+      "snippet": "Looking for Mradermacher&#x27;s top AI models? Browse their full Hugging Face collection of 26 models. Explore AI models and contributions by Mradermacher on Huggingface."
+    }
+  ]
+}

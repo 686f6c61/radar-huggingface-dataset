@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "ads2009/english-ai-text-detector-albert-v3",
+  "slug": "ads2009-english-ai-text-detector-albert-v3",
+  "author": "ads2009",
+  "url": "https://huggingface.co/ads2009/english-ai-text-detector-albert-v3",
+  "created_at": "2026-08-30T20:56:55.000Z",
+  "updated_at": "2026-08-30T20:56:59.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-classification",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "albert",
+    "text-classification",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 11685122,
+  "parameters_human": "11.7M",
+  "storage_bytes": 46743904,
+  "storage_human": "47 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "AI Text Detector - Ai Text Checker - AI Detection in Seconds",
+      "url": "https://duckduckgo.com/y.js?ad_domain=grammarly.com&ad_provider=bingv7aa&ad_type=txad&click_metadata=NN4xI_Im3aA6kdlMgrpraBXAJ34YFAE0fTnpr3x_fuL0ELL8s4SX%2Daq89rgprayEBf%2DbK0BkU_9ZHn7jIxdMW9iRW7oeJUnOcyvM45bAR3feHN3i8jCkSE4VEasAeX_P0J5uBk3zJ1I9wlRiL5SM9GAJ4fwaGHFdwkNi1BzeQAY.7LW6jotT3KNd8_q0KiJrFg&rut=70098d72132f6ff01a160d93f665756c76d593b59bedb4918d5955bc3ce273e6&u3=https%3A%2F%2Fwww.bing.com%2Faclick%3Fld%3De80i__oiHh3scm8piBqjZOKzVUCUxHPStS87KaAaAkFCGEuEcI%2D03%2DNiW3IXDBjUmRGzJq9wN4yWkSYWRB9lmXTi%2DciXGNQp6svA77QIX_Memr0CMQxU3_2hNetD7HaLexUOrVn%2DLy3%2DHpDQGFm%2DbT1aprJeZMQu8PtbiL2NIbWaU0o23BgGsfMhVmP%2D4hLAAPZQ4840ShoovQG7kBA71MHMVMT08%26u%3DaHR0cHMlM2ElMmYlMmZ3d3cuZ3JhbW1hcmx5LmNvbSUyZmFpLWRldGVjdG9yJTNmdXRtX3NvdXJjZSUzZGJpbmclMjZ1dG1fbWVkaXVtJTNkY3BjJTI2dXRtX2NhbXBhaWduJTNkNjI3Mzc5NDk4JTI2dXRtX2NvbnRlbnQlM2Q4MTYzODg2NTcwNjM4MiUyNnV0bV90ZXJtJTNkYWklMjUyMHRleHQlMjUyMGNoZWNrZXIlMjZ1dG1fYnUlM2Rjb3JwJTI2a2V5d29yZGlkJTNkODE2MzkwNzE2MTM0NjElMjZ0YXJnZXRpZCUzZGt3ZC04MTYzOTA3MTYxMzQ2MSUzYWxvYy02NiUyNmFkZ3JvdXAlM2QxMzA2MjIwOTYyMTk2NzQ2JTI2ZGV2aWNlJTNkYyUyNm1hdGNodHlwZSUzZHAlMjZuZXR3b3JrJTNkcyUyNmV4dGVuc2lvbiUzZCUyNmNsaWNraWQlM2Q4YTM4OWFkY2Q2ODgxNDJmMDYwZWYwNDg3NGI3YTQwNSUyNmdjbGlkJTNkOGEzODlhZGNkNjg4MTQyZjA2MGVmMDQ4NzRiN2E0MDUlMjZtc2Nsa2lkJTNkOGEzODlhZGNkNjg4MTQyZjA2MGVmMDQ4NzRiN2E0MDU%26rlid%3D8a389adcd688142f060ef04874b7a405&vqd=4-327565508238712227773475356260184041941&iurl=%7B1%7DIG%3D9C26EF169B7F4DC9BB312BFD46D50263%26CID%3D33CA4AF7FD9F68250EB65D32FCB96901%26ID%3DDevEx%2C5037.1",
+      "snippet": "Grammarly&#x27;s free AI checker is trained to detect AI-generated content and help you fix it. Detect AI-generated content from Grammarly, ChatGPT, Google Gemini, and others in a click."
+    },
+    {
+      "title": "ads2009/english-ai-text-detector-albert · Hugging Face",
+      "url": "https://huggingface.co/ads2009/english-ai-text-detector-albert",
+      "snippet": "Instructions to use ads2009/english-ai-text-detector-albert with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Libraries Transformers How to use ads2009/english-ai-text-detector-albert with Transformers:"
+    },
+    {
+      "title": "ads2009 (hayatbazen) - Hugging Face",
+      "url": "https://huggingface.co/ads2009",
+      "snippet": "ads2009/english-ai-text-detector-albert Text Classification • 11.7M•Updated 17 days ago• 49"
+    },
+    {
+      "title": "RealText — Free AI Detector & Text Humanizer",
+      "url": "https://realtext.org/en/",
+      "snippet": "Free AI text detector and humanizer. Analyze your text for AI patterns, get a detailed score, and receive paragraph-by-paragraph suggestions to make AI-generated text sound naturally human. Works in 20+ languages."
+    },
+    {
+      "title": "Free AI Detector - Text, Image & Video | Free.ai",
+      "url": "https://free.ai/detector/",
+      "snippet": "Free AI detector. Check if text was written by AI, or scan an image or video for AI generation. Honest about accuracy - a heuristic, not proof."
+    }
+  ]
+}

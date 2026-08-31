@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "evsinlb/Qwen3.8-27B-oQ8e-mtp",
+  "slug": "evsinlb-qwen3-8-27b-oq8e-mtp",
+  "author": "evsinlb",
+  "url": "https://huggingface.co/evsinlb/Qwen3.8-27B-oQ8e-mtp",
+  "created_at": "2026-08-30T19:23:47.000Z",
+  "updated_at": "2026-08-30T19:34:10.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "mlx",
+  "languages": [],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "qwen3_5",
+    "oq",
+    "quantized",
+    "qwen3.8",
+    "text-generation",
+    "conversational",
+    "base_model:Qwen/Qwen3.8-27B",
+    "base_model:quantized:Qwen/Qwen3.8-27B",
+    "license:apache-2.0",
+    "8-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 8184279792,
+  "parameters_human": "8.18B",
+  "storage_bytes": 30014451254,
+  "storage_human": "30.0 GB",
+  "base_model": "Qwen/Qwen3.8-27B",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Qwen3.8-27B - GitHub",
+      "url": "https://github.com/AlibabaCloud-Official/Qwen3.8-27B",
+      "snippet": "Welcome to the repository for Qwen3.8-27B —the latest native multimodal dense open-weight model released by Alibaba&#x27;s Qwen team. Delivering top-tier performance for local hardware, Qwen3.8-27B excels at coding, agentic workflows, and office automation tasks."
+    },
+    {
+      "title": "Qwen3.8-27B-oQ8e-mtp on M5 Max (40c) — oMLX Benchmark",
+      "url": "https://omlx.ai/benchmarks/performance/36koeucy",
+      "snippet": "Context: Code (Python)SpecPrefillLightning MTP Model Settings Show all 32 settings benchmark_contextCode (Python) max_context_window240000 temperature1 top_p0.95 top_k20 min_p0 repetition_penalty1 force_samplingfalse enable_thinkingtrue thinking_budget_enabledfalse guided_grammar_enabledfalse turboquant_kv_enabledfalse turboquant_kv_bits4 ..."
+    },
+    {
+      "title": "evsinlb/Qwen3.8-27B-oQ8e-fp16-mtp · Hugging Face",
+      "url": "https://huggingface.co/evsinlb/Qwen3.8-27B-oQ8e-fp16-mtp",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "evsinlb/Qwen3.8-27B-oQ8e-fp16-mtp at main - Hugging Face",
+      "url": "https://huggingface.co/evsinlb/Qwen3.8-27B-oQ8e-fp16-mtp/tree/main",
+      "snippet": "Instructions to use evsinlb/Qwen3.8-27B-oQ8e-fp16-mtp with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Libraries How to use evsinlb/Qwen3.8-27B-oQ8e-fp16-mtp with MLX:"
+    },
+    {
+      "title": "Qwen3.8-27B-oQ8e-mtp on M5 Max (40c) — oMLX Benchmark",
+      "url": "https://omlx.ai/benchmarks/performance/ihwmi7p8",
+      "snippet": "Acceleration Context: Code (Python)DFlashTurboQuant KV 8-bit Model Settings Show all 37 settings benchmark_contextCode (Python) temperature0.7 force_samplingfalse thinking_budget_enabledfalse guided_grammar_enabledfalse turboquant_kv_enabledtrue turboquant_kv_bits8 turboquant_skip_lasttrue specprefill_enabledfalse specprefill_draft_modelQwen3.5 ..."
+    }
+  ]
+}

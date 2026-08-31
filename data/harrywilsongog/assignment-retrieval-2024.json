@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "harrywilsongog/assignment-retrieval-2024",
+  "slug": "harrywilsongog-assignment-retrieval-2024",
+  "author": "harrywilsongog",
+  "url": "https://huggingface.co/harrywilsongog/assignment-retrieval-2024",
+  "created_at": "2026-08-30T19:17:52.000Z",
+  "updated_at": "2026-08-30T19:18:01.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "coca",
+    "pytorch",
+    "retrieval",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 24832,
+  "parameters_human": "24832",
+  "storage_bytes": 99808,
+  "storage_human": "99808 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "harrywilsongog (Harry Wilson) - Hugging Face",
+      "url": "https://huggingface.co/harrywilsongog/models",
+      "snippet": "harrywilsongog&#x27;s models1 Sort: Recently updated harrywilsongog/model_272948624_coca_small Updated 2 days ago"
+    },
+    {
+      "title": "harrywilsongog (Harry Wilson) - Hugging Face",
+      "url": "https://huggingface.co/harrywilsongog/datasets",
+      "snippet": "Currently obsessed with diffusion models"
+    },
+    {
+      "title": "GitHub - Kowsalya-S-cse/Gen_ai_practical_assignments",
+      "url": "https://github.com/Kowsalya-S-cse/Gen_ai_practical_assignments",
+      "snippet": "Retrieval-Augmented Generation Using a Vector Database AI-Powered Code Generation and Debugging Assistant Image Generation Using Diffusion Models Multimodal AI Integrating Text and Image Inputs Fine-Tuning a Pre-Trained Language Model for a Domain-Specific Application AI-Based Text, Image and Audio Content Generation"
+    },
+    {
+      "title": "Solved: Re: How do I create an AI Agent for Assignment Gro ...",
+      "url": "https://www.servicenow.com/community/servicenow-otto-forum/how-do-i-create-an-ai-agent-for-assignment-group-prediction-for/m-p/3573862",
+      "snippet": "How do I create an AI Agent for Assignment Group prediction for Incident? I have tried creating it using the Search Retreival Tool but nothing is working, there are no relevant information on this in the community or youtube, even the documentation is very limited, semantics are not being configured."
+    },
+    {
+      "title": "GitHub - durga200524/AI_Engineer_Assignment",
+      "url": "https://github.com/durga200524/AI_Engineer_Assignment",
+      "snippet": "The assistant answers customer support questions using Retrieval-Augmented Generation (RAG) over a local knowledge base. It retrieves relevant documents, generates responses with a local language model, verifies the output, and returns a structured JSON response."
+    }
+  ]
+}

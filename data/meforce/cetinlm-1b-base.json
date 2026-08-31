@@ -5,7 +5,7 @@
   "author": "meforce",
   "url": "https://huggingface.co/meforce/CetinLM-1B-Base",
   "created_at": "2026-08-30T13:55:40.000Z",
-  "updated_at": "2026-08-30T14:08:27.000Z",
+  "updated_at": "2026-08-30T23:20:23.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": "text-generation",
@@ -72,7 +72,7 @@
     "ko",
     "region:us"
   ],
-  "likes": 0,
+  "likes": 1,
   "downloads_30d": 0,
   "trending_score": 0,
   "parameters": null,

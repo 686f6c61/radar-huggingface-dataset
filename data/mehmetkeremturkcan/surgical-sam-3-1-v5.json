@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "mehmetkeremturkcan/Surgical-SAM-3.1-V5",
+  "slug": "mehmetkeremturkcan-surgical-sam-3-1-v5",
+  "author": "mehmetkeremturkcan",
+  "url": "https://huggingface.co/mehmetkeremturkcan/Surgical-SAM-3.1-V5",
+  "created_at": "2026-08-27T20:15:29.000Z",
+  "updated_at": "2026-08-31T02:56:41.000Z",
+  "license": "sam-license",
+  "license_family": "unknown",
+  "pipeline_tag": "mask-generation",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "sam3.1",
+    "surgical-computer-vision",
+    "open-vocabulary",
+    "object-detection",
+    "instance-segmentation",
+    "surgical-robotics",
+    "mask-generation",
+    "dataset:mehmetkeremturkcan/SAM3-Joint-Surgical-Dataset",
+    "base_model:facebook/sam3.1",
+    "base_model:finetune:facebook/sam3.1",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 6943768238,
+  "storage_human": "6.9 GB",
+  "base_model": "facebook/sam3.1",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "mehmetkeremturkcan/SAM3-Joint-Surgical · Hugging Face",
+      "url": "https://huggingface.co/mehmetkeremturkcan/SAM3-Joint-Surgical",
+      "snippet": "Surgical SAM 3 is a SAM 3 image model trained jointly for detection and instance segmentation of surgical instruments, anatomy, and tissue from text prompts. The model uses one vocabulary across CholecInstanceSeg, CholecSeg8k, the Dresden Surgical Anatomy Dataset, and Endoscapes."
+    },
+    {
+      "title": "GitHub - wenxi-yue/SurgicalSAM: [AAAI2024] Official implementation of ...",
+      "url": "https://github.com/wenxi-yue/SurgicalSAM",
+      "snippet": "The Segment Anything Model (SAM) is a powerful foundation model that has revolutionised image segmentation. To apply SAM to surgical instrument segmentation, a common approach is to locate precise points or boxes of instruments and then use them as prompts for SAM in a zero-shot manner. However, we observe two problems with this naive pipeline: (1) the domain gap between natural objects and ..."
+    },
+    {
+      "title": "Fine-Tuned SAM 3.1 for Surgical Scene Understanding - LinkedIn",
+      "url": "https://www.linkedin.com/posts/mehmetkeremturkcan_robotics-surgicalrobotics-computervision-activity-7491541863502368768-mJ0M",
+      "snippet": "We fine-tuned SAM 3.1 to provide that perception layer. The same model can detect and segment both surgical instruments and anatomical structures from text prompts such as \"bipolar,\" \"liver ..."
+    },
+    {
+      "title": "mehmetkeremturkcan/SAM3-Joint-Surgical-Dataset - Hugging Face",
+      "url": "https://huggingface.co/datasets/mehmetkeremturkcan/SAM3-Joint-Surgical-Dataset",
+      "snippet": "The SAM3 Joint Surgical Dataset contains 41,372 physical images with 175,674 COCO annotations for surgical instruments, anatomy, and tissue. Its schema contains 29 categories and consolidates labels from CholecInstanceSeg, CholecSeg8k, the Dresden Surgical Anatomy Dataset, and Endoscapes."
+    },
+    {
+      "title": "SurgicalSAM: Eficient Class Promptable Surgical Instrument Segmentation",
+      "url": "https://arxiv.org/pdf/2308.08746",
+      "snippet": "Abstract The Segment Anything Model (SAM) is a powerful foun-dation model that has revolutionised image segmentation. To apply SAM to surgical instrument segmentation, a com-mon approach is to locate precise points or boxes of instru-ments and then use them as prompts for SAM in a zero-shot manner. However, we observe two problems with this naive pipeline: (1) the domain gap between natural ..."
+    }
+  ]
+}

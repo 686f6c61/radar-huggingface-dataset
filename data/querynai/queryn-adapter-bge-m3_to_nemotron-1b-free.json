@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "QuerynAi/queryn-adapter-bge-m3_to_nemotron-1b-free",
+  "slug": "querynai-queryn-adapter-bge-m3_to_nemotron-1b-free",
+  "author": "QuerynAi",
+  "url": "https://huggingface.co/QuerynAi/queryn-adapter-bge-m3_to_nemotron-1b-free",
+  "created_at": "2026-08-30T20:59:28.000Z",
+  "updated_at": "2026-08-30T20:59:37.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "feature-extraction",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "onnx",
+    "embedding",
+    "embedding-translation",
+    "queryn",
+    "bge-m3",
+    "nemotron-1b-free",
+    "feature-extraction",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 6632817,
+  "storage_human": "7 MB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "QuerynAi/queryn-adapter-bge-m3_to_me5-large · Hugging Face",
+      "url": "https://huggingface.co/QuerynAi/queryn-adapter-bge-m3_to_me5-large",
+      "snippet": "Queryn adapter — bge-m3 → me5-large Translates an embedding produced by bge-m3 into the embedding space of me5-large, so a corpus already embedded with bge-m3 can be served against a me5-large index without re-embedding it. Part of the Queryn embedding-translation engine."
+    },
+    {
+      "title": "BAAI/bge-m3 · Hugging Face",
+      "url": "https://huggingface.co/BAAI/bge-m3",
+      "snippet": "For embedding retrieval, you can employ the BGE-M3 model using the same approach as BGE. The only difference is that the BGE-M3 model no longer requires adding instructions to the queries. For hybrid retrieval, you can use Vespa and Milvus. 3. How to fine-tune bge-M3 model? You can follow the common in this example to fine-tune the dense embedding."
+    },
+    {
+      "title": "BGE-M3 — BGE documentation",
+      "url": "https://bge-model.com/bge/bge_m3.html",
+      "snippet": "BGE-M3 # BGE-M3 is a compound and powerful embedding model distinguished for its versatility in: Multi-Functionality: It can simultaneously perform the three common retrieval functionalities of embedding model: dense retrieval, multi-vector retrieval, and sparse retrieval. Multi-Linguality: It can support more than 100 working languages. Multi-Granularity: It is able to process inputs of ..."
+    },
+    {
+      "title": "GitHub - inferless/bge-m3: A multi-lingual, versatile text embedding ...",
+      "url": "https://github.com/inferless/Bge-m3",
+      "snippet": "BGE-M3 is a multi-lingual text embedding model supporting dense, sparse, and multi-vector retrieval."
+    },
+    {
+      "title": "Welcome to BGE! — BGE documentation",
+      "url": "https://bge-model.com/",
+      "snippet": "Besides the resources we provide here in this documentation, please visit our GitHub repo for more contents including: Want to get familiar with BGE quickly? There are hands-on examples to run for embedder and reranker&#x27;s inference, evaluation, and finetuning. Unfamiliar with some area, keywords or techniques of retrieval and RAG? We provide tutorials to teach you basic knowledge and coding ..."
+    }
+  ]
+}

@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "rockerBOO/qwen3-vl-8b-thinking-heretic-nvfp4-convrot-int8",
+  "slug": "rockerboo-qwen3-vl-8b-thinking-heretic-nvfp4-convrot-int8",
+  "author": "rockerBOO",
+  "url": "https://huggingface.co/rockerBOO/qwen3-vl-8b-thinking-heretic-nvfp4-convrot-int8",
+  "created_at": "2026-08-31T01:16:51.000Z",
+  "updated_at": "2026-08-31T01:39:01.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "heretic",
+    "uncensored",
+    "decensored",
+    "abliterated",
+    "quantized",
+    "nvfp4",
+    "int8",
+    "image-text-to-text",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 8729906602,
+  "storage_human": "8.7 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Qwen/Qwen3-VL-8B-Thinking · Hugging Face",
+      "url": "https://huggingface.co/Qwen/Qwen3-VL-8B-Thinking",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "ZuzeTt/Qwen3-VL-8B-Thinking-heretic · Hugging Face",
+      "url": "https://huggingface.co/ZuzeTt/Qwen3-VL-8B-Thinking-heretic",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Qwen 3 VL node for ComfyUI + Qwen 3 VL (Heretic, uncensored) model",
+      "url": "https://civitai.com/models/2200639/qwen-3-vl-node-for-comfyui-qwen-3-vl-heretic-uncensored-model",
+      "snippet": "As for \"heretic support\" it is easy to add heretic model into the available QWEN 3.5 VL node from registry. It is needed to edit the file with the list of models by adding the \" someuser/model-name \" element into the array of model name in one or two .py files and add a SYSTEM_PROMPT options."
+    },
+    {
+      "title": "GitHub - QwenLM/Qwen3-VL: Qwen3-VL is the multimodal large language ...",
+      "url": "https://github.com/QwenLM/Qwen3-VL",
+      "snippet": "Meet Qwen3-VL — the most powerful vision-language model in the Qwen series to date. This generation delivers comprehensive upgrades across the board: superior text understanding & generation, deeper visual perception & reasoning, extended context length, enhanced spatial and video dynamics comprehension, and stronger agent interaction capabilities. Available in Dense and MoE architectures ..."
+    },
+    {
+      "title": "GitHub - QwenLM/Qwen-VL: The official repo of Qwen-VL (通义千问-VL) chat ...",
+      "url": "https://github.com/QwenLM/Qwen-VL",
+      "snippet": "Notably, Qwen-VL-Max outperforms both GPT-4V from OpenAI and Gemini from Google in tasks on Chinese question answering and Chinese text comprehension. This breakthrough underscores the model&#x27;s advanced capabilities and its potential to set new standards in the field of multimodal AI research and application."
+    }
+  ]
+}

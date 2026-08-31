@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "chloeyoung13/matching",
+  "slug": "chloeyoung13-matching",
+  "author": "chloeyoung13",
+  "url": "https://huggingface.co/chloeyoung13/matching",
+  "created_at": "2026-08-30T22:55:17.000Z",
+  "updated_at": "2026-08-30T22:55:26.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "hybrid",
+    "pytorch",
+    "matching",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 16576,
+  "parameters_human": "16576",
+  "storage_bytes": 66784,
+  "storage_human": "66784 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "chloeyoung13 (Chloe Young) - Hugging Face",
+      "url": "https://huggingface.co/chloeyoung13",
+      "snippet": "User profile of Chloe Young on Hugging Face"
+    },
+    {
+      "title": "Chloe (@chloe_young13) • Instagram photos and videos",
+      "url": "https://www.instagram.com/chloe_young13/",
+      "snippet": "1,830 Followers, 1,117 Following, 147 Posts - Chloe (@chloe_young13) on Instagram: \"🫧👩🏽‍🏫🖍️🧚🏼‍♀️🦦🎒🐈🪲🍄🥂\""
+    },
+    {
+      "title": "Models - Hugging Face",
+      "url": "https://huggingface.co/models?library...",
+      "snippet": "Explore machine learning models."
+    },
+    {
+      "title": "Chloe Young (@chloyoung__) • Instagram photos and videos",
+      "url": "https://www.instagram.com/chloyoung__/",
+      "snippet": "2,027 Followers, 726 Following, 746 Posts - Chloe Young (@chloyoung__) on Instagram: \"Be bold, be arrogant, be cheeky, be french xx\""
+    },
+    {
+      "title": "YouTube",
+      "url": "https://www.youtube.com/",
+      "snippet": "Explore and share videos, music, and more on YouTube, the leading platform for online video streaming and sharing."
+    }
+  ]
+}

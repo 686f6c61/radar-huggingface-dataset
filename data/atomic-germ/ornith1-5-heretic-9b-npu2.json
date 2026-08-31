@@ -1,0 +1,83 @@
+{
+  "schema": 1,
+  "id": "Atomic-Germ/Ornith1.5-Heretic-9B-NPU2",
+  "slug": "atomic-germ-ornith1-5-heretic-9b-npu2",
+  "author": "Atomic-Germ",
+  "url": "https://huggingface.co/Atomic-Germ/Ornith1.5-Heretic-9B-NPU2",
+  "created_at": "2026-08-30T21:55:11.000Z",
+  "updated_at": "2026-08-30T22:22:36.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "qwen3_5",
+    "image-text-to-text",
+    "safetensors",
+    "heretic",
+    "uncensored",
+    "decensored",
+    "abliterated",
+    "text-generation",
+    "conversational",
+    "endpoints_compatible",
+    "flm",
+    "fastflowlm",
+    "q4_1",
+    "npu2",
+    "q4nx",
+    "vision",
+    "agentic",
+    "tool-use",
+    "coding",
+    "base_model:Dingdust/Ornith-1.5-9B-heretic",
+    "base_model:quantized:Dingdust/Ornith-1.5-9B-heretic",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 8680395565,
+  "storage_human": "8.7 GB",
+  "base_model": "Dingdust/Ornith-1.5-9B-heretic",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Atomic-Germ/Ornith-1.5-9B-NPU2 · Hugging Face",
+      "url": "https://huggingface.co/Atomic-Germ/Ornith-1.5-9B-NPU2",
+      "snippet": "Ornith-1.5 9B is the direct successor of Ornith-1.0 9B, which achieves state-of-the-art performance among open-source models of comparable size across a broad range of agentic coding benchmarks."
+    },
+    {
+      "title": "ornith-ai/Ornith-1.5-9B-MLX-4bit · Hugging Face",
+      "url": "https://huggingface.co/ornith-ai/Ornith-1.5-9B-MLX-4bit",
+      "snippet": "Ornith-1.5-9B is a dense ~9B model (≈19 GB in bf16), so it serves on a single 80GB GPU. The recipes below stand up an OpenAI-compatible server; add --tensor-parallel-size / --tp if you want to shard across more GPUs."
+    },
+    {
+      "title": "How to Run Ornith 1.5 9B Locally: GGUF, Hardware and Benchmarks",
+      "url": "https://atomic.chat/blog/guides/how-to-run-ornith-1-5-locally",
+      "snippet": "Ornith 1.5 9B is the model from DeepReinforce&#x27;s new Ornith 1.5 family that you can actually run locally: a dense 9B multimodal coding model that fits on an 8 GB GPU or a 16 GB Mac at 4-bit quantization. This guide covers our Atomic Dynamic GGUF builds, how much memory each one needs, and the exact setup for both Atomic Chat and llama.cpp."
+    },
+    {
+      "title": "Run Ornith-1.5-9B Locally | Atomic Chat",
+      "url": "https://atomic.chat/models/ornith-1-5-9b",
+      "snippet": "Ornith-1.5-9B is a 9B agentic coding model with a 256K context that runs on 8 GB. We quantized the GGUF builds ourselves."
+    },
+    {
+      "title": "ornith-1.5 - ollama.com",
+      "url": "https://ollama.com/library/ornith-1.5",
+      "snippet": "Rather than relying on a fixed set of human-curated tasks and manually designed harnesses, Ornith-1.5 continuously generates new training tasks, discovers effective strategies for solving them, and improves the policy through reinforcement learning. For more details on the task, harness, and rollout reward design, please refer to our blog."
+    }
+  ]
+}

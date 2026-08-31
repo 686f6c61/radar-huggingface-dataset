@@ -1,0 +1,78 @@
+{
+  "schema": 1,
+  "id": "seongyeon1/ko-pii-ner-roberta-base",
+  "slug": "seongyeon1-ko-pii-ner-roberta-base",
+  "author": "seongyeon1",
+  "url": "https://huggingface.co/seongyeon1/ko-pii-ner-roberta-base",
+  "created_at": "2026-08-31T01:19:14.000Z",
+  "updated_at": "2026-08-31T01:22:33.000Z",
+  "license": "cc-by-sa-4.0",
+  "license_family": "oss",
+  "pipeline_tag": "token-classification",
+  "library": "transformers",
+  "languages": [
+    "ko"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "roberta",
+    "token-classification",
+    "korean",
+    "pii",
+    "ner",
+    "privacy",
+    "de-identification",
+    "ko",
+    "dataset:seongyeon1/ko-pii-ner-100k",
+    "arxiv:2105.09680",
+    "base_model:klue/roberta-base",
+    "base_model:finetune:klue/roberta-base",
+    "license:cc-by-sa-4.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 110059049,
+  "parameters_human": "110.1M",
+  "storage_bytes": 440260132,
+  "storage_human": "440 MB",
+  "base_model": "klue/roberta-base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "FacebookAI/roberta-base · Hugging Face",
+      "url": "https://huggingface.co/FacebookAI/roberta-base",
+      "snippet": "Explore the RoBERTa base model by FacebookAI, a transformer-based language model available on Hugging Face platform for various NLP tasks."
+    },
+    {
+      "title": "AI Model Catalog | Microsoft Foundry Models",
+      "url": "https://ai.azure.com/catalog/models/roberta-base",
+      "snippet": "Training Details Training Data The RoBERTa model was pretrained on the reunion of five datasets: BookCorpus , a dataset consisting of 11,038 unpublished books; English Wikipedia (excluding lists, tables and headers) ; CC-News , a dataset containing 63 millions English news articles crawled between September 2016 and February 2019."
+    },
+    {
+      "title": "MuhsinunC/pii-ner-roberta-base · Hugging Face",
+      "url": "https://huggingface.co/MuhsinunC/pii-ner-roberta-base",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Introduction of RoBERTa Model - GeeksforGeeks",
+      "url": "https://www.geeksforgeeks.org/machine-learning/overview-of-roberta-model/",
+      "snippet": "RoBERTa (Robustly Optimized BERT Pretraining Approach) is an encoder-only transformer model developed by Meta AI to improve the performance of the BERT model through optimized pretraining strategies. Instead of introducing a new architecture, RoBERTa retains the same transformer encoder architecture as BERT. These training optimizations enable the model to learn richer contextual ..."
+    },
+    {
+      "title": "roberta-base download | SourceForge.net",
+      "url": "https://sourceforge.net/projects/roberta-base/",
+      "snippet": "Download roberta-base for free. Robust BERT-based model for English with improved MLM training. roberta-base is a robustly optimized variant of BERT, pretrained on a significantly larger corpus of English text using dynamic masked language modeling. Developed by Facebook AI, RoBERTa improves on BERT by removing the Next Sentence Prediction objective, using longer training, larger batches, and ..."
+    }
+  ]
+}

@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "QuerynAi/queryn-adapter-ada-002_to_bge-m3",
+  "slug": "querynai-queryn-adapter-ada-002_to_bge-m3",
+  "author": "QuerynAi",
+  "url": "https://huggingface.co/QuerynAi/queryn-adapter-ada-002_to_bge-m3",
+  "created_at": "2026-08-30T20:57:44.000Z",
+  "updated_at": "2026-08-30T20:57:55.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "feature-extraction",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "onnx",
+    "embedding",
+    "embedding-translation",
+    "queryn",
+    "ada-002",
+    "bge-m3",
+    "feature-extraction",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 6630164,
+  "storage_human": "7 MB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "QuerynAi/queryn-adapter-ada-002_to_qwen3-emb-8b · Hugging Face",
+      "url": "https://huggingface.co/QuerynAi/queryn-adapter-ada-002_to_qwen3-emb-8b",
+      "snippet": "Queryn adapter — ada-002 → qwen3-emb-8b Translates an embedding produced by ada-002 into the embedding space of qwen3-emb-8b, so a corpus already embedded with ada-002 can be served against a qwen3-emb-8b index without re-embedding it. Part of the Queryn embedding-translation engine."
+    },
+    {
+      "title": "Build RAG Chatbot with LangChain, LangChain vector store, NVIDIA BGE-M3 ...",
+      "url": "https://zilliz.com/tutorials/rag/langchain-and-langchain-vector-store-and-nvidia-bge-m3-and-openai-text-embedding-ada-002",
+      "snippet": "Build a simple RAG chatbot in Python using LangChain, LangChain vector store, NVIDIA BGE-M3, and OpenAI text-embedding-ada-002."
+    },
+    {
+      "title": "Open models by OpenAI | OpenAI",
+      "url": "https://openai.com/open-models/",
+      "snippet": "Advanced open-weight reasoning models to customize for any use case and run anywhere."
+    },
+    {
+      "title": "Azure OpenAI in Microsoft Foundry Models embeddings tutorial ...",
+      "url": "https://learn.microsoft.com/en-us/azure/foundry/openai/tutorials/embeddings",
+      "snippet": "A Microsoft Foundry or Azure OpenAI resource with the text-embedding-ada-002 (Version 2) model deployed. This model is currently only available in certain regions."
+    },
+    {
+      "title": "AI Model Catalog | Microsoft Foundry Models",
+      "url": "https://ai.azure.com/catalog",
+      "snippet": "Build AI that ships Build, test, and deploy AI systems with the models, tools, and workflows your team needs. Scale on one platform."
+    }
+  ]
+}

@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "MiiRooZ2/Test157615",
+  "slug": "miirooz2-test157615",
+  "author": "MiiRooZ2",
+  "url": "https://huggingface.co/MiiRooZ2/Test157615",
+  "created_at": "2026-08-30T22:59:39.000Z",
+  "updated_at": "2026-08-30T23:01:45.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen2",
+    "text-generation",
+    "conversational",
+    "arxiv:1910.09700",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1543714304,
+  "parameters_human": "1.54B",
+  "storage_bytes": 3098889036,
+  "storage_human": "3.1 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "camper van - Muat Turun Model 3D Percuma | Meshy",
+      "url": "https://www.meshy.ai/ms/3d-models/camper-van-01a02e81-50c3-7896-b097-e6bbc09fb757",
+      "snippet": "camper van - model 3D Seni & Abstrak percuma untuk dimuat turun dalam FBX, OBJ, GLB, USDZ & STL. Dihasilkan dengan Meshy AI untuk permainan, cetakan 3D & AR/VR. Oleh flores.2010.06 · titan, rover, mars."
+    },
+    {
+      "title": "Comparison of AI Models across Intelligence, Performance, and Price ...",
+      "url": "https://artificialanalysis.ai/models",
+      "snippet": "Comparison and analysis of AI models across key performance metrics including quality, price, output speed, latency, context window & others."
+    },
+    {
+      "title": "Free AI Image Generator | Craiyon",
+      "url": "https://www.craiyon.com/",
+      "snippet": "Free AI Image Generator Create free AI images from text for art, photos, illustrations, and quick visual ideas."
+    },
+    {
+      "title": "CivArchive (CivitAI Archive) - AI Model Archive",
+      "url": "https://civitaiarchive.com/",
+      "snippet": "Browse and discover AI models from CivitAI, TensorArt, and SeaArt. Community-driven archive preserving access to AI resources."
+    },
+    {
+      "title": "All AI models — chat, image, video & music · TryAI",
+      "url": "https://www.tryai.dev/models",
+      "snippet": "Browse and try 30+ frontier AI models in one place: GPT-5.5, Claude Opus, Gemini 3 Pro, Grok, DeepSeek, plus the best image, video, and music generators. Pay-as-you-go with an optional monthly credit plan."
+    }
+  ]
+}

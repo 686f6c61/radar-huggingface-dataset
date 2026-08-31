@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "anthonybbc/albef-retrieval-light",
+  "slug": "anthonybbc-albef-retrieval-light",
+  "author": "anthonybbc",
+  "url": "https://huggingface.co/anthonybbc/albef-retrieval-light",
+  "created_at": "2026-08-31T00:55:59.000Z",
+  "updated_at": "2026-08-31T00:56:08.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "albef",
+    "pytorch",
+    "retrieval",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 16576,
+  "parameters_human": "16576",
+  "storage_bytes": 66784,
+  "storage_human": "66784 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - salesforce/ALBEF: Code for ALBEF: a new vision-language pre ...",
+      "url": "https://github.com/salesforce/ALBEF",
+      "snippet": "Align before Fuse: Vision and Language Representation Learning with Momentum Distillation, NeurIPS 2021 Spotlight (Salesforce Research). Announcement: ALBEF is now officially integrated into LAVIS - a one-stop library for language-and-vision research and applications! This is the official PyTorch implementation of the ALBEF paper [Blog]."
+    },
+    {
+      "title": "LAVIS/lavis/models/albef_models/albef_retrieval.py at main - GitHub",
+      "url": "https://github.com/salesforce/LAVIS/blob/main/lavis/models/albef_models/albef_retrieval.py",
+      "snippet": "344 lines (287 loc) · 12.4 KB main LAVIS / lavis / models / albef_models / albef_retrieval.py Code Blame 344 lines (287 loc) · 12.4 KB 1 2 3 4 5 6 7 8 9 10 11 12 13 ..."
+    },
+    {
+      "title": "anthonybbc (Anthony Bailey) - Hugging Face",
+      "url": "https://huggingface.co/anthonybbc/models",
+      "snippet": "anthonybbc&#x27;s models1 Sort: Recently updated anthonybbc/model_058341607_cnn_transformer_large Updated about 9 hours ago"
+    },
+    {
+      "title": "Model Architecture | salesforce/ALBEF | DeepWiki",
+      "url": "https://deepwiki.com/salesforce/ALBEF/1.2-model-architecture",
+      "snippet": "Model Architecture Relevant source files This document provides a detailed explanation of the ALBEF (Align Before Fuse) model architecture, including its core components, design principles, and internal mechanisms. For information about using ALBEF for specific tasks, see the task-specific pages under Fine-tuning. Overview ALBEF introduces an innovative approach to vision-language modeling ..."
+    },
+    {
+      "title": "mehta2006/albef-retrieval-rc1 · Hugging Face",
+      "url": "https://huggingface.co/mehta2006/albef-retrieval-rc1",
+      "snippet": "A research-oriented Albef prototype targeting Retrieval. The included huge setup documents defaults and file formats without presenting unverified performance numbers."
+    }
+  ]
+}

@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "QuerynAi/queryn-adapter-qwen3-emb-8b_to_pplx-embed-1",
+  "slug": "querynai-queryn-adapter-qwen3-emb-8b_to_pplx-embed-1",
+  "author": "QuerynAi",
+  "url": "https://huggingface.co/QuerynAi/queryn-adapter-qwen3-emb-8b_to_pplx-embed-1",
+  "created_at": "2026-08-30T21:17:49.000Z",
+  "updated_at": "2026-08-30T21:18:33.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "feature-extraction",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "onnx",
+    "embedding",
+    "embedding-translation",
+    "queryn",
+    "qwen3-emb-8b",
+    "pplx-embed-1",
+    "feature-extraction",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 17117809,
+  "storage_human": "17 MB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "AI Model Catalog | Microsoft Foundry Models",
+      "url": "https://ai.azure.com/catalog/models/qwen--qwen3-embedding-8b",
+      "snippet": "The Qwen3 Embedding model series is the latest proprietary model of the Qwen family, specifically designed for text embedding and ranking tasks. Building upon the dense foundational models of the Qwen3 series, it provides a comprehensive range of text embeddings and reranking models in various sizes (0.6B, 4B, and 8B)."
+    },
+    {
+      "title": "Qwen/Qwen3-Embedding-8B · Hugging Face",
+      "url": "https://huggingface.co/Qwen/Qwen3-Embedding-8B",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "AI Model Catalog | Microsoft Foundry Models",
+      "url": "https://ai.azure.com/catalog/models/qwen-qwen3-embedding-8b",
+      "snippet": "Qwen/Qwen3-Embedding-8B powered by Text Embeddings Inference Original Model Card Text Embeddings Inference Documentation feature-extraction Task on Hugging Face sentence-similarity Task on Hugging Face OpenAI Embeddings API Send Request You can use cURL or any REST Client to send a request to the Azure ML endpoint with your Azure ML token."
+    },
+    {
+      "title": "GitHub - QwenLM/Qwen3-Embedding",
+      "url": "https://github.com/QwenLM/Qwen3-Embedding",
+      "snippet": "The Qwen3 Embedding model series is the latest proprietary model of the Qwen family, specifically designed for text embedding and ranking tasks. Building upon the dense foundational models of the Qwen3 series, it provides a comprehensive range of text embeddings and reranking models in various sizes (0.6B, 4B, and 8B). This series inherits the exceptional multilingual capabilities, long-text ..."
+    },
+    {
+      "title": "README.md · Qwen/Qwen3-Embedding-8B at ... - Hugging Face",
+      "url": "https://huggingface.co/Qwen/Qwen3-Embedding-8B/blob/d74263f1218b695e9486bec7a65bcf9a2e47fa23/README.md",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    }
+  ]
+}

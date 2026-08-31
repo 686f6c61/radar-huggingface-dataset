@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "nrl-ai/anylearning-sam3-onnx",
+  "slug": "nrl-ai-anylearning-sam3-onnx",
+  "author": "nrl-ai",
+  "url": "https://huggingface.co/nrl-ai/anylearning-sam3-onnx",
+  "created_at": "2026-08-30T19:14:25.000Z",
+  "updated_at": "2026-08-30T19:15:37.000Z",
+  "license": "sam-license",
+  "license_family": "unknown",
+  "pipeline_tag": "image-segmentation",
+  "library": "onnx",
+  "languages": [],
+  "tags": [
+    "onnx",
+    "onnxruntime",
+    "segment-anything",
+    "image-segmentation",
+    "open-vocabulary",
+    "text-to-segmentation",
+    "anylearning",
+    "base_model:facebook/sam3",
+    "base_model:finetune:facebook/sam3",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 3413511219,
+  "storage_human": "3.4 GB",
+  "base_model": "facebook/sam3",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "SAMExporter — Export SAM Models to ONNX - anylabeling.nrl.ai",
+      "url": "https://anylabeling.nrl.ai/docs/samexporter",
+      "snippet": "SAMExporter — Export SAM Models to ONNX SAMExporter is the tool used to export the Segment Anything family of models into ONNX format for deployment in AnyLabeling and other applications. It supports the full model family: SAM, MobileSAM, SAM2, SAM2.1, and SAM3. GitHub: vietanhdev/samexporter (opens in a new tab)"
+    },
+    {
+      "title": "GitHub - dataplayer12/SAM3-TensorRT: TensorRT Engine for SAM-3 model by ...",
+      "url": "https://github.com/dataplayer12/SAM3-TensorRT",
+      "snippet": "Export Meta AI&#x27;s Segment Anything 3 (SAM3) model to ONNX, then build a TensorRT engine for real-time segmentation. This repo includes a CUDA inference library and demo apps for semantic and instance segmentation."
+    },
+    {
+      "title": "AnyLearning — label images and train models on your own machine",
+      "url": "https://anylearning.nrl.ai/",
+      "snippet": "Simple, Smart, Secured AI Model Builder. Create custom AI models in minutes with no-code tools."
+    },
+    {
+      "title": "anylearning-oss/anylearning/auto_labeling/sam_onnx.py at main · nrl-ai ...",
+      "url": "https://github.com/nrl-ai/anylearning-oss/blob/main/anylearning/auto_labeling/sam_onnx.py",
+      "snippet": "Open-source, offline-first no-code AI platform for data labeling, computer vision, tabular ML, and local model training. - nrl-ai/anylearning-oss"
+    },
+    {
+      "title": "wkentaro/sam3-onnx-models · Hugging Face",
+      "url": "https://huggingface.co/wkentaro/sam3-onnx-models",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    }
+  ]
+}

@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "picur/picur-tokenizer",
+  "slug": "picur-picur-tokenizer",
+  "author": "picur",
+  "url": "https://huggingface.co/picur/picur-tokenizer",
+  "created_at": "2026-08-30T20:04:37.000Z",
+  "updated_at": "2026-08-30T23:09:05.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "tokenizers",
+  "languages": [
+    "hu"
+  ],
+  "tags": [
+    "tokenizers",
+    "picur",
+    "tokenizer",
+    "hungarian",
+    "magyar",
+    "morphology",
+    "sentencepiece",
+    "unigram",
+    "hu",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 994909,
+  "storage_human": "994909 B",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "AI Token Counter & Tokenizer Visualizer — GPT, Claude, Gemini | ToolKit",
+      "url": "https://www.webtoolkit.tech/tools/token-counter",
+      "snippet": "AI Free AI Token Counter & Tokenizer Visualizer Exact tiktoken counts for GPT-5/4o/o1 with per-token colored visualization, ChatML chat template mode, plus estimates for Claude 4.x, Gemini 2.5, DeepSeek. 100% browser-based."
+    },
+    {
+      "title": "Free AI Photo Editor & Image Generator Online | Pixlr",
+      "url": "https://pixlr.com/",
+      "snippet": "Free AI Photo Editor & Image Generator Edit, Generate, and Design Online for Free Pixlr gives you a powerful AI photo editor, AI image generator, AI video maker, face swap, collage maker, and 20+ editing tools — 100% free, right in your browser. Powered by Flux, Kling, Recraft, Veo, and more."
+    },
+    {
+      "title": "deepseek-v4-pro-0813 Model by Deepseek-ai | NVIDIA NIM",
+      "url": "https://build.nvidia.com/deepseek-ai/deepseek-v4-pro-0813",
+      "snippet": "DeepSeek V4 scales to 1M-token context windows with efficient MoE architecture for coding tasks."
+    },
+    {
+      "title": "Hugging Face - The AI community building the future.",
+      "url": "https://huggingface.co/",
+      "snippet": "The AI community building the future. ... Explore AI Apps or Browse 2M+ models Trending on this week"
+    },
+    {
+      "title": "m-ric (Aymeric Roucher) - Hugging Face",
+      "url": "https://huggingface.co/m-ric",
+      "snippet": "Tokenization is one of the most important processes in AI - yet many would like to kill it 💀What&#x27;s tokenization? The neural networks inside LLMs actually only process numbers, not text: tokenization is the process that makes text readable for them, by converting sentences into lists of numbers. ️ For instance, \"This is tokenization\" would be split into \"This | is | token | ization\", then ..."
+    }
+  ]
+}

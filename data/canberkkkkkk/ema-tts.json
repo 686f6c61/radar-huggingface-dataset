@@ -5,7 +5,7 @@
   "author": "canberkkkkkk",
   "url": "https://huggingface.co/canberkkkkkk/ema-tts",
   "created_at": "2026-08-26T12:54:59.000Z",
-  "updated_at": "2026-08-27T23:58:58.000Z",
+  "updated_at": "2026-08-30T06:07:42.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-to-speech",
@@ -15,6 +15,7 @@
   ],
   "tags": [
     "safetensors",
+    "ema_tts",
     "text-to-speech",
     "turkish",
     "flow-matching",

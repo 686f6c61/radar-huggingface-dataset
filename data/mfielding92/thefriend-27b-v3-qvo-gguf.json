@@ -5,7 +5,7 @@
   "author": "mfielding92",
   "url": "https://huggingface.co/mfielding92/thefriend-27b-v3-qvo-GGUF",
   "created_at": "2026-08-30T13:44:13.000Z",
-  "updated_at": "2026-08-30T15:08:53.000Z",
+  "updated_at": "2026-08-30T17:28:51.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": null,
@@ -27,8 +27,8 @@
   "trending_score": 0,
   "parameters": 27320697856,
   "parameters_human": "27.32B",
-  "storage_bytes": 63634677248,
-  "storage_human": "63.6 GB",
+  "storage_bytes": 200936897024,
+  "storage_human": "200.9 GB",
   "base_model": "mfielding92/thefriend-27b-v3-qvo",
   "formats": [
     "gguf"

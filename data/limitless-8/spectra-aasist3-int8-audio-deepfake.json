@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "Limitless-8/spectra-aasist3-int8-audio-deepfake",
+  "slug": "limitless-8-spectra-aasist3-int8-audio-deepfake",
+  "author": "Limitless-8",
+  "url": "https://huggingface.co/Limitless-8/spectra-aasist3-int8-audio-deepfake",
+  "created_at": "2026-08-30T20:41:59.000Z",
+  "updated_at": "2026-08-30T20:43:37.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "onnx",
+    "audio",
+    "anti-spoofing",
+    "audio-deepfake-detection",
+    "speech",
+    "quantized",
+    "int8",
+    "base_model:lab260/Spectra-AASIST3",
+    "base_model:quantized:lab260/Spectra-AASIST3",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 364036647,
+  "storage_human": "364 MB",
+  "base_model": "lab260/Spectra-AASIST3",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "lab260/Spectra-AASIST3 · Hugging Face",
+      "url": "https://huggingface.co/lab260/Spectra-AASIST3",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "README.md · lab260/Spectra-AASIST3 at main - Hugging Face",
+      "url": "https://huggingface.co/lab260/Spectra-AASIST3/blob/main/README.md",
+      "snippet": "/ Spectra-AASIST3 like 2 Follow Lab260 24 Safetensors audio anti-spoofing audio-deepfake-detection speech asvspoof wav2vec2 aasist kan License:apache-2.0 Model card FilesFiles and versions xet Community Copy to bucket new main Spectra-AASIST3 /README.md korallll Add ASVspoof5 EER badge + result row (Arena) — 10/10 datasets 901ad4a verified11 ..."
+    },
+    {
+      "title": "GitHub - gladiator456/aasist3",
+      "url": "https://github.com/gladiator456/aasist3",
+      "snippet": "A production-ready, highly optimized implementation of AASIST3 (Audio Anti-Spoofing using Kolmogorov-Arnold Graph Attention Networks), trained on the ASVspoof 2019 LA dataset. This next-generation model eliminates traditional linear layers and heavy CNN encoders, replacing them with learnable non ..."
+    },
+    {
+      "title": "GitHub - lab260ru/AASIST3",
+      "url": "https://github.com/lab260ru/AASIST3",
+      "snippet": "AASIST3 is an enhanced version of the AASIST (Anti-spoofing with Adaptive Softmax and Instance-wise Temperature) architecture that incorporates Kolmogorov-Arnold Networks (KAN) for improved speech deepfake detection."
+    },
+    {
+      "title": "Models - Jabberjay",
+      "url": "https://mattyb95.github.io/Jabberjay/models/",
+      "snippet": "SpectraAASIST3 lab260/Spectra-AASIST3 SSL encoder (Wav2Vec2-XLS-R-300M) → MLP projection → AASIST graph attention network with KAN (Kolmogorov-Arnold Network) linear layers — the strongest model in the Spectra family on In-the-Wild audio."
+    }
+  ]
+}

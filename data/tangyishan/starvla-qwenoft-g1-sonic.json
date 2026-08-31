@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "TangYishan/starvla-qwenoft-g1-sonic",
+  "slug": "tangyishan-starvla-qwenoft-g1-sonic",
+  "author": "TangYishan",
+  "url": "https://huggingface.co/TangYishan/starvla-qwenoft-g1-sonic",
+  "created_at": "2026-08-30T21:45:14.000Z",
+  "updated_at": "2026-08-30T23:04:03.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "starvla",
+    "vla",
+    "robotics",
+    "unitree-g1",
+    "wholebody",
+    "qwen-oft",
+    "sonic",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 2236042267,
+  "storage_human": "2.2 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - starVLA/starVLA: StarVLA: A Lego-like Codebase for Vision ...",
+      "url": "https://github.com/starVLA/starVLA",
+      "snippet": "Thank you for your understanding and support! 🙏 In StarVLA (also a pun on \"start VLA\" ), each functional component (model, data, trainer, config, evaluation, etc.) follows a top-down, intuitive separation and high-cohesion, low-coupling principle, enabling plug-and-play design, rapid prototyping, and independent debugging."
+    },
+    {
+      "title": "starvla_qwenoft_g1_sonic.yaml - GitHub",
+      "url": "https://github.com/starVLA/starVLA/blob/starVLA_dev/examples/realRobots/UnitreeG1_WholeBody/step2_training/train_files/starvla_qwenoft_g1_sonic.yaml",
+      "snippet": "starVLA_dev starVLA / examples / realRobots / UnitreeG1_WholeBody / step2_training / train_files / starvla_qwenoft_g1_sonic.yaml Code Blame 64 lines (59 loc) · 1.42 KB Raw 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 32 33 34 35 36 37 38 39 40 41 42 43 44 45 46 47 48 49 50 51 52 53 54 55 56 57 58 59 60 61 ..."
+    },
+    {
+      "title": "Qwen-OFT (Parallel Prediction) | starVLA/starVLA | DeepWiki",
+      "url": "https://deepwiki.com/starVLA/starVLA/4.4-qwen-oft-(parallel-prediction)",
+      "snippet": "This document describes the Qwen-OFT framework, a lightweight Vision-Language-Action (VLA) implementation that uses parallel MLP regression for continuous action prediction. Qwen-OFT injects special a"
+    },
+    {
+      "title": "StarVLA Documentation | StarVLA",
+      "url": "https://starvla.github.io/docs/",
+      "snippet": "StarVLA is a modular and flexible codebase for developing Vision-Language Models (VLMs) into Vision-Language-Action (VLA) models. Each component (model, data, trainer, configuration, evaluation) is designed for high cohesion and low coupling, enabling plug-and-play research and fast iteration."
+    },
+    {
+      "title": "QwenFast and QwenOFT | shaoxiang/starVLA | DeepWiki",
+      "url": "https://deepwiki.com/shaoxiang/starVLA/4.3-qwenfast-and-qwenoft",
+      "snippet": "Both frameworks leverage the Qwen VLM backbone but differ fundamentally in how they generate robot actions: QwenFast uses autoregressive discrete token generation, while QwenOFT uses parallel MLP regression. These approaches offer different trade-offs between inference speed, training complexity, and action representation granularity."
+    }
+  ]
+}

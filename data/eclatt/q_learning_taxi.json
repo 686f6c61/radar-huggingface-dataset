@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "eclatt/Q_learning_Taxi",
+  "slug": "eclatt-q_learning_taxi",
+  "author": "eclatt",
+  "url": "https://huggingface.co/eclatt/Q_learning_Taxi",
+  "created_at": "2026-08-31T00:16:50.000Z",
+  "updated_at": "2026-08-31T00:33:15.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "reinforcement-learning",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "Taxi-v4",
+    "q-learning",
+    "reinforcement-learning",
+    "custom-implementation",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 289444,
+  "storage_human": "289444 B",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Project_1_QLearning_Taxi.ipynb - Colab",
+      "url": "https://colab.research.google.com/github/VizuaraAI/RL-in-Production-Bootcamp-Resources/blob/main/lectures/02-dqn/assignments/Project_1_QLearning_Taxi.ipynb",
+      "snippet": "RL in Production Workshop · Assignment Goal: Implement the Q-learning algorithm from scratch (no neural networks) and train an agent to solve the classic Taxi dispatch problem. By the end you will have a working agent, learning curves, and a set of small experiments that build real intuition for the Bellman update. This is the foundation for Project 2. DQN is \"Q-learning where the table is ..."
+    },
+    {
+      "title": "Q-Learning with Taxi-v3.ipynb - Colab",
+      "url": "https://colab.research.google.com/gist/simoninithomas/466c81aa1c2a07dd14793240c6d033c5/q-learning-with-taxi-v3.ipynb",
+      "snippet": "In this notebook, you&#x27;ll implement a Q-Learning taxi that will need to learn to navigate in a city to transport its passengers from point A to point B. 🚖"
+    },
+    {
+      "title": "Learn Q-Learning Step-by-Step: Train a Smart Taxi AI - Toolify",
+      "url": "https://www.toolify.ai/ai-news/learn-qlearning-stepbystep-train-a-smart-taxi-ai-2249949",
+      "snippet": "Discover how to implement Q-Learning in reinforcement learning to train a taxi agent. Set up the environment, initialize the Q-Table, train and evaluate the agent, and share the model on Hugging Face."
+    },
+    {
+      "title": "ImaghT/q-learning-taxi-v3 · Hugging Face",
+      "url": "https://huggingface.co/ImaghT/q-learning-taxi-v3",
+      "snippet": "Q-Learning Agent playing Taxi-v3 This is a trained model of a Q-Learning agent playing Taxi-v3 ."
+    },
+    {
+      "title": "fiorane/Taxi-v4-Qlearning · Hugging Face",
+      "url": "https://huggingface.co/fiorane/Taxi-v4-Qlearning",
+      "snippet": "Q-Learning Agent playing1 Taxi-v4 This is a trained model of a Q-Learning agent playing Taxi-v4 ."
+    }
+  ]
+}

@@ -5,7 +5,7 @@
   "author": "bench-labs",
   "url": "https://huggingface.co/bench-labs/cagliostro-v2",
   "created_at": "2026-08-30T02:34:50.000Z",
-  "updated_at": "2026-08-30T14:52:47.000Z",
+  "updated_at": "2026-08-30T21:42:38.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -27,7 +27,7 @@
     "license:apache-2.0",
     "region:us"
   ],
-  "likes": 6,
+  "likes": 7,
   "downloads_30d": 57,
   "trending_score": 0,
   "parameters": 150038400,

@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "PowerMachine/HAKO-v2",
+  "slug": "powermachine-hako-v2",
+  "author": "PowerMachine",
+  "url": "https://huggingface.co/PowerMachine/HAKO-v2",
+  "created_at": "2026-08-30T22:02:01.000Z",
+  "updated_at": "2026-08-30T22:02:22.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 129428472,
+  "storage_human": "129 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Hako (British Rapper) | V2 | 400 Epochs AI Voice Model",
+      "url": "https://voice-models.com/model/1pDkGz3dtQm",
+      "snippet": "Hako (British Rapper) | V2 | 400 Epochs AI voice model for RVC voice conversion. View details, samples, source status, and run this voice model in EasyAIVoice."
+    },
+    {
+      "title": "LLM Leaderboard & AI Model Benchmarks — August 2026",
+      "url": "https://benchlm.ai/",
+      "snippet": "Compare 406 AI models across 408 benchmarks, with 228 ranked scores, source evidence, API pricing, context windows, runtime, and head-to-head pages."
+    },
+    {
+      "title": "Model Overview — PixAI Docs",
+      "url": "https://docs.pixai.art/docs/models-and-lora/model-overview",
+      "snippet": "Model Overview Compare PixAI&#x27;s main models — Tsubaki.2, Haruka v2, and Reference Pro — at a glance, including their differences, supported parameters, and available tools."
+    },
+    {
+      "title": "GitHub - mithraeums/hako: Open source hako LLMs. · GitHub",
+      "url": "https://github.com/mithraeums/hako",
+      "snippet": "Open hake, drop into the AI pane (Ctrl-W r), set :provider mithraeum:model hako-sho-stock (or any installed hako-* model). Tool calls run in the editor&#x27;s split pane against the file you&#x27;re looking at."
+    },
+    {
+      "title": "Your AI Game Companion - HakkoAI",
+      "url": "https://www.hakko.ai/en/",
+      "snippet": "Your AI Game Companion Stay by Your Side, In Game and In Life HakkoAI leverages Visual Language Models (VLMs) to enhance your gaming experience with real-time voice guidance and emotional companionship."
+    }
+  ]
+}

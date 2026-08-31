@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "RemiFabre/microduck-rough-walk-g",
+  "slug": "remifabre-microduck-rough-walk-g",
+  "author": "RemiFabre",
+  "url": "https://huggingface.co/RemiFabre/microduck-rough-walk-g",
+  "created_at": "2026-08-30T20:51:21.000Z",
+  "updated_at": "2026-08-30T20:51:31.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "reinforcement-learning",
+  "library": "onnx",
+  "languages": [],
+  "tags": [
+    "onnx",
+    "microduck",
+    "microduck-policy",
+    "mjlab",
+    "robotics",
+    "reinforcement-learning",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 9890805,
+  "storage_human": "10 MB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "RemiFabre/microduck-flamingo-cycle · Hugging Face",
+      "url": "https://huggingface.co/RemiFabre/microduck-flamingo-cycle",
+      "snippet": "RemiFabre / microduck-flamingo-cycle like 3 Reinforcement Learning ONNX microduck microduck-policy mjlab robotics License:apache-2.0 Model card FilesFiles and versions xet Community Copy to bucket new flamingo-cycle"
+    },
+    {
+      "title": "Microduck: Hugging Face&#x27;s $399 Open-Source RL Biped - explainx.ai",
+      "url": "https://www.explainx.ai/blog/microduck-hugging-face-399-open-source-rl-robot-august-2026",
+      "snippet": "Hugging Face and Pollen Robotics unveiled Microduck on August 27, 2026 — a $399 25 cm open-source biped with 15 motors, MuJoCo PPO training, and a 50 Hz onboard policy loop."
+    },
+    {
+      "title": "RemiFabre (Remi Fabre) - Hugging Face",
+      "url": "https://huggingface.co/RemiFabre/spaces",
+      "snippet": "User profile of Remi Fabre on Hugging Face"
+    },
+    {
+      "title": "This MicroDuck Robot, Powered by an RK3566, Has No Arms But Uses AI and ...",
+      "url": "https://circuitdigest.com/news/this-microduck-robot-based-on-an-rk3566-has-no-arms-but-picks-things-up-using-ai-and-reinforcement-learning",
+      "snippet": "Discover Microduck, a $399 biped robot from Hugging Face & Pollen Robotics. Learn about its RK3566 chip, AI, reinforcement learning, and sim-to-real workflow."
+    },
+    {
+      "title": "RemiFabre (Remi) · GitHub",
+      "url": "https://github.com/RemiFabre",
+      "snippet": "A graph representing RemiFabre&#x27;s contributions from August 24, 2025 to August 30, 2026. The contributions are 87% commits, 7% issues, 3% pull requests, 3% code review."
+    }
+  ]
+}

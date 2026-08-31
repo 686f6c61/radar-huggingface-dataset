@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "QuerynAi/queryn-adapter-ada-002_to_fastembed-bge-small",
+  "slug": "querynai-queryn-adapter-ada-002_to_fastembed-bge-small",
+  "author": "QuerynAi",
+  "url": "https://huggingface.co/QuerynAi/queryn-adapter-ada-002_to_fastembed-bge-small",
+  "created_at": "2026-08-30T20:57:56.000Z",
+  "updated_at": "2026-08-30T20:58:01.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "feature-extraction",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "onnx",
+    "embedding",
+    "embedding-translation",
+    "queryn",
+    "ada-002",
+    "fastembed-bge-small",
+    "feature-extraction",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 2695444,
+  "storage_human": "3 MB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "QuerynAi/queryn-adapter-ada-002_to_qwen3-emb-8b · Hugging Face",
+      "url": "https://huggingface.co/QuerynAi/queryn-adapter-ada-002_to_qwen3-emb-8b",
+      "snippet": "Queryn adapter — ada-002 → qwen3-emb-8b Translates an embedding produced by ada-002 into the embedding space of qwen3-emb-8b, so a corpus already embedded with ada-002 can be served against a qwen3-emb-8b index without re-embedding it. Part of the Queryn embedding-translation engine."
+    },
+    {
+      "title": "text-embedding-ada-002 Model | OpenAI API",
+      "url": "https://developers.openai.com/api/docs/models/text-embedding-ada-002",
+      "snippet": "text-embedding-ada-002 $ 0.10"
+    },
+    {
+      "title": "New embedding models and API updates - OpenAI",
+      "url": "https://openai.com/index/new-embedding-models-and-api-updates/",
+      "snippet": "New embedding models with lower pricing We are introducing two new embedding models: a smaller and highly efficient text-embedding-3-small model, and a larger and more powerful text-embedding-3-large model. An embedding ⁠ is a sequence of numbers that represents the concepts within content such as natural language or code."
+    },
+    {
+      "title": "New and improved embedding model - OpenAI",
+      "url": "https://openai.com/index/new-and-improved-embedding-model/",
+      "snippet": "We are excited to announce a new embedding model which is significantly more capable, cost effective, and simpler to use."
+    },
+    {
+      "title": "Vector embeddings | OpenAI API",
+      "url": "https://developers.openai.com/api/docs/guides/embeddings",
+      "snippet": "Learn how to turn text into numbers, unlocking use cases like search, clustering, and more with OpenAI API embeddings."
+    }
+  ]
+}

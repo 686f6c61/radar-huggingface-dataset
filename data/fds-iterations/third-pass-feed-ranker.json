@@ -5,7 +5,7 @@
   "author": "FDS-Iterations",
   "url": "https://huggingface.co/FDS-Iterations/third-pass-feed-ranker",
   "created_at": "2026-08-26T22:49:51.000Z",
-  "updated_at": "2026-08-30T02:26:52.000Z",
+  "updated_at": "2026-08-30T05:32:17.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-classification",
@@ -32,12 +32,12 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 30,
+  "downloads_30d": 68,
   "trending_score": 0,
   "parameters": 33360385,
   "parameters_human": "33.4M",
-  "storage_bytes": 2317625944,
-  "storage_human": "2.3 GB",
+  "storage_bytes": 2584555616,
+  "storage_human": "2.6 GB",
   "base_model": "microsoft/MiniLM-L12-H384-uncased",
   "formats": [
     "safetensors"

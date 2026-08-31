@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "Raxephion/Xenomorph-V1-Krea2",
+  "slug": "raxephion-xenomorph-v1-krea2",
+  "author": "Raxephion",
+  "url": "https://huggingface.co/Raxephion/Xenomorph-V1-Krea2",
+  "created_at": "2026-08-30T22:07:09.000Z",
+  "updated_at": "2026-08-30T22:45:27.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-image",
+  "library": "diffusers",
+  "languages": [],
+  "tags": [
+    "diffusers",
+    "text-to-image",
+    "lora",
+    "krea2",
+    "template:sd-lora",
+    "xenomorph",
+    "hr-giger",
+    "aliens",
+    "base_model:krea/Krea-2-Raw",
+    "base_model:adapter:krea/Krea-2-Raw",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 2,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 237215011,
+  "storage_human": "237 MB",
+  "base_model": "krea/Krea-2-Raw",
+  "formats": [
+    "diffusers"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Raxephion/Krea2-Serendipity-V1 · Hugging Face",
+      "url": "https://huggingface.co/Raxephion/Krea2-Serendipity-V1",
+      "snippet": "The LoRA was then trained, evaluated through repeated generations, refined through testing, and ultimately merged directly into the official Krea 2 Turbo base checkpoint to create Serendipity as a permanent standalone model."
+    },
+    {
+      "title": "Raxephion/Krea2-Serendipity-V1 at main - Hugging Face",
+      "url": "https://huggingface.co/Raxephion/Krea2-Serendipity-V1/tree/main",
+      "snippet": "Raxephion / Krea2-Serendipity-V1 like 2 Text-to-Image checkpoint finetuned krea2 realism fp8 cinematic License:krea2 Model card FilesFiles and versions xet Community Copy to bucket new main Krea2-Serendipity-V1 39.4 GB Ctrl+K Ctrl+K 1 contributor History:12 commits Raxephion Update README.md cdaf7ea verifiedabout 12 hours ago imagesUpload 6 ..."
+    },
+    {
+      "title": "Raxephion (Raxephion) - Hugging Face",
+      "url": "https://huggingface.co/Raxephion",
+      "snippet": "Generative AI, Diffusion Models, Model Compression, Computer Vision, AI Infrastructure, Prompt Engineering, Model Evaluation, Responsible AI,"
+    },
+    {
+      "title": "AI画风 Xenomorph style【krea2】 - v1.0 | Krea 2 LoRA | Civitai",
+      "url": "https://civitai.com/models/2882038/ai-xenomorph-stylekrea2",
+      "snippet": "这个模型不需要触发词 This model doesn&#x27;t need a trigger word Xenomorph_style_krea2_v1.safetensors BF16, good balance • 219.28 MB"
+    },
+    {
+      "title": "Raxephion/Krea2-Serendipity-V2 · Hugging Face",
+      "url": "https://huggingface.co/Raxephion/Krea2-Serendipity-V2",
+      "snippet": "Licensing & Disclaimer Original Model Creators: All credit goes to KREA.ai for the original research, architecture, and weights. License: This model is subject to the KREA 2 License Agreement. Please read and comply with the official license terms before using these weights: KREA 2 Licensing Terms."
+    }
+  ]
+}

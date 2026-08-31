@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "OliveVoice/omni-odia-tts",
+  "slug": "olivevoice-omni-odia-tts",
+  "author": "OliveVoice",
+  "url": "https://huggingface.co/OliveVoice/omni-odia-tts",
+  "created_at": "2026-05-05T20:54:53.000Z",
+  "updated_at": "2026-08-30T23:55:12.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "gguf",
+    "omnivoice",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 94,
+  "trending_score": 0,
+  "parameters": 612577288,
+  "parameters_human": "612.6M",
+  "storage_bytes": 9951279073,
+  "storage_human": "10.0 GB",
+  "base_model": null,
+  "formats": [
+    "gguf",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "OliveVoice (OliveVoice) - Hugging Face",
+      "url": "https://huggingface.co/OliveVoice/datasets",
+      "snippet": "Org profile for OliveVoice on Hugging Face, the AI community building the future."
+    },
+    {
+      "title": "GitHub - diogod2r/OmniVoice-FastAPI: Dockerized FastAPI wrapper for ...",
+      "url": "https://github.com/diogod2r/OmniVoice-FastAPI",
+      "snippet": "Dockerized FastAPI wrapper for OmniVoice — zero-shot TTS for 600+ languages with voice cloning and voice design. Fully OpenAI-compatible speech endpoint."
+    },
+    {
+      "title": "OmniVoice Open-Source TTS Guide 2026: What It Is and Who It Is For",
+      "url": "https://luvvoice.com/blog/omnivoice-open-source-tts-guide-2026",
+      "snippet": "A practical introduction to the OmniVoice open-source TTS project, including its multilingual voice cloning features, developer workflow, and when a hosted option like Luvvoice makes more sense."
+    },
+    {
+      "title": "OmniVoice: Free AI Voice Generator & Voice Cloning",
+      "url": "https://omnivoice.app/",
+      "snippet": "OmniVoice is a free, open-source AI voice generator that supports 646 languages. It converts text to natural-sounding speech, clones voices from a short audio sample (zero-shot Voice Cloning), or creates a voice from a text description alone (Voice Design)."
+    },
+    {
+      "title": "GitHub - k2-fsa/OmniVoice: High-Quality Voice Cloning TTS for 600 ...",
+      "url": "https://github.com/k2-fsa/OmniVoice/",
+      "snippet": "High-Quality Voice Cloning TTS for 600+ Languages. Contribute to k2-fsa/OmniVoice development by creating an account on GitHub."
+    }
+  ]
+}

@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "liodon-ai/DFM-Mimir-FP8",
+  "slug": "liodon-ai-dfm-mimir-fp8",
+  "author": "liodon-ai",
+  "url": "https://huggingface.co/liodon-ai/DFM-Mimir-FP8",
+  "created_at": "2026-08-30T22:49:22.000Z",
+  "updated_at": "2026-08-30T22:56:23.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "hrm_text",
+    "text-generation",
+    "fp8",
+    "compressed-tensors",
+    "vllm",
+    "quantized",
+    "conversational",
+    "base_model:danish-foundation-models/DFM-Mimir",
+    "base_model:quantized:danish-foundation-models/DFM-Mimir",
+    "license:other",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1786775040,
+  "parameters_human": "1.79B",
+  "storage_bytes": 2625399670,
+  "storage_human": "2.6 GB",
+  "base_model": "danish-foundation-models/DFM-Mimir",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "liodon-ai (Liodon AI) - Hugging Face",
+      "url": "https://huggingface.co/liodon-ai",
+      "snippet": "Extreme Model Compression: Developing state-of-the-art recipes for hardware-aware post-training quantization (FP8, FP4, and sub-4-bit formats), pruning, and structure-preserving knowledge distillation."
+    },
+    {
+      "title": "liodon-ai/bloom-560m-FP8 · Hugging Face",
+      "url": "https://huggingface.co/liodon-ai/bloom-560m-FP8",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Liodon AI - GitHub",
+      "url": "https://github.com/Liodon-AI",
+      "snippet": "Liodon AI is an open-source R&D collective exploring the intersection of deep learning, agentic systems, and NLP evaluation. Our repositories span: Agentic AI primitives (e.g. torchagentic) — differentiable cognitive building blocks (memory, credit assignment, planning, exploration) designed to be importable by frameworks like LangChain, AutoGen, and CrewAI. LLM evaluation tooling (e.g ..."
+    },
+    {
+      "title": "LLM Leaderboard & AI Model Benchmarks — August 2026",
+      "url": "https://benchlm.ai/",
+      "snippet": "Compare 406 AI models across 408 benchmarks, with 228 ranked scores, source evidence, API pricing, context windows, runtime, and head-to-head pages."
+    },
+    {
+      "title": "Home - LioDon AI",
+      "url": "https://liodon.ai/",
+      "snippet": "What we research Liodon is an independent, self-funded applied research lab working on the frontier of open-source foundation model research."
+    }
+  ]
+}

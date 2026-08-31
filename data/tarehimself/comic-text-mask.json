@@ -1,0 +1,76 @@
+{
+  "schema": 1,
+  "id": "TareHimself/comic-text-mask",
+  "slug": "tarehimself-comic-text-mask",
+  "author": "TareHimself",
+  "url": "https://huggingface.co/TareHimself/comic-text-mask",
+  "created_at": "2026-08-30T19:35:01.000Z",
+  "updated_at": "2026-08-30T19:36:29.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "image-segmentation",
+  "library": "segmentation-models-pytorch",
+  "languages": [
+    "en",
+    "ja",
+    "ko",
+    "zh"
+  ],
+  "tags": [
+    "segmentation-models-pytorch",
+    "safetensors",
+    "comics",
+    "manga",
+    "text-segmentation",
+    "image-segmentation",
+    "en",
+    "ja",
+    "ko",
+    "zh",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 14339793,
+  "parameters_human": "14.3M",
+  "storage_bytes": 172551388,
+  "storage_human": "173 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "TareHimself (Tare) · GitHub",
+      "url": "https://github.com/TareHimself",
+      "snippet": "A comic localizer built with python Python 107 19 rin Public C# Game Engine C# osu-ai Public"
+    },
+    {
+      "title": "Humanize AI Text - AI to Human Text Converter",
+      "url": "https://www.mask.ai/",
+      "snippet": "Get Started How It Works From AI to Human in three steps 01 Paste Your AI Text Copy the text from ChatGPT, Claude, Gemini, or any other AI tool and paste it into the Mask AI editor."
+    },
+    {
+      "title": "TareHimself (Tare) - Hugging Face",
+      "url": "https://huggingface.co/TareHimself",
+      "snippet": "User profile of Tare on Hugging Face Image-to-Text • Updated Sep 22 • 148"
+    },
+    {
+      "title": "GitHub - TareHimself/comic-localizer: A comic localizer built with ...",
+      "url": "https://github.com/TareHimself/comic-localizer",
+      "snippet": "A comic localizer built with python. Contribute to TareHimself/comic-localizer development by creating an account on GitHub."
+    },
+    {
+      "title": "AI Humanizer - Transform AI Text to Human Writing | Mask AI",
+      "url": "https://www.mask.ai/humanizer",
+      "snippet": "Humanize AI-generated text instantly. Make ChatGPT and AI writing undetectable while maintaining quality and meaning. Bypass AI detectors effortlessly. Free to try."
+    }
+  ]
+}

@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "bogairff55/ViAble-1.7-9B",
+  "slug": "bogairff55-viable-1-7-9b",
+  "author": "bogairff55",
+  "url": "https://huggingface.co/bogairff55/ViAble-1.7-9B",
+  "created_at": "2026-08-31T01:18:18.000Z",
+  "updated_at": "2026-08-31T01:29:55.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "base_model:adapter:ornith-ai/Ornith-1.5-9B",
+    "lora",
+    "sft",
+    "transformers",
+    "trl",
+    "unsloth",
+    "text-generation",
+    "conversational",
+    "arxiv:1910.09700",
+    "base_model:ornith-ai/Ornith-1.5-9B",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 835753678,
+  "storage_human": "836 MB",
+  "base_model": "ornith-ai/Ornith-1.5-9B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "bogairff55/ViAble · Hugging Face",
+      "url": "https://huggingface.co/bogairff55/ViAble",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "bogairff55/ViAble-1.0-9B · Hugging Face",
+      "url": "https://huggingface.co/bogairff55/ViAble-1.0-9B",
+      "snippet": "ViAble-1.0-9B BF16 merge: bogairff55/ViAble-merged6 + KerasHub LoRA ckpts (4 phases A/B/C/D, dense layers 3,7,11,15,19,23,27,31, query+value, rank 64, scale=1.0 ..."
+    },
+    {
+      "title": "ViAble-1.0-9B by bogairff55 | AI Market Cap",
+      "url": "https://aimarketcap.tech/models/bogairff55-viable-1-0-9b",
+      "snippet": "Explore ViAble-1.0-9B by bogairff55 — benchmark coverage where available, pricing, and comparisons on AI Market Cap."
+    },
+    {
+      "title": "CivArchive (CivitAI Archive) - AI Model Archive",
+      "url": "https://civarchive.com/",
+      "snippet": "Browse and discover AI models from CivitAI, TensorArt, and SeaArt. Community-driven archive preserving access to AI resources."
+    },
+    {
+      "title": "GitHub - ornith-ai/Ornith-1 · GitHub",
+      "url": "https://github.com/ornith-ai/Ornith-1",
+      "snippet": "Contribute to ornith-ai/Ornith-1 development by creating an account on GitHub."
+    }
+  ]
+}

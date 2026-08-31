@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "anna-smirnov/test-retrieval",
+  "slug": "anna-smirnov-test-retrieval",
+  "author": "anna-smirnov",
+  "url": "https://huggingface.co/anna-smirnov/test-retrieval",
+  "created_at": "2026-08-31T01:03:31.000Z",
+  "updated_at": "2026-08-31T01:03:40.000Z",
+  "license": "bsd-3-clause",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "flamingo",
+    "pytorch",
+    "retrieval",
+    "license:bsd-3-clause",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 33088,
+  "parameters_human": "33088",
+  "storage_bytes": 132832,
+  "storage_human": "132832 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Meet Andrei Smirnov, Head of AI - anna.money",
+      "url": "https://anna.money/blog/interviews/andrei-smirnov-head-of-ai/",
+      "snippet": "Andrei Smirnov left a physics PhD to work on AI - and now he&#x27;s building the version of ANNA that handles your admin before you even think to ask. Here&#x27;s how he thinks about it."
+    },
+    {
+      "title": "[2608.10928] ThinkRetrieve: Retrieval-Augmented Reasoning Traces for ...",
+      "url": "https://arxiv.org/abs/2608.10928",
+      "snippet": "Abstract page for arXiv paper 2608.10928: ThinkRetrieve: Retrieval-Augmented Reasoning Traces for Test-Time Scaling"
+    },
+    {
+      "title": "AI Leaderboard 2026: Rankings for 300+ Top AI Models by Intelligence ...",
+      "url": "https://llm-stats.com/",
+      "snippet": "The AI Leaderboard — independent rankings of GPT, Claude, Gemini, Llama, DeepSeek and 300+ AI models by intelligence, speed and price. Composite LLM Stats Score updated continuously from public benchmarks and live API metrics."
+    },
+    {
+      "title": "AnnaSmirnova (Anna Smirnova) - Hugging Face",
+      "url": "https://huggingface.co/AnnaSmirnova",
+      "snippet": "text classification AI & ML interests text classification Organizations None yet"
+    },
+    {
+      "title": "Retrieval Models Aren&#x27;t Tool-Savvy: Benchmarking Tool Retrieval for ...",
+      "url": "https://arxiv.org/abs/2503.01763",
+      "snippet": "Tool learning aims to augment large language models (LLMs) with diverse tools, enabling them to act as agents for solving practical tasks. Due to the limited context length of tool-using LLMs, adopting information retrieval (IR) models to select useful tools from large toolsets is a critical initial step. However, the performance of IR models in tool retrieval tasks remains underexplored and ..."
+    }
+  ]
+}

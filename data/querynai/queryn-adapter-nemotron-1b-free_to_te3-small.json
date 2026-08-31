@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "QuerynAi/queryn-adapter-nemotron-1b-free_to_te3-small",
+  "slug": "querynai-queryn-adapter-nemotron-1b-free_to_te3-small",
+  "author": "QuerynAi",
+  "url": "https://huggingface.co/QuerynAi/queryn-adapter-nemotron-1b-free_to_te3-small",
+  "created_at": "2026-08-30T21:08:19.000Z",
+  "updated_at": "2026-08-30T21:08:52.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "feature-extraction",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "onnx",
+    "embedding",
+    "embedding-translation",
+    "queryn",
+    "nemotron-1b-free",
+    "te3-small",
+    "feature-extraction",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 12917310,
+  "storage_human": "13 MB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Free AI Models on OpenRouter",
+      "url": "https://openrouter.ai/collections/free-models",
+      "snippet": "Access powerful AI models at zero cost. Experiment, learn, and build with free AI models and LLMs. OpenRouter is committed to keeping AI accessible for everyone."
+    },
+    {
+      "title": "nvidia (NVIDIA) - Hugging Face",
+      "url": "https://huggingface.co/nvidia",
+      "snippet": "The State of Simulation for Physical AI: An Overview ... Introducing Cosmos 3 Edge ... Fine-tune video and image models at scale with NVIDIA NeMo Automodel and 🤗 Diffusers ... NVIDIA Nemotron 3 Embed Ranks #1 Overall on RTEB, Advancing Agentic Retrieval ... Data for Agents ... NVIDIA Isaac Teleop and GR00T 1.7 Open VLA Model Available in LeRobot"
+    },
+    {
+      "title": "Nemotron AI Models | NVIDIA Developer",
+      "url": "https://developer.nvidia.com/topics/ai/nemotron",
+      "snippet": "NVIDIA Nemotron is a family of open-source models with open weights, training data, and recipes, delivering leading efficiency and accuracy for building specialized AI agents with reasoning."
+    },
+    {
+      "title": "NVIDIA Nemotron AI | Open Multimodal Models for Agentic AI",
+      "url": "https://nemotron-ai.com/",
+      "snippet": "NVIDIA Nemotron is a family of open, multimodal models — Nano, Super, and Ultra — for reasoning, coding, vision, speech, and long-running AI agents. Try Nemotron AI live in your browser."
+    },
+    {
+      "title": "deepseek-v4-pro-0813 Model by Deepseek-ai | NVIDIA NIM",
+      "url": "https://build.nvidia.com/deepseek-ai/deepseek-v4-pro-0813",
+      "snippet": "DeepSeek V4 scales to 1M-token context windows with efficient MoE architecture for coding tasks."
+    }
+  ]
+}

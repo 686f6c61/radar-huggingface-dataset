@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "barelymining/ComfyUI-MiniMax-H3-FastVideo",
+  "slug": "barelymining-comfyui-minimax-h3-fastvideo",
+  "author": "barelymining",
+  "url": "https://huggingface.co/barelymining/ComfyUI-MiniMax-H3-FastVideo",
+  "created_at": "2026-08-30T19:29:39.000Z",
+  "updated_at": "2026-08-30T19:53:35.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "diffusers",
+  "languages": [],
+  "tags": [
+    "diffusers",
+    "comfyui",
+    "safetensors",
+    "lora",
+    "video",
+    "minimax-h3",
+    "fasth3",
+    "vsa",
+    "sparse-attention",
+    "base_model:FastVideo/FastVideo-FastH3-4-step-Preview-v1-VSA-DataFree",
+    "base_model:adapter:FastVideo/FastVideo-FastH3-4-step-Preview-v1-VSA-DataFree",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 6052289416,
+  "storage_human": "6.1 GB",
+  "base_model": "MiniMaxAI/MiniMax-H3, FastVideo/FastVideo-FastH3-4-step-Preview-v1-VSA-DataFree",
+  "formats": [
+    "diffusers",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - barelymining/ComfyUI-MiniMax-H3-FastVideo: Experimental ...",
+      "url": "https://github.com/barelymining/ComfyUI-MiniMax-H3-FastVideo",
+      "snippet": "A ComfyUI custom node that routes MiniMax H3 diffusion transformer attention through FastVideo&#x27;s Video Sparse Attention (VSA) — delivering roughly 2× faster attention per step compared to dense attention, on top of the 4-step distillation LoRA."
+    },
+    {
+      "title": "Branches · barelymining/ComfyUI-MiniMax-H3-FastVideo · GitHub",
+      "url": "https://github.com/barelymining/ComfyUI-MiniMax-H3-FastVideo/branches/all",
+      "snippet": "Experimental ComfyUI node that routes MiniMax H3 attention through FastVideo's Video Sparse Attention (VSA) for ~2× faster steps. Requires pruned INT8 FL2VA base, custom LoRA, gate weights, and..."
+    },
+    {
+      "title": "ComfyUI Tutorial MiniMax H3 8 Steps Lora + Upscaling + 2X Faster ...",
+      "url": "https://www.youtube.com/watch?v=ZUzeM9OEJ4Y",
+      "snippet": "Speed up Minimax H3 video generation with this new LoRa technique. Learn how to optimize output quality using attention mechanisms. This tutorial provides a ..."
+    },
+    {
+      "title": "MiniMax H3 on Comfy — Open-Weight Video Model",
+      "url": "https://comfy.org/minimax-h3/",
+      "snippet": "Run MiniMax H3 on Comfy: Open Weights or Partner Nodes, multi-modal in/out, native stereo audio on every clip, up to 2K and 5-15s per generation. Free to start."
+    },
+    {
+      "title": "MiniMax H3 Open: Tutorials, Deployment & Workflows",
+      "url": "https://design.minimax.io/h3",
+      "snippet": "Get models, code, and developer documentation to deploy H3 and create your own AI video workflows. Resources Access code, docs,and community resources. Release Updates Get the latest H3 releases and compatibility updates. Local Deployment Deploy and run H3 locally with setup guides. Try H3 Online Use H3 directly in MiniMax Design without any setup."
+    }
+  ]
+}

@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "thedarkthrust/Krea2-Kroma-v0.3-Turbo-INT8-ConvRot",
+  "slug": "thedarkthrust-krea2-kroma-v0-3-turbo-int8-convrot",
+  "author": "thedarkthrust",
+  "url": "https://huggingface.co/thedarkthrust/Krea2-Kroma-v0.3-Turbo-INT8-ConvRot",
+  "created_at": "2026-08-30T21:10:20.000Z",
+  "updated_at": "2026-08-30T21:15:02.000Z",
+  "license": "krea-2-community-license",
+  "license_family": "unknown",
+  "pipeline_tag": "text-to-image",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "comfyui",
+    "krea2",
+    "kroma",
+    "int8",
+    "convrot",
+    "quantized",
+    "safetensors",
+    "text-to-image",
+    "en",
+    "base_model:lodestones/Kroma",
+    "base_model:quantized:lodestones/Kroma",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 2,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 13491951240,
+  "storage_human": "13.5 GB",
+  "base_model": "lodestones/Kroma",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Kroma - v0.3 KREA 2 - Free AI CHECKPOINT | Tensor.Art",
+      "url": "https://tensor.art/models/1037635234654340273",
+      "snippet": "Kroma v0.2 — Krea 2 fine-tune (full model) Kroma is a fine-tune of Krea 2. As of v0.2 it is distributed as a full model checkpoint — the v0.1 LoRA-delta packaging has been retired. v0.2 is more training on top of v0.1, with no LoRA delta compression, and the Krea 2 Turbo delta merged in as a rank-512 LoRA — a single file gives you the fine-tuned quality at Turbo speed."
+    },
+    {
+      "title": "Krea-2-Turbo - Hugging Face",
+      "url": "https://huggingface.co/krea/Krea-2-Turbo",
+      "snippet": "Access Krea 2 Turbo ... Log in or Sign Up to review the conditions and access this model content."
+    },
+    {
+      "title": "diffusion_models/krea2_turbo_int8_convrot.safetensors · Comfy-Org/Krea ...",
+      "url": "https://huggingface.co/Comfy-Org/Krea-2/blob/main/diffusion_models/krea2_turbo_int8_convrot.safetensors",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Krea 2 Turbo by Krea — AI Image Generator | Krea",
+      "url": "https://www.krea.ai/models/krea-2-turbo",
+      "snippet": "Fastest medium quality Krea 2 model. The fastest Krea 2 model. Best for quickly iterating on expressive illustrations. Generate with Krea 2 Turbo on Krea, compare quality settings, and ship production-ready images faster."
+    },
+    {
+      "title": "Krea 2 Turbo Official Comfy-Org Checkpoints (Krea2)",
+      "url": "https://civitai.com/models/2726029/krea-2-turbo-official-comfy-org-checkpoints-krea2",
+      "snippet": "Krea 2 is a text-to-image diffusion model that generates images from natural-language text descriptions. The model is designed to support creative, commercial, developer, and research use cases, including image generation, concepting, design exploration, visual production workflows, and integration into applications and creative tools."
+    }
+  ]
+}

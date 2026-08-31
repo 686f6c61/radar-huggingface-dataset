@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "victoraccount/wsd-training-dataset_4wydx9s4",
+  "slug": "victoraccount-wsd-training-dataset_4wydx9s4",
+  "author": "victoraccount",
+  "url": "https://huggingface.co/victoraccount/wsd-training-dataset_4wydx9s4",
+  "created_at": "2026-08-30T19:15:04.000Z",
+  "updated_at": "2026-08-30T19:15:29.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "feature-extraction",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "xlm-roberta",
+    "feature-extraction",
+    "arxiv:1910.09700",
+    "text-embeddings-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 278043648,
+  "parameters_human": "278.0M",
+  "storage_bytes": 1129280083,
+  "storage_human": "1.1 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Find Open Datasets and Machine Learning Projects | Kaggle",
+      "url": "https://www.kaggle.com/datasets",
+      "snippet": "Browse and download hundreds of thousands of open datasets for AI research, model training, and analysis. Join a community of millions of researchers, developers, and builders to share and collaborate on Kaggle."
+    },
+    {
+      "title": "Dataset Search",
+      "url": "https://datasetsearch.research.google.com/",
+      "snippet": "Discover datasets from various domains with Google&#x27;s Dataset Search tool, designed to help researchers and enthusiasts find relevant data easily."
+    },
+    {
+      "title": "aitrainingdata (AI Training Data) · GitHub",
+      "url": "https://github.com/aitrainingdata",
+      "snippet": "Welcome to the AI Training Data repository! This project aims to be the largest public collection of AI training data, supporting a wide range of applications and research in artificial intelligence. By consolidating data into a single repository, we hope to make AI research and development more accessible and efficient."
+    },
+    {
+      "title": "OpenML",
+      "url": "https://www.openml.org/",
+      "snippet": "OpenML is an open platform for sharing datasets, algorithms, and experiments - to learn how to learn better, together."
+    },
+    {
+      "title": "AI Training Datasets & Open Datasets for ML (2026) | Shaip",
+      "url": "https://www.shaip.com/offerings/open-datasets/",
+      "snippet": "Finding the right dataset for your AI model shouldn&#x27;t take weeks. The open dataset library gives ML teams instant access to 100+ curated, human-validated datasets spanning NLP, Computer Vision, Speech, and Generative AI — all free to explore. So if you want to start a new AI/ML initiative and now you&#x27;re quickly realizing that finding high-quality training data will be one of the more ..."
+    }
+  ]
+}

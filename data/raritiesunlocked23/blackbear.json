@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "RaritiesUnlocked23/Blackbear",
+  "slug": "raritiesunlocked23-blackbear",
+  "author": "RaritiesUnlocked23",
+  "url": "https://huggingface.co/RaritiesUnlocked23/Blackbear",
+  "created_at": "2026-08-30T19:22:07.000Z",
+  "updated_at": "2026-08-30T19:22:07.000Z",
+  "license": "artistic-2.0",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:artistic-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - samssouza/uncensored-ai-list",
+      "url": "https://github.com/samssouza/uncensored-ai-list",
+      "snippet": "Contribute to samssouza/uncensored-ai-list development by creating an account on GitHub."
+    },
+    {
+      "title": "Censor Remover — Remove Mosaic, Stickers, and Bars Online",
+      "url": "https://aiimagine.io/censor-remover",
+      "snippet": "Censor Remover Upload a photo with mosaic, stickers, emojis, or black bars over it — the AI detects the censored area and rebuilds what&#x27;s underneath with natural texture and lighting."
+    },
+    {
+      "title": "AI Blockbench Model Generator | Rigged 3D Minecraft Models from a ...",
+      "url": "https://kodari.ai/blogs/ai-blockbench-model-generator",
+      "snippet": "AI Blockbench Model Generator: Rigged, Animated .bbmodel Files from a Prompt Describe a mob, a pet, a weapon, a prop. Get back a proper .bbmodel, rigged with bones and animated, that opens straight in Blockbench. No modeling, no keyframing by hand."
+    },
+    {
+      "title": "LLM Leaderboard & AI Model Benchmarks — August 2026",
+      "url": "https://benchlm.ai/",
+      "snippet": "Compare 406 AI models across 408 benchmarks, with 228 ranked scores, source evidence, API pricing, context windows, runtime, and head-to-head pages."
+    },
+    {
+      "title": "GitHub - 12britz/awesome-free-models: A curated list of free AI models ...",
+      "url": "https://github.com/12britz/awesome-free-models",
+      "snippet": "A curated list of free AI models, APIs, and tools you can use without paying a cent. - 12britz/awesome-free-models"
+    }
+  ]
+}

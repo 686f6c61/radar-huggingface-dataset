@@ -1,0 +1,78 @@
+{
+  "schema": 1,
+  "id": "q-project/Q-50M-Base",
+  "slug": "q-project-q-50m-base",
+  "author": "q-project",
+  "url": "https://huggingface.co/q-project/Q-50M-Base",
+  "created_at": "2026-08-30T19:24:19.000Z",
+  "updated_at": "2026-08-30T19:26:08.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "q",
+    "text-generation",
+    "causal-lm",
+    "custom-architecture",
+    "pretrained",
+    "base-model",
+    "grouped-query-attention",
+    "qk-norm",
+    "gated-residuals",
+    "tiny-model",
+    "custom_code",
+    "en",
+    "dataset:HuggingFaceFW/fineweb-edu",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 2,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 50878208,
+  "parameters_human": "50.9M",
+  "storage_bytes": 203527584,
+  "storage_human": "204 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "tjarvis91/Q-Meeting-50M-Sovereign · Hugging Face",
+      "url": "https://huggingface.co/tjarvis91/Q-Meeting-50M-Sovereign",
+      "snippet": "tjarvis91 / Q-Meeting-50M-Sovereign like 0 Text Generation PyTorch English qovaryx_finance_decoder qovaryx compact-cognition local-ai meeting-notes structured-extraction sovereign-base License:apache-2.0 Model card FilesFiles and versions xet Community Copy to bucket new Q-Meeting-50M-Sovereign — Meeting notes structurer — attendees ..."
+    },
+    {
+      "title": "tjarvis91/qovaryx-50m-scratch-base · Hugging Face",
+      "url": "https://huggingface.co/tjarvis91/qovaryx-50m-scratch-base",
+      "snippet": "tjarvis91 / qovaryx-50m-scratch-base like 0 Text Generation Transformers PyTorch English qovaryx pretraining from-scratch random-init scratch-base decoder causal-lm causal-language-model transformer compact-llm compact-ai consumer-gpu local-ai on-device edge-ai 16gb-vram rtx-4090 rtx-5090 rtx-5070-ti small-language-model tiny-llm nanogpt pretraining-template mtp multi-token-prediction gqa ..."
+    },
+    {
+      "title": "What Is Project Q* (Q-Star): Is It OpenAI Top Secret? - Techlasi",
+      "url": "https://techlasi.com/technews/what-is-q-openai-project-q-star/",
+      "snippet": "What Is Project Q*? Put simply, Project Q * is OpenAI &#x27;s attempt to build an AI system that is beneficial to humanity. It focuses on algorithmicsafety, helpfulness, honesty, and harmlessness. The * represents OpenAI&#x27;s intent to iterate and improve Q over time. So Q* is not a single system or product."
+    },
+    {
+      "title": "Project Q - GitHub",
+      "url": "https://github.com/projectqai",
+      "snippet": "open source contributions by project-q. Project Q has 4 repositories available. Follow their code on GitHub."
+    },
+    {
+      "title": "What is OpenAI Project Q*? AGI Superintelligence Explained",
+      "url": "https://tech.co/news/what-is-openai-project-q-star-agi-superintelligence",
+      "snippet": "What is Project Q* AGI? Project Q* - pronounced &#x27;Q-Star&#x27; - refers to a new AI model being developed by AI powerhouse and ChatGPT owner OpenAI. According to people close to the source, Q ..."
+    }
+  ]
+}

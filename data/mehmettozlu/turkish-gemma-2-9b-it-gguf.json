@@ -5,7 +5,7 @@
   "author": "mehmettozlu",
   "url": "https://huggingface.co/mehmettozlu/Turkish-Gemma-2-9B-IT-GGUF",
   "created_at": "2026-08-27T21:37:27.000Z",
-  "updated_at": "2026-08-28T11:17:13.000Z",
+  "updated_at": "2026-08-30T08:28:58.000Z",
   "license": "gemma",
   "license_family": "oss",
   "pipeline_tag": null,
@@ -29,7 +29,7 @@
     "conversational"
   ],
   "likes": 0,
-  "downloads_30d": 147,
+  "downloads_30d": 203,
   "trending_score": 0,
   "parameters": 9241705984,
   "parameters_human": "9.24B",

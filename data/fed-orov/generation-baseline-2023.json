@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "Fed-orov/generation-baseline-2023",
+  "slug": "fed-orov-generation-baseline-2023",
+  "author": "Fed-orov",
+  "url": "https://huggingface.co/Fed-orov/generation-baseline-2023",
+  "created_at": "2026-08-30T20:10:18.000Z",
+  "updated_at": "2026-08-30T20:10:27.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "albef",
+    "pytorch",
+    "generation",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 16576,
+  "parameters_human": "16576",
+  "storage_bytes": 66784,
+  "storage_human": "66784 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Atb | Nlr",
+      "url": "https://atb.nlr.gov/",
+      "snippet": "The NLR Annual Technology Baseline (ATB) provides a consistent set of technology cost and performance data for energy analysis. The ATB electricity and transportation datasets are freely available. To inform electric and transportation sector analysis in the United States, each year NLR provides a robust set of modeling input assumptions for energy technologies (the Annual Technology Baseline ..."
+    },
+    {
+      "title": "Fed-orov (Иван Лебедев) - Hugging Face",
+      "url": "https://huggingface.co/Fed-orov",
+      "snippet": "just here for the models Recent Activity updated a modelabout 9 hours ago Fed-orov/model_254325862_albef_huge published a modelabout 9 hours ago Fed-orov/model_254325862_albef_huge View all activity"
+    },
+    {
+      "title": "Generation of Artificial ULF/ELF Electromagnetic Emission in the ...",
+      "url": "https://agupubs.onlinelibrary.wiley.com/doi/10.1029/2023JA031590",
+      "snippet": "4 Application to the Analysis of Electromagnetic Emission Produced by Grounded ELF Transmitters The IRI model is the most validated and widespread model of a standard ionosphere, which provides for any location on Earth and time moment the vertical profile of main ionospheric constituents."
+    },
+    {
+      "title": "GPT-4 | OpenAI",
+      "url": "https://openai.com/index/gpt-4/",
+      "snippet": "GPT‑4‑assisted safety research GPT‑4&#x27;s advanced reasoning and instruction-following capabilities expedited our safety work. We used GPT‑4 to help create training data for model fine-tuning and iterate on classifiers across training, evaluations, and monitoring."
+    },
+    {
+      "title": "OEDI: 2023 Annual Technology Baseline (ATB) Cost and ... - OpenEI",
+      "url": "https://data.openei.org/submissions/5865",
+      "snippet": "These data provide the 2023 update of the Electricity Annual Technology Baseline ATB. Starting in 2015 NREL has presented the ATB consisting of detailed cost and performance data both current and projected for electricity generation and storage technologies. The ATB products now include data Excel workbook Tableau workbooks and structured summary csv files as well as documentation and user ..."
+    }
+  ]
+}

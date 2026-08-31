@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "cakir61/kaptan-pi-qwen",
+  "slug": "cakir61-kaptan-pi-qwen",
+  "author": "cakir61",
+  "url": "https://huggingface.co/cakir61/kaptan-pi-qwen",
+  "created_at": "2026-08-30T20:07:29.000Z",
+  "updated_at": "2026-08-30T20:12:12.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 128555203,
+  "storage_human": "129 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Qwen",
+      "url": "https://qwen.ai/home",
+      "snippet": "Qwen Studio is an AI assistant for everyone, powered by the Qwen series models. It&#x27;s free to use, open to all, and ready to help with creativity, collaboration, and endless possibilities."
+    },
+    {
+      "title": "Alibaba Cloud Model Studio",
+      "url": "https://modelstudio.alibabacloud.com/",
+      "snippet": "Foundation for AI Innovation Accelerate deployment and scaling of Qwen, Wan, and more leading models on one secure Alibaba Cloud platform"
+    },
+    {
+      "title": "pi-qwen-provider · Packages · Pi",
+      "url": "https://pi.dev/packages/pi-qwen-provider?name=qwen",
+      "snippet": "qwen2.5-vl-32b-instruct - Vision model for images qwen-plus - General purpose model qwen3-8b - Lightweight model Authentication OAuth (Recommended - Free) Sign in with your qwen.ai account for 1,000 free requests per day. /login qwen-ai API Key (Alternative) If you prefer to use Dashscope API directly: ... Get your API key from: Dashscope ..."
+    },
+    {
+      "title": "pi-alibaba-models · Packages · Pi",
+      "url": "https://pi.dev/packages/pi-alibaba-models",
+      "snippet": "A terminal-based coding agent pi-alibaba-models The complete pi extension for Alibaba&#x27;s model lineup — Qwen 3.7 Max, Qwen 3.7 Plus (both 1M context), Qwen 3.6 Max, Qwen 3.6 Plus, DeepSeek V4 Pro, Kimi K2.6, GLM-5, MiniMax M2.5, and the rest of the catalog. Native thinking-level support, both Anthropic- and OpenAI-shaped APIs, both International and China endpoints, both Coding Plan ..."
+    },
+    {
+      "title": "Qwen (Qwen) - Hugging Face",
+      "url": "https://huggingface.co/Qwen",
+      "snippet": "Org profile for Qwen on Hugging Face, the AI community building the future."
+    }
+  ]
+}

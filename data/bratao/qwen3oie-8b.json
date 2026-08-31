@@ -1,0 +1,77 @@
+{
+  "schema": 1,
+  "id": "bratao/Qwen3OIE-8B",
+  "slug": "bratao-qwen3oie-8b",
+  "author": "bratao",
+  "url": "https://huggingface.co/bratao/Qwen3OIE-8B",
+  "created_at": "2025-05-30T02:24:07.000Z",
+  "updated_at": "2026-08-30T22:05:02.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "pt"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3",
+    "text-generation",
+    "open-information-extraction",
+    "openie",
+    "portuguese",
+    "abstractive-openie",
+    "conversational",
+    "pt",
+    "base_model:Qwen/Qwen3-8B",
+    "base_model:finetune:Qwen/Qwen3-8B",
+    "license:apache-2.0",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 8,
+  "trending_score": 0,
+  "parameters": 8190735360,
+  "parameters_human": "8.19B",
+  "storage_bytes": 16392961370,
+  "storage_human": "16.4 GB",
+  "base_model": "Qwen/Qwen3-8B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "bratao/Qwen3OIE-8B · Hugging Face",
+      "url": "https://huggingface.co/bratao/Qwen3OIE-8B",
+      "snippet": "outputs/out/ This model is a fine-tuned version of Qwen/Qwen3-8B on the train_dataset_updated.jsonl dataset. Model description More information needed Intended uses & limitations More information needed Training and evaluation data More information needed Training procedure Training hyperparameters The following hyperparameters were used during ..."
+    },
+    {
+      "title": "bratao/Qwen3OIE-8B API & Inference Endpoint | FriendliAI",
+      "url": "https://friendli.ai/models/bratao/Qwen3OIE-8B",
+      "snippet": "Deploy bratao/Qwen3OIE-8B with low-latency inference on FriendliAI. Get scalable API serving, high throughput, and production-grade reliability for AI agents."
+    },
+    {
+      "title": "bratao/Qwen3OIE-8B at main - Hugging Face",
+      "url": "https://huggingface.co/bratao/Qwen3OIE-8B/tree/main",
+      "snippet": "bratao / Qwen3OIE-8B like 0 Text Generation Transformers Safetensors train_dataset_updated.jsonl qwen3 Generated from Trainer conversational text-generation-inference License:apache-2.0 Model card FilesFiles and versions Community Train Deploy Use this model main Qwen3OIE-8B Ctrl+K Ctrl+K 1 contributor History:2 commits bratao Upload 18 files ..."
+    },
+    {
+      "title": "Qwen3OIE-8B-GGUF - AI Model by mradermacher | AlphaNeural AI",
+      "url": "https://alphaneural.io/assets/mradermacher/Qwen3OIE-8B-GGUF",
+      "snippet": "Explore Qwen3OIE-8B-GGUF, a ai model on AlphaNeural AI. Deploy using Neural Labs compute infrastructure."
+    },
+    {
+      "title": "Qwen: Qwen3 8B - AI Model Details & Benchmarks",
+      "url": "https://benchable.ai/models/qwen/qwen3-8b-04-28",
+      "snippet": "Qwen3-8B, a dense 8.2B parameter causal language model, demonstrates strong reliability with an 89% success rate across benchmarks, consistently providing usable responses. While it tends to have longer response times, ranking in the 18th percentile for speed, it offers cost-effective solutions, placing in the 69th percentile for price."
+    }
+  ]
+}

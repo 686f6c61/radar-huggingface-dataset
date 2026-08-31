@@ -1,0 +1,81 @@
+{
+  "schema": 1,
+  "id": "Anadilorg/Anadil_Ladino_TTS",
+  "slug": "anadilorg-anadil_ladino_tts",
+  "author": "Anadilorg",
+  "url": "https://huggingface.co/Anadilorg/Anadil_Ladino_TTS",
+  "created_at": "2026-08-30T19:50:31.000Z",
+  "updated_at": "2026-08-30T19:51:10.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-speech",
+  "library": "voxcpm",
+  "languages": [
+    "lad",
+    "tr"
+  ],
+  "tags": [
+    "voxcpm",
+    "text-to-speech",
+    "tts",
+    "speech-synthesis",
+    "audio",
+    "ladino",
+    "judeo-spanish",
+    "judezmo",
+    "djudeo-espanyol",
+    "sephardic",
+    "lora",
+    "low-resource",
+    "endangered-languages",
+    "turkey",
+    "lad",
+    "tr",
+    "arxiv:2106.09685",
+    "base_model:openbmb/VoxCPM2",
+    "base_model:adapter:openbmb/VoxCPM2",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 76393930,
+  "storage_human": "76 MB",
+  "base_model": "openbmb/VoxCPM2",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Anadilorg (Anadil Org) - Hugging Face",
+      "url": "https://huggingface.co/Anadilorg",
+      "snippet": "User profile of Anadil Org on Hugging Face"
+    },
+    {
+      "title": "Anasayfa - Anadil.org",
+      "url": "https://www.anadil.org/",
+      "snippet": "Anadil.org; Anadolu&#x27;nun kaybolmaya yüz tutmuş dillerini yapay zeka ile yaşatan bağımsız araştırma topluluğu. TTS, ASR ve çeviri modelleri, açık veri setleri ve dijital dil arşivi."
+    },
+    {
+      "title": "GitHub - CollectivaT-dev/Ladino_TTS",
+      "url": "https://github.com/CollectivaT-dev/Ladino_TTS",
+      "snippet": "Dataset and model available at Ladino Data hub. Alp Öktem, Rodolfo Zevallos, Yasmin Moslem, Güneş Öztürk, Karen Şarhon. Preparing an endangered language for the digital age: The Case of Judeo-Spanish. Workshop on Resources and Technologies for Indigenous, Endangered and Lesser-resourced ..."
+    },
+    {
+      "title": "AnadilOrg · GitHub",
+      "url": "https://github.com/AnadilOrg",
+      "snippet": "AnadilOrg has 2 repositories available. Follow their code on GitHub."
+    },
+    {
+      "title": "Free AI Text to Speech Online - 36+ Models, 100+ Voices | TTS.ai",
+      "url": "https://tts.ai/text-to-speech/",
+      "snippet": "Convert text to natural speech with 36+ AI models including Kokoro, Chatterbox, Bark, CosyVoice 2, and more. Free online TTS with voice cloning support."
+    }
+  ]
+}

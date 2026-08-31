@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "QuerynAi/queryn-adapter-fastembed-bge-small_to_pplx-embed-1",
+  "slug": "querynai-queryn-adapter-fastembed-bge-small_to_pplx-embed-1",
+  "author": "QuerynAi",
+  "url": "https://huggingface.co/QuerynAi/queryn-adapter-fastembed-bge-small_to_pplx-embed-1",
+  "created_at": "2026-08-30T21:01:38.000Z",
+  "updated_at": "2026-08-30T21:01:46.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "feature-extraction",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "onnx",
+    "embedding",
+    "embedding-translation",
+    "queryn",
+    "fastembed-bge-small",
+    "pplx-embed-1",
+    "feature-extraction",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1407354,
+  "storage_human": "1 MB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "QuerynAi/queryn-adapter-bge-m3_to_fastembed-bge-small · Hugging Face",
+      "url": "https://huggingface.co/QuerynAi/queryn-adapter-bge-m3_to_fastembed-bge-small",
+      "snippet": "Translates an embedding produced by bge-m3 into the embedding space of fastembed-bge-small, so a corpus already embedded with bge-m3 can be served against a fastembed-bge-small index without re-embedding it. Part of the Queryn embedding-translation engine."
+    },
+    {
+      "title": "GitHub - Gigadelux/Queryn: Queryn is the engine for interoperability ...",
+      "url": "https://github.com/Gigadelux/Queryn",
+      "snippet": "Weakest-performing target:nemotron-1b-free — mean 0.688 across all sources; worst single pair is fastembed-bge-small → nemotron-1b-free at 0.553. This model is the clearest current candidate for the \"weakest adapters\" architecture study in the roadmap."
+    },
+    {
+      "title": "BAAI/bge-m3 · Hugging Face",
+      "url": "https://huggingface.co/BAAI/bge-m3",
+      "snippet": "BGE-M3 (paper, code) In this project, we introduce BGE-M3, which is distinguished for its versatility in Multi-Functionality, Multi-Linguality, and Multi-Granularity. Multi-Functionality: It can simultaneously perform the three common retrieval functionalities of embedding model: dense retrieval, multi-vector retrieval, and sparse retrieval."
+    },
+    {
+      "title": "GitHub - qdrant/fastembed: Fast, Accurate, Lightweight Python library ...",
+      "url": "https://github.com/qdrant/fastembed",
+      "snippet": "FastEmbed is a lightweight, fast, Python library built for embedding generation. We support popular text models. Please open a GitHub issue if you want us to add a new model. The default text embedding (TextEmbedding) model is Flag Embedding, presented in the MTEB leaderboard. It supports \"query\" and \"passage\" prefixes for the input text. Here is an example for Retrieval Embedding Generation ..."
+    },
+    {
+      "title": "Welcome to BGE! — BGE documentation",
+      "url": "https://bge-model.com/",
+      "snippet": "Want to get familiar with BGE quickly? There are hands-on examples to run for embedder and reranker&#x27;s inference, evaluation, and finetuning. Unfamiliar with some area, keywords or techniques of retrieval and RAG? We provide tutorials to teach you basic knowledge and coding tips. Interested in research topics that expanding from BGE and retrieval?"
+    }
+  ]
+}

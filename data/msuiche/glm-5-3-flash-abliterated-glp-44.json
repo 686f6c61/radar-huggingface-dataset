@@ -5,7 +5,7 @@
   "author": "msuiche",
   "url": "https://huggingface.co/msuiche/GLM-5.3-Flash-abliterated-GLP-44",
   "created_at": "2026-08-27T01:51:52.000Z",
-  "updated_at": "2026-08-27T03:26:41.000Z",
+  "updated_at": "2026-08-30T14:28:40.000Z",
   "license": "mit",
   "license_family": "oss",
   "pipeline_tag": null,
@@ -17,6 +17,10 @@
     "glp",
     "abliteration",
     "refusal-direction",
+    "activation-steering",
+    "vllm",
+    "base_model:zai-org/GLM-5.3-Flash",
+    "base_model:quantized:zai-org/GLM-5.3-Flash",
     "license:mit",
     "region:us"
   ],
@@ -27,7 +31,7 @@
   "parameters_human": "720896",
   "storage_bytes": 5774784,
   "storage_human": "6 MB",
-  "base_model": null,
+  "base_model": "zai-org/GLM-5.3-Flash",
   "formats": [
     "gguf"
   ],

@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "rajeevkr23/secure-notes-ai-gemma3-1b",
+  "slug": "rajeevkr23-secure-notes-ai-gemma3-1b",
+  "author": "rajeevkr23",
+  "url": "https://huggingface.co/rajeevkr23/secure-notes-ai-gemma3-1b",
+  "created_at": "2026-08-30T20:38:08.000Z",
+  "updated_at": "2026-08-30T20:49:03.000Z",
+  "license": "gemma",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "litert",
+  "languages": [],
+  "tags": [
+    "litert",
+    "gemma",
+    "gemma3",
+    "on-device",
+    "mediapipe",
+    "license:gemma",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 554661243,
+  "storage_human": "555 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Gemma 3 — Google DeepMind",
+      "url": "https://deepmind.google/models/gemma/gemma-3/",
+      "snippet": "Gemma 3 is the most capable model that can run on a single GPU or TPU. Efficient on workstations, laptops, and even smartphones, allowing developers to build responsible AI applications at scale."
+    },
+    {
+      "title": "Gemma — Google DeepMind",
+      "url": "https://deepmind.google/models/gemma/",
+      "snippet": "Gemma is a collection of lightweight, open models built from the same technology that powers our Gemini models."
+    },
+    {
+      "title": "google/gemma-3-1b-it · Hugging Face",
+      "url": "https://huggingface.co/google/gemma-3-1b-it",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Gemma 3 Security Report - AI Red Teaming Results | Promptfoo",
+      "url": "https://www.promptfoo.dev/models/reports/gemma-3-27b",
+      "snippet": "Google&#x27;s Gemma 3 model designed for multi-modal applications, global language support, device-local ai applications, visual reasoning tasks Comprehensive security evaluation showing 51.5% pass rate across 50+ vulnerability tests. 3 critical security issues identified."
+    },
+    {
+      "title": "Gemma 3 Technical Report - arXiv.org",
+      "url": "https://arxiv.org/html/2503.19786v1",
+      "snippet": "Gemma 3 models support context length of 128K tokens, with the exception of the 1B model that has 32K. We increase RoPE base frequency from 10k to 1M on global self-attention layers, and keep the frequency of the local layers at 10k."
+    }
+  ]
+}

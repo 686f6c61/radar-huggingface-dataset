@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "hoopjules/UltraOmniHoop",
+  "slug": "hoopjules-ultraomnihoop",
+  "author": "hoopjules",
+  "url": "https://huggingface.co/hoopjules/UltraOmniHoop",
+  "created_at": "2026-08-30T22:15:06.000Z",
+  "updated_at": "2026-08-30T22:15:06.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Meet ByteDance&#x27;s OmniHuman-1: The AI Model That Generates Realistic ...",
+      "url": "https://digialps.com/meet-bytedances-omnihuman-1-the-ai-model-that-generates-realistic-human-video/",
+      "snippet": "ByteDance&#x27;s OmniHuman-1 is blowing minds with its realistic human video generation! See how this new AI model is making waves with multi-modal input"
+    },
+    {
+      "title": "Free AI 3D Model Generator - Createimg",
+      "url": "https://www.createimg.com/ai-3d-model-generator/",
+      "snippet": "Try our free AI 3D model generator to create characters, props, and objects in seconds. 100% free, no login required, fast and easy."
+    },
+    {
+      "title": "OpenModelDB",
+      "url": "https://openmodeldb.info/",
+      "snippet": "OpenModelDB is a community driven database of AI Upscaling models. We aim to provide a better way to find and compare models than existing sources."
+    },
+    {
+      "title": "Jules - an end-to-end agentic product development platform by Google",
+      "url": "https://jules.google.com/",
+      "snippet": "Jules is your end-to-end agentic product development platform. It reads your entire product context to figure out what to build next, comes up with solutions, and then ships a PR."
+    },
+    {
+      "title": "Rainbow Says Existing Model Releases Cover AI-Generated Ads",
+      "url": "https://www.thefashionlaw.com/rainbow-says-existing-model-releases-already-cover-ai-generated-ads/",
+      "snippet": "Rainbow Says Existing Model Releases Already Cover AI-Generated Ads Rainbow USA is urging a New York state court to dismiss a model&#x27;s lawsuit over AI-generated ad images, arguing that the parties&#x27; contract grants it the right to alter, transform, and composite her likeness for advertising purposes. The case stems from model ..."
+    }
+  ]
+}

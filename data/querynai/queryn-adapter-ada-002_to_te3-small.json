@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "QuerynAi/queryn-adapter-ada-002_to_te3-small",
+  "slug": "querynai-queryn-adapter-ada-002_to_te3-small",
+  "author": "QuerynAi",
+  "url": "https://huggingface.co/QuerynAi/queryn-adapter-ada-002_to_te3-small",
+  "created_at": "2026-08-30T20:59:03.000Z",
+  "updated_at": "2026-08-30T20:59:14.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "feature-extraction",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "onnx",
+    "embedding",
+    "embedding-translation",
+    "queryn",
+    "ada-002",
+    "te3-small",
+    "feature-extraction",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 9777940,
+  "storage_human": "10 MB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "QuerynAi/queryn-adapter-ada-002_to_qwen3-emb-8b · Hugging Face",
+      "url": "https://huggingface.co/QuerynAi/queryn-adapter-ada-002_to_qwen3-emb-8b",
+      "snippet": "Queryn adapter — ada-002 → qwen3-emb-8b Translates an embedding produced by ada-002 into the embedding space of qwen3-emb-8b, so a corpus already embedded with ada-002 can be served against a qwen3-emb-8b index without re-embedding it. Part of the Queryn embedding-translation engine."
+    },
+    {
+      "title": "Queryn/docs/Adapters.md at main · Gigadelux/Queryn · GitHub",
+      "url": "https://github.com/Gigadelux/Queryn/blob/main/docs/Adapters.md",
+      "snippet": "Add any new embedding model to EMBEDDING_MODELS first if needed. Run dataset_splitting.py to produce a fresh data/splits/ {train,test}.parquet. Point a training pipeline (v1_adapter_model_training.py or later) at the new splits and run it — resumability means a crash or Ctrl-C just picks back up from the first unfinished pair."
+    },
+    {
+      "title": "Models - Hugging Face",
+      "url": "https://huggingface.co/models?other=queryn",
+      "snippet": "Explore machine learning models. QuerynAi/queryn-adapter-fastembed-bge-small_to_nemotron-1b-free"
+    },
+    {
+      "title": "‎Google Gemini",
+      "url": "https://gemini.google.com/",
+      "snippet": "Meet Gemini, Google&#x27;s AI assistant. Get help with writing, planning, brainstorming, and more. Experience the power of generative AI."
+    },
+    {
+      "title": "Models - Gemini API | Google AI for Developers",
+      "url": "https://ai.google.dev/gemini-api/docs/models",
+      "snippet": "Gemini 3.5 Live Translate Low-latency, real-time speech to speech translation model that supports 70+ languages. New settings_voice Gemini 3.1 Flash Live High-quality, low-latency Live API model for real-time dialogue and voice-first AI applications. New graphic_eq Gemini 3.1 Flash TTS Powerful, low-latency speech generation. New movie_filter ..."
+    }
+  ]
+}

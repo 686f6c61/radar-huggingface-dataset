@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "timothydav/contrastive",
+  "slug": "timothydav-contrastive",
+  "author": "timothydav",
+  "url": "https://huggingface.co/timothydav/contrastive",
+  "created_at": "2026-08-30T20:06:50.000Z",
+  "updated_at": "2026-08-30T20:07:00.000Z",
+  "license": "bsd-3-clause",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "swin_t",
+    "pytorch",
+    "swin-t",
+    "contrastive",
+    "license:bsd-3-clause",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 16576,
+  "parameters_human": "16576",
+  "storage_bytes": 66784,
+  "storage_human": "66784 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Visualizing and Understanding Contrastive Learning - arXiv.org",
+      "url": "https://arxiv.org/html/2206.09753v3",
+      "snippet": "Visualizing and Understanding Contrastive Learning Thanks: This research received funding from the FWO (Grants G014718N, G0A4720N and 1SB5721N) and from imec through the AAA project Trustworthy AI Methods (TAIM). F. Sammani, B. Joukovsky and N. Deligiannis are with the Department of Electronics and Informatics, Vrije Universiteit Brussel, Pleinlaan 2, B-1050 Brussels, Belgium and also with ..."
+    },
+    {
+      "title": "Contrastive Decoding for Reasoning - academy.dair.ai",
+      "url": "https://academy.dair.ai/papers/contrastive-decoding-for-reasoning",
+      "snippet": "Shows that contrastive decoding, a simple inference-time technique, substantially improves reasoning in large LLMs."
+    },
+    {
+      "title": "GitHub - nomic-ai/contrastors: Train Models Contrastively in Pytorch",
+      "url": "https://github.com/nomic-ai/contrastors",
+      "snippet": "Train Models Contrastively in Pytorch. Contribute to nomic-ai/contrastors development by creating an account on GitHub."
+    },
+    {
+      "title": "Daily Papers - Hugging Face",
+      "url": "https://huggingface.co/papers",
+      "snippet": "Your daily dose of AI research from AK"
+    },
+    {
+      "title": "contrastive-learning · GitHub Topics · GitHub",
+      "url": "https://github.com/topics/contrastive-learning",
+      "snippet": "open-world object-detection cvpr incremental-learning energy-based-model continual-learning detectron2 contrastive-learning cvpr2021 Updated on Dec 19, 2022 Python"
+    }
+  ]
+}

@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "newazhala/website-technology-evidence-classifier",
+  "slug": "newazhala-website-technology-evidence-classifier",
+  "author": "newazhala",
+  "url": "https://huggingface.co/newazhala/website-technology-evidence-classifier",
+  "created_at": "2026-08-30T23:17:51.000Z",
+  "updated_at": "2026-08-30T23:18:25.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": "scikit-learn",
+  "languages": [],
+  "tags": [
+    "scikit-learn",
+    "website-technology-detection",
+    "web-fingerprinting",
+    "web-development",
+    "technology-classification",
+    "synthetic-data",
+    "text-classification",
+    "dataset:website-technology-evidence-dataset",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1555552,
+  "storage_human": "2 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "newazhala/website-technology-detector at main - Hugging Face",
+      "url": "https://huggingface.co/spaces/newazhala/website-technology-detector/tree/main",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "USCIS AI Adjudication: Preparing EB-1A Petitions in 2026",
+      "url": "https://immigrationcopilot.com/blog/uscis-ai-adjudication-eb1a-2026",
+      "snippet": "USCIS uses the ELIS Evidence Classifier to tag EB-1A submissions before officer review. Here are the four AI-driven RFE mechanisms and how attorneys must prepare for each."
+    },
+    {
+      "title": "The Algorithm Is Now in the Room: USCIS AI, the RFE Surge, and What ...",
+      "url": "https://www.immigration.com/blogs/algorithm-now-room-uscis-ai-rfe-surge-and-what-happened-thousands-indian-students",
+      "snippet": "But AI is now meaningfully shaping which files get flagged, how evidence is organized and surfaced, what background information appears before an officer reviews your case, and what your social media history may contribute to the analysis. That is a significant shift, and it requires a significant adjustment in how you approach filing."
+    },
+    {
+      "title": "OpenAI Launches An Official Tool to Identify AI-Generated Text ... - Beebom",
+      "url": "https://beebom.com/openai-classifier-tool-identify-ai-generated-text/",
+      "snippet": "The AI Classifier is a language model and has been trained on a dataset that comprises pairs of human and AI-written text on the same topic. OpenAI notes that human data has been collected from various sources that they believe to be written by humans."
+    },
+    {
+      "title": "TwitPic",
+      "url": "https://twitpic.com/",
+      "snippet": "Dear Twitpic Community - thank you for all the wonderful photos you have taken over the years. We have now placed Twitpic in an archived state. For more information ..."
+    }
+  ]
+}

@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "brunopereiranaw/retrieval-weights",
+  "slug": "brunopereiranaw-retrieval-weights",
+  "author": "brunopereiranaw",
+  "url": "https://huggingface.co/brunopereiranaw/retrieval-weights",
+  "created_at": "2026-08-31T00:52:10.000Z",
+  "updated_at": "2026-08-31T00:52:19.000Z",
+  "license": "bsd-3-clause",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "cnn_transformer",
+    "pytorch",
+    "cnn-transformer",
+    "retrieval",
+    "license:bsd-3-clause",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 16576,
+  "parameters_human": "16576",
+  "storage_bytes": 66784,
+  "storage_human": "66784 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "The truth behind Chrome&#x27;s 4GB &#x27;weights.bin&#x27; Gemini Nano file",
+      "url": "https://www.androidauthority.com/google-chrome-weights-bin-ai-model-download-explained-3664043/",
+      "snippet": "Chrome is silently downloading 4GB AI model files to your PC. Learn what Gemini Nano \"weights\" are and how to delete them to reclaim storage."
+    },
+    {
+      "title": "Research | OpenAI",
+      "url": "https://openai.com/research/",
+      "snippet": "We advance the science of AI through research on frontier models, reasoning, multimodal systems, and safe deployment. GPT OpenAI&#x27;s GPT series models are fast, versatile, and cost-efficient AI systems designed to understand context, generate content, and reason across text, images, and more."
+    },
+    {
+      "title": "Website \"In the Weights\" shows whether AI models know who you are",
+      "url": "https://the-decoder.com/website-in-the-weights-shows-whether-ai-models-know-who-you-are/",
+      "snippet": "The site In the Weights reveals which people are \"stored\" in the weights of large language models. Those \"weights\" are billions of numerical values where AI models encode their knowledge. If you show up in them, the model considered you relevant enough during training to recall without tools like ..."
+    },
+    {
+      "title": "New AI Model Releases (Last 24 Hours) — Live Tracker | BenchLM",
+      "url": "https://benchlm.ai/model-updates",
+      "snippet": "Every new AI model release, tracked live: last 24 hours, this week, and 161 confirmed launches from 46 providers — each with source evidence and benchmarks."
+    },
+    {
+      "title": "Weights.gg - JEAK.com",
+      "url": "https://jeak.com/ai/weights-gg/",
+      "snippet": "Select a preferred model from the weights.gg collection. Opt to download the model for offline utilization with Replay, or craft a song directly on the weights.gg platform."
+    }
+  ]
+}

@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "sshamanov/ltx-video-distilled-fp8-bench",
+  "slug": "sshamanov-ltx-video-distilled-fp8-bench",
+  "author": "sshamanov",
+  "url": "https://huggingface.co/sshamanov/ltx-video-distilled-fp8-bench",
+  "created_at": "2026-08-30T20:12:42.000Z",
+  "updated_at": "2026-08-30T20:12:43.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Lightricks/LTX-Video-0.9.7-distilled · Hugging Face",
+      "url": "https://huggingface.co/Lightricks/LTX-Video-0.9.7-distilled",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Lightricks/LTX-Video · Hugging Face",
+      "url": "https://huggingface.co/Lightricks/LTX-Video",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GitHub - Lightricks/LTX-Video: Official repository for LTX-Video",
+      "url": "https://github.com/Lightricks/LTX-Video",
+      "snippet": "LTX-Video is the first DiT-based video generation model that contains all core capabilities of modern video generation in one model: synchronized audio and video, high fidelity, multiple performance modes, production-ready outputs, API access, and open access. It can generate up to 50 FPS videos at native 4K resolution with synchronized audio in one pass. The model is trained on a large-scale ..."
+    },
+    {
+      "title": "GitHub - y2k7380/ltx-video: Official repository for LTX-Video",
+      "url": "https://github.com/y2k7380/ltx-video",
+      "snippet": "Official repository for LTX-Video. Contribute to y2k7380/ltx-video development by creating an account on GitHub."
+    },
+    {
+      "title": "ltx-video · PyPI",
+      "url": "https://pypi.org/project/ltx-video/",
+      "snippet": "A package for LTX-Video model Quick Start Guide Online inference The model is accessible right away via the following links: LTX-Studio image-to-video (13B-mix) LTX-Studio image-to-video (13B distilled) Fal.ai image-to-video (13B full) Fal.ai image-to-video (13B distilled) Replicate image-to-video Run locally Installation The codebase was tested with Python 3.10.5, CUDA version 12.2, and ..."
+    }
+  ]
+}

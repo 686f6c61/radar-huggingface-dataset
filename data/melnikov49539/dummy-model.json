@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "MelNikov49539/dummy-model",
+  "slug": "melnikov49539-dummy-model",
+  "author": "MelNikov49539",
+  "url": "https://huggingface.co/MelNikov49539/dummy-model",
+  "created_at": "2026-08-30T22:34:25.000Z",
+  "updated_at": "2026-08-31T00:15:02.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-classification",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 109483778,
+  "parameters_human": "109.5M",
+  "storage_bytes": 452164964,
+  "storage_human": "452 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ameliyea/dummy-model · Hugging Face",
+      "url": "https://huggingface.co/ameliyea/dummy-model",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Infernai/dummy-model · Hugging Face",
+      "url": "https://huggingface.co/Infernai/dummy-model",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Fake OpenAI AI Model Becomes No 1 Trending Repo With 244,000 Downloads ...",
+      "url": "https://www.coinlive.com/news/fake-openai-ai-model-becomes-no-1-trending-repo-with",
+      "snippet": "Fake AI projects are becoming the latest trap for developers hunting for new tools online. A malicious repository posing as an OpenAI model climbed to the top of Hugging Face&#x27;s trending page, pulling in roughly 244,000 downloads before researchers exposed it as malware designed to steal browser data, crypto wallets, developer credentials, and Discord accounts from Windows machines."
+    },
+    {
+      "title": "GitHub - 12britz/awesome-free-models: A curated list of free AI models ...",
+      "url": "https://github.com/12britz/awesome-free-models",
+      "snippet": "A curated list of free AI models, APIs, and tools you can use without paying a cent. - 12britz/awesome-free-models"
+    },
+    {
+      "title": "How to Convert Dummy Shoots to Realistic AI Model Photos",
+      "url": "https://snapmydesign.com/blogs/Dummy-shoots-into-realistic-AI-model/",
+      "snippet": "Transform ghost mannequin or plastic hanger dummy shoots into realistic, professional studio photos on model figures instantly using AI."
+    }
+  ]
+}

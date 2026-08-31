@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "nicolethoma/contrastive",
+  "slug": "nicolethoma-contrastive",
+  "author": "nicolethoma",
+  "url": "https://huggingface.co/nicolethoma/contrastive",
+  "created_at": "2026-08-30T20:14:41.000Z",
+  "updated_at": "2026-08-30T20:14:50.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "coca",
+    "pytorch",
+    "contrastive",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 16576,
+  "parameters_human": "16576",
+  "storage_bytes": 66784,
+  "storage_human": "66784 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - nomic-ai/contrastors: Train Models Contrastively in Pytorch",
+      "url": "https://github.com/nomic-ai/contrastors",
+      "snippet": "Train Models Contrastively in Pytorch. Contribute to nomic-ai/contrastors development by creating an account on GitHub."
+    },
+    {
+      "title": "Comparison of AI Models across Intelligence, Performance, and Price ...",
+      "url": "https://artificialanalysis.ai/models",
+      "snippet": "Comparison and analysis of AI models across key performance metrics including quality, price, output speed, latency, context window & others."
+    },
+    {
+      "title": "[2401.17390] Customizing Language Model Responses with Contrastive In ...",
+      "url": "https://arxiv.org/abs/2401.17390",
+      "snippet": "Abstract page for arXiv paper 2401.17390: Customizing Language Model Responses with Contrastive In-Context Learning"
+    },
+    {
+      "title": "Visualizing and Understanding Contrastive Learning - arXiv.org",
+      "url": "https://arxiv.org/html/2206.09753v3",
+      "snippet": "Visualizing and Understanding Contrastive Learning Thanks: This research received funding from the FWO (Grants G014718N, G0A4720N and 1SB5721N) and from imec through the AAA project Trustworthy AI Methods (TAIM). F. Sammani, B. Joukovsky and N. Deligiannis are with the Department of Electronics and Informatics, Vrije Universiteit Brussel, Pleinlaan 2, B-1050 Brussels, Belgium and also with ..."
+    },
+    {
+      "title": "AI Model Leaderboard (Live, 2026): Local + Frontier Ranked",
+      "url": "https://localaimaster.com/tools/ai-model-leaderboard",
+      "snippet": "Live AI model ranking — 30 local + frontier models scored on SWE-Bench, MMLU, ARC-AGI, AIME, HumanEval. Claude Opus 4.7 leads; DeepSeek V4 tops local. Free, sortable."
+    }
+  ]
+}

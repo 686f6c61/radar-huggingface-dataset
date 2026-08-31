@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "Minervus00/afroxlmr-mini-ner-bam-mos-v2-onnx",
+  "slug": "minervus00-afroxlmr-mini-ner-bam-mos-v2-onnx",
+  "author": "Minervus00",
+  "url": "https://huggingface.co/Minervus00/afroxlmr-mini-ner-bam-mos-v2-onnx",
+  "created_at": "2026-08-30T22:12:28.000Z",
+  "updated_at": "2026-08-30T22:12:47.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "token-classification",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "onnx",
+    "xlm-roberta",
+    "token-classification",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 610598803,
+  "storage_human": "611 MB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ONNX Model Zoo",
+      "url": "https://github.com/onnx/models",
+      "snippet": "Welcome to the ONNX Model Zoo! The Open Neural Network Exchange (ONNX) is an open standard format created to represent machine learning models. Supported by a robust community of partners, ONNX defines a common set of operators and a common file format to enable AI developers to use models with a variety of frameworks, tools, runtimes, and compilers. This repository is a curated collection of ..."
+    },
+    {
+      "title": "Hugging Face - The AI community building the future.",
+      "url": "https://huggingface.co/",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "onnx/model.onnx · KitsuMate/all-MiniLM-L6-v2-onnx at main",
+      "url": "https://huggingface.co/KitsuMate/all-MiniLM-L6-v2-onnx/blob/main/onnx/model.onnx",
+      "snippet": "Instructions to use KitsuMate/all-MiniLM-L6-v2-onnx with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Libraries sentence-transformers How to use KitsuMate/all-MiniLM-L6-v2-onnx with sentence-transformers:"
+    },
+    {
+      "title": "ONNX - Model Zoo - Online Tutorials Library",
+      "url": "https://www.tutorialspoint.com/onnx/onnx-model-zoo.htm",
+      "snippet": "The ONNX Model Zoo is a collection of pre-trained models in the ONNX (Open Neural Network Exchange) format, designed to easily use the machine learning models without the needing to train them from scratch."
+    },
+    {
+      "title": "ONNX | Home",
+      "url": "https://onnx.ai/",
+      "snippet": "ONNX is an open format built to represent machine learning models. ONNX defines a common set of operators - the building blocks of machine learning and deep learning models - and a common file format to enable AI developers to use models with a variety of frameworks, tools, runtimes, and compilers."
+    }
+  ]
+}

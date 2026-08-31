@@ -5,7 +5,7 @@
   "author": "Q1ngMang",
   "url": "https://huggingface.co/Q1ngMang/Ling-3.0-tiny-sub3bit-PPLp10-GGUF",
   "created_at": "2026-08-29T10:42:20.000Z",
-  "updated_at": "2026-08-29T11:47:29.000Z",
+  "updated_at": "2026-08-30T15:01:25.000Z",
   "license": "mit",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -30,8 +30,8 @@
   "trending_score": 0,
   "parameters": 7893392800,
   "parameters_human": "7.89B",
-  "storage_bytes": 2955123904,
-  "storage_human": "3.0 GB",
+  "storage_bytes": 5905105280,
+  "storage_human": "5.9 GB",
   "base_model": "inclusionAI/Ling-3.0-tiny",
   "formats": [
     "gguf"

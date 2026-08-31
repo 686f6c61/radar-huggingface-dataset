@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "shubhambhatee/hw2-classification",
+  "slug": "shubhambhatee-hw2-classification",
+  "author": "shubhambhatee",
+  "url": "https://huggingface.co/shubhambhatee/hw2-classification",
+  "created_at": "2026-08-30T22:29:47.000Z",
+  "updated_at": "2026-08-30T22:29:57.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "mae",
+    "pytorch",
+    "classification",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 24832,
+  "parameters_human": "24832",
+  "storage_bytes": 99808,
+  "storage_human": "99808 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "shubhambhatee (Shubham Bhat) - Hugging Face",
+      "url": "https://huggingface.co/shubhambhatee/models",
+      "snippet": "shubhambhatee (Shubham Bhat) - Hugging Face ... learning things"
+    },
+    {
+      "title": "hw2 ai classification Classification Model by my ai cnn workplace",
+      "url": "https://universe.roboflow.com/my-ai-cnn-workplace/hw2-ai-classification",
+      "snippet": "80 open source Object images plus a pre-trained hw2 ai classification model and API. Created by my ai cnn workplace"
+    },
+    {
+      "title": "GitHub - appleweiping/lhy-ml-homeworks: Solutions to Hung-yi Lee (李宏毅 ...",
+      "url": "https://github.com/appleweiping/lhy-ml-homeworks/tree/main/",
+      "snippet": "This repo implements every assignment from the 2022-spring edition of the course (the canonical 15-HW deep-learning sequence: regression → classification → CNN → self-attention → Transformer → GAN → BERT → autoencoder → explainable AI → adversarial attack → domain adaptation → RL → network compression → life-long ..."
+    },
+    {
+      "title": "Hugging Face - The AI community building the future.",
+      "url": "https://huggingface.co/",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "How to Use the hw2 ai classification Classification API",
+      "url": "https://universe.roboflow.com/my-ai-cnn-workplace/hw2-ai-classification/model/1",
+      "snippet": "Use this pre-trained hw2 ai classification computer vision model to retrieve predictions with our hosted API or deploy to the edge. Learn More About Roboflow Inference"
+    }
+  ]
+}
